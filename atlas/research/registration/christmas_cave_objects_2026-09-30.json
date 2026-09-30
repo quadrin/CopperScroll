@@ -1,0 +1,490 @@
+{
+  "reviewed": "2026-09-30",
+  "report": "research/sources/christmas_cave_provenance_2026-09-30.md",
+  "sources": [
+    {
+      "id": "Murphy2011",
+      "url": "https://escholarship.org/content/qt5fz665f7/qt5fz665f7.pdf",
+      "doi": "10.1016/j.jas.2011.05.004",
+      "version": "UC author proof, not final typeset publication",
+      "review": "web-extracted collection history, sample list and Table1; local PDF download blocked; table layout not independently rendered",
+      "locators": {
+        "collection_history": {
+          "proof_page": 2,
+          "pdf_page": 5
+        },
+        "methods": {
+          "proof_page": 4,
+          "pdf_page": 7
+        },
+        "table1": {
+          "proof_page": 8,
+          "pdf_page": 11
+        }
+      }
+    },
+    {
+      "id": "Rasmussen2022",
+      "doi": "10.1186/s40494-022-00652-2",
+      "url": "https://www.nature.com/articles/s40494-022-00652-2.pdf",
+      "locators": {
+        "table1": 5,
+        "table9": 17
+      },
+      "review": "published identifiers and calibration statement; Table9 visually checked"
+    },
+    {
+      "id": "ShamirSukenik2010",
+      "url": "https://tidsskrift.dk/atn/article/view/159284",
+      "pdf_url": "https://tidsskrift.dk/atn/article/download/159284/208416/373798",
+      "printed_pages": [
+        26,
+        30
+      ],
+      "review": "text read; printed p.28 visually checked",
+      "pdf_page_to_printed_offset": 25
+    },
+    {
+      "id": "Setting2012",
+      "url": "https://openscholar.huji.ac.il/sites/default/files/dr.jan-gunneweg/files/4.pdf",
+      "review": "text, Fig3 plan/profile visually checked",
+      "version": "9-page institutional chapter copy; local pagination",
+      "plan_pdf_page": 7
+    }
+  ],
+  "objects": [
+    {
+      "id": "IAA-585440",
+      "site": "Christmas Cave",
+      "museum_accession": "IAA-585440",
+      "lab_identifiers": [
+        "UCIAMS-79816",
+        "UCI-79816"
+      ],
+      "join_evidence": "Murphy 2011 UC proof Table 1 (proof p.8, PDF p.11); same lab measurement cited by Rasmussen 2022 Table 9 p.17",
+      "measurement": {
+        "age_BP": 1870,
+        "sigma_years": 15
+      },
+      "calibrations": [
+        {
+          "source": "Murphy2011",
+          "curve": "IntCal09",
+          "probability": "2 sigma",
+          "era": "CE",
+          "intervals_years": [
+            [
+              80,
+              215
+            ]
+          ]
+        },
+        {
+          "source": "Rasmussen2022",
+          "curve": "IntCal20",
+          "probability": "2 sigma",
+          "era": "CE",
+          "intervals_years": [
+            [
+              125,
+              220
+            ]
+          ]
+        }
+      ],
+      "old_split_relative_probabilities": null,
+      "independent_measurement_count": 1,
+      "published_cave_assignment": "Christmas Cave",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "published object/lab join; original bag and trench documentation not inspected"
+    },
+    {
+      "id": "IAA-582928",
+      "site": "Christmas Cave",
+      "museum_accession": "IAA-582928",
+      "lab_identifiers": [
+        "UCIAMS-79814",
+        "UCI-79814"
+      ],
+      "join_evidence": "Murphy 2011 UC proof Table 1 (proof p.8, PDF p.11); same lab measurement cited by Rasmussen 2022 Table 9 p.17",
+      "measurement": {
+        "age_BP": 1950,
+        "sigma_years": 15
+      },
+      "calibrations": [
+        {
+          "source": "Murphy2011",
+          "curve": "IntCal09",
+          "probability": "2 sigma",
+          "era": "CE",
+          "intervals_years": [
+            [
+              5,
+              85
+            ]
+          ]
+        },
+        {
+          "source": "Rasmussen2022",
+          "curve": "IntCal20",
+          "probability": "2 sigma",
+          "era": "CE",
+          "intervals_years": [
+            [
+              25,
+              120
+            ]
+          ]
+        }
+      ],
+      "old_split_relative_probabilities": null,
+      "independent_measurement_count": 1,
+      "published_cave_assignment": "Christmas Cave",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "published object/lab join; original bag and trench documentation not inspected"
+    },
+    {
+      "id": "IAA-582931",
+      "site": "Christmas Cave",
+      "museum_accession": "IAA-582931",
+      "lab_identifiers": [
+        "UCIAMS-79813",
+        "UCI-79813"
+      ],
+      "join_evidence": "Murphy 2011 UC proof Table 1 (proof p.8, PDF p.11); same lab measurement cited by Rasmussen 2022 Table 9 p.17",
+      "measurement": {
+        "age_BP": 1900,
+        "sigma_years": 15
+      },
+      "calibrations": [
+        {
+          "source": "Murphy2011",
+          "curve": "IntCal09",
+          "probability": "2 sigma",
+          "era": "CE",
+          "intervals_years": [
+            [
+              65,
+              130
+            ]
+          ]
+        },
+        {
+          "source": "Rasmussen2022",
+          "curve": "IntCal20",
+          "probability": "2 sigma",
+          "era": "CE",
+          "intervals_years": [
+            [
+              80,
+              210
+            ]
+          ]
+        }
+      ],
+      "old_split_relative_probabilities": null,
+      "independent_measurement_count": 1,
+      "published_cave_assignment": "Christmas Cave",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "published object/lab join; original bag and trench documentation not inspected"
+    },
+    {
+      "id": "IAA-583019",
+      "site": "Christmas Cave",
+      "museum_accession": "IAA-583019",
+      "lab_identifiers": [
+        "UCIAMS-79817",
+        "UCI-79817"
+      ],
+      "join_evidence": "Murphy 2011 UC proof Table 1 (proof p.8, PDF p.11); same lab measurement cited by Rasmussen 2022 Table 9 p.17",
+      "measurement": {
+        "age_BP": 4760,
+        "sigma_years": 15
+      },
+      "calibrations": [
+        {
+          "source": "Murphy2011",
+          "curve": "IntCal09",
+          "probability": "2 sigma",
+          "era": "BCE",
+          "intervals_years": [
+            [
+              3635,
+              3520
+            ]
+          ]
+        },
+        {
+          "source": "Rasmussen2022",
+          "curve": "IntCal20",
+          "probability": "2 sigma",
+          "era": "BCE",
+          "intervals_years": [
+            [
+              3630,
+              3520
+            ]
+          ]
+        }
+      ],
+      "old_split_relative_probabilities": null,
+      "independent_measurement_count": 1,
+      "published_cave_assignment": "Christmas Cave",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "published object/lab join; original bag and trench documentation not inspected"
+    },
+    {
+      "id": "IAA-585786",
+      "site": "Christmas Cave",
+      "museum_accession": "IAA-585786",
+      "lab_identifiers": [
+        "UCIAMS-79815",
+        "UCI-79815"
+      ],
+      "join_evidence": "Murphy 2011 UC proof Table 1 (proof p.8, PDF p.11); same lab measurement cited by Rasmussen 2022 Table 9 p.17",
+      "measurement": {
+        "age_BP": 4770,
+        "sigma_years": 15
+      },
+      "calibrations": [
+        {
+          "source": "Murphy2011",
+          "curve": "IntCal09",
+          "probability": "2 sigma",
+          "era": "BCE",
+          "intervals_years": [
+            [
+              3635,
+              3625
+            ],
+            [
+              3605,
+              3525
+            ]
+          ]
+        },
+        {
+          "source": "Rasmussen2022",
+          "curve": "IntCal20",
+          "probability": "2 sigma",
+          "era": "BCE",
+          "intervals_years": [
+            [
+              3630,
+              3525
+            ]
+          ]
+        }
+      ],
+      "old_split_relative_probabilities": [
+        0.12,
+        0.88
+      ],
+      "independent_measurement_count": 1,
+      "published_cave_assignment": "Christmas Cave",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "published object/lab join; original bag and trench documentation not inspected"
+    },
+    {
+      "id": "QUM543",
+      "site": "Christmas Cave",
+      "aliases_as_published": [
+        "QCC230",
+        "old528"
+      ],
+      "lab_identifiers": [
+        "GrA-17427",
+        "GrA-24260"
+      ],
+      "material": "green wool",
+      "source": "Rasmussen2022 Table9 p.17",
+      "relationship": "multiple measurements of one published object",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "table crosswalk only; original label strings do not yet identify a mapped locus"
+    },
+    {
+      "id": "QUM544",
+      "site": "Christmas Cave",
+      "aliases_as_published": [
+        "QCC184",
+        "old530"
+      ],
+      "lab_identifiers": [
+        "GrA-17423",
+        "GrA-24411"
+      ],
+      "material": "red wool",
+      "source": "Rasmussen2022 Table9 p.17",
+      "relationship": "multiple measurements of one published object",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "table crosswalk only; original label strings do not yet identify a mapped locus"
+    },
+    {
+      "id": "QUM527",
+      "site": "Christmas Cave",
+      "aliases_as_published": [
+        "QCC230"
+      ],
+      "lab_identifiers": [
+        "GrA-17419"
+      ],
+      "material": "textile",
+      "source": "Rasmussen2022 Table9 p.17",
+      "relationship": "separate published sample",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "table crosswalk only; original label strings do not yet identify a mapped locus"
+    },
+    {
+      "id": "QUM545",
+      "site": "Christmas Cave",
+      "aliases_as_published": [
+        "QCC174",
+        "CC III cave 14 wood"
+      ],
+      "lab_identifiers": [
+        "GrA-24261"
+      ],
+      "material": "charcoal",
+      "source": "Rasmussen2022 Table9 p.17",
+      "relationship": "separate published sample",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "table crosswalk only; original label strings do not yet identify a mapped locus"
+    },
+    {
+      "id": "QUM546",
+      "site": "Christmas Cave",
+      "aliases_as_published": [
+        "QCC174",
+        "Tr III w end of tree amongst rock formation"
+      ],
+      "lab_identifiers": [
+        "GrA-24265"
+      ],
+      "material": "charred wood",
+      "source": "Rasmussen2022 Table9 p.17",
+      "relationship": "separate published sample",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "table crosswalk only; original label strings do not yet identify a mapped locus"
+    },
+    {
+      "id": "KLR-8011",
+      "site": "Christmas Cave",
+      "aliases_as_published": [
+        "QUM425"
+      ],
+      "field_label_as_published": "QCC; N trench I",
+      "material": "ceramic juglet",
+      "source": "Rasmussen2022 Table1 p.5",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "trench-like string retained; no demonstrated trench-to-plan join"
+    },
+    {
+      "id": "KLR-8014",
+      "site": "Christmas Cave",
+      "aliases_as_published": [
+        "QUM427"
+      ],
+      "field_label_as_published": "III 1A",
+      "material": "charcoal",
+      "source": "Rasmussen2022 Table1 p.5",
+      "original_excavation_locus": null,
+      "position_wgs84": null,
+      "provenance_status": "trench-like string retained; no demonstrated trench-to-plan join"
+    }
+  ],
+  "do_not_auto_merge": [
+    {
+      "values": [
+        "QUM543/QCC230",
+        "QUM527/QCC230"
+      ],
+      "reason": "QCC230 occurs with distinct QUM objects; QCC alone is not a unique join key."
+    },
+    {
+      "values": [
+        "QUM545/QCC174",
+        "QUM546/QCC174"
+      ],
+      "reason": "Repeated QCC174 accompanies distinct wood samples and lab dates."
+    },
+    {
+      "values": [
+        "58544",
+        "585440"
+      ],
+      "reason": "2010 printed p.28 has five-digit 58544 and attributes it to Chalcolithic; possible truncated identifier, unverified. 2011 IAA585440 has Roman radiocarbon age."
+    },
+    {
+      "values": [
+        "IAA-585785",
+        "IAA-585786"
+      ],
+      "reason": "Different published accessions; neighboring numbers are insufficient for a join."
+    }
+  ],
+  "catalogue_count_conflict": {
+    "source": "ShamirSukenik2010 p.28; repeated in Rasmussen2022 p.2",
+    "reported_total": 255,
+    "reported_period_counts": {
+      "Roman": 184,
+      "Chalcolithic": 71,
+      "Medieval": 5
+    },
+    "period_sum": 260,
+    "resolution": null,
+    "note": "Do not silently remove five medieval textiles or count the later repetition as confirmation."
+  },
+  "archive_trace": [
+    {
+      "url": "https://dqcaas.com/2019/10/10/the-allegro-image-archive/",
+      "role": "digital photo archive and explanation of collections; not recovered Christmas Cave trench registers"
+    },
+    {
+      "url": "https://dqcaas.com/a2-slide-collection-judith-brown/",
+      "role": "captioned Christmas Day 1962 helicopter visit at Ein Feshkha; excluded from Christmas Cave excavation chronology"
+    },
+    {
+      "url": "https://www.library.manchester.ac.uk/rylands/special-collections/subject-areas/classics-ancient-history/",
+      "role": "institutional lead for Allegro papers; no specific cave folder or archival shelfmark recovered"
+    }
+  ],
+  "required_missing_join": "museum object accession -> original bag label -> excavation season/trench/locus -> mapped find context",
+  "current_status": "published object identities traced; archival find-spot linkage incomplete; no assigned Copper Scroll entry",
+  "coordinate_checks": {
+    "old_grid": {
+      "longitude": 35.419920580576765,
+      "latitude": 31.682180407475066,
+      "input_epsg": 28191,
+      "input_easting_m": 189887,
+      "input_northing_m": 121095,
+      "operation": "Inverse of Palestine Grid + Palestine 1923 to WGS 84 (1) (with axis order normalized for visualization)",
+      "operation_accuracy_m": 2.0,
+      "source_position_accuracy_m": null,
+      "note": "Transformation accuracy is not accuracy of the published source point."
+    },
+    "new_grid": {
+      "longitude": 35.41991118302899,
+      "latitude": 31.682161887528487,
+      "input_epsg": 2039,
+      "input_easting_m": 239887,
+      "input_northing_m": 621095,
+      "operation": "Inverse of Israeli TM + Israel 1993 to WGS 84 (2) (with axis order normalized for visualization)",
+      "operation_accuracy_m": 0.5,
+      "source_position_accuracy_m": null,
+      "note": "Transformation accuracy is not accuracy of the published source point."
+    },
+    "separation_m": 2.2385039969665064,
+    "interpretation": "converted cave anchors agree closely; repeated source notation does not establish independent survey or a specific entrance"
+  }
+}

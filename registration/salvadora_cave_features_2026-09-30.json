@@ -1,0 +1,129 @@
+{
+  "reviewed": "2026-09-30",
+  "report": "research/sites/salvadora_cave_review_2026-09-30.md",
+  "source": {
+    "authors": [
+      "Roi Porat",
+      "Hanan Eshel",
+      "Amos Frumkin"
+    ],
+    "year": 2009,
+    "printed_pages": [
+      137,
+      143
+    ],
+    "pdf_pages": [
+      3,
+      9
+    ],
+    "printed_page_equals_pdf_page_plus": 134,
+    "url": "https://www.malham.info/_files/ugd/2121fb_1dd5ef95cf9e4204babd56420c2e856f.pdf",
+    "review": "entire seven-page chapter read visually; original 1971 diaries summarized by authors, not directly accessed"
+  },
+  "anchor": {
+    "raw_grid": "18651/10299",
+    "notation_assumption": "five digit components in 10 m units; expanded to 186510/102990",
+    "conversion": {
+      "longitude": 35.383992365499395,
+      "latitude": 31.518954025351906,
+      "input_epsg": 28191,
+      "input_easting_m": 186510,
+      "input_northing_m": 102990,
+      "operation": "Inverse of Palestine Grid + Palestine 1923 to WGS 84 (1) (with axis order normalized for visualization)",
+      "operation_accuracy_m": 2.0,
+      "source_position_accuracy_m": null,
+      "note": "Transformation accuracy is not accuracy of the published source point."
+    },
+    "position_type": "published cave-level point",
+    "entrance_assignment": null,
+    "accuracy_m": null
+  },
+  "features": [
+    {
+      "id": "SV-entrance",
+      "name": "east-facing entrance",
+      "source_locator": "p.137; Figs1-4",
+      "dimensions_m": [
+        6,
+        2
+      ],
+      "position": "published cave anchor, not a surveyed opening corner",
+      "deposit_assignment": null
+    },
+    {
+      "id": "SV-crack",
+      "name": "natural crack at southern part of entrance",
+      "source_locator": "p.142; Fig4 p.140 labeled arrow-head location",
+      "observation": "three-winged iron arrowhead in natural bedrock crack",
+      "position": "source-plan label only",
+      "wgs84": null,
+      "phase": "Early Roman typological attribution; precise deposition episode unestablished",
+      "sealed_context": "not established in reviewed chapter",
+      "scroll_match": "no entry assigned"
+    },
+    {
+      "id": "SV-spoil",
+      "name": "outside excavation spoil",
+      "source_locator": "pp.141-142",
+      "observation": "2002 pottery and nails recovered from spoil; worn unidentifiable coin nearby",
+      "position": "outside cave; no mapped locus in reviewed chapter",
+      "context": "disturbed; no sealed association",
+      "scroll_match": "no entry assigned"
+    },
+    {
+      "id": "SV-layerI",
+      "name": "upper layer in Bar-Adon excavation",
+      "source_locator": "pp.138-139; authors archival summary",
+      "reported_layer_thickness_cm": [
+        10,
+        15
+      ],
+      "phase": "Early Roman materials, authors interpret Bar Kokhba refuge use",
+      "context": "reported layers/floors; original object-to-layer catalogue not inspected",
+      "scroll_match": "no entry assigned"
+    },
+    {
+      "id": "SV-layerII",
+      "name": "lower prehistoric layer",
+      "source_locator": "p.141 and note5; authors archival summary",
+      "reported_layer_thickness_cm": [
+        40,
+        51
+      ],
+      "phase": "Chalcolithic",
+      "context": "discontinuous layers; authors note boundaries not always distinguishable; niche 3 mentioned; printed thickness range retained as given"
+    },
+    {
+      "id": "SV-cairns",
+      "name": "approach-path cairns",
+      "source_locator": "p.137 note2",
+      "observation": "relatively modern cairns; authors suggest some may have been placed by 1971 excavation workers",
+      "position": "trail approximately 20 m below opening",
+      "scroll_match": "excluded as evidence of an ancient cairn landmark"
+    }
+  ],
+  "original_record_leads": [
+    {
+      "title": "Bar-Adon 1971, Excavations in the Judean Desert",
+      "series": "Hadashot Arkheologiyot",
+      "volume": 40,
+      "pages": [
+        25,
+        27
+      ],
+      "access_status": "citation in 2009 bibliography p.143; original note not obtained"
+    },
+    {
+      "title": "Bar-Adon field diaries and object records",
+      "institution": "Israel Antiquities Authority archive, as credited by 2009 authors",
+      "access_status": "not directly inspected; no exact archival identifier recovered"
+    }
+  ],
+  "confidence": {
+    "reading": "no entry-specific reading proposed",
+    "site_association": "regional source lead only",
+    "physical_feature": "published observed crack; association with a scroll feature absent",
+    "geographic_position": "converted cave anchor; crack located relative to source plan"
+  },
+  "assessment": "useful context comparison; no Copper Scroll identification or cache established"
+}

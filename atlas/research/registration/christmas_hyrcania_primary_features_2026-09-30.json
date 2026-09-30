@@ -122,8 +122,12 @@
         "difference_easting": 50000,
         "difference_northing": 500000,
         "accuracy_m": null,
-        "wgs84": null,
-        "registration_status": "source point retained without conversion; not an independently surveyed entrance"
+        "wgs84": {
+          "longitude": 35.41991118302899,
+          "latitude": 31.682161887528487
+        },
+        "registration_status": "source-grid conversion completed; cave-level point, not a surveyed entrance",
+        "conversion_record": "registration/christmas_cave_objects_2026-09-30.json#coordinate_checks"
       },
       "phase": "Multiple periods; surface finds",
       "possible_entry_tests": [],
@@ -132,7 +136,7 @@
         "reading": "entry-dependent; consult text/readings.json",
         "site_association": "regional comparison only",
         "physical_feature": "published observed feature",
-        "geographic_position": "unregistered source plan"
+        "geographic_position": "converted published cave anchor; source accuracy and entrance assignment unknown"
       }
     },
     {
@@ -298,7 +302,8 @@
         "geographic_position": "unregistered source plan"
       },
       "station": 1,
-      "line_length_m": 9000
+      "line_length_m": 9000,
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     },
     {
       "id": "HY-42",
@@ -328,7 +333,8 @@
         "physical_feature": "published observed feature",
         "geographic_position": "unregistered source plan"
       },
-      "station": 42
+      "station": 42,
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     },
     {
       "id": "HY-44",
@@ -361,7 +367,8 @@
       "station": 44,
       "surviving_dam_length_m": 17.5,
       "line_length_m": 1950,
-      "related_intake_lead": "K10; guide grid crosswalk unverified"
+      "related_intake_lead": "K10; guide grid crosswalk unverified",
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     },
     {
       "id": "HY-46",
@@ -392,7 +399,8 @@
         "geographic_position": "unregistered source plan"
       },
       "station": 46,
-      "unobserved_hypothesis": "Collection cistern suggested by author; no remains identified"
+      "unobserved_hypothesis": "Collection cistern suggested by author; no remains identified",
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     },
     {
       "id": "HY-48",
@@ -423,7 +431,8 @@
         "geographic_position": "unregistered source plan"
       },
       "station": 48,
-      "length_m": 112
+      "length_m": 112,
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     },
     {
       "id": "HY-pool-N",
@@ -456,7 +465,15 @@
         "physical_feature": "published observed feature",
         "geographic_position": "unregistered source plan"
       },
-      "maximum_depth_m": 5
+      "maximum_depth_m": 5,
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json",
+      "reported_side_lengths_m": {
+        "south": 19,
+        "west": 15,
+        "north": 18.2,
+        "east": 16
+      },
+      "side_lengths_source": "Patrich1989 p.255, paragraph continues into left column"
     },
     {
       "id": "HY-pool-S",
@@ -493,7 +510,8 @@
       "rock_partition_width_m": [
         4.8,
         5.4
-      ]
+      ],
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     },
     {
       "id": "HY-pool-extra-S",
@@ -526,7 +544,8 @@
         "physical_feature": "published observed feature",
         "geographic_position": "unregistered source plan"
       },
-      "preservation": "Filled; deeper lining/plaster not visible"
+      "preservation": "Filled; deeper lining/plaster not visible",
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     },
     {
       "id": "HY-49",
@@ -569,7 +588,8 @@
         "25A"
       ],
       "filled_end": "south",
-      "do_not_merge_with": "K16: guide mysterious approximately 30-m tunnel"
+      "do_not_merge_with": "K16: guide mysterious approximately 30-m tunnel",
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     },
     {
       "id": "HY-S",
@@ -600,7 +620,8 @@
         "site_association": "possible, low",
         "physical_feature": "published observed feature",
         "geographic_position": "unregistered source plan"
-      }
+      },
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     },
     {
       "id": "HY-F",
@@ -632,7 +653,8 @@
         "site_association": "possible, low",
         "physical_feature": "published observed feature",
         "geographic_position": "unregistered source plan"
-      }
+      },
+      "registration_followup": "registration/hyrcania_plan_registration_2026-09-30.json"
     }
   ],
   "selected_dates": [

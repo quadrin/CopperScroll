@@ -142,12 +142,15 @@
       "source_claim": "Accessible lower-Kidron cave; earlier coins plus a second-year Bar Kokhba coin. Agrippa I coin pictured as found in the cave; Nerva denarius caption says near the cave.",
       "period_evidence": "Authors infer First Revolt and Bar Kokhba use; mint date is not deposition date.",
       "raw_grid": "189887/121095",
-      "coordinate_system": "2009 printed old-grid notation; cave-level anchor, accuracy and entrance assignment unspecified",
-      "wgs84": null,
+      "coordinate_system": "EPSG2039 source point converted to WGS84; cave-level accuracy unspecified",
+      "wgs84": {
+        "longitude": 35.41991118302899,
+        "latitude": 31.682161887528487
+      },
       "status": "source lead, no identified Copper Scroll deposit",
       "possible_entry_test": [],
-      "next_test": "Entrance/neighboring-cave plan obtained (2009 Fig.5 p.35). Locate original object and trench records; keep caves 710 and 711 separate and resolve coordinate-to-entrance assignment.",
-      "followup_report": "research/sites/christmas_hyrcania_primary_followup_2026-09-30.md",
+      "next_test": "Recover original bags and trench maps for IAA582928, IAA582931 and IAA585440; published lab/accession joins completed.",
+      "followup_report": "research/sources/christmas_cave_provenance_2026-09-30.md",
       "additional_source_grid": {
         "raw_grid": "239887/621095",
         "coordinate_system": "New Israel Grid as printed in Rasmussen et al. 2022 p.2"
@@ -186,12 +189,16 @@
       ],
       "source_claim": "Early Roman finds and objects from a rock fissure; 1971 Bar-Adon excavation described as unpublished in 2009.",
       "period_evidence": "Early Roman material reported, exact deposit phase unverified.",
-      "raw_grid": null,
-      "coordinate_system": null,
-      "wgs84": null,
+      "raw_grid": "18651/10299",
+      "coordinate_system": "Provisional interpretation: EPSG28191 old-grid components in 10 m units; source position accuracy unspecified",
+      "wgs84": {
+        "longitude": 35.383992365499395,
+        "latitude": 31.518954025351906
+      },
       "status": "source lead, no identified Copper Scroll deposit",
       "possible_entry_test": [],
-      "next_test": "Check current publication status and recover original fissure plan and find loci."
+      "next_test": "Arrowhead crack located in 2009 Fig4; obtain original 1971 object/layer records and check later publication status.",
+      "followup_report": "research/sites/salvadora_cave_review_2026-09-30.md"
     },
     {
       "id": "K04",
@@ -332,13 +339,16 @@
       "source_claim": "Dressed-stone dam diverts runoff to south-bank aqueduct; continuation assigns it to Hyrcania northern system, 1.2 km.",
       "period_evidence": "Guide broadly assigns Hasmonean/Herodian system; individual phase requires primary report.",
       "raw_grid": "1837.1261",
-      "coordinate_system": "source grid notation; CRS and feature assignment unverified",
-      "wgs84": null,
+      "coordinate_system": "Provisional interpretation: EPSG28191 source components in 100 m units; guide point, not surveyed station44",
+      "wgs84": {
+        "longitude": 35.354742742541866,
+        "latitude": 31.72741114203423
+      },
       "status": "source lead, no identified Copper Scroll deposit",
       "possible_entry_test": [],
-      "next_test": "Register guide grid against station 44; compare endpoints and observed/reconstructed stretches to resolve 1.2 versus 1.95 km.",
-      "followup_report": "research/sites/christmas_hyrcania_primary_followup_2026-09-30.md",
-      "primary_comparison": "Patrich 1989 p.251 station 44; Fig.1 p.243. Northern line 1950 m. Guide grid-to-station crosswalk remains unverified."
+      "next_test": "Regional trial disagrees with guide grid by about244m. Resolve map generalization, grid notation and intake identity using survey coordinates.",
+      "followup_report": "research/sites/hyrcania_plan_registration_2026-09-30.md",
+      "primary_comparison": "Patrich1989 station44; geographic identity not confirmed by trial registration."
     },
     {
       "id": "K11",

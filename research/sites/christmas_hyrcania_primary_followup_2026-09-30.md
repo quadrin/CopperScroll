@@ -2,6 +2,8 @@
 
 Reviewed 30 September 2026. This continues the [three-book intake](https://github.com/quadrin/CopperScroll/blob/main/research/sources/kotar_books_intake_2026-09-30.md). **Result:** Christmas Cave now has a published location and an entrance/neighboring-cave plan; Hyrcania now has a directly read feature inventory. Neither establishes a Copper Scroll deposit. Hyrcania remains possible, low, for entries 16, 29 and 35.
 
+**Later follow-up on the same date:** [plan registration, collection provenance and Salvadora review](https://github.com/quadrin/CopperScroll/blob/main/research/sites/cave_plan_followup_2026-09-30.md). Christmas's cave anchor has now been converted; precise entrance positions remain unresolved. Hyrcania's regional registration trial is insufficient for geographic feature footprints. The source-access limitations below describe this earlier review stage.
+
 ## Sources actually inspected
 
 | Source | Scope inspected | Page mapping and access |

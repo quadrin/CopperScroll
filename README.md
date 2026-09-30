@@ -11,6 +11,8 @@ Research on the places, landmarks, text, and structure of the Copper Scroll. The
 
 The main site proposals remain conditional. The review rates Qumran's upper aqueduct (entry 21), Doq (31), the Wadi Qelt/Choziba stretch (32), and the Siloam outlet complex (49) at medium site confidence. [Feature investigation](research/sites/feature_investigation.md) tests individual structures separately. The [plate check](research/text/plate_check.md) revisits readings that affect several identifications. The [sequence analysis](research/text/deeper_analysis_2026-09-30.md) finds a different ordering pattern in entries 1–19, but does not locate a site. Later corrections are recorded in the reports and [findings log](research/logs/findings_log.md).
 
+**Latest source follow-up:** [Hyrcania plan registration, Christmas Cave object provenance and Salvadora contexts](research/sites/cave_plan_followup_2026-09-30.md). Includes a failed precise-registration check, a conditional pool-dimension test, museum/lab identifier joins and the located arrowhead crack.
+
 ## Repository map
 
 | Folder | Contents |

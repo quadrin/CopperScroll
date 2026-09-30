@@ -95,3 +95,9 @@ The [primary-source follow-up](christmas_hyrcania_primary_followup_2026-09-30.md
 
 - **Hyrcania (16, 29, 35): possible, low, unchanged.** The numbered intake dams, western double pool and covered passage provide concrete physical-feature comparisons. The restored text, first-century use and geographic registration remain unresolved; a 14/40/41-cubit sensitivity test does not select a reading or identify a deposit.
 - **Christmas Cave:** a located regional comparison cave, with distinct entrance and neighboring-cave records; no Copper Scroll entry is assigned. Source access and dating checks do not establish a scroll association.
+
+### Plan and collection follow-up - 30 September 2026
+
+The [latest results](cave_plan_followup_2026-09-30.md) add an explicit Hyrcania regional registration trial: station 44's predicted point and the guide's interpreted grid differ by about 244 m. Detailed pool/cistern positions are retained within Fig. 22; geographic fitting is unresolved. The northern pool's reported sides (15-19 m) fail a conditional 24-cubit side-length test at 0.445-0.525 m/cubit, while an offset interpretation remains open. Hyrcania remains possible, low.
+
+The Christmas crosswalk links five reused lab measurements to museum accessions and separates recalibration from new evidence. Original object-to-trench links remain missing. Salvadora's 2009 chapter locates the arrowhead crack and distinguishes reported layers, spoil and modern cairns. Christmas and Salvadora remain regional leads without assigned entries. Converted cave anchors do not identify deposits.
