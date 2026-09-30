@@ -353,6 +353,12 @@ The same eight prompts, run again in another browser session. Files: `registrati
 - **Blocked this time:** the BAS Library (login), HathiTrust search (a bot check), Kotar (server errors), the IAA survey records for the Benjamin survey, and the *Hadashot* search page.
 - **Outreach:** the Gmail check was repeated at about 03:50 UTC on 30 September; still no replies.
 
+## Additional Kotar books received — 30 September 2026
+
+Three user-supplied JPEG collections were inspected in targeted sections: *Perach bar ba-midbar* (*Ariel* 186, 2009), *Israel Guide* vol. 13 (2001), and *Dead Sea and Judean Desert 1900–1967* (1990). The [intake report](kotar_books_intake_2026-09-30.md) records exact printed/scanned page correspondences, observations, inherited claims, competing interpretations and next tests. The structured accession/feature records are in [`registration/kotar_book_leads_2026-09-30.json`](https://github.com/quadrin/CopperScroll/blob/main/registration/kotar_book_leads_2026-09-30.json). No full-book OCR or exhaustive review was performed.
+
+The separate user-supplied *Ancient Aqueducts in the Land of Israel* ZIP is available locally. This intake does not mark its previously blocked chapters as read.
+
 ## Text provenance and reuse
 
 Use the available editions as research sources. Keep ancient wording, an editor's restoration, a modern translation and the project's own interpretation distinguishable, with page and line citations. Existing files and historical delivery notes do not establish a blanket permission or prohibition for new publication. Follow [Text and publication](../../AGENTS.md#text-and-publication); a replacement-transcription search is not a prerequisite for the research.

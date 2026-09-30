@@ -34,6 +34,7 @@ Candidate coordinates and uncertainties are in [`tables/`](../tables/); detailed
 
 ## Sources and research record
 
+- [Three Kotar books: cave, Kidron and landscape leads](sources/kotar_books_intake_2026-09-30.md): page-cited intake of *Perach bar ba-midbar*, *Israel Guide* vol. 13, and *Dead Sea and Judean Desert 1900–1967*. Includes the modern Sekakah naming dependency, alternative canyon boundaries, dated cave leads, and a rejected shoreline model.
 - [Source inventory](sources/sources.md): editions, archaeological reports, access status, page offsets, and text provenance.
 - [Source leads](sources/source_leads_2026-09-29.md) and [extraction comparison](sources/source_extractions_2026-09-29.md): what the later searches added and where their limits remain.
 - [TIR map search](sources/tir_digital_copy_search.md): the separate search for map copies and its [supporting files](sources/tir-assets/).

@@ -79,3 +79,12 @@ The same eight prompts were run again ([comparison](../sources/source_extraction
 - **Hyrcania (16, 29, 35): possible, low, unchanged.** The N aqueduct is the 1.95 km Wadi Abu Shuʿla line (Hasmonean); the S aqueduct is the 9 km Qidron line (Herodian) (F11.2). Patrich has the fortress abandoned after Herod's death, so the 1st-c. CE period fit is disputed (F11.3).
 - **Entry 21: medium, unchanged.** Google Books does not find "Archelaus" on pp. 380–386, where HathiTrust did; a scan of p. 385 must decide (F11.4).
 - **Entries 40 and 59: unchanged.** The runs read Jeremias's measurements differently (F11.6). Zertal's Salhab entry shows no channel on the page images (F11.5).
+
+## Kotar book intake — 30 September 2026
+
+The [three-book review](../sources/kotar_books_intake_2026-09-30.md) adds source locators and tests; no confidence ratings or deposit coordinates change.
+
+- **Sekakah / Qumran (20–23):** *Israel Guide* 13 p. 176 explicitly derives the modern stream name from the proposed biblical identification. Nahal Sekakah is therefore not an independent name witness for Qumran. The dam at source grid `1837.1261` belongs to Hyrcania's northern system in the continuation on p. 177, not to Qumran's aqueduct.
+- **Kidron (35):** the guide distinguishes the upper canyon entrance/end, the basin interval, and the lower canyon entrance/outlet (pp. 194–195). These provide separate terrain hypotheses for the gorge reading, with no dated cairn at any anchor. The peak, pottery and dam interpretations remain separate alternatives.
+- **Cave leads:** the *Ariel* 186 survey reports early Roman material at Christmas, Salvadora, and the western Te'enim cave, alongside later evidence. These are leads to original cave plans and find contexts; no entry match is established.
+- **Shoreline:** Klein's proposed Herodian flooding of Qumran at −330 m (*Dead Sea and Judean Desert*, pp. 41–44) conflicts with the much lower late Holocene range reported by Bookman et al. 2004. It is excluded from the current location models pending the primary sample-level review.

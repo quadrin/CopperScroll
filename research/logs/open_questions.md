@@ -219,3 +219,12 @@ See [source_extractions_2026-09-29.md](../sources/source_extractions_2026-09-29.
   - A pointer to an IAA online version of part of the Benjamin survey (map 73), from Zertal & Bar vol. 9 p. 484, is not yet opened.
 - Q46 update: Zertal's Salhab entry, now seen on the page images, reports 30 cisterns and no channel (F11.5). Gophna and Porath 1972 (no. 65) is still unread. The "Site 43" snippet is el-Quleh, not Upper Ibziq.
 - Q40 update: no reply from Høgenhaven at 03:50 UTC on 30 September.
+
+## Kotar book intake — 30 September 2026
+
+See the [three-book review](../sources/kotar_books_intake_2026-09-30.md).
+
+- Q34 update: *Israel Guide* 13 pp. 194–195 supplies separate upper and lower canyon entrances/outlets. Test the upper entrance (`1808.1259`), upper end (`1819.1227`), and lower canyon/outlet alternatives separately; retain peak, pottery and dam readings. No period cairn has been located. Source grids need source-map/CRS verification before conversion.
+- Q49 update: the guide pp. 176–177 assigns dam `1837.1261` to Hyrcania's northern line and gives 1.2 km, versus Patrich's reported 1.95 km. Compare endpoints, preserved versus reconstructed segments, installation dates and pool counts. The user-supplied aqueduct volume is now available locally; the Patrich chapter has not been reviewed in this intake. Earlier notes recording blocked access are historical.
+- Q50 (new). **Which exact caves and find loci underlie the early material at Christmas, Salvadora and western Te'enim?** Obtain original entrance plans, cave numbers and stratigraphic contexts. Follow Porat et al., *Ariel* 186 pp. 18–23, and the cited Bar-Adon records. Check present publication status of Salvadora's 1971 excavation; the article's “unpublished” description dates to 2009. Regional relevance alone does not assign a Copper Scroll entry.
+- Q51 (new). **Can old benchmark and photo records be registered with a defensible elevation datum?** Recover PEF/Masterman measurements, Koppe's calibration and original Rujm el-Bahr photographs (Klein pp. 33, 38, 45). For ancient levels obtain Bookman et al. 2004's dated sample table and uncertainties. Do not use the older −330-m Herodian flooding scenario.

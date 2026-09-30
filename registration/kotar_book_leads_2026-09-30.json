@@ -1,0 +1,514 @@
+{
+  "reviewed": "2026-09-30",
+  "scope": "targeted source intake; not full-book OCR or exhaustive catalogue",
+  "report": "research/sources/kotar_books_intake_2026-09-30.md",
+  "source_books": [
+    {
+      "id": "P",
+      "title": "פרח בר במדבר: מסע ומסה במדבר יהודה",
+      "year": 2009,
+      "series": "Ariel 186",
+      "kotar_book_id": "99363677",
+      "image_directory": "../kotar_received/perach",
+      "image_count": 116,
+      "read_printed_ranges": [
+        [
+          8,
+          28
+        ]
+      ],
+      "mapping": [
+        {
+          "printed_range": [
+            8,
+            28
+          ],
+          "image_range": [
+            10,
+            30
+          ]
+        }
+      ],
+      "review_mode": "visual, targeted sections",
+      "zip_filename": "perach-bar-bamidbar.zip",
+      "image_path_base": "repository root in this local workspace"
+    },
+    {
+      "id": "G",
+      "title": "מדריך ישראל החדש, כרך 13: מדבר יהודה ובקעת ים המלח",
+      "year": 2001,
+      "chief_editor": "Sefi Ben-Yosef",
+      "kotar_book_id": "75901013",
+      "image_directory": "../kotar_received/guide13",
+      "image_count": 308,
+      "read_printed_ranges": [
+        [
+          63,
+          63
+        ],
+        [
+          79,
+          86
+        ],
+        [
+          114,
+          117
+        ],
+        [
+          128,
+          129
+        ],
+        [
+          148,
+          148
+        ],
+        [
+          176,
+          177
+        ],
+        [
+          194,
+          195
+        ]
+      ],
+      "mapping": [
+        {
+          "scope": "inspected site pages only",
+          "image_minus_printed": 3
+        }
+      ],
+      "review_mode": "visual, contents/index and targeted site sections",
+      "zip_filename": "israel-guide-vol13.zip",
+      "image_path_base": "repository root in this local workspace"
+    },
+    {
+      "id": "D",
+      "title": "ים המלח ומדבר יהודה 1900–1967",
+      "year": 1990,
+      "editor": "Mordechai Naor",
+      "kotar_book_id": "84772311",
+      "image_directory": "../kotar_received/deadsea",
+      "image_count": 296,
+      "read_printed_ranges": [
+        [
+          29,
+          45
+        ],
+        [
+          203,
+          220
+        ]
+      ],
+      "mapping": [
+        {
+          "printed_range": [
+            29,
+            45
+          ],
+          "image_range": [
+            35,
+            51
+          ]
+        },
+        {
+          "printed_range": [
+            203,
+            220
+          ],
+          "image_range": [
+            213,
+            230
+          ]
+        }
+      ],
+      "review_mode": "visual, targeted sections",
+      "zip_filename": "dead-sea-judean-desert-1900-1967.zip",
+      "image_path_base": "repository root in this local workspace"
+    }
+  ],
+  "feature_leads": [
+    {
+      "id": "K01",
+      "name": "Christmas cave / מערת חג המולד",
+      "source_id": "P",
+      "printed_pages": [
+        22,
+        23
+      ],
+      "image_files": [
+        "024.jpg",
+        "025.jpg"
+      ],
+      "source_claim": "Accessible lower-Kidron cave; earlier coins plus a second-year Bar Kokhba coin. Agrippa I coin pictured as found in the cave; Nerva denarius caption says near the cave.",
+      "period_evidence": "Authors infer First Revolt and Bar Kokhba use; mint date is not deposition date.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Recover original cave identifier, entrance plan, pottery and coin loci."
+    },
+    {
+      "id": "K02",
+      "name": "Coin cave / מערת המטבע and neighboring caves",
+      "source_id": "P",
+      "printed_pages": [
+        22
+      ],
+      "image_files": [
+        "024.jpg"
+      ],
+      "source_claim": "Bar-Adon excavations 1970/1976 and shepherd reuse; early/later Roman coin and lamp observations also refer to neighboring caves.",
+      "period_evidence": "Do not assign neighboring finds to Coin cave.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Separate cave numbers and survey/archive observations."
+    },
+    {
+      "id": "K03",
+      "name": "Salvadora cave; photograph label 143",
+      "source_id": "P",
+      "printed_pages": [
+        18,
+        19
+      ],
+      "image_files": [
+        "020.jpg",
+        "021.jpg"
+      ],
+      "source_claim": "Early Roman finds and objects from a rock fissure; 1971 Bar-Adon excavation described as unpublished in 2009.",
+      "period_evidence": "Early Roman material reported, exact deposit phase unverified.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Check current publication status and recover original fissure plan and find loci."
+    },
+    {
+      "id": "K04",
+      "name": "Te’enim western cave",
+      "source_id": "P",
+      "printed_pages": [
+        20,
+        21
+      ],
+      "image_files": [
+        "022.jpg",
+        "023.jpg"
+      ],
+      "source_claim": "Early Roman pottery and Herodian lamp fragment in western cave.",
+      "period_evidence": "Early Roman material, not a dated cache.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Recover western entrance/plan and locate pottery and lamp contexts separately."
+    },
+    {
+      "id": "K05",
+      "name": "Te’enim southern cave",
+      "source_id": "P",
+      "printed_pages": [
+        20,
+        21
+      ],
+      "image_files": [
+        "022.jpg",
+        "023.jpg"
+      ],
+      "source_claim": "Whole spear in narrow rock crack.",
+      "period_evidence": "Authors interpret short Bar Kokhba use; separate from western cave.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Recover crack dimensions and original dating context."
+    },
+    {
+      "id": "K06",
+      "name": "Romah complex and Naqb el-Mardeh",
+      "source_id": "P",
+      "printed_pages": [
+        15,
+        16,
+        17
+      ],
+      "image_files": [
+        "017.jpg",
+        "018.jpg",
+        "019.jpg"
+      ],
+      "source_claim": "Five caves with third-year Bar Kokhba coins and occupation material; aerial photo marks path and cave clusters.",
+      "period_evidence": "Later revolt evidence does not establish scroll-period use.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Obtain controlled survey map and path chronology."
+    },
+    {
+      "id": "K07",
+      "name": "Dinar cave",
+      "source_id": "P",
+      "printed_pages": [
+        18
+      ],
+      "image_files": [
+        "020.jpg"
+      ],
+      "source_claim": "Relatively accessible cave with small walls, third-year revolt coin and weapon evidence.",
+      "period_evidence": "Bar Kokhba; interpreted as lookout/ambush rather than standard prolonged refuge.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Compare water and access requirements with securely dated refuge caves."
+    },
+    {
+      "id": "K08",
+      "name": "Har Yishai / Cabar complexes",
+      "source_id": "P",
+      "printed_pages": [
+        25,
+        26
+      ],
+      "image_files": [
+        "027.jpg",
+        "028.jpg"
+      ],
+      "source_claim": "Early Roman and later revolt material; installations at some features.",
+      "period_evidence": "Installation phase and occupation phase must be separated.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Trace inherited Bar-Adon records and assign each find to the correct cave."
+    },
+    {
+      "id": "K09",
+      "name": "Bir el-Amara / ביר אלמעארה",
+      "source_id": "G",
+      "printed_pages": [
+        176
+      ],
+      "image_files": [
+        "179.jpg"
+      ],
+      "source_claim": "Large cistern and old stone troughs.",
+      "period_evidence": "No secure installation/use date given in inspected guide text.",
+      "raw_grid": "1831.1265",
+      "coordinate_system": "source grid notation; CRS and feature assignment unverified",
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Seek original plan and dating of each trough."
+    },
+    {
+      "id": "K10",
+      "name": "Abu Shuʿla dam, Hyrcania northern aqueduct",
+      "source_id": "G",
+      "printed_pages": [
+        176,
+        177
+      ],
+      "image_files": [
+        "179.jpg",
+        "180.jpg"
+      ],
+      "source_claim": "Dressed-stone dam diverts runoff to south-bank aqueduct; continuation assigns it to Hyrcania northern system, 1.2 km.",
+      "period_evidence": "Guide broadly assigns Hasmonean/Herodian system; individual phase requires primary report.",
+      "raw_grid": "1837.1261",
+      "coordinate_system": "source grid notation; CRS and feature assignment unverified",
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Verify grid and endpoints against Patrich; resolve 1.2 versus 1.95 km scope."
+    },
+    {
+      "id": "K11",
+      "name": "Mar Saba canyon entrance",
+      "source_id": "G",
+      "printed_pages": [
+        195
+      ],
+      "image_files": [
+        "198.jpg"
+      ],
+      "source_claim": "Start of narrow canyon section, north-to-south, about 3 km long.",
+      "period_evidence": "Modern terrain description, not period cairn evidence.",
+      "raw_grid": "1808.1259",
+      "coordinate_system": "source grid notation; CRS and feature assignment unverified",
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [
+        35
+      ],
+      "next_test": "Test entrance sense of gorge-mouth against entry readings and dated route features."
+    },
+    {
+      "id": "K12",
+      "name": "Southern end of Mar Saba canyon",
+      "source_id": "G",
+      "printed_pages": [
+        195
+      ],
+      "image_files": [
+        "198.jpg"
+      ],
+      "source_claim": "Canyon section ends near Small Lavra ridge, before river turns east into basin.",
+      "period_evidence": "Modern terrain; Byzantine landmark is not a first-century date.",
+      "raw_grid": "1819.1227",
+      "coordinate_system": "source grid notation; CRS and feature assignment unverified",
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [
+        35
+      ],
+      "next_test": "Test upper-gorge outlet model; recover any period cairn or separate dam intake."
+    },
+    {
+      "id": "K13",
+      "name": "Kidron transition into Hyrcania basin",
+      "source_id": "G",
+      "printed_pages": [
+        195
+      ],
+      "image_files": [
+        "198.jpg"
+      ],
+      "source_claim": "River enters open basin at the given grid.",
+      "period_evidence": "Modern terrain description.",
+      "raw_grid": "1839.1225",
+      "coordinate_system": "source grid notation; CRS and feature assignment unverified",
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [
+        35
+      ],
+      "next_test": "Use as control separating canyon and basin segments."
+    },
+    {
+      "id": "K14",
+      "name": "Lower Kidron steep canyon start",
+      "source_id": "G",
+      "printed_pages": [
+        195
+      ],
+      "image_files": [
+        "198.jpg"
+      ],
+      "source_claim": "Beginning of steep lower canyon, approximately 3 km long.",
+      "period_evidence": "Modern terrain description, no dated heap.",
+      "raw_grid": "1897.1213",
+      "coordinate_system": "source grid notation; CRS and feature assignment unverified",
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [
+        35
+      ],
+      "next_test": "Keep entrance distinct from cliff exit; register source map."
+    },
+    {
+      "id": "K15",
+      "name": "Kidron stream outlet",
+      "source_id": "G",
+      "printed_pages": [
+        194,
+        195
+      ],
+      "image_files": [
+        "197.jpg",
+        "198.jpg"
+      ],
+      "source_claim": "Outlet grid in site heading; lower reach follows alluvial fan to Dead Sea.",
+      "period_evidence": "Modern geography and shoreline, not exact ancient mouth.",
+      "raw_grid": "1925.1201",
+      "coordinate_system": "source grid notation; CRS and feature assignment unverified",
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [
+        35
+      ],
+      "next_test": "Locate cliff exit separately and test eastern model with ancient shoreline uncertainty."
+    },
+    {
+      "id": "K16",
+      "name": "Hyrcania stepped tunnels",
+      "source_id": "G",
+      "printed_pages": [
+        177
+      ],
+      "image_files": [
+        "180.jpg"
+      ],
+      "source_claim": "Northern slope tunnel about 30 m deep; second blocked tunnel about 300 m away; purpose explicitly uncertain.",
+      "period_evidence": "Mithraic comparison is interpretation, not demonstrated phase.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Find excavation plans and stratigraphy before assigning a scroll feature."
+    },
+    {
+      "id": "K17",
+      "name": "Ein Feshkha PEF rock benchmark",
+      "source_id": "D",
+      "printed_pages": [
+        33
+      ],
+      "image_files": [
+        "039.jpg"
+      ],
+      "source_claim": "PEF/Masterman 1900–1913 measurements and Koppe 1917 height calibration.",
+      "period_evidence": "Modern historical measurements only.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Recover original benchmark datum, notebooks and repeat photographs."
+    },
+    {
+      "id": "K18",
+      "name": "Rujm el-Bahr shoreline / jetty photographs",
+      "source_id": "D",
+      "printed_pages": [
+        38
+      ],
+      "image_files": [
+        "044.jpg"
+      ],
+      "source_claim": "Historical shoreline photographic comparison across 1936–1970.",
+      "period_evidence": "Modern shoreline, not ancient lake level.",
+      "raw_grid": null,
+      "coordinate_system": null,
+      "wgs84": null,
+      "status": "source lead, no identified Copper Scroll deposit",
+      "possible_entry_test": [],
+      "next_test": "Recover original images with dates, camera positions and datum control."
+    }
+  ],
+  "constraints": [
+    "No WGS84 conversion performed.",
+    "Raw grids locate source-described features, not Copper Scroll deposits.",
+    "Cave leads have no assigned entry match.",
+    "Period evidence, installation dates, and coin mint dates are separate."
+  ],
+  "excluded_model": {
+    "claim": "Qumran flooded at about -330 m during Herod",
+    "source": "D pp. 41–44",
+    "reason": "Older inferred reconstruction conflicts with Bookman et al. 2004 reported late Holocene range -390 to -415 m; white band origin/date not independently established here.",
+    "check_url": "https://cris.huji.ac.il/en/publications/late-holocene-lake-levels-of-the-dead-sea/",
+    "checked_extent": "abstract only, not full sample table"
+  }
+}
