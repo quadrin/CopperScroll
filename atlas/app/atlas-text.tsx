@@ -1,7 +1,7 @@
 "use client";
 
 import { Fragment, useEffect, useMemo, useState } from "react";
-import { ExternalLink, ScrollText, X } from "lucide-react";
+import { ScrollText, X } from "lucide-react";
 
 // The entry's lines of 3Q15: Abegg's transcription (ETCBC dss 2.0.1, CC BY-NC 4.0),
 // with the translation, glosses and reading notes written for the project.
@@ -16,7 +16,6 @@ type Note = { label?: string; readings?: Reading[]; note?: string; entry: string
 export type TextData = { gloss: Record<string, string>; notes: Record<string, Note>; entries: Record<string, Line[]> };
 export type Selection = { line: string; word?: number; note?: string } | null;
 
-export const textPage = "https://quadrin.github.io/CopperScroll/web/";
 const research = "https://github.com/quadrin/CopperScroll/blob/main/";
 
 // Loaded once, on the first field note; later notes render from the cache at once.
@@ -76,7 +75,7 @@ export function useScrollText() {
   return { data, failed, ...index };
 }
 
-export default function EntryText({ entryId, onOpenScroll }: { entryId: string; onOpenScroll?: () => void }) {
+export default function EntryText({ entryId, onOpenScroll }: { entryId: string; onOpenScroll: () => void }) {
   const { data, failed, lineWords, notesFor } = useScrollText();
   const [sel, setSel] = useState<Selection>(null);
   // The folio is keyed by entry, so a new entry mounts a fresh component and selection.
@@ -91,7 +90,7 @@ export default function EntryText({ entryId, onOpenScroll }: { entryId: string; 
   const span = first === last ? first : first.split(" ")[0] === last.split(" ")[0] ? `${first}–${last.split(" ")[1]}` : `${first}–${last}`;
 
   return <section className="scroll-text" aria-label={`The text of entry ${entryId}`}>
-    <div className="st-head"><span className="small-caps">The text · {span}</span>{onOpenScroll ? <button type="button" onClick={onOpenScroll}><ScrollText size={13}/>Open the scroll</button> : <a href={`${textPage}#entry-${entryId}`} target="_blank" rel="noreferrer">Full text <ExternalLink size={12}/></a>}</div>
+    <div className="st-head"><span className="small-caps">The text · {span}</span><button type="button" onClick={onOpenScroll}><ScrollText size={13}/>Read in context</button></div>
     <ol className="st-lines">{lines.map(l => {
       const lineNo = l.ref.split(" ")[1];
       return <li key={l.ref} className={sel?.line === l.ref ? "st-line active" : "st-line"}>

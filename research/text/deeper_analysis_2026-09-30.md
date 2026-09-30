@@ -7,7 +7,7 @@
 **Approach.** The earlier reports used the places of anchored entries. This one does not use any identification for its main tests. It asks what the text itself shows: which words each entry uses, in which order, and how that changes along the list.
 
 **Data.**
-- The Hebrew text is the ETCBC/Abegg transcription in the repo (`web/scroll-text.js`, CC BY-NC 4.0). The entry boundaries come from `tables/entry_concordance.csv`.
+- The Hebrew text is the ETCBC/Abegg transcription in the repo (`data/scroll-text.js`, CC BY-NC 4.0). The entry boundaries come from `tables/entry_concordance.csv`.
 - I corrected one boundary: entry 3 starts inside line I 6 (Puech p. 179).
 - Every direction word, dig depth and sum was checked by eye against the Hebrew.
 - The per-entry features are in `entry_features_2026-09-30.csv`. The scripts are in `deeper_analysis_code_2026-09-30.zip`.
@@ -350,7 +350,7 @@ It flagged two traps. First, a search that ignores the final nun loses "north" i
 
 ## Sources
 
-- Repo files: `web/scroll-text.js` (ETCBC dss 2.0.1; Abegg, Bowley and Cook; CC BY-NC 4.0); `tables/entry_concordance.csv`; `tables/phase3_places.csv`; `tables/phase3_site_index.csv`; `tables/landmark_lexicon_index.csv`; `text/readings.json`; `phase5_summary.md`; `findings_log.md`.
+- Repo files: `data/scroll-text.js` (ETCBC dss 2.0.1; Abegg, Bowley and Cook; CC BY-NC 4.0); `tables/entry_concordance.csv`; `tables/phase3_places.csv`; `tables/phase3_site_index.csv`; `tables/landmark_lexicon_index.csv`; `text/readings.json`; `phase5_summary.md`; `findings_log.md`.
 - [Sefaria: Kiddushin 66a](https://www.sefaria.org/Kiddushin.66a) · [Mishnah Eruvin 10:14](https://www.sefaria.org/Mishnah_Eruvin.10.14) · [Exodus 25:29](https://www.sefaria.org/Exodus.25.29) · [Jeremiah 52:18–19](https://www.sefaria.org/Jeremiah.52.18-19)
 - [Wikipedia: Tomb of Benei Hezir](https://en.wikipedia.org/wiki/Tomb_of_Benei_Hezir) · [Tomb of Zechariah](https://en.wikipedia.org/wiki/Tomb_of_Zechariah) · [Qumran cemetery](https://en.wikipedia.org/wiki/Qumran_cemetery) · [Kohlit](https://en.wikipedia.org/wiki/Kohlit) · [BibleWalks: Yad Avshalom](https://www.biblewalks.com/avshalomtomb/)
 - [Encyclopedia.com: Copper Scroll](https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/copper-scroll)

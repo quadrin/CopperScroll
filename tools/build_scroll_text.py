@@ -1,4 +1,4 @@
-"""Build web/scroll-text.js: the text of 3Q15 for the scroll reader on the web page.
+"""Build data/scroll-text.js: the text of 3Q15 for the atlas scroll reader.
 
 Source: the ETCBC `dss` Text-Fabric dataset, version 2.0.1 (transcriptions and
 morphology by Martin G. Abegg Jr., with James E. Bowley and Edward M. Cook;
@@ -26,7 +26,7 @@ import json, sys, os, unicodedata
 from tf.fabric import Fabric
 
 TF = sys.argv[1] if len(sys.argv) > 1 else 'dss/tf/2.0.1'
-OUT = os.path.join(os.path.dirname(__file__), '..', 'web', 'scroll-text.js')
+OUT = os.path.join(os.path.dirname(__file__), '..', 'data', 'scroll-text.js')
 
 NUM = {'א֜': 1, 'אׄ': 1, 'אׅ': 1, 'אֽ': 1, 'י֜': 10, 'ך֜': 20, 'ק֜': 100}
 FINAL = {'כ': 'ך', 'מ': 'ם', 'נ': 'ן', 'פ': 'ף', 'צ': 'ץ'}

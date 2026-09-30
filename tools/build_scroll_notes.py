@@ -1,5 +1,5 @@
-"""Build web/scroll-notes.js: the translation, glosses, readings and entry data for
-the scroll reader on the web page.
+"""Build data/scroll-notes.js: the translation, glosses, readings and entry data for
+the atlas scroll reader.
 
 Inputs, all written for this project:
 - text/translation_en.json   one English line per scroll line; {{words|note-id}} marks
@@ -32,7 +32,7 @@ def parse_ref(ref):
 
 
 def main():
-    text = load_js(os.path.join(ROOT, 'web', 'scroll-text.js'), 'window.SCROLL_TEXT')
+    text = load_js(os.path.join(ROOT, 'data', 'scroll-text.js'), 'window.SCROLL_TEXT')
     lines = {}
     for c in text['columns']:
         for l in c['lines']:
@@ -138,7 +138,7 @@ def main():
         sys.exit(1)
 
     data = {'tr': tr, 'gloss': gloss, 'notes': notes, 'entries': entries}
-    out = os.path.join(ROOT, 'web', 'scroll-notes.js')
+    out = os.path.join(ROOT, 'data', 'scroll-notes.js')
     with open(out, 'w', encoding='utf-8') as f:
         f.write('/* Translation, glosses and reading notes for the Copper Scroll reader.\n'
                 '   Written for this project; built from text/ by\n'

@@ -2,7 +2,7 @@ import os
 D=os.path.dirname(os.path.abspath(__file__))   # this folder; copper_scroll/ is its parent
 import json,csv,re
 R=os.path.join(D,'..')+os.sep
-src=open(R+'web/scroll-text.js',encoding='utf-8').read()
+src=open(R+'data/scroll-text.js',encoding='utf-8').read()
 js=src[src.index('window.SCROLL_TEXT = ')+len('window.SCROLL_TEXT = '):].strip()
 if js.endswith(';'): js=js[:-1]
 ST=json.loads(js)

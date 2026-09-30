@@ -28,7 +28,7 @@ Candidate coordinates and uncertainties are in [`tables/`](../tables/); detailed
 - [Plate check](text/plate_check.md): disputed readings inspected against photographs and radiographs; [recorded decisions](../tables/plate_check.csv).
 - [Sequence analysis](text/deeper_analysis_2026-09-30.md): place-name runs, direction words, vocabulary, depths, and Greek-letter gaps. [Code and output guide](../deep_analysis/README.md).
 - [Sequence-model follow-up](text/sequence_model_followup_2026-09-30.md): priority, walking routes, and corrections. Read the later reports for revisions to early claims.
-- [Translation and reading notes](../text/), [scroll reader](../web/index.html), and [photographic reader note](../atlas/research/photographic_reader.md).
+- [Translation and reading notes](../text/), [atlas Scroll view](https://quadrin.github.io/CopperScroll/#scroll), and [photographic reader note](../atlas/research/photographic_reader.md).
 
 ## Sources and research record
 

@@ -26,7 +26,7 @@ The original `dem.py` came in an earlier bundle and is not in the repository. Th
 
 | Script | What it does | Output | Report section |
 |---|---|---|---|
-| `build.py` | Reads `../web/scroll-text.js` (ETCBC/Abegg, CC BY-NC 4.0), `../text/translation_en.json` and `../tables/entry_concordance.csv`. Writes one record per entry (Hebrew words, lemmas, numeral signs, translation) | `entries_full.json` (not in git) | data |
+| `build.py` | Reads `../data/scroll-text.js` (ETCBC/Abegg, CC BY-NC 4.0), `../text/translation_en.json` and `../tables/entry_concordance.csv`. Writes one record per entry (Hebrew words, lemmas, numeral signs, translation) | `entries_full.json` (not in git) | data |
 | `features.py` | Per-entry features: place names, direction words (regex, final nun handled, קדרון excluded), aspect words, dig depths, stated talents and formula flags. Fixes the I 6 boundary between entries 2 and 3 (Puech p. 179) | `features.json` (not in git) | data |
 | `tests.py` | T1 name adjacency (permutation), T2 orientation (Fisher/hypergeometric), T3 depth (Mann–Whitney permutation), T6 record formula | `tests_results.json` | §1, §2, §4, §6 |
 | `vocab.py` | Landmark concept map (fixed before the tests), Bernoulli naive Bayes, leave-one-out and label permutation | `vocab_results.json` | §5.2 |

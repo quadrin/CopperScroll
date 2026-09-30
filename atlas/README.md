@@ -1,6 +1,6 @@
 # The Copper Scroll Atlas
 
-An interactive atlas of the 61 Copper Scroll entries, paired with 37 candidate places from the research repository. The interface pairs a dark place register with an open map workspace and a white reading folio. The entry panel separates Places, Text and Evidence into keyboard-accessible tabs; candidate sites appear first. Compact headers, larger controls and a single-panel layout on screens up to 1100px keep the research usable on smaller displays.
+The [GitHub Pages homepage](https://quadrin.github.io/CopperScroll/) opens this atlas directly. Browse all 61 scroll entries and their candidate places in the register, inspect sites on the map, or switch to the full scroll text from the top navigation. The selected entry has Sites, Text, and Evidence tabs. On narrow screens, the bottom navigation moves between the register, map or scroll, and entry details.
 
 ## Run locally
 
@@ -18,16 +18,16 @@ This directory contains the source deployed as the [Copper Scroll Atlas](https:/
 
 ## GitHub Pages build
 
-A static build of the same atlas is published with GitHub Pages at <https://quadrin.github.io/CopperScroll/atlas-site/>. It renders the same `Atlas` component, data, maps and ground views, without the Next.js/vinext server shell or ChatGPT sign-in. The built files are committed in `../atlas-site/`.
+A static build of the same atlas is published at <https://quadrin.github.io/CopperScroll/>. The built assets are committed in `../atlas-site/`; `../index.html` loads those assets directly at the repository homepage. The existing `/atlas-site/` URL also remains available.
 
 To rebuild it after a change, from this directory:
 
 ```sh
 corepack pnpm install --frozen-lockfile
-corepack pnpm exec vite build --config vite.pages.config.ts
+corepack pnpm run build:pages
 ```
 
-After building, delete `../atlas-site/research/qumran-video-comparison.html` before committing. It embeds frames from a watermarked stock-video preview and archival photographs whose reuse terms have not been checked, so it is left out of the public build until that use is cleared. The page that links to it, `research/entry21-comparison.html`, is published.
+The build copies the atlas entry page to `../index.html` and omits `../atlas-site/research/qumran-video-comparison.html`. That comparison embeds frames from a watermarked stock-video preview and archival photographs whose reuse terms have not been checked. The page that links to it, `research/entry21-comparison.html`, is published.
 
 `pages/index.html` and `pages/main.tsx` are the static entry. `vite.pages.config.ts` sets the Pages base path and writes to `../atlas-site/`. The MapLibre worker URL follows the build's base path, so it works both on the hosted Site and under the Pages sub-path.
 
@@ -43,7 +43,7 @@ Current pins use the gazetteer's site anchors. Filled areas with dashed outlines
 
 ## The Scroll view
 
-**Scroll**, beside 2D, 3D and Ground, replaces the map with the whole text of the scroll in the atlas's parchment style. A strip of bronze tablets selects a column, laid out right to left like the scroll; the three sheets are separated. Each line gives the English, the line number and the Hebrew. Entry headings use the register's style; selecting one selects that entry in the register, the map and the field note, and the view stays on the scroll. Selecting an entry elsewhere brings its lines into view. Words and underlined phrases open the same reading cards as the field note. `#entry-21/scroll` opens the view at an entry; `#scroll` opens it at the current one. The field note's **Open the scroll** and the footer's **Read the scroll** switch to this view.
+**Read the scroll** in the top navigation replaces the map with the whole text of the scroll in the atlas's parchment style. A strip of bronze tablets selects a column, laid out right to left like the scroll; the three sheets are separated. Each line gives the English, the line number and the Hebrew. Entry headings use the register's style; selecting one selects that entry in the register, the map and the field note, and the view stays on the scroll. Selecting an entry elsewhere brings its lines into view. Words and underlined phrases open the same reading cards as the field note. `#entry-21/scroll` opens the view at an entry; `#scroll` opens it at the current one. The field note's **Read in context** link also switches to this view.
 
 ## The photographic reader
 
@@ -51,7 +51,7 @@ Current pins use the gazetteer's site anchors. Filled areas with dashed outlines
 
 ## The text in each field note
 
-The Text tab in each field note shows the entry's lines of the scroll: the Hebrew, from Martin G. Abegg Jr.'s transcription in the ETCBC Dead Sea Scrolls dataset (CC BY-NC 4.0), and an English translation written for this project. Selecting a Hebrew word shows its parts, their meanings and any notes; selecting an underlined phrase shows how the editions read it, with pages from the research files. The data is `app/atlas-text.json`, loaded as a separate chunk the first time a field note opens. `../tools/build_scroll_notes.py` writes it from `../text/`, together with the text and translation page (`../web/`); rebuild both after changing the translation or the notes. The full scroll, column by column, is at <https://quadrin.github.io/CopperScroll/web/>.
+The Text tab in each field note shows the entry's lines of the scroll: the Hebrew, from Martin G. Abegg Jr.'s transcription in the ETCBC Dead Sea Scrolls dataset (CC BY-NC 4.0), and an English translation written for this project. Selecting a Hebrew word shows its parts, their meanings and any notes; selecting an underlined phrase shows how the editions read it, with pages from the research files. The data is `app/atlas-text.json`, loaded as a separate chunk the first time a field note opens. `../tools/build_scroll_notes.py` writes it from `../text/`; rebuild the atlas data after changing the translation or notes. The full scroll, column by column, is in the [atlas Scroll view](https://quadrin.github.io/CopperScroll/#scroll).
 
 ## Map
 
@@ -65,10 +65,10 @@ MapLibre owns each marker's outer `site-marker` element, including its absolute 
 
 - Select an entry, a map pin or a candidate card to link the register, evidence and map.
 - Search ancient names, Hebrew labels, entry descriptions or modern candidate names.
-- Filter by region or switch between the four-entry Highlights view and all 61 entries.
+- All 61 entries appear by default; filter by region to narrow the register.
 - Sort the register by confidence, ancient name, primary candidate name, region or scroll order. Confidence uses the highest candidate confidence and breaks ties in scroll order. Candidate cards sort independently by confidence, alphabetical name or preferred status; sorting never changes the selection.
-- Switch 2D/3D, adjust relief, zoom, orient north, fit the entry or return to the regional view.
-- Ground view provides four real photographs with anchored highlight polygons, pan/zoom, keyboard navigation, feature notes and image credits. Source URLs and licenses are recorded in `app/atlas-scenes.json`; images load directly from Wikimedia Commons. Qumran shows an actual aqueduct outlet. Doq and Choziba show terrain context; Siloam shows the larger southern pool, distinguished from the smaller Silwan outlet candidate. The current scenes are photographs with annotated visible features; record camera geometry and the evidence for each candidate highlight when adding scenes.
+- Switch between Map and Terrain, adjust relief, zoom, orient north, fit the entry or return to the regional view.
+- Photos provides four real photographs with anchored highlight polygons, pan/zoom, keyboard navigation, feature notes and image credits. Source URLs and licenses are recorded in `app/atlas-scenes.json`; images load directly from Wikimedia Commons. Qumran shows an actual aqueduct outlet. Doq and Choziba show terrain context; Siloam shows the larger southern pool, distinguished from the smaller Silwan outlet candidate. The current scenes are photographs with annotated visible features; record camera geometry and the evidence for each candidate highlight when adding scenes.
 - A separate Google Street View link searches near each mapped anchor. Coverage varies and atlas overlays are not injected into external Google imagery. Other candidates show an explicit photographic coverage gap and shortcuts to the four available scenes.
 - Mobile layouts separate register, map and folio into three accessible views.
 - Entry hash URLs restore the selected entry.

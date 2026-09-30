@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Camera, Compass, LocateFixed, Map, Minus, Mountain, Plus, RotateCcw, ScrollText } from "lucide-react";
+import { Camera, Compass, LocateFixed, Map, Minus, Mountain, Plus, RotateCcw } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Slider } from "@/components/ui/slider";
 import type { Map as LibreMap, Marker, StyleSpecification, GeoJSONSource } from "maplibre-gl";
@@ -170,10 +170,10 @@ export default function AtlasMap(props:Props) {
   return <section className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""}`} aria-label={mode==="scroll"?"The text of the scroll":"Interactive candidate map"}>
     <div ref={container} className="map-canvas" aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
-    <div className="map-toolbar">
-      <Tabs value={mode} onValueChange={onMode} className="map-mode"><TabsList aria-label="Landscape view"><TabsTrigger value="2d"><Map size={14}/>2D</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>3D</TabsTrigger><TabsTrigger value="ground"><Camera size={15}/>Ground</TabsTrigger><TabsTrigger value="scroll"><ScrollText size={15}/>Scroll</TabsTrigger></TabsList></Tabs>
+    {mode!=="scroll"&&<div className="map-toolbar">
+      <Tabs value={mode} onValueChange={onMode} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger><TabsTrigger value="ground"><Camera size={15}/>Photos</TabsTrigger></TabsList></Tabs>
       {!offMap&&<button className="tool-button" aria-label="Fit this entry’s candidates" title="Fit this entry’s candidates" onClick={fitEntry}><LocateFixed size={17}/></button>}
-    </div>
+    </div>}
     <div className="map-caption">The Judean hills & the Jordan valley</div>
     <button className="compass-control" aria-label="Reset map north" onClick={()=>mapRef.current?.easeTo({bearing:0,duration:500})}><span>N</span><Compass strokeWidth={1.1} style={{transform:`rotate(${-bearing}deg)`}}/></button>
     {mode==="3d"&&<div className="terrain-controls"><label>Terrain relief <span>{exaggeration.toFixed(1)}×</span></label><Slider aria-label="Terrain vertical exaggeration" value={[exaggeration]} min={1} max={3} step={.25} onValueChange={v=>setExaggeration(v[0])}/><span className="terrain-hint">Drag with the right mouse button to orbit. On touch, use two fingers.</span>{terrainState==="unavailable"&&<span className="terrain-hint">Elevation tiles are unavailable. Try 2D or reload.</span>}</div>}
