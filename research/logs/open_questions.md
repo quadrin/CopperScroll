@@ -108,6 +108,11 @@ Updated each session. Newest additions at the bottom of each group. "Needs" says
 - Q41. **Solomon or Shallum in entry 23 (V 8–9)?** Puech 2006 p. 189 explicitly permits Shallum. Review the letter division independently before treating entries 22 and 23 as a connected reservoir/channel pair. Distinguish the boulder interpretation from mound or sepulchral interpretations.
 - Q42. **Which spatial relations survive across the Sekakah models?** Test entry 21’s northern flow versus northern side separately, entry 22’s eastern fissure, and entry 24’s approach from Jericho. Do not impose a continuous route through entries 20–24. Original plan, dated features and independent readings remain pending.
 
+### 30 September 2026 pilot update
+
+- **Q38:** The IAA guest catalog now gives exact request IDs for the Drori–Magen 1993 survey (`223-391-0008`), Magen 2004 excavation (`368-791-2715`) and de Vaux 1951–56 excavation (`791-127-9978`); none exposes a public intake plan or survey coordinates. Also obtain Humbert–Chambon 1994 pp. 192 and 342 to establish which dam its description means. The [archive audit](../sites/qumran_new_archive_sources_2026-09-30.md) lists the request targets. The [visual crosswalk](../sites/qumran_visual_crosswalk_2026-09-30.md) does not tie Ilan–Amit point 3 to Reeder's boulder–pothole–wall sequence.
+- **Q41–Q42:** A check of existing blind crops and the published plates leaves the V 9 Solomon/Shallum division open. The V 1 conduit–Sekakah link and V 2–3 landmark noun are restored into lost metal. Obtain a genuinely independent high-resolution column V reading before using those words to rank physical features; see the [text audit](../text/qumran_20_23_blind_reading_2026-09-30.md). The [dependency test](../sites/qumran_cluster_dependency_audit_2026-09-30.md) keeps entries 20–23 as conditional comparisons, not four confirmations.
+
 
 ## Plate check — 2026-09-29
 
