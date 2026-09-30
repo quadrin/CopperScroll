@@ -113,6 +113,12 @@ Updated each session. Newest additions at the bottom of each group. "Needs" says
 - **Q38:** The IAA guest catalog now gives exact request IDs for the Drori–Magen 1993 survey (`223-391-0008`), Magen 2004 excavation (`368-791-2715`) and de Vaux 1951–56 excavation (`791-127-9978`); none exposes a public intake plan or survey coordinates. Also obtain Humbert–Chambon 1994 pp. 192 and 342 to establish which dam its description means. The [archive audit](../sites/qumran_new_archive_sources_2026-09-30.md) lists the request targets. The [visual crosswalk](../sites/qumran_visual_crosswalk_2026-09-30.md) does not tie Ilan–Amit point 3 to Reeder's boulder–pothole–wall sequence.
 - **Q41–Q42:** A check of existing blind crops and the published plates leaves the V 9 Solomon/Shallum division open. The V 1 conduit–Sekakah link and V 2–3 landmark noun are restored into lost metal. Obtain a genuinely independent high-resolution column V reading before using those words to rank physical features; see the [text audit](../text/qumran_20_23_blind_reading_2026-09-30.md). The [dependency test](../sites/qumran_cluster_dependency_audit_2026-09-30.md) keeps entries 20–23 as conditional comparisons, not four confirmations.
 
+### Source access update, 30 September 2026
+
+- **Q38:** The IAA SRF 154 file now supplies a 1946 account of the settlement-side runoff channel, but no upper-intake plan; SRF 154A's 109 public photo thumbnails yielded no secure intake match. The 1993 survey request is pending. See [F13.5 and F13.8](findings_log.md).
+- **Q41:** USC's 1988 AWS 21–23 photographs are an independent image source for column V, but the public JPEGs cannot resolve the disputed strokes. Full-resolution study-access inquiry pending; see the [image-access audit](../text/column_v_image_access_2026-09-30.md). A specialist re-read awaits usable source images.
+- **Humbert's dam:** His later essay says “in the gorge”; the 1994 pages and captions needed to identify its physical referent have not been read. A library access inquiry is pending; see the [source check](../sites/humbert_chambon_1994_dam_access_2026-09-30.md).
+
 
 ## Plate check — 2026-09-29
 
