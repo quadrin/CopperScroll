@@ -376,3 +376,12 @@ Puech 2006, vol. II, in the local PDF parts 9–11:
 - **A second copy photograph:** pls. CCXCVI–CCCVII (part 9 pp. 50–61). It proved to be the same image.
 
 The plate captions were checked by `tools/plate_extract.py` before extraction. See [plate_check.md](../text/plate_check.md).
+
+## Primary-source access and Derech Eretz — 30 September 2026
+
+- **Patrich 1989 Hyrcania chapter: directly read in full**, printed pp. 243–260 = user-supplied aqueduct ZIP scans 256–273. Earlier blocked-access entries above are historical. Full English 2002 chapter remains separately unreviewed.
+- **Derech Eretz: Stone, Pottery and Man (1996)**, edited by Irit Zaharoni, Kotar 96658741; user supplied `derech-eretz.zip` (408 numbered JPEGs). Hyrcania pp. 322–329 visually read in full; Mar Saba pp. 306–307 and 312 sampled. Inspected scan numbers equal printed numbers. Same author Patrich: dependent synthesis, not independent corroboration.
+- **Porat, Eshel and Frumkin 2009 Christmas Cave chapter**, printed pp. 31–52: Cave Research Center PDF, 24 pages including two cover pages. Plan/contexts checked alongside chapter text.
+- **Rasmussen et al. 2022, Heritage Science 10:18**, DOI `10.1186/s40494-022-00652-2`: 22-page publisher PDF. Location, provenance, sampling, dating and archaeological discussion checked; Tables 2 and 9 visually checked; chemical methods not independently audited.
+
+Source URLs, precise feature locators, limitations and effects on candidates are in the [primary-source follow-up](../sites/christmas_hyrcania_primary_followup_2026-09-30.md). Source scans remain outside Git; original analysis and factual records are published.

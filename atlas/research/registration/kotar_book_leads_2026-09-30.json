@@ -141,12 +141,17 @@
       ],
       "source_claim": "Accessible lower-Kidron cave; earlier coins plus a second-year Bar Kokhba coin. Agrippa I coin pictured as found in the cave; Nerva denarius caption says near the cave.",
       "period_evidence": "Authors infer First Revolt and Bar Kokhba use; mint date is not deposition date.",
-      "raw_grid": null,
-      "coordinate_system": null,
+      "raw_grid": "189887/121095",
+      "coordinate_system": "2009 printed old-grid notation; cave-level anchor, accuracy and entrance assignment unspecified",
       "wgs84": null,
       "status": "source lead, no identified Copper Scroll deposit",
       "possible_entry_test": [],
-      "next_test": "Recover original cave identifier, entrance plan, pottery and coin loci."
+      "next_test": "Entrance/neighboring-cave plan obtained (2009 Fig.5 p.35). Locate original object and trench records; keep caves 710 and 711 separate and resolve coordinate-to-entrance assignment.",
+      "followup_report": "research/sites/christmas_hyrcania_primary_followup_2026-09-30.md",
+      "additional_source_grid": {
+        "raw_grid": "239887/621095",
+        "coordinate_system": "New Israel Grid as printed in Rasmussen et al. 2022 p.2"
+      }
     },
     {
       "id": "K02",
@@ -331,7 +336,9 @@
       "wgs84": null,
       "status": "source lead, no identified Copper Scroll deposit",
       "possible_entry_test": [],
-      "next_test": "Verify grid and endpoints against Patrich; resolve 1.2 versus 1.95 km scope."
+      "next_test": "Register guide grid against station 44; compare endpoints and observed/reconstructed stretches to resolve 1.2 versus 1.95 km.",
+      "followup_report": "research/sites/christmas_hyrcania_primary_followup_2026-09-30.md",
+      "primary_comparison": "Patrich 1989 p.251 station 44; Fig.1 p.243. Northern line 1950 m. Guide grid-to-station crosswalk remains unverified."
     },
     {
       "id": "K11",
@@ -457,7 +464,9 @@
       "wgs84": null,
       "status": "source lead, no identified Copper Scroll deposit",
       "possible_entry_test": [],
-      "next_test": "Find excavation plans and stratigraphy before assigning a scroll feature."
+      "next_test": "Find excavation plans and stratigraphy before assigning a scroll feature.",
+      "followup_report": "research/sites/christmas_hyrcania_primary_followup_2026-09-30.md",
+      "do_not_merge_with": "Patrich 1989 station 49: southwest covered passage, surviving 11.5 m, pp.257–259."
     },
     {
       "id": "K17",

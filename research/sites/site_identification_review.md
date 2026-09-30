@@ -88,3 +88,10 @@ The [three-book review](../sources/kotar_books_intake_2026-09-30.md) adds source
 - **Kidron (35):** the guide distinguishes the upper canyon entrance/end, the basin interval, and the lower canyon entrance/outlet (pp. 194–195). These provide separate terrain hypotheses for the gorge reading, with no dated cairn at any anchor. The peak, pottery and dam interpretations remain separate alternatives.
 - **Cave leads:** the *Ariel* 186 survey reports early Roman material at Christmas, Salvadora, and the western Te'enim cave, alongside later evidence. These are leads to original cave plans and find contexts; no entry match is established.
 - **Shoreline:** Klein's proposed Herodian flooding of Qumran at −330 m (*Dead Sea and Judean Desert*, pp. 41–44) conflicts with the much lower late Holocene range reported by Bookman et al. 2004. It is excluded from the current location models pending the primary sample-level review.
+
+## Christmas Cave and Hyrcania primary sources — 30 September 2026
+
+The [primary-source follow-up](christmas_hyrcania_primary_followup_2026-09-30.md) directly reads Patrich's 1989 Hyrcania chapter and Derech Eretz's Hyrcania chapter, and checks the 2009/2022 Christmas Cave sources.
+
+- **Hyrcania (16, 29, 35): possible, low, unchanged.** The numbered intake dams, western double pool and covered passage provide concrete physical-feature comparisons. The restored text, first-century use and geographic registration remain unresolved; a 14/40/41-cubit sensitivity test does not select a reading or identify a deposit.
+- **Christmas Cave:** a located regional comparison cave, with distinct entrance and neighboring-cave records; no Copper Scroll entry is assigned. Source access and dating checks do not establish a scroll association.

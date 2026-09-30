@@ -1,3 +1,11 @@
+# Access update — 30 September 2026
+
+**The 1989 Hebrew chapter has now been read directly in full**, pp. 243–260, from the user-supplied aqueduct ZIP (scans 256–273). See the [primary-source follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sites/christmas_hyrcania_primary_followup_2026-09-30.md) for the numbered features, pool plan, chronology, competing readings and explicit spatial test. The [structured feature inventory](https://github.com/quadrin/CopperScroll/blob/main/registration/christmas_hyrcania_primary_features_2026-09-30.json) retains source-plan positions without inventing geographic coordinates.
+
+The text below preserves the earlier 29 September access attempt and **2002 English snippet-only** extraction. Its blocked-access status is historical. The 2002 English chapter still has not been read in full; equivalence to the 1989 chapter is not assumed.
+
+---
+
 **PARTIAL — the Hebrew source (Kotar) could not be read.** J. Patrich, "אמות המים להורקניה" (The Aqueducts of Hyrcania), in D. Amit, Y. Hirschfeld & J. Patrich (eds.), *אמות המים הקדומות בארץ־ישראל* (Jerusalem: Yad Ben-Zvi 1989), pp. 243–260; Kotar book 6765980. Accessed 29 Sep 2026. **Blocked:** kotar.cet.ac.il returned "Server Error in '/' Application" (Runtime Error) on every URL tried. The mirror https://en.kotar.co.il/KotarApp/Viewer.aspx?nBookID=6765980 loads, but as "Hello Guest": page 243 shows only the heading "אמות המים להורקניה / יוסף פטריך" behind a "To view the whole book – purchase" overlay. No text was readable.
 **Fallback used:** J. Patrich, "The aqueducts of Hyrcania–Kastellion", in D. Amit, J. Patrich & Y. Hirschfeld (eds.), *The Aqueducts of Israel* (JRA Suppl. 46; 2002), pp. 336–352. Read via **Google Books snippet images only** (GWhoAAAAMAAJ; no-preview book, 3–5 lines per snippet) and **HathiTrust page-level word hits** (mdp.39015051834664, search-only). Chapter extent 336–352: evidence from the title on p. 336, and the running head "Patrich" on even pages 336–352 (HathiTrust).
 
