@@ -110,3 +110,24 @@ Qumran entry 21 remains medium and conditional on Sekakah; Hyrcania remains poss
 ## Additional contents and access check — 30 September 2026
 
 The Kotar contents for this volume also list “מעיינות המרפא והמרחצאות באזור ים המלח” (Dead Sea healing springs and baths), beginning at printed p. 84. The reader reached a subscription/account gate at that page; its text and illustrations remain unread. The title supplies a possible water-source research lead, without evidence for a specific Scroll feature. The earlier cave article's coverage remains unchanged.
+
+
+## Springs and baths chapter — resumed 1 October 2026
+
+The earlier account gate is resolved. Direct visual inspection covered Dov Gavish and Ada Shein (דב גביש ועדה שיין), “מעיינות המרפא והמרחצאות באזור ים המלח”, in source P, printed pp. 84–99. Page 84 is the illustrated title; p. 99 contains the conclusion and further-reading list. The following page starts a different illustrated item. This is a targeted archaeological relevance scan, not a transcription.
+
+### Source observations
+
+- **Spring groups, pp. 85–87:** the overview distinguishes eastern-shore Callirrhoe from inland Zarqa-Maʿin/Wadi Maʿin. Its western-shore inventory includes Ein Feshkha/Einot Tzukim, Qaneh and Samar, alongside the Ein Gedi and southern spa areas. These are separate regional leads; the chapter does not establish a Copper Scroll name equivalence. Its Herod/Callirrhoe account is a secondary historical statement, without a newly documented installation phase.
+- **Modern map, p. 87:** the regional illustration locates spring/spa groups broadly. It does not supply a scale, geodetic datum or ancient shoreline suitable for registering a Scroll feature.
+- **Concession plan, p. 88:** a reproduced 1925 spa-site plan, captioned for Dr. ולצברגר, bears the title “LAND ON THE DEAD SEA”, a 1:5000 scale and a north indicator. It is a lead for recovering the original modern survey and assessing its control points. The reproduction alone does not date an ancient spring outlet, cistern or channel.
+- **Kalya, pp. 89–91:** the modern resort history includes an annotated photograph captioned Kalya 1931 (p. 90), with a spring label and contemporary facilities, plus a 1938 hotel photograph (p. 91). Recovering the original labelled photograph may help test modern spring/shore relationships. Its spring label cannot by itself locate a first-century feature.
+- **Ein Feshkha, p. 91:** a photograph captioned 1947 provides a further historical image lead. It does not document an ancient installation plan or measured outlet.
+- **Later development, pp. 92–99:** the discussion largely concerns twentieth-century tourism and bathing facilities. Aerial photographs captioned 1969 show Ein Bokek (p. 94) and Hamei Zohar (p. 96). The Ein Gedi discussion, pp. 97–99, includes a 1962 drilling/pumping episode and a new bathing site opened in 1984. Distinguish constructed modern water delivery from natural ancient outlets.
+- **Further reading, p. 99:** Gavish and Shein, *מפעל המתרחצים לחוף ים המלח: ממעיינות מרפא לבריאות ונופש* (Ariel, Jerusalem, 2007), is a promising route to fuller modern bath/concession documentation. The list also includes Ester Dvorjetski's Hebrew University dissertation on healing baths in the Second Temple, Mishnah and Talmud periods (1992), and a dissertation on the Palestine Potash Company, 1930–1948. These works are leads only; they have not been inspected in this pass.
+
+### CopperScroll use and limits
+
+Use the opening inventory to keep spring groups distinct during site-name testing, and retain the 1925 plan and dated photographs as modern landscape-source leads. Match any proposed Scroll entry against the repository's textual variants before choosing a feature. Recover original plans/images with provenance and reliable control points before registration; modern lake levels and outlet positions cannot substitute for the first-century landscape.
+
+Reading confidence is high for the stated page-level observations. Confidence in any Scroll site identification, installation phase or ancient position remains unassessed. No new entry match, candidate geometry or site rating is justified by this chapter. Its references and reproduced images are not independent corroboration of their underlying sources. No book images are added to the repository.

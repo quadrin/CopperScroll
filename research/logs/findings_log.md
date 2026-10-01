@@ -749,3 +749,13 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F26.2 (access): desert collection contents identify the springs/baths essay at p. 84. Account/subscription gate prevents reading it. No feature or geometry change.
 
 [Political/social reading](../sources/roman_byzantine_books_siloam_2026-09-30.md); [desert contents/access](../sources/kotar_books_intake_2026-09-30.md).
+
+
+## Dead Sea springs and baths — 2026-10-01
+
+- F27.1 (source coverage): account gate resolved; Gavish/Shein chapter in *Perach Bar Bamidbar*, printed pp. 84–99, visually scanned. Further reading ends on p. 99; following page is a different item.
+- F27.2 (regional leads): pp. 85–87 distinguish eastern Callirrhoe and inland Zarqa-Maʿin from western spring groups, including Ein Feshkha, Qaneh and Samar. No Scroll name equivalence established.
+- F27.3 (historical source leads): 1925 concession plan at 1:5000 (p. 88); labelled Kalya 1931 photograph (p. 90); Ein Feshkha 1947 photograph (p. 91); 1969 Ein Bokek/Hamei Zohar aerials (pp. 94, 96). Recover original provenance/control points before registration. These dates do not constrain first-century outlets or installations.
+- F27.4 (next sources): p. 99 refers to Gavish/Shein's fuller 2007 baths history and Dvorjetski's 1992 dissertation on ancient healing baths. Unread leads. No feature, geometry or rating change.
+
+[Chapter observations and limits](../sources/kotar_books_intake_2026-09-30.md#springs-and-baths-chapter--resumed-1-october-2026).
