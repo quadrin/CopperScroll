@@ -144,3 +144,10 @@ The [book and excavation intake](https://github.com/quadrin/CopperScroll/blob/ma
 Entry 49 remains medium, conditional on the Siloam reading. Bliss–Dickie's small cement tank and grooved outlet channel belong to the southern drain-exit sector by gate d2, southwest of the Old Pool; they are spatially separate from the tunnel-mouth pool. The 1898 report withdraws the 1895 catch-pit interpretation and places the tank after drainage disuse, without a calendar date. The separate tower reservoir has later Second Temple phase evidence in the 2014 report; that dating does not establish the small tank's date. Retain the latter as an undated comparison feature, with no modern locus or registered footprint.
 
 The books add competing Achor geography, road-phase cautions, and later tomb/cistern comparisons. Guthe's original pool plate, the failed Kotar pages and a dated correspondence for the small tank remain open.
+
+
+## Entry 32 original aqueduct plan follow-up — 1 October 2026
+
+Meshel–Amit 1989 Fig. 1 (p. 230), numbered descriptions (pp. 230–231), and point 25's section (Fig. 24, p. 241) were directly inspected. Point 25 has an earlier outlet bed and a later, lower channel; paired ceramic pipes appear after the tunnel exit. The authors assign the pipe aqueduct to the seventh–eighth centuries CE on architectural and historical grounds (p. 242). Its visible pipework cannot supply Second Temple dating for a proposed wall. Point 29's reused reservoir is also attributed to the early Arab period. Exact correlation with SWP's Jisr ed-Deir and monastery-opposite wall remains pending.
+
+Entry 32's three cubits is digging depth. No compass bearing or measured separation between outlet and second landmark is supplied. Reading, site confidence and atlas geometry remain unchanged. [Page and phase record](entry32_wadi_qelt_plan_review_2026-10-01.md).

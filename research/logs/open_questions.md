@@ -263,3 +263,6 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 
 - Q45 update (30 September 2026): IAA site 143 displays no tomb plan; a digital copy of the printed entry was not recovered. First establish whether the volume contains tomb illustrations, then obtain original survey field drawings if needed. Peleg 2004 Fig. 1 confirms the Lower Beth Horon tomb's exterior entrance faces south. Preserve the distinction between a chamber-entrance model and ברוח as a direction/side. [Check](../sources/entry40_tomb_plan_check_2026-09-30.md).
+
+
+- Q39 update (1 October 2026): original Meshel–Amit route plan and point 25's two-phase tunnel-outlet section now checked. Obtain a demonstrable correspondence with SWP's Jisr ed-Deir and wall opposite Deir el-Kelt, and a detailed earlier-phase wall/outlet plan. Separate early Arab pipework and point 29's reservoir from the earlier channel. Three cubits is digging depth; there is no stated compass bearing. [Review](../sources/entry32_wadi_qelt_plan_review_2026-10-01.md).

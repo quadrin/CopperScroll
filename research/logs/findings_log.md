@@ -692,3 +692,11 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F19.3 (conditional model): this tomb fails a west-facing exterior-entrance model; ברוח may refer to another directional relationship. Beth Horon's site rating and atlas anchor remain unchanged.
 
 [Source/access record](../sources/entry40_tomb_plan_check_2026-09-30.md).
+
+## Entry 32 original plan review — 2026-10-01
+
+- F20.1 (primary plan): Meshel–Amit 1989 Fig. 1 and point 25's section directly inspected. A later lower channel modifies the earlier tunnel outlet; paired pipes occur after its exit.
+- F20.2 (dating distinction): authors attribute the pipe aqueduct to the seventh–eighth centuries CE on architectural/historical grounds. Relative superposition is observed; calendar dating of every proposed outlet and wall remains unestablished.
+- F20.3 (text and position): three cubits is digging depth; entry 32 supplies no bearing or outlet-to-wall distance. SWP wall correlation remains pending. Confidence and geometry unchanged.
+
+[Source record](../sources/entry32_wadi_qelt_plan_review_2026-10-01.md).
