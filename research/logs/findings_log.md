@@ -787,3 +787,14 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F30.3: Pool 338 remains an unassigned archaeological feature lead. No entry rating, candidate geometry or atlas placement changes.
 
 [Readings, constraints and next discriminating evidence](../sources/kotar_books_intake_2026-09-30.md#pool-338-against-entry-readings--30-september-2026-los-angeles).
+
+
+## Burial chapter completed — 2026-10-01
+
+- F31.1 (source access): user-supplied scans provide complete visual reading of Tsafrir's volume II burial chapter, printed pp. 143–164. Page 145 is recovered; F25.3's access gap is resolved. This is further access to the same volume.
+- F31.2 (correction): Samaria's courtyard/cistern tomb is E220, explicitly labelled on p. 144 and dated there to the third century CE. Earlier E22 wording corrected in the source note and mirror.
+- F31.3 (plan controls): Beth She'arim cave 14 and cave 20 plans traced to Avigad III, figs. 18 and 43; courtyard/facade reconstructions distinguished from excavation photographs. Cave 20's northern courtyard wall must not be converted into a north-facing exterior entrance.
+- F31.4 (dating): Mount of Olives Birds Cave is dated third–fourth century; Or Ha-Ner probably fourth century; Mazor second half of third–fourth century by architectural style. Generic tomb similarity supplies no first-century feature phase.
+- F31.5 (primary leads): original Beth She'arim, Nahal Raqafot, Manahat, Birds Cave and Sebastya reports remain unread in this pass. No Scroll entry assignment, candidate rating or atlas geometry change.
+
+[Chapter observations, page mapping and primary references](../sources/roman_byzantine_books_siloam_2026-09-30.md#burial-chapter-completed-from-supplied-scans--1-october-2026).

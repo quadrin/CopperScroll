@@ -32,7 +32,7 @@ Only the opening chapter, especially printed pp. 11–14, was checked.
 
 ## Archaeological and art volume II
 [Kotar book 7904705](https://kotar.cet.ac.il/KotarApp/Viewer.aspx?nBookID=7904705).
-Checked aqueduct passages on printed pp. 54–55 and 57, burial introduction/illustrations on pp. 143–144 and 146–147, and later burial illustrations on pp. 384–385. Aqueduct p. 56 and burial p. 145 did not render successfully; this is not complete chapter coverage.
+Checked aqueduct passages on printed pp. 54–55 and 57, burial introduction/illustrations on pp. 143–144 and 146–147, and later burial illustrations on pp. 384–385. Aqueduct p. 56 and burial p. 145 initially failed to render; the follow-ups below recover p. 56 and complete the burial chapter, pp. 143–164.
 
 ### Waterworks
 
@@ -43,7 +43,7 @@ Checked aqueduct passages on printed pp. 54–55 and 57, burial introduction/ill
 
 ### Burials
 
-- **p. 144:** Samaria tomb E22 has a courtyard with a cistern collection system; the caption dates the tomb to the third century CE. A tomb–courtyard–cistern combination requires independent dating before comparison with a Scroll entry.
+- **p. 144:** Samaria tomb E220 has a courtyard with a cistern collection system; the caption dates the tomb to the third century CE. A tomb–courtyard–cistern combination requires independent dating before comparison with a Scroll entry.
 - **p. 147:** Beth She'arim cave 14 extends approximately 44 m; cave 20 has a courtyard 11.70 × 16.20 m and an entrance in the courtyard's northern wall. The chapter places the cemetery's main use between the second and mid-fourth centuries. These are architectural comparisons, not Beth Horon or Kidron identifications.
 - **p. 384:** the fourth–fifth-century Ein Yabrud tomb has three burial benches and accumulated material from repeated use. Date the structure and individual deposits separately.
 
@@ -119,11 +119,9 @@ The text describes channels cut in rock or built in masonry, waterproof internal
 
 Footnote 36 cites Hirschfeld's Emmaus waterworks study in *Qadmoniot* 9, pp. 85–88. Footnote 37 cites Levine, *Roman Caesarea* (Qedem 2), pp. 30–36, and Olami–Peleg, “The Water Supply System of Caesarea Maritima,” *IEJ* 27 (1977), pp. 127–137. These are bibliography leads, not independently accessed sources in this follow-up.
 
-### Remaining access gap
+### Earlier access gap — resolved by supplied scans
 
-Attempting printed burial p. 145 brought up an existing-account/subscription gate. The page's content remains unread. The reader showed guest status; access to selected pages above does not establish access to the full volume. No subscription purchase was made.
-
-Next book work: recover p. 145 after existing-account access resumes; then inspect the earlier Roman-period burial chapter and its primary excavation references. Preserve each tomb's original construction, later reuse and finds as separate evidence.
+The earlier attempt to read printed burial p. 145 encountered an account/subscription gate. On 1 October 2026, the user-supplied volume scans supplied p. 145 and the complete burial chapter, pp. 143–164. See the scan-based follow-up below. Original excavation reports cited by the chapter remain separate retrieval targets.
 
 
 ## Political/social volume: further reading — 30 September 2026
@@ -133,3 +131,42 @@ Shmuel Safrai, “התאוששות היישוב היהודי בדור יבנה,�
 Safrai discusses continued municipal institutions, markets, charity and craft organizations, then agricultural recovery and trade. He also describes later Roman road expansion under the Antonines. These passages concern regional activity and institutions; they provide no construction sequence or location for a particular waterwork or burial feature.
 
 For CopperScroll, preserve the distinction between regional recovery and occupation at an individual candidate site. A continuing place name, cultivated district or later road connection requires a separate feature-level archaeological check. This reading adds context only; candidate confidence and geometry remain unchanged.
+
+
+## Burial chapter completed from supplied scans — 1 October 2026
+
+**Source and coverage:** Yoram Tsafrir, *ארץ ישראל מחורבן בית שני ועד הכיבוש המוסלמי*, volume II, archaeological/art volume, Kotar 7904705, chapter “קבורה וקברים,” printed pp. 143–164. All chapter pages were visually inspected, including captions, plans and footnotes. In the supplied `03-03-land-of-israel-volume-b.zip`, scan 0151 corresponds to printed p. 143 and scan 0172 to p. 164; scan filenames include eight preceding cover/front-matter images. Page 145 is now read. These scans reproduce the previously consulted volume and supply additional access to the same source.
+
+### Burial forms and phase controls
+
+Printed pp. 143–145 discuss rock-cut and built graves, geology, resources and burial practice. Page 143 distinguishes Second Temple ossuary practice from later second–third-century secondary collection associated with burials brought from abroad, including Beth She'arim. Similar architecture occurs across religious communities. **Project inference:** a burial chamber, collection of bones or arched recess requires its own dated context and evidence of association before use in a Scroll feature model.
+
+**Samaria E220, pp. 144–146:** the plan caption on p. 144 explicitly identifies E220 and dates it to the third century CE. It shows a paved courtyard, two burial chambers with recesses, a courtyard sarcophagus and a water-collection system feeding a cistern. Pages 145–146 illustrate the courtyard and eastern chamber. This corrects the earlier note's E22 designation. The plan derives from *Samaria* I, fig. 41; the courtyard photograph cites plate LXXX. **Project inference:** this is a documented tomb–courtyard–cistern comparison, with a later date attached. No corresponding Scroll feature or first-century construction phase has been established.
+
+### Beth She'arim plans and entrance reference points
+
+- **Cave 14, pp. 147–149:** approximately 44 m long. Page 148 reproduces the plan from N. Avigad, *Beth She'arim* III, fig. 18, with a north arrow and scale. Page 149 supplies a courtyard/facade reconstruction from fig. 24 alongside an excavation photograph. Named associations with Judah ha-Nasi and relatives must be recorded as archaeological attributions; the drawing itself establishes the published layout.
+- **Cave 20, pp. 147, 150–151:** courtyard 11.70 × 16.20 m; entrance in the courtyard's northern wall. That direction describes a wall of the courtyard, not a north-facing exterior entrance of the complex. Page 150 reproduces Avigad III, fig. 43, with north arrow and scale; p. 151 distinguishes an excavation photograph from a reconstructed facade (plate XXXI, 1–2). The main hall is approximately 48 m long.
+- **Cave 13, p. 152:** courtyard 10.60 × 2.20 m, entrances at different levels and a stone door imitating wooden construction; the door photograph cites Avigad III, plate XXVII, 2. Keep each entrance and threshold level tied to its particular chamber.
+- **Pages 153–155:** describe crowded, sometimes asymmetric chamber arrangements, burial recesses, sarcophagi and secondary burial beneath them. Burial-place counts vary with how recesses and under-floor deposits are counted.
+
+The chapter gives the cemetery's main use as second to mid-fourth century CE (p. 147). **Project inference:** these plans offer a vocabulary and a method for entrance/layout checks. Establish site association and an appropriate construction phase before proposing any cave as a Scroll candidate.
+
+### Jerusalem and coastal comparisons
+
+**Mount of Olives “Birds Cave,” pp. 155–156:** a central chamber approximately 1.80 m square, three arched recesses and six trough graves; painted birds, flowers and vine decoration. The author dates it to the third or fourth century. Page 156 reproduces a plan and sections from A. Kloner's article in *Qadmoniot* 8, p. 28; footnote 132 gives pp. 27–30. The plan remains an unread-primary-report lead. **Project inference:** its burial geometry supplies a later-period Jerusalem comparison, without a dated first-century landmark.
+
+**Or Ha-Ner, pp. 157–159:** a painted, built burial complex with steps, a central barrel-vaulted hall and four connected burial chambers, approximately 7.5 × 5.5 m overall. The account assigns it probably to the fourth century. Photographs on p. 158 show the doorway and interior; those images do not supply a surveyed entrance bearing. Footnote 135 cites Y. Tsafrir, “A Painted Tomb at Or-Ha-Ner,” *IEJ* 18 (1968), pp. 170–180. Regional geology affects whether a grave is built or rock-cut.
+
+**Mausolea, pp. 159–164:** the account separates partly rock-cut burial rooms from visible superstructures. It describes second–third-century Askar near Shechem, a domed Samaria tomb and Gush Halav's built upper level over a burial cave. Samaria photographs show a dome and its central opening (p. 161). The Gush Halav drawing is a reconstruction; its facade photograph is a separate observation (pp. 161–162). The Mazor monument has two burial rooms, a columned porch and access towards its roof or upper level; the author dates it by architectural style to the second half of the third or the fourth century (p. 163). That stylistic date is distinct from excavated stratigraphy.
+
+### Original-source retrieval priorities
+
+The chapter supplies the following references; their original publications have **not** been independently read in this follow-up:
+
+1. N. Avigad, *Beth She'arim* III, especially figs. 18, 24 and 43 and plate XXXI. Obtain original plan captions and excavation phasing before using the overview's cave geometry.
+2. L. Y. Rahmani, “Roman Tombs in Nahal Raqafot, Jerusalem,” *ʿAtiqot* 11 (1976), pp. 78–88; J. Gath and L. Y. Rahmani, “A Roman Tomb at Manahat, Jerusalem,” *IEJ* 27 (1977), pp. 209–214 (p. 145, n. 129). Check site plans, entrance directions and each reported dating context.
+3. A. Kloner, “מערת הציפורים,” *Qadmoniot* 8, pp. 27–30 (p. 155, n. 132; plan p. 156).
+4. R. W. Hamilton, “The Domed Tomb at Sebastya,” *QDAP* 8 (1939), pp. 64–71; *Harvard Excavations at Samaria*, pp. 220–223 (p. 159, n. 137). Keep this mausoleum distinct from E220.
+
+**Assessment:** complete chapter access, corrected tomb identifier and more precise plan/phase references. This reading establishes no entry-level identification and changes no candidate rating or atlas geometry. Next book intake can proceed from the supplied late-antiquity volumes; original tomb reports remain targeted follow-up work.
