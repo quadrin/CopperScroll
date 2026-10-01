@@ -265,3 +265,8 @@ The user supplied a readable 15075 × 11146 RGB TIFF of the general South sheet.
 ### Later 1 October update: full-resolution North supplied
 
 The user supplied a readable 14630 × 11163 TIFF of general North. General North/South acquisition is complete. Header, legend, 1:250,000 scale/credits and selected Qumran–Jericho, Jerusalem–Beth-Horon and Gerizim regions were inspected. Tsvika Tsuk is credited for aqueducts. Achor Vallis is printed by Noorath/Wadi Makukh northwest of Jericho; its gazetteer explanation and cited evidence remain needed. Synagogues and Eretz Israel/Sinai remain preview-resolution. [Exact inspection record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md#full-resolution-north-sheet-received--1-october-2026). Credit: University of Michigan Library (Stephen S. Clark Library).
+
+
+### Later 1 October update: full-resolution Synagogues supplied
+
+A readable 7425 × 10926 TIFF of the synagogue sheet is now supplied. Header, 1:400,000 legend and selected Galilee/Judaea/Beth-Shean windows were inspected. The legend distinguishes Second Temple, Mishnah/Talmud and Samaritan synagogue categories; original dating references remain needed. Readable copies now exist for North, South, Churches and Synagogues. Eretz Israel/Sinai remains a preview. [Exact intake coverage](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md#full-resolution-synagogue-sheet-received--1-october-2026). Credit: University of Michigan Library (Stephen S. Clark Library).

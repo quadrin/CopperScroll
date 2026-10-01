@@ -302,3 +302,6 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 
 - Q3 / R07 update, 1 October 2026: full-resolution general North opened and inspected; North/South acquisition is complete. Gazetteer explanations and references remain needed. The North sheet prints Achor Vallis near Noorath/Wadi Makukh northwest of Jericho; check these entries before equating the map label with Wadi Nuweiʿimeh, Buqeia or the Scroll. Its regional aqueduct symbols do not resolve Q38/Q39's individual features. [Record](../sources/tir_umich_map_intake_2026-10-01.md#full-resolution-north-sheet-received--1-october-2026).
+
+
+- Q3 / R09 update, 1 October 2026: synagogue TIFF acquired; legend and selected regional symbols inspected. Its Second Temple and Mishnah/Talmud classifications must be traced to original reports before dating a candidate feature. North/South/Churches/Synagogues are readable; Eretz Israel/Sinai remains a preview. [Coverage](../sources/tir_umich_map_intake_2026-10-01.md#full-resolution-synagogue-sheet-received--1-october-2026).

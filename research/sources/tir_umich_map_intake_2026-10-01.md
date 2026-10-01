@@ -126,3 +126,32 @@ No geographic transformation, datum validation, complete line digitization or in
 - R08: North and South use 1:250,000; the churches sheet uses 1:400,000. Retain their different symbol/period scopes.
 - Cartographic-reference intakes since tracker creation: **3** (church, South, North). Primary excavation/text target inspections, decisive candidate tests and question closures remain unchanged at zero for that tracker interval.
 - No candidate rankings or deposit coordinates changed. The public commit contains metadata and original project notes, without TIFFs or inspection crops.
+
+## Full-resolution synagogue sheet received — 1 October 2026
+
+The later upload `39015106237970_synagogues(3).tif` supersedes the preview-only access limitation for **Synagogues**. It is a single-frame RGB TIFF, **7425 × 10926 pixels**, **400 dpi**, **243494004 bytes**. SHA-256: `d87b5a151d4ffec75df56501d4a7aab41d8e89f36d20b1f20e7a9202b6783f17`. The workspace original opened successfully despite the initial inline-image error.
+
+Readable reproductions are now available for general North, general South, Churches and Synagogues. **Eretz Israel/Sinai remains preview-resolution.** The original five-file intake statements are historical checkpoints; this section records the later synagogue TIFF.
+
+### Inspected observations
+
+Header, full-sheet overview, legend/credits and selected Galilee, Judaea and Beth-Shean windows were visually inspected. This is partial thematic coverage, not a transcription of all sites or an inspection of excavation records.
+
+- Title: *Synagogues in Eretz Israel in the Roman and Byzantine Period*. Printed scale **1:400,000**.
+- The legend separately marks **Second Temple period synagogues** (open base), **Mishnah and Talmud period synagogues** (filled base), **Samaritan synagogues**, seats of the Sanhedrin/Patriarch and large Jewish cemeteries. It also distinguishes attested/inferred roads and ancient/modern-name classes.
+- In the Judaea window, **Herodion** has the Second Temple category symbol. **Hiericho** and **Naʿaran** have the Mishnah/Talmud category symbol. These are the map's classifications; exact buildings, phase dates and the underlying dating evidence require the cited reports.
+- The Galilee window provides examples of the later category at **Capernaum** and **Chorazin**. It is inappropriate to transfer those plotted building phases to an earlier period from the place name alone.
+- **Scythopolis / Beth Shean** and **Beth Alfa / Rehov** appear in the Beth-Shean window with thematic symbols. This does not resolve the Scroll's disputed final letter in Beth Sham or identify its particular spring.
+- Printed credits: Israel Academy of Sciences and Humanities, **1993**; editors Yoram Tsafrir and Leah Di Segni; Israel Roll for roads; Survey of Israel production/printing. Reproduction credit: **University of Michigan Library (Stephen S. Clark Library)**.
+
+Inspection windows use original TIFF pixels, top-left origin: legend `(5630,7730)-(6950,10470)`; Galilee `(4480,1450)-(6200,3300)`; Judaea `(3700,6020)-(5600,7600)`; Beth-Shean `(4700,3550)-(5520,4300)`. These delimit inspected source images, not geographic footprints.
+
+### Progress and limits
+
+This completes acquisition of a readable synagogue sheet. It adds a cartographic chronology control for R09 and report leads for R07/R12, without dating an individual Scroll feature. The map's category is a synthesis to trace to the original evidence; it is not an independent excavation observation.
+
+Cartographic-reference intakes since tracker creation: **4**. The interval still has zero newly inspected original excavation/text targets, decisive candidate tests or question closures. Site/feature rankings and coordinates remain unchanged. No geographic registration or complete site/symbol audit was performed.
+
+Next work: retrieve the gazetteer/source references behind the inspected period assignments before treating them as dated archaeological comparisons. General-sheet acquisition is complete; prioritize Achor/Noorath and the original feature reports already listed in the tracker. The regional Eretz Israel/Sinai preview can remain a lower-priority acquisition task.
+
+The public research update contains original notes and metadata; supplied TIFFs/crops are not included.

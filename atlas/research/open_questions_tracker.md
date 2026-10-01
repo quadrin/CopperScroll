@@ -16,7 +16,7 @@ As of this baseline:
 
 - Tracked questions: 12; in progress: 7; queued: 5; resolved: 0; ruled out: 0.
 - Confirmed individual deposit locations: 0.
-- Since this tracker began: 0 newly inspected primary-source targets; 3 inspected cartographic-reference targets; 0 completed decisive tests; 0 question closures. Earlier research is recorded in each question's baseline and linked notes.
+- Since this tracker began: 0 newly inspected primary-source targets; 4 inspected cartographic-reference targets; 0 completed decisive tests; 0 question closures. Earlier research is recorded in each question's baseline and linked notes.
 - Next milestone: complete a page-cited test of one candidate's reading, geometry and construction phase, with the result recorded as supporting, conflicting or inconclusive.
 
 Count an original page/figure target once when its stated inspection is complete. Reprints and repeated searches do not add independent observations. A decisive test has an explicit hypothesis, inspected evidence and a recorded result; it may support or reject a candidate. An access failure belongs in the attempt history. Partial source coverage remains partial.
@@ -135,11 +135,11 @@ These are next actions, not completed inspections or a scheduled background job.
 ## R09 — Which candidate layouts existed when the instructions were usable?
 
 - **Priority / status:** P3 / Queued.
-- **Baseline:** tombs and waterworks often combine construction and reuse phases. Maresha numbering chains support I.92 = Tomb 515 and I.90 = Tomb 513; I.89 and I.91 remain unresolved.
+- **Baseline:** the inspected TIR synagogue legend separates Second Temple, Mishnah/Talmud and Samaritan categories. Its Herodion/Jericho/Naʿaran symbol assignments are reference leads requiring original dating evidence. Tombs and waterworks often combine construction and reuse phases. Maresha numbering chains support I.92 = Tomb 515 and I.90 = Tomb 513; I.89 and I.91 remain unresolved.
 - **Next test:** build feature-level phase records for shortlisted candidates, starting with original Oren–Rappaport Cave III/V plans and assemblage contexts.
 - **Answer criterion:** tie each required opening, wall or installation to its own dated construction/use evidence; state where only a broad range is defensible.
 - **Access / dependencies:** original alteration contexts and some number cross-references remain missing. Disturbed finds and cemetery-wide dates require separate treatment.
-- **Progress:** 2026-10-01 — closed bone repositories and differing reuse ranges recorded; entrance-alteration dates remain unresolved.
+- **Progress:** 2026-10-01 — closed bone repositories and differing reuse ranges recorded; entrance-alteration dates remain unresolved. Synagogue sheet legend and selected period assignments inspected; map classes have not been transferred to Scroll feature dates.
 - **Evidence:** [Burial primary follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sources/burial_primary_followup_2026-10-01.md).
 
 ## R10 — How much can the entry order tell us?
@@ -181,3 +181,5 @@ These are next actions, not completed inspections or a scheduled background job.
 - **2026-10-01 — Full-resolution South received:** opened and checksummed the 15075 × 11146 TIFF; inspected header, 1:250,000 legend and selected northern sectors. South acquisition subtask closed; general North remains needed. Cartographic-reference intakes: 2. Candidate tests, question closures, rankings and coordinates unchanged.
 
 - **2026-10-01 — Full-resolution North received:** inspected header, 1:250,000 legend/credits and selected candidate regions; general North/South acquisition is now complete. Achor Vallis near Noorath/Wadi Makukh becomes a specific gazetteer/source-tracing task. Cartographic-reference intakes: 3. No candidate test, question closure, ranking or geographic coordinate changed.
+
+- **2026-10-01 — Full-resolution Synagogues received:** inspected legend and selected Galilee/Judaea/Beth-Shean windows; period symbols provide report-tracing leads. Four of the five map components are now readable; Eretz Israel/Sinai remains a preview. Cartographic-reference intakes: 4. Candidate tests, closures, rankings and coordinates unchanged.
