@@ -31,7 +31,7 @@ This changes the 23-entry audit to **4 full type-and-period matches, 14 partial/
 - **Hyrcania (16, 29, 35): possible, low remains.** Its period waterworks do not resolve the restorations linking them to these entries. A precise southern-intake identification exceeds the evidence.
 - **Kidron gorge (35): exact stretch unresolved.** Mar Saba remains a candidate, alongside the escarpment exit. The phrase naming a gorge mouth does not select one by itself.
 - **Koḥlit: unresolved.** Tell es-Sultan remains possible/low. Its cemetery supports one landmark class; waterworks at the separate Jericho palace complex do not establish cisterns or pits at the tell.
-- **Achor: unresolved between the competing geographical traditions.** Phase 5 does not settle the Wadi Nuweiʿimeh/Buqeia question.
+- **Achor: unresolved between the competing geographical traditions.** Phase 5 does not settle the Wadi Nuweiʿimeh/Buqeia question. The 1 October [source trace](../sources/tir_achor_noorath_aqueduct_trace_2026-10-01.md) qualifies Phase 3's categorical TIR same-wadi claim: Noorath's ancient distance lacks a bearing, and the Achor map label's gazetteer rationale remains unread. Site rankings and coordinates are retained.
 - **Gerizim: incomplete source coverage.** Later installations in the checked sources cannot establish the absence of earlier ones while the Magen reports remain unavailable.
 
 Full references and access details are in [sources.md](../sources/sources.md#sources-checked-for-the-2026-09-28-site-review). Findings F5.10–F5.13 and questions Q35–Q36 record the changes and remaining work.

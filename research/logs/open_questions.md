@@ -308,3 +308,8 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 
 - Q3 / R07 update, 1 October 2026: Eretz Israel/Sinai TIFF opened; all five map-image acquisition subtasks are complete. The 1:1,000,000 overview's legend and selected Judaea sector were inspected. Remaining work is gazetteer/source context and exact feature tests, with separate map scales retained. [Current status](../sources/tir_umich_map_intake_2026-10-01.md).
+
+
+- Q13 / R07 update, 1 October 2026: qualify the earlier categorical F3.2 same-wadi conclusion. The supplied TIR label is by Noorath/Wadi Makukh; the valley limits and gazetteer rationale remain unchecked. Noorath's original Greek/Latin passage gives distance without bearing; Josephus's Neara water account gives no spring or conduit. TIR Noorath p. 197 is now citation-traced but unread. Both Scroll Achor alternatives remain; rankings and coordinates unchanged. [Source trace](../sources/tir_achor_noorath_aqueduct_trace_2026-10-01.md).
+
+- Q39 / R03 update, 1 October 2026: original SWP p. 228 drawing and pp. 205, 227–228 context now image-checked. The drawing is Jisr ed-Deir, not the separate opposite-monastery wall. The facing-pp. 222/225 illustrations supply regional/bridge context, without the target lower outlet or ancient surface. Manuscript identifiers and wall-specific phase remain missing. [Inspection record](../sources/tir_achor_noorath_aqueduct_trace_2026-10-01.md).

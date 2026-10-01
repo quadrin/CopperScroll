@@ -4,6 +4,17 @@ A running record, newest session first. Each entry says whether it is **evidence
 source says, with page) or **inference** (with reason and confidence). "BK" marks background
 knowledge that does not come from the files in this repo.
 
+## Source trace — 2026-10-01 (after complete TIR map intake)
+
+See [Achor/Noorath and SWP illustration check](../sources/tir_achor_noorath_aqueduct_trace_2026-10-01.md).
+
+- **Evidence:** Klostermann 136.24–25 and 137.27–28 were visually inspected: Noorath's fifth-milestone distance gives no bearing or named water source. Achor 18.17–20 / 84.18–21 and their Latin counterparts were rechecked; these retain the north-of-Jericho / Galgala constraints. Jerome, Wolf and the ancient Greek belong to one textual tradition.
+- **Evidence / source lead:** Josephus 17.340 was inspected in electronic Greek/translation; diverted Neara water is described without a named spring or conduit. Taxel 2019 pp. 308–309 cites TIR 1994 p. 197 for Noorath; the gazetteer page remains unread. Archaeological alternatives linking Neara to ʿAuja and Noorath to Duq remain unverified leads.
+- **Inference, superseding the categorical part of F3.2:** a lower Nuweiʿimeh course on PEF XVIII does not establish precisely what TIR's Achor Vallis label by Noorath/Wadi Makukh covers. The claimed single-wadi identity is qualified pending its gazetteer explanation. Candidate rankings and map coordinates are unchanged.
+- **Evidence / bounded conflict:** original SWP p. 228's plan/elevation corresponds to the Jisr ed-Deir bridge described on p. 205. Its separate opposite-monastery wall description is not a wall section. Bridge dimensions cannot supply the target lower outlet or historical ground. Facing-pp. 222/225 aqueduct illustrations were also checked; no wall datum or wall-specific phase recovered.
+- **Progress:** three completed primary-source targets; five map intakes retained; no completed decisive candidate-location test or question closure. Original Qumran Schulz/Strobel drawings and the PEF manuscript item IDs remain outstanding.
+
+
 ---
 
 ## Review — 2026-09-28 (site identifications after Phase 5)
@@ -103,7 +114,7 @@ See `phase3_summary.md`. The original Phase 3 maps and tables record site anchor
     - reading dependence.
   - Result: 23 best-supported, 88 possible, 141 weak, 40 ruled out.
   - 23 entries have a best-supported place (16 medium, 7 low, none high). 37 have possible places only. Entry 41 has nothing to map.
-- F3.2 (evidence: PEF Sheet XVIII, read from the image; inference, medium–high confidence) **Wadi Nuweiʿimeh runs from NW to NE of Jericho.**
+- F3.2 (evidence: PEF Sheet XVIII, read from the image; inference, medium–high confidence) **Wadi Nuweiʿimeh runs from NW to NE of Jericho.** **Later qualification, 1 October 2026:** its regional course does not prove the precise area intended by TIR's Achor Vallis label. See the source-trace update above; the map/gazetteer correlation remains open.
   - Evidence: the sheet labels the springs ʿAin ed-Duk and ʿAin en-Nueiameh together NW of Jericho, and "Wady Nueiameh" east of Kh. el-Mefjer, NE of Jericho.
   - Inference: TIR's "Achor Vallis" label (NW) and Milik's "Wadi Nuweiʿimeh, NE of Jericho" name two stretches of one wadi. They are not rival sites. This confirms the BK inference in F1.25.
   - What stays open: the choice between the late-antique Achor (the Nuweiʿimeh) and the Iron Age Achor (the Buqeia). See Q13.

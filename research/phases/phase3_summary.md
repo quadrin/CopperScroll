@@ -120,10 +120,10 @@ There are three placements:
 |---|---|---|
 | Wadi Nuweiʿimeh, the late tradition | Milik; Puech; the Onomasticon's "north of Jericho, beside Galgala" | best-supported (1 low, 17 medium) |
 | el-Buqeiʿah, the Iron Age "Valley of Trouble" | Allegro; Eshel; the majority view for the biblical valley | possible |
-| TIR's "Achor Vallis" label NW of Jericho | TIR | see below |
+| TIR's "Achor Vallis" label NW of Jericho | TIR | Gazetteer rationale unread; correlation under review |
 
 - **No name survives.** None of the three passes Elitzur's test.
-- **TIR's label is the same wadi (F3.2).** On PEF Sheet XVIII, the springs ʿAin ed-Duk and ʿAin en-Nueiameh lie together NW of Jericho, and *Wady en Nueiameh* runs east from them, north of Jericho, past Kh. el-Mafjar. So TIR's "NW" and Milik's "NE" label two stretches of one wadi. They are not rival sites.
+- **TIR's exact valley correlation remains unverified (F3.2 qualified, 1 October 2026).** PEF Sheet XVIII places the Duq/Nuweiʿimeh springs NW of Jericho and the lower Nuweiʿimeh course farther east. This establishes the regional watercourse context. It does not by itself prove the area intended by TIR's Achor Vallis label, printed by Noorath/Wadi Makukh. The ancient Achor passages constrain the fourth-century tradition to north of Jericho; Noorath's passage gives a distance without a bearing. Read the TIR gazetteer and its sources before merging the valley labels. [Source and illustration check](../sources/tir_achor_noorath_aqueduct_trace_2026-10-01.md).
 - **What stays open.** The choice between the late tradition and the Buqeia is still open (Q13).
 
 ### 4.2 Koḥlit (4, 11, 15, 16, 19, 60)

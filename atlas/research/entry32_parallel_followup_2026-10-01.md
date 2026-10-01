@@ -2,6 +2,8 @@
 
 1 October 2026, UTC. Original project-authored assessment; public sources and local source files only.
 
+**Later 1 October illustration update:** original SWP pp. 205, 227–228 and the facing-pp. 222/225 plates are now visually checked. The p. 228 drawing depicts Jisr ed-Deir; it cannot provide the separate opposite-monastery wall's lower outlet or ground datum. [Exact coverage and result](tir_achor_noorath_aqueduct_trace_2026-10-01.md). Earlier access statements below record the preceding search.
+
 ## Result and scope
 
 Schneider's relevant illustrations are checked; the wall measurements remain missing. Porath provides a useful route distinction, but no demonstrated identification or sampled phase of this particular wall. The aerial Site 16 lead concerns the downstream palace sector. The PEF aqueduct manuscript item identifiers remain unrecovered.
