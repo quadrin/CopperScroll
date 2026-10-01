@@ -95,3 +95,8 @@ Stable URLs and exact locators above are the durable citations. Session retrieva
 ## Focused wall-section retrieval — later 1 October 2026
 
 De Marco's 2026 original article pp. 85–92, including Figs. 1–5, was inspected to the stated coverage. Its Mar Saba/St. Theodosius surveys supply no section of the opposite-Choziba wall. PADIS's Roman-period bibliography yields Patrich 1990 p. 208 n. 24 and ESI 6 p. 66, still unread; these citations require a feature/context correlation before dating this wall. IAA's advertised ESI 6 scan returned 403. Catalogue pagination differs from the citation and needs original verification. [Exact coverage, failed routes and KPI correction](tir_gazetteer_choziba_followup_2026-10-01.md). The wall/outlet/datum/phase model remains unresolved.
+
+
+## Original ESI 6 inspection — later 1 October 2026
+
+The user-supplied English scan resolves the earlier ESI access dependency: printed pp. 66–70 and Figs. 26–29 are inspected. P. 66's late first-/early second-century storage-jar rim comes from a natural cave east of the monastery; no numbered or sealed context or connection to the opposite-bank wall is given. Fig. 26 p. 67 supplies monastic-cell context without a target-wall section. This source cannot date the proposed culvert wall or establish its lower outlet and ground datum. Patrich 1990 p. 208 n. 24 remains unread; a wall-specific source is still required. [Coverage and phase check](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi6_cave_survey_review_2026-10-01.md). Candidate and spatial model unchanged.

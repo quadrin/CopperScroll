@@ -43,3 +43,8 @@ No map point or confidence score is changed by this check.
 - [Original report's English-summary record](https://www.jstor.org/stable/23456200): browser verified pp. 1*–8*, Pesach Bar-Adon and Zvi Greenhut. The [volume contents](https://www.jstor.org/stable/i23456176) give תש״ן / 1989, resolving the apparent year discrepancy as dual Hebrew/Gregorian dating. The [Hebrew report](https://www.jstor.org/stable/23456199) is one item covering pp. 1–91, also credited to Yuval Goren. A library search for University of Michigan returned no institution result in this browser; no credentials were requested or submitted. The original cave pages remain unread.
 - [Parks guide, 2022](https://www.parks.org.il/article/mgilot/).
 - [PADIS Abu Saraj catalogue](https://sites.google.com/uniroma1.it/sapienza-padis-project/archaeological-sites/caves-in-abu-saraj-cliff).
+
+
+## Original ESI 6 inspection — later 1 October 2026
+
+The supplied English ESI 6 report, printed pp. 66–70, now provides direct excavation-source coverage. Its Qumran account and Fig. 29 concern 3Q; the separate Twin Cave paragraph begins on p. 69 and concludes on p. 70. That season yielded no sherds or other indicative material. This negative result is limited to the reported 1986 work and cannot contradict all earlier occupation evidence. The report supplies no Twin Cave entrance plan, bearings or period threshold. Retain the paired-cavity lead and alternative cave-level eastward reading; obtain Bar-Adon pp. 15–17 before measuring entry 25 against Twin Cave. [Exact source coverage and bounded test](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi6_cave_survey_review_2026-10-01.md). No geometry or confidence score changes.

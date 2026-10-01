@@ -320,3 +320,10 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 - Q13 / R07: TIR p. 197 remains unread; obtain Noorath, Achor Vallis and their expanded source references. HathiTrust is search-only; Google Books supplied no readable entry; the Qedem 5 PDF is a sales description. Map access is complete.
 - Q39 / R03: De Marco 2026's inspected article has no target-wall section; close that paper as a retrieval lead to this scope. Obtain Patrich 1990 p. 208 n. 24 and original ESI 6 cave-survey pages to identify the cited Roman context. IAA's scan download returned 403; verify pagination. The PEF item IDs, lower outlet, surface and phase remain unresolved.
 - KPI correction: the previous SWP p. 228 identity count repeated the already inspected 30 September result. Its increment is 2/2, not 3/3; adding the new De Marco target/coverage check brings cumulative counts to 3 primary targets / 3 bounded checks, with 5 map intakes and no decisive candidate test or closure. [Full record](../sources/tir_gazetteer_choziba_followup_2026-10-01.md).
+
+
+## ESI 6 original-report checks — 1 October 2026
+
+- Q39 / R03: ESI 6 English printed pp. 66–70 now inspected from the supplied scan. Its Roman rim comes from a cave east of the monastery; it supplies no target-wall stratigraphy. The ESI access dependency is closed, while wall identity, lower outlet, original surface and phase remain open. Next: Patrich 1990 p. 208 n. 24 and an identifiable wall-specific plan/section.
+- R02: original report separates 3Q and Twin Cave. Fig. 29 is 3Q; its geometry and scroll find depth cannot be transferred to entry 25. Twin Cave's 1986 excavation reports no indicative material and no measured entrance arrangement. Next: Bar-Adon 1989 pp. 15–17, with bearings, cavity connectivity and early northern threshold.
+- KPI increment: 1 newly inspected primary report / 2 bounded checks; cumulative 4 primary targets / 5 bounded checks / 5 map intakes, with 0 decisive candidate tests or question closures. [Evidence and coverage](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi6_cave_survey_review_2026-10-01.md).

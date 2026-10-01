@@ -55,3 +55,8 @@ The [IAA's ESI 6 record](https://publications.iaa.org.il/esi_english_series/2/) 
 New primary target: the De Marco article's stated coverage. New bounded check: its coverage of the target wall. Catalogue records, source locators and failed downloads add neither source inspections nor independent corroboration. Corrected cumulative tracker totals: **3 primary-source targets, 5 map intakes, 3 bounded source checks, 0 decisive reading/geometry/phase tests, 0 question closures**. The three primary targets are Noorath's original page pair, Josephus 17.340 electronic text and the scoped De Marco inspection.
 
 Reading/site/feature/position assessments and atlas geometry remain unchanged. No original map images, article pages or externally sourced scans are included in this update.
+
+
+## ESI access and pagination resolved — later 1 October 2026
+
+The supplied original English ESI 6 volume supersedes the failed download recorded above. The cave survey is printed pp. 66–70, corresponding to PDF pages 76–80, one-based. All five pages and Figs. 26–29 are inspected. Its p. 66 Roman rim is from a natural cave east of the monastery and has no reported stratigraphic tie to the proposed wall. Patrich 1990 p. 208 n. 24 is still unread. [Original-report inspection](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi6_cave_survey_review_2026-10-01.md) records both the R03 dating check and the R02 Twin Cave coverage check. This adds one primary target and two bounded checks; cumulative totals are 4 primary targets / 5 bounded checks, with 5 map intakes, zero decisive candidate tests and zero closures. TIR gazetteer access remains a separate dependency.
