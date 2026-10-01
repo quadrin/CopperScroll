@@ -83,3 +83,46 @@ Inspection windows in original, unrotated TIFF pixels: legend `(480,7450)-(3000,
 - **R08:** use the South sheet's 1:250,000 scale separately from the churches sheet's 1:400,000 scale; geographic grid/datum and registration remain unvalidated.
 - **Credit:** University of Michigan Library (Stephen S. Clark Library).
 - The research commit contains metadata and project-authored notes only; the TIFF and inspection crops are not included.
+
+## Full-resolution North sheet received — 1 October 2026
+
+The later upload `39015106237970_north.tif` supersedes the preview-only access limitation for **North**. It is a single-frame RGB TIFF, **14630 × 11163 pixels**, **400 dpi**, **490066390 bytes**. SHA-256: `da5bc3e2d4a3c38ca9d9e325fd2f949dec7caefb8a56ccfbfa8d7d78c61f1054`. The original workspace file opened successfully despite the initial inline-image error. It is sideways in stored pixel orientation; temporary counterclockwise rotations were used for inspection.
+
+**General North and South acquisition is now complete.** The earlier preview-only statements above are historical checkpoints. Synagogues and Eretz Israel/Sinai remain preview-resolution; the companion gazetteer remains needed.
+
+### Inspected content and coverage
+
+Header/full-sheet overview, legend, scale/credits and selected Qumran–Jericho, Jerusalem–Beth-Horon and Gerizim regions were visually inspected. No complete site inventory or gazetteer text was read.
+
+- **Title and scope:** NORTH — IUDAEA · PALAESTINA; Eretz Israel during the Hellenistic, Roman and Byzantine periods.
+- **Scale and credits:** **1:250,000**, with kilometre and Roman-mile bars. Academy copyright **1993**. Editors Yoram Tsafrir and Leah Di Segni; Israel Roll credited for roads; **Tsvika Tsuk credited for aqueducts**. Required reproduction credit remains **University of Michigan Library (Stephen S. Clark Library)**.
+- **Legend:** solid paired blue lines denote attested aqueducts; interrupted paired blue lines denote inferred aqueducts. Roads, seasonal/perennial water, ruins, forts and monasteries have distinct symbols. Roman type labels ancient names; italics label modern names of unidentified sites, as illustrated by the legend.
+- **Qumran:** the inspected map prints italic `Qumran` beside a ruins symbol, with a short solid paired-blue aqueduct segment. This window supplies no measured intake/dam/boulder/fissure arrangement. The label does not itself identify the site as ancient Sekakah.
+- **Hyrcania:** the label is accompanied by fort and monastery symbols, with solid paired-blue aqueduct lines in its vicinity. These regional symbols do not identify first-century fabric or register the detailed pool plan.
+- **Wadi Qelt / Jericho:** Choziba, Pharan, ʿEin el Fawwar, Dok, Cypros and HIERICO appear in the inspected region with several aqueduct lines. Their common cartographic frame is useful for route comparison; it cannot identify the target wall's lower outlet or construction phase.
+- **Beth-Horon / Jerusalem:** Upper and Lower Bethoron are separately labeled on a road corridor; the ascent symbol occurs between them. The region also includes HIEROSOLYMA AELIA and Beth ha-Kerem. Road/site points supply no particular tomb entrance or water-channel plan.
+- **Gerizim:** GERIZIM and NEAPOLIS appear with surrounding site/cult symbols. No P5178 locus or coin context follows from those regional points.
+- **Achor lead:** `Achor Vallis` is printed beside Noorath and Wadi Makukh, in the region northwest of Jericho and below the Wadi Dar el Jerir label. Noorath has its own settlement point; the valley label should not be converted into a single point or treated as a precise valley boundary. This gives a concrete target for the gazetteer's Achor/Noorath entries and their cited ancient evidence. The map alone does not resolve whether this label corresponds to the Scroll's Achor, Wadi Nuweiʿimeh or the Buqeia proposal.
+
+### Reproducible inspection windows
+
+Coordinates are original TIFF pixels with top-left origin. Temporary views were rotated counterclockwise. These are source inspection windows, not geographic coordinates:
+
+- Qumran–Jericho: `(1200,6400)-(3900,8450)`.
+- Jerusalem–Beth-Horon: `(2700,4950)-(5000,6900)`.
+- Gerizim: `(5000,5850)-(6400,7350)`.
+- Legend: `(11600,900)-(13550,3800)`; scale/credits: `(10300,800)-(12200,4200)`.
+- Native-detail Qumran: `(2650,7400)-(3150,7950)`; Hyrcania: `(2400,6900)-(3000,7420)`.
+- Wadi Qelt context: `(3500,6700)-(4150,7700)`; Achor/Noorath context: `(3800,7100)-(4600,8500)`.
+
+No geographic transformation, datum validation, complete line digitization or independent positional-error test was performed. At the printed scale, 1 mm represents 250 m. The aqueduct credit provides an authorship lead; the underlying observations still require their reports and dates.
+
+### Research outcome and next tests
+
+- Q3 / R07: readable general-sheet access is resolved. Replace acquisition requests for North/South with gazetteer/source-tracing tasks. The broader place-name questions remain open.
+- R07: prioritize the gazetteer's **Achor Vallis and Noorath** entries; separate label placement, proposed valley identification and ancient attestation.
+- R01 / R03: use this regional aqueduct depiction to organize source comparisons. Continue original gorge and wall-specific plans before interpreting Scroll instructions.
+- R04 / R05: retain regional points as site context; seek individual tomb/locus plans.
+- R08: North and South use 1:250,000; the churches sheet uses 1:400,000. Retain their different symbol/period scopes.
+- Cartographic-reference intakes since tracker creation: **3** (church, South, North). Primary excavation/text target inspections, decisive candidate tests and question closures remain unchanged at zero for that tracker interval.
+- No candidate rankings or deposit coordinates changed. The public commit contains metadata and original project notes, without TIFFs or inspection crops.

@@ -299,3 +299,6 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 
 - Q3 / R07 update, 1 October 2026: full-resolution general South TIFF received and inspected to stated header/legend/regional coverage. Its northern Dead Sea sector includes Engaddi; Qumran/Jericho require North. The South acquisition subtask is closed. General North and gazetteer context remain outstanding. No entry-level question closed. [Record](../sources/tir_umich_map_intake_2026-10-01.md#full-resolution-south-sheet-received--1-october-2026).
+
+
+- Q3 / R07 update, 1 October 2026: full-resolution general North opened and inspected; North/South acquisition is complete. Gazetteer explanations and references remain needed. The North sheet prints Achor Vallis near Noorath/Wadi Makukh northwest of Jericho; check these entries before equating the map label with Wadi Nuweiʿimeh, Buqeia or the Scroll. Its regional aqueduct symbols do not resolve Q38/Q39's individual features. [Record](../sources/tir_umich_map_intake_2026-10-01.md#full-resolution-north-sheet-received--1-october-2026).
