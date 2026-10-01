@@ -269,3 +269,6 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 
 - Q39 update (30 September 2026, Los Angeles): test the lower culvert mouth at the monastery-opposite wall as a conditional relative anchor. Obtain a wall-specific plan, ground level and construction sequence; preserve the Ein Qelt / Ein Fawwar source distinction. [Correlation](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
+
+
+- Q39 image update (30 September 2026, Los Angeles): four historical photographs inspected without locating the culvert exit. Resolve Conder 1874 p. 43's east-of-monastery bridge against SWP III p. 205's west-of-monastery description using the original surveyed alignment. Schneider 1931 remains an unread illustration lead. [Record](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).

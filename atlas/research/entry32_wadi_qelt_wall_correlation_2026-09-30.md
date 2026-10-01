@@ -25,3 +25,25 @@ Reading remains disputed; site remains medium and conditional; individual featur
 ## Next discriminating evidence
 
 Obtain a wall-specific plan or historical photograph showing its culvert exit and tie it to the original survey route. Establish ground level, bedrock and construction sequence at that outlet. The bridge elevation and point 25's tunnel section cannot supply those missing wall measurements.
+
+
+## Historical photograph and original-report check — 30 September 2026, Los Angeles
+
+Four photographs were visually inspected; none establishes the proposed wall's culvert exit.
+
+- **Australian War Memorial [004050](https://www.awm.gov.au/collection/004050):** Frank Hurley, 10 November 1940. The image shows aqueduct bridge ruins low in a ravine, with two people in the foreground. It does not identify the monastery-opposite wall or expose its lower through-channel. The catalogue's early Christian attribution is not construction dating.
+- **AWM [B00044](https://www.awm.gov.au/collection/B00044):** April 1918, maker unknown. An elevated view shows masonry bridge remains and a steel pipe. The catalogue locates it on the main Jericho road and attributes remains to Herod. Neither that caption nor the visible steel pipe establishes the proposed wall or its ancient phase.
+- **AWM [B00043](https://www.awm.gov.au/collection/B00043):** April 1918, maker unknown. The view looks through a large bridge arch toward the stream. It lacks a demonstrated correspondence with the cliffside wall. These two accessions are separate views, not two independent dating observations.
+- **Félix Bonfils [1045 Wadi el Kelt](https://www.e-manuscripta.ch/bau/bilder/content/titleinfo/4636560):** Universitätsbibliothek Basel, UBH Ansichtenslg Palästina Wadi Qelt B, [DOI 10.7891/e-manuscripta-171235](https://doi.org/10.7891/e-manuscripta-171235). Photograph and verso directly inspected in the four-page PDF. The view shows the monastery, cliff and a small approach bridge below. The target southern wall's culvert exit is not established. Catalogue dates creation to 1870–1880; the verso bears a handwritten 1895. That annotation's relationship to the exposure date remains unresolved. The recto and calibrated scan reproduce the same photograph and count as one view.
+
+### Original report and bearing discrepancy
+
+Conder, “Gilgal and the Plains of Jericho,” *PEF Quarterly Statement* (1874), pp. 43–44, directly inspected in the [1873–1874 bound scan](https://archive.org/download/quarterlystateme05pale/quarterlystateme05pale.pdf) (PDF indices 238–239, zero-based). He places the aqueduct bridge within a quarter mile **east** of Deir el-Kelt; SWP III p. 205 places Jisr ed-Deir **west** of the monastery. His account describes the paired southern channels and the lower channel inside the cliffside wall. SWP III p. 180 repeats that earlier account. These repetitions belong to the same survey source lineage.
+
+Preserve the east/west discrepancy until a surveyed alignment resolves it. It concerns the bridge anchor, not a compass bearing supplied by entry 32. No wall-specific drawing was found in the inspected report pages. The report's channel numbers do not give a culvert footprint.
+
+### Access and next source
+
+The [publisher record for Schneider's 1931 monastery study](https://roemischequartalschrift.digitheo.de/ojs/index.php/rq/article/view/89324) was located; its full article and illustrations were not obtained. The HUJI illustrative-material link returned a retrieval error. No claim about a wall plan in either source follows from this access check.
+
+Recover the original PEF aqueduct survey alignment or a detailed southern-bank view opposite the monastery before registering a culvert point. The four inspected photographs supply context only. Reading and site ratings, the provisional feature model and atlas geometry remain unchanged.

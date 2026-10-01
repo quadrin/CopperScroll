@@ -708,3 +708,11 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F21.3 (conditional model): lower culvert emergence at the monastery-opposite wall is a provisional relative anchor. Ein Fawwar/Cypros point 25 remains uncorrelated with the Ein Qelt wall; three-cubit depth, ground surface and stone-course relationship remain untested. Confidence and geometry unchanged.
 
 [Review](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
+
+## Entry 32 historical-image check — 2026-09-30, Los Angeles
+
+- F22.1 (image access): AWM 004050, B00044 and B00043 plus Basel Bonfils 1045 directly inspected. No culvert-exit correspondence established. Catalogue period labels supply no construction sequence.
+- F22.2 (original report): Conder 1874 pp. 43–44 directly read; lower channel described within the cliffside wall. His bridge lies east of the monastery, whereas SWP III p. 205 says west. Preserve this unresolved discrepancy before plan registration.
+- F22.3 (dependence/access): SWP p. 180 repeats Conder's account; Bonfils recto and calibrated scan repeat one photograph. Schneider 1931 metadata located, full article not accessed. Atlas geometry and confidence unchanged.
+
+[Access and image record](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
