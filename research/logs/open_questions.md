@@ -260,3 +260,6 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 - Jericho route follow-up: pp. 151–153 give Adummim/Tariq el-Hindi leads. Obtain original survey alignment and phase evidence before registering road geometry or associating a route with Doq or entry 32.
 
 [Source record](../sources/guthe_roads_followup_2026-09-30.md).
+
+
+- Q45 update (30 September 2026): IAA site 143 displays no tomb plan; a digital copy of the printed entry was not recovered. First establish whether the volume contains tomb illustrations, then obtain original survey field drawings if needed. Peleg 2004 Fig. 1 confirms the Lower Beth Horon tomb's exterior entrance faces south. Preserve the distinction between a chamber-entrance model and ברוח as a direction/side. [Check](../sources/entry40_tomb_plan_check_2026-09-30.md).

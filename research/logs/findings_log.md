@@ -684,3 +684,11 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F18.4 (route evidence): Tepper–Tepper pp. 151–153, Figs. 55–56, supply Adummim and Tariq el-Hindi route leads. No Doq feature or entry 32 outlet-wall match. Targeted coverage, not a whole-volume scan.
 
 [Full source and access record](../sources/guthe_roads_followup_2026-09-30.md).
+
+## Entry 40 tomb-plan check — 2026-09-30
+
+- F19.1 (source access): IAA site 143/record 9199 reread to its end; no tomb drawings, entrance bearings or dimensions displayed. Printed volume located in the NLI catalogue, but site pages/plans not accessed; existence of printed tomb plans is unverified.
+- F19.2 (plan observation): Peleg 2004 Fig. 1 directly inspected. Its north arrow establishes a south-facing exterior entrance at the Lower Beth Horon tomb. A/B are niches in the west wall. This refines prior evidence rather than adding another excavation witness. No reported channel or sixteen-cubit shaft; pottery is from robbed-cave accumulations.
+- F19.3 (conditional model): this tomb fails a west-facing exterior-entrance model; ברוח may refer to another directional relationship. Beth Horon's site rating and atlas anchor remain unchanged.
+
+[Source/access record](../sources/entry40_tomb_plan_check_2026-09-30.md).
