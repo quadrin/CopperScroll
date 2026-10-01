@@ -4,6 +4,8 @@ Research on the places, landmarks, text, and structure of the Copper Scroll. The
 
 ## Start here
 
+[Open questions and research progress](research/OPEN_QUESTIONS.md) tracks the current priorities, evidence, next tests and criteria for closing each question.
+
 1. [Current site assessment](research/sites/site_identification_review.md) explains the leading place proposals and their limits. These are site-level identifications; no individual deposit or hiding place has been identified.
 2. [Research guide](research/README.md) lists every report by subject and points to the evidence behind each conclusion.
 3. [Explore the atlas](https://quadrin.github.io/CopperScroll/) to browse the entries, map candidate places, review evidence, and read the scroll column by column.

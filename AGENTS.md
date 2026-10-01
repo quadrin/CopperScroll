@@ -24,3 +24,7 @@ Notes saying a file was “not pushed”, “not committed” or delivered local
 Check existing notes and source-access records before searching. Prioritize digital primary sources, original plans, surveys and historical photographs. Record exact pages, figure numbers and access status. Use the existing research files to distinguish a newly accessed source from independent new evidence.
 
 Keep research copies under this directory and `atlas/research/` aligned where both exist. Update candidate evidence and map data when the underlying assessment changes. Geometry records should distinguish site anchors, observed feature footprints and modeled candidate areas, with the coordinate system, source and positional uncertainty.
+
+## Open-question tracker
+
+Use `research/OPEN_QUESTIONS.md` to select and track research work. After each research session, update the affected R question's dated progress, inspected evidence, contradictions, next test and access limits; recompute summary counts and add a change-history entry. Keep `atlas/research/open_questions_tracker.md` byte-identical. Preserve historical Q identifiers in `research/logs/open_questions.md`. Count completed source inspections and explicit tests separately from question closures; retain negative and inconclusive results. Close only the stated question or candidate to the scope supported by the evidence. Update underlying notes, logs and assessments when the evidence changes.

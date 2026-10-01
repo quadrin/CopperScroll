@@ -1,5 +1,7 @@
 # Open questions
 
+Current priorities, progress measures and closure criteria are in the [active open-question tracker](../OPEN_QUESTIONS.md). This file preserves historical Q identifiers and detailed revisions.
+
 Updated each session. Newest additions at the bottom of each group. "Needs" says what would settle the question.
 
 ## Sources and access

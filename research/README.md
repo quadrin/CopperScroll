@@ -1,5 +1,7 @@
 # Research guide
 
+Use the [open questions and progress tracker](OPEN_QUESTIONS.md) to choose the next test and record its outcome. It tracks priorities, evidence, contradictions, access limits and criteria for closing questions.
+
 Read the [current site review](sites/site_identification_review.md) for the latest site-level assessment, then use the reports below for the evidence, competing readings, and unresolved tests. A site's confidence does not identify a particular cave, cistern, pool, or deposit. The [findings log](logs/findings_log.md) preserves dated revisions; [open questions](logs/open_questions.md) preserves the remaining work.
 
 ## Foundation: five phases
