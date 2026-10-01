@@ -291,3 +291,8 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 - Q48: one published specimen context at P5178; remaining Festus findspots unverified. The final private-dwellings report (JSP 20) is a new retrieval target alongside JSP 8. No locus plan or deposit description recovered.
 - Q38: precise original illustration-index targets recovered: Schulz 1960 p. 53 and Strobel 1972 Fig. 1 p. 56. Actual drawing extent, scale and reconstruction conventions remain unchecked.
 - Q45, Horite alternative: French 1960 p. 221 n. 1 verifies 1.80 m funerary troughs, without correcting the uninspected German image. The road-relative western position cannot supply entrance azimuth. Original 1933 pp. 42–53 remains a source-specific plan target. [Follow-up](../sources/entry40_horite_followup_2026-10-01.md).
+
+
+## Michigan TIR map intake — 1 October 2026
+
+- Q3 / R07: five TIR component images are supplied. North, South, Synagogues and Eretz Israel/Sinai have preview resolution; the Byzantine churches sheet is high resolution, with its legend and selected regional labels inspected. Obtain readable general North/South sheets and corresponding gazetteer entries before settling fine names or geographic registration. The thematic sheet leaves first-century feature identities unresolved. [Intake record](../sources/tir_umich_map_intake_2026-10-01.md). Required credit: University of Michigan Library (Stephen S. Clark Library).

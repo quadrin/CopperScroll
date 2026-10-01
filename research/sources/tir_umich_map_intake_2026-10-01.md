@@ -1,0 +1,59 @@
+# TIR maps supplied by the Stephen S. Clark Library — 1 October 2026
+
+## Source and attribution
+
+User-supplied reproductions of *Tabula Imperii Romani: Iudaea · Palaestina* map sheets. Required credit supplied with the files:
+
+> University of Michigan Library (Stephen S. Clark Library).
+
+The user also supplied this reproduction notice:
+
+> Copyright law governs the making of reproductions of copyrighted material; by making this request you assert that the material you wish copied is either in the public domain, or is a "fair use" under Title 17, U.S. Code 107.
+
+This note records the delivered files, inspected content and original project analysis. The public research update contains no supplied map images or crops. Attribution identifies the supplying library; the church sheet separately prints Academy and Survey of Israel credits.
+
+## Delivered files and inspection coverage
+
+All five files are JPEGs without filename extensions. Pixel dimensions were read from the files; hashes and sizes are in [the intake inventory](https://github.com/quadrin/CopperScroll/blob/main/registration/tir_umich_intake_2026-10-01.csv).
+
+- `FFzwu03w`: general **NORTH** sheet, 786 × 600 pixels, sideways orientation. Full-sheet preview visually inspected for identity and coverage; small site labels and legend entries were not transcribed.
+- `Un4cnkbw`: general **SOUTH** sheet, 799 × 591 pixels, sideways orientation. Full-sheet preview visually inspected for identity and coverage; small site labels and legend entries were not transcribed.
+- `K3Y7WTog`: **Synagogues in Eretz Israel in the Roman and Byzantine Period**, 544 × 800 pixels. Title and thematic extent visually inspected; individual symbol assignments were not audited.
+- `wozmn3vA`: **Eretz Israel and Sinai during the Hellenistic, Roman and Byzantine periods**, 515 × 799 pixels. Title and regional extent visually inspected; individual site readings were not audited.
+- `v1_m9m72`: **Churches in Byzantine Palestine**, 7394 × 10909 pixels, 34,641,208 bytes. Header, legend, scale, credits and selected Gerizim/Jerusalem–Jericho regions visually inspected at readable crop resolution. The complete site inventory was not transcribed.
+
+Four delivered files have preview-level resolution. The church sheet is a high-resolution full-sheet reproduction. Its coverage does not replace a readable general North/South sheet or the companion gazetteer. The original reported missing-path errors were resolved by reading the supplied workspace copies. The church file exceeds the separate 32 MiB transfer limit but is readable directly from its authorized workspace path.
+
+## Church sheet: directly inspected observations
+
+Source-image coordinates below use pixels, origin at the top-left of the delivered file. They identify inspection windows, not geographic feature footprints.
+
+1. **Header and legend:** title *Churches in Byzantine Palestine*. Main map scale **1:400,000**; Negev/Sinai inset **1:2,000,000**. The legend distinguishes churches/monasteries from those known only from sources; attested roads from inferred roads and desert roads; perennial streams from seasonal watercourses. It also distinguishes ancient names, modern names of unidentified sites and modern reference names.
+2. **Printed credits:** prepared under the auspices of the Israel Academy of Sciences and Humanities; editors Yoram Tsafrir and Leah Di Segni; Israel Roll credited for roads. Academy copyright and Survey of Israel production/printing show **1993**. Survey of Israel copyright appears separately on the sheet.
+3. **Gerizim window:** crop `(3850,4750)-(4850,5650)` shows **Mons Gerizim**, **NEAPOLIS**, **Jacob's Well** and **SEBASTE**, with church/see symbols and regional roads.
+4. **Judaea window:** crop `(3700,6000)-(5600,7900)` shows **Upper Bethoron**, **Choziba**, **HIERICHO**, **Pharan**, **ʿEin el Fawwar**, **Cypros**, **HIEROSOLYMA**, **Beth ha-Kerem**, **Laura Sabae** and **Herodion**, among other labels. Labels are reported as map text; no gazetteer explanation was inspected.
+5. **Eastern Jericho window:** crop `(5100,6000)-(6900,7600)` includes **Galgala** and **Wadi en Nuʿeima**. The latter's italic styling must be read with the modern-name distinctions in this sheet's legend. These labels alone do not establish which Achor tradition applies to the Scroll.
+
+## What this adds to the project
+
+- **R07 / historical Q3:** access now includes an original high-resolution thematic sheet and previews of the other four components. This advances the map-access task. Readable general North/South details and the gazetteer's explanations/references remain outstanding.
+- **R03:** Choziba, Pharan and ʿEin el Fawwar can be compared in a shared regional map. The thematic map supplies no measured section of the target wall or lower culvert.
+- **R04:** Upper Bethoron is visible in regional context. Its symbol supplies no individual tomb plan, doorway bearing, drainage relationship or tomb construction date.
+- **R05:** Mons Gerizim appears on the Byzantine church layer. This supplies no Area P locus plan, coin-deposit context or first-century use of a stair/cistern.
+- **R09:** the map's title and source-only church symbol make its temporal and evidential categories explicit. A plotted church symbol cannot by itself date an earlier installation beneath or beside it.
+
+At 1:400,000, 1 mm on the printed map represents 400 m. High pixel density improves label inspection; it does not turn regional point symbols into excavated feature footprints. No CRS/datum was validated and no geographic transformation was performed. Printed grid values were not converted to WGS84. Candidate rankings and deposit coordinates remain unchanged.
+
+This is one completed cartographic-reference intake with explicitly partial regional inspection. It is not a newly inspected original excavation target or a completed candidate-identification test.
+
+## Next discriminating work
+
+1. Obtain full-resolution **general North and South** sheets, preserving borders, grids and legends. The four preview files should not be used to settle fine place-name readings.
+2. Inspect the North sheet's Qumran/Buqeia/Jericho and Beth-Horon/Gerizim sectors, recording ancient versus modern labels and locating the corresponding gazetteer entries.
+3. Use gazetteer references to trace the underlying observations. TIR is a scholarly synthesis; replotting a proposed identification supplies no independent corroboration.
+4. If regional registration becomes useful, first verify grid conventions and datum with independently known controls, then evaluate withheld points and residual errors.
+5. Continue R01/R02's original waterworks/cave reports; these map sheets do not resolve their local architectural questions.
+
+## Progress record
+
+2026-10-01: identified five delivered sheets, recorded dimensions/checksums and source credit, inspected the high-resolution church sheet's legend and selected regional labels, and narrowed the remaining acquisition request to readable general North/South details and gazetteer context. No new exact location match or period-use inference.

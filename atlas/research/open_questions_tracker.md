@@ -14,12 +14,14 @@ This is the active research tracker. The [historical question log](https://githu
 
 As of this baseline:
 
-- Tracked questions: 12; in progress: 6; queued: 6; resolved: 0; ruled out: 0.
+- Tracked questions: 12; in progress: 7; queued: 5; resolved: 0; ruled out: 0.
 - Confirmed individual deposit locations: 0.
-- Since this tracker began: 0 newly inspected primary-source targets; 0 completed decisive tests; 0 question closures. Earlier research is recorded in each question's baseline and linked notes.
+- Since this tracker began: 0 newly inspected primary-source targets; 1 inspected cartographic-reference target; 0 completed decisive tests; 0 question closures. Earlier research is recorded in each question's baseline and linked notes.
 - Next milestone: complete a page-cited test of one candidate's reading, geometry and construction phase, with the result recorded as supporting, conflicting or inconclusive.
 
 Count an original page/figure target once when its stated inspection is complete. Reprints and repeated searches do not add independent observations. A decisive test has an explicit hypothesis, inspected evidence and a recorded result; it may support or reject a candidate. An access failure belongs in the attempt history. Partial source coverage remains partial.
+
+Cartographic-reference intakes are counted separately from original excavation/text targets. Partial inspection coverage must be stated in the linked record.
 
 These measures track work completed. They do not estimate the probability of finding treasure. Do not assign a percentage complete to an unresolved historical question.
 
@@ -112,13 +114,13 @@ These are next actions, not completed inspections or a scheduled background job.
 
 ## R07 — Where were Koḥlit, Achor and Sekakah?
 
-- **Priority / status:** P3 / Queued.
-- **Baseline:** competing geography remains recorded. The late-antique Achor tradition and Iron Age geography have different dates. Modern Sekakah naming is dependent evidence.
-- **Next test:** split the three place-name tests; compare independent ancient attestations and installation inventories under explicit alternative locations.
+- **Priority / status:** P3 / In progress.
+- **Baseline:** TIR map files received from the Stephen S. Clark Library; the high-resolution Byzantine churches sheet's legend and selected regional labels were inspected. General North/South sheets are available at preview resolution. Competing geography remains recorded. The late-antique Achor tradition and Iron Age geography have different dates. Modern Sekakah naming is dependent evidence.
+- **Next test:** obtain readable general North/South sheets and corresponding gazetteer entries; distinguish ancient and modern labels. Split the three place-name tests; compare independent ancient attestations and installation inventories under explicit alternative locations.
 - **Answer criterion:** narrow or exclude a named alternative using evidence independent of the Scroll identification being tested.
-- **Access / dependencies:** exact gazetteer references and relevant period feature inventories remain incomplete.
-- **Progress:** 2026-10-01 — existing comparisons retained; next focused place-name pass queued.
-- **Evidence / historical questions:** [Current site assessment](https://github.com/quadrin/CopperScroll/blob/main/research/sites/site_identification_review.md); Q13, Q17, Q42.
+- **Access / dependencies:** readable general North/South detail, exact gazetteer references and relevant period feature inventories remain incomplete.
+- **Progress:** 2026-10-01 — five sheets identified; one high-resolution thematic reference inspected to stated coverage. The legend separates ancient/modern names, attested/inferred roads and source-only churches. Regional map access advanced; no place identification settled.
+- **Evidence / historical questions:** [Michigan map intake](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md); [Current site assessment](https://github.com/quadrin/CopperScroll/blob/main/research/sites/site_identification_review.md); Q13, Q17, Q42.
 
 ## R08 — How should directions and measurements be applied?
 
@@ -173,3 +175,5 @@ These are next actions, not completed inspections or a scheduled background job.
 ## Change history
 
 - **2026-10-01 — Tracker created:** organized the twelve current questions with stable identifiers, priorities, existing evidence, contradictions, next tests and closure criteria. Preserved the historical Q log. No new source inspection, candidate ranking or geographic coordinate changed in this update.
+
+- **2026-10-01 — Michigan TIR map intake:** five sheets identified; church sheet legend and selected regional labels inspected. R07 moved to In progress. Added one cartographic-reference intake; primary-source inspections, decisive tests and closures remain zero. Raw map images were not included in the research commit. No candidate ranking or coordinate changed.

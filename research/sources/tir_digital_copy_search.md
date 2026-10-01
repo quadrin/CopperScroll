@@ -250,3 +250,8 @@ Separate map holdings/digitization records remain unverified. Princeton and Stan
 3. Peter Pilhofer: whether the source image files used for figures 13–15 came from a larger North-sheet scan and whether an authorized full-sheet copy can be supplied.
 
 No inquiries or orders were sent.
+
+
+## Update — 1 October 2026: Michigan reproductions supplied
+
+The user supplied all five component images with the required credit, "University of Michigan Library (Stephen S. Clark Library)." North, South, Synagogues and Eretz Israel/Sinai are preview-resolution files; Churches in Byzantine Palestine is a high-resolution full-sheet JPEG. Header, legend and selected regional details of the latter were inspected. This supersedes the earlier acquisition status for those delivered images, while readable general North/South detail and gazetteer coverage remain outstanding. See the [intake record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md) for dimensions, hashes, exact coverage and limitations. No geographic registration or candidate identity was established.

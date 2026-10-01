@@ -39,6 +39,8 @@ Candidate coordinates and uncertainties are in [`tables/`](../tables/); detailed
 
 ## Sources and research record
 
+- [Michigan TIR map intake](sources/tir_umich_map_intake_2026-10-01.md): five supplied component images; four previews and a high-resolution Byzantine churches sheet. Records source credit, checksums, inspected legend/regions and remaining general-sheet/gazetteer needs.
+
 - [Historical geography, Roman/Byzantine books and Siloam plans](sources/roman_byzantine_books_siloam_2026-09-30.md): targeted book readings, directly inspected Bliss–Dickie plans, the undated southern grooved tank, and later excavation phase controls. Confidence and coordinates unchanged.
 
 - [Three Kotar books: cave, Kidron and landscape leads](sources/kotar_books_intake_2026-09-30.md): page-cited intake of *Perach bar ba-midbar*, *Israel Guide* vol. 13, and *Dead Sea and Judean Desert 1900–1967*. Includes the modern Sekakah naming dependency, alternative canyon boundaries, dated cave leads, and a rejected shoreline model.
