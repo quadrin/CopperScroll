@@ -136,3 +136,11 @@ The [ranked comparison](entry21_feature_comparison.md) now distinguishes Ilan–
 ## Tunnel photographs and upstream connection — 28 September 2026
 
 The [photograph audit](qumran_photo_correspondence.md) directly matches Reeder’s tunnel image to Magen–Peleg Figure 87. The captions differ on entrance/exit terminology. A reproducible two-anchor similarity supports a shared intake sector but remains too sensitive to equate Ilan point 3 with Reeder’s boulder. Candidate priorities and geographic confidence are unchanged. The next discriminating imagery must connect the boulder, pothole and wall, or show both internal tunnel openings in sequence.
+
+## Historical geography and Siloam plan follow-up — 30 September 2026
+
+The [book and excavation intake](https://github.com/quadrin/CopperScroll/blob/main/research/sources/roman_byzantine_books_siloam_2026-09-30.md) records targeted Avi-Yonah, Roman/Byzantine volumes I–II and Jerusalem readings, plus directly inspected Bliss–Dickie plans and the 2014 Silwan excavation report. Source coverage is partial; no site ratings or coordinates change.
+
+Entry 49 remains medium, conditional on the Siloam reading. Bliss–Dickie's small cement tank and grooved outlet channel belong to the southern drain-exit sector by gate d2, southwest of the Old Pool; they are spatially separate from the tunnel-mouth pool. The 1898 report withdraws the 1895 catch-pit interpretation and places the tank after drainage disuse, without a calendar date. The separate tower reservoir has later Second Temple phase evidence in the 2014 report; that dating does not establish the small tank's date. Retain the latter as an undated comparison feature, with no modern locus or registered footprint.
+
+The books add competing Achor geography, road-phase cautions, and later tomb/cistern comparisons. Guthe's original pool plate, the failed Kotar pages and a dated correspondence for the small tank remain open.

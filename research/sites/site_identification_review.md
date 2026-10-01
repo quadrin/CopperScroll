@@ -101,3 +101,11 @@ The [primary-source follow-up](christmas_hyrcania_primary_followup_2026-09-30.md
 The [latest results](cave_plan_followup_2026-09-30.md) add an explicit Hyrcania regional registration trial: station 44's predicted point and the guide's interpreted grid differ by about 244 m. Detailed pool/cistern positions are retained within Fig. 22; geographic fitting is unresolved. The northern pool's reported sides (15-19 m) fail a conditional 24-cubit side-length test at 0.445-0.525 m/cubit, while an offset interpretation remains open. Hyrcania remains possible, low.
 
 The Christmas crosswalk links five reused lab measurements to museum accessions and separates recalibration from new evidence. Original object-to-trench links remain missing. Salvadora's 2009 chapter locates the arrowhead crack and distinguishes reported layers, spoil and modern cairns. Christmas and Salvadora remain regional leads without assigned entries. Converted cave anchors do not identify deposits.
+
+## Historical geography and Siloam plan follow-up — 30 September 2026
+
+The [book and excavation intake](../sources/roman_byzantine_books_siloam_2026-09-30.md) records targeted Avi-Yonah, Roman/Byzantine volumes I–II and Jerusalem readings, plus directly inspected Bliss–Dickie plans and the 2014 Silwan excavation report. Source coverage is partial; no site ratings or coordinates change.
+
+Entry 49 remains medium, conditional on the Siloam reading. Bliss–Dickie's small cement tank and grooved outlet channel belong to the southern drain-exit sector by gate d2, southwest of the Old Pool; they are spatially separate from the tunnel-mouth pool. The 1898 report withdraws the 1895 catch-pit interpretation and places the tank after drainage disuse, without a calendar date. The separate tower reservoir has later Second Temple phase evidence in the 2014 report; that dating does not establish the small tank's date. Retain the latter as an undated comparison feature, with no modern locus or registered footprint.
+
+The books add competing Achor geography, road-phase cautions, and later tomb/cistern comparisons. Guthe's original pool plate, the failed Kotar pages and a dated correspondence for the small tank remain open.

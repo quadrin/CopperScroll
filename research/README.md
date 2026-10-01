@@ -36,6 +36,8 @@ Candidate coordinates and uncertainties are in [`tables/`](../tables/); detailed
 
 ## Sources and research record
 
+- [Historical geography, Roman/Byzantine books and Siloam plans](sources/roman_byzantine_books_siloam_2026-09-30.md): targeted book readings, directly inspected Bliss–Dickie plans, the undated southern grooved tank, and later excavation phase controls. Confidence and coordinates unchanged.
+
 - [Three Kotar books: cave, Kidron and landscape leads](sources/kotar_books_intake_2026-09-30.md): page-cited intake of *Perach bar ba-midbar*, *Israel Guide* vol. 13, and *Dead Sea and Judean Desert 1900–1967*. Includes the modern Sekakah naming dependency, alternative canyon boundaries, dated cave leads, and a rejected shoreline model.
 - [Source inventory](sources/sources.md): editions, archaeological reports, access status, page offsets, and text provenance.
 - [Source leads](sources/source_leads_2026-09-29.md) and [extraction comparison](sources/source_extractions_2026-09-29.md): what the later searches added and where their limits remain.

@@ -663,3 +663,15 @@ See [three investigations](../sites/cave_plan_followup_2026-09-30.md) and their 
 - F16.5 (context) **Salvadora's full 2009 chapter locates the arrowhead crack in Fig. 4 and separates excavation layers, outside spoil and modern approach cairns.** The crack's sealed deposition is not established; Bar Kokhba refuge dating is the authors' archaeological interpretation. Original Bar-Adon records were not directly inspected. No entry assigned.
 - F16.6 (coordinate interpretation) **Christmas's old/new grids convert to cave anchors 2.24 m apart.** Cave-level WGS84 points are now recorded for Christmas and provisionally for Salvadora. This does not establish source accuracy, particular openings or independent surveys. Individual feature coordinates remain unset.
 - F16.7 (archive/caption check) **Christmas Day 1962 photographs captioned at Ein Feshkha do not document Christmas Cave excavation.** The Allegro image archive is a source trail; no precise Christmas trench notebook or bag-to-locus join was recovered.
+
+## Historical geography, Roman/Byzantine books and Siloam — 30 September 2026
+
+See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-30.md); no confidence ratings or coordinates change.
+
+- F17.1 (geographical tradition): Avi-Yonah p. 119 separates Roman Jericho/Tulul Abu el-Alayiq from Tell es-Sultan and supplies Wadi en-Nu'eimeh as Achor in its aqueduct account. This records one competing tradition, not its resolution.
+- F17.2 (phase control): Avi-Yonah pp. 81–82 and archaeological volume II pp. 54–55, 57 require separate dating of routes, paving, initial aqueduct construction and repairs.
+- F17.3 (comparison features): volume II's Samaria E22 courtyard/cistern (p. 144, third century), Beth She'arim layouts (p. 147), and Ein Yabrud repeated burials (p. 384, fourth–fifth centuries) provide architectural comparisons without Beth Horon or Kidron feature identifications.
+- F17.4 (source access): Jerusalem pp. 161–163 and 321–322 distinguish source, pools, overflow possibilities and later rebuilding; the p. 331 Kidron section failed to render. This remains targeted coverage.
+- F17.5 (primary source / revision): directly inspected Bliss–Dickie Plate XI, Plate XVIII and General Plans I–II. The small cement tank with a grooved outlet channel (pp. 134–135) lies in the southern drain-exit sector by gate d2, southwest of the Old Pool. The 1898 account withdraws the 1895 catch-pit interpretation and places the tank after drainage disuse; no calendar date or registered modern footprint established.
+- F17.6 (feature separation): the 2014 Silwan report dates a separate gate-tower reservoir within the Second Temple sequence and records blocked channel L133 and stepped pool L124. It does not identify or date the small grooved tank. Retain the tank as an undated comparison; entry 49's reading, site and exact-feature limits remain.
+- F17.7 (access limit / dependence): Guthe's pool corners were checked through Bliss–Dickie's discussion, not the original Guthe plate. The repo's earlier Szanton 2023 plan review remains prior work; repeated synthesis is not a fresh excavation witness.
