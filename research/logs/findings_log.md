@@ -820,3 +820,16 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F33.5 (result): no entry assignment, candidate rating or atlas geometry change. Original bathhouse supply and excavation-phase records are the next discriminating sources.
 
 [Pages, plan provenance and retrieval targets](../sources/roman_byzantine_books_siloam_2026-09-30.md#late-antiquity-volume-a-urban-archaeology--30-september-2026-los-angeles).
+
+
+## Supplied book archives surveyed — 2026-10-01 (UTC)
+
+- F34.1 (inventory): nine ZIPs contain eight distinct books. All 174 JPEGs in archive 09 match archive 02 byte-for-byte. Duplicate packaging supplies no independent corroboration.
+- F34.2 (coverage): all eight books' front matter/contents surveyed; selected relevant pages read. New reading includes part B burial pp. 983–996 and pilgrimage pp. 1113–1118; roads pp. 148–150, 186–190; Ariel articles pp. 52–57 and 58–66 plus TIR review p. 203. Full-volume reading remains incomplete; extracted/contact-sheet pages are not counted as read.
+- F34.3 (burial controls): Avni p. 992 reports regional ossuary continuation into the second–fourth centuries. Ossuary presence alone supplies no Second Temple date; tomb and deposit phases require separate evidence.
+- F34.4 (route controls): Tepper–Tepper distinguish local steps to cisterns, caves and presses from proposed pilgrimage-route steps, acknowledge dating difficulties and identify unverified survey segments. Preserve observed form, proposed function and chronology separately.
+- F34.5 (Jericho and baths): Schwartz's Ariel essay supplies priestly/agricultural context and abbreviates the 1988 JQR paper. Dvorjetski separates imperial-visit traditions and later pilgrimage accounts from archaeological evidence. Neither establishes a Scroll feature.
+- F34.6 (retrieval): TIR review identifies an approximately 1,250-site gazetteer and five maps. Original gazetteer unread. New burial primary-report leads recorded with access status.
+- F34.7 (result): no entry assignment, candidate confidence or atlas geometry changes.
+
+[Archive inventory, page coverage and combined findings](../sources/uploaded_books_survey_2026-10-01.md).
