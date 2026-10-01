@@ -778,3 +778,12 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F29.3: no Scroll entry assignment, candidate coordinates or rating change.
 
 [Feature observations and plan/datum limits](../sources/kotar_books_intake_2026-09-30.md#clamer-excavation-follow-up--30-september-2026-los-angeles).
+
+
+## Pool 338 entry comparison — 2026-09-30 (Los Angeles)
+
+- F30.1: reviewed project translation and relevant editorial variants before testing the archaeological pool. Entry 49's bathhouse-basin variant gives a functional resemblance; its trough and named association remain unestablished.
+- F30.2: entries 3, 11, 30, 45, 47, 50, 55 and 58 retain unresolved feature, name or spatial constraints. A/B building count supplies no twin-pool evidence.
+- F30.3: Pool 338 remains an unassigned archaeological feature lead. No entry rating, candidate geometry or atlas placement changes.
+
+[Readings, constraints and next discriminating evidence](../sources/kotar_books_intake_2026-09-30.md#pool-338-against-entry-readings--30-september-2026-los-angeles).

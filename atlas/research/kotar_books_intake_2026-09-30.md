@@ -165,3 +165,33 @@ The full 1997 monograph remains unread. IFPO's catalogue confirms BAH 147 and it
 ### Repository interpretation and next retrieval
 
 Pool 338 is a specific feature lead requiring an entry-text match and final-report phase checks. The 1989 shoreline evidence qualifies the later institutional archive's harbour wording. Acquire the 1997 monograph and the referenced survey documentation before registering geometry. No candidate coordinates or rating change follows. Book/article images are excluded from the repository; source observation, functional interpretation and geographic registration remain separate.
+
+
+## Pool 338 against entry readings — 30 September 2026 (Los Angeles)
+
+### Text basis and scope
+
+Reviewed the repository's complete project translation (`text/translation_en.json`) and the relevant editorial records in `text/readings.json`, with `research/phases/phase1_summary.md`, `tables/feature_constraints.csv` and the existing place index. This compares recorded edition-based readings; it supplies no new manuscript reading. Pool observations remain those of Clamer 1989, pp. 217–225, especially Fig. 1 (p. 218) and Pool 338 (p. 221). The 1997 final report remains unread.
+
+### Closest comparison: entry 49, X 15–16
+
+Milik's bathhouse-basin reading offers a general functional resemblance to Pool 338. The recorded alternatives materially change the test: Puech reads an outlet of waters, Lefkovits a water-closet pool. Their named associations also differ: Siloam, Jehu and Rachel variants remain in the repository record. See Milik 1962 pp. 270–271; Puech 2006 p. 200 and 2015 pp. 91–93; Lefkovits 2000 pp. 352–354.
+
+The trough/gutter and the deposit beneath it provide the feature-level constraint. Clamer's described inlet and overflow channel do not establish that trough or an accessible space beneath it. A channel's presence alone cannot satisfy the requirement. None of the inspected evidence connects the entry's named association with Callirrhoe. The existing medium Siloam association remains in place; Pool 338 gains no entry assignment.
+
+### Other screened entries
+
+- **3, I 6–8:** requires a great cistern in a peristyle court, with a floor/opening relation. Courtyard architecture and a silted thermal pool give only broad resemblance; cistern function and the specified opening relationship remain unestablished. Milik places the court in the Temple area (DJD pp. 272–274); Puech's queried alternative is in the Valley of Achor (2006 p. 175).
+- **11, II 13–15:** requires a pool east of Koḥlit and a northern-corner deposit. A northern corner alone would not fix Koḥlit or its required eastward relationship.
+- **30, VII 8–10:** the cool-room reading competes with “vicinity”; it requires a cave beside the named house. No such cave, cool room or house-name link appears in the inspected report. Puech's conditional cool-room discussion: CSS pp. 71–72; 2015 pp. 36, 65.
+- **45, X 3–4:** the plastered-cistern/channel reading requires supply from the great wadi. The reported spring-fed pool does not establish that supply relationship. Milik's wheel-well alternative changes the installation type (Puech 2015 p. 87).
+- **47, X 8–11:** basin wording requires a disputed valley association and a black-stone entrance, with west-side/spring alternatives. None is established for Pool 338 (Puech 2015 p. 89; Milik Addenda p. 301).
+- **50, X 17–XI 1:** pool and court readings compete. Four corners are insufficient without the required restored landmark/association (Milik Addenda pp. 299–301; Lefkovits pp. 358–362).
+- **55, XI 12–15:** the reservoir-house reading requires a paired-reservoir setting and a particular accessible basin. Buildings A and B are two buildings, not evidence of two pools. Do not count them as a twin-pool match (Puech 2015 p. 103; Lefkovits pp. 392–398).
+- **58, XII 6–7:** a spring-mouth comparison requires Beth Sham's name association. The thermal spring inventory does not supply it (Puech 2015 p. 109).
+
+### Result and discriminating next evidence
+
+The repository's recorded readings supply no defensible Pool 338 entry identification. This is an insufficiency finding, not a claim that an eastern-shore location is impossible. Keep the archaeological pool as an unassigned source-plan feature lead. Reading confidence varies by entry; the pool's reported archaeological identity has direct source support; its Scroll association and geographic registration remain unresolved.
+
+For entry 49, inspect the 1997 pool sections and inlet/outlet details for a separately identified trough and its construction phase. A named-site link would still be necessary. For entry 55, require a second contemporaneous basin rather than treating building count as pool count. No candidate geometry, atlas placement or confidence rating changes.
