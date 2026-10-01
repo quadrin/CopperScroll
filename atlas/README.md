@@ -2,6 +2,10 @@
 
 The [GitHub Pages homepage](https://quadrin.github.io/CopperScroll/) opens this atlas directly. Browse all 61 scroll entries and their candidate places in the register, inspect sites on the map, or switch to the full scroll text from the top navigation. The selected entry has Sites, Text, and Evidence tabs. On narrow screens, the bottom navigation moves between the register, map or scroll, and entry details.
 
+## Textual scenes
+
+The central atlas surface includes a **Scene** tab beside Map, Terrain and Photos. Entries 11 and 25 have plan/cutaway models with a depth-trace animation, an exploratory metres-per-cubit control and explicit architecture/origin assumptions. Entry selection synchronizes the register and reading folio. Other entries offer links to these examples. The source is `app/atlas-scene.tsx`; scenes add no archaeological coordinates, dates or confidence changes. Direct links use `#entry-11/scene` and `#entry-25/scene`.
+
 ## Run locally
 
 Use Node.js 24 and pnpm 11.25.0 (the version pinned in `package.json`). From the repository root:

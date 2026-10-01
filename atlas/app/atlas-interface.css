@@ -249,6 +249,50 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .map-mode, .map-toolbar > .tool-button { flex: none; }
 }
 
+/* Textual scenes inhabit the existing central atlas surface. */
+.scene-view { position: absolute; inset: 0; z-index: 3; overflow-y: auto; padding: 84px 24px 28px; background: #f8f9f5; color: var(--foreground); scrollbar-width: thin; scrollbar-color: #bdcbbf transparent; }
+.scene-heading { max-width: 720px; margin: 0 auto 18px; }
+.scene-heading h2 { margin: 7px 0 9px; font: 28px/1.2 var(--serif); color: var(--ink); }
+.scene-heading p { font-size: 13px; line-height: 1.6; color: var(--muted-foreground); }
+.scene-workspace { max-width: 720px; margin: auto; }
+.scene-actions { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.scene-actions > div { display: flex; gap: 4px; }
+.scene-actions button, .scene-text button, .scene-examples button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; background: white; color: #385c4b; font-size: 13px; }
+.scene-actions button[aria-pressed=true] { color: white; background: #254a40; border-color: #254a40; }
+.scene-drawing { min-width: 0; border: 1px solid #d5ded3; border-radius: 8px; background: linear-gradient(140deg,#fdfcf7,#edf1e9); box-shadow: 0 2px 8px #142e240a; overflow: hidden; }
+.scene-drawing svg { width: 100%; display: block; }
+.scene-drawing text { fill: var(--foreground); font: 12px var(--sans); }
+.scene-hatch { fill: none; stroke: #c2b89f; stroke-width: .8; }
+.scene-wall { stroke: #b6ac93; stroke-width: 1; }
+.scene-pool { fill: #f4eee0; }
+.scene-cave { fill: #e9e3d5; }
+.scene-assumed { stroke: #8f9b8f; stroke-width: 1.5; stroke-dasharray: 4 5; }
+.scene-stated { fill: none; stroke: var(--copper); stroke-width: 2.5; stroke-linejoin: round; }
+.scene-deposit { fill: var(--copper); stroke: #fff8ec; stroke-width: 2; }
+.scene-key { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 10px; color: var(--muted-foreground); font-size: 12px; }
+.scene-key span { display: inline-flex; align-items: center; gap: 7px; }
+.scene-key span::before { content: ''; width: 19px; border-top: 2px solid var(--copper); }
+.scene-key span:last-child::before { border-top: 1px dashed #8f9b8f; }
+.scene-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 20px; }
+.scene-controls label { display: block; font-size: 12px; color: var(--muted-foreground); }
+.scene-controls output { color: var(--copper); font-variant-numeric: tabular-nums; }
+.scene-controls input[type=range] { width: 100%; accent-color: var(--copper); margin-top: 10px; min-height: 24px; }
+.scene-controls select { display: block; width: 100%; min-height: 40px; padding: 8px; margin-top: 8px; border: 1px solid var(--input); border-radius: 6px; background: white; color: var(--foreground); font-size: 14px; }
+.scene-result { font-size: 13px; line-height: 1.6; margin: 14px 0 20px; color: #385c4b; }
+.scene-text { padding-top: 18px; border-top: 1px solid var(--border); }
+.scene-text p { margin: 9px 0 13px; font: 17px/1.65 var(--serif); color: #45564a; }
+.scene-assumptions { margin-top: 18px; color: var(--muted-foreground); font-size: 13px; line-height: 1.65; }
+.scene-assumptions summary { color: var(--foreground); padding: 7px 0; }
+.scene-assumptions p { margin: 8px 0; }
+.scene-empty { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+.scene-empty > .small-caps { align-self: flex-start; }
+.scene-empty > svg { color: #7c927f; margin-top: 35px; }
+.scene-empty h2 { font: 28px var(--serif); color: var(--ink); }
+.scene-empty > p { max-width: 400px; font: 17px/1.6 var(--serif); color: var(--muted-foreground); }
+.scene-examples { display: grid; gap: 9px; width: 100%; max-width: 360px; margin-top: 12px; }
+.scene-mode .map-canvas, .scene-mode .map-paper-overlay { visibility: hidden; }
+@media (max-width:600px) { .scene-view { padding: 78px 16px 24px; } .scene-heading h2 { font-size: 26px; } .scene-controls { grid-template-columns: 1fr; gap: 14px; } .scene-controls select { font-size: 16px; } }
+
 /* One clear route through the atlas: choose an entry, inspect its site, read its evidence. */
 .app-header { flex: none; min-height: 62px; display: flex; align-items: center; gap: 24px; padding: 8px 22px; background: #fff; border-bottom: 1px solid var(--border); }
 .app-brand { display: flex; align-items: center; gap: 11px; min-width: 245px; color: var(--ink); }

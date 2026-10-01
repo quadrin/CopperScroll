@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Camera, Compass, LocateFixed, Map, Minus, Mountain, Plus, RotateCcw } from "lucide-react";
+import { Box, Camera, Compass, LocateFixed, Map, Minus, Mountain, Plus, RotateCcw } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Slider } from "@/components/ui/slider";
 import type { Map as LibreMap, Marker, StyleSpecification, GeoJSONSource } from "maplibre-gl";
@@ -9,13 +9,14 @@ import type { Entry, Place } from "./atlas-types";
 import { candidateAreas, candidateBounds } from "./atlas-geography";
 import GroundView from "./atlas-ground";
 import ScrollView from "./atlas-scroll";
+import SceneView from "./atlas-scene";
 
-type Props = { entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string };
+type Props = { entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void };
 const INITIAL = { center: [35.367, 31.82] as [number,number], zoom: 10.3 };
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
 export default function AtlasMap(props:Props) {
-  const {entry,places,entries,focusId,focusNonce,visibleIds,mode,onMode,onPlace,onEntry,mobileView}=props;
-  const offMap=mode==="ground"||mode==="scroll";
+  const {entry,places,entries,focusId,focusNonce,visibleIds,mode,onMode,onPlace,onEntry,mobileView,onText}=props;
+  const offMap=mode==="ground"||mode==="scroll"||mode==="scene";
   const container=useRef<HTMLDivElement>(null);
   const mapRef=useRef<LibreMap|null>(null);
   const markers=useRef<{marker:Marker;button:HTMLButtonElement;place:Place}[]>([]);
@@ -167,11 +168,11 @@ export default function AtlasMap(props:Props) {
     mapRef.current?.fitBounds([[Math.min(...bounds.map(b=>b[0][0])),Math.min(...bounds.map(b=>b[0][1]))],[Math.max(...bounds.map(b=>b[1][0])),Math.max(...bounds.map(b=>b[1][1]))]],{padding:{top:110,bottom:150,left:50,right:60},maxZoom:16.7,pitch:mode==="3d"?55:0,duration:reduced.current?0:800});
   }
   const selectedPlace=places.find(p=>p.id===focusId)??null;
-  return <section className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""}`} aria-label={mode==="scroll"?"The text of the scroll":"Interactive candidate map"}>
+  return <section className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""}`} aria-label={mode==="scroll"?"The text of the scroll":"Interactive candidate map"}>
     <div ref={container} className="map-canvas" aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
     {mode!=="scroll"&&<div className="map-toolbar">
-      <Tabs value={mode} onValueChange={onMode} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger><TabsTrigger value="ground"><Camera size={15}/>Photos</TabsTrigger></TabsList></Tabs>
+      <Tabs value={mode} onValueChange={onMode} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger><TabsTrigger value="ground"><Camera size={15}/>Photos</TabsTrigger><TabsTrigger value="scene"><Box size={15}/>Scene</TabsTrigger></TabsList></Tabs>
       {!offMap&&<button className="tool-button" aria-label="Fit this entry’s candidates" title="Fit this entry’s candidates" onClick={fitEntry}><LocateFixed size={17}/></button>}
     </div>}
     <div className="map-caption">The Judean hills & the Jordan valley</div>
@@ -181,9 +182,10 @@ export default function AtlasMap(props:Props) {
     <div className="map-selection-note" aria-live="polite">{selectedPlace?<><strong>{selectedPlace.shortName}</strong><span>{selectedPlace.lat===null?"No coordinate assigned":`Shaded candidate area · ${selectedPlace.precision}`}</span><small>{selectedPlace.lat===null?"This location remains unplaced.":"Approximate extent, not a surveyed boundary."}</small></>:<span>No mapped candidate for this entry.</span>}</div>
     <div className="map-legend"><span><i className="legend-area"/>Selected area</span><span><i className="legend-area alternate"/>Other candidates</span></div>
     <div className="map-loaded-note">{coordinates}</div>
-    {!ready&&!error&&<div className="map-status" role="status">Unfolding the map…</div>}
-    {error&&<div className="map-status" role="status">{error}<button onClick={()=>setRetry(v=>v+1)}>Retry map</button></div>}
+    {!offMap&&!ready&&!error&&<div className="map-status" role="status">Unfolding the map…</div>}
+    {!offMap&&error&&<div className="map-status" role="status">{error}<button onClick={()=>setRetry(v=>v+1)}>Retry map</button></div>}
     {mode==="ground"&&<GroundView key={`${focusId}-${entry.id}`} place={selectedPlace} entry={entry} places={places} onPlace={onPlace}/>}
+    {mode==="scene"&&<SceneView key={entry.id} entry={entry} onEntry={onEntry} onText={onText}/>}
     {mode==="scroll"&&<ScrollView entry={entry} entries={entries} places={Object.fromEntries(places.map(p=>[p.id,p]))} onEntry={onEntry}/>}
   </section>;
 }
