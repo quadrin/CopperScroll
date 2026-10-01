@@ -72,3 +72,7 @@ Elitzur's method pages were read in session 2 (F2.21). This review checked his c
    - He identifies it with the "cemetery of the Anakim" of the *Vitae prophetarum*, beside Micah's tomb at Kh. el-Basal.
    - The date is Seleucid only, so the tombs existed by the scroll's period. Nothing is said of orientation or a channel. The candidate stays possible, low.
 4. **A specialist reading of IX 7** by the saw cut (requested 29 September 2026; see [plate_check.md](../text/plate_check.md)).
+
+## Road-source check — 30 September 2026
+
+Tepper–Tepper, *דרכים נושאות עם*, pp. 101–105, read as Kotar page images: stepped routes near Beit ʿUr el-Foqa and approaches through the Modi'in region supply route context. The authors distinguish proposed earlier pilgrimage routes from later Roman paving. The checked passages identify no burial chamber, channel adjoining a tomb, matched water source or sixteen-cubit feature. They do not discriminate between Upper and Lower Beth-Horon. Existing confidence ratings and village-anchor geometry remain unchanged. The printed Benjamin survey site 143 tomb plans remain the next discriminating source. [Source record](../sources/guthe_roads_followup_2026-09-30.md).

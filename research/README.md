@@ -43,3 +43,5 @@ Candidate coordinates and uncertainties are in [`tables/`](../tables/); detailed
 - [Source leads](sources/source_leads_2026-09-29.md) and [extraction comparison](sources/source_extractions_2026-09-29.md): what the later searches added and where their limits remain.
 - [TIR map search](sources/tir_digital_copy_search.md): the separate search for map copies and its [supporting files](sources/tir-assets/).
 - [Findings log](logs/findings_log.md), [open questions](logs/open_questions.md), and the [original project README](logs/original-readme.md). The original README is kept as a historical inventory; paths and project status there reflect the source repository at the time.
+
+- [Guthe outlet plan and Beth Horon/Jericho roads follow-up](sources/guthe_roads_followup_2026-09-30.md): original plate II accessed; route evidence and dating limits recorded.

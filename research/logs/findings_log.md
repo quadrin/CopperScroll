@@ -675,3 +675,12 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F17.5 (primary source / revision): directly inspected Bliss–Dickie Plate XI, Plate XVIII and General Plans I–II. The small cement tank with a grooved outlet channel (pp. 134–135) lies in the southern drain-exit sector by gate d2, southwest of the Old Pool. The 1898 account withdraws the 1895 catch-pit interpretation and places the tank after drainage disuse; no calendar date or registered modern footprint established.
 - F17.6 (feature separation): the 2014 Silwan report dates a separate gate-tower reservoir within the Second Temple sequence and records blocked channel L133 and stepped pool L124. It does not identify or date the small grooved tank. Retain the tank as an undated comparison; entry 49's reading, site and exact-feature limits remain.
 - F17.7 (access limit / dependence): Guthe's pool corners were checked through Bliss–Dickie's discussion, not the original Guthe plate. The repo's earlier Szanton 2023 plan review remains prior work; repeated synthesis is not a fresh excavation witness.
+
+## Guthe and roads follow-up — 2026-09-30
+
+- F18.1 (original source access): Guthe ZDPV 5 plate II directly inspected, pp. 65–68 read. Basin GHJK and its adjacent broad channel provide an outlet comparison. This closes F17.7's access gap; no entry 49 match or secure calendar date established.
+- F18.2 (dating limit): Weksler-Bdolah–Hagbi 2022 report L408/Fig. 7 records a southern outlet drainage channel with no finds dating the segment. W50/L124's late Second Temple dating belongs to a separate stepped pool. Neither identifies the small grooved tank of Q52.
+- F18.3 (route evidence): Tepper–Tepper pp. 101–105 record stepped approaches near Upper Beth Horon and the Modi'in region, with a proposed distinction between earlier pilgrimage paths and later Roman paving. No tomb/channel/sixteen-cubit correspondence for entry 40; confidence and geometry unchanged.
+- F18.4 (route evidence): Tepper–Tepper pp. 151–153, Figs. 55–56, supply Adummim and Tariq el-Hindi route leads. No Doq feature or entry 32 outlet-wall match. Targeted coverage, not a whole-volume scan.
+
+[Full source and access record](../sources/guthe_roads_followup_2026-09-30.md).

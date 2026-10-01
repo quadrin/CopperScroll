@@ -251,3 +251,12 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 - **Q52 (new): Can the small southern tank be joined to a dated modern excavation locus?** First obtain a demonstrable plan/locus correspondence; the 2014 tower reservoir is a different installation. Needs: original excavation records or a later report explicitly identifying the tank and its construction context. Do not transfer the tower reservoir's dating.
 - **Q35 pool record:** obtain Guthe's original pool plate and compare surveyed corners with Bliss–Dickie's reconstruction and the existing Szanton 2023 outlet-pool evidence. Keep the small Silwan pool and Birkat el-Hamra separate.
 - **Coverage:** revisit archaeological volume II pp. 56 and 145 and Jerusalem p. 331; check full edition metadata and remaining chapters before describing any book as comprehensively scanned.
+
+
+## Guthe and roads follow-up — 2026-09-30
+
+- Q35/Q52: Guthe plate II now directly inspected; its basin and broad channel supply a separate tunnel-outlet comparison. The 2022 Silwan report leaves L408 undated and does not identify the small grooved tank. Obtain an explicit installation/locus correspondence and its dating evidence.
+- Q45: Tepper–Tepper pp. 101–105 give Beth Horon approach-route context without a tomb/channel correspondence. Printed Benjamin survey site 143 tomb plans and orientation remain pending; do not select a village or feature from road proximity alone.
+- Jericho route follow-up: pp. 151–153 give Adummim/Tariq el-Hindi leads. Obtain original survey alignment and phase evidence before registering road geometry or associating a route with Doq or entry 32.
+
+[Source record](../sources/guthe_roads_followup_2026-09-30.md).
