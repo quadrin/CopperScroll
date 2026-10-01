@@ -313,3 +313,10 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 - Q13 / R07 update, 1 October 2026: qualify the earlier categorical F3.2 same-wadi conclusion. The supplied TIR label is by Noorath/Wadi Makukh; the valley limits and gazetteer rationale remain unchecked. Noorath's original Greek/Latin passage gives distance without bearing; Josephus's Neara water account gives no spring or conduit. TIR Noorath p. 197 is now citation-traced but unread. Both Scroll Achor alternatives remain; rankings and coordinates unchanged. [Source trace](../sources/tir_achor_noorath_aqueduct_trace_2026-10-01.md).
 
 - Q39 / R03 update, 1 October 2026: original SWP p. 228 drawing and pp. 205, 227–228 context now image-checked. The drawing is Jisr ed-Deir, not the separate opposite-monastery wall. The facing-pp. 222/225 illustrations supply regional/bridge context, without the target lower outlet or ancient surface. Manuscript identifiers and wall-specific phase remain missing. [Inspection record](../sources/tir_achor_noorath_aqueduct_trace_2026-10-01.md).
+
+
+## Focused retrieval and duplicated-progress correction — 1 October 2026
+
+- Q13 / R07: TIR p. 197 remains unread; obtain Noorath, Achor Vallis and their expanded source references. HathiTrust is search-only; Google Books supplied no readable entry; the Qedem 5 PDF is a sales description. Map access is complete.
+- Q39 / R03: De Marco 2026's inspected article has no target-wall section; close that paper as a retrieval lead to this scope. Obtain Patrich 1990 p. 208 n. 24 and original ESI 6 cave-survey pages to identify the cited Roman context. IAA's scan download returned 403; verify pagination. The PEF item IDs, lower outlet, surface and phase remain unresolved.
+- KPI correction: the previous SWP p. 228 identity count repeated the already inspected 30 September result. Its increment is 2/2, not 3/3; adding the new De Marco target/coverage check brings cumulative counts to 3 primary targets / 3 bounded checks, with 5 map intakes and no decisive candidate test or closure. [Full record](../sources/tir_gazetteer_choziba_followup_2026-10-01.md).

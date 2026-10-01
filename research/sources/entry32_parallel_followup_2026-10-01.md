@@ -2,7 +2,7 @@
 
 1 October 2026, UTC. Original project-authored assessment; public sources and local source files only.
 
-**Later 1 October illustration update:** original SWP pp. 205, 227–228 and the facing-pp. 222/225 plates are now visually checked. The p. 228 drawing depicts Jisr ed-Deir; it cannot provide the separate opposite-monastery wall's lower outlet or ground datum. [Exact coverage and result](tir_achor_noorath_aqueduct_trace_2026-10-01.md). Earlier access statements below record the preceding search.
+**Later 1 October illustration update:** original SWP pp. 205, 227–228 and the facing-pp. 222/225 plates were visually reinspected. The 30 September wall-correlation note had already identified the p. 228 bridge drawing; this is repeat verification. The p. 228 drawing depicts Jisr ed-Deir; it cannot provide the separate opposite-monastery wall's lower outlet or ground datum. [Exact coverage and result](tir_achor_noorath_aqueduct_trace_2026-10-01.md). Earlier access statements below record the preceding search.
 
 ## Result and scope
 
@@ -90,3 +90,8 @@ The independently useful addition is route discrimination, not a new wall identi
 ## Retrieval citation references
 
 Stable URLs and exact locators above are the durable citations. Session retrieval references for the accompanying response: Schneider article metadata `turn234view2`; Porath route passages `turn235view0` (electronic text `turn234view0`); aerial Site 16 prose `turn235view2` and table `turn238view0`; official PEF access `turn235view3` and collection description `turn238view3`. Schneider architectural findings derive from direct local PDF/image inspection, not the short metadata page. Access assessed on 1 October 2026.
+
+
+## Focused wall-section retrieval — later 1 October 2026
+
+De Marco's 2026 original article pp. 85–92, including Figs. 1–5, was inspected to the stated coverage. Its Mar Saba/St. Theodosius surveys supply no section of the opposite-Choziba wall. PADIS's Roman-period bibliography yields Patrich 1990 p. 208 n. 24 and ESI 6 p. 66, still unread; these citations require a feature/context correlation before dating this wall. IAA's advertised ESI 6 scan returned 403. Catalogue pagination differs from the citation and needs original verification. [Exact coverage, failed routes and KPI correction](tir_gazetteer_choziba_followup_2026-10-01.md). The wall/outlet/datum/phase model remains unresolved.

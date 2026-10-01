@@ -275,3 +275,8 @@ A readable 7425 × 10926 TIFF of the synagogue sheet is now supplied. Header, 1:
 ### Later 1 October update: complete five-sheet set supplied
 
 The Eretz Israel/Sinai TIFF opened at 7029 × 10909 pixels. Header, 1:1,000,000 legend/scale/credits and selected Judaea/Dead Sea region were inspected. All five map components are now readable; acquisition of their images is complete. Gazetteer text, cited original observations and detailed feature tests remain outstanding. [Current intake status](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md). Credit: University of Michigan Library (Stephen S. Clark Library).
+
+
+### Later 1 October update: gazetteer access checked separately
+
+Map acquisition remains complete. TIR Noorath p. 197 is citation-traced but unread; Achor Vallis's entry page remains unidentified. HathiTrust still advertises Limited (search only). The public Google Books search-within request was not retrievable here. The HUJI Qedem 5 PDF is a one-page sales description for Avi-Yonah's predecessor gazetteer, not its entries. No readable TIR entry was recovered; request/read those particular pages with the cited bibliography rather than reacquiring maps. [Focused access record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_gazetteer_choziba_followup_2026-10-01.md).

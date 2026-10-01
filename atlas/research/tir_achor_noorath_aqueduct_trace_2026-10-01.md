@@ -8,13 +8,13 @@ The original Noorath passage supplies a distance from Jericho, without a bearing
 
 The TIR gazetteer target for Noorath is now **p. 197**, traced through a published citation; that page itself remains unread. The earlier Phase 3 statement that the TIR label certainly denotes the same wadi as the lower Wadi Nuweiʿimeh label is too strong. Retain it as an unverified correlation until the gazetteer explains the placement.
 
-The original SWP volume is now available for illustration comparison. Its p. 228 drawing depicts **Jisr ed-Deir**, the bridge west of the monastery. The opposite-monastery wall is described separately. This figure cannot supply that wall's lower outlet or ground datum.
+The original SWP volume was reinspected for illustration comparison; the earlier 30 September wall-correlation note had already identified the p. 228 drawing. Its p. 228 drawing depicts **Jisr ed-Deir**, the bridge west of the monastery. The opposite-monastery wall is described separately. This figure cannot supply that wall's lower outlet or ground datum.
 
 No deposit, first-century feature identity, construction phase, geographic coordinate or candidate ranking is established by these checks.
 
 ## Starting conditions
 
-Read the active tracker, AGENTS, Phase 3 assessment, Dok/Achor feature tests and the Qumran and entry 32 follow-ups before searching. The existing evidence already includes the Achor passages, PEF regional observations and SWP text. Rechecking them does not add independent corroboration.
+Read the active tracker, AGENTS, Phase 3 assessment, Dok/Achor feature tests and the Qumran and entry 32 follow-ups before searching. The existing evidence already includes the Achor passages, PEF regional observations, SWP text and the p. 228 bridge-drawing identity. Rechecking them does not add independent corroboration.
 
 For entry 17, the cavity-pair test remains conditional on Puech 2006, pp. 186–187; trees and buildings remain alternative readings. Entry 1's exact feature and Achor's geographical identity remain unresolved. This session supplies no new metal transcription.
 
@@ -62,14 +62,17 @@ The original PDF downloaded successfully despite the web reader's redirect failu
 
 The p. 228 illustration does not locate the lower culvert's emergence at the target wall. Its bridge dimensions and channel section cannot be transferred to that wall. The report's tentative Roman/Byzantine attribution is not excavated wall-specific stratigraphy. No buried stone course, historical ground surface or dated repair joint is documented by the inspected drawing.
 
-The publication locators are now image-checked. The PEF manuscript aqueduct-plan/proof and Sheet 18 tracing identifiers remain missing. Published diagrams cannot be assigned those manuscript identifiers without catalogue evidence.
+These publication locators were image-checked in this scan. SWP p. 228's identity was already checked in the earlier [wall correlation](entry32_wadi_qelt_wall_correlation_2026-09-30.md); this is repeat verification. The PEF manuscript aqueduct-plan/proof and Sheet 18 tracing identifiers remain missing. Published diagrams cannot be assigned those manuscript identifiers without catalogue evidence.
 
 ## Recorded tests and project changes
 
 1. **Noorath as an exact directional anchor.** If its ancient entry fixed the adjacent Achor map label to a particular wadi, it would need a bearing or named topographical relation. The inspected Noorath passage gives neither. Result: **inconclusive for location; insufficient for that use as an anchor**. Achor's separate north-of-Jericho constraint is retained.
 2. **TIR and lower Nuweiʿimeh as a proven single-wadi identity.** The high-resolution labels and ancient wording do not supply the missing gazetteer reasoning or valley limits. Result: **inconclusive**. Qualify F3.2 and Phase 3's categorical identity claim; keep both the Nuweiʿimeh and Buqeia alternatives for the Scroll.
-3. **SWP p. 228 as a section of the target wall.** A qualifying drawing would show the wall's lower conduit, exterior ground and masonry in one context. The drawing instead corresponds to Jisr ed-Deir. Result: **conflicting with that drawing identification; wall geometry unresolved**.
+3. **SWP p. 228 as a section of the target wall — repeated check.** A qualifying drawing would show the wall's lower conduit, exterior ground and masonry in one context. The drawing instead corresponds to Jisr ed-Deir. Result: **conflicting with that drawing identification; wall geometry unresolved**.
 
-These are bounded source checks. None completes the tracker milestone requiring a candidate's reading, geometry and construction phase to be tested together. KPI increment: **3 newly completed primary-source targets** (Noorath page pair; Josephus 17.340; SWP p. 228 illustration identity with its contextual pages). Achor reinspection and the previously discussed regional diagram add no targets. **0 new decisive deposit-location tests; 0 question closures.** The five map intakes remain five.
+The first two are newly recorded bounded source checks; the third repeats the earlier wall-correlation result. None completes the tracker milestone requiring a candidate's reading, geometry and construction phase to be tested together. **Correction, later 1 October:** this pass's KPI increment is **2 newly completed primary-source targets** (Noorath page pair; Josephus 17.340), and **2 bounded checks**. The initial three/three count duplicated the already completed SWP drawing-identity inspection. SWP, Achor and regional-diagram reinspections add no targets. **0 new decisive deposit-location tests; 0 question closures.** The five map intakes remain five.
 
 Next: obtain **TIR p. 197 and the Achor Vallis entry with their cited sources**. For the cave-pair model, retain the original entrance plans as the next geometric test. For entry 32, prioritize the actual PEF item records or a wall-specific section; do not reuse the bridge drawing as a wall datum. Qumran's Schulz p. 53 and Strobel Fig. 1 p. 56 remain unread: focused title searches supplied bibliographic records, without an alternative readable original. Previously failed JSTOR routes were not retried.
+
+
+Later 1 October: [gazetteer and Choziba retrieval follow-up](tir_gazetteer_choziba_followup_2026-10-01.md) records the new survey-paper inspection, access limits and corrected cumulative totals.
