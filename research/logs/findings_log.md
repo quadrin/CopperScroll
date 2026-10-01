@@ -716,3 +716,10 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F22.3 (dependence/access): SWP p. 180 repeats Conder's account; Bonfils recto and calibrated scan repeat one photograph. Schneider 1931 metadata located, full article not accessed. Atlas geometry and confidence unchanged.
 
 [Access and image record](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
+
+## Entry 32 published survey alignment — 2026-09-30, Los Angeles
+
+- F23.1 (primary cartography): PEF Sheet XVIII directly inspected in the full-resolution scan. The labelled bridge crossing lies southwest of the monastery sector, supporting SWP's western placement. Conder's eastern wording remains a recorded conflict.
+- F23.2 (scale/access): 1:63,360 published alignment recovered; original manuscript field drawing remains unaccessed. Map distinguishes regional channels and tunnels without the wall's culvert footprint or phase. Confidence and atlas coordinates unchanged.
+
+[Map record and inspection bounds](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).

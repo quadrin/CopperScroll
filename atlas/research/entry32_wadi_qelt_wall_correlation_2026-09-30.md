@@ -47,3 +47,16 @@ Preserve the east/west discrepancy until a surveyed alignment resolves it. It co
 The [publisher record for Schneider's 1931 monastery study](https://roemischequartalschrift.digitheo.de/ojs/index.php/rq/article/view/89324) was located; its full article and illustrations were not obtained. The HUJI illustrative-material link returned a retrieval error. No claim about a wall plan in either source follows from this access check.
 
 Recover the original PEF aqueduct survey alignment or a detailed southern-bank view opposite the monastery before registering a culvert point. The four inspected photographs supply context only. Reading and site ratings, the provisional feature model and atlas geometry remain unchanged.
+
+
+## Published survey alignment recovered — 30 September 2026, Los Angeles
+
+Sheet XVIII of the *Palestine Exploration Fund Map* directly inspected at full scan resolution. Sources: [map record and full-resolution scan](https://commons.wikimedia.org/wiki/File:Survey_of_Western_Palestine_1880.18.jpg), [ANU-hosted sheet](https://users.cecs.anu.edu.au/~bdm/yabber/pef/sheet18.jpg). This is the published survey sheet, not an original manuscript field drawing. The inspected sheet prints drawing under Conder/Kitchener in May 1878, a 1-inch-to-1-mile scale (1:63,360), and 1879 in its lower margin; the Commons filename labels the series 1880. Preserve those distinct date labels.
+
+The north-up map locates Deir el-Kelt on the gorge's northern side and marks a bridge crossing at the bend southwest of its labelled ruin sector. That relative alignment supports SWP III p. 205's western bridge position. Conder 1874 p. 43's eastern placement remains a conflicting statement; the map does not establish why the wording differs. Identify the mapped crossing with Jisr ed-Deir provisionally through the locality, crossing and memoir description, rather than treating the word “Bridge” as a unique modern identifier.
+
+Aqueduct lines and tunnel labels also follow the southern slopes at a higher level. Their separation is consistent with keeping the higher supply route distinct from the Ein Qelt distribution system. The sheet does not mark an individual wall footprint, lower culvert mouth, outlet ground level or construction sequence. Its regional scale cannot test the entry's three-cubit depth.
+
+For repeatable image inspection, the full-resolution Commons JPEG is 7657 × 6672 pixels. The inspected close view used pixels x=2100–2670, y=2080–2450, with origin at the image's upper-left. These are image coordinates only; no geographic transformation or feature coordinates were derived.
+
+This closes access to the published regional alignment. The original manuscript alignment and a wall-specific measured plan remain unrecovered. Use the western/southwestern bridge sector as the working relative anchor, retain the earlier wording conflict, and keep the monastery-opposite lower-culvert model provisional. Confidence ratings and atlas geometry remain unchanged.
