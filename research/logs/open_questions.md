@@ -197,7 +197,7 @@ See [source_extractions_2026-09-29.md](../sources/source_extractions_2026-09-29.
 - Q24 update:
   - Garbrecht & Peleg (p. 164) say Dok "is apparently the only fort that was not later rebuilt by Herod". This is a historical inference, not stratigraphy.
   - Whether the summit was occupied in the 1st century CE needs Amit 1989 or another excavation report.
-- Q48 (new). **Where in the Gerizim mansion (Area P) was locus 5178, which gave three coins of Festus (58/59 CE)?** If it is building IV's courtyard cistern, entry 57 gains a period trace; if not, the coins stay strays. *Needs:* *JSP* 8 (*A Temple City*) locus list or plans.
+- Q48 (corrected 1 October 2026). **What installation and deposit contained Festus specimen K35264 at Area P, locus 5178, basket 51777?** The catalogue total of three is a type count, not an established common findspot. A cistern association alone would not demonstrate contemporary use; stratigraphy and per-specimen records are needed. *Needs:* JSP 8 / JSP 20 locus plans and sections, plus the per-coin appendix. [Methodology and access follow-up](../sites/gerizim_locus5178_followup_2026-10-01.md).
 - Q49 (new). **Hyrcania's pools and entry 29's "northern reservoir".**
   - Garbrecht & Peleg describe three rock-cut pools, about 18 × 15 × 5 m, on both sides of the path at the saddle.
   - Patrich 2002 describes "N pools" forming a moat on the western approach.
@@ -278,3 +278,14 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 
 - Q39 archive update (1 October 2026): Cobbing p. 10 confirms a regional aqueduct plan/proof pair and four Sheet 18 field tracings at PEF. Obtain exact item identifiers within PEF-M-WS and PEF-DA-WS / WS-CON/KIT/DRA, then inspect for the wall, lower outlet and ground datum. The separately inspected regional diagram supplies no wall section; PEF-DA-WS-572 monastery plans and PEF-M-WS-131 road tracing are distinct items. [Archive check](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
+
+## Parallel research update — 1 October 2026
+
+- Entry 25: obtain Bar-Adon's original Twin Cave pp. 15–17 and measured entrance/cavity relationship. Keep the historical proposal south of 11Q separate from IV/11 on Abu Saraj and from 3Q. Milik 1960 p. 140 supports a cave-level eastward aspect and a book in a jar; a duplicate scroll remains an interpretation. [Record](../sites/entry25_twin_cave_followup_2026-10-01.md).
+- Q39: Schneider's illustrations now checked; close that lead for a target-wall culvert section. Porath distinguishes Ein Qelt and the Fara/Fawwar–Cypros supplies, but a wall-specific construction tie remains missing. PEF manuscript item IDs are still required. [Record](../sources/entry32_parallel_followup_2026-10-01.md).
+- Q38: original de Vaux settlement reports now read to the stated coverage; they leave the intake–boulder/wall–fissure connection unresolved. Seek an original measured gorge drawing and phase relationship. [Record](../sites/qumran_parallel_followup_2026-10-01.md).
+- Q45: original site-143 p. 142/28* is a better-supported retrieval target, still unread. The 1997 survey and regional tomb drainage comparison cannot supply its entrance bearing. Specific preliminary-report targets are *HA* 85 p. 31 and *HA* 31/32 p. 13, with coverage unverified. [Record](../sources/entry40_parallel_followup_2026-10-01.md).
+
+- Q48: one published specimen context at P5178; remaining Festus findspots unverified. The final private-dwellings report (JSP 20) is a new retrieval target alongside JSP 8. No locus plan or deposit description recovered.
+- Q38: precise original illustration-index targets recovered: Schulz 1960 p. 53 and Strobel 1972 Fig. 1 p. 56. Actual drawing extent, scale and reconstruction conventions remain unchecked.
+- Q45, Horite alternative: French 1960 p. 221 n. 1 verifies 1.80 m funerary troughs, without correcting the uninspected German image. The road-relative western position cannot supply entrance azimuth. Original 1933 pp. 42–53 remains a source-specific plan target. [Follow-up](../sources/entry40_horite_followup_2026-10-01.md).

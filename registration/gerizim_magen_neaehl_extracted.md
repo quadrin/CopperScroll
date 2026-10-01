@@ -9,7 +9,7 @@ Second source: Y. Magen, G. Bijovsky & Y. Tzionit, *Mount Gerizim Excavations II
 
 - Magen states that "The city and temple stood abandoned through the Hasmonean and Roman periods" (p. 1742) (evidence).
 - He also writes: "There is a break in the numismatic record at Mount Gerizim from after Jannaeus until the beginning of the fourth century CE" (p. 1747) (evidence).
-- The one thin counter-signal is in Gerizim III: three coins of Festus (58/59 CE) from a single locus in Area P, which NEAEHL identifies as "The Mansion (Area P)" (p. 1745). See below. Magen treats all 1st-c. BCE–1st-c. CE coins as stray finds (evidence).
+- Correction, 1 October 2026: Gerizim III identifies specimen K35264 of Festus (58/59 CE) at Area P, L5178. Its type total of three does not establish three coins from that locus. NEAEHL identifies Area P as the mansion (p. 1745); the particular installation remains unknown. See the [catalogue-methodology follow-up](../research/sites/gerizim_locus5178_followup_2026-10-01.md).
 
 ## History (NEAEHL p. 1742, evidence)
 - Temple "first built in the mid-fifth century BCE". A city grew "at the end of the fourth century BCE". Under Antiochus III "the temple and its compound were rebuilt and the city expanded greatly".
@@ -58,11 +58,11 @@ Other notes:
 |---|---|---|
 | 411 | Augustus, 7 BCE | Area S, L7027 |
 | 412 | Ambibulus, 9/10 CE | Area S, surface |
-| 413 (×3) | Festus, 58/59 CE | **Area P, L5178** |
+| 413, specimen K35264 | Festus, 58/59 CE | **Area P, L5178, basket 51777**; type total 3, remaining findspots unverified |
 | 414 | Ascalon, late 1st c. CE | Area S, L443 |
 | 415 | Nero, 68 CE | Area S, L461 |
 
-- **Inference:** NEAEHL (p. 1745) confirms that Area P is the mansion, so the three Festus coins come from somewhere in the mansion complex. Neither source says which building, room or installation L5178 is, so they cannot be tied to building IV's courtyard cistern. Magen dismisses them as chance finds (Gerizim III p. 59). A single-locus group of three coins of the same issue is a weak sign of some 1st-c. CE presence in the mansion ruins. It is not evidence of the cistern being used.
+- **Revised inference, 1 October 2026:** the catalogue methodology (pp. 81–82) separates specimen context from the database type total. K35264 has the recorded Area P findspot; a three-coin cluster at L5178 is unproven. Neither the locus architecture nor its deposit is identified here. These coins cannot date use of building IV's courtyard cistern or a staircase. Magen treats the early Roman coins as chance finds (p. 59).
 - The Jannaeus coins run to 76 BCE (BK), slightly past the 110 BCE destruction. NEAEHL does not say where on the site they were found.
 
 ## Roman and Byzantine reuse of the summit (evidence)
@@ -79,7 +79,7 @@ Other notes:
 ## What the sources do NOT say about the question
 - No use, repair, blocking or deposit dated after 110 BCE for any of the three staircases.
 - No dimensions, date, fill or latest finds for the mansion cistern, and no description of any other cistern in Area P.
-- Which structure L5178 (the Festus coins) belongs to.
+- Which structure and deposit L5178 (Festus specimen K35264) belongs to.
 - No latest-find list per area or locus in the NEAEHL entry.
 - Whether the Late Roman fortress or 4th-c. restoration reused the eastern (23 m) staircase. The eastern gate is described only in its Hellenistic form.
 - The fuller locus-level answer would be in *Mount Gerizim Excavations* II, *A Temple City* (JSP 8, 2008), which was not read.

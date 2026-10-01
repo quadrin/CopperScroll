@@ -16,6 +16,7 @@ The [entry concordance](../tables/entry_concordance.csv) connects numbering acro
 
 ## Site and feature studies
 
+- Parallel research, 1 October 2026: [entry 25: Twin Cave versus IV/11](sites/entry25_twin_cave_followup_2026-10-01.md), [entry 32: Schneider and aqueduct routes](sources/entry32_parallel_followup_2026-10-01.md), [entries 20–23: original Qumran reports](sites/qumran_parallel_followup_2026-10-01.md), and [entry 40: survey and tomb drainage](sources/entry40_parallel_followup_2026-10-01.md). The [Horite tomb follow-up](sources/entry40_horite_followup_2026-10-01.md) checks the original 1960 dimensions and entrance inference. The [Gerizim locus 5178 check](sites/gerizim_locus5178_followup_2026-10-01.md) corrects the earlier three-coin-group inference. Exact access limits and the next feature-level tests are recorded in each note.
 - [Current site assessment](sites/site_identification_review.md) and [feature investigation](sites/feature_investigation.md): the main shortlist, confidence by evidence layer, and specific tests.
 - [Entry 17: Achor caves](sites/entry17_cave_pair_review.md), [entry 21: Qumran aqueduct](sites/entry21_feature_comparison.md), [entry 40: Beth-Horon](sites/entry40_bethhoron_review.md), and [entry 59: Bezek/Ibziq](sites/entry59_bezek_review.md).
 - Qumran dossier: [reference review](sites/qumran_reference_review.md), [1989 plan](sites/ilan_amit_1989_plan_review.md), [Stacey's aqueduct chronology](sites/qumran_stacey2007_review.md), [survey search](sites/qumran_survey_data_search.md), [photo correspondence](sites/qumran_photo_correspondence.md), [archival imagery](sites/qumran_archival_photo_video_review.md), and [georeferencing](sites/qumran_georeferencing_review.md).
@@ -45,3 +46,5 @@ Candidate coordinates and uncertainties are in [`tables/`](../tables/); detailed
 - [Findings log](logs/findings_log.md), [open questions](logs/open_questions.md), and the [original project README](logs/original-readme.md). The original README is kept as a historical inventory; paths and project status there reflect the source repository at the time.
 
 - [Guthe outlet plan and Beth Horon/Jericho roads follow-up](sources/guthe_roads_followup_2026-09-30.md): original plate II accessed; route evidence and dating limits recorded.
+
+- [Detailed research handoff, 1 October 2026](handoff_2026-10-01/README.md): findings guide, source priorities, access limits and instructions for a new session.

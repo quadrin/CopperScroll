@@ -549,7 +549,7 @@ See [source_extractions_2026-09-29.md](../sources/source_extractions_2026-09-29.
   - The mansion (Area P) has a courtyard cistern in building IV (p. 1745).
   - "The city and temple stood abandoned through the Hasmonean and Roman periods" (p. 1742). The coins break "from after Jannaeus until the beginning of the fourth century CE" (p. 1747).
   - No use or repair after 110 BCE is reported for any staircase or for the cistern.
-- F10.2 (evidence: Magen et al., JSP 19 (2021) pp. 58–59, 159) **The period coins are strays, except possibly one group.** Seven coins of 7 BCE–late 1st c. CE are judged to have "came there by chance" (p. 59). Three of them are coins of Festus (58/59 CE) from one locus, L5178, in Area P, the mansion (p. 159). The precinct "had stood almost in their original Hellenistic-period form, until the fourth century CE" (p. 58).
+- F10.2 (evidence: Magen et al., JSP 19 (2021) pp. 58–59, 81–82, 159; corrected 1 October 2026) **Early Roman coins do not demonstrate a locus-level group.** Magen treats seven early Roman coins as chance finds (p. 59). Catalogue no. 413 records Festus specimen K35264 at P5178, basket 51777; its total of three is the database type count, not proof that all three share this context. The locus and deposit remain unidentified. See F42.7 and the [Gerizim follow-up](../sites/gerizim_locus5178_followup_2026-10-01.md).
 - F10.3 (inference, medium) **Entry 57 stays best-supported, medium.** Steps and cisterns of the required types stood on the summit in the scroll's period, but as ruins of a city abandoned about 110 BCE. The check moves from "later only" to "earlier (surviving as ruins) and later; not in use in the period". The verdict rests on the name, as before.
 - F10.4 (evidence: Garbrecht & Peleg, *BA* 57 (1994) pp. 164–170) **The fortress water systems, with a comparison table (p. 169).**
   - Dok: a wadi diversion, a 500 m channel, nine cisterns of about 2,100 m³ (7–11 × 3–5 × 5–7 m). Dok "is apparently the only fort that was not later rebuilt by Herod" (p. 164).
@@ -892,3 +892,24 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F40.3 (limits): I.89 and I.91 equivalents remain unresolved. Chapter 4 still returns 403; original 1984 article remains unread. No new construction context, assignment, confidence or geometry change.
 
 [Access status and source chain](../sources/burial_primary_followup_2026-10-01.md#second-explicit-catalogue-chain-i90--cave-iii--513--1-october-2026-los-angeles).
+
+
+## Entry 25 cave access test — 2026-10-01, Los Angeles
+
+- F41.1 (reading status): existing Puech–Lefkovits comparison and edition-based atlas transcription reviewed; original entry-25 edition pages remain unavailable. Distinguish eastward cave aspect from a model placing both exterior openings on the east wall.
+- F41.2 (Maresha): 2015 p. 113 and Fig. 15, p. 114 visually rechecked. Tomb 515's western blocked entrance and connection through a niche to 514 supply no demonstrated paired east-facing exterior openings. No positive entry-25 identification.
+- F41.3 (spatial model): northern opening and period-specific entrance surface remain unlocated. Three cubits yields 1.20–1.80 m under exploratory 0.40–0.60 m units; downward measurement remains an explicit hypothesis.
+- F41.4 (follow-up): IV/11 publisher metadata verified, PDFs 403; earlier pillar observation requires original-plan and phase review. Kotar guest access prevented a fresh northern-section plan inspection. No candidate, confidence or geometry changes.
+
+## Parallel source checks — 1 October 2026
+
+- F42.1 (cave comparison): Taylor p. 17 / Fig. 1.4 and Eshel p. 22 locate Bar-Adon's Twin Cave proposal near and south of 11Q. Keep it separate from Abu Saraj IV/11 and manuscript cave 3Q. The 2022 parks guide conflates Twin Cave with 3Q. Bar-Adon, *ʿAtiqot* HS 9 (1989), pp. 15–17 is the precise original-report target; its entrance drawings remain unread. [Cave follow-up](../sites/entry25_twin_cave_followup_2026-10-01.md).
+- F42.2 (reading recheck): Milik 1960 p. 140, item 27, directly rechecked from the existing scan. His translation gives a cave with eastward aspect, northern entrance, three cubits, a jar containing a book, and 42 talents. The duplicate-Copper-Scroll interpretation in later narrative sources requires a separate argument. No new manuscript transcription is claimed.
+- F42.3 (wall access): Schneider 1931's original article and plates inspected. The church plan and burial-cave section do not supply the opposite-bank culvert or datum. Porath's route distinctions prevent assigning every south-bank channel to the Cypros supply. The PEF manuscript identifiers remain unrecovered. [Wall follow-up](../sources/entry32_parallel_followup_2026-10-01.md).
+- F42.4 (Qumran access): de Vaux 1953 Fig. 1 p. 311 and pool alterations p. 312 newly read; de Vaux 1955 and Reeder 2011 also checked. Original illustration indexes identify Schulz 1960 p. 53 and Strobel 1972 Fig. 1 p. 56 as the next water-system drawing targets; their drawings remain unread. The inspected reports provide settlement context without a demonstrated connection to the upstream wall/boulder and entry 22's eastern fissure. [Qumran follow-up](../sites/qumran_parallel_followup_2026-10-01.md).
+- F42.5 (Beth Horon): 1997 survey pp. 303–304 refer back to original site 143 without supplying its tomb plan. Hawari's citation improves the original 142/28* locator. Beit Iksa Tomb 101 Fig. 7 is a drainage comparison, with a loculus mouth distinct from an exterior chamber entrance. New preliminary-report targets are *HA* 85 (1984) p. 31 and 31/32 (1969) p. 13; original text access is unresolved. [Tomb follow-up](../sources/entry40_parallel_followup_2026-10-01.md).
+- F42.6 (assessment): the checks add source access, feature comparisons and precise retrieval targets. Existing candidate scores and map coordinates remain unchanged. No new outreach was sent.
+
+
+- F42.7 (Gerizim correction): catalogue methodology pp. 81–82 overturns the earlier three-coin-group inference at P5178. Retrieval key K35264 / basket 51777 is precise; mansion feature and stratigraphy remain unknown. JSP 20, the final private-dwellings report, is an additional architectural target. [Follow-up](../sites/gerizim_locus5178_followup_2026-10-01.md).
+- F42.8 (Horite alternative): Jeremias–Milik 1960 pp. 220–223 visually inspected; p. 221 n. 1 prints funerary trough length 1.80 m. Vertical roof access and cemetery position west of a road do not establish a west-facing doorway or water basin. German 1958 p. 86 remains image-unverified. [Follow-up](../sources/entry40_horite_followup_2026-10-01.md).

@@ -28,7 +28,7 @@ This run worked through the eight follow-up prompts drafted after the [source le
 - The city and temple "stood abandoned through the Hasmonean and Roman periods" (p. 1742). The coins break "from after Jannaeus until the beginning of the fourth century CE" (p. 1747).
 - **No use or repair** of any staircase or of the cistern is reported after about 110 BCE.
 - According to Magen 2021 (JSP 19 p. 58), the sacred precinct stood almost in its Hellenistic form until the 4th century CE. So steps and cisterns of the right *types* were present on the summit as ruins in the scroll's period (inference). They were not in use.
-- One thin signal: three coins of Festus (58/59 CE) from a single locus in Area P, the mansion (JSP 19 p. 159). Magen treats all seven 1st-c. BCE–1st-c. CE coins as chance finds (p. 59). New question Q48.
+- Corrected 1 October 2026: JSP 19 p. 159 places Festus specimen K35264 (58/59 CE) in Area P, L5178, basket 51777. The total of three is for the type in the database, not a demonstrated single-locus group (methodology pp. 81–82). Magen treats the early Roman coins as chance finds (p. 59). Q48 requires architectural and deposit records; see the [follow-up](../sites/gerizim_locus5178_followup_2026-10-01.md).
 
 **Hyrcania (16, 29, 35): possible, low, unchanged.** The link to these entries still rests on restorations and a disputed word.
 - *Cisterns and pools.* Garbrecht & Peleg count 16 cisterns (about 16,000 m³). They add three rock-cut pools of about 18 × 15 × 5 m (about 4,000 m³), filled after the cisterns (pp. 168–169).
