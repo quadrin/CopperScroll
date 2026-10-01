@@ -151,3 +151,8 @@ The books add competing Achor geography, road-phase cautions, and later tomb/cis
 Meshel–Amit 1989 Fig. 1 (p. 230), numbered descriptions (pp. 230–231), and point 25's section (Fig. 24, p. 241) were directly inspected. Point 25 has an earlier outlet bed and a later, lower channel; paired ceramic pipes appear after the tunnel exit. The authors assign the pipe aqueduct to the seventh–eighth centuries CE on architectural and historical grounds (p. 242). Its visible pipework cannot supply Second Temple dating for a proposed wall. Point 29's reused reservoir is also attributed to the early Arab period. Exact correlation with SWP's Jisr ed-Deir and monastery-opposite wall remains pending.
 
 Entry 32's three cubits is digging depth. No compass bearing or measured separation between outlet and second landmark is supplied. Reading, site confidence and atlas geometry remain unchanged. [Page and phase record](../sources/entry32_wadi_qelt_plan_review_2026-10-01.md).
+
+
+## Entry 32 wall correlation — 30 September 2026, Los Angeles
+
+Original SWP pp. 205–206 and 227–228 now visually checked. The lower culvert mouth at the monastery-opposite wall provides a provisional relative anchor. Its footprint and construction date remain unresolved. Milik 1960 p. 149 explicitly derives his wall proposal from SWP. Meshel–Amit point 25 belongs to the Cypros supply route beginning at Ein Fawwar; its correlation with this Ein Qelt wall is unproved. The three-cubit depth model requires an independently selected reading and an outlet-specific ground level. [Correlation review](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).

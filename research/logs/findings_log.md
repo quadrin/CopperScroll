@@ -700,3 +700,11 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F20.3 (text and position): three cubits is digging depth; entry 32 supplies no bearing or outlet-to-wall distance. SWP wall correlation remains pending. Confidence and geometry unchanged.
 
 [Source record](../sources/entry32_wadi_qelt_plan_review_2026-10-01.md).
+
+## Entry 32 wall correlation — 2026-09-30, Los Angeles
+
+- F21.1 (primary images): SWP wall description and bridge illustration checked. They describe separate structures; no wall footprint recovered.
+- F21.2 (dependence): Milik 1960 p. 149 directly checked; his retaining-wall proposal cites SWP. No independent wall dating supplied.
+- F21.3 (conditional model): lower culvert emergence at the monastery-opposite wall is a provisional relative anchor. Ein Fawwar/Cypros point 25 remains uncorrelated with the Ein Qelt wall; three-cubit depth, ground surface and stone-course relationship remain untested. Confidence and geometry unchanged.
+
+[Review](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).

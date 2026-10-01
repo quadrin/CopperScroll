@@ -24,3 +24,8 @@ Reading remains disputed; Wadi Qelt remains a medium, conditional site proposal;
 ## Next evidence needed
 
 Correlate SWP pp. 227–228 with the numbered original survey route, using identifiable terrain and surviving masonry. Obtain a detailed plan and construction context for the wall opposite Deir el-Kelt. Test the earlier outlet bed and the proposed second landmark together only after independently settling the reading. The 2002 English chapter, pp. 313–329, is a follow-up edition lead; its full text was not inspected here and must not count as another archaeological witness.
+
+
+## Route clarification — 30 September 2026, Los Angeles
+
+The Cypros supply discussed on p. 229 begins at Ein Fawwar, with an extension toward Ein Fara. Point 25's outlet section cannot be equated with the separate Ein Qelt distribution system in SWP through their common valley location. See the [wall correlation review](entry32_wadi_qelt_wall_correlation_2026-09-30.md) for a provisional culvert-mouth model and the remaining correspondence test.

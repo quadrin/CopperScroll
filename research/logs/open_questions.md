@@ -266,3 +266,6 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 
 - Q39 update (1 October 2026): original Meshel–Amit route plan and point 25's two-phase tunnel-outlet section now checked. Obtain a demonstrable correspondence with SWP's Jisr ed-Deir and wall opposite Deir el-Kelt, and a detailed earlier-phase wall/outlet plan. Separate early Arab pipework and point 29's reservoir from the earlier channel. Three cubits is digging depth; there is no stated compass bearing. [Review](../sources/entry32_wadi_qelt_plan_review_2026-10-01.md).
+
+
+- Q39 update (30 September 2026, Los Angeles): test the lower culvert mouth at the monastery-opposite wall as a conditional relative anchor. Obtain a wall-specific plan, ground level and construction sequence; preserve the Ein Qelt / Ein Fawwar source distinction. [Correlation](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
