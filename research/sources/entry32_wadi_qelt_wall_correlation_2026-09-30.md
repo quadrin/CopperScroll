@@ -60,3 +60,28 @@ Aqueduct lines and tunnel labels also follow the southern slopes at a higher lev
 For repeatable image inspection, the full-resolution Commons JPEG is 7657 × 6672 pixels. The inspected close view used pixels x=2100–2670, y=2080–2450, with origin at the image's upper-left. These are image coordinates only; no geographic transformation or feature coordinates were derived.
 
 This closes access to the published regional alignment. The original manuscript alignment and a wall-specific measured plan remain unrecovered. Use the western/southwestern bridge sector as the working relative anchor, retain the earlier wording conflict, and keep the monastery-opposite lower-culvert model provisional. Confidence ratings and atlas geometry remain unchanged.
+
+
+## Aqueduct diagram and PEF archive inventory — 1 October 2026
+
+### Directly inspected diagram
+
+The separately hosted [“Aqueducts near Jericho” diagram](https://commons.wikimedia.org/wiki/File:Aqueducts_around_Jericho_from_the_1871-77_Palestine_Exploration_Fund_Survey_of_Palestine.jpg) was inspected in its 3187 × 2277 pixel original. Its title, numbered routes, spring labels, channel/tunnel labels and bridge elevations are visible. The repository record credits the PEF survey and dates it 1877; the image itself does not establish an edition, page or plate number. Treat that attribution as catalogue metadata pending a match to the original publication.
+
+The lower portion distinguishes W. Farah's paired channels/pipes from routes around Ain el Kelt and Wady Kelt. Bridge A is drawn near the Ain el Kelt sector; Bridge B is explicitly labelled over W. Nueimeh near Ain ed Duk. Neither bridge elevation supplies a measured section of the monastery-opposite wall. Do not identify Bridge A with Jisr ed-Deir from the letter alone. No lower-culvert mouth, ground datum or wall construction phase is identifiable in the inspected diagram. It adds survey context within the existing PEF source lineage, without an independent feature identification.
+
+### Collection testimony and retrieval targets
+
+Felicity Cobbing, “Jericho in the Collections of the Palestine Exploration Fund,” in *Digging Up Jericho*, printed pp. 3, 10, 12–13, directly read in the [publisher-platform preview](https://api.pageplace.de/preview/DT0400.9781789693522_A45381761/preview-9781789693522_A45381761.pdf) (35 PDF pages; printed p. 10 is PDF index 23, zero-based). Page 10 was also visually inspected.
+
+- **p. 10:** the PEF holds four field tracings for Sheet 18, one for Sheet 15, two regional aqueduct plans with one a proof of the other, eight Conder letters, and field-report manuscripts by Conder and Tyrwhitt-Drake. This establishes actual archive holdings; it does not establish wall-scale detail or two independent surveys.
+- **p. 3:** relevant collection series are PEF-M-WS for manuscript maps and PEF-DA-WS / WS-CON/KIT/DRA for written records and plans/drawings. These are collection-level retrieval references, not verified call numbers for the two aqueduct plans.
+- **pp. 12–13:** the chapter summarizes the SWP aqueduct descriptions and their tentative dating. Those summaries depend on SWP; they add no independent chronology for the target wall.
+- **Figure 8, p. 12:** PEF-DA-WS-572.7.1, 572.3 and 572.2 identify monastery plans. Do not relabel them as the aqueduct-plan call numbers.
+- **Figure 9, p. 13:** PEF-M-WS-131 is a reproduced road-network tracing, not a measured lower-culvert section.
+
+### Result and remaining evidence
+
+No wall-specific measured plan was recovered. The concrete next retrieval target is the pair of regional aqueduct plans, the four Sheet 18 field tracings, and associated original field reports in the above PEF series. Obtain their item identifiers and inspect whether any sheet records the south-bank wall opposite Deir el-Kelt, its lower conduit outlet and a ground datum. If the regional holdings lack those details, a separate architectural survey or excavation record is required. The online diagram cannot substitute for that evidence.
+
+The exact outlet, buried stone course, three-cubit depth relationship and construction phase remain untested. Reading/site/feature/position ratings and atlas geometry remain unchanged.

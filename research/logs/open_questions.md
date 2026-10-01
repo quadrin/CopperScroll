@@ -275,3 +275,6 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 
 - Q39 alignment update (30 September 2026, Los Angeles): published PEF Sheet XVIII now directly inspected; use its west/southwest bridge sector as the working relative anchor. Preserve Conder's east wording as unresolved. Next obtain a wall-specific measured plan or identifiable southern-bank photograph showing the lower culvert, with ground level and phase. Original manuscript field plan remains pending. [Map review](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
+
+
+- Q39 archive update (1 October 2026): Cobbing p. 10 confirms a regional aqueduct plan/proof pair and four Sheet 18 field tracings at PEF. Obtain exact item identifiers within PEF-M-WS and PEF-DA-WS / WS-CON/KIT/DRA, then inspect for the wall, lower outlet and ground datum. The separately inspected regional diagram supplies no wall section; PEF-DA-WS-572 monastery plans and PEF-M-WS-131 road tracing are distinct items. [Archive check](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).

@@ -723,3 +723,12 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F23.2 (scale/access): 1:63,360 published alignment recovered; original manuscript field drawing remains unaccessed. Map distinguishes regional channels and tunnels without the wall's culvert footprint or phase. Confidence and atlas coordinates unchanged.
 
 [Map record and inspection bounds](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
+
+
+## Entry 32 aqueduct archive check — 2026-10-01
+
+- F24.1 (image observation): separate regional aqueduct diagram directly inspected. Bridge A and Bridge B elevations are not sections of the monastery-opposite wall; no culvert mouth or ground datum recovered. Publication page/plate provenance remains unverified.
+- F24.2 (archive testimony): Cobbing, printed p. 10, confirms two regional aqueduct plans (one a proof), four Sheet 18 tracings and original field reports in PEF collections. Collection series identified on p. 3; exact aqueduct-plan item identifiers remain pending. Monastery-plan references and the road tracing must not be assigned to the target wall.
+- F24.3 (result): measured wall plan and construction sequence remain unavailable. Existing PEF material is one source lineage; confidence and atlas geometry unchanged.
+
+[Inspection and retrieval targets](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
