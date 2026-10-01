@@ -833,3 +833,62 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F34.7 (result): no entry assignment, candidate confidence or atlas geometry changes.
 
 [Archive inventory, page coverage and combined findings](../sources/uploaded_books_survey_2026-10-01.md).
+
+
+## Burial primary-source follow-up — 2026-10-01, Los Angeles
+
+- F35.1 (coverage): prior pass completed Avni 2022 burial continuation pp. 997–1018 from supplied scans. Together with pp. 983–996, the chapter is complete; the volume is not.
+- F35.2 (access): IAA Reports 36 chapter downloads returned 403; chapter openings were accessible in the publisher-hosted JSTOR overview. The 1999 Migdal Ashqelon original remains bibliographically identified, independently unread.
+- F35.3 (earlier group): the 2008 chronology opening identifies reused Hellenistic caves I.89–I.92 with first–fourth-century reuse. Preserve this group separately from the later South Cemetery lamp chronology; individual construction phases remain unresolved.
+- F35.4 (observed control): Ben ‘Amar Street 2023 report text and Fig. 2 visually inspected. Observed chamber/vault relationships differ in evidential status from dashed reconstructed outlines; vault ceramics date later use and do not individually date initial walls.
+- F35.5 (result): no Scroll feature match, assignment, confidence or geometry change. Prioritize I.89–I.92 original contexts and the 1999 plan phase key.
+
+[Coverage, source URLs, observations and access limits](../sources/burial_primary_followup_2026-10-01.md).
+
+
+## Maresha northern tomb reuse — 2026-10-01 (UTC)
+
+- F36.1 (coverage): Zissu–Kloner 2015 publisher PDF retrieved; northern-necropolis discussion pp. 111–113 read and photographs Fig. 15, p. 114, visually inspected. Oren–Rappaport 1984 remains unread.
+- F36.2 (observed sequence): supplementary firsthand observations identify Roman entrance reduction, surviving closure, bone repositories and interconnected access in Tomb 515. Preserve original tomb cutting and reuse separately.
+- F36.3 (limits): lamps from looter debris do not securely date construction; broad cemetery chronology partly inherits the 1984 source. Mapping to 2008 caves I.89–I.92 remains unverified.
+- F36.4 (result): no entry assignment, confidence or geometry change. Obtain catalogue cross-reference and original phase contexts before testing a specific Scroll feature.
+
+[Source, exact pages, figure and dating limits](../sources/burial_primary_followup_2026-10-01.md#maresha-northern-necropolis-firsthand-supplementary-observations).
+
+
+## Beth Guvrin numbering cross-reference attempt — 2026-10-01, Los Angeles
+
+- F37.1 (partial cross-reference): indexed publisher text of the 2008 chronology chapter explicitly links I.92 to Oren–Rappaport 1984 Cave V. Full page inspection remains pending; retain index-excerpt access status.
+- F37.2 (provenance): indexed appendix assigns I.90–I.92 to “OR 1984”; this does not resolve the later 500-series numbering.
+- F37.3 (access and result): publisher downloads returned 403. Original 1984 plans remain unread; I.92/Cave V ↔ Tomb 515 remains unverified. No candidate, phase-date or geometry change.
+
+[Attempt, sources and unresolved mappings](../sources/burial_primary_followup_2026-10-01.md#catalogue-cross-reference-attempt--1-october-2026-los-angeles).
+
+
+## Kotar Maresha cross-reference and original-plan reprints — 2026-10-01, Los Angeles
+
+- F38.1 (coverage): 2023 Kloner–Graicer–Zissu Maresha volume found on Kotar; printed pp. 134–136, opening p. 137 and attribution p. 189 visually read after sign-in. Full volume unread.
+- F38.2 (mapping): p. 136 explicitly gives 515 = Oren–Rappaport N.V. Combined with the indexed 2008 I.92 = Cave V reference, this supports I.92 = 515; earlier unresolved status is superseded for this chain. I.89–I.91 equivalents remain open.
+- F38.3 (plans): Fig. 210, p. 136, is a reprint of the 1984 plan/sections, confirmed by p. 189. Fig. 211a–b supplies entrance/interior photographs. Preserve the 2015 upper-level omission warning.
+- F38.4 (dates): 2023 p. 137 gives first-century-BCE to second-century-CE reuse; differing assemblage dates need contextual review. Individual alteration dates remain unresolved. No assignment, confidence or geometry changes.
+
+[Exact pages, reference chain and illustration provenance](../sources/burial_primary_followup_2026-10-01.md#kotar-resolves-tomb-515-cross-reference--1-october-2026-los-angeles).
+
+
+## Maresha northern section completed — 2026-10-01 (UTC)
+
+- F39.1 (coverage): remaining descriptions pp. 137–138 read through Kotar accessible text; p. 138 heading, description, Fig. 214 and upper Fig. 215 visually inspected. Selected northern section complete; volume incomplete. Fig. 211 photographs are both on p. 136.
+- F39.2 (contexts): 513, 514 and 515 have specifically described closed bone repositories. Preserve their deposit contexts separately from disturbed 2015 finds and from construction dates.
+- F39.3 (chronology): 514's reported second–third-century-CE reuse differs from 515's first-century-BCE–second-century-CE range. 510 and 520 descriptions supply Hellenistic use, with no separate Roman reuse claim.
+- F39.4 (access/result): Kotar title-phrase searches found citation-bearing books, not standalone originals. I.89–I.91 crosswalk and individual alteration dates remain unresolved. No assignment, confidence or geometry changes.
+
+[Page-specific contexts and coverage](../sources/burial_primary_followup_2026-10-01.md#northern-cemetery-continuation-and-context-distinctions--1-october-2026-utc).
+
+
+## Maresha second numbering chain — 2026-10-01, Los Angeles
+
+- F40.1 (cross-reference): indexed IAA Chapter 4 explicitly identifies I.90 as Oren–Rappaport Cave III. The directly read Kotar p. 134 heading gives 513 = N.III; together these support I.90 = 513. Full 2008 page inspection remains pending.
+- F40.2 (sequence): the indexed passage distinguishes three burial stages at I.90, starting in the Hellenistic period. The remaining sequence and stage dates are incompletely accessible; do not fill truncated text from the 2023 summary.
+- F40.3 (limits): I.89 and I.91 equivalents remain unresolved. Chapter 4 still returns 403; original 1984 article remains unread. No new construction context, assignment, confidence or geometry change.
+
+[Access status and source chain](../sources/burial_primary_followup_2026-10-01.md#second-explicit-catalogue-chain-i90--cave-iii--513--1-october-2026-los-angeles).
