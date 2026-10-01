@@ -4,7 +4,7 @@
 
 ## Result and scope
 
-Bar-Adon's Hebrew pp. 15–17 remain unread. The English-summary target is now narrowed to printed p. 5*. Feig's IV/11 Hebrew report and English summary, and Sion's English survey, also remain unread after the retrieval attempts below. R02's measured entrance test is blocked on these original pages.
+Bar-Adon's Hebrew pp. 15–17 remain unread. The English-summary target is now narrowed to printed p. 5*. The user previously supplied Feig's IV/11 Hebrew report within the complete Hebrew issue of ʿAtiqot 41; earlier descriptive notes survive, but its PDF and original drawings are absent from the current handoff. The English issue was not supplied. R02's measured entrance test requires recovery of those originals. See the continuity correction below.
 
 A newly inspected excavation catalogue supplies retrieval identifiers and an explicit coordinate convention. It supports site-level record separation while leaving cavity connectivity, opening bearings, pillar geometry and ancient thresholds unresolved.
 
@@ -13,7 +13,7 @@ A newly inspected excavation catalogue supplies retrieval identifiers and an exp
 - [Bar-Adon Hebrew report, pp. 1–91](https://www.jstor.org/stable/23456199): the record did not expose the requested pages. The ordinary [PDF request](https://www.jstor.org/stable/pdf/23456199.pdf) returned 3,038 bytes of HTML. Target pp. 15–17, including captions and any associated plan.
 - [Bar-Adon English summary, pp. 1*–8*](https://www.jstor.org/stable/23456200): ordinary [PDF request](https://www.jstor.org/stable/pdf/23456200.pdf) likewise returned 3,038 bytes of HTML. Target p. 5*, established by the inspected catalogue below. Search snippets are partial discovery evidence; no complete original page was inspected.
 - [IAA all-issues list](https://publications.iaa.org.il/atiqot/all_issues.html): the displayed archive runs back to volume 41 (2002). It supplies no displayed entry for Hebrew Series 9. An old journal-site route returned 404.
-- [Feig Hebrew report](https://publications.iaa.org.il/atiqot/vol41/iss1/7/), DOI 10.70967/2948-040X.2545: catalogue inspected; [advertised download](https://publications.iaa.org.il/cgi/viewcontent.cgi?article=2545&context=atiqot) returned HTTP 403 through the web reader and one ordinary download attempt. Hebrew pp. 85–90 remain an inherited retrieval target.
+- [Feig Hebrew report](https://publications.iaa.org.il/atiqot/vol41/iss1/7/), DOI 10.70967/2948-040X.2545: catalogue inspected; [advertised download](https://publications.iaa.org.il/cgi/viewcontent.cgi?article=2545&context=atiqot) returned HTTP 403 through the web reader and one ordinary download attempt. Hebrew pp. 85–90 were included in the earlier user-supplied issue; recover that supplied file for the drawing-specific test. The 403 response does not supersede this upload history.
 - [Feig English summary](https://publications.iaa.org.il/atiqot/vol41/iss2/8/), DOI 10.70967/2948-040X.2554: [download](https://publications.iaa.org.il/cgi/viewcontent.cgi?article=2554&context=atiqot) returned HTTP 403 through both routes. Target printed p. 71.
 - [Sion English survey](https://publications.iaa.org.il/atiqot/vol41/iss2/7/), DOI 10.70967/2948-040X.2553: [download](https://publications.iaa.org.il/cgi/viewcontent.cgi?article=2553&context=atiqot) returned HTTP 403 through both routes. The IV/11 target remains p. 52.
 - Feig's and Sion's public author profiles list these titles; the inspected profiles supplied no readable cave-report PDF. No account login or outreach occurred.
@@ -45,3 +45,12 @@ Next retrieve Bar-Adon pp. 15–17 with drawings and p. 5* for the summary. Use 
 Added **one bounded source check**, concerning catalogue-coordinate precision. Added **zero primary excavation/text targets**, decisive candidate tests or question closures. Catalogue metadata, search snippets and failed downloads do not count as inspected original cave pages.
 
 Cumulative totals: **4 primary targets, 5 map intakes, 6 bounded checks, 0 decisive candidate tests, 0 closures**. R02 moves to Blocked; six questions remain In progress and five Queued. Candidate rankings, confidence assessments and atlas geometry remain unchanged.
+
+
+## Supplied ʿAtiqot 41 correction — later 1 October 2026
+
+The source register already records the user's complete Hebrew issue of *ʿAtiqot* 41 (2002): 25 PDF files, 295 pages, supplied in session 2 and re-supplied on 29 September. Its Feig IV/11 report is included. The register also preserves a descriptive observation about the cave's 2.5 m pillar; calling that report wholly unread or never supplied was incorrect. The [Region V extraction](https://github.com/quadrin/CopperScroll/blob/main/registration/atiqot41_region_v_extracted.md) documents prior original-page inspection and the reassembled archive checksum, `576e957af0c1cfeac7a9c2a2425b42ef10fd97c99a460b7d7bfb6f0527378f67`.
+
+The current handoff preserves notes and provenance, but not the original 25 PDFs. The supplied Hebrew issue must therefore be recovered or reattached for a fresh, page-and-figure-specific IV/11 entrance/phase test. Publisher HTTP 403 responses describe that retrieval route; they do not establish that the user never supplied the report. The English issue was not uploaded. Sion's supplied Hebrew Regions IV/VI report is an alternative to the unavailable English p. 52 and needs its own page locator. Bar-Adon's *ʿAtiqot*, Hebrew Series 9 (1989), is a separate volume and remains an unread original-plan target.
+
+This is a continuity/access correction, with no new original-page inspection, measured candidate test or closure. Cumulative KPI counts remain 4 primary targets / 5 map intakes / 6 bounded checks / 0 decisive candidate tests / 0 closures. R02 remains Blocked on the currently missing original drawings, with an explicit recovery route; rankings, confidence assessments and geometry are unchanged.

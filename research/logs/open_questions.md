@@ -332,3 +332,12 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 ## R02 original-plan dependency — 1 October 2026
 
 Bar-Adon Hebrew pp. 15–17 and English p. 5* remain unread after the documented retrieval pass. Feig's Hebrew pp. 85–90 / English p. 71 and Sion p. 52 likewise need a readable copy. Catalogue grids denote site centres and cannot measure the northern opening; the six recorded Twin Cave licences offer field-record retrieval leads with shared-licence cautions. R02 is Blocked; its identity/entrance/phase question remains open. One bounded coordinate check is complete, with no new primary cave-page inspection or question closure. [Coverage and access](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_plan_access_2026-10-01.md).
+
+
+## Supplied ʿAtiqot 41 correction — later 1 October 2026
+
+The source register already records the user's complete Hebrew issue of *ʿAtiqot* 41 (2002): 25 PDF files, 295 pages, supplied in session 2 and re-supplied on 29 September. Its Feig IV/11 report is included. The register also preserves a descriptive observation about the cave's 2.5 m pillar; calling that report wholly unread or never supplied was incorrect. The [Region V extraction](https://github.com/quadrin/CopperScroll/blob/main/registration/atiqot41_region_v_extracted.md) documents prior original-page inspection and the reassembled archive checksum, `576e957af0c1cfeac7a9c2a2425b42ef10fd97c99a460b7d7bfb6f0527378f67`.
+
+The current handoff preserves notes and provenance, but not the original 25 PDFs. The supplied Hebrew issue must therefore be recovered or reattached for a fresh, page-and-figure-specific IV/11 entrance/phase test. Publisher HTTP 403 responses describe that retrieval route; they do not establish that the user never supplied the report. The English issue was not uploaded. Sion's supplied Hebrew Regions IV/VI report is an alternative to the unavailable English p. 52 and needs its own page locator. Bar-Adon's *ʿAtiqot*, Hebrew Series 9 (1989), is a separate volume and remains an unread original-plan target.
+
+This is a continuity/access correction, with no new original-page inspection, measured candidate test or closure. Cumulative KPI counts remain 4 primary targets / 5 map intakes / 6 bounded checks / 0 decisive candidate tests / 0 closures. R02 remains Blocked on the currently missing original drawings, with an explicit recovery route; rankings, confidence assessments and geometry are unchanged.
