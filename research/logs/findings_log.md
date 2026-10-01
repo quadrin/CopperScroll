@@ -759,3 +759,13 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F27.4 (next sources): p. 99 refers to Gavish/Shein's fuller 2007 baths history and Dvorjetski's 1992 dissertation on ancient healing baths. Unread leads. No feature, geometry or rating change.
 
 [Chapter observations and limits](../sources/kotar_books_intake_2026-09-30.md#springs-and-baths-chapter--resumed-1-october-2026).
+
+
+## Ancient-baths retrieval and Callirrhoe reports — 2026-09-30 (Los Angeles)
+
+- F28.1 (access): dissertation catalogue identified; full text remains unread. Brill 2007 book contents inspected; chapter retrieval returned 403. Indexed p. 175 excerpt inspected only; its PDF currently returns 404.
+- F28.2 (source distinction): indexed p. 175 treats a surviving Callirrhoe rock-cut installation identification as tentative. No visual page, measured plan or phase verified.
+- F28.3 (primary institutional lead): DEI excavation archive describes probable Herodian villa, baths and associated harbour installations at Callirrhoe/Ain ez-Zara; points to Clamer 1997 and Strobel/Wimmer 2003. Installation-level dating and geometry require those reports.
+- F28.4 (scope): no Scroll match, feature registration or rating change.
+
+[Access record and source observations](../sources/kotar_books_intake_2026-09-30.md#ancient-baths-source-follow-up--30-september-2026-los-angeles).

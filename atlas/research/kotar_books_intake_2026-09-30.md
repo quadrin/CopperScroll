@@ -131,3 +131,22 @@ The earlier account gate is resolved. Direct visual inspection covered Dov Gavis
 Use the opening inventory to keep spring groups distinct during site-name testing, and retain the 1925 plan and dated photographs as modern landscape-source leads. Match any proposed Scroll entry against the repository's textual variants before choosing a feature. Recover original plans/images with provenance and reliable control points before registration; modern lake levels and outlet positions cannot substitute for the first-century landscape.
 
 Reading confidence is high for the stated page-level observations. Confidence in any Scroll site identification, installation phase or ancient position remains unassessed. No new entry match, candidate geometry or site rating is justified by this chapter. Its references and reproduced images are not independent corroboration of their underlying sources. No book images are added to the repository.
+
+
+## Ancient-baths source follow-up — 30 September 2026 (Los Angeles)
+
+### Access and inspected coverage
+
+The National Library catalogue identifies Dvorjetski's Hebrew dissertation, *חמי-מרפא בארץ-ישראל: בימי בית שני, המשנה והתלמוד*, record NNL_ALEPH990012486280205171: https://www.nli.org.il/he/dissertations/NNL_ALEPH990012486280205171/NLI . The catalogue search result was retrieved, but the record body could not be fetched. The dissertation remains unread; no accessible full text was obtained.
+
+Brill's publisher contents for Dvorjetski, *Leisure, Pleasure and Healing* (2007), identify the historical/archaeological chapter as pp. 125–223 and illustrations as pp. 525–565: https://brill.com/display/title/13681?language=en . Chapter and preliminary-material requests returned HTTP 403. This pass inspected publisher metadata and a search-indexed passage from printed p. 175, not the complete chapter or dissertation.
+
+### Observations relevant to future feature tests
+
+The indexed p. 175 passage discusses Callirrhoe's depiction on the Madaba mosaic: three water installations, with competing interpretations of their forms. It describes surviving remains as difficult to interpret and treats a possible equivalence with the rock-cut depression called al-Madās as tentative. Notes 222–225 point to Avi-Yonah (1954), Donner (1992), Weber (1997) and Clamer (1999). These are research leads, not three independently verified structures. Indexed PDF URL: https://lib.zu.edu.pk/ebookdata/Eastern%20Medicine/Leisure%2C%20Pleasure%20and%20Healing_%20Spa%20Culture%20and%20Medicine%20in%20Ancient%20Eastern%20Mediterranean%28vol%20116%29-by%20John%20J.%20Collins.pdf . Direct retrieval returned 404; visual page verification remains outstanding.
+
+The excavating institution's own archive supplies a separate archaeological lead: DEI's “Kallirrhoë (Ain ez-Zara) 1985–1989” section describes a villa maritima attributed tentatively to Herod, its bathing installations and associated shoreline harbour installations. It lists Christa Clamer's 1997 excavation report and A. Strobel/St. Wimmer, *Kallirrhoë (En ez-Zara)*, ADPV 32 (2003): https://www.deiahl.de/forschung-und-bildung/ausgrabungen/archiv/ . The institutional summary gives no individual installation plan, construction sequence or stratigraphic dating evidence. Its probable Herodian attribution must retain that qualification.
+
+### Actionable next test
+
+Recover the Clamer 1997 and Strobel/Wimmer 2003 reports and inspect bath/harbour plans, phases, dating assemblages and survey controls. For any proposed Scroll entry, first check the entry's readings and whether its feature description actually fits this eastern-shore setting. Madaba's later cartographic depiction and the excavated villa require separate chronological tests. No entry identification, candidate geometry or confidence-rating change follows from the material inspected here.
