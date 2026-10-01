@@ -1,5 +1,7 @@
 # TIR maps supplied by the Stephen S. Clark Library — 1 October 2026
 
+**Current availability:** all five map components are readable at full resolution. General North/South, Synagogues and Eretz Israel/Sinai have later TIFF deliveries; Churches has a high-resolution JPEG. Inspection is selective, and gazetteer/source references remain needed. The chronological sections below preserve earlier delivery limits.
+
 ## Source and attribution
 
 User-supplied reproductions of *Tabula Imperii Romani: Iudaea · Palaestina* map sheets. Required credit supplied with the files:
@@ -155,3 +157,36 @@ Cartographic-reference intakes since tracker creation: **4**. The interval still
 Next work: retrieve the gazetteer/source references behind the inspected period assignments before treating them as dated archaeological comparisons. General-sheet acquisition is complete; prioritize Achor/Noorath and the original feature reports already listed in the tracker. The regional Eretz Israel/Sinai preview can remain a lower-priority acquisition task.
 
 The public research update contains original notes and metadata; supplied TIFFs/crops are not included.
+
+## Full-resolution Eretz Israel/Sinai sheet received — 1 October 2026
+
+The later upload `39015106237970_eretz_sinai(1).tif` completes acquisition of readable reproductions for **all five map components**. It is a single-frame RGB TIFF, **7029 × 10909 pixels**, **400 dpi**, **230155840 bytes**. SHA-256: `4bfe934f0349191b31d605c7c5fe225ec0a3f2e88eb20e4bc429e23bc209e076`. The authorized workspace file opened successfully despite the initial inline-image error.
+
+### Inspected coverage
+
+Header, full-sheet overview, legend/scale/credits and the selected Judaea/Dead Sea region were visually inspected. No complete site transcription or companion gazetteer reading was performed.
+
+- Title: *Eretz Israel and Sinai during the Hellenistic, Roman and Byzantine periods*.
+- Scale: **1:1,000,000**, with kilometre and Roman-mile bars. One printed millimetre represents **1 km**.
+- Legend: settlement/ruin/fort/monastery/cult-site classes; attested/inferred/desert roads; seasonal/perennial water; spring/well and marsh classes; ancient and modern-name conventions. This overview's legend does not have the general North/South sheets' dedicated aqueduct classes. Omission on a thematic/overview sheet is not evidence that an installation did not exist.
+- The inspected Judaea window prints **Qumran**, **Hyrcana**, **Choziba**, **Noorath**, **Dok**, **Hiericho**, **Bethoron**, **HIEROSOLYMA AELIA CAPITOLINA**, **Engaddi**, **Masada** and **Marisa**, among other labels. These are map readings and regional source leads, not new exact feature identifications.
+- Printed credits: Israel Academy of Sciences and Humanities, **1993**; editors Yoram Tsafrir and Leah Di Segni; Israel Roll for roads; Survey of Israel production/printing.
+- Required credit: **University of Michigan Library (Stephen S. Clark Library)**.
+
+Inspection windows, original TIFF pixels with top-left origin: legend/scale/credits `(650,550)-(3200,3400)`; Judaea/Dead Sea `(4300,2700)-(6250,4500)`. These delimit visual coverage; they are not geographic footprints or registration controls.
+
+### Complete-set status and scale discipline
+
+Readable files now cover all five components:
+
+- General North and South: **1:250,000** each.
+- Churches and Synagogues: **1:400,000** main maps.
+- Eretz Israel/Sinai overview: **1:1,000,000**.
+
+Acquisition of readable map images is complete. Detailed inspection remains selective. Gazetteer explanations and the cited original observations remain outstanding. Earlier preview-only statements above preserve the delivery history.
+
+Cartographic-reference intakes since tracker creation: **5**. No original excavation/text target, decisive candidate test, entry-level question closure, candidate ranking or geographic coordinate changed through these intakes. No grid/datum validation or geographic registration was performed.
+
+Next research: use the North-sheet Achor Vallis/Noorath labels to select gazetteer entries and source references; pursue the original gorge, cave and wall plans already prioritized in R01–R03. Further requests for these five map images are unnecessary while the supplied originals remain available.
+
+This update includes original research notes and metadata. Supplied TIFFs/JPEGs and inspection crops are not included in the public commit.

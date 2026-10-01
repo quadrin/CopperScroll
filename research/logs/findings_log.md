@@ -933,3 +933,8 @@ The user supplied a 14630 × 11163 RGB TIFF, 490066390 bytes, 400 dpi. Header, 1
 ## Full-resolution TIR Synagogues received — 1 October 2026
 
 The 7425 × 10926 TIFF opened correctly; header, 1:400,000 legend/credits and selected Galilee/Judaea/Beth-Shean windows were inspected. The legend separates Second Temple, Mishnah/Talmud and Samaritan categories. Herodion carries the Second Temple symbol; Hiericho/Naʿaran carry the later symbol. These remain map classifications pending original report verification. Cartographic-reference intakes: 4; no newly inspected original excavation/text targets, decisive candidate tests or question closures since tracker creation. Rankings and coordinates unchanged. [Coverage](../sources/tir_umich_map_intake_2026-10-01.md#full-resolution-synagogue-sheet-received--1-october-2026). Credit: University of Michigan Library (Stephen S. Clark Library). No supplied map images/crops are published in this update.
+
+
+## Complete readable TIR map set — 1 October 2026
+
+The Eretz Israel/Sinai upload opened as a 7029 × 10909 RGB TIFF, 230155840 bytes, 400 dpi. Header, 1:1,000,000 legend/scale/credits and selected Judaea/Dead Sea window were inspected. All five components are now readable. Acquisition is complete; detailed coverage remains selective, and gazetteer/source-tracing remains needed. General sheets are 1:250,000 and church/synagogue sheets 1:400,000. Tracker cartographic-reference intakes: 5; no original excavation/text target, decisive candidate test or question closure in that interval. Rankings and coordinates unchanged. [Record](../sources/tir_umich_map_intake_2026-10-01.md). Credit: University of Michigan Library (Stephen S. Clark Library). Public update includes notes/metadata only.

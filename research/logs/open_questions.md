@@ -305,3 +305,6 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 
 - Q3 / R09 update, 1 October 2026: synagogue TIFF acquired; legend and selected regional symbols inspected. Its Second Temple and Mishnah/Talmud classifications must be traced to original reports before dating a candidate feature. North/South/Churches/Synagogues are readable; Eretz Israel/Sinai remains a preview. [Coverage](../sources/tir_umich_map_intake_2026-10-01.md#full-resolution-synagogue-sheet-received--1-october-2026).
+
+
+- Q3 / R07 update, 1 October 2026: Eretz Israel/Sinai TIFF opened; all five map-image acquisition subtasks are complete. The 1:1,000,000 overview's legend and selected Judaea sector were inspected. Remaining work is gazetteer/source context and exact feature tests, with separate map scales retained. [Current status](../sources/tir_umich_map_intake_2026-10-01.md).

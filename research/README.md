@@ -39,7 +39,7 @@ Candidate coordinates and uncertainties are in [`tables/`](../tables/); detailed
 
 ## Sources and research record
 
-- [Michigan TIR map intake](sources/tir_umich_map_intake_2026-10-01.md): five supplied component images plus full-resolution general North/South TIFFs. General-sheet acquisition is complete; Churches and Synagogues also have readable reproductions. Eretz Israel/Sinai remains a preview. Records selected candidate regions, the Achor Vallis label and remaining gazetteer/source tests. Records source credit, checksums, inspected legend/regions and remaining general-sheet/gazetteer needs.
+- [Michigan TIR map intake](sources/tir_umich_map_intake_2026-10-01.md): all five components are readable at full resolution. Records metadata, source credit, selective regional inspection, scale differences and the Achor Vallis lead. Gazetteer/source-tracing and individual feature tests remain open.
 
 - [Historical geography, Roman/Byzantine books and Siloam plans](sources/roman_byzantine_books_siloam_2026-09-30.md): targeted book readings, directly inspected Bliss–Dickie plans, the undated southern grooved tank, and later excavation phase controls. Confidence and coordinates unchanged.
 

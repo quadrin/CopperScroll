@@ -270,3 +270,8 @@ The user supplied a readable 14630 × 11163 TIFF of general North. General North
 ### Later 1 October update: full-resolution Synagogues supplied
 
 A readable 7425 × 10926 TIFF of the synagogue sheet is now supplied. Header, 1:400,000 legend and selected Galilee/Judaea/Beth-Shean windows were inspected. The legend distinguishes Second Temple, Mishnah/Talmud and Samaritan synagogue categories; original dating references remain needed. Readable copies now exist for North, South, Churches and Synagogues. Eretz Israel/Sinai remains a preview. [Exact intake coverage](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md#full-resolution-synagogue-sheet-received--1-october-2026). Credit: University of Michigan Library (Stephen S. Clark Library).
+
+
+### Later 1 October update: complete five-sheet set supplied
+
+The Eretz Israel/Sinai TIFF opened at 7029 × 10909 pixels. Header, 1:1,000,000 legend/scale/credits and selected Judaea/Dead Sea region were inspected. All five map components are now readable; acquisition of their images is complete. Gazetteer text, cited original observations and detailed feature tests remain outstanding. [Current intake status](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md). Credit: University of Michigan Library (Stephen S. Clark Library).

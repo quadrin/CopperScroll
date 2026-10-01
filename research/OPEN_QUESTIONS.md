@@ -16,7 +16,7 @@ As of this baseline:
 
 - Tracked questions: 12; in progress: 7; queued: 5; resolved: 0; ruled out: 0.
 - Confirmed individual deposit locations: 0.
-- Since this tracker began: 0 newly inspected primary-source targets; 4 inspected cartographic-reference targets; 0 completed decisive tests; 0 question closures. Earlier research is recorded in each question's baseline and linked notes.
+- Since this tracker began: 0 newly inspected primary-source targets; 5 inspected cartographic-reference targets; 0 completed decisive tests; 0 question closures. Earlier research is recorded in each question's baseline and linked notes.
 - Next milestone: complete a page-cited test of one candidate's reading, geometry and construction phase, with the result recorded as supporting, conflicting or inconclusive.
 
 Count an original page/figure target once when its stated inspection is complete. Reprints and repeated searches do not add independent observations. A decisive test has an explicit hypothesis, inspected evidence and a recorded result; it may support or reject a candidate. An access failure belongs in the attempt history. Partial source coverage remains partial.
@@ -115,7 +115,7 @@ These are next actions, not completed inspections or a scheduled background job.
 ## R07 — Where were Koḥlit, Achor and Sekakah?
 
 - **Priority / status:** P3 / In progress.
-- **Baseline:** TIR map files received from the Stephen S. Clark Library; the high-resolution Byzantine churches sheet's legend and selected regional labels were inspected. General North and South are now available as full-resolution TIFFs. Their headers, legends and selected regions have been inspected. Competing geography remains recorded. The late-antique Achor tradition and Iron Age geography have different dates. Modern Sekakah naming is dependent evidence.
+- **Baseline:** TIR map files received from the Stephen S. Clark Library; the high-resolution Byzantine churches sheet's legend and selected regional labels were inspected. All five TIR map components are now readable; headers, legends and selected regions have been inspected. Gazetteer/source references remain needed. Competing geography remains recorded. The late-antique Achor tradition and Iron Age geography have different dates. Modern Sekakah naming is dependent evidence.
 - **Next test:** read the corresponding gazetteer entries, starting with Achor Vallis and Noorath; trace the map's proposed valley identification to its cited ancient evidence. Distinguish ancient and modern labels. Split the three place-name tests; compare independent ancient attestations and installation inventories under explicit alternative locations.
 - **Answer criterion:** narrow or exclude a named alternative using evidence independent of the Scroll identification being tested.
 - **Access / dependencies:** general-sheet acquisition is complete; exact gazetteer references and relevant period feature inventories remain incomplete.
@@ -129,7 +129,7 @@ These are next actions, not completed inspections or a scheduled background job.
 - **Next test:** create entry-specific measurement models with reference surface, direction convention, unit range and phase. Test geometric alternatives in source space before geographic registration.
 - **Answer criterion:** each tested model has reproducible inputs, uncertainty and a supporting/conflicting result; unresolved readings retain alternative geometry.
 - **Access / dependencies:** original surfaces, dimension interpretations and independent registration controls remain missing for several candidates.
-- **Progress:** 2026-10-01 — earlier failed dimensional and registration tests retained. North and South TIR sheets are 1:250,000; the churches sheet is 1:400,000. Keep scales and source-space coordinates separate; neither has validated geographic registration.
+- **Progress:** 2026-10-01 — earlier failed dimensional and registration tests retained. North/South TIR sheets are 1:250,000; Churches/Synagogues are 1:400,000; the Eretz Israel/Sinai overview is 1:1,000,000. Keep scales and source-space coordinates separate; neither has validated geographic registration.
 - **Evidence / historical questions:** [Hyrcania registration](https://github.com/quadrin/CopperScroll/blob/main/research/sites/hyrcania_plan_registration_2026-09-30.md); [Plan follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sites/cave_plan_followup_2026-09-30.md); Q15, Q19, Q49.
 
 ## R09 — Which candidate layouts existed when the instructions were usable?
@@ -183,3 +183,5 @@ These are next actions, not completed inspections or a scheduled background job.
 - **2026-10-01 — Full-resolution North received:** inspected header, 1:250,000 legend/credits and selected candidate regions; general North/South acquisition is now complete. Achor Vallis near Noorath/Wadi Makukh becomes a specific gazetteer/source-tracing task. Cartographic-reference intakes: 3. No candidate test, question closure, ranking or geographic coordinate changed.
 
 - **2026-10-01 — Full-resolution Synagogues received:** inspected legend and selected Galilee/Judaea/Beth-Shean windows; period symbols provide report-tracing leads. Four of the five map components are now readable; Eretz Israel/Sinai remains a preview. Cartographic-reference intakes: 4. Candidate tests, closures, rankings and coordinates unchanged.
+
+- **2026-10-01 — Complete five-sheet set:** Eretz Israel/Sinai TIFF opened and its header, 1:1,000,000 legend and selected Judaea window inspected. Acquisition of readable map images is complete; gazetteer/source-tracing remains open. Cartographic-reference intakes: 5. No candidate test, question closure, ranking or coordinate changed.
