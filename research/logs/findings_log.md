@@ -809,3 +809,14 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F32.5 (follow-up): original soil-dating and Jordan-valley irrigation studies identified but unread. No entry assignment, candidate rating or atlas geometry change.
 
 [Edition, chapter findings, figure provenance and retrieval targets](../sources/roman_byzantine_books_siloam_2026-09-30.md#late-antiquity-volume-a-agriculture-and-installation-dating--30-september-2026-los-angeles).
+
+
+## Late-antiquity urban archaeology — 2026-09-30, Los Angeles
+
+- F33.1 (coverage): Patrich's chapter 12, pp. 441–527, selectively read at pp. 441–442, 457–465, 476–481, 485–502 and 527 (36 full-sized pages). Contact sheets of other pages served navigation only; complete chapter reading remains pending.
+- F33.2 (plan controls): Jerusalem p. 458 distinguishes excavated paving and conjectured street alignments; Caesarea and Beth She'an plans provide urban-scale feature relationships and named illustration sources. No deposit footprint registered.
+- F33.3 (water supply): p. 485 describes successive pipe-fed and water-wheel supply at a Caesarea private bath. P. 479 n. 94 identifies Patrich's original private-bathhouse supply study, independently unread.
+- F33.4 (phase separation): fourth–fifth-century Jerusalem residences and roof-fed cisterns, continuing earlier bath/latrine buildings, later wall construction and processional street development require separate dating. No first-century feature match established.
+- F33.5 (result): no entry assignment, candidate rating or atlas geometry change. Original bathhouse supply and excavation-phase records are the next discriminating sources.
+
+[Pages, plan provenance and retrieval targets](../sources/roman_byzantine_books_siloam_2026-09-30.md#late-antiquity-volume-a-urban-archaeology--30-september-2026-los-angeles).

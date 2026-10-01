@@ -219,3 +219,49 @@ The following publications are cited by the chapter and remain **independently u
 7. V. W. Avrutis, *Wine Presses at the Nesher Ramla Quarry: A Thousand Years of Wine Making*, Haifa 2015, figures 2.57, 2.59 and 2.60 (fig. 11 provenance, p. 644).
 
 **Assessment:** new overview source and original-publication leads for installation dating and function. No new Scroll feature identification, candidate ranking or atlas geometry change. Next targeted reading: Joseph Patrich's urban-archaeology chapter, starting printed p. 441; the contents also locate settlement administration (p. 429), rural settlement (p. 529) and documentary inscriptions (p. 357). The second volume's contents list Gideon Avni's burial chapter at p. 983.
+
+
+## Late-antiquity volume A: urban archaeology — 30 September 2026, Los Angeles
+
+**Source:** Joseph Patrich, chapter 12, “העיור בארץ־ישראל בשלהי העת העתיקה: ההיבט הארכיאולוגי,” in the 2022 volume A identified above, Kotar 111219827. Chapter spans printed pp. 441–527.
+
+**Coverage:** visually read full-sized supplied scans of printed pp. 441–442, 457–465, 476–481, 485–502 and 527, including displayed captions and footnotes: 36 pages. Scan index is printed page +1 at these positions. Contact sheets of the other chapter pages were used only to locate headings and illustrations; they do not constitute reading those pages. Coverage remains selective. Page 527 supplies the closing paragraph and figure-source list.
+
+### Published plans and their limits
+
+**Jerusalem, p. 458, fig. 4a:** Byzantine city plan credited to O. Gutfeld (2012). It plots streets, gates, walls, churches, pools and water channels against topography, with a scale and separate symbols for excavated paving, street alignments and conjectured alignments. It includes the Siloam sector, without independently identifying the entry-49 trough or the small grooved tank reviewed earlier.
+
+**Caesarea, p. 459, fig. 4b:** Byzantine city plan, drawn by Anna Yam, plots streets, aqueducts, a drainage channel, baths, harbour, governor's palace and later buildings. The legend distinguishes existing and inferred walls. It supplies urban context at a scale of hundreds of metres; a drawn street grid is insufficient for a deposit footprint. The figure-source list on p. 527 credits Patrich for the p. 459 illustration.
+
+**Beth She'an, pp. 461 and 463, figs. 4c–4d:** overall and city-centre plans by Benjamin Arubas, with labelled baths, streets, bridges, nymphaeum and monuments. Page 462 distinguishes fifth-century enclosure from later sixth-century wall restoration, citing dated inscriptions for 524/5, 525/6 and 539/40. **Project inference:** retain the initial wall and each repaired segment as separate phases; those inscriptions cannot date every building in the plan.
+
+These modern overview plans combine surveyed remains and interpretation. Figure access adds locators within this source lineage; independent corroboration requires the underlying excavation or survey record.
+
+### Baths, fountains and supply arrangements
+
+**Beth She'an, p. 465:** the eastern bath complex includes a swimming basin described as a *natatio*, approximately 0.8–1.0 m deep, in a courtyard enclosed by four porticoes. The western complex is described separately, with successive rooms and water basins. Street fountains and a monumental nymphaeum occur in the city-centre layout. The account distinguishes earthquake damage in 363, 659/60 and 749 and restoration of some earlier buildings. **Project inference:** basin function, depth and relation to a bath complex belong together; “pool” alone collapses distinct installations and phases.
+
+**Caesarea, pp. 477–480:** plans of the Byzantine governor's palace are explicitly labelled reconstructions of phase 3 (p. 477, figs. 11–12). Page 479 places a bathhouse in its northwestern sector, separate from the revenue-office sector. Footnote 94 provides a study specifically of water supplied to that bathhouse. Page 480's revenue-office illustration is a reconstruction of later phases without roofing. These drawings supply interpreted internal relationships rather than an independently surveyed first-century layout.
+
+**Private-house supply, p. 485:** a Caesarea mansion's private bath had three suites and a private latrine. Patrich describes an earlier pipe-fed supply drawn from the main water system beneath the street and later pumping by a *saqiya* water wheel. This is an overview description of a changing supply arrangement. The passage supplies no dated section of the inlet or wheel installation.
+
+**Jerusalem south of the Temple Mount, pp. 487–490:** the chapter dates the residential neighbourhood's beginning to the fourth–early fifth centuries. Page 488, fig. 19, is a numbered plan with north arrow and 40 m scale. Page 489 distinguishes continuing Roman buildings, a bathhouse and public latrine from the later residences and describes roof-collected water stored in cisterns. Page 490 discusses the street's continuation towards the Siloam pool and church. **Project inference:** proximity of a later cistern, house or drain to an earlier street requires installation-specific stratigraphy before an entry comparison.
+
+### Walls, gates and route phases
+
+**Pages 490–494:** Patrich reviews differing wall chronologies and the reuse of older lines. The southern Jerusalem wall photograph on p. 491 distinguishes the upper wall attributed to Eudocia from the underlying Second Temple tower corner. Page 492 notes alignment with earlier southern/western circuits and incorporation of formerly freestanding Roman monumental gates into later walls. The p. 493 Tiberias gate image is an artist's reconstruction, distinct from excavated fabric.
+
+**Page 495:** Jerusalem's topography produced two north–south colonnaded streets with different alignments. A directional description must name the particular street and segment. The chapter also describes continuity of some earlier urban frameworks during later construction.
+
+**Page 501:** Patrich relates development of the southern Jerusalem cardo to movement between the Holy Sepulchre and Nea church. **Project inference:** a Byzantine processional route cannot by itself establish the first-century width, grade or accessibility of the same corridor.
+
+### Retrieval targets
+
+Original studies cited here remain **independently unread in this pass**:
+
+1. J. Patrich, “Water Supply to Private Customers at Caesarea Maritima: The Case of the Bathhouse of the Praetorium of the Byzantine Governor,” in G. Wiplinger (ed.), *De aquaeductu atque aqua urbium Lyciae Pamphyliae Pisidiae: The Legacy of Sextus Julius Frontinus*, Leuven 2016, pp. 215–226 (p. 479, n. 94). Target the inlet, storage, distribution and dating evidence.
+2. J. Patrich, “The Architectural Evolution of the Late Antique Revenue Office at Caesarea Maritima,” in G. C. Bottini, L. D. Chrupcała and J. Patrich (eds.), *Knowledge and Wisdom: Archaeological and Historical Essays in Honour of Leah Di Segni*, Milan 2010, pp. 63–87 (p. 479, n. 93). Keep office and bathhouse sectors separate.
+3. Y. Tsafrir and G. Foerster, “Urbanism at Scythopolis: Bet Shean in the Fourth to Seventh Centuries,” *Dumbarton Oaks Papers* 51 (1997), pp. 85–146 (p. 460, n. 58). Recover bath and fountain plans with their phase descriptions.
+4. O. Gutfeld's 2012 publication behind fig. 4a and the original Jerusalem neighbourhood excavations cited on pp. 487–491. Full publication metadata and original plans require verification; an overview map does not replace their stratigraphic records.
+
+**Assessment:** new page access and targeted source leads for changing water supply, private/public bath distinctions and later streets and walls. This intake establishes no new entry-level feature, construction-phase match, candidate coordinate or confidence change. The private-bathhouse water-supply study is a specific follow-up target. Next book reading can cover the remaining urban chapter passages or Itamar Taxel's rural-settlement chapter starting p. 529.
