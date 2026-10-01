@@ -57,3 +57,29 @@ This is one completed cartographic-reference intake with explicitly partial regi
 ## Progress record
 
 2026-10-01: identified five delivered sheets, recorded dimensions/checksums and source credit, inspected the high-resolution church sheet's legend and selected regional labels, and narrowed the remaining acquisition request to readable general North/South details and gazetteer context. No new exact location match or period-use inference.
+
+## Full-resolution South sheet received — 1 October 2026
+
+The later upload `39015106237970_south(1).tif` supersedes the preview-only access limitation for **South**. It is a single-frame RGB TIFF, **15075 × 11146 pixels**, tagged at **400 dpi**, **504200490 bytes**. SHA-256: `cac6e77fb79bdb245945fd6e51c0de5ac7fa70db88424b99020fbd3d28515a30`. The workspace file opened successfully despite the initial inline-image error. Original pixel orientation is sideways; temporary rotated inspection views were used without changing the source file.
+
+### Inspected coverage
+
+Header, full-sheet overview, legend and selected northern sectors were visually inspected. The entire site inventory remains untranscribed.
+
+- Printed title: **SOUTH — IUDAEA · PALAESTINA**, subtitle **Eretz Israel during the Hellenistic, Roman and Byzantine periods**.
+- Printed scale: **1:250,000**, with kilometre and Roman-mile bars. One printed millimetre represents 250 m.
+- Regional coverage includes Daroma, the southern Dead Sea, Negev, Nabataea and the southward area toward Petra and Aila. The inspected northern Dead Sea sector includes **Engaddi**, **Nahal Hever**, **Nahal Zeʾelim**, **Masada / Marda**, **ʿEn Boqeq** and **Mezad Zohar**. These are readings of map labels, not newly established ancient identifications.
+- Qumran, Jericho, Wadi Qelt, Beth-Horon and Gerizim require the general North sheet for their regional detail. The South scan does not close those feature questions.
+- The legend distinguishes **attested / inferred aqueducts** and **attested / inferred roads**, alongside road-with-milestone, desert road and ascent classes. It includes pool/well/spring, bridge, fort, ruins and monastery symbols and separates ancient names from modern names of unidentified sites.
+- These classes describe the cartographic synthesis. A plotted symbol does not establish an installation's particular construction phase across the sheet's combined Hellenistic/Roman/Byzantine scope.
+
+Inspection windows in original, unrotated TIFF pixels: legend `(480,7450)-(3000,10450)`; northern western sector `(11600,800)-(14350,5550)`; northern Dead Sea sector `(11300,6300)-(14400,10700)`. Images were rotated counterclockwise for inspection. Window boundaries identify what was reviewed; they are not geographic footprints.
+
+### Access and tracker result
+
+- **Closed acquisition subtask:** a readable full-resolution general South sheet is available.
+- **Still needed:** full-resolution general North sheet and companion gazetteer entries/references. Synagogues and Eretz Israel/Sinai remain preview-resolution in the supplied set.
+- **Tracker:** two cartographic-reference intakes since creation (church and South sheets). No new original excavation/text target, decisive candidate test, question closure, coordinate or ranking follows from this inspection.
+- **R08:** use the South sheet's 1:250,000 scale separately from the churches sheet's 1:400,000 scale; geographic grid/datum and registration remain unvalidated.
+- **Credit:** University of Michigan Library (Stephen S. Clark Library).
+- The research commit contains metadata and project-authored notes only; the TIFF and inspection crops are not included.

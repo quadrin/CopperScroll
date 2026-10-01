@@ -255,3 +255,8 @@ No inquiries or orders were sent.
 ## Update — 1 October 2026: Michigan reproductions supplied
 
 The user supplied all five component images with the required credit, "University of Michigan Library (Stephen S. Clark Library)." North, South, Synagogues and Eretz Israel/Sinai are preview-resolution files; Churches in Byzantine Palestine is a high-resolution full-sheet JPEG. Header, legend and selected regional details of the latter were inspected. This supersedes the earlier acquisition status for those delivered images, while readable general North/South detail and gazetteer coverage remain outstanding. See the [intake record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md) for dimensions, hashes, exact coverage and limitations. No geographic registration or candidate identity was established.
+
+
+### Later 1 October update: full-resolution South supplied
+
+The user supplied a readable 15075 × 11146 RGB TIFF of the general South sheet. Its header, 1:250,000 legend and selected northern sectors were inspected. South is no longer preview-only; general North remains preview-only in this conversation. The South map's combined period coverage and symbol classes leave feature construction dates unresolved. See the [updated intake record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md#full-resolution-south-sheet-received--1-october-2026). Required credit: University of Michigan Library (Stephen S. Clark Library).

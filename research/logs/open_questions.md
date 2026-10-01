@@ -296,3 +296,6 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 ## Michigan TIR map intake — 1 October 2026
 
 - Q3 / R07: five TIR component images are supplied. North, South, Synagogues and Eretz Israel/Sinai have preview resolution; the Byzantine churches sheet is high resolution, with its legend and selected regional labels inspected. Obtain readable general North/South sheets and corresponding gazetteer entries before settling fine names or geographic registration. The thematic sheet leaves first-century feature identities unresolved. [Intake record](../sources/tir_umich_map_intake_2026-10-01.md). Required credit: University of Michigan Library (Stephen S. Clark Library).
+
+
+- Q3 / R07 update, 1 October 2026: full-resolution general South TIFF received and inspected to stated header/legend/regional coverage. Its northern Dead Sea sector includes Engaddi; Qumran/Jericho require North. The South acquisition subtask is closed. General North and gazetteer context remain outstanding. No entry-level question closed. [Record](../sources/tir_umich_map_intake_2026-10-01.md#full-resolution-south-sheet-received--1-october-2026).
