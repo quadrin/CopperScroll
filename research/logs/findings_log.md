@@ -732,3 +732,12 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F24.3 (result): measured wall plan and construction sequence remain unavailable. Existing PEF material is one source lineage; confidence and atlas geometry unchanged.
 
 [Inspection and retrieval targets](../sources/entry32_wadi_qelt_wall_correlation_2026-09-30.md).
+
+
+## Other books resumed — 2026-09-30, Los Angeles
+
+- F25.1 (new page access): Jerusalem volume p. 331 directly read. Byzantine reuse of Second Temple tombs and later stairway witnesses supply phase controls; no desert Kidron gorge-mouth feature identified.
+- F25.2 (new page access): archaeology volume II p. 56 directly inspected. Bethlehem upper-aqueduct siphon caption and lower-aqueduct tunnel descriptions recovered. No outlet plan or construction phase assigned to a Scroll entry.
+- F25.3 (access limit): burial p. 145 remains unread after an account/subscription gate. Ratings and atlas geometry unchanged.
+
+[Pages and bibliography](../sources/roman_byzantine_books_siloam_2026-09-30.md).

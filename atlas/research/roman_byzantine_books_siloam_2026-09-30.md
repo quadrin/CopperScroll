@@ -95,3 +95,32 @@ Shlomit Weksler-Bdolah and Nahshon Szanton, “Jerusalem, Silwan,” Hadashot Ar
 3. If pursuing the small southern tank, first establish a modern excavation-locus correspondence and a dated construction context. Its sector position is insufficient for a deposit coordinate.
 4. Revisit failed Kotar pages and obtain complete chapter/edition metadata before claiming comprehensive book coverage.
 5. Use the Achor, road-phase, Beth Horon and burial observations as controlled comparisons without changing existing candidate rankings.
+
+
+## Resumed book reading — 30 September 2026, Los Angeles
+
+This follow-up directly inspected rendered Hebrew pages in the Kotar reader. Coverage remains selective. No exact feature, deposit coordinate or confidence rating changes.
+
+### Jerusalem volume: Kidron section recovered
+
+Kotar 4620704, printed p. 331, now visually read through its footnotes. The section concerns the Mount of Olives and the Kidron valley close to Jerusalem; it does not describe the desert canyon mouth alternatives recorded for entry 35.
+
+- The account describes several Byzantine monasteries and churches in the valley and on the ridge. Some reused Second Temple tombs. Date the original burial structure and its later adaptation separately.
+- It describes rock-cut steps descending from the Temple Mount into Kidron and ascending towards the Mount of Olives. Footnote 177 points to fifth-century Melkites' pilgrimage evidence (Antoninus, itinerary p. 17), a Byzantine-period sites account and a Jewish guide recovered from the Cairo Geniza. Those later witnesses do not establish a first-century stairway phase.
+- The Eleona discussion cites Vincent's excavation publications in footnote 178 and explicitly leaves uncertainty about reconstruction details and which remains belong to Constantine versus later phases. No particular Scroll feature is identified.
+
+Printed p. 330's closing section and part of p. 332 were also visible. The latter continues Byzantine church architecture; it was not reviewed to its end. These pages supply chronological and source controls, without narrowing the desert Kidron candidate.
+
+### Archaeology volume II: waterworks p. 56 recovered
+
+Kotar 7904705, Yoram Tsafrir's archaeological/art volume, printed p. 56, now visually inspected from the upper-aqueduct photograph caption through the footnotes. The caption identifies a surviving hollow-stone siphon segment beneath modern construction in Bethlehem as part of Jerusalem's upper aqueduct.
+
+The text describes channels cut in rock or built in masonry, waterproof internal lining, stone-slab covers and vaulted covers on wider installations. It gives approximately 400 m for the lower-aqueduct tunnel near Bethlehem and approximately 310 m for the tunnel near Armon Ha-Natziv. These are overview measurements, without a surveyed entrance point or construction-phase section on this page. Do not transfer them to Wadi Qelt or treat their lengths as Scroll distances.
+
+Footnote 36 cites Hirschfeld's Emmaus waterworks study in *Qadmoniot* 9, pp. 85–88. Footnote 37 cites Levine, *Roman Caesarea* (Qedem 2), pp. 30–36, and Olami–Peleg, “The Water Supply System of Caesarea Maritima,” *IEJ* 27 (1977), pp. 127–137. These are bibliography leads, not independently accessed sources in this follow-up.
+
+### Remaining access gap
+
+Attempting printed burial p. 145 brought up an existing-account/subscription gate. The page's content remains unread. The reader showed guest status; access to selected pages above does not establish access to the full volume. No subscription purchase was made.
+
+Next book work: recover p. 145 after existing-account access resumes; then inspect the earlier Roman-period burial chapter and its primary excavation references. Preserve each tomb's original construction, later reuse and finds as separate evidence.
