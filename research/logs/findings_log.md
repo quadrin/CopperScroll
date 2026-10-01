@@ -798,3 +798,14 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F31.5 (primary leads): original Beth She'arim, Nahal Raqafot, Manahat, Birds Cave and Sebastya reports remain unread in this pass. No Scroll entry assignment, candidate rating or atlas geometry change.
 
 [Chapter observations, page mapping and primary references](../sources/roman_byzantine_books_siloam_2026-09-30.md#burial-chapter-completed-from-supplied-scans--1-october-2026).
+
+
+## Late-antiquity volume A: agriculture chapter — 2026-09-30, Los Angeles
+
+- F32.1 (new source access): 2022 *ארץ־ישראל בשלהי העת העתיקה*, part A, Kotar 111219827. Title/imprint, contents, p. 16 map and Gideon Avni's complete agriculture chapter, pp. 609–644, visually inspected from supplied scans. Remaining chapters unread.
+- F32.2 (dating controls): pp. 614–616 compare settlement-based terrace chronologies with OSL results from selected Judaean hills. Record sampled deposit, region and relationship to masonry; later terrace construction can coexist with earlier agricultural use.
+- F32.3 (regional sequences): pp. 617–622 distinguish Negev runoff fields, Petra spring-fed irrigation, Jordan-valley earlier systems and early Islamic qanats. A regional irrigation history supplies no date for a particular surviving outlet or pool.
+- F32.4 (functional controls): pp. 624–635 distinguish processing surfaces and vats; some installations could serve both grapes and olives. Basin shape alone establishes neither water storage nor Scroll correspondence.
+- F32.5 (follow-up): original soil-dating and Jordan-valley irrigation studies identified but unread. No entry assignment, candidate rating or atlas geometry change.
+
+[Edition, chapter findings, figure provenance and retrieval targets](../sources/roman_byzantine_books_siloam_2026-09-30.md#late-antiquity-volume-a-agriculture-and-installation-dating--30-september-2026-los-angeles).

@@ -170,3 +170,52 @@ The chapter supplies the following references; their original publications have 
 4. R. W. Hamilton, “The Domed Tomb at Sebastya,” *QDAP* 8 (1939), pp. 64–71; *Harvard Excavations at Samaria*, pp. 220–223 (p. 159, n. 137). Keep this mausoleum distinct from E220.
 
 **Assessment:** complete chapter access, corrected tomb identifier and more precise plan/phase references. This reading establishes no entry-level identification and changes no candidate rating or atlas geometry. Next book intake can proceed from the supplied late-antiquity volumes; original tomb reports remain targeted follow-up work.
+
+
+## Late-antiquity volume A: agriculture and installation dating — 30 September 2026, Los Angeles
+
+**Edition:** *ארץ־ישראל בשלהי העת העתיקה: מבואות ומחקרים*, part A, edited by Joseph Patrich, Ora Limor and Hillel Newman, Jerusalem: Yad Izhak Ben-Zvi, 2022, ISBN 978-965-217-444-4. [Kotar book 111219827](https://kotar.cet.ac.il/KotarApp/Viewer.aspx?nBookID=111219827).
+
+**Access and coverage:** supplied `04-04-late-antiquity-part-a.zip`, 656 viewer scans. Visually inspected title/imprint, contents (scans 0006–0008), provincial map on printed p. 16 (scan 0017), and Gideon Avni's chapter 15, “שדות, מתקנים וגידולים חקלאיים,” complete printed pp. 609–644 (scans 0610–0645), including captions and notes. This completes one chapter; the remainder of the volume remains unread. Printed page numbers run one below scan indices at the checked positions. The contents identify the overview's chronological scope as CE 324–640.
+
+### Dating agricultural landscapes
+
+**Pages 609–610:** Avni describes the uneven study of agricultural fields compared with settlement buildings. Many field dates rely on nearby dated settlements or finds recovered from the fields; the reliability of those associations remains disputed. **Project inference:** proximity to a Roman settlement cannot by itself date a particular terrace, cistern or channel.
+
+**Pages 614–616:** Jerusalem/Judaean hill terraces illustrate competing chronological interpretations. Gibson's earlier model placed the beginning of terracing in prehistory and a major expansion in the Byzantine period. More recent OSL work on sampled terrace soils yielded a different picture: alongside evidence beginning in the Hellenistic period, most dated construction in the sampled open landscapes belonged to the Mamluk and Ottoman periods. Avni explicitly cautions against using these results to establish that Roman/Byzantine agriculture was absent; other methods could have supported earlier cultivation. He contrasts these sampled hills with excavated Shephelah, Modi'in and Samaria contexts that support Roman/Byzantine agricultural development.
+
+**Project inference:** preserve the sampling area, deposit and dating method. Soil luminescence results and a masonry wall's construction phase need an explicit archaeological relationship. Later terrace accumulation can coexist with earlier farming in the district.
+
+### Desert and irrigated systems
+
+**Pages 617–619, Negev:** Avni reviews the older attribution of extensive field systems to first-century Nabataeans. He reports newer associations with Byzantine settlement and OSL evidence for approximately six centuries of activity spanning the fourth–tenth centuries. Some earlier Roman cultivation is discussed near springs, particularly in the Arava. Page 619, fig. 4, reproduces farm/field plans with labelled cisterns, walls, a threshing floor, winepress and watch-posts; its upper plans derive from M. Haiman, *BASOR* 297 (1995), p. 38, fig. 10. Those plans supply functional relationships in a published later-period setting.
+
+**Page 618, Petra hinterland:** spring-water collection and irrigation systems are discussed separately from Negev runoff fields. The chapter reports beginnings in the first centuries CE and, for studied plots, soil-dating evidence of continued use at least into the eighth–ninth centuries. These regional sequences must remain separate.
+
+**Pages 620–622, Jordan valley/Jericho/Arava:** the account describes irrigation supplied by springs and streams and attributes Y. Porath's Jordan-valley sequence to Hasmonean/Herodian origins, Byzantine use and expansion at the beginning of the early Islamic period, including qanat systems. Byzantine Jericho estates are discussed at regional scale. Early Islamic systems in the southern Arava are described from excavations at Ein Yahav, Yotvata and Ein Evrona, including channels supplied by an underground collection system. The chapter supplies no entry-specific outlet footprint or construction sequence.
+
+**Project inference:** classify runoff capture, spring-fed channels, storage cisterns and qanats separately. A dated regional irrigation tradition does not determine the date of every surviving installation within it. This chapter does not resolve the separate Callirrhoe Pool 338 lead or the Wadi Qelt entry-32 wall/outlet correspondence.
+
+### Processing basins and agricultural plans
+
+**Pages 624–631:** oil-press technologies overlap in time; Avni discusses the difficulty of distinguishing press forms and their continued use. Winepress layouts include treading floors, collecting vats, intermediate basins and sometimes screw-press sockets. Some facilities may have processed both grapes and olives at different seasons (p. 630). **Project inference:** basin shape alone provides weak functional discrimination. Record the connected surfaces, sockets, drains and excavated residues before treating a vat as water storage.
+
+**Page 633, fig. 10:** schematic distribution of complex winepress plans distinguishes service areas, treading/auxiliary floors and collecting/intermediate vats. Page 635, fig. 11, supplies a photograph and plan from Nesher–Ramla, attributed to V. W. Avrutis (2015). These are installation comparisons, with their publication provenance retained.
+
+**Pages 639–640:** agricultural land-unit estimates depend on which settlement and household a field belongs to. Figure 12 on p. 640, from Dar and Appelbaum (1986), illustrates traditional village plots in Samaria. Its topographical depiction must not give every visible parcel wall an ancient construction date.
+
+**Pages 641–644:** the summary discusses regional agricultural expansion and continued use into the early Islamic period; p. 644 lists figure sources. These broad economic conclusions supply no additional feature-level dating or Scroll identification.
+
+### Follow-up sources
+
+The following publications are cited by the chapter and remain **independently unread in this intake**:
+
+1. Y. Gadot et al., “OSL Dating of Pre-terraced and Terraced Landscape: Land Transformation in Jerusalem's Rural Hinterland,” vol. 21 (2018), pp. 575–583 (p. 615, n. 23). Verify full journal metadata and inspect sample contexts before transferring dates to nearby features.
+2. G. Avni, Y. Porath and G. Avni, “Ancient agriculture in the Negev: a reassessment” (translated title), *Cathedra* 133, pp. 13–44 (p. 610, n. 5; cited again on pp. 617–618). The footnote lists two authors as G. Avni; full author-name and year verification remains pending.
+3. Y. Porath, “חקלאות השלחין בבקעת הירדן,” doctoral dissertation, Hebrew University of Jerusalem, 1984 (p. 620, n. 38). Target the original installation plans, dated phases and distinctions between earlier surface supply and later qanats.
+4. G. Avni, “Early Islamic Farmsteads and the Spread of Qanats in Eurasia,” *Water History* 10 (2018), pp. 313–338 (p. 621, n. 38).
+5. G. Avni, “Terraced Fields, Irrigation Systems and Agricultural Production in Early Islamic Palestine and Jordan,” *Journal of Islamic Archaeology* 7 (2020), pp. 111–137 (p. 643, n. 127).
+6. M. Haiman, “Agriculture and nomad–state relations in the Negev desert in the Byzantine and early Islamic periods,” *BASOR* 297 (1995), p. 38, fig. 10 (fig. 4 provenance, p. 644).
+7. V. W. Avrutis, *Wine Presses at the Nesher Ramla Quarry: A Thousand Years of Wine Making*, Haifa 2015, figures 2.57, 2.59 and 2.60 (fig. 11 provenance, p. 644).
+
+**Assessment:** new overview source and original-publication leads for installation dating and function. No new Scroll feature identification, candidate ranking or atlas geometry change. Next targeted reading: Joseph Patrich's urban-archaeology chapter, starting printed p. 441; the contents also locate settlement administration (p. 429), rural settlement (p. 529) and documentary inscriptions (p. 357). The second volume's contents list Gideon Avni's burial chapter at p. 983.
