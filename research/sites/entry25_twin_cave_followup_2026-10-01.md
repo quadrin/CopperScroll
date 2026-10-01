@@ -48,3 +48,8 @@ No map point or confidence score is changed by this check.
 ## Original ESI 6 inspection — later 1 October 2026
 
 The supplied English ESI 6 report, printed pp. 66–70, now provides direct excavation-source coverage. Its Qumran account and Fig. 29 concern 3Q; the separate Twin Cave paragraph begins on p. 69 and concludes on p. 70. That season yielded no sherds or other indicative material. This negative result is limited to the reported 1986 work and cannot contradict all earlier occupation evidence. The report supplies no Twin Cave entrance plan, bearings or period threshold. Retain the paired-cavity lead and alternative cave-level eastward reading; obtain Bar-Adon pp. 15–17 before measuring entry 25 against Twin Cave. [Exact source coverage and bounded test](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi6_cave_survey_review_2026-10-01.md). No geometry or confidence score changes.
+
+
+## Plan retrieval and coordinate convention — later 1 October 2026
+
+The original Twin Cave plan remains unread after Bar-Adon's Hebrew and English PDF routes returned HTML. Feig/Sion's publisher downloads also returned 403. R02's measured entrance test is now Blocked. The inspected Greenberg–Keinan catalogue, printed p. 110 record 709, narrows the English-summary target to p. 5* and provides season/licence leads. Its coordinate convention uses site centres (pp. 16, 20); those references cannot locate an opening or period threshold. Keep Feig's Hebrew pp. 85–90 and English p. 71 separate. [Detailed coverage, licences and one bounded coordinate check](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_plan_access_2026-10-01.md). No candidate ranking, geometry or confidence score changes.

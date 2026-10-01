@@ -14,10 +14,10 @@ This is the active research tracker. The [historical question log](https://githu
 
 Current totals:
 
-- Tracked questions: 12; in progress: 7; queued: 5; resolved: 0; ruled out: 0.
+- Tracked questions: 12; in progress: 6; queued: 5; blocked: 1; resolved: 0; ruled out: 0.
 - Confirmed individual deposit locations: 0.
 - Since this tracker began: 4 newly inspected primary-source targets (Noorath page pair; Josephus 17.340 electronic text; De Marco 2026 article coverage; ESI 6 cave survey pp. 66–70); 5 inspected cartographic-reference targets; 0 completed decisive tests; 0 question closures. Earlier research is recorded in each question's baseline and linked notes.
-- Completed bounded source checks: 5 (Noorath as a directional anchor; TIR/lower-wadi identity; De Marco paper's target-wall coverage; ESI Roman context and wall dating; ESI Twin Cave plan/phase coverage). These do not complete a candidate's reading/geometry/phase test.
+- Completed bounded source checks: 6 (Noorath as a directional anchor; TIR/lower-wadi identity; De Marco paper's target-wall coverage; ESI Roman context and wall dating; ESI Twin Cave plan/phase coverage; cave catalogue coordinate precision). These do not complete a candidate's reading/geometry/phase test.
 - Next milestone: complete a page-cited test of one candidate's reading, geometry and construction phase, with the result recorded as supporting, conflicting or inconclusive.
 
 Count an original page/figure target once when its stated inspection is complete. Reprints and repeated searches do not add independent observations. A decisive test has an explicit hypothesis, inspected evidence and a recorded result; it may support or reject a candidate. An access failure belongs in the attempt history. Partial source coverage remains partial. Bounded source checks test a narrower claim and record supporting, conflicting or inconclusive results; count them separately from decisive candidate tests.
@@ -41,7 +41,7 @@ After each research session, update the affected question's dated progress, evid
 ## Next research cycle
 
 1. R01: inspect Schulz 1960 p. 53. Record the drawing's extent, scale, measured/reconstructed lines and depicted gorge features. If access fails, record the route and switch targets.
-2. R02: inspect Bar-Adon 1989 pp. 15–17 for Twin Cave's plan, openings and occupation contexts.
+2. R02: Bar-Adon 1989 pp. 15–17 and English p. 5* remain blocked after the documented retrieval pass. Inspect the plan, openings and occupation contexts when a readable copy becomes available; the licence identifiers are recorded in the new access note.
 3. R01: inspect Strobel 1972 Fig. 1 p. 56 and compare its coverage with Schulz.
 4. Update the relevant feature tests and this tracker; decide whether R03, R04 or R05 has an accessible source that can discriminate between candidates.
 
@@ -60,14 +60,14 @@ These are next actions, not completed inspections or a scheduled background job.
 
 ## R02 — What cave arrangement does entry 25 describe?
 
-- **Priority / status:** P1 / In progress.
+- **Priority / status:** P1 / Blocked.
 - **Baseline:** Twin Cave near 11Q, Abu Saraj IV/11 and manuscript cave 3Q are separate records. The wording permits a cave-level eastward aspect; requiring both openings to face east is a stricter model.
 - **Supporting evidence and limits:** Twin Cave's paired cavities and rock partition warrant testing. A modern guide conflates Twin Cave and 3Q. Maresha Tomb 515's western entrance and inter-tomb access give no positive match.
-- **Next test:** inspect Bar-Adon, ʿAtiqot Hebrew Series 9 (1989), pp. 15–17; then Feig 2002 pp. 85–90 and Sion p. 52 for IV/11. Record exterior versus interior openings, connectivity, bearing, northern threshold and early surface.
+- **Next test:** obtain and inspect Bar-Adon, ʿAtiqot Hebrew Series 9 (1989), pp. 15–17 and English p. 5*; then Feig's Hebrew pp. 85–90 / English p. 71 and Sion's English p. 52 for IV/11. Trace field plans through the recorded cave-specific licences. Record exterior versus interior openings, connectivity, bearing, northern threshold and early surface.
 - **Answer criterion:** test each cave against independently stated reading variants and identify satisfied, contradicted and missing requirements. A northern digging point needs its period surface.
-- **Access / dependencies:** Bar-Adon's original cave pages remain unread. Current scene wording also needs an uncertainty correction based on implementation review.
-- **Progress:** 2026-10-01 — identity conflation and orientation assumption carried forward; original-plan test pending. Later ESI 6 pp. 66–70 inspection confirms that Fig. 29 belongs to 3Q and the separate Twin Cave account reports no indicative finds in its 1986 season. It provides no measured Twin Cave openings or period threshold; earlier seasons remain separate evidence.
-- **Evidence:** [Twin Cave follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry25_twin_cave_followup_2026-10-01.md); [ESI original-report check](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi6_cave_survey_review_2026-10-01.md); [Maresha access comparison](https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry25_cave_access_review_2026-10-01.md).
+- **Access / dependencies:** Bar-Adon's original cave pages remain unread; Hebrew and English PDF requests returned HTML. Feig/Sion publisher downloads returned 403. The inspected excavation catalogue supplies site centres and licence leads, with no measured opening coordinates. Current scene wording also needs an uncertainty correction based on implementation review.
+- **Progress:** 2026-10-01 — identity conflation and orientation assumption carried forward; original-plan test pending. Later ESI 6 pp. 66–70 inspection confirms that Fig. 29 belongs to 3Q and the separate Twin Cave account reports no indicative finds in its 1986 season. It provides no measured Twin Cave openings or period threshold; earlier seasons remain separate evidence. Later retrieval pass: original plan access remains blocked. Greenberg–Keinan pp. 16, 20, 65, 110 and 158 checked to stated catalogue coverage; the grid convention identifies site centres and cannot locate the northern opening. Added one bounded coordinate-precision check; no original cave page inspected.
+- **Evidence:** [Plan access and coordinate check](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_plan_access_2026-10-01.md); [Twin Cave follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry25_twin_cave_followup_2026-10-01.md); [ESI original-report check](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi6_cave_survey_review_2026-10-01.md); [Maresha access comparison](https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry25_cave_access_review_2026-10-01.md).
 
 ## R03 — Which Wadi Qelt wall and outlet could entry 32 describe?
 
@@ -194,3 +194,6 @@ These are next actions, not completed inspections or a scheduled background job.
 
 
 - **2026-10-01 — Supplied ESI 6 original report inspected:** printed pp. 66–70 and Figs. 26–29 are read to report-level coverage. R03's Roman pottery context is a natural cave, with no target-wall phase connection. R02's measured Fig. 29 is 3Q; the separate Twin Cave account supplies no dated entrance arrangement and reports no indicative finds in that season. Added 1 primary target / 2 bounded checks. Totals: 4 primary targets, 5 map intakes, 5 bounded checks, 0 decisive candidate tests and 0 closures. Patrich 1990 and Bar-Adon's cave plan remain next dependencies. [Evidence](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi6_cave_survey_review_2026-10-01.md). Rankings and coordinates unchanged.
+
+
+- **2026-10-01 — Twin Cave plan retrieval and coordinate check:** Bar-Adon Hebrew pp. 15–17 / English p. 5* remain unread after HTML-only PDF responses; Feig/Sion advertised downloads return 403. The inspected excavation catalogue provides licence leads and defines its grids as site-centre points. One bounded check establishes that those references cannot locate an individual opening. R02 is Blocked; status totals: 6 In progress / 5 Queued / 1 Blocked. Cumulative totals: 4 primary targets / 5 map intakes / 6 bounded checks / 0 decisive candidate tests / 0 closures. [Attempts and evidence](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_plan_access_2026-10-01.md). Rankings and geometry unchanged.

@@ -398,3 +398,10 @@ Source URLs, precise feature locators, limitations and effects on candidates are
 - **Carson-Newman excavation accounts, 2023 and 2026:** [2023 partner announcement](https://www.cn.edu/historic-archeological-dig-connects-judean-desert-to-east-tennessee/) and [16 March 2026 firsthand account](https://www.cn.edu/beneath-the-collapse/), the latter reporting 26 February fieldwork. Establish newer excavation activity; not surveyed water-system plans or first-century usage evidence.
 
 The [collection crosswalk](christmas_cave_provenance_2026-09-30.md) traces published identities across the 2011 and 2022 tables. Repeated measurements, source-dependent descriptions and changing calibration curves are not new find contexts.
+
+
+## Twin Cave plan retrieval — 1 October 2026
+
+- **Bar-Adon 1989, Hebrew pp. 15–17 / English p. 5*:** original pages remain unread; JSTOR PDF requests returned HTML. The narrower summary locator comes from the inspected catalogue.
+- **Feig 2002, Hebrew report / English summary; Sion 2002 English survey:** publisher catalogues inspected; advertised download endpoints returned 403. No original page or figure counted as inspected.
+- **Greenberg–Keinan 2009 excavation catalogue:** public PDF read at printed pp. 16, 20, 65, 110, 158 to stated coordinate/cave/bibliography coverage. Compiled source; one bounded coordinate-precision check, no additional primary field target. [Exact attempts, checksum and cave/licence locators](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_plan_access_2026-10-01.md).
