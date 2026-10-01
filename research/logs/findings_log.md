@@ -741,3 +741,11 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F25.3 (access limit): burial p. 145 remains unread after an account/subscription gate. Ratings and atlas geometry unchanged.
 
 [Pages and bibliography](../sources/roman_byzantine_books_siloam_2026-09-30.md).
+
+
+## Political/social volume and desert contents — 2026-09-30
+
+- F26.1 (further reading): Safrai's economic-recovery section, printed pp. 37–38, directly inspected. Regional institutional and agricultural continuity adds context without dating a candidate feature.
+- F26.2 (access): desert collection contents identify the springs/baths essay at p. 84. Account/subscription gate prevents reading it. No feature or geometry change.
+
+[Political/social reading](../sources/roman_byzantine_books_siloam_2026-09-30.md); [desert contents/access](../sources/kotar_books_intake_2026-09-30.md).

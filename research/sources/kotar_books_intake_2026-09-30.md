@@ -105,3 +105,8 @@ LLMs can help align Hebrew/Arabic/English names, extract figure and archive refe
 ## Effect on the atlas
 
 Qumran entry 21 remains medium and conditional on Sekakah; Hyrcania remains possible/low; entry 35's precise Kidron stretch remains open. No cave entrance or hiding-place point is added to the map. The new raw guide grids are source locators awaiting verification, not WGS84 coordinates. This report corrects the evidence accounting and makes the next tests more specific.
+
+
+## Additional contents and access check — 30 September 2026
+
+The Kotar contents for this volume also list “מעיינות המרפא והמרחצאות באזור ים המלח” (Dead Sea healing springs and baths), beginning at printed p. 84. The reader reached a subscription/account gate at that page; its text and illustrations remain unread. The title supplies a possible water-source research lead, without evidence for a specific Scroll feature. The earlier cave article's coverage remains unchanged.

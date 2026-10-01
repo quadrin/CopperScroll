@@ -124,3 +124,12 @@ Footnote 36 cites Hirschfeld's Emmaus waterworks study in *Qadmoniot* 9, pp. 85�
 Attempting printed burial p. 145 brought up an existing-account/subscription gate. The page's content remains unread. The reader showed guest status; access to selected pages above does not establish access to the full volume. No subscription purchase was made.
 
 Next book work: recover p. 145 after existing-account access resumes; then inspect the earlier Roman-period burial chapter and its primary excavation references. Preserve each tomb's original construction, later reuse and finds as separate evidence.
+
+
+## Political/social volume: further reading — 30 September 2026
+
+Shmuel Safrai, “התאוששות היישוב היהודי בדור יבנה,” in Kotar book 7693028, printed pp. 37–38, directly inspected in the rendered reader, including section ז and its footnotes. This extends the earlier pp. 11–14 intake. The chapter summarizes recovery after CE 70 from rabbinic traditions; the underlying ancient passages were not independently read here.
+
+Safrai discusses continued municipal institutions, markets, charity and craft organizations, then agricultural recovery and trade. He also describes later Roman road expansion under the Antonines. These passages concern regional activity and institutions; they provide no construction sequence or location for a particular waterwork or burial feature.
+
+For CopperScroll, preserve the distinction between regional recovery and occupation at an individual candidate site. A continuing place name, cultivated district or later road connection requires a separate feature-level archaeological check. This reading adds context only; candidate confidence and geometry remain unchanged.
