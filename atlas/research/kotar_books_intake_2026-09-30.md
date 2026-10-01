@@ -150,3 +150,18 @@ The excavating institution's own archive supplies a separate archaeological lead
 ### Actionable next test
 
 Recover the Clamer 1997 and Strobel/Wimmer 2003 reports and inspect bath/harbour plans, phases, dating assemblages and survey controls. For any proposed Scroll entry, first check the entry's readings and whether its feature description actually fits this eastern-shore setting. Madaba's later cartographic depiction and the excavated villa require separate chronological tests. No entry identification, candidate geometry or confidence-rating change follows from the material inspected here.
+
+
+## Clamer excavation follow-up — 30 September 2026 (Los Angeles)
+
+The full 1997 monograph remains unread. IFPO's catalogue confirms BAH 147 and its plans/illustrations: https://www.ifporient.org/wp-content/uploads/2023/12/CataloguePublicationsIfpo_2023.pdf . Instead, this pass visually inspected all nine pages of Christa Clamer, “‘Ain ez-Zara Excavations 1986”, *ADAJ* 33 (1989), pp. 217–225, from Jordan's official archive: https://publication.doa.gov.jo/Publications/ViewChapterPublic/2058 . PDF: https://publication.doa.gov.jo/uploads/publications/42/ADAJ_1989_33-217-225.pdf . This earlier report does not establish what the 1997 final publication concluded.
+
+### Feature and survey observations
+
+- **Pool 338, p. 221:** plastered thermal pool, inlet in W204 and overflow channel in W235. Excavation remained incomplete. Later Byzantine Room 332 overlies it. The report identifies sealed Early Roman pottery in its fill.
+- **Shoreline structures, pp. 224–225:** harbour and bath interpretations compete; two construction phases remained undated. Retain “harbour” as a hypothesis.
+- **Plans/datum, pp. 217–218, 224:** Fig. 1 locates A/B and pool 338; Fig. 2 depicts C. Heights use an arbitrary −401 m reference: subtract 401 from the printed positive value. These plans alone do not establish modern geographic coordinates.
+
+### Repository interpretation and next retrieval
+
+Pool 338 is a specific feature lead requiring an entry-text match and final-report phase checks. The 1989 shoreline evidence qualifies the later institutional archive's harbour wording. Acquire the 1997 monograph and the referenced survey documentation before registering geometry. No candidate coordinates or rating change follows. Book/article images are excluded from the repository; source observation, functional interpretation and geographic registration remain separate.

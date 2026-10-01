@@ -769,3 +769,12 @@ See the [targeted book and plan intake](../sources/roman_byzantine_books_siloam_
 - F28.4 (scope): no Scroll match, feature registration or rating change.
 
 [Access record and source observations](../sources/kotar_books_intake_2026-09-30.md#ancient-baths-source-follow-up--30-september-2026-los-angeles).
+
+
+## Clamer original excavation report — 2026-09-30 (Los Angeles)
+
+- F29.1: 1997 monograph remains unread; all pages of Clamer 1989, ADAJ 33, pp. 217–225, visually inspected from the official archive.
+- F29.2: specific pool lead and competing shoreline interpretations documented in the source note; preserve final-report and registration prerequisites.
+- F29.3: no Scroll entry assignment, candidate coordinates or rating change.
+
+[Feature observations and plan/datum limits](../sources/kotar_books_intake_2026-09-30.md#clamer-excavation-follow-up--30-september-2026-los-angeles).
