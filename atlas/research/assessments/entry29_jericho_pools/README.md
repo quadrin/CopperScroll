@@ -67,3 +67,8 @@ Netzer’s 1983 original chapter now supplies a complete plan (p. 100), approxim
 ## Original final report: first pass
 
 The supplied 2001 final report now provides an image-checked channel distinction: late Hasmonean supply branches are identified, while the Herodian combined-pool supply remains explicitly unknown. Tentative southern-side walls W57/W43 offer a separate tracing target. Original plans and foldout completeness remain to be checked. [Scope and evidence](netzer2001-first-pass.md).
+
+
+## Archived original plans
+
+[Netzer final-report Plans 17–22](../../assets/plans/netzer2001/README.md) are now stored as source figure crops with provenance and hashes. The user’s 2 October 2026 archive instruction supersedes earlier delivery notes withholding these particular images. Their upload adds no independent evidence or completed test. Folded plans and illustrated-book extracts remain queued.

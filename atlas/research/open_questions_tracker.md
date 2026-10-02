@@ -299,3 +299,8 @@ Signed-in page images inspected to stated target scope. Complete earlier-pool ou
 ## Supplied Netzer books — 2 October 2026, Los Angeles
 
 Both requested books opened. Final-report printed pp. 74, 82, 84–85 inspected as page images; illustrated-book archaeological plans remain pending. One final-report source target and one bounded combined-pool supply check added. Totals: 24 direct targets / 5 map intakes / 24 bounded checks / 0 decisive tests / 0 closures. Candidate assessment count remains 1, inconclusive. Same excavation lineage; no new independent campaign. [Evidence and next plan targets](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/netzer2001-first-pass.md).
+
+
+## Plan archive rule — 2 October 2026, Los Angeles
+
+User requested persistent GitHub copies of relevant plans/maps. Added repository instructions, mirrored source-asset index, provenance manifest and Netzer final-report Plans 17–22. Remaining foldouts and older figures have an explicit backfill queue. Research KPI totals unchanged: 24 source targets / 5 cartographic targets / 24 bounded checks / 0 decisive tests / 0 closures. Asset intake is not a new completed research test.
