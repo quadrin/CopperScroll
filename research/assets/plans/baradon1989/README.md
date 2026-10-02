@@ -125,3 +125,21 @@ All 13 supplied PNGs open successfully despite the attachment display errors. Or
 - [Chapter ג metal finds](capture-191508.png) — image(20261002-191508).png.
 
 No architectural date, northern-threshold measurement or research question is resolved by this archival intake. Research KPI counts remain unchanged.
+
+
+## Further finds and Ein el-Ghuweir photograph — 2 October 2026
+
+Ten supplied PNGs open successfully and are archived unchanged. Captions identify the following; printed-page locators are outside these crops.
+
+- [ג17: metal finds with catalogue; another view of the plate in capture-191508.png](capture-191531.png) — image(20261002-191531).png.
+- [ג19: juglet, registration 353, locus 13](capture-191548.png) — image(20261002-191548).png.
+- [ג18: cooking pot, registration 356](capture-191604.png) — image(20261002-191604).png.
+- [ג20: coins captioned as dating to Alexander Jannaeus](capture-191625.png) — image(20261002-191625).png.
+- [ג20: same coin figure with accompanying text](capture-191654.png) — image(20261002-191654).png.
+- [ג21: pottery](capture-191726.png) — image(20261002-191726).png.
+- [ד1: coin captioned as dating to the Great Revolt](capture-191747.png) — image(20261002-191747).png.
+- [ד2: pottery](capture-191809.png) — image(20261002-191809).png.
+- [ד2: same pottery plate with catalogue](capture-191839.png) — image(20261002-191839).png.
+- [ה1: building captioned Israelite, viewed from west; another view of the previously archived figure](capture-191857.png) — image(20261002-191857).png.
+
+Chapter ג belongs to Qasr el-Yahud; chapter ה belongs to Ein el-Ghuweir, as established by the continuous capture headings. This intake does not identify chapter ד from a heading. Coin-caption dates are recorded as published identifications and do not independently date nearby architecture. Repeated plates and photographs supply additional image/context coverage, not independent assemblages. No research KPI increment or candidate-confidence change.
