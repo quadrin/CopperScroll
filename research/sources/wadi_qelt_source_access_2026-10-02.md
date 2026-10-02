@@ -4,6 +4,8 @@
 
 ## Result and retained model
 
+**Later supplied-source update:** the user has supplied the full ESI 7–8 scan; printed pp. 92–95 are now directly inspected. The original-page access gap is resolved. The coverage leaves the wall/outlet construction relation unresolved. The dated retrieval record below is preserved as history; the appended inspection supersedes its next-test instruction for ESI 7–8.
+
 The focused search recovered an exact publisher record and download link for *Excavations and Surveys in Israel* 7–8, but no readable original target pages. Patrich 1990 p. 208 note 24 remains unread. This pass adds no archaeological observation, completed feature test or KPI inspection.
 
 The wall candidate remains provisional: the wall opposite the monastery in SWP III pp. 227–228, with a lower conduit near its base. Its precise outlet, ancient ground datum and construction phase remain unresolved. Preserve the conflicting east/west bridge descriptions and the distinction between Ein Qelt and Fara/Fawwar–Cypros routes.
@@ -31,3 +33,8 @@ For ESI 7–8 or its Hebrew parallel, the bounded question is whether a plan/sec
 In parallel with any newly available original, seek the exact PEF aqueduct-plan/proof and Sheet XVIII tracing identifiers, then test whether their drawings have wall-scale detail. Existing monastery/road identifiers cannot be substituted. The independent wall-section route remains open even while the two chapter targets are inaccessible.
 
 R03 becomes the next priority, P1 / In progress. Original-text and wall-specific measured-record dependencies are stated separately. No R closure, candidate promotion or geographic registration is justified by this retrieval pass.
+
+
+## Supplied ESI 7–8 original inspected — 2 October 2026 (UTC)
+
+The supplied 220-page scan resolves the earlier access gap: printed pp. 92–95 / PDF pp. 103–106 are directly image-checked. Wadi Qilt Cave 20 contains a second-century CE lamp; the Roman arrowhead is a path find. Neither context supplies a target-wall construction link. Figs. 79–80 concern Na'aran and lower Wadi Makkuk; Fig. 78 belongs to the preceding Ramot report. No wall/outlet plan, section, ancient ground datum or dated wall contact is supplied in the inspected cave report. Park this report as a wall-section lead; prioritize a measured wall record and PEF item identities. Patrich 1990 p. 208 n. 24 remains unread. Earlier 403 statements describe the failed download route, superseded for target reading by this upload. [Original pages, source checksum, distinctions and test result](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi78_cave_survey_review_2026-10-02.md).

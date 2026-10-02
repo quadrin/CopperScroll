@@ -428,3 +428,12 @@ Magen–Peleg 2018 Figs. 57–58 (pp. 53–54) locate and section L117. The insp
 R03 becomes P1 / In progress. Patrich 1990 p. 208 n. 24 remains unread. ESI 7–8's exact publisher download returned 403 through the web reader and an ordinary direct request; cited pp. 92–95 remain unread. The Hebrew pp. 179–193 parallel is bibliographic only. No new Wadi archaeological observation, source-inspection count or feature test is added.
 
 Add 1 conservative primary section target / 1 bounded check. Cumulative totals: 17 direct targets / 5 map intakes / 16 bounded checks / 0 decisive tests / 0 R closures; 7 In progress / 5 Queued. Reading alternatives, candidate ranks, confidence and geography remain unchanged. [L117 original-page coverage](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_l117_outlet_joint_test_2026-10-02.md); [unread Wadi links and test requirements](https://github.com/quadrin/CopperScroll/blob/main/research/sources/wadi_qelt_source_access_2026-10-02.md).
+
+
+## R03 / Q39 — Supplied ESI 7–8 cave-survey original, 2 October 2026 (UTC)
+
+Directly inspected printed pp. 92–95 / PDF pp. 103–106 and title/publication leaves in the supplied 220-page scan (SHA-256 `7e245f8ef79f32858a7ef3733c6e93670b6a06cde0794fcacc1626425ee0b0a0`). Wadi Qilt Cave 20's lamp is assigned to the second century CE; the Roman arrowhead is a path find. Neither supplies the proposed opposite-monastery wall's construction contact. Fig. 78 belongs to Ramot; Figs. 79–80 concern Na'aran/lower Makkuk. The cave article ends before Hirschfeld's separate monastery survey on p. 95.
+
+Complete one scoped primary-source inspection and one bounded wall-section/dated-contact coverage check (candidate phase remains inconclusive). The supplied original supersedes the publisher 403 reading dependency; park this inspected report as a wall-section lead. Patrich 1990 p. 208 n. 24 remains unread. Next seek a measured wall record and exact PEF aqueduct/tracing items. R03 remains P1 / In progress; confidence, ranks and geometry unchanged.
+
+Totals: 18 direct primary targets / 5 map intakes / 17 bounded checks / 0 decisive tests / 0 R closures; 7 In progress / 5 Queued. [Original-page evidence and distinctions](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi78_cave_survey_review_2026-10-02.md).
