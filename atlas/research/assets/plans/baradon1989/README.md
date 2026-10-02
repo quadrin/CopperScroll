@@ -55,3 +55,39 @@ Site B’s chapter title remains unverified in this crop intake. Twin Cave B1 re
 - [ז14: fan scrapers](z14-fan-scrapers.png), sideways as supplied.
 
 Captions read directly; original PNG bytes retained. Printed page numbers remain outside these crops. Mizpe Shalem is explicitly named for ז10 only; this intake does not establish that Sites A/B/C or every illustrated assemblage carry that same site identity. Typological dating and relationships to structures require surrounding text and excavation contexts. These images add archival coverage with no research KPI increment or candidate-confidence change. Twin Cave B1 remains missing.
+
+
+## Chapter ז fan-scraper sequence completed through ז27
+
+Original supplied crops, captions checked; printed page numbers and excavation contexts are outside these crops. Specimen drawings do not independently date buildings, paths or occupation surfaces.
+
+- [ז15: fan scrapers](z15-fan-scrapers.png).
+- [ז16: fan scrapers](z16-fan-scrapers.png).
+- [ז17: fan scrapers](z17-fan-scrapers.png).
+- [ז18: fan scrapers](z18-fan-scrapers.png).
+- [ז19: fan scrapers](z19-fan-scrapers.png).
+- [ז20: fan scrapers](z20-fan-scrapers.png).
+- [ז21: fan scrapers](z21-fan-scrapers.png).
+- [ז22: fan scrapers](z22-fan-scrapers.png).
+- [ז23: fan scrapers](z23-fan-scrapers.png).
+- [ז24: fan scrapers](z24-fan-scrapers.png).
+- [ז25: fan scrapers](z25-fan-scrapers.png).
+- [ז26: fan scrapers](z26-fan-scrapers.png).
+- [ז27: fan scrapers](z27-fan-scrapers.png).
+
+## Chapters ח and ט
+
+Chapter names and printed pages remain outside these crops. `het` denotes ח and `tet` denotes ט in filenames.
+
+- [ח1: clay lamps](het1-clay-lamps.png).
+- [ח2: site plan](het2-site-plan.png), sideways as supplied, with lettered units, north arrow and 5 m scale. Exact site identity remains unverified.
+- [ח3: bowl and editorial note](het3-bowl-editorial-note.png). The note says most of the site’s pottery could not be located and bases the lamp-inscription discussion on the earlier publication in *Hadashot Arkheologiyot* 26 (1968), p. 18. This is a stated finds-access limitation, not a date for the site plan.
+- [ט1: site viewed from southwest](tet1-site-southwest-view.png).
+- [ט2: fort plan and sections](tet2-fort-plan-sections.png), north arrow, 5 m scale and spot elevations retained. Exact fort name remains unverified.
+- [ט3: monastic cells in Wadi Murrar, viewed from south](tet3-wadi-murrar-cells.png).
+- [ט4: monastic cells in Wadi Murrar, viewed from south](tet4-wadi-murrar-cells.png), another published photograph.
+- [ט5: monastic-cell interior](tet5-cell-interior-lamp-niches.png), caption drawing attention to lamp niches in the rear wall.
+- [ט6: cell openings facing Wadi Murrar](tet6-cell-openings.png).
+- [ט7: monastic-cell interior](tet7-cell-interior.png).
+
+Wadi Murrar is explicit in ט3, ט4 and ט6 captions. Do not import these cells or the chapter ח plan into Twin Cave or IV/11/IV/17. These are figure-caption intakes with no independent feature-dating or candidate assessment. Original PNG checksums are recorded in the manifest; root and atlas mirrors preserve the same bytes. Research KPI counts and candidate confidence remain unchanged.
