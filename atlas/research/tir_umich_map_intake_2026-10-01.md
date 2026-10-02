@@ -195,3 +195,8 @@ This update includes original research notes and metadata. Supplied TIFFs/JPEGs 
 ## GitHub archive — 2 October 2026
 
 The user’s archive instruction supersedes earlier delivery notes withholding these supplied images. [Five available Michigan JPEGs, native church crops and original-byte reconstruction](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/tir-michigan/README.md) now have persistent repository records. The later TIFFs are absent in the current workspace; their prior successful inspections remain documented above. Preview images do not replace those full-resolution general sheets. No new cartographic intake/test KPI.
+
+
+## North reattachment and repository assets — 2 October 2026
+
+`39015106237970_north(1).tif` is readable in the current workspace despite the inline missing-path message. Its 490,066,390 bytes and SHA-256 match the earlier North TIFF recorded above. [Repository archive](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/tir-michigan/north/README.md): upright full-sheet overview, full native-resolution JPEG derivative in 23 checksum-verified parts, and nine lossless PNG detail crops at the earlier recorded inspection windows. Native-resolution JPEG encoding is lossy; PNG crops preserve source pixels. The source TIFF remains outside GitHub. This recovery supersedes North’s current missing-file status and adds no cartographic intake/test KPI. No new geographic registration, feature date or candidate ranking follows.

@@ -309,3 +309,8 @@ User requested persistent GitHub copies of relevant plans/maps. Added repository
 ## Earlier map/plan backfill — 2 October 2026, Los Angeles
 
 Archived 16 viewable assets from accessible earlier sources: five Michigan map views plus four native church crops, Trümper Figs. 18–22 and recovered Ilan–Amit Figs. 1 and 7. Exact high-resolution Churches bytes are preserved in 35 parts and verified by reconstruction; existing TIR/road assets were already on GitHub and now have a research mirror. Added an indexed missing-original register. Later TIFFs and several excavation captures remain absent. Archive counts are separate from unchanged research totals: 24 source targets / 5 cartographic intakes / 24 bounded checks / 0 decisive tests / 0 closures. [Archive and retrieval gaps](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/README.md).
+
+
+## TIR North recovered — 2 October 2026, Los Angeles
+
+Reattached North TIFF opens and matches the earlier source hash. Archived complete-sheet overview, full native-resolution JPEG derivative in verified parts and nine lossless native research-window crops; removed North from the current missing-source list. South, Synagogues and Eretz Israel/Sinai TIFFs remain absent. Same cartographic source, no new target or test. Research totals remain 24 source targets / 5 cartographic intakes / 24 bounded checks / 0 decisive tests / 0 closures. [Assets and source identity](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/tir-michigan/north/README.md).
