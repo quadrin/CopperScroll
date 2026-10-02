@@ -1,0 +1,101 @@
+{
+  "entry": 25,
+  "question": "R02",
+  "date": "2026-10-02",
+  "status": "conditional_assessment_inconclusive",
+  "source_note": "README.md",
+  "requirements": {
+    "pillar_and_two_mouths": "reported_support",
+    "north_south_pair": "supported_in_source_plan_frame",
+    "internal_connection": "continuous_route_depicted_in_2D; ancient_clearance_unknown; not_explicit_text_requirement",
+    "cave_level_eastward_aspect": "reported_support",
+    "true_individual_mouth_bearings": "unresolved",
+    "ancient_architectural_phase": "unresolved",
+    "northern_threshold_datum": "unresolved",
+    "site_identity": "unconfirmed"
+  },
+  "reference_feature": {
+    "id": "IV17_northern_present_aperture",
+    "source": "Sion2002 Plan5 p63",
+    "frame": "626x541 pixel crop of Matrix(3,3) render; original crop [152,207,778,748]",
+    "segment_px": [
+      [
+        548,
+        386
+      ],
+      [
+        502,
+        400
+      ]
+    ],
+    "source_phase": "surveyed_present",
+    "width_nominal_m": 0.858629662869379,
+    "geographic_coordinates": null
+  },
+  "direction": {
+    "convention": "clockwise from published north arrow; true/grid/magnetic unspecified",
+    "metric": "outward aperture chord normal, not surveyed passage bearing",
+    "apertures": [
+      {
+        "id": "northern_present_gap",
+        "nominal_degrees": 122.92909086979614,
+        "endpoint_sensitivity_degrees": [
+          99.4663883338802,
+          140.84035953588491
+        ],
+        "pilot_envelope_degrees": [
+          101,
+          151
+        ]
+      },
+      {
+        "id": "southern_remaining_gap",
+        "nominal_degrees": 119.1976938706357,
+        "endpoint_sensitivity_degrees": [
+          103.96650204230086,
+          132.43944862671583
+        ],
+        "pilot_envelope_degrees": [
+          103,
+          143
+        ]
+      }
+    ],
+    "edition_tolerance_degrees": null
+  },
+  "depth_branch": {
+    "cubits": 3,
+    "exploratory_unit_metres": [
+      0.4,
+      0.6
+    ],
+    "conditional_depth_metres": [
+      1.2,
+      1.8
+    ],
+    "vertical_relation": "z_target = z_ancient_northern_threshold - depth",
+    "ancient_threshold_elevation": null,
+    "horizontal_direction": null,
+    "deposit_geometry": null
+  },
+  "control_candidates": [
+    "Twin Cave",
+    "Abu Saraj IV/11"
+  ],
+  "next_record": {
+    "director": "Michael Dadon",
+    "permit": "L-656",
+    "baskets": [
+      "656.17",
+      "656.20"
+    ],
+    "field_file_inspected": false
+  },
+  "accounting": {
+    "conditional_assessments_added": 1,
+    "source_targets_added": 0,
+    "bounded_checks_added": 0,
+    "decisive_tests_added": 0,
+    "closures_added": 0
+  }
+}

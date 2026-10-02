@@ -12,7 +12,7 @@ Nurit Feig, “The Excavation of Cave IV/11 (‘Cave of the Pillar’)”: [comp
 
 The description places two openings in the eastern cliff, reached by rope ladder. Northern and southern spaces are divided by a rock-cut pillar. The northern opening, described as 0.8 m wide, enters a 2.2 × 4.5 m space. A built wall partly blocks the southern opening; the text gives 2.4 m length and 0.3–0.4 m thickness. Plan 5 has a 3 m scale and north arrow. These reported dimensions do not establish the ancient northern-threshold surface or its excavation datum.
 
-The report interprets the cave as used from the first half of the third century BCE to the first half of the first century BCE. Its finds-based use interpretation does not independently date pillar cutting, entrance formation or southern-mouth blocking. No new first-century threshold date is established in this recovery.
+The report interprets the cave as used from the first half of the second century BCE to the first half of the first century BCE. Its finds-based use interpretation does not independently date pillar cutting, entrance formation or southern-mouth blocking. No new first-century threshold date is established in this recovery.
 
 This is recovery and a page-specific confirmation of a previously inspected target. Research KPI counts and candidate confidence remain unchanged. [Asset hashes and original paths](intake-2026-10-02.json). Root and atlas copies preserve identical bytes. Only the targeted Sion pages, Feig article and issue survey map are archived in this intake; other issue drawings remain available in the supplied ZIP for later extraction.
 
@@ -33,3 +33,5 @@ The archival scope includes every map, plan, layout, section, aerial image, and 
 Total supplied pages: 42. [Page navigation index](complete-page-index.json) contains source-part and PDF-page mapping for every page. Caption candidates come from automatic text extraction and require checking against the page image; scanned pages can have no extractable caption. Completeness follows from preserving all pages, not from caption recognition. “Complete” describes the supplied PDF(s), without asserting that the scan includes every page of the original printed publication.
 
 Original page content, figures, and rights remain intact. Parts are native PDF page extractions, not redrawn images. No candidate identification, phase determination or KPI closure follows from archiving.
+
+Chronology correction, 2 October 2026: p. 63 says the first half of the **second** century BCE, not third. This corrects the earlier archive summary; it supplies no construction date. [Conditional IV/17 assessment](../../assessments/entry25_iv17/README.md).
