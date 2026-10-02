@@ -1,0 +1,70 @@
+{
+  "ref": "4a6c4434ff86f213aa2471351707ef2e8d7ab663",
+  "n_project_slots": 61,
+  "n_scenarios": 64,
+  "input_ledger_sha256": "efd451e81423c3c15cd961b24809a801fcab03c250682cf615ee9a7c643365e8",
+  "source_snapshots": [
+    {
+      "repository_path": "AGENTS.md",
+      "url": "https://raw.githubusercontent.com/quadrin/CopperScroll/4a6c4434ff86f213aa2471351707ef2e8d7ab663/AGENTS.md",
+      "sha256": "e5855e5bc2608c79a76211b0e98d28e7a0db078f196488c2d08b3a61178858f3",
+      "normalization": "UTF-8; CRLF to LF; normalized snapshot hashes, not git blob IDs"
+    },
+    {
+      "repository_path": "atlas/app/atlas-data.json",
+      "url": "https://raw.githubusercontent.com/quadrin/CopperScroll/4a6c4434ff86f213aa2471351707ef2e8d7ab663/atlas/app/atlas-data.json",
+      "sha256": "ec66068527165613da46663a8eaa9189b9005bbcdc2a02b0d8661c5033fab5b8",
+      "normalization": "UTF-8; CRLF to LF; normalized snapshot hashes, not git blob IDs"
+    },
+    {
+      "repository_path": "deep_analysis/README.md",
+      "url": "https://raw.githubusercontent.com/quadrin/CopperScroll/4a6c4434ff86f213aa2471351707ef2e8d7ab663/deep_analysis/README.md",
+      "sha256": "5d1beb46b3390799c8283f4609f9339440ac76d2516d290956d719e2d8c0f61a",
+      "normalization": "UTF-8; CRLF to LF; normalized snapshot hashes, not git blob IDs"
+    },
+    {
+      "repository_path": "research/measurements/sequence_packet.md",
+      "url": "https://raw.githubusercontent.com/quadrin/CopperScroll/4a6c4434ff86f213aa2471351707ef2e8d7ab663/research/measurements/sequence_packet.md",
+      "sha256": "954571c54a7f120f215473faefdf092e2145a26c4f4c725335210cf41495b7a9",
+      "normalization": "UTF-8; CRLF to LF; normalized snapshot hashes, not git blob IDs"
+    },
+    {
+      "repository_path": "research/text/deeper_analysis_2026-09-30.md",
+      "url": "https://raw.githubusercontent.com/quadrin/CopperScroll/4a6c4434ff86f213aa2471351707ef2e8d7ab663/research/text/deeper_analysis_2026-09-30.md",
+      "sha256": "3c00e0e301be5c3140d04433392b4035eb6bb95fb44ac733e97562bf33e29ac6",
+      "normalization": "UTF-8; CRLF to LF; normalized snapshot hashes, not git blob IDs"
+    },
+    {
+      "repository_path": "tables/entry_concordance.csv",
+      "url": "https://raw.githubusercontent.com/quadrin/CopperScroll/4a6c4434ff86f213aa2471351707ef2e8d7ab663/tables/entry_concordance.csv",
+      "sha256": "caff0383801dd8bfa516dab21b5750b27c9bd07bd0401525b8f769694a7bbaba",
+      "normalization": "UTF-8; CRLF to LF; normalized snapshot hashes, not git blob IDs"
+    },
+    {
+      "repository_path": "tables/phase3_places.csv",
+      "url": "https://raw.githubusercontent.com/quadrin/CopperScroll/4a6c4434ff86f213aa2471351707ef2e8d7ab663/tables/phase3_places.csv",
+      "sha256": "e321f83a78c2316907ef13f7419a0ad689cba36a9f85509e2498cfadcb7e5279",
+      "normalization": "UTF-8; CRLF to LF; normalized snapshot hashes, not git blob IDs"
+    },
+    {
+      "repository_path": "tables/phase3_site_index.csv",
+      "url": "https://raw.githubusercontent.com/quadrin/CopperScroll/4a6c4434ff86f213aa2471351707ef2e8d7ab663/tables/phase3_site_index.csv",
+      "sha256": "dae65b52aa6a6cdedcf44ebe69a6563256c307ddc8b7eb58c241d69f26ca61f1",
+      "normalization": "UTF-8; CRLF to LF; normalized snapshot hashes, not git blob IDs"
+    }
+  ],
+  "reproduction": "python measure_grouping.py; frozen_input_ledger.json is the only required data input. Source snapshots are provenance records, not runtime dependencies.",
+  "script_sha256": {
+    "measure_grouping.py": "8b16fd1033b896cdc64d18e8710aaf039d0b86754a19ae74c1ce0ca76075c393"
+  },
+  "output_sha256": {
+    "scenario_metrics.csv": "5af29ac818346d0f811530f8a9e49151cd943d0d1af430a99c479e40df8fb610",
+    "scenario_edges.csv": "594e3f37fc5ef5c0d7cf6fede9c482d3a05e0047719de9dffd74e5047e3571fd",
+    "grouping_results.json": "29b147a41c7c352b4aa7c594527bc07331afe10fd18b1d2b5d1ff25cc3483c78",
+    "stability_summary.json": "efbd083be39d7f6cc4491dd961982f4949e3c7d1d77d085eeb20b8a505878fa2"
+  },
+  "metrics_scope": "Descriptive hypothesis sensitivity; no inference probabilities or geography inferred for unknown slots",
+  "source_inspection_increment": 0,
+  "bounded_source_check_increment": 0,
+  "decisive_candidate_test_increment": 0
+}

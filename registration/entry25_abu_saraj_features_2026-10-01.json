@@ -102,14 +102,19 @@
       },
       "deposit_geometry": null,
       "plan_measurement_pilot": {
-        "status": "manual_annotations_and_recomputation; independent_repeat_pending",
+        "status": "independent_point_repeat_recorded; north_reference_and_architectural_phase_unresolved",
         "packet": "research/measurements/iv17_packet.md",
         "raw_annotations": "research/measurements/iv17_pilot.json",
         "calculation": "research/measurements/iv17_recomputed.json",
         "bearing_type": "outward local aperture-chord normals relative to unspecified published north; not surveyed true bearings",
         "southern_aperture": "current remaining gap, not reconstructed original mouth",
         "architectural_phase_verified": false,
-        "geographic_registration": null
+        "geographic_registration": null,
+        "repeat_raw": "research/measurements/cycle2/iv17_repeat.json",
+        "repeat_results": "research/measurements/cycle2/iv17_repeat_results.json",
+        "repeat_note": "research/measurements/cycle2/iv17_repeat_report.md",
+        "repeat_result": "point reproduction supporting; independent northern endpoint sensitivity exceeds first pilot's width/lower-bearing bounds",
+        "uncertainty_policy": "Preserve both pick sets and all sensitivity envelopes; no statistical or full-source accuracy claim"
       }
     }
   ],

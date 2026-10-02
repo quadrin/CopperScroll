@@ -68,3 +68,8 @@ Phase completion: contexts that date pillar cutting, entrance enlargement, south
 Ready now: independent Plan 5 digitization and parameterized directional-model sensitivity. Ready with further records: threshold and wall/entrance phase tests. External retrieval: no new hunt attempted; publisher record links the source, while an identifiable threshold/section/field-record target remains to be located.
 
 KPI recommendation: retain counts while independent digitization remains pending. This is one measurement packet with a pilot, without a newly accessed primary target, decisive candidate test or R closure. Derived numbers share one drawing and calibration; they supply no independent corroboration. Original ancient architecture and threshold remain unresolved.
+
+
+## Independent Plan 5 repeat — 2 October 2026 UTC
+
+[Cycle 2 report](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle2/iv17_repeat_report.md) preserves new endpoint picks made before reading the first annotation. Present northern/southern remaining gaps and spacing reproduce approximately 0.86 m / 1.16 m / 4.23 m. Independent northern endpoint sensitivity extends beyond the first width/lower-bearing envelope; retain both sets and all stated bounds. Raw page-layout labels and a typed timestamp error are explicitly audited without changing frozen pixels. This completes one supporting bounded point-reproduction test on the same source plan, with incomplete envelope coverage. True mouth bearings, ancient southern aperture, northern threshold, phase, geographic registration and identity remain unresolved. Exact-mouth-bearing and deposit-geometry fields stay null.

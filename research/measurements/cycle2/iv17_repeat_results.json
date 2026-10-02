@@ -1,0 +1,126 @@
+{
+  "result": "supporting reproduction of published-plan-relative pilot point metrics; site and ancient entry identification remain inconclusive",
+  "raw_picks_sha256": "15579fd41e2fcfebd2ea06cf1f5ffe138ec94909fed2110fda73e8700d1b5b5f",
+  "raw_file_actual_freeze_utc": "2026-10-02T05:40:28.472118Z",
+  "raw_file_timestamp_error": "frozen_utc string 05:42:00 was typed incorrectly; filesystem mtime and pre-pilot tool-record hash establish actual freeze before first pilot read at 05:40:33Z",
+  "identity_correction": "frozen northern_clear_mouth key = physical left/built-wall opening = geographic southern_remaining_gap; frozen southern_present_gap key = physical right/clear opening = geographic northern_present_gap. Classification corrected only after pilot comparison; coordinates unchanged.",
+  "source_render_sha256": "59c490eb83e918b09be1d9bdcb8a4809a08401d54988f5c9fc6028d803deb044",
+  "raster_metadata_after_pilot_read": {
+    "renderer": "PyMuPDF, Matrix(3,3)",
+    "page_size_px": [
+      1526,
+      2438
+    ],
+    "crop_box_page_px": [
+      152,
+      207,
+      778,
+      748
+    ],
+    "crop_size_px": [
+      626,
+      541
+    ],
+    "coordinate_convention": "crop pixels, origin top-left, x right, y down"
+  },
+  "metres_per_pixel": 0.017857142857142856,
+  "apertures": [
+    {
+      "canonical_id": "northern_present_gap",
+      "frozen_key": "southern_present_gap",
+      "endpoint_a_xy": [
+        548,
+        386
+      ],
+      "endpoint_b_xy": [
+        502,
+        400
+      ],
+      "midpoint_xy": [
+        525.0,
+        393.0
+      ],
+      "width_m": 0.858629662869379,
+      "chord_axis_deg_mod180": 32.92909086979614,
+      "outward_chord_normal_proxy_deg": 122.92909086979614,
+      "independent_corner_sensitivity_width_m": [
+        0.5938877862885401,
+        1.162701115761271
+      ],
+      "independent_corner_sensitivity_bearing_deg": [
+        99.4663883338802,
+        140.84035953588491
+      ],
+      "pilot_width_envelope_m": [
+        0.6,
+        1.1
+      ],
+      "pilot_bearing_envelope_deg": [
+        101,
+        151
+      ],
+      "point_within_pilot_width_envelope": true,
+      "point_within_pilot_bearing_envelope": true,
+      "delta_from_pilot_unrounded_width_m": 0.009710782583328137,
+      "delta_from_pilot_unrounded_proxy_deg": -2.712430541167336
+    },
+    {
+      "canonical_id": "southern_remaining_gap",
+      "frozen_key": "northern_clear_mouth",
+      "endpoint_a_xy": [
+        258,
+        398
+      ],
+      "endpoint_b_xy": [
+        319,
+        375
+      ],
+      "midpoint_xy": [
+        288.5,
+        386.5
+      ],
+      "width_m": 1.1641432866433299,
+      "chord_axis_deg_mod180": 29.19769387063569,
+      "outward_chord_normal_proxy_deg": 119.1976938706357,
+      "independent_corner_sensitivity_width_m": [
+        0.9177307501275793,
+        1.4322131071509792
+      ],
+      "independent_corner_sensitivity_bearing_deg": [
+        103.96650204230086,
+        132.43944862671583
+      ],
+      "pilot_width_envelope_m": [
+        0.9,
+        1.5
+      ],
+      "pilot_bearing_envelope_deg": [
+        103,
+        143
+      ],
+      "point_within_pilot_width_envelope": true,
+      "point_within_pilot_bearing_envelope": true,
+      "delta_from_pilot_unrounded_width_m": -0.03321775723097087,
+      "delta_from_pilot_unrounded_proxy_deg": -3.710676892698089
+    }
+  ],
+  "pair": {
+    "midpoint_separation_m": 4.224809046524095,
+    "southern_to_northern_bearing_deg": 51.43093305031444,
+    "northern_minus_southern_north_m": 2.633989206111805,
+    "northern_minus_southern_east_m": 3.303197290759112,
+    "pilot_separation_envelope_m": [
+      3.8,
+      4.6
+    ],
+    "point_within_pilot_separation_envelope": true
+  },
+  "uncertainty_method": "independent per-coordinate endpoint boxes evaluated at all corners, scale endpoints +/-2px, north endpoints +/-2px, clear right opening +/-6px, ragged left opening +/-5px; non-statistical raster sensitivity only; scan distortion and north convention unquantified",
+  "limits": [
+    "same source raster; independent picks are not independent archaeological corroboration",
+    "mouth chord normal is a 2D facing proxy, not passage-axis orientation",
+    "published north true/grid/magnetic convention unspecified",
+    "left southern remaining gap does not recover ancient pre-wall mouth",
+    "phase unknown; no threshold, deposit geometry, exact site georeferencing or primary-source novelty claim"
+  ]
+}

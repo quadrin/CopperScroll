@@ -104,7 +104,7 @@
       "input_easting_m": 183700,
       "input_northing_m": 126100,
       "operation": "Inverse of Palestine Grid + Palestine 1923 to WGS 84 (1) (with axis order normalized for visualization)",
-      "operation_accuracy_m": 2.0,
+      "operation_accuracy_m": 2,
       "source_position_accuracy_m": null,
       "note": "Transformation accuracy is not accuracy of the published source point."
     },
@@ -230,5 +230,17 @@
     "outside_offset_result": "Unresolved; a measurement outward from four sides is a different model and is not falsified by wall lengths.",
     "site_rating": "possible, low, unchanged",
     "deposit_geometry": null
+  },
+  "measurement_followup_cycle2": {
+    "reviewed_utc": "2026-10-02",
+    "datum_conversion_computationally_reproduced": true,
+    "datum_and_guide_convention_verified_from_original_source": false,
+    "conditional_grid_cell_note": "research/measurements/cycle2/hyrcania_grid_cell_report.md",
+    "conditional_grid_cell_results": "research/measurements/cycle2/hyrcania_grid_cell.json",
+    "quantization_alone_result": "conflicting under baseline assumptions; approximately 175 m minimum separation remains",
+    "original_detailed_plan_available_current_cycle": false,
+    "source_dimension_audit": "research/measurements/cycle2/hyrcania_dimensions.md",
+    "accepted_new_geographic_fit": false,
+    "source_feature_and_other_error_bounds": null
   }
 }

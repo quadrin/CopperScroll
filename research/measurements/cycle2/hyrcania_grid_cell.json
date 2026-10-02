@@ -1,0 +1,76 @@
+{
+  "baseline_commit": "4a6c4434ff86f213aa2471351707ef2e8d7ab663",
+  "baseline_sha256": "afab6ca6f4a75d323617bdc1bae23074e1af4136bd75c0d240c03f96a32f9b47",
+  "hypothesis": "Rounding or truncation of a 100 m grid reference alone can contain the fixed registration prediction",
+  "assumptions": [
+    "Same EPSG:28191 interpretation and 183700/126100 expansion as the baseline",
+    "The guide point is the same feature as station 44; unverified",
+    "Fixed regional prediction, summit anchor, scale and north convention retained"
+  ],
+  "software": {
+    "pyproj": "3.7.2",
+    "proj": "9.5.1",
+    "epsg_database": "v11.022"
+  },
+  "datum_operation": {
+    "description": "Inverse of Palestine Grid + Palestine 1923 to WGS 84 (1) + axis order change (2D)",
+    "definition": "proj=pipeline step inv proj=cass lat_0=31.7340969444444 lon_0=35.2120805555556 x_0=170251.555 y_0=126867.909 a=6378300.789 b=6356566.435 step inv proj=longlat a=6378300.789 b=6356566.435 step proj=push v_3 step proj=cart a=6378300.789 b=6356566.435 step proj=helmert x=-275.7224 y=94.7824 z=340.8944 rx=-8.001 ry=-4.42 rz=-11.821 s=1 convention=position_vector step inv proj=cart ellps=WGS84 step proj=pop v_3 step proj=unitconvert xy_in=rad xy_out=deg",
+    "operation_accuracy_m": 2.0,
+    "always_xy": true,
+    "allow_ballpark": false,
+    "network": false
+  },
+  "guide_wgs84_lon_lat": [
+    35.354742742541866,
+    31.72741114203423
+  ],
+  "predicted_wgs84_lon_lat": [
+    35.35681167099843,
+    31.726095818532485
+  ],
+  "predicted_old_grid_m": [
+    183896.28041422696,
+    125954.41132147357
+  ],
+  "nominal_residual_m": 244.37106137790013,
+  "cells": {
+    "round_to_nearest_100m": {
+      "bounds_old_grid_m": [
+        183650,
+        126050,
+        183750,
+        126150
+      ],
+      "prediction_inside_cell": false,
+      "minimum_geodesic_separation_m": 174.73504212781822,
+      "nearest_grid_point_m": [
+        183750,
+        126050
+      ],
+      "maximum_corner_separation_m": 314.48649303864886
+    },
+    "truncate_to_100m": {
+      "bounds_old_grid_m": [
+        183700,
+        126100,
+        183800,
+        126200
+      ],
+      "prediction_inside_cell": false,
+      "minimum_geodesic_separation_m": 174.53279519827356,
+      "nearest_grid_point_m": [
+        183799.99999999907,
+        126100.0
+      ],
+      "maximum_corner_separation_m": 314.37409078486445
+    }
+  },
+  "result": "conflicting with quantization-alone explanation under the stated assumptions",
+  "limits": [
+    "Numerical optimization precision is not accuracy of the source feature",
+    "Unknown map generalization, feature identity, scan/anchor/north errors remain outside this test",
+    "Operation accuracy does not establish the guide coordinate accuracy",
+    "No new control, accepted registration, mouth coordinate or deposit geometry"
+  ],
+  "cell_boundary_convention": "Closed rectangles give conservative distance infima; truncation upper edges may be excluded by the actual notation convention."
+}

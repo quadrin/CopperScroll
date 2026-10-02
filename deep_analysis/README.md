@@ -80,3 +80,8 @@ Only the file paths changed. The bundle expected the scripts in `cs_work/deep/`,
 ## Text and data
 
 `build.py` and `features.py` write the Abegg Hebrew text (ETCBC `dss` 2.0.1, CC BY-NC 4.0) into `entries_full.json` and `features.json`. These two files can be made again at any time, so they are in `.gitignore`. The committed outputs hold entry numbers, counts, concept names and statistics, and no Hebrew text.
+
+
+## Frozen coarse grouping sensitivity — 2 October 2026 UTC
+
+The [cycle 2 pass](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle2/sequence_grouping.md) retains 61 canonical slots and unknown anchors, then measures 64 confidence/anchor/division cases. It uses current atlas grades, including low for entry46 where the legacy table said medium. Coarse same-region adjacency spans 3–31; excluding low assignments leaves longest runs of three. Entries 30–32 persist only under current coarse Jericho membership. The heterogeneous 'region' category remains unclassified, and split subspans remain unassigned unless independently anchored. This is a descriptive sensitivity result; earlier fine-district/HMM findings have a different scope. Independent associations, fine-region footprints and moved-phrase/subspan mappings remain pending. No location probability, uninterrupted route or exact unplaced location follows.

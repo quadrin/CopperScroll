@@ -1,0 +1,58 @@
+{
+  "record_type": "blind_manual_raw_picks_frozen_before_pilot_read",
+  "frozen_utc": "2026-10-02T05:42:00Z",
+  "observer": "/root/iv17_repeat",
+  "instructions_commit": "4a6c4434ff86f213aa2471351707ef2e8d7ab663",
+  "instructions_verified": "Read exact AGENTS.md through GitHub connector; stale local checkout not edited.",
+  "source": {
+    "publication": "Sion, Atiqot 41",
+    "printed_page": "63 (Hebrew)",
+    "figure": "Plan 5, Cave IV/17",
+    "pdf_page_one_based": 21,
+    "pdf_sha256_supplied_by_parent": "7b56f84d7f87d7ad16f5f707739fb6f91b9193dafb11756d860324d69a7ca718",
+    "render": "/workspace/scratch/62b7302da069/tmp/parallel-measurements/iv17-work/plan5-crop.png",
+    "render_width_px": 626,
+    "render_height_px": 541,
+    "coordinates": "crop pixels; x right, y down; no georeferencing",
+    "inspection": "view_image of original crop, followed by enlarged northern entrance crop; no pilot JSON, packet, prior measurement script or numbers read"
+  },
+  "scale": {
+    "zero_xy": [402,472],
+    "three_m_xy": [570,472],
+    "length_m": 3,
+    "endpoint_uncertainty_px_each": 2,
+    "definition": "ends of drawn black-white-black scale strip at 0 and 3m labels"
+  },
+  "north_arrow": {
+    "tail_xy": [99,147],
+    "tip_xy": [169,64],
+    "endpoint_uncertainty_px_each": 2,
+    "definition": "full thin arrow axis from lower-left tail to upper-right pointed tip, not entrance marker arrows",
+    "north_kind": "unspecified by this plan crop; cannot infer true/grid/magnetic north"
+  },
+  "northern_clear_mouth": {
+    "endpoint_a_xy": [258,398],
+    "endpoint_b_xy": [319,375],
+    "endpoint_uncertainty_px_each": 5,
+    "definition": "easternmost clear end of masonry/block entrance wall to southwestern tip of central hatched rock pillar; straight exterior opening chord, not cave axis",
+    "outward_side_reference_xy": [300,421],
+    "outward_definition": "outside drawn cave below the chord, on the side of the entrance marker's tail; normal points approximately down-right on the page",
+    "limitations": "A ragged block jamb and rounded pillar tip make a chord convention necessary. Normal to this chord is only an opening-facing proxy, not a measured passage axis. Construction phase unknown."
+  },
+  "southern_present_gap": {
+    "wall_end_xy": [548,386],
+    "pillar_end_xy": [502,400],
+    "endpoint_uncertainty_px_each": 6,
+    "definition": "mid-thickness end of eastern cave wall to mid-thickness easternmost tip of central rock pillar, across presently unfilled southern gap",
+    "outward_side_reference_xy": [537,431],
+    "outward_definition": "outside cave below gap; on entrance marker tail side",
+    "limitations": "Gap is the remaining opening visible in this drawing, not a recovered ancient full mouth. Endpoint convention is a mid-thickness wall-end to pillar-tip chord; irregular edges introduce larger definition uncertainty. Phase unknown."
+  },
+  "freeze_provenance": {
+    "pilot_read_before_freeze": false,
+    "packet_read_before_freeze": false,
+    "previous_annotation_numbers_seen": false,
+    "first_source_inspection": "original crop via view_image",
+    "inherited_context": "parent supplied source identification, image dimensions and feature names only"
+  }
+}

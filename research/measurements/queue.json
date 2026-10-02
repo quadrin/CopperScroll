@@ -36,15 +36,18 @@
       ],
       "target": "Abu Saraj IV/17 Plan 5 geometry",
       "packet": "iv17_packet.md",
-      "execution_state": "pilot_recorded",
-      "readiness": "independent_digitization_ready; survey_north_and_ancient_threshold_pending",
+      "execution_state": "independent_plan_repeat_recorded",
+      "readiness": "point_reproduction_supported; endpoint_envelope_extended; north_and_ancient_threshold_pending",
       "parallel_lane": "scaled_plan_digitization",
-      "next_action": "Repeat Plan 5 annotation independently; preserve current gap versus original southern mouth.",
+      "next_action": "Obtain survey north, ancient northern datum and original southern aperture/phase; preserve both independent pick sets.",
       "completion": "Independent annotations agree within declared envelopes; record surveyed north and ancient threshold/phase separately.",
       "outputs": [
         "iv17_pilot.json",
         "iv17_measurements.py",
-        "iv17_recomputed.json"
+        "iv17_recomputed.json",
+        "cycle2/iv17_repeat.json",
+        "cycle2/iv17_repeat_results.json",
+        "cycle2/iv17_repeat_report.md"
       ],
       "measures": [
         "northern_clear_gap",
@@ -85,15 +88,19 @@
       ],
       "target": "Hyrcania registration and hold-out residuals",
       "packet": "registration_packet.md",
-      "execution_state": "stored_coordinate_audit_recorded",
-      "readiness": "future_registration_awaits_independent_controls; datum_conversion_reproduction_pending",
+      "execution_state": "datum_and_conditional_grid_cell_test_recorded",
+      "readiness": "datum_computation_reproduced; original_Fig22_and_geographic_controls_pending",
       "parallel_lane": "registration_audit",
-      "next_action": "Freeze independent control/hold-out identities and criteria before fitting; recover source/datum metadata.",
+      "next_action": "Verify guide notation/feature identity, recover Fig22, then freeze independent fit/hold-out controls; retain failed regional fit.",
       "completion": "A future fit reports control geometry, distortion assumptions and independent residuals; accepted precision matches intended use.",
       "outputs": [
         "hyrcania_baseline.json",
         "hyrcania_registration_audit.py",
-        "hyrcania_registration_audit.json"
+        "hyrcania_registration_audit.json",
+        "cycle2/hyrcania_grid_cell.py",
+        "cycle2/hyrcania_grid_cell.json",
+        "cycle2/hyrcania_grid_cell_report.md",
+        "cycle2/hyrcania_dimensions.md"
       ],
       "measures": [
         "stored_holdout_residual",
@@ -110,16 +117,19 @@
       ],
       "target": "Entry-order sensitivity to anchors and editorial divisions",
       "packet": "sequence_packet.md",
-      "execution_state": "distance_pilot_recorded",
-      "readiness": "distance_scenarios_ready; independent_anchor_ledger_and_division_tests_pending",
+      "execution_state": "distance_and_frozen_coarse_grouping_sensitivity_recorded",
+      "readiness": "64_grouping_cases_complete; independent_associations_fine_districts_and_unmapped_subspans_pending",
       "parallel_lane": "sequence_sensitivity",
-      "next_action": "Freeze provenance/alternative-anchor ledger; retain unknown text slots and division mappings.",
+      "next_action": "Audit surviving anchors independently; define fine-district footprints and pending phrase/subspan mappings before held-out itinerary tests.",
       "completion": "Report regional group stability and held-out itinerary predictions across declared alternatives; keep candidate probabilities undefined.",
       "outputs": [
         "sequence/pilot.py",
         "sequence/manifest.json",
         "sequence/results.csv",
-        "sequence/edges.csv"
+        "sequence/edges.csv",
+        "cycle2/sequence_grouping.md",
+        "cycle2/sequence_grouping/frozen_input_ledger.json",
+        "cycle2/sequence_grouping/scenario_metrics.csv"
       ],
       "measures": [
         "selected_stop_distance_and_order",
@@ -164,8 +174,23 @@
     "pilot_or_audit_outputs_recorded": 4,
     "protocol_and_source_requirements_only": 2,
     "new_primary_targets": 0,
-    "new_bounded_source_checks": 0,
+    "new_bounded_source_checks": 2,
     "new_decisive_candidate_tests": 0,
-    "question_closures": 0
-  }
+    "question_closures": 0,
+    "cumulative_project_bounded_checks": 19
+  },
+  "last_update_utc": "2026-10-02",
+  "last_completed_cycle": 2,
+  "completed_cycles": [
+    {
+      "cycle": 1,
+      "bounded_checks_added": 0,
+      "role": "protocol setup and pilots"
+    },
+    {
+      "cycle": 2,
+      "bounded_checks_added": 2,
+      "role": "IV/17 point reproduction and conditional Hyrcania quantization-alone test; grouping pass counts separately"
+    }
+  ]
 }
