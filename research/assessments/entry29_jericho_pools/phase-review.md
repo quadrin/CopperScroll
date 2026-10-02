@@ -37,3 +37,9 @@ Trümper’s discussion and reproduced plans belong to the same Netzer excavatio
 The phase plans are available and adequate for reproducible conditional channel-distance tests. They do not show a surviving pool inlet to attach the Copper Scroll distance to, and all three crop out the complete pool sides. Distances from a reconstructed channel to a selected side can support or conflict with that narrowly specified geometry model. They cannot establish an ancient inlet coordinate, date a concealed deposit, or identify the northern pool from a geometric coincidence alone.
 
 A complete source-linked phase plan or excavation elevation record could test whether the relevant drawn channel and reference edge coexisted. That missing information is a remaining discriminator, not a reason to abandon measurements of the accessible figures. No original Netzer book pages were accessed in this review; their citation targets are recorded above. The publisher PDF itself was accessible.
+
+
+
+### Subsequent original-author account inspected
+
+Netzer 1983 pp. 100–101 and 104–106 now supply complete earlier-pool outlines, published approximately 18 × 13 m dimensions, and the Herodian joining narrative/plan for an approximately 32 × 18 m basin. The p. 106 footnote explicitly revises an earlier joined-pool chronology. Original inlet contacts and the 2001 final-report pages remain unread; no exact joining contact date is established by this account. [Follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/kotar-netzer1983.md).

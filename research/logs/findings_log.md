@@ -1124,3 +1124,9 @@ Direct Puech 2015 page review verifies entry 25 commentary and sigla, and entrie
 ## 2026-10-02 UTC — Entry 29 northern Jericho pool assessment
 
 Completed parallel reading, geometry and phase reviews. Northern pool remains a low-confidence provisional feature candidate. The perpendicular model samples visible long-wall stubs against the reconstructed central route in Figs. 20–22, with southern-pool control and 24/27-cubit sensitivity. Nominal phase-3/5 farther-side distance about 15.7 m misses the 24-cubit 9.6–14.4 m range under the tight manual envelope but overlaps under the wider stress envelope. The 27-cubit branch overlaps both pools. Phase 6 line identity remains unresolved, and original inlets are explicitly unpreserved. No geographic coordinate or grade change. Counters: 22 direct targets / 5 map intakes / 22 bounded checks / 0 decisive tests / 0 closures. [Packet](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/README.md).
+
+
+
+## Kotar follow-up — 2 October 2026, Los Angeles
+
+Netzer’s 1983 original chapter now supplies a complete plan (p. 100), approximately 18 × 13 m for each early pool (p. 101), and a later plan/text identifying Herod’s joining of the pair into one approximately 32 × 18 m basin (pp. 105–106, footnote). This adds a specific conflict with assuming survival of two separate reservoirs into a later-use model. A merged northern basin is a separate possible hypothesis and changes which sides are longer; the earlier offset calculations cannot transfer to it. Candidate confidence remains low and the assessment inconclusive. One new source target and one bounded survival check bring totals to 23 direct targets / 5 map intakes / 23 bounded checks / 0 decisive tests / 0 closures. [Image-checked observations, exact pages and remaining source limits](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/kotar-netzer1983.md).

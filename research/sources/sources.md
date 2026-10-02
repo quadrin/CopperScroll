@@ -567,3 +567,9 @@ Direct Puech 2015 page review verifies entry 25 commentary and sigla, and entrie
 ### Trümper 2018 — Jericho swimming-pool assessment intake
 
 Monika Trümper, “Swimming Pools and Water Management in the Eastern Mediterranean World of the 4th to 1st Century BC,” in Jonas Berking, ed., *Water Management in Ancient Civilizations*, Berlin Studies of the Ancient World 53 (2018), pp. 255–296. [Publisher PDF](https://edition-topoi.org/download_pdf/bsa_053_10.pdf), 42 pages, SHA-256 `0d0cd8031e3e03181d67942851017f7a4ae9219f0bc405c97f954b094f7efab7`. Direct image inspection scope printed pp. 280–286 / Figs. 18–22 and p. 296 credits; Netzer bibliography checked as provenance. One authored-reanalysis/reproduced-plan target; same Netzer excavation lineage, no independent field attestation. Puech 2015 pp. 62–65 reinspection adds no target. Original Netzer books not read: publisher/catalogue pages only. Exact original-page targets and access links in [phase review](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/phase-review.md).
+
+
+
+### Netzer 1983 — signed-in Kotar original chapter
+
+Ehud Netzer, “ארמונות החורף ואחוזת המלך ביריחו,” *קרדום: יריחו וסביבתה* 28–30 (1983), pp. 95–112. Target-scope direct image inspection: printed pp. 100–101 and 104–106, complete earlier-pool plan, later second-palace plan and joining footnote. Context pages 95–99/102–103 viewed to stated partial coverage. [Kotar viewer](https://kotar.cet.ac.il/KotarApp/Viewer.aspx?nBookID=95087647). Signed-in access successful. Original-author illustrated preliminary account, same Netzer fieldwork lineage; separate from both 2001 books. No raw page images published. [Observations and scope](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/kotar-netzer1983.md).
