@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-01",
+  "question_ids": [
+    "R01",
+    "Q38",
+    "Q41",
+    "Q42"
+  ],
+  "file": {
+    "name": "Back to Qumran_ Final Report (1993-2004) (JSP 18) -- Yitzhak Magen,Yuval Peleg -- 1438e2f187b2bb2a0e323f0d12f52d.pdf",
+    "bytes": 22903045,
+    "sha256": "1c109cde16e6b79bae473567f69e6a2421f25e81a26ca475de2bfabfc5e24966",
+    "pdf_pages": 483,
+    "embedded_file_count": 0,
+    "page_sizes_pt": [
+      {
+        "count": 1,
+        "width": 336,
+        "height": 453.6
+      },
+      {
+        "count": 482,
+        "width": 680.32,
+        "height": 870.24
+      }
+    ]
+  },
+  "inspection": {
+    "production_credits_pdf_page": 5,
+    "preface_printed_pages": [
+      "XI",
+      "XII",
+      "XVI",
+      "XVII"
+    ],
+    "preface_pdf_pages": [
+      12,
+      13,
+      17,
+      18
+    ],
+    "aerial_spread_pdf_pages": [
+      21,
+      22
+    ],
+    "rechecked_water_printed_pages": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "rechecked_water_pdf_pages": [
+      98,
+      99,
+      100,
+      101,
+      102,
+      103
+    ],
+    "entire_book_read": false,
+    "full_extracted_text_searched": true,
+    "page_structure_inventoried": true,
+    "arabic_pagination_offset": 23,
+    "last_printed_page": 459,
+    "last_content_pdf_page": 482,
+    "final_blank_pdf_page": 483
+  },
+  "new_primary_target": {
+    "id": "magen2018_preface_provenance",
+    "same_publication_as_previously_inspected_water_chapter": true,
+    "new_scoped_target": true
+  },
+  "bounded_check": {
+    "hypothesis": "Supplied full-report PDF contains the separate pocket-plan sheet",
+    "result": "Excluded to this PDF payload: no separate sheet page or embedded attachment recovered",
+    "physical_book_sheet_inspected": false,
+    "other_digital_editions_excluded": false
+  },
+  "provenance": {
+    "magen_report_completion_after_peleg_death": {
+      "printed_page": "XII",
+      "pdf_page": 13,
+      "statement_type": "Author's preface account"
+    },
+    "acknowledgements": {
+      "printed_page": "XVII",
+      "pdf_page": 18,
+      "graphic_artist": "Alina Pikovsky",
+      "publication_venture": "Yoav Tzionit",
+      "map_specific_credit": false
+    },
+    "production": {
+      "pdf_page": 5,
+      "organisation": "Keterpress Enterprises",
+      "specific_map_custody_verified": false
+    }
+  },
+  "map_status": {
+    "peleg2009_map_recovered": false,
+    "pocket_sheet_recovered": false,
+    "pocket_sheet_nli_id": "990044096250205171",
+    "identity_between_maps_verified": false
+  },
+  "kpi_delta": {
+    "primary_targets": 1,
+    "map_intakes": 0,
+    "bounded_checks": 1,
+    "decisive_tests": 0,
+    "question_closures": 0
+  },
+  "kpi_totals": {
+    "primary_targets": 12,
+    "map_intakes": 5,
+    "bounded_checks": 13,
+    "decisive_tests": 0,
+    "question_closures": 0
+  },
+  "note": "research/sources/magen2018_full_report_map_check_2026-10-01.md",
+  "geographic_registration_performed": false,
+  "confidence_changed": false
+}

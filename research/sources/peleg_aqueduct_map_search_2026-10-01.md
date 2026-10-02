@@ -1,5 +1,7 @@
 # Peleg's Qumran aqueduct map: retrieval search
 
+**Subsequent full-report upload:** preface/production pages are now read, while the separate folded sheet is absent from the supplied PDF. [New inspection and attribution qualification](https://github.com/quadrin/CopperScroll/blob/main/research/sources/magen2018_full_report_map_check_2026-10-01.md). Earlier failed retrievals below remain historical.
+
 1 October 2026, America/Los_Angeles. R01 / Q38, Q41–Q42. Public-source search and archive-route verification following the supplied Taylor–Gibson original-page review.
 
 ## Result and map identity
@@ -40,3 +42,10 @@ The new Schulz attachment opens locally: `screencapture-jstor-org-stable-2793060
 Request the aqueduct map Yuval Peleg said he had already prepared by the November 2009 visit organized by Shimon Gibson with David Amit, Stephen Pfann and David Stacey, as reported in Taylor–Gibson 2020 pp. 215–216, note 58. Ask for the pre-visit drawing and any subsequent revision, drawing/file or excavation/survey licence number, surveyor and drafting credits, legend and measured extent, horizontal/vertical datum, station coordinates, photographs and accompanying notes. Specifically ask whether it maps the northern/southern collecting branches, waterfall basin and proposed dam axis, short tunnel and bypass loop, long tunnel openings, southern spillways and Reeder's upstream wall/boulder. Ask separately whether the 2018 88 × 57 cm pocket sheet contains this survey.
 
 No enquiry was sent. No map or image was republished. These contacts and catalogue results add no inspected archaeological drawing, completed candidate test, geographic control or question closure. KPI totals remain **11 direct primary targets, 5 map intakes, 12 bounded checks, 0 decisive tests, 0 closures**; 12 questions remain open, 7 In progress / 5 Queued.
+
+
+## Full JSP 18 report: preface and missing pocket sheet — later 1 October 2026
+
+The supplied 483-page full report was checked for the separate folded plan and inspected at production credits, preface XI–XII/XVI–XVII, the unnumbered aerial spread, and water-system pp. 75–80. No separate pocket-plan page or embedded attachment occurs in this PDF. The preface now supplies direct provenance: Magen says he completed and edited the report after Peleg's death; its joint author line alone therefore cannot show that Peleg revised his 2009 dam position. Alina Pikovsky's graphic-artist acknowledgement and Keterpress's production credits provide workflow leads, without identifying a map's drafter or custodian. Ask for the JSP 18 pocket-sheet artwork and drawing/version records. Peleg's 2009 map remains unrecovered.
+
+Count one newly inspected preface/production target from the same publication (new pages), plus one negative pocket-sheet payload check. The already inspected water-system pages add no second target. Totals: 12 primary targets / 5 map intakes / 13 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Checksum, page mapping, scope and next retrieval specification](https://github.com/quadrin/CopperScroll/blob/main/research/sources/magen2018_full_report_map_check_2026-10-01.md).

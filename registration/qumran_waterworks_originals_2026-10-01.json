@@ -155,6 +155,30 @@
         "entire_chapter_read": false
       },
       "dependence": "Note 58 expands the same 2009 visit reported in Taylor-Gibson 2011 manuscript note 85; not another field campaign."
+    },
+    {
+      "id": "magen2018_preface_provenance",
+      "title": "Back to Qumran: Final Report (1993–2004), preface and production provenance",
+      "url": "https://www.jstor.org/stable/j.ctv1t8cdq.4",
+      "file": "Back to Qumran_ Final Report (1993-2004) (JSP 18) -- Yitzhak Magen,Yuval Peleg -- 1438e2f187b2bb2a0e323f0d12f52d.pdf",
+      "sha256": "1c109cde16e6b79bae473567f69e6a2421f25e81a26ca475de2bfabfc5e24966",
+      "inspection": {
+        "printed_pages": [
+          "XI",
+          "XII",
+          "XVI",
+          "XVII"
+        ],
+        "pdf_pages": [
+          12,
+          13,
+          17,
+          18
+        ],
+        "production_credits_pdf_page": 5,
+        "entire_book_read": false
+      },
+      "dependence": "Same 2018 publication as the previously inspected water-system chapter; this count covers newly inspected preface pages, not independent excavation."
     }
   ],
   "observations": [
@@ -343,6 +367,23 @@
           "decisive_tests": 0,
           "question_closures": 0
         }
+      },
+      "full_report_followup": {
+        "note": "research/sources/magen2018_full_report_map_check_2026-10-01.md",
+        "review_date": "2026-10-01",
+        "pdf_pages": 483,
+        "separate_pocket_sheet_in_payload": false,
+        "embedded_file_count": 0,
+        "preface_read_to_scoped_pages": true,
+        "magen_completion_statement": {
+          "printed_page": "XII",
+          "pdf_page": 13,
+          "implication": "Joint authorship does not establish Peleg's personal adoption of final report's dam reconstruction"
+        },
+        "map_specific_credit_recovered": false,
+        "pocket_sheet_artwork_requested": false,
+        "next_record": "JSP 18 production package and pocket-sheet artwork, with drawing/version credits",
+        "messages_sent": false
       }
     }
   ],
@@ -389,6 +430,10 @@
     {
       "id": "conditional_tunnel_offsets",
       "result": "Mixed/inconclusive conditional correspondence"
+    },
+    {
+      "id": "magen2018_full_pdf_pocket_sheet",
+      "result": "Separate pocket-sheet hypothesis excluded to this supplied PDF payload; printed sheet and other digital copies remain untested"
     }
   ],
   "geographic_registration": {
