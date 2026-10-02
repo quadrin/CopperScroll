@@ -46,3 +46,6 @@ Record setup progress separately: six tracks configured, four with recorded pilo
 ## Cycle 4 completed
 
 [Original-edition and Doq-plan intake](cycle4/README.md) verifies Puech’s reading/commentary to scope and corrects Amit’s plan locator to Fig. 2 on p. 224. Two scoped targets enter the ledger; no additional bounded check or measured geographic point. Full Amit chapter reload remains limited; Puech is readable. Wall/mountain and jar/deposit alternatives remain separate.
+
+
+2 October 2026 Hyrcania update: original Fig. 22 is now recovered. A conditional page-up northern-pool offset pass is recorded in [the assessment](../assessments/entry29_hyrcania/README.md); centre/rim origins differ about 11 m. North validation, measuring datum, dated surface and geographic controls remain pending. Six-track setup/output counts remain unchanged.

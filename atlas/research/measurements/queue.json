@@ -97,9 +97,9 @@
       "target": "Hyrcania registration and hold-out residuals",
       "packet": "registration_packet.md",
       "execution_state": "datum_and_conditional_grid_cell_test_recorded",
-      "readiness": "datum_computation_reproduced; original_Fig22_and_geographic_controls_pending",
+      "readiness": "Fig22_recovered; datum_computation_reproduced; true_north_guide_feature_identity_geographic_controls_and_ancient_offset_datum_pending",
       "parallel_lane": "registration_audit",
-      "next_action": "Verify guide notation/feature identity, recover Fig22, then freeze independent fit/hold-out controls; retain failed regional fit.",
+      "next_action": "Validate source-plan north and exact offset datum; freeze independent fit/hold-out controls; retain failed regional fit. See entry29_hyrcania assessment for rim/centre page-up models.",
       "completion": "A future fit reports control geometry, distortion assumptions and independent residuals; accepted precision matches intended use.",
       "outputs": [
         "hyrcania_baseline.json",
@@ -108,7 +108,9 @@
         "cycle2/hyrcania_grid_cell.py",
         "cycle2/hyrcania_grid_cell.json",
         "cycle2/hyrcania_grid_cell_report.md",
-        "cycle2/hyrcania_dimensions.md"
+        "cycle2/hyrcania_dimensions.md",
+        "../assessments/entry29_hyrcania/geometry.json",
+        "../assessments/entry29_hyrcania/README.md"
       ],
       "measures": [
         "stored_holdout_residual",

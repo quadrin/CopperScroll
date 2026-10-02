@@ -1,0 +1,47 @@
+{
+  "reviewed": "2026-10-02",
+  "status": "conditional_inconclusive",
+  "new_source_targets": 0,
+  "new_bounded_checks_proposed": 0,
+  "reading_models": [
+    {
+      "entry": 16,
+      "feature": "northern aqueduct, trail intersection west of Hyrcania",
+      "datum_verified": false,
+      "alternatives_cubits": [
+        14,
+        40,
+        41
+      ],
+      "correction": "Passage49 is not Eshel published datum",
+      "source": "Eshel printed102-103/PDF119-120"
+    },
+    {
+      "entry": 29,
+      "feature": "northern member of double pool west of fortress",
+      "direction": "north in Eshel final proposal; left/north alternative",
+      "offset_cubits": 24,
+      "datum_verified": false,
+      "correction": "Side-length/perimeter tests do not test north-offset model",
+      "source": "Eshel printed103-105/PDF120-122; Patrich1989pp255-256Fig22; Puech2015p64nn252-258"
+    },
+    {
+      "entry": 35,
+      "feature": "southern Kidron intake station1 under dam interpretation",
+      "alternatives": [
+        "cairn",
+        "dam",
+        "gorge",
+        "peak",
+        "Kidron",
+        "pottery"
+      ],
+      "datum_verified": false,
+      "source": "Eshelprinted102/PDF119; existingreadingsrecord"
+    }
+  ],
+  "independence": "Patrich survey is archaeological observation; Eshel reproduces it and supplies reading/site hypothesis",
+  "geographic_geometry": "unset; existing fit unaccepted",
+  "phase": "datum construction/use unresolved",
+  "new_access_failures": []
+}

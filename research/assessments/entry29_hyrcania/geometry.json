@@ -1,0 +1,100 @@
+{
+  "reviewed": "2026-10-02",
+  "source": {
+    "author": "Joseph Patrich",
+    "year": 1989,
+    "printed_pages": [
+      255,
+      256
+    ],
+    "pdf_pages": [
+      13,
+      14
+    ],
+    "figure": 22,
+    "image": "recovered/aqua-archive/patrich-fig22-p256.png",
+    "image_dimensions_px": [
+      1488,
+      2033
+    ]
+  },
+  "status": "conditional source-image offset model; geographic coordinates unset",
+  "orientation": {
+    "proxy": "page-up approximates northern sector based on narrative labels",
+    "north_arrow_visible": false,
+    "absolute_bearing_validated": false
+  },
+  "scale": {
+    "endpoints_px": [
+      [
+        1027,
+        1310
+      ],
+      [
+        1258,
+        1310
+      ]
+    ],
+    "length_m": 50,
+    "metres_per_pixel": 0.21645021645021645,
+    "precision": "manual approximate; line thickness and scan geometry uncalibrated"
+  },
+  "anchors": {
+    "pool_centre_proxy_px": [
+      432,
+      291
+    ],
+    "northmost_rim_proxy_px": [
+      421,
+      240
+    ],
+    "anchor_precision_px": 15
+  },
+  "offset_model": {
+    "cubits": 24,
+    "unit_range_m": [
+      0.4,
+      0.6
+    ],
+    "offset_m": [
+      9.6,
+      14.4
+    ],
+    "page_up_centre_targets_px": [
+      [
+        432,
+        246.648
+      ],
+      [
+        432,
+        224.472
+      ]
+    ],
+    "page_up_rim_targets_px": [
+      [
+        421,
+        195.648
+      ],
+      [
+        421,
+        173.472
+      ]
+    ],
+    "interpretation": "two alternative short loci; neither is a surveyed deposit or a detected feature"
+  },
+  "phase_limits": [
+    "pool plaster compatible with Second Temple period, not sealed construction context",
+    "Garbrecht-Peleg generalized pool dimensions and cistern counts differ from individual Patrich description"
+  ],
+  "counts": {
+    "new_source_targets": 0,
+    "new_candidate_checks_proposed": 1,
+    "closures": 0
+  },
+  "validation": {
+    "offset_arithmetic_reproduced": true,
+    "anchor_separation_page_up_m": 11.03896103896104,
+    "picking_uncertainty_metres_approx": 3.2467532467532467,
+    "geographic_registration_accepted": false
+  }
+}

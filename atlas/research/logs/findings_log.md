@@ -1,5 +1,10 @@
 # Findings log
 
+## Hyrcania and Sartaba parallel analysis — 2 October 2026, Los Angeles
+
+**Edition evidence:** Eshel places entry16’s start at a trail/northern-aqueduct intersection; passage49 is a separate project proxy. Entry29’s northward offset differs from side-length tests. Puech pp69/73 prefer entry35’s mound/gorge and argue against a dam on flood-loss grounds; that argument supplies no construction contact. **Conditional geometry:** northern pool centre/rim origins differ about11m; a 24-cubit page-up model remains datum- and orientation-dependent. **Control evidence:** Sartaba supplies fortress hydraulic features, but its20×7m divided feature is pool-or-structure; published siphon dimensions disagree without common endpoint definitions. Added2 scoped targets,2 bounded checks and1 inconclusive conditional assessment. No grade/marker change or closure. [Hyrcania assessment](../assessments/entry29_hyrcania/README.md), [Sartaba control](../assessments/sartaba_hydraulic_control/README.md).
+
+
 ## IV/17 conditional assessment — 2 October 2026, Los Angeles
 
 Reinspected existing Puech p. 59 and Sion p. 63 images; integrated prior independent plan picks and chronological audit. **Plan observation/inference:** the interior remains continuous behind the pillar in the drawn plan; passage clearance and ancient phase are unknown. **Measured proxy:** present mouths nominally face southeast relative to unspecified published north, without a surveyed true-bearing result. **Correction:** Sion’s reported use begins in the first half of the second century BCE. **Result:** two-mouth/pillar feature compatibility, unresolved site/phase/threshold; no deposit point. Second conditional assessment complete; all source/check/closure counters unchanged. [Full assessment](../assessments/entry25_iv17/README.md).
