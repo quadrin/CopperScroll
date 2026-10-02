@@ -24,3 +24,6 @@ The initial backfill added **16 viewable image assets** (9 Michigan map views/cr
 
 
 Latest recoveries: [Synagogues](https://github.com/quadrin/CopperScroll/tree/main/research/assets/plans/tir-michigan/synagogues), [Strobel](https://github.com/quadrin/CopperScroll/tree/main/research/assets/plans/strobel1972), [ESI 6](https://github.com/quadrin/CopperScroll/tree/main/research/assets/plans/esi6), [ESI 7–8](https://github.com/quadrin/CopperScroll/tree/main/research/assets/plans/esi78). The readable Schulz plan remains missing. This backfill adds no research KPI counts.
+
+
+[JSP 18 Qumran figures recovered](magen-peleg2018/README.md): detailed building plans, sections, northern-dump and hydraulic photographs. Folded map remains unlocated; partial Bar-Adon attachment does not reach Twin Cave.

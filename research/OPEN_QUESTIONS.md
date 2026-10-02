@@ -322,3 +322,6 @@ Reattached TIFFs open and match earlier source hashes. Archived complete sheets,
 
 
 Archive update, 2 October 2026: Synagogues completes the recovered Michigan full-resolution sheet set. Strobel Fig. 1 and plates 7–10, ESI 6 Figs. 26/29 and ESI 7–8 Figs. 79/80 are now preserved with page-specific provenance under `research/assets/plans/`. ESI 7–8 figures are finds illustrations. Schulz's 195-pixel preview leaves the readable Fig. 2 unresolved. Previously reviewed evidence restored: zero additional targets, checks, decisive tests or closures.
+
+
+2 October 2026 reattachment update: JSP 18 opens; Figs. 57–58, 76–77 and related settlement/water-system figures are archived with hashes and page locators. Folded pocket map remains unlocated. Bar-Adon’s supplied capture ends at printed p. 9, leaving Twin Cave pp. [15]–17/B1 outside coverage. Archival recovery adds zero research KPI counts; candidate confidence remains unchanged.
