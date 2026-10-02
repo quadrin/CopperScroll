@@ -15,3 +15,7 @@ The description places two openings in the eastern cliff, reached by rope ladder
 The report interprets the cave as used from the first half of the third century BCE to the first half of the first century BCE. Its finds-based use interpretation does not independently date pillar cutting, entrance formation or southern-mouth blocking. No new first-century threshold date is established in this recovery.
 
 This is recovery and a page-specific confirmation of a previously inspected target. Research KPI counts and candidate confidence remain unchanged. [Asset hashes and original paths](intake-2026-10-02.json). Root and atlas copies preserve identical bytes. Only the targeted Sion pages, Feig article and issue survey map are archived in this intake; other issue drawings remain available in the supplied ZIP for later extraction.
+
+## Additional supplied Sion pages
+
+[Selected additional plans and context](sion-additional-plan-context-pages.pdf), from *Regions IV and VI: Survey and Excavations of Caves along the Jebel…*: source PDF pages 2, 4, 6, 13, 18–22, 29, 31, 34–36, 38. PDF page 2 contains printed map p. 43; page 3 is printed p. 45, so do not assume uninterrupted printed pagination. Includes IV/17 context already preserved elsewhere; cave identities remain separate. Selection does not claim every report figure has been archived.

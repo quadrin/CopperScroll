@@ -9,3 +9,7 @@ David Amit, Yizhar Hirschfeld and Joseph Patrich, eds., אמות המים הקד
 - [Hyrcania fort water-installation plan, Fig. 22, p. 256](patrich-fig22-p256.png), with 50 m scale and labelled pools/cisterns.
 
 Chapter extracts preserve source page contents; PNGs are full-page renderings. Recovery closes the original-image access gaps for these figures. This intake does not claim a fresh reading of every chapter page, new calibrated measurements, geographic registration or a resolved construction phase. Research KPI counts remain unchanged. [Asset checksums](intake-2026-10-02.json).
+
+## Qumran and Ein Boqeq chapter extract
+
+[Complete supplied trimmed extract](qumran-ein-boqeq-chapters.pdf): PDF pp. 1–6 = printed pp. 283–288, Qumran chapter by Zvi Ilan and David Amit; PDF pp. 7–11 = printed pp. 289–293, Ein Boqeq water-system chapter. Includes Qumran’s regional plan (p. 283) and reconstruction (p. 287), plus Ein Boqeq’s overall contour/water-system map (p. 290), installation plan (p. 292), and sections (p. 293). Preserve the distinction between observed features and reconstruction. The two Qumran figures overlap earlier archival selections.

@@ -10,3 +10,7 @@ Ephraim Stern, ed., supplementary volume 5 (2008). The uploaded file contains th
 ## Duplicate upload confirmed — 2 October 2026
 
 The reattachment ending Archive(1).pdf matches the previous source byte-for-byte: 177,976,393 bytes, SHA256 85ca76a5fc18aef8f1082f0c2952740ae228b94d64456f2f3fc5bce63a2b9207. The Jericho figures and pp. 1798–1800 extract above remain the archived reference. No duplicate figure files or independent-source count are added.
+
+## Mount Gerizim extract
+
+[Complete supplied Gerizim extract](gerizim-extract.pdf), printed pp. 1742–1752, including the sacred-precinct site plan, phase material and photographs. PDF p. 2 is printed p. 1743, with the site plan. Overall plans do not establish a link between Festus coin locus 5178 and a staircase/cistern; that association remains unresolved.

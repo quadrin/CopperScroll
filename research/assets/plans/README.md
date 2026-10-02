@@ -30,3 +30,9 @@ Latest recoveries: [Synagogues](https://github.com/quadrin/CopperScroll/tree/mai
 
 
 Latest recovery: [Schulz Figs. 1–3](schulz1960/README.md), including readable aqueduct Fig. 2 p. 53, and [Bar-Adon regional map / Rujm el-Bahr figures](baradon1989/README.md). This supersedes the earlier readable-Schulz access gap. Twin Cave B1 remains missing.
+
+## Additional reference selections, 2 October 2026
+
+Archived selections: [DJD III plates](djdIII1962/), [Migdal Afeq](tendler2014/), [desert fortress water supply](garbrecht-peleg1994/), [Manasseh II](zertal2008/), [Manasseh III](zertal-vol3/), [Manasseh IV / Sartaba](zertal-vol4/), [SWP name-list identity](swp-name-lists/), plus additions in [ʿAtiqot 41](atiqot41/), [Aqueducts 1989](aqueducts1989/) and [NEAEHL V](neaehl-vol5/).
+
+Archival recovery alone does not increment decisive tests or close research questions. Copyright remains with the original rights holders; no new licence is asserted. [Source and asset manifest](reference-batch-2026-10-02.json).
