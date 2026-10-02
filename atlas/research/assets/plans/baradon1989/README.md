@@ -28,3 +28,16 @@ These user-supplied crops carry figure letters but no chapter headings or printe
 - [ז4: retaining wall of path linking Site A and Site B, viewed from south-southeast](z4-path-retaining-wall.png).
 
 These are figure intakes, not a dated hydraulic-system or Copper Scroll candidate assessment. Dating of drains, surfaces and the path requires surrounding report text. The archive adds no research KPI counts or question closures. Twin Cave B1 remains missing.
+
+
+## Further plan and Site B sections
+
+[ג4: building plan](g4-building-plan.png), captioned building plans and sections; supplied crop shows the plan with north arrow, 10 m scale, loci and spot elevations. The chapter ג site name and printed page remain unverified.
+
+[ז5: Site B plan and sections, printed p. 52](z5-site-b-plan-sections-p52.png). Page number and figure caption are visible. The page is sideways as supplied; original bytes preserved. Ash and rock legend, steep/sloping terrain annotations, relative measurements and 5 m scale remain visible. Caption explains the irregular plan reflects the cliff’s topography and distinguishes excavation-relative measurements from the datum of −400 m indicated at the lower left of the section. Do not equate its relative values with absolute geographic elevations without applying the documented datum.
+
+Enlarged supplied panels from ז5: [A–B, view west](z5-ab-west-view-detail.png), [G–H, view north](z5-gh-north-view-detail.png), [IV / E′–F′, view west](z5-iv-west-view-detail.png), and [combined section panels](z5-section-panel-group.png). These repeat parts of one figure and are not independent archaeological evidence. Roman numeral IV belongs to this figure’s section designation, not to Cave IV/11 or IV/17.
+
+[ז6: Site B, view from northwest](z6-site-b-rock-platform.png), caption describing a raised rock platform, grooved stone, adjacent rectangular construction and a lower surface behind it. [ז7: Site B, view from northeast](z7-site-b-rectangular-structure.png), caption describing rectangular construction termed a “store” on the raised rock platform. Record those captions without treating the store interpretation or feature dates as independently established.
+
+Site B’s chapter title remains unverified in this crop intake. Twin Cave B1 remains outside coverage. No candidate confidence, measured result or research KPI changes.
