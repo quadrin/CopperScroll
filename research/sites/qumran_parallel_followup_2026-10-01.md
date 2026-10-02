@@ -1,5 +1,8 @@
 # Entries 20–23: original-source follow-up, Qumran/Secacah
 
+**Subsequent access update, 1 October 2026:** Schulz Fig. 2/p. 53 and Strobel Fig. 1/p. 56 are now read, with adjacent gorge material and Taylor–Gibson 2020 note 58. [Direct original-source review](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_supplied_originals_review_2026-10-01.md) supersedes the unread-target status below to its stated coverage.
+
+
 1 October 2026. Project-authored research assessment; no new field observation.
 
 ## Result
@@ -110,3 +113,10 @@ New retrieval refs: `turn253view0` / `turn254view0` (Schulz volume record / orig
 ## Subsequent R01 drawing-access and phase pass
 
 1 October 2026. The [access and phase-check record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_drawings_phase_check_2026-10-01.md) documents a newly inspected Taylor–Gibson 2011 manuscript p. 22 / note 85 text target. Initial construction dating remains uncertain; unpublished work provides a narrower archive lead. This text-only inspection supplies no original drawing or measured upper-feature tie. Schulz p. 53 and Strobel Fig. 1 p. 56 remain pending. R01 stays In progress; phase, feature rankings and coordinates remain unchanged.
+
+
+## Supplied drawings and phase account inspected directly
+
+1 October 2026. Schulz pp. 52–57 / Fig. 2 adds the northern side-branch account and a distinction between natural fissure B and apparently artificial opening A. Strobel Fig. 1 is a de Vaux-derived settlement plan; pp. 65–68 separately discuss the higher channel/natural basin and a proposed lifting mechanism. Taylor–Gibson pp. 215–216 / note 58 details the November 2009 dam/loop/spillway disagreement and Peleg's prepared-map statement. [The direct review](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_supplied_originals_review_2026-10-01.md) retains reported observations separately from reconstructed hydraulics and construction dates.
+
+The new conditional window crosswalk has approximately 0.05 m agreement for the second western offset and a 0.95 m discrepancy for the first; endpoint/path uncertainty and descriptive disagreement keep it inconclusive. The geographic intake/wall/boulder tie and reservoir name remain open. Next locate Peleg's map and field records, obtain missing Schulz close-up plates, and compare phase-specific levels. Three new original-publication targets and three bounded checks bring totals to 11 / 5 map intakes / 12 bounded checks / 0 decisive tests / 0 closures. R01 remains In progress.

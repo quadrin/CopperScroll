@@ -1,12 +1,15 @@
 # Qumran waterworks: drawing access and construction-date check
 
+**Subsequent access update, 1 October 2026:** The user has supplied both JSTOR captures and the Taylor–Gibson 2020 offprint. The stated drawing and water-system targets are now directly inspected; the earlier failures below remain historical. [Verified page mapping, observations and revised next tests](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_supplied_originals_review_2026-10-01.md).
+
+
 1 October 2026, subsequent R01 research pass. Project assessment; text-only source inspection and access results.
 
 ## Outcome and coverage
 
 Schulz 1960 p. 53 and Strobel 1972 Fig. 1 p. 56 remain unread. A focused search recovered a narrower first-hand fieldwork lead in Taylor and Gibson's manuscript. Its construction-date statement was read as public extracted text, without page-image or figure verification. This pass completes that scoped text target and one bounded phase check; it does not complete the four-entry candidate test.
 
-Starting records: [previous source follow-up](../sites/qumran_parallel_followup_2026-10-01.md), [dependency audit](../sites/qumran_cluster_dependency_audit_2026-09-30.md), and the active [R01 tracker](../OPEN_QUESTIONS.md). Existing source access and repeated observations remain part of that baseline.
+Starting records: [previous source follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sites/qumran_parallel_followup_2026-10-01.md), [dependency audit](https://github.com/quadrin/CopperScroll/blob/main/research/sites/qumran_cluster_dependency_audit_2026-09-30.md), and the active [R01 tracker](https://github.com/quadrin/CopperScroll/blob/main/research/OPEN_QUESTIONS.md). Existing source access and repeated observations remain part of that baseline.
 
 ## Original publication and target text
 

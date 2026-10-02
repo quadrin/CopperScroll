@@ -445,3 +445,12 @@ The p. [15] excavation credit gives Jones-associated volunteer-team and season l
 ## R01 focused text target and access update — later 1 October 2026
 
 Taylor–Gibson 2011 manuscript p. 22 / note 85: public extracted text inspected, original images/figures uninspected. Schulz p. 53 and Strobel Fig. 1 p. 56 remain unavailable in this pass. King's 2020 offprint failed with HTTP 403; publisher preview is front matter. [Full source and attempt record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_drawings_phase_check_2026-10-01.md). One scoped primary target and one bounded check added; totals 8 / 5 map intakes / 9 bounded checks / 0 decisive tests / 0 closures.
+
+
+## Supplied Qumran originals: access superseded — later 1 October 2026
+
+- Schulz, *ZDPV* 76 (1960), article pp. 50–72: supplied 20-page capture directly inspected at printed pp. 52–57, especially Fig. 2/p. 53. Cited photographic plates remain unavailable within this inspected capture inventory.
+- Strobel, *ZDPV* 88 (1972), 55–86: supplied 43-page capture inspected at Fig. 1/p. 56, gorge text pp. 65–68 and plates 7–10. Fig. 1 is a de Vaux 1956-derived settlement plan. Route dimensions repeated from Schulz are not independent observations.
+- Taylor–Gibson, *Qumran in the Iron Age* (2020), 177–224: supplied repository offprint, 60 PDF pages including front matter, inspected at printed pp. 196–201, 213, 215–216/note 58 and Figs. 15–16. The 2009 visit overlaps the 2011 manuscript account; a prepared-map statement adds a record lead rather than a second campaign.
+
+[File checksums, precise capture/PDF mapping, source observations and tests](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_supplied_originals_review_2026-10-01.md). Earlier JSTOR and repository-403 attempts remain historical, superseded to this inspection scope. Three new source targets / three bounded checks added; totals 11 / 5 map intakes / 12 bounded checks / 0 decisive tests / 0 closures. Raw source PDFs are not part of this research update.

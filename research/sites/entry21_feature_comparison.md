@@ -8,7 +8,7 @@ The visible channel start at **Ilan–Amit Figure 1, point 3** is the strongest 
 
 The long eastern tunnel is a better cross-survey landmark than an entry 21 candidate. Its downstream position weakens the whole-conduit-head interpretation. Its two openings may be recognizable across three publications, making it useful for aligning the plans.
 
-The [interactive comparison](https://github.com/quadrin/AncientHebrewTexts/blob/main/copper_scroll/atlas/public/research/entry21-comparison.html) shows separately digitized portions of the two plans. Select a candidate to highlight its source-relative position. Coordinates in the companion [register](../../entry21_candidates.json) are source-image pixels, not latitude/longitude. Highlight sizes are visual selection aids, not archaeological boundaries or confidence radii.
+The [interactive comparison](https://github.com/quadrin/CopperScroll/blob/main/atlas/public/research/entry21-comparison.html) shows separately digitized portions of the two plans. Select a candidate to highlight its source-relative position. Coordinates in the companion [register](../../entry21_candidates.json) are source-image pixels, not latitude/longitude. Highlight sizes are visual selection aids, not archaeological boundaries or confidence radii.
 
 ## Ranking and tests
 
@@ -84,3 +84,12 @@ The [tunnel-photo and upstream-connection review](qumran_photo_correspondence.md
 ## Archival and video follow-up
 
 The [1970s photograph and drone-video review](qumran_archival_photo_video_review.md) adds Davey CJD979 to the matched western-mouth photographs and records a probable Cave 28 correspondence in public drone footage. The upstream boulder–pothole–wall connection and individual internal openings remain unresolved. It also tests entries 20–23 jointly without changing candidate ranks or geographic geometry.
+
+
+## Schulz/Strobel/Taylor–Gibson originals (1 October 2026)
+
+The [supplied original-page review](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_supplied_originals_review_2026-10-01.md) verifies Schulz 1960 Fig. 2/p. 53 and pp. 54–57: the channel begins in a smaller northern wadi branch, and the long tunnel lies downstream. This strengthens the documented physical sequence underlying the whole-conduit-head comparison, while point 3's precise identity with Reeder's wall/boulder remains unproved. The ranking above remains an investigative order, with low exact-scroll-feature confidence.
+
+Strobel Fig. 1/p. 56 has settlement coverage only and explicitly derives from de Vaux 1956; it supplies no independent upper-gorge frame. His separate channel/basin-height argument and Taylor–Gibson 2020 pp. 215–216/note 58 require retaining competing supply models. Peleg's prepared-map statement provides a concrete record to locate, with no verified archive identifier or surviving map supplied.
+
+For entry 22, Schulz identifies B as a natural fissure crossed by built flooring and A as apparently artificial. Under a common western datum, his A is about 7.05 m from the west, compared with Magen–Peleg's second break at 7.10 m; B is about 4.05 m versus the first break's 3.10 m. These are conditional source-relative comparisons, not individually matched photographs. Reservoir identity, eastern relation, architectural phase and endpoint/path differences remain unresolved. No new geographic point, numerical ranking or deposit geometry is assigned.

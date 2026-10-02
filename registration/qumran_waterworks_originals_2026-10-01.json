@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-01",
+  "question_ids": [
+    "R01",
+    "Q38",
+    "Q41",
+    "Q42"
+  ],
+  "evidence_note": "research/sources/qumran_supplied_originals_review_2026-10-01.md",
+  "purpose": "Source-relative waterworks observations and conditional correspondence; no geographic registration.",
+  "source_targets": [
+    {
+      "id": "schulz1960",
+      "title": "Chirbet kumran, en feschcha und die bukea",
+      "url": "https://www.jstor.org/stable/27930608",
+      "file": "screencapture-jstor-org-stable-27930608-2026-10-01-18_59_28.pdf",
+      "sha256": "113325858c68fb341d2942aca6fa136f89785626cf4567659160454301bdd773",
+      "bytes": 34561265,
+      "pdf_pages": 20,
+      "inspection": {
+        "printed_pages": [
+          52,
+          53,
+          54,
+          55,
+          56,
+          57
+        ],
+        "capture_pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "figures": [
+          1,
+          2,
+          3
+        ],
+        "original_images_read": true,
+        "entire_article_read": false,
+        "photographic_plates_read": false
+      },
+      "frame": {
+        "type": "schematic_route",
+        "north_cross": true,
+        "approximate_length_labels_m": [
+          100,
+          100,
+          500
+        ],
+        "metric_scale_bar": false,
+        "geographic_datum": null,
+        "survey_control": null,
+        "complete_observed_reconstructed_legend": false
+      }
+    },
+    {
+      "id": "strobel1972",
+      "url": "https://www.jstor.org/stable/27930927",
+      "file": "screencapture-jstor-org-stable-27930927-2026-10-01-19_01_05.pdf",
+      "sha256": "861c63c2ba96563c8644df8770b211dfc3be4cb1b10da04a92911d7b5f053ebb",
+      "bytes": 87797684,
+      "pdf_pages": 43,
+      "inspection": {
+        "printed_pages": [
+          56,
+          65,
+          66,
+          67,
+          68
+        ],
+        "figure_1_capture_page": 2,
+        "gorge_text_capture_pages": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "plate_numbers": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "plate_capture_pages": [
+          39,
+          40,
+          41,
+          42,
+          43
+        ],
+        "original_images_read": true,
+        "entire_article_read": false
+      },
+      "frame": {
+        "type": "settlement_plan",
+        "figure": 1,
+        "printed_page": 56,
+        "scale_bar_m": [
+          0,
+          10,
+          20
+        ],
+        "north_arrow": true,
+        "derived_from": "de Vaux, Revue Biblique 1956",
+        "upper_gorge_depicted": false,
+        "geographic_datum": null
+      },
+      "dependence": "Gorge text explicitly reuses Schulz dimensions and adds author observations; no independent repeat measurement presumed."
+    },
+    {
+      "id": "taylor_gibson2020",
+      "url": "https://kclpure.kcl.ac.uk/portal/en/publications/qumran-in-the-iron-age-with-cross-temporal-reflections-on-the-has/",
+      "file": "Iron_Age_Qumran_Taylor.pdf",
+      "sha256": "e8311b8f78f73be1184a4be07fd005e0523e516e8aba6608ac8caf82669fec1b",
+      "bytes": 2773911,
+      "pdf_pages": 60,
+      "inspection": {
+        "printed_pages": [
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          213,
+          215,
+          216
+        ],
+        "pdf_pages": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          49,
+          51,
+          52
+        ],
+        "note_58_printed_pages": [
+          215,
+          216
+        ],
+        "figures": [
+          15,
+          16
+        ],
+        "original_pages_read": true,
+        "entire_chapter_read": false
+      },
+      "dependence": "Note 58 expands the same 2009 visit reported in Taylor-Gibson 2011 manuscript note 85; not another field campaign."
+    }
+  ],
+  "observations": [
+    {
+      "id": "schulz_route_start",
+      "source": "schulz1960",
+      "pages": [
+        53,
+        54
+      ],
+      "type": "published_field_account",
+      "feature": "Channel beginning in smaller northern wadi side branch",
+      "dated_construction_phase": null,
+      "modern_number_equivalence": "Ilan-Amit point 3 is a functional comparison, not independently proved identity"
+    },
+    {
+      "id": "schulz_window_A",
+      "source": "schulz1960",
+      "pages": [
+        55,
+        56
+      ],
+      "feature": "Long-tunnel opening A",
+      "measurements": {
+        "distance_from_east_entrance_m": 4.5,
+        "opening_bottom_width_m": 0.53,
+        "opening_height_m": 0.79,
+        "sill_height_m": 0.3
+      },
+      "construction_observation": "Worked-stone sill with plaster",
+      "author_interpretation": "Apparently artificial opening rather than natural fissure",
+      "dated_construction_phase": null
+    },
+    {
+      "id": "schulz_window_B",
+      "source": "schulz1960",
+      "pages": [
+        55,
+        56
+      ],
+      "feature": "Long-tunnel opening B and associated floor",
+      "measurements": {
+        "interval_from_A_upstream_m": 3,
+        "distance_to_west_exit_m": 4.05,
+        "opening_bottom_width_m": 0.8,
+        "opening_height_m": 0.65,
+        "north_side_floor_gap_width_m": 0.4,
+        "mortar_thickness_m": 0.1,
+        "dressed_stone_length_m": 1,
+        "dressed_stone_width_m": 0.3
+      },
+      "published_observation": "Natural fissure crossed by two dressed stones and mortar forming tunnel/channel flooring",
+      "caution": "North-side floor gap is distinct from exterior window description; no height datum for Copper Scroll digging",
+      "dated_construction_phase": null
+    },
+    {
+      "id": "schulz_west_collecting_basin",
+      "source": "schulz1960",
+      "pages": [
+        56,
+        57
+      ],
+      "measurements": {
+        "distance_from_west_tunnel_exit_m": 31,
+        "basin_dimensions_m": [
+          1.1,
+          1
+        ]
+      },
+      "caution": "Small collecting basin distinct from large natural gorge basin and any named reservoir"
+    },
+    {
+      "id": "strobel_channel_basin_level",
+      "source": "strobel1972",
+      "pages": [
+        66,
+        67
+      ],
+      "measurements": {
+        "channel_above_contemporary_basin_floor_m": [
+          5,
+          7
+        ]
+      },
+      "published_surface": "Contemporary basin floor, not reconstructed ancient floor",
+      "author_interpretation": "Questions impoundment up to the channel in his model and proposes water lifting",
+      "observed_lifting_apparatus": false,
+      "dated_construction_phase": null
+    },
+    {
+      "id": "strobel_natural_basin",
+      "source": "strobel1972",
+      "pages": [
+        66,
+        67
+      ],
+      "measurements": {
+        "approximate_triangle_sides_m": [
+          45,
+          38,
+          32
+        ],
+        "outlet_width_m": [
+          2.5,
+          3
+        ],
+        "outlet_depth_m": 2
+      },
+      "caution": "Contemporary morphology; ancient impoundment and excavated floor unestablished"
+    },
+    {
+      "id": "strobel_printed_total",
+      "source": "strobel1972",
+      "page": 65,
+      "printed_total_length_m": 70,
+      "schulz_original_total_m": 700,
+      "schulz_original_page": 54,
+      "classification": "Printed inconsistency",
+      "editorial_inference": "Possible dropped zero; do not silently correct the witness"
+    },
+    {
+      "id": "taylor_gibson_map_lead",
+      "source": "taylor_gibson2020",
+      "pages": [
+        215,
+        216
+      ],
+      "note": 58,
+      "type": "participant_report_of_field_visit_and_opinions",
+      "visit": "November 2009",
+      "participants": [
+        "Shimon Gibson",
+        "David Amit",
+        "Yuval Peleg",
+        "Stephen Pfann",
+        "David Stacey"
+      ],
+      "record_lead": "Peleg said he had prepared a new aqueduct map and planned to update it after the visit",
+      "archive_id": null,
+      "licence_id": null,
+      "map_recovered": false,
+      "map_survival_verified": false,
+      "reported_interpretations": {
+        "peleg": "No original dam; gullies on southern side of wadi; failed loop superseded by tunnel; spillways natural",
+        "amit": "Loop function supported by plaster near junction; at least one worked spillway, linked to published map no. 5"
+      },
+      "author_reconstruction": {
+        "minimum_ponding_m": 2,
+        "dam_masonry_observed": false,
+        "destruction_mechanism": "Flood removal proposed"
+      },
+      "caution": "Prepared-map statement and participant opinions do not verify a surviving map, phase sequence or identity with Reeder's wall"
+    }
+  ],
+  "conditional_crosswalk": {
+    "hypothesis": "Schulz B is first western break and A second, at a shared west datum and comparable path.",
+    "sources": {
+      "schulz": "1960 p. 55 newly inspected",
+      "magen_peleg": "2018 p. 79 previously inspected project extraction"
+    },
+    "inputs_m": {
+      "schulz_B_from_west": 4.05,
+      "schulz_A_B_interval": 3,
+      "schulz_A_from_east": 4.5,
+      "magen_first_from_west": 3.1,
+      "magen_second_interval": 4,
+      "magen_length": 12.4
+    },
+    "derived_m": {
+      "schulz_A_from_west": 7.05,
+      "schulz_span": 11.55,
+      "magen_second_from_west": 7.1,
+      "first_absolute_difference": 0.95,
+      "second_absolute_difference": 0.05,
+      "length_absolute_difference": 0.85
+    },
+    "result": "Mixed/inconclusive; no unconditional individual-opening match.",
+    "uncertainties": [
+      "Approximate published intervals",
+      "Common mouth reference and path unverified",
+      "No survey error estimates",
+      "Natural/artificial descriptive disagreement"
+    ],
+    "arithmetic_precision_caution": "Decimal calculations preserve printed numbers; they add no survey precision."
+  },
+  "bounded_checks": [
+    {
+      "id": "schulz_drawing_feature_coverage",
+      "result": "Partial support for northern branch and distinct fissure; incomplete for common measured/geographic frame"
+    },
+    {
+      "id": "strobel_figure1_upper_gorge",
+      "result": "Conflict with proposed coverage; figure excluded as upper-gorge measured frame"
+    },
+    {
+      "id": "conditional_tunnel_offsets",
+      "result": "Mixed/inconclusive conditional correspondence"
+    }
+  ],
+  "geographic_registration": {
+    "performed": false,
+    "coordinate_system": null,
+    "geographic_points": [],
+    "feature_footprints": [],
+    "control_points": [],
+    "uncertainty_estimate": null
+  },
+  "assessment": {
+    "site_hypothesis": "Qumran/Sekakah provisional",
+    "entry21_priority": "Ilan-Amit point 3 remains first whole-conduit-head comparison",
+    "entry22": "Schulz B is a distinct physical fissure comparison; reservoir identity and construction phase unresolved",
+    "numeric_confidence_changed": false,
+    "deposit_location_confirmed": false,
+    "decisive_candidate_test_completed": false
+  }
+}
