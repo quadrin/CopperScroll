@@ -43,3 +43,12 @@ Suggested accounting: **one bounded northern-basin supply-datum check, inconclus
 
 
 Catalogue lead found by integrator: [מערכת המים במצודת הורקניה, NLI/RAMBI record](https://www.nli.org.il/he/articles/RAMBI990002409330705171/NLI). Search-index metadata identifies Yosef Feldman; opening the record returned an internal accessibility error. This is a catalogue lead, with neither full chapter nor its plans inspected. The 1974 chapter remains unread.
+
+
+## Deeper digital-access check, 2 October 2026
+
+Kotar's title index and searches by anthology title, chapter title, author and Hyrcania did not locate Feldman's chapter or its containing anthology. Absence from these searches is not proof of absence from every collection. The full anthology title is *מדבר יהודה וים המלח: קובץ מאמרים לכנס הי״ט של החברה להגנת הטבע*, edited by Zvi Ilan. A [bookseller record](https://bookgallery.co.il/content/hebrew/bookpageschema.asp?BookPageID=84581) identifies a 474-page physical volume and marks it out of stock; it provides no chapter scan. Date listings vary and remain edition-specific pending title-page inspection. NLI/RAMBI alternate-language and legacy record routes also failed to open; no digital-reader link was verified. Searches for public scans, Google Books, Internet Archive and Ben-Yehuda found no verified copy of this exact chapter.
+
+Pagination conflict: the [public excavation-database bibliography](https://emekshaveh.org/he/wp-content/uploads/2013/09/bibliography_sourcebook.pdf), PDF p. 19, cites Feldman 1974, “The Water System of Hyrcania”, in Z. Ilan (ed.), *The Judean Desert and the Dead Sea*, Tel Aviv, **326–335**, whereas our earlier citation above says **316–335**. Preserve both as a bibliographic conflict until the original contents and chapter pages settle it. This bibliography is not a copy of the chapter.
+
+Kotar does provide [Joseph Patrich, “אמות המים להורקניה”](https://kotar.cet.ac.il/kotarapp/index/Chapter.aspx?nBookID=6765980&nTocEntryID=7085635), in *אמות המים הקדומות בארץ־ישראל: קובץ מחקרים* (1989), including the indexed [Fig. 22 basin/cistern plan](https://kotar.cet.ac.il/KotarApp/Index/Chapter.aspx?nBookID=6765980&nTocEntryID=7085659). This is the already archived later study, not a verified reprint of Feldman. No newly inspected geographic figure, archaeological check or KPI increment results from this access search.
