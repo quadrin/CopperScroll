@@ -1,5 +1,10 @@
 # Findings log
 
+## Cycle7 — 2 October 2026, Los Angeles
+
+Hyrcania’s northern-basin inlet remains independently unidentified; northern summit branch supplies eastern cisterns. Puech Koḥlit pp13–14/n49 directly read: contextual restoration and regional alternatives stay separate, with no specific pool entrance. Pool east-of-site and northern corner have different directional anchors. Sartaba reference corrected to earlier lecture collection, not supplied1989 pp24–26; correction adds no research count. One source target and two bounded checks added; totals29/5/31/0decisive/0closures, three conditional assessments unchanged. [Reports](../measurements/cycle7/README.md).
+
+
 ## Evidence cycle 6 — 2 October 2026, Los Angeles
 
 **Evidence:** Amit’s original Sartaba chapter gives separate187 m embankment and192 m siphon; siphon interior60×80 cm. A different open trapezoid has60 cm bottom/80 cm top/60 cm depth. **Partial result:** 1994’s190 m approximation agrees, later250 m remains undefined against those endpoints. **Inherited orientation:** Eshel’s detailed north arrow approximately supports page-up, but held-out residuals/scale mismatch leave metric/geographic acceptance unresolved. **Origin audit:** bridge48 has a documented trail crossing on a shared course; no northern-only Eshel datum or dated surface. **Edition qualification:** Puech prefers a restored pool at Koḥlit, fourteen and distance, explicitly rejecting Hyrcania restoration length. Added2 scoped targets and3 bounded checks, zero closures. Full Amit chapter figures archived. [Cycle6](../measurements/cycle6/README.md).

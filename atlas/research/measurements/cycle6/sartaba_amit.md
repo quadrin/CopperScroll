@@ -30,9 +30,12 @@ Next discriminating record: a common survey endpoint register, longitudinal prof
 
 Prepared the complete seven-page chapter extract, retaining all seven geographic/ruin figures, captions and text, with adjacent manifest: `amit1989-sartaba-pp215-221.pdf`, `manifest.json`. Proposed GitHub destination: `research/assets/plans/aqueducts1989/amit-sartaba-pp215-221.pdf` and identical atlas mirror. The manifest records full source provenance, original-file/asset hashes, printed/PDF mapping and figure inventory. No upload was attempted by this worker.
 
-All supplied pages opened; no new access failure. The1978 survey results are cited in this1989 volume's introductory survey-report section, pp24–26; those introductory pages remain unread in this lane. Tsafrir1971 material cited in note4 and the2017 underlying field measurements remain uninspected here; no exact independent digital item links were verified. Previously identified1984 excavation report and1993 encyclopedia vol4 remain pending fortress-phase sources, without newly verified links.
+All supplied pages opened; no new access failure. Correction, cycle7: note2 cites pp24–26 of David Amit’s earlier lecture collection, Jerusalem תש״ם (1979–1980). The supplied1989 pp24–26 belong to Hirschfeld’s Greco-Roman aqueduct article. The earlier booklet remains unrecovered; its survey preliminaries have not been inspected. Tsafrir1971 material cited in note4 and the2017 underlying field measurements remain uninspected here; no exact independent digital item links were verified. Previously identified1984 excavation report and1993 encyclopedia vol4 remain pending fortress-phase sources, without newly verified links.
 
 Conservative accounting: +1 scoped original-author chapter target, +1 bounded discrepancy audit; +0 new cartographic intakes, decisive candidate tests, conditional candidate assessments or question closures. Reproduced1874PEF map and the1994 synthesis add no independent survey count. Archival extraction adds no research count. Integrator should deduplicate against its source ledger.
 
 
 Integrated archive: [complete Amit chapter and all seven figures](../../assets/plans/aqueducts1989/amit-sartaba-pp215-221.pdf), [provenance and figure inventory](../../assets/plans/aqueducts1989/amit-sartaba-intake.json). The discrepancy check partially resolves the 190 m synthesis against Amit’s 192 m; the 250 m later-survey extent remains open.
+
+
+[Reference correction and exact cited title](../cycle7/sartaba_reference.md).

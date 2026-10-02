@@ -40,3 +40,6 @@ All supplied sources opened. [Joseph Patrich, “The Aqueducts of Hyrcania–Kas
 ## Follow-up: inherited north and entry 16 — 2 October 2026
 
 [Orientation audit](../../measurements/cycle6/hyrcania_north.md) finds an explicit north arrow in Eshel’s derivative detailed drawing. Source-to-source fitting supports approximately page-up inherited orientation, without validating survey north, metric interchangeability or geographic coordinates. The Fig. 22 rim/centre loci remain conditional and unchanged. [Entry-16 crossing](../../measurements/cycle6/entry16_intersection.md) is documented at the west end of bridge 48 but lies on the shared course; Eshel’s specific northern-only origin remains unidentified. [Puech’s contrasting model](../../measurements/cycle6/puech_entry16.md) prefers a restored pool/Koḥlit and fourteen-cubit distance. Cumulative accounting is updated in [cycle 6](../../measurements/cycle6/README.md); this assessment’s earlier totals describe its original integration.
+
+
+Cycle7 [supply-datum audit](../../measurements/cycle7/hyrcania_supply.md): the northern summit branch feeds eastern cisterns; the northern basin’s feeder/inlet remains independently unidentified. Filling-order synthesis supplies no observed overflow junction. Candidate and deposit geometry remain unchanged.

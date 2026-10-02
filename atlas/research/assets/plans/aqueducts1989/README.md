@@ -18,3 +18,6 @@ Chapter extracts preserve source page contents; PNGs are full-page renderings. R
 ## Alexandrion/Sartaba chapter
 
 David Amit, **הספקת המים למבצר אלכסנדריון** [Water Supply to Alexandrion Fortress], printed pp. 215–221 / supplied complete-volume PDF pp. 228–234. [Complete seven-page chapter](amit-sartaba-pp215-221.pdf) retains all seven figures: PEF map/section, waterworks contour map, photographs, composite embankment/siphon section and cistern sections. Preserve observed fabric versus dashed reconstruction. [Hashes, provenance and figure inventory](amit-sartaba-intake.json); [measurement audit](../../measurements/cycle6/sartaba_amit.md).
+
+
+[Hirschfeld printed pp. 24–26](hirschfeld-pp24-26-routing-check.pdf), including Fig. 32’s Roman fountain reconstruction and bibliography, preserved after source-routing verification. These pages are unrelated to the earlier Sartaba lecture-booklet reference. [Provenance](hirschfeld-routing-intake.json).

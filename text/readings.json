@@ -542,7 +542,7 @@
         "ref": "p. 89"
       }
     ],
-    "note": "The name is secure here, but no ancient text outside the scroll places Koḥlit. The research files keep Tell es-Sultan as possible, low, and set aside Milik's Carmel, Goranson's Transjordan and Zissu's Samarian desert because they break the order of the entries.",
+    "note": "Koḥlit remains geographically unidentified. Rabbinic name witnesses recorded in the research are unlocated; no decisive outside location witness is established. Tell es-Sultan stays possible/low. Carmel, Transjordan and Samarian proposals cannot be rejected solely by entry order. See the source-specific cycle7 screen.",
     "sources": [
       "research/phases/phase2_summary.md",
       "research/phases/phase3_summary.md",
@@ -550,7 +550,8 @@
       "tables/phase5_reports.csv",
       "research/logs/findings_log.md",
       "tables/landmark_lexicon_index.csv"
-    ]
+    ],
+    "source_dependency_audit": "research/measurements/cycle7/kohlit_pool.md"
   },
   {
     "id": "e4-treasury",
@@ -3138,6 +3139,11 @@
       "source": "Eshel Fig6.4 p96 derivative detailed map",
       "status": "approximately page-up inherited convention; metric and true bearing unvalidated",
       "note": "research/measurements/cycle6/hyrcania_north.md"
+    },
+    "supply_datum_audit": {
+      "note": "research/measurements/cycle7/hyrcania_supply.md",
+      "northern_basin_inlet_identified": false,
+      "north_summit_branch_destination": "eastern cisterns; not proof of northern basin feeder"
     }
   },
   {
@@ -6716,7 +6722,7 @@
         "ref": ""
       }
     ],
-    "note": "The name is secure, but no ancient source outside the scroll places it, and the research records eleven or twelve proposals. It rates Tell es-Sultan only possible (low); Milik's Carmel, Goranson's Transjordan and Zissu's Samarian desert break the order of the entries.",
+    "note": "Koḥlit remains geographically unidentified. Rabbinic name witnesses recorded in the research are unlocated; no decisive outside location witness is established. Tell es-Sultan stays possible/low. Carmel, Transjordan and Samarian proposals cannot be rejected solely by entry order. See the source-specific cycle7 screen.",
     "sources": [
       "research/phases/phase1_summary.md",
       "research/phases/phase2_summary.md",
@@ -6725,7 +6731,8 @@
       "tables/phase5_assessments.csv",
       "tables/phase5_reports.csv",
       "tables/phase3_site_index.csv"
-    ]
+    ],
+    "source_dependency_audit": "research/measurements/cycle7/kohlit_pool.md"
   },
   {
     "id": "e60-opening",
