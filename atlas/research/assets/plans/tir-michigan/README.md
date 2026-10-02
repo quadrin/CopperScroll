@@ -27,3 +27,6 @@ python research/assets/plans/tir-michigan/restore_churches.py
 The script verifies every part, reconstructs `tir-churches-full-resolution.jpg`, and verifies its original SHA-256. It refuses to replace a different existing file. [Manifest](manifest.json) records the original identity and all asset checksums. The complete concatenation was verified locally before publication.
 
 Only the later Synagogues TIFF remains absent from this workspace. South and Eretz Israel/Sinai were recovered on 2 October 2026; their complete-sheet derivatives and native crops are archived. The North TIFF was recovered on 2 October 2026 and its complete-sheet derivatives and native detail crops are now archived. Their earlier inspection remains documented; these preview JPEGs do not replace them. [Missing-source register](../MISSING.md).
+
+
+Latest recoveries: [Synagogues](https://github.com/quadrin/CopperScroll/tree/main/research/assets/plans/tir-michigan/synagogues), [Strobel](https://github.com/quadrin/CopperScroll/tree/main/research/assets/plans/strobel1972), [ESI 6](https://github.com/quadrin/CopperScroll/tree/main/research/assets/plans/esi6), [ESI 7–8](https://github.com/quadrin/CopperScroll/tree/main/research/assets/plans/esi78). The readable Schulz plan remains missing. This backfill adds no research KPI counts.
