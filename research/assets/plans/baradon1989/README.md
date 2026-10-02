@@ -143,3 +143,18 @@ Ten supplied PNGs open successfully and are archived unchanged. Captions identif
 - [ה1: building captioned Israelite, viewed from west; another view of the previously archived figure](capture-191857.png) — image(20261002-191857).png.
 
 Chapter ג belongs to Qasr el-Yahud; chapter ה belongs to Ein el-Ghuweir, as established by the continuous capture headings. This intake does not identify chapter ד from a heading. Coin-caption dates are recorded as published identifications and do not independently date nearby architecture. Repeated plates and photographs supply additional image/context coverage, not independent assemblages. No research KPI increment or candidate-confidence change.
+
+
+## Ein el-Ghuweir plan, dam and additional chapter ו photographs — 2 October 2026
+
+Seven supplied images open successfully; original PNG bytes are preserved. Chapter ה is Ein el-Ghuweir, established by the continuous capture heading. These crops retain the following captions and report context. Printed-page locators remain unverified.
+
+- [ה2: building plan, captioned Israelite; north arrow, 5 m scale and spot elevations; another supplied view of h2-israelite-building-plan.png](capture-191952.png) — image(20261002-191952).png.
+- [ה3–ה4: Room 1 burning surface and drain-opening photographs; another view of the previously archived pair](capture-192010.png) — image(20261002-192010).png.
+- [ה5–ה6: Room 5 and paved courtyard photographs with adjoining text; another view of the previously archived pair](capture-192027.png) — image(20261002-192027).png.
+- [ה7: dam plan, with north arrow, 50 m scale and lettered points](capture-192049.png) — image(20261002-192049).png.
+- [ה8: pottery plate](capture-192132.png) — image(20261002-192132).png.
+- [ה8: pottery catalogue, separately supplied](capture-192145.png) — image(20261002-192145).png.
+- [ו1 and ו3: building courtyard and southern-wall photographs with adjoining building description](capture-192207.png) — image(20261002-192207).png.
+
+The ה7 dam drawing is retained as a distinct figure. Its publication alongside the building does not independently establish the construction date or phase relationships of each hydraulic feature. Chapter ו site identity remains unverified from these crops. Repeated figure views are additional archival coverage; research KPI counts and candidate confidence remain unchanged. [Source filenames, dimensions and checksums](building-dam-intake-2026-10-02.json).
