@@ -1,4 +1,4 @@
-# Bar-Adon map and Rujm el-Bahr figures
+# Bar-Adon maps, plans and figures
 
 Pessach Bar-Adon, *Excavations in the Judean Desert* / *חפירות במדבר יהודה*, prepared by Zvi Greenhut, ʿAtiqot Hebrew Series 9 (1989). User-supplied figure crops, archived as their original PNG bytes. Source copyright retained; no open licence asserted.
 
@@ -6,7 +6,7 @@ Pessach Bar-Adon, *Excavations in the Judean Desert* / *חפירות במדבר 
 
 Rujm el-Bahr, chapter A: [A1, site during excavation viewed from northwest](a1-site-from-northwest.png); [A2, anchor](a2-anchor.png); [A3, building plan and sections](a3-building-plan-sections.png); [A4, stone with drafted margins](a4-margin-drafted-stone.png). Captions identify each image. A3 agrees visually with the figure in the supplied partial capture on printed p. 5. Exact printed-page locators for the remaining crops are not visible and are unverified in this intake.
 
-These chapter A figures remain separate from Twin Cave’s chapter B. Twin Cave B1, printed p. [15], remains missing as an archived image. [Source filenames and hashes](image-intake-2026-10-02.json). No research KPI increment or candidate-confidence change.
+These chapter A figures remain separate from Twin Cave’s chapter B. Twin Cave B1, printed p. [15], was subsequently recovered; see below. [Source filenames and hashes](image-intake-2026-10-02.json). No research KPI increment or candidate-confidence change.
 
 
 Additional chapter A crops: [A5, column drums beside the building’s eastern wall](a5-column-drums-east-wall.png); [A6, detail of A5](a6-detail-of-a5.png); [A7, dentil cornice stone](a7-dentil-cornice.png); [A8, stones bearing mason’s marks](a8-masons-marks.png); [A9, pottery, printed p. 8](a9-pottery-p8.png). A5–A8 appear on printed p. 6 in the supplied continuous capture; A9 on p. 8. These caption identifications add archival coverage and no architectural date or candidate assessment.
@@ -27,7 +27,7 @@ These user-supplied crops carry figure letters but no chapter headings or printe
 - [ז3: Site A burning surface viewed from west](z3-site-a-burning-surface.png).
 - [ז4: retaining wall of path linking Site A and Site B, viewed from south-southeast](z4-path-retaining-wall.png).
 
-These are figure intakes, not a dated hydraulic-system or Copper Scroll candidate assessment. Dating of drains, surfaces and the path requires surrounding report text. The archive adds no research KPI counts or question closures. Twin Cave B1 remains missing.
+These are figure intakes, not a dated hydraulic-system or Copper Scroll candidate assessment. Dating of drains, surfaces and the path requires surrounding report text. The archive adds no research KPI counts or question closures. Twin Cave B1 was subsequently recovered; see the recovery entry below.
 
 
 ## Further plan and Site B sections
@@ -54,7 +54,7 @@ Site B’s chapter title remains unverified in this crop intake. Twin Cave B1 re
 - [ז13: fan scrapers](z13-fan-scrapers.png).
 - [ז14: fan scrapers](z14-fan-scrapers.png), sideways as supplied.
 
-Captions read directly; original PNG bytes retained. Printed page numbers remain outside these crops. Mizpe Shalem is explicitly named for ז10 only; this intake does not establish that Sites A/B/C or every illustrated assemblage carry that same site identity. Typological dating and relationships to structures require surrounding text and excavation contexts. These images add archival coverage with no research KPI increment or candidate-confidence change. Twin Cave B1 remains missing.
+Captions read directly; original PNG bytes retained. Printed page numbers remain outside these crops. Mizpe Shalem is explicitly named for ז10 only; this intake does not establish that Sites A/B/C or every illustrated assemblage carry that same site identity. Typological dating and relationships to structures require surrounding text and excavation contexts. These images add archival coverage with no research KPI increment or candidate-confidence change. Twin Cave B1 was subsequently recovered; see the recovery entry below.
 
 
 ## Chapter ז fan-scraper sequence completed through ז27
@@ -91,3 +91,16 @@ Chapter names and printed pages remain outside these crops. `het` denotes ח and
 - [ט7: monastic-cell interior](tet7-cell-interior.png).
 
 Wadi Murrar is explicit in ט3, ט4 and ט6 captions. Do not import these cells or the chapter ח plan into Twin Cave or IV/11/IV/17. These are figure-caption intakes with no independent feature-dating or candidate assessment. Original PNG checksums are recorded in the manifest; root and atlas mirrors preserve the same bytes. Research KPI counts and candidate confidence remain unchanged.
+
+
+## Twin Cave and A12 recovered — 2 October 2026
+
+[A12: Rujm el-Bahr metal finds and catalogue](a12-metal-finds-catalogue.png) preserves the original supplied PNG, image(20261002-191035).png. This is chapter A, not Twin Cave.
+
+The later 41-page JSTOR capture supplies [Twin Cave opening and B1 exterior photograph, printed [15]](b1-twin-cave-p15.png), [printed 16 and B2](b2-twin-cave-p16.png), and [printed 17 catalogue](twin-cave-catalogue-p17.png). These are full capture pages rendered at 2×, not original publisher page-image exports. Capture PDF pages 24–26 correspond to printed [15]–17; these PDF indexes differ from JSTOR viewer sequence numbers. White horizontal bands clip some text on the opening page. Do not treat the capture as an entirely unobstructed transcription source.
+
+Source capture: screencapture-jstor-org-stable-23456199-2026-10-02-11_36_41.pdf, 75,145,236 bytes; SHA256 184a6d0225937de5d5a78b73e70c2a113bc205ab2d791d0fbf5254521c934a0c. It ends partially at chapter ה, not at the end of the book. [Recovery manifest](twin-recovery-2026-10-02.json).
+
+B1 is an exterior photograph without a scale or threshold section. Recovery closes the missing-image gap; the ancient date of the entrance geometry and northern-threshold three-cubit datum remain unresolved. Research KPI counts remain unchanged.
+
+The capture also identifies chapter ג as Qasr el-Yahud (PDF 27) and chapter ה as Ein el-Ghuweir (PDF 41). Earlier statements that these chapter headings were unavailable describe the prior intake; exact page locators for individual earlier crops remain unverified.

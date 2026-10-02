@@ -3,7 +3,6 @@
 2 October 2026, Los Angeles. These sources were used earlier, but the necessary original files are absent from this workspace or exceed the attachment transfer limit. Earlier successful readings remain valid to their recorded scope. This is an archival access register, not a claim that the publications lack figures.
 
 - **ʿAtiqot 41 (2002), Hebrew issue**, including Feig’s IV/11 report (pp. 85–90) and Sion’s survey (pp. 61–64 / Plan 5): original issue files absent. [Exact publisher retrieval links and source identities](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_plan_access_2026-10-01.md). Keep IV/11, IV/17 and 3Q separate.
-- **Pessach Bar-Adon, Excavations in the Judean Desert, prepared by Zvi Greenhut, ʿAtiqot Hebrew Series 9 (1989)**: Twin Cave B1, printed p. [15], is an exterior photograph, not a plan. The reattached partial PDF ends at printed p. 9; pp. [15]–17 and B1 remain unavailable as archived images. [Original viewer p. [15]](https://www.jstor.org/stable/23456199?seq=25); [direct-review record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/baradon1989_capture_direct_review_2026-10-01.md).
 - **Jean-Baptiste Humbert and Jan Gunneweg, eds., Khirbet Qumrân et ‘Aïn Feshkha II: Études d’anthropologie, de physique et de chimie / Studies of Anthropology, Physics and Chemistry (2003)**: Galor’s L138 plan/section, Fig. 3 p. 294, and relevant water-installation maps. Its recorded user attachment was located but transfer failed because it exceeds 32 MiB. [Corrected identity and exact figure locators](https://github.com/quadrin/CopperScroll/blob/main/registration/qumranII2003_extracted.md).
 - **Joseph Patrich 1989 Hyrcania plan, Fig. 22**: original image absent; the project’s registration diagnostic is already archived. [Source and registration record](https://github.com/quadrin/CopperScroll/blob/main/research/sites/hyrcania_plan_registration_2026-09-30.md).
 - **David Amit 1989 Doq aqueduct chapter, Figs. 1–2 / pp. 223–224**: original page images absent. [Partial original-source intake and full citation](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle4/amit_partial.md).
@@ -35,3 +34,8 @@ Both reattached TIFFs open and match their earlier source hashes. [South assets]
 ## Schulz drawings recovered — 2 October 2026
 
 [Readable Schulz Figs. 1–3](schulz1960/README.md) are now archived, including Fig. 2 p. 53. Earlier preview limitations describe the prior state. [Bar-Adon regional map and chapter A figures](baradon1989/README.md) are also preserved; they do not recover Twin Cave B1. Archival recovery adds zero research KPI counts.
+
+
+## Twin Cave B1 recovered — 2 October 2026
+
+The later 41-page capture contains printed [15]–17. [B1 and the accompanying pages](baradon1989/README.md#twin-cave-and-a12-recovered--2-october-2026) are now archived as capture derivatives, with clipping recorded. Earlier missing-B1 entries describe the prior state. The feature-date and northern-threshold questions remain open; research KPI counts are unchanged.
