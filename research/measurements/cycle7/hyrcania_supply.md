@@ -86,3 +86,27 @@ Further failed access routes:
 - [Book Gallery item 184821](https://bookgallery.co.il/content/hebrew/bookpageschema.asp?BookPageID=184821): still failed to open; stock remains unverified.
 
 Outcome unchanged: no verified complete online anthology, chapter scan, or English translation. Stronger citation routing is progress on access provenance, not a new archaeological test. No KPI increment or candidate-confidence change. No new outreach.
+
+
+### Offprint and English-volume follow-up, 2 October 2026
+
+Further searches for Feldman's chapter as a separately digitized offprint, reprint or JSTOR item did not recover its text. Searches by Horkania/Hyrcania/Hyrkania and alternate translated titles returned citations, not the original report. No verified complete digital edition or English translation of the Ilan anthology emerged. Catalogue searches that failed below remain unchecked holdings, not evidence of absence.
+
+An institutional record now independently verifies the English acquisition target: [Joseph Patrich, The aqueducts of Hyrcania-Kastellion](https://cris.huji.ac.il/en/publications/the-aqueducts-of-hyrcania-kastellion/), in David Amit, Joseph Patrich and Yizhar Hirschfeld (eds.), *The Aqueducts of Israel*, JRA Supplementary Series 46 (2002), **pp. 336–352**, ISBN 1887829466 / 9781887829465. Hebrew University's [whole-book record](https://cris.huji.ac.il/en/publications/the-aqueducts-of-israel/) identifies the 459-page volume's language as English. The chapter record links the Hebrew 1989 volume bibliographically; chapter-level textual equivalence remains untested.
+
+[Google Books](https://books.google.com/books?hl=en&id=GWhoAAAAMAAJ) identifies a University of Michigan original digitized on **25 June 2008**. The retrieved page exposes catalogue information and selected contents; it does not expose the full Hyrcania chapter. Digitization is verified, usable full-text access is not. The [publisher's exact S46 page](https://journalofromanarchaeology.com/supplement-46/) provides a two-page [contents PDF](https://journalofromanarchaeology.com/wp-content/uploads/2020/05/S46.pdf), with no chapter PDF linked on that page. The publisher's inspected free-articles list contains no Hyrcania chapter. A scan request for the English study should specify pp. 336–352, including all maps, plans and photographs. No request was sent.
+
+Additional inaccessible routes in this pass:
+
+- [HathiTrust reader for the existing Michigan item](https://babel.hathitrust.org/cgi/pt?id=mdp.39015051834664&seq=1) and [item handle](https://hdl.handle.net/2027/mdp.39015051834664): reader errors; item access status unverified.
+- [WorldCat, The Aqueducts of Israel, OCLC 50148048](https://search.worldcat.org/title/50148048): reader error; holding-library availability unchecked.
+- [ULI exact Hebrew anthology-title search](https://uli.nli.org.il/discovery/search?query=title,contains,מדבר%20יהודה%20וים%20המלח&tab=LibraryCatalog&search_scope=MyInstitution&vid=972NNL_ULI_C:MAIN): reader inaccessible.
+- [Stanford SearchWorks romanized title search](https://searchworks.stanford.edu/?search_field=search_title&q=Midbar+Yehudah+yam): reader inaccessible.
+- [Library of Congress romanized title query](https://www.loc.gov/search/?fo=json&q=%22Midbar+Yehudah%22): reader inaccessible.
+- [Google Books API Hebrew-title query](https://www.googleapis.com/books/v1/volumes?q=intitle:מדבר%20יהודה%20וים%20המלח&maxResults=20): reader inaccessible.
+- [Open Library Hebrew-title search](https://openlibrary.org/search?q=מדבר+יהודה+וים+המלח): reader inaccessible.
+- [RomaQ reference list containing Patrich 2002](https://www.romaq.org/the-project/references.html?orderby=strAuthors&ordering=ASC&rCH=-2&start=3180): HTTP 429; no repeated request.
+
+A search-index extract of [Robert Wenning, Herodianische Architektur, Boreas 14/15](https://archiv.ub.uni-heidelberg.de/propylaeumdok/811/1/Wenning_Herodianische_Architektur_1993.pdf) renders Feldman's pagination as 320–331. The original PDF remains uninspected through the previously encountered anti-bot wall, so retain this as an **unverified extracted citation**, not a corrected chapter range. The inspected Patrich extraction and excavation bibliography support 326–335; original anthology pages remain decisive for pagination.
+
+No archaeological datum, recovered plan asset, source-target KPI increment or candidate-confidence change results from this pass. Existing map-archive gaps recorded above remain pending.
