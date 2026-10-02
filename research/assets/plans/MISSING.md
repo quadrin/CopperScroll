@@ -2,7 +2,7 @@
 
 2 October 2026, Los Angeles. These sources were used earlier, but the necessary original files are absent from this workspace or exceed the attachment transfer limit. Earlier successful readings remain valid to their recorded scope. This is an archival access register, not a claim that the publications lack figures.
 
-- **Jean-Baptiste Humbert and Jan Gunneweg, eds., Khirbet Qumrân et ‘Aïn Feshkha II: Études d’anthropologie, de physique et de chimie / Studies of Anthropology, Physics and Chemistry (2003)**: Galor’s L138 plan/section, Fig. 3 p. 294, and relevant water-installation maps. Its recorded user attachment was located but transfer failed because it exceeds 32 MiB. [Corrected identity and exact figure locators](https://github.com/quadrin/CopperScroll/blob/main/registration/qumranII2003_extracted.md).
+- **Jean-Baptiste Humbert and Jan Gunneweg, eds., Khirbet Qumrân et ‘Aïn Feshkha II: Études d’anthropologie, de physique et de chimie / Studies of Anthropology, Physics and Chemistry (2003)**: Galor’s L138 plan/section, Fig. 3 p. 294, and relevant water-installation maps. Its recorded user attachment was located but transfer failed because it exceeds 32 MiB. [Corrected identity and exact figure locators](https://github.com/quadrin/CopperScroll/blob/main/registration/qumranII2003_extracted.md). The required L138 figure is now recovered through Galor’s separately paginated author copy; see the recovery entry below.
 - **Peleg’s reported 2009 aqueduct map**: never recovered. The separate JSP 18 pocket sheet is also uninspected; do not equate them. [Retrieval history, exact records and limits](https://github.com/quadrin/CopperScroll/blob/main/research/sources/peleg_aqueduct_map_search_2026-10-01.md).
 
 Future recoveries should append assets and provenance here without replacing the historical access record.
@@ -46,3 +46,8 @@ The supplied ZIP opens with 25 PDFs. [Sion pp. 61–64, IV/17 Plan 5 and Fig. 12
 ## Hyrcania and Doq figures recovered — 2 October 2026
 
 [Complete 1989 chapters and requested plan pages](aqueducts1989/README.md) are archived. Earlier missing-image entries describe the prior state. The separately reattached [Qumran III A (2016)](qumranIIIA2016/README.md) is confirmed from its title/copyright pages and does not supply Galor’s volume II (2003) figure. No research KPI increment.
+
+
+## Galor L138 plan recovered through author copy — 2 October 2026
+
+[Complete Galor chapter and Fig. 3](galor-plastered-pools/README.md) are archived. In this copy Fig. 3 is printed p. 260 / PDF page 4, distinct from the prior volume II p. 294 locator. The figure-access dependency is satisfied; the exact full volume II remains unrecovered. Other water-installation drawings from that volume are not supplied by this recovery. No research KPI increment.
