@@ -86,3 +86,8 @@ R01 remains In progress. Counts remain 12 directly inspected primary targets / 5
 ## Supplied-book plans clarified — later 1 October 2026 (America/Los_Angeles)
 
 All 483 supplied PDF pages were visually screened as contact sheets, with full-page checks of the general plan at PDF p. 35 / Fig. 9 and the water-system plan at PDF p. 144 / printed p. 121 / Fig. 121. These are available settlement plans. No additional foldout scan was identified; whether the in-text drawings reproduce the pocket sheet's artwork remains untested. Retain the negative payload check only for an additional separate sheet or attachment. “2009 aqueduct map” refers to Peleg's prepared drawing reported in Taylor–Gibson note 58, which he intended to revise after the November 2009 research visit; the date does not describe aqueduct construction. Prioritize missing upper-gorge coverage and drawing/version records. Same-file reinspection adds no KPI count, confidence or geographic change. [Full clarification](https://github.com/quadrin/CopperScroll/blob/main/research/sources/magen2018_full_report_map_check_2026-10-01.md).
+
+
+## Retrieval priority changed — 2 October 2026 (UTC)
+
+The user directed the project to move on from this difficult map search. Park Peleg's prepared drawing and the separate pocket-sheet retrieval, retaining the verified leads above. They are not prerequisites for current research. The active R01 test now uses published construction contacts and phase evidence. [Phase review and next test](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_construction_phase_review_2026-10-02.md). No map was recovered and this priority change adds no source or test count.
