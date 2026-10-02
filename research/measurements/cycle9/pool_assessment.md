@@ -43,3 +43,7 @@ Archive eight spatial/ruins figure groups from the unchanged full original PDF: 
 ## Result
 
 The pool-identity access question is resolved at the published-correspondence level. Pool chronology and the separate trough/tank identity remain unresolved. L103 provides a bounded future conduit assessment with observed dimensions and relative cutting sequence. None of these results confirms a Copper Scroll deposit location, changes the ancient reading, or supplies a northern/compass/depth instruction to entry 49.
+
+## Subsequent coin-context verification — 2 October 2026 Los Angeles
+
+The user supplied Ariel’s complete article, now image-checked. Foundation coin 20 is L105/basket1092, year four 69/70 CE; coin 19 is an equally late pool fill issue. Foundationcoin 15 is 67/68 CE and18 is 68/69 CE. The former catalogue access gap and unverified youngest-foundation issue are resolved to the published record. The coin supplies a lower installation bound; the proposed exact 69/70 CE completion and sealing remain conditional. L103 coin 17 is a 68/69 CE channel find, without an independently dated channel-construction context. [Full audit and independent table control](../cycle10/README.md). Historical source/counting scopes above remain unchanged.

@@ -1163,3 +1163,7 @@ Both supplied books opened. Final-report pp. 74, 82, 84–85 image-checked: pres
 ## Siloam original-source cycle 9 — 2 October 2026 Los Angeles
 
 [Complete excavation/laboratory reading, correspondence and archive](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle9/README.md). Pool L102/L104 joins the 2013 stepped corner/L124/W50 chain; lower dam plasterL108 is distinct from later pool foundation. L103 provides a measured conditional outlet comparison. Ariel’s original catalogue remains403. Two full source targets and three bounded checks added: totals 35 / 5 cartographic-reference intakes / 38 checks / 3 conditional assessments / 0 decisive / 0 closures. Both originals and nine derivative figure/context pages archived and mirrored. No coordinate/grade/status changes or outreach.
+
+## Siloam coin cycle 10 — 2 October 2026 Los Angeles
+
+[Original coin catalogue, context and phase audit](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle10/README.md). Foundationcoin 20/L105/1092 is year four (69/70 CE); fill coin 19 is equally late. The published foundation context supports a post-minting construction terminus; exact completion and sealing require archaeological upper bounds. One full source/one bounded check added: totals 36 / 5 cartographic-reference intakes / 39 checks / 3 conditional assessments / 0 decisive / 0 closures. Article original and two derivative pages archived and mirrored. No geographic/grade/state changes or outreach.

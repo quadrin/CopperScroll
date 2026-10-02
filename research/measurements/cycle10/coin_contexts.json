@@ -1,0 +1,136 @@
+{
+  "source": {
+    "author": "Donald T. Ariel",
+    "title": "The Coins from the City of David (‘Ir David), Siloam Road",
+    "year": 2020,
+    "printed_pages": [
+      "89*",
+      "90*",
+      "91*",
+      "140"
+    ],
+    "pdf_pages_one_based": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "doi": "10.70967/2948-040X.1966",
+    "source_url": "https://publications.iaa.org.il/atiqot/vol101/iss1/8/",
+    "archive": "research/assets/plans/siloam-coins2020/ariel2020-siloam-coins.pdf"
+  },
+  "inspection": {
+    "all_article_page_images_checked": true,
+    "independent_critical_record_repeat": true,
+    "independent_repeat_adds_count": false
+  },
+  "coins": [
+    {
+      "coin": 1,
+      "locus": "L105A",
+      "basket": 1101,
+      "date": "40–37 BCE",
+      "date_basis": "issuer/date group",
+      "context": "deeper foundation"
+    },
+    {
+      "coin": 2,
+      "locus": "L105A",
+      "basket": 1103,
+      "date": "4 BCE–6 CE",
+      "date_basis": "issuer range heading, not narrower individual issue",
+      "context": "deeper foundation"
+    },
+    {
+      "coin": 3,
+      "locus": "L105A",
+      "basket": 1102,
+      "date": "5/6 CE",
+      "date_basis": "catalogue item",
+      "context": "deeper foundation"
+    },
+    {
+      "coin": 8,
+      "locus": "L105",
+      "basket": 1091,
+      "date": "41/42 CE",
+      "date_basis": "catalogue group",
+      "context": "foundation"
+    },
+    {
+      "coin": 15,
+      "locus": "L105",
+      "basket": 1094,
+      "date": "67/68 CE",
+      "date_basis": "catalogue group",
+      "context": "foundation"
+    },
+    {
+      "coin": 18,
+      "locus": "L105",
+      "basket": 1093,
+      "date": "68/69 CE",
+      "date_basis": "catalogue group",
+      "context": "foundation"
+    },
+    {
+      "coin": 20,
+      "locus": "L105",
+      "basket": 1092,
+      "date": "69/70 CE",
+      "date_basis": "catalogue group + explicit Hebrew p91*",
+      "context": "foundation",
+      "pictured_in_fig1": true
+    },
+    {
+      "coin": 17,
+      "locus": "L103",
+      "basket": 1072,
+      "date": "68/69 CE",
+      "date_basis": "catalogue group",
+      "context": "channel find; construction context not established"
+    },
+    {
+      "coin": 19,
+      "locus": "L102",
+      "basket": 1061,
+      "date": "69/70 CE",
+      "date_basis": "catalogue group",
+      "context": "pool fill"
+    }
+  ],
+  "check": {
+    "id": "C10-SILOAM-FOUNDATION-COIN-TPQ",
+    "hypothesis": "A year-four issue is published in the pool foundation, rather than solely its fill",
+    "result": "supported: coin20/L105/basket1092/69–70CE",
+    "earliest_installation": "after minting of coin20, conditional on published foundation association",
+    "completion_deadline_from_coin_alone": null,
+    "authors_completion_interpretation": "69 or70CE",
+    "sealing_upper_bound": "unresolved; post-Revolt rims retain alternatives"
+  },
+  "precision_flags": [
+    "English summary emphasizes fill19 while foundation20 is equally late",
+    "Catalogue item3 narrower than narrative Augustus interval",
+    "Printed inventory138406 repeated in grouped rows; uncorrected",
+    "L105A assigned during material processing from upperL107",
+    "L103coin17 is not a dated conduit foundation context"
+  ],
+  "phase_consequence": {
+    "same_pool_as": "2009L102/L104 →2013corner →L124/W50/GutheIII, published chain",
+    "L103_relative_phase": "inferred post-pool from cut through pool plaster",
+    "pre_year4_model_for_this_floor_channel": "conflicts unless distinct earlier phase demonstrated",
+    "lower_dam_L108_date_transferred": false,
+    "whole_scroll_date_adopted": null
+  },
+  "kpi_delta": {
+    "scoped_primary_targets": 1,
+    "bounded_checks": 1,
+    "cartographic_intakes": 0,
+    "conditional_assessments": 0,
+    "decisive_tests": 0,
+    "closures": 0
+  },
+  "question_states_changed": false,
+  "coordinate_or_grade_changes": false,
+  "next_test": "Explicit 2024 earlier-phase contact with2009/2013pool; L103form/underside and independent entry49reading control"
+}
