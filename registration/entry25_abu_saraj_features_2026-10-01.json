@@ -100,7 +100,17 @@
         "phase": "first-century CE northern threshold and pillar-cutting chronology unresolved",
         "position": "source plan and group-relative photograph only; no registered mouth points"
       },
-      "deposit_geometry": null
+      "deposit_geometry": null,
+      "plan_measurement_pilot": {
+        "status": "manual_annotations_and_recomputation; independent_repeat_pending",
+        "packet": "research/measurements/iv17_packet.md",
+        "raw_annotations": "research/measurements/iv17_pilot.json",
+        "calculation": "research/measurements/iv17_recomputed.json",
+        "bearing_type": "outward local aperture-chord normals relative to unspecified published north; not surveyed true bearings",
+        "southern_aperture": "current remaining gap, not reconstructed original mouth",
+        "architectural_phase_verified": false,
+        "geographic_registration": null
+      }
     }
   ],
   "map_marker_changes": false,
@@ -109,5 +119,6 @@
     "bounded_checks": 2,
     "decisive_candidate_tests": 0,
     "question_closures": 0
-  }
+  },
+  "last_measurement_update_utc": "2026-10-02"
 }

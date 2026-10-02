@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-02",
+  "question_ids": [
+    "R01",
+    "R08"
+  ],
+  "purpose": "Reusable scalar-measurement record; unknown geometry remains null.",
+  "record_template": {
+    "id": null,
+    "source": {
+      "url": null,
+      "page": null,
+      "figure": null,
+      "capture_page": null,
+      "sha256": null
+    },
+    "evidence_class": "published_observation|measured_observation|reconstruction|derived_inference",
+    "endpoint_from": {
+      "feature_id": null,
+      "reference_surface": null,
+      "pick_definition": null,
+      "E_m": null,
+      "N_m": null,
+      "Z_m": null
+    },
+    "endpoint_to": {
+      "feature_id": null,
+      "reference_surface": null,
+      "pick_definition": null,
+      "E_m": null,
+      "N_m": null,
+      "Z_m": null
+    },
+    "measurement": {
+      "value": null,
+      "unit": "m",
+      "metric": "source_reported_unspecified|horizontal_chord|horizontal_path|ground_path|vertical_difference",
+      "qualifier": null,
+      "path_definition": null
+    },
+    "frame": {
+      "type": "source_relative",
+      "crs": null,
+      "north_convention": null,
+      "vertical_datum": null,
+      "calibration": null,
+      "geographic_registration": false
+    },
+    "uncertainty": {
+      "bounds_m": null,
+      "source_qualifier": null,
+      "endpoint_bounds_m": null,
+      "calibration_bounds": null,
+      "correlation": null,
+      "unknown": true
+    },
+    "phase": {
+      "surface_observation_date": null,
+      "construction_date": null,
+      "dated_context": null
+    },
+    "status": "input_recorded|awaiting_controls|measured|tested",
+    "assumptions": [],
+    "comparison_result": null
+  },
+  "existing_inputs": [
+    {
+      "id": "schulz_east_A",
+      "source": "Schulz1960 p55",
+      "from": "east_mouth",
+      "to": "A",
+      "value_m": 4.5,
+      "metric": "source_reported_unspecified",
+      "uncertainty_m": null
+    },
+    {
+      "id": "schulz_A_B",
+      "source": "Schulz1960 p55",
+      "from": "A",
+      "to": "B",
+      "value_m": 3,
+      "qualifier": "about",
+      "metric": "source_reported_unspecified",
+      "uncertainty_m": null
+    },
+    {
+      "id": "schulz_B_west",
+      "source": "Schulz1960 p55",
+      "from": "B",
+      "to": "west_mouth",
+      "value_m": 4.05,
+      "qualifier": "about",
+      "metric": "source_reported_unspecified",
+      "uncertainty_m": null
+    },
+    {
+      "id": "schulz_west_small_basin",
+      "source": "Schulz1960 pp56\u201357",
+      "from": "west_mouth",
+      "to": "small_collecting_basin",
+      "value_m": 31,
+      "qualifier": "about",
+      "metric": "source_reported_unspecified",
+      "uncertainty_m": null
+    },
+    {
+      "id": "strobel_basin_channel_head",
+      "source": "Strobel1972 pp66\u201367",
+      "from": "contemporary_natural_basin_floor",
+      "to": "channel_bed",
+      "range_m": [
+        5,
+        7
+      ],
+      "metric": "vertical_difference",
+      "uncertainty_m": null,
+      "construction_phase": null
+    }
+  ],
+  "image_calibration_gates": [
+    {
+      "source": "Schulz1960 Fig2 p53",
+      "status": "fails_metric_gate",
+      "reason": "Schematic approximate segment labels; no metric scale or survey control."
+    },
+    {
+      "source": "Strobel1972 Fig1 p56",
+      "status": "passes_settlement_scale_only",
+      "scale_bar_m": [
+        0,
+        10,
+        20
+      ],
+      "upper_gorge_depicted": false,
+      "geographic_registration": false
+    }
+  ],
+  "kpi_increment": {
+    "primary_targets": 0,
+    "bounded_checks": 0,
+    "decisive_tests": 0,
+    "question_closures": 0
+  }
+}

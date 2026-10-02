@@ -1,0 +1,127 @@
+{
+  "question": "R02",
+  "entry": 25,
+  "candidate": "Abu Saraj IV/17",
+  "status": "plan-relative pilot; independent repeat pending",
+  "source": {
+    "citation": "Sion, Atiqot 41 part 1 (2002), printed p. 63, Plan 5",
+    "publisher_record": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/",
+    "pdf_page_1based": 21,
+    "sha256": "7b56f84d7f87d7ad16f5f707739fb6f91b9193dafb11756d860324d69a7ca718"
+  },
+  "raster": {
+    "renderer": "PyMuPDF, Matrix(3,3)",
+    "page_size_px": [
+      1526,
+      2438
+    ],
+    "crop_box_page_px": [
+      152,
+      207,
+      778,
+      748
+    ],
+    "crop_size_px": [
+      626,
+      541
+    ],
+    "coordinate_convention": "crop pixels, origin top-left, x right, y down"
+  },
+  "scale": {
+    "metres": 3,
+    "endpoints_px": [
+      [
+        402,
+        472
+      ],
+      [
+        570,
+        472
+      ]
+    ]
+  },
+  "north_arrow": {
+    "tail_px": [
+      99,
+      148
+    ],
+    "tip_px": [
+      168,
+      65
+    ],
+    "reference": "published arrow; true/grid/magnetic convention unspecified"
+  },
+  "apertures": [
+    {
+      "id": "northern_present_gap",
+      "chord_endpoints_px": [
+        [
+          503,
+          409
+        ],
+        [
+          549,
+          397
+        ]
+      ],
+      "phase": "surveyed present aperture; ancient architecture unestablished",
+      "width_pilot_m": 0.85,
+      "width_envelope_m": [
+        0.6,
+        1.1
+      ],
+      "chord_axis_pilot_deg": 35,
+      "outward_chord_normal_pilot_deg": 125,
+      "outward_chord_normal_envelope_deg": [
+        101,
+        151
+      ]
+    },
+    {
+      "id": "southern_remaining_gap",
+      "chord_endpoints_px": [
+        [
+          258,
+          395
+        ],
+        [
+          322,
+          375
+        ]
+      ],
+      "phase": "present gap after partial built-wall blocking; original aperture undefined",
+      "width_pilot_m": 1.2,
+      "width_envelope_m": [
+        0.9,
+        1.5
+      ],
+      "chord_axis_pilot_deg": 35,
+      "outward_chord_normal_pilot_deg": 125,
+      "outward_chord_normal_envelope_deg": [
+        103,
+        143
+      ]
+    }
+  ],
+  "pair": {
+    "midpoint_separation_pilot_m": 4.23,
+    "separation_envelope_m": [
+      3.8,
+      4.6
+    ],
+    "southern_to_northern_bearing_pilot_deg": 55,
+    "northern_minus_southern_north_m": 2.45,
+    "northern_minus_southern_east_m": 3.45
+  },
+  "uncertainty": "conservative manual raster/edge-choice envelopes; non-statistical; unspecified north reference and scan distortion add unquantified systematic uncertainty",
+  "geographic_registration": null,
+  "ancient_northern_threshold": null,
+  "limits": [
+    "chord normal is a two-dimensional facing proxy, not a passage-axis or surveyed three-dimensional rock-face normal",
+    "southern gap does not reconstruct original pre-wall mouth",
+    "published eastern-cliff location does not establish due-east bearings",
+    "no architectural or threshold phase established",
+    "no site-marker movement or deposit geometry"
+  ],
+  "bearing_rounding": "nearest 5 degrees for pilot display; recompute unrounded values from endpoints"
+}

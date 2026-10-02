@@ -1,0 +1,73 @@
+scenario,from_entry,to_entry,from_place,to_place,great_circle_km,from_coord_precision,to_coord_precision
+jerusalem_legacy_strict,46,48,ramat_rahel,jer_kidron_mon,4.541484551557403,~100 m,~100 m
+jerusalem_legacy_strict,48,51,jer_kidron_mon,jer_se_corner,0.23168914664503532,~100 m,~80 m
+jerusalem_legacy_strict,51,52,jer_se_corner,jer_kidron_east,0.26706628243062724,~80 m,~300 m
+jerusalem_legacy_strict,52,55,jer_kidron_east,jer_bethesda,0.8277856907351888,~300 m,~50 m
+jerusalem_legacy_lenient,38,46,natuf,ramat_rahel,10.746732427614774,~700 m,~100 m
+jerusalem_legacy_lenient,46,48,ramat_rahel,jer_kidron_mon,4.541484551557403,~100 m,~100 m
+jerusalem_legacy_lenient,48,49,jer_kidron_mon,jer_siloam,0.8250952276522932,~100 m,~300 m
+jerusalem_legacy_lenient,49,51,jer_siloam,jer_se_corner,0.7055036600199679,~300 m,~80 m
+jerusalem_legacy_lenient,51,52,jer_se_corner,jer_kidron_east,0.26706628243062724,~80 m,~300 m
+jerusalem_legacy_lenient,52,55,jer_kidron_east,jer_bethesda,0.8277856907351888,~300 m,~50 m
+jericho_nuweimeh,"1,17",20,nuweimeh,wadi_qumran,15.881537161440926,area ~3 km,~500 m
+jericho_nuweimeh,20,"21,22",wadi_qumran,kh_qumran,0.8407082764303997,~500 m,~100 m
+jericho_nuweimeh,"21,22",24,kh_qumran,kuteif,8.105971954909451,~100 m,area ~3 km
+jericho_nuweimeh,24,31,kuteif,doq,8.294517630530633,area ~3 km,~300 m
+jericho_nuweimeh,31,32,doq,choziba,3.841032255987517,~300 m,~500 m (wadi stretch)
+jericho_nuweimeh,32,35,choziba,mar_saba,17.24720895584431,~500 m (wadi stretch),~500 m (gorge stretch)
+jericho_buqeia,"1,17",20,buqeia,wadi_qumran,5.881014315009682,area ~5 km,~500 m
+jericho_buqeia,20,"21,22",wadi_qumran,kh_qumran,0.8407082764303997,~500 m,~100 m
+jericho_buqeia,"21,22",24,kh_qumran,kuteif,8.105971954909451,~100 m,area ~3 km
+jericho_buqeia,24,31,kuteif,doq,8.294517630530633,area ~3 km,~300 m
+jericho_buqeia,31,32,doq,choziba,3.841032255987517,~300 m,~500 m (wadi stretch)
+jericho_buqeia,32,35,choziba,mar_saba,17.24720895584431,~500 m (wadi stretch),~500 m (gorge stretch)
+jerusalem_legacy_strict_omit_46,48,51,jer_kidron_mon,jer_se_corner,0.23168914664503532,~100 m,~80 m
+jerusalem_legacy_strict_omit_46,51,52,jer_se_corner,jer_kidron_east,0.26706628243062724,~80 m,~300 m
+jerusalem_legacy_strict_omit_46,52,55,jer_kidron_east,jer_bethesda,0.8277856907351888,~300 m,~50 m
+jerusalem_legacy_strict_omit_48,46,51,ramat_rahel,jer_se_corner,4.38889493767119,~100 m,~80 m
+jerusalem_legacy_strict_omit_48,51,52,jer_se_corner,jer_kidron_east,0.26706628243062724,~80 m,~300 m
+jerusalem_legacy_strict_omit_48,52,55,jer_kidron_east,jer_bethesda,0.8277856907351888,~300 m,~50 m
+jerusalem_legacy_strict_omit_51,46,48,ramat_rahel,jer_kidron_mon,4.541484551557403,~100 m,~100 m
+jerusalem_legacy_strict_omit_51,48,52,jer_kidron_mon,jer_kidron_east,0.3317708161860904,~100 m,~300 m
+jerusalem_legacy_strict_omit_51,52,55,jer_kidron_east,jer_bethesda,0.8277856907351888,~300 m,~50 m
+jerusalem_legacy_strict_omit_52,46,48,ramat_rahel,jer_kidron_mon,4.541484551557403,~100 m,~100 m
+jerusalem_legacy_strict_omit_52,48,51,jer_kidron_mon,jer_se_corner,0.23168914664503532,~100 m,~80 m
+jerusalem_legacy_strict_omit_52,51,55,jer_se_corner,jer_bethesda,0.5657885249232893,~80 m,~50 m
+jerusalem_legacy_strict_omit_55,46,48,ramat_rahel,jer_kidron_mon,4.541484551557403,~100 m,~100 m
+jerusalem_legacy_strict_omit_55,48,51,jer_kidron_mon,jer_se_corner,0.23168914664503532,~100 m,~80 m
+jerusalem_legacy_strict_omit_55,51,52,jer_se_corner,jer_kidron_east,0.26706628243062724,~80 m,~300 m
+"jericho_nuweimeh_omit_1,17",20,"21,22",wadi_qumran,kh_qumran,0.8407082764303997,~500 m,~100 m
+"jericho_nuweimeh_omit_1,17","21,22",24,kh_qumran,kuteif,8.105971954909451,~100 m,area ~3 km
+"jericho_nuweimeh_omit_1,17",24,31,kuteif,doq,8.294517630530633,area ~3 km,~300 m
+"jericho_nuweimeh_omit_1,17",31,32,doq,choziba,3.841032255987517,~300 m,~500 m (wadi stretch)
+"jericho_nuweimeh_omit_1,17",32,35,choziba,mar_saba,17.24720895584431,~500 m (wadi stretch),~500 m (gorge stretch)
+jericho_nuweimeh_omit_20,"1,17","21,22",nuweimeh,kh_qumran,15.871886385271358,area ~3 km,~100 m
+jericho_nuweimeh_omit_20,"21,22",24,kh_qumran,kuteif,8.105971954909451,~100 m,area ~3 km
+jericho_nuweimeh_omit_20,24,31,kuteif,doq,8.294517630530633,area ~3 km,~300 m
+jericho_nuweimeh_omit_20,31,32,doq,choziba,3.841032255987517,~300 m,~500 m (wadi stretch)
+jericho_nuweimeh_omit_20,32,35,choziba,mar_saba,17.24720895584431,~500 m (wadi stretch),~500 m (gorge stretch)
+"jericho_nuweimeh_omit_21,22","1,17",20,nuweimeh,wadi_qumran,15.881537161440926,area ~3 km,~500 m
+"jericho_nuweimeh_omit_21,22",20,24,wadi_qumran,kuteif,7.734812147917879,~500 m,area ~3 km
+"jericho_nuweimeh_omit_21,22",24,31,kuteif,doq,8.294517630530633,area ~3 km,~300 m
+"jericho_nuweimeh_omit_21,22",31,32,doq,choziba,3.841032255987517,~300 m,~500 m (wadi stretch)
+"jericho_nuweimeh_omit_21,22",32,35,choziba,mar_saba,17.24720895584431,~500 m (wadi stretch),~500 m (gorge stretch)
+jericho_nuweimeh_omit_24,"1,17",20,nuweimeh,wadi_qumran,15.881537161440926,area ~3 km,~500 m
+jericho_nuweimeh_omit_24,20,"21,22",wadi_qumran,kh_qumran,0.8407082764303997,~500 m,~100 m
+jericho_nuweimeh_omit_24,"21,22",31,kh_qumran,doq,15.026070008939557,~100 m,~300 m
+jericho_nuweimeh_omit_24,31,32,doq,choziba,3.841032255987517,~300 m,~500 m (wadi stretch)
+jericho_nuweimeh_omit_24,32,35,choziba,mar_saba,17.24720895584431,~500 m (wadi stretch),~500 m (gorge stretch)
+jericho_nuweimeh_omit_31,"1,17",20,nuweimeh,wadi_qumran,15.881537161440926,area ~3 km,~500 m
+jericho_nuweimeh_omit_31,20,"21,22",wadi_qumran,kh_qumran,0.8407082764303997,~500 m,~100 m
+jericho_nuweimeh_omit_31,"21,22",24,kh_qumran,kuteif,8.105971954909451,~100 m,area ~3 km
+jericho_nuweimeh_omit_31,24,32,kuteif,choziba,4.679662813790419,area ~3 km,~500 m (wadi stretch)
+jericho_nuweimeh_omit_31,32,35,choziba,mar_saba,17.24720895584431,~500 m (wadi stretch),~500 m (gorge stretch)
+jericho_nuweimeh_omit_32,"1,17",20,nuweimeh,wadi_qumran,15.881537161440926,area ~3 km,~500 m
+jericho_nuweimeh_omit_32,20,"21,22",wadi_qumran,kh_qumran,0.8407082764303997,~500 m,~100 m
+jericho_nuweimeh_omit_32,"21,22",24,kh_qumran,kuteif,8.105971954909451,~100 m,area ~3 km
+jericho_nuweimeh_omit_32,24,31,kuteif,doq,8.294517630530633,area ~3 km,~300 m
+jericho_nuweimeh_omit_32,31,35,doq,mar_saba,21.087496058400326,~300 m,~500 m (gorge stretch)
+jericho_nuweimeh_omit_35,"1,17",20,nuweimeh,wadi_qumran,15.881537161440926,area ~3 km,~500 m
+jericho_nuweimeh_omit_35,20,"21,22",wadi_qumran,kh_qumran,0.8407082764303997,~500 m,~100 m
+jericho_nuweimeh_omit_35,"21,22",24,kh_qumran,kuteif,8.105971954909451,~100 m,area ~3 km
+jericho_nuweimeh_omit_35,24,31,kuteif,doq,8.294517630530633,area ~3 km,~300 m
+jericho_nuweimeh_omit_35,31,32,doq,choziba,3.841032255987517,~300 m,~500 m (wadi stretch)

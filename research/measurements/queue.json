@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-02",
+  "created_local": "2026-10-01 America/Los_Angeles",
+  "baseline_commit": "bb2fde4c76dbbe34b4c7345646acee049e875229",
+  "tracks": [
+    {
+      "id": "M01",
+      "questions": [
+        "R02",
+        "R08"
+      ],
+      "target": "Twin Cave openings, pillar, connectivity and northern threshold",
+      "packet": "twin_packet.md",
+      "execution_state": "protocol_ready",
+      "readiness": "awaiting_scaled_survey_and_threshold_records",
+      "parallel_lane": "cave_survey_records",
+      "next_action": "Obtain cave-specific labelled scaled survey and threshold section; identify season and field-record provenance.",
+      "completion": "Report mouth/pillar geometry and bearings with uncertainty; separately tie the northern datum and architecture to phase evidence.",
+      "measures": [
+        "TC-01",
+        "TC-02",
+        "TC-03",
+        "TC-04",
+        "TC-05",
+        "TC-06",
+        "TC-07",
+        "TC-08"
+      ]
+    },
+    {
+      "id": "M02",
+      "questions": [
+        "R02",
+        "R08"
+      ],
+      "target": "Abu Saraj IV/17 Plan 5 geometry",
+      "packet": "iv17_packet.md",
+      "execution_state": "pilot_recorded",
+      "readiness": "independent_digitization_ready; survey_north_and_ancient_threshold_pending",
+      "parallel_lane": "scaled_plan_digitization",
+      "next_action": "Repeat Plan 5 annotation independently; preserve current gap versus original southern mouth.",
+      "completion": "Independent annotations agree within declared envelopes; record surveyed north and ancient threshold/phase separately.",
+      "outputs": [
+        "iv17_pilot.json",
+        "iv17_measurements.py",
+        "iv17_recomputed.json"
+      ],
+      "measures": [
+        "northern_clear_gap",
+        "southern_remaining_gap",
+        "mouth_midpoint_separation",
+        "aperture_chord_and_outward_normal",
+        "northern_threshold_and_architectural_phase"
+      ]
+    },
+    {
+      "id": "M03",
+      "questions": [
+        "R01",
+        "R08"
+      ],
+      "target": "Qumran gorge tunnel, fissures, channel head and hydraulic levels",
+      "packet": "gorge_packet.md",
+      "execution_state": "protocol_and_scalar_records_ready",
+      "readiness": "awaiting_common_survey_frame_and_endpoint_identity",
+      "parallel_lane": "gorge_source_and_survey_controls",
+      "next_action": "Identify A/B and traverse endpoints, then obtain local horizontal/vertical controls. Keep Peleg-map retrieval parked.",
+      "completion": "Compare chord/path distances, directional offsets and hydraulic levels using identified features and phase-linked surfaces.",
+      "outputs": [
+        "gorge_measurement_record.json"
+      ],
+      "measures": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05"
+      ]
+    },
+    {
+      "id": "M04",
+      "questions": [
+        "R08"
+      ],
+      "target": "Hyrcania registration and hold-out residuals",
+      "packet": "registration_packet.md",
+      "execution_state": "stored_coordinate_audit_recorded",
+      "readiness": "future_registration_awaits_independent_controls; datum_conversion_reproduction_pending",
+      "parallel_lane": "registration_audit",
+      "next_action": "Freeze independent control/hold-out identities and criteria before fitting; recover source/datum metadata.",
+      "completion": "A future fit reports control geometry, distortion assumptions and independent residuals; accepted precision matches intended use.",
+      "outputs": [
+        "hyrcania_baseline.json",
+        "hyrcania_registration_audit.py",
+        "hyrcania_registration_audit.json"
+      ],
+      "measures": [
+        "stored_holdout_residual",
+        "grid_notation_sensitivity",
+        "independent_control_geometry",
+        "future_holdout_validation"
+      ]
+    },
+    {
+      "id": "M05",
+      "questions": [
+        "R10",
+        "R08"
+      ],
+      "target": "Entry-order sensitivity to anchors and editorial divisions",
+      "packet": "sequence_packet.md",
+      "execution_state": "distance_pilot_recorded",
+      "readiness": "distance_scenarios_ready; independent_anchor_ledger_and_division_tests_pending",
+      "parallel_lane": "sequence_sensitivity",
+      "next_action": "Freeze provenance/alternative-anchor ledger; retain unknown text slots and division mappings.",
+      "completion": "Report regional group stability and held-out itinerary predictions across declared alternatives; keep candidate probabilities undefined.",
+      "outputs": [
+        "sequence/pilot.py",
+        "sequence/manifest.json",
+        "sequence/results.csv",
+        "sequence/edges.csv"
+      ],
+      "measures": [
+        "selected_stop_distance_and_order",
+        "leave_one_anchor_out",
+        "alternative_achor_anchor",
+        "regional_group_and_division_sensitivity"
+      ]
+    },
+    {
+      "id": "M06",
+      "questions": [
+        "R08"
+      ],
+      "target": "Cubit conversion and ancient measurement datum",
+      "packet": "units_packet.md",
+      "execution_state": "conditional_conversion_recorded",
+      "readiness": "unit_arithmetic_ready; archaeological_datums_and_axes_pending",
+      "parallel_lane": "units_and_surface_models",
+      "next_action": "Link each feature's documented surface, phase and measured axis to viable textual quantities.",
+      "completion": "Compare measured spans and uncertainty against declared quantity/unit alternatives once the relevant datum exists.",
+      "outputs": [
+        "unit_sensitivity.py",
+        "unit_sensitivity.json"
+      ],
+      "measures": [
+        "entry11_conditional_unit_range",
+        "entry25_conditional_unit_range",
+        "entry26_conditional_unit_range"
+      ]
+    }
+  ],
+  "execution_policy": {
+    "independent_tracks_may_run_in_parallel": true,
+    "shared_tracker_and_git_writes": "single integrator",
+    "future_scheduled_runs": false,
+    "source_measurements_require": "source-specific calibration, endpoints, north/datum, phase and uncertainty",
+    "unknown_values": "null; never zero",
+    "raw_source_images_committed": false
+  },
+  "counts": {
+    "configured_tracks": 6,
+    "pilot_or_audit_outputs_recorded": 4,
+    "protocol_and_source_requirements_only": 2,
+    "new_primary_targets": 0,
+    "new_bounded_source_checks": 0,
+    "new_decisive_candidate_tests": 0,
+    "question_closures": 0
+  }
+}

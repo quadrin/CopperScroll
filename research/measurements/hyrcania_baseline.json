@@ -1,0 +1,234 @@
+{
+  "reviewed": "2026-09-30",
+  "report": "research/sites/hyrcania_plan_registration_2026-09-30.md",
+  "software": {
+    "pyproj": "3.8.0",
+    "proj": "9.8.1"
+  },
+  "status": "regional registration trial completed; rejected for precise feature placement",
+  "source_plan": {
+    "source": "Patrich 1989",
+    "printed_page": 243,
+    "figure": 1,
+    "scan": "256.jpg",
+    "scan_dimensions_px": [
+      900,
+      1231
+    ],
+    "pixel_origin": "top left; x right, y down",
+    "fort_symbol_px": [
+      754,
+      850
+    ],
+    "station44_dam_px": [
+      673,
+      780
+    ],
+    "scale_bar_endpoints_px": [
+      [
+        137,
+        1055
+      ],
+      [
+        323,
+        1055
+      ]
+    ],
+    "scale_bar_m": 2000,
+    "ground_scale_m_per_px": 10.75268817204301,
+    "north_arrow_base_px": [
+      844,
+      1025
+    ],
+    "north_arrow_tip_px": [
+      841,
+      961
+    ],
+    "direction_assumption": "published arrow treated as true north; scan isotropic; regional drawing assumed metric"
+  },
+  "reference_image": {
+    "service": "Esri World Imagery",
+    "request_url": "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/export?bbox=35.3600,31.7160,35.3690,31.7240&bboxSR=4326&imageSR=3857&size=1800,1600&format=png&f=json",
+    "extent": {
+      "xmin": 3936169.228519073,
+      "ymin": 3726088.675932698,
+      "xmax": 3937347.035798374,
+      "ymax": 3727135.615736521,
+      "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+      }
+    },
+    "dimensions_px": [
+      1800,
+      1600
+    ],
+    "crs": "EPSG:3857",
+    "fort_summit_anchor_px": [
+      1090,
+      1010
+    ],
+    "pixel_rule": "pixel centers: x+0.5,y+0.5",
+    "anchor_wgs84": {
+      "longitude": 35.36561976141379,
+      "latitude": 31.71894758032672
+    },
+    "acquisition_date": null,
+    "absolute_accuracy_m": null,
+    "status": "manual summit-area anchor; not a surveyed pool or bridge",
+    "image_publication": "reference raster kept outside Git; diagnostic contains project-created points only"
+  },
+  "transform": {
+    "crs": "+proj=aeqd +lat_0=31.7189475803267 +lon_0=35.3656197614138 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+    "formula": "q=(x-754,850-y); E=2000/186*dot(q,east); N=2000/186*dot(q,north)",
+    "east_vector": [
+      0.9989031743698379,
+      0.04682358629858615
+    ],
+    "north_vector": [
+      -0.04682358629858615,
+      0.9989031743698379
+    ],
+    "control_count": 1,
+    "fit_rmse_m": null,
+    "note": "One anchor plus assumed scale/orientation does not provide a validation RMSE."
+  },
+  "withheld_check": {
+    "source": "Israel Guide vol.13 pp.176-177",
+    "raw_grid": "1837.1261",
+    "notation_assumption": "four digit components in units of 100 m, expanded to 183700/126100; rounding versus truncation unknown",
+    "converted_guide_point": {
+      "longitude": 35.354742742541866,
+      "latitude": 31.72741114203423,
+      "input_epsg": 28191,
+      "input_easting_m": 183700,
+      "input_northing_m": 126100,
+      "operation": "Inverse of Palestine Grid + Palestine 1923 to WGS 84 (1) (with axis order normalized for visualization)",
+      "operation_accuracy_m": 2.0,
+      "source_position_accuracy_m": null,
+      "note": "Transformation accuracy is not accuracy of the published source point."
+    },
+    "predicted_station44_wgs84": {
+      "longitude": 35.356811670998425,
+      "latitude": 31.726095818532485
+    },
+    "residual_m": 244.37106137762902,
+    "local_predicted_EN_m": [
+      -834.7688826135036,
+      792.644437592195
+    ],
+    "sensitivity_existing_atlas_fort_anchor": {
+      "longitude": 35.366,
+      "latitude": 31.719,
+      "residual_m": 271.0823263401064
+    },
+    "fort_to_guide_straight_distance_m": 1394.0636186361075,
+    "decision": "Do not equate the guide point with the mapped dam at feature precision. Source generalization, anchor choice, grid notation and feature identity remain possible causes."
+  },
+  "detailed_plan": {
+    "source": "Patrich 1989",
+    "printed_page": 256,
+    "figure": 22,
+    "scan": "269.jpg",
+    "scan_dimensions_px": [
+      900,
+      1231
+    ],
+    "scale_bar_endpoints_px": [
+      [
+        622,
+        796
+      ],
+      [
+        765,
+        796
+      ]
+    ],
+    "scale_bar_m": 50,
+    "nominal_m_per_px": 0.34965034965034963,
+    "coordinate_frame": "source image only; no verified north or geographic origin",
+    "trial_controls": "candidate monastery corners in plan and imagery checked visually; pool edges partly obscured by shadow; no unambiguous independently located corresponding feature controls",
+    "geographic_registration_status": "not accepted; no fitted geographic footprint",
+    "source_relative_features": [
+      {
+        "feature_id": "HY-pool-N",
+        "approximate_center_px": [
+          267,
+          176
+        ],
+        "pick_uncertainty_px": 8,
+        "locator": "upper/right member of double pool; northern member in chapter"
+      },
+      {
+        "feature_id": "HY-pool-S",
+        "approximate_center_px": [
+          229,
+          215
+        ],
+        "pick_uncertainty_px": 8,
+        "locator": "lower/left member of double pool; southern member in chapter"
+      },
+      {
+        "feature_id": "HY-pool-extra-S",
+        "approximate_center_px": [
+          85,
+          365
+        ],
+        "pick_uncertainty_px": 10,
+        "locator": "separate filled pool west of contour plan"
+      },
+      {
+        "feature_id": "HY-49",
+        "source_zone_px": [
+          185,
+          535,
+          240,
+          595
+        ],
+        "locator": "approximate labeled passage sector; not an entrance coordinate"
+      },
+      {
+        "feature_id": "HY-S",
+        "approximate_center_px": [
+          579,
+          332
+        ],
+        "pick_uncertainty_px": 12,
+        "locator": "labeled cistern S"
+      },
+      {
+        "feature_id": "HY-F",
+        "approximate_center_px": [
+          436,
+          582
+        ],
+        "pick_uncertainty_px": 12,
+        "locator": "labeled cistern F"
+      }
+    ]
+  },
+  "entry29_test": {
+    "reading_record": "text/readings.json: e29-qi and e29-reservoir",
+    "entry_lines": "VII 3-7; four sides and twenty-four cubits retained; relationship of measurement to sides uncertain",
+    "side_lengths_source": "Patrich 1989 p.255, northern member of double pool",
+    "north_pool_sides_m": {
+      "south": 19,
+      "west": 15,
+      "north": 18.2,
+      "east": 16
+    },
+    "cubit_range_m": [
+      0.445,
+      0.525
+    ],
+    "twenty_four_cubits_m": [
+      10.68,
+      12.6
+    ],
+    "conditional_wall_length_result": "None of the reported four sides falls within 24 cubits at this assumed unit range.",
+    "conditional_perimeter_result": "Sum of reported sides is 68.2 m, also outside 10.68-12.6 m.",
+    "outside_offset_result": "Unresolved; a measurement outward from four sides is a different model and is not falsified by wall lengths.",
+    "site_rating": "possible, low, unchanged",
+    "deposit_geometry": null
+  }
+}

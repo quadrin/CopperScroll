@@ -1,0 +1,30 @@
+{
+  "status": "recomputed annotations; independent redigitization pending",
+  "north_reference": "published arrow; true/grid/magnetic convention unspecified",
+  "metres_per_pixel": 0.017857142857142856,
+  "apertures": [
+    {
+      "id": "northern_present_gap",
+      "gap_chord_m": 0.8489188802860509,
+      "chord_axis_deg": 35.64152141096347,
+      "outward_chord_normal_deg": 125.64152141096348,
+      "phase": "surveyed present aperture; ancient architecture unestablished"
+    },
+    {
+      "id": "southern_remaining_gap",
+      "gap_chord_m": 1.1973610438743008,
+      "chord_axis_deg": 32.9083707633338,
+      "outward_chord_normal_deg": 122.90837076333379,
+      "phase": "present gap after partial built-wall blocking; original aperture undefined"
+    }
+  ],
+  "pair": {
+    "midpoint_separation_m": 4.226525808292582,
+    "southern_to_northern_bearing_deg": 54.62396804461572,
+    "delta_north_m": 2.4469054277545195,
+    "delta_east_m": 3.446182559846291
+  },
+  "uncertainty": "conservative manual raster/edge-choice envelopes; non-statistical; unspecified north reference and scan distortion add unquantified systematic uncertainty",
+  "geographic_registration": null,
+  "ancient_threshold": null
+}

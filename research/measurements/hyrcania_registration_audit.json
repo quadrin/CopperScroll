@@ -1,0 +1,35 @@
+{
+  "baseline_commit": "bb2fde4c76dbbe34b4c7345646acee049e875229",
+  "status": "reproduction and conditional quantization budget; no new source or control",
+  "scale_m_per_pixel": 10.75268817204301,
+  "reproduced_predicted_local_EN_m": [
+    -834.7688826135036,
+    792.6444375921949
+  ],
+  "reproduced_withheld_residual_m": 244.37106137301492,
+  "datum_conversion_reexecuted": false,
+  "conditional_100m_grid_notation_budget": {
+    "rounding_max_displacement_grid_m": 70.71067811865476,
+    "truncation_max_displacement_grid_m": 141.4213562373095,
+    "residual_minus_rounding_diagonal_approx_m": 173.66038325436017,
+    "residual_minus_truncation_diagonal_approx_m": 102.94970513570541,
+    "interpretation": "Even a full rounding/truncation cell diagonal alone is smaller than the residual. These are approximate grid-distance budgets; actual cell location, projected scale and datum operation require verified conversion."
+  },
+  "source_relative_pick_uncertainty_only_m": {
+    "HY-pool-N": 2.797202797202797,
+    "HY-pool-S": 2.797202797202797,
+    "HY-pool-extra-S": 3.4965034965034967,
+    "HY-S": 4.195804195804196,
+    "HY-F": 4.195804195804196
+  },
+  "limits": [
+    "Existing map symbol, summit anchor, grid units, feature identity and coordinate conversion assumptions retained.",
+    "Unknown source/imagery/map-generalization error prevents a statistical acceptance bound.",
+    "Pick uncertainty in metres excludes scale, scan distortion and geographic registration error."
+  ],
+  "kpi_effect": {
+    "new_primary_targets": 0,
+    "new_candidate_tests": 0,
+    "question_closures": 0
+  }
+}
