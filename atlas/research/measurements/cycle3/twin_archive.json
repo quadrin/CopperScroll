@@ -1,0 +1,53 @@
+{
+  "track": "M01",
+  "question": "R02",
+  "entry": 25,
+  "checked_date_utc": "2026-10-02",
+  "baseline_commit": "fed5a529c7d3987c4a8eebaf2274e49f59b7f4ed",
+  "outcome": "general_personal_archive_identifier_verified; cave_specific_inventory_unrecovered",
+  "records": [
+    {
+      "institution": "Gnazim Institute",
+      "record_type": "fonds-level archive list",
+      "identifier": "717",
+      "creator": "Pessah Bar-Adon",
+      "url": "https://www.gnazim.org/%D7%A8%D7%A9%D7%99%D7%9E%D7%AA-%D7%90%D7%A8%D7%9B%D7%99%D7%95%D7%A0%D7%99%D7%9D/",
+      "locator": "Hebrew table row בר אדון, פסח; retrieved lines 217–218",
+      "list_updated": "2026-09-22",
+      "access_status": "public text opened after initial timeout",
+      "source_ref": "turn170view0",
+      "cave_specific": false,
+      "finds_or_licence_identifier": null,
+      "measured_geometry_available": false
+    },
+    {
+      "institution": "Gnazim Institute",
+      "record_type": "institutional accession announcement",
+      "date": "2015-03-15",
+      "url": "https://gnazimblog.wordpress.com/2015/03/15/%D7%94%D7%98%D7%9C-%D7%A2%D7%9C-%D7%94%D7%A2%D7%A9%D7%91-%D7%A8%D7%97%D7%A5-%D7%90%D7%AA-%D7%A8%D7%92%D7%9C%D7%99/",
+      "locator": "retrieved text lines 48–55",
+      "access_status": "public institutional text inspected; diary images unread",
+      "source_ref": "turn163view0",
+      "observation": "Doron deposited his parents' archives; selected examples concern 1929 diary and 1961 Cave of the Treasure",
+      "cave_specific": false
+    }
+  ],
+  "access_limit": {
+    "url": "https://infocenters.co.il/gnazim/",
+    "status": "web reader returned 405 Method Not Allowed",
+    "item_inventory_inspected": false,
+    "absence_inference_permitted": false
+  },
+  "twin_specific_licence": null,
+  "twin_specific_plan_or_diary_item": null,
+  "measurement_changes": [],
+  "candidate_confidence_change": false,
+  "next_intake": "item-level inventory or custody record explicitly tying measured plan, section, diary or depth register to Twin Cave and seasons 1971/1977/1982",
+  "kpi_delta": {
+    "primary_archaeological_targets": 0,
+    "bounded_candidate_tests": 0,
+    "decisive_tests": 0,
+    "question_closures": 0,
+    "map_intakes": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "date_utc": "2026-10-02",
+  "baseline_commit": "fed5a529c7d3987c4a8eebaf2274e49f59b7f4ed",
+  "entry": "30",
+  "lines": "VII 8–10",
+  "test": "independent Tell el-Qos association audit",
+  "outcome": "inconclusive",
+  "sequence_as_confirmation": false,
+  "recorded_variants": {
+    "adjacency": [
+      "Puech: cool room",
+      "Milik: vicinity"
+    ],
+    "household": [
+      "Haqqoṣ family",
+      "summer house"
+    ],
+    "deposit": [
+      "bars",
+      "pitchers"
+    ],
+    "original_puech_lefkovits_apparatus_newly_inspected": false
+  },
+  "candidate": {
+    "place_id": "tell_el_qos",
+    "status_before": "weak",
+    "status_after": "weak",
+    "confidence_before": "low",
+    "confidence_after": "low",
+    "phase_specific_feature": "unidentified",
+    "deposit_point": null
+  },
+  "inspection_scopes": [
+    {
+      "source": "Milik1960",
+      "pages": [
+        140,
+        148
+      ],
+      "access": "actual existing page images",
+      "baseline": "repeat"
+    },
+    {
+      "source": "SWP III1883",
+      "pages": [
+        222
+      ],
+      "pdf_page": 248,
+      "access": "actual existing page image",
+      "baseline": "repeat"
+    },
+    {
+      "source": "Palmer1881",
+      "pages": [
+        351
+      ],
+      "pdf_page": 361,
+      "access": "new original public PDF and page image",
+      "baseline": "publication already in Phase3; fresh page scope now verified",
+      "sha256": "c65f8dbdc8339b72b0a0ec6244201da837908dce7706eeb8f97b3302c30413ba"
+    },
+    {
+      "source": "PADIS0021",
+      "access": "complete official catalog page",
+      "baseline": "new metadata synthesis",
+      "occupation_reported": "Byzantine",
+      "features_reported": [
+        "architectural remains",
+        "cisterns",
+        "plastered basin",
+        "mosaic tesserae"
+      ]
+    }
+  ],
+  "supporting": [
+    "Pre-discovery modern name attested in survey family",
+    "Jericho area plausible under family-name reading",
+    "Water installations reported in later catalog"
+  ],
+  "limiting_or_conflicting": [
+    "Palmer descriptive Arabic etymology provides alternative to name survival",
+    "No demonstrated phonetic continuity",
+    "No identified first-century household inscription or estate",
+    "No cave/cool-room geometry or ancient depth datum",
+    "Summer-house reading removes family-name anchor",
+    "Catalog Byzantine classification cannot date earlier features"
+  ],
+  "assessment_correction": "Replace blanket no ancient remains reported with SWP described stone heaps; PADIS catalogs Byzantine remains, without identifying the required first-century feature.",
+  "anchors": {
+    "project": {
+      "lat": 31.8551,
+      "lon": 35.4656,
+      "positional_uncertainty_m_approx": 200,
+      "meaning": "georeferenced survey label; site area"
+    },
+    "padis": {
+      "dms": "31°51′13.58″ N; 35°27′53.28″ E",
+      "lat": 31.853772222222222,
+      "lon": 35.4648,
+      "datum": "unstated on page",
+      "uncertainty": "unstated",
+      "meaning": "catalog site point, not cave"
+    },
+    "provisional_separation_m": 166,
+    "comparison_method": "local equirectangular calculation assuming common datum provisionally; not an independently surveyed offset"
+  },
+  "retrieval_routes_completed": [
+    "SWP survey/name-list family",
+    "Augustinović bibliography and PADIS catalog family"
+  ],
+  "unread_sources": [
+    {
+      "title": "Augustinović1951 Gerico e dintorni",
+      "pages": "89–92 (Milik);89–91(PADIS)",
+      "link": "https://www.tsedizioni.it/wp-content/uploads/2017/12/catalogo-FPP-2005.pdf",
+      "link_scope": "publisher catalog, not requested pages"
+    },
+    {
+      "title": "Original Sheet XVIII map this pass",
+      "link": "https://github.com/quadrin/CopperScroll/blob/fed5a529c7d3987c4a8eebaf2274e49f59b7f4ed/research/sources/sources.md",
+      "link_scope": "inherited provenance, not original map"
+    }
+  ],
+  "kpi_recommendation": {
+    "bounded_checks": 1,
+    "primary_targets_conservative": 0,
+    "decisive_candidate_tests": 0,
+    "question_closures": 0,
+    "caution": "Count fresh Palmer page scope once only after reconciliation with Phase3 ledger; PADIS synthesis not excavation target."
+  },
+  "next_test": "Inspect Augustinović89–92 and phase-specific PADIS0021 plan/report for an estate-linked cave, cool room and ancient datum."
+}

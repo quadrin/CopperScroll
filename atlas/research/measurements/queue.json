@@ -13,9 +13,9 @@
       "target": "Twin Cave openings, pillar, connectivity and northern threshold",
       "packet": "twin_packet.md",
       "execution_state": "protocol_ready",
-      "readiness": "awaiting_scaled_survey_and_threshold_records",
+      "readiness": "awaiting_cave_specific_inventory_scaled_survey_and_threshold_records; general_Gnazim_fonds717_identified",
       "parallel_lane": "cave_survey_records",
-      "next_action": "Obtain cave-specific labelled scaled survey and threshold section; identify season and field-record provenance.",
+      "next_action": "Obtain a Twin Cave item-level inventory/plan/diary under Gnazim fonds 717 or another documented custody chain; link the northern datum to areas, depths and phase.",
       "completion": "Report mouth/pillar geometry and bearings with uncertainty; separately tie the northern datum and architecture to phase evidence.",
       "measures": [
         "TC-01",
@@ -26,6 +26,10 @@
         "TC-06",
         "TC-07",
         "TC-08"
+      ],
+      "outputs": [
+        "cycle3/twin_archive.md",
+        "cycle3/twin_archive.json"
       ]
     },
     {
@@ -36,10 +40,10 @@
       ],
       "target": "Abu Saraj IV/17 Plan 5 geometry",
       "packet": "iv17_packet.md",
-      "execution_state": "independent_plan_repeat_recorded",
+      "execution_state": "independent_plan_repeat_and_catalogue_contact_check_recorded",
       "readiness": "point_reproduction_supported; endpoint_envelope_extended; north_and_ancient_threshold_pending",
       "parallel_lane": "scaled_plan_digitization",
-      "next_action": "Obtain survey north, ancient northern datum and original southern aperture/phase; preserve both independent pick sets.",
+      "next_action": "Inspect Michael Dadon IV/17 permit L-656 field file: original plan/north, 656.17/656.20 basket-to-locus joins, southern-wall contacts and northern-threshold section/levels; survey coins are separate.",
       "completion": "Independent annotations agree within declared envelopes; record surveyed north and ancient threshold/phase separately.",
       "outputs": [
         "iv17_pilot.json",
@@ -47,7 +51,9 @@
         "iv17_recomputed.json",
         "cycle2/iv17_repeat.json",
         "cycle2/iv17_repeat_results.json",
-        "cycle2/iv17_repeat_report.md"
+        "cycle2/iv17_repeat_report.md",
+        "cycle3/iv17_phase.md",
+        "cycle3/iv17_phase.json"
       ],
       "measures": [
         "northern_clear_gap",
@@ -120,7 +126,7 @@
       "execution_state": "distance_and_frozen_coarse_grouping_sensitivity_recorded",
       "readiness": "64_grouping_cases_complete; independent_associations_fine_districts_and_unmapped_subspans_pending",
       "parallel_lane": "sequence_sensitivity",
-      "next_action": "Audit surviving anchors independently; define fine-district footprints and pending phrase/subspan mappings before held-out itinerary tests.",
+      "next_action": "Recover Augustinovic1951 pp89–92 for Tell el-Qos and Amit1989 Fig1/phase discussion for Doq; independently identify entry32 outlet/wall before fine-district footprints and held-out itinerary tests.",
       "completion": "Report regional group stability and held-out itinerary predictions across declared alternatives; keep candidate probabilities undefined.",
       "outputs": [
         "sequence/pilot.py",
@@ -129,7 +135,10 @@
         "sequence/edges.csv",
         "cycle2/sequence_grouping.md",
         "cycle2/sequence_grouping/frozen_input_ledger.json",
-        "cycle2/sequence_grouping/scenario_metrics.csv"
+        "cycle2/sequence_grouping/scenario_metrics.csv",
+        "cycle3/betqos_anchor.md",
+        "cycle3/betqos_anchor.json",
+        "cycle3/doq_anchor.md"
       ],
       "measures": [
         "selected_stop_distance_and_order",
@@ -173,14 +182,15 @@
     "configured_tracks": 6,
     "pilot_or_audit_outputs_recorded": 4,
     "protocol_and_source_requirements_only": 2,
-    "new_primary_targets": 0,
+    "new_primary_targets": 1,
     "new_bounded_source_checks": 2,
     "new_decisive_candidate_tests": 0,
     "question_closures": 0,
-    "cumulative_project_bounded_checks": 19
+    "cumulative_project_bounded_checks": 21,
+    "cumulative_project_primary_targets": 19
   },
   "last_update_utc": "2026-10-02",
-  "last_completed_cycle": 2,
+  "last_completed_cycle": 3,
   "completed_cycles": [
     {
       "cycle": 1,
@@ -191,6 +201,12 @@
       "cycle": 2,
       "bounded_checks_added": 2,
       "role": "IV/17 point reproduction and conditional Hyrcania quantization-alone test; grouping pass counts separately"
+    },
+    {
+      "cycle": 3,
+      "primary_targets_added": 1,
+      "bounded_checks_added": 2,
+      "role": "IV/17 catalogue/contact scope and independent Tell el-Qos association; general archive/access progress and Doq assertion audit counted separately"
     }
   ]
 }

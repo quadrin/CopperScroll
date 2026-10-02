@@ -1,6 +1,6 @@
 # Dok and Achor: feature tests after the Qumran video review
 
-28 September 2026. The [Qumran comparison](../../atlas/public/research/qumran-video-comparison.html) leaves the intake–boulder relationship unresolved. These are the next specific tests, with textual alternatives fixed before selecting features.
+28 September 2026. The [Qumran comparison](https://github.com/quadrin/CopperScroll/blob/main/atlas/public/research/qumran-video-comparison.html) leaves the intake–boulder relationship unresolved. These are the next specific tests, with textual alternatives fixed before selecting features.
 
 ## Entry 31, VII 11–13: Dok
 
@@ -43,3 +43,8 @@ Follow-up completed: [V/49 alias, catalogue anchors and midpoint precision check
 3. Independent VII 11 letter review and IV 6 noun review. Keep edition-specific readings attached to every feature test.
 
 These targets supplement the pending gazetteer sheets. Existing atlas coordinates, candidate rankings and geographic polygons are unchanged.
+
+
+## Later anchor/phase audit — 2 October 2026 UTC
+
+The [Doq cycle-3 note](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle3/doq_anchor.md) checks the ancient literary setting separately from entry order. It supports a named fortress around Jericho but leaves the precise modern anchor, required guard-post/drying feature and contemporary surface unresolved. Amit Fig. 1/full chapter remain unread; their exact Kotar route is retained. Atlas entry 31 no longer presents the required installation as dated through 70 CE. Rankings and geometry are unchanged.

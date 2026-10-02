@@ -68,3 +68,8 @@ Independent digitization, survey north convention, original southern aperture an
 ## Independent Plan 5 repeat — 2 October 2026 UTC
 
 [Cycle 2 report](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle2/iv17_repeat_report.md) preserves new endpoint picks made before reading the first annotation. Present northern/southern remaining gaps and spacing reproduce approximately 0.86 m / 1.16 m / 4.23 m. Independent northern endpoint sensitivity extends beyond the first width/lower-bearing envelope; retain both sets and all stated bounds. Raw page-layout labels and a typed timestamp error are explicitly audited without changing frozen pixels. This completes one supporting bounded point-reproduction test on the same source plan, with incomplete envelope coverage. True mouth bearings, ancient southern aperture, northern threshold, phase, geographic registration and identity remain unresolved. Exact-mouth-bearing and deposit-geometry fields stay null.
+
+
+## Later context-chain inspection — 2 October 2026 UTC
+
+The [cycle-3 note](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle3/iv17_phase.md) extends the inspected scope to pp. 81–82 / Table 1 and field-record notes. Coins 60/61 are survey records; Table 1 repeats them. Excavated arrowhead baskets 656.17/656.20 lack published architectural contacts. Note 11 names Michael Dadon / L-656; the starred editorial note identifies the file’s archive class. Wall/threshold chronology remains unresolved. This adds one scoped page target in the same article/campaign and one inconclusive bounded context-chain check, without a new independent campaign or feature date.

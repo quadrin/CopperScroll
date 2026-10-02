@@ -115,6 +115,23 @@
         "repeat_note": "research/measurements/cycle2/iv17_repeat_report.md",
         "repeat_result": "point reproduction supporting; independent northern endpoint sensitivity exceeds first pilot's width/lower-bearing bounds",
         "uncertainty_policy": "Preserve both pick sets and all sensitivity envelopes; no statistical or full-source accuracy claim"
+      },
+      "context_record_check": {
+        "note": "research/measurements/cycle3/iv17_phase.md",
+        "records": "research/measurements/cycle3/iv17_phase.json",
+        "status": "inconclusive_architectural_chronology",
+        "permit": "L-656",
+        "director": "Michael Dadon",
+        "survey_coin_registrations": [
+          "16541",
+          "22227"
+        ],
+        "excavated_arrowhead_baskets": [
+          "656.17",
+          "656.20"
+        ],
+        "field_file_inspected": false,
+        "published_wall_or_threshold_contacts": false
       }
     }
   ],
@@ -125,5 +142,6 @@
     "decisive_candidate_tests": 0,
     "question_closures": 0
   },
-  "last_measurement_update_utc": "2026-10-02"
+  "last_measurement_update_utc": "2026-10-02",
+  "last_context_update_utc": "2026-10-02"
 }

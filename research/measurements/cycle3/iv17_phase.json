@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "review_date_utc": "2026-10-02",
+  "track": "M02",
+  "question": "R02",
+  "candidate": "IV/17",
+  "test_id": "iv17-survey-catalogue-to-architecture-contact",
+  "test": "Do coins 60/61 or excavated arrowhead baskets 656.20/656.17 have published stratigraphic contacts independently dating the southern wall or northern threshold?",
+  "source": {
+    "author": "Ofer Sion",
+    "year": 2002,
+    "publication": "Atiqot 41 part 1 Hebrew issue",
+    "file": "tmp/atiqot41/volume/06 - Regions IV and VI- Survey and Excavations of Caves along the Jebel Abu Saraj Cliffs.pdf",
+    "sha256": "7b56f84d7f87d7ad16f5f707739fb6f91b9193dafb11756d860324d69a7ca718",
+    "publisher_record": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/",
+    "revisited_printed_pages": [
+      63,
+      64
+    ],
+    "visually_inspected_crossref_printed_pages": [
+      81,
+      82,
+      83
+    ],
+    "pdf_mapping": {
+      "63": 21,
+      "64": 22,
+      "81": 39,
+      "82": 40,
+      "83": 41
+    },
+    "coverage": "target description/catalogue and referenced aggregation/editorial notes; partial article"
+  },
+  "evidence": [
+    {
+      "class": "published_observation",
+      "pages": [
+        63,
+        64
+      ],
+      "record": "coin_60",
+      "method": "survey",
+      "basket": "4",
+      "registration": "16541",
+      "issuer": "Alexander Jannaeus",
+      "catalogue_date_bce": [
+        103,
+        76
+      ],
+      "introductory_date_bce": [
+        103,
+        73
+      ],
+      "date_discrepancy_retained": true,
+      "architectural_locus": null,
+      "elevation": null,
+      "wall_or_threshold_contact": null
+    },
+    {
+      "class": "published_observation",
+      "pages": [
+        64
+      ],
+      "record": "coin_61",
+      "method": "survey",
+      "basket": "1",
+      "registration": "22227",
+      "issuer": "Hasmonean",
+      "date_bce": [
+        129,
+        76
+      ],
+      "architectural_locus": null,
+      "elevation": null,
+      "wall_or_threshold_contact": null
+    },
+    {
+      "class": "published_aggregation",
+      "pages": [
+        81
+      ],
+      "figure_or_table": "Table 1 IV/17 row",
+      "records": [
+        "coin_60",
+        "coin_61"
+      ],
+      "independent_evidence": false,
+      "new_stratigraphy": false
+    },
+    {
+      "class": "published_observation",
+      "pages": [
+        64
+      ],
+      "record": "arrowhead_1",
+      "method": "excavation",
+      "basket": "656.20",
+      "architectural_locus": null,
+      "wall_or_threshold_contact": null
+    },
+    {
+      "class": "published_observation",
+      "pages": [
+        64
+      ],
+      "record": "arrowhead_3",
+      "method": "excavation",
+      "basket": "656.17",
+      "architectural_locus": null,
+      "wall_or_threshold_contact": null
+    },
+    {
+      "class": "published_observation",
+      "pages": [
+        64
+      ],
+      "record": "arrowhead_2",
+      "method": "survey",
+      "basket": null,
+      "wall_or_threshold_contact": null
+    },
+    {
+      "class": "published_archival_pointer",
+      "pages": [
+        63,
+        82
+      ],
+      "note": "p63 note 11 -> p82 note11; starred Dadon contribution -> single-asterisk editorial note",
+      "director": "Michael Dadon",
+      "permit": "L-656",
+      "repository_description": "Archaeology staff officer archive for Judea and Samaria",
+      "specific_file_inspected": false,
+      "online_file_link": null
+    },
+    {
+      "class": "excavator_reconstruction",
+      "pages": [
+        63
+      ],
+      "claim": "Hellenistic cave use and concealment role of southern blocking",
+      "independent_wall_date": false,
+      "independent_threshold_date": false
+    }
+  ],
+  "result": {
+    "status": "inconclusive_for_architectural_chronology",
+    "southern_wall_construction_date": null,
+    "northern_threshold_date": null,
+    "ancient_threshold_datum": null,
+    "repeated_coin_evidence_deduplicated": true,
+    "survey_coins_do_not_supply_published_architectural_contacts": true,
+    "candidate_ranking_changed": false,
+    "geometry_changed": false,
+    "confidence_changed": false
+  },
+  "satisfied_constraints": [
+    "present pair of mouths and wall in source plan",
+    "survey/excavation distinction",
+    "two catalogue registrations",
+    "two excavation basket identifiers",
+    "permit and archive-class pointer"
+  ],
+  "missing_constraints": [
+    "architectural loci",
+    "dated sealed contacts",
+    "wall foundation sequence",
+    "northern threshold surface/date",
+    "section/level datum",
+    "true mouth bearings",
+    "geographic mouth registration"
+  ],
+  "next_record": {
+    "candidate": "IV/17",
+    "director": "Michael Dadon",
+    "permit": "L-656",
+    "required_documents": [
+      "locus list",
+      "656.17 and 656.20 basket records",
+      "original plan",
+      "northern threshold section/level",
+      "southern wall foundation/contact sections"
+    ],
+    "survey_keys": [
+      {
+        "basket": "4",
+        "registration": "16541"
+      },
+      {
+        "basket": "1",
+        "registration": "22227"
+      }
+    ]
+  },
+  "kpi_recommendation": {
+    "new_primary_targets": 1,
+    "new_independent_publications": 0,
+    "bounded_checks": 1,
+    "bounded_check_condition": "Count only if earlier phase check did not already count this specific survey-catalogue/contact chain; otherwise 0.",
+    "decisive_tests": 0,
+    "question_closures": 0,
+    "rationale": "New scoped Table1/notes inspection extends the same Sion article/campaign; revisited pp.63–64 add no target. Context chain is a new explicit test; preserve prior counted coverage if a historical duplicate appears.",
+    "primary_target_scope": "Printed pp.81–82, Table1 IV/17 row, note11 and starred editorial archive pointer",
+    "primary_target_condition": "Historical coverage deduplication: current source register names only pp.61–64; prior OCR/render files alone do not establish counted visual inspection."
+  },
+  "kpi_accounting": {
+    "primary_targets_added": 1,
+    "primary_scope": "Sion 2002 printed pp. 81–82 / Table 1 and notes; same article and campaign as prior pp. 61–64",
+    "bounded_checks_added": 1,
+    "result": "inconclusive architectural chronology",
+    "deduplication": "Prior counted target in tracker/source register is pp. 61–64. Earlier OCR/render files do not establish counted visual inspection of this scope.",
+    "decisive_tests_added": 0,
+    "closures_added": 0
+  }
+}
