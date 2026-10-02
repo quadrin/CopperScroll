@@ -1,0 +1,259 @@
+{
+  "source": {
+    "author": "David Amit",
+    "year": 1989,
+    "title_he": "מפעל המים של מבצר דוק (דגון)",
+    "pages": [
+      223,
+      224,
+      225,
+      226,
+      227,
+      228
+    ],
+    "new_scope": [
+      225,
+      226,
+      227,
+      228
+    ],
+    "sha256": "0b7ec184cb524982f7da36327f66f01354e7edd32b92c3afb25f295408ab20c3",
+    "local_pdf": "recovered/aqua-archive/amit-doq-pp223-228.pdf",
+    "archived_path": "research/assets/plans/aqueducts1989/amit-doq-pp223-228.pdf",
+    "mirror_path": "atlas/research/assets/plans/aqueducts1989/amit-doq-pp223-228.pdf",
+    "inspection": "actual original page images"
+  },
+  "candidate": {
+    "entry": 31,
+    "reading_models": [
+      "eastern corner of drying room",
+      "eastern corner of guard post",
+      "corner of eastern guard post"
+    ],
+    "conditional_inspection_area": "platform beside and below canal immediately upstream of point C, using textual position within Fig2 source-plan frame",
+    "area_status": "text-located vicinity, no drawn pool/building footprint",
+    "geographic_coordinates": null,
+    "new_feature_identification": false,
+    "required_datum": "ancient surface at identified room corner",
+    "depth_model": {
+      "cubits": 7,
+      "unit_m": [
+        0.4,
+        0.6
+      ],
+      "depth_m": [
+        2.8,
+        4.2
+      ],
+      "absolute_elevation": null,
+      "surface_origin": null
+    }
+  },
+  "check": {
+    "id": "C8-DOQ-31-C-GUARD",
+    "hypothesis": "C-area pools and adjacent Herodian buildings identify the required guard post/eastern corner",
+    "outcome": "inspection area narrowed; feature identity, corner, date and surface remain unresolved",
+    "evidence_pages": [
+      224,
+      225,
+      227,
+      228
+    ],
+    "observed": [
+      "two pools beside and lower than canal",
+      "western pool approximately 1.5 m square; surviving plaster and possible steps",
+      "eastern pool retains cut eastern wall and floor-plaster remains",
+      "nearby Herodian buildings reported from the 1982 test excavation"
+    ],
+    "author_interpretations": [
+      "pools served nearby residents and guards",
+      "Meshulam proposes possible miqvaot",
+      "system probably Hasmonean with continued use; no additional Herodian phase identified"
+    ],
+    "not_established": [
+      "guard-post room",
+      "drying-room function",
+      "eastern building corner",
+      "ancient corner surface",
+      "pool construction date"
+    ],
+    "next_discriminator": "1982 northeastern-spur excavation plan, locus and phase record linking buildings and pools"
+  },
+  "measurements": {
+    "cistern_table": [
+      {
+        "cistern": 1,
+        "length_m": 9.5,
+        "width_m": 4.5,
+        "height_m": 5.5,
+        "published_volume_m3": 235,
+        "source_page": 227,
+        "date_of_dimensions": "1972 survey reported in 1989",
+        "table_note": "Summary dimensions; do not treat irregular footprint as exact cuboid"
+      },
+      {
+        "cistern": 2,
+        "length_m": 14,
+        "width_m": 3.5,
+        "height_m": 5,
+        "published_volume_m3": 245,
+        "source_page": 227,
+        "date_of_dimensions": "1972 survey reported in 1989",
+        "table_note": "Summary dimensions; do not treat irregular footprint as exact cuboid"
+      },
+      {
+        "cistern": 3,
+        "length_m": 7.5,
+        "width_m": 3.5,
+        "height_m": 5.5,
+        "published_volume_m3": 145,
+        "source_page": 227,
+        "date_of_dimensions": "1972 survey reported in 1989",
+        "table_note": "Summary dimensions; do not treat irregular footprint as exact cuboid"
+      },
+      {
+        "cistern": 4,
+        "length_m": 9.2,
+        "width_m": 5,
+        "height_m": 6,
+        "published_volume_m3": 276,
+        "source_page": 227,
+        "date_of_dimensions": "1972 survey reported in 1989",
+        "table_note": "Summary dimensions; do not treat irregular footprint as exact cuboid"
+      },
+      {
+        "cistern": 5,
+        "length_m": 11,
+        "width_m": 3.5,
+        "height_m": 6.5,
+        "published_volume_m3": 250,
+        "source_page": 227,
+        "date_of_dimensions": "1972 survey reported in 1989",
+        "table_note": "Summary dimensions; do not treat irregular footprint as exact cuboid"
+      },
+      {
+        "cistern": 6,
+        "length_m": 11,
+        "width_m": 4.5,
+        "height_m": 5.5,
+        "published_volume_m3": 272,
+        "source_page": 227,
+        "date_of_dimensions": "1972 survey reported in 1989",
+        "table_note": "Summary dimensions; do not treat irregular footprint as exact cuboid"
+      },
+      {
+        "cistern": 7,
+        "length_m": 8.5,
+        "width_m": 4,
+        "height_m": 5.5,
+        "published_volume_m3": 187,
+        "source_page": 227,
+        "date_of_dimensions": "1972 survey reported in 1989",
+        "table_note": "Summary dimensions; do not treat irregular footprint as exact cuboid"
+      },
+      {
+        "cistern": 8,
+        "length_m": 9.5,
+        "width_m": 5.5,
+        "height_m": 5.5,
+        "published_volume_m3": 287,
+        "source_page": 227,
+        "date_of_dimensions": "1972 survey reported in 1989",
+        "table_note": "Summary dimensions; do not treat irregular footprint as exact cuboid"
+      },
+      {
+        "cistern": 9,
+        "length_m": 9.3,
+        "width_m": 4,
+        "height_m": 5.2,
+        "published_volume_m3": 193,
+        "source_page": 227,
+        "date_of_dimensions": "1972 survey reported in 1989",
+        "table_note": "Summary dimensions; do not treat irregular footprint as exact cuboid"
+      }
+    ],
+    "total_published_volume_m3": 2090,
+    "intake_to_cistern2_m": 500,
+    "channel_internal_width_m": [
+      0.6,
+      0.8
+    ],
+    "single_preserved_fill_chute": "branch between cisterns 2 and 3 leading to cistern 3",
+    "all_chutes": "author reconstruction from survivingexample",
+    "range_conflict": "Prose gives length 7–11 m and width 3–5 m; table gives cistern 2 length14 m and cistern 8 width5.5 m. Preserve table values."
+  },
+  "figures": [
+    {
+      "figure": 1,
+      "page": 223,
+      "type": "fortress photograph"
+    },
+    {
+      "figure": 2,
+      "page": 224,
+      "type": "water-system topographic plan",
+      "scale_m": [
+        0,
+        300
+      ]
+    },
+    {
+      "figure": 3,
+      "page": 225,
+      "type": "canal photograph"
+    },
+    {
+      "figure": 4,
+      "page": 225,
+      "type": "channel section I",
+      "scale_cm": [
+        0,
+        100
+      ]
+    },
+    {
+      "figure": 5,
+      "page": 225,
+      "type": "channel section II",
+      "scale_cm": [
+        0,
+        100
+      ]
+    },
+    {
+      "figure": 6,
+      "page": 225,
+      "type": "cistern2 opening/canal photograph"
+    },
+    {
+      "figure": 7,
+      "page": 226,
+      "type": "cistern1–9 plans",
+      "scale_m": [
+        0,
+        10
+      ]
+    }
+  ],
+  "accounting_proposal": {
+    "scoped_source_completions": 1,
+    "independent_new_field_campaigns": 0,
+    "binary_intakes": 0,
+    "cartographic_intakes": 0,
+    "bounded_checks": 1,
+    "decisive_tests": 0,
+    "closures": 0
+  },
+  "inaccessible_sources": [],
+  "uninspected_sources": [
+    {
+      "name": "December 1982 Doq northeastern-spur test excavation original report or records",
+      "exact_url": null,
+      "status": "reference only; no availability claim"
+    },
+    {
+      "name": "other edition guard-post apparatus",
+      "status": "baseline project variants retained; original apparatus not newly inspected"
+    }
+  ]
+}

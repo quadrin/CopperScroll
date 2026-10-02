@@ -1,0 +1,110 @@
+{
+  "research_date": "2026-10-02",
+  "entry": 49,
+  "status": "bounded identity and phase check; no question closed",
+  "source_plan_geometry": {
+    "coordinate_system": "source-relative only",
+    "registered_geographic_coordinates": null,
+    "computed_distances": [],
+    "deposit_offset": null,
+    "reason": "Text supplies no compass/cubit instruction; distinct historical installation has no modern-locus registration"
+  },
+  "features": [
+    {
+      "id": "guthe-ghjk",
+      "source": "Guthe 1882, pp. 65–68, plate II",
+      "sector": "tunnel-mouth pool",
+      "dimensions_m": {
+        "length": 9,
+        "width_range": [
+          2.7,
+          3.2
+        ]
+      },
+      "modern_locus": null,
+      "calendar_date": null,
+      "claim_basis": "prior direct baseline reading; source not re-inspected"
+    },
+    {
+      "id": "southern-stepped-pool",
+      "source": "HA 2014, L124, Fig. 3; HA 2022, W50, Figs. 2–3 and explicit Guthe plate III citation",
+      "modern_loci": [
+        "L124",
+        "W50"
+      ],
+      "sector": "Southeast of Birket al-Hamra; north of gateway L127",
+      "dimensions_m": {
+        "partly_exposed_length": 3,
+        "partly_exposed_width": 2.5,
+        "depth": 2.5
+      },
+      "phase": "2014 phases 3d–3c: construction later than pavement L115",
+      "calendar_date_transfer_to_tank": false,
+      "identity_with_greenhut_mazor2020_pool": "Unverified; source plans and loci require comparison"
+    },
+    {
+      "id": "bliss-small-grooved-tank",
+      "source": "Bliss and Dickie 1898, pp. 134–135, Plate XI and General Plan II",
+      "sector": "Southern drain exit, gate d2, southwest of Old Pool",
+      "dimensions_m": {
+        "side": 1.016,
+        "height": 0.635,
+        "floor_above_main_drain_bottom": 1.524
+      },
+      "modern_locus": null,
+      "relative_phase": "1898 interpretation: construction after drain disuse",
+      "calendar_date": null
+    },
+    {
+      "id": "tower-reservoir",
+      "source": "HA 2014, L119, Figs. 3–4",
+      "modern_locus": "L119",
+      "dimensions_m": {
+        "interior_length": 6.53,
+        "interior_width": 4.2
+      },
+      "phase": "Tentatively phase 3d: insertion inside an existing tower",
+      "calendar_date_transfer_to_tank": false
+    },
+    {
+      "id": "southern-drain-segment",
+      "source": "HA 2022, L408, Figs. 3 and 7",
+      "modern_locus": "L408",
+      "dimensions_m": {
+        "exposed_length": 3,
+        "width_range": [
+          0.8,
+          0.85
+        ]
+      },
+      "date": "no dating finds",
+      "identity_with_ghjk_channel": null
+    },
+    {
+      "id": "greenhut-mazor2020-dam-side-pool",
+      "source": "Greenhut and Mazor 2020, publisher abstract only",
+      "sector": "Against external dam face",
+      "modern_locus": null,
+      "identity_with_L124_W50": null,
+      "date_claim": "Abstract attributes construction to the later first century CE from foundation pottery and coins",
+      "date_claim_scope": "Applies only to the installation studied in that report; correspondence with L124/W50, GHJK and Bliss’s tank remains unchecked",
+      "full_report_access": "403; plan and sample contexts unread"
+    }
+  ],
+  "new_bounded_check": {
+    "test": "Does a source-published correspondence join GHJK or small grooved tank to a dated modern locus?",
+    "result": "No. An explicit southern pool L124/W50/Guthe plate III correspondence exists. GHJK appears on plate II; the tank remains unassigned. The feature identities stay separate."
+  },
+  "date_conflict": {
+    "greenhut_mazor2020": "Publisher abstract: later first century CE/Great Revolt date from pool foundation pottery and coins; full context unread",
+    "szanton2024": "Printed p. 34*: tentative earlier pool phase, citing radiocarbon range 520–200 BCE",
+    "boaretto2020": "Publisher abstract: samples on outer dam wall; Persian/Hellenistic ages and unresolved discrepancy with archaeological seventh-century–586 BCE dating",
+    "resolution": "Determine which installation and plaster layer each publication refers to. The abstracts and 2024 interpretation cannot establish that they dated the same pool. Retain the conflict as a sample/feature association question."
+  },
+  "figure_manifest": "research/assets/plans/siloam-cycle8/figure_manifest.json",
+  "next_discriminating_source": [
+    "Greenhut and Mazor 2020, pp. 71*–86*: plan, locus register and foundation coin contexts",
+    "Boaretto 2020, pp. 79–81: sample table, dated material and plaster layer context",
+    "Explicit modern-locus correspondence for GHJK or Bliss’s grooved tank"
+  ]
+}

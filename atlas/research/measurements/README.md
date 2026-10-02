@@ -49,3 +49,8 @@ Record setup progress separately: six tracks configured, four with recorded pilo
 
 
 2 October 2026 Hyrcania update: original Fig. 22 is now recovered. A conditional page-up northern-pool offset pass is recorded in [the assessment](../assessments/entry29_hyrcania/README.md); centre/rim origins differ about 11 m. North validation, measuring datum, dated surface and geographic controls remain pending. Six-track setup/output counts remain unchanged.
+
+
+## Parallel cycle 8 — 2 October 2026 UTC
+
+[Doq and Siloam results, archive and access limits](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle8/README.md). Doq’s full chapter yields a conditional C-area building/pool target; Siloam’s textual and feature identities remain conditional, with no dated trough correspondence. Four scoped primary targets and four bounded checks added: totals 33 / 5 cartographic-reference intakes / 35 bounded checks / 3 conditional assessments / 0 decisive tests / 0 closures. Thirty-five original IAA figures archived and mirrored; image intake is not a research-target increment. No question-state, coordinate or confidence changes. Feldman’s anthology search remains parked; no outreach.

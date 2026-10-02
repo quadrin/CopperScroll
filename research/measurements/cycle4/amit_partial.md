@@ -29,3 +29,8 @@ The earlier upload was readable and yielded the two verified page images. After 
 [Kotar chapter locator](https://kotar.cet.ac.il/KotarApp/Index/Chapter.aspx?nBookID=6765980&nTocEntryID=7085524) remains an online bibliographic/excerpt route. It does not replace the uninspected remainder of the chapter.
 
 Accounting: one scoped original survey/page target for pp. 223–224 / Figs. 1–2, added now for the previously uncounted direct page inspection. Zero independent new field campaign claims, bounded candidate checks, cartographic-reference intakes, decisive tests or closures. Exact feature, phase, markers and deposit geometry remain unchanged.
+
+
+## Subsequent completion — 2 October 2026 UTC
+
+The complete six-page extract has since been recovered and pp. 225–228 inspected as original page images. The historical access limit above no longer applies to this chapter. [Completed evidence and dated-feature limitations](../cycle8/doq_completed.md). Original Figs. 1–7 remain in [the archived chapter](../../assets/plans/aqueducts1989/amit-doq-pp223-228.pdf). This adds one new scoped completion target; it does not add an independent publication or field campaign.

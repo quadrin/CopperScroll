@@ -1,0 +1,55 @@
+{
+  "entry": 49,
+  "column_lines": "X 15–16",
+  "date_utc": "2026-10-02",
+  "status": "conditional edition-based constraint audit",
+  "direct_edition_source": {
+    "author": "Émile Puech",
+    "title": "The Copper Scroll Revisited",
+    "year": 2015,
+    "printed_pages": [85, 86, 91, 92, 93, 138, 139],
+    "pdf_pages_one_based": [96, 97, 102, 103, 104, 149, 150],
+    "page_images_checked": true,
+    "modern_drawing": {"figure": 10, "printed_page": 138, "independent_manuscript_evidence": false}
+  },
+  "direct_plate_source": {
+    "title": "Les petites grottes de Qumrân",
+    "series": "Discoveries in the Judaean Desert of Jordan III",
+    "year": 1962,
+    "volume": "plates",
+    "plate_identity_checks": [
+      {"plate": "XLIII", "photo": 3, "pdf_page": 55, "description": "scrolls before opening", "identity_verified_from_caption_and_index": true},
+      {"plate": "LXVI", "pdf_page": 78, "description": "column X copy", "identity_verified_from_caption": true},
+      {"plate": "LXVII", "pdf_page": 79, "description": "column X segmented photograph", "identity_verified_from_caption": true}
+    ],
+    "terminal_letter_or_added_strokes_resolved": false,
+    "limits": ["worn low-contrast reproduction", "verso mapping not secure enough for character decision", "copy not independent direct image", "broken corner and segmented photographs"]
+  },
+  "constraints": {
+    "under_feature_relation": true,
+    "compass_direction": null,
+    "metric_distance": null,
+    "cubit_value_or_depth": null,
+    "digging_verb": false,
+    "specified_ground_datum": null,
+    "treasure_quantity_in_puech": 17,
+    "quantity_is_geometric": false
+  },
+  "models": [
+    {"id": "puech_outlet_siloam", "requires": ["water exit/source", "conditional Siloam word division", "supplied genitive particle", "trough/gutter", "position beneath that feature"], "pool_required": false, "site_condition": "Siloam reading accepted", "source_quality": "directly inspected Puech edition"},
+    {"id": "milik_bathing_pool_siloam", "requires": ["bathing pool", "Siloam association", "final-feature reading and beneath relation"], "pool_required": true, "site_condition": "adjectival Siloam reading accepted", "source_quality": "reported by Puech plus inherited project record; original Milik apparatus not rechecked"},
+    {"id": "personal_name_water_closet", "requires": ["proposed sanitary installation", "Rachel or Jehu association", "final-feature reading and beneath relation"], "site_condition": "no independent Siloam locator", "source_quality": "reported alternatives; original Lefkovits pp352–357 not rechecked"}
+  ],
+  "bounded_checks": [
+    {"id": "e49_quantity_not_distance", "question": "Does entry49 require a 17-cubit distance or depth?", "result": "No, in the inspected Puech edition the notation records treasure quantity and supplies no geometric unit", "resolved_for_inspected_edition": true, "r06_closed": false},
+    {"id": "e49_terminal_trough_image_audit", "question": "Does the supplied pre-opening image independently settle final taw and added-stroke claims?", "result": "Inconclusive: source recovered and identity verified, but reproduction insufficient", "resolved": false, "r06_closed": false}
+  ],
+  "confidence": {"reading": "conditional", "site": "existing medium conditional on Siloam reading", "individual_feature": "unresolved", "phase": "unresolved", "geographic_position": "no newly modeled point"},
+  "map_intakes_added": 0,
+  "candidate_rank_or_coordinates_changed": false,
+  "unread_sources": [
+    {"title": "Judah K. Lefkovits, The Copper Scroll—3Q15: A Reevaluation: A New Reading, Translation, and Commentary (2000)", "target_pages": "352–357", "url": "https://www.degruyterbrill.com/document/isbn/9789004350267/html?lang=en", "status": "405 through reader"},
+    {"title": "Lefkovits, Discussion chapter", "url": "https://brill.com/display/book/9789004350267/BP000007.xml", "status": "403 through reader"},
+    {"title": "Milik, Copper Scroll text/commentary in DJDJIII text volume (1962)", "target_pages": "entry49 including p295", "url": "https://books.google.com/books?id=szlAAAAAIAAJ", "status": "catalogue record located; target pages uninspected this pass"}
+  ]
+}

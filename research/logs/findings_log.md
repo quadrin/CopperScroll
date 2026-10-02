@@ -1154,3 +1154,8 @@ Netzer’s 1983 original chapter now supplies a complete plan (p. 100), approxim
 ## 2 October 2026 — Netzer original-book intake and supply-phase check
 
 Both supplied books opened. Final-report pp. 74, 82, 84–85 image-checked: preserved final Hasmonean supply branches are distinguished from explicitly unresolved Herodian combined-pool supply. W57/W43 tentative channel-base interpretation becomes a separate plan target. Source/test totals 24/24, with 5 map intakes, 0 decisive tests and 0 closures. [Exact scope](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/netzer2001-first-pass.md).
+
+
+## Parallel cycle 8 — 2 October 2026 UTC
+
+[Doq and Siloam results, archive and access limits](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle8/README.md). Doq’s full chapter yields a conditional C-area building/pool target; Siloam’s textual and feature identities remain conditional, with no dated trough correspondence. Four scoped primary targets and four bounded checks added: totals 33 / 5 cartographic-reference intakes / 35 bounded checks / 3 conditional assessments / 0 decisive tests / 0 closures. Thirty-five original IAA figures archived and mirrored; image intake is not a research-target increment. No question-state, coordinate or confidence changes. Feldman’s anthology search remains parked; no outreach.
