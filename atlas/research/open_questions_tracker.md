@@ -314,3 +314,8 @@ Archived 16 viewable assets from accessible earlier sources: five Michigan map v
 ## TIR North recovered — 2 October 2026, Los Angeles
 
 Reattached North TIFF opens and matches the earlier source hash. Archived complete-sheet overview, full native-resolution JPEG derivative in verified parts and nine lossless native research-window crops; removed North from the current missing-source list. South, Synagogues and Eretz Israel/Sinai TIFFs remain absent. Same cartographic source, no new target or test. Research totals remain 24 source targets / 5 cartographic intakes / 24 bounded checks / 0 decisive tests / 0 closures. [Assets and source identity](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/tir-michigan/north/README.md).
+
+
+## TIR South and Eretz Israel/Sinai recovered — 2 October 2026, Los Angeles
+
+Reattached TIFFs open and match earlier source hashes. Archived complete sheets, reconstructable native-resolution JPEG derivatives and native regional/legend crops. Removed both from the current missing-source list; Synagogues remains missing. JPEG derivatives are lossy, PNG legends preserve source pixels. These recoveries add no new research targets/tests. Totals remain 24 source targets / 5 cartographic intakes / 24 bounded checks / 0 decisive tests / 0 closures. [South](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/tir-michigan/south/README.md) / [Eretz Israel/Sinai](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/tir-michigan/eretz-sinai/README.md).

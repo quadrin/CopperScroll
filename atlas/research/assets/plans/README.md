@@ -4,6 +4,8 @@ Source figures, project reconstructions and diagnostics retain separate labels. 
 
 ## Archived sets
 
+- [Full-resolution South](tir-michigan/south/README.md) and [Eretz Israel/Sinai](tir-michigan/eretz-sinai/README.md): complete-sheet views, reconstructable native-resolution JPEGs, regional crops and lossless legends; recovered copies match the earlier source hashes.
+
 - [Full-resolution general North follow-up](tir-michigan/north/README.md): complete-sheet viewing image, full native-resolution JPEG derivative in checksum-verified parts, and nine lossless detail crops. Source TIFF recovered; same source as earlier intake.
 
 - [Michigan TIR maps](tir-michigan/README.md): five supplied map sheets (four previews and a high-resolution Churches original), full-sheet Churches viewing image and four native-resolution regional/legend crops. The exact large Churches original is preserved in 35 checksum-verified parts with a reconstruction script. Required credit: **University of Michigan Library (Stephen S. Clark Library).**
@@ -18,4 +20,4 @@ Source figures, project reconstructions and diagnostics retain separate labels. 
 
 [Exact missing-file register and retrieval links](MISSING.md). Includes the later four Michigan TIFFs, Schulz/Strobel captures, ESI cave plans, ʿAtiqot cave-report originals, Magen–Peleg detail plans, Hyrcania source plan and Doq pages. Netzer folded Plans 14, 15 and 23 remain unverified in the supplied final-report scan. Illustrated-book extraction remains queued.
 
-The initial backfill added **16 viewable image assets** (9 Michigan map views/crops, 5 Trümper figure crops and 2 Ilan–Amit figure crops), plus exact-source Churches parts and provenance. Four of the Michigan whole-sheet images remain previews. The North follow-up adds **10 viewable assets**, bringing this backfill’s total to **26**, plus full native-resolution derivative parts. The archive is complete for this pass’s accessible originals; the missing register records remaining coverage. Archiving/recovery adds no new source-inspection target, independent field campaign, decisive test or question closure.
+The initial backfill added **16 viewable image assets** (9 Michigan map views/crops, 5 Trümper figure crops and 2 Ilan–Amit figure crops), plus exact-source Churches parts and provenance. Four of the Michigan whole-sheet images remain previews. The North follow-up adds **10 viewable assets**, bringing this backfill’s total to **26**, plus full native-resolution derivative parts. The South/Sinai follow-up adds **10 viewable assets**, bringing this backfill’s total to **36**, plus complete native-resolution JPEG parts. The archive is complete for this pass’s accessible originals; the missing register records remaining coverage. Archiving/recovery adds no new source-inspection target, independent field campaign, decisive test or question closure.
