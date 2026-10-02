@@ -1,0 +1,496 @@
+{
+  "source": "Monika Tr\u00fcmper 2018, printed pp.284\u2013286, Figs20\u201322",
+  "raster": "fitz Matrix(2,2), full page",
+  "north_direction": "right in Figs20\u201322",
+  "unit_sensitivity": {
+    "24_cubits_m": [
+      9.6,
+      14.4
+    ],
+    "27_cubits_m": [
+      10.8,
+      16.2
+    ],
+    "cubit_m": [
+      0.4,
+      0.6
+    ]
+  },
+  "scope": "perpendicular distance from two visible long-wall inner-edge stubs to central inter-pool route; projections must fall within visible finite stubs; no test of all channels, chainage, vertical distance, or arbitrary points on extended walls",
+  "samples": [
+    {
+      "phase": 3,
+      "figure": 20,
+      "pdf_page": 30,
+      "printed_page": 284,
+      "scale_px": [
+        689,
+        804
+      ],
+      "north_pool_longwalls_x": [
+        523,
+        679
+      ],
+      "south_pool_longwalls_x": [
+        306,
+        459
+      ],
+      "line_x": 499,
+      "visible_finite_y": [
+        650,
+        676
+      ],
+      "line_identity": "central aqueduct branch, published reconstructed plan",
+      "qualifying_channel": true,
+      "metres_per_pixel": 0.08695652173913043,
+      "picking_uncertainty_px": 3,
+      "stress_picking_uncertainty_px": 5,
+      "wall_endpoints_px": {
+        "north": [
+          [
+            [
+              523,
+              650
+            ],
+            [
+              523,
+              676
+            ]
+          ],
+          [
+            [
+              679,
+              650
+            ],
+            [
+              679,
+              676
+            ]
+          ]
+        ],
+        "south": [
+          [
+            [
+              306,
+              650
+            ],
+            [
+              306,
+              676
+            ]
+          ],
+          [
+            [
+              459,
+              650
+            ],
+            [
+              459,
+              676
+            ]
+          ]
+        ]
+      },
+      "sample_line_endpoints_px": [
+        [
+          499,
+          650
+        ],
+        [
+          499,
+          676
+        ]
+      ],
+      "offsets": [
+        {
+          "stress_interval_m": [
+            1.157,
+            3.119
+          ],
+          "stress_overlap_24_cubits": false,
+          "stress_overlap_27_cubits": false,
+          "pool": "north",
+          "wall_index": 0,
+          "pixel_distance": 24,
+          "metres": 2.087,
+          "manual_interval_m": [
+            1.513,
+            2.703
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": false
+        },
+        {
+          "stress_interval_m": [
+            14.05,
+            17.431
+          ],
+          "stress_overlap_24_cubits": true,
+          "stress_overlap_27_cubits": true,
+          "pool": "north",
+          "wall_index": 1,
+          "pixel_distance": 180,
+          "metres": 15.652,
+          "manual_interval_m": [
+            14.622,
+            16.757
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": true
+        },
+        {
+          "stress_interval_m": [
+            15.124,
+            18.624
+          ],
+          "stress_overlap_24_cubits": false,
+          "stress_overlap_27_cubits": true,
+          "pool": "south",
+          "wall_index": 0,
+          "pixel_distance": 193,
+          "metres": 16.783,
+          "manual_interval_m": [
+            15.714,
+            17.928
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": true
+        },
+        {
+          "stress_interval_m": [
+            2.479,
+            4.587
+          ],
+          "stress_overlap_24_cubits": false,
+          "stress_overlap_27_cubits": false,
+          "pool": "south",
+          "wall_index": 1,
+          "pixel_distance": 40,
+          "metres": 3.478,
+          "manual_interval_m": [
+            2.857,
+            4.144
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": false
+        }
+      ]
+    },
+    {
+      "phase": 5,
+      "figure": 21,
+      "pdf_page": 31,
+      "printed_page": 285,
+      "scale_px": [
+        279,
+        394
+      ],
+      "north_pool_longwalls_x": [
+        489,
+        643
+      ],
+      "south_pool_longwalls_x": [
+        270,
+        425
+      ],
+      "line_x": 463,
+      "visible_finite_y": [
+        652,
+        676
+      ],
+      "line_identity": "central aqueduct branch, published reconstructed plan",
+      "qualifying_channel": true,
+      "metres_per_pixel": 0.08695652173913043,
+      "picking_uncertainty_px": 3,
+      "stress_picking_uncertainty_px": 5,
+      "wall_endpoints_px": {
+        "north": [
+          [
+            [
+              489,
+              652
+            ],
+            [
+              489,
+              676
+            ]
+          ],
+          [
+            [
+              643,
+              652
+            ],
+            [
+              643,
+              676
+            ]
+          ]
+        ],
+        "south": [
+          [
+            [
+              270,
+              652
+            ],
+            [
+              270,
+              676
+            ]
+          ],
+          [
+            [
+              425,
+              652
+            ],
+            [
+              425,
+              676
+            ]
+          ]
+        ]
+      },
+      "sample_line_endpoints_px": [
+        [
+          463,
+          652
+        ],
+        [
+          463,
+          676
+        ]
+      ],
+      "offsets": [
+        {
+          "stress_interval_m": [
+            1.322,
+            3.303
+          ],
+          "stress_overlap_24_cubits": false,
+          "stress_overlap_27_cubits": false,
+          "pool": "north",
+          "wall_index": 0,
+          "pixel_distance": 26,
+          "metres": 2.261,
+          "manual_interval_m": [
+            1.681,
+            2.883
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": false
+        },
+        {
+          "stress_interval_m": [
+            14.05,
+            17.431
+          ],
+          "stress_overlap_24_cubits": true,
+          "stress_overlap_27_cubits": true,
+          "pool": "north",
+          "wall_index": 1,
+          "pixel_distance": 180,
+          "metres": 15.652,
+          "manual_interval_m": [
+            14.622,
+            16.757
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": true
+        },
+        {
+          "stress_interval_m": [
+            15.124,
+            18.624
+          ],
+          "stress_overlap_24_cubits": false,
+          "stress_overlap_27_cubits": true,
+          "pool": "south",
+          "wall_index": 0,
+          "pixel_distance": 193,
+          "metres": 16.783,
+          "manual_interval_m": [
+            15.714,
+            17.928
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": true
+        },
+        {
+          "stress_interval_m": [
+            2.314,
+            4.404
+          ],
+          "stress_overlap_24_cubits": false,
+          "stress_overlap_27_cubits": false,
+          "pool": "south",
+          "wall_index": 1,
+          "pixel_distance": 38,
+          "metres": 3.304,
+          "manual_interval_m": [
+            2.689,
+            3.964
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": false
+        }
+      ]
+    },
+    {
+      "phase": 6,
+      "figure": 22,
+      "pdf_page": 32,
+      "printed_page": 286,
+      "scale_px": [
+        314,
+        432
+      ],
+      "north_pool_longwalls_x": [
+        523,
+        679
+      ],
+      "south_pool_longwalls_x": [
+        306,
+        459
+      ],
+      "line_x": 511,
+      "visible_finite_y": [
+        650,
+        676
+      ],
+      "line_identity": "central line; channel identity unresolved",
+      "qualifying_channel": false,
+      "metres_per_pixel": 0.0847457627118644,
+      "picking_uncertainty_px": 3,
+      "stress_picking_uncertainty_px": 5,
+      "wall_endpoints_px": {
+        "north": [
+          [
+            [
+              523,
+              650
+            ],
+            [
+              523,
+              676
+            ]
+          ],
+          [
+            [
+              679,
+              650
+            ],
+            [
+              679,
+              676
+            ]
+          ]
+        ],
+        "south": [
+          [
+            [
+              306,
+              650
+            ],
+            [
+              306,
+              676
+            ]
+          ],
+          [
+            [
+              459,
+              650
+            ],
+            [
+              459,
+              676
+            ]
+          ]
+        ]
+      },
+      "sample_line_endpoints_px": [
+        [
+          511,
+          650
+        ],
+        [
+          511,
+          676
+        ]
+      ],
+      "offsets": [
+        {
+          "stress_interval_m": [
+            0.161,
+            1.964
+          ],
+          "stress_overlap_24_cubits": false,
+          "stress_overlap_27_cubits": false,
+          "pool": "north",
+          "wall_index": 0,
+          "pixel_distance": 12,
+          "metres": 1.017,
+          "manual_interval_m": [
+            0.492,
+            1.579
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": false
+        },
+        {
+          "stress_interval_m": [
+            12.742,
+            15.893
+          ],
+          "stress_overlap_24_cubits": true,
+          "stress_overlap_27_cubits": true,
+          "pool": "north",
+          "wall_index": 1,
+          "pixel_distance": 168,
+          "metres": 14.237,
+          "manual_interval_m": [
+            13.279,
+            15.263
+          ],
+          "overlap_24_cubits": true,
+          "overlap_27_cubits": true
+        },
+        {
+          "stress_interval_m": [
+            15.726,
+            19.196
+          ],
+          "stress_overlap_24_cubits": false,
+          "stress_overlap_27_cubits": true,
+          "pool": "south",
+          "wall_index": 0,
+          "pixel_distance": 205,
+          "metres": 17.373,
+          "manual_interval_m": [
+            16.311,
+            18.509
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": false
+        },
+        {
+          "stress_interval_m": [
+            3.387,
+            5.536
+          ],
+          "stress_overlap_24_cubits": false,
+          "stress_overlap_27_cubits": false,
+          "pool": "south",
+          "wall_index": 1,
+          "pixel_distance": 52,
+          "metres": 4.407,
+          "manual_interval_m": [
+            3.77,
+            5.088
+          ],
+          "overlap_24_cubits": false,
+          "overlap_27_cubits": false
+        }
+      ]
+    }
+  ]
+}

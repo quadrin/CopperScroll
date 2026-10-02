@@ -1,0 +1,24 @@
+{
+  "entry": "29",
+  "source": "Émile Puech, The Copper Scroll Revisited (Brill, 2015), printed pp. 62–65 / PDF pp. 73–76",
+  "verification": "Actual page images inspected; an edition and its apparatus, not a fresh inspection of the copper original.",
+  "constraints": [
+    {"id":"water_conduit","status":"reading defended from traces","content":"Entry begins with a water conduit and a following damaged q/y word. Puech's water-collection wording remains conjectural.","pages":[62,63]},
+    {"id":"northern_reservoir","status":"partly preserved wording","content":"A reservoir and a northern qualification are supported; the final suffix of northern is restored.","pages":[62,63,64]},
+    {"id":"jericho","status":"restoration","content":"Of Jericho is wholly restored; Puech also discusses Kohlit, possibly Tell es-Sultan, as an alternative gap fill.","pages":[62,64]},
+    {"id":"four_sides","status":"partly preserved wording","content":"Four and the beginning of the word for sides are present in Puech's text; the plural ending is restored. A four-sided basin is a defensible reading-level constraint.","pages":[62,64]},
+    {"id":"large_reference_side","status":"restored relationship with argued word","content":"Puech considers large secure from traces, relocates it from line 4 to line 5, and restores a preceding expression meaning from the large side. The starting preposition and its relation to sides remain editorial.","pages":[62,64]},
+    {"id":"distance","status":"partly preserved numeral","content":"Twenty-four cubits is Puech's preferred reading; part of twenty and the conjunction/part of four are restored. Alternative published readings are discussed, including Wolters' twenty-seven.","pages":[62,64]},
+    {"id":"measure_verb","status":"interpretation","content":"Puech allows either measure or Aramaic distance for msh; his translation prefers distance.","pages":[62,64]},
+    {"id":"cardinal_direction","status":"unreported","content":"No compass direction is supplied for the 24-cubit displacement. Northern qualifies the reservoir, not a displacement direction.","pages":[62,64]},
+    {"id":"distance_axis","status":"unresolved","content":"The text does not specify perpendicular distance, conduit chainage, slope distance, a particular long side, an inside/outside face, or a point versus an extended wall datum.","pages":[62,64]},
+    {"id":"depth","status":"not supplied","content":"Entry 29 supplies no separate excavation depth or digging verb in Puech's printed Hebrew. A 24-cubit digging-depth model would need additional justification.","pages":[62]},
+    {"id":"named_candidate","status":"not identified by this edition","content":"Puech proposes broad compatibility with Jericho palace hydraulic installations or the Ain Doq region; he does not identify this entry with a named northern pool or a particular channel phase.","pages":[65]}
+  ],
+  "measurement_protocol": {
+    "required_variants":["both long sides", "inner versus outer face if distinguishable", "perpendicular offset", "distance along a conduit only where its connection to a reference side is justified"],
+    "conditional_assumptions":["large means the longer side", "Puech's restored from-side relationship", "24-cubit reading", "0.40–0.60 m exploratory cubit range"],
+    "avoid":["Treating Jericho as preserved", "Selecting a convenient wall or phase after seeing the distance", "Converting north-reservoir wording into a northward instruction", "Treating a match to Puech's reconstruction as a match to wholly preserved words"]
+  },
+  "access_limits": "The supplied Puech page images opened. No external page needed for this task; original copper, original fragment photographs, and independent editions were not inspected."
+}

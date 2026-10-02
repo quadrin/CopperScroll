@@ -1,0 +1,15 @@
+# Entry 29: reviewed numerical result and reading applicability
+
+Reviewed `geometry/assessment.md`, `measurements.json` and `measure.py` against the image-checked Puech reading and the phase review. Independently reproduced all 12 nominal offsets and both digitization envelopes from the recorded picks. This numerical check does not add an independent excavation attestation or validate the source plans' survey accuracy.
+
+The test uses perpendicular offsets from the visible finite inner long-wall segments to the central inter-pool route. Its sample endpoints share the finite wall segments' recorded extent; it therefore avoids measuring against arbitrary wall extensions. The cropped western short edge is not substituted for a long side. Complete pool lengths, other channels and chainage remain outside this model.
+
+For phases 3 and 5, the northern far-side offset is about **15.65 m**. Its tighter manual envelope, **14.62–16.76 m**, misses the exploratory 24-cubit band of **9.6–14.4 m**. The wider ±5-pixel stress envelope, **14.05–17.43 m**, overlaps it. Accordingly the tighter-envelope mismatch is **not a robust exclusion** of even this narrow model. Near-side offsets are far shorter than either numeral band.
+
+The alternative 27-cubit band, **10.8–16.2 m**, overlaps the northern far-side envelope and the southern control's far-side envelope. It consequently fails to distinguish the northern pool geometrically. The southern control does not meet the northern wording; its role is to test whether the distance overlap is distinctive, not to establish an equally strong full-text identification. These are uncertainty-envelope overlaps, not exact matches to an attested cubit length.
+
+The phase-6 central line gives a northern far-side distance about **14.24 m**, with a tighter envelope overlapping the 24-cubit band. Its water-channel identity remains unresolved, and the output correctly excludes it from qualifying channel hits. It cannot supply affirmative candidate evidence until that identity and its phase relationship are established.
+
+The candidate remains conditional on several reading choices: Jericho is wholly restored; Puech supplies the from-side relationship; large is interpreted as longer; twenty-four is his preferred partly restored numeral; and the text prescribes neither perpendicular offset nor a particular long-wall face. The 0.40–0.60 m cubit range and both pixel envelopes are exploratory assumptions. Outer-face and chainage branches were not measured, so the conclusion should explicitly retain this inner-face perpendicular scope.
+
+The reconstructed plans do not establish a preserved inlet. Palace-phase captions do not precisely date every drawn channel, and Herodian destruction of original inlets prevents treating a model endpoint as an observed ancient junction. The completed result is a useful, reproducible bounded geometry check with an inconclusive identifying outcome. It supports neither a unique northern-pool identification nor rejection of the pool or Jericho district as a whole.
