@@ -43,3 +43,8 @@ For fortress phases, cited preliminary sources are Yoram Tsafrir and Yitzhak Mag
 [Manasseh IV source extract](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/zertal-vol4/sartaba-water-system-fort-plans.pdf). Extract page3 = printed454; pages4–5 =455–456; pages19–20 =470–471. [Garbrecht–Peleg source PDF](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/garbrecht-peleg1994/water-supply-desert-fortresses.pdf). All inspected figures already exist within these archived PDFs; no archival upload is required for this lane.
 
 Suggested accounting: +1 directly inspected scoped original-survey target (Manasseh IV above); +1 bounded generic-feature uniqueness check; +0 cartographic intakes, decisive candidate tests, conditional candidate assessments or question closures. Garbrecht–Peleg reinspection and reproduced Abel/Amit plans add no independent source count. Verify uniqueness against the parent session's source ledger before integrating.
+
+
+## Amit source recovered and inspected — 2 October 2026
+
+[Original-chapter audit](../../measurements/cycle6/sartaba_amit.md) distinguishes embankment 187 m from siphon 192 m, with siphon interior 60×80 cm. The 1994 approximation agrees; the later 250 m/60×60 cm still lacks common endpoint/section definitions. The complete chapter and all figures are now [archived](../../assets/plans/aqueducts1989/amit-sartaba-pp215-221.pdf). Historical unread status above is superseded to this chapter scope. No Sartaba entry association or deposit point is introduced.

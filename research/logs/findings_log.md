@@ -1,5 +1,10 @@
 # Findings log
 
+## Evidence cycle 6 — 2 October 2026, Los Angeles
+
+**Evidence:** Amit’s original Sartaba chapter gives separate187 m embankment and192 m siphon; siphon interior60×80 cm. A different open trapezoid has60 cm bottom/80 cm top/60 cm depth. **Partial result:** 1994’s190 m approximation agrees, later250 m remains undefined against those endpoints. **Inherited orientation:** Eshel’s detailed north arrow approximately supports page-up, but held-out residuals/scale mismatch leave metric/geographic acceptance unresolved. **Origin audit:** bridge48 has a documented trail crossing on a shared course; no northern-only Eshel datum or dated surface. **Edition qualification:** Puech prefers a restored pool at Koḥlit, fourteen and distance, explicitly rejecting Hyrcania restoration length. Added2 scoped targets and3 bounded checks, zero closures. Full Amit chapter figures archived. [Cycle6](../measurements/cycle6/README.md).
+
+
 ## Hyrcania and Sartaba parallel analysis — 2 October 2026, Los Angeles
 
 **Edition evidence:** Eshel places entry16’s start at a trail/northern-aqueduct intersection; passage49 is a separate project proxy. Entry29’s northward offset differs from side-length tests. Puech pp69/73 prefer entry35’s mound/gorge and argue against a dam on flood-loss grounds; that argument supplies no construction contact. **Conditional geometry:** northern pool centre/rim origins differ about11m; a 24-cubit page-up model remains datum- and orientation-dependent. **Control evidence:** Sartaba supplies fortress hydraulic features, but its20×7m divided feature is pool-or-structure; published siphon dimensions disagree without common endpoint definitions. Added2 scoped targets,2 bounded checks and1 inconclusive conditional assessment. No grade/marker change or closure. [Hyrcania assessment](../assessments/entry29_hyrcania/README.md), [Sartaba control](../assessments/sartaba_hydraulic_control/README.md).

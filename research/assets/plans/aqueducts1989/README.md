@@ -13,3 +13,8 @@ Chapter extracts preserve source page contents; PNGs are full-page renderings. R
 ## Qumran and Ein Boqeq chapter extract
 
 [Complete supplied trimmed extract](qumran-ein-boqeq-chapters.pdf): PDF pp. 1–6 = printed pp. 283–288, Qumran chapter by Zvi Ilan and David Amit; PDF pp. 7–11 = printed pp. 289–293, Ein Boqeq water-system chapter. Includes Qumran’s regional plan (p. 283) and reconstruction (p. 287), plus Ein Boqeq’s overall contour/water-system map (p. 290), installation plan (p. 292), and sections (p. 293). Preserve the distinction between observed features and reconstruction. The two Qumran figures overlap earlier archival selections.
+
+
+## Alexandrion/Sartaba chapter
+
+David Amit, **הספקת המים למבצר אלכסנדריון** [Water Supply to Alexandrion Fortress], printed pp. 215–221 / supplied complete-volume PDF pp. 228–234. [Complete seven-page chapter](amit-sartaba-pp215-221.pdf) retains all seven figures: PEF map/section, waterworks contour map, photographs, composite embankment/siphon section and cistern sections. Preserve observed fabric versus dashed reconstruction. [Hashes, provenance and figure inventory](amit-sartaba-intake.json); [measurement audit](../../measurements/cycle6/sartaba_amit.md).

@@ -1987,6 +1987,18 @@
       "datum": "trail/northern-aqueduct intersection west of Hyrcania",
       "passage49_is_eshel_datum": false,
       "note": "research/assessments/entry29_hyrcania/reading.md"
+    },
+    "puech2015_original_page_audit": {
+      "printed_pages": [
+        48,
+        50,
+        51
+      ],
+      "destination": "restored pool",
+      "location_inference": "Koḥlit from neighbouring cistern context",
+      "hyrcania_restoration": "rejected in note193 as too long, including defective spelling",
+      "manuscript_independently_checked": false,
+      "note": "research/measurements/cycle6/puech_entry16.md"
     }
   },
   {
@@ -2045,7 +2057,18 @@
           2
         ]
       }
-    ]
+    ],
+    "puech2015_original_page_audit": {
+      "printed_page": 51,
+      "cubits": 14,
+      "interpretation": "distance; author excludes depth in this formulation",
+      "historical_variants_retained": [
+        14,
+        40,
+        41
+      ],
+      "note": "research/measurements/cycle6/puech_entry16.md"
+    }
   },
   {
     "id": "e17-pair",
@@ -3110,6 +3133,11 @@
       "north_reference_verified": false,
       "side_length_tests_apply_to_this_offset_model": false,
       "note": "research/assessments/entry29_hyrcania/README.md"
+    },
+    "north_reference_followup": {
+      "source": "Eshel Fig6.4 p96 derivative detailed map",
+      "status": "approximately page-up inherited convention; metric and true bearing unvalidated",
+      "note": "research/measurements/cycle6/hyrcania_north.md"
     }
   },
   {

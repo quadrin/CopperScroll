@@ -251,5 +251,17 @@
     "entry29_new_geometry": "source-image page-up proxy only; rim/centre alternatives, geographic geometry unset",
     "entry35_eshel_datum": "southern intake station1 under dam branch",
     "source_note": "research/assessments/entry29_hyrcania/reading.md"
+  },
+  "orientation_followup": {
+    "note": "research/measurements/cycle6/hyrcania_north.md",
+    "inputs": "research/measurements/cycle6/orientation-transfer.json",
+    "source_to_source": true,
+    "independent_geographic_control": false,
+    "geographic_registration_accepted": false
+  },
+  "entry16_reference_followup": {
+    "note": "research/measurements/cycle6/entry16_intersection.md",
+    "documented_crossing": "western end of bridge48,112m from eastern end",
+    "northern_only_origin_verified": false
   }
 }

@@ -1,0 +1,107 @@
+{
+  "source": {
+    "author": "David Amit",
+    "chapter_title_hebrew": "הספקת המים למבצר אלכסנדריון",
+    "chapter_title_english": "Water Supply to Alexandrion Fortress",
+    "volume": "אמות המים הקדומות בארץ־ישראל / The Aqueducts of Ancient Palestine",
+    "editors": [
+      "David Amit",
+      "Yizhar Hirschfeld",
+      "Joseph Patrich"
+    ],
+    "year": 1989,
+    "printed_pages": [
+      215,
+      221
+    ],
+    "pdf_pages": [
+      228,
+      234
+    ],
+    "supplied_path": "/workspace/scratch/62b7302da069/upload/אמות המים הקדומות בארץ־ישראל _ קובץ מחקרים -- דוד עמית, יזהר הירשפלד, יוסף פטריך -- Yerûšālayim, 1989 9789652170637 -(2).pdf",
+    "source_sha256": "2330e0b31590057b26ffebdb56852e40ed78bf32b5e0b7453d293a1278abab15"
+  },
+  "asset": {
+    "local_path": "/workspace/scratch/62b7302da069/tmp/parallel-cycle6/sartaba/amit1989-sartaba-pp215-221.pdf",
+    "proposed_path": "research/assets/plans/aqueducts1989/amit-sartaba-pp215-221.pdf",
+    "sha256": "c2c012b763c2572c0384c844675fe089a6b5762081d717ba8fc94ec7cc2dd1a2",
+    "bytes": 1619381,
+    "extraction": "Original complete PDF pages228–234, without crop; printed215–221; seven pages",
+    "attribution": "David Amit; volume editors David Amit, Yizhar Hirschfeld and Joseph Patrich,1989",
+    "reuse_status": "User-supplied source; user explicitly authorized relevant figure archival; no open licence inferred",
+    "git_blob_sha": "1e5e87cefa377b6b87e2e01232979c3b9385f0aa"
+  },
+  "figures": [
+    {
+      "figure": 1,
+      "printed": 215,
+      "pdf": 228,
+      "type": "1874 PEF aqueduct map and wall section"
+    },
+    {
+      "figure": 2,
+      "printed": 216,
+      "pdf": 229,
+      "type": "waterworks contour map, north arrow,0–1000m scale"
+    },
+    {
+      "figure": 3,
+      "printed": 217,
+      "pdf": 230,
+      "type": "siphon and embankment photograph, looking west"
+    },
+    {
+      "figure": 4,
+      "printed": 217,
+      "pdf": 230,
+      "type": "composite section, actual lower siphon and reconstructed upper channel"
+    },
+    {
+      "figure": 5,
+      "printed": 218,
+      "pdf": 231,
+      "type": "southern terrain/cistern photograph"
+    },
+    {
+      "figure": 6,
+      "printed": 219,
+      "pdf": 232,
+      "type": "cistern sections1–14,5/10m scale"
+    },
+    {
+      "figure": 7,
+      "printed": 220,
+      "pdf": 233,
+      "type": "cistern interior photograph"
+    }
+  ],
+  "values": {
+    "Amit1989": {
+      "embankment_length_m": 187,
+      "embankment_max_height_m": 10,
+      "siphon_length_m": 192,
+      "siphon_max_height_m": 12.5,
+      "siphon_start_end_drop_m": 2.11,
+      "siphon_width_m": 0.6,
+      "siphon_height_m": 0.8,
+      "source_page": 217
+    },
+    "GarbrechtPeleg1994": {
+      "siphon_length_m": 190,
+      "width_m": 0.6,
+      "height_m": 0.8
+    },
+    "ManassehIV2017": {
+      "approx_siphon_length_m": 250,
+      "width_m": 0.6,
+      "height_m": 0.6
+    }
+  },
+  "accounting": {
+    "scoped_primary_targets": 1,
+    "bounded_checks": 1,
+    "decisive_tests": 0,
+    "closures": 0
+  },
+  "access_failures": []
+}
