@@ -17,10 +17,25 @@
       27
     ],
     "url": "https://www.jstor.org/stable/23456199",
-    "evidence_type": "user-supplied image-checked extraction from source-reading session",
-    "original_images_inspected_by_integrating_session": false,
+    "evidence_type": "direct visual inspection of original Hebrew page images in user-supplied screen capture",
+    "original_images_inspected_by_integrating_session": true,
     "original_images_exported": false,
-    "source_note": "research/sources/twin_cave_supplied_image_checked_review_2026-10-01.md"
+    "source_note": "research/sources/baradon1989_capture_direct_review_2026-10-01.md",
+    "previous_evidence_type": "user-supplied image-checked extraction from source-reading session",
+    "capture": {
+      "filename": "screencapture-jstor-org-stable-23456199-2026-10-01-18_24_24.pdf",
+      "bytes": 194165136,
+      "sha256": "8545dc97ab816058bc0085fb372a385be3cf611a5ca83d4086b22203262aa386",
+      "pdf_pages": 97,
+      "inspected_target_pdf_pages": [
+        24,
+        25,
+        26
+      ],
+      "format": "continuous screen-capture slices; not original publisher pagination",
+      "text_layer": false
+    },
+    "prior_supplied_extraction_note": "research/sources/twin_cave_supplied_image_checked_review_2026-10-01.md"
   },
   "reading": {
     "basis": "existing edition comparison and Milik p. 140 recheck",
@@ -34,7 +49,10 @@
     "published_relation": "eastern Qumran cliff slope, about 1 km north of ancient settlement",
     "registered_mouth_coordinates": null,
     "coordinate_system": null,
-    "measured_footprint": null
+    "measured_footprint": null,
+    "printed_grid_locator": "1937/1293",
+    "locator_role": "published cave locator; not surveyed individual mouths",
+    "grid_cross_reference": "Greenberg–Keinan site-centre 193700/129300, Old Israel Grid, compiled catalogue inspected separately"
   },
   "published_features": {
     "mouth_count": 2,
@@ -113,7 +131,7 @@
   "assessments": {
     "reading": "alternatives retained",
     "site": "provisional association",
-    "feature": "published pillar/two-east-facing-mouth description supported through supplied image-checked extraction",
+    "feature": "published pillar and two-east-facing-mouth description directly verified; dimensions/connectivity/phase not established",
     "phase": "use compatible; relevant architectural phase/datum unresolved",
     "position": "approximate regional relation only"
   },
@@ -126,10 +144,18 @@
   "map_marker_changed": false,
   "deposit_geometry": null,
   "kpi_increment": {
-    "supplied_image_checked_primary_extractions": 1,
-    "directly_inspected_primary_targets": 0,
-    "direct_bounded_checks": 0,
+    "direct_primary_targets_reclassification": 1,
+    "supplied_only_primary_targets_reclassification": -1,
+    "new_unique_primary_targets": 0,
+    "new_bounded_checks": 0,
     "decisive_candidate_tests": 0,
     "question_closures": 0
+  },
+  "field_record_leads": {
+    "source": "p. [15] asterisked excavation credit",
+    "hebrew_jones_name": "ונדל ג׳ונס",
+    "team_roles": "American volunteer group in second/third seasons; Kalia/Almog Nahal personnel in first/second",
+    "exact_cave_archive_shelfmark": null,
+    "private_archive_note": "Indexed Klein et al. 2023 p. 458 n. 2 concerns a separate cave; only a provenance lead"
   }
 }
