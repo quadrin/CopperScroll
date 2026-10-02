@@ -2,7 +2,7 @@
 
 ## Cycle7 — 2 October 2026, Los Angeles
 
-Hyrcania’s northern-basin inlet remains independently unidentified; northern summit branch supplies eastern cisterns. Puech Koḥlit pp13–14/n49 directly read: contextual restoration and regional alternatives stay separate, with no specific pool entrance. Pool east-of-site and northern corner have different directional anchors. Sartaba reference corrected to earlier lecture collection, not supplied1989 pp24–26; correction adds no research count. One source target and two bounded checks added; totals29/5/31/0decisive/0closures, three conditional assessments unchanged. [Reports](../measurements/cycle7/README.md).
+Hyrcania’s northern-basin inlet remains independently unidentified; northern summit branch supplies eastern cisterns. Puech Koḥlit pp13–14/n49 directly read: contextual restoration and regional alternatives stay separate, with no specific pool entrance. Pool east-of-site and northern corner have different directional anchors. Sartaba reference corrected to earlier lecture collection, not supplied1989 pp24–26; correction adds no research count. One source target and two bounded checks added; totals29/5/31/0decisive/ 0 closures, three conditional assessments unchanged. [Reports](../measurements/cycle7/README.md).
 
 
 ## Evidence cycle 6 — 2 October 2026, Los Angeles
@@ -1159,3 +1159,7 @@ Both supplied books opened. Final-report pp. 74, 82, 84–85 image-checked: pres
 ## Parallel cycle 8 — 2 October 2026 UTC
 
 [Doq and Siloam results, archive and access limits](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle8/README.md). Doq’s full chapter yields a conditional C-area building/pool target; Siloam’s textual and feature identities remain conditional, with no dated trough correspondence. Four scoped primary targets and four bounded checks added: totals 33 / 5 cartographic-reference intakes / 35 bounded checks / 3 conditional assessments / 0 decisive tests / 0 closures. Thirty-five original IAA figures archived and mirrored; image intake is not a research-target increment. No question-state, coordinate or confidence changes. Feldman’s anthology search remains parked; no outreach.
+
+## Siloam original-source cycle 9 — 2 October 2026 Los Angeles
+
+[Complete excavation/laboratory reading, correspondence and archive](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle9/README.md). Pool L102/L104 joins the 2013 stepped corner/L124/W50 chain; lower dam plasterL108 is distinct from later pool foundation. L103 provides a measured conditional outlet comparison. Ariel’s original catalogue remains403. Two full source targets and three bounded checks added: totals 35 / 5 cartographic-reference intakes / 38 checks / 3 conditional assessments / 0 decisive / 0 closures. Both originals and nine derivative figure/context pages archived and mirrored. No coordinate/grade/status changes or outreach.

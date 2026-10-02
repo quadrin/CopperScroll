@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-02",
+  "timezone": "America/Los_Angeles",
+  "entry": 49,
+  "pool_identity": {
+    "published_chain": [
+      "2009 L102/L104",
+      "2013 southeastern stepped corner",
+      "2014 L124",
+      "2022 W50",
+      "Guthe plate III"
+    ],
+    "new_registration": false,
+    "basis": "Greenhut–Mazor p75* explicit 2013 corner citation + inspected HA2014/2022 published correspondence"
+  },
+  "separate_features": [
+    "Guthe plate II GHJK tunnel-mouth basin",
+    "Bliss small grooved tank"
+  ],
+  "sample_context": {
+    "sample": "RTT 6089",
+    "locus": "L108",
+    "basket": "B1028",
+    "wall": "W1 lower dam face",
+    "relative_position": "below later pool floor",
+    "dating_target": "charcoal embedded in lower plaster",
+    "pool_construction_date_transfer": false,
+    "trough_date_transfer": false,
+    "calibration_95_4_intervals": [
+      {
+        "older_bce": 540,
+        "younger_bce": 530,
+        "probability_percent": 0.3
+      },
+      {
+        "older_bce": 520,
+        "younger_bce": 190,
+        "probability_percent": 95.1
+      }
+    ],
+    "envelope_bce": [
+      540,
+      190
+    ]
+  },
+  "l103": {
+    "status": "provisional feature comparison under outlet/Siloam and conduit-as-trough assumptions",
+    "observed_length_m": 2.2,
+    "width_m": 0.65,
+    "depth_m": 2.3,
+    "floor_above_receiving_pool_floor_m": 0.75,
+    "coordinate_system": "published Plan1 source-relative only",
+    "geographic_coordinates": null,
+    "under_feature_proxy": "beneath exposed conduit floor if textual feature identity accepted",
+    "absolute_underside_datum": null,
+    "published_relative_phase": "cuts pool plaster; inferred later than pool",
+    "function": "excavators overflow interpretation",
+    "original_complete_plaster_lining": "reconstructed from surviving patch"
+  },
+  "checks": [
+    {
+      "id": "C9-SILOAM-POOL-CORRESPONDENCE",
+      "outcome": "published identity chain supported; no surveyed registration"
+    },
+    {
+      "id": "C9-SILOAM-L108-SAMPLE-CONTEXT",
+      "outcome": "earlier dam plaster separated from pool foundation; IronAge discrepancy unresolved"
+    },
+    {
+      "id": "C9-SILOAM-FOUNDATION-CONDUIT-SEALING",
+      "outcome": "relative sequence documented; final-Revolt-year construction and pre70 sealing not independently verified"
+    }
+  ],
+  "kpi_delta": {
+    "scoped_primary_targets": 2,
+    "cartographic_reference_intakes": 0,
+    "bounded_checks": 3,
+    "conditional_assessments": 0,
+    "decisive_tests": 0,
+    "closures": 0
+  },
+  "confidence_or_coordinates_changed": false,
+  "next_source": {
+    "author": "Donald T. Ariel",
+    "title": "The Coins from the City of David (‘Ir David), Siloam Road",
+    "year": 2020,
+    "pages": "89*–91*; summary140",
+    "url": "https://publications.iaa.org.il/atiqot/vol101/iss1/8/",
+    "pdf_url": "https://publications.iaa.org.il/cgi/viewcontent.cgi?article=1966&context=atiqot",
+    "pdf_access": "403",
+    "foundation_items": [
+      1,
+      2,
+      3,
+      8,
+      15,
+      18,
+      20
+    ]
+  }
+}

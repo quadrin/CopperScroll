@@ -29,3 +29,7 @@ Still inaccessible original articles:
 - Judah K. Lefkovits, **The Copper Scroll—3Q15: A Reevaluation: A New Reading, Translation, and Commentary** (Brill, 2000), pp. 352–357: [book record, returned 405](https://www.degruyterbrill.com/document/isbn/9789004350267/html?lang=en); [discussion chapter, returned 403](https://brill.com/display/book/9789004350267/BP000007.xml).
 
 Feldman's anthology search, Gerico and Peleg's separate map remain parked at the user's direction. No outreach performed.
+
+## Subsequent source recovery
+
+Both 2020 articles listed above as inaccessible were supplied and fully read in cycle9. The original pool correspondence is now explicit, and L108 belongs to earlier dam plaster. The historical access/counts above retain the scope of cycle8. [Current assessment, archive and next coin catalogue](../cycle9/README.md).

@@ -36,3 +36,7 @@ The 2024 Birket al-Hamra conference report, printed p. 34* / PDF 17, tentatively
 [figure_manifest.json](../../assets/plans/siloam-cycle8/figure_manifest.json) documents 35 unchanged original site JPEGs, totaling 3,080,809 bytes. Labels paraphrase source captions; the original reports retain complete captions. Each record includes publication, figure, exact URL, credit, SHA256, byte count, pixel dimensions and inspection status. 2014 Fig. 14 initially received a caption-only exclusion; image review showed in situ W30 masonry and corrected it. Remaining 2014 exclusions concern isolated artifacts, Figs. 16–18.
 
 Twelve figure groups encountered in the 2024 PDF remain pending original binary archival, with printed/PDF page references. Guthe and Bliss originals also remain missing from this worker's deliverables. No image registration, inferred modern footprint or pixel-derived distance was produced.
+
+## Subsequent original-source correction — 2 October 2026 Los Angeles
+
+The user supplied both 2020 originals. Greenhut–Mazor p75* explicitly joins its pool to Weksler-Bdolah’s 2013 stepped corner, completing the inherited L124/W50 chain. The unmatched-pool limitation above is superseded. L108 is lower W1 plaster below the later pool floor, not a poolconstruction sample; Boaretto’s final calibration has a540–190 BCE 95.4% envelope. Both prior PDF access gaps are resolved. [Full original contexts and remaining coin/phase audit](../cycle9/README.md). Historical cycle8 counts remain unchanged; cycle9 records the new targets/checks.

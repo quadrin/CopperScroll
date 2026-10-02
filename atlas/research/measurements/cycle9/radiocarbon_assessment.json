@@ -1,0 +1,185 @@
+{
+  "source": {
+    "author": "Elisabetta Boaretto",
+    "title": "Radiocarbon Dating of the Plaster of Siloam Pool in the City of David",
+    "publication": "Atiqot 101 (2020)",
+    "printed_pages": "79–81",
+    "record_url": "https://publications.iaa.org.il/atiqot/vol101/iss1/9/",
+    "doi": "10.70967/2948-040X.1967",
+    "local_original": "upload/Radiocarbon Dating of the Plaster of Siloam Pool in the City of D.pdf",
+    "sha256": "f8479e1e77d9b17cb0468b7080da23dc0d6c2098f1afb0332b3e46ee106a0f40",
+    "bytes": 378362,
+    "pdf_page_count": 4
+  },
+  "inspection": {
+    "all_article_page_images_read": true,
+    "page_map": [
+      {
+        "pdf_page": 1,
+        "printed_page": null,
+        "role": "portal cover"
+      },
+      {
+        "pdf_page": 2,
+        "printed_page": 79
+      },
+      {
+        "pdf_page": 3,
+        "printed_page": 80
+      },
+      {
+        "pdf_page": 4,
+        "printed_page": 81
+      }
+    ],
+    "figure_labels_image_checked": true
+  },
+  "dated_specimens": [
+    {
+      "laboratory_id": "RTT 6089",
+      "locus": "L108",
+      "basket": "B1028",
+      "location": "plaster near outer face of wall damming Siloam Pool",
+      "wall_id_in_this_article": null,
+      "coat_id_in_this_article": null,
+      "elevation": null,
+      "sample_coordinates": null,
+      "material": "small wood charcoal fragment within plaster",
+      "fragment_size": "several millimetres (general microscopic description)",
+      "wood_species": null,
+      "ring_position": null,
+      "plaster_description": "nonhomogeneous, friable binder, aggregates of varying sizes",
+      "pretreatment": "Acid–Alkali–Acid",
+      "mass_loss_percent": 79.9,
+      "cleaned_material_carbon_percent": 52,
+      "reported_preservation": "poor",
+      "initial_mass": null,
+      "final_mass": null,
+      "age_uncalibrated_bp": 2300,
+      "standard_error_bp": 55,
+      "bp_reference_year": 1950,
+      "fractionation_reference_delta13C_permil": -25,
+      "measured_delta13C": null,
+      "laboratory": "D-REAMS Radiocarbon Laboratory, Scientific Archaeology Unit, Weizmann Institute of Science",
+      "calibration_curve": "IntCal20",
+      "calibration_software": "OxCal v4.4.2",
+      "replicates_reported": 0,
+      "calibration_1sigma": {
+        "total_probability_text_percent": 68.2,
+        "total_probability_figure_heading_percent": 68.3,
+        "components": [
+          {
+            "older_bce": 410,
+            "younger_bce": 350,
+            "probability_percent": 37.5
+          },
+          {
+            "older_bce": 290,
+            "younger_bce": 210,
+            "probability_percent": 30.7
+          }
+        ]
+      },
+      "calibration_2sigma": {
+        "total_probability_percent": 95.4,
+        "envelope_older_bce": 540,
+        "envelope_younger_bce": 190,
+        "components": [
+          {
+            "older_bce": 540,
+            "younger_bce": 530,
+            "probability_percent": 0.3
+          },
+          {
+            "older_bce": 520,
+            "younger_bce": 190,
+            "probability_percent": 95.1
+          }
+        ]
+      },
+      "text_pages": [
+        79,
+        80
+      ],
+      "figure": "1",
+      "figure_page": 80
+    }
+  ],
+  "archaeological_association": {
+    "adjacent_fill_loci": [
+      "L107",
+      "L109"
+    ],
+    "pottery": "solely Iron Age IIB per cited Greenhut–Mazor",
+    "expected_range": "seventh century–586 BCE",
+    "author_resolved_discrepancy": false,
+    "coins_discussed_in_radiocarbon_article": false,
+    "sample_same_as_late_first_century_pool_foundation": null
+  },
+  "interpretation": {
+    "author_period_assignment": [
+      "Persian",
+      "Hellenistic"
+    ],
+    "author_plaster_interpretations": [
+      "production age",
+      "terminus post quem with old-wood effect"
+    ],
+    "author_explains_expanded_2sigma_older_boundary": "Hallstatt Plateau",
+    "author_recommends": "future excavation with additional absolute-dating samples",
+    "established_cause_of_conflict": null,
+    "unsupported_mechanisms": [
+      "specific contamination",
+      "specific repair",
+      "intrusive charcoal",
+      "residual pottery"
+    ],
+    "exact_construction_year_established": false
+  },
+  "summary_audit": {
+    "claim": "520–200 BCE at 95.4%",
+    "matches_final_calibration_exactly": false,
+    "differences": [
+      "omits 540–530 BCE interval (0.3%)",
+      "changes younger endpoint from 190 to 200 BCE",
+      "assigns combined 95.4% to shortened interval"
+    ],
+    "preferred_citation": "95.4%: 540–530 BCE (0.3%) and 520–190 BCE (95.1%); envelope 540–190 BCE",
+    "cross_source_origin": "Greenhut–Mazor printed p75* according to parallel excavation-report audit; keep attributed to that publication"
+  },
+  "feature_identity_limits": {
+    "L124": null,
+    "W50": null,
+    "Guthe_plate_III": null,
+    "tunnel_mouth_basin": null,
+    "grooved_tank": null,
+    "entry49_trough": null,
+    "note": "No correspondence supplied by this article; require excavation report and explicit context control."
+  },
+  "figures": [
+    {
+      "figure": 1,
+      "printed_page": 80,
+      "pdf_page": 3,
+      "content": "probability distribution and calibration of RTT 6089",
+      "geography_or_ruins_asset": false,
+      "archive_status": "preserve full original supplied PDF",
+      "image_checked": true
+    }
+  ],
+  "other_tables": [],
+  "bounded_checks": [
+    {
+      "id": "SILOAM-2020-RC-CONTEXT-CALIBRATION",
+      "result": "exact final calibration established; dam-face context identified; archaeological date discrepancy remains unresolved",
+      "decisive_candidate_test": false,
+      "location_closed": false
+    }
+  ],
+  "proposed_increment": {
+    "complete_primary_source_targets": 1,
+    "bounded_checks": 1,
+    "decisive_tests": 0,
+    "closures": 0
+  }
+}
