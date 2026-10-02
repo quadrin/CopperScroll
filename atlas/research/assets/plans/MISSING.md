@@ -2,7 +2,6 @@
 
 2 October 2026, Los Angeles. These sources were used earlier, but the necessary original files are absent from this workspace or exceed the attachment transfer limit. Earlier successful readings remain valid to their recorded scope. This is an archival access register, not a claim that the publications lack figures.
 
-- **ʿAtiqot 41 (2002), Hebrew issue**, including Feig’s IV/11 report (pp. 85–90) and Sion’s survey (pp. 61–64 / Plan 5): original issue files absent. [Exact publisher retrieval links and source identities](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_plan_access_2026-10-01.md). Keep IV/11, IV/17 and 3Q separate.
 - **Jean-Baptiste Humbert and Jan Gunneweg, eds., Khirbet Qumrân et ‘Aïn Feshkha II: Études d’anthropologie, de physique et de chimie / Studies of Anthropology, Physics and Chemistry (2003)**: Galor’s L138 plan/section, Fig. 3 p. 294, and relevant water-installation maps. Its recorded user attachment was located but transfer failed because it exceeds 32 MiB. [Corrected identity and exact figure locators](https://github.com/quadrin/CopperScroll/blob/main/registration/qumranII2003_extracted.md).
 - **Joseph Patrich 1989 Hyrcania plan, Fig. 22**: original image absent; the project’s registration diagnostic is already archived. [Source and registration record](https://github.com/quadrin/CopperScroll/blob/main/research/sites/hyrcania_plan_registration_2026-09-30.md).
 - **David Amit 1989 Doq aqueduct chapter, Figs. 1–2 / pp. 223–224**: original page images absent. [Partial original-source intake and full citation](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle4/amit_partial.md).
@@ -39,3 +38,8 @@ Both reattached TIFFs open and match their earlier source hashes. [South assets]
 ## Twin Cave B1 recovered — 2 October 2026
 
 The later 41-page capture contains printed [15]–17. [B1 and the accompanying pages](baradon1989/README.md#twin-cave-and-a12-recovered--2-october-2026) are now archived as capture derivatives, with clipping recorded. Earlier missing-B1 entries describe the prior state. The feature-date and northern-threshold questions remain open; research KPI counts are unchanged.
+
+
+## ʿAtiqot 41 targeted originals recovered — 2 October 2026
+
+The supplied ZIP opens with 25 PDFs. [Sion pp. 61–64, IV/17 Plan 5 and Fig. 12; Feig IV/11 full article; and the issue survey map](atiqot41/README.md) are now archived. Earlier absent-original statements describe the prior workspace state. This recovery supplies original drawings without resolving threshold or construction-phase dates. No research KPI increment.
