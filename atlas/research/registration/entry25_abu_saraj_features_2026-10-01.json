@@ -1,0 +1,113 @@
+{
+  "entry": 25,
+  "question": "R02",
+  "review_date": "2026-10-01",
+  "status": "provisional_source_plan_comparisons",
+  "source_note": "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md",
+  "reading": {
+    "basis": "existing edition comparison and Milik p. 140 recheck",
+    "alternatives": [
+      "cave-level eastward aspect",
+      "both mouths east-facing"
+    ],
+    "new_manuscript_verification": false
+  },
+  "group_anchor": {
+    "source": "Sion Hebrew p. 61, Fig. 12",
+    "coordinate_system": "Old Israel Grid",
+    "printed": "19030/14415",
+    "expanded_metres": {
+      "easting": 190300,
+      "northing": 144150
+    },
+    "role": "shared cave-group centre",
+    "entrance_accuracy_metres": null,
+    "wgs84": null
+  },
+  "depth_hypothesis": {
+    "cubits": 3,
+    "exploratory_metres_per_cubit": [
+      0.4,
+      0.6
+    ],
+    "distance_metres": [
+      1.2,
+      1.8
+    ],
+    "anchor": "contemporary northern threshold, currently unestablished",
+    "vertical_direction": "hypothesis requiring edition/context verification"
+  },
+  "candidates": [
+    {
+      "id": "Abu_Saraj_IV_11",
+      "source": "Feig Hebrew pp. 85–90; Plan 1 p. 85",
+      "observed": {
+        "pillar_height_metres": 2.5,
+        "pillar_position": "southwest hall",
+        "pillar_description": "natural below, rock-cut above",
+        "plan_scale_metres": [
+          0,
+          4
+        ],
+        "labelled_exterior_opening_pair": false
+      },
+      "assessment": {
+        "reading": "alternatives retained",
+        "site": "provisional",
+        "feature": "internal pillar; exterior pair not established",
+        "phase": "pillar/entrance/threshold chronology unresolved; upper-fill coins insufficient",
+        "position": "source-plan relations and shared group centre only"
+      },
+      "deposit_geometry": null
+    },
+    {
+      "id": "Abu_Saraj_IV_17",
+      "source": "Sion Hebrew pp. 63–64; Plan 5 p. 63; Fig. 12 p. 61",
+      "observed": {
+        "mouth_count": 2,
+        "cliff_aspect": "eastern cliff",
+        "exact_mouth_bearings_degrees": null,
+        "spaces": [
+          "northern",
+          "southern"
+        ],
+        "separating_feature": "rock-cut pillar",
+        "northern_mouth_width_metres": 0.8,
+        "southern_wall": {
+          "length_metres": 2.4,
+          "thickness_metres": 0.4,
+          "role": "partial mouth blocking"
+        },
+        "area_square_metres": 33.5,
+        "height_metres": [
+          1.4,
+          1.7
+        ],
+        "plan_scale_metres": [
+          0,
+          3
+        ]
+      },
+      "published_reconstruction": {
+        "use": "first half of second century to first half of first century BCE",
+        "wall_interpretation": "concealment during conflict involving Hasmoneans",
+        "wall_building_date_established": false
+      },
+      "assessment": {
+        "reading": "alternatives retained",
+        "site": "provisional comparison with no ancient-name identification",
+        "feature": "two mouths and separating pillar directly documented",
+        "phase": "first-century CE northern threshold and pillar-cutting chronology unresolved",
+        "position": "source plan and group-relative photograph only; no registered mouth points"
+      },
+      "deposit_geometry": null
+    }
+  ],
+  "map_marker_changes": false,
+  "kpi_increment": {
+    "primary_page_figure_targets": 2,
+    "bounded_checks": 2,
+    "decisive_candidate_tests": 0,
+    "question_closures": 0
+  }
+}
