@@ -110,3 +110,38 @@ Additional inaccessible routes in this pass:
 A search-index extract of [Robert Wenning, Herodianische Architektur, Boreas 14/15](https://archiv.ub.uni-heidelberg.de/propylaeumdok/811/1/Wenning_Herodianische_Architektur_1993.pdf) renders Feldman's pagination as 320–331. The original PDF remains uninspected through the previously encountered anti-bot wall, so retain this as an **unverified extracted citation**, not a corrected chapter range. The inspected Patrich extraction and excavation bibliography support 326–335; original anthology pages remain decisive for pagination.
 
 No archaeological datum, recovered plan asset, source-target KPI increment or candidate-confidence change results from this pass. Existing map-archive gaps recorded above remain pending.
+
+## Further access pass: author bibliography and Open Library (2 October 2026)
+
+**Original texts still missing:** this pass recovered neither Feldman's chapter nor the complete Ilan anthology, and no English edition of that anthology. Searches tested Hebrew title punctuation variants, the conference subtitle, Romanized titles, Kotar, Google Books, Internet Archive, and author repositories. Search failures and negative results describe this pass only; they do not prove that no digital copy exists.
+
+### Patrich's edition relationship now documented by the author
+
+[Joseph Patrich's Hebrew University bibliography](https://pluto.huji.ac.il/~patrichj/my_web_site/Publications.html), section D, item 3, identifies the 1989 Hebrew Hyrcania chapter at pp. 243–260. Item 20a explicitly identifies the 2002 English chapter at pp. 336–352 as its English translation. The edited-books list describes the 2002 volume as an updated and augmented English edition of the 1989 volume.
+
+[Patrich's April 2025 CV and selected publications](https://www.academia.edu/144293513/Joseph_Patrich_CV_and_selected_Publications_Apr_2025), edited-books item 4, repeats the updated/augmented edition relationship; the selected articles list repeats the English chapter range. Both pages were read as web text. No chapter scan was exposed on either page. The live legacy university publication page, not an inferred title match, now supports the translation relationship. A line-by-line check of changes and figures remains pending.
+
+**Research implication:** the archived 1989 Hebrew Hyrcania chapter provides the already recovered report underlying the English chapter. The English copy could still resolve translation and revision questions. It does not replace Feldman's earlier report or supply an independent survey merely by appearing in another language.
+
+### Additional digital access checks
+
+- [Open Library, exact 2002 edition OL12181984M](https://openlibrary.org/books/OL12181984M): record OL24102153W has a single edition, library-location and purchase links. No read, borrow, or chapter-preview option appeared for this edition. This is a catalogue record, not a recovered book scan.
+- [National Library of Israel, English volume record](https://www.nli.org.il/en/books/NNL_ALEPH990023044710205171/NLI): search indexed the correct title and editors; opening returned HTTP 403. Holdings and digital access remain unchecked.
+- [Google Books search inside the digitized volume for Hyrcania](https://books.google.com/books?cad=3&id=GWhoAAAAMAAJ&q=Hyrcania&source=gbs_word_cloud_r): the actual book-page word-cloud link redirected to Google's anti-bot page; no chapter text or images recovered. No circumvention attempted.
+- [Patrich's alternative Academia profile listed in his CV](https://huji.academia.edu/jpatrich/): HTTP 404. His [working Academia profile](https://huji.academia.edu/JosephPatrich) exposes selected uploads and the CV; this pass found no linked full Hyrcania chapter.
+- [Internet Archive ISBN search API](https://archive.org/advancedsearch.php?q=isbn%3A1887829466&output=json): reader inaccessible. The Open Library record above supplied a readable catalogue check.
+
+### Encountered photo gallery: broken original links
+
+[Patrich, Qumran and Judaean Desert Caves research page](https://pluto.huji.ac.il/~patrichj/my_web_site/Research_Projects.html) ends with eight selected photographs. Each published image link returned HTTP 404. Register them as pending archive assets; no image was recovered or visually inspected, and the short labels do not establish their precise sites:
+
+- [27.jpg — label A](https://pluto.huji.ac.il/~patrichj/my_web_site/img/27.jpg)
+- [6.jpg — label el](https://pluto.huji.ac.il/~patrichj/my_web_site/img/6.jpg)
+- [15.jpg — Climbing](https://pluto.huji.ac.il/~patrichj/my_web_site/img/15.jpg)
+- [16.jpg — Exploring](https://pluto.huji.ac.il/~patrichj/my_web_site/img/16.jpg)
+- [13.jpg — Abecedarium](https://pluto.huji.ac.il/~patrichj/my_web_site/img/13.jpg)
+- [21.jpg — Excavating](https://pluto.huji.ac.il/~patrichj/my_web_site/img/21.jpg)
+- [24.jpg — Dragging](https://pluto.huji.ac.il/~patrichj/my_web_site/img/24.jpg)
+- [20.jpg — label The](https://pluto.huji.ac.il/~patrichj/my_web_site/img/20.jpg)
+
+This is an access and bibliographic update. No new measured geometry, ancient datum, original map asset, archaeological source-target KPI increment, candidate-confidence change, or question closure follows.
