@@ -52,3 +52,17 @@ Kotar's title index and searches by anthology title, chapter title, author and H
 Pagination conflict: the [public excavation-database bibliography](https://emekshaveh.org/he/wp-content/uploads/2013/09/bibliography_sourcebook.pdf), PDF p. 19, cites Feldman 1974, “The Water System of Hyrcania”, in Z. Ilan (ed.), *The Judean Desert and the Dead Sea*, Tel Aviv, **326–335**, whereas our earlier citation above says **316–335**. Preserve both as a bibliographic conflict until the original contents and chapter pages settle it. This bibliography is not a copy of the chapter.
 
 Kotar does provide [Joseph Patrich, “אמות המים להורקניה”](https://kotar.cet.ac.il/kotarapp/index/Chapter.aspx?nBookID=6765980&nTocEntryID=7085635), in *אמות המים הקדומות בארץ־ישראל: קובץ מחקרים* (1989), including the indexed [Fig. 22 basin/cistern plan](https://kotar.cet.ac.il/KotarApp/Index/Chapter.aspx?nBookID=6765980&nTocEntryID=7085659). This is the already archived later study, not a verified reprint of Feldman. No newly inspected geographic figure, archaeological check or KPI increment results from this access search.
+
+
+### Full-anthology follow-up, 2 October 2026
+
+Expanded public searches across alternate Hebrew spellings and romanizations, English translated titles, the 1973/1974/1976 citation dates, catalogue and digitization terms, PDF searches, and indexed HebrewBooks/Otzar pages found no verified digital edition of this exact anthology or English translation. This negative retrieval result does not establish that no restricted institutional scan exists. No original title page was recovered to reconcile editions or dates.
+
+Direct catalogue queries failed to load through the available reader, so holdings and digitization status remain unchecked at these routes:
+
+- [University of Michigan title search](https://search.lib.umich.edu/catalog?query=%22Midbar%20Yehudah%22%20%22yam%22)
+- [HathiTrust catalogue search](https://catalog.hathitrust.org/Search/Home?lookfor=Midbar%20Yehudah%20yam&type=all)
+- [WorldCat title search](https://search.worldcat.org/search?q=ti%3AMidbar%20Yehudah%20yam)
+- [Internet Archive title query](https://archive.org/advancedsearch.php?q=title%3A(%22Midbar%20Yehudah%22)&output=json)
+
+[Simania's exact-title listing](https://simania.co.il/bookdetails.php?item_id=84402) identifies a 474-page 1976 SPNI volume and offers physical used-copy advertisements; this is not online page access. A second [Book Gallery exact-title item](https://bookgallery.co.il/content/hebrew/bookpageschema.asp?BookPageID=184821) is linked from its Hebrew-category listing at 65 NIS, but the individual item failed to open, so current stock was not confirmed. No new geographic image or KPI increment.
