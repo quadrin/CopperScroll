@@ -304,3 +304,8 @@ Both requested books opened. Final-report printed pp. 74, 82, 84–85 inspected 
 ## Plan archive rule — 2 October 2026, Los Angeles
 
 User requested persistent GitHub copies of relevant plans/maps. Added repository instructions, mirrored source-asset index, provenance manifest and Netzer final-report Plans 17–22. Remaining foldouts and older figures have an explicit backfill queue. Research KPI totals unchanged: 24 source targets / 5 cartographic targets / 24 bounded checks / 0 decisive tests / 0 closures. Asset intake is not a new completed research test.
+
+
+## Earlier map/plan backfill — 2 October 2026, Los Angeles
+
+Archived 16 viewable assets from accessible earlier sources: five Michigan map views plus four native church crops, Trümper Figs. 18–22 and recovered Ilan–Amit Figs. 1 and 7. Exact high-resolution Churches bytes are preserved in 35 parts and verified by reconstruction; existing TIR/road assets were already on GitHub and now have a research mirror. Added an indexed missing-original register. Later TIFFs and several excavation captures remain absent. Archive counts are separate from unchanged research totals: 24 source targets / 5 cartographic intakes / 24 bounded checks / 0 decisive tests / 0 closures. [Archive and retrieval gaps](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/README.md).

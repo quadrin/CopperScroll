@@ -1,0 +1,395 @@
+{
+  "source": "Tabula Imperii Romani: Iudaea · Palaestina, supplied Michigan map reproductions",
+  "credit": "University of Michigan Library (Stephen S. Clark Library).",
+  "provenance": "User-supplied JPEGs from this conversation; repository archiving explicitly authorized 2 October 2026",
+  "reuse_status": "Original publisher copyrights retained; supplying-library reproduction notice recorded in the intake note; no open licence asserted",
+  "intake_note": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md",
+  "images": [
+    {
+      "filename": "tir-general-north-preview.jpg",
+      "original_upload_name": "FFzwu03w",
+      "dimensions": [
+        786,
+        600
+      ],
+      "bytes": 219892,
+      "sha256": "53b90021ed71472b010aa27fde6011adf29ab82a52ea12ee5aca1c8a58554fcd",
+      "git_blob_sha": "fa2247b1827846e48d53f0f1c707e2e50b66f9d9",
+      "transform": "Byte-identical original JPEG; filename extension added"
+    },
+    {
+      "filename": "tir-general-south-preview.jpg",
+      "original_upload_name": "Un4cnkbw",
+      "dimensions": [
+        799,
+        591
+      ],
+      "bytes": 249372,
+      "sha256": "74bc0dacde14afa206035991344643f9f616b6bb7a852887b2de119069b3bc0c",
+      "git_blob_sha": "72c3f9740c3f231be62e896840ab9e45dc4ea9b2",
+      "transform": "Byte-identical original JPEG; filename extension added"
+    },
+    {
+      "filename": "tir-synagogues-preview.jpg",
+      "original_upload_name": "K3Y7WTog",
+      "dimensions": [
+        544,
+        800
+      ],
+      "bytes": 174579,
+      "sha256": "9f506880d1f9d0630a5d4277acee2e59a939690852a05d256fe55ebe72d8ffa7",
+      "git_blob_sha": "5ec7d356c2b3f81afb6623161021e47436357bba",
+      "transform": "Byte-identical original JPEG; filename extension added"
+    },
+    {
+      "filename": "tir-eretz-israel-sinai-preview.jpg",
+      "original_upload_name": "wozmn3vA",
+      "dimensions": [
+        515,
+        799
+      ],
+      "bytes": 177504,
+      "sha256": "97da9660cba43ca6bc1729e9b6ec23a534408435b7d69ed7b6ed8e676d47143f",
+      "git_blob_sha": "70dcad144bce538fd3fb7f43679c35489cfcaa79",
+      "transform": "Byte-identical original JPEG; filename extension added"
+    },
+    {
+      "filename": "tir-churches-overview.jpg",
+      "dimensions": [
+        2982,
+        4400
+      ],
+      "source_pixel_crop": null,
+      "bytes": 2953933,
+      "sha256": "a068ecd13a626f8dcea1d2777d4acc2e59192cfca70cc3636363904d29182930",
+      "git_blob_sha": "f0d836a49e6da3f7751dd92ac382793bbea3c5bf",
+      "transform": "Complete-sheet viewing derivative, resized to fit 3000 × 4400 pixels; JPEG quality 88"
+    },
+    {
+      "filename": "churches-gerizim.jpg",
+      "dimensions": [
+        1000,
+        900
+      ],
+      "source_pixel_crop": [
+        3850,
+        4750,
+        4850,
+        5650
+      ],
+      "bytes": 388351,
+      "sha256": "7819d38196e5e610f6332b49c0640cc523f5f30644aa1950690fba79d315ac5a",
+      "git_blob_sha": "9a041018855d0ccf54a7c8aad5a68136c9f20095",
+      "transform": "Native pixel crop, JPEG quality 94"
+    },
+    {
+      "filename": "churches-judaea-west.jpg",
+      "dimensions": [
+        1900,
+        1900
+      ],
+      "source_pixel_crop": [
+        3700,
+        6000,
+        5600,
+        7900
+      ],
+      "bytes": 1803891,
+      "sha256": "cd89bdd5625c073154e824197dcf48bf863dc1449fb36586eee6f3f4caa8690d",
+      "git_blob_sha": "3371b4f4bd55228f1c0b2d55befd4e33ae1cea31",
+      "transform": "Native pixel crop, JPEG quality 94"
+    },
+    {
+      "filename": "churches-jericho-east.jpg",
+      "dimensions": [
+        1800,
+        1600
+      ],
+      "source_pixel_crop": [
+        5100,
+        6000,
+        6900,
+        7600
+      ],
+      "bytes": 1306818,
+      "sha256": "62e81fe0e34c6c5c55ba492321cb1bfc6264c892be91dacfc3189a8560459a49",
+      "git_blob_sha": "a0b4837e3a5f6b5150c3f3e230cc49931a733682",
+      "transform": "Native pixel crop, JPEG quality 94"
+    },
+    {
+      "filename": "churches-legend-credits.jpg",
+      "dimensions": [
+        1400,
+        2800
+      ],
+      "source_pixel_crop": [
+        5600,
+        7600,
+        7000,
+        10400
+      ],
+      "bytes": 981278,
+      "sha256": "f2f820425ae660ef1ff548a44f4118668737d7fb26139551ca4c7eb9a00c09dc",
+      "git_blob_sha": "10bcebe6b9eb2d732ae9010cf51194822b538922",
+      "transform": "Native pixel crop, JPEG quality 94"
+    }
+  ],
+  "original_churches": {
+    "filename": "tir-churches-full-resolution.jpg",
+    "bytes": 34641208,
+    "dimensions": [
+      7394,
+      10909
+    ],
+    "sha256": "8eda052a3c6fa279e1902151de0cf64cf2e2a691f8b06ca625ace7f0c32856bb",
+    "git_blob_sha": "af7ebd99506239f5c594ae2062668e99aed321fd",
+    "storage": "35 sequential byte-exact parts, separated to fit connector request limits",
+    "parts": [
+      {
+        "filename": "tir-churches-original.part000",
+        "bytes": 1000000,
+        "sha256": "d31e1c852c8d45206ca533a8bf4fb8e2fe9c25ed9b72bc58d8f970d48f67829f",
+        "git_blob_sha": "9e034fea6760ab817305c96c2e67967bdbd26cda",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part001",
+        "bytes": 1000000,
+        "sha256": "6471c0cc772f00140b214047e80ff56afd138e42e3a980d0e9e5136e6a2f8e52",
+        "git_blob_sha": "fabc87cdb8a669d3de1db78af8745d1f1021ffe8",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part002",
+        "bytes": 1000000,
+        "sha256": "03a1498a29a59574357f0e4cf9ebb640f1e7928f8fc761eb4bdba07a69d41825",
+        "git_blob_sha": "619c0b7d3d66228f5d7b3a5d825fc32f24073898",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part003",
+        "bytes": 1000000,
+        "sha256": "b41a03ea4e2e6d0efa172229e00e39d0ab3e39cf5be9db046326b1607a0aceeb",
+        "git_blob_sha": "c0f158bf79d2825be01b0c07d499a14e55090cdc",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part004",
+        "bytes": 1000000,
+        "sha256": "a4d5f93d6cc96a0b1e05ac269e7f15971721f51a8fcc968416b80be463f90aa0",
+        "git_blob_sha": "4e57d77fb61f0e078dbb1817fbc99de6fec9982c",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part005",
+        "bytes": 1000000,
+        "sha256": "a2272c6e0c67fd73c1f653e221ad8b87b7d102deea44302d84d27859f0ea2cff",
+        "git_blob_sha": "609d289a5735dfaf65f74e51f61bc5ba297432db",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part006",
+        "bytes": 1000000,
+        "sha256": "4cd45b57387b17e9c474d1bd2c3bb2b50263c18ef6d7ef21a790aa7e65b29c57",
+        "git_blob_sha": "69f4d68c31421ad3807e5ad7c4bc0191a08d360e",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part007",
+        "bytes": 1000000,
+        "sha256": "55608c159f0cbd44ea704a80890454a51a3fd6a816bd3324b1500ccbbc59adf9",
+        "git_blob_sha": "0cee7ff09bf74aefb97a86f4309c2fed785a5a70",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part008",
+        "bytes": 1000000,
+        "sha256": "710b9e1536b401f1af049aa4759659d297eb3403ce9ea4323005496865607ce1",
+        "git_blob_sha": "817bf274d80d40ddfdb789e9620bf4e6552c39f8",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part009",
+        "bytes": 1000000,
+        "sha256": "16e1a4f34050c27f7bde90256a932d04b78c1ecf5c835c33828e611b2ef87c73",
+        "git_blob_sha": "08d22697bad1e2dd0a881bfd5232e75bd95feef7",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part010",
+        "bytes": 1000000,
+        "sha256": "dc8f099beb0167e92bd7c6be9a24b06189d917b0ac31ea7451ca800ea4a62753",
+        "git_blob_sha": "2c1d86a2ed2abb62bf408b9e79202b18569b3141",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part011",
+        "bytes": 1000000,
+        "sha256": "b9eb16d03aa4ade4dd3fac2ebdca51e306fb279d99aa6287dcd214e863b7e2d7",
+        "git_blob_sha": "812a23440a39f44bdcd7cf44ab142ade575a0d57",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part012",
+        "bytes": 1000000,
+        "sha256": "4a73cc4b8b5586aac3b0f7ee5550213f113d659f3c367b5e9a91d031f83a3953",
+        "git_blob_sha": "b42422271659416e4b18535251f018a17e5d62e3",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part013",
+        "bytes": 1000000,
+        "sha256": "4aa5edd53a48ad16aeae3b1043d063049d75e2952038600cfcc2a28854453b14",
+        "git_blob_sha": "5cbc825ec345601301a7caf27eca0b9fb9ea25f0",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part014",
+        "bytes": 1000000,
+        "sha256": "ed3878c0bffb72844e992462c73f6c2d28ee6c169919955eaa246214230a2088",
+        "git_blob_sha": "991907037d062b1bee7fd1f52929baa970bbc219",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part015",
+        "bytes": 1000000,
+        "sha256": "4d96633391584cd9be4f5a7156385424caf3ced64173522bb5509cab884a4e3c",
+        "git_blob_sha": "ba0063a8149c9cf0aa00b58720c8428e4cc6c05f",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part016",
+        "bytes": 1000000,
+        "sha256": "6a6243e3d93ecaac2d4736d9e6d31e9ea4634378ce23356e4a4aa4f99102fa85",
+        "git_blob_sha": "d7bd54884ee20ce2ceedf1ff1f546fc9f99a9eae",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part017",
+        "bytes": 1000000,
+        "sha256": "17a680a2501f80a5949f45f288e3160b6bb5f47c7f41257d4c3c73d5dd826815",
+        "git_blob_sha": "453a896b64c9d88c950601d8ac6daffc1a7ce226",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part018",
+        "bytes": 1000000,
+        "sha256": "6e30323b51fc6b25004a2e5a0ebbd0f51734e0de461e3f193bceab8a58e52da5",
+        "git_blob_sha": "4668de73ea564dec0917087fb9469b4ea72e2ca1",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part019",
+        "bytes": 1000000,
+        "sha256": "c6270e1e659ff77b588692bbd81c1a09c85767c24a6b75b5c61f420d3cf8bbe9",
+        "git_blob_sha": "be93fbc1870c471131f132c87905aee6840b4c03",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part020",
+        "bytes": 1000000,
+        "sha256": "7d51ca2d26645d95313fd9c7414f88c098184a1e05a514f93d8f72e2bbb92f38",
+        "git_blob_sha": "4e5b4f4f3ad1eb8fc209034d71742ce67d85d05d",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part021",
+        "bytes": 1000000,
+        "sha256": "133debde450bc953e89b1a796cb73ee1eaa50ce9c175945a94fbe87034f58bf4",
+        "git_blob_sha": "8b4a28f1e4fb08a785caf43f4932b567e69b79a1",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part022",
+        "bytes": 1000000,
+        "sha256": "43228b789309449bb345892640c6f026324ea5d3f5978fbb3e9652185e0c739f",
+        "git_blob_sha": "86ead6e45edab70a29c215d77cfc14098b1c158b",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part023",
+        "bytes": 1000000,
+        "sha256": "6230a5ec3c9cce3f4456418d30f292d7ee27ed89388a51adecf2ead21b41e874",
+        "git_blob_sha": "82c887a51eb5e1b6d6948e20b5f7d8ea81e06836",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part024",
+        "bytes": 1000000,
+        "sha256": "d449f419dff6bf3225ac6a94cf2e6464c52fc1cde3bf30c4080d0765b15fcf7e",
+        "git_blob_sha": "1aab74e8bee13ea3523c27695b5caf119a46a571",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part025",
+        "bytes": 1000000,
+        "sha256": "4779d4c9e88c8f18a58932c2604c8c5153036c57edbd4d1581d322be4b7fac1a",
+        "git_blob_sha": "9abae232013a43954b8bd4213410f86702ee7d6a",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part026",
+        "bytes": 1000000,
+        "sha256": "c24654aeb65596052ee72852ae786046595865f6975baefeb6793bc4fc971c3b",
+        "git_blob_sha": "09bf39cc1bc4c498ac188003f34087615368b57d",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part027",
+        "bytes": 1000000,
+        "sha256": "9d2b400116467beda919e59326431e8af77f9ba3796a67b64f24cbc412eb189f",
+        "git_blob_sha": "c0df835d6b7627b1c0851c88d6839eb9619d2b20",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part028",
+        "bytes": 1000000,
+        "sha256": "971407bd07ad6c880f91b432b4711e033c4d26812b0d5b779e48b3a4ff1ad9d9",
+        "git_blob_sha": "b8496904f3674d56f3451e4e5963044e0779ad69",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part029",
+        "bytes": 1000000,
+        "sha256": "2f484015052e971a0a885f30a6d16480936a0a86e7bf94313ced17b65310cac7",
+        "git_blob_sha": "7f1016bdb5b039cd6f162e12c90624021e78e64b",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part030",
+        "bytes": 1000000,
+        "sha256": "a1bd94a39118179b0fe12363e6812c293e03941614a3afdd63f499984d5b9e9a",
+        "git_blob_sha": "8a1da2527a5b4bad56b6617e6559ccbf7f71fd8d",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part031",
+        "bytes": 1000000,
+        "sha256": "b344d380ab5114fb5015f8fb899c2274b26658cbb97e781c2b1dc3fa8325dcc2",
+        "git_blob_sha": "e0447aed27564f1e940a54a489cc1ee61a0bd7ff",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part032",
+        "bytes": 1000000,
+        "sha256": "cca913f82f0c3a416c2783e34b716a589e6a213850939b11d88e096a28dca9fa",
+        "git_blob_sha": "c7ea467c21a03a9f51ed19df871133e4b044acb9",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part033",
+        "bytes": 1000000,
+        "sha256": "3a057115193bb28d417f6727a93091e1484e04a6116c01fbda75f861082a0005",
+        "git_blob_sha": "680aa773b0851f253a94ce17fc50351d8df00498",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      },
+      {
+        "filename": "tir-churches-original.part034",
+        "bytes": 641208,
+        "sha256": "b11454da04518e5276c59ff39920852fcea94a3cd5a5ac2de518c567ad19f05b",
+        "git_blob_sha": "b820e5e9322ceb79840383568b85e863db270c30",
+        "transform": "Byte-exact segment of original JPEG, concatenate in filename order"
+      }
+    ]
+  }
+}

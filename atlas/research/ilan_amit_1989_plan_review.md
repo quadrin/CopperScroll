@@ -65,7 +65,7 @@ See the [survey comparison and registration review](qumran_georeferencing_review
 
 ## Stacey 2007 and point 16 (29 September 2026)
 
-Stacey, *DSD* 14.2 (2007), was read in full ([source leads](../../research/sources/source_leads_2026-09-29.md)). He dates the main aqueduct after the 31 BCE earthquake (pp. 222–226, 239) and describes two upstream stages (p. 228). The earlier stage is a run-off channel from below the cliffs, which he locates at Ilan–Amit 2002 Fig. 1 "no. 16 eastward" (n. 28). The later stage adds the dam and the cliff aqueduct as far as the beginning of the earlier channel (n. 30).
+Stacey, *DSD* 14.2 (2007), was read in full ([source leads](../sources/source_leads_2026-09-29.md)). He dates the main aqueduct after the 31 BCE earthquake (pp. 222–226, 239) and describes two upstream stages (p. 228). The earlier stage is a run-off channel from below the cliffs, which he locates at Ilan–Amit 2002 Fig. 1 "no. 16 eastward" (n. 28). The later stage adds the dam and the cliff aqueduct as far as the beginning of the earlier channel (n. 30).
 
 Point 16 on the 1989 Figure 1 is the right-angle bend where the channel leaves the cliff. This matches Stacey's description, but the equivalence of the 2002 and 1989 point numbers is assumed, not checked. Under this phasing, point 16 is the head of the earlier line and a concrete "head of a subsection" alternative for entry 21. Points 3 and 4 remain the head of the whole system after the dam stage. Stacey reports (n. 3) that the 2002 chapter, p. 385, assigns the aqueduct to Herod Archelaus; that is a different date from the discussion on p. 286 here.
 
@@ -77,3 +77,8 @@ HathiTrust's full-text search of *The Aqueducts of Israel* (search-only copy) wa
 - The chapter runs pp. 380–386 (inference from where "Qumran", "Ilan" and "Amit" occur).
 - The phrase "point 16" does not occur in the chapter. The match between the 2002 and 1989 point numbers remains unchecked.
 - Next: a scan of p. 385 and of the chapter's Fig. 1.
+
+
+## Original figures archived — 2 October 2026
+
+Recovered the earlier supplied attachment from its recorded file ID. [Fig. 1, p. 283, and Fig. 7, p. 287](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/ilan-amit1989/README.md) are archived with captions, scale/orientation, source hash and crop bounds. Fig. 7 is L. Ritmeyer’s settlement reconstruction. This recovery does not add a new original-source target or test.

@@ -77,3 +77,8 @@ HathiTrust's full-text search of *The Aqueducts of Israel* (search-only copy) wa
 - The chapter runs pp. 380–386 (inference from where "Qumran", "Ilan" and "Amit" occur).
 - The phrase "point 16" does not occur in the chapter. The match between the 2002 and 1989 point numbers remains unchecked.
 - Next: a scan of p. 385 and of the chapter's Fig. 1.
+
+
+## Original figures archived — 2 October 2026
+
+Recovered the earlier supplied attachment from its recorded file ID. [Fig. 1, p. 283, and Fig. 7, p. 287](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/ilan-amit1989/README.md) are archived with captions, scale/orientation, source hash and crop bounds. Fig. 7 is L. Ritmeyer’s settlement reconstruction. This recovery does not add a new original-source target or test.

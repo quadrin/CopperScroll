@@ -190,3 +190,8 @@ Cartographic-reference intakes since tracker creation: **5**. No original excava
 Next research: use the North-sheet Achor Vallis/Noorath labels to select gazetteer entries and source references; pursue the original gorge, cave and wall plans already prioritized in R01–R03. Further requests for these five map images are unnecessary while the supplied originals remain available.
 
 This update includes original research notes and metadata. Supplied TIFFs/JPEGs and inspection crops are not included in the public commit.
+
+
+## GitHub archive — 2 October 2026
+
+The user’s archive instruction supersedes earlier delivery notes withholding these supplied images. [Five available Michigan JPEGs, native church crops and original-byte reconstruction](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/tir-michigan/README.md) now have persistent repository records. The later TIFFs are absent in the current workspace; their prior successful inspections remain documented above. Preview images do not replace those full-resolution general sheets. No new cartographic intake/test KPI.

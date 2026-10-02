@@ -72,3 +72,8 @@ The supplied 2001 final report now provides an image-checked channel distinction
 ## Archived original plans
 
 [Netzer final-report Plans 17–22](../../assets/plans/netzer2001/README.md) are now stored as source figure crops with provenance and hashes. The user’s 2 October 2026 archive instruction supersedes earlier delivery notes withholding these particular images. Their upload adds no independent evidence or completed test. Folded plans and illustrated-book extracts remain queued.
+
+
+## Earlier measurement figures archived
+
+[Trümper Figs. 18–22](../../assets/plans/trumper2018/README.md) now preserve the publication figures used for the earlier offsets. The archived images retain the article’s printed orientation; their crop coordinates differ from the frozen full-page raster inputs used by measure.py. Do not apply the old pixel picks directly to these crops without the recorded transformation. Source-lineage and research KPI counts remain unchanged.
