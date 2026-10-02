@@ -1069,3 +1069,10 @@ Directly inspected printed pp. 92–95 / PDF pp. 103–106 and title/publication
 Complete one scoped primary-source inspection and one bounded wall-section/dated-contact coverage check (candidate phase remains inconclusive). The supplied original supersedes the publisher 403 reading dependency; park this inspected report as a wall-section lead. Patrich 1990 p. 208 n. 24 remains unread. Next seek a measured wall record and exact PEF aqueduct/tracing items. R03 remains P1 / In progress; confidence, ranks and geometry unchanged.
 
 Totals: 18 direct primary targets / 5 map intakes / 17 bounded checks / 0 decisive tests / 0 R closures; 7 In progress / 5 Queued. [Original-page evidence and distinctions](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi78_cave_survey_review_2026-10-02.md).
+
+
+## R03 / Q39 — Public PEF catalogue and parked retrieval leads, 2 October 2026 (UTC)
+
+Patrich 1990 p. 208 n. 24 remains unavailable and parked. Recovered OpenJerusalem's selected PEF EAD export and searched 562 component descriptions, without an exact match for the regional aqueduct plans/proof or four SWP Sheet XVIII tracings. Ain es Sultan's mound/pottery tracings and Warren's inscription/Haram Sheet XVIII items are distinct records. This selected inventory cannot establish absence from the full archive. Original drawing images remain unread.
+
+Park this catalogue pass; resume R03 on an exact item reference or measured wall record. Prioritize R02's available directional apparatus. R03 moves to P2 / In progress. Retrieval adds no primary inspection, bounded feature check, closure, candidate confidence or geography change. Totals remain 18 direct targets / 5 map intakes / 17 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Catalogue URLs, export checksum and scope](https://github.com/quadrin/CopperScroll/blob/main/research/sources/wadi_qelt_source_access_2026-10-02.md).
