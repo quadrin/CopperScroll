@@ -174,3 +174,15 @@ Eight supplied PNGs open successfully. The catalogue heading in capture-192311.p
 - [ז1: site-distribution map; another view of z1-site-distribution.png, north arrow and 500 m scale](capture-192447.png) — image(20261002-192447).png.
 
 Original bytes, source filenames, dimensions and checksums are recorded in [the manifest](turaba-intake-2026-10-02.json). Printed-page locators remain unverified. Repeated views remain distinct archival files and do not count as independent assemblages. This intake resolves a source-identity gap; research KPI counts, candidate confidence and architectural-phase questions remain unchanged.
+
+
+## Rujm el-Bahr, Twin Cave and Qasr el-Yahud catalogues — 2 October 2026
+
+Four supplied PNGs open successfully; original bytes are preserved. Their headings identify the following catalogue figures. Printed-page numbers are not visible in the crops.
+
+- [A9: Rujm el-Bahr pottery catalogue, with Israelite and Hellenistic–Roman groups](capture-192553.png) — image(20261002-192553).png.
+- [A10: Rujm el-Bahr pottery catalogue, captioned Hellenistic and Roman periods](capture-192607.png) — image(20261002-192607).png.
+- [B2: Twin Cave pottery and glass catalogue](capture-192633.png) — image(20261002-192633).png.
+- [ג21: Qasr el-Yahud pottery catalogue](capture-192659.png) — image(20261002-192659).png.
+
+The Twin Cave catalogue preserves registration numbers and context descriptions, including Cave A/B, named areas, the pillar and the eastern trench. It does not equate Cave A/B with northern/southern units or supply a measured northern-threshold section. Catalogue period groupings date finds as published; they do not establish the date of the pillar, entrances or architectural alterations. These catalogue images extend existing figure coverage and do not add independent assemblages or research KPI counts. [Source filenames, dimensions and checksums](catalogue-intake-2026-10-02.json).
