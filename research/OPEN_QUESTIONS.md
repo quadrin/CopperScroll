@@ -16,9 +16,9 @@ Current totals:
 
 - Tracked questions: 12; in progress: 7; queued: 5; blocked: 0; resolved: 0; ruled out: 0.
 - Confirmed individual deposit locations: 0.
-- Since this tracker began: 7 directly inspected primary-source targets (Noorath page pair; Josephus 17.340 electronic text; De Marco 2026 article coverage; ESI 6 cave survey pp. 66–70; Feig Hebrew pp. 85–90; Sion Hebrew pp. 61–64 / Plan 5; Bar-Adon pp. [15]–17 / Figs. B1–B2); 5 inspected cartographic-reference targets; 0 completed decisive tests; 0 question closures. Earlier research is recorded in each question's baseline and linked notes.
-- Supplied-only image-checked primary targets awaiting direct verification: 0. The previously supplied Bar-Adon extraction is now directly verified from capture PDF pp. 24–26 and included among the 7 direct targets. Unique completed primary targets remain 7; provenance upgrade adds no second source.
-- Completed bounded source checks: 8 (Noorath as a directional anchor; TIR/lower-wadi identity; De Marco paper's target-wall coverage; ESI Roman context and wall dating; ESI Twin Cave plan/phase coverage; cave catalogue coordinate precision; IV/11 pillar/opening coverage; IV/11–IV/17 period control). These do not complete a candidate's reading/geometry/phase test.
+- Since this tracker began: 8 directly inspected primary-source targets (Noorath page pair; Josephus 17.340 electronic text; De Marco 2026 article coverage; ESI 6 cave survey pp. 66–70; Feig Hebrew pp. 85–90; Sion Hebrew pp. 61–64 / Plan 5; Bar-Adon pp. [15]–17 / Figs. B1–B2; Taylor–Gibson 2011 manuscript p. 22 / note 85, text-only); 5 inspected cartographic-reference targets; 0 completed decisive tests; 0 question closures. Earlier research is recorded in each question's baseline and linked notes.
+- Supplied-only image-checked primary targets awaiting direct verification: 0. The previously supplied Bar-Adon extraction is now directly verified from capture PDF pp. 24–26 and included among the prior 7 direct targets. The Bar-Adon provenance upgrade added no second source; the subsequent Taylor–Gibson text target brings unique completed primary targets to 8. The latter's figures and page images remain uninspected.
+- Completed bounded source checks: 9 (Noorath as a directional anchor; TIR/lower-wadi identity; De Marco paper's target-wall coverage; ESI Roman context and wall dating; ESI Twin Cave plan/phase coverage; cave catalogue coordinate precision; IV/11 pillar/opening coverage; IV/11–IV/17 period control; Qumran initial-construction phase coverage in Taylor–Gibson note 85). These do not complete a candidate's reading/geometry/phase test.
 - Next milestone: complete a page-cited test of one candidate's reading, geometry and construction phase, with the result recorded as supporting, conflicting or inconclusive.
 
 Count an original page/figure target once when its stated inspection is complete. Reprints and repeated searches do not add independent observations. A decisive test has an explicit hypothesis, inspected evidence and a recorded result; it may support or reject a candidate. An access failure belongs in the attempt history. Partial source coverage remains partial. Bounded source checks test a narrower claim and record supporting, conflicting or inconclusive results; count them separately from decisive candidate tests.
@@ -51,13 +51,13 @@ These are next actions, not completed inspections or a scheduled background job.
 ## R01 — Do Qumran's waterworks satisfy entries 20–23 together?
 
 - **Priority / status:** P1 / In progress.
-- **Baseline:** de Vaux's 1953 settlement plan and pool/channel alterations are inspected. Original illustration indexes identify Schulz p. 53 and Strobel Fig. 1 p. 56; the drawings remain unread.
+- **Baseline:** de Vaux's 1953 settlement plan and pool/channel alterations are inspected. Original illustration indexes identify Schulz p. 53 and Strobel Fig. 1 p. 56; the drawings remain unread. Taylor–Gibson 2011 manuscript p. 22 / note 85 has now been read as extracted text; images and figures were not inspected.
 - **Supporting evidence and limits:** period waterworks provide a regional comparison. The proposed intake, wall/boulder, reservoir and eastern fissure lack a demonstrated common measured frame and construction sequence. The modern Sekakah name depends on an identification proposal.
-- **Next test:** inspect the two drawings; cross-reference their feature identities and phases with Ilan–Amit and Humbert plans. Test alternative meanings of the conduit head and northern relation.
+- **Next test:** inspect the two drawings; cross-reference their feature identities and phases with Ilan–Amit and Humbert plans. Test alternative meanings of the conduit head and northern relation. Trace the Peleg unpublished-work lead to an exact report/licence/archive item; establish its spatial coverage before using it for the upper gorge.
 - **Answer criterion:** a source-cited comparison determines which required relationships a named candidate satisfies or contradicts, including reading alternatives and chronology. Geographic coordinates require independent registration controls.
-- **Access / dependencies:** original drawings were not recovered in the previous pass; institutional access or supplied pages may be required.
-- **Progress:** 2026-10-01 — baseline established; no new drawing inspected in creating this tracker.
-- **Evidence / historical questions:** [Qumran follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sites/qumran_parallel_followup_2026-10-01.md); Q38, Q41–Q42.
+- **Access / dependencies:** original drawings were not recovered in the previous pass; institutional access or supplied pages may be required. This pass's public JSTOR records/redirect still expose no drawings; the 2020 King's offprint request returned 403 and its publisher preview is front matter only.
+- **Progress:** 2026-10-01 — baseline established; no new drawing inspected in creating this tracker. Later focused pass: Taylor–Gibson note 85 leaves initial construction dating uncertain and supplies a 2009 fieldwork lead. Added one scoped text inspection and one inconclusive bounded phase check; no geometry or decisive candidate test.
+- **Evidence / historical questions:** [Qumran follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sites/qumran_parallel_followup_2026-10-01.md); [drawing access and phase check](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_drawings_phase_check_2026-10-01.md); Q38, Q41–Q42.
 
 ## R02 — What cave arrangement does entry 25 describe?
 
@@ -175,6 +175,8 @@ These are next actions, not completed inspections or a scheduled background job.
 - **Evidence / historical questions:** [Text and entries](https://github.com/quadrin/CopperScroll/blob/main/research/phases/phase1_summary.md); [Lexicon](https://github.com/quadrin/CopperScroll/blob/main/research/phases/phase2_summary.md); Q7, Q37.
 
 ## Change history
+
+- **2026-10-01 — R01 drawing-access and phase follow-up:** Schulz p. 53 and Strobel Fig. 1 p. 56 remain unread. Completed Taylor–Gibson manuscript p. 22 / note 85 as a text-only primary target and recorded one inconclusive construction-phase check. Exact unpublished-record identification becomes a next dependency. Totals: 8 primary targets / 5 map intakes / 9 bounded checks / 0 decisive candidate tests / 0 closures; 7 In progress / 5 Queued. [Scope and access record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_drawings_phase_check_2026-10-01.md).
 
 - **2026-10-01 — Tracker created:** organized the twelve current questions with stable identifiers, priorities, existing evidence, contradictions, next tests and closure criteria. Preserved the historical Q log. No new source inspection, candidate ranking or geographic coordinate changed in this update.
 
