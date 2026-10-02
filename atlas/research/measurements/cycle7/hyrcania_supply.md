@@ -66,3 +66,23 @@ Direct catalogue queries failed to load through the available reader, so holding
 - [Internet Archive title query](https://archive.org/advancedsearch.php?q=title%3A(%22Midbar%20Yehudah%22)&output=json)
 
 [Simania's exact-title listing](https://simania.co.il/bookdetails.php?item_id=84402) identifies a 474-page 1976 SPNI volume and offers physical used-copy advertisements; this is not online page access. A second [Book Gallery exact-title item](https://bookgallery.co.il/content/hebrew/bookpageschema.asp?BookPageID=184821) is linked from its Hebrew-category listing at 65 NIS, but the individual item failed to open, so current stock was not confirmed. No new geographic image or KPI increment.
+
+
+### Further citation and access audit, 2 October 2026
+
+The [Ehud Netzer bibliography, compiled by Nira Naveh](https://herodium.org/wp-content/uploads/2014/nezer/Bibliography.pdf), PDF p. 1, lists two contributions to this exact anthology under Hebrew year תשל״ו (1975–76): the Ein Gedi synagogue, pp. 255–260, and excavations at the foot of Herodium, pp. 322–324. This adds a scholarly date witness, without reconciling the anthology's editions or establishing an English edition.
+
+A second scholarly pagination witness is [Joseph Patrich, אמת־המים מעיטם לבית־המקדש והלכה צדוקית אחת, Cathedra 17](https://files.ybz.org.il/periodicals/Cathedra/17/Article_17.4.pdf), PDF p. 12: its extracted text cites Feldman's chapter at **326–335**. This supports that range over the earlier 316–335 citation; original anthology contents and pages remain required. This pass read the PDF text extraction. The screenshot call did not deliver a usable image block, so this is not recorded as image-checked. The author authority discrepancy in NLI remains unresolved.
+
+[Project Ben-Yehuda's 1989 aqueduct collection](https://benyehuda.org/collections/20451) is a publisher-authorized partial transcription. Its public content includes the editors' introduction and several earlier chapters, but the Hyrcania item resolves to a heading within the collection, with no chapter body in the retrieved page. It is neither the complete aqueduct volume nor Feldman's anthology. The introduction identifies the original aqueduct conference as **24–25 October 1979** and its preliminary publication as duplicated lecture abstracts; this corroborates the existing Sartaba source-routing distinction, without recovering the abstract booklet.
+
+[Joseph Porath, הפיתוח החקלאי של האזורים השחונים בימי בית הורדוס — המשכיות או חידושים, Cathedra 53](https://files.ybz.org.il/periodicals/Cathedra/53/Article_53.2.pdf), PDF p. 3, note 7, is another Feldman citation. Its extracted pagination is garbled and has not been normalized. The source also includes a regional site map and a Jericho irrigation map (PDF pp. 4–5). Their image inspection and binary archive are **pending**: the web reader exposes PDF text, but direct download returned HTTP 403. Keep the full PDF URL for future retrieval; do not count these as recovered plan assets.
+
+Further failed access routes:
+
+- [NLI Hebrew catalogue title search](https://www.nli.org.il/he/search?projectName=NLI#&q=any,contains,מדבר%20יהודה%20וים%20המלח): HTTP 403; no matching whole-book record or digital status verified.
+- [Open Library romanized title query](https://openlibrary.org/search.json?title=Midbar%20Yehudah%20yam&limit=10): reader inaccessible; holdings unchecked.
+- [Joan E. Taylor, Iron Age Qumran, King's College London PDF](https://kclpure.kcl.ac.uk/portal/files/139004734/Iron_Age_Qumran_Taylor.pdf): reader internal error. This is a citation lead, not the target anthology; a local uploaded copy exists and requires no user reacquisition.
+- [Book Gallery item 184821](https://bookgallery.co.il/content/hebrew/bookpageschema.asp?BookPageID=184821): still failed to open; stock remains unverified.
+
+Outcome unchanged: no verified complete online anthology, chapter scan, or English translation. Stronger citation routing is progress on access provenance, not a new archaeological test. No KPI increment or candidate-confidence change. No new outreach.
