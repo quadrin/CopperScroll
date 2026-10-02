@@ -573,3 +573,8 @@ Monika Trümper, “Swimming Pools and Water Management in the Eastern Mediterra
 ### Netzer 1983 — signed-in Kotar original chapter
 
 Ehud Netzer, “ארמונות החורף ואחוזת המלך ביריחו,” *קרדום: יריחו וסביבתה* 28–30 (1983), pp. 95–112. Target-scope direct image inspection: printed pp. 100–101 and 104–106, complete earlier-pool plan, later second-palace plan and joining footnote. Context pages 95–99/102–103 viewed to stated partial coverage. [Kotar viewer](https://kotar.cet.ac.il/KotarApp/Viewer.aspx?nBookID=95087647). Signed-in access successful. Original-author illustrated preliminary account, same Netzer fieldwork lineage; separate from both 2001 books. No raw page images published. [Observations and scope](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/kotar-netzer1983.md).
+
+
+### Netzer 2001 — supplied original books
+
+Both PDFs accessible locally. Final report Vol. I printed pp. 74, 82, 84–85 directly image-inspected; illustrated book archaeological plan inspection pending. Earlier publisher-only access limit is superseded for these supplied copies. Complete plan/foldout coverage remains unverified. [Hashes, observations and scope](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/netzer2001-first-pass.md).
