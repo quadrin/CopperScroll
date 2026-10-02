@@ -1044,3 +1044,10 @@ All 483 supplied PDF pages were visually screened as contact sheets, with full-p
 At the user's direction, parked Peleg's prepared-map and separate pocket-sheet hunt. The next action now tests a construction contact using available records. Rechecked the supplied report's local channel/floor/cistern evidence and preserved the missing external-to-internal link. Component chronology and spatial candidate confidence remain unresolved; no ranking or coordinate change.
 
 Read Stacey's 2017 authored construction-phase response as one new source target, with provenance explicitly limited to reanalysis. Humbert 2016 pp. 425–432 and Mizzi 2022 remain unread; publisher/repository access limits and direct links are recorded. Reinspection of already used pages adds no count. Totals: 13 direct primary targets / 5 map intakes / 13 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Phase evidence, chronological dependencies and next L117 contact test](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_construction_phase_review_2026-10-02.md).
+
+
+## R01 / Q38, Q41–Q42 — Northern dump and overflow contact tests, 2 October 2026 (UTC)
+
+Checked the original 2007 dump pages/captions/note and the 2018 northern-dump catalogue/pottery record. Corrected the 2007 p. 8 date referent to the separate northwestern dump. The inspected northern-overflow descriptions and broad find lists do not establish a dated sealed construction contact. Keep Trench A and the separately listed Northern trench assemblages distinct.
+
+Three completed scoped source targets, including the original de Vaux book inspection and two bounded checks (conflicting date attribution; inconclusive construction-contact dating). R01 remains In progress; no candidate ranking/coordinate change or question closure. Next test L117's outlet/raised-rim/step relationship. Totals: 16 direct targets / 5 map intakes / 15 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Original-page mapping, correction and test scope](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_northern_dump_contact_test_2026-10-02.md).

@@ -52,3 +52,8 @@ Keep Humbert and Mizzi as supplementary unread references, rather than making re
 Add one completed authored source target: Stacey 2017's scoped construction-phase argument. It is a reanalysis, not an independent field campaign. Rechecking already used Magen–Peleg and Taylor–Gibson passages adds no second target. No new bounded check is counted for this synthesis, and no decisive candidate test or question closure is claimed.
 
 Cumulative totals: 13 directly inspected primary-source targets; 5 cartographic-reference targets; 13 bounded source checks; 0 decisive candidate tests; 0 question closures. Status totals remain 7 In progress and 5 Queued.
+
+
+## Northern-dump follow-up — 2 October 2026 (UTC)
+
+The planned dump-contact test is now completed to the inspected scope. The cited 2007 p. 8 date belongs to the separate northwestern dump; the northern overflow's dated sealed construction contact remains unestablished in the checked 2018 catalogue/pottery coverage. Trench A and the Northern trench have separate aggregate coin lists. Next test L117's outlet against the raised rim and added steps, preserving component dates separately. [Full tests, source mapping and revised counts](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_northern_dump_contact_test_2026-10-02.md). This follow-up supersedes the next-test priority above while preserving the earlier phase review.
