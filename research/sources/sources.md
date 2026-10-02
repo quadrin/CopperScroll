@@ -494,3 +494,12 @@ Read Stacey's 2017 authored construction-phase response as one new source target
 Checked the original 2007 dump pages/captions/note and the 2018 northern-dump catalogue/pottery record. Corrected the 2007 p. 8 date referent to the separate northwestern dump. The inspected northern-overflow descriptions and broad find lists do not establish a dated sealed construction contact. Keep Trench A and the separately listed Northern trench assemblages distinct.
 
 Three completed scoped source targets, including the original de Vaux book inspection and two bounded checks (conflicting date attribution; inconclusive construction-contact dating). R01 remains In progress; no candidate ranking/coordinate change or question closure. Next test L117's outlet/raised-rim/step relationship. Totals: 16 direct targets / 5 map intakes / 15 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Original-page mapping, correction and test scope](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_northern_dump_contact_test_2026-10-02.md).
+
+
+## R01 / Q38, Q41–Q42 and R03 / Q39 — L117 illustration test and Wadi Qelt access, 2 October 2026 (UTC)
+
+Magen–Peleg 2018 Figs. 57–58 (pp. 53–54) locate and section L117. The inspected section and de Vaux Plates VI, VIIa, XVII do not establish a dated common alteration of outlet, raised sides and added steps. De Vaux p. 9's explicit heightening concerns L110; do not transfer that observation to L117 without a supporting record. The bounded construction-linkage check is inconclusive; the available illustration pass is parked pending a specific joint/context record.
+
+R03 becomes P1 / In progress. Patrich 1990 p. 208 n. 24 remains unread. ESI 7–8's exact publisher download returned 403 through the web reader and an ordinary direct request; cited pp. 92–95 remain unread. The Hebrew pp. 179–193 parallel is bibliographic only. No new Wadi archaeological observation, source-inspection count or feature test is added.
+
+Add 1 conservative primary section target / 1 bounded check. Cumulative totals: 17 direct targets / 5 map intakes / 16 bounded checks / 0 decisive tests / 0 R closures; 7 In progress / 5 Queued. Reading alternatives, candidate ranks, confidence and geography remain unchanged. [L117 original-page coverage](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_l117_outlet_joint_test_2026-10-02.md); [unread Wadi links and test requirements](https://github.com/quadrin/CopperScroll/blob/main/research/sources/wadi_qelt_source_access_2026-10-02.md).

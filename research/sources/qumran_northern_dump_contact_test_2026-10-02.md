@@ -69,3 +69,8 @@ He places the higher supply channel and northward drain within Period Ib (pp. 8�
 Three newly completed scoped source targets: 2007 dump pages/captions/note 8; 2018 dump catalogue/pottery target; de Vaux 1973 cited pages. The two renewed-excavation reports derive from the existing programme; the additional original de Vaux book target is specified above. Two bounded source checks: date attribution (conflicting) and dated construction contact (inconclusive). No decisive Copper Scroll candidate test or R-question closure.
 
 Cumulative totals: 16 direct primary-source targets; 5 cartographic-reference targets; 15 bounded source checks; 0 decisive candidate tests; 0 question closures. Status totals: 7 In progress / 5 Queued. Rankings, coordinates and confirmed deposit locations are unchanged.
+
+
+## L117 illustration follow-up — 2 October 2026 (UTC)
+
+The planned outlet/rim/steps test is completed to available illustration coverage. Magen–Peleg Fig. 58, located by Fig. 57, supplies L117's stepped section; neither it nor de Vaux's phase plans/channel photograph explicitly establishes the required dated construction joint. De Vaux p. 9 explicitly heightens L110, without directly documenting the corresponding L117 side/step alteration in that paragraph. Park this available-record pass; resume with an identifiable joint/context record. R03 is now the next priority. [Inspection scope, citation qualification and conservative KPI counts](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_l117_outlet_joint_test_2026-10-02.md).

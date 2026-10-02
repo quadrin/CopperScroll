@@ -57,3 +57,8 @@ Cumulative totals: 13 directly inspected primary-source targets; 5 cartographic-
 ## Northern-dump follow-up — 2 October 2026 (UTC)
 
 The planned dump-contact test is now completed to the inspected scope. The cited 2007 p. 8 date belongs to the separate northwestern dump; the northern overflow's dated sealed construction contact remains unestablished in the checked 2018 catalogue/pottery coverage. Trench A and the Northern trench have separate aggregate coin lists. Next test L117's outlet against the raised rim and added steps, preserving component dates separately. [Full tests, source mapping and revised counts](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_northern_dump_contact_test_2026-10-02.md). This follow-up supersedes the next-test priority above while preserving the earlier phase review.
+
+
+## L117 illustration follow-up — 2 October 2026 (UTC)
+
+The planned outlet/rim/steps test is completed to available illustration coverage. Magen–Peleg Fig. 58, located by Fig. 57, supplies L117's stepped section; neither it nor de Vaux's phase plans/channel photograph explicitly establishes the required dated construction joint. De Vaux p. 9 explicitly heightens L110, without directly documenting the corresponding L117 side/step alteration in that paragraph. Park this available-record pass; resume with an identifiable joint/context record. R03 is now the next priority. [Inspection scope, citation qualification and conservative KPI counts](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_l117_outlet_joint_test_2026-10-02.md).

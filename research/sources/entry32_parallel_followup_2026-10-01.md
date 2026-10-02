@@ -100,3 +100,8 @@ De Marco's 2026 original article pp. 85–92, including Figs. 1–5, was inspect
 ## Original ESI 6 inspection — later 1 October 2026
 
 The user-supplied English scan resolves the earlier ESI access dependency: printed pp. 66–70 and Figs. 26–29 are inspected. P. 66's late first-/early second-century storage-jar rim comes from a natural cave east of the monastery; no numbered or sealed context or connection to the opposite-bank wall is given. Fig. 26 p. 67 supplies monastic-cell context without a target-wall section. This source cannot date the proposed culvert wall or establish its lower outlet and ground datum. Patrich 1990 p. 208 n. 24 remains unread; a wall-specific source is still required. [Coverage and phase check](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi6_cave_survey_review_2026-10-01.md). Candidate and spatial model unchanged.
+
+
+## Focused access follow-up — 2 October 2026 (UTC)
+
+Patrich 1990 p. 208 n. 24 remains unread after focused public searches. Identified the exact IAA ESI 7–8 record/download for the cited pp. 92–95; both web and ordinary direct download returned 403. A Hebrew parallel, Patrich/Arubas/Kali pp. 179–193, is bibliographic only. No new wall observation or KPI inspection/test is recorded. R03 becomes P1; next locate a wall-specific lower-mouth/ground/joint record and trace the chapter's actual Roman feature/context if recovered. The previously inspected ESI 6 cave rim still cannot date the wall. [Exact source links, limits and stopping rule](https://github.com/quadrin/CopperScroll/blob/main/research/sources/wadi_qelt_source_access_2026-10-02.md).
