@@ -41,3 +41,17 @@ Enlarged supplied panels from ז5: [A–B, view west](z5-ab-west-view-detail.png
 [ז6: Site B, view from northwest](z6-site-b-rock-platform.png), caption describing a raised rock platform, grooved stone, adjacent rectangular construction and a lower surface behind it. [ז7: Site B, view from northeast](z7-site-b-rectangular-structure.png), caption describing rectangular construction termed a “store” on the raised rock platform. Record those captions without treating the store interpretation or feature dates as independently established.
 
 Site B’s chapter title remains unverified in this crop intake. Twin Cave B1 remains outside coverage. No candidate confidence, measured result or research KPI changes.
+
+
+## Chapter ז, further finds and Site C photograph
+
+- [ז8: Site C at the hilltop, viewed from northwest](z8-site-c-hilltop.png).
+- [ז9: pottery](z9-pottery.png).
+- [ז10: Mizpe Shalem pottery](z10-mizpe-shalem-pottery.png), explicit site name in caption.
+- [ז10 with catalogue](z10-mizpe-shalem-pottery-catalogue.png), a second supplied view of the same plate retaining specimen descriptions and registration numbers. It does not represent another assemblage.
+- [ז11: fan scrapers](z11-fan-scrapers.png).
+- [ז12: fan scrapers](z12-fan-scrapers.png).
+- [ז13: fan scrapers](z13-fan-scrapers.png).
+- [ז14: fan scrapers](z14-fan-scrapers.png), sideways as supplied.
+
+Captions read directly; original PNG bytes retained. Printed page numbers remain outside these crops. Mizpe Shalem is explicitly named for ז10 only; this intake does not establish that Sites A/B/C or every illustrated assemblage carry that same site identity. Typological dating and relationships to structures require surrounding text and excavation contexts. These images add archival coverage with no research KPI increment or candidate-confidence change. Twin Cave B1 remains missing.
