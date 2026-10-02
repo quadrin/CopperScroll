@@ -36,3 +36,9 @@ Latest recovery: [Schulz Figs. 1–3](schulz1960/README.md), including readable 
 Archived selections: [DJD III plates](djdIII1962/), [Migdal Afeq](tendler2014/), [desert fortress water supply](garbrecht-peleg1994/), [Manasseh II](zertal2008/), [Manasseh III](zertal-vol3/), [Manasseh IV / Sartaba](zertal-vol4/), [SWP name-list identity](swp-name-lists/), plus additions in [ʿAtiqot 41](atiqot41/), [Aqueducts 1989](aqueducts1989/) and [NEAEHL V](neaehl-vol5/).
 
 Archival recovery alone does not increment decisive tests or close research questions. Copyright remains with the original rights holders; no new licence is asserted. [Source and asset manifest](reference-batch-2026-10-02.json).
+
+## Figure coverage rule
+
+Archive every map, plan, layout, section, aerial image, and photograph of terrain or ruins encountered in a supplied source, including material without an immediate research application. Preserve captions and surrounding context, retain source identity and printed/PDF page mapping, and mirror assets under `atlas/`. If coverage is incomplete, state the specific scope rather than claiming all figures.
+
+On 2 October 2026, complete supplied-page archives replaced the selective coverage of Sion’s 42-page report and Manasseh survey volumes II (809 supplied pages), III (615) and IV (780). These 2,246 pages retain all their figures. Earlier selected extracts remain convenience links. [Coverage and file manifest](complete-figure-coverage-2026-10-02.json).
