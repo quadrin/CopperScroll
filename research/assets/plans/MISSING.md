@@ -2,7 +2,6 @@
 
 2 October 2026, Los Angeles. These sources were used earlier, but the necessary original files are absent from this workspace or exceed the attachment transfer limit. Earlier successful readings remain valid to their recorded scope. This is an archival access register, not a claim that the publications lack figures.
 
-- **Siegfried Schulz, “Chirbet ḳumrān, 'ēn feschcha und die buḳē'a: Zugleich ein archäologischer Beitrag zum Felsenaquädukt und zur Straße durch das wādi ḳumrān,” ZDPV 76 (1960), pp. 50–72**: Fig. 2, printed p. 53, previously read from capture p. 4. Reattached PNG is only 195 pixels wide; a readable original drawing remains unavailable. [JSTOR record](https://www.jstor.org/stable/27930608); [verified capture mapping](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_supplied_originals_review_2026-10-01.md).
 - **ʿAtiqot 41 (2002), Hebrew issue**, including Feig’s IV/11 report (pp. 85–90) and Sion’s survey (pp. 61–64 / Plan 5): original issue files absent. [Exact publisher retrieval links and source identities](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_plan_access_2026-10-01.md). Keep IV/11, IV/17 and 3Q separate.
 - **Pessach Bar-Adon, Excavations in the Judean Desert, prepared by Zvi Greenhut, ʿAtiqot Hebrew Series 9 (1989)**: Twin Cave B1, printed p. [15], is an exterior photograph, not a plan. The reattached partial PDF ends at printed p. 9; pp. [15]–17 and B1 remain unavailable as archived images. [Original viewer p. [15]](https://www.jstor.org/stable/23456199?seq=25); [direct-review record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/baradon1989_capture_direct_review_2026-10-01.md).
 - **Jean-Baptiste Humbert and Jan Gunneweg, eds., Khirbet Qumrân et ‘Aïn Feshkha II: Études d’anthropologie, de physique et de chimie / Studies of Anthropology, Physics and Chemistry (2003)**: Galor’s L138 plan/section, Fig. 3 p. 294, and relevant water-installation maps. Its recorded user attachment was located but transfer failed because it exceeds 32 MiB. [Corrected identity and exact figure locators](https://github.com/quadrin/CopperScroll/blob/main/registration/qumranII2003_extracted.md).
@@ -31,3 +30,8 @@ Both reattached TIFFs open and match their earlier source hashes. [South assets]
 ## JSP 18 recovered; Bar-Adon capture remains partial — 2 October 2026
 
 [JSP 18 plan, section and hydraulic figures](magen-peleg2018/README.md) are now archived. No separate folded pocket map was located in the reattached PDF; its recovery remains open. The Bar-Adon capture stops at printed p. 9 and does not include Twin Cave B1. [Intake and exact source hashes](../../sources/reattached_qumran_baradon_intake_2026-10-02.md). No research KPI increment.
+
+
+## Schulz drawings recovered — 2 October 2026
+
+[Readable Schulz Figs. 1–3](schulz1960/README.md) are now archived, including Fig. 2 p. 53. Earlier preview limitations describe the prior state. [Bar-Adon regional map and chapter A figures](baradon1989/README.md) are also preserved; they do not recover Twin Cave B1. Archival recovery adds zero research KPI counts.

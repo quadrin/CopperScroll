@@ -27,3 +27,6 @@ Latest recoveries: [Synagogues](https://github.com/quadrin/CopperScroll/tree/mai
 
 
 [JSP 18 Qumran figures recovered](magen-peleg2018/README.md): detailed building plans, sections, northern-dump and hydraulic photographs. Folded map remains unlocated; partial Bar-Adon attachment does not reach Twin Cave.
+
+
+Latest recovery: [Schulz Figs. 1–3](schulz1960/README.md), including readable aqueduct Fig. 2 p. 53, and [Bar-Adon regional map / Rujm el-Bahr figures](baradon1989/README.md). This supersedes the earlier readable-Schulz access gap. Twin Cave B1 remains missing.

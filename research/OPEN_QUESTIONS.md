@@ -325,3 +325,6 @@ Archive update, 2 October 2026: Synagogues completes the recovered Michigan full
 
 
 2 October 2026 reattachment update: JSP 18 opens; Figs. 57–58, 76–77 and related settlement/water-system figures are archived with hashes and page locators. Folded pocket map remains unlocated. Bar-Adon’s supplied capture ends at printed p. 9, leaving Twin Cave pp. [15]–17/B1 outside coverage. Archival recovery adds zero research KPI counts; candidate confidence remains unchanged.
+
+
+2 October 2026 figure-crop update: readable Schulz Figs. 1–3 are archived; Fig. 2 p. 53 restores the aqueduct drawing and its approximate ±100/±100/±500 m labels. This closes an archival gap, with no research-question closure or KPI increment. Bar-Adon’s regional map and Rujm el-Bahr chapter A figures are archived; Twin Cave chapter B/B1 remains outside coverage. Candidate assessments and measurements remain unchanged.
