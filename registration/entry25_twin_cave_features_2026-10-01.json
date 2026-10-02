@@ -1,0 +1,135 @@
+{
+  "entry": 25,
+  "question": "R02",
+  "review_date": "2026-10-01",
+  "candidate_id": "Twin_Cave_Qumran",
+  "status": "provisional_published_description_comparison",
+  "source": {
+    "publication": "Bar-Adon, Atiqot Hebrew Series 9 (1989), Chapter B",
+    "printed_pages": [
+      "[15]",
+      "16",
+      "17"
+    ],
+    "viewer_pages": [
+      25,
+      26,
+      27
+    ],
+    "url": "https://www.jstor.org/stable/23456199",
+    "evidence_type": "user-supplied image-checked extraction from source-reading session",
+    "original_images_inspected_by_integrating_session": false,
+    "original_images_exported": false,
+    "source_note": "research/sources/twin_cave_supplied_image_checked_review_2026-10-01.md"
+  },
+  "reading": {
+    "basis": "existing edition comparison and Milik p. 140 recheck",
+    "models": [
+      "cave-level eastward aspect",
+      "both mouths east-facing"
+    ],
+    "new_apparatus_or_manuscript_check": false
+  },
+  "position": {
+    "published_relation": "eastern Qumran cliff slope, about 1 km north of ancient settlement",
+    "registered_mouth_coordinates": null,
+    "coordinate_system": null,
+    "measured_footprint": null
+  },
+  "published_features": {
+    "mouth_count": 2,
+    "mouth_aspect": "both east toward Dead Sea",
+    "surveyed_azimuths_degrees": null,
+    "mouth_dimensions": null,
+    "mouth_spacing_metres": null,
+    "internal_connection": null,
+    "pillar": {
+      "description": "thick rock pillar separating northern/southern units",
+      "dimensions": null,
+      "worked_state": null,
+      "natural_character": "source-reader inference, not explicit unworked finding"
+    },
+    "northern_cavity": {
+      "length_metres": 35,
+      "average_width_metres": 4,
+      "levels": 1,
+      "enclosed": true
+    },
+    "southern_cavity": {
+      "levels": 2,
+      "upper_interior_open_to_sky": true,
+      "narrow_high_recess": true,
+      "dimensions": null
+    }
+  },
+  "figure_B1": {
+    "type": "exterior photograph",
+    "view_from": "southeast per caption",
+    "scale_bar": false,
+    "north_arrow": false,
+    "mouth_labels": false,
+    "geometry_measurement_suitable": false
+  },
+  "catalogue_labels": {
+    "Cave_A_B_equated_with_north_south": false,
+    "pillar_locus_in_Cave_A": [
+      "B2:4",
+      "B2:8"
+    ],
+    "spatial_and_vertical_boundaries": "insufficiently defined for pillar-construction date"
+  },
+  "dating": {
+    "late_second_temple_compatible_material": [
+      "B2:6 first-century BCE–first-century CE parallels",
+      "B2:7 first-century CE parallel",
+      "B2:12 first-century BCE parallels"
+    ],
+    "B2_14": "Bar Kokhba-era comparative vessel date; eastern trench; no sealed threshold association",
+    "entrance_phase_established": false,
+    "pillar_date_established": false,
+    "northern_threshold_date_established": false
+  },
+  "records": {
+    "editorial_note": "p. [15] note 1",
+    "diaries_record_areas_and_depths": true,
+    "precise_locus_boundaries_recorded": false,
+    "specific_disturbance_mechanism_established": false,
+    "fully_mixed_deposit_established": false
+  },
+  "depth_hypothesis": {
+    "cubits": 3,
+    "exploratory_metres_per_cubit": [
+      0.4,
+      0.6
+    ],
+    "distance_metres": [
+      1.2,
+      1.8
+    ],
+    "anchor": "contemporary northern threshold, unestablished",
+    "direction": "vertical interpretation unverified",
+    "general_deposit_depth": "several metres; not a threshold-specific measurement"
+  },
+  "assessments": {
+    "reading": "alternatives retained",
+    "site": "provisional association",
+    "feature": "published pillar/two-east-facing-mouth description supported through supplied image-checked extraction",
+    "phase": "use compatible; relevant architectural phase/datum unresolved",
+    "position": "approximate regional relation only"
+  },
+  "next_targets": [
+    "measured survey and sections",
+    "original cave-specific diaries/sketches/photographs linking northern threshold and depth to phase",
+    "edition apparatus directional attachment"
+  ],
+  "numerical_rank_changed": false,
+  "map_marker_changed": false,
+  "deposit_geometry": null,
+  "kpi_increment": {
+    "supplied_image_checked_primary_extractions": 1,
+    "directly_inspected_primary_targets": 0,
+    "direct_bounded_checks": 0,
+    "decisive_candidate_tests": 0,
+    "question_closures": 0
+  }
+}
