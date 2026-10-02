@@ -49,3 +49,35 @@ No enquiry was sent. No map or image was republished. These contacts and catalog
 The supplied 483-page full report was checked for the separate folded plan and inspected at production credits, preface XI–XII/XVI–XVII, the unnumbered aerial spread, and water-system pp. 75–80. No separate pocket-plan page or embedded attachment occurs in this PDF. The preface now supplies direct provenance: Magen says he completed and edited the report after Peleg's death; its joint author line alone therefore cannot show that Peleg revised his 2009 dam position. Alina Pikovsky's graphic-artist acknowledgement and Keterpress's production credits provide workflow leads, without identifying a map's drafter or custodian. Ask for the JSP 18 pocket-sheet artwork and drawing/version records. Peleg's 2009 map remains unrecovered.
 
 Count one newly inspected preface/production target from the same publication (new pages), plus one negative pocket-sheet payload check. The already inspected water-system pages add no second target. Totals: 12 primary targets / 5 map intakes / 13 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Checksum, page mapping, scope and next retrieval specification](https://github.com/quadrin/CopperScroll/blob/main/research/sources/magen2018_full_report_map_check_2026-10-01.md).
+
+
+## Online supplement and image follow-up — 2 October 2026 (UTC)
+
+**Result:** the public routes checked did not yield JSP 18's 88 × 57 cm pocket sheet, its production artwork, or the aqueduct map reported in Taylor–Gibson note 58. This is a search/access result; it does not establish that the drawings are unavailable everywhere or that they were never digitized.
+
+### Images recovered and checked
+
+The [IES book listing](https://www.israelexplorationsociety.com/product-page/18-back-to-qumran) exposes two preview assets. Reader retrieval failed, but direct public HTTP downloads succeeded and both images were inspected locally. The [first image](https://static.wixstatic.com/media/25b39d_5176b260ffe94be6ac18bbe6d0f0b211~mv2.jpg) is the front cover (2848 × 3672); the [second](https://static.wixstatic.com/media/25b39d_5f7a37f161a04adabd6f2a72d04ded0b~mv2.jpg) is the back cover (2703 × 3676). Neither supplies the pocket plan. SHA-256 respectively: `64810f4943ed8f9829fc08fbe37b30e616ac024e32b42e8572d5a37f1ed1857a`; `9f97937fc5debb9a81b95b6da9024f8ee40a56e7a8f3f69fee3722697412deee`.
+
+[Dead Sea Quake's Qumran figure index](https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/Qumran.html) links two recoverable reproductions attributed to Magen–Peleg 2007:
+
+- [Fig. 35: annotated water-system aerial photograph](https://www.deadseaquake.info/wp-content/uploads/2022/01/Fig35_MagenAndPeleg2007.png), 565 × 821, SHA-256 `ff4a61b830ca3875fd1254c10d3ffb72f208c428a7efca67c76d642ac61d8e3c`. Inspected image includes basin/riverbed labels and aqueduct linework, with a 100 m scale. It is an aerial photograph with annotations, predating the reported 2009 map.
+- [Fig. 4: general settlement plan](https://www.deadseaquake.info/wp-content/uploads/2022/01/Fig4_MagenAndPeleg2007.png), 513 × 828, SHA-256 `7d781320a26d2374d3316920ce059a3c5a5e82b877787bc4b4feb9981507d883`. Inspected image includes locus numbers, north arrow, 20 m scale and the aqueduct approaching the settlement; it does not contain the upper-gorge feature survey.
+
+These are online comparison copies of an already used publication, with their date/figure attribution supplied by the hosting index. No evidence identifies them as the separate 2009 map or 2018 pocket sheet. No new geographic registration or feature-phase inference was attempted. No image file was committed.
+
+### Production and catalogue routes
+
+The [Hagit Argaman artist profile for Alina Yoffe-Pikovsky](https://hagitargaman.com/2481-2/) states that she worked in art editing, graphic design and print production for Judea and Samaria publications. It gives her first name and surname variants and links [her Behance portfolio](https://www.behance.net/alinapik121670). The match with the report's graphic-artist acknowledgement is a useful production-route inference; it does not identify a particular map's drafter or establish possession of artwork. The portfolio itself was inaccessible to the reader. No map asset was recovered through the indexed portfolio search, and no contact was made.
+
+The [JSTOR open-access contents](https://www.jstor.org/content/oa_book_edited/j.ctv1t8cdq) provide chapter records but expose no separately labelled pocket-sheet download in the inspected contents. The [IAA collections page](https://publications.iaa.org.il/communities.html) describes datasets as still in preparation; its inspected listing supplies no JSP 18 map asset. [ROMAQ's own Qumran record 338](https://www.romaq.org/the-project/aqueducts/article/338) cites Hodge 1992 and reports no images in its directory. It supplies no Peleg map. These limitations apply to the inspected pages, rather than every resource held by these organizations.
+
+Catalogue routes to revisit manually: [NLI 990044096250205171](https://www.nli.org.il/en/books/NNL_ALEPH990044096250205171/NLI) returned 403; [Haifa's book record](https://haifa.primo.exlibrisgroup.com/primo-explore/fulldisplay?context=L&docid=972HAI_MAIN_ALMA21170876220002791&lang=iw_IL&vid=HAU) was inaccessible through the reader. Their indexed descriptions retain the physical pocket-plan lead. The indexed [WorldCat 1040130490 result](https://search.worldcat.org/title/Back-to-Qumran-%3A-final-report-%281993-2004%29/oclc/1040130490) describes a JSTOR open-access eBook; that result is not confirmation of a physical pocket-sheet holding.
+
+### Search scope and next action
+
+Both search engines covered the exact title, ISBN, folded sheet/pocket/foldout/supplement/artwork terms, English/Hebrew aqueduct/map/plan variants, 2009 Peleg survey references, publisher and library domains, Internet Archive, author repositories and the graphic artist's name variants. Image searches returned general site plans rather than an identifiable target sheet. The Scribd title hit remains the previously identified one-page catalogue reproduction.
+
+Next retrieve the separate physical sheet using the NLI key, or obtain a map-specific drawing/version identifier from the publishing unit or scientific archive. The artist profile gives a further production lead; it does not replace the need for sheet title, legend, coverage and provenance. Check the sheet's upper-gorge coverage before treating it as relevant to entries 20–23. Retain the exact pre-/post-November 2009 enquiry specification above for Peleg's distinct map.
+
+R01 remains In progress. Counts remain 12 directly inspected primary targets / 5 cartographic-reference intakes / 13 bounded source checks / 0 decisive tests / 0 question closures; 7 In progress / 5 Queued. Recovered online reproductions and retrieval-route checks add no independent archaeological observation or completed candidate test.
