@@ -29,7 +29,8 @@
       ],
       "outputs": [
         "cycle3/twin_archive.md",
-        "cycle3/twin_archive.json"
+        "cycle3/twin_archive.json",
+        "cycle4/puech_entry25.md"
       ]
     },
     {
@@ -53,7 +54,8 @@
         "cycle2/iv17_repeat_results.json",
         "cycle2/iv17_repeat_report.md",
         "cycle3/iv17_phase.md",
-        "cycle3/iv17_phase.json"
+        "cycle3/iv17_phase.json",
+        "cycle4/puech_entry25.md"
       ],
       "measures": [
         "northern_clear_gap",
@@ -126,7 +128,7 @@
       "execution_state": "distance_and_frozen_coarse_grouping_sensitivity_recorded",
       "readiness": "64_grouping_cases_complete; independent_associations_fine_districts_and_unmapped_subspans_pending",
       "parallel_lane": "sequence_sensitivity",
-      "next_action": "Recover Augustinovic1951 pp89–92 for Tell el-Qos and Amit1989 Fig1/phase discussion for Doq; independently identify entry32 outlet/wall before fine-district footprints and held-out itinerary tests.",
+      "next_action": "Complete Amit1989 pp225–228 and calibrate Fig2 once recoverable; preserve Puech2015 edition-specific entry30–32 models and conditional outlet wall/mountain branch. Gerico remains parked.",
       "completion": "Report regional group stability and held-out itinerary predictions across declared alternatives; keep candidate probabilities undefined.",
       "outputs": [
         "sequence/pilot.py",
@@ -138,7 +140,9 @@
         "cycle2/sequence_grouping/scenario_metrics.csv",
         "cycle3/betqos_anchor.md",
         "cycle3/betqos_anchor.json",
-        "cycle3/doq_anchor.md"
+        "cycle3/doq_anchor.md",
+        "cycle4/puech_30_32.md",
+        "cycle4/amit_partial.md"
       ],
       "measures": [
         "selected_stop_distance_and_order",
@@ -182,15 +186,15 @@
     "configured_tracks": 6,
     "pilot_or_audit_outputs_recorded": 4,
     "protocol_and_source_requirements_only": 2,
-    "new_primary_targets": 1,
-    "new_bounded_source_checks": 2,
+    "new_primary_targets": 2,
+    "new_bounded_source_checks": 0,
     "new_decisive_candidate_tests": 0,
     "question_closures": 0,
     "cumulative_project_bounded_checks": 21,
-    "cumulative_project_primary_targets": 19
+    "cumulative_project_primary_targets": 21
   },
   "last_update_utc": "2026-10-02",
-  "last_completed_cycle": 3,
+  "last_completed_cycle": 4,
   "completed_cycles": [
     {
       "cycle": 1,
@@ -207,6 +211,12 @@
       "primary_targets_added": 1,
       "bounded_checks_added": 2,
       "role": "IV/17 catalogue/contact scope and independent Tell el-Qos association; general archive/access progress and Doq assertion audit counted separately"
+    },
+    {
+      "cycle": 4,
+      "primary_targets_added": 2,
+      "bounded_checks_added": 0,
+      "role": "combined Puech original-edition scope and prior uncounted partial Amit survey-plan scope; no new geographic measurement"
     }
   ]
 }

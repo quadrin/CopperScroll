@@ -1,0 +1,149 @@
+{
+  "date_utc": "2026-10-02",
+  "baseline_commit": "1f1240c5",
+  "source": {
+    "author": "Émile Puech",
+    "title": "The Copper Scroll Revisited",
+    "year": 2015,
+    "series": "STDJ112",
+    "byte_count": 5041693,
+    "pdf_page_count": 171,
+    "sha256": "864a843aa9aa8d8bb3c8470f8df0be35cc1abc319c0d4de6e99a1ceedfac99d4",
+    "access": "user-supplied local PDF"
+  },
+  "requested_printed_pages": [
+    65,
+    66,
+    67,
+    68,
+    101
+  ],
+  "actual_image_scopes": [
+    {
+      "printed_page": 61,
+      "pdf_page": 72,
+      "verification": "actual page image rendered from supplied PDF"
+    },
+    {
+      "printed_page": 62,
+      "pdf_page": 73,
+      "verification": "actual page image rendered from supplied PDF"
+    },
+    {
+      "printed_page": 63,
+      "pdf_page": 74,
+      "verification": "actual page image rendered from supplied PDF"
+    },
+    {
+      "printed_page": 64,
+      "pdf_page": 75,
+      "verification": "actual page image rendered from supplied PDF"
+    },
+    {
+      "printed_page": 65,
+      "pdf_page": 76,
+      "verification": "actual page image rendered from supplied PDF"
+    },
+    {
+      "printed_page": 66,
+      "pdf_page": 77,
+      "verification": "actual page image rendered from supplied PDF"
+    },
+    {
+      "printed_page": 67,
+      "pdf_page": 78,
+      "verification": "actual page image rendered from supplied PDF"
+    },
+    {
+      "printed_page": 68,
+      "pdf_page": 79,
+      "verification": "actual page image rendered from supplied PDF"
+    },
+    {
+      "printed_page": 101,
+      "pdf_page": 112,
+      "verification": "actual page image rendered from supplied PDF"
+    }
+  ],
+  "manuscript_newly_inspected": false,
+  "other_original_editions_newly_inspected": false,
+  "entry30": {
+    "published_positions": {
+      "62": "cave next to household frigidarium; six cubits; silver bars",
+      "65": "rejects vicinity reading; supports cool-room restoration; rejects springs alternative",
+      "65_note260": "preceding aqueduct/reservoir back-reference depends on earlier-editor segmentation",
+      "65_note261": "old-photo reading without physical verification of right-hand traces",
+      "66": "prefers priestly family over summer house; proposes Jericho property without locating estate",
+      "66_notes264_266": "reports distinct later Lefkovits2010 hesitations",
+      "67": "prefers bars over pitchers"
+    },
+    "new_project_inferences": [
+      "Do not propagate entry29 back-reference into every text model",
+      "Family-name geographic anchor disappears under summer-house reading",
+      "No Tell el-Qos identification demonstrated in this page scope"
+    ]
+  },
+  "entry31": {
+    "published_positions": {
+      "62": "eastern corner of drying room; seven cubits",
+      "67": "Doq associated with fortress NWofJericho; AinDuq invoked for surviving name; drying room interpretation",
+      "67_note270": "rejects guard-room-to-siege-wall circular argument"
+    },
+    "baseline_comparison": [
+      "Eastern-corner option already recorded: no new compass contradiction",
+      "Puech2015fortressposition differs from baseline gloss of Puech2006springarea; retain author/edition distinction"
+    ],
+    "new_project_inferences": [
+      "Published drying room does not establish exposed platform geometry",
+      "Summit name association does not identify the required room/corner/datum"
+    ]
+  },
+  "entry32": {
+    "published_positions": {
+      "62": "above outlet mouth; three-cubit digging; direction toward parapet/mountain",
+      "67": "prefers Koziba/WadiQelt over sewer and Buz, with stated uncertainty of zayin",
+      "67_note273": "regional proximity to previous names enters interpretation",
+      "68": "toward landmark, not as-far-as endpoint; supporting wall/parapet/wallcourses/mountain alternatives;80ratherthan60"
+    },
+    "new_project_inferences": [
+      "Keep mountain and built-wall models distinct",
+      "Directional phrase supplies no outlet-to-landmark horizontal distance",
+      "Unquantified above relation needs separate reference surface",
+      "Regional grouping argument cannot count as independent corroboration"
+    ]
+  },
+  "page101": {
+    "scope": "later tomb-entry commentary and Jericho priestly winter-residence/necropolis context",
+    "direct_haqqoz_property_proof": false,
+    "recommended_reference_split": "p66 direct property proposal; p101 contextual social/topographic comparison"
+  },
+  "contradictions_or_corrections": [
+    "Atlas entry32single-retaining-wall description excludes Puech2015published mountain/parapet branch",
+    "Recorded Puech2006spring-position gloss cannot substitute for explicit Puech2015fortressassociation",
+    "Generic p101citation should not represent direct Ha-Qos property identification"
+  ],
+  "feature_identity_confirmed": false,
+  "confidence_change": null,
+  "construction_phase_resolved": false,
+  "kpi_recommendation": {
+    "count_original_edition_inspection_once_after_ledger_reconciliation": true,
+    "count_pages_separately": false,
+    "candidate_tests_decisive": 0,
+    "question_closures": 0,
+    "primary_source_targets": "one combined Puech2015 scope shared across entry25 and entries30–32 lanes; root integrates",
+    "new_bounded_checks": 0
+  },
+  "access_limits": {
+    "aqueduct_chapter": "absent current workspace; no fresh inspection claim",
+    "inherited_aqueduct_scope": "Amitp223Fig1photo,p224Fig2plan only",
+    "original_lefkovits2000_2010": "not inspected; positions reported by Puech attributed accordingly"
+  },
+  "integration_accounting": {
+    "combined_puech_target": true,
+    "scope_counted_once_across_both_lanes": true,
+    "primary_targets_added_for_combined_scope": 1,
+    "bounded_checks_added": 0,
+    "decisive_tests_added": 0,
+    "closures_added": 0
+  }
+}

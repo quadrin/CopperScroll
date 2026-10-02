@@ -18,7 +18,7 @@ Puech argues for the consonants of *hmšṭḥ*, rejecting the guardhouse readin
 
 The Dok entry on [Ben-Yehuda’s book page](https://benyehuda.org/collections/20451) leads back into the collection page; the retrieved material did not supply this chapter. A table-of-contents entry is not full-text access. Water-system remains may help establish site layout and phases, but a cistern or aqueduct alone does not satisfy any of the three building tests.
 
-**Candidate effect:** retain the broad Dok association and unresolved exact feature. The summit’s eastern extremity is not automatically the eastern corner of the required installation. Obtain Amit Fig. 1 with its phase discussion, and compare only after the reading review. Update the earlier specialist packet citation from Lefkovits p. 232 alone to pp. 232–235, especially 234–235.
+**Candidate effect:** retain the broad Dok association and unresolved exact feature. The summit’s eastern extremity is not automatically the eastern corner of the required installation. Obtain Amit Fig. 2 with its phase discussion, and compare only after the reading review. Update the earlier specialist packet citation from Lefkovits p. 232 alone to pp. 232–235, especially 234–235.
 
 ## Entry 17, IV 6–8: Achor
 
@@ -39,7 +39,7 @@ The discriminating extraction from the original publication is: the neighbouring
 Follow-up completed: [V/49 alias, catalogue anchors and midpoint precision check](entry17_cave_pair_review.md). A complete archaeological gazetteer supplies the Cave 42 alias and a nearby Cave 38 record, but the neighbouring dwelling cave and original entrance plans remain unresolved.
 
 1. Eisenberg’s V/49 plan and discussion, especially p. 120; Aronshtam’s Region V location plan and inventory, especially the records discussed on pp. 98 and 101. Identify the neighbour before proposing a midpoint.
-2. Amit 1989, pp. 223–228, Fig. 1 and phase discussion. Determine which summit structures are actually documented before selecting an eastern corner.
+2. Amit 1989, pp. 223–228, Fig. 2 and phase discussion. Determine which summit structures are actually documented before selecting an eastern corner.
 3. Independent VII 11 letter review and IV 6 noun review. Keep edition-specific readings attached to every feature test.
 
 These targets supplement the pending gazetteer sheets. Existing atlas coordinates, candidate rankings and geographic polygons are unchanged.
@@ -48,3 +48,7 @@ These targets supplement the pending gazetteer sheets. Existing atlas coordinate
 ## Later anchor/phase audit — 2 October 2026 UTC
 
 The [Doq cycle-3 note](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle3/doq_anchor.md) checks the ancient literary setting separately from entry order. It supports a named fortress around Jericho but leaves the precise modern anchor, required guard-post/drying feature and contemporary surface unresolved. Amit Fig. 1/full chapter remain unread; their exact Kotar route is retained. Atlas entry 31 no longer presents the required installation as dated through 70 CE. Rankings and geometry are unchanged.
+
+## Subsequent source correction — 2 October 2026, Los Angeles
+
+The supplied original Amit pages establish **Fig. 1 as a photograph (p. 223)** and **Fig. 2 as the water-system plan (p. 224 / PDF p. 237)**. The earlier figure-access description is historical. Pp. 223–224 were inspected, while pp. 225–228 remain uninspected and the larger source reload exceeds the current transfer limit. The inspected plan does not identify or date a drying room/guard post. Puech 2015 p. 67 directly places Doq at the fortress and cites Ain Duk as name survival. [Full scope and limits](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle4/README.md).

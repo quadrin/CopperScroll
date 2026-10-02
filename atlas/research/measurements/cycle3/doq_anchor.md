@@ -23,3 +23,7 @@ David Amit, “מפעל המים של מבצר דוק (דגון),” in *אמו�
 Retain the broad Doq association, alternative Ain Duk anchor, grades and coordinates. The exact feature, ancient surface, construction/use phase and digging point remain unresolved. Correct the atlas period field to distinguish the Hasmonean fortress context from the undated required installation. Entry 32 likewise requires its particular outlet/wall relation and date; a regional aqueduct comparison does not establish either. Entry 30's site-specific estate/cave chronology is also unestablished.
 
 Accounting: zero new counted primary targets, bounded checks, decisive tests or closures. Reinspection of these literary references adds no independent archaeological observation. This note audits existing assertions; the separate Tell el-Qos association test has its own result and accounting.
+
+## Subsequent source correction — 2 October 2026, Los Angeles
+
+The supplied original Amit pages establish **Fig. 1 as a photograph (p. 223)** and **Fig. 2 as the water-system plan (p. 224 / PDF p. 237)**. The earlier figure-access description is historical. Pp. 223–224 were inspected, while pp. 225–228 remain uninspected and the larger source reload exceeds the current transfer limit. The inspected plan does not identify or date a drying room/guard post. Puech 2015 p. 67 directly places Doq at the fortress and cites Ain Duk as name survival. [Full scope and limits](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle4/README.md).

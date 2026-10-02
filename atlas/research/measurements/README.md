@@ -32,7 +32,7 @@ Each lane can continue while another awaits records. Geometry workers preserve i
 
 A single integrator updates the queue, source/candidate notes, main tracker and atlas mirrors after reviewing outputs. Source-native plan coordinates remain separate from geographic coordinates. Preserve failed and inconclusive results. Retrieve originals through the source links in the packets when the supplied copies are unavailable.
 
-Record setup progress separately: six tracks configured, four with recorded pilot/audit outputs, two with protocols and source requirements. After cycle 3, research totals are 19 primary targets / 5 cartographic intakes / 21 bounded checks / 0 decisive candidate tests / 0 closures. Reinspection, arithmetic and repeated computation add no primary observations. Any later counted test needs its explicit hypothesis, inspected evidence and result.
+Record setup progress separately: six tracks configured, four with recorded pilot/audit outputs, two with protocols and source requirements. After cycle 4, research totals are 21 primary targets / 5 cartographic intakes / 21 bounded checks / 0 decisive candidate tests / 0 closures. Reinspection, arithmetic and repeated computation add no primary observations. Any later counted test needs its explicit hypothesis, inspected evidence and result.
 
 ## Cycle 2 completed
 
@@ -42,3 +42,7 @@ Record setup progress separately: six tracks configured, four with recorded pilo
 ## Cycle 3 completed
 
 [Field-record and independent-anchor checks](cycle3/README.md) identify IV/17 permit L-656 and Bar-Adon’s general fonds 717. IV/17’s survey coins still leave architectural contacts unresolved; Tell el-Qos remains weak/low after the independent name/phase audit. Added one scoped primary target and two inconclusive bounded checks. No fresh survey measurement, precise deposit point or question closure. The queue names the exact next records and retains the parked map searches.
+
+## Cycle 4 completed
+
+[Original-edition and Doq-plan intake](cycle4/README.md) verifies Puech’s reading/commentary to scope and corrects Amit’s plan locator to Fig. 2 on p. 224. Two scoped targets enter the ledger; no additional bounded check or measured geographic point. Full Amit chapter reload remains limited; Puech is readable. Wall/mountain and jar/deposit alternatives remain separate.

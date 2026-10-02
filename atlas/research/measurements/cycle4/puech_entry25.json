@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "review_date_utc": "2026-10-02",
+  "question": "R02",
+  "entry": 25,
+  "column_lines": "VI 1–6",
+  "source": {
+    "author": "Émile Puech",
+    "title": "The Copper Scroll Revisited",
+    "year": 2015,
+    "series": "STDJ 112",
+    "publisher": "Brill",
+    "local_file": "attachments/fb5ad6e5-7195-48fb-94f4-d9e84fdfbb2d/The Copper Scroll Revisited (Studies on the Texts of the -- Émile Puech -- Studies on the texts of the desert of Judah, Volume 112, -- Brill.pdf",
+    "sha256": "864a843aa9aa8d8bb3c8470f8df0be35cc1abc319c0d4de6e99a1ceedfac99d4",
+    "publisher_record": "https://brill.com/display/title/14988?language=en",
+    "visually_inspected_printed_pages": [
+      25,
+      59,
+      60,
+      61,
+      62,
+      130,
+      131
+    ],
+    "pdf_mapping": {
+      "25": 36,
+      "59": 70,
+      "60": 71,
+      "61": 72,
+      "62": 73,
+      "130": 141,
+      "131": 142
+    },
+    "entry25_primary_scope": [
+      59,
+      60
+    ],
+    "supporting_scope": [
+      25,
+      130,
+      131
+    ],
+    "drawing_is_manuscript_photo": false,
+    "original_metal_inspected": false
+  },
+  "variants": [
+    {
+      "feature": "line_initial_lacunae",
+      "class": "edition_restoration",
+      "pages": [
+        59,
+        131
+      ],
+      "letters_by_line": {
+        "VI1": "ב",
+        "VI2": "ה",
+        "VI3": "ב",
+        "VI4": "א"
+      }
+    },
+    {
+      "feature": "direction_article",
+      "class": "edition_correction",
+      "pages": [
+        25,
+        59,
+        60,
+        131
+      ],
+      "edited_token": "[[ה]]צופא",
+      "puech_reports_omitted_article": true,
+      "copyist_erasure_established": false,
+      "double_brackets_mean": "editorial correction of an original slip",
+      "braces_mean": "copyist letter correction or cancellation"
+    },
+    {
+      "feature": "eastward_attachment",
+      "class": "project_interpretation",
+      "pages": [
+        59,
+        60,
+        131
+      ],
+      "opening_expression": "פתחין",
+      "direction_expression": "צופא",
+      "puech_explicit_number_agreement_argument": false,
+      "puech_explicit_both_mouths_east_requirement": false,
+      "retained_models": [
+        "cave_level_eastward_aspect",
+        "stricter_both_mouths_east"
+      ],
+      "true_bearings": null
+    },
+    {
+      "feature": "pillar_term",
+      "class": "published_lexical_alternative",
+      "pages": [
+        60
+      ],
+      "puech_preference": "pillar",
+      "allegro_alternative_as_reported_by_puech": "platform/terrace",
+      "alternative_author_original_inspected": false,
+      "geometry_implication": "terrace association allows a cave without a separating rock pillar"
+    },
+    {
+      "feature": "treasure_position",
+      "class": "published_antecedent_interpretation",
+      "pages": [
+        60
+      ],
+      "alternatives": [
+        "below_urn",
+        "below_book_inside_urn"
+      ],
+      "puech_preference": "below_urn",
+      "archaeological_arrangement_observed": false
+    },
+    {
+      "feature": "monetary_quantity_unit",
+      "class": "edition_interpretation",
+      "pages": [
+        59,
+        131
+      ],
+      "quantity": 42,
+      "puech_unit": "silver karsh",
+      "preserve_project_unit_alternatives": true,
+      "specific_coin_assemblage_established": false
+    }
+  ],
+  "scholarly_inferences": [
+    {
+      "pages": [
+        60
+      ],
+      "notes": [
+        233,
+        234
+      ],
+      "claim": "Qumran/Sokokah route and limestone-cliff cave association",
+      "feature_coordinates": null,
+      "threshold_date": null,
+      "publication_cave_numbering_must_stay_separate_from_abu_saraj": true
+    }
+  ],
+  "candidate_implications": {
+    "Twin Cave": "East-facing pair remains an independent Bar-Adon published fact; Puech establishes no identity/phase/datum.",
+    "IV/17": "Feature comparison remains; bearings/phase/datum unresolved; pillar/terrace alternatives remain distinct.",
+    "IV/11": "No exterior pair established; internal pillar comparison remains limited."
+  },
+  "test": {
+    "id": "puech2015-entry25-direction-mark-and-antecedent-support",
+    "question": "Does original entry25 discussion establish both east-facing mouths, an erased direction article, and a unique silver-to-urn/book arrangement?",
+    "result": "Editorially supplied article and two antecedent interpretations verified; both-mouth directional attachment and deposit model remain unresolved.",
+    "geometry_changed": false,
+    "confidence_changed": false,
+    "deposit_point_assigned": false
+  },
+  "kpi_recommendation": {
+    "new_scoped_primary_targets": 1,
+    "scope": "Combined Puech2015 target shared with parallel entries30–32 audit; entry25 pp59–60, p25 sigla, p130 drawing support",
+    "additive_with_parallel_puech_worker": false,
+    "independent_publications": 0,
+    "independent_archaeological_observations": 0,
+    "bounded_checks": 0,
+    "decisive_candidate_tests": 0,
+    "question_closures": 0,
+    "p131_repeat_count": 0,
+    "reason": "Edition verification/model qualification; cumulative counts belong in combined cycle README."
+  },
+  "integration_accounting": {
+    "combined_puech_target": true,
+    "scope_counted_once_across_both_lanes": true,
+    "primary_targets_added_for_combined_scope": 1,
+    "bounded_checks_added": 0,
+    "decisive_tests_added": 0,
+    "closures_added": 0
+  }
+}

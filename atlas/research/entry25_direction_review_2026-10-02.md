@@ -42,3 +42,7 @@ These retrieval outcomes do not contradict the earlier record that the editions 
 Prioritize a measured Twin Cave survey/section and field records that tie recorded depths to the northern threshold. Keep IV/17's plan-bearing and threshold/phase checks separate. Three cubits still spans 1.20–1.80 m at the exploratory 0.40–0.60 m/cubit range; the starting surface and downward interpretation remain assumptions.
 
 This pass reinspects Milik and reformulates already recorded direction/coverage checks. It adds no counted primary target, bounded check, decisive candidate test or R closure. Totals remain 18 direct targets / 5 cartographic intakes / 17 bounded checks / 0 decisive tests / 0 closures. R02 stays P1 / In progress; 7 questions In progress, 5 Queued.
+
+## Supplied Puech original now checked — 2 October 2026, Los Angeles
+
+Puech 2015 pp. 59–60 and p. 25 sigla are now directly inspected, with published VI drawing/text pp. 130–131. The direction article is an editorial correction, not an observed erasure. The commentary supplies no explicit two-east-facing-mouth requirement. Preserve cave-level and stricter mouth models, pillar/terrace alternatives and the below-jar/inside-jar deposit alternatives. Original Lefkovits apparatus remains separately pending. [Source audit](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle4/puech_entry25.md).
