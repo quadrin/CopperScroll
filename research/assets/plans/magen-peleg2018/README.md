@@ -30,3 +30,18 @@ Other preserved plan, section and hydraulic figure pages:
 - [fig100-p87, printed p. 87 / PDF p. 110](fig100-p87.png)
 
 The PDF ends at printed p. 459 followed by a blank page. No separate folded pocket map was located in this intake. Preserve the pocket-map access gap; do not equate the report figures with Peleg’s reported 2009 aqueduct map. Archival recovery changes no research KPI counts or candidate confidence.
+
+
+## Additional pool and grave figures from Site Description — 2 October 2026
+
+Reattached 91-page chapter MAGEN-SITEDESCRIPTION-2018(1).pdf, SHA256 16311aa83e9914b91c1cc086ab13d42002f3fc3c89bc2fe155237af683e4e128. Chapter PDF page 2 is printed p. 11; printed page = PDF page + 9 thereafter. Its JSTOR cover explicitly states CC BY-NC 4.0; retain attribution to Yitzhak Magen and Yuval Peleg, Back to Qumran: Final Report (1993–2004), Site Description (2018), https://www.jstor.org/stable/j.ctv1t8cdq.6 .
+
+[Printed pp. 88–100, water installations and cemetery](water-cemetery-pp88-100.pdf) preserve Figs. 101–115 with their discussion and captions. These include the authors’ functional interpretations; archive captions without treating those interpretations as established independently.
+
+- [Fig. 102, p. 89: L67 plan and cross-sections](fig102-p89.png).
+- [Fig. 104, p. 91: L68/L69/L70 plan and cross-sections](fig104-p91.png).
+- [Fig. 107, p. 93: L71 plan and cross-sections](fig107-p93.png).
+- [Fig. 112, p. 96: graves T1–T5 plans and sections](fig112-p96.png).
+- [Fig. 114, p. 98: T7 plan and sections](fig114-p98.png).
+
+Full-page renderings at 1.5×; PDF extract retains source page contents. Previously archived Figs. 9–100 are not re-counted. Grave illustrations are future comparison material and do not identify a Copper Scroll tomb. The separate folded pocket sheet and reported Peleg 2009 aqueduct map remain unrecovered. No new measurements, phase assessment or research KPI increment. [Additional manifest](additional-intake-2026-10-02.json).
