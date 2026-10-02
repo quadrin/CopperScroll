@@ -14,7 +14,7 @@ const models = {
   "25": {
     title: "Cave with two entrances", lines: "VI 1–6", cubits: 3,
     text: "[In] the cave of the pillar with the two [en]trances, facing east, [at] the northern entrance, dig three [cu]bits: there is a jar, in it one scroll; under it 42 talents.",
-    assumptions: "The cave outline, 12 × 8 m envelope, entrance spacing and downward measurement from an entrance surface are illustrative assumptions. “Cave of the pillar” establishes no pillar position; none is drawn. No site coordinates are used here.",
+    assumptions: "The cave outline, 12 × 8 m envelope, entrance spacing and downward measurement from an entrance surface are illustrative assumptions. Both mouths face east in this model; Milik’s translation describes the cave as facing east without assigning each mouth a bearing. “Cave of the pillar” establishes no pillar position; none is drawn. No site coordinates are used here.",
     reading: "Restored letters remain in brackets. The deposit marker represents the entry’s claim; no jar, scroll or silver has been observed at the modeled point.",
   },
 };
@@ -90,7 +90,7 @@ export default function SceneView({ entry, onEntry, onText }: Props) {
               <path d={`M${x+pw} ${y+ph*.12} Q${x+pw*.5} ${y-18} ${x} ${y+ph*.35} Q${x-20} ${y+ph} ${x+pw*.6} ${y+ph} Q${x+pw} ${y+ph} ${x+pw} ${y+ph*.87}`} className="scene-cave scene-assumed" />
               {[.25,.75].map(f => <g key={f}><line x1={x+pw-12} y1={y+ph*f-12} x2={x+pw+9} y2={y+ph*f-12} className="scene-stated" /><line x1={x+pw-12} y1={y+ph*f+12} x2={x+pw+9} y2={y+ph*f+12} className="scene-stated" /></g>)}
               <circle cx={x+pw} cy={y+ph*.25} r="6" className="scene-deposit" />
-              <text x={w/2} y={y-19} textAnchor="middle">Northern entrance selected</text><text x={w/2} y={y+ph/2} textAnchor="middle">Cave</text><text x={w/2} y="301" textAnchor="middle">Both entrances face east →</text>
+              <text x={w/2} y={y-19} textAnchor="middle">Northern entrance selected</text><text x={w/2} y={y+ph/2} textAnchor="middle">Cave</text><text x={w/2} y="301" textAnchor="middle">East-facing mouths · model choice →</text>
             </> : <>
               <rect x={x-10} y={y-10} width={pw+20} height={ph+20} fill={`url(#${pattern})`} className="scene-wall" />
               <rect x={x} y={y} width={pw} height={ph} className="scene-pool scene-assumed" />
