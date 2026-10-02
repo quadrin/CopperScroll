@@ -104,3 +104,24 @@ Source capture: screencapture-jstor-org-stable-23456199-2026-10-02-11_36_41.pdf,
 B1 is an exterior photograph without a scale or threshold section. Recovery closes the missing-image gap; the ancient date of the entrance geometry and northern-threshold three-cubit datum remain unresolved. Research KPI counts remain unchanged.
 
 The capture also identifies chapter ג as Qasr el-Yahud (PDF 27) and chapter ה as Ein el-Ghuweir (PDF 41). Earlier statements that these chapter headings were unavailable describe the prior intake; exact page locators for individual earlier crops remain unverified.
+
+
+## Additional original image crops — 2 October 2026
+
+All 13 supplied PNGs open successfully despite the attachment display errors. Original bytes are preserved. Caption inspection identifies the first two as Twin Cave B1 (exterior, view from southeast) and B2 (pottery and glass), followed by chapter ג photographs, building sections, water-installation photographs, plan and finds. These remain separate from Twin Cave. Exact printed-page locators for these crops are not asserted. Source filenames, dimensions and hashes appear in [the batch manifest](additional-crops-2026-10-02.json).
+
+- [Twin Cave B1 exterior photograph](capture-191104.png) — image(20261002-191104).png.
+- [Twin Cave B2 pottery and glass](capture-191121.png) — image(20261002-191121).png.
+- [Chapter ג site photograph](capture-191135.png) — image(20261002-191135).png.
+- [Chapter ג building sections](capture-191203.png) — image(20261002-191203).png.
+- [Chapter ג water-installation photographs](capture-191213.png) — image(20261002-191213).png.
+- [Chapter ג building plan](capture-191303.png) — image(20261002-191303).png.
+- [Chapter ג masonry photographs](capture-191322.png) — image(20261002-191322).png.
+- [Chapter ג stone fragments](capture-191336.png) — image(20261002-191336).png.
+- [Chapter ג building and landscape photograph](capture-191356.png) — image(20261002-191356).png.
+- [Chapter ג door photographs](capture-191410.png) — image(20261002-191410).png.
+- [Chapter ג doorway photograph](capture-191425.png) — image(20261002-191425).png.
+- [Chapter ג room photograph](capture-191448.png) — image(20261002-191448).png.
+- [Chapter ג metal finds](capture-191508.png) — image(20261002-191508).png.
+
+No architectural date, northern-threshold measurement or research question is resolved by this archival intake. Research KPI counts remain unchanged.
