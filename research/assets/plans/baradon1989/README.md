@@ -158,3 +158,19 @@ Seven supplied images open successfully; original PNG bytes are preserved. Chapt
 - [ו1 and ו3: building courtyard and southern-wall photographs with adjoining building description](capture-192207.png) — image(20261002-192207).png.
 
 The ה7 dam drawing is retained as a distinct figure. Its publication alongside the building does not independently establish the construction date or phase relationships of each hydraulic feature. Chapter ו site identity remains unverified from these crops. Repeated figure views are additional archival coverage; research KPI counts and candidate confidence remain unchanged. [Source filenames, dimensions and checksums](building-dam-intake-2026-10-02.json).
+
+
+## Ein el-Turaba identified; building plan and finds — 2 October 2026
+
+Eight supplied PNGs open successfully. The catalogue heading in capture-192311.png explicitly identifies Fig. ו5 as Ein el-Turaba / עין אל־תורבה pottery, captioned as Israelite-period material. This establishes the chapter ו site identity previously left unverified. Earlier missing-heading statements describe the prior intake. The caption alone does not independently date each architectural feature.
+
+- [ו2: building plan and sections, north arrow, 5 m scale and spot elevations](capture-192237.png) — image(20261002-192237).png.
+- [ו4: Room 4 adjoining the western wall](capture-192258.png) — image(20261002-192258).png.
+- [ו5: pottery catalogue heading and initial entries; explicit Ein el-Turaba site name](capture-192311.png) — image(20261002-192311).png.
+- [ו5: pottery plate with further catalogue entries](capture-192335.png) — image(20261002-192335).png.
+- [ו5: another supplied view of the pottery plate](capture-192348.png) — image(20261002-192348).png.
+- [ו6: pottery plate; another view of v6-pottery.png](capture-192404.png) — image(20261002-192404).png.
+- [ו6: accompanying catalogue, with period and cave-context groupings retained](capture-192432.png) — image(20261002-192432).png.
+- [ז1: site-distribution map; another view of z1-site-distribution.png, north arrow and 500 m scale](capture-192447.png) — image(20261002-192447).png.
+
+Original bytes, source filenames, dimensions and checksums are recorded in [the manifest](turaba-intake-2026-10-02.json). Printed-page locators remain unverified. Repeated views remain distinct archival files and do not count as independent assemblages. This intake resolves a source-identity gap; research KPI counts, candidate confidence and architectural-phase questions remain unchanged.
