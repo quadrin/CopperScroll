@@ -306,7 +306,44 @@
         "dam_masonry_observed": false,
         "destruction_mechanism": "Flood removal proposed"
       },
-      "caution": "Prepared-map statement and participant opinions do not verify a surviving map, phase sequence or identity with Reeder's wall"
+      "caution": "Prepared-map statement and participant opinions do not verify a surviving map, phase sequence or identity with Reeder's wall",
+      "retrieval_followup": {
+        "review_date": "2026-10-01",
+        "note": "research/sources/peleg_aqueduct_map_search_2026-10-01.md",
+        "result": "Public English/Hebrew search found no map image, map-specific identifier or confirmed custodian.",
+        "verified_routes": [
+          {
+            "url": "https://www.gov.il/en/departments/Units/archeology_unit",
+            "role": "Scientific archive listed by excavation report's publishing unit",
+            "custody_confirmed": false
+          },
+          {
+            "url": "https://history.charlotte.edu/people/dr-shimon-gibson",
+            "role": "Institutional route for reporting participant and visit organizer",
+            "possession_confirmed": false
+          }
+        ],
+        "pocket_plan": {
+          "catalogue_number": "990044096250205171",
+          "url": "https://www.nli.org.il/en/books/NNL_ALEPH990044096250205171/NLI",
+          "sheet_dimensions_cm": [
+            88,
+            57
+          ],
+          "verification": "Exact official catalogue search result; direct record 403; earlier project catalogue reproduction also records pocket sheet",
+          "sheet_inspected": false,
+          "identity_with_2009_aqueduct_map_verified": false,
+          "upper_gorge_coverage": null
+        },
+        "messages_sent": false,
+        "kpi_increment": {
+          "primary_targets": 0,
+          "map_intakes": 0,
+          "bounded_checks": 0,
+          "decisive_tests": 0,
+          "question_closures": 0
+        }
+      }
     }
   ],
   "conditional_crosswalk": {
@@ -369,5 +406,19 @@
     "numeric_confidence_changed": false,
     "deposit_location_confirmed": false,
     "decisive_candidate_test_completed": false
-  }
+  },
+  "access_supplements": [
+    {
+      "file": "screencapture-jstor-org-stable-27930608-2026-10-01-19_26_20-4.png",
+      "sha256": "59abdb757c6c12d105605353c201296dfe29a2a6ba3893003e0b032199706106",
+      "bytes": 208278,
+      "width_pixels": 236,
+      "height_pixels": 2048,
+      "locally_readable": true,
+      "contents": "Vertical photographic-page montage",
+      "caption_verification_completed": false,
+      "individual_opening_match_completed": false,
+      "new_source_target_counted": false
+    }
+  ]
 }

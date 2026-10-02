@@ -454,3 +454,10 @@ Taylor–Gibson 2011 manuscript p. 22 / note 85: public extracted text inspected
 - Taylor–Gibson, *Qumran in the Iron Age* (2020), 177–224: supplied repository offprint, 60 PDF pages including front matter, inspected at printed pp. 196–201, 213, 215–216/note 58 and Figs. 15–16. The 2009 visit overlaps the 2011 manuscript account; a prepared-map statement adds a record lead rather than a second campaign.
 
 [File checksums, precise capture/PDF mapping, source observations and tests](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_supplied_originals_review_2026-10-01.md). Earlier JSTOR and repository-403 attempts remain historical, superseded to this inspection scope. Three new source targets / three bounded checks added; totals 11 / 5 map intakes / 12 bounded checks / 0 decisive tests / 0 closures. Raw source PDFs are not part of this research update.
+
+
+## Peleg aqueduct map retrieval search — later 1 October 2026
+
+R01 / Q38, Q41–Q42: no digital map, drawing/file identifier or confirmed custodian recovered. Verified the Staff Officer's scientific-archive route and Gibson's current institution. An exact indexed NLI record, 990044096250205171, describes the separate 88 × 57 cm pocket sheet with JSP 18; this improves the old lead without inspecting the map or proving identity with Peleg's 2009 aqueduct drawing. The prepared-map statement remains the direct evidence. Preserve the 2009 reported no-dam opinion and 2018 surmised-dam account as different published positions, without inferring an undocumented revision.
+
+The new Schulz photographic montage opens at 236 × 2048 pixels; captions and individual-opening identification remain unresolved. Recorded public preface/plan access failures and an exact archive-enquiry specification; no message sent. Counts remain 11 direct primary targets / 5 map intakes / 12 bounded checks / 0 decisive tests / 0 question closures; 7 In progress / 5 Queued. [Search, verified routes, unread links and next retrieval test](https://github.com/quadrin/CopperScroll/blob/main/research/sources/peleg_aqueduct_map_search_2026-10-01.md).
