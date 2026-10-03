@@ -30,3 +30,43 @@ One directly inspected final-report target and one bounded source check added; n
 ## Joined-basin follow-up — 3 October 2026 UTC
 
 The specific Herodian A(B)101 eastern-outlet branch has now been checked against original report pp. 87/100/131–133. Supply remains unknown and no outlet-wall tie is established. Approximately32×18m merged dimensions change the long-side reference; both 24/27-cubit counterfactuals fit an assumed 18 m width, without any observed channel point measured. This revises the existing assessment, leaving it inconclusive and low-confidence. [Assessment and numeric inputs](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle14/jericho_merged.md). [New source-page archive](../../assets/plans/netzer2001-cycle14/README.md). Specific folded Plans14/15/23 remain unlocated in the supplied PDF; the main text is available. Earlier access statements in this historical record are superseded to these stated inspection scopes.
+
+
+## Contact reinspection and source recovery — 3 October 2026 UTC
+
+This exploratory pass follows the merged `4677550` rules. No observation was reserved for confirmation. The identification remains **not identifiable from available evidence**; no offset, deposit position or confidence change follows.
+
+### Original image scope
+
+Reopened the existing [27-page original subset](../../assets/plans/netzer2001-cycle14/README.md), SHA-256 `1511269110cfdb331a73235fd8b00b468db99143c1a2338141be8fa1be672e5d`, matching its manifest. Layout screening covered all 27 pages. Individual original renders covered printed pp. 73, 74, 78, 82–87, 94, 100 and 131–133; other pages received layout screening only. Printed page +32 gives the original 408-page viewer number. Subset pages 1–17 = printed 73–89; 18–23 = 93–98; 24 =100; 25–27 =131–133. OCR served navigation. Additional image/caption exposure is logged here; this is the same excavation lineage and previously counted source scope.
+
+| Original page/figure | Relation actually documented | Limit for A(B)101's eastern outlet |
+| --- | --- | --- |
+| p. 73, Ill. 104 | Longitudinal pool section viewed from east | The viewing direction does not make this an outlet section. No labeled A(B)171 contact. |
+| p. 74 | Eastern walls less fully preserved; selected floor exposure and debris left above parts of the floor | Incomplete preservation/exposure prevents an absence finding. |
+| p. 78 | Old Na’aran route between early pools reconstructed from surviving sections | Distinct from the later Herodian drain; an early interpretive single-pool model is not an observed wall aperture. |
+| pp. 83–84, Ill. 117 | A(B)99 detailed plan/sections; two channels from its eastern wall supply the separate pools | Western supply installation, not an established collector downstream of A(B)171. |
+| p. 86, Ills. 122–123 | Ill. 122 sections through A(B)223/207 expose earlier W338; Ill. 123 photographs its foundation; sections located by Plan 14 | Section levels belong to earlier Plaza remains, not an identified drain invert. |
+| p. 87, Ills. 124–125 | W331/W332 garden corner; plaster break at W331's abutment to old conduit A(B)220 | Neither image is the basin-wall/drain junction. Text attributes destruction of a tentative W331/W338 corner to the Herodian outlet. |
+| p. 87, northern-fringe paragraph | Narrow north–south channel, interpreted as an outlet from the northern member of the original pool pair toward the Hasmonean Garden | Separate exploratory outlet notice. Wall tie, invert and precise phase unresolved. |
+| p. 94, Ills. 131–132 | Platform section and explicitly schematic reconstruction, routed to Plan 15; A(B)215 septic tank at southern Western Garden | Earlier western bath-drainage installation, not a demonstrated eastern collector. |
+| p. 131, A(B)171 paragraph | Reported Herodian drain segment from joined pool toward eastern fields; room floor about +97.80 | No measured pool-wall tie, channel profile or collector. The 1 m height refers to flowerpots, not the drain invert. |
+| pp. 132–133, Ills. 182–185 | Storeroom/industrial contexts and Grand Bypass–Na’aran junction A(B)239 | Different hydraulic paths; proximity to A(B)171 establishes no connection to its drain. |
+
+Netzer's outlet attribution and reported segment survive this review. The inspected scope still lacks an identified east-wall aperture, surveyed continuity to A(B)171, drain invert/profile and contemporaneous connected collector. These missing records establish neither physical absence nor a rejected association. A(B)99 and the 2.5 ×2.4 m, 2.4 m-deep A(B)215 have separate functions/phases. Do not borrow their levels or connections for the preferred branch.
+
+### Exact access routes
+
+The [IES Volume I record](https://www.israelexplorationsociety.com/product-page/volume-i-stratigraphy-and-architecture-2001) identifies ISBN `965-221-044-7` and 51 plans but supplies no downloadable target sheet. The [HathiTrust catalogue](https://catalog.hathitrust.org/Record/004182472) describes **ten folded plans in a pocket**. Its [MARC record](https://catalog.hathitrust.org/Record/004182472.marc) identifies OCLC `47652648`, Michigan catalogue `990041824720106381`, and digitized Volume I `mdp.39015051295320`. Access is limited/search-only; the [reader](https://babel.hathitrust.org/cgi/pt?id=mdp.39015051295320) did not open in this session. The record does not enumerate the ten sheets or establish their digital capture. Google Books references the same Michigan original, not demonstrated independent corroboration. Plans 14/15/23 remain unrecovered.
+
+A newly retrieved Rachel Bar-Nathan/Orit Peleg-Barkat chapter, פאר מלכים: ארמונות החורף ביריחו והשושלת החשמונאית (title translated: “Royal Splendor: the Winter Palaces at Jericho and the Hasmonean Dynasty”), *מחקרי ארץ יהודה* III (2019), pp. 73–92, was obtained through the [publisher's page](https://k-etzion.co.il/פאר-מלכים-ארמונות-החורף-ביריחו-והשושל/) and its [publicly linked PDF](https://drive.google.com/file/d/1FoNsdwAQ3Culfr0XAagwuGG9629sQxr5/view). The old direct publisher PDF redirected to a 404. Downloaded file: 23 pages, SHA-256 `fbbb95f0fc5b71e0e5332a8110178f85451846250039421406b5036bcda4d53d`. Original images inspected: printed pp. 76–78 / PDF pp. 7–9, Figs. 3–6. Contextual plans/reconstructions show the Buried Palace/western pools, Pools Complex and Twin Palaces. Fig. 3 credits the Jericho expedition/Ehud Netzer archive; this gives provenance, not a verified present custodian or accession. No target-wall section/contact recovered. Public access establishes no redistribution permission; retain source links only.
+
+Other routes checked: the [HU Netzer page](https://archaeology.huji.ac.il/people/ehud-netzer) supplied no sheet inventory. The [BIU jericho.pdf](https://lisa.biu.ac.il/files/lisa/shared/jericho.pdf) is a visually verified Volume V inscriptions/front-matter extract, not Volume I. The [Herodium bibliography](https://herodium.org/wp-content/uploads/2014/nezer/BIBILIOGRAPHY-EN.pdf), visual p. 3, routes to Netzer's 1985 swimming-pools article (*Eretz Israel* 18, pp. 344–352) and its English version (1986, *Mitteilungen* 89, pp. 1–12); neither article was recovered here. Versions share observation lineage.
+
+The [KIT catalogue](https://katalog.bibliothek.kit.edu/bib/89277) identifies Garbrecht/Netzer's 1991 Jericho water-supply report, *Mitteilungen* 115. Only its [German National Library contents](https://d-nb.info/920316468/04), PDF p. 3, were visually checked: §17 channels to Herod's palaces starts p. 115, northern supply §17.4 p. 118, estate extent §19.6 p. 130. This is a citation route, not inspection of those report pages.
+
+### Next dependency and accounting
+
+Obtain the **separate pocket sheets for ISBN 965-221-044-7**, naming Plans 14, 15 and 23 individually. Verify captions, complete scales/north labels and actual A(B)101/A(B)171 coverage. If no observed contact is recorded there, an exact field drawing/section accession is needed; no custodian or accession was verified and no request was sent. A recovered plan may locate remains without establishing an aperture. Log future inspections as exploratory unless an observation-level exposure audit supports a frozen unseen test.
+
+The original-image recheck, metadata routes and bibliography/contents inspection add no primary archaeological target or independent observation. The new 2019 chapter adds one scoped source target and one bounded target-contact coverage check. It adds no qualifying identification, exclusion, negative excavation or question closure. All exposed new content is exploratory.

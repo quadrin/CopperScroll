@@ -29,7 +29,7 @@ An **unexcavated-alternative inventory** starts from entry constraints and a dec
 
 ## Activity retained separately
 
-43 scoped primary-source targets; 5 cartographic-reference intakes; 48 bounded checks; 3 conditional assessment packets; 0 completed decisive candidate tests; 0 question closures. Administrative question states remain12 tracked:9 In progress /3 Queued. This counter redesign changes no source count, confidence grade, coordinate or question state.
+47 scoped primary-source targets; 5 cartographic-reference intakes; 52 bounded checks; 3 conditional assessment packets; 0 completed decisive candidate tests; 0 question closures. Administrative question states remain12 tracked:9 In progress /3 Queued. The counter redesign added no activity. The subsequent [Jericho source search](assessments/entry29_jericho_pools/README.md#fresh-contact-and-catalogue-search--3-october-2026-utc) adds four scoped source targets/four bounded coverage checks: SWP reservoir pages, JOAP2015, ROSAPAT7 and the2019 contextual chapter. This changes no outcome count, confidence grade, coordinate or question state.
 
 Multiple scopes in one publication and several publications from the same excavation are not independent observations. A later citation, reprint or inherited plan supplies no new corroboration by itself. An independent-observation/campaign total awaits a provenance audit.
 
