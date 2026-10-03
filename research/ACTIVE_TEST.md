@@ -1,6 +1,6 @@
 # Active test: R11 Greek personal initials
 
-Updated 3 October 2026 UTC. Three parallel threads completed Ilan source audit, form validation and independent probability verification. **Stage: common-noun comparison input frozen; publish before scoring.** The person-period name pilot is complete; historical initials meaning remains not identifiable from available evidence. Jericho remains parked.
+Updated 3 October 2026 UTC. Three parallel threads completed Ilan source audit, form validation and independent probability verification. **Stage: name and matched-size common-noun comparisons complete. Historical initials meaning remains not identifiable from available evidence.** Jericho remains parked.
 
 ## Result and scope
 
@@ -12,8 +12,10 @@ This is an exploratory **reported-Greek-form/person-period pilot**, conditional 
 
 ## Next action
 
-Publish the [common-noun input freeze](../deep_analysis/word_control/README.md), then score exact107-form samples against the fixed107-name pilot. Source is pinned PROIEL/Syntacticus NT XML; all1,894 Nb lemmas were reviewed for named-entity leakage.3,791 accepted normalized forms;18 source common/proper mixed-use forms remain primary and are removed only in a fixed3,773-form sensitivity. Semantic unknowns remain withheld. Both populations receive the same reading union/literalprimary/all12 opportunities. Verify the exact correlated-slot distribution independently by integer generating functions. No real word-prefix queries have run. Original name data remain unchanged; Jericho remains parked.
+The [common-noun comparison](phases/phase4_summary.md#matched-size-common-noun-comparison--3-october-2026) was frozen atda3985a258a3cef9f5f6272b670fba4acf7acdfe before scoring. Names match2/7; equally sized107-form common-noun subsets average3.096179 union hits, and95.661673% equal or exceed2. Removing18 mixedNe forms gives95.742954%. Both populations retain literalprimary/all12 sensitivities, verified by independent source re-extraction, direct CSV computation and integer generating functions. No name prefix-count advantage under this finite benchmark; it does not establish ordinary-word meaning. [Results](../deep_analysis/word_control/results.json), [scope/protocol](../deep_analysis/word_control/README.md) and [verification](../deep_analysis/word_control/verification.json) preserve all branches and misses. No frozen inputs changed.
+
+Next, audit the existing physical reports for H5/H6: Lika Tov's reported surface-level difference(Copper Scroll Studies p289) and Puech's deeper cancelledΙ. Distinguish printed descriptions/drawings from metal-surface measurements, identify original photographs/3D data, and fix later-addition versus same-engraving criteria before inspecting any reserved new surfaces. This is a separate observation dependency; another exposed name list cannot supply an unused test.
 
 ## Parked work and accounting
 
-Entry29/Jericho retains its terminal not-identifiable result and [original evidence](assessments/entry29_jericho_pools/README.md); Plan14/15/23 acquisition stays parked. DraftPR6 holds archive work; draftPR7 holds R11; neither is merged. One scoped Ilan inspection and one bounded pilot comparison bring activity to55 source scopes/5 cartographic intakes/62 checks. This does not claim a full-book read or add decisive tests, question closures, field campaigns, confidence, coordinates or identification outcomes. R11 stays In progress; states10 In progress/2 Queued.
+Entry29/Jericho retains its terminal not-identifiable result and [original evidence](assessments/entry29_jericho_pools/README.md); Plan14/15/23 acquisition stays parked. DraftPR6 holds archive work; draftPR7 holds R11; neither is merged. The Ilan and PROIEL scoped inspections plus their two bounded comparisons bring activity to56 source scopes/5 cartographic intakes/63 checks. This does not claim a full-book read or add decisive tests, question closures, field campaigns, confidence, coordinates or identification outcomes. R11 stays In progress; states10 In progress/2 Queued.

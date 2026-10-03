@@ -32,3 +32,10 @@ No target-prefix scoring had run at this input freeze. The independent integer g
 ## Attribution and data licence
 
 PROIEL/Syntacticus, University of Oslo; Dag T. T. Haug and Marius L. Jøhndal(2008), *Creating a Parallel Treebank of the Old Indo-European Bible Translations*, LaTeCH2008, pp27–34. Source contributors/metadata are preserved in `extraction_audit.json`. Underlying electronic Greek text is public domain according to its XML metadata; source annotation and derived form/lemma/token data are licensed [CC BY-NC-SA4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: Nb selection, semantic exclusions, Unicode normalization, deduplication, mixed-use flags and reduced exemplars. The licence applies to this derived source data; original project code and analysis retain repository terms. No source endorsement is implied.
+
+
+## Completed frozen benchmark
+
+Input commitda3985a258a3cef9f5f6272b670fba4acf7acdfe preceded scoring. Names2/7; primary noun107-form samples average3.096179 union hits,95.661673% match at least2. Literal-primary mean3.076231/tail95.436500%; unmixed sensitivity union3.103238/95.742954%, literal3.083296/95.520621%. [Results](results.json) retain both populations, all12 branches, distributions and all compatible source forms. Names show no advantage under this benchmark; historical initials meaning remains not identifiable. This does not estimate a probability that the groups mean ordinary words.
+
+[Verification](verification.json) records28 independent integer-distribution checks and direct CSV recomputation. [Independent source audit](matching_source_verification.json) confirms every210 matching form and1,720 selected Nb occurrences; no matching person/place/ethnic-name leakage was found in the lemma inventory. Token senses are not all manually checked. Rerun source verification with `python deep_analysis/word_control/verify_source_matches.py SOURCE.xml`. Frozen inputs remain unchanged. [Existing evidence record](../../research/phases/phase4_summary.md#matched-size-common-noun-comparison--3-october-2026) holds interpretation, activity accounting and the separate physical-observation next lead.
