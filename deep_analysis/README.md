@@ -85,3 +85,10 @@ Only the file paths changed. The bundle expected the scripts in `cs_work/deep/`,
 ## Frozen coarse grouping sensitivity — 2 October 2026 UTC
 
 The [cycle 2 pass](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle2/sequence_grouping.md) retains 61 canonical slots and unknown anchors, then measures 64 confidence/anchor/division cases. It uses current atlas grades, including low for entry46 where the legacy table said medium. Coarse same-region adjacency spans 3–31; excluding low assignments leaves longest runs of three. Entries 30–32 persist only under current coarse Jericho membership. The heterogeneous 'region' category remains unclassified, and split subspans remain unassigned unless independently anchored. This is a descriptive sensitivity result; earlier fine-district/HMM findings have a different scope. Independent associations, fine-region footprints and moved-phrase/subspan mappings remain pending. No location probability, uninterrupted route or exact unplaced location follows.
+
+
+## R11 personal-prefix runner (3 October 2026)
+
+`initials_control.py` is a separate standard-library analysis, not a reproduction of historical Phase4T4 or the gap test above. [Protocol](greek_personal_initials_protocol.json) and [source/exposure audit](../research/phases/phase4_summary.md#r11-personal-initials-audit--3-october-2026) document the fixed readings, populations, letter controls and current acquisition blocker. No eligible historical corpus is bundled or scored.
+
+Run mechanics tests with `python -m unittest discover -s deep_analysis -p test_initials_control.py -v` from the repository root. All strings used for scoring tests are synthetic. After acquiring and committing a complete eligible CSV/input freeze, run `python deep_analysis/initials_control.py --freeze PATH.json`; the supplied blocked protocol refuses scoring. The exact artificial-reference tails measure prefix coverage under a specified letter null; they cannot identify a person or establish personal-initial meaning.

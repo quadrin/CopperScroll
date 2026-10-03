@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "status": "blocked_missing_eligible_corpus",
+  "claim": "Exact prefix compatibility with independently attested Greek-script personal-name forms in a fixed finite corpus; no attribution of meaning, person or engraving hand.",
+  "source_eligibility": "Tal Ilan, Lexicon of Jewish Names in Late Antiquity, Part I: Palestine 330 BCE–200 CE (2002). Jewish bearers only, not all regional inhabitants. Include securely personal, independently attested original Greek-script forms from all name-origin sections. Exclude doubtful/nonpersonal entries, titles, places, ethnics, restorations, hypothetical Greek back-transliterations, and any attestation directly or indirectly dependent on 3Q15. A name supported by an independent attestation remains eligible through that attestation only.",
+  "date_geography_rule": "Primary: attestation date interval wholly contained in 100 BCE–70 CE and independently localized in Judaea, Galilee or Peraea. Dates use signed historical years (-100 to 70; no year zero). Unknown or overlapping-only date intervals and uncertain localizations are excluded and logged, not treated as absence. Source region crosswalk must be documented from metadata before matching; no polygon or inferred local birth from name alone. Separate sensitivity: full Ilan Part I Palestine 330 BCE–200 CE corpus under the same certainty/source exclusions. These windows are operational exploratory populations, not a dating of the scroll.",
+  "lemma_alias_rule": "Unique attested Greek forms, not occurrence-weighted or bearer-weighted. Preserve source name_id and every independently attested spelling/inflected form; normalize identically, deduplicate equal forms. Do not create hypothetical aliases. Report unique form count, name IDs, exclusions and per-group IDs separately.",
+  "iota_subscript": "reject",
+  "normalization": "Unicode NFD before uppercasing; remove combining accent/breathing marks; sigma/final/lunate sigma to Σ. Only one token composed of the 24 modern Greek uppercase letters accepted; punctuation, spaces, restorations and other alphabets rejected. Iota subscript rejected and logged; no automatic transliteration or editorial reconstruction. Lunate epsilon in the scroll reading is edition-based Ε, not an unrestricted input character replacement.",
+  "primary_readings": [
+    "ΚΕΝ",
+    "ΧΑΓ",
+    "ΗΝ",
+    "ΘΕ",
+    "ΔΙ",
+    "ΤΡ",
+    "ΣΚ"
+  ],
+  "reading_menu": [
+    [
+      "ΚΕΝ"
+    ],
+    [
+      "ΧΑΓ"
+    ],
+    [
+      "ΗΝ"
+    ],
+    [
+      "ΘΕ",
+      "ΞΕ"
+    ],
+    [
+      "ΔΙ"
+    ],
+    [
+      "ΤΡ",
+      "ΤΡΙ"
+    ],
+    [
+      "ΣΚ",
+      "ΧΚ",
+      "ΞΚ"
+    ]
+  ],
+  "reading_scope": "Edition-based. The 12 combinations are a deliberately broad sensitivity envelope, not 12 coherent published editions. Preserve the individual editions and uncertainty in the evidence record. Proposed ΚΑΓειρας does not license ΚΑΓ. Puech’s cancelled Ι in {Ι}ΣΚ is inactive. Unresolved strokes remain unresolved; no reading chosen by name fit.",
+  "control_rule": "Primary exact null: independent slot prefixes uniformly sampled conditional on each C/V pattern (CVC,CVC,VC,CV,CV,CC,CC), with seven vowels/seventeen consonants. Secondary uniform 24-letter null. Union controls preserve shared tails and number of distinct alternative first letters; nested ΤΡΙ is subsumed by ΤΡ for existence matching. Exact slot probabilities and Poisson-binomial tail; disclose all branches, primary and union, no selection of smallest tail. This artificial letter null is not a historical language-generating model or a personal-initial likelihood ratio.",
+  "exposure_limit": "All seven groups, Josephus and previously proposed persons are already exposed. No verified unused observation. Entire run exploratory; a newly downloaded corpus is not automatically a holdout.",
+  "decision_rule": "Report hits/misses for every retained reading and the complete frozen corpus. No historical significance or identification claim from letter-null tails. With adequate complete input, universal finite-corpus compatibility fails only if every reading combination has at least one miss; all-hit branches establish compatibility only. Missing input/coverage yields not identifiable from available evidence. Historical personal-initial meaning remains not identifiable without independently discriminating evidence and a registered unused prediction.",
+  "corpus_csv": null,
+  "corpus_sha256": null,
+  "mc_draws": 0,
+  "seed": 1729,
+  "acquisition_needed": "Full Ilan Part I entry corpus, plus introduction pp.32–54 (especially Dating p.50), not Greek-origin names alone. Preview ends at printed p.25; no entries recovered.",
+  "source_url": "https://www.mohrsiebeck.com/en/book/lexicon-of-jewish-names-in-late-antiquity-9783161587931/"
+}

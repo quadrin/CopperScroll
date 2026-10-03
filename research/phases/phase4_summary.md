@@ -2,6 +2,8 @@
 
 Session 2, 2026-09-28. Desk research on texts, editions and drawings only.
 
+**Audit update, 3 October 2026:** T4/T9 are historical reported calculations whose input/extractor/output were not recovered from tracked materials. Their quoted counts and chance rates are not a newly verified personal-name result. See [the R11 audit below](#r11-personal-initials-audit--3-october-2026).
+
 "BK" marks background knowledge that does not come from the files. Page numbers are printed pages. Entry numbers are Puech's (2006).
 
 ## 1. What was done
@@ -64,9 +66,9 @@ The full table, with sources and pages, is `tables/phase4_hypotheses.csv`.
 
 | Id | Hypothesis | Main proposers | Test | Result | Verdict |
 |---|---|---|---|---|---|
-| H1 | Abbreviated personal names | Pixner, Beyer, Puech, Lefkovits, Høgenhaven | T4: the base rate of name matches in Josephus | 6 of 7 groups open a proper noun, but by chance about 4.8 of 7 would. Only ΚΕΝ adds weight | **open**; the matching gives almost no evidence |
+| H1 | Abbreviated personal names | Pixner, Beyer, Puech, Lefkovits, Høgenhaven | T4: the base rate of name matches in Josephus | Historical report: 6/7 proper-noun matches and about4.8/7 expected; input and null not currently reproducible | **open**; historical weak-evidence interpretation, baseline unverified |
 | H1a | ΚΕΝ, ΧΑΓ = Kenedaios and Chageiras of Adiabene | Stegemann | The Josephus Greek text | Κενεδαῖος is at BJ 2.520. At BJ 5.474 the text reads "καὶ ἀγίρας"; Χαγείρας is a restoration | weak |
-| H1b | ΘΕ = Theboutis (BJ 6.387) | Pixner, Muchowski | T4 | 43 proper-noun forms in Josephus begin with ΘΕ | weak |
+| H1b | ΘΕ = Theboutis (BJ 6.387) | Pixner, Muchowski | T4 | Historical report:43 proper-noun forms; classified input/output not recovered | weak |
 | H2 | Greek numerals | Ullendorff, Thiering, Zissu | T3: the values against the amounts | 0 of 5 match; 1 of 7 groups is a well-formed numeral; Ullendorff needs 4+ rules | **ruled out** for the amounts |
 | H3 | Hebrew words or fund codes | Lehmann, Lefkovits, Lurie, Allegro | Coverage | Words are proposed for only 2 of 7 groups | weak |
 | H4 | Labels, as in Greek temple inventories | Weitzman | T7: order | No alphabetic or numeric order | weak |
@@ -112,7 +114,7 @@ The full table, with sources and pages, is `tables/phase4_hypotheses.csv`.
     - a ten-to-one ratio (ΤΡ = 400 for 40).
   - **ΞΕ would give 65,** the amount at II 4. The chance of one such coincidence somewhere among the five groups is about 3%. But the drawings show Θ, and a numerical coincidence must not choose a reading (rule 7).
   - **An error in Lefkovits.** His table (p. 502) counts Σ as 6, so he gets ΣΚ = 26. The standard value of Σ is 200 (BK). This does not change his conclusion.
-- **T4. Names.**
+- **T4. Names (historical reported calculation; not reproduced in the current audit).**
   - **The data.** I extracted the proper nouns of the Greek Josephus: 4,950 forms, excluding capitals that stand first in a section. Then I counted how many groups open at least one of them: 6 of 7 do, all except ΧΑΓ.
   - **The chance baselines:**
 
@@ -124,7 +126,7 @@ The full table, with sources and pages, is `tables/phase4_hypotheses.csv`.
 
   - Under the name-like baseline, about 4.8 of 7 groups would match by chance.
   - (Limitation) The list includes place names and peoples, so these rates are upper limits for personal names only.
-  - **Conclusion.** A match for a two-letter group is almost no evidence. ΚΕΝ is the one informative match.
+  - **Historical conclusion, unverified baseline.** The earlier report interpreted two-letter matches as weak and ΚΕΝ as informative. The missing input/null calculation prevents this audit from validating that ranking or transferring it to personal names only.
 - **T5. Area.**
   - This test uses the Phase 3 placements of entries 1–15.
   - Marked: 3 of the 5 Jericho-area entries and 4 of the 11 Jerusalem-area entries (Fisher p = 0.60).
@@ -151,9 +153,9 @@ The full table, with sources and pages, is `tables/phase4_hypotheses.csv`.
 - **Evidence (high confidence).**
   - There are seven groups, and the readings agree except at II 4 (in one scholar's reading), III 7 and IV 2.
   - All seven stand at the end of an entry, in columns I–IV, and stop at IV 2.
-- **Inference, high confidence.** The letters follow a rule tied to the entries: they close entries. They are not tied to the sheet, the area or the kind of treasure.
+- **Bounded inference (audit qualification).** The recorded groups close entries and stop at IV2. Earlier random-placement and non-significant area/treasure tests do not establish historical independence from those factors. Geographic assignments are uncertain and the null mechanisms are artificial.
 - **Inference, high confidence.** They are not numerals that restate or qualify the amounts.
-- **Inference, medium–high confidence.** The personal-name reading can be neither confirmed nor refuted by matching names, because chance explains most matches. It is the "least unsatisfactory solution" (Høgenhaven p. 154), not a demonstrated one. The specific identifications (Adiabene, Theboutis) each rest on one group, and Chageiras rests on a restored reading in Josephus.
+- **Current bounded result.** Personal-initial meaning remains unresolved; the historical chance baseline has not been reproduced and no personal-only rate is available. It is the "least unsatisfactory solution" (Høgenhaven p. 154), not a demonstrated one. The specific identifications (Adiabene, Theboutis) each rest on one group, and Chageiras rests on a restored reading in Josephus.
 - **Inference, low–medium confidence.** The opening columns differ from the rest in other formulae too. This gives some support to the view that entries 1–15 were a separate sub-list or were handled differently (Bar-Ilan; Puech 2006 p. 175).
 - **Unknown.** What the letters mean, and why they stop at IV 2.
 
@@ -172,3 +174,42 @@ The full table, with sources and pages, is `tables/phase4_hypotheses.csv`.
 | `tables/phase4_greek_letters.csv` | yes | The seven groups: readings in each edition, other readings, what they follow, the gap before them, their value as numerals |
 | `tables/phase4_hypotheses.csv` | yes | 14 families of hypotheses (H1–H14, with H1a and H1b): proposers with pages, the test, the result, the verdict, and the confidence |
 | `phase4_records.csv` | **no** | All 212 records (70 readings, 48 hypotheses, 94 observations) with pages and short quotes |
+
+
+## R11 personal-initials audit — 3 October 2026
+
+Three parallel threads audited the prior calculation, acquired source metadata/preview scope, and developed a finite-corpus runner. **No eligible historical name corpus was recovered or scored.** The historical personal-initial interpretation remains **not identifiable from available evidence**. This is exploratory preparation, with no registered unused observation or identification outcome.
+
+### Prior calculation and exposure
+
+The old T4 reports 4,950 Josephus proper-noun forms and 6/7 prefix matches; T9 reports 41 anagram forms. Searches of tracked files and the current workspace recovered no original extractor, selected list, immutable Josephus snapshot, classification/deduplication rule, null generator or result output. The named `phase4_records.csv` remains absent. This does not prove those calculations never occurred. From the rounded displayed rates,5 × 0.87 + 2 × 0.22 = 4.79 explains the reported expectation arithmetically, without validating its empirical rates. A capitalization heuristic mixes people, places and peoples; repeated inflections/aliases are not independent bearers. The 0.87 two-letter CV rate also cannot automatically represent ΗΝ (VC), ΤΡ (CC) or ΣΚ (CC).
+
+`deep_analysis/greek_groups.py` is a separately reproducible change-point/gap analysis, not the T4 personal-name extractor. Its test labels/output do not recover the missing name calculation. Josephus AJ/BJ/Vita/CAp and BJ2.520/5.474/6.387 were already exposed in earlier phases. Edition tables, summaries, the display text and re-downloads are derivative evidence. A new copy is not a holdout. Phase3's uncertain early geographical placements and T5 p = .60 cannot establish geographical independence.
+
+### Reading scope and fixed design
+
+[The protocol](../../deep_analysis/greek_personal_initials_protocol.json) fixes exact prefix compatibility, eligibility, normalization, date/region filters, source exclusions, controls and reporting before any new matches. Primary groups at entries1/4/6/7/9/12a/15 are ΚΕΝ/ΧΑΓ/ΗΝ/ΘΕ/ΔΙ/ΤΡ/ΣΚ, with CVC/CVC/VC/CV/CV/CC/CC patterns. These remain edition-based readings, not newly observed manuscript letters.
+
+Retain documented sensitivities ΘΕ/ΞΕ (Lefkovits499; Muchowski1993p24 versusp36), ΤΡ/ΤΡΙ (Lefkovits498, Puech rejects the thirdΙ) and ΣΚ/ΧΚ/ΞΚ (MilikDJDIII288 uncertain first letter over another letter). Their 12 combinations are a permissive sensitivity envelope, not 12 coherent editions. Puech's `{Ι}ΣΚ` has an explicitly cancelledΙ; it is inactive. Proposed ΚΑΓειρας is a name reconstruction, not permission to replace ΧΑΓ with ΚΑΓ. Previous plate checks favor Θ atII4, leave the thirdIII7 stroke unresolved and do not independently resolveIV2. Preserve those uncertainties and all misses.
+
+The runner [`initials_control.py`](../../deep_analysis/initials_control.py) computes exact uniform-letter support probabilities conditional on each slot's C/V pattern, then an exact Poisson-binomial tail for the number of matching groups. Uniform24 is secondary. Union controls share the same tail and draw the same number of distinct alternative first letters; they receive the target's reading opportunities. Nested ΤΡΙ adds no existence opportunity beyond ΤΡ, while its individual branch remains reported. All 12 branch results are retained; the minimum branchp-value is not a result. These artificial letter nulls cannot identify a person or establish that personal initials are more likely than an unknown code. A separately frozen ordinary-word corpus would be needed for a language-sensitive comparison.
+
+The program consumes a selected CSV with source name IDs and exact attested Greek forms. Eligibility must be audited upstream; the code does not infer dates, region or personal-name status. Preserve citations, date/location confidence, source lineage and exclusions in the input. Unique attested spellings/inflections are deduplicated uniformly; no target-directed restoration or Greek back-transliteration is allowed. Unicode normalization handles accents and sigma explicitly, rejects unsupported tokens and logs exclusions. The primary protocol rejects iota subscript instead of silently changing letters. Complete corpus and selected-input hashes must be committed before scoring. No negative result is permitted from absent or partial input.
+
+### Corpus acquisition and circularity gate
+
+Chosen source: **Tal Ilan, Lexicon of Jewish Names in Late Antiquity, PartI: Palestine330BCE–200CE (Mohr Siebeck2002, TSAJ91)**. [Publisher](https://www.mohrsiebeck.com/en/book/lexicon-of-jewish-names-in-late-antiquity-9783161587931/); DOI10.1628/978-3-16-158793-1; printISBN9783161476464; ebookISBN9783161587931. This is a Jewish-bearer corpus, not all inhabitants. Primary eligibility requires securely personal Greek-script forms from every name-origin section, independent source support, an attestation-date interval wholly within100BCE–70CE and independently established Judaea/Galilee/Peraea localization. Full PartI Palestine330BCE–200CE is a separate sensitivity input. Source-region crosswalks must be resolved and committed before matching. These are operational populations, not a date for the scroll.
+
+The [authorized public preview](https://api.pageplace.de/preview/DT0400.9783161587931_A40613270/preview-9783161587931_A40613270.pdf) was retrieved:52 PDF pages,5,205,620 bytes, SHA256`9c772c3a8c025b32705c1616fda7e8e593cf7e47f48b1bb6216d28cd975a7cea`. Coverage is front matter plus printed1–25; **no entries or dating instructions**. Visually checked local viewer5(rights),10–11(contents),12(XI),27(XXVI),28(printed1),29(printed2),52(printed25). The preview's unrevised2019 imprint differs from the publisher's2020 ebook metadata; neither changes the original2002 edition identity. Printed1–2 establishes scope and distinguishes 3595 entries from 2826 retained statistical entries, not unique eligible Greek names. Name-origin organization does not justify using only the Greek-origin section.
+
+PrintedXI includes **3Q15/DJDIII200–302 as a source**. Exclude any target-derived attestation and audit indirect dependencies; a name can remain eligible only through an independent qualifying attestation. Doubtful/nonpersonal entries, restorations, unknown dates/locations and overlapping-only primary date intervals are excluded and logged. No corpus counts can be inferred from preview totals.
+
+[OxfordLGPN scope](https://lgpn.web.ox.ac.uk/) and [modern database documentation](https://search.lgpn.ox.ac.uk/about.html) were checked. The latter was recovered in official indexed text: per-personTEI/XML, linked places, OpenAPI andCCBY4.0, with V1–V5c listed and VolumeVI forthcoming. Direct database/about access timed out; no schema, bulk export, local dated coverage or raw-data hash was recovered. Older search documentation lists a smaller volume set and is not the current denominator. General Greek regional lists cannot substitute for a complete Palestinian local corpus. Metadata/access checks were not name-prefix queries.
+
+**Exact next input:** the complete IlanPartI entries plus printed32–54 (Description32, Find37, Sources39, Exceptions45, Dating50, Tables54). The preview stops before these. Its rights page provides no open redistribution grant; retain the preview link/access record rather than upload its page images. Stop repeating the checked routes. No purchase, login or outreach occurred.
+
+### Verification and result boundary
+
+Verification: **18 synthetic tests passed**; no historical prefix scoring occurred. Run `python -m unittest discover -s deep_analysis -p test_initials_control.py -v` for synthetic mechanics. Independent finite enumeration checks the union probability; tests also cover normalization, nested prefixes, deduplication, invalid/empty inputs and exact distribution arithmetic. Run historical analysis only after a complete input freeze: `python deep_analysis/initials_control.py --freeze PATH.json`. The present protocol deliberately blocks that command.
+
+With complete eligible input, an unmatched group excludes only that finite lexicon/readings claim. Historical names need not all survive in a lexicon. An all-hit branch establishes compatibility only. Missing input means unknown, not zero hits; meanings/person/hand attributions require independent discrimination and a registered unused prediction. No question closure, identification, confidence or outcome-ledger change follows. Archaeological activity counters54 source scopes /5 cartographic intakes /61 checks remain unchanged; partial onomastic preview inspection and synthetic software verification are recorded here separately.
