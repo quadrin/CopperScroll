@@ -25,3 +25,8 @@ Result: **unresolved in this inspected scope**. It identifies late Hasmonean sup
 Next: inspect original Plans 14 and 17–21 plus the Western Garden and eastern outlet discussions. Trace the reported Hasmonean branch and the tentative W57/W43 Herodian route, with reconstruction status and wall datum recorded separately. Check the illustrated book’s original phase plans and captions before replacing measurements. Foldout completeness is not yet verified.
 
 One directly inspected final-report target and one bounded source check added; no decisive test, candidate closure, new geographic position or confidence upgrade. Both books belong to the existing Netzer excavation lineage. Source page images are retained locally for inspection and are not published in the repository.
+
+
+## Joined-basin follow-up — 3 October 2026 UTC
+
+The specific Herodian A(B)101 eastern-outlet branch has now been checked against original report pp. 87/100/131–133. Supply remains unknown and no outlet-wall tie is established. Approximately32×18m merged dimensions change the long-side reference; both 24/27-cubit counterfactuals fit an assumed 18 m width, without any observed channel point measured. This revises the existing assessment, leaving it inconclusive and low-confidence. [Assessment and numeric inputs](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle14/jericho_merged.md). [New source-page archive](../../assets/plans/netzer2001-cycle14/README.md). Specific folded Plans14/15/23 remain unlocated in the supplied PDF; the main text is available. Earlier access statements in this historical record are superseded to these stated inspection scopes.

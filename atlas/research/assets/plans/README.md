@@ -58,3 +58,8 @@ On 2 October 2026, complete supplied-page archives replaced the selective covera
 ## Genuine Regev appendix recovery, 3 October 2026 UTC
 
 [Full three-page extended methods](siloam-cycle13/README.md) are archived unchanged with a matching atlas copy, checksum and provenance. No spatial figures/tables occur. Prior invalid-attachment history is retained; the appendix access gap is now resolved.
+
+
+## Cycle14 encountered Netzer pages
+
+[Original source-page extract and manifest](netzer2001-cycle14/README.md) preserve the newly encountered merged-pool, garden, conduit and eastern-area illustrations, with exact figure/page coverage. Original Plans17–22 remain separately archived. Missing folded Plans14/15/23 are recorded individually; no complete-book figure recovery is claimed. Milik’s inspected text pages contain no new geographic figures.

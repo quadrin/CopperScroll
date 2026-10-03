@@ -43,3 +43,8 @@ A complete source-linked phase plan or excavation elevation record could test wh
 ### Subsequent original-author account inspected
 
 Netzer 1983 pp. 100–101 and 104–106 now supply complete earlier-pool outlines, published approximately 18 × 13 m dimensions, and the Herodian joining narrative/plan for an approximately 32 × 18 m basin. The p. 106 footnote explicitly revises an earlier joined-pool chronology. Original inlet contacts and the 2001 final-report pages remain unread; no exact joining contact date is established by this account. [Follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/kotar-netzer1983.md).
+
+
+## Joined-basin follow-up — 3 October 2026 UTC
+
+The specific Herodian A(B)101 eastern-outlet branch has now been checked against original report pp. 87/100/131–133. Supply remains unknown and no outlet-wall tie is established. Approximately32×18m merged dimensions change the long-side reference; both 24/27-cubit counterfactuals fit an assumed 18 m width, without any observed channel point measured. This revises the existing assessment, leaving it inconclusive and low-confidence. [Assessment and numeric inputs](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle14/jericho_merged.md). [New source-page archive](../../assets/plans/netzer2001-cycle14/README.md). Specific folded Plans14/15/23 remain unlocated in the supplied PDF; the main text is available. Earlier access statements in this historical record are superseded to these stated inspection scopes.

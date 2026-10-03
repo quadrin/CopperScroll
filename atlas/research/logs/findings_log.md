@@ -1183,3 +1183,8 @@ One new scoped primary target and one bounded coverage check; cumulative 39 / 5 
 ## Appendix recovery cycle13 — 3 October 2026 UTC / 2 October Los Angeles
 
 Genuine three-page extended-methods appendix recovered, fully image-checked and archived unchanged. Collection controls and reported W114/W001 attachment documented; small-pool L105/L108/L103 joins remain unreported. One scoped primary target / one bounded collection-control check added: cumulative 40 / 5 cartographic-reference intakes / 44 bounded checks / 3 conditional assessments / 0 decisive tests / 0 closures / 0 confirmed deposits. No new field campaign, R-question state, coordinate or grade change. [Result and original](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle13/README.md).
+
+
+## Parallel wording/merged-basin cycle14 — 3 October 2026 UTC / 2 October Los Angeles
+
+Two original-source scopes and two bounded checks added: cumulative 42 primary targets / 5 cartographic-reference intakes / 46 bounded checks / 3 conditional assessments / 0 decisive tests / 0 closures / 0 confirmed deposits. Milik1960 supplies a pipe/bathing-pool branch without an explicit masonry argument; strict Puech hollowed-stone exclusion of exposed L103 remains conditional. Netzer documents a Herodian eastern outlet but leaves merged-pool supply unknown. Rounded basin dimensions allow both 24/27-cubit counterfactuals without locating a channel datum. Nine In progress / three Queued states, coordinates and grades unchanged. New encountered Netzer source pages archived and mirrored. [Results, calculations and individual missing sources](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle14/README.md).

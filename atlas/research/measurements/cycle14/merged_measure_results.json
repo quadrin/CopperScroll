@@ -1,0 +1,68 @@
+{
+  "kind": "unsurveyed_dimensional_counterfactual",
+  "axes": "Hypothetical local east-west x from a western reference line x=0 to an eastern line x=18; north-south length 32m. Lines have unspecified inner/outer/rim datum. Axes carry no geographic registration.",
+  "rows": [
+    {
+      "cubits": 24,
+      "distance_m": [
+        9.6,
+        14.4
+      ],
+      "inside_from_west_side_x_m": [
+        9.6,
+        14.4
+      ],
+      "inside_from_east_side_x_m": [
+        3.6,
+        8.4
+      ],
+      "outside_west_x_m": [
+        -14.4,
+        -9.6
+      ],
+      "outside_east_x_m": [
+        27.6,
+        32.4
+      ],
+      "fits_within_assumed_width": true,
+      "both_sides_inside_bands_overlap": false
+    },
+    {
+      "cubits": 27,
+      "distance_m": [
+        10.8,
+        16.2
+      ],
+      "inside_from_west_side_x_m": [
+        10.8,
+        16.2
+      ],
+      "inside_from_east_side_x_m": [
+        1.8,
+        7.2
+      ],
+      "outside_west_x_m": [
+        -16.2,
+        -10.8
+      ],
+      "outside_east_x_m": [
+        28.8,
+        34.2
+      ],
+      "fits_within_assumed_width": true,
+      "both_sides_inside_bands_overlap": false
+    }
+  ],
+  "archaeological_points_tested": 0,
+  "qualifying_archaeological_hits": null,
+  "not_a_coordinate": true,
+  "limitations": [
+    "Rounded publication dimensions; no measured confidence interval supplied.",
+    "Rectangular idealization ignores slight asymmetry of eastern sides and central podium.",
+    "The 18m datum is not established as inner clear width, outer width, rim width or waterline.",
+    "Assumes restored from-long-side interpretation and perpendicular horizontal displacement.",
+    "Both long sides and both signs retained; no manuscript displacement direction.",
+    "No channel point, inlet, outlet-wall contact, ancient ground or deposit represented.",
+    "Chainage and slope-distance alternatives require source anchors and cannot use these bands."
+  ]
+}

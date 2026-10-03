@@ -1,0 +1,106 @@
+{
+  "check_id": "C14-E29-HERODIAN-MERGED-BASIN",
+  "entry": 29,
+  "candidate": "Jericho Pools Complex merged A(B)101 basin",
+  "date_local": "2026-10-02",
+  "timezone": "America/Los_Angeles",
+  "outcome": "inconclusive; dimensional compatibility without a phase-controlled measurement anchor",
+  "confidence": {
+    "text_reading": "edition-dependent; damaged/restored relationships retained",
+    "site": "low",
+    "reservoir_feature": "low identification confidence; joined basin archaeologically documented",
+    "target_position": "unresolved; no point"
+  },
+  "sources": [
+    {
+      "author": "Ehud Netzer",
+      "title": "Hasmonean and Herodian Palaces at Jericho: Final Reports of the 1973–1987 Excavations, Volume I: Stratigraphy and Architecture",
+      "year": 2001,
+      "fresh_scope_printed_pages": [
+        87,
+        100,
+        131,
+        132,
+        133
+      ],
+      "reinspection_control_pages": [
+        74,
+        82,
+        84,
+        85,
+        99
+      ],
+      "pdf_offset": 32,
+      "independent_excavation": false,
+      "source_lineage": "same Netzer Jericho fieldwork",
+      "access": "user-supplied PDF; target page images and chapter text; detailed foldout sheets not located"
+    }
+  ],
+  "text_constraints": {
+    "edition": "Puech 2015 pp62–65 via existing image-checked record",
+    "jericho_restored": true,
+    "distance_cubits": [
+      24,
+      27
+    ],
+    "cubit_range_m": [
+      0.4,
+      0.6
+    ],
+    "large_side_longer_side": "conditional interpretation",
+    "from_side_relationship": "editorially restored; alternatives retained",
+    "direction": "unspecified",
+    "measurement_axes": [
+      "perpendicular horizontal",
+      "conduit chainage",
+      "slope distance unresolved"
+    ],
+    "datum": "inner/outer/rim/waterline unspecified",
+    "depth": "not supplied"
+  },
+  "architecture": {
+    "reported_dimensions_m": [
+      32,
+      18
+    ],
+    "dimension_datum": "unspecified",
+    "long_sides": "approximately north-south west/east boundaries after joining; rotated relative to earlier separate pools",
+    "exact_rectangle": "idealization; eastern side asymmetry reported",
+    "phase": "Herodian Second Palace association; no concealment/use terminus from this source",
+    "supply_inlet": "explicitly unknown, p84",
+    "outlet_segment": "observed in A(B)171 across ruined eastern storerooms, author attributes to Herodian drainage from merged pool",
+    "pool_wall_outlet_contact": "not measured/located in inspected record",
+    "garden_rim_relation": "unresolved, p85",
+    "small_channel_W57_W43": "walls observed; channel-base function and connection reconstructed"
+  },
+  "candidate_extent": "merged reservoir footprint and separately the observed outlet segment in A(B)171, qualitative loci only; no geographical registration",
+  "geometry": {
+    "input": "merged_measure_input.json",
+    "script": "merged_measure.py",
+    "results": "merged_measure_results.json",
+    "kind": "explicit dimensional counterfactual",
+    "archaeological_points_tested": 0,
+    "qualifying_archaeological_hits": null,
+    "site_coordinates": null,
+    "old_separate_pool_points_reused": false
+  },
+  "contradictions_and_limits": [
+    "Old inter-pool supply route disappeared with joining; source does not establish a Herodian replacement inlet.",
+    "Old 18x13m pool long-side offsets cannot transfer to32x18m basin.",
+    "Hydraulic drainage may not satisfy damaged inflow/collection wording.",
+    "Garden soil/sidewall datums are unjoined.",
+    "Hypothetical west/east offset strips supply no location without conduit contact and phase survey."
+  ],
+  "next_discriminator": "Original detailed Plan14 and section/field record showing merged eastwall outlet contact, centerline and elevation; retain24/27cubit and wallface/axis alternatives. Plans15/23 control western phases.",
+  "source_link": "https://www.israelexplorationsociety.com/product-page/volume-i-stratigraphy-and-architecture-2001",
+  "assets_manifest": "../../assets/plans/netzer2001-cycle14/figure_manifest.json",
+  "kpi_delta": {
+    "new_scoped_primary_targets": 1,
+    "bounded_checks": 1,
+    "new_independent_campaigns": 0,
+    "new_conditional_assessments": 0,
+    "decisive_tests": 0,
+    "question_closures": 0,
+    "confirmed_deposits": 0
+  }
+}

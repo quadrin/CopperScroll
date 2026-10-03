@@ -1,0 +1,59 @@
+{
+  "check_id": "C14-E49-TERMINAL-MATERIAL-ORIGINALS",
+  "inspection_date_local": "2026-10-02",
+  "timezone": "America/Los_Angeles",
+  "entry_project": 49,
+  "column_lines": "X 15–16",
+  "status": "bounded comparison completed; built-masonry lexical licensing inconclusive",
+  "sources": [
+    {
+      "author": "Émile Puech",
+      "title": "The Copper Scroll Revisited",
+      "year": 2015,
+      "printed_pages": [86, 91, 92, 93],
+      "pdf_pages_one_based": [97, 102, 103, 104],
+      "access": "actual supplied page images reinspected",
+      "new_scoped_target": false,
+      "terminal_reading": "hšqt",
+      "translation_form": "gutter",
+      "material_definition_in_commentary": "hollowed stone",
+      "explicit_material_word_in_edited_entry": false,
+      "grammar_controls": ["Siloam/conjunction word division", "supplied genitive particle", "outlet/source opening", "under-feature relation"]
+    },
+    {
+      "author": "J. T. Milik",
+      "title": "The Copper Document from Cave III of Qumran: Translation and Commentary",
+      "publication": "Annual of the Department of Antiquities of Jordan 4–5 (1960), 137–155",
+      "printed_pages": [137, 142, 152],
+      "pdf_pages_one_based": [1, 6, 16],
+      "entry_in_source": 51,
+      "access": "original scan inspected",
+      "official_record": "https://publication.doa.gov.jo/Publications/ViewChapterPublic/644",
+      "original_url": "https://publication.doa.gov.jo/uploads/publications/38/ADAJ_1960_4_5-137-155.pdf",
+      "working_file": "tmp/cycle14/milik1960.pdf",
+      "new_scoped_target": true,
+      "terminal_translation": "pipe",
+      "construction_material_specified_on_target_pages": false,
+      "terminal_word_argument_on_target_pages": false,
+      "context_requirement": "bathing pool with Siloah adjective"
+    }
+  ],
+  "candidate_branches": [
+    {"model": "strict Puech hollowed-stone construction", "L103_result": "conditionally excluded", "reason": "documented masonry does not establish a single hollowed stone"},
+    {"model": "Milik 1960 pipe/bathing-pool translation", "L103_result": "conditional conduit comparison", "reason": "no material specified; bathing function and particular feature identity unresolved"},
+    {"model": "broad gutter construction", "L103_result": "analyst conditional model", "reason": "no inspected original argument explicitly licenses built masonry"},
+    {"model": "Lefkovits personal-name/sanitary and roads alternatives", "L103_result": "not newly tested", "reason": "original target pages absent"}
+  ],
+  "unchanged_gates": ["grammatical location", "bathing function", "channel phase", "structural underside datum", "independent manuscript strokes"],
+  "geographic_coordinates_added": 0,
+  "metric_offsets_added": 0,
+  "new_cartographic_assets": 0,
+  "source_targets_delta": 1,
+  "bounded_checks_delta": 1,
+  "conditional_candidate_assessments_delta": 0,
+  "decisive_tests_delta": 0,
+  "closures_delta": 0,
+  "confirmed_deposits_delta": 0,
+  "site_confidence_change": false,
+  "next_discriminators": ["Milik DJD III text-volume p. 295", "Lefkovits 2000 pp. 352–357", "native verso/radiograph terminal-letter comparison"]
+}
