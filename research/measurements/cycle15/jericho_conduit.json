@@ -1,0 +1,158 @@
+{
+  "check_id": "C15-E29-HYDRAULIC-DIRECTION",
+  "project_entry": 29,
+  "column": "VII",
+  "lines": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "date_local": "2026-10-02",
+  "timezone": "America/Los_Angeles",
+  "outcome": "Drainage not excluded by defended partial associative wording; positive hydraulic identification remains unresolved.",
+  "source_alignment": {
+    "Puech2015_entry": 29,
+    "Milik1960_entry": 31,
+    "Milik1960_entry27_is": "Cave of the Column; columnVI1–6"
+  },
+  "sources": [
+    {
+      "author": "Émile Puech",
+      "title": "The Copper Scroll Revisited",
+      "year": 2015,
+      "printed_pages": [
+        62,
+        63,
+        64,
+        65
+      ],
+      "supplied_pdf_pages": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "inspection": "actual page images",
+      "new_scoped_target": false,
+      "sha256": "864a843aa9aa8d8bb3c8470f8df0be35cc1abc319c0d4de6e99a1ceedfac99d4",
+      "source_url": "https://brill.com/display/title/14988?language=en",
+      "ebook_isbn": "9789047424314"
+    },
+    {
+      "author": "J. T. Milik",
+      "title": "The Copper Document from Cave III of Qumran: Translation and Commentary",
+      "journal": "Annual of the Department of Antiquities of Jordan",
+      "volume": "4–5",
+      "year": 1960,
+      "article_pages": "137–155",
+      "printed_target_pages": [
+        140,
+        148,
+        149
+      ],
+      "pdf_target_pages": [
+        4,
+        12,
+        13
+      ],
+      "inspection": "actual page images; translation p. 140 and column-VII commentary pp. 148–149",
+      "new_scoped_target": true,
+      "sha256": "c7a606f4aaa6b6230a9abdfcf65afe5b03b88bb5b12d6d13d84a2041f3932427",
+      "source_url": "https://publication.doa.gov.jo/uploads/publications/38/ADAJ_1960_4_5-137-155.pdf",
+      "record_url": "https://publication.doa.gov.jo/Publications/ViewChapterPublic/644",
+      "target_commentary": "No separate discussion of VII 3–7; columnVII commentary starts at 8–9."
+    }
+  ],
+  "reading_status": {
+    "defended_partial_sequence": "bʾmʾ šl q[",
+    "status": "Puech2015 defended reading from reported traces, not new manuscript inspection",
+    "qy_following_letter": "continuation inadequately drawn in edition; conjectural reconstruction",
+    "puech_collection_sequence": "qyb[wṣ hmym š]l",
+    "collection_sequence_status": "proposed restoration with explicitly conjectural continuation; not wholly preserved",
+    "Milik_Qe": "damaged possible name in Englishtranslation; no target Hebrew transcription/apparatus supplied by this article",
+    "grammar": "locative b- plus associative/possessive šl does not encode direction ofwater flow",
+    "water_motion_verb": "none established in defendedpartial wording"
+  },
+  "branches": [
+    {
+      "id": "partial_association",
+      "direction_constraint": "none established",
+      "outlet_consequence": "permitted by this narrowtest; identity/topology unresolved",
+      "positive_match": false
+    },
+    {
+      "id": "puech_collection_restoration",
+      "direction_constraint": "collection-installation relationship, no explicitly fixed flow direction",
+      "outlet_consequence": "requires connected collection arrangement; none identified for A(B)171",
+      "positive_match": false,
+      "drain_into_collector_interpretation": "project analytical possibility, not claimed asPuech interpretation"
+    },
+    {
+      "id": "milik_damaged_Qe_name",
+      "direction_constraint": "none explicit inoriginal translation",
+      "outlet_consequence": "name and reservoirrelation unresolved",
+      "positive_match": false
+    },
+    {
+      "id": "imposed_supply_only",
+      "direction_constraint": "into principal reservoir",
+      "outlet_consequence": "would fail imposed functional condition",
+      "source_support": "not established by inspected partial wording/translations",
+      "positive_match": false
+    }
+  ],
+  "archaeological_control": {
+    "feature": "observed Herodian drainage channel segment in A(B)171 across ruin-filled eastern storerooms",
+    "direction": "toward eastern fields, from merged A(B)101 according to Netzer",
+    "supply_inlet": "unknown",
+    "eastwallcontact": "unlocated in inspected record",
+    "collector_tank": "not identified",
+    "source_pages": [
+      84,
+      87,
+      100,
+      131,
+      132,
+      133
+    ],
+    "record": "../cycle14/jericho_merged.md",
+    "new_source": false
+  },
+  "unchanged_constraints": {
+    "northern": "reservoirqualification, not displacement",
+    "Jericho": "restored",
+    "cubits": [
+      24,
+      27
+    ],
+    "cubit_range_m": [
+      0.4,
+      0.6
+    ],
+    "side_preposition_face_axis": "unresolved; no recalculation"
+  },
+  "geometry": {
+    "archaeological_points_tested": 0,
+    "qualifying_archaeological_hits": null,
+    "new_coordinates": null,
+    "new_depths": null
+  },
+  "next_test": "Detailed Plan 14/field section surveyed east-wall outlet contact and connected collecting installation; original target apparatus to resolve q-word.",
+  "access_limits": [
+    "Original copper and fragments uninspected.",
+    "Original DJD III target apparatus and Lefkovits apparatus unread; claims about them remain explicitly secondary throughPuech.",
+    "Detailed Netzer Plan 14 not identified in supplied book scan."
+  ],
+  "new_spatial_figures": [],
+  "kpi_delta": {
+    "new_scoped_primary_targets": 1,
+    "bounded_checks": 1,
+    "new_independent_campaigns": 0,
+    "new_conditional_assessments": 0,
+    "decisive_candidate_exclusions": 0,
+    "question_closures": 0,
+    "confirmed_deposits": 0
+  }
+}

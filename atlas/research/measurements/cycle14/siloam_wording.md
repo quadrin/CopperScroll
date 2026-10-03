@@ -40,3 +40,8 @@ Next read Milik's full terminal-word apparatus on DJD III p. 295 and Lefkovits p
 - The supplied upload and alternate attachment copies of the handoff ZIP lack readable central directories in this runtime. Sequential inspection recovered its local-entry names through the truncated final payload; no Lefkovits or Milik text-volume PDF appeared among them. This is a bounded inventory of recoverable entries, not proof that a complete handoff never held those sources.
 
 The newly inspected original pages contain text rather than maps, site plans, geography photographs or ruins layouts. No new cartographic asset requires archival. The official Milik PDF remains a working source with a direct retrieval link; no modern edition page has been published as a new geographic figure. Reuse the existing L103 plan/photograph archive linked in cycle 11.
+
+
+## Bathing-function follow-up — 3 October 2026 UTC
+
+The original excavation reports identify the small receiving pool as storage/overflow collection. Plaster and six access steps supply no bath-specific use identification. Milik’s original p. 142 puts the under-pipe location in a bathing pool. The small receiver is a conditional pool identification; using the main pool instead requires its own bathing-function and under-pipe spatial correspondence. The small basin’s unresolved bathing function does not exclude all L103 models. Strict Puech’s hollowed-stone condition and the existing phase controls are unchanged. [Bounded function check](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/siloam_bathing.md).

@@ -82,3 +82,8 @@ The supplied 2001 final report now provides an image-checked channel distinction
 ## Joined-basin follow-up — 3 October 2026 UTC
 
 The specific Herodian A(B)101 eastern-outlet branch has now been checked against original report pp. 87/100/131–133. Supply remains unknown and no outlet-wall tie is established. Approximately32×18m merged dimensions change the long-side reference; both 24/27-cubit counterfactuals fit an assumed 18 m width, without any observed channel point measured. This revises the existing assessment, leaving it inconclusive and low-confidence. [Assessment and numeric inputs](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle14/jericho_merged.md). [New source-page archive](../../assets/plans/netzer2001-cycle14/README.md). Specific folded Plans14/15/23 remain unlocated in the supplied PDF; the main text is available. Earlier access statements in this historical record are superseded to these stated inspection scopes.
+
+
+## Hydraulic-direction follow-up — 3 October 2026 UTC
+
+The defended original wording does not establish inflow direction. Puech’s proposed collection-installation continuation is conjectural; Milik1960 sourceentry31 preserves a damaged Qe-form and reservoir relation. A(B)171’s observed drainage survives the narrow direction test without a positive textual identification. The fuller collecting-installation branch needs that associated structure, and the outlet still lacks a pool-wall contact/datum. All earlier numeric bands remain counterfactual; no coordinate or confidence change follows. [Original-edition comparison](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/jericho_conduit.md).

@@ -46,3 +46,8 @@ Confidence remains separately low for site association, individual target and po
 ## Spatial archive
 
 [Original page subset](../../assets/plans/netzer2001-cycle14/netzer2001-joined-pool-and-outlet-pp73-89-93-98-100-131-133.pdf) retains 27 original scanned pages and their figure captions: pp. 73–89, 93–98, 100 and 131–133. [Manifest](../../assets/plans/netzer2001-cycle14/figure_manifest.json) records source hashes, page mapping, figure numbers and credits. Original page objects remain unchanged; this is a selected-page extract of the supplied book, not a new survey or a rasterized diagram. Repeated phase plans supply page context and add no fresh target. Plan 22 on p. 99 remains in the earlier archive. Archive retention does not claim every contextual figure has been measured.
+
+
+## Hydraulic-direction follow-up — 3 October 2026 UTC
+
+The defended original wording does not establish inflow direction. Puech’s proposed collection-installation continuation is conjectural; Milik1960 sourceentry31 preserves a damaged Qe-form and reservoir relation. A(B)171’s observed drainage survives the narrow direction test without a positive textual identification. The fuller collecting-installation branch needs that associated structure, and the outlet still lacks a pool-wall contact/datum. All earlier numeric bands remain counterfactual; no coordinate or confidence change follows. [Original-edition comparison](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/jericho_conduit.md).

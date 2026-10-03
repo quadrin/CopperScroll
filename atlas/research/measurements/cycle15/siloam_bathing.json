@@ -1,0 +1,131 @@
+{
+  "check_id": "C15-E49-SMALLPOOL-BATHING-FUNCTION",
+  "inspection_date_local": "2026-10-02",
+  "timezone": "America/Los_Angeles",
+  "entry": 49,
+  "candidate": "L103 with attached small pool L102/L104, published correspondence L124/W50/Guthe III",
+  "outcome": "bathing function inconclusive to inspected publication scope",
+  "sources": [
+    {
+      "source": "Greenhut–Mazor 2020",
+      "printed_pages": [
+        "74*",
+        "75*",
+        "76*",
+        "77*",
+        "82*",
+        "83*",
+        "137"
+      ],
+      "pdf_pages_one_based": [
+        5,
+        6,
+        7,
+        8,
+        13,
+        14,
+        18
+      ],
+      "inspection": "actual original page images",
+      "fresh_target": false
+    },
+    {
+      "source": "Weksler-Bdolah–Szanton 2014, Jerusalem, Silwan",
+      "target": "phases 3d–3c; Fig.3",
+      "inspection": "original report text and original Fig.3 image",
+      "fresh_target": false
+    },
+    {
+      "source": "Szanton–Vukosavović–Berko 2024",
+      "printed_pages": [
+        "34*",
+        "35*",
+        "36*"
+      ],
+      "pdf_pages_one_based": [
+        17,
+        18,
+        19
+      ],
+      "inspection": "p34* original image; pp35*–36* text controls",
+      "fresh_target": false
+    },
+    {
+      "source": "Regev et al.2025 main and Supporting Information",
+      "target": "dam installation/sampling main sections; appendix pp1–3",
+      "inspection": "main text controls and all appendix page images",
+      "fresh_target": false
+    }
+  ],
+  "measurement_controls": [
+    {
+      "feature": "2009 small pool exposure L102/L104",
+      "length_m": 8.4,
+      "width_m": 3,
+      "reported_height_m": 3.1,
+      "scope": "partial northwestern exposure; not complete footprint or operating depth",
+      "source": "2020 p75*/Plan1"
+    },
+    {
+      "feature": "2013 L124 exposure",
+      "length_m": 3,
+      "width_m": 2.5,
+      "reported_depth_m_approx": 2.5,
+      "steps": 6,
+      "tread_m_approx": 0.4,
+      "rise_m_approx": 0.4,
+      "scope": "partial southern exposure; independently recorded dimensions",
+      "source": "2014 phases3d–3c/Fig3"
+    },
+    {
+      "feature": "L103",
+      "preserved_length_m": 2.2,
+      "width_m": 0.65,
+      "reported_depth_m": 2.3,
+      "bottom_above_pool_floor_m": 0.75,
+      "source": "2020 p76*/Fig5/Plan1"
+    }
+  ],
+  "observations_supporting_accessible_water_basin": [
+    "six steps",
+    "plastered floor and walls",
+    "L103 connection and relative bottom heights"
+  ],
+  "author_function_assignments": [
+    {
+      "source": "2020 p83*",
+      "assignment": "small pool water storage; L103 overflow"
+    },
+    {
+      "source": "2024 p34*",
+      "assignment": "southeastern small pool excess-water collection"
+    }
+  ],
+  "bathing_evidence": {
+    "direct_positive_identification": false,
+    "operating_water_level_reported_on_target_pages": false,
+    "bath_specific_occupation_assemblage_reported_on_target_pages": false,
+    "scope_limitation": "publication-level result, not proof of absence on site",
+    "storage_excludes_bathing": false
+  },
+  "context_separations": [
+    "large monumental pool steps/seating are separate",
+    "L119 tower reservoir seven steps are separate",
+    "L133 channel is separate",
+    "stone-vessel finds in sealing fill do not establish occupation-floor use"
+  ],
+  "phase_result": "existing initial-floor and later-L103 conditional lower bound unchanged; dam mortar samples do not date or identify small-pool human use",
+  "new_source_targets_delta": 0,
+  "bounded_checks_delta": 1,
+  "conditional_candidate_assessments_delta": 0,
+  "decisive_tests_delta": 0,
+  "closures_delta": 0,
+  "confirmed_deposits_delta": 0,
+  "cartographic_assets_delta": 0,
+  "coordinates_added": 0,
+  "site_confidence_change": false,
+  "next_discriminator": "phase-controlled small-pool occupation/use evidence or explicit bathing identification tied to L102/L104 or L124/W50",
+  "model_scope": "tests small receiving basin as Milik bathing pool; alternative main-basin identification requires separate function and under-pipe spatial controls",
+  "milik_syntax_control": "original1960p142 locates under-pipe relation in pool of Siloah baths; no passage-to-baths wording",
+  "excludes_all_L103_models": false
+}
