@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "review_date_local": "2026-10-02",
+  "timezone": "America/Los_Angeles",
+  "integration_date_utc": "2026-10-03",
+  "baseline_commit": "4e99140a99e968f93255fa473d5df9c9e606fddf",
+  "scope": "Outcome audit of the three formal conditional-assessment packets, recent L103 model exclusions, two comparator checks and four target-coverage records; retrospective atlas-wide audit remains incomplete. Counts describe registered records, not every historical claim.",
+  "definitions_record": "research/PROGRESS_METRICS.md",
+  "outcome_counts": {
+    "formal_assessments_audited": 3,
+    "formal_assessments_inconclusive": 3,
+    "independently_discriminated_identifications": 0,
+    "whole_candidate_exclusions": 0,
+    "confirmed_deposit_locations": 0,
+    "documented_conditional_model_exclusions": 2,
+    "documented_nonunique_comparator_results": 2,
+    "target_coverage_records_audited": 4,
+    "verified_fully_excavated_predicted_targets": 0,
+    "verified_negative_excavations_at_predicted_targets": 0,
+    "target_coverage_unestablished": 4,
+    "landscape_wide_coincidence_frequency": null,
+    "excavated_vs_unexcavated_candidate_counts": null,
+    "unexcavated_alternatives_inventory_count": null,
+    "regional_search_coverage_fraction": null,
+    "independent_observation_or_campaign_count": null
+  },
+  "activity_counts": {
+    "scoped_primary_source_targets": 43,
+    "cartographic_reference_intakes": 5,
+    "bounded_checks": 48,
+    "conditional_assessment_packets": 3,
+    "completed_decisive_candidate_tests": 0,
+    "question_closures": 0
+  },
+  "question_states": {
+    "tracked": 12,
+    "in_progress": 9,
+    "queued": 3,
+    "blocked": 0,
+    "resolved": 0,
+    "ruled_out": 0
+  },
+  "candidate_assessments": [
+    {
+      "id": "A-E29-JERICHO",
+      "entry": 29,
+      "candidate": "Jericho northern early pool / joined-basin follow-up",
+      "status": "inconclusive",
+      "independent_discrimination": false,
+      "whole_candidate_excluded": false,
+      "deposit_confirmed": false,
+      "record": "research/assessments/entry29_jericho_pools/README.md",
+      "limits": [
+        "site name restored",
+        "channel/wall datum and phase unresolved",
+        "conditional geometric overlap is nonunique"
+      ]
+    },
+    {
+      "id": "A-E25-IV17",
+      "entry": 25,
+      "candidate": "Abu Saraj IV/17 northern aperture",
+      "status": "inconclusive",
+      "independent_discrimination": false,
+      "whole_candidate_excluded": false,
+      "deposit_confirmed": false,
+      "record": "research/assessments/entry25_iv17/README.md",
+      "limits": [
+        "alternative two-opening/pillar caves",
+        "ancient threshold and architectural phase unresolved",
+        "individual bearings are plan proxies"
+      ]
+    },
+    {
+      "id": "A-E29-HYRCANIA",
+      "entry": 29,
+      "candidate": "Hyrcania northern member of double pool",
+      "status": "inconclusive",
+      "independent_discrimination": false,
+      "whole_candidate_excluded": false,
+      "deposit_confirmed": false,
+      "record": "research/assessments/entry29_hyrcania/README.md",
+      "limits": [
+        "reading and measuring origin conditional",
+        "north/geographic registration unvalidated",
+        "rim/centre datum changes result"
+      ]
+    }
+  ],
+  "conditional_model_exclusions": [
+    {
+      "id": "X-L103-HOLLOWED-STONE",
+      "entry": 49,
+      "feature": "exposed L103",
+      "scope": "conditional_model",
+      "result": "excluded_under_stated_conditions",
+      "conditions": [
+        "adopt Puech2015 p93 hollowed-stone definition",
+        "test exposed masonry as that feature"
+      ],
+      "reason": "documented built masonry does not satisfy a single hollowed-stone construction",
+      "records": [
+        "research/measurements/cycle11/l103_fit.json",
+        "research/measurements/cycle14/siloam_wording.md"
+      ],
+      "excluded_scope": "this exposed-fabric/material branch",
+      "surviving_alternatives": [
+        "Milik pipe branch",
+        "a separately evidenced earlier carved feature"
+      ],
+      "site_excluded": false
+    },
+    {
+      "id": "X-L103-PRE-FOUNDATION-COIN",
+      "entry": 49,
+      "feature": "small-pool floor / inserted L103",
+      "scope": "conditional_model",
+      "result": "excluded_under_stated_conditions",
+      "conditions": [
+        "coin20=L105/basket1092 belongs to foundation",
+        "floor belongs to initial construction",
+        "plaster cut marks later L103 insertion",
+        "model requires installation before minting of coin20 in69/70CE"
+      ],
+      "reason": "the accepted foundation and contact chain places that floor/conduit after the coin issue",
+      "records": [
+        "research/measurements/cycle10/README.md",
+        "research/measurements/cycle11/l103_fit.json"
+      ],
+      "excluded_scope": "pre-coin construction of this installation under that context chain",
+      "surviving_alternatives": [
+        "later use",
+        "a distinct earlier installation supported by separate fabric"
+      ],
+      "site_excluded": false,
+      "scroll_date_assumed": false
+    }
+  ],
+  "nonunique_comparator_results": [
+    {
+      "id": "N-JERICHO-27-CUBIT",
+      "scope": "conditional perpendicular offset / northern and southern early pools",
+      "result": "nonunique",
+      "record": "research/assessments/entry29_jericho_pools/README.md",
+      "reason": "27-cubit sensitivity band overlaps both northern candidate and southern control; the control does not satisfy northern designation",
+      "blind_sample": false,
+      "landscape_match_frequency_estimated": false
+    },
+    {
+      "id": "N-SARTABA-HYDRAULICS",
+      "scope": "generic fortress hydraulic features",
+      "result": "nonunique",
+      "record": "research/assessments/sartaba_hydraulic_control/result.json",
+      "reason": "fortress aqueduct/cistern/divided-installation features occur outside Hyrcania; this is no full-entry match",
+      "blind_sample": false,
+      "landscape_match_frequency_estimated": false
+    }
+  ],
+  "target_coverage": [
+    {
+      "id": "C-IV17-NORTHERN-THRESHOLD",
+      "feature": "IV/17 three-cubit northern-opening target",
+      "record": "research/assessments/entry25_iv17/assessment.json",
+      "missing": [
+        "ancient threshold level",
+        "target-specific section and excavation reach",
+        "dated floor/contact"
+      ],
+      "target_geometry_defined": false,
+      "coverage_status": "not_established",
+      "full_target_excavated_verified": false,
+      "negative_result_at_predicted_target_verified": false
+    },
+    {
+      "id": "C-JERICHO-MERGED-OUTLET",
+      "feature": "A(B)101 outlet/long-side target",
+      "record": "research/measurements/cycle14/jericho_merged.json",
+      "missing": [
+        "pool-wall outlet junction",
+        "selected wall face/axis",
+        "phase-controlled target region and excavation envelope"
+      ],
+      "target_geometry_defined": false,
+      "coverage_status": "not_established",
+      "full_target_excavated_verified": false,
+      "negative_result_at_predicted_target_verified": false
+    },
+    {
+      "id": "C-HYRCANIA-NORTHERN-OFFSET",
+      "feature": "northern-pool 24-cubit offset target",
+      "record": "research/assessments/entry29_hyrcania/geometry.json",
+      "missing": [
+        "selected ancient measuring origin",
+        "survey north/geographic registration",
+        "dated reference surface and target excavation envelope"
+      ],
+      "target_geometry_defined": false,
+      "coverage_status": "not_established",
+      "full_target_excavated_verified": false,
+      "negative_result_at_predicted_target_verified": false
+    },
+    {
+      "id": "C-L103-UNDER-PIPE",
+      "feature": "entry49 under-L103 target",
+      "record": "research/measurements/cycle15/siloam_bathing.json",
+      "missing": [
+        "selected bathing pool/feature interpretation",
+        "phase-controlled structural underside",
+        "target volume and excavation reach"
+      ],
+      "target_geometry_defined": false,
+      "coverage_status": "not_established",
+      "full_target_excavated_verified": false,
+      "negative_result_at_predicted_target_verified": false
+    }
+  ],
+  "pending_audits": [
+    {
+      "metric": "excavated_vs_unexcavated_candidate_counts",
+      "status": "not_audited",
+      "need": "geographic inventory, candidate-selection history and per-feature excavation/survey status; unknown status remains unknown"
+    },
+    {
+      "metric": "unexcavated_alternatives_inventory_count",
+      "status": "not_audited",
+      "need": "region- and entry-specific inventory including unexcavated features, with coverage denominator and selection rules"
+    },
+    {
+      "metric": "regional_search_coverage_fraction",
+      "status": "not_audited",
+      "need": "fixed regional boundary, feature detection method and coverage geometry"
+    },
+    {
+      "metric": "landscape_wide_coincidence_frequency",
+      "status": "not_measured",
+      "need": "predeclared constraints/tolerances and comparable control feature sample; existing bounded controls do not estimate rarity"
+    },
+    {
+      "metric": "independent_observation_or_campaign_count",
+      "status": "not_audited",
+      "need": "deduplicate citations by original field campaign and observation;43 scoped targets do not equal43 independent observations"
+    }
+  ],
+  "update_rules": [
+    "Update registered outcome rows before recomputing counts. Preserve conditions, alternatives and source links.",
+    "Count each model/comparator result once; new reports of the same observation add no independent support.",
+    "Use null for unknown/unaudited totals or missing denominators; zero means no verified record in the stated audit scope.",
+    "Do not add activity targets/checks for this retrospective bookkeeping change.",
+    "Require exact ancient target and excavation reach/phase/detection evidence for a negative excavation result.",
+    "Conditional exclusions and nonunique comparisons do not establish a whole-site rejection."
+  ]
+}

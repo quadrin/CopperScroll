@@ -1,5 +1,8 @@
 # Findings log
 
+Current headline counters are [identification outcomes and coverage](https://github.com/quadrin/CopperScroll/blob/main/research/PROGRESS_METRICS.md). The following cycle/source totals are activity history; their growth does not establish stronger candidate identification.
+
+
 ## Cycle7 — 2 October 2026, Los Angeles
 
 Hyrcania’s northern-basin inlet remains independently unidentified; northern summit branch supplies eastern cisterns. Puech Koḥlit pp13–14/n49 directly read: contextual restoration and regional alternatives stay separate, with no specific pool entrance. Pool east-of-site and northern corner have different directional anchors. Sartaba reference corrected to earlier lecture collection, not supplied1989 pp24–26; correction adds no research count. One source target and two bounded checks added; totals29/5/31/0decisive/ 0 closures, three conditional assessments unchanged. [Reports](../measurements/cycle7/README.md).
@@ -1193,3 +1196,8 @@ Two original-source scopes and two bounded checks added: cumulative 42 primary t
 ## Parallel function/direction cycle15 — 3 October 2026 UTC / 2 October Los Angeles
 
 One fresh Milik1960 entry29 source scope and two bounded checks added: cumulative 43 scoped primary targets / 5 cartographic-reference intakes / 48 bounded checks / 3 conditional assessments / 0 decisive tests / 0 closures / 0 confirmed deposits. Siloam’s small receiving pool has a published storage/overflow interpretation and no established bathing function. Milik’s in-pool/under-pipe relation requires the selected pool identity; a separate main-pool model needs its own function and spatial check. Jericho’s available wording does not fix hydraulic direction, leaving the Herodian outlet admissible without positive identification; Puech’s collecting-installation restoration remains conditional. Nine In progress / three Queued states, coordinates and grades unchanged. No new spatial assets: encountered figures are already archived. [Results, original-page controls and missing-source links](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/README.md).
+
+
+## Counter redesign — 3 October 2026 UTC / 2 October Los Angeles
+
+Reclassified43 source scopes and48 bounded checks as activity. Initial outcome ledger registers0 discriminated identifications,0 whole-candidate exclusions,3 inconclusive formal packets,2 conditional L103 model exclusions and2 nonunique comparator results. Four target-coverage records establish no verified fully excavated target or negative target excavation. Unexcavated-alternative totals, candidate excavation status distribution, regional coverage and independent observations remain unaudited; landscape-wide rarity remains unmeasured. No new source/check count, question closure, coordinate or grade change. [Definitions and ledger](https://github.com/quadrin/CopperScroll/blob/main/research/PROGRESS_METRICS.md).
