@@ -33,3 +33,8 @@ Retain the previously defined canal-side platform immediately upstream of C as a
 Amit’s original chapter and seven figures already reside at `research/assets/plans/aqueducts1989/amit-doq-pp223-228.pdf`. Netzer’s inspected pages also show Fig. 83 (Qarantal landscape, p. 69/PDF 73), Fig. 84 (Cypros landscape, p. 70/PDF 74), Fig. 85 (Cypros phased plan, p. 71/PDF 75), and Fig. 87 (Cypros hypocaust ruins, p. 72/PDF 76). A four-page original PDF page-content extract, `netzer2001-illustrated-pp69-72.pdf`, preserves these source pages without cropping or rasterization. Its [manifest](../../assets/plans/netzer2001-illustrated/figure_manifest.json) supplies page correspondence, checksums and credits. [Archived original-page extract](../../assets/plans/netzer2001-illustrated/netzer2001-illustrated-pp69-72.pdf). Preserve the distinct Cypros identities. Local rendered review images remain intermediate derivatives.
 
 Accounting: one scoped primary target for Netzer 2001’s Doq paragraph and note; zero new bounded feature checks. This provenance/access search and attribution correction add no feature-test count. Zero new independent field campaigns, decisive tests or closures. Public catalogue and publisher leads add no primary-target counts. The source search stayed outside the parked Feldman anthology, Gerico and Peleg-map tracks.
+
+
+## Follow-up, 3 October 2026 UTC
+
+Netzer 2006 p. 207 note 25 calls the 1982 Doq finds unpublished; note 27 attaches the 1990 chapter to Nuseib’s 1976–1977 soundings. The 2001 cross-citation above remains accurately recorded. The 1990 chapter is now a secondary comparative/incidental-coverage lead; prioritize an actual 1982 field record or verified later publication. [Original-page assessment](../cycle12/netzer_doq.md).

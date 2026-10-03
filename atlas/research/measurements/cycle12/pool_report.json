@@ -1,0 +1,143 @@
+{
+  "check_id": "C11-SILOAM-EARLY-POOL-PHASE",
+  "cycle12_status": "Original-image verification upgrade of existing bounded check",
+  "source": {
+    "authors": [
+      "Nahshon Szanton",
+      "Filip Vukosavović",
+      "Itamar Berko"
+    ],
+    "title": "New archaeological discoveries in the excavations of Birket al-Hamra in Jerusalem",
+    "editor": "Eyal Meiron",
+    "container": "City of David: Studies of Ancient Jerusalem, The 25th Annual Conference",
+    "year": 2024,
+    "printed_pages": "23*–42*",
+    "pdf_pages": "6–25",
+    "public_url": "https://cityofdavid.org.il/wp-content/uploads/2025/12/New-archaeological-discoveries-in-the-excavations-of-Birket-al-Hamra-in-Jerusalem.pdf",
+    "provenance": "User-supplied PDF, file_00000000b18481fb985b0bb1eaa141a6; original attachment bytes retained",
+    "copyright": "Copyright © The Ir David Foundation, 2024; all rights reserved, as printed on PDF p. 2",
+    "archive_path": "research/assets/plans/birket2024-cycle12/birket-al-hamra2024-original.pdf",
+    "bytes": 1427033,
+    "sha256": "ced526bf2b27e250438bab26b2bdf85889510c1068f23f1020359f2e78517e39"
+  },
+  "page_mapping": [
+    {
+      "pdf_page_1_based": 6,
+      "printed_page": "[23*]"
+    },
+    {
+      "pdf_page_1_based": 7,
+      "printed_page": "24*"
+    },
+    {
+      "pdf_page_1_based": 8,
+      "printed_page": "25*"
+    },
+    {
+      "pdf_page_1_based": 9,
+      "printed_page": "26*"
+    },
+    {
+      "pdf_page_1_based": 10,
+      "printed_page": "27*"
+    },
+    {
+      "pdf_page_1_based": 11,
+      "printed_page": "28*"
+    },
+    {
+      "pdf_page_1_based": 12,
+      "printed_page": "29*"
+    },
+    {
+      "pdf_page_1_based": 13,
+      "printed_page": "30*"
+    },
+    {
+      "pdf_page_1_based": 14,
+      "printed_page": "31*"
+    },
+    {
+      "pdf_page_1_based": 15,
+      "printed_page": "32*"
+    },
+    {
+      "pdf_page_1_based": 16,
+      "printed_page": "33*"
+    },
+    {
+      "pdf_page_1_based": 17,
+      "printed_page": "34*"
+    },
+    {
+      "pdf_page_1_based": 18,
+      "printed_page": "35*"
+    },
+    {
+      "pdf_page_1_based": 19,
+      "printed_page": "36*"
+    },
+    {
+      "pdf_page_1_based": 20,
+      "printed_page": "37*"
+    },
+    {
+      "pdf_page_1_based": 21,
+      "printed_page": "38*"
+    },
+    {
+      "pdf_page_1_based": 22,
+      "printed_page": "39*"
+    },
+    {
+      "pdf_page_1_based": 23,
+      "printed_page": "40*"
+    },
+    {
+      "pdf_page_1_based": 24,
+      "printed_page": "41*"
+    },
+    {
+      "pdf_page_1_based": 25,
+      "printed_page": "42*"
+    }
+  ],
+  "observations": [
+    {
+      "reference": "Printed 33* / PDF 16, Fig. 11 and note 3",
+      "finding": "Image shows W114 sloping plaster face; report explicitly leaves its stratigraphic relationship with ancient dam wall unresolved due depth and water."
+    },
+    {
+      "reference": "Printed 35* / PDF 18, Fig. 12; 36* / PDF 19",
+      "finding": "Original photos and text document earlier plastered 3b below later ashlar 3a of northern stair/seating complex. Material shown is not identified as L105 receiving-pool floor."
+    },
+    {
+      "reference": "Printed 34* / PDF 17",
+      "finding": "Dam-top small pool association is tentative and relies on summary radiocarbon age; no observed L105 foundation association or coin 20 reassessment appears."
+    },
+    {
+      "reference": "Whole article printed 23*–42* / PDF 6–25",
+      "finding": "L105, L105A, L103 and L108 labels do not occur in supplied report text; Figs. 1–12 provide no independently labelled receiving-pool floor-to-W114 contact."
+    }
+  ],
+  "inference": "Image audit retains cycle10 conditional 69–70 CE coin-minting terminus for excavated small-pool floor; older large-pool/seating and dam phases can coexist. Figures provide no dated older small-pool floor or revised foundation context.",
+  "chronology_limits": "Author phase labels and tentative dates distinguish observed material superposition from inferred historical phases. No date transfer from large-pool W114, staircase 3b or older dam mortar to L105 permitted.",
+  "caption_warnings": [
+    "Caption uses top/bottom but photographs are side by side; left is modern, right historic. Preserve layout and caption together",
+    "Image/caption mismatch: displayed modern stair photograph also appears as Fig. 7. Do not identify depicted masonry from the Fig. 2 landscape caption",
+    "North marker and graphic scale present but tiny raster labels limit reading; no legible L105 or small receiving-pool phase tie. Plan is not a vertical section"
+  ],
+  "access": "Recovered user-supplied original; original image verification complete; previous missing-source status superseded.",
+  "kpi_delta": {
+    "scoped_primary_source_targets": 0,
+    "bounded_checks": 0,
+    "independent_field_campaigns": 0,
+    "conditional_candidate_assessments": 0,
+    "decisive_tests": 0,
+    "question_closures": 0,
+    "confirmed_deposits": 0,
+    "figures_inspection_upgrade": "12 numbered figures plus opening photos"
+  },
+  "kpi_reason": "Full-image recovery upgrades already-counted 2024 target and C11-SILOAM-EARLY-POOL-PHASE. This repeats the same phase/contact question; counting a new check would double-count it.",
+  "next_evidence": "Published section or phase matrix that ties W114/W001 to a measured small receiving-pool floor and its foundation locus; earlier floor needs distinct identity, elevation and sealed association."
+}

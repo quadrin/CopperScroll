@@ -1,0 +1,130 @@
+{
+  "source": {
+    "author": "Ehud Netzer, with Rachel Laureys-Chachy",
+    "title": "The Architecture of Herod, the Great Builder",
+    "edition_year": 2006,
+    "user_uploaded_file": "The architecture of Herod, the great builder (Ehud Netzer).pdf",
+    "source_sha256": "74d310ce78d8a6f0a45ac5191473ce9fc1ec8e298021a70549073c9466784d37",
+    "source_bytes": 213673650,
+    "source_pages": 450,
+    "access": "Supplied user PDF; original scanned pages inspected"
+  },
+  "archived_assets": [
+    {
+      "file": "netzer2006-doq-pp206-207-cypros-p209-bibliography-p417.pdf",
+      "proposed_repo_path": "research/assets/plans/netzer2006-doq/netzer2006-doq-pp206-207-cypros-p209-bibliography-p417.pdf",
+      "kind": "unchanged original PDF-page-content extract",
+      "source_pages": [
+        214,
+        215,
+        217,
+        420
+      ],
+      "sha256": "070c89491f1a57d84d467f4bd5272a4e78535a1e6d2f4e9233a86bf159f3f2f0",
+      "bytes": 2009377,
+      "notes": "PDF page objects copied, no cropping, rasterization or annotations. PDF container bytes differ from source; page imagery retained unchanged. Includes Doq text and notes, separate Cypros plan, bibliography citation."
+    }
+  ],
+  "page_mapping": [
+    {
+      "extract_pdf_page": 1,
+      "source_pdf_page": 214,
+      "printed_page": 206,
+      "raster_equality_at_36dpi": true
+    },
+    {
+      "extract_pdf_page": 2,
+      "source_pdf_page": 215,
+      "printed_page": 207,
+      "raster_equality_at_36dpi": true
+    },
+    {
+      "extract_pdf_page": 3,
+      "source_pdf_page": 217,
+      "printed_page": 209,
+      "raster_equality_at_36dpi": true
+    },
+    {
+      "extract_pdf_page": 4,
+      "source_pdf_page": 420,
+      "printed_page": 417,
+      "raster_equality_at_36dpi": true
+    }
+  ],
+  "figures": [
+    {
+      "figure": "46",
+      "printed_page": 209,
+      "source_pdf_page": 217,
+      "extract_pdf_page": 3,
+      "type": "reconstructed phased site plan",
+      "site": "Cypros / Tell el-Aqaba",
+      "caption": "Reconstructed plan of the desert fortress of Cypros (hatched walls: Hasmonaean; black walls: Herodian; white walls: Byzantine).",
+      "credit": "Ehud Netzer, The Architecture of Herod, the Great Builder (2006), Figure 46. No separate illustrator credit appears on the inspected figure page; scanned copy lacks title/copyright pages.",
+      "scale": "bar labelled 0, 10, 25; units not printed beside bar",
+      "orientation": "orientation arrow present; no printed N beside it",
+      "restrictions": "Separate-site context; not a Doq plan or seven-cubit target. Reconstruction and phase assignments belong to publisher/author."
+    }
+  ],
+  "spatial_figure_coverage": {
+    "doq_printed_pages_206_207": 0,
+    "other_encountered_spatial_figures_archived": 1,
+    "original_images_reviewed": [
+      {
+        "source_pdf_page": 4,
+        "printed_page": "VIII"
+      },
+      {
+        "source_pdf_page": 5,
+        "printed_page": "IX (unnumbered)"
+      },
+      {
+        "source_pdf_page": 6,
+        "printed_page": "X"
+      },
+      {
+        "source_pdf_page": 7,
+        "printed_page": "XI"
+      },
+      {
+        "source_pdf_page": 213,
+        "printed_page": 205
+      },
+      {
+        "source_pdf_page": 214,
+        "printed_page": 206
+      },
+      {
+        "source_pdf_page": 215,
+        "printed_page": 207
+      },
+      {
+        "source_pdf_page": 216,
+        "printed_page": 208
+      },
+      {
+        "source_pdf_page": 217,
+        "printed_page": 209
+      },
+      {
+        "source_pdf_page": 225,
+        "printed_page": 217
+      },
+      {
+        "source_pdf_page": 418,
+        "printed_page": "[415]"
+      },
+      {
+        "source_pdf_page": 420,
+        "printed_page": 417
+      }
+    ],
+    "ocr_only_pages_not_image_verified": [
+      218,
+      419,
+      423,
+      424
+    ],
+    "limits": "No complete book figure audit. Rendered-but-unopened PDF226–227 omitted; no claim that uninspected pages lack figures."
+  }
+}

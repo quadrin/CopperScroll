@@ -48,3 +48,8 @@ On 2 October 2026, complete supplied-page archives replaced the selective covera
 ## Cycle 11 encountered figures, 2 October 2026 UTC
 
 [Regev et al. 2025 dam study](siloam-cycle11/README.md): two unchanged original figure composites, including site map and dam photograph. [Netzer illustrated book pp. 69–72](netzer2001-illustrated/README.md): original-page extract with Qarantal landscape and separately identified Cypros landscape, plan and ruins. Source/asset checksums and credits accompany both directories. Coverage is limited to these encountered figures/pages; the remaining book and unavailable 2024 report figures are not claimed recovered.
+
+
+## Cycle12 source recovery, 3 October 2026 UTC
+
+[Birket2024 original report / all figures](birket2024-cycle12/README.md), [Regev larger PNGs / supplied main capture](siloam-cycle12/README.md), and [Netzer 2006 Doq pages / separate Cypros plan](netzer2006-doq/README.md) are archived with matched atlas copies, original provenance, page controls and checksums. The appendix attachment contains HTML and is recorded as a failed intake, not an original PDF. Full Netzerbook figure coverage remains uninspected.

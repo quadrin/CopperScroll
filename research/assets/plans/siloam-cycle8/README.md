@@ -55,3 +55,9 @@ The manifest records exact original URLs, SHA-256, dimensions, access date, insp
 Twelve figure groups in Szanton, Vukosavović and Berko, *New archaeological discoveries in the excavations of Birket al-Hamra in Jerusalem* (2024), plus Guthe's original plates and Bliss–Dickie's original plans, remain pending. The manifest gives exact page/figure locators, source URLs and observed access limits. Selective text access to the 2024 PDF is not an original-image archive. Isolated artifact illustrations in 2014 Figs. 16–18 are excluded from the geography/ruins scope; in situ masonry Fig. 14 is included.
 
 [Identity, phase and access assessment](../../../measurements/cycle8/siloam_correspondence.md) · [Cycle results](../../../measurements/cycle8/README.md)
+
+
+
+## Recovery update, 3 October 2026 UTC
+
+The 2024 report and all Figs. 1–12 are now [archived and image-checked](../birket2024-cycle12/README.md). This supersedes that source’s pending status above. The manifest moves its historical caption-only records to recovered dependencies and preserves the Fig. 2 caption/photo discrepancy. Guthe/Bliss references retain their separately stated access scope.

@@ -1,0 +1,135 @@
+{
+  "check_id": "C12-E31-NETZER-DOQ-ROOM-PLAN-COVERAGE",
+  "review_date": "2026-10-02",
+  "review_timezone": "America/Los_Angeles",
+  "source": {
+    "author": "Ehud Netzer, with Rachel Laureys-Chachy",
+    "title": "The Architecture of Herod, the Great Builder",
+    "edition_year": 2006,
+    "user_uploaded_file": "The architecture of Herod, the great builder (Ehud Netzer).pdf",
+    "source_sha256": "74d310ce78d8a6f0a45ac5191473ce9fc1ec8e298021a70549073c9466784d37",
+    "source_bytes": 213673650,
+    "source_pages": 450,
+    "access": "Supplied user PDF; original scanned pages inspected"
+  },
+  "pages_verified": [
+    {
+      "printed_page": 206,
+      "pdf_page": 214
+    },
+    {
+      "printed_page": 207,
+      "pdf_page": 215
+    },
+    {
+      "printed_page": 209,
+      "pdf_page": 217
+    },
+    {
+      "printed_page": 417,
+      "pdf_page": 420
+    }
+  ],
+  "observations": [
+    {
+      "page": 207,
+      "note": 25,
+      "claim": "Doq 1982 one-week dig finds unpublished as of book publication",
+      "verbatim": "The finds from the one-week dig have not yet been published.",
+      "status": "Actual page image checked"
+    },
+    {
+      "page": 207,
+      "note": 26,
+      "claim": "Doq water-system chapter cited",
+      "reference": "David Amit, The Aqueduct to the Fortress at Dok (Dagon), The Aqueducts of Israel (2002),330–335",
+      "chapter_pages_read": false
+    },
+    {
+      "page": 207,
+      "note": 27,
+      "claim": "Netzer–Birger 1990 reference attaches to Nuseib 1976–1977 soundings",
+      "distinct_from_doq1982": true,
+      "chapter_pages_read": false
+    }
+  ],
+  "coverage_test": {
+    "target": "Entry 31: individual guard or drying room plan, eastern corner, ancient surface and room phase",
+    "room_plan_present": false,
+    "locus_ids_present": false,
+    "guard_or_drying_function_identified": false,
+    "eastern_corner_surface_present": false,
+    "room_specific_phase_present": false,
+    "outcome": "Unresolved; scoped source provides no joining room record",
+    "limit": "Negative coverage of selected pages only; no assertion about later publications or field archive preservation"
+  },
+  "interpretations": [
+    {
+      "claim": "Herodian continued use and probable enlargement",
+      "owner": "Netzer",
+      "basis": "Site position, survey finds, 1982 small excavation",
+      "room_phase_transfer_permitted": false
+    },
+    {
+      "claim": "1982 field record or verified later excavation publication takes retrieval priority",
+      "owner": "Research inference",
+      "limit": "Preserve 2001 explicit cross-citation to 1990 monastery article; its complete coverage remains unread"
+    }
+  ],
+  "retained_cycle11_crosscitation": {
+    "source": "Netzer 2001, The Palaces of the Hasmoneans and Herod the Great",
+    "page": 140,
+    "chapter_note": "9:9",
+    "status": "Previously image-checked valid cross-citation",
+    "note": "2006 unpublished statement narrows priority; does not prove 1990 article has no Doq aside"
+  },
+  "figure_archive": {
+    "manifest": "research/assets/plans/netzer2006-doq/figure_manifest.json",
+    "extract": {
+      "file": "netzer2006-doq-pp206-207-cypros-p209-bibliography-p417.pdf",
+      "proposed_repo_path": "research/assets/plans/netzer2006-doq/netzer2006-doq-pp206-207-cypros-p209-bibliography-p417.pdf",
+      "kind": "unchanged original PDF-page-content extract",
+      "source_pages": [
+        214,
+        215,
+        217,
+        420
+      ],
+      "sha256": "070c89491f1a57d84d467f4bd5272a4e78535a1e6d2f4e9233a86bf159f3f2f0",
+      "bytes": 2009377,
+      "notes": "PDF page objects copied, no cropping, rasterization or annotations. PDF container bytes differ from source; page imagery retained unchanged. Includes Doq text and notes, separate Cypros plan, bibliography citation."
+    },
+    "figure_count": 1,
+    "figures": [
+      "46: Cypros reconstructed phased site plan"
+    ],
+    "doq_spatial_figures": 0
+  },
+  "accounting_recommendation": {
+    "scoped_primary_targets": 1,
+    "bounded_checks": 1,
+    "new_independent_field_campaigns": 0,
+    "conditional_candidate_assessments": 0,
+    "decisive_tests": 0,
+    "closures": 0,
+    "confirmed_individual_deposits": 0,
+    "coordinate_changes": 0,
+    "confidence_grade_changes": 0
+  },
+  "remaining_source_needs": [
+    {
+      "title": "Actual 1982 Doq field plan, diary or archival record, or verified later publication",
+      "status": "Not provided; no verified public locator",
+      "outreach_started": false
+    },
+    {
+      "title": "Netzer and Birger 1990, A Byzantine Monastery at Nuseib Uweishira, West of Jericho, pp. 191–200",
+      "status": "Chapter unread; retain potential comparative coverage",
+      "priority": "Secondary for Doq 1982"
+    },
+    {
+      "title": "David Amit, The Aqueduct to the Fortress at Dok (Dagon), The Aqueducts of Israel (2002), pp. 330–335",
+      "status": "Citation verified; English pages unread"
+    }
+  ]
+}

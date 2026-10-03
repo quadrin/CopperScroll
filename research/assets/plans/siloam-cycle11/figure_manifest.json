@@ -48,11 +48,6 @@
   ],
   "pending": [
     {
-      "title": "2024 report, Figs.1–12",
-      "url": "https://cityofdavid.org.il/wp-content/uploads/2025/12/New-archaeological-discoveries-in-the-excavations-of-Birket-al-Hamra-in-Jerusalem.pdf",
-      "status": "original binary403;existingcycle8pendinginventory retained"
-    },
-    {
       "title": "Regev et al.2025, main PDF",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415248/pdf/pnas.202510396.pdf",
       "status": "responseHTMLnotPDF"
@@ -66,5 +61,20 @@
   "main_article_access": {
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415248/",
     "status": "full main HTML read; working cache not archived"
-  }
+  },
+  "recovered_dependencies_2026_10_03": [
+    {
+      "archive": "research/assets/plans/birket2024-cycle12/birket-al-hamra2024-original.pdf",
+      "status": "original2024report/allfigures imagechecked; prior403superseded",
+      "history": [
+        {
+          "title": "2024 report, Figs.1–12",
+          "url": "https://cityofdavid.org.il/wp-content/uploads/2025/12/New-archaeological-discoveries-in-the-excavations-of-Birket-al-Hamra-in-Jerusalem.pdf",
+          "status": "original binary403;existingcycle8pendinginventory retained"
+        }
+      ]
+    }
+  ],
+  "main_capture_alternative": "research/assets/plans/siloam-cycle12/regev2025-main-user-capture.pdf; userbrowsercapture, notpublisherPDF",
+  "appendix_validation": "research/measurements/cycle12/supplement.json; uploadedbytesHTML"
 }

@@ -26,3 +26,8 @@ Archived and mirrored: [two original Regev figures](../../assets/plans/siloam-cy
 ## Next discriminators
 
 For Siloam, compare the terminal-feature meaning across the original competing editions, and require separate archaeological evidence for a carved trough or earlier L103 fabric. For phase chronology, inspect the supporting appendix and explicit wall/floor contacts. For Doq, read Netzer–Birger pp. 191–200 before assuming its Qarantal coverage. Keep the parked Feldman, Gerico and Peleg-map searches parked. No outreach occurred.
+
+
+## Access and priority update, 3 October 2026 UTC
+
+The supplied 2024 report and Netzer 2006 target pages are now image-checked and archived. Netzer 2006 distinguishes unpublished Doq 1982 finds from Nuseib 1976–1977 soundings, so the 1990 chapter’s Doq priority is revised without altering the original 2001 cross-citation. The supplied appendix contains HTML; it remains unread. [Cycle12 results and current links](../cycle12/README.md).
