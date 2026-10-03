@@ -1,6 +1,6 @@
 # Active test: entry 29 at Jericho
 
-Updated 3 October 2026 UTC. Evidence baseline: `3cc509c2`. Related backlog: R08/R09. **Stage: preparation; no confirmatory test is registered or running.** This is the sole current-session state. Follow [AGENTS.md](../AGENTS.md); use the backlog only for a deliberate change of focus.
+Updated 3 October 2026 UTC. Evidence/design audit baseline: `09acbd2`. Related backlog: R08/R09. **Stage: preparation; no confirmatory test is registered or running.** This is the sole current-session state. Follow [AGENTS.md](../AGENTS.md); use the backlog only for a deliberate change of focus.
 
 ## Claim and current result
 
@@ -20,14 +20,18 @@ Jericho is restored in the text. The early northern pool and Herodian joined A(B
 
 Netzer's eastern drainage through A(B)171 is already known; the actual A(B)101 wall junction and associated collector remain unestablished. Detailed Plan 14 was not located in the inspected scan; Plans 15/23 are separate phase-control gaps. Text and derivative plans from this excavation have already informed the hypothesis. Recovered sheets cannot automatically be called unseen evidence.
 
+## Preparation audit and current blockers
+
+The parallel existing-record audit is complete: [inventory, design and exposure details](assessments/entry29_jericho_pools/README.md#comparison-design-and-exposure-audit--3-october-2026-utc). Eight provisional roster rows include the early pair, its joined later state, Area AC notices, another aggregate pair, A(B)99 and the historically reported ʿAin es-Sultan reservoir. They are not eight independent eligible candidates or a regional denominator. Jericho palace, Ain Doq and tell/spring sectors have no source-grounded closed boundary or complete coverage catalogue. Unexcavated/destroyed/status-unknown alternatives remain unenumerated.
+
+The categorical reading/face/axis/phase menu is documented; final numerical registration remains blocked by uncalibrated cubit choices, missing source-specific error budgets and unresolved target datums. Known basin dimensions, A(B)171 drainage and the collector requirement already informed the model. Plans 14/15/23 are access gaps, not verified holdouts; exact sheet coverage, derivative exposure and field-section identity remain unknown. This audit opened no new target evidence and creates no test outcome or activity/ledger increment.
+
 ## Next action and stopping point
 
-Using existing records, define the entry-first regional boundary and eligible pool/conduit inventory, including unexcavated/status-unknown alternatives; the palace pair alone is not a regional denominator. Then freeze here, in one committed revision:
+Establish the regional catalogue and documented geographic/coverage limits, resolving individual pool identities without scoring fits. In parallel, establish exact sheet/section identity and coverage from metadata and audit model selectors' prior exposure through source images, OCR, captions, descriptions and derivatives before revealing target content. No verified custodian or exact field-record accession is available in the existing records.
 
-- The exact claim, finite reading/unit/origin/axis/phase choices and tolerance rules, justified from [reading constraints](assessments/entry29_jericho_pools/constraints.json) and source evidence; list permitted combinations and exclusions
-- The candidate/control inventory with selection and coverage limits, and one comparison rule applying equal search flexibility to all
-- One observable prediction, its pass/fail thresholds and exact held-out source/measurement; audit whether its content or derivatives have already influenced the model
+The evidence trigger is a phase-specific A(B)101 east-wall aperture/contact, named face/surface and channel profile tied to A(B)171, plus a contemporaneous collector for the fuller collection branch; equivalent comparison data and defensible survey/measurement uncertainty are required. A topology-only test would make a narrower contact claim and would not identify entry 29 by itself.
 
-**Blocker:** no fixed regional inventory, final parameter set or verified unseen observation currently exists. Do not open new target evidence before this freeze. A precise wall-junction/collector observation in Plan 14 or a field section is a possible holdout only if its specific content is genuinely unexposed. If that cannot be established, retain the current terminal result and name the required independent survey/contact evidence. Do not substitute another fit to the known outlet.
+**Stopping point:** preparation is blocked; retain the current terminal identification result. Do not open new target evidence or repeat known outlet fits. Reopen only when the inventory/design dependencies and observation-level exposure audit permit one exact unseen prediction with success/failure criteria. Commit the exact claim, justified finite readings/units/origins/axes/phases/tolerances, compatible combinations, controls and equal-search decision rule here before inspecting that evidence. If an existing observation cannot be verified unused, keep it exploratory or obtain an independently collected measurement after the freeze. Missing documentation cannot reject a physical feature.
 
-Reopen the structural test only when such phase-specific contact/datum evidence and a valid comparison design can resolve these limits. Record the result and next evidence trigger here; put measurements/source detail in the existing assessment. [Outcome ledger](progress/outcome_ledger.json) changes only for an actual qualifying outcome.
+[Outcome ledger](progress/outcome_ledger.json) changes only for an actual qualifying outcome. Historical assessments, coordinates, confidence grades and counters remain unchanged.
