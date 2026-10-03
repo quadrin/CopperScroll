@@ -1,6 +1,6 @@
 # Active test: entry 29 at Jericho
 
-Updated 3 October 2026 UTC. Current exploratory-search baseline: `4ee87d5`; earlier design audit: `09acbd2`. Related backlog: R08/R09. **Stage: preparation; no confirmatory test is registered or running.** This is the sole current-session state. Follow [AGENTS.md](../AGENTS.md); use the backlog only for a deliberate change of focus.
+Updated 3 October 2026 UTC. Current exploratory-search baseline: `4740a73`; earlier design audit: `09acbd2`. Related backlog: R08/R09. **Stage: preparation; no confirmatory test is registered or running.** This is the sole current-session state. Follow [AGENTS.md](../AGENTS.md); use the backlog only for a deliberate change of focus.
 
 ## Claim and current result
 
@@ -37,6 +37,12 @@ The [second public-source pass](assessments/entry29_jericho_pools/README.md#orig
 Netzer2006's already-exposed Cypros page reports two stepped-pool notices, one in a later-added room; exact calendar phases, loci and pipe ties remain unknown. Expanded original catalogue coverage adds six phase-specific/aggregate notices; **24 preparation records remain an incomplete roster, not a candidate denominator.** Original source reports must resolve the St. Andrew's Roman/Herodian pool/cistern notice, Doq-system cisterns, domestic cistern, ritual-bath states and estate baths before eligibility/scoring.
 
 Newly recovered Netzer1996 overview repeats known joined-basin geometry without the target wall contact. Specific2001/2002 archaeological sheets/pages remain inaccessible. All inspected content is exploratory, no holdout verified. Three new source scopes/four bounded checks bring activity to50/56; outcome ledger, geometry, grades, coordinates and question states stay unchanged. Public-domain SWP drawings/pages are now archived; restricted modern figures remain linked.
+
+## Public-body acquisition and edition check
+
+The [new source and edition audit](assessments/entry29_jericho_pools/README.md#cypros-source-recovery-and-edition-check--3-october-2026-utc) recovered Porath1989's permitted text, retaining its phase/contact limits. Two public illustrated-book excerpts supply known overviews, without the target contact. An aggregator's Plan23 hit concerns VolumeII synagogue material, not the required VolumeI sheet. Actual2001 sheets/Plan13 and2002 target chapters remain missing. These checked public routes are closed; repeating catalogue/snippet hits cannot supply original observations.
+
+One new source scope/two bounded checks bring activity to51/58, with five cartographic intakes and24 provisional records unchanged. No independent campaign, holdout, test, identification outcome or confidence change follows. No contact request or purchase occurred.
 
 ## Next action and stopping point
 
