@@ -1,6 +1,6 @@
 # Active test: R11 Greek personal initials
 
-Updated 3 October 2026 UTC. Three parallel threads completed Ilan source audit, form validation and independent probability verification. **Stage: name and matched-size common-noun comparisons complete. Historical initials meaning remains not identifiable from available evidence.** Jericho remains parked.
+Updated 3 October 2026 UTC. Three parallel threads completed Ilan source audit, form validation and independent probability verification. **Stage: engraving-order audit criteria frozen; publish before new target-image inspection.** Name/common-noun comparisons remain complete, with historical meaning not identifiable. Jericho remains parked.
 
 ## Result and scope
 
@@ -14,7 +14,7 @@ This is an exploratory **reported-Greek-form/person-period pilot**, conditional 
 
 The [common-noun comparison](phases/phase4_summary.md#matched-size-common-noun-comparison--3-october-2026) was frozen atda3985a258a3cef9f5f6272b670fba4acf7acdfe before scoring. Names match2/7; equally sized107-form common-noun subsets average3.096179 union hits, and95.661673% equal or exceed2. Removing18 mixedNe forms gives95.742954%. Both populations retain literalprimary/all12 sensitivities, verified by independent source re-extraction, direct CSV computation and integer generating functions. No name prefix-count advantage under this finite benchmark; it does not establish ordinary-word meaning. [Results](../deep_analysis/word_control/results.json), [scope/protocol](../deep_analysis/word_control/README.md) and [verification](../deep_analysis/word_control/verification.json) preserve all branches and misses. No frozen inputs changed.
 
-Next, audit the existing physical reports for H5/H6: Lika Tov's reported surface-level difference(Copper Scroll Studies p289) and Puech's deeper cancelledΙ. Distinguish printed descriptions/drawings from metal-surface measurements, identify original photographs/3D data, and fix later-addition versus same-engraving criteria before inspecting any reserved new surfaces. This is a separate observation dependency; another exposed name list cannot supply an unused test.
+The [physical protocol](../deep_analysis/engraving_order_protocol.json) fixes allseven loci, full-line/neighbor controls, source provenance, conserved-surface caveats and independent fields. Publish this freeze before new target images. Local crossing order and distinct later episode are separate claims: even a Greek stroke cut after a Hebrew stroke could belong to one writing session. Replicate Tov's exact p289 wording/datum and Puech's IV2 assertion first; inspect available original photos under the same seven-locus criteria. Drawings, casts, replicas and radiographs keep distinct observation status. Original Reed1988 multiple-light files and EDF pre/post views remain acquisition dependencies. No verified unused observation; all results exploratory.
 
 ## Parked work and accounting
 
