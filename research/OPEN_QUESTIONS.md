@@ -8,7 +8,7 @@ Identify the particular landmarks described by the Copper Scroll, reconstruct th
 
 The project has edition comparisons, regional candidates, archaeological comparisons and reproducible spatial tests. Exact deposit locations remain unconfirmed. Site confidence, feature identity, period compatibility and geographic precision require separate assessments. Atlas scenes and map markers inherit the uncertainties of their supporting records.
 
-This is the active research tracker. The [historical question log](https://github.com/quadrin/CopperScroll/blob/main/research/logs/open_questions.md) retains the older Q identifiers and detailed revisions. The [findings log](https://github.com/quadrin/CopperScroll/blob/main/research/logs/findings_log.md) retains the full research history. R01–R12 below group the current work; they do not replace or renumber those historical questions.
+For the next session, use [the active test](https://github.com/quadrin/CopperScroll/blob/main/research/ACTIVE_TEST.md) and the short workflow in [AGENTS.md](https://github.com/quadrin/CopperScroll/blob/main/AGENTS.md). This tracker is the research backlog and evidence history; its older “next” instructions are not an instruction to restart every lane. The [historical question log](https://github.com/quadrin/CopperScroll/blob/main/research/logs/open_questions.md) retains the older Q identifiers and detailed revisions. The [findings log](https://github.com/quadrin/CopperScroll/blob/main/research/logs/findings_log.md) retains the full research history. R01–R12 below group the current work; they do not replace or renumber those historical questions.
 
 ## Identification outcomes and coverage
 
@@ -53,9 +53,11 @@ These measures track work completed. They do not estimate the probability of fin
 
 Priorities: P1 = next investigation; P2 = subsequent feature test; P3 = broader interpretation. A broad question can remain open while a specific candidate or subtest is closed.
 
-After each research session, update the affected question's dated progress, evidence links, contrary evidence, next test and access limit. Recompute the summary counts and add a dated change entry. Update the underlying research note and assessment/log records when the evidence changes. Keep this file and its atlas mirror byte-identical. Preserve closed questions and stable R identifiers; add R13 onward for new work. Split a question if its parts acquire different outcomes.
+Update an affected R question and add a short linked change entry when its evidence or state changes; recompute counters only when counted records change. Keep the atlas mirror byte-identical and preserve stable R/Q identifiers. These administrative states are distinct from the three terminal test outcomes in [AGENTS.md](https://github.com/quadrin/CopperScroll/blob/main/AGENTS.md); a broad question can stay open after its current test stops.
 
-## Next research cycle
+## Previous cycle planning (historical)
+
+The following dated plans preserve earlier priorities and access states. The current next action is maintained only in [ACTIVE_TEST.md](https://github.com/quadrin/CopperScroll/blob/main/research/ACTIVE_TEST.md).
 
 The counter redesign prioritizes an entry-first regional candidate inventory and fixed comparison rules, with unexcavated/status-unknown alternatives included. Audit excavation reach against the actual ancient target before treating nondiscovery as negative evidence. Existing feature tests retain their limits. [Outcome definitions and registered baseline](https://github.com/quadrin/CopperScroll/blob/main/research/PROGRESS_METRICS.md).
 
@@ -426,3 +428,8 @@ One fresh Milik1960 entry29 source scope and two bounded checks added: cumulativ
 ## Counter redesign — 3 October 2026 UTC / 2 October Los Angeles
 
 Reclassified43 source scopes and48 bounded checks as activity. Initial outcome ledger registers0 discriminated identifications,0 whole-candidate exclusions,3 inconclusive formal packets,2 conditional L103 model exclusions and2 nonunique comparator results. Four target-coverage records establish no verified fully excavated target or negative target excavation. Unexcavated-alternative totals, candidate excavation status distribution, regional coverage and independent observations remain unaudited; landscape-wide rarity remains unmeasured. No new source/check count, question closure, coordinate or grade change. [Definitions and ledger](https://github.com/quadrin/CopperScroll/blob/main/research/PROGRESS_METRICS.md).
+
+
+## Focused test workflow — 3 October 2026 UTC
+
+Consolidated durable test rules and the short session workflow in AGENTS.md; ACTIVE_TEST.md holds the entry-29/Jericho preparation state, failure conditions and holdout/inventory blockers. Earlier planning remains historical. No new source inspection, measurement, test outcome, confidence change or counter increment.
