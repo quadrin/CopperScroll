@@ -23,3 +23,8 @@ No appendix page, method table or figure was inspected. Its actual figure invent
 The pending check is whether the appendix establishes a numbered plaster-coat/sample association with L108/RTT 6089, a demonstrated wall contact with the small-pool floor L105, or a context join with conduit L103. It must also be checked for an explicit explanation or tested mechanism for the older charcoal/archaeological chronology discrepancy. The cycle 11 main-article results remain unchanged: W001/W114 mortar dates cannot yet be transferred to those distinct contexts. Appendix-specific conclusions require the genuine PDF.
 
 Archive instruction: retain this validation record; do not publish the HTML attachment as an original appendix PDF or count its navigation artwork as archaeological figures. No new field campaign is represented.
+
+
+## Recovery, 3 October 2026 UTC / 2 October Los Angeles
+
+The later supplied copy is a genuine three-page extended-methods PDF, fully image-checked and archived. The failed-copy validation above remains accurate for that attachment. [Recovered appendix and context result](../cycle13/README.md).

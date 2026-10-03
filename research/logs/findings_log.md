@@ -1178,3 +1178,8 @@ Inspections completed 2 October. Two new scoped primary targets and three bounde
 ## Source recovery cycle12 — 3 October 2026 UTC / 2 October Los Angeles
 
 One new scoped primary target and one bounded coverage check; cumulative 39 / 5 cartographic-reference intakes / 43 bounded checks / 3 conditional assessments / 0 decisive tests / 0 closures / 0 confirmed deposits. The 2024 original/image audit upgrades existing evidence without recounting it. Netzer 2006 narrows Doq publication priority; actual room records remain unresolved. Appendix attachment validated as HTML. Larger Regev figures, browser capture, full 2024 report and Netzer page extract archived and mirrored. Nine In progress / three Queued states, coordinates and site grades unchanged. [Results and remaining links](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle12/README.md).
+
+
+## Appendix recovery cycle13 — 3 October 2026 UTC / 2 October Los Angeles
+
+Genuine three-page extended-methods appendix recovered, fully image-checked and archived unchanged. Collection controls and reported W114/W001 attachment documented; small-pool L105/L108/L103 joins remain unreported. One scoped primary target / one bounded collection-control check added: cumulative 40 / 5 cartographic-reference intakes / 44 bounded checks / 3 conditional assessments / 0 decisive tests / 0 closures / 0 confirmed deposits. No new field campaign, R-question state, coordinate or grade change. [Result and original](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle13/README.md).

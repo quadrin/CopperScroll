@@ -26,7 +26,7 @@
     "bytes": 1817,
     "pdf_valid": false
   },
-  "status": "blocked-invalid-attachment",
+  "status": "recovered-genuine-copy-cycle13",
   "pending_test": "Establish numbered coat/sample or stratigraphic contact with L105, L108/RTT6089 or L103, and evaluate any appendix explanation of previous charcoal discrepancy",
   "accounting": {
     "new_scoped_primary_targets": 0,
@@ -38,5 +38,13 @@
     "original_pdf_eligible": false,
     "spatial_figures_encountered": [],
     "instruction": "Do not archive supplied HTML as original appendix PDF; preserve validation note and await genuine PDF."
+  },
+  "historical_status": "blocked-invalid-attachment",
+  "recovered_copy": {
+    "archive": "research/assets/plans/siloam-cycle13/regev2025-supporting-information.pdf",
+    "sha256": "6c61ddd20d579c95d710044b20a3440abbaee106462e8af624acfe95d0da19cc",
+    "bytes": 159751,
+    "pages": 3,
+    "assessment": "research/measurements/cycle13/appendix_contexts.json"
   }
 }

@@ -1,0 +1,72 @@
+{
+  "date_utc": "2026-10-03",
+  "date_los_angeles": "2026-10-02",
+  "source": {
+    "title": "Supporting Information — Extended Methods, Regev et al.2025, Radiocarbon dating of Jerusalem’s Siloam Dam links climate data and major waterworks",
+    "doi": "10.1073/pnas.2510396122",
+    "supplied_file": "pnas.2510396122.sapp (1).pdf",
+    "archive": "research/assets/plans/siloam-cycle13/regev2025-supporting-information.pdf",
+    "sha256": "6c61ddd20d579c95d710044b20a3440abbaee106462e8af624acfe95d0da19cc",
+    "bytes": 159751,
+    "pages": 3,
+    "inspection": "all original page images",
+    "figures": 0,
+    "tables": 0
+  },
+  "permits_as_printed": [
+    "A9518/2023",
+    "A9742/2024"
+  ],
+  "wall_contexts": [
+    {
+      "wall": "W001",
+      "page": 1,
+      "collection": "inter-stone hard yellowish mortar after removing several centimetres of exterior material"
+    },
+    {
+      "wall": "W114",
+      "page": 2,
+      "reported_relation": "attached to W001",
+      "collection": "horizontal top, between/under stones in core after removing surface mortar"
+    }
+  ],
+  "laboratory_controls": {
+    "page": 2,
+    "roots_observed": "outer surfaces and voids",
+    "physical_cleaning": "scalpel and fresh broken-surface microscopy",
+    "preparation": "acid-base-acid",
+    "calibration": "OxCal4.4.4/IntCal20",
+    "mixing_scope": "straw pieces from several chunks in one basket; individual basket IDs unreported"
+  },
+  "check": {
+    "id": "C13-SILOAM-MORTAR-COLLECTION-CONTROLS",
+    "question": "Are dated organics described as extracted from structural mortar after surface removal and root screening?",
+    "result": "Supported to published methods scope; independent contamination exclusion, basket/coat joins and storage duration unestablished"
+  },
+  "retained_check": "C11-SILOAM-DAM-MORTAR-TRANSFER remains unjoined; no second increment",
+  "unreported_context_joins": [
+    "L105/L105A floor/foundation",
+    "L108/RTT6089 plaster sample",
+    "L103 conduit",
+    "individual sample/basket/coat table"
+  ],
+  "old_charcoal_discrepancy_explained": false,
+  "progress": {
+    "new_scoped_primary_targets": 1,
+    "new_bounded_checks": 1,
+    "new_independent_field_campaigns": 0,
+    "new_conditional_assessments": 0,
+    "decisive_tests": 0,
+    "closures": 0,
+    "confirmed_deposits": 0,
+    "cumulative_primary_targets": 40,
+    "cumulative_cartographic_intakes": 5,
+    "cumulative_bounded_checks": 44,
+    "cumulative_conditional_assessments": 3,
+    "questions_in_progress": 9,
+    "questions_queued": 3
+  },
+  "coordinate_change": false,
+  "grade_change": false,
+  "access": "recovered genuine appendix; prior HTML response remains historical"
+}

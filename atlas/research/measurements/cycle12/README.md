@@ -24,3 +24,8 @@ Cumulative: **39 scoped primary targets / 5 cartographic-reference intakes / 43 
 4. **1982 Doq field plan, diary or verified later excavation report**: exact public file/permit locator still unlocated. No invented direct link or outreach.
 
 Publisher-produced main-article PDF remains unavailable as a binary; the supplied browser capture now preserves the article separately. The 2024 report and Netzer 2006 page-access gaps are resolved. Parked Feldman, Gerico and Peleg searches remain parked.
+
+
+## Appendix recovery, 3 October 2026 UTC
+
+A later supplied copy contains the genuine three-page extended methods, now fully inspected and archived. It adds sampling controls and the reported W114/W001 attachment, while L105/L108/L103 context joins remain unreported. The earlier HTML-copy failure above is retained as history. [Current appendix record](../cycle13/README.md).

@@ -53,3 +53,8 @@ On 2 October 2026, complete supplied-page archives replaced the selective covera
 ## Cycle12 source recovery, 3 October 2026 UTC
 
 [Birket2024 original report / all figures](birket2024-cycle12/README.md), [Regev larger PNGs / supplied main capture](siloam-cycle12/README.md), and [Netzer 2006 Doq pages / separate Cypros plan](netzer2006-doq/README.md) are archived with matched atlas copies, original provenance, page controls and checksums. The appendix attachment contains HTML and is recorded as a failed intake, not an original PDF. Full Netzerbook figure coverage remains uninspected.
+
+
+## Genuine Regev appendix recovery, 3 October 2026 UTC
+
+[Full three-page extended methods](siloam-cycle13/README.md) are archived unchanged with a matching atlas copy, checksum and provenance. No spatial figures/tables occur. Prior invalid-attachment history is retained; the appendix access gap is now resolved.
