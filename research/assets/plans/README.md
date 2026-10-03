@@ -66,3 +66,6 @@ On 2 October 2026, complete supplied-page archives replaced the selective covera
 
 
 [SWP1883 original Jericho pages](swp1883-jericho-waterworks/README.md): unchanged pp. 176/192/228/229 retain Birket Musa descriptions, a distinct Deir el Kelt plan and aqueduct/bridge drawings. Public-domain source; original/asset hashes, page mappings and exact-render fidelity checks recorded. These drawings establish no preferred pool-wall contact. No additional inspection count from archiving.
+
+
+[Netzer2001 complete AreaAC chapter and original plan-access context](netzer2001-area-ac/README.md): original pp.50–69, inline Plan13 p.52, title/rights, plan lists and rear folded-label/colour-plate context. The34-page extract preserves original content; all renders/texts match. Plans14/15/23 drawings remain unfolded-image access gaps.
