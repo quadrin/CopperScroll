@@ -1,0 +1,105 @@
+{
+  "date_utc": "2026-10-03",
+  "purpose": "Source provenance, exact inspection and missing original observations for frozen seven-locus engraving-order audit.",
+  "freeze_commit": "d7d3b6060dedc1d4b4182a620dcca79fc3a70ec2",
+  "sources": [
+    {
+      "id": "DJDIII1962",
+      "title": "Les petites grottes de Qumran, Planches",
+      "authors": "M. Baillet, J. T. Milik and R. de Vaux, with H. W. Baker",
+      "edition": "Clarendon, Oxford, 1962",
+      "asset": "research/assets/plans/djdIII1962/plates-volume.pdf",
+      "git_blob": "56194311e36b11bc792dbb91aa94fc061f956dc8",
+      "sha256": "b7a52c275ad42a333f4d825efd12425e11574aa00bdd76e72e41656de86a2eb2",
+      "bytes": 4795367,
+      "pdf_pages": 88,
+      "provenance": "Existing user-authorized repository archive; printed original-object photographs and paired handcopies, not a new original scan.",
+      "inspection": "DJD viewers60–67 inclusive: copies XLVIII/L/LII/LIV at60/62/64/66, photographs XLIX/LI/LIII/LV at61/63/65/67; full-page2x by integrator and independent reader. Integrator also full-page5x61/67; independent reader5x broad left-region crops61/63/65/67. Magnification adds no recovered resolution.",
+      "processing": "PyMuPDF rendering only; no new contrast restoration or metric measurements. Source photographs are strip/rotation montages; seams and duplicate observations retained.",
+      "reuse": "Existing archived asset reused; no new page-image upload, licence or independent witness claimed."
+    },
+    {
+      "id": "CSS_IMAGING",
+      "title": "Copper Scroll Studies, imaging chapter, Figs4.1–4.8",
+      "authors": "Marilyn J. Lundberg and Bruce Zuckerman",
+      "edition": "2004 paperback of2002 publication, editors George J. Brooke and Philip R. Davies",
+      "asset": "research/assets/plans/copper-scroll-studies2004/imaging-figures-pp51-53.pdf",
+      "git_blob": "813108fed79b11397f8c6d3be7fc31e5907fe0dc",
+      "sha256": "c6a7679b4d46172eb60baaf58fd569113df13ae867268c0e457dd9b7b1d95b9f",
+      "bytes": 162577,
+      "pdf_pages": 3,
+      "printed_pages": [
+        51,
+        52,
+        53
+      ],
+      "inspection": "All three pages visually read at2x by both readers; figures4.1–4.8 and process descriptions. Original full-book viewer=printed+17; this extract viewers1–3.",
+      "processing": "p51Cut15 and Cut10 original/restored/historical images; p52four-rotation Cut15 simulated flattening and Cuts5/6 composite; p53electronic outlining and drawing/photo overlay. Processed views are not calibrated height or independent original observations.",
+      "reuse": "Copyright/credits retained in existing archive; no new image upload or open licence asserted."
+    },
+    {
+      "id": "CSS_CONSERVATION",
+      "title": "The Conservation and Restoration of the Copper Scroll from Qumran",
+      "authors": "Régis Bertholon, Noël Lacoudre and Jorge Vasquez",
+      "edition": "Copper Scroll Studies, 2002, pp12–24",
+      "url": "https://www.researchgate.net/publication/313141460_The_conservation_and_restoration_of_the_copper_scroll_from_Qumran",
+      "inspection": "Author-posted full chapter web text pp12–24, including captions/Table1.1; figure pixels not inspected. No local source snapshot/hash recovered.",
+      "specific_targets": "pp16–17/Figs1.2–1.3 original surface at cuprite interface; pp19–20 selective cleaning rather than cleaning uniformly to original surface; pp21–23 radiography, flattening, moulding/electrotyping.",
+      "inference": "Apparent modern relief cannot automatically be treated as original incision depth; no Greek/Hebrew numeric depth or timing result recovered in this chapter.",
+      "encountered_assets": "Table1.1/Figs1.1–1.3 encountered as text/captions, not image inspections.",
+      "reuse": "Author-posted material says it may be subject to copyright; no open licence recovered. Retain link/access note; do not republish chapter/images."
+    },
+    {
+      "id": "REED_WSRP1988",
+      "title": "Dead Sea Scrolls Inventory Project, Fascicle2, Copper Scroll/Amman photographs",
+      "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
+      "inspection": "Catalogue text and cut/plate crosswalk only; actual1988 image files not obtained.",
+      "observation_campaign": "Bruce and Kenneth Zuckerman1988, original strips both sides, B&W/color, right/center/left rotations with top/bottom lights; some side lighting.",
+      "targets": "AWS12–21 candidate cuts1–10 cover columnsI–IV; exact per-locus cut/rotation registration remains unknown. AWS22looseCut10lower-right fragment is contextual only.",
+      "current_route": "https://dornsife.usc.edu/wsrp/for-scholars/",
+      "collection": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6ONSR7",
+      "catalogue": "https://dornsife.usc.edu/wsrp-temp/wp-content/uploads/sites/155/2023/05/Dead-Sea-Scrolls.pdf",
+      "catalogue_target": "Copper Scroll text ISF_TXT_00313, catalogue viewer4",
+      "access": "Old Inscriptifact replaced by USC Digital Library. Collection HTTP403 via available retrieval; no item IDs, IIIF manifests or files recovered. Bounded route search stopped. No browser fallback, sign-in, purchase or outreach.",
+      "reuse": "WSRP permits scholarly study with publication permission from collaborating institution required. No original images republished or permissions requested."
+    },
+    {
+      "id": "MAKER_FACSIMILE",
+      "title": "Copper Scroll facsimile production account",
+      "url": "https://facsimile-editions.com/cs/",
+      "inspection": "Maker process text only, not source-image inspection.",
+      "provenance": "Maker reports3D scanning three EDF electroformed plates. Synthetic backs derived by reversing front scans.",
+      "use": "Excluded as original-object calibrated metrology and as an independent physical verso witness. Manufacturer history/treasure narrative not adopted."
+    },
+    {
+      "id": "TOV_REPORT",
+      "title": "Some Palaeographical Observations Regarding the Cover Art",
+      "author": "Lika Tov, as named in inherited project records",
+      "edition": "Copper Scroll Studies, chapter20, pp288–290; disputed reportp289",
+      "url": "https://www.bloomsbury.com/us/copper-scroll-studies-9780567618313/",
+      "inspection": "Original chapter unavailable in current authorized workspace/retrieval. Earlier full-book references are not available files. No primary wording replicated.",
+      "needed": "pp288–290 including cover-art relation; old full-book viewer306 correspondsp289. Exact subject, datum, measurement type and uncertainty.",
+      "inherited_discrepancy": "Phase4summary includes KEN AND preceding Hebrew word2mm below surface of preceding words; F4.10 had shortened this to KEN alone. Neither proves a Greek-only groove-depth contrast.",
+      "reuse": "Metadata/link only; original chapter not republished."
+    },
+    {
+      "id": "PUECH_REPORT",
+      "title": "IV2 cancelled I/deeper engraving assertion",
+      "edition": "Exact cited edition/page unresolved; cancelled-I edition reading retained separately.",
+      "url": "https://brill.com/display/title/14988?language=en",
+      "retrieval_lead": "The Copper Scroll Revisited, 2015, commentarypp25–113; not verified location of the deeper-I claim.",
+      "inspection": "Primary wording/figure and source basis not recovered; book metadata is not inspection.",
+      "needed": "Exact passage, page and original-metal observation supporting deeper cancelled I; Greek-Greek correction is not a Greek/Hebrew chronological bridge."
+    },
+    {
+      "id": "METAL98",
+      "title": "Corrosion du rouleau de cuivre de Qumrân et localisation de la surface originelle",
+      "authors": "Régis Bertholon, Luc Robbiola and Noël Lacoudre",
+      "edition": "Metal98, 1998, pp125–135",
+      "url": "https://www.researchgate.net/profile/Regis-Bertholon/publication/313088974_Corrosion_du_rouleau_de_cuivre_de_Qumran_et_localisation_de_la_surface_originelle/links/588fc501aca272bc14bc6508/Corrosion-du-rouleau-de-cuivre-de-Qumran-et-localisation-de-la-surface-originelle.pdf",
+      "inspection": "PDF retrieval403/no extracted source text or figure inspection. Unread dependency, not corroborating measurement; bounded route stopped."
+    }
+  ],
+  "new_image_uploads": 0,
+  "archive_note": "Previously archived DJD/CSS PDFs reused. New online figures without recovered reproduction permission remain links/access notes. Metadata and catalogue records do not count as original-image inspection."
+}

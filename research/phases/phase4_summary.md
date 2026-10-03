@@ -56,8 +56,8 @@ Session 2, 2026-09-28. Desk research on texts, editions and drawings only.
 - **Script: the views differ.**
   - Milik: the Greek has the forms of the literary (book) script (DJD p. 221), while the Hebrew is closer to the notarial type (p. 216).
   - Lefkovits: the Ρ matches the scroll's qof and the Η its he/ḥet, so one hand engraved both (p. 503).
-  - Puech: the Ι at IV 2 is engraved more deeply.
-  - Lika Tov: in I 4, ΚΕΝ and the word before it lie 2 mm below the surface of the preceding words (CSS p. 289).
+  - Inherited Puech report: the cancelled Ι at IV 2 is deeper; exact primary passage/page and observation basis remain unverified. A Greek-Greek correction does not date the Greek relative to Hebrew.
+  - Inherited Tov report: ΚΕΝ **and the preceding Hebrew word** lie 2 mm below the preceding words (CSS p. 289). Original pp. 288–290 are unavailable in this audit; subject/datum and writing position versus sheet relief versus groove depth cannot yet be replicated. This is not a verified Greek-only depth measurement.
   - **No source in the files dates the Greek letter forms.**
 
 ## 4. The hypotheses and the tests
@@ -72,8 +72,8 @@ The full table, with sources and pages, is `tables/phase4_hypotheses.csv`.
 | H2 | Greek numerals | Ullendorff, Thiering, Zissu | T3: the values against the amounts | 0 of 5 match; 1 of 7 groups is a well-formed numeral; Ullendorff needs 4+ rules | **ruled out** for the amounts |
 | H3 | Hebrew words or fund codes | Lehmann, Lefkovits, Lurie, Allegro | Coverage | Words are proposed for only 2 of 7 groups | weak |
 | H4 | Labels, as in Greek temple inventories | Weitzman | T7: order | No alphabetic or numeric order | weak |
-| H5 | Marks of removed deposits, added later | Goranson | Needs the object | — | untested |
-| H6 | Initials of the persons who filled in the values | Lika Tov | Needs the object | — | untested |
+| H5 | Marks of removed deposits, added later | Goranson | Frozen seven-locus photo/provenance audit | Available reproductions cannot establish local order or a distinct later episode; removal needs independent evidence | not identifiable from available evidence |
+| H6 | Initials of the persons who filled in the values | Lika Tov | Report replication and local surface controls | Tov datum unverified; no calibrated original depth/hand or person attribution | not identifiable from available evidence |
 | H7 | A marker at the end of an entry | Wolters, Høgenhaven | T2: position | All 7 at entry ends; p = 0.0003 | **supported** as a description |
 | H8 | A separate sub-list or a second hand | Bar-Ilan; Puech (as a question) | T8: other changes of formula | The opening block differs, but at other points | partly supported |
 | H9 | One area or one kind of treasure | Pixner (Jerusalem); against: Richey | T5, T6 | No association (p = 0.60; all p ≥ 0.25) | Richey supported |
@@ -268,3 +268,32 @@ Next useful evidence: audit the published physical observations for H5/H6—whet
 ### Engraving-order criteria freeze — 3 October 2026
 
 User authorized surface audit. [Fixed protocol](../../deep_analysis/engraving_order_protocol.json) separates exact report replication, authenticated localstrokeorder, a distinct later episode and deposit-removal interpretation. Allseven editionloci and paired localHebrew/value controls retained; no invented depth threshold or reading choice. Greek-Greek correction atIV2 does not by itself bridgeGreek/Hebrew chronology. LocalGreek-after-Hebrew order could occur within original writing; separateepisode requires an intervening event. Corrosion/conservation and replica manufacture remain explicit. No new targetsurfaceimages inspected at this freeze; only source metadata/methodtext explored. Existing name/word results stay closed. Freeze adds no activity counts; source baseline56/5/63.
+
+
+### Engraving-order result — 3 October 2026
+
+**The available evidence cannot establish whether the Greek groups were engraved in a separate later episode.** [Criteria](../../deep_analysis/engraving_order_protocol.json) were published at `d7d3b6060dedc1d4b4182a620dcca79fc3a70ec2` before new target-image inspection and remain unchanged. [Structured seven-locus results](../../deep_analysis/engraving_order_results.json) retain every reading, local control and unknown; [source intake](../assets/plans/greek-engraving/source-intake.json) records hashes, plates, access failures and derivative status. This closes the bounded audit as **not identifiable from available evidence**; R11 remains In progress. No verified unused observation exists.
+
+Two readers independently inspected the existing [DJD III plates PDF](../assets/plans/djdIII1962/plates-volume.pdf): copies XLVIII/L/LII/LIV and original-object photograph reproductions XLIX/LI/LIII/LV, viewers 60–67. Both inspected [CSS printed 51–53/Figs. 4.1–4.8](../assets/plans/copper-scroll-studies2004/imaging-figures-pp51-53.pdf), including restoration, simulated flattening and electronic tracing descriptions. Full-page rendering and additional 5× views do not restore missing source resolution. The photographs are printed strip/rotation montages with speckling, gaps and limited tonal detail; this copy supplies neither a diagnostic lighting series nor calibrated geometry. Handcopies locate edition groups and neighboring lines; they are not physical temporal evidence. Exact line-to-cut/rotation registration remains unresolved.
+
+| Locus / retained reading | Paired copy/photo; PDF viewers | Physical result |
+|---|---|---|
+| I4 ΚΕΝ | XLVIII/XLIX;60/61 | Preceding-word/Greek surface relation unmeasurable; no authenticated crossing. |
+| I12 ΧΑΓ | XLVIII/XLIX;60/61 | Parent-stroke order unknown; amount comparison inapplicable. |
+| II2 ΗΝ | L/LI;62/63 | No authenticated Greek/value intersection or groove-floor relation. |
+| II4 ΘΕ/ΞΕ | L/LI;62/63 | Edition locator visible in copy; physical order/depth unknown. |
+| II9 ΔΙ | L/LI;62/63 | No authenticated Greek/Hebrew intersection. |
+| III7 ΤΡ/ΤΡΙ | LII/LIII;64/65 | No diagnostic parent-stroke/truncation mechanism; no new letter resolution. |
+| IV2 {Ι}ΣΚ/ΧΚ/ΞΚ | LIV/LV;66/67 | Loss/texture limit registration; no authenticated correction sequence or Greek/Hebrew chronology bridge. |
+
+At all seven loci preservation is uncertain, temporal coverage insufficient, local order unresolved and intervening event unassessed. **Zero accepted crossings means none authenticated in these copies; the object's actual crossing count is unknown.** This does not show that depth differences or later additions are absent. Deeper/different-tool/different-hand alone cannot establish an interval; even a local Greek stroke after Hebrew could belong to one writing session. A cancelled Greek Ι alone cannot bridge Greek/Hebrew timing. Removed-deposit meaning and a person's identity need further independent evidence.
+
+The inherited Tov citation is inconsistent: the older summary includes ΚΕΝ **and its preceding Hebrew word**, while F4.10 shortened it to ΚΕΝ alone. Original chapter 20, *Some Palaeographical Observations Regarding the Cover Art*, CSSpp. 288–290/report p. 289 was not recovered; do not call the2 mm statement measured Greek groove depth. The broader inherited subject and unknown datum are now retained. Puech's exact deeper-cancelled-Ι passage/page is also unrecovered; the2015 commentarypp. 25–113 is a retrieval lead, not an inspected citation. These source gaps block replication.
+
+The original conservators' [chapterpp. 12–24](https://www.researchgate.net/publication/313141460_The_conservation_and_restoration_of_the_copper_scroll_from_Qumran) was read as author-posted text, **without figure-pixel inspection**. Bertholon/Lacoudre/Vasquez locate the original surface inside corrosion layers (pp. 16–17/Figs1.2–1.3) and describe selective cleaning rather than uniformly exposing it (pp. 19–20). Therefore apparent modern relief cannot automatically be treated as original incision depth (our inference). The chapter supplies no recovered numeric Greek/Hebrew timing comparison. Captions/Table1.1 encountered; no open reproduction licence recovered, so new online figures remain linked rather than uploaded. The detailed Metal 98 pp. 125–135 PDF returned 403 and remains unread.
+
+The [commercial maker's process account](https://facsimile-editions.com/cs/) describes scanning EDF **electroformed copies**, with backs derived by reversing fronts. These scans cannot serve as direct original-object metrology or an independent physical verso witness. CSSp. 52 describes selecting photographed rotations to simulate flattening; its composites, restoration and electronic outlines remain processed evidence, not calibrated original height. Repeated views are not independent physical witnesses.
+
+**Exact new observations needed:** the [Reed/WSRP catalogue](https://lyingpen.uia.no/dssinventoryproject/fascicle2/) identifies Bruce/Kenneth Zuckerman's 1988 original-strip recto/verso photographs, right/center/left rotations with top/bottom lighting and occasional side lighting. AWS 12–21 cover candidate cuts 1–10/columnsI–IV; individual locus registration is still needed. [WSRP's current scholar route](https://dornsife.usc.edu/wsrp/for-scholars/) redirects from closed Inscriptifact to [USC Digital Library](https://digitallibrary.usc.edu/asset-management/2A3BF1S6ONSR7); catalogue textID `ISF_TXT_00313`. Collection retrieval returned 403; original files/IIIF manifests were not obtained. Publication requires the collaborating institution's permission; no outreach/sign-in/purchase occurred. Original lighting files or calibrated original-surface geometry must come with conservation/provenance records. The [CSS publisher](https://www.bloomsbury.com/us/copper-scroll-studies-9780567618313/) supplies the stable route for Tovpp. 288–290; [Puech2015](https://brill.com/display/title/14988?language=en) remains the bounded passage-retrieval lead. Checked routes are stopped until specified new material is supplied or accessible.
+
+Accounting adds one fresh primary-source **text scope** (conservation chapterpp. 12–24) and one combined bounded timing-coverage audit. Reinspection of existing exposed DJD/CSS assets and catalogue/maker routing add no second original-source or field campaign. Totals **57 source scopes  /5 cartographic intakes  /64 bounded checks**, with zero additional decisive tests, question closures, confidence, coordinates or identification outcomes. Overall states remain 10 In progress /2 Queued. Name/common-noun benchmark stays complete; Jericho remains parked; draft PR7 is unmerged.

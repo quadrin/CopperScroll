@@ -1,0 +1,266 @@
+{
+  "date_utc": "2026-10-03",
+  "claim": "Can available original-object evidence establish local stroke order or a separate later engraving episode for Greek groups?",
+  "freeze_commit": "d7d3b6060dedc1d4b4182a620dcca79fc3a70ec2",
+  "protocol_path": "deep_analysis/engraving_order_protocol.json",
+  "protocol_sha256": "a2ac8a2585cf163e9b0e2847a6285f250de6895b05518281e8d228af4e9f12c3",
+  "exposure": "Exploratory, already exposed groups/reports/derivatives; no verified unused prediction. Freeze published before new target-photo inspection. Frozen protocol unchanged.",
+  "source_manifest": "research/assets/plans/greek-engraving/source-intake.json",
+  "reviewers": {
+    "integrator": "Full pairedDJD60–67/CSS51–53 plus5xDJD61/67.",
+    "independent_image_reader": "Independently read pairedDJD60–67,5xleft-region61/63/65/67 andCSS51–53; before integrator synthesis.",
+    "independent_source_threads": "Separate primary-report acquisition and conservation/source-provenance review."
+  },
+  "loci": [
+    {
+      "id": "I4",
+      "edition_reading": "ΚΕΝ",
+      "column": "I",
+      "line": "4",
+      "cuts_candidate": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "Reed_AWS_candidate": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "DJD_photo_plate": "XLIX",
+      "DJD_handcopy_plate": "XLVIII",
+      "copy_viewer_page": 60,
+      "photo_viewer_page": 61,
+      "provenance": "Printed photograph of original object plus derivative handcopy; scanned publication, no direct object measurement.",
+      "registration": "Edition locus located in paired copy; precise original line-to-cut/rotation registration unresolved.",
+      "physical_crossing": "unresolved",
+      "local_order": "unresolved",
+      "intervening_event": "unassessed",
+      "original_groove_preservation": "uncertain",
+      "temporal_coverage": "insufficient",
+      "metric_depth_mm": null,
+      "amount_control": "not_measured",
+      "reader_agreement": "Integrator and independent image reader agree on insufficient evidence; no authenticated ordering mechanism accepted.",
+      "comment": "No authenticated Greek-Hebrew/value intersection established. KEN/preceding-word surface relation cannot be measured; Tov datum/type unavailable.",
+      "closure": "not identifiable from available evidence"
+    },
+    {
+      "id": "I12",
+      "edition_reading": "ΧΑΓ",
+      "column": "I",
+      "line": "12",
+      "cuts_candidate": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "Reed_AWS_candidate": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "DJD_photo_plate": "XLIX",
+      "DJD_handcopy_plate": "XLVIII",
+      "copy_viewer_page": 60,
+      "photo_viewer_page": 61,
+      "provenance": "Printed photograph of original object plus derivative handcopy; scanned publication, no direct object measurement.",
+      "registration": "Edition locus located in paired copy; precise original line-to-cut/rotation registration unresolved.",
+      "physical_crossing": "unresolved",
+      "local_order": "unresolved",
+      "intervening_event": "unassessed",
+      "original_groove_preservation": "uncertain",
+      "temporal_coverage": "insufficient",
+      "metric_depth_mm": null,
+      "amount_control": "inapplicable",
+      "reader_agreement": "Integrator and independent image reader agree on insufficient evidence; no authenticated ordering mechanism accepted.",
+      "comment": "Copy locates printed group. No defensible physical parent-stroke order; printed amount comparison inapplicable.",
+      "closure": "not identifiable from available evidence"
+    },
+    {
+      "id": "II2",
+      "edition_reading": "ΗΝ",
+      "column": "II",
+      "line": "2",
+      "cuts_candidate": [
+        5,
+        6
+      ],
+      "Reed_AWS_candidate": [
+        16,
+        17
+      ],
+      "DJD_photo_plate": "LI",
+      "DJD_handcopy_plate": "L",
+      "copy_viewer_page": 62,
+      "photo_viewer_page": 63,
+      "provenance": "Printed photograph of original object plus derivative handcopy; scanned publication, no direct object measurement.",
+      "registration": "Edition locus located in paired copy; precise original line-to-cut/rotation registration unresolved.",
+      "physical_crossing": "unresolved",
+      "local_order": "unresolved",
+      "intervening_event": "unassessed",
+      "original_groove_preservation": "uncertain",
+      "temporal_coverage": "insufficient",
+      "metric_depth_mm": null,
+      "amount_control": "not_measured",
+      "reader_agreement": "Integrator and independent image reader agree on insufficient evidence; no authenticated ordering mechanism accepted.",
+      "comment": "No authenticated Greek-value intersection or local groove-floor relation established.",
+      "closure": "not identifiable from available evidence"
+    },
+    {
+      "id": "II4",
+      "edition_reading": "ΘΕ/ΞΕ",
+      "column": "II",
+      "line": "4",
+      "cuts_candidate": [
+        5,
+        6
+      ],
+      "Reed_AWS_candidate": [
+        16,
+        17
+      ],
+      "DJD_photo_plate": "LI",
+      "DJD_handcopy_plate": "L",
+      "copy_viewer_page": 62,
+      "photo_viewer_page": 63,
+      "provenance": "Printed photograph of original object plus derivative handcopy; scanned publication, no direct object measurement.",
+      "registration": "Edition locus located in paired copy; precise original line-to-cut/rotation registration unresolved.",
+      "physical_crossing": "unresolved",
+      "local_order": "unresolved",
+      "intervening_event": "unassessed",
+      "original_groove_preservation": "uncertain",
+      "temporal_coverage": "insufficient",
+      "metric_depth_mm": null,
+      "amount_control": "not_measured",
+      "reader_agreement": "Integrator and independent image reader agree on insufficient evidence; no authenticated ordering mechanism accepted.",
+      "comment": "Copy locates group/readings context but provides no physical order or calibrated depth.",
+      "closure": "not identifiable from available evidence"
+    },
+    {
+      "id": "II9",
+      "edition_reading": "ΔΙ",
+      "column": "II",
+      "line": "9",
+      "cuts_candidate": [
+        5,
+        6
+      ],
+      "Reed_AWS_candidate": [
+        16,
+        17
+      ],
+      "DJD_photo_plate": "LI",
+      "DJD_handcopy_plate": "L",
+      "copy_viewer_page": 62,
+      "photo_viewer_page": 63,
+      "provenance": "Printed photograph of original object plus derivative handcopy; scanned publication, no direct object measurement.",
+      "registration": "Edition locus located in paired copy; precise original line-to-cut/rotation registration unresolved.",
+      "physical_crossing": "unresolved",
+      "local_order": "unresolved",
+      "intervening_event": "unassessed",
+      "original_groove_preservation": "uncertain",
+      "temporal_coverage": "insufficient",
+      "metric_depth_mm": null,
+      "amount_control": "not_measured",
+      "reader_agreement": "Integrator and independent image reader agree on insufficient evidence; no authenticated ordering mechanism accepted.",
+      "comment": "No authenticated Greek-Hebrew intersection established.",
+      "closure": "not identifiable from available evidence"
+    },
+    {
+      "id": "III7",
+      "edition_reading": "ΤΡ/ΤΡΙ",
+      "column": "III",
+      "line": "7",
+      "cuts_candidate": [
+        7,
+        8
+      ],
+      "Reed_AWS_candidate": [
+        18,
+        19
+      ],
+      "DJD_photo_plate": "LIII",
+      "DJD_handcopy_plate": "LII",
+      "copy_viewer_page": 64,
+      "photo_viewer_page": 65,
+      "provenance": "Printed photograph of original object plus derivative handcopy; scanned publication, no direct object measurement.",
+      "registration": "Edition locus located in paired copy; precise original line-to-cut/rotation registration unresolved.",
+      "physical_crossing": "unresolved",
+      "local_order": "unresolved",
+      "intervening_event": "unassessed",
+      "original_groove_preservation": "uncertain",
+      "temporal_coverage": "insufficient",
+      "metric_depth_mm": null,
+      "amount_control": "not_measured",
+      "reader_agreement": "Integrator and independent image reader agree on insufficient evidence; no authenticated ordering mechanism accepted.",
+      "comment": "Nearby upright strokes remain source context, not proof of a third active letter or identifiable truncation mechanism.",
+      "closure": "not identifiable from available evidence"
+    },
+    {
+      "id": "IV2",
+      "edition_reading": "{Ι}ΣΚ/ΧΚ/ΞΚ",
+      "column": "IV",
+      "line": "2",
+      "cuts_candidate": [
+        9,
+        10
+      ],
+      "Reed_AWS_candidate": [
+        20,
+        21
+      ],
+      "DJD_photo_plate": "LV",
+      "DJD_handcopy_plate": "LIV",
+      "copy_viewer_page": 66,
+      "photo_viewer_page": 67,
+      "provenance": "Printed photograph of original object plus derivative handcopy; scanned publication, no direct object measurement.",
+      "registration": "Edition locus located in paired copy; precise original line-to-cut/rotation registration unresolved.",
+      "physical_crossing": "unresolved",
+      "local_order": "unresolved",
+      "intervening_event": "unassessed",
+      "original_groove_preservation": "uncertain",
+      "temporal_coverage": "insufficient",
+      "metric_depth_mm": null,
+      "amount_control": "not_measured",
+      "reader_agreement": "Integrator and independent image reader agree on insufficient evidence; no authenticated ordering mechanism accepted.",
+      "comment": "Nearby loss and reproduced texture limit registration. No diagnostic Greek-Greek correction sequence or Greek-Hebrew chronology bridge authenticated.",
+      "closure": "not identifiable from available evidence"
+    }
+  ],
+  "accepted_authentic_crossings": 0,
+  "crossing_count_interpretation": "Zero accepted from these reproductions; actual original-object crossing count unknown, not zero.",
+  "claims": {
+    "A_report_replication": "not identifiable: Tov original wording/datum and Puech exact passage unavailable.",
+    "B_local_order": "not identifiable from available evidence at all seven loci.",
+    "C_distinct_later_episode": "not identifiable; no authenticated intervening event/chronology bridge. Even local Greek-after-Hebrew could occur in one writing session.",
+    "D_removed_deposit_meaning": "not identifiable; timing would not alone establish removal or marked person."
+  },
+  "surviving_alternatives": [
+    "Same writing session",
+    "Distinct later episode",
+    "Different hand/tool without established interval",
+    "Original relief obscured/altered by corrosion/conservation; derivative processing ambiguity"
+  ],
+  "no_rejection_from_absence": "Missing diagnostic coverage and unavailable metrology establish neither no crossings nor absence of depth differences; no rejection of later addition or universal seven-group layer.",
+  "bookkeeping": {
+    "source_scopes_before": 56,
+    "source_scopes_added": 1,
+    "added_scope": "Bertholon/Lacoudre/Vasquez2002conservation chapterpp12–24 author-posted text; original figure pixels uninspected. Existing exposedDJD/CSS image reinspection and source/catalogue routing add no second source.",
+    "source_scopes_after": 57,
+    "cartographic_intakes": 5,
+    "bounded_checks_before": 63,
+    "bounded_checks_added": 1,
+    "added_check": "Combined report/provenance and seven-locus photographic timing-coverage audit; metrology unavailable.",
+    "bounded_checks_after": 64,
+    "decisive_tests_added": 0,
+    "question_closures_added": 0,
+    "identifications_added": 0,
+    "confidence_or_coordinate_changes": false,
+    "question_state": "R11 In progress;10 In progress/2 Queued; Jericho parked."
+  },
+  "reopen_condition": "Specified new primary Tov/Puech passages or original multi-light/metric surface observations with conservation provenance and accurate locus registration; a larger name list does not reopen this result."
+}
