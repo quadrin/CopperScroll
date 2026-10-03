@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "blocked_missing_eligible_corpus",
+  "status": "blocked_incomplete_actual_attestation_corpus",
   "claim": "Exact prefix compatibility with independently attested Greek-script personal-name forms in a fixed finite corpus; no attribution of meaning, person or engraving hand.",
   "source_eligibility": "Tal Ilan, Lexicon of Jewish Names in Late Antiquity, Part I: Palestine 330 BCE–200 CE (2002). Jewish bearers only, not all regional inhabitants. Include securely personal, independently attested original Greek-script forms from all name-origin sections. Exclude doubtful/nonpersonal entries, titles, places, ethnics, restorations, hypothetical Greek back-transliterations, and any attestation directly or indirectly dependent on 3Q15. A name supported by an independent attestation remains eligible through that attestation only.",
   "date_geography_rule": "Primary: attestation date interval wholly contained in 100 BCE–70 CE and independently localized in Judaea, Galilee or Peraea. Dates use signed historical years (-100 to 70; no year zero). Unknown or overlapping-only date intervals and uncertain localizations are excluded and logged, not treated as absence. Source region crosswalk must be documented from metadata before matching; no polygon or inferred local birth from name alone. Separate sensitivity: full Ilan Part I Palestine 330 BCE–200 CE corpus under the same certainty/source exclusions. These windows are operational exploratory populations, not a dating of the scroll.",
@@ -51,6 +51,9 @@
   "corpus_sha256": null,
   "mc_draws": 0,
   "seed": 1729,
-  "acquisition_needed": "Full Ilan Part I entry corpus, plus introduction pp.32–54 (especially Dating p.50), not Greek-origin names alone. Preview ends at printed p.25; no entries recovered.",
-  "source_url": "https://www.mohrsiebeck.com/en/book/lexicon-of-jewish-names-in-late-antiquity-9783161587931/"
+  "acquisition_needed": "Full book acquired and inspected by scoped review. Remaining: complete independently dated Greek-form attestations/localization within the original100BCE–70CE/Judaea–Galilee–Peraea population; unfiltered index and person/event D dates do not supply this corpus.",
+  "source_url": "https://www.mohrsiebeck.com/en/book/lexicon-of-jewish-names-in-late-antiquity-9783161587931/",
+  "source_acquired": true,
+  "source_sha256": "63595934818ca35e2f5ac90effe0ece7f7c953b5676b2c13e2a83a0d040be680",
+  "source_adjusted_pilot": "ilan2002/pilot_freeze.json"
 }

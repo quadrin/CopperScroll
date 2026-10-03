@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "status": "rules_fixed_before_scoring_input_pending",
+  "scope": "Exploratory pilot of visually verified Greek forms reported in Ilan O fields for curated bearers with closed person/event D intervals within100BCE–70CE. No full-book eligible denominator or independent Greek-form dating/localization claim.",
+  "source_sha256": "63595934818ca35e2f5ac90effe0ece7f7c953b5676b2c13e2a83a0d040be680",
+  "source_pages": 515,
+  "source_printed_viewer_offset": 27,
+  "candidate_rule": "Traverse printed59–454 all origin sections, appendix/addendum using final parser. Take structurally clear numbered O records, E dash or Second name, closed D interval fully contained−100..70, nonblank O, no unresolved structural/orthography flags beyond carried heading uncertainty. Inspect ALL198 fixed candidates by page image; accept only Greek O forms and record source references. No source headword substitution, no transliteration. Footnote restorations, doubtful/unresolved glyphs or name status remain unknown/excluded. Exclude any target-derived attestations. Latin/Hebrew-only O rows contribute no Greek form. Record all inclusion/exclusion reasons.",
+  "candidate_count": 198,
+  "candidate_json_sha256": "eb0d669e6adf8188a3d1e3784469e0ab004e13524e94e38ad89534958b4b4d96",
+  "population_rule": "Condition on Ilan’s curated Palestinian-Jewish membership with E certainty filter; no independent Judaea/Galilee/Peraea geolocation. Second names qualify as personal spellings, not independent bearers. Dates are source-reported person/event contexts and can come from later Greek texts. This source-adjusted exploratory branch differs from original actual-attestation-date primary.",
+  "unit_rule": "Unique normalized reported Greek forms. Stable form IDs, with occurrence/record IDs and source citations in audit. No claim that distinct form IDs count distinct onomastic lexemes or persons; aliases and repeated source traditions do not constitute independent observations.",
+  "normalization": "Use existing runner NFD/uppercase/24-letter alphabet/sigma folding with iota_subscript reject. Forms transcribed uppercase without accents must be visually verified; no glyph choice based on target fit.",
+  "control_rule": "Same frozen primary/readings/12-combination sensitivity envelope and exact shape/uniform24 nulls as original protocol. Report all primary/union/branch results. Do not pick minimump or claim calibrated historical-language likelihood. No ordinary-word control is presently frozen.",
+  "decision_rule": "Describe exact matches/misses in this finite audited pilot and conditional artificial-letter reference tails. Missing Greek forms, unresolved metadata, missed parser starts and unselected uncertain/open-D records remain unknown. No book-wide negative, universal historical compatibility test, statistical confirmation of initials, person identification or engraving-hand claim. Historical meaning remains not identifiable from available evidence.",
+  "exposure_rule": "All source extraction/transcription and selectedname exposures exploratory; all seven groups and Josephus already known. No held-out prediction. Candidate selection fixed before target-prefix queries.",
+  "freeze_requirement": "Publish selected CSV, per-candidate audit, input hashes, parser/normalization provenance and filled manifest in a separate commit before historical prefix scoring.",
+  "original_design_preserved": "Independent100BCE–70CE Greek-form attestation dates and independently localizedJudaea/Galilee/Peraea remain separate from this pilot and unfulfilled as a complete corpus. Full330BCE–200CE eligible sensitivity also unfulfilled; unfiltered Greek index not used as an eligible corpus."
+}

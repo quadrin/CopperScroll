@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "status": "frozen_before_scoring",
+  "claim": "Exact prefix compatibility in the fixed image-verified reported-Greek-form person-period PILOT. Not a complete eligible Ilan corpus or historical identification.",
+  "source_eligibility": "Source-sha-pinned full Ilan PartI. Fixed198 metadata candidates; each explicitly image/note audited. Secure O Greek forms only; no headword substitution, nonGreek spelling, restoration, title/name ambiguity or target-derived attestation. Preserve all198 audit outcomes. Independence field means from3Q15-derived names, not a new source tradition or unused observation.",
+  "date_geography_rule": "Closed source-reported PERSON/EVENT D interval whollywithin100BCE–70CE; conditional on Ilan curated Palestinian-Jewish membership and neutral/Second-name E. ActualGreek-form date and independentlylocalizedJudaea/Galilee/Peraea are NOT established by this pilot. Original strict actual-attestation branch preserved separately. Unresolved parser cases and open dates remain unknown.",
+  "lemma_alias_rule": "Unique normalized reported Greek FORMS. name_id is a SHA256 form ID, not a distinct onomastic lemma/person. Repeated occurrences/source citations are preserved separately without weighting; slash alternatives kept only when sourceGreek and clear.",
+  "iota_subscript": "reject",
+  "normalization": "Unicode NFD before uppercasing; remove combining accent/breathing marks; sigma/final/lunate sigma to Σ. Only one token composed of the 24 modern Greek uppercase letters accepted; punctuation, spaces, restorations and other alphabets rejected. Iota subscript rejected and logged; no automatic transliteration or editorial reconstruction. Lunate epsilon in the scroll reading is edition-based Ε, not an unrestricted input character replacement.",
+  "primary_readings": [
+    "ΚΕΝ",
+    "ΧΑΓ",
+    "ΗΝ",
+    "ΘΕ",
+    "ΔΙ",
+    "ΤΡ",
+    "ΣΚ"
+  ],
+  "reading_menu": [
+    [
+      "ΚΕΝ"
+    ],
+    [
+      "ΧΑΓ"
+    ],
+    [
+      "ΗΝ"
+    ],
+    [
+      "ΘΕ",
+      "ΞΕ"
+    ],
+    [
+      "ΔΙ"
+    ],
+    [
+      "ΤΡ",
+      "ΤΡΙ"
+    ],
+    [
+      "ΣΚ",
+      "ΧΚ",
+      "ΞΚ"
+    ]
+  ],
+  "reading_scope": "Edition-based. The 12 combinations are a deliberately broad sensitivity envelope, not 12 coherent published editions. Preserve the individual editions and uncertainty in the evidence record. Proposed ΚΑΓειρας does not license ΚΑΓ. Puech’s cancelled Ι in {Ι}ΣΚ is inactive. Unresolved strokes remain unresolved; no reading chosen by name fit.",
+  "control_rule": "Primary exact null: independent slot prefixes uniformly sampled conditional on each C/V pattern (CVC,CVC,VC,CV,CV,CC,CC), with seven vowels/seventeen consonants. Secondary uniform 24-letter null. Union controls preserve shared tails and number of distinct alternative first letters; nested ΤΡΙ is subsumed by ΤΡ for existence matching. Exact slot probabilities and Poisson-binomial tail; disclose all branches, primary and union, no selection of smallest tail. This artificial letter null is not a historical language-generating model or a personal-initial likelihood ratio.",
+  "exposure_limit": "All seven groups, Josephus and previously proposed persons are already exposed. No verified unused observation. Entire run exploratory; a newly downloaded corpus is not automatically a holdout.",
+  "decision_rule": "Disclose exact pilot matches/misses, all primary/union/branch tails under artificial letter controls. No book-wide negative, no universal historical-compatibility decision, no person/meaning/hand identification. Incomplete parser detection/eligibility and unused-observation gaps remain. Historical initials meaning stays not identifiable from available evidence.",
+  "corpus_csv": "pilot_forms.csv",
+  "corpus_sha256": "41903a16042dbc76fcf1449f743078380e4524a5dcbed76e7dfe102150c3fe81",
+  "mc_draws": 0,
+  "seed": 1729,
+  "source_url": "https://www.mohrsiebeck.com/en/book/lexicon-of-jewish-names-in-late-antiquity-9783161587931/",
+  "source_acquired": true,
+  "source_sha256": "63595934818ca35e2f5ac90effe0ece7f7c953b5676b2c13e2a83a0d040be680",
+  "selection_policy": "pilot_selection_policy.json",
+  "candidate_list_sha256": "eb0d669e6adf8188a3d1e3784469e0ab004e13524e94e38ad89534958b4b4d96",
+  "audit_sha256": "c81539594cc5d0e4e0ac1b9a45140890bf62d563e6c22c827318a2d8fbed55e1",
+  "occurrences_sha256": "6cb7168ce5f20713da49890f0c48a494ae497e55e1c6876a0536cbec93bec698",
+  "selection_before_scoring": true,
+  "code_path": "../initials_control.py",
+  "freeze_commit": "This file/input commit must be published before scoring; identify that immutable commit in result provenance."
+}

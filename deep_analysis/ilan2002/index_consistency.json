@@ -1,0 +1,16 @@
+{
+  "scope": "sourceO/indextranscriptionconsistencyonly_notprefixscoring",
+  "unique_forms": 107,
+  "index_rows": 971,
+  "outliers": [
+    "ΑΜΑΡΑΜΟΣ"
+  ],
+  "outlier_resolution": "O at printed203 explicitlyΑΜΑΡΑΜΟΣ; index455R17 explicitlyΑΜΡΑΜΟΣ. Retain literalO, record source-internal index discrepancy.",
+  "corrections_before_scoring": {
+    "pilot_forms": {
+      "ΒΑΡΑΒΒΑΣ": "ΒΑΡΑΒΑΣ",
+      "ΣΑΜΑΟΣ": "ΣΑΜΑΙΟΣ"
+    },
+    "index_transcriptions": 6
+  }
+}

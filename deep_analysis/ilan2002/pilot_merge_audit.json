@@ -1,0 +1,58 @@
+{
+  "fixed_pilot_records": 198,
+  "validation_records": 198,
+  "all_selected_records_have_explicit_validation": true,
+  "validator_status_counts": {
+    "accepted": 184,
+    "excluded": 8,
+    "unknown": 6
+  },
+  "effective_status_counts": {
+    "accepted": 182,
+    "excluded": 8,
+    "unknown": 8
+  },
+  "accepted_form_occurrences": 193,
+  "unique_normalized_forms": 107,
+  "name_id_semantics": "normalized orthographic form; NOT unique onomastic lemma or bearer",
+  "date_claim": "New exploratory reported-person-period pilot; original actual-attestation branch not replaced",
+  "population_limit": "Fixed source-audited pilot, NOT complete eligible Ilan corpus",
+  "target_prefix_queries_or_scores": 0,
+  "freeze_status": "not_frozen_by_this_helper",
+  "inputs": [
+    {
+      "path": "tmp/greek-initials-full/pilot-review-rows.json",
+      "sha256": "eb0d669e6adf8188a3d1e3784469e0ab004e13524e94e38ad89534958b4b4d96"
+    },
+    {
+      "path": "tmp/greek-initials-full/parser/final-raw/attestations_raw.jsonl",
+      "sha256": "84f5e1e90bde602e275d246967d584c9a5dca1f2a17bd0d430e7555730517837"
+    },
+    {
+      "path": "tmp/pilot-validated-a.jsonl",
+      "sha256": "658784da3b8107d90126460c6d17fb0b0996bcde4924b72f2c8091b410d71c96"
+    },
+    {
+      "path": "tmp/pilot-validated-b.jsonl",
+      "sha256": "61a63162f28b108674788f492ded6c29b0c967b797295da350f9ca2b5ea194af"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tmp/greek-initials-full/pilot-merged/pilot_forms.csv",
+      "sha256": "41903a16042dbc76fcf1449f743078380e4524a5dcbed76e7dfe102150c3fe81",
+      "repository_path": "deep_analysis/ilan2002/pilot_forms.csv"
+    },
+    {
+      "path": "tmp/greek-initials-full/pilot-merged/pilot_form_occurrences.csv",
+      "sha256": "6cb7168ce5f20713da49890f0c48a494ae497e55e1c6876a0536cbec93bec698",
+      "repository_path": "deep_analysis/ilan2002/pilot_form_occurrences.csv"
+    },
+    {
+      "path": "tmp/greek-initials-full/pilot-merged/pilot_validation_decisions.json",
+      "sha256": "c81539594cc5d0e4e0ac1b9a45140890bf62d563e6c22c827318a2d8fbed55e1",
+      "repository_path": "deep_analysis/ilan2002/pilot_validation_decisions.json"
+    }
+  ],
+  "serialization": "Canonical LF CSV; Greek/source field values unchanged from reviewed merge."
+}
