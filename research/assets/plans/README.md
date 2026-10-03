@@ -39,7 +39,7 @@ Archival recovery alone does not increment decisive tests or close research ques
 
 ## Figure coverage rule
 
-Archive every map, plan, layout, section, aerial image, and photograph of terrain or ruins encountered in a supplied source, including material without an immediate research application. Preserve captions and surrounding context, retain source identity and printed/PDF page mapping, and mirror assets under `atlas/`. If coverage is incomplete, state the specific scope rather than claiming all figures.
+Archive every potentially useful figure, table and chart encountered during research, including supplied sources, when reproduction is permitted. Include every map, plan, layout, section, aerial image, and photograph of terrain or ruins, even without an immediate research application. Preserve captions and surrounding context, retain source identity and printed/PDF page mapping, and mirror assets under `atlas/`. Where copying is restricted, retain the source link and a retrieval/access note. If coverage is incomplete, state the specific scope rather than claiming all figures.
 
 On 2 October 2026, complete supplied-page archives replaced the selective coverage of Sion’s 42-page report and Manasseh survey volumes II (809 supplied pages), III (615) and IV (780). These 2,246 pages retain all their figures. Earlier selected extracts remain convenience links. [Coverage and file manifest](complete-figure-coverage-2026-10-02.json).
 
