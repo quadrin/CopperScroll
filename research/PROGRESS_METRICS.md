@@ -33,6 +33,10 @@ An **unexcavated-alternative inventory** starts from entry constraints and a dec
 
 Multiple scopes in one publication and several publications from the same excavation are not independent observations. A later citation, reprint or inherited plan supplies no new corroboration by itself. An independent-observation/campaign total awaits a provenance audit.
 
+## Test decisions and legacy records
+
+[AGENTS.md](https://github.com/quadrin/CopperScroll/blob/main/AGENTS.md) defines the frozen-test decisions: supported relative to registered alternatives, rejected, or not identifiable from available evidence. The [active test](https://github.com/quadrin/CopperScroll/blob/main/research/ACTIVE_TEST.md) records the current decision and reopening condition. Legacy inconclusive packets remain unchanged; mapping their limitations to a stopping decision creates no new completed test or identification count. Branch-level results remain separate from whole-candidate outcomes.
+
 ## Updating the register
 
 Add or revise a source-linked ledger row, state the branch/phase/datum/control conditions, and derive the relevant counts from those rows. Preserve superseded records with dated reasons. Keep unknown denominators null. Mirror the ledger and this note under atlas/research; keep the active tracker byte-identical to its special atlas mirror. Historical cycle totals remain dated activity records.

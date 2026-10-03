@@ -1,4 +1,6 @@
-# Instructions for the next session
+# Historical session handoff: 1 October 2026
+
+For current sessions, follow [AGENTS.md](../../AGENTS.md) and [ACTIVE_TEST.md](../ACTIVE_TEST.md). The startup steps, priorities and access states below preserve the original handoff; read them only when needed for its evidence or snapshot history.
 
 **Publication checkpoint:** this folder is published with the research previously saved in local commits df390b9 and e4dedc9. Their earlier “not pushed” status describes the ZIP snapshot checkpoint. Inspect live GitHub main before treating either update as pending. The Git bundle and original package files mentioned below belong to the downloadable handoff ZIP, rather than this repository folder.
 

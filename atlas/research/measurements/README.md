@@ -1,5 +1,7 @@
 # Parallel measurement worklist
 
+Historical worklist and reproducibility index. Current session scope and next action live only in [ACTIVE_TEST.md](https://github.com/quadrin/CopperScroll/blob/main/research/ACTIVE_TEST.md); queue.json and the cycle plans below retain their dated states.
+
 Current headline counters are [identification outcomes and coverage](https://github.com/quadrin/CopperScroll/blob/main/research/PROGRESS_METRICS.md). The following cycle/source totals are activity history; their growth does not establish stronger candidate identification.
 
 
@@ -29,13 +31,9 @@ python iv17_measurements.py
 
 These scripts use Python's standard library. The IV/17 script recomputes numbers from recorded pixel picks; independent redigitization requires the original source page, whose checksum and render are in its JSON. The Hyrcania audit uses stored WGS84 points; it does not rerun the EPSG transformation. Sequence inputs are pinned copies with hashes in the manifest.
 
-## Parallel execution and updates
+## Recorded execution context
 
-Each lane can continue while another awaits records. Geometry workers preserve independent annotations, method and outputs in their packet. The unit lane can consume a documented threshold after the cave or phase lane establishes it. The sequence lane can run independently of site-survey geometry.
-
-A single integrator updates the queue, source/candidate notes, main tracker and atlas mirrors after reviewing outputs. Source-native plan coordinates remain separate from geographic coordinates. Preserve failed and inconclusive results. Retrieve originals through the source links in the packets when the supplied copies are unavailable.
-
-Record setup progress separately: six tracks configured, four with recorded pilot/audit outputs, two with protocols and source requirements. After cycle 4, research totals are 21 primary targets / 5 cartographic intakes / 21 bounded checks / 0 decisive candidate tests / 0 closures. Reinspection, arithmetic and repeated computation add no primary observations. Any later counted test needs its explicit hypothesis, inspected evidence and result.
+The original lanes used independent annotations and one integrator. Current execution/update rules are in [AGENTS.md](https://github.com/quadrin/CopperScroll/blob/main/AGENTS.md). Setup totals remain six tracks configured, four pilot/audit outputs and two protocols awaiting inputs. After cycle 4: 21 primary targets / 5 cartographic intakes / 21 bounded checks / 0 decisive tests / 0 closures. Later totals below are dated activity history.
 
 ## Cycle 2 completed
 
