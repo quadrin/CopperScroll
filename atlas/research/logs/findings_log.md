@@ -1167,3 +1167,9 @@ Both supplied books opened. Final-report pp. 74, 82, 84–85 image-checked: pres
 ## Siloam coin cycle 10 — 2 October 2026 Los Angeles
 
 [Original coin catalogue, context and phase audit](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle10/README.md). Foundationcoin 20/L105/1092 is year four (69/70 CE); fill coin 19 is equally late. The published foundation context supports a post-minting construction terminus; exact completion and sealing require archaeological upper bounds. One full source/one bounded check added: totals 36 / 5 cartographic-reference intakes / 39 checks / 3 conditional assessments / 0 decisive / 0 closures. Article original and two derivative pages archived and mirrored. No geographic/grade/state changes or outreach.
+
+
+
+## Parallel cycle 11 — 3 October 2026 UTC integration
+
+Inspections completed 2 October. Two new scoped primary targets and three bounded checks: cumulative 38 / 5 cartographic-reference intakes / 42 bounded checks / 3 conditional assessments / 0 decisive tests / 0 closures / 0 confirmed individual deposits. Strict L103 hollowed-stone model conditionally excluded; broader gutter comparison remains conditional. Earlier-pool proposal and new dam dates supply no replacement for L105 construction terminus. Doq has an exact publication lead but no verified room-plan coverage. Original Regev figures and four Netzer pages archived and mirrored; Meshel attribution corrected. All 9 In progress / 3 Queued states, coordinates and site grades retained. [Results and unread links](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle11/README.md).

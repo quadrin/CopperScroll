@@ -1,0 +1,137 @@
+{
+  "check_id": "C11-E49-L103-MATERIAL-PHASE",
+  "date": "2026-10-02",
+  "timezone": "Etc/UTC",
+  "entry": "49",
+  "feature": "L103, outlet through W1 to attached pool L102/L104",
+  "inspection": {
+    "Greenhut_Mazor_2020": [
+      "74*: Plan 1",
+      "75*: pool and dam phases",
+      "76*: channel description and Fig. 5",
+      "137–138: English summary and captions"
+    ],
+    "Puech_2015": [
+      "86: entry translation",
+      "91–93: entry commentary"
+    ],
+    "Ariel_2020": [
+      "90*: original catalogue",
+      "91*: construction argument"
+    ]
+  },
+  "observations": {
+    "construction": "built-stone conduit; surviving hydraulic plaster on one interior stone",
+    "carved_single_stone_trough_documented": false,
+    "published_dimensions_m": {
+      "preserved_length": 2.2,
+      "width": 0.65,
+      "depth": 2.3
+    },
+    "channel_bottom_above_pool_floor_m": 0.75,
+    "placement": "crosses dam W1 from main pool into attached plastered pool",
+    "plaster_contact": "irregular opening cut through attached-pool plaster"
+  },
+  "interpretations": {
+    "excavators": [
+      "formerly plastered conduit",
+      "overflow transfer",
+      "channel inserted after pool"
+    ],
+    "Puech_material_definition": "a stone hollowed into a trough or gutter; an interpretive definition rather than an explicit material word in the entry"
+  },
+  "branch_results": [
+    {
+      "branch": "strict Puech hollowed-stone model",
+      "result": "conditional exclusion",
+      "condition": "requires a hollowed stone",
+      "reason": "documented built masonry differs from required carved feature"
+    },
+    {
+      "branch": "broad outlet plus gutter/overflow",
+      "result": "conditional survival",
+      "conditions": [
+        "lexical model permits built conduit",
+        "Siloam name reading and supplied particle accepted",
+        "deposition model permits documented phase",
+        "under-feature datum established"
+      ]
+    },
+    {
+      "branch": "literal spring immediately at terminal feature",
+      "result": "unresolved connection",
+      "reason": "L103 is a pool outlet; report places no natural spring at it"
+    },
+    {
+      "branch": "bathing-pool/Siloam",
+      "result": "function unestablished",
+      "reason": "published basin correspondence supplies no demonstrated bathing function or carved terminal trough"
+    },
+    {
+      "branch": "sanitary plus personal name",
+      "result": "no candidate support",
+      "reason": "no latrine or relevant personal-name association in inspected excavation pages"
+    },
+    {
+      "branch": "roads-family",
+      "result": "unresolved textual branch",
+      "reason": "conduit archaeology cannot resolve manuscript letters or establish a road feature"
+    }
+  ],
+  "phase_gate": {
+    "coin20": {
+      "locus": "L105",
+      "basket": 1092,
+      "mint_date_CE": "69/70",
+      "effect": "lower bound after minting for floor installation if foundation and initial-construction assignments hold"
+    },
+    "L103_relation": "postdates pool if plaster cut marks initial conduit insertion",
+    "conditional_L103_lower_bound": "after the minting of foundation coin 20 in 69/70 CE",
+    "coin17": {
+      "locus": "L103",
+      "basket": 1072,
+      "mint_date_CE": "68/69",
+      "effect": "channel-find context gives no independent construction terminus"
+    },
+    "pre_issue_model": "conditionally excluded for this installation",
+    "later_model": "chronologically possible; no cache demonstrated",
+    "earlier_phase": "requires distinct documented L103 fabric; older dam plaster cannot supply identity"
+  },
+  "datum": {
+    "available": "scaled plan and sections; published relative channel/pool floor height",
+    "unresolved": [
+      "structural underside versus lumen floor",
+      "original surface and phase of deposit relation",
+      "survey benchmark/projection/error budget"
+    ],
+    "textual_offsets": [],
+    "seventeen": "treasure quantity",
+    "new_measurement": null,
+    "coordinate": null,
+    "deposit_volume": null
+  },
+  "progress": {
+    "new_source_targets": 0,
+    "new_bounded_checks": 1,
+    "new_independent_excavations": 0,
+    "decisive_location_tests": 0,
+    "closures": 0,
+    "confirmed_deposits": 0,
+    "site_grade_change": false
+  },
+  "archive": {
+    "existing_directory": "research/assets/plans/siloam2020/",
+    "reused_assets": [
+      "greenhut-mazor2020-siloam-pool.pdf",
+      "greenhut-mazor2020-p74-figures.png",
+      "greenhut-mazor2020-p75-figures.png",
+      "greenhut-mazor2020-p76-figures.png"
+    ],
+    "duplicate_binaries": 0
+  },
+  "next": [
+    "original-edition lexical/material comparison",
+    "explicit earlier L103 fabric or separate carved trough",
+    "phase-controlled structural-base section"
+  ]
+}

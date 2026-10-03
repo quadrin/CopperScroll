@@ -1,0 +1,41 @@
+{
+  "research_date": "2026-10-02",
+  "timezone": "Etc/UTC",
+  "scope": "2024 proposed pool phase compared with cycles9–10; new2025 main article body andfigs1–2",
+  "new_primary_target_count": 1,
+  "new_bounded_check_count": 2,
+  "independent_field_campaign_increment": 0,
+  "sources": [
+    {
+      "id": "szanton-et-al2024",
+      "url": "https://cityofdavid.org.il/wp-content/uploads/2025/12/New-archaeological-discoveries-in-the-excavations-of-Birket-al-Hamra-in-Jerusalem.pdf",
+      "fresh_scope": "printed31*–36*",
+      "access": "web text; original binary403; figuresuninspected",
+      "prior_target_counted": true
+    },
+    {
+      "id": "regev-et-al2025",
+      "doi": "10.1073/pnas.2510396122",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2510396122",
+      "access": "full main HTML;originalfig1–2;appendixunread",
+      "prior_target_counted": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "C11-SILOAM-EARLY-POOL-PHASE",
+      "detailed_result_ref": "siloam_phase.md#test-result-and-next-source"
+    },
+    {
+      "id": "C11-SILOAM-DAM-MORTAR-TRANSFER",
+      "detailed_result_ref": "siloam_phase.md#test-result-and-next-source"
+    }
+  ],
+  "phase_control_inputs": [
+    "cycle9/joint_assessment.json",
+    "cycle10/coin_contexts.json"
+  ],
+  "coordinate_change": false,
+  "confidence_grade_change": false,
+  "closure_count": 0
+}

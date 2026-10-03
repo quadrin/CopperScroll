@@ -42,3 +42,9 @@ Archival recovery alone does not increment decisive tests or close research ques
 Archive every map, plan, layout, section, aerial image, and photograph of terrain or ruins encountered in a supplied source, including material without an immediate research application. Preserve captions and surrounding context, retain source identity and printed/PDF page mapping, and mirror assets under `atlas/`. If coverage is incomplete, state the specific scope rather than claiming all figures.
 
 On 2 October 2026, complete supplied-page archives replaced the selective coverage of Sion’s 42-page report and Manasseh survey volumes II (809 supplied pages), III (615) and IV (780). These 2,246 pages retain all their figures. Earlier selected extracts remain convenience links. [Coverage and file manifest](complete-figure-coverage-2026-10-02.json).
+
+
+
+## Cycle 11 encountered figures, 2 October 2026 UTC
+
+[Regev et al. 2025 dam study](siloam-cycle11/README.md): two unchanged original figure composites, including site map and dam photograph. [Netzer illustrated book pp. 69–72](netzer2001-illustrated/README.md): original-page extract with Qarantal landscape and separately identified Cypros landscape, plan and ruins. Source/asset checksums and credits accompany both directories. Coverage is limited to these encountered figures/pages; the remaining book and unavailable 2024 report figures are not claimed recovered.

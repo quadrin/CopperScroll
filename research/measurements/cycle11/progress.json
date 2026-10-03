@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Etc/UTC",
+  "increments": {
+    "scoped_primary_targets": 2,
+    "cartographic_reference_intakes": 0,
+    "bounded_checks": 3,
+    "conditional_candidate_assessments": 0,
+    "decisive_tests": 0,
+    "closures": 0,
+    "confirmed_individual_deposits": 0,
+    "independent_field_campaigns": 0
+  },
+  "cumulative": {
+    "scoped_primary_targets": 38,
+    "cartographic_reference_intakes": 5,
+    "bounded_checks": 42,
+    "conditional_candidate_assessments": 3,
+    "decisive_tests": 0,
+    "closures": 0,
+    "confirmed_individual_deposits": 0
+  },
+  "questions": {
+    "in_progress": 9,
+    "queued": 3
+  },
+  "new_target_scopes": [
+    "Regev et al. 2025 main article and Figs. 1–2; appendix excluded",
+    "Netzer 2001 illustrated book Doq paragraphs and chapter 9 note 9"
+  ],
+  "check_ids": [
+    "C11-SILOAM-EARLY-POOL-PHASE",
+    "C11-SILOAM-DAM-MORTAR-TRANSFER",
+    "C11-E49-L103-MATERIAL-PHASE"
+  ],
+  "coordinate_change": false,
+  "site_grade_change": false
+}
