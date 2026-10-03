@@ -21,3 +21,12 @@ python deep_analysis/initials_control.py --freeze deep_analysis/ilan2002/pilot_f
 ```
 
 Capture JSON and the exact frozen commit/run-code/input hashes. No target-prefix query or score had run when this input freeze was written. Same shape/uniform24/reading-union controls and all 12 sensitivity assignments as the earlier method apply. Artificial letter tails do not calibrate ancient language or identify initials; no minimum-p selection, meaning/person/hand claim or unused-observation claim is permitted.
+
+
+## Published-freeze comparison
+
+Input commit `16267e12b9fa6d511d1c5c02cebbadd94bf008c8` preceded scoring. [Results](pilot_results.json) preserve exact input/manifest/runner hashes. Primary and reading union each match2/7: ΘΕ→ΘΕΥΔΙΩΝ (printed285/viewer312, AJ20.14, person-context45 CE) and ΣΚ→ΣΚΑΡΙΩΘ (printed435/viewer462, Mark3.19, Second name27–30 CE). The latter depends on a reported manuscript variant; its alternativeἸσκαριώτης supplies noΣΚ match. Every other retained prefix misses in this selected pilot. All12 combinations score0–2.
+
+Shape-control upper tails are0.146544 primary/0.215117 union; secondary uniform24 gives0.078873/0.143326. [Detailed source reading and interpretation](../../research/phases/phase4_summary.md#frozen-pilot-result--3-october-2026) distinguishes these artificial letter probabilities from historical language or hypothesis probabilities. Personal-initial meaning remains not identifiable. No original-claim completion, full-book absence, historical rejection or person identification is established. Next comparison requires a separately frozen ordinary-word corpus.
+
+Run `python deep_analysis/ilan2002/independent_verification.py` from any working directory after generating the results. This independent finite enumeration imports no runner code and verifies observed form IDs, all12 branches, both-null primary/union tails, full distributions and CSV hash. [Verification output](independent_verification.json) records no material mismatch. The18 runner,10 parser and9 merge mechanics tests passed (37 total). No frozen input changed after observing fit.
