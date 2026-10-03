@@ -203,3 +203,50 @@ The2019 chapter's hash, original-page scope and public publisher route are in th
 Four new scoped source targets: SWP original reservoir pages, JOAP2015 selection/coverage, ROSAPAT2011 methodology plus scoped water-site records, and the2019 contextual chapter. Four bounded checks: SWP ancient-phase/contact coverage; JOAP selection-versus-census scope; ROSAPAT basin identity/coverage scope;2019 target-contact coverage. Repeated Netzer/Trümper evidence and bibliographic routing add no extra targets/checks. Cumulative activity becomes47 scoped targets /5 cartographic intakes /52 bounded checks. Identification/outcome counts, question states, grades and coordinates remain unchanged; this search completes no regional inventory or decisive test.
 
 Next, obtain the exact folded Plans14/15/23 and pursue the recovered catalogue's original basin records. Resolve J06/J11 overlaps and individual Cypros/Mafjar/Doq installations before fixing the regional roster. A(C)94's p. 57/Plan13 wall contact supplies a concrete comparison-document target. Protect any future reserved observation only after its specific exposure audit and test freeze; these newly inspected sources cannot confirm a model independently. Missing source records still do not establish absent remains.
+
+
+## Original reports and source coverage follow-up — 3 October 2026 UTC
+
+Continued the authorized parallel exploration from `4ee87d5`. This pass recovers original historical measurements and expands catalogue coverage; it obtains no preferred pool-wall junction. No confirmatory observation was reserved. The identification remains **not identifiable from available evidence**; coordinates, confidence and outcome-ledger records remain unchanged.
+
+### Birket Musa: original dimensions and dating limits
+
+Visually checked Conder/Kitchener, SWP III (1883), printed pp. 176/192/228/229 = original PDF pages 202/218/258/259. The original scan hash matches the preceding intake. [Unchanged original-page-content extract and encountered drawings](../../assets/plans/swp1883-jericho-waterworks/README.md) retain source context, page mappings and hashes; all four original/extract renders match exactly.
+
+| Original source | Reported observation | Comparison consequence |
+| --- | --- | --- |
+| p. 176 | Birket Musa approximately190 ×160 **yards** | Conversion approximately174 ×146 m. Axis and inside/outside convention unspecified. |
+| p. 192 | Pool660 ×490 **feet**, surviving walls5–6 feet high, substantial fill inferred, walls nearly10 feet thick | Conversion approximately201 ×149 m; exposed wall height approximately1.5–1.8 m is not ancient pool depth. The two historical footprints differ. |
+| p. 228 | Earlier Qelt-channel group assigned Roman or Byzantine construction tentatively | This attribution cannot date the different Farah-supply pair. Bridge drawing is a water-system context, not a Birket Musa plan. |
+| p. 229 | Low Farah channel difficult to trace, interpreted as supplying Birket Musa; date uncertain, possible bridge rebuilding | No observed pool-wall connection or first-century construction phase established. |
+
+The catalogue's220 ×160 m and21.5 m depth remain unreconciled with these originals. Neither original passage supplies that depth; no typo correction, exact ancient depth or definitive rejection of the catalogue's Roman attribution follows. J12 remains a discovery notice with unresolved geometry/phase. The p. 192 diagram concerns **Deir el Kelt**, separately from its Birket Musa paragraph. Archive intake itself adds no check or independent evidence.
+
+### Cypros: separate stepped-pool notices within J18
+
+Reopened the [existing Netzer2006 original-page extract](../../assets/plans/netzer2006-doq/README.md), SHA-256 `070c89491f1a57d84d467f4bd5272a4e78535a1e6d2f4e9233a86bf159f3f2f0`. Original printed207/209 = source PDF215/217 = extract pages2/3; both image-checked. Figure46 p. 209 is explicitly reconstructed and phase-coded, with no basin locus IDs or observed conduit ties. The text reports a stepped pool in a later-added room adjacent to the bathhouse hall (possible entrance/dressing/gymnastics use), in addition to one already in the bathhouse. The relative addition establishes two notices, not their calendar dates or identities with the catalogue's Hellenistic pool. Do not turn them into two resolved independent candidates. A stone bathtub found in place and a labrum fragment from debris are different objects. The page supplies no dated inlet/contact, individual pool dimensions or deposit datum.
+
+### Catalogue completion scope and additional notices
+
+Screened the embedded original chapter3 text, printed99–169/PDF111–181, for pool/reservoir/cistern/tank/basin and bath terms. This is retrieval within one source; term screening cannot certify absence, uniform feature detection or complete regional coverage. Visually checked new pages100/102/107/114/119/122/125/135/137/138/141–143/154–159 (PDF = printed+12), including headings across page breaks. Previously checked water-site records remain exposed evidence. Bibliographic page179 also routes the new St. Andrew's dependency. Other chapter pages received text screening only; the regional map and all plates remain outside this inspection scope.
+
+The roster now has **24 preparation records**, retaining successive states, aggregates, overlaps and temporal screening notices. This is no eligible-candidate total or denominator. Six additional records follow:
+
+| ID | Catalogue locator and source-noticed feature | Phase/coverage limit and original dependency |
+| --- | --- | --- |
+| J19 | No.12/PADIS0046, St. Andrew's Church area, p. 107: pool/cisterns under Roman/Herodian heading | Ruins partly under cultivation. Meinardus1966 pp. 183–184 needed for actual dating/contacts. Church25 ×30 m dimensions are not pool dimensions. |
+| J20 | No.41/PADIS0015, Deir Mar Jariys/Deir el Qelt, p. 122: cisterns in Roman subsection | Source aggregates caves/cisterns with an aqueduct; individual basin date/identity unresolved. Patrich1987–1988 p. 66 /1990 p. 208 n.24. |
+| J21 | No.77/PADIS0149, Quruntul-area system, pp. 141–142: late Hellenistic and Herodian cistern notices, later reuse | Partly eroded. Individual identity/overlap with earlier Ain Doq/Doq notices unresolved. Garbrecht–Peleg1989 and Amit2002 needed. |
+| J22 | No.90/PADIS0173, Suwwanet eth-Thaniya/Jiser Abu Ghabush, pp. 154–155: Roman domestic cistern | Under cultivation/buildings. Earlier and later site occupations cannot date this cistern; individual construction/contact evidence absent here. Landes1975 pp. 3/5/Figs.2/9. |
+| J23 | No.96/PADIS0167, Wadi en-Nuʿeima, pp. 158–159: ritual baths under Persian/Hellenistic/Roman headings | Preserved, surrounded by modern buildings. Individual bath identities/successive states unenumerated; common phase headings do not prove the same basin survived through all periods. Dinur–Feig1986 p. 111 needed. |
+| J24 | No.5/PADIS0152, northern-estate large wine press SB2–7/9–13, p. 102: Hellenistic baths | Preserved. Bath notice gives no individual basin/contact; overlap with estate features unresolved. Netzer2001 pp. 334–335/2004 pp. 25–30 and Netzer–Garbrecht2002 Fig.10 needed. |
+
+Retain later-feature coverage too: Pyrgoi/PADIS0037 and Penthucla0031 p. 114 (Byzantine reservoir/cisterns); Beit Jabr0146 p. 119 (reservoir in Byzantine/Early Islamic subsections, with only aqueduct under Herodian); Tell el-Hassan-area0140 p. 125 (Byzantine cisterns); Khirbet en-Nitla0007 p. 135 (Byzantine reservoir); Qasr el-Yehud0034 p. 137 (Byzantine reservoir); Qasr Hajla-area0143 p. 138 (Byzantine cistern); Rujm el-Mugheifir0159/0029 pp. 142–143 (Byzantine reservoirs); Tell es-Sultan-area0130 p. 154 (Byzantine cisterns); Tahunet el-Mafjar0162 pp. 155–156 (Byzantine/Early Islamic reservoir); Tawaheen es-Sukkar0002 pp. 156–157 (Crusader/Middle Islamic cisterns); Laura of Aeliotes0040 p. 159 (Byzantine cistern). These are explicit coverage notices pending a boundary/phase screen, not first-century candidates. Rujm's Roman pottery and Tawaheen's Roman coins do not date the later water features. Palace/bathhouse and portable stone-basin notices likewise do not establish individually identified reservoirs. No pool-size or swimming-function filter was applied.
+
+For J19, the [institutional PADIS record](https://sites.google.com/uniroma1.it/sapienza-padis-project/archaeological-sites/abu-hindi-tell-area-st-andrews-church) repeats the catalogue; it adds no independent observation. Exact original dependency is Otto Meinardus, “The Byzantine Church of St. Andrew in Jericho,” *Bulletin de la Société d’Archéologie Copte*18 (1965–1966), pp. 181–196. Primary-institution bibliographic routes were found, but no original pp. 183–184 or excavation images recovered. No dated contact claim follows from the database heading alone.
+
+### Accounting and next acquisition
+
+Three new scoped targets: SWP Birket Musa/routing pages; expanded ROSAPAT water-feature/phase coverage; Netzer1996 target-area overview (access record in the linked note). Four bounded checks: historical dimension/phase-source consistency; catalogue phase-specific coverage; two Cypros stepped-pool notices;1996 overview contact coverage. Netzer2006 reinspection adds no source target; bibliography-only access work and archiving add none. Activity totals become50 scoped primary targets /5 cartographic intakes /56 bounded checks; all outcome counters remain unchanged.
+
+Public digital checks have not recovered pocket Plans14/15/23, Netzer2001 pp. 50–60/Plan13, Netzer–Garbrecht2002 Fig.6, Meshel–Amit2002 Cypros chapter or Netzer's Birket Musa AppendixB. [Exact routes and access results](netzer2001-first-pass.md#folded-plans-and-original-comparison-reports-follow-up--3-october-2026-utc). The next evidence requires actual pages/sheets, especially the2002 AppendixB pp. 377–379 for J12, Cypros pp. 313–329/Fig.1a for J14/J18, and estate Fig.6 for J11. Further catalogue hits cannot supply those original datums. No custodian contact, purchase or restricted-reader access occurred; no verified unseen observation exists.
