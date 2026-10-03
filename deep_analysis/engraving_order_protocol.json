@@ -1,0 +1,174 @@
+{
+  "status": "frozen_before_new_target_image_review",
+  "claim": "Can available original-object evidence establish local stroke order or a separate later engraving episode for Greek groups?",
+  "scope": "Exploratory source/report and photograph audit only; no verified unused observation, absolute dating, deposit-removal meaning, hand identity or identification claim.",
+  "claims_separated": {
+    "A": "Replicate exact published assertion: subject, local datum, measurement type and uncertainty.",
+    "B": "Local relative order at an authenticated Greek-Hebrew/value crossing.",
+    "C": "Distinct later episode requires an independent intervening alteration/event bridging mark sets; local order alone insufficient.",
+    "D": "Removed-deposit meaning requires additional independent evidence even if C supported."
+  },
+  "loci": [
+    {
+      "id": "I4",
+      "edition_reading": "ΚΕΝ",
+      "column": "I",
+      "line": "4",
+      "cuts_candidate": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "Reed_AWS_candidate": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "DJD_photo_plate": "XLIX",
+      "DJD_handcopy_plate": "XLVIII"
+    },
+    {
+      "id": "I12",
+      "edition_reading": "ΧΑΓ",
+      "column": "I",
+      "line": "12",
+      "cuts_candidate": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "Reed_AWS_candidate": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "DJD_photo_plate": "XLIX",
+      "DJD_handcopy_plate": "XLVIII"
+    },
+    {
+      "id": "II2",
+      "edition_reading": "ΗΝ",
+      "column": "II",
+      "line": "2",
+      "cuts_candidate": [
+        5,
+        6
+      ],
+      "Reed_AWS_candidate": [
+        16,
+        17
+      ],
+      "DJD_photo_plate": "LI",
+      "DJD_handcopy_plate": "L"
+    },
+    {
+      "id": "II4",
+      "edition_reading": "ΘΕ/ΞΕ",
+      "column": "II",
+      "line": "4",
+      "cuts_candidate": [
+        5,
+        6
+      ],
+      "Reed_AWS_candidate": [
+        16,
+        17
+      ],
+      "DJD_photo_plate": "LI",
+      "DJD_handcopy_plate": "L"
+    },
+    {
+      "id": "II9",
+      "edition_reading": "ΔΙ",
+      "column": "II",
+      "line": "9",
+      "cuts_candidate": [
+        5,
+        6
+      ],
+      "Reed_AWS_candidate": [
+        16,
+        17
+      ],
+      "DJD_photo_plate": "LI",
+      "DJD_handcopy_plate": "L"
+    },
+    {
+      "id": "III7",
+      "edition_reading": "ΤΡ/ΤΡΙ",
+      "column": "III",
+      "line": "7",
+      "cuts_candidate": [
+        7,
+        8
+      ],
+      "Reed_AWS_candidate": [
+        18,
+        19
+      ],
+      "DJD_photo_plate": "LIII",
+      "DJD_handcopy_plate": "LII"
+    },
+    {
+      "id": "IV2",
+      "edition_reading": "{Ι}ΣΚ/ΧΚ/ΞΚ",
+      "column": "IV",
+      "line": "2",
+      "cuts_candidate": [
+        9,
+        10
+      ],
+      "Reed_AWS_candidate": [
+        20,
+        21
+      ],
+      "DJD_photo_plate": "LV",
+      "DJD_handcopy_plate": "LIV"
+    }
+  ],
+  "reading_rule": "Retain every edition alternative. Cancelled I belongs to correction inspection, not an active initial. No reading choice by temporal fit.",
+  "windows": "For each locus inspect full target line and one full line above/below, preserving source boundaries; deduplicate overlapping windows. Adjacent Hebrew/value signs are matched local controls. I12 has no printed amount: amount comparison inapplicable. Precise line-to-cut registration is unknown until anchored; do not silently assign cuts from glyph fit.",
+  "primary_report_targets": {
+    "Tov": "Copper Scroll Studies chapter20 pp288–290, report p289. Inherited broader subject KEN plus preceding Hebrew word; 2mm datum/type unverified.",
+    "Puech": "IV2 cancelled I/deeper report: exact edition page and observation basis unrecovered. Greek-Greek correction alone not Hebrew-Greek order."
+  },
+  "source_menu": [
+    "Existing repository DJDIII1962 platesPDF: photoXLIX/LI/LIII/LV plus paired handcopies, distinct object/derivative statuses.",
+    "Existing CSS imaging figures pp51–53: process/control examples only, no calibrated original depth.",
+    "Reed1988 original recto/verso catalog AWS12–21(candidate cuts1–10); all catalogued lighting directions if actual files recovered. Catalog metadata alone is not an image or measurement.",
+    "EDF original pre/post1994–1996 conservation images/radiographs if recovered: source-specific copies distinct from original.",
+    "Modern maker 3D of electrotype copies excluded from direct original-metal metrology; reversed synthetic backs excluded from physical verso corroboration."
+  ],
+  "local_order_criterion": "Authentic preserved groove intersection with truncation/reworking of earlier edges or floor, identifiable parent strokes, known metal-side and provenance, no modern scratch/corrosion/casting ambiguity. Require at least two documented light directions or calibrated geometry, and two independent readers agreeing on physical mechanism before temporal interpretation. This yields only local order.",
+  "episode_criterion": "Original groove sets placed on opposite sides of an independently authenticated intervening event. Same/different tool, hand, depth, line position or general corrosion color alone cannot establish an episode interval.",
+  "difference_fields": [
+    "vertical writing position",
+    "broad sheet relief",
+    "incision depth relative to local sheet",
+    "tool morphology",
+    "unclear"
+  ],
+  "required_fields": [
+    "provenance original/copy/radiograph/drawing/unknown",
+    "assertion/visiblefeature/calibratedmeasurement",
+    "physical crossing Greek-Hebrew/Greek-value/Greek-Greek/other/none/obscured",
+    "local_order Greekafter/Greekbefore/unresolved/inapplicable",
+    "interveningevent demonstrated/absent/unassessed",
+    "originalgroove preservation preserved/altered/uncertain",
+    "coverage sufficient/insufficient/unavailable"
+  ],
+  "metrology": "No invented depth cutoff. Numeric replication requires documented scale/calibration/resolution/datum/repeatability before measurement. Ordinary photographs/RTI are not metricheight. Original surface can be masked or altered by corrosion, stress, cuts, cleaning, consolidants and replica manufacture.",
+  "terminal_rule": "Supported relative to registered alternatives only for authenticated local relations; an authenticated reverse crossing rejects corresponding local-order claim. Missing/no crossing/unreadable/unknown provenance or metrology => not identifiable. Absence of depth contrast cannot reject separate episode. C/D stay not identifiable without their extra bridge. Limited source coverage cannot reject or establish all seven as a universal last-engraved layer.",
+  "exposure": "All groups, named reports and prior drawings are exposed. New copies of known features are not automatically holdouts. Protocol precedes any new targetimage review this turn; source textual methods and catalog metadata already explored. No confirmatory unseen prediction registered.",
+  "accounting": "Freeze adds no inspected source count, bounded test, identification, confidence, coordinates, field campaign or question closure.",
+  "source_links": [
+    "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
+    "https://www.nature.com/articles/s41599-023-01742-7",
+    "https://facsimile-editions.com/cs/"
+  ],
+  "freeze_commit": "Publish before targetimage review; immutable commit will be recorded with results."
+}

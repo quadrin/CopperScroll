@@ -1,0 +1,32 @@
+# Ilan2002 source and person-period pilot
+
+Full user-supplied book:515 PDF pages,14,282,346 bytes, SHA25663595934818ca35e2f5ac90effe0ece7f7c953b5676b2c13e2a83a0d040be680. Arabic printed page+27=viewernumber. [Source inventory](../../research/assets/plans/ilan2002/source-intake.json) records schema,Tables 1–10 and inspection/reuse scope. The complete source PDF and full extracted OCR remain outside the repository.
+
+`greek_index_unfiltered.csv` transcribes all 971 printed Greek index rows455–464 from page images, preserving duplicates, brackets, gaps and uncertainty. It includes fictitious people/restorations and is **not a scoring corpus**. Native Greek OCR is corrupt; source letters were image-read. O/index consistency review corrected two pilot transcription errors and six index transcription errors before scoring. OΑΜΑΡΑΜΟΣ at203 versus indexΑΜΡΑΜΟΣ at455R17 is a genuine printed discrepancy, preserved without repair.
+
+`parse_ilan.py` traverses all source body/appendix/addendum pages59–454. It finds3,570 numbered O candidates and725 heading candidates, with structural ambiguity and missed starts. These are OCR candidate counts, not the author's3,595 persons/831 names or a complete eligible denominator. It retains raw source/page/column coordinates. `extraction_audit.json` records known structural gaps. Thirteen orphan starts were manually reviewed; the review found no additional qualifying pilot row, without certifying complete detection.
+
+The fixed pilot selected198 structurally clear records with nonblank O, neutral/Second-name E and closed IlanD intervals wholly within100 BCE–70 CE, before target queries. All 198 O fields and linked notes were checked. ESecond name is personal and allowed for form-level matching. Human outcomes184 accepted/8 excluded/6 unknown; the conservative merge gate additionally withholds two rows with uncertain bearer-identification flags. Final182 accepted/8 excluded/8 unknown yield193 selected form occurrences and107 distinct normalized forms. All statuses/reasons and exact note references remain in the audit. Unknowns include title/name ambiguity, known reconstructed GreekΧΑΓΕΙΡΑΣ, dubious Judah variants, YoezerO/note disagreement and the two bearer-identity rows. NonGreek/blank O supplies no Greek form; source headwords never replace it.
+
+**Source-adjusted exploratory scope:** bookD dates a PERSON/EVENT context, often described by a later literary text. These are reported source Greek forms, not freshly inspected original Greek manuscripts or independently dated first-century spellings. Population depends on Ilan's curated membership, not an independent Judaea/Galilee/Peraea geographic crosswalk. Original actual-attestation-date protocol remains blocked; full330 BCE–200 CE eligible corpus also unfulfilled. Openpre-70/pre-73/pre-135/pre-200 dates do not get invented lower bounds. No complete-book absence or historical rejection follows from this pilot.
+
+`pilot_forms.csv` supplies the scoring input. Its name_id denotes a normalized FORM, not a distinct lemma/person. `pilot_form_occurrences.csv` preserves repeated source occurrences separately; they do not add independent evidence. `validation_a/b.jsonl`, `pilot_review_rows.json`, `pilot_validation_decisions.json` and the merge/source/index audits make inclusion and exclusions reviewable. Source_independent means checked independence from3Q15-derived proposed names, not seven independent sources, multiple traditions or a holdout. Josephus and all target groups were already exposed.
+
+Reproduce extraction with `python parse_ilan.py SOURCE.pdf --out final-raw`, run `python make_review_queues.py` from this folder, then merge exact human validations with `combine_pilot.py`. The merge requires all 198 selected IDs and rejects missing/duplicate/extra decisions, target dependency and unsafe Greek forms. Raw whole-book extraction is needed locally to reproduce the merge; full copyrighted commentary is not bundled. Ten parser and nine merge mechanics tests use synthetic strings.
+
+After this input/protocol commit publishes, run from repository root:
+
+```
+python deep_analysis/initials_control.py --freeze deep_analysis/ilan2002/pilot_freeze.json
+```
+
+Capture JSON and the exact frozen commit/run-code/input hashes. No target-prefix query or score had run when this input freeze was written. Same shape/uniform24/reading-union controls and all 12 sensitivity assignments as the earlier method apply. Artificial letter tails do not calibrate ancient language or identify initials; no minimum-p selection, meaning/person/hand claim or unused-observation claim is permitted.
+
+
+## Published-freeze comparison
+
+Input commit `16267e12b9fa6d511d1c5c02cebbadd94bf008c8` preceded scoring. [Results](pilot_results.json) preserve exact input/manifest/runner hashes. Primary and reading union each match2/7: ΘΕ→ΘΕΥΔΙΩΝ (printed285/viewer312, AJ20.14, person-context45 CE) and ΣΚ→ΣΚΑΡΙΩΘ (printed435/viewer462, Mark3.19, Second name27–30 CE). The latter depends on a reported manuscript variant; its alternativeἸσκαριώτης supplies noΣΚ match. Every other retained prefix misses in this selected pilot. All12 combinations score0–2.
+
+Shape-control upper tails are0.146544 primary/0.215117 union; secondary uniform24 gives0.078873/0.143326. [Detailed source reading and interpretation](../../research/phases/phase4_summary.md#frozen-pilot-result--3-october-2026) distinguishes these artificial letter probabilities from historical language or hypothesis probabilities. Personal-initial meaning remains not identifiable. No original-claim completion, full-book absence, historical rejection or person identification is established. Next comparison requires a separately frozen ordinary-word corpus.
+
+Run `python deep_analysis/ilan2002/independent_verification.py` from any working directory after generating the results. This independent finite enumeration imports no runner code and verifies observed form IDs, all12 branches, both-null primary/union tails, full distributions and CSV hash. [Verification output](independent_verification.json) records no material mismatch. The18 runner,10 parser and9 merge mechanics tests passed (37 total). No frozen input changed after observing fit.
