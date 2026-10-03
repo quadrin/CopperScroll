@@ -1,6 +1,6 @@
 # Active test: R11 Greek personal initials
 
-Updated 3 October 2026 UTC. Three parallel threads completed Ilan source audit, form validation and independent probability verification. **Stage: the frozen person-period pilot is complete; historical initials meaning remains not identifiable from available evidence.** Jericho remains parked.
+Updated 3 October 2026 UTC. Three parallel threads completed Ilan source audit, form validation and independent probability verification. **Stage: common-noun comparison input frozen; publish before scoring.** The person-period name pilot is complete; historical initials meaning remains not identifiable from available evidence. Jericho remains parked.
 
 ## Result and scope
 
@@ -12,7 +12,7 @@ This is an exploratory **reported-Greek-form/person-period pilot**, conditional 
 
 ## Next action
 
-Design and freeze an ordinary-Greek-word control: source/period scope, literal form unit, weighting/deduplication, personal/place/people-name exclusion and completeness rules before prefix scoring. Apply the same readings and opportunities to words and names. This would address whether the groups favor names over ordinary word beginnings. Earlier Josephus exposure must remain explicit; it is not a holdout. Any factual extraction correction requires a documented new input version preserving this result.
+Publish the [common-noun input freeze](../deep_analysis/word_control/README.md), then score exact107-form samples against the fixed107-name pilot. Source is pinned PROIEL/Syntacticus NT XML; all1,894 Nb lemmas were reviewed for named-entity leakage.3,791 accepted normalized forms;18 source common/proper mixed-use forms remain primary and are removed only in a fixed3,773-form sensitivity. Semantic unknowns remain withheld. Both populations receive the same reading union/literalprimary/all12 opportunities. Verify the exact correlated-slot distribution independently by integer generating functions. No real word-prefix queries have run. Original name data remain unchanged; Jericho remains parked.
 
 ## Parked work and accounting
 

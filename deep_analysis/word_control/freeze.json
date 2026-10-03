@@ -1,0 +1,64 @@
+{
+  "status": "frozen_before_scoring",
+  "scope": "Exploratory source-Nb common-noun token-form benchmark against incomplete107-form Ilan person-period pilot; no independent attestation/meaning/holdout claim",
+  "source_commit": "525cee4fb40590d7d514376c11acaed1bdd91c15",
+  "source_path": "proiel/greek-nt.xml",
+  "source_xml_sha256": "3e3839a7f1a32efc027eb0d0e525b0527354b1979dd01b85f2f8c5236e2e8cc6",
+  "word_forms_sha256": "2f5187261bce910da25b76ad95da1489ceb4442d35fdb458e5fcb3e00243a444",
+  "names_sha256": "41903a16042dbc76fcf1449f743078380e4524a5dcbed76e7dfe102150c3fe81",
+  "name_freeze_commit": "16267e12b9fa6d511d1c5c02cebbadd94bf008c8",
+  "primary_population": 3791,
+  "secondary_unmixed_population": 3773,
+  "sample_size": 107,
+  "reading_menu": [
+    [
+      "ΚΕΝ"
+    ],
+    [
+      "ΧΑΓ"
+    ],
+    [
+      "ΗΝ"
+    ],
+    [
+      "ΘΕ",
+      "ΞΕ"
+    ],
+    [
+      "ΔΙ"
+    ],
+    [
+      "ΤΡ",
+      "ΤΡΙ"
+    ],
+    [
+      "ΣΚ",
+      "ΧΚ",
+      "ΞΚ"
+    ]
+  ],
+  "primary_readings": [
+    "ΚΕΝ",
+    "ΧΑΓ",
+    "ΗΝ",
+    "ΘΕ",
+    "ΔΙ",
+    "ΤΡ",
+    "ΣΚ"
+  ],
+  "comparison_primary": "union_primary",
+  "sensitivities": "literal_primary and all12 branches; primary common uses and fixed secondary excludes18 mixedNe forms",
+  "selection": "All available reviewed/annotated nonempty Nb; all1894 lemmas audited at lemma level; explicit semantic exclusions; same normalization as names; source common/proper overlap retained primary; no Ilan-overlap deletion",
+  "statistic": "group prefix-compatibility count; exact uniform107-form sampling withoutreplacement, correlated-slot inclusion/exclusion; no significance threshold",
+  "decision": "Finite benchmark comparison only; report both populations and allbranches includingmisses. Historical personal-initial meaning not identifiable; no book-wide language absence or historical rejection.",
+  "exposure": "All groups and name matches previously known; NT/Ilan source overlap; no unseen observation. Source intake/schema/semantic audit may expose words, but no target-prefix queries at freeze.",
+  "input_hashes": {
+    "semantic_audit.json": "9ff9de0b47b6f6aa9b2b6955a88854830e85db0df8560929c4670efc331b5d9b",
+    "lemma_decisions.json": "f339754b98fb95fe7bdd55013e74f8c770c2565e15fdab82f3db0fc93da9fa61",
+    "extraction_audit.json": "c4c82f2a5972a8a6652f98905367eae04cc5813f37d0687ea708c323c0d3ee33",
+    "extract_words.py": "bdaaa6f939a4ad856126faa750de6b115088b4e4626b81e06d914f10453d7fd8",
+    "benchmark_sample.py": "9669cdb45d57383618df33b145a7db1758f30484bf2b6643c54ade2abad4baef",
+    "verify_distribution.py": "44484b88e41b30c26aca55745a599d0cd9528618ae1012aa7f49e29cfe80ecb2",
+    "test_word_control.py": "f5c37a7affef878c49d80cdfff86d8b3224e38307967a9b010059e9bbebb359c"
+  }
+}
