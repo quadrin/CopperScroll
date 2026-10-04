@@ -2,7 +2,17 @@
 
 `index.csv` lists every item in the **Copper Scroll** folder of the USC Digital Library (InscriptiFact collection, text 3Q15). There are 942 items. Each row has the catalog data, a link back to the item, and a detailed description of what the image shows.
 
-**The images themselves are not in this repo.** Follow `usc_link` to see an item.
+The repository includes small JPEG thumbnails in `images/medium-res`, added at commit `16df396`. Despite that folder name, these are not medium-resolution previews. Follow `usc_link` to see the library's item page.
+
+## Repository image coverage and larger-preview retrieval
+
+On 4 October 2026, all 906 JPEGs in `images/medium-res` were decoded and matched by filename to `uc_identifier`: 612 facsimile photographs and 294 original-scroll photographs, with no missing photograph IDs or extra IDs. Every image is 192 pixels high; widths range from 93 to 288 pixels. The 36 RTI/PTM records are indexed but have no files in this JPEG set. The 50 files in `images/page-04` are byte-identical duplicates of files in `images/medium-res`.
+
+`cuts_01_10_retrieval.csv` selects all 122 original-scroll photographs for candidate cuts 1–10: 100 recto and 22 verso images. It records the source item links, thumbnail paths, actual pixel dimensions and SHA-256 hashes. Cut numbers are candidate regions for the seven Greek-letter loci; this list does not establish precise line-to-cut registration.
+
+Retrieval of the larger, approximately 1000-pixel public previews remains blocked. The USC item-page route returned HTTP 403 through the downloader and the browser, including one browser reload, on 4 October 2026. No larger preview was downloaded. The 192-pixel thumbnails are insufficient for the proposed groove-intersection audit. The original index descriptions refer to the previously inspected library previews, not to these smaller repository thumbnails.
+
+This acquisition check adds no engraving-order result, depth measurement, independent field observation, identification, confidence change or question closure.
 
 ## What is in the folder
 
