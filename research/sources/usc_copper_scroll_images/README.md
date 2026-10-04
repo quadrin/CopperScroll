@@ -10,7 +10,11 @@ On 4 October 2026, all 906 JPEGs in `images/medium-res` were decoded and matched
 
 `cuts_01_10_retrieval.csv` selects all 122 original-scroll photographs for candidate cuts 1–10: 100 recto and 22 verso images. It records the source item links, thumbnail paths, actual pixel dimensions and SHA-256 hashes. Cut numbers are candidate regions for the seven Greek-letter loci; this list does not establish precise line-to-cut registration.
 
-Retrieval of the larger, approximately 1000-pixel public previews remains blocked. The USC item-page route returned HTTP 403 through the downloader and the browser, including one browser reload, on 4 October 2026. No larger preview was downloaded. The 192-pixel thumbnails are insufficient for the proposed groove-intersection audit. The original index descriptions refer to the previously inspected library previews, not to these smaller repository thumbnails.
+The larger public item-page previews were acquired on 4 October 2026 for 116 of the 122 selected records (96 recto and 20 verso). They are JPEGs saved under `images/previews/cuts-01-10/` using the `uc_identifier` filename. The downloaded previews preserve the browser-delivered native pixels: the longest side is 1000 px, with the short side ranging from 482 to 799 px; all six failures remain explicitly marked in `cuts_01_10_retrieval.csv`. Every acquired file decoded successfully, matched its identifier/title and recto-verso metadata on the USC item page, and exceeded the corresponding 192-pixel thumbnail in its longest dimension.
+
+The acquisition manifest is `cuts_01_10_preview_manifest.csv`; it records the USC item URL, the browser-resolved preview asset URL when available, filename, dimensions, byte size and SHA-256. USC preview URLs are signed CloudFront URLs and may expire; the item URL is the durable provenance link. The six unresolved records are UC15246590, UC15246586, UC15246584, UC15246588, UC15246015 and UC15245458. Their public item pages did not expose the image-zoomer asset during repeated browser attempts; the repository retains no substitute larger file for them.
+
+This acquisition adds no engraving-order result, depth measurement, independent field observation, identification, confidence change or question closure. The original index descriptions and source credits above are preserved; this task only acquires image assets.
 
 This acquisition check adds no engraving-order result, depth measurement, independent field observation, identification, confidence change or question closure.
 
