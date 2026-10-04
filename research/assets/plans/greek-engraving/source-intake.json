@@ -1,5 +1,5 @@
 {
-  "date_utc": "2026-10-03",
+  "date_utc": "2026-10-04",
   "purpose": "Source provenance, exact inspection and missing original observations for frozen seven-locus engraving-order audit.",
   "freeze_commit": "d7d3b6060dedc1d4b4182a620dcca79fc3a70ec2",
   "sources": [
@@ -53,7 +53,7 @@
       "id": "REED_WSRP1988",
       "title": "Dead Sea Scrolls Inventory Project, Fascicle2, Copper Scroll/Amman photographs",
       "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
-      "inspection": "Catalogue text and cut/plate crosswalk only; actual1988 image files not obtained.",
+      "inspection": "Prior webcatalogue and attachedPDFcatalogue provenance/crosswalk only; actual1988 image files not obtained.",
       "observation_campaign": "Bruce and Kenneth Zuckerman1988, original strips both sides, B&W/color, right/center/left rotations with top/bottom lights; some side lighting.",
       "targets": "AWS12–21 candidate cuts1–10 cover columnsI–IV; exact per-locus cut/rotation registration remains unknown. AWS22looseCut10lower-right fragment is contextual only.",
       "current_route": "https://dornsife.usc.edu/wsrp/for-scholars/",
@@ -61,7 +61,40 @@
       "catalogue": "https://dornsife.usc.edu/wsrp-temp/wp-content/uploads/sites/155/2023/05/Dead-Sea-Scrolls.pdf",
       "catalogue_target": "Copper Scroll text ISF_TXT_00313, catalogue viewer4",
       "access": "Old Inscriptifact replaced by USC Digital Library. Collection HTTP403 via available retrieval; no item IDs, IIIF manifests or files recovered. Bounded route search stopped. No browser fallback, sign-in, purchase or outreach.",
-      "reuse": "WSRP permits scholarly study with publication permission from collaborating institution required. No original images republished or permissions requested."
+      "reuse": "WSRP permits scholarly study with publication permission from collaborating institution required. No original images republished or permissions requested.",
+      "attached_source": {
+        "path": "/workspace/scratch/43a6d1804f3f/upload/Fascicle 2.pdf",
+        "file_id": "file_00000000842081fb80b56a29bbfc309c",
+        "library_file_id": "libfile_44f4cf6e19008191aae45bea32bf3044",
+        "sha256": "e1effe92d64aa1263f38e9d45d053202423cddd3bfca1ff327ff131a1fc8d203",
+        "bytes": 1125503,
+        "pdf_pages": 64,
+        "edition": "Fascicle2, Qumran Minor Caves, compiled by Stephen A. Reed; browser print capture dated3October2026,9:30PM",
+        "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
+        "acquisition": "User attached browser-print PDF; direct workspace read. Catalogue metadata, not original photograph files."
+      },
+      "attached_inspection": {
+        "status": "catalogue provenance and candidate-cut crosswalk verified; original lighting files remain missing",
+        "viewer_pages_visually_inspected": [
+          1,
+          8,
+          9,
+          21,
+          57
+        ],
+        "additional_text_pages": [
+          5,
+          7,
+          20,
+          47,
+          62
+        ],
+        "observation_campaign": "p9Bruce/KennethZuckerman1988 originals bothsides,B&W/color,rotations andtop/bottom lights; occasional side lighting.",
+        "crosswalk": "p8DJDXLIXcuts1–4,LI5–6,LIII7–8,LV9–10*. p21/p57AWS12–21cuts1–10;AWS22sevenlooseCut10lower-rightfragments.",
+        "duplicates": "p20PAM42.977–42.980 correspond to DJDXLIX/LI/LIII/LV; these copies do not provide a new lighting witness.",
+        "access_scope": "Attached catalogue resolves metadata access only. Original-image collection retrieval failure from preceding audit persists; no repeat retrieval attempted. Current museum/contact statements are historical catalogue claims, not verified current facts.",
+        "precise_locus_registration": "unresolved"
+      }
     },
     {
       "id": "MAKER_FACSIMILE",
@@ -74,13 +107,21 @@
     {
       "id": "TOV_REPORT",
       "title": "Some Palaeographical Observations Regarding the Cover Art",
-      "author": "Lika Tov, as named in inherited project records",
+      "author": "Lika Tov",
       "edition": "Copper Scroll Studies, chapter20, pp288–290; disputed reportp289",
       "url": "https://www.bloomsbury.com/us/copper-scroll-studies-9780567618313/",
-      "inspection": "Original chapter unavailable in current authorized workspace/retrieval. Earlier full-book references are not available files. No primary wording replicated.",
-      "needed": "pp288–290 including cover-art relation; old full-book viewer306 correspondsp289. Exact subject, datum, measurement type and uncertainty.",
+      "inspection": "Originalpp288–290/viewers305–307 visually checked by integrator and independent reader in attached361-page book. Published assertion verified, undefined axis/datum/method remain.",
+      "needed": "Original metal metrology/defined axis, datum and method to replicate the reported2mm relation; original wording now available.",
       "inherited_discrepancy": "Phase4summary includes KEN AND preceding Hebrew word2mm below surface of preceding words; F4.10 had shortened this to KEN alone. Neither proves a Greek-only groove-depth contrast.",
-      "reuse": "Metadata/link only; original chapter not republished."
+      "reuse": "Metadata/link only; original chapter not republished.",
+      "inspection_history": "Original chapter unavailable in current authorized workspace/retrieval. Earlier full-book references are not available files. No primary wording replicated.",
+      "source_sha256": "590307dfb3c966b8b80d52de6a34602cc689751862844c81a965a9c2d998290f",
+      "verified_subject": [
+        "ΚΕΝ",
+        "שבעשרה(seventeen)"
+      ],
+      "verified_short_statement": "written 2 mm below the writing surface of the preceding words",
+      "encountered_figure": "p289selected Hebrew drawings, ScribeA; derivative author illustration, not metric original surface. Copyright allrightsreserved; no image upload."
     },
     {
       "id": "PUECH_REPORT",
@@ -88,8 +129,11 @@
       "edition": "Exact cited edition/page unresolved; cancelled-I edition reading retained separately.",
       "url": "https://brill.com/display/title/14988?language=en",
       "retrieval_lead": "The Copper Scroll Revisited, 2015, commentarypp25–113; not verified location of the deeper-I claim.",
-      "inspection": "Primary wording/figure and source basis not recovered; book metadata is not inspection.",
-      "needed": "Exact passage, page and original-metal observation supporting deeper cancelled I; Greek-Greek correction is not a Greek/Hebrew chronological bridge."
+      "inspection": "CSS original methodspp60–61,IV2pp68–69,Greekparagraphp81 visually checked by two readers; targetdeeper/cancelledI assertion not recovered in boundednavigation. No fullbookread/absenceclaim.",
+      "needed": "Exact passage, page and original-metal observation supporting deeper cancelled I; Greek-Greek correction is not a Greek/Hebrew chronological bridge.",
+      "inspection_history": "Primary wording/figure and source basis not recovered; book metadata is not inspection.",
+      "source_sha256": "590307dfb3c966b8b80d52de6a34602cc689751862844c81a965a9c2d998290f",
+      "new_methods": "p60multi-angle EDF radiographs; photos of flattened replica/galvanoplasty; original re-examination1996. fn12mallet-engraving interpretation. p61graphicmock-up/replica joins and saw-loss/copy limitations."
     },
     {
       "id": "METAL98",
@@ -101,5 +145,30 @@
     }
   ],
   "new_image_uploads": 0,
-  "archive_note": "Previously archived DJD/CSS PDFs reused. New online figures without recovered reproduction permission remain links/access notes. Metadata and catalogue records do not count as original-image inspection."
+  "archive_note": "ExistingDJD/CSSimages retained. Supplied fullCSS/FasciclePDFs remain inputfiles; fullbook/pageOCR and modern page images not republished. Tovp289drawing encountered and recorded; allrightsreserved/no redistribution permission recovered. Catalogue attachment supplies metadata, not original frames.",
+  "attached_inputs": {
+    "CSS": {
+      "path": "/workspace/scratch/43a6d1804f3f/upload/Copper Scroll Studies (Academic Paperback) -- George J_ Brooke, Philip R_ Davies -- Academic Paperback 40, 2004 -- T&T Clark International -- (1).pdf",
+      "file_id": "file_000000006fa081fbb319aa0a8e93a8f2",
+      "library_file_id": "libfile_e368ae676b5c819194a2a4fb55207d60",
+      "sha256": "590307dfb3c966b8b80d52de6a34602cc689751862844c81a965a9c2d998290f",
+      "bytes": 17391681,
+      "pdf_pages": 361,
+      "printed_to_viewer": "printed+17 for inspected body pages",
+      "edition": "George J. Brooke and Philip R. Davies (eds), Copper Scroll Studies, T&T Clark International2004 paperback of2002 publication",
+      "acquisition": "User attached full PDF in this conversation; read directly from supplied workspace copy."
+    },
+    "Fascicle2": {
+      "path": "/workspace/scratch/43a6d1804f3f/upload/Fascicle 2.pdf",
+      "file_id": "file_00000000842081fb80b56a29bbfc309c",
+      "library_file_id": "libfile_44f4cf6e19008191aae45bea32bf3044",
+      "sha256": "e1effe92d64aa1263f38e9d45d053202423cddd3bfca1ff327ff131a1fc8d203",
+      "bytes": 1125503,
+      "pdf_pages": 64,
+      "edition": "Fascicle2, Qumran Minor Caves, compiled by Stephen A. Reed; browser print capture dated3October2026,9:30PM",
+      "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
+      "acquisition": "User attached browser-print PDF; direct workspace read. Catalogue metadata, not original photograph files."
+    }
+  },
+  "prior_intake_commit": "94530cbfddab0b28f154f1533e6bedc3b43cfedb"
 }

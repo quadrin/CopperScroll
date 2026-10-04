@@ -1,5 +1,5 @@
 {
-  "date_utc": "2026-10-03",
+  "date_utc": "2026-10-04",
   "claim": "Can available original-object evidence establish local stroke order or a separate later engraving episode for Greek groups?",
   "freeze_commit": "d7d3b6060dedc1d4b4182a620dcca79fc3a70ec2",
   "protocol_path": "deep_analysis/engraving_order_protocol.json",
@@ -43,7 +43,7 @@
       "metric_depth_mm": null,
       "amount_control": "not_measured",
       "reader_agreement": "Integrator and independent image reader agree on insufficient evidence; no authenticated ordering mechanism accepted.",
-      "comment": "No authenticated Greek-Hebrew/value intersection established. KEN/preceding-word surface relation cannot be measured; Tov datum/type unavailable.",
+      "comment": "TovCSSp289 now verified: KEN plus Hebrew שבעשרה(seventeen), author says written2mm below preceding writing surface. Axis/datum/method undefined; metric and crossing results remain unknown.",
       "closure": "not identifiable from available evidence"
     },
     {
@@ -234,7 +234,7 @@
   "accepted_authentic_crossings": 0,
   "crossing_count_interpretation": "Zero accepted from these reproductions; actual original-object crossing count unknown, not zero.",
   "claims": {
-    "A_report_replication": "not identifiable: Tov original wording/datum and Puech exact passage unavailable.",
+    "A_report_replication": "Tov published subject/wording verified; geometric datum and original-object measurement not identifiable. Puech exact deeper-cancelled-I assertion remains unrecovered.",
     "B_local_order": "not identifiable from available evidence at all seven loci.",
     "C_distinct_later_episode": "not identifiable; no authenticated intervening event/chronology bridge. Even local Greek-after-Hebrew could occur in one writing session.",
     "D_removed_deposit_meaning": "not identifiable; timing would not alone establish removal or marked person."
@@ -247,20 +247,181 @@
   ],
   "no_rejection_from_absence": "Missing diagnostic coverage and unavailable metrology establish neither no crossings nor absence of depth differences; no rejection of later addition or universal seven-group layer.",
   "bookkeeping": {
-    "source_scopes_before": 56,
-    "source_scopes_added": 1,
-    "added_scope": "Bertholon/Lacoudre/Vasquez2002conservation chapterpp12–24 author-posted text; original figure pixels uninspected. Existing exposedDJD/CSS image reinspection and source/catalogue routing add no second source.",
-    "source_scopes_after": 57,
+    "source_scopes_before": 57,
+    "source_scopes_added": 2,
+    "added_scopes": [
+      "TovCSSpp288–290 original chapter",
+      "PuechCSSmethods/IV2/Greekparagraphpp60–61,68–69,81"
+    ],
+    "source_scopes_after": 59,
     "cartographic_intakes": 5,
-    "bounded_checks_before": 63,
+    "bounded_checks_before": 64,
     "bounded_checks_added": 1,
-    "added_check": "Combined report/provenance and seven-locus photographic timing-coverage audit; metrology unavailable.",
-    "bounded_checks_after": 64,
+    "added_check": "Combined attached-source assertion/provenance replication; unchanged physical criteria, no new surface-image metrology.",
+    "bounded_checks_after": 65,
     "decisive_tests_added": 0,
     "question_closures_added": 0,
     "identifications_added": 0,
     "confidence_or_coordinate_changes": false,
     "question_state": "R11 In progress;10 In progress/2 Queued; Jericho parked."
   },
-  "reopen_condition": "Specified new primary Tov/Puech passages or original multi-light/metric surface observations with conservation provenance and accurate locus registration; a larger name list does not reopen this result."
+  "reopen_condition": "Exact Puech deeper-cancelled-I primary passage or original multiple-light/metric surface observations with conservation provenance and locus registration. Tov acquisition is closed; its reported metric relation remains undefined. No larger name list reopening.",
+  "prior_result_history": {
+    "commit": "94530cbfddab0b28f154f1533e6bedc3b43cfedb",
+    "claim_A": "not identifiable: Tov original wording/datum and Puech exact passage unavailable.",
+    "bookkeeping": {
+      "source_scopes_before": 56,
+      "source_scopes_added": 1,
+      "added_scope": "Bertholon/Lacoudre/Vasquez2002conservation chapterpp12–24 author-posted text; original figure pixels uninspected. Existing exposedDJD/CSS image reinspection and source/catalogue routing add no second source.",
+      "source_scopes_after": 57,
+      "cartographic_intakes": 5,
+      "bounded_checks_before": 63,
+      "bounded_checks_added": 1,
+      "added_check": "Combined report/provenance and seven-locus photographic timing-coverage audit; metrology unavailable.",
+      "bounded_checks_after": 64,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_coordinate_changes": false,
+      "question_state": "R11 In progress;10 In progress/2 Queued; Jericho parked."
+    }
+  },
+  "attached_source_followup": {
+    "date_utc": "2026-10-04",
+    "prior_result_commit": "94530cbfddab0b28f154f1533e6bedc3b43cfedb",
+    "inputs": {
+      "CSS": {
+        "path": "/workspace/scratch/43a6d1804f3f/upload/Copper Scroll Studies (Academic Paperback) -- George J_ Brooke, Philip R_ Davies -- Academic Paperback 40, 2004 -- T&T Clark International -- (1).pdf",
+        "file_id": "file_000000006fa081fbb319aa0a8e93a8f2",
+        "library_file_id": "libfile_e368ae676b5c819194a2a4fb55207d60",
+        "sha256": "590307dfb3c966b8b80d52de6a34602cc689751862844c81a965a9c2d998290f",
+        "bytes": 17391681,
+        "pdf_pages": 361,
+        "printed_to_viewer": "printed+17 for inspected body pages",
+        "edition": "George J. Brooke and Philip R. Davies (eds), Copper Scroll Studies, T&T Clark International2004 paperback of2002 publication",
+        "acquisition": "User attached full PDF in this conversation; read directly from supplied workspace copy."
+      },
+      "Fascicle2": {
+        "path": "/workspace/scratch/43a6d1804f3f/upload/Fascicle 2.pdf",
+        "file_id": "file_00000000842081fb80b56a29bbfc309c",
+        "library_file_id": "libfile_44f4cf6e19008191aae45bea32bf3044",
+        "sha256": "e1effe92d64aa1263f38e9d45d053202423cddd3bfca1ff327ff131a1fc8d203",
+        "bytes": 1125503,
+        "pdf_pages": 64,
+        "edition": "Fascicle2, Qumran Minor Caves, compiled by Stephen A. Reed; browser print capture dated3October2026,9:30PM",
+        "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
+        "acquisition": "User attached browser-print PDF; direct workspace read. Catalogue metadata, not original photograph files."
+      }
+    },
+    "Tov": {
+      "status": "published assertion replicated; original-object measurement not replicated",
+      "printed_pages": [
+        288,
+        289,
+        290
+      ],
+      "viewer_pages": [
+        305,
+        306,
+        307
+      ],
+      "method": "Independent reader and integrator extracted text and visually inspected all three pages; selected Hebrew-number spelling checked in page image.",
+      "subject": [
+        "ΚΕΝ",
+        "שבעשרה"
+      ],
+      "hebrew_gloss": "seventeen",
+      "literal_numeric_statement": "written 2 mm below the writing surface of the preceding words",
+      "numeric_value_as_author_report_mm": 2,
+      "numeric_value_as_our_measurement_mm": null,
+      "measurement_axis": "undefined",
+      "datum_definition": "not supplied",
+      "instrument_calibration_uncertainty": "not supplied",
+      "original_vs_copy_inspection_basis": "not specified in these three pages",
+      "claim_type": "Author observation/assertion with an undefined geometric relation; neither calibrated groove depth nor a definite baseline/sheet-relief offset established.",
+      "author_interpretation": "A different person supplied square value characters and their own Greek initials after each section. She proposes25 scribes and imagines them gathering to write in one place; these are interpretations rather than authenticated crossing sequences.",
+      "other_author_selected_loci": [
+        "I8",
+        "IX13",
+        "XII1",
+        "III7",
+        "VI6",
+        "VII13"
+      ],
+      "exposure_note": "These source-selected value/numeral comparisons are exploratory leads, not reserved unseen predictions; no new target images inspected here.",
+      "figure": "p289selected Hebrew letter drawings labelled ScribeA; not calibrated KEN/seventeen surface data.",
+      "reproduction": "Imprintp5allrightsreserved; no new chapter/page images published. Short factual statement and provenance only."
+    },
+    "Puech_CSS": {
+      "status": "target deeper-cancelled-I assertion remains unrecovered in bounded checked passages",
+      "chapter": "A New Examination of the Copper Scroll",
+      "chapter_printed_range": [
+        58,
+        89
+      ],
+      "chapter_viewer_range": [
+        75,
+        106
+      ],
+      "navigation": "WholePDF and chapter text navigation for cancellation,depth,iota/sigma,overwriting and related words; search is not a full reading.",
+      "printed_pages_inspected": [
+        60,
+        61,
+        68,
+        69,
+        81
+      ],
+      "viewer_pages_inspected": [
+        77,
+        78,
+        85,
+        86,
+        98
+      ],
+      "method": "Independent worker and integrator visually inspected five pages.",
+      "positive_methods": "p60multi-angle EDF radiographs; photos of flattened replica/galvanoplasty; original re-examination1996. fn12mallet-engraving interpretation. p61graphicmock-up/replica joins and saw-loss/copy limitations.",
+      "target_context": "p68IV2 discussion concerns numeral fragments and space for20+20/fullkkryn; p81Greekname paragraph provides no cancellation/depth comparison.",
+      "limit": "Cannot assign these general methods to an unrecovered particular I assertion. No target metric datum/crossing recovered; no denial of the assertion in other Puech works.",
+      "new_source_images": "No original target-metal photographs inspected."
+    },
+    "Fascicle2": {
+      "status": "catalogue provenance and candidate-cut crosswalk verified; original lighting files remain missing",
+      "viewer_pages_visually_inspected": [
+        1,
+        8,
+        9,
+        21,
+        57
+      ],
+      "additional_text_pages": [
+        5,
+        7,
+        20,
+        47,
+        62
+      ],
+      "observation_campaign": "p9Bruce/KennethZuckerman1988 originals bothsides,B&W/color,rotations andtop/bottom lights; occasional side lighting.",
+      "crosswalk": "p8DJDXLIXcuts1–4,LI5–6,LIII7–8,LV9–10*. p21/p57AWS12–21cuts1–10;AWS22sevenlooseCut10lower-rightfragments.",
+      "duplicates": "p20PAM42.977–42.980 correspond to DJDXLIX/LI/LIII/LV; these copies do not provide a new lighting witness.",
+      "access_scope": "Attached catalogue resolves metadata access only. Original-image collection retrieval failure from preceding audit persists; no repeat retrieval attempted. Current museum/contact statements are historical catalogue claims, not verified current facts.",
+      "precise_locus_registration": "unresolved"
+    },
+    "closure": "Exact Tov subject/wording supported by primary chapter; metric relation, all-seven local order, distinct episode, hand/person and removed-deposit meaning remain not identifiable.",
+    "new_source_scopes": 2,
+    "new_source_scopes_named": [
+      "TovCSSpp288–290 original chapter",
+      "PuechCSSmethods/IV2/Greekparagraphpp60–61,68–69,81"
+    ],
+    "new_bounded_checks": 1,
+    "check_name": "Combined attached-source assertion/provenance replication; unchanged physical criteria, no new surface-image metrology.",
+    "catalogue_reinspection_count": 0,
+    "new_decisive_tests": 0,
+    "new_question_closures": 0,
+    "new_identifications": 0,
+    "totals": {
+      "source_scopes": 59,
+      "cartographic_intakes": 5,
+      "bounded_checks": 65
+    }
+  }
 }

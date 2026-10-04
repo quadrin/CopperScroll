@@ -119,8 +119,8 @@ See `phase4_summary.md` and `tables/phase4_hypotheses.csv`.
 - F4.10 (evidence) **The palaeographic claims conflict, and none dates the Greek forms.**
   - Milik: the Greek is a book script (p. 221), the Hebrew is notarial (p. 216).
   - Lefkovits: one hand engraved both (p. 503).
-  - Inherited Tov assertion at CSSp289: older summary includes ΚΕΝ **and preceding Hebrew word**, not Greek alone. Originalpp288–290 unavailable; datum and measurement type unverified. The short Greek-only statement is withdrawn.
-  - Inherited Puech deeper-cancelled-Ι assertion: exact primary passage/page unavailable. Greek-Greek correction does not establish Greek/Hebrew timing.
+  - 4October2026primary TovCSSpp288–290/viewers305–307 verified: p289explicitly names ΚΕΝ and שבעשרה(seventeen), written2mm below preceding writing surface. Axis/datum/method remain undefined. Exactwording verified; original depth and timing unmeasured. The Greek-only shorthand is withdrawn.
+  - Puech deeper-cancelled-Ι assertion: exact passage/page remains unrecovered after bounded CSSmethods/IV2/Greekparagraph review(pp60–61/68–69/81). General original/radiograph/replica methods cannot authenticate this particular assertion. Greek-Greek correction does not establish Greek/Hebrew timing. [Attached-source scope and results](../phases/phase4_summary.md#attached-source-report-replication--4-october-2026).
   - 3 October2026 frozen seven-locus photo audit: two readers cannot authenticate local crossings, metric depth or a distinct later episode in available DJD/CSS reproductions. All seven timing assessments **not identifiable**; no absence/rejection claim. [Result, primary-source scope and exact dependencies](../phases/phase4_summary.md#engraving-order-result--3-october-2026).
 
 ---
