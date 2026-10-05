@@ -12,9 +12,15 @@ Catalogued right/center/left are viewing rotations, paired with top/bottom light
 
 [Structured results](../deep_analysis/engraving_order_results.json) contain exact inspected IDs/hashes, reader scope and null target boxes. [Source intake](assets/plans/greek-engraving/source-intake.json) links acquired main files and preserves access history. No new image publication or transformed source ROI.
 
+## Mapping follow-up
+
+[The reconstruction/Allegro check](phases/phase4_summary.md#original-reconstruction-and-allegro-mapping-follow-up--5-october-2026) completes CSS printed pp. 45–57 and inspects eight selected earlier original previews. Figure 4.6 forms column II from cuts 5–6 but is only 152×259 pixels in the supplied PDF. Earlier cut10 views leave the proposed 180-degree comparison transform unverified; clipped ends and curved visible faces do not yield a unique correspondence. Explicit alternatives preserve unknown registration; chronology and metric depth remain unknown. Gallery inventories (296 monochrome/109 slides) are metadata only beyond the eight inspected previews. Source links/hashes/rights are retained, no additional images published.
+
 ## Next action
 
-Obtain or locate a labeled original column reconstruction/archival mapping connecting edition line ends and adjacent Hebrew to particular curved cuts and rotations. Then inspect archival-resolution paired top/bottom frames where target groove parents need more detail, with original-surface/conservation provenance. Calibrated original geometry is required for metric depth. Reopen only for this specified registration aid/new original observation or a documented analytical correction; do not repeat the same preview-only pass.
+Obtain the original high-resolution **WSRP Figure 4.6 column-II composite**, with the **component-image IDs and placement map/masks** connecting edition lines to original cuts5–6 and rotations. The publication's higher-resolution/CD-ROM notes are historical; present availability remains unverified. Separately, Manchester Museum's archive directs high-resolution requests to collections@manchester.ac.uk: first target early original **C.10a.1/C.10.1** with cut/orientation, lighting and treatment provenance. No outreach sent.
+
+Then inspect registered archival-resolution paired top/bottom target windows. Calibrated original geometry remains necessary for metric depth. Do not repeat the same preview-only pass; reopen only for the specified mapping/new original observation or a documented analytical correction.
 
 The [Reed catalogue](https://lyingpen.uia.no/dssinventoryproject/fascicle2/) and [USC collection](https://digitallibrary.usc.edu/asset-management/2A3BF1S6ONSR7), text ID `ISF_TXT_00313`, remain provenance routes. Existing CSS original-image flattening is derivative and does not supply metric height. Replica 3D and synthetic backs cannot substitute for original geometry.
 
@@ -26,4 +32,4 @@ The person-name/common-noun benchmarks remain complete: names 2/7; matched-size 
 
 Entry 29/Jericho retains its [terminal result](assessments/entry29_jericho_pools/README.md); Plans 14/15/23 acquisition stays parked. Draft PR7 holds preceding R11 work. The new registration follow-up is stacked on that branch and refers to acquired images on main; it does not merge earlier drafts.
 
-One bounded WSRP1988 direct-preview source scope and one combined seven-locus registration/lighting check bring **62 source scopes /5 cartographic intakes /67 bounded checks**. One 1988 campaign, not 54 independent sources or seven chronology tests. No decisive-test, question-closure, identification, confidence or coordinate increment. R11 stays In progress; overall 10 In progress/2 Queued.
+The prior WSRP1988 check brought totals to62/5/67. Two new bounded CSS-methods/Allegro source scopes and one combined mapping check now bring **64 source scopes /5 cartographic intakes /68 bounded checks**. One 1988 campaign, not 54 independent sources or seven chronology tests. No decisive-test, question-closure, identification, confidence or coordinate increment. R11 stays In progress; overall 10 In progress/2 Queued.

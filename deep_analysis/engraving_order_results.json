@@ -600,20 +600,23 @@
   ],
   "no_rejection_from_absence": "Missing diagnostic coverage and unavailable metrology establish neither no crossings nor absence of depth differences; no rejection of later addition or universal seven-group layer.",
   "bookkeeping": {
-    "source_scopes_before": 61,
-    "source_scopes_added": 1,
-    "added_scope": "Bounded direct WSRP1988 original-object preview inspection; catalogue previously checked, actual preview pixels newly inspected",
-    "source_scopes_after": 62,
-    "bounded_checks_before": 66,
+    "source_scopes_before": 62,
+    "source_scopes_added": 2,
+    "added_scopes": [
+      "CSS imaging chapter methods/archive/distribution completion beyond earlier figure scope",
+      "Allegro archive provenance and eight selected early original-photo previews"
+    ],
+    "source_scopes_after": 64,
+    "bounded_checks_before": 67,
     "bounded_checks_added": 1,
-    "added_check": "Seven-locus registration and same-rotation top/bottom coverage attempt",
-    "bounded_checks_after": 67,
+    "added_check": "Combined reconstruction/early-original orientation and registration check",
+    "bounded_checks_after": 68,
     "cartographic_intakes": 5,
     "decisive_tests_added": 0,
     "question_closures_added": 0,
     "identifications_added": 0,
     "confidence_or_coordinate_changes": false,
-    "independence": "One 1988 campaign; 54 views and seven target loci are not 54 independent sources or seven chronology tests"
+    "independence": "Reproductions and methods are not independent chronology confirmations; archive dates and distinct original campaigns not enumerated"
   },
   "reopen_condition": "Labeled original column reconstruction or archival image mapping linking edition line ends and adjacent Hebrew to curved cut/view faces; then archival-resolution top/bottom photographs where groove parents require it, with original-surface/conservation provenance. Calibrated original geometry needed for metric depth.",
   "prior_result_history": {
@@ -2938,5 +2941,246 @@
       "confidence_or_coordinate_changes": false,
       "independence": "One 1988 campaign; 54 views and seven target loci are not 54 independent sources or seven chronology tests"
     }
+  },
+  "mapping_followup": {
+    "date_utc": "2026-10-05",
+    "prior_result_commit": "5c9c4af0deaddd408033623a9fd9662f8462ea9e",
+    "claim": "Exploratory original-column mapping and orientation follow-up; engraving chronology remains not identifiable",
+    "exposure": "Known reconstruction reinspection, newly inspected chapter-methods scope and early original-photo reproductions; no holdout or unseen prediction",
+    "css_chapter": {
+      "title": "When Images Meet: The Potential of Photographic and Computer Imaging Technology for the Study of the Copper Scroll",
+      "authors": [
+        "Marilyn J. Lundberg",
+        "Bruce Zuckerman"
+      ],
+      "volume": "Copper Scroll Studies, supplied Academic Paperback 2004 edition",
+      "printed_pages": [
+        45,
+        57
+      ],
+      "viewer_pages": [
+        62,
+        74
+      ],
+      "input_sha256": "590307dfb3c966b8b80d52de6a34602cc689751862844c81a965a9c2d998290f",
+      "inspection_scope": "Full chapter text; source figures at pp. 51–52 revisited. Newly inspected methods/archive/distribution pages expand prior pp. 51–53 scope.",
+      "methods": "pp. 46–47: original curved segments in a half-cylinder cradle; 4×5 film, generally left/center/right rotations, top/bottom lighting. Article reports 148 photographs in its described series; this is not the USC catalogue count of 294.",
+      "early_archive": "pp. 48–49: Allegro opening/cutting/cleaning and original-segment photographs; earlier photographs can retain surface before later losses.",
+      "figures": [
+        {
+          "figure": "4.2–4.4",
+          "printed_page": 51,
+          "viewer_page": 68,
+          "description": "Cut 10 lower-right fragments, digital restoration and earlier intact Allegro view; projections/condition differ."
+        },
+        {
+          "figure": "4.5",
+          "printed_page": 52,
+          "viewer_page": 69,
+          "description": "Flattest portions from four viewing rotations of cut 15 joined into a derivative composite."
+        },
+        {
+          "figure": "4.6",
+          "printed_page": 52,
+          "viewer_page": 69,
+          "description": "Composites of cuts 5 and 6 joined to form column II.",
+          "embedded_native_px": [
+            152,
+            259
+          ],
+          "pdf_xref": 229,
+          "asset_sha256": "e55d34e2ff1bedcc019ac764572ff320de1ab6c931d5ee561081684d0bc070e2",
+          "quality_limit": "The large 1282×2157 page image is a one-bit text/background layer; it is not a hidden high-resolution Figure 4.6. Render enlargement adds no source detail.",
+          "archive_status": "Metadata retained; publication figure not uploaded. No exact Greek ROI authenticated."
+        }
+      ],
+      "resolution_notes": "p. 50 note 5 contrasts publication BW prints with original high-resolution digital color images; p. 56 note 8 describes CD-ROM availability at publication time, not verified current availability.",
+      "request_target": "Original high-resolution Figure 4.6 color composite AND component-image identifiers/placement map or masks tying column II to original cuts 5–6. Sharper composite alone does not authenticate raw-frame target boxes."
+    },
+    "allegro_archive": {
+      "provenance_url": "https://dqcaas.com/photographic-collections/university-of-manchester-museum-john-allegro-images/",
+      "monochrome_gallery_url": "https://dqcaas.com/allegro-manchester-copper-scroll/",
+      "slide_gallery_url": "https://dqcaas.com/photographic-collections/university-of-manchester-museum-john-allegro-images/allegro-slides-copper-scroll/",
+      "gallery_link_inventory": {
+        "monochrome": 296,
+        "slides": 109,
+        "scope": "HTML image-link inventory only; not 405 image inspections; cross-gallery observation duplication not assessed"
+      },
+      "visual_scope": {
+        "native_previews": 8,
+        "width_px": 720,
+        "height_px_range": [
+          576,
+          583
+        ],
+        "reader": "Integrator; selected originals, not a complete archive review",
+        "additional_reader": "Independent II/IV reader checked C.10a.1 and C.10.1 against UC15245201 native/180; not an independent review of all eight."
+      },
+      "frames": [
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-1a-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.1a.1.jpg",
+          "sha256": "9e7bd26d89a2ed850f18a7f044369e8b7dc5b25fb1be7ad59b731ea89f3d88ed",
+          "bytes": 35278,
+          "native_px": [
+            720,
+            579
+          ],
+          "status": "retrieved",
+          "archive_id": "c.1a.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-4a-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.4a.1.jpg",
+          "sha256": "9ee88a9df9847b135677caa120e350c5402ebf189800ef7dfeb3282f8bde1471",
+          "bytes": 29797,
+          "native_px": [
+            720,
+            576
+          ],
+          "status": "retrieved",
+          "archive_id": "c.4a.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-1-2/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.1-1.jpg",
+          "sha256": "3c4d5b53430065ad56baa2e889140de6dbac94f6cd8b0889a9a0964c196d317c",
+          "bytes": 33889,
+          "native_px": [
+            720,
+            576
+          ],
+          "status": "retrieved",
+          "archive_id": "c.6a.1-1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-8a-1-2/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.8a.1-1.jpg",
+          "sha256": "fa7452557cea3320d25f1ec1321c175e8fc387744de6b88b5224c11b01d0e81b",
+          "bytes": 48128,
+          "native_px": [
+            720,
+            583
+          ],
+          "status": "retrieved",
+          "archive_id": "c.8a.1-1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-10a-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.10a.1.jpg",
+          "sha256": "3216e3ea81f0605ee3df3c8bf48cf1496309927c2c9cba64c5dee5a9b49cae34",
+          "bytes": 37534,
+          "native_px": [
+            720,
+            578
+          ],
+          "status": "retrieved",
+          "archive_id": "c.10a.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-10-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.10.1.jpg",
+          "sha256": "33bd8b2aee7816100bc60dc95238c999f548e49fa46787d8532246cf99fe3dfb",
+          "bytes": 35665,
+          "native_px": [
+            720,
+            576
+          ],
+          "status": "retrieved",
+          "archive_id": "c.10.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-2-4-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.2-4.1-.jpg",
+          "sha256": "946d916bd8882deb95f9bf831259b45bf8704972e0cd59a20610515f35778ad5",
+          "bytes": 57387,
+          "native_px": [
+            720,
+            576
+          ],
+          "status": "retrieved",
+          "archive_id": "c.2-4.1-",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-8-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-8.1.jpg",
+          "sha256": "c0b474c3364bc2c4fce9b0b7e2d77d668e823d141df2b3aac66ff873cccb978c",
+          "bytes": 48657,
+          "native_px": [
+            720,
+            578
+          ],
+          "status": "retrieved",
+          "archive_id": "c.6-8.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        }
+      ],
+      "observations": "Numbered handheld original strips 1, 4, 6, 8, 10 and a mounted cut 10, plus grouped 2–4 and 6–8 views. Earlier cut 10 views show punctured margin at image left and lettering at right; cut 8 low keyhole supports native rather than blanket-180 orientation.",
+      "rights": "Archive permits low-resolution teaching/noncommercial use subject to acknowledgement of Allegro-estate permissions and courtesy of Manchester Museum, University of Manchester. No open licence inferred; source images not republished in this follow-up.",
+      "high_resolution_contact": "collections@manchester.ac.uk",
+      "outreach": "No message sent",
+      "request_target": "Archival-resolution originals and catalogue/cut identification for C.10a.1 and C.10.1 first, then needed column-II/other-cut photographs; retain lighting, treatment and orientation provenance."
+    },
+    "orientation_reassessment": {
+      "prior_limitation": "The first pass did not systematically test 180-degree alternatives. Later global-rotation commentary was premature and corrected.",
+      "cut10": "180-degree rotation remains an unverified proposed comparison transform. Independent reader compared C.10a.1/C.10.1 with UC15245201 native/180 displays: clipped ends, narrow curved visible faces and nonunique contour/puncture correspondences prevent determining orientation or physical side. Left margin/right lettering alone cannot discriminate viewing rotation or another face. IV2 and adjacent Hebrew remain unregistered.",
+      "other_cuts": "Readers revisited 13 BW cuts1–4 and 12 BW cuts7–8 with explicit 180-degree alternatives. These do not justify applying cut10 rotation globally; cut7/8 landmarks favor native orientation. Card position alone is not a text-axis datum.",
+      "transforms": "View-only rotations are exploratory aids; no transformed source image or target ROI published."
+    },
+    "result": {
+      "exact_greek_rois": null,
+      "authenticated_crossings": null,
+      "local_order": "unknown at all seven loci",
+      "metric_depth": null,
+      "distinct_later_episode": "not identifiable from available evidence",
+      "surviving_alternatives": [
+        "same-session",
+        "distinct later episode"
+      ],
+      "frozen_protocol_changed": false
+    },
+    "bookkeeping": {
+      "source_scopes_before": 62,
+      "source_scopes_added": 2,
+      "added_scopes": [
+        "CSS imaging chapter methods/archive/distribution completion beyond earlier figure scope",
+        "Allegro archive provenance and eight selected early original-photo previews"
+      ],
+      "source_scopes_after": 64,
+      "bounded_checks_before": 67,
+      "bounded_checks_added": 1,
+      "added_check": "Combined reconstruction/early-original orientation and registration check",
+      "bounded_checks_after": 68,
+      "cartographic_intakes": 5,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_coordinate_changes": false,
+      "independence": "Reproductions and methods are not independent chronology confirmations; archive dates and distinct original campaigns not enumerated"
+    },
+    "next_action": "Obtain high-resolution WSRP Figure 4.6 with component crosswalk; use Manchester early-original cut10 records for a bounded orientation/condition bridge. Reopen engraving order only with authenticated original target parents or calibrated geometry."
+  },
+  "prior_mapping_bookkeeping": {
+    "source_scopes_before": 61,
+    "source_scopes_added": 1,
+    "added_scope": "Bounded direct WSRP1988 original-object preview inspection; catalogue previously checked, actual preview pixels newly inspected",
+    "source_scopes_after": 62,
+    "bounded_checks_before": 66,
+    "bounded_checks_added": 1,
+    "added_check": "Seven-locus registration and same-rotation top/bottom coverage attempt",
+    "bounded_checks_after": 67,
+    "cartographic_intakes": 5,
+    "decisive_tests_added": 0,
+    "question_closures_added": 0,
+    "identifications_added": 0,
+    "confidence_or_coordinate_changes": false,
+    "independence": "One 1988 campaign; 54 views and seven target loci are not 54 independent sources or seven chronology tests"
   }
 }

@@ -29,7 +29,7 @@ An **unexcavated-alternative inventory** starts from entry constraints and a dec
 
 ## Activity retained separately
 
-Current R11 activity at 5 October 2026 UTC: **62 scoped primary-source targets /5 cartographic-reference intakes /67 bounded checks**; 10 In progress/2 Queued. The [USC1988 follow-up](phases/phase4_summary.md#usc-1988-registration-and-lighting-review--5-october-2026) adds one bounded direct-preview source scope and one combined seven-locus registration/lighting check to the French2006 totals61/5/66. Exact observations, scope and prior counts are in `deep_analysis/engraving_order_results.json`. File acquisition and54 views of one campaign add no identification or independent-campaign confidence. No outcome-counter, decisive-test or closure increment.
+Current R11 activity at 5 October 2026 UTC: **64 scoped primary-source targets /5 cartographic-reference intakes /68 bounded checks**; 10 In progress/2 Queued. The [mapping follow-up](phases/phase4_summary.md#original-reconstruction-and-allegro-mapping-follow-up--5-october-2026) adds two bounded scopes (CSS imaging-methods/archive/distribution completion; Allegro provenance and eight selected original previews) and one combined reconstruction/orientation check to the previous62/5/67. Exact sources, hashes, limitations and prior counts are in `deep_analysis/engraving_order_results.json`. No chronology confirmation, identification/confidence change, decisive-test or closure increment.
 
 The following Jericho activity record is historical:
 
