@@ -1498,5 +1498,1312 @@
       ],
       "limits": "No file acquisition or new evidence inspection; no fee authorized; all source/check/outcome counts unchanged. Private message IDs and mailbox contents omitted from public record."
     }
+  },
+  "cuts56_crosswalk_followup": {
+    "date_utc": "2026-10-05",
+    "prior_result_commit": "47368ff2efad4b372d830cd4369974f1d5203188",
+    "claim": "Exploratory physical-strip/individual-frame crosswalk between Allegro cuts5–6 and 1988 WSRP originals; Greek edition-line registration remains unresolved",
+    "trigger": "User authorized remaining Allegro cuts5–6 visual map while original reconstruction requests are pending",
+    "exposure": "Known originals in a newly expanded archive-photo scope; exploratory and not a holdout",
+    "source_gallery_url": "https://dqcaas.com/allegro-manchester-copper-scroll/",
+    "acquisition": {
+      "files": 49,
+      "byte_distinct": 49,
+      "all_retrieved_decoded_hashed": true,
+      "source_photo_compositions": 27,
+      "cut5": 18,
+      "cut6": 4,
+      "grouped_cut6_7_or6_8": 5,
+      "previously_inspected_compositions": 2,
+      "newly_inspected_compositions": 25,
+      "prior_overlap": [
+        "C.6a.1",
+        "C.6–8.1"
+      ],
+      "duplicate_derivative_pairs": 22,
+      "max_pair_mean_absolute_channel_difference_0_255": 0.7410432312728673,
+      "dedup_limit": "Paired N.jpg/N-1.jpg have identical dimensions and the same pose/holder/background, with small JPEG pixel differences; byte distinctness does not mean different photographs. Five group views are not automatically independent exposures/campaigns."
+    },
+    "source_files": [
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-1-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.1-1.jpg",
+        "sha256": "3c4d5b53430065ad56baa2e889140de6dbac94f6cd8b0889a9a0964c196d317c",
+        "bytes": 33889,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.1-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-2-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.2-1.jpg",
+        "sha256": "c81726853dc9abac97f69b78899bab849a0a915104d9b5217c6a60b21c6ce9a3",
+        "bytes": 34192,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.2-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-3-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.3-1.jpg",
+        "sha256": "b485950af4729f835a4b5f2fac62f4292f34c45ae63f91e5adeced3c8c32fa52",
+        "bytes": 41072,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.3-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-4-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.4-1.jpg",
+        "sha256": "ec01f441e25862d7c76ec31b502513999090356be4df0c36dfbf44ad2149ed6f",
+        "bytes": 39947,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.4-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-1-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.1-1.jpg",
+        "sha256": "418f338d376c163bf41c65f857e34deaa88b52d93f4596451ab30b501af55df4",
+        "bytes": 35477,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.1-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-2-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.2-1.jpg",
+        "sha256": "ffb9c6e91c924ea9934c57d2922deae3098a134618b9b544eb88ad3386bbc08d",
+        "bytes": 34327,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.2-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-3-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.3-1.jpg",
+        "sha256": "1dc403117aea7ac7e47bf3d26b3cf8d44e05ed47643f3527d29cc613b858ceed",
+        "bytes": 40991,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.3-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-4-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.4-1.jpg",
+        "sha256": "fdd6d467a3237fdeda241d89bf0051df6ad01178b6d861bd4f39a29fb6c03597",
+        "bytes": 37749,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.4-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-5-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.5-1.jpg",
+        "sha256": "c8cf511996cc4b9cfe84919813a9ce3364f92ebfcdecfa13bfaa6a62018007e1",
+        "bytes": 39073,
+        "native_px": [
+          720,
+          578
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.5-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-6-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.6-1.jpg",
+        "sha256": "dcfd59d89a8628349b72acf0bd71810bef6e854dfe9da5a74d77f7b23a15ac29",
+        "bytes": 45437,
+        "native_px": [
+          736,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.6-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-7-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.7-1.jpg",
+        "sha256": "79a051c0c6f69491360d49ba0d23ff8f9870503b3ef9242d8cbcd89f3168d7be",
+        "bytes": 41195,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.7-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-8-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.8-1.jpg",
+        "sha256": "0bef9653e72d446295b976a97247bae18deef09a83914f81af354957ca496a88",
+        "bytes": 30764,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.8-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-9-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.9-1.jpg",
+        "sha256": "ac335976ef404064497bfc014ba19e4453194d8e4fcb77ffedf305fa4650061c",
+        "bytes": 33400,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.9-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-10-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.10-1.jpg",
+        "sha256": "fd38d1d11f6e7fd1c96906802a1c65fee29524f5a1a14c2928e49d81e02d9893",
+        "bytes": 27190,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.10-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-11-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.11-1.jpg",
+        "sha256": "7086d5940c3c1e8eafa00e9810be9fe007c1d4e1541768b63c8b5ac9f4b4e19a",
+        "bytes": 30632,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.11-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-12-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.12-1.jpg",
+        "sha256": "5af39c17b072a6493b0f1b837ae158088afeed0964865fef2a28d99667e815d4",
+        "bytes": 34530,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.12-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-13-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.13-1.jpg",
+        "sha256": "8875e4415187523183f543b056b8d4a0a3b3750df52f1f4db484c79e07ef64b9",
+        "bytes": 28140,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.13-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-14-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.14-1.jpg",
+        "sha256": "c8ae73e4fc0cf563b05049ccc8c8c240695f90d7945ed18988dfdd076c8ca254",
+        "bytes": 35218,
+        "native_px": [
+          832,
+          602
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.14-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-15-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.15-1.jpg",
+        "sha256": "15351872ffb9a6db7ddab1100487606e31491add6b0c1e6746a6dc63c2ef3d01",
+        "bytes": 29746,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.15-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-16-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.16-1.jpg",
+        "sha256": "b13650a3c043124a4bf78259a99a85c13d875957c6149f346ee593b036d9d54a",
+        "bytes": 30624,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.16-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-17-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.17-1.jpg",
+        "sha256": "aaf336b356b442dc281fa738f352e8d067bdba8e47010e94b7769382d12e9281",
+        "bytes": 34249,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.17-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-18-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.18-1.jpg",
+        "sha256": "a0d2c3b7b466c380777dcc3a745b3a8579ac5f48c45f0e7733468de2e42cb856",
+        "bytes": 32470,
+        "native_px": [
+          720,
+          575
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.18-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-1/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.1.jpg",
+        "sha256": "5518737bc86895d9d41e898dd85911313fc0a57f3caabc82affd187594bb7403",
+        "bytes": 35791,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.2.jpg",
+        "sha256": "3bf3224217ed9fd93d9de5c00729af7c100ba9950a515b7bf8482e8ad99c7384",
+        "bytes": 34555,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.2.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-3/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.3.jpg",
+        "sha256": "9de79831e9d31226e23bc91176c04766056b93f47b4789cbaaa6893d357f66ca",
+        "bytes": 40996,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.3.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-4/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.4.jpg",
+        "sha256": "e13fd6f4869d820f8473a8d10b696eb35df8082b9a0d725171bfe9c70b617960",
+        "bytes": 37983,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.4.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-5/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.5.jpg",
+        "sha256": "4df9387348c0eb7bd19159e1ee1f270f7962792b05d5a2a0044079ff03beca6b",
+        "bytes": 39459,
+        "native_px": [
+          720,
+          578
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.5.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-6/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.6.jpg",
+        "sha256": "58c751fafc52b252ac572f1e4cebca9cc33a438d5e51f6dfc96de7e7c77a47b1",
+        "bytes": 45796,
+        "native_px": [
+          736,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.6.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-7/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.7.jpg",
+        "sha256": "eaabae1328691670d04d2ac089324476f527c628500a2620389dd1ed51de885f",
+        "bytes": 41558,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.7.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-8/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.8.jpg",
+        "sha256": "8d86cdec71464e69a4638b0782e6d01942281b04af51b736400ce97e0ab08772",
+        "bytes": 31018,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.8.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-9/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.9.jpg",
+        "sha256": "ab6345412f0a2740b7473d38f4cbe58d22035cd16a915d37169b29fe431a8ae0",
+        "bytes": 33552,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.9.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-10/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.10.jpg",
+        "sha256": "5d9d6d5aacb5dc07323a8471e5527d6cf1d818b11a4216937fb9620556300090",
+        "bytes": 27193,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.10.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-11/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.11.jpg",
+        "sha256": "1a4ed0e71839ccf92ef65763e498a42bea7c33947dc8ec548bc6b9ac5c9be0d2",
+        "bytes": 30930,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.11.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-12/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.12.jpg",
+        "sha256": "0d01ec56f4001cb9cb587a06aac154940131f21ef7c6f701a37ad823d3ff5e35",
+        "bytes": 34477,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.12.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-13/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.13.jpg",
+        "sha256": "384e1deae07a9f59cf9ec8f2c3314b9ea339e31154cfa9af0476d20066bcf8fc",
+        "bytes": 28303,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.13.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-14/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.14.jpg",
+        "sha256": "1e250a4008f54ee0fcb7e891752eed472ba6b86a7a745ed2f225d858110f9597",
+        "bytes": 35257,
+        "native_px": [
+          832,
+          602
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.14.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-15/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.15.jpg",
+        "sha256": "e3920562e8ec9ad7914a4dcc7c704c59ee5bf7b06c2fa3e2aa8622e6bab79b20",
+        "bytes": 29713,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.15.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-16/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.16.jpg",
+        "sha256": "60d1a0b2afee048606d781ac486401e03cabc5b45d9da7b5d3e227c8cedc1a40",
+        "bytes": 30763,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.16.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-17/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.17.jpg",
+        "sha256": "947d8731e64f580f0e1ea2295466c1ec0934075aa84fea49179da9f1abeb3acc",
+        "bytes": 34299,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.17.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-18/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.18.jpg",
+        "sha256": "fa0573a43fda45956cabe4e2baa4ad641d94d66bd9d39c6aa56b31865fd9b3cc",
+        "bytes": 32509,
+        "native_px": [
+          720,
+          575
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.18.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-7-1/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-7.1.jpg",
+        "sha256": "38ac233038ac9af619c4687ae15e6a841d3a1f38b788c9d5bf01013f8382dfbd",
+        "bytes": 54046,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6-7.1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-7-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-7.2.jpg",
+        "sha256": "c2db153d223ccf7d801f6e8390abf8f2c44929c7b8145d358a482b46db87f053",
+        "bytes": 50285,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6-7.2.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-8-1/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-8.1.jpg",
+        "sha256": "c0b474c3364bc2c4fce9b0b7e2d77d668e823d141df2b3aac66ff873cccb978c",
+        "bytes": 48657,
+        "native_px": [
+          720,
+          578
+        ],
+        "status": "retrieved",
+        "filename": "c.6-8.1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-8-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-8.2.jpg",
+        "sha256": "b77122ed02058458fe97e983b679c6740772af00252c795293c9b2253f023170",
+        "bytes": 46499,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.6-8.2.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-8-3/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-8.3.jpg",
+        "sha256": "51b206e3c43073eb7cbcc64e23363259f0c957a4ebdb86395199d28757391f1d",
+        "bytes": 52275,
+        "native_px": [
+          720,
+          602
+        ],
+        "status": "retrieved",
+        "filename": "c.6-8.3.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-1/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.1.jpg",
+        "sha256": "213833ba30c200ada99f7c74f3aa8c02d7844d66a67522cbacb6926973acb786",
+        "bytes": 34295,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.2.jpg",
+        "sha256": "65abdcf8da9d46baa4d304b3d43cb992eefd5d805d3f134f08dc64cf38b85552",
+        "bytes": 34411,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.2.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-3/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.3.jpg",
+        "sha256": "a27373351793e393e1d9dbdb6e512f585d2c375af46480b5925753e090b43898",
+        "bytes": 41459,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.3.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-4/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.4.jpg",
+        "sha256": "efd8d51d65cb2ea4a51c3e0c7bd39d10bd29f0a8258eeadeb3932a9caf2faa4e",
+        "bytes": 40336,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.4.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      }
+    ],
+    "same_photo_derivative_pairs": [
+      {
+        "catalogue_photo": "C.5a.1",
+        "files": [
+          "c.5a.1.jpg",
+          "c.5a.1-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3585018293857115,
+          0.3567061428846524,
+          0.5999109378008858
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.2",
+        "files": [
+          "c.5a.2.jpg",
+          "c.5a.2-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.340943287037037,
+          0.3601466049382716,
+          0.7357253086419753
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.3",
+        "files": [
+          "c.5a.3.jpg",
+          "c.5a.3-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.40614047756595417,
+          0.41134941267090314,
+          0.7410432312728673
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.4",
+        "files": [
+          "c.5a.4.jpg",
+          "c.5a.4-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3363301559792028,
+          0.3617273252455228,
+          0.6432120161756211
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.5",
+        "files": [
+          "c.5a.5.jpg",
+          "c.5a.5-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.378263168012303,
+          0.38027441368704346,
+          0.6402897923875432
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.6",
+        "files": [
+          "c.5a.6.jpg",
+          "c.5a.6-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.41959871301328505,
+          0.43264785250603865,
+          0.7166624207427537
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.7",
+        "files": [
+          "c.5a.7.jpg",
+          "c.5a.7-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3923526863084922,
+          0.40789765068361256,
+          0.7057770075101097
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.8",
+        "files": [
+          "c.5a.8.jpg",
+          "c.5a.8-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3146291473765432,
+          0.3199821566358025,
+          0.5579716435185185
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.9",
+        "files": [
+          "c.5a.9.jpg",
+          "c.5a.9-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.31494984567901235,
+          0.3150077160493827,
+          0.5795090663580247
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.10",
+        "files": [
+          "c.5a.10.jpg",
+          "c.5a.10-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.2644121334876543,
+          0.274438175154321,
+          0.5323302469135802
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.11",
+        "files": [
+          "c.5a.11.jpg",
+          "c.5a.11-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3079668209876543,
+          0.3275993441358025,
+          0.6152681327160494
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.12",
+        "files": [
+          "c.5a.12.jpg",
+          "c.5a.12-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3700086805555556,
+          0.3804952739197531,
+          0.6629075038580247
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.13",
+        "files": [
+          "c.5a.13.jpg",
+          "c.5a.13-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.29130979938271606,
+          0.26243248456790125,
+          0.5511646412037037
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.14",
+        "files": [
+          "c.5a.14.jpg",
+          "c.5a.14-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.30440598645540506,
+          0.3083431829798109,
+          0.46662167774086377
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.15",
+        "files": [
+          "c.5a.15.jpg",
+          "c.5a.15-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.27328559027777777,
+          0.27717255015432096,
+          0.4945891203703704
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.16",
+        "files": [
+          "c.5a.16.jpg",
+          "c.5a.16-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3280213155864197,
+          0.3282431520061728,
+          0.6110001929012345
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.17",
+        "files": [
+          "c.5a.17.jpg",
+          "c.5a.17-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.36986400462962965,
+          0.3502242476851852,
+          0.5637080439814814
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.18",
+        "files": [
+          "c.5a.18.jpg",
+          "c.5a.18-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.33244202898550723,
+          0.33706280193236715,
+          0.6290096618357488
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.6a.1",
+        "files": [
+          "c.6a.1.jpg",
+          "c.6a.1-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.37277440200617284,
+          0.3450520833333333,
+          0.6616102430555556
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.6a.2",
+        "files": [
+          "c.6a.2.jpg",
+          "c.6a.2-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.33977864583333334,
+          0.3379195601851852,
+          0.6400655864197531
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.6a.3",
+        "files": [
+          "c.6a.3.jpg",
+          "c.6a.3-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3803240740740741,
+          0.38491753472222223,
+          0.6779031635802469
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.6a.4",
+        "files": [
+          "c.6a.4.jpg",
+          "c.6a.4-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3580753279320988,
+          0.3626350308641975,
+          0.6282021604938272
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      }
+    ],
+    "usc_comparison_frames": [
+      {
+        "id": "UC15246880",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto rt top light, b&w neg",
+        "catalog_rotation_light_label": "rt top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S67THOQ",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246880.jpg",
+        "sha256": "4e49a4a4df7dbda1fbca00dc2b911a07e7c2afe7da6637ad11128f557252016e",
+        "width_px": 638,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246871",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto rt bot light, b&w neg",
+        "catalog_rotation_light_label": "rt bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S67U829",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246871.jpg",
+        "sha256": "5c3ac307852ae8cc163beef3f6f8694e5df9dae1db382572105e589210f9b42c",
+        "width_px": 658,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246859",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto rt bot light, b&w neg",
+        "catalog_rotation_light_label": "rt bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S67U7U7",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246859.jpg",
+        "sha256": "b6bacb75760aa36488df551ed1811f42b8a5a1c90da09217850d8298be0c85f9",
+        "width_px": 585,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246588",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto rt top light, b&w neg",
+        "catalog_rotation_light_label": "rt top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S679F_O",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246588.jpg",
+        "sha256": "1c9902bde44c76d755ea4a372f7f5bed2f52a14231f7eda9c5ae0dd249830a43",
+        "width_px": 587,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246560",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto lft bot light, b&w neg",
+        "catalog_rotation_light_label": "lft bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y19FS",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246560.jpg",
+        "sha256": "a3381787c048ba33e27217dd7ac30436462e0b6fda4a09161d6dea28ac2c2f8a",
+        "width_px": 616,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246358",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto lft top light, b&w neg",
+        "catalog_rotation_light_label": "lft top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y1KN6",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246358.jpg",
+        "sha256": "534532ec9e6a22b9b23a792503e5471dc8d07683a82cefb9fe12ac078802a7b5",
+        "width_px": 615,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246329",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto ctr top light, b&w neg",
+        "catalog_rotation_light_label": "ctr top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6YQPTZ",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246329.jpg",
+        "sha256": "07e5bcdd345217cdd38d74ee9c5867f47b2081db89dbd7a3af0c99301e8f36d6",
+        "width_px": 643,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246013",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto lft top light, b&w neg",
+        "catalog_rotation_light_label": "lft top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y35XV",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246013.jpg",
+        "sha256": "3ff9e09af07ddf3466f0affccdf9286bcffadc87520311ca8420064e6b32e376",
+        "width_px": 606,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246009",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto ctr bot light, b&w neg",
+        "catalog_rotation_light_label": "ctr bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6YSEJY",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246009.jpg",
+        "sha256": "f6a71c74db25c6a7fd234e2b44d817ed179f4298193f83b24738ad2de5ac3555",
+        "width_px": 612,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246010",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto ctr bot light, b&w neg",
+        "catalog_rotation_light_label": "ctr bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6YSB83",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246010.jpg",
+        "sha256": "031b2e301aa5ba0d27148a54564d33dc9b4211c81c5003db0faabf5c55ca6678",
+        "width_px": 643,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15245493",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto ctr top light, b&w neg",
+        "catalog_rotation_light_label": "ctr top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y86WM",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15245493.jpg",
+        "sha256": "32366d957ca36175634406843422004de2a0210995b0dd9530a739cef105e535",
+        "width_px": 652,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15245497",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto lft bot light, b&w neg",
+        "catalog_rotation_light_label": "lft bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y9UH6",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15245497.jpg",
+        "sha256": "411280a2a2c044b639e2ccccda930c03454c017f57dc4cd75924499c6e5736ba",
+        "width_px": 611,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      }
+    ],
+    "inspection_scope": {
+      "integrator": "Overview of all27 photographic compositions on contact sheets; native C.5a.1, C.5a.2-1, C.6a.3-1 and USC center frames independently compared. All49 derivative files metadata/decoding verified; not49 independent native photograph reviews.",
+      "cut5_reader": "All18 cut5 representative originals and all6 USCcut5 BW recto views inspected separately.",
+      "cut6_reader": "Four cut6 original-photo representatives (-1 versions) compared independently to USCcut6; grouped photographs were not inspected by this reader. Integrator inspected those grouped views in the composition overview.",
+      "reader_agreement": "Integrator and respective cut reader agree on the two named center-frame physical chains. This is not two independent Greek-line readings."
+    },
+    "coordinate_convention": "Approximate visual landmark centers in native pixels, x right/y down. Context anchors only, no target ROI/metric uncertainty/global warp; coordinates are not transferable across curved angular views.",
+    "physical_crosswalk": [
+      {
+        "cut": 5,
+        "allegro_file": "c.5a.2-1.jpg",
+        "allegro_px": [
+          720,
+          576
+        ],
+        "usc_id": "UC15246009",
+        "usc_px": [
+          612,
+          1000
+        ],
+        "orientation": "Same displayed longitudinal direction; no180-degree transform needed for this pair",
+        "anchors": [
+          {
+            "feature": "shallow crescent transverse opening",
+            "allegro_center_px": [
+              396,
+              249
+            ],
+            "usc_center_px": [
+              267,
+              395
+            ]
+          },
+          {
+            "feature": "large triangular aperture farther toward foot",
+            "allegro_center_px": [
+              412,
+              367
+            ],
+            "usc_center_px": [
+              298,
+              616
+            ]
+          },
+          {
+            "feature": "narrow vertical opening below triangular aperture",
+            "allegro_center_px": [
+              410,
+              427
+            ],
+            "usc_center_px": [
+              294,
+              722
+            ]
+          }
+        ],
+        "additional_correspondence": "Bottom edge/notch and neighboring groove rows corroborate chain; UC15245493 supplies paired center top-light context. No Hebrew word or edition line assigned.",
+        "claim_limit": "Physical strip identity and direction for named frame pair, not columnII Greek location"
+      },
+      {
+        "cut": 6,
+        "allegro_file": "c.6a.3-1.jpg",
+        "allegro_px": [
+          720,
+          576
+        ],
+        "usc_id": "UC15246010",
+        "usc_px": [
+          643,
+          1000
+        ],
+        "orientation": "Same displayed longitudinal direction; no180-degree transform needed for this pair",
+        "anchors": [
+          {
+            "feature": "small upper void",
+            "allegro_center_px": [
+              345,
+              30
+            ],
+            "usc_center_px": [
+              353,
+              64
+            ]
+          },
+          {
+            "feature": "irregular lower aperture",
+            "allegro_center_px": [
+              314,
+              403
+            ],
+            "usc_center_px": [
+              338,
+              694
+            ]
+          },
+          {
+            "feature": "jagged bottom-edge notch",
+            "allegro_center_px": [
+              331,
+              540
+            ],
+            "usc_center_px": [
+              348,
+              916
+            ]
+          }
+        ],
+        "additional_correspondence": "Lower aperture with matching adjacent angular groove patterns is strongest. Upper void is partly clipped in the early frame; bottom contour changes with rotation. Earlier proposed transverse-crack anchor was insufficiently distinctive and is excluded. No Hebrew word or edition line assigned.",
+        "claim_limit": "Physical strip identity and direction for named frame pair, not columnII Greek location"
+      }
+    ],
+    "frame_orientation_limits": {
+      "C.5a.12": "Ordered physical openings run in the reverse direction relative to C.5a.2/USCcenter; a180-degree display comparison is supported for this partial frame. Hand/card appearance corroborates but does not define the datum.",
+      "C.5a.8–11_and13–18": "Partial faces, rolled-edge geometry and cropped ends prevent unique direction/physical-face assignment; labels establish catalogue family only. Do not call an apparent end the opposite physical end without the anchor chain.",
+      "all_other_frames": "No universal rotation/mirror rule; unscored frame relationships remain unknown.",
+      "group_frames": "File labels list candidate strips, not a validated left-to-right order or individual text-line map."
+    },
+    "text_registration": {
+      "II2_HN": null,
+      "II4_THE_or_XE": null,
+      "II9_DI": null,
+      "adjacent_hebrew_word_transcription": null,
+      "full_target_plus_neighbor_line_window": null,
+      "reason": "Physical anchor chains authenticate named strip/frame comparisons, but damaged partial groove rows do not yield a unique edition-line assignment or original Greek parent strokes."
+    },
+    "result": "Two physical center-frame crosswalks supported by integrator/independent reader; exact Greek original-photo registration and engraving-order claim remain not identifiable from available evidence.",
+    "frozen_protocol_changed": false,
+    "authenticated_crossings": null,
+    "metric_depth": null,
+    "chronology": "unknown; same-session and later-episode alternatives survive",
+    "archive": "Exact links/hashes/dimensions and derivative relations retained. Source images/contact sheets not republished; reuse terms and Manchester attribution remain in prior intake. No new email sent.",
+    "bookkeeping": {
+      "source_scopes_before": 64,
+      "source_scopes_added": 1,
+      "added_scope": "Expanded Allegro cuts5–6 scope:25 additional source-photo compositions beyond the prior two overlapping originals",
+      "source_scopes_after": 65,
+      "bounded_checks_before": 68,
+      "bounded_checks_added": 1,
+      "added_check": "Combined two-strip physical crosswalk and frame-orientation check",
+      "bounded_checks_after": 69,
+      "cartographic_intakes": 5,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_coordinate_changes": false,
+      "independence": "Photo derivatives/frames are not independent campaigns or chronology confirmations; physical frame alignment is not a deposit/site identification"
+    },
+    "next_action": "Use the named physical chains when high-resolution Figure4.6/component map or original study scans arrive. Require adjacent Hebrew/edition-line anchors before assigning Greek target boxes. No repeated preview-only chronology scoring; cut10 remains parked pending orientation metadata."
   }
 }
