@@ -18,7 +18,7 @@ Catalogued right/center/left are viewing rotations, paired with top/bottom light
 
 ## Next action
 
-Obtain the original high-resolution **WSRP Figure 4.6 column-II composite**, with the **component-image IDs and placement map/masks** connecting edition lines to original cuts5–6 and rotations. The publication's higher-resolution/CD-ROM notes are historical; present availability remains unverified. Separately, Manchester Museum's archive directs high-resolution requests to collections@manchester.ac.uk: first target early original **C.10a.1/C.10.1** with cut/orientation, lighting and treatment provenance. No outreach sent.
+Obtain the original high-resolution **WSRP Figure 4.6 column-II composite**, with the **component-image IDs and placement map/masks** connecting edition lines to original cuts5–6 and rotations. The publication's higher-resolution/CD-ROM notes are historical; present availability remains unverified. Separately, Manchester Museum's archive directs high-resolution requests to collections@manchester.ac.uk: first target early original **C.10a.1/C.10.1** with cut/orientation, lighting and treatment provenance. Requests sent 5 October 2026: Manchester for C.10a.1/C.10.1 study scans and metadata; Bruce Zuckerman (bzuckerm@usc.edu) for original Figure4.6 and component mapping/current custodian. Both ask for access/use terms and fees before processing. Awaiting responses; no new acquisition or evidence count.
 
 Then inspect registered archival-resolution paired top/bottom target windows. Calibrated original geometry remains necessary for metric depth. Do not repeat the same preview-only pass; reopen only for the specified mapping/new original observation or a documented analytical correction.
 
