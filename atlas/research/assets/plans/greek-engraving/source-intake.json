@@ -1434,9 +1434,14 @@
       ],
       "observations": "Numbered handheld original strips 1, 4, 6, 8, 10 and a mounted cut 10, plus grouped 2–4 and 6–8 views. Earlier cut 10 views show punctured margin at image left and lettering at right; cut 8 low keyhole supports native rather than blanket-180 orientation.",
       "rights": "Archive permits low-resolution teaching/noncommercial use subject to acknowledgement of Allegro-estate permissions and courtesy of Manchester Museum, University of Manchester. No open licence inferred; source images not republished in this follow-up.",
-      "high_resolution_contact": "collections@manchester.ac.uk",
-      "outreach": "Sent 5 October 2026 to collections@manchester.ac.uk requesting study scans of C.10a.1 and C.10.1, catalogue/orientation/condition metadata, use terms and fees before processing. Awaiting response.",
-      "request_target": "Archival-resolution originals and catalogue/cut identification for C.10a.1 and C.10.1 first, then needed column-II/other-cut photographs; retain lighting, treatment and orientation provenance."
+      "high_resolution_contact": "museum@manchester.ac.uk",
+      "outreach": "Original 5 October request to collections@manchester.ac.uk permanently bounced. Same study-scan/referral request rerouted to museum@manchester.ac.uk on 5 October; Gmail SENT and recipient headers verified. Delivery/reply not yet confirmed.",
+      "request_target": "Archival-resolution originals and catalogue/cut identification for C.10a.1 and C.10.1 first, then needed column-II/other-cut photographs; retain lighting, treatment and orientation provenance.",
+      "previous_high_resolution_contact": {
+        "address": "collections@manchester.ac.uk",
+        "source": "Archive's historical contact",
+        "status": "Permanent delivery failure: unrouteable address; discovered on 5 October 2026 thread review"
+      }
     },
     "orientation_reassessment": {
       "prior_limitation": "The first pass did not systematically test 180-degree alternatives. Later global-rotation commentary was premature and corrected.",
@@ -1483,8 +1488,8 @@
         {
           "to": "collections@manchester.ac.uk",
           "subject": "Allegro Copper Scroll photographs: study scans of C.10a.1 and C.10.1",
-          "status": "sent; awaiting response",
-          "verification": "Gmail returned SENT; sent-message headers checked",
+          "status": "failed: permanent delivery error, unrouteable address",
+          "verification": "Earlier SENT indicated submission only; subsequent same-thread delivery-status report confirms failure",
           "recipient_source": "https://dqcaas.com/photographic-collections/university-of-manchester-museum-john-allegro-images/"
         },
         {
@@ -1494,9 +1499,23 @@
           "verification": "Gmail returned SENT; sent-message headers checked",
           "recipient_source": "https://today.usc.edu/profile/bruce-zuckerman/",
           "scope": "Original high-resolution Fig.4.6 and component IDs/placement map/masks; current custodian referral if needed. Acknowledges earlier School of Religion referral of master-file requests to USC Libraries."
+        },
+        {
+          "to": "museum@manchester.ac.uk",
+          "subject": "Allegro Copper Scroll photographs: study scans and archive contact",
+          "status": "sent; delivery and reply not yet confirmed",
+          "verification": "Gmail SENT and new-thread To/subject/body checked",
+          "recipient_source": "https://www.museum.manchester.ac.uk/about/staff-list/",
+          "scope": "Reroute original C.10a.1/C.10.1 study-scan request to archive custodian; asks terms and fees before processing"
         }
       ],
-      "limits": "No file acquisition or new evidence inspection; no fee authorized; all source/check/outcome counts unchanged. Private message IDs and mailbox contents omitted from public record."
+      "limits": "No file acquisition or new evidence inspection; no fee authorized; all source/check/outcome counts unchanged. Private message IDs and mailbox contents omitted from public record.",
+      "delivery_status_review": {
+        "date_utc": "2026-10-05",
+        "usc": "Original Zuckerman thread still contains only sent request; no response observed",
+        "repository": "PR10 and PR11 heads unchanged at review",
+        "bookkeeping": "Administrative correction/reroute only; totals remain66 source scopes/5 cartographic intakes/72 bounded checks"
+      }
     }
   },
   "cuts56_crosswalk_followup": {
