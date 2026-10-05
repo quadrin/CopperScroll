@@ -29,7 +29,7 @@ An **unexcavated-alternative inventory** starts from entry constraints and a dec
 
 ## Activity retained separately
 
-Current R11 activity at 5 October 2026 UTC: **65 scoped primary-source targets /5 cartographic-reference intakes /70 bounded checks**;10 In progress/2 Queued. The [phrase/scaffold check](phases/phase4_summary.md#hebrew-phrase-registration-and-edition-scaffold--5-october-2026) adds one combined known-source reinspection check to65/5/69. No unique original Hebrew phrase; DJD loss/handcopy correspondence supplies candidate cut5 edition-row anchorsII6/10/12, separately from null Greek targets. No new source scope, chronology/identification confidence, decisive-test or R11 closure increment.
+Current R11 activity at5October2026UTC: **66 scoped primary-source targets /5 cartographic-reference intakes /71 bounded checks**;10 In progress/2 Queued. The [six-frame PR10 facsimile review](phases/phase4_summary.md#newly-acquired-usc-facsimile-previews--5-october-2026) adds one new visual scope and one bounded reading/layout-aid check to65/5/70. Four full/two bottom columnII previews are individually hash/dimension-verified; full942 acquisition verification is the PR author report. Replica layout adds no original-surface chronology, identification/confidence, decisive-test or R11 closure increment.
 
 The following Jericho activity record is historical:
 
