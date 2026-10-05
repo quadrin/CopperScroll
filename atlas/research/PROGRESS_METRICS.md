@@ -29,7 +29,7 @@ An **unexcavated-alternative inventory** starts from entry constraints and a dec
 
 ## Activity retained separately
 
-Current R11 activity at 5 October 2026 UTC: **65 scoped primary-source targets /5 cartographic-reference intakes /69 bounded checks**;10 In progress/2 Queued. The [cuts5–6 physical mapping](phases/phase4_summary.md#allegro-cuts-56-physical-crosswalk--5-october-2026) adds one expanded Allegro scope (25 additional photo compositions beyond two prior overlaps) and one combined two-strip physical crosswalk check to prior64/5/68. Exact provenance, derivative deduplication and approximate contextual centers are in `deep_analysis/engraving_order_results.json`. Physical frame correspondence does not assign Greek edition lines or add chronology/identification confidence. No decisive-test or closure increment.
+Current R11 activity at 5 October 2026 UTC: **65 scoped primary-source targets /5 cartographic-reference intakes /70 bounded checks**;10 In progress/2 Queued. The [phrase/scaffold check](phases/phase4_summary.md#hebrew-phrase-registration-and-edition-scaffold--5-october-2026) adds one combined known-source reinspection check to65/5/69. No unique original Hebrew phrase; DJD loss/handcopy correspondence supplies candidate cut5 edition-row anchorsII6/10/12, separately from null Greek targets. No new source scope, chronology/identification confidence, decisive-test or R11 closure increment.
 
 The following Jericho activity record is historical:
 

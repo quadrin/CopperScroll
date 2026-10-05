@@ -2805,5 +2805,189 @@
       "independence": "Photo derivatives/frames are not independent campaigns or chronology confirmations; physical frame alignment is not a deposit/site identification"
     },
     "next_action": "Use the named physical chains when high-resolution Figure4.6/component map or original study scans arrive. Require adjacent Hebrew/edition-line anchors before assigning Greek target boxes. No repeated preview-only chronology scoring; cut10 remains parked pending orientation metadata."
+  },
+  "phrase_registration_followup": {
+    "date_utc": "2026-10-05",
+    "prior_result_commit": "f0cab3f98757fe6f53dea0c1c0d816521f6afba0",
+    "claim": "Exploratory Hebrew phrase-to-edition-line registration around matched cut5–6 landmarks",
+    "result": "No uniquely authenticated original-photo Hebrew phrase. Cut5 DJD plate/handcopy physical correspondence supplies an edition-based candidate line scaffold; Greek original target boxes remain null.",
+    "exposure": "Known original photographs and previously inspected DJD plates revisited for this text-mapping question; edition viewed during exploration, not a blind reading or holdout.",
+    "reference_text": {
+      "path": "atlas/app/atlas-text.json",
+      "sha256": "ae8f2f8a88a8f867184e250244c6f40454825b9b0009be281f4de1cf96a4adb9",
+      "attribution": "Hebrew: Abegg, Bowley and Cook, ETCBC dss 2.0.1 (CC BY-NC 4.0). Translation, glosses and notes: this project.",
+      "scope": "Existing edition-based Abegg/Bowley/Cook ETCBCdss2.0.1 reference; all15 columnII rows reviewed. text/readings.json is variant apparatus, not the full transcription. Neither file changed.",
+      "recurring_literal_patterns": {
+        "בבור": [
+          "II1",
+          "II7",
+          "II10"
+        ],
+        "ככרין": [
+          "II2",
+          "II6",
+          "II9",
+          "II15"
+        ],
+        "כסף": [
+          "II6",
+          "II11"
+        ],
+        "כלין": [
+          "II6",
+          "II8"
+        ],
+        "אמות": [
+          "II8",
+          "II14"
+        ],
+        "מזרח": [
+          "II7",
+          "II10",
+          "II13"
+        ]
+      },
+      "recurrence_limit": "Literal word/subword recurrence in current reference only; not a newly read word on an original photograph and not edition-wide variant adjudication."
+    },
+    "original_photo_review": {
+      "cut5_reader": "Center/right neighborhoods around the crescent under opposed lights; isolated roofed/angular strokes did not yield a unique consecutive Hebrew sequence.",
+      "cut6_reader": "C.6a.3-1/C.6a.4 and UC15246010/UC15246329 reviewed independently; repeated angular shapes above lower aperture support physical context, not a phrase.",
+      "integrator": "Whole native USC46009/46010/46560/46588, early C.6a.4/C.5a.9/C.5a.15, and contextual windows in USC46329/46010/46013. No complete multi-letter phrase authenticated independently.",
+      "processing": "Native source views plus inspection-only crops enlarged2x with nearest-neighbor interpolation; no contrast restoration/generative enhancement/new source detail. Context windows are not registered text ROIs.",
+      "observed_phrase": null,
+      "edition_line_from_direct_hebrew": null
+    },
+    "context_windows": [
+      {
+        "id": "UC15246009",
+        "box": [
+          200,
+          300,
+          365,
+          430
+        ],
+        "purpose": "crescent plus neighboring rows"
+      },
+      {
+        "id": "UC15246010",
+        "box": [
+          240,
+          205,
+          410,
+          253
+        ],
+        "purpose": "upper prominent row"
+      },
+      {
+        "id": "UC15246010",
+        "box": [
+          240,
+          605,
+          410,
+          660
+        ],
+        "purpose": "above lower aperture"
+      },
+      {
+        "id": "UC15246010",
+        "box": [
+          240,
+          773,
+          411,
+          833
+        ],
+        "purpose": "lower row"
+      },
+      {
+        "filename": "c.6a.3-1.jpg",
+        "box": [
+          292,
+          365,
+          382,
+          397
+        ],
+        "purpose": "above-aperture context"
+      }
+    ],
+    "coordinate_convention": "Contextual half-open native boxes[x0,y0,x1,y1], xright/ydown. No Greek ROI or text-reading claim; no global warp or cross-rotation coordinate transfer.",
+    "djd_physical_scaffold": {
+      "source_id": "DJDIII1962",
+      "path": "research/assets/plans/djdIII1962/plates-volume.pdf",
+      "source_sha256": "b7a52c275ad42a333f4d825efd12425e11574aa00bdd76e72e41656de86a2eb2",
+      "plates": {
+        "photo": "LI, viewer63, labelled3Q15II",
+        "handcopy": "L, viewer62, labelled3Q15II"
+      },
+      "native_photo_px": [
+        2662,
+        3669
+      ],
+      "photo_panel": "Fourth vertical panel from left; montage splits vertically and repeats angular views, not a seamless metric rollout.",
+      "context_panel_box": [
+        1400,
+        460,
+        1740,
+        2800
+      ],
+      "physical_chain": "Crescent, triangle and slit match cut5 center originals in the same displayed longitudinal direction; reader and integrator visually compared source pages and known original chain.",
+      "edition_based_line_scaffold": [
+        {
+          "feature": "crescent opening",
+          "handcopy_row": "II6",
+          "original_context_id": "UC15246009",
+          "approx_native_center": [
+            267,
+            395
+          ]
+        },
+        {
+          "feature": "large triangular aperture",
+          "handcopy_row": "II10",
+          "original_context_id": "UC15246009",
+          "approx_native_center": [
+            298,
+            616
+          ]
+        },
+        {
+          "feature": "narrow lower opening",
+          "handcopy_row": "II12",
+          "original_context_id": "UC15246009",
+          "approx_native_center": [
+            294,
+            722
+          ]
+        }
+      ],
+      "row_assignment_method": "Count15 drawn text rows in the handcopy labelledcolumnII and compare its explicit loss shapes; original Hebrew phrase not used as verification. Handcopy supplies editorial line positions.",
+      "limits": "Supported physical correspondence yields candidate edition-row anchors, not an independently authenticated original Hebrew phrase or Greek parent stroke. Do not interpolate Greek boxes or treat reconstructed drawn letters as original strokes. No cut6 edition-line mapping established.",
+      "archive": "Existing archived PDF reused; no new figure upload or source scope."
+    },
+    "greek_targets": {
+      "II2_HN": null,
+      "II4_THE_or_XE": null,
+      "II9_DI": null
+    },
+    "accepted_authentic_crossings": null,
+    "metric_depth": null,
+    "chronology": "unknown; same-session/later-episode alternatives remain",
+    "protocol_changed": false,
+    "bookkeeping": {
+      "source_scopes_before": 65,
+      "source_scopes_added": 0,
+      "source_scopes_after": 65,
+      "bounded_checks_before": 69,
+      "bounded_checks_added": 1,
+      "added_check": "Combined two-cut phrase-registration attempt and cut5 edition-plate physical-scaffold comparison",
+      "bounded_checks_after": 70,
+      "cartographic_intakes": 5,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_archaeological_coordinate_changes": false,
+      "independence": "Known source reinspection; two reader scopes do not count as two independent chronology tests."
+    },
+    "closure": "Phrase-to-line registration not identifiable at these preview resolutions. Preserve edition-based physical scaffold separately. Stop another same-pixel phrase pass; reopen for a legible archival/early closeup, original composite component mapping or documented analytical error.",
+    "next_action": "Use the three cut5 loss/row candidates to focus requested high-resolution material; verify neighboring Hebrew directly before transferring any Greek target location. Original Fig4.6/component-map and Manchester requests remain pending; cut10 and Jericho remain parked."
   }
 }
