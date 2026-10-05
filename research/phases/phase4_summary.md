@@ -332,3 +332,36 @@ The pre-restoration method specifies tangential lighting **from above** (I p. 12
 Three newly attached JSTOR items receive intake only: Spanier 1991, *Cathedra* 60, pp. 188–190 and map; Siegelmann/Ravaq 1999, Tanninim, p. 91*; Reich 2003, *IEJ* 53 review of Netzer 2001, pp. 259–261. They add no archaeological test or source/check count and fulfill neither the 2002 *Aqueducts* chapters/estate Appendix B nor the folded Netzer plans. Jericho stays parked.
 
 Accounting adds two bounded primary-source scopes (Puech commentary/sigla/methods; EDF methods and the 40 selected original photographs) and one combined assertion/physical-coverage check: **61 source scopes /5 cartographic intakes /66 bounded checks**. No decisive-test, question-closure, identification, confidence, coordinate or field-campaign increment. States remain 10 In progress/2 Queued; draft PR7 remains unmerged.
+
+
+## USC 1988 registration and lighting review — 5 October 2026
+
+**The seven-locus engraving-order claim remains not identifiable from available evidence.** The acquired original-object previews resolve the old missing-file dependency. They do not yet supply authenticated Greek locations, parent-stroke intersections or calibrated original depth. The frozen protocol at `d7d3b6060dedc1d4b4182a620dcca79fc3a70ec2` is unchanged. Same-session and distinct-later-episode alternatives survive; no verified unused prediction exists.
+
+**Acquisition and inspection are separate.** Main commit [`1b27d5d`](https://github.com/quadrin/CopperScroll/commit/1b27d5d94e78aa601d4eccafe06d51b2fc81117d) contains 122 original 1988 cut1–10 preview JPEGs: 100 recto and 22 verso. Every file decodes, matches its recorded hash/bytes/dimensions, and is 1,000 pixels high, 482–799 wide; total 8,275,644 bytes, no duplicate bytes. These are acquired previews, not archival TIFFs or metric surface measurements. The [acquisition manifest](https://github.com/quadrin/CopperScroll/blob/1b27d5d94e78aa601d4eccafe06d51b2fc81117d/research/sources/usc_copper_scroll_images/cuts_01_10_preview_manifest.csv) fixes provenance.
+
+Three column readers separately completed all **49 whole-strip black-and-white recto views** of the candidate cuts. The integrator inspected all 50 BW frames in contact sheets, including the separate cut10-fragment context frame, and selected frames at native resolution. A column reader also inspected two color rectos and two cut10 verso context frames: 54 distinct frames overall. This is not two independent native-frame reviews of every photograph. The other 68 acquired images have file/metadata verification only in this follow-up. [Structured results](../../deep_analysis/engraving_order_results.json) record exact IDs, hashes, reviewer scope, all 24 catalogued top/bottom pairs and null Greek target boxes; [intake](../assets/plans/greek-engraving/source-intake.json) preserves historical access failures and current access.
+
+| Frozen locus | Candidate cuts | Whole-strip BW frames checked | Exact Greek ROI | Local order / metric depth |
+|---|---|---:|---|---|
+| I4 ΚΕΝ | 1–4 | 13 | Unregistered | Unknown / unavailable |
+| I12 ΧΑΓ | 1–4 | Same 13 | Unregistered | Unknown / unavailable |
+| II2 ΗΝ | 5–6 | 12 | Unregistered | Unknown / unavailable |
+| II4 ΘΕ/ΞΕ | 5–6 | Same 12 | Unregistered | Unknown / unavailable |
+| II9 ΔΙ | 5–6 | Same 12 | Unregistered | Unknown / unavailable |
+| III7 ΤΡ/ΤΡΙ | 7–8 | 12 | Unregistered | Unknown / unavailable |
+| IV2 {Ι}ΣΚ/ΧΚ/ΞΚ | 9–10 | 12 | Unregistered | Unknown / unavailable |
+
+These rows share observations; their counts must not be summed as seven independent tests. All retained reading branches remain; the cancelled Ι is inactive. I12 has no applicable printed-amount control. Full target-line plus neighboring-line windows remain unregistered.
+
+**Rotation changes coverage.** Reed's previously verified *Fascicle2* viewer9 distinguishes right/center/left rotations from top/bottom lighting. A three-rotation, two-light set is not six illumination azimuths. Cut3's upper notch becomes an edge indentation in another angular view. Reusing pixel coordinates across such views can select different metal. Multiple edition panels can show different parts of a curved cut; a panel-count mismatch alone proves neither missing coverage nor exclusion. Catalog labels are retained literally; handwritten light cards and descriptive index guesses do not provide calibrated source directions.
+
+**Useful physical detail is visible.** Cut4 `UC15246882/UC15245664` share the lower diagonal fracture and show changed groove-rim highlights under top/bottom lighting. Cuts7/8 likewise retain characteristic holes/fractures across paired views. These comparisons establish usable relighting coverage, without an authenticated Greek location or original groove-edge truncation mechanism. No accepted crossing was found; the actual original crossing count is unknown, not zero.
+
+A context-only box for cut9's upper void is `UC15245492`, native 548×1000, `[132,109,292,382]` (x right/y down, half-open). It resembles the edition IV central loss but does not register the Greek left-end group. Cut10's photographed ridge/punctures at image right versus the edition's left margin remain an orientation/correspondence problem, not a demonstrated catalog error. No mirrored view is an authoritative target ROI. Embossed/backside marks cannot substitute for authenticated recto incision floors.
+
+**Next dependency:** a labeled original column reconstruction or archival mapping that ties edition line ends and adjacent Hebrew to specific curved cuts and viewing rotations. Then use archival-resolution top/bottom frames where groove parents require more pixels, with conservation/original-surface provenance. Metric depth requires calibrated original geometry. Stop treating missing preview retrieval as the blocker; stop this preview-only registration pass until that specified aid or documented analytical correction is available.
+
+Existing acquisition images remain at the stated main commit with WSRP credit and rights. No additional source photographs, publication-page images, mirrors or reconstructed mosaics are published here. The archival note is a provenance record, not an open licence.
+
+This adds **one bounded WSRP1988 direct-image source scope and one combined seven-locus registration/lighting check**: cumulative 62 source scopes /5 cartographic intakes /67 bounded checks. The 54 photographs belong to one campaign. No decisive-test, question-closure, identification, confidence or coordinate increment; R11 remains In progress and Jericho stays parked. Historical French2006 and earlier results above are preserved.
