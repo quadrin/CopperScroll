@@ -29,7 +29,7 @@ An **unexcavated-alternative inventory** starts from entry constraints and a dec
 
 ## Activity retained separately
 
-Current R11 activity at5October2026UTC: **66 scoped primary-source targets /5 cartographic-reference intakes /71 bounded checks**;10 In progress/2 Queued. The [six-frame PR10 facsimile review](phases/phase4_summary.md#newly-acquired-usc-facsimile-previews--5-october-2026) adds one new visual scope and one bounded reading/layout-aid check to65/5/70. Four full/two bottom columnII previews are individually hash/dimension-verified; full942 acquisition verification is the PR author report. Replica layout adds no original-surface chronology, identification/confidence, decisive-test or R11 closure increment.
+Current R11 activity at5October2026UTC: **66 scoped primary-source targets /5 cartographic-reference intakes /72 bounded checks**;10 In progress/2 Queued. The [six-frame PR10 facsimile review](phases/phase4_summary.md#newly-acquired-usc-facsimile-previews--5-october-2026) adds one new visual scope and one bounded reading/layout-aid check to65/5/70. Four full/two bottom columnII previews are individually hash/dimension-verified; full942 acquisition verification is the PR author report. The [replica-to-original transfer review](phases/phase4_summary.md#replica-to-original-target-transfer--5-october-2026) adds one combined check with no new source: cut6 becomes the stronger exploratory target, with no authenticated original Greek ROI. Replica layout adds no original-surface chronology, identification/confidence, decisive-test or R11 closure increment.
 
 The following Jericho activity record is historical:
 

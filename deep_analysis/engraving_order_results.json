@@ -600,14 +600,13 @@
   ],
   "no_rejection_from_absence": "Missing diagnostic coverage and unavailable metrology establish neither no crossings nor absence of depth differences; no rejection of later addition or universal seven-group layer.",
   "bookkeeping": {
-    "source_scopes_before": 65,
-    "source_scopes_added": 1,
-    "added_scope": "Six directly inspected new native columnII facsimile previews, four full/two bottom",
+    "source_scopes_before": 66,
+    "source_scopes_added": 0,
     "source_scopes_after": 66,
-    "bounded_checks_before": 70,
+    "bounded_checks_before": 71,
     "bounded_checks_added": 1,
-    "added_check": "Bounded facsimile layout/reading-aid review, not engraving chronology",
-    "bounded_checks_after": 71,
+    "added_check": "Combined replica-to-original cut5–6 target-transfer review",
+    "bounded_checks_after": 72,
     "cartographic_intakes": 5,
     "decisive_tests_added": 0,
     "question_closures_added": 0,
@@ -4930,5 +4929,90 @@
     "identifications_added": 0,
     "confidence_or_archaeological_coordinate_changes": false,
     "independence": "Known source reinspection; two reader scopes do not count as two independent chronology tests."
+  },
+  "prior_transfer_bookkeeping": {
+    "source_scopes_before": 65,
+    "source_scopes_added": 1,
+    "added_scope": "Six directly inspected new native columnII facsimile previews, four full/two bottom",
+    "source_scopes_after": 66,
+    "bounded_checks_before": 70,
+    "bounded_checks_added": 1,
+    "added_check": "Bounded facsimile layout/reading-aid review, not engraving chronology",
+    "bounded_checks_after": 71,
+    "cartographic_intakes": 5,
+    "decisive_tests_added": 0,
+    "question_closures_added": 0,
+    "identifications_added": 0,
+    "confidence_or_archaeological_coordinate_changes": false
+  },
+  "replica_original_transfer_followup": {
+    "date_utc": "2026-10-05",
+    "claim": "Locate columnII Greek groups on original cuts5–6 using acquired replica layout",
+    "status": "Exploratory target selection; authenticated original Greek registration not identifiable from inspected previews",
+    "sources": "Reuse six hash-verified PR10 facsimiles, original cut5–6 rotations, early Allegro views and DJDIII columnII montage; no new source scope or independent campaign",
+    "replica_reference": {
+      "identifier": "UC110814624",
+      "dimensions_px": [
+        743,
+        1000
+      ],
+      "sha256": "a976665d8ef3128adc3f6794e830c20e2a507e6c934a1e6da5c334151f177083",
+      "coordinate_convention": "native pixels, top-left origin; half-open conservative layout boxes",
+      "greek_layout_boxes": {
+        "II2_HN": [
+          269,
+          151,
+          320,
+          190
+        ],
+        "II4_retained_ThetaE_XiE": [
+          165,
+          269,
+          218,
+          310
+        ],
+        "II9_DI": [
+          183,
+          527,
+          225,
+          565
+        ]
+      },
+      "surface": "2013 replica; boxes cannot establish original surface strokes or timing"
+    },
+    "observations": [
+      "Three replica Greek groups lie left of the apparent long seam near x335; matched cut5 crescent/triangle/slit chain lies right near x450–480. This narrows the search toward cut6.",
+      "Cut5 can anchor damage/row context, but transferring row heights across the seam does not authenticate a Greek original ROI.",
+      "Apparent seam identity and cut6 transfer remain provisional pending multiple original-surface correspondences and neighboring Hebrew. No global planar warp of curved originals is justified.",
+      "Independent cut6 reader found replica top defect (~265,80), lower aperture candidate (~215,650), and bottom loss (~250,835) broadly compatible with the original cut6 ordered losses. These are tentative layout correspondences: scale, curvature and replica rendering prevent exact metal-feature authentication or numerical transfer."
+    ],
+    "reviewers": {
+      "layout_reader": "independent_column_i; six facsimiles compared with previously inspected six cut5 originals and18 early Allegro views",
+      "integrator": "full facsimile UC110814624; all-six cut6 contact sheet and native UC15246010/UC15246329/UC15246871; no secured Greek-plus-Hebrew reading",
+      "independent_cut6_reader": "register_columns_ii_iv; six original cut6 views reviewed with facsimile context; no authenticated Greek-plus-neighboring-Hebrew reading"
+    },
+    "original_greek_target_boxes": {
+      "II2": null,
+      "II4": null,
+      "II9": null
+    },
+    "original_greek_search_bands": null,
+    "engraving_order": "unknown at all seven loci; frozen protocol unchanged",
+    "exposure": "Source-informed exploratory reading, not a blind or independent confirmation",
+    "bookkeeping": {
+      "source_scopes_before": 66,
+      "source_scopes_added": 0,
+      "source_scopes_after": 66,
+      "bounded_checks_before": 71,
+      "bounded_checks_added": 1,
+      "added_check": "Combined replica-to-original cut5–6 target-transfer review",
+      "bounded_checks_after": 72,
+      "cartographic_intakes": 5,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_archaeological_coordinate_changes": false
+    },
+    "next_action": "Obtain original Figure4.6/component placement map and archival-resolution source frames. Prioritize cut6 for columnII Greek groups while retaining cut5 damage/row anchors. Authenticate neighboring Hebrew and original parent strokes before assigning a Greek ROI; no repeat preview-only pass without a specified new observation or analytical correction."
   }
 }
