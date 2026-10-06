@@ -1,0 +1,107 @@
+{
+  "independent_integer_verification": "passed",
+  "comparisons": 28,
+  "method": "category binomial weights and OR-mask generating function",
+  "results_sha256": "b148e04be067659123ed9d359e9636ce1875fc3ee96595614822b88e24479628",
+  "verification_code_sha256": "44484b88e41b30c26aca55745a599d0cd9528618ae1012aa7f49e29cfe80ecb2",
+  "freeze_commit": "da3985a258a3cef9f5f6272b670fba4acf7acdfe",
+  "independent_csv_recheck": {
+    "comparisons": 28,
+    "checks": [
+      {
+        "population": "primary_common_uses",
+        "branch": "union_primary",
+        "score": 2,
+        "counts": [
+          7,
+          0,
+          0,
+          38,
+          89,
+          34,
+          42
+        ],
+        "expectation": 3.09617857409661,
+        "tail": 0.9566167282644558,
+        "all12_branch_scores": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "population": "primary_common_uses",
+        "branch": "literal_primary_sensitivity",
+        "score": 2,
+        "counts": [
+          7,
+          0,
+          0,
+          36,
+          89,
+          34,
+          42
+        ],
+        "expectation": 3.076231040715483,
+        "tail": 0.9543650020773016
+      },
+      {
+        "population": "secondary_without_mixed_Ne",
+        "branch": "union_primary",
+        "score": 2,
+        "counts": [
+          7,
+          0,
+          0,
+          38,
+          89,
+          34,
+          42
+        ],
+        "expectation": 3.103238033851706,
+        "tail": 0.9574295395489955,
+        "all12_branch_scores": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "population": "secondary_without_mixed_Ne",
+        "branch": "literal_primary_sensitivity",
+        "score": 2,
+        "counts": [
+          7,
+          0,
+          0,
+          36,
+          89,
+          34,
+          42
+        ],
+        "expectation": 3.0832964797676263,
+        "tail": 0.9552062124872343
+      }
+    ],
+    "method": "Independent worker original scratch scorer, direct frozen CSV loading; no production wrapper imported. Same inclusion/exclusion algorithm, not independent algorithm.",
+    "status": "All 28 benchmarks identical, including each rational probability, all 128 mask masses, 8 score masses, exact expectations, tails, prefix counts, and name matches."
+  }
+}

@@ -1,0 +1,714 @@
+{
+  "design": {
+    "version": 2,
+    "status": "frozen_before_scoring",
+    "claim": "Exact prefix compatibility in the fixed image-verified reported-Greek-form person-period PILOT. Not a complete eligible Ilan corpus or historical identification.",
+    "source_eligibility": "Source-sha-pinned full Ilan PartI. Fixed198 metadata candidates; each explicitly image/note audited. Secure O Greek forms only; no headword substitution, nonGreek spelling, restoration, title/name ambiguity or target-derived attestation. Preserve all198 audit outcomes. Independence field means from3Q15-derived names, not a new source tradition or unused observation.",
+    "date_geography_rule": "Closed source-reported PERSON/EVENT D interval whollywithin100BCE–70CE; conditional on Ilan curated Palestinian-Jewish membership and neutral/Second-name E. ActualGreek-form date and independentlylocalizedJudaea/Galilee/Peraea are NOT established by this pilot. Original strict actual-attestation branch preserved separately. Unresolved parser cases and open dates remain unknown.",
+    "lemma_alias_rule": "Unique normalized reported Greek FORMS. name_id is a SHA256 form ID, not a distinct onomastic lemma/person. Repeated occurrences/source citations are preserved separately without weighting; slash alternatives kept only when sourceGreek and clear.",
+    "iota_subscript": "reject",
+    "normalization": "Unicode NFD before uppercasing; remove combining accent/breathing marks; sigma/final/lunate sigma to Σ. Only one token composed of the 24 modern Greek uppercase letters accepted; punctuation, spaces, restorations and other alphabets rejected. Iota subscript rejected and logged; no automatic transliteration or editorial reconstruction. Lunate epsilon in the scroll reading is edition-based Ε, not an unrestricted input character replacement.",
+    "primary_readings": [
+      "ΚΕΝ",
+      "ΧΑΓ",
+      "ΗΝ",
+      "ΘΕ",
+      "ΔΙ",
+      "ΤΡ",
+      "ΣΚ"
+    ],
+    "reading_menu": [
+      [
+        "ΚΕΝ"
+      ],
+      [
+        "ΧΑΓ"
+      ],
+      [
+        "ΗΝ"
+      ],
+      [
+        "ΘΕ",
+        "ΞΕ"
+      ],
+      [
+        "ΔΙ"
+      ],
+      [
+        "ΤΡ",
+        "ΤΡΙ"
+      ],
+      [
+        "ΣΚ",
+        "ΧΚ",
+        "ΞΚ"
+      ]
+    ],
+    "reading_scope": "Edition-based. The 12 combinations are a deliberately broad sensitivity envelope, not 12 coherent published editions. Preserve the individual editions and uncertainty in the evidence record. Proposed ΚΑΓειρας does not license ΚΑΓ. Puech’s cancelled Ι in {Ι}ΣΚ is inactive. Unresolved strokes remain unresolved; no reading chosen by name fit.",
+    "control_rule": "Primary exact null: independent slot prefixes uniformly sampled conditional on each C/V pattern (CVC,CVC,VC,CV,CV,CC,CC), with seven vowels/seventeen consonants. Secondary uniform 24-letter null. Union controls preserve shared tails and number of distinct alternative first letters; nested ΤΡΙ is subsumed by ΤΡ for existence matching. Exact slot probabilities and Poisson-binomial tail; disclose all branches, primary and union, no selection of smallest tail. This artificial letter null is not a historical language-generating model or a personal-initial likelihood ratio.",
+    "exposure_limit": "All seven groups, Josephus and previously proposed persons are already exposed. No verified unused observation. Entire run exploratory; a newly downloaded corpus is not automatically a holdout.",
+    "decision_rule": "Disclose exact pilot matches/misses, all primary/union/branch tails under artificial letter controls. No book-wide negative, no universal historical-compatibility decision, no person/meaning/hand identification. Incomplete parser detection/eligibility and unused-observation gaps remain. Historical initials meaning stays not identifiable from available evidence.",
+    "corpus_csv": "pilot_forms.csv",
+    "corpus_sha256": "41903a16042dbc76fcf1449f743078380e4524a5dcbed76e7dfe102150c3fe81",
+    "mc_draws": 0,
+    "seed": 1729,
+    "source_url": "https://www.mohrsiebeck.com/en/book/lexicon-of-jewish-names-in-late-antiquity-9783161587931/",
+    "source_acquired": true,
+    "source_sha256": "63595934818ca35e2f5ac90effe0ece7f7c953b5676b2c13e2a83a0d040be680",
+    "selection_policy": "pilot_selection_policy.json",
+    "candidate_list_sha256": "eb0d669e6adf8188a3d1e3784469e0ab004e13524e94e38ad89534958b4b4d96",
+    "audit_sha256": "c81539594cc5d0e4e0ac1b9a45140890bf62d563e6c22c827318a2d8fbed55e1",
+    "occurrences_sha256": "6cb7168ce5f20713da49890f0c48a494ae497e55e1c6876a0536cbec93bec698",
+    "selection_before_scoring": true,
+    "code_path": "../initials_control.py",
+    "freeze_commit": "This file/input commit must be published before scoring; identify that immutable commit in result provenance."
+  },
+  "normalization": {
+    "unique_normalized_forms": 107,
+    "name_ids": 107,
+    "rejected_rows": [],
+    "iota_subscript_rows": []
+  },
+  "results": {
+    "primary": {
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 2,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.010380622837370242,
+          0.010380622837370242
+        ],
+        "expected": 0.7261492832427089,
+        "pmf": [
+          0.4368933656302416,
+          0.416562627986839,
+          0.13072994541911417,
+          0.015142651586505629,
+          0.0006583544302892004,
+          1.2938135291612769e-05,
+          1.1642152172977551e-07,
+          3.901970548369417e-10
+        ],
+        "upper_tail_exact": "1722662960002359/11755260433518119",
+        "upper_tail": 0.1465440063829194
+      },
+      "uniform24": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 2,
+        "slot_hit_probabilities": [
+          0.006076388888888889,
+          0.006076388888888889,
+          0.0954861111111111,
+          0.0954861111111111,
+          0.0954861111111111,
+          0.0954861111111111,
+          0.0954861111111111
+        ],
+        "expected": 0.4895833333333333,
+        "pmf": [
+          0.5981115851202067,
+          0.3230150470904825,
+          0.0705373751860551,
+          0.007863300821566674,
+          0.000459935850444319,
+          1.2645876288897839e-05,
+          1.0976187177451189e-07,
+          2.93084028388439e-10
+        ],
+        "upper_tail_exact": "1106105393325121529/14023813415445725184",
+        "upper_tail": 0.0788733677893108
+      }
+    },
+    "documented_union": {
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 2,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.4485294117647059,
+          0.2773109243697479,
+          0.010380622837370242,
+          0.031141868512110725
+        ],
+        "expected": 0.9181290163124073,
+        "pmf": [
+          0.32639110397852045,
+          0.4584916912710097,
+          0.18725597727887877,
+          0.02635791472154845,
+          0.0014653819259283936,
+          3.7488222746693924e-05,
+          4.407080249986037e-07,
+          1.8933425274474326e-09
+        ],
+        "upper_tail_exact": "361251252224602/1679322919074017",
+        "upper_tail": 0.21511720475046983
+      },
+      "uniform24": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 2,
+        "slot_hit_probabilities": [
+          0.006076388888888889,
+          0.006076388888888889,
+          0.0954861111111111,
+          0.16953502415458938,
+          0.0954861111111111,
+          0.0954861111111111,
+          0.22889904479578393
+        ],
+        "expected": 0.6970451800614844,
+        "pmf": [
+          0.46814921241148344,
+          0.3885252159930308,
+          0.12299739670763245,
+          0.018837436303751644,
+          0.0014412875226412403,
+          4.899596482075804e-05,
+          4.5384921263225864e-07,
+          1.24742703727202e-09
+        ],
+        "upper_tail_exact": "216592994036303446909/1511195745638493978624",
+        "upper_tail": 0.14332557159548576
+      }
+    }
+  },
+  "branch_sensitivity": [
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΘΕ",
+        "ΔΙ",
+        "ΤΡ",
+        "ΣΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 2,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.010380622837370242,
+          0.010380622837370242
+        ],
+        "expected": 0.7261492832427089,
+        "pmf": [
+          0.4368933656302416,
+          0.416562627986839,
+          0.13072994541911417,
+          0.015142651586505629,
+          0.0006583544302892004,
+          1.2938135291612769e-05,
+          1.1642152172977551e-07,
+          3.901970548369417e-10
+        ],
+        "upper_tail_exact": "1722662960002359/11755260433518119",
+        "upper_tail": 0.1465440063829194
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΘΕ",
+        "ΔΙ",
+        "ΤΡ",
+        "ΧΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 1,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.010380622837370242,
+          0.010380622837370242
+        ],
+        "expected": 0.7261492832427089,
+        "pmf": [
+          0.4368933656302416,
+          0.416562627986839,
+          0.13072994541911417,
+          0.015142651586505629,
+          0.0006583544302892004,
+          1.2938135291612769e-05,
+          1.1642152172977551e-07,
+          3.901970548369417e-10
+        ],
+        "upper_tail_exact": "6619465138858375/11755260433518119",
+        "upper_tail": 0.5631066343697584
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΘΕ",
+        "ΔΙ",
+        "ΤΡ",
+        "ΞΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 1,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.010380622837370242,
+          0.010380622837370242
+        ],
+        "expected": 0.7261492832427089,
+        "pmf": [
+          0.4368933656302416,
+          0.416562627986839,
+          0.13072994541911417,
+          0.015142651586505629,
+          0.0006583544302892004,
+          1.2938135291612769e-05,
+          1.1642152172977551e-07,
+          3.901970548369417e-10
+        ],
+        "upper_tail_exact": "6619465138858375/11755260433518119",
+        "upper_tail": 0.5631066343697584
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΘΕ",
+        "ΔΙ",
+        "ΤΡΙ",
+        "ΣΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 2,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.0014829461196243204,
+          0.010380622837370242
+        ],
+        "expected": 0.7172516065249629,
+        "pmf": [
+          0.44082147780873526,
+          0.41633863016799305,
+          0.12816237082769394,
+          0.01413033778901955,
+          0.0005387446605266189,
+          8.38983951491828e-06,
+          4.885077420364683e-08,
+          5.574243640527738e-11
+        ],
+        "upper_tail_exact": "11753840917204161/82286823034626833",
+        "upper_tail": 0.14283989202327166
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΘΕ",
+        "ΔΙ",
+        "ΤΡΙ",
+        "ΧΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 1,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.0014829461196243204,
+          0.010380622837370242
+        ],
+        "expected": 0.7172516065249629,
+        "pmf": [
+          0.44082147780873526,
+          0.41633863016799305,
+          0.12816237082769394,
+          0.01413033778901955,
+          0.0005387446605266189,
+          8.38983951491828e-06,
+          4.885077420364683e-08,
+          5.574243640527738e-11
+        ],
+        "upper_tail_exact": "46013024100316753/82286823034626833",
+        "upper_tail": 0.5591785221912647
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΘΕ",
+        "ΔΙ",
+        "ΤΡΙ",
+        "ΞΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 1,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.0014829461196243204,
+          0.010380622837370242
+        ],
+        "expected": 0.7172516065249629,
+        "pmf": [
+          0.44082147780873526,
+          0.41633863016799305,
+          0.12816237082769394,
+          0.01413033778901955,
+          0.0005387446605266189,
+          8.38983951491828e-06,
+          4.885077420364683e-08,
+          5.574243640527738e-11
+        ],
+        "upper_tail_exact": "46013024100316753/82286823034626833",
+        "upper_tail": 0.5591785221912647
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΞΕ",
+        "ΔΙ",
+        "ΤΡ",
+        "ΣΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 1,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.010380622837370242,
+          0.010380622837370242
+        ],
+        "expected": 0.7261492832427089,
+        "pmf": [
+          0.4368933656302416,
+          0.416562627986839,
+          0.13072994541911417,
+          0.015142651586505629,
+          0.0006583544302892004,
+          1.2938135291612769e-05,
+          1.1642152172977551e-07,
+          3.901970548369417e-10
+        ],
+        "upper_tail_exact": "6619465138858375/11755260433518119",
+        "upper_tail": 0.5631066343697584
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΞΕ",
+        "ΔΙ",
+        "ΤΡ",
+        "ΧΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 0,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.010380622837370242,
+          0.010380622837370242
+        ],
+        "expected": 0.7261492832427089,
+        "pmf": [
+          0.4368933656302416,
+          0.416562627986839,
+          0.13072994541911417,
+          0.015142651586505629,
+          0.0006583544302892004,
+          1.2938135291612769e-05,
+          1.1642152172977551e-07,
+          3.901970548369417e-10
+        ],
+        "upper_tail_exact": "1",
+        "upper_tail": 1.0
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΞΕ",
+        "ΔΙ",
+        "ΤΡ",
+        "ΞΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 0,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.010380622837370242,
+          0.010380622837370242
+        ],
+        "expected": 0.7261492832427089,
+        "pmf": [
+          0.4368933656302416,
+          0.416562627986839,
+          0.13072994541911417,
+          0.015142651586505629,
+          0.0006583544302892004,
+          1.2938135291612769e-05,
+          1.1642152172977551e-07,
+          3.901970548369417e-10
+        ],
+        "upper_tail_exact": "1",
+        "upper_tail": 1.0
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΞΕ",
+        "ΔΙ",
+        "ΤΡΙ",
+        "ΣΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 1,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.0014829461196243204,
+          0.010380622837370242
+        ],
+        "expected": 0.7172516065249629,
+        "pmf": [
+          0.44082147780873526,
+          0.41633863016799305,
+          0.12816237082769394,
+          0.01413033778901955,
+          0.0005387446605266189,
+          8.38983951491828e-06,
+          4.885077420364683e-08,
+          5.574243640527738e-11
+        ],
+        "upper_tail_exact": "46013024100316753/82286823034626833",
+        "upper_tail": 0.5591785221912647
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΞΕ",
+        "ΔΙ",
+        "ΤΡΙ",
+        "ΧΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 0,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.0014829461196243204,
+          0.010380622837370242
+        ],
+        "expected": 0.7172516065249629,
+        "pmf": [
+          0.44082147780873526,
+          0.41633863016799305,
+          0.12816237082769394,
+          0.01413033778901955,
+          0.0005387446605266189,
+          8.38983951491828e-06,
+          4.885077420364683e-08,
+          5.574243640527738e-11
+        ],
+        "upper_tail_exact": "1",
+        "upper_tail": 1.0
+      }
+    },
+    {
+      "readings": [
+        "ΚΕΝ",
+        "ΧΑΓ",
+        "ΗΝ",
+        "ΞΕ",
+        "ΔΙ",
+        "ΤΡΙ",
+        "ΞΚ"
+      ],
+      "shape": {
+        "statistic": "groups_with_at_least_one_name_prefix",
+        "observed": 0,
+        "slot_hit_probabilities": [
+          0.020761245674740483,
+          0.020761245674740483,
+          0.1092436974789916,
+          0.2773109243697479,
+          0.2773109243697479,
+          0.0014829461196243204,
+          0.010380622837370242
+        ],
+        "expected": 0.7172516065249629,
+        "pmf": [
+          0.44082147780873526,
+          0.41633863016799305,
+          0.12816237082769394,
+          0.01413033778901955,
+          0.0005387446605266189,
+          8.38983951491828e-06,
+          4.885077420364683e-08,
+          5.574243640527738e-11
+        ],
+        "upper_tail_exact": "1",
+        "upper_tail": 1.0
+      }
+    }
+  ],
+  "matches": [
+    {
+      "entry": "1",
+      "menu": [
+        "ΚΕΝ"
+      ],
+      "name_ids_by_prefix": {
+        "ΚΕΝ": []
+      }
+    },
+    {
+      "entry": "4",
+      "menu": [
+        "ΧΑΓ"
+      ],
+      "name_ids_by_prefix": {
+        "ΧΑΓ": []
+      }
+    },
+    {
+      "entry": "6",
+      "menu": [
+        "ΗΝ"
+      ],
+      "name_ids_by_prefix": {
+        "ΗΝ": []
+      }
+    },
+    {
+      "entry": "7",
+      "menu": [
+        "ΘΕ",
+        "ΞΕ"
+      ],
+      "name_ids_by_prefix": {
+        "ΘΕ": [
+          "ilan2002:reported_greek_form:b5d5b69f877b1c67513ec9924e04d192a6e92f4f5d81f1a9e6b74170e7aa3dfd"
+        ],
+        "ΞΕ": []
+      }
+    },
+    {
+      "entry": "9",
+      "menu": [
+        "ΔΙ"
+      ],
+      "name_ids_by_prefix": {
+        "ΔΙ": []
+      }
+    },
+    {
+      "entry": "12a",
+      "menu": [
+        "ΤΡ",
+        "ΤΡΙ"
+      ],
+      "name_ids_by_prefix": {
+        "ΤΡ": [],
+        "ΤΡΙ": []
+      }
+    },
+    {
+      "entry": "15",
+      "menu": [
+        "ΣΚ",
+        "ΧΚ",
+        "ΞΚ"
+      ],
+      "name_ids_by_prefix": {
+        "ΣΚ": [
+          "ilan2002:reported_greek_form:bb669dcc609b3d31b169cc865e784da44a94408be3c943fbe64e2dbaf2ef0d26"
+        ],
+        "ΧΚ": [],
+        "ΞΚ": []
+      }
+    }
+  ],
+  "provenance": {
+    "freeze_commit": "16267e12b9fa6d511d1c5c02cebbadd94bf008c8",
+    "run_head": "16267e12b9fa6d511d1c5c02cebbadd94bf008c8",
+    "source_pdf_sha256": "63595934818ca35e2f5ac90effe0ece7f7c953b5676b2c13e2a83a0d040be680",
+    "selected_csv_sha256": "41903a16042dbc76fcf1449f743078380e4524a5dcbed76e7dfe102150c3fe81",
+    "frozen_manifest_sha256": "48d672e9d98e4a1a48807175e73e1966e0c02cdd0dc965b1511abaca221ce97b",
+    "runner_sha256": "bfbc2a001c85e75b8b34b3d636f3ba793b0938e539eee0dc63598574e6895ce0",
+    "analysis_scope": "source-adjusted reported-Greek-form/person-period pilot; incomplete eligible book corpus; not confirmatory"
+  }
+}

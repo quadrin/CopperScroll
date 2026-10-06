@@ -10,6 +10,8 @@ Milik 1960 p. 142 places the target in a bathing pool and under a pipe. The smal
 
 [Function evidence and candidate branches](siloam_bathing.md), [structured check](siloam_bathing.json).
 
+**Follow-up, 6 October2026UTC /5OctoberLosAngeles:** the separate [main-pool under-pipe test](siloam_bathing.md#main-pool-under-pipe-test--6-october-2026-utc) is now complete as **not identifiable from available evidence**. L103's observed receiver-side contact and relative height supply no surveyed under-pipe place inside Birket; larger-pool bath function, ancient name and matched phase remain unresolved. The previous small-pool result is preserved. This later existing-source check adds one bounded check, zero source targets or outcomes, bringing current activity to70/5/79. The original cycle15 accounting below remains historical.
+
 ## Jericho
 
 Entry 29's available original editions do not establish flow direction. Puech's minimal conduit wording is defended from surviving traces; his water-collection continuation is conjectural. Milik 1960 p. 140 offers a conduit/reservoir association with damaged wording, without an explicit drainage-versus-supply resolution. His original source labels this passage entry 31; project/Puech entry 29 is column VII 3–7.

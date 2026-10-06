@@ -60,6 +60,13 @@ Checked on 30 September 2026. The counts and p-values in §0, §1 (observed and 
 
 Some numbers in the report are not in any output file:
 
+The statuses below describe the30September delivery. The [6October exact ordering audit](../research/text/ordering_audit_2026-10-06.md) supplies the missing T1 calculations and retained entry15/23 branches, exact five/six-occurrence scans, and source-level full-spelling counts. Its [separate runner](ordering_audit.py) writes [structured results](ordering_audit_results.json); it preserves the historical scripts and outputs. The five-phrase`C(10,5)/C(61,5)` calculation measures canonical-entry cooccurrence. A literal-adjacency probability, complete Milik segmentation null and Phase4T8's missing7/4 coding basis remain unresolved.
+
+```
+python3 deep_analysis/ordering_audit.py
+python3 -m unittest discover -s deep_analysis -p test_ordering_audit.py -v
+```
+
 | Report | Value | Status |
 |---|---|---|
 | §1, §11: T1 p | 3.6 × 10⁻⁶, "exact" | `tests.py` gives the permutation estimate 5 × 10⁻⁶ (1 hit in 200,000 shuffles, as the report says). The exact calculation is not in the bundle |
@@ -79,9 +86,19 @@ Only the file paths changed. The bundle expected the scripts in `cs_work/deep/`,
 
 ## Text and data
 
-`build.py` and `features.py` write the Abegg Hebrew text (ETCBC `dss` 2.0.1, CC BY-NC 4.0) into `entries_full.json` and `features.json`. These two files can be made again at any time, so they are in `.gitignore`. The committed outputs hold entry numbers, counts, concept names and statistics, and no Hebrew text.
+`build.py` and `features.py` write the Abegg Hebrew text (ETCBC `dss` 2.0.1, CC BY-NC 4.0) into `entries_full.json` and `features.json`. These two files can be made again at any time, so they are in `.gitignore`. The historical delivered outputs hold entry numbers, counts, concept names and statistics, and no Hebrew text. The separate `ordering_audit_results.json` includes limited source-token contexts and annotations; its attribution, CC BY-NC4.0 licence and modification statement accompany those excerpts. The [audit note](../research/text/ordering_audit_2026-10-06.md) describes their extraction and limits.
 
 
 ## Frozen coarse grouping sensitivity — 2 October 2026 UTC
 
 The [cycle 2 pass](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle2/sequence_grouping.md) retains 61 canonical slots and unknown anchors, then measures 64 confidence/anchor/division cases. It uses current atlas grades, including low for entry46 where the legacy table said medium. Coarse same-region adjacency spans 3–31; excluding low assignments leaves longest runs of three. Entries 30–32 persist only under current coarse Jericho membership. The heterogeneous 'region' category remains unclassified, and split subspans remain unassigned unless independently anchored. This is a descriptive sensitivity result; earlier fine-district/HMM findings have a different scope. Independent associations, fine-region footprints and moved-phrase/subspan mappings remain pending. No location probability, uninterrupted route or exact unplaced location follows.
+
+
+## R11 personal-prefix runner (3 October 2026)
+
+`initials_control.py` is a separate standard-library analysis, not a reproduction of historical Phase4T4 or the gap test above. [Protocol](greek_personal_initials_protocol.json) and [source/exposure audit](../research/phases/phase4_summary.md#r11-personal-initials-audit--3-october-2026) document the fixed readings, populations and letter controls. The full Ilan source is now available. A separate [audited107-form person-period pilot](ilan2002/README.md) scores2/7 in both primary and reading union, with all12 combinations retained. Original independently dated/localized Greek-attestation eligibility remains incomplete.
+
+Run mechanics tests with `python -m unittest discover -s deep_analysis -p test_initials_control.py -v` from the repository root. All strings used for scoring tests are synthetic. After acquiring and committing a complete eligible CSV/input freeze, run `python deep_analysis/initials_control.py --freeze PATH.json`; the supplied blocked protocol refuses scoring. The exact artificial-reference tails measure prefix coverage under a specified letter null; they cannot identify a person or establish personal-initial meaning.
+
+
+The subsequent [frozen common-noun control](word_control/README.md) compares107-form samples uniformly without replacement, preserving correlated slots and all reading opportunities. Names score2; nouns average3.096179, and95.661673% of equal-sized noun samples score at least2. Both populations/all12 branches are retained and independently verified. This finite benchmark gives no name prefix-count advantage; source/genre/morphology/exposure limits leave historical meaning unresolved.
