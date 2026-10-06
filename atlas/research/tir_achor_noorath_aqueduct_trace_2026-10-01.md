@@ -76,3 +76,8 @@ Next: obtain **TIR p. 197 and the Achor Vallis entry with their cited sources**.
 
 
 Later 1 October: [gazetteer and Choziba retrieval follow-up](tir_gazetteer_choziba_followup_2026-10-01.md) records the new survey-paper inspection, access limits and corrected cumulative totals.
+
+
+## Supplied gazetteer cross-reference — 6 October2026
+
+The supplied original gazetteer now resolves access to AchorVallis p56 and Noorath p197, with Guidelines3–5 and abbreviations25–52. [Canonical original-page inspection](tir_gazetteer_choziba_followup_2026-10-01.md#supplied-tir-gazetteer-and-guidelines--6-october-2026) records hashes, exact viewer mappings, adopted name/site equations and their limits. Gazetteer citations are dependent source leads; the original ancient passages, regional map coverage, candidate rankings and coordinates retain their recorded scopes. No new map intake or independent archaeological corroboration.

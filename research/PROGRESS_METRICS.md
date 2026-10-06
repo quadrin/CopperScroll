@@ -1,6 +1,6 @@
 # Research outcome counters
 
-Updated 6 October 2026 UTC / 5 October Los Angeles. Source inspections and completed checks record activity. Headline counters now describe identification outcomes, conditional exclusions, comparison results and excavation coverage. The [outcome ledger](progress/outcome_ledger.json) defines the audit scope and names every counted record.
+Updated 6 October 2026 UTC / 6 October Los Angeles. Source inspections and completed checks record activity. Headline counters now describe identification outcomes, conditional exclusions, comparison results and excavation coverage. The [outcome ledger](progress/outcome_ledger.json) defines the audit scope and names every counted record.
 
 ## Current registered outcomes
 
@@ -28,6 +28,10 @@ An **excavation-coverage record** identifies the proposed ancient target, archae
 An **unexcavated-alternative inventory** starts from entry constraints and a declared regional boundary. Include surveyed, excavated, unexcavated, destroyed and status-unknown features under the same selection criteria. Record how maps/surveys detect them and where coverage is incomplete. Existing atlas markers are inputs to this audit, not a complete regional denominator. Distinguish modern observations and archaeological function interpretations from claims about the ancient wording.
 
 ## Activity retained separately
+
+Current activity at6October2026UTC /6OctoberLosAngeles: **72 scoped primary-source targets /5 cartographic-reference intakes /82 bounded checks**;11Inprogress/1Queued. [Supplied TIR gazetteer/guidelines](https://github.com/quadrin/CopperScroll/blob/research/tir-gazetteer-supplied/research/sources/tir_gazetteer_choziba_followup_2026-10-01.md#supplied-tir-gazetteer-and-guidelines--6-october-2026) adds one selected original-publication scope and one combined association-and-source-coverage check to71/5/81. The adopted Achor/Nueima and Noorath/EinDuyuk equations are readable; they establish no independent Scroll landmark, water-feature phase or coordinate. File handling,42page views, source decoding and screenshot add no extra counts. Outcomes, confidence, geometry, source-sector inventory and regional denominator remain unchanged.
+
+The following Wadi activity record is historical:
 
 Current activity at6October2026UTC /5OctoberLosAngeles: **71 scoped primary-source targets /5 cartographic-reference intakes /81 bounded checks**;11 Inprogress/1 Queued. The [supplied Wadi original review](https://github.com/quadrin/CopperScroll/blob/research/wadi-nueima-original-access/research/assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.md) adds one complete Dinur–Feig report scope and one bounded identity/phase/contact coverage check to70/5/80. One bath is described; the western rectangle is a separate structure. No bath construction phase, pipe contact, plan, metric datum or complete basin census is supplied. J23 remains unresolved with null eligibility/contact/detection gates. Source access is now satisfied; earlier403/citation routing is retained as history. Upload handling, publication mapping, rendering and independent review add no second increment/campaign. No outcome, formal packet, coordinate, confidence or question-state change.
 
