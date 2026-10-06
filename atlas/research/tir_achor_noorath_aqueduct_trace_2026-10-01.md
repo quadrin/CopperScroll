@@ -81,3 +81,8 @@ Later 1 October: [gazetteer and Choziba retrieval follow-up](tir_gazetteer_chozi
 ## Supplied gazetteer cross-reference — 6 October2026
 
 The supplied original gazetteer now resolves access to AchorVallis p56 and Noorath p197, with Guidelines3–5 and abbreviations25–52. [Canonical original-page inspection](tir_gazetteer_choziba_followup_2026-10-01.md#supplied-tir-gazetteer-and-guidelines--6-october-2026) records hashes, exact viewer mappings, adopted name/site equations and their limits. Gazetteer citations are dependent source leads; the original ancient passages, regional map coverage, candidate rankings and coordinates retain their recorded scopes. No new map intake or independent archaeological corroboration.
+
+
+## Cited-argument follow-up — 6 October 2026
+
+[New source coverage, alternatives and exact access limits](tir_gazetteer_choziba_followup_2026-10-01.md#achor-and-noorath-source-arguments--6-october-2026): JeromeEp108 supplies narrative context without a measured location; deVos2021 proposes a conditional biblical Mukellik/es-Sidr alternative; Vincent's1921 field letter supplies synagogue observations without a direct inscription date or dated water join. Nuʿeima/Buqeiʿa Scroll geography and EinDuyuk/Auja-related name/water continuity remain not identifiable. Earlier Milik1960/Onomasticon/Josephus/ESI/TIR exposure is not counted again. Three scoped readings and two combined checks bring75/5/84; grades, coordinates and outcomes stay unchanged. Exact next original targets are Noth42–55 and ESI2Naʿaran72–74 with publication/context leaves. No outreach or fee.
