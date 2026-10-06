@@ -1,0 +1,46 @@
+# Wadi en-Nu’eima original-report access — 6 October 2026 UTC
+
+**The catalogue-cited original report was not obtained.** Its exact catalogue-reported citation is verified in native ROSAPAT bibliography pages: U. Dinur and N. Feig, “Wadi Nu’eima,” *Excavations and Surveys in Israel* 5 (1986), pp. 110–111. A new [official Hadashot index](https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=79) lists **“Wadi Nu‘eima,” p.36, in ESI5(1987)II**. This is a routing locator; its report/year/pagination crosswalk to the catalogue citation remains unverified. The [IAA volume5 record](https://publications.iaa.org.il/esi_english_series/18/) is a separate candidate route whose linked download returned HTTP403 through both web retrieval and an ordinary unauthenticated download. Individual baths, their successive phases and water contacts remain **not identifiable from available evidence**. J23 stays an unresolved aggregate notice; no geometry was run.
+
+This is a finite access/citation audit of J23/PADIS0167 in the [completed selected-source roster](regional_inventory_2026-10-06.md), with [structured provenance and null gates](wadi_en_nueima_original_2026-10-06.json). The existing normalization and regional roster were read without changes. No source was reserved as an unused prediction.
+
+## Native catalogue inspection and citation
+
+The previously recorded public [ROSAPAT download](https://drive.google.com/uc?id=1RE_9cNN76qub2UGHE6ntJTO8PbMUBJXV&export=download), linked in the expedition’s [publications page](https://sites.google.com/uniroma1.it/sapienzatojericho/publications), again supplied the complete 336-page PDF: 79,335,139 bytes, SHA-256 `0c7fefdf676abb796c6cccf4f33dd6289c499d6a54249322e0b2ea672122af73`. This matches the earlier recorded source file. Text extraction located the targets; the following native page images were then inspected. A matching book checksum alone does not demonstrate prior inspection of a page.
+
+| Source scope | Printed page / one-based PDF page | What this inspection establishes |
+| --- | --- | --- |
+| Title and rights leaves | Unnumbered / 3–4 | Nigro, Sala and Taha, eds., *Archaeological Heritage in the Jericho Oasis*, ROSAPAT07, Rome2011; all rights reserved. |
+| Introduction bibliography | 33 / 45 | Dinur–Feig title, ESI5(1986) and pp.110–111. |
+| Site bibliography, no.96/PADIS0167 | 223 / 235 | The same citation is assigned specifically to Wadi en-Nu’eima. |
+| Catalogue entry no.96 | 158–159 / 170–171 | A one-dunam site notice; catalogue-reported preservation among modern buildings; ritual-bath labels recur under Persian, Hellenistic and Roman headings, all citing p.111. These are compilation statements. |
+| Introduction context | 17 / 29 | A tentatively proposed early bath and later enlargement account. This is a **freshly checked derivative contextual passage**; prior exact native-image inspection of p.17 is not demonstrated by the existing scope notes. |
+
+The p.17 account permits a possible single-bath/successive-enlargement relationship. The plural bath labels on p.159 do not resolve its cardinality. Neither passage supplies locus IDs, construction joints, individual outlines, excavation phases or dated conduit terminals. Preserve that conditional relationship without converting the aggregate into one basin, several basins or established successive states. The passage’s tentative Persian-period association cannot date an entry29 instruction, basin surface or water connection.
+
+The [live PADIS entry](https://sites.google.com/uniroma1.it/sapienza-padis-project/archaeological-sites/wadi-en-nueima) repeats the compilation’s labels and exact bibliography. It adds no independently inspected field observation or campaign.
+
+## Finite access routes and stopping point
+
+| Route | Result |
+| --- | --- |
+| Existing repo/workspace ESI scans and access records | No ESI5 body found in the checked workspace/repo holdings. The recorded ESI6 and ESI7–8 extracts concern other reports; they do not supply the requested pp.110–111. This is a local availability result. |
+| [IAA volume5 candidate record](https://publications.iaa.org.il/esi_english_series/18/) | Publisher HTML inspected; it advertises a70.4MB full text and publication date June1987. Equivalence to the catalogue-cited report/edition is unverified. |
+| [Linked IAA candidate-volume download](https://publications.iaa.org.il/cgi/viewcontent.cgi?article=1017&context=esi_english_series) | Web retrieval HTTP403; one ordinary download also HTTP403, with a17-byte text response and no PDF header. Diagnostic-response SHA-256: `2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c`. This is **not** a source-PDF checksum or a verified report download. |
+| Recorded expedition-linked ROSAPAT download | Direct public download succeeded with the original checksum above, after the web reader could not fetch that URL. |
+| [Hadashot ESI5(1987)II](https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=79) | Exact title “Wadi Nu‘eima” listed at p.36. Retrieved index text supplies no report body/link or byline. |
+| [Hadashot ListOfVolumes](https://hadashot.iaa.org.il/reports_list_eng.aspx) | Explicitly identifies printed-issue lists as metadata; the report itself must be obtained from the printed issues. This index is not an original report inspection. |
+| Integrator’s [PastIssues](https://hadashot.iaa.org.il/reports_list_eng.aspx?paper=true) and [IAA English-series](https://publications.iaa.org.il/esi_english_series/) routing check | PastIssues distinguishes [ESI5(1987)I/id78](https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=78) from II/id79. The IAA series list supplies one ESI5 link to record18; its visible contents correspond to the partI list through p.35. This is metadata correspondence, without verified PDF completeness or partII coverage. |
+| Integrator’s bounded citation-year alternative: [ESI4(1986)II/id77](https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=77) | No Wadi title in the retrieved metadata list; this establishes neither report absence elsewhere nor archaeological absence. No new body route recovered. |
+
+Retain **1986/pp.110–111 as the catalogue citation**, **1987/II/p.36 as the Hadashot routing locator**, and **June1987 as the candidate IAA record’s publication date**. No page offset, identical report, corrected citation or different edition is inferred. The publisher description lists titles/pages through p.35 and does not list Wadi Nu’eima or pp.110–111; its completeness is unestablished. The retrieved metadata therefore establishes neither target absence nor report/edition equivalence. Original issue leaves, printed-to-PDF mapping, report figures, survey dates and field accessions remain unknown. The integrator’s exact metadata routes above are reported separately from this worker’s direct native ROSAPAT and Hadashot-index inspections.
+
+The bounded original search stops here after the exact partII routing lead. It used no Library search, account login, purchase, outreach or broader source hunt. The next source needed is the original **ESI5(1987)II p.36 “Wadi Nu‘eima”**, with issue title/contents leaves, report header/byline and any plans, sections or captions. These must establish whether and how it corresponds to the catalogue-cited Dinur–Feig pp.110–111; that correspondence remains a separate unresolved dependency. The original is needed to enumerate or crosswalk bath loci/states, distinguish excavator function/date interpretations from observed construction, and locate documented feeders, drains and receiving surfaces. If no surveyed phase-controlled contact appears there, the next dependency is the report’s specifically named drawing or field-record accession; none is presently known.
+
+## Eligibility, reuse and accounting
+
+Individual feature identities/cardinality, textual role, dated wall/contact/surface coexistence, water connections, northern reference, finite face and measurement plane, aperture definition, benchmark, detection coverage and unused prediction remain unknown. There are **zero verified original-report pages** and **zero verified complete measurement packages for J23**, without assigning zero eligible baths. The eligible-basin denominator stays null. Previous entry29 results remain closed for their earlier inputs.
+
+ROSAPAT’s rights leaf reserves reproduction. No source PDF, page image or figure is added to the repository. Native p.17 also contains **Fig.1.21**, a Tell es-Sultan stamped-handle illustration referring to Kenyon–Holland1982, pl.III.b; it supplies no Wadi bath geometry. Its source URL and page/figure locator are retained here, with reuse permission unestablished. PlateI is cited in the catalogue entry but was not inspected. No original Dinur–Feig figure was encountered; its figure inventory remains unknown.
+
+After the finite official partII routing check, recommend **0 new scoped primary-source targets /0 cartographic intakes /0 bounded checks /0 outcomes**. Citation/access routing and inspection of compilation pages supply no new original bath observation. The fresh p.17 derivative phase account is explicitly recorded as contextual information, without an individual-identity, phase or contact test. Source availability and activity totals add no identification confidence.
