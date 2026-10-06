@@ -146,3 +146,54 @@ Rear407 shows **Plan11 and Plan15 labels on folded backs**; their drawings are n
 New basin notices AC1, A(C)161, A(C)150 and the unnamed small basin are [recorded separately in the roster](README.md#original-area-ac-comparison-and-basin-notices--3-october-2026-utc). One complete Chapter2 source scope / one bounded feature-contact-phase coverage check brings activity to54 targets /5 cartographic intakes /61 checks. Reattachment, plan-access correction and archiving add no further counts. All new content and the broad thumbnail exposure are exploratory; no unseen observation, test, outcome, coordinate, grade or measurement change follows. The identification remains **not identifiable from available evidence**.
 
 Recover the actual unfolded Plan14/15/23 drawings or an exact field contact section for A(B)101/A(B)171; unfolding the sheets visible in the scanned physical pocket may provide an access route. Plan13 and Chapter2 are now available and should not be reacquired. The exact2002Fig.6/PADIS0153 and Birket Musa AppendixB dependencies remain separate. No purchase, login probing or outreach occurred.
+
+## A(C)94 inlet survey search — 6 October 2026 UTC
+
+The user authorized a bounded search for the original inlet drawing or survey after the [early-pipe geometry result](ac94_pipe_test.md). Two parallel read-only threads checked the existing originals and the separate water-supply report route. No surveyed aperture section or field-item accession was recovered. **Entry 29 / A(C)94 remains not identifiable from available evidence.** The closed geometry inputs, outputs and decision are unchanged.
+
+### Published levels and their limits
+
+The [archived Area AC extract](../../assets/plans/netzer2001-area-ac/README.md) remains byte-identical to its manifest: SHA-256 `cf08871210c59848655c4c4223cfe30334fe2737068b7b533d27b2b4713b2158`. The source recheck used original printed pp. 50–52, 57–59 and 66 as page images, with text navigation elsewhere in the already-inspected Chapter 2. Plan 13 p. 52 / viewer 84 was inspected at its early northwest pipe and north-wall/bench labels. Original pp. 57–58 report the 3.3 m approach and the pipe end built into the north sidewall. AC17/AC19/AC21 are pool labels, not a recovered inlet-field accession. No specific discovery season, inlet-wall number or original section number was established.
+
+[Trümper 2018](https://edition-topoi.org/download_pdf/bsa_053_10.pdf), printed p. 283 / PDF 29 n. 57, reads the early pipe as descending from 102.87 to 102.80 and places the bench below the inlet at 102.73. The original Plan 13 has 102.87 beside the upstream pipe and 102.80 beside its drawn terminus; 102.73 is printed at the northwestern bench. The [existing Fig. 19 p. 282 archive](../../assets/plans/trumper2018/README.md) was visually rechecked; its plan and these interpretations derive from Netzer 2001, not another survey campaign. The publisher PDF was downloaded: 42 pages, 1,667,314 bytes, SHA-256 `0d0cd8031e3e03181d67942851017f7a4ae9219f0bc405c97f954b094f7efab7`, matching the existing manifest. Native lower-page images of printed 283–284 / PDF 29–30 verify n. 57 / n. 58; publisher-extracted text supplied navigation. This is reinspection of the already-exposed source.
+
+This refines the documentation gap: **published pipe-level annotations exist**, but the inspected sources do not define the early pipe's labels as its internal bottom (invert), centre, crown or a surveyed wall-aperture point. Trümper's proposed termination at the pool top is an interpretation. A benchmark, measurement plane, uncertainty and keyed section remain unresolved. The labels cannot certify the traced terminus as the aperture centre or supply the ancient measuring surface.
+
+Keep the second 102.80 notice separate. Trümper p. 284 / PDF 30 n. 58 assigns 102.80 to the **bottom of the later open channel north of the pool**, 103.54 to the distribution-basin bottom and 104.40 to the Na'aran-channel bottom. That later terminal connection did not survive. Its explicitly described bottom cannot define the early ceramic pipe's unspecified annotation. The two notices share a number, not a demonstrated measurement point or phase.
+
+Ill. 74 p. 51 concerns the main buried supply at A(C)162–AC25; Ills. 84–85 p. 58 are pool/northern-surroundings photographs. Ill. 87 p. 59 sections AC44/AC49, with location routed to folded Plan 12. These are not an A(C)94 inlet section. W316/W319 belong to the nearby structure/channel discussion, not verified inlet-wall identifiers. Printed p. 66 reports absent surrounding ancient floors. The old Kelso/Baramki Plate 33 reference concerns the tentative pool-identity crosswalk; its original plate was not inspected in this pass and provides no recovered inlet survey.
+
+### Exact retrieval routes and access boundary
+
+The [SLUB catalogue](https://katalog.slub-dresden.de/id/0-118108379) identifies Günther Garbrecht's *Die Wasserversorgung des geschichtlichen Jericho und seiner königlichen Anlagen (Gut, Winterpaläste)*, with Ehud Netzer listed as another contributor, Leichtweiss-Institut, 1991, *Mitteilungen* 115, 137, [214] pp. Its displayed physical-copy references are `ZI 6700 B825-115` (DrePunct, barcode 31127546), `68.8.3179` (central magazine, 20316002) and `96 8 15671 001` (central magazine, XMOM717251). The page also displays conflicting zero-copy summary counters; current availability is not inferred. Ordering requires a library login, which was not attempted. The linked HEBIS contents route could not be fetched; no report body or target illustration was inspected.
+
+All three pages of the [DNB contents](https://d-nb.info/920316468/04) were text-read: §17 pp. 115–119 includes northern supply §17.4 p. 118; §21.3 starts p. 135. These are exact **retrieval leads**, not verified A(C)94 coverage. Request those pages and their referenced illustrations/plate list before assuming they contain the inlet profile. Estate-demand §19 pp. 124–130 is not a named pool-section target. The previous blocked TU Braunschweig route was not retried.
+
+[Hebrew University's official staff page](https://archaeology.huji.ac.il/people/ruhama-bonfil?ref_tid=3025) lists **Ruhama Bonfil, Graphic Documentation Unit**, at `ruhama.piperno-beer@mail.huji.ac.il`. This is a verified institutional contact route. Routing an excavation-drawing inquiry to that unit is our inference; no A(C)94 holding, archive accession or current custodian was verified. The [chief librarian](https://archaeology.huji.ac.il/people/ronit-shavit-hivroni?ref_tid=3025) is a separate fallback for publication access, not an established field-record custodian.
+
+The checked institutional pages, exact-name archive searches and 1991 catalogue/contents routes recover no publicly indexed target drawing within this scope. That result establishes no absence from an archive or from the excavation. Stop these routes here. Plans 14/15/23 and the older broad searches remain parked.
+
+### Prepared request — not sent
+
+To: Ruhama Bonfil, `ruhama.piperno-beer@mail.huji.ac.il`
+
+Subject: Jericho Area AC: A(C)94 north-wall pipe — field drawing and level register
+
+Dear Mrs Bonfil,
+
+I am studying the published documentation of pool A(C)94 at Jericho. Could your Graphic Documentation Unit advise whether the original field drawing or survey records survive for the early ceramic pipe entering its north wall near the northwest corner?
+
+The reference is Ehud Netzer, *Hasmonean and Herodian Palaces at Jericho*, Volume I (2001), Plan 13 p. 52 and pp. 57–58: a 3.3 m preserved approach, with pool labels AC17/AC19/AC21. I am seeking a scaled plan or section through the wall junction, its field-item number, and any associated level register or benchmark record.
+
+In particular, what do the published pipe labels 102.87/102.80 measure: internal bottom, centre, crown or another point? A keyed section relating the opening to the bench labelled 102.73, the relevant wall face and the contemporary surface would help. Any construction/use-phase record for that junction would also be useful.
+
+If another archive holds these records, could you direct me to its custodian? Please let me know the access procedure and any fees before an order, and any restrictions on reproducing a supplied scan.
+
+Thank you,
+Alex
+
+### Stopping point and accounting
+
+This is reinspection of previously exposed Netzer/Trümper evidence plus catalogue/contact routing; it adds **zero source scopes or bounded checks**. Activity remains 70/5/78, with 11 In progress / 1 Queued. No field campaign, unused observation, independent confirmation, formal outcome, confidence, geographic coordinate or question closure is added. No source images were newly uploaded. No message, library order, login attempt or fee was authorized or incurred.
+
+The concrete next action is to obtain permission to send the prepared inquiry, then request the original field-item/section and datum definitions. A source-derived clarification would be exploratory because the plan and derivative account are already exposed. A new unused field observation requires its own exposure audit and test specification before inspection. The existing 2D geometry remains closed; published level labels alone do not reopen it.
