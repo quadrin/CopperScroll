@@ -173,7 +173,9 @@ All three pages of the [DNB contents](https://d-nb.info/920316468/04) were text-
 
 The checked institutional pages, exact-name archive searches and 1991 catalogue/contents routes recover no publicly indexed target drawing within this scope. That result establishes no absence from an archive or from the excavation. Stop these routes here. Plans 14/15/23 and the older broad searches remain parked.
 
-### Prepared request — not sent
+### Request sent — 6 October 2026 UTC
+
+After the user explicitly instructed “send it,” the prepared request below was sent to the verified institutional address at **6 October 2026 04:12:40 UTC / 5 October 2026 21:12:40 Los Angeles**. Gmail's send result and the stored message both carry `SENT`; the recipient, subject and body match the prepared request. This records sending, with delivery and a reply unverified. No attachments, additional recipients, order or fee accompanied the inquiry. The official address was rechecked and the exact-correspondent email search returned no earlier thread.
 
 To: Ruhama Bonfil, `ruhama.piperno-beer@mail.huji.ac.il`
 
@@ -194,6 +196,6 @@ Alex
 
 ### Stopping point and accounting
 
-This is reinspection of previously exposed Netzer/Trümper evidence plus catalogue/contact routing; it adds **zero source scopes or bounded checks**. Activity remains 70/5/78, with 11 In progress / 1 Queued. No field campaign, unused observation, independent confirmation, formal outcome, confidence, geographic coordinate or question closure is added. No source images were newly uploaded. No message, library order, login attempt or fee was authorized or incurred.
+This is reinspection of previously exposed Netzer/Trümper evidence plus catalogue/contact routing; it adds **zero source scopes or bounded checks**. Activity remains 70/5/78, with 11 In progress / 1 Queued. No field campaign, unused observation, independent confirmation, formal outcome, confidence, geographic coordinate or question closure is added. No source images were newly uploaded. The initial source search sent no message; the subsequent user-authorized inquiry above changes its correspondence status only. No library order, login attempt or fee was incurred.
 
-The concrete next action is to obtain permission to send the prepared inquiry, then request the original field-item/section and datum definitions. A source-derived clarification would be exploratory because the plan and derivative account are already exposed. A new unused field observation requires its own exposure audit and test specification before inspection. The existing 2D geometry remains closed; published level labels alone do not reopen it.
+The concrete next dependency is a reply supplying the original field-item/section and datum definitions, or an exact custodian referral. No follow-up message or library order is scheduled. A source-derived clarification would be exploratory because the plan and derivative account are already exposed. A new unused field observation requires its own exposure audit and test specification before inspection. The existing 2D geometry remains closed; published level labels alone do not reopen it.
