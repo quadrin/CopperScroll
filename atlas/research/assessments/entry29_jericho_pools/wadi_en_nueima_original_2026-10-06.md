@@ -93,3 +93,36 @@ Individual feature identities/cardinality, textual role, dated wall/contact/surf
 ROSAPAT’s rights leaf reserves reproduction. No source PDF, page image or figure is added to the repository. Native p.17 also contains **Fig.1.21**, a Tell es-Sultan stamped-handle illustration referring to Kenyon–Holland1982, pl.III.b; it supplies no Wadi bath geometry. Its source URL and page/figure locator are retained here, with reuse permission unestablished. PlateI is cited in the catalogue entry but was not inspected. No original Dinur–Feig figure was encountered; its figure inventory remains unknown.
 
 After the finite official partII routing check, recommend **0 new scoped primary-source targets /0 cartographic intakes /0 bounded checks /0 outcomes**. Citation/access routing and inspection of compilation pages supply no new original bath observation. The fresh p.17 derivative phase account is explicitly recorded as contextual information, without an individual-identity, phase or contact test. Source availability and activity totals add no identification confidence.
+
+## Bath field-file routing — 6 October 2026 UTC
+
+The user authorized tracing the original field records after the supplied report review. This finite search recovers an institutional archive route, **without a bath file, drawing, permit or confirmed custodian**. It adds no archaeological observation, source scope, bounded feature check, cartographic intake or outcome. J23, its gates and71/5/81 remain unchanged. PR20's supplied-unit access update is merged as `05ecaad769c315d7815817083011814a742159a1`; its exact tree was independently verified.
+
+The already-inspected ESI5 printed110–111 names inspectors **D. Akrai and A. Zur**, the communicating authors **U. Dinur and N. Feig**, and investigation on behalf of the **Staff Officer for Archaeology** after looting reports. These identifiers and the raw published grid `1922/1434` support a narrow file inquiry. No author-name expansion, excavation permit or new coordinate conversion is assigned. The bath was exposed by illegal digging; a licensed excavation file cannot be assumed.
+
+The current [official Archaeology Unit page](https://www.gov.il/en/departments/Units/archeology_unit) lists establishment of a scientific archive among the unit's tasks and names Benyamin Har Even as staff officer. Its contact block lists `mnz@mgar.co.il`, telephone `074-7642929`, short number `4943*` and fax `02-6599133`. The same email/telephone appear on [Infrastructure](https://www.gov.il/en/departments/Units/infrastructure_unit); they are an institutional **general routing contact**, without proof of a dedicated archivist mailbox or possession of the Wadi file. The report's responsible-office attribution makes this an inferred first routing lead, not a verified holding.
+
+[USC's archaeology database description](https://dornsife.usc.edu/crcc/shi/) links [Tel Aviv's database project](https://www.tau.ac.il/humanities/abraham/archaeological-database.html), which opens and links the [1968–2007 license-list PDF](https://www.tau.ac.il/humanities/abraham/licenses.pdf). The whole26-page extracted list was searched for bounded Nu'eima/Nueima/Nuwayimah/Nou'eimah name variants and the exact putative six-digit pair192200/143400; no matching named/pair record was identified. This search-string expansion does not establish a CRS or convert a geographic point. Native PDF14 verifies that **L-617/1993-0**, “Jericho, Jordan District,” has192200/141200 and no named excavator/institution; it is not crosswalked to this earlier Wadi inspection. Records matching only one grid component or other nearby names supply no Wadi accession. No absence from the scientific archive or absence of surveying follows from this limited register.
+
+The [Greenberg–Keinan2009 sourcebook](https://www.emekshaveh.org/he/wp-content/uploads/2013/09/WBADB_sourcebook.pdf) opens. Its extracted text was checked for the same target-name variants, relevant grid components and Dinur/Feig references; no named Wadi target-file record was recovered. Nearby cave/Na'aran names and other Dinur publications are not substitutions. This was administrative/bibliographic navigation, without native archaeological figure inspection or an added field campaign. The description and list are historical compilations, not a complete current archive inventory. The USC database link `http://digitallibrary.usc.edu/ipawg` returned an internal reader error; the separate old portal `https://digitallibrary.usc.edu/wbarc/` returned403. Exact failures were shared with the user immediately. Those endpoints were not retried.
+
+Downloaded inspection-copy provenance, with no public redistribution of PDFs, tables or renders:
+
+- License list:134,964bytes;26PDFpages; SHA-256 `7024901de5330f55e063e279fb1f4a2ee4adab4ed3e9d50366ac72fc05e7f179`; extracted full-list search and native PDF14 mismatch check.
+- Sourcebook:2,575,897bytes;184PDFpages; SHA-256 `449b419f6acbcc105b85d90fad8462a41a17e5617821fa51c99902ed7cec2204`; extracted metadata search only. Reuse permissions remain unestablished.
+
+### Prepared archive-referral text — unsent
+
+Subject: Archive referral: Wadi Nu'eima inspection reported in ESI5, pp110–111
+
+Dear Archaeology Unit,
+
+Could you direct me to the scientific archive or custodian of the inspection records for Wadi Nu'eima, reported by U. Dinur and N. Feig in *Excavations and Surveys in Israel*5, pp110–111 (1986 cover designation,1987 printing)? The report names inspectors D. Akrai and A. Zur, gives grid reference1922/1434, and says the site was investigated for the Staff Officer for Archaeology following reports of looting.
+
+I am seeking the inspection/survey file identifier and any surviving plan, section, photograph or dated construction record for the1.3m-deep ritual bath about2m north of the wadi. The4.5×8m rectangular structure lies separately to its west. Any record defining the bath's outline, water inlet/outlet, wall/floor relationship and construction phases would help. Please clarify if no such survey or drawing was made.
+
+If another office holds the records, could you provide its archive contact? Please state access terms and any fees before processing an order.
+
+Thank you.
+
+This is prepared repository text only: **no email, Gmail draft, request submission, account login, order or fee** occurred. The public-source route stops here. Next verify the archive referral/holding and exact accession before retrieving a drawing; keep the report's closed archaeological result and all earlier parked hunts intact.

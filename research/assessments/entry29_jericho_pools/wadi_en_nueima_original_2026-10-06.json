@@ -679,5 +679,76 @@
       81
     ],
     "record_ref": "#/supplied_original_review"
+  },
+  "field_file_routing_2026_10_06": {
+    "audit_mode": "bounded_administrative_source_routing",
+    "date_utc": "2026-10-06",
+    "responsible_office_as_reported": "Staff Officer for Archaeology",
+    "inspectors_as_reported": [
+      "D. Akrai",
+      "A. Zur"
+    ],
+    "byline_as_reported": [
+      "U. Dinur",
+      "N. Feig"
+    ],
+    "raw_published_grid": "1922/1434",
+    "new_coordinate_conversion": null,
+    "inferred_archive_route": {
+      "official_url": "https://www.gov.il/en/departments/Units/archeology_unit",
+      "page_lists_scientific_archive": true,
+      "named_staff_officer_as_page_lists": "Benyamin Har Even",
+      "general_routing_email": "mnz@mgar.co.il",
+      "telephone": "074-7642929",
+      "short_number": "4943*",
+      "dedicated_archive_mailbox_verified": false,
+      "custody_of_target_file_verified": false
+    },
+    "field_accession": null,
+    "bath_plan_or_section_obtained": false,
+    "permit_crosswalk": null,
+    "license_list": {
+      "url": "https://www.tau.ac.il/humanities/abraham/licenses.pdf",
+      "bytes": 134964,
+      "pdf_pages": 26,
+      "sha256": "7024901de5330f55e063e279fb1f4a2ee4adab4ed3e9d50366ac72fc05e7f179",
+      "inspection": "whole extracted-text bounded-name/grid-pair search; native PDF14 nonmatching L617 record",
+      "no_target_match_identified": true,
+      "nonmatched_record": "L-617/1993-0; Jericho, Jordan District;192200/141200; no original-grid/campaign crosswalk"
+    },
+    "sourcebook": {
+      "url": "https://www.emekshaveh.org/he/wp-content/uploads/2013/09/WBADB_sourcebook.pdf",
+      "bytes": 2575897,
+      "pdf_pages": 184,
+      "sha256": "449b419f6acbcc105b85d90fad8462a41a17e5617821fa51c99902ed7cec2204",
+      "inspection": "extracted metadata search only",
+      "native_archaeological_figures_inspected": [],
+      "no_target_file_record_recovered": true
+    },
+    "access_failures": [
+      {
+        "url": "http://digitallibrary.usc.edu/ipawg",
+        "error": "internal web-reader retrieval error; actual server status unknown"
+      },
+      {
+        "url": "https://digitallibrary.usc.edu/wbarc/",
+        "error": "web-reader HTTP403"
+      }
+    ],
+    "failures_shared_immediately": true,
+    "request_text_prepared": true,
+    "gmail_draft_created": false,
+    "outreach_sent": false,
+    "login_purchase_fee": false,
+    "source_images_redistributed": false,
+    "archive_absence_claimed": false,
+    "research_activity_delta": {
+      "primary_source_scopes": 0,
+      "cartographic_intakes": 0,
+      "bounded_feature_checks": 0,
+      "independent_field_campaigns": 0
+    },
+    "gates_outcomes_states_coordinates_unchanged": true,
+    "search_closed_pending_specific_archive_referral": true
   }
 }

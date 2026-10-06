@@ -1,5 +1,9 @@
 # Copper Scroll (3Q15): source inventory
 
+## Supplied-copy unit-source reinspection — 6 October 2026 UTC
+
+The user supplies the full CSS361-page volume, Puech2015's171-page edition, Lefkovits's full book and two combined French2006 volumes again. Their earlier use and source lineages remain as recorded below. [Current native-page scope, copy-specific mappings, hashes, rights and retained alternatives](../text/inventory_scope_2026-10-06.md#supplied-original-unit-arguments--6-october-2026-utc) supersede current target-page access dependencies, while preserving earlier failed-endpoint history. The French706-page attachment exactly matches the existing PUECH_REPORT/EDF_2006_PHOTOGRAPHS hash; the704-page attachment is a different copy of the same edition. French plate-index metadata adds no photograph/Greek inspection. No source PDFs, pages, figures or tables are redistributed. Reinspection adds zero scopes/checks/campaigns.
+
 Checked 2026-09-27 against branch `main` (commit 637a7a9, "Add files via upload").
 
 ## Summary
