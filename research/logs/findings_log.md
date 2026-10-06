@@ -343,7 +343,7 @@ See `phase3_summary.md`. The original Phase 3 maps and tables record site anchor
   - **Sixteen further words** are discussed as landmarks or positions but have no row: גל, חליא/חוליא, קרקע, ירך, שולי, אמצע, אצל, דרום, and others. They are listed in the addendum records as `NEW:`.
 - F2.20 (evidence) **ככ (Q7): the arguments on both sides.**
   - **For "silver karsh"** (10 shekels, about 71 g):
-    - Lefkovits (CSS ch. 9, pp. 139–154): later hands corrected seven ככ to ככרין, while other ככ with room to spare were left; the Elephantine papyri abbreviate the karsh as כ; totals fall from about 200 tons to under 60.
+    - Historical summary of Lefkovits (CSS ch. 9, pp. 139–154): selected ככ were corrected to ככרין while others with space remained abbreviated; an Elephantine abbreviation comparison supports karsh. **Precision correction, 6 October 2026:** directly reinspected Høgenhaven pp. 157–158/n. 62 reports at least seven occurrences (I4;II6;X10;XII1,3,7–9) and tentatively proposes another corrector. This is reported scholarly evidence, without fresh authentication of manuscript corrections or hands. The earlier about200/under60-ton summary is superseded as an established total: these pages do not verify it or supply a project quantity calculation. Lefkovits's full argument was not reaccessed in this pass; both unit branches remain.
     - Puech's own note (CSS ch. 5, p. 80 n. 56): "I now differentiate between kkr = 'talent' and the abbreviation kk (= ksp krš …)". Puech 2006 and 2015 translate "k(arsh)".
   - **For "talents":**
     - Milik, Allegro, Eshel (ch. 6), and most scholars according to Høgenhaven.
