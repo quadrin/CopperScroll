@@ -101,3 +101,30 @@ The specific main-pool model is closed as **not identifiable from available evid
 Reopen for a **named, surveyed main-basin conduit/trough junction** with a section defining its underside/aperture, observed basin boundary and ancient floor in the same phase, plus independent evidence for the selected bath function/name association; or for a documented source/analytical correction. Establish excavation reach, disturbance and detection limits before treating an absence as a negative result. Freeze the relevant reading, feature, phase, datum and decision rule before any genuinely unused observation. Regional candidate count, coverage denominator, uncertainty and unused prediction remain null.
 
 This is one distinct existing-source main-basin membership/function/contact check: **70 scoped source targets /5 cartographic intakes /79 bounded checks**, up from70/5/78. Reinspection, parallel review and archival verification add no further source, check or campaign. No Siloam outreach or fees were authorized or incurred. The sent A(C)94 inquiry remains a separate waiting dependency; this pass checked no delivery or reply.
+
+## Main-side field-section request prepared — 6 October 2026 UTC
+
+The user subsequently authorized preparing the targeted Siloam request and developing the Jericho inventory in parallel. The request below is saved as an **unsent Gmail draft**, created at 04:58:24 UTC / 21:58:24 Los Angeles, 6 October UTC / 5 October local. Reading the stored draft verified its recipient, subject and exact body, the `DRAFT` label, and absence of `SENT`, attachments or extra recipients. Independent review clarified that p.25* describes one trench near the centre of the dam’s western inner face; the saved draft was updated and its exact revised body read back. No message was sent; no drawing existence, custody, delivery or reply is inferred. This preparation leaves the closed main-pool result, metrics and earlier material/phase outcomes unchanged.
+
+**Recipient: Nahshon Szanton, `nahshons@mail.tau.ac.il`.** Tel Aviv University's official 2025/26 archaeology course syllabus, course0671-1128-01, publishes his Hebrew name and this exact address in its lecturer/contact fields. [Official institutional contact](https://ims.tau.ac.il/Tal/Syllabus/Syllabus_L.aspx?course=0671112801&year=2025). A direct URL lookup initially errored; reading the successfully retrieved source reference exposed those fields. The exact-name/topic and exact-address Gmail searches found no prior correspondence or duplicate request. This verifies the public recipient identity, rather than delivery or continued mailbox use.
+
+The original2024 report, pp.24*–25* / PDF7–8, names Szanton as co-director of the 2023 Birket excavation, permitA-9518, and investigator of the trial excavation, including a trench near the centre of the dam's western inner face. It names Vukosavović/Berko for2024 permitA-9742 and Vadim Essman for drafting/surveying (p.24* n.1). These existing original pages were native-image checked for recipient-role routing, not counted as new archaeological evidence or as proof of an L103 exposure. Szanton is the narrow primary contact for that main-basin question. Berko is a relevant co-director without a verified address in this routing pass; Greenhut–Mazor authored the2009 excavation report. Their possession of the requested field drawings remains unknown; the draft asks for a referral rather than assuming archive custody.
+
+**Subject:** Birket al-Hamra / Siloam: L103 main-pool junction and field section
+
+Exact prepared body:
+
+```text
+Dear Nahshon,
+
+I’m researching the pool-and-pipe interpretation of Copper Scroll entry 49. Greenhut and Mazor’s 2020 report shows channel L103 crossing W1 into the small receiving pool L102/L104 (Plan 1, p. 74*; conduit discussion, p. 76*). I’m trying to establish its relationship to the larger Birket al-Hamra basin.
+
+Did any excavation expose or document L103’s main-basin end, including the 2023–2024 work? If a field plan or section survives, could you point me to it or its record reference? The useful details would be the channel opening and structural underside, the main basin’s boundary and ancient floor, locus/wall labels, elevations and survey datum, and the stratigraphic contacts tying them to one phase.
+
+Your 2024 report describes a trial trench near the centre of the dam’s western inner face (p. 25*) and an unresolved wall relationship where depth and water halted excavation (p. 33*, note 3). If the relevant junction remains unexposed, a clarification of the excavation limits would also help. If another person holds the drawings or permit files, could you refer me to the appropriate custodian?
+
+Thank you,
+Alex Kesin
+```
+
+The saved MIME is simple HTML paragraphs preserving this text. Private Gmail identifiers and sender-account metadata stay outside the public research record. Sending this particular request has not been authorized. Recipient verification, source-role reinspection and drafting add zero source scopes, bounded checks, cartographic intakes or independent campaigns; no field drawing or source figure was obtained or newly redistributed.
