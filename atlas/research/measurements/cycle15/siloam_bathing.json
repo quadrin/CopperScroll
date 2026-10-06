@@ -385,5 +385,68 @@
     },
     "outreach_sent": false,
     "A_C94_dependency": "existing sent inquiry remains waiting; this pass checked no delivery or reply"
+  },
+  "survey_request_preparation": {
+    "date_utc": "2026-10-06",
+    "date_local": "2026-10-05",
+    "timezone": "America/Los_Angeles",
+    "authorization": "user requested preparation of targeted Siloam inquiry and parallel Jericho inventory; sending not authorized",
+    "recipient": {
+      "name": "Nahshon Szanton",
+      "email": "nahshons@mail.tau.ac.il",
+      "institutional_contact_source": "https://ims.tau.ac.il/Tal/Syllabus/Syllabus_L.aspx?course=0671112801&year=2025",
+      "contact_source_fields": "2025/26 course0671-1128-01 lecturer/contact",
+      "excavation_role_source": "2024 Birket reportpp24*-25*/PDF7-8;2023 co-directorA9518;trial excavation including one trench near centre of western inner dam face",
+      "role_pages_native_checked_this_pass": true,
+      "record_custody": null,
+      "mailbox_delivery_tested": false
+    },
+    "other_routing_candidates": [
+      {
+        "name": "Itamar Berko",
+        "role": "2023/2024 excavation co-director",
+        "verified_email": null,
+        "selected_as_recipient": false
+      },
+      {
+        "name": "Zvi Greenhut / Gabriel Mazor",
+        "role": "authors of the2009 excavation report published2020",
+        "selected_as_recipient": false,
+        "record_custody": null
+      },
+      {
+        "name": "Vadim Essman",
+        "role": "2024 reportp24*n1 drafting/surveying",
+        "selected_as_recipient": false,
+        "record_custody": null
+      }
+    ],
+    "relevant_email_history": "exact names, pool topic and verified address searches returned no prior correspondence or duplicate request",
+    "status": "prepared_unsent_gmail_draft",
+    "created_utc": "2026-10-06T04:58:24Z",
+    "created_local": "2026-10-05T21:58:24-07:00",
+    "subject": "Birket al-Hamra / Siloam: L103 main-pool junction and field section",
+    "body_text": "Dear Nahshon,\n\nI\u2019m researching the pool-and-pipe interpretation of Copper Scroll entry 49. Greenhut and Mazor\u2019s 2020 report shows channel L103 crossing W1 into the small receiving pool L102/L104 (Plan 1, p. 74*; conduit discussion, p. 76*). I\u2019m trying to establish its relationship to the larger Birket al-Hamra basin.\n\nDid any excavation expose or document L103\u2019s main-basin end, including the 2023\u20132024 work? If a field plan or section survives, could you point me to it or its record reference? The useful details would be the channel opening and structural underside, the main basin\u2019s boundary and ancient floor, locus/wall labels, elevations and survey datum, and the stratigraphic contacts tying them to one phase.\n\nYour 2024 report describes a trial trench near the centre of the dam\u2019s western inner face (p. 25*) and an unresolved wall relationship where depth and water halted excavation (p. 33*, note 3). If the relevant junction remains unexposed, a clarification of the excavation limits would also help. If another person holds the drawings or permit files, could you refer me to the appropriate custodian?\n\nThank you,\nAlex Kesin",
+    "mime_type": "text/html",
+    "stored_draft_verified": {
+      "recipient_subject_body_match": true,
+      "DRAFT_label": true,
+      "SENT_label": false,
+      "attachments": 0,
+      "extra_recipients": 0
+    },
+    "sent": false,
+    "drawing_survival": null,
+    "main_side_exposure": null,
+    "delivery": null,
+    "reply": null,
+    "private_gmail_identifiers_in_public_record": false,
+    "archaeological_result_changed": false,
+    "new_source_targets_delta": 0,
+    "bounded_checks_delta": 0,
+    "cartographic_assets_delta": 0,
+    "outcome_delta": 0,
+    "next_action": "sending requires explicit instruction for this reviewed draft; field evidence can reopen only under the preceding stated conditions",
+    "independent_review_precision_edit": "p25* describes one inner-dam trench near centre; revised exact MIME verified after update"
   }
 }
