@@ -1,0 +1,87 @@
+{
+  "entry": 29,
+  "feature": "J04 / A(C)94",
+  "date_utc": "2026-10-06",
+  "claim": "Exploratory two-dimensional distances from the published early-pipe terminus or its finite approach to west/east long-side traces; no identification or deposit claim.",
+  "exposure": "Chapter2 pp50–69 and Plan13 were inspected on3October; this pass reinspects those observations. No holdout or confirmatory freeze.",
+  "source": {
+    "author": "Ehud Netzer",
+    "title": "Hasmonean and Herodian Palaces at Jericho, VolumeI: Stratigraphy and Architecture",
+    "year": 2001,
+    "asset": "../../assets/plans/netzer2001-area-ac/area-ac-and-plan-access-context.pdf",
+    "sha256": "cf08871210c59848655c4c4223cfe30334fe2737068b7b533d27b2b4713b2158",
+    "plan": 13,
+    "printed_page": 52,
+    "source_viewer_page": 84,
+    "extract_page": 7,
+    "pipe_description_pages": [57, 58],
+    "control_pages": [58, 59, 60, 67, 68, 69]
+  },
+  "coordinates": {
+    "space": "Full printed-page52 raster, PyMuPDF Matrix(2,2); origin upper left, x right, y down",
+    "pdf_page_points": [588.0, 784.8],
+    "raster_pixels": [1176, 1570],
+    "geographic_crs": null,
+    "north": "Source arrow near lower-left; no page-up geographic bearing assumed",
+    "scale": {"metres": 5.0, "endpoints_px": [[458.5, 1442.5], [593.5, 1442.5]]},
+    "review": "Second reader independently inspected all four source renders; scale, pipe and contour picks accepted as approximate published-plan traces. No survey accuracy is inferred."
+  },
+  "reading_models": {
+    "numerals_cubits": [24, 27],
+    "cubit_range_m": [0.4, 0.6],
+    "local_calibration": null,
+    "assumptions": ["Jericho is restored", "from-side relationship is restored", "large means longer is a project interpretation", "northern describes the reservoir and supplies no displacement bearing", "target at a pipe junction or somewhere along the pipe is a project hypothesis", "no independent digging depth is supplied"],
+    "hydraulic_branches": [
+      {"id": "defended_partial_conduit", "status": "No preserved flow direction; supply pipe remains admissible, without identifying the reservoir."},
+      {"id": "full_collection_continuation", "status": "Conjectural wording; no identified connected collector for this pipe, so unknown."},
+      {"id": "Milik_damaged_Qe_name", "status": "No secure local feature-name association; unknown."}
+    ]
+  },
+  "pipe": {
+    "id": "early_north_wall_pipe",
+    "endpoints_px": [[503.0, 948.0], [458.0, 872.0]],
+    "endpoint_order": ["drawn_approach_terminus", "preserved_upstream_end"],
+    "reported_preserved_length_m": 3.3,
+    "identity_basis": "The diagonal trace reaches the north side near the northwest corner, approaches fromNW, and its scale length agrees with p57's3.3m. This is a prose-linked trace identification, not a labelled aperture survey.",
+    "reported_contact": "p57: pipe end found built into northern sidewall nearNW corner",
+    "drawn_terminal_is_measured_aperture_center": false,
+    "invert_m": null,
+    "surface_m": null,
+    "dated_coexistence_with_named_face": null,
+    "upstream_main_pipe_connection": null,
+    "phase": "Initial ceramic-pipe arrangement; do not transfer its terminal to later15cm channel",
+    "excluded_continuations": ["unobserved upstream route", "later channel missing south of its preserved limit", "separate southwestern channels described onp60"]
+  },
+  "wall_traces": [
+    {"id": "west_inner", "side": "west", "face_model": "inner", "endpoints_px": [[491.0, 971.0], [484.0, 1025.0]], "scope": "Northern solid-outline stub before stairs; no extension through stair area", "archaeological_face_gate": "unknown at pipe elevation"},
+    {"id": "east_inner", "side": "east", "face_model": "inner", "endpoints_px": [[709.0, 1006.0], [675.0, 1228.0]], "scope": "Finite solid interior outline; source drawing does not establish surviving face at pipe elevation", "archaeological_face_gate": "unknown at pipe elevation"},
+    {"id": "west_outer", "side": "west", "face_model": "outer", "endpoints_px": [[477.0, 955.0], [470.0, 1009.0]], "scope": "Northern dashed exterior-outline stub; uncertified face hypothesis", "archaeological_face_gate": "unknown; dashed source contour"},
+    {"id": "east_outer", "side": "east", "face_model": "outer", "endpoints_px": [[725.0, 991.0], [689.0, 1240.0]], "scope": "Finite dashed exterior outline; uncertified face hypothesis", "archaeological_face_gate": "unknown; dashed source contour"}
+  ],
+  "dimension_diagnostic": {
+    "reported_pool_dimensions_m": [8.8, 8.2],
+    "reported_wall_thickness_m": 1.0,
+    "north_inner_span_px": [[491.0, 971.0], [709.0, 1006.0]],
+    "rule": "Keep the printed scale. Proposed east-inner trace length differs from reported8.8m; contour/elevation datum and scan distortion are not independently bounded. Do not force dimensional agreement or treat the picking envelope as total archaeological uncertainty."
+  },
+  "target_sets": ["drawn_terminus_only", "entire_drawn_preserved_approach"],
+  "axes": [
+    {"id": "perpendicular_to_finite_trace", "rule": "Orthogonal foot must lie between the selected finite endpoints. Outside feet are inadmissible, not distance matches."},
+    {"id": "shortest_distance_to_finite_trace", "rule": "Minimum straight distance to the finite trace, including its endpoint; separate exploratory convention, unprescribed by entry."},
+    {"id": "conduit_chainage_from_long_side", "rule": "Unknown: early pipe contacts the north short side, with no demonstrated connection to either retained long side. Do not prepend an invented route along the wall."},
+    {"id": "other_axis_or_origin", "rule": "Unresolved: arbitrary wall-origin, slope and vertical models lack a specified ancient datum. No all-axis exclusion."}
+  ],
+  "uncertainty_envelopes": [
+    {"id": "manual", "point_disk_radius_px": 4.0, "scale_endpoint_disk_radius_px": 1.0, "basis": "Approximate8px terminal symbol and blurred contour picks in full2x raster; scale ticks about1–2px wide. Analyst visual envelope, not field-survey accuracy."},
+    {"id": "stress", "point_disk_radius_px": 8.0, "scale_endpoint_disk_radius_px": 2.0, "basis": "Doubled visual-picking envelope to expose sensitivity. Does not bound scan distortion, physical face position, phase or invert uncertainty."}
+  ],
+  "decision_rule": "At published-plan level, a distance-envelope miss requires disjointness for the entire cubit continuum. Conservative envelope overlap is possible compatibility only, not existence of a perturbed fit. Missing archaeological gates leave the entry/feature claim not identifiable. No formal outcome-ledger increment.",
+  "controls": [
+    {"id": "J05", "feature": "A(C)90", "source_pages": [67, 68, 69], "reported_dimensions_m": [8.8, 7.7], "target_sets": ["drawn_terminus_only", "entire_drawn_preserved_approach"], "numerals_cubits": [24, 27], "cubit_range_m": [0.4, 0.6], "side_face_search": "both long sides; inner/outer where recoverable", "axis_search": "same axes and picking envelopes asJ04", "terminal_px": null, "pipe_trace_px": null, "distance_results": null, "reason": "Four corner soundings, bottom unreached; channel supply is apparent, with no authenticated pipe-to-wall aperture datum; Stage4versus6 open, rim+105.40 assumed. Structural conduit/pool-corner contact is not a measured inlet."},
+    {"id": "J09", "feature": "AC44", "source_pages": [58, 59, 60], "reported_length_m": 8.8, "assumed_width_m": 8.0, "target_sets": ["drawn_terminus_only", "entire_drawn_preserved_approach"], "numerals_cubits": [24, 27], "cubit_range_m": [0.4, 0.6], "side_face_search": "both long sides; inner/outer where recoverable", "axis_search": "same axes and picking envelopes asJ04", "terminal_px": null, "pipe_trace_px": null, "distance_results": null, "reason": "Only western half survives; p59 explicitly reports no water-supply data. Stage2pipe/Stage3channel supplied by analogy; nearby overflow is inferred and lacks excavated pool-wall contact."}
+  ],
+  "comparison_scope": "Same-Plan13 nearby pools with explicit source accounts. This finite source-comparison set is not a regional inventory; the other25 J-records remain in inventory_normalization_2026-10-06.json with their own missing observations. Do not count missing control data as misses.",
+  "regional_denominator": null,
+  "unused_prediction": null,
+  "archaeological_result": "not identifiable from available evidence"
+}
