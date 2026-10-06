@@ -1,5 +1,5 @@
 {
-  "date_utc": "2026-10-04",
+  "date_utc": "2026-10-05",
   "purpose": "Source provenance, exact inspection and missing original observations for frozen seven-locus engraving-order audit.",
   "freeze_commit": "d7d3b6060dedc1d4b4182a620dcca79fc3a70ec2",
   "sources": [
@@ -53,15 +53,15 @@
       "id": "REED_WSRP1988",
       "title": "Dead Sea Scrolls Inventory Project, Fascicle2, Copper Scroll/Amman photographs",
       "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
-      "inspection": "Prior webcatalogue and attachedPDFcatalogue provenance/crosswalk only; actual1988 image files not obtained.",
+      "inspection": "Catalogue provenance previously checked; USC1988 acquired previews now inspected to bounded scope in usc1988_followup; no archival-resolution TIFF or metric geometry",
       "observation_campaign": "Bruce and Kenneth Zuckerman1988, original strips both sides, B&W/color, right/center/left rotations with top/bottom lights; some side lighting.",
       "targets": "AWS12–21 candidate cuts1–10 cover columnsI–IV; exact per-locus cut/rotation registration remains unknown. AWS22looseCut10lower-right fragment is contextual only.",
       "current_route": "https://dornsife.usc.edu/wsrp/for-scholars/",
       "collection": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6ONSR7",
       "catalogue": "https://dornsife.usc.edu/wsrp-temp/wp-content/uploads/sites/155/2023/05/Dead-Sea-Scrolls.pdf",
       "catalogue_target": "Copper Scroll text ISF_TXT_00313, catalogue viewer4",
-      "access": "Old Inscriptifact replaced by USC Digital Library. Collection HTTP403 via available retrieval; no item IDs, IIIF manifests or files recovered. Bounded route search stopped. No browser fallback, sign-in, purchase or outreach.",
-      "reuse": "WSRP permits scholarly study with publication permission from collaborating institution required. No original images republished or permissions requested.",
+      "access": "122 original cut1–10 preview JPEGs acquired on main at 1b27d5d94e78aa601d4eccafe06d51b2fc81117d; prior collection 403 is historical, not current file unavailability",
+      "reuse": "Existing acquisition rights/credit retained; no additional photo publication in this analysis",
       "attached_source": {
         "path": "/workspace/scratch/43a6d1804f3f/upload/Fascicle 2.pdf",
         "file_id": "file_00000000842081fb80b56a29bbfc309c",
@@ -94,6 +94,11 @@
         "duplicates": "p20PAM42.977–42.980 correspond to DJDXLIX/LI/LIII/LV; these copies do not provide a new lighting witness.",
         "access_scope": "Attached catalogue resolves metadata access only. Original-image collection retrieval failure from preceding audit persists; no repeat retrieval attempted. Current museum/contact statements are historical catalogue claims, not verified current facts.",
         "precise_locus_registration": "unresolved"
+      },
+      "prior_access_history": {
+        "inspection": "Prior webcatalogue and attachedPDFcatalogue provenance/crosswalk only; actual1988 image files not obtained.",
+        "access": "Old Inscriptifact replaced by USC Digital Library. Collection HTTP403 via available retrieval; no item IDs, IIIF manifests or files recovered. Bounded route search stopped. No browser fallback, sign-in, purchase or outreach.",
+        "reuse": "WSRP permits scholarly study with publication permission from collaborating institution required. No original images republished or permissions requested."
       }
     },
     {
@@ -1187,5 +1192,2080 @@
       }
     ],
     "scope": "Identity and source-gap classification only; no renewed Jericho test."
+  },
+  "usc1988_followup": {
+    "date_utc": "2026-10-05",
+    "prior_result_commit": "409febef6f436aaf44269c14e0884b9f01b750f7",
+    "source_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+    "claim": "Seven-locus original-preview registration and opposed-light coverage under unchanged frozen criteria",
+    "exposure": "Exploratory; newly acquired reproductions of the previously specified 1988 campaign, not unseen predictions",
+    "acquisition_verified": {
+      "files": 122,
+      "recto": 100,
+      "verso": 22,
+      "height_px": 1000,
+      "width_px_range": [
+        482,
+        799
+      ],
+      "bytes": 8275644,
+      "hashes_dimensions_decoding": "all 122 matched acquisition manifest; no byte duplicates",
+      "archive_manifest_url": "https://github.com/quadrin/CopperScroll/blob/1b27d5d94e78aa601d4eccafe06d51b2fc81117d/research/sources/usc_copper_scroll_images/cuts_01_10_preview_manifest.csv"
+    },
+    "visual_scope": {
+      "whole_strip_bw_rectos": 49,
+      "additional_context_frames": 5,
+      "total_distinct_frames": 54,
+      "remaining_68_frames": "acquisition/metadata verification only in this follow-up; not a complete target image review",
+      "readers": "Three separate column readers completed the 49 BW rectos; integrator compared all 50 BW frames in contact sheets and selected native-preview-resolution frames. This is not two full native-frame independent reviews of all 54 photographs."
+    },
+    "rotation_lighting_correction": "Reed Fascicle2 viewer9 distinguishes right/center/left rotations from top/bottom illumination. Three rotations times two lights are not six illumination azimuths. Literal catalog labels preserved; descriptive index light-direction guesses are not calibration. Handwritten cards can conflict with titles.",
+    "registration_summary": "No authenticated Greek ROI at any of the seven loci. Cut labels establish candidate families only; neighboring Hebrew, adjacent lines and continuous physical anchors do not yet secure target correspondence. Multiple DJD panels may depict angular portions of a curved cut; panel-count differences do not prove missing cuts.",
+    "physical_observations": [
+      "Cut4 top/bottom UC15246882/UC15245664 share lower diagonal fracture and show changing rim highlights; real relighting coverage exists without Greek registration.",
+      "Cut3 angular views change the top notch into an edge indentation; do not reuse pixel boxes across rotations.",
+      "Cut7 upper notch/fracture and Cut8 low opening persist across labelled light pairs, with changed highlight/shadow. No target Greek-parent registration established."
+    ],
+    "context_anchor": {
+      "id": "UC15245492",
+      "bbox_xyxy_half_open": [
+        132,
+        109,
+        292,
+        382
+      ],
+      "native_px": [
+        548,
+        1000
+      ],
+      "label": "cut9 upper void, physical context only",
+      "confidence": "candidate correspondence to edition IV central loss; not authenticated Greek registration",
+      "source_coordinate_convention": "native image x right/y down; no rotation or mirror"
+    },
+    "orientation_issue": "Cut10 catalog recto ridge/punctures lie at image right whereas DJD IV presents a margin at left. Curved angular coverage, side and orientation correspondence remain unresolved; no demonstrated catalog error or authorized authoritative mirror.",
+    "accepted_authentic_crossings": 0,
+    "actual_crossing_count": null,
+    "metric_depth_mm": null,
+    "intervening_event": "unestablished",
+    "closure": "not identifiable from available evidence at all seven loci; no rejection of later engraving",
+    "reopen_condition": "Labeled original column reconstruction or archival image mapping linking edition line ends and adjacent Hebrew to curved cut/view faces; then archival-resolution top/bottom photographs where groove parents require it, with original-surface/conservation provenance. Calibrated original geometry needed for metric depth.",
+    "rights": "Existing user-acquired images remain at the specified main commit. WSRP educational-use/publish-permission statement and source credit retained. No new page images, source photo crops, mirrors or reconstructions published.",
+    "frame_provenance_record": "deep_analysis/engraving_order_results.json#usc1988_followup.frames"
+  },
+  "mapping_followup": {
+    "date_utc": "2026-10-05",
+    "prior_result_commit": "5c9c4af0deaddd408033623a9fd9662f8462ea9e",
+    "claim": "Exploratory original-column mapping and orientation follow-up; engraving chronology remains not identifiable",
+    "exposure": "Known reconstruction reinspection, newly inspected chapter-methods scope and early original-photo reproductions; no holdout or unseen prediction",
+    "css_chapter": {
+      "title": "When Images Meet: The Potential of Photographic and Computer Imaging Technology for the Study of the Copper Scroll",
+      "authors": [
+        "Marilyn J. Lundberg",
+        "Bruce Zuckerman"
+      ],
+      "volume": "Copper Scroll Studies, supplied Academic Paperback 2004 edition",
+      "printed_pages": [
+        45,
+        57
+      ],
+      "viewer_pages": [
+        62,
+        74
+      ],
+      "input_sha256": "590307dfb3c966b8b80d52de6a34602cc689751862844c81a965a9c2d998290f",
+      "inspection_scope": "Full chapter text; source figures at pp. 51–52 revisited. Newly inspected methods/archive/distribution pages expand prior pp. 51–53 scope.",
+      "methods": "pp. 46–47: original curved segments in a half-cylinder cradle; 4×5 film, generally left/center/right rotations, top/bottom lighting. Article reports 148 photographs in its described series; this is not the USC catalogue count of 294.",
+      "early_archive": "pp. 48–49: Allegro opening/cutting/cleaning and original-segment photographs; earlier photographs can retain surface before later losses.",
+      "figures": [
+        {
+          "figure": "4.2–4.4",
+          "printed_page": 51,
+          "viewer_page": 68,
+          "description": "Cut 10 lower-right fragments, digital restoration and earlier intact Allegro view; projections/condition differ."
+        },
+        {
+          "figure": "4.5",
+          "printed_page": 52,
+          "viewer_page": 69,
+          "description": "Flattest portions from four viewing rotations of cut 15 joined into a derivative composite."
+        },
+        {
+          "figure": "4.6",
+          "printed_page": 52,
+          "viewer_page": 69,
+          "description": "Composites of cuts 5 and 6 joined to form column II.",
+          "embedded_native_px": [
+            152,
+            259
+          ],
+          "pdf_xref": 229,
+          "asset_sha256": "e55d34e2ff1bedcc019ac764572ff320de1ab6c931d5ee561081684d0bc070e2",
+          "quality_limit": "The large 1282×2157 page image is a one-bit text/background layer; it is not a hidden high-resolution Figure 4.6. Render enlargement adds no source detail.",
+          "archive_status": "Metadata retained; publication figure not uploaded. No exact Greek ROI authenticated."
+        }
+      ],
+      "resolution_notes": "p. 50 note 5 contrasts publication BW prints with original high-resolution digital color images; p. 56 note 8 describes CD-ROM availability at publication time, not verified current availability.",
+      "request_target": "Original high-resolution Figure 4.6 color composite AND component-image identifiers/placement map or masks tying column II to original cuts 5–6. Sharper composite alone does not authenticate raw-frame target boxes."
+    },
+    "allegro_archive": {
+      "provenance_url": "https://dqcaas.com/photographic-collections/university-of-manchester-museum-john-allegro-images/",
+      "monochrome_gallery_url": "https://dqcaas.com/allegro-manchester-copper-scroll/",
+      "slide_gallery_url": "https://dqcaas.com/photographic-collections/university-of-manchester-museum-john-allegro-images/allegro-slides-copper-scroll/",
+      "gallery_link_inventory": {
+        "monochrome": 296,
+        "slides": 109,
+        "scope": "HTML image-link inventory only; not 405 image inspections; cross-gallery observation duplication not assessed"
+      },
+      "visual_scope": {
+        "native_previews": 8,
+        "width_px": 720,
+        "height_px_range": [
+          576,
+          583
+        ],
+        "reader": "Integrator; selected originals, not a complete archive review",
+        "additional_reader": "Independent II/IV reader checked C.10a.1 and C.10.1 against UC15245201 native/180; not an independent review of all eight."
+      },
+      "frames": [
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-1a-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.1a.1.jpg",
+          "sha256": "9e7bd26d89a2ed850f18a7f044369e8b7dc5b25fb1be7ad59b731ea89f3d88ed",
+          "bytes": 35278,
+          "native_px": [
+            720,
+            579
+          ],
+          "status": "retrieved",
+          "archive_id": "c.1a.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-4a-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.4a.1.jpg",
+          "sha256": "9ee88a9df9847b135677caa120e350c5402ebf189800ef7dfeb3282f8bde1471",
+          "bytes": 29797,
+          "native_px": [
+            720,
+            576
+          ],
+          "status": "retrieved",
+          "archive_id": "c.4a.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-1-2/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.1-1.jpg",
+          "sha256": "3c4d5b53430065ad56baa2e889140de6dbac94f6cd8b0889a9a0964c196d317c",
+          "bytes": 33889,
+          "native_px": [
+            720,
+            576
+          ],
+          "status": "retrieved",
+          "archive_id": "c.6a.1-1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-8a-1-2/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.8a.1-1.jpg",
+          "sha256": "fa7452557cea3320d25f1ec1321c175e8fc387744de6b88b5224c11b01d0e81b",
+          "bytes": 48128,
+          "native_px": [
+            720,
+            583
+          ],
+          "status": "retrieved",
+          "archive_id": "c.8a.1-1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-10a-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.10a.1.jpg",
+          "sha256": "3216e3ea81f0605ee3df3c8bf48cf1496309927c2c9cba64c5dee5a9b49cae34",
+          "bytes": 37534,
+          "native_px": [
+            720,
+            578
+          ],
+          "status": "retrieved",
+          "archive_id": "c.10a.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-10-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.10.1.jpg",
+          "sha256": "33bd8b2aee7816100bc60dc95238c999f548e49fa46787d8532246cf99fe3dfb",
+          "bytes": 35665,
+          "native_px": [
+            720,
+            576
+          ],
+          "status": "retrieved",
+          "archive_id": "c.10.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-2-4-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.2-4.1-.jpg",
+          "sha256": "946d916bd8882deb95f9bf831259b45bf8704972e0cd59a20610515f35778ad5",
+          "bytes": 57387,
+          "native_px": [
+            720,
+            576
+          ],
+          "status": "retrieved",
+          "archive_id": "c.2-4.1-",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        },
+        {
+          "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-8-1/",
+          "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-8.1.jpg",
+          "sha256": "c0b474c3364bc2c4fce9b0b7e2d77d668e823d141df2b3aac66ff873cccb978c",
+          "bytes": 48657,
+          "native_px": [
+            720,
+            578
+          ],
+          "status": "retrieved",
+          "archive_id": "c.6-8.1",
+          "inspection": "Integrator inspected native downloaded preview; not an archival-resolution scan"
+        }
+      ],
+      "observations": "Numbered handheld original strips 1, 4, 6, 8, 10 and a mounted cut 10, plus grouped 2–4 and 6–8 views. Earlier cut 10 views show punctured margin at image left and lettering at right; cut 8 low keyhole supports native rather than blanket-180 orientation.",
+      "rights": "Archive permits low-resolution teaching/noncommercial use subject to acknowledgement of Allegro-estate permissions and courtesy of Manchester Museum, University of Manchester. No open licence inferred; source images not republished in this follow-up.",
+      "high_resolution_contact": "museum@manchester.ac.uk",
+      "outreach": "Original 5 October request to collections@manchester.ac.uk permanently bounced. Same study-scan/referral request rerouted to museum@manchester.ac.uk on 5 October; Gmail SENT and recipient headers verified. Delivery/reply not yet confirmed.",
+      "request_target": "Archival-resolution originals and catalogue/cut identification for C.10a.1 and C.10.1 first, then needed column-II/other-cut photographs; retain lighting, treatment and orientation provenance.",
+      "previous_high_resolution_contact": {
+        "address": "collections@manchester.ac.uk",
+        "source": "Archive's historical contact",
+        "status": "Permanent delivery failure: unrouteable address; discovered on 5 October 2026 thread review"
+      }
+    },
+    "orientation_reassessment": {
+      "prior_limitation": "The first pass did not systematically test 180-degree alternatives. Later global-rotation commentary was premature and corrected.",
+      "cut10": "180-degree rotation remains an unverified proposed comparison transform. Independent reader compared C.10a.1/C.10.1 with UC15245201 native/180 displays: clipped ends, narrow curved visible faces and nonunique contour/puncture correspondences prevent determining orientation or physical side. Left margin/right lettering alone cannot discriminate viewing rotation or another face. IV2 and adjacent Hebrew remain unregistered.",
+      "other_cuts": "Readers revisited 13 BW cuts1–4 and 12 BW cuts7–8 with explicit 180-degree alternatives. These do not justify applying cut10 rotation globally; cut7/8 landmarks favor native orientation. Card position alone is not a text-axis datum.",
+      "transforms": "View-only rotations are exploratory aids; no transformed source image or target ROI published."
+    },
+    "result": {
+      "exact_greek_rois": null,
+      "authenticated_crossings": null,
+      "local_order": "unknown at all seven loci",
+      "metric_depth": null,
+      "distinct_later_episode": "not identifiable from available evidence",
+      "surviving_alternatives": [
+        "same-session",
+        "distinct later episode"
+      ],
+      "frozen_protocol_changed": false
+    },
+    "bookkeeping": {
+      "source_scopes_before": 62,
+      "source_scopes_added": 2,
+      "added_scopes": [
+        "CSS imaging chapter methods/archive/distribution completion beyond earlier figure scope",
+        "Allegro archive provenance and eight selected early original-photo previews"
+      ],
+      "source_scopes_after": 64,
+      "bounded_checks_before": 67,
+      "bounded_checks_added": 1,
+      "added_check": "Combined reconstruction/early-original orientation and registration check",
+      "bounded_checks_after": 68,
+      "cartographic_intakes": 5,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_coordinate_changes": false,
+      "independence": "Reproductions and methods are not independent chronology confirmations; archive dates and distinct original campaigns not enumerated"
+    },
+    "next_action": "Obtain high-resolution WSRP Figure 4.6 with component crosswalk; use Manchester early-original cut10 records for a bounded orientation/condition bridge. Reopen engraving order only with authenticated original target parents or calibrated geometry.",
+    "outreach_followup": {
+      "date_utc": "2026-10-05",
+      "user_authorized": "Continue. Send emails",
+      "requests": [
+        {
+          "to": "collections@manchester.ac.uk",
+          "subject": "Allegro Copper Scroll photographs: study scans of C.10a.1 and C.10.1",
+          "status": "failed: permanent delivery error, unrouteable address",
+          "verification": "Earlier SENT indicated submission only; subsequent same-thread delivery-status report confirms failure",
+          "recipient_source": "https://dqcaas.com/photographic-collections/university-of-manchester-museum-john-allegro-images/"
+        },
+        {
+          "to": "bzuckerm@usc.edu",
+          "subject": "Copper Scroll Studies Fig. 4.6: column II composite and source-image mapping",
+          "status": "sent; awaiting response",
+          "verification": "Gmail returned SENT; sent-message headers checked",
+          "recipient_source": "https://today.usc.edu/profile/bruce-zuckerman/",
+          "scope": "Original high-resolution Fig.4.6 and component IDs/placement map/masks; current custodian referral if needed. Acknowledges earlier School of Religion referral of master-file requests to USC Libraries."
+        },
+        {
+          "to": "museum@manchester.ac.uk",
+          "subject": "Allegro Copper Scroll photographs: study scans and archive contact",
+          "status": "sent; delivery and reply not yet confirmed",
+          "verification": "Gmail SENT and new-thread To/subject/body checked",
+          "recipient_source": "https://www.museum.manchester.ac.uk/about/staff-list/",
+          "scope": "Reroute original C.10a.1/C.10.1 study-scan request to archive custodian; asks terms and fees before processing"
+        }
+      ],
+      "limits": "No file acquisition or new evidence inspection; no fee authorized; all source/check/outcome counts unchanged. Private message IDs and mailbox contents omitted from public record.",
+      "delivery_status_review": {
+        "date_utc": "2026-10-05",
+        "usc": "Original Zuckerman thread still contains only sent request; no response observed",
+        "repository": "PR10 and PR11 heads unchanged at review",
+        "bookkeeping": "Administrative correction/reroute only; totals remain66 source scopes/5 cartographic intakes/72 bounded checks"
+      }
+    }
+  },
+  "cuts56_crosswalk_followup": {
+    "date_utc": "2026-10-05",
+    "prior_result_commit": "47368ff2efad4b372d830cd4369974f1d5203188",
+    "claim": "Exploratory physical-strip/individual-frame crosswalk between Allegro cuts5–6 and 1988 WSRP originals; Greek edition-line registration remains unresolved",
+    "trigger": "User authorized remaining Allegro cuts5–6 visual map while original reconstruction requests are pending",
+    "exposure": "Known originals in a newly expanded archive-photo scope; exploratory and not a holdout",
+    "source_gallery_url": "https://dqcaas.com/allegro-manchester-copper-scroll/",
+    "acquisition": {
+      "files": 49,
+      "byte_distinct": 49,
+      "all_retrieved_decoded_hashed": true,
+      "source_photo_compositions": 27,
+      "cut5": 18,
+      "cut6": 4,
+      "grouped_cut6_7_or6_8": 5,
+      "previously_inspected_compositions": 2,
+      "newly_inspected_compositions": 25,
+      "prior_overlap": [
+        "C.6a.1",
+        "C.6–8.1"
+      ],
+      "duplicate_derivative_pairs": 22,
+      "max_pair_mean_absolute_channel_difference_0_255": 0.7410432312728673,
+      "dedup_limit": "Paired N.jpg/N-1.jpg have identical dimensions and the same pose/holder/background, with small JPEG pixel differences; byte distinctness does not mean different photographs. Five group views are not automatically independent exposures/campaigns."
+    },
+    "source_files": [
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-1-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.1-1.jpg",
+        "sha256": "3c4d5b53430065ad56baa2e889140de6dbac94f6cd8b0889a9a0964c196d317c",
+        "bytes": 33889,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.1-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-2-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.2-1.jpg",
+        "sha256": "c81726853dc9abac97f69b78899bab849a0a915104d9b5217c6a60b21c6ce9a3",
+        "bytes": 34192,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.2-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-3-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.3-1.jpg",
+        "sha256": "b485950af4729f835a4b5f2fac62f4292f34c45ae63f91e5adeced3c8c32fa52",
+        "bytes": 41072,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.3-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-4-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.4-1.jpg",
+        "sha256": "ec01f441e25862d7c76ec31b502513999090356be4df0c36dfbf44ad2149ed6f",
+        "bytes": 39947,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.4-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-1-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.1-1.jpg",
+        "sha256": "418f338d376c163bf41c65f857e34deaa88b52d93f4596451ab30b501af55df4",
+        "bytes": 35477,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.1-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-2-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.2-1.jpg",
+        "sha256": "ffb9c6e91c924ea9934c57d2922deae3098a134618b9b544eb88ad3386bbc08d",
+        "bytes": 34327,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.2-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-3-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.3-1.jpg",
+        "sha256": "1dc403117aea7ac7e47bf3d26b3cf8d44e05ed47643f3527d29cc613b858ceed",
+        "bytes": 40991,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.3-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-4-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.4-1.jpg",
+        "sha256": "fdd6d467a3237fdeda241d89bf0051df6ad01178b6d861bd4f39a29fb6c03597",
+        "bytes": 37749,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.4-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-5-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.5-1.jpg",
+        "sha256": "c8cf511996cc4b9cfe84919813a9ce3364f92ebfcdecfa13bfaa6a62018007e1",
+        "bytes": 39073,
+        "native_px": [
+          720,
+          578
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.5-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-6-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.6-1.jpg",
+        "sha256": "dcfd59d89a8628349b72acf0bd71810bef6e854dfe9da5a74d77f7b23a15ac29",
+        "bytes": 45437,
+        "native_px": [
+          736,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.6-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-7-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.7-1.jpg",
+        "sha256": "79a051c0c6f69491360d49ba0d23ff8f9870503b3ef9242d8cbcd89f3168d7be",
+        "bytes": 41195,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.7-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-8-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.8-1.jpg",
+        "sha256": "0bef9653e72d446295b976a97247bae18deef09a83914f81af354957ca496a88",
+        "bytes": 30764,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.8-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-9-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.9-1.jpg",
+        "sha256": "ac335976ef404064497bfc014ba19e4453194d8e4fcb77ffedf305fa4650061c",
+        "bytes": 33400,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.9-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-10-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.10-1.jpg",
+        "sha256": "fd38d1d11f6e7fd1c96906802a1c65fee29524f5a1a14c2928e49d81e02d9893",
+        "bytes": 27190,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.10-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-11-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.11-1.jpg",
+        "sha256": "7086d5940c3c1e8eafa00e9810be9fe007c1d4e1541768b63c8b5ac9f4b4e19a",
+        "bytes": 30632,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.11-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-12-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.12-1.jpg",
+        "sha256": "5af39c17b072a6493b0f1b837ae158088afeed0964865fef2a28d99667e815d4",
+        "bytes": 34530,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.12-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-13-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.13-1.jpg",
+        "sha256": "8875e4415187523183f543b056b8d4a0a3b3750df52f1f4db484c79e07ef64b9",
+        "bytes": 28140,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.13-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-14-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.14-1.jpg",
+        "sha256": "c8ae73e4fc0cf563b05049ccc8c8c240695f90d7945ed18988dfdd076c8ca254",
+        "bytes": 35218,
+        "native_px": [
+          832,
+          602
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.14-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-15-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.15-1.jpg",
+        "sha256": "15351872ffb9a6db7ddab1100487606e31491add6b0c1e6746a6dc63c2ef3d01",
+        "bytes": 29746,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.15-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-16-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.16-1.jpg",
+        "sha256": "b13650a3c043124a4bf78259a99a85c13d875957c6149f346ee593b036d9d54a",
+        "bytes": 30624,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.16-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-17-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.17-1.jpg",
+        "sha256": "aaf336b356b442dc281fa738f352e8d067bdba8e47010e94b7769382d12e9281",
+        "bytes": 34249,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.17-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-18-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.18-1.jpg",
+        "sha256": "a0d2c3b7b466c380777dcc3a745b3a8579ac5f48c45f0e7733468de2e42cb856",
+        "bytes": 32470,
+        "native_px": [
+          720,
+          575
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.18-1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-1/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.1.jpg",
+        "sha256": "5518737bc86895d9d41e898dd85911313fc0a57f3caabc82affd187594bb7403",
+        "bytes": 35791,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.2.jpg",
+        "sha256": "3bf3224217ed9fd93d9de5c00729af7c100ba9950a515b7bf8482e8ad99c7384",
+        "bytes": 34555,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.2.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-3/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.3.jpg",
+        "sha256": "9de79831e9d31226e23bc91176c04766056b93f47b4789cbaaa6893d357f66ca",
+        "bytes": 40996,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.3.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-4/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.4.jpg",
+        "sha256": "e13fd6f4869d820f8473a8d10b696eb35df8082b9a0d725171bfe9c70b617960",
+        "bytes": 37983,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.4.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-5/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.5.jpg",
+        "sha256": "4df9387348c0eb7bd19159e1ee1f270f7962792b05d5a2a0044079ff03beca6b",
+        "bytes": 39459,
+        "native_px": [
+          720,
+          578
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.5.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-6/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.6.jpg",
+        "sha256": "58c751fafc52b252ac572f1e4cebca9cc33a438d5e51f6dfc96de7e7c77a47b1",
+        "bytes": 45796,
+        "native_px": [
+          736,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.6.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-7/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.7.jpg",
+        "sha256": "eaabae1328691670d04d2ac089324476f527c628500a2620389dd1ed51de885f",
+        "bytes": 41558,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.7.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-8/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.8.jpg",
+        "sha256": "8d86cdec71464e69a4638b0782e6d01942281b04af51b736400ce97e0ab08772",
+        "bytes": 31018,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.8.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-9/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.9.jpg",
+        "sha256": "ab6345412f0a2740b7473d38f4cbe58d22035cd16a915d37169b29fe431a8ae0",
+        "bytes": 33552,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.9.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-10/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.10.jpg",
+        "sha256": "5d9d6d5aacb5dc07323a8471e5527d6cf1d818b11a4216937fb9620556300090",
+        "bytes": 27193,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.10.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-11/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.11.jpg",
+        "sha256": "1a4ed0e71839ccf92ef65763e498a42bea7c33947dc8ec548bc6b9ac5c9be0d2",
+        "bytes": 30930,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.11.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-12/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.12.jpg",
+        "sha256": "0d01ec56f4001cb9cb587a06aac154940131f21ef7c6f701a37ad823d3ff5e35",
+        "bytes": 34477,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.12.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-13/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.13.jpg",
+        "sha256": "384e1deae07a9f59cf9ec8f2c3314b9ea339e31154cfa9af0476d20066bcf8fc",
+        "bytes": 28303,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.13.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-14/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.14.jpg",
+        "sha256": "1e250a4008f54ee0fcb7e891752eed472ba6b86a7a745ed2f225d858110f9597",
+        "bytes": 35257,
+        "native_px": [
+          832,
+          602
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.14.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-15/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.15.jpg",
+        "sha256": "e3920562e8ec9ad7914a4dcc7c704c59ee5bf7b06c2fa3e2aa8622e6bab79b20",
+        "bytes": 29713,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.15.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-16/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.16.jpg",
+        "sha256": "60d1a0b2afee048606d781ac486401e03cabc5b45d9da7b5d3e227c8cedc1a40",
+        "bytes": 30763,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.16.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-17/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.17.jpg",
+        "sha256": "947d8731e64f580f0e1ea2295466c1ec0934075aa84fea49179da9f1abeb3acc",
+        "bytes": 34299,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.17.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-5a-18/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.5a.18.jpg",
+        "sha256": "fa0573a43fda45956cabe4e2baa4ad641d94d66bd9d39c6aa56b31865fd9b3cc",
+        "bytes": 32509,
+        "native_px": [
+          720,
+          575
+        ],
+        "status": "retrieved",
+        "filename": "c.5a.18.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-7-1/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-7.1.jpg",
+        "sha256": "38ac233038ac9af619c4687ae15e6a841d3a1f38b788c9d5bf01013f8382dfbd",
+        "bytes": 54046,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6-7.1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-7-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-7.2.jpg",
+        "sha256": "c2db153d223ccf7d801f6e8390abf8f2c44929c7b8145d358a482b46db87f053",
+        "bytes": 50285,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6-7.2.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-8-1/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-8.1.jpg",
+        "sha256": "c0b474c3364bc2c4fce9b0b7e2d77d668e823d141df2b3aac66ff873cccb978c",
+        "bytes": 48657,
+        "native_px": [
+          720,
+          578
+        ],
+        "status": "retrieved",
+        "filename": "c.6-8.1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-8-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-8.2.jpg",
+        "sha256": "b77122ed02058458fe97e983b679c6740772af00252c795293c9b2253f023170",
+        "bytes": 46499,
+        "native_px": [
+          720,
+          577
+        ],
+        "status": "retrieved",
+        "filename": "c.6-8.2.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6-8-3/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6-8.3.jpg",
+        "sha256": "51b206e3c43073eb7cbcc64e23363259f0c957a4ebdb86395199d28757391f1d",
+        "bytes": 52275,
+        "native_px": [
+          720,
+          602
+        ],
+        "status": "retrieved",
+        "filename": "c.6-8.3.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-1/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.1.jpg",
+        "sha256": "213833ba30c200ada99f7c74f3aa8c02d7844d66a67522cbacb6926973acb786",
+        "bytes": 34295,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.1.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-2/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.2.jpg",
+        "sha256": "65abdcf8da9d46baa4d304b3d43cb992eefd5d805d3f134f08dc64cf38b85552",
+        "bytes": 34411,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.2.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-3/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.3.jpg",
+        "sha256": "a27373351793e393e1d9dbdb6e512f585d2c375af46480b5925753e090b43898",
+        "bytes": 41459,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.3.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      },
+      {
+        "item_url": "https://dqcaas.com/allegro-manchester-copper-scroll/c-6a-4/",
+        "image_url": "https://dqcaas.com/wp-content/uploads/2019/08/c.6a.4.jpg",
+        "sha256": "efd8d51d65cb2ea4a51c3e0c7bd39d10bd29f0a8258eeadeb3932a9caf2faa4e",
+        "bytes": 40336,
+        "native_px": [
+          720,
+          576
+        ],
+        "status": "retrieved",
+        "filename": "c.6a.4.jpg",
+        "inspection": "Download/hash/dimensions verified. Composition overview across 27 source photographs; same-photo derivative pairs do not add an independent visual observation."
+      }
+    ],
+    "same_photo_derivative_pairs": [
+      {
+        "catalogue_photo": "C.5a.1",
+        "files": [
+          "c.5a.1.jpg",
+          "c.5a.1-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3585018293857115,
+          0.3567061428846524,
+          0.5999109378008858
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.2",
+        "files": [
+          "c.5a.2.jpg",
+          "c.5a.2-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.340943287037037,
+          0.3601466049382716,
+          0.7357253086419753
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.3",
+        "files": [
+          "c.5a.3.jpg",
+          "c.5a.3-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.40614047756595417,
+          0.41134941267090314,
+          0.7410432312728673
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.4",
+        "files": [
+          "c.5a.4.jpg",
+          "c.5a.4-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3363301559792028,
+          0.3617273252455228,
+          0.6432120161756211
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.5",
+        "files": [
+          "c.5a.5.jpg",
+          "c.5a.5-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.378263168012303,
+          0.38027441368704346,
+          0.6402897923875432
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.6",
+        "files": [
+          "c.5a.6.jpg",
+          "c.5a.6-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.41959871301328505,
+          0.43264785250603865,
+          0.7166624207427537
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.7",
+        "files": [
+          "c.5a.7.jpg",
+          "c.5a.7-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3923526863084922,
+          0.40789765068361256,
+          0.7057770075101097
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.8",
+        "files": [
+          "c.5a.8.jpg",
+          "c.5a.8-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3146291473765432,
+          0.3199821566358025,
+          0.5579716435185185
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.9",
+        "files": [
+          "c.5a.9.jpg",
+          "c.5a.9-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.31494984567901235,
+          0.3150077160493827,
+          0.5795090663580247
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.10",
+        "files": [
+          "c.5a.10.jpg",
+          "c.5a.10-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.2644121334876543,
+          0.274438175154321,
+          0.5323302469135802
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.11",
+        "files": [
+          "c.5a.11.jpg",
+          "c.5a.11-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3079668209876543,
+          0.3275993441358025,
+          0.6152681327160494
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.12",
+        "files": [
+          "c.5a.12.jpg",
+          "c.5a.12-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3700086805555556,
+          0.3804952739197531,
+          0.6629075038580247
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.13",
+        "files": [
+          "c.5a.13.jpg",
+          "c.5a.13-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.29130979938271606,
+          0.26243248456790125,
+          0.5511646412037037
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.14",
+        "files": [
+          "c.5a.14.jpg",
+          "c.5a.14-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.30440598645540506,
+          0.3083431829798109,
+          0.46662167774086377
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.15",
+        "files": [
+          "c.5a.15.jpg",
+          "c.5a.15-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.27328559027777777,
+          0.27717255015432096,
+          0.4945891203703704
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.16",
+        "files": [
+          "c.5a.16.jpg",
+          "c.5a.16-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3280213155864197,
+          0.3282431520061728,
+          0.6110001929012345
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.17",
+        "files": [
+          "c.5a.17.jpg",
+          "c.5a.17-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.36986400462962965,
+          0.3502242476851852,
+          0.5637080439814814
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.5a.18",
+        "files": [
+          "c.5a.18.jpg",
+          "c.5a.18-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.33244202898550723,
+          0.33706280193236715,
+          0.6290096618357488
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.6a.1",
+        "files": [
+          "c.6a.1.jpg",
+          "c.6a.1-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.37277440200617284,
+          0.3450520833333333,
+          0.6616102430555556
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.6a.2",
+        "files": [
+          "c.6a.2.jpg",
+          "c.6a.2-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.33977864583333334,
+          0.3379195601851852,
+          0.6400655864197531
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.6a.3",
+        "files": [
+          "c.6a.3.jpg",
+          "c.6a.3-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3803240740740741,
+          0.38491753472222223,
+          0.6779031635802469
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      },
+      {
+        "catalogue_photo": "C.6a.4",
+        "files": [
+          "c.6a.4.jpg",
+          "c.6a.4-1.jpg"
+        ],
+        "mean_abs_rgb_difference_0_255": [
+          0.3580753279320988,
+          0.3626350308641975,
+          0.6282021604938272
+        ],
+        "same_photographic_composition": "same holder/background/strip pose; two JPEG derivatives, not independent observations"
+      }
+    ],
+    "usc_comparison_frames": [
+      {
+        "id": "UC15246880",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto rt top light, b&w neg",
+        "catalog_rotation_light_label": "rt top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S67THOQ",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246880.jpg",
+        "sha256": "4e49a4a4df7dbda1fbca00dc2b911a07e7c2afe7da6637ad11128f557252016e",
+        "width_px": 638,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246871",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto rt bot light, b&w neg",
+        "catalog_rotation_light_label": "rt bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S67U829",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246871.jpg",
+        "sha256": "5c3ac307852ae8cc163beef3f6f8694e5df9dae1db382572105e589210f9b42c",
+        "width_px": 658,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246859",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto rt bot light, b&w neg",
+        "catalog_rotation_light_label": "rt bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S67U7U7",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246859.jpg",
+        "sha256": "b6bacb75760aa36488df551ed1811f42b8a5a1c90da09217850d8298be0c85f9",
+        "width_px": 585,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246588",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto rt top light, b&w neg",
+        "catalog_rotation_light_label": "rt top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S679F_O",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246588.jpg",
+        "sha256": "1c9902bde44c76d755ea4a372f7f5bed2f52a14231f7eda9c5ae0dd249830a43",
+        "width_px": 587,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246560",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto lft bot light, b&w neg",
+        "catalog_rotation_light_label": "lft bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y19FS",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246560.jpg",
+        "sha256": "a3381787c048ba33e27217dd7ac30436462e0b6fda4a09161d6dea28ac2c2f8a",
+        "width_px": 616,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246358",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto lft top light, b&w neg",
+        "catalog_rotation_light_label": "lft top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y1KN6",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246358.jpg",
+        "sha256": "534532ec9e6a22b9b23a792503e5471dc8d07683a82cefb9fe12ac078802a7b5",
+        "width_px": 615,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246329",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto ctr top light, b&w neg",
+        "catalog_rotation_light_label": "ctr top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6YQPTZ",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246329.jpg",
+        "sha256": "07e5bcdd345217cdd38d74ee9c5867f47b2081db89dbd7a3af0c99301e8f36d6",
+        "width_px": 643,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246013",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto lft top light, b&w neg",
+        "catalog_rotation_light_label": "lft top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y35XV",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246013.jpg",
+        "sha256": "3ff9e09af07ddf3466f0affccdf9286bcffadc87520311ca8420064e6b32e376",
+        "width_px": 606,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246009",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto ctr bot light, b&w neg",
+        "catalog_rotation_light_label": "ctr bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6YSEJY",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246009.jpg",
+        "sha256": "f6a71c74db25c6a7fd234e2b44d817ed179f4298193f83b24738ad2de5ac3555",
+        "width_px": 612,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15246010",
+        "cut": 6,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 6 Recto ctr bot light, b&w neg",
+        "catalog_rotation_light_label": "ctr bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6YSB83",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15246010.jpg",
+        "sha256": "031b2e301aa5ba0d27148a54564d33dc9b4211c81c5003db0faabf5c55ca6678",
+        "width_px": 643,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15245493",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto ctr top light, b&w neg",
+        "catalog_rotation_light_label": "ctr top light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y86WM",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15245493.jpg",
+        "sha256": "32366d957ca36175634406843422004de2a0210995b0dd9530a739cef105e535",
+        "width_px": 652,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      },
+      {
+        "id": "UC15245497",
+        "cut": 5,
+        "catalog_side": "Recto",
+        "catalog_title": "3Q15 Cut 5 Recto lft bot light, b&w neg",
+        "catalog_rotation_light_label": "lft bot light",
+        "campaign": "Zuckerman/WSRP1988 original object",
+        "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6Y9UH6",
+        "source_repository_commit": "1b27d5d94e78aa601d4eccafe06d51b2fc81117d",
+        "source_repository_path": "images/previews/cuts-01-10/UC15245497.jpg",
+        "sha256": "411280a2a2c044b639e2ccccda930c03454c017f57dc4cd75924499c6e5736ba",
+        "width_px": 611,
+        "height_px": 1000,
+        "inspection": "independent assigned reader full frame/rotational comparisons; integrator contact-sheet overview",
+        "reader": "register_columns_ii_iv",
+        "greek_locus_roi": null
+      }
+    ],
+    "inspection_scope": {
+      "integrator": "Overview of all27 photographic compositions on contact sheets; native C.5a.1, C.5a.2-1, C.6a.3-1 and USC center frames independently compared. All49 derivative files metadata/decoding verified; not49 independent native photograph reviews.",
+      "cut5_reader": "All18 cut5 representative originals and all6 USCcut5 BW recto views inspected separately.",
+      "cut6_reader": "Four cut6 original-photo representatives (-1 versions) compared independently to USCcut6; grouped photographs were not inspected by this reader. Integrator inspected those grouped views in the composition overview.",
+      "reader_agreement": "Integrator and respective cut reader agree on the two named center-frame physical chains. This is not two independent Greek-line readings."
+    },
+    "coordinate_convention": "Approximate visual landmark centers in native pixels, x right/y down. Context anchors only, no target ROI/metric uncertainty/global warp; coordinates are not transferable across curved angular views.",
+    "physical_crosswalk": [
+      {
+        "cut": 5,
+        "allegro_file": "c.5a.2-1.jpg",
+        "allegro_px": [
+          720,
+          576
+        ],
+        "usc_id": "UC15246009",
+        "usc_px": [
+          612,
+          1000
+        ],
+        "orientation": "Same displayed longitudinal direction; no180-degree transform needed for this pair",
+        "anchors": [
+          {
+            "feature": "shallow crescent transverse opening",
+            "allegro_center_px": [
+              396,
+              249
+            ],
+            "usc_center_px": [
+              267,
+              395
+            ]
+          },
+          {
+            "feature": "large triangular aperture farther toward foot",
+            "allegro_center_px": [
+              412,
+              367
+            ],
+            "usc_center_px": [
+              298,
+              616
+            ]
+          },
+          {
+            "feature": "narrow vertical opening below triangular aperture",
+            "allegro_center_px": [
+              410,
+              427
+            ],
+            "usc_center_px": [
+              294,
+              722
+            ]
+          }
+        ],
+        "additional_correspondence": "Bottom edge/notch and neighboring groove rows corroborate chain; UC15245493 supplies paired center top-light context. No Hebrew word or edition line assigned.",
+        "claim_limit": "Physical strip identity and direction for named frame pair, not columnII Greek location"
+      },
+      {
+        "cut": 6,
+        "allegro_file": "c.6a.3-1.jpg",
+        "allegro_px": [
+          720,
+          576
+        ],
+        "usc_id": "UC15246010",
+        "usc_px": [
+          643,
+          1000
+        ],
+        "orientation": "Same displayed longitudinal direction; no180-degree transform needed for this pair",
+        "anchors": [
+          {
+            "feature": "small upper void",
+            "allegro_center_px": [
+              345,
+              30
+            ],
+            "usc_center_px": [
+              353,
+              64
+            ]
+          },
+          {
+            "feature": "irregular lower aperture",
+            "allegro_center_px": [
+              314,
+              403
+            ],
+            "usc_center_px": [
+              338,
+              694
+            ]
+          },
+          {
+            "feature": "jagged bottom-edge notch",
+            "allegro_center_px": [
+              331,
+              540
+            ],
+            "usc_center_px": [
+              348,
+              916
+            ]
+          }
+        ],
+        "additional_correspondence": "Lower aperture with matching adjacent angular groove patterns is strongest. Upper void is partly clipped in the early frame; bottom contour changes with rotation. Earlier proposed transverse-crack anchor was insufficiently distinctive and is excluded. No Hebrew word or edition line assigned.",
+        "claim_limit": "Physical strip identity and direction for named frame pair, not columnII Greek location"
+      }
+    ],
+    "frame_orientation_limits": {
+      "C.5a.12": "Ordered physical openings run in the reverse direction relative to C.5a.2/USCcenter; a180-degree display comparison is supported for this partial frame. Hand/card appearance corroborates but does not define the datum.",
+      "C.5a.8–11_and13–18": "Partial faces, rolled-edge geometry and cropped ends prevent unique direction/physical-face assignment; labels establish catalogue family only. Do not call an apparent end the opposite physical end without the anchor chain.",
+      "all_other_frames": "No universal rotation/mirror rule; unscored frame relationships remain unknown.",
+      "group_frames": "File labels list candidate strips, not a validated left-to-right order or individual text-line map."
+    },
+    "text_registration": {
+      "II2_HN": null,
+      "II4_THE_or_XE": null,
+      "II9_DI": null,
+      "adjacent_hebrew_word_transcription": null,
+      "full_target_plus_neighbor_line_window": null,
+      "reason": "Physical anchor chains authenticate named strip/frame comparisons, but damaged partial groove rows do not yield a unique edition-line assignment or original Greek parent strokes."
+    },
+    "result": "Two physical center-frame crosswalks supported by integrator/independent reader; exact Greek original-photo registration and engraving-order claim remain not identifiable from available evidence.",
+    "frozen_protocol_changed": false,
+    "authenticated_crossings": null,
+    "metric_depth": null,
+    "chronology": "unknown; same-session and later-episode alternatives survive",
+    "archive": "Exact links/hashes/dimensions and derivative relations retained. Source images/contact sheets not republished; reuse terms and Manchester attribution remain in prior intake. No new email sent.",
+    "bookkeeping": {
+      "source_scopes_before": 64,
+      "source_scopes_added": 1,
+      "added_scope": "Expanded Allegro cuts5–6 scope:25 additional source-photo compositions beyond the prior two overlapping originals",
+      "source_scopes_after": 65,
+      "bounded_checks_before": 68,
+      "bounded_checks_added": 1,
+      "added_check": "Combined two-strip physical crosswalk and frame-orientation check",
+      "bounded_checks_after": 69,
+      "cartographic_intakes": 5,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_coordinate_changes": false,
+      "independence": "Photo derivatives/frames are not independent campaigns or chronology confirmations; physical frame alignment is not a deposit/site identification"
+    },
+    "next_action": "Use the named physical chains when high-resolution Figure4.6/component map or original study scans arrive. Require adjacent Hebrew/edition-line anchors before assigning Greek target boxes. No repeated preview-only chronology scoring; cut10 remains parked pending orientation metadata."
+  },
+  "phrase_registration_followup": {
+    "date_utc": "2026-10-05",
+    "prior_result_commit": "f0cab3f98757fe6f53dea0c1c0d816521f6afba0",
+    "claim": "Exploratory Hebrew phrase-to-edition-line registration around matched cut5–6 landmarks",
+    "result": "No uniquely authenticated original-photo Hebrew phrase. Cut5 DJD plate/handcopy physical correspondence supplies an edition-based candidate line scaffold; Greek original target boxes remain null.",
+    "exposure": "Known original photographs and previously inspected DJD plates revisited for this text-mapping question; edition viewed during exploration, not a blind reading or holdout.",
+    "reference_text": {
+      "path": "atlas/app/atlas-text.json",
+      "sha256": "ae8f2f8a88a8f867184e250244c6f40454825b9b0009be281f4de1cf96a4adb9",
+      "attribution": "Hebrew: Abegg, Bowley and Cook, ETCBC dss 2.0.1 (CC BY-NC 4.0). Translation, glosses and notes: this project.",
+      "scope": "Existing edition-based Abegg/Bowley/Cook ETCBCdss2.0.1 reference; all15 columnII rows reviewed. text/readings.json is variant apparatus, not the full transcription. Neither file changed.",
+      "recurring_literal_patterns": {
+        "בבור": [
+          "II1",
+          "II7",
+          "II10"
+        ],
+        "ככרין": [
+          "II2",
+          "II6",
+          "II9",
+          "II15"
+        ],
+        "כסף": [
+          "II6",
+          "II11"
+        ],
+        "כלין": [
+          "II6",
+          "II8"
+        ],
+        "אמות": [
+          "II8",
+          "II14"
+        ],
+        "מזרח": [
+          "II7",
+          "II10",
+          "II13"
+        ]
+      },
+      "recurrence_limit": "Literal word/subword recurrence in current reference only; not a newly read word on an original photograph and not edition-wide variant adjudication."
+    },
+    "original_photo_review": {
+      "cut5_reader": "Center/right neighborhoods around the crescent under opposed lights; isolated roofed/angular strokes did not yield a unique consecutive Hebrew sequence.",
+      "cut6_reader": "C.6a.3-1/C.6a.4 and UC15246010/UC15246329 reviewed independently; repeated angular shapes above lower aperture support physical context, not a phrase.",
+      "integrator": "Whole native USC46009/46010/46560/46588, early C.6a.4/C.5a.9/C.5a.15, and contextual windows in USC46329/46010/46013. No complete multi-letter phrase authenticated independently.",
+      "processing": "Native source views plus inspection-only crops enlarged2x with nearest-neighbor interpolation; no contrast restoration/generative enhancement/new source detail. Context windows are not registered text ROIs.",
+      "observed_phrase": null,
+      "edition_line_from_direct_hebrew": null
+    },
+    "context_windows": [
+      {
+        "id": "UC15246009",
+        "box": [
+          200,
+          300,
+          365,
+          430
+        ],
+        "purpose": "crescent plus neighboring rows"
+      },
+      {
+        "id": "UC15246010",
+        "box": [
+          240,
+          205,
+          410,
+          253
+        ],
+        "purpose": "upper prominent row"
+      },
+      {
+        "id": "UC15246010",
+        "box": [
+          240,
+          605,
+          410,
+          660
+        ],
+        "purpose": "above lower aperture"
+      },
+      {
+        "id": "UC15246010",
+        "box": [
+          240,
+          773,
+          411,
+          833
+        ],
+        "purpose": "lower row"
+      },
+      {
+        "filename": "c.6a.3-1.jpg",
+        "box": [
+          292,
+          365,
+          382,
+          397
+        ],
+        "purpose": "above-aperture context"
+      }
+    ],
+    "coordinate_convention": "Contextual half-open native boxes[x0,y0,x1,y1], xright/ydown. No Greek ROI or text-reading claim; no global warp or cross-rotation coordinate transfer.",
+    "djd_physical_scaffold": {
+      "source_id": "DJDIII1962",
+      "path": "research/assets/plans/djdIII1962/plates-volume.pdf",
+      "source_sha256": "b7a52c275ad42a333f4d825efd12425e11574aa00bdd76e72e41656de86a2eb2",
+      "plates": {
+        "photo": "LI, viewer63, labelled3Q15II",
+        "handcopy": "L, viewer62, labelled3Q15II"
+      },
+      "native_photo_px": [
+        2662,
+        3669
+      ],
+      "photo_panel": "Fourth vertical panel from left; montage splits vertically and repeats angular views, not a seamless metric rollout.",
+      "context_panel_box": [
+        1400,
+        460,
+        1740,
+        2800
+      ],
+      "physical_chain": "Crescent, triangle and slit match cut5 center originals in the same displayed longitudinal direction; reader and integrator visually compared source pages and known original chain.",
+      "edition_based_line_scaffold": [
+        {
+          "feature": "crescent opening",
+          "handcopy_row": "II6",
+          "original_context_id": "UC15246009",
+          "approx_native_center": [
+            267,
+            395
+          ]
+        },
+        {
+          "feature": "large triangular aperture",
+          "handcopy_row": "II10",
+          "original_context_id": "UC15246009",
+          "approx_native_center": [
+            298,
+            616
+          ]
+        },
+        {
+          "feature": "narrow lower opening",
+          "handcopy_row": "II12",
+          "original_context_id": "UC15246009",
+          "approx_native_center": [
+            294,
+            722
+          ]
+        }
+      ],
+      "row_assignment_method": "Count15 drawn text rows in the handcopy labelledcolumnII and compare its explicit loss shapes; original Hebrew phrase not used as verification. Handcopy supplies editorial line positions.",
+      "limits": "Supported physical correspondence yields candidate edition-row anchors, not an independently authenticated original Hebrew phrase or Greek parent stroke. Do not interpolate Greek boxes or treat reconstructed drawn letters as original strokes. No cut6 edition-line mapping established.",
+      "archive": "Existing archived PDF reused; no new figure upload or source scope."
+    },
+    "greek_targets": {
+      "II2_HN": null,
+      "II4_THE_or_XE": null,
+      "II9_DI": null
+    },
+    "accepted_authentic_crossings": null,
+    "metric_depth": null,
+    "chronology": "unknown; same-session/later-episode alternatives remain",
+    "protocol_changed": false,
+    "bookkeeping": {
+      "source_scopes_before": 65,
+      "source_scopes_added": 0,
+      "source_scopes_after": 65,
+      "bounded_checks_before": 69,
+      "bounded_checks_added": 1,
+      "added_check": "Combined two-cut phrase-registration attempt and cut5 edition-plate physical-scaffold comparison",
+      "bounded_checks_after": 70,
+      "cartographic_intakes": 5,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_archaeological_coordinate_changes": false,
+      "independence": "Known source reinspection; two reader scopes do not count as two independent chronology tests."
+    },
+    "closure": "Phrase-to-line registration not identifiable at these preview resolutions. Preserve edition-based physical scaffold separately. Stop another same-pixel phrase pass; reopen for a legible archival/early closeup, original composite component mapping or documented analytical error.",
+    "next_action": "Use the three cut5 loss/row candidates to focus requested high-resolution material; verify neighboring Hebrew directly before transferring any Greek target location. Original Fig4.6/component-map and Manchester requests remain pending; cut10 and Jericho remain parked."
+  },
+  "usc_pr10_facsimile_followup": {
+    "date_utc": "2026-10-05",
+    "source_pr": "https://github.com/quadrin/CopperScroll/pull/10",
+    "source_branch": "usc-preview-acquisition-remaining",
+    "source_commit": "7ebd8a4c57463f5b32621f327f067913ddfc42ef",
+    "discovery": "Additional images are in open PR10, not current main1b27d5d. Prior phrase attempt reviewed original cuts5–6 and did not include these newly acquired facsimile previews.",
+    "inventory": {
+      "manifest_rows": 820,
+      "pr_author_report": {
+        "facsimile_photographs": 612,
+        "original_cuts11_23": 172,
+        "static_rti_posters": 36,
+        "cumulative_records": 942
+      },
+      "verification_scope": "Manifest parsed; six selected JPEGs independently downloaded from pinned repo commit, decoded and matched hashes/dimensions. PR author reports full942 verification; that full audit is not repeated here."
+    },
+    "visual_scope": {
+      "reader": "Integrator",
+      "frames": 6,
+      "full_columnII": 4,
+      "bottom_columnII": 2,
+      "full_native_px": [
+        743,
+        1000
+      ],
+      "bottom_native_px": [
+        1000,
+        667
+      ],
+      "images": [
+        {
+          "uc_identifier": "UC110814679",
+          "item_type": "facsimile RTI capture (2013 colour photo)",
+          "title": "DSS 3Q15F Column 2 Bottom 16 TIFF",
+          "usc_catalog_identifier": "UC110814679",
+          "usc_catalog_title": "DSS 3Q15F Column 2 Bottom 16 TIFF",
+          "column": "2",
+          "section": "Bottom",
+          "cut": "",
+          "side": "",
+          "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1RIIRGC5",
+          "filename": "images/previews/facsimile/UC110814679.jpg",
+          "width_px": "1000",
+          "height_px": "667",
+          "byte_size": "202530",
+          "sha256": "86661671277a147c759f61d8512dfdb29d2134ccf8c6944b0b0fe21cb0b45e5d",
+          "status": "acquired",
+          "thumbnail_mean_absolute_error": "6.124",
+          "note": "USC title and catalog identifier checked; native JPEG decoded; both dimensions exceed thumbnail; image identity corroborated by thumbnail comparison",
+          "verification": "hash/dimensions/decoded match pinned PR10 manifest"
+        },
+        {
+          "uc_identifier": "UC110814665",
+          "item_type": "facsimile RTI capture (2013 colour photo)",
+          "title": "DSS 3Q15F Column 2 Bottom 02 TIFF",
+          "usc_catalog_identifier": "UC110814665",
+          "usc_catalog_title": "DSS 3Q15F Column 2 Bottom 02 TIFF",
+          "column": "2",
+          "section": "Bottom",
+          "cut": "",
+          "side": "",
+          "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1RIIRYAK",
+          "filename": "images/previews/facsimile/UC110814665.jpg",
+          "width_px": "1000",
+          "height_px": "667",
+          "byte_size": "185200",
+          "sha256": "9b6feb62062a4c833473a9fb0714000f51f2dae624672128b27dce1a2ddf23c3",
+          "status": "acquired",
+          "thumbnail_mean_absolute_error": "5.788",
+          "note": "USC title and catalog identifier checked; native JPEG decoded; both dimensions exceed thumbnail; image identity corroborated by thumbnail comparison",
+          "verification": "hash/dimensions/decoded match pinned PR10 manifest"
+        },
+        {
+          "uc_identifier": "UC110814660",
+          "item_type": "facsimile RTI capture (2013 colour photo)",
+          "title": "DSS 3Q15F Column 2 03 TIFF",
+          "usc_catalog_identifier": "UC110814660",
+          "usc_catalog_title": "DSS 3Q15F Column 2 03 TIFF",
+          "column": "2",
+          "section": "Full",
+          "cut": "",
+          "side": "",
+          "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1RIIRT65",
+          "filename": "images/previews/facsimile/UC110814660.jpg",
+          "width_px": "743",
+          "height_px": "1000",
+          "byte_size": "176810",
+          "sha256": "55fd619a3f95b3e48b31173a4bcbf4a738b97e751d22a3ad0e6fdc000c292afc",
+          "status": "acquired",
+          "thumbnail_mean_absolute_error": "5.274",
+          "note": "USC title and catalog identifier checked; native JPEG decoded; both dimensions exceed thumbnail; image identity corroborated by thumbnail comparison",
+          "verification": "hash/dimensions/decoded match pinned PR10 manifest"
+        },
+        {
+          "uc_identifier": "UC110814646",
+          "item_type": "facsimile RTI capture (2013 colour photo)",
+          "title": "DSS 3Q15F Column 2 15 TIFF",
+          "usc_catalog_identifier": "UC110814646",
+          "usc_catalog_title": "DSS 3Q15F Column 2 15 TIFF",
+          "column": "2",
+          "section": "Full",
+          "cut": "",
+          "side": "",
+          "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1RIIQB1W",
+          "filename": "images/previews/facsimile/UC110814646.jpg",
+          "width_px": "743",
+          "height_px": "1000",
+          "byte_size": "177363",
+          "sha256": "bb66a801500fee9430099fa2357988732a46d69a3c96d226360cc846dcde4617",
+          "status": "acquired",
+          "thumbnail_mean_absolute_error": "5.487",
+          "note": "USC title and catalog identifier checked; native JPEG decoded; both dimensions exceed thumbnail; image identity corroborated by thumbnail comparison",
+          "verification": "hash/dimensions/decoded match pinned PR10 manifest"
+        },
+        {
+          "uc_identifier": "UC110814624",
+          "item_type": "facsimile RTI capture (2013 colour photo)",
+          "title": "DSS 3Q15F Column 2 21 TIFF",
+          "usc_catalog_identifier": "UC110814624",
+          "usc_catalog_title": "DSS 3Q15F Column 2 21 TIFF",
+          "column": "2",
+          "section": "Full",
+          "cut": "",
+          "side": "",
+          "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1RIIQ48U",
+          "filename": "images/previews/facsimile/UC110814624.jpg",
+          "width_px": "743",
+          "height_px": "1000",
+          "byte_size": "207647",
+          "sha256": "a976665d8ef3128adc3f6794e830c20e2a507e6c934a1e6da5c334151f177083",
+          "status": "acquired",
+          "thumbnail_mean_absolute_error": "5.858",
+          "note": "USC title and catalog identifier checked; native JPEG decoded; both dimensions exceed thumbnail; image identity corroborated by thumbnail comparison",
+          "verification": "hash/dimensions/decoded match pinned PR10 manifest"
+        },
+        {
+          "uc_identifier": "UC110814609",
+          "item_type": "facsimile RTI capture (2013 colour photo)",
+          "title": "DSS 3Q15F Column 2 34 TIFF",
+          "usc_catalog_identifier": "UC110814609",
+          "usc_catalog_title": "DSS 3Q15F Column 2 34 TIFF",
+          "column": "2",
+          "section": "Full",
+          "cut": "",
+          "side": "",
+          "usc_item_url": "https://digitallibrary.usc.edu/asset-management/2A3BF1RIIY1N7",
+          "filename": "images/previews/facsimile/UC110814609.jpg",
+          "width_px": "743",
+          "height_px": "1000",
+          "byte_size": "206574",
+          "sha256": "be65fde8a1e4dff14c001891529236d973d3845ac416e03b6957e4c31bf19859",
+          "status": "acquired",
+          "thumbnail_mean_absolute_error": "6.02",
+          "note": "USC title and catalog identifier checked; native JPEG decoded; both dimensions exceed thumbnail; image identity corroborated by thumbnail comparison",
+          "verification": "hash/dimensions/decoded match pinned PR10 manifest"
+        }
+      ]
+    },
+    "observations": [
+      "Full-column facsimiles show continuous columnII Hebrew rows and three Greek groups in the expected II2/II4/II9 layout. Different lighting changes letter-edge visibility. Reading branches remain edition-based; this is not variant adjudication.",
+      "The bottom views enlarge neighboring lower rows, losses/seams and retain a red calibration sphere and planar centimeter scale. Neither supplies metric original incision depth.",
+      "Full-column layout provides an acquired replica-based mapping aid beyond the tiny CSS composite. Original cut5 loss correspondences to II6/10/12 can guide transfer, but that transfer and neighboring original Hebrew still need authentication."
+    ],
+    "surface": "2013 facsimile, not original copper; casting/restoration/flattening/reconstruction may affect stroke edges and joints. Cannot use replica truncations/depth as original-surface chronology evidence.",
+    "original_greek_target_boxes": {
+      "II2": null,
+      "II4": null,
+      "II9": null
+    },
+    "engraving_order": "unknown at all seven loci; frozen criteria unchanged",
+    "exposure": "Exploratory reading/layout aid; no unseen prediction or independent original campaign",
+    "archive": "Images remain on pinned PR10 branch with original credits/rights. Exact source identifiers, stable USC item URLs, repository paths, hashes and dimensions retained. No additional source-image upload or edited mosaic.",
+    "bookkeeping": {
+      "source_scopes_before": 65,
+      "source_scopes_added": 1,
+      "added_scope": "Six directly inspected new native columnII facsimile previews, four full/two bottom",
+      "source_scopes_after": 66,
+      "bounded_checks_before": 70,
+      "bounded_checks_added": 1,
+      "added_check": "Bounded facsimile layout/reading-aid review, not engraving chronology",
+      "bounded_checks_after": 71,
+      "cartographic_intakes": 5,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_archaeological_coordinate_changes": false
+    },
+    "next_action": "Compare continuous facsimile row/Greek layout with already matched original cut5–6 physical anchors and DJD losses; record candidate original areas separately and require neighboring original Hebrew and surface provenance before any authenticated Greek ROI/timing. Continue awaiting original Fig4.6 component mapping and Manchester scans."
+  },
+  "replica_original_transfer_followup": {
+    "date_utc": "2026-10-05",
+    "claim": "Locate columnII Greek groups on original cuts5–6 using acquired replica layout",
+    "status": "Exploratory target selection; authenticated original Greek registration not identifiable from inspected previews",
+    "sources": "Reuse six hash-verified PR10 facsimiles, original cut5–6 rotations, early Allegro views and DJDIII columnII montage; no new source scope or independent campaign",
+    "replica_reference": {
+      "identifier": "UC110814624",
+      "dimensions_px": [
+        743,
+        1000
+      ],
+      "sha256": "a976665d8ef3128adc3f6794e830c20e2a507e6c934a1e6da5c334151f177083",
+      "coordinate_convention": "native pixels, top-left origin; half-open conservative layout boxes",
+      "greek_layout_boxes": {
+        "II2_HN": [
+          269,
+          151,
+          320,
+          190
+        ],
+        "II4_retained_ThetaE_XiE": [
+          165,
+          269,
+          218,
+          310
+        ],
+        "II9_DI": [
+          183,
+          527,
+          225,
+          565
+        ]
+      },
+      "surface": "2013 replica; boxes cannot establish original surface strokes or timing"
+    },
+    "observations": [
+      "Three replica Greek groups lie left of the apparent long seam near x335; matched cut5 crescent/triangle/slit chain lies right near x450–480. This narrows the search toward cut6.",
+      "Cut5 can anchor damage/row context, but transferring row heights across the seam does not authenticate a Greek original ROI.",
+      "Apparent seam identity and cut6 transfer remain provisional pending multiple original-surface correspondences and neighboring Hebrew. No global planar warp of curved originals is justified.",
+      "Independent cut6 reader found replica top defect (~265,80), lower aperture candidate (~215,650), and bottom loss (~250,835) broadly compatible with the original cut6 ordered losses. These are tentative layout correspondences: scale, curvature and replica rendering prevent exact metal-feature authentication or numerical transfer."
+    ],
+    "reviewers": {
+      "layout_reader": "independent_column_i; six facsimiles compared with previously inspected six cut5 originals and18 early Allegro views",
+      "integrator": "full facsimile UC110814624; all-six cut6 contact sheet and native UC15246010/UC15246329/UC15246871; no secured Greek-plus-Hebrew reading",
+      "independent_cut6_reader": "register_columns_ii_iv; six original cut6 views reviewed with facsimile context; no authenticated Greek-plus-neighboring-Hebrew reading"
+    },
+    "original_greek_target_boxes": {
+      "II2": null,
+      "II4": null,
+      "II9": null
+    },
+    "original_greek_search_bands": null,
+    "engraving_order": "unknown at all seven loci; frozen protocol unchanged",
+    "exposure": "Source-informed exploratory reading, not a blind or independent confirmation",
+    "bookkeeping": {
+      "source_scopes_before": 66,
+      "source_scopes_added": 0,
+      "source_scopes_after": 66,
+      "bounded_checks_before": 71,
+      "bounded_checks_added": 1,
+      "added_check": "Combined replica-to-original cut5–6 target-transfer review",
+      "bounded_checks_after": 72,
+      "cartographic_intakes": 5,
+      "decisive_tests_added": 0,
+      "question_closures_added": 0,
+      "identifications_added": 0,
+      "confidence_or_archaeological_coordinate_changes": false
+    },
+    "next_action": "Obtain original Figure4.6/component placement map and archival-resolution source frames. Prioritize cut6 for columnII Greek groups while retaining cut5 damage/row anchors. Authenticate neighboring Hebrew and original parent strokes before assigning a Greek ROI; no repeat preview-only pass without a specified new observation or analytical correction."
   }
 }
