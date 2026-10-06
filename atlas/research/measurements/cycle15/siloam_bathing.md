@@ -128,3 +128,11 @@ Alex Kesin
 ```
 
 The saved MIME is simple HTML paragraphs preserving this text. Private Gmail identifiers and sender-account metadata stay outside the public research record. Sending this particular request has not been authorized. Recipient verification, source-role reinspection and drafting add zero source scopes, bounded checks, cartographic intakes or independent campaigns; no field drawing or source figure was obtained or newly redistributed.
+
+## Main-side field-section request sent — 6 October 2026 UTC
+
+The user explicitly instructed “send emails.” The reviewed Nahshon Szanton draft above was sent as stored at **6 October 2026 05:29:46 UTC / 5 October 2026 22:29:46 Los Angeles**. Gmail's result and stored message both confirm `SENT`; the exact recipient, subject and body match the reviewed draft, with no CC/BCC or attachments. Delivery and a reply remain unverified. No drawing, new exposure, archive accession or custody evidence was obtained.
+
+The pending draft was the Siloam main-side L103 enquiry. Project draft/sent preflight confirmed the existing A(C)94 inquiry to Ruhama Bonfil, the USC composite/mapping inquiry to Bruce Zuckerman and the rerouted Manchester enquiry were already sent. No duplicates or follow-ups were sent. Other drafts remain outside this archaeological request.
+
+The preceding preparation and main-pool test records retain their historical state. The current dependency is a reply supplying the named, phase-controlled main-basin junction/section and datum definitions, a statement of the excavation limits, or a custodian referral. Sending changes correspondence status only: zero source targets, cartographic intakes, bounded checks, formal outcomes, confidence, coordinates or question-state changes. Activity remains70/5/80; the main-pool identification remains not identifiable from available evidence.

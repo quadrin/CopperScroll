@@ -448,5 +448,48 @@
     "outcome_delta": 0,
     "next_action": "sending requires explicit instruction for this reviewed draft; field evidence can reopen only under the preceding stated conditions",
     "independent_review_precision_edit": "p25* describes one inner-dam trench near centre; revised exact MIME verified after update"
+  },
+  "survey_request_sending": {
+    "authorization": "user explicitly instructed send emails; send the reviewed pending research draft",
+    "preparation_ref": "#/survey_request_preparation",
+    "status": "sent",
+    "sent": true,
+    "sent_utc": "2026-10-06T05:29:46Z",
+    "sent_local": "2026-10-05T22:29:46-07:00",
+    "recipient": {
+      "name": "Nahshon Szanton",
+      "email": "nahshons@mail.tau.ac.il"
+    },
+    "subject": "Birket al-Hamra / Siloam: L103 main-pool junction and field section",
+    "draft_sent_as_stored": true,
+    "stored_message_verified": {
+      "recipient_subject_body_match": true,
+      "SENT_label": true,
+      "DRAFT_label": false,
+      "attachments": 0,
+      "extra_recipients": 0
+    },
+    "delivery": null,
+    "reply": null,
+    "field_section_obtained": false,
+    "main_side_exposure": null,
+    "record_custody": null,
+    "duplicate_preflight": {
+      "prepared_pending_project_request": "Siloam main-side L103 section",
+      "other_recorded_inquiries_confirmed_sent": [
+        "A(C)94 / Ruhama Bonfil",
+        "columnII composite / Bruce Zuckerman",
+        "Allegro archive / ManchesterMuseum rerouted address"
+      ],
+      "duplicate_messages_sent": 0
+    },
+    "private_gmail_identifiers_in_public_record": false,
+    "historical_preparation_fields_preserved": true,
+    "archaeological_result_changed": false,
+    "new_source_targets_delta": 0,
+    "cartographic_assets_delta": 0,
+    "bounded_checks_delta": 0,
+    "outcome_delta": 0,
+    "next_action": "await a field-section/excavation-limit response or exact custodian referral; reopen only for the preceding named new observation or documented correction"
   }
 }
