@@ -164,3 +164,127 @@ Next obtain **Noth1955pp42–55 plus its title/start leaf** for his actual Buqei
 Add **3 new scoped source targets /0 cartographic intakes /2 combined bounded checks** to72/5/82, giving **75/5/84**: Jerome's electronic ancient-letter scope, deVos's authored geographical argument, and Vincent's published field letter/editorial response; one Achor specificity check and one Noorath continuity/coverage check. The deVos reanalysis and Vincent publication are not new independent field campaigns. Prior Milik/Onomasticon/Josephus/ESI/TIR exposure, catalogue access, failed links, map encounters, rendering and review add no further increment.
 
 Both bounded claims close **not identifiable from available evidence** at this specification. No decisive identification, confirmed deposit, whole-candidate exclusion, negative excavation, confidence, geographic point, feature/state gate,28-row Jericho roster, regional denominator, outcome-ledger entry or question-state change. States remain11Inprogress/1Queued. Reopen for the specified newly inspected original observations or a documented analytical/crosswalk correction, preserving these results.
+
+
+## Supplied Achor and Naʿaran originals — 6 October 2026
+
+The user supplied eight files at11:35LosAngeles and a BSAC extract at11:40; five parallel source threads inspected the needed originals. Local attachments open. No new web request, failed link, mailbox check, correspondence, order or fee occurred. Earlier failed public links remain access history; the supplied Neef, Procopius, ESI2 and three RB extracts supersede their reading gaps at the exact scopes below. Noth1955 and MilikRB1959 remain unread. Source-reading access and feature identification are separate results.
+
+### Supplied-copy fingerprints and repeat exposure
+
+- `bsa_053_10.pdf`: 42PDFpages/1667314bytes; SHA256`0d0cd8031e3e03181d67942851017f7a4ae9219f0bc405c97f954b094f7efab7`.
+- `Le Rouleau de Cuivre de la Grotte 3 de Qumrân (3q15) (2 Vols.)_ Expertise - Restauration - Epigraphie (Studies on the Texts of the Desert of Judah) (French Edition).pdf`: 706PDFpages/95666096bytes; SHA256`c3d824a1e3123a07cdb246bd376457d7a1cef14f05dbac03eeea0f88a057cb6e`.
+- `screencapture-jstor-org-stable-f7e91f5e-5af5-3534-81fd-63873e0fa6ec-2026-10-06-11_24_49.pdf`: 30PDFpages/40689857bytes; SHA256`6096f8bc3b18f05afa0eb4d1ca309cec6ac8c97a01bd597347a9e2c8b7dbeeee`.
+- `Excavations and Surveys in Israel 2.pdf`: 125PDFpages/70660874bytes; SHA256`d52b8ba732e398d2524eade0e02ba8f133f85f7e37138ba153e487b50756e95f`.
+- `Patrologiae_cursus_completus.pdf`: 784PDFpages/83398881bytes; SHA256`cbd1fdeededfda8d6fb02eadf98b557060b434d991c89fe3c92cf35ddc7614b6`.
+- `screencapture-jstor-org-stable-44102751-2026-10-06-11_29_40.pdf`: 56PDFpages/71480040bytes; SHA256`1f188e49859d75f1aafd5db6ddac26a9712118e0915ab49ed2f03e9ade0a7b26`.
+- `screencapture-jstor-org-stable-44102693-2026-10-06-11_32_11.pdf`: 51PDFpages/71215194bytes; SHA256`99964a4fe22fdb1eff0a0c2e1ea11a04480d95f7432b0f43d9c37197752ac55d`.
+- `screencapture-jstor-org-stable-44091782-2026-10-06-11_33_37.pdf`: 68PDFpages/136236994bytes; SHA256`1da94a62a8fcef9faed1c36fee291bed505f333815fe4bc70490e64d829d5094`.
+- `greek-words-in-coptic-bsac18.pdf`: 15PDFpages/2073589bytes; SHA256`f64a635f933de6c24f88bd39d426a3886c221c817fcf8dd9aa21dcc805170c35`.
+
+The42-page Trümper PDF and706-page French2006 report exactly match previously recorded hashes. They restore available copies without adding source scope, archaeological observation or manuscript inspection. The French report's selected readings/photos and Trümper's Jericho plans remain at their prior inspected scopes; no reserved or genuinely unused observation is claimed. Existing asset archives are not duplicated.
+
+The15-page BSAC extract authenticates tomeXVIII(1965–1966), printedCairo1966. PDF2 begins W.A.Girgis's *Greek Loan Words in Coptic*; PDF3 shows72–73, and PDF15 shows96 plus the next Kasser article's opening. First71 is inferred from the sequence. This covers a different part of the issue: **Meinardus's StAndrew article181–196, especially183–184, remains unavailable**. Native intake/boundary checks coveredPDF1–4/15; the intervening linguistic article was not semantically inspected. This intake adds zero source/check activity and supplies no church/water-installation date.
+
+### Neef: a northern preference with explicit limits
+
+Heinz-DieterNeef, *Die Ebene Achor—das Tor der Hoffnung*, ZDPV100(1984),91–107: title/author are native; volume/year/range derive from the already inspected TIR bibliography because no journal cover is supplied. All30screenshot PDFpages and all17articlepages were directly viewed. First91 is inferred from the title/range and following92header. Source-viewer1–17 is a sequence mapping, rather than a separately visible toolbar for every page.
+
+Printed-to-PDF segments:91→1–2;92→3–4;93→4–5;94→6–7;95→8–9;96→9–11;97→11–12;98→13–14;99→15–16;100→16–18;101→18–19;102→20–21;103→22–23;104→23–24;105→25–26;106→27–28;107→28–30. Image-only capture; navigation text/OCR did not replace native inspection. No figure/map/table occurs.
+
+Neef prefers Nuʿeima overall through biblical routes, fertility and literary interpretation. P97 explicitly leaves Joshua15 unable to decide between Nuʿeima and Buqeiʿa. Pp105–106 find the Scroll's geographical details insufficient. P105 questions Milik's Ḥorebbeh–Chorembe–Syriacmosaic chain, including its late chronology; this remains Neef's critique, without a new reading of Moschus or the mosaic. His first-page footnote records1982visits to both valleys, without a dated target-feature plan or contact. The previously exposed Eusebius tradition adds no independent corroboration. Preserve his caveats alongside his overall preference, and preserve both Scroll alternatives.
+
+### Procopius: native column access and dependence
+
+The supplied PG copy's PDF8/10 identify Migne1865, *Patrologia Graeca*87/part1, ProcopiusGazaeus. PDF11 identifies the printed Greek material as Leipzig-catena fragments opposite the Latin publication associated with Gesner. Native coveragePDF1/3/8/10/11/515–517, including a4×target crop; searchable text only located the needed pages. PDF515 contains1015–1016, PDF516 contains1017–1018, PDF517 contains1019–1020. These are locally verified correspondences, without a whole-book offset claim.
+
+Joshua7 context at **col1017A Greek /1018A Latin, PDF516** places Achor north of Jericho and reports continuing local use of the name. This verifies the statement previously quoted through Wolf. No modern valley, spring, aqueduct, distance, Galgala relation or Scroll feature appears. The Achor paragraph supplies no first-person survey or explicit source attribution. Similarity to Eusebius does not prove the precise borrowing route; the neighboring editorial Eusebius note onPDF517 concerns Gabaon/Bethoron. The Latin rendering of the Greek valley term does not establish a physical cave. No manuscript or modern critical edition was inspected; no archaeological illustration was encountered.
+
+### ESI2: exact report and late phases
+
+H.Hizmi/HefzibaCohen's **Naʿaran72–74 = suppliedPDF79–81** reports February–March1983salvage excavation. Native publication coveragePDF1–5/7; report coverage79–81. The title says1983/Volume2; copyright/printing leaf andDecember1984preface establish1984printing. Contentsiii listsNaʿaran72. This resolves the target without a PartII crosswalk; the earlier possiblePartII explanation is superseded for this English copy. Nearby reports supply boundaries only. No whole125-page volume reading is claimed.
+
+P72–73 places the village near EinNuʿeima and EinDuk. Raw73035/53065 is retained without a coordinate transformation; the general Israel-grid convention does not validate this record's datum/reference point/precision. AreaH includes mosaic paving and sixth–eighth-century finds without a sealed coin/construction crosswalk. AreaT's small plastered reservoirs occupy the lower **service level**, with stairs to habitation above; vertical functions are not successive phases. BuildingI/II/III are building labels, not strata. Reservoir count/loci, inlets/outlets, source of supply, construction dates and sections remain unknown.
+
+P74 reports the adjacent synagogue dated to the second half/end of the sixth century from pottery beneath its mosaic floors. It publishes no diagnostic pottery catalogue, floor section/state IDs or crosswalk to Vincent's exposed mosaic. This reported basis does not date every wall, earlier settlement or water installation. Seventh–eighth-century continuity/fire destruction is a qualified coin-based suggestion. Missing first-century contexts in this short report give unknown earlier coverage, without a site exclusion. Nearby springs establish proximity, without a dated hydraulic connection or RomanNeara/Noorath continuity.
+
+ESI1983 supplies a separate salvage-excavation lineage from Vincent's1919/1921work. Neither lineage independently confirms the Scroll's particular feature or Josephus's water diversion. The existing28-ID Jericho roster remains at its historical selected-source scope; these village reservoirs are additional unresolved source features, with no pool eligibility, complete count or metric datum established.
+
+Encountered ESI illustrations remain link-only, tied to the supplied PDF hash and the [official source record](https://publications.iaa.org.il/esi_english_series/15/): unnumbered NaʿaranAreaTplanp73/PDF80 (BuildingI/II/III, street/courtyard/trialpit, north arrow, graphic bar in metres with illegible numeric intervals; left edge clipped); cover reconstructionPDF2 (MBIIgate atDan, outside Naʿaran); Naham cave plan/two sectionsp74/PDF81 (outside the Naʿaran report, labels1–1/2–2, graphic bar, no observed north arrow). The village plan gives no reservoir-specific label, dated contact or hydraulic-network section. These are published source drawings/reconstruction; no project tracing or protected asset is uploaded.
+
+### Vincent originals: publication scope and historical dating
+
+**RB28(1919),532–563**, Vincent's *Le sanctuaire juif d'AïnDouq*, is a preliminary report signed15June1919. All32articlepages/56capture tiles inspected. Its25–15BCE/Herodian proposal derives from palaeographic, style, historical and folklore comparisons(544–560), without a stratified construction date. P562n2 postpones the detailed name/water-geography demonstration; nearby Douq/Nuʿeima hydraulic ruins supply no dated conduit join. Limited clearance, damage and erosion establish no complete target coverage. Fig1p535 is an approximate schematic:536n1 says quick measures/drawing by eye, anticipating a precise later plan. Its scale/magnetic arrow cannot make it a precise metric datum.
+
+**RB30(1921),579–601**, L.H.Vincent/B.Carrière's *La synagogue de Noarah. Les inscriptions*, is the complete23-page epigraphic article, signedMay1921. All51capture tiles inspected. Its29source-viewer pieces include four quadrants ofPlateXV and two halves ofPlateXVI; these pieces are not six extra printed text pages. P579n1 postpones the Noarah identification. A possible basin/water-installation reading of inscription1(582–583) eventually yields to a roof/timber interpretation with explicit reservations(584). It cannot establish an excavated reservoir or supply connection. Reported ancient mosaic repairs(585–586) have no absolute date. Donor texts and gold/silver language do not connect this synagogue's property to the Scroll's deposits. The separate architecture notice at442ff is not supplied by this capture.
+
+**RB68(1961),161–177**, *Un sanctuaire dans la région de Jéricho. La synagogue de Naʿarah*, contains a memorial161–162 signedP.B., Vincent's **May1921manuscript163–173**, and PierreBenoit's **February1961additional note174–177**, plus portrait/PlatesIII–XXIII. All68capture tiles/all39source-viewer pieces inspected. TIR's161–173 ends before Benoit's note; full publication177 follows the plate gallery. This is substantive publication of earlier excavation material, without a1961field campaign.
+
+P163 describes the site on WadiNuʿeima's eastern bank, source-reported250m southeast of Ras-edDouq, and an aqueduct with three levels of arches discharging into a channel around the mound. No construction date, excavated synagogue contact or Josephus-era join is supplied. Approximate4km fromTellSultan and6.5km frommodernEriha are Vincent's estimates, without a validated modern position or route/reference datum. Comparing them with the ancient fifth-milestone statement requires independently justified origins/path conventions; the discrepancy is unresolved, without an EinDuyuk exclusion. P164's courtyard basin/fountain is **probable**, inferred from architecture/fragments. Its supply and phase remain unknown. Exposed plan, restored plan and restored elevation/section are different evidence classes.
+
+Vincent's manuscript170–173 acknowledges absent positive dating and proposes a third-century comparison, allowing a later mosaic/restoration. Benoit175 favors the fifth century by comparison with other synagogues/mosaics. The supplied ESI2 report's separately stated later-sixth-century under-mosaic pottery basis remains distinct. No source here supplies a verified crosswalk among all building, floor, repair and water states. The already read1921Syria letter, RB1919, RB1921 and the posthumous manuscript share1919/1921observation ancestry; repeated descriptions/illustrations are not independent corroboration.
+
+### Article-page and illustration retrieval register
+
+All new screenshot files are user-supplied images of original publication pages. Their whole-PDF hashes above are authoritative. Original public source records are [RB1919](https://www.jstor.org/stable/44102751), [RB1921](https://www.jstor.org/stable/44102693) and [RB1961](https://www.jstor.org/stable/44091782); earlier reader failures remain historical. No new request or recovered public download is claimed. Reuse remains unestablished; retain factual captions/locators and supplied originals, without public source-image/PDF upload.
+
+RB1919source viewers1–32 map consecutively to printed532–563. Printed-to-capturePDF segments:532→1–2;533→2–4;534→4–6;535→6–7;536→7–9;537→9–11;538→11–13;539→13–14;540→14–16;541→16–18;542→18–20;543→20–21;544→21–23;545→23–25;546→25–26;547→26–28;548→28–30;549→30–32;550→32–33;551→33–35;552→35–37;553→37–39;554→39–40;555→40–42;556→42–44;557→44–45;558→45–47;559→47–49;560→49–51;561→51–52;562→52–54;563→54–56.
+
+RB1921source viewers1–2=579–580;3–6=PlateXVquadrants;7–20=581–594;21–22=PlateXVIhalves;23–29=595–601. Printed-to-capture segments:579→1–2;580→2–4;581→11–13;582→13–14;583→14–16;584→16–18;585→18–20;586→20–21;587→21–23;588→23–25;589→25–26;590→26–28;591→28–30;592→30–32;593→32–33;594→33–35;595→39–40;596→40–42;597→42–44;598→44–45;599→45–47;600→47–49;601→49–51.
+
+RB1961source viewer1=portrait;2–17=161–176;18–38=PlatesIII–XXIII;39=177. Printed-to-capture segments:161→3–4;162→4–6;163→6–7;164→8–9;165→9–11;166→11–12;167→13–14;168→15–16;169→16–18;170→18–19;171→20–21;172→22–23;173→23–24;174→25–26;175→27–28;176→28–30;177→66–68. Thus printed177 is not adjacent to176 in viewer order.
+
+Local inspection reconstructions for1919/1921 extracted embedded JPEG tiles and cropped screenshot gutters(x222:2718 from2940×2236px tiles), concatenating consecutive portions at page separators. These2496×3840px quality95JPEGs are processing copies, without intentional modification of content and without byte identity to source images. No reconstructed image is published. Source hashes and the above exact capture mapping fix retrieval; reconstruction/rendering adds no research count.
+
+Encountered illustrations/typeset epigraphic displays are recorded below. Labels describe source authors' photos/tracings/reconstructions. No project tracing or independent new epigraphic edition was produced.
+
+**RB1919/RB1921 illustration register:**
+
+- Fig1,printed535,sourceviewer4,PDF6–7: “La mosaïque d’Aïn Douq. Schéma d’ensemble.” Full schematic,0–5m scale,magneticNarrow. Approximation limitation536n1. Encountered as source image; no project tracing or metric registration created.
+- Fig2,printed538,sourceviewer7,PDF11–13: “INSCRIPTION DU SANCTUAIRE JUIF D’AÏN DOUQ.” Author tracing/reducedfacsimileL.H.V., not a direct ancient-original photo or projectepigraphic transcription. No scale/north.
+- Printed540,sourceviewer9,PDF14–16: typeset eleven-line inscription transcription and translation; textual epigraphic presentation, not an archaeological plan/chart. No image is uploaded. Repairs/restorations are explicit in article.
+
+1921:
+- PlXV,unpaginated,sourceviewer3–6,PDF4–11: four quadrants of one compositeplate labelledPlXV. Caption split across lowerquadrants: “INSCRIPTIONS de la SYNAGOGUE de NOᶜARAH.” Photographpanels show inscription1and2 together(menorah),3,4and5 together(Daniel-adjacentdonor texts). No scale/north. Photography creditedP.Savignac in580. Do not treat fourquadrants as fourindependentobservations or fourprintedpages.
+- PlXVI,unpaginated,sourceviewer21–22,PDF35–39: twohalves of one compositeplate labelledPlXVI; samecaption. Photos inscription7(top),8(lowerleft),6(lowerright). Credit “HélioLéonMarotteParis” atlower right; photography attribution580. No scale/north. Twohalves areoneplate.
+- Unnumbered tracing,printed599,sourceviewer27,PDF45–47: part of inscription7 supplied to clarify a logographic/letter-group interpretation including dottedpossiblewhite-letter shapes, explained598–599and599n1. Not a projecttracing or geospatialfeature. No scale/north.
+- Typeset inscription/translation displays at581,584–585,587,589,594–595,600 accompany epigraphic argument. They do not add field campaigns or reuse authority. No maps,hydraulicprofiles ortableofdatedstrata occurs in either supplied article.
+
+
+**RB1961 illustration register:**
+
+- **Portrait**, viewer1/capture1–2: FatherVincent,1872–1960; no plate number or scale, photographer unspecified.
+- **PlateIII**, viewer18/capture30–32: synagogue site viewed from the southeast, landscape photograph. No scale/north arrow.
+- **PlateIV**, viewer19/capture32–33: excavation plan, labelled current state and April1921, Vincent signature, dimensions and metric scale through10m; printed magnetic-north annotationN.M.(April1921). Observed/exposed plan, not restored elevation. Square court mark is not an independently dated pool.
+- **PlateV**, viewer20/capture34–35: restored synagogue plan, Vincent/April1921, metric scale andN.M.arrow; published reconstruction.
+- **PlateVI**, viewer21/capture35–37: restored elevation/section byVincent; published reconstruction with upper floors/roof, no independently exposed elevation.
+- **PlateVII**, viewer22/capture37–38: overall mosaic pavement drawing byVincent; metric scale, reconstructed/restored drawing distinguishes itself from photos.
+- **PlateVIII**, viewer23/capture39–40: entrance menorah, excavation photograph.
+- **PlateIX**, viewer24/capture40–42: entrance menorah drawing byVincent.
+- **PlateX**, viewer25/capture42–44: entrance gazelles, photograph.
+- **PlateXI**, viewer26/capture44–45: northwestern angle/border of the large central panel, photograph.
+- **PlateXII**, viewer27/capture46–47: two mosaic-detail photos, northern-border vegetal/vine motif and fruitbasket; fine caption continuation is clipped across capture boundaries, so no exact full transcription is claimed.
+- **PlateXIII**, viewer28/capture47–49: two western-border mosaic photos, caption interprets a squash(?) and Greekhorns(?), preserving printed uncertainty.
+- **PlateXIV**, viewer29/capture49–50: two mosaic-detail photos, eastern intercolumniation and caged bird.
+- **PlateXV**, viewer30/capture51–52: two animal medallion photos, gerboise(?) and peacock.
+- **PlateXVI**, viewer31/capture52–54: two animal medallion photos, uncertain porcine(?) caption and cock; uncertain first caption not independently normalized to a zoological identification.
+- **PlateXVII**, viewer32/capture54–55: two animal medallion photos, bison and lion.
+- **PlateXVIII**, viewer33/capture56–57: two animal medallion photos, jackal and eight-armed creature (source caption “Octopes”); no zoological re-identification.
+- **PlateXIX**, viewer34/capture58–59: zodiac photographed from the north.
+- **PlateXX**, viewer35/capture59–61: two zodiac-detail photographs, Aries and Cancer.
+- **PlateXXI**, viewer36/capture61–63: central zodiac sun-chariot photograph.
+- **PlateXXII**, viewer37/capture63–64: left leaf of TorahArk representation, photograph.
+- **PlateXXIII**, viewer38/capture65–66: one menorah flanking TorahArk, photograph.
+
+
+The common RB1961source hash/title/URL above applies to every portrait/plate/subphoto. The manuscript credits drawings toVincent; the introduction credits archaeological photographs toSavignac; portrait photographer is unspecified. PlatesXII–XVIII/XX contain the listed multiple photos. No hydraulic construction-contact section or phase diagram occurs. Scale/magneticnorth annotation does not establish a modern geodetic datum. All encountered images remain retrieval/access records until reproduction permission is established.
+
+### Combined result, accounting and next evidence
+
+With these specified new originals, reopen the earlier source-coverage claims for one additional combined **Achor argument/native-column check** (Neef+PG), and one additional combined **Noorath publication/phase/name/water check** (RB1919+RB1921+RB1961+ESI2). Both close **not identifiable from available evidence** for the Scroll's intended valley/feature and the earlier settlement-water continuity. Preserve the prior dated results, Nuʿeima/Buqeiʿa branches, deVos's conditional biblical proposal and EinDuyuk/Auja-related alternatives. Neither a northern name tradition nor later-site hydraulic proximity discriminates the Scroll target.
+
+Add **6 new scoped source targets /0 map intakes /2 combined bounded checks** to75/5/84, giving **81/5/86**. Counts cover Neef's full article, PG's native target column, the three complete RB publication scopes and ESI2's exact report. Source count is not an independent-campaign total: Vincent's publications share1919/1921ancestry, PG's proposition was previously quoted, and Neef interprets earlier traditions. ESI1983 is a separate salvage report; no recovered observation independently confirms the Scroll identification. Plate quadrants, article sections, digital copies, views, rendering, duplicates, BSAC intake and review add zero extra counts.
+
+No confirmed landmark/deposit, whole-candidate exclusion, negative excavation, formal assessment packet, decisive test, confidence, geographic point, feature-phase/contact gate,28-ID roster, regional denominator or outcome-ledger increment. Question states remain11Inprogress/1Queued. No confirmatory freeze or unused prediction follows from these exploratory source readings.
+
+Exact missing Achor source dependencies remain **Noth1955pp42–55 with title/start leaf** and **MilikRB66(1959)pp331–332**. For Noorath, the previous ESI2/RB access requirements are satisfied. Next needs the labelled early-settlement/reservoir/conduit plans, construction/use sections and pottery/coin context register connecting a particular installation to a named spring in one phase. Keep the original **Bar/Zertal2018ManassehV314–324/547–555** Auja/supply alternative as an unread source dependency. Adjacent-synagogue floor dating alone cannot assign Josephus's diverted water. Meinardus181–196/183–184 and Patrich1990p208n24/Netzer2002figures remain the separate unresolved source gaps. Stop retries for the originals supplied here; share any future failed URL immediately. No new outreach or order is scheduled.
