@@ -2,7 +2,7 @@
 
 `index.csv` lists every item in the **Copper Scroll** folder of the USC Digital Library (InscriptiFact collection, text 3Q15). There are 942 items. Each row has the catalog data, a link back to the item, and a detailed description of what the image shows.
 
-The repository includes small JPEG thumbnails in `images/medium-res`, added at commit `16df396`. Despite that folder name, these are not medium-resolution previews. Follow `usc_link` to see the library's item page.
+The repository includes small JPEG thumbnails in `images/medium-res`, added at commit `16df396`. Despite that folder name, these are not medium-resolution previews. Native public item-page previews are now stored separately in `images/previews`. Follow `usc_link` to see the library's item page.
 
 ## Repository image coverage and larger-preview retrieval
 
@@ -16,7 +16,27 @@ All 122 selected public item-page previews were acquired on 4 October 2026: 100 
 
 The earlier acquisition reported six failures. Five were caused by dropping underscore suffixes from USC record IDs; the exact CSV URLs resolve those records correctly. The sixth succeeded in this spaced retry. One preview initially appeared after its page metadata; a delayed retry acquired it successfully. The earlier manifest's item links in the direct-image column have been replaced with actual image URLs for all 122 files. Full-resolution archival TIFFs were not acquired; the existing catalogue notes indicate that they require USC login. Public preview access does not grant publication permission.
 
-This acquisition adds no engraving-order result, depth measurement, independent field observation, identification, confidence change or question closure. The original index descriptions and source credits above are preserved; this task only acquires image assets.
+### Remaining public previews — 5 October 2026
+
+After [PR #9](https://github.com/quadrin/CopperScroll/pull/9) was merged, all 820 remaining indexed public previews were acquired: 784 photographs and 36 static RTI/PTM posters. The 172 additional original-scroll photographs cover cuts 11–23, with 144 recto and 28 verso images. Together with the earlier 122 files, every one of the 906 indexed photographs now has a native 1000-pixel-longest-side preview. All 36 RTI/PTM records have their smaller native JPEG poster; the interactive PTM data files were not acquired.
+
+| New files | Coverage | Native width × height range (pixels) | Repository directory | Bytes |
+|---|---|---|---|---|
+| 612 | Facsimile photographs; columns 1–12 and indexed close-ups | 652–1000 × 667–1000; longest side 1000 | `images/previews/facsimile/` | 104,387,718 |
+| 172 | Original-scroll photographs; cuts 11–23 | 509–1000 × 962–1000; longest side 1000 | `images/previews/original-scroll-remaining/` | 12,505,465 |
+| 36 | Static RTI/PTM public posters | 334–512 × 321–512; longest side 512 | `images/previews/rti-public-previews/` | 1,256,265 |
+
+The new files total 118,149,448 bytes. Filenames preserve each index `uc_identifier`. Saved JPEG bytes were copied from the browser exports without resampling, cropping or re-encoding. RTI posters retain the resolution already described in the index; no resolution upgrade is claimed for that group. The original 122 cut 1–10 previews were retained unchanged.
+
+`remaining_preview_manifest.csv` contains all 820 records, including USC item URLs, exact signed direct image URLs, repository filenames, fully decoded dimensions, byte sizes, SHA-256 hashes and final acquisition status. It also records live catalog identifiers and titles. For all 36 RTI/PTM records, the JPEG preview-file identifier differs from the identifier displayed in the catalog metadata; some index titles abbreviate Top/Bottom. Both forms are recorded explicitly. The descriptive `index.csv`, including its original identifiers, observations and source credits, remains unchanged.
+
+Each indexed item URL was opened individually in Chrome. USC navigations were spaced at least 20 seconds apart; later requests allowed 12 seconds of that interval for the viewer to load before export. Photograph titles and catalog identifiers were checked against the index. RTI titles were checked with their Top/Bottom abbreviations expanded, and exports were selected by the observed preview-file identifier. Every saved image decoded fully. Both dimensions of all 784 new photographs exceed the corresponding 192-pixel-high thumbnail. The largest mean absolute RGB difference after resizing a validation copy to its thumbnail was 6.382 on the 0–255 scale. All 820 previews were reviewed in 18 labelled contact sheets for catalog cut/side or column/section consistency. Contact sheets and comparison copies did not alter the saved files; existing catalog/tag caveats below remain applicable.
+
+`remaining_preview_retry_log.csv` records observed loading/navigation interruptions and RTI identity discrepancies, with their resolutions. Sixteen photographs were initially missing after the main pass and were recovered with spaced retries. One required a further retry after another title-loading timeout. Final coverage is 820/820, with zero failed, missing or undecodable files.
+
+Direct image URLs are expiring signed CloudFront links. The durable USC item URL and file hash identify the source and downloaded bytes after those links expire. Acquisition used the public item-page JPEGs; full-resolution archival TIFFs and PTM data files remain outside this acquisition. The existing catalog access notes indicate USC login is required for archival TIFFs. Public viewing and downloading leave the educational-use restriction and written publication-permission requirement in force.
+
+This acquisition adds no engraving-order result, depth measurement, independent field observation, identification, confidence change or question closure. The original index descriptions and source credits are preserved; this task only acquires image assets.
 
 ## What is in the folder
 
