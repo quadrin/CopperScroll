@@ -1,0 +1,1592 @@
+{
+  "schema": "copper-scroll-ordering-audit-v1",
+  "date_utc": "2026-10-06",
+  "base_commit": "5a0e9561135fddec6af6030e8c19e52a9dd7edae",
+  "status": "completed retrospective arithmetic/definition audit",
+  "exposure": "Reported patterns, source text and outputs were already inspected. No confirmatory freeze, unseen prediction or new archaeological identification.",
+  "source_sha256": {
+    "data/scroll-text.js": "36ccd26b6e8c8c5048235188b8b85fe3399c8595e636c2e46cd8450341a1e07d",
+    "tools/build_scroll_text.py": "a761c38bdb0f0f05c179e58a3bfb99e8ac82d4689349fa6c9acfd0760ddc628f",
+    "tables/entry_concordance.csv": "b90949cd8f6052444e8066507d44117f008edf03b2b20536189333e9e66eb104",
+    "text/readings.json": "b1b3c9ea9b354e2006fd4c8018589162d7637f8c78d5df1fd95ce2d633f42f9c",
+    "deep_analysis/features.py": "a4ad5848713487a3e5c3b8a8bed8813ffc29e66186a4bd95d60a3d2b006e4a5a",
+    "deep_analysis/tests.py": "31f8e976079a0021407baf043f8517fe92f1b52e10bdba3e34c1046220cdd7ae",
+    "deep_analysis/tests_results.json": "c505b8efaed2966d3738d94f25d846f0ce2f2c41ffacffdfc9c9582ae4de7702",
+    "research/phases/phase4_summary.md": "673418ce0214354759f65a70b88de3370a0f1eef7e923fba2c3b55045aacb183",
+    "research/text/deeper_analysis_2026-09-30.md": "155e9189601c04d6f5100f56253495b8b9771c244e2b68cb49f4264d305c1531"
+  },
+  "source_text_attribution": {
+    "dataset": "ETCBC Dead Sea Scrolls Text-Fabric2.0.1, 3Q15",
+    "transcription_and_morphology": [
+      "Martin G. Abegg Jr.",
+      "James E. Bowley",
+      "Edward M. Cook"
+    ],
+    "conversion": [
+      "Jarod Jacobs",
+      "Martijn Naaijer",
+      "Dirk Roorda"
+    ],
+    "license": "CC BY-NC4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "source_file": "data/scroll-text.js",
+    "project_modifications": "Existing display conversion is documented in tools/build_scroll_text.py. This audit joins displayed h segments, groups tokens by the canonical concordance with its documented I6 boundary correction, and extracts limited formula/unit contexts and metadata. It computes statistics without editing source text or adjudicating readings."
+  },
+  "entry_order": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "12a",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "57",
+    "58",
+    "59",
+    "60"
+  ],
+  "slot_conventions": "61 Puech canonical slots include12a. Early block1–19 has20 slots; later20–59 has40. First16 canonical slots end at15; entry50 is zero-based position50 because12a shifts subsequent labels.",
+  "name_adjacency": {
+    "early_restored_Kohlit15": {
+      "ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "12a",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "n": 20,
+      "shared_name_edges": [
+        [
+          "1",
+          "17"
+        ],
+        [
+          "4",
+          "11"
+        ],
+        [
+          "4",
+          "15"
+        ],
+        [
+          "4",
+          "19"
+        ],
+        [
+          "6",
+          "13"
+        ],
+        [
+          "6",
+          "14"
+        ],
+        [
+          "11",
+          "15"
+        ],
+        [
+          "11",
+          "19"
+        ],
+        [
+          "13",
+          "14"
+        ],
+        [
+          "15",
+          "19"
+        ]
+      ],
+      "edge_labels": [
+        {
+          "entries": [
+            "1",
+            "17"
+          ],
+          "labels": [
+            "Achor"
+          ]
+        },
+        {
+          "entries": [
+            "4",
+            "11"
+          ],
+          "labels": [
+            "Kohlit"
+          ]
+        },
+        {
+          "entries": [
+            "4",
+            "15"
+          ],
+          "labels": [
+            "Kohlit"
+          ]
+        },
+        {
+          "entries": [
+            "4",
+            "19"
+          ],
+          "labels": [
+            "Kohlit"
+          ]
+        },
+        {
+          "entries": [
+            "6",
+            "13"
+          ],
+          "labels": [
+            "Melah"
+          ]
+        },
+        {
+          "entries": [
+            "6",
+            "14"
+          ],
+          "labels": [
+            "Melah"
+          ]
+        },
+        {
+          "entries": [
+            "11",
+            "15"
+          ],
+          "labels": [
+            "Kohlit"
+          ]
+        },
+        {
+          "entries": [
+            "11",
+            "19"
+          ],
+          "labels": [
+            "Kohlit"
+          ]
+        },
+        {
+          "entries": [
+            "13",
+            "14"
+          ],
+          "labels": [
+            "Melah"
+          ]
+        },
+        {
+          "entries": [
+            "15",
+            "19"
+          ],
+          "labels": [
+            "Kohlit"
+          ]
+        }
+      ],
+      "observed_adjacent_pairs": [
+        [
+          "13",
+          "14"
+        ]
+      ],
+      "observed": 1,
+      "expected": {
+        "numerator": 1,
+        "denominator": 1,
+        "decimal": 1.0
+      },
+      "distribution_labeled_order_counts": [
+        787768146631065600,
+        1011549938157158400,
+        496748877520896000,
+        120515269754880000,
+        15315482198016000,
+        979186566758400,
+        25107347865600,
+        0,
+        0,
+        0,
+        0
+      ],
+      "total_labeled_orders": 2432902008176640000,
+      "p_ge": {
+        "numerator": 16381,
+        "denominator": 24225,
+        "decimal": 0.676202270381837
+      },
+      "p_le": {
+        "numerator": 14333,
+        "denominator": 19380,
+        "decimal": 0.7395768833849329
+      },
+      "adjacency_event_subsets_enumerated": 1024
+    },
+    "early_no_identifiable_name15": {
+      "ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "12a",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "n": 20,
+      "shared_name_edges": [
+        [
+          "1",
+          "17"
+        ],
+        [
+          "4",
+          "11"
+        ],
+        [
+          "4",
+          "19"
+        ],
+        [
+          "6",
+          "13"
+        ],
+        [
+          "6",
+          "14"
+        ],
+        [
+          "11",
+          "19"
+        ],
+        [
+          "13",
+          "14"
+        ]
+      ],
+      "edge_labels": [
+        {
+          "entries": [
+            "1",
+            "17"
+          ],
+          "labels": [
+            "Achor"
+          ]
+        },
+        {
+          "entries": [
+            "4",
+            "11"
+          ],
+          "labels": [
+            "Kohlit"
+          ]
+        },
+        {
+          "entries": [
+            "4",
+            "19"
+          ],
+          "labels": [
+            "Kohlit"
+          ]
+        },
+        {
+          "entries": [
+            "6",
+            "13"
+          ],
+          "labels": [
+            "Melah"
+          ]
+        },
+        {
+          "entries": [
+            "6",
+            "14"
+          ],
+          "labels": [
+            "Melah"
+          ]
+        },
+        {
+          "entries": [
+            "11",
+            "19"
+          ],
+          "labels": [
+            "Kohlit"
+          ]
+        },
+        {
+          "entries": [
+            "13",
+            "14"
+          ],
+          "labels": [
+            "Melah"
+          ]
+        }
+      ],
+      "observed_adjacent_pairs": [
+        [
+          "13",
+          "14"
+        ]
+      ],
+      "observed": 1,
+      "expected": {
+        "numerator": 7,
+        "denominator": 10,
+        "decimal": 0.7
+      },
+      "distribution_labeled_order_counts": [
+        1134757970970624000,
+        945762409912320000,
+        303359530586112000,
+        45632604745728000,
+        3295339407360000,
+        94152554496000,
+        0,
+        0
+      ],
+      "total_labeled_orders": 2432902008176640000,
+      "p_ge": {
+        "numerator": 2177,
+        "denominator": 4080,
+        "decimal": 0.533578431372549
+      },
+      "p_le": {
+        "numerator": 16573,
+        "denominator": 19380,
+        "decimal": 0.8551599587203302
+      },
+      "adjacency_event_subsets_enumerated": 128
+    },
+    "later_Solomon23": {
+      "ids": [
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59"
+      ],
+      "n": 40,
+      "shared_name_edges": [
+        [
+          "20",
+          "21"
+        ],
+        [
+          "20",
+          "22"
+        ],
+        [
+          "20",
+          "24"
+        ],
+        [
+          "21",
+          "22"
+        ],
+        [
+          "21",
+          "24"
+        ],
+        [
+          "22",
+          "23"
+        ],
+        [
+          "22",
+          "24"
+        ],
+        [
+          "36",
+          "37"
+        ],
+        [
+          "51",
+          "52"
+        ]
+      ],
+      "edge_labels": [
+        {
+          "entries": [
+            "20",
+            "21"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "20",
+            "22"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "20",
+            "24"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "21",
+            "22"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "21",
+            "24"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "22",
+            "23"
+          ],
+          "labels": [
+            "Solomon"
+          ]
+        },
+        {
+          "entries": [
+            "22",
+            "24"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "36",
+            "37"
+          ],
+          "labels": [
+            "Shaveh"
+          ]
+        },
+        {
+          "entries": [
+            "51",
+            "52"
+          ],
+          "labels": [
+            "Zadok"
+          ]
+        }
+      ],
+      "observed_adjacent_pairs": [
+        [
+          "20",
+          "21"
+        ],
+        [
+          "21",
+          "22"
+        ],
+        [
+          "22",
+          "23"
+        ],
+        [
+          "36",
+          "37"
+        ],
+        [
+          "51",
+          "52"
+        ]
+      ],
+      "observed": 5,
+      "expected": {
+        "numerator": 9,
+        "denominator": 20,
+        "decimal": 0.45
+      },
+      "distribution_labeled_order_counts": [
+        503979549252746842536384157036029998530560000000,
+        260939841956305144203980200783517885399040000000,
+        46930890675429246110744220664108312166400000000,
+        3902670561192565553699036496133305139200000000,
+        159425711481386236057714049207500800000000000,
+        2890919568195803747179881425629347840000000,
+        14171174353900998760685693262888960000000,
+        0,
+        0,
+        0
+      ],
+      "total_labeled_orders": 815915283247897734345611269596115894272000000000,
+      "p_ge": {
+        "numerator": 41,
+        "denominator": 11515140,
+        "decimal": 3.56052987631935e-06
+      },
+      "p_le": {
+        "numerator": 57575699,
+        "denominator": 57575700,
+        "decimal": 0.9999999826315615
+      },
+      "adjacency_event_subsets_enumerated": 512
+    },
+    "later_Shallum23": {
+      "ids": [
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59"
+      ],
+      "n": 40,
+      "shared_name_edges": [
+        [
+          "20",
+          "21"
+        ],
+        [
+          "20",
+          "22"
+        ],
+        [
+          "20",
+          "24"
+        ],
+        [
+          "21",
+          "22"
+        ],
+        [
+          "21",
+          "24"
+        ],
+        [
+          "22",
+          "24"
+        ],
+        [
+          "36",
+          "37"
+        ],
+        [
+          "51",
+          "52"
+        ]
+      ],
+      "edge_labels": [
+        {
+          "entries": [
+            "20",
+            "21"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "20",
+            "22"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "20",
+            "24"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "21",
+            "22"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "21",
+            "24"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "22",
+            "24"
+          ],
+          "labels": [
+            "Secacah"
+          ]
+        },
+        {
+          "entries": [
+            "36",
+            "37"
+          ],
+          "labels": [
+            "Shaveh"
+          ]
+        },
+        {
+          "entries": [
+            "51",
+            "52"
+          ],
+          "labels": [
+            "Zadok"
+          ]
+        }
+      ],
+      "observed_adjacent_pairs": [
+        [
+          "20",
+          "21"
+        ],
+        [
+          "21",
+          "22"
+        ],
+        [
+          "36",
+          "37"
+        ],
+        [
+          "51",
+          "52"
+        ]
+      ],
+      "observed": 4,
+      "expected": {
+        "numerator": 2,
+        "denominator": 5,
+        "decimal": 0.4
+      },
+      "distribution_labeled_order_counts": [
+        532690476034319451134522217757882397491200000000,
+        242880890945457529839292951688114916556800000000,
+        37632828902475953298889320171995293286400000000,
+        2625776896034316060367452104680695398400000000,
+        84318487405710942626079874914189312000000000,
+        991982204773069913247998528402227200000000,
+        0,
+        0,
+        0
+      ],
+      "total_labeled_orders": 815915283247897734345611269596115894272000000000,
+      "p_ge": {
+        "numerator": 43,
+        "denominator": 411255,
+        "decimal": 0.0001045579992948414
+      },
+      "p_le": {
+        "numerator": 822509,
+        "denominator": 822510,
+        "decimal": 0.9999987842093105
+      },
+      "adjacency_event_subsets_enumerated": 256
+    }
+  },
+  "retained_name_branch_combinations": [
+    {
+      "entry15": "restored_Kohlit",
+      "entry23": "Solomon",
+      "early_result": "early_restored_Kohlit15",
+      "later_result": "later_Solomon23"
+    },
+    {
+      "entry15": "restored_Kohlit",
+      "entry23": "Shallum",
+      "early_result": "early_restored_Kohlit15",
+      "later_result": "later_Shallum23"
+    },
+    {
+      "entry15": "no_identifiable_name",
+      "entry23": "Solomon",
+      "early_result": "early_no_identifiable_name15",
+      "later_result": "later_Solomon23"
+    },
+    {
+      "entry15": "no_identifiable_name",
+      "entry23": "Shallum",
+      "early_result": "early_no_identifiable_name15",
+      "later_result": "later_Shallum23"
+    }
+  ],
+  "formula_contexts": [
+    {
+      "entry": "8",
+      "line": "II 5",
+      "word_zero_based": 4,
+      "full_formula": false,
+      "nearest_previous_nonnumber": "עצין",
+      "nearest_previous_nonnumber_line": "II 5",
+      "offering_precedes_after_numerals_and_editor_removed_tokens": false,
+      "intervening_tokens": [],
+      "preceding_formula_tokens": [
+        "עצין"
+      ]
+    },
+    {
+      "entry": "22",
+      "line": "V 7",
+      "word_zero_based": 1,
+      "full_formula": true,
+      "nearest_previous_nonnumber": "דמע",
+      "nearest_previous_nonnumber_line": "V 7",
+      "offering_precedes_after_numerals_and_editor_removed_tokens": true,
+      "intervening_tokens": [],
+      "preceding_formula_tokens": [
+        "כאלין",
+        "של",
+        "דמע"
+      ]
+    },
+    {
+      "entry": "50",
+      "line": "XI 1",
+      "word_zero_based": 4,
+      "full_formula": true,
+      "nearest_previous_nonnumber": "דמע",
+      "nearest_previous_nonnumber_line": "XI 1",
+      "offering_precedes_after_numerals_and_editor_removed_tokens": true,
+      "intervening_tokens": [],
+      "preceding_formula_tokens": [
+        "כלי",
+        "דמע"
+      ]
+    },
+    {
+      "entry": "51",
+      "line": "XI 4",
+      "word_zero_based": 5,
+      "full_formula": true,
+      "nearest_previous_nonnumber": "דמע",
+      "nearest_previous_nonnumber_line": "XI 4",
+      "offering_precedes_after_numerals_and_editor_removed_tokens": true,
+      "intervening_tokens": [
+        {
+          "surface": "עסרה",
+          "segments": [
+            [
+              "ע",
+              "c"
+            ],
+            [
+              "סרה",
+              ""
+            ]
+          ]
+        }
+      ],
+      "preceding_formula_tokens": [
+        "כלי",
+        "דמע◦",
+        "עסרה",
+        "דמע",
+        "עסרה"
+      ]
+    },
+    {
+      "entry": "54",
+      "line": "XI 11",
+      "word_zero_based": 0,
+      "full_formula": true,
+      "nearest_previous_nonnumber": "דמע",
+      "nearest_previous_nonnumber_line": "XI 10",
+      "offering_precedes_after_numerals_and_editor_removed_tokens": true,
+      "intervening_tokens": [
+        {
+          "surface": "אררבע",
+          "segments": [
+            [
+              "א",
+              ""
+            ],
+            [
+              "ר",
+              "x"
+            ],
+            [
+              "רב",
+              ""
+            ],
+            [
+              "ע",
+              "c"
+            ]
+          ]
+        },
+        {
+          "surface": "עסרה",
+          "segments": [
+            [
+              "עסרה",
+              ""
+            ]
+          ]
+        }
+      ],
+      "preceding_formula_tokens": [
+        "כלי",
+        "דמע",
+        "אררבע",
+        "עסרה"
+      ]
+    },
+    {
+      "entry": "55",
+      "line": "XI 15",
+      "word_zero_based": 0,
+      "full_formula": true,
+      "nearest_previous_nonnumber": "דמע",
+      "nearest_previous_nonnumber_line": "XI 14",
+      "offering_precedes_after_numerals_and_editor_removed_tokens": true,
+      "intervening_tokens": [
+        {
+          "surface": "לאחד",
+          "segments": [
+            [
+              "ל",
+              "c"
+            ],
+            [
+              "אחד",
+              ""
+            ]
+          ]
+        },
+        {
+          "surface": "מ",
+          "segments": [
+            [
+              "מ",
+              "x"
+            ]
+          ]
+        },
+        {
+          "surface": "עסורא",
+          "segments": [
+            [
+              "עס",
+              ""
+            ],
+            [
+              "ו",
+              "x"
+            ],
+            [
+              "רא",
+              ""
+            ]
+          ]
+        }
+      ],
+      "preceding_formula_tokens": [
+        "כלי",
+        "דמע",
+        "לאחד",
+        "מ",
+        "עסורא"
+      ]
+    }
+  ],
+  "formula_entry_statistics": {
+    "five_full_formulae": {
+      "entries": [
+        "22",
+        "50",
+        "51",
+        "54",
+        "55"
+      ],
+      "positions_zero_based": [
+        22,
+        50,
+        51,
+        54,
+        55
+      ],
+      "dema_entries": [
+        "4",
+        "12",
+        "13",
+        "22",
+        "33",
+        "50",
+        "51",
+        "54",
+        "55",
+        "58"
+      ],
+      "cooccurrence_count": 5,
+      "p_entry_cooccurrence_ge": {
+        "numerator": 84,
+        "denominator": 1983049,
+        "decimal": 4.235901382164536e-05
+      },
+      "scan_width_slots": 6,
+      "observed_max": 4,
+      "maximal_windows": [
+        [
+          "50",
+          "51",
+          "52",
+          "53",
+          "54",
+          "55"
+        ]
+      ],
+      "scan_distribution_subset_counts": [
+        0,
+        749398,
+        4411037,
+        758450,
+        29981,
+        281
+      ],
+      "total_subsets": 5949147,
+      "p_scan_ge": {
+        "numerator": 30262,
+        "denominator": 5949147,
+        "decimal": 0.005086779667740602
+      }
+    },
+    "six_stem_occurrences": {
+      "entries": [
+        "8",
+        "22",
+        "50",
+        "51",
+        "54",
+        "55"
+      ],
+      "positions_zero_based": [
+        7,
+        22,
+        50,
+        51,
+        54,
+        55
+      ],
+      "dema_entries": [
+        "4",
+        "12",
+        "13",
+        "22",
+        "33",
+        "50",
+        "51",
+        "54",
+        "55",
+        "58"
+      ],
+      "cooccurrence_count": 5,
+      "p_entry_cooccurrence_ge": {
+        "numerator": 933,
+        "denominator": 3966098,
+        "decimal": 0.0002352438089023519
+      },
+      "scan_width_slots": 6,
+      "observed_max": 4,
+      "maximal_windows": [
+        [
+          "50",
+          "51",
+          "52",
+          "53",
+          "54",
+          "55"
+        ]
+      ],
+      "scan_distribution_subset_counts": [
+        0,
+        1947792,
+        40271087,
+        12511356,
+        780010,
+        15071,
+        56
+      ],
+      "total_subsets": 55525372,
+      "p_scan_ge": {
+        "numerator": 113591,
+        "denominator": 7932196,
+        "decimal": 0.014320246247067016
+      }
+    }
+  },
+  "formula_readings": "g-ktbn retains כתבן/בתכן and disputed meanings. The locus family exists under either consonantal interpretation; these location/count tests do not decide the reading or account-record sense.",
+  "division_limits": {
+    "following_canonical_entries_if_formula_opens_next_item": [
+      "23",
+      "51",
+      "52",
+      "55",
+      "56"
+    ],
+    "full_formula_overlap_with_dema": 2,
+    "six_stem_overlap_with_dema": 2,
+    "boundary_sources": [
+      {
+        "entry": "22",
+        "item_milik": "24; 25 (only the closing ובתכן/בתכן phrase)",
+        "note": "M24: ends before ובתכן אצלם (V 7); M25: begins with ובתכן אצלם (end of V 7, 'And near there') + Puech 23 (V 8-11)"
+      },
+      {
+        "entry": "50",
+        "item_milik": "52; 53 (only the closing ובתכן/בתכן phrase)",
+        "note": "M52: ends before בתכן אצלם (XI 1); M53: begins with בתכן אצלם (end of XI 1, 'Just nearby'); ends before בתכן אצלם (XI 4)"
+      },
+      {
+        "entry": "51",
+        "item_milik": "53; 54 (only the closing ובתכן/בתכן phrase)",
+        "note": "M53: begins with בתכן אצלם (end of XI 1, 'Just nearby'); ends before בתכן אצלם (XI 4); M54: begins with בתכן אצלם (end of XI 4, 'And just nearby')"
+      },
+      {
+        "entry": "54",
+        "item_milik": "56; 57 (only the closing ובתכן/בתכן phrase)",
+        "note": "M56: ends before בתכן אצלן (XI 11); M57: begins with בתכן אצלן (XI 11, 'Nearby'); ends before XI 15"
+      },
+      {
+        "entry": "55",
+        "item_milik": "57; 58 (only the closing ובתכן/בתכן phrase)",
+        "note": "M57: begins with בתכן אצלן (XI 11, 'Nearby'); ends before XI 15; M58: begins with בתכן אצלן (XI 15, 'Just nearby') + first part of Puech 56 (XI 16 - XII 1a)"
+      }
+    ],
+    "complete_Milik_slot_null": null,
+    "p_literal_token_adjacency": null,
+    "limit": "The full Milik segmentation/null is not reconstructed. The61-slot cooccurrence and scan probabilities condition on Puech canonical slots; they are not division invariant or token-adjacency tests."
+  },
+  "full_unit_spelling": {
+    "definition": "Entry presence of literal ככרין after joining every h segment, as in features.py; no fresh manuscript reading and no adjudication of segment flags.",
+    "first16_slot_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "12a",
+      "13",
+      "14",
+      "15"
+    ],
+    "later45_slot_ids": [
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60"
+    ],
+    "first16_present": [
+      "1",
+      "3",
+      "6",
+      "8",
+      "9",
+      "11"
+    ],
+    "later45_present": [
+      "29",
+      "32",
+      "38",
+      "46",
+      "47",
+      "56",
+      "58",
+      "59"
+    ],
+    "entry_presence_counts": [
+      6,
+      8
+    ],
+    "token_occurrence_counts": [
+      6,
+      9
+    ],
+    "token_occurrences": [
+      {
+        "entry": "1",
+        "line": "I 4",
+        "word_zero_based": 1,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "3",
+        "line": "I 8",
+        "word_zero_based": 3,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "6",
+        "line": "II 2",
+        "word_zero_based": 0,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "8",
+        "line": "II 6",
+        "word_zero_based": 4,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "9",
+        "line": "II 9",
+        "word_zero_based": 2,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "11",
+        "line": "II 15",
+        "word_zero_based": 0,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "29",
+        "line": "VII 7",
+        "word_zero_based": 0,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "32",
+        "line": "VII 16",
+        "word_zero_based": 3,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "38",
+        "line": "IX 3",
+        "word_zero_based": 0,
+        "segments": [
+          [
+            "כ",
+            "c"
+          ],
+          [
+            "כרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "46",
+        "line": "X 7",
+        "word_zero_based": 0,
+        "segments": [
+          [
+            "כ",
+            ""
+          ],
+          [
+            "כ",
+            "u"
+          ],
+          [
+            "רין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "47",
+        "line": "X 10",
+        "word_zero_based": 2,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "56",
+        "line": "XII 1",
+        "word_zero_based": 3,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "56",
+        "line": "XII 3",
+        "word_zero_based": 1,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "58",
+        "line": "XII 7",
+        "word_zero_based": 4,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      },
+      {
+        "entry": "59",
+        "line": "XII 9",
+        "word_zero_based": 2,
+        "segments": [
+          [
+            "ככרין",
+            ""
+          ]
+        ]
+      }
+    ],
+    "annotation_classes": {
+      "c": "supplied/corrected by modern editor",
+      "u": "damaged/uncertain",
+      "r": "restored in lacuna",
+      "x": "removed by modern editor",
+      "d": "removed by ancient editor",
+      "s": "written above line by scribe"
+    },
+    "historical_T8_claim_counts": [
+      7,
+      4
+    ],
+    "historical_T8_per_entry_list": null,
+    "source_warning_entry38": "e38-bars records bars/pitchers alternatives; literal Abegg ככרין is not a settled unit reading.",
+    "scope": "No corrected Greek-gap result follows: only the literal feature is reproduced. Missing T8 entry-level coding/edition basis prevents substituting the reported7/4 as another scored branch."
+  },
+  "historical_outputs_retained": {
+    "T1_A": [
+      1,
+      0.999965,
+      0.67559,
+      0.73993
+    ],
+    "T1_20_59": [
+      5,
+      0.449365,
+      5e-06,
+      1.0
+    ],
+    "T1_pairs": {
+      "A": 10,
+      "B": 9
+    },
+    "T6_record": {
+      "rec": [
+        "8",
+        "22",
+        "50",
+        "51",
+        "54",
+        "55"
+      ],
+      "dema": [
+        "4",
+        "12",
+        "13",
+        "22",
+        "33",
+        "50",
+        "51",
+        "54",
+        "55",
+        "58"
+      ],
+      "both": [
+        "22",
+        "50",
+        "51",
+        "54",
+        "55"
+      ],
+      "p_cooc": 0.0002352438089023519
+    },
+    "T6_scan": {
+      "obs": 4,
+      "p": 0.01422
+    }
+  },
+  "multiple_testing": {
+    "all_report_family_tests_revalidated": false,
+    "adjusted_p_values": null,
+    "note": "All tails here are conditional, unadjusted retrospective checks. Source-selected blocks/labels and broader alternative tests remain outside these nulls. The historical Holm table uses a claimed literal-adjacency p without a justified token null; its interpretation cannot be inherited."
+  },
+  "conclusions": {
+    "later_name_clustering": "Supported descriptively relative to uniform labeled-order null under both retained entry23 readings, conditional on the historical hand-coded name list and fixed20–59 block.",
+    "earlier_random_order_claim": "A large tail probability neither establishes random construction nor rules out other grouping variables.",
+    "record_formula": "Five local offering-predecessor contexts are reproduced; literal-adjacency significance and historical meaning remain not identifiable from available evidence.",
+    "geography": "No regional proximity, place identification, route or deposit-existence inference follows from repeated labels alone."
+  }
+}
