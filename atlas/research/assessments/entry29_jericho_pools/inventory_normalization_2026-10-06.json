@@ -4599,5 +4599,104 @@
       81
     ],
     "source_images_added": false
+  },
+  "exact_source_access_followup_2026_10_06": {
+    "date_utc": "2026-10-06",
+    "baseline_commit": "f386cf14fb2a8fb8718e9a93af55672ae69e479a",
+    "mode": "Two parallel read-only exact-source access threads; no original target pages inspected",
+    "canonical_note": "README.md#exact-source-access-follow-up--6-october-2026-utc",
+    "targets": [
+      {
+        "records": [
+          "J11",
+          "J24"
+        ],
+        "source": "Netzer–Garbrecht2002, JRA Supplement46, ISBN9781887829465",
+        "needed": [
+          "Fig6 with caption and locus text",
+          "pp369–370/Fig10 with captions and bath-locus text"
+        ],
+        "retrieval_range": "366–379; preserve recorded pagination discrepancy",
+        "original_target_inspected": false,
+        "route": "https://journalofromanarchaeology.com/supplements/",
+        "route_contact": "jra@journalofromanarch.com",
+        "route_kind": "general publisher/supplier; scan custody and stock unverified"
+      },
+      {
+        "records": [
+          "J19"
+        ],
+        "source": "Meinardus BSAC18(1965–1966) pp181–196",
+        "needed": [
+          "pp183–184"
+        ],
+        "original_target_inspected": false,
+        "route": "https://dig.corps-cmhl.huji.ac.il/biblio/byzantine-church-st-andrew-jericho",
+        "route_result": "initial502 subsequently citation metadata recovered; no pages",
+        "institutional_record_nid": 10448
+      },
+      {
+        "records": [
+          "J20"
+        ],
+        "source": "Patrich1990 The Cells (Ta Kellia) of Choziba, Wadi el-Qilt, CollectioMaior36 pp205–226",
+        "needed": [
+          "p208n24"
+        ],
+        "original_target_inspected": false,
+        "route": "https://sbf.custodia.org/en/publications/collectio-maior/christian-archaeology-in-the-holy-land",
+        "route_result": "contents only; no chapter pages",
+        "institutional_record_nid": 9679,
+        "previous_inspection_guard": "Patrich1987–1988 ESI6 pp66–70 already inspected; no repeat count or target-wall/cistern chronology established"
+      }
+    ],
+    "access_failures": [
+      {
+        "url": "https://dig.corps-cmhl.huji.ac.il/biblio/byzantine-church-st-andrew-jericho",
+        "error": "502 BadGateway",
+        "subsequent_recovery": "citation metadata only; no original pages",
+        "immediately_shared": true
+      },
+      {
+        "url": "https://www.edizioniterrasanta.it/shop/christian-archaeology-in-the-holy-land-new-discoveries/",
+        "error": "400 Timeout fetching",
+        "subsequent_recovery": null,
+        "immediately_shared": true
+      },
+      {
+        "url": "https://dig.corps-cmhl.huji.ac.il/biblio/cells-%E2%80%8Eta-kellia-%E2%80%8E-choziba-wadi-el-qilt",
+        "error": "502 BadGateway",
+        "subsequent_recovery": null,
+        "immediately_shared": true
+      }
+    ],
+    "stop": "No further public retries pending supplied lawful pages or identified holding/accession",
+    "original_records_gates_geometry_confidence_outcomes_unchanged": true,
+    "identity_collapses": 0,
+    "research_activity_delta": [
+      0,
+      0,
+      0
+    ],
+    "activity": [
+      71,
+      5,
+      81
+    ],
+    "new_correspondence": false,
+    "delivery_or_reply_check": false,
+    "order_or_fee": false,
+    "source_images_added": false,
+    "bibliographic_navigation": {
+      "url": "https://de.cdn-website.com/3e823bf7e8654767a06a86d670bf72af/files/uploaded/Burmester-IndexBSAC.pdf",
+      "filename": "Burmester-IndexBSAC.pdf",
+      "pdf_pages": 31,
+      "formal_title": null,
+      "screenshot_viewer_page": 13,
+      "screenshot_result": "image returned without error; not forwarded for visual inspection or downloaded",
+      "printed_page_mapping": null,
+      "reuse_permission": null,
+      "publication_policy": "retain link only; no original target pages recovered"
+    }
   }
 }
