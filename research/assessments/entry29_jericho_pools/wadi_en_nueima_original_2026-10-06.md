@@ -126,3 +126,12 @@ If another office holds the records, could you provide its archive contact? Plea
 Thank you.
 
 This is prepared repository text only: **no email, Gmail draft, request submission, account login, order or fee** occurred. The public-source route stops here. Next verify the archive referral/holding and exact accession before retrieving a drawing; keep the report's closed archaeological result and all earlier parked hunts intact.
+
+
+## Archive referral sent — 6 October 2026 UTC
+
+The user explicitly authorized sending the prepared Wadi inquiry. The exact-case [official Archaeology Unit page](https://www.gov.il/en/departments/Units/archeology_unit) returned403Forbidden in this pass, immediately shared with the user. Current official search retrieval of the [lowercase unit route](https://www.gov.il/en/departments/units/archeology_unit) nevertheless returns the scientific-archive task and `mnz@mgar.co.il` contact; multiple official department records corroborate its general routing role. This is search-retrieved official contact evidence, without recovery of the blocked direct request or verification of a dedicated archivist. Exact-correspondent Gmail search found no prior message to this address.
+
+The inquiry was sent to **mnz@mgar.co.il** at6October2026 **14:17:38UTC /07:17:38LosAngeles**, subject “Archive referral: Wadi Nu'eima inspection reported in ESI 5, pp. 110–111.” It uses the prepared report identifiers, inspectors/byline/raw grid and bath-versus-western-rectangle distinction above, asks for a file identifier and surviving plan/section/photograph/construction record or confirmation that none was made, and requests a custodian referral, access/fees before an order and reproduction terms. A final sentence asks the general mailbox to forward it to the Archaeology Unit's scientific archive if necessary. Gmail message`1a11193c253cdb2e` and readback confirm `SENT`, the exact recipient/subject/body and no extra recipients or attachments.
+
+The earlier unsent-text section remains preparation history; current status is sent. Delivery, response, holding, field accession, drawing survival and hydraulic/phase evidence remain unverified. No fee/order occurred. Await the specific archive referral or records; public retrieval hunts remain closed. This sending/routing update adds zero activity or outcomes, retaining71/5/81, J23's null gates and the closed archaeological result.

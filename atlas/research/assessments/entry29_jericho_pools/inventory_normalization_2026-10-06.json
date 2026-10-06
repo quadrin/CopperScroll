@@ -3857,6 +3857,174 @@
           "original_pages_opened_this_pass": false
         }
       ]
+    },
+    {
+      "id": "REL_AC90_AC44_SUCCESSION_NOT_ALIAS",
+      "type": "possible_functional_succession_of_distinct_basins",
+      "members": [
+        "J05",
+        "J09"
+      ],
+      "statement": "A(C)90 may replace AC44 in use; Plan13 gives separate footprints. Stage4 versus Stage6 construction remains unresolved.",
+      "citations": [
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            52,
+            58,
+            59,
+            60,
+            67,
+            68,
+            69
+          ],
+          "figures": [
+            "Plan13 p.52",
+            "Ills.86–87 pp.58–59"
+          ],
+          "recorded_in": "netzer2001-first-pass.md#named-comparison-pools",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false
+        }
+      ]
+    },
+    {
+      "id": "REL_CY_LOWER_DISTINCT",
+      "type": "documented_distinct_source_features",
+      "subfeature_members": [
+        "CY_LOWER_CISTERN_1",
+        "CY_LOWER_CISTERN_2",
+        "CY_LOWER_CISTERN_3",
+        "CY_LOWER_CISTERN_4"
+      ],
+      "statement": "Four numbered lower cisterns are separate source-described features; this supplies no catalogue-membership, contemporaneity or eligible-basin count.",
+      "citations": [
+        {
+          "source_id": "MESHEL_AMIT1989",
+          "printed_pages": [
+            233,
+            234
+          ],
+          "figures": [
+            "Fig.8 p.234"
+          ],
+          "recorded_in": "README.md#cypros-lower-installations-and-terminal-gap",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false
+        }
+      ]
+    },
+    {
+      "id": "REL_CY_HILLTOP_POOLS_DISTINCT",
+      "type": "documented_distinct_source_features_with_relative_addition",
+      "subfeature_members": [
+        "CY_HILLTOP_BATHHOUSE_POOL",
+        "CY_LATER_ADDED_ROOM_POOL"
+      ],
+      "statement": "The later added-room pool is an additional pool adjacent to the bathhouse pool, rather than another state of that pool. Calendar dates, numbered loci and contemporaneous use remain unresolved.",
+      "citations": [
+        {
+          "source_id": "NETZER2006",
+          "printed_pages": [
+            207,
+            209
+          ],
+          "figures": [
+            "Fig.46 p.209 (reconstructed phase-coded plan)"
+          ],
+          "recorded_in": "README.md#cypros-separate-stepped-pool-notices-within-j18",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false
+        }
+      ]
+    },
+    {
+      "id": "REL_CY_SHARED_NOTICES",
+      "type": "shared_documentary_notice_references",
+      "members": [
+        "J14",
+        "J18"
+      ],
+      "subfeature_members": [
+        "CY_EASTERN_BRANCH",
+        "CY_LATER_SETTLING_BASINS",
+        "CY_LOWER_CISTERN_1",
+        "CY_LOWER_CISTERN_2",
+        "CY_LOWER_CISTERN_3",
+        "CY_LOWER_CISTERN_4",
+        "CY_POINT38_POOL",
+        "CY_POINT39_DIVISION_POOL",
+        "CY_SOUTHERN_BRANCH"
+      ],
+      "statement": "Nine registry notice IDs appear under both parent records. Twenty parent references represent eleven unique notice IDs, without establishing PADIS0145=PADIS0010 or physical membership of each notice.",
+      "citations": [
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            117
+          ],
+          "figures": [
+            "catalogue no.31"
+          ],
+          "recorded_in": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            118
+          ],
+          "figures": [
+            "catalogue no.32"
+          ],
+          "recorded_in": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false
+        },
+        {
+          "source_id": "MESHEL_AMIT1989",
+          "printed_pages": [
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242
+          ],
+          "figures": [
+            "Fig.1 pp.230–231",
+            "Fig.8 p.234",
+            "Fig.9 p.234",
+            "Fig.11 p.235 (reconstruction)",
+            "Fig.13 p.236"
+          ],
+          "recorded_in": "README.md#cypros-lower-installations-and-terminal-gap",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false
+        },
+        {
+          "source_id": "NETZER2006",
+          "printed_pages": [
+            207,
+            209
+          ],
+          "figures": [
+            "Fig.46 p.209 (reconstructed phase-coded plan)"
+          ],
+          "recorded_in": "README.md#cypros-separate-stepped-pool-notices-within-j18",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false
+        }
+      ]
     }
   ],
   "cypros_subfeature_notices": [
@@ -4280,5 +4448,156 @@
     "Individualbasin/state crosswalk and allstatuseligible alternatives",
     "Equal reading/unit/face/axis/phase opportunity for every control",
     "Exposure audit and specific unused prediction for identification"
-  ]
+  ],
+  "identity_audit_2026_10_06": {
+    "date_utc": "2026-10-06",
+    "baseline_commit": "f5f01be64ee06fa9faadfd4860a92b3b9e582088",
+    "mode": "Three parallel read-only source-cited repository crosswalk reviews; no native archaeological pages opened this pass",
+    "decision_rule": "Join notices only through explicit individual locus/feature or documented physical-state correspondence. Shared names, dimensions, bibliography and site coordinates do not establish equality.",
+    "original_record_ids_preserved": true,
+    "identity_collapses": 0,
+    "verified_regional_eligible_denominator": null,
+    "record_results": [
+      {
+        "original_id": "J06",
+        "identity_result": "unresolved",
+        "retained_description": "Western-pair aggregate; not the large central pair",
+        "locators": [
+          "Netzer1983 general plan p100 labels3/4",
+          "Netzer1989 p277/n14 p281"
+        ],
+        "missing": "Explicit member-to-numbered-AreaAC-locus crosswalk; dimensions alone cannot join notices."
+      },
+      {
+        "original_id": "J11",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0153 northern-estate pool notice",
+        "locators": [
+          "ROSAPAT2011 pp101–102 catalogue4",
+          "Netzer–Garbrecht2002 Fig6 (target, not inspected here)"
+        ],
+        "missing": "Exact2002 figure/caption and surrounding text mapping the notice to a named pool. Netzer1989 Fig6 p275 is a different aqueduct-endpoint figure."
+      },
+      {
+        "original_id": "J14",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0145 Cypros aggregate",
+        "locators": [
+          "ROSAPAT2011 p118 catalogue32",
+          "Meshel–Amit1989 pp233–234/Fig8"
+        ],
+        "missing": "Catalogue-to-individual-lower-cistern and hilltop-room crosswalk; point38/39 relation unresolved."
+      },
+      {
+        "original_id": "J18",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0010 Cypros aggregate with hilltop pool notices",
+        "locators": [
+          "ROSAPAT2011 p117 catalogue31",
+          "Netzer2006 pp207/209 Fig46"
+        ],
+        "missing": "Numbered loci and dated contacts linking individual notices to this parent; shared references supply no catalogue equality."
+      },
+      {
+        "original_id": "J08",
+        "identity_result": "unresolved",
+        "retained_description": "Ain es-Sultan reservoir notice",
+        "locators": [
+          "SWP1883 pp222–223",
+          "ROSAPAT2011 pp110–112"
+        ],
+        "missing": "Crosswalk between the24×40-foot historical reservoir and separately reported Roman nymphaeum, Ottoman pool and modern roofed pool; individual phases and inlet contacts."
+      },
+      {
+        "original_id": "J15",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0012 Khirbet el-Mafjar water-system aggregate",
+        "locators": [
+          "ROSAPAT2011 p126 catalogue50",
+          "ROSAPAT2011 pp155–156 PADIS0162 (separate notice)"
+        ],
+        "exact_original_locator": null,
+        "missing": "Individual reservoir/channel identifiers and phases; site name supplies no join to the later Tahunet/Mafjar notice."
+      },
+      {
+        "original_id": "J16",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0021 Tell el-Qos basin/cistern aggregate",
+        "locators": [
+          "ROSAPAT2011 p139 catalogue74"
+        ],
+        "exact_original_locator": null,
+        "missing": "Individually labelled basin/cistern plans and dated earlier-state evidence; compilation Byzantine heading supplies no individual phase."
+      },
+      {
+        "original_id": "J19",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0046 St Andrew pool/cistern aggregate",
+        "locators": [
+          "ROSAPAT2011 p107 catalogue12",
+          "Meinardus BSAC18(1965–1966) pp181–196, especially183–184 (target)"
+        ],
+        "missing": "Individual basin descriptions, footprint and chronology. The25×30m figure describes the church, not a pool."
+      },
+      {
+        "original_id": "J20",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0015 Deir Mar Jariys/Deir el Qelt cistern/aqueduct aggregate",
+        "locators": [
+          "ROSAPAT2011 p122 catalogue41",
+          "Patrich1987–1988 p66 and1990 p208 n24 (targets)"
+        ],
+        "missing": "Labelled cisterns and observed aqueduct attachments with construction phases; alternative site names supply no particular cistern identity."
+      },
+      {
+        "original_id": "J21",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0149 Quruntul–Doq aggregate",
+        "locators": [
+          "ROSAPAT2011 pp141–142 catalogue77",
+          "Amit1989 Hebrew pp223–228: small pools p225, Fig7 p226/table p227, filled10 p227, map11 Fig2 p224"
+        ],
+        "missing": "Catalogue-to-numbered-feature and AinDoq crosswalk; Garbrecht–Peleg1989/Amit2002 edition correspondence and phase/contact records."
+      },
+      {
+        "original_id": "J23",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0167 parent with one explicitly described bath and a separate western rectangle",
+        "locators": [
+          "Dinur–Feig ESI5 printed110–111/PDF118–119, Fig56 (artifacts)"
+        ],
+        "missing": "Original field loci/state crosswalk, complete bath count and dated aperture/wall/floor relation; local review IDs are not field loci."
+      },
+      {
+        "original_id": "J24",
+        "identity_result": "unresolved",
+        "retained_description": "PADIS0152 northern-estate wine-press-area bath aggregate",
+        "locators": [
+          "ROSAPAT2011 p102 catalogue5",
+          "Netzer2001 pp334–335; Netzer2004 pp25–30; Netzer–Garbrecht2002 Fig10 (targets)"
+        ],
+        "missing": "Bath-labelled loci and phases. SB2–7/9–13 labels the wine-press group rather than a particular bath; no join to AreaAC or J06/J11 is established."
+      }
+    ],
+    "ac94_hydraulic_states": "Early ceramic pipe, later open channel and southwest network concern one named basin with separate unresolved phases/contacts, not three basins.",
+    "structured_field_guard": {
+      "original_id": "J09",
+      "field": "northern_reference",
+      "recorded_relation": "east of A(C)94 in source plan frame",
+      "effective_verified_northern_reference": null,
+      "interpretation": "This object preserves an east–west relation only; a non-null object does not fulfill the northern-reference gate."
+    },
+    "all_previous_geometry_outcomes_confidence_coordinates_unchanged": true,
+    "research_activity_delta": [
+      0,
+      0,
+      0
+    ],
+    "activity": [
+      71,
+      5,
+      81
+    ],
+    "source_images_added": false
+  }
 }
