@@ -1,0 +1,1978 @@
+{
+  "source_commit": "525cee4fb40590d7d514376c11acaed1bdd91c15",
+  "source_path": "proiel/greek-nt.xml",
+  "source_sha256": "3e3839a7f1a32efc027eb0d0e525b0527354b1979dd01b85f2f8c5236e2e8cc6",
+  "scope": "Read complete 1894 distinct Nb lemma inventory for named-entity leakage, with exhaustive 96 uppercase-lemma decisions. Not a human audit of every token sense; potential lowercase contextual titles flagged. Target-neutral; no Copper Scroll prefix query. Ne mixed-lemma policy conservative source-wide normalized overlap.",
+  "all_sentences_status": {
+    "reviewed": 11506
+  },
+  "uppercase_Nb_lemma_count": 96,
+  "uppercase_Nb_occurrences": 325,
+  "uppercase_Nb_decisions": [
+    {
+      "lemma": "Αἰθίοψ",
+      "normalized_lemma": "ΑΙΘΙΟΨ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "383646",
+        "citation-part": "ACTS 8.27",
+        "form": "Αἰθίοψ"
+      },
+      "all_citations": [
+        "ACTS 8.27"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Γαλάτης",
+      "normalized_lemma": "ΓΑΛΑΤΗΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "438381",
+        "citation-part": "GAL 3.1",
+        "form": "Γαλάται"
+      },
+      "all_citations": [
+        "GAL 3.1"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Δημᾶς",
+      "normalized_lemma": "ΔΗΜΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "466238",
+        "citation-part": "PHILEM 1.24",
+        "form": "Δημᾶς"
+      },
+      "all_citations": [
+        "PHILEM 1.24"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Διόσκουρος",
+      "normalized_lemma": "ΔΙΟΣΚΟΥΡΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_epithet_or_divine_designation",
+      "example": {
+        "id": "398110",
+        "citation-part": "ACTS 28.11",
+        "form": "Διοσκούροις"
+      },
+      "all_citations": [
+        "ACTS 28.11"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ζηνᾶς",
+      "normalized_lemma": "ΖΗΝΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "465349",
+        "citation-part": "TIT 3.13",
+        "form": "Ζηνᾶν"
+      },
+      "all_citations": [
+        "TIT 3.13"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Θεσσαλονικεύς",
+      "normalized_lemma": "ΘΕΣΣΑΛΟΝΙΚΕΥΣ",
+      "occurrences": 4,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "392288",
+        "citation-part": "ACTS 20.4",
+        "form": "Θεσσαλονικέων"
+      },
+      "all_citations": [
+        "1THESS 1.1",
+        "2THESS 1.1",
+        "ACTS 20.4",
+        "ACTS 27.2"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Καῖσαρ",
+      "normalized_lemma": "ΚΑΙΣΑΡ",
+      "occurrences": 29,
+      "decision": "unknown_withhold",
+      "category": "personal_name_or_imperial_title",
+      "example": {
+        "id": "281701",
+        "citation-part": "MATT 22.17",
+        "form": "Καίσαρι"
+      },
+      "all_citations": [
+        "ACTS 17.7",
+        "ACTS 25.10",
+        "ACTS 25.11",
+        "ACTS 25.12",
+        "ACTS 25.21",
+        "ACTS 25.8",
+        "ACTS 26.32",
+        "ACTS 27.24",
+        "ACTS 28.19",
+        "JOHN 19.12",
+        "JOHN 19.15",
+        "LUKE 2.1",
+        "LUKE 20.22",
+        "LUKE 20.24",
+        "LUKE 20.25",
+        "LUKE 23.2",
+        "LUKE 3.1",
+        "MARK 12.14",
+        "MARK 12.16",
+        "MARK 12.17",
+        "MATT 22.17",
+        "MATT 22.21",
+        "PHIL 4.22"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Κεγχρεαί",
+      "normalized_lemma": "ΚΕΓΧΡΕΑΙ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "place_name",
+      "example": {
+        "id": "406597",
+        "citation-part": "ROM 16.1",
+        "form": "Κενχρεαῖς"
+      },
+      "all_citations": [
+        "ROM 16.1"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Κούαρτος",
+      "normalized_lemma": "ΚΟΥΑΡΤΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "407004",
+        "citation-part": "ROM 16.23",
+        "form": "Κούαρτος"
+      },
+      "all_citations": [
+        "ROM 16.23"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Κρής",
+      "normalized_lemma": "ΚΡΗΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "378648",
+        "citation-part": "ACTS 2.11",
+        "form": "Κρῆτες"
+      },
+      "all_citations": [
+        "ACTS 2.11",
+        "TIT 1.12"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Κρήτη",
+      "normalized_lemma": "ΚΡΗΤΗ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "place_name",
+      "example": {
+        "id": "464698",
+        "citation-part": "TIT 1.5",
+        "form": "Κρήτῃ"
+      },
+      "all_citations": [
+        "TIT 1.5"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Λαοδικεύς",
+      "normalized_lemma": "ΛΑΟΔΙΚΕΥΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "452281",
+        "citation-part": "COL 4.16",
+        "form": "Λαοδικέων"
+      },
+      "all_citations": [
+        "COL 4.16"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Λευίτης",
+      "normalized_lemma": "ΛΕΥΙΤΗΣ",
+      "occurrences": 3,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "766447",
+        "citation-part": "LUKE 10.32",
+        "form": "Λευείτης"
+      },
+      "all_citations": [
+        "ACTS 4.36",
+        "JOHN 1.19",
+        "LUKE 10.32"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Λιβερτῖνος",
+      "normalized_lemma": "ΛΙΒΕΡΤΙΝΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "381774",
+        "citation-part": "ACTS 6.9",
+        "form": "Λιβερτίνων"
+      },
+      "all_citations": [
+        "ACTS 6.9"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Λουκᾶς",
+      "normalized_lemma": "ΛΟΥΚΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "466240",
+        "citation-part": "PHILEM 1.24",
+        "form": "Λουκᾶς"
+      },
+      "all_citations": [
+        "PHILEM 1.24"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Λούκιος",
+      "normalized_lemma": "ΛΟΥΚΙΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406965",
+        "citation-part": "ROM 16.21",
+        "form": "Λούκιος"
+      },
+      "all_citations": [
+        "ROM 16.21"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Μαγδαληνή",
+      "normalized_lemma": "ΜΑΓΔΑΛΗΝΗ",
+      "occurrences": 12,
+      "decision": "exclude",
+      "category": "personal_epithet_or_divine_designation",
+      "example": {
+        "id": "287074",
+        "citation-part": "MATT 27.56",
+        "form": "Μαγδαληνὴ"
+      },
+      "all_citations": [
+        "JOHN 19.25",
+        "JOHN 20.1",
+        "JOHN 20.18",
+        "LUKE 24.10",
+        "LUKE 8.2",
+        "MARK 15.40",
+        "MARK 15.47",
+        "MARK 16.1",
+        "MARK 16.9",
+        "MATT 27.56",
+        "MATT 27.61",
+        "MATT 28.1"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Μαδιάμ",
+      "normalized_lemma": "ΜΑΔΙΑΜ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "place_name",
+      "example": {
+        "id": "382487",
+        "citation-part": "ACTS 7.29",
+        "form": "Μαδιάμ"
+      },
+      "all_citations": [
+        "ACTS 7.29"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Μακεδών",
+      "normalized_lemma": "ΜΑΚΕΔΩΝ",
+      "occurrences": 5,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "389397",
+        "citation-part": "ACTS 16.9",
+        "form": "Μακεδών"
+      },
+      "all_citations": [
+        "2COR 9.2",
+        "2COR 9.4",
+        "ACTS 16.9",
+        "ACTS 19.29",
+        "ACTS 27.2"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "normalized_lemma": "ΜΩΥΣΗΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "348432",
+        "citation-part": "JOHN 7.22",
+        "form": "Μωϋσέως"
+      },
+      "all_citations": [
+        "ACTS 3.22",
+        "JOHN 7.22"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Μᾶρκος",
+      "normalized_lemma": "ΜΑΡΚΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "466234",
+        "citation-part": "PHILEM 1.24",
+        "form": "Μάρκος"
+      },
+      "all_citations": [
+        "PHILEM 1.24"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Μῆδος",
+      "normalized_lemma": "ΜΗΔΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "378603",
+        "citation-part": "ACTS 2.9",
+        "form": "Μῆδοι"
+      },
+      "all_citations": [
+        "ACTS 2.9"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Νάρκισσος",
+      "normalized_lemma": "ΝΑΡΚΙΣΣΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406762",
+        "citation-part": "ROM 16.11",
+        "form": "Ναρκίσσου"
+      },
+      "all_citations": [
+        "ROM 16.11"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ναζαρηνός",
+      "normalized_lemma": "ΝΑΖΑΡΗΝΟΣ",
+      "occurrences": 6,
+      "decision": "exclude",
+      "category": "personal_epithet_or_divine_designation",
+      "example": {
+        "id": "102168",
+        "citation-part": "MARK 1.24",
+        "form": "Ναζαρηνέ"
+      },
+      "all_citations": [
+        "LUKE 24.19",
+        "LUKE 4.34",
+        "MARK 1.24",
+        "MARK 10.47",
+        "MARK 14.67",
+        "MARK 16.6"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Νηρεύς",
+      "normalized_lemma": "ΝΗΡΕΥΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406823",
+        "citation-part": "ROM 16.15",
+        "form": "Νηρέα"
+      },
+      "all_citations": [
+        "ROM 16.15"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Νικολαΐτης",
+      "normalized_lemma": "ΝΙΚΟΛΑΙΤΗΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "493250",
+        "citation-part": "REV 2.6",
+        "form": "Νικολαϊτῶν"
+      },
+      "all_citations": [
+        "REV 2.15",
+        "REV 2.6"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Νινευίτης",
+      "normalized_lemma": "ΝΙΝΕΥΙΤΗΣ",
+      "occurrences": 3,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "274433",
+        "citation-part": "MATT 12.41",
+        "form": "Νινευεῖται"
+      },
+      "all_citations": [
+        "LUKE 11.30",
+        "LUKE 11.32",
+        "MATT 12.41"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Οὐρβανός",
+      "normalized_lemma": "ΟΥΡΒΑΝΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406727",
+        "citation-part": "ROM 16.9",
+        "form": "Οὐρβανὸν"
+      },
+      "all_citations": [
+        "ROM 16.9"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Πάρθοι",
+      "normalized_lemma": "ΠΑΡΘΟΙ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "378601",
+        "citation-part": "ACTS 2.9",
+        "form": "Πάρθοι"
+      },
+      "all_citations": [
+        "ACTS 2.9"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Πέτρος",
+      "normalized_lemma": "ΠΕΤΡΟΣ",
+      "occurrences": 5,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "378220",
+        "citation-part": "ACTS 1.15",
+        "form": "Πέτρος"
+      },
+      "all_citations": [
+        "ACTS 1.15",
+        "ACTS 2.14",
+        "ACTS 2.38",
+        "ACTS 3.12",
+        "ACTS 4.8"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Πατροβᾶς",
+      "normalized_lemma": "ΠΑΤΡΟΒΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406808",
+        "citation-part": "ROM 16.14",
+        "form": "Πατροβᾶν"
+      },
+      "all_citations": [
+        "ROM 16.14"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Παῦλος",
+      "normalized_lemma": "ΠΑΥΛΟΣ",
+      "occurrences": 3,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "465870",
+        "citation-part": "PHILEM 1.1",
+        "form": "Παῦλος"
+      },
+      "all_citations": [
+        "PHILEM 1.1",
+        "PHILEM 1.19",
+        "PHILEM 1.9"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Περσίς",
+      "normalized_lemma": "ΠΕΡΣΙΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406778",
+        "citation-part": "ROM 16.12",
+        "form": "Περσίδα"
+      },
+      "all_citations": [
+        "ROM 16.12"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Πρίσκα",
+      "normalized_lemma": "ΠΡΙΣΚΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406629",
+        "citation-part": "ROM 16.3",
+        "form": "Πρίσκαν"
+      },
+      "all_citations": [
+        "ROM 16.3"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Σάρρα",
+      "normalized_lemma": "ΣΑΡΡΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "400892",
+        "citation-part": "ROM 4.19",
+        "form": "Σάρρας"
+      },
+      "all_citations": [
+        "ROM 4.19"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Σαδδουκαῖος",
+      "normalized_lemma": "ΣΑΔΔΟΥΚΑΙΟΣ",
+      "occurrences": 15,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "267817",
+        "citation-part": "MATT 3.7",
+        "form": "Σαδδουκαίων"
+      },
+      "all_citations": [
+        "ACTS 23.6",
+        "ACTS 23.7",
+        "ACTS 23.8",
+        "ACTS 4.1",
+        "ACTS 5.17",
+        "LUKE 20.27",
+        "MARK 12.18",
+        "MATT 16.1",
+        "MATT 16.11",
+        "MATT 16.12",
+        "MATT 16.6",
+        "MATT 22.23",
+        "MATT 22.34",
+        "MATT 3.7"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Σαμαρίτης",
+      "normalized_lemma": "ΣΑΜΑΡΙΤΗΣ",
+      "occurrences": 8,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "272352",
+        "citation-part": "MATT 10.5",
+        "form": "Σαμαριτῶν"
+      },
+      "all_citations": [
+        "ACTS 8.25",
+        "JOHN 4.39",
+        "JOHN 4.40",
+        "JOHN 8.48",
+        "LUKE 10.33",
+        "LUKE 17.16",
+        "LUKE 9.52",
+        "MATT 10.5"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Σαμαρῖτις",
+      "normalized_lemma": "ΣΑΜΑΡΙΤΙΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "344777",
+        "citation-part": "JOHN 4.9",
+        "form": "Σαμαρῖτις"
+      },
+      "all_citations": [
+        "JOHN 4.9"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Σατανᾶς",
+      "normalized_lemma": "ΣΑΤΑΝΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_epithet_or_divine_designation",
+      "example": {
+        "id": "406940",
+        "citation-part": "ROM 16.20",
+        "form": "σατανᾶν"
+      },
+      "all_citations": [
+        "ROM 16.20"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Σκύθης",
+      "normalized_lemma": "ΣΚΥΘΗΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "451724",
+        "citation-part": "COL 3.11",
+        "form": "Σκύθης"
+      },
+      "all_citations": [
+        "COL 3.11"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Σπανία",
+      "normalized_lemma": "ΣΠΑΝΙΑ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "place_name",
+      "example": {
+        "id": "406410",
+        "citation-part": "ROM 15.24",
+        "form": "Σπανίαν"
+      },
+      "all_citations": [
+        "ROM 15.24",
+        "ROM 15.28"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Συροφοινίκισσα",
+      "normalized_lemma": "ΣΥΡΟΦΟΙΝΙΚΙΣΣΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "106960",
+        "citation-part": "MARK 7.26",
+        "form": "Συροφοινίκισσα"
+      },
+      "all_citations": [
+        "MARK 7.26"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Σωσίπατρος",
+      "normalized_lemma": "ΣΩΣΙΠΑΤΡΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406969",
+        "citation-part": "ROM 16.21",
+        "form": "Σωσίπατρος"
+      },
+      "all_citations": [
+        "ROM 16.21"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Σύρος",
+      "normalized_lemma": "ΣΥΡΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "323527",
+        "citation-part": "LUKE 4.27",
+        "form": "Σύρος"
+      },
+      "all_citations": [
+        "LUKE 4.27"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ταρσεύς",
+      "normalized_lemma": "ΤΑΡΣΕΥΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "384148",
+        "citation-part": "ACTS 9.11",
+        "form": "Ταρσέα"
+      },
+      "all_citations": [
+        "ACTS 21.39",
+        "ACTS 9.11"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Τιμόθεος",
+      "normalized_lemma": "ΤΙΜΟΘΕΟΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406959",
+        "citation-part": "ROM 16.21",
+        "form": "Τιμόθεος"
+      },
+      "all_citations": [
+        "PHILEM 1.1",
+        "ROM 16.21"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Τρυφῶσα",
+      "normalized_lemma": "ΤΡΥΦΩΣΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406771",
+        "citation-part": "ROM 16.12",
+        "form": "Τρυφῶσαν"
+      },
+      "all_citations": [
+        "ROM 16.12"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Τρύφαινα",
+      "normalized_lemma": "ΤΡΥΦΑΙΝΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406769",
+        "citation-part": "ROM 16.12",
+        "form": "Τρύφαιναν"
+      },
+      "all_citations": [
+        "ROM 16.12"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "normalized_lemma": "ΦΑΡΙΣΑΙΟΣ",
+      "occurrences": 100,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "267815",
+        "citation-part": "MATT 3.7",
+        "form": "Φαρισαίων"
+      },
+      "all_citations": [
+        "ACTS 15.5",
+        "ACTS 23.6",
+        "ACTS 23.7",
+        "ACTS 23.8",
+        "ACTS 23.9",
+        "ACTS 26.5",
+        "ACTS 5.34",
+        "JOHN 1.24",
+        "JOHN 11.46",
+        "JOHN 11.47",
+        "JOHN 11.57",
+        "JOHN 12.19",
+        "JOHN 12.42",
+        "JOHN 18.3",
+        "JOHN 3.1",
+        "JOHN 4.1",
+        "JOHN 7.32",
+        "JOHN 7.45",
+        "JOHN 7.47",
+        "JOHN 7.48",
+        "JOHN 8.13",
+        "JOHN 8.3",
+        "JOHN 9.13",
+        "JOHN 9.15",
+        "JOHN 9.16",
+        "JOHN 9.40",
+        "LUKE 11.37",
+        "LUKE 11.38",
+        "LUKE 11.39",
+        "LUKE 11.42",
+        "LUKE 11.43",
+        "LUKE 11.53",
+        "LUKE 12.1",
+        "LUKE 13.31",
+        "LUKE 14.1",
+        "LUKE 14.3",
+        "LUKE 15.2",
+        "LUKE 16.14",
+        "LUKE 17.20",
+        "LUKE 18.10",
+        "LUKE 18.11",
+        "LUKE 19.39",
+        "LUKE 5.17",
+        "LUKE 5.21",
+        "LUKE 5.30",
+        "LUKE 5.33",
+        "LUKE 6.2",
+        "LUKE 6.7",
+        "LUKE 7.30",
+        "LUKE 7.36",
+        "LUKE 7.37",
+        "LUKE 7.39",
+        "MARK 10.2",
+        "MARK 12.13",
+        "MARK 2.16",
+        "MARK 2.18",
+        "MARK 2.24",
+        "MARK 3.6",
+        "MARK 7.1",
+        "MARK 7.3",
+        "MARK 7.5",
+        "MARK 8.11",
+        "MARK 8.15",
+        "MARK 9.11",
+        "MATT 12.14",
+        "MATT 12.2",
+        "MATT 12.24",
+        "MATT 12.38",
+        "MATT 15.1",
+        "MATT 15.12",
+        "MATT 16.1",
+        "MATT 16.11",
+        "MATT 16.12",
+        "MATT 16.6",
+        "MATT 19.3",
+        "MATT 21.45",
+        "MATT 22.15",
+        "MATT 22.34",
+        "MATT 22.41",
+        "MATT 23.13",
+        "MATT 23.15",
+        "MATT 23.2",
+        "MATT 23.23",
+        "MATT 23.25",
+        "MATT 23.26",
+        "MATT 23.27",
+        "MATT 23.29",
+        "MATT 27.62",
+        "MATT 3.7",
+        "MATT 5.20",
+        "MATT 9.11",
+        "MATT 9.14",
+        "MATT 9.34",
+        "PHIL 3.5"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Φιλήμων",
+      "normalized_lemma": "ΦΙΛΗΜΩΝ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "465878",
+        "citation-part": "PHILEM 1.1",
+        "form": "Φιλήμονι"
+      },
+      "all_citations": [
+        "PHILEM 1.1"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Φιλιππήσιος",
+      "normalized_lemma": "ΦΙΛΙΠΠΗΣΙΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "448807",
+        "citation-part": "PHIL 4.15",
+        "form": "Φιλιππήσιοι"
+      },
+      "all_citations": [
+        "PHIL 4.15"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Φιλόλογος",
+      "normalized_lemma": "ΦΙΛΟΛΟΓΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406819",
+        "citation-part": "ROM 16.15",
+        "form": "Φιλόλογον"
+      },
+      "all_citations": [
+        "ROM 16.15"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Φλέγων",
+      "normalized_lemma": "ΦΛΕΓΩΝ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406804",
+        "citation-part": "ROM 16.14",
+        "form": "Φλέγοντα"
+      },
+      "all_citations": [
+        "ROM 16.14"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Φοίβη",
+      "normalized_lemma": "ΦΟΙΒΗ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406586",
+        "citation-part": "ROM 16.1",
+        "form": "Φοίβην"
+      },
+      "all_citations": [
+        "ROM 16.1"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Χερουβίμ",
+      "normalized_lemma": "ΧΕΡΟΥΒΙΜ",
+      "occurrences": 1,
+      "decision": "retain_if_other_filters_pass",
+      "category": "common_class_of_supernatural_beings_cherubim_not_individual_name",
+      "example": {
+        "id": "469411",
+        "citation-part": "HEB 9.5",
+        "form": "Χερουβεὶν"
+      },
+      "all_citations": [
+        "HEB 9.5"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Χριστιανός",
+      "normalized_lemma": "ΧΡΙΣΤΙΑΝΟΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "386279",
+        "citation-part": "ACTS 11.26",
+        "form": "Χριστιανούς"
+      },
+      "all_citations": [
+        "ACTS 11.26",
+        "ACTS 26.28"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Χριστός",
+      "normalized_lemma": "ΧΡΙΣΤΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_epithet_or_divine_designation",
+      "example": {
+        "id": "468155",
+        "citation-part": "HEB 6.1",
+        "form": "Χριστοῦ"
+      },
+      "all_citations": [
+        "HEB 6.1"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἀκύλας",
+      "normalized_lemma": "ΑΚΥΛΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406631",
+        "citation-part": "ROM 16.3",
+        "form": "Ἀκύλαν"
+      },
+      "all_citations": [
+        "ROM 16.3"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἀλεξανδρεύς",
+      "normalized_lemma": "ΑΛΕΞΑΝΔΡΕΥΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "381778",
+        "citation-part": "ACTS 6.9",
+        "form": "Ἀλεξανδρέων"
+      },
+      "all_citations": [
+        "ACTS 18.24",
+        "ACTS 6.9"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀμπλιᾶτος",
+      "normalized_lemma": "ΑΜΠΛΙΑΤΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406719",
+        "citation-part": "ROM 16.8",
+        "form": "Ἀμπλιᾶτον"
+      },
+      "all_citations": [
+        "ROM 16.8"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀνδρόνικος",
+      "normalized_lemma": "ΑΝΔΡΟΝΙΚΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406693",
+        "citation-part": "ROM 16.7",
+        "form": "Ἀνδρόνικον"
+      },
+      "all_citations": [
+        "ROM 16.7"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀντιοχεύς",
+      "normalized_lemma": "ΑΝΤΙΟΧΕΥΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "381709",
+        "citation-part": "ACTS 6.5",
+        "form": "Ἀντιοχέα"
+      },
+      "all_citations": [
+        "ACTS 6.5"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀπελλῆς",
+      "normalized_lemma": "ΑΠΕΛΛΗΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406740",
+        "citation-part": "ROM 16.10",
+        "form": "Ἀπελλῆν"
+      },
+      "all_citations": [
+        "ROM 16.10"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀπολλῶς",
+      "normalized_lemma": "ΑΠΟΛΛΩΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "465353",
+        "citation-part": "TIT 3.13",
+        "form": "Ἀπολλῶν"
+      },
+      "all_citations": [
+        "TIT 3.13"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἀπφία",
+      "normalized_lemma": "ΑΠΦΙΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "465885",
+        "citation-part": "PHILEM 1.2",
+        "form": "Ἀπφίᾳ"
+      },
+      "all_citations": [
+        "PHILEM 1.2"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀρίσταρχος",
+      "normalized_lemma": "ΑΡΙΣΤΑΡΧΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "466236",
+        "citation-part": "PHILEM 1.24",
+        "form": "Ἀρίσταρχος"
+      },
+      "all_citations": [
+        "PHILEM 1.24"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἀρεοπαγίτης",
+      "normalized_lemma": "ΑΡΕΟΠΑΓΙΤΗΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "390788",
+        "citation-part": "ACTS 17.34",
+        "form": "Ἀρεοπαγείτης"
+      },
+      "all_citations": [
+        "ACTS 17.34"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀριστόβουλος",
+      "normalized_lemma": "ΑΡΙΣΤΟΒΟΥΛΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406750",
+        "citation-part": "ROM 16.10",
+        "form": "Ἀριστοβούλου"
+      },
+      "all_citations": [
+        "ROM 16.10"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀσία",
+      "normalized_lemma": "ΑΣΙΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "place_name",
+      "example": {
+        "id": "406679",
+        "citation-part": "ROM 16.5",
+        "form": "Ἀσίας"
+      },
+      "all_citations": [
+        "ROM 16.5"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἀσιάρχης",
+      "normalized_lemma": "ΑΣΙΑΡΧΗΣ",
+      "occurrences": 1,
+      "decision": "retain_if_other_filters_pass",
+      "category": "common_office_title_asiarch",
+      "example": {
+        "id": "392019",
+        "citation-part": "ACTS 19.31",
+        "form": "Ἀσιαρχῶν"
+      },
+      "all_citations": [
+        "ACTS 19.31"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀσιανός",
+      "normalized_lemma": "ΑΣΙΑΝΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "392300",
+        "citation-part": "ACTS 20.4",
+        "form": "Ἀσιανοὶ"
+      },
+      "all_citations": [
+        "ACTS 20.4"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀσύγκριτος",
+      "normalized_lemma": "ΑΣΥΓΚΡΙΤΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406802",
+        "citation-part": "ROM 16.14",
+        "form": "Ἀσύνκριτον"
+      },
+      "all_citations": [
+        "ROM 16.14"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἀχαΐα",
+      "normalized_lemma": "ΑΧΑΙΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "place_name",
+      "example": {
+        "id": "406443",
+        "citation-part": "ROM 15.26",
+        "form": "Ἀχαΐα"
+      },
+      "all_citations": [
+        "ROM 15.26"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἄραψ",
+      "normalized_lemma": "ΑΡΑΨ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "378650",
+        "citation-part": "ACTS 2.11",
+        "form": "Ἄραβες"
+      },
+      "all_citations": [
+        "ACTS 2.11"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἄρχιππος",
+      "normalized_lemma": "ΑΡΧΙΠΠΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "465889",
+        "citation-part": "PHILEM 1.2",
+        "form": "Ἀρχίππῳ"
+      },
+      "all_citations": [
+        "PHILEM 1.2"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἐλαμείτης",
+      "normalized_lemma": "ΕΛΑΜΕΙΤΗΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "378605",
+        "citation-part": "ACTS 2.9",
+        "form": "Ἐλαμεῖται"
+      },
+      "all_citations": [
+        "ACTS 2.9"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἐπαίνετος",
+      "normalized_lemma": "ΕΠΑΙΝΕΤΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406670",
+        "citation-part": "ROM 16.5",
+        "form": "Ἐπαινετὸν"
+      },
+      "all_citations": [
+        "ROM 16.5"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἐπικούρειος",
+      "normalized_lemma": "ΕΠΙΚΟΥΡΕΙΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "390432",
+        "citation-part": "ACTS 17.18",
+        "form": "Ἐπικουρίων"
+      },
+      "all_citations": [
+        "ACTS 17.18"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἑλληνιστής",
+      "normalized_lemma": "ΕΛΛΗΝΙΣΤΗΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "381605",
+        "citation-part": "ACTS 6.1",
+        "form": "Ἑλληνιστῶν"
+      },
+      "all_citations": [
+        "ACTS 6.1",
+        "ACTS 9.29"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἑρμᾶς",
+      "normalized_lemma": "ΕΡΜΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406810",
+        "citation-part": "ROM 16.14",
+        "form": "Ἑρμᾶν"
+      },
+      "all_citations": [
+        "ROM 16.14"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἑρμῆς",
+      "normalized_lemma": "ΕΡΜΗΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406806",
+        "citation-part": "ROM 16.14",
+        "form": "Ἑρμῆν"
+      },
+      "all_citations": [
+        "ROM 16.14"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἔραστος",
+      "normalized_lemma": "ΕΡΑΣΤΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406998",
+        "citation-part": "ROM 16.23",
+        "form": "Ἔραστος"
+      },
+      "all_citations": [
+        "ROM 16.23"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἕλλην",
+      "normalized_lemma": "ΕΛΛΗΝ",
+      "occurrences": 26,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "348704",
+        "citation-part": "JOHN 7.35",
+        "form": "Ἑλλήνων"
+      },
+      "all_citations": [
+        "1COR 1.22",
+        "1COR 1.24",
+        "1COR 10.32",
+        "1COR 12.13",
+        "ACTS 11.20",
+        "ACTS 14.1",
+        "ACTS 16.1",
+        "ACTS 16.3",
+        "ACTS 17.4",
+        "ACTS 18.4",
+        "ACTS 19.10",
+        "ACTS 19.17",
+        "ACTS 20.21",
+        "ACTS 21.28",
+        "COL 3.11",
+        "GAL 2.3",
+        "GAL 3.28",
+        "JOHN 12.20",
+        "JOHN 7.35",
+        "ROM 1.14",
+        "ROM 1.16",
+        "ROM 10.12",
+        "ROM 2.10",
+        "ROM 2.9",
+        "ROM 3.9"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἠσαΐας",
+      "normalized_lemma": "ΗΣΑΙΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406159",
+        "citation-part": "ROM 15.12",
+        "form": "Ἠσαΐας"
+      },
+      "all_citations": [
+        "ROM 15.12"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἡρῳδίων",
+      "normalized_lemma": "ΗΡΩΙΔΙΩΝ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406753",
+        "citation-part": "ROM 16.11",
+        "form": "Ἡρῳδίωνα"
+      },
+      "all_citations": [
+        "ROM 16.11"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἡρῳδιανοί",
+      "normalized_lemma": "ΗΡΩΙΔΙΑΝΟΙ",
+      "occurrences": 3,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "281658",
+        "citation-part": "MATT 22.16",
+        "form": "Ἡρωδιανῶν"
+      },
+      "all_citations": [
+        "MARK 12.13",
+        "MARK 3.6",
+        "MATT 22.16"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἰάσων",
+      "normalized_lemma": "ΙΑΣΩΝ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406967",
+        "citation-part": "ROM 16.21",
+        "form": "Ἰάσων"
+      },
+      "all_citations": [
+        "ROM 16.21"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ἰουδαϊσμός",
+      "normalized_lemma": "ΙΟΥΔΑΙΣΜΟΣ",
+      "occurrences": 2,
+      "decision": "retain_if_other_filters_pass",
+      "category": "abstract_religion_judaism",
+      "example": {
+        "id": "437749",
+        "citation-part": "GAL 1.13",
+        "form": "Ἰουδαϊσμῷ"
+      },
+      "all_citations": [
+        "GAL 1.13",
+        "GAL 1.14"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἰουλία",
+      "normalized_lemma": "ΙΟΥΛΙΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406821",
+        "citation-part": "ROM 16.15",
+        "form": "Ἰουλίαν"
+      },
+      "all_citations": [
+        "ROM 16.15"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἰουνιᾶς",
+      "normalized_lemma": "ΙΟΥΝΙΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406695",
+        "citation-part": "ROM 16.7",
+        "form": "Ἰουνιᾶν"
+      },
+      "all_citations": [
+        "ROM 16.7"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἰσραηλίτης",
+      "normalized_lemma": "ΙΣΡΑΗΛΙΤΗΣ",
+      "occurrences": 9,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "343301",
+        "citation-part": "JOHN 1.48",
+        "form": "Ἰσραηλείτης"
+      },
+      "all_citations": [
+        "2COR 11.22",
+        "ACTS 13.16",
+        "ACTS 2.22",
+        "ACTS 21.28",
+        "ACTS 3.12",
+        "ACTS 5.35",
+        "JOHN 1.48",
+        "ROM 11.1",
+        "ROM 9.4"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ἱεροσολυμίτης",
+      "normalized_lemma": "ΙΕΡΟΣΟΛΥΜΙΤΗΣ",
+      "occurrences": 2,
+      "decision": "exclude",
+      "category": "ethnic_geographic_sect_or_named_group_designation",
+      "example": {
+        "id": "101817",
+        "citation-part": "MARK 1.5",
+        "form": "Ἱεροσολυμεῖται"
+      },
+      "all_citations": [
+        "JOHN 7.25",
+        "MARK 1.5"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ὀλυμπᾶς",
+      "normalized_lemma": "ΟΛΥΜΠΑΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406830",
+        "citation-part": "ROM 16.15",
+        "form": "Ὀλυμπᾶν"
+      },
+      "all_citations": [
+        "ROM 16.15"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ὀνήσιμος",
+      "normalized_lemma": "ΟΝΗΣΙΜΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "466029",
+        "citation-part": "PHILEM 1.10",
+        "form": "Ὀνήσιμον"
+      },
+      "all_citations": [
+        "PHILEM 1.10"
+      ],
+      "Ne_lemma_overlap": true
+    },
+    {
+      "lemma": "Ῥεβέκκα",
+      "normalized_lemma": "ΡΕΒΕΚΚΑ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "403328",
+        "citation-part": "ROM 9.10",
+        "form": "Ῥεβέκκα"
+      },
+      "all_citations": [
+        "ROM 9.10"
+      ],
+      "Ne_lemma_overlap": false
+    },
+    {
+      "lemma": "Ῥοῦφος",
+      "normalized_lemma": "ΡΟΥΦΟΣ",
+      "occurrences": 1,
+      "decision": "exclude",
+      "category": "personal_name",
+      "example": {
+        "id": "406789",
+        "citation-part": "ROM 16.13",
+        "form": "Ῥοῦφον"
+      },
+      "all_citations": [
+        "ROM 16.13"
+      ],
+      "Ne_lemma_overlap": true
+    }
+  ],
+  "lowercase_Nb_Ne_lemma_overlap": [
+    {
+      "lemma": "γάζα",
+      "normalized_lemma": "ΓΑΖΑ",
+      "occurrences": 1,
+      "decision": "withhold_primary_mixed_lemma",
+      "example": {
+        "id": "383658",
+        "citation-part": "ACTS 8.27",
+        "form": "γάζης"
+      }
+    },
+    {
+      "lemma": "καρπός",
+      "normalized_lemma": "ΚΑΡΠΟΣ",
+      "occurrences": 65,
+      "decision": "withhold_primary_mixed_lemma",
+      "example": {
+        "id": "267839",
+        "citation-part": "MATT 3.8",
+        "form": "καρπὸν"
+      }
+    },
+    {
+      "lemma": "παντοκράτωρ",
+      "normalized_lemma": "ΠΑΝΤΟΚΡΑΤΩΡ",
+      "occurrences": 9,
+      "decision": "withhold_primary_mixed_lemma",
+      "example": {
+        "id": "430369",
+        "citation-part": "2COR 6.18",
+        "form": "παντοκράτωρ"
+      }
+    },
+    {
+      "lemma": "στέφανος",
+      "normalized_lemma": "ΣΤΕΦΑΝΟΣ",
+      "occurrences": 17,
+      "decision": "withhold_primary_mixed_lemma",
+      "example": {
+        "id": "286612",
+        "citation-part": "MATT 27.29",
+        "form": "στέφανον"
+      }
+    },
+    {
+      "lemma": "φιλαδελφία",
+      "normalized_lemma": "ΦΙΛΑΔΕΛΦΙΑ",
+      "occurrences": 3,
+      "decision": "withhold_primary_mixed_lemma",
+      "example": {
+        "id": "759118",
+        "citation-part": "ROM 12.10",
+        "form": "φιλαδελφίᾳ"
+      }
+    },
+    {
+      "lemma": "φοῖνιξ",
+      "normalized_lemma": "ΦΟΙΝΙΞ",
+      "occurrences": 2,
+      "decision": "withhold_primary_mixed_lemma",
+      "example": {
+        "id": "353453",
+        "citation-part": "JOHN 12.13",
+        "form": "φοινίκων"
+      }
+    },
+    {
+      "lemma": "ἀπάτη",
+      "normalized_lemma": "ΑΠΑΤΗ",
+      "occurrences": 5,
+      "decision": "withhold_primary_mixed_lemma",
+      "example": {
+        "id": "275093",
+        "citation-part": "MATT 13.22",
+        "form": "ἀπάτη"
+      }
+    }
+  ],
+  "lowercase_semantic_flags": [
+    {
+      "lemma": "βαπτιστής",
+      "occurrences": 12,
+      "caveat": "John the Baptist contextual personal title; common lexical occupational meaning; conservative unknown optional",
+      "example": {
+        "id": "267707",
+        "citation-part": "MATT 3.1",
+        "form": "βαπτιστὴς"
+      }
+    },
+    {
+      "lemma": "ζηλωτής",
+      "occurrences": 7,
+      "caveat": "ordinary zealous person and group/epithet Zealot ambiguity; conservative unknown optional",
+      "example": {
+        "id": "325059",
+        "citation-part": "LUKE 6.15",
+        "form": "ζηλωτήν"
+      }
+    },
+    {
+      "lemma": "εὐρακύλων",
+      "occurrences": 1,
+      "caveat": "named wind Euroclydon in Acts 27:14; exclude named meteorological designation if definition excludes all names",
+      "example": {
+        "id": "397311",
+        "citation-part": "ACTS 27.14",
+        "form": "εὐρακύλων"
+      }
+    },
+    {
+      "lemma": "πύθων",
+      "occurrences": 1,
+      "caveat": "Python/divination spirit context Acts 16:16; mythological naming ambiguous; conservative unknown optional",
+      "example": {
+        "id": "389565",
+        "citation-part": "ACTS 16.16",
+        "form": "πύθωνα"
+      }
+    },
+    {
+      "lemma": "μαμωνᾶς",
+      "occurrences": 4,
+      "caveat": "wealth/mammon; literary personification ambiguity, lexical ordinary borrowed noun",
+      "example": {
+        "id": "270026",
+        "citation-part": "MATT 6.24",
+        "form": "μαμωνᾷ"
+      }
+    },
+    {
+      "lemma": "διάβολος",
+      "occurrences": 27,
+      "caveat": "Devil or slanderer; title/designation lexical common noun ambiguity; conservative unknown optional",
+      "example": {
+        "id": "268083",
+        "citation-part": "MATT 4.1",
+        "form": "διαβόλου"
+      }
+    },
+    {
+      "lemma": "ῥαββί",
+      "occurrences": 15,
+      "caveat": "rabbi common address/title; name-control title policy must be explicit",
+      "example": {
+        "id": "282262",
+        "citation-part": "MATT 23.7",
+        "form": "ῥαββεί"
+      }
+    },
+    {
+      "lemma": "ῥαββουνί",
+      "occurrences": 2,
+      "caveat": "rabboni common address/title; name-control title policy must be explicit",
+      "example": {
+        "id": "109920",
+        "citation-part": "MARK 10.51",
+        "form": "ῥαββουνί"
+      }
+    },
+    {
+      "lemma": "ἀββά",
+      "occurrences": 3,
+      "caveat": "Abba father common address/title; name-control title policy must be explicit",
+      "example": {
+        "id": "112902",
+        "citation-part": "MARK 14.36",
+        "form": "ἀββᾶ"
+      }
+    },
+    {
+      "lemma": "σικάριος",
+      "occurrences": 1,
+      "caveat": "assassin or named Sicarii group label; conservative unknown optional",
+      "example": {
+        "id": "393812",
+        "citation-part": "ACTS 21.38",
+        "form": "σικαρίων"
+      }
+    },
+    {
+      "lemma": "θεός",
+      "occurrences": 1207,
+      "caveat": "god common noun or divine referent; do not infer proper-name classification solely from referent",
+      "example": {
+        "id": "267151",
+        "citation-part": "MATT 1.23",
+        "form": "θεός"
+      }
+    },
+    {
+      "lemma": "κύριος",
+      "occurrences": 689,
+      "caveat": "lord/master common noun or title; do not infer proper name solely from referent",
+      "example": {
+        "id": "267063",
+        "citation-part": "MATT 1.20",
+        "form": "κυρίου"
+      }
+    },
+    {
+      "lemma": "σωτήρ",
+      "occurrences": 17,
+      "caveat": "savior common noun/title; retain unless frozen policy excludes all contextual titles",
+      "example": {
+        "id": "320919",
+        "citation-part": "LUKE 1.47",
+        "form": "σωτῆρί"
+      }
+    }
+  ],
+  "uppercase_decision_counts": {
+    "exclude": 92,
+    "unknown_withhold": 1,
+    "retain_if_other_filters_pass": 3
+  }
+}

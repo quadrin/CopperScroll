@@ -119,8 +119,9 @@ See `phase4_summary.md` and `tables/phase4_hypotheses.csv`.
 - F4.10 (evidence) **The palaeographic claims conflict, and none dates the Greek forms.**
   - Milik: the Greek is a book script (p. 221), the Hebrew is notarial (p. 216).
   - Lefkovits: one hand engraved both (p. 503).
-  - Lika Tov: in I 4, ΚΕΝ is 2 mm lower (CSS p. 289).
-  - Puech: the Ι at IV 2 is engraved more deeply.
+  - 4October2026primary TovCSSpp288–290/viewers305–307 verified: p289explicitly names ΚΕΝ and שבעשרה(seventeen), written2mm below preceding writing surface. Axis/datum/method remain undefined. Exactwording verified; original depth and timing unmeasured. The Greek-only shorthand is withdrawn.
+  - 4 October 2026 French2006 verification: Puech I p. 187/viewer 213 suggests a possible correction of an iota “apparently more deeply engraved”; I p. 179/viewer 205 defines braces as corrected or cancelled. This qualifies the inherited definite deeper-Ι shorthand. It supplies no numeric depth or authenticated Greek/Hebrew chronology bridge; frozen Ι remains inactive. The exact passage and full-edition acquisition are closed. Two readers independently checked 40 selected pre/post original-object photographs of cuts 1–10, both sides; registered crossing order, calibrated original depth and intervening event remain unknown at all seven loci. [Primary wording, physical scope and limits](../phases/phase4_summary.md#french-2006-report-and-photograph-review--4-october-2026).
+  - 3 October2026 frozen seven-locus photo audit: two readers cannot authenticate local crossings, metric depth or a distinct later episode in available DJD/CSS reproductions. All seven timing assessments **not identifiable**; no absence/rejection claim. [Result, primary-source scope and exact dependencies](../phases/phase4_summary.md#engraving-order-result--3-october-2026).
 
 ---
 

@@ -1,0 +1,1191 @@
+{
+  "date_utc": "2026-10-04",
+  "purpose": "Source provenance, exact inspection and missing original observations for frozen seven-locus engraving-order audit.",
+  "freeze_commit": "d7d3b6060dedc1d4b4182a620dcca79fc3a70ec2",
+  "sources": [
+    {
+      "id": "DJDIII1962",
+      "title": "Les petites grottes de Qumran, Planches",
+      "authors": "M. Baillet, J. T. Milik and R. de Vaux, with H. W. Baker",
+      "edition": "Clarendon, Oxford, 1962",
+      "asset": "research/assets/plans/djdIII1962/plates-volume.pdf",
+      "git_blob": "56194311e36b11bc792dbb91aa94fc061f956dc8",
+      "sha256": "b7a52c275ad42a333f4d825efd12425e11574aa00bdd76e72e41656de86a2eb2",
+      "bytes": 4795367,
+      "pdf_pages": 88,
+      "provenance": "Existing user-authorized repository archive; printed original-object photographs and paired handcopies, not a new original scan.",
+      "inspection": "DJD viewers60–67 inclusive: copies XLVIII/L/LII/LIV at60/62/64/66, photographs XLIX/LI/LIII/LV at61/63/65/67; full-page2x by integrator and independent reader. Integrator also full-page5x61/67; independent reader5x broad left-region crops61/63/65/67. Magnification adds no recovered resolution.",
+      "processing": "PyMuPDF rendering only; no new contrast restoration or metric measurements. Source photographs are strip/rotation montages; seams and duplicate observations retained.",
+      "reuse": "Existing archived asset reused; no new page-image upload, licence or independent witness claimed."
+    },
+    {
+      "id": "CSS_IMAGING",
+      "title": "Copper Scroll Studies, imaging chapter, Figs4.1–4.8",
+      "authors": "Marilyn J. Lundberg and Bruce Zuckerman",
+      "edition": "2004 paperback of2002 publication, editors George J. Brooke and Philip R. Davies",
+      "asset": "research/assets/plans/copper-scroll-studies2004/imaging-figures-pp51-53.pdf",
+      "git_blob": "813108fed79b11397f8c6d3be7fc31e5907fe0dc",
+      "sha256": "c6a7679b4d46172eb60baaf58fd569113df13ae867268c0e457dd9b7b1d95b9f",
+      "bytes": 162577,
+      "pdf_pages": 3,
+      "printed_pages": [
+        51,
+        52,
+        53
+      ],
+      "inspection": "All three pages visually read at2x by both readers; figures4.1–4.8 and process descriptions. Original full-book viewer=printed+17; this extract viewers1–3.",
+      "processing": "p51Cut15 and Cut10 original/restored/historical images; p52four-rotation Cut15 simulated flattening and Cuts5/6 composite; p53electronic outlining and drawing/photo overlay. Processed views are not calibrated height or independent original observations.",
+      "reuse": "Copyright/credits retained in existing archive; no new image upload or open licence asserted."
+    },
+    {
+      "id": "CSS_CONSERVATION",
+      "title": "The Conservation and Restoration of the Copper Scroll from Qumran",
+      "authors": "Régis Bertholon, Noël Lacoudre and Jorge Vasquez",
+      "edition": "Copper Scroll Studies, 2002, pp12–24",
+      "url": "https://www.researchgate.net/publication/313141460_The_conservation_and_restoration_of_the_copper_scroll_from_Qumran",
+      "inspection": "Author-posted full chapter web text pp12–24, including captions/Table1.1; figure pixels not inspected. No local source snapshot/hash recovered.",
+      "specific_targets": "pp16–17/Figs1.2–1.3 original surface at cuprite interface; pp19–20 selective cleaning rather than cleaning uniformly to original surface; pp21–23 radiography, flattening, moulding/electrotyping.",
+      "inference": "Apparent modern relief cannot automatically be treated as original incision depth; no Greek/Hebrew numeric depth or timing result recovered in this chapter.",
+      "encountered_assets": "Table1.1/Figs1.1–1.3 encountered as text/captions, not image inspections.",
+      "reuse": "Author-posted material says it may be subject to copyright; no open licence recovered. Retain link/access note; do not republish chapter/images."
+    },
+    {
+      "id": "REED_WSRP1988",
+      "title": "Dead Sea Scrolls Inventory Project, Fascicle2, Copper Scroll/Amman photographs",
+      "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
+      "inspection": "Prior webcatalogue and attachedPDFcatalogue provenance/crosswalk only; actual1988 image files not obtained.",
+      "observation_campaign": "Bruce and Kenneth Zuckerman1988, original strips both sides, B&W/color, right/center/left rotations with top/bottom lights; some side lighting.",
+      "targets": "AWS12–21 candidate cuts1–10 cover columnsI–IV; exact per-locus cut/rotation registration remains unknown. AWS22looseCut10lower-right fragment is contextual only.",
+      "current_route": "https://dornsife.usc.edu/wsrp/for-scholars/",
+      "collection": "https://digitallibrary.usc.edu/asset-management/2A3BF1S6ONSR7",
+      "catalogue": "https://dornsife.usc.edu/wsrp-temp/wp-content/uploads/sites/155/2023/05/Dead-Sea-Scrolls.pdf",
+      "catalogue_target": "Copper Scroll text ISF_TXT_00313, catalogue viewer4",
+      "access": "Old Inscriptifact replaced by USC Digital Library. Collection HTTP403 via available retrieval; no item IDs, IIIF manifests or files recovered. Bounded route search stopped. No browser fallback, sign-in, purchase or outreach.",
+      "reuse": "WSRP permits scholarly study with publication permission from collaborating institution required. No original images republished or permissions requested.",
+      "attached_source": {
+        "path": "/workspace/scratch/43a6d1804f3f/upload/Fascicle 2.pdf",
+        "file_id": "file_00000000842081fb80b56a29bbfc309c",
+        "library_file_id": "libfile_44f4cf6e19008191aae45bea32bf3044",
+        "sha256": "e1effe92d64aa1263f38e9d45d053202423cddd3bfca1ff327ff131a1fc8d203",
+        "bytes": 1125503,
+        "pdf_pages": 64,
+        "edition": "Fascicle2, Qumran Minor Caves, compiled by Stephen A. Reed; browser print capture dated3October2026,9:30PM",
+        "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
+        "acquisition": "User attached browser-print PDF; direct workspace read. Catalogue metadata, not original photograph files."
+      },
+      "attached_inspection": {
+        "status": "catalogue provenance and candidate-cut crosswalk verified; original lighting files remain missing",
+        "viewer_pages_visually_inspected": [
+          1,
+          8,
+          9,
+          21,
+          57
+        ],
+        "additional_text_pages": [
+          5,
+          7,
+          20,
+          47,
+          62
+        ],
+        "observation_campaign": "p9Bruce/KennethZuckerman1988 originals bothsides,B&W/color,rotations andtop/bottom lights; occasional side lighting.",
+        "crosswalk": "p8DJDXLIXcuts1–4,LI5–6,LIII7–8,LV9–10*. p21/p57AWS12–21cuts1–10;AWS22sevenlooseCut10lower-rightfragments.",
+        "duplicates": "p20PAM42.977–42.980 correspond to DJDXLIX/LI/LIII/LV; these copies do not provide a new lighting witness.",
+        "access_scope": "Attached catalogue resolves metadata access only. Original-image collection retrieval failure from preceding audit persists; no repeat retrieval attempted. Current museum/contact statements are historical catalogue claims, not verified current facts.",
+        "precise_locus_registration": "unresolved"
+      }
+    },
+    {
+      "id": "MAKER_FACSIMILE",
+      "title": "Copper Scroll facsimile production account",
+      "url": "https://facsimile-editions.com/cs/",
+      "inspection": "Maker process text only, not source-image inspection.",
+      "provenance": "Maker reports3D scanning three EDF electroformed plates. Synthetic backs derived by reversing front scans.",
+      "use": "Excluded as original-object calibrated metrology and as an independent physical verso witness. Manufacturer history/treasure narrative not adopted."
+    },
+    {
+      "id": "TOV_REPORT",
+      "title": "Some Palaeographical Observations Regarding the Cover Art",
+      "author": "Lika Tov",
+      "edition": "Copper Scroll Studies, chapter20, pp288–290; disputed reportp289",
+      "url": "https://www.bloomsbury.com/us/copper-scroll-studies-9780567618313/",
+      "inspection": "Originalpp288–290/viewers305–307 visually checked by integrator and independent reader in attached361-page book. Published assertion verified, undefined axis/datum/method remain.",
+      "needed": "Original metal metrology/defined axis, datum and method to replicate the reported2mm relation; original wording now available.",
+      "inherited_discrepancy": "Phase4summary includes KEN AND preceding Hebrew word2mm below surface of preceding words; F4.10 had shortened this to KEN alone. Neither proves a Greek-only groove-depth contrast.",
+      "reuse": "Metadata/link only; original chapter not republished.",
+      "inspection_history": "Original chapter unavailable in current authorized workspace/retrieval. Earlier full-book references are not available files. No primary wording replicated.",
+      "source_sha256": "590307dfb3c966b8b80d52de6a34602cc689751862844c81a965a9c2d998290f",
+      "verified_subject": [
+        "ΚΕΝ",
+        "שבעשרה(seventeen)"
+      ],
+      "verified_short_statement": "written 2 mm below the writing surface of the preceding words",
+      "encountered_figure": "p289selected Hebrew drawings, ScribeA; derivative author illustration, not metric original surface. Copyright allrightsreserved; no image upload."
+    },
+    {
+      "id": "PUECH_REPORT",
+      "title": "Puech2006 IV2 qualified correction/apparently deeper Ι",
+      "edition": "Daniel Brizemeure, Noël Lacoudre and Émile Puech, Le Rouleau de cuivre de la grotte 3 de Qumrân (3Q15): Expertise–Restauration–Epigraphie, Brill 2006, STDJ 55 I/II",
+      "inspection": "These bounded pages visually checked by primary-source reader and integrator; navigation of whole PDF is not a full-book read. Volume I, Livre second, p.187/viewer213, IV2 commentary, left column",
+      "needed": "Registered original-object crossing/metric observations; primary passage acquired.",
+      "inspection_history": "Primary wording/figure and source basis not recovered; book metadata is not inspection.",
+      "source_sha256": "c3d824a1e3123a07cdb246bd376457d7a1cef14f05dbac03eeea0f88a057cb6e",
+      "new_methods": "p60multi-angle EDF radiographs; photos of flattened replica/galvanoplasty; original re-examination1996. fn12mallet-engraving interpretation. p61graphicmock-up/replica joins and saw-loss/copy limitations.",
+      "previous_CSS_inspection": "CSS original methodspp60–61,IV2pp68–69,Greekparagraphp81 visually checked by two readers; targetdeeper/cancelledI assertion not recovered in boundednavigation. No fullbookread/absenceclaim.",
+      "primary_report": {
+        "status": "Exact primary wording and editorial convention recovered; apparent-depth assertion remains unmeasured",
+        "source_sha256": "c3d824a1e3123a07cdb246bd376457d7a1cef14f05dbac03eeea0f88a057cb6e",
+        "locator": "Volume I, Livre second, p.187/viewer213, IV2 commentary, left column",
+        "short_quote": "à moins d’une première correction du iota « I » apparemment plus profondément gravé.",
+        "translation": "unless there was an initial correction of the iota I, apparently engraved more deeply",
+        "qualification": "Both the proposed correction and apparent depth are qualified. Discussion concerns possible Greek–Greek correction, without explicit nearby Hebrew depth comparator or numeric/calibrated profile.",
+        "measurement_mm": null,
+        "particular_observation_basis": "General methods at I171/viewer197 include multi-angle radiographs, flattened electrotype photographs and rare original re-examination; this particular I assertion is not assigned to one method.",
+        "sigla": {
+          "locator": "I179/viewer205",
+          "braces": "letter corrected or cancelled by the copyist",
+          "transcription_locator": "I186/viewer212",
+          "reading": "{Ι}ΣΚ",
+          "effect": "Corrects prior exclusively-cancelled paraphrase. Frozen ΣΚ reading and inactive Ι remain unchanged; no new active prefix or protocol edit."
+        },
+        "author_argument": {
+          "locators": [
+            "I172/viewer198 fn11",
+            "I178/viewer204 fn72 and body"
+          ],
+          "claim": "Puech argues for one engraver/one occasion and rejects 25 hands. Author inference is not independently established engraving chronology."
+        },
+        "inspected_viewer_pages": [
+          197,
+          198,
+          204,
+          205,
+          212,
+          213
+        ],
+        "scope": "These bounded pages visually checked by primary-source reader and integrator; navigation of whole PDF is not a full-book read."
+      },
+      "prior_retrieval_url": "https://brill.com/display/title/14988?language=en",
+      "prior_retrieval_lead": "The Copper Scroll Revisited, 2015, commentarypp25–113; not verified location of the deeper-I claim."
+    },
+    {
+      "id": "METAL98",
+      "title": "Corrosion du rouleau de cuivre de Qumrân et localisation de la surface originelle",
+      "authors": "Régis Bertholon, Luc Robbiola and Noël Lacoudre",
+      "edition": "Metal98, 1998, pp125–135",
+      "url": "https://www.researchgate.net/profile/Regis-Bertholon/publication/313088974_Corrosion_du_rouleau_de_cuivre_de_Qumran_et_localisation_de_la_surface_originelle/links/588fc501aca272bc14bc6508/Corrosion-du-rouleau-de-cuivre-de-Qumran-et-localisation-de-la-surface-originelle.pdf",
+      "inspection": "PDF retrieval403/no extracted source text or figure inspection. Unread dependency, not corroborating measurement; bounded route stopped."
+    },
+    {
+      "id": "EDF_2006_PHOTOGRAPHS",
+      "title": "Le Rouleau de cuivre, original-object photographs before/after conservation, cuts1–10",
+      "source_sha256": "c3d824a1e3123a07cdb246bd376457d7a1cef14f05dbac03eeea0f88a057cb6e",
+      "inspection": {
+        "integrator": "All 40 original-object photograph reproductions, full pages at 1.6x; independent of image-reader judgment before synthesis. No registered target ROIs or new metric measurements.",
+        "independent_image_reader": "All 40 full pages at 2x, plus broad 5x post-treatment recto neighborhoods on cuts1/5/7/9; these are not registered target ROIs or extra source observations.",
+        "agreement": "Neither reader accepted a chronological observation under unchanged frozen criteria. Exact parent-stroke/line-to-cut registration is unresolved; actual crossing counts and order remain unknown.",
+        "depth": "Planar rulers/color charts occur; no calibrated height, depth datum or uncertainty. Before/after treatment are changed surfaces, not two documented light directions on one unchanged surface. Recto/verso are different faces.",
+        "lighting": "Pre-treatment I12 documents tangential lighting from above, with three exposure brackets. Post-treatment lighting remains unestablished; brackets are not opposed light directions.",
+        "surface": "Curvature, fractures, loss, crust and conservation-dependent relief limit interpretation. No authenticated original groove-floor/truncation or intervening event.",
+        "temporal_coverage": "insufficient at all seven frozen loci",
+        "exposure": "Exploratory follow-up within frozen source menu; already inspected material is not a holdout."
+      },
+      "photo_records": [
+        {
+          "cut": 1,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 293,
+          "volume": 2,
+          "printed_page": 11,
+          "pdf_page_label": "2-11",
+          "plate": "VII",
+          "source_reference_printed": "D142",
+          "image_xref": 781,
+          "pixel_width": 1147,
+          "pixel_height": 1685,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 2,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 294,
+          "volume": 2,
+          "printed_page": 12,
+          "pdf_page_label": "2-12",
+          "plate": "VIII",
+          "source_reference_printed": "D148",
+          "image_xref": 784,
+          "pixel_width": 1162,
+          "pixel_height": 1683,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 3,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 295,
+          "volume": 2,
+          "printed_page": 13,
+          "pdf_page_label": "2-13",
+          "plate": "IX",
+          "source_reference_printed": "D153",
+          "image_xref": 787,
+          "pixel_width": 1148,
+          "pixel_height": 1683,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 4,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 296,
+          "volume": 2,
+          "printed_page": 14,
+          "pdf_page_label": "2-14",
+          "plate": "X",
+          "source_reference_printed": "D158",
+          "image_xref": 790,
+          "pixel_width": 1124,
+          "pixel_height": 1679,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 5,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 297,
+          "volume": 2,
+          "printed_page": 15,
+          "pdf_page_label": "2-15",
+          "plate": "XI",
+          "source_reference_printed": "D143",
+          "image_xref": 793,
+          "pixel_width": 1149,
+          "pixel_height": 1682,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 6,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 298,
+          "volume": 2,
+          "printed_page": 16,
+          "pdf_page_label": "2-16",
+          "plate": "XII",
+          "source_reference_printed": "D149",
+          "image_xref": 796,
+          "pixel_width": 1151,
+          "pixel_height": 1682,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 7,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 299,
+          "volume": 2,
+          "printed_page": 17,
+          "pdf_page_label": "2-17",
+          "plate": "XIII",
+          "source_reference_printed": "D154",
+          "image_xref": 799,
+          "pixel_width": 1151,
+          "pixel_height": 1682,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 8,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 300,
+          "volume": 2,
+          "printed_page": 18,
+          "pdf_page_label": "2-18",
+          "plate": "XIV",
+          "source_reference_printed": "D159",
+          "image_xref": 802,
+          "pixel_width": 1149,
+          "pixel_height": 1682,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 9,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 301,
+          "volume": 2,
+          "printed_page": 19,
+          "pdf_page_label": "2-19",
+          "plate": "XV",
+          "source_reference_printed": "D144",
+          "image_xref": 805,
+          "pixel_width": 1141,
+          "pixel_height": 1683,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 10,
+          "treatment_stage": "before",
+          "face": "recto",
+          "viewer_page_1based": 302,
+          "volume": 2,
+          "printed_page": 20,
+          "pdf_page_label": "2-20",
+          "plate": "XVI",
+          "source_reference_printed": "D150",
+          "image_xref": 808,
+          "pixel_width": 1149,
+          "pixel_height": 1683,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 1,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 319,
+          "volume": 2,
+          "printed_page": 37,
+          "pdf_page_label": "2-37",
+          "plate": "XXX",
+          "source_reference_printed": "3Q15/envers/avant RC/1",
+          "image_xref": 856,
+          "pixel_width": 1149,
+          "pixel_height": 1680,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 2,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 320,
+          "volume": 2,
+          "printed_page": 38,
+          "pdf_page_label": "2-38",
+          "plate": "XXXI",
+          "source_reference_printed": "3Q15/envers/avant RC/2",
+          "image_xref": 859,
+          "pixel_width": 1147,
+          "pixel_height": 1682,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 3,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 321,
+          "volume": 2,
+          "printed_page": 39,
+          "pdf_page_label": "2-39",
+          "plate": "XXXII",
+          "source_reference_printed": "3Q15/envers/avant RC/3",
+          "image_xref": 862,
+          "pixel_width": 1145,
+          "pixel_height": 1683,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 4,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 322,
+          "volume": 2,
+          "printed_page": 40,
+          "pdf_page_label": "2-40",
+          "plate": "XXXIII",
+          "source_reference_printed": "3Q15/envers/avant RC/4",
+          "image_xref": 865,
+          "pixel_width": 1147,
+          "pixel_height": 1680,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 5,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 323,
+          "volume": 2,
+          "printed_page": 41,
+          "pdf_page_label": "2-41",
+          "plate": "XXXIV",
+          "source_reference_printed": "3Q15/envers/avant RC/5",
+          "image_xref": 868,
+          "pixel_width": 1153,
+          "pixel_height": 1683,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 6,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 324,
+          "volume": 2,
+          "printed_page": 42,
+          "pdf_page_label": "2-42",
+          "plate": "XXXV",
+          "source_reference_printed": "3Q15/envers/avant RC/6",
+          "image_xref": 871,
+          "pixel_width": 1151,
+          "pixel_height": 1682,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 7,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 325,
+          "volume": 2,
+          "printed_page": 43,
+          "pdf_page_label": "2-43",
+          "plate": "XXXVI",
+          "source_reference_printed": "3Q15/envers/avant RC/7",
+          "image_xref": 874,
+          "pixel_width": 1151,
+          "pixel_height": 1683,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 8,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 326,
+          "volume": 2,
+          "printed_page": 44,
+          "pdf_page_label": "2-44",
+          "plate": "XXXVII",
+          "source_reference_printed": "3Q15/envers/avant RC/8",
+          "image_xref": 877,
+          "pixel_width": 1151,
+          "pixel_height": 1682,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 9,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 327,
+          "volume": 2,
+          "printed_page": 45,
+          "pdf_page_label": "2-45",
+          "plate": "XXXVIII",
+          "source_reference_printed": "3Q15/envers/avant RC/9",
+          "image_xref": 880,
+          "pixel_width": 1149,
+          "pixel_height": 1683,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 10,
+          "treatment_stage": "before",
+          "face": "verso",
+          "viewer_page_1based": 328,
+          "volume": 2,
+          "printed_page": 46,
+          "pdf_page_label": "2-46",
+          "plate": "XXXIX",
+          "source_reference_printed": "3Q15/envers/avant RC/10",
+          "image_xref": 883,
+          "pixel_width": 1151,
+          "pixel_height": 1683,
+          "photographer_credit": "Claude Formet",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 1,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 463,
+          "volume": 2,
+          "printed_page": 181,
+          "pdf_page_label": "2-181",
+          "plate": "CLXVI",
+          "source_reference_printed": "45 KOD EPP 6005-4",
+          "image_xref": 1282,
+          "pixel_width": 1294,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 2,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 464,
+          "volume": 2,
+          "printed_page": 182,
+          "pdf_page_label": "2-182",
+          "plate": "CLXVII",
+          "source_reference_printed": "41 KOD EPP 6005-1",
+          "image_xref": 1285,
+          "pixel_width": 1296,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 3,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 465,
+          "volume": 2,
+          "printed_page": 183,
+          "pdf_page_label": "2-183",
+          "plate": "CLXVIII",
+          "source_reference_printed": "50 KOD EPP 6005-8",
+          "image_xref": 1288,
+          "pixel_width": 1294,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 4,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 466,
+          "volume": 2,
+          "printed_page": 184,
+          "pdf_page_label": "2-184",
+          "plate": "CLXIX",
+          "source_reference_printed": "51 KOD EPP 6005-9",
+          "image_xref": 1291,
+          "pixel_width": 1290,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 5,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 467,
+          "volume": 2,
+          "printed_page": 185,
+          "pdf_page_label": "2-185",
+          "plate": "CLXX",
+          "source_reference_printed": "47 KOD EPP 6005-6",
+          "image_xref": 1294,
+          "pixel_width": 1295,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 6,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 468,
+          "volume": 2,
+          "printed_page": 186,
+          "pdf_page_label": "2-186",
+          "plate": "CLXXI",
+          "source_reference_printed": "52 KOD EPP 6005-10",
+          "image_xref": 1297,
+          "pixel_width": 1293,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 7,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 469,
+          "volume": 2,
+          "printed_page": 187,
+          "pdf_page_label": "2-187",
+          "plate": "CLXXII",
+          "source_reference_printed": "51 KOD EPP 6005-9",
+          "image_xref": 1300,
+          "pixel_width": 1297,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 8,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 470,
+          "volume": 2,
+          "printed_page": 188,
+          "pdf_page_label": "2-188",
+          "plate": "CLXXIII",
+          "source_reference_printed": "41 KOD EPP 6005-1",
+          "image_xref": 1303,
+          "pixel_width": 1289,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 9,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 471,
+          "volume": 2,
+          "printed_page": 189,
+          "pdf_page_label": "2-189",
+          "plate": "CLXXIV",
+          "source_reference_printed": "50 KOD EPP 6005-8.1",
+          "image_xref": 1306,
+          "pixel_width": 1293,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 10,
+          "treatment_stage": "after",
+          "face": "recto",
+          "viewer_page_1based": 472,
+          "volume": 2,
+          "printed_page": 190,
+          "pdf_page_label": "2-190",
+          "plate": "CLXXV",
+          "source_reference_printed": "50 KOD EPP 6005-8.2",
+          "image_xref": 1309,
+          "pixel_width": 1293,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 1,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 489,
+          "volume": 2,
+          "printed_page": 207,
+          "pdf_page_label": "2-207",
+          "plate": "CLXXXIX",
+          "source_reference_printed": "ekta X.RD n°1",
+          "image_xref": 1357,
+          "pixel_width": 1141,
+          "pixel_height": 1679,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 2,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 490,
+          "volume": 2,
+          "printed_page": 208,
+          "pdf_page_label": "2-208",
+          "plate": "CXC",
+          "source_reference_printed": "ekta X.RD n°2",
+          "image_xref": 1360,
+          "pixel_width": 1141,
+          "pixel_height": 1680,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 3,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 491,
+          "volume": 2,
+          "printed_page": 209,
+          "pdf_page_label": "2-209",
+          "plate": "CXCI",
+          "source_reference_printed": "ekta X.RD n°3",
+          "image_xref": 1363,
+          "pixel_width": 1143,
+          "pixel_height": 1680,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 4,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 492,
+          "volume": 2,
+          "printed_page": 210,
+          "pdf_page_label": "2-210",
+          "plate": "CXCII",
+          "source_reference_printed": "ekta X.RD n°4",
+          "image_xref": 1366,
+          "pixel_width": 1145,
+          "pixel_height": 1680,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 5,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 493,
+          "volume": 2,
+          "printed_page": 211,
+          "pdf_page_label": "2-211",
+          "plate": "CXCIII",
+          "source_reference_printed": "ekta X.RD n°5",
+          "image_xref": 1369,
+          "pixel_width": 1143,
+          "pixel_height": 1683,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 6,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 494,
+          "volume": 2,
+          "printed_page": 212,
+          "pdf_page_label": "2-212",
+          "plate": "CXCIV",
+          "source_reference_printed": "ekta X.RD n°6",
+          "image_xref": 1372,
+          "pixel_width": 1141,
+          "pixel_height": 1680,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 7,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 495,
+          "volume": 2,
+          "printed_page": 213,
+          "pdf_page_label": "2-213",
+          "plate": "CXCV",
+          "source_reference_printed": "ekta X.RD n°7",
+          "image_xref": 1375,
+          "pixel_width": 1137,
+          "pixel_height": 1682,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 8,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 496,
+          "volume": 2,
+          "printed_page": 214,
+          "pdf_page_label": "2-214",
+          "plate": "CXCVI",
+          "source_reference_printed": "ekta X.RD n°8",
+          "image_xref": 1378,
+          "pixel_width": 1139,
+          "pixel_height": 1680,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 9,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 497,
+          "volume": 2,
+          "printed_page": 215,
+          "pdf_page_label": "2-215",
+          "plate": "CXCVII",
+          "source_reference_printed": "ekta X.RD n°9",
+          "image_xref": 1381,
+          "pixel_width": 1141,
+          "pixel_height": 1683,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        },
+        {
+          "cut": 10,
+          "treatment_stage": "after",
+          "face": "verso",
+          "viewer_page_1based": 498,
+          "volume": 2,
+          "printed_page": 216,
+          "pdf_page_label": "2-216",
+          "plate": "CXCVIII",
+          "source_reference_printed": "ekta X.RD n°10",
+          "image_xref": 1384,
+          "pixel_width": 1141,
+          "pixel_height": 1680,
+          "photographer_credit": "Xavier Renauld",
+          "specific_target_line_assignment": "unassigned",
+          "reuse_status": "rights reserved; no source images published"
+        }
+      ],
+      "methods_provenance": {
+        "source_sha256": "c3d824a1e3123a07cdb246bd376457d7a1cef14f05dbac03eeea0f88a057cb6e",
+        "source_pages": 706,
+        "pagination": {
+          "volume_I_arabic": "viewer = printed + 26",
+          "volume_II_arabic": "viewer = printed + 282",
+          "page_labels": "native PDF labels confirm e.g.1-1 at viewer27 and2-1 at283"
+        },
+        "inspection_scope": "Source thread mapped metadata; integrator visually checked I12/23/142/144/145 and IIxiii/xx plus the report pages and all 40 selected photographs. Radiograph/copy/drawing page ranges below are metadata intake only, not a new visual timing review.",
+        "photo_map": "original-photo-cuts1-10.csv",
+        "original_photography": {
+          "pre": {
+            "plate_range": "VII-XVI recto; XXX-XXXIX verso",
+            "viewer_ranges": [
+              [
+                293,
+                302
+              ],
+              [
+                319,
+                328
+              ]
+            ],
+            "printed_ranges": [
+              [
+                11,
+                20
+              ],
+              [
+                37,
+                46
+              ]
+            ],
+            "photographer": "Claude Formet",
+            "credit_locator": "volumeIIxx/viewer276"
+          },
+          "post": {
+            "plate_range": "CLXVI-CLXXV recto; CLXXXIX-CXCVIII verso",
+            "viewer_ranges": [
+              [
+                463,
+                472
+              ],
+              [
+                489,
+                498
+              ]
+            ],
+            "printed_ranges": [
+              [
+                181,
+                190
+              ],
+              [
+                207,
+                216
+              ]
+            ],
+            "photographer": "Xavier Renauld",
+            "credit_locator": "volumeIIxx/viewer276",
+            "post_lighting": "not established by inspected captions; do not automatically transfer pre setup"
+          },
+          "pre_method": {
+            "locator": "volumeI12/viewer38 section2.2; expressly platesVII-LII",
+            "film": "Kodak64ASA tungsten",
+            "exposure_brackets_printed": [
+              "+1/3",
+              "+2/3",
+              "+1"
+            ],
+            "film_object_distance_cm": 75,
+            "lighting": "tangential from above segment",
+            "inscribed_face_views": "1-4 depending on curvature",
+            "outer_face_views": 1,
+            "depth_calibration": "none stated"
+          },
+          "native_bitmaps": "Selected native bitmaps range 1124–1297 pixels wide and 1679–1685 high. Enlargement adds no source detail."
+        },
+        "radiographs": {
+          "pre_cuts1_10": {
+            "viewer": [
+              345,
+              366
+            ],
+            "printed": [
+              63,
+              84
+            ],
+            "plates": "LIII-LXXIV"
+          },
+          "post_cuts1_10": {
+            "viewer": [
+              515,
+              535
+            ],
+            "printed": [
+              233,
+              253
+            ],
+            "plates": "CCXII-CCXXXII"
+          },
+          "epigraphic_columns_I_IV": {
+            "viewer": [
+              654,
+              661
+            ],
+            "printed": [
+              372,
+              379
+            ],
+            "plates": "CCCXXXIII-CCCXL",
+            "class": "column assemblages of original radiograph pieces"
+          },
+          "method": {
+            "locator": "volumeI12/viewer38,volumeIIxxv-xxvi/viewer281-282",
+            "device": "PhilipsSCANRAY DOA300",
+            "film": "KodakM",
+            "kV": 100,
+            "mA": 5,
+            "exposure_seconds": 330,
+            "focal_distance_cm": 100,
+            "film_pairs": "two films per exposure at different contrast; projection repeated at selected angles",
+            "G_D_C": "radiographic position labels, not reliable epigraphic compass/left/right labels after reassembly",
+            "printed_scale": "IIxxvi says radiograph plates presented1:1; this is not z-depth calibration"
+          },
+          "digitization": {
+            "locator": "volumeI144/viewer170",
+            "selected_pixel_pitch_um": 80,
+            "alternative_pitch_um": 50,
+            "image_size": "about300windows of8cm×8cm",
+            "depth_limit": "80µm is in-plane film digitization, not a calibrated depth coordinate"
+          },
+          "composites": {
+            "locator": "volumeI144-145/viewer170-171",
+            "operations": [
+              "brightness equalization",
+              "mosaic assembly",
+              "seam retouching",
+              "epigraphist-directed fragment relocation,rotation,inclination",
+              "rejoining with estimated saw-gap spacing"
+            ],
+            "label": "processed derivative, not untouched surface record"
+          }
+        },
+        "copies_drawings": {
+          "galvanoplasty_column_I_IV_viewer": [
+            682,
+            684,
+            686,
+            688
+          ],
+          "drawings_column_I_IV_viewer": [
+            683,
+            685,
+            687,
+            689
+          ],
+          "beginning_copy_viewer": 680,
+          "beginning_drawing_viewer": 681,
+          "overall_copy_drawing_viewer": 706,
+          "classification": "derivative electrotypes or editorial drawings; no independent original surface metrology"
+        },
+        "three_dimensional_warning": {
+          "locator": "volumeI142/viewer168",
+          "subject": "1998bronzeArtemisofPetra statue laser-scanning/metrology trial",
+          "claim": "not a published3Q15 x/y/z dataset; following CopperScroll comments are hypothetical future capability"
+        },
+        "rights": {
+          "copyright_pages": [
+            8,
+            260
+          ],
+          "publisher": "Brill2006,all rights reserved",
+          "photographic_credits": "IIxx/viewer276 andIIxxii/viewer278 reserveEDF originals; epigraphic assemblages/drawings creditedEmilePuech",
+          "disposition": "no source-page images or fullPDF for publicGitHub; metadata and original factual analysis only"
+        },
+        "encountered_figure_metadata": [
+          {
+            "locator": "volumeI12/viewer38",
+            "figure": "Ill.7",
+            "type": "schematic section of corrosion/support/restoration materials, not measured Greek-mark cross-section",
+            "reuse": "rights reserved, no extraction published"
+          },
+          {
+            "locator": "I142/viewer168",
+            "figure": "unnumbered portrait of Puech",
+            "type": "contextual photograph, not metric surface data",
+            "reuse": "rights reserved; no extraction published"
+          },
+          {
+            "locator": "I144/viewer170",
+            "figure": "Fig.2",
+            "type": "two-point digital mosaic assembly schematic, not groove metrology",
+            "reuse": "rights reserved; no extraction published"
+          },
+          {
+            "locator": "I145/viewer171",
+            "figure": "Ill.1–2",
+            "type": "segment5 radiograph mosaic before/after seam retouching; processed projections",
+            "reuse": "rights reserved; no extraction published"
+          }
+        ],
+        "timing_result": "not assessed in this mapping thread",
+        "conservation_surface": {
+          "locator": "I23/viewer49",
+          "observation": "Report says 1955 cleaning did not reach the inferred original surface at c.1/c.2.1 interface; characters remained legible through overlying corrosion. This is shared conservation-report lineage with CSS, not a separate field campaign."
+        },
+        "source_id_limit": "Printed post-treatment slide IDs repeat across different cuts; literal IDs retained. Never deduplicate observations by these identifiers alone."
+      },
+      "reuse": "Brill/EDF rights reserved; no source PDF or images republished. All registered data remain factual metadata/analysis."
+    }
+  ],
+  "new_image_uploads": 0,
+  "archive_note": "ExistingDJD/CSSimages retained. Supplied fullCSS/FasciclePDFs remain inputfiles; fullbook/pageOCR and modern page images not republished. Tovp289drawing encountered and recorded; allrightsreserved/no redistribution permission recovered. Catalogue attachment supplies metadata, not original frames. French2006 and three JSTOR attachment metadata added; no new copyrighted PDFs, page images or full OCR republished.",
+  "attached_inputs": {
+    "CSS": {
+      "path": "/workspace/scratch/43a6d1804f3f/upload/Copper Scroll Studies (Academic Paperback) -- George J_ Brooke, Philip R_ Davies -- Academic Paperback 40, 2004 -- T&T Clark International -- (1).pdf",
+      "file_id": "file_000000006fa081fbb319aa0a8e93a8f2",
+      "library_file_id": "libfile_e368ae676b5c819194a2a4fb55207d60",
+      "sha256": "590307dfb3c966b8b80d52de6a34602cc689751862844c81a965a9c2d998290f",
+      "bytes": 17391681,
+      "pdf_pages": 361,
+      "printed_to_viewer": "printed+17 for inspected body pages",
+      "edition": "George J. Brooke and Philip R. Davies (eds), Copper Scroll Studies, T&T Clark International2004 paperback of2002 publication",
+      "acquisition": "User attached full PDF in this conversation; read directly from supplied workspace copy."
+    },
+    "Fascicle2": {
+      "path": "/workspace/scratch/43a6d1804f3f/upload/Fascicle 2.pdf",
+      "file_id": "file_00000000842081fb80b56a29bbfc309c",
+      "library_file_id": "libfile_44f4cf6e19008191aae45bea32bf3044",
+      "sha256": "e1effe92d64aa1263f38e9d45d053202423cddd3bfca1ff327ff131a1fc8d203",
+      "bytes": 1125503,
+      "pdf_pages": 64,
+      "edition": "Fascicle2, Qumran Minor Caves, compiled by Stephen A. Reed; browser print capture dated3October2026,9:30PM",
+      "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle2/",
+      "acquisition": "User attached browser-print PDF; direct workspace read. Catalogue metadata, not original photograph files."
+    },
+    "French2006": {
+      "path": "/workspace/scratch/43a6d1804f3f/upload/Le Rouleau de Cuivre de la Grotte 3 de Qumrân (3q15) (2 Vols.)_ Expertise - Restauration - Epigraphie (Studies on the Texts of the Desert of Judah) (French Edition).pdf",
+      "file_id": "file_00000000d7ac81fbb3d7923f2c3b63ba",
+      "library_file_id": "libfile_7208f87a008c8191be9bee529f0d1c09",
+      "sha256": "c3d824a1e3123a07cdb246bd376457d7a1cef14f05dbac03eeea0f88a057cb6e",
+      "bytes": 95666096,
+      "pdf_pages": 706,
+      "acquisition": "User attachment in this conversation; direct workspace read. Metadata and factual analysis only; no source PDF or page images republished.",
+      "edition": "Daniel Brizemeure, Noël Lacoudre and Émile Puech, Le Rouleau de cuivre de la grotte 3 de Qumrân (3Q15): Expertise–Restauration–Epigraphie, Brill 2006, STDJ 55 I/II",
+      "isbn_set": "9789004140301",
+      "pagination": {
+        "I_arabic": "viewer = printed + 26 in inspected scope",
+        "II_arabic": "viewer = printed + 282 in inspected scope"
+      },
+      "full_book_read": false
+    }
+  },
+  "prior_intake_commit": "fb6059f54fdcb4be21003574dca8f028b85dd6f2",
+  "supplementary_intake": {
+    "date_utc": "2026-10-04",
+    "articles": [
+      {
+        "path": "/workspace/scratch/43a6d1804f3f/upload/10.2307@23403198.pdf",
+        "file_id": "file_00000000140c82308af8ca4b3339572c",
+        "library_file_id": "libfile_1024b70274e48191a47227ace79eabb6",
+        "sha256": "db7772f05ac17b74b4e8e0a989715aa549cf40d00494b0e8d92776faefa75beb",
+        "bytes": 469256,
+        "pdf_pages": 4,
+        "acquisition": "User attachment in this conversation; direct workspace read. Metadata and factual analysis only; no source PDF or page images republished.",
+        "title": "Yossi Spanier, Production of Lime for Aqueducts in the Judean Desert (Hebrew), Cathedra60 (June1991),188–190",
+        "url": "https://www.jstor.org/stable/23403198",
+        "page_mapping": "Viewer1 cover;2–4 printed188–190. Article starts below neighboring contribution on p188.",
+        "inspection": "All supplied pages rendered and visually inspected by independent intake reader; bounded identity/body/figure-scope intake only.",
+        "scope": "Lime production note; p189/viewer3 unnumbered NahalPrat aqueduct/kiln map with north/0–1km scale. p190n6 cites1989Aqueducts chapters; cited chapter bodies not supplied.",
+        "encountered_figures": "Map p189 inventoried as encountered, rights reserved; metadata only, no map image published.",
+        "missing_source_outcome": "Does not supply missing2002Aqueducts Cypros/estateAppendixB chapters or Netzer2001 unfolded plans.",
+        "rights": "JSTOR terms displayed; no open redistribution grant recovered. Metadata only, no PDF/page/map/fullOCR publication.",
+        "counts": "Intake outside active archaeological test; no new source-test/cartographic/field-campaign or holdout increment. Jericho stays parked."
+      },
+      {
+        "path": "/workspace/scratch/43a6d1804f3f/upload/10.2307@23472409.pdf",
+        "file_id": "file_0000000072a881fba2c2d7c761c1c41d",
+        "library_file_id": "libfile_2ca5ff433f98819187552eaba81fb5ad",
+        "sha256": "67f33a0fae2332c1c55b91c3a466cbe132f6a24963670b4417ea3b49a2d1109f",
+        "bytes": 290138,
+        "pdf_pages": 2,
+        "acquisition": "User attachment in this conversation; direct workspace read. Metadata and factual analysis only; no source PDF or page images republished.",
+        "title": "Azriel Siegelmann and Yehoshua Ravaq, Upper Naḥal Tanninim Aqueducts, Hadashot Arkheologiyot–ESI110 (1999),91*",
+        "url": "https://www.jstor.org/stable/23472409",
+        "page_mapping": "Viewer1 cover;2 printed91* English report. Hebrew companion p115 not attached.",
+        "inspection": "All supplied pages rendered and visually inspected by independent intake reader; bounded identity/body/figure-scope intake only.",
+        "scope": "Short July1997 tunnel/shaft excavation notice in another water system. Neighboring HorbatZalafa Fig159 caption belongs to another article.",
+        "encountered_figures": "No plan/map image in target article.",
+        "missing_source_outcome": "Does not supply missing2002Aqueducts Cypros/estateAppendixB chapters or Netzer2001 unfolded plans.",
+        "rights": "JSTOR terms displayed; no open redistribution grant recovered. Metadata only, no PDF/page/map/fullOCR publication.",
+        "counts": "Intake outside active archaeological test; no new source-test/cartographic/field-campaign or holdout increment. Jericho stays parked."
+      },
+      {
+        "path": "/workspace/scratch/43a6d1804f3f/upload/10.2307@27927050.pdf",
+        "file_id": "file_0000000057a881fba404f876efe6cab4",
+        "library_file_id": "libfile_e29bf9ffa58c81919d68cc99c196d591",
+        "sha256": "c19c977082740f81cf47fc0b21f374af24654025ac6066575d008668fd798723",
+        "bytes": 422130,
+        "pdf_pages": 4,
+        "acquisition": "User attachment in this conversation; direct workspace read. Metadata and factual analysis only; no source PDF or page images republished.",
+        "title": "Ronny Reich, review of Netzer2001 Hasmonean and Herodian Palaces at Jericho vol1, IEJ53(2) (2003),259–261",
+        "url": "https://www.jstor.org/stable/27927050",
+        "page_mapping": "Viewer1 cover;2–4 printed259–261. Target review from lower p259 to left column p261; neighboring reviews excluded.",
+        "inspection": "All supplied pages rendered and visually inspected by independent intake reader; bounded identity/body/figure-scope intake only.",
+        "scope": "Secondary book review, not original Netzer report pages. Mentions plans in prose; supplies no folded sheets.",
+        "encountered_figures": "No original plan or folded-sheet image in target review.",
+        "missing_source_outcome": "Does not supply missing2002Aqueducts Cypros/estateAppendixB chapters or Netzer2001 unfolded plans.",
+        "rights": "JSTOR terms displayed; no open redistribution grant recovered. Metadata only, no PDF/page/map/fullOCR publication.",
+        "counts": "Intake outside active archaeological test; no new source-test/cartographic/field-campaign or holdout increment. Jericho stays parked."
+      }
+    ],
+    "scope": "Identity and source-gap classification only; no renewed Jericho test."
+  }
+}
