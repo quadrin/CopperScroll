@@ -128,6 +128,7 @@ Checked 2026-09-27 against branch `main` (commit 637a7a9, "Add files via upload"
 ### Høgenhaven 2020, *The Cave 3 Copper Scroll: A Symbolic Journey*
 
 - J. Høgenhaven, *The Cave 3 Copper Scroll: A Symbolic Journey* (STDJ 132; Leiden: Brill 2020).
+- **6 October 2026 re-supply/reinspection:** the 278-page PDF resolves printed157–158/PDF168–169 after the publisher403. Native title/rights and target pages checked; prior session2/F2.20 source continuity retained. Both talent/karsh arguments remain; no new scope/check/campaign or independent manuscript observation. [Hashes, precise observations, correction and accompanying illustration provenance](../text/inventory_scope_2026-10-06.md#supplied-source-reinspection--6-october-2026-utc). Full PDF/page images are not redistributed.
 - Chapter 2 reads the list as a route through four "main sections" (Achor–Koḥlit; Secacah; the Kidron and Jerusalem; Gerizim–Beth-Shan–Bezek, then back to Koḥlit).
 - Chapter 4 covers the object: palaeography, **the Greek letters (§4, pp. 149–153)**, language, numerals, abbreviations, and the arguments for and against the treasure being real.
 - Chapter 5 covers the traditional contexts (Massekhet Kelim, the Lindian Chronicle, and others).
