@@ -1,4 +1,53 @@
-# Wadi en-Nu’eima original-report access — 6 October 2026 UTC
+# Wadi en-Nu’eima original-report review — 6 October 2026 UTC
+
+**The user-supplied original is now obtained and inspected.** Dinur–Feig’s report is printed110–111, one-based PDF118–119, in ESI5. It describes one ritual bath and a separate western rectangular structure. The report supplies no bath enlargement sequence, phase-controlled water contact or bath plan. J23’s individual bath/state/contact claim remains **not identifiable from available evidence**, with one explicitly reported bath rather than a complete site census. This original-source review supersedes the access-only result preserved below.
+
+## Supplied original and exact publication mapping
+
+The user supplied *Excavations and Surveys in Israel5.pdf* in this conversation. The134-page file is73,822,455bytes, SHA-256 `9a19fa77731b05fa59c0587becf67f70c3b652ea0e51c6dd6f7dfb5f8a0e94fa`. Native page images were inspected for the following finite targets; extraction alone was used only to find pages. Independent review verified the same original report, dimensions and limits.
+
+| Native scope | One-based PDF page | Result |
+| --- | --- | --- |
+| Publisher wrapper | 1 | Links the supplied volume to the [IAA ESI5 record18](https://publications.iaa.org.il/esi_english_series/18/) and records June1987. This verifies the uploaded wrapper association, rather than byte equivalence to a blocked download. |
+| Volume cover | 2 | ESI1986, Volume5, English edition of Hadashot Arkheologiyot88–89. |
+| Imprint/rights | 3 | Copyright and printing1987. |
+| Contents/illustration lists | 5–6 | Wadi starts at110; Fig.56 is survey finds on111. Listed titles of other figures were encountered as metadata; their actual images were not inspected. |
+| Preface, printedvii | 8 | June1987; the English reports are arranged alphabetically, unlike the Hebrew arrangement. Coordinates are described as the Israel grid system, without a named EPSG/datum in this scope. |
+| Complete Wadi report | 118–119 / printed110–111 | Header through the Dinur–Feig communication byline, including Fig.56; preceding ‘Uza and following Yatta report boundaries checked. |
+| Contributor index, printed125 | 132 | Both U.Dinur and N.Feig are linked to Wadi at110. |
+
+The1986 cover designation and1987 printing/preface explain the catalogue/publisher year difference within this supplied volume; no second edition is inferred. The bibliography’s110–111 locator is confirmed directly. The official Hadashot **ESI5(1987)II,p36** entry remains a separate metadata locator: its exact report/page crosswalk is unverified. Alphabetical versus geographical arrangement is a possible reason to investigate that mismatch, without assigning a conversion. No further link search was needed. The earlier403 is preserved as an access-route event; source access is now satisfied through this upload.
+
+## Reported observations and interpretations
+
+| Feature or coverage | Original report observation | Limit for entry29 |
+| --- | --- | --- |
+| Site | Building remains cover about10dunams on the north bank. Raw map reference `1922/1434`; investigated for the Staff Officer for Archaeology after looting reports. | This is a site locator and reported building extent, without a bath-level surveyed polygon or bounded metric uncertainty. Do not convert it to a deposit point. |
+| One described bath | Authors label it a miqva; reported depth1.3m, about2.0m north of the wadi, exposed in an illegal excavation. | One bath is explicitly described; the total number of baths and individual locus IDs remain unknown. Neither depth nor proximity gives its footprint, northern-candidate identity or water-contact datum. |
+| Separate western structure | A rectangle4.5×8.0m lies west of the bath; walls0.8m thick, preserved1.0m high. Both structures have grey plaster with stone grits. | These dimensions belong to the adjacent structure, not the bath. The report establishes no hydraulic function, connecting pipe, construction joint or enlargement relation between them. Similar plaster alone cannot date their coexistence. |
+| Broader remains/finds | Alluvial cover conceals some buildings; floods exposed others. Medium/small stones in mud and internally plastered walls are described generally. Site attribution extends from Persian to Herodian; most pottery is Persian-period. Rock-cut tombs and surface ossuary fragments occur across the wadi. | General construction and site/find chronology cannot supply the bath’s construction/floor/contact phase. Surface tomb finds do not date its water system. |
+
+The original reports **about10dunams**, versus the derivative catalogue’s one-dunam notice. Their surveyed extents are not crosswalked; preserve the conflict rather than averaging or replacing a regional boundary. The derivative early-bath/later-enlargement account from ROSAPATp17 remains an attributed interpretation without supporting construction evidence in this report. Its absence here is not proof that enlargement never occurred. Catalogue period headings do not establish multiple baths or continuous use of the same bath.
+
+No basin outline, bath width/length, feeder, drain, pipe aperture, collector connection, ancient receiving face/surface, benchmark, named field drawing/accession or phase-controlled construction joint is supplied in the complete report. Site chronology and functional labels do not satisfy those gates. No geometry, cubit fit or new coordinate is justified. The2m wadi relation is a source observation, not a registered prediction or the entry’s northern reference.
+
+## Figure access and observation lineage
+
+Fig.56, printed111/PDF119, is a survey-find artifact illustration, including pottery and decorated ossuary fragments, with no bath plan or section. The native figure and caption were inspected. The cover lamp illustration, PDF2 with source caption onPDF3, is from Bet Guvrin and unrelated to this bath. These encountered images retain exact source/page locators and the supplied-file hash in the [JSON record](wadi_en_nueima_original_2026-10-06.json). The copyright leaf and open-access wrapper establish no reproduction licence; no source PDF/page/figure image is uploaded to GitHub.
+
+This report is the original observation lineage behind the ROSAPAT/PADIS notice, not independent corroboration by a second bath survey. The report names inspectors and the responsible office but gives no individual bath field accession or dated excavation phase. Alluvial concealment, flood exposure and illegal excavation are reported disturbance/coverage observations. They establish no predicted-target excavation reach, detection limit or verified negative result, and no present-day condition.
+
+## Current decision, next observation and accounting
+
+Report access and catalogue citation identity are resolved to the supplied original. **J23’s individual state and phase-specific contact claim is not identifiable from available evidence.** Preserve J23 as the aggregate parent notice and the existing28-ID roster/classification. The named miqva is a documented feature within that notice, without a surveyed locus/state crosswalk or a complete basin denominator. The retrospective normalization and regional roster remain historical records of their stated inspection scopes; this dated evidence supersedes their pending-original dependency. All metric, eligibility, phase/contact, detection and unused-prediction gates remain null.
+
+The next useful observation is an identifiable bath plan/section or field record tying a water aperture to its wall, contemporaneous floor/surface and construction phase, plus individual feature/state IDs. This report cites no such record. A documented analytical or feature-crosswalk correction may reopen this scoped claim; repeated reading of these pages cannot supply the missing contact. Other terminal entry29 results stay closed.
+
+One newly inspected original report scope and one complete bounded identity/phase/contact coverage check add **+1 primary-source target /0 cartographic intakes /+1 bounded check**, taking70/5/80 to **71/5/81**. Upload handling, publication mapping, rendering, reinspection and independent review add no second increment or independent field campaign. Formal packets, model exclusions, identification/confidence, geographic coordinates, outcomes and question states remain unchanged.
+
+## Historical access audit — before the supplied original
+
+The following access-only record is preserved verbatim after its title; its unavailable-body statements describe the earlier attempt and are superseded by the current review above.
 
 **The catalogue-cited original report was not obtained.** Its exact catalogue-reported citation is verified in native ROSAPAT bibliography pages: U. Dinur and N. Feig, “Wadi Nu’eima,” *Excavations and Surveys in Israel* 5 (1986), pp. 110–111. A new [official Hadashot index](https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=79) lists **“Wadi Nu‘eima,” p.36, in ESI5(1987)II**. This is a routing locator; its report/year/pagination crosswalk to the catalogue citation remains unverified. The [IAA volume5 record](https://publications.iaa.org.il/esi_english_series/18/) is a separate candidate route whose linked download returned HTTP403 through both web retrieval and an ordinary unauthenticated download. Individual baths, their successive phases and water contacts remain **not identifiable from available evidence**. J23 stays an unresolved aggregate notice; no geometry was run.
 

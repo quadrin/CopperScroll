@@ -455,5 +455,229 @@
       "inspection_basis": "integrator_reported_official_metadata_inspection"
     },
     "new_original_body_route_found": false
+  },
+  "historical_access_audit_field_scope": "All pre-existing fields describe the pre-upload access audit, superseded for current access/source observations by supplied_original_review and current_status.",
+  "supplied_original_review": {
+    "source_id": "ESI5_DinurFeig_Wadi1986_published1987",
+    "inspection_date_utc": "2026-10-06",
+    "inspection_date_los_angeles": "2026-10-05",
+    "source": {
+      "uploaded_name": "Excavations and Surveys in Israel 5.pdf",
+      "acquisition": "user_supplied_in_current_conversation",
+      "bytes": 73822455,
+      "pdf_pages": 134,
+      "sha256": "9a19fa77731b05fa59c0587becf67f70c3b652ea0e51c6dd6f7dfb5f8a0e94fa",
+      "publisher_record_url": "https://publications.iaa.org.il/esi_english_series/18/",
+      "wrapper_association_verified": true,
+      "blocked_download_binary_equivalence": null,
+      "cover_designation": 1986,
+      "copyright_and_printing_year": 1987,
+      "preface_date": "1987-06",
+      "cover_series": "English edition of Hadashot Arkheologiyot88–89"
+    },
+    "native_pages_inspected": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      118,
+      119,
+      132
+    ],
+    "native_report_pages_inspected": [
+      118,
+      119
+    ],
+    "printed_report_pages": [
+      110,
+      111
+    ],
+    "byline": [
+      "U. Dinur",
+      "N. Feig"
+    ],
+    "complete_report_scope": true,
+    "report_boundaries": {
+      "start": "WADI NU‘EIMA on printed110",
+      "end": "Dinur–Feig communication byline before YATTA on111"
+    },
+    "publication_mapping": {
+      "catalogue_cited_report_identity": "verified",
+      "printed_to_pdf_one_based": {
+        "110": 118,
+        "111": 119
+      },
+      "cover_1986_vs_publication_1987": "verified_within_supplied_volume",
+      "official_partII_p36_crosswalk": null,
+      "alphabetical_English_vs_geographical_Hebrew_arrangement": "preface_reported_not_a_verified_page_crosswalk"
+    },
+    "site": {
+      "raw_map_reference": "1922/1434",
+      "grid_convention_as_reported": "Israel grid system, prefacevii",
+      "epsg": null,
+      "transformed_coordinates": null,
+      "about_building_extent_dunams": 10,
+      "north_bank_of_wadi": true,
+      "derivative_extent_dunams": 1,
+      "extent_crosswalk": null,
+      "reported_period_range": "Persian to Herodian",
+      "most_pottery_period": "Persian",
+      "bath_construction_date": null
+    },
+    "reported_features": [
+      {
+        "local_review_id": "J23_reported_miqva",
+        "source_locus_id": null,
+        "function_label": "miqva (ritual bath), author interpretation",
+        "reported_depth_m": 1.3,
+        "reported_distance_north_of_wadi_m": 2.0,
+        "distance_approximate": true,
+        "footprint_dimensions_m": null,
+        "exposure": "illegal excavation",
+        "northern_candidate_reference": null,
+        "phase_specific_water_contacts": null
+      },
+      {
+        "local_review_id": "J23_reported_western_structure",
+        "source_locus_id": null,
+        "position": "west of described miqva",
+        "reported_rectangle_dimensions_m": [
+          4.5,
+          8.0
+        ],
+        "reported_wall_thickness_m": 0.8,
+        "reported_preserved_wall_height_m": 1.0,
+        "hydraulic_function": null,
+        "bath_enlargement_relation": null,
+        "physically_observed_pipe_connection": null
+      }
+    ],
+    "reported_common_plaster": "grey plaster with stone grits on both structures; no dated construction joint established",
+    "cardinality": {
+      "explicit_baths_described_in_report": 1,
+      "complete_site_bath_count": null,
+      "individual_bath_locus_id": null,
+      "J23_parent_remains_aggregate": true,
+      "western_rectangle_not_assigned_as_second_bath": true
+    },
+    "scope_limits": {
+      "no_pipe_or_phase_control_reported_in_complete_scope": true,
+      "no_bath_plan_or_section": true,
+      "no_enlargement_sequence_reported": true,
+      "enlargement_historical_absence_proven": false,
+      "site_chronology_not_transferred_to_bath": true,
+      "adjacent_rectangle_dimensions_not_transferred_to_bath": true,
+      "northern_source_position_not_entry_northern_referent": true
+    },
+    "coverage": {
+      "source_reports_alluvial_concealment": true,
+      "source_reports_flash_flood_exposure": true,
+      "source_reports_illegal_excavation": true,
+      "present_day_field_status": null,
+      "predicted_ancient_target_volume_reached": null,
+      "detection_limit": null,
+      "verified_negative_excavation": null
+    },
+    "lineage": {
+      "original_observation_source_for": "ROSAPAT2011/PADIS0167 derivative notice",
+      "independent_corroborating_campaign_increment": 0,
+      "responsible_office": "Staff Officer for Archaeology in Judea and Samaria",
+      "inspectors_named": [
+        "D. Akrai",
+        "A. Zur"
+      ],
+      "bath_field_record_accession": null
+    },
+    "encountered_figures": [
+      {
+        "figure": "56",
+        "printed_page": 111,
+        "pdf_page_one_based": 119,
+        "caption_topic": "Wadi Nu’eima survey finds",
+        "type": "artifact illustration",
+        "native_inspected": true,
+        "bath_plan_or_section": false,
+        "repository_state": "source/page/hash locator only; no image upload",
+        "reproduction_permission_established": false
+      },
+      {
+        "figure": "volume cover lamp",
+        "pdf_image_page_one_based": 2,
+        "caption_page_one_based": 3,
+        "caption_topic": "Bet Guvrin lamp, sourcep15",
+        "wadi_relevance": false,
+        "repository_state": "source/page/hash locator only; no image upload",
+        "reproduction_permission_established": false
+      }
+    ],
+    "gates": {
+      "textual_role": null,
+      "archaeological_function_to_text_equivalence": null,
+      "dated_wall_contact_surface_coexistence": null,
+      "observed_conduit_or_collector_contact": null,
+      "northern_reference": null,
+      "finite_ancient_face_and_measurement_plane": null,
+      "aperture_invert_centre_or_crown_definition": null,
+      "benchmark": null,
+      "bounded_field_uncertainty": null,
+      "regional_detection_coverage": null,
+      "unused_prediction": null
+    },
+    "decision": "not_identifiable_from_available_evidence_for_individual_bath_state_and_phase_specific_contact",
+    "next_observation": "Identified bath plan/section or field record with locus/state crosswalk and observed dated aperture/wall/floor contact; none named in this report.",
+    "accounting": {
+      "baseline": [
+        70,
+        5,
+        80
+      ],
+      "delta": [
+        1,
+        0,
+        1
+      ],
+      "current": [
+        71,
+        5,
+        81
+      ],
+      "outcomes_delta": 0,
+      "formal_packets_delta": 0,
+      "question_state_delta": 0,
+      "independent_campaign_delta": 0
+    },
+    "independent_native_review": {
+      "completed": true,
+      "scope": "complete report and publication leaves",
+      "reviewer_findings_agree": true
+    },
+    "prior_normalization_and_roster_unchanged": true,
+    "prior_geometry_and_outcome_ledger_unchanged": true,
+    "native_render_sha256": {
+      "1": "ccc40bd9d6a231a4310808d0be10816ec027cd7677cdd2ff9a4fdf0f79c75ca0",
+      "2": "8df9b4e90aed228217ad1d49c216510eb8c39a03540de4a671297ca257f40aec",
+      "3": "bb9b84208d7c73c5a30dae18a72684eb67e11802676c475816d7d2a2101021c0",
+      "5": "f910e9d234aed1eeabb52d4963266f9172e4e16fb973ade0d3cd22ea652426d7",
+      "6": "3c3fbee57c0d9da1b22bc9f6da4afbc5a9f83ab2e324c8c4268e27b5da9c6790",
+      "8": "75cd962d725a82838526990e66512c2a6dacc5ef3e083e27eaa68db0af1b282f",
+      "118": "d866220101d70ba787370cf1a8c9b5d109660ad14c42def5374c06eef4ac7e8f",
+      "119": "adcc9eca63e47e6265bab3b179dbbeb4b5f489fcf4f3ddb9c2fed2733b0551d2",
+      "132": "1ed5062a245c2b3927c5dfffefe9839c811e4ea3744de48625bb4219ec287afb"
+    }
+  },
+  "current_status": {
+    "original_body_obtained": true,
+    "report_identity_verified": true,
+    "original_report_pages_inspected": 2,
+    "individual_phase_contact_claim": "not_identifiable_from_available_evidence",
+    "official_partII_p36_crosswalk": null,
+    "activity": [
+      71,
+      5,
+      81
+    ],
+    "record_ref": "#/supplied_original_review"
   }
 }
