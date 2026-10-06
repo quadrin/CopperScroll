@@ -210,3 +210,8 @@ On the user's instruction, separate inquiries were sent to **Rachel Bar-Nathan, 
 Both messages ask who holds the original field drawings/level register, a scaled early-pipe wall-junction section and field-item ID, the definitions of102.87/102.80 versus bench102.73, contemporary face/surface and phase records, or a custodian referral. They request access/fees before any order and scan-reproduction terms. Gmail `SENT` and stored-message readback verify the exact recipients, subjects and prepared bodies, without extra recipients or attachments. Message IDs: Rachel`1a1117e5bc950c96`; Roi`1a1117e7828fd3b0`; Ruhama reply`1a1102d29d586b4d`. Sending does not verify delivery or a reply from Rachel/Roi. No fee/order or follow-up schedule.
 
 Current routing now awaits Rachel/Roi's named file or custodian response rather than another request to Ruhama's unit. The published levels, phase/geometry limits and closed A(C)94 result remain unchanged. Correspondence and routing add zero source scopes/checks/maps/campaigns/outcomes; current cumulative activity stays71/5/81.
+
+
+## Exact2002 access route update — 6 October 2026 UTC
+
+The user authorized a targeted Fig6/Fig10 follow-up after the identity audit. No2002 chapter/figure was recovered. The current JRA supplier route and J24’s exact pp369–370/Fig10 locator are recorded once in the [canonical access supplement](README.md#exact-source-access-follow-up--6-october-2026-utc), alongside the unrelated monastery-source thread. Preserve the2002/1989 figure distinction, pagination discrepancy and historical access results. No email/order/fee, original archaeological inspection or activity increment occurred; exact public retries stop pending a supplied copy or identified holding/accession.
