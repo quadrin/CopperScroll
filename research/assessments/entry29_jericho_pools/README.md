@@ -474,3 +474,107 @@ Encountered illustrations: **PDF2** regional Google map/location pin, and **PDF4
 **Bounded claim:** does this newly supplied site record resolve J19's individual reservoir identity, construction phase or a physical church/water connection? **Result: not identifiable from available evidence.** A nearby plastered reservoir is described, with a probable functional association and unknown phase/contact crosswalk. Reading access improves; the archaeological identity/contact/detection gates remain null. Obtain **Meinardus183–184** with article context and feature labels/drawings, or an identified field section/locus record, to test the association. No public retry, outreach, order or fee is initiated.
 
 Activity adds **one authored catalogue-record scope and one combined individual-identity/phase/contact coverage check** to86/5/88, giving **87 scoped primary-source targets /5 cartographic-reference intakes /89 bounded checks**. The seven panels count together as one scope; previously exposed inscription texts and user-reported survey history add no second observation. Catalogue statements cannot establish a new independent field campaign. All outcomes, question states11Inprogress/1Queued,28-ID roster, confidence, geometry, coordinates and regional denominator remain unchanged.
+
+
+## Meinardus scan sources and reported preview coverage — 6 October 2026
+
+The user supplied a bounded search/holding report, not new article images. This supplement records its provenance and a concrete scan specification. **Meinardus183–184 remains unread here**; no installation identity, construction date, dimensions or hydraulic contact is established. The earlier J19 result remains **not identifiable from available evidence**. Catalogue access resolves a supplier route, not the archaeological dependency.
+
+### Independently inspected public metadata
+
+The [Concordia Seminary offprint record](https://csl.tind.io/record/124607?ln=en) and its advertised [MARC export](https://csl.tind.io/record/124607/export/xm) directly confirm OttoMeinardus, *The Byzantine Church of St. Andrew in Jericho*, Cairo1966, **16 pages and14 plates**, an *Extrait du Bulletin de la Société d'Archéologie Copte, XVIII*, and the **fifth document in a bound volume of twelve**. MARC035 records **OCLC925473999**. The public [holding-data response](https://csl.tind.io/record/124607/holdings/get_holding_data?allItems=0&ln=en), advertised in that record's HTML, confirms one item: **On Shelf; Stacks; BX133.2 .M456 1962; barcode1010543423**. The record names the Hasse Library; the item response calls its library Main Library. These are current catalogue labels, not scan fulfillment or custody of archaeological field records. The offprint MARC050 classificationBX131 .M45 1961 is distinct from the physical bound-volume call number above; use the holding call number for retrieval.
+
+Ordinary public GET capture fingerprints: catalogue HTML49074bytes/SHA-256`49e8723a7b0bee0edc6cde1cfc1ea620bf283c5117e658c0f7b46e9bab4aff5d`; MARC XML4147bytes/`845a0d5011fdc172f8cb705576c37f9f6c38e90f92d886ad9848901ab2885561`; holding JSON545bytes/`60679f05024e86567c589e8e71bc33381626a7cc19fbf2ccfa18ce54a5184bea`. All returned200, with no login, hold, recall, request or account access. The text/plate extent is bibliographic metadata; no article page or plate was recovered. Public metadata access supplies no article-image reuse licence.
+
+The already exposed [current institutional PADIS record](https://sites.google.com/uniroma1.it/sapienza-padis-project/archaeological-sites/abu-hindi-tell-area-st-andrews-church) was re-read. It places a pool, cisterns and terracotta jars under Roman(Herodian) remains and cites **Meinardus1966 183–184**; later finds route to193/194, and the bibliography identifies the1966offprint. This is a derivative phase/function attribution to the same original, not an independently observed reservoir date. The previously quoted25×30m remains the church footprint, not the pool's dimensions. Reinspection adds no scope/check count.
+
+### User-reported holdings and preview reading
+
+| Reported route | Supplied detail | Verification limit here |
+| --- | --- | --- |
+| [UC Berkeley catalogue](https://search.library.berkeley.edu/discovery/fulldisplay?docid=alma991086334089906532&context=L&vid=01UCS_BER:UCB&lang=en) | Doe Library, Main(Gardner)Stacks; physical **v.18–19**, Item in place, **DT57 .S57**, barcode**B000534312** | OrdinaryGET200 returned only a4784-byte JavaScript shell, SHA-256`830bf9af6721ca20830deabaa6e70015ae3d0da048fa277f6914257c9cb7a4f8`; holding details remain user-reported. |
+| [WorldCat925473999](https://search.worldcat.org/title/925473999) | One offprint holder, Concordia Seminary | User-reported WorldCat display; OCLC and local holding independently verified as above. |
+| [WorldCat1640668](https://search.worldcat.org/title/1640668) / [7940417](https://search.worldcat.org/title/7940417) |44/112serial libraries, partial displayed lists with possible overlap | User-reported serial holdings; no volume18-specific holding established at those other institutions. Do not treat serial coverage as a confirmed scan source. |
+
+The user reports that both [HathiTrust v.18](https://babel.hathitrust.org/cgi/pt?id=mdp.39015042487515) and [v.17–18](https://babel.hathitrust.org/cgi/pt?id=mdp.39015032019609) opened, but each individually submitted query stayed on Searching: pool, cistern, cisterns, reservoir, Herodian, jars, plastered, aqueduct, Meinardus, Andrew, Jericho, Magnianus, Tryphon, Pl., Plate. Every reported page/hit cell is **U/U: unavailable, not zero**. No plate location was verified. No stalled query was repeated here.
+
+For [GoogleBooks BSAC18](https://books.google.com/books?id=xT_rAAAAMAAJ&newbks=0), the user reports volume18/1965 and the following classic-interface results. Counts refer to **matching pages**, not word occurrences; only a subset is displayed. Preserve duplicate page labels and the distinction between zero results and inaccessible content. These are user-reported preview observations, without supplied screenshots or independent native-page reading here.
+
+| Term | Reported matching pages | Displayed labels |
+| --- | --- | --- |
+| pool |0| none |
+| cistern |0| none |
+| cisterns |5|158,160,241|
+| reservoir |2|195,195|
+| Herodian |1|181|
+| jars |4|194,195,195|
+| plastered |1|193|
+| aqueduct |0|none|
+| Meinardus |20|two unlabeled;263|
+| Andrew |7|unlabeled;181,188|
+| Jericho |9|181,182,186|
+| Magnianus |0|none|
+| Tryphon |2|189,190|
+| fishpond |1|195;blank image|
+
+The reported contents snippet gives article**181–196**. Reported181/182 concern mixed-period remains and the modern property acquisition;186room partitions/mosaic;188dedication;189–190epitaph/chronology;193columns inRoomII;194Mameluk pottery citing **Pl.X A–B**. The cistern results158/160/241 concern other sites/customs, and263another topic. Reported195reservoir/jars/fishpond images are blank or suppressed. **No readable183–185 snippet appeared.** Neither query zeros nor unreadable images establish feature absence. Search labels and pottery plate references do not establish native plate-leaf locations.
+
+For the [CIIPIV.1 preview245 onward](https://books.google.com/books?id=_oxsDwAAQBAJ&newbks=0&pg=PA245), the user's stated reading covers245–252,253,257–260. It reports regional water context245–247, settlement history248–250, **TululAbu el-‘Alayiq palace** pools/aqueducts251, monastic water context252, and a different synagogue entry beginning253. None is a StAndrew hydraulic installation identification. In the reported StAndrew entries, **2809 at257–258** conditionally places church construction in the late sixth/first third of the seventh century; **2810 at259** places Tryphon's grave southeast of2809, cites **Meinardus196 for the complex drawing** and **192 for other RoomII graves**. The reported260discussion attributes **592,637,682** alternatives to Meinardus and DiSegni's preference for637 without fully excluding592. These are attributed user summaries of CIIP, not independently inspected CIIP passages here. They do not replace the earlier verified Oxford summary or establish an absolute church/reservoir year. The user reports no StAndrew pool/cistern/reservoir description in those scoped passages; that is not whole-book absence.
+
+The [Chicago dissertation PDF](https://oi.uchicago.edu/sites/default/files/uploads/shared/docs/Research_Archives/Dissertations/MJ_dissertation_reduced%20size-1.pdf) remains a **user-reported search-engine excerpt**: p79n120 attributes fishpond, cisterns and drains to Meinardus's Herodian dating183–184. The user reports the PDF returns404; it was not independently opened here. This derivative excerpt can support retrieval vocabulary, not original-page verification, dimensions, construction contacts or a separate field observation.
+
+Access log for this supplement: the web reader returned **not-accessible** for Concordia, Berkeley and CIIP; all three exact URLs/errors were shared immediately. OrdinaryGET recovered Concordia as above, but Berkeley supplied only its JavaScript shell, and CIIP returned **HTTP429 Too Many Requests**, also immediately shared. Stop that preview retry; no login, human-verification bypass or protected endpoint was attempted. Prior user-reported Hathi searches and Google snippet reading remain separate from this inspection scope.
+
+### Concrete scan specification; no request sent
+
+Preferred target is Concordia's complete offprint, identified by its actual bound-item call number. Ask for:
+
+> Otto Meinardus, “The Byzantine Church of St. Andrew in Jericho,” BSAC XVIII (1965–1966), **pp.181–196**, including the **complex/site-plan drawing cited at p.196**, and **all fourteen plates with their captions**, wherever bound. Please check **pp.308–313**, a provisional secondary-index clue whose association is unverified, and include any additional plate leaves belonging to the article.
+
+Article181–196 is a user-reported contents locator consistent with the established article citation and16-page catalogue extent. Plan196 is a **user-reported CIIP citation**, not a directly viewed plan. The14plates are independently verified bibliographic extent; their journal locations remain unknown. **308–313 is provisional**, not part of a verified article range or plate pagination. A smaller first scan would be **182–185 and196**, plus every water-installation plate/caption, preserving full labels, scale, north arrow and contextual text. Berkeley's reported v18–19 holding is the alternate route. No library request, message, order or fee is initiated by this record.
+
+The needed observation is the explicit mapping between Meinardus's pool/fishpond/cisterns and CMHL's nearby plastered reservoir, with positions, dimensions, construction/use argument and labelled plan/captions. Earlier construction with later monastic use and a separate nearby feature remain live alternatives. CMHL's probable association and sixth-century mosaic label do not establish reservoir construction or contradict the derivative Herodian attribution. Without the original pages/plan or a field locus/contact record, the identity/phase/contact gates stay unknown.
+
+This is access routing, a supplied-report intake and known-source reinspection: **zero new primary targets, map intakes or archaeological checks**. Activity remains **87/5/89**, question states11Inprogress/1Queued. All outcomes,28-ID roster, coordinates, geometry, confidence and regional denominator remain unchanged; no closed archaeological test is reopened.
+
+
+## Supplied CIIP IV.1 original — 6 October 2026
+
+The user subsequently supplied `Corpus Inscriptionum Iudaeae-Palaestinae IV - Iudea-Idumea - Part 1 2649-3324 (Walter Ameling et al. (eds.)) (z-library.sk, 1lib.sk, z-lib.sk)_compressed_compressed.pdf`: **1636PDFpages /20498216bytes /SHA-256`f92e28150ea05af6b9b8b7461e7fcbb7ce5007f044151e3661152cf658841093`**. The filename is supplied-container provenance, not an independently validated distribution licence. PDF3/5 identify *Corpus Inscriptionum Iudaeae/Palaestinae IV: Iudaea/Idumaea, Part1:2649–3324*; PDF6 verifies2018DeGruyter/ISBN978-3-11-053744-4. The large container's other sections are outside this semantic reading scope. Text extraction located relevant pages; **native rendered PDF3/6,289–297 and301–304** were visually inspected at1.4×. Title/editorial text atPDF4–5 was also extracted. Do not imply whole-volume reading.
+
+This resolves the immediately preceding **CIIP reported-reading limitation**. The online-preview429 remains access history; no renewed network preview request was needed. It does **not** recover Meinardus's original pages or the complex plan. Earlier user-reported Hathi/Google/Chicago observations and Berkeley holding details retain their inspection limits.
+
+| Printed page / PDF page | Directly verified scope and limit |
+| --- | --- |
+|245–252 /289–296|Complete Jericho introduction. Regional spring/irrigation context245–247, settlement/economic history248–250, **TululAbu el-‘Alayiq palace** aqueducts/pools251 and hospice-water context252. No StAndrew reservoir identity/contact. The springs/supply history is already exposed derivative context, not an observed early settlement–conduit join. Introduction ends252.|
+|253 /297|Begins Tell es-Sulṭan synagogue2807–2808. Its floor/inscription data concern another building; no transfer of its dimensions or phase to StAndrew.|
+|257–258 /301–302|Complete2809 church dedication and commentary, under Church ofAbunaPhilip(StAndrew), north side ofWadiKelt. Western nave/entrance **or possible bema** location. Conditional church dating depends on DiSegni's interpretation of2810: first third of seventh century, perhaps late sixth. No reservoir phase/contact supplied.|
+|259–260 /303–304|Complete2810 Tryphon entry, including continuation before2811. Grave southeast of2809; explicit reference to **Meinardus196 complex drawing**, and **192 otherRoomII graves**. The book reports that the grave was planned when the floor was paved, with the framed epitaph added after Tryphon's death. This is attributed interpretation, not a newly inspected excavation section.|
+
+### Dating and image provenance
+
+CIIP260 directly retains **592,637,682** as possible dates, attributing the interpretation to Meinardus and stating that Worp reached the same conclusion. It reports DiSegni's preference for637 through a soldier/pre-conquest historical argument, while592 is not fully excluded. No absolute AD year is written in the epitaph; the inscription supplies20February/Thursday/tenth indiction. CIIP rejects the older575/587 readings on the indiction/weekday combination. Record those as rejected interpretations **within CIIP's discussion**, not a new calendrical calculation here. Worp, SEG and Meinardus originals remain unread. The earlier Oxford summary foregrounds637/682; CIIP's additional592 is now directly verified **as CIIP's reported alternative**, without silently rewriting Oxford's own wording or selecting one secure year. Church construction, planned grave, later epitaph and reservoir construction require separate physical phase relationships.
+
+Native257 gives2809 outer frame **1.05×1.66m**, inner0.88×1.58m;259 gives2810 tabula **95×49cm**, height including ansae149cm. The previous CMHL/Brown values include different outer widths/tabula dimensions. These are source-specific inscription measurements with an unresolved dimension crosswalk, never pool measurements or a basis for choosing a preferred edition. The north-side-Wadi heading refines CIIP's own site description, without transforming the raw CMHL grid strings or proving an individual reservoir position.
+
+CIIP260's bibliography independently supplies **Meinardus187 drawing and Pl.6a+b** for the epitaph. This is a specific native **epitaph retrieval locator**, not a verified water-installation plate or physical plate-leaf pagination. CIIP258/260 also cite M.Jennings, *Beyond the Walls of Jericho: Khirbet al-Mafjar and the Signature Landscapes of the Jericho Plain*(2015),79. That verifies the bibliographic lead; it does not inspect the user-reported Chicago dissertation PDF/p79n120 or its fishpond wording.
+
+Encountered illustration register, all link/locator-only pending reproduction authority:
+
+| Figure / printed page / PDF page | Observed illustration | Attribution printed in CIIP |
+| --- | --- | --- |
+|2807.1 /253 /297|Tell es-Sulṭan inscription photo, another synagogue; no hydraulic plan/section|Entry continues beyond this inspected leaf; own exact credit not established within this scope. Keep this page/figure locator without assigning the preceding257bibliography/photo credit to it.|
+|2809.1 /257 /301|Building inscription photograph|258photo line: O.Hamdan–C.Benelli, *Bilad Al-Sham*(2008),24.|
+|2809.2 /258 /302|Building inscription drawing|258photo/drawing line: Bagatti, *Church*,295fig168.|
+|2810.1 /259 /303|Tryphon inscription photograph|260photo line: Hamdan–Benelli, *Bilad Al-Sham*(2008),25.|
+|2810.2 /259 /303|Tryphon inscription drawing|260photo/drawing line: Augustinović, *Gerico e Dintorni*(1951),81fig26.|
+
+These figures have captions/numbers but no hydraulic metric scale/north arrow. They supply actual published photo/drawing inspection at this compressed-page resolution; no independent stone/mosaic autopsy, new fine-letter emendation or field plan follows. The renderer/source hashes above and exact PDF/figure locators preserve retrieval. Publisher copyright2018 is explicit; no licence to publicly republish these page images or third-party figures is established. No protected source asset or tracing is uploaded, and no cartographic intake is added.
+
+### Source-specific coverage result and next observation
+
+**Bounded claim:** can this directly read CIIP scope establish J19's individual reservoir identity, construction phase or church/water contact? **Result: not identifiable from available evidence.** Its complete StAndrew entries establish published epigraphy and attributed church/grave arguments, but describe no pool/cistern/plastered-reservoir identification, dimension or physical hydraulic join. The regional palace pools at251 are a different site context. This is a scoped coverage statement, not whole-book absence, a negative excavation, or rejection of an earlier pool later used by a monastery.
+
+The scan specification now has a **directly verified CIIP citation** for Meinardus**196** and **192**. Obtain Concordia's full181–196offprint with all14plates/captions; prioritize **183–184 water descriptions and196 labelled complex drawing**, with surrounding182–185context. Pl.6a+b concerns the epitaph; water-feature plates remain unidentified. Keep308–313 a provisional index check only. Exact feature labels, locations/dimensions, construction/use argument and physical contacts are still required to distinguish reuse from a separate nearby reservoir. No scan request, correspondence, order or fee is initiated.
+
+One newly inspected **CIIP original-edition scope** and one combined source-specific water-identity/phase/contact coverage check add **1/1** to87/5/89, giving **88 scoped primary-source targets /5 cartographic-reference intakes /90 bounded checks**. Introduction and paired entries count together, not per page/inscription/figure. CIIP republishes the known inscription/observation lineage; no independent excavation campaign or confirmatory observation is added. This new-source coverage result preserves the previous archaeological results rather than reopening them. All outcomes, question states11Inprogress/1Queued,28-ID roster, geometry, coordinates, confidence and regional denominator remain unchanged.
