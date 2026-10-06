@@ -7,7 +7,7 @@
   "outcome": "bathing function inconclusive to inspected publication scope",
   "sources": [
     {
-      "source": "Greenhut–Mazor 2020",
+      "source": "Greenhut\u2013Mazor 2020",
       "printed_pages": [
         "74*",
         "75*",
@@ -30,13 +30,13 @@
       "fresh_target": false
     },
     {
-      "source": "Weksler-Bdolah–Szanton 2014, Jerusalem, Silwan",
-      "target": "phases 3d–3c; Fig.3",
+      "source": "Weksler-Bdolah\u2013Szanton 2014, Jerusalem, Silwan",
+      "target": "phases 3d\u20133c; Fig.3",
       "inspection": "original report text and original Fig.3 image",
       "fresh_target": false
     },
     {
-      "source": "Szanton–Vukosavović–Berko 2024",
+      "source": "Szanton\u2013Vukosavovi\u0107\u2013Berko 2024",
       "printed_pages": [
         "34*",
         "35*",
@@ -47,12 +47,12 @@
         18,
         19
       ],
-      "inspection": "p34* original image; pp35*–36* text controls",
+      "inspection": "p34* original image; pp35*\u201336* text controls",
       "fresh_target": false
     },
     {
       "source": "Regev et al.2025 main and Supporting Information",
-      "target": "dam installation/sampling main sections; appendix pp1–3",
+      "target": "dam installation/sampling main sections; appendix pp1\u20133",
       "inspection": "main text controls and all appendix page images",
       "fresh_target": false
     }
@@ -75,7 +75,7 @@
       "tread_m_approx": 0.4,
       "rise_m_approx": 0.4,
       "scope": "partial southern exposure; independently recorded dimensions",
-      "source": "2014 phases3d–3c/Fig3"
+      "source": "2014 phases3d\u20133c/Fig3"
     },
     {
       "feature": "L103",
@@ -127,5 +127,263 @@
   "next_discriminator": "phase-controlled small-pool occupation/use evidence or explicit bathing identification tied to L102/L104 or L124/W50",
   "model_scope": "tests small receiving basin as Milik bathing pool; alternative main-basin identification requires separate function and under-pipe spatial controls",
   "milik_syntax_control": "original1960p142 locates under-pipe relation in pool of Siloah baths; no passage-to-baths wording",
-  "excludes_all_L103_models": false
+  "excludes_all_L103_models": false,
+  "main_pool_followup": {
+    "check_id": "C15-E49-MAINPOOL-UNDERPIPE-20261006",
+    "inspection_date_utc": "2026-10-06",
+    "inspection_date_local": "2026-10-05",
+    "timezone": "America/Los_Angeles",
+    "entry": 49,
+    "milik_entry": 51,
+    "column_lines": "X15-16",
+    "claim": "Larger Birket al-Hamra supplies the Milik bathing pool and an identifiable place beneath a pipe within that same basin",
+    "decision": "not identifiable from available evidence",
+    "model_status": "exploratory; all sources and observations previously exposed",
+    "preserves_previous_small_receiver_check": true,
+    "parameters": {
+      "retained_readings": [
+        "Milik1960 p142 bathing pool and under-pipe relation; p152 Siloah adjective",
+        "Puech2015 exit/source and conditional Siloam division/restoration; strict hollowed-stone interpretation",
+        "Broader built-gutter comparison is an explicit analyst-conditional model"
+      ],
+      "retained_terminal_choices": [
+        "observed L103 with unknown main-side junction",
+        "reported Silwan-to-Birket surplus-water connection without named surveyed terminal"
+      ],
+      "quantity_17_is_metric": false,
+      "required_inlet_or_flow_direction": false,
+      "metric_offset_m": null,
+      "digging_depth_m": null,
+      "compass_axis": null,
+      "cubit_length_m": null,
+      "under_datum": "structural underside, channel bottom and ancient surface remain separate; relation unresolved",
+      "numerical_tolerance_m": null,
+      "ancient_target_point": null,
+      "crs": null,
+      "phase_choices": [
+        "main basin and northern tiers kept distinct across reported 3a/3b/3c/4 phases",
+        "L103 retains its conditional post-receiver-floor chain",
+        "Silwan and other collectors kept separate"
+      ],
+      "regional_boundary": null,
+      "eligible_candidate_count": null,
+      "coverage_denominator": null,
+      "unused_prediction": null
+    },
+    "decision_rule": {
+      "support": "source-supported reading/function/name, observed matched basin/terminal/under-place, dated coexistence and discrimination plus registered unused observation",
+      "reject": "contradiction across retained branches of the stated claim",
+      "unknown": "unobserved main-side junction, unresolved function/name/phase or missing coverage yields not identifiable",
+      "scope": "receiver-side proxy is not a point inside Birket; this bookkeeping limit adds no formal exclusion"
+    },
+    "source_reinspection": [
+      {
+        "source": "Greenhut-Mazor2020",
+        "printed_pages": [
+          "72*",
+          "74*",
+          "75*",
+          "76*",
+          "83*",
+          "137"
+        ],
+        "pdf_pages_one_based": [
+          3,
+          5,
+          6,
+          7,
+          14,
+          18
+        ],
+        "native_scope": "root:72*/74*/76*/83*/137; parallel reader additionally75*",
+        "figures": [
+          "2",
+          "Plan1 and sections",
+          "5"
+        ],
+        "original_pdf": "research/assets/plans/siloam2020/greenhut-mazor2020-siloam-pool.pdf",
+        "sha256": "6cd7dc02b66e58028dceed4fae521ae1d0ab54340ba57200acc96a8e2b1871fe",
+        "fresh_target": false
+      },
+      {
+        "source": "Szanton-Vukosavovic-Berko2024",
+        "printed_pages": [
+          "27*",
+          "28*",
+          "29*",
+          "31*",
+          "33*",
+          "34*",
+          "35*",
+          "38*",
+          "39*"
+        ],
+        "pdf_pages_one_based": [
+          10,
+          11,
+          12,
+          14,
+          16,
+          17,
+          18,
+          21,
+          22
+        ],
+        "native_scope": "root original page images; phase descriptions reinspected without new source scope",
+        "figures": [
+          "5",
+          "6 reconstruction",
+          "9",
+          "11",
+          "12a-b"
+        ],
+        "original_pdf": "research/assets/plans/birket2024-cycle12/birket-al-hamra2024-original.pdf",
+        "sha256": "ced526bf2b27e250438bab26b2bdf85889510c1068f23f1020359f2e78517e39",
+        "fresh_target": false
+      },
+      {
+        "source": "Milik1960",
+        "printed_pages": [
+          142,
+          152
+        ],
+        "pdf_pages_one_based": [
+          6,
+          16
+        ],
+        "native_scope": "root original page images",
+        "source_url": "https://publication.doa.gov.jo/uploads/publications/38/ADAJ_1960_4_5-137-155.pdf",
+        "sha256": "c7a606f4aaa6b6230a9abdfcf65afe5b03b88bb5b12d6d13d84a2041f3932427",
+        "redistribution": "permission unverified; link only",
+        "fresh_target": false
+      }
+    ],
+    "prior_context_controls": [
+      "cycle8 2014/2022 correspondence; parallel native2014Figs3-4/2022Figs2-3",
+      "cycle10 Ariel2020 pp90*-91* foundation-coin audit",
+      "cycle11 Puech strict-material and L103 relative-phase audit",
+      "cycle12 2024 original phase/contact audit",
+      "cycle13 Regev2025 dam-sampling appendix audit"
+    ],
+    "same_gate_comparisons": [
+      {
+        "basin": "larger Birket al-Hamra",
+        "role": "selected main-basin candidate",
+        "bathing_function": null,
+        "name_association": "competing Birket/Siloam versus Birket/Solomon identifications",
+        "named_terminal": "L103 proposed; main-side junction unobserved",
+        "under_place_inside_this_basin": null,
+        "terminal_and_bath_floor_same_phase": null,
+        "source": "2020Fig2/Plan1;2024pp27*/29*/33*-35*/38*-39*"
+      },
+      {
+        "basin": "small southeastern L102/L104, published L124/W50/GutheIII correspondence",
+        "role": "comparison; preceding function test preserved",
+        "bathing_function": null,
+        "name_association": null,
+        "named_terminal": "L103 receiver-side contact reported",
+        "under_place_inside_this_basin": null,
+        "terminal_and_bath_floor_same_phase": null,
+        "reported_channel_bottom_above_receiver_floor_m": 0.75,
+        "receiver_floor_proxy_inside_Birket": false,
+        "source": "2020Plan1/p76*/p83*;2014Fig3;2024p34*"
+      },
+      {
+        "basin": "Silwan tunnel-mouth pool",
+        "role": "separate alternative basin",
+        "bathing_function": null,
+        "name_association": "2024 authors propose Siloam; not independently settled here",
+        "named_terminal": null,
+        "under_place_inside_this_basin": null,
+        "terminal_and_bath_floor_same_phase": null,
+        "source": "2024pp27*/34*/38*"
+      },
+      {
+        "basin": "northeastern small excess-water collector",
+        "role": "selected notice control",
+        "bathing_function": null,
+        "name_association": null,
+        "named_terminal": null,
+        "under_place_inside_this_basin": null,
+        "terminal_and_bath_floor_same_phase": null,
+        "source": "2024p34*"
+      },
+      {
+        "basin": "tower reservoir L119",
+        "role": "separate stepped-reservoir control",
+        "bathing_function": null,
+        "name_association": null,
+        "named_terminal": null,
+        "under_place_inside_this_basin": null,
+        "terminal_and_bath_floor_same_phase": null,
+        "steps": 7,
+        "source": "2014Fig3/report; not L124 six steps"
+      }
+    ],
+    "fabric_vs_interpretation": {
+      "reported_fabric": [
+        "L103 masonry across W1 at receiving basin",
+        "irregular cut through receiver plaster",
+        "reported channel-bottom relative height",
+        "2024 northern tiers and southern pool wall/plaster exposures"
+      ],
+      "author_interpretations": [
+        "L103 later insertion, formerly continuous lining and main-pool surplus transfer",
+        "small receiver storage/overflow",
+        "2024 seating/water-spectacle proposal and competing ancient pool names",
+        "2024 main-pool/northern phase assignments"
+      ],
+      "project_inference": "reported hydraulic connection and receiver floor do not establish a surveyed under-pipe place inside the main basin"
+    },
+    "chronology_controls": {
+      "L105_coin20_basket1092_issue": "69/70CE",
+      "floor_lower_bound": "after actual minting if original foundation association accepted; not after70CE as a calendar assertion",
+      "L103_chain": "retaining L103 retains conditional insertion after receiving-floor construction even when the selected bathing basin changes",
+      "main_basin_date_transfer": false,
+      "coin17_dates_conduit_construction": false,
+      "dam_mortar_dates_under_pipe_point": false,
+      "treasure_burial_lower_bound_from_later_pipe": false,
+      "separate_claims": [
+        "landmark construction",
+        "existence when described in instruction",
+        "source-list composition",
+        "copper copying",
+        "cave deposition",
+        "treasure burial"
+      ],
+      "2024_wall_dam_join": "p33*n3: excavation halted for depth/water; stratigraphic relationship unclear"
+    },
+    "surviving_branches": [
+      "unobserved main-side L103 junction with separately established function/name/phase",
+      "different main-pool terminal feature",
+      "separate Silwan basin association",
+      "Puech exit/source branch without required pool; strict exposed-L103 material result unchanged"
+    ],
+    "reopen_only_for": "named surveyed main-side conduit/trough junction with underside/aperture, observed basin boundary and ancient floor in the same phase, plus independent bath function/name evidence; or documented source/analytical correction",
+    "excavation_coverage": null,
+    "negative_excavation_result": null,
+    "new_source_targets_delta": 0,
+    "bounded_checks_delta": 1,
+    "conditional_candidate_assessments_delta": 0,
+    "decisive_tests_delta": 0,
+    "closures_delta": 0,
+    "confirmed_deposits_delta": 0,
+    "cartographic_assets_delta": 0,
+    "coordinates_added": 0,
+    "outcome_ledger_delta": 0,
+    "site_confidence_change": false,
+    "question_status_change": false,
+    "activity_before": {
+      "scoped_source_targets": 70,
+      "cartographic_intakes": 5,
+      "bounded_checks": 78
+    },
+    "activity_after": {
+      "scoped_source_targets": 70,
+      "cartographic_intakes": 5,
+      "bounded_checks": 79
+    },
+    "outreach_sent": false,
+    "A_C94_dependency": "existing sent inquiry remains waiting; this pass checked no delivery or reply"
+  }
 }
