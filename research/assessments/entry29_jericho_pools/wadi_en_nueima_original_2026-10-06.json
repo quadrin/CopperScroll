@@ -1,0 +1,683 @@
+{
+  "schema_version": "1.0",
+  "audit_date_utc": "2026-10-06",
+  "entry": 29,
+  "original_id": "J23",
+  "padis_id": "0167",
+  "claim": "Identify individual Wadi en-Nueima bath features/states and phase-specific water contacts from the cited original Dinur-Feig report.",
+  "audit_mode": "bounded_exploratory_original_source_access_and_citation_verification",
+  "scope": {
+    "selected_original_report_only": true,
+    "geometry_rerun": false,
+    "confirmatory_test": false,
+    "unused_prediction": null,
+    "search_closed": true,
+    "library_search": false,
+    "outreach": false,
+    "purchase_or_login": false,
+    "broader_parked_hunt": false
+  },
+  "existing_evidence_refs": [
+    "inventory_normalization_2026-10-06.json#/records/22",
+    "regional_inventory_2026-10-06.json#/records/22",
+    "regional_inventory_2026-10-06.md",
+    "../../sources/wadi_qelt_source_access_2026-10-02.md"
+  ],
+  "target_original": {
+    "authors_as_cited": [
+      "U. Dinur",
+      "N. Feig"
+    ],
+    "title_as_cited": "Wadi Nu’eima",
+    "container_as_cited": "Excavations and Surveys in Israel",
+    "issue_as_cited": 5,
+    "citation_year": 1986,
+    "printed_pages_as_cited": [
+      110,
+      111
+    ],
+    "different_edition_inferred": false,
+    "designation_vs_publication_date_note": "Catalogue citation1986 and candidate publisher metadataJune1987 retained; report/edition equivalence unknown, original issue leaves uninspected.",
+    "original_body_obtained": false,
+    "original_pdf_sha256": null,
+    "original_pdf_page_count": null,
+    "printed_to_pdf_page_mapping": null,
+    "native_original_report_pages_inspected": [],
+    "figures_or_sections": null,
+    "field_campaign_or_accession": null,
+    "publisher_description_completeness": null,
+    "publisher_excerpt_does_not_show_target_absence": true,
+    "citation_verification_basis": "Native ROSAPAT bibliography only; the original publication has not been inspected.",
+    "candidate_publisher_volume_record_url": "https://publications.iaa.org.il/esi_english_series/18/",
+    "candidate_publisher_metadata_publication_date": "1987-06",
+    "candidate_volume_download_url": "https://publications.iaa.org.il/cgi/viewcontent.cgi?article=1017&context=esi_english_series",
+    "candidate_volume_report_correspondence": null,
+    "candidate_volume_edition_correspondence": null,
+    "candidate_publisher_description_lists_target": false,
+    "candidate_volume_html_scope": "Titles/pages1-35; completeness unknown; Wadi Nu’eima and110-111 not listed.",
+    "new_official_routing_locator": {
+      "source_id": "HADASHOT_ESI5_II",
+      "url": "https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=79",
+      "issue_title_as_indexed": "ESI 5 (1987) II",
+      "report_title_as_indexed": "Wadi Nu‘eima",
+      "printed_page_as_indexed": 36,
+      "index_report_byline": null,
+      "report_body_obtained": false,
+      "printed_to_pdf_mapping": null,
+      "inspection_basis": "worker_direct_official_web_metadata_read"
+    },
+    "indexed_p36_to_catalogue_p110_111_crosswalk": null,
+    "indexed_report_to_catalogue_report_identity": null,
+    "indexed_year_to_catalogue_year_crosswalk": null,
+    "page_offset_inferred": false,
+    "catalogue_citation_corrected": false
+  },
+  "bibliographic_verification": {
+    "source_id": "ROSAPAT2011",
+    "native_scope": [
+      {
+        "printed_page": 33,
+        "pdf_page_one_based": 45
+      },
+      {
+        "printed_page": 223,
+        "pdf_page_one_based": 235
+      }
+    ],
+    "result": "Both native bibliography pages assign the exact cited title/issue/year/110-111 span; site bibliography explicitly ties it to no96/PADIS0167."
+  },
+  "rosapat_source": {
+    "source_id": "ROSAPAT2011",
+    "evidence_kind": "derivative_archaeological_compilation",
+    "editors": [
+      "Lorenzo Nigro",
+      "Maura Sala",
+      "Hamdan Taha"
+    ],
+    "title": "Archaeological Heritage in the Jericho Oasis. A systematic catalogue of archaeological sites for the sake of their protection and cultural valorization",
+    "series": "Rome La Sapienza Studies on the Archaeology of Palestine and Transjordan",
+    "volume": "07",
+    "year": 2011,
+    "official_publications_page": "https://sites.google.com/uniroma1.it/sapienzatojericho/publications",
+    "recorded_public_download_url": "https://drive.google.com/uc?id=1RE_9cNN76qub2UGHE6ntJTO8PbMUBJXV&export=download",
+    "final_public_download_url": "https://drive.usercontent.google.com/download?id=1RE_9cNN76qub2UGHE6ntJTO8PbMUBJXV&export=download",
+    "bytes": 79335139,
+    "pdf_page_count": 336,
+    "sha256": "0c7fefdf676abb796c6cccf4f33dd6289c499d6a54249322e0b2ea672122af73",
+    "matches_prior_recorded_file": true,
+    "navigation_method": "pdftotext layout extraction; source claims checked against native PDF render images",
+    "render_method": "PyMuPDF page.get_pixmap, Matrix(1.5,1.5), PNG; full native pages inspected",
+    "native_page_inspections": [
+      {
+        "pdf_page_one_based": 3,
+        "label": "title",
+        "native_page_size_pt": [
+          595.219970703125,
+          842.0
+        ],
+        "png_sha256": "48c6a1c3e5d74aac5186ab52c7750f9177bbaefea1047389ff7df083fbd7acab",
+        "printed_page": null,
+        "scope": "title_leaf",
+        "inspection_class": "edition_metadata",
+        "render_file_basename": "rosapat_title.png"
+      },
+      {
+        "pdf_page_one_based": 4,
+        "label": "rights",
+        "native_page_size_pt": [
+          595.219970703125,
+          842.0
+        ],
+        "png_sha256": "12490ab1309843f5658304cc455535a6466f9cd937a4a9f36fa9aaaec55067fd",
+        "printed_page": null,
+        "scope": "rights_leaf",
+        "inspection_class": "rights_metadata",
+        "render_file_basename": "rosapat_rights.png"
+      },
+      {
+        "pdf_page_one_based": 29,
+        "label": "p17",
+        "native_page_size_pt": [
+          595.219970703125,
+          842.0
+        ],
+        "png_sha256": "9eb8cf4031ca892c8b6b8db1b9983affe64c4c6b039eb47eaf0b9cb60e29a231",
+        "printed_page": 17,
+        "scope": "introduction_context_and_n45_n46",
+        "inspection_class": "freshly_checked_derivative_contextual_passage",
+        "prior_exact_native_image_inspection_demonstrated": false,
+        "render_file_basename": "rosapat_p17.png"
+      },
+      {
+        "pdf_page_one_based": 45,
+        "label": "p33",
+        "native_page_size_pt": [
+          595.219970703125,
+          842.0
+        ],
+        "png_sha256": "4e125b9901a51e0ff6c79a1cd372c4bc21445df37a11acecf2101f4d3327fb04",
+        "printed_page": 33,
+        "scope": "introduction_bibliography_Dinur_Feig",
+        "inspection_class": "bibliographic_verification",
+        "render_file_basename": "rosapat_p33.png"
+      },
+      {
+        "pdf_page_one_based": 170,
+        "label": "p158",
+        "native_page_size_pt": [
+          595.219970703125,
+          842.0
+        ],
+        "png_sha256": "0f3e8a8afba94ae6f01206729c30ba5eba4d0238a8f90f331d8b09de95cd9fa3",
+        "printed_page": 158,
+        "scope": "catalogue_no96_identity_and_preservation_notice",
+        "inspection_class": "derivative_catalogue_notice",
+        "render_file_basename": "rosapat_p158.png"
+      },
+      {
+        "pdf_page_one_based": 171,
+        "label": "p159",
+        "native_page_size_pt": [
+          595.219970703125,
+          842.0
+        ],
+        "png_sha256": "47b55038c5cc7b7e6a342e086f4edf7631173fbbd882f8a6c9f7bdcc504782f4",
+        "printed_page": 159,
+        "scope": "catalogue_no96_period_and_function_labels",
+        "inspection_class": "derivative_catalogue_notice",
+        "render_file_basename": "rosapat_p159.png"
+      },
+      {
+        "pdf_page_one_based": 235,
+        "label": "p223",
+        "native_page_size_pt": [
+          595.219970703125,
+          842.0
+        ],
+        "png_sha256": "d9b585c1dc7ee755f5805751c0824f78cb4fbcde9b43f7bdbfdbaf647baf64c2",
+        "printed_page": 223,
+        "scope": "site_bibliography_no96_PADIS0167",
+        "inspection_class": "bibliographic_verification",
+        "render_file_basename": "rosapat_p223.png"
+      }
+    ],
+    "archaeological_observation_lineage": "Compiles Dinur-Feig; no independent field campaign established here.",
+    "rights": "Copyright2011 La Sapienza Expedition to Palestine and Jordan; all rights reserved; explicit written reproduction permission not established.",
+    "pdf_or_page_or_figure_published_in_repository": false
+  },
+  "finite_access_routes": [
+    {
+      "id": "workspace_esi5",
+      "route_type": "existing_authorized_workspace_and_repository",
+      "result": "No ESI5 body located in checked holdings; ESI6/ESI7-8 extracts are other reports.",
+      "claim_scope": "Current checked local availability only; not external holdings or publication absence."
+    },
+    {
+      "id": "padis_entry",
+      "route_type": "official_expedition_web_entry",
+      "url": "https://sites.google.com/uniroma1.it/sapienza-padis-project/archaeological-sites/wadi-en-nueima",
+      "result": "Entry and bibliography read as web text; derivative of the compilation, not original report."
+    },
+    {
+      "id": "iaa_record",
+      "route_type": "official_publisher_candidate_volume_html",
+      "url": "https://publications.iaa.org.il/esi_english_series/18/",
+      "result": "Advertises volume5 full text70.4MB and June1987 publication date; titles/pages through35 omit the requested report; completeness and report/edition correspondence unknown."
+    },
+    {
+      "id": "iaa_download_web",
+      "route_type": "linked_official_candidate_volume_download_web_reader",
+      "url": "https://publications.iaa.org.il/cgi/viewcontent.cgi?article=1017&context=esi_english_series",
+      "http_status": 403,
+      "pdf_obtained": false,
+      "report_or_edition_correspondence": null
+    },
+    {
+      "id": "iaa_download_ordinary",
+      "route_type": "one_ordinary_unauthenticated_download",
+      "url": "https://publications.iaa.org.il/cgi/viewcontent.cgi?article=1017&context=esi_english_series",
+      "http_status": 403,
+      "content_type": "text/plain; charset=UTF-8",
+      "response_bytes": 17,
+      "diagnostic_response_sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "diagnostic_is_source_pdf": false,
+      "pdf_obtained": false,
+      "report_or_edition_correspondence": null
+    },
+    {
+      "id": "rosapat_download_web",
+      "route_type": "recorded_public_download_web_reader",
+      "url": "https://drive.google.com/uc?id=1RE_9cNN76qub2UGHE6ntJTO8PbMUBJXV&export=download",
+      "result": "Web reader could not fetch this URL; no original report supplied."
+    },
+    {
+      "id": "rosapat_download_ordinary",
+      "route_type": "one_ordinary_public_expedition_linked_download",
+      "url": "https://drive.google.com/uc?id=1RE_9cNN76qub2UGHE6ntJTO8PbMUBJXV&export=download",
+      "http_status": 200,
+      "pdf_obtained": true,
+      "source_id": "ROSAPAT2011"
+    },
+    {
+      "id": "hadashot_part_II",
+      "route_type": "official_exact_title_metadata_index",
+      "url": "https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=79",
+      "inspection_basis": "worker_direct_web_read",
+      "result": "ESI5(1987)II lists WadiNu‘eima p36; no report link/body/byline in retrieved index.",
+      "report_identity_crosswalk": null,
+      "pagination_crosswalk": null
+    },
+    {
+      "id": "hadashot_printed_issue_guide",
+      "route_type": "official_metadata_scope_guide",
+      "url": "https://hadashot.iaa.org.il/reports_list_eng.aspx",
+      "inspection_basis": "worker_direct_web_read",
+      "result": "Printed-issue listings are metadata; original reports require printed issues."
+    },
+    {
+      "id": "hadashot_past_issues",
+      "route_type": "official_printed_issue_routing",
+      "url": "https://hadashot.iaa.org.il/reports_list_eng.aspx?paper=true",
+      "inspection_basis": "integrator_reported_web_read",
+      "result": "Distinct ESI5(1987)I andII routes."
+    },
+    {
+      "id": "hadashot_part_I",
+      "route_type": "official_partI_metadata_index",
+      "url": "https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=78",
+      "inspection_basis": "integrator_reported_web_read",
+      "result": "Visible partI titles/pages correspond to IAArecord18 description throughp35; no inference of PDF completeness."
+    },
+    {
+      "id": "iaa_english_series_list",
+      "route_type": "official_candidate_volume_routing",
+      "url": "https://publications.iaa.org.il/esi_english_series/",
+      "inspection_basis": "integrator_reported_web_read",
+      "result": "One ESI5 link to record18; no new original body route."
+    },
+    {
+      "id": "hadashot_citation_year_alternative",
+      "route_type": "one_official_citation_year_alternative_index",
+      "url": "https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=77",
+      "inspection_basis": "integrator_reported_web_read",
+      "result": "ESI4(1986)II: Wadi title not in retrieved metadata; no report or archaeological absence inferred."
+    }
+  ],
+  "derivative_observations": [
+    {
+      "id": "catalogue_identity_notice",
+      "source_id": "ROSAPAT2011",
+      "printed_pages": [
+        158,
+        159
+      ],
+      "pdf_pages_one_based": [
+        170,
+        171
+      ],
+      "scope": "no96/PADIS0167",
+      "content_summary": "One-dunam site notice; preservation among modern buildings; ritual-bath labels recur under Persian/Hellenistic/Roman headings citing Dinur-Feig p111.",
+      "interpretation_class": "catalogue_site_period_and_function_labels",
+      "individual_basin_count": null,
+      "individual_bath_loci": null,
+      "continuous_use_of_same_basin_established": null,
+      "current_field_preservation": null
+    },
+    {
+      "id": "introduction_possible_single_bath_enlargement",
+      "source_id": "ROSAPAT2011",
+      "printed_pages": [
+        17
+      ],
+      "pdf_pages_one_based": [
+        29
+      ],
+      "footnotes": [
+        45,
+        46
+      ],
+      "content_summary": "Tentative early bath account with enlargement in Hellenistic and Roman periods.",
+      "inspection_class": "freshly_checked_derivative_contextual_passage",
+      "relationship_status": "possible_single_bath_successive_enlargement_account_unverified_in_original",
+      "source_tentativeness_retained": true,
+      "individual_identity_or_phase_crosswalk_accepted": false,
+      "original_locus_or_construction_contact_observed": false,
+      "source_headings_date_entry29_instruction": false
+    },
+    {
+      "id": "live_padis_entry",
+      "source_id": "PADIS_LIVE",
+      "url": "https://sites.google.com/uniroma1.it/sapienza-padis-project/archaeological-sites/wadi-en-nueima",
+      "content_summary": "Repeats site/function/period labels and the same bibliography.",
+      "independent_campaign": false
+    }
+  ],
+  "encountered_figure_access_register": [
+    {
+      "source_id": "ROSAPAT2011",
+      "figure": "1.21",
+      "printed_page": 17,
+      "pdf_page_one_based": 29,
+      "caption_topic": "Tell es-Sultan stamped jar handles with Aramaic script",
+      "caption_derivative_reference": "Kenyon-Holland1982, plIII.b",
+      "wadi_bath_geometry": false,
+      "source_url": "https://drive.google.com/uc?id=1RE_9cNN76qub2UGHE6ntJTO8PbMUBJXV&export=download",
+      "native_image_inspected": true,
+      "reproduction_permission_established": false,
+      "repository_archive_state": "locator_only_no_source_image_upload"
+    },
+    {
+      "source_id": "ROSAPAT2011",
+      "figure": "PlateI",
+      "printed_page_citing_figure": 159,
+      "pdf_page_citing_figure_one_based": 171,
+      "native_image_inspected": false,
+      "actual_plate_pdf_page": null,
+      "repository_archive_state": "citation_only_uninspected"
+    }
+  ],
+  "original_report_identity_and_eligibility": {
+    "individual_bath_loci": null,
+    "distinct_bath_count": null,
+    "phase_state_crosswalk": null,
+    "eligible_basin_denominator": null,
+    "verified_complete_measurement_packages_for_J23": 0,
+    "gates": {
+      "textual_role": null,
+      "archaeological_function_to_text_equivalence": null,
+      "dated_wall_contact_surface_coexistence": null,
+      "observed_conduit_or_collector_contact": null,
+      "northern_reference": null,
+      "finite_ancient_face_and_measurement_plane": null,
+      "aperture_invert_centre_or_crown_definition": null,
+      "benchmark": null,
+      "bounded_field_uncertainty": null,
+      "regional_detection_coverage": null,
+      "unused_prediction": null
+    },
+    "original_phase_function_contact_observations_this_pass": [],
+    "J23_remains_aggregate_notice": true,
+    "normalized_roster_or_geometry_changed": false,
+    "equal_reading_phase_and_metric_rules_ref": "regional_inventory_2026-10-06.json#/equal_opportunity_rules"
+  },
+  "decision": {
+    "access_audit": "closed_after_finite_selected_and_exact_partII_metadata_routes_original_body_not_obtained",
+    "identity_and_phase_contact_claim": "not_identifiable_from_available_evidence",
+    "next_source_needed": "Original ESI5(1987)II p36 WadiNu‘eima, with issue title/contents, report header/byline and any plans/sections/captions; establish report/year/page correspondence to catalogue Dinur-Feig1986 pp110-111 separately.",
+    "named_new_observations": [
+      "Original PartII p36 report header/byline and issue leaves establishing or rejecting the catalogue report/year/page crosswalk",
+      "Individual bath locus IDs and original basin/state outlines",
+      "Observed construction sequence, dating contexts and evidence distinguishing function labels from physical features",
+      "Actual phase-specific feeder/drain/collector ties with named apertures, receiving ancient faces and surfaces",
+      "Original report drawing/section or field accession if referenced; presently unknown"
+    ],
+    "previous_terminal_entry29_results_preserved": true,
+    "report_year_pagination_crosswalk": null
+  },
+  "accounting_recommendation": {
+    "scoped_primary_source_targets_delta": 0,
+    "cartographic_intakes_delta": 0,
+    "bounded_checks_delta": 0,
+    "outcomes_delta": 0,
+    "baseline_registered_activity": [
+      70,
+      5,
+      80
+    ],
+    "basis": "Bibliography/access routing and derivative contextual inspection do not supply a new original bath observation or completed individual phase/contact test.",
+    "fresh_derivative_p17_scope_explicitly_flagged_for_integrator": true,
+    "status": "final_after_exact_official_partII_metadata_routing_check"
+  },
+  "repository_context_at_closure": {
+    "branch": "research/wadi-nueima-original-access",
+    "head": "17aabbe0ce7744e3c6f3229d441615b4ef924421",
+    "confirmatory_freeze": false
+  },
+  "official_routing_metadata_boundary": {
+    "guide_url": "https://hadashot.iaa.org.il/reports_list_eng.aspx",
+    "guide_inspection_basis": "worker_direct_official_web_metadata_read",
+    "guide_summary": "Printed lists supply metadata; the reports themselves must be looked up in printed issues.",
+    "past_issues_url": "https://hadashot.iaa.org.il/reports_list_eng.aspx?paper=true",
+    "past_issues_inspection_basis": "integrator_reported_official_metadata_inspection",
+    "distinct_part_I_URL": "https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=78",
+    "distinct_part_II_URL": "https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=79",
+    "IAA_series_list_url": "https://publications.iaa.org.il/esi_english_series/",
+    "IAA_series_list_result": "One ESI5 link to record18; its visible contents match Hadashot partI throughp35.",
+    "IAA_series_list_inspection_basis": "integrator_reported_official_metadata_inspection",
+    "IAA_record_PDF_completeness": null,
+    "IAA_record_PDF_partII_coverage": null,
+    "alternative_citation_year_metadata": {
+      "url": "https://hadashot.iaa.org.il/sheet_list_eng.aspx?id=77",
+      "issue_title": "ESI4(1986)II",
+      "Wadi_title_in_retrieved_list": false,
+      "report_absence_in_other_issues": null,
+      "archaeological_absence": null,
+      "inspection_basis": "integrator_reported_official_metadata_inspection"
+    },
+    "new_original_body_route_found": false
+  },
+  "historical_access_audit_field_scope": "All pre-existing fields describe the pre-upload access audit, superseded for current access/source observations by supplied_original_review and current_status.",
+  "supplied_original_review": {
+    "source_id": "ESI5_DinurFeig_Wadi1986_published1987",
+    "inspection_date_utc": "2026-10-06",
+    "inspection_date_los_angeles": "2026-10-05",
+    "source": {
+      "uploaded_name": "Excavations and Surveys in Israel 5.pdf",
+      "acquisition": "user_supplied_in_current_conversation",
+      "bytes": 73822455,
+      "pdf_pages": 134,
+      "sha256": "9a19fa77731b05fa59c0587becf67f70c3b652ea0e51c6dd6f7dfb5f8a0e94fa",
+      "publisher_record_url": "https://publications.iaa.org.il/esi_english_series/18/",
+      "wrapper_association_verified": true,
+      "blocked_download_binary_equivalence": null,
+      "cover_designation": 1986,
+      "copyright_and_printing_year": 1987,
+      "preface_date": "1987-06",
+      "cover_series": "English edition of Hadashot Arkheologiyot88–89"
+    },
+    "native_pages_inspected": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      118,
+      119,
+      132
+    ],
+    "native_report_pages_inspected": [
+      118,
+      119
+    ],
+    "printed_report_pages": [
+      110,
+      111
+    ],
+    "byline": [
+      "U. Dinur",
+      "N. Feig"
+    ],
+    "complete_report_scope": true,
+    "report_boundaries": {
+      "start": "WADI NU‘EIMA on printed110",
+      "end": "Dinur–Feig communication byline before YATTA on111"
+    },
+    "publication_mapping": {
+      "catalogue_cited_report_identity": "verified",
+      "printed_to_pdf_one_based": {
+        "110": 118,
+        "111": 119
+      },
+      "cover_1986_vs_publication_1987": "verified_within_supplied_volume",
+      "official_partII_p36_crosswalk": null,
+      "alphabetical_English_vs_geographical_Hebrew_arrangement": "preface_reported_not_a_verified_page_crosswalk"
+    },
+    "site": {
+      "raw_map_reference": "1922/1434",
+      "grid_convention_as_reported": "Israel grid system, prefacevii",
+      "epsg": null,
+      "transformed_coordinates": null,
+      "about_building_extent_dunams": 10,
+      "north_bank_of_wadi": true,
+      "derivative_extent_dunams": 1,
+      "extent_crosswalk": null,
+      "reported_period_range": "Persian to Herodian",
+      "most_pottery_period": "Persian",
+      "bath_construction_date": null
+    },
+    "reported_features": [
+      {
+        "local_review_id": "J23_reported_miqva",
+        "source_locus_id": null,
+        "function_label": "miqva (ritual bath), author interpretation",
+        "reported_depth_m": 1.3,
+        "reported_distance_north_of_wadi_m": 2.0,
+        "distance_approximate": true,
+        "footprint_dimensions_m": null,
+        "exposure": "illegal excavation",
+        "northern_candidate_reference": null,
+        "phase_specific_water_contacts": null
+      },
+      {
+        "local_review_id": "J23_reported_western_structure",
+        "source_locus_id": null,
+        "position": "west of described miqva",
+        "reported_rectangle_dimensions_m": [
+          4.5,
+          8.0
+        ],
+        "reported_wall_thickness_m": 0.8,
+        "reported_preserved_wall_height_m": 1.0,
+        "hydraulic_function": null,
+        "bath_enlargement_relation": null,
+        "physically_observed_pipe_connection": null
+      }
+    ],
+    "reported_common_plaster": "grey plaster with stone grits on both structures; no dated construction joint established",
+    "cardinality": {
+      "explicit_baths_described_in_report": 1,
+      "complete_site_bath_count": null,
+      "individual_bath_locus_id": null,
+      "J23_parent_remains_aggregate": true,
+      "western_rectangle_not_assigned_as_second_bath": true
+    },
+    "scope_limits": {
+      "no_pipe_or_phase_control_reported_in_complete_scope": true,
+      "no_bath_plan_or_section": true,
+      "no_enlargement_sequence_reported": true,
+      "enlargement_historical_absence_proven": false,
+      "site_chronology_not_transferred_to_bath": true,
+      "adjacent_rectangle_dimensions_not_transferred_to_bath": true,
+      "northern_source_position_not_entry_northern_referent": true
+    },
+    "coverage": {
+      "source_reports_alluvial_concealment": true,
+      "source_reports_flash_flood_exposure": true,
+      "source_reports_illegal_excavation": true,
+      "present_day_field_status": null,
+      "predicted_ancient_target_volume_reached": null,
+      "detection_limit": null,
+      "verified_negative_excavation": null
+    },
+    "lineage": {
+      "original_observation_source_for": "ROSAPAT2011/PADIS0167 derivative notice",
+      "independent_corroborating_campaign_increment": 0,
+      "responsible_office": "Staff Officer for Archaeology in Judea and Samaria",
+      "inspectors_named": [
+        "D. Akrai",
+        "A. Zur"
+      ],
+      "bath_field_record_accession": null
+    },
+    "encountered_figures": [
+      {
+        "figure": "56",
+        "printed_page": 111,
+        "pdf_page_one_based": 119,
+        "caption_topic": "Wadi Nu’eima survey finds",
+        "type": "artifact illustration",
+        "native_inspected": true,
+        "bath_plan_or_section": false,
+        "repository_state": "source/page/hash locator only; no image upload",
+        "reproduction_permission_established": false
+      },
+      {
+        "figure": "volume cover lamp",
+        "pdf_image_page_one_based": 2,
+        "caption_page_one_based": 3,
+        "caption_topic": "Bet Guvrin lamp, sourcep15",
+        "wadi_relevance": false,
+        "repository_state": "source/page/hash locator only; no image upload",
+        "reproduction_permission_established": false
+      }
+    ],
+    "gates": {
+      "textual_role": null,
+      "archaeological_function_to_text_equivalence": null,
+      "dated_wall_contact_surface_coexistence": null,
+      "observed_conduit_or_collector_contact": null,
+      "northern_reference": null,
+      "finite_ancient_face_and_measurement_plane": null,
+      "aperture_invert_centre_or_crown_definition": null,
+      "benchmark": null,
+      "bounded_field_uncertainty": null,
+      "regional_detection_coverage": null,
+      "unused_prediction": null
+    },
+    "decision": "not_identifiable_from_available_evidence_for_individual_bath_state_and_phase_specific_contact",
+    "next_observation": "Identified bath plan/section or field record with locus/state crosswalk and observed dated aperture/wall/floor contact; none named in this report.",
+    "accounting": {
+      "baseline": [
+        70,
+        5,
+        80
+      ],
+      "delta": [
+        1,
+        0,
+        1
+      ],
+      "current": [
+        71,
+        5,
+        81
+      ],
+      "outcomes_delta": 0,
+      "formal_packets_delta": 0,
+      "question_state_delta": 0,
+      "independent_campaign_delta": 0
+    },
+    "independent_native_review": {
+      "completed": true,
+      "scope": "complete report and publication leaves",
+      "reviewer_findings_agree": true
+    },
+    "prior_normalization_and_roster_unchanged": true,
+    "prior_geometry_and_outcome_ledger_unchanged": true,
+    "native_render_sha256": {
+      "1": "ccc40bd9d6a231a4310808d0be10816ec027cd7677cdd2ff9a4fdf0f79c75ca0",
+      "2": "8df9b4e90aed228217ad1d49c216510eb8c39a03540de4a671297ca257f40aec",
+      "3": "bb9b84208d7c73c5a30dae18a72684eb67e11802676c475816d7d2a2101021c0",
+      "5": "f910e9d234aed1eeabb52d4963266f9172e4e16fb973ade0d3cd22ea652426d7",
+      "6": "3c3fbee57c0d9da1b22bc9f6da4afbc5a9f83ab2e324c8c4268e27b5da9c6790",
+      "8": "75cd962d725a82838526990e66512c2a6dacc5ef3e083e27eaa68db0af1b282f",
+      "118": "d866220101d70ba787370cf1a8c9b5d109660ad14c42def5374c06eef4ac7e8f",
+      "119": "adcc9eca63e47e6265bab3b179dbbeb4b5f489fcf4f3ddb9c2fed2733b0551d2",
+      "132": "1ed5062a245c2b3927c5dfffefe9839c811e4ea3744de48625bb4219ec287afb"
+    }
+  },
+  "current_status": {
+    "original_body_obtained": true,
+    "report_identity_verified": true,
+    "original_report_pages_inspected": 2,
+    "individual_phase_contact_claim": "not_identifiable_from_available_evidence",
+    "official_partII_p36_crosswalk": null,
+    "activity": [
+      71,
+      5,
+      81
+    ],
+    "record_ref": "#/supplied_original_review"
+  }
+}
