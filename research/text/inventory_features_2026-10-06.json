@@ -1,0 +1,4262 @@
+{
+  "analysis": "R12 inventory form, units and chronology — exploratory evidence audit",
+  "date_utc": "2026-10-06",
+  "base_commit": "5a0e9561135fddec6af6030e8c19e52a9dd7edae",
+  "transcription": "ETCBC dss 2.0.1, scroll 3Q15 (Abegg, Bowley and Cook; CC BY-NC 4.0)",
+  "license": "CC BY-NC 4.0 for derivative Abegg/ETCBC token data",
+  "attribution": "Martin G. Abegg Jr., James E. Bowley and Edward M. Cook; conversion Jarod Jacobs, Martijn Naaijer and Dirk Roorda; existing display build and this feature extraction are project modifications.",
+  "input_sha256": {
+    "data/scroll-text.js": "36ccd26b6e8c8c5048235188b8b85fe3399c8595e636c2e46cd8450341a1e07d",
+    "tables/entry_concordance.csv": "b90949cd8f6052444e8066507d44117f008edf03b2b20536189333e9e66eb104",
+    "tools/build_scroll_text.py": "a761c38bdb0f0f05c179e58a3bfb99e8ac82d4689349fa6c9acfd0760ddc628f",
+    "text/readings.json": "b1b3c9ea9b354e2006fd4c8018589162d7637f8c78d5df1fd95ce2d633f42f9c",
+    "research/logs/findings_log.md": "3b8e7c6fbee8be2b7cc680660494cd49ede44a93b6630984e296f94f19351769",
+    "research/logs/open_questions.md": "1b350705512451fe5b5c3e920cb0431eee2b3766dd183f31c4cb5a618d260b52",
+    "research/measurements/cycle10/README.md": "4dc1a951ddce01fcc639a8668083bd1bb2caa7ce86d0314119a7c91c1d5ee219"
+  },
+  "scope": {
+    "source_lines": 181,
+    "canonical_entries": 61,
+    "source_tokens": 793,
+    "new_manuscript_observations": 0,
+    "new_archaeological_observations": 0,
+    "unused_prediction": null,
+    "counts_are": "Abegg/ETCBC displayed reading with Puech entry boundaries; not counts of Puech's readings, independent deposits or authenticated original letters",
+    "unflagged_rule": "Exclude every nonempty display class and explicit ◦/…; conservative notation sensitivity, not manuscript authentication"
+  },
+  "flag_definitions": {
+    "u": "damaged or uncertain letter",
+    "r": "restored in a lacuna",
+    "c": "supplied or corrected by modern editor",
+    "s": "written above the line by the scribe",
+    "x": "removed by modern editor",
+    "d": "removed by ancient editor",
+    "g": "Greek"
+  },
+  "feature_definitions": {
+    "dema": "Lemma דמע; ritual/tribute meaning remains interpretation-dependent.",
+    "herem": "Lemma חרם; designation/function remains interpretation-dependent.",
+    "vessels": "Lemma כלי; a listed object, not a proven deposit container.",
+    "silver": "Lemma כסף; no inference about whether a following unit weighs silver.",
+    "gold": "Lemma זהב; no inference about whether a following unit weighs gold.",
+    "weight": "Lemma משקל.",
+    "kk": "Exact displayed token ככ; no expansion imposed.",
+    "kkrin": "Exact displayed token ככרין; full plural unit spelling.",
+    "kkr": "Exact displayed token ככר; singular, partly restored here.",
+    "written_record_suffix": "Exact וכתבן/כתבן; five full formulas plus bare II5.",
+    "written_record_noun": "Lemma כתב outside suffix tokens; final הכתב.",
+    "book_or_scroll": "Lemma ספר; VI5 and VIII3 have different contexts.",
+    "chest": "Lemma שדה; contextual container reading.",
+    "ingots": "Lemma עשת; object denomination, not a weight unit.",
+    "garments": "Lemma לבוש; edition alternatives retained in accompanying note.",
+    "apudah": "Lemma אפדה; garment/ephod interpretation is conditional.",
+    "tithe": "Lemma מעשר (surface מעסר); second-tithe phrase crosses I10–11."
+  },
+  "counts": {
+    "dema": {
+      "inclusive_token_count": 12,
+      "inclusive_entry_count": 10,
+      "inclusive_entries": [
+        "4",
+        "12",
+        "13",
+        "22",
+        "33",
+        "50",
+        "51",
+        "54",
+        "55",
+        "58"
+      ],
+      "source_unflagged_token_count": 10,
+      "source_unflagged_entry_count": 9,
+      "source_unflagged_entries": [
+        "4",
+        "12",
+        "13",
+        "22",
+        "33",
+        "50",
+        "51",
+        "54",
+        "58"
+      ]
+    },
+    "herem": {
+      "inclusive_token_count": 3,
+      "inclusive_entry_count": 3,
+      "inclusive_entries": [
+        "41",
+        "43",
+        "52"
+      ],
+      "source_unflagged_token_count": 3,
+      "source_unflagged_entry_count": 3,
+      "source_unflagged_entries": [
+        "41",
+        "43",
+        "52"
+      ]
+    },
+    "vessels": {
+      "inclusive_token_count": 17,
+      "inclusive_entry_count": 16,
+      "inclusive_entries": [
+        "1",
+        "4",
+        "8",
+        "9",
+        "12",
+        "13",
+        "22",
+        "33",
+        "47",
+        "50",
+        "51",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58"
+      ],
+      "source_unflagged_token_count": 14,
+      "source_unflagged_entry_count": 14,
+      "source_unflagged_entries": [
+        "1",
+        "4",
+        "9",
+        "12",
+        "13",
+        "22",
+        "33",
+        "47",
+        "50",
+        "51",
+        "54",
+        "55",
+        "57",
+        "58"
+      ]
+    },
+    "silver": {
+      "inclusive_token_count": 21,
+      "inclusive_entry_count": 20,
+      "inclusive_entries": [
+        "1",
+        "5",
+        "8",
+        "10",
+        "12",
+        "12a",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "23",
+        "30",
+        "34",
+        "37",
+        "41",
+        "46",
+        "57",
+        "58"
+      ],
+      "source_unflagged_token_count": 20,
+      "source_unflagged_entry_count": 19,
+      "source_unflagged_entries": [
+        "1",
+        "8",
+        "10",
+        "12",
+        "12a",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "23",
+        "30",
+        "34",
+        "37",
+        "41",
+        "46",
+        "57",
+        "58"
+      ]
+    },
+    "gold": {
+      "inclusive_token_count": 10,
+      "inclusive_entry_count": 10,
+      "inclusive_entries": [
+        "2",
+        "7",
+        "12",
+        "32",
+        "34",
+        "47",
+        "50",
+        "52",
+        "56",
+        "58"
+      ],
+      "source_unflagged_token_count": 9,
+      "source_unflagged_entry_count": 9,
+      "source_unflagged_entries": [
+        "2",
+        "7",
+        "12",
+        "32",
+        "34",
+        "47",
+        "52",
+        "56",
+        "58"
+      ]
+    },
+    "weight": {
+      "inclusive_token_count": 2,
+      "inclusive_entry_count": 2,
+      "inclusive_entries": [
+        "1",
+        "59"
+      ],
+      "source_unflagged_token_count": 2,
+      "source_unflagged_entry_count": 2,
+      "source_unflagged_entries": [
+        "1",
+        "59"
+      ]
+    },
+    "kk": {
+      "inclusive_token_count": 30,
+      "inclusive_entry_count": 30,
+      "inclusive_entries": [
+        "12a",
+        "14",
+        "15",
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "31",
+        "32",
+        "34",
+        "35",
+        "36",
+        "37",
+        "39",
+        "40",
+        "42",
+        "44",
+        "45",
+        "48",
+        "49",
+        "53",
+        "56",
+        "57"
+      ],
+      "source_unflagged_token_count": 29,
+      "source_unflagged_entry_count": 29,
+      "source_unflagged_entries": [
+        "12a",
+        "14",
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "31",
+        "32",
+        "34",
+        "35",
+        "36",
+        "37",
+        "39",
+        "40",
+        "42",
+        "44",
+        "45",
+        "48",
+        "49",
+        "53",
+        "56",
+        "57"
+      ]
+    },
+    "kkrin": {
+      "inclusive_token_count": 15,
+      "inclusive_entry_count": 14,
+      "inclusive_entries": [
+        "1",
+        "3",
+        "6",
+        "8",
+        "9",
+        "11",
+        "29",
+        "32",
+        "38",
+        "46",
+        "47",
+        "56",
+        "58",
+        "59"
+      ],
+      "source_unflagged_token_count": 13,
+      "source_unflagged_entry_count": 12,
+      "source_unflagged_entries": [
+        "1",
+        "3",
+        "6",
+        "8",
+        "9",
+        "11",
+        "29",
+        "32",
+        "47",
+        "56",
+        "58",
+        "59"
+      ]
+    },
+    "kkr": {
+      "inclusive_token_count": 1,
+      "inclusive_entry_count": 1,
+      "inclusive_entries": [
+        "5"
+      ],
+      "source_unflagged_token_count": 0,
+      "source_unflagged_entry_count": 0,
+      "source_unflagged_entries": []
+    },
+    "written_record_suffix": {
+      "inclusive_token_count": 6,
+      "inclusive_entry_count": 6,
+      "inclusive_entries": [
+        "8",
+        "22",
+        "50",
+        "51",
+        "54",
+        "55"
+      ],
+      "source_unflagged_token_count": 6,
+      "source_unflagged_entry_count": 6,
+      "source_unflagged_entries": [
+        "8",
+        "22",
+        "50",
+        "51",
+        "54",
+        "55"
+      ]
+    },
+    "written_record_noun": {
+      "inclusive_token_count": 1,
+      "inclusive_entry_count": 1,
+      "inclusive_entries": [
+        "60"
+      ],
+      "source_unflagged_token_count": 1,
+      "source_unflagged_entry_count": 1,
+      "source_unflagged_entries": [
+        "60"
+      ]
+    },
+    "book_or_scroll": {
+      "inclusive_token_count": 2,
+      "inclusive_entry_count": 2,
+      "inclusive_entries": [
+        "25",
+        "33"
+      ],
+      "source_unflagged_token_count": 2,
+      "source_unflagged_entry_count": 2,
+      "source_unflagged_entries": [
+        "25",
+        "33"
+      ]
+    },
+    "chest": {
+      "inclusive_token_count": 2,
+      "inclusive_entry_count": 2,
+      "inclusive_entries": [
+        "1",
+        "57"
+      ],
+      "source_unflagged_token_count": 2,
+      "source_unflagged_entry_count": 2,
+      "source_unflagged_entries": [
+        "1",
+        "57"
+      ]
+    },
+    "ingots": {
+      "inclusive_token_count": 2,
+      "inclusive_entry_count": 2,
+      "inclusive_entries": [
+        "2",
+        "7"
+      ],
+      "source_unflagged_token_count": 2,
+      "source_unflagged_entry_count": 2,
+      "source_unflagged_entries": [
+        "2",
+        "7"
+      ]
+    },
+    "garments": {
+      "inclusive_token_count": 1,
+      "inclusive_entry_count": 1,
+      "inclusive_entries": [
+        "13"
+      ],
+      "source_unflagged_token_count": 0,
+      "source_unflagged_entry_count": 0,
+      "source_unflagged_entries": []
+    },
+    "apudah": {
+      "inclusive_token_count": 1,
+      "inclusive_entry_count": 1,
+      "inclusive_entries": [
+        "4"
+      ],
+      "source_unflagged_token_count": 1,
+      "source_unflagged_entry_count": 1,
+      "source_unflagged_entries": [
+        "4"
+      ]
+    },
+    "tithe": {
+      "inclusive_token_count": 1,
+      "inclusive_entry_count": 1,
+      "inclusive_entries": [
+        "4"
+      ],
+      "source_unflagged_token_count": 1,
+      "source_unflagged_entry_count": 1,
+      "source_unflagged_entries": [
+        "4"
+      ]
+    }
+  },
+  "full_record_formulas": [
+    {
+      "line": "V 7",
+      "puech_entry": "22",
+      "surface": "וכתבן אצלם",
+      "source_unflagged": true,
+      "retained_interpretations": [
+        "written account with deposit (כ reading)",
+        "locative/distance formula (ב reading)"
+      ]
+    },
+    {
+      "line": "XI 1",
+      "puech_entry": "50",
+      "surface": "כתבן אצלם",
+      "source_unflagged": true,
+      "retained_interpretations": [
+        "written account with deposit (כ reading)",
+        "locative/distance formula (ב reading)"
+      ]
+    },
+    {
+      "line": "XI 4",
+      "puech_entry": "51",
+      "surface": "וכתבן אצלם",
+      "source_unflagged": true,
+      "retained_interpretations": [
+        "written account with deposit (כ reading)",
+        "locative/distance formula (ב reading)"
+      ]
+    },
+    {
+      "line": "XI 11",
+      "puech_entry": "54",
+      "surface": "כתבן אצלן",
+      "source_unflagged": true,
+      "retained_interpretations": [
+        "written account with deposit (כ reading)",
+        "locative/distance formula (ב reading)"
+      ]
+    },
+    {
+      "line": "XI 15",
+      "puech_entry": "55",
+      "surface": "כתבן אצלם",
+      "source_unflagged": true,
+      "retained_interpretations": [
+        "written account with deposit (כ reading)",
+        "locative/distance formula (ב reading)"
+      ]
+    }
+  ],
+  "explicit_second_tithe": {
+    "entry": "4",
+    "locus": "I 10–11",
+    "surface": "מעסר שני",
+    "source_unflagged": true,
+    "retained_adjacent_meanings": [
+      "מפוגל: disqualified (Puech)",
+      "מפי גל: from mouth of heap (Milik)"
+    ],
+    "ref": "text/readings.json#e4-disqualified; Phase1 entry4; ritual status attaches only under first branch"
+  },
+  "unit_comparisons": [
+    {
+      "loci": [
+        "II 6",
+        "IV 12"
+      ],
+      "entries": [
+        "8",
+        "19"
+      ],
+      "contexts": [
+        "silver + ככרין + seventy",
+        "silver + ככ + seventy"
+      ],
+      "inference": "Parallel syntax and equal numerals permit abbreviation hypothesis; distinct deposits with equal numerals do not prove equal units."
+    },
+    {
+      "loci": [
+        "XII 1"
+      ],
+      "entries": [
+        "56"
+      ],
+      "context": "gold + ככ + five",
+      "inference": "Uniform literal expansion כסף כרש requires a valuation or metal-dependent convention here; generic karsh remains distinct from literal silver-karsh expansion."
+    }
+  ],
+  "interpretation_checks": [
+    {
+      "claim": "The document adopts an inventory/retrieval form",
+      "result": "compatible as a descriptive textual-form classification",
+      "reason": "Listed objects, measures, local instructions and final duplicate-document wording survive removing all flagged hits; the disputed five-record formula is unnecessary for this conclusion.",
+      "refs": [
+        "Phase1 §4",
+        "I 3–4",
+        "XII 11–13"
+      ]
+    },
+    {
+      "claim": "Five full formulas identify written accounts kept beside the deposits",
+      "result": "not identifiable from available evidence",
+      "reason": "The Abegg כ reading permits written records; retained ב/locative readings permit distance or next-entry directions. A displayed unflagged token is not manuscript authentication.",
+      "surviving_models": [
+        "written account with deposit (כ reading)",
+        "locative/distance formula (ב reading)"
+      ],
+      "refs": [
+        "V 7",
+        "XI 1",
+        "XI 4",
+        "XI 11",
+        "XI 15",
+        "text/readings.json#g-ktbn"
+      ]
+    },
+    {
+      "claim": "The inventory belonged specifically to the Jerusalem Temple",
+      "result": "not identifiable from available evidence",
+      "surviving_models": [
+        "Temple-owned property",
+        "earmarked offerings held by contributors or administrators",
+        "other religious/community property",
+        "literary treasure catalogue"
+      ],
+      "reason": "Ritual/accounting vocabulary is compatible with multiple owners; the displayed data supplies neither an authenticated ownership label nor a discriminating archaeological deposit."
+    },
+    {
+      "claim": "The unit/quantity evidence identifies origin or verifies actual deposits",
+      "result": "not identifiable from available evidence",
+      "reason": "ככ expansion, corrected full spellings, quantity readings and object-versus-weight counts remain conditional; no total mass or owner follows."
+    },
+    {
+      "claim": "A named or ancient landmark dates compilation/deposition of the entire scroll",
+      "result": "not identifiable from available evidence",
+      "reason": "Feature identification, phase, use at the time described, text copying and cave deposition remain separate dependencies; reused place names and ruins may outlast their construction."
+    }
+  ],
+  "chronology_controls": [
+    {
+      "entry": "22",
+      "refs": [
+        "DJDIII D10–D11 pp263–264/C201 p257 (prior notes only)",
+        "Josephus BJ5.145 = War5.4.2",
+        "research/logs/open_questions.md#Q37"
+      ],
+      "available_observation": "Josephus's retrospective pre-destruction Jerusalem description names Solomon's pool; it does not establish Secacah's reservoir or the date of that reservoir's name.",
+      "compilation_bound": null,
+      "cave_deposition_bound": null
+    },
+    {
+      "entry": "49",
+      "refs": [
+        "Ariel2020 pp90*–91*, coin20/L105/basket1092",
+        "research/measurements/cycle10/README.md"
+      ],
+      "available_observation": "Published foundation coin dates69/70CE; accepting that context supplies a lower installation bound for that particular floor.",
+      "conditional_text_bound": "Only an instruction referring to this built phase requires the described-use/deposit model to accommodate construction after coin minting.",
+      "compilation_bound": null,
+      "cave_deposition_bound": null
+    }
+  ],
+  "entries": [
+    {
+      "entry": "1",
+      "col_line": "I:1–I:4",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "I 3",
+            "column": 1,
+            "line_number": 3,
+            "word_index_0based": 4,
+            "surface": "וכליה",
+            "segments": [
+              [
+                "וכליה",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [
+          {
+            "line": "I 3",
+            "column": 1,
+            "line_number": 3,
+            "word_index_0based": 3,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [
+          {
+            "line": "I 4",
+            "column": 1,
+            "line_number": 4,
+            "word_index_0based": 0,
+            "surface": "משקל",
+            "segments": [
+              [
+                "משקל",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "I 4",
+            "column": 1,
+            "line_number": 4,
+            "word_index_0based": 1,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [
+          {
+            "line": "I 3",
+            "column": 1,
+            "line_number": 3,
+            "word_index_0based": 2,
+            "surface": "שדת",
+            "segments": [
+              [
+                "שדת",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "2",
+      "col_line": "I:5–I:6",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [
+          {
+            "line": "I 6",
+            "column": 1,
+            "line_number": 6,
+            "word_index_0based": 0,
+            "surface": "זהב",
+            "segments": [
+              [
+                "זהב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [
+          {
+            "line": "I 5",
+            "column": 1,
+            "line_number": 5,
+            "word_index_0based": 3,
+            "surface": "עשתות",
+            "segments": [
+              [
+                "עשתות",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "3",
+      "col_line": "I:6–I:8",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "I 8",
+            "column": 1,
+            "line_number": 8,
+            "word_index_0based": 3,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "4",
+      "col_line": "I:9–I:12",
+      "features": {
+        "dema": [
+          {
+            "line": "I 9",
+            "column": 1,
+            "line_number": 9,
+            "word_index_0based": 4,
+            "surface": "דמע",
+            "segments": [
+              [
+                "דמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          },
+          {
+            "line": "I 10",
+            "column": 1,
+            "line_number": 10,
+            "word_index_0based": 2,
+            "surface": "הדמע",
+            "segments": [
+              [
+                "הדמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "I 9",
+            "column": 1,
+            "line_number": 9,
+            "word_index_0based": 3,
+            "surface": "כלי",
+            "segments": [
+              [
+                "כלי",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [
+          {
+            "line": "I 9",
+            "column": 1,
+            "line_number": 9,
+            "word_index_0based": 6,
+            "surface": "ואפודת",
+            "segments": [
+              [
+                "ואפודת",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "tithe": [
+          {
+            "line": "I 10",
+            "column": 1,
+            "line_number": 10,
+            "word_index_0based": 5,
+            "surface": "מעסר",
+            "segments": [
+              [
+                "מעסר",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ]
+      }
+    },
+    {
+      "entry": "5",
+      "col_line": "I:13–I:15",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "I 14",
+            "column": 1,
+            "line_number": 14,
+            "word_index_0based": 5,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כ",
+                "r"
+              ],
+              [
+                "סף",
+                ""
+              ]
+            ],
+            "flags": [
+              "r"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [
+          {
+            "line": "I 15",
+            "column": 1,
+            "line_number": 15,
+            "word_index_0based": 0,
+            "surface": "ככר",
+            "segments": [
+              [
+                "כ",
+                "r"
+              ],
+              [
+                "כר",
+                ""
+              ]
+            ],
+            "flags": [
+              "r"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "6",
+      "col_line": "II:1–II:2",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "II 2",
+            "column": 2,
+            "line_number": 2,
+            "word_index_0based": 0,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "7",
+      "col_line": "II:3–II:4",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [
+          {
+            "line": "II 4",
+            "column": 2,
+            "line_number": 4,
+            "word_index_0based": 2,
+            "surface": "זהב",
+            "segments": [
+              [
+                "זהב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [
+          {
+            "line": "II 4",
+            "column": 2,
+            "line_number": 4,
+            "word_index_0based": 1,
+            "surface": "עשתות",
+            "segments": [
+              [
+                "עשתות",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "8",
+      "col_line": "II:5–II:6",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "II 6",
+            "column": 2,
+            "line_number": 6,
+            "word_index_0based": 2,
+            "surface": "כלין",
+            "segments": [
+              [
+                "כ",
+                "u"
+              ],
+              [
+                "לין",
+                ""
+              ]
+            ],
+            "flags": [
+              "u"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "silver": [
+          {
+            "line": "II 6",
+            "column": 2,
+            "line_number": 6,
+            "word_index_0based": 3,
+            "surface": "וכסף",
+            "segments": [
+              [
+                "וכסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "II 6",
+            "column": 2,
+            "line_number": 6,
+            "word_index_0based": 4,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [
+          {
+            "line": "II 5",
+            "column": 2,
+            "line_number": 5,
+            "word_index_0based": 4,
+            "surface": "וכתבן",
+            "segments": [
+              [
+                "וכתבן",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "9",
+      "col_line": "II:7–II:9",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "II 8",
+            "column": 2,
+            "line_number": 8,
+            "word_index_0based": 5,
+            "surface": "כלין",
+            "segments": [
+              [
+                "כלין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "II 9",
+            "column": 2,
+            "line_number": 9,
+            "word_index_0based": 2,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "10",
+      "col_line": "II:10–II:12",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "II 11",
+            "column": 2,
+            "line_number": 11,
+            "word_index_0based": 4,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "11",
+      "col_line": "II:13–II:15",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "II 15",
+            "column": 2,
+            "line_number": 15,
+            "word_index_0based": 0,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "12",
+      "col_line": "III:1–III:4",
+      "features": {
+        "dema": [
+          {
+            "line": "III 3",
+            "column": 3,
+            "line_number": 3,
+            "word_index_0based": 0,
+            "surface": "דמע",
+            "segments": [
+              [
+                "דמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "III 2",
+            "column": 3,
+            "line_number": 2,
+            "word_index_0based": 4,
+            "surface": "כלי",
+            "segments": [
+              [
+                "כלי",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [
+          {
+            "line": "III 2",
+            "column": 3,
+            "line_number": 2,
+            "word_index_0based": 5,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [
+          {
+            "line": "III 2",
+            "column": 3,
+            "line_number": 2,
+            "word_index_0based": 6,
+            "surface": "וזהב",
+            "segments": [
+              [
+                "וזהב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "12a",
+      "col_line": "III:5–III:7",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "III 6",
+            "column": 3,
+            "line_number": 6,
+            "word_index_0based": 5,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "III 7",
+            "column": 3,
+            "line_number": 7,
+            "word_index_0based": 0,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "13",
+      "col_line": "III:8–III:10",
+      "features": {
+        "dema": [
+          {
+            "line": "III 9",
+            "column": 3,
+            "line_number": 9,
+            "word_index_0based": 1,
+            "surface": "דמע",
+            "segments": [
+              [
+                "דמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "III 9",
+            "column": 3,
+            "line_number": 9,
+            "word_index_0based": 0,
+            "surface": "כלי",
+            "segments": [
+              [
+                "כלי",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [
+          {
+            "line": "III 9",
+            "column": 3,
+            "line_number": 9,
+            "word_index_0based": 2,
+            "surface": "לבושין",
+            "segments": [
+              [
+                "ל",
+                ""
+              ],
+              [
+                "בו",
+                "u"
+              ],
+              [
+                "שי",
+                ""
+              ],
+              [
+                "ן",
+                "c"
+              ]
+            ],
+            "flags": [
+              "c",
+              "u"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "14",
+      "col_line": "III:11–III:13",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "III 13",
+            "column": 3,
+            "line_number": 13,
+            "word_index_0based": 3,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "15",
+      "col_line": "IV:1–IV:2",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "IV 2",
+            "column": 4,
+            "line_number": 2,
+            "word_index_0based": 1,
+            "surface": "ככ",
+            "segments": [
+              [
+                "כ",
+                ""
+              ],
+              [
+                "כ",
+                "u"
+              ]
+            ],
+            "flags": [
+              "u"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "16",
+      "col_line": "IV:3–IV:5",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "IV 4",
+            "column": 4,
+            "line_number": 4,
+            "word_index_0based": 3,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "IV 5",
+            "column": 4,
+            "line_number": 5,
+            "word_index_0based": 0,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "17",
+      "col_line": "IV:6–IV:8",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "IV 8",
+            "column": 4,
+            "line_number": 8,
+            "word_index_0based": 4,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "18",
+      "col_line": "IV:9–IV:10",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "IV 10",
+            "column": 4,
+            "line_number": 10,
+            "word_index_0based": 1,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "IV 10",
+            "column": 4,
+            "line_number": 10,
+            "word_index_0based": 2,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "19",
+      "col_line": "IV:11–IV:12",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "IV 12",
+            "column": 4,
+            "line_number": 12,
+            "word_index_0based": 1,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "IV 12",
+            "column": 4,
+            "line_number": 12,
+            "word_index_0based": 2,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "20",
+      "col_line": "IV:13–IV:14",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "IV 14",
+            "column": 4,
+            "line_number": 14,
+            "word_index_0based": 1,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "IV 14",
+            "column": 4,
+            "line_number": 14,
+            "word_index_0based": 2,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "21",
+      "col_line": "V:1–V:4",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "V 4",
+            "column": 5,
+            "line_number": 4,
+            "word_index_0based": 1,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "V 4",
+            "column": 5,
+            "line_number": 4,
+            "word_index_0based": 2,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "22",
+      "col_line": "V:5–V:7",
+      "features": {
+        "dema": [
+          {
+            "line": "V 7",
+            "column": 5,
+            "line_number": 7,
+            "word_index_0based": 0,
+            "surface": "דמע",
+            "segments": [
+              [
+                "דמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "V 6",
+            "column": 5,
+            "line_number": 6,
+            "word_index_0based": 2,
+            "surface": "כאלין",
+            "segments": [
+              [
+                "כאלין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [
+          {
+            "line": "V 7",
+            "column": 5,
+            "line_number": 7,
+            "word_index_0based": 1,
+            "surface": "וכתבן",
+            "segments": [
+              [
+                "וכתבן",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "23",
+      "col_line": "V:8–V:11",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "V 11",
+            "column": 5,
+            "line_number": 11,
+            "word_index_0based": 1,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "V 11",
+            "column": 5,
+            "line_number": 11,
+            "word_index_0based": 2,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "24",
+      "col_line": "V:12–V:14",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "V 14",
+            "column": 5,
+            "line_number": 14,
+            "word_index_0based": 3,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "25",
+      "col_line": "VI:1–VI:6",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VI 6",
+            "column": 6,
+            "line_number": 6,
+            "word_index_0based": 0,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [
+          {
+            "line": "VI 5",
+            "column": 6,
+            "line_number": 5,
+            "word_index_0based": 1,
+            "surface": "ספר",
+            "segments": [
+              [
+                "ספר",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "26",
+      "col_line": "VI:7–VI:10",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VI 10",
+            "column": 6,
+            "line_number": 10,
+            "word_index_0based": 2,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "27",
+      "col_line": "VI:11–VI:13",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VI 13",
+            "column": 6,
+            "line_number": 13,
+            "word_index_0based": 2,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "28",
+      "col_line": "VI:14–VII:2",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VII 2",
+            "column": 7,
+            "line_number": 2,
+            "word_index_0based": 1,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "29",
+      "col_line": "VII:3–VII:7",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "VII 7",
+            "column": 7,
+            "line_number": 7,
+            "word_index_0based": 0,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "30",
+      "col_line": "VII:8–VII:10",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "VII 10",
+            "column": 7,
+            "line_number": 10,
+            "word_index_0based": 2,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "31",
+      "col_line": "VII:11–VII:13",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VII 13",
+            "column": 7,
+            "line_number": 13,
+            "word_index_0based": 0,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "32",
+      "col_line": "VII:14–VII:16",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [
+          {
+            "line": "VII 16",
+            "column": 7,
+            "line_number": 16,
+            "word_index_0based": 2,
+            "surface": "זהב",
+            "segments": [
+              [
+                "זהב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VII 16",
+            "column": 7,
+            "line_number": 16,
+            "word_index_0based": 0,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [
+          {
+            "line": "VII 16",
+            "column": 7,
+            "line_number": 16,
+            "word_index_0based": 3,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "33",
+      "col_line": "VIII:1–VIII:3",
+      "features": {
+        "dema": [
+          {
+            "line": "VIII 3",
+            "column": 8,
+            "line_number": 3,
+            "word_index_0based": 1,
+            "surface": "דמע",
+            "segments": [
+              [
+                "דמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "VIII 3",
+            "column": 8,
+            "line_number": 3,
+            "word_index_0based": 0,
+            "surface": "כלי",
+            "segments": [
+              [
+                "כלי",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [
+          {
+            "line": "VIII 3",
+            "column": 8,
+            "line_number": 3,
+            "word_index_0based": 2,
+            "surface": "וספרין",
+            "segments": [
+              [
+                "וספרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "34",
+      "col_line": "VIII:4–VIII:7",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "VIII 6",
+            "column": 8,
+            "line_number": 6,
+            "word_index_0based": 2,
+            "surface": "כספ",
+            "segments": [
+              [
+                "כספ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [
+          {
+            "line": "VIII 7",
+            "column": 8,
+            "line_number": 7,
+            "word_index_0based": 0,
+            "surface": "וזהב",
+            "segments": [
+              [
+                "וזהב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VIII 7",
+            "column": 8,
+            "line_number": 7,
+            "word_index_0based": 1,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "35",
+      "col_line": "VIII:8–VIII:9",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VIII 9",
+            "column": 8,
+            "line_number": 9,
+            "word_index_0based": 3,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "36",
+      "col_line": "VIII:10–VIII:13",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VIII 13",
+            "column": 8,
+            "line_number": 13,
+            "word_index_0based": 2,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "37",
+      "col_line": "VIII:14–VIII:16",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "VIII 16",
+            "column": 8,
+            "line_number": 16,
+            "word_index_0based": 0,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "VIII 16",
+            "column": 8,
+            "line_number": 16,
+            "word_index_0based": 1,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "38",
+      "col_line": "IX:1–IX:3",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "IX 3",
+            "column": 9,
+            "line_number": 3,
+            "word_index_0based": 0,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "כ",
+                "c"
+              ],
+              [
+                "כרין",
+                ""
+              ]
+            ],
+            "flags": [
+              "c"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "39",
+      "col_line": "IX:4–IX:6",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "IX 6",
+            "column": 9,
+            "line_number": 6,
+            "word_index_0based": 1,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "40",
+      "col_line": "IX:7–IX:9",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "IX 9",
+            "column": 9,
+            "line_number": 9,
+            "word_index_0based": 0,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "41",
+      "col_line": "IX:10",
+      "features": {
+        "dema": [],
+        "herem": [
+          {
+            "line": "IX 10",
+            "column": 9,
+            "line_number": 10,
+            "word_index_0based": 3,
+            "surface": "חרמ",
+            "segments": [
+              [
+                "חרמ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "IX 10",
+            "column": 9,
+            "line_number": 10,
+            "word_index_0based": 1,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "42",
+      "col_line": "IX:11–IX:13",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "IX 13",
+            "column": 9,
+            "line_number": 13,
+            "word_index_0based": 1,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "43",
+      "col_line": "IX:14–IX:16",
+      "features": {
+        "dema": [],
+        "herem": [
+          {
+            "line": "IX 16",
+            "column": 9,
+            "line_number": 16,
+            "word_index_0based": 2,
+            "surface": "חרם",
+            "segments": [
+              [
+                "חרם",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "44",
+      "col_line": "IX:17–X:2",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "X 2",
+            "column": 10,
+            "line_number": 2,
+            "word_index_0based": 1,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "45",
+      "col_line": "X:3–X:4",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "X 4",
+            "column": 10,
+            "line_number": 4,
+            "word_index_0based": 2,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "46",
+      "col_line": "X:5–X:7",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [
+          {
+            "line": "X 6",
+            "column": 10,
+            "line_number": 6,
+            "word_index_0based": 4,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "X 7",
+            "column": 10,
+            "line_number": 7,
+            "word_index_0based": 0,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "כ",
+                ""
+              ],
+              [
+                "כ",
+                "u"
+              ],
+              [
+                "רין",
+                ""
+              ]
+            ],
+            "flags": [
+              "u"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "47",
+      "col_line": "X:8–X:11",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "X 11",
+            "column": 10,
+            "line_number": 11,
+            "word_index_0based": 1,
+            "surface": "וכלין",
+            "segments": [
+              [
+                "וכלין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [
+          {
+            "line": "X 11",
+            "column": 10,
+            "line_number": 11,
+            "word_index_0based": 0,
+            "surface": "זהב",
+            "segments": [
+              [
+                "זהב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "X 10",
+            "column": 10,
+            "line_number": 10,
+            "word_index_0based": 2,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "48",
+      "col_line": "X:12–X:14",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "X 14",
+            "column": 10,
+            "line_number": 14,
+            "word_index_0based": 0,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "49",
+      "col_line": "X:15–X:16",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "X 16",
+            "column": 10,
+            "line_number": 16,
+            "word_index_0based": 1,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "50",
+      "col_line": "X:17–XI:1",
+      "features": {
+        "dema": [
+          {
+            "line": "XI 1",
+            "column": 11,
+            "line_number": 1,
+            "word_index_0based": 3,
+            "surface": "דמע",
+            "segments": [
+              [
+                "דמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "XI 1",
+            "column": 11,
+            "line_number": 1,
+            "word_index_0based": 2,
+            "surface": "כלי",
+            "segments": [
+              [
+                "כלי",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [
+          {
+            "line": "XI 1",
+            "column": 11,
+            "line_number": 1,
+            "word_index_0based": 1,
+            "surface": "זהב",
+            "segments": [
+              [
+                "ז",
+                "u"
+              ],
+              [
+                "הב",
+                ""
+              ]
+            ],
+            "flags": [
+              "u"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [
+          {
+            "line": "XI 1",
+            "column": 11,
+            "line_number": 1,
+            "word_index_0based": 4,
+            "surface": "כתבן",
+            "segments": [
+              [
+                "כתבן",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "51",
+      "col_line": "XI:2–XI:4",
+      "features": {
+        "dema": [
+          {
+            "line": "XI 4",
+            "column": 11,
+            "line_number": 4,
+            "word_index_0based": 1,
+            "surface": "דמע◦",
+            "segments": [
+              [
+                "דמע◦",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": true,
+            "source_unflagged": false
+          },
+          {
+            "line": "XI 4",
+            "column": 11,
+            "line_number": 4,
+            "word_index_0based": 3,
+            "surface": "דמע",
+            "segments": [
+              [
+                "דמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "XI 4",
+            "column": 11,
+            "line_number": 4,
+            "word_index_0based": 0,
+            "surface": "כלי",
+            "segments": [
+              [
+                "כלי",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [
+          {
+            "line": "XI 4",
+            "column": 11,
+            "line_number": 4,
+            "word_index_0based": 5,
+            "surface": "וכתבן",
+            "segments": [
+              [
+                "וכתבן",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "52",
+      "col_line": "XI:5–XI:7",
+      "features": {
+        "dema": [],
+        "herem": [
+          {
+            "line": "XI 7",
+            "column": 11,
+            "line_number": 7,
+            "word_index_0based": 3,
+            "surface": "חרם",
+            "segments": [
+              [
+                "חרם",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "vessels": [],
+        "silver": [],
+        "gold": [
+          {
+            "line": "XI 7",
+            "column": 11,
+            "line_number": 7,
+            "word_index_0based": 2,
+            "surface": "זהב",
+            "segments": [
+              [
+                "זהב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "53",
+      "col_line": "XI:8",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "XI 8",
+            "column": 11,
+            "line_number": 8,
+            "word_index_0based": 3,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "54",
+      "col_line": "XI:9–XI:11",
+      "features": {
+        "dema": [
+          {
+            "line": "XI 10",
+            "column": 11,
+            "line_number": 10,
+            "word_index_0based": 2,
+            "surface": "דמע",
+            "segments": [
+              [
+                "דמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "XI 10",
+            "column": 11,
+            "line_number": 10,
+            "word_index_0based": 1,
+            "surface": "כלי",
+            "segments": [
+              [
+                "כלי",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [
+          {
+            "line": "XI 11",
+            "column": 11,
+            "line_number": 11,
+            "word_index_0based": 0,
+            "surface": "כתבן",
+            "segments": [
+              [
+                "כתבן",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "55",
+      "col_line": "XI:12–XI:15",
+      "features": {
+        "dema": [
+          {
+            "line": "XI 14",
+            "column": 11,
+            "line_number": 14,
+            "word_index_0based": 2,
+            "surface": "דמע",
+            "segments": [
+              [
+                "ד",
+                "u"
+              ],
+              [
+                "מ",
+                ""
+              ],
+              [
+                "ע",
+                "c"
+              ]
+            ],
+            "flags": [
+              "c",
+              "u"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "XI 14",
+            "column": 11,
+            "line_number": 14,
+            "word_index_0based": 1,
+            "surface": "כלי",
+            "segments": [
+              [
+                "כלי",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [
+          {
+            "line": "XI 15",
+            "column": 11,
+            "line_number": 15,
+            "word_index_0based": 0,
+            "surface": "כתבן",
+            "segments": [
+              [
+                "כתבן",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "56",
+      "col_line": "XI:16–XII:3",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "XI 17",
+            "column": 11,
+            "line_number": 17,
+            "word_index_0based": 3,
+            "surface": "כלין",
+            "segments": [
+              [
+                "כלין",
+                "r"
+              ]
+            ],
+            "flags": [
+              "r"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          }
+        ],
+        "silver": [],
+        "gold": [
+          {
+            "line": "XII 1",
+            "column": 12,
+            "line_number": 1,
+            "word_index_0based": 0,
+            "surface": "זהב",
+            "segments": [
+              [
+                "זהב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "weight": [],
+        "kk": [
+          {
+            "line": "XII 1",
+            "column": 12,
+            "line_number": 1,
+            "word_index_0based": 1,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [
+          {
+            "line": "XII 1",
+            "column": 12,
+            "line_number": 1,
+            "word_index_0based": 3,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          },
+          {
+            "line": "XII 3",
+            "column": 12,
+            "line_number": 3,
+            "word_index_0based": 1,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "57",
+      "col_line": "XII:4–XII:5",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "XII 5",
+            "column": 12,
+            "line_number": 5,
+            "word_index_0based": 2,
+            "surface": "וכלכליה",
+            "segments": [
+              [
+                "וכלכליה",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [
+          {
+            "line": "XII 5",
+            "column": 12,
+            "line_number": 5,
+            "word_index_0based": 3,
+            "surface": "וכסף",
+            "segments": [
+              [
+                "וכסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [],
+        "weight": [],
+        "kk": [
+          {
+            "line": "XII 5",
+            "column": 12,
+            "line_number": 5,
+            "word_index_0based": 4,
+            "surface": "ככ",
+            "segments": [
+              [
+                "ככ",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [
+          {
+            "line": "XII 5",
+            "column": 12,
+            "line_number": 5,
+            "word_index_0based": 0,
+            "surface": "שדא",
+            "segments": [
+              [
+                "שדא",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "58",
+      "col_line": "XII:6–XII:7",
+      "features": {
+        "dema": [
+          {
+            "line": "XII 7",
+            "column": 12,
+            "line_number": 7,
+            "word_index_0based": 1,
+            "surface": "דמע",
+            "segments": [
+              [
+                "דמע",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "herem": [],
+        "vessels": [
+          {
+            "line": "XII 6",
+            "column": 12,
+            "line_number": 6,
+            "word_index_0based": 5,
+            "surface": "כלי",
+            "segments": [
+              [
+                "כל",
+                ""
+              ],
+              [
+                "י",
+                "c"
+              ]
+            ],
+            "flags": [
+              "c"
+            ],
+            "unclear_character": false,
+            "source_unflagged": false
+          },
+          {
+            "line": "XII 6",
+            "column": 12,
+            "line_number": 6,
+            "word_index_0based": 7,
+            "surface": "וכלי",
+            "segments": [
+              [
+                "וכלי",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "silver": [
+          {
+            "line": "XII 6",
+            "column": 12,
+            "line_number": 6,
+            "word_index_0based": 6,
+            "surface": "כסף",
+            "segments": [
+              [
+                "כסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          },
+          {
+            "line": "XII 7",
+            "column": 12,
+            "line_number": 7,
+            "word_index_0based": 2,
+            "surface": "וכסף",
+            "segments": [
+              [
+                "וכסף",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "gold": [
+          {
+            "line": "XII 6",
+            "column": 12,
+            "line_number": 6,
+            "word_index_0based": 8,
+            "surface": "זהב",
+            "segments": [
+              [
+                "זהב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "weight": [],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "XII 7",
+            "column": 12,
+            "line_number": 7,
+            "word_index_0based": 4,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "59",
+      "col_line": "XII:8–XII:9",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [
+          {
+            "line": "XII 9",
+            "column": 12,
+            "line_number": 9,
+            "word_index_0based": 1,
+            "surface": "משקל",
+            "segments": [
+              [
+                "משקל",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kk": [],
+        "kkrin": [
+          {
+            "line": "XII 9",
+            "column": 12,
+            "line_number": 9,
+            "word_index_0based": 2,
+            "surface": "ככרין",
+            "segments": [
+              [
+                "ככרין",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    },
+    {
+      "entry": "60",
+      "col_line": "XII:10–XII:13",
+      "features": {
+        "dema": [],
+        "herem": [],
+        "vessels": [],
+        "silver": [],
+        "gold": [],
+        "weight": [],
+        "kk": [],
+        "kkrin": [],
+        "kkr": [],
+        "written_record_suffix": [],
+        "written_record_noun": [
+          {
+            "line": "XII 11",
+            "column": 12,
+            "line_number": 11,
+            "word_index_0based": 4,
+            "surface": "הכתב",
+            "segments": [
+              [
+                "הכתב",
+                ""
+              ]
+            ],
+            "flags": [],
+            "unclear_character": false,
+            "source_unflagged": true
+          }
+        ],
+        "book_or_scroll": [],
+        "chest": [],
+        "ingots": [],
+        "garments": [],
+        "apudah": [],
+        "tithe": []
+      }
+    }
+  ]
+}

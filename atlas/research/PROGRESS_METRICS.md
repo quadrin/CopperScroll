@@ -1,6 +1,6 @@
 # Research outcome counters
 
-Updated 2 October 2026, Los Angeles / 3 October UTC. Source inspections and completed checks record activity. Headline counters now describe identification outcomes, conditional exclusions, comparison results and excavation coverage. The [outcome ledger](progress/outcome_ledger.json) defines the audit scope and names every counted record.
+Updated 6 October 2026 UTC / 5 October Los Angeles. Source inspections and completed checks record activity. Headline counters now describe identification outcomes, conditional exclusions, comparison results and excavation coverage. The [outcome ledger](progress/outcome_ledger.json) defines the audit scope and names every counted record.
 
 ## Current registered outcomes
 
@@ -28,6 +28,10 @@ An **excavation-coverage record** identifies the proposed ancient target, archae
 An **unexcavated-alternative inventory** starts from entry constraints and a declared regional boundary. Include surveyed, excavated, unexcavated, destroyed and status-unknown features under the same selection criteria. Record how maps/surveys detect them and where coverage is incomplete. Existing atlas markers are inputs to this audit, not a complete regional denominator. Distinguish modern observations and archaeological function interpretations from claims about the ancient wording.
 
 ## Activity retained separately
+
+Current activity at6October2026UTC: **70 scoped primary-source targets /5 cartographic-reference intakes /77 bounded checks**;11 In progress/1 Queued. The [ordering audit](https://github.com/quadrin/CopperScroll/blob/research/order-pools-inventory/research/text/ordering_audit_2026-10-06.md) adds one bounded existing-data arithmetic/definition check; the [R12 audit](https://github.com/quadrin/CopperScroll/blob/research/order-pools-inventory/research/text/inventory_scope_2026-10-06.md) adds one bounded inventory/units/chronology check and Deuteronomy14:22–26 as one newly inspected ancient comparative-text scope. Josephus War5.4.2 reinspection adds no scope. The [28-row Jericho normalization](https://github.com/quadrin/CopperScroll/blob/research/order-pools-inventory/research/assessments/entry29_jericho_pools/README.md#inventory-normalization--6-october-2026-utc) is retrospective organization and adds no activity. Mechanics tests, reviewer repeats and source/hash/link verification add no separate checks. No new original-manuscript, Copper Scroll edition or archaeological inspection, field campaign, outcome, confidence, coordinate, decisive test or question closure. R12 moves Queued→Inprogress while attribution/date questions remain open.
+
+The following original-photo activity record is historical:
 
 Current activity at6October2026UTC: **69 scoped primary-source targets /5 cartographic-reference intakes /75 bounded checks**;10 In progress/2 Queued. The [three-entry original-photo audit](https://github.com/quadrin/CopperScroll/blob/research/original-reading-audit-31-40-49/research/text/plate_check.md#original-photo-reading-audit--6-october-2026-utc) adds three bounded source groups (expanded1988 originals, expandedDJD VII/IX with X reused, and2013 IX/X replica layout) and three entry-level registration/readability checks to66/5/72. Thirty-six original IDs are deduplicated:25 native,11 overview-only;4 replica IDs are native. All target ROIs remain null. No independent archaeological campaign, outcome, decisive-test, confidence or question-closure increment.
 

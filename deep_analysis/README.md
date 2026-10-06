@@ -60,6 +60,13 @@ Checked on 30 September 2026. The counts and p-values in §0, §1 (observed and 
 
 Some numbers in the report are not in any output file:
 
+The statuses below describe the30September delivery. The [6October exact ordering audit](../research/text/ordering_audit_2026-10-06.md) supplies the missing T1 calculations and retained entry15/23 branches, exact five/six-occurrence scans, and source-level full-spelling counts. Its [separate runner](ordering_audit.py) writes [structured results](ordering_audit_results.json); it preserves the historical scripts and outputs. The five-phrase`C(10,5)/C(61,5)` calculation measures canonical-entry cooccurrence. A literal-adjacency probability, complete Milik segmentation null and Phase4T8's missing7/4 coding basis remain unresolved.
+
+```
+python3 deep_analysis/ordering_audit.py
+python3 -m unittest discover -s deep_analysis -p test_ordering_audit.py -v
+```
+
 | Report | Value | Status |
 |---|---|---|
 | §1, §11: T1 p | 3.6 × 10⁻⁶, "exact" | `tests.py` gives the permutation estimate 5 × 10⁻⁶ (1 hit in 200,000 shuffles, as the report says). The exact calculation is not in the bundle |
@@ -79,7 +86,7 @@ Only the file paths changed. The bundle expected the scripts in `cs_work/deep/`,
 
 ## Text and data
 
-`build.py` and `features.py` write the Abegg Hebrew text (ETCBC `dss` 2.0.1, CC BY-NC 4.0) into `entries_full.json` and `features.json`. These two files can be made again at any time, so they are in `.gitignore`. The committed outputs hold entry numbers, counts, concept names and statistics, and no Hebrew text.
+`build.py` and `features.py` write the Abegg Hebrew text (ETCBC `dss` 2.0.1, CC BY-NC 4.0) into `entries_full.json` and `features.json`. These two files can be made again at any time, so they are in `.gitignore`. The historical delivered outputs hold entry numbers, counts, concept names and statistics, and no Hebrew text. The separate `ordering_audit_results.json` includes limited source-token contexts and annotations; its attribution, CC BY-NC4.0 licence and modification statement accompany those excerpts. The [audit note](../research/text/ordering_audit_2026-10-06.md) describes their extraction and limits.
 
 
 ## Frozen coarse grouping sensitivity — 2 October 2026 UTC
