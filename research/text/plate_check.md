@@ -165,3 +165,36 @@ The same line ends באשוח.
 1. **Re-crop** VIII 9, VIII 13, X 11 and VII 14 with the line fixed on Puech's facsimile, not by height. Then repeat the blind questions on those four lines with two fresh readers.
 2. **Specialist review of the leaning results.** Send the unlabelled crops and questions for X 15, VII 11, IX 7 and XII 10 to a human specialist, with the DJD III pl. XLIII.3 pre-cutting photograph for X 15–16. These results lean one way but are not decisive.
 3. **Obtain DJD III pls. XLVIII–LXXI at full resolution,** or the IAA 3Q15 images, for an independent image source. Every result here comes from one publication's reproductions.
+
+
+## Original-photo reading audit — 6 October 2026 UTC
+
+The user requested parallel follow-up on entries 31, 40 and 49. All three bounded original-photo reading claims end **not identifiable from available evidence**. No target word was authenticated with neighboring original Hebrew. Original target boxes, new disputed-stroke transcriptions and new reading verdicts remain null. The earlier P22/P28/P11 plate assessments and their surviving alternatives remain unchanged.
+
+### Sources and inspection limits
+
+Research baseline is `6a38348c`; images come from the fixed [PR10 acquisition commit](https://github.com/quadrin/CopperScroll/commit/7ebd8a4c57463f5b32621f327f067913ddfc42ef). [Structured results and deduplicated source records](../../registration/plate_check/original_photo_audit_2026-10-06.json) give every catalog ID, durable item URL, image path, hash, dimensions, inspection role and stopping condition. Selected source bytes were independently checked for hash, size, dimensions and complete strict JPEG decoding. This validates the selected files, not all942 indexed previews.
+
+Across the three lanes, 36 distinct1988 original previews were reviewed:25 at native full-frame display and11 only in labelled overviews. Four distinct2013 replica previews were viewed natively for layout. Original frame sets overlap between entries40/49 and are deduplicated. The three assigned threads are not three independent archaeological campaigns or two complete readers per entry. The entry40 thread was interrupted before a final per-ID ledger; its final scope uses the integrator's explicit20-original overview,5-original native and2-replica native views. Entry49's reader inspected11 full originals and2 partial local copies; the integrator later reviewed complete replacements for those two IDs.
+
+DJDIII columnVII handcopy/photo platesLX/LXI (viewers72/73), columnIX photographLXV (viewer77), and columnX handcopy/photoLXVI/LXVII (viewers78/79) were directly reviewed. The interrupted entry40 thread also reported contextual handcopyLXIV/viewer76 review. ColumnX is reused from the [cycle8 inspection](../measurements/cycle8/entry49_constraints.md); it is not a new source scope. The [archived plates volume](../assets/plans/djdIII1962/plates-volume.pdf), SHA256 `b7a52c275ad42a333f4d825efd12425e11574aa00bdd76e72e41656de86a2eb2`, supersedes the old pass's unavailable-DJD statement for these selected pages. Edition handcopies and2013 replicas supply layout aids, with no original-stroke or chronology inference.
+
+### Entry31, VII11
+
+Cut13 center top/bottom views and cut14 side views share the columnVII assembly's stepped losses and tall tongue/aperture profile in their displayed unrotated orientation. A separate reviewer found that physical scaffold compatible. No securely read target-plus-neighboring-Hebrew window follows. Both guard-post and drying-place readings survive; the earlier printed-plate leaning toward hmšṭḥ remains unchanged. Initial cut15/16 frames are exploratory context with different profiles. Existing2020 museum-photo tracing metadata was read, but its image was not reinspected or its coordinates transferred.
+
+### Entry40, IX7
+
+Cuts17–20 and the columnIX replica/photograph scaffold were compared. Initial17/18 and later19/20 proposals remain unverified. Sequential cut numbering, isolated losses and different visible curved faces cannot establish IX7. The separate entry49 cut18/columnX proposal is also provisional; no shared cut-to-column map is assigned. The original directional word and neighboring Hebrew remain unauthenticated. Both ים and דרום survive, with the historical west/sea leaning unchanged.
+
+### Entry49, X15
+
+Cut18 center views supply a provisional numeric-layout/lower-right-loss lead. No unique original neighboring phrase, column-line transform or name target is secured. Siloam's cursive-waw/supplied-genitive branch, Rachel's possible cursive-resh/word-division branch and the Jehu alternative survive. The old R1 wrong-lamed answer remains excluded; the historical R2/printed-plate leaning stays unchanged.
+
+### Source recovery and stopping decision
+
+Two initial local JPEG copies, UC15246874 andUC15246041, were only16384bytes and failed their recorded hashes and strict decoding. Fresh fixed-commit repository downloads matched the acquisition hashes, sizes and dimensions and decoded fully; both complete files were visually reviewed by the integrator. The source-corruption inference was withdrawn. These local transfer failures establish no defect in the stored acquisition images.
+
+Close all three unchanged-preview reading passes. Reopen only with a legible original VII11, IX7 orX15–16 image and neighboring Hebrew plus labeled cut/component placement, or a documented correction that secures that registration on an existing source. Then inspect the registered paired-light target windows. No current photograph supplies a new vote on the disputed strokes. Original TIFFs and their placement metadata remain specific source dependencies; the durable catalog links for the selected cuts are in the structured source records.
+
+Activity adds three scoped source groups: expanded1988 originals, expandedDJD VII/IX (X reused), and2013 IX/X replica layouts; three completed entry-level registration checks bring totals to69 source scopes /5 cartographic intakes /75 bounded checks. View counts, downloads and reviewer repeats add no additional scopes. No decisive candidate test, question closure, identification, confidence, coordinate, independent archaeological campaign or outcome-ledger change. No new source images are republished.
