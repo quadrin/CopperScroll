@@ -510,6 +510,62 @@
         "CY_POINT38_POOL",
         "CY_POINT39_DIVISION_POOL"
       ]
+    },
+    {
+      "id": "REL_AC90_AC44_SUCCESSION_NOT_ALIAS",
+      "type": "possible_functional_succession_of_distinct_basins",
+      "members": [
+        "J05",
+        "J09"
+      ],
+      "earlier_members": null,
+      "later_member": null,
+      "subfeature_members": null
+    },
+    {
+      "id": "REL_CY_LOWER_DISTINCT",
+      "type": "documented_distinct_source_features",
+      "members": null,
+      "earlier_members": null,
+      "later_member": null,
+      "subfeature_members": [
+        "CY_LOWER_CISTERN_1",
+        "CY_LOWER_CISTERN_2",
+        "CY_LOWER_CISTERN_3",
+        "CY_LOWER_CISTERN_4"
+      ]
+    },
+    {
+      "id": "REL_CY_HILLTOP_POOLS_DISTINCT",
+      "type": "documented_distinct_source_features_with_relative_addition",
+      "members": null,
+      "earlier_members": null,
+      "later_member": null,
+      "subfeature_members": [
+        "CY_HILLTOP_BATHHOUSE_POOL",
+        "CY_LATER_ADDED_ROOM_POOL"
+      ]
+    },
+    {
+      "id": "REL_CY_SHARED_NOTICES",
+      "type": "shared_documentary_notice_references",
+      "members": [
+        "J14",
+        "J18"
+      ],
+      "earlier_members": null,
+      "later_member": null,
+      "subfeature_members": [
+        "CY_EASTERN_BRANCH",
+        "CY_LATER_SETTLING_BASINS",
+        "CY_LOWER_CISTERN_1",
+        "CY_LOWER_CISTERN_2",
+        "CY_LOWER_CISTERN_3",
+        "CY_LOWER_CISTERN_4",
+        "CY_POINT38_POOL",
+        "CY_POINT39_DIVISION_POOL",
+        "CY_SOUTHERN_BRANCH"
+      ]
     }
   ],
   "cypros_notice_registry_ref": "inventory_normalization_2026-10-06.json#/cypros_subfeature_notices",
@@ -5345,5 +5401,6 @@
       80
     ],
     "registered": true
-  }
+  },
+  "identity_audit_2026_10_06_ref": "inventory_normalization_2026-10-06.json#/identity_audit_2026_10_06"
 }
