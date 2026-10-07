@@ -1,0 +1,15 @@
+self-test passed 0.0 s
+fit rho0 {'lam': 8.0, 'w_A': 0.8, 'w_L': 0.9, 'logml': 25.4907} {'lam': 8.0, 'w_A': 0.9, 'w_L': 0.9, 'logml': 25.2542} {'lam': 8.0, 'w_A': 0, 'w_L': 0.9, 'logml': 19.6186}
+fit rho0.9 {'lam': 8.0, 'w_A': 0.4, 'w_L': 0.8, 'logml': 14.9805} {'lam': 8.0, 'w_A': 0.6, 'w_L': 0.6, 'logml': 10.8096} {'lam': 8.0, 'w_A': 0, 'w_L': 0.8, 'logml': 13.5742}
+M0_prior {'w_A': 0, 'w_L': 0, 'rho': 0} logml 0.0
+M1_itinerary_fitted {'w_A': 0.995, 'w_L': 0.995, 'lam': 2.0, 'rho': 0} logml 17.681
+M2_names_only {'w_A': 0, 'w_L': 0, 'rho': 0.9} logml -1.482
+M3_joint_fitted {'w_A': 0.4, 'w_L': 0.995, 'lam': 2.0, 'rho': 0.9} logml 8.683
+M4_joint_wA0 {'w_A': 0.0, 'w_L': 0.995, 'lam': 2.0, 'rho': 0.9} logml 8.245
+M6_joint_wA_eq_wL {'w_A': 0.995, 'w_L': 0.995, 'lam': 2.0, 'rho': 0.9} logml 3.475
+M5_joint_free_fit {'w_A': 0.4, 'w_L': 0.8, 'lam': 8.0, 'rho': 0.9} logml 14.981
+done 180.1 s
+
+real	3m0.252s
+user	4m17.233s
+sys	0m2.704s

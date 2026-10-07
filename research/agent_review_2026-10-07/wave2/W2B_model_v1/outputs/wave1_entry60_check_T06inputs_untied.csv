@@ -1,0 +1,13 @@
+kernel,order,w_A,w_L,P_tell,P_within10km_tell,P_north_of_32_05
+K1_sinkhorn,off,0,0,0.3,0.473,0.073
+K1_sinkhorn,T06 weights,0.4,0.995,0.099,0.162,0.711
+K1_sinkhorn,weak,0,0.8,0.15,0.241,0.552
+K2_fixed,off,0,0,0.3,0.473,0.073
+K2_fixed,T06 weights,0.4,0.995,0.279,0.434,0.104
+K2_fixed,weak,0,0.8,0.286,0.446,0.1
+K3_sinkhorn_grid,off,0,0,0.3,0.341,0.304
+K3_sinkhorn_grid,T06 weights,0.4,0.995,0.153,0.175,0.666
+K3_sinkhorn_grid,weak,0,0.8,0.187,0.214,0.58
+K4_fixed_grid,off,0,0,0.3,0.341,0.304
+K4_fixed_grid,T06 weights,0.4,0.995,0.282,0.319,0.392
+K4_fixed_grid,weak,0,0.8,0.285,0.324,0.374

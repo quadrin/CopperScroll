@@ -1,0 +1,179 @@
+{
+ "priestly_courses_LXX_1Chr24": {
+  "source": "LXX 1 Chr 24:7-18 as printed at https://www.ellopos.net/elpenor/greek-texts/septuagint/chapter.asp?book=13&page=24",
+  "n_items": 24,
+  "compatible_groups": 0,
+  "detail": {
+   "ΚΕΝ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΧΑΓ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΗΝ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΘΕ": {
+    "matches": [],
+    "sensitivity": {
+     "ΞΕ": []
+    }
+   },
+   "ΔΙ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΤΡ": {
+    "matches": [],
+    "sensitivity": {
+     "ΤΡΙ": []
+    }
+   },
+   "ΣΚ": {
+    "matches": [],
+    "sensitivity": {
+     "ΧΚ": [],
+     "ΞΚ": []
+    }
+   }
+  }
+ },
+ "macedonian_months": {
+  "source": "https://en.wikipedia.org/wiki/Ancient_Macedonian_calendar (variants included)",
+  "n_items": 16,
+  "compatible_groups": 1,
+  "detail": {
+   "ΚΕΝ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΧΑΓ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΗΝ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΘΕ": {
+    "matches": [],
+    "sensitivity": {
+     "ΞΕ": []
+    }
+   },
+   "ΔΙ": {
+    "matches": [
+     "Δίος"
+    ],
+    "sensitivity": {}
+   },
+   "ΤΡ": {
+    "matches": [],
+    "sensitivity": {
+     "ΤΡΙ": []
+    }
+   },
+   "ΣΚ": {
+    "matches": [],
+    "sensitivity": {
+     "ΧΚ": [],
+     "ΞΚ": []
+    }
+   }
+  }
+ },
+ "greek_units_of_measure": {
+  "source": "https://en.wikipedia.org/wiki/Ancient_Greek_units_of_measurement (all Greek-script names) + λίτρα (IIP bani0100) + ἡμιόγδοον (IIP mare0220)",
+  "n_items": 56,
+  "compatible_groups": 2,
+  "detail": {
+   "ΚΕΝ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΧΑΓ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΗΝ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΘΕ": {
+    "matches": [],
+    "sensitivity": {
+     "ΞΕ": [
+      "ξέστης"
+     ]
+    }
+   },
+   "ΔΙ": {
+    "matches": [
+     "διχάς",
+     "δίαυλος"
+    ],
+    "sensitivity": {}
+   },
+   "ΤΡ": {
+    "matches": [
+     "τρύβλιον"
+    ],
+    "sensitivity": {
+     "ΤΡΙ": []
+    }
+   },
+   "ΣΚ": {
+    "matches": [],
+    "sensitivity": {
+     "ΧΚ": [],
+     "ΞΚ": []
+    }
+   }
+  }
+ },
+ "maresha_greek_label_vocabulary": {
+  "source": "IIP expansions of Korzakova 2010 Maresha Greek ostraca (seah, qab, bat, wheat, chickpea, tax, silver, gift, drachma)",
+  "n_items": 10,
+  "compatible_groups": 0,
+  "detail": {
+   "ΚΕΝ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΧΑΓ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΗΝ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΘΕ": {
+    "matches": [],
+    "sensitivity": {
+     "ΞΕ": []
+    }
+   },
+   "ΔΙ": {
+    "matches": [],
+    "sensitivity": {}
+   },
+   "ΤΡ": {
+    "matches": [],
+    "sensitivity": {
+     "ΤΡΙ": []
+    }
+   },
+   "ΣΚ": {
+    "matches": [],
+    "sensitivity": {
+     "ΧΚ": [],
+     "ΞΚ": []
+    }
+   }
+  }
+ }
+}

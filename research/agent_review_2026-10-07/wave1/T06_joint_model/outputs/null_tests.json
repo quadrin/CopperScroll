@@ -1,0 +1,436 @@
+{
+ "all_candidates": {
+  "n_entries": 56,
+  "entries": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "12a",
+   "13",
+   "14",
+   "15",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "21",
+   "22",
+   "23",
+   "24",
+   "25",
+   "26",
+   "27",
+   "29",
+   "30",
+   "31",
+   "32",
+   "33",
+   "34",
+   "35",
+   "36",
+   "37",
+   "38",
+   "40",
+   "43",
+   "45",
+   "46",
+   "47",
+   "48",
+   "49",
+   "50",
+   "51",
+   "52",
+   "53",
+   "54",
+   "55",
+   "56",
+   "57",
+   "58",
+   "59",
+   "60"
+  ],
+  "strict_coords": true,
+  "excluded": [],
+  "desc_full": {
+   "observed": 1.6303,
+   "null_mean": 2.4679,
+   "null_sd": 0.1106,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_w0.98_lam2.0_full": {
+   "observed": 15.271,
+   "null_mean": -1.554,
+   "null_q95": 0.993,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_full": {
+   "observed": 18.781,
+   "null_mean": 0.238,
+   "p_value": 4.999750012499375e-05
+  },
+  "desc_within_block": {
+   "observed": 1.6303,
+   "null_mean": 2.0026,
+   "null_sd": 0.1001,
+   "p_value": 0.00014999250037498125
+  },
+  "logBF_w0.98_lam2.0_within_block": {
+   "observed": 15.271,
+   "null_mean": 6.968,
+   "null_q95": 9.834,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_within_block": {
+   "observed": 18.781,
+   "null_mean": 7.287,
+   "p_value": 4.999750012499375e-05
+  },
+  "desc_within_region": {
+   "observed": 1.6303,
+   "null_mean": 1.9148,
+   "null_sd": 0.0616,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_w0.98_lam2.0_within_region": {
+   "observed": 15.271,
+   "null_mean": 9.305,
+   "null_q95": 11.142,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_within_region": {
+   "observed": 18.781,
+   "null_mean": 11.342,
+   "p_value": 4.999750012499375e-05
+  }
+ },
+ "no_documented_order_derived": {
+  "n_entries": 46,
+  "entries": [
+   "1",
+   "2",
+   "3",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "12",
+   "12a",
+   "13",
+   "14",
+   "16",
+   "17",
+   "18",
+   "24",
+   "25",
+   "26",
+   "27",
+   "29",
+   "30",
+   "31",
+   "32",
+   "33",
+   "34",
+   "35",
+   "36",
+   "37",
+   "38",
+   "40",
+   "43",
+   "45",
+   "46",
+   "47",
+   "49",
+   "50",
+   "51",
+   "52",
+   "53",
+   "54",
+   "55",
+   "56",
+   "57",
+   "58",
+   "59"
+  ],
+  "strict_coords": true,
+  "excluded": [
+   "documented"
+  ],
+  "desc_full": {
+   "observed": 1.5072,
+   "null_mean": 2.3801,
+   "null_sd": 0.1037,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_w0.98_lam2.0_full": {
+   "observed": 10.052,
+   "null_mean": -1.409,
+   "null_q95": 0.532,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_full": {
+   "observed": 10.894,
+   "null_mean": 0.088,
+   "p_value": 4.999750012499375e-05
+  },
+  "desc_within_block": {
+   "observed": 1.5072,
+   "null_mean": 1.9164,
+   "null_sd": 0.076,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_w0.98_lam2.0_within_block": {
+   "observed": 10.052,
+   "null_mean": 4.564,
+   "null_q95": 6.298,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_within_block": {
+   "observed": 10.894,
+   "null_mean": 4.588,
+   "p_value": 4.999750012499375e-05
+  },
+  "desc_within_region": {
+   "observed": 1.5072,
+   "null_mean": 1.8762,
+   "null_sd": 0.0586,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_w0.98_lam2.0_within_region": {
+   "observed": 10.052,
+   "null_mean": 5.404,
+   "null_q95": 6.924,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_within_region": {
+   "observed": 10.894,
+   "null_mean": 5.446,
+   "p_value": 4.999750012499375e-05
+  }
+ },
+ "no_documented_or_likely": {
+  "n_entries": 35,
+  "entries": [
+   "1",
+   "2",
+   "3",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "12",
+   "12a",
+   "13",
+   "14",
+   "16",
+   "17",
+   "18",
+   "24",
+   "27",
+   "30",
+   "31",
+   "32",
+   "35",
+   "36",
+   "37",
+   "38",
+   "40",
+   "43",
+   "46",
+   "49",
+   "51",
+   "52",
+   "55",
+   "57",
+   "58",
+   "59"
+  ],
+  "strict_coords": true,
+  "excluded": [
+   "documented",
+   "likely"
+  ],
+  "desc_full": {
+   "observed": 1.636,
+   "null_mean": 2.3482,
+   "null_sd": 0.1196,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_w0.98_lam2.0_full": {
+   "observed": 5.696,
+   "null_mean": -1.594,
+   "null_q95": 0.144,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_full": {
+   "observed": 5.696,
+   "null_mean": 0.019,
+   "p_value": 4.999750012499375e-05
+  },
+  "desc_within_block": {
+   "observed": 1.636,
+   "null_mean": 1.9753,
+   "null_sd": 0.0933,
+   "p_value": 0.00014999250037498125
+  },
+  "logBF_w0.98_lam2.0_within_block": {
+   "observed": 5.696,
+   "null_mean": 2.023,
+   "null_q95": 3.616,
+   "p_value": 0.0002999850007499625
+  },
+  "logBF_profile_within_block": {
+   "observed": 5.696,
+   "null_mean": 2.275,
+   "p_value": 0.0002999850007499625
+  },
+  "desc_within_region": {
+   "observed": 1.636,
+   "null_mean": 1.8096,
+   "null_sd": 0.0432,
+   "p_value": 0.00014999250037498125
+  },
+  "logBF_w0.98_lam2.0_within_region": {
+   "observed": 5.696,
+   "null_mean": 3.757,
+   "null_q95": 4.931,
+   "p_value": 0.002049897505124744
+  },
+  "logBF_profile_within_region": {
+   "observed": 5.696,
+   "null_mean": 3.76,
+   "p_value": 0.002049897505124744
+  }
+ },
+ "all_candidates_nonstrict": {
+  "n_entries": 60,
+  "entries": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "12a",
+   "13",
+   "14",
+   "15",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "21",
+   "22",
+   "23",
+   "24",
+   "25",
+   "26",
+   "27",
+   "28",
+   "29",
+   "30",
+   "31",
+   "32",
+   "33",
+   "34",
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40",
+   "42",
+   "43",
+   "44",
+   "45",
+   "46",
+   "47",
+   "48",
+   "49",
+   "50",
+   "51",
+   "52",
+   "53",
+   "54",
+   "55",
+   "56",
+   "57",
+   "58",
+   "59",
+   "60"
+  ],
+  "strict_coords": false,
+  "excluded": [],
+  "desc_full": {
+   "observed": 1.699,
+   "null_mean": 2.5653,
+   "null_sd": 0.1029,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_w0.98_lam2.0_full": {
+   "observed": 18.026,
+   "null_mean": -1.612,
+   "null_q95": 0.979,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_full": {
+   "observed": 25.176,
+   "null_mean": 0.214,
+   "p_value": 4.999750012499375e-05
+  },
+  "desc_within_block": {
+   "observed": 1.699,
+   "null_mean": 2.125,
+   "null_sd": 0.0975,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_w0.98_lam2.0_within_block": {
+   "observed": 18.026,
+   "null_mean": 7.699,
+   "null_q95": 10.663,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_within_block": {
+   "observed": 25.176,
+   "null_mean": 8.36,
+   "p_value": 4.999750012499375e-05
+  },
+  "desc_within_region": {
+   "observed": 1.699,
+   "null_mean": 2.0126,
+   "null_sd": 0.0615,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_w0.98_lam2.0_within_region": {
+   "observed": 18.026,
+   "null_mean": 10.838,
+   "null_q95": 12.94,
+   "p_value": 4.999750012499375e-05
+  },
+  "logBF_profile_within_region": {
+   "observed": 25.176,
+   "null_mean": 14.892,
+   "p_value": 4.999750012499375e-05
+  }
+ }
+}

@@ -1,0 +1,154 @@
+W2-D: THE COPPER SCROLL GREEK LETTER GROUPS
+CIIP, Ilan base rates, Lefkovits and Puech
+Agent report, 7 October 2026
+
+Labels: EVIDENCE = what a source says, with its page; INFERENCE = my reasoning.
+Rules fixed in PREREGISTRATION.md before searching; Addendum A1 was added before any Part B scoring.
+Groups: KEN (I 4), CHAG (I 12), HN (II 2), THE (II 4), DI (II 9), TR (III 7), (I)SK (IV 2).
+Greek capitals are used in the data files.
+
+BOTTOM LINE
+- No system rises above 2 of 7 under the pre-registered rule (grade A/B parallels of one mark type for at least 5 groups).
+- CIIP adds new TYPE parallels for abbreviated names, but nothing for KEN, CHAG, HN or SK.
+- The pre-registered name-opening test UNDERCUTS "initials of ordinary Jewish persons": as a set, the groups are much rarer name openings than random letter groups.
+- What survives is a narrow, post-hoc version: rare, mostly non-Hebrew names. Ilan's Lexicon does contain one such pair, the Adiabenians Kenedaios and Chageiras (the Stegemann reading).
+
+PART A. CIIP SEARCH
+
+Coverage
+- CIIP III, IV.1, V.1: full text layers searched.
+- CIIP I.1 and I.2 were searched on the user's connected device copy. The 8 MB Drive files could not be downloaded (MCP size limit), and the Drive text export stops at inscription no. 9.
+- Method: a script searched every Greek token for the 7 groups and the reading variants (XE, TRI, ISK, CHK, XK). I then read every candidate by hand.
+- CIIP I.2 limit: the Greek is in a custom font. Capitals are lost; I decoded the lower case. I inspected page images of nos. 769-771 and 1090-1117 (printed pp. 71-74, 473-492). Other I.2 diplomatic Greek is unsearchable; it is mostly Late Roman and Byzantine.
+- CPJ IV and V were searched. CPJ I-III have unreadable OCR Greek and were not.
+- Not available: CIIP II (which covers Jatt), IV.2, V.2, and the Judaean Desert Greek papyri. These were not searched.
+
+Hits on the seven groups (data/ciip_candidates_graded.csv)
+- DI, CIIP V 6760, Hippos [grade B]. Quarry/mason's counting mark DI on 4 basalt flagstones, 1st c. CE (p. 845). The series intro (p. 837) says the marks were cut in the quarries "to control and account for the work of the different workmen or workgroups".
+- DI, CIIP I 771b (with 771a DIO), Jerusalem theatre seats [B]. Printed pp. 72-74, images checked.
+  - LDS reads Di(onysiou) (sc. amphodou), a seating sector reserved for a city quarter; 2nd c. CE likely.
+  - The first editors read the numeral 14. LDS rejects it: "numbers of the tens series would not usually be written in ascending order".
+- DI, CIIP III 2388, Ascalon [C]. Incised on a Hellenistic amphora; no interpretation (pp. 331-332).
+- DI(S), CIIP V 5936, Tel Anafa [B-partial]. Owner's mark DIS on a plate, 2nd c. BCE. The series is "most probably owners' marks" (pp. 50, 58).
+- THE, CIIP V 5939, Tel Anafa [C]. [--]THE[--] with both letters uncertain, broken both sides (p. 59).
+- TR, CIIP I 666, Jerusalem stone weight, 9/8 BCE [B, disputed]. Meshorer read a TR ligature = tr(ia), "three [minas]". AKS: the sign looks like G or T, and the ligature is "questionable" (pp. 660-661).
+- TR(Y), CIIP III 2274, sling bullet, 142-138 BCE [B-partial]. BA / TRY monogram = ba(sileos) Try(phonos) (pp. 173-174).
+- KEN, CHAG, HN, SK: NONE as a mark or abbreviation in any volume searched.
+  - The cumulative CIIP I-IV personal-name index (CIIP IV pp. 1511ff.) has 1,752 Greek name forms.
+  - It contains 0 names in Ken-, 0 in Chag-, 0 in Hn-, and 1 in Sk- (Skodris, no. 3616).
+  - For comparison: 71 in The-, 21 in Di-, 8 in Tr-.
+
+Comparanda (data/ciip_comparanda.csv)
+- Herodian jar labels, Jerusalem Jewish Quarter (CIIP I 1091-1113, images checked).
+  - Short Greek groups abbreviate commodities and measures: koty(len) py(ron), choin(ikes), mima(ikylon), Marga(rites).
+  - Others are numerals, or names in the genitive.
+  - No. 1098 has HL KO / HP: HL and KO "may represent a personal name... the importer"; HP may be the year 88 (pp. 479-480).
+  - This is the closest functional analogue. No target group appears.
+- Jerusalem ossuary groups = Rahmani 289/319/322/582 (CIIP I 509 THH, 112 IPhKCh, 113 ChPs/AB, 84b KNIPh).
+  - The CIIP editor rejects initials: "not the practice in ossuary inscriptions" (no. 509). He prefers alphabet-adjacent cryptic pairs.
+  - Post-hoc check: none of the 7 scroll groups contains an adjacent-letter pair.
+- Tel Anafa owners' marks (CIIP V 5922-5952): names written in full or cut to 1-5 letters.
+- Jatt tomb 5, 1st c. CE, as REPORTED by Puech (2006 pp. 174-175 n. 46; 2015 pp. 12-13; citing 'Atiqot 37).
+  - Names are cut down step by step: AGRIPPAS / AGRIP / AGR / AG / A; BERENIKE ... BE / B.
+  - Unverified: the primary publication is not available. No target groups; the full names stand in the same tomb.
+- Egyptian papyri, outside the window.
+  - CPJ V 644 (early 2nd c. CE): a grain daybook laid out as abbreviated Jewish names + place + amount, with "Tr( )" (vol. V pp. 50-52).
+  - CPJ IV 574 (142 BCE): "the( ) era( )", perhaps The(omnestos) Hera(kleidou); the editors are unsure (vol. IV pp. 128-129).
+
+PART B. INITIALS: ILAN, LEXICON I (PALESTINE 330 BCE-200 CE)
+
+Data
+- The Ilan PDF is an OCR scan; its Greek and Hebrew are junk.
+- I parsed the English index: 820 names plus 4 added.
+- Bearers per name: the largest entry number in each section. This matches Ilan's Tables 5, 7 and 8 to within +-1 for 27 of 31 names; table values override the rest.
+- Parsed total: 3,508-3,516, against Ilan's 3,595.
+- The xlsx is a user compilation across Ilan I-IV plus other corpora, with only 35 Greek names. I used only its attested Greek spellings.
+- Openings:
+  - U1 = rule-based, with generous alternatives, plus attested spellings.
+  - U2 = attested spellings only.
+- Runs:
+  - "Automated": as fixed in Addendum A1.
+  - "Hand-corrected": adds orthographies I read in Ilan for the names named in advance, plus Tibethis and Tehinah: Skarioth, Chageiras, Theboythei/-is, Theennas. Bearer counts also fixed for Theodotus 10 and Theodorus 12. This run is BIASED toward the targets.
+
+Per-group results (U1, hand-corrected; data/initials_summary.csv)
+- KEN: 2 bearers (0.06%). Cenedaius = Kenedaios, BJ 2.520 (p. 436); Kenebon, Masada, Hebrew only, counted by rule (p. 387). Ratio to random letters (N1) = 7.4.
+- CHAG: 0 automated; 2 hand-corrected (0.06%). Hagira no. 1: Ilan prints Chageiras, BJ 5.474, from Schalit NB 125 (p. 376). Ratio = 65.
+  - Haggai is Angaios, with no Ch (pp. 93-94).
+  - Ilan sec. 2.1.2.8 (p. 19): "The use of chi to transliterate het is unusual". The named exceptions include "Chageiras in Josephus".
+  - The repo found that the Niese/Perseus text at BJ 5.474 reads "kai agiras" (F4.6).
+- HN: 2 bearers, only by allowing E->H (Endemias, Enoch). No real H-initial name. Ratio = 0.6.
+- THE: 57 bearers (1.6%). Theodorus 12, Theodotus 10, Theodosius 7, Theophilus 3, Theumnastus 2, Thebouthi 2, Tehinah = Theennas/Thenas 13 (pp. 237-238). Ratio = 14.8. The most name-like group.
+- DI: 16 bearers (0.46%), Dio- names. Ratio = 1.5.
+- TR: 8 bearers (0.23%): Tryphon 7, Troxallis 1. Ratio = 4.6.
+- SK: 1 bearer (0.03%), only through the manuscript variant Skarioth of Iscariot (p. 435). Ratio = 0.15.
+
+Joint test (pre-registered)
+K = number of groups found as some name opening. W = summed share of bearers whose name opens with the group.
+
+  Run                 K(U1)  W(U1)   P(W>=obs), N1   N1 median W   P(K>=obs), N1
+  Automated             5    0.021       0.74           0.098          0.27
+  Hand-corrected        7    0.025       0.71           0.097          0.006 (biased)
+  het->Ch sensitivity   6    0.025       0.72           0.098          0.06
+
+VERDICT (pre-registered rules): UNDERCUTS.
+- Support needs K>=5 AND a joint-W p<0.05: fails in every run.
+- Undercut = W at or below the null median: holds in every run, under both N1 and N2.
+
+Post-hoc diagnostic (not pre-registered): if the groups opened the names of 7 Jewish persons drawn at random, W would average 0.46. The observed value is 0.025; P(W <= observed) = 2e-5.
+
+INFERENCE
+- Almost any pronounceable group matches SOME name among ~820, so K is weak evidence.
+- Common names (Ioseppos, Simon, Ioudas, Eleazar, Ioannes, Mariam) never appear among the groups.
+- If the groups are names, the persons had rare Greek or foreign names.
+- The only Ken- and Chag- bearers in all of Ilan I are the Adiabenian fighters Kenedaios and Chageiras: Stegemann's pair. This is striking but chosen after the fact, and it explains at most 2/7.
+
+PART C. LEFKOVITS AND PUECH
+
+EVIDENCE: Lefkovits 2000, Appendix C, pp. 498-504
+- Layout: the groups appear only on sheet 1, always at the end of an item; spacing recorded; an extra iota after TR in Baker's drawing (p. 498).
+- Survey of proposals (pp. 499-501):
+  - Allegro: vessel code letters, comparing m. Ma'as. Sh. 4:9-11 and m. Sheq. 3:2;
+  - Milik: inexplicable;
+  - Lurie: fund codes;
+  - Ullendorff: numerals;
+  - Lehmann: CHAG = hag;
+  - Lefkovits himself: TR = terumah;
+  - Pixner and Beyer: personal names;
+  - Stegemann and Eisenman: Adiabene;
+  - McCarter: no known system;
+  - Goranson: cancelled deposits;
+  - Thiering: coin numerals.
+- 4Q186 is a precedent for Greek letters in a Hebrew text (p. 501).
+- Not numerals: only 3 of 7 have numeral form, and none matches its amount (p. 502). His table counts S as 6.
+- Same hand, engraved after the Hebrew (p. 503).
+- "(Code:)" with candidate names; maybe initials of Greek names, of Greek-speaking Jews (p. 504).
+
+EVIDENCE: Puech 2006 vol. I pp. 174-175, 180-187; Puech 2015 pp. 12-13, 36-50
+- "Coded anthroponyms" of the persons responsible for deposits 1-15.
+- Three letters first "as if to give the key"; then two letters suffice.
+- Numerals rejected: THE, not XE, is the assured reading (n. 45). Goranson rejected (n. 48).
+- Jatt cited as "confirmation".
+- Candidate lists, e.g. Kenedaios/Kenezos; Chageiras ("could have been more widespread"); Ennaphes/Eniochos; Theboutis/Theodotos/Theudas; Dio- names; Tryphon/Trychambos; Skopas/Skeuas.
+- IV 2: first letter uncertain, possibly corrected over an iota (2006 p. 187).
+
+INFERENCE: what CIIP and the papyri change
+1. The numeral case is weakened further: the CIIP editors reject DI = 14 (I 771) and doubt TR = tria (I 666).
+2. Allegro's container-label idea gets a real Herodian parallel (the jar dipinti), but no target group appears there.
+3. The name hypothesis gets type parallels, all with names supplied by context: Tel Anafa, I 771, III 2274, Jatt (as reported), CPJ V 644.
+   - None supplies KEN, CHAG, HN or SK.
+   - Jatt is weaker than Puech implies: there the full names stand beside the abbreviations; the scroll gives no key.
+4. Most of Puech's candidates are absent among Palestinian Jews in Ilan I: Ennaphes, Eniochos, Skopas, Skeuas, Kenezos, Thermoutis.
+5. Lefkovits's "Greek-speaking Jews" inference fits the base-rate pattern, but descriptively only.
+6. The CIIP editor's rejection of initials on Jerusalem ossuaries removes wave 1's regional prop for an "initials" practice.
+
+PART D. CONCLUSION
+- EVIDENCE: No KEN, CHAG, HN or SK marks occur anywhere searched. DI has two grade-B parallels of different types (Hippos quarry mark; Jerusalem seat label). TR has a disputed weight abbreviation and the TRY = Tryphon monogram. THE has only a grade-C mark.
+- INFERENCE: The best system is abbreviated personal names: 2/7 at grade A/B (DI, TR), 3/7 if grade C counts. Nothing raises any system above 2/7.
+- The base rates undercut ordinary-person initials. What survives is the post-hoc, rare-name (Adiabenian) reading.
+
+Next steps
+1. Check the Jatt abbreviations in the primary publication ('Atiqot 37 / CIIP II).
+2. Search the P.Yadin and Murabba'at Greek papyri and the Masada II ostraca.
+3. Check the BJ 5.474 manuscript readings (Chageiras vs. kai Agiras).
+
+Files: PREREGISTRATION.md (with Addendum A1); data/ (graded CSVs, initials_*, ilan_*, hinit_diagnostic.json, cand_*, device_outputs/); downloads/ (raw source material, untrusted data); scripts/.

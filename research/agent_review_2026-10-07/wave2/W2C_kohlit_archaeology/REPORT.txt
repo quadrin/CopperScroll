@@ -1,0 +1,156 @@
+W2-C: KOHLIT CANDIDATES TESTED AGAINST THE SCROLL'S FEATURES
+Agent report, 6 October 2026. Labels: EVIDENCE (what a source says, with page) and INFERENCE (my reasoning, with a confidence level). Period window: 1st c. BCE to 1st c. CE, extended to 135 CE. Nothing here is a new find. Every page number was checked against the PDF or text. "Not seen" means I did not read that source.
+
+BOTTOM LINE
+- Ranking on archaeology alone: (1) Tell es-Sultan, (2) Ein Samiya / Kh. el-Marjama, then four candidates with almost no usable data (Tell Muhalhil, Beit Kahil, Kh. Quhlet, Mount Zion).
+  The gap between the first two is small and depends on how the criteria are weighted (score 6.75 vs 5.95 out of 12.5). The order flips if the desert and place-name criteria count for more and the pool's direction counts for less. Confidence: low-medium.
+- The two top sites share the same layout, so entries 4, 19 and 60 cannot tell them apart. (INFERENCE, medium)
+  * Each has an old Bronze/Iron Age tell beside a big perennial spring.
+  * At each, settlement in the scroll's period sat off the mound.
+  * Each has a Bronze Age shaft-tomb field directly north of the tell: Kenyon's EB IV shafts at Jericho, and the Dhahr Mirzbaneh IB shafts ~0.6 km NNE of Kh. el-Marjama.
+- What can tell them apart: the pool east of Kohlit (entry 11), the great cistern (entry 15), and the period layers on the mound itself.
+  * Pool: Jericho has a cornered pool of hewn stone at the east foot of the tell. Its date is unproven, but a Roman nymphaeum is attested at the spring. At Ein Samiya the spring and its tank lie southwest of the tell, so "east" fails unless Kallai's undated rock-cut pool turns out to lie east.
+  * Cistern: neither site has a documented great cistern. Puech's "large cistern to the north" has no archaeological reference.
+- Correction for the registry (T03/T04):
+  * The Second Temple Jewish cemetery at Jericho (Hachlili; Mughr el-Maqrabanna) lies west to southwest of the tell, 0.6-1.6 km away, not north.
+  * The ground north of the tell holds Kenyon's EB IV shaft field. Some Roman-period tombs are also reported there, but their exact positions are not seen. The area is now largely built over by Ein es-Sultan camp.
+  * Early Roman houses or a villa lie 1-1.7 km north and northeast of the tell.
+
+1. WHAT THE SCROLL REQUIRES (wording checked in shared/entries.md)
+F1 (entry 4, I 9): "In the tel of Kohlit." A tel is a mound of debris, a tell (Lefkovits 2000 p.74).
+F2-F3 (entry 4, I 11-12): "Its opening is at the edge of the conduit (amma), on the north, six cubits as far as the rock cleft of the immersion." Eshel reads "crevice (used) for ritual baths" (Copper Scroll Studies p.106).
+F4 (entry 11, II 13-14): "In the pool that is EAST of Kohlit, in the northern corner." So the pool has corners.
+F5 (entry 15, IV 1-2): "In the great cistern that is in [Ko]hlit, in the pillar on its north side." Kohlit is restored here; Puech reads "the great cistern to the north" (2006 p.174).
+F6 (entry 19, IV 11-12): "In the eastern pit that is north of Kohlit." So there are at least two pits.
+F7 (entry 60, XII 10-11): "In the pit on the north side of Kohlit, its opening to the north (or 'hidden'), with tombs (or 'buried') at its mouth."
+F8-F9: Hellenistic-Early Roman occupation; Jewish presence.
+F10-F11 (context): "Kohalit in the desert" (b. Qid. 66a); a surviving name with the root k-h-l.
+
+2. FEATURE MATRIX (full cells with sources in data/feature_matrix.csv and .json)
+Status key: D = present and dated in period; U = present but undated or out of period; P = partial or contradicting; A = absent in the sources read; ? = not covered.
+Columns: Tell es-Sultan | Ein Samiya/Marjama | Tell Muhalhil | Beit Kahil | Kh. Quhlet | Mt Zion
+F1 tel             D | U | P | A | ? | A
+F2 conduit         U | U | ? | ? | ? | ?
+F3 immersion       A | A | ? | ? | ? | ?
+F4 pool east       U | P | ? | A | ? | ?
+F5 great cistern   A | P | ? | ? | ? | ?
+F6 pits N          U | U | ? | P | ? | ?
+F7 pit N + tombs   P | P | ? | ? | ? | ?
+F8 Hel-ER occ.     P | P | ? | ? | ? | ?
+F9 Jewish          D | D | ? | ? | ? | ?
+F10 desert         P | U | U | A | P | A
+F11 k-h-l name     A | U | P | U | U | A
+Weighted score /12.5: 6.75 | 5.95 | 1.05 | 0.75 | 0.45 | 0.00
+Weights: tel 2, pool 2, pits north 1.5, pit with tombs 1.5, occupation 1.5, conduit 1, Jewish presence 1, the rest 0.5. Cell values: D = 1, U = 0.6, P = 0.3, A and ? = 0.
+Sensitivity (scripts/build_matrix.py):
+- Without the contextual criteria F10-F11: 6.60 vs 5.35.
+- With the pool weight cut to 1 and desert/name raised to 1.5: Ein Samiya 6.85 vs Tell es-Sultan 6.45.
+
+3. TELL ES-SULTAN (Puech's hypothesis)
+EVIDENCE
+- Tell: 40 dunams and multi-period (Nigro 2011 p.146).
+  * Hellenistic period: "scattered materials", stamp-seal impressions and pottery.
+  * Roman period: "architectural remains, wine-presses", plus tombs and graves "both on the tell and in the nearby necropolis (among which loculi, kokhim and grave-arcosolium)", with ossuaries, wooden coffins and a Greek inscription (p.152, citing Kenyon 1965:516-545; 1981:17, 113, 121, 173-174, 178, 219).
+  * Narrative: in the Hellenistic period the tell is "no more than occasionally frequented"; in the Roman period it "apparently hosted some architectures, installations and tombs" (p.30). The introduction also counts Tell es-Sultan among Hasmonean-era rural villages (p.18).
+- Spring and pool (entry 11):
+  * SWP Memoirs III (1883) pp.222-223: "The spring (Elisha's fountain) comes out beneath the mound on the east, and has on the west a wall of small masonry in hard cement. In this wall there is a small semicircular niche, facing east, probably intended to hold a statue ... The water comes out ... into a shallow reservoir, 24 feet by 40 feet, of hewn stones, well dressed ... The stream is conducted from thence by various channels."
+  * Nigro 2011 pp.110-112 (cat. 21) lists a Roman-period "nympheum" at the spring, a pool for the Ottoman period and a roofed pool today. The spring's catalogue point is ~100 m SSE of the tell's point (data/geometry.csv).
+  * The spring is very steady: Qmin:Qmax = 1:1.4 (Garbrecht & Peleg, BA 57 (1994) p.163).
+- Conduits (entry 4), none dated:
+  * An aqueduct from Ain es-Sultan joined the Auja line at Kh. el-Mefjir, with water carried "through pipes like those of the high level aqueduct in Wady Kelt". A fourth aqueduct ran south to Rujm el-Mogheifir; its bridge has a "modern appearance" (SWP III pp.206-207).
+  * A Byzantine aqueduct runs by the tell (Nigro 2011 p.153, cat. 86).
+  * Hamamrah says in general terms that Hellenistic-Roman aqueducts drew water from Ain es-Sultan (Nigro 2011 p.306).
+- Immersion: none at the tell in the sources read.
+  * The nearest Hasmonean miqveh is in the synagogue complex at Tulul Abu el-Alayiq, ~2 km south (Netzer, NEAEHL 5 (2008) p.1799).
+  * A small three-step cistern (2.88 x 2.70 x 1.42 m) lies in an Early Roman stratum at Jiser Abu Ghabush, ~3 km north (Taha in Nigro 2011 p.273).
+- Great cistern: none recorded in the Nigro catalogue or SWP. Puech lists "une grande citerne au nord (15)" without a source (2006 pp.174-175 n.49; 2015 p.13 n.49).
+- Pits and tombs to the north (entries 19, 60):
+  * More than 400 EB IV shaft tombs were cut "in the limestone plateau north of the tell" (Nigro 2011 p.11, citing Kenyon 1960; 1965). Garstang's necropolis lay "west and north-west of the tell" (p.68).
+  * The necropolis is "partly destroyed/cleared off, partly concealed under modern edification and modern debris" (p.146).
+  * North of the tell lie the ruins called Khurbet Ras el-Ain, with a Byzantine capital (SWP III p.223).
+  * Puech: "sepulchres of the type of those of the great cemetery of Khirbet Qumran are known from the northern side of Tell el-Sultan", citing Kenyon 1981 pp.173-174 (Puech 2015 p.13 n.49; I have not seen Kenyon).
+  * Caves 1.5-3 km to the NW at Jebel Abu Saraj were used in the Hasmonean period: two Jannaeus coins and a Hasmonean coin in cave IV/1, and a "Hasmonean Cave" (IV/8) (Sion, Atiqot 41 (2002) pp.46-47; Index pp.257-258).
+- Period settlement around the tell:
+  * A Roman villa "investigated in 1998 by MOTA-DACH in the place of the police station in the refugee camp north of Tell es-Sultan" (Nigro 2011 p.20).
+  * A 1st-c. CE domestic unit with a bath at Suwwanet eth-Thaniya (Police College), "one and a half kilometres north" (Taha pp.278-280).
+  * "Another site located 1 km north of Tell es-Sultan, close to Palestinian Police Academy" (Hamamrah p.315). These may be one site or two; the sources disagree.
+  * The Herodian hippodrome at Tell es-Samarat, ~0.6-0.9 km SSW (Hamamrah p.315; geometry.csv).
+- Jewish presence:
+  * The Hachlili cemetery (mid-1st c. BCE to 1st c. CE) is west to southwest of the tell: 0.6 km W by Nigro's point (pp.131-132), 1.6 km SW by the WBADB grid (p.70 no.343). It lies along "the lowest part of the cliffs between Nuseib Uweishira and Jebel Quruntul" (Hamamrah p.315).
+  * An eth-Thiniya arcosolium tomb with 10 ossuaries (two with Greek inscriptions) and a wooden coffin lies west of the tell (Taha p.285).
+  * A Hasmonean synagogue with a miqveh stood at the palaces (NEAEHL 5 pp.1798-1799).
+INFERENCE
+- Pool (medium): the hewn-stone reservoir at the east foot of the tell is the best physical match to entry 11 at any candidate. It is a cornered basin directly east of a tell, with a Roman nymphaeum phase attested at the same spring. The match fails if the basin proves Ottoman.
+- Shafts and tombs (medium): the many shafts north of the tell, with tombs among them, fit entries 19 and 60 as a class. The tombs at a pit's mouth could be Bronze Age tombs, or Roman reuse if Kenyon 1965 places Roman tombs there.
+- Weaknesses (high):
+  * No dated period structure on the tell matches entries 4 or 15.
+  * No great cistern is known.
+  * There is no k-h-l name, and the oasis setting fits "in the desert" poorly.
+  * Zissu's objection stands: the name Jericho survived at the site (Zissu 2001 p.149).
+
+4. EIN SAMIYA / KH. EL-MARJAMA (Zissu's hypothesis)
+EVIDENCE
+- Valley: 1 km x 350 m. The spring flows at ~300 m3/h. Its water has been used "from ancient times until the present by means of a network of canals and pools" (Zissu 2001 p.150). The valley sits in a semi-arid strip between the Jordan valley and the watershed (p.150). Wadi Kuheila appears on the 1941 1:20,000 sheet 15-18 (pp.150, 153 fig.3); on the sheet it runs east of Kh. el-Marjama.
+- Kh. el-Marjama (the tell):
+  * Over 30 dunams, settled through the Bronze and Iron Ages (Iron Age fortified town). "The spot was settled during the Hellenistic, Roman and Byzantine periods as well." A Byzantine church stands at its foot (p.151).
+  * Kallai records "a rock-cut pool next to aqueducts and additional water installations near the tell". Zohar notes "a water reservoir that kept the water out of Ein Samiya spring" (p.151, citing Kallai 1971; 1972 site 65; Zohar 1980).
+  * Zissu concludes the tell was "maybe still settled during the Second Temple period" (p.155).
+  * WBADB lists major periods EB2-3 to IA2 and Byzantine, with Hellenistic and Roman only as other (minor) periods (Greenberg & Keinan 2009 p.56 no.213).
+- Kh. Samiya (the period settlement), ~0.4 km SSE of the tell:
+  * Ashlar buildings and rock-cut caves, Roman and Byzantine (Zissu pp.152, 154). Kallai: from the Roman period the settlement "descended" from the tell (p.154).
+  * Yeivin recorded 16 Roman and Byzantine tombs, including kokhim; Lyon (1908) reported Jewish kokhim.
+  * Baramki's Tomb 1 (1942, unpublished file ATQ/895) is a kokhim tomb with Roman pottery, a lamp and ossuary fragments, entered through its east wall. Zissu dates it Early Roman and counts it as Jewish (p.155).
+  * WBADB no.215 records three Roman-Byzantine burial caves with ossuary fragments; its major periods are bracketed [Late Roman, Byzantine...] (p.56).
+- Spring and tank: SWP Memoirs II (1882) p.394: "A copious spring issues on the north-west side of the valley from a strongly-built wall forming a tank. A fragment of a column and some drafted stones are built into this wall." Guerin adds a vaulted spring chamber and "a great many grottoes" cut in the slopes. On Zissu's fig. 2 (p.152) and the 1941 map (p.153), the spring lies SOUTH/SOUTHWEST of Kh. el-Marjama and north/northwest of Kh. Samiya.
+- Aqueduct: "There is an aqueduct at Ein Samiya" (Eshel, Copper Scroll Studies (2002) p.106 n.35). No date is given.
+- Pits to the north:
+  * Dhahr Mirzbaneh (WBADB p.55 no.209), ~585 m NNE of the tell: an "IB site above large cemetery" with "hundreds of burial caves" (Zissu p.151). Graveyard symbols cover the ridge north of the tell on fig. 2.
+  * More IB shaft-tomb fields lie south of the tell (no.217, ~0.7 km) and ESE (no.214, "about 60 tombs", ~1 km) (geometry.csv).
+INFERENCE
+- Strengths: a tell, a major spring with pools, aqueducts and a reservoir (all undated), a shaft-tomb field directly north, Early Roman Jewish burial, a desert-margin setting, and a k-h-l name nearby. (medium)
+- Weaknesses (medium):
+  * The only spring tank recorded is not east of the tell.
+  * The pool's direction is unknown.
+  * Period occupation of the tell is only "maybe".
+  * The Early Roman Jewish evidence is one unpublished tomb plus survey notes.
+  * The period settlement (Kh. Samiya) is not itself a tell. Read literally, entry 4's "tel of Kohlit" points to Kh. el-Marjama, so entry 11's pool would have to lie east of Marjama.
+  * The site is ~17 km NW of Tell es-Sultan (WBADB grids). Puech calls the identification "no more persuasive in the sequence of place-names" and rejects its textual premise, the reading Yanoah (2015 p.31 n.103).
+- Lead (popular source, unverified): BibleWalks reports a refuge cave in Wadi Samiya ~500 m north of the spring, used in 66-73 and 132-136 CE. A scholarly report exists of a "Leopards Cave" in SE Samaria with Persian-Hellenistic and Revolt-period finds (Raviv et al., JSRS 25/2 (2016) 241-277; Orion record only). I could not confirm that it is the same cave.
+
+5. OTHER CANDIDATES (as far as sources allow)
+- Tell Muhalhil near Nebi Musa (Lurie 1963): Bar-Adon's 1968 survey (1972:118, site 83) found only "a small structure (3.5 x 2.5 m)". Zissu concludes the only link is "the phonetic similarity" (Zissu p.148). The Nigro catalogue does not list the site, and gives Nebi Musa only Middle/Late Islamic and Ottoman periods (p.130). No spring, pool, cistern or tombs are reported.
+- Beit Kahil, 7 km NW of Hebron: SWP III p.303: "A small village on a ridge ... with a well to the south. Apparently an ancient place, with rock-cut tombs." No tell, spring or pool is recorded, and it is not in the desert. Milik lists it, with Kh. Kuhlah, among earlier "essais d'identification peu satisfaisants" before he proposes the Carmel (DJD III p.274 n.71). Zissu (p.148) attributes the two to Milik.
+- Kh. Quhlet / Kuhlah NE of Beersheba: no archaeological description found. Only the name supports it.
+- Mount Zion (Pixner 1983): Pixner treats "tel" as a term for a community gathering place, at the Greek Orthodox cemetery (Zissu p.148). Goranson finds a tell inside such a centre implausible (Copper Scroll Studies p.228). The site is not a tell, not in the desert and has no k-h-l name. Pixner's own data are not seen.
+- Not in the brief, for completeness: the Tubingen atlas places Kohlit between Ein el-Ghuweir and Ein et-Turabeh. Puech objects that there is "manifestly no tell nor abundance of freshwater" there (2015 p.14 n.49).
+
+6. RANKED COMPARISON
+1. Tell es-Sultan (low-medium). It is the best match on the two heaviest physical requirements: a tell, and a cornered pool directly east of it fed by a perennial spring. It also has a north shaft field with tombs, and dense Second Temple Jewish activity all around. Against it: thin period occupation on the mound, no great cistern, no immersion feature, no k-h-l name, and an oasis rather than desert setting.
+2. Ein Samiya / Kh. el-Marjama (low-medium). It matches the tell, the water works and the north shafts equally well. It is better on desert setting and name. It is worse on pool direction, on dated period remains and on Jewish evidence. It depends on a textual premise (Yanoah) that Puech and the repo's plate check reject.
+3-6. Tell Muhalhil, Beit Kahil, Kh. Quhlet, Mount Zion. None has the data to test. The small score differences among them are not meaningful.
+Tension with wave 1 (INFERENCE): wave 1's text and order results (b. Qid. 66a "in the desert"; T06 pulling Kohlit north) favour a northern desert Kohlit, which suits Ein Samiya. This archaeology neither overturns that nor confirms Ein Samiya. Kohlit stays open between these two.
+
+7. OBSERVATIONS THAT WOULD SEPARATE THE TOP TWO (data/discriminators.csv)
+1. Date and plan of the Ain es-Sultan reservoir (24 x 40 ft, with the cemented west wall and niche). If it is Herodian or Early Roman, entry 11 strongly favours Jericho; if Ottoman, Jericho's best match disappears. Sources: Warren 1869; Dorrell, PEQ 125 (1993) 95-114; Sellin-Watzinger 1913; Quaderni di Gerico 1-2.
+2. Bearing and date of Kallai's rock-cut pool at Kh. el-Marjama. If it is east of the tell and Roman or earlier, the pool criterion swings to Ein Samiya. Sources: Kallai 1972 pp.172-173 (sites 65-66); Finkelstein et al. 1997 pp.732-733.
+3. A pillared great cistern (entry 15) at either site. Sources: Zohar, IEJ 30 (1980) 219-220; HA 76 (1981) 19; Kenyon 1981.
+4. Hellenistic-Early Roman layers on each mound. Sources: Kenyon 1981 and Kenyon-Holland 1982 pp.537-545, versus Mazar, IEJ 45 (1995) 85-117.
+5. Roman tombs at the mouth of a northern Bronze Age shaft. Sources: Kenyon 1965 pp.516-545 and 1981 pp.173-174, versus Lapp 1966, Dever (IEJ 22, 1972) and Finkelstein (EI 21, 1990) for Dhahr Mirzbaneh.
+6. A rock-cut immersion installation beside a conduit at the north edge of either mound.
+7. Pre-Mandate attestation of the name Wadi Kuheila. Sources: SWP sheet XV and Palmer's Name Lists; Elitzur 2004, which is an image-only PDF and needs OCR.
+
+8. ACCESS AND LIMITS
+- Read: Zissu 2001, page map verified. Nigro 2011, including the catalogue and appendices A and B. WBADB sourcebook, downloaded from the user's Drive. SWP Memoirs II-III, from archive.org text. Puech 2006 and 2015, Milik, Lefkovits and Copper Scroll Studies, via the W2A text extractions. NEAEHL vol. 5 (the only volume present). Atiqot 41. Garbrecht & Peleg 1994. Netzer final report vol. I, which has no Tell es-Sultan water data.
+- Blocked or not seen:
+  * Kenyon's Jericho II-III: archive.org lending only; search-inside returned "Item not available".
+  * Paywalled or not held: Mazar 1995, Zohar 1980, Kallai 1971/1972, Yeivin (HA 36-37), Dever 1972, Lapp 1966, Finkelstein 1990, Dorrell 1993, Bar-Adon 1972, Lurie 1963, Pixner 1983, Hachlili & Killebrew 1999.
+  * NEAEHL vols 1-3 (Ein Samiya vol.1 p.378; Jericho vol.2 pp.674-697; Marjameh vol.3 pp.965-966) are not in the library. The Drive "Volume 1-4" PDFs turned out to be Porten & Yardeni's Aramaic Ostraca from Idumea.
+- Drive files too large to fetch (coordinator could copy): ESI 2, 5, 6 and 7-8 (7-8 pp.149-150 cover el-Qasr at Ein Samiya); Amit, Hirschfeld & Patrich, Ancient Aqueducts (Hebrew, possibly Jericho aqueducts); MAGEN-SITEDESCRIPTION-2018 (content unknown).
+- Coordinate caveat: coordinates come from catalogue points (Nigro) and the old Israel Grid (WBADB). Bearings at the 100 m scale, such as the spring relative to the tell, are approximate. SWP's description ("beneath the mound on the east") is the better guide.
+
+FILES (all under results2/W2C_kohlit_archaeology/)
+- data/feature_matrix.csv and .json: every cell with status, evidence, sources/pages, source thoroughness and confidence.
+- data/scores.csv; data/geometry.csv, with distances and bearings from published coordinates.
+- data/discriminators.csv; data/sources_access.csv.
+- scripts/build_matrix.py, scripts/geometry.py: run with python3 -I.
+- img/ holds crops of Zissu's figs 2-3. text/ holds the extracted texts; dl/ holds downloads (WBADB, SWP, Atiqot 41).

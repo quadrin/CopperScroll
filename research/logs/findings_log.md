@@ -3,6 +3,16 @@
 Current headline counters are [identification outcomes and coverage](https://github.com/quadrin/CopperScroll/blob/main/research/PROGRESS_METRICS.md). The following cycle/source totals are activity history; their growth does not establish stronger candidate identification.
 
 
+## Parallel-agent review — 6–7 October 2026, Los Angeles
+
+Two waves of parallel agents (9 + 7) ran a 19-task program; see [the review](../agent_review_2026-10-07/README.md), [wave 2 synthesis](../agent_review_2026-10-07/wave2/SUMMARY.md) and [goals](../agent_review_2026-10-07/GOALS.md). **No identification, confidence, coordinate, decisive test, question closure or outcome-ledger increment.**
+- **Koḥlit (R07):** b. Qid. 66a "Koḥalit in the desert" is an old link (Allegro MS via Lefkovits p. 73; Milik DJD III p. 274, dismissed; Lurie; Lefkovits p. 75 n. 10; Zissu 2001 pp. 146–149). Every Talmud witness checked spells כוחלית. No examiner of the original reads "Janoaḥ" at XII 10 (Milik DJD III p. 298; Wolters CSS p. 319; Puech 2006 p. 206); on Lefkovits p. 425 the pit is *at* Janoaḥ (target Kh. Yanun). Feature matrix: Tell es-Sultan 6.75 vs ʿEin Samiya 5.95/12.5, weight-dependent. Milik's own Koḥlit was the Carmel (DJD III pp. 274–275); Jericho's Second Temple cemetery lies W–SW of the tell, not north.
+- **Order (R10):** the wave-1 joint model's pull of entry 60 away from Tell es-Sultan is a kernel-normalisation artifact (density-neutral: 0.28 vs prior 0.30). The order places districts, not sites.
+- **Greek letters (R11):** CIIP I, III–V add only ΔΙ parallels (Hippos quarry mark V 6760; theatre seat I 771b) and a disputed ΤΡ weight (I 666). A pre-registered Ilan base-rate test undercuts "initials of ordinary persons". Still ≤2/7.
+- **Inventory (R12):** the amounts look like genuine inventories on roundness and the absence of myriads, and legendary on the lack of fractions. The 1–19 vs 20–56 roundness difference is explained by word vs sign notation (p = 0.0004; within notation p = 0.36).
+- **Plates (R06):** a pre-registered letter model on the Puech 2006 copy photos passes only ו/ר, marginally and unstably; it gives no usable evidence at X 15. RTI/3D is needed.
+
+
 ## Cycle7 — 2 October 2026, Los Angeles
 
 Hyrcania’s northern-basin inlet remains independently unidentified; northern summit branch supplies eastern cisterns. Puech Koḥlit pp13–14/n49 directly read: contextual restoration and regional alternatives stay separate, with no specific pool entrance. Pool east-of-site and northern corner have different directional anchors. Sartaba reference corrected to earlier lecture collection, not supplied1989 pp24–26; correction adds no research count. One source target and two bounded checks added; totals29/5/31/0decisive/ 0 closures, three conditional assessments unchanged. [Reports](../measurements/cycle7/README.md).

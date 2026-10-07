@@ -1,0 +1,20 @@
+kind,item,content,source,label,confidence_if_inference
+attestation,b. Qiddushin 66a,"מַעֲשֶׂה בִּינַאי הַמֶּלֶךְ שֶׁהָלַךְ לְכוּחְלִית שֶׁבַּמִּדְבָּר, וְכִיבֵּשׁ שָׁם שִׁשִּׁים כְּרַכִּים — King Yannai 'went to Koḥalit in the desert and conquered sixty cities there'",https://www.sefaria.org/api/texts/Kiddushin.66a,EVIDENCE,
+attestation,m. Parah 11:7,"אֵזוֹב כּוֹחֲלִית ('Koḥalit hyssop', invalid for the rite) — gives no location",https://www.sefaria.org/api/texts/Mishnah_Parah.11.7,EVIDENCE,
+context,Høgenhaven 2016 p. 72,Koḥlit is 'det hyppigst forekommende toponym i 3Q15' (the most frequent toponym in 3Q15),DTT 79 (2016) p. 72,EVIDENCE,
+context,Høgenhaven 2016 p. 72,'Ved de første to besøg passeres Kohlit på vejen såvel derhen som derfra; dette sted synes at fungere som slags base eller tilflugtssted uden for Jerusalem' (on the first two visits Kohlit is passed going and returning; it seems to function as a base or refuge outside Jerusalem),DTT 79 (2016) p. 72,EVIDENCE,
+context,Høgenhaven 2016 p. 70,"'Ved at være repræsenteret gennem bogrullen i det sidste gemmested, der beskrives, bliver visdommen på en måde det endelige eller ultimative mål for adressatens lange søgen' (symbolic reading of the final deposit)",DTT 79 (2016) p. 70,EVIDENCE,
+context,repo sequence study,All five Koḥlit entries say 'north' (hypergeometric p = 1.3e-4); north occurs in 6 of 7 Koḥlit/ha-Melaḥ entries in 1–19 vs 0 of 13 others (Fisher p = 1.8e-4),repo research_text_deeper_analysis_2026-09-30.md §2.1,EVIDENCE,
+context,repo cycle7 qualification,"each 'north' attaches to its own anchor (conduit edge, pool corner, cistern pillar); only 19 and 60 put a feature north of Koḥlit",downloads/research_measurements_cycle7_kohlit_pool.md,EVIDENCE,
+inference,joint constraints,"Koḥlit must combine: a tell/ruin-mound (4), a conduit with an opening 6 c. from an immersion cleft/frigidarium (4), a cornered pool east (11), possibly a great cistern with a pillar (15, restored), ≥2 pits north (19), tombs at one pit's mouth (60 unless 'buried')",this registry,INFERENCE,medium
+inference,entry 19 + 60,entry 60's pit is plausibly the non-eastern member of entry 19's pit group; one survey of the north sector scores P19-A and P60-T1 together,this registry,INFERENCE,low-medium
+inference,reading branches,"'north' vs 'hidden' (צפון) and 'tombs' vs 'buried' (קברין) change the physical target; registry scores RB-M, RB-P, RB-L, RB-B separately",this registry,INFERENCE,high
+inference,already-failed matches,"recorded features already fail for entry 9 (no cistern 8.5–10 m from the Golden Gate on Warren's plan), 29/Hyrcania (pool sides 15–19 m vs 10.7–12.6 m), 46 (known pool buried before the period): only new observations can confirm these","this registry, from repo files",INFERENCE,high
+access,tandfonline (Zissu PEQ 2001),HTTP 403; not retrieved by other means,https://www.tandfonline.com/doi/abs/10.1179/peq.2001.133.2.145,,
+access,he.wikipedia.org,cache-only domain; not fetched,https://he.wikipedia.org/wiki/מגילת_הנחושת,,
+access,hamichlol.org.il,robots.txt disallowed,https://www.hamichlol.org.il/מסכת_כלים_(כלי_המקדש),,
+access,archive.org Lefkovits 2000 / Allegro 1960,lending-restricted items; search-inside returned 'Item not available'; not pursued,"archive.org items copperscroll3q150000lefk, treasureofcopper0000alle",,
+access,revistas.uam.es (Jericho necropolis article),bot wall (Anubis),https://revistas.uam.es/isimu/article/download/3701/3939/7228,,
+access,Times of Israel blog (Glick),article body not served to the fetcher,https://blogs.timesofisrael.com/kahlat-and-the-hidden-archive-of-section-60-jordan-river-and-copper-scroll/,,
+access,BAS Library (McCarter 1992),paywalled,https://library.biblicalarchaeology.org/article/the-mysterious-copper-scroll,,
+not read,key primary sources,"Milik DJD III pp. 274–275, 280–281; Puech 2015 pp. 13–14 n. 49 (only via repo); Goranson 1992/2002; Pixner RevQ 11 (1983); Gibson EI 36; Kenyon's Jericho tomb publications; Hachlili & Killebrew PEQ 115 (1983) 109–139 and IAA Reports 7 (1999)",,,

@@ -1,0 +1,19 @@
+{
+ "stated_before_scoring": "2026-10-06 (written before scripts/score.py was first run)",
+ "unit_of_analysis": "each scored hoard record (scope 'in' or 'edge', in period c. 200 BCE-136 CE) x each of the 61 entries",
+ "components": {
+  "R_region_0_3": "d = great-circle km from record point to each candidate site of the entry (atlas places.json); cp = candidate radius (precision string: '~150 m' -> 0.15 km; 'area ~N km' -> N/2 km); rp = record radius. R=3 if d <= max(0.25, cp) + rp AND rp <= 0.5; R=2 if d <= 3 + cp + rp; R=1 if d <= 20 + cp + rp; else 0. Max over candidates. Candidates without coordinates use stated anchors: jer_shaveh -> Temple Mount point r=3 km; tekoa_herodium -> Herodium (CHRE 7631) r=4 km; jordan_ford -> atlas jericho_area r=5 km. Records without coordinates (H18): R=1 if the entry has a Jericho-region candidate, else 0. Entry 41 (no candidates): R=0.",
+  "L_landmark_0_2": "primary classes only (positional words threshold/corner/wall/pillar/steps/stone are scored under P). L=2 if record and entry share a specific primary class; generic classes {building, court, natural, valley, field} give at most 1; L=1 if they share a family: water {cistern, pit, pool, reservoir, basin, conduit, outlet, spring, pool_adjacent}; underground {cave, fissure, chamber, dovecote, pit}; burial {tomb, monument}; built {court, building, fortress, street}; open {cairn, valley, field, road, mound, ruin, rock, natural}. 'unknown' scores 0.",
+  "C_container_0_2": "entry containers from Hebrew: chest (שדה/שדת), jar (כדין, קלל), pot (דודין), juglet (כוזין). Exact class (chest<->box/pyxis, jar<->jar, pot<->pot, juglet<->juglet) = 2; other closed vessel (jar/pot/juglet/moneybox/box/bowl/lamp/basket vs a different entry container) = 1; no entry container or no record container = 0.",
+  "K_contents_0_2": "silver<->silver coins/bullion = 2; gold<->gold = 2; vessels<->metal vessels = 2; scroll/record<->scrolls = 2; staters<->silver coins = 2; ingots<->silver bullion = 1; amount with unspecified metal<->silver or gold = 1; bronze coins match nothing (0); max over pairs.",
+  "P_position_0_2": "+1 if a structural cue is shared (corner, under_stone, threshold, floor, wall, upper_storey, pillar, steps); +1 more if, in addition, a compass side is shared; +1 if both depths known and record depth / (entry cubits x 0.5 m) within 0.67-1.5. Cap 2.",
+  "D_date_0_1": "1 if the record's terminal coin date (terminus post quem) <= 70 CE (compatible with a scroll deposited by c. 68 CE); 0 if later (compatible only with late-date hypotheses).",
+  "total": "S = R+L+C+K+P+D, max 12"
+ },
+ "thresholds": {
+  "notable": "S >= 7",
+  "worth_testing": "S >= 9 AND R = 3 AND L >= 1 AND (C = 2 OR K = 2) AND D = 1"
+ },
+ "quantity_check_not_scored": "entry amount (project English numerals) as mass: talent = 21.3 kg (Lefkovits 2000 p. 473 convention as reported in the repo's inventory_scope_2026-10-06.md); karsh = 10 shekels = 71 g (7.1 g shekel) with an alternative 142 g (14.2 g Tyrian-standard shekel, INFERENCE); karsh applies only to the abbreviated ככ form. Ratio = record mid-mass / entry mass; 'compatible' if 1/3 <= ratio <= 3.",
+ "coincidence_test": "permute record locations (lat, lon, prec_km) among scored records 2,000 times (seed 20261006); compare observed count of pairs S>=7, max S, and count of 'worth_testing' pairs with the null distribution; also report per-record specificity (number of entries tied at the record's best score)."
+}

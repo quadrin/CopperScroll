@@ -2,6 +2,16 @@
 
 Updated6October2026UTC /6OctoberLosAngeles. The user supplied the exact ESI5 original and requested immediate sharing of any inaccessible link; that standing rule is recorded in AGENTS.md. **The complete Wadi report is inspected; individual bath states and phase-specific water contacts remain not identifiable from available evidence.** The selected-source regional inventory is complete, with regional eligibility/discrimination unresolved. The Siloam request remains sent; delivery and a reply are unverified. No confirmatory freeze or unused prediction is claimed. Landmark identification, treasure burial and copper copying/deposition remain separate claims.
 
+## Parallel-agent review — 7 October 2026 (no change to the current test)
+
+A two-wave agent review is recorded in [agent_review_2026-10-07](agent_review_2026-10-07/README.md) with [goals](agent_review_2026-10-07/GOALS.md). It adds no outcome-ledger increment and leaves the Wadi/Jericho/Siloam actions below unchanged. For Koḥlit (R07), the discriminating observations are:
+1. high-resolution imaging of XII 10 at the segment 21/22 cut;
+2. a date for the ʿAin es-Sultan reservoir (Dorrell 1993; Warren 1869);
+3. the bearing and date of Kallai's rock-cut pool at Kh. el-Marjama;
+4. Kenyon 1965/1981 on Roman tombs north of the tell.
+
+Before any further order-based inference, the wave-1 order kernel must be replaced by a density-neutral one.
+
 ## Closed Wadi original-report coverage check
 
 [Current original review and historical access audit](assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.md), [structured observations and null gates](assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.json): the supplied134-page ESI5 verifies Dinur–Feig printed110–111/PDF118–119 and Fig.56. The1986 cover designation,1987 printing and June1987 preface resolve the volume-year distinction. The official Hadashot partIIp36 locator remains an unverified metadata crosswalk, without blocking inspection of the identified report. The earlier403 remains access history.

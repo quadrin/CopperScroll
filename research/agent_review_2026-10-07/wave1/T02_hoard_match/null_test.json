@@ -1,0 +1,20 @@
+{
+ "n_records_scored": 63,
+ "n_entries": 61,
+ "n_pairs": 3843,
+ "observed": {
+  "pairs_S_ge_7": 14,
+  "max_S": 9,
+  "worth_testing_pairs": 0,
+  "pairs_R3_and_L+C+K>=4": 0
+ },
+ "null_permutations": 2000,
+ "p_values": {
+  "pairs_S_ge_7": 0.3988005997001499,
+  "max_S": 0.19540229885057472,
+  "worth_testing_pairs": 1.0,
+  "pairs_R3_and_L+C+K>=4": 1.0
+ },
+ "null_pairs_S_ge_7_median": 12,
+ "null_pairs_S_ge_7_95pct": 21
+}

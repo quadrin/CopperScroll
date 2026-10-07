@@ -1,0 +1,214 @@
+W2-F: LETTER-PAIR BASELINE ON THE PUECH 2006 PLATES (3Q15)
+Agent report, 6-7 October 2026. Every number below comes from files in this folder. Nobody was contacted and no browser was used.
+Plate images and crops stay in this folder; do not redistribute them. (REPORT.md was refused by the tool, so this is REPORT.txt.)
+
+BOTTOM LINE
+- The plates support a weak letter model at best, and not one that can settle any disputed reading.
+- Of the 4 pre-registered pairs, only waw/resh (ו/ר) passed the gate (balanced accuracy >= 0.85 and permutation p < 0.01).
+  - Its balanced accuracy (BA) is 0.854, with p = 0.001 and AUC 0.95.
+  - It passed by a hair: the 95% CI is 0.80-0.91.
+  - The pass depends on window centres taken from Puech's facsimile. With a centring error of 0.1 letter-height, BA falls to 0.75-0.84 (mean 0.81).
+- het/tav (ח/ת) at 0.80 and bet/kaf (ב/כ) at 0.65 show real but insufficient signal (p = 0.001). het/he (ח/ה) is at chance: 0.53, p = 0.34.
+- At the disputed letter X 15, the passing model gives no usable evidence.
+  - At the centre fixed in advance it gives P(resh) = 0.11 raw, or 0.27 after Platt calibration.
+  - Shifting the window by +-0.1 H moves it anywhere from 0.05 to 0.99, and 6 of the 9 positions favour resh.
+  - By construction, the model also cannot tell waw from a waw-like cursive resh.
+- The other disputed letters (VII 11, XI 12, XII 10, VII 14) are "not identifiable by this model".
+- A blind by-eye test by the same AI model on the same crops matched this pattern: waw/resh 12/16 correct; the other three pairs 7-8/16, i.e. chance.
+- The bottleneck is imaging, not modelling. The plates are 150-dpi, JPEG-compressed, single-light photographs of a cast, at 42-74 px per letter height.
+
+1. PLATES: SOURCES, INDEX, RESOLUTION
+Two PDF scans of Puech 2006, vol. II, both with the same pixel dimensions per plate:
+- "A", the French-edition PDF: first-generation CMYK JPEGs. Their Adobe CMYK inversion was corrected.
+- "B", the Poffet copy: an RGB re-encode of the same pixels.
+  - It correlates r = 0.94-0.97 with A.
+  - It has 10-30% less high-frequency energy.
+  - Its JPEG quantisation is the same: table mean about 42, i.e. heavy compression (data/scan_comparison.json).
+A was used throughout. Plates were extracted with `pdfimages -all`, at native resolution with no resampling.
+
+Index: data/plate_index.csv, 85 images.
+- Radiographs of the original segments: plates CCCXXXIII-CCCLVI, PDF A pp. 654-677, two plates per column with 1-4 images each.
+  - The captions give segment exposures. Examples: col. X = "18, 18G, 18C" (CCCLI) and "18D, 17C" (CCCLII); col. XII = "23, 22G" (CCCLV) and "22C, 22D, 21" (CCCLVI).
+  - All captions are in the CSV.
+- Colour photos of the galvanoplastic copy:
+  - CCCLVII (start of scroll), p. 680;
+  - CCCLIX-CCCLXXXI odd (cols. I-XII), pp. 682-704 even, each 1343-1468 x 1732-1857 px.
+- Puech's facsimiles: CCCLVIII and CCCLX-CCCLXXXII even (pp. 681-705 odd).
+  - They are line drawings traced on the copy photo.
+  - Each registers onto the copy with a single affine transform (ECC 0.42-0.51; data/registration.json).
+- Overview of the copy: CCCLXXXIII, p. 706.
+
+Resolution:
+- Copy photos: 42-74 px per letter height.
+  - Measured as the median drawn height of verified full-height letters: col. XII 42; cols. IX-XI 52-56; cols. I-VIII 61-74.
+  - That is roughly 50-70 px/cm on the object.
+- Radiographs:
+  - Vertical line spacing is about the same as on the copy (0.9-1.1x).
+  - Horizontal foreshortening varies because the segments are curved; e.g. CCCLI image 1 is about 0.67x horizontally.
+  - Automatic estimates are in the CSV; 5 are flagged doubtful.
+- Rigid registration of the radiographs onto the copy failed (scores 0.15-0.20, visibly misplaced), so no radiograph model was attempted.
+- DJD III: drive/DJD3_full.pdf is the text volume only (344 pp, no plates), so Milik's plates could not be used.
+
+2. CLOSE-UP CROPS OF THE DISPUTED LOCI (task 2)
+crops/disputed/ holds copy-photo crops (gray x2, background-normalised x2, and x3-x4 zooms of the target letters) and radiograph crops for:
+- XII 10: the word before (b)tsafon;
+- VII 11: the Doq landmark word;
+- X 15-16: Siloam;
+- IX 7: the direction word;
+- XI 12 and VII 14: the model's target windows.
+Neutral stroke descriptions, with no edition names, are in crops/disputed/DESCRIPTIONS.md. Short version:
+- X 15: the letter after the tall stroke is a single curved full-height stroke. No head bar can be resolved, but a short bar of a few pixels could not be resolved here anyway.
+- VII 11: a roofed letter whose left leg reaches roof level; the junction is blurred. A vertical crack separates it from an arch-topped letter. Radiograph CCCXLV shows the same, with no letter inside the crack.
+- IX 7: a closed pentagonal sign, then a short vertical. Then about 1.5-2 letter-widths of mottled surface with no continuous groove, before a fissure. This holds for both the copy and the radiograph (CCCXLIX, narrow strip).
+- XII 10: a box letter with a flat base. Whether the base projects to the right is unclear. No narrow stroke stands between it and the next letter. A crease makes the following zone unreadable, and the radiographs are too faint to isolate the word.
+
+3. LABELS: HOW THE TRANSCRIPTION WAS ALIGNED TO THE PLATES
+(1) Registration. Puech's facsimile was registered onto the copy photo by a coarse scale and shift search (FFT cross-correlation), then an OpenCV ECC affine fit. The traced strokes sit on the grooves (work/reg/).
+(2) Line finding. The facsimile was segmented into connected components. Dashed rulings and lacuna outlines were removed by chain detection and size limits. The remaining components were grouped into text lines using:
+    - the known line count per column;
+    - line slopes refined per line;
+    - a manual x-range per column;
+    - manual anchors for 3 sloping lines in col. X.
+(3) Forced alignment. A dynamic-programming (Viterbi) alignment matched the ETCBC letters of each line (Abegg/Bowley/Cook, scroll-text.js) to components (scripts/05_align_letters.py).
+    - Each letter may take 1-3 components, judged against a width prior for its class.
+    - Noise components may be skipped.
+    - Numerals, Greek and flagged words act as wildcards.
+    - Word gaps are rewarded.
+    Accepting letters automatically by alignment posterior yielded only about 300, hence step 4.
+(4) By-eye verification (semi-manual).
+    - All 180 lines were rendered as review sheets: the facsimile strip, with each component boxed and labelled with its assigned letter (work/review/).
+    - The reviewer (this AI model) accepted only words, or individual letters, whose labels sat on the right drawn shapes. Decisions are in data/review_decisions.txt; 146 lines contributed.
+    - When unsure, the reviewer rejected.
+(5) Exclusions.
+    - A letter must be unflagged in the transcription and pass the wave-1 T10 "candidate undisputed" rule.
+    - The disputed target words were masked, with at least one word either side: X 15, VII 11, IX 7, XII 10, XI 12, VII 14-15.
+(6) Result: 1,240 verified letters, of which 1,107 are training letters (41% of the 2,682 countable letters).
+    - Pair counts: waw 78, resh 80, het 50, he 66, tav 90, bet 100, kaf 87.
+    - All 12 columns contribute.
+(7) Audit. 56 random photo windows were checked, non-blind (work/audit1.png).
+    - No clear mislabel or mis-centring was found.
+    - About 12 of the 56 (about 20%) are too blurred or corroded to confirm the letter at all.
+What this method can and cannot do:
+- It inherits Puech's segmentation of each letter.
+- The review was done by one non-specialist AI reviewer and was not blind.
+- It cannot label damaged letters.
+- It is only 41% complete.
+- The window centre comes from the drawn strokes, which turned out to leak some shape information (see section 5).
+
+4. PRE-REGISTERED BASELINE (task 3)
+PREREGISTRATION.md (SHA-256 e6926ccf..., hash time 2026-10-07T05:54Z) was written and hashed after the labels and crops were frozen and before any model was run on real labels. The pipeline:
+- Windows: 32x40 px (1.0 H x 1.25 H), background-normalised, plus 8 augmentations per letter.
+- Model: HOG features, then StandardScaler, then L2 logistic regression (C = 0.1, class-balanced). No tuning.
+- Validation: leave-one-column-out over the 12 columns.
+- Significance: 1,000 label permutations within columns.
+- Gate: BA >= 0.85 and p < 0.01.
+
+  pair  n        BA      95% CI letters/columns   AUC   ECE   perm p (Holm)   gate
+  ו/ר   78/80    0.854   0.80-0.91 / 0.83-0.89    0.95  0.08  0.001 (0.004)   PASS (marginal)
+  ח/ה   50/66    0.525   0.43-0.61 / 0.46-0.60    0.58  0.28  0.34  (0.34)    fail
+  ח/ת   50/90    0.798   0.73-0.87 / 0.74-0.84    0.87  0.13  0.001 (0.004)   fail (BA)
+  ב/כ   100/87   0.655   0.59-0.72 / 0.60-0.73    0.68  0.19  0.001 (0.004)   fail (BA)
+The permutation null means were all about 0.50 and the permutation maxima 0.64-0.66. Per-column results are in results/primary_pair*.json.
+
+Secondary analyses (declared in the pre-registration; exploratory):
+- Raw-pixel logistic regression: waw/resh 0.79, het/he 0.51, het/tav 0.78, bet/kaf 0.62.
+- Small CNN (PyTorch on CPU, 3 conv blocks, 30 epochs, same folds and augmentations): waw/resh 0.62, het/he 0.47, het/tav 0.58, bet/kaf 0.52. With about 150 letters per pair it does worse than HOG.
+- 7-class HOG model (ו ר ח ה ת ב כ):
+  - accuracy 0.55, balanced accuracy 0.54 (chance 0.14);
+  - main confusions: het<->he (17/50 and 20/66) and bet->kaf (29/100).
+- Blind by-eye test (same AI, 16 crops per pair, labels hidden): waw/resh 12/16 (binomial p = 0.04); het/he 7/16; het/tav 8/16; bet/kaf 8/16 (results/blind_by_eye.json).
+
+5. APPLICATION TO THE DISPUTED LETTERS (only waw/resh qualified)
+Window centres were fixed by eye before evaluation (data/disputed_centres.json).
+X 15, using the col. X model trained on the other 11 columns:
+- raw P(resh) = 0.11;
+- Platt-calibrated P(resh) = 0.27;
+- over the 9 pre-registered shifts of +-0.1 H, P(resh) ranges from 0.05 to 0.99, with 6 of 9 above 0.5.
+Verdict: unstable, so no evidence either way. Even a stable output would only say whether the stroke resembles a typical undisputed waw or a typical undisputed resh. It could not exclude a waw-like cursive resh.
+VII 11 (het/he), XI 12 (het/tav), XII 10 and VII 14 (bet/kaf): not identifiable by this model, because their pairs failed the gate. No probabilities were computed for them.
+Post hoc check (exploratory, not pre-registered; results/exploratory_shift_stability.json):
+- The same +-0.1 H shifts were applied to the 158 held-out undisputed waw/resh letters.
+- They flip the predicted class for 53% of these letters; the median probability spread is 0.62.
+- Per-shift BA is 0.75-0.84.
+What this means:
+- The 0.854 relies on centring that is accurate to the facsimile, and that centring partly encodes the drawn letter shape: a resh head bar pulls the stroke centroid sideways.
+- A fair estimate for letters centred by eye is therefore about 0.8, below the gate.
+- This is a design weakness of my pipeline, found after the run.
+
+6. ARE THE PLATES GOOD ENOUGH? WHAT FAILED
+The plates are good enough for:
+- gross shape classes that rest mostly on width or presence (waw vs resh; het vs tav, with the tav foot);
+- registering the facsimile and locating letters;
+- close-ups, and saying whether a whole letter is present.
+They are not good enough for the decisive sub-letter features:
+- a resh head bar a few pixels long;
+- the junction of the left leg of het (het/he);
+- whether the bet base projects to the right (bet/kaf);
+- faint traces in a corroded gap (IX 7).
+At 42-74 px per letter with 8-px JPEG blocks, each of these features spans only one or two blocks. Single-light relief photography shows one wall of each groove, plus the corrosion texture on the cast.
+What failed or was not done:
+- Fully automatic alignment: the posterior-gated yield was too low, so by-eye verification was added.
+- Radiograph registration and a radiograph model: the radiographs are foreshortened.
+- A damage-matched test: nearly all training letters are undamaged.
+- DJD III plates: not in the library.
+- Independent human verification of the labels.
+No p-hacking:
+- All 4 pairs, all secondary runs and the post hoc check are reported.
+- The primary runs were relaunched once for CPU threading. The scripts, seeds and data were identical, and the first launch had written no output (logs/run_notes.txt).
+
+7. WHAT BETTER IMAGING WOULD ADD
+(a) RTI (polynomial or hemispherical, at least 50 lights) of the original segments and of the Amman EDF copy.
+    - It gives lighting-independent surface normals and specular enhancement, so both walls of a groove show instead of one shadow.
+    - It reveals shallow strokes (head bars, joins, feet).
+    - It separates corrosion texture from grooves.
+    - Models can then be trained on normal or curvature maps with synthetic relighting, as in the cuneiform work cited in T10.
+(b) High-resolution 3D (structured light or micro-photogrammetry, at 20 µm or finer) and CT or digital radiography of the originals.
+    - Groove depth and cross-section separate a deliberate punched stroke from a crack, crease or pit. That matters at IX 7, VII 11 and XII 10.
+    - It shows stroke order at intersections.
+    - At X 15 it allows a measured test for the presence of a resh bar.
+(c) Targets:
+    - at least 300-500 px per letter height, about 5-10x the plates' linear resolution;
+    - lossless TIFF;
+    - a scale bar;
+    - photometric calibration.
+(d) A cheaper interim step: obtain EDF's original photographs and radiograph films, or the WSRP 1988 masters, in place of a 150-dpi book reproduction.
+
+8. FILES
+- PREREGISTRATION.md, with its hash in PREREGISTRATION.sha256.
+- data/:
+  - plate_index.csv, registration.json, scan_comparison.json
+  - labels_verified.csv (1,240 letters) and labels_train.csv (1,107 letters)
+  - review_decisions.txt and viterbi_colNN.json
+  - crops_train_X.npy and crops_train_H.json
+  - disputed_centres.json, disputed_crop_boxes*.json
+- results/:
+  - primary_pair{0-3}.json (with _oof.npy and _perm.npy), primary_summary.json
+  - secondary_{raw,multi,cnn}.json, blind_by_eye.json (with key and guesses)
+  - disputed_application.json, exploratory_shift_stability.json
+- crops/disputed/: PNGs and DESCRIPTIONS.md.
+- scripts/: 01-19 plus helpers, all run with `python3 -I`; run_primary.sh.
+- plates/png/: the extracted plates, not for redistribution.
+- work/: review sheets, audit and blind sheets, overlays.
+- logs/
+
+9. DECISION LOG
+Images:
+- Scan A was chosen because it is first-generation.
+- Colour: CMYK was inverted, converted naively to RGB, and reduced to gray as the mean of the channels.
+Labels:
+- They come only from the facsimile plus the transcription.
+- The alignment (DP) costs were set by hand before review. The width priors were re-estimated once from letters with high posterior.
+- Review rule: every assigned label in a word must sit on its drawn shape. In partly assigned words, clear letters were accepted one by one.
+- Masking: the disputed word plus at least one word either side, plus the T10 candidate rule.
+Windows:
+- Centre: the stroke centroid (x) and box centre (y) from the facsimile.
+- Size fixed per column, with 8 augmentations per letter.
+Model and test:
+- HOG 9/8/2 and logistic regression with C = 0.1, set in advance.
+- Leave-one-column-out validation, balanced accuracy, 1,000 permutations within columns.
+- The gate of BA 0.85 and p 0.01 follows the task's suggestion. T10's stricter gate (BA 0.90 plus an ECE limit) was not used; waw/resh would fail it.
+Targets:
+- Centres were set by eye on the copy photo before evaluation.
+- Probabilities were computed only for pairs that passed.
+Post hoc:
+- The shift-stability analysis was added after seeing the instability at X 15, and is labelled post hoc throughout.

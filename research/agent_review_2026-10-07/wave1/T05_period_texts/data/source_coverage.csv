@@ -1,0 +1,20 @@
+corpus,how_checked,access,url_or_location,limits
+Hebrew Bible (MT),Sefaria search API (exact forms) + v3 texts API for cited verses,accessible,https://www.sefaria.org/api/search-wrapper,exact-word field misses prefixed forms unless queried separately
+Targums (Onqelos; Jonathan to Prophets; Ps.-Jonathan; Chronicles; Song),Sefaria search + texts API,accessible,https://www.sefaria.org/,Neofiti Gen 14:17 not returned by API
+Septuagint (Rahlfs),CCAT lxxmorph Beta-code files converted by scripts/lxx_verses.py,accessible,http://ccat.sas.upenn.edu/gopher/text/religion/biblical/lxxmorph/,accents dropped in conversion
+1 Maccabees (Greek),CCAT lxxmorph 24.1Macc,accessible,http://ccat.sas.upenn.edu/gopher/text/religion/biblical/lxxmorph/24.1Macc.mlxx,
+Josephus (Niese Greek),Perseus canonical-greekLit grc2 XML (raw GitHub) parsed by scripts/josephus_sections.py,accessible,https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0526/,grc1 paths 404 (two 14-byte stub files left in downloads/perseus); GitHub API listing not enabled for this session
+Eusebius Onomasticon,Wolf 1971 translation (tertullian.org) searched as text,accessible,https://www.tertullian.org/fathers/eusebius_onomasticon_02_trans.htm,Klostermann Greek and Jerome Latin not checked by me
+Jerome Comm. in Jer. 6:1,only as reported in ISBE (1915),secondary only,https://www.bibletools.org/index.cfm/fuseaction/def.show/RTD/ISBE/ID/1409/printer/friendly,Latin not verified
+Madaba Map,ToposText list of 156 labels,accessible (secondary list),https://topostext.org/work/788,list may be incomplete; not checked against Avi-Yonah 1954 or Donner 1992
+Rehov synagogue inscription,Wikipedia translation after Sussmann,secondary only,https://en.wikipedia.org/wiki/Mosaic_of_Rehob,Sussmann 1974/1976 not accessed
+Baraita of the Boundaries,y. Shevi'it 6:1 (Guggenheimer ed. on Sefaria); Sifre Deut 51 (Sefaria); t. Shevi'it 4:11 fetched,accessible,https://www.sefaria.org/Jerusalem_Talmud_Sheviit.6.1,t. Shevi'it 4:11 API segment returned only 92 characters (boundary list not captured from Tosefta)
+Mishnah / Tosefta / Yerushalmi / Bavli / midrash,Sefaria search (53 forms + 25 prefixed/extra forms),accessible,data/sefaria_hits_raw.csv; data/sefaria_hits_ancient.csv,homographs (דוק; הקוץ; סככה; עכור) not all read; queries for אצל and מצד failed (server error)
+Jastrow / dictionaries,Sefaria words API,accessible,https://www.sefaria.org/api/words/,secondary
+Genesis Apocryphon 1QapGen XXII 13-14,Newman 2005 Biblica 86 p. 221 n. 33 (citing Fitzmyer),secondary transcription,https://www.bsw.org/biblica/vol-86-2005/a-hippodrome-on-the-road-to-ephrath/134/article-p221.html,not checked against Fitzmyer or DJD/Machiela edition
+Ben Sira MS B 50:3,Schechter & Taylor 1899 (public-domain archive.org djvu text) + Kahana ed. (Sefaria),accessible,https://archive.org/details/wisdomofbensirap00scheuoft,Hebrew OCR garbled; reading אשיח inferred from editors' translation and note; Kahana prints ושיח
+Murabba'at documents (DJD II),archive.org copies lesgrottesdemura0002unse / 0022unse,INACCESSIBLE (lending-restricted: Item not available),https://archive.org/details/lesgrottesdemura0002unse,Mur 45 'Mesad Hasidin' not verified; not circumvented
+Nahal Hever / Bar Kokhba letters,secondary only (Wikipedia on name spelling),secondary only,https://en.wikipedia.org/wiki/Simon_bar_Kokhba,no primary texts checked
+Itinerarium Burdigalense,Latin text on Loyola site,accessible,https://avande1.sites.luc.edu/jerusalem/sources/bordeauxJerus.htm,
+4Q522 place list,Tov 1998 Orion symposium paper,secondary,https://orion.huji.ac.il/symposiums/1st/papers/tov.html,
+Byzantine Douka,CMHL record Deir el-Quruntul,secondary,https://dig.corps-cmhl.huji.ac.il/node/566,Cyril of Scythopolis / Life of Chariton not read

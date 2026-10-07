@@ -1,0 +1,32 @@
+== u1: total weight 3516, names 823, K=7, W=0.0250
+  ΚΕΝ  wb=    2 p=0.0006 names=  2  r_N1=7.43  matches=['Cenedaius:1', 'Kenebon:1']
+  ΧΑΓ  wb=    2 p=0.0006 names=  1  r_N1=64.98  matches=['Hagira:2']
+  ΗΝ   wb=    2 p=0.0006 names=  2  r_N1=0.64  matches=['Endemias:1', 'Enoch:1']
+  ΘΕ   wb=   57 p=0.0162 names= 11  r_N1=14.76  matches=['Tehinah:13', 'Teima:4', 'Theodora:1', 'Theodoras:12', 'Theodosius:7', 'Theodotus:10', 'Theophanes:1', 'Theophila:2', 'Theophilus:3', 'Theumnastus:2', 'Tibethis:2']
+  ΔΙ   wb=   16 p=0.0046 names= 12  r_N1=1.53  matches=['Diadochus:1', 'Didymus:1', 'Digaius:1', 'Dilgai:1', 'Dinai:2', 'Diodorus:1', 'Diodotus:3', 'Diogenes:2', 'Dionysius:1', 'Dionytas:1', 'Diophantus:1', 'Dioscorus:1']
+  ΤΡ   wb=    8 p=0.0023 names=  2  r_N1=4.59  matches=['Troxallis:1', 'Tryphon:7']
+  ΣΚ   wb=    1 p=0.0003 names=  1  r_N1=0.15  matches=['Iscariot:1']
+  ΞΕ   wb=    0 p=0.0000 names=  0  r_N1=0.0  matches=[]
+  ΤΡΙ  wb=    0 p=0.0000 names=  0  r_N1=0.0  matches=[]
+  ΙΣΚ  wb=    1 p=0.0003 names=  1  r_N1=1.26  matches=['Iscariot:1']
+  ΧΚ   wb=    0 p=0.0000 names=  0  r_N1=0.0  matches=[]
+  ΞΚ   wb=    0 p=0.0000 names=  0  r_N1=0.0  matches=[]
+  MC N1: P(K>=obs)=0.0056 K_mean=3.75  P(W>=obs)=0.7117 W_mean=0.1148 W_med=0.0973  per-group={'ΚΕΝ': 0.15085, 'ΧΑΓ': 0.1481, 'ΗΝ': 0.56175, 'ΘΕ': 0.2122, 'ΔΙ': 0.35835, 'ΤΡ': 0.44035, 'ΣΚ': 0.6658}
+  MC N2: P(K>=obs)=0.0118 K_mean=4.07  P(W>=obs)=0.8586 W_mean=0.1863 W_med=0.1624  per-group={'ΚΕΝ': 0.18955, 'ΧΑΓ': 0.1824, 'ΗΝ': 0.6268, 'ΘΕ': 0.3076, 'ΔΙ': 0.434, 'ΤΡ': 0.4944, 'ΣΚ': 0.7024}
+  MC uniform: P(K>=obs)=0.0000 K_mean=1.92  P(W>=obs)=0.2141 W_mean=0.0263 W_med=0.0065  per-group={'ΚΕΝ': 0.0379, 'ΧΑΓ': 0.038, 'ΗΝ': 0.30605, 'ΘΕ': 0.05655, 'ΔΙ': 0.1498, 'ΤΡ': 0.19265, 'ΣΚ': 0.35415}
+== u2: total weight 2854, names 432, K=6, W=0.0273
+  ΚΕΝ  wb=    1 p=0.0004 names=  1  r_N1=4.58  matches=['Cenedaius:1']
+  ΧΑΓ  wb=    2 p=0.0007 names=  1  r_N1=80.06  matches=['Hagira:2']
+  ΗΝ   wb=    0 p=0.0000 names=  0  r_N1=0.0  matches=[]
+  ΘΕ   wb=   53 p=0.0186 names= 10  r_N1=16.91  matches=['Tehinah:13', 'Theodora:1', 'Theodoras:12', 'Theodosius:7', 'Theodotus:10', 'Theophanes:1', 'Theophila:2', 'Theophilus:3', 'Theumnastus:2', 'Tibethis:2']
+  ΔΙ   wb=   13 p=0.0046 names= 10  r_N1=1.53  matches=['Diadochus:1', 'Didymus:1', 'Digaius:1', 'Diodorus:1', 'Diodotus:3', 'Diogenes:2', 'Dionysius:1', 'Dionytas:1', 'Diophantus:1', 'Dioscorus:1']
+  ΤΡ   wb=    8 p=0.0028 names=  2  r_N1=5.65  matches=['Troxallis:1', 'Tryphon:7']
+  ΣΚ   wb=    1 p=0.0004 names=  1  r_N1=0.18  matches=['Iscariot:1']
+  ΞΕ   wb=    0 p=0.0000 names=  0  r_N1=0.0  matches=[]
+  ΤΡΙ  wb=    0 p=0.0000 names=  0  r_N1=0.0  matches=[]
+  ΙΣΚ  wb=    1 p=0.0004 names=  1  r_N1=1.55  matches=['Iscariot:1']
+  ΧΚ   wb=    0 p=0.0000 names=  0  r_N1=0.0  matches=[]
+  ΞΚ   wb=    0 p=0.0000 names=  0  r_N1=0.0  matches=[]
+  MC N1: P(K>=obs)=0.0125 K_mean=2.85  P(W>=obs)=0.6836 W_mean=0.1243 W_med=0.1030  per-group={'ΚΕΝ': 0.14415, 'ΧΑΓ': 0.0903, 'ΗΝ': 1.0, 'ΘΕ': 0.1926, 'ΔΙ': 0.29745, 'ΤΡ': 0.32505, 'ΣΚ': 0.51635}
+  MC N2: P(K>=obs)=0.0271 K_mean=3.22  P(W>=obs)=0.8438 W_mean=0.2048 W_med=0.1868  per-group={'ΚΕΝ': 0.17695, 'ΧΑΓ': 0.1255, 'ΗΝ': 1.0, 'ΘΕ': 0.29905, 'ΔΙ': 0.39575, 'ΤΡ': 0.4152, 'ΣΚ': 0.57195}
+  MC uniform: P(K>=obs)=0.0001 K_mean=1.27  P(W>=obs)=0.1824 W_mean=0.0253 W_med=0.0028  per-group={'ΚΕΝ': 0.0293, 'ΧΑΓ': 0.01735, 'ΗΝ': 1.0, 'ΘΕ': 0.0454, 'ΔΙ': 0.0978, 'ΤΡ': 0.1236, 'ΣΚ': 0.24385}

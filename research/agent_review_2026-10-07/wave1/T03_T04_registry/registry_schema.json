@@ -1,0 +1,284 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Copper Scroll prediction registry record",
+ "type": "object",
+ "required": [
+  "id",
+  "entry",
+  "branch",
+  "reading_assumed",
+  "feature_type",
+  "confirm",
+  "miss",
+  "inconclusive",
+  "report_must_record",
+  "record_sha256"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "description": "P<entry>-<branch letter> or P60-T<rank>"
+  },
+  "registry_version": {
+   "type": "string"
+  },
+  "drafted": {
+   "type": "string",
+   "format": "date"
+  },
+  "status": {
+   "type": "string"
+  },
+  "entry": {
+   "type": "string",
+   "description": "Puech entry number"
+  },
+  "lines": {
+   "type": "string"
+  },
+  "milik_item": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "lefkovits_item": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "entry_title_project": {
+   "type": "string"
+  },
+  "entry_text_he": {
+   "type": "string"
+  },
+  "entry_text_en_project": {
+   "type": "string"
+  },
+  "branch": {
+   "type": "string",
+   "description": "the reading/site branch this record predicts under"
+  },
+  "rank": {
+   "type": [
+    "integer",
+    "null"
+   ],
+   "description": "entry-60 search-target rank (1 = first); null elsewhere or unrankable"
+  },
+  "reading_assumed": {
+   "type": "string"
+  },
+  "reading_editions": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "reading_status": {
+   "type": "string"
+  },
+  "place_id": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "shared/places.json id; null if the target is not in the gazetteer"
+  },
+  "site_name": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "project_entry_status": {
+   "type": "string"
+  },
+  "project_entry_confidence": {
+   "type": "string"
+  },
+  "project_candidate_status": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "anchor_lat": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "anchor_lon": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "anchor_precision": {
+   "type": "string"
+  },
+  "anchor_note": {
+   "type": "string"
+  },
+  "feature_type": {
+   "type": "string"
+  },
+  "feature_detail": {
+   "type": "string"
+  },
+  "period_requirement": {
+   "type": "string"
+  },
+  "orientation_constraint": {
+   "type": "string"
+  },
+  "measures": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "cubits": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "edition": {
+      "type": "string"
+     },
+     "type": {
+      "type": "string"
+     },
+     "metres_primary_0.445_0.525": {
+      "type": [
+       "array",
+       "null"
+      ]
+     },
+     "metres_wide_0.40_0.60": {
+      "type": [
+       "array",
+       "null"
+      ]
+     }
+    }
+   }
+  },
+  "location_constraint": {
+   "type": "string"
+  },
+  "confirm": {
+   "type": "string"
+  },
+  "miss": {
+   "type": "string"
+  },
+  "inconclusive": {
+   "type": "string"
+  },
+  "deposit_expected": {
+   "type": "string"
+  },
+  "report_must_record": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "priority": {
+   "enum": [
+    "high",
+    "medium",
+    "low"
+   ]
+  },
+  "scorability": {
+   "type": "string"
+  },
+  "rank_scores": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "evidence": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "label": {
+      "const": "EVIDENCE"
+     },
+     "claim": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "inference": {
+   "type": "object",
+   "properties": {
+    "label": {
+     "const": "INFERENCE"
+    },
+    "text": {
+     "type": "string"
+    },
+    "confidence": {
+     "type": "string"
+    }
+   }
+  },
+  "sources": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "outcome": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "outcome_level": {
+   "enum": [
+    null,
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "MISS"
+   ]
+  },
+  "scored_report": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "scored_by": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "scored_date": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "record_sha256": {
+   "type": "string",
+   "description": "SHA-256 of the canonical JSON (sort_keys, UTF-8) of the record without outcome*/scored_* fields"
+  }
+ }
+}

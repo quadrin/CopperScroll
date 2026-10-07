@@ -1,0 +1,67 @@
+run,universe,group,weighted_bearers,p_name,n_names,ratio_N1,ratio_N2,ratio_uniform,per_group_P(random>=obs)_N1,"matches(name(weight,tag,Ilan pages))"
+automated,u1,ΚΕΝ,2,0.00057,2,7.42,4.49,7.88,0.15125,"Cenedaius(1,S-G/M,p.436); Kenebon(1,S-H/M,p.387)"
+automated,u1,ΧΑΓ,0,0.0,0,0.0,0.0,0.0,1.0,
+automated,u1,ΗΝ,2,0.00057,2,0.64,0.67,0.33,0.56225,"Endemias(1,G/M,p.277); Enoch(1,B/M,p.98)"
+automated,u1,ΘΕ,46,0.01311,10,12.27,11.5,7.55,0.23015,"Tehinah(13,B/M,p.237-8); Teima(4,B/M,p.238); Theodora(1,G/F,p.319); Theodoras(1,G/M,p.286-7); Theodosius(7,G/M,p.285); Theodotus(12,G/M,p.285-6); Theophanes(1,G/M,p.287); Theophila(2,G/F,p.319); Theophilus(3,G/M,p.287-8); Theumnastus(2,G/M,p.288)"
+automated,u1,ΔΙ,16,0.00456,12,1.55,1.41,2.63,0.3584,"Diadochus(1,G/M,p.271-2); Didymus(1,G/M,p.272); Digaius(1,S-G/M,p.433); Dilgai(1,S-H/M,p.372); Dinai(2,S-H/M,p.372); Diodorus(1,G/M,p.272); Diodotus(3,G/M,p.272); Diogenes(2,G/M,p.272); Dionysius(1,G/M,p.272-3); Dionytas(1,G/M,p.273); Diophantus(1,G/M,p.273); Dioscorus(1,G/M,p.273)"
+automated,u1,ΤΡ,8,0.00228,2,4.65,4.66,1.31,0.44075,"Troxallis(1,S-G/F,p.444); Tryphon(7,G/M,p.308-9)"
+automated,u1,ΣΚ,0,0.0,0,0.0,0.0,0.0,1.0,
+automated,u1,ΞΕ,0,0.0,0,0.0,,0.0,,
+automated,u1,ΤΡΙ,0,0.0,0,0.0,0.0,0.0,,
+automated,u1,ΙΣΚ,1,0.00029,1,1.26,0.58,3.94,,"Iscariot(1,S-G/M,p.435)"
+automated,u1,JOINT,K=5,W=0.0211,total_w=3508,N1: P(K>=obs)=0.2683,N1: P(W>=obs)=0.7425; W_median=0.0975,N2: P(K>=obs)=0.3633; P(W>=obs)=0.8718,uniform: P(K>=obs)=0.0133; P(W>=obs)=0.2410,
+automated,u2,ΚΕΝ,1,0.00035,1,4.58,2.77,4.86,0.14415,"Cenedaius(1,S-G/M,p.436)"
+automated,u2,ΧΑΓ,0,0.0,0,0.0,0.0,0.0,1.0,
+automated,u2,ΗΝ,0,0.0,0,0.0,0.0,0.0,1.0,
+automated,u2,ΘΕ,42,0.01477,9,13.82,12.96,8.51,0.203,"Tehinah(13,B/M,p.237-8); Theodora(1,G/F,p.319); Theodoras(1,G/M,p.286-7); Theodosius(7,G/M,p.285); Theodotus(12,G/M,p.285-6); Theophanes(1,G/M,p.287); Theophila(2,G/F,p.319); Theophilus(3,G/M,p.287-8); Theumnastus(2,G/M,p.288)"
+automated,u2,ΔΙ,13,0.00457,10,1.55,1.41,2.63,0.29715,"Diadochus(1,G/M,p.271-2); Didymus(1,G/M,p.272); Digaius(1,S-G/M,p.433); Diodorus(1,G/M,p.272); Diodotus(3,G/M,p.272); Diogenes(2,G/M,p.272); Dionysius(1,G/M,p.272-3); Dionytas(1,G/M,p.273); Diophantus(1,G/M,p.273); Dioscorus(1,G/M,p.273)"
+automated,u2,ΤΡ,8,0.00281,2,5.73,5.74,1.62,0.32335,"Troxallis(1,S-G/F,p.444); Tryphon(7,G/M,p.308-9)"
+automated,u2,ΣΚ,0,0.0,0,0.0,0.0,0.0,1.0,
+automated,u2,ΞΕ,0,0.0,0,0.0,,0.0,,
+automated,u2,ΤΡΙ,0,0.0,0,0.0,0.0,0.0,,
+automated,u2,ΙΣΚ,1,0.00035,1,1.55,0.72,4.86,,"Iscariot(1,S-G/M,p.435)"
+automated,u2,JOINT,K=4,W=0.0225,total_w=2843,N1: P(K>=obs)=0.2940,N1: P(W>=obs)=0.7035; W_median=0.1034,N2: P(K>=obs)=0.4086; P(W>=obs)=0.8529,uniform: P(K>=obs)=0.0176; P(W>=obs)=0.1953,
+hand_corrected,u1,ΚΕΝ,2,0.00057,2,7.43,4.49,7.86,0.15085,"Cenedaius(1,S-G/M,p.436); Kenebon(1,S-H/M,p.387)"
+hand_corrected,u1,ΧΑΓ,2,0.00057,1,64.98,66.66,7.86,0.1481,"Hagira(2,S-H/M,p.376)"
+hand_corrected,u1,ΗΝ,2,0.00057,2,0.64,0.67,0.33,0.56175,"Endemias(1,G/M,p.277); Enoch(1,B/M,p.98)"
+hand_corrected,u1,ΘΕ,57,0.01621,11,14.76,12.51,9.34,0.2122,"Tehinah(13,B/M,p.237-8); Teima(4,B/M,p.238); Theodora(1,G/F,p.319); Theodoras(12,G/M,p.286-7); Theodosius(7,G/M,p.285); Theodotus(10,G/M,p.285-6); Theophanes(1,G/M,p.287); Theophila(2,G/F,p.319); Theophilus(3,G/M,p.287-8); Theumnastus(2,G/M,p.288); Tibethis(2,P/M,p.354)"
+hand_corrected,u1,ΔΙ,16,0.00455,12,1.53,1.41,2.62,0.35835,"Diadochus(1,G/M,p.271-2); Didymus(1,G/M,p.272); Digaius(1,S-G/M,p.433); Dilgai(1,S-H/M,p.372); Dinai(2,S-H/M,p.372); Diodorus(1,G/M,p.272); Diodotus(3,G/M,p.272); Diogenes(2,G/M,p.272); Dionysius(1,G/M,p.272-3); Dionytas(1,G/M,p.273); Diophantus(1,G/M,p.273); Dioscorus(1,G/M,p.273)"
+hand_corrected,u1,ΤΡ,8,0.00228,2,4.59,4.51,1.31,0.44035,"Troxallis(1,S-G/F,p.444); Tryphon(7,G/M,p.308-9)"
+hand_corrected,u1,ΣΚ,1,0.00028,1,0.15,0.11,0.16,0.6658,"Iscariot(1,S-G/M,p.435)"
+hand_corrected,u1,ΞΕ,0,0.0,0,0.0,,0.0,,
+hand_corrected,u1,ΤΡΙ,0,0.0,0,0.0,0.0,0.0,,
+hand_corrected,u1,ΙΣΚ,1,0.00028,1,1.26,0.58,3.93,,"Iscariot(1,S-G/M,p.435)"
+hand_corrected,u1,JOINT,K=7,W=0.0250,total_w=3516,N1: P(K>=obs)=0.0056,N1: P(W>=obs)=0.7117; W_median=0.0973,N2: P(K>=obs)=0.0118; P(W>=obs)=0.8586,uniform: P(K>=obs)=0.0000; P(W>=obs)=0.2141,
+hand_corrected,u2,ΚΕΝ,1,0.00035,1,4.58,2.77,4.84,0.14415,"Cenedaius(1,S-G/M,p.436)"
+hand_corrected,u2,ΧΑΓ,2,0.0007,1,80.06,82.12,9.69,0.0903,"Hagira(2,S-H/M,p.376)"
+hand_corrected,u2,ΗΝ,0,0.0,0,0.0,0.0,0.0,1.0,
+hand_corrected,u2,ΘΕ,53,0.01857,10,16.91,14.33,10.7,0.1926,"Tehinah(13,B/M,p.237-8); Theodora(1,G/F,p.319); Theodoras(12,G/M,p.286-7); Theodosius(7,G/M,p.285); Theodotus(10,G/M,p.285-6); Theophanes(1,G/M,p.287); Theophila(2,G/F,p.319); Theophilus(3,G/M,p.287-8); Theumnastus(2,G/M,p.288); Tibethis(2,P/M,p.354)"
+hand_corrected,u2,ΔΙ,13,0.00456,10,1.53,1.42,2.62,0.29745,"Diadochus(1,G/M,p.271-2); Didymus(1,G/M,p.272); Digaius(1,S-G/M,p.433); Diodorus(1,G/M,p.272); Diodotus(3,G/M,p.272); Diogenes(2,G/M,p.272); Dionysius(1,G/M,p.272-3); Dionytas(1,G/M,p.273); Diophantus(1,G/M,p.273); Dioscorus(1,G/M,p.273)"
+hand_corrected,u2,ΤΡ,8,0.0028,2,5.65,5.56,1.61,0.32505,"Troxallis(1,S-G/F,p.444); Tryphon(7,G/M,p.308-9)"
+hand_corrected,u2,ΣΚ,1,0.00035,1,0.18,0.13,0.2,0.51635,"Iscariot(1,S-G/M,p.435)"
+hand_corrected,u2,ΞΕ,0,0.0,0,0.0,,0.0,,
+hand_corrected,u2,ΤΡΙ,0,0.0,0,0.0,0.0,0.0,,
+hand_corrected,u2,ΙΣΚ,1,0.00035,1,1.55,0.72,4.84,,"Iscariot(1,S-G/M,p.435)"
+hand_corrected,u2,JOINT,K=6,W=0.0273,total_w=2854,N1: P(K>=obs)=0.0125,N1: P(W>=obs)=0.6836; W_median=0.1030,N2: P(K>=obs)=0.0271; P(W>=obs)=0.8438,uniform: P(K>=obs)=0.0001; P(W>=obs)=0.1824,
+het_chi_sensitivity,u1,ΚΕΝ,2,0.00057,2,7.42,4.49,7.88,0.15165,"Cenedaius(1,S-G/M,p.436); Kenebon(1,S-H/M,p.387)"
+het_chi_sensitivity,u1,ΧΑΓ,13,0.00371,3,408.3,419.26,51.23,0.0597,"Hagaba(1,B/M,p.93); Hagai(10,B/M,p.93-4); Hagira(2,S-H/M,p.376)"
+het_chi_sensitivity,u1,ΗΝ,2,0.00057,2,0.64,0.67,0.33,0.56225,"Endemias(1,G/M,p.277); Enoch(1,B/M,p.98)"
+het_chi_sensitivity,u1,ΘΕ,46,0.01311,10,12.27,11.5,7.55,0.23115,"Tehinah(13,B/M,p.237-8); Teima(4,B/M,p.238); Theodora(1,G/F,p.319); Theodoras(1,G/M,p.286-7); Theodosius(7,G/M,p.285); Theodotus(12,G/M,p.285-6); Theophanes(1,G/M,p.287); Theophila(2,G/F,p.319); Theophilus(3,G/M,p.287-8); Theumnastus(2,G/M,p.288)"
+het_chi_sensitivity,u1,ΔΙ,16,0.00456,12,1.55,1.41,2.63,0.3608,"Diadochus(1,G/M,p.271-2); Didymus(1,G/M,p.272); Digaius(1,S-G/M,p.433); Dilgai(1,S-H/M,p.372); Dinai(2,S-H/M,p.372); Diodorus(1,G/M,p.272); Diodotus(3,G/M,p.272); Diogenes(2,G/M,p.272); Dionysius(1,G/M,p.272-3); Dionytas(1,G/M,p.273); Diophantus(1,G/M,p.273); Dioscorus(1,G/M,p.273)"
+het_chi_sensitivity,u1,ΤΡ,8,0.00228,2,4.65,4.66,1.31,0.44245,"Troxallis(1,S-G/F,p.444); Tryphon(7,G/M,p.308-9)"
+het_chi_sensitivity,u1,ΣΚ,0,0.0,0,0.0,0.0,0.0,1.0,
+het_chi_sensitivity,u1,ΞΕ,0,0.0,0,0.0,,0.0,,
+het_chi_sensitivity,u1,ΤΡΙ,0,0.0,0,0.0,0.0,0.0,,
+het_chi_sensitivity,u1,ΙΣΚ,1,0.00029,1,1.26,0.58,3.94,,"Iscariot(1,S-G/M,p.435)"
+het_chi_sensitivity,u1,JOINT,K=6,W=0.0248,total_w=3508,N1: P(K>=obs)=0.0629,N1: P(W>=obs)=0.7158; W_median=0.0981,N2: P(K>=obs)=0.1053; P(W>=obs)=0.8609,uniform: P(K>=obs)=0.0009; P(W>=obs)=0.2247,
+het_chi_sensitivity,u2,ΚΕΝ,1,0.00035,1,4.58,2.77,4.86,0.14415,"Cenedaius(1,S-G/M,p.436)"
+het_chi_sensitivity,u2,ΧΑΓ,0,0.0,0,0.0,0.0,0.0,1.0,
+het_chi_sensitivity,u2,ΗΝ,0,0.0,0,0.0,0.0,0.0,1.0,
+het_chi_sensitivity,u2,ΘΕ,42,0.01477,9,13.82,12.96,8.51,0.203,"Tehinah(13,B/M,p.237-8); Theodora(1,G/F,p.319); Theodoras(1,G/M,p.286-7); Theodosius(7,G/M,p.285); Theodotus(12,G/M,p.285-6); Theophanes(1,G/M,p.287); Theophila(2,G/F,p.319); Theophilus(3,G/M,p.287-8); Theumnastus(2,G/M,p.288)"
+het_chi_sensitivity,u2,ΔΙ,13,0.00457,10,1.55,1.41,2.63,0.29715,"Diadochus(1,G/M,p.271-2); Didymus(1,G/M,p.272); Digaius(1,S-G/M,p.433); Diodorus(1,G/M,p.272); Diodotus(3,G/M,p.272); Diogenes(2,G/M,p.272); Dionysius(1,G/M,p.272-3); Dionytas(1,G/M,p.273); Diophantus(1,G/M,p.273); Dioscorus(1,G/M,p.273)"
+het_chi_sensitivity,u2,ΤΡ,8,0.00281,2,5.73,5.74,1.62,0.32335,"Troxallis(1,S-G/F,p.444); Tryphon(7,G/M,p.308-9)"
+het_chi_sensitivity,u2,ΣΚ,0,0.0,0,0.0,0.0,0.0,1.0,
+het_chi_sensitivity,u2,ΞΕ,0,0.0,0,0.0,,0.0,,
+het_chi_sensitivity,u2,ΤΡΙ,0,0.0,0,0.0,0.0,0.0,,
+het_chi_sensitivity,u2,ΙΣΚ,1,0.00035,1,1.55,0.72,4.86,,"Iscariot(1,S-G/M,p.435)"
+het_chi_sensitivity,u2,JOINT,K=4,W=0.0225,total_w=2843,N1: P(K>=obs)=0.2940,N1: P(W>=obs)=0.7035; W_median=0.1034,N2: P(K>=obs)=0.4086; P(W>=obs)=0.8529,uniform: P(K>=obs)=0.0176; P(W>=obs)=0.1953,

@@ -1,0 +1,714 @@
+{
+ "version": "v0",
+ "date": "2026-10-06",
+ "defaults": {
+  "w_A": 0.8,
+  "w_L": 0.8,
+  "lam": 2.0,
+  "ell": 1.0,
+  "scales": [
+   1.0,
+   10.0
+  ],
+  "scale_w": [
+   0.5,
+   0.5
+  ],
+  "rho": 0.0,
+  "nu": 2.0,
+  "ell_n": 1.0,
+  "temper": true,
+  "pi_mode": "per_place",
+  "u": 1.0,
+  "sigma_U": 2.0,
+  "conf_p": {
+   "high": 0.85,
+   "medium": 0.6,
+   "low": 0.3,
+   "weak": 0.1,
+   "unknown": 0.0
+  },
+  "status_mult": {
+   "preferred": 1.5,
+   "possible": 1.0,
+   "weak": 0.5
+  },
+  "exclude_order_derived": [],
+  "readings": {
+   "kohlit15": true,
+   "solomon23": true
+  },
+  "strict_coords": false
+ },
+ "config_overrides": {},
+ "weight_fit": {
+  "rho0": {
+   "best": {
+    "lam": 8.0,
+    "w_A": 0.8,
+    "w_L": 0.9,
+    "logml": 25.4907
+   },
+   "best_tied": {
+    "lam": 8.0,
+    "w_A": 0.9,
+    "w_L": 0.9,
+    "logml": 25.2542
+   },
+   "best_wA0": {
+    "lam": 8.0,
+    "w_A": 0,
+    "w_L": 0.9,
+    "logml": 19.6186
+   },
+   "logml_at_0": 0.0
+  },
+  "rho0.9": {
+   "best": {
+    "lam": 8.0,
+    "w_A": 0.4,
+    "w_L": 0.8,
+    "logml": 14.9805
+   },
+   "best_tied": {
+    "lam": 8.0,
+    "w_A": 0.6,
+    "w_L": 0.6,
+    "logml": 10.8096
+   },
+   "best_wA0": {
+    "lam": 8.0,
+    "w_A": 0,
+    "w_L": 0.8,
+    "logml": 13.5742
+   },
+   "logml_at_0": -1.4822
+  }
+ },
+ "weight_fit_at_lam": {
+  "lam": 2.0,
+  "rho0": {
+   "lam": 2.0,
+   "w_A": 0.995,
+   "w_L": 0.995,
+   "logml": 17.6815
+  },
+  "rho09": {
+   "lam": 2.0,
+   "w_A": 0.4,
+   "w_L": 0.995,
+   "logml": 8.6831
+  },
+  "rho09_tied": {
+   "lam": 2.0,
+   "w_A": 0.6,
+   "w_L": 0.6,
+   "logml": 5.3352
+  }
+ },
+ "runs": {
+  "M0_prior": {
+   "cfg": {
+    "w_A": 0,
+    "w_L": 0,
+    "rho": 0
+   },
+   "logml": 0.0,
+   "name_group_location_posteriors": {}
+  },
+  "M1_itinerary_fitted": {
+   "cfg": {
+    "w_A": 0.995,
+    "w_L": 0.995,
+    "lam": 2.0,
+    "rho": 0
+   },
+   "logml": 17.6815,
+   "name_group_location_posteriors": {}
+  },
+  "M2_names_only": {
+   "cfg": {
+    "w_A": 0,
+    "w_L": 0,
+    "rho": 0.9
+   },
+   "logml": -1.4822,
+   "name_group_location_posteriors": {
+    "Achor": {
+     "U_JERICHO": 0.3309,
+     "U_JER": 0.2163,
+     "ain_duk": 0.1268,
+     "U_DESERT": 0.0773,
+     "U_QUMRAN": 0.0578
+    },
+    "Kohlit": {
+     "U_JER": 0.3427,
+     "U_JERICHO": 0.2872,
+     "tell_es_sultan": 0.0876,
+     "U_NORTH": 0.0859,
+     "U_QUMRAN": 0.0664
+    },
+    "Melah": {
+     "U_JER": 0.4311,
+     "U_JERICHO": 0.2158,
+     "U_NORTH": 0.0855,
+     "U_DESERT": 0.067,
+     "U_QUMRAN": 0.065
+    },
+    "Secacah": {
+     "kh_qumran": 0.4501,
+     "U_QUMRAN": 0.166,
+     "wadi_qumran": 0.1542,
+     "U_JER": 0.0986,
+     "U_JERICHO": 0.068
+    },
+    "Solomon": {
+     "kh_qumran": 0.4689,
+     "U_QUMRAN": 0.2353,
+     "U_JER": 0.115,
+     "U_JERICHO": 0.0945,
+     "U_DESERT": 0.041
+    },
+    "Shaveh": {
+     "U_JER": 0.4704,
+     "U_JERICHO": 0.1665,
+     "U_NORTH": 0.0645,
+     "U_DESERT": 0.0569,
+     "jer_baqa": 0.0528
+    },
+    "Zadok": {
+     "U_JER": 0.4668,
+     "U_JERICHO": 0.1429,
+     "U_NORTH": 0.055,
+     "jer_south_wall": 0.0497,
+     "jer_se_corner": 0.0493
+    }
+   }
+  },
+  "M3_joint_fitted": {
+   "cfg": {
+    "w_A": 0.4,
+    "w_L": 0.995,
+    "lam": 2.0,
+    "rho": 0.9
+   },
+   "logml": 8.6831,
+   "name_group_location_posteriors": {
+    "Achor": {
+     "U_JERICHO": 0.3831,
+     "U_JER": 0.1502,
+     "ain_duk": 0.1435,
+     "U_DESERT": 0.0811,
+     "U_QUMRAN": 0.068
+    },
+    "Kohlit": {
+     "U_JERICHO": 0.248,
+     "U_NORTH": 0.2318,
+     "U_QUMRAN": 0.1709,
+     "U_JER": 0.1693,
+     "U_DESERT": 0.0842
+    },
+    "Melah": {
+     "U_JER": 0.444,
+     "U_NORTH": 0.16,
+     "U_JERICHO": 0.1526,
+     "U_QUMRAN": 0.0488,
+     "U_DESERT": 0.0467
+    },
+    "Secacah": {
+     "kh_qumran": 0.7284,
+     "wadi_qumran": 0.155,
+     "U_QUMRAN": 0.0962,
+     "U_NORTH": 0.0153,
+     "U_JERICHO": 0.0022
+    },
+    "Solomon": {
+     "kh_qumran": 0.7482,
+     "U_QUMRAN": 0.2179,
+     "U_NORTH": 0.0151,
+     "U_JERICHO": 0.0082,
+     "U_DESERT": 0.0076
+    },
+    "Shaveh": {
+     "U_JER": 0.3188,
+     "U_SOUTH": 0.2634,
+     "U_DESERT": 0.1337,
+     "U_JERICHO": 0.0924,
+     "U_QUMRAN": 0.0571
+    },
+    "Zadok": {
+     "U_JER": 0.5974,
+     "jer_south_wall": 0.0865,
+     "jer_se_corner": 0.0858,
+     "jer_kidron_mon": 0.0782,
+     "jer_kidron_east": 0.0763
+    }
+   }
+  },
+  "M4_joint_wA0": {
+   "cfg": {
+    "w_A": 0.0,
+    "w_L": 0.995,
+    "lam": 2.0,
+    "rho": 0.9
+   },
+   "logml": 8.2446,
+   "name_group_location_posteriors": {
+    "Achor": {
+     "U_JERICHO": 0.3309,
+     "U_JER": 0.2163,
+     "ain_duk": 0.1268,
+     "U_DESERT": 0.0773,
+     "U_QUMRAN": 0.0578
+    },
+    "Kohlit": {
+     "U_NORTH": 0.4119,
+     "U_JERICHO": 0.2166,
+     "U_QUMRAN": 0.1366,
+     "U_JER": 0.0918,
+     "U_DESERT": 0.0605
+    },
+    "Melah": {
+     "U_JER": 0.4311,
+     "U_JERICHO": 0.2158,
+     "U_NORTH": 0.0855,
+     "U_DESERT": 0.067,
+     "U_QUMRAN": 0.065
+    },
+    "Secacah": {
+     "kh_qumran": 0.7133,
+     "wadi_qumran": 0.1524,
+     "U_QUMRAN": 0.0952,
+     "U_NORTH": 0.0337,
+     "U_JERICHO": 0.0024
+    },
+    "Solomon": {
+     "kh_qumran": 0.734,
+     "U_QUMRAN": 0.2139,
+     "U_NORTH": 0.0329,
+     "U_JERICHO": 0.0084,
+     "U_DESERT": 0.0075
+    },
+    "Shaveh": {
+     "U_JER": 0.3188,
+     "U_SOUTH": 0.2634,
+     "U_DESERT": 0.1337,
+     "U_JERICHO": 0.0924,
+     "U_QUMRAN": 0.0571
+    },
+    "Zadok": {
+     "U_JER": 0.5973,
+     "jer_south_wall": 0.0864,
+     "jer_se_corner": 0.0858,
+     "jer_kidron_mon": 0.0782,
+     "jer_kidron_east": 0.0763
+    }
+   }
+  },
+  "M6_joint_wA_eq_wL": {
+   "cfg": {
+    "w_A": 0.995,
+    "w_L": 0.995,
+    "lam": 2.0,
+    "rho": 0.9
+   },
+   "logml": 3.4745,
+   "name_group_location_posteriors": {
+    "Achor": {
+     "U_JERICHO": 0.3703,
+     "U_JER": 0.1497,
+     "ain_duk": 0.13,
+     "U_DESERT": 0.0916,
+     "U_QUMRAN": 0.0735
+    },
+    "Kohlit": {
+     "U_JER": 0.3989,
+     "U_JERICHO": 0.199,
+     "U_QUMRAN": 0.1355,
+     "U_DESERT": 0.1109,
+     "U_NORTH": 0.0699
+    },
+    "Melah": {
+     "U_JER": 0.5734,
+     "U_JERICHO": 0.1111,
+     "jer_temple": 0.0678,
+     "U_NORTH": 0.0666,
+     "jer_tyropoeon": 0.0652
+    },
+    "Secacah": {
+     "kh_qumran": 0.7346,
+     "wadi_qumran": 0.1563,
+     "U_QUMRAN": 0.0967,
+     "U_NORTH": 0.0074,
+     "U_JERICHO": 0.002
+    },
+    "Solomon": {
+     "kh_qumran": 0.7542,
+     "U_QUMRAN": 0.2197,
+     "U_JERICHO": 0.0081,
+     "U_DESERT": 0.0077,
+     "U_NORTH": 0.0074
+    },
+    "Shaveh": {
+     "U_JER": 0.3188,
+     "U_SOUTH": 0.2634,
+     "U_DESERT": 0.1337,
+     "U_JERICHO": 0.0924,
+     "U_QUMRAN": 0.0571
+    },
+    "Zadok": {
+     "U_JER": 0.5975,
+     "jer_south_wall": 0.0865,
+     "jer_se_corner": 0.0859,
+     "jer_kidron_mon": 0.0782,
+     "jer_kidron_east": 0.0763
+    }
+   }
+  },
+  "M5_joint_free_fit": {
+   "cfg": {
+    "w_A": 0.4,
+    "w_L": 0.8,
+    "lam": 8.0,
+    "rho": 0.9
+   },
+   "logml": 14.9805,
+   "name_group_location_posteriors": {
+    "Achor": {
+     "U_JERICHO": 0.3957,
+     "U_JER": 0.1308,
+     "ain_duk": 0.1222,
+     "U_QUMRAN": 0.0959,
+     "U_DESERT": 0.0869
+    },
+    "Kohlit": {
+     "U_JER": 0.2699,
+     "U_QUMRAN": 0.2517,
+     "U_JERICHO": 0.1929,
+     "U_NORTH": 0.1204,
+     "U_DESERT": 0.1027
+    },
+    "Melah": {
+     "U_JER": 0.4979,
+     "U_JERICHO": 0.1266,
+     "U_NORTH": 0.0969,
+     "U_QUMRAN": 0.0605,
+     "jer_temple": 0.0565
+    },
+    "Secacah": {
+     "kh_qumran": 0.7692,
+     "wadi_qumran": 0.1445,
+     "U_QUMRAN": 0.0854,
+     "U_DESERT": 0.0004,
+     "U_NORTH": 0.0002
+    },
+    "Solomon": {
+     "kh_qumran": 0.7889,
+     "U_QUMRAN": 0.2025,
+     "U_DESERT": 0.0046,
+     "U_JERICHO": 0.0029,
+     "U_JER": 0.0004
+    },
+    "Shaveh": {
+     "U_SOUTH": 0.5626,
+     "U_DESERT": 0.1519,
+     "U_JERICHO": 0.1114,
+     "U_JER": 0.0889,
+     "U_NORTH": 0.024
+    },
+    "Zadok": {
+     "U_JER": 0.6009,
+     "jer_south_wall": 0.0961,
+     "jer_se_corner": 0.0953,
+     "jer_kidron_mon": 0.0853,
+     "jer_kidron_east": 0.0831
+    }
+   }
+  }
+ },
+ "loo_itinerary_fitted": {
+  "all": 0.686,
+  "A": 0.269,
+  "B": 0.957,
+  "C": 0.839,
+  "D": 0.922
+ },
+ "loo_itinerary_wA0": {
+  "all": 0.594,
+  "A": 0.003,
+  "B": 0.944,
+  "C": 0.839,
+  "D": 0.922
+ },
+ "null_tests": {
+  "all_candidates": {
+   "n_entries": 56,
+   "strict_coords": true,
+   "excluded": [],
+   "desc_full": {
+    "observed": 1.6303,
+    "null_mean": 2.4679,
+    "null_sd": 0.1106,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_w0.98_lam2.0_full": {
+    "observed": 15.271,
+    "null_mean": -1.554,
+    "null_q95": 0.993,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_full": {
+    "observed": 18.781,
+    "null_mean": 0.238,
+    "p_value": 4.999750012499375e-05
+   },
+   "desc_within_block": {
+    "observed": 1.6303,
+    "null_mean": 2.0026,
+    "null_sd": 0.1001,
+    "p_value": 0.00014999250037498125
+   },
+   "logBF_w0.98_lam2.0_within_block": {
+    "observed": 15.271,
+    "null_mean": 6.968,
+    "null_q95": 9.834,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_within_block": {
+    "observed": 18.781,
+    "null_mean": 7.287,
+    "p_value": 4.999750012499375e-05
+   },
+   "desc_within_region": {
+    "observed": 1.6303,
+    "null_mean": 1.9148,
+    "null_sd": 0.0616,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_w0.98_lam2.0_within_region": {
+    "observed": 15.271,
+    "null_mean": 9.305,
+    "null_q95": 11.142,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_within_region": {
+    "observed": 18.781,
+    "null_mean": 11.342,
+    "p_value": 4.999750012499375e-05
+   }
+  },
+  "no_documented_order_derived": {
+   "n_entries": 46,
+   "strict_coords": true,
+   "excluded": [
+    "documented"
+   ],
+   "desc_full": {
+    "observed": 1.5072,
+    "null_mean": 2.3801,
+    "null_sd": 0.1037,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_w0.98_lam2.0_full": {
+    "observed": 10.052,
+    "null_mean": -1.409,
+    "null_q95": 0.532,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_full": {
+    "observed": 10.894,
+    "null_mean": 0.088,
+    "p_value": 4.999750012499375e-05
+   },
+   "desc_within_block": {
+    "observed": 1.5072,
+    "null_mean": 1.9164,
+    "null_sd": 0.076,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_w0.98_lam2.0_within_block": {
+    "observed": 10.052,
+    "null_mean": 4.564,
+    "null_q95": 6.298,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_within_block": {
+    "observed": 10.894,
+    "null_mean": 4.588,
+    "p_value": 4.999750012499375e-05
+   },
+   "desc_within_region": {
+    "observed": 1.5072,
+    "null_mean": 1.8762,
+    "null_sd": 0.0586,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_w0.98_lam2.0_within_region": {
+    "observed": 10.052,
+    "null_mean": 5.404,
+    "null_q95": 6.924,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_within_region": {
+    "observed": 10.894,
+    "null_mean": 5.446,
+    "p_value": 4.999750012499375e-05
+   }
+  },
+  "no_documented_or_likely": {
+   "n_entries": 35,
+   "strict_coords": true,
+   "excluded": [
+    "documented",
+    "likely"
+   ],
+   "desc_full": {
+    "observed": 1.636,
+    "null_mean": 2.3482,
+    "null_sd": 0.1196,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_w0.98_lam2.0_full": {
+    "observed": 5.696,
+    "null_mean": -1.594,
+    "null_q95": 0.144,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_full": {
+    "observed": 5.696,
+    "null_mean": 0.019,
+    "p_value": 4.999750012499375e-05
+   },
+   "desc_within_block": {
+    "observed": 1.636,
+    "null_mean": 1.9753,
+    "null_sd": 0.0933,
+    "p_value": 0.00014999250037498125
+   },
+   "logBF_w0.98_lam2.0_within_block": {
+    "observed": 5.696,
+    "null_mean": 2.023,
+    "null_q95": 3.616,
+    "p_value": 0.0002999850007499625
+   },
+   "logBF_profile_within_block": {
+    "observed": 5.696,
+    "null_mean": 2.275,
+    "p_value": 0.0002999850007499625
+   },
+   "desc_within_region": {
+    "observed": 1.636,
+    "null_mean": 1.8096,
+    "null_sd": 0.0432,
+    "p_value": 0.00014999250037498125
+   },
+   "logBF_w0.98_lam2.0_within_region": {
+    "observed": 5.696,
+    "null_mean": 3.757,
+    "null_q95": 4.931,
+    "p_value": 0.002049897505124744
+   },
+   "logBF_profile_within_region": {
+    "observed": 5.696,
+    "null_mean": 3.76,
+    "p_value": 0.002049897505124744
+   }
+  },
+  "all_candidates_nonstrict": {
+   "n_entries": 60,
+   "strict_coords": false,
+   "excluded": [],
+   "desc_full": {
+    "observed": 1.699,
+    "null_mean": 2.5653,
+    "null_sd": 0.1029,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_w0.98_lam2.0_full": {
+    "observed": 18.026,
+    "null_mean": -1.612,
+    "null_q95": 0.979,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_full": {
+    "observed": 25.176,
+    "null_mean": 0.214,
+    "p_value": 4.999750012499375e-05
+   },
+   "desc_within_block": {
+    "observed": 1.699,
+    "null_mean": 2.125,
+    "null_sd": 0.0975,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_w0.98_lam2.0_within_block": {
+    "observed": 18.026,
+    "null_mean": 7.699,
+    "null_q95": 10.663,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_within_block": {
+    "observed": 25.176,
+    "null_mean": 8.36,
+    "p_value": 4.999750012499375e-05
+   },
+   "desc_within_region": {
+    "observed": 1.699,
+    "null_mean": 2.0126,
+    "null_sd": 0.0615,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_w0.98_lam2.0_within_region": {
+    "observed": 18.026,
+    "null_mean": 10.838,
+    "null_q95": 12.94,
+    "p_value": 4.999750012499375e-05
+   },
+   "logBF_profile_within_region": {
+    "observed": 25.176,
+    "null_mean": 14.892,
+    "p_value": 4.999750012499375e-05
+   }
+  }
+ },
+ "loo_itinerary_fitted_no_documented": {
+  "all": 0.587,
+  "n": 47,
+  "A": [
+   0.481,
+   16
+  ],
+  "B": [
+   0.632,
+   12
+  ],
+  "C": [
+   0.445,
+   16
+  ],
+  "D": [
+   1.721,
+   3
+  ]
+ },
+ "loo_itinerary_fitted_no_documented_or_likely": {
+  "all": 0.514,
+  "n": 35,
+  "A": [
+   0.485,
+   16
+  ],
+  "B": [
+   0.407,
+   6
+  ],
+  "C": [
+   0.206,
+   10
+  ],
+  "D": [
+   1.903,
+   3
+  ]
+ }
+}
