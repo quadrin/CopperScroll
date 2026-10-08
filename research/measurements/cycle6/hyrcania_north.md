@@ -32,3 +32,9 @@ Accounting: zero new source targets (reinspection of archived Patrich/Eshel); on
 
 
 [Reproducible calculation](hyrcania_north_recompute.py), [fixed inputs, held-out residuals and raster provenance](orientation-transfer.json). Inputs distinguish the 718×1170 direct Eshel render from the 359×585 archived image; do not mix their pixel coordinates.
+
+## Bounded source follow-up — 8 October 2026 UTC / 7 October Los Angeles
+
+Focused searches for an original Hyrcania control plan recovered no independent surveyed bridge/pool-corner/fort control set or defined north datum. Recent excavation notices and institutional project descriptions supplied no substitute measurement package and were not adopted as controls. The Patrich–Eshel derivative comparison above remains the measured evidence; its picking envelope excludes north-convention and drawing-distortion error.
+
+Next intake remains an original control-bearing plan or point register, with CRS/north convention, feature definitions and an independently withheld landmark. No datum, WGS84 point, bearing correction or candidate confidence is added. Zero new primary targets, bounded candidate checks or outcomes; no new message or delivery request.

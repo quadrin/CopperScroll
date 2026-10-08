@@ -73,3 +73,9 @@ Even a sealed deposit containing the Festus specimen would ordinarily supply a t
 ## Citation and access references
 
 URLs and printed locators above are the durable references. Session citations: `turn285view2` / `turn287view0` for catalogue methodology; `turn268view0` / `turn287view1` for specimen rows; `turn266view0` and `turn271view0` for official open-access metadata; `turn266view1` for JSP 8; `turn267view0` for JSP 20; `turn280view0` for the catalogue's JavaScript-only response. The source-derived coin findings are concentrated in the short table/methodology block; subsequent discussion is the project's conditional context test. Access checked 1 October 2026.
+
+## Bounded source follow-up — 8 October 2026 UTC / 7 October Los Angeles
+
+Reopened the [official JSP20 architectural-volume record](https://www.israelexplorationsociety.com/product-page/jsp-20-mount-gerizim-excavations-the-architecture-of-private-dwellings), ISBN9789654067294,431pages. Its description confirms an architectural publication covering more than35 private buildings; it supplies no AreaP/5178 plan, basket51777 section or K35264 deposit record. The shop's2004 year remains unresolved catalogue metadata. The book interior and architectural concordance were not recovered.
+
+The supplied folder's complete115-document metadata audit and focused public searches recovered no exact JSP20 interior or field record joining **P5178 / basket51777 / K35264** to a named architectural feature. This bounds the retrieval result; it does not establish absence from the book or an archive. Continue only with a located architectural concordance and basket/section record. The coin date and isolated-find limits above remain unchanged. Zero new primary archaeological targets, tests, coordinates, confidence or outcomes; no outreach or delivery/order request.

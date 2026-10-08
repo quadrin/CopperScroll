@@ -189,7 +189,9 @@
         "basket": "1",
         "registration": "22227"
       }
-    ]
+    ],
+    "catalogue_permit": "L-656/1994-0",
+    "catalogue_name": "Cave with the Masonry Wall"
   },
   "kpi_recommendation": {
     "new_primary_targets": 1,
@@ -210,5 +212,47 @@
     "deduplication": "Prior counted target in tracker/source register is pp. 61–64. Earlier OCR/render files do not establish counted visual inspection of this scope.",
     "decisive_tests_added": 0,
     "closures_added": 0
+  },
+  "access_followup_2026_10_08": {
+    "sourcebook": {
+      "authors": [
+        "Raphael Greenberg",
+        "Adi Keinan"
+      ],
+      "year": 2009,
+      "title": "Israeli Archaeological Activity in the West Bank 1967–2007: A Sourcebook",
+      "url": "https://www.emekshaveh.org/he/wp-content/uploads/2013/09/WBADB_sourcebook.pdf",
+      "sha256": "449b419f6acbcc105b85d90fad8462a41a17e5617821fa51c99902ed7cec2204",
+      "inspection": "PDF page images visually inspected; extracted text used for navigation",
+      "classification": "derived excavation/permit catalogue; retrieval metadata only",
+      "date_utc": "2026-10-08"
+    },
+    "catalogue_entry": 291,
+    "printed_pages": [
+      64,
+      65
+    ],
+    "pdf_pages": [
+      68,
+      69
+    ],
+    "catalogue_name": "Cave with the Masonry Wall",
+    "catalogue_director": "Mikel Dadon",
+    "catalogue_permit": "L-656/1994-0",
+    "iv17_crosswalk": "provisional; director/permit/finds/publication agreement; original field-file confirmation pending",
+    "shared_grid_other_entries": [
+      {
+        "entry": 292,
+        "permit": "L-603/1993-0"
+      },
+      {
+        "entry": 293,
+        "permit": "L-623/1993-0"
+      }
+    ],
+    "original_field_file_inspected": false,
+    "new_archaeological_measurements": [],
+    "outreach_sent": false,
+    "accounting_delta": 0
   }
 }
