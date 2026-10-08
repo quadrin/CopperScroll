@@ -18,6 +18,8 @@ The [entry concordance](../tables/entry_concordance.csv) connects numbering acro
 
 ## Site and feature studies
 
+- [Entry schematics](schematics/README.md), 8 October 2026: one schematic plan per studied entry (60 of 61). Each shows one arrangement the text allows, with the recorded reading variants. They are not site reconstructions. The [Koḥlit rarity-count pre-registration](preregistration/kohlit_rarity_2026-10-08.md) was approved the same day; nothing has been counted yet.
+
 - [Feature workbench](feature_workbench/README.md), 8 October 2026: reusable relationship, inventory, historical-state, coverage and decision tools with reviewed data and an atlas interface. These exploratory pilots preserve unknown phases/datums and add no identification or research-counter increment.
 
 - Parallel research, 1 October 2026: [entry 25: Twin Cave versus IV/11](sites/entry25_twin_cave_followup_2026-10-01.md), [entry 32: Schneider and aqueduct routes](sources/entry32_parallel_followup_2026-10-01.md), [entries 20–23: original Qumran reports](sites/qumran_parallel_followup_2026-10-01.md), and [entry 40: survey and tomb drainage](sources/entry40_parallel_followup_2026-10-01.md). The [Horite tomb follow-up](sources/entry40_horite_followup_2026-10-01.md) checks the original 1960 dimensions and entrance inference. The [Gerizim locus 5178 check](sites/gerizim_locus5178_followup_2026-10-01.md) corrects the earlier three-coin-group inference. Exact access limits and the next feature-level tests are recorded in each note.
