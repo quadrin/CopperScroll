@@ -1,0 +1,47 @@
+{
+  "_note": "Frozen word lists for the Koḥlit rarity count, Stage 1. Matching is case-insensitive on whole words (a trailing plural s or es is allowed). Written before any regional screening was run.",
+  "pool_words": [
+    "pool",
+    "reservoir",
+    "birke",
+    "birkeh",
+    "birket",
+    "birka",
+    "birkat",
+    "tank",
+    "basin",
+    "spring-house",
+    "springhouse",
+    "spring house"
+  ],
+  "pool_fields": ["Site_Name", "Other_Names", "Site_Components", "More_Components", "Comments", "More_Comments"],
+  "settlement_terms": [
+    "tell",
+    "tel",
+    "ruin",
+    "village",
+    "settlement",
+    "town",
+    "city",
+    "fort",
+    "fortress",
+    "fortified",
+    "fortification",
+    "monastery",
+    "monastic",
+    "farmstead",
+    "farm",
+    "hamlet",
+    "palace",
+    "buildings",
+    "building remains",
+    "remains of buildings",
+    "structural remains"
+  ],
+  "settlement_name_prefixes": ["tell ", "tel ", "kh. ", "khirbet ", "khirbat ", "kh ", "deir ", "qasr ", "kafr "],
+  "settlement_fields": ["Site_Name", "Site_Components", "More_Components"],
+  "periods": {
+    "main": ["Hel", "Rom"],
+    "sensitivity_pre70": ["LP", "MP", "UP", "EP", "Natufian", "Neo", "PPN", "PN", "Chal", "EB", "EB1", "EB2_3", "IB", "MB", "MB2a", "MB2b_c", "LB", "IA", "IA1", "IA2", "Per", "Hel", "Rom"]
+  }
+}
