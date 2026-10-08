@@ -61,7 +61,7 @@ It writes `stage1a/stage1a_units.csv` (one row per unit, with its pool-word hits
 
 29 units are flagged by "basin" alone. Stage 2 decides whether a "basin" meets C1 (≥3 m across, or called a pool).
 
-### Where the exposed candidates land
+### Where the exposed candidates land (Stage 1a)
 
 These are reported as the protocol requires. They do not change the rules.
 
@@ -72,9 +72,30 @@ These are reported as the protocol requires. They do not change the rules.
 - **ʿEin el-Ghuweir (S4546).** Main set, R2, pending the SWP screen.
 - **Kh. Qumran (E754).** Main set, R2, goes to Stage 2.
 
-### Next
+## Stage 1b rules (frozen in `stage1b_swp.py` before the run)
 
-1. **Stage 1b, the SWP screen.** Freeze its rules, then match SWP Memoir site entries to units by name.
-2. **Stage 2.** Code the 186 main-set units, plus any that Stage 1b adds, from sources 1–5.
+Source 3 is the SWP *Memoirs*, volumes II (Samaria) and III (Judaea). The script reads archive.org's OCR text of each volume and stops if a file's SHA-256 differs from the frozen value.
+
+1. **Entries.** A Memoir entry starts at a line with a name, a map square such as `(L s)`, and a dash. A list number before the name is allowed. The entry text runs to the next entry, up to 4,000 characters. Page numbers come from the running heads and are approximate.
+2. **Position.** A square gives only a point at its centre. The calibration is the one in `agent_review_2026-10-07/wave1/T01_place_names`. An entry can link to a unit only if the square centre is within 9 km of the unit: half the square's diagonal (about 5.7 km) plus the calibration error (about 3 km).
+3. **Names.** The unit's WBADB name and Other_Names are compared with the Memoir name.
+   - **Dropped words:** articles (el, es, …) and feature-type words (Khirbet, Tell, ʿAin, Wadi, Bir, Birket, Qasr, Khallet, Rujm and their spellings). One source can write "Kh. X" where the other writes "X".
+   - **Name parts:** Beit, Deir, Kafr, Umm, Abu, Ras, Jebel, Sheikh and Nabi. The name is tried both with and without them.
+   - **Skeleton:** each name becomes a consonant skeleton (kh→h, q→k, doubled letters once, vowels out, y kept). An alternative name in "X, or Y" or in brackets is tried as well.
+   - **Match:** skeletons of 3 or more letters match at a difflib ratio of 0.85 or more. A 2-letter skeleton must be equal. A shorter name is not matched.
+4. **Pool words.** These are the same words as in Stage 1a (`words.json`), searched in the whole entry text.
+5. **Result.** A unit goes "to Stage 2" if Stage 1a or a linked Memoir entry has a pool word. If not, it is "not recorded", and C1 is UNKNOWN for that unit, never FAIL.
+
+**Before the freeze**, the parser was tested on the Memoir text only: header counts, sample names, and the keys of sample names. No unit was compared with a Memoir entry before this commit.
+
+**Limits.**
+- OCR errors in a name (for example "Am1eh") can stop a link. The cost of a missed link is an UNKNOWN, not a FAIL.
+- A false link only adds a Memoir entry to a unit's Stage 2 packet, and the coder rejects it there.
+- Units with no WBADB name (42 rows named "-") can link only through Other_Names.
+
+## Next
+
+1. **Stage 1b.** Run the frozen script and commit the result.
+2. **Stage 2.** Freeze the §4 matching script and the coding protocol, then code every unit that goes to Stage 2 from sources 1–5.
 
 The original survey entries (source 2), mainly Bar-Adon 1972 and Kallai 1972, are in Hebrew and exist only in libraries.
