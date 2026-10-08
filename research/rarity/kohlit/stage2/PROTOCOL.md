@@ -4,6 +4,8 @@ This file, `protocol_constants.json`, `coverage.json`, `build_packets.py` and `m
 
 **Amendment 1 (8 October 2026 UTC, before any sheet existed).** The first freeze (b7a682b) allowed `grid` only for a WBADB row that is itself the feature. That would leave every component of a neighbouring site without a position, so the survey level could almost never match. The amended §4 gives such a component its row's point. No unit had been coded when this was changed. One packet (E334, Tell es-Sultan) had been opened to test the builder. That check showed no WBADB row within 1 km of it in the north or east sector with a valid bearing.
 
+**Packet v2 (8 October 2026 UTC, during coder A's first wave).** Coders reported that long texts were cut off: SWP entries at 2,500 characters and Nigro entries at 6,000, so the Tell es-Sultan entry (cat. 85) stopped in its Early Bronze I bibliography. `build_packets.py` now gives SWP entries up to 12,000 characters and Nigro entries up to 30,000. The choice of SWP entries still uses the Stage 1b text, so only the text changed, in 25 packets. Coder A had already coded 15 of them. Those 15 sheets were set aside, not used, and the units were coded again from the v2 packets by a new coder A (batch A22). The cause was found from coder reports on the packets, not from any condition result; no matching had been run.
+
 **Deviation, logged.** §5 says that the matching script is committed "before Stage 1". It was committed after Stage 1 (screens 75b0af9 and 75ceb80) and before Stage 2. Stage 1 output holds no position, distance, bearing, mouth or date data, so no condition could be seen before this freeze.
 
 ## 1. Units and order

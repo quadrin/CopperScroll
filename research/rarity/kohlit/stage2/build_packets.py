@@ -45,7 +45,8 @@ HIGHLANDS_PAGE_OFFSET = 35          # PDF page = printed page + 35
 PACKET_RADIUS_M = 2_000
 SWP_MENTION_RADIUS_M = 15_000
 SWP_MAX_ENTRIES = 10
-SWP_TEXT_CHARS = 2_500
+SWP_TEXT_CHARS = 12_000          # packet v2: was 2,500, which cut long entries
+NIGRO_TEXT_CHARS = 30_000        # packet v2: was 6,000, which cut Tell es-Sultan (cat. 85)
 NIGRO_PRECISION_M = 30              # the catalogue says its seconds are "indicative" (1" is about 30 m)
 
 PERIOD_COLS = s1a.W["periods"]["sensitivity_pre70"] + ["Byz", "EIs", "Med", "Ott"]
@@ -164,7 +165,7 @@ def parse_nigro(pdf):
                 entries.append(cur)
             cur = {"cat_no": int(m.group(1)), "name": m.group(2).strip(), "page": page, "text": line}
             continue
-        if cur and len(cur["text"]) < 6000:
+        if cur and len(cur["text"]) < NIGRO_TEXT_CHARS:
             cur["text"] += "\n" + line
     if cur:
         entries.append(cur)
@@ -190,16 +191,54 @@ def swp_entries(f2, f3):
     for (vol, (_, digest)), path in zip(s1b.SWP_FILES.items(), (f2, f3)):
         if s1b.sha256(path) != digest:
             sys.exit(f"SWP {vol} text hash does not match the frozen value")
-    entries = s1b.parse("II", Path(f2).read_text(encoding="utf-8", errors="replace")) + \
-        s1b.parse("III", Path(f3).read_text(encoding="utf-8", errors="replace"))
+    t2 = Path(f2).read_text(encoding="utf-8", errors="replace")
+    t3 = Path(f3).read_text(encoding="utf-8", errors="replace")
+    entries = parse_swp_full("II", t2) + parse_swp_full("III", t3)
+    capped = s1b.parse("II", t2) + s1b.parse("III", t3)   # selection uses the Stage 1b text, as in v1
     to_grid = Transformer.from_crs("EPSG:4326", "EPSG:28193", always_xy=True)
-    for i, e in enumerate(entries):
+    for i, (e, ec) in enumerate(zip(entries, capped)):
         lat, lon = s1b.square_latlon(e["square"])
         gx, gy = to_grid.transform(lon, lat)
         e["gx"], e["gy"] = gx, gy - 1_000_000
         e["keys"] = s1b.name_keys(e["name"])
         e["uid"] = f"{e['vol']}-{i}"
-        e["word_keys"] = {s1b.skeleton([w]) for w in re.findall(r"[A-Za-z]{4,}", s1b.strip_marks(e["text"]).lower())}
+        e["word_keys"] = {s1b.skeleton([w]) for w in re.findall(r"[A-Za-z]{4,}", s1b.strip_marks(ec["text"]).lower())}
+    return entries
+
+
+def parse_swp_full(vol, text):
+    """Stage 1b's parse() with its 4,000-character cap on entry text removed (packet v2).
+    Entry boundaries, names, squares and pages are the same as in Stage 1b."""
+    page_marks = sorted([(m.start(), int(m.group(1))) for m in s1b.PAGE_EVEN.finditer(text)]
+                        + [(m.start(), int(m.group(1))) for m in s1b.PAGE_ODD.finditer(text)])
+    entries, cur, off, prev = [], None, 0, ""
+    for line in text.split("\n"):
+        start = off
+        off += len(line) + 1
+        probe = line
+        if (s1b.SQUARE_ONLY.match(line) and prev.strip() and len(prev.strip()) < 60
+                and not prev.rstrip().endswith((".", ",", ";"))):
+            probe = prev.strip() + "  " + line.strip()
+            if cur and cur["text"].endswith(prev):
+                cur["text"] = cur["text"][: -len(prev)].rstrip("\n")
+        m = s1b.HEADER.match(probe)
+        if m:
+            if cur:
+                entries.append(cur)
+            page = None
+            for o, n in page_marks:
+                if o <= start:
+                    page = n
+                else:
+                    break
+            name = re.sub(r"\s+", " ", s1b.collapse_spaced(m.group(1))).strip(" .,")
+            cur = dict(vol=vol, page=page, name=name, square=m.group(2) + m.group(3), text=probe)
+        elif cur and len(cur["text"]) < SWP_TEXT_CHARS:
+            cur["text"] += "\n" + line
+        if line.strip():
+            prev = line
+    if cur:
+        entries.append(cur)
     return entries
 
 
