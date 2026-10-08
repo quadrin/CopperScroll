@@ -28,7 +28,7 @@ Two waves of parallel AI research agents worked through a 19-task program aimed 
 **Entry order (R10)**
 - The wave-1 joint model (forward–backward over all entries) found the real order far more geographically coherent than shuffled orders (p ≤ 0.002 after removing order-derived candidates), but only at district level.
 - Its pull of entry 60 away from Tell es-Sultan is a kernel artifact. The kernel was Sinkhorn-normalised over a place list crowded around Jericho; with density-neutral kernels, P(entry 60 = Tell es-Sultan) is 0.28 against a prior of 0.30.
-- The order cannot separate the Koḥlit proposals. Replace the T06 kernel before using the order term again.
+- The order cannot separate the Koḥlit proposals. T06/W2B now default to K2; [the correction](wave2/W2B_model_v1/KERNEL_CORRECTION.md) records validation and remaining prior/finite-state dependence. Historical fits/significance were not recalibrated.
 
 **Greek letters (R11)**
 - IIP (5,553 records) and CIIP I, III, IV and V give parallels only for ΔΙ: a 1st-c. quarry counting mark at Hippos, CIIP V 6760, and the theatre-seat label Δι(ονυσίου), CIIP I 771b. There is also a disputed ΤΡ weight (CIIP I 666).
@@ -61,7 +61,7 @@ Two waves of parallel AI research agents worked through a 19-task program aimed 
 8. Carmel.
 9. Transjordan.
 
-The wave-1 registry (`wave1/T03_T04_registry/`, 79 predictions over 35 entries) is ready for public timestamping. Its entry-60 rows are superseded by this ranking.
+The wave-1 registry (`wave1/T03_T04_registry/`, 79 predictions over35 entries) is historical. Its entry60 records are superseded by [registry v2](wave2/W2B_model_v1/registry_v2_entry60.json), informed by the source follow-up; old heuristic values are explicitly historical and current target probabilities null. The [image-reading freeze `fd3f334`](https://github.com/quadrin/CopperScroll/commit/fd3f334ea2a40c0f8e99921ef663f8b126112fe1) fixes the XII10 criteria; no unused scan or confirmatory identification is certified.
 
 ## Imagery leads
 - **CORONA KH-4B, 26 Sep 1967:** DS1101-2168DF040/041/042 are already scanned at USGS and free with a login. Use DF041 for Tell es-Sultan, DF042 for Qumran and DF040 for ʿEin Samiya.
@@ -80,8 +80,8 @@ The wave-1 registry (`wave1/T03_T04_registry/`, 79 predictions over 35 entries) 
 Edition plates, page images, crops and screenshots of rights-restricted material (Puech, DJD, DQCAAS, HUJI, the manuscript viewers), raw downloads and extracted book text are not committed, per AGENTS.md. Reports cite them by page or figure. The three figures in `figures/` are a project plot and annotations of CC0 Bavarian frames; the comparison panel uses EOX Sentinel-2 cloudless 2024 tiles (CC BY-NC-SA 4.0, © EOX IT Services GmbH).
 
 ## Not accessed (still needed)
-- Kenyon, *Jericho* III (1981). Vol. II (1965) was read in the follow-up.
-- Kallai 1971/1972; Zohar, HA 76 (1981). Mazar, IEJ 45 (1995), Zohar, IEJ 30 (1980) and Dorrell, PEQ 125 (1993) were read in the follow-up.
+- The separate III plate volume: E section and Plate111b. III(1981) text pp.173–174 is now [inspected](followup/C_kenyon_jericho_II_and_kh_yanun.md); it describes north-slope graves and later undated quarry pits. The specific early mouth relation remains unresolved. Vol.II(1965) was read earlier.
+- Kallai 1972 pp.172–173 in Kochavi’s edited survey remains unread. Zohar, HA76(1981)p.19 is now [inspected](followup/B_kh_el_marjama.md#supplied-ha-76-original-inspected--8-october-utc--7-october-los-angeles) and supplies no pool observation. Mazar, IEJ 45 (1995), Zohar, IEJ 30 (1980) and Dorrell, PEQ 125 (1993) were read in the follow-up.
 - Bar-Adon 1972; Lurie 1963; Pixner 1983; Goranson 1992; Puech 1997.
 - NEAEHL vols 1–3; the DJD III plates; CIIP II (Jatt).
 - The Judaean Desert Greek papyri (papyri.info anti-bot); Leonard 2000 (numismatics). Finkelstein et al. 1997 was read in the follow-up.

@@ -1,5 +1,13 @@
 # W2-B — Joint model v1 and re-ranking of the entry-60 targets
 
+**8 October UTC implementation:** K2 is now the active default in both model
+runners; legacy Sinkhorn and all historical output files remain explicit.
+[Kernel correction](KERNEL_CORRECTION.md) records the bounded validation and
+nonstationary-prior limit. [Entry-60 registry v2](registry_v2_entry60.json) updates
+the search specifications with the follow-up and supersedes the historical
+entry-60 records. The tables and heuristic probabilities below retain their
+original agent-report scope; no target probability or confidence upgrade is claimed.
+
 Agent report, 7 October 2026, saved by the coordinator (the agent could not write report files). Wave-1 files were read only. Labels: EVIDENCE / INFERENCE.
 
 ## What was done
@@ -58,3 +66,4 @@ Puech's Tell es-Sultan partly derives from the order; entry 16's Tell es-Sultan 
 Library checks: Finkelstein et al. 1997 pp. 822–829 (Kh. Yanun caves/pits/tombs) for P60-T8; the 1941 El Mughaiyir sheet 15-18 with Lapp 1966 and Dever 1972 for what lies north of Kh. el-Marjama (P60-T3). Replace the T06 kernel with a density-neutral one before using the order term again.
 
 Files: registry_v1_entry60.csv; inputs/places_v1.csv, grid_conversions.csv, kohlit_proposals_v1.csv; outputs/table_order_BF_summary.csv, table_G_group_posteriors.csv, posterior_grid_v1.csv; scripts/ (grid_convert.py → build_inputs_v1.py → analysis_v1.py all → gmodel.py → summarize_v1.py → make_registry_v1.py; ~30 min on 2 cores).
+

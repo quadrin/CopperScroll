@@ -1,6 +1,8 @@
 # Copper Scroll prediction registry (draft 0.1, 6 October 2026)
 
-This folder turns the current Copper Scroll (3Q15) candidate identifications into dated, falsifiable predictions. A future excavation or survey report can be scored against them by someone who did not write them. **Nothing has been posted, committed or timestamped.** The section "How to timestamp it publicly" says how that could be done.
+This folder preserves the original Copper Scroll (3Q15) prediction registry. Its records and scoring rules are historical preparation material; repository publication does not certify that their observations were unused.
+
+**Current entry-60 work, 8 October UTC / 7 October Los Angeles:** [registry v2](../../wave2/W2B_model_v1/registry_v2_entry60.json) supersedes the entry-60 target ranking for the corrected model and source checks. The dedicated [XII 10 image-reading specification](XII10_IMAGE_READING_PROTOCOL.md) fixes the finite letter alternatives, frame/neighbor authentication, manual decision rules, exposure and lineage audit before further Manchester scans. The [image-reading freeze `fd3f334`](https://github.com/quadrin/CopperScroll/commit/fd3f334ea2a40c0f8e99921ef663f8b126112fe1) supplies the protocol timestamp; no unused image or confirmatory identification is claimed. Reading outcomes stay separate from this registry's archaeological L0–L4/MISS fields. For any future confirmatory use, the AGENTS.md unused-observation/discrimination requirements govern; a later download or report date alone cannot establish an unseen prediction. The instructions below describe the original draft workflow.
 
 ## Files
 
@@ -10,7 +12,7 @@ This folder turns the current Copper Scroll (3Q15) candidate identifications int
 | `registry.csv` | The same records, flattened (lists joined with ` \| `) |
 | `registry_schema.json` | JSON Schema (draft 2020-12) for one record |
 | `registry_hashes.txt` | SHA-256 of each record (canonical JSON, outcome fields excluded) |
-| `MANIFEST.sha256` | SHA-256 of every output file at build time |
+| `MANIFEST.sha256` | Current file hashes, including this README and the frozen protocol; original registry data hashes remain unchanged |
 | `entry60_readings.csv`, `copy_interpretations.csv`, `kohlit_proposals.csv`, `kohlit_joint_constraints.csv`, `kohlit_context_and_access.csv` | Goal B tables: entry 60 readings, views on "a copy of this document", Koḥlit proposals, joint constraints, rabbinic attestations, the access log |
 | `scripts/` | `records_a.py`, `records_b.py`, `records_c.py` (record text), `build_registry.py` (assembly, conversions, coordinates, hashes), `check_conversions.py` (checks that hand-typed metre windows match the computed ones), `make_goalB_tables.py` |
 | `downloads/` | Untrusted copies of repo files fetched from GitHub raw (read only) |
@@ -79,3 +81,4 @@ Any of these steps posts content publicly. They need the user's decision and, fo
 - Most archaeological facts come second-hand from the repo's files. Each `evidence` item says which file.
 - Measurement type (depth or distance) is disputed in many entries. Records carry both where the editions differ.
 - The registry predicts features and spots. It does not predict whether treasure survives. A MISS on a deposit, as opposed to a feature, is never claimed.
+

@@ -1,5 +1,13 @@
 # T06 — Placing all the entries together (joint placement model, v0)
 
+**8 October UTC correction:** this is the historical Sinkhorn report. The current
+runner defaults to W2B K2 (fixed global normalization), writes to `outputs_fixed/`,
+and retains explicit `transition="sinkhorn"` for reproducing the files in `outputs/`.
+The entry-60 demotion in finding 4 is withdrawn as an arrival-density artifact;
+see [the bounded correction and limits](../../wave2/W2B_model_v1/KERNEL_CORRECTION.md).
+Historical fitted weights, significance claims and posterior files below are not
+relabelled as corrected results.
+
 Agent report, 6 October 2026, saved by the coordinator. v0, built on existing data only; results from tasks 1 and 5 should be added as rows in `inputs/*.csv` and the model re-run. It identifies no individual hiding place. Labels: EVIDENCE / INFERENCE.
 
 ## Model
@@ -38,3 +46,4 @@ To add evidence, append rows to `inputs/candidates_v0.csv` (optional `prior_over
 
 ## Best next step
 Order-independent location evidence for Koḥlit and Secacah (from tasks 1 and 5), then re-run with `exclude_order_derived=documented`.
+
