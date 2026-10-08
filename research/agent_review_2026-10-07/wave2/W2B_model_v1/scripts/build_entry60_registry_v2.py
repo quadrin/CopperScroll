@@ -39,7 +39,7 @@ def main():
                  current_target_probability=None, reading_protocol=PROTOCOL,
                  claim_result="not identifiable from available evidence",
                  unused_prediction_available=None, unseen_prediction_registered=False,
-                 prior_exposure="Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, "
+                 prior_exposure="Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, "
                  "Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected "
                  "for this update. Download recency alone cannot establish an unused observation.",
                  next_desk_test=t["next_desk_test"],
@@ -85,7 +85,20 @@ def main():
             r["evidence"] += [
                 dict(label="EVIDENCE", claim="Kenyon II records Roman shaft reuse and northern pits/cistern; a "
                      "joint pit-mouth/tomb-mouth relation is not demonstrated.", source="Kenyon II pp. 276-277, 516, "
-                     "539-544, followup/C; III (1981) pp. 173-174 remains unread."),
+                     "539-544, followup/C."),
+                dict(label="EVIDENCE", claim="About 18 shaft graves occur on the north slope in Trench II, Site O, "
+                     "Stage XXIV, phase lxxvi, mostly in the northern trench up to 42.50 m N. They have side-undercut "
+                     "recesses and mostly mudbrick covers, with maximum surviving shaft depth 1.25 m; orientation is "
+                     "E-W with heads W. No offerings were found. First-century AD attribution uses grave-type "
+                     "comparison with the northern cemetery and Qumran, without direct grave-associated dating finds; "
+                     "Qumran's N-S orientation differs.",
+                     source="Authenticated Kenyon, Excavations at Jericho III (1981), pp. 173-174/PDF 207-208; followup/C."),
+                dict(label="EVIDENCE", claim="Stage XXV, phase lxxvii pits are brickearth quarries later than the graves; "
+                     "they truncate many graves and are rubble-filled, without an absolute date beyond later than the "
+                     "graves. They supply no dated early accessible pit with graves at its mouth. The separate E section "
+                     "(37.50-38 m N/8.17 m H) and Plate 111b remain needed; adjacent Plate 256a is an Iron-phase plan. "
+                     "The local trench coordinates have no national datum.",
+                     source="Kenyon III (1981) pp. 173-174/PDF 207-208; introduction pp. 3-4/PDF 37-38; followup/C."),
                 dict(label="EVIDENCE", claim="The existing reservoir was built in 1898; the curved spring-house "
                      "wall has a tentative later ancient date.", source="Dorrell 1993 pp. 111-112; followup/A")]
             # Supersede the old statement 'no pit reported north of tell'.

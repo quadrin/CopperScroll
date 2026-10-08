@@ -33,7 +33,7 @@ def coord(pid):
 
 T = [
     # new_rank, old_rank, id, target, proposal, branches, place_id, P_heuristic, change, reasons, next test
-    (1, 1, 'P60-T1', reg['P60-T1']['site_name'] + ': cemetery zone N/NW of the tell', 'Puech (hypothesis)',
+    (1, 1, 'P60-T1', reg['P60-T1']['site_name'] + ': north-slope graves and cemetery zone N/NW of the tell', 'Puech (hypothesis)',
      'RB-M, RB-P, RB-B', 'tell_es_sultan', '0.13-0.24',
      'unchanged (wave-1 demotion withdrawn)',
      'INFERENCE (medium): the wave-1 order-based demotion (entry 60 P 0.30->0.10, "pulled north") does not survive a '
@@ -41,13 +41,23 @@ T = [
      'fixed+grid 0.28) and P(N of 32.05 N) falls from 0.71 to 0.10-0.39 (prior-level). Entry-60-only order Bayes factor vs '
      'ʿEin Samiya is within a factor 1.5 in the reported density-neutral models. EVIDENCE: Kenyon II records northern Roman '
      'graves, Roman reuse of Bronze Age shafts (D9; G2/G81/J41), a Roman cistern N.S.1 and deep pit P29. No published '
-     'pit-mouth/tomb-mouth join is established. The present spring reservoir dates from 1898; the curved ancient wall is '
+     'pit-mouth/tomb-mouth join is established. Authenticated Kenyon III (1981) pp. 173-174 records about 18 graves '
+     'on the north slope (Trench II, Site O, Stage XXIV, phase lxxvi), mostly in the northern trench up to 42.50 m N: '
+     'shafts with side-undercut recesses, mostly mudbrick covers, maximum surviving depth 1.25 m. These are E-W with '
+     'heads W, unlike the N-S Qumran graves. No offerings; first-century AD attribution is by grave-type comparison '
+     'with Kenyon II pp. 516, 536-537 and Qumran, without direct grave-associated dating finds. Stage XXV, phase '
+     'lxxvii pits are later brickearth quarries truncating many graves, rubble-filled and without an absolute date; '
+     'they do not secure an early accessible pit/grave-mouth join. The present spring reservoir dates from 1898; '
+     'the curved ancient wall is '
      'only provisionally late Roman/Byzantine (Dorrell 1993 pp. 111-112). No Herodian pool east is demonstrated. '
      'Weaknesses unchanged: Puech partly relies on name '
      'continuity (Zissu p. 149) i.e. order-derived; the name Jericho persisted; b. Qid 66a puts Kohalit "in the desert". '
      'Field reality: the sector N of the tell is built over (T09).',
-     'Desk: Kenyon III (1981) pp. 173-174 remains unread; locate D9/N.S.1/P29 precisely and test the mouth relation '
-     'with a dated plan. Kenyon II has been read; its modern copy is not a holdout. 1918/RAF imagery remains pending.'),
+     'Desk: Kenyon III pp. 173-174 is inspected. Obtain the separate plate volume E section (37.50-38 m N/8.17 m H) '
+     'and Plate 111b to resolve grave/quarry-pit relations, accessibility and dating; adjacent Plate 256a is an '
+     'Iron-phase plan, not a Roman grave map. Local trench coordinates lack a national datum. Locate D9/N.S.1/P29 '
+     'precisely with a dated plan. Known grave descriptions are exploratory exposure; a fresh copy is not a holdout. '
+     '1918/RAF imagery remains pending.'),
     (2, 3, 'P60-T3 (re-scoped)', "ʿEin Samiya valley (Zissu): pit/shaft N of the Kh. el-Marjama tell with tombs at "
      "its mouth; Kh. Samiya's Roman tombs are a separate S/SE feature", 'Zissu 2001',
      'RB-M, RB-P, RB-B (NOT RB-L: under RB-L the pit is at Janoah, see P60-T8)', 'ein_samiya', '0.13-0.17',

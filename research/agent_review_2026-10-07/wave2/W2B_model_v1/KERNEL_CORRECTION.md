@@ -56,8 +56,12 @@ Tell es-Sultan stays first in the desk-work queue; the old order demotion is
 withdrawn. Kenyon II's pits/shafts and graves do not establish the joint
 pit-mouth/tomb-mouth relation. The 1898 reservoir supplies no Herodian pool match.
 The Samiya target is north of Kh. el-Marjama; southern Roman tombs cannot supply
-that northern relation. The supplied HA 76 p. 19 settlement report lacks the
-hydraulic observation; Kallai's exact pages/pool remain outstanding. The Janoaḥ
+that northern relation. The supplied HA 76 p.19 settlement report lacks the
+hydraulic observation; Kallai's exact pages/pool remain outstanding. Newly supplied
+Kenyon III pp.173–174 describes about18 north-slope graves dated by type to the
+first century AD and later undated quarry pits that truncate graves. III source
+access is resolved; an early usable pit-mouth/tomb-mouth relation is unestablished,
+and the separate E section/Plate111b remains needed. The Janoaḥ
 reading routes entry 60 to Kh. Yanun/Yanun; report silence there is unknown coverage.
 
 No new Manchester master image was inspected. The

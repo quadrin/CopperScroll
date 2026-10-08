@@ -22,7 +22,7 @@
       "entry_title_project": "The final Kohlit entry",
       "entry_text_he": "בשית שבצחצפון כחלת פתח אצפון / וקברין על פיה משנא הכתב הזא / ופרושיו ומשחותיהם ופרוט כל / אחד ואחד",
       "entry_text_en_project": "In the pit that is on the north side of Koḥlit, its opening to the north, / with tombs at its mouth: a copy of this document, / and its explanation, and their measurements, and the details of / each and every one.",
-      "branch": "Tell es-Sultan (Old Jericho, Elisha's spring): cemetery zone N/NW of the tell",
+      "branch": "Tell es-Sultan (Old Jericho, Elisha's spring): north-slope graves and cemetery zone N/NW of the tell",
       "rank": 1,
       "reading_assumed": "RB-M (Milik, north-facing opening), RB-P (Puech, concealed opening without required azimuth), and separately RB-B ('buried', no required tombs). RB-L is excluded here and routed to P60-T8.",
       "reading_editions": [
@@ -33,7 +33,7 @@
       ],
       "reading_status": "Edition alternatives unresolved; follow the image-reading protocol before new scans.",
       "place_id": "tell_es_sultan",
-      "site_name": "Tell es-Sultan (Old Jericho, Elisha's spring): cemetery zone N/NW of the tell",
+      "site_name": "Tell es-Sultan (Old Jericho, Elisha's spring): north-slope graves and cemetery zone N/NW of the tell",
       "project_entry_status": "possible only",
       "project_entry_confidence": "low",
       "project_candidate_status": "possible/low",
@@ -42,11 +42,11 @@
       "anchor_precision": "~150 m",
       "anchor_note": "Gazetteer anchor for the site/area (shared/places.json), NOT the predicted feature's position.",
       "feature_type": "pit/shaft north of the Koḥlit anchor with tombs at its mouth (one of ≥2 pits there)",
-      "feature_detail": "INFERENCE (medium): the wave-1 order-based demotion (entry 60 P 0.30->0.10, \"pulled north\") does not survive a density-neutral itinerary kernel: on the T06 inputs themselves P(entry 60 = Tell es-Sultan) stays 0.28 (fixed kernel; fixed+grid 0.28) and P(N of 32.05 N) falls from 0.71 to 0.10-0.39 (prior-level). Entry-60-only order Bayes factor vs ʿEin Samiya is within a factor 1.5 in the reported density-neutral models. EVIDENCE: Kenyon II records northern Roman graves, Roman reuse of Bronze Age shafts (D9; G2/G81/J41), a Roman cistern N.S.1 and deep pit P29. No published pit-mouth/tomb-mouth join is established. The present spring reservoir dates from 1898; the curved ancient wall is only provisionally late Roman/Byzantine (Dorrell 1993 pp. 111-112). No Herodian pool east is demonstrated. Weaknesses unchanged: Puech partly relies on name continuity (Zissu p. 149) i.e. order-derived; the name Jericho persisted; b. Qid 66a puts Kohalit \"in the desert\". Field reality: the sector N of the tell is built over (T09).",
+      "feature_detail": "INFERENCE (medium): the wave-1 order-based demotion (entry 60 P 0.30->0.10, \"pulled north\") does not survive a density-neutral itinerary kernel: on the T06 inputs themselves P(entry 60 = Tell es-Sultan) stays 0.28 (fixed kernel; fixed+grid 0.28) and P(N of 32.05 N) falls from 0.71 to 0.10-0.39 (prior-level). Entry-60-only order Bayes factor vs ʿEin Samiya is within a factor 1.5 in the reported density-neutral models. EVIDENCE: Kenyon II records northern Roman graves, Roman reuse of Bronze Age shafts (D9; G2/G81/J41), a Roman cistern N.S.1 and deep pit P29. No published pit-mouth/tomb-mouth join is established. Authenticated Kenyon III (1981) pp. 173-174 records about 18 graves on the north slope (Trench II, Site O, Stage XXIV, phase lxxvi), mostly in the northern trench up to 42.50 m N: shafts with side-undercut recesses, mostly mudbrick covers, maximum surviving depth 1.25 m. These are E-W with heads W, unlike the N-S Qumran graves. No offerings; first-century AD attribution is by grave-type comparison with Kenyon II pp. 516, 536-537 and Qumran, without direct grave-associated dating finds. Stage XXV, phase lxxvii pits are later brickearth quarries truncating many graves, rubble-filled and without an absolute date; they do not secure an early accessible pit/grave-mouth join. The present spring reservoir dates from 1898; the curved ancient wall is only provisionally late Roman/Byzantine (Dorrell 1993 pp. 111-112). No Herodian pool east is demonstrated. Weaknesses unchanged: Puech partly relies on name continuity (Zissu p. 149) i.e. order-derived; the name Jericho persisted; b. Qid 66a puts Kohalit \"in the desert\". Field reality: the sector N of the tell is built over (T09).",
       "period_requirement": "Feature must be shown to exist (built, or standing as an accessible ruin) at some time within c. 50 BCE–70 CE (the repo's criterion 'in use 1st c. BCE–70 CE'); an extended window to 135 CE is allowed to cover the Bar Kokhba-era dating reported for Gibson 2025/26. A feature whose earliest construction is securely later than 135 CE is a period MISS for that feature.",
       "orientation_constraint": "north of an explicitly defined Koḥlit anchor under RB-M/P/B; RB-L pit at Janoaḥ",
       "measures": [],
-      "location_constraint": "Tell es-Sultan (Old Jericho, Elisha's spring): cemetery zone N/NW of the tell; feature position and target coverage unknown",
+      "location_constraint": "Tell es-Sultan (Old Jericho, Elisha's spring): north-slope graves and cemetery zone N/NW of the tell; feature position and target coverage unknown",
       "confirm": "Conditional feature relation only: identify and independently date an accessible pit/shaft and its mouth/tomb relation within the stated period, applying every retained reading to every eligible alternative. RB-M requires a north-facing side opening; RB-P requires evidence of concealment; RB-B requires no tomb landmark. A vertical opening has no facing azimuth without a defined entrance. For RB-L use the Janoaḥ target and separately test the north-of-Koḥlit relation. Legacy 315-045 degrees and <=5 m proximity are exploratory operational choices, not text-derived tolerances. Register field datums and finite tolerances before any reserved field observation. Identification support additionally requires a complete registered control inventory, discrimination and a demonstrably unused prediction. All remain pending.",
       "miss": "A securely later construction rejects only the specified feature/period branch. Contradiction of all retained relations can reject that feature branch. Report silence, undated shafts and partial coverage remain unknown. Target-wide rejection requires bounded ancient target coverage, every eligible alternative and detection limits; these are not supplied. An empty pit alone does not reject a buried document.",
       "inconclusive": "Current result: not identifiable from available evidence. No surveyed and dated pit-mouth/tomb-mouth relation, complete regional denominator or unused field prediction is established. New images may settle a reading branch only; they cannot independently confirm a pit or Koḥlit identification.",
@@ -94,7 +94,17 @@
         {
           "label": "EVIDENCE",
           "claim": "Kenyon II records Roman shaft reuse and northern pits/cistern; a joint pit-mouth/tomb-mouth relation is not demonstrated.",
-          "source": "Kenyon II pp. 276-277, 516, 539-544, followup/C; III (1981) pp. 173-174 remains unread."
+          "source": "Kenyon II pp. 276-277, 516, 539-544, followup/C."
+        },
+        {
+          "label": "EVIDENCE",
+          "claim": "About 18 shaft graves occur on the north slope in Trench II, Site O, Stage XXIV, phase lxxvi, mostly in the northern trench up to 42.50 m N. They have side-undercut recesses and mostly mudbrick covers, with maximum surviving shaft depth 1.25 m; orientation is E-W with heads W. No offerings were found. First-century AD attribution uses grave-type comparison with the northern cemetery and Qumran, without direct grave-associated dating finds; Qumran's N-S orientation differs.",
+          "source": "Authenticated Kenyon, Excavations at Jericho III (1981), pp. 173-174/PDF 207-208; followup/C."
+        },
+        {
+          "label": "EVIDENCE",
+          "claim": "Stage XXV, phase lxxvii pits are brickearth quarries later than the graves; they truncate many graves and are rubble-filled, without an absolute date beyond later than the graves. They supply no dated early accessible pit with graves at its mouth. The separate E section (37.50-38 m N/8.17 m H) and Plate 111b remain needed; adjacent Plate 256a is an Iron-phase plan. The local trench coordinates have no national datum.",
+          "source": "Kenyon III (1981) pp. 173-174/PDF 207-208; introduction pp. 3-4/PDF 37-38; followup/C."
         },
         {
           "label": "EVIDENCE",
@@ -133,10 +143,10 @@
       "claim_result": "not identifiable from available evidence",
       "unused_prediction_available": null,
       "unseen_prediction_registered": false,
-      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
-      "next_desk_test": "Desk: Kenyon III (1981) pp. 173-174 remains unread; locate D9/N.S.1/P29 precisely and test the mouth relation with a dated plan. Kenyon II has been read; its modern copy is not a holdout. 1918/RAF imagery remains pending.",
+      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
+      "next_desk_test": "Desk: Kenyon III pp. 173-174 is inspected. Obtain the separate plate volume E section (37.50-38 m N/8.17 m H) and Plate 111b to resolve grave/quarry-pit relations, accessibility and dating; adjacent Plate 256a is an Iron-phase plan, not a Roman grave map. Local trench coordinates lack a national datum. Locate D9/N.S.1/P29 precisely with a dated plan. Known grave descriptions are exploratory exposure; a fresh copy is not a holdout. 1918/RAF imagery remains pending.",
       "previous_record_sha256": "c576d266ab3c273783e527942e2c7abd3daa5ca51604c024121aa52ed30eefae",
-      "record_sha256": "168a17af09ce26edee1d5f22cbf5fa02775fb7cc02297999620aa8bb8655dd09"
+      "record_sha256": "95f0caa0b448c91e3f4bda92480f997ac69298631af78b555838925651f94bc1"
     },
     {
       "id": "P60-T3",
@@ -236,10 +246,10 @@
       "claim_result": "not identifiable from available evidence",
       "unused_prediction_available": null,
       "unseen_prediction_registered": false,
-      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
+      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
       "next_desk_test": "Desk: obtain Kallai 1972 pp. 172-173 and a dated pool plan; survey northern shafts with construction/reuse evidence and their relation to Kh. el-Marjama. HA 76 p. 19 is inspected and its hydraulic coverage check is closed.",
       "previous_record_sha256": "cc6157b0b48c19102200a54ece714c460c8842a8fa1f5b554a1dffc3ebe6fe59",
-      "record_sha256": "d17acef51f73a2ebb3894e883e86b8faebafb7c7b74b89681f619c1e4d5302ad"
+      "record_sha256": "595897e949afdcae96e2460258fc1b22c12655dc97d29a5dc46da409a6776280"
     },
     {
       "id": "P60-T8",
@@ -330,10 +340,10 @@
       "claim_result": "not identifiable from available evidence",
       "unused_prediction_available": null,
       "unseen_prediction_registered": false,
-      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
+      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
       "next_desk_test": "Desk: Highlands pp. 828-831 has been inspected: Kh. Yanun has no recorded pit/cistern/tomb; Roman 3.3% is undivided. Yanun village pp. 821-822 notes nearby burial caves, with no dated mouth relation. These are unknown coverage, not scored absence. Apply the registered XII10 image protocol to demonstrably new master images.",
       "previous_record_sha256": null,
-      "record_sha256": "ede05cbdeb2b0de64ff4e3cd6aaf0c4aaf08a5cacb47890b2e71f8324062c867"
+      "record_sha256": "935512c4a537cfb83f7fd36ec4f8faa2121d3c2fb65d01ef922cc463f75857ae"
     },
     {
       "id": "P60-T2",
@@ -432,10 +442,10 @@
       "claim_result": "not identifiable from available evidence",
       "unused_prediction_available": null,
       "unseen_prediction_registered": false,
-      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
+      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
       "next_desk_test": "Desk: Bar-Adon's ʿEin el-Ghuweir report for shafts/pits among or by the graves.",
       "previous_record_sha256": "d28e38a32a3b85995f394a53d6fb5685db509463fbf5fdb1b2780ecfaf2e793b",
-      "record_sha256": "c8e9fa0dd16d982613204f22c287b45ebcbd199faa64ba79b652b10b3313f228"
+      "record_sha256": "60d73d549e2541e24142b5866899efd60925215205d4d5678dcc7b1489f63be6"
     },
     {
       "id": "P60-T7",
@@ -527,10 +537,10 @@
       "claim_result": "not identifiable from available evidence",
       "unused_prediction_available": null,
       "unseen_prediction_registered": false,
-      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
+      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
       "next_desk_test": "None before T1-T3.",
       "previous_record_sha256": "8dfcf7cf5413e47945b5e66ccfeb4a064a9b599e043d3bf837de2c14b8906a9a",
-      "record_sha256": "d2a0ae0e62f3fe9d8906bf80fa964bae62eb3025dda469039a9b1c72ef8fc91c"
+      "record_sha256": "37dd3093edc94749afcf37d116a5575a7097eef2ebbc824f68b46fb81ca61dd7"
     },
     {
       "id": "P60-T4",
@@ -622,10 +632,10 @@
       "claim_result": "not identifiable from available evidence",
       "unused_prediction_available": null,
       "unseen_prediction_registered": false,
-      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
+      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
       "next_desk_test": "None.",
       "previous_record_sha256": "5ac4ef35a1bb148d220b519d7251c4a8487a6ec327e0ed1bce67ea92c9ccbf36",
-      "record_sha256": "27ac38724c418d39ad00bc74c4711ec3eb1b2211fea18321ae9d2089c4c8d977"
+      "record_sha256": "363864ac306c9eccdcd0859c2de6d1b1c04f375b141d840ec1c153884f2555a1"
     },
     {
       "id": "P60-T9",
@@ -710,10 +720,10 @@
       "claim_result": "not identifiable from available evidence",
       "unused_prediction_available": null,
       "unseen_prediction_registered": false,
-      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
+      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
       "next_desk_test": "Desk: locate Bar-Adon 1972 site 83 (map ref.) before any scoring.",
       "previous_record_sha256": null,
-      "record_sha256": "31193d0f13e6c085b4c78140ecb093a9eebc1ded74f1f5ab3e46a68e07d44eb1"
+      "record_sha256": "ceeba9098915cb3feece63d08ecdffddfd4e200d235150c520019c1a0a712f2b"
     },
     {
       "id": "P60-T6",
@@ -811,10 +821,10 @@
       "claim_result": "not identifiable from available evidence",
       "unused_prediction_available": null,
       "unseen_prediction_registered": false,
-      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
+      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
       "next_desk_test": "Desk only if T1-T3 fail: SWP I p. 302 cave description.",
       "previous_record_sha256": "1316f44c646624b19a752287a3f5d8942b7e9d0f79963415b14641e2c2c91d57",
-      "record_sha256": "6a1b99227f50c117f58d652abc86c6a39c9861dfae0add7d62bada90b961c8c9"
+      "record_sha256": "d0ffadfc7a514019f2bd2294ecdb2263c44e063952020c9c6eada238193fbe84"
     },
     {
       "id": "P60-T5",
@@ -912,10 +922,10 @@
       "claim_result": "not identifiable from available evidence",
       "unused_prediction_available": null,
       "unseen_prediction_registered": false,
-      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
+      "prior_exposure": "Known editions, project plates/readings, W2B model results, Kenyon II and III pp. 173-174, Highlands, Dorrell/Warren and Zohar summaries informed selection. No new Manchester master was inspected for this update. Download recency alone cannot establish an unused observation.",
       "next_desk_test": "Read Goranson CSS pp. 226-232 for a named area.",
       "previous_record_sha256": "74dfec7f314686c0a979677e263ef1eae7e6fda2a5cb6cb4f9f56386e12732f9",
-      "record_sha256": "ff17a9960e7b14a3379edb390e0966cc179bc5c2a9de0de68237c614828a26ab"
+      "record_sha256": "1740bdcf4dacd150ff671c991cd700fa06fd8fa0fea076d68d715a74d515ff61"
     }
   ]
 }

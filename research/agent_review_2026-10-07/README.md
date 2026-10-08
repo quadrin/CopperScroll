@@ -80,7 +80,7 @@ The wave-1 registry (`wave1/T03_T04_registry/`, 79 predictions over35 entries) i
 Edition plates, page images, crops and screenshots of rights-restricted material (Puech, DJD, DQCAAS, HUJI, the manuscript viewers), raw downloads and extracted book text are not committed, per AGENTS.md. Reports cite them by page or figure. The three figures in `figures/` are a project plot and annotations of CC0 Bavarian frames; the comparison panel uses EOX Sentinel-2 cloudless 2024 tiles (CC BY-NC-SA 4.0, © EOX IT Services GmbH).
 
 ## Not accessed (still needed)
-- Kenyon, *Jericho* III (1981). Vol. II (1965) was read in the follow-up.
+- The separate III plate volume: E section and Plate111b. III(1981) text pp.173–174 is now [inspected](followup/C_kenyon_jericho_II_and_kh_yanun.md); it describes north-slope graves and later undated quarry pits. The specific early mouth relation remains unresolved. Vol.II(1965) was read earlier.
 - Kallai 1972 pp.172–173 in Kochavi’s edited survey remains unread. Zohar, HA76(1981)p.19 is now [inspected](followup/B_kh_el_marjama.md#supplied-ha-76-original-inspected--8-october-utc--7-october-los-angeles) and supplies no pool observation. Mazar, IEJ 45 (1995), Zohar, IEJ 30 (1980) and Dorrell, PEQ 125 (1993) were read in the follow-up.
 - Bar-Adon 1972; Lurie 1963; Pixner 1983; Goranson 1992; Puech 1997.
 - NEAEHL vols 1–3; the DJD III plates; CIIP II (Jatt).
