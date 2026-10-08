@@ -2,11 +2,11 @@
 
 Updated 8 October 2026 UTC / 7 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (7 October LA): status files shortened and bookkeeping rules changed; no new evidence sought.
+Last session (7 October LA): **obtained**: Wright Baker's saw width, 0.006 in (*BJRL* 39.1 p. 50), used in the [saw-gap check](agent_review_2026-10-07/followup/G_saw_gap_xii10.md). Status files were also shortened and the bookkeeping rules changed.
 
 ## Active questions and the observation that decides each
 
-1. **Koḥlit: is "Janoaḥ" possible at XII 10? (R07, entry 60).** Decisive: a high-resolution image of XII 10 at the segment 21/22 saw cut, read under the [frozen protocol](agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md) (`fd3f334`): is there an extra stroke after bet/kaf, is the second letter ב or כ, is the last ח or ה. No such image has been opened.
+1. **Koḥlit: is "Janoaḥ" possible at XII 10? (R07, entry 60).** Decisive: a high-resolution image of XII 10 at the segment 21/22 saw cut, read under the [frozen protocol](agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md) (`fd3f334`): is there an extra stroke after bet/kaf, is the second letter ב or כ, is the last ח or ה. No such image has been opened. The [saw-gap check](agent_review_2026-10-07/followup/G_saw_gap_xii10.md) found that the 0.15 mm saw cut cannot hide a whole yod or waw. The editions place the cut through the final letter, so ה/ח remains open and edge damage is unmeasured.
 2. **Koḥlit at Tell es-Sultan: a pit north of the site with graves at its mouth (entry 60).** Decisive: a dated pit-mouth or tomb-mouth relation in the strip just north of the tell. Kenyon II–III give first-century graves and later, undated quarry pits that cut them ([C](agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md)); the strip itself was never searched and has been under the ʿAin es-Sultan camp since 1948.
 3. **Koḥlit: the pool east of the site (entry 11).** Decisive: a construction date for a pool east of a candidate. At ʿAin es-Sultan, sealed finds under the lowest course of the spring-house wall (Dorrell 1993 p. 112); at Kh. el-Marjama, Kallai 1972 pp. 172–173 locating the pool ([B](agent_review_2026-10-07/followup/B_kh_el_marjama.md)).
 
