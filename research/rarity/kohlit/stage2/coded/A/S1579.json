@@ -1,0 +1,148 @@
+{
+ "unit_id": "S1579",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "read",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1579 Site_Components",
+   "quote": "water supply system; aqueducts; pool; bathhouse",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E200 Site_Components",
+   "quote": "aqueducts; pool; bathhouse",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E200"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E200; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E200 Site_Components",
+   "quote": "Chal (Ghassulian) settlement remains",
+   "type": "pit",
+   "subtype": "pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E200"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed among the Chal (Ghassulian) settlement remains"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E200 Site_Components",
+   "quote": "pits, hearths, infant burials",
+   "type": "grave",
+   "subtype": "infant burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E200"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed among the Chal (Ghassulian) settlement remains"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E198 Site_Components",
+   "quote": "aqueducts; wells",
+   "type": "pit",
+   "subtype": "wells",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E198"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E198; not dated itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S5991 Site_Components",
+   "quote": "structures; modern tombs",
+   "type": "grave",
+   "subtype": "modern tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S5991"
+   },
+   "date": {
+    "code": "L",
+    "basis": "the source calls the tombs modern"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "3",
+   "cite": "Mem II p. 392",
+   "quote": "it supplied four tanks",
+   "type": "pool",
+   "subtype": "tanks",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "3",
+   "cite": "Mem II p. 392",
+   "quote": "passes in one place through a line of pits",
+   "type": "pit",
+   "subtype": "line of pits (Habej er Zir)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "E200 is at 0 m (same site, bearing not valid). Own-row 'ossuary fragment' not coded (no grave named). SWP Mem II p. 392 tanks and line of pits lie somewhere along an aqueduct traced 5.5 miles; no direction or distance from the ruin is given (Habej er Zir not located). Source 4 (Bar-Yosef 1974) is a prehistoric/geological report: 'test pits' are excavation trenches and 'channel' is natural; no pool, pit or grave; Fig. 2 is a topographic map with no features. SWP ruins extend 2.5 miles N and S."
+}

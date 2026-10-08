@@ -1,0 +1,83 @@
+{
+ "unit_id": "S1199",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1255 Site_Components",
+   "quote": "large rock-hewn basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1255"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S5986 Site_Components",
+   "quote": "courtyard; cave; another site",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S5986"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E145 Site_Components",
+   "quote": "rock-cut bell-shaped cistern; natural cave",
+   "type": "pit",
+   "subtype": "bell-shaped cistern; natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E145"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1252 Site_Components",
+   "quote": "several square pens; cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1252"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Unit row and Finkelstein et al. 1997 p. 802 entry list no pool, pit or grave (pens, buildings, sherds). Not recorded: S1255 cupmarks, S1269 dams/installations, S1296 'rock-hewn installations' (no pool/pit/grave named). S1255 basins coded pool_def unclear (no size). E145 cistern and cave coded as one pit feature."
+}

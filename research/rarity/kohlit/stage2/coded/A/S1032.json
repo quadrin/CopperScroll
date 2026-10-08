@@ -1,0 +1,440 @@
+{
+ "unit_id": "S1032",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1035 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1035"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1035 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1035"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S990 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S990"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S990 Site_Components",
+   "quote": "rock-cut caves",
+   "type": "pit",
+   "subtype": "rock-cut caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S990"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S990 Site_Components",
+   "quote": "rock-cut tomb nearby",
+   "type": "grave",
+   "subtype": "rock-cut tomb",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S990"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S990 Site_Components",
+   "quote": "Sheikh's tomb complex (En-Nabi 'Uzeir)",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S990"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E124 Site_Components",
+   "quote": "Sheikh's tomb (En-Nabi 'Uzeir)",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E124"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1025 Site_Components",
+   "quote": "burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1025"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1025 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1025"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1026 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1026"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S1026 Site_Components",
+   "quote": "loculus burial cave",
+   "type": "grave",
+   "subtype": "loculus burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1026"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S1016 Site_Components",
+   "quote": "Concentration of shaft tombs.",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1016"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1016 is the tombs and records IB"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S1069 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1069"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S1069 Site_Components",
+   "quote": "burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1069"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S1085 Site_Components",
+   "quote": "Sixty-two IB Burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1085"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the burial caves to IB"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S1086 Site_Components",
+   "quote": "Large concentration of ca. 62 shaft tombs",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1086"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1086 is the tombs and records IB"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB S1062 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1062"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB S985 Site_Components",
+   "quote": "two tombs",
+   "type": "grave",
+   "subtype": "tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S985"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "1",
+   "cite": "WBADB S1050 Site_Components",
+   "quote": "Ca. ten shaft tombs.",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1050"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1050 is the tombs and records IB"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "1",
+   "cite": "WBADB S1049 Site_Components",
+   "quote": "Large building 23x20 m – pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1049"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "1",
+   "cite": "WBADB S1049 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1049"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "1",
+   "cite": "WBADB S1094 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1094"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "1",
+   "cite": "WBADB S1094 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1094"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "1",
+   "cite": "WBADB S1094 Site_Components",
+   "quote": "Sheikh's tomb \"Zakariya\"",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1094"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f25",
+   "source": "1",
+   "cite": "WBADB S1030 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1030"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row and Finkelstein p.699 name no pool, pit or grave (the first description on p.699 belongs to the previous site). Rows that consist only of tombs (S1016, S1050, S1086) dated from their own IB period; S1085 dates its burial caves to IB. Sheikh's tombs and S985 'two tombs' coded as graves without a cavity opening. S1018 quarries not coded."
+}

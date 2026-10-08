@@ -1,0 +1,134 @@
+{
+ "unit_id": "S3896",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S3881 Site_Components",
+   "quote": "large, deep hewn cave – the fortress reservoir",
+   "type": "pit",
+   "subtype": "hewn cave reservoir (roofed, so cistern)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3881"
+   },
+   "date": {
+    "code": "D",
+    "basis": "described as the reservoir of the IA2 fortress"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S3875 Site_Components",
+   "quote": "Oval cairn, located within Beduin cemetery",
+   "type": "grave",
+   "subtype": "Beduin cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3875"
+   },
+   "date": {
+    "code": "L",
+    "basis": "a Beduin cemetery; the source marks it as recent"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S3875 Site_Components",
+   "quote": "further remains were discerned (ancient burials?)",
+   "type": "grave",
+   "subtype": "possible ancient burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3875"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S3875; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S3906 Site_Components",
+   "quote": "Cave; pottery; animal bones",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3906"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the cave is row S3906 itself; the row records Rom"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E765 Site_Components",
+   "quote": "Cave; pottery; animal bones",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E765"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the cave is row E765 itself; the row records Rom"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S3792 Site_Components",
+   "quote": "eight stone-capped mounds (tombs?)",
+   "type": "grave",
+   "subtype": "stone-capped mounds (tombs?)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3792"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S3792; not dated itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E726 Site_Components",
+   "quote": "Four pit tombs; human remains",
+   "type": "grave",
+   "subtype": "pit tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E726"
+   },
+   "date": {
+    "code": "L",
+    "basis": "the tombs are row E726 itself; the row records only Byz"
+   }
+  }
+ ],
+ "notes": "Own row (three structures) has no pool, pit or grave. The only SWP entry (Mem III p. 198, Hajr el Asbah, a fallen rock ~7 km away) is not this unit; its 'cemetery near Kumran' has no position: ignored. Cairns (S3914, S3867, S3925, S3976, S3839, S3994, S3820, S3791 with looted central chamber, S4026) are not called graves: not coded. Rock shelter B-53 (S3905/E766) not coded as a cave. 'Questioned' burials at S3875 and S3792 coded as graves."
+}

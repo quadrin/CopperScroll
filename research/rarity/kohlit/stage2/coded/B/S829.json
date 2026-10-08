@@ -1,0 +1,82 @@
+{
+ "unit_id": "S829",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "3",
+   "cite": "Mem II p. 30 (Burj el Maleh)",
+   "quote": "There seems to have been a large tank in the centre",
+   "type": "pool",
+   "subtype": "tank",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "SWP suggests the building is later Crusading, but does not date the tank itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S830 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S830"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S841 Site_Components",
+   "quote": "MB2b cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S841"
+   },
+   "date": {
+    "code": "D",
+    "basis": "WBADB S841 dates the cemetery itself MB2b"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S848 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S848"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row lists no pool, pit or grave (moat and 'many installations' not recorded). SWP entry Mem II p. 30 is Burj el Maleh, linked in Stage 1b, under a different name; not clearly a different place, so coded; its tank is 'in the centre of the enclosure' (no direction from the unit). Not recorded: tumuli at S833 and S841 (not called burials), S830 aqueduct. S841 cemetery of unstated type: cavity_with_opening false."
+}

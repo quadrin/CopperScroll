@@ -1,0 +1,525 @@
+{
+ "unit_id": "S2096",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S2041 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2041"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2041; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S2033 Site_Components",
+   "quote": "dwelling caves",
+   "type": "pit",
+   "subtype": "dwelling caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2033"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2033; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S2033 Site_Components",
+   "quote": "reservoir",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2033"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2033; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S2033 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2033"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2033; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S2033 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2033"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2033; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S2037 Site_Components",
+   "quote": "shaft tombs",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2037"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2037; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S2001 Site_Components",
+   "quote": "Cemetery; arcosolium burial caves",
+   "type": "grave",
+   "subtype": "arcosolium burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2001"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2001 is the cemetery; records only Byz, Med"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S2114 Site_Components",
+   "quote": "Cemetery of ca. 50 shaft tombs",
+   "type": "grave",
+   "subtype": "shaft tomb cemetery",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2114"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2114 is the cemetery; records MB, IA1, Rom"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S2253 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2253"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2253; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S2253 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2253"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2253; not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S2042 Site_Components",
+   "quote": "Four shaft tombs",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2042"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2042; not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S2042 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2042"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2042; not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S2183 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2183"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2183; not dated by the source"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S2263 Site_Components",
+   "quote": "Cemetery; arcosolium and loculus burial caves",
+   "type": "grave",
+   "subtype": "arcosolium and loculus burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2263"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2263 is the cemetery but records no period"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S2255 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2255"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2255; not dated by the source"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S2197 Site_Components",
+   "quote": "Cemetery; ca. 300 shaft tombs counted",
+   "type": "grave",
+   "subtype": "shaft tomb cemetery",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2197"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2197 is the cemetery; records IB, MB, IA2, Hel, Rom"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB S2279 Site_Components",
+   "quote": "Cemetery; arcosolium burial cave",
+   "type": "grave",
+   "subtype": "arcosolium burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2279"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2279 is the cemetery; records only Byz, Med"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB S2093 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2093"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2093; not dated by the source"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "1",
+   "cite": "WBADB S2287 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2287"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2287; not dated by the source"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "1",
+   "cite": "WBADB S2287 Site_Components",
+   "quote": "arcosolium burial cave",
+   "type": "grave",
+   "subtype": "arcosolium burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2287"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2287; not dated by the source"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "1",
+   "cite": "WBADB S1967 Site_Components",
+   "quote": "Two shaft tombs",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1967"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1967 is the tombs; records MB"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "1",
+   "cite": "WBADB S1993 Site_Components",
+   "quote": "Three shaft tombs",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1993"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S1993 is the tombs but records no period"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "1",
+   "cite": "WBADB S2264 Site_Components",
+   "quote": "Cemetery",
+   "type": "grave",
+   "subtype": "cemetery (type not stated)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2264"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2264 is the cemetery; records Rom"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "1",
+   "cite": "WBADB S2225 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2225"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2225; not dated by the source"
+   }
+  },
+  {
+   "id": "f25",
+   "source": "1",
+   "cite": "WBADB S2225 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2225"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2225; not dated by the source"
+   }
+  },
+  {
+   "id": "f26",
+   "source": "1",
+   "cite": "WBADB S2300 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2300"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2300; not dated by the source"
+   }
+  },
+  {
+   "id": "f27",
+   "source": "1",
+   "cite": "WBADB E326 Site_Components",
+   "quote": "[Structures; terraces; cisterns]",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E326"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E326; not dated by the source"
+   }
+  },
+  {
+   "id": "f28",
+   "source": "1",
+   "cite": "WBADB S1950 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1950"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1950; not dated by the source"
+   }
+  },
+  {
+   "id": "f29",
+   "source": "1",
+   "cite": "WBADB S2324 Site_Components",
+   "quote": "Cemetery; tombs of different types including six shaft tombs",
+   "type": "grave",
+   "subtype": "cemetery with shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2324"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2324 is the cemetery; records MB to Rom"
+   }
+  },
+  {
+   "id": "f30",
+   "source": "1",
+   "cite": "WBADB S2324 Site_Components",
+   "quote": "most tombs reused for dwellings and cisterns",
+   "type": "pit",
+   "subtype": "tombs reused as cisterns",
+   "is_tomb": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2324"
+   },
+   "date": {
+    "code": "U",
+    "basis": "reuse as cisterns not dated"
+   }
+  }
+ ],
+ "notes": "Own row has no pool, pit or grave. Rows that consist only of a burial feature (S2001, S2114, S2197, S2279, S1967, S1993, S2264, S2263, S2324) dated from the row's periods; other components U. Unspecified 'cemetery' (S2264) and Sheikh's tombs coded cavity false. S2324 tombs reused as cisterns also coded as a pit with is_tomb true. E326 repeats S2300's cisterns at the same point; coded for both rows."
+}

@@ -1,0 +1,100 @@
+{
+ "unit_id": "S1334",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1313 Site_Components",
+   "quote": "rock-hewn installations, mostly basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1313"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1420 Site_Components",
+   "quote": "Three caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1420"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1268 Site_Components",
+   "quote": "Twelve round or oval structures, probably tumuli",
+   "type": "grave",
+   "subtype": "probable tumuli",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1268"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1424 Site_Components",
+   "quote": "Small cemetery: four or five oval structures",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1424"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the cemetery itself; records Rom"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1250 Site_Components",
+   "quote": "round silo",
+   "type": "pit",
+   "subtype": "silo",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1250"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Tumuli coded as graves (burial mounds, cavity false); bare cairns not coded. Own-row spring has no pool stated: not coded. S1313 'mostly basins' with no size: pool, unclear."
+}

@@ -1,0 +1,136 @@
+{
+ "unit_id": "S4436",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S4441 Site_Components",
+   "quote": "courtyard containing a cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4441"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S4427 Site_Components",
+   "quote": "Ancient cistern, unique in its vault",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4427"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row is the cistern and records only Byz, EIs"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S4499 Site_Components",
+   "quote": "Square structure, possibly a Byz tomb",
+   "type": "grave",
+   "subtype": "possible built tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4499"
+   },
+   "mouth": null,
+   "date": {
+    "code": "L",
+    "basis": "row is the structure and records only Byz; source calls it Byz"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S4461 Site_Components",
+   "quote": "broad cave with a series of rock-hewn staircases",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4461"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S4462 Site_Components",
+   "quote": "Cave: hearths, Mousterian tools, UP tools",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4462"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the cave and records MP, UP"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S4433 Site_Components",
+   "quote": "rectangular pool",
+   "type": "pool",
+   "subtype": "rectangular pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4433"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S4405 Site_Components",
+   "quote": "Round tumulus.",
+   "type": "grave",
+   "subtype": "tumulus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4405"
+   },
+   "mouth": null,
+   "date": {
+    "code": "D",
+    "basis": "row is the tumulus and records IB"
+   }
+  }
+ ],
+ "notes": "Own row (square structure, sheepfold) has no candidate features. Tumulus at S4405 coded as a grave, cavity false; S4499 'possibly a Byz tomb' coded as a built grave. Cave at S4461 dated U as one component of a row with a rock wall."
+}

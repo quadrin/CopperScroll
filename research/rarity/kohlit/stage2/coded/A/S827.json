@@ -1,0 +1,253 @@
+{
+ "unit_id": "S827",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "none in packet",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S827 Site_Components",
+   "quote": "Palestinian village; cisterns; troughs",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S827 Site_Components",
+   "quote": "quarrying; Sheikh's tomb; Ott structures",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "caves; rock cuttings; cisterns",
+   "type": "pit",
+   "subtype": "caves; cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "cisterns; burial caves; structure",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "rock-hewn pool",
+   "type": "pool",
+   "subtype": "rock-hewn pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S809 Site_Components",
+   "quote": "oil press; Sheikh's tomb; cisterns",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S809"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S809 Site_Components",
+   "quote": "Sheikh's tomb; cisterns; burial caves",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S809"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S809 Site_Components",
+   "quote": "cisterns; burial caves; 15 Ott structures",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S809"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S839 Site_Components",
+   "quote": "Palestinian village; cisterns; burial caves",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S839"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S839 Site_Components",
+   "quote": "cisterns; burial caves; winepress",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S839"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S839 Site_Components",
+   "quote": "rock-hewn pool; walls",
+   "type": "pool",
+   "subtype": "rock-hewn pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S839"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB E98 Site_Components",
+   "quote": "[Cisterns; burial caves; winepress]",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E98"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB E98 Site_Components",
+   "quote": "[Cisterns; burial caves; winepress]",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E98"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "3",
+   "cite": "Mem II p. 29",
+   "quote": "with olives and a well to the south",
+   "type": "pit",
+   "subtype": "well",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "Unit is excavated but WBADB lists no first publication (source 4: none in packet). E91 (same point as unit) has no components. Troughs and winepresses not recorded (excluded from pool). SWP well coded as pit (shaft). Sheikh's tombs coded grave, not cavity."
+}

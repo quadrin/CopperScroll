@@ -1,0 +1,149 @@
+{
+ "unit_id": "S1137",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1137 Site_Components",
+   "quote": "modern Arabic cemetery",
+   "type": "grave",
+   "subtype": "modern cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1137 Site_Components",
+   "quote": "burial caves; lead coffin",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of own row; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1116 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1116"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1116 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1116"
+   },
+   "date": {
+    "code": "U",
+    "basis": "no period given for the tomb"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1116 Site_Components",
+   "quote": "Muslim tombs in a courtyard",
+   "type": "grave",
+   "subtype": "Muslim tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1116"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls them Muslim, i.e. Islamic, after 135 CE"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1116 Site_Components",
+   "quote": "Water cisterns",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1116"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1080 Site_Components",
+   "quote": "Per cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1080"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the cemetery Persian"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1072 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1072"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  }
+ ],
+ "notes": "Hard call: S1116 'Sheikh's tomb' dated U (no period stated), while 'Muslim tombs' dated L. Lead coffin (own row) and sarcophagus (S1080) not coded as separate graves. E131 repeats S1080 at the same point; not recorded twice. Own-row cemetery and burial caves have no direction (position none)."
+}

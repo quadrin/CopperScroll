@@ -1,0 +1,1733 @@
+{
+ "unit_id": "E334",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "none in packet",
+  "3": "read",
+  "4": "not accessed",
+  "5": "read"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "3",
+   "cite": "Mem III p. 220 (entry; reservoir text on p. 223)",
+   "quote": "into a shallow reservoir, 24 feet by 40 feet, of hewn stones",
+   "type": "pool",
+   "subtype": "spring reservoir (Elisha's fountain)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S2425 Site_Components",
+   "quote": "tomb with inscription",
+   "type": "grave",
+   "subtype": "tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2425"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S2316 Site_Components",
+   "quote": "Irregularly-shaped cavity; two natural fissures; no finds.",
+   "type": "pit",
+   "subtype": "natural cavity",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2316"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2316 is the cavity and records no period"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E327 Site_Components",
+   "quote": "Irregularly-shaped cavity; two natural fissures; no finds.",
+   "type": "pit",
+   "subtype": "natural cavity",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E327"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E327 is the cavity and records no period"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S2347 Site_Components",
+   "quote": "Cave; pottery; pruṭa coin of the Great Revolt.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2347"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2347 is the cave and records EB, Rom"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB E335 Site_Components",
+   "quote": "Cave; pottery; pruṭa coin of the Great Revolt.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E335"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E335 is the cave and records EB, Rom"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S2378 Site_Components",
+   "quote": "Cave; fieldstone wall; organic and modern finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2378"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2378 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S2350 Site_Components",
+   "quote": "Natural cave; natural terrace; human bones; rope; iron arrowhead; coin.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2350"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2350 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S2351 Site_Components",
+   "quote": "Cave; 17 Chal, EB and Rom burials; three copper tools; pottery; flint",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2351"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2351 is the cave and records Chal, EB, EB1, MB, Rom"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB E336 Site_Components",
+   "quote": "Cave and terrace; 17 Chal, EB and Rom burials; three copper tools;",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E336"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E336 is the cave and records Chal, EB, EB1, MB, Rom"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S2386 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2386"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2386 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S2385 Site_Components",
+   "quote": "Cave; fieldstone wall (prob. modern); modern finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2385"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2385 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S2317 Site_Components",
+   "quote": "Natural oval cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2317"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2317 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB E328 Site_Components",
+   "quote": "Natural oval cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E328"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E328 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S2388 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2388"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2388 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S2394 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2394"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2394 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB S2338 Site_Components",
+   "quote": "Cave; fieldstone wall; wooden beam; two niches; hewn depression; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2338"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2338 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB S2311 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2311"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2311 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "1",
+   "cite": "WBADB S2341 Site_Components",
+   "quote": "Cave; papyus documents; human bones; bead; bone object; textiles; ropes; mats; five",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2341"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2341 is the cave and records Chal, EB, EB1, Hel, Rom"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "1",
+   "cite": "WBADB E332 Site_Components",
+   "quote": "Cave; papyrus documents; human bones; bead; bone object; textiles; ropes; mats; five",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E332"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E332 is the cave and records Chal, EB, EB1, Hel, Rom"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "1",
+   "cite": "WBADB S2334 Site_Components",
+   "quote": "Cave; cross decoration on wall plaster remains; recess; pottery.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2334"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2334 is the cave and records only Byz"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "1",
+   "cite": "WBADB S2339 Site_Components",
+   "quote": "Cave; fieldstone wall; pottery; textile; mats; two Hel and Rom coins; human",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2339"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2339 is the cave and records Chal, Hel, Rom"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "1",
+   "cite": "WBADB E331 Site_Components",
+   "quote": "Cave; fieldstone wall; pottery; textile; mats; two Hel and Rom coins; human",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E331"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E331 is the cave and records Chal, Hel, Rom"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "1",
+   "cite": "WBADB S2299 Site_Components",
+   "quote": "Two caves; modern cement wall; stone slab pavement; no finds.",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2299"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2299 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f25",
+   "source": "1",
+   "cite": "WBADB E324 Site_Components",
+   "quote": "Two caves; modern cement wall; stone slab pavement; no finds.",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E324"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E324 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f26",
+   "source": "1",
+   "cite": "WBADB S2295 Site_Components",
+   "quote": "Sixteen caves; retaining wall.",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2295"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2295 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f27",
+   "source": "1",
+   "cite": "WBADB S2296 Site_Components",
+   "quote": "Cave; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2296"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2296 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f28",
+   "source": "1",
+   "cite": "WBADB S2306 Site_Components",
+   "quote": "Cave; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2306"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2306 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f29",
+   "source": "1",
+   "cite": "WBADB S2307 Site_Components",
+   "quote": "Caves; passages; animal bones; cloth; rope; leather; cord.",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2307"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2307 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f30",
+   "source": "1",
+   "cite": "WBADB S2308 Site_Components",
+   "quote": "Cave; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2308"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2308 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f31",
+   "source": "1",
+   "cite": "WBADB S2318 Site_Components",
+   "quote": "Cave; modern wall; tunnels; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2318"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2318 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f32",
+   "source": "1",
+   "cite": "WBADB S2414 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2414"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2414 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f33",
+   "source": "1",
+   "cite": "WBADB S2409 Site_Components",
+   "quote": "Natural cave; pottery; cloth; bones; plaited hair; rope; straw.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2409"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2409 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f34",
+   "source": "1",
+   "cite": "WBADB E343 Site_Components",
+   "quote": "Natural cave; pottery; cloth; bones; plaited hair; rope; straw.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E343"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E343 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f35",
+   "source": "1",
+   "cite": "WBADB S2359 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2359"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2359 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f36",
+   "source": "1",
+   "cite": "WBADB S2328 Site_Components",
+   "quote": "Cave; wood; pottery; glass; metal objects; two Rom coins; basket.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2328"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2328 is the cave and records Rom"
+   }
+  },
+  {
+   "id": "f37",
+   "source": "1",
+   "cite": "WBADB S2330 Site_Components",
+   "quote": "Cave; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2330"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2330 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f38",
+   "source": "1",
+   "cite": "WBADB E330 Site_Components",
+   "quote": "Cave; wood; pottery; glass; metal objects; two Rom coins; basket.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E330"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E330 is the cave and records Rom"
+   }
+  },
+  {
+   "id": "f39",
+   "source": "1",
+   "cite": "WBADB S2410 Site_Components",
+   "quote": "Natural cave; textiles; non-diagnostic pottery; bones.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2410"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2410 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f40",
+   "source": "1",
+   "cite": "WBADB E344 Site_Components",
+   "quote": "Natural cave; textiles; non-diagnostic pottery; bones.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E344"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E344 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f41",
+   "source": "1",
+   "cite": "WBADB S2331 Site_Components",
+   "quote": "Cave; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2331"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2331 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f42",
+   "source": "1",
+   "cite": "WBADB S2266 Site_Components",
+   "quote": "Natural cave; two coins (one Hel, one Byz); textiles (EB and Chal);",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2266"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2266 is the cave and records Chal, EB, EB1, EB2_3, Hel"
+   }
+  },
+  {
+   "id": "f43",
+   "source": "1",
+   "cite": "WBADB E320 Site_Components",
+   "quote": "Natural cave; two coins (one Hel, one Byz); textiles (EB and Chal);",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E320"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E320 is the cave and records Chal, EB, EB1, EB2_3, Hel"
+   }
+  },
+  {
+   "id": "f44",
+   "source": "1",
+   "cite": "WBADB S2440 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2440"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2440 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f45",
+   "source": "1",
+   "cite": "WBADB S2449 Site_Components",
+   "quote": "Natural cave; non-diagnostic pottery.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2449"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2449 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f46",
+   "source": "1",
+   "cite": "WBADB S2475 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2475"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2475 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f47",
+   "source": "1",
+   "cite": "WBADB S2230 Site_Components",
+   "quote": "Natural cave; niche; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2230"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2230 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f48",
+   "source": "1",
+   "cite": "WBADB S2231 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2231"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2231 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f49",
+   "source": "1",
+   "cite": "WBADB S2232 Site_Components",
+   "quote": "Natural cave; pottery; two niches; six coins (three Byz); cross with image",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2232"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2232 is the cave and records Rom"
+   }
+  },
+  {
+   "id": "f50",
+   "source": "1",
+   "cite": "WBADB S2233 Site_Components",
+   "quote": "Natural cave; skull fragment.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2233"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2233 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f51",
+   "source": "1",
+   "cite": "WBADB S2234 Site_Components",
+   "quote": "Natural cave; bones.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2234"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2234 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f52",
+   "source": "1",
+   "cite": "WBADB S2235 Site_Components",
+   "quote": "Natural cave; terrace; two plastered cisterns; dam; textiles; leather; glass bowls; bead;",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2235"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2235 is the cave and records Rom"
+   }
+  },
+  {
+   "id": "f53",
+   "source": "1",
+   "cite": "WBADB E316 Site_Components",
+   "quote": "Natural cave; terrace; two plastered cisterns; dam; textiles; leather; glass bowls; bead;",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E316"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E316 is the cave and records Rom"
+   }
+  },
+  {
+   "id": "f54",
+   "source": "1",
+   "cite": "WBADB S2236 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2236"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2236 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f55",
+   "source": "1",
+   "cite": "WBADB S2237 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2237"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2237 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f56",
+   "source": "1",
+   "cite": "WBADB S2238 Site_Components",
+   "quote": "Natural cave; rock cutting; wall retaining a terrace; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2238"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2238 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f57",
+   "source": "1",
+   "cite": "WBADB S2239 Site_Components",
+   "quote": "Natural cave; rock cutting; wall; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2239"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2239 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f58",
+   "source": "1",
+   "cite": "WBADB S2240 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2240"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2240 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f59",
+   "source": "1",
+   "cite": "WBADB S2241 Site_Components",
+   "quote": "Natural cave; wall; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2241"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2241 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f60",
+   "source": "1",
+   "cite": "WBADB S2242 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2242"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2242 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f61",
+   "source": "1",
+   "cite": "WBADB S2482 Site_Components",
+   "quote": "Natural cave; no finds. Yannai coin found nearby.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2482"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2482 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f62",
+   "source": "1",
+   "cite": "WBADB S2202 Site_Components",
+   "quote": "Natural cave; two Hel coins; leather; textiles; bronze clasp.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2202"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2202 is the cave and records Hel"
+   }
+  },
+  {
+   "id": "f63",
+   "source": "1",
+   "cite": "WBADB E311 Site_Components",
+   "quote": "Natural cave; two Hel coins; leather; textiles; bronze clasp.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E311"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E311 is the cave and records Hel"
+   }
+  },
+  {
+   "id": "f64",
+   "source": "1",
+   "cite": "WBADB S2342 Site_Name",
+   "quote": "Avi'or Cave",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2342"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2342 is the cave and records Hel, Rom"
+   }
+  },
+  {
+   "id": "f65",
+   "source": "1",
+   "cite": "WBADB E333 Site_Name",
+   "quote": "Avi'or Cave",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E333"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E333 is the cave and records Hel, Rom"
+   }
+  },
+  {
+   "id": "f66",
+   "source": "1",
+   "cite": "WBADB E325 Site_Name",
+   "quote": "Cave No. 20 (Quruntul)",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E325"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E325 is the cave and records no period"
+   }
+  },
+  {
+   "id": "f67",
+   "source": "1",
+   "cite": "WBADB S2352 Site_Components",
+   "quote": "Natural cavity; no finds.",
+   "type": "pit",
+   "subtype": "natural cavities",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2352"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2352 is the cavity and records no period"
+   }
+  },
+  {
+   "id": "f68",
+   "source": "1",
+   "cite": "WBADB S2319 Site_Components",
+   "quote": "Two cavities; four natural recesses; no finds",
+   "type": "pit",
+   "subtype": "natural cavities",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2319"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2319 is the cavity and records no period"
+   }
+  },
+  {
+   "id": "f69",
+   "source": "1",
+   "cite": "WBADB S2351 Site_Components",
+   "quote": "17 Chal, EB and Rom burials",
+   "type": "grave",
+   "subtype": "burials in cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2351"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the burials Chal, EB and Rom"
+   }
+  },
+  {
+   "id": "f70",
+   "source": "1",
+   "cite": "WBADB E336 Site_Components",
+   "quote": "17 Chal, EB and Rom burials",
+   "type": "grave",
+   "subtype": "burials in cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E336"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the burials Chal, EB and Rom"
+   }
+  },
+  {
+   "id": "f71",
+   "source": "1",
+   "cite": "WBADB S2342 Site_Components",
+   "quote": "38 skeletons",
+   "type": "grave",
+   "subtype": "skeletons in cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2342"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a row; skeletons not dated by the source"
+   }
+  },
+  {
+   "id": "f72",
+   "source": "1",
+   "cite": "WBADB E333 Site_Components",
+   "quote": "38 skeletons",
+   "type": "grave",
+   "subtype": "skeletons in cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E333"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a row; skeletons not dated by the source"
+   }
+  },
+  {
+   "id": "f73",
+   "source": "1",
+   "cite": "WBADB S2190 Site_Components",
+   "quote": "Cave and three adjacent niches; kokhim used for burial",
+   "type": "grave",
+   "subtype": "kokhim (burial cave)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2190"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2190 records no period"
+   }
+  },
+  {
+   "id": "f74",
+   "source": "1",
+   "cite": "WBADB S2235 Site_Components",
+   "quote": "two plastered cisterns",
+   "type": "pit",
+   "subtype": "plastered cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2235"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f75",
+   "source": "1",
+   "cite": "WBADB E316 Site_Components",
+   "quote": "two plastered cisterns",
+   "type": "pit",
+   "subtype": "plastered cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E316"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f76",
+   "source": "1",
+   "cite": "WBADB S2275 Site_Components",
+   "quote": "modern Muslim cemetery",
+   "type": "grave",
+   "subtype": "Muslim cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2275"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f77",
+   "source": "1",
+   "cite": "WBADB S2298 Comments",
+   "quote": "nearby: Rom burial cave excavated in 1972 by Shantur",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2298"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the burial cave Rom"
+   }
+  },
+  {
+   "id": "f78",
+   "source": "1",
+   "cite": "WBADB E323 Comments",
+   "quote": "nearby: Rom burial cave excavated in 1972 by Shantur",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E323"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the burial cave Rom"
+   }
+  },
+  {
+   "id": "f79",
+   "source": "1",
+   "cite": "WBADB S2479 Site_Components",
+   "quote": "water reservoir",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2479"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f80",
+   "source": "1",
+   "cite": "WBADB S2446 Site_Components",
+   "quote": "Second Temple period cemetery: thousands of rock-hewn burials",
+   "type": "grave",
+   "subtype": "rock-hewn burials (cemetery)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2446"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2446 is itself the cemetery and records Rom; source says Second Temple period"
+   }
+  },
+  {
+   "id": "f81",
+   "source": "1",
+   "cite": "WBADB E349 Site_Components",
+   "quote": "Second Temple period cemetery: thousands of rock-hewn burials",
+   "type": "grave",
+   "subtype": "rock-hewn burials (cemetery)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E349"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E349 is itself the cemetery and records Rom; source says Second Temple period"
+   }
+  },
+  {
+   "id": "f82",
+   "source": "1",
+   "cite": "WBADB S2462 Site_Components",
+   "quote": "Burial cave; ossuary fragments.",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2462"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2462 records no period"
+   }
+  },
+  {
+   "id": "f83",
+   "source": "1",
+   "cite": "WBADB S2228 Site_Components",
+   "quote": "Rom1 cistern, structures, plaster floor",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2228"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the cistern Rom1"
+   }
+  },
+  {
+   "id": "f84",
+   "source": "1",
+   "cite": "WBADB E314 Site_Components",
+   "quote": "Rom1 cistern, structures, plaster floor",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E314"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the cistern Rom1"
+   }
+  },
+  {
+   "id": "f85",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 85 p. 146",
+   "quote": "Funerary architecture: cist-burials, burials beneath the floors",
+   "type": "grave",
+   "subtype": "cist burials, burials beneath floors",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N85"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Pre-pottery Neolithic A"
+   }
+  },
+  {
+   "id": "f86",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 85 p. 146",
+   "quote": "Funerary architecture: burials beneath the floors of the houses",
+   "type": "grave",
+   "subtype": "burials beneath floors",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N85"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Pre-pottery Neolithic B"
+   }
+  },
+  {
+   "id": "f87",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 85 p. 146",
+   "quote": "plano-convex mudbricks), pit-dwellings",
+   "type": "pit",
+   "subtype": "pit-dwellings",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N85"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Pottery Neolithic A-B"
+   }
+  },
+  {
+   "id": "f88",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 85 p. 146",
+   "quote": "Funerary architecture: shaft-tombs in the nearby necropolis",
+   "type": "grave",
+   "subtype": "shaft-tombs (necropolis)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "N85"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Early Bronze I"
+   }
+  },
+  {
+   "id": "f89",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 21 p. 110",
+   "quote": "Public architecture: pool",
+   "type": "pool",
+   "subtype": "spring pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N21"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Ottoman period"
+   }
+  },
+  {
+   "id": "f90",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 21 p. 110",
+   "quote": "Public architecture: roofed pool",
+   "type": "pit",
+   "subtype": "roofed pool (cistern)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N21"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Modern period"
+   }
+  },
+  {
+   "id": "f91",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 92 p. 156",
+   "quote": "Public architecture: mills, aqueduct, cisterns, furnace",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N92"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Crusader, Middle and Late Islamic periods only"
+   }
+  },
+  {
+   "id": "f92",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 61 p. 131",
+   "quote": "Funerary architecture: rock-cut tombs, kokhim with inscriptions",
+   "type": "grave",
+   "subtype": "rock-cut tombs, kokhim",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "N61"
+   },
+   "date": {
+    "code": "D",
+    "basis": "occupational period Roman"
+   }
+  },
+  {
+   "id": "f93",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 82 p. 144",
+   "quote": "Funerary architecture: shaft-tombs",
+   "type": "grave",
+   "subtype": "shaft-tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "N82"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Early Bronze IV and Middle Bronze II"
+   }
+  },
+  {
+   "id": "f94",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 82 p. 144",
+   "quote": "Funerary architecture: tombs",
+   "type": "grave",
+   "subtype": "tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N82"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Hellenistic period"
+   }
+  },
+  {
+   "id": "f95",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 53 p. 127",
+   "quote": "Funerary architecture: cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "N53"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Roman period"
+   }
+  },
+  {
+   "id": "f96",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 76 p. 140",
+   "quote": "Funerary architecture: pilgrim’s(?) tomb",
+   "type": "grave",
+   "subtype": "tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N76"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Crusader period"
+   }
+  },
+  {
+   "id": "f97",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 77 p. 141",
+   "quote": "Public architecture: aqueduct, cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N77"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Late Hellenistic and Roman periods"
+   }
+  },
+  {
+   "id": "f98",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 96 p. 158",
+   "quote": "Funerary architecture: rock-cut tombs",
+   "type": "grave",
+   "subtype": "rock-cut tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "N96"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Roman period"
+   }
+  },
+  {
+   "id": "f99",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 90 p. 154",
+   "quote": "Domestic architecture: pits, silos, hearths, mud-brick walls",
+   "type": "pit",
+   "subtype": "pits, silos",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N90"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Late Chalcolithic"
+   }
+  },
+  {
+   "id": "f100",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 90 p. 154",
+   "quote": "Domestic architecture: houses, cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N90"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Roman period"
+   }
+  },
+  {
+   "id": "f101",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 47 p. 125",
+   "quote": "Public architecture: Coptic church, cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "occupational period Byzantine only"
+   }
+  }
+ ],
+ "notes": "Packet problems: Nigro N85 (Tell es-Sultan) text is cut off in the Early Bronze I bibliography, so later periods (and any later tombs) are missing; N21 text ends at 'roofed pool'; SWP Mem III p. 222-223 Tell es Sultan text ends mid-sentence. N47 has no coordinates (only 'south-west of site n. 46'): its cisterns coded position none. SWP entries ignored as not this unit and not within 2 km (none appears among the WBADB or Nigro entries within 2 km): Beit Jubr et Tahtani (birkeh), Rujm el Mogheifir (vaulted cisterns, south across Wady Kelt), Hajr el Asbah, Kanat el Manil/'Aujeh aqueduct (well), Khurbet es Sumrah (caves); Kanat Musa aqueduct entry: its 'various cisterns' along a multi-mile course and Bir Heider are not placeable, not recorded. Kusr el Yehud and Khurbet el Mefjir entries have no candidate features. 'Ain es Sultan p. 24 is a cross-reference. Not recorded: natural niches, recesses, fissures, rock shelters, cliff and 'passage' rows (not caves); rock-cut ditch (N85 PPNA); ritual baths (N96); nympheum (N21); moat and water supply system (N75); rows 'not examined'. Human bones in natural caves not coded as graves unless the source says burials/skeletons. Natural caves and cavities coded as pits; S/E duplicate rows each coded."
+}

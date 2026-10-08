@@ -1,0 +1,201 @@
+{
+ "unit_id": "S6040",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "none in packet",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S6040 Site_Components",
+   "quote": "Tell; pool; aqueducts",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E178 Site_Components",
+   "quote": "Tell; pool; aqueducts",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E178"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1495 Site_Components",
+   "quote": "Large dwelling cave and courtyard",
+   "type": "pit",
+   "subtype": "dwelling cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1495"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1495 is the feature and records EB, EB1, EB2_3, Rom"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E181 Site_Components",
+   "quote": "walls; pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E181"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1454 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1454"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1454 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1454"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1537 Comments",
+   "quote": "Modern cemetery",
+   "type": "grave",
+   "subtype": "modern cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1537"
+   },
+   "date": {
+    "code": "L",
+    "basis": "WBADB S1537 calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB E190 Comments",
+   "quote": "Modern cemetery",
+   "type": "grave",
+   "subtype": "modern cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E190"
+   },
+   "date": {
+    "code": "L",
+    "basis": "WBADB E190 calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1449 Site_Components",
+   "quote": "four large caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1449"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1449 Site_Components",
+   "quote": "modern Bediun cemetery",
+   "type": "grave",
+   "subtype": "modern Bedouin cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1449"
+   },
+   "date": {
+    "code": "L",
+    "basis": "WBADB S1449 calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB E187 Site_Components",
+   "quote": "aqueducts; wells",
+   "type": "pit",
+   "subtype": "wells",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E187"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  }
+ ],
+ "notes": "Unit is marked excavated but WBADB lists no first publication (source 4 status 'none listed in WBADB'). No SWP entry in packet. E178 is the same site at 0 m (Excavations sheet, bearing invalid); its pool recorded under grid E178 as well as the own-row pool. S1495 (Mugharet = cave) treated as a row that is itself the cave, dated from the row. E187 wells coded as pits (shafts). Not recorded: aqueducts, unspecified installations, E166 cairn."
+}

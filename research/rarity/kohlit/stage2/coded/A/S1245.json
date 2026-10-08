@@ -1,0 +1,65 @@
+{
+ "unit_id": "S1245",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Finkelstein et al. 1997 p. 799",
+   "quote": "damaged since Porat's survey by the construction of a water reservoir",
+   "type": "pool",
+   "subtype": "modern water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source says it was built after Porat's 1968 survey (modern construction)"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1255 Site_Components",
+   "quote": "large rock-hewn basins",
+   "type": "pool",
+   "subtype": "large rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1255"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1252 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1252"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Unit's own row lists only a wall and tesserae. Finkelstein p. 799 mentions a modern water reservoir whose construction damaged the site; coded as pool with date L, no position. The first paragraph on p. 799 belongs to the preceding site (18-16/57/01). 'Distance to water source: 2.50 km' is not an absence statement. S1255 'large rock-hewn basins' have no size: pool_def unclear. Tumulus at S1358 and dams at S1269 not coded."
+}

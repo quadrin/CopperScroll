@@ -1,0 +1,132 @@
+{
+ "unit_id": "S836",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S836 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S836; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S836 Site_Components",
+   "quote": "sarcophagus",
+   "type": "grave",
+   "subtype": "sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S836; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E97 Site_Components",
+   "quote": "sarcophagus",
+   "type": "grave",
+   "subtype": "sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E97"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row E97; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S810 Site_Components",
+   "quote": "two large caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S810"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S810; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S864 Site_Components",
+   "quote": "Two groups of shallow caves",
+   "type": "pit",
+   "subtype": "shallow caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S864"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S864; not dated itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S864 Site_Components",
+   "quote": "ca. 25 rock-hewn basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S864"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S864; not dated itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S857 Site_Components",
+   "quote": "Muslim cemetery",
+   "type": "grave",
+   "subtype": "Muslim cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S857"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls it a Muslim cemetery"
+   }
+  }
+ ],
+ "notes": "SWP entry \"Khurbet el Kirur\" (Mem II p. 238, square Oo) was found by similar name only; its square centre is 14.2 km away (linked entries in this batch lie 0.9-4.5 km away) and the name differs, so it is clearly a different place and not within 2 km: ignored (it lists tombs with kokim and cisterns). Sarcophagus coded as a grave (burial container, cavity_with_opening false); E97 is the excavation-sheet duplicate of the unit at distance 0, coded as a grid row as instructed. Dam not coded. Source 4 not accessed."
+}

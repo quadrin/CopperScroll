@@ -1,0 +1,234 @@
+{
+ "unit_id": "S4183",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S4183 Site_Components",
+   "quote": "Square structure 6x6 m (fort? tomb?)",
+   "type": "grave",
+   "subtype": "possible tomb (square structure)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own-row component; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S4183 Site_Components",
+   "quote": "nine earthen mounds (tombs?) nearby",
+   "type": "grave",
+   "subtype": "earthen mounds, possible tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own-row component; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S4176 Site_Components",
+   "quote": "Rock-hewn reservoir, fed by hewn conduit",
+   "type": "pool",
+   "subtype": "rock-hewn reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4176"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row records no period; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S4176 Site_Components",
+   "quote": "hewn sediment pool nearby",
+   "type": "pool",
+   "subtype": "sediment pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4176"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row records no period; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S4209 Site_Components",
+   "quote": "Muslim cemetery",
+   "type": "grave",
+   "subtype": "Muslim cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4209"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls it a Muslim cemetery"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S4204 Site_Components",
+   "quote": "Large cave; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4204"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row records no period; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S4205 Site_Components",
+   "quote": "Large cave; niches; walls; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4205"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row records no period; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S4193 Site_Components",
+   "quote": "two cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4193"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S4193 Site_Components",
+   "quote": "cistern surrounded by troughs nearby",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4193"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S4157 Site_Components",
+   "quote": "Cemetery: five to six long earthen mounds, marked by stones.",
+   "type": "grave",
+   "subtype": "cemetery of earthen mounds",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4157"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row records no period; not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S4216 Site_Components",
+   "quote": "Cave; coins; Rom pottery",
+   "type": "pit",
+   "subtype": "cave (The Christmas Cave)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4216"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the cave itself; records Chal, Rom"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S4146 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4146"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S4234 Site_Components",
+   "quote": "Cemetery (Muslim?): 20 earthen mounds.",
+   "type": "grave",
+   "subtype": "cemetery, possibly Muslim",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4234"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row records no period; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Tumuli coded as graves (burial mounds, cavity false); bare cairns not coded. Own-row 'tomb?' structure and 'earthen mounds (tombs?)' coded as graves, no direction given ('nearby'). Cairns (S4218, S4152, S4161, S4242, S4177), limekilns and quarry not coded. 'Muslim cemetery' coded L; 'Cemetery (Muslim?)' coded U."
+}

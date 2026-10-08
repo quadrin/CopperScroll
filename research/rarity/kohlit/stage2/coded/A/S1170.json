@@ -1,0 +1,134 @@
+{
+ "unit_id": "S1170",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1156 Site_Components",
+   "quote": "large cave",
+   "type": "pit",
+   "subtype": "large cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1156"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1108 Site_Components",
+   "quote": "two or three small caves",
+   "type": "pit",
+   "subtype": "small caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1108"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1168 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1168"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1118 Site_Components",
+   "quote": "rock-hewn basin",
+   "type": "pool",
+   "subtype": "rock-hewn basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1118"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1145 Site_Components",
+   "quote": "dwelling cave",
+   "type": "pit",
+   "subtype": "dwelling cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1145"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1169 Site_Components",
+   "quote": "karstic pits",
+   "type": "pit",
+   "subtype": "karstic pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1169"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1169 Site_Components",
+   "quote": "rock-hewn basin",
+   "type": "pool",
+   "subtype": "rock-hewn basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1169"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  }
+ ],
+ "notes": "Unit row has no pool, pit or grave. Bare 'rock-hewn basin' with no size coded pool_def unclear. S1162 'structures (or tumuli)' is not called a grave, so not coded. S1181's other name 'The Pool Hill 2' is a name only; its components list no pool. The only SWP entry (Mem II p. 49, Khurbet Abu Malul, 14.5 km, found by name) is a different place; ignored."
+}

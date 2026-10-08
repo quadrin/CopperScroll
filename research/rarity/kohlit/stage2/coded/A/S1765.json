@@ -1,0 +1,83 @@
+{
+ "unit_id": "S1765",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "none in packet",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1794 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1794"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1794 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1794"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E242 Site_Components",
+   "quote": "water supply system",
+   "type": "pit",
+   "subtype": "water supply system",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E242"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1798 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1798"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row has no pool, pit or grave. SWP Mem II p. 49 (Khurbet el 'Aujeh et Tahtani) is this unit: ruined walls, a mill, and Sheikh Ibrahim to the south, described as a small mosque; no pool, pit or grave. 'Water supply system' (E242) coded as pit though the cavity is not described. Unit marked excavated but no first publication listed. E237 has no components."
+}

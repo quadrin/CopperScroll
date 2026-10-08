@@ -1,0 +1,65 @@
+{
+ "unit_id": "S961",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S961 Site_Components",
+   "quote": "rock-hewn installations; cistern; round threshing floor.",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1007 Site_Components",
+   "quote": "Two courtyards; dwelling unit; rock-hewn cave",
+   "type": "pit",
+   "subtype": "rock-hewn cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1007"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1031 Site_Components",
+   "quote": "oval courtyard; round structure; four rock-hewn basins.",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1031"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "SWP Mem II p. 29 (Tammun, found by name; square centre 13 km away) is a village, clearly not this unit and not within 2 km: ignored (it names no pool, pit or grave anyway). Own-row cistern coded position none."
+}

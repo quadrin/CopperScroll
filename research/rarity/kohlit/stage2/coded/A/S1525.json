@@ -1,0 +1,170 @@
+{
+ "unit_id": "S1525",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "3",
+   "cite": "Mem II p. 354",
+   "quote": "There are rock-cut tombs in the valley immediately north.",
+   "type": "grave",
+   "subtype": "rock-cut tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1492 Site_Components",
+   "quote": "IA1 settlement, with pillared storehouse, silos",
+   "type": "pit",
+   "subtype": "silos",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1492"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the source dates the silos with the IA1 settlement"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1492 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1492"
+   },
+   "date": {
+    "code": "U",
+    "basis": "listed with the Rom, Byz village and churches; not securely before or after 135 CE"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1492 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1492"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1520 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1520"
+   },
+   "date": {
+    "code": "L",
+    "basis": "a Sheikh's (Muslim saint's) tomb is Islamic, after 135 CE"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1520 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1520"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1520 Site_Components",
+   "quote": "caves, some of them burial caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1520"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1520 Site_Components",
+   "quote": "caves, some of them burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1520"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1533 Site_Components",
+   "quote": "rock-cut basin",
+   "type": "pool",
+   "subtype": "rock-cut basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1533"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  }
+ ],
+ "notes": "Own row: limekiln not coded (not a pit). Finkelstein et al. 1997 p. 642 describes buildings and terraces only; p. 643 starts the entry for S1519 (Israel Ref 17630 16200) with no description on the page. SWP Khurbet er Rafid is this unit. E177 repeats S1492 at the same point; recorded once. Rock-cut basin at S1533 has no size: pool_def unclear. Sarcophagus at S1563 not coded (movable). Spring at S1467 has no pool."
+}

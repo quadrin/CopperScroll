@@ -1,0 +1,168 @@
+{
+ "unit_id": "S798",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S806 Site_Components",
+   "quote": "courtyards; cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S806"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S806 (Per to Byz); not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E92 Site_Components",
+   "quote": "Rock-hewn burial cave",
+   "type": "grave",
+   "subtype": "rock-hewn burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E92"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E92 is the burial cave itself and records periods to Rom; tomb dated IA and Rom"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S825 (IA to Ott); not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "late Rom mausoleum with sarcophagi",
+   "type": "grave",
+   "subtype": "mausoleum with sarcophagi",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "U",
+    "basis": "source dates it late Rom; not securely before or after 135 CE"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "Per tombs with clay sarcophagus",
+   "type": "grave",
+   "subtype": "tombs with clay sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the tombs Per"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "IA to Byz burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the burial caves IA to Byz"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S826 Site_Components",
+   "quote": "mausoleum with three burial caves",
+   "type": "grave",
+   "subtype": "mausoleum with burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S826"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S826 (Hel, Rom, Byz); not dated itself"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S792 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S792"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S792 (Byz to Ott); not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S792 Site_Components",
+   "quote": "plastered water cisterns",
+   "type": "pit",
+   "subtype": "plastered water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S792"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S792 (Byz to Ott); not dated itself"
+   }
+  }
+ ],
+ "notes": "Unit's own row lists no pool, pit or grave. E90 repeats S825's tombs and E88 repeats S826's mausoleum (recorded once each). E84 has no components. Not recorded: E87 amphitheatre animal cells, S826 soldiers' tombstones. No SWP entries in packet."
+}

@@ -1,0 +1,152 @@
+{
+ "unit_id": "S592",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S599 Site_Components",
+   "quote": "many tombs",
+   "type": "grave",
+   "subtype": "tombs (type not stated)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S599"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S599; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S641 Site_Components",
+   "quote": "Sheikh Smeiṭ tomb",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S641"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S641; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S641 Site_Components",
+   "quote": "paved courtyard with water cistern and gutter",
+   "type": "pit",
+   "subtype": "water cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S641"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S641; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S618 Site_Components",
+   "quote": "round tumuli",
+   "type": "grave",
+   "subtype": "tumuli (burial mounds)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S618"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S618; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S546 Site_Components",
+   "quote": "Dozens of cairns (tumuli), made of monoliths",
+   "type": "grave",
+   "subtype": "cairns/tumuli (burial mounds)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S546"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S546 is the cairn field itself and records MB, Per"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S640 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S640"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S640; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "3",
+   "cite": "Mem II p. 30 (Guerin)",
+   "quote": "Beside the Burj I saw a good birket cut in the rock",
+   "type": "pool",
+   "subtype": "rock-cut birket, 25 paces long",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "east part",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "3",
+   "cite": "Mem II p. 30 (Guerin)",
+   "quote": "Near it are a good many cisterns, also cut in the rock.",
+   "type": "pit",
+   "subtype": "rock-cut cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own-row 'moat' not recorded (a ditch, not a pool, pit or grave). SWP II p. 30 Burj el Farah (linked in Stage 1b) taken as this unit. Guerin puts the great square tower 'at its eastern extremity' of the ruined hill and the birket 'beside the Burj'; birket coded 'east part' relative to the unit on that two-step reading (hard call: the source locates the birket only by the tower). The cisterns 'near it' have no direction. Spring and Tell el Fera'a passages name no pool, pit or grave; the 'little sanctuary' is not a tomb. SWP says the tower is not older than Saracenic times; this dates the tower, not the birket. Survey entries not accessed."
+}

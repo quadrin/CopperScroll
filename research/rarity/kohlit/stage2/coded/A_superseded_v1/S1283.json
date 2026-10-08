@@ -1,0 +1,216 @@
+{
+ "unit_id": "S1283",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "water installations; structures; caves; column",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Hasmonean Cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "dated Hasmonean by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "part of the Herodian peristyle"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "part of the Herodian peristyle"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Hasmonean cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "dated Hasmonean by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "part of the Herodian peristyle"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "part of the Herodian peristyle"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1295 Site_Components",
+   "quote": "ca. 20 structures, water cisterns, plastered pool",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1295"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1295 Site_Components",
+   "quote": "water cisterns, plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1295"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1313 Site_Components",
+   "quote": "rock-hewn installations, mostly basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1313"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "3",
+   "cite": "Mem II p. 396",
+   "quote": "and of an aqueduct with cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "3",
+   "cite": "Mem II p. 397",
+   "quote": "two excavations or pits sunk in the soft rock",
+   "type": "pit",
+   "subtype": "rock-cut pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": 13,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "E151 is a separate WBADB row at the unit's point (distance 0, bearing null); its components were given grid E151 as the protocol says for other rows. SWP pits: 'Forty-four feet from the north end of the central foundation' (13 m); direction N inferred from 'north end', relative to the foundation, so relative_to other. SWP Mem II p. 49 (El Mugheir/Yanun, found because it names the unit) describes places ca. 7 km away; ignored, no feature recorded. Unit 'water installations', 'water system', aqueducts, quarry and S1295 fosse not recorded (no pool/pit/grave named). S1268 'probably tumuli' not recorded (not called graves). SWP p. 396-397 OCR has a garbled block (map/plate) between the pages."
+}

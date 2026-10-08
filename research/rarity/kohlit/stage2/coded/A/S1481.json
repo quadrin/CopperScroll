@@ -1,0 +1,185 @@
+{
+ "unit_id": "S1481",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1472 Site_Components",
+   "quote": "Structure; pool.",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1472"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S6033 Site_Components",
+   "quote": "many caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6033"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S6040 Site_Components",
+   "quote": "Tell; pool; aqueducts; rectangular structure.",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S6040"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E178 Site_Components",
+   "quote": "Tell; pool; aqueducts; rectangular structure.",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E178"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1495 Site_Components",
+   "quote": "Large dwelling cave and courtyard",
+   "type": "pit",
+   "subtype": "dwelling cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1495"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1537 Comments",
+   "quote": "Modern cemetery.",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1537"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E190 Comments",
+   "quote": "Modern cemetery.",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E190"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1454 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1454"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1454 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1454"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB E181 Site_Components",
+   "quote": "courtyard; central structure; walls; pool.",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E181"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row lists only structural remains: no candidate features. E rows coded like other rows (E178 and E190 repeat the points of S6040 and S1537). S1517 (round structure, bearing invalid) has no candidate feature. Aqueducts and 'installations' not coded. No SWP or survey text in packet."
+}

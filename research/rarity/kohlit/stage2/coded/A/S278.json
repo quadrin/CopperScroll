@@ -1,0 +1,150 @@
+{
+ "unit_id": "S278",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S278 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S288 Site_Components",
+   "quote": "large cave",
+   "type": "pit",
+   "subtype": "large cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S288"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S280 Site_Components",
+   "quote": "roller stone; cave; two winepresses",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S280"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S277 Site_Components",
+   "quote": "two water cisterns; cave",
+   "type": "pit",
+   "subtype": "water cisterns; cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S277"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S312 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S312"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S300 Site_Components",
+   "quote": "water cisterns; cave",
+   "type": "pit",
+   "subtype": "water cisterns; cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S300"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S307 Site_Components",
+   "quote": "cistern; reservoir cave; ca. 70 cave openings; many water cisterns",
+   "type": "pit",
+   "subtype": "cisterns; reservoir cave; caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S307"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S322 Site_Components",
+   "quote": "courtyard with water cistern",
+   "type": "pit",
+   "subtype": "water cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S322"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "S307 'reservoir cave' is a roofed reservoir, so coded as a pit, not a pool. No pools or graves in the packet. No SWP entries in packet."
+}

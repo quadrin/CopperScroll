@@ -1,0 +1,252 @@
+{
+ "unit_id": "S2605",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "read"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S2629 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2629"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S2629 Site_Components",
+   "quote": "cistern; pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2629"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E376 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E376"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E376 Site_Components",
+   "quote": "cistern; pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E376"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S2601 Site_Components",
+   "quote": "Byz water reservoir",
+   "type": "pool",
+   "subtype": "Byz water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2601"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the reservoir itself to Byz"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "3",
+   "cite": "Mem III p. 220",
+   "quote": "Cisterns remain beneath the surface, with barrel vaults",
+   "type": "pit",
+   "subtype": "barrel-vaulted cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source (ruin judged mediaeval, cisterns not dated)"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "3",
+   "cite": "Mem III p. 24",
+   "quote": "The pool is rectangular, and measures 40 paces by 30",
+   "type": "pool",
+   "subtype": "Birket Jiljulieh (pool)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2531"
+   },
+   "date": {
+    "code": "U",
+    "basis": "only a stylistic comparison with Byzantine ruins; not securely dated"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "3",
+   "cite": "Mem III p. 24",
+   "quote": "Northof this pool there is an Arab graveyard",
+   "type": "grave",
+   "subtype": "Arab graveyard",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2531"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls it an Arab graveyard (Islamic-era burials)"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 78 p. 142",
+   "quote": "monastery (church, building, water reservoir)",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N78"
+   },
+   "date": {
+    "code": "U",
+    "basis": "Nigro site entry; feature dated only by the catalogue's period heading, not securely by itself"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 79 p. 143",
+   "quote": "church, building, water reservoir, enclosed",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N79"
+   },
+   "date": {
+    "code": "U",
+    "basis": "Nigro site entry; feature dated only by the catalogue's period heading, not securely by itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 84 p. 145",
+   "quote": "Funerary architecture: tomb (Sheik Ameri)",
+   "type": "grave",
+   "subtype": "tomb (Sheik Ameri)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N84"
+   },
+   "date": {
+    "code": "U",
+    "basis": "Nigro site entry; feature dated only by the catalogue's period heading, not securely by itself"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 66 p. 134",
+   "quote": "monastery (church, monastic cells, reservoir)",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N66"
+   },
+   "date": {
+    "code": "U",
+    "basis": "Nigro site entry; feature dated only by the catalogue's period heading, not securely by itself"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 74 p. 139",
+   "quote": "Public architecture: cisterns, plastered basin",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N74"
+   },
+   "date": {
+    "code": "U",
+    "basis": "Nigro site entry; feature dated only by the catalogue's period heading, not securely by itself"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 74 p. 139",
+   "quote": "Public architecture: cisterns, plastered basin",
+   "type": "pool",
+   "subtype": "plastered basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "N74"
+   },
+   "date": {
+    "code": "U",
+    "basis": "Nigro site entry; feature dated only by the catalogue's period heading, not securely by itself"
+   }
+  }
+ ],
+ "notes": "SWP Mem III p. 220 Rujm el Mogheifir (linked in Stage 1b; also called Tell el Kursi = Nigro 78/79 at 4-20 m) treated as the unit; its barrel-vaulted cisterns have no direction (position none). SWP Mem III p. 24 Birket Jiljulieh is not the unit but is named in S2531's other names (1562 m), so its pool and the Arab graveyard north of it are given S2531's point. SWP Mem III p. 202 Kanat Musa (aqueduct system; found because it names Rujm el Mogheifir) is not this unit; the cisterns it mentions (Mefjir, Bir Heider, east of Birket Musa) are not located within 2 km by the packet; not coded. Unit's own row has no pool, pit or grave ('large basalt vessels' are not pools). Nigro features dated only by period heading coded U. N74 'plastered basin' has no size: pool_def unclear."
+}

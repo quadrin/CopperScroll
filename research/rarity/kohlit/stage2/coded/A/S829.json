@@ -1,0 +1,116 @@
+{
+ "unit_id": "S829",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "a large tank in the centre of the enclosure",
+   "type": "pool",
+   "subtype": "tank",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated; building thought Crusading, not secure"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S830 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S830"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S833 Site_Components",
+   "quote": "tumuli",
+   "type": "grave",
+   "subtype": "tumuli",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S833"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S841 Site_Components",
+   "quote": "tumuli remains",
+   "type": "grave",
+   "subtype": "tumuli",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S841"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S841 Site_Components",
+   "quote": "MB2b cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S841"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the cemetery MB2b"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S848 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S848"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Tumuli coded as graves (burial mounds, cavity false); bare cairns not coded. SWP entry Burj el Maleh (linked in Stage 1b, square centre 7.8 km) has a different name and a Crusader-style description; not clearly a different place, so its tank is coded (position none: 'in the centre of the enclosure'). Packet gives page 30; OCR text shows signature 30-2 and p. 236, so the entry is probably Mem II pp. 235-236. Own-row moat and installations not coded."
+}

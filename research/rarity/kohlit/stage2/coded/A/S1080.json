@@ -1,0 +1,191 @@
+{
+ "unit_id": "S1080",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "none in packet",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1080 Site_Components",
+   "quote": "Per cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "mouth": null,
+   "date": {
+    "code": "D",
+    "basis": "source dates the cemetery Per"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E131 Site_Components",
+   "quote": "Per cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E131"
+   },
+   "mouth": null,
+   "date": {
+    "code": "D",
+    "basis": "source dates the cemetery Per"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1116 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1116"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1116 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1116"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "no period given for the tomb"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1116 Site_Components",
+   "quote": "Muslim tombs in a courtyard",
+   "type": "grave",
+   "subtype": "Muslim tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1116"
+   },
+   "mouth": null,
+   "date": {
+    "code": "L",
+    "basis": "called Muslim tombs, so after 135 CE"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1116 Site_Components",
+   "quote": "Water cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1116"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1072 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1072"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1137 Site_Components",
+   "quote": "modern Arabic cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1137"
+   },
+   "mouth": null,
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1137 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1137"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1028 Site_Components",
+   "quote": "tumulus with two courtyards",
+   "type": "grave",
+   "subtype": "tumulus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1028"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Excavated but WBADB lists no publication, so source 4 none in packet. E131 is the unit's Excavations row (distance 0, bearing invalid). Sarcophagus (own row) and lead coffin (S1137) are objects, not coded as separate graves. S1116 is noted as also called Tell el-Mazar but is a separate row 922 m away. Tumulus at S1028 coded as a grave, cavity false."
+}

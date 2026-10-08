@@ -1,0 +1,181 @@
+{
+ "unit_id": "S331",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S331 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S331 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "traces of ruins, cisterns and caves",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "traces of ruins, cisterns and caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S307 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S307"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S307 Site_Components",
+   "quote": "reservoir cave",
+   "type": "pit",
+   "subtype": "reservoir cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S307"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S307 Site_Components",
+   "quote": "ca. 70 cave openings",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S307"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S307 Site_Components",
+   "quote": "many water cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S307"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S312 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S312"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S354 Site_Components",
+   "quote": "water cistren",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S354"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own-row 'rock-cut complexes' not coded (not stated to be cavities). Sheikh's tomb coded as a grave without a cavity opening. SWP kubbeh sacred to Sheikh Hazkin is not called a tomb there: not coded from SWP. S307 'reservoir cave' coded as a pit (roofed). E33 (same point, no components) gives nothing."
+}

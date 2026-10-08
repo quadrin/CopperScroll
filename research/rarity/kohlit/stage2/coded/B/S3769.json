@@ -1,0 +1,101 @@
+{
+ "unit_id": "S3769",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S3612 Site_Components",
+   "quote": "cistern (granary?) approached by two short channels",
+   "type": "pit",
+   "subtype": "cistern",
+   "position": {
+    "kind": "grid",
+    "ref": "S3612"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S3774 Site_Components",
+   "quote": "Eight threshing-floors, spread between two cisterns.",
+   "type": "pit",
+   "subtype": "cisterns",
+   "position": {
+    "kind": "grid",
+    "ref": "S3774"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component; row S3774 records no period"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S3651 Site_Components",
+   "quote": "Rock-hewn reservoir, fed by two conduits",
+   "type": "pool",
+   "subtype": "rock-hewn reservoir",
+   "position": {
+    "kind": "grid",
+    "ref": "S3651"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S3651 (Bir Abu Hindi) is the water installation itself; records only Byz, EIs"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S3651 Site_Components",
+   "quote": "square plastered cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "position": {
+    "kind": "grid",
+    "ref": "S3651"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S3651 (Bir Abu Hindi) is the water installation itself; records only Byz, EIs"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S3763 Site_Components",
+   "quote": "Two stone piles (cairns?), one has a central cist (?)",
+   "type": "grave",
+   "subtype": "cist (?) in cairn",
+   "position": {
+    "kind": "grid",
+    "ref": "S3763"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3763 records no period"
+   },
+   "cavity_with_opening": false,
+   "mouth": {}
+  }
+ ],
+ "notes": "Own row: 'rectangular installation 3.6x4 m' and fenced area not coded (not called pool or basin). S3651 dated L on the reading that the row is the installation itself (only water installations listed); if read as a site row it would be U. SWP entries Mar Saba (Mem III p. 28, square centre 3.7 km) and Silwan (Mem III p. 30, 9.3 km) are other places, not this unit and not among rows within 2 km; ignored. Cupmarks (S3599) not coded."
+}

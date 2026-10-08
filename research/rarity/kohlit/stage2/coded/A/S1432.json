@@ -1,0 +1,235 @@
+{
+ "unit_id": "S1432",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1432 Site_Components",
+   "quote": "Village; cisterns; oil-pres",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1432 (unit); not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "Reservoir; channel",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1459; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "two arcosolium tombs",
+   "type": "grave",
+   "subtype": "arcosolium tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1459; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "several rock-cut basins",
+   "type": "pool",
+   "subtype": "rock-cut basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1459; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "several tombs nearby",
+   "type": "grave",
+   "subtype": "tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1459; not dated itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1492 Site_Components",
+   "quote": "IA1 settlement, with pillared storehouse, silos",
+   "type": "pit",
+   "subtype": "silos",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1492"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the silos to the IA1 settlement"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1492 Site_Components",
+   "quote": "chancel screen, mosaic floors, cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1492"
+   },
+   "date": {
+    "code": "U",
+    "basis": "listed with the Rom-Byz churches; not dated itself"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1492 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1492"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1492; not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB E177 Site_Components",
+   "quote": "IA1 settlement, with pillared storehouse, silos",
+   "type": "pit",
+   "subtype": "silos",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E177"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the silos to the IA1 settlement"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB E177 Site_Components",
+   "quote": "chancel screen, mosaic floors, cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E177"
+   },
+   "date": {
+    "code": "U",
+    "basis": "listed with the Rom-Byz churches; not dated itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S1394 Site_Components",
+   "quote": "walls; burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1394"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1394; not dated itself"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S1347 Site_Components",
+   "quote": "Palestinian village; cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1347"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1347; not dated itself"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S1347 Site_Components",
+   "quote": "burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1347"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1347; not dated itself"
+   }
+  }
+ ],
+ "notes": "Finkelstein et al. 1997 p. 654 describes only the built-up village and pottery (water source 0.30 km, unspecified); no pool, pit or grave. E159 has empty components; S1476, S1467 (spring), S1493 (quarry/pen) list no pool, pit or grave. S1492/E177 cistern is listed among the Rom-Byz churches' features, coded U. SWP: Kuriyut (linked) mentions only a spring. Ignored as other places not within 2 km: El Mugheir (Sheet XV topography), Burj el Lisaneh and El Khudr (Sheet XIV; both found via 'Kuryet el 'Anab', a different place)."
+}

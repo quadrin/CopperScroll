@@ -1,0 +1,137 @@
+{
+ "unit_id": "S1845",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1877 Site_Components",
+   "quote": "two cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1877"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "3",
+   "cite": "Mem II p. 292",
+   "quote": "A village of moderate size, with cisterns and caves",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "3",
+   "cite": "Mem II p. 292",
+   "quote": "with cisterns and caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "3",
+   "cite": "Mem II p. 292",
+   "quote": "On the north-east is a deep rock- cut tank",
+   "type": "pool",
+   "subtype": "deep rock-cut tank",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "NE",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "3",
+   "cite": "Mem II p. 292",
+   "quote": "and south of it a rock-cut tomb",
+   "type": "grave",
+   "subtype": "rock-cut tomb",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "3",
+   "cite": "Mem II p. 293",
+   "quote": "caves in the rocky sides of the hill called",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "3",
+   "cite": "Mem II p. 293",
+   "quote": "as well as further west",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "SWP Rummun entry: tank NE of the village (direction from unit, no distance); the rock-cut tomb is placed 'south of' the tank, so relative_to other, and no mouth phrase. Ashkaf Daud caves are 'further west' of the Ashkaf Jiljal hill, so relative_to other. Mem III p. 124 Khurbet er Rumaneh (square Ls, ~14 km) is a different place, not within 2 km; ignored (it has no features anyway). 'Evidently an ancient site' not taken as a date for any feature. Finkelstein entry has no features."
+}

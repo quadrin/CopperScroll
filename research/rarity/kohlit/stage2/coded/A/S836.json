@@ -1,0 +1,181 @@
+{
+ "unit_id": "S836",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S836 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own-row component; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S836 Site_Components",
+   "quote": "sarcophagus",
+   "type": "grave",
+   "subtype": "sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own-row component; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E97 Site_Components",
+   "quote": "sarcophagus",
+   "type": "grave",
+   "subtype": "sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E97"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S810 Site_Components",
+   "quote": "two large caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S810"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S864 Site_Components",
+   "quote": "Two groups of shallow caves",
+   "type": "pit",
+   "subtype": "shallow caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S864"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S864 Site_Components",
+   "quote": "ca. 25 rock-hewn basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S864"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S864 Site_Components",
+   "quote": "limestone basin",
+   "type": "pool",
+   "subtype": "limestone basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S864"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S857 Site_Components",
+   "quote": "Muslim cemetery",
+   "type": "grave",
+   "subtype": "Muslim cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S857"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls it a Muslim cemetery"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "3",
+   "cite": "Mem II p. 238",
+   "quote": "tombs with koknn and cisterns",
+   "type": "grave",
+   "subtype": "tombs with kokim",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "3",
+   "cite": "Mem II p. 238",
+   "quote": "tombs with koknn and cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "E-sheet rows that repeat an S-sheet row are coded separately with their own grid ref. E97 is the excavation-sheet duplicate of the unit at distance 0 (bearing invalid); its sarcophagus coded with grid E97. Sarcophagus coded as a grave (cavity false). Dam not coded. SWP Mem II p. 238 Khurbet el Kirur (same name within 15 km, square centre 14.2 km): name close to Kh. el-Ghirur / Karur and to nearby Gharur sites, not clearly another place, so coded with position none; OCR 'koknn' read as kokim."
+}

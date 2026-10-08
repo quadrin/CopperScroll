@@ -1,0 +1,118 @@
+{
+ "unit_id": "S1609",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1609 Site_Components",
+   "quote": "burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1609 Site_Components",
+   "quote": "tomb with murals",
+   "type": "grave",
+   "subtype": "tomb with murals",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Finkelstein et al. 1997 p. 725",
+   "quote": "pens and a burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Finkelstein et al. 1997 p. 725",
+   "quote": "tomb with murals, partly rock-cut partly built",
+   "type": "grave",
+   "subtype": "tomb with murals, partly rock-cut",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1623 Site_Components",
+   "quote": "pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1623"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1571 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1571"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Tomb with murals coded cavity_with_opening true because Finkelstein calls it partly rock-cut (a chamber tomb); this is a judgement. Sheikh's tomb at S1571 coded as a built grave, undated. No direction is given for the unit's burial cave or tomb. Pottery plates (p. 726) carry no features."
+}

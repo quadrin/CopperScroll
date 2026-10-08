@@ -1,0 +1,99 @@
+{
+ "unit_id": "S4115",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S4115 Site_Components",
+   "quote": "ten enclosures, reservoir and three terraced and irrigated plots nearby",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S4082 Site_Components",
+   "quote": "Oval cairn; two pools nearby",
+   "type": "pool",
+   "subtype": "two pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4082"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S4082; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S4050 Site_Components",
+   "quote": "rock-hewn cistern fed by high conduits",
+   "type": "pit",
+   "subtype": "rock-hewn cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4050"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S4050; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S4050 Site_Components",
+   "quote": "constructed pools",
+   "type": "pool",
+   "subtype": "constructed pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4050"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S4050; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S4146 Site_Components",
+   "quote": "quarry; cisterns; large trapezoidal structure",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4146"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S4146; not dated itself"
+   }
+  }
+ ],
+ "notes": "Own-row reservoir is 'nearby' with no direction or distance. SWP Mem III p. 210 says only 'Resembles the last' (the previous entry is not in the packet): no features. Cairns (S4082, S4131, S4026, S4161, S4152, S4165) not called graves; not coded. E803 has no components. S4146 comment queries its coordinates."
+}

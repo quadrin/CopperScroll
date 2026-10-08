@@ -1,0 +1,217 @@
+{
+  "unit_id": "S203",
+  "coder": "A",
+  "sources": {
+    "1": "read",
+    "2": "not accessed",
+    "3": "none in packet",
+    "4": "not excavated",
+    "5": "not in oasis"
+  },
+  "explicit_absence": [],
+  "features": [
+    {
+      "id": "f1",
+      "source": "1",
+      "cite": "WBADB S203 Site_Components",
+      "quote": "two water cisterns",
+      "type": "pit",
+      "subtype": "water cisterns",
+      "is_tomb": false,
+      "position": {
+        "kind": "none"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of the unit's own row; not dated by the source"
+      }
+    },
+    {
+      "id": "f2",
+      "source": "1",
+      "cite": "WBADB S203 Site_Components",
+      "quote": "large cave",
+      "type": "pit",
+      "subtype": "cave",
+      "is_tomb": false,
+      "position": {
+        "kind": "none"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of the unit's own row; not dated by the source"
+      }
+    },
+    {
+      "id": "f3",
+      "source": "1",
+      "cite": "WBADB S219 Site_Components",
+      "quote": "cisterns",
+      "type": "pit",
+      "subtype": "cisterns",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S219"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S219; the component itself is not dated"
+      }
+    },
+    {
+      "id": "f4",
+      "source": "1",
+      "cite": "WBADB S178 Site_Components",
+      "quote": "carved plastered pools",
+      "type": "pool",
+      "subtype": "plastered pools",
+      "pool_def": "yes",
+      "position": {
+        "kind": "grid",
+        "ref": "S178"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S178; the component itself is not dated"
+      }
+    },
+    {
+      "id": "f5",
+      "source": "1",
+      "cite": "WBADB S178 Site_Components",
+      "quote": "cisterns",
+      "type": "pit",
+      "subtype": "cisterns",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S178"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S178; the component itself is not dated"
+      }
+    },
+    {
+      "id": "f6",
+      "source": "1",
+      "cite": "WBADB S223 Site_Components",
+      "quote": "Sheikh's tomb",
+      "type": "grave",
+      "subtype": "sheikh's tomb",
+      "cavity_with_opening": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S223"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S223; the component itself is not dated"
+      }
+    },
+    {
+      "id": "f7",
+      "source": "1",
+      "cite": "WBADB S223 Site_Components",
+      "quote": "cemetery",
+      "type": "grave",
+      "subtype": "cemetery",
+      "cavity_with_opening": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S223"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S223; the component itself is not dated"
+      }
+    },
+    {
+      "id": "f8",
+      "source": "1",
+      "cite": "WBADB S223 Site_Components",
+      "quote": "structures, courtyards, installations, cisterns",
+      "type": "pit",
+      "subtype": "cisterns",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S223"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S223; the component itself is not dated"
+      }
+    },
+    {
+      "id": "f9",
+      "source": "1",
+      "cite": "WBADB S223 Site_Components",
+      "quote": "rock-cut tombs nearby, sarcophagi",
+      "type": "grave",
+      "subtype": "rock-cut tombs",
+      "cavity_with_opening": true,
+      "position": {
+        "kind": "grid",
+        "ref": "S223"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S223; the component itself is not dated"
+      }
+    },
+    {
+      "id": "f10",
+      "source": "1",
+      "cite": "WBADB S169 Site_Components",
+      "quote": "large pool",
+      "type": "pool",
+      "subtype": "pool",
+      "pool_def": "yes",
+      "position": {
+        "kind": "grid",
+        "ref": "S169"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S169 (row records Byz only); the component itself is not dated"
+      }
+    },
+    {
+      "id": "f11",
+      "source": "1",
+      "cite": "WBADB S169 Site_Components",
+      "quote": "three water cisterns",
+      "type": "pit",
+      "subtype": "water cisterns",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S169"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S169 (row records Byz only); the component itself is not dated"
+      }
+    },
+    {
+      "id": "f12",
+      "source": "1",
+      "cite": "WBADB S235 Site_Components",
+      "quote": "three caves",
+      "type": "pit",
+      "subtype": "caves",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S235"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S235; the component itself is not dated"
+      }
+    }
+  ],
+  "notes": "Only WBADB rows in packet (Zertal 1992 not accessed; no SWP). S196/E29 (Bull Site) have no pool, pit or grave. S178 'rock cuttings' not coded (not a pool, pit or grave). S223 sheikh's tomb coded cavity_with_opening false (built tomb, type not stated); its cemetery type not stated."
+}

@@ -1,0 +1,64 @@
+{
+  "unit_id": "S153",
+  "coder": "A",
+  "sources": {
+    "1": "read",
+    "2": "not accessed",
+    "3": "none in packet",
+    "4": "not excavated",
+    "5": "not in oasis"
+  },
+  "explicit_absence": [],
+  "features": [
+    {
+      "id": "f1",
+      "source": "1",
+      "cite": "WBADB S153 Site_Components",
+      "quote": "system of rock-hewn cisterns",
+      "type": "pit",
+      "subtype": "rock-hewn cisterns",
+      "is_tomb": false,
+      "position": {
+        "kind": "none"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of the unit's own row; not dated by the source"
+      }
+    },
+    {
+      "id": "f2",
+      "source": "1",
+      "cite": "WBADB S153 Site_Components",
+      "quote": "square pool",
+      "type": "pool",
+      "subtype": "pool",
+      "pool_def": "yes",
+      "position": {
+        "kind": "none"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of the unit's own row; not dated by the source"
+      }
+    },
+    {
+      "id": "f3",
+      "source": "1",
+      "cite": "WBADB S157 Site_Components",
+      "quote": "cistern",
+      "type": "pit",
+      "subtype": "cistern",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S157"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S157; the component itself is not dated"
+      }
+    }
+  ],
+  "notes": "Only WBADB rows in packet. Own-row pool and cisterns have no direction in any source. S129's 'no ancient remains' concerns that row, not the unit. S152 and S144 have no pool, pit or grave."
+}

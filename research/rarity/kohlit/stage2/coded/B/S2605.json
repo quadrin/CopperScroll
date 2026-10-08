@@ -1,0 +1,271 @@
+{
+ "unit_id": "S2605",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "read"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S2629 Site_Components",
+   "quote": "ca. 30 rooms around an internal courtyard; cistern; pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "position": {
+    "kind": "grid",
+    "ref": "S2629"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S2629 Site_Components",
+   "quote": "cistern; pool; tesserae floor",
+   "type": "pool",
+   "subtype": "pool",
+   "position": {
+    "kind": "grid",
+    "ref": "S2629"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E376 Site_Components",
+   "quote": "ca. 30 rooms around an internal courtyard; cistern; pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "position": {
+    "kind": "grid",
+    "ref": "E376"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E376 Site_Components",
+   "quote": "cistern; pool; tesserae floor",
+   "type": "pool",
+   "subtype": "pool",
+   "position": {
+    "kind": "grid",
+    "ref": "E376"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S2601 Site_Components",
+   "quote": "Byz water reservoir",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "position": {
+    "kind": "grid",
+    "ref": "S2601"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the reservoir Byz"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S2531 Other_Names",
+   "quote": "Birket Jiljulieh; Birkat Jiljuliya",
+   "type": "pool",
+   "subtype": "birket (from site name)",
+   "position": {
+    "kind": "grid",
+    "ref": "S2531"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f7",
+   "source": "3",
+   "cite": "Mem III p. 220",
+   "quote": "Cisterns remain beneath the surface, with barrel vaults",
+   "type": "pit",
+   "subtype": "vaulted cisterns",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "source dates the ruin, not the cisterns"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f8",
+   "source": "3",
+   "cite": "Mem III p. 24",
+   "quote": "This pool is 150 yards south-east of the Shejeret el Ithleh",
+   "type": "pool",
+   "subtype": "Birket Jiljulieh",
+   "position": {
+    "kind": "grid",
+    "ref": "S2531"
+   },
+   "date": {
+    "code": "U",
+    "basis": "only a stylistic comparison with Byzantine work"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f9",
+   "source": "3",
+   "cite": "Mem III p. 24",
+   "quote": "North of this pool there is an Arab graveyard",
+   "type": "grave",
+   "subtype": "Arab graveyard",
+   "position": {
+    "kind": "grid",
+    "ref": "S2531"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls it an Arab graveyard"
+   },
+   "cavity_with_opening": false,
+   "mouth": {}
+  },
+  {
+   "id": "f10",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 78 p. 142",
+   "quote": "monastery (church, building, water reservoir)",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "position": {
+    "kind": "grid",
+    "ref": "N78"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Byzantine Period"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f11",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 79 p. 143",
+   "quote": "monastery (church, building, water reservoir, enclosed agricultural area)",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "position": {
+    "kind": "grid",
+    "ref": "N79"
+   },
+   "date": {
+    "code": "L",
+    "basis": "only occupational period Byzantine"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f12",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 84 p. 145",
+   "quote": "Funerary architecture: tomb (Sheik Ameri)",
+   "type": "grave",
+   "subtype": "tomb (Sheik Ameri)",
+   "position": {
+    "kind": "grid",
+    "ref": "N84"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Middle Islamic and Late Islamic/Ottoman"
+   },
+   "cavity_with_opening": false,
+   "mouth": {}
+  },
+  {
+   "id": "f13",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 66 p. 134",
+   "quote": "Public architecture: monastery (church, monastic cells, reservoir)",
+   "type": "pool",
+   "subtype": "reservoir",
+   "position": {
+    "kind": "grid",
+    "ref": "N66"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Byzantine Period"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f14",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 74 p. 139",
+   "quote": "Public architecture: cisterns, plastered basin",
+   "type": "pit",
+   "subtype": "cisterns",
+   "position": {
+    "kind": "grid",
+    "ref": "N74"
+   },
+   "date": {
+    "code": "L",
+    "basis": "only occupational period Byzantine"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f15",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 74 p. 139",
+   "quote": "Public architecture: cisterns, plastered basin",
+   "type": "pool",
+   "subtype": "plastered basin",
+   "position": {
+    "kind": "grid",
+    "ref": "N74"
+   },
+   "date": {
+    "code": "L",
+    "basis": "only occupational period Byzantine"
+   },
+   "pool_def": "unclear"
+  }
+ ],
+ "notes": "Own row has no pool, pit or grave. SWP Rujm el Mogheifir (linked in Stage 1b) coded position none as the unit; WBADB gives that name to S2629 (200 m S) and Nigro to N78/N79 (4-20 m), so its point is uncertain. Birket Jiljulieh (SWP) and the Arab graveyard north of it placed at S2531, whose other names include Birket Jiljulieh and Shejeret el-Ithleh. S2531 pool coded from its other names only. SWP Kanat Musa (Mem III p. 202) describes aqueducts and cisterns at other places (Mefjir, Bir Heider, Birket Musa), none within 2 km per the packet: ignored. Nigro dated L where the reservoir is listed only under Byzantine."
+}

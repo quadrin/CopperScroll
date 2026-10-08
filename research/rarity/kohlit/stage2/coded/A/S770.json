@@ -1,0 +1,134 @@
+{
+ "unit_id": "S770",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S774 Site_Components",
+   "quote": "cemetery (still in use, in 1972)",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S774"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S725 Site_Components",
+   "quote": "Burial area, with burial caves openings of different types.",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S725"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S725 is the burial area itself and records EB1, LB, IA1"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S726 Site_Components",
+   "quote": "Burial area; hundreds of shaft tombs",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S726"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S726 is the burial area itself and records EB1 to IA2"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S769 Site_Components",
+   "quote": "Large cemetery: ca. 30 shaft tombs.",
+   "type": "grave",
+   "subtype": "cemetery of shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S769"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S769 is the cemetery itself and records IB, MB, LB"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E77 Site_Components",
+   "quote": "Large cemetery: ca. 30 shaft tombs.",
+   "type": "grave",
+   "subtype": "cemetery of shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E77"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E77 is the cemetery itself and records IB, MB, LB"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S803 Site_Components",
+   "quote": "dozens of burial caves with shaft, locluli and chambers",
+   "type": "grave",
+   "subtype": "burial caves with shafts",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S803"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S803 is the burial complex itself and records EB, IB"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S803 Site_Components",
+   "quote": "rock-cut basins",
+   "type": "pool",
+   "subtype": "rock-cut basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S803"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row: 'no architectural remains' is not an absence statement for pools, pits or graves, so not recorded as explicit absence; no candidate features. S774 cemetery 'still in use in 1972' left U (no founding date). Rows that are cemeteries/burial areas dated from the row. Basins without size coded pool_def unclear. No SWP or survey text in packet."
+}

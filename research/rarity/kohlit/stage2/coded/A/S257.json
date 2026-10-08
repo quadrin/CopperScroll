@@ -1,0 +1,80 @@
+{
+ "unit_id": "S257",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "source": "1",
+   "cite": "WBADB S257 Site_Components",
+   "quote": "Sheikh's tomb (Muhammad)",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S257; not dated itself by the source"
+   },
+   "id": "f1"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S257 Site_Components",
+   "quote": "rock-hewn caves",
+   "type": "pit",
+   "subtype": "rock-hewn caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S257; not dated itself by the source"
+   },
+   "id": "f2"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S257 Site_Components",
+   "quote": "EIs pools and bathhouse",
+   "type": "pool",
+   "subtype": "pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the pools EIs"
+   },
+   "id": "f3"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S293 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S293"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S293; not dated itself by the source"
+   },
+   "id": "f4"
+  }
+ ],
+ "notes": "Own-row components have no direction: position none. \"EIs pools\" dated L. E30 (same site) lists a bathhouse only. S241 \"ossuary fragment?\" is a find, not coded as a grave."
+}

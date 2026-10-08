@@ -1,0 +1,115 @@
+{
+ "unit_id": "S4167",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S4167 Site_Components",
+   "quote": "pool, agricultural terraces and reservoirs nearby",
+   "type": "pool",
+   "subtype": "pool (nearby)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S4167 Site_Components",
+   "quote": "reservoirs nearby",
+   "type": "pool",
+   "subtype": "reservoirs (nearby)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S4169 Site_Components",
+   "quote": "cistern and small dam nearby",
+   "type": "pit",
+   "subtype": "cistern (nearby)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4169"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component; row records no period"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S4180 Site_Components",
+   "quote": "Muslim cemetery 30x80 m",
+   "type": "grave",
+   "subtype": "cemetery of stone mounds",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4180"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls it a Muslim cemetery"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S4180 Site_Components",
+   "quote": "bell-shaped cistern nearby",
+   "type": "pit",
+   "subtype": "bell-shaped cistern (nearby)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4180"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component; row records no period"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S4193 Site_Components",
+   "quote": "two cisterns",
+   "type": "pit",
+   "subtype": "cisterns; cistern surrounded by troughs nearby",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4193"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own-row pool and reservoirs are 'nearby' with no direction: position none. Cairns (S4169, S4165, S4175, S4177, S4181, S4161) not coded as graves (not called burials). SWP Mem III p. 210 'Kurm el 'Ajaz' (an other name of the unit) says only 'Resembles the last', which is not in the packet: no features. SWP Mem III p. 104 Khurbet Abu Makireh is c. 13 km away, a different place: ignored. E816 and E803 have no components."
+}

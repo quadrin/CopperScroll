@@ -1,0 +1,336 @@
+{
+ "unit_id": "S778",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "none in packet",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S778 Site_Components",
+   "quote": "three complexes of water cisterns",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S778 Site_Components",
+   "quote": "agricultural installations; burial caves.",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E80 Site_Components",
+   "quote": "three complexes of water cisterns",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E80"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row (same site, excavated sheet); not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E80 Site_Components",
+   "quote": "agricultural installations; burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E80"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row (same site, excavated sheet); not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S792 Site_Components",
+   "quote": "additional structures; burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S792"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S792 Site_Components",
+   "quote": "plastered water cisterns",
+   "type": "pit",
+   "subtype": "plastered water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S792"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S801 Site_Components",
+   "quote": "Walls; many tesserae; burial caves.",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S801"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S739 Site_Components",
+   "quote": "two plastered water cisterns; additional cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S739"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S739 Site_Components",
+   "quote": "well hewn burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S739"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S809 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S809"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S809 Site_Components",
+   "quote": "Sheikh's tomb; cisterns; burial caves",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S809"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S809 Site_Components",
+   "quote": "cisterns; burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S809"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S806 Site_Components",
+   "quote": "Large ruin: walls; many structures; courtyards; cisterns.",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S806"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "late Rom mausoleum with sarcophagi",
+   "type": "grave",
+   "subtype": "mausoleum with sarcophagi",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "U",
+    "basis": "dated late Roman: not securely before or after 135 CE"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "Per tombs with clay sarcophagus, bronzes",
+   "type": "grave",
+   "subtype": "tombs with clay sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the tombs Per"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB E90 Site_Components",
+   "quote": "Late Rom mausoleum with ten sarcophagi",
+   "type": "grave",
+   "subtype": "mausoleum with sarcophagi",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E90"
+   },
+   "date": {
+    "code": "U",
+    "basis": "dated late Roman: not securely before or after 135 CE"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB E90 Site_Components",
+   "quote": "Per tombs with clay sarcophagus, bronzes",
+   "type": "grave",
+   "subtype": "tombs with clay sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E90"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the tombs Per"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "IA to Byz burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the burial caves IA to Byz"
+   }
+  }
+ ],
+ "notes": "E80 is the same site as the unit (excavated sheet, d=0): components coded as grid E80. SWP Mem II p. 192 Khurbet Kefr Kus is the unit (other name): only 'a spring below', no pool/pit/grave. SWP Mem II p. 282 Kuzah (square Mp, found by similar name) is a different village and not among the rows within 2 km: ignored (its well not recorded). S825 'late Rom' mausoleum coded U. Unspecified 'tombs' and sheikh's tomb coded cavity false. Excavated (trial) but no first publication listed."
+}

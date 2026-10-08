@@ -1,0 +1,419 @@
+{
+ "unit_id": "S4109",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S4109 Site_Components",
+   "quote": "ca. 20 cisterns and reservoirs",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S4109 Site_Components",
+   "quote": "ca. 20 cisterns and reservoirs",
+   "type": "pool",
+   "subtype": "reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S4109 Site_Components",
+   "quote": "Herodian cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates cemetery Herodian"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S4109 Site_Components",
+   "quote": "oval Byz burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates burial cave Byz"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E798 Site_Components",
+   "quote": "ca. 20 cisterns and reservoirs",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E798"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB E798 Site_Components",
+   "quote": "ca. 20 cisterns and reservoirs",
+   "type": "pool",
+   "subtype": "reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E798"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E798 Site_Components",
+   "quote": "Herodian cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E798"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates cemetery Herodian"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB E798 Site_Components",
+   "quote": "Oval Byz burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E798"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates burial cave Byz"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S4105 Site_Components",
+   "quote": "rectangular rock-hewn pools and circular cistern nearby",
+   "type": "pool",
+   "subtype": "rock-hewn pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4105"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S4105 Site_Components",
+   "quote": "rectangular rock-hewn pools and circular cistern nearby",
+   "type": "pit",
+   "subtype": "circular cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4105"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S4088 Site_Components",
+   "quote": "Diagonal stepped shaft and tunnel of unknown purpose.",
+   "type": "pit",
+   "subtype": "stepped shaft and tunnel",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4088"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S4088 is the shaft; records IA, IA2, Rom"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB E792 Site_Components",
+   "quote": "Diagonal stepped shaft and tunnel of unknown purpose.",
+   "type": "pit",
+   "subtype": "stepped shaft and tunnel",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E792"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E792 is the shaft; records IA, IA2, Rom"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S4111 Site_Components",
+   "quote": "Two hewn cisterns",
+   "type": "pit",
+   "subtype": "hewn cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4111"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S4111 is the cisterns; records Rom"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S4078 Site_Components",
+   "quote": "Ruinous rock-hewn horseshoe-shaped reservoir",
+   "type": "pool",
+   "subtype": "rock-hewn reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4078"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S4078 Site_Components",
+   "quote": "sediment pool",
+   "type": "pool",
+   "subtype": "sediment pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4078"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S4067 Site_Components",
+   "quote": "Two rock-hewn reservoirs",
+   "type": "pool",
+   "subtype": "rock-hewn reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4067"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB S4069 Site_Components",
+   "quote": "aqueducts and reservoirs",
+   "type": "pool",
+   "subtype": "reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4069"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component; related to monastery, not separately dated"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB E787 Site_Components",
+   "quote": "aqueducts and reservoirs",
+   "type": "pool",
+   "subtype": "reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E787"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component; related to monastery, not separately dated"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "1",
+   "cite": "WBADB S4126 Site_Components",
+   "quote": "Rock-hewn reservoir",
+   "type": "pool",
+   "subtype": "rock-hewn reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4126"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "1",
+   "cite": "WBADB S4126 Site_Components",
+   "quote": "sediment pool",
+   "type": "pool",
+   "subtype": "sediment pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S4126"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "1",
+   "cite": "WBADB S4138 Site_Components",
+   "quote": "Cemetery: five oval stone mounds",
+   "type": "grave",
+   "subtype": "cemetery of stone mounds",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4138"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "1",
+   "cite": "WBADB S4138 Site_Components",
+   "quote": "caves and cistern nearby",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4138"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "1",
+   "cite": "WBADB S4138 Site_Components",
+   "quote": "caves and cistern nearby",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S4138"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "1",
+   "cite": "WBADB S3993 Site_Components",
+   "quote": "pair of cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3993"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  }
+ ],
+ "notes": "Own row and E798 \"ca. 20 cisterns and reservoirs\" split into pit (cisterns) and pool (reservoirs; roofing not stated). S4109 Comments \"Wright excavated several Herodian tombs\" taken as the Herodian cemetery, not coded twice. Reservoirs at S4078/S4067/S4126/S4069 not said to be roofed, so coded pool. Single-feature rows (S4088, E792, S4111) dated by row periods. Source 4 (Naveh 1974) not accessed; no SWP entry in packet."
+}

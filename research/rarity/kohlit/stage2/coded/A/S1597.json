@@ -1,0 +1,100 @@
+{
+ "unit_id": "S1597",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "source": "2",
+   "cite": "Finkelstein et al. 1997 p. 594",
+   "quote": "a birkeh with one wall built of large stones",
+   "type": "pool",
+   "subtype": "birkeh",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1623"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   },
+   "id": "f1"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S1609 Site_Components",
+   "quote": "burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1609"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1609; not dated itself by the source"
+   },
+   "id": "f2"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S1609 Site_Components",
+   "quote": "tomb with murals",
+   "type": "grave",
+   "subtype": "tomb with murals",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1609"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1609; not dated itself by the source"
+   },
+   "id": "f3"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S1571 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1571"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1571; not dated itself by the source"
+   },
+   "id": "f4"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S1623 Site_Components",
+   "quote": "oil press; pool; rock cuttings",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1623"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1623; not dated itself by the source"
+   },
+   "id": "f5"
+  }
+ ],
+ "notes": "Finkelstein p. 594 first paragraph (birkeh west of the village, rock-cuttings to the east) ends the entry of the preceding site, which WBADB S1623 Kh. Abu Falah cites as pp. 593-594 (pool; rock cuttings): coded at grid S1623. The Kh. el-Budud entry itself names no pool, pit or grave; \"Distance to water source\" is not an absence statement. P. 595 site 17-15/99/01 has no pool, pit or grave."
+}

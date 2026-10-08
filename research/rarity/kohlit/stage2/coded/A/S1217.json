@@ -1,0 +1,100 @@
+{
+ "unit_id": "S1217",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1200 Site_Components",
+   "quote": "two wells",
+   "type": "pit",
+   "subtype": "wells",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1200"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1200 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1200"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1209 Site_Components",
+   "quote": "several wells",
+   "type": "pit",
+   "subtype": "wells",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1209"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1209 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1209"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1179 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1179"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  }
+ ],
+ "notes": "Own row and Finkelstein et al. 1997 p. 648 entry name no pool, pit or grave. Wells coded as pits (open shafts). S1209 water channel not coded. Dating of S1200 buildings ('prob. Med or later') not applied to its wells/cisterns."
+}

@@ -1,0 +1,185 @@
+{
+ "unit_id": "S1841",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1836 Site_Components",
+   "quote": "semicircular courtyard; cistern.",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1836"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1852 Site_Components",
+   "quote": "Rectangular building; courtyard; cistern.",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1852"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1889 Site_Components",
+   "quote": "Structure; rock-hewn pool.",
+   "type": "pool",
+   "subtype": "rock-hewn pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1889"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1803 Site_Components",
+   "quote": "Rock-cut dwelling cave; non-diagnostic pottery.",
+   "type": "pit",
+   "subtype": "rock-cut dwelling cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1803"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S1803 records no period"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1802 Site_Components",
+   "quote": "plastered caves; plastered cisterns",
+   "type": "pit",
+   "subtype": "plastered caves; plastered cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1802"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1895 Site_Components",
+   "quote": "Structure with two rooms; cistern.",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1895"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1908 Site_Components",
+   "quote": "cave with remains of building activity",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1908"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1912 Site_Components",
+   "quote": "Dwelling cave, with rock-cut niches; cisterns.",
+   "type": "pit",
+   "subtype": "dwelling cave; cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1912"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1922 Site_Components",
+   "quote": "Plastered, rectangular cistern.",
+   "type": "pit",
+   "subtype": "plastered cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1922"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S1922 is the cistern; records only Byz"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1921 Site_Components",
+   "quote": "cisterns; rock-cut cave; terraces",
+   "type": "pit",
+   "subtype": "cisterns; rock-cut cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1921"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row and Finkelstein et al. 1997 p. 721 (site 18-14/08/01): scattered sherds, 'no building remains'; this is not taken as an absence statement for pools, pits or graves. The second entry on p. 721 (18-14/18/01) is S1848 (fences, terraces, pens): no features. No SWP entry in the packet."
+}

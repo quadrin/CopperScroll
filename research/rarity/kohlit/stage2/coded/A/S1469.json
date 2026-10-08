@@ -1,0 +1,115 @@
+{
+  "unit_id": "S1469",
+  "coder": "A",
+  "sources": {
+    "1": "read",
+    "2": "read",
+    "3": "none in packet",
+    "4": "not excavated",
+    "5": "not in oasis"
+  },
+  "explicit_absence": [],
+  "features": [
+    {
+      "id": "f1",
+      "source": "1",
+      "cite": "WBADB S1469 Site_Components",
+      "quote": "cisterns",
+      "type": "pit",
+      "subtype": "cisterns",
+      "is_tomb": false,
+      "position": {
+        "kind": "none"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of the unit's own row; not dated by the source"
+      }
+    },
+    {
+      "id": "f2",
+      "source": "2",
+      "cite": "Finkelstein et al. 1997 p. 773",
+      "quote": "Remains of buildings, a cistern and a modern pen.",
+      "type": "pit",
+      "subtype": "cistern",
+      "is_tomb": false,
+      "position": {
+        "kind": "none"
+      },
+      "date": {
+        "code": "U",
+        "basis": "not dated by the source"
+      }
+    },
+    {
+      "id": "f3",
+      "source": "1",
+      "cite": "WBADB S1532 Site_Components",
+      "quote": "cistern",
+      "type": "pit",
+      "subtype": "cistern",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S1532"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S1532; the component itself is not dated"
+      }
+    },
+    {
+      "id": "f4",
+      "source": "1",
+      "cite": "WBADB S1545 Site_Components",
+      "quote": "cistern",
+      "type": "pit",
+      "subtype": "cistern",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S1545"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S1545; the component itself is not dated"
+      }
+    },
+    {
+      "id": "f5",
+      "source": "2",
+      "cite": "Finkelstein et al. 1997 p. 772",
+      "quote": "Nearby, a cistern and a modern house.",
+      "type": "pit",
+      "subtype": "cistern",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S1545"
+      },
+      "date": {
+        "code": "U",
+        "basis": "not dated by the source; component of a site"
+      }
+    },
+    {
+      "id": "f6",
+      "source": "1",
+      "cite": "WBADB S1540 Site_Components",
+      "quote": "cistern",
+      "type": "pit",
+      "subtype": "cistern",
+      "is_tomb": false,
+      "position": {
+        "kind": "grid",
+        "ref": "S1540"
+      },
+      "date": {
+        "code": "U",
+        "basis": "component of row S1540; the component itself is not dated"
+      }
+    }
+  ],
+  "notes": "The site name contains 'Birkat' (pool), but no source describes a pool at the unit, so no pool was recorded. Finkelstein p. 772 also has site 18-16/21/02 (Israel Ref 18205 16140), which matches S1545's coordinates and components; its cistern is coded at grid S1545. S1545 lists 'cistern' twice; coded as one feature. S1458 has no pool, pit or grave. No SWP entries in packet."
+}

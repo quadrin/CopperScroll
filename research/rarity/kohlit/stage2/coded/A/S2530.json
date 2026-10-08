@@ -1,0 +1,83 @@
+{
+ "unit_id": "S2530",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "read"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S2540 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2540"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S2540; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 97 p. 159",
+   "quote": "Public architecture: monastery, cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N97"
+   },
+   "date": {
+    "code": "L",
+    "basis": "cat. 97: only occupational period Byzantine; cistern of the monastery"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 17 p. 109",
+   "quote": "Funerary architecture: graves",
+   "type": "grave",
+   "subtype": "graves (type not stated)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N17"
+   },
+   "date": {
+    "code": "L",
+    "basis": "cat. 17: only occupational period Byzantine"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 66 p. 134",
+   "quote": "monastery (church, monastic cells, reservoir)",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N66"
+   },
+   "date": {
+    "code": "L",
+    "basis": "cat. 66 lists the reservoir under Byzantine Period"
+   }
+  }
+ ],
+ "notes": "Own row has no pool, pit or grave. S2531 has alternative names 'Birket Jiljulieh; Birkat Jiljuliya' but its components list no pool; a name alone was not coded as a feature. S2552 aqueduct not coded. Nigro entries dated L where the catalogue lists the feature under a Byzantine-only occupation (N97, N17) or under 'Byzantine Period' (N66). N17 'graves' type not stated: cavity false."
+}

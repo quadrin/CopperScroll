@@ -1,0 +1,252 @@
+{
+ "unit_id": "E99",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "none in packet",
+  "3": "none in packet",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB E99 Site_Components",
+   "quote": "silos",
+   "type": "pit",
+   "subtype": "silos",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S840 Site_Components",
+   "quote": "Ancient well",
+   "type": "pit",
+   "subtype": "well",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S840"
+   },
+   "date": {
+    "code": "U",
+    "basis": "'ancient' gives no period"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S840 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S840"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E92 Site_Components",
+   "quote": "Rock-hewn burial cave",
+   "type": "grave",
+   "subtype": "rock-hewn burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E92"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E92 is the burial cave; records Chal-Rom"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E92 Site_Components",
+   "quote": "IA and Rom tomb with courtyard",
+   "type": "grave",
+   "subtype": "tomb with courtyard",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E92"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the tomb IA and Rom"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "late Rom mausoleum with sarcophagi",
+   "type": "grave",
+   "subtype": "mausoleum with sarcophagi",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "U",
+    "basis": "dated late Rom; not securely after 135 CE"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "Per tombs with clay sarcophagus",
+   "type": "grave",
+   "subtype": "tombs with clay sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the tombs Per"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S825 Site_Components",
+   "quote": "IA to Byz burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S825"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the caves IA to Byz"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB E90 Site_Components",
+   "quote": "Late Rom mausoleum with ten sarcophagi",
+   "type": "grave",
+   "subtype": "mausoleum with sarcophagi",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E90"
+   },
+   "date": {
+    "code": "U",
+    "basis": "dated late Rom; not securely after 135 CE"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB E90 Site_Components",
+   "quote": "Per tombs with clay sarcophagus",
+   "type": "grave",
+   "subtype": "tombs with clay sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E90"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the tombs Per"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S847 Site_Components",
+   "quote": "Rock-cut burial caves",
+   "type": "grave",
+   "subtype": "rock-cut burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S847"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB E105 Site_Components",
+   "quote": "Rock-hewn burial cave; pottery; bones",
+   "type": "grave",
+   "subtype": "rock-hewn burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E105"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E105 is the burial cave; records Rom, Byz"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S806 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S806"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Source 2: no survey entry named in WBADB (coded 'none in packet'). Source 4 (Boling 1975) not accessed, no excerpts. 'Late Rom' mausolea coded U (not securely after 135 CE). 'IA to Byz burial caves' coded D (use begins in IA). Ancient well at S840 coded pit (shaft)."
+}

@@ -1,0 +1,276 @@
+{
+ "unit_id": "S1283",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "structures; caves; column",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Hasmonean Cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the cemetery Hasmonean"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the peristyle with its cistern Herodian"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the peristyle with its pool Herodian"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Hasmonean cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the cemetery Hasmonean"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the peristyle with its cistern Herodian"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the peristyle with its pool Herodian"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1295 Site_Components",
+   "quote": "water cisterns, plastered pool",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1295"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1295; not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1295 Site_Components",
+   "quote": "water cisterns, plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1295"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1295; not dated itself"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1313 Site_Components",
+   "quote": "rock-hewn installations, mostly basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1313"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1313; not dated itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "3",
+   "cite": "Mem II p. 398 (entry Kurn Surtubeh, p. 396)",
+   "quote": "It supplies large cemented cave-cisterns some 350 feet or more below",
+   "type": "pit",
+   "subtype": "cemented cave-cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "3",
+   "cite": "Mem II p. 397 (entry Kurn Surtubeh, p. 396)",
+   "quote": "two excavations or pits sunk in the soft rock",
+   "type": "pit",
+   "subtype": "two rock-cut pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": 13,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "3",
+   "cite": "Mem II p. 397 (entry Kurn Surtubeh, p. 396)",
+   "quote": "On the ridge west of the Tell there is a well",
+   "type": "pit",
+   "subtype": "well or cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "3",
+   "cite": "Mem II p. 398 (entry Kurn Surtubeh, p. 396)",
+   "quote": "East of the Tell is a cave, or quarry",
+   "type": "pit",
+   "subtype": "cave or quarry",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "3",
+   "cite": "Mem II p. 398 (entry Kurn Surtubeh, p. 396)",
+   "quote": "south of it three more, rudely squared, and some 15 feet",
+   "type": "pit",
+   "subtype": "three caves (one a goat-fold)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "Unit's own components take position none. E151 is the excavation row for the same site (0 m, bearing invalid) and is coded grid E151. 'Water installations', 'water system', 'aqueduct', 'quarry' and 'Herodian family jail' not coded (no pool, pit or grave named). S1268 'probably tumuli' not coded as graves (not called burials). S1322, S1208, S1357 list no feature; E150 empty. SWP Kurn Surtubeh: the summary 'aqueduct with cisterns' (p. 396) is taken to be the same as the cave-cisterns supplied by the aqueduct that runs 'on the north side of the hill' (p. 398), coded once with direction N from the unit. The two pits are 'forty-four feet from the north end of the central foundation' (no explicit compass word; 44 ft = 13 m), so direction N relative_to other. The three caves are 'south of' the eastern cave, relative_to other. Entry truncated at the 12,000-character cap inside Clermont-Ganneau's report (no further features before the cut). El Mugheir entry (text names the unit) is Sheet XV topography; its el Makhruk caves are not located within 2 km; ignored."
+}

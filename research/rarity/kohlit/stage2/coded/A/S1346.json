@@ -1,0 +1,99 @@
+{
+ "unit_id": "S1346",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1346 Site_Components",
+   "quote": "hewn basin",
+   "type": "pool",
+   "subtype": "hewn basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1381 Site_Components",
+   "quote": "Plastered pool 50x100 m (Kochavi) / 63x53 m (Zertal).",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1381"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1381 is the pool and records Rom"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1294 Site_Components",
+   "quote": "tumuli",
+   "type": "grave",
+   "subtype": "tumuli",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1294"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1275 Site_Components",
+   "quote": "tumulus",
+   "type": "grave",
+   "subtype": "tumulus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1275"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1249 Site_Components",
+   "quote": "two dwelling caves",
+   "type": "pit",
+   "subtype": "dwelling caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1249"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  }
+ ],
+ "notes": "SWP II p.392 'Khurbet el Beiyudat' (square Pr, ~14.1 km from the unit; a watch-tower with a moat) is a different place, not within 2 km: ignored. Own 'hewn basin' has no size: pool_def unclear. S1381 is the pool row itself (its only component), dated from its own periods. Tumuli coded as graves."
+}

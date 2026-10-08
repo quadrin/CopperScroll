@@ -1,0 +1,100 @@
+{
+ "unit_id": "S6005",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S6004 Site_Components",
+   "quote": "4 built tombs",
+   "type": "grave",
+   "subtype": "built tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6004"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S6004; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S6004 Site_Components",
+   "quote": "many Beduin burials",
+   "type": "grave",
+   "subtype": "Beduin burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6004"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S6004; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S6003 Site_Components",
+   "quote": "7 rock-cut installations (cupmarks, oval basins)",
+   "type": "pool",
+   "subtype": "rock-cut oval basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S6003"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S6003; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S6000 Site_Components",
+   "quote": "human burials",
+   "type": "grave",
+   "subtype": "human burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6000"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S6000; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E223 Site_Components",
+   "quote": "human burials",
+   "type": "grave",
+   "subtype": "human burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E223"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E223; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row has no pool, pit or grave. S6010 name \"Niran's Pool\" not coded: its components list no pool. S6003 'oval basins' among rock-cut installations have no size: pool_def unclear. 'Beduin' is not a date: U. S6000/E223 'human burials' not explicitly dated (listed beside PPNA structures): U."
+}

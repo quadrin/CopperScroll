@@ -1,0 +1,66 @@
+{
+ "unit_id": "S6011",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S6010 Name",
+   "quote": "\"Niran's Pool\"",
+   "type": "pool",
+   "subtype": "pool (in site name)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S6010"
+   },
+   "date": {
+    "code": "U",
+    "basis": "named pool; row components list no pool; not dated"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S6003 Site_Components",
+   "quote": "7 rock-cut installations (cupmarks, oval basins)",
+   "type": "pool",
+   "subtype": "oval rock-cut basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S6003"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S6004 Site_Components",
+   "quote": "4 built tombs; many Beduin burials",
+   "type": "grave",
+   "subtype": "built tombs; Beduin burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6004"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row lists no pool, pit or grave. S6010 is named \"Niran's Pool\" but its components list no pool; coded from the name only. Aqueducts (S1739, S1732, S1714) not coded. No SWP entries in packet."
+}

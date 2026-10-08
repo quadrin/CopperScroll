@@ -1,0 +1,200 @@
+{
+ "unit_id": "S1295",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1295 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1295 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1283"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Hasmonean Cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1283"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates cemetery as Hasmonean"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1283"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed as part of Herodian peristyle"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1283"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed as part of Herodian peristyle"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Hasmonean cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates cemetery as Hasmonean"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed as part of Herodian peristyle"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed as part of Herodian peristyle"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1268 Site_Components",
+   "quote": "Twelve round or oval structures, probably tumuli",
+   "type": "grave",
+   "subtype": "probable tumuli",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1268"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S1313 Site_Components",
+   "quote": "rock-hewn installations, mostly basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1313"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row; not dated by source"
+   }
+  }
+ ],
+ "notes": "Bearings to S1283/E151 (224 m) are invalid. Unspecific \"water installations\"/\"water system\" (S1283, E151) not coded as pool/pit. S1268 tumuli coded as graves (probable). Bare cemetery coded cavity_with_opening false. No SWP entry in packet."
+}

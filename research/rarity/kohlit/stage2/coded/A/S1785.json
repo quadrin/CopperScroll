@@ -1,0 +1,218 @@
+{
+ "unit_id": "S1785",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1785 Comments",
+   "quote": "Modern Beduin cemetery.",
+   "type": "grave",
+   "subtype": "modern Bedouin cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S6018 Site_Components",
+   "quote": "large pool or pit",
+   "type": "pool",
+   "subtype": "large pool or pit",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S6018"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S6018; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S6018 Site_Components",
+   "quote": "large pool or pit",
+   "type": "pit",
+   "subtype": "large pit (or pool)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6018"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S6018; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S6018 Site_Components",
+   "quote": "19th-20th century Muslim cemetery",
+   "type": "grave",
+   "subtype": "Muslim cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6018"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the cemetery to the 19th-20th century"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E239 Site_Components",
+   "quote": "large pool or pit",
+   "type": "pool",
+   "subtype": "large pool or pit",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "E239"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row E239; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB E239 Site_Components",
+   "quote": "large pool or pit",
+   "type": "pit",
+   "subtype": "large pit (or pool)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E239"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row E239; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E239 Site_Components",
+   "quote": "19th-20th century Muslim cemetery",
+   "type": "grave",
+   "subtype": "Muslim cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E239"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the cemetery to the 19th-20th century"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S6048 Site_Components",
+   "quote": "three tumuli",
+   "type": "grave",
+   "subtype": "tumuli (burial mounds)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6048"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S6048; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1805 Site_Components",
+   "quote": "two niches and a cave, used as dwelling or animal pen",
+   "type": "pit",
+   "subtype": "cave (dwelling or pen)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1805"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1805; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB E243 Site_Components",
+   "quote": "two niches and a cave, used as dwelling or animal pen",
+   "type": "pit",
+   "subtype": "cave (dwelling or pen)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E243"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row E243; not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S6017 Site_Components",
+   "quote": "round structures - installations or tombs",
+   "type": "grave",
+   "subtype": "round structures, possibly tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6017"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S6017; not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S6016 Site_Components",
+   "quote": "large rectangular enclosure, prob. a pool",
+   "type": "pool",
+   "subtype": "large rectangular enclosure, probably a pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S6016"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S6016; not dated by the source"
+   }
+  }
+ ],
+ "notes": "S6018/E239 'large pool or pit' is one feature the source leaves undecided: recorded both as a pool (pool_def unclear) and as a pit so neither reading is lost; hard rule to apply. Own-row 'Modern Beduin cemetery' (comments) recorded with no position, date L. Tumuli (S6048) and 'installations or tombs' (S6017) recorded as graves without a cavity. S6016 'prob. a pool' coded pool_def yes (called a pool, large). Aqueducts (own row, S1817) not recorded. Survey entries not accessed; no SWP entries."
+}

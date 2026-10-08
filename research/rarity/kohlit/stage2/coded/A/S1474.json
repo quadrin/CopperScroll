@@ -1,0 +1,66 @@
+{
+ "unit_id": "S1474",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1463 Site_Components",
+   "quote": "large stone basin",
+   "type": "pool",
+   "subtype": "large stone basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1463"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E187 Site_Components",
+   "quote": "aqueducts; wells",
+   "type": "pit",
+   "subtype": "wells",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E187"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E191 Site_Components",
+   "quote": "Round tumulus, cist tomb inside",
+   "type": "grave",
+   "subtype": "cist tomb in round tumulus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E191"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E191 (the feature's own row) records Rom"
+   }
+  }
+ ],
+ "notes": "No pool, pit or grave in the unit's own row or in E172 (same site). S1463 'large stone basin' has no size and is not said to be open: pool_def unclear. Tumuli at S1433/E163 not coded (not called graves or burials). E191 treated as the tomb's own row for dating. Source 4 (Ben-Yosef 2007) not accessed."
+}

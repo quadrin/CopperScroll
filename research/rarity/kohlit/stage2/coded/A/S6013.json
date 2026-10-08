@@ -1,0 +1,185 @@
+{
+ "unit_id": "S6013",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S6008 Site_Components",
+   "quote": "eliptical enclosure; structural remains; Beduin tombs; much pottery",
+   "type": "grave",
+   "subtype": "Bedouin tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6008"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls them Beduin tombs (recent nomad burials)"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S6017 Site_Components",
+   "quote": "round structures - installations or tombs",
+   "type": "grave",
+   "subtype": "possible tombs (round structures)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6017"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S6016 Site_Components",
+   "quote": "large rectangular enclosure, prob. a pool",
+   "type": "pool",
+   "subtype": "pool (probable)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S6016"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S6018 Site_Components",
+   "quote": "large pool or pit",
+   "type": "pool",
+   "subtype": "large pool or pit",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S6018"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S6018 Site_Components",
+   "quote": "19th-20th century Muslim cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6018"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the cemetery to the 19th-20th century"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB E239 Site_Components",
+   "quote": "large pool or pit",
+   "type": "pool",
+   "subtype": "large pool or pit",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "E239"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E239 Site_Components",
+   "quote": "19th-20th century Muslim cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E239"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the cemetery to the 19th-20th century"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S6014 Site_Components",
+   "quote": "Enclosures site; two caves; modern Beduin camp.",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6014"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1748 Site_Components",
+   "quote": "Three caves; two niches; no finds.",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1748"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S1748 records no period"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1785 Comments",
+   "quote": "Modern Beduin cemetery.",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1785"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  }
+ ],
+ "notes": "No SWP entry in the packet; own row has no pool, pit or grave. S6008 'Beduin tombs' coded L (attribution to Bedouin taken as a late date; no period given) - a judgement. S6017 'installations or tombs' coded as a possible grave. S6018/E239 'large pool or pit' coded pool with pool_def unclear because the source is unsure it is a pool."
+}

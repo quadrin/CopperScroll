@@ -11,7 +11,7 @@ Updated 8 October 2026 UTC / 7 October Los Angeles. Counts come only from the so
 - Nonunique comparisons: **2**. The Jericho 27-cubit geometry also fits the southern control; generic fortress hydraulics also occur at Sartaba.
 - Excavation-coverage records: **4**, with **0** verified fully excavated predicted targets and **0** verified negative excavations at them.
 - Regional unexcavated alternatives, excavated/unexcavated distribution, search coverage and independent field observations: **unknown** (null). The 28-record Jericho source-sector inventory gives no regional denominator.
-- Landscape-wide match frequency (rarity): **not measured**.
+- Landscape-wide match frequency (rarity): **not measurable from available evidence**. The [Koḥlit count](https://github.com/quadrin/CopperScroll/blob/main/research/rarity/kohlit/stage2/RESULTS.md) (entries 11 + 60, R1, Hel/Rom, branch A survey level) gives k = 0, f = 1, m = 332 of 333; m ≫ k.
 
 Scope: the three formal packets and named recent controls, not every atlas marker or historical model. Zero means no verified qualifying record in this scope.
 

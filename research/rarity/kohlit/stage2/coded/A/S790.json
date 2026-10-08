@@ -1,0 +1,117 @@
+{
+ "unit_id": "S790",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S803 Site_Components",
+   "quote": "dozens of burial caves with shaft, locluli and chambers",
+   "type": "grave",
+   "subtype": "shaft burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S803"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S803 is itself the burial complex and records PN, EB1, EB2_3, IB"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S803 Site_Components",
+   "quote": "much pottery; rock-cut basins",
+   "type": "pool",
+   "subtype": "rock-cut basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S803"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S769 Site_Components",
+   "quote": "Large cemetery: ca. 30 shaft tombs.",
+   "type": "grave",
+   "subtype": "shaft tombs (cemetery)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S769"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S769 is itself the cemetery and records IB, MB2b, LB"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E77 Site_Components",
+   "quote": "Large cemetery: ca. 30 shaft tombs.",
+   "type": "grave",
+   "subtype": "shaft tombs (cemetery)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E77"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E77 is itself the cemetery and records IB, MB2b, LB"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S833 Site_Components",
+   "quote": "Twenty-four structures on a hilltop: tumuli, round structures",
+   "type": "grave",
+   "subtype": "tumuli",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S833"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S830 Site_Components",
+   "quote": "aqueduct; burial caves.",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S830"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row lists no pool, pit or grave. S796 'cairn' not coded (not called a grave). S833 tumuli coded as graves (cavity false). No SWP entries in packet."
+}

@@ -1,0 +1,295 @@
+{
+ "unit_id": "S839",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "none in packet",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S839 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S839 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S839 Site_Components",
+   "quote": "rock-hewn pool",
+   "type": "pool",
+   "subtype": "rock-hewn pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E98 Site_Components",
+   "quote": "[Cisterns; burial caves; winepress]",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E98"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row E98; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E98 Site_Components",
+   "quote": "[Cisterns; burial caves; winepress]",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E98"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row E98; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S842; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S842; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S842; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "rock-hewn pool",
+   "type": "pool",
+   "subtype": "rock-hewn pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S842; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S827 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S827"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S827; not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S827 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S827"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S827; not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "3",
+   "cite": "Mem II p. 29",
+   "quote": "evidently ancient, having rock-cut tombs, cisterns, and a tank",
+   "type": "grave",
+   "subtype": "rock-cut tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "3",
+   "cite": "Mem II p. 29",
+   "quote": "having rock-cut tombs, cisterns, and a tank",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "3",
+   "cite": "Mem II p. 29",
+   "quote": "having rock-cut tombs, cisterns, and a tank",
+   "type": "pool",
+   "subtype": "tank",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "3",
+   "cite": "Mem II p. 243",
+   "quote": "traces of ruins, cisterns, a ruined tank",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "3",
+   "cite": "Mem II p. 243",
+   "quote": "a ruined tank",
+   "type": "pool",
+   "subtype": "ruined tank",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "3",
+   "cite": "Mem II p. 243",
+   "quote": "a cemetery of rock-cut tombs",
+   "type": "grave",
+   "subtype": "cemetery of rock-cut tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "E98 is the Excavations-sheet duplicate of the unit (distance 0, bearing invalid); its components recorded with grid E98 per the rule for other rows. Survey entry p. 817 (site not visited by the survey team) names no features. SWP II p. 29 and p. 243 (linked in Stage 1b) describe the village with no directions; the springs north of the village are not pools; the later part of p. 29 on a Salim near Beisan (ed Deir, Tell er Ridhghah) is another place and ignored. Other SWP entries ignored as not this unit and not shown within 2 km: Jebel Eslamiyeh/Mount Ebal (II p. 24, 11.8 km), 'Askar (its 'ancient sepulchres' near 'Ain 'Askar; no packet row or direction places it within 2 km), Balata, Mohnah, 'Asiret el Kibliyeh, El Mugheir. No first publication listed."
+}

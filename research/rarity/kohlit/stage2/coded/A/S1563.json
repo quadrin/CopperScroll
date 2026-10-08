@@ -1,0 +1,64 @@
+{
+ "unit_id": "S1563",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1563 Site_Components",
+   "quote": "decorated marble sarcophagus",
+   "type": "grave",
+   "subtype": "sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Finkelstein et al. 1997 p. 651",
+   "quote": "a decorated marble sarcophagus from Turmus 'Aiya",
+   "type": "grave",
+   "subtype": "sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1533 Site_Components",
+   "quote": "rock-cut basin",
+   "type": "pool",
+   "subtype": "rock-cut basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1533"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  }
+ ],
+ "notes": "The decorated marble sarcophagus is coded as a grave (a burial container; not stated to be in situ). SWP II p.292 mentions only a spring to the south (not a pool). S1533 'rock-cut basin' has no size: pool_def unclear. Other rows list no pool, pit or grave."
+}

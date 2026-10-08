@@ -1,0 +1,591 @@
+{
+ "unit_id": "S2589",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not accessed",
+  "5": "read"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S2589 Site_Components",
+   "quote": "Rom bathhouses with mosaics, frescoes, basin and bath",
+   "type": "pool",
+   "subtype": "bathhouse basin and bath",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the bathhouses Rom"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S2589 Site_Components",
+   "quote": "aqueducts and cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E371 Site_Components",
+   "quote": "Rom bathhouses, with mosaics, frescoes, basin and bath",
+   "type": "pool",
+   "subtype": "bathhouse basin and bath",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "E371"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the bathhouses Rom"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E371 Site_Components",
+   "quote": "aqueducts and cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E371"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S2535 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2535"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row is the cave itself; no period recorded"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S2520 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2520"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row is the cave itself; no period recorded"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S2503 Site_Components",
+   "quote": "Cave; niches; pottery.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2503"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the cave itself and records MB, IA"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB E359 Site_Components",
+   "quote": "Cave; niches; pottery.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E359"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the cave itself and records MB, IA"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S2496 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2496"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row is the cave itself; no period recorded"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S2485 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2485"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row is the cave itself; no period recorded"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S2482 Site_Components",
+   "quote": "Natural cave; no finds. Yannai coin found nearby.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2482"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row is the cave itself; no period recorded"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S2475 Site_Components",
+   "quote": "Natural cave; no finds.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2475"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row is the cave itself; no period recorded"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S2462 Site_Components",
+   "quote": "Burial cave; ossuary fragments.",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2462"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row is the burial cave itself; no period recorded"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S2514 Site_Components",
+   "quote": "Small monastery with a chapel, mosaic floor, structural remains, pool, moat",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2514"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB E360 Site_Components",
+   "quote": "Small monastery with a chapel, mosaic floor, structural remains, pool, moat",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E360"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S2539 Site_Components",
+   "quote": "three Herodian winter palaces with baths, swimming pools",
+   "type": "pool",
+   "subtype": "swimming pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2539"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the palaces and their pools Herodian"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB E363 Site_Components",
+   "quote": "three Herodian winter palaces with baths, swimming pools",
+   "type": "pool",
+   "subtype": "swimming pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E363"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the palaces and their pools Herodian"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB S2551 Site_Components",
+   "quote": "Very large Herodian pool.",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2551"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the pool Herodian; row records Rom1"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "3",
+   "cite": "Mem III p. 24",
+   "quote": "Immediately south of the fort is a small ruined birkeh",
+   "type": "pool",
+   "subtype": "birkeh",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N36"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not securely dated; SWP compares it with a twelfth-century birket"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 31 p. 117",
+   "quote": "Public architecture: fortress, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N31"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Hellenistic Period"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 31 p. 117",
+   "quote": "Public architecture: fortress, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N31"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Hellenistic Period"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 31 p. 117",
+   "quote": "monastery (chapel, rooms, cistern)",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N31"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Byzantine Period only"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 32 p. 118",
+   "quote": "aqueduct, cisterns ... aqueduct, pools, cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N32"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Late Hellenistic and Roman (Herodian) periods"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 32 p. 118",
+   "quote": "Public architecture: aqueduct, pools, cisterns",
+   "type": "pool",
+   "subtype": "pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N32"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Roman (Herodian) Period"
+   }
+  },
+  {
+   "id": "f25",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 4 p. 101",
+   "quote": "Tell area: pool ... Public architecture: pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N4"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry records Hellenistic period only"
+   }
+  },
+  {
+   "id": "f26",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 35 p. 119",
+   "quote": "Public architecture: aqueduct, reservoir",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N35"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Byzantine and Early Islamic periods only"
+   }
+  },
+  {
+   "id": "f27",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 1 p. 99",
+   "quote": "\"Buried Palace\" and \"Pool Complex\" with ritual baths",
+   "type": "pool",
+   "subtype": "Pool Complex",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N1"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Hellenistic Period"
+   }
+  },
+  {
+   "id": "f28",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 1 p. 99",
+   "quote": "First Hasmonean Palace with ritual baths ... Second Palace, with ritual baths",
+   "type": "pool",
+   "subtype": "ritual baths",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "N1"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Hellenistic and Roman periods"
+   }
+  },
+  {
+   "id": "f29",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 7 p. 102",
+   "quote": "pits (post-Herodian Period: 2nd century AD)",
+   "type": "pit",
+   "subtype": "pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N7"
+   },
+   "date": {
+    "code": "U",
+    "basis": "2nd century AD; not securely before or after 135 CE"
+   }
+  },
+  {
+   "id": "f30",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 7 p. 102",
+   "quote": "Funerary Architecture: mausoleum",
+   "type": "grave",
+   "subtype": "mausoleum",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N7"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Byzantine Period only"
+   }
+  },
+  {
+   "id": "f31",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 5 p. 102",
+   "quote": "Public architecture: wine press, baths",
+   "type": "pool",
+   "subtype": "baths",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "N5"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry records Hellenistic period only"
+   }
+  },
+  {
+   "id": "f32",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 38 p. 120",
+   "quote": "Site extension: 220 x 160 m ... Public architecture: pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N38"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry records Roman period only"
+   }
+  },
+  {
+   "id": "f33",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 41 p. 122",
+   "quote": "Domestic architecture: caves, cisterns",
+   "type": "pit",
+   "subtype": "caves; cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N41"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Roman Period"
+   }
+  },
+  {
+   "id": "f34",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 41 p. 122",
+   "quote": "Funerary architecture: cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "N41"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Byzantine Period only"
+   }
+  }
+ ],
+ "notes": "SWP Beit Jubr et Tahtani (Mem III p. 24; printed pp. 190-191) is the site of Nigro N36 'Beit Jabr et-Tahtani' (890 m; same name, and N36 cites Conder-Kitchener 1883, 190-191); its birkeh 'immediately south of the fort' coded at grid N36 (judgment call). SWP Tell es Sultan entry (Mem III p. 220) describes Tell es Sultan, not in the 2 km WBADB/Nigro lists; ignored, incl. Warren's graves; its Tellul Abu el 'Aleik paragraph has no pool, pit or grave. Own-row 'basin and bath' of the Rom bathhouses coded pool_def unclear. 'Ritual baths' and 'baths' coded pool_def unclear. Nigro N7 'pits (post-Herodian Period: 2nd century AD)' coded U (2nd century straddles 135 CE). N31 is the unit itself (12 m, bearing invalid). Rock shelters and niches not coded. Herodian 'columbarium' tower is built, not coded."
+}

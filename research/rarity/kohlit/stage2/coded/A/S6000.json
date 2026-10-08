@@ -1,0 +1,82 @@
+{
+ "unit_id": "S6000",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S6000 Site_Components",
+   "quote": "human burials",
+   "type": "grave",
+   "subtype": "human burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E223 Site_Components",
+   "quote": "human burials",
+   "type": "grave",
+   "subtype": "human burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E223"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S6003 Site_Components",
+   "quote": "7 rock-cut installations (cupmarks, oval basins)",
+   "type": "pool",
+   "subtype": "oval rock-cut basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S6003"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S6004 Site_Components",
+   "quote": "4 built tombs; many Beduin burials",
+   "type": "grave",
+   "subtype": "built tombs; Beduin burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6004"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own-row 'human burials' not dated separately from the PPNA structures listed beside them, so U. E223 is the excavation row of the same site (100 m, bearing invalid). First publication (Tchernov 1994) not accessed."
+}

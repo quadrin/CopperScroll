@@ -1,0 +1,100 @@
+{
+ "unit_id": "S1390",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1424 Site_Components",
+   "quote": "Small cemetery: four or five oval structures",
+   "type": "grave",
+   "subtype": "small cemetery of oval structures",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1424"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1424 is itself the cemetery and records Rom"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1420 Site_Components",
+   "quote": "Three caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1420"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1420; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1313 Site_Components",
+   "quote": "rock-hewn installations, mostly basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1313"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1313; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1449 Site_Components",
+   "quote": "four large caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1449"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S1449; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1449 Site_Components",
+   "quote": "modern Bediun cemetery",
+   "type": "grave",
+   "subtype": "modern Bedouin cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1449"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  }
+ ],
+ "notes": "Own row lists no pool, pit or grave. S1424 row is itself a small cemetery (dated D from its row). S1313 basins coded as pool, pool_def unclear (no size, may be small cupmark-type basins). S1449 cemetery is described as modern Bedouin (L). Spring at S1334 not coded (no pool described)."
+}

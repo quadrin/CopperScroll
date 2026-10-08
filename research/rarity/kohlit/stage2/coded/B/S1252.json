@@ -1,0 +1,115 @@
+{
+ "unit_id": "S1252",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1252 Site_Components",
+   "quote": "several square pens; cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Finkelstein et al. 1997 p. 800",
+   "quote": "Cisterns.",
+   "type": "pit",
+   "subtype": "cisterns",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f3",
+   "source": "3",
+   "cite": "Mem II p. 394",
+   "quote": "Foundations of a building, and cisterns.",
+   "type": "pit",
+   "subtype": "cisterns",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1255 Site_Components",
+   "quote": "large rock-hewn basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "position": {
+    "kind": "grid",
+    "ref": "S1255"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "pool_def": "unclear"
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1358 Site_Components",
+   "quote": "Three courtyards; tumulus",
+   "type": "grave",
+   "subtype": "tumulus",
+   "position": {
+    "kind": "grid",
+    "ref": "S1358"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "cavity_with_opening": false,
+   "mouth": {}
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1362 Site_Components",
+   "quote": "Group of caves; terraces.",
+   "type": "pit",
+   "subtype": "caves",
+   "position": {
+    "kind": "grid",
+    "ref": "S1362"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  }
+ ],
+ "notes": "Unit's cisterns appear in all three sources with no direction (position none). 'Large rock-hewn basins' at S1255 have no size: pool_def unclear. Tumulus at S1358 coded as grave (burial not stated). S1269 dams and S1296/S1314 rock-hewn installations not coded (no pool, pit or grave named)."
+}

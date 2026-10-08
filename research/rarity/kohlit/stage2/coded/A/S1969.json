@@ -1,0 +1,1222 @@
+{
+ "unit_id": "S1969",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1998 Site_Components",
+   "quote": "natural cave with traces of plaster",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1998"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1998 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1998"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S2024 Site_Components",
+   "quote": "Small cave",
+   "type": "pit",
+   "subtype": "small cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2024"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2024 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S2024 Site_Components",
+   "quote": "modern tabun and cistern",
+   "type": "pit",
+   "subtype": "modern cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2024"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cistern modern"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1946 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1946"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1970 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1970"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E278 Site_Components",
+   "quote": "Cave: finds from Chal, IB and Bar Kokhba period",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E278"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E278 is the feature; records Chal, IB, Rom"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1958 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1958"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1921 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1921"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1921 Site_Components",
+   "quote": "rock-cut cave",
+   "type": "pit",
+   "subtype": "rock-cut cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1921"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S2004 Site_Components",
+   "quote": "Cave; non-diagnostic pottery",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2004"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2004 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB E269 Site_Components",
+   "quote": "Cave; non-diagnostic pottery",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E269"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E269 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S2009 Site_Components",
+   "quote": "Cave",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2009"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2009 is the feature; records only Byz"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S2009 Site_Components",
+   "quote": "hewn bell-shaped water cistern",
+   "type": "pit",
+   "subtype": "bell-shaped cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2009"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S2005 Site_Components",
+   "quote": "Narrow passage; non-diagnostic pottery",
+   "type": "pit",
+   "subtype": "tunnel",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2005"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2005 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S2021 Site_Components",
+   "quote": "Two large adjacent water cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2021"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2021 is the feature; records only Byz"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB S2021 Site_Components",
+   "quote": "two settling tanks",
+   "type": "pool",
+   "subtype": "settling tanks",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2021"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB S2025 Site_Components",
+   "quote": "Cave; no finds",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2025"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2025 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "1",
+   "cite": "WBADB S2016 Site_Components",
+   "quote": "Cave; niche",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2016"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2016 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "1",
+   "cite": "WBADB S2030 Site_Components",
+   "quote": "Two caves; rock shelter; pottery",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2030"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2030 is the feature; records IA2, Med"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "1",
+   "cite": "WBADB E276 Site_Components",
+   "quote": "Two caves; rock shelter; pottery",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E276"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E276 is the feature; records IA2, Med"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "1",
+   "cite": "WBADB S2067 Site_Components",
+   "quote": "Large cave; no finds",
+   "type": "pit",
+   "subtype": "large cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2067"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2067 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "1",
+   "cite": "WBADB S2040 Site_Components",
+   "quote": "12 caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2040"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2040 is the feature; records only Byz"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "1",
+   "cite": "WBADB S1922 Site_Components",
+   "quote": "Plastered, rectangular cistern",
+   "type": "pit",
+   "subtype": "plastered cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1922"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S1922 is the feature; records only Byz"
+   }
+  },
+  {
+   "id": "f25",
+   "source": "1",
+   "cite": "WBADB S2055 Site_Components",
+   "quote": "Cave; niches; rock-cut ramp",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2055"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2055 is the feature; records only Byz, Med"
+   }
+  },
+  {
+   "id": "f26",
+   "source": "1",
+   "cite": "WBADB S2076 Site_Components",
+   "quote": "Two caves; no finds",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2076"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2076 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f27",
+   "source": "1",
+   "cite": "WBADB S2028 Site_Components",
+   "quote": "Cave; rock shelter; staircase",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2028"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2028 is the feature; records only Byz, EIs, Med"
+   }
+  },
+  {
+   "id": "f28",
+   "source": "1",
+   "cite": "WBADB S2059 Site_Components",
+   "quote": "Hewn bell-shaped water cistern",
+   "type": "pit",
+   "subtype": "bell-shaped cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2059"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2059 is the feature; records only Byz, EIs, Med"
+   }
+  },
+  {
+   "id": "f29",
+   "source": "1",
+   "cite": "WBADB S2029 Site_Components",
+   "quote": "Cave; no finds",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2029"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2029 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f30",
+   "source": "1",
+   "cite": "WBADB S2031 Site_Components",
+   "quote": "Cave; terrace wall; pottery",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2031"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2031 is the feature; records only Byz, EIs, Med"
+   }
+  },
+  {
+   "id": "f31",
+   "source": "1",
+   "cite": "WBADB S1966 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1966"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f32",
+   "source": "1",
+   "cite": "WBADB S1908 Site_Components",
+   "quote": "cave with remains of building activity",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1908"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f33",
+   "source": "1",
+   "cite": "WBADB S2078 Site_Components",
+   "quote": "Nine natural caves",
+   "type": "pit",
+   "subtype": "natural caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2078"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2078 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f34",
+   "source": "1",
+   "cite": "WBADB S2092 Name",
+   "quote": "Cave of the Terrace",
+   "type": "pit",
+   "subtype": "cave (large rock shelter)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2092"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2092 is the feature; records Rom"
+   }
+  },
+  {
+   "id": "f35",
+   "source": "1",
+   "cite": "WBADB S2092 Site_Components",
+   "quote": "oval rock-cut water cistern",
+   "type": "pit",
+   "subtype": "rock-cut cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2092"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f36",
+   "source": "1",
+   "cite": "WBADB E300 Name",
+   "quote": "Cave of the Terrace",
+   "type": "pit",
+   "subtype": "cave (large rock shelter)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E300"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E300 is the feature; records Rom"
+   }
+  },
+  {
+   "id": "f37",
+   "source": "1",
+   "cite": "WBADB E300 Site_Components",
+   "quote": "oval rock-cut water cistern",
+   "type": "pit",
+   "subtype": "rock-cut cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E300"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f38",
+   "source": "1",
+   "cite": "WBADB S2045 Site_Components",
+   "quote": "church in large cave",
+   "type": "pit",
+   "subtype": "large cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2045"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f39",
+   "source": "1",
+   "cite": "WBADB S2045 Site_Components",
+   "quote": "caves with rock-cut windows, engraved crosses, benches",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2045"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f40",
+   "source": "1",
+   "cite": "WBADB S2045 Site_Components",
+   "quote": "conduits and collection reservoirs",
+   "type": "pool",
+   "subtype": "collection reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2045"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f41",
+   "source": "1",
+   "cite": "WBADB S2045 Site_Components",
+   "quote": "burial systems",
+   "type": "grave",
+   "subtype": "burial systems",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2045"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f42",
+   "source": "1",
+   "cite": "WBADB E280 Site_Components",
+   "quote": "church in large cave",
+   "type": "pit",
+   "subtype": "large cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E280"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f43",
+   "source": "1",
+   "cite": "WBADB E280 Site_Components",
+   "quote": "caves with rock-cut windows, engraved crosses, benches",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E280"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f44",
+   "source": "1",
+   "cite": "WBADB E280 Site_Components",
+   "quote": "conduits and collection reservoirs",
+   "type": "pool",
+   "subtype": "collection reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E280"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f45",
+   "source": "1",
+   "cite": "WBADB E280 Site_Components",
+   "quote": "burial systems",
+   "type": "grave",
+   "subtype": "burial systems",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E280"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f46",
+   "source": "1",
+   "cite": "WBADB S2046 Site_Components",
+   "quote": "Cave; Rom bowls and jars",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2046"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2046 is the feature; records Chal, MB, IA, Rom"
+   }
+  },
+  {
+   "id": "f47",
+   "source": "1",
+   "cite": "WBADB E281 Site_Components",
+   "quote": "Cave; Rom bowls and jars",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E281"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E281 is the feature; records Chal, MB, IA, Rom"
+   }
+  },
+  {
+   "id": "f48",
+   "source": "1",
+   "cite": "WBADB S1984 Site_Components",
+   "quote": "cistern with rock-cut conduit",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1984"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f49",
+   "source": "1",
+   "cite": "WBADB S2053 Site_Components",
+   "quote": "Cave/rock shelter, identified as a church",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2053"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2053 is the feature; records only Byz, Med"
+   }
+  },
+  {
+   "id": "f50",
+   "source": "1",
+   "cite": "WBADB S2053 Site_Components",
+   "quote": "crypt",
+   "type": "pit",
+   "subtype": "crypt",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2053"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f51",
+   "source": "1",
+   "cite": "WBADB E283 Site_Components",
+   "quote": "Cave/rock shelter, identified as a church",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E283"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row E283 is the feature; records only Byz, Med"
+   }
+  },
+  {
+   "id": "f52",
+   "source": "1",
+   "cite": "WBADB E283 Site_Components",
+   "quote": "crypt",
+   "type": "pit",
+   "subtype": "crypt",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E283"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f53",
+   "source": "1",
+   "cite": "WBADB E283 Site_Components",
+   "quote": "natural and man-made caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E283"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f54",
+   "source": "1",
+   "cite": "WBADB E283 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E283"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f55",
+   "source": "1",
+   "cite": "WBADB S2079 Site_Components",
+   "quote": "Cave; partially a reservoir; plastered walls",
+   "type": "pit",
+   "subtype": "cave reservoir",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2079"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2079 is the feature; records Rom"
+   }
+  },
+  {
+   "id": "f56",
+   "source": "1",
+   "cite": "WBADB E295 Site_Components",
+   "quote": "Cave; partially a reservoir; plastered walls",
+   "type": "pit",
+   "subtype": "cave reservoir",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E295"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E295 is the feature; records Rom"
+   }
+  },
+  {
+   "id": "f57",
+   "source": "1",
+   "cite": "WBADB S1895 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1895"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f58",
+   "source": "1",
+   "cite": "WBADB S2080 Site_Components",
+   "quote": "Cave; wall",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2080"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2080 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f59",
+   "source": "1",
+   "cite": "WBADB S2081 Name",
+   "quote": "Cave of the Lamp",
+   "type": "pit",
+   "subtype": "cave (rock-cut niche)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2081"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2081 is the feature; records IA, Hel, Rom"
+   }
+  },
+  {
+   "id": "f60",
+   "source": "1",
+   "cite": "WBADB E296 Name",
+   "quote": "Cave of the Lamp",
+   "type": "pit",
+   "subtype": "cave (rock-cut niche)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E296"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E296 is the feature; records IA, Hel, Rom"
+   }
+  },
+  {
+   "id": "f61",
+   "source": "1",
+   "cite": "WBADB S2063 Site_Components",
+   "quote": "Cluster of nine caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2063"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S2063 is the feature; records only Byz"
+   }
+  },
+  {
+   "id": "f62",
+   "source": "1",
+   "cite": "WBADB S2063 Site_Components",
+   "quote": "Byz water cisterns nearby",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2063"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the cisterns Byz"
+   }
+  },
+  {
+   "id": "f63",
+   "source": "1",
+   "cite": "WBADB S2094 Site_Components",
+   "quote": "Bi-level cave",
+   "type": "pit",
+   "subtype": "bi-level cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2094"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2094 is the feature; records Rom, Med"
+   }
+  },
+  {
+   "id": "f64",
+   "source": "1",
+   "cite": "WBADB E301 Site_Components",
+   "quote": "Bi-level cave",
+   "type": "pit",
+   "subtype": "bi-level cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E301"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E301 is the feature; records Rom, Med"
+   }
+  },
+  {
+   "id": "f65",
+   "source": "1",
+   "cite": "WBADB S2057 Site_Components",
+   "quote": "Cave; no traces of human activity",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2057"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S2057 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f66",
+   "source": "1",
+   "cite": "WBADB E285 Site_Components",
+   "quote": "Cave; no traces of human activity",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E285"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E285 is the feature; records no period"
+   }
+  },
+  {
+   "id": "f67",
+   "source": "1",
+   "cite": "WBADB S1912 Site_Components",
+   "quote": "Dwelling cave, with rock-cut niches",
+   "type": "pit",
+   "subtype": "dwelling cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1912"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S1912 is the feature; records only Byz, Ott"
+   }
+  },
+  {
+   "id": "f68",
+   "source": "1",
+   "cite": "WBADB S1912 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1912"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f69",
+   "source": "1",
+   "cite": "WBADB S2056 Site_Components",
+   "quote": "Cave with vertical shaft",
+   "type": "pit",
+   "subtype": "cave with vertical shaft",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2056"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2056 is the feature; records Chal, IB, Rom"
+   }
+  },
+  {
+   "id": "f70",
+   "source": "1",
+   "cite": "WBADB E284 Site_Components",
+   "quote": "Cave, vertical shaft",
+   "type": "pit",
+   "subtype": "cave with vertical shaft",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E284"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E284 is the feature; records Chal, IB, Rom"
+   }
+  },
+  {
+   "id": "f71",
+   "source": "1",
+   "cite": "WBADB S1889 Site_Components",
+   "quote": "rock-hewn pool",
+   "type": "pool",
+   "subtype": "rock-hewn pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1889"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row lists no pool, pit or grave. Rows named 'Rock Shelter', anchorite cells, niches (S2000) and troughs not recorded. Rows that are themselves a cave or cistern are dated by the row's periods (D if any period to Rom, L if only Byz/EIs/Med/Ott, U if none); their other components U. Duplicate S/E rows each recorded. Cave reservoir at The Spring Cave coded pit (roofed). S2024 cistern called modern -> L. 'Burial systems' at Khallat ed-Dinnabiya coded cavity false (form not stated)."
+}

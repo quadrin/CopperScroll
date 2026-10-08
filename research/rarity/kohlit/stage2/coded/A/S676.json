@@ -1,0 +1,135 @@
+{
+ "unit_id": "S676",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [
+  {
+   "condition": "C3",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "no tombs were found"
+  }
+ ],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S676 Site_Components",
+   "quote": "reservoir caves",
+   "type": "pit",
+   "subtype": "reservoir caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S676 Site_Components",
+   "quote": "many cisterns, caves and rock cuttings",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S676 Site_Components",
+   "quote": "many cisterns, caves and rock cuttings",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "consist of foundations, caves and cisterns",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "There are wells and cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "There are wells and cisterns",
+   "type": "pit",
+   "subtype": "wells",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S687 Site_Components",
+   "quote": "burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S687"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S687 (Byz, EIs, Med); not dated itself"
+   }
+  }
+ ],
+ "notes": "'Reservoir caves' coded as pit (cave, i.e. roofed). SWP Mem II p. 29 ('supplied by wells and cisterns') repeats p. 30 in the same source; recorded once. Explicit C3 absence from Mem II p. 30. S687 rock-cut trough not recorded."
+}

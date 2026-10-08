@@ -1,0 +1,268 @@
+{
+ "unit_id": "S1667",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1667 Site_Components",
+   "quote": "three Rom-Byz burial caves, with fragments of ossuaries",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the source dates the burial caves Rom-Byz; Roman counts"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Finkelstein et al. 1997 p. 735",
+   "quote": "three Roman-Byzantine burial caves, with fragments of ossuaries",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the source dates the burial caves Roman-Byzantine; Roman counts"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E220 Site_Components",
+   "quote": "three Rom-Byz burial caves, with fragments of ossuaries",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E220"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the source dates the burial caves Rom-Byz; Roman counts"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E219 Site_Components",
+   "quote": "Shaft-tomb cemetery with about 60 tombs; no pottery",
+   "type": "grave",
+   "subtype": "shaft-tomb cemetery",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E219"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E219; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1671 Site_Components",
+   "quote": "Concentration of IB shaft tombs",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1671"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the source dates the shaft tombs IB"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1676 Site_Components",
+   "quote": "Large IB cemetery, largely looted; shaft tombs",
+   "type": "grave",
+   "subtype": "shaft-tomb cemetery",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1676"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the source dates the cemetery IB"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E222 Site_Components",
+   "quote": "Large IB cemetery, largely looted; shaft tombs",
+   "type": "grave",
+   "subtype": "shaft-tomb cemetery",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E222"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the source dates the cemetery IB"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1658 Site_Components",
+   "quote": "Byz church with polychrome mosaic floor; pool; vault",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1658"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1658; not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1658 Site_Components",
+   "quote": "pit with EB pottery",
+   "type": "pit",
+   "subtype": "pit",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1658"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the source gives the pit EB pottery"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1666 Site_Components",
+   "quote": "Shaft-tomb cemetery with about 60 tombs; no pottery",
+   "type": "grave",
+   "subtype": "shaft-tomb cemetery",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1666"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1666; not dated itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S1684 Site_Components",
+   "quote": "two Rom1 burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1684"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the source dates the burial caves Rom1"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S1647 Site_Components",
+   "quote": "Hundreds of shaft tombs in several concentrations",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1647"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the tombs are row S1647 itself; the row records IB, MB"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S1683 Site_Components",
+   "quote": "Shaft-tomb cemetery with about 40 tombs; no pottery",
+   "type": "grave",
+   "subtype": "shaft-tomb cemetery",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1683"
+   },
+   "date": {
+    "code": "D",
+    "basis": "the cemetery is row S1683 itself; the row records IB"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S1644 Site_Components",
+   "quote": "IB site above large cemetery",
+   "type": "grave",
+   "subtype": "cemetery (type not given)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1644"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1644; not dated itself"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB E214 Site_Components",
+   "quote": "IB site above large cemetery",
+   "type": "grave",
+   "subtype": "cemetery (type not given)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E214"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E214; not dated itself"
+   }
+  }
+ ],
+ "notes": "Source 2 p. 734-735 is this unit (Kh. Samiya); p. 736 (Dhahr Mirzbaneh = S1644) refers to 'cemeteries around Site 18-15/15/04', a site with no point in the packet: not coded. SWP 'Khurbet es Selemiyeh' (Mem II p. 354, ~9.5 km, different name) is not this unit and not within 2 km: ignored (its rock-cut tombs not coded). SWP 'Khurbet es Samkiyeh' has no pool, pit or grave. E219, S1671 and S1666 have bearing_valid false. S1644 tumulus and S1658 vault and cupmarks not coded."
+}

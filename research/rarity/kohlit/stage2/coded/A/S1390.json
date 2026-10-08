@@ -1,0 +1,100 @@
+{
+ "unit_id": "S1390",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1424 Site_Components",
+   "quote": "Small cemetery: four or five oval structures",
+   "type": "grave",
+   "subtype": "small cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1424"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1424 is the cemetery itself; records Rom2?"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1420 Site_Components",
+   "quote": "Three caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1420"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1313 Site_Components",
+   "quote": "rock-hewn installations, mostly basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1313"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1449 Site_Components",
+   "quote": "four large caves",
+   "type": "pit",
+   "subtype": "large caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1449"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1449 Site_Components",
+   "quote": "modern Bediun cemetery",
+   "type": "grave",
+   "subtype": "Bedouin cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1449"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  }
+ ],
+ "notes": "Own row has no pool, pit or grave (monoliths not coded). S1334 'Spring' not coded (no pool stated). S1313 basins have no size: pool_def unclear. No SWP entries in packet."
+}

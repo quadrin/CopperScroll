@@ -1,0 +1,303 @@
+{
+ "unit_id": "S1816",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1816 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own-row component; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E248 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E248"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1838 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1838"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1838 Site_Components",
+   "quote": "possible reservoir",
+   "type": "pool",
+   "subtype": "possible reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1838"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1856 Site_Components",
+   "quote": "Cave with natural pillars and vaults",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1856"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the cave itself; records IA, IA2, Rom"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB E253 Site_Components",
+   "quote": "Cave with natural pillars and vaults",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E253"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the cave itself; records IA, IA2, Rom"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1834 Site_Components",
+   "quote": "Anchorite cave",
+   "type": "pit",
+   "subtype": "anchorite cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1834"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1834 Site_Components",
+   "quote": "plastered cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1834"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1834 Site_Components",
+   "quote": "rock-cut niches and basins",
+   "type": "pool",
+   "subtype": "rock-cut basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1834"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1869 Site_Components",
+   "quote": "Three caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1869"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the caves themselves; records Rom"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S1869 Site_Components",
+   "quote": "inside: plastered cisterns",
+   "type": "pit",
+   "subtype": "cisterns inside caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1869"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S1870 Site_Components",
+   "quote": "Five caves completely excavated.",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1870"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the caves themselves; records Rom"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S1771 Site_Components",
+   "quote": "Sheikh's tomb.",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1771"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the tomb itself; row records Rom (and Byz)"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S1894 Site_Components",
+   "quote": "Dwelling caves",
+   "type": "pit",
+   "subtype": "dwelling caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1894"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row is the caves themselves; records IA, IA2, Hel, Rom"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S1894 Site_Components",
+   "quote": "one has a pool inside",
+   "type": "pit",
+   "subtype": "pool inside a dwelling cave (roofed)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1894"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB E247 Name",
+   "quote": "Cave in Jebel Quruntul",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E247"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row records no period; not dated by the source"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB S1813 Site_Components",
+   "quote": "Cave; non-diagnostic pottery.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1813"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row records no period; not dated by the source"
+   }
+  }
+ ],
+ "notes": "E-sheet rows that repeat an S-sheet row are coded separately with their own grid ref. E248 is the excavation-sheet duplicate of the unit at distance 0 (bearing invalid); its cistern coded with grid E248. Finkelstein p. 722 el-Qasr entry: tower and courtyard only, no feature; the Kh. el-Kilya entry on the same page has no feature. S1894 pool is inside a dwelling cave, so coded as pit (roofed). Cupmarks, conduit, niches not coded except basins (pool, unclear)."
+}

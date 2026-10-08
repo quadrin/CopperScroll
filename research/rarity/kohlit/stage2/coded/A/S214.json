@@ -1,0 +1,236 @@
+{
+ "unit_id": "S214",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S200 Site_Components",
+   "quote": "rock-hewn caves",
+   "type": "pit",
+   "subtype": "rock-hewn caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S200"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S205 Site_Components",
+   "quote": "ca. 200 tombs, mostly shaft tombs and cave tombs",
+   "type": "grave",
+   "subtype": "cemetery of shaft tombs and cave tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S205"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S205 is the cemetery itself and records EB2, IB, MB, IA, Per"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S204 Site_Components",
+   "quote": "20-25 stone basins",
+   "type": "pool",
+   "subtype": "stone basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S204"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S197 Site_Components",
+   "quote": "ca. six rock-hewn caves, some for burial",
+   "type": "pit",
+   "subtype": "rock-hewn caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S197"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S197 Site_Components",
+   "quote": "ca. six rock-hewn caves, some for burial",
+   "type": "grave",
+   "subtype": "rock-hewn burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S197"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S197 Site_Components",
+   "quote": "rock-hewn installations, such as basins and cupmarks",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S197"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S206 Site_Components",
+   "quote": "water cistern",
+   "type": "pit",
+   "subtype": "water cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S206"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S206 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S206"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S206 Site_Components",
+   "quote": "many installations: winepresses, basins and cupmarks",
+   "type": "pool",
+   "subtype": "basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S206"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S206 Site_Components",
+   "quote": "large rock-hewn basin",
+   "type": "pool",
+   "subtype": "rock-hewn basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S206"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S257 Site_Components",
+   "quote": "Sheikh's tomb (Muhammad)",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S257"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S257 Site_Components",
+   "quote": "rock-hewn caves",
+   "type": "pit",
+   "subtype": "rock-hewn caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S257"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S257 Site_Components",
+   "quote": "EIs pools and bathhouse",
+   "type": "pool",
+   "subtype": "pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S257"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the pools EIs"
+   }
+  }
+ ],
+ "notes": "Own row has no candidate features. Unit precision is 500 m, so rows within ~1.5 km have bearing_valid false. S241 'ossuary fragment?' is a find, not a grave: not coded. E30 lists the bathhouse but not the pools. Basins without size coded pool_def unclear. No SWP or survey text in packet."
+}

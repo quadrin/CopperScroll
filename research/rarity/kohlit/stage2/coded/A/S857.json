@@ -1,0 +1,149 @@
+{
+ "unit_id": "S857",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S857 Site_Components",
+   "quote": "Tell; Muslim cemetery; Rom-Byz ruin.",
+   "type": "grave",
+   "subtype": "Muslim cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls it a Muslim cemetery"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "3",
+   "cite": "Mem II p. 245",
+   "quote": "An artificial mound, now occupied by an Arab graveyard.",
+   "type": "grave",
+   "subtype": "graveyard",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source says the mound is now occupied by an Arab graveyard"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S864 Site_Components",
+   "quote": "Two groups of shallow caves",
+   "type": "pit",
+   "subtype": "shallow caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S864"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S864 Site_Components",
+   "quote": "ca. 25 rock-hewn basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S864"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S864 Site_Components",
+   "quote": "limestone basin",
+   "type": "pool",
+   "subtype": "limestone basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S864"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S836 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S836"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S836 Site_Components",
+   "quote": "sarcophagus",
+   "type": "grave",
+   "subtype": "sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S836"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB E97 Site_Components",
+   "quote": "sarcophagus",
+   "type": "grave",
+   "subtype": "sarcophagus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E97"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row, not dated by the source"
+   }
+  }
+ ],
+ "notes": "SWP Mem II p. 245 Tell Abu Sidreh is this unit (linked in Stage 1b); its graveyard is on the mound, no direction. Cemetery coded L because the sources call it Muslim/Arab and in present use. Basins without size coded pool_def unclear; dam (S836) not coded. No survey text in packet."
+}

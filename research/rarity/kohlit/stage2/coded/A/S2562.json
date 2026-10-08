@@ -1,0 +1,530 @@
+{
+ "unit_id": "S2562",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S2562 Site_Components",
+   "quote": "anchorite cells; cisterns; Chal basalt vessels; cave.",
+   "type": "pit",
+   "subtype": "cisterns; cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E369 Site_Components",
+   "quote": "anchorite cells; cisterns; Chal basalt vessels; cave.",
+   "type": "pit",
+   "subtype": "cisterns; cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E369"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S2525 Site_Components",
+   "quote": "built path with rock-cut steps; cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2525"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S2525 Site_Components",
+   "quote": "cisterns; reservoirs and conduits.",
+   "type": "pool",
+   "subtype": "reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2525"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S2594 Site_Components",
+   "quote": "Traces of buildings; shaft tombs; terraces",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2594"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S2480 Site_Components",
+   "quote": "Caves; cistern; pen.",
+   "type": "pit",
+   "subtype": "caves; cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2480"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S2565 Site_Components",
+   "quote": "agricultural installations, pens; burial caves.",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2565"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB E367 Site_Components",
+   "quote": "agricultural installations, pens; burial caves.",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E367"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S2550 Site_Components",
+   "quote": "Traces of building of dresses stones; cistern; caves.",
+   "type": "pit",
+   "subtype": "cistern; caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2550"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S2461 Site_Components",
+   "quote": "Traces of building; cistern.",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2461"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S2653 Site_Components",
+   "quote": "Traces of buildings; terraces; cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2653"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S2490 Site_Components",
+   "quote": "church; cisterns; drainage conduits; tesserae; caves",
+   "type": "pit",
+   "subtype": "cisterns; caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2490"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S2490 Site_Components",
+   "quote": "anchorite cells; reservoirs; inscriptions",
+   "type": "pool",
+   "subtype": "reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2490"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S2709 Site_Components",
+   "quote": "mosaic pavements; crypts; cisterns",
+   "type": "pit",
+   "subtype": "crypts; cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2709"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S2689 Site_Components",
+   "quote": "anchorite caves; traces of buildings; mosaic pavement in church; cisterns",
+   "type": "pit",
+   "subtype": "anchorite caves; cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2689"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S2689 Site_Components",
+   "quote": "cisterns; reservoirs; terraces; burial caves.",
+   "type": "pool",
+   "subtype": "reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2689"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB S2689 Site_Components",
+   "quote": "cisterns; reservoirs; terraces; burial caves.",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2689"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB S2716 Site_Components",
+   "quote": "Caves; pens; terraces; oil press",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2716"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "1",
+   "cite": "WBADB S2716 Site_Components",
+   "quote": "Rom rock-cut burial cave.",
+   "type": "grave",
+   "subtype": "rock-cut burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2716"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the burial cave Rom"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "1",
+   "cite": "WBADB S2587 Site_Components",
+   "quote": "Shaft tombs; MB jar.",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2587"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S2587 is the tomb site; records IB, MB"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "1",
+   "cite": "WBADB E361 Site_Components",
+   "quote": "Rom1 field tower; Byz storage cave.",
+   "type": "pit",
+   "subtype": "storage cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E361"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the storage cave Byz"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "3",
+   "cite": "Mem III p. 6",
+   "quote": "This is a large cave on the south side",
+   "type": "pit",
+   "subtype": "natural cave (Mugharet el Jai)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "3",
+   "cite": "Mem III p. 138",
+   "quote": "A second to the east, called Umm el Jemal",
+   "type": "pit",
+   "subtype": "cave (Umm el Jemal)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "3",
+   "cite": "Mem III p. 138",
+   "quote": "many other caves in the valley which have served as hermitages",
+   "type": "pit",
+   "subtype": "hermit caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f25",
+   "source": "3",
+   "cite": "Mem III p. 138",
+   "quote": "a group now inaccessible occurs on the north at El Hosn",
+   "type": "pit",
+   "subtype": "hermit caves (El Hosn)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f26",
+   "source": "3",
+   "cite": "Mem III p. 140",
+   "quote": "the spring 'Ain Suweinit, on the cliff ledge to the west",
+   "type": "pool",
+   "subtype": "spring basin ('choked the basin', p. 140)",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f27",
+   "source": "3",
+   "cite": "Mem III p. 140",
+   "quote": "a large cistern by a well-known fig-tree at Khiirbet et Tineh",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f28",
+   "source": "3",
+   "cite": "Mem III p. 12",
+   "quote": "The water supply is from cisterns.",
+   "type": "pit",
+   "subtype": "cisterns (Mukhmas village)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f29",
+   "source": "3",
+   "cite": "Mem III p. 12",
+   "quote": "It has a well to the east",
+   "type": "pit",
+   "subtype": "well (Mukhmas village)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f30",
+   "source": "3",
+   "cite": "Mem III p. 12",
+   "quote": "On the north are rock-cut tombs",
+   "type": "grave",
+   "subtype": "rock-cut tombs (Mukhmas village)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "PACKET: SWP Mem III p. 6 (Mugharet el Jai) text is cut at 12,000 characters, mid-word ('made their exod'). SWP Mukhmas (III p. 12, linked in Stage 1b) is a different place (village north of Wady Suweinit); distance not shown, so its cisterns, well (E of the village) and rock-cut tombs (N of the village) are coded relative to the village (relative_to other / none). Mukhmas III p. 149 has no feature. Khurbet el Mahmeh (III p. 119, square Ls, 14 km) clearly not this unit or within 2 km: ignored. 'On the north at El Hosn' read as the north side of the valley, so relative_to other. The cistern at 'Khiirbet et Tineh' may be Kh. et-Tinat (S2565) but is coded position none. Own-row cave and cisterns are components of a monastic-complex row: date U."
+}

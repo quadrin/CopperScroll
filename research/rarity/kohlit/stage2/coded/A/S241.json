@@ -1,0 +1,66 @@
+{
+ "unit_id": "S241",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S257 Site_Components",
+   "quote": "Sheikh's tomb (Muhammad)",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S257"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S257 Site_Components",
+   "quote": "oil press; rock-hewn caves",
+   "type": "pit",
+   "subtype": "rock-hewn caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S257"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S257 Site_Components",
+   "quote": "EIs pools and bathhouse",
+   "type": "pool",
+   "subtype": "pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S257"
+   },
+   "date": {
+    "code": "L",
+    "basis": "dated EIs by the source"
+   }
+  }
+ ],
+ "notes": "Unit row 'ossuary fragment?' is a find, not a grave; not recorded. E30 (bathhouse, church) names no pool. S257 'many rock-hewn installations' not recorded."
+}

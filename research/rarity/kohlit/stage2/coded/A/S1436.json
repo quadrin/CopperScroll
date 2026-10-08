@@ -1,0 +1,217 @@
+{
+ "unit_id": "S1436",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1436 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of own row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1436 Site_Components",
+   "quote": "pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of own row; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1394 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1394"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1488 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1488"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1488 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1488"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "Reservoir",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "two arcosolium tombs",
+   "type": "grave",
+   "subtype": "arcosolium tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "several rock-cut basins",
+   "type": "pool",
+   "subtype": "rock-cut basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "several tombs nearby",
+   "type": "grave",
+   "subtype": "tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1511 Site_Components",
+   "quote": "two cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1511"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S1502 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1502"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S1502 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1502"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  }
+ ],
+ "notes": "Own-row pool and cisterns have no direction in any source (position none). Finkelstein et al. 1997 pp. 665-666 and SWP Mem II p. 49 (Jalud) give no pool, pit or grave. S1459 'rock-cut basins' have no size: pool_def unclear. Arcosolium tombs taken as rock-cut burial caves (cavity true); unspecified 'tombs nearby' false."
+}

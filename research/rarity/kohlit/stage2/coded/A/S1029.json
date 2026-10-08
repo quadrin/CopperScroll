@@ -1,0 +1,136 @@
+{
+ "unit_id": "S1029",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1029 Site_Components",
+   "quote": "rock-cut basin",
+   "type": "pool",
+   "subtype": "rock-cut basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1029 Site_Components",
+   "quote": "plastered cistern with steps",
+   "type": "pit",
+   "subtype": "plastered cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Finkelstein et al. 1997 p. 845",
+   "quote": "On the northern end of the site ... and a rock-cut basin",
+   "type": "pool",
+   "subtype": "rock-cut basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Finkelstein et al. 1997 p. 845",
+   "quote": "A plastered cistern with steps on the eastern side of the site.",
+   "type": "pit",
+   "subtype": "plastered cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1010 Site_Components",
+   "quote": "Burial cave.",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1010"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1010 is the burial cave itself and records EB, MB, IA2"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1008 Site_Components",
+   "quote": "plastered reservoir; channel; another reservoir",
+   "type": "pool",
+   "subtype": "reservoirs",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1008"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S6027 Site_Components",
+   "quote": "plastered water cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S6027"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  }
+ ],
+ "notes": "Rock-cut basin has no size: pool_def unclear. S1010 row is the burial cave itself. S1008 lists two reservoirs; coded as one pool feature. S1014 vaulted building not coded."
+}

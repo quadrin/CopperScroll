@@ -1,0 +1,65 @@
+{
+ "unit_id": "S1441",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1441 Site_Components",
+   "quote": "two pools (one round, one oval)",
+   "type": "pool",
+   "subtype": "two pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1466 Site_Components",
+   "quote": "Complex water system, with aqueducts, syphon and cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1466"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1466 is the water system itself and records Hel, Rom"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1381 Site_Components",
+   "quote": "Plastered pool 50x100 m",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1381"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1381 is the pool itself and records Rom"
+   }
+  }
+ ],
+ "notes": "S1433 and E163 'two tumuli (excavated)' not recorded: burial not stated. No SWP entries in packet."
+}

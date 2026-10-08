@@ -1,0 +1,150 @@
+{
+ "unit_id": "S204",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S204 Site_Components",
+   "quote": "20-25 stone basins",
+   "type": "pool",
+   "subtype": "stone basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S205 Site_Components",
+   "quote": "Large cemetery; ca. 200 tombs, mostly shaft tombs and cave tombs",
+   "type": "grave",
+   "subtype": "cemetery of shaft tombs and cave tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S205"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S205 is the cemetery itself; row records Chal to Per"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S197 Site_Components",
+   "quote": "ca. six rock-hewn caves, some for burial",
+   "type": "pit",
+   "subtype": "rock-hewn caves (non-burial)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S197"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S197 Site_Components",
+   "quote": "ca. six rock-hewn caves, some for burial",
+   "type": "grave",
+   "subtype": "rock-hewn burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S197"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S197 Site_Components",
+   "quote": "rock-hewn installations, such as basins and cupmarks",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S197"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S206 Site_Components",
+   "quote": "water cistern; caves",
+   "type": "pit",
+   "subtype": "water cistern; caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S206"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S206 Site_Components",
+   "quote": "winepresses, basins and cupmarks; large rock-hewn basin",
+   "type": "pool",
+   "subtype": "basins; large rock-hewn basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S206"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S200 Site_Components",
+   "quote": "rock-hewn caves",
+   "type": "pit",
+   "subtype": "rock-hewn caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S200"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "S197 'six rock-hewn caves, some for burial' split into a pit (the caves) and a grave (the burial caves). Own-row 'stone basins' coded as pool unclear (no size; may be portable). S205, S197, S206, S200 bearings invalid. No SWP entries in packet."
+}

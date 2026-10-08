@@ -1,0 +1,104 @@
+{
+ "unit_id": "S676",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [
+  {
+   "condition": "C3",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "There are wells and cisterns, but no tombs were found"
+  }
+ ],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S676 Site_Components",
+   "quote": "large ruin; reservoir caves",
+   "type": "pit",
+   "subtype": "reservoir caves",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S676 Site_Components",
+   "quote": "many cisterns, caves and rock cuttings",
+   "type": "pit",
+   "subtype": "cisterns; caves",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S687 Site_Components",
+   "quote": "vineyard; burial cave; rock-cut trough",
+   "type": "grave",
+   "subtype": "burial cave",
+   "position": {
+    "kind": "grid",
+    "ref": "S687"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "cavity_with_opening": true,
+   "mouth": {}
+  },
+  {
+   "id": "f4",
+   "source": "3",
+   "cite": "Mem II p. 29",
+   "quote": "mud village built on an older site, supplied by wells and cisterns",
+   "type": "pit",
+   "subtype": "wells and cisterns",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f5",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "old ruins, which consist of foundations, caves and cisterns",
+   "type": "pit",
+   "subtype": "caves and cisterns",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   },
+   "is_tomb": false
+  }
+ ],
+ "notes": "'Reservoir caves' coded as pit (a cave reservoir is covered). SWP p. 30 states no tombs were found at Kh. 'Atuf: recorded as C3 explicit absence. Mem II p. 29 entry text also contains a paragraph on Khurbet Kaaun (square Pm), a different place with no location relative to the unit: ignored. Rock cuttings and rock-cut trough not coded."
+}

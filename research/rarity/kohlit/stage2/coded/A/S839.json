@@ -1,0 +1,247 @@
+{
+ "unit_id": "S839",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "none in packet",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S839 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own-row component; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S839 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own-row component; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S839 Site_Components",
+   "quote": "rock-hewn pool",
+   "type": "pool",
+   "subtype": "rock-hewn pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own-row component; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E98 Site_Components",
+   "quote": "[Cisterns; burial caves; winepress]",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E98"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E98 (no periods; bracketed copy of S839); not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E98 Site_Components",
+   "quote": "[Cisterns; burial caves; winepress]",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "E98"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E98 (no periods); not dated itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "caves; rock cuttings; cisterns",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S842 (MB-Byz); not dated itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "caves; rock cuttings; cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S842 (MB-Byz); not dated itself"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S842 (MB-Byz); not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S842 Site_Components",
+   "quote": "rock-hewn pool",
+   "type": "pool",
+   "subtype": "rock-hewn pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S842"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S842 (MB-Byz); not dated itself"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S827 Site_Components",
+   "quote": "Palestinian village; cisterns; troughs",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S827"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S827 (IA2, Byz, EIs, Ott); not dated itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S827 Site_Components",
+   "quote": "Sheikh's tomb",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S827"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S827; not dated itself"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "3",
+   "cite": "Mem II p. 243",
+   "quote": "Near this village are traces of ruins, cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "3",
+   "cite": "Mem II p. 243",
+   "quote": "a ruined tank",
+   "type": "pool",
+   "subtype": "tank",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "3",
+   "cite": "Mem II p. 243",
+   "quote": "a cemetery of rock-cut tombs",
+   "type": "grave",
+   "subtype": "cemetery of rock-cut tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "SWP Salim: Mem II p. 29 ('rock-cut tombs, cisterns, and a tank') and p. 243 describe the same features; coded once for source 3, citing p. 243. The rest of the p. 29 text (Gospel Salim 8 miles S of Beisan, ed Deir, Tell er Ridhghah, sheet-wide sites and roads) concerns other places; ignored. 'Two springs' 3/4 mile N (OCR 'f mile') are not a coded class. SWP entries Jebel Eslamiyeh (p. 24), 'Askar, Balata, Mohnah, 'Asiret el Kibliyeh (p. 156) and El Mugheir (p. 49) are other places found via 'Shechem'/'Salim', with no WBADB row for them within 2 km; ignored (incl. 'Askar 'ancient sepulchres', Ebal tombs and cistern). Packet page '29' looks like printed p. 230. Finkelstein et al. 1997 p. 817 lists no features (site not surveyed by that team). E98 repeats S839's components at the same point (bearing null); E91 has no components. Unit is excavated but no first publication is listed (source 4)."
+}

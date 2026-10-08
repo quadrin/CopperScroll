@@ -1,0 +1,966 @@
+{
+ "unit_id": "E754",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "none in packet",
+  "3": "read",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB E754 Site_Components",
+   "quote": "Hel and Rom finds: structures; pools; ritual baths",
+   "type": "pool",
+   "subtype": "pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under 'Hel and Rom finds' in the unit's row"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E754 Site_Components",
+   "quote": "Hel and Rom finds: structures; pools; ritual baths",
+   "type": "pool",
+   "subtype": "ritual baths",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under 'Hel and Rom finds' in the unit's row"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E754 Site_Components",
+   "quote": "cemetery with about 1100 burials",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under 'Hel and Rom finds' in the unit's row"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E754 Site_Components",
+   "quote": "sixth and seventh cent. caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the caves to the 6th-7th centuries"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E755 Name",
+   "quote": "Cave Q-5",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E755"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E755 records no period"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB E760 Site_Components",
+   "quote": "Cave; Rom pottery.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E760"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E760 is the cave; records Rom"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E762 Site_Components",
+   "quote": "Several caves; pottery; coins; nails.",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E762"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E762 is the caves; records Rom1"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB E761 Name",
+   "quote": "Cave Q-4",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E761"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E761 records no period"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S3885 Site_Components",
+   "quote": "Natural cave; pottery; olive pits; textile",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3885"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3885 is the cave; records Hel"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB E757 Site_Components",
+   "quote": "Natural cave; pottery; olive pits; textile",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E757"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E757 is the cave; records Hel (major periods)"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S3900 Site_Components",
+   "quote": "Cave; pottery; textiles; cord; leather.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3900"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3900 is the cave; records IA, Hel, Rom"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB E764 Site_Components",
+   "quote": "Cave; pottery; textiles; cord; leather.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E764"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E764 is the cave; records IA, Hel, Rom"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S3835 Site_Components",
+   "quote": "Natural cave; hearth; organic material; animal bones.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3835"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3835 is the cave; records Rom1"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB E745 Site_Components",
+   "quote": "Natural cave; hearth; organic material; animal bones.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E745"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E745 is the cave; records Rom1"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S3826 Site_Components",
+   "quote": "Rectangular compound; built around a cistern.",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3826"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S3826, which records no period"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S3824 Site_Components",
+   "quote": "Cave; pottery; textile; cordage.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3824"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3824 is the cave; records Rom"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB E740 Site_Components",
+   "quote": "Cave; pottery; textile; cordage.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E740"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E740 is the cave; records Rom"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB S3813 Site_Components",
+   "quote": "Cave; pottery; worked bone (?); cloth; string",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3813"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3813 is the cave; records Rom1"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "1",
+   "cite": "WBADB E737 Comments",
+   "quote": "Cave in Qumran.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E737"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E737 records no period"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "1",
+   "cite": "WBADB S3809 Site_Components",
+   "quote": "Passage; bones of birds.",
+   "type": "pit",
+   "subtype": "rock passage",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3809"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3809 records no period"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "1",
+   "cite": "WBADB S3806 Site_Components",
+   "quote": "Cave; pottery.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3806"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3806 is the cave; records EB, IA2, Rom1"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "1",
+   "cite": "WBADB E736 Site_Components",
+   "quote": "Cave; pottery.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E736"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E736 is the cave; records EB, IA2, Rom1"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "1",
+   "cite": "WBADB S3958 Site_Components",
+   "quote": "Cave; pottery; Natufian flint lunate; glass; cloth; ropes.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3958"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3958 is the cave; records Nat, IA, Hel"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "1",
+   "cite": "WBADB E774 Site_Components",
+   "quote": "Cave; pottery; Natufian flint lunate; glass; cloth; ropes.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E774"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E774 is the cave; records Nat, IA, Hel"
+   }
+  },
+  {
+   "id": "f25",
+   "source": "1",
+   "cite": "WBADB S3802 Site_Components",
+   "quote": "Cave; pottery; modern finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3802"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3802 is the cave; records Rom1"
+   }
+  },
+  {
+   "id": "f26",
+   "source": "1",
+   "cite": "WBADB S3803 Site_Components",
+   "quote": "Cave; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3803"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3803 records no period"
+   }
+  },
+  {
+   "id": "f27",
+   "source": "1",
+   "cite": "WBADB E733 Site_Components",
+   "quote": "Cave; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E733"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E733 records no period"
+   }
+  },
+  {
+   "id": "f28",
+   "source": "1",
+   "cite": "WBADB E734 Site_Components",
+   "quote": "Cave; pottery; modern finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E734"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E734 is the cave; records Rom1"
+   }
+  },
+  {
+   "id": "f29",
+   "source": "1",
+   "cite": "WBADB S3801 Site_Components",
+   "quote": "Cave; fissure; niche; no finds.",
+   "type": "pit",
+   "subtype": "cave; fissure",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3801"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3801 records no period"
+   }
+  },
+  {
+   "id": "f30",
+   "source": "1",
+   "cite": "WBADB S3800 Site_Components",
+   "quote": "Natural cave; stone fence (ancient); Wadi Rabah pottery.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3800"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3800 is the cave; records Neo, Chal, Rom"
+   }
+  },
+  {
+   "id": "f31",
+   "source": "1",
+   "cite": "WBADB E732 Site_Components",
+   "quote": "Natural cave; stone fence (ancient); Wadi Rabah pottery.",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E732"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E732 is the cave; records Neo, Chal, Rom"
+   }
+  },
+  {
+   "id": "f32",
+   "source": "1",
+   "cite": "WBADB S3797 Site_Components",
+   "quote": "Cave; no finds.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3797"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3797 records no period"
+   }
+  },
+  {
+   "id": "f33",
+   "source": "1",
+   "cite": "WBADB S3787 Site_Components",
+   "quote": "Cave; fenced courtyard; hearths; organic material.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3787"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3787 is the cave; records Rom1"
+   }
+  },
+  {
+   "id": "f34",
+   "source": "1",
+   "cite": "WBADB E721 Site_Components",
+   "quote": "Cave; fenced courtyard; hearths; organic material.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E721"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E721 is the cave; records Rom1"
+   }
+  },
+  {
+   "id": "f35",
+   "source": "1",
+   "cite": "WBADB S3779 Site_Components",
+   "quote": "Cave/niche - not entered.",
+   "type": "pit",
+   "subtype": "cave/niche",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3779"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3779 records no period"
+   }
+  },
+  {
+   "id": "f36",
+   "source": "1",
+   "cite": "WBADB S3780 Site_Components",
+   "quote": "Cave; non-diagnostic pottery; animal bones.",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3780"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3780 records no period"
+   }
+  },
+  {
+   "id": "f37",
+   "source": "1",
+   "cite": "WBADB S3770 Name",
+   "quote": "Four Caves XI/2-5",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3770"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3770 records no period"
+   }
+  },
+  {
+   "id": "f38",
+   "source": "1",
+   "cite": "WBADB E717 Name",
+   "quote": "Four Caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E717"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E717 records no period"
+   }
+  },
+  {
+   "id": "f39",
+   "source": "1",
+   "cite": "WBADB E715 Name",
+   "quote": "Cave of the Twins",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E715"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E715 is the cave; records Chal, EB, Rom"
+   }
+  },
+  {
+   "id": "f40",
+   "source": "1",
+   "cite": "WBADB S3761 Site_Components",
+   "quote": "Cave/niche - not entered.",
+   "type": "pit",
+   "subtype": "cave/niche",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3761"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3761 records no period"
+   }
+  },
+  {
+   "id": "f41",
+   "source": "1",
+   "cite": "WBADB S3760 Site_Components",
+   "quote": "Rock shelter and chamber; modern finds of a hermit.",
+   "type": "pit",
+   "subtype": "cave (rock shelter and chamber)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3760"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3760 records no period"
+   }
+  },
+  {
+   "id": "f42",
+   "source": "1",
+   "cite": "WBADB E714 Site_Components",
+   "quote": "Rock shelter and chamber; modern finds of a hermit.",
+   "type": "pit",
+   "subtype": "cave (rock shelter and chamber)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E714"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E714 records no period"
+   }
+  },
+  {
+   "id": "f43",
+   "source": "1",
+   "cite": "WBADB S3759 Site_Components",
+   "quote": "Cave/niche - not entered.",
+   "type": "pit",
+   "subtype": "cave/niche",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3759"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3759 records no period"
+   }
+  },
+  {
+   "id": "f44",
+   "source": "1",
+   "cite": "WBADB S3758 Site_Components",
+   "quote": "Cave/niche - not entered.",
+   "type": "pit",
+   "subtype": "cave/niche",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3758"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3758 records no period"
+   }
+  },
+  {
+   "id": "f45",
+   "source": "1",
+   "cite": "WBADB S3745 Site_Components",
+   "quote": "Cave/niche - not entered.",
+   "type": "pit",
+   "subtype": "cave/niche",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3745"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3745 records no period"
+   }
+  },
+  {
+   "id": "f46",
+   "source": "1",
+   "cite": "WBADB S3744 Site_Components",
+   "quote": "Cave/niche - not entered.",
+   "type": "pit",
+   "subtype": "cave/niche",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3744"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3744 records no period"
+   }
+  },
+  {
+   "id": "f47",
+   "source": "1",
+   "cite": "WBADB E711 Name",
+   "quote": "Cave 24 in Qumran",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E711"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row E711 is the cave; records PPNB, Rom"
+   }
+  },
+  {
+   "id": "f48",
+   "source": "1",
+   "cite": "WBADB E756 Name",
+   "quote": "Cave Q-3",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E756"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E756 records no period"
+   }
+  },
+  {
+   "id": "f49",
+   "source": "1",
+   "cite": "WBADB S3725 Name",
+   "quote": "Cave 1 and Cave 2",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3725"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3725 records no period"
+   }
+  },
+  {
+   "id": "f50",
+   "source": "1",
+   "cite": "WBADB E713 Name",
+   "quote": "Cave 1 and Cave 2",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E713"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E713 records no period"
+   }
+  },
+  {
+   "id": "f51",
+   "source": "1",
+   "cite": "WBADB S3703 Name",
+   "quote": "Two Caves X/47",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3703"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3703 records no period"
+   }
+  },
+  {
+   "id": "f52",
+   "source": "1",
+   "cite": "WBADB E706 Name",
+   "quote": "Caves A and B",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E706"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E706 records no period"
+   }
+  },
+  {
+   "id": "f53",
+   "source": "1",
+   "cite": "WBADB E707 Name",
+   "quote": "Cave of the Pillar",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E707"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row E707 records no period"
+   }
+  },
+  {
+   "id": "f54",
+   "source": "3",
+   "cite": "Mem III p. 210",
+   "quote": "Outside the wall on the west is a small birkeh",
+   "type": "pool",
+   "subtype": "birkeh with steps",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f55",
+   "source": "3",
+   "cite": "Mem III p. 210",
+   "quote": "immense number of graves occupying the plateau and the eastern slope",
+   "type": "grave",
+   "subtype": "cemetery (graves on the plateau)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "source says only that they are not Moslem graves"
+   }
+  },
+  {
+   "id": "f56",
+   "source": "3",
+   "cite": "Mem III p. 210",
+   "quote": "immense number of graves occupying the plateau and the eastern slope",
+   "type": "grave",
+   "subtype": "cemetery (graves on the eastern slope)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "source says only that they are not Moslem graves"
+   }
+  }
+ ],
+ "notes": "Each cave row is coded as a pit at its own point (row is the cave). E762 Comments say 'Area north of Kh. Qumran' but the brief gives other rows' features a grid position, so it is coded grid (bearing_valid false). SWP Mem III p. 210 cemetery split into two features: graves on the plateau (the site; no direction) and on the eastern slope (E). SWP says the excavated grave has a 'shaft' with a trough at its bottom, 1 m deep and filled; coded as a dug grave (cavity_with_opening false). Clermont-Ganneau's account (same entry) and the Hajr el Asbah entry (Mem III p. 198, names the unit) describe the same birket and cemetery; not coded again. S3790 tumulus/cairns, S3765 rock shelter and E742 bones not coded."
+}

@@ -2,7 +2,7 @@
 
 Updated 8 October 2026 UTC / 7 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (8 October UTC): **not obtained**: no new evidence was sought. Added [entry schematics](schematics/README.md) for 60 entries and the [approved Koḥlit rarity-count pre-registration](preregistration/kohlit_rarity_2026-10-08.md); its Stage 1 screen is next.
+Last session (8 October UTC): **obtained**: the pre-registered [Koḥlit rarity count](rarity/kohlit/stage2/RESULTS.md) was run. Headline (R1, Hel/Rom, branch A, survey level): k = 0, f = 1, m = 332 of 333. Branch B: k = 4. So rarity is not measurable from available evidence (§6). No site is identified or rejected.
 
 ## Active questions and the observation that decides each
 
@@ -50,4 +50,4 @@ An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or M
 
 ## Key reports
 
-[Entry schematics](schematics/README.md) · [Koḥlit rarity pre-registration](preregistration/kohlit_rarity_2026-10-08.md) · [Feature workbench](feature_workbench/README.md) (8 October; evaluators and an atlas view for the Koḥlit relationships, entry 25 caves, IV/17 and Jericho states, coverage and decision planning) · [Agent review](agent_review_2026-10-07/README.md) · [goals](agent_review_2026-10-07/GOALS.md) · [follow-up](agent_review_2026-10-07/followup/README.md) · [entry 60 registry v2](agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json) · [Jericho pools](assessments/entry29_jericho_pools/README.md) · [outcome ledger](progress/outcome_ledger.json) · [backlog](OPEN_QUESTIONS.md)
+[Entry schematics](schematics/README.md) · [Koḥlit rarity pre-registration](preregistration/kohlit_rarity_2026-10-08.md) and [result](rarity/kohlit/stage2/RESULTS.md) · [Feature workbench](feature_workbench/README.md) (8 October; evaluators and an atlas view for the Koḥlit relationships, entry 25 caves, IV/17 and Jericho states, coverage and decision planning) · [Agent review](agent_review_2026-10-07/README.md) · [goals](agent_review_2026-10-07/GOALS.md) · [follow-up](agent_review_2026-10-07/followup/README.md) · [entry 60 registry v2](agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json) · [Jericho pools](assessments/entry29_jericho_pools/README.md) · [outcome ledger](progress/outcome_ledger.json) · [backlog](OPEN_QUESTIONS.md)

@@ -1,0 +1,199 @@
+{
+ "unit_id": "S398",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S398 Site_Components",
+   "quote": "Rom mausoleum (el-Qaṣr): structure, decorated entrance and lintel",
+   "type": "grave",
+   "subtype": "built mausoleum (el-Qasr)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "WBADB calls it a Rom mausoleum"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S398 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own-row component; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "3",
+   "cite": "Mem II p. 29",
+   "quote": "caves and tombs under the present houses and on all sides",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "3",
+   "cite": "Mem II p. 29",
+   "quote": "caves and tombs under the present houses and on all sides",
+   "type": "grave",
+   "subtype": "tombs under the houses (rock-cut, cf. p. 245)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "3",
+   "cite": "Mem II p. 245",
+   "quote": "there are many rock-cut cisterns",
+   "type": "pit",
+   "subtype": "rock-cut cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "3",
+   "cite": "Mem II p. 245",
+   "quote": "building called el Kasr, which appears to be a tomb",
+   "type": "grave",
+   "subtype": "built tomb (el Kasr)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "same building as WBADB S398 'Rom mausoleum (el-Qasr)'"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S419 Site_Components",
+   "quote": "rock cuttings; caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S419"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S419 (MB, LB); not dated itself"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S419 Site_Components",
+   "quote": "openings of burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S419"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S419 (MB, LB); not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S397 Site_Components",
+   "quote": "Water cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S397"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S397 (IA2, Byz); not dated itself"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S442 Site_Components",
+   "quote": "large water cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S442"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S442 (Byz, EIs, Med); not dated itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S442 Site_Components",
+   "quote": "burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S442"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S442 (Byz, EIs, Med); not dated itself"
+   }
+  }
+ ],
+ "notes": "SWP Teiasir is described on Mem II p. 29 (topography) and p. 245 (archaeology); same caves, tombs and cisterns, coded once for source 3. p. 29 puts caves and tombs 'on all sides' of the village: no single compass point, so position none. p. 245 says they 'undermine the village', so tombs coded as cavities. The p. 29 'curious monument' south of the village is the el Kasr tomb of p. 245. 'No spring nearer than the Farah valley' is not a pool absence statement. The p. 29 text runs on into Tubas (item 9), another village with no WBADB row within 2 km; its basin, cisterns and Neby Toba tomb ignored. Packet page '29' looks like printed p. 228 (header 229 follows). OCR on p. 245 renders el Kasr as 'c 1 K li s r'. Winepresses (S442) and rock cuttings (S419) not coded. Source 2 not accessed."
+}

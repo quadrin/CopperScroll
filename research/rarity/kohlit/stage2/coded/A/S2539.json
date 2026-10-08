@@ -1,0 +1,747 @@
+{
+ "unit_id": "S2539",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not accessed",
+  "5": "read"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S2539 Site_Components",
+   "quote": "three Herodian winter palaces with baths, swimming pools",
+   "type": "pool",
+   "subtype": "swimming pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source lists the pools as part of the Hasmonean/Herodian palaces"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S2551 Site_Components",
+   "quote": "Very large Herodian pool",
+   "type": "pool",
+   "subtype": "pool (Birkat Musa)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2551"
+   },
+   "date": {
+    "code": "D",
+    "basis": "own row S2551 records Rom; source says Herodian"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S2496 Site_Components",
+   "quote": "Natural cave; no finds",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2496"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2496 records no period"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S2520 Site_Components",
+   "quote": "Natural cave; no finds",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2520"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2520 records no period"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S2535 Site_Components",
+   "quote": "Natural cave; no finds",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2535"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2535 records no period"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S2503 Site_Components",
+   "quote": "Cave; niches; pottery",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2503"
+   },
+   "date": {
+    "code": "D",
+    "basis": "own row S2503 records MB, IA; duplicate row E359 is the same feature"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S2482 Site_Components",
+   "quote": "Natural cave; no finds",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2482"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2482 records no period"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S2475 Site_Components",
+   "quote": "Natural cave; no finds",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2475"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2475 records no period"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S2485 Site_Components",
+   "quote": "Natural cave; no finds",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2485"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2485 records no period"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S2514 Site_Components",
+   "quote": "structural remains, pool, moat",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2514"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source; duplicate row E360"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S2589 Site_Components",
+   "quote": "Rom bathhouses with mosaics, frescoes, basin and bath",
+   "type": "pool",
+   "subtype": "basin (no size)",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S2589"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source lists the basin in the Rom bathhouses; duplicate row E371"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S2589 Site_Components",
+   "quote": "aqueducts and cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2589"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S2462 Site_Components",
+   "quote": "Burial cave; ossuary fragments",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2462"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2462 records no period"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S2479 Site_Components",
+   "quote": "water reservoir",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2479"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S2522 Site_Components",
+   "quote": "plastered water reservoir",
+   "type": "pool",
+   "subtype": "plastered water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2522"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "1",
+   "cite": "WBADB S2449 Site_Components",
+   "quote": "Natural cave; non-diagnostic pottery",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2449"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2449 records no period"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "1",
+   "cite": "WBADB S2446 Site_Components",
+   "quote": "Second Temple period cemetery: thousands of rock-hewn burials",
+   "type": "grave",
+   "subtype": "cemetery of rock-hewn burials",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S2446"
+   },
+   "date": {
+    "code": "D",
+    "basis": "own row S2446 records Rom; source says Second Temple period; duplicate row E349"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "1",
+   "cite": "WBADB S2440 Site_Components",
+   "quote": "Natural cave; no finds",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2440"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2440 records no period"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "1",
+   "cite": "WBADB S2425 Site_Components",
+   "quote": "tomb with inscription",
+   "type": "grave",
+   "subtype": "tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2425"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "1",
+   "cite": "WBADB S2414 Site_Components",
+   "quote": "Natural cave; no finds",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2414"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2414 records no period"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "1",
+   "cite": "WBADB S2409 Site_Components",
+   "quote": "Natural cave; pottery; cloth; bones",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2409"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2409 records no period; duplicate row E343 is the same feature"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "1",
+   "cite": "WBADB S2410 Site_Components",
+   "quote": "Natural cave; textiles; non-diagnostic pottery; bones",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2410"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2410 records no period; duplicate row E344 is the same feature"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "1",
+   "cite": "WBADB S2394 Site_Components",
+   "quote": "Natural cave; no finds",
+   "type": "pit",
+   "subtype": "natural cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S2394"
+   },
+   "date": {
+    "code": "U",
+    "basis": "own row S2394 records no period"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 7 p. 102",
+   "quote": "pits (post-Herodian Period: 2nd century AD)",
+   "type": "pit",
+   "subtype": "pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N7"
+   },
+   "date": {
+    "code": "U",
+    "basis": "2nd century AD straddles 135 CE: neither securely before nor after"
+   }
+  },
+  {
+   "id": "f25",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 7 p. 102",
+   "quote": "Byzantine Period ... Funerary Architecture: mausoleum",
+   "type": "grave",
+   "subtype": "mausoleum",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N7"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Byzantine Period"
+   }
+  },
+  {
+   "id": "f26",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 1 p. 99",
+   "quote": "\"Pool Complex\" with ritual baths",
+   "type": "pool",
+   "subtype": "Pool Complex",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N1"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Hellenistic Period"
+   }
+  },
+  {
+   "id": "f27",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 38 p. 120",
+   "quote": "Public architecture: pool",
+   "type": "pool",
+   "subtype": "pool (Birket Musa), 220 x 160 m",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N38"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry occupational period Roman"
+   }
+  },
+  {
+   "id": "f28",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 4 p. 101",
+   "quote": "Public architecture: pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N4"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry occupational period Hellenistic"
+   }
+  },
+  {
+   "id": "f29",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 32 p. 118",
+   "quote": "Late Hellenistic Period ... Public architecture: aqueduct, cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N32"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Late Hellenistic and Roman (Herodian)"
+   }
+  },
+  {
+   "id": "f30",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 32 p. 118",
+   "quote": "Roman Period (Herodian Period) ... aqueduct, pools, cisterns",
+   "type": "pool",
+   "subtype": "pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N32"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Roman (Herodian) Period"
+   }
+  },
+  {
+   "id": "f31",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 31 p. 117",
+   "quote": "Hellenistic Period ... Public architecture: fortress, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N31"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Hellenistic Period"
+   }
+  },
+  {
+   "id": "f32",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 31 p. 117",
+   "quote": "Hellenistic Period ... Public architecture: fortress, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N31"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Hellenistic Period"
+   }
+  },
+  {
+   "id": "f33",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 31 p. 117",
+   "quote": "monastery (chapel, rooms, cistern)",
+   "type": "pit",
+   "subtype": "cistern (monastery)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N31"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Byzantine Period"
+   }
+  },
+  {
+   "id": "f34",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 10 p. 106",
+   "quote": "Roman Period ... Domestic architecture: houses, wells",
+   "type": "pit",
+   "subtype": "wells",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N10"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Roman Period"
+   }
+  },
+  {
+   "id": "f35",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 12 p. 107",
+   "quote": "Roman (Herodian) Period ... Public architecture: pool, cisterns",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N12"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Roman (Herodian) Period"
+   }
+  },
+  {
+   "id": "f36",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 12 p. 107",
+   "quote": "Roman (Herodian) Period ... Public architecture: pool, cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N12"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Roman (Herodian) Period"
+   }
+  },
+  {
+   "id": "f37",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 12 p. 107",
+   "quote": "Byzantine Period ... Funerary architecture: tombs",
+   "type": "grave",
+   "subtype": "tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N12"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under Byzantine Period"
+   }
+  },
+  {
+   "id": "f38",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 82 p. 144",
+   "quote": "Early Bronze IV ... Funerary architecture: shaft-tombs",
+   "type": "grave",
+   "subtype": "shaft-tombs (EB IV)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "N82"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Early Bronze IV"
+   }
+  },
+  {
+   "id": "f39",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 82 p. 144",
+   "quote": "Middle Bronze II ... Funerary architecture: shaft-tombs",
+   "type": "grave",
+   "subtype": "shaft-tombs (MB II)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "N82"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Middle Bronze II"
+   }
+  },
+  {
+   "id": "f40",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 82 p. 144",
+   "quote": "Hellenistic Period ... Funerary architecture: tombs",
+   "type": "grave",
+   "subtype": "tombs (Hellenistic)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N82"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed under Hellenistic Period"
+   }
+  },
+  {
+   "id": "f41",
+   "source": "3",
+   "cite": "Mem III p. 24 (packet page; printed p. 191), Beit Jubr et Tahtani",
+   "quote": "Immediately south of the fort is a small ruined birkeh",
+   "type": "pool",
+   "subtype": "birkeh (dammed reservoir)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N36"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source (only compared with 12th-century work)"
+   }
+  },
+  {
+   "id": "f42",
+   "source": "3",
+   "cite": "Mem III p. 202 (packet page; printed p. 206), Kanat Musa",
+   "quote": "some ruins east of the Birket Musa",
+   "type": "pool",
+   "subtype": "Birket Musa (named only)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2551"
+   },
+   "date": {
+    "code": "D",
+    "basis": "own row S2551 records Rom"
+   }
+  },
+  {
+   "id": "f43",
+   "source": "3",
+   "cite": "Mem III p. 202 (packet page; printed p. 206), Kanat Musa",
+   "quote": "east of the Birket Musa, among which are remains of a cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "E363 duplicates the unit's own row; its swimming pools are recorded once (own row, position none). Other E/S duplicates (E359, E360, E371, E349, E343, E344) recorded once. SWP: Beit Jubr et Tahtani matches Nigro N36 (250 m); its birkeh 'immediately south of the fort' takes grid N36. Kanat Musa: Birket Musa (named) given grid S2551; the cistern 'east of the Birket Musa' coded words E, relative to other; the other aqueduct cisterns (Ain el Aujah to Kh. el Mefjir, Bir Heider 8 miles) are not locatable within 2 km and not coded. Tell es Sultan entry: section 6 (Tellul Abu el 'Aleik = the unit) has only a 'rectangular chamber' (a room) and a bridge, not coded; it says the site 'is not otherwise provided with water' (supply, not a pool absence; not recorded as absence). Its Tell es Sultan/'Ain es Sultan features and Warren's mound No. 3 graves lie near 'Ain es Sultan (Tell es Sultan is not within 2 km); not coded. Clearly different places, ignored: Rujm el Mogheifir (Ps, 4.7 km), Hajr el Asbah, Khurbet Haiyan, Mugharet el Jai, Khan Hathrurah, Khurbet es Sumrah (6.8-12.7 km). Tell es Sultan and Mugharet el Jai texts are cut at 12,000 characters. N7 pits (2nd century AD) coded U. Rock shelters, niches, recesses, fissures not coded. No explicit absence statements."
+}

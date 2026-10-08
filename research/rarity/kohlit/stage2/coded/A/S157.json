@@ -1,0 +1,116 @@
+{
+ "unit_id": "S157",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S157 Site_Components",
+   "quote": "maybe a fortified MB2b site; cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S145 Site_Components",
+   "quote": "terraces; two cisterns; cave",
+   "type": "pit",
+   "subtype": "cisterns; cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S145"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S153 Site_Components",
+   "quote": "system of rock-hewn cisterns",
+   "type": "pit",
+   "subtype": "rock-hewn cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S153"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S153 Site_Components",
+   "quote": "square pool",
+   "type": "pool",
+   "subtype": "square pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S153"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S138 Site_Components",
+   "quote": "water cisterns; caves",
+   "type": "pit",
+   "subtype": "water cisterns; caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S138"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S188 Site_Components",
+   "quote": "at least three mosques in the village; cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S188"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Unit cistern has no direction in the source (position none). S129 'no ancient remains' refers to another row, not the unit."
+}

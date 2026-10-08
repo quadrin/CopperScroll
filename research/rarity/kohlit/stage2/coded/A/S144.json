@@ -1,0 +1,219 @@
+{
+ "unit_id": "S144",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S138 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S138"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S138 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S138"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S145 Site_Components",
+   "quote": "two cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S145"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S145 Site_Components",
+   "quote": "cave",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S145"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S157 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S157"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S153 Site_Components",
+   "quote": "system of rock-hewn cisterns",
+   "type": "pit",
+   "subtype": "rock-hewn cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S153"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S153 Site_Components",
+   "quote": "square pool",
+   "type": "pool",
+   "subtype": "square pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S153"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S103 Site_Components",
+   "quote": "Sheikh Mansur tomb",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S103"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S103 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S103"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S103 Site_Components",
+   "quote": "water tunnel",
+   "type": "pit",
+   "subtype": "water tunnel",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S103"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S103 Site_Components",
+   "quote": "water reservoir",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S103"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S112 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S112"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  }
+ ],
+ "notes": "Own row has no pool, pit or grave. E22 is the excavation row of S103 at the same point; its bracketed components (incl. Sheikh Mansur tomb) and 'ancient water system' repeat S103 and were not recorded twice. S103 'moat?' and rock cuttings not coded. Sheikh Mansur tomb: cavity_with_opening false because the type of tomb is not stated. S138 bearing_valid is false (precision 500 m)."
+}

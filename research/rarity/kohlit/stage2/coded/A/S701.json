@@ -1,0 +1,134 @@
+{
+ "unit_id": "S701",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S709 Site_Components",
+   "quote": "reservoir cave",
+   "type": "pit",
+   "subtype": "reservoir cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S709"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S709 Site_Components",
+   "quote": "three plastered water cisterns",
+   "type": "pit",
+   "subtype": "plastered cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S709"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S709 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S709"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S743 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S743"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S723 Site_Components",
+   "quote": "large cave",
+   "type": "pit",
+   "subtype": "large cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S723"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S723 Site_Components",
+   "quote": "water cistern with aqueduct",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S723"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S760 Site_Components",
+   "quote": "Dwelling caves with settlement remains",
+   "type": "pit",
+   "subtype": "dwelling caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S760"
+   },
+   "date": {
+    "code": "L",
+    "basis": "row S760 is the caves; records only Med"
+   }
+  }
+ ],
+ "notes": "Own row lists no pool, pit or grave ('small cairns' not called graves). S709 'reservoir cave' coded pit (a cave is roofed). S760 row is the dwelling caves; records only Med -> L."
+}

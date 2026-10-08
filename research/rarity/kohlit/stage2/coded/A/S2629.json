@@ -1,0 +1,254 @@
+{
+ "unit_id": "S2629",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "none in packet",
+  "5": "read"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S2629 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S2629 Site_Components",
+   "quote": "pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E376 Site_Components",
+   "quote": "cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E376"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E376 Site_Components",
+   "quote": "pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E376"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S2601 Site_Components",
+   "quote": "Byz water reservoir",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2601"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source dates the reservoir Byz"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "3",
+   "cite": "Mem III p. 220",
+   "quote": "Cisterns remain beneath the surface, with barrel vaults",
+   "type": "pit",
+   "subtype": "vaulted cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "source calls the ruin mediaeval but does not date the cisterns"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "3",
+   "cite": "Mem III p. 24",
+   "quote": "This pool is 150 yards south-east of the Shejeret",
+   "type": "pool",
+   "subtype": "Birket Jiljulieh, rectangular pool 40 by 30 paces",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S2531"
+   },
+   "date": {
+    "code": "U",
+    "basis": "only a stylistic comparison with Byzantine work"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "3",
+   "cite": "Mem III p. 24",
+   "quote": "Northof this pool there is an Arab graveyard",
+   "type": "grave",
+   "subtype": "graveyard",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "no period given"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 78 p. 142",
+   "quote": "monastery (church, building, water reservoir)",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N78"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under the Byzantine period"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 79 p. 143",
+   "quote": "monastery (church, building, water reservoir, enclosed",
+   "type": "pool",
+   "subtype": "water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N79"
+   },
+   "date": {
+    "code": "L",
+    "basis": "entry has only the Byzantine period"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 84 p. 145",
+   "quote": "Funerary architecture: tomb (Sheik Ameri)",
+   "type": "grave",
+   "subtype": "tomb of Sheik Ameri",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N84"
+   },
+   "mouth": null,
+   "date": {
+    "code": "L",
+    "basis": "listed under Middle and Late Islamic periods"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 66 p. 134",
+   "quote": "monastery (church, monastic cells, reservoir)",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "N66"
+   },
+   "date": {
+    "code": "L",
+    "basis": "listed under the Byzantine period"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 74 p. 139",
+   "quote": "Public architecture: cisterns, plastered basin",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "N74"
+   },
+   "date": {
+    "code": "L",
+    "basis": "entry has only the Byzantine period"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "5",
+   "cite": "Nigro 2011 cat. 74 p. 139",
+   "quote": "Public architecture: cisterns, plastered basin",
+   "type": "pool",
+   "subtype": "plastered basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "N74"
+   },
+   "date": {
+    "code": "L",
+    "basis": "entry has only the Byzantine period"
+   }
+  }
+ ],
+ "notes": "Excavated but WBADB lists no publication, so source 4 none in packet. E376 is the Excavations row of the unit (distance 0, bearing invalid); coded at its point. SWP Birket Jiljulieh (names the unit) is placed at S2531, whose other names include Birket Jiljulieh; S2531's own components list no pool. Its graveyard is north of the pool, so relative_to other. Mounds et Teleilat not graves. SWP Kanat Musa names the unit only as the end of an aqueduct; its cisterns, Bir Heider and Birket Musa are not placed within 2 km, so not coded. Aqueducts (S2586, N80) not coded."
+}

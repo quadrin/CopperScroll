@@ -1,0 +1,131 @@
+{
+ "unit_id": "S874",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S848 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S848"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S848; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S875 Site_Components",
+   "quote": "cave",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S875"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S875; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S875 Site_Components",
+   "quote": "two water cisterns",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S875"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S875; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S841 Site_Components",
+   "quote": "tumuli remains; IB settlement, MB2b cemetery",
+   "type": "grave",
+   "subtype": "cemetery (tumuli)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S841"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source dates the cemetery MB2b"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "A hillock, with heaps of stones and a well.",
+   "type": "pit",
+   "subtype": "well",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "3",
+   "cite": "Mem II p. 30 (Guerin)",
+   "quote": "Some cisterns cut in the rock are alone remaining",
+   "type": "pit",
+   "subtype": "rock-cut cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "3",
+   "cite": "Mem II p. 30 (Guerin)",
+   "quote": "a sort of subterranean magazine with semicircular vaulting",
+   "type": "pit",
+   "subtype": "subterranean vaulted magazine",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row names no pool, pit or grave. SWP II p. 30 Buseiliyeh (linked in Stage 1b) taken as this unit; no directions for its well, cisterns or subterranean magazine (inside the 'Serai' enclosure); the 'narrow ditch' is not recorded. Note S848 (Kh. Marah el-'Inab) also carries the name El-Buseiliyeh. Survey entries not accessed."
+}

@@ -1,0 +1,117 @@
+{
+ "unit_id": "S1793",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1810 Site_Components",
+   "quote": "large number of cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1810"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1760 Site_Components",
+   "quote": "two plastered roofed reservoirs",
+   "type": "pit",
+   "subtype": "roofed reservoirs (cisterns)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1760"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E236 Site_Components",
+   "quote": "two plastered roofed reservoirs",
+   "type": "pit",
+   "subtype": "roofed reservoirs (cisterns)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E236"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1799 Site_Components",
+   "quote": "Sixteen shaft tombs.",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1799"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1799 is itself this feature and records IB and MB"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S1772 Site_Components",
+   "quote": "several caves with fences and terraces",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1772"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1782 Site_Components",
+   "quote": "many cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1782"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; the source does not date the component itself"
+   }
+  }
+ ],
+ "notes": "Unit row, survey p. 534 (remains of two buildings) and SWP Mem II p. 356 ('traces of ruins; nothing distinctive') give no pool, pit or grave; 'nothing distinctive' is not read as an absence statement for any feature class. S1760/E236 reservoirs are roofed, so coded as pits. S1818/S1819 (bearing invalid) list no pool, pit or grave."
+}

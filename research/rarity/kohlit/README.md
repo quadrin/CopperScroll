@@ -141,3 +141,12 @@ The coding protocol, the matching script and its constants are in [`stage2/`](st
 The other original surveys (source 2) are library-only, so the packets mark them "not accessed". Source 4 excerpts are gathered only where the first publication is lawfully online.
 
 The original survey entries (source 2), mainly Bar-Adon 1972 and Kallai 1972, are in Hebrew and exist only in libraries.
+
+## Result
+
+Full result: [`stage2/RESULTS.md`](stage2/RESULTS.md). Coder A coded all 244 Stage 2 units, and coder B coded 60 of them.
+
+- **Headline** (R1, main set, branch A, survey level): **k = 0, f = 1, m = 332 of N = 333.**
+- **Branch B** (no graves condition): k = 4 (Tell esh-Sheikh Dhiab, Tulul Abu el-ʿAlaiq, Kypros, el-Muntar), m = 329.
+- **Text level:** every unit is UNKNOWN.
+- **Reading (§6):** m ≫ k, so rarity is not measurable from the available evidence. k = 0 for branch A means that the current candidate fits rest on evidence or tolerances outside the protocol. It is not a rejection.

@@ -1,0 +1,64 @@
+{
+ "unit_id": "S1808",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1808 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1808; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1808 Site_Components",
+   "quote": "pools",
+   "type": "pool",
+   "subtype": "pools",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1808; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1797 Site_Components",
+   "quote": "graves inside (maybe ancient)",
+   "type": "grave",
+   "subtype": "graves (type not stated)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1797"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1797; not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own-row cisterns and pools have no direction: position none. S1797 graves are inside an enclosure, type not stated: cavity false; 'maybe ancient' is not a date. S1797 bearing is exactly 315.0."
+}

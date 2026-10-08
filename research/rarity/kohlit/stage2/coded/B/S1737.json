@@ -1,0 +1,84 @@
+{
+ "unit_id": "S1737",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1760 Site_Components",
+   "quote": "two plastered roofed reservoirs",
+   "type": "pit",
+   "subtype": "roofed reservoirs",
+   "position": {
+    "kind": "grid",
+    "ref": "S1760"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB E236 Site_Components",
+   "quote": "two plastered roofed reservoirs",
+   "type": "pit",
+   "subtype": "roofed reservoirs",
+   "position": {
+    "kind": "grid",
+    "ref": "E236"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1772 Site_Components",
+   "quote": "several caves with fences and terraces",
+   "type": "pit",
+   "subtype": "caves",
+   "position": {
+    "kind": "grid",
+    "ref": "S1772"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1731 Site_Components",
+   "quote": "Single shaft-tomb; no pottery.",
+   "type": "grave",
+   "subtype": "shaft tomb",
+   "position": {
+    "kind": "grid",
+    "ref": "S1731"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1731 is the tomb itself; records IB"
+   },
+   "cavity_with_opening": true,
+   "mouth": {}
+  }
+ ],
+ "notes": "Own row and Finkelstein et al. 1997 p. 582 (unit's entry) list no pool, pit or grave. Roofed reservoirs coded as pits per protocol. The second entry on p. 582 (el-Mazra'a esh-Sharqiya) has no pool, pit or grave."
+}

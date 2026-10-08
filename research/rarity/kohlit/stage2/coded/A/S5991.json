@@ -1,0 +1,199 @@
+{
+ "unit_id": "S5991",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S5991 Site_Components",
+   "quote": "modern tombs",
+   "type": "grave",
+   "subtype": "modern tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the tombs modern"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1579 Site_Components",
+   "quote": "water supply system; aqueducts; pool; bathhouse",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1579"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB E200 Site_Components",
+   "quote": "[Wall remains; water supply system; aqueducts; pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E200"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E200 Site_Components",
+   "quote": "Chal (Ghassulian) settlement remains: well-built rectangular structures, pits, hearths",
+   "type": "pit",
+   "subtype": "pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E200"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed among Chal (Ghassulian) settlement remains"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E200 Site_Components",
+   "quote": "pits, hearths, infant burials",
+   "type": "grave",
+   "subtype": "infant burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E200"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed among Chal (Ghassulian) settlement remains"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1537 Comments",
+   "quote": "Modern cemetery.",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1537"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E190 Comments",
+   "quote": "Modern cemetery.",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E190"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S5993 Site_Components",
+   "quote": "dozens of Beduin tombs",
+   "type": "grave",
+   "subtype": "Bedouin tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S5993"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls them Beduin tombs (recent nomad burials)"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB E198 Site_Components",
+   "quote": "aqueducts; wells",
+   "type": "pit",
+   "subtype": "wells",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E198"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "3",
+   "cite": "Mem II p. 392",
+   "quote": "it supplied four tanks",
+   "type": "pool",
+   "subtype": "tanks",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "3",
+   "cite": "Mem II p. 392",
+   "quote": "passes in one place through a line of pits",
+   "type": "pit",
+   "subtype": "line of pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "SWP Mem II p. 392 (Khurbet Fusail, linked in Stage 1b) is not the unit; it describes ruins spread 2.5 miles N-S, probably the Kh. Fasayil of S1579/E200 (922 m), so it is within 2 km; its tanks (along a 5.5-mile aqueduct) and line of pits have no point or direction from the unit and are coded position none. Ossuary fragment (S1579/E200) is a find, not coded as a grave. E200 repeats S1579's component list; both coded. Beduin tombs coded L (attribution to Bedouin taken as a late date); this is a judgement."
+}

@@ -1,0 +1,47 @@
+{
+ "unit_id": "S1593",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1593 Site_Components",
+   "quote": "Pool; aqueduct; courtyard",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of own row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "3",
+   "cite": "Mem II p. 49",
+   "quote": "Traces of ruins and a ruined tank or birkeh",
+   "type": "pool",
+   "subtype": "tank / birkeh",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  }
+ ],
+ "notes": "SWP Khurbet el Arakah matches the unit's other name Kh. Araka; same pool likely described in both sources, recorded once per source. No direction given for the pool in either source. E201 has no pool, pit or grave."
+}

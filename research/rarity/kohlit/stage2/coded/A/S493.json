@@ -1,0 +1,32 @@
+{
+ "unit_id": "S493",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "source": "1",
+   "cite": "WBADB S484 Site_Components",
+   "quote": "pool or water reservoir surrounded by a wall",
+   "type": "pool",
+   "subtype": "pool or water reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S484"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S484; not dated itself by the source"
+   },
+   "id": "f1"
+  }
+ ],
+ "notes": "Own row has no pool, pit or grave. S448 \"stone circles\" not coded as graves."
+}

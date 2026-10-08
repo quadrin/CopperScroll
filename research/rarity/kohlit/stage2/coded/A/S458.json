@@ -1,0 +1,168 @@
+{
+ "unit_id": "S458",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S440 Site_Components",
+   "quote": "public baths; plastered pool; water cistern",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S440"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S440; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S440 Site_Components",
+   "quote": "plastered pool; water cistern",
+   "type": "pit",
+   "subtype": "water cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S440"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S440; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S504 Site_Components",
+   "quote": "Large structure with rooms; water cistern",
+   "type": "pit",
+   "subtype": "water cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S504"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S504; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S441 Site_Components",
+   "quote": "inner structural remains; plastered pool; arched ceilings",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S441"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S441; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S401 Site_Components",
+   "quote": "large courtyard; cave; water cistern",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S401"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S401; not dated itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S401 Site_Components",
+   "quote": "cave; water cistern",
+   "type": "pit",
+   "subtype": "water cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S401"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S401; not dated itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S450 Site_Components",
+   "quote": "terrace walls; water cisterns; burial cave",
+   "type": "pit",
+   "subtype": "water cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S450"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S450; not dated itself"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S450 Site_Components",
+   "quote": "water cisterns; burial cave; installations",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S450"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S450; not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S503 Site_Components",
+   "quote": "courtyard; water cistern; rock-cut stone trough",
+   "type": "pit",
+   "subtype": "water cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S503"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S503; not dated itself"
+   }
+  }
+ ],
+ "notes": "Own row (structures, gate, installations) has no pool, pit or grave. No SWP entry in packet. S503 is at exactly 2000 m (included). S444 rock-cut installations not coded."
+}

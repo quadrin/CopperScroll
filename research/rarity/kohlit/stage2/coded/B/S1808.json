@@ -1,0 +1,65 @@
+{
+ "unit_id": "S1808",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1808 Site_Components",
+   "quote": "Ruin: Walls; structures; cisterns; pools",
+   "type": "pit",
+   "subtype": "cisterns",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "is_tomb": false
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1808 Site_Components",
+   "quote": "Ruin: Walls; structures; cisterns; pools",
+   "type": "pool",
+   "subtype": "pools",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   },
+   "pool_def": "yes"
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1797 Site_Components",
+   "quote": "Enclosure 75x 80 m; graves inside (maybe ancient)",
+   "type": "grave",
+   "subtype": "graves",
+   "position": {
+    "kind": "grid",
+    "ref": "S1797"
+   },
+   "date": {
+    "code": "U",
+    "basis": "source says only 'maybe ancient'"
+   },
+   "cavity_with_opening": false,
+   "mouth": {}
+  }
+ ],
+ "notes": "Own-row cisterns and pools have no direction in any source (position none). Survey entry not accessed; no SWP entries. E241 (Byz monastery) and S6050 have no pool, pit or grave."
+}

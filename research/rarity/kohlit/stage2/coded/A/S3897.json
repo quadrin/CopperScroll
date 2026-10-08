@@ -1,0 +1,100 @@
+{
+ "unit_id": "S3897",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S3881 Site_Components",
+   "quote": "large, deep hewn cave – the fortress reservoir",
+   "type": "pit",
+   "subtype": "hewn cave used as reservoir",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3881"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S3881 calls it the reservoir of the IA2 fortress"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S3875 Site_Components",
+   "quote": "located within Beduin cemetery where further remains were discerned (ancient burials?)",
+   "type": "grave",
+   "subtype": "Beduin cemetery / possible ancient burials",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3875"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S3906 Site_Components",
+   "quote": "Cave; pottery; animal bones",
+   "type": "pit",
+   "subtype": "cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3906"
+   },
+   "date": {
+    "code": "D",
+    "basis": "own row S3906 (Cave B-52) records Rom"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S3792 Site_Components",
+   "quote": "eight stone-capped mounds (tombs?)",
+   "type": "grave",
+   "subtype": "stone-capped mounds (tombs?)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3792"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E726 Site_Components",
+   "quote": "Four pit tombs; human remains",
+   "type": "grave",
+   "subtype": "pit tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E726"
+   },
+   "date": {
+    "code": "L",
+    "basis": "own row E726 records only Byz (major 'Byz?')"
+   }
+  }
+ ],
+ "notes": "Own row (farming complex, dams) has no pool, pit or grave. S3881 and S3875 have bearing_valid false. Magharat Abu Tabaq hewn cave/reservoir coded pit (roofed); D is a judgement from 'the fortress reservoir'. Cairns (S3914, S3867, S3976, S3925 'central compartment', S3791 'central chamber looted', S3839, S4090) not coded as graves: no burial stated. Rock shelter S3905/E766 not coded as a pit; E765 repeats S3906. SWP Mem III pp. 198-201 Hajr el Asbah is a natural stone ~7 km away, not the unit; its 'cemetery near Kumran' has no position relative to the unit and no Qumran ruin row is within 2 km; ignored."
+}

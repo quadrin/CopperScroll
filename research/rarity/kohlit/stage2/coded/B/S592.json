@@ -1,0 +1,152 @@
+{
+ "unit_id": "S592",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "Beside the Burj I saw a good birket cut in the rock",
+   "type": "pool",
+   "subtype": "rock-cut birket",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "east part",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "3",
+   "cite": "Mem II p. 30",
+   "quote": "Near it are a good many cisterns, also cut in the rock",
+   "type": "pit",
+   "subtype": "rock-cut cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S599 Site_Components",
+   "quote": "many tombs",
+   "type": "grave",
+   "subtype": "tombs",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S599"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S599; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S641 Site_Components",
+   "quote": "Sheikh Smeiṭ tomb",
+   "type": "grave",
+   "subtype": "Sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S641"
+   },
+   "date": {
+    "code": "L",
+    "basis": "Sheikh's tomb is a Muslim saint's tomb"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S641 Site_Components",
+   "quote": "paved courtyard with water cistern and gutter",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S641"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S641; not dated itself"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S618 Site_Components",
+   "quote": "round tumuli",
+   "type": "grave",
+   "subtype": "tumuli",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S618"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S618; not dated itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S546 Site_Components",
+   "quote": "Dozens of cairns (tumuli), made of monoliths",
+   "type": "grave",
+   "subtype": "tumuli",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S546"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S546 is the tumulus field and records MB, Per"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S640 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S640"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S640; not dated itself"
+   }
+  }
+ ],
+ "notes": "SWP (Guerin quoted): the great square tower (Burj) stands \"at its eastern extremity\" of the site hill and the rock-cut birket is \"beside the Burj\", so the birket is coded \"east part\" relative to the unit; this is a two-step reading (birket beside a tower that is at the east end). The cisterns are \"near it\" (the birket), with no direction: position none. Packet page for the entry is 30, but the printed running head in the text reads 235. Own row moat not coded. Tumuli at S618/S546 coded as graves (burial mounds; burial not stated explicitly). Sheikh Smeit tomb dated L."
+}

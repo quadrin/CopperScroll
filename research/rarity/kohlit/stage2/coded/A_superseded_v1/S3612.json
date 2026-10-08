@@ -1,0 +1,116 @@
+{
+ "unit_id": "S3612",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S3612 Site_Components",
+   "quote": "cistern (granary?) approached by two short channels",
+   "type": "pit",
+   "subtype": "cistern (granary?)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S3651 Site_Components",
+   "quote": "Rock-hewn reservoir, fed by two conduits",
+   "type": "pool",
+   "subtype": "rock-hewn reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S3651"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S3651 (Byz, EIs); not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S3651 Site_Components",
+   "quote": "square plastered cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3651"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of site row S3651 (Byz, EIs); not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S3774 Site_Components",
+   "quote": "Eight threshing-floors, spread between two cisterns",
+   "type": "pit",
+   "subtype": "two cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3774"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3774 records no period"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S3763 Site_Components",
+   "quote": "one has a central cist (?) forming an open rectangle",
+   "type": "grave",
+   "subtype": "cist (?) in stone pile (cairn?)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3763"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3763 records no period"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S3496 Site_Components",
+   "quote": "cave-pens",
+   "type": "pit",
+   "subtype": "cave-pens",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S3496"
+   },
+   "date": {
+    "code": "U",
+    "basis": "row S3496 records no period"
+   }
+  }
+ ],
+ "notes": "Own row: cistern (granary?), no direction. S3651 reservoir and cistern coded U as components of a multi-component row (row records only Byz, EIs). Not recorded: S3599 cupmarks; S3769 'rectangular installation 3.6x4 m' (not called a pool). SWP entries Tell Abu Hindi (Mem III p. 220, ~15 km), Mar Saba (p. 28, ~4.5 km), Silwan (p. 30, ~9 km) and Deir el Kelt (p. 192, ~15 km) are other places, not this unit and not within 2 km; ignored."
+}

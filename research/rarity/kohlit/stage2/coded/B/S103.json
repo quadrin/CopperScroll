@@ -1,0 +1,181 @@
+{
+ "unit_id": "S103",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "read",
+  "4": "not accessed",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S103 Site_Components",
+   "quote": "Sheikh Mansur tomb",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S103 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S103 Site_Components",
+   "quote": "water tunnel",
+   "type": "pit",
+   "subtype": "water tunnel",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S103 Site_Components",
+   "quote": "water reservoir",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E22 Site_Components",
+   "quote": "Sheikh Mansur tomb",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E22"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S112 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S112"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S71 Site_Components",
+   "quote": "vaulted Rom2 tomb",
+   "type": "grave",
+   "subtype": "vaulted tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S71"
+   },
+   "date": {
+    "code": "D",
+    "basis": "WBADB S71 dates the tomb itself Rom2"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S138 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S138"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S138 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S138"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component not dated by the source"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB E19 Site_Components",
+   "quote": "vaulted Rom2 tomb",
+   "type": "grave",
+   "subtype": "vaulted tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E19"
+   },
+   "date": {
+    "code": "D",
+    "basis": "WBADB E19 dates the tomb itself Rom2"
+   }
+  }
+ ],
+ "notes": "SWP entry Mem II p. 64 is Kusr 'Ain esh Sheriah, 14.7 km away by square centre, a different name: not this unit and not within 2 km; ignored. E22 is the same site at 0 m (bearing invalid); its 'ancient water system' is too vague to type and was not recorded; its Sheikh Mansur tomb recorded under grid E22. Vaulted Rom2 tombs at S71/E19 coded cavity_with_opening false (built vaulted tomb, not shaft/rock-cut cave/kokhim stated). Own-row 'moat?' not recorded. First publication (Yeivin 1973) not accessed."
+}

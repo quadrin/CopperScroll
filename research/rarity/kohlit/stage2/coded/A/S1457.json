@@ -1,0 +1,134 @@
+{
+ "unit_id": "S1457",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "source": "1",
+   "cite": "WBADB S1463 Site_Components",
+   "quote": "large stone basin",
+   "type": "pool",
+   "subtype": "stone basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1463"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1463; not dated itself by the source"
+   },
+   "id": "f1"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S1449 Site_Components",
+   "quote": "four large caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1449"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1449; not dated itself by the source"
+   },
+   "id": "f2"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S1449 Site_Components",
+   "quote": "modern Bediun cemetery",
+   "type": "grave",
+   "subtype": "modern Bedouin cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1449"
+   },
+   "date": {
+    "code": "L",
+    "basis": "source calls the cemetery modern"
+   },
+   "id": "f3"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB E187 Site_Components",
+   "quote": "aqueducts; wells",
+   "type": "pit",
+   "subtype": "wells",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E187"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E187; not dated itself by the source"
+   },
+   "id": "f4"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S1454 Site_Components",
+   "quote": "cisterns; flint tools; caves",
+   "type": "pit",
+   "subtype": "cisterns; caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1454"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1454; not dated itself by the source"
+   },
+   "id": "f5"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB E181 Site_Components",
+   "quote": "walls; pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E181"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row E181; not dated itself by the source"
+   },
+   "id": "f6"
+  },
+  {
+   "source": "1",
+   "cite": "WBADB S1424 Site_Components",
+   "quote": "Small cemetery: four or five oval structures",
+   "type": "grave",
+   "subtype": "cemetery of oval structures",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1424"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S1424 is the cemetery and records Rom"
+   },
+   "id": "f7"
+  }
+ ],
+ "notes": "Own row has no pool, pit or grave. S1474/E172 \"stone circles\" not coded. S1424 row is the cemetery (oval structures), dated from row periods."
+}

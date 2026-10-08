@@ -1,0 +1,66 @@
+{
+ "unit_id": "S1458",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1469 Site_Components",
+   "quote": "Ruin: buildings; cisterns; modern pen",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1469"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1469; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1532 Site_Components",
+   "quote": "probably a farmhouse; cistern; agricultural terraces",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1532"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1532; not dated itself"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1545 Site_Components",
+   "quote": "Fence of reused stones; cistern",
+   "type": "pit",
+   "subtype": "cisterns (listed twice)",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1545"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1545; not dated itself"
+   }
+  }
+ ],
+ "notes": "Own row (pens, walls) and source 2 (Finkelstein et al. 1997 p. 774: three fenced courtyards) have no pool, pit or grave. 'Birkat' occurs only in the name of S1469; no pool is listed there. No SWP entry in packet."
+}

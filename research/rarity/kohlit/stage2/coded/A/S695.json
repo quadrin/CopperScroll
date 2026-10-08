@@ -1,0 +1,115 @@
+{
+ "unit_id": "S695",
+ "coder": "A",
+ "sources": {
+  "1": "read",
+  "2": "not accessed",
+  "3": "none in packet",
+  "4": "not excavated",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S695 Site_Components",
+   "quote": "burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S695 Site_Components",
+   "quote": "rock-cut basin",
+   "type": "pool",
+   "subtype": "rock-cut basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S687 Site_Components",
+   "quote": "burial cave",
+   "type": "grave",
+   "subtype": "burial cave",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S687"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated by the source"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S725 Site_Components",
+   "quote": "Burial area, with burial caves openings of different types",
+   "type": "grave",
+   "subtype": "burial area with burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S725"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S725 is itself the burial area and records EB1, LB, IA1"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB S726 Site_Components",
+   "quote": "Burial area; hundreds of shaft tombs",
+   "type": "grave",
+   "subtype": "shaft tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S726"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row S726 is itself the burial area and records EB1, MB2b, LB, IA1, IA2"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S677 Site_Components",
+   "quote": "Stone pile (tomb/tumulus?)",
+   "type": "grave",
+   "subtype": "possible tomb/tumulus (stone pile)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S677"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row (with structure and winepress); not dated by the source"
+   }
+  }
+ ],
+ "notes": "Own row: 'burnt bones' on the Kurgan hill not recorded as a grave (source does not call it a burial). S677 stone pile recorded as a possible tumulus (queried in source). Rock-cut trough at S687 not recorded (trough excluded). No SWP entries in packet."
+}
