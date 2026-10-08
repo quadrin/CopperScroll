@@ -1,0 +1,24 @@
+{
+  "unit_id": "S3049",
+  "coder": "A",
+  "source4_status": "read",
+  "features": [
+    {"id": "s4f1", "source": "4", "cite": "ESI 3 (1985) p. 81",
+     "quote": "A bell-shaped cistern (7.0 X 5.5 m, depth 4.0 m)",
+     "type": "pit", "subtype": "bell-shaped cistern in church atrium", "is_tomb": false,
+     "position": {"kind": "none"},
+     "date": {"code": "U", "basis": "not dated; Byzantine sherds are reported from the church, not the cistern"}},
+    {"id": "s4f2", "source": "4", "cite": "ESI 3 (1985) pp. 81-82; plan p. 81 (B)",
+     "quote": "two long, narrow spaces which had been roofed with stone vaults",
+     "type": "pit", "subtype": "vaulted reservoir B (34.0 x 15.0 m)", "is_tomb": false,
+     "position": {"kind": "words", "direction": "N", "distance_m": 15, "relative_to": "other"},
+     "date": {"code": "U", "basis": "not dated; identification with Eudoxia's reservoir is attributed to Schneider and no date is given"}},
+    {"id": "s4f3", "source": "4", "cite": "ESI 3 (1985) p. 82; plan p. 81",
+     "quote": "A settling basin has been preserved in the northwest corner",
+     "type": "pool", "subtype": "settling basin of reservoir B", "pool_def": "unclear",
+     "position": {"kind": "words", "direction": "NW", "distance_m": null, "relative_to": "other"},
+     "date": {"code": "U", "basis": "not dated"}}
+  ],
+  "explicit_absence": [],
+  "notes": "Reservoir B is coded as a pit, not a pool, because the publication says its two spaces were roofed with stone vaults (PROTOCOL.md section 3). Its position, 'about 15 m north of the ancient road' (p. 81), is from the road, so relative_to 'other'. The settling basin lies 'in the northwest corner' of the reservoir, also relative_to 'other'; it is a bare basin with no size, so pool_def 'unclear'. The bell-shaped cistern is in the atrium of church A, with no direction from the site. No plan position: the plan (p. 81) has a north arrow and scale, but the unit's recorded point (publication map ref. 17675/13495) is not marked and cannot be placed on it. The plan's unlabelled dashed oval inside A (about 7 m across) probably draws the cistern; it adds nothing. No passage on burials; silence is not an absence statement."
+}

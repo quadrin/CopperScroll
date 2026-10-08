@@ -1,0 +1,29 @@
+{
+  "unit_id": "E99",
+  "coder": "A",
+  "source4_status": "read",
+  "features": [
+    {"id": "s4f1", "source": "4", "cite": "Boling 1975 pp. 33, 45, 59, 65, 84; Fig. 2 p. 34; Fig. 13 p. 44",
+     "quote": "roughly circular \"plastered cistern\" in the southwest corner room",
+     "type": "pit", "subtype": "silo (Silo A, locus 311; Welter's 'plastered cistern')", "is_tomb": false,
+     "position": {"kind": "words", "direction": "SW", "distance_m": null, "relative_to": "unit"},
+     "date": {"code": "D", "basis": "Silo A built in Phase II, ca. 1625-1600 BCE (p. 65)"}},
+    {"id": "s4f2", "source": "4", "cite": "Boling 1975 pp. 36, 57-60, 65, 84; Fig. 2 p. 34; Fig. 13 p. 44",
+     "quote": "compaction in a defunct pit, Silo B",
+     "type": "pit", "subtype": "silo (Silo B, loci 415-419), later potter's sediment pit", "is_tomb": false,
+     "position": {"kind": "words", "direction": "N", "distance_m": null, "relative_to": "unit"},
+     "date": {"code": "D", "basis": "Silo B phases = Phase I, ca. 1650-1625 BCE; out of use in the plaster-pier phase (p. 65)"}},
+    {"id": "s4f3", "source": "4", "cite": "Boling 1975 Fig. 2 p. 34; Fig. 13 p. 44; p. 65",
+     "quote": "SUB-FLOOR SILO (114)",
+     "type": "pit", "subtype": "sub-floor silo (bin 114) in room 2", "is_tomb": false,
+     "position": {"kind": "none"},
+     "date": {"code": "D", "basis": "bin 114 assigned to Phase III, ca. 1600-1550 BCE (p. 65)"}},
+    {"id": "s4f4", "source": "4", "cite": "Boling 1975 pp. 36, 45; Fig. 13 p. 44",
+     "quote": "hidden from view are a pair of cisterns beside the houses",
+     "type": "pit", "subtype": "pair of modern cisterns", "is_tomb": false,
+     "position": {"kind": "words", "direction": "E", "distance_m": null, "relative_to": "unit"},
+     "date": {"code": "L", "basis": "the publication calls them 'the modern cisterns' (p. 36); one displaced the MB 'altar' (p. 45)"}}
+  ],
+  "explicit_absence": [],
+  "notes": "Source 4 = Boling 1975 (Tananir = Buildings A and B on the lower slope of Gerizim). s4f1: Welter's 'plastered cistern' in the SW corner room (p. 33) is taken to be Silo A in room 7 at the SW corner of Building A (p. 45; Figs. 2, 13); p. 59 oddly calls Silo A 'the northern \"cistern\"', but the plans and p. 45 put it in the SW corner. s4f2 position: Building B was found 'one step down the mountainside' (p. 57) beyond the 'northern, downhill, limit' of the field (p. 36), so Silo B lies in the north part of the site; coded N relative to the site. The north arrows of Figs. 2 and 13 point to the upper left, which would put Building B about NNE-NE (c. 30-45 deg) of Building A, but the unit's recorded point (approximate, 100 m precision) cannot be placed on any plan: Figs. 2 and 13 have no coordinates, and the grid lines 13-15 on the Fig. 1 location plan are not tied to the packet grid. So no plan positions. s4f3 is shown only on the plans (room 2), so its position is none. s4f4: two cisterns on the east beside the houses, both called modern; coded as one feature. Not coded: the area 9 rock-cut 'vat' with a settling depression, NW of the main building, probably Roman-Byzantine (pp. 40-41) - PROTOCOL excludes vats from pools, and it is not a cistern or pit; the area 8 circular enclosure; the spring. No graves: the only human remains are of a person killed in the collapse of Building B (p. 57), not a burial. Explicit absence not coded: p. 63 says the site is 'without water-tight cisterns', but the same source reports silos (pits), so the C2 class is not said to be absent."
+}

@@ -1,0 +1,1262 @@
+{
+ "headline": {
+  "R1_main|A_survey": {
+   "N": 333,
+   "k": 0,
+   "f": 1,
+   "m": 332,
+   "m_full_coverage": 267,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|A_text": {
+   "N": 333,
+   "k": 0,
+   "f": 0,
+   "m": 333,
+   "m_full_coverage": 268,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|B": {
+   "N": 333,
+   "k": 4,
+   "f": 0,
+   "m": 329,
+   "m_full_coverage": 265,
+   "m_no_adequate_coverage": 64,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_pre70|A_survey": {
+   "N": 499,
+   "k": 0,
+   "f": 1,
+   "m": 498,
+   "m_full_coverage": 411,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|A_text": {
+   "N": 499,
+   "k": 0,
+   "f": 0,
+   "m": 499,
+   "m_full_coverage": 412,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|B": {
+   "N": 499,
+   "k": 5,
+   "f": 0,
+   "m": 494,
+   "m_full_coverage": 409,
+   "m_no_adequate_coverage": 85,
+   "m_not_recorded_stage1": 255
+  },
+  "R2_main|A_survey": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|A_text": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|B": {
+   "N": 101,
+   "k": 3,
+   "f": 0,
+   "m": 98,
+   "m_full_coverage": 56,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_pre70|A_survey": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|A_text": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|B": {
+   "N": 138,
+   "k": 4,
+   "f": 0,
+   "m": 134,
+   "m_full_coverage": 81,
+   "m_no_adequate_coverage": 53,
+   "m_not_recorded_stage1": 39
+  }
+ },
+ "sensitivity": {
+  "R1_main|A_survey|C1_0.5km": {
+   "N": 333,
+   "k": 0,
+   "f": 1,
+   "m": 332,
+   "m_full_coverage": 267,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|A_survey|C1_2km": {
+   "N": 333,
+   "k": 2,
+   "f": 1,
+   "m": 330,
+   "m_full_coverage": 265,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|A_survey|C2_tomb_shafts": {
+   "N": 333,
+   "k": 0,
+   "f": 1,
+   "m": 332,
+   "m_full_coverage": 267,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|A_survey|dated_only": {
+   "N": 333,
+   "k": 0,
+   "f": 1,
+   "m": 332,
+   "m_full_coverage": 267,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|A_text|C1_0.5km": {
+   "N": 333,
+   "k": 0,
+   "f": 0,
+   "m": 333,
+   "m_full_coverage": 268,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|A_text|C1_2km": {
+   "N": 333,
+   "k": 0,
+   "f": 0,
+   "m": 333,
+   "m_full_coverage": 268,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|A_text|C2_tomb_shafts": {
+   "N": 333,
+   "k": 0,
+   "f": 0,
+   "m": 333,
+   "m_full_coverage": 268,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|A_text|dated_only": {
+   "N": 333,
+   "k": 0,
+   "f": 1,
+   "m": 332,
+   "m_full_coverage": 267,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|B|C1_0.5km": {
+   "N": 333,
+   "k": 1,
+   "f": 0,
+   "m": 332,
+   "m_full_coverage": 267,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|B|C1_2km": {
+   "N": 333,
+   "k": 10,
+   "f": 0,
+   "m": 323,
+   "m_full_coverage": 259,
+   "m_no_adequate_coverage": 64,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|B|C2_tomb_shafts": {
+   "N": 333,
+   "k": 4,
+   "f": 0,
+   "m": 329,
+   "m_full_coverage": 265,
+   "m_no_adequate_coverage": 64,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|B|dated_only": {
+   "N": 333,
+   "k": 0,
+   "f": 0,
+   "m": 333,
+   "m_full_coverage": 268,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_pre70|A_survey|C1_0.5km": {
+   "N": 499,
+   "k": 0,
+   "f": 1,
+   "m": 498,
+   "m_full_coverage": 411,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|A_survey|C1_2km": {
+   "N": 499,
+   "k": 4,
+   "f": 1,
+   "m": 494,
+   "m_full_coverage": 407,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|A_survey|C2_tomb_shafts": {
+   "N": 499,
+   "k": 1,
+   "f": 1,
+   "m": 497,
+   "m_full_coverage": 411,
+   "m_no_adequate_coverage": 86,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|A_survey|dated_only": {
+   "N": 499,
+   "k": 0,
+   "f": 1,
+   "m": 498,
+   "m_full_coverage": 411,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|A_text|C1_0.5km": {
+   "N": 499,
+   "k": 0,
+   "f": 0,
+   "m": 499,
+   "m_full_coverage": 412,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|A_text|C1_2km": {
+   "N": 499,
+   "k": 0,
+   "f": 0,
+   "m": 499,
+   "m_full_coverage": 412,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|A_text|C2_tomb_shafts": {
+   "N": 499,
+   "k": 0,
+   "f": 0,
+   "m": 499,
+   "m_full_coverage": 412,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|A_text|dated_only": {
+   "N": 499,
+   "k": 0,
+   "f": 1,
+   "m": 498,
+   "m_full_coverage": 411,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|B|C1_0.5km": {
+   "N": 499,
+   "k": 1,
+   "f": 0,
+   "m": 498,
+   "m_full_coverage": 411,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|B|C1_2km": {
+   "N": 499,
+   "k": 14,
+   "f": 0,
+   "m": 485,
+   "m_full_coverage": 400,
+   "m_no_adequate_coverage": 85,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|B|C2_tomb_shafts": {
+   "N": 499,
+   "k": 6,
+   "f": 0,
+   "m": 493,
+   "m_full_coverage": 409,
+   "m_no_adequate_coverage": 84,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|B|dated_only": {
+   "N": 499,
+   "k": 0,
+   "f": 0,
+   "m": 499,
+   "m_full_coverage": 412,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R2_main|A_survey|C1_0.5km": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|A_survey|C1_2km": {
+   "N": 101,
+   "k": 2,
+   "f": 0,
+   "m": 99,
+   "m_full_coverage": 57,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|A_survey|C2_tomb_shafts": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|A_survey|dated_only": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|A_text|C1_0.5km": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|A_text|C1_2km": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|A_text|C2_tomb_shafts": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|A_text|dated_only": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|B|C1_0.5km": {
+   "N": 101,
+   "k": 1,
+   "f": 0,
+   "m": 100,
+   "m_full_coverage": 58,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|B|C1_2km": {
+   "N": 101,
+   "k": 8,
+   "f": 0,
+   "m": 93,
+   "m_full_coverage": 51,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|B|C2_tomb_shafts": {
+   "N": 101,
+   "k": 3,
+   "f": 0,
+   "m": 98,
+   "m_full_coverage": 56,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|B|dated_only": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_pre70|A_survey|C1_0.5km": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|A_survey|C1_2km": {
+   "N": 138,
+   "k": 4,
+   "f": 0,
+   "m": 134,
+   "m_full_coverage": 80,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|A_survey|C2_tomb_shafts": {
+   "N": 138,
+   "k": 1,
+   "f": 0,
+   "m": 137,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 53,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|A_survey|dated_only": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|A_text|C1_0.5km": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|A_text|C1_2km": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|A_text|C2_tomb_shafts": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|A_text|dated_only": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|B|C1_0.5km": {
+   "N": 138,
+   "k": 1,
+   "f": 0,
+   "m": 137,
+   "m_full_coverage": 83,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|B|C1_2km": {
+   "N": 138,
+   "k": 12,
+   "f": 0,
+   "m": 126,
+   "m_full_coverage": 73,
+   "m_no_adequate_coverage": 53,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|B|C2_tomb_shafts": {
+   "N": 138,
+   "k": 5,
+   "f": 0,
+   "m": 133,
+   "m_full_coverage": 81,
+   "m_no_adequate_coverage": 52,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|B|dated_only": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  }
+ },
+ "excavated_split": {
+  "R1_main|A_survey|excavated": {
+   "N": 77,
+   "k": 0,
+   "f": 0,
+   "m": 77,
+   "m_full_coverage": 49,
+   "m_no_adequate_coverage": 28,
+   "m_not_recorded_stage1": 32
+  },
+  "R1_main|A_survey|unexcavated": {
+   "N": 256,
+   "k": 0,
+   "f": 1,
+   "m": 255,
+   "m_full_coverage": 218,
+   "m_no_adequate_coverage": 37,
+   "m_not_recorded_stage1": 111
+  },
+  "R1_main|A_text|excavated": {
+   "N": 77,
+   "k": 0,
+   "f": 0,
+   "m": 77,
+   "m_full_coverage": 49,
+   "m_no_adequate_coverage": 28,
+   "m_not_recorded_stage1": 32
+  },
+  "R1_main|A_text|unexcavated": {
+   "N": 256,
+   "k": 0,
+   "f": 0,
+   "m": 256,
+   "m_full_coverage": 219,
+   "m_no_adequate_coverage": 37,
+   "m_not_recorded_stage1": 111
+  },
+  "R1_main|B|excavated": {
+   "N": 77,
+   "k": 3,
+   "f": 0,
+   "m": 74,
+   "m_full_coverage": 47,
+   "m_no_adequate_coverage": 27,
+   "m_not_recorded_stage1": 32
+  },
+  "R1_main|B|unexcavated": {
+   "N": 256,
+   "k": 1,
+   "f": 0,
+   "m": 255,
+   "m_full_coverage": 218,
+   "m_no_adequate_coverage": 37,
+   "m_not_recorded_stage1": 111
+  },
+  "R1_pre70|A_survey|excavated": {
+   "N": 95,
+   "k": 0,
+   "f": 0,
+   "m": 95,
+   "m_full_coverage": 61,
+   "m_no_adequate_coverage": 34,
+   "m_not_recorded_stage1": 42
+  },
+  "R1_pre70|A_survey|unexcavated": {
+   "N": 404,
+   "k": 0,
+   "f": 1,
+   "m": 403,
+   "m_full_coverage": 350,
+   "m_no_adequate_coverage": 53,
+   "m_not_recorded_stage1": 213
+  },
+  "R1_pre70|A_text|excavated": {
+   "N": 95,
+   "k": 0,
+   "f": 0,
+   "m": 95,
+   "m_full_coverage": 61,
+   "m_no_adequate_coverage": 34,
+   "m_not_recorded_stage1": 42
+  },
+  "R1_pre70|A_text|unexcavated": {
+   "N": 404,
+   "k": 0,
+   "f": 0,
+   "m": 404,
+   "m_full_coverage": 351,
+   "m_no_adequate_coverage": 53,
+   "m_not_recorded_stage1": 213
+  },
+  "R1_pre70|B|excavated": {
+   "N": 95,
+   "k": 4,
+   "f": 0,
+   "m": 91,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 32,
+   "m_not_recorded_stage1": 42
+  },
+  "R1_pre70|B|unexcavated": {
+   "N": 404,
+   "k": 1,
+   "f": 0,
+   "m": 403,
+   "m_full_coverage": 350,
+   "m_no_adequate_coverage": 53,
+   "m_not_recorded_stage1": 213
+  },
+  "R2_main|A_survey|excavated": {
+   "N": 38,
+   "k": 0,
+   "f": 0,
+   "m": 38,
+   "m_full_coverage": 21,
+   "m_no_adequate_coverage": 17,
+   "m_not_recorded_stage1": 13
+  },
+  "R2_main|A_survey|unexcavated": {
+   "N": 63,
+   "k": 0,
+   "f": 0,
+   "m": 63,
+   "m_full_coverage": 38,
+   "m_no_adequate_coverage": 25,
+   "m_not_recorded_stage1": 11
+  },
+  "R2_main|A_text|excavated": {
+   "N": 38,
+   "k": 0,
+   "f": 0,
+   "m": 38,
+   "m_full_coverage": 21,
+   "m_no_adequate_coverage": 17,
+   "m_not_recorded_stage1": 13
+  },
+  "R2_main|A_text|unexcavated": {
+   "N": 63,
+   "k": 0,
+   "f": 0,
+   "m": 63,
+   "m_full_coverage": 38,
+   "m_no_adequate_coverage": 25,
+   "m_not_recorded_stage1": 11
+  },
+  "R2_main|B|excavated": {
+   "N": 38,
+   "k": 2,
+   "f": 0,
+   "m": 36,
+   "m_full_coverage": 19,
+   "m_no_adequate_coverage": 17,
+   "m_not_recorded_stage1": 13
+  },
+  "R2_main|B|unexcavated": {
+   "N": 63,
+   "k": 1,
+   "f": 0,
+   "m": 62,
+   "m_full_coverage": 37,
+   "m_no_adequate_coverage": 25,
+   "m_not_recorded_stage1": 11
+  },
+  "R2_pre70|A_survey|excavated": {
+   "N": 48,
+   "k": 0,
+   "f": 0,
+   "m": 48,
+   "m_full_coverage": 27,
+   "m_no_adequate_coverage": 21,
+   "m_not_recorded_stage1": 17
+  },
+  "R2_pre70|A_survey|unexcavated": {
+   "N": 90,
+   "k": 0,
+   "f": 0,
+   "m": 90,
+   "m_full_coverage": 57,
+   "m_no_adequate_coverage": 33,
+   "m_not_recorded_stage1": 22
+  },
+  "R2_pre70|A_text|excavated": {
+   "N": 48,
+   "k": 0,
+   "f": 0,
+   "m": 48,
+   "m_full_coverage": 27,
+   "m_no_adequate_coverage": 21,
+   "m_not_recorded_stage1": 17
+  },
+  "R2_pre70|A_text|unexcavated": {
+   "N": 90,
+   "k": 0,
+   "f": 0,
+   "m": 90,
+   "m_full_coverage": 57,
+   "m_no_adequate_coverage": 33,
+   "m_not_recorded_stage1": 22
+  },
+  "R2_pre70|B|excavated": {
+   "N": 48,
+   "k": 3,
+   "f": 0,
+   "m": 45,
+   "m_full_coverage": 25,
+   "m_no_adequate_coverage": 20,
+   "m_not_recorded_stage1": 17
+  },
+  "R2_pre70|B|unexcavated": {
+   "N": 90,
+   "k": 1,
+   "f": 0,
+   "m": 89,
+   "m_full_coverage": 56,
+   "m_no_adequate_coverage": 33,
+   "m_not_recorded_stage1": 22
+  }
+ },
+ "nigro_without": {
+  "R1_main|A_survey": {
+   "N": 333,
+   "k": 0,
+   "f": 1,
+   "m": 332,
+   "m_full_coverage": 267,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|A_text": {
+   "N": 333,
+   "k": 0,
+   "f": 0,
+   "m": 333,
+   "m_full_coverage": 268,
+   "m_no_adequate_coverage": 65,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_main|B": {
+   "N": 333,
+   "k": 4,
+   "f": 0,
+   "m": 329,
+   "m_full_coverage": 265,
+   "m_no_adequate_coverage": 64,
+   "m_not_recorded_stage1": 143
+  },
+  "R1_pre70|A_survey": {
+   "N": 499,
+   "k": 0,
+   "f": 1,
+   "m": 498,
+   "m_full_coverage": 411,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|A_text": {
+   "N": 499,
+   "k": 0,
+   "f": 0,
+   "m": 499,
+   "m_full_coverage": 412,
+   "m_no_adequate_coverage": 87,
+   "m_not_recorded_stage1": 255
+  },
+  "R1_pre70|B": {
+   "N": 499,
+   "k": 5,
+   "f": 0,
+   "m": 494,
+   "m_full_coverage": 409,
+   "m_no_adequate_coverage": 85,
+   "m_not_recorded_stage1": 255
+  },
+  "R2_main|A_survey": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|A_text": {
+   "N": 101,
+   "k": 0,
+   "f": 0,
+   "m": 101,
+   "m_full_coverage": 59,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_main|B": {
+   "N": 101,
+   "k": 3,
+   "f": 0,
+   "m": 98,
+   "m_full_coverage": 56,
+   "m_no_adequate_coverage": 42,
+   "m_not_recorded_stage1": 24
+  },
+  "R2_pre70|A_survey": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|A_text": {
+   "N": 138,
+   "k": 0,
+   "f": 0,
+   "m": 138,
+   "m_full_coverage": 84,
+   "m_no_adequate_coverage": 54,
+   "m_not_recorded_stage1": 39
+  },
+  "R2_pre70|B": {
+   "N": 138,
+   "k": 4,
+   "f": 0,
+   "m": 134,
+   "m_full_coverage": 81,
+   "m_no_adequate_coverage": 53,
+   "m_not_recorded_stage1": 39
+  }
+ },
+ "exposed": {
+  "E334": {
+   "label": "Tell es-Sultan",
+   "main_set": false,
+   "in_R2": true,
+   "stage1": "to Stage 2",
+   "C1": "MATCH",
+   "C2": "UNKNOWN",
+   "C3s": "MATCH",
+   "C3t": "UNKNOWN",
+   "A_survey": "UNKNOWN",
+   "A_text": "UNKNOWN",
+   "B": "UNKNOWN"
+  },
+  "S1658": {
+   "label": "Kh. Marjame (ʿEin Samiya)",
+   "main_set": true,
+   "in_R2": false,
+   "stage1": "to Stage 2",
+   "C1": "UNKNOWN",
+   "C2": "UNKNOWN",
+   "C3s": "MATCH",
+   "C3t": "UNKNOWN",
+   "A_survey": "UNKNOWN",
+   "A_text": "UNKNOWN",
+   "B": "UNKNOWN"
+  },
+  "S1667": {
+   "label": "Kh. Samiyye",
+   "main_set": true,
+   "in_R2": true,
+   "stage1": "to Stage 2",
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH",
+   "C3t": "UNKNOWN",
+   "A_survey": "UNKNOWN",
+   "A_text": "UNKNOWN",
+   "B": "UNKNOWN"
+  },
+  "S1666": {
+   "label": "Water line, ʿEin Samiya",
+   "main_set": false,
+   "in_R2": true,
+   "stage1": "to Stage 2",
+   "C1": "UNKNOWN",
+   "C2": "UNKNOWN",
+   "C3s": "UNKNOWN",
+   "C3t": "UNKNOWN",
+   "A_survey": "UNKNOWN",
+   "A_text": "UNKNOWN",
+   "B": "UNKNOWN"
+  },
+  "S2488": {
+   "label": "Kh. Marjama (other site)",
+   "main_set": true,
+   "in_R2": true,
+   "stage1": "to Stage 2",
+   "C1": "UNKNOWN",
+   "C2": "UNKNOWN",
+   "C3s": "MATCH",
+   "C3t": "UNKNOWN",
+   "A_survey": "UNKNOWN",
+   "A_text": "UNKNOWN",
+   "B": "UNKNOWN"
+  },
+  "S1001": {
+   "label": "Kh. Yanun",
+   "main_set": true,
+   "in_R2": false,
+   "stage1": "not recorded",
+   "C1": "UNKNOWN",
+   "C2": "UNKNOWN",
+   "C3s": "UNKNOWN",
+   "C3t": "UNKNOWN",
+   "A_survey": "UNKNOWN",
+   "A_text": "UNKNOWN",
+   "B": "UNKNOWN"
+  },
+  "S1053": {
+   "label": "Yanun",
+   "main_set": true,
+   "in_R2": false,
+   "stage1": "not recorded",
+   "C1": "UNKNOWN",
+   "C2": "UNKNOWN",
+   "C3s": "UNKNOWN",
+   "C3t": "UNKNOWN",
+   "A_survey": "UNKNOWN",
+   "A_text": "UNKNOWN",
+   "B": "UNKNOWN"
+  },
+  "S4546": {
+   "label": "ʿEin el-Ghuweir",
+   "main_set": true,
+   "in_R2": true,
+   "stage1": "not recorded",
+   "C1": "UNKNOWN",
+   "C2": "UNKNOWN",
+   "C3s": "UNKNOWN",
+   "C3t": "UNKNOWN",
+   "A_survey": "UNKNOWN",
+   "A_text": "UNKNOWN",
+   "B": "UNKNOWN"
+  },
+  "E754": {
+   "label": "Kh. Qumran",
+   "main_set": true,
+   "in_R2": true,
+   "stage1": "to Stage 2",
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH",
+   "C3t": "UNKNOWN",
+   "A_survey": "UNKNOWN",
+   "A_text": "UNKNOWN",
+   "B": "UNKNOWN"
+  }
+ },
+ "two_of_three": [
+  {
+   "unit_id": "S206",
+   "name": "Tell Qa'un",
+   "main_set": true,
+   "in_R2": false,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "E99",
+   "name": "Tananir",
+   "main_set": true,
+   "in_R2": false,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S845",
+   "name": "Kh. es-Saleh",
+   "main_set": true,
+   "in_R2": false,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S1032",
+   "name": "Udala",
+   "main_set": true,
+   "in_R2": false,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S1137",
+   "name": "Qarawet et-Tahta",
+   "main_set": true,
+   "in_R2": false,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S6040",
+   "name": "Tell esh-Sheikh Dhiab",
+   "main_set": true,
+   "in_R2": false,
+   "C1": "MATCH",
+   "C2": "MATCH",
+   "C3s": "UNKNOWN"
+  },
+  {
+   "unit_id": "S1502",
+   "name": "Kh. Sara C",
+   "main_set": true,
+   "in_R2": false,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S1667",
+   "name": "Kh. Samiyye",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S1929",
+   "name": "Kh. el-Khudriya",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S2376",
+   "name": "Tell Maryam",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S2430",
+   "name": "Tell es-Samrat",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S2539",
+   "name": "Tulul Abu el-'Alaiq",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "MATCH",
+   "C2": "MATCH",
+   "C3s": "UNKNOWN"
+  },
+  {
+   "unit_id": "S2589",
+   "name": "Kypros",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "MATCH",
+   "C2": "MATCH",
+   "C3s": "UNKNOWN"
+  },
+  {
+   "unit_id": "S2849",
+   "name": "-",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S3036",
+   "name": "Kh. esh-Sheikh 'Antar",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S3137",
+   "name": "el-Muntar",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "MATCH",
+   "C2": "MATCH",
+   "C3s": "UNKNOWN"
+  },
+  {
+   "unit_id": "S3419",
+   "name": "Ras el-'Eizariya",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "E754",
+   "name": "Kh. Qumran",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S3961",
+   "name": "-",
+   "main_set": true,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S843",
+   "name": "Kh. edh-Dhra'",
+   "main_set": false,
+   "in_R2": false,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S2096",
+   "name": "-",
+   "main_set": false,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "E334",
+   "name": "Tell es-Sultan",
+   "main_set": false,
+   "in_R2": true,
+   "C1": "MATCH",
+   "C2": "UNKNOWN",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "E357",
+   "name": "Naḥal Mikhmas",
+   "main_set": false,
+   "in_R2": true,
+   "C1": "MATCH",
+   "C2": "MATCH",
+   "C3s": "UNKNOWN"
+  },
+  {
+   "unit_id": "S2594",
+   "name": "-",
+   "main_set": false,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  },
+  {
+   "unit_id": "S3072",
+   "name": "-",
+   "main_set": false,
+   "in_R2": true,
+   "C1": "UNKNOWN",
+   "C2": "MATCH",
+   "C3s": "MATCH"
+  }
+ ],
+ "coder_agreement": {
+  "C1": {
+   "units": 62,
+   "agreement": 1.0,
+   "kappa": 1.0,
+   "pairs": {
+    "MATCH/MATCH": 10,
+    "UNKNOWN/UNKNOWN": 52
+   }
+  },
+  "C2": {
+   "units": 62,
+   "agreement": 0.968,
+   "kappa": 0.926,
+   "pairs": {
+    "MATCH/MATCH": 19,
+    "MATCH/UNKNOWN": 1,
+    "UNKNOWN/MATCH": 1,
+    "UNKNOWN/UNKNOWN": 41
+   }
+  },
+  "C3s": {
+   "units": 62,
+   "agreement": 0.968,
+   "kappa": 0.899,
+   "pairs": {
+    "FAIL/FAIL": 1,
+    "MATCH/MATCH": 10,
+    "MATCH/UNKNOWN": 1,
+    "UNKNOWN/MATCH": 1,
+    "UNKNOWN/UNKNOWN": 49
+   }
+  },
+  "C3t": {
+   "units": 62,
+   "agreement": 1.0,
+   "kappa": null,
+   "pairs": {
+    "UNKNOWN/UNKNOWN": 62
+   }
+  }
+ }
+}

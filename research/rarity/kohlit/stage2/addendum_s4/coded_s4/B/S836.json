@@ -1,0 +1,25 @@
+{
+  "unit_id": "S836",
+  "coder": "B",
+  "source4_status": "read",
+  "features": [
+    {"id": "s4f1", "source": "4", "cite": "Hirschfeld 1991, ESI 9 p. 138; Fig. 124 (p. 138)",
+     "quote": "The mouths of eight bell-shaped cisterns were identified on the site.",
+     "type": "pit", "subtype": "eight rock-cut bell-shaped cisterns", "is_tomb": false,
+     "position": {"kind": "none"},
+     "date": {"code": "U", "basis": "not dated individually; site sherds 2nd-3rd c. CE"}},
+    {"id": "s4f2", "source": "4", "cite": "Hirschfeld 1991, ESI 9 p. 138; Fig. 124 (p. 138)",
+     "quote": "a rock-cut reservoir (3.5 x 5.8 m) south of the site",
+     "type": "pool", "subtype": "rock-cut reservoir, 3.5 x 5.8 m, c. 3.0 m deep", "pool_def": "yes",
+     "position": {"kind": "words", "direction": "S", "distance_m": null, "relative_to": "unit"},
+     "date": {"code": "U", "basis": "not dated individually"}},
+    {"id": "s4f3", "source": "4", "cite": "Hirschfeld 1991, ESI 9 p. 139; Fig. 124 (p. 138), Fig. 126",
+     "quote": "About 20 m southeast of the site an almost intact sarcophagus",
+     "type": "grave", "subtype": "sarcophagus in situ", "cavity_with_opening": false,
+     "position": {"kind": "words", "direction": "SE", "distance_m": 20, "relative_to": "unit"},
+     "mouth": null,
+     "date": {"code": "U", "basis": "not dated; possibly Samaritan, per the author"}}
+  ],
+  "explicit_absence": [],
+  "notes": "Source 4 = Hirschfeld 1991, ESI 9: 138-139. It reports a survey and measurement of surface remains (1989), not an excavation. No plan position: the text gives the map ref 2014/1798, which equals the unit point, but at 100 m precision. Fig. 124 has no grid and does not mark where that point lies on a 62 x 113 m site, so the point cannot be placed. Fig. 124 (north = page-up, 0-20 m scale) shows the reservoir south of the gate, outside the south wall, and the sarcophagus at lower right (SE), both consistent with the text. It labels 'Cistern' nine times, against the text's eight. Eight labels are spread through the enclosure, one in its upper-left (north-west) part. The ninth is just below the south wall at its west end. The cisterns are coded as one feature with no position, because the text gives no direction. The reservoir is coded as a pool: it is called a reservoir, it is 3.5 x 5.8 m, and the source does not say it is roofed. The in-situ sarcophagus is coded as a grave without a cavity. No feature is dated individually. The site is dated by sherds of the 2nd-3rd c. CE and called a Roman-period fortified village, so the features are coded U."
+}

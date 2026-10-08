@@ -1,0 +1,29 @@
+{
+  "unit_id": "S3001",
+  "coder": "B",
+  "source4_status": "read",
+  "features": [
+    {"id": "s4f1", "source": "4", "cite": "Biran 1985 p. 212; Pl. 40:2",
+     "quote": "North of Locus 103, beside the base of the wall, a cistern",
+     "type": "pit", "subtype": "rock-cut cistern with two openings and rock-cut channel (Area A, hilltop)", "is_tomb": false,
+     "position": {"kind": "words", "direction": "N", "distance_m": null, "relative_to": "other"},
+     "date": {"code": "D", "basis": "author dates the cistern and channel to the end of the Israelite period (p. 212)"}},
+    {"id": "s4f2", "source": "4", "cite": "Biran 1985 p. 211",
+     "quote": "remains of buildings, walls, pillars, caves ... scattered over the whole area",
+     "type": "pit", "subtype": "caves (also in quoted reports of Press and the survey team)", "is_tomb": false,
+     "position": {"kind": "none"},
+     "date": {"code": "U", "basis": "not dated"}},
+    {"id": "s4f3", "source": "4", "cite": "Biran 1985 p. 211 (quoting Press and the Staff Officer survey)",
+     "quote": "walls, monolithic pillars, water cisterns, various rock-cuttings, a tomb",
+     "type": "pit", "subtype": "water cisterns (borot), quoted earlier reports", "is_tomb": false,
+     "position": {"kind": "none"},
+     "date": {"code": "U", "basis": "not dated"}},
+    {"id": "s4f4", "source": "4", "cite": "Biran 1985 p. 211 (quoting the Staff Officer survey)",
+     "quote": "water cisterns, various rock-cuttings, a tomb, lime kilns and caves",
+     "type": "grave", "subtype": "a tomb (Heb. qever), type not stated; quoted survey report", "cavity_with_opening": false,
+     "position": {"kind": "none"}, "mouth": null,
+     "date": {"code": "U", "basis": "not dated"}}
+  ],
+  "explicit_absence": [],
+  "notes": "Source 4 = Biran 1985, Eretz-Israel 18 (Hebrew), section B (Kh. Deir es-Sidd), pp. 211-213. Quotes are from the packet's English translation. Only one feature is described first-hand: the rock-cut cistern in Area A on the hilltop. Its direction is from Locus 103 (relative_to 'other'). Pl. 40:2 puts it beside the eastern face of the western enclosure wall W2. The cisterns, caves and tomb in s4f2-4 come from earlier reports quoted on p. 211 (Press; the Staff Officer survey). The author also lists caves himself. They are coded because the publication reports them at this site. The tomb's type is not stated, so cavity_with_opening is false by default. No plan position: Figs. 2-3 (pp. 211-212) have north arrows and scale bars but no grid, so the unit point (176200/135350) cannot be placed on them. The cistern is not drawn on Fig. 2. Area B (eastern slope, pillared building 120 m from the hilltop) has plaster on bedrock (p. 213), but no pool, pit or grave. The report of soundings 35 m and 50 m from Area A with 'no remains of importance' is not a statement that a feature class is absent, so no explicit_absence is recorded."
+}

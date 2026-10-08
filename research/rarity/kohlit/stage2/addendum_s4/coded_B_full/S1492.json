@@ -1,0 +1,435 @@
+{
+ "unit_id": "S1492",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "none in packet",
+  "4": "read",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1492 Site_Components",
+   "quote": "IA1 settlement, with pillared storehouse, silos",
+   "type": "pit",
+   "subtype": "silos",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row dates the silos to IA1 ('IA1 settlement, with ... silos')"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1492 Site_Components",
+   "quote": "Rom, Byz village with two churches: chancel screen, mosaic floors, cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row lists the cistern in the 'Rom, Byz village'; Rom counts"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1492 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1492; not dated itself"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB E177 Site_Components",
+   "quote": "IA1 settlement, with pillared storehouse, silos",
+   "type": "pit",
+   "subtype": "silos",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E177"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row dates the silos to IA1 ('IA1 settlement, with ... silos')"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E177 Site_Components",
+   "quote": "Rom, Byz village with two churches: chancel screen, mosaic floors, cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E177"
+   },
+   "date": {
+    "code": "D",
+    "basis": "row lists the cistern in the 'Rom, Byz village'; Rom counts"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "Reservoir",
+   "type": "pool",
+   "subtype": "reservoir",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1459; not dated itself"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "several rock-cut basins",
+   "type": "pool",
+   "subtype": "rock-cut basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1459; not dated itself"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "two arcosolium tombs",
+   "type": "grave",
+   "subtype": "arcosolium tombs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1459; not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1459 Site_Components",
+   "quote": "several tombs nearby",
+   "type": "grave",
+   "subtype": "tombs (type not stated)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1459"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1459; not dated itself"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1533 Site_Components",
+   "quote": "rock-cut basin",
+   "type": "pool",
+   "subtype": "rock-cut basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1533"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1533; not dated itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S1432 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1432"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1432; not dated itself"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "1",
+   "cite": "WBADB S1488 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1488"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1488; not dated itself"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "1",
+   "cite": "WBADB S1488 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1488"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1488; not dated itself"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "1",
+   "cite": "WBADB S1502 Site_Components",
+   "quote": "cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1502"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1502; not dated itself"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "1",
+   "cite": "WBADB S1502 Site_Components",
+   "quote": "burial caves",
+   "type": "grave",
+   "subtype": "burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "grid",
+    "ref": "S1502"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1502; not dated itself"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "4",
+   "cite": "Finkelstein 1985 p. 125",
+   "quote": "Many rock-hewn cisterns are scattered over the mound",
+   "type": "pit",
+   "subtype": "rock-hewn cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "4",
+   "cite": "Finkelstein 1985 p. 134 (Area C location p. 130)",
+   "quote": "A rock-hewn cistern was discovered in its northeastern corner",
+   "type": "pit",
+   "subtype": "rock-hewn cistern, Structure 335, Area C",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "in Iron Age I Structure 335 (Stratum V), reused Iron Age II"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "4",
+   "cite": "Finkelstein 1985 p. 139 (Area C location p. 130)",
+   "quote": "northern end of Hall 306 was used as a rectangular ash pit",
+   "type": "pit",
+   "subtype": "ash pit, Area C",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "reported under Roman-Byzantine period (Strata II-I); Rom counts"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "4",
+   "cite": "Finkelstein 1985 p. 155",
+   "quote": "disturbed by an Iron Age I silo (Silo 2009)",
+   "type": "pit",
+   "subtype": "silo 2009, Area M (reused as installation in Roman period)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "Iron Age I silo"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "4",
+   "cite": "Finkelstein 1985 p. 147 Fig. 7 (Area D location p. 140)",
+   "quote": "IRON AGE I (silos, circles)",
+   "type": "pit",
+   "subtype": "Iron Age I silos incl. silo 1400, Area D",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "NE",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "Fig. 7 key: Iron Age I silos"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "4",
+   "cite": "Finkelstein 1985 p. 154 Fig. 11 (Area K location p. 128)",
+   "quote": "Silo 1207 shown",
+   "type": "pit",
+   "subtype": "silo 1207, Area K",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "drawn in the Iron Age I hatch on Fig. 11"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "4",
+   "cite": "Finkelstein 1985 p. 150 (Area H location p. 142)",
+   "quote": "A stone-lined Iron Age I silo cutting deep",
+   "type": "pit",
+   "subtype": "stone-lined silo, Area H",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "NW",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "Iron Age I silo"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "4",
+   "cite": "Finkelstein 1985 p. 125",
+   "quote": "In the southern sector ... only rock-hewn caves with mixed pottery",
+   "type": "pit",
+   "subtype": "rock-hewn caves, Danish southern sector",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "mixed pottery; Roman date given to buildings, not caves"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "4",
+   "cite": "Finkelstein 1985 p. 157",
+   "quote": "a circular rock-cut installation with a diameter of about 1.25 m",
+   "type": "pool",
+   "subtype": "shallow circular rock-cut installation (1.25 m, 20 cm deep), Area E",
+   "pool_def": "no",
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": 50,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "D",
+    "basis": "Iron Age I remains"
+   }
+  }
+ ],
+ "notes": "Source 2 (Finkelstein 1997 p. 653) names no candidate feature. No SWP entry in packet. E177 is a second WBADB row for the same site at 0 m; its silos and cistern are coded with grid E177 as the brief requires. Source 4 positions use the area locations the report gives relative to the tell: Area C western slope (p. 130), Area M northern part (p. 155), Area K 'in the north' (p. 128), Area D northeast (p. 140), Area H northwestern sector (p. 142), Danish southern sector (p. 125), Area E 50 m east of the summit (p. 157, relative_to other). Silo in Area H (f22) is from the report text visible on the p. 150 plan image, not in the excerpts. No plan positions: plans use a local excavation grid and Fig. 2 has no north arrow, so the WBADB point cannot be placed. 'Ein Seilun spring 900 m NE (p. 125) is called a spring, not a pool; not coded from source 4. Byzantine plastered two-compartment installation in Area C (p. 139) treated as an industrial vat, not coded. The packet's burial excerpt says the report has no burial passage; that is silence, not an absence statement. S1459 'several tombs nearby' gives no tomb type, so cavity_with_opening=false."
+}

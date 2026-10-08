@@ -1,0 +1,31 @@
+{
+  "unit_id": "S1929",
+  "coder": "A",
+  "source4_status": "read",
+  "features": [
+    {"id": "s4f1", "source": "4", "cite": "Callaway 1970 p. 10",
+     "quote": "on the terrace north of the church ... a storage cave",
+     "type": "pit", "subtype": "storage cave (industrial complex)", "is_tomb": false,
+     "position": {"kind": "words", "direction": "N", "distance_m": null, "relative_to": "unit"},
+     "date": {"code": "U", "basis": "the industrial complex is not dated by the source"}},
+    {"id": "s4f2", "source": "4", "cite": "Callaway 1970 p. 10",
+     "quote": "on the terrace north of the church ... three large cisterns",
+     "type": "pit", "subtype": "three large cisterns (industrial complex)", "is_tomb": false,
+     "position": {"kind": "words", "direction": "N", "distance_m": null, "relative_to": "unit"},
+     "date": {"code": "U", "basis": "the industrial complex is not dated by the source"}},
+    {"id": "s4f3", "source": "4", "cite": "Callaway 1970 pp. 10, 12; Fig. 2 p. 11",
+     "quote": "In the Wadi Asas immediately north of the site was the cemetery",
+     "type": "grave", "subtype": "cemetery of 23 tombs cut into the south side of Wadi Asas", "cavity_with_opening": true,
+     "position": {"kind": "words", "direction": "N", "distance_m": null, "relative_to": "unit"},
+     "mouth": null,
+     "date": {"code": "D", "basis": "periods from late Hellenistic (Maccabean) to early Islamic are represented in the tombs (pp. 10, 12)"}},
+    {"id": "s4f4", "source": "4", "cite": "Callaway 1970 p. 10",
+     "quote": "tomb found by a landowner over one kilometer east of the site",
+     "type": "grave", "subtype": "single tomb (type not stated)", "cavity_with_opening": false,
+     "position": {"kind": "words", "direction": "E", "distance_m": 1000, "relative_to": "unit"},
+     "mouth": null,
+     "date": {"code": "D", "basis": "dated Middle Bronze II B by the source"}}
+  ],
+  "explicit_absence": [],
+  "notes": "Source 4 = Callaway 1970 (Kh. Khudriya = the 'Ai expedition's Site F); one paragraph only. s4f1-s4f2: the industrial complex lies 'on the terrace north of the church'; the church is the spot where Site F was located, so the direction is coded from the site (relative_to unit). The three cisterns are coded as one feature. s4f3: 'tombs cut into the south side of the wadi' read as rock-cut tombs (cavity_with_opening true); Fig. 2 also shows the tomb crosses F1-F16 N and NE of the Site F circle. s4f4: the source says 'over one kilometer' east; 1000 is a lower bound, not a measured distance. Not coded: wine press and 'series of storage vats' (vats are not pools or pits). No plan position: Fig. 2 marks Site F by a circle but has no coordinates, so the unit's recorded point cannot be placed on it."
+}

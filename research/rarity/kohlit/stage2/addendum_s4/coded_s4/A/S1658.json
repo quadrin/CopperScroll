@@ -1,0 +1,47 @@
+{
+  "unit_id": "S1658",
+  "coder": "A",
+  "source4_status": "read",
+  "features": [
+    {
+      "id": "s4f1",
+      "source": "4",
+      "cite": "Zohar 1980, IEJ 30 p. 219",
+      "quote": "the water was collected in a basin beneath the crypt",
+      "type": "pool",
+      "subtype": "spring basin ('Ein Samiyeh) beneath Byzantine church crypt",
+      "pool_def": "no",
+      "position": {
+        "kind": "words",
+        "direction": "S",
+        "distance_m": 20,
+        "relative_to": "other"
+      },
+      "date": {
+        "code": "U",
+        "basis": "basin itself not dated; it lay beneath the crypt of the Byzantine church"
+      }
+    },
+    {
+      "id": "s4f2",
+      "source": "4",
+      "cite": "Zohar 1980, IEJ 30 p. 219",
+      "quote": "a courtyard with two storage bins built with field stones",
+      "type": "pit",
+      "subtype": "storage bins (two), stone-built, beehive-shaped (silos)",
+      "is_tomb": false,
+      "position": {
+        "kind": "words",
+        "direction": "N",
+        "distance_m": 20,
+        "relative_to": "other"
+      },
+      "date": {
+        "code": "D",
+        "basis": "publication places them in the eighth-century (Iron Age) living areas above the destruction layer"
+      }
+    }
+  ],
+  "explicit_absence": [],
+  "notes": "No plan in the note. s4f1: 'basin' with no size; coded pool with pool_def 'no' because the source puts it beneath the church crypt (not open). It could equally be read as a roofed water chamber (pit). Position: the excavated area is 'about 20 m north of Ein Samiyeh', the spring from which the basin was fed, so the basin is c. 20 m S of the excavation area (relative to other, not to the unit). s4f2: the bins lie in the excavated area, c. 20 m N of the spring (relative to other). Including them as pits (silos) is marginal: the source calls them stone-built storage bins and does not say they are sunk. No WBADB row in the packet is clearly the same place as the spring basin (E222/S1676 'Ein Samiya, 707 m S, is a cemetery). No grave or burial mentioned; no absence statement."
+}

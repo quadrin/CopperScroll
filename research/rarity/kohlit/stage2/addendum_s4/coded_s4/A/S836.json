@@ -1,0 +1,63 @@
+{
+  "unit_id": "S836",
+  "coder": "A",
+  "source4_status": "read",
+  "features": [
+    {
+      "id": "s4f1",
+      "source": "4",
+      "cite": "Hirschfeld 1991, ESI 9 p. 138 (Fig. 124 'Reservoir')",
+      "quote": "a rock-cut reservoir (3.5 x 5.8 m) south of the site",
+      "type": "pool",
+      "subtype": "rock-cut reservoir, 3.5 x 5.8 m, c. 3 m deep",
+      "pool_def": "yes",
+      "position": {
+        "kind": "words",
+        "direction": "S",
+        "distance_m": null,
+        "relative_to": "unit"
+      },
+      "date": {
+        "code": "U",
+        "basis": "reservoir not dated itself; only the site is dated (sherds 2nd-3rd c. CE)"
+      }
+    },
+    {
+      "id": "s4f2",
+      "source": "4",
+      "cite": "Hirschfeld 1991, ESI 9 p. 138 (Fig. 124 'Cistern' labels)",
+      "quote": "The mouths of eight bell-shaped cisterns were identified on the site",
+      "type": "pit",
+      "subtype": "bell-shaped rock-cut cisterns (eight in text, nine labels on plan)",
+      "is_tomb": false,
+      "position": {
+        "kind": "none"
+      },
+      "date": {
+        "code": "U",
+        "basis": "cisterns not dated individually; text says the (Roman-period) village's water supply relied on them"
+      }
+    },
+    {
+      "id": "s4f3",
+      "source": "4",
+      "cite": "Hirschfeld 1991, ESI 9 p. 139 (Fig. 124 'Sarcophagus', Fig. 126)",
+      "quote": "About 20 m southeast of the site an almost intact sarcophagus",
+      "type": "grave",
+      "subtype": "stone sarcophagus in situ, with lid",
+      "cavity_with_opening": false,
+      "position": {
+        "kind": "words",
+        "direction": "SE",
+        "distance_m": 20,
+        "relative_to": "unit"
+      },
+      "date": {
+        "code": "U",
+        "basis": "sarcophagus not dated; attributed possibly to a Samaritan, no date given"
+      }
+    }
+  ],
+  "explicit_absence": [],
+  "notes": "Plan Fig. 124 (p. 138) has a north arrow and 20 m bar but no grid or coordinates; the recorded point 201400/179800 (map ref 2014/1798, 100 m precision) cannot be placed on it, so no 'plan' positions. Cisterns: one entry for the group; the text gives no direction, so position 'none'. For information only (not coded): on Fig. 124 one 'Cistern' label lies in the northern part of the enclosure, c. 20 m north of the Tower that the text puts 'in the center of the village'; four lie in the eastern half, one west of the Tower, one just outside the south wall at its west end. Reservoir: south of the site per text; on the plan it lies just south of the Gate, outside the enclosure. Sarcophagus coded as a grave (burial container in situ), not a cavity with opening. No mouth relations stated. Dates: site sherds 2nd-3rd c. CE and 'fortified village in the Roman period' are site-level, so features take U. No absence statement."
+}

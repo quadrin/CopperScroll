@@ -150,3 +150,6 @@ Full result: [`stage2/RESULTS.md`](stage2/RESULTS.md). Coder A coded all 244 Sta
 - **Branch B** (no graves condition): k = 4 (Tell esh-Sheikh Dhiab, Tulul Abu el-ʿAlaiq, Kypros, el-Muntar), m = 329.
 - **Text level:** every unit is UNKNOWN.
 - **Reading (§6):** m ≫ k, so rarity is not measurable from the available evidence. k = 0 for branch A means that the current candidate fits rest on evidence or tolerances outside the protocol. It is not a rejection.
+- **Source-4 addendum** ([`stage2/addendum_s4/ADDENDUM.md`](stage2/addendum_s4/ADDENDUM.md)): 24 more first publications were read, from PDFs the project owner supplied. The headline is unchanged.
+  - Qumran gains a northern cemetery (C3), Tell Shiloh, Kh. el-Khudriya and Tananir gain a northern pit (C2), and Tell Shiloh becomes a branch-B match when C1 is extended to 2 km.
+  - Qumran now matches two of three conditions; C1 is still UNKNOWN.

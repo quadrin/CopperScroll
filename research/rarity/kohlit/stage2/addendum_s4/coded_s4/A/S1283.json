@@ -1,0 +1,19 @@
+{
+  "unit_id": "S1283",
+  "coder": "A",
+  "source4_status": "read",
+  "features": [
+    {"id": "s4f1", "source": "4", "cite": "Tsafrir 1975 p. 44 (general, all seven forts); pp. 41, 49-50",
+     "quote": "On the slopes and on the summits cisterns were hewn and plastered",
+     "type": "pit", "subtype": "hewn and plastered cisterns (general statement)", "is_tomb": false,
+     "position": {"kind": "none"},
+     "date": {"code": "D", "basis": "pp. 49-50 date the fort's water system before Herod's time; p. 44 makes the cisterns part of it"}},
+    {"id": "s4f2", "source": "4", "cite": "Tsafrir 1975 p. 47; p. 52",
+     "quote": "buried in the family tomb of the Hasmoneans at Alexandrium",
+     "type": "grave", "subtype": "Hasmonean family tomb (historical, after Josephus)", "cavity_with_opening": false,
+     "position": {"kind": "none"},
+     "date": {"code": "D", "basis": "used for Herod's sons in Herod's reign (Josephus, cited p. 47)"}}
+  ],
+  "explicit_absence": [],
+  "notes": "Tsafrir 1975 is a Hebrew synthesis; quotes are from the packet's English translation. Alexandrium was not excavated at the time (p. 48), so no feature is located. s4f1 rests on a general statement covering all seven forts (p. 44) and on the PEF mapping of 'the fort's water system' (p. 41); no position. s4f2 is the tomb Josephus places at Alexandrium; the article reports no burial remains on the ground, and it says nothing about the tomb's form, so cavity_with_opening is set false for lack of description. Not coded: the siphon (a slab-covered channel on an embankment, pp. 49-50) is a conduit, not a pool, pit or grave. The only plan (p. 45, Abel's sketch of the summit) has an N arrow but no scale and no water or burial feature, and the unit's point cannot be placed on it."
+}

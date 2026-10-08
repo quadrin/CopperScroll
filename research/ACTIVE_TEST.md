@@ -2,7 +2,7 @@
 
 Updated 8 October 2026 UTC / 7 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (8 October UTC): **obtained**: the pre-registered [Koḥlit rarity count](rarity/kohlit/stage2/RESULTS.md) was run. Headline (R1, Hel/Rom, branch A, survey level): k = 0, f = 1, m = 332 of 333. Branch B: k = 4. So rarity is not measurable from available evidence (§6). No site is identified or rejected.
+Last session (8 October UTC): **obtained**: the [source-4 addendum](rarity/kohlit/stage2/addendum_s4/ADDENDUM.md) to the Koḥlit rarity count read 24 more excavation reports. The headline is unchanged (R1, Hel/Rom, branch A survey level: k = 0, f = 1, m = 332 of 333; branch B k = 4). Qumran now matches two of three conditions (a pit and a cemetery to the north); its pool position is still UNKNOWN.
 
 ## Active questions and the observation that decides each
 
