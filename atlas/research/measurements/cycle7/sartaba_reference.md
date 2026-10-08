@@ -27,3 +27,9 @@ Conservative accounting: +0 source targets (existing Amit reinspection and a mis
 
 
 Integration accounting: this corrects the prior source route; add zero bounded checks for the routing correction. It adds no endpoint measurement or Sartaba source target.
+
+## Bounded source follow-up — 8 October 2026 UTC / 7 October Los Angeles
+
+Focused searches and the supplied folder's115-document metadata audit recovered neither the earlier1979–80 conference booklet's **pp.24–26** nor a raw1978 endpoint register/longitudinal profile. The1989 volume's same page numbers remain Hirschfeld's separate chapter and cannot satisfy that source request.
+
+The192m/2.11m and later approximately250m measurements still lack a common endpoint and datum crosswalk. Next intake remains original endpoint IDs/levels and a profile joining the1978 and2001 surveys. No numerical reconciliation, reference direction or candidate confidence is inferred. Zero new primary targets, candidate checks or outcomes; no new outreach, delivery request or order.

@@ -38,3 +38,9 @@ Accounting: one scoped primary target for Netzer 2001’s Doq paragraph and note
 ## Follow-up, 3 October 2026 UTC
 
 Netzer 2006 p. 207 note 25 calls the 1982 Doq finds unpublished; note 27 attaches the 1990 chapter to Nuseib’s 1976–1977 soundings. The 2001 cross-citation above remains accurately recorded. The 1990 chapter is now a secondary comparative/incidental-coverage lead; prioritize an actual 1982 field record or verified later publication. [Original-page assessment](../cycle12/netzer_doq.md).
+
+## Bounded source follow-up — 8 October 2026 UTC / 7 October Los Angeles
+
+Focused public searches and the supplied folder's115-document metadata audit recovered no original **December1982** Doq building/pool field record, permit or verified later publication of that excavation. The existing Netzer2006p207n25 “unpublished” attribution remains the controlling source distinction; the1990 Nuseib chapter remains a comparative lead. Repeating the sourcebook name variants adds no permit.
+
+The discriminating intake remains an original1982 plan/locus register and room/pool sections that tie a specified feature to the canal/platform and dated ancient floor. No new geometry, date or feature correspondence is established. This access-only pass adds zero primary targets, candidate checks or outcomes. No new outreach, document-delivery request, purchase or fee.

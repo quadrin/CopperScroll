@@ -38,16 +38,59 @@
     "item_inventory_inspected": false,
     "absence_inference_permitted": false
   },
-  "twin_specific_licence": null,
+  "twin_specific_licence": "catalogue licence series now located; see access_followup_2026_10_08; original files uninspected",
   "twin_specific_plan_or_diary_item": null,
   "measurement_changes": [],
   "candidate_confidence_change": false,
-  "next_intake": "item-level inventory or custody record explicitly tying measured plan, section, diary or depth register to Twin Cave and seasons 1971/1977/1982",
+  "next_intake": "original licence/file index confirming Cave of the Twins and season; then measured plan/north datum, ancient northern-threshold section and dated wall contacts; Riklin1992/L-528 and earlier HUJ/SOA series supplement Gnazim717",
   "kpi_delta": {
     "primary_archaeological_targets": 0,
     "bounded_candidate_tests": 0,
     "decisive_tests": 0,
     "question_closures": 0,
     "map_intakes": 0
+  },
+  "access_followup_2026_10_08": {
+    "sourcebook": {
+      "authors": [
+        "Raphael Greenberg",
+        "Adi Keinan"
+      ],
+      "year": 2009,
+      "title": "Israeli Archaeological Activity in the West Bank 1967–2007: A Sourcebook",
+      "url": "https://www.emekshaveh.org/he/wp-content/uploads/2013/09/WBADB_sourcebook.pdf",
+      "sha256": "449b419f6acbcc105b85d90fad8462a41a17e5617821fa51c99902ed7cec2204",
+      "inspection": "PDF page images visually inspected; extracted text used for navigation",
+      "classification": "derived excavation/permit catalogue; retrieval metadata only",
+      "date_utc": "2026-10-08"
+    },
+    "catalogue_entry": 709,
+    "printed_page": 110,
+    "pdf_page": 114,
+    "aliases": [
+      "Cave of the Twins",
+      "Me'arat ha-Te'omot",
+      "Wadi Mazin, Cave"
+    ],
+    "catalogue_excavators": [
+      "Pesach Bar-Adon ('76, '82–'83)",
+      "Shimon Riklin (92)"
+    ],
+    "licences": [
+      "L-38/1971-0",
+      "L-142/1976-0",
+      "L-292/1982-0",
+      "L-316/1983-0",
+      "L-405/1986-0",
+      "L-528/1992-0"
+    ],
+    "shared_licence_warnings": [
+      "L-38 also issued to Kh. Muqaddam",
+      "L-405 also used for Cave 1 and Cave 2, catalogue707"
+    ],
+    "year_crosswalk": "catalogue1976 versus original1977 unresolved",
+    "original_files_inspected": false,
+    "outreach_sent": false,
+    "accounting_delta": 0
   }
 }

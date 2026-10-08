@@ -29,3 +29,9 @@ Obtain the printed site 143 description and any associated illustrations, checki
 - [IAA site 9199](https://survey.iaa.org.il/#/MapSurvey/65/site/9199): live Hebrew record read to its end; no tomb plan displayed.
 - [National Library catalogue](https://www.nli.org.il/en/books/NNL_ALEPH990012528630205171/NLI): catalogue record located; printed site pages not accessed.
 - [Peleg 2004 report](https://hadashot.iaa.org.il/report_detail_eng.aspx?id=63&mag_id=108), and [Fig. 1](https://hadashot.iaa.org.il/Images//Btur-1.jpg): text and plan inspected. Image linked as a source, not copied into the repository.
+
+## Bounded source follow-up — 8 October 2026 UTC / 7 October Los Angeles
+
+Focused public searches and the supplied folder's115-document metadata audit recovered no original **HA85p31** tomb-plan page or printed Benjamin site143 illustration. The online site group and the already inspected lower-Beth-Horon Peleg2004Fig.1 remain separate observations. A west-slope group location cannot supply an entrance bearing, and robbed-cave pottery cannot independently date a wall or threshold.
+
+Next record: the exact printed notice/site illustrations, first verifying that a plan exists; otherwise an identified survey drawing for an individual tomb. No new plan was inspected or directional/date claim changed. Zero new primary targets, candidate tests, geometry or outcomes; no delivery request, outreach or order.
