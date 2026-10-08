@@ -93,9 +93,40 @@ Source 3 is the SWP *Memoirs*, volumes II (Samaria) and III (Judaea). The script
 - A false link only adds a Memoir entry to a unit's Stage 2 packet, and the coder rejects it there.
 - Units with no WBADB name (42 rows named "-") can link only through Other_Names.
 
+## Stage 1b result (8 October 2026 UTC), frozen screen 75ceb80
+
+```
+python3 -I stage1b_swp.py SWP_II.txt SWP_III.txt stage1a/stage1a_units.csv WBADB_data1.xlsx stage1b/
+```
+
+The parser found 2,162 Memoir entries (II: 1,040; III: 1,122). 169 of them contain a pool word. 147 of the 499 units link to one or more entries (180 links), and 18 links carry a pool word. `stage1b/swp_entry_index.csv` keeps the text of each linked entry for Stage 2.
+
+| Set | Units | → Stage 2 (1a or 1b) | Added by 1b | Not recorded (C1 UNKNOWN) |
+|---|---|---|---|---|
+| R1, Hellenistic or Roman (main) | 333 | 190 | 4 | 143 |
+| R1, any period before 70 CE | 499 | 244 | 4 | 255 |
+| R2, Hellenistic or Roman | 101 | 77 | 1 | 24 |
+| R2, any period before 70 CE | 138 | 99 | 1 | 39 |
+
+The four units added by the Memoirs are Tayasir (S398, "basin"), Yaṣid (S563, "tank"), Kh. Burj el-Fariʿa (S592, "birket") and Rammun (S1845, "tank").
+
+### Where the exposed candidates land (Stage 1b)
+
+- **Tell es-Sultan (E334).** It links to "Tell es Sultan" (Mem III p. 220, square O s), whose entry has "reservoir", and to the cross-reference "ʿAin es Sultan" (p. 24). It was already in Stage 2.
+- **Kh. Yanun (S1001) and Yanun (S1053).** Both link to "Khurbet Yanun" (Mem II p. 394, square N o: "Traces of ruins above a small spring"). The entry has no pool word, so both units are **not recorded (C1 UNKNOWN)**.
+- **ʿEin el-Ghuweir (S4546).** No link: **not recorded (C1 UNKNOWN)**.
+- **Kh. Marjame (S1658), Kh. Marjama (S2488) and Kh. Qumran (E754).** No link. All three were already in Stage 2 from Stage 1a.
+
+### What the frozen parser missed (found after the run; no change to the result)
+
+A check of the exposed candidates after the run found three Memoir entries that the frozen rules could not link. They are reported here and the result above stays as it is. Stage 2 packets may give coders any passage of source 3, so these entries can still be used there.
+
+- **Kh. Qumran.** The entry is OCR'd as "K h ft r b e t K u m r a n (O t)". The garbled "Khftrbet" stops the name link, and square O t is more than 9 km from the unit. The entry has a "small birkeh" **outside the wall on the west**. Qumran is in Stage 2 already.
+- **Yanun village.** The list number "8." is OCR'd as "S.", so the header is not found. The entry ("a small spring about 1 mile to the north") has no pool word, so the status does not change.
+- **ʿAin el Ghuweir.** It is in a numbered spring list with no map square, so the parser cannot place it. The spring "forms a shallow basin". If it had linked, the unit would have gone to Stage 2. The basin is natural, so it would probably not meet C1. The unit stays "not recorded" under the frozen rules.
+
 ## Next
 
-1. **Stage 1b.** Run the frozen script and commit the result.
-2. **Stage 2.** Freeze the §4 matching script and the coding protocol, then code every unit that goes to Stage 2 from sources 1–5.
+1. **Stage 2.** Freeze the §4 matching script and the coding protocol. Then code every unit that goes to Stage 2 from sources 1–5.
 
 The original survey entries (source 2), mainly Bar-Adon 1972 and Kallai 1972, are in Hebrew and exist only in libraries.

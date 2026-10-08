@@ -1,0 +1,42 @@
+{
+ "swp_entries_parsed": 2162,
+ "swp_entries_with_pool_word": 169,
+ "swp_entries_per_volume": {
+  "II": 1040,
+  "III": 1122
+ },
+ "rules": {
+  "max_dist_m": 9000,
+  "min_similarity": 0.85,
+  "short_skeleton": 2
+ },
+ "units_without_name_key": 43,
+ "R1_main": {
+  "units": 333,
+  "to_stage2": 190,
+  "added_by_swp": 4,
+  "not_recorded": 143,
+  "with_any_swp_match": 107
+ },
+ "R1_pre70": {
+  "units": 499,
+  "to_stage2": 244,
+  "added_by_swp": 4,
+  "not_recorded": 255,
+  "with_any_swp_match": 147
+ },
+ "R2_main": {
+  "units": 101,
+  "to_stage2": 77,
+  "added_by_swp": 1,
+  "not_recorded": 24,
+  "with_any_swp_match": 29
+ },
+ "R2_pre70": {
+  "units": 138,
+  "to_stage2": 99,
+  "added_by_swp": 1,
+  "not_recorded": 39,
+  "with_any_swp_match": 37
+ }
+}
