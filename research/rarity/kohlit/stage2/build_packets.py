@@ -13,7 +13,7 @@ Packets quote copyrighted sources, so they stay outside the repository. The comm
 manifest records each packet's SHA-256.
 
 Usage:
-    python3 -I build_packets.py WBADB.xlsx SWP_II.txt SWP_III.txt HIGHLANDS.pdf NIGRO.pdf S4_DIR OUT_DIR
+    python3 -I build_packets.py WBADB.xlsx SWP_II.txt SWP_III.txt HIGHLANDS.pdf NIGRO.pdf S4_DIR OUT_DIR [S2X_DIR]
 """
 from __future__ import annotations
 
@@ -276,7 +276,7 @@ def coverage_class(survey_ref):
     return max(found, key=order.get) if found else COVERAGE["default_if_unlisted"]
 
 
-def main(xlsx, f2, f3, highlands_pdf, nigro_pdf, s4_dir, out_dir):
+def main(xlsx, f2, f3, highlands_pdf, nigro_pdf, s4_dir, out_dir, s2x_dir=None):
     if s1a.sha256(Path(xlsx)) != s1a.WBADB_SHA256:
         sys.exit("WBADB hash does not match the frozen value")
     if sha256_file(highlands_pdf) != HIGHLANDS_SHA256:
@@ -347,6 +347,18 @@ def main(xlsx, f2, f3, highlands_pdf, nigro_pdf, s4_dir, out_dir):
                   "pages": highlands_text(highlands_pdf, pages)}
         elif not own["survey_ref"]:
             s2["status"] = "no survey entry named in WBADB"
+        # Addendum 2: other survey entries named in Survey_Ref, extracted from owner-supplied PDFs
+        d2 = Path(s2x_dir) / uid if s2x_dir else None
+        if d2 is not None and (d2 / "meta.json").exists():
+            meta = json.loads((d2 / "meta.json").read_text(encoding="utf-8"))
+            if meta.get("status") == "read":
+                s2.setdefault("other_entries", []).append({
+                    "citation": meta.get("citation", ""), "access": meta.get("access", ""),
+                    "pages": meta.get("pages", ""), "notes": meta.get("notes", ""),
+                    "excerpts": [q.read_text(encoding="utf-8") for q in sorted(d2.glob("excerpt*.txt"))],
+                    "plan_images": [str(q.resolve()) for q in sorted(d2.glob("*.png"))]})
+                s2["status"] = ("read: " + meta.get("citation", "")) if s2["status"].startswith(("not accessed", "no survey")) \
+                    else s2["status"] + " + " + meta.get("citation", "")
 
         s4 = {"status": "not excavated"}
         if unit["excavated"]:
@@ -414,4 +426,4 @@ def main(xlsx, f2, f3, highlands_pdf, nigro_pdf, s4_dir, out_dir):
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:8])
+    main(*sys.argv[1:9])
