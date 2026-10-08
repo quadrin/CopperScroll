@@ -1,0 +1,106 @@
+W2-E: CHECKING WAVE 1 CLAIMS AGAINST THE PRIMARY EDITIONS
+Agent report, 6 October 2026. EVIDENCE means what a source says, quoted with page numbers. INFERENCE means my own reasoning, with a confidence level. Page numbers are printed pages; PDF page numbers are given where they help.
+Files: data/ (claims_verification.csv, eusebius_notley_safrai.csv, elitzur_criteria_and_rules.csv, sefaria_*.json); scripts/ (ocr_elitzur.sh, split_pages.py, ns_note.py); img/ (page crops); txt/ (text extractions); elitzur_ocr/ (Elitzur OCR, one file per PDF page).
+
+BOTTOM LINE
+- 1QapGen XXII 13-14 is confirmed. Fitzmyer and Machiela print the same text and translate it the same way. Wave 1's conclusion that it "favours Puech over Milik" is not new and goes too far: Milik cited the passage in 1962 (DJD 3 p. 274), and Yadin and Puech built their argument on it.
+- The Michmash gorge (Wadi Suweinit) for Beth Tamar is not new. Milik named it and rejected it as too far (DJD 3 p. 267). Puech raised it as a question (2006 p. 197 n. 366 = 2015 p. 84 n. 366).
+- One Eusebius number needs correcting: in Notley-Safrai, Messab is no. 696 (Wolf has 698). Notley-Safrai give no identification for Beththamar ("?").
+- Elitzur's criteria remove two wave 1 leads: ha-Melah = Malhah, and the Arabic "cistern" reading of entry 1. T01's chance-level conclusion stands and is strengthened.
+- Side finding: b. Qid. 66a's Kohalit is already linked to 3Q15 in print (Lefkovits 2000 p. 75 n. 10; Zissu 2001 pp. 146-147).
+
+1. 1QAPGEN XXII 13-14
+EVIDENCE
+- Fitzmyer 2004, p. 108 (Aramaic text; image checked):
+  l.13 וכול בזתא וסלק לעורעה ואתה לשלם היא ירושלם ואברם שרא בעמק
+  l.14 שוא והוא עמק מלכא בקעת בית כרמא ומלכיצדק מלכא דשלם אנפק
+- Fitzmyer p. 109 (translation): "while Abram was encamped in the Valley of / Shaveh. This is the Vale of the King, the Valley of Beth-haccherem."
+- Fitzmyer p. 246 (commentary): "An even more important identification is added in this text, בקעת בית כרמא ... These references together with the notice in this text, as well as that in the copper roll of Qumran Cave 3 (3Q15 10:5), make it plausible to locate Beth-hacherem at the modern site of Ramat Rahel." Ramat Rahel "dominates the Valley of Rephaim".
+- Machiela 2009, p. 82: identical text, with no textual note. Translation: "the Valley / of Shaveh, which is the Valley of the King - the Valley of Bet-Hakerem."
+- Machiela p. 134 n. 18: "Perhaps modern Ramat-Rahel ... challenged ... by Gabriel Barkay ... BAR 32:5 (2006) ... Bet-Hakerem is in fact modern Ein-Kerem, which seems quite plausible given the evidence."
+- Readings do not differ. Translations differ only in punctuation.
+- Shaveh is spelled שוא in 22:14, as in 3Q15 השוא. 1QapGen 21:29 spells it with he, [ב]שוה הקריות (Machiela p. 80; Fitzmyer p. 236). Milik already noted the contrast: DJD 3 p. 274, "noter la graphie שוא ... par opposition à שוה הקריות de xii 29 [read xxi 29]".
+- Milik, DJD 3 p. 274: השוא = Josephus's Bethso (ha-so'), the necropolis at "la moderne Baqâʿah". He cites the 1QapGen addition "vallée de Bet-Karma" for the sages' identification of Shaveh with the King's Valley.
+- Puech 2006 p. 194 n. 304 = 2015 pp. 73-74 n. 304: "As Milik points out ... valley of Shaveh to the south of Jerusalem (Gen 14:17; cf. 1QApGen XXII 14, šwʾ ...) ... towards Beth ha-Kerem, but to be distinguished from beth Ṣoʾh". Note 304 credits Yadin (Temple Scroll 1983 I 302-303).
+- Lefkovits 2000 pp. 265-266 gives the same history (Yadin; Pixner; Beyer's "Wadi Schawa").
+- Elitzur 2004 p. 185 n. 2 cites both 1QapGen 22,14 and 3Q15 10,5 for Beth HaKerem.
+- Sefaria parallels for the "valley" formula: m. Middot 3:4 and m. Niddah 2:7 "מִבִּקְעַת בֵּית כֶּרֶם"; Tg. Jonathan to Jer 6:1 "בֵּית בִּקְעַת כַּרְמַיָא".
+
+INFERENCE: what this means for entries 36-37 and 46
+- (Medium) The passage supports reading 3Q15 השוא as the Gen 14:17 Shaveh / King's Valley rather than Bethso. This is the Yadin-Pixner-Puech position, not a new result.
+- (Medium) It does not clearly favour Puech over Milik. Milik's Baqʿa lies in the Rephaim plain below Ramat Rahel, so the two placements are a few kilometres apart.
+- (Low-medium) Entry 46 is not settled. The Ramat Rahel identification partly rests on 3Q15 and 1QapGen themselves, so using it to place 36-37 risks circularity. If Barkay's Ein Kerem is right, the valley would lie west of Jerusalem, which conflicts with Josephus's King's Valley 2 stadia from the city (AJ 7.243) and with entry 48 (Absalom's monument, "in the King's Valley").
+- (Low) On name survival alone, ʿAin Karim keeps k-r-m. The LXX of Josh 15:59a lists Καρεμ with Tekoa, Bethlehem, Phagor, Koulon, Bether and Manocho.
+
+2. EUSEBIUS (NOTLEY-SAFRAI 2005)
+Format: N-S entry no. / Klostermann page:line, then printed page.
+- Achor 49/18:17, p. 20: "It is located north of Jericho, and so until today it is called by the residents." No N-S note.
+- Achor 69/24:8, p. 25: Josh 15:7, refers back to no. 49.
+- [Emekachor] 413/84:18, p. 82: "Near Jericho is still shown the place next to Gilgal." N-S note: "this is the plain east of Jericho, between it and the Jordan. The mention of Gilgal apparently expresses a sophisticated, albeit questionable, identification." Table: "?".
+- Baal-tamar 268/56:1, p. 56: "Near Geba ... It is still called Beth-tamar (Βηθθαμαρ) among the inhabitants." N-S note: "Its identification is unclear ... to be sought in the Judean Desert, to the north of Jerusalem ... Abba Conon met Jews in Betamarim. The intent may also be to Beit Ummar ... may also appear in the Copper Scroll (DJD 3: 267)". Table: "?".
+- [Messab] 696/132:6, p. 125: "'Of the foreigners,' near Geba." No N-S note. This is Wolf's 698; in N-S, 698 is Mizpeh of Moab.
+- Michmash 695, p. 125: "the well-known village Mukhmas, to the northeast of Jerusalem."
+- Naarah 732/136:24, p. 130: "Noorath is now a village of Jews five miles from Jericho." N-S note: "the well-known Na'aran (Nueima) ... four kilometers to the northwest of present-day Jericho. The error in specifying the distance is so great that the identification should be reexamined".
+- Secacah 846/156:27, p. 147: "In the tribe of Judah." No note.
+- Janoah 550/108:19, p. 104: "twelve miles east of Neapolis." N-S note: "Yanun ... grid 18440/17230 ... Nebi Yanun". This confirms Zissu's "108 line 20".
+- Chezib 945, p. 161: N-S identify it as Ghazi and add that it was probably Simeon Cusba's birthplace (Wolf 948).
+- No entries: Doq/Douka, Beth-hakkerem, Kohalit/Kahelet, Bethbasi.
+- Eusebius never locates "Gaba". Judg 20:33 (MT) itself places Baal-tamar beside מִמַּעֲרֵה גָבַע ("Maareh-geba"; JPS emendation "west of Gibeah"), so his "near Gaba" may come from the verse.
+
+3. ELITZUR 2004
+CRITERIA (EVIDENCE, pp. 12-13; image checked)
+- (i) "The descriptions of the terrain and specified distances in the historical sources imply a well defined geographical indication."
+- (ii) "There exists an Arabic name which parallels the historical name in all or almost all letters and denotes a point at or reasonably near the location indicated by the historical source."
+- Remark 1: an inaccurate reference may be tolerated only if "the name occurs rarely in the nomenclature and is not a commonly used, standard Arabic word ... identical with the ancient name". Conversely, a clear location tolerates a faulty name (al-Ǧīb = Gibeon).
+- Remark 2: pottery alone is not adequate.
+- Remark 4: what matters is that the name survives ("wandering of names").
+
+SOUND RULES (EVIDENCE)
+- Gutturals are generally preserved (pp. 296-297).
+- ḥ > ʿ is rare (Beth-Horon > bēt ʿūr). ʿ > ḥ occurs once (ʿAzmaveth > ḥizma).
+- Uvular ḫ becomes ḥ or is lost: Jericho > rīḥa, Janoah > yānūn (pp. 294-295).
+- "/h/ is not known in surviving names from the Onomasticon" (p. 298). No ḥet > ه case is given.
+- b, g, d, k, p, t are regular; p always > f; Michmash > muḫmās (pp. 299-301).
+- Emphasis is kept (p. 303). ש > s, except in Galilee (pp. 303-304).
+- Diminutives are "unusual in Arabic" (p. 341).
+
+COPPER SCROLL NAMES IN ELITZUR (EVIDENCE)
+- Doq is accepted: "Dok (1 Macc 16:15: Δωκ), near Jericho, known to the Arabs as dūk or dyūk" (p. 139 n. 2; p. 358).
+- Gilgal survives "east of Jericho in the form [ǧalǧala]" (p. 380).
+- כוחלית is listed among the -īt names of the Second Temple period (pp. 230, 334). He documents "-at > -īt changes", e.g. עלמת > ʿalmīt and דברת > Δαβιριθα (p. 336).
+- m-l-ḥ names are numerous, "even at considerable distances from salt seas or marshes" (p. 52 and n. 5).
+- He discusses neither Achor nor Secacah, and Beth Tamar is not among his 177 accepted names.
+
+RE-ASSESSMENT
+- ha-Melah = Malhah: fails (i), since no ancient source places it there. It also fails remark 1, since malha is a common word. REJECT as an identification.
+- Entry 1 ḥrwbʾ = hurubbeh (هربة) "cistern": ח > ه is unattested. The editions read חריבה: Milik, DJD 3 p. 284, "La dernière lettre du premier mot était commencée comme un aleph, corrigé ensuite en hé"; Puech 2015 p. 26 reads "yod in preference to waw". No edition suggests "cistern". DROP.
+- Beth Tamar = Michmash gorge / Geba: (i) is only partly met, because Gaba is ambiguous and probably biblical. (ii) fails: no survival near Geba, and Beit Taʿamir has an extra ʿayin and is a tribal name. LOW, and not new.
+- T01's chance-level result STANDS, strengthened (INFERENCE, high). Elitzur's method filters on the ancient locator, and T01 found about 83% of matching names are common words. Doq = ʿAin ed-Duk scored at chance (p = 0.59), yet Elitzur accepts it because of criterion (i). A proper test would count chance matches only inside the area a locator defines; only Achor, Doq and Secacah have one.
+
+4. ENTRY 1 AND ENTRY 43 IN MILIK, PUECH AND LEFKOVITS
+ENTRY 1
+- Milik, DJD 3 p. 284: reading note quoted in section 3.
+- Milik p. 234: a diminutive, "Petite Ruine", "peut-être hurebeh".
+- Milik p. 241: Byzantine Χωρεμβη, "correspondant aux multiples Ḫureibeh de nos jours".
+- Milik p. 262: Moschus's monastery of Chorembe, at W. Nuweiʿimeh.
+- Puech 2006 p. 179 = 2015 p. 26 and n. 75: "Ḥorebbeh, 'The Ruin' (lit. 'The little ruin') ... ḥryb{ʾ}h".
+- Lefkovits 2000 pp. 29-34: "ruin". He reports Lurie's "carob" etymology and Kefar Ḥaruvah / Ḥarevah.
+- No "cistern" reading in any of them.
+
+ENTRY 43
+- Milik, DJD 3 p. 267: Bet Tamar = Βηθθαμαρ (Onom. 56,1-3), near Tell el-Ful, perhaps Ras et-Tawil. "Le mot צוק proprement employé ... ne pourrait viser que les gorges du W. Fârah ou bien du W. Suweiniṭ qui semblent trop éloignées de Bet Tamar."
+- Milik p. 239: compares the scroll's שן with 1 Sam 14:4 and Wadi Suweinit.
+- Puech 2006 p. 197 n. 366 = 2015 p. 84 n. 366: "Beth Tamar, 5 km to the northeast of Tell el-Fûl (Gibeah). In that case, should we think of the gorge of Wadi Suweinît, approximately 5 km away?"
+- Lefkovits 2000 pp. 305-307: reads הצוק as "peak". Of earlier views he lists Allegro (near Gibeah), Lurie ("near Naaran by Jericho"), Beyer, Wise and Steinberg (Ras et-Tawil). He mentions no Michmash or Geba.
+- So the Wadi Suweinit idea has been made before. What is new is only reading Eusebius's Gaba as Jabaʿ, and that has no support beyond the biblical text.
+- 1 Sam 14:5's מצוק is a crag ("One crag was located on the north", JPS), not a gorge.
+
+SIDE FINDINGS
+- b. Qid. 66a's Kohalit is already in Lefkovits 2000 p. 75 n. 10 and Zissu 2001 pp. 146-147. Elitzur p. 336 makes the כחלת / כוחלית difference a regular -at > -īt pattern (INFERENCE, medium).
+- Elitzur's corpus no. 175 identifies Chezib as ʿEn el-Kazbe (Judea), where N-S have Ghazi.
+
+LIMITS
+- Elitzur was read in English OCR; every Hebrew and Arabic form above was checked on a page image.
+- Barkay 2006, Yadin and Newman were not seen directly.
+- Notley-Safrai's Greek is garbled in the text layer, so only their English is quoted.
+- Distances between Jabaʿ and Tell el-Ful are approximate.

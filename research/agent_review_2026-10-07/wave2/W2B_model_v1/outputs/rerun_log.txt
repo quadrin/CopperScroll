@@ -1,0 +1,44 @@
+K1_sinkhorn b0_none tied done 2 s
+K1_sinkhorn b0_none untied done 2 s
+K1_sinkhorn b2_doc_likely tied done 3 s
+K1_sinkhorn b2_doc_likely untied done 3 s
+K1_sinkhorn b3_b2_plus_kohlit_od tied done 4 s
+K1_sinkhorn b3_b2_plus_kohlit_od untied done 4 s
+K2_fixed b0_none tied done 6 s
+K2_fixed b0_none untied done 6 s
+K2_fixed b2_doc_likely tied done 7 s
+K2_fixed b2_doc_likely untied done 7 s
+K2_fixed b3_b2_plus_kohlit_od tied done 8 s
+K2_fixed b3_b2_plus_kohlit_od untied done 8 s
+K4_fixed_grid b0_none tied done 40 s
+K4_fixed_grid b0_none untied done 47 s
+K4_fixed_grid b2_doc_likely tied done 79 s
+K4_fixed_grid b2_doc_likely untied done 86 s
+K4_fixed_grid b3_b2_plus_kohlit_od tied done 105 s
+K4_fixed_grid b3_b2_plus_kohlit_od untied done 110 s
+STEP post took 110 s
+K1_sinkhorn equal done
+K1_sinkhorn v1 done
+K2_fixed equal done
+K2_fixed v1 done
+K4_fixed_grid equal done
+K4_fixed_grid v1 done
+STEP jsens took 175 s
+grid cells 1316
+b0_none best (0.8, 0.99, 83.11039117569516)
+b0_none fit done
+b0_none weak done
+b0_none T06 done
+grid cells 1316
+b2_doc_likely best (0.8, 0.99, 35.91310877983934)
+b2_doc_likely fit done
+b2_doc_likely weak done
+b2_doc_likely T06 done
+tied_mp_densityneutral {'Tell': (0.0, 0.0), 'Samiya': (-1.8, 0.14), 'Muhal': (-0.08, 0.91), 'BKahil': (-3.63, -0.05), 'Kuhlah': (-6.17, -0.06), 'Carmel': (-8.28, -0.04), 'Zion': (-0.29, 4.79), 'TransJ': (-3.28, 0.14), 'Ghuweir': (-1.4, 0.06), 'Feshkha': (-0.36, 0.45)}
+tied_mp_densityneutral_wA0 {'Tell': (0.0, 0.0), 'Samiya': (-0.25, 0.14), 'Muhal': (-0.08, 0.29), 'BKahil': (-0.79, -0.05), 'Kuhlah': (-1.09, -0.06), 'Carmel': (-1.11, -0.04), 'Zion': (-0.29, 0.65), 'TransJ': (-0.26, 0.14), 'Ghuweir': (-0.18, 0.06), 'Feshkha': (-0.13, 0.45)}
+tied_mp_sinkhorn {'Tell': (0.0, 0.0), 'Samiya': (-1.72, 0.77), 'Muhal': (-0.07, 0.84), 'BKahil': (-3.01, 0.58), 'Kuhlah': (-4.62, 0.34), 'Carmel': (-6.12, 3.57), 'Zion': (-0.46, 3.82), 'TransJ': (-2.82, 1.25), 'Ghuweir': (-1.41, 0.25), 'Feshkha': (-0.38, 0.55)}
+e60_mp_densityneutral {'Tell': (0.0, 0.0), 'Samiya': (-0.03, 0.18), 'Muhal': (-0.11, -0.01), 'BKahil': (-0.35, -0.05), 'Kuhlah': (-0.52, -0.07), 'Carmel': (-0.09, -0.02), 'Zion': (-0.14, 0.09), 'TransJ': (-0.07, 0.18), 'Ghuweir': (-0.27, -0.04), 'Feshkha': (-0.18, -0.02), 'Yanun': (-0.01, 0.54)}
+e60_mp_sinkhorn {'Tell': (0.0, 0.0), 'Samiya': (0.15, 0.39), 'Muhal': (-0.07, -0.02), 'BKahil': (-0.19, -0.02), 'Kuhlah': (-0.28, -0.01), 'Carmel': (0.12, 0.43), 'Zion': (-0.21, -0.08), 'TransJ': (0.21, 0.67), 'Ghuweir': (-0.16, -0.02), 'Feshkha': (-0.13, -0.04), 'Yanun': (0.43, 0.82)}
+e19_mp_densityneutral {'Tell': (0.0, 0.0), 'Samiya': (-0.86, 0.0), 'Muhal': (-0.01, 0.64), 'BKahil': (-1.3, 0.01), 'Kuhlah': (-1.77, 0.02), 'Carmel': (-2.58, 0.01), 'Zion': (-0.5, 0.65), 'TransJ': (-0.72, 0.04), 'Ghuweir': (-0.19, 0.11), 'Feshkha': (-0.02, 0.66)}
+tied_janoah_densityneutral_wA0 {'Tell': (0.0, 0.0), 'Samiya': (-0.39, 0.0), 'Muhal': (-0.01, 0.32), 'BKahil': (-0.56, 0.01), 'Kuhlah': (-0.77, 0.02), 'Carmel': (-1.09, 0.01), 'Zion': (-0.35, 0.65), 'TransJ': (-0.4, 0.04), 'Ghuweir': (-0.05, 0.11), 'Feshkha': (-0.02, 0.48)}
+tables written

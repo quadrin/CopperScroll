@@ -1,0 +1,112 @@
+{
+ "repo_version_entry_sums_all": {
+  "A": "7/13",
+  "BC": "4/26",
+  "fisher_p": 0.0221
+ },
+ "entry_sums_ge10_only": {
+  "A": "7/13",
+  "BC": "4/22",
+  "fisher_p": 0.0571
+ },
+ "amounts_all_incl_lt10": {
+  "A": "7/13",
+  "BC": "6/29",
+  "fisher_p": 0.0677
+ },
+ "amounts_ge10_only": {
+  "A": "7/13",
+  "BC": "6/23",
+  "fisher_p": 0.1504
+ },
+ "scroll_d1": {
+  "observed": 8,
+  "n": 45,
+  "p_low_vs_benford": 0.0457
+ },
+ "nearest_centroid_LOO": {
+  "correct": 14,
+  "n": 15,
+  "misclassified": [
+   "Meyer"
+  ]
+ },
+ "nearest_centroid_scroll": {
+  "pred": "G",
+  "dist": {
+   "G": 1.44,
+   "L": 2.96
+  },
+  "features": [
+   "m10",
+   "subunit",
+   "myriad"
+  ]
+ },
+ "nearest_centroid_block_A": {
+  "pred": "G",
+  "dist": {
+   "G": 1.57,
+   "L": 2.49
+  }
+ },
+ "nearest_centroid_block_BC": {
+  "pred": "G",
+  "dist": {
+   "G": 1.65,
+   "L": 3.26
+  }
+ },
+ "m10_ci_block_A": [
+  0.54,
+  0.23,
+  0.77
+ ],
+ "m10_ci_block_BC": [
+  0.27,
+  0.1,
+  0.48
+ ],
+ "scroll_value_counts": [
+  [
+   22.0,
+   4
+  ],
+  [
+   17.0,
+   3
+  ],
+  [
+   70.0,
+   3
+  ],
+  [
+   40.0,
+   2
+  ],
+  [
+   41.0,
+   2
+  ],
+  [
+   7.0,
+   2
+  ],
+  [
+   42.0,
+   2
+  ],
+  [
+   80.0,
+   2
+  ],
+  [
+   9.0,
+   2
+  ],
+  [
+   900.0,
+   1
+  ]
+ ]
+}

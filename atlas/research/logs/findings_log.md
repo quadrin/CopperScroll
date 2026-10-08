@@ -3,6 +3,27 @@
 Current headline counters are [identification outcomes and coverage](https://github.com/quadrin/CopperScroll/blob/main/research/PROGRESS_METRICS.md). The following cycle/source totals are activity history; their growth does not establish stronger candidate identification.
 
 
+## Agent-review follow-up — 7 October 2026 (afternoon), Los Angeles
+
+The R07 observations were worked from the owner's sources and from CORONA DF040–042; see [the follow-up](../agent_review_2026-10-07/followup/README.md). **No identification, confidence, coordinate, decisive test, question closure or outcome-ledger increment.**
+- **ʿAin es-Sultan (entry 11):** the present reservoir dates from 1898 (Dorrell, PEQ 125 pp. 111–112). The only ancient element is a curved spring-house wall with a niche, judged late Roman/Byzantine on opinion only. No Herodian pool is demonstrated.
+- **Kh. el-Marjama (entry 11):** the only documented reservoir is a basin under a Byzantine church crypt at the spring, SW of the tell (Zohar, IEJ 30 p. 219). Kallai's rock-cut pool is still unlocated. A gazetteer (Kol Makom ve-Atar) puts Roman–Byzantine dams and aqueducts at Kh. Samiya, S/SE of the tell.
+- **North of the tell (entry 60):** Kenyon, *Jericho* II (1965) records Qumran-type Roman graves N/NW of Tell es-Sultan (p. 2; pp. 516–545); a Roman burial cut into a Bronze Age shaft (D9, pp. 276–277); and a Roman cistern with "Herodian" lamps toward Kh. el-Mefjar (N.S.1, pp. 539–544). The strip just north of the tell was never searched (p. 169). Kh. el-Marjama has only Bronze Age shaft tombs to the north. Kh. Yanun has no pit, cistern or tomb on record (*Highlands* pp. 828–831; Roman 3.3%).
+- **Imagery:** by September 1967 the ʿAin es-Sultan camp covered the ground north of the tell. A dark ~15 m square ~420 m SE of Kh. el-Marjama is unexplained. Qumran's ruins and caves do not resolve at ~2 m.
+- **Outreach:** requests were sent to Manchester Museum (C.21–23 for XII 10), the University of Manchester Library (GB 133 TPA/1/132) and the IAA archive (cave survey). Delivery and replies are unverified.
+- **Correction:** the owner's Kenyon copy is Vol. II, not Vol. III. Kenyon 1981 pp. 173–174 (cited by Puech) remains unchecked.
+
+
+## Parallel-agent review — 6–7 October 2026, Los Angeles
+
+Two waves of parallel agents (9 + 7) ran a 19-task program; see [the review](../agent_review_2026-10-07/README.md), [wave 2 synthesis](../agent_review_2026-10-07/wave2/SUMMARY.md) and [goals](../agent_review_2026-10-07/GOALS.md). **No identification, confidence, coordinate, decisive test, question closure or outcome-ledger increment.**
+- **Koḥlit (R07):** b. Qid. 66a "Koḥalit in the desert" is an old link (Allegro MS via Lefkovits p. 73; Milik DJD III p. 274, dismissed; Lurie; Lefkovits p. 75 n. 10; Zissu 2001 pp. 146–149). Every Talmud witness checked spells כוחלית. No examiner of the original reads "Janoaḥ" at XII 10 (Milik DJD III p. 298; Wolters CSS p. 319; Puech 2006 p. 206); on Lefkovits p. 425 the pit is *at* Janoaḥ (target Kh. Yanun). Feature matrix: Tell es-Sultan 6.75 vs ʿEin Samiya 5.95/12.5, weight-dependent. Milik's own Koḥlit was the Carmel (DJD III pp. 274–275); Jericho's Second Temple cemetery lies W–SW of the tell, not north.
+- **Order (R10):** the wave-1 joint model's pull of entry 60 away from Tell es-Sultan is a kernel-normalisation artifact (density-neutral: 0.28 vs prior 0.30). The order places districts, not sites.
+- **Greek letters (R11):** CIIP I, III–V add only ΔΙ parallels (Hippos quarry mark V 6760; theatre seat I 771b) and a disputed ΤΡ weight (I 666). A pre-registered Ilan base-rate test undercuts "initials of ordinary persons". Still ≤2/7.
+- **Inventory (R12):** the amounts look like genuine inventories on roundness and the absence of myriads, and legendary on the lack of fractions. The 1–19 vs 20–56 roundness difference is explained by word vs sign notation (p = 0.0004; within notation p = 0.36).
+- **Plates (R06):** a pre-registered letter model on the Puech 2006 copy photos passes only ו/ר, marginally and unstably; it gives no usable evidence at X 15. RTI/3D is needed.
+
+
 ## Cycle7 — 2 October 2026, Los Angeles
 
 Hyrcania’s northern-basin inlet remains independently unidentified; northern summit branch supplies eastern cisterns. Puech Koḥlit pp13–14/n49 directly read: contextual restoration and regional alternatives stay separate, with no specific pool entrance. Pool east-of-site and northern corner have different directional anchors. Sartaba reference corrected to earlier lecture collection, not supplied1989 pp24–26; correction adds no research count. One source target and two bounded checks added; totals29/5/31/0decisive/ 0 closures, three conditional assessments unchanged. [Reports](../measurements/cycle7/README.md).

@@ -1,0 +1,41 @@
+name,hebrew,heb_skeleton,arabic,ar_skeleton,true_score,rule_path,records_scoring_ge_true,records_ge_075,skeleton_present_in_ocr
+Anathoth,ענתות,ʿ-n-t-w-t,'Anata,ʿ-n-t,0.921,ʿ=ʿ n=n t=t R12:-w R12:-t,1,24,True
+Michmash,מכמש,m-k-m-š,Mukhmas,m-kh-m-s,0.925,m=m R6:k>kh m=m R2:š>s,1,10,True
+Geba,גבע,g-b-ʿ,Jeba',j-b-ʿ,1.0,R7:g>j b=b ʿ=ʿ,0,8,False
+Gibeon (truncated in Arabic),גבעון,g-b-ʿ-w-n,el Jib,j-b,0.651,R7:g>j b=b R12:-ʿ R12:-w R12:-n,92,4,True
+Beeroth,בארות,b-ʾ-r-w-t,el Bireh,b-r--eh,0.855,b=b R12:-ʾ r=r R13:+-eh R12:-w R12:-t,14,37,True
+Tekoa,תקוע,t-q-w-ʿ,Khurbet Teku'a,t-k-ʿ,0.97,t=t R6:q>k R12:-w ʿ=ʿ,0,8,False
+Ataroth,עטרות,ʿ-ṭ-r-w-t,'Atara,ʿ-t-r,0.921,ʿ=ʿ ṭ=t r=r R12:-w R12:-t,2,30,True
+Bethel,ביתאל,b-y-t-ʾ-l,Beitin,b-t-n,0.833,b=b R12:-y t=t R12:-ʾ R10:l>n,9,24,True
+Azmaveth,עזמות,ʿ-z-m-w-t,Hizmeh,h-z-m--eh,0.776,R4:ʿ>h z=z m=m R13:+-eh R12:-w R12:-t,8,8,True
+"Ai (translation 'the mound', no sound survival: expected failure)",עי,ʿ-y,et Tell,,0,,93,83,False
+Beth-Hoglah,חגלה,ḥ-g-l,'Ain Hajlah,h-j-l--eh,0.983,R3:ḥ>h R7:g>j l=l R13:+-eh,6,29,True
+Netophah/Naṭof spring,נטף,n-ṭ-p,'Ain en Natuf,n-t-f,1.0,n=n ṭ=t R5:p>f,5,7,True
+Doq/Dok,דוק,d-w-q,'Ain ed Duk,d-k,0.957,d=d R12:-w R6:q>k,6,10,True
+Bethlehem,לחם,l-ḥ-m,Beit Lahm,l-h-m,1.0,l=l R3:ḥ>h m=m,6,9,True
+Beth-zur,צור,ṣ-w-r,Beit Sur,s-r,0.957,R8:ṣ>s R12:-w r=r,29,49,True
+Halhul,חלחול,ḥ-l-ḥ-w-l,Halhul,h-l-h-l,0.977,R3:ḥ>h l=l R3:ḥ>h R12:-w l=l,0,24,False
+Etam,עיטם,ʿ-y-ṭ-m,'Ain 'Atan,ʿ-t-n,0.848,ʿ=ʿ R12:-y ṭ=t R10:m>n,2,13,False
+Ziph,זיף,z-y-p,Tell ez Zif,z-f,0.957,z=z R12:-y R5:p>f,2,3,True
+Maon,מעון,m-ʿ-w-n,Tell Ma'in,m-ʿ-n,0.97,m=m ʿ=ʿ R12:-w n=n,0,22,False
+Carmel (Judah),כרמל,k-r-m-l,Kurmul,k-r-m-l,1.0,R6:k>k r=r m=m l=l,2,28,True
+Juttah,יוטה,y-w-ṭ,Yutta,y-t,0.957,y=y R12:-w ṭ=t,2,5,True
+Eshtemoa,אשתמע,ʾ-š-t-m-ʿ,es Semu'a,s-m-ʿ,0.767,R12:-ʾ R2:š>s R12:-t m=m ʿ=ʿ,7,7,False
+Anab,ענב,ʿ-n-b,'Anab,ʿ-n-b,1.0,ʿ=ʿ n=n b=b,0,20,False
+Gedor,גדור,g-d-w-r,Khurbet Jedur,j-d-r,0.97,R7:g>j d=d R12:-w r=r,6,30,True
+Keilah,קעילה,q-ʿ-y-l,Khurbet Kila,k-l,0.818,R6:q>k R12:-ʿ R12:-y l=l,11,23,True
+Nezib,נציב,n-ṣ-y-b,Beit Nusib,n-s-b,0.97,n=n R8:ṣ>s R12:-y b=b,5,14,True
+Shiloh,שילה,š-y-l,Seilun,s-l-n,0.783,R2:š>s R12:-y l=l R13:+n,60,67,True
+Lebonah,לבונה,l-b-w-n,el Lubban,l-b-n,0.97,l=l b=b R12:-w n=n,4,11,True
+Chephirah,כפירה,k-p-y-r,Kefireh,k-f-r--eh,0.955,R6:k>k R5:p>f R12:-y r=r R13:+-eh,10,54,True
+Rimmon,רמון,r-m-w-n,Rummon,r-m-n,0.97,r=r m=m R12:-w n=n,1,24,True
+Beth-Horon,חורון,ḥ-w-r-w-n,Beit 'Ur el Foka,ʿ-r,0.556,R3:ḥ>ʿ R12:-w r=r R12:-w R12:-n,294,46,True
+Jeshanah,ישנה,y-š-n,Burj el Isaneh,s-n--eh,0.683,R12:-y R2:š>s n=n R13:+-eh,31,8,True
+Kozeba (Judah),כוזבא,k-w-z-b,Khurbet Kueiziba,k-z-b,0.97,R6:k>k R12:-w z=z b=b,0,4,False
+Adullam (popular etymology),עדלם,ʿ-d-l-m,'Aid el Ma,ʿ-d-m,0.775,ʿ=ʿ d=d R12:-l m=m,7,12,True
+Zanoah,זנוח,z-n-w-ḥ,Zanu'a,z-n-ʿ,0.818,z=z n=n R12:-w R3:ḥ>ʿ,3,3,False
+Socoh,שוכה,š-w-k,Khurbet Shuweikeh,sh-w-k--eh,0.978,R2:š>sh w=w R6:k>k R13:+-eh,6,33,True
+Jericho,ירחו,y-r-ḥ-w,Eriha,r-h,0.697,R12:-y r=r R3:ḥ>h R12:-w,31,1,True
+Siloam,שלוח,š-l-w-ḥ,Silwan,s-l-w-n,0.727,R2:š>s l=l w=w R13:+n R12:-ḥ,48,45,False
+Ophrah (replaced by et-Taiyibeh: expected failure),עפרה,ʿ-p-r,et Taiyibeh,t-y-b--eh,0.167,X:ʿ>t R13:+y R5:p>b R12:-r R13:+-eh,156,21,True
+Kidron (no survival),קדרון,q-d-r-w-n,Wady en Nar,n-r,0.326,R12:-q R12:-d R10:r>n R12:-w R10:n>r,173,28,True

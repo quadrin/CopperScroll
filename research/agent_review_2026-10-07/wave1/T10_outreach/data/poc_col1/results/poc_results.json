@@ -1,0 +1,247 @@
+{
+ "image": "Part_of_Qumran_Copper_Scroll.jpg",
+ "n_boxes": 19,
+ "class_counts": {
+  "ב": 3,
+  "ח": 1,
+  "ר": 1,
+  "א": 2,
+  "ה": 1,
+  "מ": 2,
+  "ע": 1,
+  "ל": 1,
+  "ת": 2,
+  "ו": 1,
+  "ש": 3,
+  "ג": 1
+ },
+ "results": {
+  "all/hog": {
+   "n_letters": 19,
+   "n_evaluated": 12,
+   "classes_evaluated": [
+    "א",
+    "ב",
+    "מ",
+    "ש",
+    "ת"
+   ],
+   "loo_1nn_hits": 2,
+   "loo_1nn_acc": 0.167,
+   "perm_mean_acc": 0.083,
+   "perm_p_value": 0.2815
+  },
+  "all/pixels": {
+   "n_letters": 19,
+   "n_evaluated": 12,
+   "classes_evaluated": [
+    "א",
+    "ב",
+    "מ",
+    "ש",
+    "ת"
+   ],
+   "loo_1nn_hits": 0,
+   "loo_1nn_acc": 0.0,
+   "perm_mean_acc": 0.081,
+   "perm_p_value": 1.0
+  },
+  "high+medium/hog": {
+   "n_letters": 10,
+   "n_evaluated": 3,
+   "classes_evaluated": [
+    "ב"
+   ],
+   "loo_1nn_hits": 0,
+   "loo_1nn_acc": 0.0,
+   "perm_mean_acc": 0.219,
+   "perm_p_value": 1.0
+  },
+  "high+medium/pixels": {
+   "n_letters": 10,
+   "n_evaluated": 3,
+   "classes_evaluated": [
+    "ב"
+   ],
+   "loo_1nn_hits": 1,
+   "loo_1nn_acc": 0.333,
+   "perm_mean_acc": 0.226,
+   "perm_p_value": 0.4653
+  }
+ },
+ "nearest_neighbours_hog": [
+  {
+   "id": 1,
+   "label": "ב",
+   "line": "I 1",
+   "nn_id": 11,
+   "nn_label": "א",
+   "distance": 0.135
+  },
+  {
+   "id": 2,
+   "label": "ח",
+   "line": "I 1",
+   "nn_id": 10,
+   "nn_label": "ת",
+   "distance": 0.128
+  },
+  {
+   "id": 3,
+   "label": "ר",
+   "line": "I 1",
+   "nn_id": 2,
+   "nn_label": "ח",
+   "distance": 0.143
+  },
+  {
+   "id": 4,
+   "label": "ב",
+   "line": "I 1",
+   "nn_id": 5,
+   "nn_label": "א",
+   "distance": 0.142
+  },
+  {
+   "id": 5,
+   "label": "א",
+   "line": "I 1",
+   "nn_id": 4,
+   "nn_label": "ב",
+   "distance": 0.142
+  },
+  {
+   "id": 6,
+   "label": "ה",
+   "line": "I 2",
+   "nn_id": 2,
+   "nn_label": "ח",
+   "distance": 0.141
+  },
+  {
+   "id": 7,
+   "label": "מ",
+   "line": "I 2",
+   "nn_id": 10,
+   "nn_label": "ת",
+   "distance": 0.122
+  },
+  {
+   "id": 8,
+   "label": "ע",
+   "line": "I 2",
+   "nn_id": 2,
+   "nn_label": "ח",
+   "distance": 0.129
+  },
+  {
+   "id": 9,
+   "label": "ל",
+   "line": "I 2",
+   "nn_id": 2,
+   "nn_label": "ח",
+   "distance": 0.144
+  },
+  {
+   "id": 10,
+   "label": "ת",
+   "line": "I 2",
+   "nn_id": 7,
+   "nn_label": "מ",
+   "distance": 0.122
+  },
+  {
+   "id": 11,
+   "label": "א",
+   "line": "I 12",
+   "nn_id": 1,
+   "nn_label": "ב",
+   "distance": 0.135
+  },
+  {
+   "id": 12,
+   "label": "מ",
+   "line": "I 12",
+   "nn_id": 7,
+   "nn_label": "מ",
+   "distance": 0.141
+  },
+  {
+   "id": 13,
+   "label": "ו",
+   "line": "I 12",
+   "nn_id": 1,
+   "nn_label": "ב",
+   "distance": 0.153
+  },
+  {
+   "id": 14,
+   "label": "ת",
+   "line": "I 12",
+   "nn_id": 2,
+   "nn_label": "ח",
+   "distance": 0.131
+  },
+  {
+   "id": 15,
+   "label": "ש",
+   "line": "I 12",
+   "nn_id": 18,
+   "nn_label": "ב",
+   "distance": 0.108
+  },
+  {
+   "id": 16,
+   "label": "ש",
+   "line": "I 12",
+   "nn_id": 14,
+   "nn_label": "ת",
+   "distance": 0.156
+  },
+  {
+   "id": 17,
+   "label": "ג",
+   "line": "I 14",
+   "nn_id": 15,
+   "nn_label": "ש",
+   "distance": 0.142
+  },
+  {
+   "id": 18,
+   "label": "ב",
+   "line": "I 14",
+   "nn_id": 15,
+   "nn_label": "ש",
+   "distance": 0.108
+  },
+  {
+   "id": 19,
+   "label": "ש",
+   "line": "I 11",
+   "nn_id": 15,
+   "nn_label": "ש",
+   "distance": 0.153
+  }
+ ],
+ "dendrogram_order_ids": [
+  13,
+  1,
+  11,
+  16,
+  19,
+  9,
+  17,
+  15,
+  18,
+  12,
+  3,
+  2,
+  8,
+  14,
+  7,
+  10,
+  6,
+  4,
+  5
+ ]
+}

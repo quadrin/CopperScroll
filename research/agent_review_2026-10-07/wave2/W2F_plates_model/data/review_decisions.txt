@@ -1,0 +1,150 @@
+# By-eye verification of the automatic (Viterbi) facsimile alignment (review sheets work/review/).
+# Format: REF: wN [wN ...]   -> all letters ASSIGNED to word N are accepted (unassigned letters are simply absent)
+#         wN:q,q             -> only letter positions q (0-based within the word) accepted
+# Lines not listed or words not listed are rejected. Reviewer: AI model (non-specialist), facsimile shapes only.
+X 1: w1 w2 w3
+X 2: w1
+X 3: w0 w2
+X 4: w2
+X 5: w0 w1 w2 w3
+X 6: w1 w4
+X 7: w2:0,1,2
+X 8: w0 w1
+X 9: w0:0 w3
+X 10: w0 w1 w3 w4
+X 11: w0 w1
+X 12: w0 w1 w3
+X 13: w0 w3 w4
+X 17: w2 w3
+IX 1: w0 w2 w3
+IX 2: w0 w6
+IX 3: w1
+IX 4: w2
+IX 6: w1
+IX 7: w0:0,1,2,3 w1
+IX 8: w0 w1 w3 w4
+IX 9: w0
+IX 10: w0 w1 w2 w3
+IX 11: w1 w2 w3 w4
+IX 12: w2 w3
+IX 14: w5
+XI 1: w2 w3 w4
+XI 2: w0 w1 w2
+XI 3: w0 w2
+XI 5: w3 w4
+XI 6: w1 w2 w3 w4 w5
+XI 7: w2
+XI 8: w0 w1 w3
+XI 9: w0 w1:0 w2 w3 w4
+XI 10: w4
+XI 11: w0 w1
+XI 16: w0 w3 w4
+XI 17: w0 w1 w6
+VII 2: w0
+VII 4: w0
+VII 5: w0
+VII 6: w1
+VII 9: w0 w3 w4
+VII 10: w0 w3
+VII 12: w0 w1 w2 w3
+VII 13: w0
+VII 16: w2 w4
+XII 1: w0 w4 w6
+XII 2: w0 w1 w2 w3:1,2,3,4 w4 w5
+XII 3: w0 w1
+XII 4: w0 w2
+XII 5: w0 w1 w4
+XII 6: w0 w1 w2 w3 w4 w6 w7 w8
+XII 7: w0 w1 w2 w4 w5 w6
+XII 8: w0 w5
+XII 9: w2 w4 w5
+XII 11: w0 w2 w3 w4 w5
+XII 13: w0
+II 1: w0 w1 w2 w3
+II 2: w0
+II 3: w0 w1 w4
+II 4: w1 w2 w3 w4
+II 5: w0 w1 w2 w3 w4
+II 6: w0 w4 w5
+II 7: w0 w1
+II 8: w0 w4 w5
+II 9: w0 w1:0 w3
+II 10: w0 w2 w3 w4
+II 11: w0 w1 w2 w4 w5
+II 12: w0 w2
+II 13: w1
+II 15: w0
+III 1: w3 w4
+III 2: w0
+III 3: w0 w1 w2 w3
+III 4: w0 w1 w2 w3
+III 5: w0 w1 w2 w3
+III 6: w0 w1 w3 w4 w5
+III 7: w0
+III 8: w0
+III 10: w0 w1
+III 11: w2
+III 12: w1 w2 w3
+III 13: w3
+V 1: w0 w1
+V 4: w0 w1 w2
+V 6: w2 w3
+V 7: w0 w2
+V 8: w1
+V 9: w0 w1 w2 w3
+V 10: w1 w3
+V 11: w1
+V 12: w2
+V 13: w0
+V 14: w3
+VI 2: w2
+VI 3: w1
+VI 5: w2 w3
+VI 6: w0
+VI 7: w0
+VI 8: w1
+VI 9: w0 w1
+VI 10: w0 w1:0,1 w2
+VI 11: w0 w1 w2
+VI 12: w1 w2
+VI 13: w0 w1 w2
+VI 14: w0 w1 w2
+I 1: w0 w1 w2
+I 2: w0 w2 w3
+I 3: w1 w2 w3 w4
+I 4: w0 w1 w2
+I 5: w0 w3
+I 6: w0 w2 w3 w4
+I 7: w3
+I 8: w2 w3 w4 w5
+I 10: w3
+I 11: w4
+I 12: w0 w1 w2
+I 13: w2 w3 w4
+IV 1: w0 w4
+IV 2: w0
+IV 3: w3
+IV 4: w0 w3
+IV 5: w0
+IV 6: w0 w1 w3
+IV 7: w3
+IV 8: w0 w1 w2
+IV 9: w0:0,1,2
+IV 10: w0 w1 w2 w3
+IV 11: w0 w1 w3
+IV 12: w0 w1 w2 w3
+IV 13: w4
+IV 14: w0 w1:0,1 w2
+VIII 1: w1:1,2,3,4 w2
+VIII 3: w1 w2
+VIII 4: w0
+VIII 5: w2
+VIII 6: w0 w2
+VIII 7: w0 w1
+VIII 8: w0 w2
+VIII 9: w2
+VIII 10: w2
+VIII 11: w0 w1 w2
+VIII 12: w0:0 w1 w2 w3:0,1,2
+VIII 13: w2
+VIII 15: w0 w1

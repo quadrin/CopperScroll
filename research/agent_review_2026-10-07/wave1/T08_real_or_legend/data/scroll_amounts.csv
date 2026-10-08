@@ -1,0 +1,60 @@
+entry,block,line,value,unit,weight_unit,has_subunit,object,notation,status,variants,note
+1,A,I 4,17,kkryn,True,False,silver (chest of silver and its vessels),word,ok,{},משקל ככרין שבעשרה
+2,A,I 6,100,ingots,False,False,gold ingots,sign,ok,{},עשתות זהב + 1+100
+3,A,I 8,900,kkryn,True,False,unspecified,word,ok,{},ככרין תשע מאת
+5,A,I 15,40,kkr,True,False,silver,sign,ok,{},ככר + 20+20 (ארבעין at I 14 is marked cancelled in the display)
+6,A,II 2,41,kkryn,True,False,unspecified,sign,uncertain,"{""Puech 2006"": 42, ""Lefkovits 2000"": 42, ""Milik 1962"": 42}",readings.json e6-sum: all three editions 42
+7,A,II 4,65,ingots,False,False,gold ingots,word,ok,{},עשתות זהב ששין וחמש
+8,A,II 6,70,kkryn,True,False,silver (with vessels),word,ok,{},כלין וכסף ככרין שבעין
+9,A,II 9,10,kkryn,True,False,unspecified (with vessels),word,ok,{},ככרין עסר
+10,A,II 11,6,count,False,False,silver jars/bars (כדין/בדין),word,uncertain,"{""Milik 1956-57 (prelim.)"": 600}",readings.json e10-six
+11,A,II 15,22,kkryn,True,False,unspecified,sign,ok,{},
+12,A,III 4,609,count,False,False,vessels of silver and gold,word,ok,{},כל שש מאות ותשעה
+12a,A,III 7,40,kk,True,False,silver,sign,ok,{},
+14,A,III 13,13,kk,True,False,unspecified,sign,uncertain,"{""Puech 2006"": 14, ""Milik 1962"": 13, ""Lefkovits 2000"": 13}",e14-sum
+15,A,IV 2,14,kk,True,False,unspecified,sign,uncertain,"{""Puech 2006"": ""[20+20+?]+14 (>=54)"", ""Lefkovits 2000"": ""different (value not in files)""}",e15-sum: part lost
+16,A,IV 5,55,kk,True,False,silver,sign,ok,{},
+17,A,IV 8,2,count,False,False,pots full of silver,word,ok,{},שני דודין מלאין כסף
+18,A,IV 10,200,kk,True,False,silver,word,ok,{},ככ מאתין
+19,A,IV 12,70,kk,True,False,silver,word,ok,{},ככ שבעין
+20,B,IV 14,12,kk,True,False,silver,sign,ok,{},
+21,B,V 4,7,kk,True,False,silver,sign,ok,{},
+23,B,V 11,23,kk,True,False,silver,sign,ok,{},
+24,B,V 14,32,kk,True,False,unspecified,sign,ok,{},
+25,B,VI 6,42,kk,True,False,unspecified,sign,ok,{},
+26,B,VI 10,21,kk,True,False,unspecified,sign,ok,{},
+27,B,VI 13,27,kk,True,False,unspecified,sign,ok,{},
+28,B,VII 2,22,kk,True,False,unspecified,sign,uncertain,"{""Puech 2006"": ""22+[40 or 60]"", ""Milik 1962"": 22, ""Lefkovits 2000"": ""none read""}",e28-sum
+29,B,VII 7,400,kkryn,True,False,unspecified,word,ok,{},ככרין ארבע מאות
+30,B,VII 10,6,count,False,False,silver jars/bars (כדין/בדין),word,ok,{},
+31,B,VII 13,22,kk,True,False,unspecified,sign,ok,{},
+32,B,VII 16,80,kk,True,False,unspecified (silver?),sign,uncertain,"{""Puech 2006"": 80, ""Milik 1962"": 60, ""Lefkovits 2000"": 60}",e32-sum
+32,B,VII 16,2,kkryn,True,False,gold,word,ok,{},זהב ככרין שתים
+33,B,VIII 3,10,count,False,False,vessels of offering and scrolls,sign,doubtful,"{""Puech 2006"": ""no numeral (וספרין אל תב/רקע)"", ""Milik 1962"": ""no numeral"", ""Wolters 1994"": ""no numeral""}",e33-lastphrase: figure matches none of the editions
+34,B,VIII 7,17,kk,True,False,silver and gold,sign,ok,{},
+35,B,VIII 9,7,kk,True,False,unspecified,sign,uncertain,"{""Puech 2006"": 7, ""Lefkovits 2000"": 7, ""Milik 1962"": 4}",e35-sum
+36,C,VIII 13,65,kk,True,False,unspecified,sign,uncertain,"{""Puech 2006"": 66, ""Milik 1960"": 66, ""Lefkovits 2000"": 67}",e36-sum: displayed 65 matches none
+37,C,VIII 16,70,kk,True,False,silver,sign,ok,{},
+38,C,IX 3,4,stater,False,False,staters (ככרין/בדין/כדין disputed),word,doubtful,{},e38-bars; line IX 2 corrupt
+39,C,IX 6,23.5,kk,True,True,unspecified,sign,uncertain,"{""Puech 2006"": 23.5, ""Milik 1960"": 23.5, ""Allegro"": 24, ""Lefkovits 2000"": ""23 + 1/2-sign (maybe 1 or 2)""}",e39-half
+40,C,IX 9,22,kk,True,False,unspecified,sign,ok,{},
+41,C,IX 10,1,mina,False,False,"silver, devoted",word,doubtful,"{""Puech 2006"": ""much silver (no figure)"", ""Lefkovits 2000"": ""silver of consecrated matter""}",e41-silver: מנה = a mina?
+42,C,IX 13,9,kk,True,False,unspecified,sign,ok,{},
+44,C,X 2,9,kk,True,False,unspecified,sign,ok,{},
+45,C,X 4,11,kk,True,False,unspecified,sign,ok,{},
+46,C,X 7,62,kkryn,True,False,silver,word,ok,{},ככרין ששין ושנין
+47,C,X 10,300,kkryn,True,False,gold,word,ok,{},ככרין שלש מאות זהב
+47,C,X 11,20,count,False,False,cups (כפורין),word,uncertain,"{""Puech 2006"": 20, ""Lefkovits 2000"": 10}",e47-cups
+48,C,X 14,80,kk,True,False,unspecified,sign,ok,{},
+49,C,X 16,17,kk,True,False,unspecified,sign,ok,{},
+51,C,XI 4,10,count,False,False,vessels of offering (עסרה ... עסרה),word,doubtful,{},line partly corrected; translation leaves it open
+53,C,XI 8,41,kk,True,False,unspecified,sign,ok,{},
+54,C,XI 10,14,count,False,False,vessels of offering,word,ok,{},אררבע עסרה
+55,C,XI 14,11,count,False,False,vessels of offering,word,doubtful,{},"לאחד מ עסורא, eleven(?)"
+56,C,XI 17,900,count,False,False,vessels (כלין הכל תשע מאות),word,ok,{},object counted or weighed unclear
+56,C,XII 1,5,kk,True,False,gold,sign,ok,{},זהב ככ 5
+56,C,XII 1,60,kkryn,True,False,unspecified,word,ok,{},ככרין ששין (Milik opens a new item here)
+56,C,XII 3,42,kkryn,True,False,unspecified,sign,ok,{},
+57,D,XII 5,61,kk,True,False,silver,sign,ok,{},
+58,D,XII 7,600,kkryn,True,False,"silver and gold vessels + silver, in all",word,ok,{},הכל ככרין שש מאות
+59,D,XII 9,71.33333333333333,kkryn,True,True,"unspecified, whole weight",sign,ok,{},"71 talents (signs) + מנין עסרין (20 minas, word)"

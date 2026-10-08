@@ -1,0 +1,282 @@
+[
+ {
+  "name": "Anathoth",
+  "core": "ענתות",
+  "expect": "^'?.?[AÁ]n[aáeé]ta\\b",
+  "expect_sk": "3nt",
+  "arabic": "'Anata"
+ },
+ {
+  "name": "Michmash",
+  "core": "מכמש",
+  "expect": "Mukhm",
+  "expect_sk": "mXms",
+  "arabic": "Mukhmas"
+ },
+ {
+  "name": "Geba",
+  "core": "גבע",
+  "expect": "^Jeba",
+  "expect_sk": "jb3",
+  "arabic": "Jeba'"
+ },
+ {
+  "name": "Gibeon (truncated in Arabic)",
+  "core": "גבעון",
+  "expect": "^el Jib\\b|^El J[iíî]b",
+  "expect_sk": "jb",
+  "arabic": "el Jib"
+ },
+ {
+  "name": "Beeroth",
+  "core": "בארות",
+  "expect": "^El B[iíî]reh",
+  "expect_sk": "brE",
+  "arabic": "el Bireh"
+ },
+ {
+  "name": "Tekoa",
+  "core": "תקוע",
+  "expect": "Tek[uüú]",
+  "expect_sk": "tk3",
+  "arabic": "Khurbet Teku'a"
+ },
+ {
+  "name": "Ataroth",
+  "core": "עטרות",
+  "expect": "'At[aá]ra",
+  "expect_sk": "3tr",
+  "arabic": "'Atara"
+ },
+ {
+  "name": "Bethel",
+  "core": "ביתאל",
+  "expect": "^Beit[iíî]n",
+  "expect_sk": "btn",
+  "arabic": "Beitin"
+ },
+ {
+  "name": "Azmaveth",
+  "core": "עזמות",
+  "expect": "^Hizm",
+  "expect_sk": "hzmE",
+  "arabic": "Hizmeh"
+ },
+ {
+  "name": "Ai (translation 'the mound', no sound survival: expected failure)",
+  "core": "עי",
+  "expect": "^Et Tell$",
+  "expect_sk": "tl",
+  "arabic": "et Tell"
+ },
+ {
+  "name": "Beth-Hoglah",
+  "core": "חגלה",
+  "expect": "Hajl",
+  "expect_sk": "hjlE",
+  "arabic": "'Ain Hajlah"
+ },
+ {
+  "name": "Netophah/Naṭof spring",
+  "core": "נטף",
+  "expect": "N[aá]t[uüú]f",
+  "expect_sk": "ntf",
+  "arabic": "'Ain en Natuf"
+ },
+ {
+  "name": "Doq/Dok",
+  "core": "דוק",
+  "expect": "D[uüúi]k\\b",
+  "expect_sk": "dk",
+  "arabic": "'Ain ed Duk"
+ },
+ {
+  "name": "Bethlehem",
+  "core": "לחם",
+  "expect": "Beit Lahm",
+  "expect_sk": "lhm",
+  "arabic": "Beit Lahm"
+ },
+ {
+  "name": "Beth-zur",
+  "core": "צור",
+  "expect": "^Beit S[uüú]r",
+  "expect_sk": "sr",
+  "arabic": "Beit Sur"
+ },
+ {
+  "name": "Halhul",
+  "core": "חלחול",
+  "expect": "^Halh",
+  "expect_sk": "hlhl",
+  "arabic": "Halhul"
+ },
+ {
+  "name": "Etam",
+  "core": "עיטם",
+  "expect": "'At[aá]n",
+  "expect_sk": "3tn",
+  "arabic": "'Ain 'Atan"
+ },
+ {
+  "name": "Ziph",
+  "core": "זיף",
+  "expect": "Z[iíî]f\\b",
+  "expect_sk": "zf",
+  "arabic": "Tell ez Zif"
+ },
+ {
+  "name": "Maon",
+  "core": "מעון",
+  "expect": "Ma'?[iíî]n",
+  "expect_sk": "m3n",
+  "arabic": "Tell Ma'in"
+ },
+ {
+  "name": "Carmel (Judah)",
+  "core": "כרמל",
+  "expect": "Kurmul|K[uü]rmul",
+  "expect_sk": "krml",
+  "arabic": "Kurmul"
+ },
+ {
+  "name": "Juttah",
+  "core": "יוטה",
+  "expect": "^Yutt",
+  "expect_sk": "yt",
+  "arabic": "Yutta"
+ },
+ {
+  "name": "Eshtemoa",
+  "core": "אשתמע",
+  "expect": "Sem[uüú]",
+  "expect_sk": "sm3",
+  "arabic": "es Semu'a"
+ },
+ {
+  "name": "Anab",
+  "core": "ענב",
+  "expect": "'An[aá]b\\b",
+  "expect_sk": "3nb",
+  "arabic": "'Anab"
+ },
+ {
+  "name": "Gedor",
+  "core": "גדור",
+  "expect": "Jed[uüú]r",
+  "expect_sk": "jdr",
+  "arabic": "Khurbet Jedur"
+ },
+ {
+  "name": "Keilah",
+  "core": "קעילה",
+  "expect": "K[iíî]la\\b",
+  "expect_sk": "kl",
+  "arabic": "Khurbet Kila"
+ },
+ {
+  "name": "Nezib",
+  "core": "נציב",
+  "expect": "N[uü]s[iíî]b",
+  "expect_sk": "nsb",
+  "arabic": "Beit Nusib"
+ },
+ {
+  "name": "Shiloh",
+  "core": "שילה",
+  "expect": "Seil[uüú]n",
+  "expect_sk": "sln",
+  "arabic": "Seilun"
+ },
+ {
+  "name": "Lebonah",
+  "core": "לבונה",
+  "expect": "Lubb[aá]n",
+  "expect_sk": "lbn",
+  "arabic": "el Lubban"
+ },
+ {
+  "name": "Chephirah",
+  "core": "כפירה",
+  "expect": "Kef[iíî]reh",
+  "expect_sk": "kfrE",
+  "arabic": "Kefireh"
+ },
+ {
+  "name": "Rimmon",
+  "core": "רמון",
+  "expect": "Ramm[uüú]n",
+  "expect_sk": "rmn",
+  "arabic": "Rummon"
+ },
+ {
+  "name": "Beth-Horon",
+  "core": "חורון",
+  "expect": "^Beit '?[UÚ]r",
+  "expect_sk": "3r",
+  "arabic": "Beit 'Ur el Foka"
+ },
+ {
+  "name": "Jeshanah",
+  "core": "ישנה",
+  "expect": "Is[aá]neh",
+  "expect_sk": "snE",
+  "arabic": "Burj el Isaneh"
+ },
+ {
+  "name": "Kozeba (Judah)",
+  "core": "כוזבא",
+  "expect": "Kueiz|Kuweiz",
+  "expect_sk": "kzb",
+  "arabic": "Khurbet Kueiziba"
+ },
+ {
+  "name": "Adullam (popular etymology)",
+  "core": "עדלם",
+  "expect": "'A[iíî]d el M",
+  "expect_sk": "3dm",
+  "arabic": "'Aid el Ma"
+ },
+ {
+  "name": "Zanoah",
+  "core": "זנוח",
+  "expect": "Z[aá]n[uüú]",
+  "expect_sk": "zn3",
+  "arabic": "Zanu'a"
+ },
+ {
+  "name": "Socoh",
+  "core": "שוכה",
+  "expect": "Shuweik",
+  "expect_sk": "SwkE",
+  "arabic": "Khurbet Shuweikeh"
+ },
+ {
+  "name": "Jericho",
+  "core": "ירחו",
+  "expect": "^Er R[iíî]ha|^Er[iíî]ha",
+  "expect_sk": "rh",
+  "arabic": "Eriha"
+ },
+ {
+  "name": "Siloam",
+  "core": "שלוח",
+  "expect": "Silw[aá]n",
+  "expect_sk": "slwn",
+  "arabic": "Silwan"
+ },
+ {
+  "name": "Ophrah (replaced by et-Taiyibeh: expected failure)",
+  "core": "עפרה",
+  "expect": "^Et Taiyibeh",
+  "expect_sk": "tybE",
+  "arabic": "et Taiyibeh"
+ },
+ {
+  "name": "Kidron (no survival)",
+  "core": "קדרון",
+  "expect": "Kidr|Kedr",
+  "expect_sk": "kdrn",
+  "arabic": "Wady en Nar"
+ }
+]

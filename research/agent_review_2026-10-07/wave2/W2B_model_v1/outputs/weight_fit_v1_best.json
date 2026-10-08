@@ -1,0 +1,50 @@
+{
+ "K1_sinkhorn|b0_none": {
+  "w_A": 0.0,
+  "w_L": 0.95,
+  "logml": 4.668,
+  "logml_at_0": -1.795
+ },
+ "K1_sinkhorn|b2_doc_likely": {
+  "w_A": 0.0,
+  "w_L": 0.8,
+  "logml": -0.714,
+  "logml_at_0": -1.789
+ },
+ "K2_fixed|b0_none": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 9.484,
+  "logml_at_0": -1.795
+ },
+ "K2_fixed|b2_doc_likely": {
+  "w_A": 0.8,
+  "w_L": 0.8,
+  "logml": 3.688,
+  "logml_at_0": -1.789
+ },
+ "K3_sinkhorn_grid|b0_none": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 50.603,
+  "logml_at_0": 0.84
+ },
+ "K3_sinkhorn_grid|b2_doc_likely": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 22.611,
+  "logml_at_0": -0.504
+ },
+ "K4_fixed_grid|b0_none": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 49.239,
+  "logml_at_0": 0.84
+ },
+ "K4_fixed_grid|b2_doc_likely": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 25.743,
+  "logml_at_0": -0.504
+ }
+}

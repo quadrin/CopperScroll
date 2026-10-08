@@ -1,0 +1,229 @@
+T06 inputs {'kernel': 'K1_sinkhorn', 'w_A': 0.4, 'w_L': 0.995, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.099, 'e60_R_DESERT': np.float64(0.016), 'e60_R_JER': np.float64(0.074), 'e60_R_JERICHO': np.float64(0.162), 'e60_R_NORTH': np.float64(0.711), 'e60_R_QUMRAN': np.float64(0.017), 'e60_R_SOUTH': np.float64(0.011), 'e60_R_WEST': np.float64(0.009)}
+T06 inputs {'kernel': 'K1_sinkhorn', 'w_A': 0.4, 'w_L': 0.995, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.047, 'e60_R_DESERT': np.float64(0.045), 'e60_R_JER': np.float64(0.158), 'e60_R_JERICHO': np.float64(0.244), 'e60_R_NORTH': np.float64(0.446), 'e60_R_QUMRAN': np.float64(0.081), 'e60_R_SOUTH': np.float64(0.016), 'e60_R_WEST': np.float64(0.01)}
+T06 inputs {'kernel': 'K1_sinkhorn', 'w_A': 0.0, 'w_L': 0.995, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.099, 'e60_R_DESERT': np.float64(0.016), 'e60_R_JER': np.float64(0.074), 'e60_R_JERICHO': np.float64(0.162), 'e60_R_NORTH': np.float64(0.711), 'e60_R_QUMRAN': np.float64(0.017), 'e60_R_SOUTH': np.float64(0.011), 'e60_R_WEST': np.float64(0.009)}
+T06 inputs {'kernel': 'K1_sinkhorn', 'w_A': 0.0, 'w_L': 0.995, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.041, 'e60_R_DESERT': np.float64(0.034), 'e60_R_JER': np.float64(0.1), 'e60_R_JERICHO': np.float64(0.207), 'e60_R_NORTH': np.float64(0.573), 'e60_R_QUMRAN': np.float64(0.065), 'e60_R_SOUTH': np.float64(0.012), 'e60_R_WEST': np.float64(0.008)}
+T06 inputs {'kernel': 'K1_sinkhorn', 'w_A': 0.0, 'w_L': 0.8, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.15, 'e60_R_DESERT': np.float64(0.026), 'e60_R_JER': np.float64(0.126), 'e60_R_JERICHO': np.float64(0.241), 'e60_R_NORTH': np.float64(0.552), 'e60_R_QUMRAN': np.float64(0.026), 'e60_R_SOUTH': np.float64(0.017), 'e60_R_WEST': np.float64(0.011)}
+T06 inputs {'kernel': 'K1_sinkhorn', 'w_A': 0.0, 'w_L': 0.8, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.05, 'e60_R_DESERT': np.float64(0.041), 'e60_R_JER': np.float64(0.153), 'e60_R_JERICHO': np.float64(0.242), 'e60_R_NORTH': np.float64(0.465), 'e60_R_QUMRAN': np.float64(0.074), 'e60_R_SOUTH': np.float64(0.016), 'e60_R_WEST': np.float64(0.009)}
+T06 inputs {'kernel': 'K2_fixed', 'w_A': 0.4, 'w_L': 0.995, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.279, 'e60_R_DESERT': np.float64(0.049), 'e60_R_JER': np.float64(0.319), 'e60_R_JERICHO': np.float64(0.434), 'e60_R_NORTH': np.float64(0.104), 'e60_R_QUMRAN': np.float64(0.048), 'e60_R_SOUTH': np.float64(0.031), 'e60_R_WEST': np.float64(0.015)}
+T06 inputs {'kernel': 'K2_fixed', 'w_A': 0.4, 'w_L': 0.995, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.054, 'e60_R_DESERT': np.float64(0.051), 'e60_R_JER': np.float64(0.547), 'e60_R_JERICHO': np.float64(0.248), 'e60_R_NORTH': np.float64(0.054), 'e60_R_QUMRAN': np.float64(0.066), 'e60_R_SOUTH': np.float64(0.023), 'e60_R_WEST': np.float64(0.011)}
+T06 inputs {'kernel': 'K2_fixed', 'w_A': 0.0, 'w_L': 0.995, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.279, 'e60_R_DESERT': np.float64(0.049), 'e60_R_JER': np.float64(0.319), 'e60_R_JERICHO': np.float64(0.434), 'e60_R_NORTH': np.float64(0.104), 'e60_R_QUMRAN': np.float64(0.048), 'e60_R_SOUTH': np.float64(0.031), 'e60_R_WEST': np.float64(0.015)}
+T06 inputs {'kernel': 'K2_fixed', 'w_A': 0.0, 'w_L': 0.995, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.083, 'e60_R_DESERT': np.float64(0.058), 'e60_R_JER': np.float64(0.32), 'e60_R_JERICHO': np.float64(0.365), 'e60_R_NORTH': np.float64(0.131), 'e60_R_QUMRAN': np.float64(0.09), 'e60_R_SOUTH': np.float64(0.024), 'e60_R_WEST': np.float64(0.012)}
+T06 inputs {'kernel': 'K2_fixed', 'w_A': 0.0, 'w_L': 0.8, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.286, 'e60_R_DESERT': np.float64(0.05), 'e60_R_JER': np.float64(0.306), 'e60_R_JERICHO': np.float64(0.446), 'e60_R_NORTH': np.float64(0.1), 'e60_R_QUMRAN': np.float64(0.05), 'e60_R_SOUTH': np.float64(0.032), 'e60_R_WEST': np.float64(0.016)}
+T06 inputs {'kernel': 'K2_fixed', 'w_A': 0.0, 'w_L': 0.8, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.083, 'e60_R_DESERT': np.float64(0.057), 'e60_R_JER': np.float64(0.333), 'e60_R_JERICHO': np.float64(0.364), 'e60_R_NORTH': np.float64(0.123), 'e60_R_QUMRAN': np.float64(0.085), 'e60_R_SOUTH': np.float64(0.025), 'e60_R_WEST': np.float64(0.013)}
+T06 inputs {'kernel': 'K3_sinkhorn_grid', 'w_A': 0.4, 'w_L': 0.995, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.153, 'e60_R_DESERT': np.float64(0.004), 'e60_R_JER': np.float64(0.019), 'e60_R_JERICHO': np.float64(0.168), 'e60_R_NORTH': np.float64(0.11), 'e60_R_QUMRAN': np.float64(0.004), 'e60_R_SOUTH': np.float64(0.002), 'e60_R_WEST': np.float64(0.002), 'e60_R_BG': np.float64(0.692)}
+T06 inputs {'kernel': 'K3_sinkhorn_grid', 'w_A': 0.4, 'w_L': 0.995, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.045, 'e60_R_DESERT': np.float64(0.019), 'e60_R_JER': np.float64(0.377), 'e60_R_JERICHO': np.float64(0.133), 'e60_R_NORTH': np.float64(0.046), 'e60_R_QUMRAN': np.float64(0.025), 'e60_R_SOUTH': np.float64(0.006), 'e60_R_WEST': np.float64(0.003), 'e60_R_BG': np.float64(0.391)}
+T06 inputs {'kernel': 'K3_sinkhorn_grid', 'w_A': 0.0, 'w_L': 0.995, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.153, 'e60_R_DESERT': np.float64(0.004), 'e60_R_JER': np.float64(0.019), 'e60_R_JERICHO': np.float64(0.168), 'e60_R_NORTH': np.float64(0.11), 'e60_R_QUMRAN': np.float64(0.004), 'e60_R_SOUTH': np.float64(0.002), 'e60_R_WEST': np.float64(0.002), 'e60_R_BG': np.float64(0.692)}
+T06 inputs {'kernel': 'K3_sinkhorn_grid', 'w_A': 0.0, 'w_L': 0.995, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.09, 'e60_R_DESERT': np.float64(0.023), 'e60_R_JER': np.float64(0.107), 'e60_R_JERICHO': np.float64(0.254), 'e60_R_NORTH': np.float64(0.136), 'e60_R_QUMRAN': np.float64(0.046), 'e60_R_SOUTH': np.float64(0.006), 'e60_R_WEST': np.float64(0.004), 'e60_R_BG': np.float64(0.424)}
+T06 inputs {'kernel': 'K3_sinkhorn_grid', 'w_A': 0.0, 'w_L': 0.8, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.187, 'e60_R_DESERT': np.float64(0.005), 'e60_R_JER': np.float64(0.025), 'e60_R_JERICHO': np.float64(0.205), 'e60_R_NORTH': np.float64(0.087), 'e60_R_QUMRAN': np.float64(0.005), 'e60_R_SOUTH': np.float64(0.003), 'e60_R_WEST': np.float64(0.002), 'e60_R_BG': np.float64(0.668)}
+T06 inputs {'kernel': 'K3_sinkhorn_grid', 'w_A': 0.0, 'w_L': 0.8, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.096, 'e60_R_DESERT': np.float64(0.027), 'e60_R_JER': np.float64(0.134), 'e60_R_JERICHO': np.float64(0.269), 'e60_R_NORTH': np.float64(0.116), 'e60_R_QUMRAN': np.float64(0.05), 'e60_R_SOUTH': np.float64(0.008), 'e60_R_WEST': np.float64(0.004), 'e60_R_BG': np.float64(0.393)}
+T06 inputs {'kernel': 'K4_fixed_grid', 'w_A': 0.4, 'w_L': 0.995, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.282, 'e60_R_DESERT': np.float64(0.008), 'e60_R_JER': np.float64(0.047), 'e60_R_JERICHO': np.float64(0.308), 'e60_R_NORTH': np.float64(0.048), 'e60_R_QUMRAN': np.float64(0.008), 'e60_R_SOUTH': np.float64(0.005), 'e60_R_WEST': np.float64(0.003), 'e60_R_BG': np.float64(0.574)}
+T06 inputs {'kernel': 'K4_fixed_grid', 'w_A': 0.4, 'w_L': 0.995, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.016, 'e60_R_DESERT': np.float64(0.015), 'e60_R_JER': np.float64(0.678), 'e60_R_JERICHO': np.float64(0.055), 'e60_R_NORTH': np.float64(0.011), 'e60_R_QUMRAN': np.float64(0.013), 'e60_R_SOUTH': np.float64(0.007), 'e60_R_WEST': np.float64(0.003), 'e60_R_BG': np.float64(0.22)}
+T06 inputs {'kernel': 'K4_fixed_grid', 'w_A': 0.0, 'w_L': 0.995, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.282, 'e60_R_DESERT': np.float64(0.008), 'e60_R_JER': np.float64(0.047), 'e60_R_JERICHO': np.float64(0.308), 'e60_R_NORTH': np.float64(0.048), 'e60_R_QUMRAN': np.float64(0.008), 'e60_R_SOUTH': np.float64(0.005), 'e60_R_WEST': np.float64(0.003), 'e60_R_BG': np.float64(0.574)}
+T06 inputs {'kernel': 'K4_fixed_grid', 'w_A': 0.0, 'w_L': 0.995, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.113, 'e60_R_DESERT': np.float64(0.031), 'e60_R_JER': np.float64(0.203), 'e60_R_JERICHO': np.float64(0.306), 'e60_R_NORTH': np.float64(0.07), 'e60_R_QUMRAN': np.float64(0.055), 'e60_R_SOUTH': np.float64(0.01), 'e60_R_WEST': np.float64(0.004), 'e60_R_BG': np.float64(0.32)}
+T06 inputs {'kernel': 'K4_fixed_grid', 'w_A': 0.0, 'w_L': 0.8, 'rho': 0.0, 'e60_P_tell_es_sultan': 0.285, 'e60_R_DESERT': np.float64(0.008), 'e60_R_JER': np.float64(0.047), 'e60_R_JERICHO': np.float64(0.312), 'e60_R_NORTH': np.float64(0.04), 'e60_R_QUMRAN': np.float64(0.008), 'e60_R_SOUTH': np.float64(0.005), 'e60_R_WEST': np.float64(0.003), 'e60_R_BG': np.float64(0.577)}
+T06 inputs {'kernel': 'K4_fixed_grid', 'w_A': 0.0, 'w_L': 0.8, 'rho': 0.9, 'e60_P_tell_es_sultan': 0.113, 'e60_R_DESERT': np.float64(0.031), 'e60_R_JER': np.float64(0.207), 'e60_R_JERICHO': np.float64(0.306), 'e60_R_NORTH': np.float64(0.065), 'e60_R_QUMRAN': np.float64(0.054), 'e60_R_SOUTH': np.float64(0.01), 'e60_R_WEST': np.float64(0.005), 'e60_R_BG': np.float64(0.322)}
+STEP density took 21 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.0, 'lam': 2.0, 'logml': -1.795} 0.6 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.5, 'lam': 2.0, 'logml': 2.205} 0.6 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.8, 'lam': 2.0, 'logml': 4.495} 0.3 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.95, 'lam': 2.0, 'logml': 4.668} 0.5 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.995, 'lam': 2.0, 'logml': 4.185} 0.5 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.0, 'lam': 2.0, 'logml': -1.412} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.5, 'lam': 2.0, 'logml': 0.508} 0.2 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.8, 'lam': 2.0, 'logml': 2.37} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.95, 'lam': 2.0, 'logml': 2.278} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.995, 'lam': 2.0, 'logml': 1.71} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.0, 'lam': 2.0, 'logml': -7.27} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.5, 'lam': 2.0, 'logml': -4.809} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.8, 'lam': 2.0, 'logml': -2.837} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.95, 'lam': 2.0, 'logml': -3.03} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.995, 'lam': 2.0, 'logml': -3.68} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.0, 'lam': 2.0, 'logml': -1.789} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.5, 'lam': 2.0, 'logml': -0.84} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.8, 'lam': 2.0, 'logml': -0.714} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.95, 'lam': 2.0, 'logml': -1.651} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.995, 'lam': 2.0, 'logml': -2.479} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.0, 'lam': 2.0, 'logml': -1.539} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.5, 'lam': 2.0, 'logml': -2.327} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.8, 'lam': 2.0, 'logml': -2.558} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.95, 'lam': 2.0, 'logml': -3.7} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.995, 'lam': 2.0, 'logml': -4.585} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.0, 'lam': 2.0, 'logml': -6.727} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.5, 'lam': 2.0, 'logml': -6.421} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.8, 'lam': 2.0, 'logml': -6.569} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.95, 'lam': 2.0, 'logml': -7.697} 0.1 s
+{'kernel': 'K1_sinkhorn', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.995, 'lam': 2.0, 'logml': -8.58} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.0, 'lam': 2.0, 'logml': -1.795} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.5, 'lam': 2.0, 'logml': 2.855} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.8, 'lam': 2.0, 'logml': 4.899} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.95, 'lam': 2.0, 'logml': 5.62} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.995, 'lam': 2.0, 'logml': 5.778} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.0, 'lam': 2.0, 'logml': 0.357} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.5, 'lam': 2.0, 'logml': 4.852} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.8, 'lam': 2.0, 'logml': 6.773} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.95, 'lam': 2.0, 'logml': 7.43} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.995, 'lam': 2.0, 'logml': 7.57} 0.2 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.0, 'lam': 2.0, 'logml': 2.676} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.5, 'lam': 2.0, 'logml': 6.998} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.8, 'lam': 2.0, 'logml': 8.781} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.95, 'lam': 2.0, 'logml': 9.365} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.995, 'lam': 2.0, 'logml': 9.484} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.0, 'lam': 2.0, 'logml': -1.789} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.5, 'lam': 2.0, 'logml': -1.115} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.8, 'lam': 2.0, 'logml': -0.899} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.95, 'lam': 2.0, 'logml': -0.91} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.995, 'lam': 2.0, 'logml': -0.942} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.0, 'lam': 2.0, 'logml': 0.403} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.5, 'lam': 2.0, 'logml': 1.068} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.8, 'lam': 2.0, 'logml': 1.275} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.95, 'lam': 2.0, 'logml': 1.258} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.995, 'lam': 2.0, 'logml': 1.225} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.0, 'lam': 2.0, 'logml': 2.909} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.5, 'lam': 2.0, 'logml': 3.521} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.8, 'lam': 2.0, 'logml': 3.688} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.95, 'lam': 2.0, 'logml': 3.651} 0.1 s
+{'kernel': 'K2_fixed', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.995, 'lam': 2.0, 'logml': 3.613} 0.1 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.0, 'lam': 2.0, 'logml': 0.84} 1.3 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.5, 'lam': 2.0, 'logml': 22.806} 1.3 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.8, 'lam': 2.0, 'logml': 31.179} 1.2 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.95, 'lam': 2.0, 'logml': 34.581} 1.5 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.995, 'lam': 2.0, 'logml': 35.503} 1.5 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.0, 'lam': 2.0, 'logml': 10.793} 1.4 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.5, 'lam': 2.0, 'logml': 32.394} 1.3 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.8, 'lam': 2.0, 'logml': 40.613} 1.3 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.95, 'lam': 2.0, 'logml': 43.945} 1.3 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.995, 'lam': 2.0, 'logml': 44.847} 1.4 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.0, 'lam': 2.0, 'logml': 16.826} 1.6 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.5, 'lam': 2.0, 'logml': 38.234} 2.2 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.8, 'lam': 2.0, 'logml': 46.399} 1.5 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.95, 'lam': 2.0, 'logml': 49.708} 1.3 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.995, 'lam': 2.0, 'logml': 50.603} 1.2 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.0, 'lam': 2.0, 'logml': -0.504} 1.4 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.5, 'lam': 2.0, 'logml': 3.454} 1.3 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.8, 'lam': 2.0, 'logml': 5.504} 1.2 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.95, 'lam': 2.0, 'logml': 6.582} 1.2 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.995, 'lam': 2.0, 'logml': 6.909} 1.2 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.0, 'lam': 2.0, 'logml': 9.156} 1.5 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.5, 'lam': 2.0, 'logml': 13.303} 1.3 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.8, 'lam': 2.0, 'logml': 15.347} 1.3 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.95, 'lam': 2.0, 'logml': 16.397} 1.4 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.995, 'lam': 2.0, 'logml': 16.711} 1.6 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.0, 'lam': 2.0, 'logml': 15.347} 1.5 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.5, 'lam': 2.0, 'logml': 19.285} 1.5 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.8, 'lam': 2.0, 'logml': 21.273} 1.9 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.95, 'lam': 2.0, 'logml': 22.302} 1.8 s
+{'kernel': 'K3_sinkhorn_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.995, 'lam': 2.0, 'logml': 22.611} 3.0 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.0, 'lam': 2.0, 'logml': 0.84} 3.5 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.5, 'lam': 2.0, 'logml': 21.838} 3.6 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.8, 'lam': 2.0, 'logml': 28.976} 3.4 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.95, 'lam': 2.0, 'logml': 31.808} 3.6 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.0, 'w_L': 0.995, 'lam': 2.0, 'logml': 32.575} 1.7 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.0, 'lam': 2.0, 'logml': 12.895} 1.4 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.5, 'lam': 2.0, 'logml': 33.309} 1.3 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.8, 'lam': 2.0, 'logml': 40.267} 1.6 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.95, 'lam': 2.0, 'logml': 43.038} 1.8 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.4, 'w_L': 0.995, 'lam': 2.0, 'logml': 43.791} 3.3 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.0, 'lam': 2.0, 'logml': 18.678} 2.6 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.5, 'lam': 2.0, 'logml': 38.823} 1.5 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.8, 'lam': 2.0, 'logml': 45.734} 1.4 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.95, 'lam': 2.0, 'logml': 48.49} 3.0 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b0_none', 'w_A': 0.8, 'w_L': 0.995, 'lam': 2.0, 'logml': 49.239} 3.2 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.0, 'lam': 2.0, 'logml': -0.504} 3.4 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.5, 'lam': 2.0, 'logml': 4.272} 2.9 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.8, 'lam': 2.0, 'logml': 6.513} 2.5 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.95, 'lam': 2.0, 'logml': 7.551} 1.8 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.0, 'w_L': 0.995, 'lam': 2.0, 'logml': 7.849} 1.4 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.0, 'lam': 2.0, 'logml': 11.543} 2.0 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.5, 'lam': 2.0, 'logml': 16.513} 1.9 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.8, 'lam': 2.0, 'logml': 18.776} 2.1 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.95, 'lam': 2.0, 'logml': 19.817} 1.5 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.4, 'w_L': 0.995, 'lam': 2.0, 'logml': 20.115} 1.3 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.0, 'lam': 2.0, 'logml': 17.478} 1.6 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.5, 'lam': 2.0, 'logml': 22.203} 1.5 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.8, 'lam': 2.0, 'logml': 24.422} 1.4 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.95, 'lam': 2.0, 'logml': 25.449} 1.6 s
+{'kernel': 'K4_fixed_grid', 'excl': 'b2_doc_likely', 'w_A': 0.8, 'w_L': 0.995, 'lam': 2.0, 'logml': 25.743} 1.4 s
+{
+ "K1_sinkhorn|b0_none": {
+  "w_A": 0.0,
+  "w_L": 0.95,
+  "logml": 4.668,
+  "logml_at_0": -1.795
+ },
+ "K1_sinkhorn|b2_doc_likely": {
+  "w_A": 0.0,
+  "w_L": 0.8,
+  "logml": -0.714,
+  "logml_at_0": -1.789
+ },
+ "K2_fixed|b0_none": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 9.484,
+  "logml_at_0": -1.795
+ },
+ "K2_fixed|b2_doc_likely": {
+  "w_A": 0.8,
+  "w_L": 0.8,
+  "logml": 3.688,
+  "logml_at_0": -1.789
+ },
+ "K3_sinkhorn_grid|b0_none": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 50.603,
+  "logml_at_0": 0.84
+ },
+ "K3_sinkhorn_grid|b2_doc_likely": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 22.611,
+  "logml_at_0": -0.504
+ },
+ "K4_fixed_grid|b0_none": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 49.239,
+  "logml_at_0": 0.84
+ },
+ "K4_fixed_grid|b2_doc_likely": {
+  "w_A": 0.8,
+  "w_L": 0.995,
+  "logml": 25.743,
+  "logml_at_0": -0.504
+ }
+}
+STEP fit took 116 s
+K1_sinkhorn b0_none tied done 2 s
+K1_sinkhorn b0_none untied done 2 s
+K1_sinkhorn b2_doc_likely tied done 4 s
+K1_sinkhorn b2_doc_likely untied done 4 s
+K1_sinkhorn b3_b2_plus_kohlit_od tied done 6 s
+K1_sinkhorn b3_b2_plus_kohlit_od untied done 6 s
+K2_fixed b0_none tied done 8 s
+K2_fixed b0_none untied done 8 s
+K2_fixed b2_doc_likely tied done 9 s
+K2_fixed b2_doc_likely untied done 9 s
+K2_fixed b3_b2_plus_kohlit_od tied done 10 s
+K2_fixed b3_b2_plus_kohlit_od untied done 10 s
+K4_fixed_grid b0_none tied done 43 s
+K4_fixed_grid b0_none untied done 51 s
+K4_fixed_grid b2_doc_likely tied done 89 s
+K4_fixed_grid b2_doc_likely untied done 96 s
+K4_fixed_grid b3_b2_plus_kohlit_od tied done 150 s
+K4_fixed_grid b3_b2_plus_kohlit_od untied done 164 s
+STEP post took 164 s
+K1_sinkhorn equal done
+K1_sinkhorn v1 done
+K2_fixed equal done
+K2_fixed v1 done
+K4_fixed_grid equal done
+K4_fixed_grid v1 done
+Traceback (most recent call last):
+  File "agent_review/wave2/W2B_model_v1/scripts/analysis_v1.py", line 291, in <module>
+    globals()[s](a)
+    ~~~~~~~~~~~~^^^
+  File "agent_review/wave2/W2B_model_v1/scripts/analysis_v1.py", line 275, in jsens
+    row['dlog10_vs_tell'] = round(math.log10(row['hf'] / ref['hf']), 3)
+                                             ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'float' and 'str'
