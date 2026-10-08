@@ -356,3 +356,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .folio { padding: 18px; }
   .folio h2 { font-size: 32px; }
 }
+
+/* Three primary views need two header rows on narrower tablets. */
+@media (max-width:850px) { .app-header { display: grid; grid-template-columns: 1fr auto; gap: 9px; padding: 9px 12px 8px; } .app-header .header-actions { grid-column: 2; grid-row: 1; } .app-header .primary-nav { grid-column: 1 / -1; grid-row: 2; width: 100%; } .app-header .primary-nav button { flex: 1; font-size: 13px; padding: 8px 5px; } }

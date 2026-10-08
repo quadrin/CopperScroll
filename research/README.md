@@ -18,6 +18,8 @@ The [entry concordance](../tables/entry_concordance.csv) connects numbering acro
 
 ## Site and feature studies
 
+- [Feature workbench](feature_workbench/README.md), 8 October 2026: reusable relationship, inventory, historical-state, coverage and decision tools with reviewed data and an atlas interface. These exploratory pilots preserve unknown phases/datums and add no identification or research-counter increment.
+
 - Parallel research, 1 October 2026: [entry 25: Twin Cave versus IV/11](sites/entry25_twin_cave_followup_2026-10-01.md), [entry 32: Schneider and aqueduct routes](sources/entry32_parallel_followup_2026-10-01.md), [entries 20–23: original Qumran reports](sites/qumran_parallel_followup_2026-10-01.md), and [entry 40: survey and tomb drainage](sources/entry40_parallel_followup_2026-10-01.md). The [Horite tomb follow-up](sources/entry40_horite_followup_2026-10-01.md) checks the original 1960 dimensions and entrance inference. The [Gerizim locus 5178 check](sites/gerizim_locus5178_followup_2026-10-01.md) corrects the earlier three-coin-group inference. Exact access limits and the next feature-level tests are recorded in each note.
 - [Current site assessment](sites/site_identification_review.md) and [feature investigation](sites/feature_investigation.md): the main shortlist, confidence by evidence layer, and specific tests.
 - [Entry 17: Achor caves](sites/entry17_cave_pair_review.md), [entry 21: Qumran aqueduct](sites/entry21_feature_comparison.md), [entry 40: Beth-Horon](sites/entry40_bethhoron_review.md), and [entry 59: Bezek/Ibziq](sites/entry59_bezek_review.md).

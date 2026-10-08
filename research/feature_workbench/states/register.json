@@ -1,0 +1,1309 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "states-sion-plan",
+      "title": "IV/17 published survey arrangement",
+      "citation": "Ofer Sion, ʿAtiqot 41 part 1 (2002), pp. 61–64; Plan 5 p. 63; Fig. 12 p. 61",
+      "repo_path": "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Abu Saraj survey/excavation programme; IV/17 permit L-656",
+      "url": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/"
+    },
+    {
+      "id": "states-iv17-repeat",
+      "title": "Project repeat annotations of IV/17 aperture chords",
+      "citation": "Sion Plan 5 p. 63, Hebrew issue PDF 21; project repeat results 2 October 2026, corrected north/south identities",
+      "repo_path": "research/measurements/cycle2/iv17_repeat_results.json",
+      "inspection": "derived",
+      "original_campaign": "Abu Saraj survey/excavation programme; IV/17 permit L-656"
+    },
+    {
+      "id": "states-sion-context",
+      "title": "IV/17 survey finds, excavated baskets and architecture contact audit",
+      "citation": "Sion 2002 pp. 63–64 and 81–82; Table 1 IV/17 row, note 11 and starred editorial archive pointer",
+      "repo_path": "research/measurements/cycle3/iv17_phase.json",
+      "inspection": "already_inspected",
+      "original_campaign": "Abu Saraj survey/excavation programme; IV/17 permit L-656"
+    },
+    {
+      "id": "states-iv17-fieldfile",
+      "title": "IV/17 field file dependency",
+      "citation": "Michael Dadon, permit L-656; basket records 656.17/656.20, northern threshold section/levels, southern wall foundation contacts",
+      "repo_path": "research/measurements/cycle3/iv17_phase.md",
+      "inspection": "not_inspected",
+      "original_campaign": "Abu Saraj survey/excavation programme; IV/17 permit L-656"
+    },
+    {
+      "id": "states-kenyon-II",
+      "title": "Kenyon D9, N.S.1 and north-side coverage",
+      "citation": "Excavations at Jericho II (1965), pp. 169, 276–277, Fig. 137.2, pp. 539–544; introduction p. 2",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon 1952–1958 expedition/publication lineage",
+      "url": "https://archive.org/details/excavationsatjer0002keny"
+    },
+    {
+      "id": "states-kenyon-III",
+      "title": "Tell north-slope graves and later quarry pits",
+      "citation": "Excavations at Jericho III Text (1981), pp. 173–174 (PDF 207–208); Trench II/Site O, Stage XXIV phase lxxvi and Stage XXV phase lxxvii; context pp. 3–4 and 119–121",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon 1952–1958 expedition/publication lineage",
+      "url": "https://archive.org/details/excavationsatjer0003keny_pt01"
+    },
+    {
+      "id": "states-kenyon-III-plates",
+      "title": "Missing grave/pit drawings",
+      "citation": "Kenyon III separate plate volume: Plate 111b and actual eastern section at local 37.50–38.00 m N / 8.17 m H; section plate number/viewer page unknown",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "not_inspected",
+      "original_campaign": "Kenyon 1952–1958 expedition/publication lineage"
+    },
+    {
+      "id": "states-dorrell",
+      "title": "Spring basin and modern reservoir succession",
+      "citation": "P. G. Dorrell, PEQ 125 (1993), pp. 95–114; historical basin pp. 96–97 and Figs. 1–4 pp. 98–99; 1898 reservoir pp. 111–112; Figs. 20–21 p. 107, Fig. 23 p. 108",
+      "repo_path": "research/agent_review_2026-10-07/followup/A_jericho_spring_reservoir.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Historical photographs/accounts compiled by Dorrell; SWP text cited only through his quotations"
+    }
+  ],
+  "reference_frames": [
+    {
+      "id": "states-iv17-plan5-crop",
+      "kind": "source_raster",
+      "label": "Sion Plan 5 native project crop",
+      "units": "px",
+      "size_px": [
+        626,
+        541
+      ],
+      "origin": "top left",
+      "axes": {
+        "x": "right",
+        "y": "down"
+      },
+      "renderer": "PyMuPDF Matrix(3,3)",
+      "page_size_px": [
+        1526,
+        2438
+      ],
+      "crop_box_page_px": [
+        152,
+        207,
+        778,
+        748
+      ],
+      "scale": {
+        "length": 3,
+        "unit": "m",
+        "endpoints_px": [
+          [
+            402,
+            472
+          ],
+          [
+            570,
+            472
+          ]
+        ],
+        "metres_per_pixel": 0.017857142857142856,
+        "systematic_error_quantified": false
+      },
+      "north": {
+        "tail_px": [
+          99,
+          147
+        ],
+        "tip_px": [
+          169,
+          64
+        ],
+        "convention": "Published north arrow; true/grid/magnetic unspecified"
+      },
+      "geographic_registration": null,
+      "source_ids": [
+        "states-sion-plan",
+        "states-iv17-repeat"
+      ],
+      "source_pdf_sha256": "7b56f84d7f87d7ad16f5f707739fb6f91b9193dafb11756d860324d69a7ca718",
+      "render_sha256": "59c490eb83e918b09be1d9bdcb8a4809a08401d54988f5c9fc6028d803deb044",
+      "note": "Retains the reviewed crop and corrected repeat identities. Coordinates are project endpoint annotations, not source-image reproduction or WGS84.",
+      "site": "Abu Saraj",
+      "feature_ids": [
+        "iv17-cave",
+        "iv17-north-mouth",
+        "iv17-south-mouth",
+        "iv17-pillar",
+        "iv17-south-wall"
+      ]
+    },
+    {
+      "id": "states-kenyon-trench-II",
+      "kind": "local_excavation",
+      "label": "Kenyon Trench II/Site O section coordinates",
+      "units": "m",
+      "origin": null,
+      "axes": {
+        "N": "original excavation-square north ordinate",
+        "H": "local section height; datum not verified"
+      },
+      "geographic_registration": null,
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "note": "42.50 m N and 37.50–38.00 m N / 8.17 m H remain source-local. The separate section is uninspected; no point or surface geometry is constructed.",
+      "site": "Jericho",
+      "feature_ids": [
+        "jericho-north-graves",
+        "jericho-later-quarry-pits"
+      ]
+    },
+    {
+      "id": "states-jericho-descriptions",
+      "kind": "descriptive",
+      "label": "Published Jericho relative positions",
+      "units": null,
+      "geographic_registration": null,
+      "source_ids": [
+        "states-kenyon-II",
+        "states-dorrell"
+      ],
+      "note": "North/east/towards positions in descriptions are retained without invented bounds or modern coordinates.",
+      "site": "Jericho",
+      "feature_ids": [
+        "jericho-shaft-d9",
+        "jericho-cistern-ns1",
+        "jericho-tell",
+        "jericho-historical-basin",
+        "jericho-springhouse-wall",
+        "jericho-reservoir-1898"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "id": "states-iv17-cave-recorded",
+      "feature_id": "iv17-cave",
+      "label": "Recorded two-space cave",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Sion records two spaces and two mouths in the eastern cliff. Observation belongs to the published survey, not a current field visit.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-north-recorded",
+      "feature_id": "iv17-north-mouth",
+      "label": "Recorded northern aperture",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan",
+        "states-iv17-repeat"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Corrected repeat identity: right/clear opening is northern after reading the published north arrow. Aperture chord is a 2D proxy; threshold height and ancient phase unknown.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-south-recorded",
+      "feature_id": "iv17-south-mouth",
+      "label": "Recorded southern remaining gap",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan",
+        "states-iv17-repeat"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Left/built-wall opening is southern. The surviving gap cannot recover the full pre-wall aperture.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-pillar-recorded",
+      "feature_id": "iv17-pillar",
+      "label": "Recorded rock-cut pillar",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Separates the reported spaces. No reviewed endpoint set or dated cutting contact defines a pillar outline.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-wall-recorded",
+      "feature_id": "iv17-south-wall",
+      "label": "Recorded partial mouth-blocking wall",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan",
+        "states-sion-context"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Published length 2.4 m, thickness about 0.4 m. No sealed construction date or traced plan polygon is supplied.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-hellenistic-use",
+      "feature_id": "iv17-cave",
+      "label": "Published Hellenistic-use reconstruction",
+      "status": "reconstructed",
+      "source_ids": [
+        "states-sion-plan",
+        "states-sion-context"
+      ],
+      "phase": {
+        "label": "First half of second century to first half of first century BCE",
+        "dating_basis": "Excavator use reconstruction from cave finds",
+        "use_start_bounds_bce": [
+          200,
+          151
+        ],
+        "use_end_bounds_bce": [
+          100,
+          51
+        ],
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": null,
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "This use interpretation and conflict/concealment explanation do not independently date the wall, pillar or threshold.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-south-before-wall",
+      "feature_id": "iv17-south-mouth",
+      "label": "Ancient southern aperture before blocking",
+      "status": "unknown",
+      "source_ids": [
+        "states-sion-plan",
+        "states-sion-context",
+        "states-iv17-fieldfile"
+      ],
+      "phase": {
+        "label": "Pre-wall arrangement, date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": null,
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "An original wider mouth is a proposed configuration. Its boundary, date and accessible width are unestablished.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-north-ancient-threshold",
+      "feature_id": "iv17-north-mouth",
+      "label": "Ancient northern threshold required by the depth branch",
+      "status": "unknown",
+      "source_ids": [
+        "states-sion-context",
+        "states-iv17-fieldfile"
+      ],
+      "phase": {
+        "label": "Instruction-period threshold, date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": null,
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "No ancient threshold level or phase-controlled surface is recorded. z_target = z_threshold − depth remains symbolic.",
+      "threshold_elevation": null,
+      "depth_branch": {
+        "cubits": 3,
+        "metres_per_cubit": [
+          0.4,
+          0.6
+        ],
+        "conditional_depth_m": [
+          1.2,
+          1.8
+        ],
+        "interpretation": "Exploratory vertical branch; not entrance width",
+        "target_geometry": null
+      },
+      "site": "Abu Saraj",
+      "level_reference_frame": null
+    },
+    {
+      "id": "states-jericho-d9-mb",
+      "feature_id": "jericho-shaft-d9",
+      "label": "D9 Middle Bronze shaft",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "Middle Bronze shaft, published attribution",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "The reported 3.90 m depth belongs to the earlier shaft; it is not a Roman burial-depth datum.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-d9-roman",
+      "feature_id": "jericho-shaft-d9",
+      "label": "D9 Roman burial reuse",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "Roman burial, published attribution",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "A rectangular burial shaft with a recessed ledge was cut into the side of the earlier Middle Bronze shaft. No entry-60 mouth/grave crosswalk follows.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-ns1",
+      "feature_id": "jericho-cistern-ns1",
+      "label": "N.S.1 reported Roman cistern",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "Roman, assemblage/author attribution",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Rescue-dug toward Khirbet Mefjar on the camp outskirts. No plan was made; no relation to the on-tell grave group is established.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-graves-recorded",
+      "feature_id": "jericho-north-graves",
+      "label": "Trench II/Site O shaft graves",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "phase": {
+        "label": "Stage XXIV, phase lxxvi",
+        "stratigraphic_key": [
+          "Tell es-Sultan",
+          "Trench II/Site O",
+          "XXIV",
+          "lxxvi"
+        ],
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-kenyon-trench-II",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "About eighteen burials in the excavated area, mostly northern. Source-reported shafts with lateral recesses; normally mudbrick closures. Maximum surviving depth 1.25 m below present surface is not the intact ancient surface datum.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-graves-first-century",
+      "feature_id": "jericho-north-graves",
+      "label": "First-century AD grave-type attribution",
+      "status": "reconstructed",
+      "source_ids": [
+        "states-kenyon-III",
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "First century AD, typological attribution",
+        "attributed_years": [
+          1,
+          100
+        ],
+        "dating_basis": "Comparison with II cemetery and Qumran grave types; no offerings in these graves",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-kenyon-trench-II",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "This interpretive dating draws on the same expedition/publication lineage. Common grave type does not identify a burial community or the Scroll tombs.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-quarries-recorded",
+      "feature_id": "jericho-later-quarry-pits",
+      "label": "Later pits cutting grave shafts",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "phase": {
+        "label": "Stage XXV, phase lxxvii; absolute date unknown",
+        "stratigraphic_key": [
+          "Tell es-Sultan",
+          "Trench II/Site O",
+          "XXV",
+          "lxxvii"
+        ],
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-kenyon-trench-II",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Pits truncate many grave shafts and contain backfilled rubble. Quarry function is Kenyon’s interpretation; their absolute opening date and accessibility beside surviving graves remain unknown.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-north-unsurveyed",
+      "feature_id": "jericho-tell",
+      "label": "Near-north strip skipped by cemetery search",
+      "status": "unknown",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "Historical search coverage, ancient feature state unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Kenyon II p. 169 reports superficial deposits and a skipped strip just north of the tell. This is missing coverage, not an observed empty ancient landscape.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-historical-basin",
+      "feature_id": "jericho-historical-basin",
+      "label": "Historical irregular spring basin",
+      "status": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "Nineteenth-century descriptions/1856 photograph; construction date unknown",
+        "recorded_observation_year": 1856,
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "SWP 24 × 40 ft dimensions are quoted through Dorrell; the original SWP text is not newly inspected. Irregular successor basin is distinct from the modern reservoir.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-wall-recorded",
+      "feature_id": "jericho-springhouse-wall",
+      "label": "Historical curved wall and niche",
+      "status": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "Historical photographic remains; construction date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Curved wall behind the basin, with niches/stucco and later patching/plundering. Protected photographs are link-only; no wall polygon is traced.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-wall-attribution",
+      "feature_id": "jericho-springhouse-wall",
+      "label": "Late Roman/Byzantine wall attribution",
+      "status": "reconstructed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "Late Roman or Byzantine, scholarly opinion",
+        "dating_basis": "Architecture/comparanda; no sealed lowest-course deposit cited",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Retains Dorrell’s tentative interpretation without assigning a secure ancient construction year.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-reservoir-1898",
+      "feature_id": "jericho-reservoir-1898",
+      "label": "Reservoir enlargement in 1898",
+      "status": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "1898 documented reservoir work",
+        "construction": {
+          "years": [
+            1898,
+            1898
+          ],
+          "calendar": "historical_year",
+          "basis": "documented_construction"
+        }
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": true,
+        "geographic_registration": null
+      },
+      "note": "Dorrell p. 111 reports extension of the c. 1891–93 mill-pool into the present reservoir in 1898. The modern back wall lies about 1 m east of the old curved spring-house wall.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-reservoir-1908",
+      "feature_id": "jericho-reservoir-1898",
+      "label": "Reservoir layout in the January 1908 plan",
+      "status": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "January 1908 recorded layout",
+        "recorded_observation_year": 1908,
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "North–south basin curved at the north, with mill southeast. No controlled georeferenced overlay is supplied.",
+      "site": "Jericho"
+    }
+  ],
+  "observations": [
+    {
+      "id": "states-iv17-space-dimensions",
+      "feature_id": "iv17-cave",
+      "property": "published_space_dimensions",
+      "value": {
+        "northern": [
+          2.2,
+          4.5
+        ],
+        "southern": [
+          2.15,
+          4.2
+        ],
+        "unit": "m",
+        "reported_area": 33.5,
+        "area_unit": "m²",
+        "height_range": [
+          1.4,
+          1.7
+        ]
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Recorded survey arrangement; ancient architecture date unknown",
+      "reference_frame": "states-iv17-plan5-crop"
+    },
+    {
+      "id": "states-iv17-wall-use-interpretation",
+      "feature_id": "iv17-south-wall",
+      "property": "concealment_interpretation",
+      "value": "Blocking interpreted as concealment during conflict involving the Hasmoneans",
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "states-sion-plan",
+        "states-sion-context"
+      ],
+      "exposure": "already_inspected"
+    },
+    {
+      "id": "states-iv17-construction-date",
+      "feature_id": "iv17-south-wall",
+      "property": "sealed_construction_date",
+      "value": null,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-context"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Unknown"
+    },
+    {
+      "id": "states-iv17-pillar-cutting-date",
+      "feature_id": "iv17-pillar",
+      "property": "dated_cutting_contact",
+      "value": null,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-context"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Unknown"
+    },
+    {
+      "id": "states-iv17-threshold-level",
+      "feature_id": "iv17-north-mouth",
+      "property": "ancient_threshold_elevation",
+      "value": null,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-context"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Unknown"
+    },
+    {
+      "id": "states-d9-mb-depth",
+      "feature_id": "jericho-shaft-d9",
+      "property": "published_earlier_shaft_depth",
+      "value": {
+        "value": 3.9,
+        "unit": "m",
+        "reference": "Middle Bronze shaft; no Roman target datum"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "exposure": "already_inspected"
+    },
+    {
+      "id": "states-ns1-role",
+      "feature_id": "jericho-cistern-ns1",
+      "property": "function",
+      "value": "Cistern",
+      "evidence_kind": "excavator_label",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Roman, author attribution"
+    },
+    {
+      "id": "states-graves-surviving-depth",
+      "feature_id": "jericho-north-graves",
+      "property": "maximum_surviving_shaft_depth",
+      "value": {
+        "value": 1.25,
+        "unit": "m",
+        "reference": "Below present surface, not original ancient ground"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Stage XXIV phase lxxvi",
+      "reference_frame": "states-kenyon-trench-II",
+      "uncertainty": {
+        "erosion_and_later_truncation": true,
+        "intact_ancient_surface": null
+      }
+    },
+    {
+      "id": "states-graves-source-local-section",
+      "feature_id": "jericho-north-graves",
+      "property": "published_section_locator",
+      "value": {
+        "north_range": [
+          37.5,
+          38.0
+        ],
+        "height": 8.17,
+        "unit": "m",
+        "geometry": null,
+        "section_inspected": false
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Stage XXIV phase lxxvi",
+      "reference_frame": "states-kenyon-trench-II"
+    },
+    {
+      "id": "states-quarry-function",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "function",
+      "value": "Quarries for bricky mound material, interpreted by Kenyon",
+      "evidence_kind": "excavator_label",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Stage XXV phase lxxvii"
+    },
+    {
+      "id": "states-quarry-absolute-date",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "opening_date",
+      "value": null,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Later than graves; absolute date unknown"
+    },
+    {
+      "id": "states-historical-basin-dimensions",
+      "feature_id": "jericho-historical-basin",
+      "property": "reported_dimensions",
+      "value": {
+        "dimensions": [
+          24,
+          40
+        ],
+        "unit": "ft",
+        "scope": "SWP irregular basin quoted by Dorrell; not modern reservoir or independently inspected SWP"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Historical description; ancient construction unknown"
+    },
+    {
+      "id": "states-reservoir-work-date",
+      "feature_id": "jericho-reservoir-1898",
+      "property": "construction_work_year",
+      "value": {
+        "year": 1898,
+        "calendar": "historical_year",
+        "basis": "Dorrell citing Sellin/Watzinger 1913"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Modern reservoir enlargement"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "states-iv17-wall-part-blocks",
+      "from": "states-iv17-wall-recorded",
+      "to": "states-iv17-south-recorded",
+      "relation": "partly_blocks",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "note": "Architectural relation in recorded survey arrangement; no absolute construction date."
+    },
+    {
+      "id": "states-iv17-pillar-separates",
+      "from": "states-iv17-pillar-recorded",
+      "to": "states-iv17-cave-recorded",
+      "relation": "separates_spaces",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "note": "Reported two-space topology, without an invented pillar polygon."
+    },
+    {
+      "id": "states-iv17-pre-wall-proposal",
+      "from": "states-iv17-south-before-wall",
+      "to": "states-iv17-south-recorded",
+      "relation": "proposed_predecessor",
+      "evidence_kind": "inference",
+      "source_ids": [
+        "states-sion-plan",
+        "states-sion-context"
+      ],
+      "note": "Original southern aperture cannot be recovered from the remaining gap."
+    },
+    {
+      "id": "states-d9-reuse",
+      "from": "states-jericho-d9-roman",
+      "to": "states-jericho-d9-mb",
+      "relation": "uses_existing",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "note": "Roman burial cut into the side of the Middle Bronze shaft."
+    },
+    {
+      "id": "states-grave-pit-truncation",
+      "from": "states-jericho-quarries-recorded",
+      "to": "states-jericho-graves-recorded",
+      "relation": "cuts",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "note": "Phase lxxvii pits truncate phase lxxvi grave shafts; their absolute date is unknown."
+    },
+    {
+      "id": "states-basin-reservoir-documentary",
+      "from": "states-spring-historical-basin",
+      "to": "states-spring-reservoir-1898",
+      "relation": "documentary_succession",
+      "evidence_kind": "inference",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "note": "Separate basin/reservoir features in a changing spring setting; this does not assert a single ancient basin identity."
+    },
+    {
+      "id": "states-reservoir-layout-record",
+      "from": "states-spring-reservoir-1898",
+      "to": "states-spring-reservoir-1908",
+      "relation": "before",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "note": "1898 work precedes the January 1908 plan; no modern-to-ancient shape extrapolation."
+    }
+  ],
+  "queries": [
+    {
+      "id": "states-iv17-ancient-wall",
+      "title": "Can the reported cave use date the wall?",
+      "claim": "The recorded blocking wall was constructed in the exploratory 100 BCE–100 AD window.",
+      "kind": "construction_window",
+      "state_ids": [
+        "states-iv17-wall-recorded"
+      ],
+      "source_ids": [
+        "states-sion-context"
+      ],
+      "predicate_label": "Construction within saved early window",
+      "unknowns": [
+        "Dated wall foundation/contact",
+        "Independent wall construction observation"
+      ],
+      "years": [
+        -100,
+        100
+      ],
+      "window_basis": "Saved exploratory comparison, not a Scroll compilation date"
+    },
+    {
+      "id": "states-iv17-ancient-aperture",
+      "title": "Are the two apertures established together in the ancient phase?",
+      "claim": "Both recorded apertures were usable together in the instruction-period arrangement.",
+      "kind": "accessible_together",
+      "state_ids": [
+        "states-iv17-north-recorded",
+        "states-iv17-south-recorded"
+      ],
+      "source_ids": [
+        "states-sion-context"
+      ],
+      "predicate_label": "Observed contemporaneous access",
+      "unknowns": [
+        "Dated entrance/threshold arrangement",
+        "Ancient clearance/access",
+        "Unblocked southern aperture"
+      ],
+      "required_access_phase": "IV/17 instruction-period accessible arrangement",
+      "years": [
+        -100,
+        100
+      ],
+      "calendar": "historical_year",
+      "window_basis": "Saved exploratory 100 BCE–100 AD comparison, shared with the construction queries; not an established Scroll compilation or instruction date.",
+      "access_interval_semantics": "Date bounds for an observed accessible episode, with an explicit source-grounded attachment to the named query phase context. Broad use/typology dates are insufficient."
+    },
+    {
+      "id": "states-iv17-depth-datum",
+      "title": "Can the depth branch produce a target elevation?",
+      "claim": "An ancient northern threshold supports a three-cubit target elevation.",
+      "kind": "target_datum",
+      "state_ids": [
+        "states-iv17-north-ancient-threshold"
+      ],
+      "source_ids": [
+        "states-sion-context"
+      ],
+      "predicate_label": "Ancient threshold datum available",
+      "unknowns": [
+        "Ancient threshold elevation/reference surface",
+        "Construction/use phase",
+        "Textual direction of digging"
+      ]
+    },
+    {
+      "id": "states-d9-sequence",
+      "title": "D9 preserves an earlier shaft reused for burial",
+      "claim": "The Middle Bronze shaft precedes the Roman burial cut.",
+      "kind": "before",
+      "state_ids": [
+        "states-jericho-d9-mb",
+        "states-jericho-d9-roman"
+      ],
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "predicate_label": "Published relative sequence",
+      "unknowns": [
+        "Specific entry-60 mouth/grave identity",
+        "Mouth accessibility and location"
+      ]
+    },
+    {
+      "id": "states-jericho-same-phase",
+      "title": "Are the described pits and graves the same phase?",
+      "claim": "Kenyon III phase-lxxvii pits and phase-lxxvi graves belong to the same stratigraphic phase.",
+      "kind": "same_phase",
+      "state_ids": [
+        "states-jericho-graves-recorded",
+        "states-jericho-quarries-recorded"
+      ],
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "predicate_label": "Same named stratigraphic phase",
+      "unknowns": [
+        "Absolute quarry-opening date"
+      ]
+    },
+    {
+      "id": "states-jericho-access",
+      "title": "Could older graves remain accessible beside a later opening?",
+      "claim": "The later pits provided usable mouths beside surviving graves within an early date window.",
+      "kind": "accessible_together",
+      "state_ids": [
+        "states-jericho-graves-recorded",
+        "states-jericho-quarries-recorded"
+      ],
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "predicate_label": "Observed contemporaneous access",
+      "unknowns": [
+        "Individual mouth/grave plan",
+        "Pit-opening date",
+        "Grave survival and accessibility",
+        "Actual eastern section and Plate 111b"
+      ],
+      "required_access_phase": "Jericho later-opening and surviving-grave accessible arrangement",
+      "years": [
+        -100,
+        100
+      ],
+      "calendar": "historical_year",
+      "window_basis": "Saved exploratory 100 BCE–100 AD comparison, shared with the construction queries; not an established Scroll compilation or instruction date.",
+      "access_interval_semantics": "Date bounds for an observed accessible episode, with an explicit source-grounded attachment to the named query phase context. Broad use/typology dates are insufficient."
+    },
+    {
+      "id": "states-jericho-ns1-join",
+      "title": "Can N.S.1 be joined to the on-tell graves?",
+      "claim": "The N.S.1 cistern mouth and Trench II graves form one usable configuration.",
+      "kind": "accessible_together",
+      "state_ids": [
+        "states-jericho-ns1",
+        "states-jericho-graves-recorded"
+      ],
+      "source_ids": [
+        "states-kenyon-II",
+        "states-kenyon-III"
+      ],
+      "predicate_label": "Observed contemporaneous access",
+      "unknowns": [
+        "Explicit N.S.1/on-tell feature crosswalk",
+        "Cistern plan/mouth",
+        "Shared phase and access observation"
+      ],
+      "required_access_phase": "Jericho N.S.1 and on-tell-grave accessible arrangement",
+      "years": [
+        -100,
+        100
+      ],
+      "calendar": "historical_year",
+      "window_basis": "Saved exploratory 100 BCE–100 AD comparison, shared with the construction queries; not an established Scroll compilation or instruction date.",
+      "access_interval_semantics": "Date bounds for an observed accessible episode, with an explicit source-grounded attachment to the named query phase context. Broad use/typology dates are insufficient."
+    },
+    {
+      "id": "states-jericho-modern-early",
+      "title": "Can the modern reservoir supply an early pool?",
+      "claim": "The present reservoir was constructed within the exploratory 100 BCE–100 AD window.",
+      "kind": "construction_window",
+      "state_ids": [
+        "states-spring-reservoir-1898"
+      ],
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "predicate_label": "Construction within saved early window",
+      "unknowns": [
+        "Ancient predecessor-basin identity is a separate question"
+      ],
+      "years": [
+        -100,
+        100
+      ],
+      "window_basis": "Saved exploratory comparison, not a Scroll compilation date"
+    },
+    {
+      "id": "states-jericho-historical-early",
+      "title": "Can the historical irregular basin be dated early?",
+      "claim": "The nineteenth-century basin record establishes construction in the exploratory 100 BCE–100 AD window.",
+      "kind": "construction_window",
+      "state_ids": [
+        "states-spring-historical-basin"
+      ],
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "predicate_label": "Construction within saved early window",
+      "unknowns": [
+        "Historical basin construction/date contacts",
+        "Relationship to curved wall and any earlier basin"
+      ],
+      "years": [
+        -100,
+        100
+      ],
+      "window_basis": "Saved exploratory comparison, not a Scroll compilation date"
+    }
+  ],
+  "views": [
+    {
+      "id": "states-iv17-view",
+      "title": "IV/17 recorded and proposed arrangements",
+      "description": "Select recorded apertures, published use reconstruction or the unknown ancient threshold. Chords remain in the native crop; other relationships are topology only.",
+      "state_ids": [
+        "states-iv17-cave-recorded",
+        "states-iv17-north-recorded",
+        "states-iv17-south-recorded",
+        "states-iv17-pillar-recorded",
+        "states-iv17-wall-recorded",
+        "states-iv17-hellenistic-use",
+        "states-iv17-south-before-wall",
+        "states-iv17-north-ancient-threshold"
+      ],
+      "query_ids": [
+        "states-iv17-ancient-wall",
+        "states-iv17-ancient-aperture",
+        "states-iv17-depth-datum"
+      ],
+      "reference_frame": "states-iv17-plan5-crop",
+      "native_shapes": [
+        "states-iv17-north-recorded",
+        "states-iv17-south-recorded"
+      ],
+      "geographic_overlay": null
+    },
+    {
+      "id": "states-jericho-north-view",
+      "title": "Jericho north: reuse, graves, pits and missing joins",
+      "description": "D9 reuse, N.S.1 and Trench II are distinct contexts. The cutting sequence fixes order without certifying early coexistence or accessibility.",
+      "state_ids": [
+        "states-jericho-d9-mb",
+        "states-jericho-d9-roman",
+        "states-jericho-ns1",
+        "states-jericho-graves-recorded",
+        "states-jericho-graves-first-century",
+        "states-jericho-quarries-recorded",
+        "states-jericho-north-unsurveyed"
+      ],
+      "query_ids": [
+        "states-d9-sequence",
+        "states-jericho-same-phase",
+        "states-jericho-access",
+        "states-jericho-ns1-join"
+      ],
+      "reference_frame": "states-kenyon-trench-II",
+      "native_shapes": [],
+      "geographic_overlay": null
+    },
+    {
+      "id": "states-jericho-spring-view",
+      "title": "Spring basin, curved wall and 1898 reservoir",
+      "description": "Separate physical features and dated documentary states. Historical photographic observation dates are not ancient construction dates.",
+      "state_ids": [
+        "states-spring-historical-basin",
+        "states-spring-wall-recorded",
+        "states-spring-wall-attribution",
+        "states-spring-reservoir-1898",
+        "states-spring-reservoir-1908"
+      ],
+      "query_ids": [
+        "states-jericho-modern-early",
+        "states-jericho-historical-early"
+      ],
+      "reference_frame": "states-jericho-descriptions",
+      "native_shapes": [],
+      "geographic_overlay": null
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "states-dependency-iv17",
+      "feature_ids": [
+        "iv17-north-mouth",
+        "iv17-south-mouth",
+        "iv17-south-wall",
+        "iv17-pillar"
+      ],
+      "record": "IV/17 Michael Dadon permit L-656, locus/basket joins 656.17 and 656.20, northern threshold sections/levels, southern wall foundation contacts",
+      "source_ids": [
+        "states-iv17-fieldfile"
+      ],
+      "status": "not_inspected",
+      "resolves": [
+        "Ancient threshold datum",
+        "Wall/pillar/entrance construction phases",
+        "Original southern opening geometry"
+      ],
+      "current_request": "Existing IAA request concerns the regional cave inventory. A specific L-656 field-file request, current holding and accession remain unverified; no duplicate outreach is authorized."
+    },
+    {
+      "id": "states-dependency-kenyon",
+      "feature_ids": [
+        "jericho-north-graves",
+        "jericho-later-quarry-pits"
+      ],
+      "record": "III plate volume, native title/captions/errata, actual eastern section at 37.50–38.00 m N / 8.17 m H and Plate 111b",
+      "source_ids": [
+        "states-kenyon-III-plates"
+      ],
+      "status": "not_inspected",
+      "resolves": [
+        "Individual grave/pit shape",
+        "Relative cutting layout",
+        "Possible mouth/access relation"
+      ],
+      "does_not_automatically_resolve": [
+        "Absolute quarry date",
+        "National coordinates",
+        "Unused-prediction certification"
+      ]
+    },
+    {
+      "id": "states-dependency-spring",
+      "feature_ids": [
+        "jericho-historical-basin",
+        "jericho-springhouse-wall"
+      ],
+      "record": "Sealed lowest-course/basin-rim contacts and physical predecessor-basin crosswalk",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "status": "unknown",
+      "resolves": [
+        "Ancient construction phase",
+        "Historical basin/wall relation"
+      ],
+      "current_request": "No new fieldwork or correspondence created"
+    }
+  ],
+  "access_relations": []
+}

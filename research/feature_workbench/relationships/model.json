@@ -1,0 +1,1048 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "relationships-text-core",
+      "title": "Reviewed Koḥlit edition relationships",
+      "citation": "Entry 11, II 13–15; Puech 2015 pp. 13–14 n. 49; reviewed e11-kohlit / e19-kohlit reading records",
+      "repo_path": "text/readings.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "relationships-text-e60",
+      "title": "Reviewed Entry 60 reading and period registry",
+      "citation": "XII 10–13; Milik 1960 item 64; Puech 2006 p. 175 n. 49 / 2015 pp. 13–14 n. 49; Lefkovits 2000 pp. 425–426, as attributed in registry v2",
+      "repo_path": "research/agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "relationships-text-restored",
+      "title": "Puech Entry 15–16 restoration audit",
+      "citation": "Puech 2015 pp. 48–51, especially pp. 49–50 and n. 193; IV 1–5",
+      "repo_path": "research/measurements/cycle7/kohlit_pool.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "relationships-dorrell",
+      "title": "Dorrell, The Spring at Jericho from Early Photographs",
+      "citation": "PEQ 125 (1993), pp. 95–97, 110–112; Figs. 1–4, 20–21 (pp. 98–99, 107)",
+      "repo_path": "research/agent_review_2026-10-07/followup/A_jericho_spring_reservoir.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Historical photographs 1856–1954 compiled by Dorrell; not independent field corroborations"
+    },
+    {
+      "id": "relationships-kenyon-II",
+      "title": "Kenyon, Excavations at Jericho II",
+      "citation": "1965 pp. 169, 276–277 / Fig. 137.2, 516, 536–537, 539–544; distribution Fig. 91 p. 168",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon Jericho expedition, 1952–1958"
+    },
+    {
+      "id": "relationships-kenyon-III",
+      "title": "Kenyon, Excavations at Jericho III, Text",
+      "citation": "1981 pp. 173–174 / supplied PDF 207–208; supporting pp. 3–4, 119–121; separate E section and Plate 111b are not inspected",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon Jericho expedition, 1952–1958"
+    },
+    {
+      "id": "relationships-zohar",
+      "title": "Zohar, Tell Marjame / Ein Samiya",
+      "citation": "IEJ 30 (1980), pp. 219–220; HA 76 (1981), p. 19 / supplied PDF 20; same December 1979–January 1980 excavation",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Zohar rescue excavation, December 1979–January 1980"
+    },
+    {
+      "id": "relationships-mazar",
+      "title": "Mazar, Excavations at Khirbet Marjameh",
+      "citation": "IEJ 45 (1995), pp. 85–87, 95; Fig. 1 p. 86 (spring / tell context)",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "relationships-highlands",
+      "title": "Highlands of Many Cultures, reviewed site entries",
+      "citation": "1997 pp. 732–735 (tell, church and Kh. Samiya), 741 (north/NNE Bronze Age tombs); these compiled notices do not establish a dated mouth relation",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "relationships-yanun",
+      "title": "Reviewed Kh. Yanun / Yanun village record",
+      "citation": "Highlands of Many Cultures (1997), pp. 821–822, 828–831; Lefkovits 2000 pp. 425–426 only through the reviewed registry",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "relationships-kallai",
+      "title": "Kallai rock-cut-pool source dependency",
+      "citation": "Kallai chapter in Kochavi (ed.), Judaea, Samaria and the Golan: Archaeological Survey 1967–1968 (1972), pp. 172–173; sites 65–66 context remains unread",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "url": "https://www.nli.org.il/he/books/NNL_ALEPH990019622650205171/NLI",
+      "inspection": "not_inspected"
+    }
+  ],
+  "features": [
+    {
+      "id": "samiya-north-bronze-tombs",
+      "name": "Dhahr Mirzbaneh northern shaft-tomb field",
+      "kind": "tomb_group",
+      "site": "Ein Samiya / Kh. el-Marjama",
+      "geometry": null
+    }
+  ],
+  "observations": [
+    {
+      "id": "relationships-historical-east",
+      "feature_id": "jericho-historical-basin",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "The historical basin is documented at the spring on the tell’s eastern foot. This is a qualitative source relation; no basin-to-anchor surveyed bearing is asserted.",
+      "reference_frame": "Dorrell’s qualitative spring/tell description; unregistered historical photographs"
+    },
+    {
+      "id": "relationships-modern-east",
+      "feature_id": "jericho-reservoir-1898",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "The 1898 reservoir stands at the eastern-foot spring. Its position cannot supply an earlier pool state.",
+      "reference_frame": "Dorrell’s qualitative spring/tell description"
+    },
+    {
+      "id": "relationships-historical-basin-chronology",
+      "feature_id": "jericho-historical-basin",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "first_documented_state_year": 1856
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "The irregular basin is observed in nineteenth-century records; its construction and early accessible-use interval are unknown. Do not backdate it from the adjacent ancient curved wall."
+    },
+    {
+      "id": "relationships-modern-reservoir-chronology",
+      "feature_id": "jericho-reservoir-1898",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": 1898,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "Dorrell p. 111 dates extension of the mill-pool into the present reservoir to 1898. This is a separate physical/state assignment from the historical irregular basin."
+    },
+    {
+      "id": "relationships-springwall-chronology",
+      "feature_id": "jericho-springhouse-wall",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "very probably late Roman or Byzantine",
+        "dating_basis": "architectural opinion; no sealed construction date"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "Late Roman / Byzantine is Dorrell’s architectural opinion, without sealed finds dating the lowest course. It does not date the separate basin."
+    },
+    {
+      "id": "relationships-ns1-north",
+      "feature_id": "jericho-cistern-ns1",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "NS1 is reported on the camp outskirts toward Khirbet Mefjar, north of the tell. No plan or surveyed cistern-mouth position was made.",
+      "reference_frame": "Kenyon II qualitative location; no mouth coordinate"
+    },
+    {
+      "id": "relationships-ns1-chronology",
+      "feature_id": "jericho-cistern-ns1",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "Roman",
+        "dating_basis": "excavator attribution / cistern assemblage"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "Kenyon labels NS1 a Roman cistern and reports Herodian lamps / comparison finds. Its construction, ancient mouth and independently dated accessible-use interval are not documented."
+    },
+    {
+      "id": "relationships-d9-north",
+      "feature_id": "jericho-shaft-d9",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "derived",
+      "note": "Area D is inferred to be in the sector north of the tell from the reviewed distribution map. This source-plan sector inference is not a measured shaft-mouth bearing.",
+      "reference_frame": "Fig. 91 p. 168 qualitative sector interpretation; not registered"
+    },
+    {
+      "id": "relationships-d9-chronology",
+      "feature_id": "jericho-shaft-d9",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "Middle Bronze shaft with Roman burial reuse",
+        "dating_basis": "relative shaft/reuse description"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "A Roman burial cuts into the side of a Middle Bronze shaft. The older shaft’s dated accessibility / opening arrangement in the selected early window remains unknown."
+    },
+    {
+      "id": "relationships-d9-burial-position",
+      "feature_id": "jericho-shaft-d9",
+      "property": "burial_in_side_of_shaft",
+      "value": {
+        "reference_feature_id": null,
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "D9’s burial is at a recessed ledge at the base / side of the older shaft. This cannot be substituted for tombs at a separately defined pit mouth."
+    },
+    {
+      "id": "relationships-graves-north",
+      "feature_id": "jericho-north-graves",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "About eighteen graves are reported on the north slope / Trench II, mostly toward its northern end; not every grave has an individual mapped mouth.",
+      "reference_frame": "Trench II / Site O local excavation coordinates; no national datum"
+    },
+    {
+      "id": "relationships-graves-chronology",
+      "feature_id": "jericho-north-graves",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "first century CE",
+        "estimated_typological_interval": [
+          1,
+          100
+        ],
+        "dating_basis": "type comparison; no grave-associated dating finds in III 173–174"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-kenyon-III",
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "Kenyon assigns the on-tell graves to the first century CE by grave-type comparison. There are no offerings in this scope and no dated jointly accessible grave/pit-mouth interval."
+    },
+    {
+      "id": "relationships-quarries-north",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "Numerous later pits occupy much of the northern trench end. Their individual mouths have no national-datum position.",
+      "reference_frame": "Trench II / Site O local frame"
+    },
+    {
+      "id": "relationships-quarries-chronology",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "relative_after_feature": "jericho-north-graves",
+        "attributed_function": "brickearth quarries"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "The phase-lxxvii quarry pits cut phase-lxxvi graves and are rubble-filled. They have no secure absolute date; later-than-grave alone is not an early-window failure."
+    },
+    {
+      "id": "relationships-quarries-later-phase",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "constructed_same_phase_as",
+      "value": {
+        "reference_feature_id": "jericho-north-graves",
+        "asserted": false
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "The pits truncate the graves and belong to later phase lxxvii, after grave phase lxxvi. This rejects same-phase construction only; it does not settle later joint accessibility.",
+      "phase": {
+        "subject": "lxxvii / Stage XXV",
+        "object": "lxxvi / Stage XXIV"
+      }
+    },
+    {
+      "id": "relationships-quarries-co-use",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "coexisted_with",
+      "value": {
+        "reference_feature_id": "jericho-north-graves",
+        "asserted": null
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "Published truncation establishes sequence, not whether a usable later opening and surviving graves were jointly accessible within an early window."
+    },
+    {
+      "id": "relationships-crypt-west",
+      "feature_id": "samiya-crypt-basin",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "marjama-tell",
+        "asserted": false
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-zohar",
+        "relationships-highlands",
+        "relationships-mazar"
+      ],
+      "exposure": "derived",
+      "note": "On this named crypt-basin/spring assignment, the church is at the western foot and the spring southwest of the tell. This conditional crosswalk contradicts east-of-tell; it does not locate Kallai’s separate pool.",
+      "reference_frame": "Published qualitative church/spring/tell crosswalk; no validated bearing"
+    },
+    {
+      "id": "relationships-crypt-chronology",
+      "feature_id": "samiya-crypt-basin",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "associated_structure_date": "Byzantine church; basin date unknown"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-zohar",
+        "relationships-highlands"
+      ],
+      "exposure": "already_inspected",
+      "note": "The basin was beneath a Byzantine church crypt; the church was later destroyed. The basin itself has no separate construction date or early-use interval."
+    },
+    {
+      "id": "relationships-kallai-location",
+      "feature_id": "marjama-kallai-pool",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "marjama-tell",
+        "asserted": null
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-kallai"
+      ],
+      "exposure": "derived",
+      "note": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing."
+    },
+    {
+      "id": "relationships-kallai-chronology",
+      "feature_id": "marjama-kallai-pool",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-kallai",
+        "relationships-zohar"
+      ],
+      "exposure": "derived",
+      "note": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread."
+    },
+    {
+      "id": "relationships-samiya-bronze-north",
+      "feature_id": "samiya-north-bronze-tombs",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "marjama-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-highlands",
+        "relationships-mazar"
+      ],
+      "exposure": "already_inspected",
+      "note": "Dhahr Mirzbaneh’s shaft tombs are documented north/NNE of the tell and attributed to Intermediate Bronze / Middle Bronze. Their ancient mouths and later accessibility are unobserved here.",
+      "reference_frame": "Published site-level qualitative location"
+    },
+    {
+      "id": "relationships-samiya-bronze-chronology",
+      "feature_id": "samiya-north-bronze-tombs",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "Intermediate Bronze / Middle Bronze; later accessible use unknown"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-highlands",
+        "relationships-mazar"
+      ],
+      "exposure": "already_inspected",
+      "note": "Bronze Age construction does not establish or exclude survival/accessibility in the early Roman window. There is no dated pit-mouth relation to this group."
+    },
+    {
+      "id": "relationships-hydraulics-location",
+      "feature_id": "samiya-hydraulic-system",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "marjama-tell",
+        "asserted": null
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-highlands"
+      ],
+      "exposure": "derived",
+      "note": "Roman–Byzantine dams and aqueducts are reported at Kh. Samiya south/SE of the tell. No surveyed contact to Kallai’s pool or the church crypt basin is established."
+    },
+    {
+      "id": "relationships-yanun-pit-coverage",
+      "feature_id": "yanun-site",
+      "property": "reported_pit_count",
+      "value": {
+        "reference_feature_id": null,
+        "asserted": null
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-yanun"
+      ],
+      "exposure": "already_inspected",
+      "note": "The inspected Kh. Yanun site record describes no pit/cistern/tomb. This is report coverage, not an archaeological absence; a pit role remains unassigned."
+    }
+  ],
+  "readings": [
+    {
+      "id": "RB-M",
+      "label": "Milik: north-facing opening",
+      "summary": "Pit north of Koḥlit; north-facing opening; tombs at its mouth. A vertical shaft has no facing azimuth until a side entrance is defined.",
+      "predicate_ids": [
+        "pool-east",
+        "pool-period",
+        "pool-north-corner",
+        "pit-north",
+        "pit-period",
+        "opening-north",
+        "graves-at-mouth",
+        "joint-accessibility"
+      ],
+      "source_ids": [
+        "relationships-text-e60"
+      ]
+    },
+    {
+      "id": "RB-P",
+      "label": "Puech: concealed opening",
+      "summary": "Pit north of Koḥlit; concealed opening; tombs at its mouth. No opening azimuth is imposed.",
+      "predicate_ids": [
+        "pool-east",
+        "pool-period",
+        "pool-north-corner",
+        "pit-north",
+        "pit-period",
+        "opening-concealed",
+        "graves-at-mouth",
+        "joint-accessibility"
+      ],
+      "source_ids": [
+        "relationships-text-e60"
+      ]
+    },
+    {
+      "id": "RB-B",
+      "label": "Buried: no required tombs",
+      "summary": "The project registry retains a separate buried reading without a required tomb landmark; no missing tomb becomes a scored failure. The opening interpretation remains unresolved.",
+      "predicate_ids": [
+        "pool-east",
+        "pool-period",
+        "pool-north-corner",
+        "pit-north",
+        "pit-period"
+      ],
+      "source_ids": [
+        "relationships-text-e60"
+      ]
+    },
+    {
+      "id": "RB-L",
+      "label": "Lefkovits: pit at Janoaḥ",
+      "summary": "Pit at reading-dependent Janoaḥ / Yanun; north of Koḥlit is tested separately. The Koḥlit anchor is not substituted for a Yanun pit coordinate.",
+      "predicate_ids": [
+        "pool-east",
+        "pool-period",
+        "pool-north-corner",
+        "pit-north",
+        "pit-period",
+        "pit-at-yanun",
+        "graves-at-mouth",
+        "joint-accessibility"
+      ],
+      "source_ids": [
+        "relationships-text-e60",
+        "relationships-yanun"
+      ]
+    }
+  ],
+  "windows": [
+    {
+      "id": "early",
+      "label": "50 BCE–70 CE",
+      "years": [
+        -50,
+        70
+      ],
+      "status": "exploratory project window",
+      "source_ids": [
+        "relationships-text-e60"
+      ]
+    },
+    {
+      "id": "extended",
+      "label": "50 BCE–135 CE",
+      "years": [
+        -50,
+        135
+      ],
+      "status": "exploratory extended project window",
+      "source_ids": [
+        "relationships-text-e60"
+      ]
+    }
+  ],
+  "predicates": [
+    {
+      "id": "pool-east",
+      "label": "Pool east of the Koḥlit anchor",
+      "relation": "east_of",
+      "subject": "pool",
+      "object": "anchor",
+      "source_ids": [
+        "relationships-text-core"
+      ],
+      "missing_detail": "No source-controlled observation of this relation is available.",
+      "required": true,
+      "required_for": [
+        "RB-M",
+        "RB-P",
+        "RB-B",
+        "RB-L"
+      ]
+    },
+    {
+      "id": "pool-period",
+      "label": "Pool accessible in the selected early window",
+      "relation": "exists_during",
+      "subject": "pool",
+      "object": null,
+      "source_ids": [
+        "relationships-text-core",
+        "relationships-text-e60"
+      ],
+      "missing_detail": "No source-controlled observation of this relation is available.",
+      "required": true,
+      "required_for": [
+        "RB-M",
+        "RB-P",
+        "RB-B",
+        "RB-L"
+      ]
+    },
+    {
+      "id": "pool-north-corner",
+      "label": "Ancient pool has the specified northern corner",
+      "relation": "has_ancient_northern_corner",
+      "subject": "pool",
+      "object": null,
+      "source_ids": [
+        "relationships-text-core"
+      ],
+      "missing_detail": "Historical basin descriptions and modern walls do not define a dated ancient northern-corner datum.",
+      "required": true,
+      "required_for": [
+        "RB-M",
+        "RB-P",
+        "RB-B",
+        "RB-L"
+      ]
+    },
+    {
+      "id": "pit-north",
+      "label": "Pit north of the Koḥlit anchor",
+      "relation": "north_of",
+      "subject": "pit",
+      "object": "anchor",
+      "source_ids": [
+        "relationships-text-e60"
+      ],
+      "missing_detail": "No source-controlled observation of this relation is available.",
+      "required": true,
+      "required_for": [
+        "RB-M",
+        "RB-P",
+        "RB-B",
+        "RB-L"
+      ]
+    },
+    {
+      "id": "pit-period",
+      "label": "Pit accessible in the selected early window",
+      "relation": "exists_during",
+      "subject": "pit",
+      "object": null,
+      "source_ids": [
+        "relationships-text-e60"
+      ],
+      "missing_detail": "No source-controlled observation of this relation is available.",
+      "required": true,
+      "required_for": [
+        "RB-M",
+        "RB-P",
+        "RB-B",
+        "RB-L"
+      ]
+    },
+    {
+      "id": "opening-north",
+      "label": "Defined side opening faces north",
+      "relation": "opens_toward_north",
+      "subject": "pit",
+      "object": null,
+      "source_ids": [
+        "relationships-text-e60"
+      ],
+      "missing_detail": "No defined side opening and source-controlled facing direction are supplied; a vertical shaft is not assigned an azimuth.",
+      "required": true,
+      "required_for": [
+        "RB-M"
+      ]
+    },
+    {
+      "id": "opening-concealed",
+      "label": "Opening was concealed in the relevant state",
+      "relation": "opening_concealed",
+      "subject": "pit",
+      "object": null,
+      "source_ids": [
+        "relationships-text-e60"
+      ],
+      "missing_detail": "No phase-controlled cover, blocking or concealment observation is supplied; later rubble is not automatically the ancient concealed opening.",
+      "required": true,
+      "required_for": [
+        "RB-P"
+      ]
+    },
+    {
+      "id": "graves-at-mouth",
+      "label": "Tombs at the pit mouth",
+      "relation": "at_mouth_of",
+      "subject": "graves",
+      "object": "pit",
+      "source_ids": [
+        "relationships-text-e60"
+      ],
+      "missing_detail": "Graves and a pit in the same northern sector do not establish individual tomb mouths at this pit mouth. No metric proximity tolerance is invented.",
+      "required": true,
+      "required_for": [
+        "RB-M",
+        "RB-P",
+        "RB-L"
+      ]
+    },
+    {
+      "id": "joint-accessibility",
+      "label": "Pit mouth and graves jointly accessible",
+      "relation": "coexisted_with",
+      "subject": "pit",
+      "object": "graves",
+      "source_ids": [
+        "relationships-text-e60"
+      ],
+      "missing_detail": "Independent feature dates and relative succession do not establish contemporaneous accessible mouths within the selected early window.",
+      "required": true,
+      "required_for": [
+        "RB-M",
+        "RB-P",
+        "RB-L"
+      ]
+    },
+    {
+      "id": "pit-at-yanun",
+      "label": "Pit lies at reading-dependent Janoaḥ / Yanun",
+      "relation": "within",
+      "subject": "pit",
+      "object": "route",
+      "source_ids": [
+        "relationships-text-e60",
+        "relationships-yanun"
+      ],
+      "missing_detail": "No named Yanun pit, its outline, date or mouth is documented. Kh. Yanun and Yanun village are retained distinct site alternatives.",
+      "required": true,
+      "required_for": [
+        "RB-L"
+      ]
+    },
+    {
+      "id": "same-construction-phase",
+      "label": "Quarry pits and graves share construction phase",
+      "relation": "constructed_same_phase_as",
+      "subject": "pit",
+      "object": "graves",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "missing_detail": "No source-controlled observation of this relation is available.",
+      "required": true,
+      "required_for": []
+    }
+  ],
+  "assignments": [
+    {
+      "id": "jericho-historical-ns1",
+      "label": "Jericho historical basin + NS1",
+      "roles": {
+        "anchor": "jericho-tell",
+        "pool": "jericho-historical-basin",
+        "pit": "jericho-cistern-ns1",
+        "graves": "jericho-north-graves",
+        "route": null
+      },
+      "source_ids": [
+        "relationships-dorrell",
+        "relationships-kenyon-II",
+        "relationships-kenyon-III"
+      ],
+      "reading_ids": [
+        "RB-M",
+        "RB-P",
+        "RB-B"
+      ],
+      "status": "exploratory assignment; no feature identity confirmed"
+    },
+    {
+      "id": "jericho-modern-ns1",
+      "label": "Jericho 1898 reservoir + NS1",
+      "roles": {
+        "anchor": "jericho-tell",
+        "pool": "jericho-reservoir-1898",
+        "pit": "jericho-cistern-ns1",
+        "graves": "jericho-north-graves",
+        "route": null
+      },
+      "source_ids": [
+        "relationships-dorrell",
+        "relationships-kenyon-II",
+        "relationships-kenyon-III"
+      ],
+      "reading_ids": [
+        "RB-M",
+        "RB-P",
+        "RB-B"
+      ],
+      "status": "exploratory assignment; no feature identity confirmed"
+    },
+    {
+      "id": "jericho-d9",
+      "label": "Jericho historical basin + D9",
+      "roles": {
+        "anchor": "jericho-tell",
+        "pool": "jericho-historical-basin",
+        "pit": "jericho-shaft-d9",
+        "graves": "jericho-north-graves",
+        "route": null
+      },
+      "source_ids": [
+        "relationships-dorrell",
+        "relationships-kenyon-II",
+        "relationships-kenyon-III"
+      ],
+      "reading_ids": [
+        "RB-M",
+        "RB-P",
+        "RB-B"
+      ],
+      "status": "exploratory assignment; no feature identity confirmed"
+    },
+    {
+      "id": "jericho-quarry",
+      "label": "Jericho historical basin + later quarry pits",
+      "roles": {
+        "anchor": "jericho-tell",
+        "pool": "jericho-historical-basin",
+        "pit": "jericho-later-quarry-pits",
+        "graves": "jericho-north-graves",
+        "route": null
+      },
+      "source_ids": [
+        "relationships-dorrell",
+        "relationships-kenyon-III"
+      ],
+      "reading_ids": [
+        "RB-M",
+        "RB-P",
+        "RB-B"
+      ],
+      "status": "exploratory assignment; no feature identity confirmed"
+    },
+    {
+      "id": "samiya-kallai",
+      "label": "Marjama unlocated Kallai pool + northern shaft-tomb sector",
+      "roles": {
+        "anchor": "marjama-tell",
+        "pool": "marjama-kallai-pool",
+        "pit": null,
+        "graves": "samiya-north-bronze-tombs",
+        "route": null
+      },
+      "source_ids": [
+        "relationships-kallai",
+        "relationships-highlands",
+        "relationships-mazar"
+      ],
+      "reading_ids": [
+        "RB-M",
+        "RB-P",
+        "RB-B"
+      ],
+      "status": "exploratory assignment; no feature identity confirmed"
+    },
+    {
+      "id": "samiya-crypt",
+      "label": "Marjama southwest crypt basin + northern shaft-tomb sector",
+      "roles": {
+        "anchor": "marjama-tell",
+        "pool": "samiya-crypt-basin",
+        "pit": null,
+        "graves": "samiya-north-bronze-tombs",
+        "route": null
+      },
+      "source_ids": [
+        "relationships-zohar",
+        "relationships-highlands",
+        "relationships-mazar"
+      ],
+      "reading_ids": [
+        "RB-M",
+        "RB-P",
+        "RB-B"
+      ],
+      "status": "exploratory assignment; no feature identity confirmed"
+    },
+    {
+      "id": "yanun-jericho-anchor",
+      "label": "Janoaḥ / Yanun pit unassigned; Jericho Koḥlit anchor",
+      "roles": {
+        "anchor": "jericho-tell",
+        "pool": "jericho-historical-basin",
+        "pit": null,
+        "graves": null,
+        "route": "yanun-site"
+      },
+      "source_ids": [
+        "relationships-text-e60",
+        "relationships-yanun"
+      ],
+      "reading_ids": [
+        "RB-L"
+      ],
+      "status": "exploratory assignment; no feature identity confirmed"
+    },
+    {
+      "id": "yanun-marjama-anchor",
+      "label": "Janoaḥ / Yanun pit unassigned; Marjama Koḥlit anchor",
+      "roles": {
+        "anchor": "marjama-tell",
+        "pool": "marjama-kallai-pool",
+        "pit": null,
+        "graves": null,
+        "route": "yanun-site"
+      },
+      "source_ids": [
+        "relationships-text-e60",
+        "relationships-yanun"
+      ],
+      "reading_ids": [
+        "RB-L"
+      ],
+      "status": "exploratory assignment; no feature identity confirmed"
+    }
+  ],
+  "graph_roles": [
+    {
+      "id": "anchor",
+      "label": "Koḥlit anchor"
+    },
+    {
+      "id": "pool",
+      "label": "Entry 11 pool"
+    },
+    {
+      "id": "pit",
+      "label": "Entry 60 pit"
+    },
+    {
+      "id": "graves",
+      "label": "Tomb mouths"
+    },
+    {
+      "id": "route",
+      "label": "Reading-dependent Janoaḥ"
+    }
+  ],
+  "supplementary_graph": [
+    {
+      "id": "relationships-e15-restored-north",
+      "entry": "15",
+      "lines": "IV 1–2",
+      "relation": "north_of",
+      "subject_role": "great_cistern",
+      "object_role": "anchor",
+      "restored": true,
+      "status": "unknown",
+      "feature_assignment": null,
+      "source_ids": [
+        "relationships-text-restored"
+      ],
+      "note": "The northern Koḥlit link is restored and north may attach to the cistern/pillar relation. NS1 is not automatically the great cistern with a northern pillar."
+    },
+    {
+      "id": "relationships-e16-restored-feeds",
+      "entry": "16",
+      "lines": "IV 3–5",
+      "relation": "feeds",
+      "subject_role": "conduit",
+      "object_role": "restored_pool",
+      "restored": true,
+      "status": "unknown",
+      "feature_assignment": null,
+      "source_ids": [
+        "relationships-text-restored"
+      ],
+      "note": "Puech restores a pool destination. Koḥlit association is contextual and equating this destination to Entry 11’s pool is a separate unverified alias hypothesis."
+    },
+    {
+      "id": "relationships-e19-eastern-pit",
+      "entry": "19",
+      "lines": "IV 11–12",
+      "relation": "east_of",
+      "subject_role": "pit",
+      "object_role": "another_pit",
+      "restored": false,
+      "status": "unknown",
+      "feature_assignment": null,
+      "source_ids": [
+        "relationships-text-core"
+      ],
+      "note": "Eastern selects among pits; no second pit datum is defined. A north-of-site relation cannot resolve eastern among pits. Allegro’s no-place-name variant remains outside this core pilot."
+    }
+  ],
+  "limits": [
+    "All inputs were already exposed in prior project work; none is an unused prediction or an independent confirmatory test.",
+    "The finite roster is selected for implementation and does not enumerate all Koḥlit proposals, regional pools, shafts or caves. Regional eligibility and denominator remain unknown.",
+    "Direction checks use explicitly attributed qualitative source statements or marked inference. They are not measured bearings, geographic outlines or tolerance-calibrated fits.",
+    "Separate construction phases can overlap in later usable states; relative pit/grave sequence does not establish or disprove early joint accessibility.",
+    "Known historical photographs cannot backdate the irregular basin or replace the securely 1898 reservoir with an ancient state.",
+    "Edition branches, Koḥlit anchors, pool/shaft identities and modern geographic positions remain separate hypotheses. Unknowns are never scored as misses.",
+    "Opening azimuth, mouth proximity, great-cistern identity, pillar position, conduit-to-pool identity and all phase-specific measuring datums remain unresolved. No new distances or deposits are generated.",
+    "The module imports source pointers, not source images; original reuse limits and parked acquisition remain unchanged."
+  ]
+}

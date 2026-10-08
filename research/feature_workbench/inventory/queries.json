@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "dimensions": [
+    {"id": "reading", "label": "Landmark reading", "options": [{"id": "pillar", "label": "Pillar", "property": "pillar"}, {"id": "terrace", "label": "Platform / terrace", "property": "terrace_association"}], "source_ids": ["inventory-puech-entry25"]},
+    {"id": "orientation", "label": "Eastward attachment", "options": [{"id": "cave", "label": "Cave-level aspect", "property": "cave_east_aspect"}, {"id": "both-mouths", "label": "Both openings, qualitative aspect", "property": "both_openings_east_aspect"}], "source_ids": ["inventory-puech-entry25"], "note": "Separate hypotheses. No exact azimuth or numerical tolerance is supplied by the edition."},
+    {"id": "unit", "label": "Exploratory cubit sample", "options": [{"id": "0.40", "label": "0.40 m / cubit", "value": 0.4}, {"id": "0.50", "label": "0.50 m / cubit", "value": 0.5}, {"id": "0.60", "label": "0.60 m / cubit", "value": 0.6}], "source_ids": ["inventory-entry25-assessment"], "note": "Finite sensitivity samples from the existing exploratory 0.40–0.60 m range; not a textual calibration or confirmatory freeze."},
+    {"id": "direction", "label": "Three-cubit interpretation", "options": [{"id": "vertical", "label": "Vertical below northern threshold"}, {"id": "horizontal", "label": "Horizontal distance from northern opening"}], "source_ids": ["inventory-puech-entry25", "inventory-entry25-assessment"], "note": "Project interpretations requiring an origin and vertical datum or horizontal path. Three cubits is not an opening width."},
+    {"id": "phase", "label": "Feature state", "options": [{"id": "reported", "label": "Reported layout", "value": "reported_state"}, {"id": "ancient", "label": "Ancient arrangement", "value": "ancient_arrangement"}], "source_ids": ["inventory-entry25-assessment"], "note": "Reported layout compatibility alone does not establish ancient coexistence. Ancient geometry requires dated architectural contacts; its exact chronological association remains unresolved."},
+    {"id": "deposit", "label": "Deposit antecedent", "options": [{"id": "below-jar", "label": "Below the jar"}, {"id": "below-book", "label": "Below the book inside the jar"}], "source_ids": ["inventory-puech-entry25"], "note": "Retained edition alternatives. They change the predicted assembly, not the reported cave-form criteria; an observed jar is not a required feature-identification predicate."}
+  ],
+  "queries": [
+    {
+      "id": "inventory-entry25-form",
+      "title": "Entry 25: reported feature form",
+      "claim": "Compare the published two-opening arrangement, retained landmark readings and qualitative eastward attachment across the same three controls.",
+      "branch_dimensions": ["reading", "orientation"],
+      "kind": "reported_form",
+      "source_ids": ["inventory-puech-entry25"],
+      "note": "Compatibility is exploratory and limited to reported form. Neither northern-opening width nor internal connectivity is a mandatory text predicate."
+    },
+    {
+      "id": "inventory-entry25-target-prerequisites",
+      "title": "Entry 25: target prerequisites",
+      "claim": "Determine whether a three-cubit target can be specified under each retained reading, orientation, unit, direction, feature-state and deposit-position branch.",
+      "branch_dimensions": ["reading", "orientation", "unit", "direction", "phase", "deposit"],
+      "kind": "target_prerequisites",
+      "source_ids": ["inventory-puech-entry25", "inventory-entry25-assessment"],
+      "note": "A target-prerequisite check is distinct from observing a deposit. Missing datum, ancient contact or path records remain unknown. Source-plan aperture chords cannot supply true bearings, threshold elevations or geographic deposit points."
+    }
+  ]
+}
