@@ -1,0 +1,1060 @@
+{
+  "schema_version": 1,
+  "mode": "planning_only",
+  "as_of_utc": "2026-10-08",
+  "priority_scale": [
+    {
+      "id": "high",
+      "label": "High",
+      "meaning": "A named missing observation gates a currently useful branch; this is a qualitative judgment, not a probability, information-gain score or prediction of access."
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "meaning": "A narrower dependency or a file without a confirmed accession; prepare extraction fields while known requests and exact-page dependencies are pending."
+    }
+  ],
+  "selection_policy": {
+    "label": "Possible outcome — not observed",
+    "purpose": "Preview a conditional consequence before obtaining the exact observation.",
+    "actual_results_source": "Task current_evidence and linked reviewed evidence records only; outcomes never overwrite them.",
+    "no_research_result_mutation": true,
+    "no_request_status_mutation": true,
+    "no_correspondence_or_purchases": true,
+    "confirmation_gate": "Support for a landmark requires discrimination under equally available alternatives plus a specific preregistered demonstrably unused observation; this planning queue supplies neither.",
+    "negative_deposit_gate": "A negative excavation needs the ancient target volume, phase/datum, excavation reach, disturbance and detection limits; source silence or no reply is unknown.",
+    "parked_acquisitions": [
+      "A(C)94 geometry reruns and unchanged source hunts",
+      "Peleg map retrieval in historical M03",
+      "Gerico in historical M05",
+      "Paid scan/RAF/image requests or fees"
+    ],
+    "activity_delta": {
+      "source_inspections": 0,
+      "bounded_checks": 0,
+      "outcomes": 0,
+      "correspondence": 0,
+      "fees": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "decisions-queue",
+      "title": "Historical measurement queue",
+      "citation": "Queue created 2 October 2026; six tracks M01–M06, last completed cycle 4",
+      "repo_path": "research/measurements/queue.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-active",
+      "title": "Current evidence and blockers",
+      "citation": "ACTIVE_TEST, updated 8 October 2026 UTC: Koḥlit follow-up; closed Wadi and Siloam results; parked A(C)94 and sent inquiries",
+      "repo_path": "research/ACTIVE_TEST.md",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-xii10-protocol",
+      "title": "XII 10 frozen image-reading protocol",
+      "citation": "Protocol dated 8 October UTC; R1–R7, frame authentication, independent human scoring, deterministic outcomes and exposure audit; freeze commit fd3f334ea2a40c0f8e99921ef663f8b126112fe1",
+      "repo_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md",
+      "inspection": "derived",
+      "url": "https://github.com/quadrin/CopperScroll/commit/fd3f334ea2a40c0f8e99921ef663f8b126112fe1"
+    },
+    {
+      "id": "decisions-outreach",
+      "title": "Manchester and IAA sent-request record",
+      "citation": "7 October 2026, 15:43:39–15:43:42 UTC: Manchester C.21A.1–4/C.22A.1–10/C.21-23.1 and TPA/1/132; IAA regional cave inventory. Sent verified; delivery/replies unverified.",
+      "repo_path": "research/agent_review_2026-10-07/followup/F_outreach_sent.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "decisions-iv17-phase",
+      "title": "IV/17 catalogue and architectural-contact audit",
+      "citation": "Sion 2002, Atiqot 41 part 1, pp.63–64, Plan 5 p.63, Table 1 p.81 and notes pp.82–83; Michael Dadon permit L-656, baskets 656.17/656.20",
+      "repo_path": "research/measurements/cycle3/iv17_phase.json",
+      "inspection": "already_inspected",
+      "url": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/",
+      "original_campaign": "Dadon IV/17 excavation, permit L-656; survey finds kept separate"
+    },
+    {
+      "id": "decisions-iv17-unread-file",
+      "title": "Unobtained IV/17 field-file dependency",
+      "citation": "Michael Dadon permit L-656: original plan/north, basket–locus joins 656.17/656.20, southern-wall contacts and northern-threshold sections/levels; no specific online file inspected",
+      "repo_path": "research/measurements/cycle3/iv17_phase.json",
+      "inspection": "not_inspected"
+    },
+    {
+      "id": "decisions-kallai-unread",
+      "title": "Uninspected Kallai pool pages",
+      "citation": "Kallai, Survey of the Land of Benjamin and Mt. Ephraim, in Kochavi (ed.) 1972, pp.153–196; target pp.172–173, sites 65–66, title leaf and relevant plans/captions",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "not_inspected",
+      "url": "https://www.nli.org.il/he/books/NNL_ALEPH990019622650205171/NLI"
+    },
+    {
+      "id": "decisions-marjama-review",
+      "title": "Kh. el-Marjama source and access review",
+      "citation": "B follow-up: supplied HA 76 (1981) p.19 inspected; no pool/bearing/date; Kallai 1972 pp.172–173 remain unread after the 115-document audit",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-kenyon-text",
+      "title": "Kenyon III graves and later pits",
+      "citation": "Kenyon and Holland, Excavations at Jericho III, Text (1981), pp.173–174/PDF207–208; introduction pp.3–4; Trench II/Site O phases lxxvi–lxxvii; typological first-century AD attribution, not direct grave offerings",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon Jericho excavation lineage"
+    },
+    {
+      "id": "decisions-kenyon-unread-plates",
+      "title": "Uninspected separate eastern section and Plate 111b",
+      "citation": "Kenyon III separate plate volume: eastern section at local 37.50–38.00 m N / 8.17 m H, referenced pp.173–174; burial photograph Pl.111b, with native captions/errata. Eastern-section plate number remains unknown.",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "not_inspected"
+    },
+    {
+      "id": "decisions-jericho-roster",
+      "title": "Jericho inventory and equal-observation gates",
+      "citation": "Regional inventory 6 October 2026: 28 source notices, 12 documentary sectors and 21 coverage obligations; priority observation groups 1–5 and decision",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-jericho-contacts",
+      "title": "A(C)94 inlet survey and archive-referral record",
+      "citation": "Netzer 2001 Vol.I pp.50–52,57–59,66, Plan13 p.52; Trümper 2018 pp.283–284 nn.57–58; 6 October Ruhama custody reply and sent Rachel/Roi referrals. Invert/centre/crown, datum and contacts unknown.",
+      "repo_path": "research/assessments/entry29_jericho_pools/netzer2001-first-pass.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Netzer Jericho expedition; derivative Trümper plan is the same lineage"
+    },
+    {
+      "id": "decisions-siloam",
+      "title": "Siloam main-basin contact and sent-section request",
+      "citation": "Cycle15 main-pool follow-up, 6 October 2026: Greenhut–Mazor 2020 Plan1 pp.74*,76*,83*; Szanton–Vukosavović–Berko 2024 pp.25*,33* n.3,34*; main-side section request sent 05:29:46 UTC",
+      "repo_path": "research/measurements/cycle15/siloam_bathing.json",
+      "inspection": "already_inspected",
+      "original_campaign": "Siloam 2009 excavation and Birket 2023–2024 excavation, distinct campaigns"
+    },
+    {
+      "id": "decisions-wadi",
+      "title": "Wadi original coverage and archive referral",
+      "citation": "Dinur–Feig, ESI5 (cover1986, printing1987), pp.110–111/PDF118–119, Fig.56 artifacts; supplied_original_review/current_status; archive referral sent 6 October 2026 14:17:38 UTC",
+      "repo_path": "research/assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.json",
+      "inspection": "already_inspected",
+      "original_campaign": "Dinur–Feig Wadi Nuʿeima inspection lineage"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "decisions-xii10",
+      "title": "Manchester: XII 10 letter sequence",
+      "priority": "high",
+      "priority_reason": "A reading fork changes which later linguistic and geographic branches are available; the image protocol is already frozen.",
+      "claim": "Can the engraved second word of XII 10 discriminate the seven registered letter sequences?",
+      "questions": [
+        "R07"
+      ],
+      "feature_ids": [],
+      "source_ids": [
+        "decisions-xii10-protocol",
+        "decisions-outreach",
+        "decisions-active"
+      ],
+      "current_evidence": {
+        "status": "unknown",
+        "detail": "R1–R7 remain open under the committed future-image rule. No new Manchester scan has been opened and no diagnostic observation is certified unused.",
+        "exposure": "derived"
+      },
+      "request": {
+        "status": "sent_pending",
+        "scope": "Manchester Museum strip-photo request and Library cutting-record request were sent; their delivery/replies and a fresh diagnostic frame are unverified.",
+        "delivery": "unverified",
+        "reply": "unverified",
+        "source_ids": [
+          "decisions-outreach"
+        ]
+      },
+      "record_needed": [
+        "Authenticated native C.21A.1–4, C.22A.1–10 and C.21-23.1 context across the 21/22 cut",
+        "Frame lineage, native dimensions, neighboring text/physical anchors and source rights",
+        "Two independent epigraphic readings, locked before comparison",
+        "Item-level prior-exposure audit for the exact proposed diagnostic observation"
+      ],
+      "access": {
+        "status": "pending_record",
+        "route": "Existing Manchester requests",
+        "detail": "Await the recorded requests; an enlarged known image is the same observational lineage. No duplicate inquiry or paid scan is scheduled.",
+        "custody_verified": false
+      },
+      "effort": {
+        "level": "specialist_reading",
+        "detail": "Authentication and lineage audit, then two independent human epigraphic readings under the frozen protocol; AI review remains exploratory."
+      },
+      "next_action": "Prepare an item-level lineage/ROI record and anonymous scorer packet from the frozen protocol; on authorized receipt, audit exposure with the diagnostic region masked before release.",
+      "freeze": {
+        "status": "frozen",
+        "commit": "fd3f334ea2a40c0f8e99921ef663f8b126112fe1",
+        "spec_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md",
+        "unused_status": "unverified",
+        "detail": "Commit fd3f334 freezes R1–R7, frame/human-reading gates and deterministic letter outcomes. It reserves no certified unused observation; meaning and archaeology remain separate claims."
+      },
+      "outcomes": [
+        {
+          "id": "one-sequence",
+          "label": "One registered string alone survives",
+          "status": "compatible",
+          "condition": "Frame/authentication and human-scoring gates pass; every component is decisive; exactly one of R1–R7 survives and no unresolved extra sign remains.",
+          "consequences": [
+            "Record support relative to R1–R7 for letter identity, with every rejected component and frame.",
+            "Use the surviving reading in a separate linguistic argument; preserve the archaeological registry.",
+            "Claim an unused prediction only if the prior-exposure audit actually certifies the reserved observation."
+          ],
+          "remaining_unknowns": [
+            "Meaning/cancellation intent, attachment of north, Koḥlit/Janoaḥ geography and deposit survival",
+            "Independent-confirmation status unless unused observation is demonstrably established"
+          ],
+          "claim_scope": "The engraved second word of XII 10 only; no geographic or archaeological identification.",
+          "recorded": false
+        },
+        {
+          "id": "partial-reading",
+          "label": "Several strings or components remain unresolved",
+          "status": "unknown",
+          "condition": "Authenticated usable views resolve some components, but two or more strings survive, an extra sign is ambiguous, or the full word is not decisive.",
+          "consequences": [
+            "Publish the component verdicts and all surviving R1–R7 strings.",
+            "Close the complete-word claim as not identifiable from the supplied evidence; do not choose the string that best fits a site."
+          ],
+          "remaining_unknowns": [
+            "The unresolved letter components and surviving complete strings",
+            "All archaeological associations"
+          ],
+          "claim_scope": "The engraved second word of XII 10 only; no geographic or archaeological identification.",
+          "recorded": false
+        },
+        {
+          "id": "finite-set-rejected",
+          "label": "All seven strings conflict with decisive marks",
+          "status": "contradicted",
+          "condition": "At least one decisive component contradicts each complete R1–R7 string under the frozen absence/damage gates.",
+          "consequences": [
+            "Reject the finite registered set and transcribe the observed sequence without promoting an unregistered interpretation.",
+            "Any expanded reading set starts a separately dated exploratory specification."
+          ],
+          "remaining_unknowns": [
+            "An interpretation of the observed sequence",
+            "Geographic and archaeological consequences"
+          ],
+          "claim_scope": "The engraved second word of XII 10 only; no geographic or archaeological identification.",
+          "recorded": false
+        },
+        {
+          "id": "reading-gate-fails",
+          "label": "Image or reader gates cannot be satisfied",
+          "status": "unknown",
+          "condition": "Authentication, informative resolution, damage/absence controls, independent human readers or agreement fail; the target cannot be scored decisively.",
+          "consequences": [
+            "Retain not identifiable and preserve the existing exploratory plate result.",
+            "Name the failed gate; no invisible component is scored absent and no generative or classifier reconstruction decides it."
+          ],
+          "remaining_unknowns": [
+            "The affected letter components",
+            "Observation lineage/unused status where not auditable"
+          ],
+          "claim_scope": "The engraved second word of XII 10 only; no geographic or archaeological identification.",
+          "recorded": false
+        }
+      ],
+      "result_id": "decisions-xii10-plan",
+      "registered_readings": [
+        {
+          "id": "R1",
+          "sequence": "שכנה"
+        },
+        {
+          "id": "R2",
+          "sequence": "שבנה"
+        },
+        {
+          "id": "R3",
+          "sequence": "שבצח"
+        },
+        {
+          "id": "R4",
+          "sequence": "שבינח"
+        },
+        {
+          "id": "R5",
+          "sequence": "שכינה"
+        },
+        {
+          "id": "R6",
+          "sequence": "שכונה"
+        },
+        {
+          "id": "R7",
+          "sequence": "שבצהב"
+        }
+      ],
+      "cut_letter_candidates": [
+        "ה",
+        "ח",
+        "ת",
+        "unresolved"
+      ]
+    },
+    {
+      "id": "decisions-iv17-l656",
+      "title": "IV/17: permit L-656 threshold and wall contacts",
+      "priority": "high",
+      "priority_reason": "The cave drawing is usable, but construction phase and the northern threshold block a controlled ancient-state/depth comparison.",
+      "claim": "Can a dated IV/17 architecture state and ancient northern-threshold datum be established from the original field record?",
+      "questions": [
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "feature_ids": [
+        "iv17-cave",
+        "iv17-north-mouth",
+        "iv17-south-mouth",
+        "iv17-pillar",
+        "iv17-south-wall"
+      ],
+      "source_ids": [
+        "decisions-iv17-phase",
+        "decisions-iv17-unread-file",
+        "decisions-outreach",
+        "decisions-active"
+      ],
+      "current_evidence": {
+        "status": "unknown",
+        "detail": "Sion Plan5 records two mouths, a pillar and southern masonry. Survey coins 60/61 and excavation baskets 656.17/656.20 have no published wall/threshold contact; construction dates, ancient threshold and true north remain unknown.",
+        "exposure": "already_inspected"
+      },
+      "request": {
+        "status": "related_request_pending",
+        "scope": "IAA regional cave-inventory inquiry is sent and pending. It is not a verified request for, holding of, or accession to the particular L-656 file.",
+        "delivery": "unverified",
+        "reply": "unverified",
+        "source_ids": [
+          "decisions-outreach",
+          "decisions-iv17-unread-file"
+        ]
+      },
+      "record_needed": [
+        "Dadon permit L-656 original plan, north convention and survey control",
+        "Basket-to-locus joins for 656.17/656.20; separate survey coins 60/61",
+        "Southern-wall foundation/contact sequence tied to diagnostic dating contexts",
+        "Northern-threshold section, ancient surface and levels linked to a benchmark"
+      ],
+      "access": {
+        "status": "pending_record",
+        "route": "Published archive-class pointer and pending IAA inventory request",
+        "detail": "Specific L-656 online file and current custody are unverified. Preserve the inventory request status; no new correspondence is initiated here.",
+        "custody_verified": false
+      },
+      "effort": {
+        "level": "field_record_audit",
+        "detail": "Join drawings, notebooks, baskets and levels across the original file; survey-find dates alone do not date architecture."
+      },
+      "next_action": "Prepare the permit/basket/contact extraction fields. Await a specific file or custodian referral; freeze the chosen Entry25 branches and audit exposure before any reserved observation.",
+      "freeze": {
+        "status": "not_frozen",
+        "commit": null,
+        "spec_path": null,
+        "unused_status": "unverified",
+        "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+      },
+      "outcomes": [
+        {
+          "id": "dated-state",
+          "label": "Coexisting architecture and ancient threshold established",
+          "status": "compatible",
+          "condition": "Original linked records establish the named mouth/pillar/wall state and ancient threshold/benchmark within a declared phase, with uncertainty and north convention defined.",
+          "consequences": [
+            "Create observed/reconstructed state records separately; derive the permitted geometry and vertical-datum comparisons.",
+            "Run the same finite Entry25 reading/unit/orientation/phase branches on IV/11 and Twin Cave."
+          ],
+          "remaining_unknowns": [
+            "Regional cave eligibility/coverage",
+            "A discriminating unused prediction",
+            "Whether the selected textual criterion is genuinely required"
+          ],
+          "claim_scope": "The named IV/17 architectural state, datum and constraint branch; not all Entry 25 candidates or a deposit.",
+          "recorded": false
+        },
+        {
+          "id": "state-conflict",
+          "label": "Required architecture contradicts a fixed phase branch",
+          "status": "contradicted",
+          "condition": "Dated contacts show a feature required by a frozen branch absent or inaccessible throughout that branch's permitted interval, and the observation covers that feature adequately.",
+          "consequences": [
+            "Reject only that feature-state/reading assignment, retaining the other declared branches.",
+            "Do not transfer a wall-use or pottery date to an unconnected northern threshold."
+          ],
+          "remaining_unknowns": [
+            "Other readings, mouths, states and candidates",
+            "Deposit existence or survival"
+          ],
+          "claim_scope": "The named IV/17 architectural state, datum and constraint branch; not all Entry 25 candidates or a deposit.",
+          "recorded": false
+        },
+        {
+          "id": "partial-file",
+          "label": "File clarifies finds but not architecture/datum",
+          "status": "unknown",
+          "condition": "The record supplies catalogues or use dates without a sealed wall/threshold relation, defined ancient surface, north convention or benchmark.",
+          "consequences": [
+            "Keep architectural chronology and vertical target unresolved.",
+            "Record the clarified find provenance without converting cave-use dates or 2D connectivity into ancient traversability."
+          ],
+          "remaining_unknowns": [
+            "Wall/threshold construction chronology",
+            "Ancient threshold datum, true bearing and traversability"
+          ],
+          "claim_scope": "The named IV/17 architectural state, datum and constraint branch; not all Entry 25 candidates or a deposit.",
+          "recorded": false
+        },
+        {
+          "id": "file-unavailable",
+          "label": "Specific record unavailable or not identified",
+          "status": "unknown",
+          "condition": "No authentic L-656 item/section arrives, custody is unresolved or the requested feature was not recorded.",
+          "consequences": [
+            "Retain the present unknowns and exact archive dependency.",
+            "Treat missing documentation as unknown, with no scored candidate miss or negative excavation."
+          ],
+          "remaining_unknowns": [
+            "The original field observation and archive accession",
+            "All phase/datum gates"
+          ],
+          "claim_scope": "The named IV/17 architectural state, datum and constraint branch; not all Entry 25 candidates or a deposit.",
+          "recorded": false
+        }
+      ],
+      "result_id": "decisions-iv17-l656-plan"
+    },
+    {
+      "id": "decisions-kallai-pool",
+      "title": "Kallai pp.172–173: locate and date the pool",
+      "priority": "high",
+      "priority_reason": "A short, exact original-page dependency could resolve the bearing of a competing Koḥlit feature assignment.",
+      "claim": "Does Kallai's particular pool satisfy a fixed east-of-tell and instruction-relevant phase branch at Kh. el-Marjama?",
+      "questions": [
+        "R07",
+        "R09"
+      ],
+      "feature_ids": [
+        "marjama-tell",
+        "marjama-kallai-pool",
+        "samiya-crypt-basin"
+      ],
+      "source_ids": [
+        "decisions-kallai-unread",
+        "decisions-marjama-review",
+        "decisions-active"
+      ],
+      "current_evidence": {
+        "status": "unknown",
+        "detail": "Kallai1972 pp.172–173 remain unread. The inspected HA76 p.19 describes settlement work and no pool/bearing/date; the separate church-crypt basin is southwest of the tell and does not locate Kallai's feature.",
+        "exposure": "already_inspected"
+      },
+      "request": {
+        "status": "not_requested",
+        "scope": "No targeted Kallai original-page request is recorded in the reviewed follow-up; the bounded public access pass is closed.",
+        "delivery": null,
+        "reply": null,
+        "source_ids": [
+          "decisions-marjama-review"
+        ]
+      },
+      "record_needed": [
+        "Kallai1972 pp.172–173, title leaf and sites65–66 context",
+        "Relevant plan/caption identifying the rock-cut pool independently of the crypt basin",
+        "Location/bearing relative to the tell in the source's reference frame",
+        "Pool construction/use evidence, with the basis and uncertainty of any date"
+      ],
+      "access": {
+        "status": "original_not_obtained",
+        "route": "Exact volume through a supplied copy or library scan",
+        "detail": "Known NLI/CMHL routes have an access blocker recorded; no renewed broad hunt, purchase or request is scheduled.",
+        "custody_verified": false
+      },
+      "effort": {
+        "level": "bounded_original_review",
+        "detail": "Authenticate a finite original-page set and its plans/captions; dating may still require a later feature-specific field record."
+      },
+      "next_action": "Keep a pool identity/bearing/date extraction record ready for the exact original pages; retain the unlocated feature as unknown.",
+      "freeze": {
+        "status": "not_frozen",
+        "commit": null,
+        "spec_path": null,
+        "unused_status": "unverified",
+        "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+      },
+      "outcomes": [
+        {
+          "id": "east-period",
+          "label": "Named pool east of tell and phase-compatible",
+          "status": "compatible",
+          "condition": "The authentic original independently locates that same pool east of the tell and provides feature-specific construction/use evidence compatible with a fixed instruction-period branch.",
+          "consequences": [
+            "Retain that east-of-tell feature assignment for equal-rule comparison against Jericho and other registered alternatives.",
+            "Separate the original observation from a reconstruction or proposed identification."
+          ],
+          "remaining_unknowns": [
+            "The rest of the relational pattern and complete regional inventory",
+            "A reserved unused prediction and geographic registration"
+          ],
+          "claim_scope": "Kallai's particular rock-cut pool assigned to the fixed east-of-Koḥlit branch; not the whole Marjama hypothesis.",
+          "recorded": false
+        },
+        {
+          "id": "bearing-or-phase-miss",
+          "label": "Fixed bearing or period branch contradicted",
+          "status": "contradicted",
+          "condition": "The authentic original locates the same pool outside the fixed east relation, or feature-specific dates exclude usability within every retained phase of the stated branch.",
+          "consequences": [
+            "Reject only that pool/reading/phase assignment.",
+            "Preserve untested other pools and readings; do not equate the crypt basin or an aerial dark patch with Kallai's pool."
+          ],
+          "remaining_unknowns": [
+            "Other possible Marjama features and readings",
+            "All broader geographic claims"
+          ],
+          "claim_scope": "Kallai's particular rock-cut pool assigned to the fixed east-of-Koḥlit branch; not the whole Marjama hypothesis.",
+          "recorded": false
+        },
+        {
+          "id": "identity-only",
+          "label": "Pool identity improves; bearing or date still unknown",
+          "status": "unknown",
+          "condition": "Original pages identify a pool but lack a source-controlled bearing or feature-specific dating relation.",
+          "consequences": [
+            "Add the verified identity/provenance and retain unresolved relation/phase fields as null.",
+            "No pool fit, miss or landscape-wide rarity follows from a description alone."
+          ],
+          "remaining_unknowns": [
+            "Bearing/reference frame",
+            "Pool construction/use period and coexistence"
+          ],
+          "claim_scope": "Kallai's particular rock-cut pool assigned to the fixed east-of-Koḥlit branch; not the whole Marjama hypothesis.",
+          "recorded": false
+        },
+        {
+          "id": "pages-inconclusive",
+          "label": "Original absent or supplies no locatable pool",
+          "status": "unknown",
+          "condition": "The target pages are not obtained/authenticated or do not establish the expected pool/location/date.",
+          "consequences": [
+            "Retain not identifiable for this dependency and name the exact remaining source/feature gap.",
+            "Report silence is no proof that the pool never existed."
+          ],
+          "remaining_unknowns": [
+            "The feature assignment, bearing and date"
+          ],
+          "claim_scope": "Kallai's particular rock-cut pool assigned to the fixed east-of-Koḥlit branch; not the whole Marjama hypothesis.",
+          "recorded": false
+        }
+      ],
+      "result_id": "decisions-kallai-pool-plan"
+    },
+    {
+      "id": "decisions-kenyon-section",
+      "title": "Kenyon III: eastern section and Plate111b",
+      "priority": "medium",
+      "priority_reason": "The text is inspected and establishes truncation; the missing drawings could improve one opening/grave assignment, while several other Koḥlit dependencies remain.",
+      "claim": "Can the eastern section and Plate111b establish a dated usable opening beside surviving north-side graves?",
+      "questions": [
+        "R07",
+        "R09"
+      ],
+      "feature_ids": [
+        "jericho-tell",
+        "jericho-north-graves",
+        "jericho-later-quarry-pits",
+        "jericho-shaft-d9",
+        "jericho-cistern-ns1"
+      ],
+      "source_ids": [
+        "decisions-kenyon-text",
+        "decisions-kenyon-unread-plates",
+        "decisions-active"
+      ],
+      "current_evidence": {
+        "status": "unknown",
+        "detail": "III pp.173–174 records about18 graves, a typological first-centuryAD attribution, and later undated quarry pits truncating graves. Same construction phase is contradicted for those pits/graves; use beside surviving graves in the relevant period is still unknown.",
+        "exposure": "already_inspected"
+      },
+      "request": {
+        "status": "not_requested",
+        "scope": "The III text access dependency is resolved. The separate eastern section and Plate111b remain uninspected; no new plate-volume request is recorded here.",
+        "delivery": null,
+        "reply": null,
+        "source_ids": [
+          "decisions-kenyon-unread-plates",
+          "decisions-active"
+        ]
+      },
+      "record_needed": [
+        "Authenticated separate III plate volume with title, captions and errata",
+        "Actual eastern section at local37.50–38.00mN/8.17mH; its plate number is not yet known",
+        "Plate111b burial photograph and feature/phase key",
+        "A mouth/grave identity crosswalk, dated usability and ancient surface; local coordinates remain local"
+      ],
+      "access": {
+        "status": "original_not_obtained",
+        "route": "Separate III plate volume and original drawing provenance",
+        "detail": "Do not reacquire the inspected text or substitute Pl.256a, which is cited for adjacent IronAge phases. Current field-record custody/accession is unverified.",
+        "custody_verified": false
+      },
+      "effort": {
+        "level": "bounded_original_review",
+        "detail": "Authenticate exact plates/section and correlate local labels to the text; an absolute usable-mouth date may still require field records."
+      },
+      "next_action": "Prepare the section/photograph feature and phase crosswalk; obtain the exact separate drawings when made available and preserve all local-frame qualifications.",
+      "freeze": {
+        "status": "not_frozen",
+        "commit": null,
+        "spec_path": null,
+        "unused_status": "unverified",
+        "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+      },
+      "outcomes": [
+        {
+          "id": "usable-mouth",
+          "label": "Dated opening beside accessible graves",
+          "status": "compatible",
+          "condition": "Drawing and linked dating evidence independently identify an opening usable beside the named surviving graves within the fixed instruction-period branch.",
+          "consequences": [
+            "Retain only that mouth/grave/phase assignment for the full Koḥlit relational comparison.",
+            "Record observation, typological date and inferred accessibility separately; older graves need not have been constructed with the opening."
+          ],
+          "remaining_unknowns": [
+            "Textual mouth/tomb identity",
+            "Other relations, regional controls and unused prediction"
+          ],
+          "claim_scope": "A particular north-side opening accessible beside particular graves during the fixed Entry60 date/reading branch.",
+          "recorded": false
+        },
+        {
+          "id": "period-or-access-miss",
+          "label": "Named opening is too late or inaccessible",
+          "status": "contradicted",
+          "condition": "Feature-specific dating or adequate observed layout excludes that opening's usable access beside the named graves across all retained phases of the fixed branch.",
+          "consequences": [
+            "Reject only that opening/grave assignment.",
+            "Keep other untested north-side openings; postdating graves alone is insufficient to establish this miss."
+          ],
+          "remaining_unknowns": [
+            "Other earlier openings and grave-access configurations",
+            "Broader Tell es-Sultan assignment"
+          ],
+          "claim_scope": "A particular north-side opening accessible beside particular graves during the fixed Entry60 date/reading branch.",
+          "recorded": false
+        },
+        {
+          "id": "truncation-only",
+          "label": "Drawings show truncation without dated usability",
+          "status": "unknown",
+          "condition": "Section/photograph clarifies the later pit cuts or graves but establishes neither a usable opening's date nor surviving grave-mouth access in the selected interval.",
+          "consequences": [
+            "Keep the documented relative sequence and not-identifiable mouth relation.",
+            "Do not rename quarries as cisterns or convert local coordinates to national positions."
+          ],
+          "remaining_unknowns": [
+            "Opening identity/absolute date",
+            "Ancient surface and access state"
+          ],
+          "claim_scope": "A particular north-side opening accessible beside particular graves during the fixed Entry60 date/reading branch.",
+          "recorded": false
+        },
+        {
+          "id": "drawing-gate-fails",
+          "label": "Required section/plate or crosswalk unavailable",
+          "status": "unknown",
+          "condition": "The exact drawings/captions are absent, unreadable, unauthenticated or cannot be joined to the named feature.",
+          "consequences": [
+            "Retain the specific unresolved dependency without reopening the inspected text acquisition.",
+            "Document the coverage limit; no unknown opening is scored absent."
+          ],
+          "remaining_unknowns": [
+            "Section/plate feature identities",
+            "Mouth geometry, phase and datum"
+          ],
+          "claim_scope": "A particular north-side opening accessible beside particular graves during the fixed Entry60 date/reading branch.",
+          "recorded": false
+        }
+      ],
+      "result_id": "decisions-kenyon-section-plan"
+    },
+    {
+      "id": "decisions-jericho-contacts",
+      "title": "Jericho: phase-controlled wall aperture and levels",
+      "priority": "high",
+      "priority_reason": "Named aperture, face and surface definitions block comparable metric tests despite published dimensions and level numbers.",
+      "claim": "Can a named basin-wall aperture, finite ancient face and contemporary surface be placed in one controlled phase and survey frame?",
+      "questions": [
+        "R08",
+        "R09"
+      ],
+      "feature_ids": [],
+      "source_ids": [
+        "decisions-jericho-roster",
+        "decisions-jericho-contacts",
+        "decisions-active"
+      ],
+      "current_evidence": {
+        "status": "unknown",
+        "detail": "No J01–J28 record has a complete verified phase/contact/face/surface/datum package. A(C)94 numbers102.87/102.80 and bench102.73 have unresolved point definitions. The A(C)94 geometry result is closed and acquisition remains parked.",
+        "exposure": "already_inspected"
+      },
+      "request": {
+        "status": "sent_pending",
+        "scope": "Ruhama's unit replied that it holds no requested records; referrals to Rachel Bar-Nathan and Roi Porat were sent. Their delivery/replies, a current custodian, section and accession remain unverified.",
+        "delivery": "unverified",
+        "reply": "unverified",
+        "source_ids": [
+          "decisions-jericho-contacts"
+        ]
+      },
+      "record_needed": [
+        "An original early-pipe wall-junction section, field-item ID and level register for A(C)94",
+        "Invert/centre/crown versus other point definitions for102.87/102.80; benchmark and ancient wall-face/surface",
+        "Dated construction/use contacts and finite aperture/face geometry with uncertainty",
+        "Same observations for A(C)90/AC44 and identity crosswalks for aggregate records; fixed regional boundary/coverage for broader claims"
+      ],
+      "access": {
+        "status": "pending_record",
+        "route": "Existing Jericho archive referrals",
+        "detail": "Await the specific named file/custodian response. Do not resend requests to the unit that denied custody or rerun parked geometry from known figures.",
+        "custody_verified": false
+      },
+      "effort": {
+        "level": "field_record_audit",
+        "detail": "Join original section, survey and stratigraphic records, then apply the same extraction to controls; annotation numbers alone are insufficient."
+      },
+      "next_action": "Prepare a common aperture/face/surface/phase extraction form for the candidate and controls. Reopen only for the named new section/datum/contact observation or a documented analytical correction.",
+      "freeze": {
+        "status": "not_frozen",
+        "commit": null,
+        "spec_path": null,
+        "unused_status": "unverified",
+        "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+      },
+      "outcomes": [
+        {
+          "id": "metric-package",
+          "label": "Complete phase-controlled metric package arrives",
+          "status": "compatible",
+          "condition": "A new authentic linked record defines the named aperture, finite face, surface, benchmark and phase with bounded uncertainty; equivalent opportunities are retained for controls.",
+          "consequences": [
+            "Create a new source-linked branch specification, freezing all retained reading/unit/origin/axis/tolerance choices before reserved testing.",
+            "Reopen the stated branch only for the genuinely new observation; preserve the previous closed geometry result and all control unknowns."
+          ],
+          "remaining_unknowns": [
+            "Eligibility denominator and landscape detection coverage",
+            "Discrimination and registered unused prediction",
+            "Deposit target volume/reach/disturbance/detection"
+          ],
+          "claim_scope": "A stated Entry29 basin/terminal/face/phase branch; no regional identification or negative deposit inference.",
+          "recorded": false
+        },
+        {
+          "id": "contact-incompatible",
+          "label": "Named contact or phase branch contradicted",
+          "status": "contradicted",
+          "condition": "Adequate dated contact evidence contradicts the required wall-aperture-surface coexistence across the retained phases of the fixed assignment.",
+          "consequences": [
+            "Exclude that terminal/face/phase assignment only and publish every other surviving branch.",
+            "Use the same phase/contact criterion for A(C)90/AC44; missing control records remain unknown."
+          ],
+          "remaining_unknowns": [
+            "Other features, readings and phases",
+            "The regional inventory denominator and deposit claims"
+          ],
+          "claim_scope": "A stated Entry29 basin/terminal/face/phase branch; no regional identification or negative deposit inference.",
+          "recorded": false
+        },
+        {
+          "id": "levels-without-datum",
+          "label": "More level labels; measuring datum still undefined",
+          "status": "unknown",
+          "condition": "Records supply dimensions or elevations but do not define the measurement point, finite face, ancient surface, benchmark or phase tie.",
+          "consequences": [
+            "Keep metric comparison not identifiable; publish the newly clarified definitions without treating a label as an aperture centre.",
+            "Keep the later open-channel102.80 bottom distinct from the early ceramic-pipe102.80 annotation."
+          ],
+          "remaining_unknowns": [
+            "The missing point/face/surface/phase definitions",
+            "Field uncertainty and equal control packages"
+          ],
+          "claim_scope": "A stated Entry29 basin/terminal/face/phase branch; no regional identification or negative deposit inference.",
+          "recorded": false
+        },
+        {
+          "id": "record-inconclusive",
+          "label": "Record missing, unexposed or not held",
+          "status": "unknown",
+          "condition": "No authentic target record is supplied, current custody is unknown, or the section shows that the relevant contact was not exposed/documented.",
+          "consequences": [
+            "Retain unknown and record the source/coverage limit.",
+            "No new request, field absence, scored miss or negative-deposit result follows from selecting this outcome."
+          ],
+          "remaining_unknowns": [
+            "The actual ancient contact and survey datum",
+            "Excavation reach/disturbance/detection and regional coverage"
+          ],
+          "claim_scope": "A stated Entry29 basin/terminal/face/phase branch; no regional identification or negative deposit inference.",
+          "recorded": false
+        }
+      ],
+      "result_id": "decisions-jericho-contacts-plan"
+    },
+    {
+      "id": "decisions-siloam-main-side",
+      "title": "Siloam: main-basin conduit junction",
+      "priority": "high",
+      "priority_reason": "A main-side contact is the named reopening observation for a closed under-pipe claim; its current sent request can resolve either the contact or exposure limit.",
+      "claim": "Does a surveyed under-pipe place occur within the selected bathing basin and contemporary ancient surface?",
+      "questions": [
+        "R06",
+        "R09"
+      ],
+      "feature_ids": [],
+      "source_ids": [
+        "decisions-siloam",
+        "decisions-active"
+      ],
+      "current_evidence": {
+        "status": "unknown",
+        "detail": "L103's reported contact and0.75m floor relation concern the small receiver, not a surveyed point inside larger Birket al-Hamra. Main-side junction, bath function/name association and phase-controlled under-place remain unknown.",
+        "exposure": "already_inspected"
+      },
+      "request": {
+        "status": "sent_pending",
+        "scope": "The reviewed main-side field-section inquiry was sent on6October05:29:46UTC. Delivery/reply, exposure, section survival and record custody remain unverified.",
+        "delivery": "unverified",
+        "reply": "unverified",
+        "source_ids": [
+          "decisions-siloam"
+        ]
+      },
+      "record_needed": [
+        "Named surveyed main-basin conduit/trough junction, section and field-record accession",
+        "Structural underside/aperture, observed basin boundary and ancient floor in one phase/frame",
+        "Independent evidence for the chosen bath function/name association",
+        "Main-side excavation extent, depth/reach, disturbance and detection limits if unexposed"
+      ],
+      "access": {
+        "status": "pending_record",
+        "route": "Existing Siloam field-section request",
+        "detail": "Await a named section/exposure-limit response or exact custodian referral. Repeating the2020/2024 known plans does not provide the missing main-side relation.",
+        "custody_verified": false
+      },
+      "effort": {
+        "level": "field_record_audit",
+        "detail": "Join a main-side section to the correct basin, ancient floor and phase; keep receiver-side observations and function/name interpretations separate."
+      },
+      "next_action": "Keep the reviewed junction/function/phase extraction fields ready; reopen only for a new named main-side observation or documented source/analytical correction.",
+      "freeze": {
+        "status": "not_frozen",
+        "commit": null,
+        "spec_path": null,
+        "unused_status": "unverified",
+        "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+      },
+      "outcomes": [
+        {
+          "id": "main-place-established",
+          "label": "Main-side under-place and phase are established",
+          "status": "compatible",
+          "condition": "An authentic record identifies an under-pipe place inside the selected main basin, boundary/ancient floor and contemporary terminal in one phase; the chosen function/name branch has independent evidence.",
+          "consequences": [
+            "Retain that precise basin/terminal/phase branch for comparison after a frozen specification and exposure audit.",
+            "Keep L103's conditional later-insertion chain and the dam chronology as separate propositions."
+          ],
+          "remaining_unknowns": [
+            "Regional alternatives and unused prediction",
+            "Treasure burial/deposit survival and excavation detection"
+          ],
+          "claim_scope": "The selected main-basin/terminal/under-place/function/phase branch for Entry49, retaining the other named alternatives.",
+          "recorded": false
+        },
+        {
+          "id": "terminal-or-phase-miss",
+          "label": "Named terminal lies outside basin or required phase",
+          "status": "contradicted",
+          "condition": "The authentic record contradicts basin membership or terminal/floor coexistence for every retained phase of that fixed terminal assignment.",
+          "consequences": [
+            "Reject only that basin/terminal/phase branch, retaining a different main-pool terminal and separate Silwan association.",
+            "Do not use receiver-floor coordinates as a place within Birket; do not transfer receiver/dam dates to the main basin."
+          ],
+          "remaining_unknowns": [
+            "Other terminal and basin associations",
+            "Function/name and deposit claims"
+          ],
+          "claim_scope": "The selected main-basin/terminal/under-place/function/phase branch for Entry49, retaining the other named alternatives.",
+          "recorded": false
+        },
+        {
+          "id": "unexposed-junction",
+          "label": "Survey confirms junction was not exposed",
+          "status": "unknown",
+          "condition": "A reliable field record establishes an exposure limit without observing the relevant main-side contact or ancient target volume.",
+          "consequences": [
+            "Record the actual excavation footprint/depth limit, with unknown ancient contact.",
+            "Preserve not identifiable; an unexposed junction is no archaeological contradiction or negative deposit test."
+          ],
+          "remaining_unknowns": [
+            "Main-side terminal/contact and phase",
+            "Complete ancient target volume, disturbance and detection"
+          ],
+          "claim_scope": "The selected main-basin/terminal/under-place/function/phase branch for Entry49, retaining the other named alternatives.",
+          "recorded": false
+        },
+        {
+          "id": "reply-or-record-inconclusive",
+          "label": "No usable main-side record arrives",
+          "status": "unknown",
+          "condition": "No reply/record is available, the record is unauthenticated or it fails to define basin membership, under-datum, floor or phase.",
+          "consequences": [
+            "Retain the closed result and precise reopening dependency.",
+            "Request status remains as recorded; the preview does not trigger outreach or certify absence."
+          ],
+          "remaining_unknowns": [
+            "Main-side junction/function/name/phase",
+            "Record survival and custody"
+          ],
+          "claim_scope": "The selected main-basin/terminal/under-place/function/phase branch for Entry49, retaining the other named alternatives.",
+          "recorded": false
+        }
+      ],
+      "result_id": "decisions-siloam-main-side-plan"
+    },
+    {
+      "id": "decisions-wadi-bath-contact",
+      "title": "Wadi Nuʿeima: individual bath and water-contact record",
+      "priority": "medium",
+      "priority_reason": "The complete original report is inspected; progress now depends on an unnamed bath field record and accession rather than another report search.",
+      "claim": "Can the individually identified Wadi bath have a dated aperture/wall/floor contact assigned to one usable state?",
+      "questions": [
+        "R07",
+        "R08",
+        "R09"
+      ],
+      "feature_ids": [],
+      "source_ids": [
+        "decisions-wadi",
+        "decisions-active"
+      ],
+      "current_evidence": {
+        "status": "unknown",
+        "detail": "Dinur–Feig pp.110–111 describes one1.3m-deep miqva about2m north of the wadi, a separate western rectangle, and alluvial/illegal-excavation exposure. No bath plan/section, enlargement sequence, phase-controlled contact or field accession is supplied; J23 remains aggregate.",
+        "exposure": "already_inspected"
+      },
+      "request": {
+        "status": "sent_pending",
+        "scope": "The official general-mailbox archive referral was sent on6October14:17:38UTC. Delivery/reply, current custodian, bath drawing and accession remain unverified.",
+        "delivery": "unverified",
+        "reply": "unverified",
+        "source_ids": [
+          "decisions-wadi"
+        ]
+      },
+      "record_needed": [
+        "Identifiable bath plan/section or field record with locus/state IDs and accession",
+        "A physically tied water aperture, wall and contemporary floor/surface",
+        "Feature-specific construction sequence and dated contacts",
+        "Coverage of alluvial concealment, flood exposure and looting, including actual target reach/detection"
+      ],
+      "access": {
+        "status": "pending_record",
+        "route": "Existing specific archive-referral inquiry",
+        "detail": "Await a custodian referral or identifiable bath record. The complete supplied ESI5 original is available; historical PartIIp36 metadata does not supply the missing hydraulic evidence.",
+        "custody_verified": false
+      },
+      "effort": {
+        "level": "field_record_audit",
+        "detail": "Establish a field-file/locus crosswalk before extracting individual architecture states; current file survival and custody are unknown."
+      },
+      "next_action": "Prepare a single bath/state/contact extraction record. Reopen for a named new original drawing/contact record or documented crosswalk error, preserving the closed report-coverage result.",
+      "freeze": {
+        "status": "not_frozen",
+        "commit": null,
+        "spec_path": null,
+        "unused_status": "unverified",
+        "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+      },
+      "outcomes": [
+        {
+          "id": "dated-water-contact",
+          "label": "Individual bath and dated water contact are recorded",
+          "status": "compatible",
+          "condition": "A linked original file establishes the bath's individual identity/state and aperture/wall/contemporary floor contact with feature-specific dating and defined frame/uncertainty.",
+          "consequences": [
+            "Replace aggregate assumptions with separately sourced individual state/phase observations.",
+            "Compare only the textually permitted function/metric branches under equal rules and a future frozen specification."
+          ],
+          "remaining_unknowns": [
+            "Textual role/function equivalence and relevant northern reference",
+            "Regional controls, coverage and unused prediction"
+          ],
+          "claim_scope": "A named Wadi bath state and its phase-specific water contact, not a site-wide bath count or deposit.",
+          "recorded": false
+        },
+        {
+          "id": "state-contact-miss",
+          "label": "Fixed feature-state/contact branch contradicted",
+          "status": "contradicted",
+          "condition": "Adequate individual evidence excludes the required contact/coexistence throughout the fixed phase branch or identifies the proposed hydraulic structure as a different feature.",
+          "consequences": [
+            "Reject only that named feature-state/contact assignment.",
+            "Keep the western rectangle separate; site Persian–Herodian pottery headings do not date bath construction."
+          ],
+          "remaining_unknowns": [
+            "Other bath states/features and readings",
+            "All wider identification/deposit claims"
+          ],
+          "claim_scope": "A named Wadi bath state and its phase-specific water contact, not a site-wide bath count or deposit.",
+          "recorded": false
+        },
+        {
+          "id": "identity-without-contact",
+          "label": "Bath identity improves but contact remains unknown",
+          "status": "unknown",
+          "condition": "Record resolves an individual bath/locus or exposure boundary without a dated aperture/wall/floor join.",
+          "consequences": [
+            "Record the clarified identity and coverage; leave contact/date gates null.",
+            "Do not assign the western rectangle's4.5×8.0m dimensions to the bath or infer a complete site bath count."
+          ],
+          "remaining_unknowns": [
+            "Feature-specific construction/use date and hydraulic join",
+            "Whole-site bath count and target coverage"
+          ],
+          "claim_scope": "A named Wadi bath state and its phase-specific water contact, not a site-wide bath count or deposit.",
+          "recorded": false
+        },
+        {
+          "id": "file-lost-or-unobtained",
+          "label": "No usable file or target was not recorded",
+          "status": "unknown",
+          "condition": "Custody/file remains unresolved, drawings do not survive, or alluvial/looting conditions prevent an adequately observed target.",
+          "consequences": [
+            "Preserve not identifiable and record the actual documentation/detection limit.",
+            "Missing or destroyed records do not prove historical hydraulic absence or a negative deposit excavation."
+          ],
+          "remaining_unknowns": [
+            "Individual bath state/contact/phase",
+            "Ancient target volume, disturbance and detection"
+          ],
+          "claim_scope": "A named Wadi bath state and its phase-specific water contact, not a site-wide bath count or deposit.",
+          "recorded": false
+        }
+      ],
+      "result_id": "decisions-wadi-bath-contact-plan"
+    }
+  ]
+}

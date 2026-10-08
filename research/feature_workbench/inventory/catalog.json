@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-08",
+  "sources": [
+    {
+      "id": "inventory-puech-entry25",
+      "title": "Puech: Entry 25 edition and commentary",
+      "citation": "Émile Puech, The Copper Scroll Revisited (2015), printed pp. 59–60, VI 1–6; p. 25 sigla and p. 130 drawing. Existing original-page audit, 2 October 2026.",
+      "repo_path": "research/measurements/cycle4/puech_entry25.md",
+      "url": "https://brill.com/display/title/14988?language=en",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "inventory-sion-iv17",
+      "title": "Sion: IV/17 description and Plan 5",
+      "citation": "Ofer Sion, Regions IV and VI, ʿAtiqot 41, part 1 (2002), printed pp. 61–64, Fig. 12 p. 61, Plan 5 p. 63. Existing partial article inspection.",
+      "repo_path": "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md",
+      "url": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/",
+      "inspection": "already_inspected",
+      "original_campaign": "Jebel Abu Saraj IV/17 survey and Michael Dadon excavation, permit L-656"
+    },
+    {
+      "id": "inventory-feig-iv11",
+      "title": "Feig: IV/11 cave report",
+      "citation": "Nurit Feig, The Excavation of Cave IV/11, ʿAtiqot 41, part 1 (2002), printed pp. 85–90, Plan 1 p. 85 and Figs. 1–6. Existing six-page inspection.",
+      "repo_path": "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md",
+      "url": "https://publications.iaa.org.il/atiqot/vol41/iss1/7/",
+      "inspection": "already_inspected",
+      "original_campaign": "Jebel Abu Saraj IV/11 excavation reported by Nurit Feig"
+    },
+    {
+      "id": "inventory-baradon-twin",
+      "title": "Bar-Adon: Twin Cave description",
+      "citation": "Pessach Bar-Adon, Excavations in the Judean Desert, ʿAtiqot Hebrew Series 9 (1989), Chapter B, printed pp. [15]–17, Figs. B1–B2 and note 1. Existing direct inspection of supplied capture PDF pp. 24–26.",
+      "repo_path": "research/sources/baradon1989_capture_direct_review_2026-10-01.md",
+      "url": "https://www.jstor.org/stable/23456199",
+      "inspection": "already_inspected",
+      "original_campaign": "Twin Cave excavation seasons 1971, 1977 and 1982 under Bar-Adon"
+    },
+    {
+      "id": "inventory-iv17-repeat",
+      "title": "IV/17 source-plan endpoint repeat",
+      "citation": "Existing 2 October 2026 repeat of Sion 2002 Plan 5 p. 63; 626 × 541 pixel crop, endpoints [548,386]–[502,400]. Same plan and campaign as inventory-sion-iv17, not independent archaeological corroboration.",
+      "repo_path": "research/measurements/cycle2/iv17_repeat_results.json",
+      "inspection": "derived",
+      "original_campaign": "Jebel Abu Saraj IV/17 survey and Michael Dadon excavation, permit L-656"
+    },
+    {
+      "id": "inventory-iv17-phase",
+      "title": "IV/17 published context-chain audit",
+      "citation": "Sion 2002 printed pp. 63–64 and 81–82, Table 1 IV/17 row, note 11 and starred editorial archive pointer; existing 2 October 2026 audit. Field file L-656 remains uninspected.",
+      "repo_path": "research/measurements/cycle3/iv17_phase.json",
+      "inspection": "already_inspected",
+      "original_campaign": "Jebel Abu Saraj IV/17 survey and Michael Dadon excavation, permit L-656"
+    },
+    {
+      "id": "inventory-entry25-assessment",
+      "title": "Entry 25 conditional candidate assessment",
+      "citation": "Existing 2 October 2026 synthesis of Puech pp. 59–60, Sion pp. 61–64/Plan 5 and the source-plan repeat and phase audit. No independent observation.",
+      "repo_path": "research/assessments/entry25_iv17/assessment.json",
+      "inspection": "derived"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "iv17",
+      "name": "IV/17",
+      "feature_ids": ["iv17-cave", "iv17-pillar", "iv17-north-mouth", "iv17-south-mouth", "iv17-south-wall"],
+      "reference_features": {"northern_opening": "iv17-north-mouth"},
+      "source_ids": ["inventory-sion-iv17", "inventory-iv17-repeat", "inventory-iv17-phase"],
+      "properties": {
+        "pillar": {"value": true, "feature_id": "iv17-pillar", "evidence_kind": "observed", "source_ids": ["inventory-sion-iv17"], "phase": "reported_state", "note": "Rock-cut dividing pillar reported on p. 63; its cutting date is unresolved."},
+        "terrace_association": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-puech-entry25", "inventory-sion-iv17"], "note": "A pillar does not decide the retained platform/terrace reading."},
+        "two_exterior_openings": {"value": true, "evidence_kind": "observed", "source_ids": ["inventory-sion-iv17"], "phase": "reported_state"},
+        "northern_member": {"value": true, "feature_id": "iv17-north-mouth", "evidence_kind": "inference", "source_ids": ["inventory-iv17-repeat"], "phase": "reported_state", "reference_frame": "Sion Plan 5 published north arrow, true/grid/magnetic convention unspecified", "note": "Right aperture is northern after orienting the plan; page-left/page-right are not compass directions."},
+        "cave_east_aspect": {"value": true, "evidence_kind": "observed", "source_ids": ["inventory-sion-iv17"], "phase": "reported_state", "note": "Published eastern-cliff aspect; no exact azimuth follows."},
+        "both_openings_east_aspect": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-sion-iv17", "inventory-iv17-repeat"], "note": "Cave-level cliff aspect does not resolve the stricter individual-mouth interpretation. Chord normals are not surveyed passage bearings."},
+        "northern_opening_width_reported": {"value": 0.8, "unit": "m", "feature_id": "iv17-north-mouth", "evidence_kind": "observed", "source_ids": ["inventory-sion-iv17"], "phase": "reported_state", "reference_frame": "Sion 2002 p. 63 reported aperture width", "uncertainty": "Published rounding/measurement uncertainty unspecified; not an ancient threshold reconstruction."},
+        "northern_opening_chord_width": {"value": 0.858629662869379, "unit": "m", "feature_id": "iv17-north-mouth", "evidence_kind": "inference", "source_ids": ["inventory-iv17-repeat"], "phase": "reported_state", "reference_frame": "Sion Plan 5, 626 × 541 crop pixels, origin top-left; [548,386]–[502,400]", "uncertainty": {"endpoint_sensitivity_m": [0.5938877862885401, 1.162701115761271], "pilot_envelope_m": [0.6, 1.1], "kind": "non-statistical raster sensitivity; scan distortion unquantified"}},
+        "northern_chord_normal_proxy": {"value": 122.92909086979614, "unit": "deg", "feature_id": "iv17-north-mouth", "evidence_kind": "inference", "source_ids": ["inventory-iv17-repeat"], "phase": "reported_state", "reference_frame": "clockwise from unspecified published north arrow; aperture chord normal", "uncertainty": {"endpoint_sensitivity_deg": [99.4663883338802, 140.84035953588491], "pilot_envelope_deg": [101, 151], "kind": "not a surveyed true/passage bearing; source north convention and scan distortion unquantified"}},
+        "true_individual_mouth_bearings": {"value": null, "unit": "deg", "evidence_kind": "inference", "source_ids": ["inventory-sion-iv17", "inventory-iv17-repeat"], "reference_frame": "true geographic bearing", "note": "No edition angular tolerance; do not substitute source-plan proxies."},
+        "ancient_arrangement_phase": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-iv17-phase"], "note": "No published sealed pillar, mouth, wall or threshold contacts. Survey coins and arrowhead basket numbers do not date the arrangement."},
+        "published_use_reconstruction": {"value": "first half of second century to first half of first century BCE", "evidence_kind": "published_reconstruction", "source_ids": ["inventory-sion-iv17", "inventory-iv17-phase"], "note": "Excavator use reconstruction and concealment interpretation; not a demonstrated entrance or wall construction phase."},
+        "northern_threshold_elevation": {"value": null, "unit": "m", "feature_id": "iv17-north-mouth", "evidence_kind": "inference", "source_ids": ["inventory-entry25-assessment", "inventory-iv17-phase"], "reference_frame": "threshold elevation datum unestablished", "datum": null, "note": "Neither current nor ancient northern threshold level is registered."},
+        "northern_horizontal_origin": {"value": null, "feature_id": "iv17-north-mouth", "evidence_kind": "inference", "source_ids": ["inventory-entry25-assessment"], "reference_frame": "origin within mouth unestablished"},
+        "horizontal_path_direction": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-entry25-assessment", "inventory-puech-entry25"], "note": "No chosen horizontal axis or path is supplied by the inspected source."},
+        "ancient_traversable_connection": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-sion-iv17"], "note": "Continuous 2D route depicted; clearance, level changes and ancient traversal unknown. Not a mandatory entry predicate."}
+      }
+    },
+    {
+      "id": "iv11",
+      "name": "IV/11",
+      "feature_ids": ["iv11-cave", "iv11-pillar"],
+      "reference_features": {"northern_opening": null},
+      "source_ids": ["inventory-feig-iv11"],
+      "properties": {
+        "pillar": {"value": true, "feature_id": "iv11-pillar", "evidence_kind": "observed", "source_ids": ["inventory-feig-iv11"], "phase": "reported_state", "note": "Feig p. 85: internal southwest pillar, natural below and rock-cut above."},
+        "terrace_association": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-puech-entry25", "inventory-feig-iv11"]},
+        "two_exterior_openings": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"], "note": "Inspected text describes an opening in the singular; Plan 1 does not establish a pair. This is not proof that a second ancient opening was absent."},
+        "northern_member": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"]},
+        "cave_east_aspect": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"], "note": "Reported eastward enlargement toward the cliff does not establish facing direction."},
+        "both_openings_east_aspect": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"]},
+        "northern_opening_width_reported": {"value": null, "unit": "m", "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"]},
+        "true_individual_mouth_bearings": {"value": null, "unit": "deg", "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"], "reference_frame": "true geographic bearing"},
+        "ancient_arrangement_phase": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"], "note": "Disturbed later deposits and upper-fill coins do not date pillar cutting, entrance enlargement or northern threshold."},
+        "northern_threshold_elevation": {"value": null, "unit": "m", "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"], "reference_frame": "threshold elevation datum unestablished", "datum": null, "note": "Earlier/later living surfaces and upper-fill coin height cannot supply the northern threshold datum."},
+        "northern_horizontal_origin": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"], "reference_frame": "origin within mouth unestablished"},
+        "horizontal_path_direction": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11", "inventory-puech-entry25"]},
+        "ancient_traversable_connection": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-feig-iv11"], "note": "Not a mandatory entry predicate."}
+      }
+    },
+    {
+      "id": "twin",
+      "name": "Twin Cave",
+      "feature_ids": ["twin-cave"],
+      "reference_features": {"northern_opening": null},
+      "source_ids": ["inventory-baradon-twin"],
+      "properties": {
+        "pillar": {"value": true, "evidence_kind": "observed", "source_ids": ["inventory-baradon-twin"], "phase": "reported_state", "note": "Thick rock pillar divides northern/southern units; worked state and dimensions unspecified."},
+        "terrace_association": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-puech-entry25", "inventory-baradon-twin"]},
+        "two_exterior_openings": {"value": true, "evidence_kind": "observed", "source_ids": ["inventory-baradon-twin"], "phase": "reported_state"},
+        "northern_member": {"value": true, "evidence_kind": "observed", "source_ids": ["inventory-baradon-twin"], "phase": "reported_state", "note": "Northern/southern units named in p. [15] description; no registered mouth points."},
+        "cave_east_aspect": {"value": true, "evidence_kind": "observed", "source_ids": ["inventory-baradon-twin"], "phase": "reported_state", "note": "Eastern cliff slope and east-facing openings toward Dead Sea reported."},
+        "both_openings_east_aspect": {"value": true, "evidence_kind": "observed", "source_ids": ["inventory-baradon-twin"], "phase": "reported_state", "note": "Qualitative published aspect, not an exact surveyed bearing."},
+        "northern_opening_width_reported": {"value": null, "unit": "m", "evidence_kind": "inference", "source_ids": ["inventory-baradon-twin"], "note": "35 m length/4 m mean width concern the northern cavity, not the mouth."},
+        "true_individual_mouth_bearings": {"value": null, "unit": "deg", "evidence_kind": "inference", "source_ids": ["inventory-baradon-twin"], "reference_frame": "true geographic bearing"},
+        "ancient_arrangement_phase": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-baradon-twin"], "note": "Period-compatible ceramics do not date pillar construction, mouths or threshold. Cave A/B cannot be equated with northern/southern units."},
+        "northern_threshold_elevation": {"value": null, "unit": "m", "evidence_kind": "inference", "source_ids": ["inventory-baradon-twin"], "reference_frame": "threshold elevation datum unestablished", "datum": null, "note": "Several metres of general deposits are not threshold-specific excavation depth."},
+        "northern_horizontal_origin": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-baradon-twin"], "reference_frame": "origin within mouth unestablished"},
+        "horizontal_path_direction": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-baradon-twin", "inventory-puech-entry25"]},
+        "ancient_traversable_connection": {"value": null, "evidence_kind": "inference", "source_ids": ["inventory-baradon-twin"], "note": "Internal communication is not described; not a mandatory entry predicate."}
+      }
+    }
+  ],
+  "limits": {
+    "regional_boundary": null,
+    "eligible_denominator": null,
+    "coverage_complete": false,
+    "candidate_selection": "Three previously examined comparators, not a regional census or a ranked sample.",
+    "geometry": "No surveyed individual-mouth world coordinates, true bearings or deposit points.",
+    "confirmation": "All source material was already exposed. No unused prediction is certified.",
+    "claims": "Reported feature compatibility, ancient feature phase and possible target geometry are separate. No deposit existence, survival, rarity or identification confidence is scored."
+  }
+}

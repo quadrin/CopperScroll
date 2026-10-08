@@ -2,6 +2,12 @@
 
 Updated 8 October 2026 UTC / 7 October Los Angeles. The user supplied the exact ESI5 original and requested immediate sharing of any inaccessible link; that standing rule is recorded in AGENTS.md. **The complete Wadi report is inspected; individual bath states and phase-specific water contacts remain not identifiable from available evidence.** The selected-source regional inventory is complete, with regional eligibility/discrimination unresolved. The Siloam request remains sent; delivery and a reply are unverified. No confirmatory freeze or unused prediction is claimed. Landmark identification, treasure burial and copper copying/deposition remain separate claims.
 
+## Feature workbench — 8 October 2026
+
+The user-requested methods 2–6 now have [reusable evaluators and an atlas interface](feature_workbench/README.md): Koḥlit relationship branches; equal Entry 25 cave queries; IV/17 and Jericho historical states; source-sector investigation coverage; and a planning-only decision queue. The [generated register](feature_workbench/register.json) retains feature identity, observation kind, native frame, phase, uncertainty, source inspection and original lineage. The [results](feature_workbench/results.json) retain conditional contradictions and all missing-data gates. Manchester XII 10, IV/17 L-656, Kallai, Kenyon's separate section/Plate 111b and hydraulic-contact dependencies remain explicit.
+
+This is implementation and re-evaluation of already exposed records, adding zero source inspections, independent campaigns, activity/outcome increments, confidence changes, geographic coordinates or certified unused observations. The 1898 reservoir remains separate from the historical basin; later quarrying does not exclude earlier accessibility without dated evidence. The pending IAA regional inventory request does not establish a specific L-656 request or holding. No correspondence, fee, acquisition or fieldwork occurred. The current Wadi/Jericho/Siloam test and its next actions below remain unchanged; parked tests remain closed.
+
 ## Parallel-agent review — 7 October 2026 (no change to the current test)
 
 A two-wave agent review is recorded in [agent_review_2026-10-07](agent_review_2026-10-07/README.md) with [goals](agent_review_2026-10-07/GOALS.md). It adds no outcome-ledger increment and leaves the Wadi/Jericho/Siloam actions below unchanged. For Koḥlit (R07), the discriminating observations are:

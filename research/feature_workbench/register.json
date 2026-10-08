@@ -1,0 +1,3642 @@
+{
+  "schema_version": 1,
+  "features": [
+    {
+      "id": "iv17-cave",
+      "name": "IV/17 cave",
+      "kind": "cave",
+      "site": "Abu Saraj",
+      "geometry": null
+    },
+    {
+      "id": "iv17-north-mouth",
+      "name": "IV/17 northern opening",
+      "kind": "opening",
+      "site": "Abu Saraj",
+      "geometry": null
+    },
+    {
+      "id": "iv17-south-mouth",
+      "name": "IV/17 southern opening",
+      "kind": "opening",
+      "site": "Abu Saraj",
+      "geometry": null
+    },
+    {
+      "id": "iv17-pillar",
+      "name": "IV/17 rock-cut pillar",
+      "kind": "pillar",
+      "site": "Abu Saraj",
+      "geometry": null
+    },
+    {
+      "id": "iv17-south-wall",
+      "name": "IV/17 southern blocking wall",
+      "kind": "wall",
+      "site": "Abu Saraj",
+      "geometry": null
+    },
+    {
+      "id": "iv11-cave",
+      "name": "IV/11 cave",
+      "kind": "cave",
+      "site": "Abu Saraj",
+      "geometry": null
+    },
+    {
+      "id": "iv11-pillar",
+      "name": "IV/11 internal pillar",
+      "kind": "pillar",
+      "site": "Abu Saraj",
+      "geometry": null
+    },
+    {
+      "id": "twin-cave",
+      "name": "Twin Cave",
+      "kind": "cave",
+      "site": "Judean Desert",
+      "geometry": null
+    },
+    {
+      "id": "jericho-tell",
+      "name": "Tell es-Sultan",
+      "kind": "tell",
+      "site": "Jericho",
+      "geometry": null
+    },
+    {
+      "id": "jericho-historical-basin",
+      "name": "ʿAin es-Sultan historical irregular basin",
+      "kind": "basin",
+      "site": "Jericho",
+      "geometry": null
+    },
+    {
+      "id": "jericho-reservoir-1898",
+      "name": "ʿAin es-Sultan reservoir built in 1898",
+      "kind": "reservoir",
+      "site": "Jericho",
+      "geometry": null
+    },
+    {
+      "id": "jericho-springhouse-wall",
+      "name": "ʿAin es-Sultan curved springhouse wall",
+      "kind": "wall",
+      "site": "Jericho",
+      "geometry": null
+    },
+    {
+      "id": "jericho-shaft-d9",
+      "name": "Kenyon shaft D9",
+      "kind": "shaft",
+      "site": "Jericho",
+      "geometry": null
+    },
+    {
+      "id": "jericho-cistern-ns1",
+      "name": "Kenyon cistern NS1",
+      "kind": "cistern",
+      "site": "Jericho",
+      "geometry": null
+    },
+    {
+      "id": "jericho-north-graves",
+      "name": "Kenyon north-slope grave group",
+      "kind": "grave_group",
+      "site": "Jericho",
+      "geometry": null
+    },
+    {
+      "id": "jericho-later-quarry-pits",
+      "name": "Kenyon later north-slope quarry pits",
+      "kind": "pit_group",
+      "site": "Jericho",
+      "geometry": null
+    },
+    {
+      "id": "marjama-tell",
+      "name": "Kh. el-Marjama tell",
+      "kind": "tell",
+      "site": "Ein Samiya",
+      "geometry": null
+    },
+    {
+      "id": "marjama-kallai-pool",
+      "name": "Kallai's unlocated rock-cut pool",
+      "kind": "pool_report",
+      "site": "Kh. el-Marjama",
+      "geometry": null
+    },
+    {
+      "id": "samiya-crypt-basin",
+      "name": "Ein Samiya church crypt basin",
+      "kind": "basin",
+      "site": "Ein Samiya",
+      "geometry": null
+    },
+    {
+      "id": "samiya-hydraulic-system",
+      "name": "Ein Samiya dam and aqueduct system",
+      "kind": "hydraulic_system",
+      "site": "Ein Samiya",
+      "geometry": null
+    },
+    {
+      "id": "yanun-site",
+      "name": "Kh. Yanun candidate area",
+      "kind": "site",
+      "site": "Yanun",
+      "geometry": null
+    },
+    {
+      "id": "samiya-north-bronze-tombs",
+      "name": "Dhahr Mirzbaneh northern shaft-tomb field",
+      "kind": "tomb_group",
+      "site": "Ein Samiya / Kh. el-Marjama",
+      "geometry": null
+    },
+    {
+      "id": "wadi-nueima-described-miqva",
+      "name": "Wadi Nu‘eima miqva described in ESI5",
+      "kind": "reported_bath",
+      "site": "Wadi Nu‘eima",
+      "geometry": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "relationships-text-core",
+      "title": "Reviewed Koḥlit edition relationships",
+      "citation": "Entry 11, II 13–15; Puech 2015 pp. 13–14 n. 49; reviewed e11-kohlit / e19-kohlit reading records",
+      "repo_path": "text/readings.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "relationships-text-e60",
+      "title": "Reviewed Entry 60 reading and period registry",
+      "citation": "XII 10–13; Milik 1960 item 64; Puech 2006 p. 175 n. 49 / 2015 pp. 13–14 n. 49; Lefkovits 2000 pp. 425–426, as attributed in registry v2",
+      "repo_path": "research/agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "relationships-text-restored",
+      "title": "Puech Entry 15–16 restoration audit",
+      "citation": "Puech 2015 pp. 48–51, especially pp. 49–50 and n. 193; IV 1–5",
+      "repo_path": "research/measurements/cycle7/kohlit_pool.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "relationships-dorrell",
+      "title": "Dorrell, The Spring at Jericho from Early Photographs",
+      "citation": "PEQ 125 (1993), pp. 95–97, 110–112; Figs. 1–4, 20–21 (pp. 98–99, 107)",
+      "repo_path": "research/agent_review_2026-10-07/followup/A_jericho_spring_reservoir.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Historical photographs 1856–1954 compiled by Dorrell; not independent field corroborations"
+    },
+    {
+      "id": "relationships-kenyon-II",
+      "title": "Kenyon, Excavations at Jericho II",
+      "citation": "1965 pp. 169, 276–277 / Fig. 137.2, 516, 536–537, 539–544; distribution Fig. 91 p. 168",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon Jericho expedition, 1952–1958"
+    },
+    {
+      "id": "relationships-kenyon-III",
+      "title": "Kenyon, Excavations at Jericho III, Text",
+      "citation": "1981 pp. 173–174 / supplied PDF 207–208; supporting pp. 3–4, 119–121; separate E section and Plate 111b are not inspected",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon Jericho expedition, 1952–1958"
+    },
+    {
+      "id": "relationships-zohar",
+      "title": "Zohar, Tell Marjame / Ein Samiya",
+      "citation": "IEJ 30 (1980), pp. 219–220; HA 76 (1981), p. 19 / supplied PDF 20; same December 1979–January 1980 excavation",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Zohar rescue excavation, December 1979–January 1980"
+    },
+    {
+      "id": "relationships-mazar",
+      "title": "Mazar, Excavations at Khirbet Marjameh",
+      "citation": "IEJ 45 (1995), pp. 85–87, 95; Fig. 1 p. 86 (spring / tell context)",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "relationships-highlands",
+      "title": "Highlands of Many Cultures, reviewed site entries",
+      "citation": "1997 pp. 732–735 (tell, church and Kh. Samiya), 741 (north/NNE Bronze Age tombs); these compiled notices do not establish a dated mouth relation",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "relationships-yanun",
+      "title": "Reviewed Kh. Yanun / Yanun village record",
+      "citation": "Highlands of Many Cultures (1997), pp. 821–822, 828–831; Lefkovits 2000 pp. 425–426 only through the reviewed registry",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "relationships-kallai",
+      "title": "Kallai rock-cut-pool source dependency",
+      "citation": "Kallai chapter in Kochavi (ed.), Judaea, Samaria and the Golan: Archaeological Survey 1967–1968 (1972), pp. 172–173; sites 65–66 context remains unread",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "url": "https://www.nli.org.il/he/books/NNL_ALEPH990019622650205171/NLI",
+      "inspection": "not_inspected"
+    },
+    {
+      "id": "inventory-puech-entry25",
+      "title": "Puech: Entry 25 edition and commentary",
+      "citation": "Émile Puech, The Copper Scroll Revisited (2015), printed pp. 59–60, VI 1–6; p. 25 sigla and p. 130 drawing. Existing original-page audit, 2 October 2026.",
+      "repo_path": "research/measurements/cycle4/puech_entry25.md",
+      "url": "https://brill.com/display/title/14988?language=en",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "inventory-sion-iv17",
+      "title": "Sion: IV/17 description and Plan 5",
+      "citation": "Ofer Sion, Regions IV and VI, ʿAtiqot 41, part 1 (2002), printed pp. 61–64, Fig. 12 p. 61, Plan 5 p. 63. Existing partial article inspection.",
+      "repo_path": "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md",
+      "url": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/",
+      "inspection": "already_inspected",
+      "original_campaign": "Jebel Abu Saraj IV/17 survey and Michael Dadon excavation, permit L-656"
+    },
+    {
+      "id": "inventory-feig-iv11",
+      "title": "Feig: IV/11 cave report",
+      "citation": "Nurit Feig, The Excavation of Cave IV/11, ʿAtiqot 41, part 1 (2002), printed pp. 85–90, Plan 1 p. 85 and Figs. 1–6. Existing six-page inspection.",
+      "repo_path": "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md",
+      "url": "https://publications.iaa.org.il/atiqot/vol41/iss1/7/",
+      "inspection": "already_inspected",
+      "original_campaign": "Jebel Abu Saraj IV/11 excavation reported by Nurit Feig"
+    },
+    {
+      "id": "inventory-baradon-twin",
+      "title": "Bar-Adon: Twin Cave description",
+      "citation": "Pessach Bar-Adon, Excavations in the Judean Desert, ʿAtiqot Hebrew Series 9 (1989), Chapter B, printed pp. [15]–17, Figs. B1–B2 and note 1. Existing direct inspection of supplied capture PDF pp. 24–26.",
+      "repo_path": "research/sources/baradon1989_capture_direct_review_2026-10-01.md",
+      "url": "https://www.jstor.org/stable/23456199",
+      "inspection": "already_inspected",
+      "original_campaign": "Twin Cave excavation seasons 1971, 1977 and 1982 under Bar-Adon"
+    },
+    {
+      "id": "inventory-iv17-repeat",
+      "title": "IV/17 source-plan endpoint repeat",
+      "citation": "Existing 2 October 2026 repeat of Sion 2002 Plan 5 p. 63; 626 × 541 pixel crop, endpoints [548,386]–[502,400]. Same plan and campaign as inventory-sion-iv17, not independent archaeological corroboration.",
+      "repo_path": "research/measurements/cycle2/iv17_repeat_results.json",
+      "inspection": "derived",
+      "original_campaign": "Jebel Abu Saraj IV/17 survey and Michael Dadon excavation, permit L-656"
+    },
+    {
+      "id": "inventory-iv17-phase",
+      "title": "IV/17 published context-chain audit",
+      "citation": "Sion 2002 printed pp. 63–64 and 81–82, Table 1 IV/17 row, note 11 and starred editorial archive pointer; existing 2 October 2026 audit. Field file L-656 remains uninspected.",
+      "repo_path": "research/measurements/cycle3/iv17_phase.json",
+      "inspection": "already_inspected",
+      "original_campaign": "Jebel Abu Saraj IV/17 survey and Michael Dadon excavation, permit L-656"
+    },
+    {
+      "id": "inventory-entry25-assessment",
+      "title": "Entry 25 conditional candidate assessment",
+      "citation": "Existing 2 October 2026 synthesis of Puech pp. 59–60, Sion pp. 61–64/Plan 5 and the source-plan repeat and phase audit. No independent observation.",
+      "repo_path": "research/assessments/entry25_iv17/assessment.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "states-sion-plan",
+      "title": "IV/17 published survey arrangement",
+      "citation": "Ofer Sion, ʿAtiqot 41 part 1 (2002), pp. 61–64; Plan 5 p. 63; Fig. 12 p. 61",
+      "repo_path": "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Abu Saraj survey/excavation programme; IV/17 permit L-656",
+      "url": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/"
+    },
+    {
+      "id": "states-iv17-repeat",
+      "title": "Project repeat annotations of IV/17 aperture chords",
+      "citation": "Sion Plan 5 p. 63, Hebrew issue PDF 21; project repeat results 2 October 2026, corrected north/south identities",
+      "repo_path": "research/measurements/cycle2/iv17_repeat_results.json",
+      "inspection": "derived",
+      "original_campaign": "Abu Saraj survey/excavation programme; IV/17 permit L-656"
+    },
+    {
+      "id": "states-sion-context",
+      "title": "IV/17 survey finds, excavated baskets and architecture contact audit",
+      "citation": "Sion 2002 pp. 63–64 and 81–82; Table 1 IV/17 row, note 11 and starred editorial archive pointer",
+      "repo_path": "research/measurements/cycle3/iv17_phase.json",
+      "inspection": "already_inspected",
+      "original_campaign": "Abu Saraj survey/excavation programme; IV/17 permit L-656"
+    },
+    {
+      "id": "states-iv17-fieldfile",
+      "title": "IV/17 field file dependency",
+      "citation": "Michael Dadon, permit L-656; basket records 656.17/656.20, northern threshold section/levels, southern wall foundation contacts",
+      "repo_path": "research/measurements/cycle3/iv17_phase.md",
+      "inspection": "not_inspected",
+      "original_campaign": "Abu Saraj survey/excavation programme; IV/17 permit L-656"
+    },
+    {
+      "id": "states-kenyon-II",
+      "title": "Kenyon D9, N.S.1 and north-side coverage",
+      "citation": "Excavations at Jericho II (1965), pp. 169, 276–277, Fig. 137.2, pp. 539–544; introduction p. 2",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon 1952–1958 expedition/publication lineage",
+      "url": "https://archive.org/details/excavationsatjer0002keny"
+    },
+    {
+      "id": "states-kenyon-III",
+      "title": "Tell north-slope graves and later quarry pits",
+      "citation": "Excavations at Jericho III Text (1981), pp. 173–174 (PDF 207–208); Trench II/Site O, Stage XXIV phase lxxvi and Stage XXV phase lxxvii; context pp. 3–4 and 119–121",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon 1952–1958 expedition/publication lineage",
+      "url": "https://archive.org/details/excavationsatjer0003keny_pt01"
+    },
+    {
+      "id": "states-kenyon-III-plates",
+      "title": "Missing grave/pit drawings",
+      "citation": "Kenyon III separate plate volume: Plate 111b and actual eastern section at local 37.50–38.00 m N / 8.17 m H; section plate number/viewer page unknown",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "not_inspected",
+      "original_campaign": "Kenyon 1952–1958 expedition/publication lineage"
+    },
+    {
+      "id": "states-dorrell",
+      "title": "Spring basin and modern reservoir succession",
+      "citation": "P. G. Dorrell, PEQ 125 (1993), pp. 95–114; historical basin pp. 96–97 and Figs. 1–4 pp. 98–99; 1898 reservoir pp. 111–112; Figs. 20–21 p. 107, Fig. 23 p. 108",
+      "repo_path": "research/agent_review_2026-10-07/followup/A_jericho_spring_reservoir.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Historical photographs/accounts compiled by Dorrell; SWP text cited only through his quotations"
+    },
+    {
+      "id": "coverage-netzer1983",
+      "title": "Ehud Netzer, The Winter Palaces and Royal Estate at Jericho, Kardom28–30(1983), pp.95–112",
+      "citation": "Recorded inspected scope: printed pages 100, 101, 104, 105, 106, 99; Hasmonean general plan p.100 labels3/4; Second Palace plan p.105 label2; General plan label3",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": "https://kotar.cet.ac.il/KotarApp/Viewer.aspx?nBookID=95087647",
+      "inspection": "already_inspected",
+      "original_campaign": "netzer_jericho_excavation_lineage",
+      "source_role": "excavation_director_preliminary_account",
+      "locators": [
+        {
+          "source_id": "NETZER1983",
+          "printed_pages": [
+            100,
+            101,
+            104,
+            105,
+            106
+          ],
+          "figures": [
+            "Hasmonean general plan p.100 labels3/4",
+            "Second Palace plan p.105 label2"
+          ],
+          "recorded_in": "kotar-netzer1983.md#observations-and-author-interpretations",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false
+        },
+        {
+          "source_id": "NETZER1983",
+          "printed_pages": [
+            100,
+            101,
+            104,
+            105,
+            106
+          ],
+          "figures": [
+            "Hasmonean general plan p.100 labels3/4",
+            "Second Palace plan p.105 label2"
+          ],
+          "note": "kotar-netzer1983.md#observations-and-author-interpretations",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER1983",
+          "printed_pages": [
+            100
+          ],
+          "figures": [
+            "General plan label3"
+          ],
+          "note": "kotar-netzer1983.md#observations-and-author-interpretations",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER1983",
+          "printed_pages": [
+            99,
+            100,
+            101
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#inventory-source-scope"
+        }
+      ]
+    },
+    {
+      "id": "coverage-netzer2001",
+      "title": "Ehud Netzer, Hasmonean and Herodian Palaces at Jericho, VolumeI, Stratigraphy and Architecture(2001)",
+      "citation": "Recorded inspected scope: printed pages 74, 82, 83, 84, 85, 73, 87, 99, 100, 131, 133, 52, 57, 58, 60, 67, 68, 69, 59, 65, 94, 53, 54, 55, 50, 63, 64; Plan22 p.99 (partly reconstructed and cropped); Plan13 p.52; Ills.84–85 p.58; Ill.88 p.60; Plan13; Ill.117; Ills.86–87 pp.58–59; Ills.77–80; Ill.94; Ills.86-87; Ills.77-80; Ills.92-95",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": "https://www.israelexplorationsociety.com/product-page/volume-i-stratigraphy-and-architecture-2001",
+      "inspection": "already_inspected",
+      "original_campaign": "netzer_jericho_excavation_lineage",
+      "source_role": "excavation_final_report",
+      "locators": [
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            74,
+            82,
+            83,
+            84,
+            85
+          ],
+          "figures": null,
+          "note": "netzer2001-first-pass.md#observations-and-qualifications",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            73,
+            74,
+            84,
+            85,
+            87,
+            99,
+            100,
+            131,
+            133
+          ],
+          "figures": [
+            "Plan22 p.99 (partly reconstructed and cropped)"
+          ],
+          "recorded_in": "../../measurements/cycle14/jericho_merged.md#observations-reconstructions-and-phases",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false,
+          "prior_inspection_scope_notes": [
+            "netzer2001-first-pass.md#original-image-scope",
+            "netzer2001-first-pass.md#reattached-volume-i-and-inline-plan-13--3-october-2026-utc",
+            "../../measurements/cycle14/jericho_merged.md#source-and-inspection-scope"
+          ],
+          "scope_note": "The historical first-pass scope is superseded by the linked later original-image/Chapter2/cycle14 inspection records; citation pages are locators within those recorded scopes"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            73,
+            74,
+            84,
+            85,
+            87,
+            99,
+            100,
+            131,
+            133
+          ],
+          "figures": [
+            "Plan22 p.99 (partly reconstructed and cropped)"
+          ],
+          "note": "../../measurements/cycle14/jericho_merged.md#observations-reconstructions-and-phases",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            52,
+            57,
+            58,
+            60
+          ],
+          "figures": [
+            "Plan13 p.52",
+            "Ills.84–85 p.58",
+            "Ill.88 p.60"
+          ],
+          "note": "netzer2001-first-pass.md#named-comparison-pools",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            52
+          ],
+          "figures": [
+            "Plan13"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "netzer2001-first-pass.md#ac94-inlet-survey-search--6-october-2026-utc"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            52,
+            67,
+            68,
+            69
+          ],
+          "figures": [
+            "Plan13 p.52"
+          ],
+          "recorded_in": "netzer2001-first-pass.md#named-comparison-pools",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false,
+          "prior_inspection_scope_notes": [
+            "netzer2001-first-pass.md#original-image-scope",
+            "netzer2001-first-pass.md#reattached-volume-i-and-inline-plan-13--3-october-2026-utc",
+            "../../measurements/cycle14/jericho_merged.md#source-and-inspection-scope"
+          ],
+          "scope_note": "The historical first-pass scope is superseded by the linked later original-image/Chapter2/cycle14 inspection records; citation pages are locators within those recorded scopes"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            52,
+            67,
+            68,
+            69
+          ],
+          "figures": [
+            "Plan13 p.52"
+          ],
+          "note": "netzer2001-first-pass.md#named-comparison-pools",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            83,
+            84
+          ],
+          "figures": [
+            "Ill.117"
+          ],
+          "note": "netzer2001-first-pass.md#observations-and-qualifications",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            52,
+            58,
+            59,
+            60,
+            65
+          ],
+          "figures": [
+            "Plan13 p.52",
+            "Ills.86–87 pp.58–59"
+          ],
+          "recorded_in": "netzer2001-first-pass.md#named-comparison-pools",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false,
+          "prior_inspection_scope_notes": [
+            "netzer2001-first-pass.md#original-image-scope",
+            "netzer2001-first-pass.md#reattached-volume-i-and-inline-plan-13--3-october-2026-utc",
+            "../../measurements/cycle14/jericho_merged.md#source-and-inspection-scope"
+          ],
+          "scope_note": "The historical first-pass scope is superseded by the linked later original-image/Chapter2/cycle14 inspection records; citation pages are locators within those recorded scopes"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            52,
+            58,
+            59,
+            60,
+            65
+          ],
+          "figures": [
+            "Plan13 p.52",
+            "Ills.86–87 pp.58–59"
+          ],
+          "note": "netzer2001-first-pass.md#named-comparison-pools",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            94
+          ],
+          "figures": null,
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            131
+          ],
+          "figures": null,
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            53,
+            54,
+            55
+          ],
+          "figures": [
+            "Ills.77–80"
+          ],
+          "note": "README.md#original-area-ac-comparison-and-basin-notices--3-october-2026-utc",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            50,
+            52,
+            55,
+            63,
+            64
+          ],
+          "figures": [
+            "Plan13 p.52",
+            "Ill.94"
+          ],
+          "note": "README.md#original-area-ac-comparison-and-basin-notices--3-october-2026-utc",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            50,
+            67
+          ],
+          "figures": null,
+          "recorded_in": "README.md#original-area-ac-comparison-and-basin-notices--3-october-2026-utc",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false,
+          "prior_inspection_scope_notes": [
+            "netzer2001-first-pass.md#original-image-scope",
+            "netzer2001-first-pass.md#reattached-volume-i-and-inline-plan-13--3-october-2026-utc",
+            "../../measurements/cycle14/jericho_merged.md#source-and-inspection-scope"
+          ],
+          "scope_note": "The historical first-pass scope is superseded by the linked later original-image/Chapter2/cycle14 inspection records; citation pages are locators within those recorded scopes"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            50,
+            67
+          ],
+          "figures": null,
+          "note": "README.md#original-area-ac-comparison-and-basin-notices--3-october-2026-utc",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            64
+          ],
+          "figures": null,
+          "recorded_in": "README.md#original-area-ac-comparison-and-basin-notices--3-october-2026-utc",
+          "inspection_basis": "repository_note_of_prior_page_image_inspection",
+          "original_pages_opened_this_pass": false,
+          "prior_inspection_scope_notes": [
+            "netzer2001-first-pass.md#original-image-scope",
+            "netzer2001-first-pass.md#reattached-volume-i-and-inline-plan-13--3-october-2026-utc",
+            "../../measurements/cycle14/jericho_merged.md#source-and-inspection-scope"
+          ],
+          "scope_note": "The historical first-pass scope is superseded by the linked later original-image/Chapter2/cycle14 inspection records; citation pages are locators within those recorded scopes"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            64
+          ],
+          "figures": null,
+          "note": "README.md#original-area-ac-comparison-and-basin-notices--3-october-2026-utc",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            67
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            63,
+            64
+          ],
+          "figures": [
+            "Ill.94"
+          ],
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            58,
+            59,
+            60,
+            67
+          ],
+          "figures": [
+            "Ills.86-87"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_note_with_p67_reinspected",
+          "repository_note": null
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            53,
+            54,
+            55
+          ],
+          "figures": [
+            "Ills.77-80"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "netzer2001-first-pass.md"
+        },
+        {
+          "source_id": "NETZER2001",
+          "printed_pages": [
+            63,
+            64,
+            67,
+            69
+          ],
+          "figures": [
+            "Ills.92-95"
+          ],
+          "asset": "../../assets/plans/netzer2001-area-ac/area-ac-and-plan-access-context.pdf",
+          "asset_sha256": "cf08871210c59848655c4c4223cfe30334fe2737068b7b533d27b2b4713b2158"
+        }
+      ]
+    },
+    {
+      "id": "coverage-netzer1989",
+      "title": "Ehud Netzer, Aqueducts and the Hasmonean Royal Estate in the Western Jericho Valley, in The Aqueducts of Ancient Palestine(1989), pp.273–281",
+      "citation": "Recorded inspected scope: printed pages 273, 277, 279, 281, 280, 278; Fig.1 p.273; Fig.12 p.279; n.19 p.281; Figs.13–14 pp.279–280; n.14 p.281; Figs.1/9-14",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": null,
+      "inspection": "already_inspected",
+      "original_campaign": "netzer_jericho_excavation_lineage",
+      "source_role": "updated_excavation_director_account_through1987",
+      "locators": [
+        {
+          "source_id": "NETZER1989",
+          "printed_pages": [
+            273,
+            277,
+            279,
+            281
+          ],
+          "figures": [
+            "Fig.1 p.273",
+            "Fig.12 p.279",
+            "n.19 p.281"
+          ],
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "NETZER1989",
+          "printed_pages": [
+            277,
+            279,
+            280,
+            281
+          ],
+          "figures": [
+            "Fig.12 p.279",
+            "Figs.13–14 pp.279–280",
+            "n.19 p.281"
+          ],
+          "note": "README.md#estate-pools-pipe-and-figure-identity",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER1989",
+          "printed_pages": [
+            277,
+            281
+          ],
+          "figures": [
+            "n.14 p.281"
+          ],
+          "note": "README.md#estate-pools-pipe-and-figure-identity",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER1989",
+          "printed_pages": [
+            277
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "NETZER1989",
+          "printed_pages": [
+            273,
+            277,
+            278,
+            279,
+            280,
+            281
+          ],
+          "figures": [
+            "Figs.1/9-14",
+            "n.19 p.281"
+          ],
+          "asset": "../../assets/plans/aqueducts1989/jericho-cypros-original-pages.pdf",
+          "asset_sha256": "fb91287616d6b83fea40f4435b7f9c0ea8f4d4b674a4564bc253005180261c4b"
+        }
+      ]
+    },
+    {
+      "id": "coverage-trumper2018",
+      "title": "Monika Trümper, Swimming Pools and Water Management in the Eastern Mediterranean World of the4th to1st CenturyBC(2018), pp.255–296",
+      "citation": "Recorded inspected scope: printed pages 280, 281, 283, 284, 285, 286, 296, 282; Figs.18/20–22; illustration credits p.296; Fig.19 p.282; n.57 p.283; n.58 p.284",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": "https://edition-topoi.org/download_pdf/bsa_053_10.pdf",
+      "inspection": "already_inspected",
+      "original_campaign": "netzer_jericho_excavation_lineage",
+      "source_role": "archaeological_reanalysis_using_netzer_plans",
+      "locators": [
+        {
+          "source_id": "TRUMPER2018",
+          "printed_pages": [
+            280,
+            281,
+            283,
+            284,
+            285,
+            286,
+            296
+          ],
+          "figures": [
+            "Figs.18/20–22",
+            "illustration credits p.296"
+          ],
+          "note": "phase-review.md#hydraulic-chronology",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "TRUMPER2018",
+          "printed_pages": [
+            282,
+            283,
+            284
+          ],
+          "figures": [
+            "Fig.19 p.282"
+          ],
+          "note": "README.md#original-comparison-evidence",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "TRUMPER2018",
+          "printed_pages": [
+            283,
+            284
+          ],
+          "figures": [
+            "n.57 p.283",
+            "n.58 p.284"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "netzer2001-first-pass.md#ac94-inlet-survey-search--6-october-2026-utc"
+        }
+      ]
+    },
+    {
+      "id": "coverage-swp1883",
+      "title": "Conder and Kitchener, Survey of Western Palestine, MemoirsIII(1883)",
+      "citation": "Recorded inspected scope: printed pages 222, 223, 176, 192, 228, 229; Deir el-Kelt plan p.192 is separate from Birket Musa paragraph",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": "https://archive.org/download/surveyofwesternp03pale/surveyofwesternp03pale.pdf",
+      "inspection": "already_inspected",
+      "original_campaign": "swp_jericho_survey_lineage",
+      "source_role": "original_historical_survey_report",
+      "locators": [
+        {
+          "source_id": "SWP1883",
+          "printed_pages": [
+            222,
+            223
+          ],
+          "figures": null,
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "SWP1883",
+          "printed_pages": [
+            176,
+            192,
+            228,
+            229
+          ],
+          "figures": null,
+          "note": "README.md#birket-musa-original-dimensions-and-dating-limits",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "SWP1883",
+          "printed_pages": [
+            192,
+            229
+          ],
+          "figures": [
+            "Deir el-Kelt plan p.192 is separate from Birket Musa paragraph"
+          ],
+          "asset": "../../assets/plans/swp1883-jericho-waterworks/swp1883-jericho-pp176-192-228-229.pdf",
+          "asset_sha256": "436ff65a3377dab8014353b3fd7f2f32b39b9d2ecdd4a1f24a9f6823aee6cfbd"
+        }
+      ]
+    },
+    {
+      "id": "coverage-rosapat2011",
+      "title": "Nigro, Sala and Taha, eds., Archaeological Heritage in the Jericho Oasis, ROSAPAT7(2011); chapter3 D’Andrea and Sala",
+      "citation": "Recorded inspected scope: printed pages 110, 111, 112, 120, 126, 139, 107, 122, 141, 142, 154, 155, 158, 159, 101, 102, 118, 117, 114, 119, 125, 135, 137, 138, 143, 156, 157, v, vi, 95, 96, 97, 98, 99; site record; no.38 / PADIS0025; no.37 / PADIS0157; no.50 / PADIS0012; no.74 / PADIS0021; no.12 / PADIS0046; no.41 / PADIS0015; no.77 / PADIS0149; no.90 / PADIS0173; no.96 / PADIS0167; Ain es-Sultan site record; catalogue no.4; catalogue no.38; catalogue no.37; catalogue no.32; catalogue no.50; catalogue no.74; catalogue no.31; catalogue no.12; catalogue no.41; catalogue no.77; catalogue no.90; catalogue no.96; catalogue no.5",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": "https://sites.google.com/uniroma1.it/sapienzatojericho/publications",
+      "inspection": "already_inspected",
+      "original_campaign": null,
+      "source_role": "mixed_regional_catalogue_compilation_with_variable_prior_literature_and_field_checks",
+      "locators": [
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            110,
+            111,
+            112
+          ],
+          "figures": [
+            "site record"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            120
+          ],
+          "figures": [
+            "no.38 / PADIS0025"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            120
+          ],
+          "figures": [
+            "no.37 / PADIS0157"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            126
+          ],
+          "figures": [
+            "no.50 / PADIS0012"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            139
+          ],
+          "figures": [
+            "no.74 / PADIS0021"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            107
+          ],
+          "figures": [
+            "no.12 / PADIS0046"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            122
+          ],
+          "figures": [
+            "no.41 / PADIS0015"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            141,
+            142
+          ],
+          "figures": [
+            "no.77 / PADIS0149"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            154,
+            155
+          ],
+          "figures": [
+            "no.90 / PADIS0173"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            158,
+            159
+          ],
+          "figures": [
+            "no.96 / PADIS0167"
+          ],
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": null
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            110,
+            111,
+            112
+          ],
+          "figures": [
+            "Ain es-Sultan site record"
+          ],
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            101,
+            102
+          ],
+          "figures": [
+            "catalogue no.4"
+          ],
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            120
+          ],
+          "figures": [
+            "catalogue no.38"
+          ],
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            120
+          ],
+          "figures": [
+            "catalogue no.37"
+          ],
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            118
+          ],
+          "figures": [
+            "catalogue no.32"
+          ],
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            126
+          ],
+          "figures": [
+            "catalogue no.50"
+          ],
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            139
+          ],
+          "figures": [
+            "catalogue no.74"
+          ],
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            117
+          ],
+          "figures": [
+            "catalogue no.31"
+          ],
+          "note": "README.md#roster-updates-and-coverage-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            107
+          ],
+          "figures": [
+            "catalogue no.12"
+          ],
+          "note": "README.md#catalogue-completion-scope-and-additional-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            122
+          ],
+          "figures": [
+            "catalogue no.41"
+          ],
+          "note": "README.md#catalogue-completion-scope-and-additional-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            141,
+            142
+          ],
+          "figures": [
+            "catalogue no.77"
+          ],
+          "note": "README.md#catalogue-completion-scope-and-additional-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            154,
+            155
+          ],
+          "figures": [
+            "catalogue no.90"
+          ],
+          "note": "README.md#catalogue-completion-scope-and-additional-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            158,
+            159
+          ],
+          "figures": [
+            "catalogue no.96"
+          ],
+          "note": "README.md#catalogue-completion-scope-and-additional-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            102
+          ],
+          "figures": [
+            "catalogue no.5"
+          ],
+          "note": "README.md#catalogue-completion-scope-and-additional-notices",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            141,
+            142
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            114
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            119
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            125
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            135
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            137
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            138
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            142,
+            143
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            154
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            155,
+            156
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            156,
+            157
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            159
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#catalogue-completion-scope-and-additional-notices"
+        },
+        {
+          "source_id": "ROSAPAT2011",
+          "printed_pages": [
+            "v",
+            "vi",
+            95,
+            96,
+            97,
+            98,
+            99
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "README.md#inventory-source-scope"
+        }
+      ]
+    },
+    {
+      "id": "coverage-meshel-amit1989",
+      "title": "Ze’ev Meshel and David Amit, Water Supply to the Fortress of Cypros, in The Aqueducts of Ancient Palestine(1989), pp.229–242",
+      "citation": "Recorded inspected scope: printed pages 233, 234, 229, 230, 231, 232, 235, 236, 237, 238, 239, 240, 241, 242; Fig.8 p.234; Fig.1 pp.230–231; Fig.9 p.234; Fig.11 p.235 (reconstruction); Fig.13 p.236; Figs.5-9",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": null,
+      "inspection": "already_inspected",
+      "original_campaign": "meshel_amit_cypros_survey_lineage",
+      "source_role": "updated_original_survey_report",
+      "locators": [
+        {
+          "source_id": "MESHEL_AMIT1989",
+          "printed_pages": [
+            233,
+            234
+          ],
+          "figures": [
+            "Fig.8 p.234"
+          ],
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "MESHEL_AMIT1989",
+          "printed_pages": [
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242
+          ],
+          "figures": [
+            "Fig.1 pp.230–231",
+            "Fig.8 p.234",
+            "Fig.9 p.234",
+            "Fig.11 p.235 (reconstruction)",
+            "Fig.13 p.236"
+          ],
+          "note": "README.md#cypros-lower-installations-and-terminal-gap",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "MESHEL_AMIT1989",
+          "printed_pages": [
+            234
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "MESHEL_AMIT1989",
+          "printed_pages": [
+            233,
+            234
+          ],
+          "figures": [
+            "Figs.5-9"
+          ],
+          "asset": "../../assets/plans/aqueducts1989/jericho-cypros-original-pages.pdf",
+          "asset_sha256": "fb91287616d6b83fea40f4435b7f9c0ea8f4d4b674a4564bc253005180261c4b"
+        }
+      ]
+    },
+    {
+      "id": "coverage-netzer2006",
+      "title": "Ehud Netzer, with Rachel Laureys-Chachy, The Architecture of Herod, the Great Builder(2006), scopedCyprospages207/209",
+      "citation": "Recorded inspected scope: printed pages 207, 209, 206; Fig.46 p.209 (reconstructed phase-coded plan); n.27-28",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": null,
+      "inspection": "already_inspected",
+      "original_campaign": "netzer_cypros_bathhouse_reporting_lineage",
+      "source_role": "author_synthesis_with_reconstructed_plan",
+      "locators": [
+        {
+          "source_id": "NETZER2006",
+          "printed_pages": [
+            207,
+            209
+          ],
+          "figures": [
+            "Fig.46 p.209 (reconstructed phase-coded plan)"
+          ],
+          "note": "README.md#cypros-separate-stepped-pool-notices-within-j18",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        },
+        {
+          "source_id": "NETZER2006",
+          "printed_pages": [
+            207
+          ],
+          "figures": [
+            "n.27-28"
+          ],
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "NETZER2006",
+          "printed_pages": [
+            206,
+            207
+          ],
+          "figures": null,
+          "asset": "../../assets/plans/netzer2006-doq/netzer2006-doq-pp206-207-cypros-p209-bibliography-p417.pdf",
+          "asset_sha256": "070c89491f1a57d84d467f4bd5272a4e78535a1e6d2f4e9233a86bf159f3f2f0"
+        }
+      ]
+    },
+    {
+      "id": "coverage-porath1989",
+      "title": "Porath, Plaster in Aqueducts as a Chronological Indicator, in The Aqueducts of Ancient Palestine(1989), pp.69–76",
+      "citation": "Recorded inspected scope: printed pages 69, 70, 71, 72, 73, 74, 75, 76; Fig.1 p.72; original notes23/24/32 p.76",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": "https://benyehuda.org/read/71196",
+      "inspection": "already_inspected",
+      "original_campaign": null,
+      "source_role": "chronological_reanalysis_citing_prior_sources",
+      "locators": [
+        {
+          "source_id": "PORATH1989",
+          "printed_pages": [
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76
+          ],
+          "figures": [
+            "Fig.1 p.72",
+            "original notes23/24/32 p.76"
+          ],
+          "note": "README.md#porath-original-footnotes-and-accounting",
+          "inspection_basis_this_pass": "normalization_reference_to_prior_original_inspection"
+        }
+      ]
+    },
+    {
+      "id": "coverage-amit1989-doq",
+      "title": "David Amit, Water System of the Fortress of Doq (Dagon), in The Aqueducts of Ancient Palestine (1989), Hebrew pp.223-228",
+      "citation": "Recorded inspected scope: printed pages 224, 225, 226, 227, 223, 228; Figs.2/6/7; dimensions table p.227; Fig.2; Figs.1-7",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": null,
+      "inspection": "already_inspected",
+      "original_campaign": "amit_doq_survey_reporting",
+      "source_role": "original_survey_account",
+      "locators": [
+        {
+          "source_id": "AMIT1989_DOQ",
+          "printed_pages": [
+            224,
+            225,
+            226,
+            227
+          ],
+          "figures": [
+            "Figs.2/6/7",
+            "dimensions table p.227"
+          ],
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "AMIT1989_DOQ",
+          "printed_pages": [
+            225
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "AMIT1989_DOQ",
+          "printed_pages": [
+            227
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "AMIT1989_DOQ",
+          "printed_pages": [
+            224
+          ],
+          "figures": [
+            "Fig.2"
+          ],
+          "inspection_basis_this_pass": "direct_original_page_image_reinspection",
+          "repository_note": null
+        },
+        {
+          "source_id": "AMIT1989_DOQ",
+          "printed_pages": [
+            223,
+            224,
+            225,
+            226,
+            227,
+            228
+          ],
+          "figures": [
+            "Figs.1-7",
+            "dimensions table p.227"
+          ],
+          "asset": "../../assets/plans/aqueducts1989/amit-doq-pp223-228.pdf",
+          "asset_sha256": "0b7ec184cb524982f7da36327f66f01354e7edd32b92c3afb25f295408ab20c3"
+        }
+      ]
+    },
+    {
+      "id": "coverage-puech2015",
+      "title": "Émile Puech, The Copper Scroll Revisited (2015), pp.62-65",
+      "citation": "Recorded inspected scope: printed pages 65",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "url": "https://brill.com/display/title/14988?language=en",
+      "inspection": "already_inspected",
+      "original_campaign": null,
+      "source_role": "edition_and_restorations",
+      "locators": [
+        {
+          "source_id": "PUECH2015",
+          "printed_pages": [
+            65
+          ],
+          "figures": null,
+          "inspection_basis_this_pass": "prior_original_inspection_reported_in_repository_note",
+          "repository_note": "reading-note.md"
+        }
+      ]
+    },
+    {
+      "id": "coverage-inventory",
+      "title": "Jericho source-sector inventory and normalization",
+      "citation": "J01–J28, twelve named documentary sectors, twenty-one additional coverage obligations; derived reviewed record dated 6 October 2026.",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "inspection": "derived",
+      "original_campaign": null
+    },
+    {
+      "id": "coverage-wadi-original",
+      "title": "U. Dinur and N. Feig, Wadi Nu‘eima, ESI 5 (1986 designation; printed 1987)",
+      "citation": "Complete report, printed pp. 110–111 / PDF pp. 118–119; Fig. 56 is an artifact illustration, not a bath plan.",
+      "repo_path": "research/assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.json",
+      "url": "https://publications.iaa.org.il/esi_english_series/18/",
+      "inspection": "already_inspected",
+      "original_campaign": "dinur_feig_wadi_nueima_observation_lineage"
+    },
+    {
+      "id": "coverage-sion-iv17",
+      "title": "Ofer Sion, Regions IV and VI, ʿAtiqot 41 part 1 (2002)",
+      "citation": "Printed pp. 61–64 / Plan 5 p. 63; pp. 81–83, Table 1, note 11 and editorial archive pointer. Partial article scope.",
+      "repo_path": "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md",
+      "url": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/",
+      "inspection": "already_inspected",
+      "original_campaign": "abu_saraj_survey_dadon_l656_reporting"
+    },
+    {
+      "id": "coverage-iv17-phase",
+      "title": "IV/17 catalogue-to-architecture contact review",
+      "citation": "Cycle 3, 2 October 2026; Sion pp. 63–64, 81–83 / Table 1 and notes; same observation lineage.",
+      "repo_path": "research/measurements/cycle3/iv17_phase.json",
+      "inspection": "derived",
+      "original_campaign": "abu_saraj_survey_dadon_l656_reporting"
+    },
+    {
+      "id": "coverage-iv17-assessment",
+      "title": "Entry 25 IV/17 conditional assessment",
+      "citation": "Depth branch and northern threshold datum, assessment dated 2 October 2026; derived from previously exposed evidence.",
+      "repo_path": "research/assessments/entry25_iv17/assessment.json",
+      "inspection": "derived",
+      "original_campaign": "abu_saraj_survey_dadon_l656_reporting"
+    },
+    {
+      "id": "decisions-queue",
+      "title": "Historical measurement queue",
+      "citation": "Queue created 2 October 2026; six tracks M01–M06, last completed cycle 4",
+      "repo_path": "research/measurements/queue.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-active",
+      "title": "Current evidence and blockers",
+      "citation": "ACTIVE_TEST, updated 8 October 2026 UTC: Koḥlit follow-up; closed Wadi and Siloam results; parked A(C)94 and sent inquiries",
+      "repo_path": "research/ACTIVE_TEST.md",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-xii10-protocol",
+      "title": "XII 10 frozen image-reading protocol",
+      "citation": "Protocol dated 8 October UTC; R1–R7, frame authentication, independent human scoring, deterministic outcomes and exposure audit; freeze commit fd3f334ea2a40c0f8e99921ef663f8b126112fe1",
+      "repo_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md",
+      "inspection": "derived",
+      "url": "https://github.com/quadrin/CopperScroll/commit/fd3f334ea2a40c0f8e99921ef663f8b126112fe1"
+    },
+    {
+      "id": "decisions-outreach",
+      "title": "Manchester and IAA sent-request record",
+      "citation": "7 October 2026, 15:43:39–15:43:42 UTC: Manchester C.21A.1–4/C.22A.1–10/C.21-23.1 and TPA/1/132; IAA regional cave inventory. Sent verified; delivery/replies unverified.",
+      "repo_path": "research/agent_review_2026-10-07/followup/F_outreach_sent.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "decisions-iv17-phase",
+      "title": "IV/17 catalogue and architectural-contact audit",
+      "citation": "Sion 2002, Atiqot 41 part 1, pp.63–64, Plan 5 p.63, Table 1 p.81 and notes pp.82–83; Michael Dadon permit L-656, baskets 656.17/656.20",
+      "repo_path": "research/measurements/cycle3/iv17_phase.json",
+      "inspection": "already_inspected",
+      "url": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/",
+      "original_campaign": "Dadon IV/17 excavation, permit L-656; survey finds kept separate"
+    },
+    {
+      "id": "decisions-iv17-unread-file",
+      "title": "Unobtained IV/17 field-file dependency",
+      "citation": "Michael Dadon permit L-656: original plan/north, basket–locus joins 656.17/656.20, southern-wall contacts and northern-threshold sections/levels; no specific online file inspected",
+      "repo_path": "research/measurements/cycle3/iv17_phase.json",
+      "inspection": "not_inspected"
+    },
+    {
+      "id": "decisions-kallai-unread",
+      "title": "Uninspected Kallai pool pages",
+      "citation": "Kallai, Survey of the Land of Benjamin and Mt. Ephraim, in Kochavi (ed.) 1972, pp.153–196; target pp.172–173, sites 65–66, title leaf and relevant plans/captions",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "not_inspected",
+      "url": "https://www.nli.org.il/he/books/NNL_ALEPH990019622650205171/NLI"
+    },
+    {
+      "id": "decisions-marjama-review",
+      "title": "Kh. el-Marjama source and access review",
+      "citation": "B follow-up: supplied HA 76 (1981) p.19 inspected; no pool/bearing/date; Kallai 1972 pp.172–173 remain unread after the 115-document audit",
+      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-kenyon-text",
+      "title": "Kenyon III graves and later pits",
+      "citation": "Kenyon and Holland, Excavations at Jericho III, Text (1981), pp.173–174/PDF207–208; introduction pp.3–4; Trench II/Site O phases lxxvi–lxxvii; typological first-century AD attribution, not direct grave offerings",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Kenyon Jericho excavation lineage"
+    },
+    {
+      "id": "decisions-kenyon-unread-plates",
+      "title": "Uninspected separate eastern section and Plate 111b",
+      "citation": "Kenyon III separate plate volume: eastern section at local 37.50–38.00 m N / 8.17 m H, referenced pp.173–174; burial photograph Pl.111b, with native captions/errata. Eastern-section plate number remains unknown.",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "not_inspected"
+    },
+    {
+      "id": "decisions-jericho-roster",
+      "title": "Jericho inventory and equal-observation gates",
+      "citation": "Regional inventory 6 October 2026: 28 source notices, 12 documentary sectors and 21 coverage obligations; priority observation groups 1–5 and decision",
+      "repo_path": "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-jericho-contacts",
+      "title": "A(C)94 inlet survey and archive-referral record",
+      "citation": "Netzer 2001 Vol.I pp.50–52,57–59,66, Plan13 p.52; Trümper 2018 pp.283–284 nn.57–58; 6 October Ruhama custody reply and sent Rachel/Roi referrals. Invert/centre/crown, datum and contacts unknown.",
+      "repo_path": "research/assessments/entry29_jericho_pools/netzer2001-first-pass.md",
+      "inspection": "already_inspected",
+      "original_campaign": "Netzer Jericho expedition; derivative Trümper plan is the same lineage"
+    },
+    {
+      "id": "decisions-siloam",
+      "title": "Siloam main-basin contact and sent-section request",
+      "citation": "Cycle15 main-pool follow-up, 6 October 2026: Greenhut–Mazor 2020 Plan1 pp.74*,76*,83*; Szanton–Vukosavović–Berko 2024 pp.25*,33* n.3,34*; main-side section request sent 05:29:46 UTC",
+      "repo_path": "research/measurements/cycle15/siloam_bathing.json",
+      "inspection": "already_inspected",
+      "original_campaign": "Siloam 2009 excavation and Birket 2023–2024 excavation, distinct campaigns"
+    },
+    {
+      "id": "decisions-wadi",
+      "title": "Wadi original coverage and archive referral",
+      "citation": "Dinur–Feig, ESI5 (cover1986, printing1987), pp.110–111/PDF118–119, Fig.56 artifacts; supplied_original_review/current_status; archive referral sent 6 October 2026 14:17:38 UTC",
+      "repo_path": "research/assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.json",
+      "inspection": "already_inspected",
+      "original_campaign": "Dinur–Feig Wadi Nuʿeima inspection lineage"
+    }
+  ],
+  "observations": [
+    {
+      "id": "relationships-historical-east",
+      "feature_id": "jericho-historical-basin",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "The historical basin is documented at the spring on the tell’s eastern foot. This is a qualitative source relation; no basin-to-anchor surveyed bearing is asserted.",
+      "reference_frame": "Dorrell’s qualitative spring/tell description; unregistered historical photographs"
+    },
+    {
+      "id": "relationships-modern-east",
+      "feature_id": "jericho-reservoir-1898",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "The 1898 reservoir stands at the eastern-foot spring. Its position cannot supply an earlier pool state.",
+      "reference_frame": "Dorrell’s qualitative spring/tell description"
+    },
+    {
+      "id": "relationships-historical-basin-chronology",
+      "feature_id": "jericho-historical-basin",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "first_documented_state_year": 1856
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "The irregular basin is observed in nineteenth-century records; its construction and early accessible-use interval are unknown. Do not backdate it from the adjacent ancient curved wall."
+    },
+    {
+      "id": "relationships-modern-reservoir-chronology",
+      "feature_id": "jericho-reservoir-1898",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": 1898,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "Dorrell p. 111 dates extension of the mill-pool into the present reservoir to 1898. This is a separate physical/state assignment from the historical irregular basin."
+    },
+    {
+      "id": "relationships-springwall-chronology",
+      "feature_id": "jericho-springhouse-wall",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "very probably late Roman or Byzantine",
+        "dating_basis": "architectural opinion; no sealed construction date"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "note": "Late Roman / Byzantine is Dorrell’s architectural opinion, without sealed finds dating the lowest course. It does not date the separate basin."
+    },
+    {
+      "id": "relationships-ns1-north",
+      "feature_id": "jericho-cistern-ns1",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "NS1 is reported on the camp outskirts toward Khirbet Mefjar, north of the tell. No plan or surveyed cistern-mouth position was made.",
+      "reference_frame": "Kenyon II qualitative location; no mouth coordinate"
+    },
+    {
+      "id": "relationships-ns1-chronology",
+      "feature_id": "jericho-cistern-ns1",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "Roman",
+        "dating_basis": "excavator attribution / cistern assemblage"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "Kenyon labels NS1 a Roman cistern and reports Herodian lamps / comparison finds. Its construction, ancient mouth and independently dated accessible-use interval are not documented."
+    },
+    {
+      "id": "relationships-d9-north",
+      "feature_id": "jericho-shaft-d9",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "derived",
+      "note": "Area D is inferred to be in the sector north of the tell from the reviewed distribution map. This source-plan sector inference is not a measured shaft-mouth bearing.",
+      "reference_frame": "Fig. 91 p. 168 qualitative sector interpretation; not registered"
+    },
+    {
+      "id": "relationships-d9-chronology",
+      "feature_id": "jericho-shaft-d9",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "Middle Bronze shaft with Roman burial reuse",
+        "dating_basis": "relative shaft/reuse description"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "A Roman burial cuts into the side of a Middle Bronze shaft. The older shaft’s dated accessibility / opening arrangement in the selected early window remains unknown."
+    },
+    {
+      "id": "relationships-d9-burial-position",
+      "feature_id": "jericho-shaft-d9",
+      "property": "burial_in_side_of_shaft",
+      "value": {
+        "reference_feature_id": null,
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "D9’s burial is at a recessed ledge at the base / side of the older shaft. This cannot be substituted for tombs at a separately defined pit mouth."
+    },
+    {
+      "id": "relationships-graves-north",
+      "feature_id": "jericho-north-graves",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "About eighteen graves are reported on the north slope / Trench II, mostly toward its northern end; not every grave has an individual mapped mouth.",
+      "reference_frame": "Trench II / Site O local excavation coordinates; no national datum"
+    },
+    {
+      "id": "relationships-graves-chronology",
+      "feature_id": "jericho-north-graves",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "first century CE",
+        "estimated_typological_interval": [
+          1,
+          100
+        ],
+        "dating_basis": "type comparison; no grave-associated dating finds in III 173–174"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-kenyon-III",
+        "relationships-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "note": "Kenyon assigns the on-tell graves to the first century CE by grave-type comparison. There are no offerings in this scope and no dated jointly accessible grave/pit-mouth interval."
+    },
+    {
+      "id": "relationships-quarries-north",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "jericho-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "Numerous later pits occupy much of the northern trench end. Their individual mouths have no national-datum position.",
+      "reference_frame": "Trench II / Site O local frame"
+    },
+    {
+      "id": "relationships-quarries-chronology",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "relative_after_feature": "jericho-north-graves",
+        "attributed_function": "brickearth quarries"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "The phase-lxxvii quarry pits cut phase-lxxvi graves and are rubble-filled. They have no secure absolute date; later-than-grave alone is not an early-window failure."
+    },
+    {
+      "id": "relationships-quarries-later-phase",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "constructed_same_phase_as",
+      "value": {
+        "reference_feature_id": "jericho-north-graves",
+        "asserted": false
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "The pits truncate the graves and belong to later phase lxxvii, after grave phase lxxvi. This rejects same-phase construction only; it does not settle later joint accessibility.",
+      "phase": {
+        "subject": "lxxvii / Stage XXV",
+        "object": "lxxvi / Stage XXIV"
+      }
+    },
+    {
+      "id": "relationships-quarries-co-use",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "coexisted_with",
+      "value": {
+        "reference_feature_id": "jericho-north-graves",
+        "asserted": null
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "note": "Published truncation establishes sequence, not whether a usable later opening and surviving graves were jointly accessible within an early window."
+    },
+    {
+      "id": "relationships-crypt-west",
+      "feature_id": "samiya-crypt-basin",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "marjama-tell",
+        "asserted": false
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-zohar",
+        "relationships-highlands",
+        "relationships-mazar"
+      ],
+      "exposure": "derived",
+      "note": "On this named crypt-basin/spring assignment, the church is at the western foot and the spring southwest of the tell. This conditional crosswalk contradicts east-of-tell; it does not locate Kallai’s separate pool.",
+      "reference_frame": "Published qualitative church/spring/tell crosswalk; no validated bearing"
+    },
+    {
+      "id": "relationships-crypt-chronology",
+      "feature_id": "samiya-crypt-basin",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "associated_structure_date": "Byzantine church; basin date unknown"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-zohar",
+        "relationships-highlands"
+      ],
+      "exposure": "already_inspected",
+      "note": "The basin was beneath a Byzantine church crypt; the church was later destroyed. The basin itself has no separate construction date or early-use interval."
+    },
+    {
+      "id": "relationships-kallai-location",
+      "feature_id": "marjama-kallai-pool",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "marjama-tell",
+        "asserted": null
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-kallai"
+      ],
+      "exposure": "derived",
+      "note": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing."
+    },
+    {
+      "id": "relationships-kallai-chronology",
+      "feature_id": "marjama-kallai-pool",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-kallai",
+        "relationships-zohar"
+      ],
+      "exposure": "derived",
+      "note": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread."
+    },
+    {
+      "id": "relationships-samiya-bronze-north",
+      "feature_id": "samiya-north-bronze-tombs",
+      "property": "north_of",
+      "value": {
+        "reference_feature_id": "marjama-tell",
+        "asserted": true
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-highlands",
+        "relationships-mazar"
+      ],
+      "exposure": "already_inspected",
+      "note": "Dhahr Mirzbaneh’s shaft tombs are documented north/NNE of the tell and attributed to Intermediate Bronze / Middle Bronze. Their ancient mouths and later accessibility are unobserved here.",
+      "reference_frame": "Published site-level qualitative location"
+    },
+    {
+      "id": "relationships-samiya-bronze-chronology",
+      "feature_id": "samiya-north-bronze-tombs",
+      "property": "chronology",
+      "value": {
+        "reference_feature_id": null,
+        "secure_earliest_construction_year": null,
+        "secure_last_accessible_year": null,
+        "dated_accessible_interval": null,
+        "attributed_date": "Intermediate Bronze / Middle Bronze; later accessible use unknown"
+      },
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "relationships-highlands",
+        "relationships-mazar"
+      ],
+      "exposure": "already_inspected",
+      "note": "Bronze Age construction does not establish or exclude survival/accessibility in the early Roman window. There is no dated pit-mouth relation to this group."
+    },
+    {
+      "id": "relationships-hydraulics-location",
+      "feature_id": "samiya-hydraulic-system",
+      "property": "east_of",
+      "value": {
+        "reference_feature_id": "marjama-tell",
+        "asserted": null
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "relationships-highlands"
+      ],
+      "exposure": "derived",
+      "note": "Roman–Byzantine dams and aqueducts are reported at Kh. Samiya south/SE of the tell. No surveyed contact to Kallai’s pool or the church crypt basin is established."
+    },
+    {
+      "id": "relationships-yanun-pit-coverage",
+      "feature_id": "yanun-site",
+      "property": "reported_pit_count",
+      "value": {
+        "reference_feature_id": null,
+        "asserted": null
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-yanun"
+      ],
+      "exposure": "already_inspected",
+      "note": "The inspected Kh. Yanun site record describes no pit/cistern/tomb. This is report coverage, not an archaeological absence; a pit role remains unassigned."
+    },
+    {
+      "id": "inventory-iv17-pillar",
+      "feature_id": "iv17-pillar",
+      "property": "pillar",
+      "value": true,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-sion-iv17"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state",
+      "note": "Rock-cut dividing pillar reported on p. 63; its cutting date is unresolved."
+    },
+    {
+      "id": "inventory-iv17-terrace-association",
+      "feature_id": "iv17-cave",
+      "property": "terrace_association",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-puech-entry25",
+        "inventory-sion-iv17"
+      ],
+      "exposure": "derived",
+      "note": "A pillar does not decide the retained platform/terrace reading."
+    },
+    {
+      "id": "inventory-iv17-two-exterior-openings",
+      "feature_id": "iv17-cave",
+      "property": "two_exterior_openings",
+      "value": true,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-sion-iv17"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state"
+    },
+    {
+      "id": "inventory-iv17-northern-member",
+      "feature_id": "iv17-north-mouth",
+      "property": "northern_member",
+      "value": true,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-iv17-repeat"
+      ],
+      "exposure": "derived",
+      "phase": "reported_state",
+      "reference_frame": "Sion Plan 5 published north arrow, true/grid/magnetic convention unspecified",
+      "note": "Right aperture is northern after orienting the plan; page-left/page-right are not compass directions."
+    },
+    {
+      "id": "inventory-iv17-cave-east-aspect",
+      "feature_id": "iv17-cave",
+      "property": "cave_east_aspect",
+      "value": true,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-sion-iv17"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state",
+      "note": "Published eastern-cliff aspect; no exact azimuth follows."
+    },
+    {
+      "id": "inventory-iv17-both-openings-east-aspect",
+      "feature_id": "iv17-cave",
+      "property": "both_openings_east_aspect",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-sion-iv17",
+        "inventory-iv17-repeat"
+      ],
+      "exposure": "derived",
+      "note": "Cave-level cliff aspect does not resolve the stricter individual-mouth interpretation. Chord normals are not surveyed passage bearings."
+    },
+    {
+      "id": "inventory-iv17-northern-opening-width-reported",
+      "feature_id": "iv17-north-mouth",
+      "property": "northern_opening_width_reported",
+      "value": {
+        "amount": 0.8,
+        "unit": "m"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-sion-iv17"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state",
+      "reference_frame": "Sion 2002 p. 63 reported aperture width",
+      "uncertainty": "Published rounding/measurement uncertainty unspecified; not an ancient threshold reconstruction.",
+      "unit": "m"
+    },
+    {
+      "id": "inventory-iv17-northern-opening-chord-width",
+      "feature_id": "iv17-north-mouth",
+      "property": "northern_opening_chord_width",
+      "value": {
+        "amount": 0.858629662869379,
+        "unit": "m"
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-iv17-repeat"
+      ],
+      "exposure": "derived",
+      "phase": "reported_state",
+      "reference_frame": "Sion Plan 5, 626 × 541 crop pixels, origin top-left; [548,386]–[502,400]",
+      "uncertainty": {
+        "endpoint_sensitivity_m": [
+          0.5938877862885401,
+          1.162701115761271
+        ],
+        "pilot_envelope_m": [
+          0.6,
+          1.1
+        ],
+        "kind": "non-statistical raster sensitivity; scan distortion unquantified"
+      },
+      "unit": "m"
+    },
+    {
+      "id": "inventory-iv17-northern-chord-normal-proxy",
+      "feature_id": "iv17-north-mouth",
+      "property": "northern_chord_normal_proxy",
+      "value": {
+        "amount": 122.92909086979614,
+        "unit": "deg"
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-iv17-repeat"
+      ],
+      "exposure": "derived",
+      "phase": "reported_state",
+      "reference_frame": "clockwise from unspecified published north arrow; aperture chord normal",
+      "uncertainty": {
+        "endpoint_sensitivity_deg": [
+          99.4663883338802,
+          140.84035953588491
+        ],
+        "pilot_envelope_deg": [
+          101,
+          151
+        ],
+        "kind": "not a surveyed true/passage bearing; source north convention and scan distortion unquantified"
+      },
+      "unit": "deg"
+    },
+    {
+      "id": "inventory-iv17-true-individual-mouth-bearings",
+      "feature_id": "iv17-cave",
+      "property": "true_individual_mouth_bearings",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-sion-iv17",
+        "inventory-iv17-repeat"
+      ],
+      "exposure": "derived",
+      "reference_frame": "true geographic bearing",
+      "note": "No edition angular tolerance; do not substitute source-plan proxies.",
+      "unit": "deg"
+    },
+    {
+      "id": "inventory-iv17-ancient-arrangement-phase",
+      "feature_id": "iv17-cave",
+      "property": "ancient_arrangement_phase",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-iv17-phase"
+      ],
+      "exposure": "derived",
+      "note": "No published sealed pillar, mouth, wall or threshold contacts. Survey coins and arrowhead basket numbers do not date the arrangement."
+    },
+    {
+      "id": "inventory-iv17-published-use-reconstruction",
+      "feature_id": "iv17-cave",
+      "property": "published_use_reconstruction",
+      "value": "first half of second century to first half of first century BCE",
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "inventory-sion-iv17",
+        "inventory-iv17-phase"
+      ],
+      "exposure": "already_inspected",
+      "note": "Excavator use reconstruction and concealment interpretation; not a demonstrated entrance or wall construction phase."
+    },
+    {
+      "id": "inventory-iv17-northern-threshold-elevation",
+      "feature_id": "iv17-north-mouth",
+      "property": "northern_threshold_elevation",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-entry25-assessment",
+        "inventory-iv17-phase"
+      ],
+      "exposure": "derived",
+      "reference_frame": "threshold elevation datum unestablished",
+      "datum": null,
+      "note": "Neither current nor ancient northern threshold level is registered.",
+      "unit": "m"
+    },
+    {
+      "id": "inventory-iv17-northern-horizontal-origin",
+      "feature_id": "iv17-north-mouth",
+      "property": "northern_horizontal_origin",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-entry25-assessment"
+      ],
+      "exposure": "derived",
+      "reference_frame": "origin within mouth unestablished"
+    },
+    {
+      "id": "inventory-iv17-horizontal-path-direction",
+      "feature_id": "iv17-cave",
+      "property": "horizontal_path_direction",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-entry25-assessment",
+        "inventory-puech-entry25"
+      ],
+      "exposure": "derived",
+      "note": "No chosen horizontal axis or path is supplied by the inspected source."
+    },
+    {
+      "id": "inventory-iv17-ancient-traversable-connection",
+      "feature_id": "iv17-cave",
+      "property": "ancient_traversable_connection",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-sion-iv17"
+      ],
+      "exposure": "derived",
+      "note": "Continuous 2D route depicted; clearance, level changes and ancient traversal unknown. Not a mandatory entry predicate."
+    },
+    {
+      "id": "inventory-iv11-pillar",
+      "feature_id": "iv11-pillar",
+      "property": "pillar",
+      "value": true,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state",
+      "note": "Feig p. 85: internal southwest pillar, natural below and rock-cut above."
+    },
+    {
+      "id": "inventory-iv11-terrace-association",
+      "feature_id": "iv11-cave",
+      "property": "terrace_association",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-puech-entry25",
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived"
+    },
+    {
+      "id": "inventory-iv11-two-exterior-openings",
+      "feature_id": "iv11-cave",
+      "property": "two_exterior_openings",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived",
+      "note": "Inspected text describes an opening in the singular; Plan 1 does not establish a pair. This is not proof that a second ancient opening was absent."
+    },
+    {
+      "id": "inventory-iv11-northern-member",
+      "feature_id": "iv11-cave",
+      "property": "northern_member",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived"
+    },
+    {
+      "id": "inventory-iv11-cave-east-aspect",
+      "feature_id": "iv11-cave",
+      "property": "cave_east_aspect",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived",
+      "note": "Reported eastward enlargement toward the cliff does not establish facing direction."
+    },
+    {
+      "id": "inventory-iv11-both-openings-east-aspect",
+      "feature_id": "iv11-cave",
+      "property": "both_openings_east_aspect",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived"
+    },
+    {
+      "id": "inventory-iv11-northern-opening-width-reported",
+      "feature_id": "iv11-cave",
+      "property": "northern_opening_width_reported",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived",
+      "unit": "m"
+    },
+    {
+      "id": "inventory-iv11-true-individual-mouth-bearings",
+      "feature_id": "iv11-cave",
+      "property": "true_individual_mouth_bearings",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived",
+      "reference_frame": "true geographic bearing",
+      "unit": "deg"
+    },
+    {
+      "id": "inventory-iv11-ancient-arrangement-phase",
+      "feature_id": "iv11-cave",
+      "property": "ancient_arrangement_phase",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived",
+      "note": "Disturbed later deposits and upper-fill coins do not date pillar cutting, entrance enlargement or northern threshold."
+    },
+    {
+      "id": "inventory-iv11-northern-threshold-elevation",
+      "feature_id": "iv11-cave",
+      "property": "northern_threshold_elevation",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived",
+      "reference_frame": "threshold elevation datum unestablished",
+      "datum": null,
+      "note": "Earlier/later living surfaces and upper-fill coin height cannot supply the northern threshold datum.",
+      "unit": "m"
+    },
+    {
+      "id": "inventory-iv11-northern-horizontal-origin",
+      "feature_id": "iv11-cave",
+      "property": "northern_horizontal_origin",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived",
+      "reference_frame": "origin within mouth unestablished"
+    },
+    {
+      "id": "inventory-iv11-horizontal-path-direction",
+      "feature_id": "iv11-cave",
+      "property": "horizontal_path_direction",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11",
+        "inventory-puech-entry25"
+      ],
+      "exposure": "derived"
+    },
+    {
+      "id": "inventory-iv11-ancient-traversable-connection",
+      "feature_id": "iv11-cave",
+      "property": "ancient_traversable_connection",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-feig-iv11"
+      ],
+      "exposure": "derived",
+      "note": "Not a mandatory entry predicate."
+    },
+    {
+      "id": "inventory-twin-pillar",
+      "feature_id": "twin-cave",
+      "property": "pillar",
+      "value": true,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state",
+      "note": "Thick rock pillar divides northern/southern units; worked state and dimensions unspecified."
+    },
+    {
+      "id": "inventory-twin-terrace-association",
+      "feature_id": "twin-cave",
+      "property": "terrace_association",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-puech-entry25",
+        "inventory-baradon-twin"
+      ],
+      "exposure": "derived"
+    },
+    {
+      "id": "inventory-twin-two-exterior-openings",
+      "feature_id": "twin-cave",
+      "property": "two_exterior_openings",
+      "value": true,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state"
+    },
+    {
+      "id": "inventory-twin-northern-member",
+      "feature_id": "twin-cave",
+      "property": "northern_member",
+      "value": true,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state",
+      "note": "Northern/southern units named in p. [15] description; no registered mouth points."
+    },
+    {
+      "id": "inventory-twin-cave-east-aspect",
+      "feature_id": "twin-cave",
+      "property": "cave_east_aspect",
+      "value": true,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state",
+      "note": "Eastern cliff slope and east-facing openings toward Dead Sea reported."
+    },
+    {
+      "id": "inventory-twin-both-openings-east-aspect",
+      "feature_id": "twin-cave",
+      "property": "both_openings_east_aspect",
+      "value": true,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "already_inspected",
+      "phase": "reported_state",
+      "note": "Qualitative published aspect, not an exact surveyed bearing."
+    },
+    {
+      "id": "inventory-twin-northern-opening-width-reported",
+      "feature_id": "twin-cave",
+      "property": "northern_opening_width_reported",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "derived",
+      "note": "35 m length/4 m mean width concern the northern cavity, not the mouth.",
+      "unit": "m"
+    },
+    {
+      "id": "inventory-twin-true-individual-mouth-bearings",
+      "feature_id": "twin-cave",
+      "property": "true_individual_mouth_bearings",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "derived",
+      "reference_frame": "true geographic bearing",
+      "unit": "deg"
+    },
+    {
+      "id": "inventory-twin-ancient-arrangement-phase",
+      "feature_id": "twin-cave",
+      "property": "ancient_arrangement_phase",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "derived",
+      "note": "Period-compatible ceramics do not date pillar construction, mouths or threshold. Cave A/B cannot be equated with northern/southern units."
+    },
+    {
+      "id": "inventory-twin-northern-threshold-elevation",
+      "feature_id": "twin-cave",
+      "property": "northern_threshold_elevation",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "derived",
+      "reference_frame": "threshold elevation datum unestablished",
+      "datum": null,
+      "note": "Several metres of general deposits are not threshold-specific excavation depth.",
+      "unit": "m"
+    },
+    {
+      "id": "inventory-twin-northern-horizontal-origin",
+      "feature_id": "twin-cave",
+      "property": "northern_horizontal_origin",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "derived",
+      "reference_frame": "origin within mouth unestablished"
+    },
+    {
+      "id": "inventory-twin-horizontal-path-direction",
+      "feature_id": "twin-cave",
+      "property": "horizontal_path_direction",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-baradon-twin",
+        "inventory-puech-entry25"
+      ],
+      "exposure": "derived"
+    },
+    {
+      "id": "inventory-twin-ancient-traversable-connection",
+      "feature_id": "twin-cave",
+      "property": "ancient_traversable_connection",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "inventory-baradon-twin"
+      ],
+      "exposure": "derived",
+      "note": "Internal communication is not described; not a mandatory entry predicate."
+    },
+    {
+      "id": "states-iv17-space-dimensions",
+      "feature_id": "iv17-cave",
+      "property": "published_space_dimensions",
+      "value": {
+        "northern": [
+          2.2,
+          4.5
+        ],
+        "southern": [
+          2.15,
+          4.2
+        ],
+        "unit": "m",
+        "reported_area": 33.5,
+        "area_unit": "m²",
+        "height_range": [
+          1.4,
+          1.7
+        ]
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Recorded survey arrangement; ancient architecture date unknown",
+      "reference_frame": "states-iv17-plan5-crop"
+    },
+    {
+      "id": "states-iv17-wall-use-interpretation",
+      "feature_id": "iv17-south-wall",
+      "property": "concealment_interpretation",
+      "value": "Blocking interpreted as concealment during conflict involving the Hasmoneans",
+      "evidence_kind": "published_reconstruction",
+      "source_ids": [
+        "states-sion-plan",
+        "states-sion-context"
+      ],
+      "exposure": "already_inspected"
+    },
+    {
+      "id": "states-iv17-construction-date",
+      "feature_id": "iv17-south-wall",
+      "property": "sealed_construction_date",
+      "value": null,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-context"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Unknown"
+    },
+    {
+      "id": "states-iv17-pillar-cutting-date",
+      "feature_id": "iv17-pillar",
+      "property": "dated_cutting_contact",
+      "value": null,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-context"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Unknown"
+    },
+    {
+      "id": "states-iv17-threshold-level",
+      "feature_id": "iv17-north-mouth",
+      "property": "ancient_threshold_elevation",
+      "value": null,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-context"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Unknown"
+    },
+    {
+      "id": "states-d9-mb-depth",
+      "feature_id": "jericho-shaft-d9",
+      "property": "published_earlier_shaft_depth",
+      "value": {
+        "value": 3.9,
+        "unit": "m",
+        "reference": "Middle Bronze shaft; no Roman target datum"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "exposure": "already_inspected"
+    },
+    {
+      "id": "states-ns1-role",
+      "feature_id": "jericho-cistern-ns1",
+      "property": "function",
+      "value": "Cistern",
+      "evidence_kind": "excavator_label",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Roman, author attribution"
+    },
+    {
+      "id": "states-graves-surviving-depth",
+      "feature_id": "jericho-north-graves",
+      "property": "maximum_surviving_shaft_depth",
+      "value": {
+        "value": 1.25,
+        "unit": "m",
+        "reference": "Below present surface, not original ancient ground"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Stage XXIV phase lxxvi",
+      "reference_frame": "states-kenyon-trench-II",
+      "uncertainty": {
+        "erosion_and_later_truncation": true,
+        "intact_ancient_surface": null
+      }
+    },
+    {
+      "id": "states-graves-source-local-section",
+      "feature_id": "jericho-north-graves",
+      "property": "published_section_locator",
+      "value": {
+        "north_range": [
+          37.5,
+          38.0
+        ],
+        "height": 8.17,
+        "unit": "m",
+        "geometry": null,
+        "section_inspected": false
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Stage XXIV phase lxxvi",
+      "reference_frame": "states-kenyon-trench-II"
+    },
+    {
+      "id": "states-quarry-function",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "function",
+      "value": "Quarries for bricky mound material, interpreted by Kenyon",
+      "evidence_kind": "excavator_label",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Stage XXV phase lxxvii"
+    },
+    {
+      "id": "states-quarry-absolute-date",
+      "feature_id": "jericho-later-quarry-pits",
+      "property": "opening_date",
+      "value": null,
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Later than graves; absolute date unknown"
+    },
+    {
+      "id": "states-historical-basin-dimensions",
+      "feature_id": "jericho-historical-basin",
+      "property": "reported_dimensions",
+      "value": {
+        "dimensions": [
+          24,
+          40
+        ],
+        "unit": "ft",
+        "scope": "SWP irregular basin quoted by Dorrell; not modern reservoir or independently inspected SWP"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Historical description; ancient construction unknown"
+    },
+    {
+      "id": "states-reservoir-work-date",
+      "feature_id": "jericho-reservoir-1898",
+      "property": "construction_work_year",
+      "value": {
+        "year": 1898,
+        "calendar": "historical_year",
+        "basis": "Dorrell citing Sellin/Watzinger 1913"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "exposure": "already_inspected",
+      "phase": "Modern reservoir enlargement"
+    },
+    {
+      "id": "states-iv17-published-north-width",
+      "feature_id": "iv17-north-mouth",
+      "property": "published_width",
+      "value": {
+        "value": 0.8,
+        "unit": "m",
+        "scope": "recorded opening"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "exposure": "already_inspected",
+      "phase": "recorded survey arrangement; ancient date unknown",
+      "reference_frame": "states-iv17-plan5-crop"
+    },
+    {
+      "id": "states-iv17-wall-dimensions",
+      "feature_id": "iv17-south-wall",
+      "property": "published_dimensions",
+      "value": {
+        "length": 2.4,
+        "thickness": 0.4,
+        "unit": "m"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "exposure": "already_inspected",
+      "phase": "recorded survey arrangement; construction date unknown",
+      "reference_frame": "states-iv17-plan5-crop"
+    },
+    {
+      "id": "coverage-wadi-depth",
+      "feature_id": "wadi-nueima-described-miqva",
+      "property": "reported_depth",
+      "value": {
+        "value": 1.3,
+        "unit": "m",
+        "datum": "source-reported depth; surveyed ancient floor datum unavailable"
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "coverage-wadi-original"
+      ],
+      "exposure": "already_inspected",
+      "reference_frame": "published local description; no surveyed benchmark"
+    },
+    {
+      "id": "coverage-wadi-exposure",
+      "feature_id": "wadi-nueima-described-miqva",
+      "property": "reported_exposure_and_disturbance",
+      "value": {
+        "source_reports_alluvial_concealment": true,
+        "source_reports_flash_flood_exposure": true,
+        "source_reports_illegal_excavation": true,
+        "present_day_field_status": null,
+        "predicted_ancient_target_volume_reached": null,
+        "detection_limit": null,
+        "verified_negative_excavation": null
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "coverage-wadi-original"
+      ],
+      "exposure": "already_inspected"
+    },
+    {
+      "id": "coverage-wadi-function",
+      "feature_id": "wadi-nueima-described-miqva",
+      "property": "published_function_label",
+      "value": "miqva (ritual bath), author interpretation",
+      "evidence_kind": "excavator_label",
+      "source_ids": [
+        "coverage-wadi-original"
+      ],
+      "exposure": "already_inspected"
+    },
+    {
+      "id": "coverage-iv17-excavation-region",
+      "feature_id": "iv17-cave",
+      "property": "published_excavation_region",
+      "value": {
+        "description": "centres of two chambers beneath animal-activity remains",
+        "footprint": null,
+        "reached_depth_m": null
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "coverage-sion-iv17"
+      ],
+      "exposure": "already_inspected",
+      "reference_frame": "source local cave description; Plan 5 is not an excavation-limit plan"
+    },
+    {
+      "id": "coverage-iv17-threshold",
+      "feature_id": "iv17-north-mouth",
+      "property": "ancient_threshold_datum",
+      "value": null,
+      "evidence_kind": "inference",
+      "source_ids": [
+        "coverage-iv17-phase",
+        "coverage-iv17-assessment"
+      ],
+      "exposure": "derived",
+      "uncertainty": "unestablished"
+    }
+  ],
+  "states": [
+    {
+      "id": "states-iv17-cave-recorded",
+      "feature_id": "iv17-cave",
+      "label": "Recorded two-space cave",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Sion records two spaces and two mouths in the eastern cliff. Observation belongs to the published survey, not a current field visit.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-north-recorded",
+      "feature_id": "iv17-north-mouth",
+      "label": "Recorded northern aperture",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan",
+        "states-iv17-repeat"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": {
+        "type": "source_plan_segment",
+        "units": "px",
+        "points": [
+          [
+            548,
+            386
+          ],
+          [
+            502,
+            400
+          ]
+        ],
+        "source_ids": [
+          "states-iv17-repeat"
+        ]
+      },
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "width_m": [
+          0.5938877862885401,
+          1.162701115761271
+        ],
+        "first_pilot_width_m": [
+          0.6,
+          1.1
+        ],
+        "chord_normal_proxy_degrees": [
+          99.4663883338802,
+          140.84035953588491
+        ],
+        "first_pilot_proxy_degrees": [
+          101,
+          151
+        ],
+        "interpretation": "independent per-coordinate endpoint boxes evaluated at all corners, scale endpoints +/-2px, north endpoints +/-2px, clear right opening +/-6px, ragged left opening +/-5px; non-statistical raster sensitivity only; scan distortion and north convention unquantified",
+        "systematic_error_quantified": false
+      },
+      "note": "Corrected repeat identity: right/clear opening is northern after reading the published north arrow. Aperture chord is a 2D proxy; threshold height and ancient phase unknown.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-south-recorded",
+      "feature_id": "iv17-south-mouth",
+      "label": "Recorded southern remaining gap",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan",
+        "states-iv17-repeat"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": {
+        "type": "source_plan_segment",
+        "units": "px",
+        "points": [
+          [
+            258,
+            398
+          ],
+          [
+            319,
+            375
+          ]
+        ],
+        "source_ids": [
+          "states-iv17-repeat"
+        ]
+      },
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "width_m": [
+          0.9177307501275793,
+          1.4322131071509792
+        ],
+        "first_pilot_width_m": [
+          0.9,
+          1.5
+        ],
+        "chord_normal_proxy_degrees": [
+          103.96650204230086,
+          132.43944862671583
+        ],
+        "first_pilot_proxy_degrees": [
+          103,
+          143
+        ],
+        "interpretation": "independent per-coordinate endpoint boxes evaluated at all corners, scale endpoints +/-2px, north endpoints +/-2px, clear right opening +/-6px, ragged left opening +/-5px; non-statistical raster sensitivity only; scan distortion and north convention unquantified",
+        "systematic_error_quantified": false
+      },
+      "note": "Left/built-wall opening is southern. The surviving gap cannot recover the full pre-wall aperture.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-pillar-recorded",
+      "feature_id": "iv17-pillar",
+      "label": "Recorded rock-cut pillar",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Separates the reported spaces. No reviewed endpoint set or dated cutting contact defines a pillar outline.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-wall-recorded",
+      "feature_id": "iv17-south-wall",
+      "label": "Recorded partial mouth-blocking wall",
+      "status": "observed",
+      "source_ids": [
+        "states-sion-plan",
+        "states-sion-context"
+      ],
+      "phase": {
+        "label": "Published survey arrangement; ancient architectural date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-iv17-plan5-crop",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Published length 2.4 m, thickness about 0.4 m. No sealed construction date or traced plan polygon is supplied.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-hellenistic-use",
+      "feature_id": "iv17-cave",
+      "label": "Published Hellenistic-use reconstruction",
+      "status": "reconstructed",
+      "source_ids": [
+        "states-sion-plan",
+        "states-sion-context"
+      ],
+      "phase": {
+        "label": "First half of second century to first half of first century BCE",
+        "dating_basis": "Excavator use reconstruction from cave finds",
+        "use_start_bounds_bce": [
+          200,
+          151
+        ],
+        "use_end_bounds_bce": [
+          100,
+          51
+        ],
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": null,
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "This use interpretation and conflict/concealment explanation do not independently date the wall, pillar or threshold.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-south-before-wall",
+      "feature_id": "iv17-south-mouth",
+      "label": "Ancient southern aperture before blocking",
+      "status": "unknown",
+      "source_ids": [
+        "states-sion-plan",
+        "states-sion-context",
+        "states-iv17-fieldfile"
+      ],
+      "phase": {
+        "label": "Pre-wall arrangement, date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": null,
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "An original wider mouth is a proposed configuration. Its boundary, date and accessible width are unestablished.",
+      "site": "Abu Saraj"
+    },
+    {
+      "id": "states-iv17-north-ancient-threshold",
+      "feature_id": "iv17-north-mouth",
+      "label": "Ancient northern threshold required by the depth branch",
+      "status": "unknown",
+      "source_ids": [
+        "states-sion-context",
+        "states-iv17-fieldfile"
+      ],
+      "phase": {
+        "label": "Instruction-period threshold, date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": null,
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "No ancient threshold level or phase-controlled surface is recorded. z_target = z_threshold − depth remains symbolic.",
+      "threshold_elevation": null,
+      "depth_branch": {
+        "cubits": 3,
+        "metres_per_cubit": [
+          0.4,
+          0.6
+        ],
+        "conditional_depth_m": [
+          1.2,
+          1.8
+        ],
+        "interpretation": "Exploratory vertical branch; not entrance width",
+        "target_geometry": null
+      },
+      "site": "Abu Saraj",
+      "level_reference_frame": null
+    },
+    {
+      "id": "states-jericho-d9-mb",
+      "feature_id": "jericho-shaft-d9",
+      "label": "D9 Middle Bronze shaft",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "Middle Bronze shaft, published attribution",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "The reported 3.90 m depth belongs to the earlier shaft; it is not a Roman burial-depth datum.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-d9-roman",
+      "feature_id": "jericho-shaft-d9",
+      "label": "D9 Roman burial reuse",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "Roman burial, published attribution",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "A rectangular burial shaft with a recessed ledge was cut into the side of the earlier Middle Bronze shaft. No entry-60 mouth/grave crosswalk follows.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-ns1",
+      "feature_id": "jericho-cistern-ns1",
+      "label": "N.S.1 reported Roman cistern",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "Roman, assemblage/author attribution",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Rescue-dug toward Khirbet Mefjar on the camp outskirts. No plan was made; no relation to the on-tell grave group is established.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-graves-recorded",
+      "feature_id": "jericho-north-graves",
+      "label": "Trench II/Site O shaft graves",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "phase": {
+        "label": "Stage XXIV, phase lxxvi",
+        "stratigraphic_key": [
+          "Tell es-Sultan",
+          "Trench II/Site O",
+          "XXIV",
+          "lxxvi"
+        ],
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-kenyon-trench-II",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "About eighteen burials in the excavated area, mostly northern. Source-reported shafts with lateral recesses; normally mudbrick closures. Maximum surviving depth 1.25 m below present surface is not the intact ancient surface datum.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-graves-first-century",
+      "feature_id": "jericho-north-graves",
+      "label": "First-century AD grave-type attribution",
+      "status": "reconstructed",
+      "source_ids": [
+        "states-kenyon-III",
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "First century AD, typological attribution",
+        "attributed_years": [
+          1,
+          100
+        ],
+        "dating_basis": "Comparison with II cemetery and Qumran grave types; no offerings in these graves",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-kenyon-trench-II",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "This interpretive dating draws on the same expedition/publication lineage. Common grave type does not identify a burial community or the Scroll tombs.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-quarries-recorded",
+      "feature_id": "jericho-later-quarry-pits",
+      "label": "Later pits cutting grave shafts",
+      "status": "observed",
+      "source_ids": [
+        "states-kenyon-III"
+      ],
+      "phase": {
+        "label": "Stage XXV, phase lxxvii; absolute date unknown",
+        "stratigraphic_key": [
+          "Tell es-Sultan",
+          "Trench II/Site O",
+          "XXV",
+          "lxxvii"
+        ],
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-kenyon-trench-II",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Pits truncate many grave shafts and contain backfilled rubble. Quarry function is Kenyon’s interpretation; their absolute opening date and accessibility beside surviving graves remain unknown.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-jericho-north-unsurveyed",
+      "feature_id": "jericho-tell",
+      "label": "Near-north strip skipped by cemetery search",
+      "status": "unknown",
+      "source_ids": [
+        "states-kenyon-II"
+      ],
+      "phase": {
+        "label": "Historical search coverage, ancient feature state unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Kenyon II p. 169 reports superficial deposits and a skipped strip just north of the tell. This is missing coverage, not an observed empty ancient landscape.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-historical-basin",
+      "feature_id": "jericho-historical-basin",
+      "label": "Historical irregular spring basin",
+      "status": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "Nineteenth-century descriptions/1856 photograph; construction date unknown",
+        "recorded_observation_year": 1856,
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "SWP 24 × 40 ft dimensions are quoted through Dorrell; the original SWP text is not newly inspected. Irregular successor basin is distinct from the modern reservoir.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-wall-recorded",
+      "feature_id": "jericho-springhouse-wall",
+      "label": "Historical curved wall and niche",
+      "status": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "Historical photographic remains; construction date unknown",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Curved wall behind the basin, with niches/stucco and later patching/plundering. Protected photographs are link-only; no wall polygon is traced.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-wall-attribution",
+      "feature_id": "jericho-springhouse-wall",
+      "label": "Late Roman/Byzantine wall attribution",
+      "status": "reconstructed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "Late Roman or Byzantine, scholarly opinion",
+        "dating_basis": "Architecture/comparanda; no sealed lowest-course deposit cited",
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "Retains Dorrell’s tentative interpretation without assigning a secure ancient construction year.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-reservoir-1898",
+      "feature_id": "jericho-reservoir-1898",
+      "label": "Reservoir enlargement in 1898",
+      "status": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "1898 documented reservoir work",
+        "construction": {
+          "years": [
+            1898,
+            1898
+          ],
+          "calendar": "historical_year",
+          "basis": "documented_construction"
+        }
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": true,
+        "geographic_registration": null
+      },
+      "note": "Dorrell p. 111 reports extension of the c. 1891–93 mill-pool into the present reservoir in 1898. The modern back wall lies about 1 m east of the old curved spring-house wall.",
+      "site": "Jericho"
+    },
+    {
+      "id": "states-spring-reservoir-1908",
+      "feature_id": "jericho-reservoir-1898",
+      "label": "Reservoir layout in the January 1908 plan",
+      "status": "observed",
+      "source_ids": [
+        "states-dorrell"
+      ],
+      "phase": {
+        "label": "January 1908 recorded layout",
+        "recorded_observation_year": 1908,
+        "construction": null
+      },
+      "geometry": null,
+      "world_geometry": null,
+      "reference_frame": "states-jericho-descriptions",
+      "uncertainty": {
+        "absolute_date_established": false,
+        "geographic_registration": null
+      },
+      "note": "North–south basin curved at the north, with mill southeast. No controlled georeferenced overlay is supplied.",
+      "site": "Jericho"
+    }
+  ]
+}
