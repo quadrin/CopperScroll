@@ -2,6 +2,8 @@
 
 This file, `protocol_constants.json`, `coverage.json`, `build_packets.py` and `match.py` were committed together, before any unit was coded. They apply §4 and §5 of the [pre-registration](../../../preregistration/kohlit_rarity_2026-10-08.md). Where the pre-registration is silent, the choices below were made without any coded data.
 
+**Amendment 1 (8 October 2026 UTC, before any sheet existed).** The first freeze (b7a682b) allowed `grid` only for a WBADB row that is itself the feature. That would leave every component of a neighbouring site without a position, so the survey level could almost never match. The amended §4 gives such a component its row's point. No unit had been coded when this was changed. One packet (E334, Tell es-Sultan) had been opened to test the builder. That check showed no WBADB row within 1 km of it in the north or east sector with a valid bearing.
+
 **Deviation, logged.** §5 says that the matching script is committed "before Stage 1". It was committed after Stage 1 (screens 75b0af9 and 75ceb80) and before Stage 2. Stage 1 output holds no position, distance, bearing, mouth or date data, so no condition could be seen before this freeze.
 
 ## 1. Units and order
@@ -44,7 +46,7 @@ A "cistern" is a `pit`. A cave is a `pit` unless the source calls it a burial or
 
 Give exactly one `position` per feature.
 
-- **`grid`.** The feature has its own point in the packet: a WBADB row (`ref` = its row id, for example `S1234`) or a Nigro entry (`ref` = `N` + catalogue number, for example `N21`). Use the packet's `geom`. Do not compute bearings yourself. If the row is a site with several components, use `grid` only for a component that the row itself is (for example a row named "Birket X"). Do not use `grid` for one item in a list of a site's components.
+- **`grid`.** The feature is at a point in the packet: a WBADB row other than the unit's own (`ref` = its row id, for example `S1234`) or a Nigro entry (`ref` = `N` + catalogue number, for example `N21`). Use the packet's `geom`. Do not compute bearings yourself. A component listed for another row or entry (for example "cisterns" in the components of a ruin 600 m away) takes that row's point. The components of the unit's own row have no position from the grid: use `words` or `none` for them.
 - **`words`.** The source gives a direction from the unit in words. Give `direction` as a compass point (N, NNE, NE, ENE, E, …, NNW) or, for C1 only, `east part` when the source puts the feature in the site's eastern part. Give `distance_m` only if the source gives a distance. Set `relative_to` to `unit` only if the direction is from the unit site itself. If it is from something else ("east of the cistern"), set `other`.
 - **`plan`.** You measured `bearing_deg` and `distance_m` from the unit's centre on a published plan in the packet. Say which figure in `cite`.
 - **`none`.** No position is given. This is the usual case for a component in a WBADB component list.
