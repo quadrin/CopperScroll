@@ -1,0 +1,19 @@
+{
+  "date_utc": "2026-10-08",
+  "source_ref": "83230367bf6a592c35f8f8e060e744e3b5ff5604",
+  "scope": "30 bounded sensitivity runs; old numeric priors; no refit or new field evidence",
+  "default": "K2 fixed normalizer; pi need not be stationary",
+  "input_and_code_sha256": {
+    "scripts/joint_model_v1.py": "79c2f62966506840033f3ccb22315c7297e775c9a702289909e3769233bc9040",
+    "scripts/check_order_kernel.py": "c1a6416ada62311efc8fb7bb2d2bffce6b97ac0b39abbb8046acb7b241fbe211",
+    "inputs/candidates_v0.csv": "3b217305b030c918c33ac43f16f8cdc0ac6f8c47ca932a364984709e907df26b",
+    "inputs/candidates_v1.csv": "5c73c7620a0c378029908589411fa5b8d99c398256cd6950aea50e0e75d4589d",
+    "inputs/entries_v0.csv": "5107dbe9cd22c34aa325b9515aac87945e59e6c47b7558827d0e35e6c77bce2c",
+    "inputs/entries_v1.csv": "5107dbe9cd22c34aa325b9515aac87945e59e6c47b7558827d0e35e6c77bce2c",
+    "inputs/kohlit_proposals_v1.csv": "db1ae5707fcc6f226220eed4baf7f65f6ecc03fb74b74eb4a873bd042c43aee3",
+    "inputs/name_groups_v0.csv": "7db69e6a336412ac1978efb2c74f66f90b4cb8bf5c6143012a6b5696fe698e17",
+    "inputs/name_groups_v1.csv": "09e9aed6ece43bb1a081534e953f041761a3d9d983ba34294c5da5242fa4c36c",
+    "inputs/places_v0.csv": "2c2e762dee0601701449f5876e348836e647b7fbd613f3d7be78a1ca6862e1dc",
+    "inputs/places_v1.csv": "fc1125e91e82009fa224fcf98450b22216754d4ecec7e74d416a3b9e65d17288"
+  }
+}

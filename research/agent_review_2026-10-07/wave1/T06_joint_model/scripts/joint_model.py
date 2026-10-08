@@ -9,8 +9,9 @@ Generative story (all terms optional / tunable):
         K(a,b) = sum_k alpha_k * mean over location components of (1 + d_eff/ell_k)^(-lam)
     i.e. with probability w the next entry is a LOCAL step (distance-decaying kernel with a site scale
     ell_1 = 1 km and a district scale ell_2 = 10 km by default) and with 1 - w a jump to anywhere.  d_eff = sqrt(d^2 + sigma_a^2 + sigma_b^2) uses each place's stated precision; Ks is K after a
-    symmetric Sinkhorn scaling so that pi is the stationary distribution (the itinerary term changes the
-    correlation between neighbours, not the marginal of a lone entry).  w = 0 => independent entries (control).
+    fixed global normalization with each row deficit returned to pi (W2B K2; corrected 8 October UTC).
+    pi is an initial/background measure, not generally stationary. Explicit transition='sinkhorn'
+    reproduces the old stationary model. w = 0 => independent entries (control).
     Separate weights for transitions inside entries 1-19 (w_A) and elsewhere (w_L).
   * Repeated-name term: each name group g (entries naming the same place) has a latent location Z_g ~ pi
     (restricted to members' candidates + U states); each member gets a factor
@@ -47,6 +48,7 @@ DEFAULT = dict(
     exclude_order_derived=(),        # e.g. ('documented',) or ('documented','likely')
     readings=dict(kohlit15=True, solomon23=True),
     strict_coords=False,             # True: ignore candidates whose place has no coordinates in places.json
+    transition='fixed',              # W2B K2; 'sinkhorn' explicitly reproduces historical v0 outputs
 )
 
 REG_COARSE = dict(JER='Jerusalem side', SOUTH='Jerusalem side', WEST='Jerusalem side',
@@ -158,6 +160,19 @@ class Model:
 
     def local_transition(self, lam):
         K = sum(a * self.kernel(lam, l) for a, l in zip(self.c['scale_w'], self.c['scales']))
+        mode = self.c.get('transition', 'fixed')
+        if mode == 'fixed':
+            # W2B K2: one global normalizer, with row deficit returned to pi.
+            # Arrival factors have no destination-specific Sinkhorn multiplier.
+            # pi is an initial/background measure; it is not generally stationary.
+            s = K @ self.pi
+            C = float(s.max())
+            if not np.isfinite(C) or C <= 0:
+                raise ValueError('fixed kernel requires a finite positive normalizer')
+            T = self.pi[None, :] * (K / C + (1.0 - s / C)[:, None])
+            return T / T.sum(1, keepdims=True)
+        if mode != 'sinkhorn':
+            raise ValueError('unknown transition: ' + str(mode))
         v = np.ones(self.S)
         for _ in range(5000):
             nv = np.sqrt(v / (K @ (self.pi * v)))
@@ -362,15 +377,20 @@ def self_test(data):
     for i, e in enumerate(r['order']):
         assert np.allclose(r['post'][i], r['ev'][e][1], atol=1e-10), e
     assert abs(r['logml']) < 1e-9
-    # stationary check of the itinerary chain
-    m2 = Model(data, cfg_with(w_A=0.9, w_L=0.9, rho=0))
+    # Stationarity belongs only to the legacy Sinkhorn model.
+    m2 = Model(data, cfg_with(w_A=0.9, w_L=0.9, rho=0, transition='sinkhorn'))
     T = m2.transition(0.9)
     assert np.allclose(m2.pi @ T, m2.pi, atol=1e-9)
-    # with no evidence at all the marginals must equal pi (itinerary term alone)
+    # Fixed K2 can drift without evidence; verify the forward Markov marginals.
     rr = Model(data, cfg_with(w_A=0.95, w_L=0.95, lam=3.0, rho=0))
     order = data.order
     res = rr.run(order=order, drop=set(order))
-    assert np.allclose(res['post'], rr.pi[None, :], atol=1e-8)
+    q = rr.pi.copy()
+    for i, e in enumerate(order):
+        if i:
+            q = q @ rr.transition(0.95)
+        assert np.allclose(res['post'][i], q, atol=1e-8), e
+    assert abs(res['logml']) < 1e-9
     # brute-force check of exact inference with groups on a short sub-order
     sub = ['4', '5', '6', '11', '13']
     mm = Model(data, cfg_with(w_A=0.8, w_L=0.8, rho=0.9, readings=dict(kohlit15=True, solomon23=True)))
@@ -627,7 +647,7 @@ def main():
     ap = argparse.ArgumentParser()
     here = os.path.dirname(os.path.abspath(__file__))
     ap.add_argument('--inputs', default=os.path.join(here, '..', 'inputs'))
-    ap.add_argument('--out', default=os.path.join(here, '..', 'outputs'))
+    ap.add_argument('--out', default=os.path.join(here, '..', 'outputs_fixed'))
     ap.add_argument('--config', default=None, help='JSON file overriding DEFAULT keys')
     ap.add_argument('--quick', action='store_true')
     ap.add_argument('--nperm', type=int, default=20000)
@@ -638,7 +658,7 @@ def main():
     assert self_test(data)
     print('self-test passed', round(time.time() - t0, 1), 's')
     over = json.load(open(a.config)) if a.config else {}
-    summary = dict(version='v0', date='2026-10-06', defaults=DEFAULT, config_overrides=over)
+    summary = dict(version='v0-fixed-2026-10-08', date='2026-10-08', defaults=DEFAULT, config_overrides=over)
 
     # ---- 1. fit itinerary weights (type-II ML) without and with the name term
     fits = {}
@@ -783,3 +803,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

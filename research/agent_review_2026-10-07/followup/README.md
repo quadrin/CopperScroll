@@ -2,7 +2,9 @@
 
 This follow-up works the Koḥlit (R07) observations listed in [GOALS.md](../GOALS.md). The project owner supplied the sources: Dorrell 1993, Warren's two books, Mazar 1995, IEJ 30 Notes and News, *Highlands of Many Cultures*, Kenyon's *Jericho* II, and three CORONA frames. Three agents read the books in parallel. The coordinator did the imagery, the Kotar check and the outreach. Each claim is labelled EVIDENCE (what the source says or shows, with page) or INFERENCE.
 
-**Outcome: no identification, confidence grade, coordinate or deposit changes. No outcome-ledger increment is claimed.** The balance of evidence on the last entry (entry 60) moves further toward Tell es-Sultan. The pool test (entry 11) is now weaker at both candidate sites.
+**Outcome: no identification, confidence grade, coordinate or deposit changes. No outcome-ledger increment is claimed.** Tell es-Sultan remains the first desk-work target; no measured pit-mouth/tomb-mouth relation is established. The pool test (entry11) has no demonstrated early pool match at either candidate site.
+
+**Current follow-up, 8 October UTC / 7 October Los Angeles:** [HA76 p.19 is inspected](B_kh_el_marjama.md#supplied-ha-76-original-inspected--8-october-utc--7-october-los-angeles); no pool is described. Kallai pp.172–173 and KenyonIII pp.173–174 remain unavailable after the exact-folder/public-source check. [K2 is active](../wave2/W2B_model_v1/KERNEL_CORRECTION.md), and [registry v2](../wave2/W2B_model_v1/registry_v2_entry60.json) corrects the exploratory targets. The [image-reading freeze `fd3f334`](https://github.com/quadrin/CopperScroll/commit/fd3f334ea2a40c0f8e99921ef663f8b126112fe1) precedes future Manchester inspection; no new scan was opened.
 
 ## Results
 
@@ -38,9 +40,9 @@ This follow-up works the Koḥlit (R07) observations listed in [GOALS.md](../GOA
 
 ## Next decisive observations
 
-1. **XII 10 at the 21/22 cut.** Await Manchester's reply on C.21–23.
+1. **XII10 at the21/22 cut.** Await Manchester’s reply on C.21–23; apply the frozen [image protocol](../wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md) and exposure/lineage audit before analyst inspection.
 2. **ʿAin es-Sultan.** Find sealed finds under the lowest course of the curved spring-house wall or basin rim, about 1 m behind the 1898 back wall (Dorrell p. 112). Record whether the basin is rock-cut or built.
-3. **Kh. el-Marjama.** Read Kallai 1972 pp. 172–173 and Zohar's Hebrew report (HA 76 [1981] p. 19). Neither is on Kotar.
+3. **Kh. el-Marjama.** Obtain Kallai’s chapter in Kochavi(ed.), *Judaea, Samaria and the Golan: Archaeological Survey1967–1968* (1972), pp.172–173 plus plan/sites65–66 context. [B](B_kh_el_marjama.md) records library routes. Zohar HA76p.19 is read; its hydraulic coverage check is closed.
 4. **Kenyon *Jericho* III (1981)** pp. 173–174.
 5. **600-dpi RAF scans.** PS30 5107/5137 (north of the tell, before the camp), PS32 5038 / PS30 6054 (ʿEin Samiya, to test the dark square) and PS29 6140 (Qumran).
 

@@ -15,8 +15,8 @@ copied unmodified to ../wave1_copy/), with these additions:
     i.e. Janoah lies NORTH of Kohlit at a distance of order ell_J (h soft: exp(kappa(cos theta - 1)); hard:
     1 inside +-45 deg of north, 0.02 outside).  Janoah's location is fixed at Kh. Yanun (Zissu/Lefkovits).
   * run(L_override=...) lets an analysis clamp entries to a single state (used for order Bayes factors).
-With no Kohlit-scheme odds other than Tell es-Sultan = low and no new places this reduces to v0 (checked in
-analysis_v1.py: reproduce_v0()).
+The corrected default is W2B K2 ('fixed'), as in the current T06 runner. Explicit
+transition='sinkhorn' and the v0 inputs reproduce historical v0 (analysis_v1.py: v0check()).
 """
 import csv, json, math, os
 import numpy as np
@@ -32,8 +32,8 @@ DEFAULT = dict(
     janoah=dict(rho=0.9, ell=10.0, nu=3.0, kappa=2.0, mode='soft', target='kh_yanun', sep=3.0),
     strict_coords=False,
     drop_groups=(),
-    transition='sinkhorn',
-    grid_km=0, grid_mass=1.0, grid_bbox=(31.2, 32.9, 34.9, 35.8),  # background grid (0 = off)  # 'sinkhorn' (T06 v0) or 'fixed' (density-neutral, see local_transition)      # name groups to switch off (used when the group's members are clamped)
+    transition='fixed',  # W2B K2; use explicit 'sinkhorn' for historical reproduction
+    grid_km=0, grid_mass=1.0, grid_bbox=(31.2, 32.9, 34.9, 35.8),  # background grid (0 = off)
 )
 
 REG_COARSE = dict(JER='Jerusalem side', SOUTH='Jerusalem side', WEST='Jerusalem side',
@@ -200,15 +200,20 @@ class Model:
 
     def local_transition(self, lam):
         K = sum(a * self.kernel(lam, l) for a, l in zip(self.c['scale_w'], self.c['scales']))
-        if self.c.get('transition', 'sinkhorn') == 'fixed':
+        mode = self.c.get('transition', 'fixed')
+        if mode == 'fixed':
             # density-neutral alternative: one global normaliser C (the largest pi-weighted row sum); the deficit
             # r(a) = 1 - sum_b pi(b) K(a,b) / C leaks to the background pi.  The arriving state's factor is then
             # K(a,b) only (no Sinkhorn scaling), so isolated places get no self-transition boost and dense
             # clusters no inbound penalty; the price is that pi is no longer exactly stationary.
             s = K @ self.pi
-            C = s.max()
+            C = float(s.max())
+            if not np.isfinite(C) or C <= 0:
+                raise ValueError('fixed kernel requires a finite positive normalizer')
             T = self.pi[None, :] * K / C + (1.0 - s / C)[:, None] * self.pi[None, :]
             return T / T.sum(1, keepdims=True)
+        if mode != 'sinkhorn':
+            raise ValueError('unknown transition: ' + str(mode))
         v = np.ones(self.S)
         for _ in range(5000):
             nv = np.sqrt(v / (K @ (self.pi * v)))
@@ -437,3 +442,4 @@ def write_csv(path, rows):
         w.writeheader()
         for r in rows:
             w.writerow(r)
+

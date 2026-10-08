@@ -43,10 +43,10 @@ def model(data, **kw):
 # ------------------------------------------------------------------------------------------------ v0 check
 def v0check(a):
     d0 = jm.Data(a.inputs, 'v0')
-    m = model(d0, w_A=0.4, w_L=0.995, lam=2.0, rho=0.9, kohlit_scheme=None)
+    m = model(d0, w_A=0.4, w_L=0.995, lam=2.0, rho=0.9, kohlit_scheme=None, transition='sinkhorn')
     r = m.run()
     ref = {row['entry']: row for row in csv.DictReader(open(os.path.join(
-        a.inputs, '..', '..', '..', 'results', 'T06_joint_model', 'outputs', 'posterior_M3_joint_fitted.csv')))}
+        a.inputs, '..', '..', '..', 'wave1', 'T06_joint_model', 'outputs', 'posterior_M3_joint_fitted.csv')))}
     pos = {e: i for i, e in enumerate(r['order'])}
     mx = max(abs(v - float(ref[e]['R_' + k])) for e in r['order'] for k, v in m.region_probs(r['post'][pos[e]]).items())
     out = dict(logml=round(r['logml'], 4), T06_M3_logml=8.6831, max_abs_region_diff=mx)
@@ -289,7 +289,7 @@ if __name__ == '__main__':
     here = os.path.dirname(os.path.abspath(__file__))
     ap.add_argument('step')
     ap.add_argument('--inputs', default=os.path.join(here, '..', 'inputs'))
-    ap.add_argument('--out', default=os.path.join(here, '..', 'outputs'))
+    ap.add_argument('--out', default=os.path.join(here, '..', 'outputs_fixed'))
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     steps = ['v0check', 'density', 'fit', 'clamp', 'post', 'jsens'] if a.step == 'all' else [a.step]
@@ -297,3 +297,4 @@ if __name__ == '__main__':
         t = time.time()
         globals()[s](a)
         print('STEP', s, 'took', round(time.time() - t), 's', flush=True)
+
