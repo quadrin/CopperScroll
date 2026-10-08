@@ -106,4 +106,11 @@ The whole Zohar report is printed **19 / PDF 20**, from its separate heading thr
 
 **Accounting:** one newly inspected Hebrew report scope and one combined original-source pool/bearing/date coverage check; the IEJ 30 and HA 76 notices share Zohar's December 1979–January 1980 campaign, so they supply no independent field corroboration. Authentication, adjacent-context review, re-rendering and the earlier access attempts add no further increment. No registered unseen prediction or confirmatory identification test is claimed.
 
+## Refreshed supplied-folder audit — after the additional uploads, 8 October UTC
+
+After the user's upload notice, repeated folder-scoped Kallai/Kochavi/Hebrew-title searches and complete metadata pagination returned **114 documents (100 + 14; second page exhausted)** and no child folders. Compared with the earlier 111-document inventory, the three new IDs are the two Kenyon files being handled separately and [`viewcontent.pdf`](https://drive.google.com/file/d/1NPUMjlNi60XFjOhKwQjx5yzjZznUNL5x/view) (Drive ID `1NPUMjlNi60XFjOhKwQjx5yzjZznUNL5x`, uploaded 8 October 02:48 UTC; declared 1,302,192 bytes). The latter's declared size matches the attached HA original, but size alone is not a verified hash match. Drive metadata and raw fetch returned an authenticated file reference; attempted materialization returned **403 Forbidden**. The original user attachment remains available and inspected above. This alternate access route adds no source or check increment.
+
+No exact Kallai/Kochavi 1972 original was authenticated in this refreshed inventory. The required native pp. **172–173**, sites **65–66** context, title leaf and relevant plan/caption therefore remain uninspected. Preserve the existing pool/date result and source-access routes. This refreshed metadata audit adds **zero** source inspections, archaeological checks, cartographic intakes or outcomes.
+
+
 
