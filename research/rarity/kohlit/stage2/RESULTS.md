@@ -4,6 +4,8 @@ This applies the [approved pre-registration](../../../preregistration/kohlit_rar
 
 **Addendum (8 October 2026 UTC).** Source 4 was later read for 24 more units, from PDFs that the project owner supplied. The headline numbers do not change. Four units change at the condition level. See [addendum_s4/ADDENDUM.md](addendum_s4/ADDENDUM.md).
 
+**Addendum 2 (8 October 2026 UTC).** Zertal's survey entries (source 2) were later read for 78 units, from the English edition that the project owner supplied. Branch A still has k = 0, but f rises from 1 to 20 (m = 313), because 19 entries state "Cisterns: none" and no recorded pit could qualify. Branch B gains Qarn Sarṭaba (k = 5). See [addendum_s2/ADDENDUM.md](addendum_s2/ADDENDUM.md).
+
 - **Coding.** Coder A coded all 244 Stage 2 units, from the v2 packets ([`packet_manifest.csv`](packet_manifest.csv)). Coder B coded 60 units: a random 49 (20%) plus the 15 units with a coder-A match in any branch or variant ([`coder_b_sample.csv`](coder_b_sample.csv)).
 - **Matching.** `match.py` (frozen in b7a682b, unchanged since) gave the numbers below. Sheets are in [`coded/`](coded/) and outputs in [`results/`](results/).
 
@@ -101,7 +103,7 @@ Where the coders differ, the merged value is UNKNOWN.
 
 ## Limits
 
-- **Source 2.** It was read only where the survey is *Highlands of Many Cultures* (48 units). Zertal, Kochavi 1972 (Gophna and Porat, Bar-Adon, Kallai) and the Benjamin surveys are library-only and were not accessed.
+- **Source 2.** It was read only where the survey is *Highlands of Many Cultures* (48 units). Zertal, Kochavi 1972 (Gophna and Porat, Bar-Adon, Kallai) and the Benjamin surveys are library-only and were not accessed. *(Zertal Vols. 2–4 were later read for 78 units in [Addendum 2](addendum_s2/ADDENDUM.md).)*
 - **Source 4.** Of 42 first publications, 1 was read (Bar-Yosef et al. 1974, Persée), and it does not describe the settlement; see [`source4_access.csv`](source4_access.csv). Four are open access on the IAA site, but their PDF links return a Cloudflare bot check (403) from this environment. *(Correction: eight are there, including ESI 5 and 9 and HA 40 and 59–60. All eight were read in the [addendum](addendum_s4/ADDENDUM.md).)*
   - ESI 15 (Tell es-Sultan, E334): <https://publications.iaa.org.il/esi_english_series/8/>
   - HA 45 p. 16 (Tell Jenin, S71): <https://publications.iaa.org.il/ha_hebrew_series/76/>

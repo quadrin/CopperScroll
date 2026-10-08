@@ -1,0 +1,107 @@
+{
+ "unit_id": "S1116",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 84, p. 280",
+   "quote": "On the western slope are a small plastered pool",
+   "type": "pool",
+   "subtype": "small plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 84, p. 282 (quoting Conder and Kitchener 1882)",
+   "quote": "ruined cisterns of masonry lined with cement on the tell",
+   "type": "pit",
+   "subtype": "masonry cisterns lined with cement",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 84, p. 280 (quoting Guerin 1969: 241)",
+   "quote": "west, at the tell's foot, is a wali ... The Sheikh's tomb",
+   "type": "grave",
+   "subtype": "Sheikh's tomb in domed shrine (wali)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "L",
+    "basis": "described as a Muslim saint's tomb (wali), hence after 135 CE"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 84, p. 281 (quoting Guerin 1969: 241)",
+   "quote": "a courtyard in which I saw several more Moslem tombs",
+   "type": "grave",
+   "subtype": "Muslim tombs in the wali courtyard",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "L",
+    "basis": "described as Moslem tombs, hence after 135 CE"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 84, p. 281 (quoting Conder and Kitchener 1882: 395)",
+   "quote": "the cemetery to have been in a rocky ledge 0.5 mile north",
+   "type": "grave",
+   "subtype": "cemetery (grave type not stated)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": 805,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 84, p. 280",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "f1: text puts the pool on the western slope (plan fig. 167, north arrow pointing left, shows it on the W/SW slope; words used). f3-f4: Guerin's wali is 'some distance west, at the tell's foot'; the Muslim tombs are in its forecourt, so given the same W direction. f5: the quoted British Survey says the town stood at Tell el Mazar (which the entry equates with this tell) and the cemetery was 0.5 mile (= 805 m) north; relative_to unit. Grave type not stated, so cavity_with_opening false. WBADB row S1080 'Tell el-Mazar' (922 m, 347.5 deg) lists a Per cemetery, but the entry does not link the two, so no grid position. CONFLICT: the data block says 'Cisterns: none' (recorded as a C2 absence), but the quoted 1874 survey reports ruined cemented cisterns on the tell (f2). The Abel quote's sarcophagus in a quarry belongs to Site 82 and is not coded."
+}

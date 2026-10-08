@@ -1,0 +1,88 @@
+{
+ "unit_id": "S695",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 148, p. 410 (fig. 326 p. 411, '3 Burial Cave')",
+   "quote": "50 m north of the “Kurgan” ... a large, empty burial cave",
+   "type": "grave",
+   "subtype": "burial cave with steps leading into it",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": 50,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site period list does not date the component)"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 148, p. 410",
+   "quote": "To the north of the site there is also a hewn basin.",
+   "type": "pool",
+   "subtype": "hewn basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site period list does not date the component)"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 148, p. 410 (fig. 326 p. 411)",
+   "quote": "northwest of the “kurgan” ... Close to it is a smaller tumulus.",
+   "type": "grave",
+   "subtype": "tumulus",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "NW",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site period list does not date the component)"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 148, fig. 326 p. 411 (second 'Tumulus' label)",
+   "quote": "Tumulus",
+   "type": "grave",
+   "subtype": "tumulus (plan only)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site period list does not date the component)"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 148, p. 409 (data block)",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "The 'Kurgan' is the site's central part and the unit's other name in WBADB, so directions from it are taken as from the unit. f1: burial cave, words N 50 m (plan fig. 326, north arrow pointing upper right, agrees: ~356 deg, ~60 m). f2: 'hewn basin' with no size -> pool_def unclear. f3: tumulus close to the elongated structure that lies ~120 m NW of the Kurgan; coded NW from the unit with no distance (the 120 m is the structure's). f4: second tumulus shown only on the plan (near 'Installation'), roughly NNW ~180 m of the Kurgan, but position left 'none' (not in the text). Tumuli coded as graves because 'tumulus' means a burial mound; the entry does not explicitly call them tombs. The Kurgan itself (ash and burnt bones, interpreted as a cultic fire-sacrifice centre) was not coded as a grave."
+}

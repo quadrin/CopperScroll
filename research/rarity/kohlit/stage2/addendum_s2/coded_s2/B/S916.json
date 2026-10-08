@@ -1,0 +1,105 @@
+{
+ "unit_id": "S916",
+ "coder": "B",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 51, p. 212; plan fig. 111, p. 213 (1st 'Cave' label from top)",
+   "quote": "contains many cave openings",
+   "type": "pit",
+   "subtype": "cliff cave (northernmost 'Cave' label)",
+   "is_tomb": false,
+   "position": {
+    "kind": "plan",
+    "bearing_deg": 344,
+    "distance_m": 30
+   },
+   "date": {
+    "code": "U",
+    "basis": "only site-level pottery (Iron II, LR, Byz, Middle Ages); cave not dated"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 51, p. 212; plan fig. 111, p. 213 (2nd 'Cave' label from top)",
+   "quote": "contains many cave openings",
+   "type": "pit",
+   "subtype": "cliff cave (2nd 'Cave' label from N)",
+   "is_tomb": false,
+   "position": {
+    "kind": "plan",
+    "bearing_deg": 326,
+    "distance_m": 22
+   },
+   "date": {
+    "code": "U",
+    "basis": "only site-level pottery (Iron II, LR, Byz, Middle Ages); cave not dated"
+   }
+  },
+  {
+   "id": "s2f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 51, p. 212; plan fig. 111, p. 213 (3rd 'Cave' label from top)",
+   "quote": "contains many cave openings",
+   "type": "pit",
+   "subtype": "cliff cave (3rd 'Cave' label from N)",
+   "is_tomb": false,
+   "position": {
+    "kind": "plan",
+    "bearing_deg": 262,
+    "distance_m": 17
+   },
+   "date": {
+    "code": "U",
+    "basis": "only site-level pottery (Iron II, LR, Byz, Middle Ages); cave not dated"
+   }
+  },
+  {
+   "id": "s2f4",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 51, p. 212; plan fig. 111, p. 213 (4th 'Cave' label from top)",
+   "quote": "contains many cave openings",
+   "type": "pit",
+   "subtype": "cliff cave (southernmost 'Cave' label)",
+   "is_tomb": false,
+   "position": {
+    "kind": "plan",
+    "bearing_deg": 208,
+    "distance_m": 27
+   },
+   "date": {
+    "code": "U",
+    "basis": "only site-level pottery (Iron II, LR, Byz, Middle Ages); cave not dated"
+   }
+  },
+  {
+   "id": "s2f5",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 51, p. 212; plan fig. 111, p. 213 ('Burial cave' label)",
+   "quote": "a deep narrow cave, which possibly served as a burial cave",
+   "type": "grave",
+   "subtype": "possible burial cave (deep narrow cave)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "plan",
+    "bearing_deg": 179,
+    "distance_m": 41
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry gives pottery from the burial cave itself: LB 50%, Iron II 50%"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 51, p. 212 (data block)",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "Plan positions from fig. 111 (p. 213). The entry's map ref (2008/1763) equals the unit point. I put it at the centroid of the complex, meaning the courtyard/pen between the cave cliff and the curved wall (plan px 263,503). The north arrow is measured at about 15 deg W of page-up (the extractor said 'very slightly W'); bearings are corrected for this. Scale bar 0-12 m = 86 px. The text says 'many cave openings', most of them shallow, with the two middle ones large and deep (probably s2f2-s2f3). Only the four caves labelled on the plan are coded. Sensitivity: with any centre inside the complex, or the centre of all drawn remains, s2f1 stays at 321-349 deg. s2f2 drops out of the sector (about 303 deg) if the centre moves east to include the slope remains. The burial cave is coded only as a grave. The text puts it 'at the southern side of the complex', and the plan agrees. The courtyard/pen is not a pool. 'Cisterns: none' is recorded as a C2 absence statement, although caves (pits) are present."
+}

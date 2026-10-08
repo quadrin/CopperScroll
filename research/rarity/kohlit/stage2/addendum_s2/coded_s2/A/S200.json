@@ -1,0 +1,81 @@
+{
+ "unit_id": "S200",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 6, p. 121 (data block)",
+   "quote": "Cisterns: at least 40",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 6, p. 123",
+   "quote": "Close to many of the structures are quarried caves",
+   "type": "pit",
+   "subtype": "quarried caves (cellars or animal pens)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated; the entry's Rom-Byz? refers to the structures, not the caves"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 6, p. 123",
+   "quote": "Here caves are abundant",
+   "type": "pit",
+   "subtype": "caves next to structures",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 6, p. 123",
+   "quote": "These courtyards, resembling pools or enclosures",
+   "type": "pool",
+   "subtype": "large straight-walled courtyards resembling pools or enclosures",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "words",
+    "direction": "east part",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "f2 and f4 are in section '1. The eastern part' of the site; f3 in '2. The western part'. f4 is not called a pool: the entry says the courtyards resemble 'pools or enclosures', so pool_def unclear; they lie south of the eastern courtyard structure and stretch south-west. Springs at the site are water sources, not pools. The Cemetery of Qa'un is a separate site, not in this entry. No graves. Fig. 45 is an aerial photo without arrow or scale, so no plan positions."
+}

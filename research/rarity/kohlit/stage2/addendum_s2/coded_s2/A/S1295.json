@@ -1,0 +1,116 @@
+{
+ "unit_id": "S1295",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 172, p. 457",
+   "quote": "At the centre of the settlement are cisterns",
+   "type": "pit",
+   "subtype": "cisterns (several)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry; settlement only linked to the fortress builders, no period given; site pottery list does not date components"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 172, p. 457; Fig. 329 p. 458 ('Pool?')",
+   "quote": "cisterns and a plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry; site pottery list does not date components"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 172, p. 459",
+   "quote": "Another cistern is 100 m north-west of the settlement",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "NW",
+    "distance_m": 100,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated; entry doubts it relates to the site"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 172, p. 457",
+   "quote": "These pits can be identified as remains of quarrying",
+   "type": "pit",
+   "subtype": "rock-hewn quarry recesses ('pits'), 5-30 m across, c. 1-2 m deep",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 172, p. 459 (quoting Meshel 1989: 297)",
+   "quote": "recesses and pits for drainage of local surface water",
+   "type": "pit",
+   "subtype": "drainage pits (Meshel)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated; Meshel says part of the remains are recent"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 172, p. 459 (quoting Meshel 1989: 297)",
+   "quote": "a plastered installation, miqveh-like (?)",
+   "type": "pool",
+   "subtype": "plastered installation, miqveh-like (?)",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "f1/f2: the quarrymen's village is 'in the northern part of the saddle' (the saddle = the site area), so direction N from the site; no distance. The entry's central grid (1934/1668) is c. 220 m from the unit point. f3: direction is from the settlement, so relative_to other. f4: Zertal's quarry recesses are open hollows the entry itself calls 'pits'; coded as pit for completeness, spread over the whole saddle, so no position. f5 may describe the same recesses. f6: Meshel puts it 'south of the road' (relative_to other); not called a pool, no size, so pool_def unclear; may be the same as f2. Data block 'Cisterns: 4'. Fig. 329 shows 3 'C' symbols and 'Pool?'; its north arrow points to the lower right of the page. The unit point cannot be placed on the plan (no grid), so no plan positions. Moat/fosse (open quarry trench) and lime kiln not coded. No graves."
+}

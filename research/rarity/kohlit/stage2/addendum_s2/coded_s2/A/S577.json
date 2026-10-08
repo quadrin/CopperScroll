@@ -1,0 +1,175 @@
+{
+ "unit_id": "S577",
+ "coder": "A",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 239, p. 576",
+   "quote": "a central pool ... located about 0.2 km east of the site",
+   "type": "pool",
+   "subtype": "built pool/reservoir with dam, 20x26 m",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": 200,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry gives the pool as part of the camp's water system ('the water reservoir of the camp'); camp dated Roman, established 2nd c. CE"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 239, pp. 574, 576",
+   "quote": "Cisterns: 50 ... numerous cisterns in and around the enclosure",
+   "type": "pit",
+   "subtype": "cisterns (50, in and around the enclosure)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f3",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 239, p. 575",
+   "quote": "southwest side of the enclosure ... a concentration of large cisterns",
+   "type": "pit",
+   "subtype": "large cisterns in courtyards",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "SW",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "entry says these seem later than the original building; no period given"
+   }
+  },
+  {
+   "id": "s2f4",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 239, p. 576",
+   "quote": "In the east ... large courtyards, cisterns, and several stone troughs",
+   "type": "pit",
+   "subtype": "cisterns in the eastern wing",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f5",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 239, p. 576",
+   "quote": "On the southern side ... rooms with a cistern",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f6",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 239, p. 575",
+   "quote": "North of the tower ... a hewn basin with a rough relief",
+   "type": "pool",
+   "subtype": "hewn basin in a hall",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f7",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 239, p. 577",
+   "quote": "About 0.2 km west of the site ... two stone sarcophagoi",
+   "type": "grave",
+   "subtype": "two stone sarcophagi",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": 200,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f8",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 239, p. 577",
+   "quote": "On the slope east of the site ... several plundered burial caves",
+   "type": "grave",
+   "subtype": "plundered burial caves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f9",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 239, p. 581, fig. 492",
+   "quote": "4. the concentration of sarcophagi and the cemetery",
+   "type": "grave",
+   "subtype": "cemetery (plan label '4 Cemetery')",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "plan",
+    "bearing_deg": 161,
+    "distance_m": 310
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "Positions: words wherever the text gives a direction from the site. Fig. 492 (north arrow up, bar 0-200 m = 116 px) was measured from the camp centre (unit grid = entry grid 1997/1887): pool at ~57 deg, ~370 m (text: 0.2 km east; words used); burial caves at ~115 deg, ~530 m (text: east; words used); the separate label '4 Cemetery' at ~161 deg, ~310 m, coded as s2f9 with a plan position. s2f9 may overlap s2f7 (the caption groups the sarcophagi with the cemetery) but the text puts the sarcophagi 0.2 km west, so it is kept separate. s2f2 (header count and 'numerous cisterns') probably includes s2f3-s2f5. s2f6 is a hewn basin in a hall north of the central tower (southern third of the camp); no size, so pool_def unclear. Fig. 488 shows small unlabelled circles; not coded. Pool date D because the entry attributes it to the Roman camp (2nd c. CE, Hadrianic coins), not from a site period list. Stone troughs not coded (troughs excluded)."
+}

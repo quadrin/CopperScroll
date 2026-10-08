@@ -1,0 +1,63 @@
+{
+ "unit_id": "S197",
+ "coder": "A",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 2, p. 108",
+   "quote": "In the centre of the tell are six rock-cut caves",
+   "type": "pit",
+   "subtype": "rock-cut caves (those of the six not called burial caves)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 2, p. 108",
+   "quote": "some of which served as burial caves. They have been robbed",
+   "type": "grave",
+   "subtype": "rock-cut burial caves (some of the six caves)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "only a few Byzantine sherds found at the robbed caves; the entry does not date the caves themselves"
+   }
+  },
+  {
+   "id": "s2f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 2, p. 108",
+   "quote": "About 20 rock-cut round installations ... including basins and cup marks",
+   "type": "pool",
+   "subtype": "rock-cut round basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 2, p. 108",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "The caves are 'in the centre of the tell' (no direction from the site), so position none; s2f3 basins are 'near the burial caves' (no direction). Six caves, some burial: coded as one pit (the non-burial caves) and one grave (the burial caves). Basins of 'varying dimensions' with no size: pool_def unclear. Header 'Cisterns: none' recorded as an explicit absence (C2), as printed, although the entry also reports rock-cut caves. Fig. 34 marks no caves or basins."
+}

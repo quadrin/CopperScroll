@@ -138,7 +138,7 @@ The coding protocol, the matching script and its constants are in [`stage2/`](st
 | 2: Finkelstein, Lederman and Bunimovitz 1997, *Highlands of Many Cultures* | `MS_14_Highlands.pdf`, open access through the [TAU monograph series](https://en-humanities.tau.ac.il/archaeology/publications/monographseries) | `2074020593f986fdc2189448f74c3037b577fb0093bb35b658eadcf47085c16c` |
 | 5: Nigro, Sala and Taha (eds) 2011, *Archaeological Heritage in the Jericho Oasis* (ROSAPAT 07) | Public download from the [expedition's publications page](https://sites.google.com/uniroma1.it/sapienzatojericho/publications) | `0c7fefdf676abb796c6cccf4f33dd6289c499d6a54249322e0b2ea672122af73` |
 
-The other original surveys (source 2) are library-only, so the packets mark them "not accessed". Source 4 excerpts are gathered only where the first publication is lawfully online.
+The other original surveys (source 2) are library-only, so the packets mark them "not accessed". The project owner later supplied Zertal Vols. 2–4 (source-2 addendum). Source 4 excerpts are gathered only where the first publication is lawfully online.
 
 The original survey entries (source 2), mainly Bar-Adon 1972 and Kallai 1972, are in Hebrew and exist only in libraries.
 
@@ -153,3 +153,6 @@ Full result: [`stage2/RESULTS.md`](stage2/RESULTS.md). Coder A coded all 244 Sta
 - **Source-4 addendum** ([`stage2/addendum_s4/ADDENDUM.md`](stage2/addendum_s4/ADDENDUM.md)): 24 more first publications were read, from PDFs the project owner supplied. The headline is unchanged.
   - Qumran gains a northern cemetery (C3), Tell Shiloh, Kh. el-Khudriya and Tananir gain a northern pit (C2), and Tell Shiloh becomes a branch-B match when C1 is extended to 2 km.
   - Qumran now matches two of three conditions; C1 is still UNKNOWN.
+- **Source-2 addendum** ([`stage2/addendum_s2/ADDENDUM.md`](stage2/addendum_s2/ADDENDUM.md)): Zertal's survey entries were read for 78 units, from the English edition the project owner supplied. Branch A still has k = 0, but f = 20 and m = 313 of 333.
+  - Every new FAIL is a C2 FAIL (19 in the main set, 30 in the pre-70 set). Each rests on "Cisterns: none" in the entry's data block.
+  - Qarn Sarṭaba (S1283) becomes a branch-B match, so branch B has k = 5.

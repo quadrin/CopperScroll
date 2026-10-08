@@ -1,0 +1,82 @@
+{
+ "unit_id": "S197",
+ "coder": "B",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 2, p. 108",
+   "quote": "In the centre of the tell are six rock-cut caves",
+   "type": "pit",
+   "subtype": "rock-cut caves (those of the six not said to be burial caves)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "the entry does not date the caves; the site's period list does not date them"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 2, p. 108",
+   "quote": "some of which served as burial caves",
+   "type": "grave",
+   "subtype": "rock-cut burial caves (some of the six caves), robbed",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "Byzantine sherds occur only in and outside the robbed burial caves (p. 110), which shows later use; the entry does not date the caves themselves, so the date is not secure"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 2, p. 108",
+   "quote": "rock-cut round installations of varying dimensions, including basins and cup marks",
+   "type": "pool",
+   "subtype": "rock-cut basins (among c. 20 round installations)",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 2, p. 108",
+   "quote": "whose inhabitants used the nearby cemetery (Site 4)",
+   "type": "grave",
+   "subtype": "cemetery (Site 4)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S205"
+   },
+   "mouth": null,
+   "date": {
+    "code": "D",
+    "basis": "the entry says the EB I settlement's inhabitants used it; row S205 records EB1, EB2, IB, MB, IA1, IA2, Per"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 2, p. 108",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "Entry grid 1941/2016 is the unit point exactly. The entry says there are six rock-cut caves and that some of them served as burial caves. They are coded twice: once as a pit (f1, the caves not said to be burial) and once as a grave (f2, the burial caves). The 'centre of the tell' gives no compass direction, and Fig. 34 does not draw the caves, so f1-f3 have position none. The basins (f3) are 'near the burial caves', with no size. Coded as pool with pool_def unclear. Byzantine pottery is 'only in burial caves'. I read this as Byzantine use, not a secure date for the caves, so f2 is U. Another coder could argue L. The cemetery (f4) is Zertal 2005 Site 4, which is WBADB row S205 ('The Cemetery of Qa'un', Survey_Ref Zertal 2005 Site 4), so its position is grid S205. The entry does not describe its graves, so cavity_with_opening is false. The Qa'un springs 'at the site' are springs, not pools. 'Cisterns: none' is recorded as a C2 absence (cisterns only), although the entry also records caves."
+}

@@ -1,0 +1,465 @@
+{
+ "unit_id": "S1283",
+ "coder": "B",
+ "sources": {
+  "1": "read",
+  "2": "read",
+  "3": "read",
+  "4": "read",
+  "5": "not in oasis"
+ },
+ "explicit_absence": [],
+ "features": [
+  {
+   "id": "f1",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "caves",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of the unit's own row; not dated itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Hasmonean Cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "mouth": null,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "component itself called Hasmonean"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed as part of the Herodian peristyle"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "1",
+   "cite": "WBADB S1283 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed as part of the Herodian peristyle"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Hasmonean cemetery",
+   "type": "grave",
+   "subtype": "cemetery",
+   "cavity_with_opening": false,
+   "mouth": null,
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "component itself called Hasmonean"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed as part of the Herodian peristyle"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "1",
+   "cite": "WBADB E151 Site_Components",
+   "quote": "Herodian peristyle with mosaic floor, cistern, pool",
+   "type": "pool",
+   "subtype": "pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "E151"
+   },
+   "date": {
+    "code": "D",
+    "basis": "listed as part of the Herodian peristyle"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "1",
+   "cite": "WBADB S1295 Site_Components",
+   "quote": "water cisterns",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "grid",
+    "ref": "S1295"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "1",
+   "cite": "WBADB S1295 Site_Components",
+   "quote": "plastered pool",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1295"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "1",
+   "cite": "WBADB S1268 Site_Components",
+   "quote": "Twelve round or oval structures, probably tumuli",
+   "type": "grave",
+   "subtype": "tumuli (probable)",
+   "cavity_with_opening": false,
+   "mouth": null,
+   "position": {
+    "kind": "grid",
+    "ref": "S1268"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "1",
+   "cite": "WBADB S1313 Site_Components",
+   "quote": "rock-hewn installations, mostly basins",
+   "type": "pool",
+   "subtype": "rock-hewn basins",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "grid",
+    "ref": "S1313"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of a site row; not dated itself"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. ed. 2017) p. 460 (site data)",
+   "quote": "Cisterns: 14",
+   "type": "pit",
+   "subtype": "cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f13",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. ed. 2017) Fig. 339 p. 473 (plan; measured from summit centre)",
+   "quote": "Cisterns",
+   "type": "pit",
+   "subtype": "cisterns (three drawn on plan)",
+   "is_tomb": false,
+   "position": {
+    "kind": "plan",
+    "bearing_deg": 100,
+    "distance_m": 100
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f14",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. ed. 2017) p. 461",
+   "quote": "Five large circular robbing pits were dug in the northern area.",
+   "type": "pit",
+   "subtype": "robbing pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "source deduces 19th-c. robbing digs but adds 'there are other possibilities'; not secure"
+   }
+  },
+  {
+   "id": "f15",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. ed. 2017) p. 471 (D2; excavation area 'in the east side of the site')",
+   "quote": "A cistern and a small pool were also exposed.",
+   "type": "pit",
+   "subtype": "cistern (Herodian peristyle)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "found in the Herodian peristyle (phase 2)"
+   }
+  },
+  {
+   "id": "f16",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. ed. 2017) p. 471 (D2; excavation area 'in the east side of the site')",
+   "quote": "A cistern and a small pool were also exposed.",
+   "type": "pool",
+   "subtype": "small pool (Herodian peristyle)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "east part",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "found in the Herodian peristyle (phase 2)"
+   }
+  },
+  {
+   "id": "f17",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. ed. 2017) p. 465",
+   "quote": "a magnificent necropolis for the Hasmonean family",
+   "type": "grave",
+   "subtype": "Hasmonean family necropolis (historical)",
+   "cavity_with_opening": false,
+   "mouth": null,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "source places the burials in Herod's reign"
+   }
+  },
+  {
+   "id": "f18",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. ed. 2017) p. 466 (Robinson, hearsay)",
+   "quote": "spoke of ruins somewhere on Surtabeh, and a reservoir for water",
+   "type": "pool",
+   "subtype": "reservoir (hearsay)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f19",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. ed. 2017) Fig. 335 p. 470 (Abel plan; label position)",
+   "quote": "citerne",
+   "type": "pit",
+   "subtype": "cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "plan",
+    "bearing_deg": 273,
+    "distance_m": 620
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f20",
+   "source": "3",
+   "cite": "Mem II pp. 396, 398",
+   "quote": "It supplies large cemented cave-cisterns",
+   "type": "pit",
+   "subtype": "cave-cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f21",
+   "source": "3",
+   "cite": "Mem II p. 397",
+   "quote": "two excavations or pits sunk in the soft rock",
+   "type": "pit",
+   "subtype": "rock-cut pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f22",
+   "source": "3",
+   "cite": "Mem II pp. 397-398",
+   "quote": "On the ridge west of the Tell there is a well.",
+   "type": "pit",
+   "subtype": "well or cistern",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f23",
+   "source": "3",
+   "cite": "Mem II p. 398",
+   "quote": "East of the Tell is a cave, or quarry",
+   "type": "pit",
+   "subtype": "cave or quarry",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f24",
+   "source": "3",
+   "cite": "Mem II p. 398",
+   "quote": "south of it three more, rudely squared, and some 15 feet side",
+   "type": "pit",
+   "subtype": "three caves or quarries",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the source"
+   }
+  },
+  {
+   "id": "f25",
+   "source": "4",
+   "cite": "Tsafrir 1975 p. 47",
+   "quote": "the family tomb of the Hasmoneans at Alexandrium",
+   "type": "grave",
+   "subtype": "family tomb (historical)",
+   "cavity_with_opening": false,
+   "mouth": null,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "burial of Herod's sons there, c. 4 years before Herod's death"
+   }
+  },
+  {
+   "id": "f26",
+   "source": "4",
+   "cite": "Tsafrir 1975 p. 44 (general, all seven forts)",
+   "quote": "On the slopes and on the summits cisterns were hewn",
+   "type": "pit",
+   "subtype": "cisterns (general statement)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "general statement; cisterns not dated for this site"
+   }
+  }
+ ],
+ "notes": "Source 1: own-row 'water installations', 'water system', 'aqueduct', 'quarry' and S1295 'fosse' not coded (no pool, pit or grave named). S1322, S1208, S1357 and E150 (empty) hold no pool, pit or grave. E151 is the Excavations-sheet row at the same point (0 m, bearing invalid). S1268 'probably tumuli' coded as grave (burial mounds), hedged in the source. Source 2: f13 measured on Fig. 339 from the summit centre to the three drawn cisterns (about 90-113 deg, 98-107 m); the plan's half-arrow is tilted about 10 deg west of page-up, used as north. f12 is the unlocated header count, which may include cisterns not drawn on the plan. f19 measured on Abel's Fig. 335 from the acropolis outline to the 'citerne' label (no symbol); scale 0-400 m; uncertainty about +/-50 m. f14 groups the five robbing pits; the Zschokke (Fig. 334, 'Vertiefungen') and Bar-Adon (Fig. 337) plans show the same pits and are not coded again. Zertal p. 461 also identifies f21 (SWP pits) with these robbing pits. The robbing date is coded U because the source hedges its 19th-c. deduction. Zertal's SW 'large excavation' (robbing dig / foundation trench), the western moat, and Moulton's 'depression' are trenches or digs, not coded as pits. The water system (Site 171), Lower Sartaba (Site 172) and siege works (Site 165) are referred elsewhere and not excerpted. f16 'east part' and f15 'E' rest on D: excavations 'in the east side of the site, below the summit' (also A.4 eastern slope). Source 3: f21 lies 'Forty-four feet from the north end of the central foundation' -- distance from a part of the site, no direction word, so position none. f20 cave-cisterns: the aqueduct line runs 'on the north side of the hill' and supplies them, but no direction is given for the cisterns themselves, so position none. Mem II p. 49 (El Mugheir, Section A) names Kurn Surtubeh only for identifications and roads; its caves at el Makhruk are a different place, not shown within 2 km; ignored. Source 4: no burial or water remains located on the ground; family tomb and the general cistern statement coded with position none. No explicit absence statement in any source."
+}

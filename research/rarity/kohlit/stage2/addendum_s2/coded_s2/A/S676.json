@@ -1,0 +1,59 @@
+{
+ "unit_id": "S676",
+ "coder": "A",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 131, pp. 373-374",
+   "quote": "Cisterns: 22 ... Many cisterns, caves and other hewn places",
+   "type": "pit",
+   "subtype": "cisterns (22)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 131, p. 374",
+   "quote": "Many cisterns, caves and other hewn places are discerned",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f3",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 131, p. 374",
+   "quote": "North of the Beqa'ot - Tammun road ... 70-90 leveled \"pools\"",
+   "type": "pool",
+   "subtype": "70-90 leveled agricultural 'pools' with low earthen ramps (50-dunam field)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "s2f3: the entry calls them \"pools\" (in quotation marks) and suggests a special crop (rice, sugar cane) or fish; coded as pool with pool_def yes because the source calls them pools and Fig. 293 shows each well over 3 m a side. Its direction is from the road (relative_to other); Fig. 293 (bar 0-25 m) shows the field N to NNE of the hatched 'Roman-Byzantine Village', but the village is only partly drawn, so the unit point cannot be placed and no plan position is given. No graves in the entry."
+}

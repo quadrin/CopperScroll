@@ -1,0 +1,81 @@
+{
+ "unit_id": "S206",
+ "coder": "A",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 3, p. 110",
+   "quote": "Inside the structure is the opening of a cistern",
+   "type": "pit",
+   "subtype": "cistern (data block: 1), opening inside the summit structure",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 3, p. 110; Fig. 36, p. 111",
+   "quote": "About 40 m north of the summit ... caves with collapsed ceilings",
+   "type": "pit",
+   "subtype": "caves with collapsed ceilings among rocks",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": 40,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 3, p. 110",
+   "quote": "winepresses, as well as basins and many cup marks",
+   "type": "pool",
+   "subtype": "rock-cut basins among the rocks north of the summit",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": 40,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f4",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 3, p. 110",
+   "quote": "In the saddle south of the tell is a rock-cut basin",
+   "type": "pool",
+   "subtype": "rock-cut basin, 80 cm in diameter",
+   "pool_def": "no",
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "s2f2/s2f3: 'north of the summit' is read as from the site itself (the summit of the tell is the site's centre), so relative_to unit. Plan Fig. 36 (north arrow about 13 deg W of page-up, 0-30 m bar) agrees: one 'Cave' among the 'Rocks with Installations' lies c. 45 m at c. 343 deg from the summit; a second 'Cave' lies c. 30 m WNW. Not used as plan positions because the unit point cannot be placed on the plan (the printed grid 1944/2014 is c. 410 m from the unit point). Not coded: winepress elements and cup marks; Robinson's 'fountain' and Masterman's spring (no pool described)."
+}

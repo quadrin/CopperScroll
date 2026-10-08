@@ -1,0 +1,50 @@
+{
+ "unit_id": "S1031",
+ "coder": "A",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 118, p. 357; Fig. 238, p. 356",
+   "quote": "Three basins are cut into a rock surface",
+   "type": "pool",
+   "subtype": "three rock-cut basins in the middle of the courtyard",
+   "pool_def": "no",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry: the 4 basins were probably cut in the IA and re-used in the LR period (Eitam 2005)"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 118, p. 357; Fig. 238, p. 356",
+   "quote": "Outside the courtyard to the south-east is another cut basin",
+   "type": "pool",
+   "subtype": "rock-cut basin and recesses outside the courtyard",
+   "pool_def": "no",
+   "position": {
+    "kind": "words",
+    "direction": "SE",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry: the 4 basins were probably cut in the IA and re-used in the LR period (Eitam 2005)"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 118, p. 355",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "No size is given in the text; pool_def no because plan Fig. 238 (drawn to scale, 0-10 m bar; courtyard and round structure match the text dimensions) shows the basins as small circles about 0.4-0.6 m across. Without the plan these would be 'unclear'. s2f1 lies in the middle of the courtyard (no direction). s2f2: direction is from the courtyard (relative_to other). The plan places its 'Installation' circle ENE of the courtyard, not SE as the text says; the text direction is used. No plan positions: the entry grid (1917/1731) is c. 140 m from the unit point, so the unit point cannot be placed on the plan. Data block 'Cisterns: none' recorded as C2 absence."
+}

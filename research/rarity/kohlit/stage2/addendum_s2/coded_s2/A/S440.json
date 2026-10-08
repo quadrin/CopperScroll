@@ -1,0 +1,46 @@
+{
+ "unit_id": "S440",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 92, pp. 299-300",
+   "quote": "a plastered pool with a cistern east of it",
+   "type": "pool",
+   "subtype": "plastered pool",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated; baths use 'from the Roman Period onward' is for the site, not this pool"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 92, pp. 299-300",
+   "quote": "a plastered pool with a cistern east of it",
+   "type": "pit",
+   "subtype": "cistern (data block: 1)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "The sentence puts the ashlar building and the plastered pool with its cistern 'On the western side of the site', so both are W of the site (the cistern is just east of the pool). The Ottoman warm bath, the 'ancient baths' and the hot springs are not described as pools or basins; not coded. The mill/aqueduct 250 m E is not a pool or pit. Plan Fig. 227 does not show the pool. No graves."
+}

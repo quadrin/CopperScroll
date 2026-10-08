@@ -1,0 +1,81 @@
+{
+ "unit_id": "S1269",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 159, p. 425; Fig. 302 p. 426 ('Pool?')",
+   "quote": "Apparently this wall was a component of a water reservoir",
+   "type": "pool",
+   "subtype": "water reservoir formed by walls across the wadi",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated; only 'some of the dams' are dated MB II/IA"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 159, p. 425",
+   "quote": "This long wall may have been part of another reservoir",
+   "type": "pool",
+   "subtype": "possible second reservoir (long curving wall)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 159, p. 427",
+   "quote": "cisterns ... about 40 m north-west of the central structure",
+   "type": "pit",
+   "subtype": "two rock-cut and built cisterns (in current use)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "NW",
+    "distance_m": 40,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated; 'in current use' does not date them"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 159, Fig. 302 p. 426 (plan label)",
+   "quote": "Shaft",
+   "type": "pit",
+   "subtype": "shaft (plan only)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "f1/f2 are 'in the ravine west of the central structure' (part 1 of the site, not the whole site), so relative_to other. Both are hedged ('apparently', 'may have been') but called reservoirs, so pool_def yes under PROTOCOL 3. f1 = 'Pool?' on Fig. 302. f2 is probably the 'Enclosure' north of it. f4 appears only on the plan, south-west of the central structure near the dams; it cannot be placed relative to the unit point (no grid), so position none. Dams are not coded. Data block 'Cisterns: 2' = f3. No graves."
+}

@@ -1,8 +1,8 @@
 # Active test
 
-Updated 8 October 2026 UTC / 7 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 8 October 2026 UTC / 8 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (8 October UTC): **obtained**: the [source-4 addendum](rarity/kohlit/stage2/addendum_s4/ADDENDUM.md) to the Koḥlit rarity count read 24 more excavation reports. The headline is unchanged (R1, Hel/Rom, branch A survey level: k = 0, f = 1, m = 332 of 333; branch B k = 4). Qumran now matches two of three conditions (a pit and a cemetery to the north); its pool position is still UNKNOWN.
+Last session (8 October UTC): **obtained**: two addenda to the Koḥlit rarity count. The [source-4 addendum](rarity/kohlit/stage2/addendum_s4/ADDENDUM.md) read 24 more excavation reports; Qumran now matches two of three conditions (a pit and a cemetery to the north). The [source-2 addendum](rarity/kohlit/stage2/addendum_s2/ADDENDUM.md) read Zertal's survey entries for 78 units. Branch A still has k = 0 (R1, Hel/Rom, survey level), but f = 20 and m = 313 of 333; every new FAIL rests on a "Cisterns: none" field. Branch B gains Qarn Sarṭaba (k = 5). Rarity is still not measurable.
 
 ## Active questions and the observation that decides each
 

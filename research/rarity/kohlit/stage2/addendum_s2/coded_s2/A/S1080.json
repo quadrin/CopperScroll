@@ -1,0 +1,82 @@
+{
+ "unit_id": "S1080",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 82, p. 275 (quoting SWP, Conder and Kitchener 1882)",
+   "quote": "found burial caves and related them to Tell eṣ-Ṣimadi",
+   "type": "grave",
+   "subtype": "burial caves ('principally mere caves')",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 82, p. 275 (quoting SWP)",
+   "quote": "two remain which have kokim",
+   "type": "grave",
+   "subtype": "kokhim tombs (two; one with antechamber and eight kokim)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 82, p. 275 (quoting SWP)",
+   "quote": "Another tomb is simply a grave sunk in the rock",
+   "type": "grave",
+   "subtype": "grave sunk in the rock, 7 ft long",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry; tablet letters 'like the Hebrew of the coins' give no period"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 82, p. 277 (quoting Mellaart 1962)",
+   "quote": "More tombs west of this site in hills.",
+   "type": "grave",
+   "subtype": "tombs (type not stated)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 82, p. 275",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "Data block 'Cisterns: none' (C2 absence). f1-f3: SWP 1874 tombs quoted in this entry, but the SWP 'related them to Tell es-Simadi [their Tell Mazar]' (Zertal's gloss; Tell es-Simadi = WBADB S1116, 922 m), so their location is unclear: neither clearly at S1116 nor placed at this site; position none. f4 cavity_with_opening set false because the tomb type is not stated. Not coded: the stone sarcophagus broken in situ 'to the north near the aqueduct' (entry treats the place as a sarcophagus quarry; not called a burial), the unfinished sarcophagi, the aqueduct and rock-cut mill channel (open channels). No plan."
+}

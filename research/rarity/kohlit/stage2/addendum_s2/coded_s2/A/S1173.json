@@ -1,0 +1,53 @@
+{
+ "unit_id": "S1173",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 86, p. 289 (quoting Guérin 1969: 243)",
+   "quote": "between them are two rock-hewn cisterns",
+   "type": "pit",
+   "subtype": "two rock-hewn cisterns (seen by Guérin 1870)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 86, p. 289; Fig. 172 ('Basins')",
+   "quote": "Next to it, in the east, are two rock-cut installations",
+   "type": "pool",
+   "subtype": "two rock-cut installations, labelled 'Basins' on plan",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 86, p. 288 (data block)",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "CONFLICT inside the entry: data block 'Cisterns: none' (recorded as C2 absence), but the entry quotes Guérin (1870) on two rock-hewn cisterns 'in the lower part of this hill, at the southern corner' (f1, S of the site). f2 is east of the support wall at the fort's SE corner (relative_to other). On Fig. 172 each 'Basin' is an irregular outline c. 3-7 m with a small inner circle under 1 m, so the basin size is unclear. No size in the text, so pool_def unclear. Fig. 172 north arrow points to the page right. The looters' 'Excavation' in the fort is not coded. No graves."
+}

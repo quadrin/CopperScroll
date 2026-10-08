@@ -1,0 +1,125 @@
+{
+ "unit_id": "S1283",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 173, p. 460 (data block; cf. figs. 331, 339)",
+   "quote": "Cisterns: 14",
+   "type": "pit",
+   "subtype": "cisterns (14)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site period list does not date the component)"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 173, pp. 462, 471-472 (section D2, Herodian peristyle)",
+   "quote": "A cistern and a small pool were also exposed.",
+   "type": "pit",
+   "subtype": "cistern in Herodian peristyle",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "described as part of the Herodian peristyle (excavation phase D2)"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 173, pp. 462, 471-472 (section D2; excavation 'in the east side of the site')",
+   "quote": "A cistern and a small pool were also exposed.",
+   "type": "pool",
+   "subtype": "small pool in Herodian peristyle",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "east part",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "described as part of the Herodian peristyle (excavation phase D2)"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 173, p. 461 (section A.2; fig. 340 p. 475)",
+   "quote": "Five large circular robbing pits were dug in the northern area.",
+   "type": "pit",
+   "subtype": "robbing pits (5)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "entry deduces 19th-century robbing digs but adds 'there are other possibilities'; not secure"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 173, p. 470, fig. 335 (Abel 1913 ill. 6), label 'citerne'",
+   "quote": "citerne",
+   "type": "pit",
+   "subtype": "cistern (on the plateau of lower Sartaba)",
+   "is_tomb": false,
+   "position": {
+    "kind": "plan",
+    "bearing_deg": 274,
+    "distance_m": 615
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 173, p. 465 (section B.2, quoting Ant. XVI)",
+   "quote": "a magnificent necropolis for the Hasmonean family",
+   "type": "grave",
+   "subtype": "Hasmonean family necropolis (historical record)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry places Hasmonean family burials at the fortress in Herod's reign"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 173, p. 466 (Robinson quoted)",
+   "quote": "spoke of ruins somewhere on Surtabeh, and a reservoir for water",
+   "type": "pool",
+   "subtype": "reservoir (hearsay)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "Long entry; water system (Site 171), Lower Sartaba (Site 172) and siege works (Site 165) are referred to other entries not in the packet. f1: data block 'Cisterns: 14'; fig. 339 shows a group labelled 'Cisterns' on the eastern slope, but the unit point (100 m E of the entry's central grid 1937/1670, 100-m precision) cannot be placed on that ~250 m plan, so 'none'. f2/f3: the excavation (and the peristyle) is 'in the east side of the site' / on the eastern slope ~50 m below the tip of the cone; pool coded 'east part'; cistern 'none' because a part-of-site location is not a direction for a pit. f4: robbing pits in the northern area of the summit (also Zschokke's 'Vertiefungen' and the British Survey's 'two excavations or pits', which the entry links to them) - within-site location, so 'none'. f5: measured on Abel's plan fig. 335 (north arrow points page-right, ~6.6 deg below horizontal; bar 0-400 m): unit point placed on the drawn summit oval 'acropole ou Qarn Sartabeh' (the 100-m point precision is small at this scale); 'citerne' label centre ~274 deg, ~615 m (if taken at the end of the aqueduct line, ~264 deg, ~680 m). It lies on the plateau = lower Sartaba, i.e. probably at WBADB S1295. f6 is a historical burial record, no location given; tomb type not stated, so cavity_with_opening false. f7 is hearsay reported to Robinson, location 'somewhere on Surtabeh'. Not coded: moat/ditch, robbing trench SW of the southern structure (an excavation, not a pit), aqueduct, quarried steps."
+}

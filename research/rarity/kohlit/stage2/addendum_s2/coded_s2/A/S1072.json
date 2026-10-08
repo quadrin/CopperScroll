@@ -1,0 +1,47 @@
+{
+ "unit_id": "S1072",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 79, p. 267 (quoting Mellaart 1962)",
+   "quote": "he mentions tombs \"in rock - at least 3 visible",
+   "type": "grave",
+   "subtype": "rock-cut tombs (at least 3; one cleaned out)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "tombs not dated by the entry"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 79, pp. 267-268 (quoting Bar-Adon 1972)",
+   "quote": "Where the site meets the mountainside are many cave openings.",
+   "type": "pit",
+   "subtype": "caves (many cave openings)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site pottery list does not date the component)"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 79, p. 267",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "Data block 'Cisterns: none' (C2 absence). f1: tombs are 'above the site'; the Mellaart quote says the ground slopes up northward towards the cliffs, so 'above' implies north, but no compass direction is given for the tombs, so position none (flag for review). Mellaart connects the tombs to Tell esh-Sheikh Mezar (his site 93); that does not place them at another row, so not grid. f2: caves where the site meets the mountainside (by the same reasoning the north edge, but not stated): none. Modern clay digging, road ditch and hearths not coded. No plan."
+}

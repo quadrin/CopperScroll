@@ -1,0 +1,47 @@
+{
+ "unit_id": "S1441",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 103, p. 325 (quoting Bar-Adon 1972: site 9)",
+   "quote": "two pools, one round, 25 m in diameter",
+   "type": "pool",
+   "subtype": "round pool, 25 m diameter",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "Roman-Byzantine pottery dates the site, not the pool itself"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 103, p. 325 (quoting Bar-Adon 1972: site 9)",
+   "quote": "the second one elliptical, measuring 28x13 m",
+   "type": "pool",
+   "subtype": "elliptical pool, 28x13 m",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "Roman-Byzantine pottery dates the site, not the pool itself"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 103, p. 325",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "Site type 'pools'. The entry says the ancient pools were destroyed by a new earth dike; an oval enclosure c. 35 m across with a hollow survives, 'perhaps a remnant of one of the pools' - treated as one of f1/f2, not a third pool. The two pools are from the Emergency Survey text quoted in the entry. No direction for either pool, so position none. Data block 'Cisterns: none' recorded as a C2 absence. No graves. No plan. Printed grid 1969/1638 is 100 m S of the unit point (per extraction note)."
+}

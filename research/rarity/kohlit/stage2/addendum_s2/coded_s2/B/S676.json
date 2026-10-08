@@ -1,0 +1,59 @@
+{
+ "unit_id": "S676",
+ "coder": "B",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 131, pp. 373-374",
+   "quote": "Cisterns: 22",
+   "type": "pit",
+   "subtype": "cisterns (22; 'many cisterns' in the text, p. 374)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 131, p. 374",
+   "quote": "Many cisterns, caves and other hewn places are discerned",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 131, p. 374; Fig. 293, p. 375",
+   "quote": "70-90 leveled \"pools\", surrounded by low earthen ramps",
+   "type": "pool",
+   "subtype": "leveled agricultural 'pools' (70-90) with low earthen ramps",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "the entry does not date the pools area; the 'Roman-Byzantine Village' label on Fig. 293 is for the village south of the road"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "Entry grid 1914/1856 is the unit point exactly. I took the header's 'Cisterns: 22' and the text's 'many cisterns' to be the same features and recorded them once (f1). The 'other hewn places' are not described as cavities and are not coded. The 'pools' (f3) are a 50-dunam field of leveled plots with earthen ramps, perhaps for rice, sugar cane or fish. The entry uses the word 'pools' in quotation marks. They are about 20-25 m a side on Fig. 293 (25 m scale), so I coded type pool with pool_def yes. Whether these agricultural basins count as pools is a judgement call. The text puts the area north of the Beqa'ot-Tammun road, so the direction is relative_to other. The Fig. 291 caption and Fig. 293 put the village south of the road, which is consistent with the pools lying N of the site. The unit point cannot be placed on Fig. 293, which shows the village only as a hatched area, so I used no plan position. The water source is Wadi el-Far'ah, 5 km away."
+}

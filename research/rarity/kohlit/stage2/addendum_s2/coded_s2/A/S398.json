@@ -1,0 +1,67 @@
+{
+ "unit_id": "S398",
+ "coder": "A",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 45, p. 201",
+   "quote": "Cisterns: 30",
+   "type": "pit",
+   "subtype": "cisterns (30)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 45, p. 202",
+   "quote": "West of the village is a family grave from the Roman Period",
+   "type": "grave",
+   "subtype": "built family tomb, 9x9 m, burial chamber with coffin niches",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "mouth": {
+    "pit_id": "s2f3",
+    "distance_m": null,
+    "phrase": "next to the structure are two cisterns"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry dates the family grave to the Roman Period"
+   }
+  },
+  {
+   "id": "s2f3",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 45, p. 202",
+   "quote": "next to the structure are two cisterns",
+   "type": "pit",
+   "subtype": "two cisterns beside the family grave",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "No plan in the entry. s2f2: a built tomb with an entrance hall, burial chamber and niches for coffins; coded cavity_with_opening true as a chamber tomb with niches (closest to kokhim), though it is built, not rock-cut. s2f3: the two cisterns are next to the tomb, which is west of the village, so W from the site; they may be among the 30 of s2f1. Mouth: the entry says the cisterns are next to the tomb structure ('next to'), recorded as a mouth phrase linking s2f2 to s2f3."
+}

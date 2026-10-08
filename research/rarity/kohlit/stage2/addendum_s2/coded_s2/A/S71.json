@@ -1,0 +1,203 @@
+{
+ "unit_id": "S71",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 244 (data block)",
+   "quote": "Cisterns: 40 (in ancient core)",
+   "type": "pit",
+   "subtype": "cisterns (40) in ancient core",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site period list does not date the component)"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 245 (Glock 1977 excavation)",
+   "quote": "Dwelling rooms and installations (cisterns and stone circles) were found.",
+   "type": "pit",
+   "subtype": "cisterns (excavated)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "found in the settlement renewed at the end of LB (13th-12th c. BCE)"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 245 (1978 excavation)",
+   "quote": "a barrel-vault grave was excavated. It contained nine niches",
+   "type": "grave",
+   "subtype": "barrel-vaulted tomb with nine niches blocked by slabs",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "finds dated to the 2nd c. CE, a range that includes years up to 135 CE"
+   }
+  },
+  {
+   "id": "f4",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 251 (Salem 2006, Stratum III)",
+   "quote": "An apsidal structure, courtyard and two pits were excavated.",
+   "type": "pit",
+   "subtype": "two pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "D",
+    "basis": "Stratum III, Late Chalcolithic and EB Ia"
+   }
+  },
+  {
+   "id": "f5",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 251 (Salem 2006, Strata VI-VII)",
+   "quote": "a common courtyard with installations, ovens, and pits",
+   "type": "pit",
+   "subtype": "pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "Strata VI-VII, Byzantine"
+   }
+  },
+  {
+   "id": "f6",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 251 (Salem 2006, Stratum X)",
+   "quote": "remains of a street, a drainage system and dug pits",
+   "type": "pit",
+   "subtype": "dug pits",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "Stratum X, modern times"
+   }
+  },
+  {
+   "id": "f7",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 250 (Conder and Kitchener quoted; also Robinson p. 249)",
+   "quote": "conducted to a large masonry reservoir, near the west side",
+   "type": "pool",
+   "subtype": "masonry reservoir of the public fountain",
+   "pool_def": "yes",
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "L",
+    "basis": "built by 'Abd el-Hady in the first half of the 19th c. (Robinson: 'not long been built')"
+   }
+  },
+  {
+   "id": "f8",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 247 (Evliya Tshelebi quoted)",
+   "quote": "In its inner court is a huge water-basin ten by ten",
+   "type": "pool",
+   "subtype": "water-basin in the mosque court of the fortress",
+   "pool_def": "yes",
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "in the mosque court of the fortress built by a sultan of Egypt, enlarged under the Ottomans"
+   }
+  },
+  {
+   "id": "f9",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 248 (Evliya Tshelebi quoted)",
+   "quote": "Beside him the ancestors of the Terabi Oghlu ... are buried within.",
+   "type": "grave",
+   "subtype": "burials in the shrine of Sheikh 'Izz-ed-din",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "L",
+    "basis": "burials in a Muslim sheikh's domed shrine, ancestors of an Ottoman-period family"
+   }
+  },
+  {
+   "id": "f10",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 246",
+   "quote": "known for the tomb of Yihia el-Kalbi",
+   "type": "grave",
+   "subtype": "tomb of Yihia el-Kalbi",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated (mentioned by Arab geographers)"
+   }
+  },
+  {
+   "id": "f11",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 249 (de Saulcy quoted)",
+   "quote": "a large cemetery with many openings of graves hewn in rock",
+   "type": "grave",
+   "subtype": "cemetery of rock-hewn graves",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated"
+   }
+  },
+  {
+   "id": "f12",
+   "source": "2",
+   "cite": "Zertal and Mirkam 2000 (Eng. Vol. 3) Site 80, p. 249 (de Saulcy quoted)",
+   "quote": "a built arch that enters the mountain",
+   "type": "pit",
+   "subtype": "built arch entering the mountain (tunnel?)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "Tell inside modern Jenin; entry relies on earlier descriptions, travellers and excavation summaries (tell largely gone by 1978); no plan. f2: Glock's excavation area was 'in the east of the tell' (part of site, so 'none' for pits). f5: Byzantine pits on the south-western side of the tell ('none'). f3: tomb type not stated as rock-cut, but nine niches blocked by slabs = kokhim-like, so cavity_with_opening true. f7: Robinson's fountain 'reservoir of stone' and Conder and Kitchener's 'large masonry reservoir' are the same feature; 'near the west side' is of the town, not the tell, so relative_to other. f8: 'ten by ten [paces]' > 3 m a side. f12: de Saulcy's arch may be a tunnel or chamber entrance; coded as pit with doubt. Not coded: group of springs at the north foot of the tell (springs, not pools), long stone trough, two dams in the valley, canal, aqueduct, public bath."
+}

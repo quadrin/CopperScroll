@@ -1,0 +1,53 @@
+{
+ "unit_id": "S1169",
+ "coder": "A",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 148, p. 408",
+   "quote": "About 10 m north-west of the courtyard are karstic pits",
+   "type": "pit",
+   "subtype": "karstic pits (perhaps troughs)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "NW",
+    "distance_m": 10,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 148, p. 408",
+   "quote": "40 m east of the structure is a rock-cut basin",
+   "type": "pool",
+   "subtype": "rock-cut basin, 60 cm in diameter",
+   "pool_def": "no",
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": 40,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 148, p. 408",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "s2f1: direction is from the courtyard, which the entry places in the centre of the site; coded relative_to other. s2f2: 'the structure' is not clearly identified (relative_to other); pool_def no because the entry gives 60 cm diameter. Plan Fig. 290 (north arrow, 0-5 m scale) shows only the yard, walls and an 'Installations' label; the pits and basin are not drawn, so no plan positions. Data block 'Cisterns: none' recorded as C2 absence (the karstic pits are still recorded)."
+}

@@ -1,0 +1,59 @@
+{
+ "unit_id": "S223",
+ "coder": "A",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 2, pp. 119-120",
+   "quote": "Cisterns: 30 ... houses and courtyards ... with installations and cisterns",
+   "type": "pit",
+   "subtype": "cisterns (30)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "cisterns belong to houses dated by pottery 'from the Late Roman Period onwards' that 'seem' medieval; not securely dated"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 2, p. 120",
+   "quote": "stands the ruined tomb of Sheikh Safiriyan",
+   "type": "grave",
+   "subtype": "sheikh's tomb (built)",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "no period given for the tomb in the entry"
+   }
+  },
+  {
+   "id": "s2f3",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 2, p. 120",
+   "quote": "About 150 m east of the tomb are two stone sarcophagi",
+   "type": "grave",
+   "subtype": "two stone sarcophagi",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": 150,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "No plan in the entry. The cisterns and the sheikh's tomb are in the higher part of the ruin, for which the entry gives no compass direction: position none. s2f3 is placed from the sheikh's tomb (relative_to other). s2f2 is a sheikh's tomb, which implies an Islamic date, but the entry gives none, so U."
+}

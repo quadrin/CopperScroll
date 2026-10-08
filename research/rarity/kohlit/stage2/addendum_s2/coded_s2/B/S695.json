@@ -1,0 +1,54 @@
+{
+ "unit_id": "S695",
+ "coder": "B",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 148, p. 410; Fig. 326, p. 411",
+   "quote": "50 m north of the \"Kurgan\" ... large, empty burial cave",
+   "type": "grave",
+   "subtype": "burial cave with steps leading into it",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": 50,
+    "relative_to": "other"
+   },
+   "mouth": null,
+   "date": {
+    "code": "U",
+    "basis": "not dated; the site's pottery (Chal-LB I) dates the site, not the cave"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 148, p. 410",
+   "quote": "To the north of the site there is also a hewn basin",
+   "type": "pool",
+   "subtype": "hewn basin",
+   "pool_def": "unclear",
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 1996 (Eng. Vol. 2) Site 148, p. 409",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "Entry grid 1893/1849 is the unit point exactly. The burial cave (f1) is placed 50 m north of the 'Kurgan', which is part 1 and the central part of the site. That is a reference point other than the site, so relative_to is other. On Fig. 326, cave no. 3 lies roughly N of the Kurgan, at about 55-60 m by the 25 m bar and the north arrow. This agrees with the text, but the unit point itself cannot be placed on the plan, so I used no plan position. The hewn basin (f2) has no size, so pool_def is unclear. It is probably the 'Installation' (Hebrew label: basin) at the north end of Fig. 326. The Kurgan (a mound of ash and burnt bones, read as a cultic fire-sacrifice site) and the tumuli are not called graves or burials by the entry, so they are not coded. 'Cisterns: none' is recorded as a C2 absence (cisterns only)."
+}

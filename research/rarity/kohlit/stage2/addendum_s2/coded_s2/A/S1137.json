@@ -1,0 +1,70 @@
+{
+ "unit_id": "S1137",
+ "coder": "A",
+ "features": [
+  {
+   "id": "s2f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 85, p. 285",
+   "quote": "In the western part of the site ... is a modern cemetery",
+   "type": "grave",
+   "subtype": "modern cemetery",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "L",
+    "basis": "entry calls it a modern cemetery"
+   }
+  },
+  {
+   "id": "s2f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 85, p. 285 (quoting Abel 1913: 227-229)",
+   "quote": "necropolis ... west of the farm. Private digs ... exposed burial caves",
+   "type": "grave",
+   "subtype": "necropolis of burial caves (natural caves with two hewn graves; lead sarcophagus)",
+   "cavity_with_opening": true,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (necropolis of Coraea, no date given for the caves)"
+   }
+  },
+  {
+   "id": "s2f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 84, Fig. 167, p. 281 (plan supplied with the Site 85 entry)",
+   "quote": "Pool",
+   "type": "pool",
+   "subtype": "pool (plan label on the slope of Tell es-Simadi)",
+   "pool_def": "yes",
+   "position": {
+    "kind": "grid",
+    "ref": "S1116"
+   },
+   "date": {
+    "code": "U",
+    "basis": "component of row S1116 (Tell es-Simadi); not dated by the entry or plan"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 85, p. 285",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "s2f1: the sentence also places the cemetery 'north of Tell es-Simadi' (relative to another site); W from the site itself used. s2f2: Abel's report quoted in the entry; 'the farm' is not identified, so relative_to other. Abel's 'caves at the foot of the hill' with two hewn graves and the lead sarcophagus are read as the same burial caves and kept as one feature. s2f3: Site 85 has no plan of its own; Fig. 167 (Plan of Tell es-Simadi and the town of Coraea) labels a 'Pool' on the tell, so it takes row S1116's point (grid). The text above the figure on p. 281 belongs to the Site 84 entry and was not coded. Unit point cannot be placed on Fig. 167 (unit point is 400 m S of S1116 and the plan spans c. 450 m), so no plan positions. Data block 'Cisterns: none' recorded as C2 absence."
+}

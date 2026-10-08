@@ -1,0 +1,66 @@
+{
+ "unit_id": "S1092",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 131, p. 382",
+   "quote": "next to it is a small structure - perhaps a silo",
+   "type": "pit",
+   "subtype": "small structure, perhaps a silo",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site pottery list does not date the component)"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 131, pp. 382-383",
+   "quote": "Four of the installations were found inside the threshing floors.",
+   "type": "pit",
+   "subtype": "built installations, perhaps silos (four of five)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "NE",
+    "distance_m": null,
+    "relative_to": "other"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site pottery list does not date the component)"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 131, p. 383",
+   "quote": "Five built installations were also found, perhaps silos.",
+   "type": "pit",
+   "subtype": "built installation, perhaps a silo (fifth, location not stated)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site pottery list does not date the component)"
+   }
+  }
+ ],
+ "explicit_absence": [
+  {
+   "condition": "C2",
+   "source": "2",
+   "cite": "Zertal 2005 (Eng. Vol. 4) Site 131, p. 382",
+   "quote": "Cisterns: none"
+  }
+ ],
+ "notes": "Data block 'Cisterns: none' (C2 absence). f1-f3 are built, apparently above-ground structures (f2/f3: 2 m diameter, walls 1 m high, with an opening) that the entry calls 'perhaps' silos; coded as pit because the protocol lists silos, borderline. f1 is next to a stone circle at the southern edge of the courtyard attached to the NE side of the central structure: no direction from the site, so none. f2: threshing floors lie 'up to a distance of 120 m north-east of the central structure', so NE relative to the central structure (other), distance not stated. Rock-cut installations inside the threshing floors not coded (type not stated). Plan Fig. 267 not used for positions: it has no grid, so the unit point cannot be placed on it."
+}
