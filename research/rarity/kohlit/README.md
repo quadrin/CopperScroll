@@ -37,3 +37,44 @@ python3 -I stage1_screen.py /path/to/WBADB_data1.xlsx stage1a/
 ```
 
 It writes `stage1a/stage1a_units.csv` (one row per unit, with its pool-word hits within 2 km) and `stage1a/stage1a_summary.json`.
+
+## Stage 1a result (8 October 2026 UTC), frozen screen 75b0af9
+
+| Set | Units | Pool word within 2 km → Stage 2 | No WBADB hit → pending SWP | Excavated |
+|---|---|---|---|---|
+| R1, Hellenistic or Roman (main) | 333 | 186 | 147 | 77 |
+| R1, any period before 70 CE (sensitivity) | 499 | 240 | 259 | 95 |
+| R2, Hellenistic or Roman | 101 | 76 | 25 | 38 |
+| R2, any period before 70 CE | 138 | 98 | 40 | 48 |
+
+518 WBADB rows contain a pool word.
+
+**Which words drive the main-set hits** (number of units with each word within 2 km):
+
+| Word | Units |
+|---|---|
+| pool | 104 |
+| reservoir | 76 |
+| basin | 59 |
+| birkat / birket | 12 |
+| tank | 2 |
+
+29 units are flagged by "basin" alone. Stage 2 decides whether a "basin" meets C1 (≥3 m across, or called a pool).
+
+### Where the exposed candidates land
+
+These are reported as the protocol requires. They do not change the rules.
+
+- **Tell es-Sultan.** WBADB holds it only as an Excavations row: E334, the 1992 limited excavation, periods "EB". It records no Hellenistic or Roman occupation for the tell, so the tell is **not a unit in the main set**. It enters only the pre-70 sensitivity set, where it goes to Stage 2 with one pool-word hit within 2 km. Jericho's Roman cemetery is a separate row, S2446 (Rom). The town is a known WBADB coverage gap (sourcebook p. 28). The rules allow no outside correction.
+- **Kh. Marjame (S1658, 181600/155400; Hel, Rom).** This is the Kh. el-Marjama at ʿEin Samiya. Main set, R1, goes to Stage 2. Its own components list a pool and an aqueduct, with no position given.
+- **Kh. Marjama (S2488, 177750/140350; Hel).** A different site with the same name. Main set, R1 and R2, goes to Stage 2.
+- **Kh. Yanun (S1001) and Yanun (S1053).** Main set, R1, with no pool word within 2 km. Both are pending the SWP screen.
+- **ʿEin el-Ghuweir (S4546).** Main set, R2, pending the SWP screen.
+- **Kh. Qumran (E754).** Main set, R2, goes to Stage 2.
+
+### Next
+
+1. **Stage 1b, the SWP screen.** Freeze its rules, then match SWP Memoir site entries to units by name.
+2. **Stage 2.** Code the 186 main-set units, plus any that Stage 1b adds, from sources 1–5.
+
+The original survey entries (source 2), mainly Bar-Adon 1972 and Kallai 1972, are in Hebrew and exist only in libraries.
