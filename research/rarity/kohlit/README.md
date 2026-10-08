@@ -125,8 +125,19 @@ A check of the exposed candidates after the run found three Memoir entries that 
 - **Yanun village.** The list number "8." is OCR'd as "S.", so the header is not found. The entry ("a small spring about 1 mile to the north") has no pool word, so the status does not change.
 - **ʿAin el Ghuweir.** It is in a numbered spring list with no map square, so the parser cannot place it. The spring "forms a shallow basin". If it had linked, the unit would have gone to Stage 2. The basin is natural, so it would probably not meet C1. The unit stays "not recorded" under the frozen rules.
 
-## Next
+## Stage 2 freeze
 
-1. **Stage 2.** Freeze the §4 matching script and the coding protocol. Then code every unit that goes to Stage 2 from sources 1–5.
+The coding protocol, the matching script and its constants are in [`stage2/`](stage2/PROTOCOL.md). They were committed before any unit was coded, and `stage2/test_match.py` tests the matching rules on synthetic data only.
+
+**Deviation.** §5 of the pre-registration says the matching script is committed before Stage 1. It was committed after Stage 1 and before Stage 2. Stage 1 output holds no condition data, so no condition could be seen before the freeze.
+
+**Sources used in Stage 2, besides WBADB and the SWP Memoirs.** These files are under copyright and are not in the repo. The packet builder stops if a file differs from its hash.
+
+| Source | File and access | SHA-256 |
+|---|---|---|
+| 2: Finkelstein, Lederman and Bunimovitz 1997, *Highlands of Many Cultures* | `MS_14_Highlands.pdf`, open access through the [TAU monograph series](https://en-humanities.tau.ac.il/archaeology/publications/monographseries) | `2074020593f986fdc2189448f74c3037b577fb0093bb35b658eadcf47085c16c` |
+| 5: Nigro, Sala and Taha (eds) 2011, *Archaeological Heritage in the Jericho Oasis* (ROSAPAT 07) | Public download from the [expedition's publications page](https://sites.google.com/uniroma1.it/sapienzatojericho/publications) | `0c7fefdf676abb796c6cccf4f33dd6289c499d6a54249322e0b2ea672122af73` |
+
+The other original surveys (source 2) are library-only, so the packets mark them "not accessed". Source 4 excerpts are gathered only where the first publication is lawfully online.
 
 The original survey entries (source 2), mainly Bar-Adon 1972 and Kallai 1972, are in Hebrew and exist only in libraries.

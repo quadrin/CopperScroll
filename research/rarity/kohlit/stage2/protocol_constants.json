@@ -1,0 +1,26 @@
+{
+  "version": "stage2-v1",
+  "_note": "Constants of the §4 matching rules and the coder protocol. Frozen with match.py and PROTOCOL.md before any Stage 2 coding.",
+  "seed": 20261008,
+  "coder_b_fraction": 0.20,
+  "batch_size": 12,
+  "sectors_deg": {"C1_east": [45, 135], "C2_north": [315, 45], "C3_north": [315, 45]},
+  "limits_m": {"C1": 1000, "C2": 1000, "C3_survey": 1000, "C3_text_mouth": 10},
+  "variants": {
+    "primary": {},
+    "C1_0.5km": {"C1": 500},
+    "C1_2km": {"C1": 2000},
+    "C2_tomb_shafts": {"tomb_shafts": true},
+    "dated_only": {"dated_only": true}
+  },
+  "compass_deg": {"N": 0, "NNE": 22.5, "NE": 45, "ENE": 67.5, "E": 90, "ESE": 112.5, "SE": 135, "SSE": 157.5,
+                   "S": 180, "SSW": 202.5, "SW": 225, "WSW": 247.5, "W": 270, "WNW": 292.5, "NW": 315, "NNW": 337.5},
+  "quadrant_edge_words": ["NE", "SE", "SW", "NW"],
+  "east_part_words": ["east part", "eastern part", "eastern side", "east side", "eastern edge", "east end", "eastern end"],
+  "mouth_phrases": ["at its mouth", "at the mouth", "around the mouth", "around its mouth", "over the mouth",
+                    "at the opening", "around the opening", "beside the opening", "next to the opening",
+                    "at the entrance", "beside the entrance", "next to the entrance", "adjoining", "adjacent",
+                    "beside", "next to"],
+  "pool_called_words": ["pool", "reservoir", "birka", "birke", "birkeh", "birket", "birkat", "tank", "spring pool",
+                        "spring-house", "spring house", "piscina", "bereikha", "breikha"]
+}

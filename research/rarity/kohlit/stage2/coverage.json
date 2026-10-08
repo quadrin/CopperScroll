@@ -1,0 +1,26 @@
+{
+  "_note": "Coverage class of the survey named in a unit's WBADB Survey_Ref, used only to split m (pre-registration §5, Report). 'full' = an ASI-method survey that the WBADB sourcebook (p. 13) counts as full coverage for most of its area. 'partial' = a site-oriented survey: the 1968 Emergency Survey (only known sites, p. 13), problem-oriented surveys, and maps the sourcebook lists under partial coverage. 'none' = no survey named (excavation rows only). A unit whose Survey_Ref names several surveys takes the best class. A survey not listed here counts as 'partial'.",
+  "surveys": {
+    "Zertal 1992": "full",
+    "Zertal 1996": "full",
+    "Zertal 2005": "full",
+    "Zertal and Mirkam 2000": "full",
+    "Finkelstein et al. 1997": "full",
+    "Finkelstein 1993": "full",
+    "Dinur and Feig 1993": "full",
+    "Feldstein et al. 1993": "full",
+    "Sion 1997a": "full",
+    "Spanier 1995": "full",
+    "Gophna and Porat 1972": "partial",
+    "Bar-Adon 1972": "partial",
+    "Kallai 1972": "partial",
+    "Goldfus and Golani 1993": "partial",
+    "Patrich 1994a": "partial",
+    "Hirschfeld 1983": "partial",
+    "Sion 2001": "partial",
+    "Ben-Yosef 2007": "partial",
+    "Bar 2008": "partial",
+    "Damati and Ilan 1973": "partial"
+  },
+  "default_if_unlisted": "partial"
+}
