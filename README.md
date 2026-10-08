@@ -4,7 +4,7 @@ Research on the places, landmarks, text, and structure of the Copper Scroll. The
 
 ## Start here
 
-For a new research session, read [AGENTS.md](AGENTS.md), then [the active test](research/ACTIVE_TEST.md). It gives the current claim, stopping conditions, evidence limits and one next action. [Open questions](research/OPEN_QUESTIONS.md) is the broader backlog and history.
+For a new research session, read [AGENTS.md](AGENTS.md), then [the active test](research/ACTIVE_TEST.md). It gives the active questions, the observation that would decide each, pending requests and the next evidence to obtain. [Open questions](research/OPEN_QUESTIONS.md) is the broader backlog and history.
 
 1. [Current site assessment](research/sites/site_identification_review.md) explains the leading place proposals and their limits. These are site-level identifications; no individual deposit or hiding place has been identified.
 2. [Research guide](research/README.md) lists every report by subject and points to the evidence behind each conclusion.

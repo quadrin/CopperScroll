@@ -27,7 +27,7 @@ python deep_analysis/word_control/benchmark_sample.py --words deep_analysis/word
 python deep_analysis/word_control/verify_distribution.py deep_analysis/word_control/results.json
 ```
 
-No target-prefix scoring had run at this input freeze. The independent integer generating-function calculation verifies inclusion/exclusion output without importing the benchmark. Full XML and continuous text are not bundled. Existing Phase4 evidence and ACTIVE_TEST hold the result; this folder holds reproducible data/code.
+No target-prefix scoring had run at this input freeze. The independent integer generating-function calculation verifies inclusion/exclusion output without importing the benchmark. Full XML and continuous text are not bundled. Existing Phase4 evidence and the [ACTIVE_TEST history](../../research/logs/active_test_history_2026-10-07.md) hold the result; this folder holds reproducible data/code.
 
 ## Attribution and data licence
 
