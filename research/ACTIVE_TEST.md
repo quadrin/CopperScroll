@@ -12,6 +12,8 @@ A two-wave agent review is recorded in [agent_review_2026-10-07](agent_review_20
 
 Before any further order-based inference, the wave-1 order kernel must be replaced by a density-neutral one.
 
+*Follow-up, 7 Oct (afternoon):* items 2–4 were worked ([follow-up](agent_review_2026-10-07/followup/README.md)). The reservoir dates from 1898. Kallai's pool is unlocated. Kenyon *Jericho* II records Roman graves and a Roman cistern north of the tell. Item 1 is requested from Manchester. The current test is unchanged.
+
 ## Closed Wadi original-report coverage check
 
 [Current original review and historical access audit](assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.md), [structured observations and null gates](assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.json): the supplied134-page ESI5 verifies Dinur–Feig printed110–111/PDF118–119 and Fig.56. The1986 cover designation,1987 printing and June1987 preface resolve the volume-year distinction. The official Hadashot partIIp36 locator remains an unverified metadata crosswalk, without blocking inspection of the identified report. The earlier403 remains access history.

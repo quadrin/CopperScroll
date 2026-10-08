@@ -7,6 +7,7 @@ Two waves of parallel AI research agents worked through a 19-task program aimed 
 - [`wave1/SUMMARY.md`](wave1/SUMMARY.md) — the first pass. Its "Koḥlit convergence" headline is **withdrawn by wave 2** (see below); the file is kept as a historical record.
 - [`wave2/SUMMARY.md`](wave2/SUMMARY.md) — the current synthesis.
 - [`GOALS.md`](GOALS.md) — the 19-task program with status, plus the observations that would move Koḥlit.
+- [`followup/README.md`](followup/README.md) — **follow-up, 7 Oct (afternoon):** the Koḥlit observations worked from the owner's sources (Dorrell 1993, Warren, Mazar 1995, Zohar 1980, *Highlands*, Kenyon *Jericho* II) and from CORONA DF040–042, plus the outreach sent.
 - Each task folder has a REPORT (`.md` or `.txt`), data tables and the scripts that produced them. Paths inside reports refer to the original session workspace (`agent_review/…`, `session-inputs/…`, `user-library/…`).
 
 ## What changed, and what it corrects
@@ -79,8 +80,8 @@ The wave-1 registry (`wave1/T03_T04_registry/`, 79 predictions over 35 entries) 
 Edition plates, page images, crops and screenshots of rights-restricted material (Puech, DJD, DQCAAS, HUJI, the manuscript viewers), raw downloads and extracted book text are not committed, per AGENTS.md. Reports cite them by page or figure. The three figures in `figures/` are a project plot and annotations of CC0 Bavarian frames; the comparison panel uses EOX Sentinel-2 cloudless 2024 tiles (CC BY-NC-SA 4.0, © EOX IT Services GmbH).
 
 ## Not accessed (still needed)
-- Kenyon, *Jericho* II–III (archive.org lending only).
-- Mazar, IEJ 45 (1995); Zohar, IEJ 30 (1980); Kallai 1971/1972; Dorrell, PEQ 125 (1993).
+- Kenyon, *Jericho* III (1981). Vol. II (1965) was read in the follow-up.
+- Kallai 1971/1972; Zohar, HA 76 (1981). Mazar, IEJ 45 (1995), Zohar, IEJ 30 (1980) and Dorrell, PEQ 125 (1993) were read in the follow-up.
 - Bar-Adon 1972; Lurie 1963; Pixner 1983; Goranson 1992; Puech 1997.
 - NEAEHL vols 1–3; the DJD III plates; CIIP II (Jatt).
-- The Judaean Desert Greek papyri (papyri.info anti-bot); Leonard 2000 (numismatics); Finkelstein et al. 1997 (Kh. Yanun).
+- The Judaean Desert Greek papyri (papyri.info anti-bot); Leonard 2000 (numismatics). Finkelstein et al. 1997 was read in the follow-up.

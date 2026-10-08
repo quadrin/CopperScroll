@@ -3,6 +3,17 @@
 Current headline counters are [identification outcomes and coverage](https://github.com/quadrin/CopperScroll/blob/main/research/PROGRESS_METRICS.md). The following cycle/source totals are activity history; their growth does not establish stronger candidate identification.
 
 
+## Agent-review follow-up — 7 October 2026 (afternoon), Los Angeles
+
+The R07 observations were worked from the owner's sources and from CORONA DF040–042; see [the follow-up](../agent_review_2026-10-07/followup/README.md). **No identification, confidence, coordinate, decisive test, question closure or outcome-ledger increment.**
+- **ʿAin es-Sultan (entry 11):** the present reservoir dates from 1898 (Dorrell, PEQ 125 pp. 111–112). The only ancient element is a curved spring-house wall with a niche, judged late Roman/Byzantine on opinion only. No Herodian pool is demonstrated.
+- **Kh. el-Marjama (entry 11):** the only documented reservoir is a basin under a Byzantine church crypt at the spring, SW of the tell (Zohar, IEJ 30 p. 219). Kallai's rock-cut pool is still unlocated. A gazetteer (Kol Makom ve-Atar) puts Roman–Byzantine dams and aqueducts at Kh. Samiya, S/SE of the tell.
+- **North of the tell (entry 60):** Kenyon, *Jericho* II (1965) records Qumran-type Roman graves N/NW of Tell es-Sultan (p. 2; pp. 516–545); a Roman burial cut into a Bronze Age shaft (D9, pp. 276–277); and a Roman cistern with "Herodian" lamps toward Kh. el-Mefjar (N.S.1, pp. 539–544). The strip just north of the tell was never searched (p. 169). Kh. el-Marjama has only Bronze Age shaft tombs to the north. Kh. Yanun has no pit, cistern or tomb on record (*Highlands* pp. 828–831; Roman 3.3%).
+- **Imagery:** by September 1967 the ʿAin es-Sultan camp covered the ground north of the tell. A dark ~15 m square ~420 m SE of Kh. el-Marjama is unexplained. Qumran's ruins and caves do not resolve at ~2 m.
+- **Outreach:** requests were sent to Manchester Museum (C.21–23 for XII 10), the University of Manchester Library (GB 133 TPA/1/132) and the IAA archive (cave survey). Delivery and replies are unverified.
+- **Correction:** the owner's Kenyon copy is Vol. II, not Vol. III. Kenyon 1981 pp. 173–174 (cited by Puech) remains unchecked.
+
+
 ## Parallel-agent review — 6–7 October 2026, Los Angeles
 
 Two waves of parallel agents (9 + 7) ran a 19-task program; see [the review](../agent_review_2026-10-07/README.md), [wave 2 synthesis](../agent_review_2026-10-07/wave2/SUMMARY.md) and [goals](../agent_review_2026-10-07/GOALS.md). **No identification, confidence, coordinate, decisive test, question closure or outcome-ledger increment.**
