@@ -1,0 +1,7 @@
+[
+  {"id":"translate_scale","source":[[0,0],[10,0],[0,10]],"destination":[[7,-4],[27,-4],[7,26]],"heldout":[7,9],"target":[21,23],"tolerance":0.00000001,"expected_status":"within_tolerance"},
+  {"id":"rotation","source":[[0,0],[10,0],[0,10]],"destination":[[20,10],[20,20],[10,10]],"heldout":[7,9],"target":[11,17],"tolerance":0.00000001,"expected_status":"within_tolerance"},
+  {"id":"reflection","source":[[0,0],[10,0],[0,10]],"destination":[[20,10],[10,10],[20,20]],"heldout":[7,9],"target":[13,19],"tolerance":0.00000001,"expected_status":"within_tolerance"},
+  {"id":"shear","source":[[0,0],[10,0],[0,10]],"destination":[[3,4],[13,6],[8,14]],"heldout":[7,9],"target":[14.5,14.4],"tolerance":0.00000001,"expected_status":"within_tolerance"},
+  {"id":"bad_heldout_control","source":[[0,0],[10,0],[0,10]],"destination":[[0,0],[10,0],[0,10]],"heldout":[7,9],"target":[9,9],"tolerance":0.5,"expected_status":"outside_tolerance"}
+]

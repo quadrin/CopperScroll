@@ -2,7 +2,7 @@
 
 Updated 8 October 2026 UTC / 8 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (8 October UTC): **obtained**: two addenda to the Koḥlit rarity count. The [source-4 addendum](rarity/kohlit/stage2/addendum_s4/ADDENDUM.md) read 24 more excavation reports; Qumran now matches two of three conditions (a pit and a cemetery to the north). The [source-2 addendum](rarity/kohlit/stage2/addendum_s2/ADDENDUM.md) read Zertal's survey entries for 78 units. Branch A still has k = 0 (R1, Hel/Rom, survey level), but f = 20 and m = 313 of 333; every new FAIL rests on a "Cisterns: none" field. Branch B gains Qarn Sarṭaba (k = 5). Rarity is still not measurable.
+Last session (8 October UTC): **partly**: [shared research tools](shared_tools/README.md) implement source/figure retrieval, manuscript correspondence queries, entry/control imports, calibration diagnostics, anonymous-review staging and visit capture validation. Original-line registration, independent empirical calibration and human review still need the specified source records and readers.
 
 ## Active questions and the observation that decides each
 
