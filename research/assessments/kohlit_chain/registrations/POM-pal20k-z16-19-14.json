@@ -1,0 +1,107 @@
+{
+ "document": {
+  "id": "POM-pal20k-z16-19-14",
+  "title": "Survey of Palestine 1:20,000 sheet 19-14 Jericho, Palestine Open Maps tile layer pal20k-1940s, zoom 16",
+  "custodian": "Palestine Open Maps (Visualizing Palestine); scan credited to the National Library of Israel",
+  "date": "1940s (served edition not determined: undated file or 1942 file)",
+  "kind": "map",
+  "sha256": "04cd50ea46873974a4a416ab51f3e3e93f937b371f56d7ff1e277cb4763fbd75"
+ },
+ "declared_before_fit": "dated notes: POM-pal20k-z16-19-14.declaration.json (sha256 085b50a3f2f53726bb0f5132f8102b102448e9ab8b84662a3fef605909c0190c, 2026-10-09T22:19:44Z); prepreview.json (d1e3916222a1b07ebca98fcb9ca119eb6d960a774f258f4d0acfe1a7abad1ca4, 22:40:17Z); checkpoint.json (e8bcc03159400369170827f40f6fe643bafe99c7b4fbe26c000c700608728fc5, 22:41:01Z); this record's hash and time are in research/regional/mandate_maps/README.md",
+ "transform": "similarity",
+ "target_relations": [
+  "mouth_10m",
+  "north_sector"
+ ],
+ "source_axes": "pixel_y_down",
+ "source_frame": "pixels of the full-resolution zoom-16 mosaic of the document extent (E189500-194500 N140000-145000); x = global z16 pixel x - 10039123, y = global z16 pixel y - 6818730 (rows down)",
+ "target_frame": {
+  "crs": "EPSG:28191 Palestine Grid metres (= WBADB Old Israel Grid minus 1,000,000 m N)",
+  "conversion": "pyproj 3.8.0 / PROJ 9.8.1, EPSG:4326 -> EPSG:28191, operation 'Inverse of Palestine Grid + Palestine 1923 to WGS 84 (1)' (accuracy 2 m)",
+  "reference_source": "Esri World Imagery (2025 basemap), zoom 17-18, coordinates picked on masked mosaics; the identification of each feature is my reading (INFERENCE)",
+  "reference_error_m": 5
+ },
+ "controls": [
+  {
+   "rp": "RP-TELL-FOOT-W",
+   "source_xy": [
+    1256.33,
+    1465.0
+   ],
+   "target_xy": [
+    192055.45,
+    142050.64
+   ]
+  },
+  {
+   "rp": "RP-TELL-FOOT-S",
+   "source_xy": [
+    1306.67,
+    1524.67
+   ],
+   "target_xy": [
+    192149.91,
+    141889.58
+   ]
+  },
+  {
+   "rp": "RP-TELL-FOOT-E",
+   "source_xy": [
+    1305.67,
+    1503.67
+   ],
+   "target_xy": [
+    192180.51,
+    142001.96
+   ]
+  },
+  {
+   "rp": "RP-TAWAHIN",
+   "source_xy": [
+    1055.33,
+    1377.33
+   ],
+   "target_xy": [
+    191679.89,
+    142160.61
+   ]
+  },
+  {
+   "rp": "RP-MEFJAR",
+   "source_xy": [
+    2018.0,
+    878.0
+   ],
+   "target_xy": [
+    193622.22,
+    143256.66
+   ]
+  }
+ ],
+ "check": {
+  "rp": "RP-SPRING",
+  "source_xy": [
+   1324.67,
+   1503.67
+  ],
+  "target_xy": [
+   192199.25,
+   142002.0
+  ]
+ },
+ "pick_notes": {
+  "RP-TELL-FOOT-W": "map: outer edge of the hachured tell outline on the line N 142050; reference: west edge of the bare excavated mound at the tree line on the same line",
+  "RP-TELL-FOOT-S": "map: outer edge of the outline on the line E 192150; reference: south edge of the bare mound on the same line",
+  "RP-TELL-FOOT-E": "map: outer edge of the outline on the E-W line through the spring dot; reference: east edge of the bare mound on the E-W line through the reference spring point",
+  "RP-TAWAHIN": "map: centre of the oval outline beside the 'Sugar Mills / Et Tawāḥīn' label (the label is the identity check); reference: centre of the walled ruin complex west-north-west of the tell",
+  "RP-MEFJAR": "map: centre of the square 'R.' symbol south-west of the 'Khirbat el Mafjar' label; reference: centre of the palace's square main building",
+  "RP-SPRING": "map: the spring dot beside 'Sp.' and 'ʿEin es Sultān'; reference: northernmost point of the rounded north end of the orange-roofed elongated structure east of the road (identified as the spring house and reservoir: INFERENCE, moderate confidence)"
+ },
+ "dropped_candidates": {
+  "RP-SAMARAT": "the map shows it (trig 836 on a mound symbol), but no mound is identifiable on the reference imagery; dropped under the rule written before the fit (a feature not identifiable on the reference is dropped)",
+  "RP-ABU-HINDI": "the map labels it with a small mound symbol, but no mound is identifiable on the reference imagery; dropped under the same rule",
+  "RP-ROADS": "not used: the road alignments near the tell changed",
+  "RP-TELL-FOOT-N": "excluded by role and inside the mask"
+ },
+ "deviation_note": "Identification-based drops were decided before any fit or residual was computed. No control was chosen or dropped by its residual."
+}

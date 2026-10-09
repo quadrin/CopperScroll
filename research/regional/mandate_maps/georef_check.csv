@@ -1,0 +1,28 @@
+check,sheet,n,control_id,item_id,mean_dE_m,mean_dN_m,median_m,max_m,rms_about_mean_m,published_d_m,corrected_d_m,ref_sigma_m,reference
+G1_grid,17-13,3,,,-1.7,-3.3,3.5,4.6,1.1,,,,nominal Palestine grid intersections
+G1_grid,17-17,2,,,-0.3,11.6,11.7,13.2,2.0,,,,nominal Palestine grid intersections
+G1_grid,18-12,9,,,-2.9,12.6,13.7,18.6,3.6,,,,nominal Palestine grid intersections
+G1_grid,18-13,3,,,-1.3,7.8,7.9,8.6,0.7,,,,nominal Palestine grid intersections
+G1_grid,18-14,1,,,2.9,4.7,5.5,5.5,0.0,,,,nominal Palestine grid intersections
+G1_grid,18-15,2,,,2.3,6.7,7.1,7.5,1.0,,,,nominal Palestine grid intersections
+G1_grid,19-12,6,,,2.4,3.4,4.7,5.3,1.7,,,,nominal Palestine grid intersections
+G1_grid,19-13,4,,,-6.1,-5.0,7.8,9.6,1.5,,,,nominal Palestine grid intersections
+G1_grid,19-14,16,,,-12.8,0.6,13.9,17.2,3.8,,,,nominal Palestine grid intersections
+G2_esri_imagery,18-13,1,ESRI-C01,C01,,,,,,10.1,8.8,9.0,"Deir Mar Jiryis (St George) monastery: centre of the main building cluster on the cliff; Esri World Imagery 2025, zoom 18"
+G2_esri_imagery,17-13,1,ESRI-E14,E14,,,,,,18.5,22.0,7.1,"Church of All Nations (Gethsemane): centre of the domed roof; Esri World Imagery 2025, zoom 18"
+G2_esri_imagery,18-12,1,ESRI-S01,S01,,,,,,5.8,15.1,11.2,"Mar Saba monastery: centre of the main church and court; Esri World Imagery 2025, zoom 18"
+G2_esri_imagery,18-12,1,ESRI-H02,H02,,,,,,2.3,14.8,9.0,"Hyrcania summit: centre of the summit ruins; Esri World Imagery 2025, zoom 18"
+G2_esri_imagery,19-12,1,ESRI-Q04,Q04,,,,,,16.0,16.2,11.2,"Kh. Qumran: centre of the main building complex; Esri World Imagery 2025, zoom 18"
+G2_esri_imagery,19-13,1,ESRI-P03,P03,,,,,,8.8,16.5,11.2,"Birket Musa (large rectangular pool at Tulul Abu el-Alayiq): centre of the rectangle; Esri World Imagery 2025, zoom 17"
+G2_esri_imagery,17-13,1,ESRI-E31,E31,,,,,,13.5,16.8,5.2,"Dome of the Rock: centre of the dome; Esri World Imagery 2025, zoom 17"
+G2_esri_imagery,19-14,1,REG-RP-MEFJAR,U15,,,,,,38.9,29.3,11.2,Khirbat el-Mafjar palace: centre of the square main building (registration pick); Esri World Imagery 2025
+G2_esri_imagery,19-14,1,REG-RP-SPRING,T30,,,,,,36.4,33.7,7.1,ʿAin es-Sultan: north end of the rounded orange-roofed structure east of the road (registration check pick; identification INFERENCE); Esri World Imagery 2025
+G2_esri_imagery,19-14,1,REG-RP-TAWAHIN,J19,,,,,,82.4,76.5,15.8,Tawahin es-Sukkar: centre of the walled ruin complex (registration pick); Esri World Imagery 2025
+G2_neaehl_grid_ref,19-12,1,NEAEHL-Qumran,Q04,,,,,,85.4,90.3,50,W2B grid_convert.py CONTROLS: NEAEHL grid reference 193620/127720 (EPSG:28191; about 100 m rounding)
+G2_neaehl_grid_ref,18-12,1,NEAEHL-Hyrcania,H02,,,,,,42.9,51.6,50,W2B grid_convert.py CONTROLS: NEAEHL grid reference 184700/125200 (EPSG:28191; about 100 m rounding)
+G2_neaehl_grid_ref,18-12,1,NEAEHL-Mar_Saba,S01,,,,,,14.6,18.5,50,W2B grid_convert.py CONTROLS: NEAEHL grid reference 181500/123600 (EPSG:28191; about 100 m rounding)
+G2_places_v2,19-12,1,PLACES-kh_qumran,Q04,,,,,,81.5,86.4,100,places_v2.csv kh_qumran: Pleiades 688011 (Qumran)
+G2_places_v2,17-13,1,PLACES-jer_gethsemane,E14,,,,,,25.3,27.6,100,places_v2.csv jer_gethsemane: Wikidata Q205333 (Gethsemane)
+G2_places_v2,17-13,1,PLACES-jer_kidron_mon,E07,,,,,,29.9,26.7,100,places_v2.csv jer_kidron_mon: Wikidata Q12409409 (Kidron monuments)
+G2_places_v2,17-13,1,PLACES-jer_east_gate,E11,,,,,,150.0,153.0,50,places_v2.csv jer_east_gate: Wikidata Q1367167 (Golden Gate)
+G2_places_v2,17-13,1,PLACES-jer_bir_ayyub,E04,,,,,,57.0,55.0,100,"places_v2.csv jer_bir_ayyub: Wikidata Q2919936 (En-rogel, alias ביר איוב)"

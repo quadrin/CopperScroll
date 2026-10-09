@@ -1,0 +1,121 @@
+{
+ "components": "31.56722:35.62417:0.3|31.57442:35.66475:0.3|31.59758:35.56264:0.3|31.76778:35.72528:0.5|31.71667:35.80000:0.7|31.80083:35.80889:0.3|31.91280:35.75180:0.6|31.90476:35.71157:0.3|31.86280:35.67725:0.2|31.85271:35.67372:0.2|32.18651:35.68634:0.3|31.83722:35.55028:1.5",
+ "date_utc": "2026-10-09",
+ "files": {
+  "candidates_v3.csv": {
+   "byte_copy": true,
+   "from_v2": "candidates_v2.csv",
+   "v2_sha256": "f8d70eb7fda81a8cbbc07bfaa22a8c48785dc423e73e0d989139c717cf51b2a5",
+   "v3_sha256": "f8d70eb7fda81a8cbbc07bfaa22a8c48785dc423e73e0d989139c717cf51b2a5"
+  },
+  "entries_v3.csv": {
+   "byte_copy": true,
+   "from_v2": "entries_v2.csv",
+   "v2_sha256": "7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0",
+   "v3_sha256": "7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0"
+  },
+  "grid_conversions_v3.csv": {
+   "byte_copy": false,
+   "from_v2": "grid_conversions_v2.csv",
+   "v2_sha256": "cc471959c0c66cfec87dc5472b13d4e52cded3995a9a8baaf469252ad6aab7a8",
+   "v3_sha256": "cbcdb12fccf8c7617ff7a4618124b0364be1b06217dc709f655cafe1668cec7e"
+  },
+  "kohlit_proposals_v3.csv": {
+   "byte_copy": true,
+   "from_v2": "kohlit_proposals_v2.csv",
+   "v2_sha256": "21001790432bcca973bb7dd8464cb407a3647893e6db06c0db80ae9bab963feb",
+   "v3_sha256": "21001790432bcca973bb7dd8464cb407a3647893e6db06c0db80ae9bab963feb"
+  },
+  "name_groups_v3.csv": {
+   "byte_copy": true,
+   "from_v2": "name_groups_v2.csv",
+   "v2_sha256": "82a7d44b299ee6f7ccf3b43a14aad6d4b429f7a264a11ce0e012831a02b2cc28",
+   "v3_sha256": "82a7d44b299ee6f7ccf3b43a14aad6d4b429f7a264a11ce0e012831a02b2cc28"
+  },
+  "places_v3.csv": {
+   "byte_copy": false,
+   "from_v2": "places_v2.csv",
+   "v2_sha256": "315474bd3be8cce3e1776e119417e2444edd99e3f028c7413185302fc7663683",
+   "v3_sha256": "381894a6e383d8f763197048d751bc8c89a5506144b295b3b77d338cc9ad3b9c"
+  }
+ },
+ "gazetteer_sha256": "b7abb1e6e52d514c605fd3cf4ea2560b367e8a4b0f36897c0745bbbe54d537fe",
+ "generator": "inputs_v3/build_inputs_v3.py",
+ "plan": "research/regional/peraea/PLAN_v3.md",
+ "sites": [
+  {
+   "lat": "31.56722",
+   "lon": "35.62417",
+   "sigma_km": "0.3",
+   "site_id": "machaerus"
+  },
+  {
+   "lat": "31.57442",
+   "lon": "35.66475",
+   "sigma_km": "0.3",
+   "site_id": "kh_ataruz"
+  },
+  {
+   "lat": "31.59758",
+   "lon": "35.56264",
+   "sigma_km": "0.3",
+   "site_id": "callirrhoe"
+  },
+  {
+   "lat": "31.76778",
+   "lon": "35.72528",
+   "sigma_km": "0.5",
+   "site_id": "kh_al_mukhayyat"
+  },
+  {
+   "lat": "31.71667",
+   "lon": "35.80000",
+   "sigma_km": "0.7",
+   "site_id": "madaba"
+  },
+  {
+   "lat": "31.80083",
+   "lon": "35.80889",
+   "sigma_km": "0.3",
+   "site_id": "tall_hisban"
+  },
+  {
+   "lat": "31.91280",
+   "lon": "35.75180",
+   "sigma_km": "0.6",
+   "site_id": "iraq_al_amir"
+  },
+  {
+   "lat": "31.90476",
+   "lon": "35.71157",
+   "sigma_km": "0.3",
+   "site_id": "kh_as_sur"
+  },
+  {
+   "lat": "31.86280",
+   "lon": "35.67725",
+   "sigma_km": "0.2",
+   "site_id": "umm_hadar"
+  },
+  {
+   "lat": "31.85271",
+   "lon": "35.67372",
+   "sigma_km": "0.2",
+   "site_id": "tall_barakat"
+  },
+  {
+   "lat": "32.18651",
+   "lon": "35.68634",
+   "sigma_km": "0.3",
+   "site_id": "tulul_adh_dhahab_w"
+  },
+  {
+   "lat": "31.83722",
+   "lon": "35.55028",
+   "sigma_km": "1.5",
+   "site_id": "kharrar"
+  }
+ ],
+ "switch_off_equals_v2": true,
+ "what": "W2B inputs v3 = inputs_v2 with the transjordan components replaced by documented Peraea sites"
+}

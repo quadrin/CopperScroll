@@ -755,6 +755,26 @@
    "inspection": "not_inspected",
    "access": "fieldwork",
    "pending_request": null
+  },
+  {
+   "id": "REC-POM-20K-19-14",
+   "title": "Survey of Palestine 1:20,000 sheet 19-14 (1940s), Palestine Open Maps tiles",
+   "citation": "palopenmaps.org pal20k-1940s tiles, zoom 16; registration registrations/POM-pal20k-z16-19-14.json (rejected: check error 48.6 m)",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/regional/mandate_maps/README.md",
+   "note": "Opened under the registration protocol on 9 October 2026. The strip prints only a trig station, tracks and the road; no opening or grave is shown. A 1:20,000 symbol cannot test SULTAN-1."
+  },
+  {
+   "id": "REC-POM-RAF-1940S",
+   "title": "RAF aerial mosaic 1940s (georeferenced by S. Holtzman), Palestine Open Maps layer",
+   "citation": "palopenmaps.org 'Aerial imagery, 1940s' layer (cdn.jsdelivr.net/gh/bothness/pom-tiles, aerial1940s)",
+   "inspection": "not_inspected",
+   "access": "open_access_unread",
+   "pending_request": null,
+   "repo_path": "research/regional/mandate_maps/README.md",
+   "note": "Covers the strip north of the tell. Not opened. Open it only under registration_protocol.md (register SULTAN-1 first, withheld check point, coarse preview of the zone)."
   }
  ],
  "models": [
@@ -954,7 +974,9 @@
       "REC-PEF",
       "REC-NIGRO-RECORDS",
       "REC-BSPAL-1032",
-      "REC-RAF-JERICHO"
+      "REC-RAF-JERICHO",
+      "REC-POM-RAF-1940S",
+      "REC-POM-20K-19-14"
      ],
      "success": "The opening and the grave appear in one registered record, and their distance is 'inside' 10 m under registration_protocol.md.",
      "contradiction": "Photographs and plans alone cannot contradict: absence may be concealment, burial or resolution. A contradiction needs a coverage-gated excavation record of the strip (coverage module gates) that reached the ancient surface and reports no such pair.",

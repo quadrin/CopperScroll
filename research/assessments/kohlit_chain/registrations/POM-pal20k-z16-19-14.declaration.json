@@ -1,0 +1,62 @@
+{
+ "kind": "pre-fit declaration (registration_protocol.md section 2, steps 1 and 3)",
+ "written_by": "mandate-maps worker, regional data round, 9 October 2026",
+ "written_before": "any view of sheet 19-14 tiles, the 1940s vector overlay over Jericho, or modern imagery of the zone",
+ "protocol_files_sha256": {
+  "registration_protocol.md": "0d82db20f84b250a4cb6525c22cab261461d1d117f7f2af919066f33d2c51f05",
+  "registration.py": "b7e4604948ae2eeb07ad6dac53a7fcd9c62f786a2c29f546c1443f593b6680df",
+  "reference_points.json": "231276263dd0164b8b245a04313667fe4c31f4cc0842276d33e67a61e5ec2bf5",
+  "chain.json": "055c1b551fab153033e1d6bf8e926a3bc872872b94c23842d30204bc11816a03"
+ },
+ "registered_prediction": {
+  "copied_from": "research/assessments/kohlit_chain/chain.json, model M-SULTAN, next link SULTAN-1-precamp-mouth (unchanged since commit 2ae0976)",
+  "id": "SULTAN-1-precamp-mouth",
+  "relations": ["R-E60-TOMBS-AT-MOUTH"],
+  "branch": "RB-M, RB-P, RB-L",
+  "expect": "A non-funerary opening (shaft, cistern or pit mouth, 1 m or wider) with at least one grave cut or tomb opening within 10 m of it.",
+  "where": "The strip from the tell's north foot to about 250 m north: Kenyon II p. 169 skipped it; Area D lies about 100–200 m north (Fig. 91, inference). Under the ʿAin es-Sultan camp since 1948.",
+  "success": "The opening and the grave appear in one registered record, and their distance is 'inside' 10 m under registration_protocol.md.",
+  "contradiction": "Photographs and plans alone cannot contradict: absence may be concealment, burial or resolution. A contradiction needs a coverage-gated excavation record of the strip (coverage module gates) that reached the ancient surface and reports no such pair.",
+  "contradiction_strength": "one-sided",
+  "notes": "Locating an opening does not date it. A success opens the next link (R-E60-PIT-PERIOD, R-E60-JOINT-ACCESS) on the same feature."
+ },
+ "record_specific_expectation": "This record is a 1:20,000 map. Its drawing accuracy (about 0.2–0.5 mm, 4–10 m) and its symbol sizes make E_total <= 2.5 m (mouth_10m) very unlikely. Expected outcome for SULTAN-1: not testable by this record, whatever the map prints. The north_sector threshold (10 m) may or may not be met. A symbol in the zone would locate only a mapped item of the 1940s; it would not date it and would not satisfy SULTAN-1 unless the mouth_10m relation is accepted.",
+ "document": {
+  "id": "POM-pal20k-z16-19-14",
+  "title": "Survey of Palestine 1:20,000, sheet 19-14 Jericho, as served by Palestine Open Maps (tile layer pal20k-1940s, zoom 16)",
+  "custodian": "Palestine Open Maps (Visualizing Palestine); scan source credited to the National Library of Israel",
+  "date": "1940s; the served edition (undated file or 1942 file) is not determined in advance",
+  "kind": "map (georeferenced web tiles of a printed topo-cadastral sheet)",
+  "extent_grid": "EPSG:28191 E 189500–194500, N 140000–145000 (tiles intersecting this box, zoom 16)",
+  "sha256": "SHA-256 of the sorted tile manifest (one line per tile: z/x/y and its SHA-256), computed at download and recorded in the section-8 record before any preview"
+ },
+ "transform": "similarity",
+ "target_relations": ["mouth_10m", "north_sector"],
+ "source_axes": "pixel_y_down (pixels of the full-resolution zoom-16 mosaic of the extent above)",
+ "target_frame": {
+  "crs": "EPSG:28191 Palestine Grid metres (= WBADB Old Israel Grid minus 1,000,000 m N)",
+  "conversion": "pyproj EPSG:4326 -> EPSG:28191, PROJ default operation (name recorded in the record)",
+  "reference_source": "Esri World Imagery, zoom 18–19, coordinates picked on masked mosaics",
+  "reference_error_m": 5
+ },
+ "control_candidates": [
+  "RP-TELL-FOOT-W",
+  "RP-TELL-FOOT-S",
+  "RP-TELL-FOOT-E",
+  "RP-MEFJAR",
+  "RP-SAMARAT",
+  "RP-TAWAHIN (only if the map labels the sugar mills: the identity check)",
+  "RP-ABU-HINDI (only if the map labels it)",
+  "RP-ROADS (only a junction on an alignment unchanged between the map and 2025; never the check)"
+ ],
+ "control_rule": "Use every listed candidate that the map shows with a definable point outside the mask, at the point defined in reference_points.json. At least three. The choice is made on the masked mosaics before any fit.",
+ "check_point_rule": "RP-SPRING if the coarse preview shows the spring outside the mask; otherwise the eligible candidate nearest to the zone that the map shows. Decided on the coarse preview and written into the section-8 record before fitting.",
+ "zone_and_mask": {
+  "zone_nominal_grid": {"E": [191950, 192400], "N": [142120, 142550]},
+  "mask_grid": {"E": [191800, 192550], "N": [142120, 142700]},
+  "mask_placement": "Placed in the tile frame by the mean G1 tile offset measured on sheets 19-13 and 18-14, plus 50 m on every side (plan.json). The numbers used are written into the section-8 record before the preview.",
+  "stricter_than_protocol": "The protocol asks for a preview at 5 m per pixel or coarser with the zone marked. A map draws symbols larger than the features, so the zone is painted solid on every view until the fit is saved."
+ },
+ "secondary_exploratory_fit": "A similarity fit to printed grid intersections outside the mask, with the same withheld check point, computed with registration.fit_similarity directly. Labelled exploratory: grid points are not in reference_points.json.",
+ "no_rescue": "Controls, transform and check point are fixed before the fit. A later change is a new exploratory registration and is logged as such."
+}

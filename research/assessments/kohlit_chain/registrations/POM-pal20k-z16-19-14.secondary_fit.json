@@ -1,0 +1,95 @@
+{
+ "kind": "secondary exploratory fit (grid intersections; not a registration.py record because grid points are not in reference_points.json)",
+ "n_controls": 16,
+ "parameters": {
+  "scale": 2.0254649614317812,
+  "rotation_deg": 0.10761041273384651,
+  "tx": 189508.85200948713,
+  "ty": 145007.68857875897
+ },
+ "rms_residual_m": 7.52334415256,
+ "max_residual_m": 11.379539941322513,
+ "check_RP-SPRING": {
+  "predicted_grid": [
+   192197.64,
+   141967.1
+  ],
+  "reference_grid": [
+   192199.25,
+   142002.0
+  ],
+  "error_m": 34.93,
+  "dE": -1.61,
+  "dN": -34.9
+ },
+ "other_reference_points_exploratory": {
+  "RP-TELL-FOOT-W": {
+   "predicted_grid": [
+    192059.07,
+    142045.17
+   ],
+   "reference_grid": [
+    192055.45,
+    142050.64
+   ],
+   "error_m": 6.56,
+   "dE": 3.62,
+   "dN": -5.47
+  },
+  "RP-TELL-FOOT-S": {
+   "predicted_grid": [
+    192161.26,
+    141924.5
+   ],
+   "reference_grid": [
+    192149.91,
+    141889.58
+   ],
+   "error_m": 36.72,
+   "dE": 11.35,
+   "dN": 34.92
+  },
+  "RP-TELL-FOOT-E": {
+   "predicted_grid": [
+    192159.16,
+    141967.03
+   ],
+   "reference_grid": [
+    192180.51,
+    142001.96
+   ],
+   "error_m": 40.94,
+   "dE": -21.35,
+   "dN": -34.93
+  },
+  "RP-TAWAHIN": {
+   "predicted_grid": [
+    191651.62,
+    142221.97
+   ],
+   "reference_grid": [
+    191679.89,
+    142160.61
+   ],
+   "error_m": 67.56,
+   "dE": -28.27,
+   "dN": 61.36
+  },
+  "RP-MEFJAR": {
+   "predicted_grid": [
+    193599.57,
+    143237.01
+   ],
+   "reference_grid": [
+    193622.22,
+    143256.66
+   ],
+   "error_m": 29.98,
+   "dE": -22.65,
+   "dN": -19.65
+  }
+ },
+ "E_fit_m": 34.93,
+ "E_total_m": 35.28604398342211,
+ "verdict_if_it_were_a_record": "rejected"
+}

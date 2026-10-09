@@ -1,0 +1,147 @@
+{
+ "schema_version": 1,
+ "id": "mandate_maps_plan_v1",
+ "frozen_utc": "see README.md (SHA-256 and UTC time recorded there before any residual or feature was measured)",
+ "worker": "mandate-maps (regional data round, 9 October 2026)",
+ "status": "exploratory; no identification claim; no outcome-ledger count",
+ "exposure_before_freeze": [
+  "Palestine Open Maps home page, about page, layer list and sheet index (metadata only) were read.",
+  "Two 256-px tiles of the 1:20,000 layer near Kh. Qumran (z15, z16) were downloaded to probe the maximum zoom; they were not viewed.",
+  "The sheet-index bounding box of sheet 19-14 was compared with the Palestine-grid corners converted by pyproj: the index box lies about 165 m east and 30 m north of the converted corners. This hints at a datum offset in the published georeferencing. It is metadata, not a measured residual, and it changes no rule below.",
+  "No tile, scan or thumbnail of any sheet was viewed before this plan was frozen."
+ ],
+ "source": {
+  "name": "Palestine Open Maps (Visualizing Palestine)",
+  "site": "https://palopenmaps.org/en",
+  "raster_layer": {"key": "pal20k1940", "url": "https://palopenmaps.org/tiles/pal20k-1940s/{z}/{x}/{y}.jpg", "max_zoom": 16, "tile_px": 256, "crs": "Web Mercator (EPSG:3857) XYZ", "credited_source": "National Library of Israel; Survey of Palestine"},
+  "zoom_used": 16,
+  "sheet_downloads": "Per-sheet JPEGs are linked on Dropbox shared-folder URLs (/sh/). www.dropbox.com/robots.txt disallows /sh/ for generic agents, so they are not fetched. The owner's Drive holds 16 of them; the Drive tool returns base64 only, which is too large for this session, so they are not fetched either.",
+  "vector_layer_1940s": {"url": "https://tiler.palopenmaps.org/maps/osm/{z}/{x}/{y}.pbf", "max_zoom": 14, "licence": "ODbL 1.0 (PalestineOpenMaps and contributors), per data.palopenmaps.org/copyright and /api/capabilities", "use": "optional QA cross-check of my readings only (C3 below); no ODbL row is copied into features.csv or names.csv"},
+  "terms": "Maps: public domain under the UK Copyright, Designs and Patents Act 1998, as stated on palopenmaps.org/en/about. Vector data: ODbL 1.0. Scans stay out of the repository; tile hashes are recorded instead."
+ },
+ "reference_imagery": {
+  "name": "Esri World Imagery (the 'Satellite imagery, 2025' basemap that Palestine Open Maps uses)",
+  "url": "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "zooms": [18, 19],
+  "use": "read modern coordinates of a few sharp features (controls and landscape state); no image is stored in the repository",
+  "assumed_absolute_error_m": 5,
+  "assumed_error_basis": "INFERENCE: not measured here; typical for commercial orthomosaics; stated so that it can be replaced by a field GNSS value"
+ },
+ "frames": {
+  "grid": "EPSG:28191 Palestine 1923 / Palestine Grid (= Old Israel Grid of WBADB with 1,000,000 m removed from the northing; = EPSG:28193 minus 1,000,000 m N)",
+  "conversion": "pyproj Transformer EPSG:4326 <-> EPSG:28191, always_xy, PROJ default operation; the operation name and pyproj/PROJ versions are written into every output",
+  "output": "WGS84 latitude and longitude (EPSG:4326), 6 decimals, plus EPSG:28191 metres"
+ },
+ "sheets": [
+  {"sheet": "17-13", "name": "Jerusalem", "files_on_pom": ["17-13-Jerusalem.jpg"], "places": ["jer_siloam", "jer_bir_ayyub", "jer_kidron_mon", "jer_kidron_east", "jer_gethsemane"]},
+  {"sheet": "17-17", "name": "Awarta", "files_on_pom": ["17-17-Awarta.jpg"], "places": ["gerizim"]},
+  {"sheet": "18-12", "name": "Deir Mar Saba", "files_on_pom": ["18-12-Deir Mar Saba.jpg"], "places": ["hyrcania", "buqeia", "mar_saba"]},
+  {"sheet": "18-13", "name": "Wadi El Qilt", "files_on_pom": ["18-13-Wadi El Qilt.jpg"], "places": ["choziba", "kuteif"]},
+  {"sheet": "18-14", "name": "Wadi El Makkuk", "files_on_pom": ["18-14-Wadi El Makkuk.jpg"], "places": ["ain_duk"]},
+  {"sheet": "18-15", "name": "El Mughaiyir", "files_on_pom": ["18-15-El Mughaiyir.jpg"], "places": ["ein_samiya"]},
+  {"sheet": "19-12", "name": "Ras Fashkha", "files_on_pom": ["19-12-Ras Fashkha.jpg"], "places": ["kh_qumran", "wadi_qumran", "ein_feshkha"]},
+  {"sheet": "19-13", "name": "Kallia", "files_on_pom": ["19-13-Kallia.jpg", "19-13.1942-Kallia.jpg"], "places": ["jericho_palaces", "asla"]},
+  {"sheet": "19-14", "name": "Jericho", "files_on_pom": ["19-14-Jericho.jpg", "19-14.1942-Jericho.jpg"], "places": ["tell_es_sultan", "jericho_area", "tell_el_qos", "doq", "nuweimeh", "iv17_abu_saraj"], "protected_zone": true}
+ ],
+ "edition_note": "The tile layer shows one edition per sheet. Where Palestine Open Maps lists two files (19-13, 19-14), the served edition is recorded as 'not determined' unless the tiles themselves show it.",
+ "windows": {
+  "rule": "One coding window per place: a circle around the places_v2 point. Radius 1.0 km if sigma_km <= 0.5; 1.5 km if sigma_km > 0.5. Jerusalem places use 0.6 km because the sheet is dense there. Overlapping windows on one sheet are coded once.",
+  "gazetteer": "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v2/places_v2.csv"
+ },
+ "legend": {
+  "note": "The marginal legend is not in the tile layer and no full sheet is fetched, so classes are coded from printed words and abbreviations and from unambiguous symbols only. A symbol I cannot name is coded 'symbol_unidentified'.",
+  "classes": {
+   "spring": "label Ain/ʿAin/Sp./Spring, or a spring symbol with such a label",
+   "cistern": "label Cis./Cistern/Bir where the map marks it as a cistern",
+   "well": "label W./Well/Bir where the map marks it as a well; 'Bir' with no distinguishing symbol is coded well_or_cistern",
+   "well_or_cistern": "Bir/B. without a symbol that separates the two",
+   "pool": "label Birket/Birkat/Pool/Res./Reservoir",
+   "aqueduct": "label Aqueduct/Aqd./Channel/Qanat, or a drawn channel so labelled",
+   "ruin": "label Kh./Khirbat/Khirbet/Ruins/Ru./Remains",
+   "tomb": "label Tomb/Tombs/Qabr/Qubur/Cemy./Cemetery",
+   "cave": "label Cave/Caves/Mgh./Mughara/ʿIraq",
+   "quarry": "label Qy./Quarry/Quarries",
+   "road": "a drawn road or track, coded once per named or classed segment near a place",
+   "built_up": "a built-up area, village, camp or building cluster drawn as such",
+   "mill": "label Mill/Tahuna/Tawahin",
+   "tell": "label Tell/Tel/Tl.",
+   "shrine": "label Nebi/Nabi/Sheikh/Sh./Weli/Maqam/Mosque",
+   "monastery_church": "label Deir/Monastery/Convent/Church/Chapel",
+   "wadi": "a valley name: Wadi/W.",
+   "landform": "a hill, ridge, cliff or plain name: Jebel/J./Ras/Qarn/Tal'at/Dhahr/Sahl/Buqeiʿa/Mintar",
+   "locality": "a land or locality name with no feature class (Ard, Hawd, Marah, Khallet, etc.)",
+   "other": "anything else printed (police post, pumping station, trig point, boundary stone)",
+   "symbol_unidentified": "a symbol whose meaning I cannot fix without the legend"
+  }
+ },
+ "coding_rules": [
+  "Code every printed label and every symbol of a legend class inside a window. Cadastral parcel and block numbers are not coded.",
+  "name_as_printed: the Latin-script text exactly as printed, abbreviations kept. name_translit: the same name in a normalised scholarly transliteration (my reading, INFERENCE). arabic_script: only where the name is common and the reading is unambiguous; labelled INFERENCE (the sheets print Latin script).",
+  "Position: the symbol if the label has one; otherwise the label's first letter or centre, recorded in anchor_kind. Pick error: 15 m for a point symbol, 40 m for an area feature's centre, 100 m for a label with no symbol.",
+  "Measured position error = sqrt(pick error^2 + sheet ground residual RMS^2), where the sheet ground residual RMS comes from check G2 after the correction chosen under 'placement'.",
+  "Silence is not absence: a feature not printed is not coded and not inferred absent.",
+  "A 1:20,000 symbol cannot date a feature. No period column is filled from the map; period_in_window is always 'unknown (map)'."
+ ],
+ "placement": {
+  "rule": "If check G1 is possible on a sheet, coordinates are computed from the map's own printed Palestine grid: the published tile position is corrected by a similarity fit of tile positions to nominal grid intersections in the window (or the sheet's G1 mean offset if fewer than 3 intersections are in the window). Otherwise the published georeferencing is used uncorrected, and its G2 residual RMS is the position error."
+ },
+ "georeferencing_checks": {
+  "G1_grid": "Where printed grid lines or grid crosses are visible, pick their intersections on the tiles (pixel picks, 1 to 3 m). Residual = tile position minus the correct WGS84 position of the nominal grid coordinate (pyproj EPSG:28191 to EPSG:4326), expressed in EPSG:28191 metres (dE, dN, |d|). Report per sheet: n, mean vector, median and max |d|, and the RMS about the mean. This tests the published georeferencing against the map's own frame.",
+  "G2_ground": "Independent controls: (a) the W2B grid_convert.py CONTROLS that fall on these sheets (NEAEHL grid references, about 100 m rounding); (b) places_v2 rows with sigma_km <= 0.1 whose feature the map shows; (c) up to 4 sharp features per sheet that exist on both the map and Esri imagery (building corners, spring houses, monasteries), chosen for identifiability before any residual is computed. Residual = map position (published, and after the G1 correction) minus the reference position, in metres. Each residual carries the reference's own sigma.",
+  "G3_reference_points": "kohlit_chain/reference_points.json candidates have no surveyed coordinates. They enter only through the Tell es-Sultan registration below, with Esri reference coordinates.",
+  "C3_vector_overlay_QA": "Optional: compare my name readings and positions with the 1940s vector overlay for windows outside the protected zone. Report agreement counts and position differences. Not used as data."
+ },
+ "toponym_flags": {
+  "label": "INFERENCE; no identification claim",
+  "rule": "Flag a name if its consonantal skeleton, after normalisation (k/q/kh and h/ḥ kept distinct where printed, vowels dropped), contains one of the roots below in order. Report every flag; a flag says only that the root is present.",
+  "roots": [
+   {"root": "k-ḥ-l", "scroll": "Koḥlit (entries 4, 11, 60 and others)", "patterns": ["kuhl", "kahl", "kohl", "kahil", "kuheil", "kuhla", "kuhle", "kahal", "kohel", "kuhayl"]},
+   {"root": "ʿ-k-r", "scroll": "Achor (entry 1)", "patterns": ["akr", "akar", "akkar", "ukr", "ikr", "achor", "akir", "ukeir"]},
+   {"root": "s-k-k", "scroll": "Sekakah (entries 17, 18, 24, 25, 32)", "patterns": ["sakak", "sikak", "sukak", "sekak", "sakka", "sikka", "sukka", "sakkak"]},
+   {"root": "d-w-k/q", "scroll": "Doq", "patterns": ["duk", "dok", "duq", "doq", "douk"]},
+   {"root": "k-z-b", "scroll": "Kozibah", "patterns": ["kaziba", "koziba", "khoziba", "choziba", "kuziba", "kazb", "kozib"]},
+   {"root": "m-l-ḥ", "scroll": "ha-Melaḥ", "patterns": ["milh", "malh", "mallah", "malih", "maleh", "mileh", "mlh"]},
+   {"root": "q-d-r-n", "scroll": "Kidron (Nahal Qidron)", "patterns": ["qidr", "kidr", "kedr", "qedr", "kidron"]},
+   {"root": "k-r-m", "scroll": "Beth ha-Kerem", "patterns": ["karm", "kerem", "kurum", "kurm"]},
+   {"root": "š-w-h", "scroll": "Shaveh", "patterns": ["shawe", "shaveh", "shawa"]},
+   {"root": "g-r-z-m", "scroll": "Gerizim", "patterns": ["gerizim", "jarizim", "garizim"]},
+   {"root": "y-n-ḥ", "scroll": "Janoaḥ (XII 10 reading)", "patterns": ["yanun", "yanuh", "janoah"]},
+   {"root": "ʿ-ṣ-l", "scroll": "places_v2 'asla' (project place for a scroll name)", "patterns": ["asla", "asleh", "usul", "aslah"]},
+   {"root": "n-ṭ-p", "scroll": "places_v2 'natuf'", "patterns": ["natuf", "netof", "nattuf"]}
+  ],
+  "context_flag": "Also flag, as 'context', names printed inside the Buqeiʿa and Qumran windows that earlier project records tie to Achor or Sekakah (Buqeiʿa, Sumra/Samra, Mird, Abu Tabaq, Qumran). Context flags are not root matches."
+ },
+ "landscape_change": {
+  "compare": ["SWP sheet XVIII (1880) positions already in places_v2 ('PEF XVIII, georeferenced')", "Esri World Imagery 2025 viewed at z17 to z19"],
+  "states": {
+   "built_over": "the position (with its error) lies inside continuous modern buildings or paving",
+   "destroyed_or_cut": "a modern quarry, road cut, earthwork or reservoir covers the position",
+   "visible_2025": "a matching feature is visible at the position within its error",
+   "open_not_visible": "open ground, no matching feature visible; unknown, not absent",
+   "not_checked": "not examined"
+  },
+  "landscape_items": "Also record, once per window, the presence in 1940s and 2025 of: refugee camps (ʿAin es-Sultan, ʿAqabat Jabr), settlements, main roads, quarries, reservoirs.",
+  "swp_rule": "For each places_v2 row georeferenced from SWP XVIII whose name the 1:20,000 also prints, report the distance between the two positions; both are label or symbol positions with their errors."
+ },
+ "tell_es_sultan_protocol": {
+  "applies_to": "Any view of sheet 19-14 tiles, the vector overlay, or Esri imagery that covers the protected zone.",
+  "order": [
+   "1. Register SULTAN-1-precamp-mouth from chain.json (copied verbatim) in a declaration file under research/assessments/kohlit_chain/registrations/, and record its SHA-256 and UTC time in README.md, before any 19-14 view.",
+   "2. Fill the capture form (research/shared_tools/cli.py capture) in scratch; keep a copy of the CSV row in my folder.",
+   "3. The declaration names: document, transform (similarity), target relations (mouth_10m, north_sector), control candidates, the check-point rule, the target frame and reference source, the mask, and a secondary exploratory grid fit.",
+   "4. Coarse preview: the 19-14 window at 8 m per pixel with the mask painted solid. Choose the check point on it: RP-SPRING if the map shows the spring outside the mask; otherwise the eligible candidate nearest to the zone that the map shows.",
+   "5. Pick controls at full resolution (2 m per pixel) on masked mosaics only. Pick reference coordinates on masked Esri mosaics.",
+   "6. Write the section-8 record, hash it, record the time, then run registration.py and save its output.",
+   "7. Only then view the zone at full resolution, and code what the map prints there with the measured error."
+  ],
+  "zone_nominal_grid": {"E": [191950, 192400], "N": [142120, 142550], "basis": "WBADB E334 192150/142050 (50 m) and the places_v2 Wikidata point 192181/142115; the strip runs from the tell's north foot to about 250 m north"},
+  "mask_grid": {"E": [191800, 192550], "N": [142120, 142700], "placement": "the mask is placed in the tile frame by adding the mean G1 tile offset measured on sheets 19-13 and 18-14 (or, if none, the union of zero offset and the index-box offset), plus a further 50 m on every side"},
+  "controls_declared": ["RP-TELL-FOOT-W", "RP-TELL-FOOT-S", "RP-TELL-FOOT-E", "RP-MEFJAR", "RP-SAMARAT", "RP-TAWAHIN (only if the map labels the mills, as the identity check)", "RP-ABU-HINDI (only if the map labels it)", "RP-ROADS (only a junction on an unchanged alignment)"],
+  "check_rule": "RP-SPRING by default (protocol section 2 step 4).",
+  "reference_error_m": 5,
+  "secondary_fit": "Exploratory: a similarity fit of printed grid intersections outside the mask (target = nominal grid coordinates, error 0 in the map frame) with the same withheld check point. registration.py would refuse grid points as unlisted, so this fit calls its fit_similarity function directly and is labelled exploratory. It proposes, but does not add, grid candidates for reference_points.json.",
+  "no_rescue": "Controls, transform and check point are not changed after the check error is seen. Any later change is a new exploratory registration."
+ },
+ "tests": ["plan hash matches README", "CSV schemas", "residual computation (known offsets recovered)", "registration record passes registration.py validation (status not 'invalid')"],
+ "limits": ["exploratory", "no identification claims", "a 1:20,000 symbol cannot date a feature", "silence is not absence"]
+}

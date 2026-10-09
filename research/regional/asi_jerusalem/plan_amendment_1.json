@@ -1,0 +1,13 @@
+{
+  "amends": "plan.json (SHA-256 19f91bc5f29aa58bbc954bb525ab72c26239ca222c170ed45043bab5a858f230)",
+  "amendment_id": "asi_jerusalem_plan_v1_amendment_1",
+  "reason": "Access, not results. The first run showed that GetSiteDesc2 takes 13 to 41 seconds per record. The selected maps hold more than 1,000 sites within 3.5 km of a place, which would take many hours. No site had been coded when this amendment was written. Four Map 22 (Haifa - west) records and one Map 102 record had been fetched; field names of two records were printed to check the parser. One GetSiteRemains call (Map 102 site 486) took 4 seconds and returned an empty list.",
+  "changes": {
+    "fetch_order": "Phase 1 fetches, for every selected map, the English and Hebrew GeoJSON and the English and Hebrew introductions. Phase 2 fetches GetSiteDesc2 records in tiers. Tier 1: sites whose GeoJSON point lies within 1.0 km of a placeable place in the regions JER, DESERT, SOUTH, QUMRAN or JERICHO. Tier 2: other sites within 1.0 km of any placeable place. Tier 3: sites within 3.5 km of a place in those five regions. Tier 4: all other sites within 3.5 km. Inside a tier, sites are ordered by distance to their nearest place, then by record id. The fetch stops when the session's time runs out; whatever is cached is used.",
+    "sites_without_record": "A site whose GetSiteDesc2 record is not cached keeps its GeoJSON point (plan fallback_2, coord_method = geojson_point) and its GeoJSON English text (name, description, finding). Its Additional Names, Finds and Period fields are empty. sites.csv column record_fetched says yes or no. These sites are coded with the same class and period rules.",
+    "record_period_field": "GetSiteDesc2 records carry a 'Period' field (a list of period names). It is part of the site's English text for site_finds_in_window, and it never dates a feature.",
+    "remains_probe": "GetSiteRemains returns the string '[]' when empty. A response counts as non-empty only if the parsed list has at least one item. The probe runs on the first 10 tier-1 sites of each map by site number, after phase 2.",
+    "looks_records": "One looks_asi.csv row per (candidate pair, lookable landmark, map whose sheet lies within 1.0 km of the place). Each map is its own record and lineage. A row whose 1 km circle holds any site without a fetched record is still coded from the GeoJSON text, and the notes say how many such sites there are."
+  },
+  "unchanged": "Everything else in plan.json: places, radii, classes, period lists, quote rule, citation, protected zone, coverage rule."
+}

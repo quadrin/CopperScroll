@@ -1,0 +1,440 @@
+{
+ "operation": [
+  "Inverse of Palestine 1923 to WGS 84 (1) + Palestine Grid (with axis order normalized for visualization)",
+  "Inverse of Palestine Grid + Palestine 1923 to WGS 84 (1) (with axis order normalized for visualization)"
+ ],
+ "accepted_g1_status": [
+  "manual",
+  "ok"
+ ],
+ "note": "dE, dN = position on the published tiles (or after correction) minus the reference, in EPSG:28191 metres. Sheet-edge grid lines are excluded from G1 summaries.",
+ "g1_by_sheet": {
+  "17-13": {
+   "pick_counts": {
+    "ambiguous": 2,
+    "manual": 5
+   },
+   "n": 3,
+   "mean_dE_m": -1.6805900108010974,
+   "mean_dN_m": -3.2943896053814874,
+   "mean_length_m": 3.698294966122906,
+   "median_m": 3.4634839119068186,
+   "max_m": 4.618222112580922,
+   "rms_m": 3.851486604029356,
+   "rms_about_mean_m": 1.0754363786703307
+  },
+  "17-17": {
+   "pick_counts": {
+    "ambiguous": 2,
+    "manual": 2
+   },
+   "n": 2,
+   "mean_dE_m": -0.2901957572903484,
+   "mean_dN_m": 11.648507760328357,
+   "mean_length_m": 11.652121979278249,
+   "median_m": 11.739268292309042,
+   "max_m": 13.170000935917935,
+   "rms_m": 11.826132754890777,
+   "rms_about_mean_m": 2.0212543917877475
+  },
+  "18-12": {
+   "pick_counts": {
+    "ambiguous": 2,
+    "ok": 9
+   },
+   "n": 9,
+   "mean_dE_m": -2.916232612808623,
+   "mean_dN_m": 12.616491121092825,
+   "mean_length_m": 12.94914131750143,
+   "median_m": 13.746831075652825,
+   "max_m": 18.649856839533157,
+   "rms_m": 13.453359496694885,
+   "rms_about_mean_m": 3.6486464458327212
+  },
+  "18-13": {
+   "pick_counts": {
+    "ok": 3,
+    "ambiguous": 4
+   },
+   "n": 3,
+   "mean_dE_m": -1.2572984145372175,
+   "mean_dN_m": 7.769654000682446,
+   "mean_length_m": 7.8707256713417815,
+   "median_m": 7.878025424855961,
+   "max_m": 8.559976295901777,
+   "rms_m": 7.900438105089535,
+   "rms_about_mean_m": 0.6845433944113287
+  },
+  "18-14": {
+   "pick_counts": {
+    "ok": 1,
+    "ambiguous": 1
+   },
+   "n": 1,
+   "mean_dE_m": 2.931812284863554,
+   "mean_dN_m": 4.65245446114568,
+   "mean_length_m": 5.499168645050922,
+   "median_m": 5.499168645050922,
+   "max_m": 5.499168645050922,
+   "rms_m": 5.499168645050922,
+   "rms_about_mean_m": 0.0
+  },
+  "18-15": {
+   "pick_counts": {
+    "ok": 3,
+    "ambiguous": 3
+   },
+   "n": 2,
+   "mean_dE_m": 2.272206708425074,
+   "mean_dN_m": 6.68641887139529,
+   "mean_length_m": 7.061948785538095,
+   "median_m": 7.1133156640458175,
+   "max_m": 7.548997623142081,
+   "rms_m": 7.126645670007844,
+   "rms_about_mean_m": 0.9581011722561301
+  },
+  "19-12": {
+   "pick_counts": {
+    "ok": 6
+   },
+   "n": 6,
+   "mean_dE_m": 2.447485328753828,
+   "mean_dN_m": 3.391801794333636,
+   "mean_length_m": 4.182643165094305,
+   "median_m": 4.733489602987673,
+   "max_m": 5.279192726123594,
+   "rms_m": 4.525862428048742,
+   "rms_about_mean_m": 1.7288513155020435
+  },
+  "19-13": {
+   "pick_counts": {
+    "ambiguous": 6,
+    "ok": 5
+   },
+   "n": 4,
+   "mean_dE_m": -6.104680005941191,
+   "mean_dN_m": -5.042704475392384,
+   "mean_length_m": 7.918079716767223,
+   "median_m": 7.848483309072564,
+   "max_m": 9.639495457700393,
+   "rms_m": 8.061685444284619,
+   "rms_about_mean_m": 1.5148550430684695
+  },
+  "19-14": {
+   "pick_counts": {
+    "ok": 16
+   },
+   "n": 16,
+   "mean_dE_m": -12.79179291345099,
+   "mean_dN_m": 0.5930705608170683,
+   "mean_length_m": 12.805533906507875,
+   "median_m": 13.91803251798407,
+   "max_m": 17.221731674011554,
+   "rms_m": 13.369006270035934,
+   "rms_about_mean_m": 3.840394513267777
+  }
+ },
+ "g2_rows": [
+  {
+   "control_id": "ESRI-C01",
+   "kind": "esri_imagery",
+   "item_id": "C01",
+   "sheet": "18-13",
+   "ref_sigma_m": "9.0",
+   "published_dE": 7.5,
+   "published_dN": 6.8,
+   "published_d": 10.1,
+   "corrected_dE": 8.7,
+   "corrected_dN": -0.9,
+   "corrected_d": 8.8,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "ESRI-E14",
+   "kind": "esri_imagery",
+   "item_id": "E14",
+   "sheet": "17-13",
+   "ref_sigma_m": "7.1",
+   "published_dE": 1.0,
+   "published_dN": 18.5,
+   "published_d": 18.5,
+   "corrected_dE": 2.9,
+   "corrected_dN": 21.8,
+   "corrected_d": 22.0,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "ESRI-S01",
+   "kind": "esri_imagery",
+   "item_id": "S01",
+   "sheet": "18-12",
+   "ref_sigma_m": "11.2",
+   "published_dE": 5.0,
+   "published_dN": -3.0,
+   "published_d": 5.8,
+   "corrected_dE": 4.7,
+   "corrected_dN": -14.4,
+   "corrected_d": 15.1,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "ESRI-H02",
+   "kind": "esri_imagery",
+   "item_id": "H02",
+   "sheet": "18-12",
+   "ref_sigma_m": "9.0",
+   "published_dE": -1.0,
+   "published_dN": -2.1,
+   "published_d": 2.3,
+   "corrected_dE": 1.9,
+   "corrected_dN": -14.7,
+   "corrected_d": 14.8,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "ESRI-Q04",
+   "kind": "esri_imagery",
+   "item_id": "Q04",
+   "sheet": "19-12",
+   "ref_sigma_m": "11.2",
+   "published_dE": 15.0,
+   "published_dN": -5.6,
+   "published_d": 16.0,
+   "corrected_dE": 12.7,
+   "corrected_dN": -10.0,
+   "corrected_d": 16.2,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "ESRI-P03",
+   "kind": "esri_imagery",
+   "item_id": "P03",
+   "sheet": "19-13",
+   "ref_sigma_m": "11.2",
+   "published_dE": 8.0,
+   "published_dN": 3.6,
+   "published_d": 8.8,
+   "corrected_dE": 14.1,
+   "corrected_dN": 8.7,
+   "corrected_d": 16.5,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "ESRI-E31",
+   "kind": "esri_imagery",
+   "item_id": "E31",
+   "sheet": "17-13",
+   "ref_sigma_m": "5.2",
+   "published_dE": 12.0,
+   "published_dN": 6.2,
+   "published_d": 13.5,
+   "corrected_dE": 13.8,
+   "corrected_dN": 9.6,
+   "corrected_d": 16.8,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "REG-RP-MEFJAR",
+   "kind": "esri_imagery",
+   "item_id": "U15",
+   "sheet": "19-14",
+   "ref_sigma_m": "11.2",
+   "published_dE": -33.1,
+   "published_dN": -20.4,
+   "published_d": 38.9,
+   "corrected_dE": -20.0,
+   "corrected_dN": -21.4,
+   "corrected_d": 29.3,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "REG-RP-SPRING",
+   "kind": "esri_imagery",
+   "item_id": "T30",
+   "sheet": "19-14",
+   "ref_sigma_m": "7.1",
+   "published_dE": -15.0,
+   "published_dN": -33.1,
+   "published_d": 36.4,
+   "corrected_dE": -2.4,
+   "corrected_dN": -33.6,
+   "corrected_d": 33.7,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "REG-RP-TAWAHIN",
+   "kind": "esri_imagery",
+   "item_id": "J19",
+   "sheet": "19-14",
+   "ref_sigma_m": "15.8",
+   "published_dE": -41.7,
+   "published_dN": 71.1,
+   "published_d": 82.4,
+   "corrected_dE": -29.0,
+   "corrected_dN": 70.8,
+   "corrected_d": 76.5,
+   "used_for_error_model": "yes"
+  },
+  {
+   "control_id": "NEAEHL-Qumran",
+   "kind": "neaehl_grid_ref",
+   "item_id": "Q04",
+   "sheet": "19-12",
+   "ref_sigma_m": "50",
+   "published_dE": -26.9,
+   "published_dN": -81.0,
+   "published_d": 85.4,
+   "corrected_dE": -29.1,
+   "corrected_dN": -85.4,
+   "corrected_d": 90.3,
+   "used_for_error_model": "no"
+  },
+  {
+   "control_id": "NEAEHL-Hyrcania",
+   "kind": "neaehl_grid_ref",
+   "item_id": "H02",
+   "sheet": "18-12",
+   "ref_sigma_m": "50",
+   "published_dE": 39.6,
+   "published_dN": -16.5,
+   "published_d": 42.9,
+   "corrected_dE": 42.6,
+   "corrected_dN": -29.1,
+   "corrected_d": 51.6,
+   "used_for_error_model": "no"
+  },
+  {
+   "control_id": "NEAEHL-Mar_Saba",
+   "kind": "neaehl_grid_ref",
+   "item_id": "S01",
+   "sheet": "18-12",
+   "ref_sigma_m": "50",
+   "published_dE": -14.6,
+   "published_dN": 0.4,
+   "published_d": 14.6,
+   "corrected_dE": -14.9,
+   "corrected_dN": -10.9,
+   "corrected_d": 18.5,
+   "used_for_error_model": "no"
+  },
+  {
+   "control_id": "PLACES-kh_qumran",
+   "kind": "places_v2",
+   "item_id": "Q04",
+   "sheet": "19-12",
+   "ref_sigma_m": "100",
+   "published_dE": -22.7,
+   "published_dN": -78.3,
+   "published_d": 81.5,
+   "corrected_dE": -25.0,
+   "corrected_dN": -82.7,
+   "corrected_d": 86.4,
+   "used_for_error_model": "no"
+  },
+  {
+   "control_id": "PLACES-jer_gethsemane",
+   "kind": "places_v2",
+   "item_id": "E14",
+   "sheet": "17-13",
+   "ref_sigma_m": "100",
+   "published_dE": 25.3,
+   "published_dN": 1.6,
+   "published_d": 25.3,
+   "corrected_dE": 27.2,
+   "corrected_dN": 4.9,
+   "corrected_d": 27.6,
+   "used_for_error_model": "no"
+  },
+  {
+   "control_id": "PLACES-jer_kidron_mon",
+   "kind": "places_v2",
+   "item_id": "E07",
+   "sheet": "17-13",
+   "ref_sigma_m": "100",
+   "published_dE": -25.2,
+   "published_dN": -16.2,
+   "published_d": 29.9,
+   "corrected_dE": -23.4,
+   "corrected_dN": -12.9,
+   "corrected_d": 26.7,
+   "used_for_error_model": "no"
+  },
+  {
+   "control_id": "PLACES-jer_east_gate",
+   "kind": "places_v2",
+   "item_id": "E11",
+   "sheet": "17-13",
+   "ref_sigma_m": "50",
+   "published_dE": 141.0,
+   "published_dN": 51.2,
+   "published_d": 150.0,
+   "corrected_dE": 142.9,
+   "corrected_dN": 54.6,
+   "corrected_d": 153.0,
+   "used_for_error_model": "no"
+  },
+  {
+   "control_id": "PLACES-jer_bir_ayyub",
+   "kind": "places_v2",
+   "item_id": "E04",
+   "sheet": "17-13",
+   "ref_sigma_m": "100",
+   "published_dE": -55.4,
+   "published_dN": -13.3,
+   "published_d": 57.0,
+   "corrected_dE": -54.0,
+   "corrected_dN": -10.0,
+   "corrected_d": 55.0,
+   "used_for_error_model": "no"
+  }
+ ],
+ "g2_error_model": {
+  "pooled": {
+   "n": 10,
+   "mean_dE_m": 0.7423986651294399,
+   "mean_dN_m": 1.5866113516443874,
+   "mean_length_m": 1.7517109804853095,
+   "median_m": 16.668811768585797,
+   "max_m": 76.52617815499389,
+   "rms_m": 31.111467829967445,
+   "rms_about_mean_m": 31.06211420969195
+  },
+  "rms_by_sheet_m": {
+   "17-13": 19.576820396153177,
+   "18-12": 14.970239587549196,
+   "19-14": 51.155328212095334
+  }
+ },
+ "g2_published_by_kind": {
+  "esri_imagery": {
+   "n": 10,
+   "mean_dE_m": -4.235583231050986,
+   "mean_dN_m": 4.20102581877145,
+   "mean_length_m": 5.965633515155339,
+   "median_m": 14.750233415722885,
+   "max_m": 82.42775859611905,
+   "rms_m": 32.60236523492537,
+   "rms_about_mean_m": 32.05191781585504
+  },
+  "neaehl_grid_ref": {
+   "n": 3,
+   "mean_dE_m": -0.6067898746017212,
+   "mean_dN_m": -32.35962546226316,
+   "mean_length_m": 32.365314057025145,
+   "median_m": 42.93412100187367,
+   "max_m": 85.37573492468495,
+   "rms_m": 55.81507413709775,
+   "rms_about_mean_m": 45.47316732887483
+  },
+  "places_v2": {
+   "n": 5,
+   "mean_dE_m": 12.601150834088912,
+   "mean_dN_m": -10.987289374857209,
+   "mean_length_m": 16.71853851717637,
+   "median_m": 56.96199494896399,
+   "max_m": 150.0430463776553,
+   "rms_m": 82.39131504984603,
+   "rms_about_mean_m": 80.6772537056925
+  }
+ }
+}

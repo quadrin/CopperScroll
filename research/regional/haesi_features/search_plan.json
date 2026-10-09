@@ -1,0 +1,145 @@
+{
+  "plan_id": "haesi_features_search_plan_v1",
+  "worker": "haesi-features",
+  "written_utc": "2026-10-09",
+  "status": "frozen before any table-of-contents screen or report reading; SHA-256 and UTC time are recorded in README.md",
+  "purpose": "Systematic list of recorded features near the project's places from Hadashot Arkheologiyot - Excavations and Surveys in Israel (HA, ESI, HA-ESI). Exploratory. No identification claim.",
+
+  "access": {
+    "robots_txt": {
+      "hadashot.iaa.org.il": "User-agent: * Disallow: / (only named search-engine crawlers allowed). www.hadashot-esi.org.il and hadashot-esi.org.il redirect (301) to this host. Rule: no automated request to this host (no curl, no WebFetch). Reports that live only there are listed as 'unread, needs a person with a browser'.",
+      "publications.iaa.org.il": "Disallows /do/, /fe-journals/ and named /cgi/*.cgi scripts (search, login, submit). Item pages, sitemaps and /cgi/viewcontent.cgi PDF downloads are allowed. Rule: at most one request per second; every file cached once in the scratch folder.",
+      "robots_sha256": {
+        "hadashot.iaa.org.il/robots.txt": "15352e55d906d00af5a7d184ecfb5daeb65d87b4177236ed604fb3fccb6c7178",
+        "publications.iaa.org.il/robots.txt": "886cdc4e01109d61b24cf9ec69e20c0869099d6f9f4f6b004ca96f22c51f8b2a"
+      }
+    },
+    "readable_corpus": [
+      {"id": "C1", "series": "Hadashot Arkheologiyot (Hebrew) 1-108, 1961-1998", "where": "https://publications.iaa.org.il/ha_hebrew_series/<n>/ (86 items; issue 44 absent; item 3 'HA 4-6' has no PDF but HA 4, 5, 6 exist as items 51-53)", "screen": "Hebrew table of contents in the item description"},
+      {"id": "C2", "series": "Excavations and Surveys in Israel (English) 1-20, 1982-2000", "where": "https://publications.iaa.org.il/esi_english_series/<n>/ (items 2-21; item 1 is an empty placeholder, item 13 a duplicate of HA 110 without PDF)", "screen": "English table of contents in the item description; ESI 20 has no description, so its printed contents pages are screened from the PDF"},
+      {"id": "C3", "series": "Hadashot Arkheologiyot - Excavations and Surveys in Israel 109-115 (bilingual print), 1999-2003", "where": "https://publications.iaa.org.il/ha_esi_bilingual_series/<n>/ (items 1, 3-8; item 2 duplicate of 109 without PDF; item 9 = HA-ESI 116 has no PDF; item 10 duplicate of ESI 18 without PDF)", "screen": "English table of contents in the item description"},
+      {"id": "C4", "series": "HA-ESI 138 (2026), online articles", "where": "https://publications.iaa.org.il/ha-esi/vol138/iss1/<n>/ (172 articles in the sitemap of 2026-10-07)", "screen": "article titles from the issue listing page"}
+    ],
+    "unreadable_corpus": [
+      {"id": "C5", "series": "HA-ESI online reports, vols 116-137 (2004-2025), and any online-only report of earlier volumes", "where": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=<id>", "rule": "robots.txt disallows automated access. Candidate reports are enumerated only through a web search engine (WebSearch tool, allowed_domains hadashot.iaa.org.il and hadashot-esi.org.il), one query per query group below. Results (title, URL) go to candidates_unread.csv. They are not read, not coded, and not used as looks."}
+    ],
+    "not_used": "hadashot_gallery and ha-esi_slideshow (figure images); web.archive.org or any other copy of hadashot.iaa.org.il pages (would bypass the publisher's robots.txt); the owner's Drive copies (ESI 02-15 duplicate C2)."
+  },
+
+  "places": {
+    "source": "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v2/places_v2.csv (50 rows: 49 places plus iv17_abu_saraj)",
+    "point_rule": "distance is measured from the place's lat/lon in places_v2.csv",
+    "mixtures": "jer_shaveh has no point; it is covered through its components jer_kidron_mon and jer_baqa. transjordan lies outside HA-ESI coverage (Jordan); it gets no screen and is reported as 'outside the source area', not as silence.",
+    "names": {
+      "JER_ALL": {"places": ["jer_temple","jer_east_gate","jer_se_corner","jer_south_wall","jer_kidron_mon","jer_kidron_east","jer_gethsemane","jer_siloam","jer_bir_ayyub","jer_bethesda","jer_tyropoeon","jer_tombs_kings","jer_baqa","ramat_rahel","tell_el_ful","mount_zion"],
+        "en": ["jerusalem","silwan","siloam","city of david","ir david","gihon","ophel","kidron","qidron","mount of olives","ras el amud","et tur","a tur","abu tor","mount zion","temple mount","haram","bethesda","st anne","tombs of the kings","sheikh jarrah","baqa","german colony","ramat rahel","talpiyyot","talpiot","armon ha naziv","arnona","sur bahir","tell el ful","tel el ful","pisgat zeev","shufat","shuafat","beit hanina","french hill","givat ha mivtar","jabal mukabbir","jebel mukabbir","abu dis","el azariya","al eizariya","bethany","gethsemane","en rogel","bir ayyub","tyropoeon","mamilla","musrara","shiloah"],
+        "he": ["ירושלים","סילואן","השילוח","שילוח","עיר דוד","גיחון","עופל","קדרון","הר הזיתים","ראס אל-עמוד","א-טור","אבו טור","הר ציון","הר הבית","בית חסדא","קברי המלכים","שייח' ג'ראח","שיח' ג'ראח","הבקעה","המושבה הגרמנית","רמת רחל","תלפיות","ארמון הנציב","ארנונה","צור באהר","תל אל-פול","גבעת שאול","פסגת זאב","שועפט","בית חנינא","הגבעה הצרפתית","גבעת המבתר","ג'בל מוכבר","אבו דיס","אל-עיזריה","בית עניא","גת שמנים","עין רוגל","ממילא","מוסררה"]},
+      "mar_saba": {"en": ["mar saba","deir mar saba","wadi en nar","nahal qidron","nahal kidron"], "he": ["מר סבא","נחל קדרון","ואדי א-נאר"]},
+      "hyrcania": {"en": ["hyrcania","hyrkania","horqania","horkania","horqanya","el mird","kh mird","khirbet el mird"], "he": ["הורקניה","הורקניא","אל-מירד","מירד"]},
+      "buqeia": {"en": ["buqeia","buqeiah","buqei","buqeiah","biqat horqanya","achor","sekakah","sekhakha","secacah","kh es samra","khirbet es samra","abu tabaq","el maqari"], "he": ["בוקיעה","בקיעה","בקעת הורקניה","עכור","סככה","א-סמרה","אבו טבק","אל-מקארי"]},
+      "natuf": {"en": ["natuf","khareitun","khureitun","chariton","nahal teqoa","umm qatafa"], "he": ["נטוף","חריטון","נחל תקוע","אום קטפה"]},
+      "tekoa_herodium": {"en": ["herodium","herodion","tekoa","teqoa","tuqu"], "he": ["הרודיון","הרודיום","תקוע"]},
+      "JERICHO_ALL": {"places": ["nuweimeh","ain_duk","doq","tell_es_sultan","jericho_palaces","jericho_area","tell_el_qos","choziba","kuteif","iv17_abu_saraj","muhalhil","jordan_ford"],
+        "en": ["jericho","yeriho","tell es sultan","ein es sultan","elisha","tulul abu el alayiq","abu el alayiq","naaran","nueima","nuweimeh","nuweima","nueimah","ein duk","ain duk","duyuk","doq","dok","quruntul","qarantal","mount of temptation","tell el qos","choziba","st george","deir el qelt","wadi qelt","wadi el qelt","nahal perat","ein prat","ein fara","ein qelt","ein fawwar","kuteif","ekteif","abu saraj","cypros","kypros","tell el aqaba","mafjar","hisham","vered yeriho","mevoot yeriho","mizpe yeriho","naama","yitav","nabi musa","nebi musa","muhalhil","qasr el yahud","beit haarava","bet ha arava","hajla","gilgal","nahal og","mukallik"],
+        "he": ["יריחו","תל א-סולטאן","עין א-סולטאן","מעיין אלישע","תולול אבו אל-עלאיק","נערן","נועימה","עין דוק","דוק","קרנטל","הר הפיתוי","תל אל-קוס","קוזיבה","ואדי קלט","נחל פרת","עין פרת","עין קלט","עין פוואר","קוטייף","אבו סראג'","קיפרוס","מפג'ר","ורד יריחו","מבואות יריחו","מצפה יריחו","נעמה","ייטב","נבי מוסא","מוחלחל","קאסר אל-יהוד","בית הערבה","חגלה","גלגל","נחל אוג"]},
+      "QUMRAN_ALL": {"places": ["asla","kh_qumran","wadi_qumran","ein_feshkha","ein_ghuweir"],
+        "en": ["qumran","asla","feshkha","fashkha","enot zuqim","einot zukim","ghuweir","turabeh","turaba","mizpe shalem","qalya","kalya","almog"],
+        "he": ["קומראן","קמראן","עסלה","פשחה","עינות צוקים","ע'ויר","גוויר","טורבה","מצפה שלם","קליה","אלמוג"]},
+      "gerizim": {"en": ["gerizim","jebel et tur","nablus","shechem","neapolis","balata","luza","har berakha","askar","josephs tomb"], "he": ["גריזים","שכם","נאפוליס","בלאטה","לוזה","הר ברכה","עסכר","קבר יוסף"]},
+      "beth_shean": {"en": ["bet shean","beth shean","beit shean","scythopolis","iztabba","istaba","nysa"], "he": ["בית שאן","בית-שאן","איצטבה","סקיתופוליס"]},
+      "ibziq": {"en": ["ibziq","bezeq","bezek"], "he": ["אבזיק","בזק"]},
+      "beth_horon": {"en": ["beth horon","bet horon","beit ur","beth-horon"], "he": ["בית חורון","בית-חורון","בית עור"]},
+      "kh_salhab": {"en": ["salhab","selhab"], "he": ["סלחב"]},
+      "ein_samiya": {"en": ["samiya","samieh","marjama","marjameh","kafr malik","mirzbaneh","kokhav ha shahar","kokhav hashahar","mughayyir"], "he": ["סמיה","מרג'מה","כפר מאלכ","כפר מאלך","מירזבנה","כוכב השחר","מע'ייר"]},
+      "kh_yanun": {"en": ["yanun","janoah","itamar","aqraba","gidonim"], "he": ["ינון","ינוח","איתמר","עקרבה","גדעונים"]},
+      "beit_kahil": {"en": ["beit kahil","bet kahil","tarqumiya","tarqumya"], "he": ["בית כאחל","בית כאהל","תרקומיא"]},
+      "kuhlah": {"en": ["kuhla","kuhleh","kukhleh","kuhlah"], "he": ["כוחלה","כחלה"]},
+      "carmel_siah": {"en": ["nahal siah","ein es siah","en siah","fons eliae","kababir","haifa"], "he": ["נחל שיח","עין שיח","כבביר","חיפה"]},
+      "R_JD_CLIFFS": {"en_any": ["judean desert","dead sea"], "en_with_cave_or_survey": ["murabbaat","darga","ketef jericho","ketef yeriho","nahal mishmar","nahal hever","zeelim","nahal arugot","nahal david","en gedi","ein gedi","nahal dragot"], "he_any": ["מדבר יהודה","ים המלח"], "he_with_cave_or_survey": ["מורבעאת","דרגה","כתף יריחו","נחל משמר","נחל חבר","צאלים","ערוגות","נחל דוד","עין גדי"], "cave_or_survey_terms": {"en": ["cave","caves","survey","refuge"], "he": ["מערה","מערת","מערות","סקר","מסתור"]}}
+    }
+  },
+
+  "regions": {
+    "rule": "A report belongs to a region if its converted map reference falls inside the box, or, with no map reference, if its title names the region. Boxes are WGS84 and approximate (INFERENCE).",
+    "R_JERICHO_OASIS": {"lat": [31.82, 31.92], "lon": [35.40, 35.50]},
+    "R_WADI_QELT": {"lat": [31.82, 31.87], "lon": [35.29, 35.46], "names": ["wadi qelt","nahal perat","ein prat","ein fara","ein qelt","ein fawwar","choziba","ואדי קלט","נחל פרת","עין פרת","עין קלט"]},
+    "R_QUMRAN_FESHKHA": {"lat": [31.70, 31.78], "lon": [35.43, 35.48]},
+    "R_BUQEIA": {"lat": [31.68, 31.76], "lon": [35.36, 35.43]},
+    "R_KIDRON": {"rule": "title names the Kidron (kidron, qidron, wadi en-nar, nahal qidron, קדרון, ואדי א-נאר) or map ref within 2 km of jer_kidron_mon, jer_kidron_east, jer_gethsemane, jer_bir_ayyub or mar_saba"},
+    "R_SILOAM_COD": {"rule": "title names Siloam, Silwan, City of David, Ir David, Gihon or Ophel (or Hebrew equivalents), or map ref within 1 km of jer_siloam"},
+    "R_GERIZIM_NABLUS": {"lat": [32.18, 32.24], "lon": [35.23, 35.30]},
+    "R_JD_CLIFFS": {"lat": [31.30, 31.95], "lon": [35.36, 35.48], "rule": "cliff and cave reports only: title matches R_JD_CLIFFS names above, and the report concerns caves, cliffs or a cave or desert survey"}
+  },
+
+  "screen": {
+    "unit": "one table-of-contents item = one candidate report",
+    "normalisation": "Unicode NFKD, combining marks removed, lower case; the characters ʿ ʾ ‘ ’ ' ` ´ ׳ removed; hyphens, en dashes, commas, full stops and parentheses become spaces; spaces collapsed. Hebrew: niqqud removed, geresh and apostrophe kept as written in the pattern list after the same removal (patterns are normalised the same way).",
+    "match": "a pattern matches when it occurs in the normalised title with a word boundary (start, space) on its left and right. A title matching any place group or region is a candidate.",
+    "duplicates": "HA (Hebrew) and ESI (English) often print the same report. When both are candidates for the same site and season, the ESI or bilingual English text is read and the Hebrew item is listed in dropped.csv as a duplicate.",
+    "known_limit": "Reports whose titles name no listed place (for example a road survey named after a route number) are missed. This is recorded, not corrected after the fact."
+  },
+
+  "location": {
+    "map_ref": "Take the report's own map reference. Old Israel Grid (OIG) values are converted with EPSG:28191 (Palestine 1923 / Palestine Grid, no 1000-km northing offset), exactly as W2B scripts/grid_convert.py oig(). New Israel Grid (NIG) values are converted with EPSG:2039 (Israel 1993 / Israeli TM Grid). Which grid: if the report labels it, use the label; otherwise northing in metres above 400000 = NIG, below 300000 = OIG. Digits: a 3-digit coordinate is in km, 4 digits in units of 100 m, 5 digits in units of 10 m, 6 digits in metres. Precision = that unit.",
+    "no_map_ref": "If the report gives no map reference, the location is the place its title names; coordinate_source = 'name only'; distance stays null and the report counts at that place only.",
+    "distance": "great-circle distance (R = 6371.0088 km) from the converted point to each place point in places_v2.csv",
+    "primary_radius_km": 2.0,
+    "sensitivity_radius_km": 5.0,
+    "nearest_place": "the place with the smallest distance (mixtures and transjordan excluded)",
+    "coverage_radius_for_looks": "a report covers a place for looks_haesi.csv if distance <= max(sigma_km, 0.3) + map-ref precision in km"
+  },
+
+  "inclusion": {
+    "reports_csv": "every candidate report that was read (its text extracted and read)",
+    "features_csv": "only reports within 5 km of a place or inside a region box or rule; one row per (report, feature type); the row also notes how many such features the report states and which periods",
+    "dropped_csv": "every candidate not coded, with one reason: beyond 5 km and outside regions; duplicate; no PDF; not a field report (book notice, editorial); outside the source area; not read (time limit)"
+  },
+
+  "feature_types": {
+    "cistern": {"en": ["cistern","bell-shaped pit","water pit"], "he": ["בור","בורות","בור מים"]},
+    "pool_reservoir": {"en": ["pool","reservoir","basin (water)","dam"], "he": ["ברכה","ברכת","מאגר","סכר"]},
+    "channel_aqueduct": {"en": ["channel","conduit","aqueduct","pipe","water tunnel","drain"], "he": ["תעלה","תעלת","אמת מים","אמה","צינור","ניקבה"]},
+    "ritual_bath": {"en": ["ritual bath","miqveh","mikveh","miqwe"], "he": ["מקווה","מקוואות"]},
+    "rockcut_installation": {"en": ["rock-cut installation","winepress","oil press","press","quarry","cupmark","columbarium","rock-cut basin","rock-cut pit"], "he": ["מתקן חצוב","גת","בית בד","מחצבה","גומה","קולומבריום"]},
+    "tomb_burial_cave": {"en": ["tomb","burial cave","grave","kokhim","loculi","ossuary","cemetery","sarcophagus","cist grave"], "he": ["קבר","קברים","מערת קבורה","כוכים","גלוסקמה","בית קברות","ארון קבורה"]},
+    "cave_with_finds": {"en": ["cave (not a tomb) with finds"], "he": ["מערה"]},
+    "wall_tower": {"en": ["city or fortification wall","enclosure wall","terrace or field wall","tower","fortress","fort"], "he": ["חומה","מגדל","מצודה","מצד","טרסה","גדר"], "rule": "walls inside an excavated building are not coded unless the report names a wall or tower as a feature in its own right (fortification, enclosure, terrace, field, dam or boundary wall)"},
+    "hoard_cache": {"en": ["hoard","cache","hidden vessels","hidden deposit"], "he": ["מטמון","מטמונים"]}
+  },
+
+  "coding": {
+    "period_as_given": "the report's own words for the feature's date",
+    "dated_in_window": {
+      "yes": "the report dates the feature itself to the Hasmonean, Herodian, Early Roman, Late Hellenistic (= Hasmonean), Second Temple or Bar Kokhba period, the 1st c. BCE, the 1st c. CE, or up to 135 CE; or says the feature was in use in that time",
+      "no": "the report dates the feature only outside the window (for example Iron Age, Byzantine, Early Islamic, Ottoman, Late Roman)",
+      "unknown": "undated, dated only by the site's general periods, or dated by a range that only partly overlaps the window (for example 'Hellenistic', 'Roman', 'Middle Roman', 'Hellenistic-Roman')"
+    },
+    "excavated_or_surveyed": "excavated / surveyed / inspected, from the report",
+    "quote": "verbatim, 12 words or fewer, from the report text (Hebrew stays Hebrew)",
+    "relevance": "which project entries (candidates_v2.csv) or open questions the row bears on; labelled EVIDENCE (what the report says) or INFERENCE (our link)",
+    "protected_strip": "a report that describes the strip from the north foot of Tell es-Sultan to about 250 m north is recorded with protected_strip = yes and a note that it is exposed text and not unseen evidence. No image of any kind is opened."
+  },
+
+  "reading_order_and_stop_rule": {
+    "tiers": {
+      "P1": "Koḥlit proposals (tell_es_sultan, ein_samiya, kh_yanun, muhalhil, beit_kahil, kuhlah, carmel_siah, mount_zion, ein_ghuweir, ein_feshkha), iv17_abu_saraj, the Jericho group, the Qumran group, buqeia (Achor, Sekakah), gerizim, jer_siloam and the R_SILOAM_COD, R_WADI_QELT, R_JD_CLIFFS regions",
+      "P2": "other places outside Jerusalem (mar_saba, hyrcania, natuf, tekoa_herodium, jordan_ford, beth_shean, ibziq, beth_horon, kh_salhab) and the R_KIDRON region",
+      "P3": "other Jerusalem places within 2 km",
+      "P4": "Jerusalem reports between 2 and 5 km"
+    },
+    "rule": "All candidates are located first (map reference extracted). Reading follows P1 to P4, oldest volume first within a tier. Whatever is not read when the session must end goes to dropped.csv as 'not read (time limit)' with its tier. Nothing is reordered after a result is seen."
+  },
+
+  "looks_haesi": {
+    "schema": "exactly the columns of research/models/search_effectiveness/looks.csv",
+    "rows": "one row per (report, place covered under location.coverage_radius_for_looks, entry for which candidates_v2.csv lists that place)",
+    "relation_id": "HAESI-COVER",
+    "required_feature": "any HA-ESI coded feature type (cistern, pool or reservoir, channel or aqueduct, ritual bath, rock-cut installation, tomb or burial cave, cave with finds, wall or tower, hoard or cache) at the place",
+    "result": "reported if features.csv has at least one row for the report at that place; silent otherwise",
+    "satisfies_requirement": "unknown (the entry's own requirement is not judged here)",
+    "numbers": "coverage, p_recognise, p_report and p_survive stay null. If the report states an excavated area or depth, it is written in looked_at and the coverage basis says so; no fraction is invented.",
+    "lineage": "HA-ESI <report_id> (permit number when given)"
+  },
+
+  "tests": ["plan hash equals the README record", "schemas of features.csv, reports.csv, dropped.csv, looks_haesi.csv", "every quote has 12 words or fewer", "every features row has a report id that exists in reports.csv", "the summary script gives byte-identical output on two runs"]
+}

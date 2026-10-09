@@ -1,0 +1,18 @@
+{
+  "amends": "plan.json hebrew_check (SHA-256 19f91bc5f29aa58bbc954bb525ab72c26239ca222c170ed45043bab5a858f230)",
+  "amendment_id": "asi_jerusalem_plan_v1_amendment_2_posthoc",
+  "status": "POST-HOC and exploratory. Written after the first build was inspected. It does not replace the frozen columns; it adds a separate file, hebrew_check_v2.csv. Both are reported.",
+  "reason": "The frozen Hebrew patterns match inside other words. 'בור' (cistern) matches inside 'קבורה' (burial); 'מער' (cave) matches inside 'מערב' (west); 'באר' (well) matches inside 'בארץ' (in the land). So the frozen heb_only_classes and heb_confirms columns over-report cistern, cave and spring_well.",
+  "rule": "A pattern counts only as a whole Hebrew word: no Hebrew letter immediately before it, except up to two one-letter prefixes from ה ו ב ל מ ש כ, and no Hebrew letter after the listed endings. Applied to the same Hebrew description and finding text of each site.",
+  "patterns": {
+    "cistern": "(?<![\\u05d0-\\u05ea])[\\u05d4\\u05d5\\u05d1\\u05dc\\u05de\\u05e9\\u05db]{0,2}בור(?:ות|י)?(?![\\u05d0-\\u05ea])",
+    "pool": "(?<![\\u05d0-\\u05ea])[\\u05d4\\u05d5\\u05d1\\u05dc\\u05de\\u05e9\\u05db]{0,2}(?:בריכ|מקוו)",
+    "reservoir": "(?<![\\u05d0-\\u05ea])[\\u05d4\\u05d5\\u05d1\\u05dc\\u05de\\u05e9\\u05db]{0,2}מאגר",
+    "conduit": "(?<![\\u05d0-\\u05ea])[\\u05d4\\u05d5\\u05d1\\u05dc\\u05de\\u05e9\\u05db]{0,2}(?:תעל|אמת[ -]?ה?מים|אמות|ניקב|צינור)",
+    "tomb": "(?<![\\u05d0-\\u05ea])[\\u05d4\\u05d5\\u05d1\\u05dc\\u05de\\u05e9\\u05db]{0,2}(?:קבר|קבור|כוכ|גלוסק|ארונות)",
+    "cave": "(?<![\\u05d0-\\u05ea])[\\u05d4\\u05d5\\u05d1\\u05dc\\u05de\\u05e9\\u05db]{0,2}מער(?:ה|ות|ת|תה)(?![\\u05d0-\\u05ea])",
+    "spring_well": "(?<![\\u05d0-\\u05ea])[\\u05d4\\u05d5\\u05d1\\u05dc\\u05de\\u05e9\\u05db]{0,2}(?:מעיין|מעיינות|באר|בארות)(?![\\u05d0-\\u05ea])",
+    "dovecote": "קולומבר|שובך"
+  },
+  "output": "hebrew_check_v2.csv: record_id, asi_map_id, site_num, classes_he_v2, heb_only_v2 (v2 classes absent from the English classes of the same site). It never creates a features.csv row and never changes looks_asi.csv."
+}

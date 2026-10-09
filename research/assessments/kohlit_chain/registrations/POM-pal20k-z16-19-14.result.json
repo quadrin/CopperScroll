@@ -1,0 +1,46 @@
+{
+ "document": "POM-pal20k-z16-19-14",
+ "transform": "similarity",
+ "parameters": {
+  "scale": 2.044454583822085,
+  "rotation_deg": 0.8850918865583405,
+  "tx": 189456.78797841258,
+  "ty": 144987.1835539316
+ },
+ "status": "rejected",
+ "blocking": [],
+ "warnings": [],
+ "residuals": [
+  {
+   "rp": "RP-TELL-FOOT-W",
+   "residual_m": 24.37072958962585
+  },
+  {
+   "rp": "RP-TELL-FOOT-S",
+   "residual_m": 34.242953803609325
+  },
+  {
+   "rp": "RP-TELL-FOOT-E",
+   "residual_m": 47.89998893880778
+  },
+  {
+   "rp": "RP-TAWAHIN",
+   "residual_m": 49.634680174702176
+  },
+  {
+   "rp": "RP-MEFJAR",
+   "residual_m": 12.49948981440601
+  }
+ ],
+ "rms_residual_m": 36.55341299504086,
+ "check_rp": "RP-SPRING",
+ "check_predicted": [
+  192212.17990852264,
+  141955.1997318978
+ ],
+ "check_error_m": 48.55355423490631,
+ "reference_error_m": 5.0,
+ "E_fit_m": 48.55355423490631,
+ "E_total_m": 48.810322974161814,
+ "accepted_for": []
+}

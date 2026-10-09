@@ -1,0 +1,111 @@
+{
+  "id": "peraea-gazetteer-plan-2026-10-09",
+  "status": "FROZEN before any site report was read. One reachability test (a DoA archive search for 'Machaerus', titles only) was made before this file was written.",
+  "purpose": "Exploratory. Build a gazetteer of Second Temple-period sites east of the Jordan with Jewish, Hasmonean or Herodian occupation, and a table of their recorded features, so that the joint model can replace its single 'transjordan' proxy (Goranson's Transjordan reading of Kohlit) with documented places. No identification claim.",
+  "area": {
+    "name": "Peraea and the east bank of the Jordan valley and Dead Sea, Yarmuk to Arnon",
+    "lat_min": 31.44,
+    "lat_max": 32.70,
+    "south_limit": "Wadi Mujib (Arnon) mouth, about 31.46 N; sites south of the Arnon are out",
+    "north_limit": "Yarmuk river, about 32.64-32.70 N; sites north of the Yarmuk are out",
+    "west_limit": "the Jordan river and the east shore of the Dead Sea (sites must lie east of the line)",
+    "east_limit_km": 40.0,
+    "east_limit_rule": "great-circle distance from the site point to the nearest point of the river/shore polyline below, computed in a local equirectangular projection; sites more than 40.0 km away are out",
+    "river_shore_polyline_lat_lon": [
+      [32.6415, 35.5725],
+      [32.4970, 35.5670],
+      [32.3300, 35.5650],
+      [32.1040, 35.5460],
+      [31.8740, 35.5400],
+      [31.7600, 35.5580],
+      [31.6200, 35.5600],
+      [31.4680, 35.5670]
+    ],
+    "polyline_basis": "INFERENCE: approximate points along the Jordan (Yarmuk confluence, Sheikh Hussein bridge, Damiya, King Hussein bridge, Jordan mouth) and the Dead Sea east shore (Zara, Mujib mouth), from general maps; precision about 1-2 km, enough for a 40 km cut-off",
+    "josephus_peraea_flag": "peraea_proper = yes if the site lies inside Josephus's Peraea (War 3.46-47: length from Machaerus to Pella, breadth from Philadelphia to the Jordan), i.e. between the latitudes of Machaerus and Pella and west of Philadelphia (Amman), and is not a Decapolis city (Pella, Gadara, Gerasa, Philadelphia, Abila of the Decapolis). Recorded as INFERENCE."
+  },
+  "period": {
+    "window": "Hasmonean to 135 CE (about 152 BCE - 135 CE)",
+    "window_start_year": -152,
+    "window_end_year": 135,
+    "mapping_column": "dated_in_window, with values yes / overlaps / no / undated",
+    "mapping_rules": {
+      "yes": "the source dates the feature or occupation wholly inside the window: Hasmonean, Herodian, Early Roman, Late Hellenistic (2nd-1st c. BCE), 1st c. BCE, 1st c. CE, early 2nd c. CE, or explicit years inside 152 BCE - 135 CE",
+      "overlaps": "the source gives a period that straddles the window: 'Hellenistic' undivided, 'Roman' undivided, 'Hellenistic-Roman', 'Classical', 'Nabataean' without a sub-date",
+      "no": "the source dates it wholly outside the window (Iron Age, Persian, Early Hellenistic before 152 BCE, Late Roman after 135 CE, Byzantine, Islamic)",
+      "undated": "the source gives no date for the feature"
+    },
+    "rule": "A feature counts as dated in window only if the source itself dates it so (yes). 'overlaps' is reported separately and never counted as yes. The period is recorded as the source gives it in period_as_given."
+  },
+  "feature_classes": {
+    "pool": ["pool", "reservoir (open)", "birka", "birkeh", "birket", "basin (built, open)", "tank (open)", "plastered pool", "ritual bath", "miqveh", "mikveh", "mikvah", "immersion pool", "stepped pool"],
+    "cistern": ["cistern", "reservoir (roofed)", "bell-shaped cistern", "water tank (roofed)"],
+    "channel": ["channel", "aqueduct", "conduit", "water channel", "pipe", "pipeline", "canal"],
+    "tomb": ["tomb", "grave", "burial", "burial cave", "shaft grave", "shaft tomb", "kokh", "kokhim", "loculus", "loculi", "cemetery", "necropolis", "mausoleum", "nefesh"],
+    "cave": ["cave", "rock-cut chamber", "underground chamber", "tunnel", "pit", "shaft (non-funerary)", "silo"],
+    "tower": ["tower", "watchtower", "fort tower", "keep"],
+    "wall": ["wall", "fortification wall", "city wall", "casemate wall", "enclosure wall", "rampart", "siege wall", "circumvallation"],
+    "hoard": ["hoard", "coin hoard", "cache", "treasure"]
+  },
+  "other_recorded_not_counted": ["bathhouse", "palace", "courtyard", "synagogue", "stone vessels", "inscription", "coins (single finds)", "siege camp", "ramp", "road"],
+  "jewish_hasmonean_herodian_markers": {
+    "textual": "Josephus, 1-2 Maccabees or rabbinic texts name the site as Jewish, Peraean, held or built by a Hasmonean ruler, or held or built by Herod or Herod Antipas",
+    "archaeological": "the excavator reports Hasmonean or Herodian construction, Jewish ritual baths (miqvaot), chalk/stone vessels, Hasmonean coins as a period marker, or Jewish (Hebrew/Aramaic) inscriptions, inside the window"
+  },
+  "inclusion_rules": {
+    "site_in_gazetteer": "The site is in the area AND has at least one of the markers above. Every site seeded below is searched and recorded, including those that fail, with the reason.",
+    "status_documented": "occupation inside the window (dated_in_window = yes) is EVIDENCE from an archaeological report, AND a Jewish/Hasmonean/Herodian marker is EVIDENCE (textual statement or archaeological report)",
+    "status_partial": "one of the two is only INFERENCE or TRADITION (for example, the ancient name's identification with the modern site is disputed, or occupation is only 'Roman' undivided)",
+    "status_excluded": "outside the area, or no marker, or no occupation in or overlapping the window",
+    "evidence_labels": "Each criterion is labelled EVIDENCE (a source states it), INFERENCE (our reasoning), TRADITION (later tradition, for example Byzantine pilgrim identification) or CLAIM (a modern proposal not yet tested)",
+    "feature_row": "one row per feature per source. A feature belongs to a site if the source places it in the site or within 2 km of the site's centre point. Quotes are 12 words or fewer.",
+    "decapolis_cities": "Pella, Gadara (Umm Qais), Gerasa and Philadelphia are recorded with the textual marker only if Josephus says a Hasmonean ruler held or took them; they get peraea_proper = no."
+  },
+  "coordinates": {
+    "crs": "WGS84 (EPSG:4326), decimal degrees",
+    "order_of_sources": ["Pleiades representative point (pleiades.stoa.org place JSON)", "a coordinate or grid reference printed in an excavation report", "Wikidata coordinate (as the W2B model already does)", "INFERENCE from a published map, labelled"],
+    "sigma_km_rule": "sigma = the larger of (a) the source point's precision (Pleiades accuracy value if given; 0.1 km for a printed grid reference to 100 m), (b) half the site's stated extent, and (c) 0.2 km. If the ancient name's location is disputed between named alternatives, the row uses the main identification and sigma at least half the distance to the farthest alternative; the alternatives are listed."
+  },
+  "sources_in_order": [
+    {"id": "DOA", "what": "Department of Antiquities of Jordan publication archive (ADAJ, SHAJ, Munjazat, Athar): search page and open PDFs", "url": "https://publication.doa.gov.jo/"},
+    {"id": "ACOR", "what": "ACOR 'Archaeology in Jordan' newsletters and other open ACOR reports", "url": "https://www.acorjordan.org/"},
+    {"id": "PLEIADES", "what": "Pleiades gazetteer place records (coordinates, ancient names, attestations)", "url": "https://pleiades.stoa.org/"},
+    {"id": "JOSEPHUS", "what": "Josephus, War and Antiquities, Whiston translation (public domain), Project Gutenberg", "url": "https://www.gutenberg.org/"},
+    {"id": "OPEN", "what": "other open excavation reports and articles (open-access journals, institutional repositories)", "url": ""}
+  ],
+  "not_used": ["MEGA-Jordan and EAMENA (logins required): access route recorded only", "any paywalled, lending or shadow library", "the owner's browser"],
+  "generic_search_terms": ["Peraea", "Perea", "Hasmonean", "Herodian", "Jewish", "Jannaeus", "miqveh", "mikveh", "ritual bath", "stone vessels", "chalk vessels", "Early Roman", "Late Hellenistic", "Jordan Valley survey", "Dead Sea plain survey"],
+  "seed_sites": [
+    {"key": "machaerus", "why_seeded": "Hasmonean fortress, Herodian palace; Josephus War 7.163-209", "search_terms": ["Machaerus", "Mukawir", "Mukawer", "Mekawer", "Machairous"]},
+    {"key": "amathus", "why_seeded": "Hasmonean-era fortress of Theodorus taken by Jannaeus; Gabinius's council seat; Josephus Ant. 13.356, 14.91", "search_terms": ["Amathus", "Ammata", "Tell Ammata", "Tall Ammata", "Amathous"]},
+    {"key": "iraq_el_amir", "why_seeded": "Tobiad estate, Hyrcanus son of Joseph; Josephus Ant. 12.229-234", "search_terms": ["Iraq el-Amir", "Iraq al-Amir", "Araq el-Emir", "Qasr el-Abd", "Qasr al-Abd", "Tobiad", "Tyros"]},
+    {"key": "livias", "why_seeded": "Betharamphtha, renamed Julias/Livias by Herod Antipas; Josephus Ant. 18.27, War 2.168", "search_terms": ["Livias", "Julias", "Betharamphtha", "Tell er-Rama", "Tall ar-Rama", "Tall er-Rameh", "Rama"]},
+    {"key": "bethany_kharrar", "why_seeded": "Bethany beyond the Jordan (John 1:28), Wadi el-Kharrar; 1st-c. remains reported", "search_terms": ["Kharrar", "Wadi al-Kharrar", "Bethany beyond the Jordan", "Elijah's Hill", "Tell Mar Elias", "Baptism Site", "Maghtas"]},
+    {"key": "callirrhoe", "why_seeded": "Herod's hot springs (War 1.657-658); Herodian harbour-villa at ʿAin ez-Zara", "search_terms": ["Callirrhoe", "Kallirrhoe", "Ain ez-Zara", "Ayn az-Zara", "Zara"]},
+    {"key": "gadara_peraea", "why_seeded": "Gadara, 'metropolis of Peraea' (War 4.413), often placed at Tell Jadur near es-Salt", "search_terms": ["Jadur", "Tell Jadur", "Gadara of Peraea", "Gadora", "Salt"]},
+    {"key": "abila_peraea", "why_seeded": "Abila of Peraea (War 4.438), Abel-Shittim; placed at Tell el-Kefrein or Tell el-Hammam", "search_terms": ["Abila", "Abel-Shittim", "Kafrein", "Kefrein", "Tall el-Hammam", "Tell el-Hammam"]},
+    {"key": "besimoth", "why_seeded": "Besimoth (War 4.438), Beth-Jeshimoth; Tell el-Azeimeh", "search_terms": ["Besimoth", "Azeimeh", "Tell el-Azeimeh", "Suweimeh", "Beth-Jeshimoth"]},
+    {"key": "bethennabris", "why_seeded": "Bethennabris (War 4.420), Beth Nimrah; Tell Nimrin", "search_terms": ["Nimrin", "Tell Nimrin", "Tall Nimrin", "Bethennabris", "Beth Nimrah"]},
+    {"key": "esbus", "why_seeded": "Esbon held by Jannaeus (Ant. 13.397); Herod's Esbonitis colony (Ant. 15.294)", "search_terms": ["Hesban", "Hisban", "Heshbon", "Esbus", "Esebon"]},
+    {"key": "medaba", "why_seeded": "Taken by Hyrcanus I (Ant. 13.255); held by Jannaeus (Ant. 13.397)", "search_terms": ["Madaba", "Medaba"]},
+    {"key": "ragaba", "why_seeded": "Ragaba, besieged by Jannaeus at his death (Ant. 13.398); location uncertain", "search_terms": ["Ragaba", "Rajib", "Wadi Rajib"]},
+    {"key": "tell_iktanu", "why_seeded": "Jordan-valley tell near Livias with reported Hellenistic occupation", "search_terms": ["Iktanu", "Tell Iktanu", "Tall Iktanu"]},
+    {"key": "pella", "why_seeded": "Decapolis; destroyed by Jannaeus (Ant. 13.397); Peraea's northern limit (War 3.47)", "search_terms": ["Pella", "Tabaqat Fahl", "Fahl"]},
+    {"key": "gadara_decapolis", "why_seeded": "Decapolis; taken by Jannaeus (Ant. 13.356); given to Herod (Ant. 15.217)", "search_terms": ["Umm Qais", "Umm Qeis", "Gadara"]},
+    {"key": "gerasa", "why_seeded": "Decapolis; taken by Jannaeus (War 1.104 / Ant. 13.393); Jewish residents in 66 CE (War 2.480)", "search_terms": ["Jerash", "Gerasa"]},
+    {"key": "jordan_valley_tells", "why_seeded": "Jordan-valley tells with reported Hellenistic/Early Roman phases (Deir Alla, es-Saidiyeh, el-Mazar, Damiya, Abu Sarbut); included only with a marker", "search_terms": ["Deir Alla", "Saidiyeh", "Tell el-Mazar", "Damiya", "Abu Sarbut"]},
+    {"key": "uncertain_names", "why_seeded": "Josephus names with uncertain location: Lemba (Libb?), Zia (Ant. 20.2), Baaras (War 7.180)", "search_terms": ["Libb", "Zia", "Baaras", "Hammamat Main"]},
+    {"key": "nebo_area", "why_seeded": "Mount Nebo town (Kh. el-Mukhayyat) and Siyagha; Hellenistic/Roman phases reported", "search_terms": ["Mukhayyat", "Nebo", "Siyagha"]},
+    {"key": "arnon_edge", "why_seeded": "Dhiban and Aroer near the Arnon, with Hellenistic/Roman phases", "search_terms": ["Dhiban", "Aroer", "Arair"]}
+  ],
+  "procedure": [
+    "1. For each seed site, search DOA with each search term (title search), list hits, and read the most relevant open reports (excavation reports and surveys first) for the site's period evidence and features.",
+    "2. Search ACOR newsletters for the site names.",
+    "3. Take coordinates from Pleiades (or the order above) and apply the sigma rule.",
+    "4. Check the textual marker in Josephus (Whiston) and cite book.section.",
+    "5. Code gazetteer.csv and features.csv; record every failed link and every source not read.",
+    "6. Stop rule: about 30 report PDFs in all; prefer first reports and synthesis articles; record what is left unread."
+  ],
+  "model_link": "The model variant's rule is frozen separately in PLAN_v3.md, after the gazetteer is built and before the model is run.",
+  "limits": "Exploratory. No identification claim. Silence is never absence. Quotes 12 words or fewer; no PDFs or page images in the repository."
+}

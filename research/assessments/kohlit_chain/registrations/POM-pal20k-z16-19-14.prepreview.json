@@ -1,0 +1,24 @@
+{
+ "kind": "pre-preview note (registration_protocol.md section 2 steps 2 and 5); written before any view of sheet 19-14",
+ "declaration_sha256": "085b50a3f2f53726bb0f5132f8102b102448e9ab8b84662a3fef605909c0190c",
+ "document_sha256": "04cd50ea46873974a4a416ab51f3e3e93f937b371f56d7ff1e277cb4763fbd75",
+ "document_sha256_basis": "SHA-256 of the sorted manifest of the 110 zoom-16 tiles that intersect EPSG:28191 E189500-194500 N140000-145000 (one line per tile: z/x/y and the tile's SHA-256). Tiles were downloaded but not viewed.",
+ "capture_form": "POM-pal20k-z16-19-14.capture.csv (validated: complete_capture_metadata)",
+ "mask_offset_grid_m": [
+  -4.3,
+  -3.1
+ ],
+ "mask_offset_basis": "mean of 5 accepted G1 grid-intersection residuals on sheets 19-13 and 18-14 (sheet-edge lines excluded); see research/regional/mandate_maps/g1_picks.csv",
+ "mask_grid": {
+  "E": [
+   191800,
+   192550
+  ],
+  "N": [
+   142120,
+   142700
+  ]
+ },
+ "mask_painted_tile_frame": "mask_grid shifted by mask_offset_grid_m and widened by 50 m on every side: E 191745.7-192595.7, N 142066.9-142746.9 in the correct grid as placed on the tiles",
+ "preview": "next step: 8 m per pixel, mask painted solid"
+}

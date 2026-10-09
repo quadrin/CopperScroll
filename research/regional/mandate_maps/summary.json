@@ -1,0 +1,125 @@
+{
+ "items": 306,
+ "features": 190,
+ "names": 248,
+ "features_by_class": {
+  "spring": 9,
+  "cistern": 4,
+  "well": 0,
+  "well_or_cistern": 1,
+  "pool": 5,
+  "aqueduct": 17,
+  "ruin": 17,
+  "tomb": 11,
+  "cave": 18,
+  "quarry": 0,
+  "road": 12,
+  "built_up": 7,
+  "mill": 5,
+  "tell": 10,
+  "shrine": 6,
+  "monastery_church": 10,
+  "other": 53,
+  "symbol_unidentified": 5
+ },
+ "flagged_names": [
+  {
+   "item_id": "Q01",
+   "name": "Kh. Qumrān",
+   "roots": "",
+   "context": "context"
+  },
+  {
+   "item_id": "Q13",
+   "name": "Qumrān",
+   "roots": "",
+   "context": "context"
+  },
+  {
+   "item_id": "A01",
+   "name": "[Wā]dī el ʿAsla",
+   "roots": "ʿ-ṣ-l",
+   "context": ""
+  },
+  {
+   "item_id": "A06",
+   "name": "Jaufat el ʿAsla",
+   "roots": "ʿ-ṣ-l",
+   "context": ""
+  },
+  {
+   "item_id": "U04",
+   "name": "Shawāhid Sayidnā Mūsā",
+   "roots": "š-w-h",
+   "context": ""
+  },
+  {
+   "item_id": "B01",
+   "name": "Karm es Samra (El ʿAjaz) R.",
+   "roots": "k-r-m",
+   "context": "context"
+  },
+  {
+   "item_id": "B02",
+   "name": "Karm es Samra (El ʿAjaz)",
+   "roots": "k-r-m",
+   "context": "context"
+  },
+  {
+   "item_id": "B05",
+   "name": "Et Tabaqa",
+   "roots": "",
+   "context": "context"
+  },
+  {
+   "item_id": "B07",
+   "name": "[El] Buqeiʿa",
+   "roots": "",
+   "context": "context"
+  },
+  {
+   "item_id": "E01",
+   "name": "Valley of Kidron",
+   "roots": "q-d-r-n",
+   "context": ""
+  },
+  {
+   "item_id": "M20",
+   "name": "W. Kuheila",
+   "roots": "k-ḥ-l",
+   "context": ""
+  },
+  {
+   "item_id": "G01",
+   "name": "JEBEL ET TŪR (Mt. Gerizim)",
+   "roots": "g-r-z-m",
+   "context": ""
+  },
+  {
+   "item_id": "G22",
+   "name": "Karm Umm Suleimān",
+   "roots": "k-r-m",
+   "context": ""
+  }
+ ],
+ "state_2025_counts": {
+  "built_over": 29,
+  "not_checked": 93,
+  "open_not_visible": 34,
+  "visible_2025": 34
+ },
+ "g2_pooled_rms_m": 31.1,
+ "g2_rms_by_sheet_m": {
+  "17-13": 19.6,
+  "18-12": 15.0,
+  "19-14": 51.2
+ },
+ "windows_with_similarity_fit": [
+  "B_buqeia:18-12",
+  "B_marsaba:18-12",
+  "J_kidron:17-13",
+  "K_asla:19-13",
+  "Q_qumran:19-12",
+  "T_jericho:19-14"
+ ]
+}

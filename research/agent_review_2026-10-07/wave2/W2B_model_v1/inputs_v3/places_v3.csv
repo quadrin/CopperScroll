@@ -1,0 +1,51 @@
+place_id,name,lat,lon,sigma_km,mixture_of,model_region,coords_in_places_json,precision_string,coord_note,components,kind
+jer_temple,Temple enclosure (Temple Mount),31.77825,35.23534,0.15,,JER,yes,~150 m,Pleiades 973646718 (Second Temple),,v0
+jer_east_gate,East Gate (Golden Gate position) and eastern wall,31.77889,35.23694,0.05,,JER,yes,~50 m,Wikidata Q1367167 (Golden Gate),,v0
+jer_se_corner,SE corner of the Temple enclosure (Solomon's Stables),31.77639,35.23694,0.08,,JER,yes,~80 m,Wikidata Q2657964 (Marwani Mosque / Solomon's Stables),,v0
+jer_south_wall,Southern wall: Huldah Gates / Royal Stoa,31.77594,35.23661,0.08,,JER,yes,~80 m,Wikidata Q2920336 (Huldah Gates),,v0
+jer_kidron_mon,"Kidron valley at the Kidron monuments (Absalom, Bene Ḥezir, Zechariah)",31.77701,35.23928,0.1,,JER,yes,~100 m,Wikidata Q12409409 (Kidron monuments),,v0
+jer_kidron_east,"Kidron valley, east slope (Silwan necropolis)",31.7742,35.2381,0.3,,JER,yes,~300 m,"Wikidata Q6901697 (Monolith of Silwan, part of the necropolis); Pleiades 122408432 point (31.7733, 35.2368) lies on the valley floor",,v0
+jer_gethsemane,Kidron valley at Gethsemane,31.77942,35.23943,0.1,,JER,yes,~100 m,Wikidata Q205333 (Gethsemane),,v0
+jer_siloam,Siloam: Gihon spring to Siloam pool,31.77008,35.23616,0.3,,JER,yes,~300 m,"Wikidata Q3960568 (Siloam); Gihon Q204601 31.7729, 35.2364",,v0
+jer_bir_ayyub,"Bir Ayyub (En-Rogel), Kidron–Hinnom junction",31.7672,35.23599,0.1,,JER,yes,~100 m,"Wikidata Q2919936 (En-rogel, alias ביר איוב)",,v0
+jer_bethesda,Pools of Bethesda (St Anne's),31.78139,35.23583,0.05,,JER,yes,~50 m,Wikidata Q831297,,v0
+jer_tyropoeon,Tyropoeon valley,31.77695,35.23424,0.2,,JER,yes,~200 m,Wikidata Q2914844,,v0
+jer_tombs_kings,Tombs of the Kings (tomb of Helena of Adiabene),31.78852,35.22919,0.05,,JER,yes,~50 m,Wikidata Q2916475,,v0
+jer_baqa,"el-Baqʿa plain, SW of the Old City",31.75917,35.22082,0.7,,JER,yes,~700 m,Wikidata Q2916464 (Baka neighbourhood),,v0
+jer_shaveh,Valley of Shaveh / King's Valley (which valley is unresolved),,,,jer_kidron_mon|jer_baqa,JER,no,unresolved,"MIXTURE: 50/50 of jer_kidron_mon (King's Valley = Kidron, Puech) and jer_baqa (Milik); valley unresolved",,v0
+ramat_rahel,"Ramat Raḥel (Kh. Ṣaliḥ), = Beth ha-Kerem (Aharoni)",31.73999,35.21899,0.1,,JER,yes,~100 m,Pleiades 671109966,,v0
+tell_el_ful,Tell el-Ful (Gibeah),31.82348,35.2312,0.1,,JER,yes,~100 m,Pleiades 749935552,,v0
+mar_saba,Kidron gorge (Wadi en-Nar) at Deir Mar Saba,31.70494,35.33115,0.5,,DESERT,yes,~500 m (gorge stretch),Pleiades 687969 (Megiste Laura Saba),,v0
+hyrcania,Hyrcania (Kh. el-Mird) and its aqueducts,31.719,35.366,0.2,,DESERT,yes,~200 m,Wikidata Q1510248 (fits PEF XVIII 'Kh. Mird'; Pleiades 687923 is 1.7 km E),,v0
+buqeia,el-Buqeiʿah plateau,31.7177,35.3948,2.5,,DESERT,yes,area ~5 km,"PEF XVIII, georeferenced: label point Kh. es-Sumrah",,v0
+natuf,"ʿAin en-Naṭuf, Wadi Khareitun (cave of St Chariton)",31.64436,35.23543,0.7,,SOUTH,yes,~700 m,"Wikidata Q7017680 (Khureitun Cave); Pleiades 687874 (Chariton) 31.6515, 35.2359",,v0
+tekoa_herodium,Tekoa–Herodium sector (Puech's area for IX 4–X 4),31.64935,35.22635,4.0,,SOUTH,no,area ~8 km,DERIVED: midpoint of Herodium (Wikidata Q913099) and Kh. Tuqu (Wikidata Q12210361) as cited in phase3_places.csv; sigma 4 km,,v0
+nuweimeh,"Wadi Nuweiʿimeh (valley), NE of Jericho",31.8837,35.4409,1.5,,JERICHO,yes,area ~3 km,"PEF XVIII, georeferenced: 'Wady en Nueiameh' lower-course label",,v0
+ain_duk,ʿAin Duk / ʿAin en-Nuweiʿimeh springs (Naʿaran),31.8976,35.4177,0.3,,JERICHO,yes,~300 m,"PEF XVIII, georeferenced ('Ain ed Duk')",,v0
+doq,Doq: Jebel Qarantal (Mount of Temptation),31.87472,35.43056,0.3,,JERICHO,yes,~300 m,"Wikidata Q10742877 (Mount of Temptation, aliases Dok, Doq, Douka); Pleiades 687884 is 1.5 km WSW",,v0
+tell_es_sultan,"Tell es-Sultan (Old Jericho, Elisha's spring)",31.8717,35.4446,0.15,,JERICHO,yes,~150 m,Wikidata Q2402267; PEF control point,,v0
+jericho_palaces,"Hasmonean–Herodian palaces (Tulul Abu el-ʿAlayiq), Wadi Qelt",31.85187,35.43624,0.3,,JERICHO,yes,~300 m,Wikidata Q2460244 (Hasmonean royal winter palaces),,v0
+jericho_area,"Jericho oasis (town or district, no finer place)",31.85611,35.46306,1.5,,JERICHO,yes,area ~3 km,Wikidata Q5687 (Jericho),,v0
+tell_el_qos,Tell el-Qos,31.8551,35.4656,0.2,,JERICHO,yes,~200 m,"PEF XVIII, georeferenced ('Tell el Kos')",,v0
+choziba,Wadi el-Qelt at Choziba (St George's monastery),31.84408,35.41178,0.5,,JERICHO,yes,~500 m (wadi stretch),Pleiades 687876 (Choziba),,v0
+kuteif,Wadi Kuteif,31.802,35.411,1.5,,JERICHO,yes,area ~3 km,"PEF XVIII, georeferenced ('Wady Ekteif' label)",,v0
+jordan_ford,Lower Jordan near Jericho (a ford; river level only),31.838333,35.539167,5.0,,JERICHO,no,area ~10 km,PROXY: Qasr al-Yahud coordinates from en.wikipedia.org/wiki/Qasr_al-Yahud; no ford is identified; sigma 5 km,,v0
+asla,"Wadi el-ʿAṣla / Gofet el-ʿAṣla area, NW Dead Sea",31.7716,35.451,1.5,,QUMRAN,yes,area ~3 km,"PEF XVIII, georeferenced: hill label 'Jofet el Asla' (the wadi is not labelled on the sheet)",,v0
+kh_qumran,"Kh. Qumran (site, aqueduct, cisterns, nearby cliff caves)",31.74183,35.45941,0.1,,QUMRAN,yes,~100 m,Pleiades 688011 (Qumran),,v0
+wadi_qumran,Wadi Qumran below Kh. Qumran,31.74111,35.45056,0.5,,QUMRAN,yes,~500 m,Wikidata Q7218539 (Wadi Qumran),,v0
+gerizim,Mount Gerizim (Jebel et-Tur),32.20082,35.27326,0.5,,NORTH,yes,~500 m,Pleiades 678147,,v0
+beth_shean,Beth Shean / Scythopolis (Beisan),32.5037,35.50309,0.3,,NORTH,yes,~300 m,Pleiades 678378,,v0
+ibziq,Kh. Ibziq (Bezek),32.36884,35.39736,0.3,,NORTH,yes,~300 m,Wikidata Q49354325 (Khirbet Ibziq); Q31248544 is the modern village 4.0 km SW,,v0
+beth_horon,Upper Beth-Horon (Beit ʿUr el-Foqa),31.8853,35.11341,0.3,,WEST,yes,~300 m,,,v0
+kh_salhab,Kh. Salhab (Kh. es-Selhab),32.35504,35.37277,0.3,,NORTH,yes,~300 m,,,v0
+ein_samiya,"ʿEin Samiya valley (Kh. Samiya, Kh. el-Marjama tell, ʿEin Samiya spring)",31.99231,35.32671,0.7,,SAMDES,no,~700 m (valley 1 km x 350 m),"NEAEHL vol. 5 (2008) p. 2118 map-ref table, 'Ein Samiya and Dhahr Mirzbaneh, OIG 181010/155470 -> EPSG:28191->WGS84. Cross-checks: Kh. Marjameh OIG 181600/155400 (NEAEHL p. 2121) -> 31.99167,35.33295 (0.6 km E); Zissu PEQ 133 (2001) p. 150 map ref. 181/155 -> 31.98807,35.3266 (0.5 km S); Wikidata Q6708772 village 31.98917,35.33333 (0.7 km SE)",,kohlit
+kh_yanun,Kh. Yanun (Janoah of Ephraim; Lefkovits/Beyer reading of XII 10),32.15802,35.36127,0.5,,NORTH,no,~500 m (Kh. Yanun / Yanun village 1.5 km apart),"Zissu PEQ 133 (2001) p. 149 citing Finkelstein et al. 1997: 828-29, OIG 18425/17385 -> EPSG:28191->WGS84. Cross-check: Yanun village OIG 18370/17245 -> 32.1454,35.35542 vs Wikidata Q8048992 32.14544,35.35568 (0.03 km)",,janoah
+muhalhil,"Tell Muḥalḥil ""adjacent to Nebi Musa"" (Lurie) - PROXY at Nebi Musa",31.78648,35.43180,2.0,,DESERT,no,area ~2 km (proxy),"PROXY: no published coordinate found for Tell Muhalhil (Bar-Adon 1972 site 83 not available); Nebi Musa Wikidata Q2909131 P625 31.78648,35.43180; ""adjacent to Nebi Musa"" Zissu p. 148, ""near Nabi Musa"" Lefkovits 2000 p. 74",,kohlit
+beit_kahil,"Beit Kahil, WNW of Hebron (Milik/Lurie name resemblance)",31.56966,35.06600,1.0,,HEBNEG,no,~1 km (village),"Wikidata Q2898790 P625; Milik DJD III p. 274 D-71 (""Beit Kahil à l'ouest-nord-ouest d'Hébron"")",,kohlit
+kuhlah,Kh. Kuḥlah / Kuḥleh NE of Beersheba (Milik/Lurie) - PROXY at Kukhleh,31.29310,35.05530,3.0,,HEBNEG,no,area ~3 km (proxy),"PROXY: modern Bedouin village Kukhleh (Wikidata Q7214177 P625, precision 0.01 deg; en.wikipedia Kukhleh 31.287,35.048), assumed to preserve the name of ""H. Kuhlah au nord-est de Bersabée"" (Milik DJD III p. 274 D-71); identity INFERENCE",,kohlit
+carmel_siah,"Wadi ʿEin es-Siaḥ, W slope of Carmel (Milik's ʿEn Koḥel / Fons Eliae)",32.80100,34.97500,2.0,,CARMEL,no,area ~2 km,"Wikidata Q4025762 (Nahal Siach) P625; Milik DJD III p. 275 D-71 (Wadi ʿEin es-Siah, Fons Eliae, with ʿAin Umm el-Faraj to its east)",,kohlit
+mount_zion,Mount Zion (Greek Orthodox cemetery area; Pixner),31.77167,35.22861,0.3,,JER,no,~300 m,Wikidata Q332444 P625; Pixner RevQ 11 (1983) via Zissu p. 148 and Lefkovits p. 74,,kohlit
+transjordan,East of the Jordan (Goranson) - BROAD AREA,,,15.0,,TRANSJ,no,mixture of 12 documented Peraea sites (gazetteer sigma each),"v3: equal-weight mixture over the documented Second Temple sites of Peraea in research/regional/peraea/gazetteer.csv (status documented, peraea_proper yes): machaerus, kh_ataruz, callirrhoe, kh_al_mukhayyat, madaba, tall_hisban, iraq_al_amir, kh_as_sur, umm_hadar, tall_barakat, tulul_adh_dhahab_w, kharrar. Goranson names no site; this is a modelling proxy, not an identification",31.56722:35.62417:0.3|31.57442:35.66475:0.3|31.59758:35.56264:0.3|31.76778:35.72528:0.5|31.71667:35.80000:0.7|31.80083:35.80889:0.3|31.91280:35.75180:0.6|31.90476:35.71157:0.3|31.86280:35.67725:0.2|31.85271:35.67372:0.2|32.18651:35.68634:0.3|31.83722:35.55028:1.5,kohlit
+ein_ghuweir,ʿEin el-Ghuweir - ʿEin et-Turabeh stretch (Tübingen Atlas B V 18 placement),31.62768,35.41255,1.5,,QUMRAN,no,area ~1.5 km,"Dahari, ʿAtiqot 41 (2002) Region XIV p. 246: cave XIV/51 above the ʿEin el-Ghuweir site, OIG 18920/11505 -> WGS84; Qasr et-Turabeh survey centre OIG 1887/1129 -> 31.60829,35.40724 (2.2 km S); sigma covers the stretch",,kohlit
+ein_feshkha,ʿEin Feshkha,31.71444,35.45333,0.5,,QUMRAN,no,~500 m,Wikidata Q405816 P625,,kohlit
+iv17_abu_saraj,"Abu Saraj cave IV/17 (Cave of the Built Wall), Jebel Abu Saraj cliffs; cave-group reference",31.89009,35.42477,0.3,,JERICHO,no,"~300 m (shared cave-group reference, not a mouth point)","Sion 2002, Atiqot 41 p. 61 Fig. 12 (IV/17 on pp. 63-64, Plan 5 p. 63): group reference OIG 19030/14415, shared by several caves (research/assessments/entry25_iv17/README.md) -> EPSG:28191->WGS84 with W2B scripts/grid_convert.py oig(). Control: WBADB E334 Tell es-Sultan OIG 192150/142050 -> within 0.1 km of places_v1 tell_es_sultan. INFERENCE: sigma 0.3 km because the group extent is not stated",,v2_candidate

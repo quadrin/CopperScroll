@@ -1,0 +1,13 @@
+{
+ "kind": "check-point decision on the coarse preview (registration_protocol.md section 2 step 4); written before any full-resolution view of sheet 19-14",
+ "prepreview_sha256": "d1e3916222a1b07ebca98fcb9ca119eb6d960a774f258f4d0acfe1a7abad1ca4",
+ "preview": {
+  "scale_m_per_px": 8.1,
+  "extent_grid": "E189500-194500 N140000-145000",
+  "mask": "painted solid before downsampling (tile-frame E 191745.7-192595.7, N 142066.9-142746.9)",
+  "file": "scratch only, not in the repository"
+ },
+ "what_the_preview_shows": "A label ending '... es Sultān' just south-east of the mask, beside an oval line that may be the tell's outline. A spring symbol is not resolved at 8 m per pixel. Khirbat el Mafjar, Tahūnat el Mafjar, Tell es Samrāt, Tell Abū Khurs and Jebel Qurunṭul are labelled outside the mask; Tawāḥīn es Sukkar and Tell Abu Hindi are not legible at this scale.",
+ "decision": "Check point = RP-SPRING, provided the full-resolution masked view shows a spring symbol labelled for ʿAin es Sultān outside the mask. If it does not, the check point is the eligible candidate nearest to the zone that the map shows, taken in this fixed order: RP-TELL-FOOT-W, RP-TELL-FOOT-S. This rule does not depend on any residual.",
+ "controls_expected": "RP-TELL-FOOT-W, RP-TELL-FOOT-S, RP-TELL-FOOT-E (only if the spring is shown, since its point lies on the line through the spring), RP-MEFJAR, RP-SAMARAT; RP-TAWAHIN and RP-ABU-HINDI only if labelled; RP-ROADS only on an unchanged alignment."
+}

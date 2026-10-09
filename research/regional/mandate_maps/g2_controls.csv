@@ -1,0 +1,19 @@
+control_id,kind,item_id,ref_lat,ref_lon,ref_sigma_m,reference,used_for_error_model
+ESRI-C01,esri_imagery,C01,31.8436893,35.4112382,9.0,"Deir Mar Jiryis (St George) monastery: centre of the main building cluster on the cliff; Esri World Imagery 2025, zoom 18",yes
+ESRI-E14,esri_imagery,E14,31.7792677,35.2396864,7.1,"Church of All Nations (Gethsemane): centre of the domed roof; Esri World Imagery 2025, zoom 18",yes
+ESRI-S01,esri_imagery,S01,31.7049215,35.3312919,11.2,"Mar Saba monastery: centre of the main church and court; Esri World Imagery 2025, zoom 18",yes
+ESRI-H02,esri_imagery,H02,31.7191511,35.3657088,9.0,"Hyrcania summit: centre of the summit ruins; Esri World Imagery 2025, zoom 18",yes
+ESRI-Q04,esri_imagery,Q04,31.7411755,35.45901,11.2,"Kh. Qumran: centre of the main building complex; Esri World Imagery 2025, zoom 18",yes
+ESRI-P03,esri_imagery,P03,31.8478423,35.439828,11.2,"Birket Musa (large rectangular pool at Tulul Abu el-Alayiq): centre of the rectangle; Esri World Imagery 2025, zoom 17",yes
+ESRI-E31,esri_imagery,E31,31.7780026,35.2352202,5.2,"Dome of the Rock: centre of the dome; Esri World Imagery 2025, zoom 17",yes
+REG-RP-MEFJAR,esri_imagery,U15,31.8819681,35.4598618,11.2,Khirbat el-Mafjar palace: centre of the square main building (registration pick); Esri World Imagery 2025,yes
+REG-RP-SPRING,esri_imagery,T30,31.8706827,35.444793,7.1,ʿAin es-Sultan: north end of the rounded orange-roofed structure east of the road (registration check pick; identification INFERENCE); Esri World Imagery 2025,yes
+REG-RP-TAWAHIN,esri_imagery,J19,31.8721233,35.4393081,15.8,Tawahin es-Sukkar: centre of the walled ruin complex (registration pick); Esri World Imagery 2025,yes
+NEAEHL-Qumran,neaehl_grid_ref,Q04,31.7418547,35.4594534,50,W2B grid_convert.py CONTROLS: NEAEHL grid reference 193620/127720 (EPSG:28191; about 100 m rounding),no
+NEAEHL-Hyrcania,neaehl_grid_ref,H02,31.7192817,35.3652803,50,W2B grid_convert.py CONTROLS: NEAEHL grid reference 184700/125200 (EPSG:28191; about 100 m rounding),no
+NEAEHL-Mar_Saba,neaehl_grid_ref,S01,31.7048902,35.3314987,50,W2B grid_convert.py CONTROLS: NEAEHL grid reference 181500/123600 (EPSG:28191; about 100 m rounding),no
+PLACES-kh_qumran,places_v2,Q04,31.74183,35.45941,100,places_v2.csv kh_qumran: Pleiades 688011 (Qumran),no
+PLACES-jer_gethsemane,places_v2,E14,31.77942,35.23943,100,places_v2.csv jer_gethsemane: Wikidata Q205333 (Gethsemane),no
+PLACES-jer_kidron_mon,places_v2,E07,31.77701,35.23928,100,places_v2.csv jer_kidron_mon: Wikidata Q12409409 (Kidron monuments),no
+PLACES-jer_east_gate,places_v2,E11,31.77889,35.23694,50,places_v2.csv jer_east_gate: Wikidata Q1367167 (Golden Gate),no
+PLACES-jer_bir_ayyub,places_v2,E04,31.7672,35.23599,100,"places_v2.csv jer_bir_ayyub: Wikidata Q2919936 (En-rogel, alias ביר איוב)",no

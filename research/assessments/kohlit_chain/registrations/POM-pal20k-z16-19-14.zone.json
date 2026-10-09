@@ -1,0 +1,18 @@
+{
+ "kind": "zone observation after the fit was saved (registration_protocol.md section 2 step 5, last sentence)",
+ "fit_saved_utc": "2026-10-09T22:50:33Z (POM-pal20k-z16-19-14.result.json)",
+ "zone_first_viewed_utc": "2026-10-09T22:51:12Z",
+ "registration_status": "rejected (E_total 48.8 m; check error at RP-SPRING 48.6 m; control RMS 36.6 m). It supports no relation. No world geometry goes to the atlas.",
+ "secondary_exploratory_fit": "grid intersections (16, RMS 7.5 m) with the same withheld check: check error 34.9 m, E_total 35.3 m; would also be rejected (POM-pal20k-z16-19-14.secondary_fit.json).",
+ "label": "EVIDENCE for what the 1940s map prints; positions are tile positions converted to EPSG:28191, each uncertain by at least the registration error",
+ "observed_in_zone": [
+  {"item": "trig station 653 (superscript B), height -224.3, red triangle east of the road", "grid_tiles": [192311, 142294], "error_m": 49},
+  {"item": "junction of several dashed tracks", "grid_tiles": [192283, 142402], "error_m": 49},
+  {"item": "main road (red band) along the east side of the strip", "grid_tiles": null, "error_m": 49},
+  {"item": "north end of the hachured tell outline (the strip starts here)", "grid_tiles": [192173, 142230], "error_m": 49},
+  {"item": "contours -175 and -200 and the printed grid line E 192000", "grid_tiles": null, "error_m": null}
+ ],
+ "not_printed_in_zone": "No cave, cistern, well, pit, tomb, cemetery, ruin or quarry symbol or label is printed in the strip. Silence is not absence: a 1:20,000 sheet omits most 1-2 m openings, and a symbol could not date a feature anyway.",
+ "SULTAN-1-precamp-mouth": "not testable by this record: the registration is rejected (E_total far above 2.5 m) and the map prints no opening or grave in the strip. The link stays open and unused for the pending Garstang, PEF, Nigro and aerial records.",
+ "exposure_note": "Sheet 19-14 as served by Palestine Open Maps is now exposed for the zone. The owner's Drive copies of 19-14 (undated and 1942 files) were not opened; if one is a different edition, it is not exposed by this session. The Palestine Open Maps 1940s RAF aerial layer (Holtzman mosaic) was not opened anywhere near the zone."
+}
