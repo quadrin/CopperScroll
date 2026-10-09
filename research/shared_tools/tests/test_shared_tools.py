@@ -14,6 +14,18 @@ from review_capture import CAPTURE_FIELDS, export_review, validate_capture
 
 
 class Retrieval(unittest.TestCase):
+    def test_rebuild_recovers_a_corrupt_generated_database(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            note = root / 'research/sources/control.md'
+            note.parent.mkdir(parents=True)
+            note.write_text('Survey control')
+            cache = root / 'cache'
+            cache.mkdir()
+            (cache / 'evidence.sqlite').write_bytes(b'broken database')
+            core.build_index(root, cache)
+            self.assertTrue(core.search('Survey control', destination=cache, root=root))
+
     def test_new_figure_links_use_the_build_commit(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

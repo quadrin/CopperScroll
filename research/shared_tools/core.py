@@ -8,6 +8,7 @@ import math
 import re
 import sqlite3
 import subprocess
+import tempfile
 import unicodedata
 from pathlib import Path
 from urllib.parse import quote
@@ -178,14 +179,19 @@ def build_index(root=ROOT, destination=CACHE, ocr=False):
     destination.mkdir(parents=True, exist_ok=True)
     ref = repository_ref(root)
     db = destination / 'evidence.sqlite'
-    with sqlite3.connect(db) as con:
-        con.executescript('DROP TABLE IF EXISTS search; DROP TABLE IF EXISTS records; '
-                          'CREATE TABLE records(id TEXT PRIMARY KEY,kind TEXT,path TEXT,line INTEGER,title TEXT,body TEXT,locator TEXT,url TEXT); '
-                          'CREATE VIRTUAL TABLE search USING fts5(id UNINDEXED,title,body,tokenize="unicode61 remove_diacritics 2");')
-        for item in evidence_records(root, ocr, ref):
-            con.execute('INSERT INTO records VALUES(?,?,?,?,?,?,?,?)',
-                        [item[k] for k in ('id', 'kind', 'path', 'line', 'title', 'body')] + [json.dumps(item['locator'], ensure_ascii=False), item['url']])
-            con.execute('INSERT INTO search VALUES(?,?,?)', (item['id'], search_text(item['title']), search_text(item['body'])))
+    with tempfile.NamedTemporaryFile(dir=destination, prefix='evidence-', suffix='.sqlite', delete=False) as file:
+        staged = Path(file.name)
+    try:
+        with sqlite3.connect(staged) as con:
+            con.executescript('CREATE TABLE records(id TEXT PRIMARY KEY,kind TEXT,path TEXT,line INTEGER,title TEXT,body TEXT,locator TEXT,url TEXT); '
+                              'CREATE VIRTUAL TABLE search USING fts5(id UNINDEXED,title,body,tokenize="unicode61 remove_diacritics 2");')
+            for item in evidence_records(root, ocr, ref):
+                con.execute('INSERT INTO records VALUES(?,?,?,?,?,?,?,?)',
+                            [item[k] for k in ('id', 'kind', 'path', 'line', 'title', 'body')] + [json.dumps(item['locator'], ensure_ascii=False), item['url']])
+                con.execute('INSERT INTO search VALUES(?,?,?)', (item['id'], search_text(item['title']), search_text(item['body'])))
+        staged.replace(db)
+    finally:
+        staged.unlink(missing_ok=True)
     # Hash the exact bytes used, independent of workspace or wall-clock time.
     inputs = {p.relative_to(root).as_posix(): digest(p) for p in source_paths(root, ocr)}
     dump({'base_commit': ref, 'ocr_opt_in': ocr, 'inputs': inputs, 'builder_sha256': digest(HERE / 'core.py')}, destination / 'index_inputs.json')
