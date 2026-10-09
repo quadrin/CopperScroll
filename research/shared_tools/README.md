@@ -1,6 +1,6 @@
 # Shared research tools
 
-These tools apply across the project's entries. They import existing source records and preserve their inspection, uncertainty and exposure limits. The initial data is pinned to main commit `26871df2e5e673f590b6fdf031489791dd88c38b`.
+These tools apply across the project's entries. They import existing source records and preserve their inspection, uncertainty and exposure limits. The initial adapters originated at main commit `26871df2e5e673f590b6fdf031489791dd88c38b`. Source-index links now pin the checked-out commit at build time; build from a committed checkout. Without Git, links fall back to that original snapshot.
 
 ## Run
 
@@ -56,6 +56,16 @@ The exposed-plan diagnostic independently recomputes the frozen IV/17 point dist
 The Hyrcania diagnostic reproduces the local transform for the existing failed registration. Its source records a 244.371 m residual at the exposed check and rejects precise feature placement. The adapter preserves that failure; it does not rerun the geodetic conversion or certify an unused observation.
 
 Independent empirical accuracy and human letter-reading accuracy remain untested. Those evaluations need independently established answers, appropriate controls and a record of which observations were reserved before testing. Synthetic holdouts are computational fixtures.
+
+The [published-dimension pilot](plan_pilot/RESULTS.md) now checks newly selected scale-bar chords against three excavation reports. Prediction inputs exclude the prose reference values; input hashes and recomputation reject stale saved results. The analyst saw the references before selecting points, and independent field-reference provenance is unverified. Both measurable primary chords exceed the chosen screening budget; the third plan lacks a reliable second boundary and remains unmeasurable. This supplies documentary agreement errors, with source/datum uncertainty preserved.
+
+Reproduce the staged computation:
+
+```sh
+python research/shared_tools/plan_benchmark.py predict research/shared_tools/plan_pilot/measurements.json --protocol research/shared_tools/plan_pilot/PROTOCOL.md --output research/shared_tools/cache/pilot-predictions.json
+python research/shared_tools/plan_benchmark.py grade research/shared_tools/cache/pilot-predictions.json research/shared_tools/plan_pilot/references.json --output research/shared_tools/cache/pilot-results.json
+python research/shared_tools/cli.py benchmark
+```
 
 ## Blind review and visit capture
 

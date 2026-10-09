@@ -101,6 +101,26 @@ def grade(predictions, references):
             'limits': 'Convenience sample; program-level answer separation only. Digitization intervals omit source, geometry and field error. Screening budget is chosen, not estimated.'}
 
 
+def load_saved(folder):
+    """Reject stale or edited saved predictions and grades."""
+    folder = Path(folder)
+    predictions = json.loads((folder / 'predictions.json').read_text())
+    result = json.loads((folder / 'results.json').read_text())
+    checks = [(predictions['measurements_sha256'], 'measurements.json'),
+              (predictions['protocol_sha256'], 'PROTOCOL.md'),
+              (result['predictions_sha256'], 'predictions.json'),
+              (result['references_sha256'], 'references.json')]
+    if any(sha != digest(folder / path) for sha, path in checks):
+        raise ValueError('Plan pilot is stale: sealed input hashes differ')
+    recomputed = predict(json.loads((folder / 'measurements.json').read_text()))
+    if recomputed['cases'] != predictions['cases']:
+        raise ValueError('Saved plan predictions differ from the frozen measurements')
+    graded = grade(predictions, json.loads((folder / 'references.json').read_text()))
+    if any(result.get(key) != value for key, value in graded.items()):
+        raise ValueError('Saved plan grades differ from the reference comparison')
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)

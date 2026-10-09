@@ -1,8 +1,8 @@
 # Active test
 
-Updated 8 October 2026 UTC / 8 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 9 October 2026 UTC / 8 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (8 October UTC): **partly**: [shared research tools](shared_tools/README.md) implement source/figure retrieval, manuscript correspondence queries, entry/control imports, calibration diagnostics, anonymous-review staging and visit capture validation. Original-line registration, independent empirical calibration and human review still need the specified source records and readers.
+Last session (9 October UTC / 8 October Los Angeles): **obtained**: the [published-dimension plan pilot](shared_tools/plan_pilot/RESULTS.md). Selected floor chords exceed the frozen screening budget; a damaged boundary remains unmeasurable. The shared-tool benchmark now verifies sealed predictions and grades. Independent field accuracy remains untested.
 
 ## Active questions and the observation that decides each
 

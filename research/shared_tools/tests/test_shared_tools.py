@@ -14,6 +14,21 @@ from review_capture import CAPTURE_FIELDS, export_review, validate_capture
 
 
 class Retrieval(unittest.TestCase):
+    def test_new_figure_links_use_the_build_commit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = root / 'research/assets/new/figure_manifest.json'
+            path.parent.mkdir(parents=True)
+            path.write_text(json.dumps({'source_title': 'New control', 'figure': 'Plan 2',
+                                        'repository_path': 'research/assets/new/plan.png',
+                                        'visually_inspected': False}))
+            with patch.object(core, 'repository_ref', return_value='a' * 40):
+                core.build_index(root, root / 'cache')
+            result = core.search('New control', destination=root / 'cache', root=root)[0]
+            self.assertIn('/' + 'a' * 40 + '/', result['url'])
+            self.assertIn('/' + 'a' * 40 + '/', result['locator']['asset_url'])
+            self.assertFalse(result['locator']['inspection_as_recorded'])
+
     def test_exact_locators_and_no_inferred_page_offset(self):
         record = core.locator_record({'file': 'p74.png', 'printed_page': '74*', 'pdf_page': 5,
                                      'original_pdf': 'book.pdf'}, 'research/assets/book/manifest.json')
