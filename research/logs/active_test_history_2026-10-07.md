@@ -139,3 +139,7 @@ Activity is **92 scoped primary-source targets /5 cartographic intakes /93 bound
 ## Status preserved before shared-tools implementation — 8 October 2026
 
 Last session (8 October UTC): **obtained**: two addenda to the Koḥlit rarity count. The [source-4 addendum](rarity/kohlit/stage2/addendum_s4/ADDENDUM.md) read 24 more excavation reports; Qumran now matches two of three conditions (a pit and a cemetery to the north). The [source-2 addendum](rarity/kohlit/stage2/addendum_s2/ADDENDUM.md) read Zertal's survey entries for 78 units. Branch A still has k = 0 (R1, Hel/Rom, survey level), but f = 20 and m = 313 of 333; every new FAIL rests on a "Cisterns: none" field. Branch B gains Qarn Sarṭaba (k = 5). Rarity is still not measurable.
+
+## Status preserved before the plan pilot — 9 October 2026 UTC / 8 October Los Angeles
+
+Last session (8 October UTC): **partly**: [shared research tools](shared_tools/README.md) implement source/figure retrieval, manuscript correspondence queries, entry/control imports, calibration diagnostics, anonymous-review staging and visit capture validation. Original-line registration, independent empirical calibration and human review still need the specified source records and readers.

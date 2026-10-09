@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "evidence_class": "published_dimension_pilot",
+  "cases": [
+    {
+      "id": "dagesh_l1",
+      "scale_pixel_length": 110.0,
+      "status": "measured",
+      "metres_per_pixel": 0.01818181818181818,
+      "primary": {
+        "id": "axis_a",
+        "pixel_length": 140.46351839534705,
+        "predicted_metres": 2.553882152642674,
+        "digitization_only_interval_metres": [
+          2.394096813953457,
+          2.7257267621763597
+        ]
+      },
+      "diagnostic": {
+        "id": "axis_b",
+        "pixel_length": 129.40247292845683,
+        "predicted_metres": 2.3527722350628513,
+        "digitization_only_interval_metres": [
+          2.200043384709769,
+          2.5170277911029593
+        ]
+      }
+    },
+    {
+      "id": "migdal_l32",
+      "scale_pixel_length": 140.0,
+      "status": "measured",
+      "metres_per_pixel": 0.03571428571428571,
+      "primary": {
+        "id": "axis_a",
+        "pixel_length": 120.81390648431164,
+        "predicted_metres": 4.314782374439702,
+        "digitization_only_interval_metres": [
+          4.056038419594155,
+          4.588746561923223
+        ]
+      },
+      "diagnostic": {
+        "id": "axis_b",
+        "pixel_length": 99.92497185388645,
+        "predicted_metres": 3.568748994781659,
+        "digitization_only_interval_metres": [
+          3.330728189371057,
+          3.820771024039943
+        ]
+      }
+    },
+    {
+      "id": "etri_z2",
+      "status": "unmeasurable",
+      "scale_pixel_length": 108.0,
+      "metres_per_pixel": 0.018518518518518517,
+      "available_chords": [
+        {
+          "id": "axis_a",
+          "pixel_length": 274.0,
+          "predicted_metres": 5.074074074074074,
+          "digitization_only_interval_metres": [
+            4.821428571428571,
+            5.346153846153846
+          ]
+        }
+      ],
+      "reason": "Both floor spans are required to identify the longer primary chord"
+    }
+  ],
+  "measurements_sha256": "2565a6baf2dc23c2c4e9eb6e5a15a1877881a3f69553d728e244ad92850d3f5d",
+  "protocol_sha256": "837d8faa166ea16498cd0256f9d2026eb3f3db3cfc7d0489b28ac0f3c7e6c620"
+}
