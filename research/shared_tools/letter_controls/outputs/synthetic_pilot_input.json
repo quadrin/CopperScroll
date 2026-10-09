@@ -1,0 +1,295 @@
+{
+  "mode": "synthetic_software_pilot",
+  "items": [
+    {
+      "code": "F01",
+      "kind": "control",
+      "synthetic": true,
+      "substrate": "original",
+      "source_bytes_verified": true,
+      "original_locus_authenticated": true,
+      "neighboring_original_hebrew": "synthetic anchor",
+      "native_roi": [
+        1,
+        1,
+        5,
+        5
+      ],
+      "width_px": 10,
+      "height_px": 10,
+      "glyph_id": "synthetic-glyph-F01",
+      "observation_lineage": "synthetic-capture",
+      "reuse_authorized": true,
+      "damage_comparability_reviewed": true,
+      "local_comparator_inventory_complete": true,
+      "project_exposure_status": "exposed",
+      "truth": {
+        "value": "ב",
+        "basis": "independent_original_reading",
+        "certain": true,
+        "original_anchor": "synthetic anchor, no real metal",
+        "established_before_scoring": true,
+        "independent_of_scoring_readers": true
+      }
+    },
+    {
+      "code": "F02",
+      "kind": "control",
+      "synthetic": true,
+      "substrate": "original",
+      "source_bytes_verified": true,
+      "original_locus_authenticated": true,
+      "neighboring_original_hebrew": "synthetic anchor",
+      "native_roi": [
+        1,
+        1,
+        5,
+        5
+      ],
+      "width_px": 10,
+      "height_px": 10,
+      "glyph_id": "synthetic-glyph-F02",
+      "observation_lineage": "synthetic-capture",
+      "reuse_authorized": true,
+      "damage_comparability_reviewed": true,
+      "local_comparator_inventory_complete": true,
+      "project_exposure_status": "exposed",
+      "truth": {
+        "value": "כ",
+        "basis": "independent_original_reading",
+        "certain": true,
+        "original_anchor": "synthetic anchor, no real metal",
+        "established_before_scoring": true,
+        "independent_of_scoring_readers": true
+      }
+    },
+    {
+      "code": "F03",
+      "kind": "control",
+      "synthetic": true,
+      "substrate": "original",
+      "source_bytes_verified": true,
+      "original_locus_authenticated": true,
+      "neighboring_original_hebrew": "synthetic anchor",
+      "native_roi": [
+        1,
+        1,
+        5,
+        5
+      ],
+      "width_px": 10,
+      "height_px": 10,
+      "glyph_id": "synthetic-glyph-F03",
+      "observation_lineage": "synthetic-capture",
+      "reuse_authorized": true,
+      "damage_comparability_reviewed": true,
+      "local_comparator_inventory_complete": true,
+      "project_exposure_status": "exposed",
+      "truth": {
+        "value": "ה",
+        "basis": "independent_original_reading",
+        "certain": true,
+        "original_anchor": "synthetic anchor, no real metal",
+        "established_before_scoring": true,
+        "independent_of_scoring_readers": true
+      }
+    },
+    {
+      "code": "F04",
+      "kind": "control",
+      "synthetic": true,
+      "substrate": "original",
+      "source_bytes_verified": true,
+      "original_locus_authenticated": true,
+      "neighboring_original_hebrew": "synthetic anchor",
+      "native_roi": [
+        1,
+        1,
+        5,
+        5
+      ],
+      "width_px": 10,
+      "height_px": 10,
+      "glyph_id": "synthetic-glyph-F04",
+      "observation_lineage": "synthetic-capture",
+      "reuse_authorized": true,
+      "damage_comparability_reviewed": true,
+      "local_comparator_inventory_complete": true,
+      "project_exposure_status": "exposed",
+      "truth": {
+        "value": "ח",
+        "basis": "independent_original_reading",
+        "certain": true,
+        "original_anchor": "synthetic anchor, no real metal",
+        "established_before_scoring": true,
+        "independent_of_scoring_readers": true
+      }
+    },
+    {
+      "code": "F05",
+      "kind": "control",
+      "synthetic": true,
+      "substrate": "original",
+      "source_bytes_verified": true,
+      "original_locus_authenticated": true,
+      "neighboring_original_hebrew": "synthetic anchor",
+      "native_roi": [
+        1,
+        1,
+        5,
+        5
+      ],
+      "width_px": 10,
+      "height_px": 10,
+      "glyph_id": "synthetic-glyph-F05",
+      "observation_lineage": "synthetic-capture",
+      "reuse_authorized": true,
+      "damage_comparability_reviewed": true,
+      "local_comparator_inventory_complete": true,
+      "project_exposure_status": "exposed",
+      "truth": {
+        "value": "ת",
+        "basis": "independent_original_reading",
+        "certain": true,
+        "original_anchor": "synthetic anchor, no real metal",
+        "established_before_scoring": true,
+        "independent_of_scoring_readers": true
+      }
+    }
+  ],
+  "readers": [
+    {
+      "reader_id": "SYNTHETIC_A",
+      "synthetic": true,
+      "independent_human": true,
+      "epigraphic_experience_recorded": true,
+      "independent_of": [
+        "SYNTHETIC_B"
+      ]
+    },
+    {
+      "reader_id": "SYNTHETIC_B",
+      "synthetic": true,
+      "independent_human": true,
+      "epigraphic_experience_recorded": true,
+      "independent_of": [
+        "SYNTHETIC_A"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "code": "F01",
+      "reader_id": "SYNTHETIC_A",
+      "synthetic": true,
+      "decision": "read",
+      "label": "ב",
+      "grade": "certain",
+      "stage": 1,
+      "locked_before_stage2": true,
+      "locked_at_utc": "synthetic-time",
+      "recognized": false,
+      "prior_exposure": false,
+      "prior_exposure_audited": true
+    },
+    {
+      "code": "F02",
+      "reader_id": "SYNTHETIC_A",
+      "synthetic": true,
+      "decision": "read",
+      "label": "ב",
+      "grade": "certain",
+      "stage": 1,
+      "locked_before_stage2": true,
+      "locked_at_utc": "synthetic-time",
+      "recognized": false,
+      "prior_exposure": false,
+      "prior_exposure_audited": true
+    },
+    {
+      "code": "F03",
+      "reader_id": "SYNTHETIC_A",
+      "synthetic": true,
+      "decision": "abstain",
+      "label": null,
+      "grade": "illegible",
+      "stage": 1,
+      "locked_before_stage2": true,
+      "locked_at_utc": "synthetic-time",
+      "recognized": false,
+      "prior_exposure": false,
+      "prior_exposure_audited": true
+    },
+    {
+      "code": "F04",
+      "reader_id": "SYNTHETIC_A",
+      "synthetic": true,
+      "decision": "unknown",
+      "label": null,
+      "grade": "illegible",
+      "stage": 1,
+      "locked_before_stage2": true,
+      "locked_at_utc": "synthetic-time",
+      "recognized": false,
+      "prior_exposure": false,
+      "prior_exposure_audited": true
+    },
+    {
+      "code": "F01",
+      "reader_id": "SYNTHETIC_B",
+      "synthetic": true,
+      "decision": "read",
+      "label": "כ",
+      "grade": "certain",
+      "stage": 1,
+      "locked_before_stage2": true,
+      "locked_at_utc": "synthetic-time",
+      "recognized": false,
+      "prior_exposure": false,
+      "prior_exposure_audited": true
+    },
+    {
+      "code": "F02",
+      "reader_id": "SYNTHETIC_B",
+      "synthetic": true,
+      "decision": "read",
+      "label": "כ",
+      "grade": "certain",
+      "stage": 1,
+      "locked_before_stage2": true,
+      "locked_at_utc": "synthetic-time",
+      "recognized": false,
+      "prior_exposure": false,
+      "prior_exposure_audited": true
+    },
+    {
+      "code": "F03",
+      "reader_id": "SYNTHETIC_B",
+      "synthetic": true,
+      "decision": "read",
+      "label": "ה",
+      "grade": "certain",
+      "stage": 1,
+      "locked_before_stage2": true,
+      "locked_at_utc": "synthetic-time",
+      "recognized": false,
+      "prior_exposure": false,
+      "prior_exposure_audited": true
+    },
+    {
+      "code": "F04",
+      "reader_id": "SYNTHETIC_B",
+      "synthetic": true,
+      "decision": "unknown",
+      "label": null,
+      "grade": "illegible",
+      "stage": 1,
+      "locked_before_stage2": true,
+      "locked_at_utc": "synthetic-time",
+      "recognized": false,
+      "prior_exposure": false,
+      "prior_exposure_audited": true
+    }
+  ],
+  "notice": "Fabricated software fixtures. All authentication/human flags simulate inputs; no real source or human supplied them."
+}

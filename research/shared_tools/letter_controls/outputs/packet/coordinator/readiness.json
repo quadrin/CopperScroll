@@ -1,0 +1,28 @@
+{
+  "seed": 20261009,
+  "seed_role": "reproducible exploratory staging order; register a fresh immutable final manifest before future evidence release",
+  "source_inputs": {
+    "research/shared_tools/mapping_claims.json": "cd5f723570c76e27696af07e5d109e034e3110450f06315fbc0d29178c10b00c",
+    "research/sources/usc_copper_scroll_images/index.csv": "6fd093d3f015ca117ba96ecc01e0a80c2a685127a5ba9de1ef56e7f8852f6925",
+    "research/sources/usc_copper_scroll_images/cuts_01_10_preview_manifest.csv": "4dd4305fcc322eab7141d5e2d4bc1d6d95676606169fdb2488c947a62d3435df",
+    "research/sources/usc_copper_scroll_images/remaining_preview_manifest.csv": "6195657c1aaa45ff1504c97c837450e7bd8873650e1ccbc71182a509480ee1ba",
+    "registration/plate_check/original_photo_audit_2026-10-06.json": "0b73945a84d80ce91ae87566e5373fc4b7de4ea04ff101dceea3a89527ef5536",
+    "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md": "0e19467c618f80438c12445b7380f77f5c59b7fe241da9c80878601e2e26a2c5"
+  },
+  "source_key_sha256": "10e53eded13dc5e38b440ece0ba33aad28319a2c8f4ddaf88b444d6203ccbf19",
+  "manifest_sha256": "673534134cec367b9fb748730c5ce035080e5b414fa2e6123324a0f41f062aa7",
+  "dispatch": "not_sent",
+  "ready": false,
+  "gates": [
+    "authorized original frames with current hashes",
+    "authenticated locus and bounded native ROIs",
+    "independently anchored control truths",
+    "complete comparator inventory and comparability audit",
+    "item-level lineage and project/per-reader exposure audit",
+    "two independent qualified human readers",
+    "locked Stage 1 before targeted Stage 2",
+    "frozen final packet and protocol hashes before release"
+  ],
+  "control_glyphs_available": [],
+  "accuracy_obtained": false
+}

@@ -1,8 +1,8 @@
 # Active test
 
-Updated 8 October 2026 UTC / 8 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 9 October 2026 UTC / 8 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (8 October UTC): **obtained**: Puech 2015 pages for every atlas title and landmark that differs from the text shown. Sixteen more entries (6, 7, 13, 14, 16, 17, 27, 29, 33, 34, 43, 47, 49, 50, 53, 56) now say in the atlas which edition reading they follow, and their reading records add Puech 2015; the descriptions of entries 4, 8 and 39 and the Hebrew label of entry 16 now match the text; at II 1 Puech 2015 reads "the salt", not the Millo. The scroll notes, two schematics and the atlas site were rebuilt.
+Last session (9 October UTC): **partly**: the [case-study methods](shared_tools/README.md#case-study-methods) produced source-linked feature witnesses, separating-observation sets, published-feature recovery, letter-control eligibility, repeated text constraints and a coverage/registration audit. Sartaba’s condition agreement uses different pit witnesses. The XII 10 planner requires the box letter, medial cluster and ordered tail/extra signs to distinguish the registered strings. Independent original-letter truth, qualified human responses and unused field validation remain evidence dependencies.
 
 ## Active questions and the observation that decides each
 
@@ -47,7 +47,7 @@ Full request texts: [7 October outreach](agent_review_2026-10-07/followup/F_outr
 
 ## Next evidence to obtain
 
-An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or Manchester C.21–23 by reply, or the EDF copy and X-rays at ÉBAF during the 18–24 October visit. Then the Meinardus scan expected mid-October.
+An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or Manchester C.21–23 by reply, or the EDF copy and X-rays at ÉBAF during the 18–24 October visit. Score the box letter, medial cluster and ordered tail/extra signs separately under the frozen protocol and [observation plan](feature_workbench/decisions/separation/RESULTS.md). Then the Meinardus scan expected mid-October.
 
 ## Key reports
 

@@ -1,0 +1,100 @@
+{
+  "scope": "Exploratory source-feature pairings only. Prior coder sheets and addendum were inspected; these pairings are not holdouts or independent confirmations.",
+  "source": "../stage2/addendum_s2/ADDENDUM.md and the pinned A/B sheets, especially S1283 notes",
+  "feature_aliases": [
+    {
+      "unit_id": "S1283",
+      "claim_id": "S1283:Herodian-peristyle-small-pool",
+      "ids": {
+        "A": [
+          "s2z_f3"
+        ],
+        "B": [
+          "f16"
+        ]
+      },
+      "lineage": "Sartaba 1981–84 excavation, Herodian peristyle, reported by Zertal Vol.4 p.471",
+      "basis": "Both coders name the same small pool in the Herodian peristyle. The same source gives east-part location. This pairs a documented feature group and does not independently verify that archaeological phase."
+    },
+    {
+      "unit_id": "S1283",
+      "claim_id": "S1283:SWP-cemented-cave-cisterns",
+      "ids": {
+        "A": [
+          "f11"
+        ],
+        "B": [
+          "f20"
+        ]
+      },
+      "lineage": "SWP Kurn Surtubeh field description, Mem II p.398",
+      "basis": "Both coders name the cemented cave-cisterns supplied by the aqueduct. A transfers the aqueduct's north-side direction to the cisterns; B gives the cisterns no position."
+    },
+    {
+      "unit_id": "S1283",
+      "claim_id": "S1283:northern-robbing-pits",
+      "ids": {
+        "A": [
+          "s2z_f4",
+          "f12"
+        ],
+        "B": [
+          "f14",
+          "f21"
+        ]
+      },
+      "lineage": "Sartaba summit pits described in SWP Mem II p.397 and Zertal Vol.4 p.461; explicit identification in the B sheet's notes",
+      "basis": "Zertal identifies the SWP pits with the robbing pits. A accepts no unit-relative north direction; B codes the northern-area phrase as north. The publication deduces 19th-century digging while leaving other possibilities, so both retain U."
+    },
+    {
+      "unit_id": "S1492",
+      "claim_id": "S1492:Area-M-silo-2009",
+      "ids": {
+        "A": [
+          "s4_s4f3"
+        ],
+        "B": [
+          "f19"
+        ]
+      },
+      "lineage": "Finkelstein 1985 Shiloh excavation, Area M silo 2009, p.155 / fig.12 p.156",
+      "basis": "Both coders describe the Area M Iron Age I silo reused in the Roman period; figure/page wording differs between citations."
+    },
+    {
+      "unit_id": "S1492",
+      "claim_id": "S1492:Area-K-silo-1207",
+      "ids": {
+        "A": [
+          "s4_s4f5"
+        ],
+        "B": [
+          "f21"
+        ]
+      },
+      "lineage": "Finkelstein 1985 Shiloh excavation, Area K silo 1207, fig.11 p.154",
+      "basis": "Both coders identify silo 1207 in Area K; citations give the same figure and page."
+    },
+    {
+      "unit_id": "E334",
+      "claim_id": "E334:SWP-24-by-40-foot-spring-reservoir",
+      "ids": {
+        "A": [
+          "f89"
+        ],
+        "B": [
+          "f88"
+        ]
+      },
+      "lineage": "SWP Tell es Sultan spring reservoir description, Mem III entry beginning p.220; A locates passage p.223",
+      "basis": "Both feature records use the identical 24-by-40-foot reservoir wording and east direction. Their page citations differ (A p.223; B entry-start p.220); original passage-page check remains outstanding. Same documented reservoir, date U."
+    }
+  ],
+  "limits": [
+    "Computed citation/class keys establish compatibility of a publication location and feature class only. They establish no feature identity, even if each coder supplies only one feature at that key; separate features on the same page can share a key. Exact documentary identity uses only the explicitly curated source-feature anchors above.",
+    "WBADB is a compiled record; separate WBADB/source-2/source-4 descriptions need upstream lineage checking before counting independent support.",
+    "A D date code means the coded feature predates 135 CE under the frozen rule; D does not establish contemporaneity among selected features.",
+    "A U date code passes the frozen rarity screen but establishes no ancient date.",
+    "The survey branch permits separate northern pit and grave witnesses; its positive status does not establish graves at a particular pit mouth.",
+    "Packet geometries and source excerpts are absent from the repository; a missing grid witness cannot be reconstructed from its condition status alone."
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "mode": "exploratory_conditional_planning",
+  "dependencies": [
+    {
+      "id": "xii10-native",
+      "kind": "acquisition",
+      "status": "pending",
+      "requires": [],
+      "description": "Authenticated native XII10 frame from existing Manchester/USC requests or the recorded EBAF visit; no frame is asserted received.",
+      "source_path": "research/ACTIVE_TEST.md",
+      "route_verified": "Request/visit route recorded; exact diagnostic-frame lineage remains unverified."
+    },
+    {
+      "id": "xii10-frame-authentication",
+      "kind": "gate",
+      "status": "future_gate",
+      "requires": [
+        "xii10-native"
+      ],
+      "description": "Authenticate target from neighboring text and physical anchors; record cut, orientation, native dimensions and original exposure lineage.",
+      "source_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md"
+    },
+    {
+      "id": "xii10-human-readers",
+      "kind": "gate",
+      "status": "future_gate",
+      "requires": [
+        "xii10-frame-authentication"
+      ],
+      "description": "Two independent qualified human readings locked before comparison; comparable intact strokes, unadjusted original, certain agreement and decisive-absence/damage gates.",
+      "source_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md"
+    },
+    {
+      "id": "xii10-exposure-audit",
+      "kind": "gate",
+      "status": "future_gate",
+      "requires": [
+        "xii10-native"
+      ],
+      "description": "Record exposure. Unverified or exposed evidence supports exploratory reading only; independent-confirmation claims require a reserved demonstrably unused observation.",
+      "source_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md"
+    },
+    {
+      "id": "kallai-pages",
+      "kind": "acquisition",
+      "status": "pending",
+      "requires": [],
+      "description": "Kallai 1972 pp.172–173 with sites65–66, title leaf, native captions and relevant plans. Exact pages remain unread; access route is a catalogue, not verified digital availability.",
+      "source_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md"
+    },
+    {
+      "id": "kallai-feature-crosswalk",
+      "kind": "gate",
+      "status": "future_gate",
+      "requires": [
+        "kallai-pages"
+      ],
+      "description": "Identify the same pool and tell reference. Keep the crypt basin separate unless a source-controlled physical crosswalk establishes identity.",
+      "source_path": "research/feature_workbench/decisions/plans.json"
+    },
+    {
+      "id": "kenyon-plates",
+      "kind": "acquisition",
+      "status": "pending",
+      "requires": [],
+      "description": "Kenyon III separate eastern section at local37.50–38.00mN/8.17mH and Plate111b with captions/errata; section plate number is unknown.",
+      "source_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md"
+    },
+    {
+      "id": "kenyon-specific-mouth",
+      "kind": "gate",
+      "status": "future_gate",
+      "requires": [
+        "kenyon-plates"
+      ],
+      "description": "Join particular quarry pit mouths to particular graves in one field frame; before testing, enumerate and freeze the source-justified retained individual joins inside the published groups. A negative group-level result requires adequate observation of every retained join; a miss for one opening rejects that opening only. Broad north-slope co-location cannot establish at-mouth.",
+      "source_path": "research/feature_workbench/decisions/plans.json"
+    },
+    {
+      "id": "kenyon-specific-dating",
+      "kind": "acquisition",
+      "status": "unscoped",
+      "requires": [
+        "kenyon-plates"
+      ],
+      "description": "Linked feature-specific dating/contact record for the selected quarry opening and surviving graves. The unread section may not contain it; no exact accession or acquisition route is verified.",
+      "source_path": "research/feature_workbench/decisions/plans.json"
+    },
+    {
+      "id": "historical-basin-dated-contact",
+      "kind": "acquisition",
+      "status": "unscoped",
+      "requires": [],
+      "description": "A dated physical construction/accessibility contact for the historical irregular basin itself. Dorrell p.112 lowest spring-house wall course is a different feature and cannot date the basin without a demonstrated join. No exact record accession is verified.",
+      "source_path": "research/agent_review_2026-10-07/followup/A_jericho_spring_reservoir.md"
+    },
+    {
+      "id": "archaeology-specification",
+      "kind": "gate",
+      "status": "future_gate",
+      "requires": [],
+      "description": "Fix exact roles, phase windows, reference conventions and decision rule before reserved evidence; retain all alternatives and audit prior exposure. This new planning segmentation remains exploratory.",
+      "source_path": "AGENTS.md"
+    }
+  ],
+  "reading_observations": [
+    {
+      "id": "xii10-box",
+      "label": "Second-letter box: bet/kaf/other",
+      "outcomes": [
+        "ב",
+        "כ",
+        "other"
+      ],
+      "dependencies": [
+        "xii10-human-readers",
+        "xii10-exposure-audit"
+      ],
+      "source_task": "decisions-xii10",
+      "source_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md",
+      "source_section": "Evidence and independent reading; stage2 box-letter identity",
+      "condition": "Decisive identity under the frozen human/frame/damage gates; disagreement or unreadable copper produces unresolved.",
+      "consequences": {
+        "ב": "Reject complete strings requiring kaf only.",
+        "כ": "Reject complete strings requiring bet only.",
+        "other": "Reject all seven registered strings; a new reading set needs a separately dated exploratory specification."
+      },
+      "remaining_unknowns": "Every unscored component, complete-word identity, meaning and geography."
+    },
+    {
+      "id": "xii10-medial",
+      "label": "Medial ordered cluster: nun/tsade/yod+nun/waw+nun/other",
+      "outcomes": [
+        "נ",
+        "צ",
+        "ינ",
+        "ונ",
+        "other"
+      ],
+      "dependencies": [
+        "xii10-human-readers",
+        "xii10-exposure-audit"
+      ],
+      "source_task": "decisions-xii10",
+      "source_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md",
+      "source_section": "Source basis R1–R7; stage2 nun/tsade/yod-waw+nun and independent extra sign",
+      "condition": "Identity and additional-letter absence both decisive, including ligature and intact-region gates. An incised duplicate strike is not automatically an extra letter.",
+      "consequences": {
+        "decisive": "Reject strings with a conflicting required medial cluster.",
+        "other": "Reject the finite registered set and record the unanticipated marks."
+      },
+      "remaining_unknowns": "Second letter, ordered tail including any extra sign, all meaning and geography."
+    },
+    {
+      "id": "xii10-tail",
+      "label": "Ordered tail after the medial cluster: he/heth/he+bet/other",
+      "outcomes": [
+        "ה",
+        "ח",
+        "הב",
+        "other"
+      ],
+      "dependencies": [
+        "xii10-human-readers",
+        "xii10-exposure-audit"
+      ],
+      "source_task": "decisions-xii10",
+      "source_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md",
+      "source_section": "Source basis R1–R7; stage2 final-letter and additional signs before the next word",
+      "condition": "The complete terminal suffix, including decisive absence/presence of R7 extra bet, is readable. Tail is a source-string segmentation; its position relative to the saw cut must be authenticated, not assumed. Secure taw is other and rejects this finite set.",
+      "consequences": {
+        "decisive": "Reject strings with a conflicting required suffix.",
+        "other": "Reject all seven strings; report the observed suffix without inventing a word."
+      },
+      "remaining_unknowns": "Box and medial identities; meaning, cancellation intent and geography."
+    }
+  ],
+  "relationship_observations": [
+    {
+      "id": "kallai-pool-east",
+      "label": "Locate Kallai pool relative to Marjama tell",
+      "predicate_id": "pool-east",
+      "subject_feature_id": "marjama-kallai-pool",
+      "object_feature_id": "marjama-tell",
+      "outcomes": [
+        "satisfied",
+        "contradicted"
+      ],
+      "window_sensitive": false,
+      "dependencies": [
+        "kallai-feature-crosswalk",
+        "archaeology-specification"
+      ],
+      "source_task": "decisions-kallai-pool",
+      "source_path": "research/feature_workbench/relationships/model.json",
+      "source_predicate": "pool-east",
+      "condition": "An authentic same-feature plan or qualitative source relation establishes east versus contradicted east; no new angular tolerance is invented.",
+      "prediction_kind": "Required relation for exactly matched roles only; all alternative assignments and optional constraints remain unknown.",
+      "consequences": {
+        "satisfied": "Retain the exact compatible branch for further comparison; every unknown and alternative remains.",
+        "contradicted": "Reject only branches requiring this exactly matched relation, after adequate coverage and applicable phase gates.",
+        "early": "Retain both exposed early/extended windows for this relation only.",
+        "extended-only": "Reject early-window branches only; extended-window families still survive.",
+        "neither": "Reject this exactly matched feature-period assignment across both retained windows.",
+        "unresolved": "Retain all branches; missing documentation is never archaeological absence."
+      },
+      "reopening_scope": "A named new observation or documented analytical correction reopens only the fixed assignment/relation; no whole-site or deposit inference."
+    },
+    {
+      "id": "kallai-pool-window",
+      "label": "Dated accessibility of that same Kallai pool",
+      "predicate_id": "pool-period",
+      "subject_feature_id": "marjama-kallai-pool",
+      "object_feature_id": null,
+      "outcomes": [
+        "early",
+        "extended-only",
+        "neither"
+      ],
+      "window_sensitive": true,
+      "dependencies": [
+        "kallai-feature-crosswalk",
+        "archaeology-specification"
+      ],
+      "source_task": "decisions-kallai-pool",
+      "source_path": "research/feature_workbench/relationships/model.json",
+      "source_predicate": "pool-period",
+      "condition": "Feature-specific dated construction/use and exhaustive exclusion when needed; settlement-period headings and source silence are unresolved. A location-only page cannot satisfy this observation.",
+      "prediction_kind": "Required relation for exactly matched roles only; all alternative assignments and optional constraints remain unknown.",
+      "consequences": {
+        "satisfied": "Retain the exact compatible branch for further comparison; every unknown and alternative remains.",
+        "contradicted": "Reject only branches requiring this exactly matched relation, after adequate coverage and applicable phase gates.",
+        "early": "Retain both exposed early/extended windows for this relation only.",
+        "extended-only": "Reject early-window branches only; extended-window families still survive.",
+        "neither": "Reject this exactly matched feature-period assignment across both retained windows.",
+        "unresolved": "Retain all branches; missing documentation is never archaeological absence."
+      },
+      "reopening_scope": "A named new observation or documented analytical correction reopens only the fixed assignment/relation; no whole-site or deposit inference."
+    },
+    {
+      "id": "historical-basin-window",
+      "label": "Dated accessibility of historical irregular basin",
+      "predicate_id": "pool-period",
+      "subject_feature_id": "jericho-historical-basin",
+      "object_feature_id": null,
+      "outcomes": [
+        "early",
+        "extended-only",
+        "neither"
+      ],
+      "window_sensitive": true,
+      "dependencies": [
+        "historical-basin-dated-contact",
+        "archaeology-specification"
+      ],
+      "source_task": null,
+      "source_path": "research/feature_workbench/relationships/model.json",
+      "source_predicate": "pool-period",
+      "condition": "The dated contact must identify the basin itself; adjacent spring-house wall chronology remains distinct.",
+      "prediction_kind": "Required relation for exactly matched roles only; all alternative assignments and optional constraints remain unknown.",
+      "consequences": {
+        "satisfied": "Retain the exact compatible branch for further comparison; every unknown and alternative remains.",
+        "contradicted": "Reject only branches requiring this exactly matched relation, after adequate coverage and applicable phase gates.",
+        "early": "Retain both exposed early/extended windows for this relation only.",
+        "extended-only": "Reject early-window branches only; extended-window families still survive.",
+        "neither": "Reject this exactly matched feature-period assignment across both retained windows.",
+        "unresolved": "Retain all branches; missing documentation is never archaeological absence."
+      },
+      "reopening_scope": "A named new observation or documented analytical correction reopens only the fixed assignment/relation; no whole-site or deposit inference."
+    },
+    {
+      "id": "quarry-pit-window",
+      "label": "Dated accessibility of a particular later quarry opening",
+      "predicate_id": "pit-period",
+      "subject_feature_id": "jericho-later-quarry-pits",
+      "object_feature_id": null,
+      "outcomes": [
+        "early",
+        "extended-only",
+        "neither"
+      ],
+      "window_sensitive": true,
+      "dependencies": [
+        "kenyon-specific-mouth",
+        "kenyon-specific-dating",
+        "archaeology-specification"
+      ],
+      "source_task": "decisions-kenyon-section",
+      "source_path": "research/feature_workbench/relationships/model.json",
+      "source_predicate": "pit-period",
+      "condition": "Later-than-grave establishes sequence only. The exact pit must have bounded early-window usability/exclusion, not a date transferred from its graves. A group-level contradiction requires coverage across every source-justified retained individual join and applicable state; a single-mouth miss remains scoped to that individual.",
+      "prediction_kind": "Required relation for exactly matched roles only; all alternative assignments and optional constraints remain unknown.",
+      "consequences": {
+        "satisfied": "Retain the exact compatible branch for further comparison; every unknown and alternative remains.",
+        "contradicted": "Reject only branches requiring this exactly matched relation, after adequate coverage and applicable phase gates.",
+        "early": "Retain both exposed early/extended windows for this relation only.",
+        "extended-only": "Reject early-window branches only; extended-window families still survive.",
+        "neither": "Reject this exactly matched feature-period assignment across both retained windows.",
+        "unresolved": "Retain all branches; missing documentation is never archaeological absence."
+      },
+      "reopening_scope": "A named new observation or documented analytical correction reopens only the fixed assignment/relation; no whole-site or deposit inference."
+    },
+    {
+      "id": "quarry-graves-at-mouth",
+      "label": "Particular surviving grave mouths at that quarry mouth",
+      "predicate_id": "graves-at-mouth",
+      "subject_feature_id": "jericho-north-graves",
+      "object_feature_id": "jericho-later-quarry-pits",
+      "outcomes": [
+        "satisfied",
+        "contradicted"
+      ],
+      "window_sensitive": false,
+      "dependencies": [
+        "kenyon-specific-mouth",
+        "archaeology-specification"
+      ],
+      "source_task": "decisions-kenyon-section",
+      "source_path": "research/feature_workbench/relationships/model.json",
+      "source_predicate": "graves-at-mouth",
+      "condition": "Source-controlled physical mouth relation in one frame. Same northern sector is insufficient; no metric proximity threshold is invented. A group-level contradiction requires coverage across every source-justified retained individual join and applicable state; a single-mouth miss remains scoped to that individual.",
+      "prediction_kind": "Required relation for exactly matched roles only; all alternative assignments and optional constraints remain unknown.",
+      "consequences": {
+        "satisfied": "Retain the exact compatible branch for further comparison; every unknown and alternative remains.",
+        "contradicted": "Reject only branches requiring this exactly matched relation, after adequate coverage and applicable phase gates.",
+        "early": "Retain both exposed early/extended windows for this relation only.",
+        "extended-only": "Reject early-window branches only; extended-window families still survive.",
+        "neither": "Reject this exactly matched feature-period assignment across both retained windows.",
+        "unresolved": "Retain all branches; missing documentation is never archaeological absence."
+      },
+      "reopening_scope": "A named new observation or documented analytical correction reopens only the fixed assignment/relation; no whole-site or deposit inference."
+    },
+    {
+      "id": "quarry-joint-access",
+      "label": "Joint accessibility of exact quarry mouth and graves",
+      "predicate_id": "joint-accessibility",
+      "subject_feature_id": "jericho-later-quarry-pits",
+      "object_feature_id": "jericho-north-graves",
+      "outcomes": [
+        "early",
+        "extended-only",
+        "neither"
+      ],
+      "window_sensitive": true,
+      "dependencies": [
+        "kenyon-specific-mouth",
+        "kenyon-specific-dating",
+        "archaeology-specification"
+      ],
+      "source_task": "decisions-kenyon-section",
+      "source_path": "research/feature_workbench/relationships/model.json",
+      "source_predicate": "joint-accessibility",
+      "condition": "The dated joint accessible state needs direct contacts; separate feature dates or truncation alone remain unresolved. A group-level contradiction requires coverage across every source-justified retained individual join and applicable state; a single-mouth miss remains scoped to that individual.",
+      "prediction_kind": "Required relation for exactly matched roles only; all alternative assignments and optional constraints remain unknown.",
+      "consequences": {
+        "satisfied": "Retain the exact compatible branch for further comparison; every unknown and alternative remains.",
+        "contradicted": "Reject only branches requiring this exactly matched relation, after adequate coverage and applicable phase gates.",
+        "early": "Retain both exposed early/extended windows for this relation only.",
+        "extended-only": "Reject early-window branches only; extended-window families still survive.",
+        "neither": "Reject this exactly matched feature-period assignment across both retained windows.",
+        "unresolved": "Retain all branches; missing documentation is never archaeological absence."
+      },
+      "reopening_scope": "A named new observation or documented analytical correction reopens only the fixed assignment/relation; no whole-site or deposit inference."
+    },
+    {
+      "id": "quarry-opening-north",
+      "label": "Defined quarry side opening faces north",
+      "predicate_id": "opening-north",
+      "subject_feature_id": "jericho-later-quarry-pits",
+      "object_feature_id": null,
+      "outcomes": [
+        "satisfied",
+        "contradicted"
+      ],
+      "window_sensitive": false,
+      "dependencies": [
+        "kenyon-specific-mouth",
+        "archaeology-specification",
+        "kenyon-specific-dating"
+      ],
+      "source_task": "decisions-kenyon-section",
+      "source_path": "research/feature_workbench/relationships/model.json",
+      "source_predicate": "opening-north",
+      "condition": "A defined side entrance must have a source-controlled facing direction. A vertical shaft has no facing azimuth; unknown true north remains unresolved. A group-level contradiction requires coverage across every source-justified retained individual join and applicable state; a single-mouth miss remains scoped to that individual.",
+      "prediction_kind": "Required relation for exactly matched roles only; all alternative assignments and optional constraints remain unknown.",
+      "consequences": {
+        "satisfied": "Retain the exact compatible branch for further comparison; every unknown and alternative remains.",
+        "contradicted": "Reject only branches requiring this exactly matched relation, after adequate coverage and applicable phase gates.",
+        "early": "Retain both exposed early/extended windows for this relation only.",
+        "extended-only": "Reject early-window branches only; extended-window families still survive.",
+        "neither": "Reject this exactly matched feature-period assignment across both retained windows.",
+        "unresolved": "Retain all branches; missing documentation is never archaeological absence."
+      },
+      "reopening_scope": "A named new observation or documented analytical correction reopens only the fixed assignment/relation; no whole-site or deposit inference."
+    },
+    {
+      "id": "quarry-opening-concealed",
+      "label": "Exact quarry opening concealed in the applicable state",
+      "predicate_id": "opening-concealed",
+      "subject_feature_id": "jericho-later-quarry-pits",
+      "object_feature_id": null,
+      "outcomes": [
+        "satisfied",
+        "contradicted"
+      ],
+      "window_sensitive": false,
+      "dependencies": [
+        "kenyon-specific-mouth",
+        "kenyon-specific-dating",
+        "archaeology-specification"
+      ],
+      "source_task": "decisions-kenyon-section",
+      "source_path": "research/feature_workbench/relationships/model.json",
+      "source_predicate": "opening-concealed",
+      "condition": "Concealment must be tied to a relevant dated opening state; later rubble cannot supply ancient blocking. A group-level contradiction requires coverage across every source-justified retained individual join and applicable state; a single-mouth miss remains scoped to that individual.",
+      "prediction_kind": "Required relation for exactly matched roles only; all alternative assignments and optional constraints remain unknown.",
+      "consequences": {
+        "satisfied": "Retain the exact compatible branch for further comparison; every unknown and alternative remains.",
+        "contradicted": "Reject only branches requiring this exactly matched relation, after adequate coverage and applicable phase gates.",
+        "early": "Retain both exposed early/extended windows for this relation only.",
+        "extended-only": "Reject early-window branches only; extended-window families still survive.",
+        "neither": "Reject this exactly matched feature-period assignment across both retained windows.",
+        "unresolved": "Retain all branches; missing documentation is never archaeological absence."
+      },
+      "reopening_scope": "A named new observation or documented analytical correction reopens only the fixed assignment/relation; no whole-site or deposit inference."
+    }
+  ],
+  "limits": [
+    "This is a new derived exploratory dataset, built from previously exposed registries and protocol. No new primary image, archaeological observation, custodian reply or holdout is asserted.",
+    "Pair counts describe finite logical alternatives after nuisance/equivalence collapse. They supply neither probabilities, confidence, regional rarity nor cross-project utility.",
+    "Guaranteed pair separation means disjoint compatible decisive-outcome sets conditional on every observation gate succeeding. A possible unresolved result prevents unconditional guaranteed identification.",
+    "Nuisance windows are unioned within assignment/reading families before identical signatures collapse. Model weights and duplicated parameter branches cannot increase influence.",
+    "Joint sets preserve the explicit nuisance-branch correlations; unrecorded within-branch correlations remain unknown. Different classes can have overlapping predictions, and an unknown expands to every decisive outcome. Partial empirical results require an explicit outcome-set preview rather than a forced category.",
+    "The seven acquisition tasks in the existing queue concern several independent claims. Their generic compatible/contradicted gate outcomes cannot be treated as mutually exclusive predictions of Koḥlit sites.",
+    "The finite Koḥlit roster is an implementation pilot, not a regional denominator. All equally available geographic alternatives, an independently reserved prediction and exposure audits remain necessary for identification.",
+    "Named dependency means a conditional plan with a precise source route; record survival, usability, access and timing are unverified. Unscoped dependencies are excluded from the named-dependency scenario.",
+    "No plans, requests, historical outcomes, rarity registrations, atlas data or deposit statuses are changed by this planner or an outcome preview.",
+    "The three letter observations share an image acquisition bundle and reader gates; observational component count is different from acquisition count. Existing frozen full-word success conditions still require every component to be decisive."
+  ],
+  "base_commit": "897733283606988581155a3c1df0cd235cb7bea9",
+  "as_of_utc": "2026-10-09"
+}

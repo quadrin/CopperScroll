@@ -1,0 +1,183 @@
+{
+  "schema": "copper-scroll-pr31-readonly-reproduction-v1",
+  "source_pr": "https://github.com/quadrin/CopperScroll/pull/31",
+  "source_commit": "7504f1f42014a745e1df044abc86d2bba0b90e42",
+  "scope": "Recompute existing source selections only; no new image or endpoint selection. The PR31 branch remains untouched.",
+  "source_files_sha256": {
+    "plan_benchmark.py": "9f53afc8b830b0706f4d791d2c1430e824900a2ab28bfaa472d32ac7458be875",
+    "measurements.json": "b2e9d00cf5d0be7c4480c5a84a9001ceefb30acb54b2c0e16282a2cdb70fc1cd",
+    "references.json": "e5322512acc4533ce999b666fe7ffbd547fa4546352091a745f3e7278cbd8c29"
+  },
+  "predictions": {
+    "schema": 1,
+    "evidence_class": "published_dimension_pilot",
+    "cases": [
+      {
+        "id": "dagesh_l1",
+        "scale_pixel_length": 110.0,
+        "status": "measured",
+        "metres_per_pixel": 0.01818181818181818,
+        "primary": {
+          "id": "axis_a",
+          "pixel_length": 140.46351839534705,
+          "predicted_metres": 2.553882152642674,
+          "digitization_only_interval_metres": [
+            2.394096813953457,
+            2.7257267621763597
+          ]
+        },
+        "diagnostic": {
+          "id": "axis_b",
+          "pixel_length": 129.40247292845683,
+          "predicted_metres": 2.3527722350628513,
+          "digitization_only_interval_metres": [
+            2.200043384709769,
+            2.5170277911029593
+          ]
+        }
+      },
+      {
+        "id": "migdal_l32",
+        "scale_pixel_length": 140.0,
+        "status": "measured",
+        "metres_per_pixel": 0.03571428571428571,
+        "primary": {
+          "id": "axis_a",
+          "pixel_length": 120.81390648431164,
+          "predicted_metres": 4.314782374439702,
+          "digitization_only_interval_metres": [
+            4.056038419594155,
+            4.588746561923223
+          ]
+        },
+        "diagnostic": {
+          "id": "axis_b",
+          "pixel_length": 99.92497185388645,
+          "predicted_metres": 3.568748994781659,
+          "digitization_only_interval_metres": [
+            3.330728189371057,
+            3.820771024039943
+          ]
+        }
+      },
+      {
+        "id": "etri_z2",
+        "status": "unmeasurable",
+        "scale_pixel_length": 108.0,
+        "metres_per_pixel": 0.018518518518518517,
+        "available_chords": [
+          {
+            "id": "axis_a",
+            "pixel_length": 274.0,
+            "predicted_metres": 5.074074074074074,
+            "digitization_only_interval_metres": [
+              4.821428571428571,
+              5.346153846153846
+            ]
+          }
+        ],
+        "reason": "Both floor spans are required to identify the longer primary chord"
+      }
+    ]
+  },
+  "results": {
+    "schema": 1,
+    "status": "completed",
+    "evidence_class": "published_dimension_pilot",
+    "analyst_answer_exposure": true,
+    "references_used_in_prediction": false,
+    "independent_field_reference_verified": false,
+    "cases": [
+      {
+        "id": "dagesh_l1",
+        "primary": {
+          "id": "axis_a",
+          "pixel_length": 140.46351839534705,
+          "predicted_metres": 2.553882152642674,
+          "digitization_only_interval_metres": [
+            2.394096813953457,
+            2.7257267621763597
+          ],
+          "reference_metres": 2.8,
+          "signed_error_metres": -0.246117847357326,
+          "absolute_error_metres": 0.246117847357326,
+          "absolute_error_percent": 8.7899231199045,
+          "screening_budget_metres": 0.13999999999999999,
+          "screening_flag": "outside_budget"
+        },
+        "diagnostic": {
+          "id": "axis_b",
+          "pixel_length": 129.40247292845683,
+          "predicted_metres": 2.3527722350628513,
+          "digitization_only_interval_metres": [
+            2.200043384709769,
+            2.5170277911029593
+          ],
+          "reference_metres": 2.3,
+          "signed_error_metres": 0.05277223506285145,
+          "absolute_error_metres": 0.05277223506285145,
+          "absolute_error_percent": 2.294445002732672,
+          "screening_budget_metres": 0.11499999999999999,
+          "screening_flag": "within_budget"
+        }
+      },
+      {
+        "id": "migdal_l32",
+        "primary": {
+          "id": "axis_a",
+          "pixel_length": 120.81390648431164,
+          "predicted_metres": 4.314782374439702,
+          "digitization_only_interval_metres": [
+            4.056038419594155,
+            4.588746561923223
+          ],
+          "reference_metres": 4,
+          "signed_error_metres": 0.3147823744397016,
+          "absolute_error_metres": 0.3147823744397016,
+          "absolute_error_percent": 7.86955936099254,
+          "screening_budget_metres": 0.2,
+          "screening_flag": "outside_budget"
+        },
+        "diagnostic": {
+          "id": "axis_b",
+          "pixel_length": 99.92497185388645,
+          "predicted_metres": 3.568748994781659,
+          "digitization_only_interval_metres": [
+            3.330728189371057,
+            3.820771024039943
+          ],
+          "reference_metres": 4,
+          "signed_error_metres": -0.4312510052183409,
+          "absolute_error_metres": 0.4312510052183409,
+          "absolute_error_percent": 10.781275130458523,
+          "screening_budget_metres": 0.2,
+          "screening_flag": "outside_budget"
+        }
+      },
+      {
+        "id": "etri_z2",
+        "status": "unmeasurable",
+        "scale_pixel_length": 108.0,
+        "metres_per_pixel": 0.018518518518518517,
+        "available_chords": [
+          {
+            "id": "axis_a",
+            "pixel_length": 274.0,
+            "predicted_metres": 5.074074074074074,
+            "digitization_only_interval_metres": [
+              4.821428571428571,
+              5.346153846153846
+            ]
+          }
+        ],
+        "reason": "Both floor spans are required to identify the longer primary chord",
+        "reference_dimensions_metres": [
+          4.8,
+          4.8
+        ],
+        "screening_flag": "unmeasurable"
+      }
+    ],
+    "limits": "Convenience sample; program-level answer separation only. Digitization intervals omit source, geometry and field error. Screening budget is chosen, not estimated."
+  }
+}

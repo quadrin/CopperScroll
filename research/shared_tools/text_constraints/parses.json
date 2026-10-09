@@ -1,0 +1,111 @@
+{
+  "status": "Exploratory transcription of existing project variant summaries; no new manuscript or editorial reading",
+  "frames": [
+    {
+      "id": "e11-east-pool",
+      "entry": "11",
+      "lines": ["II 13", "II 14"],
+      "variant_ids": ["e11-kohlit"],
+      "alternatives": [{"id": "east-of-anchor", "predicate": "east_of(pool_11, kohlit_anchor)", "model_predicate": "pool-east"}],
+      "argument_binding": "Koḥlit is a textual name; Tell es-Sultan remains a geographical hypothesis, not part of the predicate.",
+      "source": "text/readings.json e11-kohlit; Puech 2015 pp. 13–14 n. 49"
+    },
+    {
+      "id": "e19-north-pit",
+      "entry": "19",
+      "lines": ["IV 11", "IV 12"],
+      "variant_ids": ["e19-kohlit", "e19-pit"],
+      "alternatives": [
+        {"id": "kohlit-name", "predicate": "north_of(pit_19, kohlit_anchor)", "who": "Puech; Milik"},
+        {"id": "hole-no-name", "predicate": null, "who": "Allegro"}
+      ],
+      "argument_binding": "The eastern adjective selects a pit; its comparison pit or datum is unassigned. This is separate from north of the site.",
+      "source": "text/readings.json e19-kohlit/e19-pit; tables/entry_concordance.csv entry 19"
+    },
+    {
+      "id": "e60-opening-and-location",
+      "entry": "60",
+      "lines": ["XII 10", "XII 11"],
+      "variant_ids": ["e60-janoah", "e60-kohlit", "e60-opening"],
+      "alternatives": [
+        {"id": "RB-M", "predicates": ["north_of(pit_60, kohlit_anchor)", "opens_toward_north(pit_60)", "at_mouth_of(tombs, pit_60)"], "who": "Milik branch in existing registry"},
+        {"id": "RB-P", "predicates": ["north_of(pit_60, kohlit_anchor)", "opening_concealed(pit_60)", "at_mouth_of(tombs, pit_60)"], "who": "Puech branch in existing registry"},
+        {"id": "RB-B", "predicates": ["north_of(pit_60, kohlit_anchor)"], "who": "Separate buried/no-required-tombs branch retained in registry"},
+        {"id": "RB-L", "predicates": ["north_of(pit_60, kohlit_anchor)", "within(pit_60, janoah)", "at_mouth_of(tombs, pit_60)"], "who": "Lefkovits branch in existing registry"}
+      ],
+      "argument_binding": "Location, opening direction or concealment, and tomb-mouth relation remain different predicates. No facing azimuth is assigned to a vertical shaft.",
+      "source": "relationships/model.json readings; registry_v2_entry60.json; Puech 2006 p. 175 n. 49; Lefkovits 2000 pp. 425–426"
+    },
+    {
+      "id": "e15-northern-attachment",
+      "entry": "15",
+      "lines": ["IV 1", "IV 2"],
+      "variant_ids": ["e15-kohlit"],
+      "alternatives": [
+        {"id": "restored-cistern-link", "predicate": "north_of(cistern_15, kohlit_anchor)", "status": "restored; conditional"},
+        {"id": "pillar-side-attachment", "predicate": "on_north_side(pillar, cistern_15)", "status": "attachment alternative"},
+        {"id": "no-secure-name", "predicate": null, "who": "Milik 1962"}
+      ],
+      "argument_binding": "An NS1 assignment is not inherited from entry 60; the cistern and its pillar need their own feature observations.",
+      "source": "text/readings.json e15-kohlit; relationships/model.json supplementary_graph; Puech 2015 pp. 48–50"
+    },
+    {
+      "id": "e16-destination",
+      "entry": "16",
+      "lines": ["IV 3", "IV 4"],
+      "variant_ids": ["e16-goal"],
+      "alternatives": [
+        {"id": "destination-unread", "predicate": null, "who": "Milik; Lefkovits; project text shown"},
+        {"id": "restored-pool", "predicate": "feeds(conduit_16, pool_16)", "who": "Puech 2006, 2015"},
+        {"id": "hyrcania-restoration", "predicate": "leads_to(conduit_16, hyrcania)", "who": "Eshel 2002", "status": "proposed; Puech 2015 length objection retained in variant record"}
+      ],
+      "argument_binding": "Even under restored-pool, pool_16 = pool_11 is a separate alias hypothesis; no observed conduit/pool join is supplied.",
+      "source": "text/readings.json e16-goal; Puech 2015 pp. 48, 50–51 n. 193; Eshel 2002 pp. 102–103"
+    },
+    {
+      "id": "e31-eastern-attachment",
+      "entry": "31",
+      "lines": ["VII 11", "VII 12"],
+      "variant_ids": ["e31-eastern", "e31-landmark"],
+      "alternatives": [
+        {"id": "east-corner-guard", "predicate": "eastern_corner_of(corner, guard_post)", "who": "Lefkovits 2000"},
+        {"id": "corner-east-guard", "predicate": "corner_of(corner, eastern_guard_post)", "who": "Lefkovits 2000"},
+        {"id": "east-corner-drying", "predicate": "eastern_corner_of(corner, drying_room)", "who": "Puech 2015"}
+      ],
+      "argument_binding": "A north/east bearing of the building does not locate the required corner; no automatic structure assignment follows.",
+      "source": "text/readings.json e31-eastern/e31-landmark; Lefkovits 2000 pp. 234–235; Puech 2015 p. 67"
+    },
+    {
+      "id": "e40-facing",
+      "entry": "40",
+      "lines": ["IX 7"],
+      "variant_ids": ["e40-direction", "e40-side"],
+      "alternatives": [
+        {"id": "sea-west", "predicate": "faces(chamber, west)", "who": "Milik; Lefkovits"},
+        {"id": "south", "predicate": "faces(chamber, south)", "who": "Puech 2006"}
+      ],
+      "argument_binding": "The repeated facing verb anchors a direction relation. Its inherited ETCBC sea/west complement does not eliminate the south edition branch.",
+      "source": "text/readings.json e40-direction; Milik 1962 D32 p. 268; plate-check record linked by variant"
+    },
+    {
+      "id": "g-record-boundary",
+      "entry": null,
+      "lines": ["V 7", "XI 1", "XI 4", "XI 11", "XI 15"],
+      "variant_ids": ["g-ktbn"],
+      "alternatives": [
+        {"id": "record-with-deposit", "predicate": "record_beside(deposit)", "attachment": "closes preceding canonical item", "who": "Pfann meaning; Puech/Lefkovits boundary"},
+        {"id": "nearby-next", "predicate": "near(previous_context, next_item)", "attachment": "opens next item", "who": "Milik boundary; nearby reading"},
+        {"id": "distance-beside", "predicate": "distance_beside(context)", "attachment": "opens next item in existing note", "who": "Lange"}
+      ],
+      "argument_binding": "The same five physical occurrences support a repeated-form question. Competing editions are alternative interpretations of them, not additional independent occurrences.",
+      "source": "text/readings.json g-ktbn; Puech 2006 p. 189 n. 226; tables/entry_concordance.csv Milik boundary notes"
+    }
+  ],
+  "cross_entry_aliases": [
+    {"id": "pit19-pit60", "alternatives": ["unassigned relationship", "same physical pit"], "status": "unknown", "reason": "A shared north-of-Koḥlit clause does not uniquely identify the pit; entry 19 additionally specifies eastern."},
+    {"id": "pool16-pool11", "alternatives": ["unassigned relationship", "same physical pool under restored-pool destination"], "status": "unknown", "reason": "Destination restoration and physical pool equality are separate claims; no field join or ancient datum establishes equality."},
+    {"id": "cistern15-pit60", "alternatives": ["unassigned relationship", "same installation"], "status": "unknown", "reason": "Repeated Koḥlit context supplies neither the northern pillar nor a cistern-to-pit identity."}
+  ],
+  "factorization": "All frame alternatives and alias alternatives above remain listed. They are not multiplied into numerical evidence or forced into an author-coherent reconstructed edition. The core propagation retains its four existing registry readings separately.",
+  "limits": ["These predicate strings are analytical labels, not newly translated manuscript text.", "No manual parse in this file has independent editorial approval.", "The finite core assignment roster is not a regional inventory."]
+}

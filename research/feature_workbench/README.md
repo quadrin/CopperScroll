@@ -14,6 +14,8 @@ The Koḥlit relationship pilot keeps the SWP historical irregular basin separat
 
 [Shared research tools](../shared_tools/README.md) add local source retrieval, manuscript correspondence queries, entry/control adapters, calibration diagnostics and review/capture preparation.
 
+The [case-study extensions](../shared_tools/README.md#case-study-methods) add exact feature witnesses, minimum separating-observation sets, source-grounded recovery, letter-control eligibility, repeated text constraints and a negative-notice/registration audit. Their saved results are available through `python research/shared_tools/cli.py methods`; each report retains its evidence and exposure limits.
+
 ## Inputs and register
 
 `features.json` holds stable physical-feature identities. A documentary notice is not automatically a physical feature, and an alias or interpretation is not silently merged. Each module's reviewed inputs remain in its own directory. The [contract](CONTRACT.md) defines the source, observation, historical-state and result records. Exact source pages/figures, inspection scope, original observation lineages, native frames, uncertainty and missing data travel with the result.
