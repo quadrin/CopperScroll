@@ -1,0 +1,1594 @@
+{
+ "meta": {
+  "plan_sha256": "d2823e97d4cf4567380f44644f6d460169a9378dc123aa8ba749299cc5f0e2fc",
+  "seed": 20261009,
+  "bootstrap_replicates": 2000,
+  "unordered_pairs_possible": 231,
+  "N_place_substitutions": 178,
+  "shape_places": 105,
+  "variant_rows": 664,
+  "rate": "(count_places + 1) / (N + 231)",
+  "final_forms": "counted as base letters",
+  "exclusion": "see PLAN.md section 2 (enforced by exclusion.py and tests)"
+ },
+ "unordered": [
+  {
+   "pair": "ב–כ",
+   "letter_1": "ב",
+   "letter_2": "כ",
+   "count_places": 26,
+   "count_rows": 102,
+   "rate": 0.066015,
+   "ci90_low": 0.048544,
+   "ci90_high": 0.083756,
+   "ב→כ_places": 17,
+   "כ→ב_places": 14,
+   "n_editions": 18,
+   "places": "I 1 w2;I 7 w1;I 9 w2;II 5 w4;II 11 w2;II 13 w2;IV 6 w2;IV 11 w3;V 7 w1;VI 7 w2;VII 10 w0;VII 14 w5;VII 16 w3;IX 3 w0;IX 4 w0;IX 8 w0;X 3 w0;X 5 w3;X 10 w2;XI 1 w4;XI 5 w0;XI 8 w2;XI 11 w0;XI 15 w0;XI 16 w0;XII 3 w0",
+   "rank": 1
+  },
+  {
+   "pair": "ה–ח",
+   "letter_1": "ה",
+   "letter_2": "ח",
+   "count_places": 21,
+   "count_rows": 71,
+   "rate": 0.05379,
+   "ci90_low": 0.038554,
+   "ci90_high": 0.070048,
+   "ה→ח_places": 10,
+   "ח→ה_places": 12,
+   "n_editions": 17,
+   "places": "I 2 w1;I 3 w0;I 13 w1;II 1 w1;II 3 w2;III 8 w1;III 11 w1;VII 11 w3;VII 14 w5;VII 15 w5;IX 10 w2;IX 11 w1;IX 12 w0;IX 15 w1;X 9 w1;X 15 w2;XI 4 w2;XI 5 w0;XI 7 w2;XI 9 w2;XI 14 w3",
+   "rank": 2
+  },
+  {
+   "pair": "ה–ת",
+   "letter_1": "ה",
+   "letter_2": "ת",
+   "count_places": 16,
+   "count_rows": 26,
+   "rate": 0.041565,
+   "ci90_low": 0.026895,
+   "ci90_high": 0.056373,
+   "ה→ת_places": 12,
+   "ת→ה_places": 4,
+   "n_editions": 12,
+   "places": "I 2 w1;I 9 w2;I 9 w6;I 10 w4;II 3 w2;II 13 w2;IV 1 w3;IV 9 w0;IV 11 w0;IV 11 w3;IV 14 w0;VIII 4 w3;IX 2 w6;IX 4 w0;IX 10 w0;IX 10 w2",
+   "rank": 3
+  },
+  {
+   "pair": "ד–ר",
+   "letter_1": "ד",
+   "letter_2": "ר",
+   "count_places": 12,
+   "count_rows": 21,
+   "rate": 0.031785,
+   "ci90_low": 0.019465,
+   "ci90_high": 0.044665,
+   "ד→ר_places": 6,
+   "ר→ד_places": 6,
+   "n_editions": 14,
+   "places": "I 9 w6;I 12 w3;II 3 w2;IV 9 w2;V 5 w0;VII 8 w2;VII 16 w3;VIII 14 w0;IX 3 w0;IX 17 w1;X 9 w1;X 10 w2",
+   "rank": 4
+  },
+  {
+   "pair": "ב–מ",
+   "letter_1": "ב",
+   "letter_2": "מ",
+   "count_places": 11,
+   "count_rows": 29,
+   "rate": 0.02934,
+   "ci90_low": 0.017032,
+   "ci90_high": 0.042755,
+   "ב→מ_places": 7,
+   "מ→ב_places": 4,
+   "n_editions": 14,
+   "places": "III 12 w0;V 5 w2;V 9 w2;VI 8 w1;VII 8 w2;VIII 1 w0;VIII 2 w1;IX 10 w0;IX 10 w3;XI 6 w4;XI 9 w2",
+   "rank": 5
+  },
+  {
+   "pair": "ח–ת",
+   "letter_1": "ח",
+   "letter_2": "ת",
+   "count_places": 11,
+   "count_rows": 13,
+   "rate": 0.02934,
+   "ci90_low": 0.017032,
+   "ci90_high": 0.042079,
+   "ח→ת_places": 5,
+   "ת→ח_places": 6,
+   "n_editions": 11,
+   "places": "I 9 w0;IV 1 w3;IV 9 w0;IX 4 w0;IX 15 w1;IX 17 w2;XI 4 w2;XI 5 w0;XI 9 w2;XI 10 w?סוח;XI 12 w1",
+   "rank": 6
+  },
+  {
+   "pair": "ז–י",
+   "letter_1": "ז",
+   "letter_2": "י",
+   "count_places": 6,
+   "count_rows": 14,
+   "rate": 0.017115,
+   "ci90_low": 0.007519,
+   "ci90_high": 0.027708,
+   "ז→י_places": 3,
+   "י→ז_places": 3,
+   "n_editions": 12,
+   "places": "I 7 w1;V 13 w1;VIII 2 w2;IX 8 w0;X 3 w2;XI 1 w0",
+   "rank": 7
+  },
+  {
+   "pair": "ו–נ",
+   "letter_1": "ו",
+   "letter_2": "נ",
+   "count_places": 5,
+   "count_rows": 7,
+   "rate": 0.01467,
+   "ci90_low": 0.007126,
+   "ci90_high": 0.02439,
+   "ו→נ_places": 3,
+   "נ→ו_places": 3,
+   "n_editions": 6,
+   "places": "II 3 w3;II 5 w4;III 12 w0;VIII 3 w2;XI 13 w1",
+   "rank": 8
+  },
+  {
+   "pair": "נ–ת",
+   "letter_1": "נ",
+   "letter_2": "ת",
+   "count_places": 4,
+   "count_rows": 14,
+   "rate": 0.012225,
+   "ci90_low": 0.00495,
+   "ci90_high": 0.020595,
+   "נ→ת_places": 2,
+   "ת→נ_places": 2,
+   "n_editions": 13,
+   "places": "I 9 w6;IV 6 w2;VIII 8 w4;IX 11 w3",
+   "rank": 9
+  },
+  {
+   "pair": "ו–ז",
+   "letter_1": "ו",
+   "letter_2": "ז",
+   "count_places": 4,
+   "count_rows": 7,
+   "rate": 0.012225,
+   "ci90_low": 0.004843,
+   "ci90_high": 0.020737,
+   "ו→ז_places": 2,
+   "ז→ו_places": 2,
+   "n_editions": 8,
+   "places": "II 6 w0;II 9 w0;X 9 w1;XI 1 w1",
+   "rank": 10
+  },
+  {
+   "pair": "י–נ",
+   "letter_1": "י",
+   "letter_2": "נ",
+   "count_places": 3,
+   "count_rows": 7,
+   "rate": 0.00978,
+   "ci90_low": 0.004505,
+   "ci90_high": 0.017327,
+   "י→נ_places": 0,
+   "נ→י_places": 3,
+   "n_editions": 7,
+   "places": "II 5 w2;VIII 14 w0;IX 12 w1",
+   "rank": 11
+  },
+  {
+   "pair": "י–ר",
+   "letter_1": "י",
+   "letter_2": "ר",
+   "count_places": 3,
+   "count_rows": 6,
+   "rate": 0.00978,
+   "ci90_low": 0.004577,
+   "ci90_high": 0.017241,
+   "י→ר_places": 2,
+   "ר→י_places": 1,
+   "n_editions": 5,
+   "places": "VIII 14 w0;IX 15 w2;X 3 w1",
+   "rank": 12
+  },
+  {
+   "pair": "ה–נ",
+   "letter_1": "ה",
+   "letter_2": "נ",
+   "count_places": 3,
+   "count_rows": 5,
+   "rate": 0.00978,
+   "ci90_low": 0.00464,
+   "ci90_high": 0.017284,
+   "ה→נ_places": 2,
+   "נ→ה_places": 1,
+   "n_editions": 5,
+   "places": "II 11 w0;VIII 2 w2;VIII 8 w4",
+   "rank": 13
+  },
+  {
+   "pair": "ב–פ",
+   "letter_1": "ב",
+   "letter_2": "פ",
+   "count_places": 3,
+   "count_rows": 4,
+   "rate": 0.00978,
+   "ci90_low": 0.004684,
+   "ci90_high": 0.017115,
+   "ב→פ_places": 0,
+   "פ→ב_places": 3,
+   "n_editions": 5,
+   "places": "VII 3 w2;IX 17 w2;XI 8 w2",
+   "rank": 14
+  },
+  {
+   "pair": "ו–ר",
+   "letter_1": "ו",
+   "letter_2": "ר",
+   "count_places": 3,
+   "count_rows": 3,
+   "rate": 0.00978,
+   "ci90_low": 0.004706,
+   "ci90_high": 0.017115,
+   "ו→ר_places": 1,
+   "ר→ו_places": 2,
+   "n_editions": 4,
+   "places": "I 9 w6;VII 8 w2;XI 4 w2",
+   "rank": 15
+  },
+  {
+   "pair": "ס–ע",
+   "letter_1": "ס",
+   "letter_2": "ע",
+   "count_places": 2,
+   "count_rows": 7,
+   "rate": 0.007335,
+   "ci90_low": 0.002457,
+   "ci90_high": 0.01292,
+   "ס→ע_places": 1,
+   "ע→ס_places": 1,
+   "n_editions": 7,
+   "places": "I 13 w1;VIII 3 w3",
+   "rank": 16
+  },
+  {
+   "pair": "מ–נ",
+   "letter_1": "מ",
+   "letter_2": "נ",
+   "count_places": 2,
+   "count_rows": 3,
+   "rate": 0.007335,
+   "ci90_low": 0.002427,
+   "ci90_high": 0.012626,
+   "מ→נ_places": 1,
+   "נ→מ_places": 1,
+   "n_editions": 4,
+   "places": "I 12 w3;XI 15 w1",
+   "rank": 17
+  },
+  {
+   "pair": "א–ג",
+   "letter_1": "א",
+   "letter_2": "ג",
+   "count_places": 2,
+   "count_rows": 2,
+   "rate": 0.007335,
+   "ci90_low": 0.002415,
+   "ci90_high": 0.012987,
+   "א→ג_places": 0,
+   "ג→א_places": 2,
+   "n_editions": 2,
+   "places": "X 6 w1;X 13 w1",
+   "rank": 18
+  },
+  {
+   "pair": "ד–ו",
+   "letter_1": "ד",
+   "letter_2": "ו",
+   "count_places": 2,
+   "count_rows": 2,
+   "rate": 0.007335,
+   "ci90_low": 0.002469,
+   "ci90_high": 0.014052,
+   "ד→ו_places": 1,
+   "ו→ד_places": 1,
+   "n_editions": 4,
+   "places": "I 9 w6;XI 12 w1",
+   "rank": 19
+  },
+  {
+   "pair": "ה–מ",
+   "letter_1": "ה",
+   "letter_2": "מ",
+   "count_places": 2,
+   "count_rows": 2,
+   "rate": 0.007335,
+   "ci90_low": 0.002427,
+   "ci90_high": 0.014019,
+   "ה→מ_places": 0,
+   "מ→ה_places": 2,
+   "n_editions": 3,
+   "places": "I 3 w4;III 11 w1",
+   "rank": 20
+  },
+  {
+   "pair": "י–פ",
+   "letter_1": "י",
+   "letter_2": "פ",
+   "count_places": 2,
+   "count_rows": 2,
+   "rate": 0.007335,
+   "ci90_low": 0.002427,
+   "ci90_high": 0.012821,
+   "י→פ_places": 2,
+   "פ→י_places": 0,
+   "n_editions": 2,
+   "places": "VIII 9 w0;VIII 10 w0",
+   "rank": 21
+  },
+  {
+   "pair": "מ–ק",
+   "letter_1": "מ",
+   "letter_2": "ק",
+   "count_places": 2,
+   "count_rows": 2,
+   "rate": 0.007335,
+   "ci90_low": 0.002457,
+   "ci90_high": 0.013889,
+   "מ→ק_places": 2,
+   "ק→מ_places": 0,
+   "n_editions": 3,
+   "places": "VII 3 w2;VIII 3 w3",
+   "rank": 22
+  },
+  {
+   "pair": "י–מ",
+   "letter_1": "י",
+   "letter_2": "מ",
+   "count_places": 1,
+   "count_rows": 10,
+   "rate": 0.00489,
+   "ci90_low": 0.002381,
+   "ci90_high": 0.009662,
+   "י→מ_places": 1,
+   "מ→י_places": 0,
+   "n_editions": 10,
+   "places": "I 12 w3",
+   "rank": 23
+  },
+  {
+   "pair": "ב–י",
+   "letter_1": "ב",
+   "letter_2": "י",
+   "count_places": 1,
+   "count_rows": 7,
+   "rate": 0.00489,
+   "ci90_low": 0.002392,
+   "ci90_high": 0.009662,
+   "ב→י_places": 1,
+   "י→ב_places": 0,
+   "n_editions": 8,
+   "places": "IV 6 w2",
+   "rank": 24
+  },
+  {
+   "pair": "ד–כ",
+   "letter_1": "ד",
+   "letter_2": "כ",
+   "count_places": 1,
+   "count_rows": 7,
+   "rate": 0.00489,
+   "ci90_low": 0.00237,
+   "ci90_high": 0.009852,
+   "ד→כ_places": 1,
+   "כ→ד_places": 0,
+   "n_editions": 8,
+   "places": "I 13 w4",
+   "rank": 25
+  },
+  {
+   "pair": "ה–ר",
+   "letter_1": "ה",
+   "letter_2": "ר",
+   "count_places": 1,
+   "count_rows": 5,
+   "rate": 0.00489,
+   "ci90_low": 0.002387,
+   "ci90_high": 0.009804,
+   "ה→ר_places": 0,
+   "ר→ה_places": 1,
+   "n_editions": 6,
+   "places": "VIII 2 w2",
+   "rank": 26
+  },
+  {
+   "pair": "ט–ר",
+   "letter_1": "ט",
+   "letter_2": "ר",
+   "count_places": 1,
+   "count_rows": 5,
+   "rate": 0.00489,
+   "ci90_low": 0.002375,
+   "ci90_high": 0.009685,
+   "ט→ר_places": 0,
+   "ר→ט_places": 1,
+   "n_editions": 6,
+   "places": "VII 11 w3",
+   "rank": 27
+  },
+  {
+   "pair": "ו–ח",
+   "letter_1": "ו",
+   "letter_2": "ח",
+   "count_places": 1,
+   "count_rows": 4,
+   "rate": 0.00489,
+   "ci90_low": 0.002375,
+   "ci90_high": 0.009804,
+   "ו→ח_places": 0,
+   "ח→ו_places": 1,
+   "n_editions": 5,
+   "places": "VIII 2 w0",
+   "rank": 28
+  },
+  {
+   "pair": "ב–ד",
+   "letter_1": "ב",
+   "letter_2": "ד",
+   "count_places": 1,
+   "count_rows": 3,
+   "rate": 0.00489,
+   "ci90_low": 0.00241,
+   "ci90_high": 0.009501,
+   "ב→ד_places": 0,
+   "ד→ב_places": 1,
+   "n_editions": 4,
+   "places": "VIII 3 w3",
+   "rank": 29
+  },
+  {
+   "pair": "ד–י",
+   "letter_1": "ד",
+   "letter_2": "י",
+   "count_places": 1,
+   "count_rows": 3,
+   "rate": 0.00489,
+   "ci90_low": 0.002415,
+   "ci90_high": 0.009569,
+   "ד→י_places": 0,
+   "י→ד_places": 1,
+   "n_editions": 4,
+   "places": "I 9 w6",
+   "rank": 30
+  },
+  {
+   "pair": "ו–ש",
+   "letter_1": "ו",
+   "letter_2": "ש",
+   "count_places": 1,
+   "count_rows": 3,
+   "rate": 0.00489,
+   "ci90_low": 0.002364,
+   "ci90_high": 0.009804,
+   "ו→ש_places": 1,
+   "ש→ו_places": 0,
+   "n_editions": 4,
+   "places": "VII 8 w3",
+   "rank": 31
+  },
+  {
+   "pair": "כ–פ",
+   "letter_1": "כ",
+   "letter_2": "פ",
+   "count_places": 1,
+   "count_rows": 3,
+   "rate": 0.00489,
+   "ci90_low": 0.002381,
+   "ci90_high": 0.009756,
+   "כ→פ_places": 0,
+   "פ→כ_places": 1,
+   "n_editions": 4,
+   "places": "VI 7 w2",
+   "rank": 32
+  },
+  {
+   "pair": "פ–ר",
+   "letter_1": "פ",
+   "letter_2": "ר",
+   "count_places": 1,
+   "count_rows": 3,
+   "rate": 0.00489,
+   "ci90_low": 0.002381,
+   "ci90_high": 0.009756,
+   "פ→ר_places": 1,
+   "ר→פ_places": 0,
+   "n_editions": 4,
+   "places": "VII 15 w5",
+   "rank": 33
+  },
+  {
+   "pair": "א–ע",
+   "letter_1": "א",
+   "letter_2": "ע",
+   "count_places": 1,
+   "count_rows": 2,
+   "rate": 0.00489,
+   "ci90_low": 0.002375,
+   "ci90_high": 0.009804,
+   "א→ע_places": 0,
+   "ע→א_places": 1,
+   "n_editions": 3,
+   "places": "I 3 w0",
+   "rank": 34
+  },
+  {
+   "pair": "ב–ו",
+   "letter_1": "ב",
+   "letter_2": "ו",
+   "count_places": 1,
+   "count_rows": 2,
+   "rate": 0.00489,
+   "ci90_low": 0.00237,
+   "ci90_high": 0.009877,
+   "ב→ו_places": 0,
+   "ו→ב_places": 1,
+   "n_editions": 3,
+   "places": "XI 4 w5",
+   "rank": 35
+  },
+  {
+   "pair": "ו–פ",
+   "letter_1": "ו",
+   "letter_2": "פ",
+   "count_places": 1,
+   "count_rows": 2,
+   "rate": 0.00489,
+   "ci90_low": 0.002381,
+   "ci90_high": 0.009828,
+   "ו→פ_places": 1,
+   "פ→ו_places": 1,
+   "n_editions": 2,
+   "places": "X 11 w2",
+   "rank": 36
+  },
+  {
+   "pair": "ח–מ",
+   "letter_1": "ח",
+   "letter_2": "מ",
+   "count_places": 1,
+   "count_rows": 2,
+   "rate": 0.00489,
+   "ci90_low": 0.002381,
+   "ci90_high": 0.009685,
+   "ח→מ_places": 0,
+   "מ→ח_places": 1,
+   "n_editions": 3,
+   "places": "IX 17 w2",
+   "rank": 37
+  },
+  {
+   "pair": "א–ה",
+   "letter_1": "א",
+   "letter_2": "ה",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002381,
+   "ci90_high": 0.009709,
+   "א→ה_places": 1,
+   "ה→א_places": 0,
+   "n_editions": 2,
+   "places": "XI 12 w1",
+   "rank": 38
+  },
+  {
+   "pair": "ב–ח",
+   "letter_1": "ב",
+   "letter_2": "ח",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.00237,
+   "ci90_high": 0.009852,
+   "ב→ח_places": 0,
+   "ח→ב_places": 1,
+   "n_editions": 2,
+   "places": "XI 16 w1",
+   "rank": 39
+  },
+  {
+   "pair": "ב–נ",
+   "letter_1": "ב",
+   "letter_2": "נ",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002387,
+   "ci90_high": 0.009828,
+   "ב→נ_places": 0,
+   "נ→ב_places": 1,
+   "n_editions": 2,
+   "places": "XI 8 w2",
+   "rank": 40
+  },
+  {
+   "pair": "ב–צ",
+   "letter_1": "ב",
+   "letter_2": "צ",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.00237,
+   "ci90_high": 0.009828,
+   "ב→צ_places": 1,
+   "צ→ב_places": 0,
+   "n_editions": 2,
+   "places": "X 15 w0",
+   "rank": 41
+  },
+  {
+   "pair": "ב–ר",
+   "letter_1": "ב",
+   "letter_2": "ר",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.00237,
+   "ci90_high": 0.009804,
+   "ב→ר_places": 1,
+   "ר→ב_places": 0,
+   "n_editions": 2,
+   "places": "X 3 w1",
+   "rank": 42
+  },
+  {
+   "pair": "ד–נ",
+   "letter_1": "ד",
+   "letter_2": "נ",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002392,
+   "ci90_high": 0.009662,
+   "ד→נ_places": 1,
+   "נ→ד_places": 0,
+   "n_editions": 2,
+   "places": "IV 6 w2",
+   "rank": 43
+  },
+  {
+   "pair": "ז–ר",
+   "letter_1": "ז",
+   "letter_2": "ר",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002381,
+   "ci90_high": 0.009662,
+   "ז→ר_places": 1,
+   "ר→ז_places": 0,
+   "n_editions": 2,
+   "places": "IX 12 w0",
+   "rank": 44
+  },
+  {
+   "pair": "ט–מ",
+   "letter_1": "ט",
+   "letter_2": "מ",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002392,
+   "ci90_high": 0.009639,
+   "ט→מ_places": 1,
+   "מ→ט_places": 0,
+   "n_editions": 2,
+   "places": "XI 9 w2",
+   "rank": 45
+  },
+  {
+   "pair": "ט–ס",
+   "letter_1": "ט",
+   "letter_2": "ס",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002381,
+   "ci90_high": 0.009756,
+   "ט→ס_places": 0,
+   "ס→ט_places": 1,
+   "n_editions": 2,
+   "places": "VII 15 w5",
+   "rank": 46
+  },
+  {
+   "pair": "ט–ת",
+   "letter_1": "ט",
+   "letter_2": "ת",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002381,
+   "ci90_high": 0.009685,
+   "ט→ת_places": 1,
+   "ת→ט_places": 0,
+   "n_editions": 2,
+   "places": "IX 17 w2",
+   "rank": 47
+  },
+  {
+   "pair": "כ–מ",
+   "letter_1": "כ",
+   "letter_2": "מ",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002375,
+   "ci90_high": 0.009662,
+   "כ→מ_places": 1,
+   "מ→כ_places": 0,
+   "n_editions": 2,
+   "places": "IV 9 w2",
+   "rank": 48
+  },
+  {
+   "pair": "כ–ק",
+   "letter_1": "כ",
+   "letter_2": "ק",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.00241,
+   "ci90_high": 0.009501,
+   "כ→ק_places": 1,
+   "ק→כ_places": 0,
+   "n_editions": 2,
+   "places": "VIII 3 w3",
+   "rank": 49
+  },
+  {
+   "pair": "כ–ר",
+   "letter_1": "כ",
+   "letter_2": "ר",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.00237,
+   "ci90_high": 0.009804,
+   "כ→ר_places": 0,
+   "ר→כ_places": 1,
+   "n_editions": 2,
+   "places": "XII 3 w0",
+   "rank": 50
+  },
+  {
+   "pair": "ל–ע",
+   "letter_1": "ל",
+   "letter_2": "ע",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.00241,
+   "ci90_high": 0.009501,
+   "ל→ע_places": 1,
+   "ע→ל_places": 0,
+   "n_editions": 2,
+   "places": "VIII 3 w3",
+   "rank": 51
+  },
+  {
+   "pair": "מ–ת",
+   "letter_1": "מ",
+   "letter_2": "ת",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002415,
+   "ci90_high": 0.009569,
+   "מ→ת_places": 1,
+   "ת→מ_places": 0,
+   "n_editions": 2,
+   "places": "I 9 w6",
+   "rank": 52
+  },
+  {
+   "pair": "נ–פ",
+   "letter_1": "נ",
+   "letter_2": "פ",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002392,
+   "ci90_high": 0.009662,
+   "נ→פ_places": 0,
+   "פ→נ_places": 1,
+   "n_editions": 2,
+   "places": "IV 6 w2",
+   "rank": 53
+  },
+  {
+   "pair": "נ–ר",
+   "letter_1": "נ",
+   "letter_2": "ר",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.002364,
+   "ci90_high": 0.009804,
+   "נ→ר_places": 0,
+   "ר→נ_places": 1,
+   "n_editions": 2,
+   "places": "XI 4 w4",
+   "rank": 54
+  },
+  {
+   "pair": "ע–ר",
+   "letter_1": "ע",
+   "letter_2": "ר",
+   "count_places": 1,
+   "count_rows": 1,
+   "rate": 0.00489,
+   "ci90_low": 0.00241,
+   "ci90_high": 0.009501,
+   "ע→ר_places": 0,
+   "ר→ע_places": 1,
+   "n_editions": 2,
+   "places": "VIII 3 w3",
+   "rank": 55
+  }
+ ],
+ "ordered": [
+  {
+   "ordered_pair": "ב→כ",
+   "count_places": 17,
+   "count_rows": 49
+  },
+  {
+   "ordered_pair": "כ→ב",
+   "count_places": 14,
+   "count_rows": 53
+  },
+  {
+   "ordered_pair": "ח→ה",
+   "count_places": 12,
+   "count_rows": 42
+  },
+  {
+   "ordered_pair": "ה→ת",
+   "count_places": 12,
+   "count_rows": 22
+  },
+  {
+   "ordered_pair": "ה→ח",
+   "count_places": 10,
+   "count_rows": 29
+  },
+  {
+   "ordered_pair": "ב→מ",
+   "count_places": 7,
+   "count_rows": 13
+  },
+  {
+   "ordered_pair": "ד→ר",
+   "count_places": 6,
+   "count_rows": 11
+  },
+  {
+   "ordered_pair": "ר→ד",
+   "count_places": 6,
+   "count_rows": 10
+  },
+  {
+   "ordered_pair": "ת→ח",
+   "count_places": 6,
+   "count_rows": 7
+  },
+  {
+   "ordered_pair": "ח→ת",
+   "count_places": 5,
+   "count_rows": 6
+  },
+  {
+   "ordered_pair": "מ→ב",
+   "count_places": 4,
+   "count_rows": 16
+  },
+  {
+   "ordered_pair": "ת→ה",
+   "count_places": 4,
+   "count_rows": 4
+  },
+  {
+   "ordered_pair": "ז→י",
+   "count_places": 3,
+   "count_rows": 9
+  },
+  {
+   "ordered_pair": "נ→י",
+   "count_places": 3,
+   "count_rows": 7
+  },
+  {
+   "ordered_pair": "י→ז",
+   "count_places": 3,
+   "count_rows": 5
+  },
+  {
+   "ordered_pair": "ו→נ",
+   "count_places": 3,
+   "count_rows": 4
+  },
+  {
+   "ordered_pair": "פ→ב",
+   "count_places": 3,
+   "count_rows": 4
+  },
+  {
+   "ordered_pair": "נ→ו",
+   "count_places": 3,
+   "count_rows": 3
+  },
+  {
+   "ordered_pair": "ת→נ",
+   "count_places": 2,
+   "count_rows": 10
+  },
+  {
+   "ordered_pair": "ה→נ",
+   "count_places": 2,
+   "count_rows": 4
+  },
+  {
+   "ordered_pair": "ז→ו",
+   "count_places": 2,
+   "count_rows": 4
+  },
+  {
+   "ordered_pair": "י→ר",
+   "count_places": 2,
+   "count_rows": 4
+  },
+  {
+   "ordered_pair": "נ→ת",
+   "count_places": 2,
+   "count_rows": 4
+  },
+  {
+   "ordered_pair": "ו→ז",
+   "count_places": 2,
+   "count_rows": 3
+  },
+  {
+   "ordered_pair": "ג→א",
+   "count_places": 2,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "י→פ",
+   "count_places": 2,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "מ→ה",
+   "count_places": 2,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "מ→ק",
+   "count_places": 2,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "ר→ו",
+   "count_places": 2,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "י→מ",
+   "count_places": 1,
+   "count_rows": 10
+  },
+  {
+   "ordered_pair": "ב→י",
+   "count_places": 1,
+   "count_rows": 7
+  },
+  {
+   "ordered_pair": "ד→כ",
+   "count_places": 1,
+   "count_rows": 7
+  },
+  {
+   "ordered_pair": "ע→ס",
+   "count_places": 1,
+   "count_rows": 5
+  },
+  {
+   "ordered_pair": "ר→ה",
+   "count_places": 1,
+   "count_rows": 5
+  },
+  {
+   "ordered_pair": "ר→ט",
+   "count_places": 1,
+   "count_rows": 5
+  },
+  {
+   "ordered_pair": "ח→ו",
+   "count_places": 1,
+   "count_rows": 4
+  },
+  {
+   "ordered_pair": "ד→ב",
+   "count_places": 1,
+   "count_rows": 3
+  },
+  {
+   "ordered_pair": "ו→ש",
+   "count_places": 1,
+   "count_rows": 3
+  },
+  {
+   "ordered_pair": "י→ד",
+   "count_places": 1,
+   "count_rows": 3
+  },
+  {
+   "ordered_pair": "פ→כ",
+   "count_places": 1,
+   "count_rows": 3
+  },
+  {
+   "ordered_pair": "פ→ר",
+   "count_places": 1,
+   "count_rows": 3
+  },
+  {
+   "ordered_pair": "ו→ב",
+   "count_places": 1,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "מ→ח",
+   "count_places": 1,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "מ→נ",
+   "count_places": 1,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "ס→ע",
+   "count_places": 1,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "ע→א",
+   "count_places": 1,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "ר→י",
+   "count_places": 1,
+   "count_rows": 2
+  },
+  {
+   "ordered_pair": "א→ה",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ב→צ",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ב→ר",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ד→ו",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ד→נ",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ו→ד",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ו→פ",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ו→ר",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ז→ר",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ח→ב",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ט→מ",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ט→ת",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "כ→מ",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "כ→ק",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ל→ע",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "מ→ת",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "נ→ב",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "נ→ה",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "נ→מ",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ס→ט",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "פ→ו",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "פ→נ",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ר→כ",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ר→נ",
+   "count_places": 1,
+   "count_rows": 1
+  },
+  {
+   "ordered_pair": "ר→ע",
+   "count_places": 1,
+   "count_rows": 1
+  }
+ ],
+ "indels": {
+  "insertions_later_edition": {
+   "א": 1,
+   "ב": 1,
+   "ה": 1,
+   "ו": 1,
+   "י": 2,
+   "כ": 1,
+   "ע": 1,
+   "ק": 1,
+   "ר": 1
+  },
+  "deletions_later_edition": {
+   "ב": 1,
+   "ו": 2,
+   "ח": 1,
+   "י": 3,
+   "מ": 1,
+   "נ": 1,
+   "ע": 2,
+   "ר": 4
+  }
+ },
+ "letter_involvement_places": {
+  "ב": 47,
+  "ה": 44,
+  "ח": 35,
+  "ת": 33,
+  "כ": 31,
+  "ר": 26,
+  "מ": 22,
+  "נ": 21,
+  "ד": 18,
+  "ו": 18,
+  "י": 17,
+  "ז": 11,
+  "פ": 9,
+  "ע": 5,
+  "א": 4,
+  "ט": 4,
+  "ס": 3,
+  "ק": 3,
+  "ג": 2,
+  "ל": 1,
+  "צ": 1,
+  "ש": 1
+ },
+ "classes": {
+  "DIVISION": 7,
+  "MATRES": 87,
+  "OTHER": 210,
+  "RESTORATION": 29,
+  "SHAPE": 331
+ },
+ "classes_engraved": {
+  "DIVISION": 8,
+  "MATRES": 96,
+  "OTHER": 102,
+  "RESTORATION": 29,
+  "SAME": 5,
+  "SHAPE": 424
+ },
+ "classes_by_source": {
+  "AP": {
+   "DIVISION": 4,
+   "MATRES": 19,
+   "OTHER": 57,
+   "RESTORATION": 15,
+   "SHAPE": 31
+  },
+  "PN": {
+   "DIVISION": 2,
+   "MATRES": 65,
+   "OTHER": 127,
+   "RESTORATION": 4,
+   "SHAPE": 272
+  },
+  "RJ": {
+   "DIVISION": 1,
+   "MATRES": 5,
+   "OTHER": 28,
+   "RESTORATION": 11,
+   "SHAPE": 39
+  }
+ },
+ "dependence": {
+  "sum_count_rows": 428,
+  "sum_count_places": 178,
+  "duplication_ratio_rows_per_place": 2.404,
+  "top10_by_places": [
+   "ב–כ",
+   "ה–ח",
+   "ה–ת",
+   "ד–ר",
+   "ב–מ",
+   "ח–ת",
+   "ז–י",
+   "ו–נ",
+   "נ–ת",
+   "ו–ז"
+  ],
+  "top10_by_rows": [
+   "ב–כ",
+   "ה–ח",
+   "ב–מ",
+   "ה–ת",
+   "ד–ר",
+   "ז–י",
+   "נ–ת",
+   "ח–ת",
+   "י–מ",
+   "ו–נ"
+  ],
+  "top10_overlap": 9
+ },
+ "sensitivity": {
+  "engraved_letters": {
+   "N_place_substitutions": 235,
+   "top10": [
+    [
+     "ב–כ",
+     29
+    ],
+    [
+     "ה–ח",
+     25
+    ],
+    [
+     "ה–ת",
+     17
+    ],
+    [
+     "ד–ר",
+     15
+    ],
+    [
+     "ו–ר",
+     14
+    ],
+    [
+     "ח–ת",
+     13
+    ],
+    [
+     "ב–מ",
+     12
+    ],
+    [
+     "ז–י",
+     6
+    ],
+    [
+     "ו–ז",
+     6
+    ],
+    [
+     "א–ג",
+     5
+    ]
+   ],
+   "top10_overlap_with_primary": 8
+  },
+  "source_AP_only": {
+   "N_place_substitutions": 35,
+   "top10": [
+    [
+     "ב–כ",
+     8
+    ],
+    [
+     "ה–ח",
+     6
+    ],
+    [
+     "ב–מ",
+     3
+    ],
+    [
+     "ו–נ",
+     2
+    ],
+    [
+     "י–ר",
+     2
+    ],
+    [
+     "ו–פ",
+     1
+    ],
+    [
+     "א–ה",
+     1
+    ],
+    [
+     "ד–כ",
+     1
+    ],
+    [
+     "ד–ר",
+     1
+    ],
+    [
+     "ה–מ",
+     1
+    ]
+   ],
+   "top10_overlap_with_primary": 5
+  },
+  "notes_only_PN_RJ": {
+   "N_place_substitutions": 165,
+   "top10": [
+    [
+     "ב–כ",
+     25
+    ],
+    [
+     "ה–ח",
+     19
+    ],
+    [
+     "ה–ת",
+     16
+    ],
+    [
+     "ד–ר",
+     12
+    ],
+    [
+     "ח–ת",
+     11
+    ],
+    [
+     "ב–מ",
+     10
+    ],
+    [
+     "ז–י",
+     6
+    ],
+    [
+     "נ–ת",
+     4
+    ],
+    [
+     "ו–ז",
+     4
+    ],
+    [
+     "י–נ",
+     3
+    ]
+   ],
+   "top10_overlap_with_primary": 9
+  },
+  "no_transposition_rows": {
+   "N_place_substitutions": 170,
+   "top10": [
+    [
+     "ב–כ",
+     22
+    ],
+    [
+     "ה–ח",
+     20
+    ],
+    [
+     "ה–ת",
+     16
+    ],
+    [
+     "ד–ר",
+     12
+    ],
+    [
+     "ח–ת",
+     11
+    ],
+    [
+     "ב–מ",
+     10
+    ],
+    [
+     "ז–י",
+     6
+    ],
+    [
+     "נ–ת",
+     4
+    ],
+    [
+     "ו–ז",
+     4
+    ],
+    [
+     "ו–נ",
+     4
+    ]
+   ],
+   "top10_overlap_with_primary": 10
+  },
+  "substitution_only_rows": {
+   "N_place_substitutions": 148,
+   "top10": [
+    [
+     "ב–כ",
+     26
+    ],
+    [
+     "ה–ח",
+     19
+    ],
+    [
+     "ה–ת",
+     15
+    ],
+    [
+     "ד–ר",
+     12
+    ],
+    [
+     "ב–מ",
+     11
+    ],
+    [
+     "ח–ת",
+     10
+    ],
+    [
+     "ז–י",
+     6
+    ],
+    [
+     "ו–נ",
+     4
+    ],
+    [
+     "ו–ז",
+     3
+    ],
+    [
+     "י–נ",
+     3
+    ]
+   ],
+   "top10_overlap_with_primary": 9
+  }
+ },
+ "yod_waw_vowel_letter_places": {
+  "count_places": 38,
+  "places": [
+   "I 2 w1",
+   "I 3 w0",
+   "I 3 w4",
+   "I 7 w0",
+   "I 10 w5",
+   "I 11 w1",
+   "I 12 w4",
+   "I 13 w0",
+   "II 5 w2",
+   "III 11 w2",
+   "IV 3 w3",
+   "V 6 w0",
+   "V 8 w1",
+   "V 13 w0",
+   "V 13 w1",
+   "VII 4 w0",
+   "VII 15 w5",
+   "VIII 3 w2",
+   "VIII 14 w0",
+   "IX 3 w0",
+   "IX 7 w1",
+   "IX 10 w0",
+   "IX 11 w0",
+   "IX 11 w5",
+   "X 3 w0",
+   "X 3 w3",
+   "X 5 w0",
+   "X 5 w1",
+   "X 10 w0",
+   "XI 4 w2",
+   "XI 7 w1",
+   "XI 7 w2",
+   "XI 9 w2",
+   "XI 10 w?סוח",
+   "XI 12 w2",
+   "XI 13 w0",
+   "XI 13 w1",
+   "XI 17 w0"
+  ],
+  "note": "yod-waw substitutions in MATRES and SHAPE rows; not in the SHAPE table"
+ }
+}

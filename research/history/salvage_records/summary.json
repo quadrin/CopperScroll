@@ -1,0 +1,127 @@
+{
+ "catalogue_by_kind": {
+  "CLAIM": 2,
+  "EVIDENCE": 10,
+  "TRADITION": 15
+ },
+ "catalogue_rows": 27,
+ "dependency_groups": 16,
+ "evidence_rows_supporting_unrecovered": [],
+ "note": "Descriptive counts only; rows are not independent and are not weights of evidence (PLAN.md).",
+ "rows_supporting_unrecovered_and_literary": [
+  "C08",
+  "C13",
+  "C14",
+  "C15",
+  "C16",
+  "C19",
+  "C21",
+  "C23",
+  "C24",
+  "C26"
+ ],
+ "scenario_coding": {
+  "s_literary": {
+   "distinct_dependency_groups": {
+    "neutral": 10,
+    "supports": 7
+   },
+   "rows": {
+    "neutral": 15,
+    "supports": 12
+   },
+   "supporting_rows_by_kind": {
+    "CLAIM": 1,
+    "TRADITION": 11
+   }
+  },
+  "s_removed": {
+   "distinct_dependency_groups": {
+    "neutral": 10,
+    "supports": 10
+   },
+   "rows": {
+    "neutral": 16,
+    "supports": 11
+   },
+   "supporting_rows_by_kind": {
+    "CLAIM": 1,
+    "EVIDENCE": 8,
+    "TRADITION": 2
+   }
+  },
+  "s_unrecovered": {
+   "distinct_dependency_groups": {
+    "neutral": 12,
+    "supports": 7
+   },
+   "rows": {
+    "neutral": 16,
+    "supports": 11
+   },
+   "supporting_rows_by_kind": {
+    "CLAIM": 1,
+    "TRADITION": 10
+   }
+  }
+ },
+ "search_rows": 27,
+ "searches_by_kind": {
+  "CLAIM": 5,
+  "EVIDENCE": 22
+ },
+ "searches_by_place_id": {
+  "(none)": [
+   "S03",
+   "S04",
+   "S05",
+   "S06",
+   "S16",
+   "S19",
+   "S24",
+   "S25",
+   "S26"
+  ],
+  "ain_duk": [
+   "S20",
+   "S21"
+  ],
+  "doq": [
+   "S22"
+  ],
+  "gerizim": [
+   "S07",
+   "S08"
+  ],
+  "kh_qumran": [
+   "S01",
+   "S02",
+   "S09",
+   "S10",
+   "S11",
+   "S12",
+   "S13",
+   "S14",
+   "S15",
+   "S17",
+   "S18",
+   "S23",
+   "S27"
+  ]
+ },
+ "searches_by_purpose": {
+  "claim_only": 1,
+  "excavation_of_named_place": 5,
+  "manuscript_survey": 12,
+  "scroll_deposit_search": 4,
+  "scroll_find_site": 1,
+  "scroll_motivated": 3,
+  "unknown": 1
+ },
+ "searches_by_result": {
+  "claimed_find": 2,
+  "negative": 3,
+  "other_finds": 19,
+  "unknown": 3
+ }
+}

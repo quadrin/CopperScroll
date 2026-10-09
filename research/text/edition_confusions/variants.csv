@@ -1,0 +1,665 @@
+id,column,line,word_index,word_index_method,source,edition_a,reading_a,page_a,edition_b,reading_b,page_b,letters_a,letters_b,class,class_engraved,substitutions,shape_pairs,insertions,deletions,transposition,shape_events,yod_waw_events,note
+V0001,I,1,0,given,AP,Abegg (ETCBC dss 2.0.1),בחרובא,3Q15 I 1,Puech 2015,בחריב{א}ה,p. 25,בחרובא,בחריבאה,OTHER,OTHER,ו→י,,ה,,,,,
+V0002,I,1,0,given,PN,Lefkovits 2000,bḥrwbhʾ,via Puech 2015 p. 26 n. 75,Puech 2015,bḥryb{ʾ}h,p. 25; p. 26 n. 75,בחרובהא,בחריבאה,OTHER,SHAPE,ו→י;ה→א;א→ה,,,,yes,,,copyist correction in Puech
+V0003,I,1,0,given,PN,Muchowski 1993,bḥrwbh,via Puech 2015 p. 26 n. 75,Puech 2015,bḥryb{ʾ}h,p. 25; p. 26 n. 75,בחרובה,בחריבאה,OTHER,OTHER,ו→י,,א,,,,,copyist correction in Puech
+V0004,I,1,0,given,RJ,Lefkovits 2000,ḥrwbh,p. 31,Puech 2015,ḥryb(ʾ)h,p. 26,חרובה,חריבאה,OTHER,MATRES,ו→י,,א,,,,,rj:e1-ruin
+V0005,I,1,0,given,RJ,Lefkovits 2000 (alternative),ḥrwbhʾ,p. 31,Puech 2015,ḥryb(ʾ)h,p. 26,חרובהא,חריבאה,OTHER,OTHER,ו→י;ה→א;א→ה,,,,yes,,,rj:e1-ruin
+V0006,I,1,0,given,RJ,Luria 1963,ḥrwbh,,Puech 2015,ḥryb(ʾ)h,p. 26,חרובה,חריבאה,OTHER,MATRES,ו→י,,א,,,,,rj:e1-ruin
+V0007,I,1,0,given,RJ,Muchowski 1993,ḥrwbh,,Puech 2015,ḥryb(ʾ)h,p. 26,חרובה,חריבאה,OTHER,MATRES,ו→י,,א,,,,,rj:e1-ruin
+V0008,I,1,2,given,PN,García Martínez–Tigchelaar 1997,ʿbwr,via Puech 2015 p. 26 n. 76,Puech 2015,ʿkwr,p. 25; p. 26 n. 76,עבור,עכור,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@I 1 w2,,
+V0009,I,1,2,given,PN,Pixner 1983,ʿbwr,via Puech 2015 p. 26 n. 76,Puech 2015,ʿkwr,p. 25; p. 26 n. 76,עבור,עכור,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@I 1 w2,,Puech: kaf stroke more rectangular than bet
+V0010,I,1,2,given,RJ,García Martínez–Tigchelaar 1997,עבור,,Puech 2006,עכור,p. 179,עבור,עכור,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@I 1 w2,,rj:e1-achor
+V0011,I,1,2,given,RJ,Pixner 1983,עבור,,Puech 2006,עכור,p. 179,עבור,עכור,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@I 1 w2,,rj:e1-achor
+V0012,I,2,1,given,AP,Abegg (ETCBC dss 2.0.1),הביאה,3Q15 I 2,Puech 2015,הבואת,p. 25,הביאה,הבואת,SHAPE,SHAPE,י→ו;ה→ת,ה–ת,,,,ה–ת@I 2 w1,ו–י@I 2 w1,
+V0013,I,2,1,given,PN,Luria 1963,ḥbwʾh,via Puech 2015 p. 27 n. 77,Puech 2015,hbwʾt,p. 25; p. 27,חבואה,הבואת,SHAPE,SHAPE,ח→ה;ה→ת,ה–ח;ה–ת,,,,ה–ח@I 2 w1;ה–ת@I 2 w1,,Puech: taw certain
+V0014,I,2,1,given,PN,Luria 1963,ḥbwyh,via Puech 2015 p. 27 n. 77,Puech 2015,hbwʾt,p. 25; p. 27,חבויה,הבואת,OTHER,OTHER,ח→ה;י→א;ה→ת,,,,,,,second form given for Luria
+V0015,I,3,0,given,AP,Abegg (ETCBC dss 2.0.1),{ארוה},3Q15 I 3,Puech 2015,אריח,p. 25,ארוה,אריח,OTHER,SHAPE,ו→י;ה→ח,,,,,,,
+V0016,I,3,0,given,PN,Milik 1962,ʾrwh,via Puech 2015 p. 27,Puech 2015,ʾryḥ,p. 25; pp. 27–28,ארוה,אריח,SHAPE,SHAPE,ו→י;ה→ח,ה–ח,,,,ה–ח@I 3 w0,ו–י@I 3 w0,Milik takes it as a dittography
+V0017,I,3,0,given,PN,Muchowski 1993,ʿrwḥ,via Puech 2015 p. 27 n. 79,Puech 2015,ʾryḥ,p. 25; pp. 27–28,ערוח,אריח,SHAPE,SHAPE,ע→א;ו→י,א–ע,,,,א–ע@I 3 w0,ו–י@I 3 w0,
+V0018,I,3,0,given,PN,Wolters 1990,ʿrwḥ,via Puech 2015 p. 27 n. 79,Puech 2015,ʾryḥ,p. 25; pp. 27–28,ערוח,אריח,SHAPE,SHAPE,ע→א;ו→י,א–ע,,,,א–ע@I 3 w0,ו–י@I 3 w0,
+V0019,I,3,0,given,RJ,Lefkovits 2000,אחת,,Puech 2006,אריח,,אחת,אריח,OTHER,OTHER,ח→י;ת→ח,,ר,,,,,rj:e1-distance; the record also lists I 3
+V0020,I,3,4,given,PN,Luria 1963,wklym,via Puech 2015 p. 28 n. 85,Puech 2015,wklyh,p. 25; p. 28 n. 85,וכלימ,וכליה,SHAPE,SHAPE,מ→ה,ה–מ,,,,ה–מ@I 3 w4,,Puech: he certain
+V0021,I,3,4,given,PN,Milik 1962,wklwh,via Puech 2015 p. 28,Puech 2015,wklyh,p. 25; p. 28,וכלוה,וכליה,MATRES,MATRES,ו→י,,,,,,ו–י@I 3 w4,Puech hesitates between the two
+V0022,I,5,1-2,given,PN,Milik 1962,bn rbh hšlšy,via Puech 2015 pp. 28–29 n. 88,Puech 2015,bndbk hšl<y>šy,p. 25; p. 29,בנרבההשלשי,בנדבכהשלישי,OTHER,SHAPE,ר→ד;ה→כ,,י,,,,,Puech: dalet and final kaf certain
+V0023,I,5,1-2,given,PN,Wolters 1992,bn rbh hšlšy,via Puech 2015 p. 29 n. 88,Puech 2015,bndbk hšl<y>šy,p. 25; p. 29,בנרבההשלשי,בנדבכהשלישי,OTHER,SHAPE,ר→ד;ה→כ,,י,,,,,
+V0024,I,5,2,given,AP,Abegg (ETCBC dss 2.0.1),השלשי,3Q15 I 5,Puech 2015,השל<י>שי,p. 25,השלשי,השלישי,OTHER,MATRES,,,י,,,,,
+V0025,I,5,2,given,PN,Muchowski 1993,hšlšy,via Puech 2015 p. 29 n. 89,Puech 2015,hšl<y>šy,p. 25; p. 29 n. 89,השלשי,השלישי,OTHER,MATRES,,,י,,,,,
+V0026,I,6,0,matched,PN,Luria 1963,zrb,via Puech 2015 p. 29 n. 93,Puech 2015,#numeral 1x100,p. 25; p. 29 n. 93,זרב,,OTHER,OTHER,,,,זרב,,,,numeral sign read as letters
+V0027,I,6,,unknown,PN,Allegro 1960,zll,via Puech 2015 p. 29 n. 93,Puech 2015,#numeral 1x100,p. 25; p. 29 n. 93,זלל,,OTHER,OTHER,,,,זלל,,,,numeral sign read as letters
+V0028,I,7,0,given,AP,Abegg (ETCBC dss 2.0.1),הפרסטלין,3Q15 I 7,Puech 2015,הפרסטלון,p. 25,הפרסטלינ,הפרסטלונ,MATRES,MATRES,י→ו,,,,,,ו–י@I 7 w0,
+V0029,I,7,0,given,PN,Milik 1962,hprsṭlyn,via Puech 2015 p. 29,Puech 2015,hprsṭlwn,p. 25; p. 29,הפרסטלינ,הפרסטלונ,MATRES,MATRES,י→ו,,,,,,ו–י@I 7 w0,
+V0030,I,7,1,given,PN,Allegro 1960,bzrb,via Puech 2015 p. 29 n. 95,Puech 2015,byrk,p. 25; p. 29 n. 95,בזרב,בירכ,SHAPE,SHAPE,ז→י;ב→כ,ז–י;ב–כ,,,,ז–י@I 7 w1;ב–כ@I 7 w1,,Puech: first letter hardly zayin; last could be kaf
+V0031,I,7,1-2,given,AP,Abegg (ETCBC dss 2.0.1),{בור} בקרקעו,3Q15 I 7,Puech 2015,בירכ קרקעו,p. 25,בורבקרקעו,בירכקרקעו,OTHER,SHAPE,ו→י;ב→כ,,,,,,,
+V0032,I,7,4,given,PN,Allegro 1960,bḥlʾ,via Puech 2015 p. 29 n. 95,Puech 2015,bḥlyʾ,p. 25; pp. 29–30,בחלא,בחליא,MATRES,MATRES,,,י,,,,,
+V0033,I,9,0,given,PN,Allegro 1960,bḥl,via Puech 2015 p. 31,Puech 2015,btl,p. 25; p. 31,בחל,בתל,SHAPE,SHAPE,ח→ת,ח–ת,,,,ח–ת@I 9 w0,,
+V0034,I,9,2,given,PN,Allegro 1960,bḥlh,via Puech 2015 p. 31,Puech 2015,kḥlt,p. 25; p. 31,בחלה,כחלת,SHAPE,SHAPE,ב→כ;ה→ת,ב–כ;ה–ת,,,,ב–כ@I 9 w2;ה–ת@I 9 w2,,
+V0035,I,9,6,given,AP,Abegg (ETCBC dss 2.0.1),ואפודת,3Q15 I 9,Puech 2015,ואפו דת,p. 25,ואפודת,ואפודת,DIVISION,DIVISION,,,,,,,,
+V0036,I,9,6,given,PN,Allegro 1960,wʾpwryn,via Puech 2015 p. 32 n. 114,Puech 2015,wʾpwdt,p. 25; pp. 32–33,ואפורינ,ואפודת,SHAPE,SHAPE,י→ד;נ→ת,ד–י;נ–ת,,ר,,ד–י@I 9 w6;נ–ת@I 9 w6,,
+V0037,I,9,6,given,PN,Beyer 1994,wʾpwrt,via Puech 2015 p. 32 n. 113,Puech 2015,wʾpwdt,p. 25; pp. 32–33,ואפורת,ואפודת,SHAPE,SHAPE,ר→ד,ד–ר,,,,ד–ר@I 9 w6,,Puech: dalet preferable; reš not ruled out
+V0038,I,9,6,given,PN,Eshel 2002,wʾprwn,via Puech 2015 p. 34 n. 121,Puech 2015,wʾpwdt,p. 25; pp. 32–34,ואפרונ,ואפודת,SHAPE,SHAPE,ר→ו;ו→ד;נ→ת,ו–ר;ד–ו;נ–ת,,,,ו–ר@I 9 w6;ד–ו@I 9 w6;נ–ת@I 9 w6,,
+V0039,I,9,6,given,PN,Lefkovits 2000,wʾpwryn,via Puech 2015 p. 34 n. 121,Puech 2015,wʾpwdt,p. 25; pp. 32–34,ואפורינ,ואפודת,SHAPE,SHAPE,י→ד;נ→ת,ד–י;נ–ת,,ר,,ד–י@I 9 w6;נ–ת@I 9 w6,,
+V0040,I,9,6,given,PN,Luria 1963,ʾpwrym,via Puech 2015 p. 32 n. 114,Puech 2015,ʾpwdt,p. 25; pp. 32–33,אפורימ,אפודת,SHAPE,SHAPE,י→ד;מ→ת,ד–י;מ–ת,,ר,,ד–י@I 9 w6;מ–ת@I 9 w6,,
+V0041,I,9,6,given,PN,Muchowski 1993,wʾpwdh,via Puech 2015 p. 33 n. 119,Puech 2015,wʾpwdt,p. 25; p. 33 n. 119,ואפודה,ואפודת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@I 9 w6,,
+V0042,I,10,2-3,given,PN,Lefkovits 2000,hdmʿ whṣrt,via Puech 2015 p. 34 n. 122,Puech 2015,hdmʿ whʾṣr,p. 25; p. 34 n. 122,הדמעוהצרת,הדמעוהאצר,OTHER,OTHER,,,א,ת,,,,
+V0043,I,10,3-4,given,PN,Milik 1962,whʾṣrh šbʿ,via Puech 2015 p. 34,Puech 2015,whʾṣr hšbʿ,p. 25; p. 34,והאצרהשבע,והאצרהשבע,DIVISION,DIVISION,,,,,,,,
+V0044,I,10,3-4,given,PN,Muchowski 1993,whʾṣrt šbʿ,via Puech 2015 p. 34 n. 124,Puech 2015,whʾṣr hšbʿ,p. 25; p. 34,והאצרתשבע,והאצרהשבע,SHAPE,SHAPE,ת→ה,ה–ת,,,,ה–ת@I 10 w4,,
+V0045,I,10,4-5,given,AP,Abegg (ETCBC dss 2.0.1),השבעי מעסר,3Q15 I 10,Puech 2015,השבע ומעסר,p. 25,השבעימעסר,השבעומעסר,MATRES,MATRES,י→ו,,,,,,ו–י@I 10 w5,
+V0046,I,10,4-5,given,PN,Beyer 1994,hšbʿy mʿsr,via Puech 2015 p. 34,Puech 2015,hšbʿ wmʿsr,p. 25; p. 34,השבעימעסר,השבעומעסר,MATRES,MATRES,י→ו,,,,,,ו–י@I 10 w5,Beyer: defective yod and no copula
+V0047,I,10,4-5,given,PN,Pixner 1983,hšbʿy mʿsr,via Puech 2015 p. 34 n. 126,Puech 2015,hšbʿ wmʿsr,p. 25; p. 34,השבעימעסר,השבעומעסר,MATRES,MATRES,י→ו,,,,,,ו–י@I 10 w5,
+V0048,I,10,4-5,given,PN,Wolters 1992,hšbʿy mʿsr,via Puech 2015 p. 34 n. 126,Puech 2015,hšbʿ wmʿsr,p. 25; p. 34,השבעימעסר,השבעומעסר,MATRES,MATRES,י→ו,,,,,,ו–י@I 10 w5,
+V0049,I,11,1,given,PN,Allegro 1960,mpyt k,via Puech 2015 p. 35 n. 129,Puech 2015,mpwgl,p. 25; p. 35 n. 129,מפיתכ,מפוגל,OTHER,OTHER,י→ו;ת→ג;כ→ל,,,,,,,
+V0050,I,11,1,given,PN,Eshel 2002,bpy tl,via Puech 2015 p. 35 n. 129,Puech 2015,mpwgl,p. 25; p. 35 n. 129,בפיתל,מפוגל,OTHER,OTHER,ב→מ;י→ו;ת→ג,,,,,,,follows Lefkovits
+V0051,I,11,1,given,PN,Lefkovits 2000,bpy tl,via Puech 2015 p. 35 n. 129,Puech 2015,mpwgl,p. 25; p. 35 n. 129,בפיתל,מפוגל,OTHER,OTHER,ב→מ;י→ו;ת→ג,,,,,,,Puech: mem not the same stroke as bet
+V0052,I,11,1,given,PN,Luria 1963,pnwt l,via Puech 2015 p. 35 n. 129,Puech 2015,mpwgl,p. 25; p. 35 n. 129,פנותל,מפוגל,OTHER,OTHER,פ→מ;נ→פ;ת→ג,,,,,,,
+V0053,I,11,1,given,PN,Milik 1962,mpy gl,via Puech 2015 p. 35 n. 129,Puech 2015,mpwgl,p. 25; p. 35 n. 129,מפיגל,מפוגל,MATRES,MATRES,י→ו,,,,,,ו–י@I 11 w1,
+V0054,I,11,1,given,PN,Pixner 1983,mpygl,via Puech 2015 p. 35 n. 129,Puech 2015,mpwgl,p. 25; p. 35 n. 129,מפיגל,מפוגל,MATRES,MATRES,י→ו,,,,,,ו–י@I 11 w1,
+V0055,I,11,1,given,RJ,Milik 1962,מפי גל,,Puech 2006,מפוגל,,מפיגל,מפוגל,MATRES,MATRES,י→ו,,,,,,ו–י@I 11 w1,rj:e4-disqualified
+V0056,I,12,3,given,AP,Abegg (ETCBC dss 2.0.1),ניקרת,3Q15 I 12,Puech 2015,מקרת,p. 25,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,alternative X/Y in the edition; bracket at a line edge (right-to-left extract)
+V0057,I,12,3,given,PN,Allegro 1960,nyqrt,via Puech 2015 p. 35 n. 131,Puech 2015,mqrt,p. 25; pp. 35–36,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,drawing
+V0058,I,12,3,given,PN,Eshel 2002,nqrt,via Puech 2015 p. 36 n. 131,Puech 2015,mqrt,p. 25; pp. 35–36,נקרת,מקרת,SHAPE,SHAPE,נ→מ,מ–נ,,,,מ–נ@I 12 w3,,
+V0059,I,12,3,given,PN,Lefkovits 2010,mqdt,via Puech 2015 p. 36 n. 131,Puech 2015,mqrt,p. 25; pp. 35–36,מקדת,מקרת,SHAPE,SHAPE,ד→ר,ד–ר,,,,ד–ר@I 12 w3,,Lefkovits hesitates between mqdt and mqrt
+V0060,I,12,3,given,PN,Milik 1962,nyqrt,via Puech 2015 p. 35 n. 131,Puech 2015,mqrt,p. 25; pp. 35–36,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,Puech: X-ray contradicts nyqrt
+V0061,I,12,3,given,PN,Muchowski 1993,nyqrt,via Puech 2015 p. 35 n. 131,Puech 2015,mqrt,p. 25; pp. 35–36,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,drawing
+V0062,I,12,3,given,PN,Schiffman 2002,nyqrt,via Puech 2015 p. 36 n. 131,Puech 2015,mqrt,p. 25; pp. 35–36,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,
+V0063,I,12,3,given,PN,Wolters 1992,nyqrt,via Puech 2015 p. 36 n. 131,Puech 2015,mqrt,p. 25; pp. 35–36,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,
+V0064,I,12,3,given,RJ,Eshel 2002,ניקרת,,Puech 2006,מקרת,,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,rj:e4-immersion
+V0065,I,12,3,given,RJ,Milik 1962,ניקרת,,Puech 2006,מקרת,,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,rj:e4-immersion
+V0066,I,12,3,given,RJ,Schiffman 2002,ניקרת,,Puech 2006,מקרת,,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,rj:e4-immersion
+V0067,I,12,3,given,RJ,Wolters 1996,ניקרת,,Puech 2006,מקרת,,ניקרת,מקרת,SHAPE,SHAPE,י→מ,י–מ,,נ,,י–מ@I 12 w3,,rj:e4-immersion
+V0068,I,12,4,given,AP,Abegg (ETCBC dss 2.0.1),הטבילה,3Q15 I 12,Puech 2015,הטבול[ה],p. 25,הטבילה,הטבולה,MATRES,MATRES,י→ו,,,,,,ו–י@I 12 w4,override: Puech prints ו/י; with yod his letters equal Abegg's
+V0069,I,12,4,given,PN,Allegro 1960,hṭbwl,via Puech 2015 p. 35,Puech 2015,hṭbyl[h],p. 25; pp. 35–36,הטבול,הטבילה,RESTORATION,RESTORATION,ו→י,,ה,,,,,
+V0070,I,13,0,given,AP,Abegg (ETCBC dss 2.0.1),בשיא,3Q15 I 13,Puech 2015,בשוא,p. 25,בשיא,בשוא,MATRES,MATRES,י→ו,,,,,,ו–י@I 13 w0,override: stray bracket from the extract
+V0071,I,13,0,given,PN,Allegro 1960,bśyʾ,via Puech 2015 p. 36 n. 133,Puech 2015,bšwʾ,p. 25; p. 36,בשיא,בשוא,MATRES,MATRES,י→ו,,,,,,ו–י@I 13 w0,
+V0072,I,13,0,given,PN,Lefkovits 2000,bšyʾ,via Puech 2015 p. 36 n. 133,Puech 2015,bšwʾ,p. 25; p. 36,בשיא,בשוא,MATRES,MATRES,י→ו,,,,,,ו–י@I 13 w0,
+V0073,I,13,0,given,PN,Muchowski 1993,bšwʾt,via Puech 2015 p. 36 n. 133,Puech 2015,bšwʾ,p. 25; p. 36,בשואת,בשוא,OTHER,OTHER,,,,ת,,,,
+V0074,I,13,0,given,PN,Pixner 1983,bśyʾ,via Puech 2015 p. 36 n. 133,Puech 2015,bšwʾ,p. 25; p. 36,בשיא,בשוא,MATRES,MATRES,י→ו,,,,,,ו–י@I 13 w0,
+V0075,I,13,0,given,PN,Schiffman 2002,bšyʾ,via Puech 2015 p. 36 n. 133,Puech 2015,bšwʾ,p. 25; p. 36,בשיא,בשוא,MATRES,MATRES,י→ו,,,,,,ו–י@I 13 w0,
+V0076,I,13,0-1,given,PN,García Martínez–Tigchelaar 1997,bšyʾḥ mʿbʾ,via Puech 2015 p. 36 n. 134,Puech 2015,bšwʾ hmsbʾ,p. 25; p. 36,בשיאחמעבא,בשואהמסבא,SHAPE,SHAPE,י→ו;ח→ה;ע→ס,ה–ח;ס–ע,,,,ה–ח@I 13 w1;ס–ע@I 13 w1,ו–י@I 13 w0,
+V0077,I,13,0-1,given,PN,Luria 1963,bšyʾḥ msbʾ,via Puech 2015 p. 36 n. 134,Puech 2015,bšwʾ hmsbʾ,p. 25; p. 36,בשיאחמסבא,בשואהמסבא,SHAPE,SHAPE,י→ו;ח→ה,ה–ח,,,,ה–ח@I 13 w1,ו–י@I 13 w0,Puech's waw is supralinear
+V0078,I,13,0-1,given,PN,Wolters 1992,bšyʾḥ mʿbʾ,via Puech 2015 p. 36 nn. 132 and 135,Puech 2015,bšwʾ hmsbʾ,p. 25; p. 36,בשיאחמעבא,בשואהמסבא,SHAPE,SHAPE,י→ו;ח→ה;ע→ס,ה–ח;ס–ע,,,,ה–ח@I 13 w1;ס–ע@I 13 w1,ו–י@I 13 w0,n. 133 gives bšyḥ for Luria and Wolters
+V0079,I,13,1,given,AP,Abegg (ETCBC dss 2.0.1),המעבא,3Q15 I 13,Puech 2015,המסבא,p. 25,המעבא,המסבא,SHAPE,SHAPE,ע→ס,ס–ע,,,,ס–ע@I 13 w1,,alternative X/Y in the edition
+V0080,I,13,1,given,PN,Beyer 1994,hmʿbʾ,via Puech 2015 p. 36 n. 135,Puech 2015,hmsbʾ,p. 25; p. 36,המעבא,המסבא,SHAPE,SHAPE,ע→ס,ס–ע,,,,ס–ע@I 13 w1,,
+V0081,I,13,1,given,PN+RJ,Milik 1962,hmʿbʾ,via Puech 2015 p. 36,Puech 2015,hmsbʾ,p. 25; p. 36,המעבא,המסבא,SHAPE,SHAPE,ע→ס,ס–ע,,,,ס–ע@I 13 w1,,Puech: assured by new photographs | rj:e5-stair
+V0082,I,13,4,given,PN,Lefkovits 2000,byrdʾ,via Puech 2015 p. 37 n. 138,Puech 2015,byrkʾ,p. 25; p. 37,בירדא,בירכא,SHAPE,SHAPE,ד→כ,ד–כ,,,,ד–כ@I 13 w4,,
+V0083,I,13,4,given,PN,Muchowski 1993,byrdʾ,via Puech 2015 p. 37 n. 138,Puech 2015,byrkʾ,p. 25; p. 37,בירדא,בירכא,SHAPE,SHAPE,ד→כ,ד–כ,,,,ד–כ@I 13 w4,,
+V0084,I,13,4,given,PN,Wolters 1992,byrdʾ,via Puech 2015 p. 37 n. 138,Puech 2015,byrkʾ,p. 25; p. 37,בירדא,בירכא,SHAPE,SHAPE,ד→כ,ד–כ,,,,ד–כ@I 13 w4,,
+V0085,I,13,4-6,given,AP,Abegg (ETCBC dss 2.0.1),בירד אל סמל,3Q15 I 13,Puech 2015,בירדא לסמל,p. 25,בירדאלסמל,בירדאלסמל,DIVISION,DIVISION,,,,,,,,override: Puech prints בירד/ךא; dalet alternative
+V0086,I,13,4-6,given,AP,Abegg (ETCBC dss 2.0.1),בירד אל סמל,3Q15 I 13,Puech 2015,בירכא לסמל,p. 25,בירדאלסמל,בירכאלסמל,SHAPE,SHAPE,ד→כ,ד–כ,,,,ד–כ@I 13 w4,,override: Puech prints בירד/ךא; kaf alternative
+V0087,I,13,4-6,given,PN,Beyer 1994,byrk ʾl sml,via Puech 2015 p. 37 n. 138,Puech 2015,byrkʾ lsml,p. 25; p. 37,בירכאלסמל,בירכאלסמל,DIVISION,DIVISION,,,,,,,,
+V0088,I,13,4-6,given,PN,García Martínez 1994,byrd ʾl sml,via Puech 2015 p. 37,Puech 2015,byrkʾ lsml,p. 25; p. 37,בירדאלסמל,בירכאלסמל,SHAPE,SHAPE,ד→כ,ד–כ,,,,ד–כ@I 13 w4,,
+V0089,I,13,4-6,given,PN,Milik 1962,byrd ʾl sml,via Puech 2015 p. 37,Puech 2015,byrkʾ lsml,p. 25; p. 37,בירדאלסמל,בירכאלסמל,SHAPE,SHAPE,ד→כ,ד–כ,,,,ד–כ@I 13 w4,,Puech prints byrd/kʾ and hesitates
+V0090,I,13,4-6,given,PN,Pixner 1983,byrd ʾl sml,via Puech 2015 p. 37,Puech 2015,byrkʾ lsml,p. 25; p. 37,בירדאלסמל,בירכאלסמל,SHAPE,SHAPE,ד→כ,ד–כ,,,,ד–כ@I 13 w4,,
+V0091,II,1,1,given,PN,García Martínez 1994,hmlh,via Puech 2015 p. 39,Puech 2015,hmlḥ,p. 38; p. 39,המלה,המלח,SHAPE,SHAPE,ה→ח,ה–ח,,,,ה–ח@II 1 w1,,follows the editor
+V0092,II,1,1,given,PN,Milik 1962,hmlh,via Puech 2015 p. 39,Puech 2015,hmlḥ,p. 38; p. 39,המלה,המלח,SHAPE,SHAPE,ה→ח,ה–ח,,,,ה–ח@II 1 w1,,Puech: he and ḥet distinguished in this column; hmlh not excluded
+V0093,II,3,1-2,given,PN,Wilmot 2002,byt tmr{h},via Puech 2015 p. 40 n. 146,Puech 2015,byt hmdh,p. 38; p. 40,ביתתמרה,ביתהמדה,SHAPE,SHAPE,ת→ה;ר→ד,ה–ת;ד–ר,,,,ה–ת@II 3 w2;ד–ר@II 3 w2,,
+V0094,II,3,2,given,AP,Abegg (ETCBC dss 2.0.1),המדח,3Q15 II 3,Puech 2015,המדה,p. 38,המדח,המדה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@II 3 w2,,
+V0095,II,3,2,given,PN,García Martínez–Tigchelaar 1997,hmdḥ,via Puech 2015 p. 40 n. 147,Puech 2015,hmdh,p. 38; p. 40,המדח,המדה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@II 3 w2,,
+V0096,II,3,2,given,PN,Høgenhaven 2009,hmrh,via Puech 2015 p. 39 n. 144,Puech 2015,hmdh,p. 38; pp. 39–40,המרה,המדה,SHAPE,SHAPE,ר→ד,ד–ר,,,,ד–ר@II 3 w2,,
+V0097,II,3,2,given,PN,Luria 1963,hmrh,via Puech 2015 p. 39 n. 144,Puech 2015,hmdh,p. 38; pp. 39–40,המרה,המדה,SHAPE,SHAPE,ר→ד,ד–ר,,,,ד–ר@II 3 w2,,
+V0098,II,3,2,given,PN,Muchowski 1993,hmdḥ,via Puech 2015 p. 40 n. 145,Puech 2015,hmdh,p. 38; p. 40,המדח,המדה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@II 3 w2,,follows Wolters
+V0099,II,3,2,given,PN,Wolters 1990,hmdḥ,via Puech 2015 p. 40 n. 145,Puech 2015,hmdh,p. 38; p. 40,המדח,המדה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@II 3 w2,,
+V0100,II,3,2,given,PN+RJ,Milik 1962,hmrh,via Puech 2015 p. 39,Puech 2015,hmdh,p. 38; pp. 39–40,המרה,המדה,SHAPE,SHAPE,ר→ד,ד–ר,,,,ד–ר@II 3 w2,,Puech: dalet graphically plausible | rj:e7-house
+V0101,II,3,2-3,given,PN,García Martínez 1994,hmdḥh yšw,via Puech 2015 p. 40,Puech 2015,hmdh hyšn,p. 38; p. 40,המדחהישו,המדההישנ,SHAPE,SHAPE,ח→ה;ו→נ,ה–ח;ו–נ,,,,ה–ח@II 3 w2;ו–נ@II 3 w3,,
+V0102,II,3,2-3,given,PN,Pixner 1983,hmdḥh yšw,via Puech 2015 p. 40,Puech 2015,hmdh hyšn,p. 38; p. 40,המדחהישו,המדההישנ,SHAPE,SHAPE,ח→ה;ו→נ,ה–ח;ו–נ,,,,ה–ח@II 3 w2;ו–נ@II 3 w3,,Puech: nun of yšn certain
+V0103,II,3,4,given,PN,Milik 1962,bdybr,via Puech 2015 p. 40,Puech 2015,brwbd,p. 38; p. 40,בדיבר,ברובד,OTHER,OTHER,ד→ר;י→ו;ר→ד,,,,yes,,,
+V0104,II,4,0,given,AP,Abegg (ETCBC dss 2.0.1),הש<לי>שי,3Q15 II 4,Puech 2015,השליש{ל}<י>,p. 38,השלישי,השלישלי,OTHER,OTHER,,,ל,,,,,
+V0105,II,5,2-3,given,AP,Abegg (ETCBC dss 2.0.1),מתיה עצין,3Q15 II 5,Puech 2015,מ(ב)תי העצין,p. 38,מתיהעצינ,מבתיהעצינ,OTHER,DIVISION,,,ב,,,,,
+V0106,II,5,2-3,given,PN,Allegro 1960,mtwh ʿṣyn,via Puech 2015 p. 41,Puech 2015,mty hʿṣyn,p. 38; p. 41,מתוהעצינ,מתיהעצינ,MATRES,MATRES,ו→י,,,,,,ו–י@II 5 w2,Puech reads the engraved mem (and prints the editor's correction to bet)
+V0107,II,5,2-3,given,PN,Beyer 1994,mty hʿṣyny,via Puech 2015 p. 41,Puech 2015,mty hʿṣyn,p. 38; p. 41,מתיהעציני,מתיהעצינ,MATRES,MATRES,,,,י,,,,
+V0108,II,5,2-3,given,PN,Muchowski 1993,mtn hʿṣyn,via Puech 2015 p. 41 n. 153,Puech 2015,mty hʿṣyn,p. 38; p. 41,מתנהעצינ,מתיהעצינ,SHAPE,SHAPE,נ→י,י–נ,,,,י–נ@II 5 w2,,
+V0109,II,5,2-3,given,PN,Wolters 1992,mtn hʿṣn,via Puech 2015 p. 41 n. 153,Puech 2015,mty hʿṣyn,p. 38; p. 41,מתנהעצנ,מתיהעצינ,SHAPE,SHAPE,נ→י,י–נ,י,,,י–נ@II 5 w2,,Puech: the nun cannot be accepted
+V0110,II,5,4,given,AP,Abegg (ETCBC dss 2.0.1),וכתבן,3Q15 II 5,Puech 2015,ובתכו,p. 38,וכתבנ,ובתכו,OTHER,OTHER,כ→ב;ב→כ;נ→ו,,,,yes,,,
+V0111,II,5,4,given,PN,Allegro 1960,wbtkn,via Puech 2015 p. 41 n. 155,Puech 2015,wbtkw,p. 38; p. 41,ובתכנ,ובתכו,SHAPE,SHAPE,נ→ו,ו–נ,,,,ו–נ@II 5 w4,,
+V0112,II,5,4,given,PN,Muchowski 1993,wktbw,via Puech 2015 p. 41 n. 155,Puech 2015,wbtkw,p. 38; p. 41,וכתבו,ובתכו,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@II 5 w4;ב–כ@II 5 w4,,
+V0113,II,6,0-1-2,matched,PN,Allegro 1960,bt mṭblyn,via Puech 2015 p. 41 n. 155,Puech 2015,bwr bw klyn,p. 38; p. 41,בתמטבלינ,בורבוכלינ,OTHER,OTHER,ת→ר;מ→ב;ט→ו;ב→כ,,ו,,,,,
+V0114,II,6,0-1-2,matched,PN,Luria 1963,bt mṭblyn,via Puech 2015 p. 41 n. 155,Puech 2015,bwr bw klyn,p. 38; p. 41,בתמטבלינ,בורבוכלינ,OTHER,OTHER,ת→ר;מ→ב;ט→ו;ב→כ,,ו,,,,,
+V0115,II,6,0-1-2,matched,PN,Muchowski 1993,bzrb klyn,via Puech 2015 p. 41 n. 155,Puech 2015,bwr bw klyn,p. 38; p. 41,בזרבכלינ,בורבוכלינ,SHAPE,SHAPE,ז→ו,ו–ז,ו,,,ו–ז@II 6 w0,,
+V0116,II,6,0-1-2,matched,PN,Wolters 1992,byrk bw klyn,via Puech 2015 p. 41 n. 155,Puech 2015,bwr bw klyn,p. 38; p. 41,בירכבוכלינ,בורבוכלינ,OTHER,OTHER,י→ו,,,כ,,,,
+V0117,II,8,2,given,AP,Abegg (ETCBC dss 2.0.1),תשע,3Q15 II 8,Puech 2015,ח[[מ]]ש,p. 38,תשע,חמש,OTHER,OTHER,ת→ח;ש→מ;ע→ש,,,,,,,
+V0118,II,8,2,given,PN,Allegro 1960,tšʿ,via Puech 2015 p. 42 n. 157,Puech 2015,ḥ[[m]]š,p. 38; p. 42,תשע,חמש,OTHER,OTHER,ת→ח;ש→מ;ע→ש,,,,,,,Puech: first letter a ḥet; not the ductus of taw
+V0119,II,8,2,given,PN,Beyer 1994,tšʿ,via Puech 2015 p. 42 n. 157,Puech 2015,ḥ[[m]]š,p. 38; p. 42,תשע,חמש,OTHER,OTHER,ת→ח;ש→מ;ע→ש,,,,,,,
+V0120,II,8,2,given,PN,Lefkovits 2000,tšʿ,via Puech 2015 p. 42 n. 157,Puech 2015,ḥ[[m]]š,p. 38; p. 42,תשע,חמש,OTHER,OTHER,ת→ח;ש→מ;ע→ש,,,,,,,
+V0121,II,8,2,given,PN,Luria 1963,tšʿ,via Puech 2015 p. 42 n. 157,Puech 2015,ḥ[[m]]š,p. 38; p. 42,תשע,חמש,OTHER,OTHER,ת→ח;ש→מ;ע→ש,,,,,,,
+V0122,II,8,2,given,PN,Muchowski 1993,tšʿ,via Puech 2015 p. 42 n. 157,Puech 2015,ḥ[[m]]š,p. 38; p. 42,תשע,חמש,OTHER,OTHER,ת→ח;ש→מ;ע→ש,,,,,,,
+V0123,II,8,2,given,PN,Wolters 1992,tšʿ,via Puech 2015 p. 42 n. 157,Puech 2015,ḥ[[m]]š,p. 38; p. 42,תשע,חמש,OTHER,OTHER,ת→ח;ש→מ;ע→ש,,,,,,,
+V0124,II,9,0,given,PN,Allegro 1960,wb(ʿ)mwqʾ,via Puech 2015 p. 42,Puech 2015,wbmzqʾ,p. 38; p. 42,ובעמוקא,ובמזקא,OTHER,SHAPE,ו→ז,,,ע,,,,
+V0125,II,9,0,given,PN,Luria 1963,wb(ʿ)mwqʾ,via Puech 2015 p. 42,Puech 2015,wbmzqʾ,p. 38; p. 42,ובעמוקא,ובמזקא,OTHER,SHAPE,ו→ז,,,ע,,,,
+V0126,II,9,0,given,RJ,Allegro 1960,במוקא,via Lefkovits p. 126,Puech 2006,במזקא,,במוקא,במזקא,SHAPE,SHAPE,ו→ז,ו–ז,,,,ו–ז@II 9 w0,,rj:e9-channel; prefix b- added to Puech's cited form to compare the same span
+V0127,II,9,0,given,RJ,Luria 1963,במוקא,via Lefkovits p. 126,Puech 2006,במזקא,,במוקא,במזקא,SHAPE,SHAPE,ו→ז,ו–ז,,,,ו–ז@II 9 w0,,rj:e9-channel
+V0128,II,11,0,given,PN,Lefkovits 2000,bšwh,via Puech 2015 p. 42 n. 161,Puech 2015,bšn,p. 38; p. 42,בשוה,בשנ,SHAPE,SHAPE,ה→נ,ה–נ,,ו,,ה–נ@II 11 w0,,Puech: final nun certain
+V0129,II,11,0,given,PN,Lefkovits 2000 (alternative),bšyh,via Puech 2015 p. 42 n. 161,Puech 2015,bšn,p. 38; p. 42,בשיה,בשנ,SHAPE,SHAPE,ה→נ,ה–נ,,י,,ה–נ@II 11 w0,,
+V0130,II,11,2,given,AP,Abegg (ETCBC dss 2.0.1),כדין,3Q15 II 11,Puech 2015,בדין,p. 38,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@II 11 w2,,
+V0131,II,11,2,given,PN,Allegro 1960,kdyn,via Puech 2015 p. 42,Puech 2015,bdyn,p. 38; p. 42,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@II 11 w2,,Puech: bet-kaf distinction difficult
+V0132,II,11,2,given,PN,Lefkovits 2000,kdyn,via Puech 2015 p. 42 n. 159,Puech 2015,bdyn,p. 38; p. 42,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@II 11 w2,,
+V0133,II,11,2,given,PN,Luria 1963,kdyn,via Puech 2015 p. 42 n. 159,Puech 2015,bdyn,p. 38; p. 42,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@II 11 w2,,
+V0134,II,11,2,given,PN,Muchowski 1993,kdyn,via Puech 2015 p. 42 n. 159,Puech 2015,bdyn,p. 38; p. 42,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@II 11 w2,,
+V0135,II,11,2,given,PN,Wise 1996,kdyn,via Puech 2015 p. 42 n. 159,Puech 2015,bdyn,p. 38; p. 42,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@II 11 w2,,
+V0136,II,11,2,given,PN,Wolters 1992,kdyn,via Puech 2015 p. 42 n. 159,Puech 2015,bdyn,p. 38; p. 42,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@II 11 w2,,
+V0137,II,11,2,given,RJ,Lefkovits 2000,כדין,,Puech 2006,בדין,,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@II 11 w2,,rj:e10-bars
+V0138,II,12,0,given,AP,Abegg (ETCBC dss 2.0.1),ביאתו,3Q15 II 12,Puech 2015,באתו,p. 38,ביאתו,באתו,MATRES,MATRES,,,,י,,,,
+V0139,II,12,0,given,PN,Allegro 1960,mʾwt,via Puech 2015 p. 42 n. 162,Puech 2015,bʾtw,p. 38; p. 42,מאות,באתו,OTHER,OTHER,מ→ב;ו→ת;ת→ו,,,,yes,,,
+V0140,II,12,0,given,PN,Luria 1963,mʾwt,via Puech 2015 p. 42 n. 162,Puech 2015,bʾtw,p. 38; p. 42,מאות,באתו,OTHER,OTHER,מ→ב;ו→ת;ת→ו,,,,yes,,,
+V0141,II,12,0,given,PN,Muchowski 1993,byʾtw,via Puech 2015 p. 42 n. 162,Puech 2015,bʾtw,p. 38; p. 42,ביאתו,באתו,MATRES,MATRES,,,,י,,,,
+V0142,II,12,0,given,PN,Wolters 1992,byʾtw,via Puech 2015 p. 42 n. 162,Puech 2015,bʾtw,p. 38; p. 42,ביאתו,באתו,MATRES,MATRES,,,,י,,,,Puech: no trace of yod
+V0143,II,13,2,matched,PN,Allegro 1960,bḥlh,via Puech 2015 p. 43,Puech 2015,kḥlt,p. 38; p. 43,בחלה,כחלת,SHAPE,SHAPE,ב→כ;ה→ת,ב–כ;ה–ת,,,,ב–כ@II 13 w2;ה–ת@II 13 w2,,Puech: kaf and taw extended and straight
+V0144,II,14,0,given,AP,Abegg (ETCBC dss 2.0.1),הצפני,3Q15 II 14,Puech 2015,הצפוני,p. 38,הצפני,הצפוני,MATRES,MATRES,,,ו,,,,,
+V0145,II,14,2,given,PN,Lefkovits 2000,ʾmt,via Puech 2015 p. 43 n. 165,Puech 2015,ʾmwt,p. 38; p. 43,אמת,אמות,MATRES,MATRES,,,ו,,,,,Puech: the waw is engraved
+V0146,II,14,3,given,AP,Abegg (ETCBC dss 2.0.1),{ב}ארבע,3Q15 II 14,Puech 2015,{אמות} ארבע,p. 38,בארבע,אמותארבע,OTHER,SHAPE,ב→ת,,אמו,,,,,
+V0147,III,1,0-2,given,RJ,Lefkovits 2000,בח[צר נב]ט,,Puech 2006,בחצ[ר ש(ל) ]דיאט,,בחצרנבט,בחצרשלדיאט,RESTORATION,RESTORATION,נ→י;ב→א,,שלד,,,,,rj:e12-court
+V0148,III,1,1,given,AP,Abegg (ETCBC dss 2.0.1),,3Q15 III 1,Puech 2015,[ש(ל) ]דיאט,p. 43,,שלדיאט,RESTORATION,RESTORATION,,,שלדיאט,,,,,override: Abegg leaves the word in a lacuna
+V0149,III,2,1,given,AP,Abegg (ETCBC dss 2.0.1),[[חפר]],3Q15 III 2,Puech 2015,,p. 43,חפר,,OTHER,SAME,,,,חפר,,,,
+V0150,III,2,5,given,AP,Abegg (ETCBC dss 2.0.1),כסף,3Q15 III 2,Puech 2015,כ{ל}<ס>ף,p. 43,כספ,כלספ,OTHER,OTHER,,,ל,,,,,
+V0151,III,4,1,given,AP,Abegg (ETCBC dss 2.0.1),,3Q15 III 4,Puech 2015,[[ה]],p. 43,,ה,OTHER,SAME,,,ה,,,,,override: bracket order from the extract
+V0152,III,8,1,given,PN,Lefkovits 2000,šbmlḥ,via Puech 2015 p. 46 n. 180,Puech 2015,šbmlh,p. 43; p. 46,שבמלח,שבמלה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@III 8 w1,,
+V0153,III,8,1,given,PN,Luria 1963,šbmlḥ,via Puech 2015 p. 46 n. 180,Puech 2015,šbmlh,p. 43; p. 46,שבמלח,שבמלה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@III 8 w1,,
+V0154,III,8,1-2,given,AP,Abegg (ETCBC dss 2.0.1),שבמלחמ בצפונו,3Q15 III 8,Puech 2015,שבמלה מבצפונו,p. 43,שבמלחמבצפונו,שבמלהמבצפונו,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@III 8 w1,,
+V0155,III,8,1-2,given,PN,Allegro 1960,šbmlḥm bṣpwnw,via Puech 2015 p. 46 n. 179,Puech 2015,šbmlh mbṣpwnw,p. 43; p. 46,שבמלחמבצפונו,שבמלהמבצפונו,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@III 8 w1,,Puech: he and ḥet sometimes written alike
+V0156,III,8,1-2,given,PN,García Martínez 1994,šbmlḥm bṣpwnw,via Puech 2015 p. 46 n. 179,Puech 2015,šbmlh mbṣpwnw,p. 43; p. 46,שבמלחמבצפונו,שבמלהמבצפונו,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@III 8 w1,,
+V0157,III,8,1-2,given,PN,García Martínez–Tigchelaar 1997,šbmlḥm bṣpwnw,via Puech 2015 p. 46 n. 179,Puech 2015,šbmlh mbṣpwnw,p. 43; p. 46,שבמלחמבצפונו,שבמלהמבצפונו,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@III 8 w1,,
+V0158,III,8,1-2,given,PN,Muchowski 1993,šbmlḥm bṣpwnw,via Puech 2015 p. 46 n. 179,Puech 2015,šbmlh mbṣpwnw,p. 43; p. 46,שבמלחמבצפונו,שבמלהמבצפונו,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@III 8 w1,,
+V0159,III,8,1-2,given,PN,Pixner 1983,šbmlḥm bṣpwnw,via Puech 2015 p. 46 n. 179,Puech 2015,šbmlh mbṣpwnw,p. 43; p. 46,שבמלחמבצפונו,שבמלהמבצפונו,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@III 8 w1,,
+V0160,III,8,1-2,given,PN,Wolters 1992,šbmlḥm bṣpwnw,via Puech 2015 p. 46 n. 179,Puech 2015,šbmlh mbṣpwnw,p. 43; p. 46,שבמלחמבצפונו,שבמלהמבצפונו,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@III 8 w1,,
+V0161,III,9,2,given,AP,Abegg (ETCBC dss 2.0.1),לבושי[[ן]],3Q15 III 9,Puech 2015,<ו>לבושין,p. 43,לבושינ,ולבושינ,OTHER,OTHER,,,ו,,,,,
+V0162,III,9,2,given,PN,Milik 1962,lkwšy,via Puech 2015 p. 46,Puech 2015,<w>lbwšyn,p. 43; pp. 46–47,לכושי,ולבושינ,OTHER,SHAPE,כ→ב,,ונ,,,,,Puech: bet preferable to kaf
+V0163,III,9,2,given,PN,Muchowski 1993,lkwšy,via Puech 2015 p. 46 n. 181,Puech 2015,<w>lbwšyn,p. 43; pp. 46–47,לכושי,ולבושינ,OTHER,SHAPE,כ→ב,,ונ,,,,,follows Milik
+V0164,III,9,2,given,RJ,Milik 1962,לכושי,,Puech 2006,<ו>לבושין,,לכושי,ולבושינ,OTHER,SHAPE,כ→ב,,ונ,,,,,rj:e13-garments
+V0165,III,9,2,given,RJ,Wolters 1994,lbwšy,pp. 292–295,Puech 2006,<ו>לבושין,,לבושי,ולבושינ,OTHER,OTHER,,,ונ,,,,,rj:e13-garments
+V0166,III,11,0-2,given,PN,Allegro 1960,byrydw,via Puech 2015 p. 47,Puech 2015,mmzrḥw,p. 43; p. 47,בירידו,ממזרחו,OTHER,OTHER,ב→מ;י→מ;ר→ז;י→ר;ד→ח,,,,,,,
+V0167,III,11,1,given,AP,Abegg (ETCBC dss 2.0.1),שבמלחמ,3Q15 III 11,Puech 2015,שבמלה,p. 43,שבמלחמ,שבמלה,SHAPE,SHAPE,מ→ה,ה–מ,,ח,,ה–מ@III 11 w1,,
+V0168,III,11,1-2,given,PN,Wolters 1996,šbmlḥm mzrḥy,via Puech 2015 p. 47 n. 185,Puech 2015,šbmlh mmzrḥw,p. 43; p. 47,שבמלחממזרחי,שבמלהממזרחו,SHAPE,SHAPE,ח→ה;י→ו,ה–ח,,,,ה–ח@III 11 w1,ו–י@III 11 w2,
+V0169,III,12,0,given,AP,Abegg (ETCBC dss 2.0.1),בצפנו,3Q15 III 12,Puech 2015,בצפון,p. 43,בצפנו,בצפונ,SHAPE,SHAPE,נ→ו;ו→נ,ו–נ;ו–נ,,,yes,ו–נ@III 12 w0;ו–נ@III 12 w0,,
+V0170,III,12,0,given,PN,Luria 1963,mṣpwn,via Puech 2015 p. 47 n. 185,Puech 2015,bṣpwn,p. 43; p. 47,מצפונ,בצפונ,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@III 12 w0,,
+V0171,III,13,0,given,AP,Abegg (ETCBC dss 2.0.1),ת,3Q15 III 13,Puech 2015,דף,p. 43,ת,דפ,OTHER,OTHER,ת→פ,,ד,,,,,override: the component split wrongly in the extract
+V0172,III,13,0,given,PN,Allegro 1960,t,via Puech 2015 p. 47 n. 186,Puech 2015,dp,p. 43; pp. 47–48,ת,דפ,OTHER,OTHER,ת→פ,,ד,,,,,word hm|t / hm|dp across the line break; Puech: second downstroke of the taw not clear
+V0173,III,13,0,given,PN,Luria 1963,t,via Puech 2015 p. 47 n. 186,Puech 2015,dp,p. 43; pp. 47–48,ת,דפ,OTHER,OTHER,ת→פ,,ד,,,,,
+V0174,III,13,0,given,RJ,Milik 1960,ת,via Lefkovits p. 152,Milik 1962,דׄף,DJD C82,ת,דפ,OTHER,OTHER,ת→פ,,ד,,,,,rj:e14-slab; word hm|t / hm|dp across the line break
+V0175,III,13,1,given,AP,Abegg (ETCBC dss 2.0.1),[[חפר]],3Q15 III 13,Puech 2015,,p. 43,חפר,,OTHER,SAME,,,,חפר,,,,override: the component split wrongly in the extract
+V0176,IV,1,2,given,AP,Abegg (ETCBC dss 2.0.1),שב,3Q15 IV 1,Puech 2015,שב[צפון],p. 48,שב,שבצפונ,RESTORATION,RESTORATION,,,צפונ,,,,,override: bracket order from the extract
+V0177,IV,1,3,given,PN,Allegro 1960,ḥlh,via Puech 2015 p. 49 n. 189,Puech 2015,ḥlt,p. 48; p. 49,חלה,חלת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IV 1 w3,,letters outside the lacuna only; Puech: the copyist certainly wrote a taw
+V0178,IV,1,3,given,PN,Beyer 1994,qlh,via Puech 2015 p. 49,Puech 2015,ḥlt,p. 48; p. 49,קלה,חלת,OTHER,OTHER,ק→ח;ה→ת,,,,,,,letters outside Beyer's restoration
+V0179,IV,1,3,given,PN,Luria 1963,ḥlḥ,via Puech 2015 p. 49 n. 189,Puech 2015,ḥlt,p. 48; p. 49,חלח,חלת,SHAPE,SHAPE,ח→ת,ח–ת,,,,ח–ת@IV 1 w3,,letters outside the lacuna only
+V0180,IV,1,3,given,PN,Milik 1962,qh,via Puech 2015 p. 49,Puech 2015,ḥlt,p. 48; p. 49,קה,חלת,OTHER,OTHER,ק→ל;ה→ת,,ח,,,,,Milik drew a lamed he did not transcribe
+V0181,IV,1,3,given,RJ,Milik 1962,קה,DJD D60,Puech 2006,[כ]חלת,,קה,כחלת,RESTORATION,RESTORATION,ק→ל;ה→ת,,כח,,,,,rj:e15-kohlit
+V0182,IV,3,2,given,AP,Abegg (ETCBC dss 2.0.1),,3Q15 IV 3,Puech 2015,ל[בר]כא,p. 48,,לברכא,RESTORATION,RESTORATION,,,לברכא,,,,,override: Abegg leaves the word in a lacuna
+V0183,IV,3,3,given,AP,Abegg (ETCBC dss 2.0.1),בביאתך,3Q15 IV 3,Puech 2015,בבואתך,p. 48,בביאתכ,בבואתכ,MATRES,MATRES,י→ו,,,,,,ו–י@IV 3 w3,
+V0184,IV,3,3,given,PN,Milik 1962,bbyʾtk,via Puech 2015 p. 50,Puech 2015,bbwʾtk,p. 48; p. 50,בביאתכ,בבואתכ,MATRES,MATRES,י→ו,,,,,,ו–י@IV 3 w3,
+V0185,IV,3,3,given,PN,Wolters 1996,bbyʾtk,via Puech 2015 p. 50 n. 193,Puech 2015,bbwʾtk,p. 48; p. 50,בביאתכ,בבואתכ,MATRES,MATRES,י→ו,,,,,,ו–י@IV 3 w3,
+V0186,IV,4,1-2,given,AP,Abegg (ETCBC dss 2.0.1),ארבע[ין] [ואח]ת,3Q15 IV 4,Puech 2015,ארבע[ ע]סרה,p. 48,ארבעינואחת,ארבעעסרה,RESTORATION,RESTORATION,ו→ע;א→ס;ח→ר;ת→ה,,,ינ,,,,override: bracket order from the extract
+V0187,IV,4,1-2,given,PN,Lefkovits 2000,ʾrbʿ[yn],via Puech 2015 p. 51 n. 195,Puech 2015,ʾrbʿ[ ʿ]srh,p. 48; p. 51,ארבעינ,ארבעעסרה,RESTORATION,RESTORATION,י→ר;נ→ה,,עס,,,,,
+V0188,IV,4,1-2,given,PN,Milik 1962,ʾrbʿ[yn wʾḥ]t,via Puech 2015 p. 51,Puech 2015,ʾrbʿ[ ʿ]srh,p. 48; p. 51,ארבעינואחת,ארבעעסרה,RESTORATION,RESTORATION,ו→ע;א→ס;ח→ר;ת→ה,,,ינ,,,,
+V0189,IV,4,1-2,given,RJ,Lefkovits 2000,ארבע[ין],,Puech 2006,ארבע[ ע]סרה,,ארבעינ,ארבעעסרה,RESTORATION,RESTORATION,י→ר;נ→ה,,עס,,,,,rj:e16-distance
+V0190,IV,4,1-2,given,RJ,Milik 1962,ארבע[ין ואח]ת,,Puech 2006,ארבע[ ע]סרה,,ארבעינואחת,ארבעעסרה,RESTORATION,RESTORATION,ו→ע;א→ס;ח→ר;ת→ה,,,ינ,,,,rj:e16-distance; the record also lists IV 4
+V0191,IV,6,2,given,AP,Abegg (ETCBC dss 2.0.1),הכיפין,3Q15 IV 6,Puech 2015,הכינין,p. 48,הכיפינ,הכינינ,SHAPE,SHAPE,פ→נ,נ–פ,,,,נ–פ@IV 6 w2,,bracket at a line edge (right-to-left extract)
+V0192,IV,6,2,given,PN,Allegro 1960,hbdyn,via Puech 2015 p. 51,Puech 2015,hkynyn,p. 48; p. 51,הבדינ,הכינינ,SHAPE,SHAPE,ב→י;ד→נ,ב–י;ד–נ,כ,,,ב–י@IV 6 w2;ד–נ@IV 6 w2,,
+V0193,IV,6,2,given,PN,Allegro 1960 (alternative),hbtyn,via Puech 2015 p. 51,Puech 2015,hkynyn,p. 48; p. 51,הבתינ,הכינינ,SHAPE,SHAPE,ב→י;ת→נ,ב–י;נ–ת,כ,,,ב–י@IV 6 w2;נ–ת@IV 6 w2,,Puech: yod and nun not tied as a taw
+V0194,IV,6,2,given,PN,Beyer 1994,hbynyn,via Puech 2015 p. 51 n. 198,Puech 2015,hkynyn,p. 48; p. 51,הבינינ,הכינינ,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@IV 6 w2,,
+V0195,IV,6,2,given,PN,García Martínez–Tigchelaar 1997,hbynyn,via Puech 2015 p. 51 n. 198,Puech 2015,hkynyn,p. 48; p. 51,הבינינ,הכינינ,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@IV 6 w2,,
+V0196,IV,6,2,given,PN,Lefkovits 2000,hbtyn,via Puech 2015 p. 51 n. 197,Puech 2015,hkynyn,p. 48; p. 51,הבתינ,הכינינ,SHAPE,SHAPE,ב→י;ת→נ,ב–י;נ–ת,כ,,,ב–י@IV 6 w2;נ–ת@IV 6 w2,,
+V0197,IV,6,2,given,PN,Luria 1963,hbtyn,via Puech 2015 p. 51 n. 197,Puech 2015,hkynyn,p. 48; p. 51,הבתינ,הכינינ,SHAPE,SHAPE,ב→י;ת→נ,ב–י;נ–ת,כ,,,ב–י@IV 6 w2;נ–ת@IV 6 w2,,
+V0198,IV,6,2,given,PN,Milik 1962,hbynyn,via Puech 2015 p. 51 n. 198,Puech 2015,hkynyn,p. 48; p. 51,הבינינ,הכינינ,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@IV 6 w2,,Puech: bet the first reading but kaf certainly possible
+V0199,IV,6,2,given,PN,Muchowski 1993,hbynyn,via Puech 2015 p. 51 n. 198,Puech 2015,hkynyn,p. 48; p. 51,הבינינ,הכינינ,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@IV 6 w2,,
+V0200,IV,6,2,given,PN,Pixner 1983,hbtyn,via Puech 2015 p. 51 n. 197,Puech 2015,hkynyn,p. 48; p. 51,הבתינ,הכינינ,SHAPE,SHAPE,ב→י;ת→נ,ב–י;נ–ת,כ,,,ב–י@IV 6 w2;נ–ת@IV 6 w2,,
+V0201,IV,6,2,given,PN,Puech 1997,hbynyn,via Puech 2015 p. 51 n. 198,Puech 2015,hkynyn,p. 48; p. 51,הבינינ,הכינינ,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@IV 6 w2,,Puech revises his own 1997 reading
+V0202,IV,6,2,given,PN,Schiffman 2002,hbtyn,via Puech 2015 p. 51 n. 197,Puech 2015,hkynyn,p. 48; p. 51,הבתינ,הכינינ,SHAPE,SHAPE,ב→י;ת→נ,ב–י;נ–ת,כ,,,ב–י@IV 6 w2;נ–ת@IV 6 w2,,
+V0203,IV,6,2,given,PN,Wolters 1996,hbynyn,via Puech 2015 p. 51 n. 198,Puech 2015,hkynyn,p. 48; p. 51,הבינינ,הכינינ,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@IV 6 w2,,
+V0204,IV,6,2,given,RJ,Lefkovits 2000,הבתין,pp. 162–164,Puech 2006,הכינין,pp. 186–187,הבתינ,הכינינ,SHAPE,SHAPE,ב→י;ת→נ,ב–י;נ–ת,כ,,,ב–י@IV 6 w2;נ–ת@IV 6 w2,,rj:e17-pair
+V0205,IV,6,2,given,RJ,Milik 1962,הבינין,DJD D5 p. 263,Puech 2006,הכינין,pp. 186–187,הבינינ,הכינינ,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@IV 6 w2,,rj:e17-pair
+V0206,IV,6,4,given,AP,Abegg (ETCBC dss 2.0.1),עכור,3Q15 IV 6,Puech 2015,עכון(ר),p. 48,עכור,עכונר,OTHER,SHAPE,,,נ,,,,,override: bracket order from the extract
+V0207,IV,6,4,given,RJ,Lefkovits 2000,עכון,,Puech 2015,ʿkwn(r),pp. 51–52,עכונ,עכונר,OTHER,SAME,,,ר,,,,,rj:e17-achor; Puech 2015 prints the engraved nun with his correction
+V0208,IV,7,0-1,given,PN,Wolters 1992,bʾmṣʿ nḥnyn,via Puech 2015 p. 52 n. 201,Puech 2015,bʾmṣʿn ḥpwn(r),p. 48; pp. 51–52,באמצענחנינ,באמצענחפונר,OTHER,SHAPE,נ→פ;י→ו,,ר,,,,,
+V0209,IV,7,1,given,AP,Abegg (ETCBC dss 2.0.1),חפור,3Q15 IV 7,Puech 2015,חפון(ר),p. 48,חפור,חפונר,OTHER,SHAPE,,,נ,,,,,
+V0210,IV,9,0,given,PN,Allegro 1960,bšyh,via Puech 2015 p. 52 n. 203,Puech 2015,bšyt,p. 48; p. 52,בשיה,בשית,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IV 9 w0,,Puech: the taw is certain
+V0211,IV,9,0,given,PN,Wolters 1992,bšyḥ,via Puech 2015 p. 52 n. 203,Puech 2015,bšyt,p. 48; p. 52,בשיח,בשית,SHAPE,SHAPE,ח→ת,ח–ת,,,,ח–ת@IV 9 w0,,
+V0212,IV,9,2,given,PN,Luria 1963,hʾrkʾ,via Puech 2015 p. 52 n. 205,Puech 2015,hʾdmʾ,p. 48; p. 52,הארכא,האדמא,SHAPE,SHAPE,ר→ד;כ→מ,ד–ר;כ–מ,,,,ד–ר@IV 9 w2;כ–מ@IV 9 w2,,via Muchowski 1993
+V0213,IV,9,3,given,RJ,Lefkovits 2000,העצ לא,,Puech 2015,העצלא,p. 52 n. 206,העצלא,העצלא,DIVISION,DIVISION,,,,,,,,rj:e18-asla
+V0214,IV,11,0,given,PN,Allegro 1960,bšyh,via Puech 2015 p. 53,Puech 2015,bšyt,p. 48; p. 53,בשיה,בשית,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IV 11 w0,,
+V0215,IV,11,0,given,PN,Luria 1963,bšyh,via Puech 2015 p. 53 n. 208,Puech 2015,bšyt,p. 48; p. 53,בשיה,בשית,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IV 11 w0,,
+V0216,IV,11,3,matched,PN,Luria 1963,bḥlh,via Puech 2015 p. 53 n. 208,Puech 2015,kḥlt,p. 48; p. 53,בחלה,כחלת,SHAPE,SHAPE,ב→כ;ה→ת,ב–כ;ה–ת,,,,ב–כ@IV 11 w3;ה–ת@IV 11 w3,,word split over IV 11–12
+V0217,IV,11,3,matched,PN+RJ,Allegro 1960,bḥlh,via Puech 2015 p. 53,Puech 2015,kḥlt,p. 48; p. 53,בחלה,כחלת,SHAPE,SHAPE,ב→כ;ה→ת,ב–כ;ה–ת,,,,ב–כ@IV 11 w3;ה–ת@IV 11 w3,,word split over IV 11–12 | rj:e19-kohlit
+V0218,IV,14,0,given,PN,Allegro 1960,ʾmh,via Puech 2015 p. 53 n. 209,Puech 2015,ʾmt,p. 48; p. 53,אמה,אמת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IV 14 w0,,Puech: no other he written like this
+V0219,IV,14,0,given,PN,Lefkovits 2000,ʾmh,via Puech 2015 p. 53 n. 209,Puech 2015,ʾmt,p. 48; p. 53,אמה,אמת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IV 14 w0,,
+V0220,IV,14,0,given,PN,Muchowski 1993,ʾmh,via Puech 2015 p. 53 n. 209,Puech 2015,ʾmt,p. 48; p. 53,אמה,אמת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IV 14 w0,,
+V0221,V,1,3-5,given,AP,Abegg (ETCBC dss 2.0.1),[של] [גי] [ה],3Q15 V 1,Puech 2015,ש[במערב ה],p. 54,שלגיה,שבמערבה,RESTORATION,RESTORATION,ל→ע;ג→ר;י→ב,,במ,,,,,override: bracket order from the extract
+V0222,V,1,3-5,given,RJ,Lefkovits 2000,[הבאה ל],via Puech 2015 pp. 54–55,Puech 2006,ש[במערב],p. 188,הבאהל,שבמערב,RESTORATION,RESTORATION,ה→ש;א→ע;ה→ר;ל→ב,,מ,,,,,rj:e21-link
+V0223,V,1,3-5,given,RJ,Milik 1962,ש[ב],via Puech 2015 pp. 54–55,Puech 2006,ש[במערב],p. 188,שב,שבמערב,RESTORATION,RESTORATION,,,במער,,,,,rj:e21-link
+V0224,V,5,0,given,PN,Luria 1963,bsrq,via Puech 2015 p. 55 n. 218,Puech 2015,bsdq,p. 54; p. 55,בסרק,בסדק,SHAPE,SHAPE,ר→ד,ד–ר,,,,ד–ר@V 5 w0,,
+V0225,V,5,2,matched,PN,Allegro 1960,bzr,via Puech 2015 p. 55,Puech 2015,mzr,p. 54; p. 55,בזר,מזר,SHAPE,SHAPE,ב→מ,ב–מ,,,,ב–מ@V 5 w2,,letters outside Allegro's restoration bzr[b]; Puech: ḥet and mem rule it out
+V0226,V,6,0,given,AP,Abegg (ETCBC dss 2.0.1),אשיח,3Q15 V 6,Puech 2015,אשו{ }ח,p. 54,אשיח,אשוח,MATRES,MATRES,י→ו,,,,,,ו–י@V 6 w0,
+V0227,V,6,0,given,PN,García Martínez–Tigchelaar 1997,ʾšyḥ,via Puech 2015 p. 56 n. 221,Puech 2015,ʾšw{|}ḥ,p. 54; pp. 55–56,אשיח,אשוח,MATRES,MATRES,י→ו,,,,,,ו–י@V 6 w0,
+V0228,V,6,0,given,PN,Milik 1962,ʾšyḥ,via Puech 2015 p. 56 n. 221,Puech 2015,ʾšw{|}ḥ,p. 54; pp. 55–56,אשיח,אשוח,MATRES,MATRES,י→ו,,,,,,ו–י@V 6 w0,
+V0229,V,6,0,given,PN,Muchowski 1993,ʾšyḥ,via Puech 2015 p. 56 n. 221,Puech 2015,ʾšw{|}ḥ,p. 54; pp. 55–56,אשיח,אשוח,MATRES,MATRES,י→ו,,,,,,ו–י@V 6 w0,
+V0230,V,6,0,given,PN,Pixner 1983,ʾšyḥ,via Puech 2015 p. 56 n. 221,Puech 2015,ʾšw{|}ḥ,p. 54; pp. 55–56,אשיח,אשוח,MATRES,MATRES,י→ו,,,,,,ו–י@V 6 w0,
+V0231,V,6,0,given,PN,Wolters 1992,ʾšyḥ,via Puech 2015 p. 55 n. 219,Puech 2015,ʾšw{|}ḥ,p. 54; pp. 55–56,אשיח,אשוח,MATRES,MATRES,י→ו,,,,,,ו–י@V 6 w0,
+V0232,V,7,1,given,AP,Abegg (ETCBC dss 2.0.1),וכתבן,3Q15 V 7,Puech 2015,ובתכן,p. 54,וכתבנ,ובתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@V 7 w1;ב–כ@V 7 w1,,
+V0233,V,7,1,given,PN,García Martínez–Tigchelaar 1997,wktkn,via Puech 2015 p. 56 n. 225,Puech 2015,wbtkn,p. 54; pp. 56–57,וכתכנ,ובתכנ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@V 7 w1,,
+V0234,V,7,1,given,PN,Luria 1963,wktbn,via Puech 2015 p. 56 n. 224,Puech 2015,wbtkn,p. 54; pp. 56–57,וכתבנ,ובתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@V 7 w1;ב–כ@V 7 w1,,Puech: wktbn physically possible
+V0235,V,7,1,given,PN,McCarter 1994,wktbn,via Puech 2015 p. 56 n. 224,Puech 2015,wbtkn,p. 54; pp. 56–57,וכתבנ,ובתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@V 7 w1;ב–כ@V 7 w1,,
+V0236,V,7,1,given,PN,Muchowski 1993,wktbn,via Puech 2015 p. 56 n. 224,Puech 2015,wbtkn,p. 54; pp. 56–57,וכתבנ,ובתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@V 7 w1;ב–כ@V 7 w1,,
+V0237,V,7,1,given,PN,Wilmot 2002,wktbn,via Puech 2015 p. 56 n. 224,Puech 2015,wbtkn,p. 54; pp. 56–57,וכתבנ,ובתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@V 7 w1;ב–כ@V 7 w1,,
+V0238,V,7,1,given,PN,Wise 1996,wktbn,via Puech 2015 p. 56 n. 224,Puech 2015,wbtkn,p. 54; pp. 56–57,וכתבנ,ובתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@V 7 w1;ב–כ@V 7 w1,,
+V0239,V,7,1,given,PN,Wolters 1996,wktbn,via Puech 2015 p. 56 n. 224,Puech 2015,wbtkn,p. 54; pp. 56–57,וכתבנ,ובתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@V 7 w1;ב–כ@V 7 w1,,
+V0240,V,8,1,matched,PN,Allegro 1960,hḥrwṣ,via Puech 2015 p. 57,Puech 2015,hḥryṣ,p. 54; p. 57,החרוצ,החריצ,MATRES,MATRES,ו→י,,,,,,ו–י@V 8 w1,
+V0241,V,8,1,matched,PN,Luria 1963,hḥrwṣ,via Puech 2015 p. 57,Puech 2015,hḥryṣ,p. 54; p. 57,החרוצ,החריצ,MATRES,MATRES,ו→י,,,,,,ו–י@V 8 w1,
+V0242,V,9,2,given,AP,Abegg (ETCBC dss 2.0.1),הרגם,3Q15 V 9,Puech 2015,הרגב,p. 54,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@V 9 w2,,
+V0243,V,9,2,given,PN,García Martínez–Tigchelaar 1997,hrgm,via Puech 2015 p. 57 n. 229,Puech 2015,hrgb,p. 54; pp. 57–58,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@V 9 w2,,
+V0244,V,9,2,given,PN,Lefkovits 2000,hrgm,via Puech 2015 p. 57 n. 229,Puech 2015,hrgb,p. 54; pp. 57–58,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@V 9 w2,,
+V0245,V,9,2,given,PN,Milik 1962,hrgm,via Puech 2015 p. 57,Puech 2015,hrgb,p. 54; pp. 57–58,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@V 9 w2,,Puech: physical reading indisputably bet
+V0246,V,9,2,given,PN,Muchowski 1993,hrgm,via Puech 2015 p. 57 n. 229,Puech 2015,hrgb,p. 54; pp. 57–58,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@V 9 w2,,
+V0247,V,9,2,given,PN,Pixner 1983,hrgm,via Puech 2015 p. 57 n. 229,Puech 2015,hrgb,p. 54; pp. 57–58,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@V 9 w2,,
+V0248,V,9,2,given,PN,Wolters 1992,hrgm,via Puech 2015 p. 57 n. 229,Puech 2015,hrgb,p. 54; pp. 57–58,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@V 9 w2,,
+V0249,V,13,0,given,AP,Abegg (ETCBC dss 2.0.1),בביאה,3Q15 V 13,Puech 2015,בבואה,p. 54,בביאה,בבואה,MATRES,MATRES,י→ו,,,,,,ו–י@V 13 w0,
+V0250,V,13,0,given,PN,Wolters 1996,bbyʾh,via Puech 2015 p. 59 n. 232,Puech 2015,bbwʾh,p. 54; p. 59,בביאה,בבואה,MATRES,MATRES,י→ו,,,,,,ו–י@V 13 w0,
+V0251,V,13,0-1,given,PN,Allegro 1960,bbyʾ hmzrḥy,via Puech 2015 p. 59 n. 232,Puech 2015,bbwʾh myrḥw,p. 54; p. 59,בביאהמזרחי,בבואהמירחו,SHAPE,SHAPE,י→ו;ז→י;י→ו,ז–י,,,,ז–י@V 13 w1,ו–י@V 13 w0;ו–י@V 13 w1,
+V0252,V,13,0-1,given,PN,Luria 1963,bbyʾh mzrḥy,via Puech 2015 p. 59 n. 232,Puech 2015,bbwʾh myrḥw,p. 54; p. 59,בביאהמזרחי,בבואהמירחו,SHAPE,SHAPE,י→ו;ז→י;י→ו,ז–י,,,,ז–י@V 13 w1,ו–י@V 13 w0;ו–י@V 13 w1,
+V0253,V,13,0-1,given,PN,Wilmot 2002,bbyʾ hmzrḥy,via Puech 2015 p. 59 n. 232,Puech 2015,bbwʾh myrḥw,p. 54; p. 59,בביאהמזרחי,בבואהמירחו,SHAPE,SHAPE,י→ו;ז→י;י→ו,ז–י,,,,ז–י@V 13 w1,ו–י@V 13 w0;ו–י@V 13 w1,
+V0254,V,14,0,given,AP,Abegg (ETCBC dss 2.0.1),חפור,3Q15 V 14,Puech 2015,חפון(ר),p. 54,חפור,חפונר,OTHER,SHAPE,,,נ,,,,,
+V0255,VI,7,2,given,AP,Abegg (ETCBC dss 2.0.1),הפנא,3Q15 VI 7,Puech 2015,הכנא,p. 59,הפנא,הכנא,SHAPE,SHAPE,פ→כ,כ–פ,,,,כ–פ@VI 7 w2,,
+V0256,VI,7,2,given,PN,Allegro 1960,hpnʾ,via Puech 2015 p. 61 n. 239,Puech 2015,hknʾ,p. 59; p. 61,הפנא,הכנא,SHAPE,SHAPE,פ→כ,כ–פ,,,,כ–פ@VI 7 w2,,Puech: no pe was ever engraved
+V0257,VI,7,2,given,PN,Lefkovits 2000,hbnʾ,via Puech 2015 p. 61 n. 240,Puech 2015,hknʾ,p. 59; p. 61,הבנא,הכנא,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@VI 7 w2,,Puech: one might hesitate between bet and kaf
+V0258,VI,7,2,given,PN,Luria 1963,hpnʾ,via Puech 2015 p. 61 n. 239,Puech 2015,hknʾ,p. 59; p. 61,הפנא,הכנא,SHAPE,SHAPE,פ→כ,כ–פ,,,,כ–פ@VI 7 w2,,
+V0259,VI,8,1,given,AP,Abegg (ETCBC dss 2.0.1),הרגם,3Q15 VI 8,Puech 2015,הרגב,p. 59,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@VI 8 w1,,
+V0260,VI,8,1,given,PN,García Martínez–Tigchelaar 1997,hrgm,via Puech 2015 p. 60 n. 237,Puech 2015,hrgb,p. 59; p. 60,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@VI 8 w1,,
+V0261,VI,8,1,given,PN,Lefkovits 2000,hrgm,via Puech 2015 p. 60 n. 237,Puech 2015,hrgb,p. 59; p. 60,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@VI 8 w1,,
+V0262,VI,8,1,given,PN,Milik 1962,hrgm,via Puech 2015 p. 60,Puech 2015,hrgb,p. 59; p. 60,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@VI 8 w1,,Puech: the mem is clearly distinct from bet
+V0263,VI,8,1,given,PN,Muchowski 1993,hrgm,via Puech 2015 p. 60 n. 237,Puech 2015,hrgb,p. 59; p. 60,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@VI 8 w1,,
+V0264,VI,8,1,given,PN,Pixner 1983,hrgm,via Puech 2015 p. 60 n. 237,Puech 2015,hrgb,p. 59; p. 60,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@VI 8 w1,,
+V0265,VI,8,1,given,PN,Wolters 1996,hrgm,via Puech 2015 p. 60 n. 237,Puech 2015,hrgb,p. 59; p. 60,הרגמ,הרגב,SHAPE,SHAPE,מ→ב,ב–מ,,,,ב–מ@VI 8 w1,,
+V0266,VII,1,2,given,AP,Abegg (ETCBC dss 2.0.1),[אמות],3Q15 VII 1,Puech 2015,[במזרח אמו]ת,p. 62,אמות,במזרחאמות,RESTORATION,RESTORATION,,,במזרח,,,,,override: Puech prints במזרח/מערב(?) in the restoration
+V0267,VII,3,2,given,PN,Beyer 1994,my,via Puech 2015 p. 63,Puech 2015,qy,p. 62; p. 63,מי,קי,SHAPE,SHAPE,מ→ק,מ–ק,,,,מ–ק@VII 3 w2,,letters outside the restorations; Puech: a mem is impossible from the traces
+V0268,VII,3,2,given,PN,Eshel 2002,qyp,via Puech 2015 p. 63 n. 251,Puech 2015,qyb,p. 62; p. 63,קיפ,קיב,SHAPE,SHAPE,פ→ב,ב–פ,,,,ב–פ@VII 3 w2,,letters outside the restorations
+V0269,VII,3,2,given,RJ,Milik 1962,qy[ṣyṣ],,Puech 2015,קיב[וץ המים ש]ל,pp. 62–63,קיציצ,קיבוצהמימשל,RESTORATION,RESTORATION,צ→ל,,בוהממש,,,,,rj:e29-qi
+V0270,VII,3,2-3,given,AP,Abegg (ETCBC dss 2.0.1),קי [...],3Q15 VII 3,Puech 2015,קיב[וץ המים ש]ל,p. 62,קי,קיבוצהמימשל,RESTORATION,RESTORATION,,,יבוצהממשל,,,,,override: bracket order from the extract
+V0271,VII,4,0,given,AP,Abegg (ETCBC dss 2.0.1),האשיח,3Q15 VII 4,Puech 2015,האשוח,p. 62,האשיח,האשוח,MATRES,MATRES,י→ו,,,,,,ו–י@VII 4 w0,bracket at a line edge (right-to-left extract)
+V0272,VII,4,0,given,PN,García Martínez–Tigchelaar 1997,hʾšyḥ,via Puech 2015 p. 64 n. 252,Puech 2015,hʾšwḥ,p. 62; p. 64,האשיח,האשוח,MATRES,MATRES,י→ו,,,,,,ו–י@VII 4 w0,
+V0273,VII,4,0,given,PN,Milik 1962,hʾšyḥ,via Puech 2015 p. 64 n. 252,Puech 2015,hʾšwḥ,p. 62; p. 64,האשיח,האשוח,MATRES,MATRES,י→ו,,,,,,ו–י@VII 4 w0,
+V0274,VII,4,0,given,PN,Muchowski 1993,hʾšyḥ,via Puech 2015 p. 64 n. 252,Puech 2015,hʾšwḥ,p. 62; p. 64,האשיח,האשוח,MATRES,MATRES,י→ו,,,,,,ו–י@VII 4 w0,
+V0275,VII,4,0,given,PN,Pixner 1983,hʾšyḥ,via Puech 2015 p. 64 n. 252,Puech 2015,hʾšwḥ,p. 62; p. 64,האשיח,האשוח,MATRES,MATRES,י→ו,,,,,,ו–י@VII 4 w0,
+V0276,VII,4,0,given,PN,Wolters 1996,hʾšyḥ,via Puech 2015 p. 64 n. 252,Puech 2015,hʾšwḥ,p. 62; p. 64,האשיח,האשוח,MATRES,MATRES,י→ו,,,,,,ו–י@VII 4 w0,the note prints hʿšyḥ (and ʿšwḥ for Puech's own form); read with ʾ as in Puech's transcription
+V0277,VII,4,2,given,AP,Abegg (ETCBC dss 2.0.1),[הגד]ול,3Q15 VII 4,Puech 2015,[של ירחו],p. 62,הגדול,שלירחו,RESTORATION,RESTORATION,ה→ל;ג→י;ד→ר;ו→ח;ל→ו,,ש,,,,,override: Puech moves hg]dwl to line 5 (p. 64 nn. 252 and 255)
+V0278,VII,5,2,given,AP,Abegg (ETCBC dss 2.0.1),,3Q15 VII 5,Puech 2015,[מרוח הג]דול,p. 62,,מרוחהגדול,RESTORATION,RESTORATION,,,מרוחהגדול,,,,,override: Puech moves hg]dwl to line 5
+V0279,VII,6,2,matched,PN,Wolters 1992,ʿsrn,via Puech 2015 p. 64 n. 258,Puech 2015,ʿsryn,p. 62; p. 64,עסרנ,עסרינ,MATRES,MATRES,,,י,,,,,
+V0280,VII,8,1-2,given,PN,Milik 1962,šʾṣlh bqr,via Puech 2015 p. 65,Puech 2015,šʾṣl hmqr,p. 62; p. 65,שאצלהבקר,שאצלהמקר,SHAPE,SHAPE,ב→מ,ב–מ,,,,ב–מ@VII 8 w2,,letters outside the restorations; Puech: the mem is assured
+V0281,VII,8,2,given,AP,Abegg (ETCBC dss 2.0.1),המקר[א],3Q15 VII 8,Puech 2015,המקר[ה],p. 62,המקרא,המקרה,RESTORATION,RESTORATION,א→ה,,,,,,,override: bracket order from the extract
+V0282,VII,8,2,given,PN,Lefkovits 2000 (alternative 2),hmqd,via Puech 2015 p. 66 n. 264,Puech 2015,hmqr,p. 62; p. 65,המקד,המקר,SHAPE,SHAPE,ד→ר,ד–ר,,,,ד–ר@VII 8 w2,,mqd[š]
+V0283,VII,8,2,given,PN,Lefkovits 2000 (alternative),hmqw,via Puech 2015 p. 66 n. 264,Puech 2015,hmqr,p. 62; p. 65,המקו,המקר,SHAPE,SHAPE,ו→ר,ו–ר,,,,ו–ר@VII 8 w2,,letters outside the restorations
+V0284,VII,8,2,given,PN,Lefkovits 2010,hmqd,via Puech 2015 p. 66 n. 264,Puech 2015,hmqr,p. 62; p. 65,המקד,המקר,SHAPE,SHAPE,ד→ר,ד–ר,,,,ד–ר@VII 8 w2,,hesitates between mqd[h/ʾ] and mqr[h/ʾ]
+V0285,VII,8,2-3,given,RJ,Milik 1962,בקר[ב]ו,,Puech 2002,המקר[ה],CSS pp. 71–72,בקרבו,המקרה,RESTORATION,RESTORATION,ב→מ;ו→ה,,ה,ב,,,,rj:e30-coolroom
+V0286,VII,8,3,given,PN,Milik 1962,wl,via Puech 2015 p. 65 n. 261,Puech 2015,šl,p. 62; p. 65,ול,של,SHAPE,SHAPE,ו→ש,ו–ש,,,,ו–ש@VII 8 w3,,Puech: waw difficult; šin most likely on old photographs
+V0287,VII,8,3,given,PN,Muchowski 1993,wl,via Puech 2015 p. 66 n. 264,Puech 2015,šl,p. 62; p. 65,ול,של,SHAPE,SHAPE,ו→ש,ו–ש,,,,ו–ש@VII 8 w3,,
+V0288,VII,8,3,given,PN,Wolters 1992,wl,via Puech 2015 p. 66 n. 264,Puech 2015,šl,p. 62; p. 65,ול,של,SHAPE,SHAPE,ו→ש,ו–ש,,,,ו–ש@VII 8 w3,,
+V0289,VII,9,2,given,AP,Abegg (ETCBC dss 2.0.1),חפר,3Q15 VII 9,Puech 2015,חפור,p. 62,חפר,חפור,MATRES,MATRES,,,ו,,,,,
+V0290,VII,10,0,given,AP,Abegg (ETCBC dss 2.0.1),כדין,3Q15 VII 10,Puech 2015,בדין,p. 62,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@VII 10 w0,,
+V0291,VII,10,0,given,PN,Allegro 1960,kdyn,via Puech 2015 p. 67 n. 269,Puech 2015,bdyn,p. 62; p. 67,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@VII 10 w0,,Puech: bet most probable
+V0292,VII,10,0,given,PN,Luria 1963,kdyn,via Puech 2015 p. 67 n. 269,Puech 2015,bdyn,p. 62; p. 67,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@VII 10 w0,,
+V0293,VII,10,0,given,PN,Muchowski 1993,kdyn,via Puech 2015 p. 67 n. 269,Puech 2015,bdyn,p. 62; p. 67,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@VII 10 w0,,
+V0294,VII,10,0,given,PN,Pixner 1983,kdyn,via Puech 2015 p. 67 n. 269,Puech 2015,bdyn,p. 62; p. 67,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@VII 10 w0,,
+V0295,VII,10,0,given,PN,Wolters 1992,kdyn,via Puech 2015 p. 67 n. 269,Puech 2015,bdyn,p. 62; p. 67,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@VII 10 w0,,
+V0296,VII,10,0,given,RJ,Lefkovits 2000,כדין,,Puech 2015,בדין,p. 67,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@VII 10 w0,,rj:e30-bars
+V0297,VII,11,0,given,PN,Allegro 1960,ryq,via Puech 2015 p. 67,Puech 2015,dwq,p. 62; p. 67,ריק,דוק,OTHER,OTHER,ר→ד;י→ו,,,,,,,
+V0298,VII,11,3,given,AP,Abegg (ETCBC dss 2.0.1),המשמרה,3Q15 VII 11,Puech 2015,המשט<ו>ח,p. 62,המשמרה,המשטוח,OTHER,SHAPE,מ→ט;ר→ו;ה→ח,,,,,,,
+V0299,VII,11,3,given,PN,Eshel 2002,hmšmrh,via Puech 2015 p. 67 n. 270,Puech 2015,hmšṭ<w>ḥ,p. 62; p. 67,המשמרה,המשטוח,OTHER,SHAPE,מ→ט;ר→ו;ה→ח,,,,,,,
+V0300,VII,11,3,given,PN,García Martínez–Tigchelaar 1997,hmšmrh,via Puech 2015 p. 67 n. 270,Puech 2015,hmšṭ<w>ḥ,p. 62; p. 67,המשמרה,המשטוח,OTHER,SHAPE,מ→ט;ר→ו;ה→ח,,,,,,,
+V0301,VII,11,3,given,PN,Lefkovits 2000,hmšmrh,via Puech 2015 p. 67 n. 270,Puech 2015,hmšṭ<w>ḥ,p. 62; p. 67,המשמרה,המשטוח,OTHER,SHAPE,מ→ט;ר→ו;ה→ח,,,,,,,
+V0302,VII,11,3,given,PN,Milik 1962,hmšmrh,via Puech 2015 p. 67,Puech 2015,hmšṭ<w>ḥ,p. 62; p. 67,המשמרה,המשטוח,OTHER,SHAPE,מ→ט;ר→ו;ה→ח,,,,,,,Puech: ṭet and ḥet indisputable
+V0303,VII,11,3,given,PN,Muchowski 1993,hmšmrt,via Puech 2015 p. 67 n. 270,Puech 2015,hmšṭ<w>ḥ,p. 62; p. 67,המשמרת,המשטוח,OTHER,SHAPE,מ→ט;ר→ו;ת→ח,,,,,,,
+V0304,VII,11,3,given,PN,Pixner 1983,hmšmrh,via Puech 2015 p. 67 n. 270,Puech 2015,hmšṭ<w>ḥ,p. 62; p. 67,המשמרה,המשטוח,OTHER,SHAPE,מ→ט;ר→ו;ה→ח,,,,,,,
+V0305,VII,11,3,given,PN,Schiffman 2002,hmšmrh,via Puech 2015 p. 67 n. 270,Puech 2015,hmšṭ<w>ḥ,p. 62; p. 67,המשמרה,המשטוח,OTHER,SHAPE,מ→ט;ר→ו;ה→ח,,,,,,,
+V0306,VII,11,3,given,PN,Wolters 1992,hmšmrh,via Puech 2015 p. 67 n. 270,Puech 2015,hmšṭ<w>ḥ,p. 62; p. 67,המשמרה,המשטוח,OTHER,SHAPE,מ→ט;ר→ו;ה→ח,,,,,,,
+V0307,VII,11,3,given,RJ,Eshel 2002,המשמרה,p. 104,Puech 2015,hmšṭḥ,p. 67,המשמרה,המשטח,SHAPE,SHAPE,ר→ט;ה→ח,ט–ר;ה–ח,,מ,,ט–ר@VII 11 w3;ה–ח@VII 11 w3,,rj:e31-landmark; article added
+V0308,VII,11,3,given,RJ,Lefkovits 2000,המשמרה,p. 232,Puech 2015,hmšṭḥ,p. 67,המשמרה,המשטח,SHAPE,SHAPE,ר→ט;ה→ח,ט–ר;ה–ח,,מ,,ט–ר@VII 11 w3;ה–ח@VII 11 w3,,rj:e31-landmark
+V0309,VII,11,3,given,RJ,Milik 1962,המשמרה,D19; DJD p. 292,Puech 2015,hmšṭḥ,p. 67,המשמרה,המשטח,SHAPE,SHAPE,ר→ט;ה→ח,ט–ר;ה–ח,,מ,,ט–ר@VII 11 w3;ה–ח@VII 11 w3,,rj:e31-landmark
+V0310,VII,11,3,given,RJ,Schiffman 2002,המשמרה,,Puech 2015,hmšṭḥ,p. 67,המשמרה,המשטח,SHAPE,SHAPE,ר→ט;ה→ח,ט–ר;ה–ח,,מ,,ט–ר@VII 11 w3;ה–ח@VII 11 w3,,rj:e31-landmark; article added
+V0311,VII,11,3,given,RJ,Wolters 1996,המשמרה,,Puech 2015,hmšṭḥ,p. 67,המשמרה,המשטח,SHAPE,SHAPE,ר→ט;ה→ח,ט–ר;ה–ח,,מ,,ט–ר@VII 11 w3;ה–ח@VII 11 w3,,rj:e31-landmark; article added to compare the same span
+V0312,VII,14,5,given,PN,Allegro 1960,hby,via Puech 2015 p. 67,Puech 2015,hkwz,p. 62; p. 67,הבי,הכוז,OTHER,OTHER,ב→ו;י→ז,,כ,,,,,word split over VII 14–15 (-bʾ agrees)
+V0313,VII,14,5,given,PN,Lefkovits 2000,hbwz,via Puech 2015 p. 67 n. 272,Puech 2015,hkwz,p. 62; p. 67,הבוז,הכוז,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@VII 14 w5,,
+V0314,VII,14,5,given,PN,Luria 1963,ḥbw,via Puech 2015 p. 67 n. 272,Puech 2015,hkwz,p. 62; p. 67,חבו,הכוז,OTHER,OTHER,ח→ה;ב→כ,,ז,,,,,
+V0315,VII,14,5,given,PN,Wolters 1992,ḥkwz,via Puech 2015 p. 68 n. 274,Puech 2015,hkwz,p. 62; p. 67,חכוז,הכוז,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@VII 14 w5,,
+V0316,VII,14,5,given,RJ,Allegro 1960,hby,,Puech 2006,hkwz,p. 192,הבי,הכוז,OTHER,OTHER,ב→ו;י→ז,,כ,,,,,rj:e32-koziba
+V0317,VII,14,5,given,RJ,Lefkovits 2000,הבוז,p. 236,Puech 2006,hkwz,p. 192,הבוז,הכוז,SHAPE,SHAPE,ב→כ,ב–כ,,,,ב–כ@VII 14 w5,,rj:e32-koziba; VII 14 part of the word
+V0318,VII,15,5,given,PN,Luria 1963,ḥṭwp,via Puech 2015 p. 68 n. 274,Puech 2015,hṭwr,p. 62; pp. 67–68,חטופ,הטור,SHAPE,SHAPE,ח→ה;פ→ר,ה–ח;פ–ר,,,,ה–ח@VII 15 w5;פ–ר@VII 15 w5,,
+V0319,VII,15,5,given,PN,Wolters 1992,ḥṭwp,via Puech 2015 p. 68 n. 274,Puech 2015,hṭwr,p. 62; pp. 67–68,חטופ,הטור,SHAPE,SHAPE,ח→ה;פ→ר,ה–ח;פ–ר,,,,ה–ח@VII 15 w5;פ–ר@VII 15 w5,,
+V0320,VII,15,5,given,PN+RJ,Allegro 1960,hṭyp,via Puech 2015 pp. 67–68,Puech 2015,hṭwr,p. 62; pp. 67–68,הטיפ,הטור,SHAPE,SHAPE,י→ו;פ→ר,פ–ר,,,,פ–ר@VII 15 w5,ו–י@VII 15 w5,Puech: a cursive reš | rj:e32-tur; article added
+V0321,VII,15,5,given,RJ,Eshel 2002,הסור,CSS p. 105,Puech 2015,hṭwr,pp. 62 and 67–68,הסור,הטור,SHAPE,SHAPE,ס→ט,ט–ס,,,,ט–ס@VII 15 w5,,rj:e32-tur
+V0322,VII,16,3,matched,PN,Allegro 1960,bkdyn,via Puech 2015 p. 68 n. 277,Puech 2015,kkryn,p. 62; p. 68,בכדינ,ככרינ,SHAPE,SHAPE,ב→כ;ד→ר,ב–כ;ד–ר,,,,ב–כ@VII 16 w3;ד–ר@VII 16 w3,,Puech: the reš clearly favours kkryn
+V0323,VII,16,3,matched,PN,Luria 1963,bkdyn,via Puech 2015 p. 68 n. 277,Puech 2015,kkryn,p. 62; p. 68,בכדינ,ככרינ,SHAPE,SHAPE,ב→כ;ד→ר,ב–כ;ד–ר,,,,ב–כ@VII 16 w3;ד–ר@VII 16 w3,,
+V0324,VIII,1,0,given,PN,Allegro 1960,bʾ,via Puech 2015 p. 69,Puech 2015,mʾ,p. 68; p. 69,בא,מא,SHAPE,SHAPE,ב→מ,ב–מ,,,,ב–מ@VIII 1 w0,,letters outside the restorations bby]bʾ / bʾ]mʾ; Puech: the mem is certain
+V0325,VIII,2,0,given,AP,Abegg (ETCBC dss 2.0.1),אוצר,3Q15 VIII 2,Puech 2015,[ה]אוצר,p. 68,אוצר,האוצר,RESTORATION,RESTORATION,,,ה,,,,,
+V0326,VIII,2,0,given,PN,García Martínez–Tigchelaar 1997,ʾḥṣr,via Puech 2015 p. 70 n. 280,Puech 2015,ʾwṣr,p. 68; pp. 69–70,אחצר,אוצר,SHAPE,SHAPE,ח→ו,ו–ח,,,,ו–ח@VIII 2 w0,,
+V0327,VIII,2,0,given,PN,Lefkovits 2000,ʾwwṣr,via Puech 2015 p. 69 n. 279,Puech 2015,ʾwṣr,p. 68; pp. 69–70,אווצר,אוצר,MATRES,MATRES,,,,ו,,,,
+V0328,VIII,2,0,given,PN,Milik 1962,ʾḥṣr,via Puech 2015 p. 69,Puech 2015,ʾwṣr,p. 68; pp. 69–70,אחצר,אוצר,SHAPE,SHAPE,ח→ו,ו–ח,,,,ו–ח@VIII 2 w0,,Puech restores the article; misjoined fragment
+V0329,VIII,2,0,given,PN,Muchowski 1993,ʾḥṣr,via Puech 2015 p. 70 n. 280,Puech 2015,ʾwṣr,p. 68; pp. 69–70,אחצר,אוצר,SHAPE,SHAPE,ח→ו,ו–ח,,,,ו–ח@VIII 2 w0,,
+V0330,VIII,2,0,given,PN,Pixner 1983,ʾḥṣr,via Puech 2015 p. 70 n. 280,Puech 2015,ʾwṣr,p. 68; pp. 69–70,אחצר,אוצר,SHAPE,SHAPE,ח→ו,ו–ח,,,,ו–ח@VIII 2 w0,,
+V0331,VIII,2,0,given,PN,Schiffman 2002,ʾwwṣr,via Puech 2015 p. 69 n. 279,Puech 2015,ʾwṣr,p. 68; pp. 69–70,אווצר,אוצר,MATRES,MATRES,,,,ו,,,,
+V0332,VIII,2,1,given,PN,Lefkovits 2000 (alternative),šbzrḥ,via Puech 2015 p. 70 n. 281,Puech 2015,šmzrḥ,p. 68; p. 70,שבזרח,שמזרח,SHAPE,SHAPE,ב→מ,ב–מ,,,,ב–מ@VIII 2 w1,,
+V0333,VIII,2,2,given,AP,Abegg (ETCBC dss 2.0.1),[[אחור]],3Q15 VIII 2,Puech 2015,אחיה,p. 68,אחור,אחיה,OTHER,OTHER,ו→י;ר→ה,,,,,,,
+V0334,VIII,2,2,given,PN,Beyer 1994,ʾhwd,via Puech 2015 p. 70 n. 284,Puech 2015,ʾḥyh,p. 68; p. 70,אהוד,אחיה,OTHER,OTHER,ה→ח;ו→י;ד→ה,,,,,,,
+V0335,VIII,2,2,given,PN,García Martínez 1994,ʾḥzr,via Puech 2015 p. 70 n. 283,Puech 2015,ʾḥyh,p. 68; p. 70,אחזר,אחיה,SHAPE,SHAPE,ז→י;ר→ה,ז–י;ה–ר,,,,ז–י@VIII 2 w2;ה–ר@VIII 2 w2,,
+V0336,VIII,2,2,given,PN,García Martínez–Tigchelaar 1997,ʾhwd,via Puech 2015 p. 70 n. 284,Puech 2015,ʾḥyh,p. 68; p. 70,אהוד,אחיה,OTHER,OTHER,ה→ח;ו→י;ד→ה,,,,,,,
+V0337,VIII,2,2,given,PN,Lefkovits 2000,ʾḥyn,via Puech 2015 p. 70 n. 285,Puech 2015,ʾḥyh,p. 68; p. 70,אחינ,אחיה,SHAPE,SHAPE,נ→ה,ה–נ,,,,ה–נ@VIII 2 w2,,
+V0338,VIII,2,2,given,PN,Milik 1962,ʾḥzr,via Puech 2015 p. 70,Puech 2015,ʾḥyh,p. 68; p. 70,אחזר,אחיה,SHAPE,SHAPE,ז→י;ר→ה,ז–י;ה–ר,,,,ז–י@VIII 2 w2;ה–ר@VIII 2 w2,,
+V0339,VIII,2,2,given,PN,Muchowski 1993,ʾḥzr,via Puech 2015 p. 70 n. 283,Puech 2015,ʾḥyh,p. 68; p. 70,אחזר,אחיה,SHAPE,SHAPE,ז→י;ר→ה,ז–י;ה–ר,,,,ז–י@VIII 2 w2;ה–ר@VIII 2 w2,,
+V0340,VIII,2,2,given,PN,Pixner 1983,ʾḥzr,via Puech 2015 p. 70 n. 283,Puech 2015,ʾḥyh,p. 68; p. 70,אחזר,אחיה,SHAPE,SHAPE,ז→י;ר→ה,ז–י;ה–ר,,,,ז–י@VIII 2 w2;ה–ר@VIII 2 w2,,
+V0341,VIII,2,2,given,PN,Wolters 1992,ʾhwd,via Puech 2015 p. 70 n. 284,Puech 2015,ʾḥyh,p. 68; p. 70,אהוד,אחיה,OTHER,OTHER,ה→ח;ו→י;ד→ה,,,,,,,
+V0342,VIII,2,2,given,RJ,Milik 1962,אחזר,,Puech 2006,אחיה,,אחזר,אחיה,SHAPE,SHAPE,ז→י;ר→ה,ז–י;ה–ר,,,,ז–י@VIII 2 w2;ה–ר@VIII 2 w2,,rj:e33-name
+V0343,VIII,3,2,given,PN,McCarter 1994,wsprw w,via Puech 2015 p. 70 n. 286,Puech 2015,wspryn,p. 68; p. 70,וספרוו,וספרינ,SHAPE,SHAPE,ו→י;ו→נ,ו–נ,,,,ו–נ@VIII 3 w2,ו–י@VIII 3 w2,
+V0344,VIII,3,2-3,given,RJ,Wolters 1994,wspry wʾlt ks[p],pp. 292–295,Puech 2015,wspryn ʾl tbqʿ,,וספריואלתכספ,וספרינאלתבקע,RESTORATION,RESTORATION,ו→נ;כ→ב;ס→ק;פ→ע,,,,,,,rj:e33-lastphrase
+V0345,VIII,3,3,given,AP,Abegg (ETCBC dss 2.0.1),אסר,3Q15 VIII 3,Puech 2015,אל תבקע[מ],p. 68,אסר,אלתבקעמ,RESTORATION,RESTORATION,ס→ע;ר→מ,,לתבק,,,,,override: bracket order from the extract
+V0346,VIII,3,3,given,PN,Beyer 1994,ʾl tkl,via Puech 2015 p. 71,Puech 2015,ʾl tbqʿ,p. 68; p. 71,אלתכל,אלתבקע,SHAPE,SHAPE,כ→ק;ל→ע,כ–ק;ל–ע,ב,,,כ–ק@VIII 3 w3;ל–ע@VIII 3 w3,,
+V0347,VIII,3,3,given,PN,Eshel 2002,ʾl tdqm,via Puech 2015 p. 71 n. 291,Puech 2015,ʾl tbqʿ[m],p. 68; p. 71,אלתדקמ,אלתבקעמ,SHAPE,SHAPE,ד→ב,ב–ד,ע,,,ב–ד@VIII 3 w3,,
+V0348,VIII,3,3,given,PN,Høgenhaven 2009,ʾl tdqm,via Puech 2015 p. 71 n. 291,Puech 2015,ʾl tbqʿ[m],p. 68; p. 71,אלתדקמ,אלתבקעמ,SHAPE,SHAPE,ד→ב,ב–ד,ע,,,ב–ד@VIII 3 w3,,
+V0349,VIII,3,3,given,PN,Muchowski 1993,ʾl tmr,via Puech 2015 p. 71 n. 290,Puech 2015,ʾl tbqʿ,p. 68; p. 71,אלתמר,אלתבקע,SHAPE,SHAPE,מ→ק;ר→ע,מ–ק;ע–ר,ב,,,מ–ק@VIII 3 w3;ע–ר@VIII 3 w3,,
+V0350,VIII,3,3,given,PN,Pixner 1983,ʾl tbs,via Puech 2015 p. 71 n. 288,Puech 2015,ʾl tbqʿ,p. 68; p. 71,אלתבס,אלתבקע,SHAPE,SHAPE,ס→ע,ס–ע,ק,,,ס–ע@VIII 3 w3,,
+V0351,VIII,3,3,given,PN,Puech 1997,ʾl tdqm,via Puech 2015 p. 71 n. 291,Puech 2015,ʾl tbqʿ[m],p. 68; p. 71,אלתדקמ,אלתבקעמ,SHAPE,SHAPE,ד→ב,ב–ד,ע,,,ב–ד@VIII 3 w3,,Puech revises his own 1997 reading
+V0352,VIII,3,3,given,PN+RJ,Milik 1962,ʾl tbs,via Puech 2015 p. 70,Puech 2015,ʾl tbqʿ,p. 68; p. 71,אלתבס,אלתבקע,SHAPE,SHAPE,ס→ע,ס–ע,ק,,,ס–ע@VIII 3 w3,,Puech's letters outside his restoration; Puech: certainly qof and not samek | rj:e33-lastphrase
+V0353,VIII,4,2,given,AP,Abegg (ETCBC dss 2.0.1),בתך,3Q15 VIII 4,Puech 2015,כתב,p. 68,בתכ,כתב,OTHER,OTHER,ב→כ;כ→ב,,,,yes,,,
+V0354,VIII,4,3,given,AP,Abegg (ETCBC dss 2.0.1),דר,3Q15 VIII 4,Puech 2015,חרת,p. 68,דר,חרת,OTHER,OTHER,ד→ח,,ת,,,,,
+V0355,VIII,4,3,given,PN,Allegro 1960,hdr,via Puech 2015 p. 71,Puech 2015,ḥrt,p. 68; pp. 71–72,הדר,חרת,OTHER,OTHER,ה→ח;ד→ר;ר→ת,,,,,,,
+V0356,VIII,4,3,given,PN,Milik 1962,ḥrh,via Puech 2015 p. 71,Puech 2015,ḥrt,p. 68; pp. 71–72,חרה,חרת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@VIII 4 w3,,Puech: h/ḥ and d/r possible; third letter he ḥet or taw
+V0357,VIII,4,3,given,PN,Pixner 1983,ḥrh,via Puech 2015 p. 71 n. 294,Puech 2015,ḥrt,p. 68; pp. 71–72,חרה,חרת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@VIII 4 w3,,
+V0358,VIII,4,3,given,PN,Puech 1997,ḥrh,via Puech 2015 p. 71 n. 294,Puech 2015,ḥrt,p. 68; pp. 71–72,חרה,חרת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@VIII 4 w3,,Puech revises his own 1997 reading
+V0359,VIII,8,4,given,AP,Abegg (ETCBC dss 2.0.1),קדרון,3Q15 VIII 8,Puech 2015,הקדרון,p. 68,קדרונ,הקדרונ,OTHER,OTHER,,,ה,,,,,
+V0360,VIII,8,4,given,PN,García Martínez 1994,hqdrwt,via Puech 2015 p. 73 n. 300,Puech 2015,hqdrwn,p. 68; p. 73,הקדרות,הקדרונ,SHAPE,SHAPE,ת→נ,נ–ת,,,,נ–ת@VIII 8 w4,,
+V0361,VIII,8,4,given,PN,García Martínez–Tigchelaar 1997,hqdrwh,via Puech 2015 p. 73 n. 300,Puech 2015,hqdrwn,p. 68; p. 73,הקדרוה,הקדרונ,SHAPE,SHAPE,ה→נ,ה–נ,,,,ה–נ@VIII 8 w4,,
+V0362,VIII,8,4,given,PN,Wolters 1992,hqdrwt,via Puech 2015 p. 73 n. 299,Puech 2015,hqdrwn,p. 68; p. 73,הקדרות,הקדרונ,SHAPE,SHAPE,ת→נ,נ–ת,,,,נ–ת@VIII 8 w4,,
+V0363,VIII,8,4,given,PN+RJ,Milik 1962,hqdrwh,via Puech 2015 p. 73,Puech 2015,hqdrwn,p. 68; p. 73,הקדרוה,הקדרונ,SHAPE,SHAPE,ה→נ,ה–נ,,,,ה–נ@VIII 8 w4,,Puech: a short final nun (rivet) | rj:e35-kidron
+V0364,VIII,8,4,given,PN+RJ,Pixner 1983,hqdrwt,via Puech 2015 p. 73 n. 299,Puech 2015,hqdrwn,p. 68; p. 73,הקדרות,הקדרונ,SHAPE,SHAPE,ת→נ,נ–ת,,,,נ–ת@VIII 8 w4,,rj:e35-kidron
+V0365,VIII,8,4,given,RJ,Wolters 1996,הקדרות,via Puech 2015 p. 73,Puech 2015,הקדרון,p. 73,הקדרות,הקדרונ,SHAPE,SHAPE,ת→נ,נ–ת,,,,נ–ת@VIII 8 w4,,rj:e35-kidron
+V0366,VIII,9,0,given,PN,Allegro 1960,ḥywr,via Puech 2015 p. 73,Puech 2015,ḥpwr,p. 68; p. 73,חיור,חפור,SHAPE,SHAPE,י→פ,י–פ,,,,י–פ@VIII 9 w0,,
+V0367,VIII,10,0,given,PN+RJ,Allegro 1960,bšly,via Puech 2015 p. 73,Puech 2015,bšlp,p. 68; p. 73,בשלי,בשלפ,SHAPE,SHAPE,י→פ,י–פ,,,,י–פ@VIII 10 w0,,rj:e36-shelaf; prefix b- added to Puech's cited form
+V0368,VIII,12,0,matched,PN,Allegro 1960,hṣwp,via Puech 2015 p. 73,Puech 2015,hṣwpʾ,p. 68; p. 73,הצופ,הצופא,OTHER,OTHER,,,א,,,,,
+V0369,VIII,13,0-1,matched,PN,Allegro 1960,ʿsryn ʾrbʿ,via Puech 2015 p. 73,Puech 2015,ʿsryn wʾrbʿ,p. 68; p. 73,עסרינארבע,עסרינוארבע,OTHER,OTHER,,,ו,,,,,[yw-consonantal] conjunction waw
+V0370,VIII,14,0,given,AP,Abegg (ETCBC dss 2.0.1),בדור,3Q15 VIII 14,Puech 2015,ברוי,p. 68,בדור,ברוי,SHAPE,SHAPE,ד→ר;ר→י,ד–ר;י–ר,,,,ד–ר@VIII 14 w0;י–ר@VIII 14 w0,,override: stray bracket from the extract
+V0371,VIII,14,0,given,PN,Luria 1963,bryn,via Puech 2015 p. 74 n. 308,Puech 2015,brwy,p. 68; p. 74,ברינ,ברוי,SHAPE,SHAPE,י→ו;נ→י,י–נ,,,,י–נ@VIII 14 w0,ו–י@VIII 14 w0,
+V0372,VIII,14,0,given,PN,Muchowski 1993,br[[ʿ]]yn,via Puech 2015 p. 74 n. 308,Puech 2015,brwy,p. 68; p. 74,ברעינ,ברוי,OTHER,SHAPE,ע→ו,,,נ,,,,
+V0373,VIII,14,0,given,PN,Pixner 1983,bryn,via Puech 2015 p. 74 n. 308,Puech 2015,brwy,p. 68; p. 74,ברינ,ברוי,SHAPE,SHAPE,י→ו;נ→י,י–נ,,,,י–נ@VIII 14 w0,ו–י@VIII 14 w0,
+V0374,VIII,14,0,given,PN,Wolters 1992,brwn,via Puech 2015 p. 74 n. 308,Puech 2015,brwy,p. 68; p. 74,ברונ,ברוי,SHAPE,SHAPE,נ→י,י–נ,,,,י–נ@VIII 14 w0,,
+V0375,VIII,14,0,given,PN+RJ,Beyer 1994,bdwr,via Puech 2015 p. 74,Puech 2015,brwy,p. 68; p. 74,בדור,ברוי,SHAPE,SHAPE,ד→ר;ר→י,ד–ר;י–ר,,,,ד–ר@VIII 14 w0;י–ר@VIII 14 w0,,Puech: little graphic support | rj:e37-irrigated
+V0376,VIII,14,0,given,PN+RJ,Lefkovits 2000,bdyn,via Puech 2015 p. 74 n. 307,Puech 2015,brwy,p. 68; p. 74,בדינ,ברוי,OTHER,OTHER,ד→ר;י→ו;נ→י,,,,,,,rj:e37-irrigated
+V0377,VIII,14,3,given,PN,Allegro 1960,bṣyʾh,via Puech 2015 p. 74 n. 310,Puech 2015,bṣw(r)yḥ,p. 68; p. 74,בציאה,בצוריח,OTHER,OTHER,י→ר;א→י;ה→ח,,ו,,,,,
+V0378,VIII,14,3,given,PN,García Martínez–Tigchelaar 1997,bṣwyh,via Puech 2015 p. 74 n. 309,Puech 2015,bṣw(r)yḥ,p. 68; p. 74,בצויה,בצוריח,OTHER,SHAPE,ה→ח,,ר,,,,,
+V0379,VIII,14,3,given,PN,Milik 1962,bṣwyh,via Puech 2015 p. 74,Puech 2015,bṣw(r)yḥ,p. 68; p. 74,בצויה,בצוריח,OTHER,SHAPE,ה→ח,,ר,,,,,Puech: he and ḥet not distinct in this word
+V0380,VIII,14,3,given,PN,Muchowski 1993,bṣwyh,via Puech 2015 p. 74 n. 309,Puech 2015,bṣw(r)yḥ,p. 68; p. 74,בצויה,בצוריח,OTHER,SHAPE,ה→ח,,ר,,,,,
+V0381,VIII,14,3,given,PN,Pixner 1983,bṣwyh,via Puech 2015 p. 74 n. 309,Puech 2015,bṣw(r)yḥ,p. 68; p. 74,בצויה,בצוריח,OTHER,SHAPE,ה→ח,,ר,,,,,
+V0382,VIII,14,3,given,PN,Wolters 1992,bṣyyh,via Puech 2015 p. 74 n. 310,Puech 2015,bṣw(r)yḥ,p. 68; p. 74,בצייה,בצוריח,OTHER,SHAPE,י→ר;ה→ח,,ו,,,,,
+V0383,VIII,14,3-4,given,AP,Abegg (ETCBC dss 2.0.1),בצויח [[בצריח]],3Q15 VIII 14,Puech 2015,בצו(ר)יח,p. 68,בצויחבצריח,בצוריח,OTHER,SAME,,,,יחבצ,,,,bracket at a line edge (right-to-left extract)
+V0384,VIII,14,6,given,AP,Abegg (ETCBC dss 2.0.1),חפור,3Q15 VIII 14,Puech 2015,חפוו(ר),p. 68,חפור,חפוור,MATRES,SHAPE,,,ו,,,,,override: bracket order from the extract
+V0385,VIII,15,2,given,AP,Abegg (ETCBC dss 2.0.1),עסרה,3Q15 VIII 15,Puech 2015,עמ(ס)רה,p. 68,עסרה,עמסרה,OTHER,SHAPE,,,מ,,,,,
+V0386,IX,1,1,given,AP,Abegg (ETCBC dss 2.0.1),שבשולי,3Q15 IX 1,Puech 2015,שבשר(ו)לי,p. 75,שבשולי,שבשרולי,OTHER,SHAPE,,,ר,,,,,
+V0387,IX,1,4,given,AP,Abegg (ETCBC dss 2.0.1),משולי[[ו]],3Q15 IX 1,Puech 2015,משר(ו)לו,p. 75,משוליו,משרולו,OTHER,SHAPE,,,ר,י,,,,
+V0388,IX,2,4,matched,RJ,Beyer 1994,חפור אמ{ש}ות שבע,via Puech 2015 p. 78 n. 324,Puech 2006,חפורות,,חפוראמשותשבע,חפורות,OTHER,OTHER,,,,אמששבע,,,,rj:e38-holes
+V0389,IX,2,4-6,given,AP,Abegg (ETCBC dss 2.0.1),חפור{ר} אמ[[ש]]ות שעת,3Q15 IX 2,Puech 2015,חפוו(ר)וג(ת) בשעת,p. 75,חפורראמשותשעת,חפוורוגתבשעת,OTHER,SHAPE,ר→ו;מ→ו;ש→ג;ו→ת;ת→ב,,,א,,,,override: Puech prints חפוו/ז(ר)וג(ת); waw alternative
+V0390,IX,2,6,matched,PN,Allegro 1960,bšyʿh,via Puech 2015 p. 78 n. 324,Puech 2015,bšʿt,p. 75; p. 77,בשיעה,בשעת,SHAPE,SHAPE,ה→ת,ה–ת,,י,,ה–ת@IX 2 w6,,
+V0391,IX,2,6,matched,PN,Lefkovits 2000,bšwʿh,via Puech 2015 p. 77 n. 323,Puech 2015,bšʿt,p. 75; p. 77,בשועה,בשעת,SHAPE,SHAPE,ה→ת,ה–ת,,ו,,ה–ת@IX 2 w6,,Puech: taw is clear as well as ʿayin
+V0392,IX,2,6,matched,PN,Luria 1963,bšwʿt,via Puech 2015 p. 78 n. 324,Puech 2015,bšʿt,p. 75; p. 77,בשועת,בשעת,MATRES,MATRES,,,,ו,,,,
+V0393,IX,3,0,given,AP,Abegg (ETCBC dss 2.0.1),[[כ]]כרין,3Q15 IX 3,Puech 2015,בדין,p. 75,ככרינ,בדינ,OTHER,SHAPE,כ→ב;ר→ד,,,כ,,,,
+V0394,IX,3,0,given,PN,Allegro 1960,bryn,via Puech 2015 p. 77 n. 320,Puech 2015,bdyn,p. 75; p. 77,ברינ,בדינ,SHAPE,SHAPE,ר→ד,ד–ר,,,,ד–ר@IX 3 w0,,
+V0395,IX,3,0,given,PN,Luria 1963,brwn,via Puech 2015 p. 77 n. 320,Puech 2015,bdyn,p. 75; p. 77,ברונ,בדינ,SHAPE,SHAPE,ר→ד;ו→י,ד–ר,,,,ד–ר@IX 3 w0,ו–י@IX 3 w0,
+V0396,IX,3,0,given,PN,Wolters 1992,kdyn,via Puech 2015 p. 77 n. 320,Puech 2015,bdyn,p. 75; p. 77,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@IX 3 w0,,
+V0397,IX,3,0,given,PN+RJ,Lefkovits 2000,kdyn,via Puech 2015 p. 77 n. 320,Puech 2015,bdyn,p. 75; p. 77,כדינ,בדינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@IX 3 w0,,rj:e38-bars
+V0398,IX,3,0,given,PN+RJ,Muchowski 1993,[k]kryn,via Puech 2015 p. 77 n. 320,Puech 2015,bdyn,p. 75; p. 77,ככרינ,בדינ,RESTORATION,RESTORATION,כ→ב;ר→ד,,,כ,,,,rj:e38-bars
+V0399,IX,3,0,given,RJ,Wilmot 2002,[כ]כרין,via Puech 2015 p. 77 n. 320,Puech 2015,בדין,p. 77 n. 320,ככרינ,בדינ,RESTORATION,RESTORATION,כ→ב;ר→ד,,,כ,,,,rj:e38-bars
+V0400,IX,3,1,given,PN,Allegro 1960,ʾystryn,via Puech 2015 p. 77 n. 321,Puech 2015,ʾstryn,p. 75; p. 77,איסתרינ,אסתרינ,MATRES,MATRES,,,,י,,,,Puech: no space for yod
+V0401,IX,3,1,given,PN,Lefkovits 2000,ʾystryn,via Puech 2015 p. 77 n. 321,Puech 2015,ʾstryn,p. 75; p. 77,איסתרינ,אסתרינ,MATRES,MATRES,,,,י,,,,
+V0402,IX,3,1,given,PN,Luria 1963,ʾystryn,via Puech 2015 p. 77 n. 321,Puech 2015,ʾstryn,p. 75; p. 77,איסתרינ,אסתרינ,MATRES,MATRES,,,,י,,,,
+V0403,IX,4,0,given,PN,Allegro 1960,bḥblh,via Puech 2015 p. 78 n. 329,Puech 2015,bḥblt,p. 75; p. 78,בחבלה,בחבלת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IX 4 w0,,
+V0404,IX,4,0,given,PN,Lefkovits 2000,bḥblh,via Puech 2015 p. 78 n. 329,Puech 2015,bḥblt,p. 75; p. 78,בחבלה,בחבלת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IX 4 w0,,
+V0405,IX,4,0,given,PN,Milik 1962,btklt,via Puech 2015 p. 78 n. 328,Puech 2015,bḥblt,p. 75; p. 78,בתכלת,בחבלת,SHAPE,SHAPE,ת→ח;כ→ב,ח–ת;ב–כ,,,,ח–ת@IX 4 w0;ב–כ@IX 4 w0,,new photographs invalidate Milik's taw
+V0406,IX,4,0,given,PN,Muchowski 1993,btklt,via Puech 2015 p. 78 n. 328,Puech 2015,bḥblt,p. 75; p. 78,בתכלת,בחבלת,SHAPE,SHAPE,ת→ח;כ→ב,ח–ת;ב–כ,,,,ח–ת@IX 4 w0;ב–כ@IX 4 w0,,
+V0407,IX,4,0,given,RJ,Puech 2002,בחבלה,CSS ch. 5,Puech 2006,bḥblt,,בחבלה,בחבלת,SHAPE,SHAPE,ה→ת,ה–ת,,,,ה–ת@IX 4 w0,,rj:e39-terrace
+V0408,IX,4,1,given,AP,Abegg (ETCBC dss 2.0.1),השניא,3Q15 IX 4,Puech 2015,השניג(ת),p. 75,השניא,השניגת,OTHER,SHAPE,א→ת,,ג,,,,,
+V0409,IX,4,1,given,PN,Allegro 1960,hšnyt,via Puech 2015 p. 78,Puech 2015,hšnyg(t),p. 75; p. 78,השנית,השניגת,OTHER,SHAPE,,,ג,,,,,Puech: gimel engraved for taw
+V0410,IX,5,1,given,AP,Abegg (ETCBC dss 2.0.1),חפור,3Q15 IX 5,Puech 2015,חפון(ר),p. 75,חפור,חפונר,OTHER,SHAPE,,,נ,,,,,
+V0411,IX,6,0,given,AP,Abegg (ETCBC dss 2.0.1),ומחצא,3Q15 IX 6,Puech 2015,ר(ו)מחצא,p. 75,ומחצא,רומחצא,OTHER,SHAPE,,,ר,,,,,
+V0412,IX,6,0,given,PN,Allegro 1960,wmḥṣʾ,via Puech 2015 p. 79,Puech 2015,r(w)mḥṣʾ,p. 75; p. 79,ומחצא,רומחצא,OTHER,SHAPE,,,ר,,,,,Puech: frequent w/r confusion in 1st-century cursive
+V0413,IX,6,0,given,PN,Beyer 1994,wmḥṣʾ,via Puech 2015 p. 79 n. 334,Puech 2015,r(w)mḥṣʾ,p. 75; p. 79,ומחצא,רומחצא,OTHER,SHAPE,,,ר,,,,,
+V0414,IX,6,0,given,PN,García Martínez–Tigchelaar 1997,wmḥṣʾ,via Puech 2015 p. 79 n. 334,Puech 2015,r(w)mḥṣʾ,p. 75; p. 79,ומחצא,רומחצא,OTHER,SHAPE,,,ר,,,,,
+V0415,IX,6,0,given,PN,Lefkovits 2000,wmḥṣʾ,via Puech 2015 p. 79 n. 334,Puech 2015,r(w)mḥṣʾ,p. 75; p. 79,ומחצא,רומחצא,OTHER,SHAPE,,,ר,,,,,
+V0416,IX,6,0,given,PN,Luria 1963,wmḥṣʾ,via Puech 2015 p. 79 n. 334,Puech 2015,r(w)mḥṣʾ,p. 75; p. 79,ומחצא,רומחצא,OTHER,SHAPE,,,ר,,,,,
+V0417,IX,6,0,given,PN,Milik 1962,dm[[ʿ]] ḥṣʾ,via Puech 2015 p. 79,Puech 2015,r(w)mḥṣʾ,p. 75; p. 79,דמעחצא,רומחצא,OTHER,SHAPE,ד→ר;מ→ו;ע→מ,,,,,,,
+V0418,IX,6,0,given,PN,Muchowski 1993,wmḥṣʾ,via Puech 2015 p. 79 n. 334,Puech 2015,r(w)mḥṣʾ,p. 75; p. 79,ומחצא,רומחצא,OTHER,SHAPE,,,ר,,,,,
+V0419,IX,6,0,given,PN,Pixner 1983,dm[[ʿ]] hṣʾ,via Puech 2015 p. 79,Puech 2015,r(w)mḥṣʾ,p. 75; p. 79,דמעהצא,רומחצא,OTHER,SHAPE,ד→ר;מ→ו;ע→מ;ה→ח,,,,,,,
+V0420,IX,6,0,given,PN,Wolters 1992,wmḥṣʾ,via Puech 2015 p. 79 n. 334,Puech 2015,r(w)mḥṣʾ,p. 75; p. 79,ומחצא,רומחצא,OTHER,SHAPE,,,ר,,,,,
+V0421,IX,7,1,given,AP,Abegg (ETCBC dss 2.0.1),החורון,3Q15 IX 7,Puech 2015,החורין,p. 75,החורונ,החורינ,MATRES,MATRES,ו→י,,,,,,ו–י@IX 7 w1,
+V0422,IX,7,1,given,PN,Lefkovits 2000,hḥwrwn,via Puech 2015 p. 80 n. 336,Puech 2015,hḥwryn,p. 75; pp. 80–81,החורונ,החורינ,MATRES,MATRES,ו→י,,,,,,ו–י@IX 7 w1,
+V0423,IX,7,1,given,PN,Luria 1963,hḥyrwn,via Puech 2015 p. 80 n. 339,Puech 2015,hḥwryn,p. 75; pp. 80–81,החירונ,החורינ,MATRES,MATRES,י→ו;ו→י,,,,yes,,ו–י@IX 7 w1;ו–י@IX 7 w1,
+V0424,IX,7,1,given,PN,Milik 1962,hḥwrwn,via Puech 2015 p. 80,Puech 2015,hḥwryn,p. 75; pp. 80–81,החורונ,החורינ,MATRES,MATRES,ו→י,,,,,,ו–י@IX 7 w1,
+V0425,IX,7,1,given,PN,Muchowski 1993,hḥwrwn,via Puech 2015 p. 80 n. 339,Puech 2015,hḥwryn,p. 75; pp. 80–81,החורונ,החורינ,MATRES,MATRES,ו→י,,,,,,ו–י@IX 7 w1,
+V0426,IX,7,1,given,PN,Wolters 1996,hḥwrwn,via Puech 2015 p. 80 n. 336,Puech 2015,hḥwryn,p. 75; pp. 80–81,החורונ,החורינ,MATRES,MATRES,ו→י,,,,,,ו–י@IX 7 w1,
+V0427,IX,7,1,given,RJ,Milik 1962,החורון,D32 p. 268,Puech 2006,החורין,p. 196,החורונ,החורינ,MATRES,MATRES,ו→י,,,,,,ו–י@IX 7 w1,rj:e40-horon
+V0428,IX,7,2,given,AP,Abegg (ETCBC dss 2.0.1),ב[[צ]]ריח,3Q15 IX 7,Puech 2015,ברוח,p. 75,בצריח,ברוח,OTHER,MATRES,י→ו,,,צ,,,,
+V0429,IX,7,2,given,PN,Milik 1962,b[[ṣ]]ryḥ,via Puech 2015 p. 80,Puech 2015,brwḥ,p. 75; p. 80,בצריח,ברוח,OTHER,MATRES,י→ו,,,צ,,,,
+V0430,IX,7,2,given,RJ,Milik 1962,ב<צ>ריח,,Puech 2006,ברוח,,בצריח,ברוח,OTHER,OTHER,י→ו,,,צ,,,,rj:e40-side
+V0431,IX,7,4,given,AP,Abegg (ETCBC dss 2.0.1),ים,3Q15 IX 7,Puech 2015,דרומ,p. 75,ימ,דרומ,OTHER,OTHER,י→ו,,דר,,,,,
+V0432,IX,7,4,given,PN,Milik 1962,ym,via Puech 2015 p. 80,Puech 2015,drwm,p. 75; p. 80,ימ,דרומ,OTHER,OTHER,י→ו,,דר,,,,,
+V0433,IX,7,4,given,RJ,Lefkovits 2000,ים,,Puech 2006,דרום,,ימ,דרומ,OTHER,OTHER,י→ו,,דר,,,,,rj:e40-direction
+V0434,IX,7,4,given,RJ,Milik 1962,ים,D32 p. 268,Puech 2006,דרום,,ימ,דרומ,OTHER,OTHER,י→ו,,דר,,,,,rj:e40-direction
+V0435,IX,8,0,given,PN,Beyer 1994,byrk,via Puech 2015 p. 81,Puech 2015,bzrb,p. 75; p. 81,בירכ,בזרב,SHAPE,SHAPE,י→ז;כ→ב,ז–י;ב–כ,,,,ז–י@IX 8 w0;ב–כ@IX 8 w0,,Puech: zayin track; bet with foot better than kaf
+V0436,IX,8,0,given,PN,Wolters 1992,byrk,via Puech 2015 p. 81 n. 344,Puech 2015,bzrb,p. 75; p. 81,בירכ,בזרב,SHAPE,SHAPE,י→ז;כ→ב,ז–י;ב–כ,,,,ז–י@IX 8 w0;ב–כ@IX 8 w0,,
+V0437,IX,8,2,given,AP,Abegg (ETCBC dss 2.0.1),אמות,3Q15 IX 8,Puech 2015,אכע(מו)ת,p. 75,אמות,אכעמות,OTHER,SHAPE,,,כע,,,,,
+V0438,IX,8,4,given,AP,Abegg (ETCBC dss 2.0.1),עסרה,3Q15 IX 8,Puech 2015,עסו(ר)ה,p. 75,עסרה,עסורה,MATRES,SHAPE,,,ו,,,,,
+V0439,IX,10,0,given,PN,Allegro 1960,bqymʿh,via Puech 2015 p. 81,Puech 2015,bqwmʿh,p. 75; p. 81,בקימעה,בקומעה,MATRES,MATRES,י→ו,,,,,,ו–י@IX 10 w0,
+V0440,IX,10,0,given,PN,Beyer 1994,bqwbʿh,via Puech 2015 p. 81 n. 346,Puech 2015,bqwmʿh,p. 75; p. 81,בקובעה,בקומעה,SHAPE,SHAPE,ב→מ,ב–מ,,,,ב–מ@IX 10 w0,,
+V0441,IX,10,0,given,PN,García Martínez–Tigchelaar 1997,bqwbʿh,via Puech 2015 p. 81 n. 346,Puech 2015,bqwmʿh,p. 75; p. 81,בקובעה,בקומעה,SHAPE,SHAPE,ב→מ,ב–מ,,,,ב–מ@IX 10 w0,,
+V0442,IX,10,0,given,PN,Lefkovits 2000,bqwbʿh,via Puech 2015 p. 81 n. 346,Puech 2015,bqwmʿh,p. 75; p. 81,בקובעה,בקומעה,SHAPE,SHAPE,ב→מ,ב–מ,,,,ב–מ@IX 10 w0,,
+V0443,IX,10,0,given,PN,Luria 1963,bqymʿh,via Puech 2015 p. 81 n. 345,Puech 2015,bqwmʿh,p. 75; p. 81,בקימעה,בקומעה,MATRES,MATRES,י→ו,,,,,,ו–י@IX 10 w0,
+V0444,IX,10,0,given,PN,Muchowski 1993,bqwbʿt,via Puech 2015 p. 81 n. 346,Puech 2015,bqwmʿh,p. 75; p. 81,בקובעת,בקומעה,SHAPE,SHAPE,ב→מ;ת→ה,ב–מ;ה–ת,,,,ב–מ@IX 10 w0;ה–ת@IX 10 w0,,
+V0445,IX,10,0,given,PN,Pixner 1983,bqwbʿh,via Puech 2015 p. 81 n. 346,Puech 2015,bqwmʿh,p. 75; p. 81,בקובעה,בקומעה,SHAPE,SHAPE,ב→מ,ב–מ,,,,ב–מ@IX 10 w0,,Puech: the engraver certainly wrote bqwmʿh
+V0446,IX,10,2-3,given,AP,Abegg (ETCBC dss 2.0.1),מנה חרמ,3Q15 IX 10,Puech 2015,מנחה רב,p. 75,מנהחרמ,מנחהרב,SHAPE,SHAPE,ה→ח;ח→ה;מ→ב,ה–ח;ה–ח;ב–מ,,,yes,ה–ח@IX 10 w2;ה–ח@IX 10 w2;ב–מ@IX 10 w3,,
+V0447,IX,10,2-3,given,PN,Allegro 1960,mn hḥrm,via Puech 2015 p. 82 n. 351,Puech 2015,mnḥh rb,p. 75; pp. 82–83,מנהחרמ,מנחהרב,OTHER,OTHER,ה→ח;ח→ה;מ→ב,,,,yes,,,[emended] Puech: supposes correcting bet to mem and ḥet to he
+V0448,IX,10,2-3,given,PN,Beyer 1994,mn hḥrm,via Puech 2015 p. 82 n. 351,Puech 2015,mnḥh rb,p. 75; pp. 82–83,מנהחרמ,מנחהרב,OTHER,OTHER,ה→ח;ח→ה;מ→ב,,,,yes,,,[emended]
+V0449,IX,10,2-3,given,PN,García Martínez–Tigchelaar 1997,mnh ḥrm,via Puech 2015 p. 82 n. 352,Puech 2015,mnḥh rb,p. 75; pp. 82–83,מנהחרמ,מנחהרב,OTHER,OTHER,ה→ח;ח→ה;מ→ב,,,,yes,,,[emended]
+V0450,IX,10,2-3,given,PN,Lefkovits 2000,mn hḥrm,via Puech 2015 p. 82 n. 351,Puech 2015,mnḥh rb,p. 75; pp. 82–83,מנהחרמ,מנחהרב,OTHER,OTHER,ה→ח;ח→ה;מ→ב,,,,yes,,,[emended]
+V0451,IX,10,2-3,given,PN,Luria 1963,mnḥt rb,via Puech 2015 p. 83 n. 353,Puech 2015,mnḥh rb,p. 75; pp. 82–83,מנחתרב,מנחהרב,SHAPE,SHAPE,ת→ה,ה–ת,,,,ה–ת@IX 10 w2,,Puech: the taw is ruled out
+V0452,IX,10,2-3,given,PN,Muchowski 1993,mn hḥrm,via Puech 2015 p. 82 n. 351,Puech 2015,mnḥh rb,p. 75; pp. 82–83,מנהחרמ,מנחהרב,OTHER,OTHER,ה→ח;ח→ה;מ→ב,,,,yes,,,[emended]
+V0453,IX,10,2-3,given,PN,Wolters 1992,mnh ḥrm,via Puech 2015 p. 82 n. 352,Puech 2015,mnḥh rb,p. 75; pp. 82–83,מנהחרמ,מנחהרב,OTHER,OTHER,ה→ח;ח→ה;מ→ב,,,,yes,,,[emended]
+V0454,IX,11,0-1,given,PN,Luria 1963,bqylḥ mym,via Puech 2015 p. 83 n. 356,Puech 2015,bqwl hmym,p. 75; p. 83,בקילחמימ,בקולהמימ,SHAPE,SHAPE,י→ו;ח→ה,ה–ח,,,,ה–ח@IX 11 w1,ו–י@IX 11 w0,Puech: the he of hmym assured
+V0455,IX,11,0-1,given,PN,Pixner 1983,bqylḥ mym,via Puech 2015 p. 83 n. 356,Puech 2015,bqwl hmym,p. 75; p. 83,בקילחמימ,בקולהמימ,SHAPE,SHAPE,י→ו;ח→ה,ה–ח,,,,ה–ח@IX 11 w1,ו–י@IX 11 w0,
+V0456,IX,11,0-1,given,PN,Wolters 1992,bqylḥ mym,via Puech 2015 p. 83 n. 356,Puech 2015,bqwl hmym,p. 75; p. 83,בקילחמימ,בקולהמימ,SHAPE,SHAPE,י→ו;ח→ה,ה–ח,,,,ה–ח@IX 11 w1,ו–י@IX 11 w0,
+V0457,IX,11,0-2,given,PN,Allegro 1960,bqyl hmym hqrybyn,via Puech 2015 p. 83 n. 355,Puech 2015,bqwl hmym hqrwbyn,p. 75; p. 83,בקילהמימהקריבינ,בקולהמימהקרובינ,MATRES,MATRES,י→ו;י→ו,,,,,,ו–י@IX 11 w0;ו–י@IX 11 w0,Puech: yod/waw unclear in this line
+V0458,IX,11,3-5,given,PN,Milik 1962,lkpr nbw b,via Puech 2015 p. 83,Puech 2015,lkpt byb,p. 75; p. 83,לכפרנבוב,לכפתביב,SHAPE,SHAPE,נ→ת;ו→י,נ–ת,,ר,,נ–ת@IX 11 w3,ו–י@IX 11 w5,Milik: si vera lectio
+V0459,IX,11,3-5,given,RJ,Milik 1962,כפר נבו,,Puech 2015,kpt byb,p. 83,כפרנבו,כפתביב,OTHER,OTHER,ר→ת;נ→ב;ב→י;ו→ב,,,,,,,rj:e42-kephar-nebo; Puech's l- left out to compare the same span
+V0460,IX,12,0,given,PN,Lefkovits 2000 (alternative),mzhb,via Puech 2015 p. 84 n. 361,Puech 2015,mrḥb,p. 75; p. 84,מזהב,מרחב,SHAPE,SHAPE,ז→ר;ה→ח,ז–ר;ה–ח,,,,ז–ר@IX 12 w0;ה–ח@IX 12 w0,,Puech: difficult palaeographically
+V0461,IX,12,0,given,RJ,Milik 1962,מזרח,,Puech 2006,מרחב,,מזרח,מרחב,OTHER,OTHER,,,ב,ז,,,,rj:e42-east
+V0462,IX,12,0-1,given,AP,Abegg (ETCBC dss 2.0.1),מ[[ז]]רח כלפיהם,3Q15 IX 12,Puech 2015,מרחב לפיהמ,p. 75,מזרחכלפיהמ,מרחבלפיהמ,OTHER,SHAPE,כ→ב,,,ז,,,,
+V0463,IX,12,0-1,given,PN,Milik 1962,m[[z]]rḥ klpyhm,via Puech 2015 p. 84,Puech 2015,mrḥb lpyhm,p. 75; p. 84,מזרחכלפיהמ,מרחבלפיהמ,OTHER,SHAPE,כ→ב,,,ז,,,,
+V0464,IX,12,0-1,given,PN,Muchowski 1993,m[[z]]rḥ klpyhm,via Puech 2015 p. 84 n. 360,Puech 2015,mrḥb lpyhm,p. 75; p. 84,מזרחכלפיהמ,מרחבלפיהמ,OTHER,SHAPE,כ→ב,,,ז,,,,
+V0465,IX,12,1,given,PN,Beyer 1994,lpnhm,via Puech 2015 p. 84 n. 362,Puech 2015,lpyhm,p. 75; p. 84,לפנהמ,לפיהמ,SHAPE,SHAPE,נ→י,י–נ,,,,י–נ@IX 12 w1,,
+V0466,IX,12,1,given,PN,Puech 1997,lpn[[y]]hm,via Puech 2015 p. 84 n. 362,Puech 2015,lpyhm,p. 75; p. 84,לפניהמ,לפיהמ,OTHER,SHAPE,,,,נ,,,,Puech revises his own 1997 reading
+V0467,IX,12,1,given,PN,Wolters 1996,lpnhm,via Puech 2015 p. 84 n. 362,Puech 2015,lpyhm,p. 75; p. 84,לפנהמ,לפיהמ,SHAPE,SHAPE,נ→י,י–נ,,,,י–נ@IX 12 w1,,
+V0468,IX,15,1,given,AP,Abegg (ETCBC dss 2.0.1),ב[[י]]צ{ה}יאת,3Q15 IX 15,Puech 2015,בצחיאת,p. 75,ביצהיאת,בצחיאת,OTHER,SHAPE,ה→ח,,,י,,,,
+V0469,IX,15,1,given,PN,Lefkovits 2000 (alternative),bṣḥyʾḥ,via Puech 2015 p. 84 n. 363,Puech 2015,bṣḥyʾt,p. 75; p. 84,בצחיאח,בצחיאת,SHAPE,SHAPE,ח→ת,ח–ת,,,,ח–ת@IX 15 w1,,
+V0470,IX,15,1,given,PN,Luria 1963,bṣhyʾt,via Puech 2015 p. 84 n. 363,Puech 2015,bṣḥyʾt,p. 75; p. 84,בצהיאת,בצחיאת,SHAPE,SHAPE,ה→ח,ה–ח,,,,ה–ח@IX 15 w1,,
+V0471,IX,15,2,given,AP,Abegg (ETCBC dss 2.0.1),גי,3Q15 IX 15,Puech 2015,גר,p. 75,גי,גר,SHAPE,SHAPE,י→ר,י–ר,,,,י–ר@IX 15 w2,,
+V0472,IX,15,2,given,PN,Allegro 1960,gy,via Puech 2015 p. 84,Puech 2015,gr,p. 75; p. 84,גי,גר,SHAPE,SHAPE,י→ר,י–ר,,,,י–ר@IX 15 w2,,
+V0473,IX,15,2,given,PN,Wilmot 2002,gy,via Puech 2015 p. 84 n. 363,Puech 2015,gr,p. 75; p. 84,גי,גר,SHAPE,SHAPE,י→ר,י–ר,,,,י–ר@IX 15 w2,,
+V0474,IX,17,1-2,given,AP,Abegg (ETCBC dss 2.0.1),שבמצד נאב,3Q15 IX 17,Puech 2015,שבמצדנא,p. 75,שבמצדנאב,שבמצדנא,OTHER,OTHER,,,,ב,,,,bracket at a line edge (right-to-left extract)
+V0475,IX,17,1-2,given,PN,Wolters 1992,šbmṣrn ʾbt,via Puech 2015 p. 86 n. 368,Puech 2015,šbmṣdnʾ bt,p. 75; p. 86,שבמצרנאבת,שבמצדנאבת,SHAPE,SHAPE,ר→ד,ד–ר,,,,ד–ר@IX 17 w1,,letters outside Puech's restoration
+V0476,IX,17,2,given,PN,Lefkovits 2000,nʾbḥ m,via Puech 2015 p. 86 n. 371,Puech 2015,nʾ btḥ,p. 75; p. 86,נאבחמ,נאבתח,SHAPE,SHAPE,ח→ת;מ→ח,ח–ת;ח–מ,,,,ח–ת@IX 17 w2;ח–מ@IX 17 w2,,Puech: taw certain; never confused with ḥet; mem impossible
+V0477,IX,17,2,given,PN,Luria 1963,nʾpṭḥ,via Puech 2015 p. 86,Puech 2015,nʾ btḥ,p. 75; p. 86,נאפטח,נאבתח,SHAPE,SHAPE,פ→ב;ט→ת,ב–פ;ט–ת,,,,ב–פ@IX 17 w2;ט–ת@IX 17 w2,,Puech: the yod is ruled out; only he ḥet or dalet
+V0478,IX,17,2,given,PN,Schiffman 2002,nʾbḥ m,via Puech 2015 p. 86 n. 371,Puech 2015,nʾ btḥ,p. 75; p. 86,נאבחמ,נאבתח,SHAPE,SHAPE,ח→ת;מ→ח,ח–ת;ח–מ,,,,ח–ת@IX 17 w2;ח–מ@IX 17 w2,,follows Lefkovits
+V0479,X,3,0-1,given,PN,García Martínez 1994,bkyrgr,via Puech 2015 p. 87 n. 374,Puech 2015,bbwr gr,p. 85; p. 87,בכירגר,בבורגר,SHAPE,SHAPE,כ→ב;י→ו,ב–כ,,,,ב–כ@X 3 w0,ו–י@X 3 w0,
+V0480,X,3,0-1,given,PN,Pixner 1983,bkyrgr,via Puech 2015 p. 87 n. 374,Puech 2015,bbwr gr,p. 85; p. 87,בכירגר,בבורגר,SHAPE,SHAPE,כ→ב;י→ו,ב–כ,,,,ב–כ@X 3 w0,ו–י@X 3 w0,
+V0481,X,3,0-1,given,PN+RJ,Milik 1962,bkyrgr,via Puech 2015 p. 87,Puech 2015,bbwr gr,p. 85; p. 87,בכירגר,בבורגר,SHAPE,SHAPE,כ→ב;י→ו,ב–כ,,,,ב–כ@X 3 w0,ו–י@X 3 w0,Milik also offers bbwr gb | rj:e45-cistern; prefix b- added to Puech's cited form
+V0482,X,3,1,given,PN,Allegro 1960,gy,via Puech 2015 p. 87 n. 375,Puech 2015,gr,p. 85; p. 87,גי,גר,SHAPE,SHAPE,י→ר,י–ר,,,,י–ר@X 3 w1,,
+V0483,X,3,1,given,PN,Muchowski 1993,gb,via Puech 2015 p. 87 n. 373,Puech 2015,gr,p. 85; p. 87,גב,גר,SHAPE,SHAPE,ב→ר,ב–ר,,,,ב–ר@X 3 w1,,
+V0484,X,3,2,given,PN,Allegro 1960,(ʿ)mwqwt,via Puech 2015 p. 87 n. 375,Puech 2015,mzqwt,p. 85; p. 87,עמוקות,מזקות,OTHER,SHAPE,ו→ז,,,ע,,,,
+V0485,X,3,2,given,PN,Lefkovits 2000,myqwt,via Puech 2015 p. 87 n. 375,Puech 2015,mzqwt,p. 85; p. 87,מיקות,מזקות,SHAPE,SHAPE,י→ז,ז–י,,,,ז–י@X 3 w2,,Puech: needs yod for reš and waw for zayin
+V0486,X,3,3,given,AP,Abegg (ETCBC dss 2.0.1),שרוו,3Q15 X 3,Puech 2015,שרוי,p. 85,שרוו,שרוי,MATRES,MATRES,ו→י,,,,,,ו–י@X 3 w3,
+V0487,X,3,3,given,PN,Milik 1962,šrww,via Puech 2015 p. 87,Puech 2015,šrwy,p. 85; p. 87,שרוו,שרוי,MATRES,MATRES,ו→י,,,,,,ו–י@X 3 w3,
+V0488,X,3,3,given,PN,Wolters 1996,šrww,via Puech 2015 p. 87 n. 377,Puech 2015,šrwy,p. 85; p. 87,שרוו,שרוי,MATRES,MATRES,ו→י,,,,,,ו–י@X 3 w3,
+V0489,X,5,0,given,AP,Abegg (ETCBC dss 2.0.1),באשיח,3Q15 X 5,Puech 2015,באשוח,p. 85,באשיח,באשוח,MATRES,MATRES,י→ו,,,,,,ו–י@X 5 w0,
+V0490,X,5,1,given,PN,Beyer 1994,šwbyt,via Puech 2015 p. 88,Puech 2015,šybyt,p. 85; p. 88,שובית,שיבית,MATRES,MATRES,ו→י,,,,,,ו–י@X 5 w1,
+V0491,X,5,3,given,PN,Allegro 1960,kbwʾk,via Puech 2015 p. 88 n. 383,Puech 2015,bbwʾk,p. 85; p. 88,כבואכ,בבואכ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@X 5 w3,,
+V0492,X,5,3,given,PN,Pixner 1983,kbwʾk,via Puech 2015 p. 88 n. 383,Puech 2015,bbwʾk,p. 85; p. 88,כבואכ,בבואכ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@X 5 w3,,
+V0493,X,6,0-1,given,PN,Allegro 1960,lsmwlw ʾmwt,via Puech 2015 p. 88,Puech 2015,lsmwl wg(ʾ)mwt,p. 85; pp. 87–88,לסמולואמות,לסמולוגאמות,OTHER,SHAPE,,,ג,,,,,
+V0494,X,6,0-1,given,PN,Beyer 1994,lsmwlw ʾmwt,via Puech 2015 p. 88 n. 381,Puech 2015,lsmwl wg(ʾ)mwt,p. 85; pp. 87–88,לסמולואמות,לסמולוגאמות,OTHER,SHAPE,,,ג,,,,,
+V0495,X,6,0-1,given,PN,Lefkovits 2000,lsmwlw ʾmwt,via Puech 2015 p. 88 n. 381,Puech 2015,lsmwl wg(ʾ)mwt,p. 85; pp. 87–88,לסמולואמות,לסמולוגאמות,OTHER,SHAPE,,,ג,,,,,
+V0496,X,6,0-1,given,PN,Milik 1962,lsmwl rgmwt,via Puech 2015 p. 88 n. 380,Puech 2015,lsmwl wg(ʾ)mwt,p. 85; pp. 87–88,לסמולרגמות,לסמולוגאמות,OTHER,SHAPE,ר→ו,,א,,,,,Milik: cursive reš; Puech: the waw is written like a zayin
+V0497,X,6,0-1,given,PN,Pixner 1983,lsmwlw rgmwt,via Puech 2015 p. 88 n. 383,Puech 2015,lsmwl wg(ʾ)mwt,p. 85; pp. 87–88,לסמולורגמות,לסמולוגאמות,OTHER,OTHER,ר→ג;ג→א,,,,,,,
+V0498,X,6,0-2,given,AP,Abegg (ETCBC dss 2.0.1),לסמולו [[חפור]] אמות,3Q15 X 6,Puech 2015,לסמול וג(א)מות,p. 85,לסמולוחפוראמות,לסמולוגאמות,OTHER,SHAPE,ר→ג,,,וחפ,,,,override: the two rows are one place
+V0499,X,6,1-2,given,RJ,Milik 1962,רגמות,,Puech 2006,אמות,,רגמות,אמות,SHAPE,SHAPE,ג→א,א–ג,,ר,,א–ג@X 6 w1,,rj:e46-feet
+V0500,X,7,0,given,AP,Abegg (ETCBC dss 2.0.1),ככרין,3Q15 X 7,Puech 2015,כר(כ)רין,p. 85,ככרינ,כרכרינ,OTHER,SHAPE,,,ר,,,,,
+V0501,X,8,2-3,given,RJ,Milik 1957,גיחן,via Lefkovits,Milik 1962,גי איך,p. 301,גיחנ,גיאיכ,OTHER,OTHER,ח→י;נ→כ,,א,,,,,rj:e47-valley; Milik's 1956–57 reading against his Addenda
+V0502,X,8,2-3,given,RJ,Wolters 1996,גי זרד,,Milik 1962,גי איך,p. 301,גיזרד,גיאיכ,OTHER,OTHER,א→ז;י→ר;כ→ד,,,,,,,rj:e47-valley
+V0503,X,8,3,given,AP,Abegg (ETCBC dss 2.0.1),זרד,3Q15 X 8,Puech 2015,איך,p. 85,זרד,איכ,OTHER,OTHER,ז→א;ר→י;ד→כ,,,,,,,
+V0504,X,8,3,given,PN,Allegro 1960,zyt,via Puech 2015 p. 89,Puech 2015,ʾyk,p. 85; p. 89,זית,איכ,OTHER,OTHER,ז→א;ת→כ,,,,,,,
+V0505,X,8,3,given,PN,García Martínez–Tigchelaar 1997,zwk,via Puech 2015 p. 89 n. 389,Puech 2015,ʾyk,p. 85; p. 89,זוכ,איכ,OTHER,OTHER,ז→א;ו→י,,,,,,,
+V0506,X,8,3,given,PN,Pixner 1983,zwk,via Puech 2015 p. 89 n. 389,Puech 2015,ʾyk,p. 85; p. 89,זוכ,איכ,OTHER,OTHER,ז→א;ו→י,,,,,,,Puech: a cursive ʾalef close to gamma
+V0507,X,8,3,given,PN,Wolters 1992,zrd,via Puech 2015 p. 89 n. 390,Puech 2015,ʾyk,p. 85; p. 89,זרד,איכ,OTHER,OTHER,ז→א;ר→י;ד→כ,,,,,,,
+V0508,X,8,4-5,given,AP,Abegg (ETCBC dss 2.0.1),בצדו המערבי,3Q15 X 8,Puech 2015,בצריח מעינו,p. 85,בצדוהמערבי,בצריחמעינו,OTHER,OTHER,ד→ר;ו→י;ה→ח;ר→י;ב→נ;י→ו,,,,yes,,,
+V0509,X,8,4-5,given,PN,Milik 1962,bṣdw hmʿrby,via Puech 2015 p. 88,Puech 2015,bṣryḥ mʿynw,p. 85; p. 88,בצדוהמערבי,בצריחמעינו,OTHER,OTHER,ד→ר;ו→י;ה→ח;ר→י;ב→נ;י→ו,,,,yes,,,
+V0510,X,8,4-5,given,PN,Puech 1997,bṣdw hmʿrby,via Puech 2015 p. 88 n. 388,Puech 2015,bṣryḥ mʿynw,p. 85; p. 88,בצדוהמערבי,בצריחמעינו,OTHER,OTHER,ד→ר;ו→י;ה→ח;ר→י;ב→נ;י→ו,,,,yes,,,Puech revises his own 1997 reading
+V0511,X,8,5,given,RJ,Milik 1962,המערבי,,Puech 2015,מעינו,pp. 85 and 88,המערבי,מעינו,OTHER,OTHER,ר→י;ב→נ;י→ו,,,ה,,,,rj:e47-west-or-spring; second word only
+V0512,X,9,1,given,AP,Abegg (ETCBC dss 2.0.1),שחור{ר}ה,3Q15 X 9,Puech 2015,שחורוג(א),p. 85,שחוררה,שחורוגא,OTHER,SHAPE,ר→ג;ה→א,,ו,,,,,
+V0513,X,9,1,given,PN,Allegro 1960,šḥwryt,via Puech 2015 p. 89,Puech 2015,šḥwrwg(ʾ),p. 85; pp. 89–90,שחורית,שחורוגא,OTHER,SHAPE,י→ג;ת→א,,ו,,,,,
+V0514,X,9,1,given,PN,Luria 1963,šḥwrwt,via Puech 2015 p. 89 n. 394,Puech 2015,šḥwrwg(ʾ),p. 85; pp. 89–90,שחורות,שחורוגא,OTHER,SHAPE,ת→א,,ג,,,,,
+V0515,X,9,1,given,PN,Milik 1962,šhzdwgʾ,via Puech 2015 p. 89,Puech 2015,šḥwrwg(ʾ),p. 85; pp. 89–90,שהזדוגא,שחורוגא,SHAPE,OTHER,ה→ח;ז→ו;ד→ר,ה–ח;ו–ז;ד–ר,,,,ה–ח@X 9 w1;ו–ז@X 9 w1;ד–ר@X 9 w1,,
+V0516,X,9,1,given,PN,Muchowski 1993,šhzdwgʾ,via Puech 2015 p. 89 n. 393,Puech 2015,šḥwrwg(ʾ),p. 85; pp. 89–90,שהזדוגא,שחורוגא,SHAPE,OTHER,ה→ח;ז→ו;ד→ר,ה–ח;ו–ז;ד–ר,,,,ה–ח@X 9 w1;ו–ז@X 9 w1;ד–ר@X 9 w1,,
+V0517,X,9,1,given,PN,Pixner 1983,šhzdwgʾ,via Puech 2015 p. 89 n. 393,Puech 2015,šḥwrwg(ʾ),p. 85; pp. 89–90,שהזדוגא,שחורוגא,SHAPE,OTHER,ה→ח;ז→ו;ד→ר,ה–ח;ו–ז;ד–ר,,,,ה–ח@X 9 w1;ו–ז@X 9 w1;ד–ר@X 9 w1,,
+V0518,X,9,2,given,AP,Abegg (ETCBC dss 2.0.1),אמו{ו}ת,3Q15 X 9,Puech 2015,אכע(מ)ות,p. 85,אמוות,אכעמות,OTHER,SHAPE,מ→ע;ו→מ,,כ,,,,,
+V0519,X,10,0,given,PN,Milik 1962,hw,via Puech 2015 p. 90,Puech 2015,hy,p. 85; p. 90,הו,הי,MATRES,MATRES,ו→י,,,,,,ו–י@X 10 w0,
+V0520,X,10,2,matched,PN,Lefkovits 2000,bkdyn,via Puech 2015 p. 90 n. 399,Puech 2015,kkryn,p. 85; p. 90,בכדינ,ככרינ,SHAPE,SHAPE,ב→כ;ד→ר,ב–כ;ד–ר,,,,ב–כ@X 10 w2;ד–ר@X 10 w2,,Puech: no dalet has this shape
+V0521,X,11,2,given,AP,Abegg (ETCBC dss 2.0.1),כפורין,3Q15 X 11,Puech 2015,כופרין,p. 85,כפורינ,כופרינ,SHAPE,SHAPE,פ→ו;ו→פ,ו–פ;ו–פ,,,yes,ו–פ@X 11 w2;ו–פ@X 11 w2,,
+V0522,X,13,1-2,given,AP,Abegg (ETCBC dss 2.0.1),חפור אמות,3Q15 X 13,Puech 2015,חפוו(ר) רג(א)מות,p. 85,חפוראמות,חפווררגאמות,OTHER,SHAPE,,,ורג,,,,,override: Puech prints חפוו/ז(ר); waw alternative
+V0523,X,13,1-2,given,RJ,Milik 1962,רגמות,,Puech 2006,אמות,,רגמות,אמות,SHAPE,SHAPE,ג→א,א–ג,,ר,,א–ג@X 13 w1,,rj:e48-feet; Puech 2015 p. 91 gives the edition as ḥpw{w}r gmwt
+V0524,X,15,0-1,given,AP,Abegg (ETCBC dss 2.0.1),בי<ם> בית,3Q15 X 15,Puech 2015,ביצאית,p. 85,בימבית,ביצאית,OTHER,SHAPE,מ→צ;ב→א,,,,,,,
+V0525,X,15,0-2,given,RJ,Milik 1962,בית חמים,pp. 270–271,Puech 2006,יציאת המים,,ביתחמימ,יציאתהמימ,SHAPE,SHAPE,ב→צ;ח→ה,ב–צ;ה–ח,יא,,,ב–צ@X 15 w0;ה–ח@X 15 w2,,rj:e49-outlet
+V0526,X,15,2,given,AP,Abegg (ETCBC dss 2.0.1),חמים,3Q15 X 15,Puech 2015,המימ,p. 85,חמימ,המימ,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@X 15 w2,,
+V0527,X,15,2,given,PN,Lefkovits 2000,ḥmym,via Puech 2015 p. 91 n. 405,Puech 2015,hmym,p. 85; p. 91,חמימ,המימ,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@X 15 w2,,
+V0528,X,15,2,given,PN,Milik 1962,ḥmym,via Puech 2015 p. 91,Puech 2015,hmym,p. 85; p. 91,חמימ,המימ,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@X 15 w2,,Puech: undifferentiated ḥet/he
+V0529,X,15,2,given,PN,Schiffman 2002,ḥmym,via Puech 2015 p. 91 n. 405,Puech 2015,hmym,p. 85; p. 91,חמימ,המימ,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@X 15 w2,,
+V0530,X,15,3-4-5,given,AP,Abegg (ETCBC dss 2.0.1),של רחיל תחת,3Q15 X 15,Puech 2015,[[של]]שלר(ו)ח ולתחת,p. 85,שלרחילתחת,שלשלרוחולתחת,OTHER,MATRES,י→ו,,שלו,,,,,
+V0531,X,16,0,given,AP,Abegg (ETCBC dss 2.0.1),השקות,3Q15 X 16,Puech 2015,השקת,p. 85,השקות,השקת,MATRES,MATRES,,,,ו,,,,
+V0532,X,17,0-1,given,AP,Abegg (ETCBC dss 2.0.1),[בברכא] [העליונ]ה,3Q15 X 17,Puech 2015,בגנת צדוק,p. 85,בברכאהעליונה,בגנתצדוק,RESTORATION,RESTORATION,א→ג;ה→נ;ע→ת;ל→צ;י→ד;ה→ק,,,ברכנ,,,,
+V0533,X,17,2-3,given,AP,Abegg (ETCBC dss 2.0.1),ב ארבעת,3Q15 X 17,Puech 2015,בארבעת,p. 85,בארבעת,בארבעת,DIVISION,DIVISION,,,,,,,,
+V0534,XI,1,0-1,given,PN,García Martínez–Tigchelaar 1997,mqṣwʿwtyhm,via Puech 2015 p. 94 n. 416,Puech 2015,mqṣwʿwt zhb,p. 93; pp. 94–95,מקצועותיהמ,מקצועותזהב,OTHER,OTHER,י→ז;מ→ב,,,,,,,[emended] Milik's addenda: though physically a bet
+V0535,XI,1,0-2,given,PN,Allegro 1960,mqṣwʿwtyh bkly,via Puech 2015 pp. 94–95,Puech 2015,mqṣwʿwt zhb kly,p. 93; pp. 94–95,מקצועותיהבכלי,מקצועותזהבכלי,SHAPE,SHAPE,י→ז,ז–י,,,,ז–י@XI 1 w0,,Puech: zayin written like waw and vice versa
+V0536,XI,1,0-2,given,PN,Lefkovits 2000,mqṣwʿwtyh bkly,via Puech 2015 p. 95,Puech 2015,mqṣwʿwt zhb kly,p. 93; pp. 94–95,מקצועותיהבכלי,מקצועותזהבכלי,SHAPE,SHAPE,י→ז,ז–י,,,,ז–י@XI 1 w0,,follows Allegro
+V0537,XI,1,1,given,PN,Wolters 1992,whb,via Puech 2015 p. 95 n. 417,Puech 2015,zhb,p. 93; p. 95,והב,זהב,SHAPE,SHAPE,ו→ז,ו–ז,,,,ו–ז@XI 1 w1,,
+V0538,XI,1,4,given,AP,Abegg (ETCBC dss 2.0.1),כתבן,3Q15 XI 1,Puech 2015,בתכן,p. 93,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 1 w4;ב–כ@XI 1 w4,,
+V0539,XI,1,4,given,PN,García Martínez–Tigchelaar 1997,ktbn,via Puech 2015 p. 95 n. 418,Puech 2015,btkn,p. 93; p. 95,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 1 w4;ב–כ@XI 1 w4,,
+V0540,XI,1,4,given,PN,McCarter 1994,ktbn,via Puech 2015 p. 95 n. 418,Puech 2015,btkn,p. 93; p. 95,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 1 w4;ב–כ@XI 1 w4,,
+V0541,XI,1,4,given,PN,Muchowski 1993,ktbn,via Puech 2015 p. 95 n. 418,Puech 2015,btkn,p. 93; p. 95,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 1 w4;ב–כ@XI 1 w4,,
+V0542,XI,1,4,given,PN,Wolters 1992,ktbn,via Puech 2015 p. 95 n. 418,Puech 2015,btkn,p. 93; p. 95,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 1 w4;ב–כ@XI 1 w4,,
+V0543,XI,2,3,given,AP,Abegg (ETCBC dss 2.0.1),הדרומית,3Q15 XI 2,Puech 2015,הדו(ר)ומית,p. 93,הדרומית,הדורומית,MATRES,SHAPE,,,ו,,,,,
+V0544,XI,4,0,given,AP,Abegg (ETCBC dss 2.0.1),כלי,3Q15 XI 4,Puech 2015,כלר(י),p. 93,כלי,כלרי,OTHER,SHAPE,,,ר,,,,,
+V0545,XI,4,1-2,given,AP,Abegg (ETCBC dss 2.0.1),דמע [[ע]]סרה,3Q15 XI 4,Puech 2015,דמע סוח,p. 93,דמעעסרה,דמעסוח,SHAPE,SHAPE,ר→ו;ה→ח,ו–ר;ה–ח,,ע,,ו–ר@XI 4 w2;ה–ח@XI 4 w2,,
+V0546,XI,4,2,given,PN,Lefkovits 2000,swt,via Puech 2015 p. 97 n. 428,Puech 2015,swḥ,p. 93; p. 97,סות,סוח,SHAPE,SHAPE,ת→ח,ח–ת,,,,ח–ת@XI 4 w2,,Puech: first example of ḥet/he read as taw
+V0547,XI,4,2,given,PN,Milik 1962,syḥ,via Puech 2015 p. 96,Puech 2015,swḥ,p. 93; p. 96,סיח,סוח,MATRES,MATRES,י→ו,,,,,,ו–י@XI 4 w2,
+V0548,XI,4,3-4,given,AP,Abegg (ETCBC dss 2.0.1),דמע [[ע]]סרה,3Q15 XI 4,Puech 2015,דמע סנה,p. 93,דמעעסרה,דמעסנה,SHAPE,SHAPE,ר→נ,נ–ר,,ע,,נ–ר@XI 4 w4,,
+V0549,XI,4,5,given,AP,Abegg (ETCBC dss 2.0.1),וכתבן,3Q15 XI 4,Puech 2015,בתכן,p. 93,וכתבנ,בתכנ,OTHER,OTHER,כ→ב;ב→כ,,,ו,yes,,,
+V0550,XI,4,5,given,PN,Lefkovits 2000,wtkn,via Puech 2015 p. 98 n. 430,Puech 2015,btkn,p. 93; p. 98,ותכנ,בתכנ,SHAPE,SHAPE,ו→ב,ב–ו,,,,ב–ו@XI 4 w5,,
+V0551,XI,4,5,given,PN,Milik 1962,wtkn,via Puech 2015 p. 98,Puech 2015,btkn,p. 93; p. 98,ותכנ,בתכנ,SHAPE,SHAPE,ו→ב,ב–ו,,,,ב–ו@XI 4 w5,,Puech: a cursive bet
+V0552,XI,5,0,given,AP,Abegg (ETCBC dss 2.0.1),בהכסה,3Q15 XI 5,Puech 2015,בהכסח,p. 93,בהכסה,בהכסח,SHAPE,SHAPE,ה→ח,ה–ח,,,,ה–ח@XI 5 w0,,
+V0553,XI,5,0,given,PN,García Martínez 1994,bhbsh,via Puech 2015 p. 98 n. 431,Puech 2015,bhksḥ,p. 93; p. 98,בהבסה,בהכסח,SHAPE,SHAPE,ב→כ;ה→ח,ב–כ;ה–ח,,,,ב–כ@XI 5 w0;ה–ח@XI 5 w0,,
+V0554,XI,5,0,given,PN,García Martínez–Tigchelaar 1997,bhksh,via Puech 2015 p. 98 n. 432,Puech 2015,bhksḥ,p. 93; p. 98,בהכסה,בהכסח,SHAPE,SHAPE,ה→ח,ה–ח,,,,ה–ח@XI 5 w0,,
+V0555,XI,5,0,given,PN,Lefkovits 2000,btbst,via Puech 2015 p. 98 n. 432,Puech 2015,bhksḥ,p. 93; p. 98,בתבסת,בהכסח,OTHER,OTHER,ת→ה;ב→כ;ת→ח,,,,,,,Puech: he/taw confusion not attested
+V0556,XI,5,0,given,PN,Luria 1963,bḥbsh,via Puech 2015 p. 98 n. 432,Puech 2015,bhksḥ,p. 93; p. 98,בחבסה,בהכסח,OTHER,OTHER,ח→ה;ב→כ;ה→ח,,,,yes,,,
+V0557,XI,5,0,given,PN,Milik 1962,bhbsh,via Puech 2015 p. 98,Puech 2015,bhksḥ,p. 93; p. 98,בהבסה,בהכסח,SHAPE,SHAPE,ב→כ;ה→ח,ב–כ;ה–ח,,,,ב–כ@XI 5 w0;ה–ח@XI 5 w0,,
+V0558,XI,5,0,given,PN,Muchowski 1993,bhbst,via Puech 2015 p. 98 n. 432,Puech 2015,bhksḥ,p. 93; p. 98,בהבסת,בהכסח,SHAPE,SHAPE,ב→כ;ת→ח,ב–כ;ח–ת,,,,ב–כ@XI 5 w0;ח–ת@XI 5 w0,,
+V0559,XI,5,0,given,PN,Pixner 1983,bhbsh,via Puech 2015 p. 98 n. 431,Puech 2015,bhksḥ,p. 93; p. 98,בהבסה,בהכסח,SHAPE,SHAPE,ב→כ;ה→ח,ב–כ;ה–ח,,,,ב–כ@XI 5 w0;ה–ח@XI 5 w0,,
+V0560,XI,5,0,given,PN,Wolters 1992,bhksh,via Puech 2015 p. 98 n. 432,Puech 2015,bhksḥ,p. 93; p. 98,בהכסה,בהכסח,SHAPE,SHAPE,ה→ח,ה–ח,,,,ה–ח@XI 5 w0,,
+V0561,XI,5,0,given,RJ,Lefkovits 2000,תבסת,,Puech 2015,הכסח,p. 98,תבסת,הכסח,OTHER,OTHER,ת→ה;ב→כ;ת→ח,,,,,,,rj:e52-first-word
+V0562,XI,5,0,given,RJ,Milik 1962,הבסה,,Puech 2015,הכסח,p. 98,הבסה,הכסח,SHAPE,SHAPE,ב→כ;ה→ח,ב–כ;ה–ח,,,,ב–כ@XI 5 w0;ה–ח@XI 5 w0,,rj:e52-first-word
+V0563,XI,6,4,given,PN,Lefkovits 2000,hmsbʾ,via Puech 2015 p. 98 n. 435,Puech 2015,hmsmʾ,p. 93; p. 98,המסבא,המסמא,SHAPE,SHAPE,ב→מ,ב–מ,,,,ב–מ@XI 6 w4,,Puech: no other example of mem for bet
+V0564,XI,7,1-2,given,AP,Abegg (ETCBC dss 2.0.1),שבשול[[יה]] זהב,3Q15 XI 7,Puech 2015,שבשולו הו,p. 93,שבשוליהזהב,שבשולוהו,OTHER,SHAPE,ז→ו;ב→ו,,,יה,,,,
+V0565,XI,7,1-2,given,PN,Allegro 1960,šbšwlyhy,via Puech 2015 p. 99,Puech 2015,šbšwlw hw,p. 93; p. 99,שבשוליהי,שבשולוהו,MATRES,MATRES,י→ו;י→ו,,,,,,ו–י@XI 7 w1;ו–י@XI 7 w2,
+V0566,XI,7,1-2,given,PN,García Martínez–Tigchelaar 1997,šbšylwḥw,via Puech 2015 p. 98 n. 436,Puech 2015,šbšwlw hw,p. 93; pp. 98–99,שבשילוחו,שבשולוהו,SHAPE,SHAPE,י→ו;ח→ה,ה–ח,,,,ה–ח@XI 7 w2,ו–י@XI 7 w1,
+V0567,XI,7,1-2,given,PN,Milik 1962,šbšylwḥw,via Puech 2015 p. 98,Puech 2015,šbšwlw hw,p. 93; pp. 98–99,שבשילוחו,שבשולוהו,SHAPE,SHAPE,י→ו;ח→ה,ה–ח,,,,ה–ח@XI 7 w2,ו–י@XI 7 w1,
+V0568,XI,7,1-2,given,PN,Muchowski 1993,šbšylwḥw,via Puech 2015 p. 98 n. 436,Puech 2015,šbšwlw hw,p. 93; pp. 98–99,שבשילוחו,שבשולוהו,SHAPE,SHAPE,י→ו;ח→ה,ה–ח,,,,ה–ח@XI 7 w2,ו–י@XI 7 w1,
+V0569,XI,7,1-2,given,PN,Pixner 1983,šbšylwḥw,via Puech 2015 p. 98 n. 436,Puech 2015,šbšwlw hw,p. 93; pp. 98–99,שבשילוחו,שבשולוהו,SHAPE,SHAPE,י→ו;ח→ה,ה–ח,,,,ה–ח@XI 7 w2,ו–י@XI 7 w1,
+V0570,XI,7,1-2,given,PN,Wolters 1992,šbšylwḥw,via Puech 2015 p. 98 n. 436,Puech 2015,šbšwlw hw,p. 93; pp. 98–99,שבשילוחו,שבשולוהו,SHAPE,SHAPE,י→ו;ח→ה,ה–ח,,,,ה–ח@XI 7 w2,ו–י@XI 7 w1,
+V0571,XI,8,2,given,AP,Abegg (ETCBC dss 2.0.1),הסכין,3Q15 XI 8,Puech 2015,הסבין,p. 93,הסכינ,הסבינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@XI 8 w2,,bracket at a line edge (right-to-left extract)
+V0572,XI,8,2,given,PN,Allegro 1960,hspyn,via Puech 2015 p. 99 n. 439,Puech 2015,hsbyn,p. 93; p. 99,הספינ,הסבינ,SHAPE,SHAPE,פ→ב,ב–פ,,,,ב–פ@XI 8 w2,,Puech: certainly not pe
+V0573,XI,8,2,given,PN,Beyer 1994,hskyn,via Puech 2015 p. 99,Puech 2015,hsbyn,p. 93; p. 99,הסכינ,הסבינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@XI 8 w2,,Puech: bet just as easily as kaf
+V0574,XI,8,2,given,PN,García Martínez–Tigchelaar 1997,hskyn,via Puech 2015 p. 99 n. 441,Puech 2015,hsbyn,p. 93; p. 99,הסכינ,הסבינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@XI 8 w2,,
+V0575,XI,8,2,given,PN,Lefkovits 2000,hspyn,via Puech 2015 p. 99 n. 439,Puech 2015,hsbyn,p. 93; p. 99,הספינ,הסבינ,SHAPE,SHAPE,פ→ב,ב–פ,,,,ב–פ@XI 8 w2,,
+V0576,XI,8,2,given,PN,Muchowski 1993,hsnyn,via Puech 2015 p. 99 n. 440,Puech 2015,hsbyn,p. 93; p. 99,הסנינ,הסבינ,SHAPE,SHAPE,נ→ב,ב–נ,,,,ב–נ@XI 8 w2,,
+V0577,XI,8,2,given,PN,Wolters 1992,hskyn,via Puech 2015 p. 99 n. 441,Puech 2015,hsbyn,p. 93; p. 99,הסכינ,הסבינ,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@XI 8 w2,,
+V0578,XI,9,2,given,RJ,Milik 1962,העב֯ט,,Puech 2006,העמ,,העבט,העמ,SHAPE,SHAPE,ט→מ,ט–מ,,ב,,ט–מ@XI 9 w2,,rj:e54-whose-tomb
+V0579,XI,9,2-4,given,PN,García Martínez–Tigchelaar 1997,hʿm ṭhwrtw,via Puech 2015 p. 100 n. 445,Puech 2015,hʿm ṭḥ yrḥw,p. 93; pp. 99–101,העמטהורתו,העמטחירחו,SHAPE,SHAPE,ה→ח;ו→י;ת→ח,ה–ח;ח–ת,,,,ה–ח@XI 9 w2;ח–ת@XI 9 w2,ו–י@XI 9 w2,Puech: but ḥet/taw
+V0580,XI,9,2-4,given,PN,Lefkovits 2000,hʿbṭ hyrḥy,via Puech 2015 p. 100 n. 443,Puech 2015,hʿm ṭḥ yrḥw,p. 93; pp. 99–101,העבטהירחי,העמטחירחו,SHAPE,SHAPE,ב→מ;ה→ח;י→ו,ב–מ;ה–ח,,,,ב–מ@XI 9 w2;ה–ח@XI 9 w2,ו–י@XI 9 w2,
+V0581,XI,9,2-4,given,PN,Luria 1963,hʿm ṭhwr hw,via Puech 2015 p. 100 n. 445,Puech 2015,hʿm ṭḥ yrḥw,p. 93; pp. 99–101,העמטהורהו,העמטחירחו,SHAPE,SHAPE,ה→ח;ו→י;ה→ח,ה–ח;ה–ח,,,,ה–ח@XI 9 w2;ה–ח@XI 9 w2,ו–י@XI 9 w2,
+V0582,XI,9,2-4,given,PN,Milik 1962,hʿbṭ hyrḥy,via Puech 2015 p. 100,Puech 2015,hʿm ṭḥ yrḥw,p. 93; pp. 99–101,העבטהירחי,העמטחירחו,SHAPE,SHAPE,ב→מ;ה→ח;י→ו,ב–מ;ה–ח,,,,ב–מ@XI 9 w2;ה–ח@XI 9 w2,ו–י@XI 9 w2,Puech's physical reading; Puech: the bet is indisputably a mem
+V0583,XI,9,2-4,given,PN,Muchowski 1993,hʿmṭ hyrḥy,via Puech 2015 p. 100 n. 445,Puech 2015,hʿm ṭḥ yrḥw,p. 93; pp. 99–101,העמטהירחי,העמטחירחו,SHAPE,SHAPE,ה→ח;י→ו,ה–ח,,,,ה–ח@XI 9 w2,ו–י@XI 9 w2,
+V0584,XI,9,2-4,given,PN,Schiffman 2002,hʿbṭ hyrḥy,via Puech 2015 p. 100 n. 443,Puech 2015,hʿm ṭḥ yrḥw,p. 93; pp. 99–101,העבטהירחי,העמטחירחו,SHAPE,SHAPE,ב→מ;ה→ח;י→ו,ב–מ;ה–ח,,,,ב–מ@XI 9 w2;ה–ח@XI 9 w2,ו–י@XI 9 w2,
+V0585,XI,9,3,given,RJ,Milik 1962,הירחי,,Puech 2006,ירחו,,הירחי,ירחו,OTHER,OTHER,י→ו,,,ה,,,,rj:e54-jericho-or-pure
+V0586,XI,9,3-4,given,AP,Abegg (ETCBC dss 2.0.1),טהור הו,3Q15 XI 9,Puech 2015,טה(ור) ירחו,p. 93,טהורהו,טהורירחו,OTHER,SHAPE,ה→ח,,רי,,,,,override: Puech's second alternative
+V0587,XI,9,3-4,given,AP,Abegg (ETCBC dss 2.0.1),טהור הו,3Q15 XI 9,Puech 2015,[[ש]]טח ירחו,p. 93,טהורהו,שטחירחו,OTHER,SHAPE,ה→ח;ו→י;ה→ח,,ש,,,,,override: Puech prints [[ש]]טח/טה(ור)(?); first alternative
+V0588,XI,9,3-4,given,RJ,Wolters 1994,thwrty bw,pp. 292–295,Puech 2006,ירחו,,תהורתיבו,ירחו,OTHER,OTHER,ו→י;ב→ח,,,תהתי,,,,rj:e54-jericho-or-pure
+V0589,XI,10,3,given,PN,Allegro 1960,ʾw,via Puech 2015 p. 102 n. 450,Puech 2015,ʾ[[r]]z,p. 93; pp. 101–102,או,ארז,OTHER,SHAPE,ו→ז,,ר,,,,,
+V0590,XI,10,3,given,PN,Lefkovits 2000,ʾw,via Puech 2015 p. 102 n. 450,Puech 2015,ʾ[[r]]z,p. 93; pp. 101–102,או,ארז,OTHER,SHAPE,ו→ז,,ר,,,,,
+V0591,XI,10,3,given,PN,Luria 1963,ʾw,via Puech 2015 p. 102 n. 450,Puech 2015,ʾ[[r]]z,p. 93; pp. 101–102,או,ארז,OTHER,SHAPE,ו→ז,,ר,,,,,
+V0592,XI,10,3-4,given,AP,Abegg (ETCBC dss 2.0.1),א{ר}רב[[ע]] עסרה,3Q15 XI 10,Puech 2015,אר דמע סוח,p. 93,אררבעעסרה,ארדמעסוח,OTHER,SHAPE,ב→ד;ע→מ;ר→ו;ה→ח,,,ר,,,,override: Puech's second alternative
+V0593,XI,10,3-4,given,AP,Abegg (ETCBC dss 2.0.1),א{ר}רב[[ע]] עסרה,3Q15 XI 10,Puech 2015,א[[ר]]ז דמע סוח,p. 93,אררבעעסרה,ארזדמעסוח,OTHER,OTHER,ר→ז;ב→ד;ע→מ;ר→ו;ה→ח,,,,,,,override: Puech prints א[[ר]]ז/אר(?); first alternative
+V0594,XI,10,,unknown,PN,Allegro 1960,syḥ,via Puech 2015 p. 101,Puech 2015,swḥ,p. 93; p. 101,סיח,סוח,MATRES,MATRES,י→ו,,,,,,ו–י@XI 10 w?סוח,
+V0595,XI,10,,unknown,PN,Lefkovits 2000,swt,via Puech 2015 p. 102 n. 450,Puech 2015,swḥ,p. 93; p. 102,סות,סוח,SHAPE,SHAPE,ת→ח,ח–ת,,,,ח–ת@XI 10 w?סוח,,Puech: correcting ḥet to taw
+V0596,XI,11,0,given,AP,Abegg (ETCBC dss 2.0.1),כתבן,3Q15 XI 11,Puech 2015,בתכן,p. 93,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 11 w0;ב–כ@XI 11 w0,,
+V0597,XI,11,0,given,PN,García Martínez–Tigchelaar 1997,ktbn,via Puech 2015 p. 102 n. 452,Puech 2015,btkn,p. 93; p. 102,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 11 w0;ב–כ@XI 11 w0,,
+V0598,XI,11,0,given,PN,Muchowski 1993,ktbn,via Puech 2015 p. 102 n. 452,Puech 2015,btkn,p. 93; p. 102,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 11 w0;ב–כ@XI 11 w0,,
+V0599,XI,11,0,given,PN,Wolters 1992,ktbn,via Puech 2015 p. 102 n. 452,Puech 2015,btkn,p. 93; p. 102,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 11 w0;ב–כ@XI 11 w0,,
+V0600,XI,12,0-1,given,RJ,Milik 1962,בית אשדתין,pp. 271–272,Puech 2006,בית האשוחין,,ביתאשדתינ,ביתהאשוחינ,SHAPE,SHAPE,ד→ו;ת→ח,ד–ו;ח–ת,ה,,,ד–ו@XI 12 w1;ח–ת@XI 12 w1,,rj:e55-bethesda
+V0601,XI,12,1,given,AP,Abegg (ETCBC dss 2.0.1),אאשוחין,3Q15 XI 12,Puech 2015,אאשר(ו)חין,p. 93,אאשוחינ,אאשרוחינ,OTHER,SHAPE,,,ר,,,,,override: Puech prints א/ה; alef alternative
+V0602,XI,12,1,given,AP,Abegg (ETCBC dss 2.0.1),אאשוחין,3Q15 XI 12,Puech 2015,האשר(ו)חין,p. 93,אאשוחינ,האשרוחינ,SHAPE,SHAPE,א→ה,א–ה,ר,,,א–ה@XI 12 w1,,override: Puech prints א/ה; he alternative
+V0603,XI,12,1,given,PN,García Martínez–Tigchelaar 1997,{ʾ}ʾšdtyn,via Puech 2015 p. 103 n. 453,Puech 2015,ʾʾšr(w)ḥyn,p. 93; p. 103,אאשדתינ,אאשרוחינ,OTHER,SHAPE,ד→ו;ת→ח,,ר,,,,,
+V0604,XI,12,1,given,PN,Milik 1962,{ʾ}ʾšdtyn,via Puech 2015 p. 103,Puech 2015,ʾʾšr(w)ḥyn,p. 93; p. 103,אאשדתינ,אאשרוחינ,OTHER,SHAPE,ד→ו;ת→ח,,ר,,,,,Puech prints ʾ/h for the first letter; Puech: cursive waw shaped like reš; not a dalet
+V0605,XI,12,1,given,PN,Muchowski 1993,{ʾ}ʾšdtyn,via Puech 2015 p. 103 n. 453,Puech 2015,ʾʾšr(w)ḥyn,p. 93; p. 103,אאשדתינ,אאשרוחינ,OTHER,SHAPE,ד→ו;ת→ח,,ר,,,,,
+V0606,XI,12,1,given,PN,Pixner 1983,{ʾ}ʾšdtyn,via Puech 2015 p. 103 n. 453,Puech 2015,ʾʾšr(w)ḥyn,p. 93; p. 103,אאשדתינ,אאשרוחינ,OTHER,SHAPE,ד→ו;ת→ח,,ר,,,,,
+V0607,XI,12,1,given,PN,Wolters 1992,{ʾ}ʾšdtyn,via Puech 2015 p. 103 n. 453,Puech 2015,ʾʾšr(w)ḥyn,p. 93; p. 103,אאשדתינ,אאשרוחינ,OTHER,SHAPE,ד→ו;ת→ח,,ר,,,,,
+V0608,XI,12,2,given,PN,García Martínez–Tigchelaar 1997,bʾšyḥ,via Puech 2015 p. 103 n. 455,Puech 2015,bʾšwḥ,p. 93; p. 103,באשיח,באשוח,MATRES,MATRES,י→ו,,,,,,ו–י@XI 12 w2,
+V0609,XI,12,2,given,PN,Milik 1962,bʾšyḥ,via Puech 2015 p. 103 n. 455,Puech 2015,bʾšwḥ,p. 93; p. 103,באשיח,באשוח,MATRES,MATRES,י→ו,,,,,,ו–י@XI 12 w2,
+V0610,XI,12,2,given,PN,Muchowski 1993,bʾšyḥ,via Puech 2015 p. 103 n. 455,Puech 2015,bʾšwḥ,p. 93; p. 103,באשיח,באשוח,MATRES,MATRES,י→ו,,,,,,ו–י@XI 12 w2,
+V0611,XI,12,2,given,PN,Pixner 1983,bʾšyḥ,via Puech 2015 p. 103 n. 455,Puech 2015,bʾšwḥ,p. 93; p. 103,באשיח,באשוח,MATRES,MATRES,י→ו,,,,,,ו–י@XI 12 w2,
+V0612,XI,12,2,given,PN,Wolters 1992,bʾšyḥ,via Puech 2015 p. 103 n. 455,Puech 2015,bʾšwḥ,p. 93; p. 103,באשיח,באשוח,MATRES,MATRES,י→ו,,,,,,ו–י@XI 12 w2,
+V0613,XI,13,0,given,AP,Abegg (ETCBC dss 2.0.1),בביאתך,3Q15 XI 13,Puech 2015,בבואתך,p. 93,בביאתכ,בבואתכ,MATRES,MATRES,י→ו,,,,,,ו–י@XI 13 w0,
+V0614,XI,13,1,given,AP,Abegg (ETCBC dss 2.0.1),לימינ{מ}ית,3Q15 XI 13,Puech 2015,לימומית,p. 93,לימינמית,לימומית,SHAPE,SHAPE,נ→ו,ו–נ,,י,,ו–נ@XI 13 w1,,
+V0615,XI,13,1,given,PN,Wolters 1992,lw mymwt,via Puech 2015 p. 103 n. 456,Puech 2015,lymwmyt,p. 93; p. 103,לומימות,לימומית,MATRES,MATRES,ו→י;י→ו;ו→י,,,,yes,,ו–י@XI 13 w1;ו–י@XI 13 w1;ו–י@XI 13 w1,
+V0616,XI,13,1,given,PN+RJ,Allegro 1960,lw mymwt,via Puech 2015 p. 103 n. 456,Puech 2015,lymwmyt,p. 93; p. 103,לומימות,לימומית,MATRES,MATRES,ו→י;י→ו;ו→י,,,,yes,,ו–י@XI 13 w1;ו–י@XI 13 w1;ו–י@XI 13 w1,rj:e55-smallest-basin
+V0617,XI,13,1,given,PN+RJ,Luria 1963,lw mymwt,via Puech 2015 p. 103 n. 456,Puech 2015,lymwmyt,p. 93; p. 103,לומימות,לימומית,MATRES,MATRES,ו→י;י→ו;ו→י,,,,yes,,ו–י@XI 13 w1;ו–י@XI 13 w1;ו–י@XI 13 w1,rj:e55-smallest-basin
+V0618,XI,13,1,given,RJ,Wolters 1996,lw mymwt,,Puech 2015,לימומית,pp. 94 and 103,לומימות,לימומית,MATRES,MATRES,ו→י;י→ו;ו→י,,,,yes,,ו–י@XI 13 w1;ו–י@XI 13 w1;ו–י@XI 13 w1,rj:e55-smallest-basin
+V0619,XI,14,3,matched,PN,Allegro 1960,lʾḥ,via Puech 2015 p. 104,Puech 2015,lʾh,p. 93; p. 104,לאח,לאה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@XI 14 w3,,Puech's letters outside his [[ʾ]]; Puech: many hes engraved like this
+V0620,XI,14,3,matched,PN,Lefkovits 2000,lʾḥ,via Puech 2015 p. 104 n. 460,Puech 2015,lʾh,p. 93; p. 104,לאח,לאה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@XI 14 w3,,
+V0621,XI,14,3,matched,PN,Luria 1963,lʾḥ,via Puech 2015 p. 104,Puech 2015,lʾh,p. 93; p. 104,לאח,לאה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@XI 14 w3,,
+V0622,XI,14,3,matched,PN,Milik 1962,lʾḥ,via Puech 2015 p. 104 n. 460,Puech 2015,lʾh,p. 93; p. 104,לאח,לאה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@XI 14 w3,,DJDJ reading notes
+V0623,XI,14,3,matched,PN,Pixner 1983,lʾḥ,via Puech 2015 p. 104 n. 460,Puech 2015,lʾh,p. 93; p. 104,לאח,לאה,SHAPE,SHAPE,ח→ה,ה–ח,,,,ה–ח@XI 14 w3,,
+V0624,XI,14,3-5,given,AP,Abegg (ETCBC dss 2.0.1),[[ל]]אחד {מ} עס{ו}רא,3Q15 XI 14,Puech 2015,[[א]]לאה דמע סירא,p. 93,לאחדמעסורא,אלאהדמעסירא,OTHER,SHAPE,ח→ה;ו→י,,א,,,,,override: bracket order from the extract
+V0625,XI,15,0,given,AP,Abegg (ETCBC dss 2.0.1),כתבן,3Q15 XI 15,Puech 2015,בתכן,p. 93,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 15 w0;ב–כ@XI 15 w0,,
+V0626,XI,15,0,given,PN,García Martínez–Tigchelaar 1997,ktbn,via Puech 2015 p. 105 n. 465,Puech 2015,btkn,p. 93; p. 105,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 15 w0;ב–כ@XI 15 w0,,
+V0627,XI,15,0,given,PN,Muchowski 1993,ktbn,via Puech 2015 p. 105 n. 465,Puech 2015,btkn,p. 93; p. 105,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 15 w0;ב–כ@XI 15 w0,,
+V0628,XI,15,0,given,PN,Wolters 1992,ktbn,via Puech 2015 p. 105 n. 465,Puech 2015,btkn,p. 93; p. 105,כתבנ,בתכנ,SHAPE,SHAPE,כ→ב;ב→כ,ב–כ;ב–כ,,,yes,ב–כ@XI 15 w0;ב–כ@XI 15 w0,,
+V0629,XI,15,1,given,AP,Abegg (ETCBC dss 2.0.1),אצלם,3Q15 XI 15,Puech 2015,אצלן,p. 93,אצלמ,אצלנ,SHAPE,SHAPE,מ→נ,מ–נ,,,,מ–נ@XI 15 w1,,override: dagesh from the extract removed
+V0630,XI,15,1,given,PN,Milik 1962,ʾṣlm,via Puech 2015 p. 105 n. 465,Puech 2015,ʾṣln,p. 93; p. 105,אצלמ,אצלנ,SHAPE,SHAPE,מ→נ,מ–נ,,,,מ–נ@XI 15 w1,,Puech: DJDJ inadvertently transcribed ʾṣlm
+V0631,XI,16,0,given,PN,Allegro 1960,bmkʾ,via Puech 2015 p. 105,Puech 2015,bmbʾ,p. 93; p. 105,במכא,במבא,SHAPE,SHAPE,כ→ב,ב–כ,,,,ב–כ@XI 16 w0,,Puech: the kaf must certainly be ruled out
+V0632,XI,16,1,given,PN,Lefkovits 2000,dy,via Puech 2015 p. 105 n. 466,Puech 2015,rw,p. 93; p. 105,די,רו,OTHER,OTHER,ד→ר;י→ו,,,,,,,
+V0633,XI,16,1,given,PN,Milik 1962,dy,via Puech 2015 p. 105,Puech 2015,rw,p. 93; p. 105,די,רו,OTHER,OTHER,ד→ר;י→ו,,,,,,,preserved letters only; Puech: reš/dalet and yod/waw preserved
+V0634,XI,16,1,given,PN,Pixner 1983,dy,via Puech 2015 p. 105 n. 466,Puech 2015,rw,p. 93; p. 105,די,רו,OTHER,OTHER,ד→ר;י→ו,,,,,,,
+V0635,XI,16,1,given,PN,Puech 1997,rwḥ,via Puech 2015 p. 105 n. 468,Puech 2015,rwb,p. 93; p. 105,רוח,רוב,SHAPE,SHAPE,ח→ב,ב–ח,,,,ב–ח@XI 16 w1,,Puech revises his own 1997 reading
+V0636,XI,17,0,given,PN,Allegro 1960,ṭwp,via Puech 2015 p. 105 n. 470,Puech 2015,ṭyp,p. 93; p. 105,טופ,טיפ,MATRES,MATRES,ו→י,,,,,,ו–י@XI 17 w0,
+V0637,XI,17,0,given,PN,Lefkovits 2000,ṭwp,via Puech 2015 p. 105 n. 470,Puech 2015,ṭyp,p. 93; p. 105,טופ,טיפ,MATRES,MATRES,ו→י,,,,,,ו–י@XI 17 w0,
+V0638,XI,17,2,given,AP,Abegg (ETCBC dss 2.0.1),מ,3Q15 XI 17,Puech 2015,מ[ערה],p. 93,מ,מערה,RESTORATION,RESTORATION,,,ערה,,,,,override: bracket order from the extract
+V0639,XI,17,3-4,given,AP,Abegg (ETCBC dss 2.0.1),[כלין] [הכל],3Q15 XI 17,Puech 2015,כס[ף ככרין],p. 93,כלינהכל,כספככרינ,RESTORATION,RESTORATION,ל→פ;י→כ;נ→כ;ה→ר;כ→י;ל→נ,,ס,,yes,,,override: bracket order from the extract
+V0640,XII,1,7,matched,PN,Lefkovits 2000,hkrk,via Puech 2015 p. 107 n. 474,Puech 2015,hm[[ʿ]]rb,p. 106; p. 107,הכרכ,המערב,OTHER,SHAPE,כ→ע;כ→ב,,מ,,,,,Puech: kaf and mem are not confused
+V0641,XII,1,7,matched,PN,Schiffman 2002,hkrk,via Puech 2015 p. 107 n. 474,Puech 2015,hm[[ʿ]]rb,p. 106; p. 107,הכרכ,המערב,OTHER,SHAPE,כ→ע;כ→ב,,מ,,,,,
+V0642,XII,2,2,matched,PN,Allegro 1960,hšḥwryʾ,via Puech 2015 p. 107,Puech 2015,hšḥwrʾ,p. 106; p. 107,השחוריא,השחורא,MATRES,MATRES,,,,י,,,,
+V0643,XII,2,3,given,RJ,Milik 1962,בידן,,Puech 2006,כוזין,,בידנ,כוזינ,OTHER,OTHER,ב→ו;י→ז;ד→י,,כ,,,,,rj:e56-juglets
+V0644,XII,3,0,given,AP,Abegg (ETCBC dss 2.0.1),הבור,3Q15 XII 3,Puech 2015,הכוך,p. 106,הבור,הכוכ,SHAPE,SHAPE,ב→כ;ר→כ,ב–כ;כ–ר,,,,ב–כ@XII 3 w0;כ–ר@XII 3 w0,,
+V0645,XII,3,0,given,PN,Beyer 1994,hbwr,via Puech 2015 p. 107 n. 476,Puech 2015,hkwk,p. 106; pp. 107–108,הבור,הכוכ,OTHER,OTHER,ב→כ;ר→כ,,,,,,,[emended]
+V0646,XII,3,0,given,PN,Milik 1962,hbwr,via Puech 2015 p. 107,Puech 2015,hkwk,p. 106; pp. 107–108,הבור,הכוכ,OTHER,OTHER,ב→כ;ר→כ,,,,,,,[emended] Puech: needs the final kaf corrected to reš
+V0647,XII,3,0,given,PN,Muchowski 1993,hbwr,via Puech 2015 p. 107 n. 476,Puech 2015,hkwk,p. 106; pp. 107–108,הבור,הכוכ,OTHER,OTHER,ב→כ;ר→כ,,,,,,,[emended]
+V0648,XII,3,0,given,PN,Pixner 1983,hbwr,via Puech 2015 p. 107 n. 476,Puech 2015,hkwk,p. 106; pp. 107–108,הבור,הכוכ,OTHER,OTHER,ב→כ;ר→כ,,,,,,,[emended]
+V0649,XII,3,0,given,RJ,Milik 1962,בור,C64,Puech 2015,כוך,pp. 107 and 111 n. 501,בור,כוכ,OTHER,OTHER,ב→כ;ר→כ,,,,,,,rj:e56-niche-or-cistern
+V0650,XII,4,3,given,PN,Allegro 1960,hmʿltʾ,via Puech 2015 p. 108,Puech 2015,hmʿl{h}ʾ,p. 106; p. 108,המעלתא,המעלהא,OTHER,SHAPE,ת→ה,,,,,,,
+V0651,XII,4,5,given,AP,Abegg (ETCBC dss 2.0.1),השיח,3Q15 XII 4,Puech 2015,השוח[[ה]],p. 106,השיח,השוחה,OTHER,MATRES,י→ו,,ה,,,,,
+V0652,XII,4,5,given,PN,Allegro 1960,hšyḥ,via Puech 2015 p. 108,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השיח,השוחה,OTHER,MATRES,י→ו,,ה,,,,,Puech: the writing is certainly šyḥ
+V0653,XII,4,5,given,PN,Beyer 1994,hšyt,via Puech 2015 p. 108 n. 483,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השית,השוחה,OTHER,SHAPE,י→ח;ת→ה,,ו,,,,,
+V0654,XII,4,5,given,PN,García Martínez–Tigchelaar 1997,hšyt,via Puech 2015 p. 108 n. 483,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השית,השוחה,OTHER,SHAPE,י→ח;ת→ה,,ו,,,,,
+V0655,XII,4,5,given,PN,Luria 1963,hšyḥ,via Puech 2015 p. 108 n. 482,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השיח,השוחה,OTHER,MATRES,י→ו,,ה,,,,,
+V0656,XII,4,5,given,PN,Milik 1962,hšyt,via Puech 2015 p. 108 n. 483,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השית,השוחה,OTHER,SHAPE,י→ח;ת→ה,,ו,,,,,Puech: ḥet written for taw only once elsewhere (XI 15)
+V0657,XII,4,5,given,PN,Muchowski 1993,hšyt,via Puech 2015 p. 108 n. 483,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השית,השוחה,OTHER,SHAPE,י→ח;ת→ה,,ו,,,,,
+V0658,XII,4,5,given,PN,Pixner 1983,hšyt,via Puech 2015 p. 108 n. 483,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השית,השוחה,OTHER,SHAPE,י→ח;ת→ה,,ו,,,,,
+V0659,XII,4,5,given,PN,Puech 1997,hšyt,via Puech 2015 p. 108 n. 483,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השית,השוחה,OTHER,SHAPE,י→ח;ת→ה,,ו,,,,,Puech revises his own 1997 reading
+V0660,XII,4,5,given,PN,Wolters 1996,hšyt,via Puech 2015 p. 108 n. 483,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השית,השוחה,OTHER,SHAPE,י→ח;ת→ה,,ו,,,,,
+V0661,XII,4,5,given,PN+RJ,Lefkovits 2000,hšyt,via Puech 2015 p. 108 n. 483,Puech 2015,hšwḥ[[h]],p. 106; p. 108,השית,השוחה,OTHER,SHAPE,י→ח;ת→ה,,ו,,,,,rj:e57-upper-pit; article added to Puech's cited form
+V0662,XII,4,5,given,RJ,Allegro 1960,šyḥ,,Puech 2015,šwḥ(h),p. 108,שיח,שוחה,OTHER,MATRES,י→ו,,ה,,,,,rj:e57-upper-pit
+V0663,XII,4,5,given,RJ,Milik 1962,šyt,,Puech 2015,šwḥ(h),p. 108,שית,שוחה,OTHER,OTHER,י→ח;ת→ה,,ו,,,,,rj:e57-upper-pit
+V0664,XII,5,2,given,AP,Abegg (ETCBC dss 2.0.1),וכלכליה,3Q15 XII 5,Puech 2015,וכל כליה,p. 106,וכלכליה,וכלכליה,DIVISION,DIVISION,,,,,,,,

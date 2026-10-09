@@ -1,0 +1,1101 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "status": "Exploratory plan. It changes no registered result or counter, makes no identification claim and plans no travel. Every stop rule is PROPOSED; the project owner decides.",
+  "rating_scale_file": "rating_scale.json",
+  "rating_scale_sha256": "40ed58bef248e1bd71733e4785678854ede8c3795499c9c18b9e988f3d03014c",
+  "counters_at_writing": {
+    "source": "research/progress/outcome_ledger.json",
+    "independently_discriminated_identifications": 0,
+    "confirmed_deposit_locations": 0,
+    "whole_candidate_exclusions": 0,
+    "formal_assessments_audited": 3,
+    "formal_assessments_inconclusive": 3
+  },
+  "analogues": [
+    {
+      "id": "greyfriars-2012",
+      "label": "EVIDENCE",
+      "lesson": "Rate each objective before digging, so that expectations stay honest and the rating decides where to dig.",
+      "source": "University of Leicester, 'Where to dig' (https://le.ac.uk/richard-iii/discovery/where-to-dig), read 9 October 2026 through a web reader; a direct download returned HTTP 403, so no SHA-256 of the page is recorded. Five objectives, from 'a reasonable expectation' to 'not seriously considered possible'; about 17% of the precinct was accessible and about 1% could be dug. Buckley et al. 2013, Antiquity 87: 519-538 (doi:10.1017/S0003598X00049103), p. 521: finding the grave 'seemed improbable if not impossible'; PDF SHA-256 3d8c7e844c02c057d79da220d489f451aeede0a7cbb5d68bead2d10fc35e6cf8."
+    },
+    {
+      "id": "ephesus-wood",
+      "label": "EVIDENCE",
+      "lesson": "Produce intermediate results that justify the next grant.",
+      "source": "J. T. Wood 1877, Discoveries at Ephesus, Introduction pp. vii-viii (the Trustees wanted 'some substantial return'; the Odeum and Theatre came first; a fresh grant in 1867; the inscribed peribolus wall corner in 1869 released sufficient funds) and chapter VI summary p. 111 (Magnesian Gate, road to the temple, supplementary grant, peribolos wall). archive.org item discoveriesateph00wood, OCR text SHA-256 4b29539ae858dba930453e36b103d9cd27e491fd76487ba0ed6919c3aab29f87."
+    }
+  ],
+  "stages": [
+    {
+      "id": "S1",
+      "order": 1,
+      "name": "Reserved observation in hand",
+      "definition": "An outside observation that can decide a registered alternative arrives and passes the authentication or registration gate frozen before it was seen.",
+      "rating": "A",
+      "rating_evidence": [
+        {
+          "claim": "Three independent routes to an image of XII 10 at the 21/22 cut are open: USC masters (20 records), Manchester Museum and Joan Taylor (Allegro C.21-23), and the EDF copy and X-rays at the ÉBAF. Facsimile Editions declined.",
+          "source": "research/ACTIVE_TEST.md"
+        },
+        {
+          "claim": "The XII 10 reading protocol has a frozen authentication gate.",
+          "source": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md"
+        },
+        {
+          "claim": "The Mosaic Centre will scan Meinardus 1965-66 free of charge in mid-October; those pages are the stated reopen criterion of the closed St Andrew branch.",
+          "source": "research/ACTIVE_TEST.md"
+        },
+        {
+          "claim": "Pre-camp records north of Tell es-Sultan have a registration protocol with a withheld check point.",
+          "source": "research/assessments/kohlit_chain/registration_protocol.md"
+        }
+      ],
+      "pays_for": "Reading sessions under the frozen protocol, and a request for control frames from the same image series.",
+      "analogue": "Greyfriars objective 1, find the friary: 'a reasonable expectation'. Wood: the Odeum and Theatre gave the first return.",
+      "reached": false
+    },
+    {
+      "id": "S2",
+      "order": 2,
+      "name": "Disputed reading settled by an outside observation",
+      "definition": "That observation rejects, or supports relative to the registered alternatives, at least one registered reading under a frozen protocol (for example one of the XII 10 strings R1-R7).",
+      "rating": "B",
+      "rating_evidence": [
+        {
+          "claim": "A decisive XII 10 reading alone guarantees that the seven strings separate; bet against kaf, or the extra stroke, can each reject R4 without the cut letter.",
+          "source": "research/feature_workbench/decisions/README.md"
+        },
+        {
+          "claim": "The 0.15 mm saw cut cannot hide a whole yod or waw.",
+          "source": "research/agent_review_2026-10-07/followup/G_saw_gap_xii10.md"
+        },
+        {
+          "claim": "Against: from copy plates an AI reader scored 8 of 16 on bet/kaf and 7 of 16 on he/ḥet, which is chance; Lefkovits 2000 p. 78 calls many letters indistinguishable.",
+          "source": "research/text/letter_controls/PROTOCOL.md"
+        },
+        {
+          "claim": "Against: the protocol returns 'not identifiable' for disagreement, inadequate resolution or unresolved damage, and the earlier original-photo reading audit of entries 31, 40 and 49 ended that way.",
+          "source": "research/ACTIVE_TEST.md"
+        }
+      ],
+      "pays_for": "A narrower set of Koḥlit classes, so the next archive or library request goes to a record that can still separate the survivors.",
+      "analogue": "Wood read the Salutaris inscription in the theatre and found the Magnesian Gate from it. Greyfriars objective 2: 'a probability'.",
+      "reached": false
+    },
+    {
+      "id": "S3",
+      "order": 3,
+      "name": "One branch decided on measured ground",
+      "definition": "A frozen branch-level test of one relation or location instruction at one candidate, using a dated contact or a surveyed datum, ends 'supported relative to the registered alternatives' or 'rejected', not 'not identifiable'. A rejection is a conditional model exclusion, not a site rejection.",
+      "rating": "B",
+      "rating_evidence": [
+        {
+          "claim": "Precedent: two conditional model exclusions are registered, both at Siloam L103.",
+          "source": "research/progress/outcome_ledger.json"
+        },
+        {
+          "claim": "The Kenyon eastern section can exclude four quarry-pit Koḥlit classes; Kallai pp. 172-173 can exclude four; a dated IV/17 wall or mouth contact separates 12 of 15 entry 25 pairs.",
+          "source": "research/feature_workbench/decisions/README.md"
+        },
+        {
+          "claim": "Against: every queued record can return an inconclusive result, and the Kenyon plates and Kallai pages are neither requested nor obtained.",
+          "source": "research/feature_workbench/decisions/README.md"
+        },
+        {
+          "claim": "Against: the three formal assessments are all inconclusive, and every closed test ended 'not identifiable from available evidence'.",
+          "source": "research/PROGRESS_METRICS.md"
+        },
+        {
+          "claim": "Against: only 11 of 28 next chain links can contradict their model outright.",
+          "source": "research/logs/methods_round_2026-10-08.md"
+        }
+      ],
+      "pays_for": "The next link in that model's chain, and if the owner agrees, an archive order for the record that would decide the next relation.",
+      "analogue": "Wood followed the road from the Magnesian Gate. Greyfriars objective 3, locate the church: 'a possibility'.",
+      "reached": false
+    },
+    {
+      "id": "S4",
+      "order": 4,
+      "name": "One landmark independently discriminated",
+      "definition": "The ledger counter for independently discriminated identifications moves from 0 to 1: a source-supported reading, observed feature relations, the relevant phase and a justified datum distinguish the candidate from its controls, and a registered unseen prediction succeeds.",
+      "rating": "C",
+      "rating_evidence": [
+        {
+          "claim": "The counter is 0, and identification needs discrimination plus a registered unseen prediction.",
+          "source": "AGENTS.md"
+        },
+        {
+          "claim": "Rarity is not measurable: k = 0, f = 20, m = 313 of 333 after the source-2 addendum.",
+          "source": "research/PROGRESS_METRICS.md"
+        },
+        {
+          "claim": "Every FAIL in that count rests on a site-level absence covering at most about 1.1% of the 1 km northern sector; under scope rules f = 0 in every row.",
+          "source": "research/rarity/kohlit/observation_process/README.md"
+        },
+        {
+          "claim": "At best the queue narrows Koḥlit to one class, the Jericho historical basin with NS1 or D9; a roster is a selected set, so separating it identifies nothing.",
+          "source": "research/feature_workbench/decisions/README.md"
+        },
+        {
+          "claim": "The regional unexcavated-alternative inventory and search coverage are not audited.",
+          "source": "research/progress/outcome_ledger.json"
+        }
+      ],
+      "pays_for": "Only then a request for a field observation at the target, which the owner alone would decide.",
+      "analogue": "Wood's inscribed peribolus wall fixed the precinct. Greyfriars objective 4, locate the choir: 'an outside chance'.",
+      "reached": false
+    },
+    {
+      "id": "S5",
+      "order": 5,
+      "name": "Phase-to-instruction match at that landmark",
+      "definition": "At a discriminated landmark, the feature that the instruction names is dated to a phase when the instruction was usable; that phase's surface gives the datum, and the instruction's target volume is computed from it.",
+      "rating": "C",
+      "rating_evidence": [
+        {
+          "claim": "None of the four target-coverage records has a defined target geometry.",
+          "source": "research/progress/outcome_ledger.json"
+        },
+        {
+          "claim": "IV/17: 8 of 8 target branches are undeterminable without the L-656 file; Tell es-Sultan: 4 of 4 joins are undeterminable because entry 60 gives no distance.",
+          "source": "research/feature_workbench/coverage/README.md"
+        },
+        {
+          "claim": "An ancient threshold can make a target computable but separates no class.",
+          "source": "research/feature_workbench/decisions/README.md"
+        },
+        {
+          "claim": "R09, which asks for feature-level phase records, is still queued.",
+          "source": "research/OPEN_QUESTIONS.md"
+        }
+      ],
+      "pays_for": "A check of whether any recorded excavation reached that volume, using the six coverage gates.",
+      "analogue": "Greyfriars: within the choir, the grave position. Strictly harder than S4, so rated no higher.",
+      "reached": false
+    },
+    {
+      "id": "S6",
+      "order": 6,
+      "name": "Deposit location",
+      "definition": "A deposit location confirmed, or a negative excavation verified at a predicted target volume.",
+      "rating": "D",
+      "rating_evidence": [
+        {
+          "claim": "Confirmed deposit locations: 0; verified negative excavations at predicted targets: 0.",
+          "source": "research/PROGRESS_METRICS.md"
+        },
+        {
+          "claim": "A landmark match proves neither a deposit nor the whole account; a negative excavation needs target volume, phase, reach, disturbance and detection limits.",
+          "source": "AGENTS.md"
+        },
+        {
+          "claim": "The project plans no excavation, and the owner declined trip planning on 8 October (status note outside the repository; recorded in this folder's README).",
+          "source": "research/plan/README.md"
+        }
+      ],
+      "pays_for": "Nothing is planned beyond it.",
+      "analogue": "Greyfriars objective 5, the king: 'not seriously considered possible'.",
+      "reached": false
+    }
+  ],
+  "states": {
+    "waiting": "A request is pending; no sessions until the item arrives.",
+    "active": "Sessions can be spent now on an item in hand or open access.",
+    "park": "No sessions until the resume observation arrives.",
+    "run_once": "One frozen run, then the lane closes.",
+    "integrate": "A tool built this round; one integration session, then its stop rule applies."
+  },
+  "lanes": [
+    {
+      "id": "R01",
+      "kind": "backlog question",
+      "title": "Do Qumran's waterworks satisfy entries 20-23 together?",
+      "stage": "S3",
+      "state_now": "park",
+      "next_observation": "A field section or context record naming the L117 outlet, rim and step joint, the order of its parts and a dated contact. Reeder and Jol's 2002 aqueduct survey and GPR records are already requested.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The record shows a dated contact at the L117 joint, so the relation can be scored for one reading.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park R01 now; its L117 pass is already parked as inconclusive. If Reeder and Jol send nothing by 31 Dec 2026, it stays parked. The Peleg map and the JSP 18 pocket sheet stay parked at the owner's direction."
+      },
+      "resume_on": "A record naming the L117 joint with a dated contact.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md",
+        "research/ACTIVE_TEST.md"
+      ]
+    },
+    {
+      "id": "R02",
+      "kind": "backlog question",
+      "title": "What cave arrangement does entry 25 describe?",
+      "stage": "S3",
+      "state_now": "waiting",
+      "next_observation": "Dadon's IV/17 field file under permit L-656: north-mouth plan, threshold section and levels, basket registers 656.17 and 656.20, locus list. The pending IAA request concerns the cave survey, not this file.",
+      "cost": {
+        "sessions": 2,
+        "outreach_messages": 1,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The file holds a dated wall or mouth contact, or a threshold section with levels.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: If the IAA says the file has no threshold section, levels or dated contact, or nothing arrives by 31 Mar 2027, park the IV/17 branch. Park the Twin Cave branch now, until a cave-specific item under fonds 717 or another custody chain is named."
+      },
+      "resume_on": "The L-656 file, or a cave-specific Twin Cave record.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md",
+        "research/feature_workbench/decisions/README.md",
+        "research/feature_workbench/coverage/README.md"
+      ]
+    },
+    {
+      "id": "R03",
+      "kind": "backlog question",
+      "title": "Which Wadi Qelt wall and outlet could entry 32 describe?",
+      "stage": "S3",
+      "state_now": "park",
+      "next_observation": "An exact PEF item or a measured wall record with the outlet and a phase-linked section. The pef-finds tool may name one.",
+      "cost": {
+        "sessions": 0,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "An item gives a measured outlet-to-wall relation with a phase.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Keep R03 parked now. Patrich 1990 p. 208 n. 24 and the broad catalogue hunt stay parked."
+      },
+      "resume_on": "An exact PEF item or a measured wall record.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md"
+      ]
+    },
+    {
+      "id": "R04",
+      "kind": "backlog question",
+      "title": "Can entry 40 identify a particular tomb?",
+      "stage": "S3",
+      "state_now": "park",
+      "next_observation": "Site 143 p. 142/28*, HA 85 p. 31, HA 31/32 p. 13 and Jeremias 1958 p. 86, with the tomb plans and phase evidence. None is in the Drive index.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 4,
+        "money": "none"
+      },
+      "continue_if": "A tomb-specific plan gives an entrance direction and a dated water feature.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park R04 until one of the four items is in hand."
+      },
+      "resume_on": "Any of the four items.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md",
+        "research/sources/drive_index.md"
+      ]
+    },
+    {
+      "id": "R05",
+      "kind": "backlog question",
+      "title": "What was Gerizim locus P5178, and what does its coin date?",
+      "stage": "S3",
+      "state_now": "park",
+      "next_observation": "JSP 8 and JSP 20 plans, locus concordances, basket elevations and the P5178 deposit description. Neither is in the Drive index.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 2,
+        "money": "none"
+      },
+      "continue_if": "The records tie P5178 to the stair, pit or cistern with a stratigraphic date.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park R05 until JSP 8 or JSP 20 is in hand."
+      },
+      "resume_on": "JSP 8 or JSP 20.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md",
+        "research/sources/drive_index.md"
+      ]
+    },
+    {
+      "id": "R06",
+      "kind": "backlog question",
+      "title": "Does entry 49 name Siloam, and which installation fits?",
+      "stage": "S3",
+      "state_now": "waiting",
+      "next_observation": "Nahshon Szanton's section of the main-side L103 junction (requested 6 October).",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 1,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The section shows aperture, basin edge and floor in one phase.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: After one follow-up, park R06 if there is no reply by 31 Dec 2026. The main-pool test stays closed and reopens only on its stated criterion."
+      },
+      "resume_on": "The L103 junction section.",
+      "sources": [
+        "research/ACTIVE_TEST.md",
+        "research/OPEN_QUESTIONS.md"
+      ]
+    },
+    {
+      "id": "R07",
+      "kind": "backlog question",
+      "title": "Where were Koḥlit, Achor and Sekakah? (Achor and Sekakah here; Koḥlit is in AQ1-AQ3.)",
+      "stage": "S3",
+      "state_now": "park",
+      "next_observation": "Bar and Zertal, Manasseh Hill Country Survey V pp. 314-324 and 547-555 (the ʿAuja supply alternative), and dated sections for the Achor candidates. Volume V is not in the Drive index.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 1,
+        "money": "none"
+      },
+      "continue_if": "A source narrows or excludes a named Achor or Sekakah alternative with evidence independent of the Scroll.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park the Achor and Sekakah parts until Manasseh V is in hand. No new correspondence."
+      },
+      "resume_on": "Manasseh V, or a dated section for an Achor candidate.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md"
+      ]
+    },
+    {
+      "id": "R08",
+      "kind": "backlog question",
+      "title": "How should directions and measurements be applied?",
+      "stage": "S3",
+      "state_now": "waiting",
+      "next_observation": "The Meinardus 1965-66 scan from the Mosaic Centre (promised for mid-October, free) and the A(C)94 wall-junction drawing and level register (requested from Bar-Nathan and Porat on 6 October). Both match the reopen criterion of the closed Jericho pools test.",
+      "cost": {
+        "sessions": 2,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "Meinardus pp. 183-184 and 196 arrive with the plan key and captions, or the A(C)94 drawing ties a water aperture to a named wall face and its floor in one phase.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: If the scan lacks the plan key and captions and the A(C)94 drawing has not arrived by 31 Dec 2026, park the Jericho part. Park Hyrcania and Sartaba now, until survey controls or matched Amit endpoints are named."
+      },
+      "resume_on": "The A(C)94 drawing, survey controls for Hyrcania, or matched Sartaba endpoints.",
+      "sources": [
+        "research/ACTIVE_TEST.md",
+        "research/OPEN_QUESTIONS.md"
+      ]
+    },
+    {
+      "id": "R09",
+      "kind": "backlog question",
+      "title": "Which candidate layouts existed when the instructions were usable?",
+      "stage": "S5",
+      "state_now": "park",
+      "next_observation": "Original Oren-Rappaport Cave III and V plans and assemblage contexts. Not in the Drive index.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 1,
+        "money": "none"
+      },
+      "continue_if": "A plan ties an opening, wall or installation to its own dated construction or use.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Keep R09 queued, with no sessions, until some entry reaches S4 or the Oren-Rappaport plans are in hand."
+      },
+      "resume_on": "A stage S4 result, or the Oren-Rappaport plans.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md"
+      ]
+    },
+    {
+      "id": "R10",
+      "kind": "backlog question",
+      "title": "How much can the entry order tell us?",
+      "stage": "S4",
+      "state_now": "park",
+      "next_observation": "Netzer's December 1982 Doq field plan and diary for the northeastern-spur building and pool, or a verified later publication; Netzer 2006 p. 207 n. 25 says the finds were unpublished. The holder is not confirmed in the repository.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 1,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The record shows a guard or drying room, an eastern corner and an ancient surface, so Doq can serve as an anchor.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park R10 now, apart from model reruns that other lanes trigger. The ordering test stays closed and reopens only for a documented coding correction."
+      },
+      "resume_on": "The 1982 Doq records, or a new anchor from another lane.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md",
+        "research/ACTIVE_TEST.md"
+      ]
+    },
+    {
+      "id": "R11",
+      "kind": "backlog question",
+      "title": "What do the Greek letters represent?",
+      "stage": "S2",
+      "state_now": "waiting",
+      "next_observation": "Bruce Zuckerman's original WSRP Figure 4.6 composite with component-image IDs and placement map (requested 5 October).",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 1,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The composite arrives with component IDs and a placement map.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: After one follow-up, park R11 if there is no reply by 31 Dec 2026. The engraving-order test stays closed and reopens only for that composite."
+      },
+      "resume_on": "The WSRP Figure 4.6 composite.",
+      "sources": [
+        "research/ACTIVE_TEST.md",
+        "research/OPEN_QUESTIONS.md"
+      ]
+    },
+    {
+      "id": "R12",
+      "kind": "backlog question",
+      "title": "What kind of inventory was this, and when was it compiled?",
+      "stage": "S5",
+      "state_now": "park",
+      "next_observation": "An authenticated textual correction, or a phase-to-instruction observation at a discriminated landmark.",
+      "cost": {
+        "sessions": 0,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "Such an observation exists.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park R12 now. Its closed inventory test reopens only for an authenticated textual correction."
+      },
+      "resume_on": "An authenticated textual correction, or a stage S5 result.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md",
+        "research/ACTIVE_TEST.md"
+      ]
+    },
+    {
+      "id": "AQ1",
+      "kind": "active question",
+      "title": "Koḥlit: is 'Janoaḥ' possible at XII 10? (R07, entry 60)",
+      "stage": "S2",
+      "state_now": "waiting",
+      "next_observation": "An image of XII 10 at the segment 21/22 cut that passes the frozen authentication gate: USC masters, Manchester or Joan Taylor (Allegro C.21-23), or the EDF copy and X-rays at the ÉBAF.",
+      "cost": {
+        "sessions": 2,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "owner approval for any reproduction fee"
+      },
+      "continue_if": "The image passes the authentication gate.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: If every route declines, or no image passing the gate has arrived by 31 Jan 2027, park AQ1. The protocol stays frozen at fd3f334, and AQ1 resumes when such an image arrives."
+      },
+      "resume_on": "An image of XII 10 at the cut that passes the gate.",
+      "sources": [
+        "research/ACTIVE_TEST.md",
+        "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md"
+      ]
+    },
+    {
+      "id": "AQ2",
+      "kind": "active question",
+      "title": "Koḥlit at Tell es-Sultan: a pit north of the site with graves at its mouth (entry 60)",
+      "stage": "S3",
+      "state_now": "waiting",
+      "next_observation": "Pre-camp records north of the tell (Garstang Museum JG/8, PEF Garstang Papers and photos, Nigro's records), registered under SULTAN-1 before opening; and Kenyon's eastern section and Plate 111b (the Drive holds the Jericho III text volume only). The archive records can confirm but not contradict; the Kenyon section can exclude the quarry-pit classes.",
+      "cost": {
+        "sessions": 2,
+        "outreach_messages": 0,
+        "library_items": 1,
+        "money": "none"
+      },
+      "continue_if": "A record shows an opening in the strip with a dated context, or the Kenyon section dates the quarry pits.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: If Garstang, the PEF and Nigro all report no record of the strip, or none has replied by 31 Dec 2026, park the archive route. Park the Kenyon route after the plates are read once."
+      },
+      "resume_on": "A pre-camp record of the strip, or the Kenyon plates.",
+      "sources": [
+        "research/ACTIVE_TEST.md",
+        "research/assessments/kohlit_chain/README.md",
+        "research/feature_workbench/decisions/README.md",
+        "research/sources/drive_index.md"
+      ]
+    },
+    {
+      "id": "AQ3",
+      "kind": "active question",
+      "title": "Koḥlit: the pool east of the site (entry 11)",
+      "stage": "S3",
+      "state_now": "park",
+      "next_observation": "Kallai 1972 pp. 172-173, which may locate a pool at Kh. el-Marjama (no online scan found). At ʿAin es-Sultan, sealed finds under the spring-house wall separate no class unless a record ties that wall to the historical basin.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 1,
+        "money": "none"
+      },
+      "continue_if": "Kallai locates and dates a pool east of Kh. el-Marjama, or a record ties the spring-house wall to the historical basin.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: If Kallai gives no pool position or date, park the Marjama pool branch. Park the ʿAin es-Sultan branch until a wall-to-basin contact record is named."
+      },
+      "resume_on": "Kallai pp. 172-173, or a wall-to-basin contact record.",
+      "sources": [
+        "research/ACTIVE_TEST.md",
+        "research/feature_workbench/decisions/README.md"
+      ]
+    },
+    {
+      "id": "KOHLIT-RARITY",
+      "kind": "registered result",
+      "title": "Koḥlit rarity count (entries 11 and 60) and its addenda",
+      "stage": "S4",
+      "state_now": "park",
+      "next_observation": "Zertal Vol. I (14 units) and the 17 unread first publications, which would turn some UNKNOWN codes into codable ones. Even all 31 would leave m much larger than k (m = 313).",
+      "cost": {
+        "sessions": 2,
+        "outreach_messages": 0,
+        "library_items": 18,
+        "money": "none"
+      },
+      "continue_if": "A source records a search of the 1 km northern sectors, which is the only kind of record that could move m materially.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park the count now. The registered result and both addenda stay exactly as recorded. Code a further addendum only if its items arrive for another lane anyway."
+      },
+      "resume_on": "A source that records a search of the northern sectors, or the library items.",
+      "sources": [
+        "research/PROGRESS_METRICS.md",
+        "research/rarity/kohlit/stage2/RESULTS.md",
+        "research/rarity/kohlit/stage2/addendum_s4/ADDENDUM.md",
+        "research/rarity/kohlit/stage2/addendum_s2/ADDENDUM.md"
+      ]
+    },
+    {
+      "id": "M-FEATURE-AUDIT",
+      "kind": "methods tool (8 Oct)",
+      "title": "Feature-level audit of the Koḥlit positives",
+      "folder": "research/rarity/kohlit/feature_audit/",
+      "stage": "S4",
+      "state_now": "park",
+      "next_observation": "Tsafrir and Magen 1984 (the Sartaba-Alexandrium report) for the date of the S1283 pits, the only unit-condition where the two coders rest on different features.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 1,
+        "money": "none"
+      },
+      "continue_if": "The report dates the northern robbing pits or the cave-cisterns.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: No further sessions. Rerun only when a coded sheet changes."
+      },
+      "resume_on": "A changed coded sheet, or Tsafrir and Magen 1984.",
+      "sources": [
+        "research/rarity/kohlit/feature_audit/README.md",
+        "research/assessments/kohlit_chain/next_links.md"
+      ]
+    },
+    {
+      "id": "M-OBSERVATION-PROCESS",
+      "kind": "methods tool (8 Oct)",
+      "title": "Observation-process audit of the Koḥlit count",
+      "folder": "research/rarity/kohlit/observation_process/",
+      "stage": "S4",
+      "state_now": "park",
+      "next_observation": "None for the audit itself. A registered use of its scope rules would need a new pre-registration before new data are coded; it cannot correct the registered test.",
+      "cost": {
+        "sessions": 0,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The owner decides to pre-register scope rules for a future count.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park now."
+      },
+      "resume_on": "The owner's decision to pre-register scope rules.",
+      "sources": [
+        "research/rarity/kohlit/observation_process/README.md",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "M-LANDMARK-CHAIN",
+      "kind": "methods tool (8 Oct)",
+      "title": "Koḥlit as a landmark network (Ephesus)",
+      "folder": "research/assessments/kohlit_chain/",
+      "stage": "S3",
+      "state_now": "active",
+      "next_observation": "The tier-1 links: the 2002 cave-survey entries for five opening-facing links (the IAA request of 7 October covers them), MHCS IV for S6040 (in the Drive index) and HA 28-29 (1969) for Tananir.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "A two-sided link returns a contradiction, or a match on a relation not used to select the model.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: After the tier-1 links are read, or by 31 Dec 2026, park tiers 3 and 4 until their library items arrive."
+      },
+      "resume_on": "A library item for a tier-3 or tier-4 link.",
+      "sources": [
+        "research/assessments/kohlit_chain/next_links.md",
+        "research/sources/drive_index.md"
+      ]
+    },
+    {
+      "id": "M-LOCATION-LANGUAGE",
+      "kind": "methods tool (8 Oct)",
+      "title": "Recurring location language (Linear B)",
+      "folder": "research/text/location_language/",
+      "stage": "S2",
+      "state_now": "park",
+      "next_observation": "Not an observation: the owner's decision on the proposed readings.json records for al pi and ad, and on the atlas entry 6 and 32 notes.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "A decision changes a reading that a registered branch uses.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park after the owner decides; rerun when a reading changes."
+      },
+      "resume_on": "A changed reading.",
+      "sources": [
+        "research/logs/methods_round_2026-10-08.md",
+        "research/text/location_language/README.md"
+      ]
+    },
+    {
+      "id": "M-DECISION-QUEUE",
+      "kind": "methods tool (8 Oct)",
+      "title": "Discriminating observations (decision queue)",
+      "folder": "research/feature_workbench/decisions/",
+      "stage": "S3",
+      "state_now": "park",
+      "next_observation": "None for the tool itself. It reruns when XII 10, the Kenyon section, Kallai pp. 172-173 or the L-656 file arrives.",
+      "cost": {
+        "sessions": 0,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "An arrival changes which classes survive.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: No maintenance sessions; rerun only when one of its four records arrives."
+      },
+      "resume_on": "One of its four records.",
+      "sources": [
+        "research/feature_workbench/decisions/README.md"
+      ]
+    },
+    {
+      "id": "M-COVERAGE",
+      "kind": "methods tool (8 Oct)",
+      "title": "Coverage: footprint against target volume (AF447)",
+      "folder": "research/feature_workbench/coverage/",
+      "stage": "S5",
+      "state_now": "park",
+      "next_observation": "The L-656 file (shared with R02). Tell es-Sultan's joins stay undeterminable, because entry 60 gives no distance.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "A record supplies target volume, datum and reach for one branch.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park until the L-656 file or another target-specific excavation record arrives."
+      },
+      "resume_on": "The L-656 file, or another target-specific excavation record.",
+      "sources": [
+        "research/feature_workbench/coverage/README.md"
+      ]
+    },
+    {
+      "id": "M-RECOVERY-DEV",
+      "kind": "methods tool (8 Oct)",
+      "title": "Recovery benchmark: harness and development batch (Richard III)",
+      "folder": "research/benchmarks/recovery/",
+      "stage": "S4",
+      "state_now": "active",
+      "next_observation": "Freeze the harness: record the SHA-256 of procedure.py, procedure_constants.json and harness.py before the reserved run.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The freeze is recorded before the reserved run.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: No further tuning on the development batch after the freeze. Any later change makes a new exploratory version."
+      },
+      "resume_on": "A new, separately sealed batch.",
+      "sources": [
+        "research/benchmarks/recovery/README.md"
+      ]
+    },
+    {
+      "id": "M-RECOVERY-RESERVED",
+      "kind": "methods tool (8 Oct)",
+      "title": "Recovery benchmark: reserved batch",
+      "folder": "research/benchmarks/recovery/reserved/",
+      "stage": "S4",
+      "state_now": "run_once",
+      "next_observation": "One run of the 11 sealed cases against the frozen harness; then the owner supplies the sealed key for scoring.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "Set before the run: no more wrong selections than in the development batch (2), counting a candidate chosen in a 'none' case as wrong. Only then is the procedure used as a check on Scroll candidates.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: The lane closes after its single run, whatever the result. A second run is exploratory and labelled so."
+      },
+      "resume_on": "Nothing; a new batch would be a new lane.",
+      "sources": [
+        "research/benchmarks/recovery/reserved/MANIFEST.md",
+        "research/logs/methods_round_2026-10-08.md"
+      ]
+    },
+    {
+      "id": "M-LETTER-CONTROLS",
+      "kind": "methods tool (8 Oct)",
+      "title": "Letter-reading controls for XII 10",
+      "folder": "research/text/letter_controls/",
+      "stage": "S2",
+      "state_now": "waiting",
+      "next_observation": "Control frames from the same image series as the XII 10 image (cuts 1-6, 9-10, 13-14, 17-18), and two assigned human readers.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 1,
+        "library_items": 0,
+        "money": "owner approval for any reproduction fee"
+      },
+      "continue_if": "Control frames from the same series arrive and readers are assigned.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: If the XII 10 image comes from a series with no control frames, park the controls and record that the reading is uncalibrated. The frozen protocol runs either way."
+      },
+      "resume_on": "Control frames from the series that supplied the XII 10 image.",
+      "sources": [
+        "research/text/letter_controls/PROTOCOL.md",
+        "research/logs/methods_round_2026-10-08.md"
+      ]
+    },
+    {
+      "id": "N-SEARCH-EFFECTIVENESS",
+      "kind": "tool being built (9 Oct)",
+      "title": "Search effectiveness in the joint placement model (AF447)",
+      "folder": "research/models/search_effectiveness/",
+      "stage": "S4",
+      "state_now": "integrate",
+      "next_observation": "The worker's report: which failed or silent looks enter the W2B joint placement model, and with what detection scope.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "Adding the looks changes a leading candidate for some entry by more than the existing K2/K4 kernel sensitivity.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: If no leading candidate changes beyond that sensitivity, park after integration. Rerun when a new search or excavation record arrives."
+      },
+      "resume_on": "A new search or excavation record.",
+      "sources": [
+        "research/agent_review_2026-10-07/wave2/W2B_model_v1/KERNEL_CORRECTION.md"
+      ]
+    },
+    {
+      "id": "N-EDITION-CONFUSIONS",
+      "kind": "tool being built (9 Oct)",
+      "title": "Letter pairs the editions confuse (Bennett/Kober)",
+      "folder": "research/text/edition_confusions/",
+      "stage": "S2",
+      "state_now": "integrate",
+      "next_observation": "The worker's table of confused letter pairs, applied to the XII 10 pairs (bet/kaf, he/ḥet, yod/waw).",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The table shows the XII 10 pairs are often confused, which supports the control-frames request.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park after integration; rerun when a new edition or image reading arrives. It never stands in for the image reading."
+      },
+      "resume_on": "A new edition or image reading.",
+      "sources": [
+        "research/text/letter_controls/PROTOCOL.md"
+      ]
+    },
+    {
+      "id": "N-ARRIVAL-REGISTER",
+      "kind": "tool being built (9 Oct)",
+      "title": "Predictions frozen before each requested item arrives (Pylos tablet)",
+      "folder": "research/preregistration/arrivals/",
+      "stage": "S1",
+      "state_now": "integrate",
+      "next_observation": "A frozen prediction for each pending request before its item arrives; first the Meinardus scan and any XII 10 image.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "Each arrival is registered before it is opened.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Close an entry when its item is scored. Park the register when no request is pending."
+      },
+      "resume_on": "A new request.",
+      "sources": [
+        "research/ACTIVE_TEST.md"
+      ]
+    },
+    {
+      "id": "N-SALVAGE-RECORDS",
+      "kind": "tool being built (9 Oct)",
+      "title": "Ancient recovery accounts and earlier searches (Atocha)",
+      "folder": "research/history/salvage_records/",
+      "stage": "S6",
+      "state_now": "integrate",
+      "next_observation": "The worker's list of recovery accounts and earlier searches, each labelled EVIDENCE, TRADITION or INFERENCE.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "An account names a place that matches a registered candidate feature, with a recoverable source.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park after integration if no account names a specific candidate place. Accounts never count as confirmation."
+      },
+      "resume_on": "A newly found account that names a place.",
+      "sources": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "N-PEF-FINDS",
+      "kind": "tool being built (9 Oct)",
+      "title": "Old find reports in the PEF Quarterly Statement (Kalkriese/Mommsen)",
+      "folder": "research/history/pef_qs_finds/",
+      "stage": "S3",
+      "state_now": "integrate",
+      "next_observation": "The worker's index of Quarterly Statement find reports near candidate features, for example north of Tell es-Sultan or in the Wadi Qelt.",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "An item gives a located find or feature at a candidate; an exact item would also meet R03's resume rule.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park after the volumes in scope are indexed once."
+      },
+      "resume_on": "A volume outside the indexed scope.",
+      "sources": [
+        "research/OPEN_QUESTIONS.md"
+      ]
+    },
+    {
+      "id": "N-CONCEALMENT",
+      "kind": "tool being built (9 Oct)",
+      "title": "Where people really hid valuables (Richard III base rates)",
+      "folder": "research/comparanda/concealment_contexts/",
+      "stage": "S6",
+      "state_now": "integrate",
+      "next_observation": "The worker's base rates of concealment contexts (cave, cistern, tomb, wall and others).",
+      "cost": {
+        "sessions": 1,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The rates differ by context enough to change which deposit contexts a lane should check.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Park after integration. Base rates never count as evidence for a specific candidate."
+      },
+      "resume_on": "A new comparative corpus.",
+      "sources": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "N-STAGES",
+      "kind": "tool being built (9 Oct)",
+      "title": "Staged objectives and stop rules (this plan)",
+      "folder": "research/plan/",
+      "stage": "S1",
+      "state_now": "integrate",
+      "next_observation": "The owner's decisions on the proposed stop rules and the two proposed spending rules.",
+      "cost": {
+        "sessions": 0,
+        "outreach_messages": 0,
+        "library_items": 0,
+        "money": "none"
+      },
+      "continue_if": "The owner adopts, edits or rejects the stop rules.",
+      "stop_rule": {
+        "status": "PROPOSED",
+        "text": "PROPOSED: Review the plan once when a stage is reached or a counter changes, and otherwise on 31 Jan 2027. No other maintenance."
+      },
+      "resume_on": "A stage reached, a counter change, or 31 Jan 2027.",
+      "sources": [
+        "research/plan/STAGED_OBJECTIVES.md"
+      ]
+    }
+  ],
+  "closed_tests": [
+    {
+      "id": "CLOSED-JERICHO-POOLS",
+      "scope": "Jericho pools, entry 29",
+      "result": "not identifiable from available evidence",
+      "related_lanes": [
+        "R08"
+      ],
+      "reopen_only_on": "A phase-controlled field section tying a water aperture to a named wall face and its contemporaneous floor (A(C)94 first); for the St Andrew reservoir, Meinardus pp. 183-184 and 196 with the plan key and captions.",
+      "source": "research/ACTIVE_TEST.md"
+    },
+    {
+      "id": "CLOSED-SILOAM-MAIN",
+      "scope": "Siloam main pool, entry 49",
+      "result": "not identifiable from available evidence",
+      "related_lanes": [
+        "R06"
+      ],
+      "reopen_only_on": "A surveyed section of the main-side L103 junction with aperture, basin edge and floor in one phase, plus evidence for the bath function.",
+      "source": "research/ACTIVE_TEST.md"
+    },
+    {
+      "id": "CLOSED-GREEK-ORDER",
+      "scope": "Greek engraving order (R11)",
+      "result": "not identifiable from available evidence",
+      "related_lanes": [
+        "R11"
+      ],
+      "reopen_only_on": "The original WSRP Figure 4.6 composite with component-image IDs and placement map.",
+      "source": "research/ACTIVE_TEST.md"
+    },
+    {
+      "id": "CLOSED-PHOTO-READINGS",
+      "scope": "Original-photo readings, entries 31, 40 and 49",
+      "result": "not identifiable from available evidence",
+      "related_lanes": [
+        "R04",
+        "R06"
+      ],
+      "reopen_only_on": "Legible originals of VII 11, IX 7 or X 15-16 with neighbouring Hebrew and cut placement.",
+      "source": "research/ACTIVE_TEST.md"
+    },
+    {
+      "id": "CLOSED-INVENTORY",
+      "scope": "Inventory form, units and dates (R12)",
+      "result": "not identifiable from available evidence",
+      "related_lanes": [
+        "R12"
+      ],
+      "reopen_only_on": "An authenticated textual correction.",
+      "source": "research/ACTIVE_TEST.md"
+    },
+    {
+      "id": "CLOSED-ORDERING",
+      "scope": "Entry ordering",
+      "result": "not identifiable from available evidence",
+      "related_lanes": [
+        "R10"
+      ],
+      "reopen_only_on": "A documented coding correction.",
+      "source": "research/ACTIVE_TEST.md"
+    }
+  ],
+  "rules": [
+    {
+      "id": "EXISTING-REOPEN",
+      "status": "EXISTING",
+      "text": "A closed test reopens only for its stated new observation or a documented analytical error; the previous result is preserved. A stop rule here never reopens or closes a test.",
+      "source": "AGENTS.md"
+    },
+    {
+      "id": "PROPOSED-PARK",
+      "status": "PROPOSED",
+      "text": "PROPOSED: A parked lane resumes only when its named resume observation arrives. Parking a lane is not a test result."
+    },
+    {
+      "id": "PROPOSED-WOOD",
+      "status": "PROPOSED",
+      "text": "PROPOSED (Wood): Spend a new outreach message, a library item or any money on a lane only for its first observation, or after its last result met its continue-if condition. Money always needs the owner's approval."
+    },
+    {
+      "id": "PROPOSED-GREYFRIARS",
+      "status": "PROPOSED",
+      "text": "PROPOSED (Greyfriars): Each new request names the stage and rating it serves. A request that serves only a C or D stage needs the owner's explicit approval."
+    }
+  ],
+  "parked_elsewhere": [
+    {
+      "item": "Peleg's prepared map and the JSP 18 pocket sheet",
+      "by": "owner",
+      "source": "research/OPEN_QUESTIONS.md"
+    },
+    {
+      "item": "Feldman's anthology search",
+      "by": "owner",
+      "source": "research/OPEN_QUESTIONS.md"
+    },
+    {
+      "item": "Patrich 1990 p. 208 n. 24",
+      "by": "R03 record",
+      "source": "research/OPEN_QUESTIONS.md"
+    },
+    {
+      "item": "Augustinović pp. 89-92 and Gerico",
+      "by": "R10 record",
+      "source": "research/OPEN_QUESTIONS.md"
+    },
+    {
+      "item": "Trip planning and bookings",
+      "by": "owner (declined 8 October)",
+      "source": "research/plan/README.md"
+    }
+  ]
+}

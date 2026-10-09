@@ -1,0 +1,615 @@
+{
+ "plan_sha256": "6d797192bffdb92473237347a6fbe59a93593eca6bd7fc32e3f54acc647369d1",
+ "settings": {
+  "seed": 20261009,
+  "n_perm": 20000,
+  "n_boot": 2000,
+  "alpha": 0.05,
+  "D_threshold": 0.25,
+  "min_known_comparanda": 30
+ },
+ "runs": {
+  "main": {
+   "n_a": 60,
+   "n_b": 68,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 19,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 58.7,
+   "p": 5e-05,
+   "D": 0.6657,
+   "D_ci95": [
+    0.5363,
+    0.7931
+   ],
+   "residuals_a": {
+    "G1": 5.727,
+    "G2": 2.429,
+    "G3": -2.836,
+    "G4": -5.455,
+    "G5": 2.051
+   },
+   "n_comparanda_units_total": 158,
+   "n_comparanda_unknown": 90,
+   "verdict": "DIFFERENT",
+   "label": "Main: branch P, 150 BCE-135 CE, southern Levant, clusters, all types, coarse"
+  },
+  "s1_window": {
+   "n_a": 60,
+   "n_b": 26,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 2,
+    "G2": 0,
+    "G3": 4,
+    "G4": 18,
+    "G5": 2
+   },
+   "chi2": 32.5781,
+   "p": 5e-05,
+   "D": 0.6295,
+   "D_ci95": [
+    0.4859,
+    0.8
+   ],
+   "residuals_a": {
+    "G1": 3.605,
+    "G2": 2.087,
+    "G3": -0.981,
+    "G4": -5.184,
+    "G5": 0.932
+   },
+   "n_comparanda_units_total": 64,
+   "n_comparanda_unknown": 38,
+   "verdict": "NOT TESTABLE",
+   "label": "Window 63 BCE-70 CE"
+  },
+  "s2_region": {
+   "n_a": 60,
+   "n_b": 45,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 1,
+    "G2": 2,
+    "G3": 17,
+    "G4": 22,
+    "G5": 3
+   },
+   "chi2": 45.4514,
+   "p": 5e-05,
+   "D": 0.65,
+   "D_ci95": [
+    0.5111,
+    0.7889
+   ],
+   "residuals_a": {
+    "G1": 5.176,
+    "G2": 1.748,
+    "G3": -3.669,
+    "G4": -3.991,
+    "G5": 1.328
+   },
+   "n_comparanda_units_total": 84,
+   "n_comparanda_unknown": 39,
+   "verdict": "DIFFERENT",
+   "label": "Region: Judaea and the Jordan valley"
+  },
+  "s3_branch_Pu": {
+   "n_a": 60,
+   "n_b": 68,
+   "counts_a": {
+    "G1": 28,
+    "G2": 9,
+    "G3": 5,
+    "G4": 9,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 19,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 55.9812,
+   "p": 5e-05,
+   "D": 0.649,
+   "D_ci95": [
+    0.5176,
+    0.7804
+   ],
+   "residuals_a": {
+    "G1": 5.569,
+    "G2": 2.429,
+    "G3": -2.836,
+    "G4": -5.241,
+    "G5": 2.051
+   },
+   "n_comparanda_units_total": 158,
+   "n_comparanda_unknown": 90,
+   "verdict": "DIFFERENT",
+   "label": "Scroll branch Pu (Puech 2006/2015)"
+  },
+  "s4_branch_M": {
+   "n_a": 60,
+   "n_b": 68,
+   "counts_a": {
+    "G1": 30,
+    "G2": 9,
+    "G3": 6,
+    "G4": 6,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 19,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 62.1119,
+   "p": 5e-05,
+   "D": 0.6824,
+   "D_ci95": [
+    0.5549,
+    0.8078
+   ],
+   "residuals_a": {
+    "G1": 5.884,
+    "G2": 2.429,
+    "G3": -2.555,
+    "G4": -5.891,
+    "G5": 2.051
+   },
+   "n_comparanda_units_total": 158,
+   "n_comparanda_unknown": 90,
+   "verdict": "DIFFERENT",
+   "label": "Scroll branch M (Milik 1960/1962)"
+  },
+  "s5_branch_L": {
+   "n_a": 60,
+   "n_b": 68,
+   "counts_a": {
+    "G1": 28,
+    "G2": 8,
+    "G3": 5,
+    "G4": 9,
+    "G5": 10
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 19,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 55.8955,
+   "p": 5e-05,
+   "D": 0.649,
+   "D_ci95": [
+    0.5176,
+    0.7804
+   ],
+   "residuals_a": {
+    "G1": 5.569,
+    "G2": 2.186,
+    "G3": -2.836,
+    "G4": -5.241,
+    "G5": 2.29
+   },
+   "n_comparanda_units_total": 158,
+   "n_comparanda_unknown": 90,
+   "verdict": "DIFFERENT",
+   "label": "Scroll branch L (Lefkovits 2000)"
+  },
+  "s6_pit_unknown": {
+   "n_a": 53,
+   "n_b": 68,
+   "counts_a": {
+    "G1": 22,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 19,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 51.2132,
+   "p": 5e-05,
+   "D": 0.6371,
+   "D_ci95": [
+    0.4945,
+    0.7755
+   ],
+   "residuals_a": {
+    "G1": 5.001,
+    "G2": 2.665,
+    "G3": -2.533,
+    "G4": -5.025,
+    "G5": 2.295
+   },
+   "n_comparanda_units_total": 158,
+   "n_comparanda_unknown": 90,
+   "verdict": "DIFFERENT",
+   "label": "Scroll pits (שית/שיח/שוחה/שיא) set to unknown"
+  },
+  "s7_rows": {
+   "n_a": 60,
+   "n_b": 70,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 19,
+    "G4": 43,
+    "G5": 3
+   },
+   "chi2": 60.3537,
+   "p": 5e-05,
+   "D": 0.669,
+   "D_ci95": [
+    0.5405,
+    0.7929
+   ],
+   "residuals_a": {
+    "G1": 5.812,
+    "G2": 2.48,
+    "G3": -2.756,
+    "G4": -5.599,
+    "G5": 2.104
+   },
+   "n_comparanda_units_total": 160,
+   "n_comparanda_unknown": 90,
+   "verdict": "DIFFERENT",
+   "label": "Comparanda counted as rows, not clusters"
+  },
+  "s8_metal_only": {
+   "n_a": 59,
+   "n_b": 65,
+   "counts_a": {
+    "G1": 28,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 17,
+    "G4": 40,
+    "G5": 3
+   },
+   "chi2": 55.3339,
+   "p": 5e-05,
+   "D": 0.6566,
+   "D_ci95": [
+    0.5257,
+    0.7752
+   ],
+   "residuals_a": {
+    "G1": 5.502,
+    "G2": 2.382,
+    "G3": -2.574,
+    "G4": -5.478,
+    "G5": 2.001
+   },
+   "n_comparanda_units_total": 155,
+   "n_comparanda_unknown": 90,
+   "verdict": "DIFFERENT",
+   "label": "Coins and metal only (documents dropped on both sides)"
+  },
+  "s9_fine": {
+   "n_a": 60,
+   "n_b": 68,
+   "counts_a": {
+    "C01": 14,
+    "C02": 8,
+    "C03": 7,
+    "C04": 9,
+    "C05": 5,
+    "C06": 0,
+    "C07": 7,
+    "C08": 3,
+    "C09": 1,
+    "C11": 0,
+    "C12": 5,
+    "C13": 1,
+    "C14": 0
+   },
+   "counts_b": {
+    "C01": 1,
+    "C02": 1,
+    "C03": 1,
+    "C04": 2,
+    "C05": 19,
+    "C06": 5,
+    "C07": 7,
+    "C08": 2,
+    "C09": 0,
+    "C11": 3,
+    "C12": 0,
+    "C13": 12,
+    "C14": 15
+   },
+   "chi2": 72.1217,
+   "p": 5e-05,
+   "D": 0.6941,
+   "D_ci95": [
+    0.6,
+    0.8265
+   ],
+   "residuals_a": {
+    "C01": 3.838,
+    "C02": 2.62,
+    "C03": 2.378,
+    "C04": 2.429,
+    "C05": -2.836,
+    "C06": -2.143,
+    "C07": 0.248,
+    "C08": 0.6,
+    "C09": 1.069,
+    "C11": -1.646,
+    "C12": 2.428,
+    "C13": -2.987,
+    "C14": -3.872
+   },
+   "n_comparanda_units_total": 158,
+   "n_comparanda_unknown": 90,
+   "verdict": "DIFFERENT",
+   "label": "Fine categories C01-C14 (secondary test)"
+  }
+ },
+ "bias": {
+  "B1_excavated_vs_not": {
+   "n_a": 62,
+   "n_b": 5,
+   "counts_a": {
+    "G1": 2,
+    "G2": 2,
+    "G3": 16,
+    "G4": 40,
+    "G5": 2
+   },
+   "counts_b": {
+    "G1": 1,
+    "G2": 0,
+    "G3": 2,
+    "G4": 1,
+    "G5": 1
+   },
+   "chi2": 7.8216,
+   "p": 0.10509,
+   "D": 0.4774,
+   "D_ci95": [
+    0.1742,
+    0.8065
+   ],
+   "residuals_a": {
+    "G1": -1.745,
+    "G2": 0.408,
+    "G3": -0.689,
+    "G4": 1.965,
+    "G5": -1.745
+   },
+   "verdict": "INCONCLUSIVE",
+   "note": "group a = excavated, group b = chance plus looting_recovered"
+  },
+  "B2a_scroll_vs_excavated": {
+   "n_a": 60,
+   "n_b": 62,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 2,
+    "G2": 2,
+    "G3": 16,
+    "G4": 40,
+    "G5": 2
+   },
+   "chi2": 59.5037,
+   "p": 5e-05,
+   "D": 0.6866,
+   "D_ci95": [
+    0.5554,
+    0.8177
+   ],
+   "residuals_a": {
+    "G1": 5.721,
+    "G2": 2.27,
+    "G3": -2.556,
+    "G4": -5.785,
+    "G5": 2.27
+   },
+   "verdict": "DIFFERENT"
+  },
+  "B2b_scroll_vs_not_excavated": {
+   "n_a": 60,
+   "n_b": 5,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 1,
+    "G2": 0,
+    "G3": 2,
+    "G4": 1,
+    "G5": 1
+   },
+   "chi2": 6.0735,
+   "p": 0.17329,
+   "D": 0.4333,
+   "D_ci95": [
+    0.2333,
+    0.8333
+   ],
+   "residuals_a": {
+    "G1": 1.221,
+    "G2": 0.933,
+    "G3": -2.195,
+    "G4": -0.415,
+    "G5": -0.298
+   },
+   "verdict": "NOT TESTABLE"
+  },
+  "B3_unknown_share_by_how_found": {
+   "excavation": {
+    "units": 74,
+    "unknown_context": 12,
+    "share_unknown": 0.162
+   },
+   "chance": {
+    "units": 7,
+    "unknown_context": 4,
+    "share_unknown": 0.571
+   },
+   "looting_recovered": {
+    "units": 16,
+    "unknown_context": 14,
+    "share_unknown": 0.875
+   },
+   "unknown": {
+    "units": 61,
+    "unknown_context": 60,
+    "share_unknown": 0.984
+   }
+  }
+ },
+ "summary": {
+  "main_verdict": "DIFFERENT",
+  "robust": false,
+  "runs_changing_verdict": [
+   "s1_window"
+  ],
+  "reporting_sensitive": true
+ },
+ "comparanda_rows": 181,
+ "comparanda_excluded": [
+  {
+   "id": "chre7592",
+   "reason": "source: found on a street, not deliberately concealed"
+  },
+  {
+   "id": "chre7618",
+   "reason": "single coin"
+  },
+  {
+   "id": "chre7659",
+   "reason": "mint debris (found with flan mould)"
+  },
+  {
+   "id": "chre7726",
+   "reason": "grave goods: hoard lay on the uppermost body in a mass grave"
+  },
+  {
+   "id": "chre8013",
+   "reason": "single coin"
+  },
+  {
+   "id": "chre8043",
+   "reason": "single coin"
+  },
+  {
+   "id": "chre8096",
+   "reason": "source: probably a dealer's lot, not a hoard"
+  },
+  {
+   "id": "chre8132",
+   "reason": "duplicate of chre18771 (same 114-coin money-box hoard, 2014)"
+  },
+  {
+   "id": "chre8149",
+   "reason": "shipwreck: accidental loss, not a deposit"
+  },
+  {
+   "id": "chre8166",
+   "reason": "source: no coins found together as hoards"
+  },
+  {
+   "id": "chre8169",
+   "reason": "excavators uncertain whether these were hoards"
+  },
+  {
+   "id": "chre8177",
+   "reason": "grave goods: three coins in a skull"
+  },
+  {
+   "id": "chre8445",
+   "reason": "shipwreck: accidental loss, not a deposit"
+  },
+  {
+   "id": "chre8455",
+   "reason": "probably the same hoard(s) as chre8500 (same summary and coordinates)"
+  },
+  {
+   "id": "chre8594",
+   "reason": "single coin"
+  },
+  {
+   "id": "chre8595",
+   "reason": "single coin"
+  },
+  {
+   "id": "chre9012",
+   "reason": "shipwreck: found underwater, accidental loss"
+  },
+  {
+   "id": "chre18787",
+   "reason": "single coin"
+  },
+  {
+   "id": "chre21648",
+   "reason": "shipwreck: accidental loss, not a deposit"
+  },
+  {
+   "id": "t02H10",
+   "reason": "the Copper Scroll's own findspot (PLAN 5)"
+  }
+ ],
+ "comparanda_outside_main_window": [
+  "t02H20"
+ ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "frozen": "2026-10-09, before any stage was rated",
+  "applies_to": "each stage of STAGED_OBJECTIVES.md, judged against the current campaign: the observations already requested or named in ACTIVE_TEST.md, the decision queue (feature_workbench/decisions) and the landmark-chain next links (assessments/kohlit_chain/next_links.md)",
+  "not_a_probability": "Ratings are ordinal judgements with cited evidence. They are not probabilities, confidence levels or outcome counts.",
+  "order": ["A", "B", "C", "D"],
+  "scale": {
+    "A": {
+      "label": "reasonable expectation",
+      "rule": "The deciding observation is already requested or in hand, by more than one independent route, and the project has a frozen rule for reading it."
+    },
+    "B": {
+      "label": "possible",
+      "rule": "A named record could produce the result, and the repository holds a precedent for this kind of result, but the record is not yet in hand or can return an inconclusive answer."
+    },
+    "C": {
+      "label": "unlikely but worth recording",
+      "rule": "The result needs several records not yet requested, or a kind of result the project has never obtained. It is recorded so that a result is recognised if it comes."
+    },
+    "D": {
+      "label": "not seriously expected",
+      "rule": "The result needs every earlier stage plus a field observation or excavation that the project does not plan."
+    }
+  },
+  "ladder_rule": "A later stage depends on the stages before it, so its rating is never higher than the rating of an earlier stage."
+}

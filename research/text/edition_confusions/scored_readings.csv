@@ -1,0 +1,126 @@
+record_id,location,words,who_a,reading_a,who_b,reading_b,letters_a,letters_b,pair_class,needed_shape,needed_yod_waw,insertions,deletions,n_rare,flag
+g-ktbn,V 7,1-2,Puech 2006,ובתכן,Puech 2006,בתכן אצלם,ובתכנ,בתכנאצלמ,OTHER,,,אצלמ,ו,0,NO_SHAPE_CHANGE
+e1-ruin,I 1,0,"Milik 1960, 1962; Puech 2006, 2015",ḥryb(ʾ)h,Lefkovits 2000; Lurie; Muchowski,ḥrwbh,חריבאה,חרובה,OTHER,,י→ו loo_places=38 MATRES,,א,0,NO_SHAPE_CHANGE
+e1-ruin,I 1,0,"Milik 1960, 1962; Puech 2006, 2015",ḥryb(ʾ)h,Lefkovits 2000; Lurie; Muchowski,ḥrwbhʾ,חריבאה,חרובהא,OTHER,"א→ה א–ה loo=1 rate=0.00489 ci90=[0.002387,0.009662] UNCOMMON | ה→א א–ה loo=1 rate=0.00489 ci90=[0.002387,0.009662] UNCOMMON",י→ו loo_places=38 MATRES,,,0,OK
+e1-ruin,I 1,0,Lefkovits 2000; Lurie; Muchowski,ḥrwbh,Lefkovits 2000; Lurie; Muchowski,ḥrwbhʾ,חרובה,חרובהא,OTHER,,,א,,0,NO_SHAPE_CHANGE
+e1-achor,I 1,1-2,"Milik 1960, 1962; Puech 2006; Lefkovits 2000",עכור,Pixner; García Martínez–Tigchelaar,עבור,עכור,עבור,SHAPE,"כ→ב ב–כ loo=25 rate=0.063725 ci90=[0.046838,0.08134] COMMON",,,,0,OK
+e1-distance,I 2,3,Puech 2006,אריח,Lefkovits 2000,אחת,אריח,אחת,OTHER,"י→ח ח–י loo=0 rate=0.002457 ci90=[0.002353,0.002571] RARE | ח→ת ח–ת loo=11 rate=0.029484 ci90=[0.017284,0.042184] COMMON",,,ר,1,NEEDS_RARE
+e4-disqualified,I 11,1,Puech 2006,מפוגל,Milik,מפי גל,מפוגל,מפיגל,MATRES,,ו→י loo_places=38 MATRES,,,0,NO_SHAPE_CHANGE
+e4-immersion,I 12,3-4,Puech 2006,מקרת,Milik; Wolters; Eshel; Schiffman,ניקרת,מקרת,ניקרת,SHAPE,"מ→י י–מ loo=0 rate=0.002463 ci90=[0.002358,0.002577] RARE",,נ,,1,NEEDS_RARE
+e5-stair,I 13,1,Puech 2006; Puech 2015,המסבא,Milik 1962,המעבא,המסבא,המעבא,SHAPE,"ס→ע ס–ע loo=1 rate=0.004914 ci90=[0.002421,0.009639] UNCOMMON",,,,0,OK
+e6-millo,II 1,1,Research files (Phase 2 lexicon),מלה,Research files (Phase 2 lexicon),מלח,מלה,מלח,SHAPE,"ה→ח ה–ח loo=20 rate=0.051471 ci90=[0.036058,0.067308] COMMON",,,,0,OK
+e6-millo,II 1,1,Research files (Phase 2 lexicon),מלה,Puech 2015,המלח,מלה,המלח,SHAPE,"ה→ח ה–ח loo=20 rate=0.051471 ci90=[0.036058,0.067308] COMMON",,ה,,0,OK
+e6-millo,II 1,1,Research files (Phase 2 lexicon),מלח,Puech 2015,המלח,מלח,המלח,OTHER,,,ה,,0,NO_SHAPE_CHANGE
+e7-house,II 3,1-2,Puech 2006; Puech 2015,המדה,Milik 1962,המרה,המדה,המרה,SHAPE,"ד→ר ד–ר loo=11 rate=0.029557 ci90=[0.017456,0.042079] COMMON",,,,0,OK
+e8-court,II 5,1-2-3,Puech 2006 (text),m(b)ty,Puech 2006 (commentary),מתיה,מבתי,מתיה,OTHER,,,ה,ב,0,NO_SHAPE_CHANGE
+e9-channel,II 9,0,"Milik 1960, 1962; Puech 2006",מזקא,Allegro; Luria,במוקא,מזקא,במוקא,SHAPE,"ז→ו ו–ז loo=3 rate=0.009804 ci90=[0.002564,0.017327] COMMON",,ב,,0,OK
+e10-bars,II 11,2,Puech 2006,בדין,Lefkovits 2000,כדין,בדינ,כדינ,SHAPE,"ב→כ ב–כ loo=25 rate=0.063725 ci90=[0.04557,0.081841] COMMON",,,,0,OK
+e12-court,III 1,0-1,Puech 2006,בחצ[ר ש(ל) ]דיאט(?),Lefkovits 2000,בח[צר נב]ט,בחצרשלדיאט,בחצרנבט,RESTORATION,"י→נ י–נ loo=3 rate=0.00978 ci90=[0.002558,0.0175] COMMON | א→ב א–ב loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE",,,שלד,1,NEEDS_RARE
+e13-pit,III 8,0,Research files (Phase 2 lexicon),שית,Research files (Phase 2 lexicon),שיח,שית,שיח,SHAPE,"ת→ח ח–ת loo=11 rate=0.02934 ci90=[0.017413,0.041565] COMMON",,,,0,OK
+e13-millo,III 8,1,Research files (Phase 5 table),מלח,Puech 2015,שבמלה,מלח,שבמלה,OTHER,"ח→ה ה–ח loo=20 rate=0.051471 ci90=[0.036082,0.067669] COMMON",,שב,,0,OK
+e13-garments,III 9,2,Puech 2006,<ו>לבושין,Wolters 1994,lbwšy,ולבושינ,לבושי,OTHER,,,,ונ,0,NO_SHAPE_CHANGE
+e13-garments,III 9,2,Puech 2006,<ו>לבושין,Milik 1962,לכושי,ולבושינ,לכושי,OTHER,"ב→כ ב–כ loo=26 rate=0.066015 ci90=[0.048387,0.084833] COMMON",,,ונ,0,OK
+e13-garments,III 9,2,Wolters 1994,lbwšy,Milik 1962,לכושי,לבושי,לכושי,SHAPE,"ב→כ ב–כ loo=26 rate=0.066015 ci90=[0.048387,0.084833] COMMON",,,,0,OK
+e14-slab,III 12,2-3,Milik (before 1962),המת,Milik 1962,המ‖דׄף,המת,המדפ,SHAPE,"ת→פ פ–ת loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE",,ד,,1,NEEDS_RARE
+e15-kohlit,IV 1,2-3,Puech 2006,[כ]חלת,Milik 1962,···קה,כחלת,קה,RESTORATION,"ל→ק ל–ק loo=0 rate=0.002457 ci90=[0.002353,0.002571] RARE | ת→ה ה–ת loo=15 rate=0.039312 ci90=[0.024876,0.053269] COMMON",,,כח,1,NEEDS_RARE
+e16-distance,IV 3,3,Puech 2006,ארבע[ ע]סרה,Milik 1962,ארבע[ין ואח]ת,ארבעעסרה,ארבעינואחת,RESTORATION,"ע→ו ו–ע loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ס→א א–ס loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ר→ח ח–ר loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ה→ת ה–ת loo=16 rate=0.041565 ci90=[0.027228,0.056098] COMMON",,ינ,,3,NEEDS_RARE
+e16-distance,IV 3,3,Puech 2006,ארבע[ ע]סרה,Lefkovits 2000,ארבע[ין],ארבעעסרה,ארבעינ,RESTORATION,"ר→י י–ר loo=3 rate=0.00978 ci90=[0.002545,0.017327] COMMON | ה→נ ה–נ loo=3 rate=0.00978 ci90=[0.002558,0.017199] COMMON",,,עס,0,OK
+e16-distance,IV 3,3,Milik 1962,ארבע[ין ואח]ת,Lefkovits 2000,ארבע[ין],ארבעינואחת,ארבעינ,RESTORATION,,,,ואחת,0,NO_SHAPE_CHANGE
+e17-pair,IV 6,1-2,Puech 2006,הכינין,Milik 1962,הבינין,הכינינ,הבינינ,SHAPE,"כ→ב ב–כ loo=25 rate=0.064356 ci90=[0.046683,0.082725] COMMON",,,,0,OK
+e17-pair,IV 6,1-2,Puech 2006,הכינין,Lefkovits 2000,הבתין,הכינינ,הבתינ,SHAPE,"י→ב ב–י loo=0 rate=0.002475 ci90=[0.002375,0.002584] RARE | נ→ת נ–ת loo=3 rate=0.009901 ci90=[0.004796,0.01737] COMMON",,,כ,1,NEEDS_RARE
+e17-pair,IV 6,1-2,Milik 1962,הבינין,Lefkovits 2000,הבתין,הבינינ,הבתינ,SHAPE,"נ→ת נ–ת loo=3 rate=0.009901 ci90=[0.004796,0.01737] COMMON",,,י,0,OK
+e17-achor,IV 6,3-4,Lefkovits 2000,עכון,Puech 2015,ʿkwr,עכונ,עכור,SHAPE,"נ→ר נ–ר loo=1 rate=0.00489 ci90=[0.00237,0.00978] UNCOMMON",,,,0,OK
+e19-pit,IV 11,0-1,Research files (Phase 2 lexicon),שית,Research files (Phase 2 lexicon),שיח,שית,שיח,SHAPE,"ת→ח ח–ת loo=11 rate=0.029412 ci90=[0.017677,0.041667] COMMON",,,,0,OK
+e19-kohlit,IV 11,2-3,Puech; Milik,kḥlt,Allegro,בחלה,כחלת,בחלה,SHAPE,"כ→ב ב–כ loo=25 rate=0.063882 ci90=[0.046117,0.0825] COMMON | ת→ה ה–ת loo=15 rate=0.039312 ci90=[0.025316,0.053528] COMMON",,,,0,OK
+e21-link,V 1,3-4-5,Puech 2006,ש[במערב],Lefkovits 2000; Beyer; Eshel 2002,[הבאה ל],שבמערב,הבאהל,RESTORATION,"ש→ה ה–ש loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ע→א א–ע loo=1 rate=0.00489 ci90=[0.002381,0.009685] UNCOMMON | ר→ה ה–ר loo=1 rate=0.00489 ci90=[0.002392,0.009756] UNCOMMON | ב→ל ב–ל loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE",,,מ,2,NEEDS_RARE
+e21-link,V 1,3-4-5,Puech 2006,ש[במערב],Milik,ש[ב],שבמערב,שב,RESTORATION,,,,במער,0,NO_SHAPE_CHANGE
+e21-link,V 1,3-4-5,Lefkovits 2000; Beyer; Eshel 2002,[הבאה ל],Milik,ש[ב],הבאהל,שב,RESTORATION,"ה→ש ה–ש loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE",,,אהל,1,NEEDS_RARE
+e21-stone,V 2,4,Milik,[האבן],Puech 2015,[האבן] הגדולא,האבנ,האבנהגדולא,OTHER,,,הגדולא,,0,NO_SHAPE_CHANGE
+e27-queen,VI 11,0-1,Puech 2006; Lefkovits 2000; Puech 2015,משכן המלכא,Research files (no editor named),משכן,משכנהמלכא,משכנ,OTHER,,,,המלכא,0,NO_SHAPE_CHANGE
+e29-qi,VII 3,2-3,Puech 2006,qyb[wṣ],Milik,qy[ṣyṣ],קיבוצ,קיציצ,RESTORATION,"ב→צ ב–צ loo=1 rate=0.004914 ci90=[0.002387,0.009901] UNCOMMON",ו→י loo_places=38 MATRES,,,0,OK
+e29-qi,VII 3,2-3,Puech 2006,qyb[wṣ],Puech 2015,קיב[וץ המים ש]ל,קיבוצ,קיבוצהמימשל,RESTORATION,,,המימשל,,0,NO_SHAPE_CHANGE
+e29-qi,VII 3,2-3,Milik,qy[ṣyṣ],Puech 2015,קיב[וץ המים ש]ל,קיציצ,קיבוצהמימשל,RESTORATION,"צ→ל ל–צ loo=0 rate=0.002457 ci90=[0.002358,0.002571] RARE",,בוהממש,,1,NEEDS_RARE
+e30-coolroom,VII 8,2,Puech 2002,המקר[ה],Milik,בקר[ב]ו,המקרה,בקרבו,RESTORATION,"מ→ב ב–מ loo=10 rate=0.027094 ci90=[0.014888,0.039506] COMMON | ה→ו ה–ו loo=0 rate=0.002463 ci90=[0.002358,0.002577] RARE",,ב,ה,1,NEEDS_RARE
+e30-bars,VII 10,0,Puech 2006; Puech 2015,בדין,Lefkovits 2000,כדין,בדינ,כדינ,SHAPE,"ב→כ ב–כ loo=25 rate=0.063725 ci90=[0.045918,0.082051] COMMON",,,,0,OK
+e31-landmark,VII 11,3,Puech 2006,המשט<ו>ח,Puech 2015,hmšṭḥ,המשטוח,המשטח,OTHER,,,,ו,0,NO_SHAPE_CHANGE
+e31-landmark,VII 11,3,Puech 2006,המשט<ו>ח,Milik 1962; Lefkovits 2000,המשמרה,המשטוח,המשמרה,OTHER,"ט→מ ט–מ loo=1 rate=0.004914 ci90=[0.002404,0.009709] UNCOMMON | ו→ר ו–ר loo=3 rate=0.009828 ci90=[0.002591,0.017032] COMMON | ח→ה ה–ח loo=20 rate=0.051597 ci90=[0.036496,0.068182] COMMON",,,,0,OK
+e31-landmark,VII 11,3,Puech 2006,המשט<ו>ח,Wolters; Eshel 2002; Schiffman,משמרה,המשטוח,משמרה,OTHER,"ט→מ ט–מ loo=1 rate=0.004914 ci90=[0.002404,0.009709] UNCOMMON | ו→ר ו–ר loo=3 rate=0.009828 ci90=[0.002591,0.017032] COMMON | ח→ה ה–ח loo=20 rate=0.051597 ci90=[0.036496,0.068182] COMMON",,,ה,0,OK
+e31-landmark,VII 11,3,Puech 2015,hmšṭḥ,Milik 1962; Lefkovits 2000,המשמרה,המשטח,המשמרה,SHAPE,"ט→ר ט–ר loo=0 rate=0.002457 ci90=[0.002353,0.002571] RARE | ח→ה ה–ח loo=20 rate=0.051597 ci90=[0.036496,0.068182] COMMON",,מ,,1,NEEDS_RARE
+e31-landmark,VII 11,3,Puech 2015,hmšṭḥ,Wolters; Eshel 2002; Schiffman,משמרה,המשטח,משמרה,OTHER,"ט→ר ט–ר loo=0 rate=0.002457 ci90=[0.002353,0.002571] RARE | ח→ה ה–ח loo=20 rate=0.051597 ci90=[0.036496,0.068182] COMMON",,מ,ה,1,NEEDS_RARE
+e31-landmark,VII 11,3,Milik 1962; Lefkovits 2000,המשמרה,Wolters; Eshel 2002; Schiffman,משמרה,המשמרה,משמרה,OTHER,,,,ה,0,NO_SHAPE_CHANGE
+e32-koziba,VII 14,5,Milik 1962; Puech 2006; Allegro (final edition); Eshel 2002,hkwzbʾ,Lefkovits 2000,הבוזבא,הכוזבא,הבוזבא,SHAPE,"כ→ב ב–כ loo=25 rate=0.063882 ci90=[0.046117,0.08209] COMMON",,,,0,OK
+e32-koziba,VII 14,5,Milik 1962; Puech 2006; Allegro (final edition); Eshel 2002,hkwzbʾ,Allegro (earlier),hbybʾ,הכוזבא,הביבא,SHAPE,"ו→ב ב–ו loo=1 rate=0.004914 ci90=[0.002381,0.009828] UNCOMMON | ז→י ז–י loo=6 rate=0.017199 ci90=[0.007481,0.0275] COMMON",,,כ,0,OK
+e32-koziba,VII 14,5,Lefkovits 2000,הבוזבא,Allegro (earlier),hbybʾ,הבוזבא,הביבא,SHAPE,"ז→י ז–י loo=6 rate=0.017199 ci90=[0.007481,0.0275] COMMON",,,ו,0,OK
+e32-tur,VII 15,5,Milik 1962; Puech 2015,טור,Allegro,ṭyp,טור,טיפ,OTHER,"ר→פ פ–ר loo=0 rate=0.002463 ci90=[0.002358,0.002571] RARE",ו→י loo_places=37 MATRES,,,1,NEEDS_RARE
+e32-tur,VII 15,5,Milik 1962; Puech 2015,טור,Eshel 2002,הסור,טור,הסור,SHAPE,"ט→ס ט–ס loo=0 rate=0.002463 ci90=[0.002358,0.002571] RARE",,ה,,1,NEEDS_RARE
+e32-tur,VII 15,5,Allegro,ṭyp,Eshel 2002,הסור,טיפ,הסור,OTHER,"ט→ס ט–ס loo=0 rate=0.002463 ci90=[0.002358,0.002571] RARE | פ→ר פ–ר loo=0 rate=0.002463 ci90=[0.002358,0.002571] RARE",י→ו loo_places=37 MATRES,ה,,2,NEEDS_RARE
+e33-name,VIII 2,2,Puech 2006,אחיה,Milik 1962,אחזר,אחיה,אחזר,SHAPE,"י→ז ז–י loo=5 rate=0.014778 ci90=[0.007194,0.024752] COMMON | ה→ר ה–ר loo=0 rate=0.002463 ci90=[0.002358,0.002571] RARE",,,,1,NEEDS_RARE
+e33-lastphrase,VIII 3,2-3-4,Puech 2006,וספרין אל תרקע[מ(?)],Puech 2006,וספרין אל תבקע[מ(?)],וספרינאלתרקעמ,וספרינאלתבקעמ,SHAPE,"ר→ב ב–ר loo=1 rate=0.004975 ci90=[0.002427,0.009877] UNCOMMON",,,,0,OK
+e33-lastphrase,VIII 3,2-3-4,Puech 2006,וספרין אל תרקע[מ(?)],Puech 2015,תבקע,וספרינאלתרקעמ,תבקע,RESTORATION,"ר→ב ב–ר loo=1 rate=0.004975 ci90=[0.002427,0.009877] UNCOMMON",,,וספרינאלמ,0,OK
+e33-lastphrase,VIII 3,2-3-4,Puech 2006,וספרין אל תרקע[מ(?)],Milik 1962,וספרין אל תב֯ס֯,וספרינאלתרקעמ,וספרינאלתבס,RESTORATION,"ע→ב ב–ע loo=0 rate=0.002488 ci90=[0.002387,0.002591] RARE | מ→ס מ–ס loo=0 rate=0.002488 ci90=[0.002387,0.002591] RARE",,,רק,2,NEEDS_RARE
+e33-lastphrase,VIII 3,2-3-4,Puech 2006,וספרין אל תרקע[מ(?)],Wolters 1994,wspry wʾlt ks[p],וספרינאלתרקעמ,וספריואלתכספ,RESTORATION,"נ→ו ו–נ loo=4 rate=0.012438 ci90=[0.004938,0.021531] COMMON | ק→כ כ–ק loo=0 rate=0.002488 ci90=[0.002387,0.002591] RARE | ע→ס ס–ע loo=1 rate=0.004975 ci90=[0.002427,0.01] UNCOMMON | מ→פ מ–פ loo=0 rate=0.002488 ci90=[0.002387,0.002591] RARE",,,ר,2,NEEDS_RARE
+e33-lastphrase,VIII 3,2-3-4,Puech 2006,וספרין אל תבקע[מ(?)],Puech 2015,תבקע,וספרינאלתבקעמ,תבקע,RESTORATION,,,,וספרינאלמ,0,NO_SHAPE_CHANGE
+e33-lastphrase,VIII 3,2-3-4,Puech 2006,וספרין אל תבקע[מ(?)],Milik 1962,וספרין אל תב֯ס֯,וספרינאלתבקעמ,וספרינאלתבס,RESTORATION,"מ→ס מ–ס loo=0 rate=0.002488 ci90=[0.002387,0.002591] RARE",,,קע,1,NEEDS_RARE
+e33-lastphrase,VIII 3,2-3-4,Puech 2006,וספרין אל תבקע[מ(?)],Wolters 1994,wspry wʾlt ks[p],וספרינאלתבקעמ,וספריואלתכספ,RESTORATION,"נ→ו ו–נ loo=4 rate=0.012438 ci90=[0.004938,0.021531] COMMON | ק→כ כ–ק loo=0 rate=0.002488 ci90=[0.002387,0.002591] RARE | ע→ס ס–ע loo=1 rate=0.004975 ci90=[0.002427,0.01] UNCOMMON | מ→פ מ–פ loo=0 rate=0.002488 ci90=[0.002387,0.002591] RARE",,,ב,2,NEEDS_RARE
+e33-lastphrase,VIII 3,2-3-4,Puech 2015,תבקע,Milik 1962,וספרין אל תב֯ס֯,תבקע,וספרינאלתבס,OTHER,"ע→ס ס–ע loo=1 rate=0.004975 ci90=[0.002427,0.01] UNCOMMON",,וספרינאל,ק,0,OK
+e33-lastphrase,VIII 3,2-3-4,Puech 2015,תבקע,Wolters 1994,wspry wʾlt ks[p],תבקע,וספריואלתכספ,RESTORATION,"ב→כ ב–כ loo=26 rate=0.067164 ci90=[0.049751,0.084951] COMMON | ק→ס ס–ק loo=0 rate=0.002488 ci90=[0.002387,0.002591] RARE | ע→פ ע–פ loo=0 rate=0.002488 ci90=[0.002387,0.002591] RARE",,וספריואל,,2,NEEDS_RARE
+e33-lastphrase,VIII 3,2-3-4,Milik 1962,וספרין אל תב֯ס֯,Wolters 1994,wspry wʾlt ks[p],וספרינאלתבס,וספריואלתכספ,RESTORATION,"נ→ו ו–נ loo=4 rate=0.012438 ci90=[0.004938,0.021531] COMMON | ב→כ ב–כ loo=26 rate=0.067164 ci90=[0.049751,0.084951] COMMON",,פ,,0,OK
+e35-kidron,VIII 8,4,Puech 2015; Allegro,הקדרון,Milik,הקדרוה,הקדרונ,הקדרוה,SHAPE,"נ→ה ה–נ loo=2 rate=0.007371 ci90=[0.002451,0.014388] UNCOMMON",,,,0,OK
+e35-kidron,VIII 8,4,Puech 2015; Allegro,הקדרון,Wolters; Pixner,הקדרות,הקדרונ,הקדרות,SHAPE,"נ→ת נ–ת loo=3 rate=0.009828 ci90=[0.002591,0.01699] COMMON",,,,0,OK
+e35-kidron,VIII 8,4,Milik,הקדרוה,Wolters; Pixner,הקדרות,הקדרוה,הקדרות,SHAPE,"ה→ת ה–ת loo=16 rate=0.041769 ci90=[0.026895,0.056338] COMMON",,,,0,OK
+e36-shelaf,VIII 10,0,Puech 2015; Lefkovits 2000,שלף,Allegro,bšly,שלפ,בשלי,SHAPE,"פ→י י–פ loo=1 rate=0.004902 ci90=[0.002381,0.009804] UNCOMMON",,ב,,0,OK
+e37-irrigated,VIII 14,0,Milik; Puech 2015,ברוי,Lefkovits 2000,בדין,ברוי,בדינ,OTHER,"ר→ד ד–ר loo=11 rate=0.029557 ci90=[0.017544,0.042553] COMMON | י→נ י–נ loo=2 rate=0.007389 ci90=[0.002439,0.014599] UNCOMMON",ו→י loo_places=37 MATRES,,,0,OK
+e37-irrigated,VIII 14,0,Milik; Puech 2015,ברוי,Beyer,bdwr,ברוי,בדור,SHAPE,"ר→ד ד–ר loo=11 rate=0.029557 ci90=[0.017544,0.042553] COMMON | י→ר י–ר loo=2 rate=0.007389 ci90=[0.002451,0.014218] UNCOMMON",,,,0,OK
+e37-irrigated,VIII 14,0,Lefkovits 2000,בדין,Beyer,bdwr,בדינ,בדור,SHAPE,"נ→ר נ–ר loo=1 rate=0.004926 ci90=[0.002387,0.009852] UNCOMMON",י→ו loo_places=37 MATRES,,,0,OK
+e38-netophah,IX 1,1-2,Milik 1960,הנטף,Milik 1962,שולי,הנטפ,שולי,OTHER,"ה→ש ה–ש loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | נ→ו ו–נ loo=5 rate=0.01467 ci90=[0.007126,0.024631] COMMON | ט→ל ט–ל loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | פ→י י–פ loo=2 rate=0.007335 ci90=[0.002433,0.013636] UNCOMMON",,,,2,NEEDS_RARE
+e38-holes,IX 2,3-4,Puech 2006,חפורות,Beyer 1994 (Wilmot follows),חפור אמ{ש}ות שבע,חפורות,חפוראמשותשבע,OTHER,,,אמששבע,,0,NO_SHAPE_CHANGE
+e38-bars,IX 3,0,Puech 2006; Puech 2015,בדין,Lefkovits 2000,כדין,בדינ,כדינ,SHAPE,"ב→כ ב–כ loo=25 rate=0.063882 ci90=[0.045894,0.082725] COMMON",,,,0,OK
+e38-bars,IX 3,0,Puech 2006; Puech 2015,בדין,Wilmot; Muchowski,[כ]כרין,בדינ,ככרינ,RESTORATION,"ב→כ ב–כ loo=25 rate=0.063882 ci90=[0.045894,0.082725] COMMON | ד→ר ד–ר loo=11 rate=0.029484 ci90=[0.017413,0.043038] COMMON",,כ,,0,OK
+e38-bars,IX 3,0,Lefkovits 2000,כדין,Wilmot; Muchowski,[כ]כרין,כדינ,ככרינ,RESTORATION,"ד→ר ד–ר loo=11 rate=0.029484 ci90=[0.017413,0.043038] COMMON",,כ,,0,OK
+e39-terrace,IX 4,0-1,Puech 2006,bḥblt,Puech 2002,בחבלה,בחבלת,בחבלה,SHAPE,"ת→ה ה–ת loo=15 rate=0.039409 ci90=[0.025126,0.053659] COMMON",,,,0,OK
+e40-horon,IX 7,0-1,Puech 2006,החורין,Milik 1962,החורוׄן,החורינ,החורונ,MATRES,,י→ו loo_places=38 MATRES,,,0,NO_SHAPE_CHANGE
+e40-side,IX 7,2,Puech 2006; Milik 1962 drawing,ברוח,Milik 1962,ב<צ>ריח,ברוח,בצריח,OTHER,,ו→י loo_places=38 MATRES,צ,,0,NO_SHAPE_CHANGE
+e40-direction,IX 7,3-4,Milik 1962; Lefkovits 2000,ים,Puech 2006,דרום,ימ,דרומ,OTHER,,י→ו loo_places=38 MATRES,דר,,0,NO_SHAPE_CHANGE
+e42-kephar-nebo,IX 11,3-4,Puech 2015,lkpt byb,Milik 1962,כפר נבו,לכפתביב,כפרנבו,OTHER,"ת→ר ר–ת loo=0 rate=0.002451 ci90=[0.002347,0.002558] RARE | ב→נ ב–נ loo=1 rate=0.004902 ci90=[0.002392,0.00978] UNCOMMON | י→ב ב–י loo=1 rate=0.004902 ci90=[0.002404,0.009615] UNCOMMON | ב→ו ב–ו loo=1 rate=0.004902 ci90=[0.002381,0.009804] UNCOMMON",,,ל,1,NEEDS_RARE
+e42-east,IX 12,0,Milik 1962,מזרח,Puech 2006,מרחב,מזרח,מרחב,OTHER,,,ב,ז,0,NO_SHAPE_CHANGE
+e45-cistern,X 3,0-1,Puech 2015,בור גר,Milik,bkyrgr,בורגר,בכירגר,OTHER,,ו→י loo_places=37 MATRES,כ,,0,NO_SHAPE_CHANGE
+e45-channels,X 3,2-3,Puech 2015,מזקות,Puech 2006,מזקות שרוי,מזקות,מזקותשרוי,OTHER,,,שרוי,,0,NO_SHAPE_CHANGE
+e46-bet-hakerem,X 5,0-1-2,Milik 1962,אשיח,Milik 1962,בית הכרם,אשיח,ביתהכרמ,OTHER,"א→ה א–ה loo=1 rate=0.00489 ci90=[0.002387,0.009662] UNCOMMON | ש→כ כ–ש loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | י→ר י–ר loo=3 rate=0.00978 ci90=[0.002545,0.017327] COMMON | ח→מ ח–מ loo=1 rate=0.00489 ci90=[0.002392,0.009639] UNCOMMON",,בית,,1,NEEDS_RARE
+e46-feet,X 6,2-3,Puech 2006; Lefkovits 2000,אמות,Milik 1962,רגמות,אמות,רגמות,SHAPE,"א→ג א–ג loo=1 rate=0.004902 ci90=[0.002375,0.009852] UNCOMMON",,ר,,0,OK
+e47-valley,X 8,2-3,Milik 1956–57 (org.),גיחן,Milik 1962 (Addenda),גי איך,גיחנ,גיאיכ,OTHER,"ח→י ח–י loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | נ→כ כ–נ loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE",,א,,2,NEEDS_RARE
+e47-valley,X 8,2-3,Milik 1956–57 (org.),גיחן,Wolters,גי זרד,גיחנ,גיזרד,OTHER,"ח→ר ח–ר loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | נ→ד ד–נ loo=1 rate=0.00489 ci90=[0.002398,0.009569] UNCOMMON",,ז,,1,NEEDS_RARE
+e47-valley,X 8,2-3,Milik 1962 (Addenda),גי איך,Wolters,גי זרד,גיאיכ,גיזרד,OTHER,"א→ז א–ז loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | י→ר י–ר loo=3 rate=0.00978 ci90=[0.002545,0.017327] COMMON | כ→ד ד–כ loo=1 rate=0.00489 ci90=[0.002381,0.009804] UNCOMMON",,,,1,NEEDS_RARE
+e47-west-or-spring,X 8,4-5,Milik 1962,המערבי,Puech 2006,מעינו,המערבי,מעינו,OTHER,"ר→י י–ר loo=3 rate=0.00978 ci90=[0.002545,0.017327] COMMON | ב→נ ב–נ loo=1 rate=0.00489 ci90=[0.002387,0.009756] UNCOMMON",י→ו loo_places=38 MATRES,,ה,0,OK
+e47-west-or-spring,X 8,4-5,Milik 1962,המערבי,Puech 2015,בצריח מעינו,המערבי,בצריחמעינו,OTHER,"ה→ח ה–ח loo=21 rate=0.05379 ci90=[0.037647,0.070732] COMMON | ר→י י–ר loo=3 rate=0.00978 ci90=[0.002545,0.017327] COMMON | ב→נ ב–נ loo=1 rate=0.00489 ci90=[0.002387,0.009756] UNCOMMON",י→ו loo_places=38 MATRES,בצרי,,0,OK
+e47-west-or-spring,X 8,4-5,Puech 2006,מעינו,Puech 2015,בצריח מעינו,מעינו,בצריחמעינו,OTHER,,,בצריח,,0,NO_SHAPE_CHANGE
+e48-feet,X 13,2,Puech 2006; Lefkovits 2000,אמות,Milik 1962,רגמות,אמות,רגמות,SHAPE,"א→ג א–ג loo=1 rate=0.004902 ci90=[0.002381,0.009804] UNCOMMON",,ר,,0,OK
+e49-outlet,X 15,0-1-2,Puech 2006,יציאת המים,Milik 1962,בית חמים,יציאתהמימ,ביתחמימ,SHAPE,"צ→ב ב–צ loo=0 rate=0.002457 ci90=[0.002347,0.002571] RARE | ה→ח ה–ח loo=20 rate=0.051597 ci90=[0.036585,0.068293] COMMON",,,יא,1,NEEDS_RARE
+e50-four-corners,X 17,3,Milik 1962 (Addenda),מקצועותיהם,Schiffman 2002,מקצוע,מקצועותיהמ,מקצוע,OTHER,,,,ותיהמ,0,NO_SHAPE_CHANGE
+e52-first-word,XI 5,0,Puech; Beyer,הכסח,Milik,הבסה,הכסח,הבסה,SHAPE,"כ→ב ב–כ loo=25 rate=0.064039 ci90=[0.046272,0.08216] COMMON | ח→ה ה–ח loo=20 rate=0.051724 ci90=[0.036364,0.068796] COMMON",,,,0,OK
+e52-first-word,XI 5,0,Puech; Beyer,הכסח,Lefkovits 2000,תבסת,הכסח,תבסת,OTHER,"ה→ת ה–ת loo=16 rate=0.041872 ci90=[0.027228,0.055838] COMMON | כ→ב ב–כ loo=25 rate=0.064039 ci90=[0.046272,0.08216] COMMON | ח→ת ח–ת loo=10 rate=0.027094 ci90=[0.015152,0.039216] COMMON",,,,0,OK
+e52-first-word,XI 5,0,Milik,הבסה,Lefkovits 2000,תבסת,הבסה,תבסת,SHAPE,"ה→ת ה–ת loo=16 rate=0.041872 ci90=[0.027228,0.055838] COMMON | ה→ת ה–ת loo=16 rate=0.041872 ci90=[0.027228,0.055838] COMMON",,,,0,OK
+e52-slab,XI 6,4-5,Research lexicon (Phase 2),מסמא,Lefkovits 2000,מסבה,מסמא,מסבה,SHAPE,"מ→ב ב–מ loo=10 rate=0.026961 ci90=[0.016055,0.039506] COMMON | א→ה א–ה loo=1 rate=0.004902 ci90=[0.002392,0.009732] UNCOMMON",,,,0,OK
+e52-last-phrase,XI 7,1-2-3-4,Puech,{ב(ק)},Milik,שלוח,בק,שלוח,OTHER,"ב→ו ב–ו loo=1 rate=0.004902 ci90=[0.002375,0.009852] UNCOMMON | ק→ח ח–ק loo=0 rate=0.002451 ci90=[0.002347,0.002558] RARE",,של,,1,NEEDS_RARE
+e52-last-phrase,XI 7,1-2-3-4,Puech,{ב(ק)},Lefkovits 2000,ככ,בק,ככ,OTHER,"ב→כ ב–כ loo=26 rate=0.066176 ci90=[0.048544,0.084541] COMMON | ק→כ כ–ק loo=1 rate=0.004902 ci90=[0.00241,0.009592] UNCOMMON",,,,0,OK
+e52-last-phrase,XI 7,1-2-3-4,Milik,שלוח,Lefkovits 2000,ככ,שלוח,ככ,OTHER,"ו→כ ו–כ loo=0 rate=0.002451 ci90=[0.002347,0.002558] RARE | ח→כ ח–כ loo=0 rate=0.002451 ci90=[0.002347,0.002558] RARE",,,של,2,NEEDS_RARE
+e54-whose-tomb,XI 9,1-2,Puech 2006,בני העמ,Milik,בני העב֯ט,בניהעמ,בניהעבט,SHAPE,"מ→ט ט–מ loo=0 rate=0.002469 ci90=[0.002358,0.002577] RARE",,ב,,1,NEEDS_RARE
+e54-jericho-or-pure,XI 9,3-4,Puech 2006,ירחו,Milik,הירחי,ירחו,הירחי,OTHER,,ו→י loo_places=37 MATRES,ה,,0,NO_SHAPE_CHANGE
+e54-jericho-or-pure,XI 9,3-4,Puech 2006,ירחו,Wolters 1994,thwrty bw,ירחו,תהורתיבו,OTHER,"ח→ב ב–ח loo=1 rate=0.004902 ci90=[0.002375,0.009877] UNCOMMON",י→ו loo_places=37 MATRES,תהתי,,0,OK
+e54-jericho-or-pure,XI 9,3-4,Milik,הירחי,Wolters 1994,thwrty bw,הירחי,תהורתיבו,OTHER,"ח→ת ח–ת loo=10 rate=0.026961 ci90=[0.015152,0.038647] COMMON",י→ו loo_places=37 MATRES,תבו,,0,OK
+e55-bethesda,XI 12,0-1,Puech 2006; Lefkovits 2000,בית האשוחין,Milik 1962,בית אשדתין,ביתהאשוחינ,ביתאשדתינ,SHAPE,"ו→ד ד–ו loo=1 rate=0.004926 ci90=[0.002439,0.009615] UNCOMMON | ח→ת ח–ת loo=10 rate=0.027094 ci90=[0.015306,0.039312] COMMON",,,ה,0,OK
+e55-smallest-basin,XI 13,1,Milik; Puech 2015,לימומית,"Allegro, Luria, Wolters",lw mymwt,לימומית,לומימות,MATRES,,י→ו loo_places=37 MATRES | ו→י loo_places=37 MATRES | י→ו loo_places=37 MATRES,,,0,NO_SHAPE_CHANGE
+e56-entrance-or-alley,XI 16,0,Research lexicon (Phase 2),מבא,Research lexicon (Phase 2),מבוא,מבא,מבוא,MATRES,,,ו,,0,NO_SHAPE_CHANGE
+e56-cave,XI 17,2,Puech 2006,m[ʿrh (printed),Puech 2006,m[ʿrʾ] (commentary),מערהפרנתד,מעראממנתרי,RESTORATION,"ה→א א–ה loo=1 rate=0.00489 ci90=[0.002387,0.009662] UNCOMMON | פ→מ מ–פ loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ר→מ מ–ר loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ד→י ד–י loo=1 rate=0.00489 ci90=[0.002415,0.009592] UNCOMMON",,ר,,2,NEEDS_RARE
+e56-juglets,XII 2,3,Puech 2006; Wolters 1994,כוזין,Milik,בידן,כוזינ,בידנ,OTHER,"ו→ב ב–ו loo=1 rate=0.00489 ci90=[0.002375,0.00978] UNCOMMON | ז→י ז–י loo=6 rate=0.017115 ci90=[0.0075,0.02716] COMMON | י→ד ד–י loo=1 rate=0.00489 ci90=[0.002415,0.009592] UNCOMMON",,,כ,0,OK
+e56-niche-or-cistern,XII 3,0,Puech 2006; Puech 2015,כוך,Milik 1962,בור,כוכ,בור,OTHER,"כ→ב ב–כ loo=25 rate=0.063882 ci90=[0.045685,0.08076] COMMON | כ→ר כ–ר loo=0 rate=0.002457 ci90=[0.002353,0.002564] RARE",,,,1,NEEDS_RARE
+e57-gerizim,XII 4,0-1,Lefkovits 2000,גריזין,The scroll (per the findings log),גויזין,גריזינ,גויזינ,SHAPE,"ר→ו ו–ר loo=3 rate=0.00978 ci90=[0.002577,0.016867] COMMON",,,,0,OK
+e57-upper-pit,XII 4,5-6,Puech 2006,השוח[[ה]],Puech 2015,šwḥ(h),השוחה,שוחה,OTHER,,,,ה,0,NO_SHAPE_CHANGE
+e57-upper-pit,XII 4,5-6,Puech 2006,השוח[[ה]],Lefkovits 2000,השית,השוחה,השית,OTHER,"ח→י ח–י loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ה→ת ה–ת loo=16 rate=0.041565 ci90=[0.027228,0.056098] COMMON",,,ו,1,NEEDS_RARE
+e57-upper-pit,XII 4,5-6,Puech 2006,השוח[[ה]],Milik 1962,šyt,השוחה,שית,OTHER,"ח→י ח–י loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ה→ת ה–ת loo=16 rate=0.041565 ci90=[0.027228,0.056098] COMMON",,,הו,1,NEEDS_RARE
+e57-upper-pit,XII 4,5-6,Puech 2006,השוח[[ה]],Allegro,šyḥ,השוחה,שיח,OTHER,,ו→י loo_places=38 MATRES,,הה,0,NO_SHAPE_CHANGE
+e57-upper-pit,XII 4,5-6,Puech 2015,šwḥ(h),Lefkovits 2000,השית,שוחה,השית,OTHER,"ש→ה ה–ש loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ו→ש ו–ש loo=1 rate=0.00489 ci90=[0.002375,0.00978] UNCOMMON | ח→י ח–י loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ה→ת ה–ת loo=16 rate=0.041565 ci90=[0.027228,0.056098] COMMON",,,,2,NEEDS_RARE
+e57-upper-pit,XII 4,5-6,Puech 2015,šwḥ(h),Milik 1962,šyt,שוחה,שית,OTHER,"ח→י ח–י loo=0 rate=0.002445 ci90=[0.002342,0.002558] RARE | ה→ת ה–ת loo=16 rate=0.041565 ci90=[0.027228,0.056098] COMMON",,,ו,1,NEEDS_RARE
+e57-upper-pit,XII 4,5-6,Puech 2015,šwḥ(h),Allegro,šyḥ,שוחה,שיח,OTHER,,ו→י loo_places=38 MATRES,,ה,0,NO_SHAPE_CHANGE
+e57-upper-pit,XII 4,5-6,Lefkovits 2000,השית,Milik 1962,šyt,השית,שית,OTHER,,,,ה,0,NO_SHAPE_CHANGE
+e57-upper-pit,XII 4,5-6,Lefkovits 2000,השית,Allegro,šyḥ,השית,שיח,SHAPE,"ת→ח ח–ת loo=11 rate=0.02934 ci90=[0.017413,0.041565] COMMON",,,ה,0,OK
+e57-upper-pit,XII 4,5-6,Milik 1962,šyt,Allegro,šyḥ,שית,שיח,SHAPE,"ת→ח ח–ת loo=11 rate=0.02934 ci90=[0.017413,0.041565] COMMON",,,,0,OK
