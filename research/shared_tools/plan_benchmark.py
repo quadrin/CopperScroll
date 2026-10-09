@@ -41,14 +41,22 @@ def measure_case(case):
     for target in case['targets']:
         if set(target) != {'id', 'endpoints_px'}:
             raise ValueError('Target must contain coordinates only')
+        if target['endpoints_px'] is None:
+            continue
         length = distance(target['endpoints_px'])
         targets.append({'id': target['id'], 'pixel_length': length,
                         'predicted_metres': length * metres / scale_px,
                         'digitization_only_interval_metres': [max(0, length - 4) * metres / (scale_px + 4),
                                                              (length + 4) * metres / (scale_px - 4)]})
+    if len(targets) != 2:
+        return {'id': case['id'], 'status': 'unmeasurable',
+                'scale_pixel_length': scale_px, 'metres_per_pixel': metres / scale_px,
+                'available_chords': targets,
+                'reason': 'Both floor spans are required to identify the longer primary chord'}
     targets.sort(key=lambda t: t['predicted_metres'], reverse=True)
     return {'id': case['id'], 'scale_pixel_length': scale_px,
-            'metres_per_pixel': metres / scale_px, 'primary': targets[0], 'diagnostic': targets[1]}
+            'status': 'measured', 'metres_per_pixel': metres / scale_px,
+            'primary': targets[0], 'diagnostic': targets[1]}
 
 
 def predict(packet):
@@ -72,6 +80,10 @@ def grade(predictions, references):
         dimensions = sorted([positive(v) for v in reference['dimensions_metres']], reverse=True)
         if len(dimensions) != 2:
             raise ValueError('Expected two reference dimensions')
+        if case['status'] == 'unmeasurable':
+            results.append({**case, 'reference_dimensions_metres': dimensions,
+                            'screening_flag': 'unmeasurable'})
+            continue
         comparisons = {}
         for key, answer in zip(('primary', 'diagnostic'), dimensions):
             measurement = case[key]
