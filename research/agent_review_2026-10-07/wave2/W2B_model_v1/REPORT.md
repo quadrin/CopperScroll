@@ -8,6 +8,8 @@ the search specifications with the follow-up and supersedes the historical
 entry-60 records. The tables and heuristic probabilities below retain their
 original agent-report scope; no target probability or confidence upgrade is claimed.
 
+**9 October v2 run (exploratory):** [inputs_v2/](inputs_v2/) adds entry 60 at Kh. Qumran (project model M-QUMRAN, not a published Koḥlit proposal) and entry 25 at Abu Saraj cave IV/17. Under K2 these give P(25 at IV/17) = 0.18 and P(60 at kh_qumran) = 0.033 ([README_v2](../../../models/search_effectiveness/README_v2.md), [outputs_v2/](outputs_v2/)). The v1 inputs and outputs are unchanged.
+
 Agent report, 7 October 2026, saved by the coordinator (the agent could not write report files). Wave-1 files were read only. Labels: EVIDENCE / INFERENCE.
 
 ## What was done

@@ -1,6 +1,8 @@
 W2-C: KOHLIT CANDIDATES TESTED AGAINST THE SCROLL'S FEATURES
 Agent report, 6 October 2026. Labels: EVIDENCE (what a source says, with page) and INFERENCE (my reasoning, with a confidence level). Period window: 1st c. BCE to 1st c. CE, extended to 135 CE. Nothing here is a new find. Every page number was checked against the PDF or text. "Not seen" means I did not read that source.
 
+9 October 2026 UTC label note (integrator): status A and the data value ABSENT_IN_SOURCES mean 'not mentioned in the sources read'. They do not mean that anyone checked the ground and found the feature missing. Treat them as silence, never as absence. See research/models/search_effectiveness/README.md and research/rarity/kohlit/observation_process/README.md. No cell, score or ranking is changed.
+
 BOTTOM LINE
 - Ranking on archaeology alone: (1) Tell es-Sultan, (2) Ein Samiya / Kh. el-Marjama, then four candidates with almost no usable data (Tell Muhalhil, Beit Kahil, Kh. Quhlet, Mount Zion).
   The gap between the first two is small and depends on how the criteria are weighted (score 6.75 vs 5.95 out of 12.5). The order flips if the desert and place-name criteria count for more and the pool's direction counts for less. Confidence: low-medium.
@@ -27,7 +29,7 @@ F8-F9: Hellenistic-Early Roman occupation; Jewish presence.
 F10-F11 (context): "Kohalit in the desert" (b. Qid. 66a); a surviving name with the root k-h-l.
 
 2. FEATURE MATRIX (full cells with sources in data/feature_matrix.csv and .json)
-Status key: D = present and dated in period; U = present but undated or out of period; P = partial or contradicting; A = absent in the sources read; ? = not covered.
+Status key: D = present and dated in period; U = present but undated or out of period; P = partial or contradicting; A = absent in the sources read (silence: not mentioned, not a checked absence); ? = not covered.
 Columns: Tell es-Sultan | Ein Samiya/Marjama | Tell Muhalhil | Beit Kahil | Kh. Quhlet | Mt Zion
 F1 tel             D | U | P | A | ? | A
 F2 conduit         U | U | ? | ? | ? | ?

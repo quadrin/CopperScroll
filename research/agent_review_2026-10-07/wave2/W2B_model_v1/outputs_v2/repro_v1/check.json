@@ -1,0 +1,76 @@
+{
+ "kernel_sensitivity_byte_equal_to_w2b_script_rerun_here": true,
+ "kernel_sensitivity_csv_byte_equal": false,
+ "kernel_sensitivity_sha256": "a7fa98d310dd346026dbc9d319c9cfa248ff8a0590809a07b980e02365b7f7cc",
+ "kernel_sensitivity_vs_outputs_fixed": {
+  "max_abs_diff": 1.4210854715202004e-14,
+  "max_rel_diff": 2.4273746062294585e-15,
+  "rows": 30,
+  "rows_byte_equal": 22,
+  "structure_equal": true
+ },
+ "kernel_sensitivity_within_tolerance": true,
+ "kernel_validation_recorded_vs_current_sha256": {
+  "inputs/candidates_v0.csv": {
+   "current": "349ed22ca27ff9127ffaf0bfff53d0e4ba5900f138d40df500944f74e120042b",
+   "equal": false,
+   "recorded": "3b217305b030c918c33ac43f16f8cdc0ac6f8c47ca932a364984709e907df26b"
+  },
+  "inputs/candidates_v1.csv": {
+   "current": "252522510a44c137387074bb0530eeceecb76e631338406cef9aaafa343f5913",
+   "equal": false,
+   "recorded": "5c73c7620a0c378029908589411fa5b8d99c398256cd6950aea50e0e75d4589d"
+  },
+  "inputs/entries_v0.csv": {
+   "current": "7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0",
+   "equal": false,
+   "recorded": "5107dbe9cd22c34aa325b9515aac87945e59e6c47b7558827d0e35e6c77bce2c"
+  },
+  "inputs/entries_v1.csv": {
+   "current": "7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0",
+   "equal": false,
+   "recorded": "5107dbe9cd22c34aa325b9515aac87945e59e6c47b7558827d0e35e6c77bce2c"
+  },
+  "inputs/kohlit_proposals_v1.csv": {
+   "current": "21001790432bcca973bb7dd8464cb407a3647893e6db06c0db80ae9bab963feb",
+   "equal": false,
+   "recorded": "db1ae5707fcc6f226220eed4baf7f65f6ecc03fb74b74eb4a873bd042c43aee3"
+  },
+  "inputs/name_groups_v0.csv": {
+   "current": "296514c5a8a3660ca9bd2a2e7a45d113059c35baae23f6bec2dd991d7f981566",
+   "equal": false,
+   "recorded": "7db69e6a336412ac1978efb2c74f66f90b4cb8bf5c6143012a6b5696fe698e17"
+  },
+  "inputs/name_groups_v1.csv": {
+   "current": "82a7d44b299ee6f7ccf3b43a14aad6d4b429f7a264a11ce0e012831a02b2cc28",
+   "equal": false,
+   "recorded": "09e9aed6ece43bb1a081534e953f041761a3d9d983ba34294c5da5242fa4c36c"
+  },
+  "inputs/places_v0.csv": {
+   "current": "586ba9c2b589b51255a7b0cbd962498d0373f9ca6e7807d6a38f6c85c2f8f3b3",
+   "equal": false,
+   "recorded": "2c2e762dee0601701449f5876e348836e647b7fbd613f3d7be78a1ca6862e1dc"
+  },
+  "inputs/places_v1.csv": {
+   "current": "996e59b3bf5f72d8ee9a6165f12341eb46b95a84b6d1de576b24d7ae918130e3",
+   "equal": false,
+   "recorded": "fc1125e91e82009fa224fcf98450b22216754d4ecec7e74d416a3b9e65d17288"
+  },
+  "scripts/check_order_kernel.py": {
+   "current": "c1a6416ada62311efc8fb7bb2d2bffce6b97ac0b39abbb8046acb7b241fbe211",
+   "equal": true,
+   "recorded": "c1a6416ada62311efc8fb7bb2d2bffce6b97ac0b39abbb8046acb7b241fbe211"
+  },
+  "scripts/joint_model_v1.py": {
+   "current": "702e69c0e793c38002efa72230748435b6f02476f2f5da8a389a107d94d4c6b6",
+   "equal": false,
+   "recorded": "79c2f62966506840033f3ccb22315c7297e775c9a702289909e3769233bc9040"
+  }
+ },
+ "layer_wrapper_on_v1_equals_results_json": true,
+ "note": "kernel_validation.json stores SHA-256 values of the files used for outputs_fixed; the comparison says which committed files still carry those exact bytes. The numbers are compared directly above.",
+ "numpy_version": "2.5.3",
+ "runner": "research/models/search_effectiveness/run_v2.py kernel_rows() and v0_check_text() on W2B inputs/ (v0, v1)",
+ "tolerance_abs": 1e-12,
+ "v0_reproduction_check_json_byte_equal": true
+}

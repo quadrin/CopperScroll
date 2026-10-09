@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "id": "entry25-iv17-rules",
+  "version": 1,
+  "written_utc_date": "2026-10-09",
+  "worker": "rule-freezer",
+  "status": "frozen_exploratory",
+  "companion": "RULES.md",
+  "disagreement_rule": "If rules.json and RULES.md disagree, the affected verdict is reported as inconclusive and the disagreement is logged.",
+  "scope": "Entry 25 mouth-aspect rule for every Entry 25 roster cave, and model declarations for the eight IV/17 coverage branches. Exploratory. No identification claim. No registered result changes.",
+  "labels": {
+    "EVIDENCE": "observed in a cited source",
+    "INFERENCE": "reasoned from evidence",
+    "ASSUMPTION": "a declared project choice"
+  },
+  "exposure": [
+    {"id": "X1", "label": "EVIDENCE", "exposed": true, "text": "Sion 2002 Plan 5 chord-normal proxies about 123 deg (northern) and 119 deg (southern) from the drawn arrow; endpoint ranges 99.5-140.8 and 104.0-132.4 deg; pilot envelopes 101-151 and 103-143 deg; north convention unspecified.", "source": "research/assessments/entry25_iv17/assessment.json"},
+    {"id": "X2", "label": "EVIDENCE", "exposed": true, "text": "Northern-minus-southern midpoint offset about 2.63 m north and 3.30 m east; northern present chord about 0.86 m (0.59-1.16 m); Plan 5 shows no excavation limits; Sion p. 63 places the excavation at the centres of both spaces.", "source": "research/assessments/entry25_iv17/README.md; research/feature_workbench/coverage/volume_inputs.json"},
+    {"id": "X3", "label": "EVIDENCE", "exposed": true, "text": "Bar-Adon describes both Twin Cave openings as east-facing; Feig describes IV/11's internal pillar without a documented exterior pair.", "source": "research/sources/entry25_direction_review_2026-10-02.md"},
+    {"id": "X4", "label": "INFERENCE", "exposed": true, "text": "Disclosure: the northern endpoint range already crosses the 135 deg edge of the primary east sector; the line joining the IV/17 mouth midpoints runs roughly north-east to south-west. No verdict of these rules was computed on any real record."},
+    {"id": "X5", "label": "EVIDENCE", "exposed": false, "text": "Not seen: the L-656 file, any IAA cave record, and the unread Atiqot 41 cave entries named in the IAA item file."}
+  ],
+  "aspect_rule": {
+    "id": "e25-aspect-v1",
+    "text_basis": [
+      {"label": "EVIDENCE", "text": "VI 2 reads [ה]פתחין הצופא מזרח in the project text; Puech prints the article before צופא as an editorial correction.", "source": "research/measurements/cycle4/puech_entry25.md"},
+      {"label": "EVIDENCE", "text": "Milik 1960 p. 140 attaches the eastward aspect to the cave; Puech 2015 pp. 59-60 gives no explicit two-mouth requirement.", "source": "research/sources/entry25_direction_review_2026-10-02.md"}
+    ],
+    "candidates": ["iv17", "iv11", "twin"],
+    "candidates_note": "The same rule applies to every Entry 25 roster cave and to any cave added later.",
+    "record_identity": "A record counts for a cave only if it names the cave's survey number or a recorded crosswalk links them; otherwise it is silent for that cave.",
+    "azimuth": {"unit": "deg", "zero": "true_north", "direction": "clockwise", "range": [0.0, 360.0]},
+    "north_reference": {
+      "target": "true_north",
+      "label": "ASSUMPTION",
+      "reason": "East (the side of sunrise) is an astronomical direction.",
+      "record_fields": ["north_case", "correction_deg", "correction_source", "allowance_deg"],
+      "cases": [
+        {"id": "true", "applies_when": "true north stated", "correction": "none", "allowance_deg": 0.0},
+        {"id": "grid", "applies_when": "grid north (Old Israel Grid, ITM, Palestine grid)", "correction": "add_grid_convergence",
+         "formula": "gamma_deg = (lon_site_deg - lon_central_meridian_deg) * sin(lat_site)", "allowance_deg": 0.5,
+         "note": "INFERENCE: both Israeli grids have a central meridian near 35.2 E; near 35.4 E, 31.8 N the convergence is near 0.1 deg."},
+        {"id": "magnetic_stated", "applies_when": "magnetic north with a stated declination", "correction": "add_stated_declination_east_positive", "allowance_deg": 1.0},
+        {"id": "magnetic_year", "applies_when": "magnetic north, survey year known", "correction": "add_igrf_declination_for_year_and_place_east_positive", "allowance_deg": 1.0},
+        {"id": "unspecified", "applies_when": "north convention not stated (for example Plan 5's arrow)", "correction": "none", "allowance_deg": 6.0,
+         "sensitivity_allowance_deg": [3.0, 10.0], "label": "ASSUMPTION",
+         "reason": "A magnetic arrow would put true direction a few degrees east in recent decades; a symmetric 6 deg also covers a grid or true mix-up. Check against IGRF before use."}
+      ]
+    },
+    "mouth_measure": {
+      "primary": {
+        "id": "outer-chord-normal",
+        "definition": "Outward normal of the aperture chord joining the two rock-cut jamb points of the mouth.",
+        "chord": "Narrowest rock-cut section at the threshold level when drawn; otherwise where the drawn mouth line meets each jamb.",
+        "outward": "The side away from the chamber the mouth leads into.",
+        "masonry": "Excluded. A partly blocked mouth is measured on its rock-cut jambs. A hidden or undrawn rock-cut jamb makes the mouth not measurable."
+      },
+      "sensitivity": [
+        {"id": "passage-axis", "definition": "From the midpoint of the inner chord to the midpoint of the outer chord; only where a passage is drawn. Reported only."}
+      ]
+    },
+    "uncertainty": {
+      "half_width_formula": "h = asin(min(1, 2r/L)) + asin(min(1, 2e/La)) + d + n",
+      "full_circle_when": ["2r >= L", "2e >= La"],
+      "endpoint_radius_m": {
+        "primary": 0.10, "sensitivity": [0.05, 0.20], "label": "ASSUMPTION",
+        "floors": ["record's stated survey precision", "0.5 mm at the printed scale", "2 px on a raster"],
+        "rule": "r = max(primary, floors)",
+        "reason": "Rock-cut jamb edges are ragged at the decimetre scale; the repository's Plan 5 repeat used +/-5-6 px (about +/-0.09-0.11 m) per coordinate."
+      },
+      "north_arrow_endpoint": {
+        "printed_mm": 0.5, "raster_px": 2.0, "grid_instead_of_arrow": 0.0, "label": "ASSUMPTION",
+        "reason": "The Plan 5 repeat used +/-2 px for the arrow endpoints."
+      },
+      "distortion_deg": {
+        "scanned_or_printed": 1.0, "digital_coordinates": 0.0, "sensitivity": [0.0, 3.0], "label": "ASSUMPTION",
+        "reason": "A flat scan of a printed plan keeps angles to about a degree."
+      },
+      "reported_azimuth_precision_deg": {
+        "primary": 10.0, "sensitivity": [5.0, 15.0], "label": "ASSUMPTION",
+        "rule": "h = (stated precision or primary) + n",
+        "reason": "Compass readings on irregular cave mouths."
+      },
+      "compass_word": {
+        "half_width_deg": {"4": 45.0, "8": 22.5, "16": 11.25},
+        "centres_deg": {"N": 0.0, "NNE": 22.5, "NE": 45.0, "ENE": 67.5, "E": 90.0, "ESE": 112.5, "SE": 135.0, "SSE": 157.5,
+                        "S": 180.0, "SSW": 202.5, "SW": 225.0, "WSW": 247.5, "W": 270.0, "WNW": 292.5, "NW": 315.0, "NNW": 337.5},
+        "unknown_resolution": "8 if the record uses any intercardinal word, otherwise 4",
+        "north_allowance_added": false,
+        "sensitivity": "add the north allowance n",
+        "label": "ASSUMPTION",
+        "reason": "A compass word's bin is far wider than any north offset."
+      }
+    },
+    "direction_words": [
+      {
+        "word": "east", "hebrew": "מזרח", "role": "facing",
+        "primary_sector_deg": [45.0, 135.0],
+        "primary_label": "ASSUMPTION",
+        "primary_reason": "Four-wind partition: with only four direction words, a facing nearer east than north or south is east.",
+        "primary_evidence": {"label": "EVIDENCE", "text": "The project translation uses only the four cardinal words and no intercardinal compound.", "source": "text/translation_en.json"},
+        "sensitivity_sectors": [
+          {"id": "eight-wind", "deg": [67.5, 112.5], "label": "ASSUMPTION", "reason": "A stricter reader who would call a north-east facing north-east."},
+          {"id": "sunrise-arc", "deg": [62.0, 118.0], "label": "INFERENCE", "reason": "The word is built on the root for the sun's rising; solstice sunrise azimuths at the sites.",
+           "latitude_deg": 31.8, "obliquity_deg": [23.44, 23.7], "formula": "acos(sin(obliquity)/cos(latitude))", "horizon": "flat, no refraction"},
+          {"id": "ne-e-se", "deg": [22.5, 157.5], "label": "ASSUMPTION", "reason": "A loose reader who calls any eastern-side facing east."}
+        ]
+      },
+      {
+        "word": "northern", "hebrew": "צפוני", "role": "designation",
+        "primary_sector_deg": null,
+        "rule": "northern_member_rule",
+        "label": "INFERENCE",
+        "reason": "The northern opening is the northern member of the pair; it need not face north (direction review). A facing-north reading is not a retained branch."
+      }
+    ],
+    "northern_member_rule": {
+      "delta": "northing(Ma) - northing(Mb) in true north, Ma and Mb the mouth-chord midpoints",
+      "rotation_allowance": "alpha = asin(min(1, 2e/La)) + d + n",
+      "interval": "range of delta over north directions within +/-alpha, widened by +/-2r",
+      "decided": "Ma is northern if the whole interval is above zero; Mb if wholly below zero",
+      "undetermined": "otherwise",
+      "class_effect": "none; it cannot contradict the existing northern-member checks",
+      "consequence": "Undetermined leaves the IV/17 origin and zone undefined, so all eight branches are undeterminable."
+    },
+    "decision_rule": {
+      "pass": "the whole interval lies inside the closed sector",
+      "fail": "the interval and the sector share no arc of positive length; touching at one edge counts as no overlap",
+      "inconclusive": "otherwise; a full-circle interval is always inconclusive",
+      "not_measurable": "the record covers the cave but lacks a needed element (north arrow, grid or convention; scale where needed; a jamb; distinguishable mouths)",
+      "silent": "the record gives no geometry or facing for that cave",
+      "epsilon_deg": 1e-09
+    },
+    "levels": {
+      "both_mouths": {
+        "orientation": "both-mouths",
+        "needs": "the two ancient mouths",
+        "fail": "any mouth fails",
+        "pass": "both mouths pass",
+        "not_measurable": "both mouths not measurable, or the record shows fewer than two mouths",
+        "silent": "no facing for either mouth",
+        "inconclusive": "otherwise",
+        "single_value_rule": "A single facing value for a two-mouth cave is cave-level evidence only."
+      },
+      "cave": {
+        "orientation": "cave",
+        "interval": "smallest arc containing the facade-normal interval and the mean-mouth-facing interval",
+        "facade_normal": "outward normal of the chord joining the two mouth-chord midpoints; outward is the normal within 90 deg of the mean mouth facing; half-width uses D, the midpoint distance, for L; with more than two mouths use the two midpoints farthest apart",
+        "mean_mouth_facing": "from the mean of the lower ends to the mean of the upper ends, after unwrapping; not measurable if the mouth intervals ever lie 180 deg apart",
+        "single_mouth": "the mouth's own interval",
+        "single_record_value": "a record's single facing value or word for the cave is used directly",
+        "label": "ASSUMPTION",
+        "reason": "The cave facing east can mean the cliff frontage or the direction its openings face; a verdict is decisive only when both senses agree."
+      }
+    },
+    "phase_rule": {
+      "default": "A verdict on rock-cut jambs applies to both phase branches (reported and ancient), as the decisions bearing component does.",
+      "exception": "If the record shows the rock-cut aperture was cut or enlarged after the ancient phase, the verdict applies to phase = reported only; the ancient branches stay undetermined.",
+      "sensitivity": "Strict: the verdict reaches the ancient branches only when the jamb cutting is dated before or within the ancient phase.",
+      "label": "ASSUMPTION"
+    },
+    "record_combination": {
+      "exposed_records": "Records already in the repository are never scored under this rule; their inventory values stay as recorded.",
+      "new_records": "Each new record is scored on its own. PASS with FAIL gives INCONCLUSIVE, both reported. A decisive verdict with an inconclusive one keeps the decisive verdict.",
+      "earlier_description": "If a new decisive verdict disagrees with an earlier published description, report the disagreement; the new verdict drives the class effect."
+    },
+    "outcome_id_format": "e25aspect:<cave>:<level>:<verdict>[:reported-only]",
+    "outcome_parts": {
+      "cave": ["iv17", "iv11", "twin"],
+      "level": ["mouths", "cave"],
+      "verdict": ["pass", "fail", "inconclusive", "not-measurable", "silent"],
+      "suffix": ["reported-only"]
+    },
+    "class_effect_sector": "primary",
+    "entry25_classes": {
+      "source": "research/feature_workbench/decisions/discriminate.py analyse(), read-only, 8 October inputs",
+      "dimensions_all_values": {"unit": ["0.40", "0.50", "0.60"], "direction": ["horizontal", "vertical"], "deposit": ["below-book", "below-jar"]},
+      "classes": [
+        {"id": "entry25-c01", "members": 216, "composition": [
+          {"candidate": ["iv11"], "reading": ["pillar", "terrace"], "orientation": ["both-mouths", "cave"], "phase": ["ancient", "reported"]},
+          {"candidate": ["iv17"], "reading": ["pillar", "terrace"], "orientation": ["cave"], "phase": ["reported"]},
+          {"candidate": ["twin"], "reading": ["pillar", "terrace"], "orientation": ["both-mouths", "cave"], "phase": ["ancient", "reported"]}]},
+        {"id": "entry25-c02", "members": 12, "composition": [
+          {"candidate": ["iv17"], "reading": ["pillar"], "orientation": ["both-mouths"], "phase": ["ancient"]}]},
+        {"id": "entry25-c03", "members": 24, "composition": [
+          {"candidate": ["iv17"], "reading": ["pillar", "terrace"], "orientation": ["both-mouths"], "phase": ["reported"]}]},
+        {"id": "entry25-c04", "members": 12, "composition": [
+          {"candidate": ["iv17"], "reading": ["pillar"], "orientation": ["cave"], "phase": ["ancient"]}]},
+        {"id": "entry25-c05", "members": 12, "composition": [
+          {"candidate": ["iv17"], "reading": ["terrace"], "orientation": ["both-mouths"], "phase": ["ancient"]}]},
+        {"id": "entry25-c06", "members": 12, "composition": [
+          {"candidate": ["iv17"], "reading": ["terrace"], "orientation": ["cave"], "phase": ["ancient"]}]}
+      ]
+    },
+    "class_effects": [
+      {"outcome": "e25aspect:iv17:mouths:pass", "decisions_value": "both-east", "registered_row": true,
+       "effect": {"family": "entry25", "candidate": "iv17", "check": "aspect", "where": {"orientation": "both-mouths"}, "status": "compatible"},
+       "removes": [], "c01_members_removed": 0},
+      {"outcome": "e25aspect:iv17:mouths:fail", "decisions_value": "not-both-east", "registered_row": true,
+       "effect": {"family": "entry25", "candidate": "iv17", "check": "aspect", "where": {"orientation": "both-mouths"}, "status": "contradicted"},
+       "removes": ["entry25-c02", "entry25-c03", "entry25-c05"], "c01_members_removed": 0},
+      {"outcome": "e25aspect:iv17:mouths:fail:reported-only", "decisions_value": null, "registered_row": false,
+       "effect": {"family": "entry25", "candidate": "iv17", "check": "aspect", "where": {"orientation": "both-mouths", "phase": "reported"}, "status": "contradicted"},
+       "removes": ["entry25-c03"], "c01_members_removed": 0},
+      {"outcome": "e25aspect:iv17:mouths:inconclusive", "decisions_value": "undetermined", "registered_row": true, "effect": null, "removes": [], "c01_members_removed": 0},
+      {"outcome": "e25aspect:iv17:mouths:not-measurable", "decisions_value": "undetermined", "registered_row": true, "effect": null, "removes": [], "c01_members_removed": 0},
+      {"outcome": "e25aspect:iv17:mouths:silent", "decisions_value": "undetermined", "registered_row": true, "effect": null, "removes": [], "c01_members_removed": 0},
+      {"outcome": "e25aspect:iv17:cave:pass", "decisions_value": null, "registered_row": false,
+       "effect": {"family": "entry25", "candidate": "iv17", "check": "aspect", "where": {"orientation": "cave"}, "status": "compatible"},
+       "removes": [], "c01_members_removed": 0},
+      {"outcome": "e25aspect:iv17:cave:fail", "decisions_value": null, "registered_row": false, "proposed_row": true,
+       "effect": {"family": "entry25", "candidate": "iv17", "check": "aspect", "where": {"orientation": "cave"}, "status": "contradicted"},
+       "removes": ["entry25-c04", "entry25-c06"], "c01_members_removed": 24,
+       "note": "c01 survives through its IV/11 and Twin Cave members; its class must be recomputed."},
+      {"outcome": "e25aspect:iv11:mouths:fail", "decisions_value": null, "registered_row": false, "proposed_row": true,
+       "effect": {"family": "entry25", "candidate": "iv11", "check": "aspect", "where": {"orientation": "both-mouths"}, "status": "contradicted"},
+       "removes": [], "c01_members_removed": 48},
+      {"outcome": "e25aspect:iv11:cave:fail", "decisions_value": null, "registered_row": false, "proposed_row": true,
+       "effect": {"family": "entry25", "candidate": "iv11", "check": "aspect", "where": {"orientation": "cave"}, "status": "contradicted"},
+       "removes": [], "c01_members_removed": 48},
+      {"outcome": "e25aspect:twin:mouths:fail", "decisions_value": null, "registered_row": false, "proposed_row": true,
+       "effect": {"family": "entry25", "candidate": "twin", "check": "aspect", "where": {"orientation": "both-mouths"}, "status": "contradicted"},
+       "removes": [], "c01_members_removed": 48},
+      {"outcome": "e25aspect:twin:cave:fail", "decisions_value": null, "registered_row": false, "proposed_row": true,
+       "effect": {"family": "entry25", "candidate": "twin", "check": "aspect", "where": {"orientation": "cave"}, "status": "contradicted"},
+       "removes": [], "c01_members_removed": 48}
+    ],
+    "class_effects_default": "Any outcome not listed (pass, inconclusive, not-measurable or silent for any cave and level) has no effect and removes no class.",
+    "sensitivity_reporting": "Report every verdict under every sensitivity sector, uncertainty alternative, the passage-axis measure and the strict phase reading. Sensitivity results never change the class effect; any PASS-FAIL flip is stated in the report."
+  },
+  "iv17_target_declarations": {
+    "target_id": "coverage-tv-e25-iv17-north",
+    "case_id": "coverage-volume-iv17",
+    "footprint_id": "coverage-fp-iv17-l656",
+    "branch_dimension_order": ["direction_model", "cubit_length"],
+    "frame": {
+      "primary": "The L-656 plan's own frame, imported into the states register with metres_per_unit, north_vector and y_axis.",
+      "alternative": "states-iv17-plan5-crop, only with a recorded registration of the L-656 cuts to it.",
+      "registration_minimum": {"common_points": 3, "rms_residual_m": 0.10, "label": "ASSUMPTION"},
+      "missing": "frame_registration"
+    },
+    "northern_mouth": "chosen by aspect_rule.northern_member_rule",
+    "threshold_chord": {
+      "primary": "rock-cut jamb-to-jamb chord of the northern mouth at the ancient threshold surface",
+      "fallback": "the record's drawn mouth line at its rock-cut jambs; results labelled present-state chord",
+      "exposed_proxy": {"frame": "states-iv17-plan5-crop", "endpoints_px": [[548, 386], [502, 400]], "use": "exploratory runs only"}
+    },
+    "origin_point": {
+      "field": "origin.point",
+      "primary": "midpoint of the threshold chord, in frame units",
+      "sensitivity": ["midpoint of the outer chord", "midpoint of the inner chord where a passage is drawn"]
+    },
+    "zone_outline": {
+      "field": "region.polygon",
+      "shape": "rectangle aligned with the threshold chord",
+      "along_chord": "jamb to jamb, extended by r at each end",
+      "across_chord": "d_out + r outward and d_in + r inward from the chord line; extended to the inner chord plus r where a passage is drawn farther inward",
+      "d_out_m": 0.50, "d_in_m": 0.50, "r_m": 0.10,
+      "label": "ASSUMPTION",
+      "reason": "In the northern opening starts the digging at the doorway; about one cubit either side of the threshold line holds where a person standing there would dig.",
+      "sensitivity": [
+        {"id": "narrow", "d_out_m": 0.25, "d_in_m": 0.25},
+        {"id": "wide", "d_out_m": 1.00, "d_in_m": 1.00},
+        {"id": "inward-only", "d_out_m": 0.0, "d_in_m": 1.00}
+      ]
+    },
+    "sector": {
+      "field": "sector_deg",
+      "centre": "inward normal of the threshold chord (outward facing + 180 deg), measured with the frame's own north_vector",
+      "half_width_base_deg": 45.0,
+      "half_width_formula": "45 + asin(min(1, 2r/L))",
+      "north_correction": "none; target and cuts share the frame",
+      "label": "INFERENCE (inward) and ASSUMPTION (45 deg)",
+      "reason": "The entry opens in the cave, so a horizontal measure from the opening runs inward; 45 deg is the four-wind half-width used for the east sector.",
+      "sensitivity": [
+        {"id": "half-22.5", "half_width_base_deg": 22.5, "centre": "inward"},
+        {"id": "half-90", "half_width_base_deg": 90.0, "centre": "inward"},
+        {"id": "outward", "half_width_base_deg": 45.0, "centre": "outward"}
+      ]
+    },
+    "distance": {
+      "origin_uncertainty_m": 0.10,
+      "instruction_tolerance_m": {"primary": 0.20, "sensitivity": [0.10, 0.40], "label": "ASSUMPTION", "reason": "How closely a counted three-cubit distance places the jar."},
+      "range_distance_band_m": [1.10, 1.90],
+      "single_radial_tolerance_m": {"primary": 0.30, "sensitivity": [0.20, 0.50]},
+      "unit_alternative": {"metres_per_cubit": [0.445, 0.525], "three_cubits_m": [1.335, 1.575], "source": "research/measurements/cycle7/kohlit_pool.md item 5", "use": "sensitivity run, not a branch"}
+    },
+    "depth": {
+      "vertical": {"rule": "three cubits from the measure band", "label": "ASSUMPTION", "reason": "The project's exploratory 0.40-0.60 m cubit range; not a textual calibration.",
+                   "sensitivity": ["+/-0.30 m around each single level", "0.445-0.525 m scenario: 1.335-1.575 m"]},
+      "horizontal": {"field": "depth_band_m", "primary": [0.0, 1.8], "label": "ASSUMPTION",
+                     "reason": "The horizontal reading states no depth; the bound reuses the deepest three-cubit length in the project range, so a dig must reach that deep before the branch counts as covered.",
+                     "sensitivity": [[0.0, 0.6], "unit-tied [0, 3 x unit] per branch", [0.0, 1.575]]}
+    },
+    "reference_surface": {
+      "fields": ["reference_surface.elevation_m", "reference_surface.vertical_datum_id", "reference_surface.phase_id"],
+      "source": "L-656 section or level register",
+      "range_rule": "If the threshold is a range, run the join at its lowest and highest level; the status holds only if both runs agree, otherwise undeterminable.",
+      "unstated_precision_m": 0.05,
+      "label": "ASSUMPTION"
+    },
+    "footprint_reading": {
+      "levels": "Cut outline and top and lowest-reached levels from the L-656 plan, level register or basket register, in the threshold's datum.",
+      "spot_levels": "Use the highest recorded bottom for the covered test and the lowest recorded bottom for the not-covered test.",
+      "no_absence": "The join never infers that a deposit is absent; carried components do not change the spatial status; a covered branch still needs the six negative-excavation gates."
+    },
+    "volume_join_fields": {
+      "target": {"origin.point": "origin_point.primary", "region.polygon": "zone_outline"},
+      "option_horizontal": {"sector_deg": "sector", "depth_band_m": [0.0, 1.8], "radial_tolerance_m": 0.30},
+      "option_range-0.40-0.60": {"distance_band_m": [1.10, 1.90]},
+      "note": "The join merges option parameters per dimension. distance_band_m on the range cubit option is ignored by the vertical model. radial_tolerance_m applies only to single-cubit horizontal branches."
+    },
+    "requirements": [
+      {"id": "R-FRAME", "text": "one shared frame (frame)", "volume_join_parameters": ["target.horizontal_frame", "footprint.horizontal_frame", "frame_registration", "frame.metres_per_unit", "frame.north_vector"]},
+      {"id": "R-MOUTH", "text": "both rock-cut jambs of the northern mouth (threshold_chord)", "volume_join_parameters": ["target.region.polygon", "target.origin.point", "target.direction.sector_deg"]},
+      {"id": "R-NORTH", "text": "a decided northern member (aspect_rule.northern_member_rule)", "volume_join_parameters": ["target.region.polygon", "target.origin.point"]},
+      {"id": "R-THRESHOLD", "text": "threshold elevation or range, its datum and its phase (reference_surface)", "volume_join_parameters": ["target.reference_surface.elevation_m", "target.reference_surface.vertical_datum_id", "target.reference_surface.phase_id"]},
+      {"id": "R-CUT-OUTLINE", "text": "the outline of every cut", "volume_join_parameters": ["footprint.cuts", "footprint.cut.polygon"]},
+      {"id": "R-CUT-LEVELS", "text": "top and lowest-reached level of every cut, in the threshold's datum", "volume_join_parameters": ["footprint.cut.top_level_m", "footprint.cut.bottom_level_m", "footprint.vertical_datum_id", "vertical_datum_join"]}
+    ],
+    "status_rules": {
+      "covered": {"requires": ["R-FRAME", "R-MOUTH", "R-NORTH", "R-THRESHOLD", "R-CUT-OUTLINE", "R-CUT-LEVELS"],
+                  "condition": "the cuts together contain the whole branch outline over the whole depth interval, at both threshold levels and with the highest recorded bottoms"},
+      "partly_covered": {"requires": ["R-FRAME", "R-MOUTH", "R-NORTH", "R-THRESHOLD", "R-CUT-OUTLINE", "R-CUT-LEVELS"],
+                         "condition": "the cuts contain part but not all of the branch volume"},
+      "not_covered": {"requires_any_of": [["R-FRAME", "R-MOUTH", "R-NORTH", "R-CUT-OUTLINE"], ["R-THRESHOLD", "R-CUT-LEVELS"]],
+                      "condition": "every cut lies wholly outside the branch outline, or wholly above or below its depth interval, at both threshold levels and with the lowest recorded bottoms"},
+      "undeterminable": {"condition": "anything else; list the missing parameters by their volume_join.py names"}
+    },
+    "outcome_id_format": "iv17cov:<direction>/<cubit>:<status>",
+    "class_effect": "none; coverage outcomes remove no Entry 25 class",
+    "branches": [
+      {"branch_id": "coverage-tv-e25-iv17-north/vertical/range-0.40-0.60", "options": {"direction_model": "vertical", "cubit_length": "range-0.40-0.60"},
+       "model": "vertical_below_reference", "metres_per_cubit": [0.40, 0.60], "three_cubits_m": [1.20, 1.80],
+       "outline": "zone_outline", "depth_below_threshold_m": [1.20, 1.80], "radial_band_m": null, "radial_tolerance_m": null,
+       "sensitivity": ["zone narrow, wide, inward-only", "0.445-0.525 m scenario: depth 1.335-1.575 m"]},
+      {"branch_id": "coverage-tv-e25-iv17-north/vertical/0.40", "options": {"direction_model": "vertical", "cubit_length": "0.40"},
+       "model": "vertical_below_reference", "metres_per_cubit": [0.40, 0.40], "three_cubits_m": [1.20, 1.20],
+       "outline": "zone_outline", "depth_below_threshold_m": [1.20, 1.20], "radial_band_m": null, "radial_tolerance_m": null,
+       "sensitivity": ["zone narrow, wide, inward-only", "depth band 0.90-1.50 m"]},
+      {"branch_id": "coverage-tv-e25-iv17-north/vertical/0.50", "options": {"direction_model": "vertical", "cubit_length": "0.50"},
+       "model": "vertical_below_reference", "metres_per_cubit": [0.50, 0.50], "three_cubits_m": [1.50, 1.50],
+       "outline": "zone_outline", "depth_below_threshold_m": [1.50, 1.50], "radial_band_m": null, "radial_tolerance_m": null,
+       "sensitivity": ["zone narrow, wide, inward-only", "depth band 1.20-1.80 m"]},
+      {"branch_id": "coverage-tv-e25-iv17-north/vertical/0.60", "options": {"direction_model": "vertical", "cubit_length": "0.60"},
+       "model": "vertical_below_reference", "metres_per_cubit": [0.60, 0.60], "three_cubits_m": [1.80, 1.80],
+       "outline": "zone_outline", "depth_below_threshold_m": [1.80, 1.80], "radial_band_m": null, "radial_tolerance_m": null,
+       "sensitivity": ["zone narrow, wide, inward-only", "depth band 1.50-2.10 m"]},
+      {"branch_id": "coverage-tv-e25-iv17-north/horizontal/range-0.40-0.60", "options": {"direction_model": "horizontal", "cubit_length": "range-0.40-0.60"},
+       "model": "horizontal_from_origin", "metres_per_cubit": [0.40, 0.60], "three_cubits_m": [1.20, 1.80],
+       "outline": "origin_point and sector", "depth_band_m": [0.0, 1.8], "radial_band_m": [1.10, 1.90], "radial_tolerance_m": null,
+       "sensitivity": ["sector half-22.5, half-90, outward", "radial band 1.20-1.80 m and 0.90-2.10 m", "0.445-0.525 m scenario: 1.235-1.675 m", "depth bands [0, 0.6] and [0, 1.575]"]},
+      {"branch_id": "coverage-tv-e25-iv17-north/horizontal/0.40", "options": {"direction_model": "horizontal", "cubit_length": "0.40"},
+       "model": "horizontal_from_origin", "metres_per_cubit": [0.40, 0.40], "three_cubits_m": [1.20, 1.20],
+       "outline": "origin_point and sector", "depth_band_m": [0.0, 1.8], "radial_band_m": [0.90, 1.50], "radial_tolerance_m": 0.30,
+       "sensitivity": ["sector half-22.5, half-90, outward", "tolerance 0.20 and 0.50 m", "depth bands [0, 0.6] and [0, 1.2]"]},
+      {"branch_id": "coverage-tv-e25-iv17-north/horizontal/0.50", "options": {"direction_model": "horizontal", "cubit_length": "0.50"},
+       "model": "horizontal_from_origin", "metres_per_cubit": [0.50, 0.50], "three_cubits_m": [1.50, 1.50],
+       "outline": "origin_point and sector", "depth_band_m": [0.0, 1.8], "radial_band_m": [1.20, 1.80], "radial_tolerance_m": 0.30,
+       "sensitivity": ["sector half-22.5, half-90, outward", "tolerance 0.20 and 0.50 m", "depth bands [0, 0.6] and [0, 1.5]"]},
+      {"branch_id": "coverage-tv-e25-iv17-north/horizontal/0.60", "options": {"direction_model": "horizontal", "cubit_length": "0.60"},
+       "model": "horizontal_from_origin", "metres_per_cubit": [0.60, 0.60], "three_cubits_m": [1.80, 1.80],
+       "outline": "origin_point and sector", "depth_band_m": [0.0, 1.8], "radial_band_m": [1.50, 2.10], "radial_tolerance_m": 0.30,
+       "sensitivity": ["sector half-22.5, half-90, outward", "tolerance 0.20 and 0.50 m", "depth bands [0, 0.6] and [0, 1.8]"]}
+    ],
+    "arrival_register_note": "The arrival register's coverage prediction concerns the joins without declarations. These rules leave it as frozen; a run with these declarations is a separate evaluation."
+  },
+  "sits_beside": [
+    {"path": "research/preregistration/arrivals/MANIFEST.md", "sha256": "4943350d476217c8b2f3f83eafcc3c2dbcaf2950bb5f04a2fa45f59b15fa77c2", "relation": "arrival register; outcome ids stay valid; arrival.py check passed (29 files) before these rules were written"},
+    {"path": "research/preregistration/arrivals/ARRIVAL_PROCEDURE.md", "sha256": "dd82a76da6a8ca3ce97e0c3909f92cedfd81a5c3696e8f55db95b5387d32eb72", "relation": "arrival procedure; unchanged"},
+    {"path": "research/preregistration/arrivals/items/l656-field-file.md", "sha256": "aacc0aa60e280c337aef99b1f339f9be190fada5737e6a269f9a3417bff2e3b0", "relation": "L-656 item predictions; unchanged"},
+    {"path": "research/preregistration/arrivals/items/iaa-archive-cave-records.md", "sha256": "ad8992eb895de30ff1f701e5b90f9d9c2132db92aa3cdb88bab7421819a934f8", "relation": "IAA item predictions, including pred1; unchanged"},
+    {"path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md", "sha256": "0e19467c618f80438c12445b7380f77f5c59b7fe241da9c80878601e2e26a2c5", "commit": "fd3f334", "relation": "unrelated; unchanged"},
+    {"path": "research/preregistration/kohlit_rarity_2026-10-08.md", "sha256": "c88872a6ac2623fc53d6aa6b3e1992635639bcfe9eacbf9b40f2616cefc048a5", "relation": "unrelated; unchanged"},
+    {"path": "research/assessments/kohlit_chain/registration_protocol.md", "sha256": "0d82db20f84b250a4cb6525c22cab261461d1d117f7f2af919066f33d2c51f05", "relation": "Entry 60; unchanged; not governed by these rules"},
+    {"path": "research/assessments/kohlit_chain/chain.json", "sha256": "055c1b551fab153033e1d6bf8e926a3bc872872b94c23842d30204bc11816a03", "relation": "Entry 60 opening-facing links use 315-45 deg; unchanged"},
+    {"path": "research/agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json", "sha256": "9c37e712c086d22db94029601ace2cfc77bd0ff427dd594d0994223ac94f1540", "relation": "Entry 60 legacy sector; unchanged"},
+    {"path": "research/feature_workbench/decisions/plans.json", "sha256": "fe055151f528639d9537168d945b1cb981d55f034f770620ae0671dca6cfc89c", "relation": "task decisions-iv17-l656 freeze status not_frozen; unchanged"},
+    {"path": "research/feature_workbench/decisions/discrimination.json", "sha256": "61be2a219cf817904c49a7476a694a8246cab1f169a38224ee4a4945bf782ffa", "relation": "bearing component asks for this rule; unchanged"},
+    {"path": "research/feature_workbench/decisions/discriminate.py", "sha256": "22395a1db303a7a2116edcf238f554aa6cc4865c00723f5612f7407fb1af1d27", "relation": "class definitions read; unchanged"},
+    {"path": "research/feature_workbench/coverage/volume_inputs.json", "sha256": "22472a9d27109dbb7e36e1d46d129445ab95f44fe39065079380d09577e38395", "relation": "declarations listed there are supplied here; unchanged"},
+    {"path": "research/feature_workbench/coverage/volume_join.py", "sha256": "6315803b1215b6bd5d6df28501e4c0db5ffe8324ff685d6cbb20004f44eb0f12", "relation": "field names used; unchanged"},
+    {"path": "research/assessments/entry25_iv17/README.md", "sha256": "80cf31592116e4690b57612a8466eec8dbbfbbcf396005f114ad099784f42ce5", "relation": "asks that any sector be declared before testing; unchanged"},
+    {"path": "research/assessments/entry25_iv17/assessment.json", "sha256": "3866c8b69a988a452cd7c46efd9f83cc5c7253d82bbcbe9a1467cc657cf914de", "relation": "exposed proxies; unchanged"},
+    {"path": "research/feature_workbench/inventory/catalog.json", "sha256": "e9564518bbf8438569fc1f3e4420782d4ae31b15dd368047704b9e149202a201", "relation": "aspect properties; unchanged"},
+    {"path": "research/feature_workbench/inventory/queries.json", "sha256": "99ff1d1bccfe4d71672cbbb4be4e0dd278274f7c4b2367cb05516a9a25d7a729", "relation": "Entry 25 branch dimensions; unchanged"},
+    {"path": "research/feature_workbench/states/register.json", "sha256": "c1bb8f604cabf6a8cf7f90caa8ae8b9cf5b8f0aecba79033b0aafffd48c8e372", "relation": "frame states-iv17-plan5-crop; unchanged"},
+    {"path": "research/sources/entry25_direction_review_2026-10-02.md", "sha256": "ddda7c7069ca6cab1c2e60a6798dfcb0e58c38fbf218097a69a9db91c1c63108", "relation": "text basis; unchanged"},
+    {"path": "research/measurements/cycle4/puech_entry25.md", "sha256": "1e195b356b0b32f0e6873772b2ccb38f8b624440e6238301ec062c0124ea676e", "relation": "text basis; unchanged"},
+    {"path": "text/translation_en.json", "sha256": "c13696d44d9d51ea6a3ccffef702e5664aab90c345b5b198b9bb758cd8d2ccbf", "relation": "direction-word evidence; unchanged"}
+  ],
+  "changes_to_existing_files": []
+}

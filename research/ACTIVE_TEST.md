@@ -2,7 +2,7 @@
 
 Updated 9 October 2026 UTC / 9 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (9 October UTC): **partly**: seven exploratory tools from solved-search case studies, built in parallel ([analogues round](logs/analogues_round_2026-10-09.md)). Obtained: every PEF *Quarterly Statement* find report 1869–1914 (none in the strip north of Tell es-Sultan). Only 2 of 22 negative looks in the repository have a detection probability, so they barely move the joint model; ב–כ and ה–ח lead the edition confusions; every requested item now has frozen predictions, and none has arrived; the scroll's hiding places differ from recorded hoards (reporting-sensitive). Registered results are unchanged.
+Last session (9 October UTC): **partly**: seven exploratory tools from solved-search case studies, built in parallel ([analogues round](logs/analogues_round_2026-10-09.md)). Obtained: every PEF *Quarterly Statement* find report 1869–1914 (none in the strip north of Tell es-Sultan). Only 2 of 22 negative looks in the repository have a detection probability, so they barely move the joint model; ב–כ and ה–ח lead the edition confusions; every requested item now has frozen predictions, and none has arrived; the scroll's hiding places differ from recorded hoards (reporting-sensitive). Registered results are unchanged. Follow-up the same day: three reading notes corrected (entries 4, 17, 48); the Entry 25 aspect rule and IV/17 targets frozen; two exploratory joint-model candidates added in a [v2 run](models/search_effectiveness/README_v2.md).
 
 ## Active questions and the observation that decides each
 
@@ -43,7 +43,7 @@ Earlier, no reply recorded unless stated:
 - P. Reeder and H. Jol: 2002 Qumran aqueduct survey and GPR records (29 September).
 - J. Høgenhaven: independent reading of X 15, VII 11, IX 7 and XII 10 (29 September).
 
-Before opening any arrival, run `python3 -I research/preregistration/arrivals/arrival.py check` and follow the [arrival procedure](preregistration/arrivals/ARRIVAL_PROCEDURE.md): the [arrival register](preregistration/arrivals/README.md) froze each item's predictions on 9 October.
+Before opening any arrival, run `python3 -I research/preregistration/arrivals/arrival.py check` and follow the [arrival procedure](preregistration/arrivals/ARRIVAL_PROCEDURE.md): the [arrival register](preregistration/arrivals/README.md) froze each item's predictions on 9 October. Before reading the L-656 file or the IAA cave records, apply the [frozen Entry 25 aspect rule and IV/17 target declarations](preregistration/entry25_iv17_rules/RULES.md) (9 October).
 
 Full request texts: [7 October outreach](agent_review_2026-10-07/followup/F_outreach_sent.md), [A(C)94](assessments/entry29_jericho_pools/netzer2001-first-pass.md#ruhama-reply-and-archive-referrals--6-october-2026-utc), [Siloam](measurements/cycle15/siloam_bathing.md#main-side-field-section-request-sent--6-october-2026-utc), [Wadi](assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.md#archive-referral-sent--6-october-2026-utc).
 

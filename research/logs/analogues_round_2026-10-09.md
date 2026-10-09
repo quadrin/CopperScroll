@@ -35,3 +35,14 @@ These need an editorial decision:
 - W2C: say that "ABSENT_IN_SOURCES" means silent, not absent. Decide whether Qumran (entry 60) and IV/17 (entry 25) become model candidates.
 - Before the L-656 file or the IAA cave records arrive: freeze an entry-25 mouth-aspect rule and the IV/17 target declarations.
 - Staged objectives: the owner decides which proposed stop rules to adopt.
+
+## Follow-up applied (9 October, owner approval)
+
+The owner approved the first five proposals above and adding both model candidates. Status of each:
+1. **Reading notes (applied).** e48-feet: Milik's edition at X 13 is ḥpw{w}r gmwt (Puech 2015 p. 91); his רגמות is the X 6 reading (p. 88 n. 380). e4-immersion: Eshel 2002 reads נקרת, without yod (Puech 2015 p. 36 n. 131). e17-achor: Lefkovits keeps the engraved nun as a dialect form; Puech reads the same nun and corrects it to reš (pp. 51–52, n. 201). The notes, the atlas text and the atlas site were rebuilt.
+2. **Backlog links (applied).** R05 and R12 in OPEN_QUESTIONS and its atlas copy, which stay byte-identical.
+3. **Duplicate hoard (no change needed).** T02 already merges CHRE 8132 and 18771 as one record (H60); only its raw CHRE list holds both.
+4. **Absence label (applied).** The W2C report now says that status A and ABSENT_IN_SOURCES mean "not mentioned in the sources read". No cell, score or ranking changed.
+5. **Model candidates (applied, exploratory).** A separate v2 input set adds entry 60 at Kh. Qumran (the project's M-QUMRAN model, not a published proposal) and entry 25 at cave IV/17. Under K2, P(25 at IV/17) = 0.18 and P(60 at Kh. Qumran) = 0.033. The v1 inputs and outputs are unchanged. See [README_v2](../models/search_effectiveness/README_v2.md).
+6. **Frozen rules (applied).** The Entry 25 mouth-aspect rule and the eight IV/17 target declarations are frozen in [entry25_iv17_rules](../preregistration/entry25_iv17_rules/README.md). The primary "east" sector is 45°–135°, with declared sensitivity sectors. A mouth passes only if its whole facing interval lies inside the sector. The decisions plan now points to these rules. Phase branches are not frozen.
+7. **Stop rules (open).** The owner has not chosen yet.

@@ -1,0 +1,183 @@
+{
+ "conversion": {
+  "controls": [
+   {
+    "difference_km": 0.072,
+    "label": "Tell es-Sultan, WBADB E334 anchor (research/assessments/kohlit_chain/chain.json M-SULTAN)",
+    "oig": [
+     192150,
+     142050
+    ],
+    "reference": "places_v1 tell_es_sultan (Wikidata Q2402267)",
+    "reference_wgs84": [
+     31.8717,
+     35.4446
+    ],
+    "wgs84": [
+     31.87112,
+     35.44427
+    ]
+   },
+   {
+    "difference_km": 0.005,
+    "label": "Qumran, Khirbet (NEAEHL table; W2B grid_convert.py CONTROLS[0])",
+    "oig": [
+     193620,
+     127720
+    ],
+    "reference": "places_v1 kh_qumran (Pleiades 688011)",
+    "reference_wgs84": [
+     31.74183,
+     35.45941
+    ],
+    "wgs84": [
+     31.74185,
+     35.45945
+    ]
+   }
+  ],
+  "distance_km_from_iv17_group": {
+   "ain_duk": 1.069,
+   "doq": 1.794,
+   "kh_qumran": 16.808,
+   "nuweimeh": 1.681,
+   "tell_es_sultan": 2.773
+  },
+  "function": "scripts/grid_convert.py oig() (EPSG:28191 -> EPSG:4326), imported by path, unchanged",
+  "iv17_group_oig": [
+   190300,
+   144150
+  ],
+  "iv17_group_wgs84": [
+   31.89009,
+   35.42477
+  ],
+  "reproduces_w2b_grid_conversions": [
+   {
+    "equal": true,
+    "id": "ein_samiya_neaehl"
+   },
+   {
+    "equal": true,
+    "id": "kh_marjameh_neaehl"
+   },
+   {
+    "equal": true,
+    "id": "ein_samiya_valley_zissu"
+   },
+   {
+    "equal": true,
+    "id": "kh_yanun_zissu"
+   },
+   {
+    "equal": true,
+    "id": "yanun_village_zissu"
+   },
+   {
+    "equal": true,
+    "id": "ein_ghuweir_cave_xiv51"
+   },
+   {
+    "equal": true,
+    "id": "qasr_turabeh_area"
+   }
+  ]
+ },
+ "date_utc": "2026-10-09",
+ "declared_rows": {
+  "candidates_v2.csv": [
+   {
+    "conditional_on_reading": "xii10!=janoah",
+    "confidence": "weak",
+    "entry": "60",
+    "kohlit_proposal": "no",
+    "order_derived": "no",
+    "place_id": "kh_qumran",
+    "prior_override": "",
+    "source": "Project model, not a published Kohlit proposal: research/assessments/kohlit_chain/chain.json M-QUMRAN; rarity count two of three (C2 caves north, WBADB S3835/E745 and S3824; C3 northern cemetery, de Vaux 1973 pp. 57-58; C1 UNKNOWN)",
+    "status": "possible"
+   },
+   {
+    "conditional_on_reading": "",
+    "confidence": "low",
+    "entry": "25",
+    "kohlit_proposal": "no",
+    "order_derived": "no",
+    "place_id": "iv17_abu_saraj",
+    "prior_override": "",
+    "source": "Sion 2002, Atiqot 41 pp. 61-64, Plan 5 p. 63 (IV/17: two openings, rock-cut pillar); research/assessments/entry25_iv17 (feature-level compatibility; identification inconclusive)",
+    "status": "possible"
+   }
+  ],
+  "grid_conversions_v2.csv": [
+   {
+    "grid_unit_m": "10",
+    "id": "iv17_abu_saraj_group",
+    "label": "Abu Saraj cave group with IV/17 (Jebel Abu Saraj cliffs), shared reference",
+    "lat": "31.89009",
+    "lon": "35.42477",
+    "method": "EPSG:28191 -> EPSG:4326 (pyproj, PROJ \"Palestine 1923 to WGS 84 (1)\"); identical to EPSG:28193 with N+1000 km",
+    "oig_e": "190300",
+    "oig_n": "144150",
+    "source": "Sion, Atiqot 41 (2002), Regions IV and VI, p. 61 Fig. 12 (Hebrew): group reference 19030/14415 shared by several caves including IV/17 (registration/entry25_abu_saraj_features_2026-10-01.json)"
+   }
+  ],
+  "places_v2.csv": [
+   {
+    "components": "",
+    "coord_note": "Sion 2002, Atiqot 41 p. 61 Fig. 12 (IV/17 on pp. 63-64, Plan 5 p. 63): group reference OIG 19030/14415, shared by several caves (research/assessments/entry25_iv17/README.md) -> EPSG:28191->WGS84 with W2B scripts/grid_convert.py oig(). Control: WBADB E334 Tell es-Sultan OIG 192150/142050 -> within 0.1 km of places_v1 tell_es_sultan. INFERENCE: sigma 0.3 km because the group extent is not stated",
+    "coords_in_places_json": "no",
+    "kind": "v2_candidate",
+    "lat": "31.89009",
+    "lon": "35.42477",
+    "mixture_of": "",
+    "model_region": "JERICHO",
+    "name": "Abu Saraj cave IV/17 (Cave of the Built Wall), Jebel Abu Saraj cliffs; cave-group reference",
+    "place_id": "iv17_abu_saraj",
+    "precision_string": "~300 m (shared cave-group reference, not a mouth point)",
+    "sigma_km": "0.3"
+   }
+  ]
+ },
+ "files": {
+  "candidates_v2.csv": {
+   "appended_rows": 2,
+   "from_v1": "candidates_v1.csv",
+   "v1_sha256": "252522510a44c137387074bb0530eeceecb76e631338406cef9aaafa343f5913",
+   "v2_sha256": "f8d70eb7fda81a8cbbc07bfaa22a8c48785dc423e73e0d989139c717cf51b2a5"
+  },
+  "entries_v2.csv": {
+   "appended_rows": 0,
+   "from_v1": "entries_v1.csv",
+   "v1_sha256": "7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0",
+   "v2_sha256": "7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0"
+  },
+  "grid_conversions_v2.csv": {
+   "appended_rows": 1,
+   "from_v1": "grid_conversions.csv",
+   "v1_sha256": "99a275ac709529a661a1b9654bc8ad4b1ab82e88cfaf3fdddaa56ce514750f0c",
+   "v2_sha256": "cc471959c0c66cfec87dc5472b13d4e52cded3995a9a8baaf469252ad6aab7a8"
+  },
+  "kohlit_proposals_v2.csv": {
+   "appended_rows": 0,
+   "from_v1": "kohlit_proposals_v1.csv",
+   "v1_sha256": "21001790432bcca973bb7dd8464cb407a3647893e6db06c0db80ae9bab963feb",
+   "v2_sha256": "21001790432bcca973bb7dd8464cb407a3647893e6db06c0db80ae9bab963feb"
+  },
+  "name_groups_v2.csv": {
+   "appended_rows": 0,
+   "from_v1": "name_groups_v1.csv",
+   "v1_sha256": "82a7d44b299ee6f7ccf3b43a14aad6d4b429f7a264a11ce0e012831a02b2cc28",
+   "v2_sha256": "82a7d44b299ee6f7ccf3b43a14aad6d4b429f7a264a11ce0e012831a02b2cc28"
+  },
+  "places_v2.csv": {
+   "appended_rows": 1,
+   "from_v1": "places_v1.csv",
+   "v1_sha256": "996e59b3bf5f72d8ee9a6165f12341eb46b95a84b6d1de576b24d7ae918130e3",
+   "v2_sha256": "315474bd3be8cce3e1776e119417e2444edd99e3f028c7413185302fc7663683"
+  }
+ },
+ "generator": "inputs_v2/build_inputs_v2.py",
+ "readme": "research/models/search_effectiveness/README_v2.md",
+ "what": "W2B inputs v2 = v1 inputs plus the declared rows below; every other byte is copied from v1."
+}
