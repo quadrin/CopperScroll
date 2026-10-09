@@ -143,3 +143,7 @@ Last session (8 October UTC): **obtained**: two addenda to the Koḥlit rarity c
 ## Status preserved before the reading-contradiction fixes — 8 October 2026
 
 Last session (8 October UTC): **partly**: [shared research tools](shared_tools/README.md) implement source/figure retrieval, manuscript correspondence queries, entry/control imports, calibration diagnostics, anonymous-review staging and visit capture validation. Original-line registration, independent empirical calibration and human review still need the specified source records and readers.
+
+## Status preserved before the atlas title check — 8 October 2026
+
+Last session (8 October UTC): **obtained**: Puech 2015 pages for six entries where the translation, the atlas and the reading records disagreed (5, 37, 38, 54, 55, 59). The atlas now names the edition reading it follows where the Text tab differs; entry 38's records add Beyer's "dig seven cubits" (the text shown) and Puech's "seven bars"; Puech 2015 p. 101 moves from entry 52 to 54. The scroll notes, three schematics and the atlas site were rebuilt.

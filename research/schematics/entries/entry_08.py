@@ -147,7 +147,7 @@ S.footer(c, L["footer_y"], [
      "As the translation punctuates it, wood and their record lie in the chamber, the vessels and silver in the "
      "cistern. Access, sizes and depths are not given."),
     ("Project placement", "Possible only, low. Candidate: Temple enclosure (Temple Mount), possible, low. The atlas "
-     "describes “a cistern in a courtyard, with a chamber or tower nearby”; no feature is identified."),
+     "describes “an underground chamber or tower in a courtyard, with a cistern in it”; no feature is identified."),
     ("What the records show", "“Stores” is an emendation of the engraved letters; the wood-store court is known only "
      "from texts (m. Middot), while undated rock-cut cisterns and chambers are reported under the platform "
      "(phase5_assessments.csv)."),

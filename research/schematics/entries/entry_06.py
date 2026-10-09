@@ -129,8 +129,8 @@ S.label(c, ix + 252, iy + 18, ["Steps climb the face of a", "terrace or embankme
 
 # V2: salt / City of Salt
 ix, iy, iw, ih = S.panel(c, sx, sy + ph + 10, sw, ph, "Variant: “salt”, or the City of Salt",
-                         ["Puech 2002: “salt”. Lefkovits pp. 104, 183: Melah may be the",
-                          "City of Salt near Secacah. Leads note §3: stepped pools."],
+                         ["Puech 2002 and 2015 (pp. 38–39): “salt”. Lefkovits pp. 104, 183:",
+                          "Melah may be the City of Salt near Secacah. Leads note §3: stepped pools."],
                          "Alternative reading (conditional)", "neutral")
 px, py, pw_, ph_ = ix + 20, iy + 10, 180, ih - 18
 c.rect(px, py, pw_, ph_, fill="#dfe9f0", stroke=P["water_d"], width=1.6)

@@ -9,11 +9,11 @@ def rows(name):
 records='''1|Valley of Achor|עמק עכור|A ruin and a flight of steps in the Valley of Achor.
 2|The monument|נפש|A monument and a course of masonry.
 3|The great courtyard|חצר|A cistern, a courtyard and a colonnaded space.
-4|The mound of Kohlit|כחלת|A mound, water conduit and immersion cave at Kohlit.
+4|The mound of Kohlit|כחלת|A mound, a water conduit and a rock cleft or bath of immersion at Kohlit.
 5|The winding stair|מסבה|A winding stair of Manos, a place or person not otherwise known.
 6|The Millo cistern|מלה|A cistern and steps at a place interpreted as the Millo or an esplanade.
 7|House of Measures|בית המדה|A cave and a stone course at the House of Measures.
-8|The courtyard cistern|חצר|A cistern in a courtyard, with a chamber or tower nearby.
+8|The courtyard cistern|חצר|An underground chamber or tower in a courtyard, with a cistern in it.
 9|The eastern gate|השער המזרחי|A cistern with a channel opposite the eastern gate.
 10|The eastern wall|חומה|A cistern beneath a wall, beside a rock spur and threshold.
 11|Kohlit's pool|כחלת|A corner of a pool associated with Kohlit.
@@ -22,7 +22,7 @@ records='''1|Valley of Achor|עמק עכור|A ruin and a flight of steps in the
 13|The Millo pit|מלה|A pit at a corner or entrance of the Millo or esplanade.
 14|The Millo tomb|מלה|A tomb and a slab or cover associated with the Millo.
 15|Kohlit's great cistern|כחלת|A cistern and a pillar at Kohlit.
-16|The entering conduit|אמת המים|A conduit and a pool approached on entering; the location needs restoration.
+16|The entering conduit|אמא|A conduit and a pool approached on entering; the location needs restoration.
 17|Achor's two features|עמק עכור|Two features in Achor, read as cavities, tamarisks or buildings by different editors.
 18|Asla|העצלא|An earth pit in the area called Asla.
 19|The Kohlit pit|כחלת|A pit associated with Kohlit.
@@ -45,7 +45,7 @@ records='''1|Valley of Achor|עמק עכור|A ruin and a flight of steps in the
 36|Valley of Shaveh|השוא|Fallow land and an underground chamber in Shaveh.
 37|Shaveh's irrigated land|השוא|Irrigated land and a chamber or stone marker in Shaveh.
 38|Netophah|הנטף|A spring associated with a dovecote or cave opening.
-39|The terrace|חבלה|A terrace facing a chamber or tower.
+39|The terrace|חבלה|A chamber or tower facing east in the second terrace.
 40|Horon or the Horites|החורין|Burial chambers facing the Sea (west) or south, and a channel; the name and the direction have competing readings.
 41|The damaged entry|קומעה|A very short, uncertain expression. No candidate has a defensible map location.
 42|The sounding conduit|ביב|A conduit and the sound of water; one reading supplies the name Kephar Nebo.
@@ -118,6 +118,22 @@ reading_notes={
 '5':'The title follows Puech’s reading, a spiral staircase; the Text tab shows Milik’s letters, read as a foundry.',
 '37':'The title follows Milik’s and Puech’s reading ברוי, irrigated land; the Text tab shows בדור, translated “enclosure”.',
 '54':'The title follows Puech’s reading ירחו, Jericho; the Text tab shows טהור, translated “ritually pure”; Wolters, reading from the metal, also found “pure” there.',
+'6':'The title follows the Esplanade reading of the same word at III 8 and III 11; here Puech reads “the salt” (2015 pp. 38–39), and the Text tab shows המלח, ha-Melaḥ.',
+'7':'The title takes המדה as “measures”, a sense Puech rejects for “tribute” (2015 p. 40); the Text tab shows המדח, translated “Washing(?)”.',
+'13':'The title follows Milik’s and Puech’s Esplanade or embankment (Puech 2015 pp. 44, 46); the Text tab shows שבמלחמ, ha-Melaḥ.',
+'14':'The title follows Milik’s and Puech’s Esplanade or embankment (Puech 2015 pp. 44, 46), and the slab follows Milik’s DJD text and Puech; the Text tab shows ha-Melaḥ and “the dead(?)”.',
+'16':'The pool is Puech’s restoration, “to the po[ol]” (2015 p. 48); the Text tab leaves the conduit’s goal unread.',
+'17':'The Text tab shows הכיפין, translated “domes(?)”, which matches none of these three readings.',
+'27':'The title takes משכן as a dwelling; Puech reads the queen’s “mausoleum” (2015 p. 60), and the Text tab translates “resting place”.',
+'29':'The title follows Puech’s restoration, a collection of the waters (2015 pp. 62–63); the Text tab leaves the word damaged (קי◦) and restores no Jericho.',
+'33':'The title follows Puech’s Aḥiyah (2015 p. 69); the Text tab shows אחור, “Aḥor”.',
+'34':'The title follows Puech’s and Lefkovits’s engraved inscription (Puech 2015 p. 69); the Text tab shows other letters, translated “in the middle of the ◦”.',
+'43':'The exposed rock follows Puech’s “rocky ground” (2015 p. 75), on letters Lefkovits shares; the Text tab reads “at the outlet of the Valley of Peleʿ(?)”.',
+'47':'The spring and chamber follow Puech’s “underground (near) its spring” (2015 p. 85); the Text tab reads “on its west side”, as Milik and Lefkovits.',
+'49':'The title and the water outlet follow Puech’s “spring (?) of Siloam waters” (2015 p. 86); the Text tab shows Milik’s letters, “basin(?) of the bathhouse(?) of Raḥil(?)”.',
+'50':'The title follows Puech’s “courtyard (of the tomb) of Ṣadoq” (2015 p. 86); the Text tab restores “In the upper pool”.',
+'53':'The title and its Hebrew follow Puech’s “colonnades” (2015 p. 94); the Text tab shows הסכין, translated “rock ‘knife’(?)”.',
+'56':'The cave and recesses follow Puech’s restoration and his burial niche (2015 pp. 94, 107); the Text tab leaves the cave unread and reads “the cistern”.',
 }
 audit=rows('phase5_archaeology_index.csv')
 entries=[]

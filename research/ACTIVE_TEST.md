@@ -2,7 +2,7 @@
 
 Updated 8 October 2026 UTC / 8 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (8 October UTC): **obtained**: Puech 2015 pages for six entries where the translation, the atlas and the reading records disagreed (5, 37, 38, 54, 55, 59). The atlas now names the edition reading it follows where the Text tab differs; entry 38's records add Beyer's "dig seven cubits" (the text shown) and Puech's "seven bars"; Puech 2015 p. 101 moves from entry 52 to 54. The scroll notes, three schematics and the atlas site were rebuilt.
+Last session (8 October UTC): **obtained**: Puech 2015 pages for every atlas title and landmark that differs from the text shown. Sixteen more entries (6, 7, 13, 14, 16, 17, 27, 29, 33, 34, 43, 47, 49, 50, 53, 56) now say in the atlas which edition reading they follow, and their reading records add Puech 2015; the descriptions of entries 4, 8 and 39 and the Hebrew label of entry 16 now match the text; at II 1 Puech 2015 reads "the salt", not the Millo. The scroll notes, two schematics and the atlas site were rebuilt.
 
 ## Active questions and the observation that decides each
 
