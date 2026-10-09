@@ -2,7 +2,7 @@
 
 Updated 8 October 2026 UTC / 8 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (8 October UTC): **partly**: [shared research tools](shared_tools/README.md) implement source/figure retrieval, manuscript correspondence queries, entry/control imports, calibration diagnostics, anonymous-review staging and visit capture validation. Original-line registration, independent empirical calibration and human review still need the specified source records and readers.
+Last session (8 October UTC): **obtained**: Puech 2015 pages for six entries where the translation, the atlas and the reading records disagreed (5, 37, 38, 54, 55, 59). The atlas now names the edition reading it follows where the Text tab differs; entry 38's records add Beyer's "dig seven cubits" (the text shown) and Puech's "seven bars"; Puech 2015 p. 101 moves from entry 52 to 54. The scroll notes, three schematics and the atlas site were rebuilt.
 
 ## Active questions and the observation that decides each
 
@@ -24,15 +24,16 @@ All are **not identifiable from available evidence**; details in the history fil
 
 Sent 8 October UTC / 7 October Los Angeles:
 - USC Libraries Special Collections: 1200-ppi WSRP masters of cuts 21–22 (20 records).
-- Facsimile Editions, London: their 3D scan of the EDF plates at XII 10.
+- Facsimile Editions, London: their 3D scan of the EDF plates at XII 10. Declined 8 October.
 - Garstang Museum, Liverpool: Jericho papers JG/8; pre-camp records and photos north of the tell.
 - Palestine Exploration Fund: Garstang Papers 1930–36; pre-1948 photos of Jericho.
 - Lorenzo Nigro, Sapienza: records of the ground north of Tell es-Sultan. Replied: karstic cavities are common there; whether any dates to the scroll's period is the question, and he will check. Meeting proposed for the Jerusalem visit, 18–24 October.
-- ÉBAF, via J.-B. Humbert: to see ÉBAF's EDF copy and the EDF X-rays of segments 21–22 during the visit.
-- Carla Benelli, Mosaic Centre Jericho: replied 7 October. Osama Hamdan has died; she will scan Meinardus 1965–66 free of charge in mid-October. Archive visit requested.
+- ÉBAF, via J.-B. Humbert: to see ÉBAF's EDF copy and the EDF X-rays of segments 21–22 during the visit. 8 October: visit passed to Fr. Cyrille Jalabert, with gift copies of Qumran vols I–II.
+- Carla Benelli, Mosaic Centre Jericho: replied 7 October. Osama Hamdan has died; she will scan Meinardus 1965–66 free of charge in mid-October. Archive visit requested; 8 October: welcome except Friday and Thursday afternoon, with notice.
 
 Earlier, no reply recorded unless stated:
-- Manchester Museum: study scans of C.10a.1/C.10.1 (5 October, rerouted after a bounce); Allegro strips C.21–23, cutting photos and the 1955 film (7 October, same thread).
+- Manchester Museum: study scans of C.10a.1/C.10.1 (5 October, rerouted after a bounce); Allegro strips C.21–23, cutting photos and the 1955 film (7 October, same thread). 8 October: checking with the Allegro estate; referred us to Joan Taylor.
+- Joan Taylor, King's College London (DQCAAS orders): Allegro scans C.21A.1–4, C.22A.1–10, C.22.1–2, C.21-23.1 and any film of segments 21–22 (8 October).
 - University of Manchester Library: file GB 133 TPA/1/132 and Wright Baker records of the cutting (7 October).
 - IAA Archive, for the Judean Desert cave survey: cave records for the Qumran cliffs, Jericho escarpment and Wadi Qelt (7 October).
 - Bruce Zuckerman, USC: the original WSRP Figure 4.6 composite and its component map (5 October).

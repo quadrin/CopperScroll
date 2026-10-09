@@ -96,7 +96,7 @@ c.rect(sx_ - 6, gy, 12, 7 * sc, fill="#f7f1e6", stroke=P["red_d"], width=1.1, da
 S.deposit(c, sx_, gy + 7 * sc - 6, 5)
 S.dim(c, fx, gy - 14, sx_, gy - 14, "13 cubits ≈ 6.5 m", P["red_d"])
 S.dim(c, sx_ + 18, gy, sx_ + 18, gy + 7 * sc, "", P["red_d"])
-S.label(c, sx_ + 30, gy + 26, ["dig 7 cubits ≈ 3.5 m", "the number comes from a corrupt line"], P["red_d"], 11.5, 700)
+S.label(c, sx_ + 30, gy + 26, ["dig 7 cubits ≈ 3.5 m", "Beyer's correction of the line"], P["red_d"], 11.5, 700)
 S.scale_bar(c, qx0 + qw - 150, qy0 + 30, 4 * sc, "0", "2 m")
 
 # ---------------- side panels ----------------
@@ -164,7 +164,8 @@ S.footer(c, L["footer_y"], [
     ("Text (IX 1–3)", "“In the dovecote that is at the edge of the Naṭof, measuring from its edge thirteen cubits; "
      "dig seven cubits (the line is corrupt): talents(?): four staters.”"),
     ("What the plan assumes", "A dovecote cut into the rock where the spring emerges. “Its edge” is the dovecote's; "
-     "the 13 cubits have no direction, so the × is one point on the dashed line. The depth is from a corrupt line."),
+     "the 13 cubits have no direction, so the × is one point on the dashed line. The depth is Beyer's correction "
+     "of a corrupt line, which Wilmot follows; Puech reads two holes and counts seven bars."),
     ("Project placement", "Best-supported, medium: ʿAin en-Naṭuf, Wadi Khareitun (cave of St Chariton), on the "
      "spring name and the Khareitun setting. Lefkovits records a Galilee option."),
     ("What the records show", "SWP III and Milik 1960 confirm the spring, the cliff and large natural caves, but no "

@@ -10,7 +10,7 @@ records='''1|Valley of Achor|עמק עכור|A ruin and a flight of steps in the
 2|The monument|נפש|A monument and a course of masonry.
 3|The great courtyard|חצר|A cistern, a courtyard and a colonnaded space.
 4|The mound of Kohlit|כחלת|A mound, water conduit and immersion cave at Kohlit.
-5|The winding stair|מסבה|A winding stair and an adjoining passage or refuge.
+5|The winding stair|מסבה|A winding stair of Manos, a place or person not otherwise known.
 6|The Millo cistern|מלה|A cistern and steps at a place interpreted as the Millo or an esplanade.
 7|House of Measures|בית המדה|A cave and a stone course at the House of Measures.
 8|The courtyard cistern|חצר|A cistern in a courtyard, with a chamber or tower nearby.
@@ -107,10 +107,17 @@ specific={
 '46':('Ramat Rahel has an earlier pool-and-channel enclosure and later settlement.','The known enclosure lay under fill containing pottery as late as the second century BCE. The current verdict is low; the required period reservoir remains unverified.'),
 '48':('The standing Kidron monument has first-century architectural features.','Its earliest surviving labels name Zacharias. A first-century association with Absalom remains unestablished.'),
 '49':('The tunnel outlet and surrounding pools supply a compatible water-installation setting. Szanton distinguishes the smaller Silwan pool from Birkat el-Hamra.','Siloam depends on a supplied word; the 2026 plate check shows the disputed letter as a waw-shaped stroke, which leans to Puech without deciding it. Lefkovits reads no Siloam name. The trough remains unverified; overall confidence stays medium and conditional.'),
-'55':('The Bethesda complex supplies double pools and a smaller basin in the relevant period.','The text may describe two pools without naming Bethesda; the 2026 plate check shows what looks like a ḥet where Milik’s Bethesda needs a taw. The nearby Strouthion twin pool prevents a unique match on that feature alone.'),
+'55':('The Bethesda complex supplies double pools and a smaller basin in the relevant period.','The smaller basin follows Milik’s and Puech’s reading לימומית; the Text tab reads “on the right”. The text may describe two pools without naming Bethesda; the 2026 plate check shows what looks like a ḥet where Milik’s Bethesda needs a taw. The nearby Strouthion twin pool prevents a unique match on that feature alone.'),
 '57':('The mountain name provides the geographical anchor. Magen’s excavations found three Hellenistic staircases and a mansion with a courtyard cistern on the summit; they still stood as ruins in the first century.','The city was destroyed about 110 BCE. A Hasmonean garrison probably stayed into the 70s BCE, but nothing ties it to the steps or cistern, and no use of them is reported before the fourth century CE. Only stray coins of the first century CE were found; three from the mansion area are an open lead. No specific step or pit is identified.'),
 '58':('Perennial springs and period water installations fit the regional setting at Beth Shean.','The scroll’s final mem differs from the usual nun in Beth Shean. No evidence selects the particular spring.'),
-'59':('Zertal identifies Eusebius’s two villages called Bezek, 17 miles from Neapolis, with the two Ibziq sites. A kokhim tomb excavated at Kh. Ibziq in 1971 held pottery of the 1st–2nd centuries CE, which fits Puech’s alternative “burial chamber” reading in type. Zertal places the older Bezeq at nearby Kh. Salhab.','Zertal’s survey reports cisterns and burial caves but no conduit at either Ibziq site, and few Early Roman sherds on the surface. No conduit is reported at Kh. Salhab either. The place name depends on a disputed reading.'),
+'59':('Zertal identifies Eusebius’s two villages called Bezek, 17 miles from Neapolis, with the two Ibziq sites. A kokhim tomb excavated at Kh. Ibziq in 1971 held pottery of the 1st–2nd centuries CE, which fits Puech’s alternative “burial chamber” reading in type. Zertal places the older Bezeq at nearby Kh. Salhab.','Zertal’s survey reports cisterns and burial caves but no conduit at either Ibziq site, and few Early Roman sherds on the surface. No conduit is reported at Kh. Salhab either. The place name depends on Puech’s reading הבזך, which Allegro and Lefkovits share; the Text tab shows הבור, “the cistern”, the reading of Wilmot and Wise.'),
+}
+# 8 October 2026: where a title follows an edition reading that differs from the text shown in the
+# Text tab, the caution says so (text/readings.json records the readings).
+reading_notes={
+'5':'The title follows Puech’s reading, a spiral staircase; the Text tab shows Milik’s letters, read as a foundry.',
+'37':'The title follows Milik’s and Puech’s reading ברוי, irrigated land; the Text tab shows בדור, translated “enclosure”.',
+'54':'The title follows Puech’s reading ירחו, Jericho; the Text tab shows טהור, translated “ritually pure”; Wolters, reading from the metal, also found “pure” there.',
 }
 audit=rows('phase5_archaeology_index.csv')
 entries=[]
@@ -132,6 +139,8 @@ for r in rows('phase3_site_index.csv'):
     caution='The placement remains at site or district level. The scroll’s individual feature has not been identified.'
     if eid in specific: evidence,caution=specific[eid]
     if eid=='41': evidence='The public index leaves this entry unmapped.';caution='The reading and geographical setting remain unresolved.'
+    if eid in reading_notes: caution=reading_notes[eid]+' '+caution
+    if eid=='54': evidence+=' If the tomb was reserved for priests, Puech names the tomb of the Benê Ḥezîr in the Kidron valley as one possibility (2015 p. 101).'
     candidates+=revised_candidates.get(eid,[])
     entries.append({'id':eid,'title':title,'hebrew':hebrew,'description':description,'lines':r['col_line'],'status':r['status'],'confidence':confidence,'region':places[ids[0]]['region'] if ids else 'unplaced','candidates':candidates,'evidence':evidence,'caution':caution,'landmark':primary['landmark_types_required'] if primary else '', 'period':primary['period'] if primary else 'Not established in the public archaeology index','sources':primary['main_sources'] if primary else 'Phase 3 site index; Phase 2 landmark lexicon','featured':eid in ['21','31','32','49']})
 for entry in entries:
@@ -139,6 +148,8 @@ for entry in entries:
         entry['sources'] += '; Puech 2006 pp. 187–189; Qumran reference review (28 September 2026)'
     if entry['id']=='21':
         entry['sources'] += '; Lefkovits 2000 pp. 185–189; Stacey 2009, The Dam; Stacey 2007, DSD 14 pp. 222–243'
+    if entry['id']=='54':
+        entry['sources'] += '; Puech 2015 p. 101'
 out={'snapshot':'e3b51ce6523e947fe217a630d64fa16486fc3c7c','reviewDate':'29 September 2026','entries':entries,'places':list(places.values())}
 assert len(entries)==61 and len(places)==39
 assert all(c['placeId'] in places for e in entries for c in e['candidates'])

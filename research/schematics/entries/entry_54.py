@@ -2,7 +2,7 @@
 
 Sources: text/translation_en.json XI 9–11; text/readings.json e54-*, g-ktbn; atlas record 54;
 tables/phase3_site_index.csv; tables/landmark_lexicon_index.csv; tables/phase5_reports.csv (Puech 2015
-p. 101, filed under entry 52); research/sources/sources.md (Wolters 1994). No phase-5 assessment or
+p. 101); research/sources/sources.md (Wolters 1994). No phase-5 assessment or
 feature constraint is recorded for this entry.
 """
 import sys
@@ -171,7 +171,7 @@ S.footer(c, L["footer_y"], [
     ("Project placement", "Possible only, low. Candidates kept for comparison: Kidron valley, east slope (Silwan "
      "necropolis) and Kidron valley at Gethsemane. No landmark is uniquely identified."),
     ("What the records show", "No phase-5 assessment or feature constraint is recorded. Wolters read “my pure "
-     "things are in it” from the copper (1994 pp. 292–295; sources.md); Puech 2015 p. 101 cites the Benê Ḥezîr "
-     "tomb in the Kidron when discussing entry 54 (phase5_reports.csv)."),
+     "things are in it” from the copper (1994 pp. 292–295; sources.md). If the tomb was for priests, Puech 2015 "
+     "p. 101 names the Benê Ḥezîr tomb in the Kidron as one possibility (phase5_reports.csv)."),
 ])
 print(c.save(S.out_path("54")))

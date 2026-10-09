@@ -172,16 +172,14 @@ S.label(c, ix + 246, iy + 22, ["Going down, then left along the", "working; × i
 
 # V3: of Manos
 ix, iy, iw, ih = S.panel(c, sx, sy + 2 * (ph + 10), sw, ph, "Of Manos · מנס",
-                         ["Lexicon: an unplaced name, meaning rated low. Atlas:",
-                          "“a passage or refuge”, drawn here as an adjoining passage."],
-                         "Atlas sense adds a passage", "neutral")
+                         ["Puech 2015 p. 37: a place not otherwise known, literally",
+                          "“place of refuge”, or a personal name (Milik, Beyer)."],
+                         "Name or noun · same plan", "neutral")
 py_ = iy + ih / 2 + 2
 c.rect(ix + 20, py_ - 40, 90, 80, fill="#d8ccb6", stroke=P["grave_d"], width=2.2)
 c.text(ix + 65, py_ + 4, "pit", 11, P["grave_d"], 700, anchor="middle")
-c.polyline([(ix + 110, py_ - 10), (ix + 200, py_ - 10)], stroke=P["grave_d"], width=1.3, dash="5 3")
-c.polyline([(ix + 110, py_ + 10), (ix + 200, py_ + 10)], stroke=P["grave_d"], width=1.3, dash="5 3")
-c.rect(ix + 200, py_ - 22, 30, 44, fill="#efe8db", stroke=P["grave_d"], width=1.3, dash="5 3")
-c.text(ix + 172, py_ + 38, "passage or refuge?", 10.5, P["grave_d"], anchor="middle")
+c.text(ix + 165, py_ + 4, "Manos: a place,", 10.5, P["grave_d"], anchor="middle")
+c.text(ix + 165, py_ + 20, "a refuge or a person", 10.5, P["grave_d"], anchor="middle")
 S.deposit(c, ix + 24, py_ - 20, size=4)
 S.label(c, ix + 252, iy + 22, ["The lexicon compares מָנוֹס", "“refuge” and the name מנסיא;",
                                "no ancient text outside the", "scroll names a place Manos."], P["sub"], 11)
