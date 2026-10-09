@@ -1,0 +1,1222 @@
+{
+  "schema": "copper-scroll-feature-recovery-pilot-v1",
+  "exposure": "analyst_exposed; software_separation_only",
+  "cases": [
+    {
+      "code": "R001",
+      "description": "A square treading floor slopes northwest. Select a compatible installation and retain its unused sump expectation.",
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "square",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_slope",
+          "equals": "northwest",
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [
+        "sump_corner"
+      ],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "square",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 4.0,
+              "basis": "published_description"
+            },
+            "vat_steps_side": {
+              "value": "north",
+              "basis": "published_description"
+            },
+            "vat_steps_count": {
+              "value": 3,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "sump_corner": {
+              "value": "southwest",
+              "basis": "published_description"
+            }
+          }
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northeast",
+              "basis": "published_description"
+            },
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "sump_corner": {
+              "value": null,
+              "basis": "unknown"
+            }
+          }
+        },
+        {
+          "code": "K03",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "southeast",
+              "basis": "published_description"
+            },
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "sump_corner": {
+              "value": "north",
+              "basis": "published_description"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "code": "R002",
+      "description": "A trapezoid treading floor slopes northeast. Retain the separate connection-count expectation.",
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "trapezoid",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_slope",
+          "equals": "northeast",
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [
+        "floor_vat_perforations"
+      ],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "square",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 4.0,
+              "basis": "published_description"
+            },
+            "vat_steps_side": {
+              "value": "north",
+              "basis": "published_description"
+            },
+            "vat_steps_count": {
+              "value": 3,
+              "basis": "published_description"
+            },
+            "sump_corner": {
+              "value": "southwest",
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "floor_vat_perforations": {
+              "value": null,
+              "basis": "unknown"
+            }
+          }
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northeast",
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            }
+          }
+        },
+        {
+          "code": "K03",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "southeast",
+              "basis": "published_description"
+            },
+            "sump_corner": {
+              "value": "north",
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "code": "R003",
+      "description": "A trapezoid treading floor slopes southeast. Retain its unused sump expectation.",
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "trapezoid",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_slope",
+          "equals": "southeast",
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [
+        "sump_corner"
+      ],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "square",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 4.0,
+              "basis": "published_description"
+            },
+            "vat_steps_side": {
+              "value": "north",
+              "basis": "published_description"
+            },
+            "vat_steps_count": {
+              "value": 3,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "sump_corner": {
+              "value": "southwest",
+              "basis": "published_description"
+            }
+          }
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northeast",
+              "basis": "published_description"
+            },
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "sump_corner": {
+              "value": null,
+              "basis": "unknown"
+            }
+          }
+        },
+        {
+          "code": "K03",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "southeast",
+              "basis": "published_description"
+            },
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "sump_corner": {
+              "value": "north",
+              "basis": "published_description"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "code": "R004",
+      "description": "The report gives the longer floor dimension as approximately 2.2 m. Use the printed-value window only.",
+      "predicates": [
+        {
+          "field": "reported_floor_long_m",
+          "range": [
+            2.15,
+            2.25
+          ],
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [
+        "repaired_karstic_floor_fissure"
+      ],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 5.0,
+              "basis": "published_description"
+            },
+            "circular_screw_depression": {
+              "value": null,
+              "basis": "published_description"
+            },
+            "settling_pit_active": {
+              "value": true,
+              "basis": "published_phase_reconstruction"
+            }
+          },
+          "model_forecasts": {
+            "repaired_karstic_floor_fissure": {
+              "value": null,
+              "basis": "unknown"
+            }
+          }
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 5.0,
+              "basis": "published_description"
+            },
+            "circular_screw_depression": {
+              "value": true,
+              "basis": "published_phase_reconstruction"
+            },
+            "settling_pit_active": {
+              "value": false,
+              "basis": "published_phase_reconstruction"
+            }
+          },
+          "model_forecasts": {
+            "repaired_karstic_floor_fissure": {
+              "value": null,
+              "basis": "unknown"
+            }
+          }
+        },
+        {
+          "code": "K03",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 2.2,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "repaired_karstic_floor_fissure": {
+              "value": true,
+              "basis": "published_description"
+            }
+          }
+        },
+        {
+          "code": "K04",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 4.8,
+              "basis": "published_description"
+            },
+            "settling_channel_wall": {
+              "value": "northeast",
+              "basis": "published_description"
+            },
+            "secondary_channel_terracotta_pipe": {
+              "value": true,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "repaired_karstic_floor_fissure": {
+              "value": null,
+              "basis": "unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "code": "R005",
+      "description": "The report gives the longer floor dimension as 2.8 m. Use the printed-value window only.",
+      "predicates": [
+        {
+          "field": "reported_floor_long_m",
+          "range": [
+            2.75,
+            2.85
+          ],
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [
+        "settling_channel_wall"
+      ],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 2.8,
+              "basis": "published_description"
+            },
+            "settling_relative_floor": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "vat_opening_wall": {
+              "value": "southeast",
+              "basis": "published_description"
+            },
+            "vat_opening_destination": {
+              "value": "cave",
+              "basis": "excavator_inference"
+            }
+          },
+          "model_forecasts": {
+            "settling_channel_wall": {
+              "value": "northwest",
+              "basis": "published_description"
+            }
+          }
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 5.0,
+              "basis": "published_description"
+            },
+            "circular_screw_depression": {
+              "value": null,
+              "basis": "published_description"
+            },
+            "settling_pit_active": {
+              "value": true,
+              "basis": "published_phase_reconstruction"
+            }
+          },
+          "model_forecasts": {
+            "settling_channel_wall": {
+              "value": null,
+              "basis": "unknown"
+            }
+          }
+        },
+        {
+          "code": "K03",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 5.0,
+              "basis": "published_description"
+            },
+            "circular_screw_depression": {
+              "value": true,
+              "basis": "published_phase_reconstruction"
+            },
+            "settling_pit_active": {
+              "value": false,
+              "basis": "published_phase_reconstruction"
+            }
+          },
+          "model_forecasts": {
+            "settling_channel_wall": {
+              "value": null,
+              "basis": "unknown"
+            }
+          }
+        },
+        {
+          "code": "K04",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 2.2,
+              "basis": "published_description"
+            },
+            "repaired_karstic_floor_fissure": {
+              "value": true,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "settling_channel_wall": {
+              "value": null,
+              "basis": "unknown"
+            }
+          }
+        },
+        {
+          "code": "K05",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 4.8,
+              "basis": "published_description"
+            },
+            "secondary_channel_terracotta_pipe": {
+              "value": true,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "settling_channel_wall": {
+              "value": "northeast",
+              "basis": "published_description"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "code": "R006",
+      "description": "A shallow floor drains west. Retain the separate channel-direction expectation.",
+      "predicates": [
+        {
+          "field": "floor_slope",
+          "equals": "west",
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [
+        "channel_direction"
+      ],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "west",
+              "basis": "published_description"
+            },
+            "later_vat_enlargement": {
+              "value": true,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "channel_direction": {
+              "value": "north",
+              "basis": "published_description"
+            }
+          }
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "north",
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {
+            "channel_direction": {
+              "value": null,
+              "basis": "published_description"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "code": "R007",
+      "description": "Only the northwest slope survives in this reduced description.",
+      "predicates": [
+        {
+          "field": "floor_slope",
+          "equals": "northwest",
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "square",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 4.0,
+              "basis": "published_description"
+            },
+            "vat_steps_side": {
+              "value": "north",
+              "basis": "published_description"
+            },
+            "vat_steps_count": {
+              "value": 3,
+              "basis": "published_description"
+            },
+            "sump_corner": {
+              "value": "southwest",
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": null,
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 1.5,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        }
+      ]
+    },
+    {
+      "code": "R008",
+      "description": "The trapezoid floor connects to its vat through two perforations; direction is omitted.",
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "trapezoid",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_vat_perforations",
+          "equals": 2,
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northeast",
+              "basis": "published_description"
+            },
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "southeast",
+              "basis": "published_description"
+            },
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            },
+            "sump_corner": {
+              "value": "north",
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        }
+      ]
+    },
+    {
+      "code": "R009",
+      "description": "Crafted null control: require a southwest floor slope within these six fully reported directions.",
+      "predicates": [
+        {
+          "field": "floor_slope",
+          "equals": "southwest",
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "square",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 4.0,
+              "basis": "published_description"
+            },
+            "vat_steps_side": {
+              "value": "north",
+              "basis": "published_description"
+            },
+            "vat_steps_count": {
+              "value": 3,
+              "basis": "published_description"
+            },
+            "sump_corner": {
+              "value": "southwest",
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northeast",
+              "basis": "published_description"
+            },
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K03",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": null,
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 1.5,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K04",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "trapezoid",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "southeast",
+              "basis": "published_description"
+            },
+            "floor_vat_perforations": {
+              "value": 2,
+              "basis": "published_description"
+            },
+            "sump_corner": {
+              "value": "north",
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K05",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "west",
+              "basis": "published_description"
+            },
+            "channel_direction": {
+              "value": "north",
+              "basis": "published_description"
+            },
+            "later_vat_enlargement": {
+              "value": true,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K06",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "north",
+              "basis": "published_description"
+            },
+            "channel_direction": {
+              "value": null,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        }
+      ]
+    },
+    {
+      "code": "R010",
+      "description": "Require an observed northern entrance on the irregular cave.",
+      "predicates": [
+        {
+          "field": "outline",
+          "equals": "irregular",
+          "requires_observation": true
+        },
+        {
+          "field": "entrance_direction",
+          "equals": "north",
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "cave",
+              "basis": "published_description"
+            },
+            "outline": {
+              "value": "oval",
+              "basis": "published_description"
+            },
+            "entrance_direction": {
+              "value": null,
+              "basis": "published_description"
+            },
+            "first_century_use": {
+              "value": null,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "cave",
+              "basis": "published_description"
+            },
+            "outline": {
+              "value": "irregular",
+              "basis": "published_description"
+            },
+            "entrance_direction": {
+              "value": "north",
+              "basis": "excavator_inference"
+            },
+            "first_century_use": {
+              "value": null,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        }
+      ]
+    },
+    {
+      "code": "R011",
+      "description": "Require established first-century use of either cave.",
+      "predicates": [
+        {
+          "field": "kind",
+          "equals": "cave",
+          "requires_observation": true
+        },
+        {
+          "field": "first_century_use",
+          "equals": true,
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "cave",
+              "basis": "published_description"
+            },
+            "outline": {
+              "value": "oval",
+              "basis": "published_description"
+            },
+            "entrance_direction": {
+              "value": null,
+              "basis": "published_description"
+            },
+            "first_century_use": {
+              "value": null,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "cave",
+              "basis": "published_description"
+            },
+            "outline": {
+              "value": "irregular",
+              "basis": "published_description"
+            },
+            "entrance_direction": {
+              "value": "north",
+              "basis": "excavator_inference"
+            },
+            "first_century_use": {
+              "value": null,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        }
+      ]
+    },
+    {
+      "code": "R012",
+      "description": "Require a circular screw depression and an active settling pit in the same observed operational phase.",
+      "predicates": [
+        {
+          "field": "circular_screw_depression",
+          "equals": true,
+          "requires_observation": true
+        },
+        {
+          "field": "settling_pit_active",
+          "equals": true,
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 5.0,
+              "basis": "published_description"
+            },
+            "circular_screw_depression": {
+              "value": null,
+              "basis": "published_description"
+            },
+            "settling_pit_active": {
+              "value": true,
+              "basis": "published_phase_reconstruction"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 5.0,
+              "basis": "published_description"
+            },
+            "circular_screw_depression": {
+              "value": true,
+              "basis": "published_phase_reconstruction"
+            },
+            "settling_pit_active": {
+              "value": false,
+              "basis": "published_phase_reconstruction"
+            }
+          },
+          "model_forecasts": {}
+        }
+      ]
+    },
+    {
+      "code": "R013",
+      "description": "A square floor slopes northwest. One competing record reports the slope but omits its shape.",
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "square",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_slope",
+          "equals": "northwest",
+          "requires_observation": true
+        }
+      ],
+      "excluded_from_matching": [],
+      "candidates": [
+        {
+          "code": "K01",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": "square",
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 4.0,
+              "basis": "published_description"
+            },
+            "vat_steps_side": {
+              "value": "north",
+              "basis": "published_description"
+            },
+            "vat_steps_count": {
+              "value": 3,
+              "basis": "published_description"
+            },
+            "sump_corner": {
+              "value": "southwest",
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        },
+        {
+          "code": "K02",
+          "facts": {
+            "kind": {
+              "value": "winepress",
+              "basis": "published_description"
+            },
+            "floor_shape": {
+              "value": null,
+              "basis": "published_description"
+            },
+            "floor_slope": {
+              "value": "northwest",
+              "basis": "published_description"
+            },
+            "reported_floor_long_m": {
+              "value": 1.5,
+              "basis": "published_description"
+            }
+          },
+          "model_forecasts": {}
+        }
+      ]
+    }
+  ]
+}

@@ -71,6 +71,28 @@ The review export separates anonymous reviewer item codes and a response form fr
 
 The capture form records document/object identifiers, custodian, printed/PDF page, figure, view, lighting, rotation, scale, north convention, coordinate frame, phase basis, derivation and reuse terms. Validation computes local-file hashes, detects duplicates/hash mismatches/path escapes and keeps unrecorded information unknown. Complete capture metadata supplies neither depth calibration nor an ancient phase.
 
+## Case-study methods
+
+The parallel case-study work adds source-linked witness auditing, finite observation planning, published-feature recovery, original-letter control preparation, repeated text constraints and a source-instrument/registration audit. Each report distinguishes the obtained dataset from the primary evidence still needed. These outputs are exploratory; independently established field truth and qualified human letter readings remain dependencies.
+
+Inspect the saved results through the shared CLI:
+
+```sh
+python research/shared_tools/cli.py methods
+python research/shared_tools/cli.py methods observations
+```
+
+The first command lists reports and snapshot hashes; selecting a method also returns its saved JSON. It does not rerun a test or certify that inputs are current. Rebuild with the method's own command and compare its input hashes when source evidence changes.
+
+| Method | Result and reusable operation |
+| --- | --- |
+| `witnesses` | [Koḥlit feature witnesses](../rarity/kohlit/witness_audit/RESULTS.md): recover each coder's exact feature, preserve unknown geometry and distinguish condition agreement from an agreed assignment. |
+| `observations` | [Separating observations](../feature_workbench/decisions/separation/RESULTS.md): compute minimum observation sets over finite prediction sets, collapse duplicate nuisance branches and retain acquisition gates. |
+| `recovery` | [Published-feature recovery](recovery_benchmark/RESULTS.md): recover redacted source identities, preserve ambiguous/null cases and keep independent field truth outside the exposed pilot. |
+| `letters` | [Original-letter controls](letter_controls/RESULTS.md): audit item eligibility, stage anonymous packets and score locked responses, abstentions and disagreements. Empirical accuracy is not yet measured. |
+| `text` | [Repeated text constraints](text_constraints/RESULTS.md): retain exact Hebrew word anchors, damage/editorial flags and alternative parses, then propagate source-controlled constraints. |
+| `coverage` | [Negative notices and registration](../feature_workbench/coverage/audit/RESULTS.md): separate documentary absence from searched ancient volume and test whether actual plan records support independent geographic validation. |
+
 ## Verification
 
 ```sh

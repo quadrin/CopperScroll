@@ -1,0 +1,4324 @@
+{
+  "schema_version": 1,
+  "mode": "exploratory_conditional_planning",
+  "base_commit": "897733283606988581155a3c1df0cd235cb7bea9",
+  "input_sources": [
+    {
+      "repo_path": "research/feature_workbench/decisions/plans.json",
+      "sha256": "fe055151f528639d9537168d945b1cb981d55f034f770620ae0671dca6cfc89c",
+      "provenance": "pinned_exposed_source",
+      "url": "https://github.com/quadrin/CopperScroll/blob/897733283606988581155a3c1df0cd235cb7bea9/research/feature_workbench/decisions/plans.json"
+    },
+    {
+      "repo_path": "research/feature_workbench/relationships/model.json",
+      "sha256": "732833306381e91e6c06641d4618c59ec8dcf74fd93ab5fecb08a97b327c4d4a",
+      "provenance": "pinned_exposed_source",
+      "url": "https://github.com/quadrin/CopperScroll/blob/897733283606988581155a3c1df0cd235cb7bea9/research/feature_workbench/relationships/model.json"
+    },
+    {
+      "repo_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md",
+      "sha256": "0e19467c618f80438c12445b7380f77f5c59b7fe241da9c80878601e2e26a2c5",
+      "provenance": "pinned_exposed_source",
+      "url": "https://github.com/quadrin/CopperScroll/blob/897733283606988581155a3c1df0cd235cb7bea9/research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md"
+    },
+    {
+      "repo_path": "research/feature_workbench/relationships/evaluate.py",
+      "sha256": "3ae9f94c84c24a9551e4ee97de042470af92c79cdfa43f54f669b7be9f27d14b",
+      "provenance": "pinned_exposed_source",
+      "url": "https://github.com/quadrin/CopperScroll/blob/897733283606988581155a3c1df0cd235cb7bea9/research/feature_workbench/relationships/evaluate.py"
+    },
+    {
+      "repo_path": "research/feature_workbench/decisions/separation/specification.json",
+      "sha256": "ce441344bd8b968c5a633a093d5e8b5c3e1b7ad1853becf2bd8fa413bbac5e8e",
+      "provenance": "new_local_derived_artifact"
+    },
+    {
+      "repo_path": "research/feature_workbench/decisions/separation/planner.py",
+      "sha256": "b4e71e9ba9e037621fe88c918735a189951728e9ddad79201526d75837df93e4",
+      "provenance": "new_local_derived_artifact"
+    }
+  ],
+  "domains": {
+    "xii10-letters": {
+      "available_now": {
+        "scenario": "available_now",
+        "class_count": 7,
+        "class_pair_count": 21,
+        "classes": [
+          {
+            "id": "C01",
+            "families": [
+              {
+                "family_id": "R4",
+                "branch_ids": [
+                  "R4"
+                ],
+                "labels": [
+                  "שבינח"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "ינ"
+              ],
+              "xii10-tail": [
+                "ח"
+              ]
+            }
+          },
+          {
+            "id": "C02",
+            "families": [
+              {
+                "family_id": "R2",
+                "branch_ids": [
+                  "R2"
+                ],
+                "labels": [
+                  "שבנה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "נ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          },
+          {
+            "id": "C03",
+            "families": [
+              {
+                "family_id": "R7",
+                "branch_ids": [
+                  "R7"
+                ],
+                "labels": [
+                  "שבצהב"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "צ"
+              ],
+              "xii10-tail": [
+                "הב"
+              ]
+            }
+          },
+          {
+            "id": "C04",
+            "families": [
+              {
+                "family_id": "R3",
+                "branch_ids": [
+                  "R3"
+                ],
+                "labels": [
+                  "שבצח"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "צ"
+              ],
+              "xii10-tail": [
+                "ח"
+              ]
+            }
+          },
+          {
+            "id": "C05",
+            "families": [
+              {
+                "family_id": "R6",
+                "branch_ids": [
+                  "R6"
+                ],
+                "labels": [
+                  "שכונה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "כ"
+              ],
+              "xii10-medial": [
+                "ונ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          },
+          {
+            "id": "C06",
+            "families": [
+              {
+                "family_id": "R5",
+                "branch_ids": [
+                  "R5"
+                ],
+                "labels": [
+                  "שכינה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "כ"
+              ],
+              "xii10-medial": [
+                "ינ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          },
+          {
+            "id": "C07",
+            "families": [
+              {
+                "family_id": "R1",
+                "branch_ids": [
+                  "R1"
+                ],
+                "labels": [
+                  "שכנה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "כ"
+              ],
+              "xii10-medial": [
+                "נ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          }
+        ],
+        "attainable_pair_count": 0,
+        "attainable_pairs": [],
+        "unseparable_pairs": [
+          [
+            "C01",
+            "C02"
+          ],
+          [
+            "C01",
+            "C03"
+          ],
+          [
+            "C01",
+            "C04"
+          ],
+          [
+            "C01",
+            "C05"
+          ],
+          [
+            "C01",
+            "C06"
+          ],
+          [
+            "C01",
+            "C07"
+          ],
+          [
+            "C02",
+            "C03"
+          ],
+          [
+            "C02",
+            "C04"
+          ],
+          [
+            "C02",
+            "C05"
+          ],
+          [
+            "C02",
+            "C06"
+          ],
+          [
+            "C02",
+            "C07"
+          ],
+          [
+            "C03",
+            "C04"
+          ],
+          [
+            "C03",
+            "C05"
+          ],
+          [
+            "C03",
+            "C06"
+          ],
+          [
+            "C03",
+            "C07"
+          ],
+          [
+            "C04",
+            "C05"
+          ],
+          [
+            "C04",
+            "C06"
+          ],
+          [
+            "C04",
+            "C07"
+          ],
+          [
+            "C05",
+            "C06"
+          ],
+          [
+            "C05",
+            "C07"
+          ],
+          [
+            "C06",
+            "C07"
+          ]
+        ],
+        "perfect_separation_conditional_on_decisive_results": false,
+        "minimum_sets_for_all_attainable_pairs": [],
+        "capability_order": []
+      },
+      "named_dependencies": {
+        "scenario": "named_dependencies",
+        "class_count": 7,
+        "class_pair_count": 21,
+        "classes": [
+          {
+            "id": "C01",
+            "families": [
+              {
+                "family_id": "R4",
+                "branch_ids": [
+                  "R4"
+                ],
+                "labels": [
+                  "שבינח"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "ינ"
+              ],
+              "xii10-tail": [
+                "ח"
+              ]
+            }
+          },
+          {
+            "id": "C02",
+            "families": [
+              {
+                "family_id": "R2",
+                "branch_ids": [
+                  "R2"
+                ],
+                "labels": [
+                  "שבנה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "נ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          },
+          {
+            "id": "C03",
+            "families": [
+              {
+                "family_id": "R7",
+                "branch_ids": [
+                  "R7"
+                ],
+                "labels": [
+                  "שבצהב"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "צ"
+              ],
+              "xii10-tail": [
+                "הב"
+              ]
+            }
+          },
+          {
+            "id": "C04",
+            "families": [
+              {
+                "family_id": "R3",
+                "branch_ids": [
+                  "R3"
+                ],
+                "labels": [
+                  "שבצח"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "צ"
+              ],
+              "xii10-tail": [
+                "ח"
+              ]
+            }
+          },
+          {
+            "id": "C05",
+            "families": [
+              {
+                "family_id": "R6",
+                "branch_ids": [
+                  "R6"
+                ],
+                "labels": [
+                  "שכונה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "כ"
+              ],
+              "xii10-medial": [
+                "ונ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          },
+          {
+            "id": "C06",
+            "families": [
+              {
+                "family_id": "R5",
+                "branch_ids": [
+                  "R5"
+                ],
+                "labels": [
+                  "שכינה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "כ"
+              ],
+              "xii10-medial": [
+                "ינ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          },
+          {
+            "id": "C07",
+            "families": [
+              {
+                "family_id": "R1",
+                "branch_ids": [
+                  "R1"
+                ],
+                "labels": [
+                  "שכנה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "כ"
+              ],
+              "xii10-medial": [
+                "נ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          }
+        ],
+        "attainable_pair_count": 21,
+        "attainable_pairs": [
+          [
+            "C01",
+            "C02"
+          ],
+          [
+            "C01",
+            "C03"
+          ],
+          [
+            "C01",
+            "C04"
+          ],
+          [
+            "C01",
+            "C05"
+          ],
+          [
+            "C01",
+            "C06"
+          ],
+          [
+            "C01",
+            "C07"
+          ],
+          [
+            "C02",
+            "C03"
+          ],
+          [
+            "C02",
+            "C04"
+          ],
+          [
+            "C02",
+            "C05"
+          ],
+          [
+            "C02",
+            "C06"
+          ],
+          [
+            "C02",
+            "C07"
+          ],
+          [
+            "C03",
+            "C04"
+          ],
+          [
+            "C03",
+            "C05"
+          ],
+          [
+            "C03",
+            "C06"
+          ],
+          [
+            "C03",
+            "C07"
+          ],
+          [
+            "C04",
+            "C05"
+          ],
+          [
+            "C04",
+            "C06"
+          ],
+          [
+            "C04",
+            "C07"
+          ],
+          [
+            "C05",
+            "C06"
+          ],
+          [
+            "C05",
+            "C07"
+          ],
+          [
+            "C06",
+            "C07"
+          ]
+        ],
+        "unseparable_pairs": [],
+        "perfect_separation_conditional_on_decisive_results": true,
+        "minimum_sets_for_all_attainable_pairs": [
+          {
+            "observations": [
+              "xii10-box",
+              "xii10-medial",
+              "xii10-tail"
+            ],
+            "dependency_ids": [
+              "xii10-exposure-audit",
+              "xii10-frame-authentication",
+              "xii10-human-readers",
+              "xii10-native"
+            ],
+            "acquisition_ids": [
+              "xii10-native"
+            ]
+          }
+        ],
+        "capability_order": [
+          {
+            "observation_id": "xii10-medial",
+            "separated_pairs": [
+              [
+                "C01",
+                "C02"
+              ],
+              [
+                "C01",
+                "C03"
+              ],
+              [
+                "C01",
+                "C04"
+              ],
+              [
+                "C01",
+                "C05"
+              ],
+              [
+                "C01",
+                "C07"
+              ],
+              [
+                "C02",
+                "C03"
+              ],
+              [
+                "C02",
+                "C04"
+              ],
+              [
+                "C02",
+                "C05"
+              ],
+              [
+                "C02",
+                "C06"
+              ],
+              [
+                "C03",
+                "C05"
+              ],
+              [
+                "C03",
+                "C06"
+              ],
+              [
+                "C03",
+                "C07"
+              ],
+              [
+                "C04",
+                "C05"
+              ],
+              [
+                "C04",
+                "C06"
+              ],
+              [
+                "C04",
+                "C07"
+              ],
+              [
+                "C05",
+                "C06"
+              ],
+              [
+                "C05",
+                "C07"
+              ],
+              [
+                "C06",
+                "C07"
+              ]
+            ],
+            "separated_pair_count": 18,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C02",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C03",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C04",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C07",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C01",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C03",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C04",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C05",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C06",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C01",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C02",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C06",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C07",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C01",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C02",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C06",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C07",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C01",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C02",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C06",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C07",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C02",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C03",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C04",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C05",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C07",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C01",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C03",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C04",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C05",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C06",
+                "outcomes": [
+                  "נ"
+                ]
+              }
+            ],
+            "directional_pair_count": 36,
+            "dependency_ids": [
+              "xii10-exposure-audit",
+              "xii10-frame-authentication",
+              "xii10-human-readers",
+              "xii10-native"
+            ]
+          },
+          {
+            "observation_id": "xii10-tail",
+            "separated_pairs": [
+              [
+                "C01",
+                "C02"
+              ],
+              [
+                "C01",
+                "C03"
+              ],
+              [
+                "C01",
+                "C05"
+              ],
+              [
+                "C01",
+                "C06"
+              ],
+              [
+                "C01",
+                "C07"
+              ],
+              [
+                "C02",
+                "C03"
+              ],
+              [
+                "C02",
+                "C04"
+              ],
+              [
+                "C03",
+                "C04"
+              ],
+              [
+                "C03",
+                "C05"
+              ],
+              [
+                "C03",
+                "C06"
+              ],
+              [
+                "C03",
+                "C07"
+              ],
+              [
+                "C04",
+                "C05"
+              ],
+              [
+                "C04",
+                "C06"
+              ],
+              [
+                "C04",
+                "C07"
+              ]
+            ],
+            "separated_pair_count": 14,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C02",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C03",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C06",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C07",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C01",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C03",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C04",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C01",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C02",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C04",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C06",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C07",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C02",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C03",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C06",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C07",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C01",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C01",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C03",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C04",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C01",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C03",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C04",
+                "outcomes": [
+                  "ה"
+                ]
+              }
+            ],
+            "directional_pair_count": 28,
+            "dependency_ids": [
+              "xii10-exposure-audit",
+              "xii10-frame-authentication",
+              "xii10-human-readers",
+              "xii10-native"
+            ]
+          },
+          {
+            "observation_id": "xii10-box",
+            "separated_pairs": [
+              [
+                "C01",
+                "C05"
+              ],
+              [
+                "C01",
+                "C06"
+              ],
+              [
+                "C01",
+                "C07"
+              ],
+              [
+                "C02",
+                "C05"
+              ],
+              [
+                "C02",
+                "C06"
+              ],
+              [
+                "C02",
+                "C07"
+              ],
+              [
+                "C03",
+                "C05"
+              ],
+              [
+                "C03",
+                "C06"
+              ],
+              [
+                "C03",
+                "C07"
+              ],
+              [
+                "C04",
+                "C05"
+              ],
+              [
+                "C04",
+                "C06"
+              ],
+              [
+                "C04",
+                "C07"
+              ]
+            ],
+            "separated_pair_count": 12,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C06",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C07",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C05",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C06",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C07",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C06",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C07",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C06",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C07",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C01",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C02",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C01",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C02",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C03",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C04",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C01",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C02",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C03",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C04",
+                "outcomes": [
+                  "כ"
+                ]
+              }
+            ],
+            "directional_pair_count": 24,
+            "dependency_ids": [
+              "xii10-exposure-audit",
+              "xii10-frame-authentication",
+              "xii10-human-readers",
+              "xii10-native"
+            ]
+          }
+        ]
+      },
+      "all_planning": {
+        "scenario": "all_planning",
+        "class_count": 7,
+        "class_pair_count": 21,
+        "classes": [
+          {
+            "id": "C01",
+            "families": [
+              {
+                "family_id": "R4",
+                "branch_ids": [
+                  "R4"
+                ],
+                "labels": [
+                  "שבינח"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "ינ"
+              ],
+              "xii10-tail": [
+                "ח"
+              ]
+            }
+          },
+          {
+            "id": "C02",
+            "families": [
+              {
+                "family_id": "R2",
+                "branch_ids": [
+                  "R2"
+                ],
+                "labels": [
+                  "שבנה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "נ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          },
+          {
+            "id": "C03",
+            "families": [
+              {
+                "family_id": "R7",
+                "branch_ids": [
+                  "R7"
+                ],
+                "labels": [
+                  "שבצהב"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "צ"
+              ],
+              "xii10-tail": [
+                "הב"
+              ]
+            }
+          },
+          {
+            "id": "C04",
+            "families": [
+              {
+                "family_id": "R3",
+                "branch_ids": [
+                  "R3"
+                ],
+                "labels": [
+                  "שבצח"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "ב"
+              ],
+              "xii10-medial": [
+                "צ"
+              ],
+              "xii10-tail": [
+                "ח"
+              ]
+            }
+          },
+          {
+            "id": "C05",
+            "families": [
+              {
+                "family_id": "R6",
+                "branch_ids": [
+                  "R6"
+                ],
+                "labels": [
+                  "שכונה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "כ"
+              ],
+              "xii10-medial": [
+                "ונ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          },
+          {
+            "id": "C06",
+            "families": [
+              {
+                "family_id": "R5",
+                "branch_ids": [
+                  "R5"
+                ],
+                "labels": [
+                  "שכינה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "כ"
+              ],
+              "xii10-medial": [
+                "ינ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          },
+          {
+            "id": "C07",
+            "families": [
+              {
+                "family_id": "R1",
+                "branch_ids": [
+                  "R1"
+                ],
+                "labels": [
+                  "שכנה"
+                ]
+              }
+            ],
+            "predictions": {
+              "xii10-box": [
+                "כ"
+              ],
+              "xii10-medial": [
+                "נ"
+              ],
+              "xii10-tail": [
+                "ה"
+              ]
+            }
+          }
+        ],
+        "attainable_pair_count": 21,
+        "attainable_pairs": [
+          [
+            "C01",
+            "C02"
+          ],
+          [
+            "C01",
+            "C03"
+          ],
+          [
+            "C01",
+            "C04"
+          ],
+          [
+            "C01",
+            "C05"
+          ],
+          [
+            "C01",
+            "C06"
+          ],
+          [
+            "C01",
+            "C07"
+          ],
+          [
+            "C02",
+            "C03"
+          ],
+          [
+            "C02",
+            "C04"
+          ],
+          [
+            "C02",
+            "C05"
+          ],
+          [
+            "C02",
+            "C06"
+          ],
+          [
+            "C02",
+            "C07"
+          ],
+          [
+            "C03",
+            "C04"
+          ],
+          [
+            "C03",
+            "C05"
+          ],
+          [
+            "C03",
+            "C06"
+          ],
+          [
+            "C03",
+            "C07"
+          ],
+          [
+            "C04",
+            "C05"
+          ],
+          [
+            "C04",
+            "C06"
+          ],
+          [
+            "C04",
+            "C07"
+          ],
+          [
+            "C05",
+            "C06"
+          ],
+          [
+            "C05",
+            "C07"
+          ],
+          [
+            "C06",
+            "C07"
+          ]
+        ],
+        "unseparable_pairs": [],
+        "perfect_separation_conditional_on_decisive_results": true,
+        "minimum_sets_for_all_attainable_pairs": [
+          {
+            "observations": [
+              "xii10-box",
+              "xii10-medial",
+              "xii10-tail"
+            ],
+            "dependency_ids": [
+              "xii10-exposure-audit",
+              "xii10-frame-authentication",
+              "xii10-human-readers",
+              "xii10-native"
+            ],
+            "acquisition_ids": [
+              "xii10-native"
+            ]
+          }
+        ],
+        "capability_order": [
+          {
+            "observation_id": "xii10-medial",
+            "separated_pairs": [
+              [
+                "C01",
+                "C02"
+              ],
+              [
+                "C01",
+                "C03"
+              ],
+              [
+                "C01",
+                "C04"
+              ],
+              [
+                "C01",
+                "C05"
+              ],
+              [
+                "C01",
+                "C07"
+              ],
+              [
+                "C02",
+                "C03"
+              ],
+              [
+                "C02",
+                "C04"
+              ],
+              [
+                "C02",
+                "C05"
+              ],
+              [
+                "C02",
+                "C06"
+              ],
+              [
+                "C03",
+                "C05"
+              ],
+              [
+                "C03",
+                "C06"
+              ],
+              [
+                "C03",
+                "C07"
+              ],
+              [
+                "C04",
+                "C05"
+              ],
+              [
+                "C04",
+                "C06"
+              ],
+              [
+                "C04",
+                "C07"
+              ],
+              [
+                "C05",
+                "C06"
+              ],
+              [
+                "C05",
+                "C07"
+              ],
+              [
+                "C06",
+                "C07"
+              ]
+            ],
+            "separated_pair_count": 18,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C02",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C03",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C04",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C07",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C01",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C03",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C04",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C05",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C06",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C01",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C02",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C06",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C07",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C01",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C02",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C06",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C07",
+                "outcomes": [
+                  "צ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C01",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C02",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C06",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C07",
+                "outcomes": [
+                  "ונ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C02",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C03",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C04",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C05",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C07",
+                "outcomes": [
+                  "ינ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C01",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C03",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C04",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C05",
+                "outcomes": [
+                  "נ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C06",
+                "outcomes": [
+                  "נ"
+                ]
+              }
+            ],
+            "directional_pair_count": 36,
+            "dependency_ids": [
+              "xii10-exposure-audit",
+              "xii10-frame-authentication",
+              "xii10-human-readers",
+              "xii10-native"
+            ]
+          },
+          {
+            "observation_id": "xii10-tail",
+            "separated_pairs": [
+              [
+                "C01",
+                "C02"
+              ],
+              [
+                "C01",
+                "C03"
+              ],
+              [
+                "C01",
+                "C05"
+              ],
+              [
+                "C01",
+                "C06"
+              ],
+              [
+                "C01",
+                "C07"
+              ],
+              [
+                "C02",
+                "C03"
+              ],
+              [
+                "C02",
+                "C04"
+              ],
+              [
+                "C03",
+                "C04"
+              ],
+              [
+                "C03",
+                "C05"
+              ],
+              [
+                "C03",
+                "C06"
+              ],
+              [
+                "C03",
+                "C07"
+              ],
+              [
+                "C04",
+                "C05"
+              ],
+              [
+                "C04",
+                "C06"
+              ],
+              [
+                "C04",
+                "C07"
+              ]
+            ],
+            "separated_pair_count": 14,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C02",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C03",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C06",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C07",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C01",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C03",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C04",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C01",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C02",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C04",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C06",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C07",
+                "outcomes": [
+                  "הב"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C02",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C03",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C06",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C07",
+                "outcomes": [
+                  "ח"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C01",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C01",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C03",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C04",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C01",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C03",
+                "outcomes": [
+                  "ה"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C04",
+                "outcomes": [
+                  "ה"
+                ]
+              }
+            ],
+            "directional_pair_count": 28,
+            "dependency_ids": [
+              "xii10-exposure-audit",
+              "xii10-frame-authentication",
+              "xii10-human-readers",
+              "xii10-native"
+            ]
+          },
+          {
+            "observation_id": "xii10-box",
+            "separated_pairs": [
+              [
+                "C01",
+                "C05"
+              ],
+              [
+                "C01",
+                "C06"
+              ],
+              [
+                "C01",
+                "C07"
+              ],
+              [
+                "C02",
+                "C05"
+              ],
+              [
+                "C02",
+                "C06"
+              ],
+              [
+                "C02",
+                "C07"
+              ],
+              [
+                "C03",
+                "C05"
+              ],
+              [
+                "C03",
+                "C06"
+              ],
+              [
+                "C03",
+                "C07"
+              ],
+              [
+                "C04",
+                "C05"
+              ],
+              [
+                "C04",
+                "C06"
+              ],
+              [
+                "C04",
+                "C07"
+              ]
+            ],
+            "separated_pair_count": 12,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C06",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C07",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C05",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C06",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C07",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C06",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C07",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C06",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C07",
+                "outcomes": [
+                  "ב"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C01",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C02",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C01",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C02",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C03",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C06",
+                "excluded": "C04",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C01",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C02",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C03",
+                "outcomes": [
+                  "כ"
+                ]
+              },
+              {
+                "retained": "C07",
+                "excluded": "C04",
+                "outcomes": [
+                  "כ"
+                ]
+              }
+            ],
+            "directional_pair_count": 24,
+            "dependency_ids": [
+              "xii10-exposure-audit",
+              "xii10-frame-authentication",
+              "xii10-human-readers",
+              "xii10-native"
+            ]
+          }
+        ]
+      }
+    },
+    "kohlit-relationships": {
+      "available_now": {
+        "scenario": "available_now",
+        "class_count": 5,
+        "class_pair_count": 10,
+        "classes": [
+          {
+            "id": "C01",
+            "families": [
+              {
+                "family_id": "jericho-d9:RB-B",
+                "branch_ids": [
+                  "relationships-jericho-d9-RB-B-early",
+                  "relationships-jericho-d9-RB-B-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + D9 · Buried: no required tombs · 50 BCE–135 CE",
+                  "Jericho historical basin + D9 · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-d9:RB-M",
+                "branch_ids": [
+                  "relationships-jericho-d9-RB-M-early",
+                  "relationships-jericho-d9-RB-M-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + D9 · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Jericho historical basin + D9 · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-d9:RB-P",
+                "branch_ids": [
+                  "relationships-jericho-d9-RB-P-early",
+                  "relationships-jericho-d9-RB-P-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + D9 · Puech: concealed opening · 50 BCE–135 CE",
+                  "Jericho historical basin + D9 · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-historical-ns1:RB-B",
+                "branch_ids": [
+                  "relationships-jericho-historical-ns1-RB-B-early",
+                  "relationships-jericho-historical-ns1-RB-B-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + NS1 · Buried: no required tombs · 50 BCE–135 CE",
+                  "Jericho historical basin + NS1 · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-historical-ns1:RB-M",
+                "branch_ids": [
+                  "relationships-jericho-historical-ns1-RB-M-early",
+                  "relationships-jericho-historical-ns1-RB-M-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + NS1 · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Jericho historical basin + NS1 · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-historical-ns1:RB-P",
+                "branch_ids": [
+                  "relationships-jericho-historical-ns1-RB-P-early",
+                  "relationships-jericho-historical-ns1-RB-P-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + NS1 · Puech: concealed opening · 50 BCE–135 CE",
+                  "Jericho historical basin + NS1 · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "yanun-jericho-anchor:RB-L",
+                "branch_ids": [
+                  "relationships-yanun-jericho-anchor-RB-L-early",
+                  "relationships-yanun-jericho-anchor-RB-L-extended"
+                ],
+                "labels": [
+                  "Janoaḥ / Yanun pit unassigned; Jericho Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–135 CE",
+                  "Janoaḥ / Yanun pit unassigned; Jericho Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-graves-at-mouth": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C02",
+            "families": [
+              {
+                "family_id": "jericho-quarry:RB-B",
+                "branch_ids": [
+                  "relationships-jericho-quarry-RB-B-early",
+                  "relationships-jericho-quarry-RB-B-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + later quarry pits · Buried: no required tombs · 50 BCE–135 CE",
+                  "Jericho historical basin + later quarry pits · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-graves-at-mouth": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C03",
+            "families": [
+              {
+                "family_id": "jericho-quarry:RB-P",
+                "branch_ids": [
+                  "relationships-jericho-quarry-RB-P-early",
+                  "relationships-jericho-quarry-RB-P-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + later quarry pits · Puech: concealed opening · 50 BCE–135 CE",
+                  "Jericho historical basin + later quarry pits · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-graves-at-mouth": [
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C04",
+            "families": [
+              {
+                "family_id": "jericho-quarry:RB-M",
+                "branch_ids": [
+                  "relationships-jericho-quarry-RB-M-early",
+                  "relationships-jericho-quarry-RB-M-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + later quarry pits · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Jericho historical basin + later quarry pits · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-graves-at-mouth": [
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-opening-north": [
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C05",
+            "families": [
+              {
+                "family_id": "samiya-kallai:RB-B",
+                "branch_ids": [
+                  "relationships-samiya-kallai-RB-B-early",
+                  "relationships-samiya-kallai-RB-B-extended"
+                ],
+                "labels": [
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–135 CE",
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "samiya-kallai:RB-M",
+                "branch_ids": [
+                  "relationships-samiya-kallai-RB-M-early",
+                  "relationships-samiya-kallai-RB-M-extended"
+                ],
+                "labels": [
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "samiya-kallai:RB-P",
+                "branch_ids": [
+                  "relationships-samiya-kallai-RB-P-early",
+                  "relationships-samiya-kallai-RB-P-extended"
+                ],
+                "labels": [
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–135 CE",
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "yanun-marjama-anchor:RB-L",
+                "branch_ids": [
+                  "relationships-yanun-marjama-anchor-RB-L-early",
+                  "relationships-yanun-marjama-anchor-RB-L-extended"
+                ],
+                "labels": [
+                  "Janoaḥ / Yanun pit unassigned; Marjama Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–135 CE",
+                  "Janoaḥ / Yanun pit unassigned; Marjama Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-graves-at-mouth": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          }
+        ],
+        "attainable_pair_count": 0,
+        "attainable_pairs": [],
+        "unseparable_pairs": [
+          [
+            "C01",
+            "C02"
+          ],
+          [
+            "C01",
+            "C03"
+          ],
+          [
+            "C01",
+            "C04"
+          ],
+          [
+            "C01",
+            "C05"
+          ],
+          [
+            "C02",
+            "C03"
+          ],
+          [
+            "C02",
+            "C04"
+          ],
+          [
+            "C02",
+            "C05"
+          ],
+          [
+            "C03",
+            "C04"
+          ],
+          [
+            "C03",
+            "C05"
+          ],
+          [
+            "C04",
+            "C05"
+          ]
+        ],
+        "perfect_separation_conditional_on_decisive_results": false,
+        "minimum_sets_for_all_attainable_pairs": [],
+        "capability_order": []
+      },
+      "named_dependencies": {
+        "scenario": "named_dependencies",
+        "class_count": 5,
+        "class_pair_count": 10,
+        "classes": [
+          {
+            "id": "C01",
+            "families": [
+              {
+                "family_id": "jericho-d9:RB-B",
+                "branch_ids": [
+                  "relationships-jericho-d9-RB-B-early",
+                  "relationships-jericho-d9-RB-B-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + D9 · Buried: no required tombs · 50 BCE–135 CE",
+                  "Jericho historical basin + D9 · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-d9:RB-M",
+                "branch_ids": [
+                  "relationships-jericho-d9-RB-M-early",
+                  "relationships-jericho-d9-RB-M-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + D9 · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Jericho historical basin + D9 · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-d9:RB-P",
+                "branch_ids": [
+                  "relationships-jericho-d9-RB-P-early",
+                  "relationships-jericho-d9-RB-P-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + D9 · Puech: concealed opening · 50 BCE–135 CE",
+                  "Jericho historical basin + D9 · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-historical-ns1:RB-B",
+                "branch_ids": [
+                  "relationships-jericho-historical-ns1-RB-B-early",
+                  "relationships-jericho-historical-ns1-RB-B-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + NS1 · Buried: no required tombs · 50 BCE–135 CE",
+                  "Jericho historical basin + NS1 · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-historical-ns1:RB-M",
+                "branch_ids": [
+                  "relationships-jericho-historical-ns1-RB-M-early",
+                  "relationships-jericho-historical-ns1-RB-M-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + NS1 · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Jericho historical basin + NS1 · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-historical-ns1:RB-P",
+                "branch_ids": [
+                  "relationships-jericho-historical-ns1-RB-P-early",
+                  "relationships-jericho-historical-ns1-RB-P-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + NS1 · Puech: concealed opening · 50 BCE–135 CE",
+                  "Jericho historical basin + NS1 · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "yanun-jericho-anchor:RB-L",
+                "branch_ids": [
+                  "relationships-yanun-jericho-anchor-RB-L-early",
+                  "relationships-yanun-jericho-anchor-RB-L-extended"
+                ],
+                "labels": [
+                  "Janoaḥ / Yanun pit unassigned; Jericho Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–135 CE",
+                  "Janoaḥ / Yanun pit unassigned; Jericho Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-graves-at-mouth": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C02",
+            "families": [
+              {
+                "family_id": "jericho-quarry:RB-B",
+                "branch_ids": [
+                  "relationships-jericho-quarry-RB-B-early",
+                  "relationships-jericho-quarry-RB-B-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + later quarry pits · Buried: no required tombs · 50 BCE–135 CE",
+                  "Jericho historical basin + later quarry pits · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-graves-at-mouth": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C03",
+            "families": [
+              {
+                "family_id": "jericho-quarry:RB-P",
+                "branch_ids": [
+                  "relationships-jericho-quarry-RB-P-early",
+                  "relationships-jericho-quarry-RB-P-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + later quarry pits · Puech: concealed opening · 50 BCE–135 CE",
+                  "Jericho historical basin + later quarry pits · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-graves-at-mouth": [
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C04",
+            "families": [
+              {
+                "family_id": "jericho-quarry:RB-M",
+                "branch_ids": [
+                  "relationships-jericho-quarry-RB-M-early",
+                  "relationships-jericho-quarry-RB-M-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + later quarry pits · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Jericho historical basin + later quarry pits · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-graves-at-mouth": [
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-opening-north": [
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C05",
+            "families": [
+              {
+                "family_id": "samiya-kallai:RB-B",
+                "branch_ids": [
+                  "relationships-samiya-kallai-RB-B-early",
+                  "relationships-samiya-kallai-RB-B-extended"
+                ],
+                "labels": [
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–135 CE",
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "samiya-kallai:RB-M",
+                "branch_ids": [
+                  "relationships-samiya-kallai-RB-M-early",
+                  "relationships-samiya-kallai-RB-M-extended"
+                ],
+                "labels": [
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "samiya-kallai:RB-P",
+                "branch_ids": [
+                  "relationships-samiya-kallai-RB-P-early",
+                  "relationships-samiya-kallai-RB-P-extended"
+                ],
+                "labels": [
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–135 CE",
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "yanun-marjama-anchor:RB-L",
+                "branch_ids": [
+                  "relationships-yanun-marjama-anchor-RB-L-early",
+                  "relationships-yanun-marjama-anchor-RB-L-extended"
+                ],
+                "labels": [
+                  "Janoaḥ / Yanun pit unassigned; Marjama Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–135 CE",
+                  "Janoaḥ / Yanun pit unassigned; Marjama Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-graves-at-mouth": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          }
+        ],
+        "attainable_pair_count": 0,
+        "attainable_pairs": [],
+        "unseparable_pairs": [
+          [
+            "C01",
+            "C02"
+          ],
+          [
+            "C01",
+            "C03"
+          ],
+          [
+            "C01",
+            "C04"
+          ],
+          [
+            "C01",
+            "C05"
+          ],
+          [
+            "C02",
+            "C03"
+          ],
+          [
+            "C02",
+            "C04"
+          ],
+          [
+            "C02",
+            "C05"
+          ],
+          [
+            "C03",
+            "C04"
+          ],
+          [
+            "C03",
+            "C05"
+          ],
+          [
+            "C04",
+            "C05"
+          ]
+        ],
+        "perfect_separation_conditional_on_decisive_results": false,
+        "minimum_sets_for_all_attainable_pairs": [],
+        "capability_order": [
+          {
+            "observation_id": "quarry-graves-at-mouth",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              }
+            ],
+            "directional_pair_count": 6,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kenyon-plates",
+              "kenyon-specific-mouth"
+            ]
+          },
+          {
+            "observation_id": "kallai-pool-east",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C05",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "contradicted"
+                ]
+              }
+            ],
+            "directional_pair_count": 4,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kallai-feature-crosswalk",
+              "kallai-pages"
+            ]
+          },
+          {
+            "observation_id": "kallai-pool-window",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C05",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "neither"
+                ]
+              }
+            ],
+            "directional_pair_count": 4,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kallai-feature-crosswalk",
+              "kallai-pages"
+            ]
+          }
+        ]
+      },
+      "all_planning": {
+        "scenario": "all_planning",
+        "class_count": 5,
+        "class_pair_count": 10,
+        "classes": [
+          {
+            "id": "C01",
+            "families": [
+              {
+                "family_id": "jericho-d9:RB-B",
+                "branch_ids": [
+                  "relationships-jericho-d9-RB-B-early",
+                  "relationships-jericho-d9-RB-B-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + D9 · Buried: no required tombs · 50 BCE–135 CE",
+                  "Jericho historical basin + D9 · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-d9:RB-M",
+                "branch_ids": [
+                  "relationships-jericho-d9-RB-M-early",
+                  "relationships-jericho-d9-RB-M-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + D9 · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Jericho historical basin + D9 · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-d9:RB-P",
+                "branch_ids": [
+                  "relationships-jericho-d9-RB-P-early",
+                  "relationships-jericho-d9-RB-P-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + D9 · Puech: concealed opening · 50 BCE–135 CE",
+                  "Jericho historical basin + D9 · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-historical-ns1:RB-B",
+                "branch_ids": [
+                  "relationships-jericho-historical-ns1-RB-B-early",
+                  "relationships-jericho-historical-ns1-RB-B-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + NS1 · Buried: no required tombs · 50 BCE–135 CE",
+                  "Jericho historical basin + NS1 · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-historical-ns1:RB-M",
+                "branch_ids": [
+                  "relationships-jericho-historical-ns1-RB-M-early",
+                  "relationships-jericho-historical-ns1-RB-M-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + NS1 · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Jericho historical basin + NS1 · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "jericho-historical-ns1:RB-P",
+                "branch_ids": [
+                  "relationships-jericho-historical-ns1-RB-P-early",
+                  "relationships-jericho-historical-ns1-RB-P-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + NS1 · Puech: concealed opening · 50 BCE–135 CE",
+                  "Jericho historical basin + NS1 · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "yanun-jericho-anchor:RB-L",
+                "branch_ids": [
+                  "relationships-yanun-jericho-anchor-RB-L-early",
+                  "relationships-yanun-jericho-anchor-RB-L-extended"
+                ],
+                "labels": [
+                  "Janoaḥ / Yanun pit unassigned; Jericho Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–135 CE",
+                  "Janoaḥ / Yanun pit unassigned; Jericho Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-graves-at-mouth": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C02",
+            "families": [
+              {
+                "family_id": "jericho-quarry:RB-B",
+                "branch_ids": [
+                  "relationships-jericho-quarry-RB-B-early",
+                  "relationships-jericho-quarry-RB-B-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + later quarry pits · Buried: no required tombs · 50 BCE–135 CE",
+                  "Jericho historical basin + later quarry pits · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-graves-at-mouth": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C03",
+            "families": [
+              {
+                "family_id": "jericho-quarry:RB-P",
+                "branch_ids": [
+                  "relationships-jericho-quarry-RB-P-early",
+                  "relationships-jericho-quarry-RB-P-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + later quarry pits · Puech: concealed opening · 50 BCE–135 CE",
+                  "Jericho historical basin + later quarry pits · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-graves-at-mouth": [
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C04",
+            "families": [
+              {
+                "family_id": "jericho-quarry:RB-M",
+                "branch_ids": [
+                  "relationships-jericho-quarry-RB-M-early",
+                  "relationships-jericho-quarry-RB-M-extended"
+                ],
+                "labels": [
+                  "Jericho historical basin + later quarry pits · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Jericho historical basin + later quarry pits · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "contradicted",
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-graves-at-mouth": [
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only"
+              ],
+              "quarry-opening-north": [
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          },
+          {
+            "id": "C05",
+            "families": [
+              {
+                "family_id": "samiya-kallai:RB-B",
+                "branch_ids": [
+                  "relationships-samiya-kallai-RB-B-early",
+                  "relationships-samiya-kallai-RB-B-extended"
+                ],
+                "labels": [
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–135 CE",
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "samiya-kallai:RB-M",
+                "branch_ids": [
+                  "relationships-samiya-kallai-RB-M-early",
+                  "relationships-samiya-kallai-RB-M-extended"
+                ],
+                "labels": [
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–135 CE",
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "samiya-kallai:RB-P",
+                "branch_ids": [
+                  "relationships-samiya-kallai-RB-P-early",
+                  "relationships-samiya-kallai-RB-P-extended"
+                ],
+                "labels": [
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–135 CE",
+                  "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–70 CE"
+                ]
+              },
+              {
+                "family_id": "yanun-marjama-anchor:RB-L",
+                "branch_ids": [
+                  "relationships-yanun-marjama-anchor-RB-L-early",
+                  "relationships-yanun-marjama-anchor-RB-L-extended"
+                ],
+                "labels": [
+                  "Janoaḥ / Yanun pit unassigned; Marjama Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–135 CE",
+                  "Janoaḥ / Yanun pit unassigned; Marjama Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–70 CE"
+                ]
+              }
+            ],
+            "predictions": {
+              "kallai-pool-east": [
+                "satisfied"
+              ],
+              "kallai-pool-window": [
+                "early",
+                "extended-only"
+              ],
+              "historical-basin-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-pit-window": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-graves-at-mouth": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-joint-access": [
+                "early",
+                "extended-only",
+                "neither"
+              ],
+              "quarry-opening-north": [
+                "contradicted",
+                "satisfied"
+              ],
+              "quarry-opening-concealed": [
+                "contradicted",
+                "satisfied"
+              ]
+            }
+          }
+        ],
+        "attainable_pair_count": 0,
+        "attainable_pairs": [],
+        "unseparable_pairs": [
+          [
+            "C01",
+            "C02"
+          ],
+          [
+            "C01",
+            "C03"
+          ],
+          [
+            "C01",
+            "C04"
+          ],
+          [
+            "C01",
+            "C05"
+          ],
+          [
+            "C02",
+            "C03"
+          ],
+          [
+            "C02",
+            "C04"
+          ],
+          [
+            "C02",
+            "C05"
+          ],
+          [
+            "C03",
+            "C04"
+          ],
+          [
+            "C03",
+            "C05"
+          ],
+          [
+            "C04",
+            "C05"
+          ]
+        ],
+        "perfect_separation_conditional_on_decisive_results": false,
+        "minimum_sets_for_all_attainable_pairs": [],
+        "capability_order": [
+          {
+            "observation_id": "quarry-graves-at-mouth",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              }
+            ],
+            "directional_pair_count": 6,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kenyon-plates",
+              "kenyon-specific-mouth"
+            ]
+          },
+          {
+            "observation_id": "quarry-joint-access",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C03",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C04",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C03",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C04",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "neither"
+                ]
+              }
+            ],
+            "directional_pair_count": 6,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kenyon-plates",
+              "kenyon-specific-dating",
+              "kenyon-specific-mouth"
+            ]
+          },
+          {
+            "observation_id": "quarry-pit-window",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C02",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C03",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C01",
+                "excluded": "C04",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C02",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "neither"
+                ]
+              }
+            ],
+            "directional_pair_count": 6,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kenyon-plates",
+              "kenyon-specific-dating",
+              "kenyon-specific-mouth"
+            ]
+          },
+          {
+            "observation_id": "historical-basin-window",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C05",
+                "excluded": "C01",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C02",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "neither"
+                ]
+              }
+            ],
+            "directional_pair_count": 4,
+            "dependency_ids": [
+              "archaeology-specification",
+              "historical-basin-dated-contact"
+            ]
+          },
+          {
+            "observation_id": "kallai-pool-east",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C05",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "contradicted"
+                ]
+              }
+            ],
+            "directional_pair_count": 4,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kallai-feature-crosswalk",
+              "kallai-pages"
+            ]
+          },
+          {
+            "observation_id": "kallai-pool-window",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C05",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C05",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C05",
+                "outcomes": [
+                  "neither"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C05",
+                "outcomes": [
+                  "neither"
+                ]
+              }
+            ],
+            "directional_pair_count": 4,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kallai-feature-crosswalk",
+              "kallai-pages"
+            ]
+          },
+          {
+            "observation_id": "quarry-opening-concealed",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C04",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C03",
+                "outcomes": [
+                  "contradicted"
+                ]
+              }
+            ],
+            "directional_pair_count": 4,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kenyon-plates",
+              "kenyon-specific-dating",
+              "kenyon-specific-mouth"
+            ]
+          },
+          {
+            "observation_id": "quarry-opening-north",
+            "separated_pairs": [],
+            "separated_pair_count": 0,
+            "directional_opportunities": [
+              {
+                "retained": "C01",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C02",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C03",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              },
+              {
+                "retained": "C05",
+                "excluded": "C04",
+                "outcomes": [
+                  "contradicted"
+                ]
+              }
+            ],
+            "directional_pair_count": 4,
+            "dependency_ids": [
+              "archaeology-specification",
+              "kenyon-plates",
+              "kenyon-specific-dating",
+              "kenyon-specific-mouth"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "limits": [
+    "This is a new derived exploratory dataset, built from previously exposed registries and protocol. No new primary image, archaeological observation, custodian reply or holdout is asserted.",
+    "Pair counts describe finite logical alternatives after nuisance/equivalence collapse. They supply neither probabilities, confidence, regional rarity nor cross-project utility.",
+    "Guaranteed pair separation means disjoint compatible decisive-outcome sets conditional on every observation gate succeeding. A possible unresolved result prevents unconditional guaranteed identification.",
+    "Nuisance windows are unioned within assignment/reading families before identical signatures collapse. Model weights and duplicated parameter branches cannot increase influence.",
+    "Joint sets preserve the explicit nuisance-branch correlations; unrecorded within-branch correlations remain unknown. Different classes can have overlapping predictions, and an unknown expands to every decisive outcome. Partial empirical results require an explicit outcome-set preview rather than a forced category.",
+    "The seven acquisition tasks in the existing queue concern several independent claims. Their generic compatible/contradicted gate outcomes cannot be treated as mutually exclusive predictions of Koḥlit sites.",
+    "The finite Koḥlit roster is an implementation pilot, not a regional denominator. All equally available geographic alternatives, an independently reserved prediction and exposure audits remain necessary for identification.",
+    "Named dependency means a conditional plan with a precise source route; record survival, usability, access and timing are unverified. Unscoped dependencies are excluded from the named-dependency scenario.",
+    "No plans, requests, historical outcomes, rarity registrations, atlas data or deposit statuses are changed by this planner or an outcome preview.",
+    "The three letter observations share an image acquisition bundle and reader gates; observational component count is different from acquisition count. Existing frozen full-word success conditions still require every component to be decisive."
+  ]
+}

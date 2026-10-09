@@ -1,0 +1,276 @@
+{
+  "mode": "synthetic_software_pilot",
+  "empirical_accuracy_obtained": false,
+  "outcome": "software pilot only",
+  "claim": "Software arithmetic on explicit synthetic response fixtures",
+  "control_qualification": {
+    "F01": {
+      "eligible_for_empirical_accuracy": true,
+      "eligible_for_confirmatory_accuracy": false,
+      "scope": "exploratory",
+      "gaps": []
+    },
+    "F02": {
+      "eligible_for_empirical_accuracy": true,
+      "eligible_for_confirmatory_accuracy": false,
+      "scope": "exploratory",
+      "gaps": []
+    },
+    "F03": {
+      "eligible_for_empirical_accuracy": true,
+      "eligible_for_confirmatory_accuracy": false,
+      "scope": "exploratory",
+      "gaps": []
+    },
+    "F04": {
+      "eligible_for_empirical_accuracy": true,
+      "eligible_for_confirmatory_accuracy": false,
+      "scope": "exploratory",
+      "gaps": []
+    },
+    "F05": {
+      "eligible_for_empirical_accuracy": true,
+      "eligible_for_confirmatory_accuracy": false,
+      "scope": "exploratory",
+      "gaps": []
+    }
+  },
+  "reader_results": [
+    {
+      "reader_id": "SYNTHETIC_A",
+      "eligible_presented_controls": 5,
+      "scorable_locked_responses": 4,
+      "missing_responses": [
+        "F05"
+      ],
+      "correct": 1,
+      "answered": 2,
+      "abstentions": 1,
+      "unknown_answers": 1,
+      "accuracy_including_abstentions": 0.25,
+      "accuracy_when_answered": 0.5,
+      "response_completeness": 0.8,
+      "scorable_fraction_of_presented_controls": 0.8,
+      "confusion_matrix": [
+        {
+          "truth": "ב",
+          "answer": "ב",
+          "count": 1
+        },
+        {
+          "truth": "ה",
+          "answer": "[ABSTAIN]",
+          "count": 1
+        },
+        {
+          "truth": "ח",
+          "answer": "[UNKNOWN]",
+          "count": 1
+        },
+        {
+          "truth": "כ",
+          "answer": "ב",
+          "count": 1
+        }
+      ],
+      "scored_items": [
+        {
+          "code": "F01",
+          "truth": "ב",
+          "prediction": "ב",
+          "grade": "certain",
+          "scope": "exploratory"
+        },
+        {
+          "code": "F02",
+          "truth": "כ",
+          "prediction": "ב",
+          "grade": "certain",
+          "scope": "exploratory"
+        },
+        {
+          "code": "F03",
+          "truth": "ה",
+          "prediction": "[ABSTAIN]",
+          "grade": "illegible",
+          "scope": "exploratory"
+        },
+        {
+          "code": "F04",
+          "truth": "ח",
+          "prediction": "[UNKNOWN]",
+          "grade": "illegible",
+          "scope": "exploratory"
+        }
+      ],
+      "excluded_control_responses": [],
+      "unscored_target_responses": []
+    },
+    {
+      "reader_id": "SYNTHETIC_B",
+      "eligible_presented_controls": 5,
+      "scorable_locked_responses": 4,
+      "missing_responses": [
+        "F05"
+      ],
+      "correct": 2,
+      "answered": 3,
+      "abstentions": 0,
+      "unknown_answers": 1,
+      "accuracy_including_abstentions": 0.5,
+      "accuracy_when_answered": 0.6666666666666666,
+      "response_completeness": 0.8,
+      "scorable_fraction_of_presented_controls": 0.8,
+      "confusion_matrix": [
+        {
+          "truth": "ב",
+          "answer": "כ",
+          "count": 1
+        },
+        {
+          "truth": "ה",
+          "answer": "ה",
+          "count": 1
+        },
+        {
+          "truth": "ח",
+          "answer": "[UNKNOWN]",
+          "count": 1
+        },
+        {
+          "truth": "כ",
+          "answer": "כ",
+          "count": 1
+        }
+      ],
+      "scored_items": [
+        {
+          "code": "F01",
+          "truth": "ב",
+          "prediction": "כ",
+          "grade": "certain",
+          "scope": "exploratory"
+        },
+        {
+          "code": "F02",
+          "truth": "כ",
+          "prediction": "כ",
+          "grade": "certain",
+          "scope": "exploratory"
+        },
+        {
+          "code": "F03",
+          "truth": "ה",
+          "prediction": "ה",
+          "grade": "certain",
+          "scope": "exploratory"
+        },
+        {
+          "code": "F04",
+          "truth": "ח",
+          "prediction": "[UNKNOWN]",
+          "grade": "illegible",
+          "scope": "exploratory"
+        }
+      ],
+      "excluded_control_responses": [],
+      "unscored_target_responses": []
+    }
+  ],
+  "independent_reader_comparisons": [
+    {
+      "code": "F01",
+      "readers": [
+        "SYNTHETIC_A",
+        "SYNTHETIC_B"
+      ],
+      "same_answer": false,
+      "independence_documented": true,
+      "left": {
+        "decision": "read",
+        "label": "ב",
+        "grade": "certain",
+        "recognized": false
+      },
+      "right": {
+        "decision": "read",
+        "label": "כ",
+        "grade": "certain",
+        "recognized": false
+      },
+      "reconciliation": "independent answers preserved; no adjudicated replacement"
+    },
+    {
+      "code": "F02",
+      "readers": [
+        "SYNTHETIC_A",
+        "SYNTHETIC_B"
+      ],
+      "same_answer": false,
+      "independence_documented": true,
+      "left": {
+        "decision": "read",
+        "label": "ב",
+        "grade": "certain",
+        "recognized": false
+      },
+      "right": {
+        "decision": "read",
+        "label": "כ",
+        "grade": "certain",
+        "recognized": false
+      },
+      "reconciliation": "independent answers preserved; no adjudicated replacement"
+    },
+    {
+      "code": "F03",
+      "readers": [
+        "SYNTHETIC_A",
+        "SYNTHETIC_B"
+      ],
+      "same_answer": false,
+      "independence_documented": true,
+      "left": {
+        "decision": "abstain",
+        "label": null,
+        "grade": "illegible",
+        "recognized": false
+      },
+      "right": {
+        "decision": "read",
+        "label": "ה",
+        "grade": "certain",
+        "recognized": false
+      },
+      "reconciliation": "independent answers preserved; no adjudicated replacement"
+    },
+    {
+      "code": "F04",
+      "readers": [
+        "SYNTHETIC_A",
+        "SYNTHETIC_B"
+      ],
+      "same_answer": true,
+      "independence_documented": true,
+      "left": {
+        "decision": "unknown",
+        "label": null,
+        "grade": "illegible",
+        "recognized": false
+      },
+      "right": {
+        "decision": "unknown",
+        "label": null,
+        "grade": "illegible",
+        "recognized": false
+      },
+      "reconciliation": "independent answers preserved; no adjudicated replacement"
+    }
+  ],
+  "limits": [
+    "Pairwise agreement is not an independent truth criterion.",
+    "Scores exclude targets, unresolved truths, recognition and unverified exposure; exclusions remain visible.",
+    "Accuracy including abstentions uses scorable returned controls; missing responses are reported separately.",
+    "No control-accuracy threshold overrides the frozen XII10 decisive-letter gates."
+  ]
+}
