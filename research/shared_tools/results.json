@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "synthetic_calibration": [
+    {
+      "id": "translate_scale",
+      "evidence_class": "synthetic_computational_fixture",
+      "predicted": [
+        21.0,
+        23.0
+      ],
+      "heldout_error": 0.0,
+      "status": "within_tolerance"
+    },
+    {
+      "id": "rotation",
+      "evidence_class": "synthetic_computational_fixture",
+      "predicted": [
+        11.0,
+        17.0
+      ],
+      "heldout_error": 0.0,
+      "status": "within_tolerance"
+    },
+    {
+      "id": "reflection",
+      "evidence_class": "synthetic_computational_fixture",
+      "predicted": [
+        13.0,
+        19.0
+      ],
+      "heldout_error": 0.0,
+      "status": "within_tolerance"
+    },
+    {
+      "id": "shear",
+      "evidence_class": "synthetic_computational_fixture",
+      "predicted": [
+        14.5,
+        14.399999999999999
+      ],
+      "heldout_error": 1.7763568394002505e-15,
+      "status": "within_tolerance"
+    },
+    {
+      "id": "bad_heldout_control",
+      "evidence_class": "synthetic_computational_fixture",
+      "predicted": [
+        7.0,
+        9.0
+      ],
+      "heldout_error": 2.0,
+      "status": "outside_tolerance"
+    }
+  ],
+  "exposed_plan_calibration": [
+    {
+      "id": "iv17_northern_chord",
+      "evidence_class": "exposed_plan_calibration",
+      "computed_metres": 0.858629662869379,
+      "recorded_computation_metres": 0.858629662869379,
+      "reproduction_error_metres": 0.0,
+      "published_opening_width_metres": 0.8,
+      "difference_from_published_width_metres": 0.058629662869378985,
+      "source": "Sion 2002, p.63, Plan 5; cycle2 frozen picks",
+      "source_paths": [
+        "research/measurements/cycle2/iv17_repeat.json",
+        "research/measurements/cycle2/iv17_repeat_results.json"
+      ],
+      "limits": "A drawing chord and reported opening width have different definitions; total measurement error and true north remain unknown."
+    },
+    {
+      "id": "iv17_southern_chord",
+      "evidence_class": "exposed_plan_calibration",
+      "computed_metres": 1.1641432866433299,
+      "recorded_computation_metres": 1.1641432866433299,
+      "reproduction_error_metres": 0.0,
+      "source_paths": [
+        "research/measurements/cycle2/iv17_repeat.json",
+        "research/measurements/cycle2/iv17_repeat_results.json"
+      ],
+      "limits": "Present gap only; no ancient full-mouth width follows."
+    }
+  ],
+  "exposed_registration_diagnostic": {
+    "id": "hyrcania_exposed_registration_failure",
+    "evidence_class": "exposed_registration_diagnostic",
+    "computed_local_EN_metres": [
+      -834.7688826135036,
+      792.6444375921949
+    ],
+    "local_reproduction_error_metres": 1.1368683772161603e-13,
+    "withheld_residual_metres_as_recorded": 244.37106137762902,
+    "source_decision": "regional registration trial completed; rejected for precise feature placement",
+    "source_paths": [
+      "registration/hyrcania_plan_registration_2026-09-30.json"
+    ],
+    "limits": "Local transform reproduced; geodetic conversion is not rerun. The source check is already exposed and retains unknown anchor, grid-notation and feature-identity error."
+  },
+  "independent_empirical_benchmark": {
+    "status": "not_run",
+    "required": "New, independently established survey/letter/phase answers reserved before testing."
+  },
+  "human_reading_benchmark": {
+    "status": "not_run",
+    "required": "Curated legible original-letter controls and independent readers."
+  },
+  "limits": "These diagnostics test computational calibration and reproduce exposed picks. They supply no reading accuracy, field accuracy or identification probability."
+}

@@ -12,6 +12,8 @@ Five source-linked research tools implement methods 2–6 using records already 
 
 The Koḥlit relationship pilot keeps the SWP historical irregular basin separate from the reservoir built in 1898. Kallai's pool remains unlocated. Later quarrying establishes a grave-before-pit sequence without dating early pit accessibility. The cave catalog treats opening widths as measurements; Entry 25's three cubits belong to the digging instruction. Every digging-target branch remains unknown because origins, datums or phase contacts are missing. The regional eligible denominator and geographic coverage remain null.
 
+[Shared research tools](../shared_tools/README.md) add local source retrieval, manuscript correspondence queries, entry/control adapters, calibration diagnostics and review/capture preparation.
+
 ## Inputs and register
 
 `features.json` holds stable physical-feature identities. A documentary notice is not automatically a physical feature, and an alias or interpretation is not silently merged. Each module's reviewed inputs remain in its own directory. The [contract](CONTRACT.md) defines the source, observation, historical-state and result records. Exact source pages/figures, inspection scope, original observation lineages, native frames, uncertainty and missing data travel with the result.

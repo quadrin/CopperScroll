@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copper Scroll — shared research tools</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,sans-serif}body{max-width:1050px;margin:36px auto;padding:0 20px;line-height:1.5}h1{font-size:24px}nav{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}button,input,select{font:inherit;padding:8px;border:1px solid #888;border-radius:4px}button{cursor:pointer}button[aria-pressed=true]{outline:2px solid #527c96}form{display:flex;gap:10px;flex-wrap:wrap}input{flex:1;min-width:180px}.record{padding:16px 0;border-bottom:1px solid #8885}.meta{font-size:13px;opacity:.8}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}a{color:#4285ac}.error{color:#c34}label{display:block}.note{max-width:850px}summary{cursor:pointer}
+</style>
+<h1>Copper Scroll shared research tools</h1>
+<p class="note">Search existing records, inspect image correspondence, compare entry packets and examine calibration diagnostics. Source descriptions, provisional mappings and unknown observations retain their recorded status.</p>
+<nav aria-label="Research tool"><button data-tab="search" aria-pressed="true">Sources</button><button data-tab="map">Photographs</button><button data-tab="entries">Entries</button><button data-tab="controls">Controls</button><button data-tab="benchmark">Benchmarks</button></nav>
+<section id="inputs"></section><p id="status" role="status"></p><section id="results"></section>
+<script>
+const $=s=>document.querySelector(s);let active='search',requestId=0;
+function element(tag,text,parent,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;if(parent)parent.append(e);return e}
+function link(text,url,parent){if(!url)return;const a=element('a',text,parent);a.href=url;a.target='_blank';a.rel='noopener'}
+function details(data,parent){const d=element('details',undefined,parent);element('summary','Recorded fields',d);element('pre',JSON.stringify(data,null,2),d)}
+async function get(path){const r=await fetch(path);const d=await r.json();if(!r.ok)throw Error(d.error||r.status);return d}
+function field(form,name,placeholder){const i=element('input',undefined,form);i.name=name;i.placeholder=placeholder;i.setAttribute('aria-label',placeholder);return i}
+function setup(){requestId++;$('#inputs').replaceChildren();$('#results').replaceChildren();$('#status').textContent='';document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.tab===active));
+if(active==='search'||active==='map'){const f=element('form',undefined,$('#inputs'));if(active==='search'){field(f,'q','Search word, record number or caption');const sel=element('select',undefined,f);sel.name='kind';sel.setAttribute('aria-label','Source type');for(const [v,t]of[['','All records'],['note','Research notes'],['figure','Figures and pages'],['catalog','Catalogue rows'],['ocr','Local OCR']]){const o=element('option',t,sel);o.value=v}}
+else{field(f,'line','Line, e.g. VII 11');field(f,'cut','Physical cut, e.g. 13');field(f,'column','Column, e.g. 7');const sel=element('select',undefined,f);sel.name='substrate';sel.setAttribute('aria-label','Object');for(const [v,t]of[['','Original and replica'],['original','Original only'],['replica','Replica only']]){const o=element('option',t,sel);o.value=v}}
+element('button',active==='search'?'Search':'Inspect',f).type='submit';f.onsubmit=async e=>{e.preventDefault();const p=new URLSearchParams();for(const[k,v]of new FormData(f))if(v.trim())p.set(k,v.trim());await render('/api/'+active+'?'+p)};
+}else render('/api/'+active)}
+async function render(path){const id=++requestId;$('#status').textContent='Loading…';$('#results').replaceChildren();try{const data=await get(path);if(id!==requestId)return;const out=$('#results');$('#status').textContent='';
+if(active==='search'){element('p',data.length+' matching records',out);for(const r of data){const box=element('article',undefined,out,'record');link(r.title,r.url,box);element('p',r.kind+' · '+r.path,box,'meta');element('p',r.excerpt,box);const loc=r.locator;if(loc.asset_path)link('Archived asset','https://github.com/quadrin/CopperScroll/blob/26871df2e5e673f590b6fdf031489791dd88c38b/'+loc.asset_path,box);details(loc,box)}}
+else if(active==='map'){element('p',data.status,out);for(const c of data.locus_claims){const box=element('article',undefined,out,'record');element('h2',c.locus+' — '+c.status,box);element('p',c.note,box);details(c,box)}element('p',data.images.length+' catalogue views; original target registration remains a separate claim.',out);for(const i of data.images){const box=element('article',undefined,out,'record');link(i.id+' — '+i.title,i.catalog_url,box);element('p',i.substrate+' · '+(i.width_px||'?')+' × '+(i.height_px||'?')+' px',box,'meta');details(i,box)}}
+else if(active==='entries'){element('p',data.limits,out);const select=element('select',undefined,out);select.setAttribute('aria-label','Canonical entry');data.entries.forEach(e=>{const o=element('option','Entry '+e.entry+' · '+e.canonical_lines,select);o.value=e.entry});const body=element('div',undefined,out);function show(){body.replaceChildren();const e=data.entries.find(e=>e.entry===select.value);element('p',e.boundary_note,body);details(e,body)}select.onchange=show;show()}
+else if(active==='controls'){element('p',data.limits,out);element('p',data.equal_opportunity_rule,out);for(const c of data.cave_controls){const box=element('article',undefined,out,'record');element('h2',c.name,box);details(c,box)}details({pool_notices:data.pool_notices,eligible_regional_denominator:data.eligible_regional_denominator,coverage_complete:data.coverage_complete},out)}
+else{element('p',data.limits,out);for(const c of [...data.synthetic_calibration,...data.exposed_plan_calibration]){const box=element('article',undefined,out,'record');element('h2',c.id,box);details(c,box)}details(data.exposed_registration_diagnostic,out);details(data.independent_empirical_benchmark,out);details(data.human_reading_benchmark,out)}
+}catch(e){if(id===requestId){$('#status').className='error';$('#status').textContent=e.message}}}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{active=b.dataset.tab;setup()});setup();
+</script></html>
