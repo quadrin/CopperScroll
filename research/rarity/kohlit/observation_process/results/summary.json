@@ -1,0 +1,341 @@
+{
+ "status": "exploratory: scope rules written after the registered result was seen; the registered result is unchanged",
+ "registered_reproduces_committed_result": true,
+ "models": {
+  "registered": "stage2/match.py on the merged sheets of the source-2 addendum",
+  "scoped": "absence statements count only where their covered scope reaches the whole target",
+  "sector_records": "registered rules plus sector_records.csv (outside the packets)"
+ },
+ "headline": {
+  "registered": {
+   "R1_main|A_survey": {
+    "N": 333,
+    "k": 0,
+    "f": 20,
+    "m": 313,
+    "m_full_coverage": 248,
+    "m_no_adequate_coverage": 65,
+    "m_not_recorded_stage1": 143
+   },
+   "R1_main|A_text": {
+    "N": 333,
+    "k": 0,
+    "f": 19,
+    "m": 314,
+    "m_full_coverage": 249,
+    "m_no_adequate_coverage": 65,
+    "m_not_recorded_stage1": 143
+   },
+   "R1_main|B": {
+    "N": 333,
+    "k": 5,
+    "f": 19,
+    "m": 309,
+    "m_full_coverage": 245,
+    "m_no_adequate_coverage": 64,
+    "m_not_recorded_stage1": 143
+   },
+   "R1_pre70|A_survey": {
+    "N": 499,
+    "k": 0,
+    "f": 31,
+    "m": 468,
+    "m_full_coverage": 381,
+    "m_no_adequate_coverage": 87,
+    "m_not_recorded_stage1": 255
+   },
+   "R1_pre70|A_text": {
+    "N": 499,
+    "k": 0,
+    "f": 30,
+    "m": 469,
+    "m_full_coverage": 382,
+    "m_no_adequate_coverage": 87,
+    "m_not_recorded_stage1": 255
+   },
+   "R1_pre70|B": {
+    "N": 499,
+    "k": 6,
+    "f": 30,
+    "m": 463,
+    "m_full_coverage": 378,
+    "m_no_adequate_coverage": 85,
+    "m_not_recorded_stage1": 255
+   },
+   "R2_main|A_survey": {
+    "N": 101,
+    "k": 0,
+    "f": 0,
+    "m": 101,
+    "m_full_coverage": 59,
+    "m_no_adequate_coverage": 42,
+    "m_not_recorded_stage1": 24
+   },
+   "R2_main|A_text": {
+    "N": 101,
+    "k": 0,
+    "f": 0,
+    "m": 101,
+    "m_full_coverage": 59,
+    "m_no_adequate_coverage": 42,
+    "m_not_recorded_stage1": 24
+   },
+   "R2_main|B": {
+    "N": 101,
+    "k": 3,
+    "f": 0,
+    "m": 98,
+    "m_full_coverage": 56,
+    "m_no_adequate_coverage": 42,
+    "m_not_recorded_stage1": 24
+   },
+   "R2_pre70|A_survey": {
+    "N": 138,
+    "k": 0,
+    "f": 0,
+    "m": 138,
+    "m_full_coverage": 84,
+    "m_no_adequate_coverage": 54,
+    "m_not_recorded_stage1": 39
+   },
+   "R2_pre70|A_text": {
+    "N": 138,
+    "k": 0,
+    "f": 0,
+    "m": 138,
+    "m_full_coverage": 84,
+    "m_no_adequate_coverage": 54,
+    "m_not_recorded_stage1": 39
+   },
+   "R2_pre70|B": {
+    "N": 138,
+    "k": 4,
+    "f": 0,
+    "m": 134,
+    "m_full_coverage": 81,
+    "m_no_adequate_coverage": 53,
+    "m_not_recorded_stage1": 39
+   }
+  },
+  "scoped": {
+   "R1_main|A_survey": {
+    "N": 333,
+    "k": 0,
+    "f": 0,
+    "m": 333,
+    "m_full_coverage": 268,
+    "m_no_adequate_coverage": 65,
+    "m_not_recorded_stage1": 143
+   },
+   "R1_main|A_text": {
+    "N": 333,
+    "k": 0,
+    "f": 0,
+    "m": 333,
+    "m_full_coverage": 268,
+    "m_no_adequate_coverage": 65,
+    "m_not_recorded_stage1": 143
+   },
+   "R1_main|B": {
+    "N": 333,
+    "k": 5,
+    "f": 0,
+    "m": 328,
+    "m_full_coverage": 264,
+    "m_no_adequate_coverage": 64,
+    "m_not_recorded_stage1": 143
+   },
+   "R1_pre70|A_survey": {
+    "N": 499,
+    "k": 0,
+    "f": 0,
+    "m": 499,
+    "m_full_coverage": 412,
+    "m_no_adequate_coverage": 87,
+    "m_not_recorded_stage1": 255
+   },
+   "R1_pre70|A_text": {
+    "N": 499,
+    "k": 0,
+    "f": 0,
+    "m": 499,
+    "m_full_coverage": 412,
+    "m_no_adequate_coverage": 87,
+    "m_not_recorded_stage1": 255
+   },
+   "R1_pre70|B": {
+    "N": 499,
+    "k": 6,
+    "f": 0,
+    "m": 493,
+    "m_full_coverage": 408,
+    "m_no_adequate_coverage": 85,
+    "m_not_recorded_stage1": 255
+   },
+   "R2_main|A_survey": {
+    "N": 101,
+    "k": 0,
+    "f": 0,
+    "m": 101,
+    "m_full_coverage": 59,
+    "m_no_adequate_coverage": 42,
+    "m_not_recorded_stage1": 24
+   },
+   "R2_main|A_text": {
+    "N": 101,
+    "k": 0,
+    "f": 0,
+    "m": 101,
+    "m_full_coverage": 59,
+    "m_no_adequate_coverage": 42,
+    "m_not_recorded_stage1": 24
+   },
+   "R2_main|B": {
+    "N": 101,
+    "k": 3,
+    "f": 0,
+    "m": 98,
+    "m_full_coverage": 56,
+    "m_no_adequate_coverage": 42,
+    "m_not_recorded_stage1": 24
+   },
+   "R2_pre70|A_survey": {
+    "N": 138,
+    "k": 0,
+    "f": 0,
+    "m": 138,
+    "m_full_coverage": 84,
+    "m_no_adequate_coverage": 54,
+    "m_not_recorded_stage1": 39
+   },
+   "R2_pre70|A_text": {
+    "N": 138,
+    "k": 0,
+    "f": 0,
+    "m": 138,
+    "m_full_coverage": 84,
+    "m_no_adequate_coverage": 54,
+    "m_not_recorded_stage1": 39
+   },
+   "R2_pre70|B": {
+    "N": 138,
+    "k": 4,
+    "f": 0,
+    "m": 134,
+    "m_full_coverage": 81,
+    "m_no_adequate_coverage": 53,
+    "m_not_recorded_stage1": 39
+   }
+  },
+  "sector_records": {
+   "R1_main|A_survey": {
+    "N": 333,
+    "k": 0,
+    "f": 20,
+    "m": 313,
+    "m_full_coverage": 248,
+    "m_no_adequate_coverage": 65,
+    "m_not_recorded_stage1": 143
+   },
+   "R1_main|A_text": {
+    "N": 333,
+    "k": 0,
+    "f": 19,
+    "m": 314,
+    "m_full_coverage": 249,
+    "m_no_adequate_coverage": 65,
+    "m_not_recorded_stage1": 143
+   },
+   "R1_main|B": {
+    "N": 333,
+    "k": 5,
+    "f": 19,
+    "m": 309,
+    "m_full_coverage": 245,
+    "m_no_adequate_coverage": 64,
+    "m_not_recorded_stage1": 143
+   },
+   "R1_pre70|A_survey": {
+    "N": 499,
+    "k": 0,
+    "f": 28,
+    "m": 471,
+    "m_full_coverage": 384,
+    "m_no_adequate_coverage": 87,
+    "m_not_recorded_stage1": 255
+   },
+   "R1_pre70|A_text": {
+    "N": 499,
+    "k": 0,
+    "f": 27,
+    "m": 472,
+    "m_full_coverage": 385,
+    "m_no_adequate_coverage": 87,
+    "m_not_recorded_stage1": 255
+   },
+   "R1_pre70|B": {
+    "N": 499,
+    "k": 6,
+    "f": 27,
+    "m": 466,
+    "m_full_coverage": 381,
+    "m_no_adequate_coverage": 85,
+    "m_not_recorded_stage1": 255
+   },
+   "R2_main|A_survey": {
+    "N": 101,
+    "k": 0,
+    "f": 0,
+    "m": 101,
+    "m_full_coverage": 59,
+    "m_no_adequate_coverage": 42,
+    "m_not_recorded_stage1": 24
+   },
+   "R2_main|A_text": {
+    "N": 101,
+    "k": 0,
+    "f": 0,
+    "m": 101,
+    "m_full_coverage": 59,
+    "m_no_adequate_coverage": 42,
+    "m_not_recorded_stage1": 24
+   },
+   "R2_main|B": {
+    "N": 101,
+    "k": 3,
+    "f": 0,
+    "m": 98,
+    "m_full_coverage": 56,
+    "m_no_adequate_coverage": 42,
+    "m_not_recorded_stage1": 24
+   },
+   "R2_pre70|A_survey": {
+    "N": 138,
+    "k": 0,
+    "f": 0,
+    "m": 138,
+    "m_full_coverage": 84,
+    "m_no_adequate_coverage": 54,
+    "m_not_recorded_stage1": 39
+   },
+   "R2_pre70|A_text": {
+    "N": 138,
+    "k": 0,
+    "f": 0,
+    "m": 138,
+    "m_full_coverage": 84,
+    "m_no_adequate_coverage": 54,
+    "m_not_recorded_stage1": 39
+   },
+   "R2_pre70|B": {
+    "N": 138,
+    "k": 4,
+    "f": 0,
+    "m": 134,
+    "m_full_coverage": 81,
+    "m_no_adequate_coverage": 53,
+    "m_not_recorded_stage1": 39
+   }
+  }
+ }
+}

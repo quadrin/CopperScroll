@@ -1,0 +1,14 @@
+{
+ "case_id": "dev-003",
+ "reasons": [
+  "parsed instruction: {\"direction\": \"E\", \"distance\": {\"kind\": \"band\", \"max_m\": 240.0, \"min_m\": 160.0, \"stated\": \"400 cubits\"}, \"opening\": null, \"reference\": \"the wall at the edge of the village\", \"target_class\": \"tomb\", \"type_term\": \"tomb\"}",
+  "c1: supported: type=T (type 'burial cave with rock-hewn courtyard' is a tomb); direction=T (bearing 99.7 deg is inside the E sector 45-135); distance=T (distance 190.7 m is inside 160.0-240.0 m (400 cubits)); date=T (date U passes)",
+  "c2: contradicted: type=T (type 'burial cave with rock-hewn courtyard' is a tomb); direction=F (bearing 255.5 deg is outside the E sector 45-135); distance=F (distance 83.7 m is outside 160.0-240.0 m (400 cubits)); date=T (date U passes)",
+  "c3: contradicted: type=F (type 'large cave' is not a tomb); direction=T (bearing 105.2 deg is inside the E sector 45-135); distance=T (distance 221.7 m is inside 160.0-240.0 m (400 cubits)); date=T (date U passes)",
+  "c4: contradicted: type=T (type 'burial cave with rock-hewn courtyard' is a tomb); direction=F (bearing 229.0 deg is outside the E sector 45-135); distance=F (distance 50.3 m is outside 160.0-240.0 m (400 cubits)); date=T (date U passes)",
+  "decision: c1 is the only survivor and every predicate is supported",
+  "withheld: selected candidate records opening 'west'"
+ ],
+ "selected": "c1",
+ "withheld_prediction": "west"
+}

@@ -1,0 +1,101 @@
+{
+ "case_id": "dev-005",
+ "batch": "development",
+ "instruction": "In the watchtower of the farm, at twelve hundred cubits.",
+ "context": "Low chalk hills cut by seasonal streams in a semi-arid zone, with isolated farms, field watchtowers and rock-cut cisterns. Candidate positions are grid bearings and distances in metres from a farm (relative_to: farm), computed from the survey's map references. Target window: the Byzantine period or earlier. D = dated to the window or earlier (sherds of the window found at the feature, or its building style); L = securely later; U = undated.",
+ "candidates": [
+  {
+   "id": "c1",
+   "features": {
+    "type": "field watchtower",
+    "position": {
+     "bearing_deg": 113.2,
+     "distance_m": 525.5,
+     "relative_to": "farm",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 12; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c2",
+   "features": {
+    "type": "field watchtower",
+    "position": {
+     "bearing_deg": 80.3,
+     "distance_m": 553.9,
+     "relative_to": "farm",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": null,
+    "date": "D",
+    "notes": "survey site 14; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c3",
+   "features": {
+    "type": "structure, probably a field watchtower",
+    "position": {
+     "bearing_deg": 328.1,
+     "distance_m": 219.2,
+     "relative_to": "farm",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 15; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c4",
+   "features": {
+    "type": "field watchtower",
+    "position": {
+     "bearing_deg": 211.3,
+     "distance_m": 1225.9,
+     "relative_to": "farm",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": null,
+    "date": "D",
+    "notes": "survey site 21; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c5",
+   "features": {
+    "type": "field watchtower",
+    "position": {
+     "bearing_deg": 48.5,
+     "distance_m": 872.8,
+     "relative_to": "farm",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": null,
+    "date": "D",
+    "notes": "survey site 17; position computed from its printed map reference"
+   }
+  }
+ ],
+ "degradations": [
+  "instruction_direction_missing",
+  "date_unknown"
+ ],
+ "withheld_question": "On which side of the farm does the chosen feature stand?",
+ "withheld_options": [
+  "north",
+  "east",
+  "south",
+  "west",
+  "unknown"
+ ],
+ "key_sha256": "09d68d273a1da6acdaebed53c24513e1c09faea30572423cc46edf6ffff08229"
+}

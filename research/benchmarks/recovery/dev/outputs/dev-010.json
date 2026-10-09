@@ -1,0 +1,14 @@
+{
+ "case_id": "dev-010",
+ "reasons": [
+  "parsed instruction: {\"direction\": \"S\", \"distance\": {\"kind\": \"band\", \"max_m\": 12.0, \"min_m\": 8.0, \"stated\": \"20 cubits\"}, \"opening\": null, \"reference\": \"the cave in the quarry\", \"target_class\": \"cave\", \"type_term\": \"cave\"}",
+  "c1: contradicted: type=F (type 'rock-hewn cistern' is not a cave); direction=F (bearing 231.7 deg is outside the S sector 135-225); distance=F (distance 840.9 m is outside 8.0-12.0 m (20 cubits)); date=T (date U passes)",
+  "c2: unknown: type=T (type 'large cave' is a cave); direction=? (words 'southeast' lies on a quadrant edge and gives unknown (position rule 3)); distance=T (distance 10 m is inside 8.0-12.0 m (20 cubits)); date=T (date U passes)",
+  "c3: contradicted: type=T (type 'cave' is a cave); direction=F (bearing 244.3 deg is outside the S sector 135-225); distance=F (distance 718.3 m is outside 8.0-12.0 m (20 cubits)); date=T (date U passes)",
+  "c4: contradicted: type=T (type 'cave' is a cave); direction=T (bearing 177.9 deg is inside the S sector 135-225); distance=F (distance 110.1 m is outside 8.0-12.0 m (20 cubits)); date=T (date U passes)",
+  "decision: c2 is the only survivor but a decisive predicate is unknown",
+  "withheld: no candidate selected and the instruction does not state it"
+ ],
+ "selected": "insufficient_evidence",
+ "withheld_prediction": "unknown"
+}

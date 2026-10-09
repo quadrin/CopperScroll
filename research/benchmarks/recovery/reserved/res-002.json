@@ -1,0 +1,114 @@
+{
+  "case_id": "res-002",
+  "batch": "reserved",
+  "instruction": "In the tomb at the top of the hill of [name], whose great front was begun but never freed from the rock: through the door cut between the stepped battlements, in the chamber, 2 cubits: [deposit].",
+  "context": "Redacted site description: a necropolis of isolated sandstone hills in an oasis plain. Large tomb façades crowned with stepped battlements are cut into the hill faces; the recorders numbered the tombs hill by hill. The hill in question runs roughly north-south and is about 60 m high at its north end; its north-east face was left uncut because the lower rock crumbles.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "small rock-cut tomb",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "first tomb of the series, at the north-west end of the hill"
+        },
+        "opening": "door at ground level",
+        "date": "U",
+        "dimensions": null,
+        "notes": "Where the series turns south. Unique decoration: over the door two animals face each other before a rosette."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "rock-cut tomb with façade",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "first tomb of the series, at the north-west end of the hill"
+        },
+        "opening": "door at the foot of the façade",
+        "date": "D",
+        "dimensions": null,
+        "notes": "Fifth in the series; one of three well-preserved façades side by side, each with an inscription in perfect state."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "rock-cut tomb with monumental façade",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": 0,
+          "relative_to": "first tomb of the series, at the north-west end of the hill"
+        },
+        "opening": "door at the foot of the façade",
+        "date": "D",
+        "dimensions": "façade about 20 m high on a base 4-5 m high",
+        "notes": "First tomb of the series; finished façade crowned with stepped battlements; a long dated inscription over the door, too high to be squeezed by earlier visitors."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "rock-cut tomb with monumental façade",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "first tomb of the series, at the north-west end of the hill"
+        },
+        "opening": "door at the foot of the façade",
+        "date": "U",
+        "dimensions": null,
+        "notes": "On the western face; one of the last two façades of the series, among the finest of the site."
+      }
+    },
+    {
+      "id": "c5",
+      "features": {
+        "type": "pit graves cut in the rock (group)",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "top of the hill"
+        },
+        "opening": "open pits; reached by a rough stair cut between two small tombs",
+        "date": "U",
+        "dimensions": null,
+        "notes": "A considerable number of graves dug into the rock surface on the hilltop."
+      }
+    },
+    {
+      "id": "c6",
+      "features": {
+        "type": "rock-cut tomb with monumental façade",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "first tomb of the series, at the north-west end of the hill"
+        },
+        "opening": "door at the foot of the façade",
+        "date": "U",
+        "dimensions": null,
+        "notes": "Third large tomb in the series along the hill face; one of the finest façades; local tradition attaches a story to it."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "distance_missing",
+    "date_unknown",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "By its recorders' estimate, how tall would that monument have been if it had been finished?",
+  "withheld_options": [
+    "under 10 m",
+    "10 to 20 m",
+    "20 to 40 m",
+    "over 40 m",
+    "unknown"
+  ],
+  "key_sha256": "5a608cd9985ab97e03a5e03cdfc489053e5bc94bffbccc60a6508b1c0e114878"
+}

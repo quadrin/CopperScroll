@@ -156,3 +156,6 @@ Full result: [`stage2/RESULTS.md`](stage2/RESULTS.md). Coder A coded all 244 Sta
 - **Source-2 addendum** ([`stage2/addendum_s2/ADDENDUM.md`](stage2/addendum_s2/ADDENDUM.md)): Zertal's survey entries were read for 78 units, from the English edition the project owner supplied. Branch A still has k = 0, but f = 20 and m = 313 of 333.
   - Every new FAIL is a C2 FAIL (19 in the main set, 30 in the pre-70 set). Each rests on "Cisterns: none" in the entry's data block.
   - Qarn Sarṭaba (S1283) becomes a branch-B match, so branch B has k = 5.
+- **Exploratory audits after the result** (8 October; the registered numbers stand):
+  - [Feature-level audit](feature_audit/README.md): only Qarn Sarṭaba's C2 rests on different physical features for the two coders. Of 26 units with two or more matched conditions, 3 are jointly compatible, 22 only if an undated feature existed in the window, and Tananir is not shown compatible.
+  - [Observation-process audit](observation_process/README.md): every FAIL rests on a site-level absence statement that covers at most about 1% of the 1 km sector. If an absence counts only within its scope, f = 0 in every row.

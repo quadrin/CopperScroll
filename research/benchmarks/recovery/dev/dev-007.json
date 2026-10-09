@@ -1,0 +1,98 @@
+{
+ "case_id": "dev-007",
+ "batch": "development",
+ "instruction": "In the building of fieldstones on the slope of the hill, south of the ruin, at five hundred cubits.",
+ "context": "A ruined village on low chalk hills, with cave dwellings, courtyards, cisterns, wells, an olive press, hiding refuges and later village buildings. Candidate positions are grid bearings and distances in metres from the map reference that the report gives for the ruin's survey (relative_to: ruin), computed from the survey's map references. The features are not dated one by one (U).",
+ "candidates": [
+  {
+   "id": "c1",
+   "features": {
+    "type": "rectangular two-room building",
+    "position": {
+     "bearing_deg": 67.5,
+     "distance_m": 269.5,
+     "relative_to": "ruin",
+     "kind": "plan",
+     "precision_m": 10
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 24; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c2",
+   "features": {
+    "type": "building with a cross-vault",
+    "position": {
+     "bearing_deg": 64.2,
+     "distance_m": 227.7,
+     "relative_to": "ruin",
+     "kind": "plan",
+     "precision_m": 10
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 29; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c3",
+   "features": {
+    "type": "building with an arch",
+    "position": {
+     "bearing_deg": 67.1,
+     "distance_m": 229.0,
+     "relative_to": "ruin",
+     "kind": "plan",
+     "precision_m": 10
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 28; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c4",
+   "features": {
+    "type": "ashlar-built structure with a plaster floor",
+    "position": {
+     "bearing_deg": 86.0,
+     "distance_m": 297.7,
+     "relative_to": "ruin",
+     "kind": "plan",
+     "precision_m": 10
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 20; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c5",
+   "features": {
+    "type": "rectangular structure of dry fieldstone construction",
+    "position": {
+     "bearing_deg": 125.4,
+     "distance_m": 283.3,
+     "relative_to": "ruin",
+     "kind": "plan",
+     "precision_m": 10
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 2; position computed from its printed map reference"
+   }
+  }
+ ],
+ "degradations": [],
+ "withheld_question": "Which side of the chosen feature has its entrance?",
+ "withheld_options": [
+  "north",
+  "east",
+  "south",
+  "west",
+  "unknown"
+ ],
+ "key_sha256": "4bb8dedb3bfa87c0a59dec3082d00b02adb7a29160ad567d2c2e23c753ba5b76"
+}

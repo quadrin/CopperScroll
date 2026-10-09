@@ -1,0 +1,98 @@
+{
+  "case_id": "res-006",
+  "batch": "reserved",
+  "instruction": "In the stone bridge that carries the canal over the ravine, in the arch nearest the sunset, the one shut with rough stones: on the side facing upstream, at the foot of the pier, 3 cubits: [deposit].",
+  "context": "Redacted site description: a stone-built canal bridge of the early first millennium BCE that carries an irrigation canal across a shallow valley. It is more than 280 m long and 22 m wide; near the middle a stream runs under a row of five corbelled arches. Floods breached the middle of the structure. Excavators cleared the faces and the arch piers in one short season.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "corbelled pointed archway over the stream",
+        "position": {
+          "bearing_deg": 270,
+          "distance_m": null,
+          "relative_to": "centre of the arch bay (stream crossing)"
+        },
+        "opening": "stream passage",
+        "date": "D",
+        "dimensions": null,
+        "notes": "Second arch from the west; lower courses of its piers survive. Two curved stones from a pier breakwater, one inscribed, were found wedged in its mouth. No blocking recorded."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "canal bed with parapet remains",
+        "position": {
+          "bearing_deg": 270,
+          "distance_m": null,
+          "relative_to": "west end of the structure, top"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": null,
+        "notes": "Large area of concrete bedding with small patches of stone pavement still in place; remains of the canal parapet."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "corbelled pointed archway over the stream",
+        "position": {
+          "bearing_deg": 270,
+          "distance_m": null,
+          "relative_to": "centre of the arch bay (stream crossing)"
+        },
+        "opening": "stream passage",
+        "date": "D",
+        "dimensions": "stands six courses high; courses about 0.50 m",
+        "notes": "Westernmost of the five arches. Partly blocked by a rough wall. The pavement under the piers is of large stones laid diagonally to the flow."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "repaired section of the outer face",
+        "position": {
+          "bearing_deg": 270,
+          "distance_m": null,
+          "relative_to": "west end of the structure, south face"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": "about 45 m long (first three bays from the west)",
+        "notes": "Ancient repair of a breach: base courses project and step back course by course; irregular filling of re-used blocks, many carrying parts of another inscription."
+      }
+    },
+    {
+      "id": "c5",
+      "features": {
+        "type": "corbelled pointed archway over the stream (not preserved)",
+        "position": {
+          "bearing_deg": 90,
+          "distance_m": null,
+          "relative_to": "centre of the arch bay (stream crossing)"
+        },
+        "opening": "stream passage",
+        "date": "D",
+        "dimensions": null,
+        "notes": "Easternmost of the five arches. Carried away by the central breach together with most of the foundation platform."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "distance_missing",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "How high does the rough blocking wall in the chosen arch stand?",
+  "withheld_options": [
+    "one course",
+    "two courses",
+    "half the arch height",
+    "full height",
+    "unknown"
+  ],
+  "key_sha256": "9a5045113af8176d8dd8af4a3fcc8e4a4c41b535c59908d4cc9bb09e33069cea"
+}

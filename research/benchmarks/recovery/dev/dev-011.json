@@ -1,0 +1,97 @@
+{
+ "case_id": "dev-011",
+ "batch": "development",
+ "instruction": "In the cave in the west of the field, whose mouth opens to the south.",
+ "context": "A quarried limestone spur at the foot of a high mountain, with caves opened by quarrying, terrace walls, a winepress and a cistern. Positions are the report's own words for where each feature lies in the surveyed field (relative_to: survey_area), or relative to another cave where the report says so. Undated (U).",
+ "candidates": [
+  {
+   "id": "c1",
+   "features": {
+    "type": "large cave",
+    "position": {
+     "bearing_deg": null,
+     "distance_m": 10,
+     "relative_to": "cave_3",
+     "kind": "words",
+     "direction": "southeast"
+    },
+    "opening": "east",
+    "date": "U",
+    "notes": "survey site 4; placed from another cave"
+   }
+  },
+  {
+   "id": "c2",
+   "features": {
+    "type": "cave",
+    "position": {
+     "bearing_deg": null,
+     "distance_m": null,
+     "relative_to": "survey_area",
+     "kind": "words",
+     "direction": "west"
+    },
+    "opening": "south",
+    "date": "U",
+    "notes": "survey site 8"
+   }
+  },
+  {
+   "id": "c3",
+   "features": {
+    "type": "cave",
+    "position": {
+     "bearing_deg": null,
+     "distance_m": null,
+     "relative_to": "survey_area",
+     "kind": "words",
+     "direction": "northeast"
+    },
+    "opening": "north",
+    "date": "U",
+    "notes": "survey site 3; in the northern part of the quarry, which lies in the area's north-east corner"
+   }
+  },
+  {
+   "id": "c4",
+   "features": {
+    "type": "rock-hewn cistern",
+    "position": {
+     "bearing_deg": null,
+     "distance_m": null,
+     "relative_to": "survey_area",
+     "kind": "none"
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 10; the report gives no words for its place"
+   }
+  },
+  {
+   "id": "c5",
+   "features": {
+    "type": "cave",
+    "position": {
+     "bearing_deg": null,
+     "distance_m": null,
+     "relative_to": "survey_area",
+     "kind": "words",
+     "direction": "northeast"
+    },
+    "opening": "east",
+    "date": "U",
+    "notes": "survey site 6; in the south-east corner of the quarry, in the area's north-east corner"
+   }
+  }
+ ],
+ "degradations": [],
+ "withheld_question": "Which side of the chosen feature has its entrance?",
+ "withheld_options": [
+  "north",
+  "east",
+  "south",
+  "west",
+  "unknown"
+ ],
+ "key_sha256": "e93642134e0df2e20d9380abf8f098882207d43ef05e650b879d9e5e1892a839"
+}

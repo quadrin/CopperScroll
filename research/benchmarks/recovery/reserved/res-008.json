@@ -1,0 +1,114 @@
+{
+  "case_id": "res-008",
+  "batch": "reserved",
+  "instruction": "In the cave of the pillar on the slope of the hill, the round one that is not a bell, with a groove cut over its door: at the step at its far end, dig 2 cubits: [deposit].",
+  "context": "Redacted site description: a small steep mound with a fortress on its summit, above a valley in low hill country. Its slopes hold many rock-cut chambers: bell-shaped pits with and without stairs, dovecote chambers with rows of small niches, and one large complex of more than ten chambers. The recorder numbered the notable caves in order around the hill, starting at the south-east and going east, north and west.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "columbarium of several chambers",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "summit fortress (east side of the hill, by the recorder's order)"
+        },
+        "opening": "original roof entrance blocked; later side door through a small domed antechamber about 2.4 m across",
+        "date": "U",
+        "dimensions": "main chamber a small bell about 3.65 m high",
+        "notes": "A raised hole opposite the door leads to a second chamber; a third and a fourth chamber behind, all with niches and empty. Roman sherds in the second chamber."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "bell-shaped chamber with a rock-cut stair",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "summit fortress (after the large complex in the recorder's order)"
+        },
+        "opening": "dome opening and a side entrance from a short passage on the stair",
+        "date": "U",
+        "dimensions": "height 9.15 m, diameter 8.22 m",
+        "notes": "A short flight cut in the wall 2.5 m above the floor leads to three creep-passages ending in small cells; a cupboard rebated for a door."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "underground complex of more than ten chambers and galleries",
+        "position": {
+          "bearing_deg": 45,
+          "distance_m": null,
+          "relative_to": "summit fortress (entrance on the north-east shoulder, just below the summit plateau)"
+        },
+        "opening": "present entrance by a roof shaft; other shafts blocked and turfed over",
+        "date": "U",
+        "dimensions": "largest chamber 9.24 m across",
+        "notes": "Domed cells reached through well-holes with stopper rebates; bolt-holes in passages; one chamber near the entrance has two rock columns buried almost to their tops in dust. Crosses and a Greek graffito show later Christian use."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "bell-shaped chamber, columbarium",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "summit fortress (east side of the hill, by the recorder's order)"
+        },
+        "opening": "two openings in the dome: one large lozenge-shaped, one small and round",
+        "date": "U",
+        "dimensions": "present depth a little over 5 m",
+        "notes": "Six rows of small niches; the third row from the top triangular, the others square. A large stone trough close to the entrance suggests later use as a cistern."
+      }
+    },
+    {
+      "id": "c5",
+      "features": {
+        "type": "large circular chamber (not bell-shaped)",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "summit fortress (east side of the hill, by the recorder's order)"
+        },
+        "opening": "door in the hillside; a water-groove cut round the door outside",
+        "date": "U",
+        "dimensions": "about 10 m across, 1.67 m high",
+        "notes": "The roof is carried on a single pillar left in the centre. A shelf or step 1.80 x 0.90 m at the inner end."
+      }
+    },
+    {
+      "id": "c6",
+      "features": {
+        "type": "bell-shaped chamber with a rock-cut stair",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "summit fortress (east side of the hill, by the recorder's order)"
+        },
+        "opening": "dome opening and a side entrance near the top",
+        "date": "U",
+        "dimensions": null,
+        "notes": "The stair stops 3 m short of the side entrance. At the foot of the stair a gallery runs in about 1.5 m and stops; a manhole in its roof broke out into earth."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "direction_unknown",
+    "distance_missing",
+    "date_unknown",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "What is the cross-section of the pillar in the chosen cave?",
+  "withheld_options": [
+    "round",
+    "square or rectangular",
+    "flat oval",
+    "unknown"
+  ],
+  "key_sha256": "b56d6f60716cfb4b538d3c943d8f030c8142dfa2782775080196d056708897fa"
+}

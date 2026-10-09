@@ -1,0 +1,15 @@
+{
+ "case_id": "dev-012",
+ "reasons": [
+  "parsed instruction: {\"direction\": \"E\", \"distance\": {\"kind\": \"band\", \"max_m\": 180.0, \"min_m\": 120.0, \"stated\": \"300 cubits\"}, \"opening\": null, \"reference\": \"the kiln\", \"target_class\": \"cave\", \"type_term\": \"cave\"}",
+  "c1: contradicted: type=T (type 'small natural cave' is a cave); direction=T (bearing 72.6 deg is inside the E sector 45-135); distance=F (distance 1236.6 m is outside 120.0-180.0 m (300 cubits)); date=T (date U passes)",
+  "c2: contradicted: type=T (type 'partially ruinous cave' is a cave); direction=T (bearing 62.6 deg is inside the E sector 45-135); distance=F (distance 208.4 m is outside 120.0-180.0 m (300 cubits)); date=T (date U passes)",
+  "c3: contradicted: type=T (type 'cave' is a cave); direction=F (bearing 281.8 deg is outside the E sector 45-135); distance=? (distance not recorded); date=T (date U passes)",
+  "c4: contradicted: type=? (type 'natural crevice, probably into a cave' may or may not be a cave); direction=T (bearing 95.6 deg is inside the E sector 45-135); distance=F (distance 61.3 m is outside 120.0-180.0 m (300 cubits)); date=T (date U passes)",
+  "c5: supported: type=T (type 'partially ruinous cave' is a cave); direction=T (bearing 49.1 deg is inside the E sector 45-135); distance=T (distance 149.6 m is inside 120.0-180.0 m (300 cubits)); date=T (date U passes)",
+  "decision: c5 is the only survivor and every predicate is supported",
+  "withheld: selected candidate records opening 'north-east'"
+ ],
+ "selected": "c5",
+ "withheld_prediction": "north-east"
+}

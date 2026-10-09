@@ -1666,6 +1666,89 @@
       "original_campaign": "abu_saraj_survey_dadon_l656_reporting"
     },
     {
+      "id": "coverage-puech-entry25",
+      "title": "Puech 2015, Entry 25 text, translation and commentary (page audit)",
+      "citation": "É. Puech, The Copper Scroll Revisited (2015), printed pp. 59–60 / PDF pp. 70–71; p. 25 sigla.",
+      "repo_path": "research/measurements/cycle4/puech_entry25.md",
+      "url": "https://brill.com/display/title/14988?language=en",
+      "inspection": "already_inspected",
+      "original_campaign": null
+    },
+    {
+      "id": "coverage-unit-sensitivity",
+      "title": "Cubit and datum sensitivity (M06)",
+      "citation": "Exploratory 0.40–0.60 m per cubit; Entry 25 three cubits = 1.20–1.80 m; datum null. Project packet, 2 October 2026.",
+      "repo_path": "research/measurements/units_packet.md",
+      "inspection": "derived",
+      "original_campaign": null
+    },
+    {
+      "id": "coverage-iv17-repeat",
+      "title": "Project repeat annotations of IV/17 aperture chords",
+      "citation": "Sion Plan 5 p. 63 native crop; northern_present_gap endpoints [548,386]–[502,400]; repeat of 2 October 2026.",
+      "repo_path": "research/measurements/cycle2/iv17_repeat_results.json",
+      "inspection": "derived",
+      "original_campaign": "abu_saraj_survey_dadon_l656_reporting"
+    },
+    {
+      "id": "coverage-states-register",
+      "title": "Feature workbench states register (method 4)",
+      "citation": "States states-iv17-north-ancient-threshold, states-jericho-graves-recorded, states-jericho-quarries-recorded, states-jericho-north-unsurveyed; frames states-iv17-plan5-crop and states-kenyon-trench-II.",
+      "repo_path": "research/feature_workbench/states/register.json",
+      "inspection": "derived",
+      "original_campaign": null
+    },
+    {
+      "id": "coverage-l656-fieldfile",
+      "title": "IV/17 field file dependency (permit L-656)",
+      "citation": "Michael Dadon, permit L-656; Sion 2002 p. 63 note 11 and p. 82 starred editorial note; locus list, basket records 656.17/656.20, original plan, northern threshold section/level.",
+      "repo_path": "research/measurements/cycle3/iv17_phase.md",
+      "inspection": "not_inspected",
+      "original_campaign": "abu_saraj_survey_dadon_l656_reporting"
+    },
+    {
+      "id": "coverage-entry60-registry",
+      "title": "Entry 60 exploratory registry v2, record P60-T1",
+      "citation": "Reading branches RB-M/RB-P/RB-B (RB-L routed to P60-T8); period requirement c. 50 BCE–70 CE; legacy 315–045° sector as an operational choice.",
+      "repo_path": "research/agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json",
+      "inspection": "derived",
+      "original_campaign": null
+    },
+    {
+      "id": "coverage-kenyon-iii",
+      "title": "Kenyon and Holland, Excavations at Jericho III, Text (1981)",
+      "citation": "Printed pp. 3–4 (PDF 37–38), 119–121 (PDF 153–155), 172–174 (PDF 206–208); Fig. 1 p. xxv (PDF 31), link-only. Bounded north-slope review.",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "url": "https://archive.org/details/excavationsatjer0003keny_pt01",
+      "inspection": "already_inspected",
+      "original_campaign": "kenyon_1952_1958_expedition"
+    },
+    {
+      "id": "coverage-kenyon-iii-plates",
+      "title": "Kenyon III plate volume: Trench II/Site O drawings",
+      "citation": "Pl. 111b and the eastern section at local 37.50–38.00 m N / 8.17 m H; plate number and viewer page unknown.",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "not_inspected",
+      "original_campaign": "kenyon_1952_1958_expedition"
+    },
+    {
+      "id": "coverage-kenyon-ii",
+      "title": "Kenyon, Excavations at Jericho II (1965)",
+      "citation": "Printed pp. 2, 169, 276–277, 539–544; Figs 14 (p. 35) and 91 (p. 168).",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "url": "https://archive.org/details/excavationsatjer0002keny",
+      "inspection": "already_inspected",
+      "original_campaign": "kenyon_1952_1958_expedition"
+    },
+    {
+      "id": "coverage-kenyon-field-records",
+      "title": "Kenyon Jericho field and working records",
+      "citation": "Held at the Museum of Archaeology and Anthropology, Cambridge, at publication time (III pp. 3–4, footnote); current holding unverified.",
+      "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+      "inspection": "not_inspected",
+      "original_campaign": "kenyon_1952_1958_expedition"
+    },
+    {
       "id": "decisions-queue",
       "title": "Historical measurement queue",
       "citation": "Queue created 2 October 2026; six tracks M01–M06, last completed cycle 4",
@@ -1770,6 +1853,34 @@
       "repo_path": "research/assessments/entry29_jericho_pools/wadi_en_nueima_original_2026-10-06.json",
       "inspection": "already_inspected",
       "original_campaign": "Dinur–Feig Wadi Nuʿeima inspection lineage"
+    },
+    {
+      "id": "decisions-relationships-model",
+      "title": "Koḥlit relationship branches (method 2)",
+      "citation": "relationships/model.json readings, windows, assignments and predicates, evaluated by relationships/evaluate.py; read, not changed",
+      "repo_path": "research/feature_workbench/relationships/model.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-inventory-branches",
+      "title": "Entry 25 target-prerequisite branches (method 3)",
+      "citation": "inventory/queries.json query inventory-entry25-target-prerequisites applied to IV/17, IV/11 and Twin Cave by inventory/evaluate.py; read, not changed",
+      "repo_path": "research/feature_workbench/inventory/queries.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-xii10-readings",
+      "title": "XII 10 second-word reading table",
+      "citation": "W2A reading table: Lefkovits 2000 pp. 425–432; Milik DJD III pp. 240, 298–299; Puech 2006 p. 206 nn. 502–507, as recorded by the earlier worker",
+      "repo_path": "research/agent_review_2026-10-07/wave2/W2A_kohlit_dossier/xii10_readings.csv",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-registry-e60",
+      "title": "Entry 60 registry v2 reading routes",
+      "citation": "Records P60-T1, P60-T3 and P60-T8: RB-M/RB-P/RB-B at a Koḥlit anchor; RB-L routed to the Janoaḥ target",
+      "repo_path": "research/agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json",
+      "inspection": "derived"
     }
   ],
   "observations": [

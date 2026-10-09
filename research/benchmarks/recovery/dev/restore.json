@@ -1,0 +1,271 @@
+{
+ "dev-001": {
+  "degradations": {},
+  "site_of_candidate": {
+   "c1": "qana:28",
+   "c2": "qana:16",
+   "c3": "qana:23",
+   "c4": "qana:20",
+   "c5": "qana:21"
+  },
+  "true_feature": "c4",
+  "true_feature_in_case": true,
+  "true_site": "qana:20"
+ },
+ "dev-002": {
+  "degradations": {
+   "instruction_opening_missing": [
+    {
+     "degraded": "In the tomb with the hewn forecourt, west of the wall at the edge of the village, at one hundred and twenty cubits.",
+     "op": "replace",
+     "original": "In the tomb with the hewn forecourt, west of the wall at the edge of the village, at one hundred and twenty cubits; its entrance is on the north.",
+     "path": "/instruction"
+    }
+   ]
+  },
+  "site_of_candidate": {
+   "c1": "qana:22",
+   "c2": "qana:23",
+   "c3": "qana:21",
+   "c4": "qana:28",
+   "c5": "qana:20"
+  },
+  "true_feature": "c1",
+  "true_feature_in_case": true,
+  "true_site": "qana:22"
+ },
+ "dev-003": {
+  "degradations": {
+   "one_candidate_unrecorded": [
+    {
+     "candidate": {
+      "features": {
+       "date": "U",
+       "notes": "survey site 34; position from its printed map reference",
+       "opening": "west",
+       "position": {
+        "bearing_deg": 65.4,
+        "distance_m": 199.1,
+        "kind": "plan",
+        "precision_m": 1,
+        "relative_to": "boundary_wall"
+       },
+       "type": "burial cave with rock-hewn courtyard"
+      },
+      "id": "c5"
+     },
+     "op": "add_candidate"
+    }
+   ]
+  },
+  "site_of_candidate": {
+   "c1": "qana:16",
+   "c2": "qana:20",
+   "c3": "qana:14",
+   "c4": "qana:28",
+   "c5": "qana:34"
+  },
+  "true_feature": "c5",
+  "true_feature_in_case": false,
+  "true_site": "qana:34"
+ },
+ "dev-004": {
+  "degradations": {
+   "instruction_direction_missing": [
+    {
+     "degraded": "In the watchtower of the farm, at twelve hundred cubits.",
+     "op": "replace",
+     "original": "In the watchtower east of the farm, at twelve hundred cubits.",
+     "path": "/instruction"
+    }
+   ]
+  },
+  "site_of_candidate": {
+   "c1": "dudaim:14",
+   "c2": "dudaim:21",
+   "c3": "dudaim:15",
+   "c4": "dudaim:12",
+   "c5": "dudaim:17"
+  },
+  "true_feature": "c1",
+  "true_feature_in_case": true,
+  "true_site": "dudaim:14"
+ },
+ "dev-005": {
+  "degradations": {
+   "date_unknown": [
+    {
+     "degraded": "U",
+     "op": "replace",
+     "original": "L",
+     "path": "/candidates/0/features/date"
+    }
+   ],
+   "instruction_direction_missing": [
+    {
+     "degraded": "In the watchtower of the farm, at twelve hundred cubits.",
+     "op": "replace",
+     "original": "In the watchtower east of the farm, at twelve hundred cubits.",
+     "path": "/instruction"
+    }
+   ]
+  },
+  "site_of_candidate": {
+   "c1": "dudaim:12",
+   "c2": "dudaim:14",
+   "c3": "dudaim:15",
+   "c4": "dudaim:21",
+   "c5": "dudaim:17"
+  },
+  "true_feature": "c2",
+  "true_feature_in_case": true,
+  "true_site": "dudaim:14"
+ },
+ "dev-006": {
+  "degradations": {
+   "instruction_direction_missing": [
+    {
+     "degraded": "In the watchtower of the farm, at twelve hundred cubits.",
+     "op": "replace",
+     "original": "In the watchtower east of the farm, at twelve hundred cubits.",
+     "path": "/instruction"
+    }
+   ],
+   "one_candidate_unrecorded": [
+    {
+     "candidate": {
+      "features": {
+       "date": "D",
+       "notes": "survey site 14; position computed from its printed map reference",
+       "opening": null,
+       "position": {
+        "bearing_deg": 80.3,
+        "distance_m": 553.9,
+        "kind": "plan",
+        "precision_m": 1,
+        "relative_to": "farm"
+       },
+       "type": "field watchtower"
+      },
+      "id": "c5"
+     },
+     "op": "add_candidate"
+    }
+   ]
+  },
+  "site_of_candidate": {
+   "c1": "dudaim:15",
+   "c2": "dudaim:21",
+   "c3": "dudaim:12",
+   "c4": "dudaim:17",
+   "c5": "dudaim:14"
+  },
+  "true_feature": "c5",
+  "true_feature_in_case": false,
+  "true_site": "dudaim:14"
+ },
+ "dev-007": {
+  "degradations": {},
+  "site_of_candidate": {
+   "c1": "zaaq:24",
+   "c2": "zaaq:29",
+   "c3": "zaaq:28",
+   "c4": "zaaq:20",
+   "c5": "zaaq:2"
+  },
+  "true_feature": "c5",
+  "true_feature_in_case": true,
+  "true_site": "zaaq:2"
+ },
+ "dev-008": {
+  "degradations": {},
+  "site_of_candidate": {
+   "c1": "zaaq:13",
+   "c2": "zaaq:23",
+   "c3": "zaaq:12",
+   "c4": "zaaq:15",
+   "c5": "zaaq:18",
+   "c6": "zaaq:21"
+  },
+  "true_feature": "c6",
+  "true_feature_in_case": true,
+  "true_site": "zaaq:21"
+ },
+ "dev-009": {
+  "degradations": {
+   "distance_missing": [
+    {
+     "degraded": null,
+     "op": "replace",
+     "original": 208.4,
+     "path": "/candidates/1/features/position/distance_m"
+    }
+   ],
+   "instruction_direction_missing": [
+    {
+     "degraded": "In the cave of the kiln, at three hundred cubits.",
+     "op": "replace",
+     "original": "In the cave east of the kiln, at three hundred cubits.",
+     "path": "/instruction"
+    }
+   ]
+  },
+  "site_of_candidate": {
+   "c1": "ahihud:16",
+   "c2": "ahihud:20",
+   "c3": "ahihud:5",
+   "c4": "ahihud:7",
+   "c5": "ahihud:14"
+  },
+  "true_feature": "c1",
+  "true_feature_in_case": true,
+  "true_site": "ahihud:16"
+ },
+ "dev-010": {
+  "degradations": {},
+  "site_of_candidate": {
+   "c1": "dabburiya:10",
+   "c2": "dabburiya:4",
+   "c3": "dabburiya:8",
+   "c4": "dabburiya:6"
+  },
+  "true_feature": "c2",
+  "true_feature_in_case": true,
+  "true_site": "dabburiya:4"
+ },
+ "dev-011": {
+  "degradations": {},
+  "site_of_candidate": {
+   "c1": "dabburiya:4",
+   "c2": "dabburiya:8",
+   "c3": "dabburiya:3",
+   "c4": "dabburiya:10",
+   "c5": "dabburiya:6"
+  },
+  "true_feature": "c2",
+  "true_feature_in_case": true,
+  "true_site": "dabburiya:8"
+ },
+ "dev-012": {
+  "degradations": {
+   "distance_missing": [
+    {
+     "degraded": null,
+     "op": "replace",
+     "original": 176.7,
+     "path": "/candidates/2/features/position/distance_m"
+    }
+   ]
+  },
+  "site_of_candidate": {
+   "c1": "ahihud:23",
+   "c2": "ahihud:20",
+   "c3": "ahihud:7",
+   "c4": "ahihud:13",
+   "c5": "ahihud:16"
+  },
+  "true_feature": "c5",
+  "true_feature_in_case": true,
+  "true_site": "ahihud:16"
+ }
+}

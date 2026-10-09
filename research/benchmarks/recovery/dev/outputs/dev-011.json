@@ -1,0 +1,15 @@
+{
+ "case_id": "dev-011",
+ "reasons": [
+  "parsed instruction: {\"direction\": \"W\", \"distance\": null, \"opening\": \"S\", \"reference\": \"the field\", \"target_class\": \"cave\", \"type_term\": \"cave\"}",
+  "c1: contradicted: type=T (type 'large cave' is a cave); direction=? (position is measured from 'cave_3', not from the instruction's reference); distance=? (distance is measured from 'cave_3', not from the instruction's reference); opening=F (opening 'east' lies outside the S sector); date=T (date U passes)",
+  "c2: supported: type=T (type 'cave' is a cave); direction=T (words 'west' lies inside the W sector); distance=T (words position with no distance counts as within the limit); opening=T (opening 'south' lies inside the S sector); date=T (date U passes)",
+  "c3: contradicted: type=T (type 'cave' is a cave); direction=? (words 'northeast' lies on a quadrant edge and gives unknown (position rule 3)); distance=T (words position with no distance counts as within the limit); opening=F (opening 'north' lies outside the S sector); date=T (date U passes)",
+  "c4: contradicted: type=F (type 'rock-hewn cistern' is not a cave); direction=? (no position recorded); distance=? (no position recorded); opening=? (opening side not recorded); date=T (date U passes)",
+  "c5: contradicted: type=T (type 'cave' is a cave); direction=? (words 'northeast' lies on a quadrant edge and gives unknown (position rule 3)); distance=T (words position with no distance counts as within the limit); opening=F (opening 'east' lies outside the S sector); date=T (date U passes)",
+  "decision: c2 is the only survivor and every predicate is supported",
+  "withheld: the instruction states the opening"
+ ],
+ "selected": "c2",
+ "withheld_prediction": "south"
+}

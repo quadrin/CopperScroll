@@ -1,0 +1,99 @@
+{
+  "case_id": "res-007",
+  "batch": "reserved",
+  "instruction": "In the burial cave cut at the corner of the hill, where the small valley comes down from the east, facing the mound across the great valley: go in through the long hall to its far end; in the middle one of the three chambers at the end, under the floor at its doorway, 2 cubits: [deposit].",
+  "context": "Redacted site description: a necropolis of rock-cut tombs in soft chalk hills, across a broad valley from a walled mound of the Hellenistic period, in low hill country. Shaft graves and chamber tombs line the edges of the main valley and of small side valleys. Several large chamber tombs were opened by villagers shortly before they were recorded.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "rock-cut two-chamber tomb",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "next small side valley to the north"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": "outer chamber about 3.75 m square; inner chamber 5.62 m long, 1.92-2.22 m wide",
+        "notes": "Across the next side valley to the north, below a ruined church on the hill. Proper entrance still buried; entered through a breach from a later Christian tomb. Outer chamber with one loculus on each side of the door and four at one end; inner chamber with 6 loculi on each side and 2 at the far end; a red winged figure painted between the two end loculi. Greek inscriptions, one possibly dated 143 BCE."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "shaft and pit graves (group)",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "edges of the main valley and side valleys"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": null,
+        "notes": "Many grave shafts dug out by villagers; some with coffin recesses at the bottom, some with small chambers at one or both ends of the shaft. Not recorded one by one."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "rock-cut multi-chamber tomb",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "mouth of a small side valley entering the main valley from the east"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": "about 44 burial places",
+        "notes": "At the hill edge, at the north corner of the side-valley mouth, opposite the mound. Original approach choked with debris; a stepped dromos is probable. Antechamber with two side chambers; a long main hall with gabled loculi and a bench; at the far end a recess with a rock-cut couch, from which three burial chambers open, the middle one with a pilastered, pedimented doorway. Painted friezes; Greek painted and scratched inscriptions of the 3rd-2nd centuries BCE."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "rock-cut chamber tomb, later re-cut as a dwelling",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "summit of the hill above the north-corner tomb"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": null,
+        "notes": "Near the summit, a little north of the north-corner tomb. Broad dromos; antechamber with 4 loculi on each side; main chamber with 6 loculi on each long side and 4 in the rear wall, the two middle ones flat-roofed. Partition walls cut away and the floor deepened for a dwelling. No painting; scraps of inscription in the rear corners."
+      }
+    },
+    {
+      "id": "c5",
+      "features": {
+        "type": "rock-cut multi-chamber tomb",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "mouth of a small side valley entering the main valley from the east"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": "25 burial places",
+        "notes": "At the hill edge, at the south corner of the same side-valley mouth, opposite the mound. Original approach choked. Antechamber; one side chamber with 8 loculi (its end later cut through into a lower tomb) and one small square side chamber. Long main hall with 10 gabled loculi and a bench, widening at the far end into a cross space with two burial chambers on each side and three in the end wall. Walls stuccoed and painted; Greek painted inscriptions."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "direction_word_lost",
+    "distance_missing",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "From which compass side is the chosen tomb entered?",
+  "withheld_options": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "unknown"
+  ],
+  "key_sha256": "518e72c7ee92cf481e94fdcdb92b5530cc1690af315aa96fd640e32dfadce2e0"
+}

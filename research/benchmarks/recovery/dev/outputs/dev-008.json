@@ -1,0 +1,16 @@
+{
+ "case_id": "dev-008",
+ "reasons": [
+  "parsed instruction: {\"direction\": \"E\", \"distance\": {\"kind\": \"band\", \"max_m\": 420.0, \"min_m\": 280.0, \"stated\": \"700 cubits\"}, \"opening\": null, \"reference\": \"the ruin\", \"target_class\": \"cave\", \"type_term\": \"cave\"}",
+  "c1: supported: type=T (type 'cave dwelling' is a cave); direction=T (bearing 103.8 deg is inside the E sector 45-135); distance=T (distance 359.4 m is inside 280.0-420.0 m (700 cubits)); date=T (date U passes)",
+  "c2: supported: type=T (type 'cave dwelling' is a cave); direction=T (bearing 72.0 deg is inside the E sector 45-135); distance=T (distance 284.9 m is inside 280.0-420.0 m (700 cubits)); date=T (date U passes)",
+  "c3: supported: type=T (type 'courtyard leading to a cave dwelling' is a cave); direction=T (bearing 102.7 deg is inside the E sector 45-135); distance=T (distance 341.3 m is inside 280.0-420.0 m (700 cubits)); date=T (date U passes)",
+  "c4: supported: type=T (type 'cave dwelling' is a cave); direction=T (bearing 91.2 deg is inside the E sector 45-135); distance=T (distance 338.1 m is inside 280.0-420.0 m (700 cubits)); date=T (date U passes)",
+  "c5: supported: type=T (type 'courtyard leading to a cave dwelling' is a cave); direction=T (bearing 94.5 deg is inside the E sector 45-135); distance=T (distance 320.0 m is inside 280.0-420.0 m (700 cubits)); date=T (date U passes)",
+  "c6: supported: type=T (type 'olive press in a natural cave' is a cave); direction=T (bearing 78.9 deg is inside the E sector 45-135); distance=T (distance 322.0 m is inside 280.0-420.0 m (700 cubits)); date=T (date U passes)",
+  "decision: more than one candidate survives: c1, c2, c3, c4, c5, c6",
+  "withheld: no candidate selected and the instruction does not state it"
+ ],
+ "selected": "insufficient_evidence",
+ "withheld_prediction": "unknown"
+}

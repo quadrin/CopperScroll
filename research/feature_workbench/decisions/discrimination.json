@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "mode": "planning_only",
+  "as_of_utc": "2026-10-08",
+  "method": "Logical discrimination only. A model class survives an outcome unless a recorded or derived consequence of that outcome contradicts one of its required predicates. No probability, likelihood, prior, expected value or information gain is computed. Effort and access enter only as the categories recorded in plans.json.",
+  "sources": [
+    {
+      "id": "decisions-relationships-model",
+      "title": "Koḥlit relationship branches (method 2)",
+      "citation": "relationships/model.json readings, windows, assignments and predicates, evaluated by relationships/evaluate.py; read, not changed",
+      "repo_path": "research/feature_workbench/relationships/model.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-inventory-branches",
+      "title": "Entry 25 target-prerequisite branches (method 3)",
+      "citation": "inventory/queries.json query inventory-entry25-target-prerequisites applied to IV/17, IV/11 and Twin Cave by inventory/evaluate.py; read, not changed",
+      "repo_path": "research/feature_workbench/inventory/queries.json",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-xii10-readings",
+      "title": "XII 10 second-word reading table",
+      "citation": "W2A reading table: Lefkovits 2000 pp. 425–432; Milik DJD III pp. 240, 298–299; Puech 2006 p. 206 nn. 502–507, as recorded by the earlier worker",
+      "repo_path": "research/agent_review_2026-10-07/wave2/W2A_kohlit_dossier/xii10_readings.csv",
+      "inspection": "derived"
+    },
+    {
+      "id": "decisions-registry-e60",
+      "title": "Entry 60 registry v2 reading routes",
+      "citation": "Records P60-T1, P60-T3 and P60-T8: RB-M/RB-P/RB-B at a Koḥlit anchor; RB-L routed to the Janoaḥ target",
+      "repo_path": "research/agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json",
+      "inspection": "derived"
+    }
+  ],
+  "families": [
+    {
+      "id": "kohlit",
+      "label": "Koḥlit relationship branches (entries 11 and 60)",
+      "kind": "relationships",
+      "active_test": true,
+      "claim": "Which registered assignment, reading and use window of the Entry 11 pool and Entry 60 pit could be the described arrangement?",
+      "source_ids": ["decisions-relationships-model", "decisions-active"],
+      "dimensions": ["assignment", "reading", "window"],
+      "roster_note": "The relationships roster is a selected pilot. It does not list every Koḥlit proposal; registry v2 keeps further sites outside it. Separation here is relative to these registered branches only."
+    },
+    {
+      "id": "xii10",
+      "label": "XII 10 second-word letter strings R1–R7",
+      "kind": "letter_strings",
+      "active_test": true,
+      "task_id": "decisions-xii10",
+      "claim": "Which registered complete string does the engraved second word of XII 10 have?",
+      "source_ids": ["decisions-xii10-protocol", "decisions-xii10-readings"],
+      "dimensions": ["string"],
+      "roster_note": "The frozen protocol fixes R1–R7. An unregistered sequence is reported verbatim and starts a separate exploratory specification."
+    },
+    {
+      "id": "entry25",
+      "label": "Entry 25 cave branches (IV/17, IV/11, Twin Cave)",
+      "kind": "inventory",
+      "active_test": false,
+      "query_id": "inventory-entry25-target-prerequisites",
+      "claim": "Which control cave and which retained reading, orientation, unit, direction, feature-state and deposit branch could the Entry 25 instruction describe?",
+      "source_ids": ["decisions-inventory-branches", "decisions-iv17-phase"],
+      "dimensions": ["candidate", "reading", "orientation", "unit", "direction", "phase", "deposit"],
+      "roster_note": "Three previously examined controls, not a regional census. Separation is relative to these controls only."
+    },
+    {
+      "id": "entry29-ac94",
+      "label": "Entry 29: A(C)94 terminal, face and phase branch",
+      "kind": "single_branch",
+      "active_test": false,
+      "task_id": "decisions-jericho-contacts",
+      "claim": "The named A(C)94 wall-aperture/face/surface/phase branch of the closed Jericho pools test.",
+      "source_ids": ["decisions-jericho-contacts", "decisions-jericho-roster"],
+      "dimensions": ["branch"],
+      "roster_note": "The closed test is not identifiable. Its other registered alternatives (the 28-notice inventory, A(C)90/AC44, St Andrew) are not modelled as branches here."
+    },
+    {
+      "id": "entry29-wadi",
+      "label": "Entry 29: Wadi Nuʿeima bath state branch",
+      "kind": "single_branch",
+      "active_test": false,
+      "task_id": "decisions-wadi-bath-contact",
+      "claim": "The named Wadi Nuʿeima bath state and water-contact branch (J23).",
+      "source_ids": ["decisions-wadi", "decisions-jericho-roster"],
+      "dimensions": ["branch"],
+      "roster_note": "Closed report-coverage result. Other bath states and the regional inventory are not modelled as branches here."
+    },
+    {
+      "id": "entry49-siloam",
+      "label": "Entry 49: Siloam main-basin terminal branch",
+      "kind": "single_branch",
+      "active_test": false,
+      "task_id": "decisions-siloam-main-side",
+      "claim": "The selected main-basin/terminal/under-place/function/phase branch of the closed Siloam test.",
+      "source_ids": ["decisions-siloam"],
+      "dimensions": ["branch"],
+      "roster_note": "Closed test. The other named alternatives (a different main-pool terminal, a separate Silwan association) are not modelled as branches here."
+    }
+  ],
+  "letter_strings": {
+    "unresolved_value": "unresolved",
+    "components": [
+      {"id": "box", "label": "Box letter after shin", "values": ["ב", "כ", "other"], "protocol_question": "Stage 2: box-letter identity ב/כ/other"},
+      {"id": "middle", "label": "Signs between the box letter and the cut letter", "values": ["נ", "צ", "ינ", "ונ", "other"], "protocol_question": "Stage 2: נ versus צ versus י/ו+נ (including a ligature); whether an extra mark forms an independent sign"},
+      {"id": "final", "label": "Letter at the 21/22 cut", "values": ["ה", "ח", "ת", "other"], "protocol_question": "Stage 2: final ה/ח/ת/other"},
+      {"id": "boundary", "label": "Word boundary before צפון", "values": ["bet-in-this-word", "bet-in-next-word", "other"], "protocol_question": "Stage 1 spaces; Stage 2: additional signs or cancellation marks before the next word"}
+    ],
+    "strings": [
+      {"id": "R1", "sequence": "שכנה", "components": {"box": "כ", "middle": "נ", "final": "ה", "boundary": "bet-in-next-word"}},
+      {"id": "R2", "sequence": "שבנה", "components": {"box": "ב", "middle": "נ", "final": "ה", "boundary": "bet-in-next-word"}},
+      {"id": "R3", "sequence": "שבצח", "components": {"box": "ב", "middle": "צ", "final": "ח", "boundary": "bet-in-next-word"}},
+      {"id": "R4", "sequence": "שבינח", "components": {"box": "ב", "middle": "ינ", "final": "ח", "boundary": "bet-in-next-word"}},
+      {"id": "R5", "sequence": "שכינה", "components": {"box": "כ", "middle": "ינ", "final": "ה", "boundary": "bet-in-next-word"}},
+      {"id": "R6", "sequence": "שכונה", "components": {"box": "כ", "middle": "ונ", "final": "ה", "boundary": "bet-in-next-word"}},
+      {"id": "R7", "sequence": "שבצהב", "components": {"box": "ב", "middle": "צ", "final": "ה", "boundary": "bet-in-this-word"}}
+    ],
+    "decomposition_note": "Derived decomposition of the registered strings into the protocol's component questions. R7 (Pixner) attaches the bet that the other strings place at the start of the next word; that is a word-division component, not an extra letter. No new reading is proposed.",
+    "string_dependencies": [
+      {
+        "family": "kohlit",
+        "reading": "RB-L",
+        "requires_any_of": ["R4"],
+        "basis": "derived",
+        "derivation": "RB-L reads the pit as 'in Janoaḥ'. Only R4 (שבינח, Lefkovits/Beyer) contains ינח. If R4 is rejected under the frozen protocol, RB-L loses its registered string. An expanded reading set would be a new exploratory specification. The converse does not hold: R4 support needs a separate linguistic and geographic argument (protocol), so it excludes no other branch.",
+        "source_ids": ["decisions-xii10-protocol", "decisions-xii10-readings", "decisions-registry-e60"]
+      }
+    ],
+    "plans_mapping": {
+      "gate_fail_outcome": "reading-gate-fails",
+      "rejected_all": "finite-set-rejected",
+      "single_decisive": "one-sequence",
+      "otherwise": "partial-reading"
+    }
+  },
+  "observations": [
+    {
+      "task_id": "decisions-xii10",
+      "kind": "letter_components",
+      "family": "xii10",
+      "question_types": ["manuscript_reading"],
+      "not_obtained_outcome": {"id": "reading-gate-fails", "plans_outcome_id": "reading-gate-fails", "label": "Image or reader gates fail; no component is scored"}
+    },
+    {
+      "task_id": "decisions-kallai-pool",
+      "kind": "component_product",
+      "question_types": ["construction_contact", "bearing"],
+      "components": [
+        {
+          "id": "bearing",
+          "question_type": "bearing",
+          "label": "Pool bearing from the Marjama tell",
+          "values": [
+            {"id": "east", "label": "pool east of the tell", "effects": [{"family": "kohlit", "predicate": "pool-east", "subject": "marjama-kallai-pool", "status": "compatible"}]},
+            {"id": "not-east", "label": "pool not east of the tell", "effects": [{"family": "kohlit", "predicate": "pool-east", "subject": "marjama-kallai-pool", "status": "contradicted"}]},
+            {"id": "undetermined", "label": "bearing undetermined", "unresolved": true, "effects": []}
+          ]
+        },
+        {
+          "id": "date",
+          "question_type": "construction_contact",
+          "label": "Pool construction or accessible-use date",
+          "values": [
+            {"id": "overlaps-early", "label": "dated use overlaps 50 BCE–70 CE", "effects": [{"family": "kohlit", "predicate": "pool-period", "subject": "marjama-kallai-pool", "status": "compatible"}]},
+            {"id": "built-71-135", "label": "secure construction 71–135 CE", "derived": true, "derivation": "relationships exists_during: a secure construction year after 70 CE contradicts the early window only; the extended window remains compatible.", "effects": [{"family": "kohlit", "predicate": "pool-period", "subject": "marjama-kallai-pool", "windows": ["early"], "status": "contradicted"}, {"family": "kohlit", "predicate": "pool-period", "subject": "marjama-kallai-pool", "windows": ["extended"], "status": "compatible"}]},
+            {"id": "outside-both", "label": "secure construction after 135 CE or last access before 50 BCE", "effects": [{"family": "kohlit", "predicate": "pool-period", "subject": "marjama-kallai-pool", "status": "contradicted"}]},
+            {"id": "undated", "label": "no feature-specific date", "unresolved": true, "effects": []}
+          ]
+        }
+      ],
+      "rules": [
+        {"when": {"bearing": ["not-east"]}, "plans_outcome_id": "bearing-or-phase-miss"},
+        {"when": {"date": ["outside-both"]}, "plans_outcome_id": "bearing-or-phase-miss"},
+        {"when": {"bearing": ["east"], "date": ["overlaps-early", "built-71-135"]}, "plans_outcome_id": "east-period"},
+        {"when": {}, "plans_outcome_id": "identity-only"}
+      ],
+      "not_obtained_outcome": {"id": "pages-inconclusive", "plans_outcome_id": "pages-inconclusive", "label": "Pages not obtained or no locatable pool"}
+    },
+    {
+      "task_id": "decisions-kenyon-section",
+      "kind": "component_product",
+      "question_types": ["construction_contact"],
+      "scope_note": "Mapped to the assignment whose pit is the phase-lxxvii quarry pits. The eastern section (Trench II, local 37.50–38.00 m N) records those pits and the phase-lxxvi graves; NS1 and D9 are Kenyon II features outside this section.",
+      "components": [
+        {
+          "id": "date",
+          "question_type": "construction_contact",
+          "label": "Usable-opening date of the quarry-pit opening",
+          "values": [
+            {"id": "usable-early", "label": "dated usable opening within 50 BCE–70 CE", "effects": [{"family": "kohlit", "predicate": "pit-period", "subject": "jericho-later-quarry-pits", "status": "compatible"}]},
+            {"id": "built-71-135", "label": "secure opening date 71–135 CE", "derived": true, "derivation": "relationships exists_during: a secure date after 70 CE contradicts the early window only.", "effects": [{"family": "kohlit", "predicate": "pit-period", "subject": "jericho-later-quarry-pits", "windows": ["early"], "status": "contradicted"}, {"family": "kohlit", "predicate": "pit-period", "subject": "jericho-later-quarry-pits", "windows": ["extended"], "status": "compatible"}]},
+            {"id": "outside-both", "label": "secure opening date after 135 CE", "effects": [{"family": "kohlit", "predicate": "pit-period", "subject": "jericho-later-quarry-pits", "status": "contradicted"}]},
+            {"id": "undated", "label": "no dated usability", "unresolved": true, "effects": []}
+          ]
+        },
+        {
+          "id": "access",
+          "question_type": "construction_contact",
+          "label": "Joint accessibility of the opening and the surviving graves",
+          "values": [
+            {"id": "joint-early", "label": "jointly accessible within 50 BCE–70 CE", "effects": [{"family": "kohlit", "predicate": "joint-accessibility", "subject": "jericho-later-quarry-pits", "object": "jericho-north-graves", "status": "compatible"}]},
+            {"id": "joint-71-135-only", "label": "jointly accessible only 71–135 CE", "derived": true, "derivation": "relationships coexisted_with: an exhaustive dated joint interval outside the early window contradicts only that window.", "effects": [{"family": "kohlit", "predicate": "joint-accessibility", "subject": "jericho-later-quarry-pits", "object": "jericho-north-graves", "windows": ["early"], "status": "contradicted"}, {"family": "kohlit", "predicate": "joint-accessibility", "subject": "jericho-later-quarry-pits", "object": "jericho-north-graves", "windows": ["extended"], "status": "compatible"}]},
+            {"id": "no-joint", "label": "not jointly accessible in either window", "effects": [{"family": "kohlit", "predicate": "joint-accessibility", "subject": "jericho-later-quarry-pits", "object": "jericho-north-graves", "status": "contradicted"}]},
+            {"id": "undetermined", "label": "joint access undetermined", "unresolved": true, "effects": []}
+          ]
+        }
+      ],
+      "inconsistent": [
+        {"date": ["outside-both"], "access": ["joint-early", "joint-71-135-only"]},
+        {"date": ["built-71-135"], "access": ["joint-early"]},
+        {"date": ["undated"], "access": ["joint-early", "joint-71-135-only"]}
+      ],
+      "rules": [
+        {"when": {"date": ["outside-both"]}, "plans_outcome_id": "period-or-access-miss"},
+        {"when": {"access": ["no-joint"]}, "plans_outcome_id": "period-or-access-miss"},
+        {"when": {"date": ["built-71-135"], "access": ["undetermined"]}, "plans_outcome_id": "period-or-access-miss", "derived": true, "derivation": "A secure 71–135 CE opening date excludes the early window only."},
+        {"when": {"access": ["joint-early", "joint-71-135-only"]}, "plans_outcome_id": "usable-mouth"},
+        {"when": {"date": ["usable-early"], "access": ["undetermined"]}, "plans_outcome_id": "truncation-only", "derived": true, "derivation": "A dated opening without a grave-access relation excludes nothing."},
+        {"when": {}, "plans_outcome_id": "truncation-only"}
+      ],
+      "not_obtained_outcome": {"id": "drawing-gate-fails", "plans_outcome_id": "drawing-gate-fails", "label": "Section, plate or crosswalk unavailable"}
+    },
+    {
+      "task_id": "decisions-iv17-l656",
+      "kind": "component_product",
+      "question_types": ["construction_contact", "entrance_bearing", "ancient_threshold"],
+      "components": [
+        {
+          "id": "contact",
+          "question_type": "construction_contact",
+          "label": "Dated architectural contact for the ancient arrangement",
+          "values": [
+            {"id": "established", "label": "mouths, pillar and wall coexist in a declared ancient phase", "effects": [{"family": "entry25", "candidate": "iv17", "check": "phase", "status": "compatible"}]},
+            {"id": "arrangement-later", "label": "two-mouth arrangement absent or inaccessible in the ancient phase", "effects": [{"family": "entry25", "candidate": "iv17", "check": "phase", "status": "contradicted"}]},
+            {"id": "pillar-later", "label": "only the pillar postdates the ancient phase", "derived": true, "derivation": "The pillar is the landmark of the pillar reading only. A later pillar contradicts the ancient arrangement of pillar-reading branches; terrace-reading branches do not require it.", "effects": [{"family": "entry25", "candidate": "iv17", "check": "phase", "where": {"reading": "pillar"}, "status": "contradicted"}]},
+            {"id": "undated", "label": "no sealed wall, mouth or threshold contact", "unresolved": true, "effects": []}
+          ]
+        },
+        {
+          "id": "bearing",
+          "question_type": "entrance_bearing",
+          "label": "True individual-mouth aspect from the original plan and north convention",
+          "values": [
+            {"id": "both-east", "label": "both mouths open east", "derived": true, "derivation": "inventory predicate both_openings_east_aspect.", "effects": [{"family": "entry25", "candidate": "iv17", "check": "aspect", "where": {"orientation": "both-mouths"}, "status": "compatible"}]},
+            {"id": "not-both-east", "label": "a mouth does not open east", "derived": true, "derivation": "inventory predicate both_openings_east_aspect. The edition gives no angular tolerance, so this verdict needs a qualitative aspect rule frozen before the plan is read.", "effects": [{"family": "entry25", "candidate": "iv17", "check": "aspect", "where": {"orientation": "both-mouths"}, "status": "contradicted"}]},
+            {"id": "undetermined", "label": "individual-mouth aspect undetermined", "unresolved": true, "effects": []}
+          ]
+        }
+      ],
+      "rules": [
+        {"when": {"contact": ["arrangement-later", "pillar-later"]}, "plans_outcome_id": "state-conflict"},
+        {"when": {"contact": ["established"]}, "plans_outcome_id": "dated-state"},
+        {"when": {}, "plans_outcome_id": "partial-file"}
+      ],
+      "non_discriminating_components": [
+        {
+          "id": "threshold",
+          "label": "Ancient northern threshold elevation and datum",
+          "question_type": "ancient_threshold",
+          "detail": "A registered threshold turns the vertical target prerequisite from unknown to compatible. No threshold value can contradict a branch, so it separates no class. It is a prerequisite for a later target test, not a discriminating observation."
+        }
+      ],
+      "not_obtained_outcome": {"id": "file-unavailable", "plans_outcome_id": "file-unavailable", "label": "Specific L-656 record unavailable or not identified"}
+    },
+    {
+      "task_id": "decisions-jericho-contacts",
+      "kind": "plans_outcomes",
+      "question_types": ["construction_contact"],
+      "rows": {
+        "metric-package": {"row_kind": "decisive", "effects": []},
+        "contact-incompatible": {"row_kind": "decisive", "effects": [{"family": "entry29-ac94", "status": "contradicted"}]},
+        "levels-without-datum": {"row_kind": "partial", "effects": []},
+        "record-inconclusive": {"row_kind": "not_obtained", "effects": []}
+      }
+    },
+    {
+      "task_id": "decisions-siloam-main-side",
+      "kind": "plans_outcomes",
+      "question_types": ["construction_contact"],
+      "rows": {
+        "main-place-established": {"row_kind": "decisive", "effects": []},
+        "terminal-or-phase-miss": {"row_kind": "decisive", "effects": [{"family": "entry49-siloam", "status": "contradicted"}]},
+        "unexposed-junction": {"row_kind": "partial", "effects": []},
+        "reply-or-record-inconclusive": {"row_kind": "not_obtained", "effects": []}
+      }
+    },
+    {
+      "task_id": "decisions-wadi-bath-contact",
+      "kind": "plans_outcomes",
+      "question_types": ["construction_contact"],
+      "rows": {
+        "dated-water-contact": {"row_kind": "decisive", "effects": []},
+        "state-contact-miss": {"row_kind": "decisive", "effects": [{"family": "entry29-wadi", "status": "contradicted"}]},
+        "identity-without-contact": {"row_kind": "partial", "effects": []},
+        "file-lost-or-unobtained": {"row_kind": "not_obtained", "effects": []}
+      }
+    }
+  ],
+  "supplementary_observations": [
+    {
+      "id": "decisions-supp-springhouse-sealed-finds",
+      "title": "ʿAin es-Sultan: sealed finds under the lowest spring-house wall course",
+      "origin": "ACTIVE_TEST question 3 (Dorrell 1993 p. 112); not a plans.json record dependency",
+      "question_type": "construction_contact",
+      "effects": [],
+      "derivation": "The wall (jericho-springhouse-wall) is a separate feature from the pool role (jericho-historical-basin). The relationships record says the wall date does not date the basin, and the states module lists a sealed lowest-course/basin-rim contact as a missing record. Without that contact, a wall date separates no registered Koḥlit class.",
+      "source_ids": ["decisions-active", "decisions-relationships-model"]
+    },
+    {
+      "id": "decisions-supp-north-strip-pit-mouth",
+      "title": "Tell es-Sultan: dated pit-mouth/tomb-mouth relation in the strip north of the tell",
+      "origin": "ACTIVE_TEST question 2; strip unsearched and under the camp since 1948; not a plans.json record dependency",
+      "question_type": "construction_contact",
+      "effects": [],
+      "derivation": "A newly recorded pit in the strip would be a new feature assignment, not one of the registered pit roles (NS1, D9, quarry pits). It separates no registered class until it is added to the relationships roster with its own source-controlled observations.",
+      "source_ids": ["decisions-active", "decisions-relationships-model"]
+    },
+    {
+      "id": "decisions-supp-opening-direction",
+      "title": "Defined side opening and its facing direction, or phase-controlled concealment",
+      "origin": "relationships predicates opening-north (RB-M) and opening-concealed (RB-P); no queued record supplies either",
+      "question_type": "entrance_bearing",
+      "effects": [],
+      "derivation": "No record dependency in plans.json observes an opening azimuth or a concealment state for any registered pit. RB-M and RB-P therefore make identical predictions on every queued outcome.",
+      "source_ids": ["decisions-relationships-model"]
+    }
+  ],
+  "question_types": [
+    {"id": "manuscript_reading", "label": "Manuscript reading (XII 10)"},
+    {"id": "construction_contact", "label": "Construction or use contact (dated phase)"},
+    {"id": "entrance_bearing", "label": "Entrance bearing or mouth aspect"},
+    {"id": "ancient_threshold", "label": "Ancient threshold and datum"},
+    {"id": "bearing", "label": "Feature bearing from the site anchor"}
+  ],
+  "display_order": {
+    "note": "Category orders are for display and tie listing only. They are not weights and are never summed.",
+    "request_status": ["sent_pending", "related_request_pending", "not_requested"],
+    "effort_level": ["bounded_original_review", "specialist_reading", "field_record_audit"]
+  },
+  "limits": [
+    "No probabilities, likelihoods, priors, expected values or information-gain numbers are computed. Every count is a count of logically distinguished classes, pairs or records.",
+    "Every record dependency has at least one outcome (inconclusive, partial or not obtainable) under which every class survives. No set of records can guarantee separation in the worst case.",
+    "Archaeological outcomes can only exclude the branch they examine. A compatible outcome never excludes another site's branch, so no archaeological record guarantees separation even when it is decisive.",
+    "Separation is relative to the registered branches. Each roster is a selected set; an unenumerated alternative is never excluded by these records, and separating the registered classes identifies nothing.",
+    "Derived outcome refinements follow the existing predicates (relationships exists_during and coexisted_with windows, inventory aspect and phase checks, protocol letter components). They are planning branches, not observations.",
+    "Selecting or ranking a record does not send a request, record an outcome, reopen a closed test or change any task status."
+  ]
+}

@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 from collections import Counter
 from copy import deepcopy
+import importlib.util
 import json
 import math
 from pathlib import Path
@@ -20,6 +21,31 @@ WADI_PATH = "research/assessments/entry29_jericho_pools/wadi_en_nueima_original_
 IV17_PHASE_PATH = "research/measurements/cycle3/iv17_phase.json"
 IV17_ASSESSMENT_PATH = "research/assessments/entry25_iv17/assessment.json"
 IV17_REVIEW_PATH = "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md"
+VOLUME_INPUTS_PATH = "research/feature_workbench/coverage/volume_inputs.json"
+STATES_REGISTER_PATH = "research/feature_workbench/states/register.json"
+IV17_REPEAT_PATH = "research/measurements/cycle2/iv17_repeat_results.json"
+UNIT_SENSITIVITY_PATH = "research/measurements/unit_sensitivity.json"
+UNITS_PACKET_PATH = "research/measurements/units_packet.md"
+PUECH_ENTRY25_PATH = "research/measurements/cycle4/puech_entry25.md"
+ENTRY60_REGISTRY_PATH = "research/agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json"
+KENYON_REVIEW_PATH = "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md"
+IV17_PHASE_NOTE_PATH = "research/measurements/cycle3/iv17_phase.md"
+
+# Contract status of a per-branch coverage check. "compatible" here means only
+# that the excavation reached the branch volume; it never implies a deposit result.
+COVERAGE_CHECK_STATUS = {"covered": "compatible", "partly_covered": "mixed", "not_covered": "contradicted", "undeterminable": "unknown"}
+COVERAGE_STATUS_TEXT = {"covered": "Covered", "partly_covered": "Partly covered", "not_covered": "Not covered", "undeterminable": "Undeterminable"}
+
+
+def _load_volume_join():
+    """Load the sibling join library by path; build.py loads this file the same way."""
+    path = Path(__file__).with_name("volume_join.py")
+    spec = importlib.util.spec_from_file_location("coverage_volume_join", path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Cannot load {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 GATE_LABELS = {
     "ancient_target_volume": "Bounded ancient target volume",
@@ -325,6 +351,172 @@ def _source_registry(inventory: dict[str, Any], wadi: dict[str, Any], phase: dic
     return result
 
 
+def _volume_sources() -> list[dict[str, Any]]:
+    """Sources used only by the target-volume/footprint joins."""
+    return [
+        {"id": "coverage-puech-entry25", "title": "Puech 2015, Entry 25 text, translation and commentary (page audit)",
+         "citation": "É. Puech, The Copper Scroll Revisited (2015), printed pp. 59–60 / PDF pp. 70–71; p. 25 sigla.",
+         "repo_path": PUECH_ENTRY25_PATH, "url": "https://brill.com/display/title/14988?language=en",
+         "inspection": "already_inspected", "original_campaign": None},
+        {"id": "coverage-unit-sensitivity", "title": "Cubit and datum sensitivity (M06)",
+         "citation": "Exploratory 0.40–0.60 m per cubit; Entry 25 three cubits = 1.20–1.80 m; datum null. Project packet, 2 October 2026.",
+         "repo_path": UNITS_PACKET_PATH, "inspection": "derived", "original_campaign": None},
+        {"id": "coverage-iv17-repeat", "title": "Project repeat annotations of IV/17 aperture chords",
+         "citation": "Sion Plan 5 p. 63 native crop; northern_present_gap endpoints [548,386]–[502,400]; repeat of 2 October 2026.",
+         "repo_path": IV17_REPEAT_PATH, "inspection": "derived", "original_campaign": "abu_saraj_survey_dadon_l656_reporting"},
+        {"id": "coverage-states-register", "title": "Feature workbench states register (method 4)",
+         "citation": "States states-iv17-north-ancient-threshold, states-jericho-graves-recorded, states-jericho-quarries-recorded, states-jericho-north-unsurveyed; frames states-iv17-plan5-crop and states-kenyon-trench-II.",
+         "repo_path": STATES_REGISTER_PATH, "inspection": "derived", "original_campaign": None},
+        {"id": "coverage-l656-fieldfile", "title": "IV/17 field file dependency (permit L-656)",
+         "citation": "Michael Dadon, permit L-656; Sion 2002 p. 63 note 11 and p. 82 starred editorial note; locus list, basket records 656.17/656.20, original plan, northern threshold section/level.",
+         "repo_path": IV17_PHASE_NOTE_PATH, "inspection": "not_inspected", "original_campaign": "abu_saraj_survey_dadon_l656_reporting"},
+        {"id": "coverage-entry60-registry", "title": "Entry 60 exploratory registry v2, record P60-T1",
+         "citation": "Reading branches RB-M/RB-P/RB-B (RB-L routed to P60-T8); period requirement c. 50 BCE–70 CE; legacy 315–045° sector as an operational choice.",
+         "repo_path": ENTRY60_REGISTRY_PATH, "inspection": "derived", "original_campaign": None},
+        {"id": "coverage-kenyon-iii", "title": "Kenyon and Holland, Excavations at Jericho III, Text (1981)",
+         "citation": "Printed pp. 3–4 (PDF 37–38), 119–121 (PDF 153–155), 172–174 (PDF 206–208); Fig. 1 p. xxv (PDF 31), link-only. Bounded north-slope review.",
+         "repo_path": KENYON_REVIEW_PATH, "url": "https://archive.org/details/excavationsatjer0003keny_pt01",
+         "inspection": "already_inspected", "original_campaign": "kenyon_1952_1958_expedition"},
+        {"id": "coverage-kenyon-iii-plates", "title": "Kenyon III plate volume: Trench II/Site O drawings",
+         "citation": "Pl. 111b and the eastern section at local 37.50–38.00 m N / 8.17 m H; plate number and viewer page unknown.",
+         "repo_path": KENYON_REVIEW_PATH, "inspection": "not_inspected", "original_campaign": "kenyon_1952_1958_expedition"},
+        {"id": "coverage-kenyon-ii", "title": "Kenyon, Excavations at Jericho II (1965)",
+         "citation": "Printed pp. 2, 169, 276–277, 539–544; Figs 14 (p. 35) and 91 (p. 168).",
+         "repo_path": KENYON_REVIEW_PATH, "url": "https://archive.org/details/excavationsatjer0002keny",
+         "inspection": "already_inspected", "original_campaign": "kenyon_1952_1958_expedition"},
+        {"id": "coverage-kenyon-field-records", "title": "Kenyon Jericho field and working records",
+         "citation": "Held at the Museum of Archaeology and Anthropology, Cambridge, at publication time (III pp. 3–4, footnote); current holding unverified.",
+         "repo_path": KENYON_REVIEW_PATH, "inspection": "not_inspected", "original_campaign": "kenyon_1952_1958_expedition"},
+    ]
+
+
+def _import_frames(states_register: dict[str, Any], frame_ids: list[str]) -> dict[str, dict[str, Any]]:
+    """Turn states-module reference frames into join frames without new geometry."""
+    available = {frame["id"]: frame for frame in states_register["reference_frames"]}
+    frames = {}
+    for frame_id in frame_ids:
+        if frame_id not in available:
+            raise ValueError(f"States frame {frame_id} is missing; review the volume inputs before rebuilding.")
+        frame = available[frame_id]
+        metres_per_unit = north_vector = y_axis = None
+        if frame["units"] == "px":
+            metres_per_unit = frame["scale"]["metres_per_pixel"]
+            tail, tip = frame["north"]["tail_px"], frame["north"]["tip_px"]
+            north_vector = [tip[0] - tail[0], tip[1] - tail[1]]
+            y_axis = frame["axes"].get("y") if frame["axes"].get("y") in ("up", "down") else None
+        elif frame["units"] == "m":
+            metres_per_unit = 1.0
+        frames[frame_id] = {
+            "id": frame_id, "label": frame["label"], "kind": frame["kind"], "units": frame["units"],
+            "metres_per_unit": metres_per_unit, "north_vector": north_vector, "y_axis": y_axis,
+            "north_convention": (frame.get("north") or {}).get("convention"),
+            "geographic_registration": frame.get("geographic_registration"),
+            "note": ("Imported from the states register. North is the published arrow; true, grid or magnetic is unspecified."
+                     if frame["units"] == "px" else
+                     "Imported from the states register. Local N ordinate and local H; the E axis is not described in the inspected text, so no planar north vector is set."),
+            "source_ids": ["coverage-states-register"],
+        }
+    return frames
+
+
+def _check_volume_imports(repo_root: Path, volume: dict[str, Any], states_register: dict[str, Any], assessment: dict[str, Any], phase: dict[str, Any]) -> None:
+    """Fail on drift between reviewed volume inputs and the records they repeat."""
+    targets = {target["id"]: target for target in volume["targets"]}
+    iv17 = targets["coverage-tv-e25-iv17-north"]
+    states = {state["id"]: state for state in states_register["states"]}
+    threshold = states.get(iv17["reference_surface"]["state_id"])
+    if threshold is None:
+        raise ValueError("The states register no longer holds the IV/17 ancient-threshold state.")
+    expected = {
+        "threshold elevation": (threshold.get("threshold_elevation"), iv17["reference_surface"]["elevation_m"]),
+        "threshold level frame": (threshold.get("level_reference_frame"), iv17["reference_surface"]["vertical_datum_id"]),
+        "assessment threshold elevation": (assessment["depth_branch"]["ancient_threshold_elevation"], iv17["reference_surface"]["elevation_m"]),
+        "phase-audit threshold datum": (phase["result"]["ancient_threshold_datum"], iv17["reference_surface"]["elevation_m"]),
+        "cubit count (states)": (threshold["depth_branch"]["cubits"], iv17["measure"]["count"]),
+        "cubit count (assessment)": (assessment["depth_branch"]["cubits"], iv17["measure"]["count"]),
+    }
+    cubit_options = next(dim for dim in iv17["branch_dimensions"] if dim["id"] == "cubit_length")["options"]
+    range_option = next(option for option in cubit_options if option["id"] == "range-0.40-0.60")
+    expected["cubit range (states)"] = (threshold["depth_branch"]["metres_per_cubit"], range_option["metres_per_cubit"])
+    expected["cubit range (assessment)"] = (assessment["depth_branch"]["exploratory_unit_metres"], range_option["metres_per_cubit"])
+    sensitivity = _load(repo_root, UNIT_SENSITIVITY_PATH)
+    entry25 = next(item for item in sensitivity["results"] if item["entry"] == "25")
+    expected["entry 25 metric range"] = (entry25["range_m"], [round(iv17["measure"]["count"] * value, 10) for value in range_option["metres_per_cubit"]])
+    sampled = {round(sample["metres_per_cubit"], 2) for sample in entry25["samples"]}
+    for option in cubit_options:
+        low, high = option["metres_per_cubit"]
+        if low == high and round(low, 2) not in sampled:
+            raise ValueError(f"Cubit sample {low} is not in the project's sensitivity samples.")
+    repeat = _load(repo_root, IV17_REPEAT_PATH)
+    north = next(item for item in repeat["apertures"] if item["canonical_id"] == "northern_present_gap")
+    anchor = iv17["origin"]["present_state_anchor"]
+    expected["present chord endpoints"] = ([north["endpoint_a_xy"], north["endpoint_b_xy"]], anchor["endpoints_px"])
+    expected["present chord width"] = (north["width_m"], anchor["width_m"])
+    for label, (source_value, input_value) in expected.items():
+        if source_value != input_value:
+            raise ValueError(f"Volume input drift ({label}): repository has {source_value!r}, volume_inputs.json has {input_value!r}.")
+    for state_id in ("states-jericho-graves-recorded", "states-jericho-quarries-recorded", "states-jericho-north-unsurveyed"):
+        if state_id not in states:
+            raise ValueError(f"The states register no longer holds {state_id}; review the Tell es-Sultan footprint.")
+    registry = _load(repo_root, ENTRY60_REGISTRY_PATH)
+    record = next((item for item in registry["records"] if item["id"] == "P60-T1"), None)
+    if record is None or "RB-L is excluded here and routed to P60-T8" not in record["reading_assumed"] or "315-045" not in record["confirm"]:
+        raise ValueError("Entry 60 registry P60-T1 changed; review the Tell es-Sultan target branches.")
+    if record["measures"]:
+        raise ValueError("Entry 60 registry now records a measure; review the distance band before rebuilding.")
+
+
+def _option_labels(target: dict[str, Any], options: dict[str, str]) -> str:
+    labels = []
+    for dimension in target["branch_dimensions"]:
+        option = next(item for item in dimension["options"] if item["id"] == options[dimension["id"]])
+        labels.append(option.get("label", option["id"]))
+    return " · ".join(labels)
+
+
+def _volume_result(case: dict[str, Any], target: dict[str, Any], footprints: dict[str, dict[str, Any]], spec: dict[str, Any]) -> dict[str, Any]:
+    checks = []
+    for item in case["joins"]:
+        suffix = "-".join(item["options"][dimension["id"]] for dimension in target["branch_dimensions"]).replace(".", "")
+        footprint_label = footprints[item["footprint_id"]]["label"]
+        missing = "; ".join(row["label"] for row in case["resolution"] if row["parameter"] in item["missing_parameters"])
+        detail = COVERAGE_STATUS_TEXT[item["status"]] + "."
+        if missing:
+            detail += " Missing: " + missing + "."
+        detail += " " + item["interpretation"]
+        checks.append({
+            "id": f"{case['id']}-{suffix}-{item['footprint_id'].removeprefix('coverage-fp-')}",
+            "label": f"{_option_labels(target, item['options'])} — {footprint_label}",
+            "status": COVERAGE_CHECK_STATUS[item["status"]], "detail": detail,
+            "source_ids": spec["source_ids"], "feature_ids": spec["feature_ids"],
+            "value": {"coverage_status": item["status"], "possible_statuses": item["possible_statuses"],
+                      "missing_parameters": item["missing_parameters"], "carried_unknowns": item["carried_unknowns"]},
+        })
+    checks.extend(spec["extra_checks"])
+    join_statuses = {COVERAGE_CHECK_STATUS[item["status"]] for item in case["joins"]}
+    status = join_statuses.pop() if len(join_statuses) == 1 else "mixed"
+    return {
+        "id": case["id"], "title": spec["title"], "claim": spec["claim"], "status": status, "checks": checks,
+        "unknowns": [row["label"] for row in case["resolution"]],
+        "source_ids": spec["source_ids"], "feature_ids": spec["feature_ids"],
+    }
+
+
+def _build_volume_joins(repo_root: Path, assessment: dict[str, Any], phase: dict[str, Any]) -> dict[str, Any]:
+    join_library = _load_volume_join()
+    volume = _load(repo_root, VOLUME_INPUTS_PATH)
+    states_register = _load(repo_root, STATES_REGISTER_PATH)
+    _check_volume_imports(repo_root, volume, states_register, assessment, phase)
+    frames = _import_frames(states_register, [item["id"] for item in volume["frame_imports"]])
+    targets = {target["id"]: target for target in volume["targets"]}
+    footprints = {footprint["id"]: footprint for footprint in volume["footprints"]}
+    cases = [join_library.evaluate_case(case, targets, footprints, frames, volume["field_records"], volume["declarations"])
+             for case in volume["cases"]]
+    status_counts = {status: sum(case["summary"]["status_counts"][status] for case in cases) for status in join_library.STATUSES}
+    return {"library": join_library, "volume": volume, "frames": frames, "targets": targets, "footprints": footprints,
+            "cases": cases, "status_counts": status_counts}
+
+
 def build(repo_root: Path) -> dict[str, Any]:
     repo_root = Path(repo_root)
     inventory = _load(repo_root, INVENTORY_PATH)
@@ -341,7 +533,9 @@ def build(repo_root: Path) -> dict[str, Any]:
         raise ValueError("The imported J01–J28 baseline changed; review the documentary scope before rebuilding.")
 
     sources = _source_registry(inventory, wadi, phase)
+    sources.extend(_volume_sources())
     source_ids = {source["id"] for source in sources}
+    volume = _build_volume_joins(repo_root, assessment, phase)
     notices, targets = [], []
     for record in inventory["records"]:
         refs = _source_ids(record["source_locators"])
@@ -447,6 +641,7 @@ def build(repo_root: Path) -> dict[str, Any]:
         "find_records": deepcopy([item for item in phase["evidence"] if item.get("record")]),
         "repeated_coin_evidence_deduplicated": phase["result"]["repeated_coin_evidence_deduplicated"],
         "local_plan_is_excavation_footprint": False,
+        "volume_case_id": "coverage-volume-iv17",
     })
     targets.append(iv17_target)
 
@@ -518,13 +713,70 @@ def build(repo_root: Path) -> dict[str, Any]:
          "unknowns": [GATE_LABELS[gate_id] for gate_id in iv17_target["missing_gate_ids"]],
          "source_ids": ["coverage-sion-iv17", "coverage-iv17-phase", "coverage-iv17-assessment"], "feature_ids": ["iv17-cave", "iv17-north-mouth"]},
     ]
+    records_by_id = {record["id"]: record for record in volume["volume"]["field_records"]}
+
+    def records_check(check_id: str, case: dict[str, Any], refs: list[str], features: list[str]) -> dict[str, Any]:
+        used = sorted({record_id for row in case["resolution"] for record_id in row["field_record_ids"]})
+        text = " ".join(f"{records_by_id[record_id]['label']}: {records_by_id[record_id]['held_by']}. {records_by_id[record_id]['holding_status']}" for record_id in used)
+        rows = [{"parameter": row["parameter"], "field_record_ids": row["field_record_ids"], "requirement_kind": row["requirement_kind"]}
+                for row in case["resolution"]]
+        return check(check_id, "Field records that would resolve the open parameters", "info",
+                     text + " Parameters that no field record can supply need a declared model or a new observation before testing.",
+                     refs, features, value=rows)
+
+    case_by_id = {case["id"]: case for case in volume["cases"]}
+    iv17_case, tes_case = case_by_id["coverage-volume-iv17"], case_by_id["coverage-volume-tell-es-sultan"]
+    iv17_refs = ["coverage-sion-iv17", "coverage-iv17-phase", "coverage-iv17-assessment", "coverage-puech-entry25",
+                 "coverage-unit-sensitivity", "coverage-iv17-repeat", "coverage-states-register", "coverage-l656-fieldfile"]
+    iv17_features = ["iv17-cave", "iv17-north-mouth"]
+    tes_refs = ["coverage-entry60-registry", "coverage-kenyon-iii", "coverage-kenyon-iii-plates", "coverage-kenyon-ii",
+                "coverage-kenyon-field-records", "coverage-states-register"]
+    tes_features = ["jericho-tell", "jericho-north-graves", "jericho-later-quarry-pits", "jericho-shaft-d9", "jericho-cistern-ns1"]
+    results.append(_volume_result(iv17_case, volume["targets"][iv17_case["target_id"]], volume["footprints"], {
+        "title": "IV/17 excavation footprint against the northern-threshold target",
+        "claim": "The L-656 excavation in the chamber centres covers the Entry 25 northern-threshold digging target.",
+        "source_ids": iv17_refs, "feature_ids": iv17_features,
+        "extra_checks": [
+            check("coverage-volume-iv17-description", "Published footprint description", "info",
+                  "Sion places the excavation in the centres of both spaces, beneath animal-activity remains (p. 63, note 11). The description gives no excavation limits or levels. It supports neither 'covered' nor 'not covered' for any branch.",
+                  ["coverage-sion-iv17"], iv17_features),
+            check("coverage-volume-iv17-plan5", "Plan 5 is not a footprint", "info",
+                  "Plan 5 (p. 63) shows the cave outline, pillar, wall stones, two entrance arrows, north arrow and a 0–3 m scale. It shows no excavation limits, section lines or levels.",
+                  ["coverage-sion-iv17", "coverage-states-register"], iv17_features),
+            check("coverage-volume-iv17-carried", "Accessibility, preservation, phase and recording", "unknown",
+                  "Carried with every branch: ancient access through the northern opening is undated; the phase reached is unknown; preservation of the threshold zone was not assessed; detection limits are unpublished.",
+                  ["coverage-states-register", "coverage-sion-iv17", "coverage-iv17-phase"], iv17_features),
+            records_check("coverage-volume-iv17-records", iv17_case, ["coverage-l656-fieldfile", "coverage-iv17-phase", "coverage-sion-iv17"], iv17_features),
+        ],
+    }))
+    results.append(_volume_result(tes_case, volume["targets"][tes_case["target_id"]], volume["footprints"], {
+        "title": "Tell es-Sultan north-side excavation against the Entry 60 pit target",
+        "claim": "Kenyon's Trench II and tomb search cover the Entry 60 pit target north of Koḥlit (Tell es-Sultan branch).",
+        "source_ids": tes_refs, "feature_ids": tes_features,
+        "extra_checks": [
+            check("coverage-volume-tes-distance", "No distance band in the text", "unknown",
+                  "Entry 60 gives no distance from Koḥlit. Without a distance band the target region has no outer limit, and the join cannot compute coverage. No field record can supply the band.",
+                  ["coverage-entry60-registry"], ["jericho-tell"]),
+            check("coverage-volume-tes-feature-defined", "Feature-defined target", "info",
+                  "The Entry 60 target is a feature (a pit with tombs at its mouth), not a measured offset. Its coverage is an inventory question: were all pits north of the tell recorded? That question belongs with the inventory and decision work.",
+                  ["coverage-entry60-registry"], ["jericho-tell"]),
+            check("coverage-volume-tes-trench", "Trench II footprint", "info",
+                  "Trench II/Site O exposed phase lxxvi graves and later phase lxxvii pits on the north slope (III pp. 173–174). Its limits and levels are local and unregistered in the inspected text.",
+                  ["coverage-kenyon-iii", "coverage-kenyon-iii-plates"], ["jericho-north-graves", "jericho-later-quarry-pits"]),
+            check("coverage-volume-tes-exclusion", "Documented non-search", "info",
+                  "Kenyon II p. 169 reports that the tomb search skipped the ground just north of the tell. This is documented non-search, not an observed empty area. The strip's extent is not drawn in the repository.",
+                  ["coverage-kenyon-ii"], ["jericho-tell"]),
+            records_check("coverage-volume-tes-records", tes_case, ["coverage-kenyon-iii", "coverage-kenyon-iii-plates", "coverage-kenyon-ii", "coverage-kenyon-field-records"], tes_features),
+        ],
+    }))
+
     referenced = _source_ids(_locators(inventory))
     if set(referenced) - source_ids:
         raise ValueError("Unregistered source locators: " + ", ".join(sorted(set(referenced) - source_ids)))
     return {
         "id": "coverage", "number": 5, "title": "Investigation coverage",
         "summary": "Track what the published investigations reached, which states they exposed and which target-specific observations remain missing.",
-        "scope": "Previously inspected Jericho J01–J28 documentary notices and twenty-one coverage obligations, current ESI5 Wadi original supersession, and IV/17 northern-threshold pilot. No parked geometry rerun or new acquisition.",
+        "scope": "Previously inspected Jericho J01–J28 documentary notices and twenty-one coverage obligations, current ESI5 Wadi original supersession, IV/17 northern-threshold pilot, and target-volume/footprint joins for Entry 25 at IV/17 and Entry 60 at Tell es-Sultan. No parked geometry rerun or new acquisition.",
         "sources": sources,
         "features": [{"id": "wadi-nueima-described-miqva", "name": "Wadi Nu‘eima miqva described in ESI5", "kind": "reported_bath", "site": "Wadi Nu‘eima", "geometry": None}],
         "observations": observations, "states": [], "results": results,
@@ -532,7 +784,10 @@ def build(repo_root: Path) -> dict[str, Any]:
             "summary": {"documentary_notices": len(notices), "named_sectors": len(sectors), "coverage_obligations": len(obligations), "record_kind_counts": kinds,
                         "distinct_eligible_basins": None, "regional_eligible_denominator": None, "inventory_detection_rate": None,
                         "negative_excavation_eligible_targets": sum(target["negative_excavation_eligible"] for target in targets),
-                        "independent_campaign_increment": 0, "new_source_inspection_increment": 0},
+                        "independent_campaign_increment": 0, "new_source_inspection_increment": 0,
+                        "volume_join_cases": len(volume["cases"]),
+                        "volume_join_records": sum(case["summary"]["joins"] for case in volume["cases"]),
+                        "volume_join_status_counts": volume["status_counts"]},
             "regional_boundary": deepcopy(inventory["geographic_and_search_boundary"]),
             "sectors": sectors, "notices": notices, "obligations": obligations,
             "coverage_observations": coverage_observations,
@@ -546,6 +801,28 @@ def build(repo_root: Path) -> dict[str, Any]:
                               "supersedes_dependency_only": True, "aggregate_parent_retained": True,
                               "complete_site_bath_count": None, "source_ids": ["coverage-wadi-original"]}],
             "parked_tests_reopened": False,
+            "volume_joins": {
+                "method": "Each target branch is joined to each footprint in one shared frame and datum. A different frame or datum is refused, never compared. The result is spatial coverage only. No detection probability is computed, and no absence of a deposit is inferred from any status.",
+                "status_definitions": {
+                    "covered": "Every point of the branch volume lies inside a cut whose levels span it.",
+                    "partly_covered": "Some, but not all, of the branch volume lies inside a cut.",
+                    "not_covered": "Every recorded cut is shown to lie outside the branch outline or above or below its levels.",
+                    "undeterminable": "A parameter needed for the comparison is missing; the missing parameters are listed.",
+                },
+                "carried_components": ["target_position", "ancient_accessibility", "preservation", "excavation_reach", "recording_capability", "phase"],
+                "arc_step_deg": volume["library"].ARC_STEP_DEG,
+                "frames": list(volume["frames"].values()),
+                "targets": deepcopy(volume["volume"]["targets"]),
+                "footprints": deepcopy(volume["volume"]["footprints"]),
+                "field_records": deepcopy(volume["volume"]["field_records"]),
+                "declarations": deepcopy(volume["volume"]["declarations"]),
+                "cases": volume["cases"],
+                "related_pending_requests": deepcopy(volume["volume"]["related_pending_requests"]),
+                "related_pending_requests_note": volume["volume"]["related_pending_requests_note"],
+                "summary": {"cases": len(volume["cases"]), "joins": sum(case["summary"]["joins"] for case in volume["cases"]),
+                            "status_counts": volume["status_counts"], "deposit_absence_inferred": False,
+                            "detection_probability_computed": False},
+            },
         },
     }
 

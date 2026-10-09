@@ -1,0 +1,99 @@
+{
+  "case_id": "res-004",
+  "batch": "reserved",
+  "instruction": "In the great cistern that was once a dwelling-cave, about 25 cubits across, whose stair is at the north: in the recess on its east side, under the plaster, 3 cubits: [deposit]. Its channel of set stones goes off from the mouth toward the sea.",
+  "context": "Redacted site description: a large walled mound on the edge of the foothills; the coastal plain and the sea lie to the west and north-west. Trenches across the whole mound recorded many rock-cut cisterns and caves of different periods. Several old dwelling-caves were later deepened and plastered as cisterns.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "cistern, square on plan",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "mound"
+        },
+        "opening": "round mouth at the end of an oblong sinking 1.8 x 0.8 x 0.46 m running north-south",
+        "date": "D",
+        "dimensions": "sides 4.0 m; depth 6.4 m",
+        "notes": "One of a few rectangular or square cisterns on the site; on the excavator's Hellenistic plan."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "cistern converted from a dwelling-cave",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "mound (south end of an excavation trench)"
+        },
+        "opening": "entrance with rock-cut steps (lower steps quarried away)",
+        "date": "D",
+        "dimensions": "about 7 m across in the published north-south section; old floor 1.9 m below the entrance, then deepened another 1.5 m",
+        "notes": "Walls of the deepened part converge downward, unlike other cisterns on the site. Filter hollow in the floor. Contained skull fragments, many animal bones (camel) and pottery of the excavator's Second Semitic period."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "cistern converted from a dwelling-cave",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "mound"
+        },
+        "opening": "round hole cut in the roof, with a circular masonry shaft",
+        "date": "D",
+        "dimensions": "greatest diameter (north-south) 11.8 m; depth 6.3 m below the rock surface",
+        "notes": "Rock-cut stair at the north end; part of the north side built up with rough masonry. A band of the old floor about 2.1 m wide was kept and the rest deepened by 1.6 m; a recess in the east side, also deepened. Hard cement on all walls. First used as a cistern in the excavator's Second Semitic period; shaft raised about 1.5 m in his Fourth Semitic period. A conduit of stones set on end leaves the shaft mouth."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "cistern of the common bottle-shaped type",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "mound"
+        },
+        "opening": "central mouth in the roof; neck 3.4 m deep",
+        "date": "D",
+        "dimensions": "depth 9.1 m; diameter at the base about 8.7 m",
+        "notes": "One of the largest ordinary cisterns. A stone 2.2 x 0.75 x 0.4 m lay over the mouth. Aegean-style (Mycenaean) sherds among the finds."
+      }
+    },
+    {
+      "id": "c5",
+      "features": {
+        "type": "cistern converted from a dwelling-cave",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "mound"
+        },
+        "opening": "entrance with traces of steps",
+        "date": "D",
+        "dimensions": "round chamber, diameter 4.9 m",
+        "notes": "Cave completely re-cut into a round cistern and deepened; only fragments of the steps remain."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "position_unrecorded",
+    "measurement_rounded_to_cubits",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "In which compass direction does the first run of the stone channel at the chosen cistern's mouth go?",
+  "withheld_options": [
+    "north-east",
+    "north-west",
+    "south-east",
+    "south-west",
+    "unknown"
+  ],
+  "key_sha256": "d0f8e9f47fd029b66c7bcd092bcbb32d05d1be66dc24c3f27cc27ab3e4df33f0"
+}

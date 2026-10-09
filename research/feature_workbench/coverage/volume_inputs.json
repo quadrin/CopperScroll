@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-08",
+  "scope": "Target-volume and footprint records for two coverage joins: Entry 25 at IV/17 and Entry 60 at Tell es-Sultan. All values come from records already in the repository. Unknown values are explicit nulls.",
+  "frame_imports": [
+    {"id": "states-iv17-plan5-crop", "from": "research/feature_workbench/states/register.json"},
+    {"id": "states-kenyon-trench-II", "from": "research/feature_workbench/states/register.json"}
+  ],
+  "targets": [
+    {
+      "id": "coverage-tv-e25-iv17-north",
+      "label": "Entry 25 northern-opening digging target at IV/17",
+      "entry": "25",
+      "lines": "VI 1–6",
+      "instruction": "Project translation VI 3–4: at the northern entrance, dig three cubits; there is a jar. Puech 2015 pp. 59–60 renders the verb as 'buried (at) three cubits'.",
+      "text_source_ids": ["coverage-puech-entry25", "coverage-unit-sensitivity"],
+      "candidate_assignment": {
+        "site_feature_id": "iv17-cave",
+        "origin_feature_id": "iv17-north-mouth",
+        "status": "Exploratory candidate assignment from the Entry 25 conditional assessment. It is not an identification.",
+        "source_ids": ["coverage-iv17-assessment"]
+      },
+      "horizontal_frame": "states-iv17-plan5-crop",
+      "origin": {
+        "feature_id": "iv17-north-mouth",
+        "point": null,
+        "point_status": "The text names the opening, not a point in it. A point on the present chord would be a project choice.",
+        "present_state_anchor": {
+          "kind": "present aperture chord (surveyed-present proxy, not the ancient threshold)",
+          "frame": "states-iv17-plan5-crop",
+          "endpoints_px": [[548, 386], [502, 400]],
+          "width_m": 0.858629662869379,
+          "endpoint_sensitivity_width_m": [0.5938877862885401, 1.162701115761271],
+          "source_ids": ["coverage-iv17-repeat"]
+        }
+      },
+      "reference_surface": {
+        "id": "iv17-ancient-northern-threshold",
+        "kind": "ancient_threshold",
+        "state_id": "states-iv17-north-ancient-threshold",
+        "elevation_m": null,
+        "vertical_datum_id": null,
+        "phase_id": null,
+        "note": "No ancient threshold level, section or dated floor contact is published. Plan 5 has no levels.",
+        "source_ids": ["coverage-states-register", "coverage-iv17-phase", "coverage-iv17-assessment"]
+      },
+      "region": {
+        "polygon": null,
+        "description": "Zone at the ancient northern threshold where a vertical dig would start.",
+        "note": "The ancient threshold outline is not drawn in any inspected record. The present chord locates the mouth in the frame but does not bound the target."
+      },
+      "measure": {"count": 3, "unit": "cubit", "source_ids": ["coverage-puech-entry25", "coverage-unit-sensitivity", "coverage-states-register"]},
+      "branch_dimensions": [
+        {
+          "id": "direction_model",
+          "label": "Three-cubit interpretation",
+          "options": [
+            {"id": "vertical", "label": "Vertical below the ancient northern threshold", "model": "vertical_below_reference"},
+            {"id": "horizontal", "label": "Horizontal from the northern opening", "model": "horizontal_from_origin",
+             "sector_deg": null, "depth_band_m": null, "radial_tolerance_m": null,
+             "note": "The text gives no direction or depth for a horizontal reading."}
+          ],
+          "source_ids": ["coverage-iv17-assessment"]
+        },
+        {
+          "id": "cubit_length",
+          "label": "Cubit length",
+          "options": [
+            {"id": "range-0.40-0.60", "label": "Exploratory range 0.40–0.60 m", "metres_per_cubit": [0.4, 0.6]},
+            {"id": "0.40", "label": "Sample 0.40 m", "metres_per_cubit": [0.4, 0.4]},
+            {"id": "0.50", "label": "Sample 0.50 m", "metres_per_cubit": [0.5, 0.5]},
+            {"id": "0.60", "label": "Sample 0.60 m", "metres_per_cubit": [0.6, 0.6]}
+          ],
+          "note": "The project's exploratory range and its endpoint and midpoint samples. Not a textual calibration.",
+          "source_ids": ["coverage-unit-sensitivity", "coverage-states-register"]
+        }
+      ],
+      "not_branched": [
+        {"dimension": "deposit antecedent (below the jar or below the book)", "reason": "It changes what lies under the jar, not the level where digging meets the jar."},
+        {"dimension": "landmark reading and eastward attachment", "reason": "They decide whether IV/17 is a candidate at all. Once the candidate is assigned, they do not move the target."}
+      ],
+      "coverage_definition": "The target is the set of positions where digging three cubits would meet the jar. A cut covers a position when its outline contains it and its levels span it.",
+      "phase": {
+        "id": null,
+        "label": "Ancient state in which the instruction applied; date unknown.",
+        "comparison_window_years": [-100, 100],
+        "window_basis": "Exploratory analysis window used by the states module. Not an established instruction date."
+      },
+      "ancient_accessibility": {
+        "status": "unknown",
+        "detail": "No dated access episode for the northern opening is recorded. The states register has no access relation for it, and the threshold date is null.",
+        "source_ids": ["coverage-states-register", "coverage-iv17-phase"]
+      },
+      "source_ids": ["coverage-puech-entry25", "coverage-iv17-assessment", "coverage-iv17-phase", "coverage-states-register", "coverage-iv17-repeat", "coverage-unit-sensitivity"]
+    },
+    {
+      "id": "coverage-tv-e60-tell-es-sultan",
+      "label": "Entry 60 pit north of Koḥlit, Tell es-Sultan branch",
+      "entry": "60",
+      "lines": "XII 10–13",
+      "instruction": "Project translation XII 10–11: the pit on the north side of Koḥlit, its opening to the north, with tombs at its mouth.",
+      "text_source_ids": ["coverage-entry60-registry"],
+      "reading_branches": {
+        "joined": ["RB-M", "RB-P", "RB-B"],
+        "note": "These readings differ in mouth facing, concealment and tombs. All place the pit north of the same Koḥlit anchor, so they share one target region here.",
+        "excluded": [{"id": "RB-L", "reason": "Places the pit at Janoaḥ (registry record P60-T8), another site. No Tell es-Sultan footprint can be joined to it."}]
+      },
+      "candidate_assignment": {
+        "site_feature_id": "jericho-tell",
+        "origin_feature_id": "jericho-tell",
+        "status": "Koḥlit = Tell es-Sultan is an edition hypothesis held as exploratory branch P60-T1 (possible/low). It is not an identification.",
+        "source_ids": ["coverage-entry60-registry"]
+      },
+      "horizontal_frame": null,
+      "frame_note": "No frame in the repository holds the tell outline. The registry's WGS84 anchor (about 150 m) is a site anchor, not a measurement origin. Kenyon's grid is not registered to it.",
+      "origin": {
+        "feature_id": "jericho-tell",
+        "point": null,
+        "point_status": "The northern edge of the tell is not defined in any frame here."
+      },
+      "reference_surface": {
+        "id": "e60-ancient-ground-at-pit-mouth",
+        "kind": "ancient_ground_surface",
+        "elevation_m": null,
+        "vertical_datum_id": null,
+        "phase_id": null,
+        "note": "The pit is not identified, so its mouth surface is unknown.",
+        "source_ids": ["coverage-entry60-registry", "coverage-kenyon-iii"]
+      },
+      "region": null,
+      "measure": null,
+      "branch_dimensions": [
+        {
+          "id": "direction_model",
+          "label": "Location relation",
+          "options": [
+            {"id": "north-of-origin", "label": "North of the Koḥlit anchor", "model": "horizontal_from_origin",
+             "distance_band_m": null, "depth_band_m": null, "radial_tolerance_m": null,
+             "note": "Entry 60 gives no distance and no depth."}
+          ],
+          "source_ids": ["coverage-entry60-registry"]
+        },
+        {
+          "id": "direction_sector",
+          "label": "Direction sector",
+          "options": [
+            {"id": "text-north", "label": "North side; no angular bounds in the text", "sector_deg": null},
+            {"id": "legacy-315-045", "label": "Legacy exploratory sector 315°–45°", "sector_deg": [315, 45],
+             "basis": "Registry v2 P60-T1 calls this an exploratory operational choice, not a text-derived tolerance."}
+          ],
+          "source_ids": ["coverage-entry60-registry"]
+        }
+      ],
+      "not_branched": [
+        {"dimension": "Koḥlit identity", "reason": "Only the Tell es-Sultan branch can meet Kenyon's footprints. Other Koḥlit branches need their own footprints."}
+      ],
+      "coverage_definition": "The target is the region north of the Koḥlit anchor where the pit could lie. Without a distance band the region has no outer limit.",
+      "phase": {
+        "id": null,
+        "label": "Pit accessible with tombs at its mouth; date unknown.",
+        "comparison_window_years": [-50, 70],
+        "window_basis": "Registry v2 P60-T1 period requirement (c. 50 BCE–70 CE, extendable to 135 CE). Exploratory."
+      },
+      "ancient_accessibility": {
+        "status": "unknown",
+        "detail": "Kenyon III p. 174: phase lxxvii pits cut phase lxxvi grave shafts. Their absolute opening date and access beside surviving graves are unknown.",
+        "source_ids": ["coverage-kenyon-iii"]
+      },
+      "source_ids": ["coverage-entry60-registry", "coverage-kenyon-iii", "coverage-kenyon-ii", "coverage-states-register"]
+    }
+  ],
+  "footprints": [
+    {
+      "id": "coverage-fp-iv17-l656",
+      "label": "IV/17 excavation, Michael Dadon, permit L-656",
+      "site_feature_ids": ["iv17-cave"],
+      "campaign_id": "abu_saraj_survey_dadon_l656_reporting",
+      "horizontal_frame": "states-iv17-plan5-crop",
+      "frame_note": "Sion describes the excavated area relative to the two spaces drawn on Plan 5. Plan 5 itself shows the cave outline, pillar, wall stones, two entrance arrows, north arrow and 0–3 m scale. It shows no excavation limits, section lines or levels.",
+      "region_description": "Centres of the northern and southern spaces, beneath remains of animal activity (Sion p. 63, note 11).",
+      "cuts": [
+        {"id": "iv17-north-space-centre", "label": "Centre of the northern space", "polygon": null, "top_level_m": null, "bottom_level_m": null},
+        {"id": "iv17-south-space-centre", "label": "Centre of the southern space", "polygon": null, "top_level_m": null, "bottom_level_m": null}
+      ],
+      "vertical_datum_id": null,
+      "phase_reached_id": null,
+      "reported_find_periods": "Hellenistic sherds, coins, arrowheads and organic material. Sion reconstructs use from the first half of the 2nd to the first half of the 1st century BCE (p. 63). These date finds and use, not the surface reached.",
+      "disturbance": {
+        "reported": "Animal-activity remains overlie the excavated deposits (p. 63).",
+        "target_zone_assessed": false
+      },
+      "recording": {
+        "method": "Excavation recorded by baskets; baskets 656.17 and 656.20 are published for two arrowheads (p. 64).",
+        "detection_limits": null,
+        "sections_published": false,
+        "levels_published": false,
+        "plan": "Plan 5 is a survey plan without excavation limits."
+      },
+      "documented_exclusions": [],
+      "field_record_ids": ["coverage-rec-l656-plan", "coverage-rec-l656-threshold-section", "coverage-rec-l656-level-register", "coverage-rec-l656-baskets", "coverage-rec-l656-locus-list", "coverage-rec-l656-method"],
+      "source_ids": ["coverage-sion-iv17", "coverage-iv17-phase"]
+    },
+    {
+      "id": "coverage-fp-kenyon-trench-ii",
+      "label": "Kenyon Trench II / Site O, north end of the tell (1952–1958)",
+      "site_feature_ids": ["jericho-tell", "jericho-north-graves", "jericho-later-quarry-pits"],
+      "campaign_id": "kenyon_1952_1958_expedition",
+      "horizontal_frame": "states-kenyon-trench-II",
+      "frame_note": "Local excavation-square ordinates (III pp. 3–4). Not registered to a tell outline or to geographic coordinates. III Fig. 1 (p. xxv) shows Trench II at the northern end on a composite sketch plan; the project has no tracing.",
+      "region_description": "Trench II / Site O on the northern slope. The graves lie mostly in its northern part, up to local 42.50 m N (III p. 173).",
+      "cuts": [
+        {"id": "trench-ii-site-o", "label": "Trench II / Site O", "polygon": null, "top_level_m": null, "bottom_level_m": null,
+         "note": "Trench limits and levels reached are in the plate volume and field records, not in the inspected text pages."}
+      ],
+      "vertical_datum_id": null,
+      "vertical_datum_note": "Section heights (H) are local, and Kenyon notes surveying and datum inconsistencies (III pp. 3–4). The 8.17 m H section point is local.",
+      "phase_reached_id": null,
+      "phases_exposed": ["Stage XXIV, phase lxxvi: shaft graves", "Stage XXV, phase lxxvii: later pits cutting the graves", "Early Bronze Stage XX: cistern (III pp. 119–121)"],
+      "feature_depths_not_reach": "Grave shafts survive to at most 1.25 m below the present surface (III p. 173). This is a feature depth, not the trench's reach.",
+      "disturbance": {
+        "reported": "Phase lxxvii pits truncate many grave shafts. Erosion and later truncation limit surviving shaft depth. Earlier excavation trenches removed evidence at the southern end (III pp. 173–174).",
+        "target_zone_assessed": false
+      },
+      "recording": {
+        "method": "Stratigraphic excavation. Sections drawn at 1:25 and published at 1:100 (III pp. 3–4).",
+        "detection_limits": null,
+        "sections_published": "In the separate plate volume; not inspected.",
+        "levels_published": "Local H only."
+      },
+      "documented_exclusions": [],
+      "field_record_ids": ["coverage-rec-kenyon-iii-plates", "coverage-rec-kenyon-field-records", "coverage-rec-kenyon-iii-fig1"],
+      "source_ids": ["coverage-kenyon-iii", "coverage-kenyon-iii-plates", "coverage-states-register"]
+    },
+    {
+      "id": "coverage-fp-kenyon-tomb-search",
+      "label": "Kenyon 1955–1958 tomb search north of the tell",
+      "site_feature_ids": ["jericho-tell", "jericho-shaft-d9", "jericho-cistern-ns1"],
+      "campaign_id": "kenyon_1952_1958_expedition",
+      "horizontal_frame": null,
+      "frame_note": "Tomb areas A–P appear on II Figs 14 (p. 35) and 91 (p. 168) and area plans Pls XXXIV–XLI. They are not traced or registered here.",
+      "region_description": "Tomb areas north and north-west of the tell.",
+      "cuts": [],
+      "vertical_datum_id": null,
+      "phase_reached_id": null,
+      "feature_depths_not_reach": "D9's Middle Bronze shaft is 3.90 m deep (II pp. 276–277). P29 was dug to 4.80 m without reaching its floor (II p. 544). These are depths of single features, not the reach of an area search.",
+      "disturbance": {
+        "reported": "N.S.1 was rescue-dug on the camp outskirts and no plan was made (II pp. 539–544).",
+        "target_zone_assessed": false
+      },
+      "recording": {
+        "method": "Tomb clearance by area; N.S.1 rescue-dug without a plan.",
+        "detection_limits": null
+      },
+      "documented_exclusions": [
+        {"id": "strip-north-of-tell", "description": "The ground just north of the tell was skipped because of a considerable superficial deposit. The line of the NE road was also skipped (II p. 169).",
+         "polygon": null, "source_ids": ["coverage-kenyon-ii"]}
+      ],
+      "field_record_ids": ["coverage-rec-kenyon-ii-area-plans", "coverage-rec-kenyon-field-records"],
+      "source_ids": ["coverage-kenyon-ii"]
+    }
+  ],
+  "field_records": [
+    {
+      "id": "coverage-rec-l656-plan",
+      "label": "Original IV/17 excavation plan, including the north mouth",
+      "record_class": "plan",
+      "publication_document_class": "original plan",
+      "would_show": "Limits of each excavated cut, and the outline of the north mouth at threshold level if it was drawn.",
+      "resolves": ["footprint.cut.polygon", "target.region.polygon"],
+      "applies_to": ["coverage-tv-e25-iv17-north", "coverage-fp-iv17-l656"],
+      "file": "Michael Dadon, IV/17 excavation file, permit L-656",
+      "held_by": "Archive of the Archaeology Staff Officer for Judea and Samaria, as named in Sion 2002 p. 82 (starred editorial note; note 11 on p. 63)",
+      "holding_status": "Named in the publication. Present holding, accession and survival of this document are unverified.",
+      "request_status": "No specific request sent. The 7 October IAA request concerns the regional cave inventory, not this file.",
+      "inspection": "not_inspected",
+      "source_ids": ["coverage-l656-fieldfile", "coverage-iv17-phase"]
+    },
+    {
+      "id": "coverage-rec-l656-threshold-section",
+      "label": "Section and levels through the northern threshold",
+      "record_class": "section",
+      "publication_document_class": "northern threshold section/level",
+      "would_show": "Threshold level against a datum line, and a floor contact that could date the threshold surface.",
+      "resolves": ["target.reference_surface.elevation_m", "target.reference_surface.vertical_datum_id", "target.reference_surface.phase_id", "target.ancient_accessibility"],
+      "applies_to": ["coverage-tv-e25-iv17-north", "coverage-fp-iv17-l656"],
+      "file": "Michael Dadon, IV/17 excavation file, permit L-656",
+      "held_by": "Archive of the Archaeology Staff Officer for Judea and Samaria, as named in Sion 2002 p. 82",
+      "holding_status": "Named as a needed document class in the repository; whether such a section was drawn is unverified.",
+      "request_status": "No specific request sent.",
+      "inspection": "not_inspected",
+      "source_ids": ["coverage-l656-fieldfile", "coverage-iv17-phase"]
+    },
+    {
+      "id": "coverage-rec-l656-level-register",
+      "label": "Level register: elevation readings and benchmark",
+      "record_class": "level_register",
+      "publication_document_class": null,
+      "would_show": "The excavation datum, and the top and bottom levels of each cut.",
+      "resolves": ["footprint.vertical_datum_id", "footprint.cut.top_level_m", "footprint.cut.bottom_level_m", "target.reference_surface.vertical_datum_id"],
+      "applies_to": ["coverage-tv-e25-iv17-north", "coverage-fp-iv17-l656"],
+      "file": "Michael Dadon, IV/17 excavation file, permit L-656",
+      "held_by": "Archive of the Archaeology Staff Officer for Judea and Samaria, as named in Sion 2002 p. 82",
+      "holding_status": "Not named in the publication. Existence unverified.",
+      "request_status": "No specific request sent.",
+      "inspection": "not_inspected",
+      "source_ids": ["coverage-l656-fieldfile"]
+    },
+    {
+      "id": "coverage-rec-l656-baskets",
+      "label": "Basket register, including baskets 656.17 and 656.20",
+      "record_class": "basket_register",
+      "publication_document_class": "656.17 and 656.20 basket records",
+      "would_show": "Basket levels and loci, if recorded; these give reach per cut and the deposits reached.",
+      "resolves": ["footprint.cut.top_level_m", "footprint.cut.bottom_level_m", "footprint.phase_reached_id"],
+      "applies_to": ["coverage-tv-e25-iv17-north", "coverage-fp-iv17-l656"],
+      "file": "Michael Dadon, IV/17 excavation file, permit L-656",
+      "held_by": "Archive of the Archaeology Staff Officer for Judea and Samaria, as named in Sion 2002 p. 82",
+      "holding_status": "Basket numbers are published (p. 64); the register itself is uninspected.",
+      "request_status": "No specific request sent.",
+      "inspection": "not_inspected",
+      "source_ids": ["coverage-l656-fieldfile", "coverage-iv17-phase"]
+    },
+    {
+      "id": "coverage-rec-l656-locus-list",
+      "label": "Locus list with stratigraphic descriptions",
+      "record_class": "locus_list",
+      "publication_document_class": "locus list",
+      "would_show": "Which deposits each cut reached, and the state of the deposits near the north mouth.",
+      "resolves": ["footprint.phase_reached_id", "footprint.disturbance.target_zone_assessed"],
+      "applies_to": ["coverage-tv-e25-iv17-north", "coverage-fp-iv17-l656"],
+      "file": "Michael Dadon, IV/17 excavation file, permit L-656",
+      "held_by": "Archive of the Archaeology Staff Officer for Judea and Samaria, as named in Sion 2002 p. 82",
+      "holding_status": "Named as a needed document class in the repository; existence unverified.",
+      "request_status": "No specific request sent.",
+      "inspection": "not_inspected",
+      "source_ids": ["coverage-l656-fieldfile", "coverage-iv17-phase"]
+    },
+    {
+      "id": "coverage-rec-l656-method",
+      "label": "Excavation method notes (sieving and recovery)",
+      "record_class": "method_record",
+      "publication_document_class": null,
+      "would_show": "Whether deposits were sieved, and the smallest object size the recovery would detect.",
+      "resolves": ["footprint.recording.detection_limits"],
+      "applies_to": ["coverage-tv-e25-iv17-north", "coverage-fp-iv17-l656"],
+      "file": "Michael Dadon, IV/17 excavation file, permit L-656",
+      "held_by": "Archive of the Archaeology Staff Officer for Judea and Samaria, as named in Sion 2002 p. 82",
+      "holding_status": "Not named in the publication. Existence unverified.",
+      "request_status": "No specific request sent.",
+      "inspection": "not_inspected",
+      "source_ids": ["coverage-l656-fieldfile"]
+    },
+    {
+      "id": "coverage-rec-kenyon-iii-plates",
+      "label": "Kenyon III plate volume: Trench II / Site O plans and sections, including the eastern section at local 37.50–38.00 m N / 8.17 m H and Pl. 111b",
+      "record_class": "plans_and_sections",
+      "publication_document_class": "published plate volume",
+      "would_show": "Trench limits and local levels, the phases reached, and the relation of the later pits to the graves.",
+      "resolves": ["footprint.cut.polygon", "footprint.cut.top_level_m", "footprint.cut.bottom_level_m", "footprint.phase_reached_id", "footprint.disturbance.target_zone_assessed", "target.ancient_accessibility"],
+      "limits": "Levels would be local H. Accessibility would be a relative sequence only; an absolute pit date would still be missing.",
+      "applies_to": ["coverage-fp-kenyon-trench-ii"],
+      "file": "Kenyon and Holland, Excavations at Jericho III, separate plate volume (1981)",
+      "held_by": "Published volume. The project has no copy; plate number and viewer page are unknown.",
+      "holding_status": "Published; no project copy.",
+      "request_status": "No request recorded.",
+      "inspection": "not_inspected",
+      "source_ids": ["coverage-kenyon-iii-plates"]
+    },
+    {
+      "id": "coverage-rec-kenyon-field-records",
+      "label": "Kenyon expedition field and working records: site grid survey, level datum, Trench II registers",
+      "record_class": "field_archive",
+      "publication_document_class": "field and working records",
+      "would_show": "The grid's registration to the tell, the level datum, and the limits and levels of each excavated area.",
+      "resolves": ["target.horizontal_frame", "footprint.vertical_datum_id", "footprint.cut.polygon", "footprint.cut.top_level_m", "footprint.cut.bottom_level_m", "footprint.recording.detection_limits", "footprint.horizontal_frame", "footprint.cuts"],
+      "applies_to": ["coverage-tv-e60-tell-es-sultan", "coverage-fp-kenyon-trench-ii", "coverage-fp-kenyon-tomb-search"],
+      "file": "Kenyon Jericho excavation records, 1952–1958",
+      "held_by": "Museum of Archaeology and Anthropology, Cambridge, at the time of publication (III pp. 3–4, footnote)",
+      "holding_status": "Holding stated for 1981 only. Current holding unverified.",
+      "request_status": "No request recorded.",
+      "inspection": "not_inspected",
+      "source_ids": ["coverage-kenyon-field-records"]
+    },
+    {
+      "id": "coverage-rec-kenyon-iii-fig1",
+      "label": "Kenyon III Fig. 1 (p. xxv / PDF 31): composite sketch plan of the 1907–1958 excavations",
+      "record_class": "sketch_plan",
+      "publication_document_class": "published figure",
+      "would_show": "Approximate positions of the tell and Trench II in one drawing, with north arrow and metric scale.",
+      "resolves": ["target.horizontal_frame", "target.origin.point"],
+      "limits": "A sketch plan gives an approximate common frame only. The project has no tracing, and reuse rights are unestablished (link-only).",
+      "applies_to": ["coverage-tv-e60-tell-es-sultan", "coverage-fp-kenyon-trench-ii"],
+      "file": "Kenyon and Holland, Excavations at Jericho III, Text (1981)",
+      "held_by": "Supplied III text PDF (Internet Archive excavationsatjer0003keny_pt01); link-only in the repository",
+      "holding_status": "Available to the project; viewed only to identify the figure.",
+      "request_status": "Not needed.",
+      "inspection": "already_inspected",
+      "source_ids": ["coverage-kenyon-iii"]
+    },
+    {
+      "id": "coverage-rec-kenyon-ii-area-plans",
+      "label": "Kenyon II Figs 14 (p. 35) and 91 (p. 168) and area plans Pls XXXIV–XLI",
+      "record_class": "distribution_maps_and_area_plans",
+      "publication_document_class": "published figures and plates",
+      "would_show": "Positions of the tomb areas around the tell.",
+      "resolves": ["footprint.horizontal_frame", "footprint.cuts"],
+      "limits": "They locate tomb areas, not the limits or depth of each cleared area. The repository does not record whether the skipped strip is drawn.",
+      "applies_to": ["coverage-fp-kenyon-tomb-search"],
+      "file": "Kenyon, Excavations at Jericho II (1965)",
+      "held_by": "Supplied II PDF (Internet Archive excavationsatjer0002keny); not traced",
+      "holding_status": "Available to the project.",
+      "request_status": "Not needed.",
+      "inspection": "already_inspected",
+      "source_ids": ["coverage-kenyon-ii"]
+    }
+  ],
+  "declarations": [
+    {"parameter": "target.region.polygon", "applies_to": ["coverage-tv-e25-iv17-north"], "requirement_kind": "model_declaration",
+     "requirement": "The text gives no horizontal extent around the opening. Declare a zone around the ancient threshold outline before testing."},
+    {"parameter": "target.origin.point", "applies_to": ["coverage-tv-e25-iv17-north"], "requirement_kind": "model_declaration",
+     "requirement": "The text names the opening, not a point in it. Declare the origin point before testing."},
+    {"parameter": "target.direction.sector_deg", "applies_to": ["coverage-tv-e25-iv17-north"], "requirement_kind": "model_declaration",
+     "requirement": "The horizontal reading gives no direction. Declare a sector before testing."},
+    {"parameter": "target.direction.depth_band_m", "applies_to": ["coverage-tv-e25-iv17-north"], "requirement_kind": "model_declaration",
+     "requirement": "The horizontal reading gives no depth. Declare a depth band before testing."},
+    {"parameter": "target.direction.radial_tolerance_m", "applies_to": ["coverage-tv-e25-iv17-north"], "requirement_kind": "model_declaration",
+     "requirement": "A single cubit length gives a zero-width distance band. Declare a tolerance before testing."},
+    {"parameter": "target.distance_band_m", "applies_to": ["coverage-tv-e60-tell-es-sultan"], "requirement_kind": "model_declaration",
+     "requirement": "Entry 60 states no distance from Koḥlit. Only a declared model can bound the target. No field record can supply it."},
+    {"parameter": "target.direction.sector_deg", "applies_to": ["coverage-tv-e60-tell-es-sultan"], "requirement_kind": "model_declaration",
+     "requirement": "The text says 'north side' and gives no angular bounds. Declare a sector before testing."},
+    {"parameter": "target.direction.depth_band_m", "applies_to": ["coverage-tv-e60-tell-es-sultan"], "requirement_kind": "model_declaration",
+     "requirement": "Entry 60 gives no depth; the deposit is 'in the pit'. Declare a depth band before testing."},
+    {"parameter": "target.origin.point", "applies_to": ["coverage-tv-e60-tell-es-sultan"], "requirement_kind": "model_declaration",
+     "requirement": "Declare which point or edge of the tell is the origin, in a frame that holds the tell outline."},
+    {"parameter": "target.reference_surface.elevation_m", "applies_to": ["coverage-tv-e60-tell-es-sultan"], "requirement_kind": "new_observation",
+     "requirement": "The pit is not identified. Its mouth surface can be recorded only after a candidate pit is found and sectioned."},
+    {"parameter": "target.reference_surface.vertical_datum_id", "applies_to": ["coverage-tv-e60-tell-es-sultan"], "requirement_kind": "new_observation",
+     "requirement": "A datum for the pit-mouth surface exists only once a candidate pit is recorded."},
+    {"parameter": "target.reference_surface.phase_id", "applies_to": ["coverage-tv-e60-tell-es-sultan"], "requirement_kind": "new_observation",
+     "requirement": "A dated pit-mouth or tomb-mouth relation is needed (ACTIVE_TEST question 2)."},
+    {"parameter": "footprint.disturbance.target_zone_assessed", "applies_to": ["coverage-fp-kenyon-tomb-search"], "requirement_kind": "new_observation",
+     "requirement": "The skipped strip north of the tell was never searched. Its preservation can be assessed only by new records of that ground."},
+    {"parameter": "footprint.phase_reached_id", "applies_to": ["coverage-fp-kenyon-tomb-search"], "requirement_kind": "not_applicable",
+     "requirement": "An area search has no single phase reached. Each cleared tomb has its own phase."}
+  ],
+  "cases": [
+    {"id": "coverage-volume-iv17", "label": "IV/17: chamber-centre excavation against the Entry 25 northern-threshold target",
+     "target_id": "coverage-tv-e25-iv17-north", "footprint_ids": ["coverage-fp-iv17-l656"]},
+    {"id": "coverage-volume-tell-es-sultan", "label": "Tell es-Sultan: Kenyon's north-side work against the Entry 60 pit target",
+     "target_id": "coverage-tv-e60-tell-es-sultan", "footprint_ids": ["coverage-fp-kenyon-trench-ii", "coverage-fp-kenyon-tomb-search"]}
+  ],
+  "related_pending_requests": [
+    "Garstang Museum, Liverpool: Jericho papers JG/8, pre-camp records and photographs north of the tell (sent 8 October; research/ACTIVE_TEST.md).",
+    "Palestine Exploration Fund: Garstang Papers 1930–36 and pre-1948 photographs of Jericho (sent 8 October).",
+    "Lorenzo Nigro, Sapienza: records of the ground north of Tell es-Sultan (reply received; meeting proposed)."
+  ],
+  "related_pending_requests_note": "These concern the ground north of the tell before the camp. They could show features there; they do not define the Entry 60 distance band or Kenyon's footprint. No new request is made here."
+}

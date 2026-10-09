@@ -1,0 +1,104 @@
+{
+ "case_id": "dev-012",
+ "batch": "development",
+ "instruction": "In the cave east of the kiln, at three hundred cubits.",
+ "context": "Two low wooded hills beside a small alluvial valley, with ashlar quarries, winepresses, caves, rock-cut installations and two limekilns. Candidate positions are grid bearings and distances in metres from one of the limekilns (relative_to: kiln), computed from the survey's map references. Undated (U).",
+ "candidates": [
+  {
+   "id": "c1",
+   "features": {
+    "type": "small natural cave",
+    "position": {
+     "bearing_deg": 72.6,
+     "distance_m": 1236.6,
+     "relative_to": "kiln",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 23; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c2",
+   "features": {
+    "type": "partially ruinous cave",
+    "position": {
+     "bearing_deg": 62.6,
+     "distance_m": 208.4,
+     "relative_to": "kiln",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "north-east",
+    "date": "U",
+    "notes": "survey site 20; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c3",
+   "features": {
+    "type": "cave",
+    "position": {
+     "bearing_deg": 281.8,
+     "distance_m": null,
+     "relative_to": "kiln",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "north",
+    "date": "U",
+    "notes": "survey site 7; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c4",
+   "features": {
+    "type": "natural crevice, probably into a cave",
+    "position": {
+     "bearing_deg": 95.6,
+     "distance_m": 61.3,
+     "relative_to": "kiln",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 13; position computed from its printed map reference"
+   }
+  },
+  {
+   "id": "c5",
+   "features": {
+    "type": "partially ruinous cave",
+    "position": {
+     "bearing_deg": 49.1,
+     "distance_m": 149.6,
+     "relative_to": "kiln",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "north-east",
+    "date": "U",
+    "notes": "survey site 16; position computed from its printed map reference"
+   }
+  }
+ ],
+ "degradations": [
+  "distance_missing"
+ ],
+ "withheld_question": "Which way does the opening of the chosen feature face?",
+ "withheld_options": [
+  "north",
+  "north-east",
+  "east",
+  "south-east",
+  "south",
+  "south-west",
+  "west",
+  "north-west",
+  "unknown"
+ ],
+ "key_sha256": "bf49448e316061a89bfa13f9a43476ad2658a50ffb10f5cd88e7e21267f3fd9e"
+}

@@ -1,0 +1,15 @@
+{
+ "case_id": "dev-007",
+ "reasons": [
+  "parsed instruction: {\"direction\": \"S\", \"distance\": {\"kind\": \"band\", \"max_m\": 300.0, \"min_m\": 200.0, \"stated\": \"500 cubits\"}, \"opening\": null, \"reference\": \"the ruin\", \"target_class\": \"building\", \"type_term\": \"building\"}",
+  "c1: contradicted: type=T (type 'rectangular two-room building' is a building); direction=F (bearing 67.5 deg is outside the S sector 135-225); distance=T (distance 269.5 m is inside 200.0-300.0 m (500 cubits)); date=T (date U passes)",
+  "c2: contradicted: type=T (type 'building with a cross-vault' is a building); direction=F (bearing 64.2 deg is outside the S sector 135-225); distance=T (distance 227.7 m is inside 200.0-300.0 m (500 cubits)); date=T (date U passes)",
+  "c3: contradicted: type=T (type 'building with an arch' is a building); direction=F (bearing 67.1 deg is outside the S sector 135-225); distance=T (distance 229.0 m is inside 200.0-300.0 m (500 cubits)); date=T (date U passes)",
+  "c4: contradicted: type=T (type 'ashlar-built structure with a plaster floor' is a building); direction=F (bearing 86.0 deg is outside the S sector 135-225); distance=T (distance 297.7 m is inside 200.0-300.0 m (500 cubits)); date=T (date U passes)",
+  "c5: contradicted: type=T (type 'rectangular structure of dry fieldstone construction' is a building); direction=F (bearing 125.4 deg is outside the S sector 135-225); distance=T (distance 283.3 m is inside 200.0-300.0 m (500 cubits)); date=T (date U passes)",
+  "decision: every candidate is contradicted by at least one predicate",
+  "withheld: no candidate selected and the instruction does not state it"
+ ],
+ "selected": "none",
+ "withheld_prediction": "unknown"
+}

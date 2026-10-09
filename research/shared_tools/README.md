@@ -55,7 +55,7 @@ The exposed-plan diagnostic independently recomputes the frozen IV/17 point dist
 
 The Hyrcania diagnostic reproduces the local transform for the existing failed registration. Its source records a 244.371 m residual at the exposed check and rejects precise feature placement. The adapter preserves that failure; it does not rerun the geodetic conversion or certify an unused observation.
 
-Independent empirical accuracy and human letter-reading accuracy remain untested. Those evaluations need independently established answers, appropriate controls and a record of which observations were reserved before testing. Synthetic holdouts are computational fixtures.
+Independent empirical accuracy and human letter-reading accuracy remain untested. The [recovery benchmark](../benchmarks/recovery/README.md) and the [letter-reading controls](../text/letter_controls/PROTOCOL.md) (8 October) prepare those tests; neither has been run. Those evaluations need independently established answers, appropriate controls and a record of which observations were reserved before testing. Synthetic holdouts are computational fixtures.
 
 ## Blind review and visit capture
 

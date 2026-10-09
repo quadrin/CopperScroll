@@ -1,0 +1,114 @@
+{
+  "case_id": "res-003",
+  "batch": "reserved",
+  "instruction": "In the court of the shrines, at the great door whose doorstone of alabaster lies broken in front of the doorway and not in its place, with a tethering ring at its right: under the doorstone, 3 cubits: [deposit].",
+  "context": "Redacted site description: a royal citadel of the late eighth century BCE with a group of temples around a nearly square main court and a smaller second court. Several temple doorways open from the main court, each with a stone threshold; the entrances of the larger temples are flanked by buttresses with glazed-brick panels and statues. The walls of the court are named by their compass sides.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "monumental temple doorway with stone threshold",
+        "position": {
+          "bearing_deg": 325,
+          "distance_m": null,
+          "relative_to": "centre of the main temple court (north-west side, right of the court axis)"
+        },
+        "opening": "passage 3.40 m wide, 3.60 m deep",
+        "date": "D",
+        "dimensions": "threshold originally one slab filling the passage",
+        "notes": "Alabaster threshold found broken into several pieces just in front of the doorway, not in place. Inscribed. Flanked by buttresses with glazed-brick panels; a stone ring set in the floor in the corner to the right of the doorway, a socket for a matching ring on the left."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "monumental temple doorway with stone threshold",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "second, smaller court (reached through another room)"
+        },
+        "opening": "3.40 m wide",
+        "date": "D",
+        "dimensions": null,
+        "notes": "Threshold in place, inscribed. Ring hole near the right buttress; the ring itself lay nearby. Burnt layer over the court pavement."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "monumental temple doorway with stone threshold",
+        "position": {
+          "bearing_deg": 235,
+          "distance_m": null,
+          "relative_to": "centre of the main temple court (south-west side, right of the court axis)"
+        },
+        "opening": "doorway destroyed on the court side",
+        "date": "D",
+        "dimensions": "threshold 3.20 m wide",
+        "notes": "Limestone threshold lying out of place in front of the doorway; inscription badly weathered. Flanking panels and statues fallen on the pavement; any floor rings destroyed with the pavement edge."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "portal with stone threshold to a small chamber",
+        "position": {
+          "bearing_deg": 45,
+          "distance_m": null,
+          "relative_to": "centre of the main temple court (north-east side, centre)"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": "threshold about 3.20 x 2.60 m (partly restored)",
+        "notes": "Threshold of several blocks, uninscribed; smaller buttresses without glazed panels."
+      }
+    },
+    {
+      "id": "c5",
+      "features": {
+        "type": "temple doorway with stone threshold",
+        "position": {
+          "bearing_deg": 290,
+          "distance_m": null,
+          "relative_to": "centre of the main temple court (north-west side, near the west corner)"
+        },
+        "opening": "2.50 m wide, 3.60 m deep",
+        "date": "D",
+        "dimensions": null,
+        "notes": "Threshold in place, inscribed with a prayer. No buttresses or panels. Foundation-deposit boxes under the pavement on both sides held only sand."
+      }
+    },
+    {
+      "id": "c6",
+      "features": {
+        "type": "temple doorway with stone threshold",
+        "position": {
+          "bearing_deg": 190,
+          "distance_m": null,
+          "relative_to": "centre of the main temple court (south-west side, near the south corner)"
+        },
+        "opening": "3.0 m wide",
+        "date": "D",
+        "dimensions": null,
+        "notes": "Threshold in place with an eight-line inscription; foundation boxes outside had been opened before."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "direction_word_lost",
+    "distance_missing",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "Where on the chosen doorstone is the inscription?",
+  "withheld_options": [
+    "nearer the court side",
+    "nearer the inner side",
+    "in the middle",
+    "no inscription",
+    "unknown"
+  ],
+  "key_sha256": "cd6e95a09fef018c460915c8972982b727b8c555205c9785ea1ce7eeba813920"
+}

@@ -1,0 +1,8941 @@
+{
+ "verdicts": {
+  "dir_sheb": "consistent",
+  "dir_suffix": "consistent",
+  "dir_min": "consistent",
+  "dir_side": "no project record depends on it",
+  "dir_adj": "consistent",
+  "dir_tsofa": "consistent",
+  "tsofa_attach": "differs from line to line (allowed for this rule, but not argued in the records)",
+  "dir_compound": "consistent",
+  "dir_bare": "no project record depends on it",
+  "yam": "consistent only if a conditional member stands apart",
+  "xii10_opening": "positions consistent; some alternatives conflict",
+  "neged": "consistent",
+  "tahat": "consistent only if a conditional member stands apart",
+  "al_pi": "inconsistent",
+  "pi": "consistent",
+  "shulei": "tension",
+  "ad": "inconsistent",
+  "biah": "consistent",
+  "enter_number": "consistent",
+  "petah": "no project record depends on it",
+  "dig_n": "uneven: fixed in some lines, left open in others",
+  "hafor_form": "no project record depends on it",
+  "amot_bare": "uneven: fixed in some lines, left open in others",
+  "amot_unit": "positions consistent; some alternatives conflict",
+  "shit": "consistent",
+  "bor": "no project record depends on it",
+  "berekha": "consistent",
+  "ashiah": "no project record depends on it",
+  "amma": "no project record depends on it",
+  "qever": "no project record depends on it",
+  "qevarin": "consistent",
+  "tseriah": "consistent",
+  "yagar": "a candidate branch contradicts itself",
+  "mearah": "no project record depends on it",
+  "shovakh": "positions consistent; some alternatives conflict",
+  "regem": "consistent",
+  "tsuq": "positions consistent; some alternatives conflict",
+  "pinnah": "no project record depends on it",
+  "miqtsoa": "no project record depends on it",
+  "amud": "no project record depends on it",
+  "saf": "no project record depends on it",
+  "maalot": "no project record depends on it",
+  "even": "no project record depends on it",
+  "gay": "no project record depends on it",
+  "migreh": "consistent only if a conditional member stands apart",
+  "kohlit": "consistent",
+  "sekakah": "consistent",
+  "achor": "positions consistent; some alternatives conflict",
+  "melah": "inconsistent",
+  "zadok": "positions consistent; some alternatives conflict",
+  "x17_landmark": "inconsistent",
+  "janoah": "positions consistent; some alternatives conflict",
+  "jericho": "no project record depends on it",
+  "solomon": "no project record depends on it",
+  "shaveh": "positions consistent; some alternatives conflict",
+  "siloam": "no project record depends on it"
+ },
+ "usage": {
+  "achor": {
+   "needs": [
+    {
+     "allowed": [
+      "buqeia",
+      "nuweimeh"
+     ],
+     "records": [
+      "atlas:17:title",
+      "atlas:1:title"
+     ],
+     "lines": [
+      "I 1",
+      "IV 6"
+     ],
+     "entries": [
+      "1",
+      "17"
+     ]
+    },
+    {
+     "allowed": [
+      "nuweimeh"
+     ],
+     "records": [
+      "atlas:17:nuweimeh",
+      "atlas:1:nuweimeh"
+     ],
+     "lines": [
+      "I 1",
+      "IV 6"
+     ],
+     "entries": [
+      "1",
+      "17"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "nuweimeh"
+   ]
+  },
+  "ad": {
+   "needs": [
+    {
+     "allowed": [
+      "as_far_as"
+     ],
+     "records": [
+      "constraint:23-endpoints",
+      "registry:P23-A:feature_type",
+      "translation:I 12:ad",
+      "translation:V 9:ad",
+      "translation:VII 15:ad"
+     ],
+     "lines": [
+      "I 12",
+      "V 9",
+      "VII 15"
+     ],
+     "entries": [
+      "4",
+      "23",
+      "32"
+     ]
+    },
+    {
+     "allowed": [
+      "toward"
+     ],
+     "records": [
+      "atlas:32:description",
+      "constraint:32-above",
+      "registry:P32-A:orientation_constraint"
+     ],
+     "lines": [
+      "VII 15"
+     ],
+     "entries": [
+      "32"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": []
+  },
+  "al_pi": {
+   "needs": [
+    {
+     "allowed": [
+      "above_upon"
+     ],
+     "records": [
+      "atlas:32:description",
+      "constraint:32-above"
+     ],
+     "lines": [
+      "VII 14"
+     ],
+     "entries": [
+      "32"
+     ]
+    },
+    {
+     "allowed": [
+      "at_beside"
+     ],
+     "records": [
+      "active_test:Q2",
+      "phase5:60",
+      "rarity:C3",
+      "translation:VII 14:al_pi",
+      "translation:XII 11:al_pi"
+     ],
+     "lines": [
+      "VII 14",
+      "XII 11"
+     ],
+     "entries": [
+      "32",
+      "60"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": []
+  },
+  "amot_bare": {
+   "needs": [
+    {
+     "allowed": [
+      "horizontal"
+     ],
+     "records": [
+      "registry:P23-A:feature_type"
+     ],
+     "lines": [
+      "V 10"
+     ],
+     "entries": [
+      "23"
+     ]
+    },
+    {
+     "allowed": [
+      "horizontal",
+      "vertical"
+     ],
+     "records": [
+      "registry:P01-A:measures"
+     ],
+     "lines": [
+      "I 2"
+     ],
+     "entries": [
+      "1"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "horizontal"
+   ]
+  },
+  "amot_unit": {
+   "needs": [
+    {
+     "allowed": [
+      "cubit"
+     ],
+     "records": [
+      "registry:P46-A:measures"
+     ],
+     "lines": [
+      "X 6"
+     ],
+     "entries": [
+      "46"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "cubit"
+   ]
+  },
+  "berekha": {
+   "needs": [
+    {
+     "allowed": [
+      "pool"
+     ],
+     "records": [
+      "rarity:C1"
+     ],
+     "lines": [
+      "II 13"
+     ],
+     "entries": [
+      "11"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "pool"
+   ]
+  },
+  "biah": {
+   "needs": [
+    {
+     "allowed": [
+      "approach"
+     ],
+     "records": [
+      "atlas:24:description",
+      "atlas:24:kuteif",
+      "registry:P01-A:orientation_constraint",
+      "translation:V 13:biah"
+     ],
+     "lines": [
+      "I 2",
+      "V 13"
+     ],
+     "entries": [
+      "1",
+      "24"
+     ]
+    },
+    {
+     "allowed": [
+      "approach",
+      "entrance_feature"
+     ],
+     "records": [
+      "translation:II 12:biah"
+     ],
+     "lines": [
+      "II 12",
+      "III 9",
+      "XII 1"
+     ],
+     "entries": []
+    }
+   ],
+   "one_meaning_fits_all": [
+    "approach"
+   ]
+  },
+  "dig_n": {
+   "needs": [
+    {
+     "allowed": [
+      "depth"
+     ],
+     "records": [
+      "registry:measures-depth"
+     ],
+     "lines": [
+      "II 14",
+      "IV 7",
+      "IV 13",
+      "V 3",
+      "V 10",
+      "V 14",
+      "VI 3",
+      "VII 1",
+      "VII 9",
+      "VII 12",
+      "VII 15",
+      "VIII 9",
+      "VIII 14",
+      "X 13"
+     ],
+     "entries": []
+    }
+   ],
+   "one_meaning_fits_all": [
+    "depth"
+   ]
+  },
+  "dir_adj": {
+   "needs": [
+    {
+     "allowed": [
+      "relative_position"
+     ],
+     "records": [
+      "registry:P11-A:feature_type",
+      "registry:P19-A:orientation_constraint",
+      "registry:P25-A:orientation_constraint",
+      "workbench:pool-north-corner"
+     ],
+     "lines": [
+      "II 14",
+      "IV 11",
+      "VI 3"
+     ],
+     "entries": [
+      "11",
+      "19",
+      "25"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "relative_position"
+   ]
+  },
+  "dir_compound": {
+   "needs": [
+    {
+     "allowed": [
+      "separate"
+     ],
+     "records": [
+      "rarity:tolerance",
+      "translation:VIII 10:dir_compound"
+     ],
+     "lines": [
+      "III 11",
+      "VIII 10"
+     ],
+     "entries": []
+    }
+   ],
+   "one_meaning_fits_all": [
+    "separate"
+   ]
+  },
+  "dir_min": {
+   "needs": [
+    {
+     "allowed": [
+      "from_direction",
+      "side"
+     ],
+     "records": [
+      "registry:P21-A:orientation_constraint"
+     ],
+     "lines": [
+      "V 2"
+     ],
+     "entries": [
+      "21"
+     ]
+    },
+    {
+     "allowed": [
+      "side"
+     ],
+     "records": [
+      "registry:P10-A:feature_type",
+      "translation:I 11:shulei"
+     ],
+     "lines": [
+      "I 11",
+      "II 10"
+     ],
+     "entries": [
+      "4",
+      "10"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "side"
+   ]
+  },
+  "dir_sheb": {
+   "needs": [
+    {
+     "allowed": [
+      "external"
+     ],
+     "records": [
+      "active_test:Q2",
+      "active_test:Q3",
+      "analysis:north-of-tell",
+      "phase5:15",
+      "registry:P11-A:feature_type",
+      "translation:II 13:dir_sheb",
+      "translation:IV 11:dir_sheb",
+      "translation:IX 14:dir_sheb"
+     ],
+     "lines": [
+      "II 13",
+      "IV 1",
+      "IV 11",
+      "IX 14",
+      "XII 10"
+     ],
+     "entries": [
+      "11",
+      "15",
+      "19",
+      "43",
+      "60"
+     ]
+    },
+    {
+     "allowed": [
+      "external",
+      "internal"
+     ],
+     "records": [
+      "rarity:C1",
+      "rarity:C2",
+      "registry:P19-A:orientation_constraint",
+      "registry:P60-T1:orientation_constraint",
+      "translation:XII 10:dir_sheb",
+      "workbench:pit-north",
+      "workbench:pool-east"
+     ],
+     "lines": [
+      "II 13",
+      "IV 11",
+      "XII 10"
+     ],
+     "entries": [
+      "11",
+      "19",
+      "60"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "external"
+   ]
+  },
+  "dir_suffix": {
+   "needs": [
+    {
+     "allowed": [
+      "side"
+     ],
+     "records": [
+      "registry:P15-A:orientation_constraint",
+      "translation:III 8:dir_suffix"
+     ],
+     "lines": [
+      "III 8",
+      "III 11",
+      "III 12",
+      "IV 2"
+     ],
+     "entries": [
+      "15"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "side"
+   ]
+  },
+  "dir_tsofa": {
+   "needs": [
+    {
+     "allowed": [
+      "faces"
+     ],
+     "records": [
+      "analysis:shaveh-facing",
+      "atlas:26:title",
+      "atlas:39:description",
+      "atlas:40:description",
+      "atlas:52:description",
+      "atlas:52:jer_kidron_east",
+      "registry:P25-A:orientation_constraint",
+      "registry:P52-A:orientation_constraint",
+      "translation:VI 2:dir_tsofa"
+     ],
+     "lines": [
+      "VI 2",
+      "VI 8",
+      "VIII 10",
+      "VIII 12",
+      "IX 4",
+      "IX 7",
+      "XI 5"
+     ],
+     "entries": [
+      "25",
+      "26",
+      "36",
+      "39",
+      "40",
+      "52"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "faces"
+   ]
+  },
+  "enter_number": {
+   "needs": [
+    {
+     "allowed": [
+      "depth",
+      "distance"
+     ],
+     "records": [
+      "registry:P46-A:orientation_constraint"
+     ],
+     "lines": [
+      "X 5"
+     ],
+     "entries": [
+      "46"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "depth",
+    "distance"
+   ]
+  },
+  "janoah": {
+   "needs": [
+    {
+     "allowed": [
+      "situated",
+      "smooth_rock"
+     ],
+     "records": [
+      "atlas:60:tell_es_sultan",
+      "rarity:C2"
+     ],
+     "lines": [
+      "XII 10"
+     ],
+     "entries": [
+      "60"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "situated",
+    "smooth_rock"
+   ]
+  },
+  "kohlit": {
+   "needs": [
+    {
+     "allowed": [
+      "carmel_spring",
+      "desert_unlocated",
+      "samarian_desert",
+      "tell_es_sultan",
+      "transjordan"
+     ],
+     "records": [
+      "rarity:C1",
+      "rarity:C2"
+     ],
+     "lines": [
+      "II 13",
+      "XII 10"
+     ],
+     "entries": [
+      "11",
+      "60"
+     ]
+    },
+    {
+     "allowed": [
+      "tell_es_sultan"
+     ],
+     "records": [
+      "atlas:11:tell_es_sultan",
+      "atlas:15:tell_es_sultan",
+      "atlas:19:tell_es_sultan",
+      "atlas:4:tell_es_sultan",
+      "atlas:60:tell_es_sultan"
+     ],
+     "lines": [
+      "I 9",
+      "II 13",
+      "IV 1",
+      "IV 11",
+      "XII 10"
+     ],
+     "entries": [
+      "4",
+      "11",
+      "15",
+      "19",
+      "60"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "tell_es_sultan"
+   ]
+  },
+  "melah": {
+   "needs": [
+    {
+     "allowed": [
+      "esplanade_temple"
+     ],
+     "records": [
+      "atlas:13:jer_temple",
+      "atlas:14:jer_temple"
+     ],
+     "lines": [
+      "III 8",
+      "III 11"
+     ],
+     "entries": [
+      "13",
+      "14"
+     ]
+    },
+    {
+     "allowed": [
+      "esplanade_temple",
+      "millo_tyropoeon"
+     ],
+     "records": [
+      "atlas:13:title",
+      "atlas:14:title",
+      "atlas:6:title"
+     ],
+     "lines": [
+      "II 1",
+      "III 8",
+      "III 11"
+     ],
+     "entries": [
+      "6",
+      "13",
+      "14"
+     ]
+    },
+    {
+     "allowed": [
+      "millo_tyropoeon"
+     ],
+     "records": [
+      "atlas:6:jer_tyropoeon"
+     ],
+     "lines": [
+      "II 1"
+     ],
+     "entries": [
+      "6"
+     ]
+    },
+    {
+     "allowed": [
+      "place_other",
+      "place_qumran"
+     ],
+     "records": [
+      "analysis:melah-place"
+     ],
+     "lines": [
+      "II 1",
+      "III 8",
+      "III 11"
+     ],
+     "entries": []
+    },
+    {
+     "allowed": [
+      "place_qumran"
+     ],
+     "records": [
+      "analysis:melah-qumran"
+     ],
+     "lines": [
+      "II 1",
+      "III 8",
+      "III 11"
+     ],
+     "entries": []
+    }
+   ],
+   "one_meaning_fits_all": []
+  },
+  "migreh": {
+   "needs": [
+    {
+     "allowed": [
+      "cool_room"
+     ],
+     "records": [
+      "atlas:30:description",
+      "translation:VII 8:migreh"
+     ],
+     "lines": [
+      "VII 8"
+     ],
+     "entries": [
+      "30"
+     ]
+    },
+    {
+     "allowed": [
+      "cool_room",
+      "rock_cleft"
+     ],
+     "records": [
+      "atlas:4:description"
+     ],
+     "lines": [
+      "I 12"
+     ],
+     "entries": [
+      "4"
+     ]
+    },
+    {
+     "allowed": [
+      "rock_cleft"
+     ],
+     "records": [
+      "translation:I 12:ad"
+     ],
+     "lines": [
+      "I 12"
+     ],
+     "entries": [
+      "4"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": []
+  },
+  "neged": {
+   "needs": [
+    {
+     "allowed": [
+      "east_side_facing_west",
+      "in_front_adjacent",
+      "opposite_facing"
+     ],
+     "records": [
+      "registry:P09-A:orientation_constraint"
+     ],
+     "lines": [
+      "II 7"
+     ],
+     "entries": [
+      "9"
+     ]
+    },
+    {
+     "allowed": [
+      "east_side_facing_west",
+      "opposite_facing"
+     ],
+     "records": [
+      "atlas:52:description",
+      "atlas:52:jer_kidron_east"
+     ],
+     "lines": [
+      "XI 6"
+     ],
+     "entries": [
+      "52"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "east_side_facing_west",
+    "opposite_facing"
+   ]
+  },
+  "pi": {
+   "needs": [
+    {
+     "allowed": [
+      "mouth_opening"
+     ],
+     "records": [
+      "atlas:35:description",
+      "atlas:35:mar_saba",
+      "atlas:58:landmark"
+     ],
+     "lines": [
+      "VIII 8",
+      "XII 6"
+     ],
+     "entries": [
+      "35",
+      "58"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "mouth_opening"
+   ]
+  },
+  "qevarin": {
+   "needs": [
+    {
+     "allowed": [
+      "tombs"
+     ],
+     "records": [
+      "active_test:Q2",
+      "atlas:60:description",
+      "phase5:60",
+      "rarity:C3",
+      "translation:XII 11:al_pi"
+     ],
+     "lines": [
+      "XII 11"
+     ],
+     "entries": [
+      "60"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "tombs"
+   ]
+  },
+  "regem": {
+   "needs": [
+    {
+     "allowed": [
+      "heap_or_mound"
+     ],
+     "records": [
+      "translation:V 9:ad"
+     ],
+     "lines": [
+      "V 9"
+     ],
+     "entries": [
+      "23"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "heap_or_mound"
+   ]
+  },
+  "sekakah": {
+   "needs": [
+    {
+     "allowed": [
+      "kh_qumran",
+      "wadi_qumran"
+     ],
+     "records": [
+      "atlas:20:wadi_qumran",
+      "atlas:21:kh_qumran",
+      "atlas:22:kh_qumran",
+      "atlas:23:kh_qumran",
+      "atlas:24:kuteif",
+      "atlas:25:kh_qumran",
+      "atlas:26:kh_qumran"
+     ],
+     "lines": [
+      "IV 13",
+      "V 2",
+      "V 5",
+      "V 13"
+     ],
+     "entries": [
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "kh_qumran",
+    "wadi_qumran"
+   ]
+  },
+  "shaveh": {
+   "needs": [
+    {
+     "allowed": [
+      "kings_valley"
+     ],
+     "records": [
+      "atlas:36:jer_shaveh",
+      "atlas:37:jer_shaveh"
+     ],
+     "lines": [
+      "VIII 10",
+      "VIII 14"
+     ],
+     "entries": [
+      "36",
+      "37"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "kings_valley"
+   ]
+  },
+  "shit": {
+   "needs": [
+    {
+     "allowed": [
+      "cave_or_tunnel",
+      "pit"
+     ],
+     "records": [
+      "rarity:C2"
+     ],
+     "lines": [
+      "XII 10"
+     ],
+     "entries": [
+      "60"
+     ]
+    },
+    {
+     "allowed": [
+      "pit"
+     ],
+     "records": [
+      "atlas:13:title",
+      "atlas:18:landmark",
+      "atlas:57:landmark",
+      "atlas:60:description",
+      "registry:P57-A:feature_type"
+     ],
+     "lines": [
+      "III 8",
+      "IV 9",
+      "XII 4",
+      "XII 10"
+     ],
+     "entries": [
+      "13",
+      "18",
+      "57",
+      "60"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "pit"
+   ]
+  },
+  "shovakh": {
+   "needs": [
+    {
+     "allowed": [
+      "dovecote"
+     ],
+     "records": [
+      "atlas:44:description",
+      "translation:IX 1:shovakh"
+     ],
+     "lines": [
+      "IX 1",
+      "IX 17"
+     ],
+     "entries": [
+      "44"
+     ]
+    },
+    {
+     "allowed": [
+      "dovecote",
+      "opening"
+     ],
+     "records": [
+      "atlas:38:landmark"
+     ],
+     "lines": [
+      "IX 1"
+     ],
+     "entries": [
+      "38"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "dovecote"
+   ]
+  },
+  "shulei": {
+   "needs": [
+    {
+     "allowed": [
+      "edge_base"
+     ],
+     "records": [
+      "phase5:4",
+      "translation:I 11:shulei",
+      "translation:IV 9:shulei",
+      "translation:IX 1:shulei",
+      "translation:XI 7:shulei"
+     ],
+     "lines": [
+      "I 11",
+      "IV 9",
+      "IX 1",
+      "XI 7"
+     ],
+     "entries": [
+      "4",
+      "18",
+      "38",
+      "52"
+     ]
+    },
+    {
+     "allowed": [
+      "outlet_end"
+     ],
+     "records": [
+      "atlas:38:landmark"
+     ],
+     "lines": [
+      "IX 1"
+     ],
+     "entries": [
+      "38"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": []
+  },
+  "tahat": {
+   "needs": [
+    {
+     "allowed": [
+      "below_foot"
+     ],
+     "records": [
+      "atlas:51:jer_se_corner",
+      "registry:P51-A:orientation_constraint"
+     ],
+     "lines": [
+      "XI 2"
+     ],
+     "entries": [
+      "51"
+     ]
+    },
+    {
+     "allowed": [
+      "beneath"
+     ],
+     "records": [
+      "atlas:10:landmark",
+      "registry:P10-A:feature_type",
+      "registry:P49-A:orientation_constraint",
+      "registry:P51-A:feature_type",
+      "registry:P57-A:feature_type"
+     ],
+     "lines": [
+      "II 10",
+      "X 15",
+      "XI 3",
+      "XII 4"
+     ],
+     "entries": [
+      "10",
+      "49",
+      "51",
+      "57"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": []
+  },
+  "tseriah": {
+   "needs": [
+    {
+     "allowed": [
+      "tower",
+      "underground_chamber"
+     ],
+     "records": [
+      "atlas:39:description",
+      "atlas:8:description"
+     ],
+     "lines": [
+      "II 5",
+      "IX 4"
+     ],
+     "entries": [
+      "8",
+      "39"
+     ]
+    },
+    {
+     "allowed": [
+      "underground_chamber"
+     ],
+     "records": [
+      "atlas:36:description"
+     ],
+     "lines": [
+      "VIII 11"
+     ],
+     "entries": [
+      "36"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "underground_chamber"
+   ]
+  },
+  "tsofa_attach": {
+   "needs": [
+    {
+     "allowed": [
+      "head_noun"
+     ],
+     "records": [
+      "atlas:26:title",
+      "registry:P25-A:orientation_constraint"
+     ],
+     "lines": [
+      "VI 2",
+      "VI 8"
+     ],
+     "entries": [
+      "25",
+      "26"
+     ]
+    },
+    {
+     "allowed": [
+      "nearest_noun"
+     ],
+     "records": [
+      "analysis:shaveh-facing",
+      "atlas:52:description",
+      "registry:P52-A:orientation_constraint"
+     ],
+     "lines": [
+      "VIII 10",
+      "XI 5"
+     ],
+     "entries": [
+      "36",
+      "52"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": []
+  },
+  "tsuq": {
+   "needs": [
+    {
+     "allowed": [
+      "gorge"
+     ],
+     "records": [
+      "atlas:35:description",
+      "atlas:35:mar_saba",
+      "registry:P35-A:feature_type",
+      "translation:VIII 8:tsuq"
+     ],
+     "lines": [
+      "VIII 8",
+      "IX 14"
+     ],
+     "entries": [
+      "35"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "gorge"
+   ]
+  },
+  "x17_landmark": {
+   "needs": [
+    {
+     "allowed": [
+      "upper_pool"
+     ],
+     "records": [
+      "translation:X 17:x17_landmark"
+     ],
+     "lines": [
+      "X 17"
+     ],
+     "entries": [
+      "50"
+     ]
+    },
+    {
+     "allowed": [
+      "zadok_court"
+     ],
+     "records": [
+      "atlas:50:jer_se_corner",
+      "atlas:50:title"
+     ],
+     "lines": [
+      "X 17"
+     ],
+     "entries": [
+      "50"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": []
+  },
+  "xii10_opening": {
+   "needs": [
+    {
+     "allowed": [
+      "north"
+     ],
+     "records": [
+      "translation:XII 10:dir_sheb"
+     ],
+     "lines": [
+      "XII 10"
+     ],
+     "entries": [
+      "60"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "north"
+   ]
+  },
+  "yagar": {
+   "needs": [
+    {
+     "allowed": [
+      "cairn"
+     ],
+     "records": [
+      "atlas:20:wadi_qumran",
+      "atlas:28:description",
+      "atlas:28:jordan_ford",
+      "atlas:35:description",
+      "atlas:35:mar_saba",
+      "registry:P20-A:feature_type",
+      "registry:P28-A:feature_type",
+      "registry:P35-A:feature_type",
+      "translation:IV 13:yagar"
+     ],
+     "lines": [
+      "IV 13",
+      "VI 14",
+      "VIII 8"
+     ],
+     "entries": [
+      "20",
+      "28",
+      "35"
+     ]
+    },
+    {
+     "allowed": [
+      "cairn",
+      "dam"
+     ],
+     "records": [
+      "atlas:20:description"
+     ],
+     "lines": [
+      "IV 13"
+     ],
+     "entries": [
+      "20"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "cairn"
+   ]
+  },
+  "yam": {
+   "needs": [
+    {
+     "allowed": [
+      "basin"
+     ],
+     "records": [
+      "atlas:47:title",
+      "translation:X 8:yam"
+     ],
+     "lines": [
+      "X 8",
+      "X 15"
+     ],
+     "entries": [
+      "47"
+     ]
+    },
+    {
+     "allowed": [
+      "west"
+     ],
+     "records": [
+      "atlas:40:description",
+      "translation:IX 7:yam"
+     ],
+     "lines": [
+      "IX 7"
+     ],
+     "entries": [
+      "40"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": []
+  },
+  "zadok": {
+   "needs": [
+    {
+     "allowed": [
+      "west_bank"
+     ],
+     "records": [
+      "atlas:50:jer_se_corner",
+      "atlas:51:jer_se_corner",
+      "atlas:52:jer_kidron_east"
+     ],
+     "lines": [
+      "XI 3",
+      "XI 6"
+     ],
+     "entries": [
+      "50",
+      "51",
+      "52"
+     ]
+    }
+   ],
+   "one_meaning_fits_all": [
+    "west_bank"
+   ]
+  }
+ },
+ "conflicts": [
+  {
+   "expr": "achor",
+   "a": "atlas:17:ain_duk",
+   "b": "atlas:1:buqeia",
+   "a_allowed": [
+    "nuweimeh"
+   ],
+   "b_allowed": [
+    "buqeia"
+   ],
+   "a_lines": [
+    "IV 6"
+   ],
+   "b_lines": [
+    "I 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "achor",
+   "a": "atlas:17:buqeia",
+   "b": "atlas:1:ain_duk",
+   "a_allowed": [
+    "buqeia"
+   ],
+   "b_allowed": [
+    "nuweimeh"
+   ],
+   "a_lines": [
+    "IV 6"
+   ],
+   "b_lines": [
+    "I 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "achor",
+   "a": "atlas:17:buqeia",
+   "b": "atlas:1:nuweimeh",
+   "a_allowed": [
+    "buqeia"
+   ],
+   "b_allowed": [
+    "nuweimeh"
+   ],
+   "a_lines": [
+    "IV 6"
+   ],
+   "b_lines": [
+    "I 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "achor",
+   "a": "atlas:17:buqeia",
+   "b": "atlas:2:nuweimeh",
+   "a_allowed": [
+    "buqeia"
+   ],
+   "b_allowed": [
+    "nuweimeh"
+   ],
+   "a_lines": [
+    "IV 6"
+   ],
+   "b_lines": [
+    "I 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "achor",
+   "a": "atlas:17:buqeia",
+   "b": "atlas:3:nuweimeh",
+   "a_allowed": [
+    "buqeia"
+   ],
+   "b_allowed": [
+    "nuweimeh"
+   ],
+   "a_lines": [
+    "IV 6"
+   ],
+   "b_lines": [
+    "I 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "achor",
+   "a": "atlas:17:nuweimeh",
+   "b": "atlas:1:buqeia",
+   "a_allowed": [
+    "nuweimeh"
+   ],
+   "b_allowed": [
+    "buqeia"
+   ],
+   "a_lines": [
+    "IV 6"
+   ],
+   "b_lines": [
+    "I 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "achor",
+   "a": "atlas:1:buqeia",
+   "b": "atlas:2:nuweimeh",
+   "a_allowed": [
+    "buqeia"
+   ],
+   "b_allowed": [
+    "nuweimeh"
+   ],
+   "a_lines": [
+    "I 1"
+   ],
+   "b_lines": [
+    "I 1"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "achor",
+   "a": "atlas:1:buqeia",
+   "b": "atlas:3:nuweimeh",
+   "a_allowed": [
+    "buqeia"
+   ],
+   "b_allowed": [
+    "nuweimeh"
+   ],
+   "a_lines": [
+    "I 1"
+   ],
+   "b_lines": [
+    "I 1"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "atlas:32:description",
+   "b": "constraint:23-endpoints",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "V 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "atlas:32:description",
+   "b": "registry:P04-A:feature_type",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "atlas:32:description",
+   "b": "registry:P04-B:feature_type",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "atlas:32:description",
+   "b": "registry:P23-A:feature_type",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "V 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "atlas:32:description",
+   "b": "translation:I 12:ad",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "atlas:32:description",
+   "b": "translation:V 9:ad",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "V 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "atlas:32:description",
+   "b": "translation:VII 15:ad",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "VII 15"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "constraint:23-endpoints",
+   "b": "constraint:32-above",
+   "a_allowed": [
+    "as_far_as"
+   ],
+   "b_allowed": [
+    "toward"
+   ],
+   "a_lines": [
+    "V 9"
+   ],
+   "b_lines": [
+    "VII 15"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "constraint:23-endpoints",
+   "b": "registry:P32-A:orientation_constraint",
+   "a_allowed": [
+    "as_far_as"
+   ],
+   "b_allowed": [
+    "toward"
+   ],
+   "a_lines": [
+    "V 9"
+   ],
+   "b_lines": [
+    "VII 15"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "constraint:32-above",
+   "b": "registry:P04-A:feature_type",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "constraint:32-above",
+   "b": "registry:P04-B:feature_type",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "constraint:32-above",
+   "b": "registry:P23-A:feature_type",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "V 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "constraint:32-above",
+   "b": "translation:I 12:ad",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "constraint:32-above",
+   "b": "translation:V 9:ad",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "V 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "constraint:32-above",
+   "b": "translation:VII 15:ad",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "VII 15"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "registry:P04-A:feature_type",
+   "b": "registry:P32-A:orientation_constraint",
+   "a_allowed": [
+    "as_far_as"
+   ],
+   "b_allowed": [
+    "toward"
+   ],
+   "a_lines": [
+    "I 12"
+   ],
+   "b_lines": [
+    "VII 15"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "registry:P04-B:feature_type",
+   "b": "registry:P32-A:orientation_constraint",
+   "a_allowed": [
+    "as_far_as"
+   ],
+   "b_allowed": [
+    "toward"
+   ],
+   "a_lines": [
+    "I 12"
+   ],
+   "b_lines": [
+    "VII 15"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "registry:P23-A:feature_type",
+   "b": "registry:P32-A:orientation_constraint",
+   "a_allowed": [
+    "as_far_as"
+   ],
+   "b_allowed": [
+    "toward"
+   ],
+   "a_lines": [
+    "V 9"
+   ],
+   "b_lines": [
+    "VII 15"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "registry:P32-A:orientation_constraint",
+   "b": "translation:I 12:ad",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "registry:P32-A:orientation_constraint",
+   "b": "translation:V 9:ad",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "V 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "ad",
+   "a": "registry:P32-A:orientation_constraint",
+   "b": "translation:VII 15:ad",
+   "a_allowed": [
+    "toward"
+   ],
+   "b_allowed": [
+    "as_far_as"
+   ],
+   "a_lines": [
+    "VII 15"
+   ],
+   "b_lines": [
+    "VII 15"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "active_test:Q2",
+   "b": "atlas:32:description",
+   "a_allowed": [
+    "at_beside"
+   ],
+   "b_allowed": [
+    "above_upon"
+   ],
+   "a_lines": [
+    "XII 11"
+   ],
+   "b_lines": [
+    "VII 14"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "active_test:Q2",
+   "b": "constraint:32-above",
+   "a_allowed": [
+    "at_beside"
+   ],
+   "b_allowed": [
+    "above_upon"
+   ],
+   "a_lines": [
+    "XII 11"
+   ],
+   "b_lines": [
+    "VII 14"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "atlas:32:description",
+   "b": "phase5:60",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "atlas:32:description",
+   "b": "rarity:C3",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "atlas:32:description",
+   "b": "translation:VII 14:al_pi",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "VII 14"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "atlas:32:description",
+   "b": "translation:XII 11:al_pi",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "atlas:32:description",
+   "b": "workbench:RB-L",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "atlas:32:description",
+   "b": "workbench:RB-M",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "atlas:32:description",
+   "b": "workbench:RB-P",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "constraint:32-above",
+   "b": "phase5:60",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "constraint:32-above",
+   "b": "rarity:C3",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "constraint:32-above",
+   "b": "translation:VII 14:al_pi",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "VII 14"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "constraint:32-above",
+   "b": "translation:XII 11:al_pi",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "constraint:32-above",
+   "b": "workbench:RB-L",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "constraint:32-above",
+   "b": "workbench:RB-M",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "al_pi",
+   "a": "constraint:32-above",
+   "b": "workbench:RB-P",
+   "a_allowed": [
+    "above_upon"
+   ],
+   "b_allowed": [
+    "at_beside"
+   ],
+   "a_lines": [
+    "VII 14"
+   ],
+   "b_lines": [
+    "XII 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "amot_unit",
+   "a": "registry:P46-A:measures",
+   "b": "registry:P48-B:measures",
+   "a_allowed": [
+    "cubit"
+   ],
+   "b_allowed": [
+    "foot"
+   ],
+   "a_lines": [
+    "X 6"
+   ],
+   "b_lines": [
+    "X 13"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "janoah",
+   "a": "atlas:60:tell_es_sultan",
+   "b": "workbench:RB-L",
+   "a_allowed": [
+    "situated",
+    "smooth_rock"
+   ],
+   "b_allowed": [
+    "janoah"
+   ],
+   "a_lines": [
+    "XII 10"
+   ],
+   "b_lines": [
+    "XII 10"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "janoah",
+   "a": "rarity:C2",
+   "b": "workbench:RB-L",
+   "a_allowed": [
+    "situated",
+    "smooth_rock"
+   ],
+   "b_allowed": [
+    "janoah"
+   ],
+   "a_lines": [
+    "XII 10"
+   ],
+   "b_lines": [
+    "XII 10"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-place",
+   "b": "atlas:13:jer_temple",
+   "a_allowed": [
+    "place_other",
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "III 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-place",
+   "b": "atlas:13:title",
+   "a_allowed": [
+    "place_other",
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple",
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "III 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-place",
+   "b": "atlas:14:jer_temple",
+   "a_allowed": [
+    "place_other",
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "III 11"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-place",
+   "b": "atlas:14:title",
+   "a_allowed": [
+    "place_other",
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple",
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "III 11"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-place",
+   "b": "atlas:6:jer_tyropoeon",
+   "a_allowed": [
+    "place_other",
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "II 1"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-place",
+   "b": "atlas:6:title",
+   "a_allowed": [
+    "place_other",
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple",
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "II 1"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-qumran",
+   "b": "atlas:13:jer_temple",
+   "a_allowed": [
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "III 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-qumran",
+   "b": "atlas:13:title",
+   "a_allowed": [
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple",
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "III 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-qumran",
+   "b": "atlas:14:jer_temple",
+   "a_allowed": [
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "III 11"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-qumran",
+   "b": "atlas:14:title",
+   "a_allowed": [
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple",
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "III 11"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-qumran",
+   "b": "atlas:6:jer_tyropoeon",
+   "a_allowed": [
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "II 1"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "analysis:melah-qumran",
+   "b": "atlas:6:title",
+   "a_allowed": [
+    "place_qumran"
+   ],
+   "b_allowed": [
+    "esplanade_temple",
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "II 1",
+    "III 8",
+    "III 11"
+   ],
+   "b_lines": [
+    "II 1"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "atlas:13:jer_temple",
+   "b": "atlas:6:jer_tyropoeon",
+   "a_allowed": [
+    "esplanade_temple"
+   ],
+   "b_allowed": [
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "III 8"
+   ],
+   "b_lines": [
+    "II 1"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as II 1 only if read with ḥet; Puech reads he (שבמלה) and lists it under another root (index p. 146)."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "melah",
+   "a": "atlas:14:jer_temple",
+   "b": "atlas:6:jer_tyropoeon",
+   "a_allowed": [
+    "esplanade_temple"
+   ],
+   "b_allowed": [
+    "millo_tyropoeon"
+   ],
+   "a_lines": [
+    "III 11"
+   ],
+   "b_lines": [
+    "II 1"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "As III 8."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:description",
+   "b": "atlas:30:tell_el_qos",
+   "a_allowed": [
+    "cool_room"
+   ],
+   "b_allowed": [
+    "vicinity"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:description",
+   "b": "registry:P04-A:feature_type",
+   "a_allowed": [
+    "cool_room"
+   ],
+   "b_allowed": [
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:description",
+   "b": "registry:P30-B:reading_assumed",
+   "a_allowed": [
+    "cool_room"
+   ],
+   "b_allowed": [
+    "vicinity"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:description",
+   "b": "translation:I 12:ad",
+   "a_allowed": [
+    "cool_room"
+   ],
+   "b_allowed": [
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:jericho_area",
+   "b": "registry:P04-A:feature_type",
+   "a_allowed": [
+    "cool_room"
+   ],
+   "b_allowed": [
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:jericho_area",
+   "b": "translation:I 12:ad",
+   "a_allowed": [
+    "cool_room"
+   ],
+   "b_allowed": [
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:tell_el_qos",
+   "b": "atlas:4:description",
+   "a_allowed": [
+    "vicinity"
+   ],
+   "b_allowed": [
+    "cool_room",
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:tell_el_qos",
+   "b": "registry:P04-A:feature_type",
+   "a_allowed": [
+    "vicinity"
+   ],
+   "b_allowed": [
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:tell_el_qos",
+   "b": "registry:P04-B:feature_type",
+   "a_allowed": [
+    "vicinity"
+   ],
+   "b_allowed": [
+    "cool_room"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:tell_el_qos",
+   "b": "translation:I 12:ad",
+   "a_allowed": [
+    "vicinity"
+   ],
+   "b_allowed": [
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:30:tell_el_qos",
+   "b": "translation:VII 8:migreh",
+   "a_allowed": [
+    "vicinity"
+   ],
+   "b_allowed": [
+    "cool_room"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "atlas:4:description",
+   "b": "registry:P30-B:reading_assumed",
+   "a_allowed": [
+    "cool_room",
+    "rock_cleft"
+   ],
+   "b_allowed": [
+    "vicinity"
+   ],
+   "a_lines": [
+    "I 12"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "registry:P04-A:feature_type",
+   "b": "registry:P30-A:feature_type",
+   "a_allowed": [
+    "rock_cleft"
+   ],
+   "b_allowed": [
+    "cool_room"
+   ],
+   "a_lines": [
+    "I 12"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "registry:P04-A:feature_type",
+   "b": "registry:P30-B:reading_assumed",
+   "a_allowed": [
+    "rock_cleft"
+   ],
+   "b_allowed": [
+    "vicinity"
+   ],
+   "a_lines": [
+    "I 12"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "registry:P04-A:feature_type",
+   "b": "translation:VII 8:migreh",
+   "a_allowed": [
+    "rock_cleft"
+   ],
+   "b_allowed": [
+    "cool_room"
+   ],
+   "a_lines": [
+    "I 12"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "registry:P04-B:feature_type",
+   "b": "registry:P30-B:reading_assumed",
+   "a_allowed": [
+    "cool_room"
+   ],
+   "b_allowed": [
+    "vicinity"
+   ],
+   "a_lines": [
+    "I 12"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "registry:P04-B:feature_type",
+   "b": "translation:I 12:ad",
+   "a_allowed": [
+    "cool_room"
+   ],
+   "b_allowed": [
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "I 12"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "registry:P30-A:feature_type",
+   "b": "translation:I 12:ad",
+   "a_allowed": [
+    "cool_room"
+   ],
+   "b_allowed": [
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "registry:P30-B:reading_assumed",
+   "b": "translation:I 12:ad",
+   "a_allowed": [
+    "vicinity"
+   ],
+   "b_allowed": [
+    "rock_cleft"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "I 12"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "registry:P30-B:reading_assumed",
+   "b": "translation:VII 8:migreh",
+   "a_allowed": [
+    "vicinity"
+   ],
+   "b_allowed": [
+    "cool_room"
+   ],
+   "a_lines": [
+    "VII 8"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "migreh",
+   "a": "translation:I 12:ad",
+   "b": "translation:VII 8:migreh",
+   "a_allowed": [
+    "rock_cleft"
+   ],
+   "b_allowed": [
+    "cool_room"
+   ],
+   "a_lines": [
+    "I 12"
+   ],
+   "b_lines": [
+    "VII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "shaveh",
+   "a": "atlas:36:jer_baqa",
+   "b": "atlas:37:jer_shaveh",
+   "a_allowed": [
+    "bethso_baqa"
+   ],
+   "b_allowed": [
+    "kings_valley"
+   ],
+   "a_lines": [
+    "VIII 10"
+   ],
+   "b_lines": [
+    "VIII 14"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shaveh",
+   "a": "atlas:36:jer_kidron_mon",
+   "b": "atlas:37:jer_baqa",
+   "a_allowed": [
+    "kings_valley"
+   ],
+   "b_allowed": [
+    "bethso_baqa"
+   ],
+   "a_lines": [
+    "VIII 10"
+   ],
+   "b_lines": [
+    "VIII 14"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shaveh",
+   "a": "atlas:36:jer_shaveh",
+   "b": "atlas:37:jer_baqa",
+   "a_allowed": [
+    "kings_valley"
+   ],
+   "b_allowed": [
+    "bethso_baqa"
+   ],
+   "a_lines": [
+    "VIII 10"
+   ],
+   "b_lines": [
+    "VIII 14"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shovakh",
+   "a": "atlas:44:description",
+   "b": "registry:P38-B:feature_type",
+   "a_allowed": [
+    "dovecote"
+   ],
+   "b_allowed": [
+    "opening"
+   ],
+   "a_lines": [
+    "IX 17"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shovakh",
+   "a": "registry:P38-B:feature_type",
+   "b": "translation:IX 1:shovakh",
+   "a_allowed": [
+    "opening"
+   ],
+   "b_allowed": [
+    "dovecote"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "IX 1",
+    "IX 17"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "atlas:38:landmark",
+   "b": "phase5:4",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "I 11"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "atlas:38:landmark",
+   "b": "registry:P04-A:feature_type",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "I 11"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "atlas:38:landmark",
+   "b": "registry:P04-B:feature_type",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "I 11"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "atlas:38:landmark",
+   "b": "registry:P18-A:reading_assumed",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "IV 9"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "atlas:38:landmark",
+   "b": "translation:I 11:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "I 11"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "atlas:38:landmark",
+   "b": "translation:IV 9:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "IV 9"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "atlas:38:landmark",
+   "b": "translation:IX 1:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": true,
+   "level": "tension",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "atlas:38:landmark",
+   "b": "translation:XI 7:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "XI 7"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "phase5:4",
+   "b": "registry:P18-B:reading_assumed",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "I 11"
+   ],
+   "b_lines": [
+    "IV 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "phase5:4",
+   "b": "registry:P38-A:feature_type",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "I 11"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "phase5:4",
+   "b": "registry:P38-B:feature_type",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "I 11"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P04-A:feature_type",
+   "b": "registry:P18-B:reading_assumed",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "I 11"
+   ],
+   "b_lines": [
+    "IV 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P04-A:feature_type",
+   "b": "registry:P38-A:feature_type",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "I 11"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P04-A:feature_type",
+   "b": "registry:P38-B:feature_type",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "I 11"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P04-B:feature_type",
+   "b": "registry:P18-B:reading_assumed",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "I 11"
+   ],
+   "b_lines": [
+    "IV 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P04-B:feature_type",
+   "b": "registry:P38-A:feature_type",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "I 11"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P04-B:feature_type",
+   "b": "registry:P38-B:feature_type",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "I 11"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P18-A:reading_assumed",
+   "b": "registry:P38-A:feature_type",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "IV 9"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P18-A:reading_assumed",
+   "b": "registry:P38-B:feature_type",
+   "a_allowed": [
+    "edge_base"
+   ],
+   "b_allowed": [
+    "outlet_end"
+   ],
+   "a_lines": [
+    "IV 9"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P18-B:reading_assumed",
+   "b": "translation:I 11:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IV 9"
+   ],
+   "b_lines": [
+    "I 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P18-B:reading_assumed",
+   "b": "translation:IV 9:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IV 9"
+   ],
+   "b_lines": [
+    "IV 9"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P18-B:reading_assumed",
+   "b": "translation:IX 1:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IV 9"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P18-B:reading_assumed",
+   "b": "translation:XI 7:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IV 9"
+   ],
+   "b_lines": [
+    "XI 7"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P38-A:feature_type",
+   "b": "translation:I 11:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "I 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P38-A:feature_type",
+   "b": "translation:IV 9:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "IV 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P38-A:feature_type",
+   "b": "translation:IX 1:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P38-A:feature_type",
+   "b": "translation:XI 7:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "XI 7"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P38-B:feature_type",
+   "b": "translation:I 11:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "I 11"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P38-B:feature_type",
+   "b": "translation:IV 9:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "IV 9"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P38-B:feature_type",
+   "b": "translation:IX 1:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "IX 1"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "shulei",
+   "a": "registry:P38-B:feature_type",
+   "b": "translation:XI 7:shulei",
+   "a_allowed": [
+    "outlet_end"
+   ],
+   "b_allowed": [
+    "edge_base"
+   ],
+   "a_lines": [
+    "IX 1"
+   ],
+   "b_lines": [
+    "XI 7"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "atlas:10:landmark",
+   "b": "atlas:51:jer_se_corner",
+   "a_allowed": [
+    "beneath"
+   ],
+   "b_allowed": [
+    "below_foot"
+   ],
+   "a_lines": [
+    "II 10"
+   ],
+   "b_lines": [
+    "XI 2"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "atlas:10:landmark",
+   "b": "registry:P51-A:orientation_constraint",
+   "a_allowed": [
+    "beneath"
+   ],
+   "b_allowed": [
+    "below_foot"
+   ],
+   "a_lines": [
+    "II 10"
+   ],
+   "b_lines": [
+    "XI 2"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "atlas:51:jer_se_corner",
+   "b": "registry:P10-A:feature_type",
+   "a_allowed": [
+    "below_foot"
+   ],
+   "b_allowed": [
+    "beneath"
+   ],
+   "a_lines": [
+    "XI 2"
+   ],
+   "b_lines": [
+    "II 10"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "atlas:51:jer_se_corner",
+   "b": "registry:P49-A:orientation_constraint",
+   "a_allowed": [
+    "below_foot"
+   ],
+   "b_allowed": [
+    "beneath"
+   ],
+   "a_lines": [
+    "XI 2"
+   ],
+   "b_lines": [
+    "X 15"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "atlas:51:jer_se_corner",
+   "b": "registry:P51-A:feature_type",
+   "a_allowed": [
+    "below_foot"
+   ],
+   "b_allowed": [
+    "beneath"
+   ],
+   "a_lines": [
+    "XI 2"
+   ],
+   "b_lines": [
+    "XI 3"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "internal",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "atlas:51:jer_se_corner",
+   "b": "registry:P57-A:feature_type",
+   "a_allowed": [
+    "below_foot"
+   ],
+   "b_allowed": [
+    "beneath"
+   ],
+   "a_lines": [
+    "XI 2"
+   ],
+   "b_lines": [
+    "XII 4"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "registry:P10-A:feature_type",
+   "b": "registry:P51-A:orientation_constraint",
+   "a_allowed": [
+    "beneath"
+   ],
+   "b_allowed": [
+    "below_foot"
+   ],
+   "a_lines": [
+    "II 10"
+   ],
+   "b_lines": [
+    "XI 2"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "registry:P49-A:orientation_constraint",
+   "b": "registry:P51-A:orientation_constraint",
+   "a_allowed": [
+    "beneath"
+   ],
+   "b_allowed": [
+    "below_foot"
+   ],
+   "a_lines": [
+    "X 15"
+   ],
+   "b_lines": [
+    "XI 2"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "registry:P51-A:feature_type",
+   "b": "registry:P51-A:orientation_constraint",
+   "a_allowed": [
+    "beneath"
+   ],
+   "b_allowed": [
+    "below_foot"
+   ],
+   "a_lines": [
+    "XI 3"
+   ],
+   "b_lines": [
+    "XI 2"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "internal",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tahat",
+   "a": "registry:P51-A:orientation_constraint",
+   "b": "registry:P57-A:feature_type",
+   "a_allowed": [
+    "below_foot"
+   ],
+   "b_allowed": [
+    "beneath"
+   ],
+   "a_lines": [
+    "XI 2"
+   ],
+   "b_lines": [
+    "XII 4"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "tsofa_attach",
+   "a": "analysis:shaveh-facing",
+   "b": "atlas:26:title",
+   "a_allowed": [
+    "nearest_noun"
+   ],
+   "b_allowed": [
+    "head_noun"
+   ],
+   "a_lines": [
+    "VIII 10"
+   ],
+   "b_lines": [
+    "VI 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": true
+  },
+  {
+   "expr": "tsofa_attach",
+   "a": "analysis:shaveh-facing",
+   "b": "registry:P25-A:orientation_constraint",
+   "a_allowed": [
+    "nearest_noun"
+   ],
+   "b_allowed": [
+    "head_noun"
+   ],
+   "a_lines": [
+    "VIII 10"
+   ],
+   "b_lines": [
+    "VI 2"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": true
+  },
+  {
+   "expr": "tsofa_attach",
+   "a": "analysis:shaveh-facing",
+   "b": "registry:P36-A:orientation_constraint",
+   "a_allowed": [
+    "nearest_noun"
+   ],
+   "b_allowed": [
+    "head_noun"
+   ],
+   "a_lines": [
+    "VIII 10"
+   ],
+   "b_lines": [
+    "VIII 10"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "tsofa_attach",
+   "a": "atlas:26:title",
+   "b": "atlas:52:description",
+   "a_allowed": [
+    "head_noun"
+   ],
+   "b_allowed": [
+    "nearest_noun"
+   ],
+   "a_lines": [
+    "VI 8"
+   ],
+   "b_lines": [
+    "XI 5"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": true
+  },
+  {
+   "expr": "tsofa_attach",
+   "a": "atlas:26:title",
+   "b": "registry:P52-A:orientation_constraint",
+   "a_allowed": [
+    "head_noun"
+   ],
+   "b_allowed": [
+    "nearest_noun"
+   ],
+   "a_lines": [
+    "VI 8"
+   ],
+   "b_lines": [
+    "XI 5"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": true
+  },
+  {
+   "expr": "tsofa_attach",
+   "a": "atlas:52:description",
+   "b": "registry:P25-A:orientation_constraint",
+   "a_allowed": [
+    "nearest_noun"
+   ],
+   "b_allowed": [
+    "head_noun"
+   ],
+   "a_lines": [
+    "XI 5"
+   ],
+   "b_lines": [
+    "VI 2"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": true
+  },
+  {
+   "expr": "tsofa_attach",
+   "a": "atlas:52:description",
+   "b": "registry:P36-A:orientation_constraint",
+   "a_allowed": [
+    "nearest_noun"
+   ],
+   "b_allowed": [
+    "head_noun"
+   ],
+   "a_lines": [
+    "XI 5"
+   ],
+   "b_lines": [
+    "VIII 10"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": true
+  },
+  {
+   "expr": "tsofa_attach",
+   "a": "registry:P25-A:orientation_constraint",
+   "b": "registry:P52-A:orientation_constraint",
+   "a_allowed": [
+    "head_noun"
+   ],
+   "b_allowed": [
+    "nearest_noun"
+   ],
+   "a_lines": [
+    "VI 2"
+   ],
+   "b_lines": [
+    "XI 5"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": true
+  },
+  {
+   "expr": "tsofa_attach",
+   "a": "registry:P36-A:orientation_constraint",
+   "b": "registry:P52-A:orientation_constraint",
+   "a_allowed": [
+    "head_noun"
+   ],
+   "b_allowed": [
+    "nearest_noun"
+   ],
+   "a_lines": [
+    "VIII 10"
+   ],
+   "b_lines": [
+    "XI 5"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": true
+  },
+  {
+   "expr": "tsuq",
+   "a": "atlas:35:description",
+   "b": "atlas:43:tell_el_ful",
+   "a_allowed": [
+    "gorge"
+   ],
+   "b_allowed": [
+    "peak"
+   ],
+   "a_lines": [
+    "VIII 8"
+   ],
+   "b_lines": [
+    "IX 14"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "tsuq",
+   "a": "atlas:35:mar_saba",
+   "b": "atlas:43:tell_el_ful",
+   "a_allowed": [
+    "gorge"
+   ],
+   "b_allowed": [
+    "peak"
+   ],
+   "a_lines": [
+    "VIII 8"
+   ],
+   "b_lines": [
+    "IX 14"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "tsuq",
+   "a": "atlas:43:tell_el_ful",
+   "b": "registry:P35-A:feature_type",
+   "a_allowed": [
+    "peak"
+   ],
+   "b_allowed": [
+    "gorge"
+   ],
+   "a_lines": [
+    "IX 14"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "tsuq",
+   "a": "atlas:43:tell_el_ful",
+   "b": "registry:P35-C:feature_type",
+   "a_allowed": [
+    "peak"
+   ],
+   "b_allowed": [
+    "gorge"
+   ],
+   "a_lines": [
+    "IX 14"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "tsuq",
+   "a": "atlas:43:tell_el_ful",
+   "b": "translation:VIII 8:tsuq",
+   "a_allowed": [
+    "peak"
+   ],
+   "b_allowed": [
+    "gorge"
+   ],
+   "a_lines": [
+    "IX 14"
+   ],
+   "b_lines": [
+    "VIII 8",
+    "IX 14"
+   ],
+   "same_line": true,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "x17_landmark",
+   "a": "atlas:50:jer_se_corner",
+   "b": "translation:X 17:x17_landmark",
+   "a_allowed": [
+    "zadok_court"
+   ],
+   "b_allowed": [
+    "upper_pool"
+   ],
+   "a_lines": [
+    "X 17"
+   ],
+   "b_lines": [
+    "X 17"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "x17_landmark",
+   "a": "atlas:50:title",
+   "b": "translation:X 17:x17_landmark",
+   "a_allowed": [
+    "zadok_court"
+   ],
+   "b_allowed": [
+    "upper_pool"
+   ],
+   "a_lines": [
+    "X 17"
+   ],
+   "b_lines": [
+    "X 17"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "xii10_opening",
+   "a": "translation:XII 10:dir_sheb",
+   "b": "workbench:RB-P",
+   "a_allowed": [
+    "north"
+   ],
+   "b_allowed": [
+    "hidden"
+   ],
+   "a_lines": [
+    "XII 10"
+   ],
+   "b_lines": [
+    "XII 10"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:20:kh_qumran",
+   "b": "atlas:28:description",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VI 14"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:20:kh_qumran",
+   "b": "atlas:28:jordan_ford",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VI 14"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:20:kh_qumran",
+   "b": "atlas:35:description",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:20:kh_qumran",
+   "b": "atlas:35:mar_saba",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:20:kh_qumran",
+   "b": "registry:P28-A:feature_type",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VI 14"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:20:kh_qumran",
+   "b": "registry:P35-A:feature_type",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:20:kh_qumran",
+   "b": "registry:P35-C:feature_type",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:20:kh_qumran",
+   "b": "translation:IV 13:yagar",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "IV 13",
+    "VI 14",
+    "VIII 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:20:wadi_qumran",
+   "b": "atlas:35:hyrcania",
+   "a_allowed": [
+    "cairn"
+   ],
+   "b_allowed": [
+    "dam"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:28:description",
+   "b": "atlas:35:hyrcania",
+   "a_allowed": [
+    "cairn"
+   ],
+   "b_allowed": [
+    "dam"
+   ],
+   "a_lines": [
+    "VI 14"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:28:description",
+   "b": "registry:P20-B:feature_type",
+   "a_allowed": [
+    "cairn"
+   ],
+   "b_allowed": [
+    "dam"
+   ],
+   "a_lines": [
+    "VI 14"
+   ],
+   "b_lines": [
+    "IV 13"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:28:jordan_ford",
+   "b": "atlas:35:hyrcania",
+   "a_allowed": [
+    "cairn"
+   ],
+   "b_allowed": [
+    "dam"
+   ],
+   "a_lines": [
+    "VI 14"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:28:jordan_ford",
+   "b": "registry:P20-B:feature_type",
+   "a_allowed": [
+    "cairn"
+   ],
+   "b_allowed": [
+    "dam"
+   ],
+   "a_lines": [
+    "VI 14"
+   ],
+   "b_lines": [
+    "IV 13"
+   ],
+   "same_line": false,
+   "level": "tension",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:35:description",
+   "b": "atlas:35:hyrcania",
+   "a_allowed": [
+    "cairn"
+   ],
+   "b_allowed": [
+    "dam"
+   ],
+   "a_lines": [
+    "VIII 8"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:35:description",
+   "b": "registry:P20-B:feature_type",
+   "a_allowed": [
+    "cairn"
+   ],
+   "b_allowed": [
+    "dam"
+   ],
+   "a_lines": [
+    "VIII 8"
+   ],
+   "b_lines": [
+    "IV 13"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:35:hyrcania",
+   "b": "registry:P20-A:feature_type",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "VIII 8"
+   ],
+   "b_lines": [
+    "IV 13"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:35:hyrcania",
+   "b": "registry:P28-A:feature_type",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "VIII 8"
+   ],
+   "b_lines": [
+    "VI 14"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:35:hyrcania",
+   "b": "registry:P35-C:feature_type",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "VIII 8"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "internal",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:35:hyrcania",
+   "b": "translation:IV 13:yagar",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "VIII 8"
+   ],
+   "b_lines": [
+    "IV 13",
+    "VI 14",
+    "VIII 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "atlas:35:mar_saba",
+   "b": "registry:P20-B:feature_type",
+   "a_allowed": [
+    "cairn"
+   ],
+   "b_allowed": [
+    "dam"
+   ],
+   "a_lines": [
+    "VIII 8"
+   ],
+   "b_lines": [
+    "IV 13"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "registry:P20-B:feature_type",
+   "b": "registry:P28-A:feature_type",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VI 14"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "registry:P20-B:feature_type",
+   "b": "registry:P35-A:feature_type",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "registry:P20-B:feature_type",
+   "b": "registry:P35-C:feature_type",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "VIII 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternatives",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yagar",
+   "a": "registry:P20-B:feature_type",
+   "b": "translation:IV 13:yagar",
+   "a_allowed": [
+    "dam"
+   ],
+   "b_allowed": [
+    "cairn"
+   ],
+   "a_lines": [
+    "IV 13"
+   ],
+   "b_lines": [
+    "IV 13",
+    "VI 14",
+    "VIII 8"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "yam",
+   "a": "atlas:40:beth_horon",
+   "b": "atlas:47:title",
+   "a_allowed": [
+    "west"
+   ],
+   "b_allowed": [
+    "basin"
+   ],
+   "a_lines": [
+    "IX 7"
+   ],
+   "b_lines": [
+    "X 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Puech reads דרום “south”; the plates lean to ים (text/readings.json e40-direction)."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "yam",
+   "a": "atlas:40:beth_horon",
+   "b": "translation:X 8:yam",
+   "a_allowed": [
+    "west"
+   ],
+   "b_allowed": [
+    "basin"
+   ],
+   "a_lines": [
+    "IX 7"
+   ],
+   "b_lines": [
+    "X 8",
+    "X 15"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": true,
+   "consistent_if": [
+    "Puech reads an outlet (ביצאית), not ים.",
+    "Puech reads דרום “south”; the plates lean to ים (text/readings.json e40-direction)."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "yam",
+   "a": "atlas:40:description",
+   "b": "atlas:47:title",
+   "a_allowed": [
+    "west"
+   ],
+   "b_allowed": [
+    "basin"
+   ],
+   "a_lines": [
+    "IX 7"
+   ],
+   "b_lines": [
+    "X 8"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "Puech reads דרום “south”; the plates lean to ים (text/readings.json e40-direction)."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "yam",
+   "a": "atlas:40:description",
+   "b": "translation:X 8:yam",
+   "a_allowed": [
+    "west"
+   ],
+   "b_allowed": [
+    "basin"
+   ],
+   "a_lines": [
+    "IX 7"
+   ],
+   "b_lines": [
+    "X 8",
+    "X 15"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "Puech reads an outlet (ביצאית), not ים.",
+    "Puech reads דרום “south”; the plates lean to ים (text/readings.json e40-direction)."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "yam",
+   "a": "atlas:47:title",
+   "b": "translation:IX 7:yam",
+   "a_allowed": [
+    "basin"
+   ],
+   "b_allowed": [
+    "west"
+   ],
+   "a_lines": [
+    "X 8"
+   ],
+   "b_lines": [
+    "IX 7"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "Puech reads דרום “south”; the plates lean to ים (text/readings.json e40-direction)."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "yam",
+   "a": "translation:IX 7:yam",
+   "b": "translation:X 8:yam",
+   "a_allowed": [
+    "west"
+   ],
+   "b_allowed": [
+    "basin"
+   ],
+   "a_lines": [
+    "IX 7"
+   ],
+   "b_lines": [
+    "X 8",
+    "X 15"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "project",
+   "strict_only": true,
+   "consistent_if": [
+    "Puech reads an outlet (ביצאית), not ים.",
+    "Puech reads דרום “south”; the plates lean to ים (text/readings.json e40-direction)."
+   ],
+   "soft": false
+  },
+  {
+   "expr": "zadok",
+   "a": "atlas:50:jer_se_corner",
+   "b": "atlas:51:jer_kidron_mon",
+   "a_allowed": [
+    "west_bank"
+   ],
+   "b_allowed": [
+    "east_bank"
+   ],
+   "a_lines": [
+    "XI 3"
+   ],
+   "b_lines": [
+    "XI 3"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "zadok",
+   "a": "atlas:50:jer_se_corner",
+   "b": "registry:P51-B:feature_type",
+   "a_allowed": [
+    "west_bank"
+   ],
+   "b_allowed": [
+    "east_bank"
+   ],
+   "a_lines": [
+    "XI 3"
+   ],
+   "b_lines": [
+    "XI 3"
+   ],
+   "same_line": true,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "zadok",
+   "a": "atlas:51:jer_kidron_mon",
+   "b": "atlas:52:jer_kidron_east",
+   "a_allowed": [
+    "east_bank"
+   ],
+   "b_allowed": [
+    "west_bank"
+   ],
+   "a_lines": [
+    "XI 3"
+   ],
+   "b_lines": [
+    "XI 6"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  },
+  {
+   "expr": "zadok",
+   "a": "atlas:52:jer_kidron_east",
+   "b": "registry:P51-B:feature_type",
+   "a_allowed": [
+    "west_bank"
+   ],
+   "b_allowed": [
+    "east_bank"
+   ],
+   "a_lines": [
+    "XI 6"
+   ],
+   "b_lines": [
+    "XI 3"
+   ],
+   "same_line": false,
+   "level": "hard",
+   "relation": "alternative_vs_project",
+   "strict_only": false,
+   "consistent_if": [],
+   "soft": false
+  }
+ ],
+ "uneven": [
+  {
+   "expr": "amot_bare",
+   "open_record": "registry:P01-A:measures",
+   "open_lines": [
+    "I 2"
+   ],
+   "left_open": [
+    "horizontal",
+    "vertical"
+   ],
+   "fixed_elsewhere_as": "horizontal",
+   "fixed_by": [
+    "registry:P23-A:feature_type"
+   ],
+   "fixed_lines": [
+    "V 10"
+   ]
+  },
+  {
+   "expr": "dig_n",
+   "open_record": "registry:P36-A:measures",
+   "open_lines": [
+    "VIII 12"
+   ],
+   "left_open": [
+    "depth",
+    "horizontal"
+   ],
+   "fixed_elsewhere_as": "depth",
+   "fixed_by": [
+    "registry:measures-depth"
+   ],
+   "fixed_lines": [
+    "II 14",
+    "IV 7",
+    "IV 13",
+    "V 3",
+    "V 10",
+    "V 14",
+    "VI 3",
+    "VII 1",
+    "VII 9",
+    "VII 12",
+    "VII 15",
+    "VIII 9",
+    "VIII 14",
+    "X 13"
+   ]
+  }
+ ],
+ "rule_conflicts": [
+  {
+   "rule": "janoah-makes-kohlit-a-district",
+   "kind": "argument",
+   "trigger": "workbench:RB-L",
+   "trigger_tier": "alternative",
+   "forces": {
+    "kohlit": [
+     "district",
+     "samarian_desert"
+    ]
+   },
+   "against": "atlas:11:tell_es_sultan",
+   "against_tier": "position",
+   "against_allowed": [
+    "tell_es_sultan"
+   ],
+   "level": "hard",
+   "why": "Janoaḥ would put the pit at Janoaḥ and make Koḥlit a district."
+  },
+  {
+   "rule": "janoah-makes-kohlit-a-district",
+   "kind": "argument",
+   "trigger": "workbench:RB-L",
+   "trigger_tier": "alternative",
+   "forces": {
+    "kohlit": [
+     "district",
+     "samarian_desert"
+    ]
+   },
+   "against": "atlas:15:tell_es_sultan",
+   "against_tier": "position",
+   "against_allowed": [
+    "tell_es_sultan"
+   ],
+   "level": "hard",
+   "why": "Janoaḥ would put the pit at Janoaḥ and make Koḥlit a district."
+  },
+  {
+   "rule": "janoah-makes-kohlit-a-district",
+   "kind": "argument",
+   "trigger": "workbench:RB-L",
+   "trigger_tier": "alternative",
+   "forces": {
+    "kohlit": [
+     "district",
+     "samarian_desert"
+    ]
+   },
+   "against": "atlas:16:tell_es_sultan",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "tell_es_sultan"
+   ],
+   "level": "hard",
+   "why": "Janoaḥ would put the pit at Janoaḥ and make Koḥlit a district."
+  },
+  {
+   "rule": "janoah-makes-kohlit-a-district",
+   "kind": "argument",
+   "trigger": "workbench:RB-L",
+   "trigger_tier": "alternative",
+   "forces": {
+    "kohlit": [
+     "district",
+     "samarian_desert"
+    ]
+   },
+   "against": "atlas:19:tell_es_sultan",
+   "against_tier": "position",
+   "against_allowed": [
+    "tell_es_sultan"
+   ],
+   "level": "hard",
+   "why": "Janoaḥ would put the pit at Janoaḥ and make Koḥlit a district."
+  },
+  {
+   "rule": "janoah-makes-kohlit-a-district",
+   "kind": "argument",
+   "trigger": "workbench:RB-L",
+   "trigger_tier": "alternative",
+   "forces": {
+    "kohlit": [
+     "district",
+     "samarian_desert"
+    ]
+   },
+   "against": "atlas:4:tell_es_sultan",
+   "against_tier": "position",
+   "against_allowed": [
+    "tell_es_sultan"
+   ],
+   "level": "hard",
+   "why": "Janoaḥ would put the pit at Janoaḥ and make Koḥlit a district."
+  },
+  {
+   "rule": "janoah-makes-kohlit-a-district",
+   "kind": "argument",
+   "trigger": "workbench:RB-L",
+   "trigger_tier": "alternative",
+   "forces": {
+    "kohlit": [
+     "district",
+     "samarian_desert"
+    ]
+   },
+   "against": "atlas:60:tell_es_sultan",
+   "against_tier": "position",
+   "against_allowed": [
+    "tell_es_sultan"
+   ],
+   "level": "hard",
+   "why": "Janoaḥ would put the pit at Janoaḥ and make Koḥlit a district."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:11:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:17:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:11:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:1:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:15:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:17:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:15:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:1:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:16:tell_es_sultan",
+   "trigger_tier": "alternative",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:17:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:16:tell_es_sultan",
+   "trigger_tier": "alternative",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:1:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:19:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:17:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:19:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:1:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:4:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:17:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:4:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:1:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:60:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:17:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "kohlit-tes-needs-achor-nuweimeh",
+   "kind": "argument",
+   "trigger": "atlas:60:tell_es_sultan",
+   "trigger_tier": "position",
+   "forces": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "against": "atlas:1:buqeia",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "buqeia"
+   ],
+   "level": "hard",
+   "why": "Høgenhaven accepts Tell es-Sultan only if Achor is Wadi Nuweiʿimeh."
+  },
+  {
+   "rule": "melah-qumran-vs-sekakah",
+   "kind": "logical",
+   "trigger": "analysis:melah-qumran",
+   "trigger_tier": "statement",
+   "forces": {
+    "sekakah": [
+     "kh_es_samra"
+    ]
+   },
+   "against": "atlas:20:kh_qumran",
+   "against_tier": "alternative",
+   "against_allowed": [
+    "kh_qumran",
+    "wadi_qumran"
+   ],
+   "level": "tension",
+   "why": "Kh. Qumran cannot be both ha-Melaḥ and Sekakah."
+  },
+  {
+   "rule": "melah-qumran-vs-sekakah",
+   "kind": "logical",
+   "trigger": "analysis:melah-qumran",
+   "trigger_tier": "statement",
+   "forces": {
+    "sekakah": [
+     "kh_es_samra"
+    ]
+   },
+   "against": "atlas:20:wadi_qumran",
+   "against_tier": "position",
+   "against_allowed": [
+    "kh_qumran",
+    "wadi_qumran"
+   ],
+   "level": "tension",
+   "why": "Kh. Qumran cannot be both ha-Melaḥ and Sekakah."
+  },
+  {
+   "rule": "melah-qumran-vs-sekakah",
+   "kind": "logical",
+   "trigger": "analysis:melah-qumran",
+   "trigger_tier": "statement",
+   "forces": {
+    "sekakah": [
+     "kh_es_samra"
+    ]
+   },
+   "against": "atlas:21:kh_qumran",
+   "against_tier": "position",
+   "against_allowed": [
+    "kh_qumran",
+    "wadi_qumran"
+   ],
+   "level": "tension",
+   "why": "Kh. Qumran cannot be both ha-Melaḥ and Sekakah."
+  },
+  {
+   "rule": "melah-qumran-vs-sekakah",
+   "kind": "logical",
+   "trigger": "analysis:melah-qumran",
+   "trigger_tier": "statement",
+   "forces": {
+    "sekakah": [
+     "kh_es_samra"
+    ]
+   },
+   "against": "atlas:22:kh_qumran",
+   "against_tier": "position",
+   "against_allowed": [
+    "kh_qumran",
+    "wadi_qumran"
+   ],
+   "level": "tension",
+   "why": "Kh. Qumran cannot be both ha-Melaḥ and Sekakah."
+  },
+  {
+   "rule": "melah-qumran-vs-sekakah",
+   "kind": "logical",
+   "trigger": "analysis:melah-qumran",
+   "trigger_tier": "statement",
+   "forces": {
+    "sekakah": [
+     "kh_es_samra"
+    ]
+   },
+   "against": "atlas:23:kh_qumran",
+   "against_tier": "position",
+   "against_allowed": [
+    "kh_qumran",
+    "wadi_qumran"
+   ],
+   "level": "tension",
+   "why": "Kh. Qumran cannot be both ha-Melaḥ and Sekakah."
+  },
+  {
+   "rule": "melah-qumran-vs-sekakah",
+   "kind": "logical",
+   "trigger": "analysis:melah-qumran",
+   "trigger_tier": "statement",
+   "forces": {
+    "sekakah": [
+     "kh_es_samra"
+    ]
+   },
+   "against": "atlas:24:kuteif",
+   "against_tier": "position",
+   "against_allowed": [
+    "kh_qumran",
+    "wadi_qumran"
+   ],
+   "level": "tension",
+   "why": "Kh. Qumran cannot be both ha-Melaḥ and Sekakah."
+  },
+  {
+   "rule": "melah-qumran-vs-sekakah",
+   "kind": "logical",
+   "trigger": "analysis:melah-qumran",
+   "trigger_tier": "statement",
+   "forces": {
+    "sekakah": [
+     "kh_es_samra"
+    ]
+   },
+   "against": "atlas:25:kh_qumran",
+   "against_tier": "position",
+   "against_allowed": [
+    "kh_qumran",
+    "wadi_qumran"
+   ],
+   "level": "tension",
+   "why": "Kh. Qumran cannot be both ha-Melaḥ and Sekakah."
+  },
+  {
+   "rule": "melah-qumran-vs-sekakah",
+   "kind": "logical",
+   "trigger": "analysis:melah-qumran",
+   "trigger_tier": "statement",
+   "forces": {
+    "sekakah": [
+     "kh_es_samra"
+    ]
+   },
+   "against": "atlas:26:kh_qumran",
+   "against_tier": "position",
+   "against_allowed": [
+    "kh_qumran",
+    "wadi_qumran"
+   ],
+   "level": "tension",
+   "why": "Kh. Qumran cannot be both ha-Melaḥ and Sekakah."
+  }
+ ],
+ "candidates": [
+  {
+   "candidate": "atlas:1:ain_duk",
+   "entry": "1",
+   "place": "ain_duk",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:1:ain_duk"
+   ],
+   "needs": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:1:buqeia",
+   "entry": "1",
+   "place": "buqeia",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:1:buqeia"
+   ],
+   "needs": {
+    "achor": [
+     "buqeia"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "achor"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "achor",
+     "mine": "atlas:1:buqeia",
+     "other": "atlas:17:nuweimeh",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "17"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:1:nuweimeh",
+   "entry": "1",
+   "place": "nuweimeh",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P01-A",
+   "branches_tried": [
+    "P01-A"
+   ],
+   "bundle": [
+    "atlas:1:nuweimeh",
+    "registry:P01-A:measures",
+    "registry:P01-A:orientation_constraint"
+   ],
+   "needs": {
+    "achor": [
+     "nuweimeh"
+    ],
+    "amot_bare": [
+     "horizontal",
+     "vertical"
+    ],
+    "biah": [
+     "approach"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:2:nuweimeh",
+   "entry": "2",
+   "place": "nuweimeh",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:2:nuweimeh"
+   ],
+   "needs": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:3:nuweimeh",
+   "entry": "3",
+   "place": "nuweimeh",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:3:nuweimeh"
+   ],
+   "needs": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:4:tell_es_sultan",
+   "entry": "4",
+   "place": "tell_es_sultan",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": "P04-A",
+   "branches_tried": [
+    "P04-A",
+    "P04-B"
+   ],
+   "bundle": [
+    "atlas:4:tell_es_sultan",
+    "registry:P04-A:feature_type"
+   ],
+   "needs": {
+    "ad": [
+     "as_far_as"
+    ],
+    "amot_bare": [
+     "horizontal"
+    ],
+    "dir_min": [
+     "side"
+    ],
+    "kohlit": [
+     "tell_es_sultan"
+    ],
+    "migreh": [
+     "rock_cleft"
+    ],
+    "shulei": [
+     "edge_base"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "ad"
+   ],
+   "conditional_expressions": [
+    "migreh"
+   ],
+   "conflicts": [
+    {
+     "expr": "ad",
+     "mine": "registry:P04-A:feature_type",
+     "other": "atlas:32:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "32"
+    },
+    {
+     "expr": "ad",
+     "mine": "registry:P04-A:feature_type",
+     "other": "constraint:32-above",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "32"
+    },
+    {
+     "expr": "ad",
+     "mine": "registry:P04-A:feature_type",
+     "other": "registry:P32-A:orientation_constraint",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "32"
+    },
+    {
+     "expr": "migreh",
+     "mine": "registry:P04-A:feature_type",
+     "other": "atlas:30:description",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+     ],
+     "other_entry": "30"
+    },
+    {
+     "expr": "migreh",
+     "mine": "registry:P04-A:feature_type",
+     "other": "translation:VII 8:migreh",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+     ],
+     "other_entry": "30"
+    },
+    {
+     "expr": "shulei",
+     "mine": "registry:P04-A:feature_type",
+     "other": "atlas:38:landmark",
+     "level": "tension",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "38"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:6:jer_tyropoeon",
+   "entry": "6",
+   "place": "jer_tyropoeon",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:6:jer_tyropoeon"
+   ],
+   "needs": {
+    "melah": [
+     "millo_tyropoeon"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "melah"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "melah",
+     "mine": "atlas:6:jer_tyropoeon",
+     "other": "analysis:melah-place",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    },
+    {
+     "expr": "melah",
+     "mine": "atlas:6:jer_tyropoeon",
+     "other": "analysis:melah-qumran",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    },
+    {
+     "expr": "melah",
+     "mine": "atlas:6:jer_tyropoeon",
+     "other": "atlas:13:jer_temple",
+     "level": "tension",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as II 1 only if read with ḥet; Puech reads he (שבמלה) and lists it under another root (index p. 146)."
+     ],
+     "other_entry": "13"
+    },
+    {
+     "expr": "melah",
+     "mine": "atlas:6:jer_tyropoeon",
+     "other": "atlas:14:jer_temple",
+     "level": "tension",
+     "strict_only": true,
+     "consistent_if": [
+      "As III 8."
+     ],
+     "other_entry": "14"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:9:jer_east_gate",
+   "entry": "9",
+   "place": "jer_east_gate",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P09-A",
+   "branches_tried": [
+    "P09-A"
+   ],
+   "bundle": [
+    "atlas:9:jer_east_gate",
+    "registry:P09-A:orientation_constraint"
+   ],
+   "needs": {
+    "neged": [
+     "east_side_facing_west",
+     "in_front_adjacent",
+     "opposite_facing"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:10:jer_east_gate",
+   "entry": "10",
+   "place": "jer_east_gate",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P10-A",
+   "branches_tried": [
+    "P10-A"
+   ],
+   "bundle": [
+    "atlas:10:jer_east_gate",
+    "registry:P10-A:feature_type"
+   ],
+   "needs": {
+    "dir_min": [
+     "side"
+    ],
+    "tahat": [
+     "beneath"
+    ]
+   },
+   "verdict": "consistent only if a conditional member stands apart",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [
+    "tahat"
+   ],
+   "conflicts": [
+    {
+     "expr": "tahat",
+     "mine": "registry:P10-A:feature_type",
+     "other": "atlas:51:jer_se_corner",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "51"
+    },
+    {
+     "expr": "tahat",
+     "mine": "registry:P10-A:feature_type",
+     "other": "registry:P51-A:orientation_constraint",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "51"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:11:tell_es_sultan",
+   "entry": "11",
+   "place": "tell_es_sultan",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": "P11-A",
+   "branches_tried": [
+    "P11-A"
+   ],
+   "bundle": [
+    "atlas:11:tell_es_sultan",
+    "registry:P11-A:feature_type"
+   ],
+   "needs": {
+    "dir_adj": [
+     "relative_position"
+    ],
+    "dir_sheb": [
+     "external"
+    ],
+    "kohlit": [
+     "tell_es_sultan"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:13:jer_temple",
+   "entry": "13",
+   "place": "jer_temple",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:13:jer_temple"
+   ],
+   "needs": {
+    "melah": [
+     "esplanade_temple"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "melah"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "melah",
+     "mine": "atlas:13:jer_temple",
+     "other": "analysis:melah-place",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    },
+    {
+     "expr": "melah",
+     "mine": "atlas:13:jer_temple",
+     "other": "analysis:melah-qumran",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    },
+    {
+     "expr": "melah",
+     "mine": "atlas:13:jer_temple",
+     "other": "atlas:6:jer_tyropoeon",
+     "level": "tension",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as II 1 only if read with ḥet; Puech reads he (שבמלה) and lists it under another root (index p. 146)."
+     ],
+     "other_entry": "6"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:14:jer_temple",
+   "entry": "14",
+   "place": "jer_temple",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:14:jer_temple"
+   ],
+   "needs": {
+    "melah": [
+     "esplanade_temple"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "melah"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "melah",
+     "mine": "atlas:14:jer_temple",
+     "other": "analysis:melah-place",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    },
+    {
+     "expr": "melah",
+     "mine": "atlas:14:jer_temple",
+     "other": "analysis:melah-qumran",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    },
+    {
+     "expr": "melah",
+     "mine": "atlas:14:jer_temple",
+     "other": "atlas:6:jer_tyropoeon",
+     "level": "tension",
+     "strict_only": true,
+     "consistent_if": [
+      "As III 8."
+     ],
+     "other_entry": "6"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:15:tell_es_sultan",
+   "entry": "15",
+   "place": "tell_es_sultan",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": "P15-A",
+   "branches_tried": [
+    "P15-A"
+   ],
+   "bundle": [
+    "atlas:15:tell_es_sultan",
+    "registry:P15-A:orientation_constraint"
+   ],
+   "needs": {
+    "dir_suffix": [
+     "side"
+    ],
+    "kohlit": [
+     "tell_es_sultan"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:16:hyrcania",
+   "entry": "16",
+   "place": "hyrcania",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": "P16-B",
+   "branches_tried": [
+    "P16-B"
+   ],
+   "bundle": [
+    "atlas:16:hyrcania",
+    "registry:P16-B:measures"
+   ],
+   "needs": {
+    "enter_number": [
+     "distance"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:16:tell_es_sultan",
+   "entry": "16",
+   "place": "tell_es_sultan",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": "P16-A",
+   "branches_tried": [
+    "P16-A"
+   ],
+   "bundle": [
+    "atlas:16:tell_es_sultan",
+    "registry:P16-A:measures"
+   ],
+   "needs": {
+    "enter_number": [
+     "distance"
+    ],
+    "kohlit": [
+     "tell_es_sultan"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:17:ain_duk",
+   "entry": "17",
+   "place": "ain_duk",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:17:ain_duk"
+   ],
+   "needs": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:17:buqeia",
+   "entry": "17",
+   "place": "buqeia",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:17:buqeia"
+   ],
+   "needs": {
+    "achor": [
+     "buqeia"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "achor"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "achor",
+     "mine": "atlas:17:buqeia",
+     "other": "atlas:1:nuweimeh",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "1"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:17:nuweimeh",
+   "entry": "17",
+   "place": "nuweimeh",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:17:nuweimeh"
+   ],
+   "needs": {
+    "achor": [
+     "nuweimeh"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:18:asla",
+   "entry": "18",
+   "place": "asla",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": "P18-A",
+   "branches_tried": [
+    "P18-A",
+    "P18-B"
+   ],
+   "bundle": [
+    "atlas:18:asla",
+    "registry:P18-A:reading_assumed"
+   ],
+   "needs": {
+    "shit": [
+     "pit"
+    ],
+    "shulei": [
+     "edge_base"
+    ]
+   },
+   "verdict": "tension only",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "shulei",
+     "mine": "registry:P18-A:reading_assumed",
+     "other": "atlas:38:landmark",
+     "level": "tension",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "38"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:19:tell_es_sultan",
+   "entry": "19",
+   "place": "tell_es_sultan",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": "P19-A",
+   "branches_tried": [
+    "P19-A"
+   ],
+   "bundle": [
+    "atlas:19:tell_es_sultan",
+    "registry:P19-A:orientation_constraint"
+   ],
+   "needs": {
+    "dir_adj": [
+     "relative_position"
+    ],
+    "dir_sheb": [
+     "external",
+     "internal"
+    ],
+    "kohlit": [
+     "tell_es_sultan"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:20:kh_qumran",
+   "entry": "20",
+   "place": "kh_qumran",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": "P20-B",
+   "branches_tried": [
+    "P20-B"
+   ],
+   "bundle": [
+    "atlas:20:kh_qumran",
+    "registry:P20-B:feature_type"
+   ],
+   "needs": {
+    "sekakah": [
+     "kh_qumran",
+     "wadi_qumran"
+    ],
+    "yagar": [
+     "dam"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "yagar"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "yagar",
+     "mine": "atlas:20:kh_qumran",
+     "other": "atlas:28:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "28"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:20:kh_qumran",
+     "other": "atlas:28:jordan_ford",
+     "level": "tension",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "28"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:20:kh_qumran",
+     "other": "atlas:35:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:20:kh_qumran",
+     "other": "atlas:35:mar_saba",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:20:kh_qumran",
+     "other": "registry:P28-A:feature_type",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "28"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:20:kh_qumran",
+     "other": "registry:P35-A:feature_type",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:20:kh_qumran",
+     "other": "translation:IV 13:yagar",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    },
+    {
+     "expr": "yagar",
+     "mine": "registry:P20-B:feature_type",
+     "other": "atlas:28:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "28"
+    },
+    {
+     "expr": "yagar",
+     "mine": "registry:P20-B:feature_type",
+     "other": "atlas:28:jordan_ford",
+     "level": "tension",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "28"
+    },
+    {
+     "expr": "yagar",
+     "mine": "registry:P20-B:feature_type",
+     "other": "atlas:35:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "yagar",
+     "mine": "registry:P20-B:feature_type",
+     "other": "atlas:35:mar_saba",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "yagar",
+     "mine": "registry:P20-B:feature_type",
+     "other": "registry:P28-A:feature_type",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "28"
+    },
+    {
+     "expr": "yagar",
+     "mine": "registry:P20-B:feature_type",
+     "other": "registry:P35-A:feature_type",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "yagar",
+     "mine": "registry:P20-B:feature_type",
+     "other": "translation:IV 13:yagar",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:20:wadi_qumran",
+   "entry": "20",
+   "place": "wadi_qumran",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P20-A",
+   "branches_tried": [
+    "P20-A"
+   ],
+   "bundle": [
+    "atlas:20:wadi_qumran",
+    "registry:P20-A:feature_type"
+   ],
+   "needs": {
+    "sekakah": [
+     "kh_qumran",
+     "wadi_qumran"
+    ],
+    "yagar": [
+     "cairn"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:21:kh_qumran",
+   "entry": "21",
+   "place": "kh_qumran",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P21-A",
+   "branches_tried": [
+    "P21-A"
+   ],
+   "bundle": [
+    "atlas:21:kh_qumran",
+    "registry:P21-A:orientation_constraint"
+   ],
+   "needs": {
+    "dir_min": [
+     "from_direction",
+     "side"
+    ],
+    "sekakah": [
+     "kh_qumran",
+     "wadi_qumran"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:22:kh_qumran",
+   "entry": "22",
+   "place": "kh_qumran",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:22:kh_qumran"
+   ],
+   "needs": {
+    "sekakah": [
+     "kh_qumran",
+     "wadi_qumran"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:23:kh_qumran",
+   "entry": "23",
+   "place": "kh_qumran",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": "P23-A",
+   "branches_tried": [
+    "P23-A"
+   ],
+   "bundle": [
+    "atlas:23:kh_qumran",
+    "registry:P23-A:feature_type"
+   ],
+   "needs": {
+    "ad": [
+     "as_far_as"
+    ],
+    "amot_bare": [
+     "horizontal"
+    ],
+    "sekakah": [
+     "kh_qumran",
+     "wadi_qumran"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "ad"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "ad",
+     "mine": "registry:P23-A:feature_type",
+     "other": "atlas:32:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "32"
+    },
+    {
+     "expr": "ad",
+     "mine": "registry:P23-A:feature_type",
+     "other": "constraint:32-above",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "32"
+    },
+    {
+     "expr": "ad",
+     "mine": "registry:P23-A:feature_type",
+     "other": "registry:P32-A:orientation_constraint",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "32"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:24:kuteif",
+   "entry": "24",
+   "place": "kuteif",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:24:kuteif"
+   ],
+   "needs": {
+    "biah": [
+     "approach"
+    ],
+    "sekakah": [
+     "kh_qumran",
+     "wadi_qumran"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:25:kh_qumran",
+   "entry": "25",
+   "place": "kh_qumran",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": "P25-A",
+   "branches_tried": [
+    "P25-A"
+   ],
+   "bundle": [
+    "atlas:25:kh_qumran",
+    "registry:P25-A:orientation_constraint"
+   ],
+   "needs": {
+    "dir_adj": [
+     "relative_position"
+    ],
+    "dir_tsofa": [
+     "faces"
+    ],
+    "sekakah": [
+     "kh_qumran",
+     "wadi_qumran"
+    ],
+    "tsofa_attach": [
+     "head_noun"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:26:kh_qumran",
+   "entry": "26",
+   "place": "kh_qumran",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:26:kh_qumran"
+   ],
+   "needs": {
+    "sekakah": [
+     "kh_qumran",
+     "wadi_qumran"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:28:jordan_ford",
+   "entry": "28",
+   "place": "jordan_ford",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P28-A",
+   "branches_tried": [
+    "P28-A"
+   ],
+   "bundle": [
+    "atlas:28:jordan_ford",
+    "registry:P28-A:feature_type"
+   ],
+   "needs": {
+    "yagar": [
+     "cairn"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:29:jericho_palaces",
+   "entry": "29",
+   "place": "jericho_palaces",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": "P29-A",
+   "branches_tried": [
+    "P29-A"
+   ],
+   "bundle": [
+    "atlas:29:jericho_palaces",
+    "registry:P29-A:orientation_constraint"
+   ],
+   "needs": {
+    "dir_adj": [
+     "relative_position"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:30:jericho_area",
+   "entry": "30",
+   "place": "jericho_area",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": "P30-A",
+   "branches_tried": [
+    "P30-A"
+   ],
+   "bundle": [
+    "atlas:30:jericho_area",
+    "registry:P30-A:feature_type"
+   ],
+   "needs": {
+    "migreh": [
+     "cool_room"
+    ]
+   },
+   "verdict": "consistent only if a conditional member stands apart",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [
+    "migreh"
+   ],
+   "conflicts": [
+    {
+     "expr": "migreh",
+     "mine": "atlas:30:jericho_area",
+     "other": "translation:I 12:ad",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+     ],
+     "other_entry": "4"
+    },
+    {
+     "expr": "migreh",
+     "mine": "registry:P30-A:feature_type",
+     "other": "translation:I 12:ad",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+     ],
+     "other_entry": "4"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:30:tell_el_qos",
+   "entry": "30",
+   "place": "tell_el_qos",
+   "status": "weak",
+   "tier": "alternative",
+   "registry_branch": "P30-B",
+   "branches_tried": [
+    "P30-B"
+   ],
+   "bundle": [
+    "atlas:30:tell_el_qos",
+    "registry:P30-B:reading_assumed"
+   ],
+   "needs": {
+    "migreh": [
+     "vicinity"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "migreh"
+   ],
+   "conditional_expressions": [
+    "migreh"
+   ],
+   "conflicts": [
+    {
+     "expr": "migreh",
+     "mine": "atlas:30:tell_el_qos",
+     "other": "atlas:30:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "30"
+    },
+    {
+     "expr": "migreh",
+     "mine": "atlas:30:tell_el_qos",
+     "other": "atlas:4:description",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+     ],
+     "other_entry": "4"
+    },
+    {
+     "expr": "migreh",
+     "mine": "atlas:30:tell_el_qos",
+     "other": "translation:I 12:ad",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+     ],
+     "other_entry": "4"
+    },
+    {
+     "expr": "migreh",
+     "mine": "atlas:30:tell_el_qos",
+     "other": "translation:VII 8:migreh",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "30"
+    },
+    {
+     "expr": "migreh",
+     "mine": "registry:P30-B:reading_assumed",
+     "other": "atlas:30:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "30"
+    },
+    {
+     "expr": "migreh",
+     "mine": "registry:P30-B:reading_assumed",
+     "other": "atlas:4:description",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+     ],
+     "other_entry": "4"
+    },
+    {
+     "expr": "migreh",
+     "mine": "registry:P30-B:reading_assumed",
+     "other": "translation:I 12:ad",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Same word as VII 8 only on Puech’s reading מקרת; the shown text has ניקרת."
+     ],
+     "other_entry": "4"
+    },
+    {
+     "expr": "migreh",
+     "mine": "registry:P30-B:reading_assumed",
+     "other": "translation:VII 8:migreh",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "30"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:32:choziba",
+   "entry": "32",
+   "place": "choziba",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P32-A",
+   "branches_tried": [
+    "P32-A"
+   ],
+   "bundle": [
+    "atlas:32:choziba",
+    "registry:P32-A:orientation_constraint"
+   ],
+   "needs": {
+    "ad": [
+     "toward"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "ad"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "ad",
+     "mine": "registry:P32-A:orientation_constraint",
+     "other": "constraint:23-endpoints",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "23"
+    },
+    {
+     "expr": "ad",
+     "mine": "registry:P32-A:orientation_constraint",
+     "other": "registry:P23-A:feature_type",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "23"
+    },
+    {
+     "expr": "ad",
+     "mine": "registry:P32-A:orientation_constraint",
+     "other": "translation:I 12:ad",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "4"
+    },
+    {
+     "expr": "ad",
+     "mine": "registry:P32-A:orientation_constraint",
+     "other": "translation:V 9:ad",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "23"
+    },
+    {
+     "expr": "ad",
+     "mine": "registry:P32-A:orientation_constraint",
+     "other": "translation:VII 15:ad",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "32"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:35:hyrcania",
+   "entry": "35",
+   "place": "hyrcania",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": "P35-C",
+   "branches_tried": [
+    "P35-C"
+   ],
+   "bundle": [
+    "atlas:35:hyrcania",
+    "registry:P35-C:feature_type"
+   ],
+   "needs": {
+    "tsuq": [
+     "gorge"
+    ],
+    "yagar": []
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "yagar"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "yagar",
+     "mine": "atlas:35:hyrcania",
+     "other": "atlas:20:wadi_qumran",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "20"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:35:hyrcania",
+     "other": "atlas:28:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "28"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:35:hyrcania",
+     "other": "atlas:28:jordan_ford",
+     "level": "tension",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "28"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:35:hyrcania",
+     "other": "atlas:35:description",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:35:hyrcania",
+     "other": "registry:P20-A:feature_type",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "20"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:35:hyrcania",
+     "other": "registry:P28-A:feature_type",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "28"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:35:hyrcania",
+     "other": "registry:P35-C:feature_type",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "yagar",
+     "mine": "atlas:35:hyrcania",
+     "other": "translation:IV 13:yagar",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:35:mar_saba",
+   "entry": "35",
+   "place": "mar_saba",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P35-A",
+   "branches_tried": [
+    "P35-A"
+   ],
+   "bundle": [
+    "atlas:35:mar_saba",
+    "registry:P35-A:feature_type"
+   ],
+   "needs": {
+    "pi": [
+     "mouth_opening"
+    ],
+    "tsuq": [
+     "gorge"
+    ],
+    "yagar": [
+     "cairn"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:36:jer_baqa",
+   "entry": "36",
+   "place": "jer_baqa",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:36:jer_baqa"
+   ],
+   "needs": {
+    "shaveh": [
+     "bethso_baqa"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "shaveh"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "shaveh",
+     "mine": "atlas:36:jer_baqa",
+     "other": "atlas:37:jer_shaveh",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "37"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:36:jer_kidron_mon",
+   "entry": "36",
+   "place": "jer_kidron_mon",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": "P36-A",
+   "branches_tried": [
+    "P36-A"
+   ],
+   "bundle": [
+    "atlas:36:jer_kidron_mon",
+    "registry:P36-A:measures",
+    "registry:P36-A:orientation_constraint"
+   ],
+   "needs": {
+    "dig_n": [
+     "depth",
+     "horizontal"
+    ],
+    "dir_compound": [
+     "separate"
+    ],
+    "dir_tsofa": [
+     "faces"
+    ],
+    "shaveh": [
+     "kings_valley"
+    ],
+    "tseriah": [
+     "underground_chamber"
+    ],
+    "tsofa_attach": [
+     "head_noun"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "tsofa_attach"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "tsofa_attach",
+     "mine": "registry:P36-A:orientation_constraint",
+     "other": "analysis:shaveh-facing",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "36"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:36:jer_shaveh",
+   "entry": "36",
+   "place": "jer_shaveh",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:36:jer_shaveh"
+   ],
+   "needs": {
+    "shaveh": [
+     "kings_valley"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:37:jer_baqa",
+   "entry": "37",
+   "place": "jer_baqa",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:37:jer_baqa"
+   ],
+   "needs": {
+    "shaveh": [
+     "bethso_baqa"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "shaveh"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "shaveh",
+     "mine": "atlas:37:jer_baqa",
+     "other": "atlas:36:jer_shaveh",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "36"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:37:jer_shaveh",
+   "entry": "37",
+   "place": "jer_shaveh",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:37:jer_shaveh"
+   ],
+   "needs": {
+    "shaveh": [
+     "kings_valley"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:38:natuf",
+   "entry": "38",
+   "place": "natuf",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P38-A",
+   "branches_tried": [
+    "P38-A",
+    "P38-B"
+   ],
+   "bundle": [
+    "atlas:38:natuf",
+    "registry:P38-A:feature_type"
+   ],
+   "needs": {
+    "amot_bare": [
+     "horizontal"
+    ],
+    "shovakh": [
+     "dovecote"
+    ],
+    "shulei": [
+     "outlet_end"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "shulei"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "shulei",
+     "mine": "registry:P38-A:feature_type",
+     "other": "phase5:4",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "4"
+    },
+    {
+     "expr": "shulei",
+     "mine": "registry:P38-A:feature_type",
+     "other": "translation:I 11:shulei",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "4"
+    },
+    {
+     "expr": "shulei",
+     "mine": "registry:P38-A:feature_type",
+     "other": "translation:IV 9:shulei",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "18"
+    },
+    {
+     "expr": "shulei",
+     "mine": "registry:P38-A:feature_type",
+     "other": "translation:IX 1:shulei",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "38"
+    },
+    {
+     "expr": "shulei",
+     "mine": "registry:P38-A:feature_type",
+     "other": "translation:XI 7:shulei",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "52"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:40:beth_horon",
+   "entry": "40",
+   "place": "beth_horon",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:40:beth_horon"
+   ],
+   "needs": {
+    "yam": [
+     "west"
+    ]
+   },
+   "verdict": "consistent only if a conditional member stands apart",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [
+    "yam"
+   ],
+   "conflicts": [
+    {
+     "expr": "yam",
+     "mine": "atlas:40:beth_horon",
+     "other": "atlas:47:title",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Puech reads דרום “south”; the plates lean to ים (text/readings.json e40-direction)."
+     ],
+     "other_entry": "47"
+    },
+    {
+     "expr": "yam",
+     "mine": "atlas:40:beth_horon",
+     "other": "translation:X 8:yam",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "Puech reads an outlet (ביצאית), not ים.",
+      "Puech reads דרום “south”; the plates lean to ים (text/readings.json e40-direction)."
+     ],
+     "other_entry": null
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:43:tell_el_ful",
+   "entry": "43",
+   "place": "tell_el_ful",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:43:tell_el_ful"
+   ],
+   "needs": {
+    "tsuq": [
+     "peak"
+    ]
+   },
+   "verdict": "tension only",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "tsuq",
+     "mine": "atlas:43:tell_el_ful",
+     "other": "atlas:35:description",
+     "level": "tension",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "tsuq",
+     "mine": "atlas:43:tell_el_ful",
+     "other": "atlas:35:mar_saba",
+     "level": "tension",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "tsuq",
+     "mine": "atlas:43:tell_el_ful",
+     "other": "registry:P35-A:feature_type",
+     "level": "tension",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "35"
+    },
+    {
+     "expr": "tsuq",
+     "mine": "atlas:43:tell_el_ful",
+     "other": "translation:VIII 8:tsuq",
+     "level": "tension",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": null
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:46:ramat_rahel",
+   "entry": "46",
+   "place": "ramat_rahel",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P46-A",
+   "branches_tried": [
+    "P46-A"
+   ],
+   "bundle": [
+    "atlas:46:ramat_rahel",
+    "registry:P46-A:measures",
+    "registry:P46-A:orientation_constraint"
+   ],
+   "needs": {
+    "amot_unit": [
+     "cubit"
+    ],
+    "enter_number": [
+     "depth",
+     "distance"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:49:jer_siloam",
+   "entry": "49",
+   "place": "jer_siloam",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P49-A",
+   "branches_tried": [
+    "P49-A"
+   ],
+   "bundle": [
+    "atlas:49:jer_siloam",
+    "registry:P49-A:orientation_constraint"
+   ],
+   "needs": {
+    "tahat": [
+     "beneath"
+    ]
+   },
+   "verdict": "consistent only if a conditional member stands apart",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [
+    "tahat"
+   ],
+   "conflicts": [
+    {
+     "expr": "tahat",
+     "mine": "registry:P49-A:orientation_constraint",
+     "other": "atlas:51:jer_se_corner",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "51"
+    },
+    {
+     "expr": "tahat",
+     "mine": "registry:P49-A:orientation_constraint",
+     "other": "registry:P51-A:orientation_constraint",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "51"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:50:jer_se_corner",
+   "entry": "50",
+   "place": "jer_se_corner",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": null,
+   "branches_tried": [],
+   "bundle": [
+    "atlas:50:jer_se_corner"
+   ],
+   "needs": {
+    "x17_landmark": [
+     "zadok_court"
+    ],
+    "zadok": [
+     "west_bank"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "x17_landmark"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "x17_landmark",
+     "mine": "atlas:50:jer_se_corner",
+     "other": "translation:X 17:x17_landmark",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "50"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:51:jer_kidron_mon",
+   "entry": "51",
+   "place": "jer_kidron_mon",
+   "status": "possible",
+   "tier": "alternative",
+   "registry_branch": "P51-B",
+   "branches_tried": [
+    "P51-B"
+   ],
+   "bundle": [
+    "atlas:51:jer_kidron_mon",
+    "registry:P51-B:feature_type"
+   ],
+   "needs": {
+    "zadok": [
+     "east_bank"
+    ]
+   },
+   "verdict": "needs choices contradicted elsewhere",
+   "several": false,
+   "conflicting_expressions": [
+    "zadok"
+   ],
+   "conditional_expressions": [],
+   "conflicts": [
+    {
+     "expr": "zadok",
+     "mine": "atlas:51:jer_kidron_mon",
+     "other": "atlas:50:jer_se_corner",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "50"
+    },
+    {
+     "expr": "zadok",
+     "mine": "atlas:51:jer_kidron_mon",
+     "other": "atlas:52:jer_kidron_east",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "52"
+    },
+    {
+     "expr": "zadok",
+     "mine": "registry:P51-B:feature_type",
+     "other": "atlas:50:jer_se_corner",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "50"
+    },
+    {
+     "expr": "zadok",
+     "mine": "registry:P51-B:feature_type",
+     "other": "atlas:52:jer_kidron_east",
+     "level": "hard",
+     "strict_only": false,
+     "consistent_if": [],
+     "other_entry": "52"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:51:jer_se_corner",
+   "entry": "51",
+   "place": "jer_se_corner",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P51-A",
+   "branches_tried": [
+    "P51-A"
+   ],
+   "bundle": [
+    "atlas:51:jer_se_corner",
+    "registry:P51-A:feature_type",
+    "registry:P51-A:orientation_constraint"
+   ],
+   "needs": {
+    "tahat": [],
+    "zadok": [
+     "west_bank"
+    ]
+   },
+   "verdict": "consistent only if a conditional member stands apart",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [
+    "tahat"
+   ],
+   "conflicts": [
+    {
+     "expr": "tahat",
+     "mine": "atlas:51:jer_se_corner",
+     "other": "atlas:10:landmark",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "10"
+    },
+    {
+     "expr": "tahat",
+     "mine": "atlas:51:jer_se_corner",
+     "other": "registry:P10-A:feature_type",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "10"
+    },
+    {
+     "expr": "tahat",
+     "mine": "atlas:51:jer_se_corner",
+     "other": "registry:P49-A:orientation_constraint",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "49"
+    },
+    {
+     "expr": "tahat",
+     "mine": "atlas:51:jer_se_corner",
+     "other": "registry:P51-A:feature_type",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "51"
+    },
+    {
+     "expr": "tahat",
+     "mine": "atlas:51:jer_se_corner",
+     "other": "registry:P57-A:feature_type",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "57"
+    },
+    {
+     "expr": "tahat",
+     "mine": "registry:P51-A:feature_type",
+     "other": "registry:P51-A:orientation_constraint",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "51"
+    },
+    {
+     "expr": "tahat",
+     "mine": "registry:P51-A:orientation_constraint",
+     "other": "atlas:10:landmark",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "10"
+    },
+    {
+     "expr": "tahat",
+     "mine": "registry:P51-A:orientation_constraint",
+     "other": "registry:P10-A:feature_type",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "10"
+    },
+    {
+     "expr": "tahat",
+     "mine": "registry:P51-A:orientation_constraint",
+     "other": "registry:P49-A:orientation_constraint",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "49"
+    },
+    {
+     "expr": "tahat",
+     "mine": "registry:P51-A:orientation_constraint",
+     "other": "registry:P57-A:feature_type",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "57"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:52:jer_kidron_east",
+   "entry": "52",
+   "place": "jer_kidron_east",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P52-A",
+   "branches_tried": [
+    "P52-A"
+   ],
+   "bundle": [
+    "atlas:52:jer_kidron_east",
+    "registry:P52-A:orientation_constraint"
+   ],
+   "needs": {
+    "dir_tsofa": [
+     "faces"
+    ],
+    "neged": [
+     "east_side_facing_west",
+     "opposite_facing"
+    ],
+    "tsofa_attach": [
+     "nearest_noun"
+    ],
+    "zadok": [
+     "west_bank"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  },
+  {
+   "candidate": "atlas:57:gerizim",
+   "entry": "57",
+   "place": "gerizim",
+   "status": "preferred",
+   "tier": "position",
+   "registry_branch": "P57-A",
+   "branches_tried": [
+    "P57-A"
+   ],
+   "bundle": [
+    "atlas:57:gerizim",
+    "registry:P57-A:feature_type"
+   ],
+   "needs": {
+    "shit": [
+     "pit"
+    ],
+    "tahat": [
+     "beneath"
+    ]
+   },
+   "verdict": "consistent only if a conditional member stands apart",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [
+    "tahat"
+   ],
+   "conflicts": [
+    {
+     "expr": "tahat",
+     "mine": "registry:P57-A:feature_type",
+     "other": "atlas:51:jer_se_corner",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "51"
+    },
+    {
+     "expr": "tahat",
+     "mine": "registry:P57-A:feature_type",
+     "other": "registry:P51-A:orientation_constraint",
+     "level": "hard",
+     "strict_only": true,
+     "consistent_if": [
+      "The form is מתחת (with prefixed מ “from”); it may be a distinct expression meaning “below, downslope of”."
+     ],
+     "other_entry": "51"
+    }
+   ]
+  },
+  {
+   "candidate": "atlas:60:tell_es_sultan",
+   "entry": "60",
+   "place": "tell_es_sultan",
+   "status": "possible",
+   "tier": "position",
+   "registry_branch": "P60-T1",
+   "branches_tried": [
+    "P60-T1"
+   ],
+   "bundle": [
+    "atlas:60:tell_es_sultan",
+    "registry:P60-T1:orientation_constraint"
+   ],
+   "needs": {
+    "dir_sheb": [
+     "external",
+     "internal"
+    ],
+    "janoah": [
+     "situated",
+     "smooth_rock"
+    ],
+    "kohlit": [
+     "tell_es_sultan"
+    ]
+   },
+   "verdict": "consistent with the project’s other records",
+   "several": false,
+   "conflicting_expressions": [],
+   "conditional_expressions": [],
+   "conflicts": []
+  }
+ ],
+ "rank": [
+  {
+   "expr": "yagar",
+   "label": "יגר “cairn / dam”",
+   "score": 26,
+   "sensitive_records": 13,
+   "entries": 3,
+   "occurrences": 3,
+   "meanings": 2,
+   "rank": 1
+  },
+  {
+   "expr": "achor",
+   "label": "the Valley of Achor (עמק עכור)",
+   "score": 20,
+   "sensitive_records": 10,
+   "entries": 4,
+   "occurrences": 2,
+   "meanings": 3,
+   "rank": 2
+  },
+  {
+   "expr": "sekakah",
+   "label": "Sekakah (סככא)",
+   "score": 20,
+   "sensitive_records": 8,
+   "entries": 7,
+   "occurrences": 4,
+   "meanings": 3,
+   "rank": 3
+  },
+  {
+   "expr": "shulei",
+   "label": "שולי “edge / base / outlet”",
+   "score": 18,
+   "sensitive_records": 12,
+   "entries": 4,
+   "occurrences": 5,
+   "meanings": 2,
+   "rank": 4
+  },
+  {
+   "expr": "kohlit",
+   "label": "Koḥlit (כחלת)",
+   "score": 18,
+   "sensitive_records": 8,
+   "entries": 6,
+   "occurrences": 5,
+   "meanings": 6,
+   "rank": 5
+  },
+  {
+   "expr": "al_pi",
+   "label": "על פי “at / above the mouth of”",
+   "score": 16,
+   "sensitive_records": 10,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 2,
+   "rank": 6
+  },
+  {
+   "expr": "dir_tsofa",
+   "label": "“facing DIRECTION” (הצופא + direction)",
+   "score": 15,
+   "sensitive_records": 10,
+   "entries": 6,
+   "occurrences": 7,
+   "meanings": 2,
+   "rank": 7
+  },
+  {
+   "expr": "migreh",
+   "label": "מקרה / ניקרת at I 12 and VII 8: “cool room” or “rock cleft”",
+   "score": 15,
+   "sensitive_records": 10,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 3,
+   "rank": 8
+  },
+  {
+   "expr": "ad",
+   "label": "עד before a landmark: “as far as” or “toward”",
+   "score": 14,
+   "sensitive_records": 10,
+   "entries": 3,
+   "occurrences": 3,
+   "meanings": 2,
+   "rank": 9
+  },
+  {
+   "expr": "qevarin",
+   "label": "וקברין at XII 11: “and tombs” or “buried”",
+   "score": 14,
+   "sensitive_records": 8,
+   "entries": 1,
+   "occurrences": 1,
+   "meanings": 2,
+   "rank": 10
+  },
+  {
+   "expr": "tahat",
+   "label": "תחת “under / below”",
+   "score": 14,
+   "sensitive_records": 7,
+   "entries": 18,
+   "occurrences": 21,
+   "meanings": 2,
+   "rank": 11
+  },
+  {
+   "expr": "shaveh",
+   "label": "the Shaveh (השוא)",
+   "score": 12,
+   "sensitive_records": 5,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 2,
+   "rank": 12
+  },
+  {
+   "expr": "zadok",
+   "label": "Zadok (צדוק)",
+   "score": 12,
+   "sensitive_records": 5,
+   "entries": 3,
+   "occurrences": 3,
+   "meanings": 3,
+   "rank": 13
+  },
+  {
+   "expr": "dir_sheb",
+   "label": "“that is in the DIRECTION of X” (ש + ב + direction + place)",
+   "score": 11,
+   "sensitive_records": 8,
+   "entries": 5,
+   "occurrences": 5,
+   "meanings": 2,
+   "rank": 14
+  },
+  {
+   "expr": "melah",
+   "label": "ha-Melaḥ / ha-Melah (המלח, שבמלח)",
+   "score": 11,
+   "sensitive_records": 8,
+   "entries": 3,
+   "occurrences": 3,
+   "meanings": 5,
+   "rank": 15
+  },
+  {
+   "expr": "tsuq",
+   "label": "צוק “gorge / peak”",
+   "score": 11,
+   "sensitive_records": 6,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 2,
+   "rank": 16
+  },
+  {
+   "expr": "janoah",
+   "label": "the word before “north” at XII 10",
+   "score": 11,
+   "sensitive_records": 5,
+   "entries": 1,
+   "occurrences": 1,
+   "meanings": 3,
+   "rank": 17
+  },
+  {
+   "expr": "dir_adj",
+   "label": "“the northern/eastern … X” (direction adjective)",
+   "score": 10,
+   "sensitive_records": 5,
+   "entries": 11,
+   "occurrences": 11,
+   "meanings": 2,
+   "rank": 18
+  },
+  {
+   "expr": "tsofa_attach",
+   "label": "what “facing” describes: the entry’s first landmark noun or the nearest noun",
+   "score": 9,
+   "sensitive_records": 6,
+   "entries": 5,
+   "occurrences": 5,
+   "meanings": 2,
+   "rank": 19
+  },
+  {
+   "expr": "shit",
+   "label": "שית “pit”",
+   "score": 8,
+   "sensitive_records": 6,
+   "entries": 6,
+   "occurrences": 6,
+   "meanings": 2,
+   "rank": 20
+  },
+  {
+   "expr": "amot_bare",
+   "label": "a cubit measure without “dig” (distance phrases)",
+   "score": 8,
+   "sensitive_records": 4,
+   "entries": 6,
+   "occurrences": 6,
+   "meanings": 2,
+   "rank": 21
+  },
+  {
+   "expr": "enter_number",
+   "label": "“as you enter … N cubits”: the number after “as you enter”",
+   "score": 8,
+   "sensitive_records": 4,
+   "entries": 3,
+   "occurrences": 3,
+   "meanings": 2,
+   "rank": 22
+  },
+  {
+   "expr": "shovakh",
+   "label": "שובך “dovecote”",
+   "score": 7,
+   "sensitive_records": 5,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 4,
+   "rank": 23
+  },
+  {
+   "expr": "biah",
+   "label": "ביאה “entrance / way in”",
+   "score": 7,
+   "sensitive_records": 4,
+   "entries": 5,
+   "occurrences": 5,
+   "meanings": 2,
+   "rank": 24
+  },
+  {
+   "expr": "dir_min",
+   "label": "“from/on the DIRECTION” (מן + direction)",
+   "score": 7,
+   "sensitive_records": 4,
+   "entries": 4,
+   "occurrences": 4,
+   "meanings": 2,
+   "rank": 25
+  },
+  {
+   "expr": "yam",
+   "label": "ים: “the sea” (= west) or “basin”",
+   "score": 6,
+   "sensitive_records": 5,
+   "entries": 4,
+   "occurrences": 4,
+   "meanings": 2,
+   "rank": 26
+  },
+  {
+   "expr": "dir_compound",
+   "label": "two direction words side by side: two clauses or one compound direction",
+   "score": 6,
+   "sensitive_records": 3,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 2,
+   "rank": 27
+  },
+  {
+   "expr": "pi",
+   "label": "פה “mouth” in a place description",
+   "score": 5,
+   "sensitive_records": 3,
+   "entries": 7,
+   "occurrences": 7,
+   "meanings": 2,
+   "rank": 28
+  },
+  {
+   "expr": "xii10_opening",
+   "label": "פתח אצפון at XII 10: “its opening (is to the) north” or “its opening is hidden”",
+   "score": 5,
+   "sensitive_records": 3,
+   "entries": 1,
+   "occurrences": 1,
+   "meanings": 2,
+   "rank": 29
+  },
+  {
+   "expr": "x17_landmark",
+   "label": "the landmark at X 17",
+   "score": 4,
+   "sensitive_records": 3,
+   "entries": 1,
+   "occurrences": 1,
+   "meanings": 3,
+   "rank": 30
+  },
+  {
+   "expr": "amot_unit",
+   "label": "the unit word at X 6 and X 13: cubits or feet",
+   "score": 4,
+   "sensitive_records": 2,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 2,
+   "rank": 31
+  },
+  {
+   "expr": "neged",
+   "label": "נגד “opposite”",
+   "score": 4,
+   "sensitive_records": 2,
+   "entries": 3,
+   "occurrences": 3,
+   "meanings": 3,
+   "rank": 32
+  },
+  {
+   "expr": "dir_suffix",
+   "label": "“on its north/east side” (direction + pronoun suffix)",
+   "score": 3,
+   "sensitive_records": 2,
+   "entries": 3,
+   "occurrences": 4,
+   "meanings": 3,
+   "rank": 33
+  },
+  {
+   "expr": "tseriah",
+   "label": "צריח “underground chamber / tower”",
+   "score": 3,
+   "sensitive_records": 2,
+   "entries": 6,
+   "occurrences": 7,
+   "meanings": 2,
+   "rank": 34
+  },
+  {
+   "expr": "dig_n",
+   "label": "“dig N cubits” (חפור/חפר + אמות + number)",
+   "score": 2,
+   "sensitive_records": 1,
+   "entries": 26,
+   "occurrences": 26,
+   "meanings": 2,
+   "rank": 35
+  },
+  {
+   "expr": "regem",
+   "label": "הרגם / הרגב “the heap / boulder”",
+   "score": 1,
+   "sensitive_records": 1,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 3,
+   "rank": 36
+  },
+  {
+   "expr": "bor",
+   "label": "בור “cistern / pit”",
+   "score": 0,
+   "sensitive_records": 0,
+   "entries": 9,
+   "occurrences": 10,
+   "meanings": 2,
+   "rank": 37
+  },
+  {
+   "expr": "hafor_form",
+   "label": "the form of חפור: “dig!” or “buried”",
+   "score": 0,
+   "sensitive_records": 0,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 2,
+   "rank": 38
+  },
+  {
+   "expr": "solomon",
+   "label": "Solomon (שלומו)",
+   "score": 0,
+   "sensitive_records": 0,
+   "entries": 2,
+   "occurrences": 2,
+   "meanings": 2,
+   "rank": 39
+  }
+ ]
+}

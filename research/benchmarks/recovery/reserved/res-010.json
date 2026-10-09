@@ -1,0 +1,99 @@
+{
+  "case_id": "res-010",
+  "batch": "reserved",
+  "instruction": "In the vaulted water-store across the street from the bath-house, entered by the stair: at the window in its south end, below the upper outlet, 2 cubits: [deposit].",
+  "context": "Redacted site description: a Roman country town buried by a volcanic eruption and excavated in modern times. Street fountains were fed by lead pipes from masonry water towers; the town had several public baths, theatres, temples and many house cisterns.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "water tower (masonry pillar)",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "street corner (north-east corner of a city block)"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": "preserved about 6 m high",
+        "notes": "Vertical groove for the feed pipe on one side; a small open tank once on top; impressions of lead pipes and some pipes preserved in the lime crust."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "reservoir",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "large theatre (open space between it, a colonnaded forum and a palaestra)"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": null,
+        "notes": "Deep; square outside and round inside; thought to hold water for sprinkling the theatre audience."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "small reservoir in a room",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "temple precinct near the theatres (room at the south-west corner of the colonnade)"
+        },
+        "opening": "reached by three steps",
+        "date": "D",
+        "dimensions": null,
+        "notes": "At the left near the entrance of an irregular room used for secret rites; a niche on its north side."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "cistern",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "public baths near the forum (inside, in the furnace room)"
+        },
+        "opening": null,
+        "date": "D",
+        "dimensions": null,
+        "notes": "Beyond the three cylindrical water tanks of the furnace room; fed partly by rain-water from the roof and partly by a feed pipe from the town system."
+      }
+    },
+    {
+      "id": "c5",
+      "features": {
+        "type": "covered reservoir",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "public baths near the forum (across the street from them)"
+        },
+        "opening": "two stairways and three windows; the window at the south end is reached from one stairway",
+        "date": "D",
+        "dimensions": "about 15 x 4 m; holds about 360 cubic metres when filled to the window sill",
+        "notes": "Built partly below the level of the sidewalk and covered by a vault; rooms once stood on its flat roof. Two outlets; grooves for a bronze slide survive. Probably built in the early years of the Roman colony."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "direction_word_lost",
+    "distance_missing",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "How high above the floor of the chosen water-store is its upper outlet?",
+  "withheld_options": [
+    "at floor level",
+    "about 1 m",
+    "about 2 m",
+    "at the top of the wall",
+    "unknown"
+  ],
+  "key_sha256": "bc1bcf148b1b975ad0ac65071dc9e103941d3dc2a111172b0a304d2f724ddf69"
+}

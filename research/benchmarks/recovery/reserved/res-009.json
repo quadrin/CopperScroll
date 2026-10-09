@@ -1,0 +1,98 @@
+{
+  "case_id": "res-009",
+  "batch": "reserved",
+  "instruction": "At the gate of the house of prayer that stands outside the village, under the threshold, by the door-post that has shifted: [deposit].",
+  "context": "Redacted site description: an upland village built among ancient remains in a hilly region. Its best-known ruin is a large building of columns whose stone façade, with three doors, is partly used as a house; a columned porch stood in front of it. Rock-cut tombs are reported around the village.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "rock-cut tomb with three vaulted chambers",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "village (exact place not recorded)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": "each chamber holds two bodies",
+        "notes": "Reported by an earlier traveller among several tombs examined at the village; once a pilgrimage tomb."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "side doorway with stone threshold",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "village centre (inside the village)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": null,
+        "notes": "Side door in the same façade, west of the main door (from the published plan)."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "columned porch in front of the façade",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "village centre (inside the village)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": null,
+        "notes": "Pedestals in place; double columns at the corners; one column still carries its architrave; the architrave over the central bay was probably raised to a point."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "side doorway with stone threshold",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "village centre (inside the village)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": null,
+        "notes": "Side door in the same façade, east of the main door (from the published plan)."
+      }
+    },
+    {
+      "id": "c5",
+      "features": {
+        "type": "doorway with stone threshold (main door of a columned building)",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "village centre (inside the village)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": null,
+        "notes": "Main door of the almost complete stone façade; the doors now lead into a modern mud-and-stone house built against the ruin. Mouldings of the door posts drawn by the surveyors."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "distance_missing",
+    "date_unknown",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "On which side of the chosen gate is the shifted door-post?",
+  "withheld_options": [
+    "east",
+    "west",
+    "both",
+    "unknown"
+  ],
+  "key_sha256": "bd4768c86d4ce55c458d253345dba4e7ea3f6cf95291fcb531308b9c2a4cb496"
+}

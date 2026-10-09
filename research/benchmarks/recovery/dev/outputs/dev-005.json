@@ -1,0 +1,15 @@
+{
+ "case_id": "dev-005",
+ "reasons": [
+  "parsed instruction: {\"direction\": null, \"distance\": {\"kind\": \"band\", \"max_m\": 720.0, \"min_m\": 480.0, \"stated\": \"1200 cubits\"}, \"opening\": null, \"reference\": \"the farm\", \"target_class\": \"tower\", \"type_term\": \"watchtower\"}",
+  "c1: supported: type=T (type 'field watchtower' is a tower); distance=T (distance 525.5 m is inside 480.0-720.0 m (1200 cubits)); date=T (date U passes)",
+  "c2: supported: type=T (type 'field watchtower' is a tower); distance=T (distance 553.9 m is inside 480.0-720.0 m (1200 cubits)); date=T (date D passes)",
+  "c3: contradicted: type=? (type 'structure, probably a field watchtower' may or may not be a tower); distance=F (distance 219.2 m is outside 480.0-720.0 m (1200 cubits)); date=T (date U passes)",
+  "c4: contradicted: type=T (type 'field watchtower' is a tower); distance=F (distance 1225.9 m is outside 480.0-720.0 m (1200 cubits)); date=T (date D passes)",
+  "c5: contradicted: type=T (type 'field watchtower' is a tower); distance=F (distance 872.8 m is outside 480.0-720.0 m (1200 cubits)); date=T (date D passes)",
+  "decision: more than one candidate survives: c1, c2",
+  "withheld: no candidate selected and the instruction does not state it"
+ ],
+ "selected": "insufficient_evidence",
+ "withheld_prediction": "unknown"
+}

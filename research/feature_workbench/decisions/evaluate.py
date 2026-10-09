@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import copy
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 
@@ -16,12 +17,26 @@ from pathlib import Path
 MODULE_DIR = Path(__file__).resolve().parent
 DEFAULT_REPO = MODULE_DIR.parents[2]
 QUEUE_PATH = "research/measurements/queue.json"
+DISCRIMINATE_PATH = MODULE_DIR / "discriminate.py"
 STATUSES = {"compatible", "contradicted", "unknown", "mixed", "info"}
 REQUEST_STATES = {"sent_pending", "related_request_pending", "not_requested"}
 
 
 def _read_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _discriminate():
+    """Load the logical discrimination search beside this evaluator.
+
+    build.py loads this file by path, so a package-relative import is unavailable.
+    """
+    spec = importlib.util.spec_from_file_location("decisions_discriminate", DISCRIMINATE_PATH)
+    if spec is None or spec.loader is None:
+        raise ValueError(f"Cannot load {DISCRIMINATE_PATH}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 def _validate(plans: dict, repo_root: Path) -> None:
@@ -83,6 +98,10 @@ def build(repo_root: Path) -> dict:
     repo_root = Path(repo_root).resolve()
     plans = _read_json(MODULE_DIR / "plans.json")
     _validate(plans, repo_root)
+    discrimination_spec = _read_json(MODULE_DIR / "discrimination.json")
+    # Logical separation of the surviving models. It reads plans.json and the
+    # relationships/inventory evaluators without changing any status.
+    discrimination = _discriminate().analyse(repo_root, copy.deepcopy(plans), discrimination_spec)
     queue_bytes = (repo_root / QUEUE_PATH).read_bytes()
     queue = json.loads(queue_bytes)
     # Import the historical source verbatim; its execution states are not current
@@ -144,9 +163,9 @@ def build(repo_root: Path) -> dict:
         "id": "decisions",
         "number": 6,
         "title": "Decision queue",
-        "summary": "Seven bounded record dependencies with finite possible outcomes and their branch consequences.",
-        "scope": "Planning from the reviewed records as of 8 October 2026; six historical tracks remain as recorded. No outcome selection constitutes an observation or a research result.",
-        "sources": plans["sources"],
+        "summary": "Seven bounded record dependencies with finite possible outcomes, their branch consequences and an exact search for the records that separate the surviving models.",
+        "scope": "Planning from the reviewed records as of 8 October 2026; six historical tracks remain as recorded. No outcome selection constitutes an observation or a research result. Discrimination is logical only: no probability or information gain.",
+        "sources": plans["sources"] + discrimination_spec["sources"],
         "features": [],
         "observations": [],
         "states": [],
@@ -159,6 +178,7 @@ def build(repo_root: Path) -> dict:
             "priority_scale": plans["priority_scale"],
             "tasks": plans["tasks"],
             "selection_policy": plans["selection_policy"],
+            "discrimination": discrimination,
         },
     }
 

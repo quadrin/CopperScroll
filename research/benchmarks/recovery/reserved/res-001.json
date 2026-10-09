@@ -1,0 +1,70 @@
+{
+  "case_id": "res-001",
+  "batch": "reserved",
+  "instruction": "In the great pool on the height in the middle of the town, at its steps going down, on the side of the sunset, 5 cubits: [deposit].",
+  "context": "Redacted site description: a town on a ridge in a basalt upland, above a ravine on its north side that is crossed by an ancient one-arched bridge. Nineteenth-century travellers describe several large stone-lined pools in and near the town; their notes are brief and sometimes disagree.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "pool",
+        "position": {
+          "bearing_deg": 0,
+          "distance_m": null,
+          "relative_to": "town centre (north, by the ravine and the road from the bridge)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": "large but shallow",
+        "notes": "Walls half fallen; 'more like a pond'. Two travellers mention a pool here; they may describe one pool or two."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "reservoir, stone-lined",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": 0,
+          "relative_to": "town centre (highest point)"
+        },
+        "opening": "flights of steps down to the water",
+        "date": "U",
+        "dimensions": "circular, about 90-100 m across; 9-15 m deep (reports differ)",
+        "notes": "Lined with squared stones; the main houses of the present village stand around it. Women fetch water by narrow stone steps."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "reservoir, stone-lined",
+        "position": {
+          "bearing_deg": 0,
+          "distance_m": null,
+          "relative_to": "town centre (north side, near the government house)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": "larger circumference than the central pool but shallower; one traveller gives about 600 paces round",
+        "notes": "Better preserved than the others; one traveller places a 'lake' of this size on the north-west of the town. Once a watering place for the pilgrim caravan."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "reports_conflict",
+    "date_unknown",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "From which direction is the chosen pool filled?",
+  "withheld_options": [
+    "from the north",
+    "from the south",
+    "from the east",
+    "from the west",
+    "by rain only",
+    "unknown"
+  ],
+  "key_sha256": "4fe420f62c39e9a1c3c5334ef126f1df7a2e967ba03323653417c4a6a539343a"
+}

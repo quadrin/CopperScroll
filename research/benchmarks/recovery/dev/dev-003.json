@@ -1,0 +1,84 @@
+{
+ "case_id": "dev-003",
+ "batch": "development",
+ "instruction": "In the tomb with the hewn forecourt, east of the wall at the edge of the village, at four hundred cubits.",
+ "context": "A farmed slope below an ancient village in a fertile valley, with rock-cut burial caves that have hewn forecourts, cisterns, shafts, quarries and animal pens. Candidate positions are grid bearings (degrees clockwise from grid north) and distances in metres from a point on the wall remains at the village's southern edge (relative_to: boundary_wall), computed from the survey's map references. The survey dates no single feature, so every date is U.",
+ "candidates": [
+  {
+   "id": "c1",
+   "features": {
+    "type": "burial cave with rock-hewn courtyard",
+    "position": {
+     "bearing_deg": 99.7,
+     "distance_m": 190.7,
+     "relative_to": "boundary_wall",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "west",
+    "date": "U",
+    "notes": "survey site 16; position from its printed map reference"
+   }
+  },
+  {
+   "id": "c2",
+   "features": {
+    "type": "burial cave with rock-hewn courtyard",
+    "position": {
+     "bearing_deg": 255.5,
+     "distance_m": 83.7,
+     "relative_to": "boundary_wall",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "east",
+    "date": "U",
+    "notes": "survey site 20; position from its printed map reference"
+   }
+  },
+  {
+   "id": "c3",
+   "features": {
+    "type": "large cave",
+    "position": {
+     "bearing_deg": 105.2,
+     "distance_m": 221.7,
+     "relative_to": "boundary_wall",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": null,
+    "date": "U",
+    "notes": "survey site 14; position from its printed map reference"
+   }
+  },
+  {
+   "id": "c4",
+   "features": {
+    "type": "burial cave with rock-hewn courtyard",
+    "position": {
+     "bearing_deg": 229.0,
+     "distance_m": 50.3,
+     "relative_to": "boundary_wall",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "east",
+    "date": "U",
+    "notes": "survey site 28; position from its printed map reference"
+   }
+  }
+ ],
+ "degradations": [
+  "one_candidate_unrecorded"
+ ],
+ "withheld_question": "Which side of the chosen feature has its entrance?",
+ "withheld_options": [
+  "north",
+  "east",
+  "south",
+  "west",
+  "unknown"
+ ],
+ "key_sha256": "c91cf2c845fd2bc65e5624f6a85d928ca4a1dce7123967cb3ca5cfaa1d5420a5"
+}

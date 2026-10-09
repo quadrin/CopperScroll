@@ -64,6 +64,7 @@ S577 and S1295 match no other condition, so they do not change any count.
 ## Limits
 
 - **What a FAIL means here.** "Cisterns: none" describes the site, not the 1 km sector to the north. A FAIL means that the survey reports no cisterns at the site and that no other recorded pit could qualify. It does not mean that anyone searched the sector. The first run's one FAIL (S676, "no tombs were found") has the same limit.
+  - A later [observation-process audit](../../observation_process/README.md) (exploratory, made after the result) measured this: no absence statement gives a search radius, and a site record covers at most about 1% of the sector. If an absence counts only within its scope, f = 0 in every row (headline 0/0/333). Zertal's own volumes record cisterns in the sector for S695 and S1296. The registered numbers stand.
 - **Unequal evidence.** Only Zertal's entries have a standard "Cisterns" field; the Highlands entries and the SWP do not. So f now depends mostly on which survey covers a unit: every new FAIL is a Zertal unit, and 19 of the 60 Zertal units in the main set now FAIL. f describes the record, not the ground.
 - **Entries that contradict themselves.**
   - Rujm es-Siʿa (S1173): the data block says "Cisterns: none", but the text reports Guérin's cisterns. They lie to the south, so the FAIL holds by rule.

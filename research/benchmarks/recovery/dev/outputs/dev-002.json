@@ -1,0 +1,15 @@
+{
+ "case_id": "dev-002",
+ "reasons": [
+  "parsed instruction: {\"direction\": \"W\", \"distance\": {\"kind\": \"band\", \"max_m\": 72.0, \"min_m\": 48.0, \"stated\": \"120 cubits\"}, \"opening\": null, \"reference\": \"the wall at the edge of the village\", \"target_class\": \"tomb\", \"type_term\": \"tomb\"}",
+  "c1: supported: type=T (type 'burial cave with rock-hewn courtyard' is a tomb); direction=T (bearing 241.2 deg is inside the W sector 225-315); distance=T (distance 58.2 m is inside 48.0-72.0 m (120 cubits)); date=T (date U passes)",
+  "c2: contradicted: type=T (type 'burial cave with rock-hewn courtyard' is a tomb); direction=T (bearing 244.8 deg is inside the W sector 225-315); distance=F (distance 72.9 m is outside 48.0-72.0 m (120 cubits)); date=T (date U passes)",
+  "c3: supported: type=T (type 'burial cave with rock-hewn courtyard' is a tomb); direction=T (bearing 243.8 deg is inside the W sector 225-315); distance=T (distance 70.2 m is inside 48.0-72.0 m (120 cubits)); date=T (date U passes)",
+  "c4: supported: type=T (type 'burial cave with rock-hewn courtyard' is a tomb); direction=T (bearing 229.0 deg is inside the W sector 225-315); distance=T (distance 50.3 m is inside 48.0-72.0 m (120 cubits)); date=T (date U passes)",
+  "c5: contradicted: type=T (type 'burial cave with rock-hewn courtyard' is a tomb); direction=T (bearing 255.5 deg is inside the W sector 225-315); distance=F (distance 83.7 m is outside 48.0-72.0 m (120 cubits)); date=T (date U passes)",
+  "decision: more than one candidate survives: c1, c3, c4",
+  "withheld: no candidate selected and the instruction does not state it"
+ ],
+ "selected": "insufficient_evidence",
+ "withheld_prediction": "unknown"
+}

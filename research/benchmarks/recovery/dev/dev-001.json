@@ -1,0 +1,98 @@
+{
+ "case_id": "dev-001",
+ "batch": "development",
+ "instruction": "In the tomb with the hewn forecourt, west of the wall at the edge of the village, at two hundred cubits.",
+ "context": "A farmed slope below an ancient village in a fertile valley, with rock-cut burial caves that have hewn forecourts, cisterns, shafts, quarries and animal pens. Candidate positions are grid bearings (degrees clockwise from grid north) and distances in metres from a point on the wall remains at the village's southern edge (relative_to: boundary_wall), computed from the survey's map references. The survey dates no single feature, so every date is U.",
+ "candidates": [
+  {
+   "id": "c1",
+   "features": {
+    "type": "burial cave with rock-hewn courtyard",
+    "position": {
+     "bearing_deg": 229.0,
+     "distance_m": 50.3,
+     "relative_to": "boundary_wall",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "east",
+    "date": "U",
+    "notes": "survey site 28; position from its printed map reference"
+   }
+  },
+  {
+   "id": "c2",
+   "features": {
+    "type": "burial cave with rock-hewn courtyard",
+    "position": {
+     "bearing_deg": 99.7,
+     "distance_m": 190.7,
+     "relative_to": "boundary_wall",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "west",
+    "date": "U",
+    "notes": "survey site 16; position from its printed map reference"
+   }
+  },
+  {
+   "id": "c3",
+   "features": {
+    "type": "burial cave with rock-hewn courtyard",
+    "position": {
+     "bearing_deg": 244.8,
+     "distance_m": 72.9,
+     "relative_to": "boundary_wall",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "north",
+    "date": "U",
+    "notes": "survey site 23; position from its printed map reference"
+   }
+  },
+  {
+   "id": "c4",
+   "features": {
+    "type": "burial cave with rock-hewn courtyard",
+    "position": {
+     "bearing_deg": 255.5,
+     "distance_m": 83.7,
+     "relative_to": "boundary_wall",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "east",
+    "date": "U",
+    "notes": "survey site 20; position from its printed map reference"
+   }
+  },
+  {
+   "id": "c5",
+   "features": {
+    "type": "burial cave with rock-hewn courtyard",
+    "position": {
+     "bearing_deg": 243.8,
+     "distance_m": 70.2,
+     "relative_to": "boundary_wall",
+     "kind": "plan",
+     "precision_m": 1
+    },
+    "opening": "north",
+    "date": "U",
+    "notes": "survey site 21; position from its printed map reference"
+   }
+  }
+ ],
+ "degradations": [],
+ "withheld_question": "Which side of the chosen feature has its entrance?",
+ "withheld_options": [
+  "north",
+  "east",
+  "south",
+  "west",
+  "unknown"
+ ],
+ "key_sha256": "aee13a7b67733e8a479b97019989c109393f852ca3eca2e192780e0666f6ce4b"
+}

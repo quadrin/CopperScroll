@@ -1,0 +1,5715 @@
+{
+ "schema_version": 1,
+ "id": "kohlit-landmark-chain",
+ "date": "2026-10-08",
+ "status": "Exploratory. No identification, deposit or outcome-ledger claim. Registered results are cited, not changed.",
+ "method": {
+  "lesson": "Advance through successive physical reference points, each fixed by a different kind of evidence. Set aside stated distances until their end points are fixed.",
+  "relation_use": "A relation is 'used' when its direction, position, adjacency or date judgement helped select the model. A screen that only noted a feature class (a pool word within 2 km) is listed under 'screens'.",
+  "rules": [
+   "Every landmark prediction uses only relations that were not used to select its model.",
+   "Every prediction names what should be found, where, in which record, and what result would contradict it.",
+   "A prediction on an already inspected record is exploratory, not an unseen test.",
+   "Locating an opening or basin does not date its ancient use.",
+   "Silence is never absence: a missing feature stays unknown unless a source states the absence."
+  ],
+  "tiers": {
+   "1": "record supplied or open access, not yet read for this relation",
+   "2": "record already requested (ACTIVE_TEST pending list)",
+   "3": "library scan needed; not requested",
+   "4": "archive order, imagery purchase or fieldwork; not requested",
+   "5": "record already inspected, so exploratory only"
+  }
+ },
+ "inputs": [
+  "research/ACTIVE_TEST.md",
+  "research/feature_workbench/relationships/model.json",
+  "research/feature_workbench/states/register.json",
+  "research/feature_workbench/coverage/README.md",
+  "research/agent_review_2026-10-07/followup/A_jericho_spring_reservoir.md",
+  "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+  "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+  "research/rarity/kohlit/README.md",
+  "research/rarity/kohlit/stage2/RESULTS.md",
+  "research/rarity/kohlit/stage2/addendum_s4/ADDENDUM.md",
+  "research/rarity/kohlit/stage2/addendum_s2/ADDENDUM.md",
+  "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv",
+  "text/translation_en.json",
+  "text/readings.json",
+  "research/schematics/entries/entry_11_60_variants.py"
+ ],
+ "relations": [
+  {
+   "id": "R-E4-MOUND",
+   "entry": "4",
+   "lines": "I 9",
+   "text": "Koḥlit has a mound (tell) or ruin heap",
+   "kind": "textual",
+   "reading": "agreed letters; meaning disputed",
+   "dependencies": [
+    "D-E4-TEL-MEANING"
+   ],
+   "note": "Lexicon rates the meaning medium: mound (Puech) or ruins (Eshel)."
+  },
+  {
+   "id": "R-E4-CONDUIT-N",
+   "entry": "4",
+   "lines": "I 11",
+   "text": "an opening at the edge of the conduit, on the north",
+   "kind": "textual",
+   "reading": "disputed",
+   "dependencies": [
+    "D-E4-MPWGL"
+   ],
+   "note": "Milik's word division adds a heap landmark; Puech reads one word about the tithe."
+  },
+  {
+   "id": "R-E4-CLEFT-6C",
+   "entry": "4",
+   "lines": "I 12",
+   "text": "six cubits from that opening to the rock cleft or place of immersion",
+   "kind": "textual",
+   "reading": "disputed",
+   "dependencies": [
+    "D-E4-NQRT"
+   ],
+   "note": "A stated distance. Use it only after both end points are fixed by other evidence."
+  },
+  {
+   "id": "R-E11-POOL-EAST",
+   "entry": "11",
+   "lines": "II 13",
+   "text": "a pool east of Koḥlit",
+   "kind": "textual",
+   "reading": "agreed",
+   "dependencies": [
+    "D-E11-EAST-SENSE"
+   ],
+   "note": "Survey-level test: open pool at 45°–135° within 1 km, or in the site's eastern part (pre-registration §4)."
+  },
+  {
+   "id": "R-E11-POOL-NCORNER",
+   "entry": "11",
+   "lines": "II 13–14",
+   "text": "the pool has a northern corner",
+   "kind": "textual",
+   "reading": "agreed",
+   "dependencies": [],
+   "note": "Recorded only in the rarity count. The project translation reads 'corner'; readings.json records no edition dispute."
+  },
+  {
+   "id": "R-E11-POOL-PERIOD",
+   "entry": "11",
+   "lines": "II 13",
+   "text": "the pool existed in the project window (50 BCE–70 CE, extended to 135 CE)",
+   "kind": "project",
+   "reading": "not textual",
+   "dependencies": [],
+   "note": "Project window from the exploratory registry, not a date given by the Scroll."
+  },
+  {
+   "id": "R-E15-CISTERN-PILLAR-N",
+   "entry": "15",
+   "lines": "IV 1–2",
+   "text": "a great cistern [in or north of Koḥ]lit, with a pillar on its north side",
+   "kind": "textual",
+   "reading": "restored",
+   "dependencies": [
+    "D-E15-RESTORED"
+   ],
+   "note": "Both the name and the direction are Puech's restorations; Milik saw only …QH."
+  },
+  {
+   "id": "R-E16-CONDUIT-TO-POOL",
+   "entry": "16",
+   "lines": "IV 3–4",
+   "text": "a conduit that goes to [the pool], 14, 40 or 41 cubits as you enter",
+   "kind": "textual",
+   "reading": "restored",
+   "dependencies": [
+    "D-E16-GOAL",
+    "D-E16-NUMBER"
+   ],
+   "note": "The goal and the number are restored. The Koḥlit link is only contextual."
+  },
+  {
+   "id": "R-E19-EASTERN-PIT-N",
+   "entry": "19",
+   "lines": "IV 11–12",
+   "text": "the eastern pit north of Koḥlit (so at least two pits lie north)",
+   "kind": "textual",
+   "reading": "disputed",
+   "dependencies": [
+    "D-E19-ALLEGRO"
+   ],
+   "note": "Allegro's reading removes the place name."
+  },
+  {
+   "id": "R-E60-PIT-N",
+   "entry": "60",
+   "lines": "XII 10",
+   "text": "a pit north of Koḥlit",
+   "kind": "textual",
+   "reading": "agreed geometry (branch A)",
+   "dependencies": [
+    "D-E60-SECOND-WORD"
+   ],
+   "note": "Survey-level test: non-funerary cavity at 315°–45° within 1 km (pre-registration §4)."
+  },
+  {
+   "id": "R-E60-PIT-PERIOD",
+   "entry": "60",
+   "lines": "XII 10",
+   "text": "the pit was open in the project window",
+   "kind": "project",
+   "reading": "not textual",
+   "dependencies": [],
+   "note": "Needs a dated accessible-use interval, not a construction phase or a first photograph."
+  },
+  {
+   "id": "R-E60-GRAVES-N-SECTOR",
+   "entry": "60",
+   "lines": "XII 11",
+   "text": "graves in the same northern sector (survey-level stand-in for 'tombs at its mouth')",
+   "kind": "textual_proxy",
+   "reading": "agreed (branch A)",
+   "dependencies": [
+    "D-E60-BURIED"
+   ],
+   "note": "Rarity C3 survey level: graves at 315°–45° within 1 km. Weaker than the text."
+  },
+  {
+   "id": "R-E60-TOMBS-AT-MOUTH",
+   "entry": "60",
+   "lines": "XII 11",
+   "text": "tombs at the pit's mouth (within 10 m of the opening)",
+   "kind": "textual",
+   "reading": "agreed (branch A)",
+   "dependencies": [
+    "D-E60-BURIED"
+   ],
+   "note": "Rarity C3 text level: within 10 m of the C2 opening, or a source phrase of adjacency."
+  },
+  {
+   "id": "R-E60-JOINT-ACCESS",
+   "entry": "60",
+   "lines": "XII 10–11",
+   "text": "the pit mouth and the tombs were open together in the project window",
+   "kind": "project",
+   "reading": "not textual",
+   "dependencies": [
+    "D-E60-BURIED"
+   ],
+   "note": "Workbench predicate joint-accessibility. Separate dates or a cut relation do not establish it."
+  },
+  {
+   "id": "R-E60-OPENING-N",
+   "entry": "60",
+   "lines": "XII 10",
+   "text": "the pit's opening faces north",
+   "kind": "textual",
+   "reading": "disputed",
+   "dependencies": [
+    "D-E60-OPENING"
+   ],
+   "note": "Milik's reading. A vertical shaft has no facing until a side entrance is defined."
+  },
+  {
+   "id": "R-E60-OPENING-HIDDEN",
+   "entry": "60",
+   "lines": "XII 10",
+   "text": "the pit's opening is hidden",
+   "kind": "textual",
+   "reading": "disputed",
+   "dependencies": [
+    "D-E60-OPENING"
+   ],
+   "note": "Puech's reading. Later rubble is not the ancient concealment."
+  },
+  {
+   "id": "R-E60-AT-JANOAH",
+   "entry": "60",
+   "lines": "XII 10",
+   "text": "the pit is at Janoaḥ (Yanun)",
+   "kind": "textual",
+   "reading": "disputed",
+   "dependencies": [
+    "D-E60-SECOND-WORD"
+   ],
+   "note": "Lefkovits and Beyer. Puech rejects it on the engraving; the frozen XII 10 protocol decides."
+  },
+  {
+   "id": "R-ANCHOR-PERIOD",
+   "entry": null,
+   "lines": null,
+   "text": "the anchor is a settlement or ruin recorded before 70 CE (main set: Hellenistic or Roman recorded)",
+   "kind": "project",
+   "reading": "not textual",
+   "dependencies": [],
+   "note": "Rarity unit rule (pre-registration §2). A unit without Hellenistic or Roman records enters only the pre-70 sensitivity set."
+  }
+ ],
+ "reading_dependencies": [
+  {
+   "id": "D-E4-TEL-MEANING",
+   "line": "I 9",
+   "alternatives": "בתל: mound (Puech 2015 pp. 13–14 n. 49) or 'ruins' (Eshel 2002)",
+   "effect": "A ruin heap need not be a tell."
+  },
+  {
+   "id": "D-E4-MPWGL",
+   "line": "I 11",
+   "alternatives": "מפוגל 'disqualified' (Puech 2006) or מפי גל 'from the mouth of the heap' (Milik)",
+   "effect": "Milik's division adds a heap landmark."
+  },
+  {
+   "id": "D-E4-NQRT",
+   "line": "I 12",
+   "alternatives": "ניקרת 'cleft' (Milik; Wolters; Eshel) or מקרת 'cold room' (Puech 2006); Puech 2015 restores a ה",
+   "effect": "A rock cleft or a built bath."
+  },
+  {
+   "id": "D-E11-EAST-SENSE",
+   "line": "II 13",
+   "alternatives": "'east of' or Lefkovits 'in the east of' (p. 135, via pre-registration §1)",
+   "effect": "Pool outside the site or in its eastern part."
+  },
+  {
+   "id": "D-E15-RESTORED",
+   "line": "IV 1",
+   "alternatives": "[כ]חלת restored (Puech 2006 'with near certainty'); Lefkovits שב[כ]חלת; Puech שב[צפון כ]חלת; Milik ···קה",
+   "effect": "The Koḥlit link and its direction are restorations."
+  },
+  {
+   "id": "D-E16-GOAL",
+   "line": "IV 3",
+   "alternatives": "ל[בר]כא 'to the pool' (Puech 2006; 2015 p. 48); 'to Hyrcania' (Eshel 2002 pp. 102–103); blank (Milik; Lefkovits)",
+   "effect": "The destination is restored."
+  },
+  {
+   "id": "D-E16-NUMBER",
+   "line": "IV 3–4",
+   "alternatives": "14 (Puech), 40 (Lefkovits) or 41 (Milik 1962) cubits; depth or distance disputed",
+   "effect": "The distance is restored."
+  },
+  {
+   "id": "D-E19-ALLEGRO",
+   "line": "IV 11",
+   "alternatives": "כחלת (Puech; Milik) or בחלה 'hole' (Allegro)",
+   "effect": "Allegro's reading has no place name."
+  },
+  {
+   "id": "D-E60-SECOND-WORD",
+   "line": "XII 10",
+   "alternatives": "שכנה 'situated' (Puech 2006), שבצח 'Smooth Rock' (Milik) or שבינח 'in Janoaḥ' (Lefkovits; Beyer)",
+   "effect": "Only Janoaḥ moves the pit away from Koḥlit. Frozen protocol fd3f334; no image read yet (ACTIVE_TEST Q1)."
+  },
+  {
+   "id": "D-E60-OPENING",
+   "line": "XII 10",
+   "alternatives": "פתח אצפון: 'opening to the north' (Milik 1960) or 'opening hidden' (Puech)",
+   "effect": "Facing is tested only under Milik's reading."
+  },
+  {
+   "id": "D-E60-BURIED",
+   "line": "XII 10–11",
+   "alternatives": "registry branch RB-B ('buried') drops the tombs landmark",
+   "effect": "Tomb relations apply to RB-M, RB-P and RB-L only."
+  },
+  {
+   "id": "D-KOHLIT-DISTRICT",
+   "line": "I 9; XII 10",
+   "alternatives": "Koḥlit as one locality or as a district (Goranson; Rashi)",
+   "effect": "If a district, entries 11 and 60 need not share one anchor."
+  }
+ ],
+ "records": [
+  {
+   "id": "REC-WBADB",
+   "title": "West Bank Archaeological Database (Greenberg and Keinan 2009)",
+   "citation": "WBADB_data1.xlsx, SHA-256 3db734cd…; rows cited by ID",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/README.md"
+  },
+  {
+   "id": "REC-RARITY",
+   "title": "Koḥlit rarity count, primary rules with Nigro, after both addenda",
+   "citation": "unit_results.csv (variant primary, nigro with)",
+   "inspection": "derived",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv"
+  },
+  {
+   "id": "REC-DORRELL",
+   "title": "Dorrell, The Spring at Jericho from Early Photographs",
+   "citation": "PEQ 125 (1993) pp. 95–97, 110–112; Figs 1–4, 13, 20–21, 24",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/A_jericho_spring_reservoir.md"
+  },
+  {
+   "id": "REC-SWP-III",
+   "title": "SWP Memoirs III (1883)",
+   "citation": "Tell es Sultan entry p. 220 (packet page 223): reservoir 24 × 40 ft east of the mound",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/stage2/RESULTS.md"
+  },
+  {
+   "id": "REC-SWP-II",
+   "title": "SWP Memoirs II (1882)",
+   "citation": "Khurbet Yanun p. 394; Kurn Surtubeh pp. 396–398",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/README.md"
+  },
+  {
+   "id": "REC-KENYON-II",
+   "title": "Kenyon, Excavations at Jericho II (1965)",
+   "citation": "pp. 2, 165, 169, 276–277 (D9), 516–545 (NS1 pp. 539–544); Figs 14 p. 35, 91 p. 168",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md"
+  },
+  {
+   "id": "REC-KENYON-III-TEXT",
+   "title": "Kenyon, Excavations at Jericho III, Text (1981)",
+   "citation": "pp. 3–4, 119–121, 172–174; frontispiece; Fig. 1 p. xxv",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md"
+  },
+  {
+   "id": "REC-KENYON-III-PLATES",
+   "title": "Kenyon, Excavations at Jericho III, plate volume (1981)",
+   "citation": "eastern section at local 37.50–38.00 m N / 8.17 m H; Pl. 111b; captions and errata",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null,
+   "note": "Not in the supplied text volume. Plate-volume page mapping unknown; no figure number guessed."
+  },
+  {
+   "id": "REC-KENYON-FIELD",
+   "title": "Kenyon Jericho field and working records",
+   "citation": "Trench II/Site O and N.S.1 field notes, plans and levels",
+   "inspection": "not_inspected",
+   "access": "archive_order",
+   "pending_request": null,
+   "note": "Kenyon III footnote placed them at Cambridge's Museum of Archaeology and Anthropology at publication time; current holding unverified."
+  },
+  {
+   "id": "REC-NIGRO-2011",
+   "title": "Nigro, Sala and Taha (eds) 2011, Archaeological Heritage in the Jericho Oasis",
+   "citation": "cat. 32, 36, 38, 53, 61, 85",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/stage2/RESULTS.md"
+  },
+  {
+   "id": "REC-GARSTANG-LIV",
+   "title": "Garstang Museum, Liverpool: Jericho papers",
+   "citation": "JG/8; pre-camp records and photographs north of the tell",
+   "inspection": "not_inspected",
+   "access": "requested_pending",
+   "pending_request": "Garstang Museum, Liverpool: Jericho papers JG/8; pre-camp records and photos north of the tell (sent 8 Oct UTC / 7 Oct LA)."
+  },
+  {
+   "id": "REC-PEF",
+   "title": "Palestine Exploration Fund archive",
+   "citation": "Garstang Papers 1930–36; pre-1948 photographs of Jericho",
+   "inspection": "not_inspected",
+   "access": "requested_pending",
+   "pending_request": "Palestine Exploration Fund: Garstang Papers 1930–36; pre-1948 photos of Jericho (sent 8 Oct UTC / 7 Oct LA)."
+  },
+  {
+   "id": "REC-NIGRO-RECORDS",
+   "title": "Sapienza Jericho expedition records (L. Nigro)",
+   "citation": "records of the ground north of Tell es-Sultan",
+   "inspection": "not_inspected",
+   "access": "requested_pending",
+   "pending_request": "Lorenzo Nigro, Sapienza: records of the ground north of Tell es-Sultan; replied; meeting proposed for 18–24 October."
+  },
+  {
+   "id": "REC-BSPAL-1032",
+   "title": "BayHStA BS Pal. 1032 (22 June 1918)",
+   "citation": "Tell es-Sultan and northern environs to Wadi en-Nueme; analog plate",
+   "inspection": "not_inspected",
+   "access": "archive_order",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/wave1/T09_T12_T19_landscape_field/imagery_catalogue.csv",
+   "note": "Reproduction must be ordered from the Kriegsarchiv; nothing ordered."
+  },
+  {
+   "id": "REC-BSPAL-1031",
+   "title": "BayHStA BS Pal. 1031 (2 July 1918)",
+   "citation": "4000-px download; contrast-enhanced crops",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/wave2/W2G_browser/REPORT.md"
+  },
+  {
+   "id": "REC-RAF-JERICHO",
+   "title": "RAF verticals 1944–48, north of Tell es-Sultan",
+   "citation": "PS30 5107, PS30 5137 (parallel strip PS32 5069/5070), 600 dpi",
+   "inspection": "not_inspected",
+   "access": "archive_order",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/wave2/W2G_browser/REPORT.md",
+   "note": "Hebrew University aerial archive; fee for high resolution; not ordered."
+  },
+  {
+   "id": "REC-SPRING-FIELD",
+   "title": "Sealed contexts at the ʿAin es-Sultan basin rim",
+   "citation": "finds sealed under the lowest course of the basin rim or curved spring-house wall, about 1 m behind the 1898 back wall (Dorrell p. 112)",
+   "inspection": "not_inspected",
+   "access": "fieldwork",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/A_jericho_spring_reservoir.md"
+  },
+  {
+   "id": "REC-KALLAI-1972",
+   "title": "Kallai, survey chapter in Kochavi (ed.) 1972",
+   "citation": "pp. 153–196; sites 28, 38, 65–66, 100, 115, 119, 130, 152; target pp. 172–173 with plan and captions",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+   "note": "NLI record returned 403; CMHL route not accessible. Hebrew, library only."
+  },
+  {
+   "id": "REC-ZOHAR-HA76",
+   "title": "Zohar, Tell Marjama (ʿEin Samiya), HA 76 (1981)",
+   "citation": "printed p. 19 / PDF 20",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md"
+  },
+  {
+   "id": "REC-MAZAR-1995",
+   "title": "Mazar, Excavations at Khirbet Marjameh, IEJ 45 (1995)",
+   "citation": "pp. 85–87, 95, 97; Figs 1, 5, 7, 16",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md"
+  },
+  {
+   "id": "REC-HIGHLANDS",
+   "title": "Finkelstein, Lederman and Bunimovitz 1997, Highlands of Many Cultures",
+   "citation": "pp. 536, 662–664, 699, 732–745, 821–831 (pages read for the rarity count and follow-ups)",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md"
+  },
+  {
+   "id": "REC-HIGHLANDS-700",
+   "title": "Highlands of Many Cultures, Tell er-Ras entry",
+   "citation": "pp. 700–702 (WBADB S990)",
+   "inspection": "not_inspected",
+   "access": "open_access_unread",
+   "pending_request": null,
+   "note": "Open-access TAU monograph; the rarity count coded only the WBADB components of S990."
+  },
+  {
+   "id": "REC-CORONA-DF040",
+   "title": "CORONA KH-4B DS1101-2168DF040 (26 Sept 1967)",
+   "citation": "tile _d; dark square at about 31.9892 N, 35.3363 E (±100 m)",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/D_corona_1967.md"
+  },
+  {
+   "id": "REC-RAF-SAMIYA",
+   "title": "RAF verticals 1945, ʿEin Samiya",
+   "citation": "PS32 5038, PS30 6054, 600 dpi",
+   "inspection": "not_inspected",
+   "access": "archive_order",
+   "pending_request": null,
+   "repo_path": "research/agent_review_2026-10-07/followup/D_corona_1967.md"
+  },
+  {
+   "id": "REC-IAA-CAVES",
+   "title": "IAA Archive, Judean Desert cave-survey records",
+   "citation": "Qumran cliffs, Jericho escarpment, Wadi Qelt: identifier, coarse cell, openings and facing, features, size, periods, disturbance",
+   "inspection": "not_inspected",
+   "access": "requested_pending",
+   "pending_request": "IAA Archive, for the Judean Desert cave survey: cave records for the Qumran cliffs, Jericho escarpment and Wadi Qelt (7 October).",
+   "repo_path": "research/agent_review_2026-10-07/followup/F_outreach_sent.md"
+  },
+  {
+   "id": "REC-ATIQOT41-CAVES",
+   "title": "2002 cave-survey entries cited by WBADB",
+   "citation": "Eshel and Zissu 2002a VIII/28–29; Weiss 2002 IX/9, IX/10, IX/17, IX/21, IX/22; Baruch et al. 2002 XI/18, XI/20 (pp. 180–181)",
+   "inspection": "not_inspected",
+   "access": "supplied_unread",
+   "pending_request": null,
+   "repo_path": "registration/atiqot41_region_v_extracted.md",
+   "note": "Probably in the supplied ʿAtiqot 41 issue (archive SHA-256 576e957a…). WBADB's Baruch et al. pages (180–181) do not match the Part 1 Region XI range in the extraction notes (from p. 187); verify article and part before use."
+  },
+  {
+   "id": "REC-REEDER-JOL",
+   "title": "Reeder and Jol, Qumran aqueduct survey and GPR (2002)",
+   "citation": "survey and GPR records",
+   "inspection": "not_inspected",
+   "access": "requested_pending",
+   "pending_request": "P. Reeder and H. Jol: 2002 Qumran aqueduct survey and GPR records (29 September)."
+  },
+  {
+   "id": "REC-DEVAUX-1973",
+   "title": "de Vaux 1973, Archaeology and the Dead Sea Scrolls",
+   "citation": "pp. 57–58 (northern secondary cemetery); pool loci 68, 91, 138",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/stage2/addendum_s4/ADDENDUM.md"
+  },
+  {
+   "id": "REC-ZERTAL-V4",
+   "title": "Zertal and Bar 2017, Manasseh Hill Country Survey IV",
+   "citation": "supplied; Site 173 pp. 454–472 read; Site 194 (WBADB S1454, ʿArkan es-Suwaneh) not read",
+   "inspection": "not_inspected",
+   "access": "supplied_unread",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/stage2/addendum_s2/ADDENDUM.md",
+   "note": "Inspection field refers to the unread Site 194 entry."
+  },
+  {
+   "id": "REC-TSAFRIR-MAGEN-1984",
+   "title": "Tsafrir and Magen 1984, Sartaba–Alexandrium excavation report",
+   "citation": "plans of the eastern excavation area; cemetery and family tomb positions",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null,
+   "note": "Zertal p. 471 says the excavations were not published in full."
+  },
+  {
+   "id": "REC-BAR-ADON-1972",
+   "title": "Bar-Adon, survey chapter in Kochavi (ed.) 1972",
+   "citation": "pp. 92–149; sites 5, 13, 61, 98c",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-DINUR-FEIG-1993",
+   "title": "Dinur and Feig 1993, Benjamin survey",
+   "citation": "sites 469, 472, 475, 487, 492, 493, 495, 496, 505, 506, 513, 515, 532",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-FELDSTEIN-1993",
+   "title": "Feldstein et al. 1993, Benjamin survey",
+   "citation": "sites 210, 212, 213, 231, 232, 234, 239, 240, 241, 245",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-GOPHNA-PORAT-1972",
+   "title": "Gophna and Porat, survey chapter in Kochavi (ed.) 1972",
+   "citation": "sites 169, 170, 190",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-HIRSCHFELD-1983",
+   "title": "Hirschfeld 1983 survey",
+   "citation": "sites 18, 19; p. 238",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-BENYOSEF-BAR",
+   "title": "Ben-Yosef 2007; Bar 2008 surveys",
+   "citation": "Ben-Yosef sites 1, 21; Bar sites 4, 45, 95",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-SION-2001",
+   "title": "Sion 2001 survey",
+   "citation": "sites 313, 423, 425",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-FINKELSTEIN-1993",
+   "title": "Finkelstein 1993 survey",
+   "citation": "site 98",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-PATRICH-RUBIN-1983",
+   "title": "Patrich and Rubin 1983",
+   "citation": "Naḥal Mikhmas report",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-PELEG-2009",
+   "title": "Peleg 2009i",
+   "citation": "Ras el-ʿEizariya report (WBADB E592)",
+   "inspection": "not_inspected",
+   "access": "library",
+   "pending_request": null
+  },
+  {
+   "id": "REC-HA-TANANIR",
+   "title": "Hadashot Arkheologiyot 28–29 (1969)",
+   "citation": "pp. 39–40 (Tananir)",
+   "inspection": "not_inspected",
+   "access": "open_access_unread",
+   "pending_request": null,
+   "note": "Listed by WBADB beside Boling 1975 (read). Online availability of this issue in the IAA series is not yet confirmed; PDF links there have returned Cloudflare 403 from this environment."
+  },
+  {
+   "id": "REC-ESI9-GHIRUR",
+   "title": "ESI 9 (1991), Kh. el-Ghirur",
+   "citation": "pp. 138–139 (WBADB S836)",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/stage2/addendum_s4/ADDENDUM.md",
+   "note": "Read as source 4 when S836 was coded as a unit."
+  },
+  {
+   "id": "REC-ALMIT-NOTICES",
+   "title": "IAA notices on Kh. ʿAlmit",
+   "citation": "ESI 5 (1987) p. 1; HA-ESI 115 (2003) pp. 48*–49* (WBADB S2806)",
+   "inspection": "not_inspected",
+   "access": "open_access_unread",
+   "pending_request": null,
+   "note": "The rarity count did not read them for S2806 (its first publication, Niqrot Zurim 14, is print-only). Whether ESI 5 p. 1 was read elsewhere is not recorded; check before reading."
+  },
+  {
+   "id": "REC-HA-SAMRAT",
+   "title": "Hadashot Arkheologiyot 54–55 (1975)",
+   "citation": "p. 23 (Tell es-Samrat, WBADB S2430)",
+   "inspection": "not_inspected",
+   "access": "open_access_unread",
+   "pending_request": null,
+   "note": "S2430 source 4 is marked 'not accessed' in the rarity packets."
+  },
+  {
+   "id": "REC-NETZER-JERICHO",
+   "title": "Netzer, Hasmonean and Herodian Palaces at Jericho (2001 onward)",
+   "citation": "palace and Birket Musa context",
+   "inspection": "partly_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/assessments/entry29_jericho_pools/README.md"
+  },
+  {
+   "id": "REC-CALLAWAY-1970",
+   "title": "Callaway 1970 (Kh. el-Khudriya)",
+   "citation": "pp. 10–12; Fig. 2 p. 11",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/stage2/addendum_s4/ADDENDUM.md"
+  },
+  {
+   "id": "REC-BOLING-1975",
+   "title": "Boling 1975 (Tananir)",
+   "citation": "pp. 36, 57–60, 65, 84; Figs 2, 13",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/rarity/kohlit/stage2/addendum_s4/ADDENDUM.md"
+  },
+  {
+   "id": "REC-XII10-IMAGE",
+   "title": "An image of XII 10 at the 21/22 cut",
+   "citation": "read under the frozen protocol (fd3f334)",
+   "inspection": "not_inspected",
+   "access": "requested_pending",
+   "pending_request": "USC Libraries Special Collections: 1200-ppi WSRP masters of cuts 21–22; Manchester Museum and Joan Taylor: Allegro scans C.21–23; ÉBAF visit 18–24 October (EDF copy and X-rays).",
+   "repo_path": "research/agent_review_2026-10-07/wave1/T03_T04_registry/XII10_IMAGE_READING_PROTOCOL.md"
+  },
+  {
+   "id": "REC-YANUN-FIELD",
+   "title": "Field survey at Kh. Yanun and Yanun village",
+   "citation": "pits, cisterns and tomb mouths",
+   "inspection": "not_inspected",
+   "access": "fieldwork",
+   "pending_request": null
+  }
+ ],
+ "models": [
+  {
+   "id": "M-SULTAN",
+   "label": "Tell es-Sultan (old Jericho)",
+   "anchor": {
+    "name": "Tell es-Sultan",
+    "wbadb": "E334",
+    "grid_oig_m": [
+     192150,
+     142050
+    ],
+    "point_precision_m": 50,
+    "note": "WBADB holds only the 1992 Excavations row (EB). Pre-70 sensitivity set only."
+   },
+   "origin": [
+    "Puech 2006 p. 175 n. 49; 2015 pp. 13–14 n. 49 (as a hypothesis)",
+    "workbench assignments",
+    "rarity two-of-three list (pre-70 set)"
+   ],
+   "rarity": {
+    "unit": "E334",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "pre-70 only",
+    "in_R2": true,
+    "C1": "MATCH",
+    "C2": "UNKNOWN",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": {
+    "surviving_assignments": [
+     "jericho-historical-ns1",
+     "jericho-d9",
+     "jericho-quarry"
+    ],
+    "contradicted_assignments": [
+     "jericho-modern-ns1"
+    ]
+   },
+   "screens": [
+    "Stage 1: pool word within 2 km (SWP 'reservoir')."
+   ],
+   "selection_relations": [
+    "R-E4-MOUND",
+    "R-E11-POOL-EAST",
+    "R-E60-GRAVES-N-SECTOR",
+    "R-E60-PIT-N"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-E4-MOUND",
+     "status": "compatible",
+     "feature": "the tell itself",
+     "evidence": [
+      {
+       "record": "REC-KENYON-III-TEXT",
+       "where": "pp. 3–4, 119–121",
+       "kind": "observed",
+       "lineage": "Kenyon expedition 1952–58"
+      },
+      {
+       "record": "REC-KENYON-II",
+       "where": "p. 2: no Roman occupation on the tell",
+       "kind": "excavator_label",
+       "lineage": "Kenyon expedition 1952–58"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "A ruin mound by the first century. Puech's identification is a hypothesis, not this reference point."
+    },
+    {
+     "step": 2,
+     "relation": "R-E11-POOL-EAST",
+     "status": "compatible",
+     "feature": "jericho-historical-basin (spring basin at the east foot)",
+     "evidence": [
+      {
+       "record": "REC-DORRELL",
+       "where": "pp. 95–97; Fig. 1",
+       "kind": "observed",
+       "lineage": "travellers 1745–1890s and photographs 1856–1954, compiled by Dorrell"
+      },
+      {
+       "record": "REC-SWP-III",
+       "where": "p. 220: reservoir 24 × 40 ft beneath the mound on the east",
+       "kind": "observed",
+       "lineage": "Survey of Western Palestine 1870s"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Direction from words only. No construction date. The 1898 reservoir is a separate, contradicted branch."
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "jericho-north-graves; Nigro cat. 53 burial cave",
+     "evidence": [
+      {
+       "record": "REC-KENYON-III-TEXT",
+       "where": "pp. 173–174: about 18 shaft graves, Trench II/Site O, phase lxxvi",
+       "kind": "observed",
+       "lineage": "Kenyon expedition 1952–58"
+      },
+      {
+       "record": "REC-NIGRO-2011",
+       "where": "cat. 53 p. 127: Roman burial cave, 935 m at 38.9° (rarity C3 survey)",
+       "kind": "published_reconstruction",
+       "lineage": "Nigro oasis catalogue (compiled)"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "First-century CE date is typological (Kenyon III 173–174 citing II 516, 536–537)."
+    },
+    {
+     "step": 4,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "jericho-cistern-ns1; jericho-shaft-d9; jericho-later-quarry-pits",
+     "evidence": [
+      {
+       "record": "REC-KENYON-II",
+       "where": "pp. 539–544 (N.S.1, no plan); pp. 276–277 and Fig. 91 (D9, sector inferred)",
+       "kind": "observed",
+       "lineage": "Kenyon expedition 1952–58"
+      },
+      {
+       "record": "REC-KENYON-III-TEXT",
+       "where": "p. 174: later pits cut the graves (phase lxxvii)",
+       "kind": "observed",
+       "lineage": "Kenyon expedition 1952–58"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Qualitative 'north' only. Rarity C2 stays UNKNOWN under the protocol. Same lineage as step 3."
+    }
+   ],
+   "contradicted_branches": [
+    {
+     "branch": "1898 reservoir as the Entry 11 pool (workbench jericho-modern-ns1, 6 combinations)",
+     "relation": "R-E11-POOL-PERIOD",
+     "evidence": "Dorrell p. 111: the mill-pool was extended into the present reservoir in 1898."
+    },
+    {
+     "branch": "quarry pits built in the same phase as the graves",
+     "relation": "R-E60-JOINT-ACCESS",
+     "evidence": "Kenyon III p. 174: phase-lxxvii pits truncate phase-lxxvi graves. This rejects same-phase construction only, not later joint access."
+    }
+   ],
+   "set_aside": [
+    {
+     "item": "Puech's Koḥlit = Tell es-Sultan",
+     "why": "Offered 'à titre d'hypothèse'. It names a candidate; it is not a reference point."
+    },
+    {
+     "item": "The SWP grid point of the spring, 102 m SSE of the tell point",
+     "why": "Position rule 1 ranks the SWP words ('beneath the mound on the east') above the grid point."
+    },
+    {
+     "item": "Kenyon's first-century grave date",
+     "why": "Typological; no offerings. It is not a dated joint-access interval."
+    },
+    {
+     "item": "CORONA 1967 positions (±100–150 m)",
+     "why": "Too coarse for a 10 m mouth relation; the camp already covered the strip."
+    },
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "SULTAN-1-precamp-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P, RB-L",
+     "expect": "A non-funerary opening (shaft, cistern or pit mouth, 1 m or wider) with at least one grave cut or tomb opening within 10 m of it.",
+     "where": "The strip from the tell's north foot to about 250 m north: Kenyon II p. 169 skipped it; Area D lies about 100–200 m north (Fig. 91, inference). Under the ʿAin es-Sultan camp since 1948.",
+     "record_ids": [
+      "REC-GARSTANG-LIV",
+      "REC-PEF",
+      "REC-NIGRO-RECORDS",
+      "REC-BSPAL-1032",
+      "REC-RAF-JERICHO"
+     ],
+     "success": "The opening and the grave appear in one registered record, and their distance is 'inside' 10 m under registration_protocol.md.",
+     "contradiction": "Photographs and plans alone cannot contradict: absence may be concealment, burial or resolution. A contradiction needs a coverage-gated excavation record of the strip (coverage module gates) that reached the ancient surface and reports no such pair.",
+     "contradiction_strength": "one-sided",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E60-SECOND-WORD",
+      "D-E60-BURIED",
+      "D-E60-OPENING"
+     ],
+     "notes": "Locating an opening does not date it. A success opens the next link (R-E60-PIT-PERIOD, R-E60-JOINT-ACCESS) on the same feature."
+    },
+    {
+     "id": "SULTAN-2-quarry-section",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-JOINT-ACCESS",
+      "R-E60-PIT-PERIOD"
+     ],
+     "branch": "jericho-quarry assignment; RB-M, RB-P",
+     "expect": "A phase-lxxvii pit cut from a surface on which phase-lxxvi grave shafts were still open or marked, with nothing later than 135 CE in the pit's lowest fill.",
+     "where": "Kenyon Trench II/Site O, eastern section at local 37.50–38.00 m N / 8.17 m H, and the burial in Pl. 111b.",
+     "record_ids": [
+      "REC-KENYON-III-PLATES",
+      "REC-KENYON-FIELD"
+     ],
+     "success": "The section shows no deposit between the grave tops and the pit's cutting surface, and the lowest pit fill holds no securely later material.",
+     "contradiction": "A deposit seals the grave tops below the pit's cutting surface, or the lowest pit fill holds securely post-135 CE material. Either rejects the quarry-pit branch only.",
+     "contradiction_strength": "two-sided",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ],
+     "notes": "Kenyon III p. 121 allows the pits any date from the first century to the present, so the section may leave the date unknown."
+    },
+    {
+     "id": "SULTAN-3-basin-date",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-PERIOD"
+     ],
+     "branch": "all branches using the historical basin",
+     "expect": "Finds sealed under the lowest course of the basin rim that date no later than the first century CE.",
+     "where": "About 1 m behind the 1898 reservoir's back wall, at the curved spring-house wall (Dorrell p. 112).",
+     "record_ids": [
+      "REC-SPRING-FIELD"
+     ],
+     "success": "Sealed material no later than the window under the rim's lowest course.",
+     "contradiction": "Sealed material securely later than 135 CE under the rim's lowest course: the basin was built after the window.",
+     "contradiction_strength": "two-sided",
+     "priority": 3,
+     "notes": "ACTIVE_TEST question 3. The wall's late Roman or Byzantine date is opinion and does not date the basin."
+    },
+    {
+     "id": "SULTAN-4-ns1-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH",
+      "R-E60-JOINT-ACCESS"
+     ],
+     "branch": "jericho-historical-ns1; RB-M, RB-P",
+     "expect": "Kenyon's field notes place the N.S.1 mouth and record graves within 10 m of it.",
+     "where": "Camp outskirts toward Khirbet Mefjar (Kenyon II pp. 539–544).",
+     "record_ids": [
+      "REC-KENYON-FIELD"
+     ],
+     "success": "A recorded grave within 10 m of the N.S.1 mouth.",
+     "contradiction": "The notes record a cleared area around the mouth to at least 10 m with no grave: this rejects the NS1 branch only.",
+     "contradiction_strength": "two-sided",
+     "priority": 4,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    },
+    {
+     "id": "SULTAN-5-basin-corner",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-NCORNER"
+     ],
+     "branch": "all branches using the historical basin",
+     "expect": "A record made before the 1891–93 mill works shows the spring basin with an angle on its north side.",
+     "where": "The ʿAin es-Sultan basin at the tell's east foot.",
+     "record_ids": [
+      "REC-PEF"
+     ],
+     "success": "An angle on the basin's north side before 1891, not formed by the mill works.",
+     "contradiction": "None from photographs: they show post-ancient states. A curved north end (the 1908 plan shows one for the 1898 reservoir) cannot reject an earlier cornered pool.",
+     "contradiction_strength": "one-sided",
+     "priority": 5,
+     "notes": "Exposure: Dorrell's Figs 1–4 and 20–21 are already inspected. Only records outside Dorrell's selection count, and the prediction must be registered before they are opened."
+    },
+    {
+     "id": "SULTAN-6-two-pits",
+     "kind": "landmark",
+     "relations": [
+      "R-E19-EASTERN-PIT-N"
+     ],
+     "branch": "RB-M, RB-P, RB-B",
+     "expect": "At least two pits or shaft mouths north of the tell whose east–west order can be read.",
+     "where": "The same strip and Kenyon's Areas D, J and G.",
+     "record_ids": [
+      "REC-GARSTANG-LIV",
+      "REC-PEF",
+      "REC-RAF-JERICHO"
+     ],
+     "success": "Two openings whose east–west separation exceeds four times the registration error.",
+     "contradiction": "None from photographs alone.",
+     "contradiction_strength": "one-sided",
+     "priority": 6,
+     "reading_dependencies": [
+      "D-E19-ALLEGRO"
+     ]
+    }
+   ],
+   "excluded_links": [
+    {
+     "relation": "R-E15-CISTERN-PILLAR-N",
+     "why": "Puech, who proposed this model, restored the Koḥlit link and the direction. A test through Entry 15 here would not be independent of the model."
+    },
+    {
+     "relation": "R-E16-CONDUIT-TO-POOL",
+     "why": "Destination and distance are restored; the Koḥlit link is contextual."
+    }
+   ]
+  },
+  {
+   "id": "M-MARJAMA",
+   "label": "Kh. el-Marjama at ʿEin Samiya",
+   "anchor": {
+    "name": "Kh. Marjame (Kh. el-Marjama)",
+    "wbadb": "S1658",
+    "grid_oig_m": [
+     181600,
+     155400
+    ],
+    "point_precision_m": 100,
+    "note": "Hellenistic and Roman at size category 2 from Kallai's surface report (Highlands p. 732); no excavated Roman stratum."
+   },
+   "origin": [
+    "Zissu (proposal recorded in wave 2)",
+    "workbench assignments",
+    "named in the brief (one of three conditions only)"
+   ],
+   "rarity": {
+    "unit": "S1658",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": false,
+    "C1": "UNKNOWN",
+    "C2": "UNKNOWN",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": {
+    "surviving_assignments": [
+     "samiya-kallai"
+    ],
+    "contradicted_assignments": [
+     "samiya-crypt"
+    ]
+   },
+   "screens": [
+    "Stage 1: its own WBADB components list a pool and an aqueduct, with no position."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the tell",
+     "evidence": [
+      {
+       "record": "REC-HIGHLANDS",
+       "where": "p. 732 (category 2 Hellenistic and Roman, from Kallai p. 172)",
+       "kind": "published_reconstruction",
+       "lineage": "Kallai survey 1967–68"
+      },
+      {
+       "record": "REC-MAZAR-1995",
+       "where": "p. 90 (Lapp's Roman-Byzantine sherds)",
+       "kind": "observed",
+       "lineage": "Lapp surface collection"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Roman is undivided. Neither excavation reports anything later than the Iron Age on the summit."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "samiya-north-bronze-tombs (Dhahr Mirzbaneh)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S1647: shaft tombs, 541 m at 33.7° (rarity C3 survey)",
+       "kind": "observed",
+       "lineage": "Finkelstein survey (Highlands)"
+      },
+      {
+       "record": "REC-HIGHLANDS",
+       "where": "p. 741",
+       "kind": "observed",
+       "lineage": "Finkelstein survey (Highlands)"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Intermediate and Middle Bronze tombs. Their later accessibility is unknown."
+    },
+    {
+     "step": 3,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "marjama-kallai-pool (unlocated)",
+     "evidence": [
+      {
+       "record": "REC-ZOHAR-HA76",
+       "where": "p. 19: no pool",
+       "kind": "observed",
+       "lineage": "Zohar rescue excavation 1979–80"
+      }
+     ],
+     "used_for_selection": false,
+     "note": "Kallai pp. 172–173 unread. The church-crypt basin at the spring lies SW and is a contradicted branch."
+    },
+    {
+     "step": 4,
+     "relation": "R-E60-PIT-N",
+     "status": "unknown",
+     "feature": "none recorded",
+     "evidence": [
+      {
+       "record": "REC-MAZAR-1995",
+       "where": "p. 97: summit cistern L20 near the southern cliff",
+       "kind": "observed",
+       "lineage": "Mazar excavation"
+      }
+     ],
+     "used_for_selection": false,
+     "note": "No cistern is recorded north of the tell."
+    }
+   ],
+   "contradicted_branches": [
+    {
+     "branch": "church-crypt basin as the Entry 11 pool (workbench samiya-crypt, 6 combinations)",
+     "relation": "R-E11-POOL-EAST",
+     "evidence": "Zohar IEJ 30 p. 219; Highlands p. 733; Mazar pp. 87, 95: the spring and church lie SW and W of the tell. Inference from a qualitative crosswalk."
+    }
+   ],
+   "set_aside": [
+    {
+     "item": "The CORONA dark square (about 420 m at about 130°, ±100 m)",
+     "why": "Not yet shown to be a pool; its bearing is 5° from the 135° edge, well inside its position error."
+    },
+    {
+     "item": "Kh. Samiyye east (Mazar p. 87) or south (Highlands p. 734)",
+     "why": "The sources disagree; neither is used as a reference point."
+    },
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "MARJAMA-1-kallai-pool",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST",
+      "R-E11-POOL-PERIOD"
+     ],
+     "branch": "all branches",
+     "expect": "Kallai places the rock-cut pool at 45°–135° from the tell within 1 km, or in its eastern part, and gives no date later than 135 CE.",
+     "where": "ʿEin Samiya valley floor east and south-east of the tell (the fertile valley east of the site, Mazar p. 85).",
+     "record_ids": [
+      "REC-KALLAI-1972"
+     ],
+     "success": "An east-sector position with a margin larger than its stated position error, and no securely later date.",
+     "contradiction": "Kallai places the pool at the spring (SW, the crypt basin), or W, S or N of the tell, or beyond 1 km, or dates it securely after 135 CE.",
+     "contradiction_strength": "two-sided",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "MARJAMA-2-dark-square",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST",
+      "R-E11-POOL-NCORNER"
+     ],
+     "branch": "all branches",
+     "expect": "The 1945 verticals show the CORONA dark square as an open, rectilinear basin with a northern corner.",
+     "where": "About 420 m from the tell at about 130° (31.9892 N, 35.3363 E ±100 m).",
+     "record_ids": [
+      "REC-RAF-SAMIYA"
+     ],
+     "success": "An open water basin with corners, registered inside 45°–135° with a margin of at least twice its error.",
+     "contradiction": "The square is a tree stand or a roofed building, or it registers outside 45°–135° by more than twice its error.",
+     "contradiction_strength": "two-sided",
+     "priority": 2,
+     "notes": "Registration must reach about 15 m or better at 420 m to clear the 135° edge. Locating a basin does not date it."
+    },
+    {
+     "id": "MARJAMA-3-pit-north",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-PIT-N",
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "A non-funerary cistern or pit within 1 km north of the tell with tombs within 10 m, for example a reused shaft in the Dhahr Mirzbaneh field.",
+     "where": "315°–45° from the tell, within 1 km.",
+     "record_ids": [
+      "REC-KALLAI-1972"
+     ],
+     "success": "A described cistern or pit in the north sector with tombs at its mouth.",
+     "contradiction": "Only an explicit statement that the north sector has no cistern or pit (silence is not absence).",
+     "contradiction_strength": "absence-statement only",
+     "priority": 3,
+     "reading_dependencies": [
+      "D-E60-SECOND-WORD",
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-QUMRAN",
+   "label": "Kh. Qumran",
+   "anchor": {
+    "name": "Kh. Qumran",
+    "wbadb": "E754",
+    "grid_oig_m": [
+     193650,
+     127650
+    ],
+    "point_precision_m": 50,
+    "note": "Enters only through the rarity two-of-three list. No edition in readings.json proposes it for Koḥlit."
+   },
+   "origin": [
+    "rarity two-of-three list (main set, R2)"
+   ],
+   "rarity": {
+    "unit": "E754",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool words within 2 km (WBADB components: pools, ritual baths)."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the settlement",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "E754 periods Hel, Rom",
+       "kind": "published_reconstruction",
+       "lineage": "de Vaux excavations 1949–56"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "caves north of the site",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S3835/E745 Cave XI/20 (Rom1), 789 m at 337.7°; S3824 Cave B-35a (Rom), 883 m at 346.9°",
+       "kind": "observed",
+       "lineage": "1993 northern Judean Desert cave survey"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "northern secondary cemetery",
+     "evidence": [
+      {
+       "record": "REC-DEVAUX-1973",
+       "where": "pp. 57–58: a cemetery a little to the north",
+       "kind": "observed",
+       "lineage": "de Vaux excavations 1949–56"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Direction is the publication's own; single-coded call (source-4 addendum)."
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "The WBADB point as the anchor for a pool inside the site",
+     "why": "One central point per site; pools on quadrant edges (loci 68, 138) give UNKNOWN under position rule 3."
+    },
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "QUMRAN-1-opening-facing",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-OPENING-N"
+     ],
+     "branch": "RB-M only",
+     "expect": "At least one non-funerary cave or shaft at 315°–45° within 1 km of the site has an opening that faces 315°–45°.",
+     "where": "The marl terraces and cliffs north and north-west of Kh. Qumran, including Caves XI/18 and XI/20.",
+     "record_ids": [
+      "REC-ATIQOT41-CAVES",
+      "REC-IAA-CAVES"
+     ],
+     "success": "A recorded north-facing opening on a north-sector cave or shaft.",
+     "contradiction": "The records give a facing for every north-sector cave within 1 km, and none faces 315°–45°. This rejects RB-M at the recorded caves only.",
+     "contradiction_strength": "two-sided",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E60-OPENING",
+      "D-E60-SECOND-WORD"
+     ],
+     "notes": "RB-P and RB-B do not use the facing."
+    },
+    {
+     "id": "QUMRAN-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "A grave within 10 m of the mouth of a non-funerary cave, cistern or shaft north of the site.",
+     "where": "The northern secondary cemetery and any opening beside it.",
+     "record_ids": [
+      "REC-IAA-CAVES",
+      "REC-ATIQOT41-CAVES"
+     ],
+     "success": "A grave and an opening drawn in one plan within 10 m.",
+     "contradiction": "Only a complete plan of the north cemetery area showing every opening more than 10 m from every grave.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    },
+    {
+     "id": "QUMRAN-3-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "A surveyed plan in a national grid puts at least one open pool (3 m or more) at 45°–135° from the E754 point, or in the site's eastern part.",
+     "where": "Inside or east of Kh. Qumran.",
+     "record_ids": [
+      "REC-REEDER-JOL"
+     ],
+     "success": "A pool inside the east sector with a margin of twice the registration error.",
+     "contradiction": "Every open pool lies outside 45°–135° by more than twice the error and none lies in the eastern part.",
+     "contradiction_strength": "two-sided",
+     "priority": 3,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ],
+     "notes": "Exposure: de Vaux's pool layout is already inspected, so this is exploratory, not an unseen test. The result depends on the anchor point."
+    }
+   ],
+   "excluded_links": [
+    {
+     "relation": "R-E4-MOUND",
+     "why": "Kh. Qumran is not a tell; the test depends only on the disputed meaning of בתל."
+    }
+   ]
+  },
+  {
+   "id": "M-SARTABA",
+   "label": "Qarn Sarṭaba (Alexandrium)",
+   "anchor": {
+    "name": "Qarn Sarṭaba",
+    "wbadb": "S1283",
+    "grid_oig_m": [
+     193800,
+     167000
+    ],
+    "point_precision_m": 100,
+    "note": "Branch-B match after the source-2 addendum."
+   },
+   "origin": [
+    "rarity two-of-three list (main set)",
+    "named in the brief"
+   ],
+   "rarity": {
+    "unit": "S1283",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": false,
+    "C1": "MATCH",
+    "C2": "MATCH",
+    "C3s": "UNKNOWN",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "MATCH"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool words within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E11-POOL-EAST",
+    "R-E11-POOL-PERIOD",
+    "R-E60-PIT-N"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the fortress",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S1283 periods Hel, Rom",
+       "kind": "published_reconstruction",
+       "lineage": "Bar-Adon and Zertal surveys"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 2,
+     "relation": "R-E11-POOL-EAST",
+     "status": "compatible",
+     "feature": "small pool in the excavated Herodian peristyle, east side",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S1283",
+       "kind": "observed",
+       "lineage": "Tsafrir and Magen excavation 1981–84"
+      },
+      {
+       "record": null,
+       "citation": "Zertal and Bar 2017 (Vol. 4) Site 173, p. 471",
+       "where": "east side of the site",
+       "kind": "observed",
+       "lineage": "Tsafrir and Magen excavation 1981–84"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Both coders: C1 MATCH, dated D (Herodian)."
+    },
+    {
+     "step": 3,
+     "relation": "R-E11-POOL-PERIOD",
+     "status": "compatible",
+     "feature": "the same pool",
+     "evidence": [
+      {
+       "record": null,
+       "citation": "Zertal and Bar 2017 (Vol. 4) Site 173, p. 471",
+       "where": "Herodian peristyle phase",
+       "kind": "excavator_label",
+       "lineage": "Tsafrir and Magen excavation 1981–84"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Same lineage as step 2; the excavation is not published in full."
+    },
+    {
+     "step": 4,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "cave-cisterns (coder A) or five robbing pits (coder B)",
+     "evidence": [
+      {
+       "record": "REC-SWP-II",
+       "where": "p. 398: cemented cave-cisterns fed by the aqueduct on the north side",
+       "kind": "observed",
+       "lineage": "Survey of Western Palestine 1870s"
+      },
+      {
+       "record": null,
+       "citation": "Zertal and Bar 2017 (Vol. 4) p. 461",
+       "where": "five robbing pits in the northern area",
+       "kind": "observed",
+       "lineage": "Zertal survey"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Each coder's pit rests on a direction the other coder did not give."
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "SARTABA-1-graves-north",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-GRAVES-N-SECTOR",
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "The Hasmonean cemetery or the family tomb lies at 315°–45° within 1 km; ideally a tomb within 10 m of a cistern or pit mouth.",
+     "where": "North slope and northern area of Qarn Sarṭaba.",
+     "record_ids": [
+      "REC-TSAFRIR-MAGEN-1984",
+      "REC-BAR-ADON-1972"
+     ],
+     "success": "A placed grave in the north sector, or at a mouth.",
+     "contradiction": "The record places every grave it lists outside 315°–45° and states that its grave list is complete.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E60-BURIED",
+      "D-E60-SECOND-WORD"
+     ]
+    },
+    {
+     "id": "SARTABA-2-pit-date",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-PIT-PERIOD"
+     ],
+     "branch": "all branches using the robbing pits",
+     "expect": "The five northern pits were open before 135 CE.",
+     "where": "Northern area (Zertal p. 461).",
+     "record_ids": [
+      "REC-TSAFRIR-MAGEN-1984"
+     ],
+     "success": "A dated fill or sealing contact earlier than 135 CE.",
+     "contradiction": "A securely later cut, for example nineteenth-century treasure digging as Zertal suggests. This rejects only the coder-B pit; the SWP cave-cisterns remain.",
+     "contradiction_strength": "two-sided",
+     "priority": 2
+    },
+    {
+     "id": "SARTABA-3-pool-corner",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-NCORNER"
+     ],
+     "branch": "all branches",
+     "expect": "The excavated pool is rectilinear with a corner on its north side.",
+     "where": "Herodian peristyle, east side.",
+     "record_ids": [
+      "REC-TSAFRIR-MAGEN-1984"
+     ],
+     "success": "A plan showing a northern corner.",
+     "contradiction": "A plan showing a round or apsidal north end.",
+     "contradiction_strength": "two-sided",
+     "priority": 3,
+     "notes": "Weak: most built pools have corners."
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-JANOAH",
+   "label": "Janoaḥ route (entry 60 reading שבינח)",
+   "anchor": {
+    "name": "Koḥlit anchor unchanged (Jericho or Marjama); pit at Kh. Yanun or Yanun village",
+    "wbadb": null,
+    "grid_oig_m": null,
+    "point_precision_m": null,
+    "note": "Kh. Yanun S1001 and Yanun S1053 stopped at Stage 1 (not recorded). Not counted by the rarity protocol."
+   },
+   "origin": [
+    "Lefkovits 2000 pp. 425–426; Beyer",
+    "workbench assignments"
+   ],
+   "rarity": null,
+   "workbench": {
+    "surviving_assignments": [
+     "yanun-jericho-anchor",
+     "yanun-marjama-anchor"
+    ],
+    "contradicted_assignments": []
+   },
+   "screens": [],
+   "selection_relations": [
+    "R-E60-AT-JANOAH"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-E60-AT-JANOAH",
+     "status": "unknown",
+     "feature": "Kh. Yanun (Highlands 828–831) or Yanun village (821–822)",
+     "evidence": [
+      {
+       "record": "REC-HIGHLANDS",
+       "where": "pp. 828–831: identified with Janoah; no pit, cistern or tomb described",
+       "kind": "published_reconstruction",
+       "lineage": "Finkelstein survey (Highlands)"
+      },
+      {
+       "record": "REC-SWP-II",
+       "where": "p. 394: traces of ruins above a small spring",
+       "kind": "observed",
+       "lineage": "Survey of Western Palestine 1870s"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Selected by the reading and the name only. Report silence is not absence."
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "The Koḥlit anchor as a stand-in for a Yanun pit position",
+     "why": "The workbench keeps the absent Yanun pit separate from its Koḥlit anchor."
+    }
+   ],
+   "gates": [
+    {
+     "dependency": "D-E60-SECOND-WORD",
+     "record_ids": [
+      "REC-XII10-IMAGE"
+     ],
+     "why": "The model exists only if XII 10 reads שבינח under the frozen protocol."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "JANOAH-0-reading-gate",
+     "kind": "reading_gate",
+     "relations": [],
+     "branch": "RB-L",
+     "expect": "The frozen XII 10 protocol reads an extra stroke after bet/kaf, bet rather than kaf, and ḥet rather than he.",
+     "where": "XII 10 at the segment 21/22 saw cut.",
+     "record_ids": [
+      "REC-XII10-IMAGE"
+     ],
+     "success": "The protocol's Janoaḥ criteria are met.",
+     "contradiction": "The protocol's 'situated' or other non-Janoaḥ criteria are met.",
+     "contradiction_strength": "two-sided",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E60-SECOND-WORD"
+     ],
+     "notes": "A reading test, not a landmark prediction. Do not open any image of XII 8–12 outside the protocol."
+    },
+    {
+     "id": "JANOAH-1-yanun-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH",
+      "R-E60-PIT-PERIOD"
+     ],
+     "branch": "RB-L",
+     "expect": "A pit or cistern at Kh. Yanun or Yanun village with tombs within 10 m of its mouth, open before 135 CE.",
+     "where": "Kh. Yanun (Israel Ref. 18425/17385) and Yanun village (18370/17245); burial caves are reported near the village.",
+     "record_ids": [
+      "REC-YANUN-FIELD"
+     ],
+     "success": "A recorded pit with tombs at its mouth and an early date.",
+     "contradiction": "Only a complete, dated field record of both sites showing no such pit.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-SECOND-WORD",
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S1667",
+   "label": "Kh. Samiyye (ʿEin Samiya)",
+   "anchor": {
+    "name": "Kh. Samiyye (ʿEin Samiya)",
+    "wbadb": "S1667",
+    "grid_oig_m": [
+     181700,
+     155000
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S1667",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S1667 periods Rom, Byz(major), EIs, Ott(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S1658 Site_Components: pit with EB pottery (412 m at 346.0°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S1658"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S1647 Site_Components: Hundreds of shaft tombs in several concentrations (873 m at 13.2°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S1647"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S1644 Site_Components: IB site above large cemetery (955 m at 6.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S1644"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E214 Site_Components: IB site above large cemetery (955 m at 6.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E214"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S1667 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S1667-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool at 45°–135° within 1 km of Kh. Samiyye; the CORONA dark square lies about 250 m east of its grid point.",
+     "where": "East edge of Byzantine Kh. Samiya (D_corona §4).",
+     "record_ids": [
+      "REC-RAF-SAMIYA",
+      "REC-KALLAI-1972"
+     ],
+     "success": "An open basin registered inside 45°–135° with a margin of twice its error.",
+     "contradiction": "The square is not an open basin, and Kallai site 66 states no pool east.",
+     "contradiction_strength": "two-sided",
+     "priority": 1,
+     "notes": "Locating a basin does not date it; Kh. Samiya is Roman 'questionable', Byzantine major (Highlands 734–735)."
+    },
+    {
+     "id": "S1667-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "Tombs within 10 m of the EB pit on the Marjama tell.",
+     "where": "Kh. el-Marjama tell (S1658).",
+     "record_ids": [
+      "REC-KALLAI-1972"
+     ],
+     "success": "A tomb at the pit's mouth.",
+     "contradiction": "Only a complete plan of the pit's surroundings.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": [],
+   "notes": [
+    "Its C2 pit is the 'pit with EB pottery' on the Marjama tell row (S1658), 412 m at 346°. The two ʿEin Samiya anchors interlock."
+   ]
+  },
+  {
+   "id": "M-S6040",
+   "label": "Tell esh-Sheikh Dhiab",
+   "anchor": {
+    "name": "Tell esh-Sheikh Dhiab",
+    "wbadb": "S6040",
+    "grid_oig_m": [
+     190900,
+     162500
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S6040",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": false,
+    "C1": "MATCH",
+    "C2": "MATCH",
+    "C3s": "UNKNOWN",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "MATCH"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E11-POOL-EAST",
+    "R-E60-PIT-N"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S6040 periods Chal, EB(major), EB1(major), MB(major), LB(major), IA(major), IA1, IA2, Per(major), Hel(major), Rom(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E11-POOL-EAST",
+     "status": "compatible",
+     "feature": "rarity C1 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E181 Site_Components: walls; pool (539 m at 111.8°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E181"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S1454 Site_Components: cisterns; flint tools; caves (894 m at 26.6°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S1454"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S6040 C3s UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S6040-1-graves-north",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-GRAVES-N-SECTOR",
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "A grave or tomb, not securely later than 135 CE, in the north sector; ideally within 10 m of the selected pit's mouth.",
+     "where": "315°–45° within 1 km of WBADB S6040 (190900/162500, OIG). Record: Zertal Vol. 4 site 194 for ʿArkan es-Suwaneh (S1454); Bar-Adon site 13.",
+     "record_ids": [
+      "REC-ZERTAL-V4",
+      "REC-BAR-ADON-1972"
+     ],
+     "success": "A placed grave in the sector, or a grave at the selected pit's mouth.",
+     "contradiction": "The record lists every grave near the site, places all of them outside the north sector, and states the list is complete; or the only northern grave is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E60-BURIED",
+      "D-E60-SECOND-WORD"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S2539",
+   "label": "Tulul Abu el-'Alaiq",
+   "anchor": {
+    "name": "Tulul Abu el-'Alaiq",
+    "wbadb": "S2539",
+    "grid_oig_m": [
+     191400,
+     139750
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S2539",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "MATCH",
+    "C2": "MATCH",
+    "C3s": "UNKNOWN",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "MATCH"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E11-POOL-EAST",
+    "R-E60-PIT-N"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S2539 periods Hel(major), Rom(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E11-POOL-EAST",
+     "status": "compatible",
+     "feature": "rarity C1 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2551 Site_Components: Very large Herodian pool (452 m at 111.8°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2551"
+      },
+      {
+       "record": "REC-NIGRO-2011",
+       "citation": "Nigro 2011 cat. 38 p. 120: Public architecture: pool (416 m at 87.9°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Nigro oasis catalogue (compiled)"
+      },
+      {
+       "record": null,
+       "citation": "Mem III p. 202 (packet page; printed p. 206), Kanat Musa: some ruins east of the Birket Musa (452 m at 111.8°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Survey of Western Palestine 1870s"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2496 Site_Components: Natural cave; no finds (612 m at 321.6°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2496"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2482 Site_Components: Natural cave; no finds (808 m at 338.2°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2482"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2475 Site_Components: Natural cave; no finds (914 m at 342.2°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2475"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S2539 C3s UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S2539-1-graves-north",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-GRAVES-N-SECTOR",
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "A grave or tomb, not securely later than 135 CE, in the north sector; ideally within 10 m of the selected pit's mouth.",
+     "where": "315°–45° within 1 km of WBADB S2539 (191400/139750, OIG). Record: Weiss 2002 IX/9, IX/10, IX/17; Hirschfeld site 19.",
+     "record_ids": [
+      "REC-ATIQOT41-CAVES",
+      "REC-IAA-CAVES",
+      "REC-HIRSCHFELD-1983"
+     ],
+     "success": "A placed grave in the sector, or a grave at the selected pit's mouth.",
+     "contradiction": "The record lists every grave near the site, places all of them outside the north sector, and states the list is complete; or the only northern grave is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E60-BURIED",
+      "D-E60-SECOND-WORD"
+     ]
+    },
+    {
+     "id": "S2539-2-opening-facing",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-OPENING-N"
+     ],
+     "branch": "RB-M only",
+     "expect": "At least one of the selected north-sector caves has an opening facing 315°–45°.",
+     "where": "Weiss 2002 IX/9, IX/10, IX/17 (natural caves, no finds).",
+     "record_ids": [
+      "REC-ATIQOT41-CAVES",
+      "REC-IAA-CAVES"
+     ],
+     "success": "A recorded north-facing opening.",
+     "contradiction": "Every selected cave has a recorded facing and none faces 315°–45°: this rejects RB-M at these caves only.",
+     "contradiction_strength": "two-sided",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-OPENING",
+      "D-E60-SECOND-WORD"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S2589",
+   "label": "Kypros",
+   "anchor": {
+    "name": "Kypros",
+    "wbadb": "S2589",
+    "grid_oig_m": [
+     190500,
+     139050
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S2589",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "MATCH",
+    "C2": "MATCH",
+    "C3s": "UNKNOWN",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "MATCH"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E11-POOL-EAST",
+    "R-E60-PIT-N"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S2589 periods Hel(major), Rom(major), Byz(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E11-POOL-EAST",
+     "status": "compatible",
+     "feature": "rarity C1 feature(s)",
+     "evidence": [
+      {
+       "record": null,
+       "citation": "Mem III p. 24 (packet page; printed p. 191), Beit Jubr et Tahtani: Immediately south of the fort is a small ruined birkeh (890 m at 51.8°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Survey of Western Palestine 1870s"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2535 Site_Components: Natural cave; no finds (760 m at 9.1°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2535"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2520 Site_Components: Natural cave; no finds (924 m at 19.6°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2520"
+      },
+      {
+       "record": "REC-NIGRO-2011",
+       "citation": "Nigro 2011 cat. 32 p. 118: Late Hellenistic Period ... Public architecture: aqueduct, cisterns (585 m at 20.0°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Nigro oasis catalogue (compiled)"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S2589 C3s UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S2589-1-graves-north",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-GRAVES-N-SECTOR",
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "A grave or tomb, not securely later than 135 CE, in the north sector; ideally within 10 m of the selected pit's mouth.",
+     "where": "315°–45° within 1 km of WBADB S2589 (190500/139050, OIG). Record: Weiss 2002 IX/21, IX/22; Hirschfeld site 18.",
+     "record_ids": [
+      "REC-ATIQOT41-CAVES",
+      "REC-IAA-CAVES",
+      "REC-HIRSCHFELD-1983"
+     ],
+     "success": "A placed grave in the sector, or a grave at the selected pit's mouth.",
+     "contradiction": "The record lists every grave near the site, places all of them outside the north sector, and states the list is complete; or the only northern grave is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E60-BURIED",
+      "D-E60-SECOND-WORD"
+     ]
+    },
+    {
+     "id": "S2589-2-opening-facing",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-OPENING-N"
+     ],
+     "branch": "RB-M only",
+     "expect": "At least one of the selected north-sector caves has an opening facing 315°–45°.",
+     "where": "Weiss 2002 IX/21, IX/22 (natural caves, no finds).",
+     "record_ids": [
+      "REC-ATIQOT41-CAVES",
+      "REC-IAA-CAVES"
+     ],
+     "success": "A recorded north-facing opening.",
+     "contradiction": "Every selected cave has a recorded facing and none faces 315°–45°: this rejects RB-M at these caves only.",
+     "contradiction_strength": "two-sided",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-OPENING",
+      "D-E60-SECOND-WORD"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S2430",
+   "label": "Tell es-Samrat",
+   "anchor": {
+    "name": "Tell es-Samrat",
+    "wbadb": "S2430",
+    "grid_oig_m": [
+     191700,
+     141300
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S2430",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S2430 periods IA(major), Rom, Byz, EIs(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2347 Site_Components: Cave; pottery; pruta coin of the Great Revolt (967 m at 320.9°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2347"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2351 Site_Components: Cave; 17 Chal, EB and Rom burials (971 m at 318.8°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2351"
+      },
+      {
+       "record": "REC-NIGRO-2011",
+       "citation": "Nigro 2011 cat. 85 p. 146: Domestic architecture: houses ..., pit-dwellings (873 m at 30.9°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Nigro oasis catalogue (compiled)"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2351 Site_Components: 17 Chal, EB and Rom burials (971 m at 318.8°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2351"
+      },
+      {
+       "record": "REC-NIGRO-2011",
+       "citation": "Nigro 2011 cat. 61 p. 131: Funerary architecture: rock-cut tombs, kokhim with inscriptions (704 m at 345.7°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Nigro oasis catalogue (compiled)"
+      },
+      {
+       "record": "REC-NIGRO-2011",
+       "citation": "Nigro 2011 cat. 85 p. 146: Funerary architecture: cist-burials, burials beneath the floors (873 m at 30.9°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Nigro oasis catalogue (compiled)"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S2430 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S2430-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S2430 (191700/141300, OIG), or the site's eastern part. Record: Bar-Adon site 61; HA 54–55 p. 23.",
+     "record_ids": [
+      "REC-BAR-ADON-1972",
+      "REC-HA-SAMRAT"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S2430-2-opening-facing",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-OPENING-N"
+     ],
+     "branch": "RB-M only",
+     "expect": "At least one of the selected north-sector caves has an opening facing 315°–45°.",
+     "where": "Eshel and Zissu 2002a VIII/28 (Cave of the Sandal) and VIII/29 (Cave of the Pruṭa).",
+     "record_ids": [
+      "REC-ATIQOT41-CAVES",
+      "REC-IAA-CAVES"
+     ],
+     "success": "A recorded north-facing opening.",
+     "contradiction": "Every selected cave has a recorded facing and none faces 315°–45°: this rejects RB-M at these caves only.",
+     "contradiction_strength": "two-sided",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-OPENING",
+      "D-E60-SECOND-WORD"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S3137",
+   "label": "el-Muntar",
+   "anchor": {
+    "name": "el-Muntar",
+    "wbadb": "S3137",
+    "grid_oig_m": [
+     177050,
+     134300
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S3137",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "MATCH",
+    "C2": "MATCH",
+    "C3s": "UNKNOWN",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "MATCH"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E11-POOL-EAST",
+    "R-E60-PIT-N"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S3137 periods EB, IA(major), IA1(major), IA2, Per, Rom(major), Byz(major), Ott(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E11-POOL-EAST",
+     "status": "compatible",
+     "feature": "rarity C1 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3049 Site_Components: Church and reservoir near Jerusalem-Jericho Rom road (849 m at 45.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3049"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E471 Site_Components: Church and reservoir near Jerusalem-Jericho Rom road. (849 m at 45.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E471"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3094 Site_Components: Cistern; conduit; dwelling cave. (412 m at 346.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3094"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S3137 C3s UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S3137-1-graves-north",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-GRAVES-N-SECTOR",
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "A grave or tomb, not securely later than 135 CE, in the north sector; ideally within 10 m of the selected pit's mouth.",
+     "where": "315°–45° within 1 km of WBADB S3137 (177050/134300, OIG). Record: Dinur and Feig sites 506 and 492.",
+     "record_ids": [
+      "REC-DINUR-FEIG-1993"
+     ],
+     "success": "A placed grave in the sector, or a grave at the selected pit's mouth.",
+     "contradiction": "The record lists every grave near the site, places all of them outside the north sector, and states the list is complete; or the only northern grave is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E60-BURIED",
+      "D-E60-SECOND-WORD"
+     ]
+    }
+   ],
+   "excluded_links": [],
+   "notes": [
+    "C1 rests on a bearing of exactly 45.0° between points rounded to 50 m."
+   ]
+  },
+  {
+   "id": "M-E357",
+   "label": "Naḥal Mikhmas",
+   "anchor": {
+    "name": "Naḥal Mikhmas",
+    "wbadb": "E357",
+    "grid_oig_m": [
+     177100,
+     140350
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "E357",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "pre-70 only",
+    "in_R2": true,
+    "C1": "MATCH",
+    "C2": "MATCH",
+    "C3s": "UNKNOWN",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "MATCH"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E11-POOL-EAST",
+    "R-E60-PIT-N"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "E357 periods IA(major), IA1(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Pre-70 sensitivity set only: no Hellenistic or Roman record."
+    },
+    {
+     "step": 2,
+     "relation": "R-E11-POOL-EAST",
+     "status": "compatible",
+     "feature": "rarity C1 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2490 Site_Components: reservoirs (602 m at 94.8°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2490"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2437 Site_Components: cisterns (802 m at 356.4°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2437"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2437 Site_Components: rick-cut caves (802 m at 356.4°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2437"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "E357 C3s UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "E357-1-graves-north",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-GRAVES-N-SECTOR",
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "A grave or tomb, not securely later than 135 CE, in the north sector; ideally within 10 m of the selected pit's mouth.",
+     "where": "315°–45° within 1 km of WBADB E357 (177100/140350, OIG). Record: Patrich and Rubin 1983; Kallai site 119; Feldstein site 234.",
+     "record_ids": [
+      "REC-PATRICH-RUBIN-1983",
+      "REC-KALLAI-1972",
+      "REC-FELDSTEIN-1993"
+     ],
+     "success": "A placed grave in the sector, or a grave at the selected pit's mouth.",
+     "contradiction": "The record lists every grave near the site, places all of them outside the north sector, and states the list is complete; or the only northern grave is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E60-BURIED",
+      "D-E60-SECOND-WORD"
+     ]
+    }
+   ],
+   "excluded_links": [],
+   "notes": [
+    "C3 survey is UNKNOWN because the coders differ on the Sheikh's tomb date (U or L)."
+   ]
+  },
+  {
+   "id": "M-S206",
+   "label": "Tell Qa'un",
+   "anchor": {
+    "name": "Tell Qa'un",
+    "wbadb": "S206",
+    "grid_oig_m": [
+     194000,
+     201300
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S206",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": false,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S206 periods Chal(major), EB(major), EB1(major), EB2_3(major), IB(major), MB(major), MB2b_c(major), LB(major), IA(major), IA1(major), IA2(major), Per(major), Hel(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S197 Site_Components: ca. six rock-hewn caves, some for burial (316 m at 18.4°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S197"
+      },
+      {
+       "record": null,
+       "citation": "Zertal 2005 (Eng. Vol. 4) Site 3, p. 110; Fig. 36, p. 111: About 40 m north of the summit ... caves with … (N; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Zertal 2005 (Eng. Vol. 4) Site 3,"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S197 Site_Components: ca. six rock-hewn caves, some for burial (316 m at 18.4°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S197"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S206 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S206-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S206 (194000/201300, OIG), or the site's eastern part. Record: Ben-Yosef 2007 site 1; Bar 2008 site 4.",
+     "record_ids": [
+      "REC-BENYOSEF-BAR"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S206-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S197 (Kh. Qaʿun 1: about six rock-hewn caves, some for burial), a tomb within 10 m of a cistern or cave mouth.",
+     "where": "WBADB S197. Record: Zertal 2005 site 2 was read for S197 as a unit (exposed).",
+     "record_ids": [
+      "REC-BENYOSEF-BAR"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "Only a complete plan of the row's features with every tomb more than 10 m from every opening.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-E99",
+   "label": "Tananir",
+   "anchor": {
+    "name": "Tananir",
+    "wbadb": "E99",
+    "grid_oig_m": [
+     176900,
+     179500
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "E99",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": false,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "E99 periods Chal(major), EB, MB(major), LB(major), Rom(major), Byz(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": null,
+       "citation": "Boling 1975 pp. 36, 57-60, 65, 84; Fig. 2 p. 34; Fig. 13 p. 44: compaction in a defunct pit, Silo B (N; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Boling 1975"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E92 Site_Components: Rock-hewn burial cave (955 m at 337.2°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E92"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E92 Site_Components: IA and Rom tomb with courtyard (955 m at 337.2°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E92"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "E99 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "E99-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB E99 (176900/179500, OIG), or the site's eastern part. Record: HA 28–29 pp. 39–40.",
+     "record_ids": [
+      "REC-HA-TANANIR"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    }
+   ],
+   "excluded_links": [],
+   "notes": [
+    "C2 direction: the text says north, but the plan's arrows suggest 30°–45° (single-coded)."
+   ]
+  },
+  {
+   "id": "M-S845",
+   "label": "Kh. es-Saleh",
+   "anchor": {
+    "name": "Kh. es-Saleh",
+    "wbadb": "S845",
+    "grid_oig_m": [
+     202100,
+     179100
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S845",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": false,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S845 periods LB(major), IA(major), IA1(major), Rom, Byz",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S836 Site_Components: water cisterns (990 m at 315.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S836"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S836 Site_Components: sarcophagus (990 m at 315.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S836"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E97 Site_Components: sarcophagus (990 m at 315.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E97"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S845 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S845-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S845 (202100/179100, OIG), or the site's eastern part. Record: Gophna and Porat site 170; Ben-Yosef site 21.",
+     "record_ids": [
+      "REC-GOPHNA-PORAT-1972",
+      "REC-BENYOSEF-BAR"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S845-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S836 (Kh. el-Ghirur: water cisterns; sarcophagus), a tomb within 10 m of a cistern or cave mouth.",
+     "where": "WBADB S836. Record: Gophna and Porat site 169; ESI 9 and Zertal 1996 site 259 were read for S836 (exposed).",
+     "record_ids": [
+      "REC-GOPHNA-PORAT-1972",
+      "REC-ESI9-GHIRUR"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "Only a complete plan of the row's features with every tomb more than 10 m from every opening.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ],
+     "notes": "Exploratory now: ESI 9 Fig. 124 (0–20 m scale, already inspected for S836) labels cistern mouths and a sarcophagus about 20 m SE of the site. Measuring that pair is exploratory, not an unseen test."
+    }
+   ],
+   "excluded_links": [],
+   "notes": [
+    "C2 and C3 rest on one row at 990 m and exactly 315.0°, on the sector edge and the 1 km limit (100 m precision). Its own Zertal entry says 'Cisterns: none'; the site was not visited."
+   ]
+  },
+  {
+   "id": "M-S1032",
+   "label": "Udala",
+   "anchor": {
+    "name": "Udala",
+    "wbadb": "S1032",
+    "grid_oig_m": [
+     176250,
+     173200
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S1032",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": false,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S1032 periods Hel(major), Rom(major), Byz(major), Med(major), Ott(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S990 Site_Components: cisterns (986 m at 30.5°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S990"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S990 Site_Components: rock-cut caves (986 m at 30.5°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S990"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S990 Site_Components: rock-cut tomb nearby (986 m at 30.5°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S990"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S990 Site_Components: Sheikh's tomb complex (En-Nabi 'Uzeir) (986 m at 30.5°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S990"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E124 Site_Components: Sheikh's tomb (En-Nabi 'Uzeir) (986 m at 30.5°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E124"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S1032 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S1032-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S1032 (176250/173200, OIG), or the site's eastern part. Record: Highlands p. 699, already read; no unread record identified for the unit.",
+     "record_ids": [
+      "REC-HIGHLANDS"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S1032-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S990 (Tell er-Ras: cisterns; rock-cut caves; rock-cut tomb nearby), a tomb within 10 m of a cistern or cave mouth.",
+     "where": "WBADB S990. Record: Highlands pp. 700–702; Kallai site 28; Sion site 313.",
+     "record_ids": [
+      "REC-HIGHLANDS-700",
+      "REC-KALLAI-1972",
+      "REC-SION-2001"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "Only a complete plan of the row's features with every tomb more than 10 m from every opening.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S1137",
+   "label": "Qarawet et-Tahta",
+   "anchor": {
+    "name": "Qarawet et-Tahta",
+    "wbadb": "S1137",
+    "grid_oig_m": [
+     196200,
+     170600
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S1137",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": false,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S1137 periods Rom(major), Byz(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S1116 Site_Components: Water cisterns (400 m at 0.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S1116"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S1116 Site_Components: Sheikh's tomb (400 m at 0.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S1116"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S1137 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S1137-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S1137 (196200/170600, OIG), or the site's eastern part. Record: Gophna and Porat site 190.",
+     "record_ids": [
+      "REC-GOPHNA-PORAT-1972"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S1137-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH",
+      "R-E60-JOINT-ACCESS"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S1116 (Tell eṣ-Ṣimadi: water cisterns; Sheikh's tomb), a tomb within 10 m of a cistern or cave mouth, and the tomb is a burial older than 135 CE rather than a later shrine.",
+     "where": "WBADB S1116. Record: Zertal 2005 site 84 was read for S1116 (exposed).",
+     "record_ids": [
+      "REC-GOPHNA-PORAT-1972"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "The record dates the only tomb as a later shrine with no earlier burial.",
+     "contradiction_strength": "two-sided",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": [],
+   "notes": [
+    "Its own Zertal entry says 'Cisterns: none'; C2 comes from the neighbouring row S1116."
+   ]
+  },
+  {
+   "id": "M-S1502",
+   "label": "Kh. Sara C",
+   "anchor": {
+    "name": "Kh. Sara C",
+    "wbadb": "S1502",
+    "grid_oig_m": [
+     179200,
+     162350
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S1502",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": false,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S1502 periods Hel, Rom, Byz(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S1488 Site_Components: cisterns (255 m at 348.7°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S1488"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S1488 Site_Components: burial caves (255 m at 348.7°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S1488"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S1502 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S1502-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S1502 (179200/162350, OIG), or the site's eastern part. Record: Sion 2001 site 425.",
+     "record_ids": [
+      "REC-SION-2001"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S1502-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S1488 (Kh. Sara: cisterns; burial caves), a tomb within 10 m of a cistern or cave mouth.",
+     "where": "WBADB S1488. Record: Kallai site 38; Sion site 423.",
+     "record_ids": [
+      "REC-KALLAI-1972",
+      "REC-SION-2001"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "Only a complete plan of the row's features with every tomb more than 10 m from every opening.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S1929",
+   "label": "Kh. el-Khudriya",
+   "anchor": {
+    "name": "Kh. el-Khudriya",
+    "wbadb": "S1929",
+    "grid_oig_m": [
+     177450,
+     146600
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S1929",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S1929 periods MB(major), Hel(major), Rom(major), Byz(major), EIs(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": null,
+       "citation": "Callaway 1970 p. 10: on the terrace north of the church ... a storage … (N; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Callaway 1970"
+      },
+      {
+       "record": null,
+       "citation": "Callaway 1970 p. 10: on the terrace north of the church ... three large … (N; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Callaway 1970"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": null,
+       "citation": "Finkelstein et al. 1997 p. 536: Burial caves were found in the northern slope (N; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Finkelstein et al. 1997"
+      },
+      {
+       "record": null,
+       "citation": "Finkelstein et al. 1997 p. 536: One burial cave revealed Middle Bronze Age pottery (N; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Finkelstein et al. 1997"
+      },
+      {
+       "record": null,
+       "citation": "Callaway 1970 pp. 10, 12; Fig. 2 p. 11: In the Wadi Asas immediately north of the site was … (N; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "Callaway 1970"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S1929 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S1929-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S1929 (177450/146600, OIG), or the site's eastern part. Record: Finkelstein 1993 site 98.",
+     "record_ids": [
+      "REC-FINKELSTEIN-1993"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    }
+   ],
+   "excluded_links": [],
+   "notes": [
+    "C2 takes 'north of the church' as north of the site (single-coded)."
+   ]
+  },
+  {
+   "id": "M-S2376",
+   "label": "Tell Maryam",
+   "anchor": {
+    "name": "Tell Maryam",
+    "wbadb": "S2376",
+    "grid_oig_m": [
+     175550,
+     141850
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S2376",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S2376 periods IA, IA1, IA2, Hel(major), Rom(major), Byz(major), EIs(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2301 Site_Components: dwelling cave (604 m at 335.6°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2301"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2301 Site_Components: cisterns (604 m at 335.6°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2301"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2283 Site_Components: Cemetery (776 m at 14.9°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2283"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2283 Site_Components: burial caves (776 m at 14.9°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2283"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S2376 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S2376-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S2376 (175550/141850, OIG), or the site's eastern part. Record: Kallai site 115; Feldstein site 210.",
+     "record_ids": [
+      "REC-KALLAI-1972",
+      "REC-FELDSTEIN-1993"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S2849",
+   "label": "unnamed WBADB unit S2849",
+   "anchor": {
+    "name": "unnamed WBADB unit S2849",
+    "wbadb": "S2849",
+    "grid_oig_m": [
+     175900,
+     136500
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S2849",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S2849 periods IA(major), IA2(major), Rom(major), EIs, Med(major), Ott(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2806 Site_Components: caves (412 m at 14.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2806"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2806 Site_Components: cisterns (412 m at 14.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2806"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2806 Comments: E. Damati excavated Per dwelling cave. (412 m at 14.0°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2806"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2806 Site_Components: Sheikh's tomb (412 m at 14.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2806"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2806 Site_Components: Per burial caves and dwellings (412 m at 14.0°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2806"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2806 Site_Components: IA2c tomb (412 m at 14.0°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2806"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S2849 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S2849-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S2849 (175900/136500, OIG), or the site's eastern part. Record: Dinur and Feig site 475.",
+     "record_ids": [
+      "REC-DINUR-FEIG-1993"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S2849-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S2806 (Kh. ʿAlmit: caves; cisterns; burial caves), a tomb within 10 m of a cistern or cave mouth.",
+     "where": "WBADB S2806. Record: ESI 5 p. 1; HA-ESI 115 pp. 48*–49*; Dinur and Feig site 496.",
+     "record_ids": [
+      "REC-ALMIT-NOTICES",
+      "REC-DINUR-FEIG-1993"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "Only a complete plan of the row's features with every tomb more than 10 m from every opening.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S3036",
+   "label": "Kh. esh-Sheikh 'Antar",
+   "anchor": {
+    "name": "Kh. esh-Sheikh 'Antar",
+    "wbadb": "S3036",
+    "grid_oig_m": [
+     176250,
+     135000
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S3036",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S3036 periods IA(major), IA2(major), Rom, Byz, EIs, Med(major), Ott(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3001 Site_Components: cisterns (354 m at 351.9°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3001"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3001 Site_Components: caves (354 m at 351.9°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3001"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3001 Site_Components: columbarium cave (354 m at 351.9°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3001"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3001 Site_Components: burial cave (354 m at 351.9°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3001"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E462 Site_Components: burial cave (354 m at 351.9°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E462"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E456 Site_Components: burial caves (522 m at 343.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E456"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S3036 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S3036-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S3036 (176250/135000, OIG), or the site's eastern part. Record: Dinur and Feig site 495.",
+     "record_ids": [
+      "REC-DINUR-FEIG-1993"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S3036-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S3001 (Kh. Deir es-Sidd: cisterns; caves; burial cave), a tomb within 10 m of a cistern or cave mouth.",
+     "where": "WBADB S3001. Record: Dinur and Feig site 493.",
+     "record_ids": [
+      "REC-DINUR-FEIG-1993"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "Only a complete plan of the row's features with every tomb more than 10 m from every opening.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S3419",
+   "label": "Ras el-'Eizariya",
+   "anchor": {
+    "name": "Ras el-'Eizariya",
+    "wbadb": "S3419",
+    "grid_oig_m": [
+     176200,
+     131300
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S3419",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S3419 periods IA(major), IA2(major), Hel(major), Rom(major), Byz(major), Ott(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E592 Site_Components: Tombs; caves; winepresses (447 m at 10.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E592"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E592 Site_Components: Tombs; caves; winepresses (447 m at 10.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E592"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S3419 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S3419-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S3419 (176200/131300, OIG), or the site's eastern part. Record: Dinur and Feig site 487; Peleg 2009i.",
+     "record_ids": [
+      "REC-DINUR-FEIG-1993",
+      "REC-PELEG-2009"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S3419-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At E592 (Ras el-ʿEizariya: tombs; caves), a tomb within 10 m of a cistern or cave mouth.",
+     "where": "WBADB E592. Record: Peleg 2009i.",
+     "record_ids": [
+      "REC-PELEG-2009"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "Only a complete plan of the row's features with every tomb more than 10 m from every opening.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S3961",
+   "label": "unnamed WBADB unit S3961",
+   "anchor": {
+    "name": "unnamed WBADB unit S3961",
+    "wbadb": "S3961",
+    "grid_oig_m": [
+     193300,
+     126800
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S3961",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "main",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S3961 periods Rom(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Main set: Hellenistic or Roman recorded."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E761 Site_Name: Cave Q-4 (765 m at 11.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E761"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3900 Site_Components: Cave; pottery; textiles; cord; leather (808 m at 328.7°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3900"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E764 Site_Components: Cave; pottery; textiles; cord; leather (808 m at 328.7°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E764"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E754 Site_Components: cemetery with about 1100 burials (919 m at 22.4°; date D)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E754"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S3961 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S3961-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S3961 (193300/126800, OIG), or the site's eastern part. Record: Bar-Adon site 98c.",
+     "record_ids": [
+      "REC-BAR-ADON-1972"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S3961-2-opening-facing",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-OPENING-N"
+     ],
+     "branch": "RB-M only",
+     "expect": "At least one of the selected north-sector caves has an opening facing 315°–45°.",
+     "where": "Cave Q-4 (E761) and Cave B-49 (S3900).",
+     "record_ids": [
+      "REC-ATIQOT41-CAVES",
+      "REC-IAA-CAVES"
+     ],
+     "success": "A recorded north-facing opening.",
+     "contradiction": "Every selected cave has a recorded facing and none faces 315°–45°: this rejects RB-M at these caves only.",
+     "contradiction_strength": "two-sided",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-OPENING",
+      "D-E60-SECOND-WORD"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S843",
+   "label": "Kh. edh-Dhra'",
+   "anchor": {
+    "name": "Kh. edh-Dhra'",
+    "wbadb": "S843",
+    "grid_oig_m": [
+     201800,
+     179300
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S843",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "pre-70 only",
+    "in_R2": false,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S843 periods Chal(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Pre-70 sensitivity set only: no Hellenistic or Roman record."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S836 Site_Components: water cisterns (640 m at 321.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S836"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S836 Site_Components: sarcophagus (640 m at 321.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S836"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E97 Site_Components: sarcophagus (640 m at 321.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E97"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S843 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S843-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S843 (201800/179300, OIG), or the site's eastern part. Record: Bar 2008 site 45.",
+     "record_ids": [
+      "REC-BENYOSEF-BAR"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S843-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S836 (Kh. el-Ghirur: water cisterns; sarcophagus), a tomb within 10 m of a cistern or cave mouth.",
+     "where": "WBADB S836. Record: Gophna and Porat site 169; ESI 9 was read for S836 (exposed).",
+     "record_ids": [
+      "REC-GOPHNA-PORAT-1972",
+      "REC-ESI9-GHIRUR"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "Only a complete plan of the row's features with every tomb more than 10 m from every opening.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ],
+     "notes": "Exploratory now: ESI 9 Fig. 124 (0–20 m scale, already inspected for S836) labels cistern mouths and a sarcophagus about 20 m SE of the site. Measuring that pair is exploratory, not an unseen test."
+    }
+   ],
+   "excluded_links": [],
+   "notes": [
+    "Its own Zertal entry says 'Cisterns: none'; C2 comes from the neighbouring row S836."
+   ]
+  },
+  {
+   "id": "M-S2096",
+   "label": "unnamed WBADB unit S2096",
+   "anchor": {
+    "name": "unnamed WBADB unit S2096",
+    "wbadb": "S2096",
+    "grid_oig_m": [
+     177200,
+     144100
+    ],
+    "point_precision_m": 100,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S2096",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "pre-70 only",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S2096 periods IA(major), IA2(major), Byz(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Pre-70 sensitivity set only: no Hellenistic or Roman record."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2041 Site_Components: cisterns (716 m at 12.1°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2041"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2033 Site_Components: dwelling caves (863 m at 350.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2033"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2033 Site_Components: cisterns (863 m at 350.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2033"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2033 Site_Components: Sheikh's tomb (863 m at 350.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2033"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S2096 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S2096-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S2096 (177200/144100, OIG), or the site's eastern part. Record: Feldstein site 240.",
+     "record_ids": [
+      "REC-FELDSTEIN-1993"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S2096-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH",
+      "R-E60-JOINT-ACCESS"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S2033 (Kh. Kafr Nata: cisterns; dwelling caves; Sheikh's tomb), a tomb within 10 m of a cistern or cave mouth, and the tomb is a burial older than 135 CE rather than a later shrine.",
+     "where": "WBADB S2033. Record: Feldstein site 239; Kallai site 100.",
+     "record_ids": [
+      "REC-FELDSTEIN-1993",
+      "REC-KALLAI-1972"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "The record dates the only tomb as a later shrine with no earlier burial.",
+     "contradiction_strength": "two-sided",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S2594",
+   "label": "unnamed WBADB unit S2594",
+   "anchor": {
+    "name": "unnamed WBADB unit S2594",
+    "wbadb": "S2594",
+    "grid_oig_m": [
+     178100,
+     138950
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S2594",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "pre-70 only",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S2594 periods EB(major), IB(major), MB(major), IA(major), IA2(major), Byz(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Pre-70 sensitivity set only: no Hellenistic or Roman record."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2550 Site_Components: cistern (763 m at 328.4°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2550"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2550 Site_Components: caves (763 m at 328.4°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2550"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S2565 Site_Components: burial caves (492 m at 336.0°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S2565"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S2594 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S2594-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S2594 (178100/138950, OIG), or the site's eastern part. Record: Dinur and Feig site 532.",
+     "record_ids": [
+      "REC-DINUR-FEIG-1993"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    }
+   ],
+   "excluded_links": []
+  },
+  {
+   "id": "M-S3072",
+   "label": "unnamed WBADB unit S3072",
+   "anchor": {
+    "name": "unnamed WBADB unit S3072",
+    "wbadb": "S3072",
+    "grid_oig_m": [
+     175850,
+     134750
+    ],
+    "point_precision_m": 50,
+    "note": null
+   },
+   "origin": [
+    "rarity two-of-three list"
+   ],
+   "rarity": {
+    "unit": "S3072",
+    "source": "research/rarity/kohlit/stage2/addendum_s2/results/unit_results.csv (primary, with Nigro)",
+    "set": "pre-70 only",
+    "in_R2": true,
+    "C1": "UNKNOWN",
+    "C2": "MATCH",
+    "C3s": "MATCH",
+    "C3t": "UNKNOWN",
+    "A_survey": "UNKNOWN",
+    "B": "UNKNOWN"
+   },
+   "workbench": null,
+   "screens": [
+    "Stage 1: pool word within 2 km."
+   ],
+   "selection_relations": [
+    "R-ANCHOR-PERIOD",
+    "R-E60-PIT-N",
+    "R-E60-GRAVES-N-SECTOR"
+   ],
+   "chain": [
+    {
+     "step": 1,
+     "relation": "R-ANCHOR-PERIOD",
+     "status": "compatible",
+     "feature": "the unit",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "where": "S3072 periods MB(major), IA(major), IA1(major), IA2(major), Per(major)",
+       "kind": "published_reconstruction",
+       "lineage": "WBADB unit row"
+      }
+     ],
+     "used_for_selection": true,
+     "note": "Pre-70 sensitivity set only: no Hellenistic or Roman record."
+    },
+    {
+     "step": 2,
+     "relation": "R-E60-PIT-N",
+     "status": "compatible",
+     "feature": "rarity C2 feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3013 Site_Components: two caves, two winepresses, a cistern (510 m at 348.7°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3013"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3001 Site_Components: cisterns; caves (695 m at 30.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3001"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E462 Site_Components: cisterns; caves (695 m at 30.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E462"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 3,
+     "relation": "R-E60-GRAVES-N-SECTOR",
+     "status": "compatible",
+     "feature": "rarity C3s feature(s)",
+     "evidence": [
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3013 Site_Components: burial caves (510 m at 348.7°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3013"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB S3001 Site_Components: burial cave (695 m at 30.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row S3001"
+      },
+      {
+       "record": "REC-WBADB",
+       "citation": "WBADB E462 Site_Components: burial cave (695 m at 30.3°; date U)",
+       "where": "rarity coder A feature",
+       "kind": "observed",
+       "lineage": "survey or excavation row E462"
+      }
+     ],
+     "used_for_selection": true
+    },
+    {
+     "step": 4,
+     "relation": "R-E11-POOL-EAST",
+     "status": "unknown",
+     "feature": "none qualifying in the coded sources",
+     "evidence": [
+      {
+       "record": "REC-RARITY",
+       "where": "S3072 C1 UNKNOWN",
+       "kind": "inference",
+       "lineage": "rarity coding"
+      }
+     ],
+     "used_for_selection": false
+    }
+   ],
+   "contradicted_branches": [],
+   "set_aside": [
+    {
+     "item": "Entry 11's four cubits",
+     "why": "A digging depth at the deposit, not a distance between landmarks."
+    },
+    {
+     "item": "Entry 16's 14, 40 or 41 cubits and Entry 4's six cubits",
+     "why": "Stated distances whose end points are not fixed; Entry 16's number is restored. Use only after both ends are located."
+    },
+    {
+     "item": "The 1 km and 10 m rarity tolerances",
+     "why": "Project tolerances (pre-registration §4), not distances in the text."
+    }
+   ],
+   "next_links": [
+    {
+     "id": "S3072-1-pool-east",
+     "kind": "landmark",
+     "relations": [
+      "R-E11-POOL-EAST"
+     ],
+     "branch": "all branches",
+     "expect": "An open pool or reservoir (3 m or more, or called a pool) in the east sector, not securely later than 135 CE.",
+     "where": "45°–135° within 1 km of WBADB S3072 (175850/134750, OIG), or the site's eastern part. Record: Dinur and Feig site 469.",
+     "record_ids": [
+      "REC-DINUR-FEIG-1993"
+     ],
+     "success": "A placed pool inside the sector with a margin larger than its position error.",
+     "contradiction": "The record states that the site and its east side have no pool or reservoir, and no recorded pool could qualify; or the only eastern pool is securely later than 135 CE.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 1,
+     "reading_dependencies": [
+      "D-E11-EAST-SENSE"
+     ]
+    },
+    {
+     "id": "S3072-2-mouth",
+     "kind": "landmark",
+     "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+     ],
+     "branch": "RB-M, RB-P",
+     "expect": "At S3013 (ʿAnatoth: cisterns; caves; burial caves), a tomb within 10 m of a cistern or cave mouth.",
+     "where": "WBADB S3013. Record: Dinur and Feig site 472.",
+     "record_ids": [
+      "REC-DINUR-FEIG-1993"
+     ],
+     "success": "A plan or an adjacency phrase puts a tomb at the mouth.",
+     "contradiction": "Only a complete plan of the row's features with every tomb more than 10 m from every opening.",
+     "contradiction_strength": "absence-statement only",
+     "priority": 2,
+     "reading_dependencies": [
+      "D-E60-BURIED"
+     ]
+    }
+   ],
+   "excluded_links": []
+  }
+ ]
+}

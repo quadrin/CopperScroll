@@ -1,0 +1,856 @@
+{
+ "cases": [
+  {
+   "as_given": "c4",
+   "case_id": "dev-001",
+   "degradations": [],
+   "key_answer": "c4",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "true feature",
+     "selected": "c4",
+     "still_missing": [],
+     "withheld_prediction": "east"
+    }
+   ],
+   "true_feature": "c4"
+  },
+  {
+   "as_given": "insufficient_evidence",
+   "case_id": "dev-002",
+   "degradations": [
+    "instruction_opening_missing"
+   ],
+   "key_answer": "insufficient",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [
+      "instruction_opening_missing"
+     ],
+     "withheld_prediction": "unknown"
+    },
+    {
+     "restored": [
+      "instruction_opening_missing"
+     ],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [],
+     "withheld_prediction": "north"
+    }
+   ],
+   "true_feature": "c1"
+  },
+  {
+   "as_given": "c1",
+   "case_id": "dev-003",
+   "degradations": [
+    "one_candidate_unrecorded"
+   ],
+   "key_answer": "none",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "wrong candidate",
+     "selected": "c1",
+     "still_missing": [
+      "one_candidate_unrecorded"
+     ],
+     "withheld_prediction": "west"
+    },
+    {
+     "restored": [
+      "one_candidate_unrecorded"
+     ],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [],
+     "withheld_prediction": "unknown"
+    }
+   ],
+   "true_feature": "c5"
+  },
+  {
+   "as_given": "c1",
+   "case_id": "dev-004",
+   "degradations": [
+    "instruction_direction_missing"
+   ],
+   "key_answer": "c1",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "true feature",
+     "selected": "c1",
+     "still_missing": [
+      "instruction_direction_missing"
+     ],
+     "withheld_prediction": "east"
+    },
+    {
+     "restored": [
+      "instruction_direction_missing"
+     ],
+     "result": "true feature",
+     "selected": "c1",
+     "still_missing": [],
+     "withheld_prediction": "east"
+    }
+   ],
+   "true_feature": "c1"
+  },
+  {
+   "as_given": "insufficient_evidence",
+   "case_id": "dev-005",
+   "degradations": [
+    "date_unknown",
+    "instruction_direction_missing"
+   ],
+   "key_answer": "insufficient",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [
+      "date_unknown",
+      "instruction_direction_missing"
+     ],
+     "withheld_prediction": "unknown"
+    },
+    {
+     "restored": [
+      "date_unknown"
+     ],
+     "result": "true feature",
+     "selected": "c2",
+     "still_missing": [
+      "instruction_direction_missing"
+     ],
+     "withheld_prediction": "east"
+    },
+    {
+     "restored": [
+      "instruction_direction_missing"
+     ],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [
+      "date_unknown"
+     ],
+     "withheld_prediction": "east"
+    },
+    {
+     "restored": [
+      "date_unknown",
+      "instruction_direction_missing"
+     ],
+     "result": "true feature",
+     "selected": "c2",
+     "still_missing": [],
+     "withheld_prediction": "east"
+    }
+   ],
+   "true_feature": "c2"
+  },
+  {
+   "as_given": "none",
+   "case_id": "dev-006",
+   "degradations": [
+    "instruction_direction_missing",
+    "one_candidate_unrecorded"
+   ],
+   "key_answer": "none",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "none",
+     "selected": "none",
+     "still_missing": [
+      "instruction_direction_missing",
+      "one_candidate_unrecorded"
+     ],
+     "withheld_prediction": "unknown"
+    },
+    {
+     "restored": [
+      "instruction_direction_missing"
+     ],
+     "result": "none",
+     "selected": "none",
+     "still_missing": [
+      "one_candidate_unrecorded"
+     ],
+     "withheld_prediction": "east"
+    },
+    {
+     "restored": [
+      "one_candidate_unrecorded"
+     ],
+     "result": "true feature",
+     "selected": "c5",
+     "still_missing": [
+      "instruction_direction_missing"
+     ],
+     "withheld_prediction": "east"
+    },
+    {
+     "restored": [
+      "instruction_direction_missing",
+      "one_candidate_unrecorded"
+     ],
+     "result": "true feature",
+     "selected": "c5",
+     "still_missing": [],
+     "withheld_prediction": "east"
+    }
+   ],
+   "true_feature": "c5"
+  },
+  {
+   "as_given": "none",
+   "case_id": "dev-007",
+   "degradations": [],
+   "key_answer": "c5",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "none",
+     "selected": "none",
+     "still_missing": [],
+     "withheld_prediction": "unknown"
+    }
+   ],
+   "true_feature": "c5"
+  },
+  {
+   "as_given": "insufficient_evidence",
+   "case_id": "dev-008",
+   "degradations": [],
+   "key_answer": "insufficient",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [],
+     "withheld_prediction": "unknown"
+    }
+   ],
+   "true_feature": "c6"
+  },
+  {
+   "as_given": "insufficient_evidence",
+   "case_id": "dev-009",
+   "degradations": [
+    "distance_missing",
+    "instruction_direction_missing"
+   ],
+   "key_answer": "insufficient",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [
+      "distance_missing",
+      "instruction_direction_missing"
+     ],
+     "withheld_prediction": "unknown"
+    },
+    {
+     "restored": [
+      "distance_missing"
+     ],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [
+      "instruction_direction_missing"
+     ],
+     "withheld_prediction": "unknown"
+    },
+    {
+     "restored": [
+      "instruction_direction_missing"
+     ],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [
+      "distance_missing"
+     ],
+     "withheld_prediction": "unknown"
+    },
+    {
+     "restored": [
+      "distance_missing",
+      "instruction_direction_missing"
+     ],
+     "result": "true feature",
+     "selected": "c1",
+     "still_missing": [],
+     "withheld_prediction": "north-east"
+    }
+   ],
+   "true_feature": "c1"
+  },
+  {
+   "as_given": "insufficient_evidence",
+   "case_id": "dev-010",
+   "degradations": [],
+   "key_answer": "insufficient",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "insufficient_evidence",
+     "selected": "insufficient_evidence",
+     "still_missing": [],
+     "withheld_prediction": "unknown"
+    }
+   ],
+   "true_feature": "c2"
+  },
+  {
+   "as_given": "c2",
+   "case_id": "dev-011",
+   "degradations": [],
+   "key_answer": "c2",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "true feature",
+     "selected": "c2",
+     "still_missing": [],
+     "withheld_prediction": "south"
+    }
+   ],
+   "true_feature": "c2"
+  },
+  {
+   "as_given": "c5",
+   "case_id": "dev-012",
+   "degradations": [
+    "distance_missing"
+   ],
+   "key_answer": "c5",
+   "subsets": [
+    {
+     "restored": [],
+     "result": "true feature",
+     "selected": "c5",
+     "still_missing": [
+      "distance_missing"
+     ],
+     "withheld_prediction": "north-east"
+    },
+    {
+     "restored": [
+      "distance_missing"
+     ],
+     "result": "true feature",
+     "selected": "c5",
+     "still_missing": [],
+     "withheld_prediction": "north-east"
+    }
+   ],
+   "true_feature": "c5"
+  }
+ ],
+ "single_restorations": [
+  {
+   "all_restored": "insufficient_evidence",
+   "case_id": "dev-002",
+   "degradations": [
+    "instruction_opening_missing"
+   ],
+   "outcomes": {
+    "instruction_opening_missing": "insufficient_evidence"
+   },
+   "restores_selection": []
+  },
+  {
+   "all_restored": "true feature",
+   "case_id": "dev-005",
+   "degradations": [
+    "date_unknown",
+    "instruction_direction_missing"
+   ],
+   "outcomes": {
+    "date_unknown": "true feature",
+    "instruction_direction_missing": "insufficient_evidence"
+   },
+   "restores_selection": [
+    "date_unknown"
+   ]
+  },
+  {
+   "all_restored": "no degradation to remove",
+   "case_id": "dev-008",
+   "degradations": [],
+   "outcomes": {},
+   "restores_selection": []
+  },
+  {
+   "all_restored": "true feature",
+   "case_id": "dev-009",
+   "degradations": [
+    "distance_missing",
+    "instruction_direction_missing"
+   ],
+   "outcomes": {
+    "distance_missing": "insufficient_evidence",
+    "instruction_direction_missing": "insufficient_evidence"
+   },
+   "restores_selection": []
+  },
+  {
+   "all_restored": "no degradation to remove",
+   "case_id": "dev-010",
+   "degradations": [],
+   "outcomes": {},
+   "restores_selection": []
+  }
+ ],
+ "sweep": {
+  "bases": [
+   "dev-001",
+   "dev-004",
+   "dev-009",
+   "dev-011",
+   "dev-012"
+  ],
+  "note": "Each base is a dev case in its fully restored form that selects its true feature. 'instruction distance' removal falls back to the 1 km default limit. 'true feature unrecorded' makes 'none' the correct output.",
+  "rows": [
+   {
+    "bases": 5,
+    "removed": [
+     "instruction direction"
+    ],
+    "results": {
+     "dev-001": "correct",
+     "dev-004": "correct",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 3
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction distance"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 1
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction opening"
+    ],
+    "results": {
+     "dev-001": "correct",
+     "dev-004": "correct",
+     "dev-009": "correct",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "correct"
+    },
+    "selection_survives": 4
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "all dates unknown"
+    ],
+    "results": {
+     "dev-001": "correct",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "correct",
+     "dev-011": "correct",
+     "dev-012": "correct"
+    },
+    "selection_survives": 4
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "true feature bearing"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 0
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "true feature distance"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 1
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "true feature unrecorded"
+    ],
+    "results": {
+     "dev-001": "correct none",
+     "dev-004": "correct none",
+     "dev-009": "correct none",
+     "dev-011": "correct none",
+     "dev-012": "correct none"
+    },
+    "selection_survives": 5
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction direction",
+     "instruction distance"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 1
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction direction",
+     "instruction opening"
+    ],
+    "results": {
+     "dev-001": "correct",
+     "dev-004": "correct",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 2
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction direction",
+     "all dates unknown"
+    ],
+    "results": {
+     "dev-001": "correct",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 2
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction direction",
+     "true feature bearing"
+    ],
+    "results": {
+     "dev-001": "correct",
+     "dev-004": "correct",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 3
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction direction",
+     "true feature distance"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 1
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction direction",
+     "true feature unrecorded"
+    ],
+    "results": {
+     "dev-001": "correct none",
+     "dev-004": "correct none",
+     "dev-009": "false selection",
+     "dev-011": "correct none",
+     "dev-012": "false selection"
+    },
+    "selection_survives": 3
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction distance",
+     "instruction opening"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 0
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction distance",
+     "all dates unknown"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 1
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction distance",
+     "true feature bearing"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 0
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction distance",
+     "true feature distance"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 1
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction distance",
+     "true feature unrecorded"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "false selection",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct none",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 1
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction opening",
+     "all dates unknown"
+    ],
+    "results": {
+     "dev-001": "correct",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "correct",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "correct"
+    },
+    "selection_survives": 3
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction opening",
+     "true feature bearing"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 0
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction opening",
+     "true feature distance"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 0
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "instruction opening",
+     "true feature unrecorded"
+    ],
+    "results": {
+     "dev-001": "correct none",
+     "dev-004": "correct none",
+     "dev-009": "correct none",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "correct none"
+    },
+    "selection_survives": 4
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "all dates unknown",
+     "true feature bearing"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 0
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "all dates unknown",
+     "true feature distance"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "correct",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 1
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "all dates unknown",
+     "true feature unrecorded"
+    ],
+    "results": {
+     "dev-001": "correct none",
+     "dev-004": "false selection",
+     "dev-009": "correct none",
+     "dev-011": "correct none",
+     "dev-012": "correct none"
+    },
+    "selection_survives": 4
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "true feature bearing",
+     "true feature distance"
+    ],
+    "results": {
+     "dev-001": "insufficient_evidence",
+     "dev-004": "insufficient_evidence",
+     "dev-009": "insufficient_evidence",
+     "dev-011": "insufficient_evidence",
+     "dev-012": "insufficient_evidence"
+    },
+    "selection_survives": 0
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "true feature bearing",
+     "true feature unrecorded"
+    ],
+    "results": {
+     "dev-001": "correct none",
+     "dev-004": "correct none",
+     "dev-009": "correct none",
+     "dev-011": "correct none",
+     "dev-012": "correct none"
+    },
+    "selection_survives": 5
+   },
+   {
+    "bases": 5,
+    "removed": [
+     "true feature distance",
+     "true feature unrecorded"
+    ],
+    "results": {
+     "dev-001": "correct none",
+     "dev-004": "correct none",
+     "dev-009": "correct none",
+     "dev-011": "correct none",
+     "dev-012": "correct none"
+    },
+    "selection_survives": 5
+   }
+  ]
+ },
+ "variants": [
+  {
+   "case_id": "dev-007",
+   "result": "true feature",
+   "selected": "c5",
+   "variant": "site 2 coded from the report's words (south, c. 200 m) instead of its map reference"
+  },
+  {
+   "case_id": "dev-010",
+   "result": "none",
+   "selected": "none",
+   "variant": "cave 4 coded from its printed map reference (233.1 deg, 762.8 m)"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+  "case_id": "res-011",
+  "batch": "reserved",
+  "instruction": "In the tomb of the many columns, the one turned toward the sunrise, which they did not finish: in its hall, at the stair in the corner that goes down and turns back on itself; at its foot: [deposit].",
+  "context": "Redacted site description: a row of rock-cut tombs in the desert hills on the east side of a river plain, cut for officials of a short-lived royal city. Most were left unfinished when the city was abandoned. The tombs are numbered from north to south.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "rock-cut tomb, façade and entrance only",
+        "position": {
+          "bearing_deg": 180,
+          "distance_m": null,
+          "relative_to": "north end of the row of tombs"
+        },
+        "opening": "façade faces west toward the plain",
+        "date": "D",
+        "dimensions": null,
+        "notes": "About the middle of the row. Only the façade and entrance were completed; a small area of floor inside; the upper parts of three columns detached as square pillars. Ink inscriptions once on the outer jambs naming a vizier."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "rock-cut tomb with a columned hall",
+        "position": {
+          "bearing_deg": 180,
+          "distance_m": null,
+          "relative_to": "north end of the row of tombs"
+        },
+        "opening": "façade faces west toward the plain",
+        "date": "D",
+        "dimensions": null,
+        "notes": "South of the middle of the row. Square hall; one row of three columns on each side of the central aisle, partly detached; the long architrave stops at the first column under a cornice; shrines with double cornices at the ends of the cross-corridor."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "rock-cut tomb with a columned hall",
+        "position": {
+          "bearing_deg": 180,
+          "distance_m": null,
+          "relative_to": "north end of the row of tombs"
+        },
+        "opening": "façade faces west toward the plain",
+        "date": "D",
+        "dimensions": null,
+        "notes": "Near the north end of the row. Single row of four columns, only the two of the aisle decorated; rough second chamber and burial place, perhaps later additions. Façade badly damaged; door found blocked with bricks and stones; a large heap of late pottery outside."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "rock-cut tomb with a columned hall",
+        "position": {
+          "bearing_deg": 180,
+          "distance_m": null,
+          "relative_to": "north end of the row of tombs"
+        },
+        "opening": "façade faces west toward the plain",
+        "date": "D",
+        "dimensions": null,
+        "notes": "South of the middle of the row. Oblong hall laid out for two rows of four columns; only two detached. A door cornice near the ceiling at the far end of the aisle; royal family scene begun on the outer lintel."
+      }
+    },
+    {
+      "id": "c5",
+      "features": {
+        "type": "rock-cut corridor tomb",
+        "position": {
+          "bearing_deg": 180,
+          "distance_m": null,
+          "relative_to": "north end of the row of tombs"
+        },
+        "opening": "façade faces west toward the plain",
+        "date": "D",
+        "dimensions": null,
+        "notes": "South of the middle of the row. Direct-corridor type with a vaulted roof; very incomplete inside and out; a small burial niche high in the south wall; ink figure and prayer in the entrance."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "direction_word_lost",
+    "distance_missing",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "How far below the hall floor does the stair end?",
+  "withheld_options": [
+    "less than 3 m",
+    "3 to 6 m",
+    "6 to 10 m",
+    "more than 10 m",
+    "unknown"
+  ],
+  "key_sha256": "df1e9474388333faf3f5526c0787f421fcf777c217134f71970bb1571be0a9f3"
+}

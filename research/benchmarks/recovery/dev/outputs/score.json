@@ -1,0 +1,144 @@
+{
+ "code_sha256": {
+  "harness.py": "7e7f8cd698abfab170479b7adec177e3442e3dbeb78f588261dcb980469e6691",
+  "procedure.py": "5401b0734c4287da1919512674e166a0056018f2b964d84ba736fdc6ad539d7a",
+  "procedure_constants.json": "23e12c748264c8fd4ed1199c6ddb1ad71d8d22952cf808ad914f6d4a9dd07d98"
+ },
+ "key_check": "all key_sha256 values match",
+ "per_case": [
+  {
+   "case_id": "dev-001",
+   "key_answer": "c4",
+   "selected": "c4",
+   "selection": "correct",
+   "withheld": "correct",
+   "withheld_counted": true,
+   "withheld_key": "east",
+   "withheld_prediction": "east"
+  },
+  {
+   "case_id": "dev-002",
+   "key_answer": "insufficient",
+   "selected": "insufficient_evidence",
+   "selection": "correct",
+   "withheld": "unknown_when_answer_known",
+   "withheld_counted": false,
+   "withheld_key": "north",
+   "withheld_prediction": "unknown"
+  },
+  {
+   "case_id": "dev-003",
+   "key_answer": "none",
+   "selected": "c1",
+   "selection": "wrong",
+   "withheld": "correct",
+   "withheld_counted": true,
+   "withheld_key": "west",
+   "withheld_prediction": "west"
+  },
+  {
+   "case_id": "dev-004",
+   "key_answer": "c1",
+   "selected": "c1",
+   "selection": "correct",
+   "withheld": "correct",
+   "withheld_counted": true,
+   "withheld_key": "east",
+   "withheld_prediction": "east"
+  },
+  {
+   "case_id": "dev-005",
+   "key_answer": "insufficient",
+   "selected": "insufficient_evidence",
+   "selection": "correct",
+   "withheld": "unknown_when_answer_known",
+   "withheld_counted": false,
+   "withheld_key": "east",
+   "withheld_prediction": "unknown"
+  },
+  {
+   "case_id": "dev-006",
+   "key_answer": "none",
+   "selected": "none",
+   "selection": "correct",
+   "withheld": "unknown_when_answer_known",
+   "withheld_counted": true,
+   "withheld_key": "east",
+   "withheld_prediction": "unknown"
+  },
+  {
+   "case_id": "dev-007",
+   "key_answer": "c5",
+   "selected": "none",
+   "selection": "wrong",
+   "withheld": "correct",
+   "withheld_counted": true,
+   "withheld_key": "unknown",
+   "withheld_prediction": "unknown"
+  },
+  {
+   "case_id": "dev-008",
+   "key_answer": "insufficient",
+   "selected": "insufficient_evidence",
+   "selection": "correct",
+   "withheld": "correct",
+   "withheld_counted": false,
+   "withheld_key": "unknown",
+   "withheld_prediction": "unknown"
+  },
+  {
+   "case_id": "dev-009",
+   "key_answer": "insufficient",
+   "selected": "insufficient_evidence",
+   "selection": "correct",
+   "withheld": "unknown_when_answer_known",
+   "withheld_counted": false,
+   "withheld_key": "north-east",
+   "withheld_prediction": "unknown"
+  },
+  {
+   "case_id": "dev-010",
+   "key_answer": "insufficient",
+   "selected": "insufficient_evidence",
+   "selection": "correct",
+   "withheld": "unknown_when_answer_known",
+   "withheld_counted": false,
+   "withheld_key": "east",
+   "withheld_prediction": "unknown"
+  },
+  {
+   "case_id": "dev-011",
+   "key_answer": "c2",
+   "selected": "c2",
+   "selection": "correct",
+   "withheld": "correct",
+   "withheld_counted": true,
+   "withheld_key": "south",
+   "withheld_prediction": "south"
+  },
+  {
+   "case_id": "dev-012",
+   "key_answer": "c5",
+   "selected": "c5",
+   "selection": "correct",
+   "withheld": "correct",
+   "withheld_counted": true,
+   "withheld_key": "north-east",
+   "withheld_prediction": "north-east"
+  }
+ ],
+ "rules": "An insufficient_evidence output is correct only when the key says insufficient. A candidate or 'none' output is correct only when it equals the key answer. Withheld accuracy is counted only where the output is not insufficient_evidence.",
+ "summary": {
+  "abstentions_on_decidable": 0,
+  "cases": 12,
+  "correct_abstentions": 5,
+  "selection_correct": 10,
+  "wrong_selections": 2
+ },
+ "withheld_among_non_abstentions": {
+  "correct": 6,
+  "non_abstentions": 7,
+  "unknown_when_answer_known": 1,
+  "wrong": 0
+ }
+}

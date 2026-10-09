@@ -1,0 +1,14 @@
+{
+ "case_id": "dev-006",
+ "reasons": [
+  "parsed instruction: {\"direction\": null, \"distance\": {\"kind\": \"band\", \"max_m\": 720.0, \"min_m\": 480.0, \"stated\": \"1200 cubits\"}, \"opening\": null, \"reference\": \"the farm\", \"target_class\": \"tower\", \"type_term\": \"watchtower\"}",
+  "c1: contradicted: type=? (type 'structure, probably a field watchtower' may or may not be a tower); distance=F (distance 219.2 m is outside 480.0-720.0 m (1200 cubits)); date=T (date U passes)",
+  "c2: contradicted: type=T (type 'field watchtower' is a tower); distance=F (distance 1225.9 m is outside 480.0-720.0 m (1200 cubits)); date=T (date D passes)",
+  "c3: contradicted: type=T (type 'field watchtower' is a tower); distance=T (distance 525.5 m is inside 480.0-720.0 m (1200 cubits)); date=F (date L (securely later than the target window) fails)",
+  "c4: contradicted: type=T (type 'field watchtower' is a tower); distance=F (distance 872.8 m is outside 480.0-720.0 m (1200 cubits)); date=T (date D passes)",
+  "decision: every candidate is contradicted by at least one predicate",
+  "withheld: no candidate selected and the instruction does not state it"
+ ],
+ "selected": "none",
+ "withheld_prediction": "unknown"
+}

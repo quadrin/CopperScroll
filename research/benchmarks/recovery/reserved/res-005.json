@@ -1,0 +1,85 @@
+{
+  "case_id": "res-005",
+  "batch": "reserved",
+  "instruction": "In the pool at the gate of the sunrise, inside the wall, at the foot of the column that stands in its middle, 4 cubits: [deposit].",
+  "context": "Redacted site description: a Roman provincial town on a basalt plateau, with a rectangular circuit wall and a gate on each side. Nineteenth-century travellers describe several large rain-water reservoirs in and near the town; their notes are brief and do not always agree.",
+  "candidates": [
+    {
+      "id": "c1",
+      "features": {
+        "type": "reservoir",
+        "position": {
+          "bearing_deg": 90,
+          "distance_m": null,
+          "relative_to": "town centre (beside the east gate)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": "circular, about 30 m across",
+        "notes": "One of two reservoirs beside the east gate, apparently inside the wall; the travellers describe the two together and do not say which lies where. An old column is set upright in its centre (one traveller took the columns for water-level gauges)."
+      }
+    },
+    {
+      "id": "c2",
+      "features": {
+        "type": "pool",
+        "position": {
+          "bearing_deg": 0,
+          "distance_m": null,
+          "relative_to": "town centre (beside the north gate)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": null,
+        "notes": "A pool beside the north gate (one brief mention); size and form not recorded."
+      }
+    },
+    {
+      "id": "c3",
+      "features": {
+        "type": "reservoir, stone-lined",
+        "position": {
+          "bearing_deg": null,
+          "distance_m": null,
+          "relative_to": "town centre (beside the government house)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": "about 100 paces round and about 9 m deep (one traveller)",
+        "notes": "Large, deep, lined with small stones, roughly round. Near the centre of the town and near the theatre; on the published plan north-east of a square temple."
+      }
+    },
+    {
+      "id": "c4",
+      "features": {
+        "type": "reservoir",
+        "position": {
+          "bearing_deg": 90,
+          "distance_m": null,
+          "relative_to": "town centre (beside the east gate)"
+        },
+        "opening": null,
+        "date": "U",
+        "dimensions": "circular, about 30 m across",
+        "notes": "One of two reservoirs beside the east gate, apparently inside the wall; the travellers describe the two together and do not say which lies where. An old column is set upright in its centre (one traveller took the columns for water-level gauges)."
+      }
+    }
+  ],
+  "degradations": [
+    "names_redacted",
+    "distance_missing",
+    "date_unknown",
+    "reports_conflict",
+    "withheld_field_removed",
+    "inventory_partial"
+  ],
+  "withheld_question": "What covers the floor of the chosen pool?",
+  "withheld_options": [
+    "stone paving",
+    "lime plaster",
+    "bare rock",
+    "earth",
+    "unknown"
+  ],
+  "key_sha256": "bf4067ea4fa14d105777a1e868bc51d03bf68c75d6ee78552d38bc59b6e6928d"
+}

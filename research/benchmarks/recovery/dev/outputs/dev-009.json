@@ -1,0 +1,15 @@
+{
+ "case_id": "dev-009",
+ "reasons": [
+  "parsed instruction: {\"direction\": null, \"distance\": {\"kind\": \"band\", \"max_m\": 180.0, \"min_m\": 120.0, \"stated\": \"300 cubits\"}, \"opening\": null, \"reference\": \"the kiln\", \"target_class\": \"cave\", \"type_term\": \"cave\"}",
+  "c1: supported: type=T (type 'partially ruinous cave' is a cave); distance=T (distance 149.6 m is inside 120.0-180.0 m (300 cubits)); date=T (date U passes)",
+  "c2: unknown: type=T (type 'partially ruinous cave' is a cave); distance=? (distance not recorded); date=T (date U passes)",
+  "c3: contradicted: type=T (type 'cave' is a cave); distance=F (distance 246.1 m is outside 120.0-180.0 m (300 cubits)); date=T (date U passes)",
+  "c4: supported: type=T (type 'cave' is a cave); distance=T (distance 176.7 m is inside 120.0-180.0 m (300 cubits)); date=T (date U passes)",
+  "c5: contradicted: type=T (type 'cave' is a cave); distance=F (distance 74.2 m is outside 120.0-180.0 m (300 cubits)); date=T (date U passes)",
+  "decision: more than one candidate survives: c1, c2, c4",
+  "withheld: no candidate selected and the instruction does not state it"
+ ],
+ "selected": "insufficient_evidence",
+ "withheld_prediction": "unknown"
+}
