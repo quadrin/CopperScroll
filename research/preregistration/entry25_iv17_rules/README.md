@@ -18,7 +18,7 @@ The two rule files were written first. Only a JSON syntax parse ran before hashi
 - Hashed at 2026-10-09T21:27:06Z.
 - Repository base: main 6fee376, branch fixes-2026-10-09.
 - `arrival.py check` printed `manifest: ok (29 files)` at 2026-10-09T21:22:00Z, before the rules were written, and again after the tests.
-- Registration commit: _to be filled by the integrator with the commit that first adds these two files, and its push time._ A verdict counts as a test only if that push came before the record arrived.
+- Registration commit: 2ae0976 (2ae09762d6726a353f64947bdfbaccffe0d47bcc), on branch fixes-2026-10-09. Its push time is the time this commit reached GitHub main. A verdict counts as a test only if that push came before the record arrived.
 - The checker and tests were written after the freeze. They found no inconsistency, so the frozen files were never edited.
 
 ## Files

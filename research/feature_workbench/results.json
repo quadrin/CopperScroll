@@ -56016,7 +56016,7 @@
               "id": "decisions-iv17-l656-specification",
               "label": "Test specification and exposure",
               "status": "info",
-              "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure.",
+              "detail": "Commit 2ae0976 freezes the Entry 25 mouth-aspect rule (primary east sector 45–135°, declared sensitivity sectors, whole-interval pass/fail) and the eight IV/17 target declarations, before the L-656 file or IAA records arrive. Phase branches are not frozen. Possible consequences stay possible; no reserved observation is certified unused.",
               "source_ids": [
                 "decisions-iv17-phase",
                 "decisions-iv17-unread-file",
@@ -56031,7 +56031,7 @@
                 "iv17-south-wall"
               ],
               "value": {
-                "freeze": "not_frozen",
+                "freeze": "partly_frozen",
                 "unused_status": "unverified"
               }
             }
@@ -56841,11 +56841,11 @@
             },
             "next_action": "Prepare the permit/basket/contact extraction fields. Await a specific file or custodian referral; freeze the chosen Entry25 branches and audit exposure before any reserved observation.",
             "freeze": {
-              "status": "not_frozen",
-              "commit": null,
-              "spec_path": null,
+              "status": "partly_frozen",
+              "commit": "2ae09762d6726a353f64947bdfbaccffe0d47bcc",
+              "spec_path": "research/preregistration/entry25_iv17_rules/rules.json",
               "unused_status": "unverified",
-              "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+              "detail": "Commit 2ae0976 freezes the Entry 25 mouth-aspect rule (primary east sector 45–135°, declared sensitivity sectors, whole-interval pass/fail) and the eight IV/17 target declarations, before the L-656 file or IAA records arrive. Phase branches are not frozen. Possible consequences stay possible; no reserved observation is certified unused."
             },
             "outcomes": [
               {
@@ -58423,7 +58423,7 @@
               "request_status": "related_request_pending",
               "access_status": "pending_record",
               "effort_level": "field_record_audit",
-              "freeze_status": "not_frozen",
+              "freeze_status": "partly_frozen",
               "historical_priority": "high",
               "families_affected": [
                 "entry25"
@@ -63110,7 +63110,7 @@
                 "Necessary: every smallest record set that separates the Entry 25 cave branches (IV/17, IV/11, Twin Cave) classes includes it.",
                 "Separates 15 class pairs in Entry 25 cave branches (IV/17, IV/11, Twin Cave) in principle; it can exclude 5 classes.",
                 "5 of its outcomes leave every class alive, so it guarantees nothing in the worst case.",
-                "Recorded access: request related_request_pending, access pending_record, effort field_record_audit, freeze not_frozen."
+                "Recorded access: request related_request_pending, access pending_record, effort field_record_audit, freeze partly_frozen."
               ],
               "per_family": {
                 "kohlit": {

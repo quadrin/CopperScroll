@@ -361,11 +361,11 @@
       },
       "next_action": "Prepare the permit/basket/contact extraction fields. Await a specific file or custodian referral; freeze the chosen Entry25 branches and audit exposure before any reserved observation.",
       "freeze": {
-        "status": "not_frozen",
-        "commit": null,
-        "spec_path": null,
+        "status": "partly_frozen",
+        "commit": "2ae09762d6726a353f64947bdfbaccffe0d47bcc",
+        "spec_path": "research/preregistration/entry25_iv17_rules/rules.json",
         "unused_status": "unverified",
-        "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+        "detail": "Commit 2ae0976 freezes the Entry 25 mouth-aspect rule (primary east sector 45–135°, declared sensitivity sectors, whole-interval pass/fail) and the eight IV/17 target declarations, before the L-656 file or IAA records arrive. Phase branches are not frozen. Possible consequences stay possible; no reserved observation is certified unused."
       },
       "outcomes": [
         {
