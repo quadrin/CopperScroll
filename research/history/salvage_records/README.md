@@ -69,9 +69,12 @@ What a later coverage worker can and cannot use:
 ### Conflicts kept open
 
 - Allegro's expedition: "1959-60" (Davies, Copper Scroll Studies p. 28) against 1962 (Wikipedia, citing VanderKam 2010 pp. 92–93). Davies p. 35 n. 20 lists explorations in 1959, 1962 and 1963.
+- Allegro's first hunt: Albright's review of 9 October 1960 (New York Times Book Review p. 51) already calls it unsuccessful, so it took place before October 1960. This supports 1959–60. No source read names a site.
 - Christmas Cave: found on Christmas Day 1960 during work at Kh. Mazin (Rasmussen et al. 2022 p. 2). If this was the first expedition, Davies's dates imply 1959. Not resolved.
 - Jones 1992: press conference 30 April (Lindell 2026) or 8 May (Deseret News 1992; Browning 1996 p. 77). Jones's season count: Browning's list gives seven seasons through 1992, as Deseret says; Wikipedia says eight.
 - The 1988 juglet cave's distance from 3Q: about 0.2 km on Browning's sketch map (p. 76); about 0.5 km if it is 1952 cave 2, as Patrich and Arubas suggest (p. 44 n. 3), measured on Reed's Fig. 2; about 0.8 km from their 2.8 km north of Kh. Qumran against about 2 km for 3Q. The repo's earlier figure of less than 200 m (findings log F2.12, from Wolters) rests at best on the sketch map.
+- 3Q in the press: the first report (Religious News Service, New York Times 1 April 1952) says second-revolt coins were found with the copper scrolls; Reed 1954 mentions none.
+- The 1988 juglet: found in February–April 1988 (Patrich and Arubas p. 43) or last summer (New York Times, 16 February 1989).
 - "Operation Scroll" names both the 1993 IAA survey and the 2017 programme.
 
 ## Analysis: what these records say about three scenarios
@@ -102,7 +105,8 @@ INFERENCE, labelled as such:
 
 ## Access log and failed links
 
-- New York Times, 16 Feb 1989 (the 1988 juglet): https://www.nytimes.com/1989/02/16/world/balsam-oil-of-israelite-kings-found-in-cave-near-dead-sea.html. Web reader: site blocked; direct request: HTTP 403.
+- New York Times, 16 Feb 1989 (the 1988 juglet): https://www.nytimes.com/1989/02/16/world/balsam-oil-of-israelite-kings-found-in-cave-near-dead-sea.html. Web reader: site blocked; direct request: HTTP 403. On 10 October 2026 the free preview was read in the owner's Chrome; the rest is in ProQuest's NYT Historical through the owner's SFPL login (not yet read).
+- New York Times 1 and 12 April 1952 and 9 October 1960: read in the owner's Chrome on 10 October 2026 (archive text, no hash).
 - Jerusalem Report, 29 June 2017, "Operation Scroll": https://www.jpost.com/jerusalem-report/operation-scroll-498251. Body behind a login wall.
 - Times of Israel, 16 March 2021: https://www.timesofisrael.com/dead-sea-scroll-discovery-brings-tantalizing-prospect-of-more-yet-to-be-found. Read through the web reader; a direct download returned HTTP 403, so the stored hash is of the error page.
 - Patrich's project page: https://pluto.huji.ac.il/~patrichj/my_web_site/Research_Projects.html. Read through the web reader; a direct download returned a security error page.
