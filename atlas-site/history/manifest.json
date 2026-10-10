@@ -1,0 +1,23 @@
+{
+  "title": "Opening the Copper Scroll: explanatory film layer",
+  "film": {
+    "bundled": false,
+    "source_url": "https://dqcaas.com/2016/11/24/1953-film-of-cutting-open-of-the-copper-scroll/",
+    "attribution": "Film shot by John Marco Allegro; digitised by DQCAAS from material supplied by Judith Brown. See the archive for the full provenance.",
+    "archive_date": "1955-10-03",
+    "source_url_date_note": "The URL contains 1953, the stock's serial-number date. The archive text dates filming to 3 October 1955.",
+    "local_copy": { "filename": "copper-scroll-16mm-new_dvd.mp4", "duration_seconds": 85.12, "width": 640, "height": 480, "frames_per_second": 25, "audio": false },
+    "inspection": "17 frames sampled every five seconds from the user-supplied local copy; changes of view supply approximate chapter boundaries.",
+    "reuse_status": "Copyrighted. Permission for public embedding has not been confirmed. Playback accepts a local user-selected file; no film or extracted frame is committed."
+  },
+  "assets": [
+    { "file": "opening-diagram.svg", "kind": "project explanatory illustration", "creator": "Copper Scroll Atlas project", "source_images": [], "note": "A schematic of rolled metal and separated curved sections. Not a tracing, reconstruction to scale or evidence of a specific cut." }
+  ],
+  "chapters": [
+    { "start": 0, "end": 24, "description": "Mounted roll and operator" },
+    { "start": 24, "end": 65, "description": "Closer view of cutting" },
+    { "start": 65, "end": 85.12, "description": "View of a section separating" }
+  ],
+  "history_sources": "research/history/salvage_records/README.md; searches.csv (S01, S03, S05, S13); sources.csv; research/sources/drive_index.md; text/readings.json",
+  "content_note": "History summaries are paraphrases. Archaeological finds, interpretations and claimed scroll connections are displayed separately. Research statuses and confidence values are not changed."
+}
