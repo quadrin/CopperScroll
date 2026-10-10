@@ -1,15 +1,16 @@
-"""Rebuild every entry schematic from its script.
+"""Rebuild every schematic from its script.
 
 Usage (from anywhere): python3 -I research/schematics/build.py
-Each script in entries/ writes its SVG next to this file. Scripts are deterministic,
-so a rebuild with unchanged scripts leaves the SVGs byte-identical.
+Each script in entries/ writes its SVG next to this file; each script in searches/ writes
+its SVG in searches/. Scripts are deterministic, so a rebuild with unchanged scripts
+leaves the SVGs byte-identical.
 """
 import subprocess
 import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-scripts = sorted((HERE / "entries").glob("entry_*.py"))
+scripts = sorted((HERE / "entries").glob("entry_*.py")) + sorted((HERE / "searches").glob("search_*.py"))
 failed = []
 for script in scripts:
     result = subprocess.run([sys.executable, "-I", str(script)], capture_output=True, text=True)

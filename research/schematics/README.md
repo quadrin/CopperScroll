@@ -27,9 +27,16 @@ These two entries share one sheet, drawn for the [approved rarity-count pre-regi
 
 The other Koḥlit entries have their own pages: 4, 15, 16 and 19.
 
+## Past searches
+
+[searches/](searches/README.md) holds four sheets drawn with the same kit. They show past searches, not entries:
+- the 1952 cave survey around Cave 3;
+- Kh. Mird (Hyrcania) and its "monument";
+- the scroll's "dig N cubits" depths against the depths that searches reached.
+
 ## Rebuilding
 
-The scripts in `entries/` draw with the shared kit `lib/schematic.py`, which uses only the standard library. Run `python3 -I research/schematics/build.py` to rebuild every SVG. The build is deterministic. The one exception is `entry_11_60_kohlit.svg`, which was drawn by hand and has no script.
+The scripts in `entries/` draw with the shared kit `lib/schematic.py`, which uses only the standard library. Run `python3 -I research/schematics/build.py` to rebuild every SVG, including the past-search sheets. The build is deterministic. The one exception is `entry_11_60_kohlit.svg`, which was drawn by hand and has no script.
 
 `png/` holds an image of every page. Each was rendered from its SVG with headless Chromium at 1.5× and reduced to 256 colours. After changing a script, run `node render_png.mjs` from this folder to re-render them; it needs Playwright and Pillow.
 
