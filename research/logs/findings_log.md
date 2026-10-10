@@ -315,6 +315,7 @@ See `phase3_summary.md`. The original Phase 3 maps and tables record site anchor
   - Donceel-Voûte: the oil was not identified as balsam, and this type of juglet is common.
   - Patrich: he "cannot" confirm the link.
   - Correction, 10 October 2026 (Patrich and Arubas, IEJ 39 (1989) pp. 43-44, now read): the cave is their Cave 13, about 2.8 km north of Kh. Qumran, perhaps cave 2 of the 1952 survey. That puts it about 0.5–0.8 km from 3Q, not under 200 m; only Browning's 1996 sketch map shows it about 0.2 km away. See `history/salvage_records/README.md`, Conflicts kept open.
+  - Further check, 10 October 2026: Patrich and Arubas's own Fig. 1 (p. 44) plots Cave 13 only about 0.25 km north of 3Q, measured on the figure. Their text (2.8 km north of Kh. Qumran) and their figure disagree by about 0.4 km, so the distance is not settled: about 0.25 km on the figure, about 0.5–0.8 km from the text. The earlier "not under 200 m" correction overstated the case. See `history/devaux1952_cave_points/README.md`.
 
   Logged for Phase 5 (archaeology, published reports only). It is a past excavation that is already published, not a lead.
 - F2.13 (evidence) **DJD VII is almost irrelevant to 3Q15.** Its only reference is a spelling parallel (p. 222, on 4Q511): רוש for ראש, as in 3Q15 V 1.
@@ -1241,3 +1242,18 @@ Read in full: J. M. Allegro, *Search in the Desert* (W. H. Allen, June 1966 repr
 - **Haber and Gutfeld 2024.** EVIDENCE: the first Hebrew University season at the Hyrcania summit (May–June 2023) dug four summit areas. It left the cisterns, the monument, the necropolis and the tunnels untouched.
 
 Notes: [allegro1960](../history/allegro1960_treasure_extracted.md), [de Vaux 1953](../history/devaux1953_cave_list_extracted.md), [Wright 1961](../history/wright_milik1961_el_mird_extracted.md), [Haber and Gutfeld 2024](../history/haber_gutfeld2024_hyrcania_extracted.md). No coordinate, grade or count changes; `summary.json` unchanged.
+
+
+## The 1952 cave list and Allegro's 1964 edition — 10 October 2026
+
+- **DJD III, Textes pp. 6–12** (read through an Internet Archive loan). EVIDENCE: the numbered list of the 40 cliff sites of March 1952 exists. 26 sites had Qumran-type pottery, and the 230 empty soundings are not located (p. 4). The list gives few depths: cave 1, an ash layer 0.75 m thick down to bedrock; cave 3, finds at or just below the surface; cave 8 = 3Q, a rear chamber about 3 × 2 m (pp. 6–9). It does not say which sites were only sounded. ([notes](../history/djd3_text_cave_list_extracted.md))
+- **The 1952 map, digitized.** De Vaux's pl. XX has 27 legible points. Point 8 (3Q) is at Palestine grid 193.486/129.756, about ±30 m (1σ). The nearest points are 7 (65 m), 10, 4, 9 and 3 (all within 190 m). ([points](../history/devaux1952_cave_points/README.md))
+- **Allegro, The Treasure of the Copper Scroll, 2nd ed. (1964).** EVIDENCE: the 1960 survey's detectors reached about 18 inches (p. 67). Allegro adds work not in Wright:
+  - a crawl inside the cracked Qumran reservoir (p. 65);
+  - a "very shallow trench" at a point "indicated by the scroll" (p. 68), with no result given;
+  - a Cypros cistern shaft cleared about 20 ft and not bottomed (p. 75);
+  - an excavation at the Zechariah monument in the Kidron (p. 105).
+  None has a published plan or depth except the Cypros shaft, so none sets coverage (ledger S03).
+- **Patrich and Arubas Cave 13.** Their own figure and text disagree on its distance from 3Q (about 0.25 km against about 0.5–0.8 km). See the F2.12 note.
+
+No coordinate, grade or count changes; `summary.json` unchanged.
