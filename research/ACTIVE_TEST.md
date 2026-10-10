@@ -2,7 +2,7 @@
 
 Updated 10 October 2026 UTC / 10 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (10 October): **obtained**: browser observations of the simpler reading desk at 1280 × 720 and 375 × 812. The image and reading fit without overlapping panels; entry browsing, image tools, reading arguments and source notes open on demand. Direct photographic entry links now wait for the intended entry before applying the coverage fallback ([atlas guide](../atlas/README.md)).
+Last session (10 October): **obtained**: browser observations of the simpler Landscapes view at 1280 × 720 and 375 × 812. The comparison map fills the surface below compact selectors; entry browsing, overlays, source limits and record inspection open on demand. Dated photographs and satellite packages use view and date selectors. Mobile entry selection returns to the landscape ([atlas guide](../atlas/README.md)).
 
 ## Active questions and the observation that decides each
 
