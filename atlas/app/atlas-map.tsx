@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Box, Camera, Compass, LocateFixed, Map, Minus, Mountain, Plus, RotateCcw } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Slider } from "@/components/ui/slider";
@@ -10,13 +10,17 @@ import { candidateAreas, candidateBounds } from "./atlas-geography";
 import GroundView from "./atlas-ground";
 import ScrollView from "./atlas-scroll";
 import SceneView from "./atlas-scene";
+const LandscapeView=lazy(()=>import("./atlas-landscape"));
+const DossierView=lazy(()=>import("./atlas-dossier"));
+const HistoryView=lazy(()=>import("./atlas-history"));
 
 type Props = { entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void };
 const INITIAL = { center: [35.367, 31.82] as [number,number], zoom: 10.3 };
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
 export default function AtlasMap(props:Props) {
   const {entry,places,entries,focusId,focusNonce,visibleIds,mode,onMode,onPlace,onEntry,mobileView,onText}=props;
-  const offMap=mode==="ground"||mode==="scroll"||mode==="scene";
+  const offMap=mode==="ground"||mode==="scroll"||mode==="scene"||mode==="landscape"||mode==="dossier"||mode==="history";
+  const immersive=mode==="landscape"||mode==="dossier"||mode==="history";
   const container=useRef<HTMLDivElement>(null);
   const mapRef=useRef<LibreMap|null>(null);
   const markers=useRef<{marker:Marker;button:HTMLButtonElement;place:Place}[]>([]);
@@ -168,10 +172,10 @@ export default function AtlasMap(props:Props) {
     mapRef.current?.fitBounds([[Math.min(...bounds.map(b=>b[0][0])),Math.min(...bounds.map(b=>b[0][1]))],[Math.max(...bounds.map(b=>b[1][0])),Math.max(...bounds.map(b=>b[1][1]))]],{padding:{top:110,bottom:150,left:50,right:60},maxZoom:16.7,pitch:mode==="3d"?55:0,duration:reduced.current?0:800});
   }
   const selectedPlace=places.find(p=>p.id===focusId)??null;
-  return <section className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""}`} aria-label={mode==="scroll"?"The text of the scroll":"Interactive candidate map"}>
-    <div ref={container} className="map-canvas" aria-label="Geographic map of the Copper Scroll candidate sites" />
+  return <section className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""} ${immersive?"immersive-mode":""}`} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":mode==="history"?"The scroll's history":"Interactive candidate map"}>
+    <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
-    {mode!=="scroll"&&<div className="map-toolbar">
+    {mode!=="scroll"&&!immersive&&<div className="map-toolbar">
       <Tabs value={mode} onValueChange={onMode} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger><TabsTrigger value="ground"><Camera size={15}/>Photos</TabsTrigger><TabsTrigger value="scene"><Box size={15}/>Scene</TabsTrigger></TabsList></Tabs>
       {!offMap&&<button className="tool-button" aria-label="Fit this entry’s candidates" title="Fit this entry’s candidates" onClick={fitEntry}><LocateFixed size={17}/></button>}
     </div>}
@@ -187,5 +191,10 @@ export default function AtlasMap(props:Props) {
     {mode==="ground"&&<GroundView key={`${focusId}-${entry.id}`} place={selectedPlace} entry={entry} places={places} onPlace={onPlace}/>}
     {mode==="scene"&&<SceneView key={entry.id} entry={entry} onEntry={onEntry} onText={onText}/>}
     {mode==="scroll"&&<ScrollView entry={entry} entries={entries} places={Object.fromEntries(places.map(p=>[p.id,p]))} onEntry={onEntry}/>}
+    {immersive&&<Suspense fallback={<div className="atlas-module-loading" role="status">Opening {mode==="landscape"?"historical landscapes":mode==="dossier"?"the place dossier":"the scroll's history"}…</div>}>
+      {mode==="landscape"&&<LandscapeView entry={entry} place={selectedPlace} onDossier={()=>onMode("dossier")}/>}
+      {mode==="dossier"&&<DossierView entry={entry} place={selectedPlace} onEntry={onEntry} onLandscape={()=>onMode("landscape")} onRead={()=>onMode("scroll")}/>}
+      {mode==="history"&&<HistoryView onRead={()=>onMode("scroll")} onEntry={onEntry} filmSrc={import.meta.env?.DEV?(import.meta.env as {VITE_COPPER_SCROLL_FILM_URL?:string})?.VITE_COPPER_SCROLL_FILM_URL:undefined}/>}
+    </Suspense>}
   </section>;
 }
