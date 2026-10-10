@@ -145,7 +145,7 @@ S.footer(c, 830, [
      "(1964) pp. 55–61; Search in the Desert (1966) pp. 111–120; Haber & Gutfeld 2024; Gutfeld, BAR 32.5 (2006), abstract."),
     ("How it was drawn", "Directions and distances from the texts: monument c. 300 m SW (Palestine grid refs 1848/1252 "
      "and 1845/1250 give c. 360 m WSW), graves c. 0.5 km E, tunnels due N, aqueduct from the NW."),
-    ("Scroll entries", "Allegro tied entries 1 and 2 to Hyrcania. The repo lists Hyrcania as possible for entries 16, "
+    ("Scroll entries", "Allegro tied his items 1 and 2 (I 1–4, I 5–6, the project's entries 1 and 2) to Hyrcania. The repo lists Hyrcania as possible for entries 16, "
      "29 and 35 instead. This sheet records searches; it does not identify any entry with the site."),
     ("What it shows", "Only the monument and the tunnels were cleared with a scroll in mind, and neither has a "
      "published depth. Detectors reached about half a metre. The east-side “steps” were only looked for."),

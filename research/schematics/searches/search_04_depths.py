@@ -227,7 +227,7 @@ y = bullets(c, sx + 10, y + 24, [
 c.text(sx + 10, y + 6, "Entry 25, the most searched", 12.5, P["ink"], 700)
 c.wrap(sx + 10, y + 24, "“Dig three [cu]bits” (≈ 1.5 m) at the cave of the pillar. Ledger rows tied to it: "
        "S09 Twin Cave (a deposit several metres deep), S10 in 1986 (depth not given), S14 Jones's pit "
-       "(to bedrock) and S20 cave IV/11 (coins in an upper fill 0.6–0.8 m thick).", 58, 11)
+       "(to bedrock) and S20 cave IV/11 (coins 0.6–0.8 m above the Iron Age floor).", 58, 11)
 
 S.footer(c, 830, [
     ("Sources", "Project translation (text/translation_en.json) and entry lines (atlas/app/atlas-data.json); "

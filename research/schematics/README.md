@@ -29,10 +29,12 @@ The other Koḥlit entries have their own pages: 4, 15, 16 and 19.
 
 ## Past searches
 
-[searches/](searches/README.md) holds four sheets drawn with the same kit. They show past searches, not entries:
-- the 1952 cave survey around Cave 3;
-- Kh. Mird (Hyrcania) and its "monument";
-- the scroll's "dig N cubits" depths against the depths that searches reached.
+[searches/](searches/README.md) holds eleven sheets drawn with the same kit. They show past searches, not entries:
+- the 1952 cave survey around Cave 3, and Cave 3's find context;
+- Kh. Mird (Hyrcania) and its "monument"; Kh. Qumran; Mount Gerizim; the Kidron monuments;
+- entry 25's candidate caves and the digs at them;
+- the scroll's "dig N cubits" depths against the depths that searches reached;
+- a coverage map of the searches against the atlas's candidate places, and a timeline of the whole ledger.
 
 ## Rebuilding
 
