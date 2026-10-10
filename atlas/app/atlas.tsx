@@ -1,17 +1,20 @@
 "use client";
 
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { BookOpen, ChevronLeft, ChevronRight, ExternalLink, Feather, FileText, FlaskConical, Info, List, Map, MapPin, Search, ScrollText, X } from "lucide-react";
+import { BookOpen, ChevronDown, ChevronLeft, ChevronRight, ExternalLink, Feather, FileText, FlaskConical, Info, Layers, List, Map, MapPin, PanelRightOpen, Search, ScrollText, X } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import AtlasMap from "./atlas-map";
 import EvidenceReview from "./atlas-evidence";
 import EntryText from "./atlas-text";
 import data from "./atlas-data.json";
 import type { Entry, Place } from "./atlas-types";
 import { sortCandidates, sortEntries, sortLabels, type SortOrder } from "./atlas-order";
+import { entryHash, parseAtlasHash } from "./atlas-navigation";
+import "./atlas-revamp.css";
 
 const entries=data.entries as Entry[];
 const places=data.places as Place[];
@@ -35,6 +38,11 @@ export default function Atlas(){
   const [mode,setMode]=useState("2d");
   const [mobileView,setMobileView]=useState("map");
   const [workbenchModule,setWorkbenchModule]=useState<string|null>(null);
+  const [showNotes,setShowNotes]=useState(false);
+  const [showRegister,setShowRegister]=useState(false);
+  const [aboutOpen,setAboutOpen]=useState(false);
+  const wideMode=["scroll","landscape","dossier"].includes(mode);
+  const focusedMode=["scroll","landscape"].includes(mode);
   const entryListRef=useRef<HTMLElement>(null);
   const detailRef=useRef<HTMLElement>(null);
   const evidenceTabRef=useRef<HTMLButtonElement>(null);
@@ -56,13 +64,14 @@ export default function Atlas(){
   const chooseEntry=useCallback((id:string,focus?:string,stayInView?:boolean)=>{
     const e=entries.find(x=>x.id===id);if(!e)return;
     setWorkbenchModule(null);
-    setSelectedId(id);setFocusId(focus??e.candidates[0]?.placeId??null);setFocusNonce(n=>n+1);if(!stayInView)setMobileView("detail");
-    history.replaceState(null,"",`#entry-${id}${modeRef.current==="scroll"?"/scroll":modeRef.current==="scene"?"/scene":""}`);
+    setSelectedId(id);setFocusId(focus??e.candidates[0]?.placeId??null);setFocusNonce(n=>n+1);setShowRegister(false);if(!stayInView)setMobileView(["scroll","landscape"].includes(modeRef.current)?"map":"detail");
+    const photograph=modeRef.current==="scroll"&&/^#(?:entry-[\da]+\/)?scroll\/photo$/.test(location.hash);
+    history.replaceState(null,"",entryHash(id,modeRef.current)+(photograph?"/photo":""));
     detailRef.current?.scrollTo({top:0});
   },[]);
   // An entry chosen in the scroll view: the register, map and field note follow, the view stays.
   function chooseFromScroll(id:string){const e=entries.find(x=>x.id===id);if(e)chooseEntry(id,undefined,true)}
-  function changeMode(next:string){setWorkbenchModule(null);setMode(next);history.replaceState(null,"",`#entry-${selectedId}${next==="scroll"?"/scroll":next==="scene"?"/scene":""}`)}
+  function changeMode(next:string){setWorkbenchModule(null);setMode(next);setShowRegister(false);setShowNotes(false);setMobileView("map");history.replaceState(null,"",entryHash(selectedId,next));window.dispatchEvent(new Event("atlas:modechange"))}
   function openWorkbench(id="relationships"){setWorkbenchModule(id);history.replaceState(null,"",`#workbench/${id}`)}
   function openScroll(){changeMode("scroll");setMobileView("map")}
   function choosePlace(id:string){
@@ -73,12 +82,13 @@ export default function Atlas(){
   const index=entries.indexOf(entry);
   function stepEntry(delta:number){const e=entries[(index+delta+entries.length)%entries.length];chooseEntry(e.id)}
   useEffect(()=>{
-    const tool=location.hash.match(/^#workbench(?:\/(relationships|inventory|states|coverage|decisions))?$/);
-    if(tool){setWorkbenchModule(tool[1]??"relationships");return;}
-    const hash=location.hash.match(/^#(?:entry-([\da]+))?(?:\/?(scroll|photo|scene))?$/);
-    const id=hash?.[1];
-    if(id&&entries.some(e=>e.id===id)){const e=entries.find(e=>e.id===id)!;setSelectedId(id);setFocusId(e.candidates[0]?.placeId??null);setFocusNonce(1);}
-    if(hash?.[2])setMode(hash[2]==="photo"?"ground":hash[2]);
+    function restore(){const route=parseAtlasHash(location.hash);if(!route)return;
+      if(route.workbench){setWorkbenchModule(route.workbench);return;}
+      setWorkbenchModule(null);const id=route.entryId;
+      if(id&&entries.some(e=>e.id===id)){const e=entries.find(e=>e.id===id)!;setSelectedId(id);setFocusId(e.candidates[0]?.placeId??null);setFocusNonce(n=>n+1);}
+      if(route.mode){setMode(route.mode);setMobileView("map");}
+    }
+    restore();window.addEventListener("hashchange",restore);return()=>window.removeEventListener("hashchange",restore);
   },[]);
 
   // Structured navigation uses the same entry-selection action as the visible register.
@@ -97,15 +107,27 @@ export default function Atlas(){
   },[chooseEntry]);
 
   const primaryFocus=focusId===entry.candidates[0]?.placeId;
-  return <main className="atlas-shell">
-    <a className="skip-link" href={workbenchModule?"#research-workbench":"#entry-detail"} onClick={event=>{event.preventDefault();if(workbenchModule){document.getElementById("research-workbench")?.focus();}else{setMobileView("detail");requestAnimationFrame(()=>detailRef.current?.focus())}}}>{workbenchModule?"Skip to research tools":"Skip to selected entry"}</a>
+  return <main className="atlas-shell" data-reading={mode==="scroll"&&!workbenchModule}>
+    <a className="skip-link" href={workbenchModule?"#research-workbench":"#entry-detail"} onClick={event=>{event.preventDefault();if(workbenchModule){document.getElementById("research-workbench")?.focus();}else{setShowRegister(false);setShowNotes(true);setMobileView("detail");requestAnimationFrame(()=>detailRef.current?.focus())}}}>{workbenchModule?"Skip to research tools":"Skip to selected entry"}</a>
     <header className="app-header">
       <div className="app-brand"><ScrollText size={22} strokeWidth={1.6}/><div><h1>Copper Scroll Atlas</h1><span>3Q15 · Places, text and evidence</span></div></div>
-      <nav className="primary-nav" aria-label="Explore the atlas"><button type="button" aria-current={!workbenchModule&&mode!=="scroll"?"page":undefined} onClick={()=>{changeMode("2d");setMobileView("map")}}><Map size={17}/>Explore places</button><button type="button" aria-current={!workbenchModule&&mode==="scroll"?"page":undefined} onClick={openScroll}><ScrollText size={17}/>Read the scroll</button><button type="button" aria-current={workbenchModule?"page":undefined} onClick={()=>openWorkbench(workbenchModule??"relationships")}><FlaskConical size={17}/>Research tools</button></nav>
-      <div className="header-actions"><a href={`${repo}/research/README.md`} target="_blank" rel="noreferrer">Research notes <ExternalLink size={13}/></a><Dialog><DialogTrigger asChild><button><BookOpen size={14}/>About the atlas</button></DialogTrigger><DialogContent className="method-dialog"><DialogHeader><DialogTitle>Reading the landscape</DialogTitle><DialogDescription>The Copper Scroll names places, buildings and waterworks. This atlas pairs their descriptions with the candidates retained in the current research.</DialogDescription></DialogHeader><div><h3>61 entries, {places.length} candidate places</h3><p>The numbering follows Puech and Lefkovits: entries 1–60, plus 12a. Descriptions are short editorial paraphrases. Hebrew labels show names or selected editorial readings, rather than a facsimile transcription.</p><h3>The text of each entry</h3><p>Each field note shows the entry’s lines of the scroll: Martin G. Abegg Jr.’s transcription from the ETCBC Dead Sea Scrolls dataset (CC BY-NC 4.0), which draws mainly on Milik’s edition, with an English translation written for this project. Select a Hebrew word or an underlined phrase to see how the editions of Milik, Lefkovits, Puech and others read it, with pages from the research files. <strong>Read the scroll</strong> in the top bar shows the whole scroll column by column; selecting an entry there opens its places.</p><h3>What the pins mean</h3><p>A solid pin marks a preferred candidate for at least one entry. A hollow pin marks an alternative. “Preferred” is a comparison among proposals; all current identifications remain medium or low confidence. No individual deposit has been identified.</p><p>Coordinates come from the repository’s curated gazetteer. Copper shading marks the selected candidate’s approximate area; sage shading shows the other candidates for the entry. Dashed outlines indicate coordinate precision, not surveyed site boundaries. Three places have no defensible coordinate and remain unpinned.</p><h3>Map, terrain & photos</h3><p>Map shows a flat map. Terrain uses elevation tiles, with adjustable vertical exaggeration. Both use modern geographical data. The shorelines and roads do not reconstruct the ancient landscape. Photos offers four real photographs with anchored highlights and feature notes. Photographs have a limited field of view; their visible features provide comparisons, not verified scroll landmarks. A separate Google Street View link opens nearby imagery where coverage exists.</p><h3>Textual scenes</h3><p>Scene draws entries 11 and 25 as plans and cutaways. Copper marks encode a textual relationship or digging instruction; dashed outlines mark assumed architecture. Envelope size, digging origin and the exploratory cubit conversion remain model assumptions. Deposit markers represent claims in the text. Scenes supply no archaeological feature identification or geographic coordinates.</p><h3>Research and map sources</h3><p>Research snapshot: 28 September 2026, commit <a href={`https://github.com/quadrin/AncientHebrewTexts/commit/${data.snapshot}`} target="_blank" rel="noreferrer">5220e8b</a>. It includes the Siloam confidence correction and Q37 on Solomon’s Pool. The feature review adds the full Phase 5 tables from commit cecb12d and separates reading, site and exact-feature confidence for five priority entries. These are qualitative assessments, not probabilities.</p><p><a href={`${repo}/research/sites/site_identification_review.md`} target="_blank" rel="noreferrer">Site identification review</a> · <a href={`${repo}/research/sources/sources.md`} target="_blank" rel="noreferrer">Research bibliography</a> · <a href="https://openfreemap.org" target="_blank" rel="noreferrer">OpenFreeMap</a> / <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> · <a href="https://mapterhorn.com" target="_blank" rel="noreferrer">Mapterhorn terrain</a></p></div></DialogContent></Dialog></div>
+      <nav className="primary-nav" aria-label="Explore the atlas">
+        <button type="button" aria-label="Explore places" aria-current={!workbenchModule&&["2d","3d","ground","scene","dossier"].includes(mode)?"page":undefined} onClick={()=>changeMode("2d")}><Map size={17}/>Places</button>
+        <button type="button" aria-current={!workbenchModule&&mode==="landscape"?"page":undefined} onClick={()=>changeMode("landscape")}><Layers size={17}/>Landscapes</button>
+        <button type="button" aria-current={!workbenchModule&&mode==="scroll"?"page":undefined} onClick={openScroll}><ScrollText size={17}/>Read the scroll</button>
+      </nav>
+      <div className="header-actions">{focusedMode&&!workbenchModule&&<button className="reader-register-toggle" aria-expanded={showRegister} aria-controls="entry-register" onClick={()=>{setShowRegister(v=>!v);setShowNotes(false);}}><List size={15}/>Entries</button>}
+        <DropdownMenu><DropdownMenuTrigger asChild><button aria-label="More atlas options" aria-current={workbenchModule?"page":undefined}>More<ChevronDown size={14}/></button></DropdownMenuTrigger><DropdownMenuContent align="end">
+          <DropdownMenuItem onSelect={()=>openWorkbench(workbenchModule??"relationships")}><FlaskConical size={15}/>Research tools</DropdownMenuItem>
+          {wideMode&&!workbenchModule&&<DropdownMenuItem onSelect={()=>{setShowRegister(false);setShowNotes(v=>!v);if(window.innerWidth<=1100)setMobileView(mobileView==="detail"?"map":"detail")}}><PanelRightOpen size={15}/>{showNotes?"Close entry notes":"Entry notes"}</DropdownMenuItem>}
+          <DropdownMenuSeparator/><DropdownMenuItem onSelect={()=>setAboutOpen(true)}><BookOpen size={15}/>About the atlas</DropdownMenuItem>
+          <DropdownMenuItem asChild><a href={`${repo}/research/README.md`} target="_blank" rel="noreferrer">Research notes<ExternalLink size={13}/></a></DropdownMenuItem>
+        </DropdownMenuContent></DropdownMenu>
+        <Dialog open={aboutOpen} onOpenChange={setAboutOpen}><DialogContent className="method-dialog"><DialogHeader><DialogTitle>Reading the landscape</DialogTitle><DialogDescription>The Copper Scroll names places, buildings and waterworks. This atlas pairs their descriptions with the candidates retained in the current research.</DialogDescription></DialogHeader><div><h3>61 entries, {places.length} candidate places</h3><p>The numbering follows Puech and Lefkovits: entries 1–60, plus 12a. Descriptions are short editorial paraphrases. Hebrew labels show names or selected editorial readings, rather than a facsimile transcription.</p><h3>The text of each entry</h3><p>Each field note shows the entry’s lines of the scroll: Martin G. Abegg Jr.’s transcription from the ETCBC Dead Sea Scrolls dataset (CC BY-NC 4.0), which draws mainly on Milik’s edition, with an English translation written for this project. Select a Hebrew word or an underlined phrase to see how the editions of Milik, Lefkovits, Puech and others read it, with pages from the research files. <strong>Read the scroll</strong> in the top bar shows the whole scroll column by column; selecting an entry there opens its places.</p><h3>What the pins mean</h3><p>A solid pin marks a preferred candidate for at least one entry. A hollow pin marks an alternative. “Preferred” is a comparison among proposals; all current identifications remain medium or low confidence. No individual deposit has been identified.</p><p>Coordinates come from the repository’s curated gazetteer. Copper shading marks the selected candidate’s approximate area; sage shading shows the other candidates for the entry. Dashed outlines indicate coordinate precision, not surveyed site boundaries. Three places have no defensible coordinate and remain unpinned.</p><h3>Map, terrain & photos</h3><p>Map shows a flat map. Terrain uses elevation tiles, with adjustable vertical exaggeration. Both use modern geographical data. The shorelines and roads do not reconstruct the ancient landscape. Photos offers four real photographs with anchored highlights and feature notes. Photographs have a limited field of view; their visible features provide comparisons, not verified scroll landmarks. A separate Google Street View link opens nearby imagery where coverage exists.</p><h3>Textual scenes</h3><p>Scene draws entries 11 and 25 as plans and cutaways. Copper marks encode a textual relationship or digging instruction; dashed outlines mark assumed architecture. Envelope size, digging origin and the exploratory cubit conversion remain model assumptions. Deposit markers represent claims in the text. Scenes supply no archaeological feature identification or geographic coordinates.</p><h3>Research and map sources</h3><p>Research snapshot: 28 September 2026, commit <a href={`https://github.com/quadrin/AncientHebrewTexts/commit/${data.snapshot}`} target="_blank" rel="noreferrer">5220e8b</a>. It includes the Siloam confidence correction and Q37 on Solomon’s Pool. The feature review adds the full Phase 5 tables from commit cecb12d and separates reading, site and exact-feature confidence for five priority entries. These are qualitative assessments, not probabilities.</p><p><a href={`${repo}/research/sites/site_identification_review.md`} target="_blank" rel="noreferrer">Site identification review</a> · <a href={`${repo}/research/sources/sources.md`} target="_blank" rel="noreferrer">Research bibliography</a> · <a href="https://openfreemap.org" target="_blank" rel="noreferrer">OpenFreeMap</a> / <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> · <a href="https://mapterhorn.com" target="_blank" rel="noreferrer">Mapterhorn terrain</a></p></div></DialogContent></Dialog></div>
     </header>
-    {workbenchModule?<Suspense fallback={<div className="workbench-loading" role="status">Loading reviewed research tools…</div>}><AtlasWorkbench moduleId={workbenchModule} onModule={id=>{if(workbenchModules.includes(id))openWorkbench(id)}} onClose={()=>changeMode(mode)}/></Suspense>:<><div className="working-surface" data-mobile-view={mobileView}>
-      <aside className="entry-register" aria-label="Ancient place register">
+    {workbenchModule?<Suspense fallback={<div className="workbench-loading" role="status">Loading reviewed research tools…</div>}><AtlasWorkbench moduleId={workbenchModule} onModule={id=>{if(workbenchModules.includes(id))openWorkbench(id)}} onClose={()=>changeMode(mode)}/></Suspense>:<><div className="working-surface" data-mobile-view={mobileView} data-expanded={wideMode&&!showNotes} data-focused={focusedMode} data-reading={mode==="scroll"} data-register-open={showRegister}>
+      <aside id="entry-register" className="entry-register" aria-label="Ancient place register" onKeyDown={event=>{if(event.key==="Escape"){setShowRegister(false);setMobileView("map")}}}>
+        {focusedMode&&<button className="register-close" aria-label="Close entries" onClick={()=>{setShowRegister(false);setMobileView("map")}}><X size={16}/></button>}
         <div className="register-heading"><span className="small-caps">61 scroll entries</span><h2>Browse entries</h2><div className="search-wrap"><Search/><Input aria-label="Find an ancient name or candidate" placeholder="Search names, places, entries…" value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button className="clear-search" aria-label="Clear search" onClick={()=>setQuery("")}><X size={15}/></button>}</div><div className="filter-row"><Select value={region} onValueChange={setRegion}><SelectTrigger aria-label="Filter by region"><SelectValue/></SelectTrigger><SelectContent>{Object.entries(regions).map(([key,label])=><SelectItem key={key} value={key}>{label}</SelectItem>)}</SelectContent></Select></div></div>
         <div className="register-sort"><label htmlFor="register-sort">Sort by</label><Select value={sortOrder} onValueChange={value=>setSortOrder(value as SortOrder)}><SelectTrigger id="register-sort" aria-label="Sort the place register"><SelectValue/></SelectTrigger><SelectContent>{Object.entries(sortLabels).map(([key,label])=><SelectItem key={key} value={key}>{label}</SelectItem>)}</SelectContent></Select></div>
         <div className="register-count" aria-live="polite">{visibleEntries.length} {visibleEntries.length===1?"entry":"entries"}{query?" found":" to explore"}{sortOrder==="confidence"&&<span className="sort-explanation">Best candidate’s site confidence; ties in scroll order.</span>}</div>
@@ -124,10 +146,13 @@ export default function Atlas(){
           {orderedCandidates.map(c=>{const p=placeById[c.placeId];return <button className={`candidate-card ${focusId===p.id?"active":""}`} key={p.id} onClick={()=>focusCandidate(p.id)} aria-pressed={focusId===p.id}><span className="candidate-top">{p.shortName}{p.lat!==null?<MapPin size={15}/>:<Info size={15}/>}</span><span className="candidate-meta"><span className={`confidence ${c.confidence}`}>{c.confidence.charAt(0).toUpperCase()+c.confidence.slice(1)} site confidence</span><span className="status">{c.status==="preferred"?"Preferred candidate":c.status==="weak"?"Weak alternative":"Possible alternative"}</span></span></button>})}
           {!entry.candidates.length&&<p className="folio-empty">This entry has no mapped candidate.</p>}
           {place&&<div className="precision-note"><MapPin size={13}/><span>{place.lat===null?"No coordinate assigned. The source defines no defensible point.":`Approximate anchor · ${place.precision}.`}{place.note&&<> {place.note}</>}</span></div>}
+          <button className="evidence-link dossier-launch" onClick={()=>changeMode("dossier")}><span><BookOpen size={14}/>Open {place?.shortName??"the place"} dossier</span><ChevronRight size={16}/></button>
+          <button className="evidence-link" onClick={()=>changeMode("landscape")}><span><Layers size={14}/>Compare historical landscapes</span><ChevronRight size={16}/></button>
           <button className="evidence-link" onClick={()=>{setDetailTab("evidence");evidenceTabRef.current?.focus()}}>Review evidence & uncertainty <ChevronRight size={16}/></button>
           </TabsContent>
           <TabsContent value="evidence">
           <EvidenceReview entryId={entry.id} placeId={focusId}/>
+          <button className="evidence-link dossier-launch" onClick={()=>changeMode("dossier")}><span><BookOpen size={14}/>Inspect reading branches and place evidence</span><ChevronRight size={16}/></button>
           <button className="evidence-link" onClick={()=>openWorkbench(entry.id==="25"?"inventory":entry.id==="11"||entry.id==="60"?"relationships":entry.id==="29"?"coverage":"decisions")}><span><FlaskConical size={14}/>Open feature research tools</span><ChevronRight size={16}/></button>
           <section className="evidence-section"><h3><Feather size={14}/>Why considered</h3><p>{primaryFocus||!place?entry.evidence:place.note||`The research retains ${place.shortName} as a comparison for this entry. Its position remains approximate, and the individual landmark has not been identified.`}</p></section>
           <section className="evidence-section caution"><h3><Info size={14}/>What remains uncertain</h3><p>{entry.caution}</p></section>
@@ -137,6 +162,6 @@ export default function Atlas(){
         </article>
       </aside>
     </div>
-    <nav className="mobile-nav" aria-label="Atlas views"><button aria-pressed={mobileView==="register"} onClick={()=>setMobileView("register")}><List size={17}/>Register</button><button aria-pressed={mobileView==="map"} onClick={()=>setMobileView("map")}><Map size={17}/>{mode==="scroll"?"Scroll":mode==="ground"?"Ground":mode==="scene"?"Scene":"Map"}</button><button aria-pressed={mobileView==="detail"} onClick={()=>setMobileView("detail")}><FileText size={17}/>Entry {entry.id}</button></nav></>}
+    <nav className="mobile-nav" aria-label="Atlas views"><button aria-pressed={mobileView==="register"} onClick={()=>setMobileView("register")}><List size={17}/>Register</button><button aria-pressed={mobileView==="map"} onClick={()=>setMobileView("map")}><Map size={17}/>{mode==="scroll"?"Scroll":mode==="ground"?"Ground":mode==="scene"?"Scene":mode==="landscape"?"Landscapes":mode==="dossier"?"Dossier":"Map"}</button><button aria-pressed={mobileView==="detail"} onClick={()=>setMobileView("detail")}><FileText size={17}/>Entry {entry.id}</button></nav></>}
   </main>;
 }

@@ -1,0 +1,118 @@
+/* Reading desk: the original surface stays beside its text and apparatus. */
+.reading-desk .scroll-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:13px}
+.reading-desk .scroll-heading h2{font-size:25px;margin-bottom:0}
+.reading-desk .scroll-heading p{max-width:480px;margin-top:7px}
+.reader-desk-body{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);flex:1;min-height:0;border-top:1px solid #c7b38e}
+.reader-desk-body .scroll-body{border-top:0;box-shadow:none;padding:5px 16px 20px}
+.reader-desk-image{display:flex;flex-direction:column;min-height:0;background:#15211c;color:#eddfc2;border-right:1px solid #b5a17f;overflow-y:auto}
+.reader-desk-image figure{margin:0;min-height:240px;flex:1;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse at center,#2b3a2f,#111a15)}
+.reader-desk-image figure svg{display:block;width:100%;height:100%;max-height:620px;filter:none}
+.reader-desk-image-caption{padding:16px;font:12px/1.65 var(--sans);color:#d4c5a8}
+.reader-desk-image-caption p{margin:5px 0 12px}
+.reader-desk-image-caption a{color:#ead7b2;text-decoration:underline;text-underline-offset:3px}
+.reader-desk-image-caption .small-caps{font-size:10px;color:#ddbc88}
+.reader-desk-image .reader-text-button{white-space:normal;width:100%;min-height:42px;text-align:left}
+.reader-desk-coverage{margin:auto;padding:30px 20px;color:#e0d1b4;font:14px/1.65 var(--serif)}
+.reader-desk-coverage h3{font:24px/1.2 var(--serif);margin:10px 0 16px;color:#f1e3c9}
+.reader-desk-coverage .small-caps{font:10px var(--sans);color:#c1aa82}
+.reader-desk-coverage button{margin-top:14px}
+.reader-desk-source-types{padding:16px;border-top:1px solid #ffffff1c;font:11px/1.55 var(--sans);color:#cfbea0}
+.reader-desk-source-types p{margin:0 0 10px}
+.reader-desk-source-types p:last-child{margin-bottom:0}
+.reader-desk-source-types strong{color:#ead9b6;font-weight:600}
+.reader-desk-source-types a{color:#ead9b6;text-decoration:underline;text-underline-offset:3px}
+.reader-branches{margin:13px 0 18px;border:1px solid #baa380;border-radius:4px;background:#f8efdc;color:#483c2d;overflow:hidden}
+.reader-branches-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;background:#ece0c8;border-bottom:1px solid #cab594;font-size:10px;color:#876847}
+.reader-branches-heading .small-caps{font-size:10px;color:#725638}
+.reader-branch-tabs{display:flex;flex-wrap:wrap;gap:5px;padding:10px}
+.reader-branch-tabs button{flex:1;min-width:110px;min-height:50px;text-align:left;border:1px solid #c7b390;border-radius:3px;padding:8px 10px;background:#f3e6ce;color:#65533c;font:12px/1.4 var(--sans)}
+.reader-branch-tabs button strong,.reader-branch-tabs button small{display:block}
+.reader-branch-tabs button small{margin-top:3px;font-size:10px}
+.reader-branch-tabs button[aria-pressed=true]{background:#425646;color:#fff5dd;border-color:#425646}
+.reader-branch-tabs button:focus-visible,.reading-desk button:focus-visible{outline:2px solid #976134;outline-offset:3px}
+.reader-branch-result{padding:0 13px 13px}
+.reader-branch-hebrew{font:27px/1.6 'Frank Ruhl Libre','SBL Hebrew','Times New Roman',serif;margin:2px 0;color:#473924}
+.reader-branch-paraphrase{font:16px/1.55 var(--serif);margin:0 0 13px}
+.reader-branch-paraphrase>span{display:block;font:9px/1.5 var(--sans);text-transform:uppercase;letter-spacing:.09em;color:#94754e;margin-bottom:4px}
+.reader-branch-result dl{margin:0;display:grid;grid-template-columns:1fr;gap:3px;font:12px/1.55 var(--sans)}
+.reader-branch-result dt{font-size:10px;color:#89714f;font-weight:600;margin-top:7px}
+.reader-branch-result dd{margin:0}
+.reader-branch-citations,.reader-branch-limit{font:10px/1.55 var(--sans);color:#806b4b;margin:12px 0 0}
+.reader-branch-result a{text-decoration:underline;text-underline-offset:3px}
+.reader-original-desk .reader-workspace{grid-template-columns:minmax(0,1fr) minmax(230px,37%)}
+.reader-original-desk .reader-head h2{font-size:24px}
+.reader-context{display:block;font:11px/1.5 var(--sans);margin-top:4px;color:#826a46}
+.reader-original-desk .reader-reading .reader-branches{margin-inline:-4px}
+.reader-original-desk .reader-credit{max-height:92px;overflow-y:auto}
+.reader-original-desk .reader-credit details{margin-top:4px}
+.reader-original-desk .reader-credit summary{cursor:pointer}
+.reader-original-desk .reader-views button{font-size:11px;padding:6px 8px}
+@container(max-width:760px){.reader-desk-body{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}.reader-desk-body .scroll-row{grid-template-columns:20px minmax(0,1fr);grid-template-areas:"no he" ". en";gap:2px 7px}.reader-desk-body .scroll-no{grid-area:no}.reader-desk-body .scroll-he{grid-area:he;font-size:22px}.reader-desk-body .scroll-en{grid-area:en}.reader-desk-image-caption{padding:12px}.reader-desk-source-types{padding:12px}.reader-original-desk .reader-workspace{grid-template-columns:minmax(0,1fr) 235px}}
+@container(max-width:580px){.reading-desk .scroll-heading{padding-inline:14px;align-items:flex-start}.reading-desk .scroll-heading h2{font-size:22px}.reading-desk .scroll-heading p{display:none}.reading-desk .scroll-strip{padding-bottom:10px}.reading-desk .scroll-tablet{height:56px}.reader-desk-body{display:flex;flex-direction:column;overflow-y:auto}.reader-desk-image{overflow:visible;border-right:0;border-bottom:1px solid #b5a17f;flex:none}.reader-desk-image figure{height:250px;min-height:250px}.reader-desk-image figure svg{max-height:250px}.reader-desk-image-caption{padding:12px 16px}.reader-desk-coverage{padding:20px 16px}.reader-desk-coverage h3{font-size:20px;margin:6px 0 8px}.reader-desk-coverage p{margin:6px 0}.reader-desk-source-types{display:none}.reader-desk-body .scroll-body{flex:none;overflow:visible;padding-inline:12px}.reader-original-desk .reader-workspace{display:flex;flex-direction:column;overflow-y:auto}.reader-original-desk .reader-stage{flex:0 0 340px;min-height:340px}.reader-original-desk .reader-reading{overflow:visible}.reader-original-desk .reader-head h2{font-size:20px}.reader-original-desk .reader-views{top:52px;left:12px;right:auto}}
+@media(prefers-reduced-motion:reduce){.reading-desk *, .reader-original-desk *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* Keep the first view to the photograph and its reading. */
+.reader-original-desk.reader-reader{padding-top:0}
+.reader-original-desk .reader-head{flex:none;padding:12px 28px;gap:20px;min-width:0}
+.reader-original-desk .reader-head h2{font-size:22px;line-height:1.2;margin-top:4px}
+.reader-original-desk .reader-head .small-caps{display:block;font-size:9px;line-height:12px;letter-spacing:.08em;color:#788578}
+.reader-original-desk .reader-context{font-size:10px;color:#798579;margin-top:5px}
+.reader-head-actions{display:flex;align-items:center;gap:18px;flex:none}
+.reader-original-desk .reader-text-button,.reader-image-tools>summary{font:12px var(--sans);color:#526b58;background:none;border:0;box-shadow:none;padding:7px 0;cursor:pointer}
+.reader-image-tools{position:relative}
+.reader-image-tools>summary{display:flex;align-items:center;gap:6px;list-style:none}
+.reader-image-tools>summary::-webkit-details-marker{display:none}
+.reader-tools-panel{position:absolute;top:calc(100% + 12px);right:0;z-index:30;width:300px;max-width:calc(100vw - 32px);padding:18px;background:#fafbf7;border:1px solid #dce2d8;border-radius:7px;box-shadow:0 8px 28px #12251c26;color:#475b49}
+.reader-tools-panel .reader-controls{position:static;display:flex;justify-content:space-between;border:0;background:#eef2ea;box-shadow:none;color:#405444;margin-bottom:18px;padding:3px}
+.reader-tools-panel .reader-controls button{height:32px;width:32px}
+.reader-tools-panel .reader-controls button:hover{background:#dce5d8}
+.reader-view-choice{display:grid;gap:7px;font:11px var(--sans)}
+.reader-view-choice select,.reader-column-choice{border:1px solid #d0d9cd;border-radius:4px;background:#fff;color:#4b6250;padding:8px;font:12px var(--sans)}
+.reader-view-description,.reader-tool-hint{font:11px/1.6 var(--sans);color:#788573;margin:9px 0}
+.reader-tools-panel .reader-options{border-color:#dce2d8;font-size:11px;padding:14px 0;margin:14px 0}
+.reader-hold-photo{font-size:11px;border:1px solid #ccd6c7;border-radius:4px;padding:8px 10px;background:#f0f4ec;touch-action:none}
+.reader-hold-photo[aria-pressed=true]{background:#355744;color:#fff}
+.reader-original-desk .reader-workspace{grid-template-columns:minmax(0,1.35fr) minmax(300px,.75fr);border-color:#dce2d8;min-height:0}
+.reader-original-desk .reader-stage{min-height:0;box-shadow:none}
+.reader-original-desk .reader-canvas{min-height:0}
+.reader-original-desk .reader-reading{padding:26px 34px;min-height:0}
+.reader-original-desk .reader-word-nav{border:0;padding:0;gap:12px;color:#71816f;font-size:11px}
+.reader-original-desk .reader-word-nav button{border:0;padding:7px;color:#71816f}
+.reader-word-nav select{min-width:0;max-width:220px;border:0;background:none;text-align:center;color:#71816f;font:12px var(--sans);padding:8px}
+.reader-original-desk .reader-modern{font-size:54px;line-height:1.35;margin:22px 0 5px}
+.reader-original-desk .reader-gloss{font-size:17px;line-height:1.5;color:#6f7968;max-width:290px;margin:0 auto 26px}
+.reader-line-context{border-top:1px solid #e0e6da;padding-top:20px;margin-bottom:28px}
+.reader-original-desk .reader-label{font:10px var(--sans);color:#899583;letter-spacing:0;text-transform:none}
+.reader-original-desk .reader-line-he{font-size:24px;line-height:1.7;margin-top:10px}
+.reader-original-desk .reader-translation{font-size:18px;line-height:1.65;color:#4a5d4e;margin-top:12px}
+.reader-disclosure{border-top:1px solid #dce3d5;padding:14px 0;font:12px/1.5 var(--sans);color:#66795e}
+.reader-disclosure>summary{cursor:pointer;font-size:12px}
+.reader-disclosure .st-card{background:none;border:0;box-shadow:none;padding-inline:0}
+.reader-disclosure .st-close{display:none}
+.reader-original-desk .reader-credit{position:relative;display:flex;justify-content:space-between;align-items:center;gap:18px;max-height:none;overflow:visible;background:#f8f9f5;padding:10px 28px;color:#899581;font:10px/1.5 var(--sans)}
+.reader-original-desk .reader-credit a{color:#77886e}
+.reader-source-details>summary{cursor:pointer;white-space:nowrap}
+.reader-source-content{position:absolute;right:20px;bottom:calc(100% + 4px);z-index:30;width:570px;max-width:calc(100% - 40px);max-height:300px;overflow-y:auto;border:1px solid #dce2d8;border-radius:7px;box-shadow:0 -5px 25px #12251c20;padding:20px;background:#fafbf7;color:#61715b;font:12px/1.7 var(--sans)}
+.reader-source-content p+p{margin-top:12px}
+.reading-desk .scroll-heading{padding:18px 24px;gap:18px}
+.reading-desk .scroll-heading p{display:none}
+.reading-desk .scroll-heading .small-caps{font-size:9px}
+.reading-desk .reader-desk-body{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);border-color:#dce2d8}
+.reader-desk-source-types summary{cursor:pointer;margin-bottom:10px}
+.reader-desk-body .reader-disclosure{margin:0 8px;padding:10px 0}
+@container(max-width:640px){
+  .reader-original-desk .reader-head{padding:14px 18px;align-items:flex-start;flex-wrap:nowrap;gap:12px}
+  .reader-original-desk .reader-head>div:first-child{min-width:0}
+  .reader-original-desk .reader-head h2{font-size:20px}
+  .reader-head-actions{flex-direction:column;align-items:flex-end;gap:3px}
+  .reader-image-tools>summary,.reader-original-desk .reader-text-button{font-size:11px}
+  .reader-original-desk .reader-workspace{display:flex;flex-direction:column;overflow-y:auto}
+  .reader-original-desk .reader-stage{flex:0 0 300px;min-height:300px}
+  .reader-original-desk .reader-reading{overflow:visible;padding:22px 24px}
+  .reader-original-desk .reader-modern{font-size:44px;margin-top:12px}
+  .reader-original-desk .reader-credit{padding:8px 14px;gap:5px 14px;flex-wrap:wrap;font-size:9px}
+  .reader-source-content{right:14px;max-width:calc(100% - 28px);padding:16px;font-size:11px}
+  .reading-desk .scroll-heading{padding:14px 18px;align-items:center}
+  .reading-desk .scroll-heading h2{font-size:22px}
+  .reading-desk .reader-desk-body{display:flex}
+}

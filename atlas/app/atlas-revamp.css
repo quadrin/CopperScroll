@@ -1,0 +1,36 @@
+.app-header{gap:16px}.app-brand{min-width:218px}.app-brand h1{font-size:23px}.primary-nav{min-width:0}.primary-nav button{min-width:0;white-space:nowrap;padding-inline:12px;gap:6px}.header-actions{gap:12px}.header-actions>a{display:none}
+.working-surface{position:relative}.working-surface[data-expanded=true]{grid-template-columns:245px minmax(0,1fr)}.working-surface[data-expanded=true]>.detail-panel{display:none}.working-surface[data-expanded=true]>.map-surface{grid-column:2}
+.header-actions .entry-notes-toggle{display:flex;align-items:center;gap:6px;padding:7px 10px;background:#fff;border:1px solid #c8d4c5;border-radius:6px;color:#526b51;font-size:11px;box-shadow:0 1px 5px #142e241a}.entry-notes-toggle[aria-pressed=true]{background:#e8eee2}
+.immersive-mode>.map-canvas,.immersive-mode>.map-paper-overlay{visibility:hidden}.atlas-module-loading{position:absolute;inset:0;display:grid;place-items:center;z-index:8;background:#f4f5f0;color:#64745c;font-size:14px}
+.ground-mode>.map-canvas>.maplibregl-control-container{display:none}
+.dossier-launch{border:1px solid #c6d4bd!important;border-radius:7px;padding:12px!important;background:#f0f4e9!important}.dossier-launch span,.evidence-link span{display:flex;align-items:center;gap:7px}
+@media(max-width:1200px){.app-header{display:grid;grid-template-columns:1fr auto;padding:9px 16px;gap:8px}.app-header .primary-nav{grid-column:1/-1;grid-row:2;width:100%}.primary-nav button{flex:1;min-width:0}.app-header .header-actions{grid-column:2;grid-row:1}.working-surface[data-expanded=true]{grid-template-columns:225px minmax(0,1fr)}}
+@media(max-width:1100px){.working-surface[data-expanded=true]{display:flex}.working-surface[data-expanded=true][data-mobile-view=detail]>.detail-panel{display:block}.header-actions .entry-notes-toggle{display:none}.primary-nav button{font-size:13px}}
+@media(max-width:600px){.app-header{padding:8px 10px;gap:8px}.app-brand h1{font-size:20px}.primary-nav{overflow-x:auto;gap:0;padding:2px;min-height:52px}.primary-nav button{font-size:10px;padding:7px 4px;gap:4px;min-width:64px;flex-direction:column;line-height:1.2;white-space:normal;text-align:center}.primary-nav button svg{width:16px;height:16px}.header-actions button{font-size:11px}.header-actions button svg{display:none}}
+@media(prefers-reduced-motion:reduce){.atlas-shell *{scroll-behavior:auto!important}}
+
+/* Quiet navigation; reading and landscape views get the full surface by default. */
+.app-header{gap:28px;min-height:60px}
+.app-brand{min-width:0}.app-brand h1{font-size:21px}.app-brand span{font-size:10px}
+.primary-nav{align-self:center;border:0;background:none;border-radius:0;padding:0;gap:18px}
+.primary-nav button{position:relative;padding:10px 0;min-width:0;font-size:12px;border-radius:0;color:#6a7970}
+.primary-nav button svg{display:none}
+.primary-nav button:hover{background:none;color:#244d3e}
+.primary-nav button[aria-current=page]{background:none;color:#244d3e;box-shadow:none}
+.primary-nav button[aria-current=page]::after{content:"";position:absolute;bottom:2px;left:0;right:0;height:2px;background:#a66037}
+.header-actions{gap:20px}.header-actions button{font-size:12px}
+.header-actions .reader-register-toggle{gap:5px}
+.register-close{position:absolute;top:17px;right:14px;display:grid;place-items:center;width:28px;height:28px;color:#dbe6de}
+.entry-register{position:relative}
+@media(min-width:1101px){
+  .working-surface[data-focused=true]{grid-template-columns:minmax(0,1fr) 360px}
+  .working-surface[data-focused=true]>.map-surface{grid-column:1}
+  .working-surface[data-focused=true]>.entry-register{display:none}
+  .working-surface[data-focused=true][data-expanded=true]{grid-template-columns:minmax(0,1fr)}
+  .working-surface[data-focused=true][data-register-open=true]{grid-template-columns:280px minmax(0,1fr)}
+  .working-surface[data-focused=true][data-register-open=true]>.entry-register{display:flex}
+  .working-surface[data-focused=true][data-register-open=true]>.map-surface{grid-column:2}
+}
+@media(max-width:1200px){.app-header{gap:8px}.app-header .primary-nav{justify-content:flex-start;gap:22px}.primary-nav button{flex:none}}
+@media(max-width:1100px){.header-actions .reader-register-toggle{display:none}}
+@media(max-width:600px){.app-header{padding:10px 16px 7px}.app-brand h1{font-size:20px}.app-header .primary-nav{min-height:35px;gap:24px;overflow:visible;padding:0}.primary-nav button{font-size:11px;min-width:0;padding:8px 0;flex-direction:row;white-space:nowrap}.primary-nav button[aria-current=page]::after{bottom:0}.header-actions button{font-size:11px}.header-actions button svg{display:block}}

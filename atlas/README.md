@@ -1,6 +1,6 @@
 # The Copper Scroll Atlas
 
-The [GitHub Pages homepage](https://quadrin.github.io/CopperScroll/) opens this atlas directly. Browse all 61 scroll entries and their candidate places in the register, inspect sites on the map, or switch to the full scroll text from the top navigation. The selected entry has Sites, Text, and Evidence tabs. On narrow screens, the bottom navigation moves between the register, map or scroll, and entry details.
+The [GitHub Pages homepage](https://quadrin.github.io/CopperScroll/) opens this atlas directly. Browse all 61 scroll entries and their candidate places in the register, inspect sites on the map, or switch to the full scroll text from the top navigation. Landscapes compares dated maps and archive photographs. Place dossiers connect the retained readings to individual features, archaeological phases and source figures. The selected entry has Sites, Text, and Evidence tabs. In the wide views, **Entry notes** restores the detail panel. On narrow screens, the bottom navigation moves between the register, map or scroll, and entry details.
 
 ## Textual scenes
 
@@ -47,11 +47,13 @@ Current pins use the gazetteer's site anchors. Filled areas with dashed outlines
 
 ## The Scroll view
 
-**Read the scroll** in the top navigation replaces the map with the whole text of the scroll in the atlas's parchment style. A strip of bronze tablets selects a column, laid out right to left like the scroll; the three sheets are separated. Each line gives the English, the line number and the Hebrew. Entry headings use the register's style; selecting one selects that entry in the register, the map and the field note, and the view stays on the scroll. Selecting an entry elsewhere brings its lines into view. Words and underlined phrases open the same reading cards as the field note. `#entry-21/scroll` opens the view at an entry; `#scroll` opens it at the current one. The field note's **Read in context** link also switches to this view.
+**Read the scroll** in the top navigation replaces the map with the whole text of the scroll. A compact column selector provides all twelve columns. Each line gives the English, the line number and the Hebrew. Entry headings select that entry in the register, map and field note while the view stays on the scroll. Selecting an entry elsewhere brings its lines into view. Words and underlined phrases open the same reading cards as the field note. `#entry-21/scroll` opens the view at an entry; `#scroll` opens it at the current one. The field note's **Read in context** link also switches to this view.
 
 ## The photographic reader
 
-**Read the photograph** in Scroll opens a photograph of original strip 13 with eight provisional word tracings in VII 7–11. **Grooves** (the default), **Relief** and **Photo** switch between a groove map, a contrast-enhanced grey image and the photograph itself. Each letter is traced: solid strokes follow grooves the photograph shows; dashed strokes are shown only by Puech's radiograph of the strip. Select a word on the photograph or the word strip to see Hebrew lettering, glosses, the project translation and editorial notes. Pan, zoom, adjust trace opacity or hold the comparison control to inspect the photograph alone. **Full scroll text** returns to the existing column reader. The direct link is `#scroll/photo`; existing entry links retain their typeset view. Coverage and sources are recorded in [the photographic reader note](research/photographic_reader.md).
+The **Reading desk** gives the photograph and reading the full surface by default. **Entries** reveals the register; **More** contains Research tools, Entry notes and About. **Image tools** reveals zoom, the image-version selector, provisional tracing and trace opacity. The original photograph is the default and tracing starts off; **Grooves · computed** and **Relief · computed** label image processing explicitly. A compact word selector replaces the persistent word-card rail. Reading arguments, lettering notes and source details open on demand. The aligned coverage remains eight provisional word tracings on strip 13, VII 7–11. Other columns display their coverage gap and a link to the photographed example. Original metal, radiographs and facsimiles remain distinct source types.
+
+**Read the photograph** opens the original at the selected entry’s mapped words. A clicked word selects its owning entry; selecting an entry outside the photographed coverage returns to that entry’s full text. Pan, zoom, adjust trace opacity or hold the comparison control to inspect the photograph alone. Entries 31 and 49 have coherent reading alternatives with edition pages, feature requirements and map consequences. `#entry-31/scroll/photo` restores entry 31 at VII 11; `#entry-21/scroll` restores column V. Coverage and tracing sources remain in [the photographic reader note](research/photographic_reader.md).
 
 ## The text in each field note
 
@@ -78,13 +80,23 @@ MapLibre owns each marker's outer `site-marker` element, including its absolute 
 - Entry hash URLs restore the selected entry.
 - Supported WebMCP browsers expose `navigate_scroll_entry` through the same selection handler.
 
+## Landscapes and dossiers
+
+**Landscapes** gives the synchronized swipe map the full surface, with the register closed by default. **Entries** opens the register; compact layer selectors compare the 1880 survey, 1940s Survey of Palestine and modern OpenStreetMap. **Map layers** reveals optional overlays, source dates, alignment limits and local map records. Selected source records open over the map. The view selector switches to archive photographs or the source library, each with a compact date selector. The 1918 aerials and 1967 CORONA views retain their complete captions and explicit registration limits. The 1974/1978 HEXAGON sources open their packages; those images are not yet registered overlays. The optional 1940s records retain positional error and review state, while Roman roads retain source certainty, dating fields and bibliography. These layers provide context, not a reconstructed route or identified deposit. Desktop and phone browser checks cover the comparison, optional controls, record inspection and entry selection.
+
+Source originals, hashes, dimensions, licences and transformations are in [`../research/assets/plans/historical-landscapes/manifest.json`](../research/assets/plans/historical-landscapes/manifest.json), mirrored under `research/`. `python3 ../tools/build_landscape_data.py --intake-dir <download-directory>` rebuilds the public full-image derivatives and the permitted overlays (requires Pillow and pyproj). The protected map records are excluded.
+
+**Place dossier** opens from an entry’s Sites or Evidence tab, or from Landscapes. Curated dossiers cover Qumran, Doq, Siloam, Tell es-Sultan, the Jericho palaces and the Marjama/Samiya comparison. The interpretation tab preserves 17 reading arguments across entries 11, 25, 29, 31, 49 and 60, with the same saved feature comparisons used in Research tools. The Jericho source gallery compares licensed early/later Pools Complex plans and the separate Area AC figure. Other figures retain source-record links where reproduction is restricted. Deep links include `#entry-29/dossier` and `#entry-31/landscape`.
+
+The retired `#history` and `#entry-N/history` links open Places, preserving the requested entry where supplied.
+
 ## Validation
 
 The feature workbench, added 8 October 2026, has five research views at `#workbench/relationships`, `/inventory`, `/states`, `/coverage` and `/decisions`. Open **Research tools** from the main navigation or the entry's Evidence tab. The views load a separate generated snapshot from `../research/feature_workbench/build.py`; [its guide](../research/feature_workbench/README.md) documents the inputs, evaluators and research limits. Native aperture chords retain source coordinates; they are not map overlays. Decision outcome selections are hypothetical and write no evidence or request status.
 
-Run `python3 ../research/feature_workbench/check.py` to check semantic tests and snapshot freshness. After dependency installation, `node scripts/check-workbench.mjs` renders all five modules and all 179 saved selector choices without starting a browser. It checks control inclusion, selected branch results, source qualifiers and planning labels. Browser interaction and visual QA remain unverified in this session because the supported browser QA capability is unavailable.
+Run `python3 ../research/feature_workbench/check.py` to check semantic tests and snapshot freshness. After dependency installation, `node scripts/check-workbench.mjs` renders all five modules and all 179 saved selector choices without starting a browser. It checks control inclusion, selected branch results, source qualifiers and planning labels. The October 2026 revamp was tested in the browser on desktop and mobile; the earlier workbench rendering check remains available.
 
-The data generator verifies entry and place counts and candidate references. TypeScript and production build checks validate the implementation. The supervised preview service was unavailable in the creation session, so browser interaction, visual rendering and WebMCP runtime validation could not be completed there.
+The data generator verifies entry and place counts and candidate references. TypeScript and production build checks validate the implementation. The initial creation session lacked a browser preview; the revamp adds browser verification of the linked views, reader routing and film controls. Run `node app/atlas-reader-model.test.mjs` and `node scripts/check-revamp.mjs` for the focused reader and navigation checks.
 
 The Site uses the package manager, build scripts and hosting manifest supplied by the Sites starter.
 

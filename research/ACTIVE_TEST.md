@@ -1,8 +1,8 @@
 # Active test
 
-Updated 9 October 2026 UTC / 9 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 10 October 2026 UTC / 10 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (9 October UTC, later): **partly**: four regional data sources, read in parallel ([regional round](logs/regional_round_2026-10-09.md)). Obtained: Archaeological Survey of Israel records near the Jerusalem places (1,258 within 3 km); IAA excavation reports from 7 volumes (73 reports); the 1940s 1:20,000 sheets around the candidate places (190 features, 248 names); a gazetteer of 25 sites east of the Jordan. Not obtained: most online IAA reports (closed to robots) and the Jordan site inventories (accounts needed). Registered results are unchanged.
+Last session (10 October): **obtained**: desktop and phone browser observations of the atlas with History removed. Places, Landscapes and Read the scroll remain accessible; a retired entry-31 History link opens its candidate map. The film panel and development source-film route were removed, and the generated Pages build contains no History bundle ([atlas guide](../atlas/README.md)).
 
 ## Active questions and the observation that decides each
 
