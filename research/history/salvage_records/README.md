@@ -2,7 +2,7 @@
 
 **What it is.** A catalogue of 27 ancient and late-antique accounts of hiding or recovering valuables and sacred objects, and a ledger of 27 modern searches that looked for the scroll's deposits or covered places the scroll names.
 **Main result.** Every EVIDENCE-grade ancient account that bears on the scenarios describes removal soon after a loss (custodians, captives' information, systematic digging); support for "real but unrecovered" comes only from traditions and claims. No modern search has a documented target volume and depth, so none is a verified negative at a predicted target.
-**What stays unknown.** Where Allegro dug in 1959–60, what Bull's Gerizim trench was, and the cave-by-cave coverage of the 1952, 1993 and 2017 surveys; the primary reports are copyrighted or unread.
+**What stays unknown.** Where Allegro dug in 1959–60, and the cave-by-cave coverage of the 1952, 1993 and 2017 surveys. Reed 1954 maps the 1952 caves but lists none; the list is in de Vaux 1953 and DJD III, which this round did not read.
 
 Exploratory work of 9 October 2026 (analogues round, worker "salvage-records"). The idea comes from the Atocha search: Spanish salvage records showed where people had already looked. No identification, deposit or outcome-ledger count is made here.
 
@@ -56,9 +56,9 @@ Results: 19 other finds, 3 negative, 2 claimed finds, 3 unknown. Five rows are C
 What a later coverage worker can and cannot use:
 
 - **No row gives a target volume.** None of the scroll-motivated searches has a published plan, section or depth tied to an entry's locator. Under AGENTS.md none counts as a negative excavation at a predicted target.
-- **Gerizim (entry 57).** Two large excavations covered the summit: Bull at Tell er-Ras (1964, 1966) and Magen (1983–2006). Bull proposed his trench as the scroll's upper pit (Lefkovits 2000 p. 412; Bull's CLAIM). Neither reports a deposit. Whether any candidate "step of the upper pit" was cleared to its first-century surface is not established.
-- **Qumran cliffs (entries 20–26).** The 1952 expedition searched about forty caves; Patrich surveyed from Nahal Og to Wadi Auja in 1983–1987; the 1993 Region XI team covered 1.4 km of escarpment but could not re-identify earlier caves from their grids. Joining these surveys cave by cave needs Reed 1954, Patrich's reports and the IAA archive (requested 7 October, ACTIVE_TEST).
-- **Entry 25 (Cave of the Column).** Twin Cave was excavated in 1971, 1977, 1982 and 1986, partly with Jones's volunteers and partly because of the scroll identification. No northern-threshold datum is published, so the three-cubit target is not covered. Jones's 1992 dig was in a different cave north of his Cave of the Column.
+- **Gerizim (entry 57).** Two large excavations covered the summit: Bull at Tell er-Ras (1964, 1966) and Magen (1983–2006). Bull's own reports describe a probe for Hadrian's temple, not a deposit search. He asked whether the ancient east-west fosse south of the mound is the scroll's upper fosse and left it open (Bull 1968 p. 59). No report describes digging in that fosse; the steps he found are on the north slope. Neither excavation reports a deposit. Whether any candidate "step of the upper pit" was cleared to its first-century surface is not established.
+- **Qumran cliffs (entries 20–26).** The 1952 expedition worked 8 km of cliff from Ras Feshkha to Hajar el-Asbah with about 230 soundings and found 39 caves and crevices with objects, but did not move large boulders and only sounded the larger caves (Reed 1954 pp. 9–12); Patrich surveyed from Nahal Og to Wadi Auja in 1983–1987; the 1993 Region XI team covered 1.4 km of escarpment but could not re-identify earlier caves from their grids. Joining these surveys cave by cave needs Reed 1954, Patrich's reports and the IAA archive (requested 7 October, ACTIVE_TEST).
+- **Entry 25 (Cave of the Column).** Twin Cave was excavated in 1971, 1977, 1982 and 1986, partly with Jones's volunteers and partly because of the scroll identification. No northern-threshold datum is published, so the three-cubit target is not covered. Jones's 1992 dig was in a different, smaller cave slightly north of his Cave of the Column (Browning 1996 p. 77).
 - **Entries 31 and 35.** The 1993 Region VII report does not describe the Dok summit fortress. The Region XIV survey covers the Kidron outlet, not Mar Saba.
 - **Christmas Cave and Kh. Mazin.** Allegro dug both. The repo assigns no scroll entry to either.
 
@@ -70,7 +70,8 @@ What a later coverage worker can and cannot use:
 
 - Allegro's expedition: "1959-60" (Davies, Copper Scroll Studies p. 28) against 1962 (Wikipedia, citing VanderKam 2010 pp. 92–93). Davies p. 35 n. 20 lists explorations in 1959, 1962 and 1963.
 - Christmas Cave: found on Christmas Day 1960 during work at Kh. Mazin (Rasmussen et al. 2022 p. 2). If this was the first expedition, Davies's dates imply 1959. Not resolved.
-- Jones 1992: press conference 30 April (Lindell 2026) or 8 May (Deseret News 1992). Jones's season count: seven (Deseret) or eight (Wikipedia).
+- Jones 1992: press conference 30 April (Lindell 2026) or 8 May (Deseret News 1992; Browning 1996 p. 77). Jones's season count: Browning's list gives seven seasons through 1992, as Deseret says; Wikipedia says eight.
+- The 1988 juglet cave's distance from 3Q: about 0.2 km on Browning's sketch map (p. 76); about 0.5 km if it is 1952 cave 2, as Patrich and Arubas suggest (p. 44 n. 3), measured on Reed's Fig. 2; about 0.8 km from their 2.8 km north of Kh. Qumran against about 2 km for 3Q. The repo's earlier figure of less than 200 m (findings log F2.12, from Wolters) rests at best on the sketch map.
 - "Operation Scroll" names both the 1993 IAA survey and the 2017 programme.
 
 ## Analysis: what these records say about three scenarios
@@ -107,7 +108,8 @@ INFERENCE, labelled as such:
 - Patrich's project page: https://pluto.huji.ac.il/~patrichj/my_web_site/Research_Projects.html. Read through the web reader; a direct download returned a security error page.
 - Allegro 1960 (2023 reprint, epub, owner's Drive 1JDz__fYchccCaP8Bx7QOKz5oQKaFRY6S): not accessed. The Drive text tool does not read epub.
 - Copper Scroll Studies (owner's Drive): the text export stopped at 152,616 characters. Brooke's introduction and Davies's chapter were within it; Eshel's Hyrcania chapter was not.
-- Not accessed (copyright or paywall; routes given): Reed, BASOR 135 (1954) 8–13 (JSTOR); Bull and Wright, HTR 58 (1965) 234–237; Bull, BA 31 (1968) 58–72; Patrich and Arubas, IEJ 39 (1989); Browning, BA 59 (1996) 74–89; Amar, Dead Sea Discoveries (1998); Allegro, Search in the Desert (1964/1965) and the 1964 second edition of The Treasure of the Copper Scroll; Magen and Peleg, JSP 18 (2018); Magen, JSP 8 (2008) and JSP 20.
+- Read on 10 October 2026 through JSTOR with the owner's San Francisco Public Library login: Reed 1954, Bull and Wright 1965, Bull 1968, Patrich and Arubas 1989, Browning 1996 and Amar 1998. Page images were checked. The PDFs are in the owner's Drive (Copper Scroll / 04 Articles and chapters); hashes are in `source_files.csv`.
+- Not accessed (copyright or paywall; routes given): de Vaux, RB 60 (1953) 540–561 and DJD III (the 1952 cave list); Jones, Qumran Excavations, Cave of the Column Complex & Environs (1995); Allegro, Search in the Desert (1964/1965) and the 1964 second edition of The Treasure of the Copper Scroll; Magen and Peleg, JSP 18 (2018); Magen, JSP 8 (2008) and JSP 20.
 
 ## How to run and test
 

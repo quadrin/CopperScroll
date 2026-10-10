@@ -314,6 +314,7 @@ See `phase3_summary.md`. The original Phase 3 maps and tables record site anchor
 - F2.12 (evidence: Wolters 1994, pp. 293–295, with the discussion) **The 1988 juglet of oil.** Patrich and Arubas (*IEJ* 39, 1989) published a Herodian juglet of oil found in a cave less than 200 m from Cave 3. Wolters argues that it is "likely" part of the scroll's treasure. The discussion disagrees:
   - Donceel-Voûte: the oil was not identified as balsam, and this type of juglet is common.
   - Patrich: he "cannot" confirm the link.
+  - Correction, 10 October 2026 (Patrich and Arubas, IEJ 39 (1989) pp. 43-44, now read): the cave is their Cave 13, about 2.8 km north of Kh. Qumran, perhaps cave 2 of the 1952 survey. That puts it about 0.5–0.8 km from 3Q, not under 200 m; only Browning's 1996 sketch map shows it about 0.2 km away. See `history/salvage_records/README.md`, Conflicts kept open.
 
   Logged for Phase 5 (archaeology, published reports only). It is a past excavation that is already published, not a lead.
 - F2.13 (evidence) **DJD VII is almost irrelevant to 3Q15.** Its only reference is a spelling parallel (p. 222, on 4Q511): רוש for ראש, as in 3Q15 V 1.
