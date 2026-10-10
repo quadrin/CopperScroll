@@ -2,7 +2,7 @@
 
 **What it is.** A catalogue of 27 ancient and late-antique accounts of hiding or recovering valuables and sacred objects, and a ledger of 27 modern searches that looked for the scroll's deposits or covered places the scroll names.
 **Main result.** Every EVIDENCE-grade ancient account that bears on the scenarios describes removal soon after a loss (custodians, captives' information, systematic digging); support for "real but unrecovered" comes only from traditions and claims. No modern search has a documented target volume and depth, so none is a verified negative at a predicted target.
-**What stays unknown.** Where Allegro dug in 1959–60, and the cave-by-cave coverage of the 1952, 1993 and 2017 surveys. Reed 1954 maps the 1952 caves but lists none; the list is in de Vaux 1953 and DJD III, which this round did not read.
+**What stays unknown.** The footprints and depths of Allegro's 1959–60 soundings (his book names Kh. Qumran and Kh. Mird but gives no plans or depths), and the cave-by-cave coverage of the 1952, 1993 and 2017 surveys. Reed 1954 maps the 1952 caves but lists none; the list is in de Vaux 1953 and DJD III, which this round did not read.
 
 Exploratory work of 9 October 2026 (analogues round, worker "salvage-records"). The idea comes from the Atocha search: Spanish salvage records showed where people had already looked. No identification, deposit or outcome-ledger count is made here.
 
@@ -60,7 +60,10 @@ What a later coverage worker can and cannot use:
 - **Qumran cliffs (entries 20–26).** The 1952 expedition worked 8 km of cliff from Ras Feshkha to Hajar el-Asbah with about 230 soundings and found 39 caves and crevices with objects, but did not move large boulders and only sounded the larger caves (Reed 1954 pp. 9–12); Patrich surveyed from Nahal Og to Wadi Auja in 1983–1987; the 1993 Region XI team covered 1.4 km of escarpment but could not re-identify earlier caves from their grids. Joining these surveys cave by cave needs Reed 1954, Patrich's reports and the IAA archive (requested 7 October, ACTIVE_TEST).
 - **Entry 25 (Cave of the Column).** Twin Cave was excavated in 1971, 1977, 1982 and 1986, partly with Jones's volunteers and partly because of the scroll identification. No northern-threshold datum is published, so the three-cubit target is not covered. Jones's 1992 dig was in a different, smaller cave slightly north of his Cave of the Column (Browning 1996 p. 77).
 - **Entries 31 and 35.** The 1993 Region VII report does not describe the Dok summit fortress. The Region XIV survey covers the Kidron outlet, not Mar Saba.
-- **Christmas Cave and Kh. Mazin.** Allegro dug both. The repo assigns no scroll entry to either.
+- **Christmas Cave and Kh. Mazin.** Allegro dug both. The repo assigns no scroll entry to either, and Allegro's own account links neither to a scroll item (Search in the Desert pp. 3–4, 94).
+- **Allegro at Kh. Mird (Hyrcania).** In 1959–60 his team dug around the square "monument" SW of the fortress, his candidate for the scroll's second item, and swept it with a mine detector that gave signals everywhere from magnetic rock (Search in the Desert pp. 117–118, in S03). In the Fund expedition they only inspected the east side (his reading of the first item's steps) and entered the courtyard vault (pp. 114–117). No coverage can be set from this.
+
+**Candidate rows, not added.** Allegro's book describes more Fund-expedition work that could become ledger rows: a cliff cave near Mazin cleared to a chalcolithic level (pp. 78–79, 123); a sweep of the Kidron gorge caves in small groups (pp. 130–131); the cliffs behind and north of the Ain Feshkha camp (p. 99); two caves next to Cave 11 ("Ibrahim's caves", Fig. 6), the second dug to a chalcolithic level and its lower storey left unexplored (pp. 155–162); and the 1962–63 inspection of Kh. Mird (pp. 111–120). They are recorded in the notes of S05 for now. Adding them would change `summary.json`, so it waits for the owner's approval.
 
 ### Joining with the search-effectiveness looks table
 
@@ -68,9 +71,9 @@ What a later coverage worker can and cannot use:
 
 ### Conflicts kept open
 
-- Allegro's expedition: "1959-60" (Davies, Copper Scroll Studies p. 28) against 1962 (Wikipedia, citing VanderKam 2010 pp. 92–93). Davies p. 35 n. 20 lists explorations in 1959, 1962 and 1963.
-- Allegro's campaigns: Albright's review of 9 October 1960 (New York Times Book Review p. 51) already calls his hunt unsuccessful, so one took place before October 1960. A Reuters report from Amman (New York Times, 29 December 1961) says a second, Allegro-led excavation in the Dead Sea area had just begun. Both dates fit Davies's list (1959, 1962, 1963). No source read names a site.
-- Christmas Cave: found on Christmas Day 1960 during work at Kh. Mazin (Rasmussen et al. 2022 p. 2). If this was the first expedition, Davies's dates imply 1959. Not resolved.
+- Allegro's expedition: resolved for the first one. Allegro writes "In the winter 1959-60 I had led a small expedition" (Search in the Desert p. 93), as Davies says (p. 28). Wikipedia's 1962 (citing VanderKam 2010 pp. 92–93) fits the later Dead Sea Scrolls Fund expedition, which looked for scrolls and caves, not treasure.
+- Allegro's campaigns: Albright's review of 9 October 1960 (New York Times Book Review p. 51) already calls his hunt unsuccessful, so one took place before October 1960. A Reuters report from Amman (New York Times, 29 December 1961) says a second, Allegro-led excavation in the Dead Sea area had just begun. Both dates fit Davies's list (1959, 1962, 1963). Allegro's book names Kh. Qumran and Kh. Mird for 1959–60 (pp. 93–94, 113–118). INFERENCE: the Reuters report fits the Mazin season, which Allegro dates to "the winter of 1961" and which ended on Christmas Day (pp. 3, 13–16).
+- Christmas Cave: found on Christmas Day at the end of the Mazin season. Allegro calls that season "the winter of 1961" (p. 3), but counts "thirteen years" from 1947 (p. 2), and Rasmussen et al. 2022 (p. 2) give 1960. The Fund expedition came twelve months later (p. 162). Its year is never stated; the only year in the book is the BBC broadcast of the film, 17 April 1963 (p. 164). INFERENCE: Mazin season December 1961 and Fund expedition November 1962 to January 1963. Not resolved.
 - Jones 1992: press conference 30 April (Lindell 2026) or 8 May (Deseret News 1992; Browning 1996 p. 77). Jones's season count: Browning's list gives seven seasons through 1992, as Deseret says; Wikipedia says eight.
 - The 1988 juglet cave's distance from 3Q: about 0.2 km on Browning's sketch map (p. 76); about 0.5 km if it is 1952 cave 2, as Patrich and Arubas suggest (p. 44 n. 3), measured on Reed's Fig. 2; about 0.8 km from their 2.8 km north of Kh. Qumran against about 2 km for 3Q. The repo's earlier figure of less than 200 m (findings log F2.12, from Wolters) rests at best on the sketch map.
 - 3Q in the press: the first report (Religious News Service, New York Times 1 April 1952) says second-revolt coins were found with the copper scrolls; Reed 1954 mentions none.
@@ -113,7 +116,8 @@ INFERENCE, labelled as such:
 - Allegro 1960 (2023 reprint, epub, owner's Drive 1JDz__fYchccCaP8Bx7QOKz5oQKaFRY6S): not accessed. The Drive text tool does not read epub.
 - Copper Scroll Studies (owner's Drive): the text export stopped at 152,616 characters. Brooke's introduction and Davies's chapter were within it; Eshel's Hyrcania chapter was not.
 - Read on 10 October 2026 through JSTOR with the owner's San Francisco Public Library login: Reed 1954, Bull and Wright 1965, Bull 1968, Patrich and Arubas 1989, Browning 1996 and Amar 1998. Page images were checked. The PDFs are in the owner's Drive (Copper Scroll / 04 Articles and chapters); hashes are in `source_files.csv`.
-- Not accessed (copyright or paywall; routes given): de Vaux, RB 60 (1953) 540–561 and DJD III (the 1952 cave list); Jones, Qumran Excavations, Cave of the Column Complex & Environs (1995); Allegro, Search in the Desert (1964/1965) and the 1964 second edition of The Treasure of the Copper Scroll; Magen and Peleg, JSP 18 (2018); Magen, JSP 8 (2008) and JSP 20.
+- Read on 10 October 2026: Allegro, Search in the Desert (W. H. Allen, June 1966 reprint), from the owner's PDF (an Internet Archive scan), whole book. Notes with quotes of 12 words or fewer: [allegro1966_search_in_the_desert_extracted.md](../allegro1966_search_in_the_desert_extracted.md).
+- Not accessed (copyright or paywall; routes given): de Vaux, RB 60 (1953) 540–561 and DJD III (the 1952 cave list); Jones, Qumran Excavations, Cave of the Column Complex & Environs (1995); the 1964 second edition of The Treasure of the Copper Scroll; Magen and Peleg, JSP 18 (2018); Magen, JSP 8 (2008) and JSP 20.
 
 ## How to run and test
 
