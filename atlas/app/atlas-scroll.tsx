@@ -128,31 +128,24 @@ export default function ScrollView({ entry, entries, places, onEntry }: Props) {
   const heads = entryHeads(rows, lastRow ? lastRow.owner[lastRow.owner.length - 1] : undefined);
   return <div className="scroll-view reading-desk">
     <header className="scroll-heading">
-      <div><span className="small-caps">Reading desk · 3Q15 · right to left</span>
+      <div><span className="small-caps">3Q15 · full text</span>
       <h2>Column {ROMAN[col]}</h2>
       <p>Lines 1–{rows.length} · entries {inColumn[0]}–{inColumn[inColumn.length - 1]}. Select a word or an underlined phrase for the edition apparatus.</p></div>
-      <button className="reader-text-button" onClick={() => showPhotograph(true)}>{hasPhotograph ? "Read the photograph" : "Photographed example · VII"}</button>
+      <div className="reader-head-actions"><select className="reader-column-choice" aria-label="Select scroll column" value={col} onChange={event => { setChosen({ entry: entry.id, col: +event.target.value }); setSel(null); resetTextScroll(); }}>{columns.map((_, i) => <option key={i} value={i}>Column {ROMAN[i]}</option>)}</select><button className="reader-text-button" onClick={() => showPhotograph(true)}>{hasPhotograph ? "Read the photograph" : "Photo example · VII"}</button></div>
     </header>
-    <nav className="scroll-strip" aria-label="Columns of the scroll, right to left">{columns.map((c, i) => <Fragment key={i}>
-      {(i === 4 || i === 8) && <span className="scroll-seam" aria-hidden="true"/>}
-      <button type="button" className="scroll-tablet" aria-current={i === col ? "true" : undefined} aria-label={`Column ${ROMAN[i]}`} onClick={() => { setChosen({ entry: entry.id, col: i }); setSel(null); resetTextScroll(); }}>
-        <span className="cn">{ROMAN[i]}</span>
-        <span className="mini" aria-hidden="true">{c.map(r => <span key={r.ref}>{r.w.map(w => w.n != null ? "·" : plain(w)).join(" ")}</span>)}</span>
-      </button>
-    </Fragment>)}</nav>
     <div className="reader-desk-body">
       <aside className="reader-desk-image" aria-label="Original image and coverage">
         {hasPhotograph ? <>
           <figure><svg viewBox={`0 0 ${photo.width} ${photo.height}`} role="img" aria-label="Original curved copper strip 13 in the Jordan Museum; engraved Hebrew with corrosion and changing surface light."><image href={`${base}${photo.image}`} width={photo.width} height={photo.height}/></svg></figure>
           <div className="reader-desk-image-caption"><span className="small-caps">Original photograph · strip 13</span><p>Column VII · eight mapped words in VII 7–11. Entry {entry.id} has {mapped.length} mapped {mapped.length === 1 ? "word" : "words"}. The remaining surface is unaligned.</p><button type="button" className="reader-text-button" onClick={() => showPhotograph(true)}>Inspect the words · zoom and pan</button><p><a href={photo.source} target="_blank" rel="noreferrer">{photo.author}, 2020</a> · <a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a></p></div>
         </> : <div className="reader-desk-coverage"><span className="small-caps">Original image coverage</span><h3>The text is available. Its image alignment is pending.</h3><p>{col === PHOTO_COLUMN ? `Entry ${entry.id} has no mapped words on the available strip 13 photograph.` : `Column ${ROMAN[col]} has no aligned photograph in this reader.`} The full twelve-column transcription and word apparatus remain available.</p><p>The photographed example contains eight mapped words from entries 29–31 in column VII. Opening it also selects the corresponding entry.</p><button type="button" className="reader-text-button" onClick={() => showPhotograph(true)}>Open photographed example · entry 30</button></div>}
-        <div className="reader-desk-source-types"><p><strong>Original</strong> · the surviving metal photographed in the museum. This is the default image.</p><p><strong>Radiograph</strong> · a separately acquired X-ray image, used to inform dashed tracing strokes.</p><p><strong>Facsimile</strong> · a copy of the scroll’s surface. It can clarify shapes but is a different object.</p><p>Puech 2006, vol. II: p. 385, pl. CCCXLVI (radiograph); p. 413, pl. CCCLXXII (facsimile). The copyrighted plates are cited, not displayed.</p></div>
+        <details className="reader-desk-source-types"><summary>Image sources &amp; limits</summary><p><strong>Original</strong> · the surviving metal photographed in the museum. This is the default image.</p><p><strong>Radiograph</strong> · a separately acquired X-ray image, used to inform dashed tracing strokes.</p><p><strong>Facsimile</strong> · a copy of the scroll’s surface. It can clarify shapes but is a different object.</p><p>Puech 2006, vol. II: p. 385, pl. CCCXLVI (radiograph); p. 413, pl. CCCLXXII (facsimile). The copyrighted plates are cited, not displayed.</p></details>
       </aside>
     <div className="scroll-body" ref={body}>
       {rows.map(r => {
         const selected = r.owner.includes(entry.id);
         return <Fragment key={r.ref}>
-          {heads[r.ref].map(h => <Fragment key={`entry-${h.id}`}>{heading(h.id, h.continued, h.midLine)}{h.id === entry.id && col === entryCol && <ReaderBranches key={entry.id} entryId={entry.id}/>}</Fragment>)}
+          {heads[r.ref].map(h => <Fragment key={`entry-${h.id}`}>{heading(h.id, h.continued, h.midLine)}{h.id === entry.id && col === entryCol && ["31", "49"].includes(entry.id) && <details className="reader-disclosure"><summary>Compare readings</summary><ReaderBranches key={entry.id} entryId={entry.id}/></details>}</Fragment>)}
           <div className={`scroll-row ${selected ? "in-entry" : ""} ${sel?.line === r.ref ? "active" : ""}`}>
             <p className="scroll-en">{r.tr.map((s, i) => typeof s === "string" ? <Fragment key={i}>{s}</Fragment> : <button key={i} type="button" className={sel?.note === s[1] ? "st-nt on" : "st-nt"} onClick={() => setSel(sel?.note === s[1] ? null : { line: r.ref, note: s[1] })}>{s[0]}</button>)}</p>
             <span className="scroll-no" aria-label={`Line ${r.ref}`}>{r.no}</span>

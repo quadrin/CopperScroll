@@ -1,11 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
-import { ChevronLeft, ChevronRight, Focus, Minus, Plus, RotateCcw } from "lucide-react";
+import { ChevronLeft, ChevronRight, Focus, Minus, Plus, RotateCcw, SlidersHorizontal } from "lucide-react";
 import photo from "./atlas-photo-data.json";
 import { plain, ReadingCard, Segments, useScrollText } from "./atlas-text";
 import ReaderBranches from "./atlas-reader-branches";
 import { photoTarget, wordOwner } from "./atlas-reader-model";
+import { parseAtlasHash } from "./atlas-navigation";
 import "./atlas-reader.css";
 
 type Box = { x: number; y: number; width: number; height: number };
@@ -27,7 +28,7 @@ export default function PhotoReader({ entryId, onEntry, onText, onUnavailable }:
   const [selection, setSelection] = useState<{ entryId: string; index: number | null }>(() => ({ entryId, index: data ? photoTarget(data, entryId).index : null }));
   const selected = selection.entryId === entryId && selection.index !== null ? selection.index : data ? photoTarget(data, entryId).index : 1;
   const [view, setView] = useState<Box>(START);
-  const [tracing, setTracing] = useState(true);
+  const [tracing, setTracing] = useState(false);
   const [viewId, setViewId] = useState("photo");
   const [opacity, setOpacity] = useState(.85);
   const [original, setOriginal] = useState(false);
@@ -49,7 +50,10 @@ export default function PhotoReader({ entryId, onEntry, onText, onUnavailable }:
   useEffect(() => {
     if (!data) return;
     const target = photoTarget(data, entryId);
-    if (target.entryId !== entryId) onUnavailable();
+    // A hash change can reach the child before the atlas restores its entry.
+    // Wait for that entry rather than replacing the new route with the old one.
+    const requestedEntry = parseAtlasHash(window.location.hash)?.entryId;
+    if (target.entryId !== entryId && (!requestedEntry || requestedEntry === entryId)) onUnavailable();
   }, [data, entryId, onUnavailable]);
   function chooseView(id: string) {
     if (id === viewId) return;
@@ -140,14 +144,19 @@ export default function PhotoReader({ entryId, onEntry, onText, onUnavailable }:
   if (data && photoTarget(data, entryId).entryId !== entryId) return <div className="reader-reader reader-original-desk"><p className="scroll-status" role="status">Entry {entryId} has no aligned photograph. Opening its full text…</p></div>;
 
   return <div className="reader-reader reader-original-desk">
-    <header className="reader-head"><div><span className="small-caps">Reading desk · original metal · Jordan Museum</span><h2>{photo.title}</h2><span className="reader-context">Entry {owner ?? "…"} · {item.line} · eight mapped words in VII 7–11</span></div><button className="reader-text-button" onClick={onText}>Full scroll text</button></header>
-    <div className="reader-workspace">
-      <section className="reader-stage" aria-label="Photograph with word tracings">
+    <header className="reader-head"><div><span className="small-caps">{layer.id === "photo" ? "Original photograph" : `${layer.label} · computed`} · Jordan Museum</span><h2>{photo.title}</h2><span className="reader-context">Entry {owner ?? "…"} · {item.line}</span></div><div className="reader-head-actions"><button className="reader-text-button" onClick={onText}>Full text</button><details className="reader-image-tools"><summary><SlidersHorizontal size={14}/>Image tools</summary><div className="reader-tools-panel">
         <div className="reader-controls" aria-label="Photograph controls">
           <button onClick={() => zoom(1.3)} aria-label="Zoom out"><Minus size={17}/></button><button onClick={() => zoom(1 / 1.3)} aria-label="Zoom in"><Plus size={17}/></button><button onClick={() => setView(START)} aria-label="Reset photograph view"><RotateCcw size={16}/></button><button onClick={() => focus()} aria-label="Focus selected word"><Focus size={17}/></button>
           <span>{Math.round(START.width / view.width * 100)}%</span>
         </div>
-        <div className="reader-views" role="group" aria-label="Original and computed image versions">{[...photo.views].sort((a, b) => Number(b.id === "photo") - Number(a.id === "photo")).map(v => <button key={v.id} aria-pressed={v.id === layer.id} title={viewDescriptions[v.id]} onClick={() => chooseView(v.id)}>{v.id === "photo" ? "Original" : `${v.label} · computed`}</button>)}</div>
+        <label className="reader-view-choice">Image version<select aria-label="Image version" value={layer.id} onChange={e => chooseView(e.target.value)}>{[...photo.views].sort((a, b) => Number(b.id === "photo") - Number(a.id === "photo")).map(v => <option key={v.id} value={v.id}>{v.id === "photo" ? "Original photograph" : `${v.label} · computed`}</option>)}</select></label>
+        <p className="reader-view-description">{viewDescriptions[layer.id]}</p>
+        <div className="reader-options"><label><input type="checkbox" checked={tracing} onChange={e => setTracing(e.target.checked)}/>Provisional tracing</label><label className="reader-opacity">Trace opacity<input type="range" min=".15" max="1" step=".05" value={opacity} onChange={e => setOpacity(+e.target.value)}/></label></div>
+        <button className="reader-hold-photo" aria-pressed={original} onPointerDown={e => { e.currentTarget.setPointerCapture(e.pointerId); setOriginal(true); }} onPointerUp={() => setOriginal(false)} onPointerCancel={() => setOriginal(false)} onLostPointerCapture={() => setOriginal(false)} onKeyDown={e => { if (e.key === " " || e.key === "Enter") setOriginal(true); }} onKeyUp={() => setOriginal(false)} onBlur={() => setOriginal(false)}>Hold for original photo</button>
+        <p className="reader-tool-hint">Drag to pan · scroll or pinch to zoom. Use the arrow keys to move between words.</p>
+      </div></details></div></header>
+    <div className="reader-workspace">
+      <section className="reader-stage" aria-label="Photograph with word tracings">
         <svg ref={svg} className="reader-canvas" data-view={layer.id} viewBox={`${view.x} ${view.y} ${view.width} ${view.height}`} preserveAspectRatio="xMidYMid meet" aria-label={`Copper Scroll strip 13, ${layer.label.toLowerCase()} view. Select an outlined word; drag to pan or scroll to zoom.`} tabIndex={0}
           onPointerDown={start} onPointerMove={move} onPointerUp={end} onPointerCancel={end}
           onDoubleClick={() => zoom(.65)} onKeyDown={e => {
@@ -164,27 +173,20 @@ export default function PhotoReader({ entryId, onEntry, onText, onUnavailable }:
         </svg>
         {imageState === "loading" && <div className="reader-loading" role="status">Loading the {layer.id === "photo" ? "photograph" : `${layer.label.toLowerCase()} image`}…</div>}
         {imageState === "failed" && <div className="reader-loading" role="alert">The image could not load.<button onClick={() => { setImageState("loading"); setRetry(v => v + 1); }}>Retry</button></div>}
-        <div className="reader-stage-foot"><span>Drag to pan · scroll or pinch to zoom</span><button aria-pressed={original} onPointerDown={e => { e.currentTarget.setPointerCapture(e.pointerId); setOriginal(true); }} onPointerUp={() => setOriginal(false)} onPointerCancel={() => setOriginal(false)} onLostPointerCapture={() => setOriginal(false)} onKeyDown={e => { if (e.key === " " || e.key === "Enter") setOriginal(true); }} onKeyUp={() => setOriginal(false)} onBlur={() => setOriginal(false)}>Hold for photo</button></div>
       </section>
       <aside className="reader-reading" aria-label="Selected word interpretation">
-        <div className="reader-word-nav"><button onClick={() => next(-1)} aria-label="Previous mapped word"><ChevronLeft size={18}/></button><span>{item.line} · word {item.word + 1}</span><button onClick={() => next(1)} aria-label="Next mapped word"><ChevronRight size={18}/></button></div>
+        <div className="reader-word-nav"><button onClick={() => next(-1)} aria-label="Previous mapped word"><ChevronLeft size={16}/></button><select aria-label="Choose a mapped word" value={selected} onChange={e => pick(+e.target.value, true)}>{photo.words.map((w, i) => <option key={w.id} value={i}>{lineWords[w.line]?.[w.word] ? plain(lineWords[w.line][w.word]) : "…"} · {w.line}</option>)}</select><button onClick={() => next(1)} aria-label="Next mapped word"><ChevronRight size={16}/></button></div>
         {failed ? <p>The text could not load. Reload to retry.</p> : !data || !word || !line ? <p role="status">Loading the reading…</p> : <>
           <div className="reader-modern" lang="he" dir="rtl"><Segments w={word}/></div>
           <p className="reader-gloss">{word.m?.map(m => data.gloss[m[1]]).filter(Boolean).join(" · ") || plain(word)}</p>
-          <p className="reader-label">The line in context</p><p className="reader-line-he" dir="rtl" lang="he">{line.w.map((w, i) => <span key={i} className={i === item.word ? "active" : ""}>{w.n ?? plain(w)} </span>)}</p>
+          <div className="reader-line-context"><span className="reader-label">{item.line}</span><p className="reader-line-he" dir="rtl" lang="he">{line.w.map((w, i) => <span key={i} className={i === item.word ? "active" : ""}>{w.n ?? plain(w)} </span>)}</p>
           <p className="reader-translation">{line.tr.map(s => typeof s === "string" ? s : s[0]).join("")}</p>
-          <div className="reader-options"><label><input type="checkbox" checked={tracing} onChange={e => setTracing(e.target.checked)}/>Trace strokes</label><label className="reader-opacity">Trace opacity<input type="range" min=".15" max="1" step=".05" value={opacity} onChange={e => setOpacity(+e.target.value)}/></label></div>
-          <p className="reader-provisional">Provisional tracing</p><p className="reader-legend"><span className="legend-solid"/>groove visible in this photograph <span className="legend-dashed"/>shown only by the radiograph</p><p className="reader-note">{item.note}</p>
-          <details className="reader-editions"><summary>Lettering and interpretation</summary><ReadingCard data={data} line={line} sel={{ line: item.line, word: item.word }} notesFor={notesFor} lineWords={lineWords} onClose={() => {}}/></details>
-          {owner && <ReaderBranches key={owner} entryId={owner}/>}
-          {owner && <button className="reader-entry-link" onClick={() => onEntry(owner)}>Show entry {owner} in the atlas</button>}
+          </div>
+          {owner && ["31", "49"].includes(owner) && <details className="reader-disclosure" key={owner}><summary>Compare readings</summary><ReaderBranches entryId={owner}/></details>}
+          <details className="reader-disclosure"><summary>Lettering &amp; tracing</summary><p className="reader-provisional">Provisional tracing</p><p className="reader-legend"><span className="legend-solid"/>visible groove <span className="legend-dashed"/>radiograph-supported</p><p className="reader-note">{item.note}</p><ReadingCard data={data} line={line} sel={{ line: item.line, word: item.word }} notesFor={notesFor} lineWords={lineWords} onClose={() => {}}/></details>
         </>}
       </aside>
     </div>
-    <nav className="reader-word-strip" aria-label="Mapped words in reading order">{photo.words.map((w, i) => {
-      const text = lineWords[w.line]?.[w.word];
-      return <button key={w.id} aria-pressed={i === selected} onClick={() => pick(i, true)}><span lang="he" dir="rtl">{text ? plain(text) : "…"}</span><small>{w.line}</small></button>;
-    })}</nav>
-    <footer className="reader-credit"><p><strong>{layer.id === "photo" ? "Original photograph." : "Computed photograph transform."}</strong> {viewDescriptions[layer.id]} Eight mapped words in VII 7–11; the rest of the surface is unaligned. Solid strokes follow grooves visible in the photograph; dashed strokes are supported by the separately published radiograph.</p><p>Photograph: <a href={photo.source} target="_blank" rel="noreferrer">{photo.author}</a>, 2020 · <a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a>. The Grooves and Relief images and the tracings are derived from it and use the same licence.</p><details><summary>Radiograph, facsimile and processing sources</summary><p>{photo.alignmentReference} A facsimile photographs a copy; it is not the original metal. Grooves and Relief are computed transforms of the museum photograph, not X-rays or infrared images. {photo.imageProcessing}</p><p>Hebrew: Abegg / ETCBC, CC BY-NC 4.0. Translation and edition summaries: this project. Tracings are provisional, not a diplomatic transcription.</p></details></footer>
+    <footer className="reader-credit"><p><a href={photo.source} target="_blank" rel="noreferrer">{photo.author}</a>, 2020 · <a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a></p><details className="reader-source-details"><summary>Sources &amp; coverage</summary><div className="reader-source-content"><p><strong>{layer.id === "photo" ? "Original photograph." : "Computed photograph transform."}</strong> {viewDescriptions[layer.id]} Eight mapped words in VII 7–11; the rest of the surface is unaligned. Solid strokes follow grooves visible in the photograph; dashed strokes are supported by the separately published radiograph.</p><p>The Grooves and Relief images and the tracings are derived from the photograph and use the same licence.</p><p>{photo.alignmentReference} A facsimile photographs a copy; it is not the original metal. Grooves and Relief are computed transforms of the museum photograph, not X-rays or infrared images. {photo.imageProcessing}</p><p>Hebrew: Abegg / ETCBC, CC BY-NC 4.0. Translation and edition summaries: this project. Tracings are provisional, not a diplomatic transcription.</p></div></details></footer>
   </div>;
 }
