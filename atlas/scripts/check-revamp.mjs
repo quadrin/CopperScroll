@@ -10,7 +10,7 @@ vm.runInNewContext(compiled, { exports });
 const { atlasModes, entryHash, parseAtlasHash } = exports;
 const { entries } = JSON.parse(readFileSync(new URL("../app/atlas-data.json", import.meta.url), "utf8"));
 assert.equal(entries.length, 61);
-assert.equal(atlasModes.length, 8);
+assert.equal(atlasModes.length, 7);
 
 let roundtrips = 0;
 for (const { id } of entries) for (const mode of atlasModes) {
@@ -29,7 +29,7 @@ for (const { id } of entries) {
   assert.equal(route?.mode, "scroll", "The manuscript photograph stays in the reader, not place photos");
 }
 assert.equal(parseAtlasHash("#scroll/photo")?.mode, "scroll");
-for (const [alias, mode] of Object.entries({ "2d": "2d", "3d": "3d", scroll: "scroll", photo: "ground", ground: "ground", scene: "scene", landscape: "landscape", dossier: "dossier", history: "history" })) {
+for (const [alias, mode] of Object.entries({ "2d": "2d", "3d": "3d", scroll: "scroll", photo: "ground", ground: "ground", scene: "scene", landscape: "landscape", dossier: "dossier", history: "2d" })) {
   const route = parseAtlasHash(`#${alias}`);
   assert.equal(route?.entryId, null, `Bare #${alias} keeps the selected entry`);
   assert.equal(route?.mode, mode);

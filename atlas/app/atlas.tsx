@@ -1,7 +1,7 @@
 "use client";
 
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { BookOpen, ChevronDown, ChevronLeft, ChevronRight, ExternalLink, Feather, FileText, FlaskConical, History as HistoryIcon, Info, Layers, List, Map, MapPin, PanelRightOpen, Search, ScrollText, X } from "lucide-react";
+import { BookOpen, ChevronDown, ChevronLeft, ChevronRight, ExternalLink, Feather, FileText, FlaskConical, Info, Layers, List, Map, MapPin, PanelRightOpen, Search, ScrollText, X } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -41,7 +41,7 @@ export default function Atlas(){
   const [showNotes,setShowNotes]=useState(false);
   const [showRegister,setShowRegister]=useState(false);
   const [aboutOpen,setAboutOpen]=useState(false);
-  const wideMode=["scroll","landscape","dossier","history"].includes(mode);
+  const wideMode=["scroll","landscape","dossier"].includes(mode);
   const focusedMode=["scroll","landscape"].includes(mode);
   const entryListRef=useRef<HTMLElement>(null);
   const detailRef=useRef<HTMLElement>(null);
@@ -115,7 +115,6 @@ export default function Atlas(){
         <button type="button" aria-label="Explore places" aria-current={!workbenchModule&&["2d","3d","ground","scene","dossier"].includes(mode)?"page":undefined} onClick={()=>changeMode("2d")}><Map size={17}/>Places</button>
         <button type="button" aria-current={!workbenchModule&&mode==="landscape"?"page":undefined} onClick={()=>changeMode("landscape")}><Layers size={17}/>Landscapes</button>
         <button type="button" aria-current={!workbenchModule&&mode==="scroll"?"page":undefined} onClick={openScroll}><ScrollText size={17}/>Read the scroll</button>
-        <button type="button" aria-current={!workbenchModule&&mode==="history"?"page":undefined} onClick={()=>changeMode("history")}><HistoryIcon size={17}/>History</button>
       </nav>
       <div className="header-actions">{focusedMode&&!workbenchModule&&<button className="reader-register-toggle" aria-expanded={showRegister} aria-controls="entry-register" onClick={()=>{setShowRegister(v=>!v);setShowNotes(false);}}><List size={15}/>Entries</button>}
         <DropdownMenu><DropdownMenuTrigger asChild><button aria-label="More atlas options" aria-current={workbenchModule?"page":undefined}>More<ChevronDown size={14}/></button></DropdownMenuTrigger><DropdownMenuContent align="end">
@@ -163,6 +162,6 @@ export default function Atlas(){
         </article>
       </aside>
     </div>
-    <nav className="mobile-nav" aria-label="Atlas views"><button aria-pressed={mobileView==="register"} onClick={()=>setMobileView("register")}><List size={17}/>Register</button><button aria-pressed={mobileView==="map"} onClick={()=>setMobileView("map")}><Map size={17}/>{mode==="scroll"?"Scroll":mode==="ground"?"Ground":mode==="scene"?"Scene":mode==="landscape"?"Landscapes":mode==="dossier"?"Dossier":mode==="history"?"History":"Map"}</button><button aria-pressed={mobileView==="detail"} onClick={()=>setMobileView("detail")}><FileText size={17}/>Entry {entry.id}</button></nav></>}
+    <nav className="mobile-nav" aria-label="Atlas views"><button aria-pressed={mobileView==="register"} onClick={()=>setMobileView("register")}><List size={17}/>Register</button><button aria-pressed={mobileView==="map"} onClick={()=>setMobileView("map")}><Map size={17}/>{mode==="scroll"?"Scroll":mode==="ground"?"Ground":mode==="scene"?"Scene":mode==="landscape"?"Landscapes":mode==="dossier"?"Dossier":"Map"}</button><button aria-pressed={mobileView==="detail"} onClick={()=>setMobileView("detail")}><FileText size={17}/>Entry {entry.id}</button></nav></>}
   </main>;
 }

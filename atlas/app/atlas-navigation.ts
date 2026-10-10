@@ -1,9 +1,9 @@
-export const atlasModes = ["2d", "3d", "ground", "scene", "scroll", "landscape", "dossier", "history"] as const;
+export const atlasModes = ["2d", "3d", "ground", "scene", "scroll", "landscape", "dossier"] as const;
 export type AtlasMode = (typeof atlasModes)[number];
 const validEntryId = /^(?:[1-9]|[1-5]\d|60|12a)$/;
 const modeAliases: Record<string, AtlasMode | undefined> = {
   "2d": "2d", "3d": "3d", ground: "ground", photo: "ground", scene: "scene",
-  scroll: "scroll", landscape: "landscape", dossier: "dossier", history: "history",
+  scroll: "scroll", landscape: "landscape", dossier: "dossier", history: "2d",
 };
 export function entryHash(id: string, mode: string) {
   const suffix = mode === "2d" ? "" : mode === "ground" ? "/photo" : `/${mode}`;

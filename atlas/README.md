@@ -1,6 +1,6 @@
 # The Copper Scroll Atlas
 
-The [GitHub Pages homepage](https://quadrin.github.io/CopperScroll/) opens this atlas directly. Browse all 61 scroll entries and their candidate places in the register, inspect sites on the map, or switch to the full scroll text from the top navigation. Landscapes compares dated maps and archive photographs; History combines the opening film with source-linked discovery and search episodes. Place dossiers connect the retained readings to individual features, archaeological phases and source figures. The selected entry has Sites, Text, and Evidence tabs. In the wide views, **Entry notes** restores the detail panel. On narrow screens, the bottom navigation moves between the register, map or scroll, and entry details.
+The [GitHub Pages homepage](https://quadrin.github.io/CopperScroll/) opens this atlas directly. Browse all 61 scroll entries and their candidate places in the register, inspect sites on the map, or switch to the full scroll text from the top navigation. Landscapes compares dated maps and archive photographs. Place dossiers connect the retained readings to individual features, archaeological phases and source figures. The selected entry has Sites, Text, and Evidence tabs. In the wide views, **Entry notes** restores the detail panel. On narrow screens, the bottom navigation moves between the register, map or scroll, and entry details.
 
 ## Textual scenes
 
@@ -80,7 +80,7 @@ MapLibre owns each marker's outer `site-marker` element, including its absolute 
 - Entry hash URLs restore the selected entry.
 - Supported WebMCP browsers expose `navigate_scroll_entry` through the same selection handler.
 
-## Landscapes, dossiers and history
+## Landscapes and dossiers
 
 **Landscapes** gives the synchronized swipe map the full surface, with the register closed by default. **Entries** opens the register; compact layer selectors compare the 1880 survey, 1940s Survey of Palestine and modern OpenStreetMap. **Map layers** reveals optional overlays, source dates, alignment limits and local map records. Selected source records open over the map. The view selector switches to archive photographs or the source library, each with a compact date selector. The 1918 aerials and 1967 CORONA views retain their complete captions and explicit registration limits. The 1974/1978 HEXAGON sources open their packages; those images are not yet registered overlays. The optional 1940s records retain positional error and review state, while Roman roads retain source certainty, dating fields and bibliography. These layers provide context, not a reconstructed route or identified deposit. Desktop and phone browser checks cover the comparison, optional controls, record inspection and entry selection.
 
@@ -88,15 +88,7 @@ Source originals, hashes, dimensions, licences and transformations are in [`../r
 
 **Place dossier** opens from an entry’s Sites or Evidence tab, or from Landscapes. Curated dossiers cover Qumran, Doq, Siloam, Tell es-Sultan, the Jericho palaces and the Marjama/Samiya comparison. The interpretation tab preserves 17 reading arguments across entries 11, 25, 29, 31, 49 and 60, with the same saved feature comparisons used in Research tools. The Jericho source gallery compares licensed early/later Pools Complex plans and the separate Area AC figure. Other figures retain source-record links where reproduction is restricted. Deep links include `#entry-29/dossier` and `#entry-31/landscape`.
 
-**History** provides timed original diagrams and captions over the supplied 85-second silent film, an overlay toggle, chapter seeking, fullscreen and six source-linked episodes. The public build offers a local file picker: the file stays on the viewer’s device. The copyrighted film is not bundled. To preview the owner’s source automatically, use the static development server:
-
-```sh
-COPPER_SCROLL_FILM_PATH='/absolute/path/to/film.mp4' \
-VITE_COPPER_SCROLL_FILM_URL='/__source-film.mp4' \
-corepack pnpm exec vite --config vite.pages.config.ts --host 127.0.0.1
-```
-
-The source-file route exists only in development, supports range requests, and is absent from the production bundle. Public film embedding requires the archive’s reuse permission. Chapter times describe this digital copy; explanatory diagrams do not trace an exact saw path or identify manuscript letters.
+The retired `#history` and `#entry-N/history` links open Places, preserving the requested entry where supplied.
 
 ## Validation
 
