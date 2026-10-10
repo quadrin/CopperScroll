@@ -26,6 +26,21 @@ Checked 2026-09-27 against branch `main` (commit 637a7a9, "Add files via upload"
 | *ʿAtiqot* 41 (2002), Hebrew issue: *Surveys and Excavations of Caves in the Northern Judean Desert (CNJD) — 1993*, 6 parts (uploaded in session 2) | Not in the repo (upload only) | **Complete.** The six parts rejoined; SHA-256 matches; 25 PDF files, 295 pages, born digital, Hebrew in Unicode | The IAA cave survey from Wadi el-Makkuk to Naḥal Kidron, with maps. Main use: Phase 5 |
 | DJD VII, Baillet, *Qumrân grotte 4. III (4Q482–4Q520)* (uploaded in session 2) | Not in the repo (upload only) | Yes. The complete volume (444 pages) with plates | **Almost nothing on 3Q15**: one spelling parallel (p. 222) |
 
+## Regional and historical datasets — 9–10 October 2026
+
+Each folder records where its data came from (links, archive IDs or Drive IDs, and SHA-256 of what was read) and what is still closed. No PDF, scan, tile or long extract is in Git.
+
+| Dataset | Folder | Where-from record | Access route | Still closed or unread |
+|---|---|---|---|---|
+| Archaeological Survey of Israel (ASI) records near the Jerusalem places | [regional/asi_jerusalem](../regional/asi_jerusalem/README.md) | `access.md`, `sources_manifest.csv` | Public JSON services behind survey.iaa.org.il | Printed page numbers; the Jericho and Qumran–Feshkha sheets are not online |
+| IAA excavation reports (*Hadashot Arkheologiyot*, ESI, HA-ESI) | [regional/haesi_features](../regional/haesi_features/README.md) | `reports.csv`, `data/corpus.csv`, `data/unread_online_candidates.csv` | Owner's Drive copies; the open 2026 volume at publications.iaa.org.il | Online reports 2004–2025 (closed to robots); portal PDFs (browser check) |
+| Survey of Palestine 1:20,000 sheets, 1940s | [regional/mandate_maps](../regional/mandate_maps/README.md) | `README.md`, `plan.json`, registrations `POM-pal20k-*` | Palestine Open Maps tiles (public domain; credit National Library of Israel) | Sheet margins and legends (Dropbox links barred by robots.txt) |
+| RAF aerial layer, 1940s | [regional/raf_1940s](../regional/raf_1940s/README.md) | `source_record.json`, `tile_manifest.txt`, registrations `POM-aerial1940s-*` | Palestine Open Maps layer (georeferenced by S. Holtzman) | Too coarse for the strip test; the Hebrew University scans need an order |
+| PEF *Quarterly Statement* 1869–1914 | [history/pef_qs_finds](../history/pef_qs_finds/README.md) | `volumes.csv` (138 files) | archive.org OCR text | OCR misses are listed in the README |
+| Ancient salvage accounts and earlier searches | [history/salvage_records](../history/salvage_records/README.md) | `sources.csv`, `source_files.csv` | Public-domain translations and open reports | Allegro's books and several excavation reports (copyright) |
+| Second Temple sites east of the Jordan | [regional/peraea](../regional/peraea/README.md) | `sources.csv`, `doa_search_log.csv`, `access_requests.md` | Jordan Department of Antiquities publication archive (ADAJ) | MEGA-Jordan and EAMENA (accounts: EAMENA registered 9 October, level pending; MEGA-Jordan request drafted for the owner) |
+| Concealment comparanda (hoards, caches) | [comparanda/concealment_contexts](../comparanda/concealment_contexts/README.md) | `sources_read.csv` | CHRE (Oxford), the T02 hoard list | Chance and market finds rarely give a context |
+
 ## Puech 2006 (primary reading)
 
 - Files: `Le Rouleau de Cuivre de la Grotte 3 de Qumrân (3q15) (2 - Daniel Brizemeure, Noël Lacoudre, Emile Puech-1.pdf` … `-11.pdf`. These are the two volumes of STDJ 55 (Brill / EBAF 2006) split into 70-page parts; part 11 has 6 pages. The PDF says it is a multi-volume eBook.

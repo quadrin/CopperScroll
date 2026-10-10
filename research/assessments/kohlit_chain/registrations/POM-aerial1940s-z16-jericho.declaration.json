@@ -1,0 +1,138 @@
+{
+ "kind": "pre-fit declaration (registration_protocol.md section 2, steps 1 and 3) with a resolvability gate",
+ "written_by": "mandate-maps worker, RAF round, 9 October 2026 (owner-approved step)",
+ "written_before": "any view of the Palestine Open Maps 'Aerial imagery, 1940s' layer anywhere",
+ "protocol_files_sha256": {
+  "registration_protocol.md": "0d82db20f84b250a4cb6525c22cab261461d1d117f7f2af919066f33d2c51f05",
+  "registration.py": "b7e4604948ae2eeb07ad6dac53a7fcd9c62f786a2c29f546c1443f593b6680df",
+  "reference_points.json": "231276263dd0164b8b245a04313667fe4c31f4cc0842276d33e67a61e5ec2bf5",
+  "chain.json": "2fe2207eafc06f92b90305d67c24a1c8b08a3feb9f1f50c8a74583a80a887867",
+  "source_record.json": "a53493f961de3fdf66dfe7df0177af656a9afd27d3fb75c6703a4deb8a0dedbc"
+ },
+ "registered_prediction": {
+  "copied_from": "research/assessments/kohlit_chain/chain.json (sha256 above), model M-SULTAN, next link SULTAN-1-precamp-mouth",
+  "id": "SULTAN-1-precamp-mouth",
+  "relations": [
+   "R-E60-TOMBS-AT-MOUTH"
+  ],
+  "branch": "RB-M, RB-P, RB-L",
+  "expect": "A non-funerary opening (shaft, cistern or pit mouth, 1 m or wider) with at least one grave cut or tomb opening within 10 m of it.",
+  "where": "The strip from the tell's north foot to about 250 m north: Kenyon II p. 169 skipped it; Area D lies about 100–200 m north (Fig. 91, inference). Under the ʿAin es-Sultan camp since 1948.",
+  "record_ids": [
+   "REC-GARSTANG-LIV",
+   "REC-PEF",
+   "REC-NIGRO-RECORDS",
+   "REC-BSPAL-1032",
+   "REC-RAF-JERICHO",
+   "REC-POM-RAF-1940S",
+   "REC-POM-20K-19-14"
+  ],
+  "success": "The opening and the grave appear in one registered record, and their distance is 'inside' 10 m under registration_protocol.md.",
+  "contradiction": "Photographs and plans alone cannot contradict: absence may be concealment, burial or resolution. A contradiction needs a coverage-gated excavation record of the strip (coverage module gates) that reached the ancient surface and reports no such pair.",
+  "contradiction_strength": "one-sided",
+  "reading_dependencies": [
+   "D-E60-SECOND-WORD",
+   "D-E60-BURIED",
+   "D-E60-OPENING"
+  ],
+  "notes": "Locating an opening does not date it. A success opens the next link (R-E60-PIT-PERIOD, R-E60-JOINT-ACCESS) on the same feature."
+ },
+ "record_specific_expectation": "The layer's maximum zoom is 16, about 2.03 m per ground pixel. A 1 m opening would span about half a pixel. The resolvability gate below is therefore expected to fail, in which case the strip stays unseen and SULTAN-1 stays untested by this record.",
+ "document": {
+  "id": "POM-aerial1940s-z16-jericho",
+  "title": "RAF vertical photographs of the 1940s as a georeferenced mosaic (S. Holtzman), Palestine Open Maps layer 'Aerial imagery, 1940s', zoom 16, around Tell es-Sultan",
+  "custodian": "Palestine Open Maps (tiles on jsDelivr from github.com/bothness/pom-tiles); photographs credited to the RAF and the Hebrew University of Jerusalem",
+  "date": "1944-1948 per the layer; sortie and frame not stated (catalogue: PS30 15 Mar 1945, PS32 16 Apr 1945 cover the tell)",
+  "kind": "vertical_aerial (a resampled mosaic of near-vertical photographs)",
+  "extent_grid": "EPSG:28191 E 189500-194500, N 140000-145000 (zoom-16 tiles intersecting the box)",
+  "sha256": "SHA-256 of the sorted tile manifest (z/x/y and each tile's SHA-256), computed at download and written into the pre-preview note before any view"
+ },
+ "transform": "similarity",
+ "transform_note": "Section 3: near-vertical photograph; plain-level points only. Mound tops and Jebel Quruntul are excluded.",
+ "target_relations": [
+  "mouth_10m",
+  "north_sector"
+ ],
+ "source_axes": "pixel_y_down (pixels of the full-resolution zoom-16 mosaic of the extent; x and y measured from its top-left global pixel)",
+ "target_frame": {
+  "crs": "EPSG:28191 Palestine Grid metres (= WBADB Old Israel Grid minus 1,000,000 m N)",
+  "conversion": "pyproj 3.8.0 / PROJ 9.8.1, operation 'Palestine 1923 to WGS 84 (1)'",
+  "reference_source": "The Esri World Imagery coordinates already fixed in registrations/POM-pal20k-z16-19-14.json (picked before this layer was viewed). They are reused unchanged.",
+  "reference_error_m": 5,
+  "reference_coordinates": {
+   "RP-TELL-FOOT-W": [
+    192055.45,
+    142050.64
+   ],
+   "RP-TELL-FOOT-S": [
+    192149.91,
+    141889.58
+   ],
+   "RP-TELL-FOOT-E": [
+    192180.51,
+    142001.96
+   ],
+   "RP-TAWAHIN": [
+    191679.89,
+    142160.61
+   ],
+   "RP-MEFJAR": [
+    193622.22,
+    143256.66
+   ],
+   "RP-SPRING": [
+    192199.25,
+    142002.0
+   ]
+  }
+ },
+ "control_candidates": [
+  "RP-TELL-FOOT-W",
+  "RP-TELL-FOOT-S",
+  "RP-TELL-FOOT-E (only if the spring is identifiable, because its line runs through the spring)",
+  "RP-TAWAHIN",
+  "RP-MEFJAR"
+ ],
+ "excluded_candidates": {
+  "RP-SAMARAT": "no reference coordinate (no mound identifiable on the reference imagery)",
+  "RP-ABU-HINDI": "as RP-SAMARAT",
+  "RP-QARANTAL": "excluded by role (cliff relief)",
+  "RP-TELL-FOOT-N": "excluded by role; inside the mask",
+  "RP-ROADS": "alignments changed",
+  "RP-SW-TRENCHES and RP-KENYON-TRENCHES": "tie roles; mound top"
+ },
+ "control_rule": "Use every candidate the photograph shows with a definable point outside the mask, at the point defined in reference_points.json and picked by the same definition as on the reference imagery. At least three. A candidate is dropped only if its feature cannot be identified on the photograph; that is decided before any fit.",
+ "check_point_rule": "RP-SPRING if the coarse masked preview shows the spring house or the reservoir outside the mask. Otherwise the first identifiable of RP-TELL-FOOT-W, RP-TELL-FOOT-S. Decided on the coarse preview and written down before any full-resolution view.",
+ "zone_and_mask": {
+  "zone_nominal_grid": {
+   "E": [
+    191950,
+    192400
+   ],
+   "N": [
+    142120,
+    142550
+   ]
+  },
+  "mask_grid": {
+   "E": [
+    191800,
+    192550
+   ],
+   "N": [
+    142120,
+    142700
+   ]
+  },
+  "coarse_preview_mask": "mask_grid widened by 150 m west, east and north and 50 m south (no layer offset is known yet): E 191650-192700, N 142070-142850; painted solid before downsampling to 8 m per pixel",
+  "full_resolution_mask": "mask_grid shifted by the layer offset measured on the coarse preview from features outside the zone, widened by 75 m west, east and north and 50 m south; written into the checkpoint note before any full-resolution view",
+  "stricter_than_protocol": "The zone is painted solid on every view, not only marked."
+ },
+ "resolvability_gate": {
+  "declared": "before any view of the layer; applies before the zone may be opened at full resolution",
+  "measure": "Effective ground resolution R_eff on features OUTSIDE the zone = the larger of (a) the nominal ground pixel of the highest available zoom and (b) the median 10-90 % edge-rise width, in metres, of at least three sharp straight edges (road margins, walls, building or reservoir edges) on full-resolution masked views.",
+  "rule": "Pass only if R_eff <= 0.5 m, so that a 1 m opening spans at least about 2 pixels. If it fails: do not open the zone at full resolution; keep the zone unseen; report that the 600-dpi Hebrew University scans (PS30 5107, PS30 5137, PS32 5069-5070; record REC-RAF-JERICHO) are needed.",
+  "fit_if_failed": "The registration fit may still be run on points outside the zone, to record this layer's registration error. It opens nothing inside the mask."
+ },
+ "no_rescue": "Controls, transform, check point and gate are fixed before the fit and before any zone view. A later change is a new exploratory registration and is logged as such."
+}

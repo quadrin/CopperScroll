@@ -1,0 +1,101 @@
+{
+ "kind": "resolvability gate measurement (declared in POM-aerial1940s-z16-jericho.declaration.json); written before any fit and before any zone view",
+ "checkpoint_sha256": "854e4e78719beff2778ac37147a06384382a892c1ba47083fc22fa94a16e1e1d",
+ "method": "10-90 % rise width of the mean profile across a straight edge, sampled every 0.25 raw pixel over +-6 raw pixels, averaged along the edge, on the raw zoom-16 mosaic (no resizing). All edges lie outside the full-resolution mask (E 191725-192625, N 142070-142775).",
+ "edge_rule_added_here": "Only profiles with a contrast of at least 30 grey levels are counted as edges; lower-contrast profiles are listed but did not cross a real edge. This rule was added after measuring; it cannot change the gate, because the nominal pixel alone fails it.",
+ "edges": [
+  {
+   "edge": "Kh. el-Mafjar area, east edge of the bright square (palace)",
+   "contrast_grey": 8.4,
+   "rise_px": 10.29,
+   "rise_m": 20.89,
+   "counted": false
+  },
+  {
+   "edge": "Kh. el-Mafjar area, top edge of a bright field to the south-east",
+   "contrast_grey": 73.9,
+   "rise_px": 2.81,
+   "rise_m": 5.7,
+   "counted": true
+  },
+  {
+   "edge": "Kh. el-Mafjar area, top edge of the bright square",
+   "contrast_grey": 2.5,
+   "rise_px": 0.11,
+   "rise_m": 0.22,
+   "counted": false
+  },
+  {
+   "edge": "Road east of the tell, west margin (south of the mask)",
+   "contrast_grey": 9.3,
+   "rise_px": 0.57,
+   "rise_m": 1.16,
+   "counted": false
+  },
+  {
+   "edge": "Track south-east of the tell, north margin",
+   "contrast_grey": 10.7,
+   "rise_px": 1.01,
+   "rise_m": 2.05,
+   "counted": false
+  },
+  {
+   "edge": "Kh. el-Mafjar area, north edge of a light parcel",
+   "contrast_grey": 40.2,
+   "rise_px": 2.77,
+   "rise_m": 5.62,
+   "counted": true
+  },
+  {
+   "edge": "Field south-west of the tell, top edge of a bright rectangle",
+   "contrast_grey": 123.7,
+   "rise_px": 3.96,
+   "rise_m": 8.04,
+   "counted": true
+  },
+  {
+   "edge": "Field south of the tell, west edge of a bright block",
+   "contrast_grey": 122.0,
+   "rise_px": 5.84,
+   "rise_m": 11.86,
+   "counted": true
+  },
+  {
+   "edge": "Field south-west of the tell, west edge of a bright block",
+   "contrast_grey": 118.3,
+   "rise_px": 5.09,
+   "rise_m": 10.33,
+   "counted": true
+  },
+  {
+   "edge": "Field south of the tell, top edge of a bright block",
+   "contrast_grey": 94.6,
+   "rise_px": 3.92,
+   "rise_m": 7.96,
+   "counted": true
+  },
+  {
+   "edge": "Kh. el-Mafjar area, west edge of the bright square",
+   "contrast_grey": 87.6,
+   "rise_px": 9.17,
+   "rise_m": 18.62,
+   "counted": true
+  },
+  {
+   "edge": "Kh. el-Mafjar area, bottom edge of a bright field",
+   "contrast_grey": 48.0,
+   "rise_px": 6.99,
+   "rise_m": 14.19,
+   "counted": true
+  }
+ ],
+ "n_counted": 8,
+ "median_edge_rise_m": 9.18,
+ "nominal_ground_pixel_m": 2.03,
+ "R_eff_m": 9.18,
+ "threshold_m": 0.5,
+ "pixels_across_1m_opening": 0.11,
+ "gate": "FAILED",
+ "consequence": "The zone is not opened at full resolution. It stays unseen in this layer. The 600-dpi Hebrew University scans of the RAF frames (PS30 5107, PS30 5137, PS32 5069-5070; record REC-RAF-JERICHO; about 0.6 m per pixel at 1:15,000, INFERENCE) are needed, and even they sit near the 0.5 m threshold.",
+ "other_observations_outside_zone": "The mosaic joins several photographs with different contrast; a seam runs about 150 m west of the tell. The spring house and the 1898 reservoir are not identifiable. The Tawahin es-Sukkar complex is not identifiable as a walled ruin."
+}

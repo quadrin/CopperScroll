@@ -1,0 +1,71 @@
+{
+ "document": {
+  "id": "POM-aerial1940s-z16-jericho",
+  "title": "RAF verticals of the 1940s as a georeferenced mosaic (S. Holtzman), Palestine Open Maps layer 'Aerial imagery, 1940s', zoom 16",
+  "custodian": "Palestine Open Maps (jsDelivr / github.com/bothness/pom-tiles); photographs credited to the RAF and the Hebrew University of Jerusalem",
+  "date": "1944-1948 (layer); frames not stated",
+  "kind": "vertical_aerial",
+  "sha256": "161236b4d69c3f009c25a3446dbf095681c4d54d16bb47e099a4720cf52f2c81"
+ },
+ "declared_before_fit": "dated notes: POM-aerial1940s-z16-jericho.declaration.json (sha256 6725bb15..., 2026-10-10T00:12:53Z); prepreview.json (ea79a8b8..., 00:16:54Z); checkpoint.json (854e4e78..., 00:18:00Z); gate.json (f188e2bb..., 00:20:47Z); this record's hash and time are in research/regional/raf_1940s/README.md",
+ "transform": "similarity",
+ "target_relations": [
+  "mouth_10m",
+  "north_sector"
+ ],
+ "source_axes": "pixel_y_down",
+ "source_frame": "pixels of the full-resolution zoom-16 mosaic of the document extent (E189500-194500 N140000-145000); x = global z16 pixel x - 10039123, y = global z16 pixel y - 6818730 (rows down)",
+ "target_frame": {
+  "crs": "EPSG:28191 Palestine Grid metres (= WBADB Old Israel Grid minus 1,000,000 m N)",
+  "conversion": "pyproj 3.8.0 / PROJ 9.8.1, operation 'Palestine 1923 to WGS 84 (1)'",
+  "reference_source": "Esri World Imagery coordinates from registrations/POM-pal20k-z16-19-14.json, unchanged",
+  "reference_error_m": 5
+ },
+ "controls": [
+  {
+   "rp": "RP-TELL-FOOT-S",
+   "source_xy": [
+    1316.0,
+    1550.0
+   ],
+   "target_xy": [
+    192149.91,
+    141889.58
+   ]
+  },
+  {
+   "rp": "RP-MEFJAR",
+   "source_xy": [
+    2041.67,
+    866.0
+   ],
+   "target_xy": [
+    193622.22,
+    143256.66
+   ]
+  }
+ ],
+ "check": {
+  "rp": "RP-TELL-FOOT-W",
+  "source_xy": [
+   1251.2,
+   1471.6
+  ],
+  "target_xy": [
+   192055.45,
+   142050.64
+  ]
+ },
+ "pick_notes": {
+  "RP-TELL-FOOT-S": "south edge of the bright mound on the line E 192150; low confidence (a road runs along it)",
+  "RP-MEFJAR": "centre of the bright square at the palace (moderate confidence)",
+  "RP-TELL-FOOT-W": "west edge of the bright mound on the line N 142050 (moderate confidence)"
+ },
+ "dropped_candidates": {
+  "RP-TAWAHIN": "not identifiable as a walled ruin at 2 m per pixel on full-resolution masked views (rule in the declaration)",
+  "RP-TELL-FOOT-E": "not used: the spring is not identifiable, and the point is defined on the line through the spring",
+  "RP-SPRING": "not identifiable on the preview; not the check (checkpoint.json)"
+ },
+ "expected_status": "invalid: only two declared controls are identifiable and a similarity fit needs three plus one check point. Undeclared points are not added (no rescue).",
+ "gate": "FAILED (gate.json): R_eff 9.2 m against a 0.5 m threshold; the zone stays closed whatever this record returns."
+}

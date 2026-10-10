@@ -1,0 +1,50 @@
+{
+ "kind": "EXPLORATORY: residuals of the layer's published georeferencing at the three identified reference points (no fit; not a registration result)",
+ "pick_error_m": "about 10-15 m (2 m pixels, soft edges)",
+ "reference_error_m": 5,
+ "rows": [
+  {
+   "rp": "RP-TELL-FOOT-S",
+   "published_grid": [
+    192166.9,
+    141875.2
+   ],
+   "reference_grid": [
+    192149.91,
+    141889.58
+   ],
+   "dE_m": 17.0,
+   "dN_m": -14.4,
+   "d_m": 22.2
+  },
+  {
+   "rp": "RP-MEFJAR",
+   "published_grid": [
+    193637.1,
+    143260.6
+   ],
+   "reference_grid": [
+    193622.22,
+    143256.66
+   ],
+   "dE_m": 14.9,
+   "dN_m": 4.0,
+   "d_m": 15.4
+  },
+  {
+   "rp": "RP-TELL-FOOT-W",
+   "published_grid": [
+    192035.0,
+    142033.3
+   ],
+   "reference_grid": [
+    192055.45,
+    142050.64
+   ],
+   "dE_m": -20.5,
+   "dN_m": -17.3,
+   "d_m": 26.8
+  }
+ ],
+ "note": "These say only where the mosaic places these features. They cannot rescue the invalid registration and open nothing in the zone."
+}

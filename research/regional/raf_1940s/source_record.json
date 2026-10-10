@@ -1,0 +1,23 @@
+{
+ "id": "REC-POM-RAF-1940S",
+ "read_utc": "2026-10-09, before any image of the layer was viewed",
+ "layer": {
+  "key": "aerial1940",
+  "name_en": "Aerial imagery, 1940s",
+  "description_en_short": "Black-and-white British military aerial photographs of the 1940s, collected and georeferenced by Shaul Holtzman, colour-corrected and merged into one raster tileset (Palestine Open Maps layer description).",
+  "author_field": "Royal Air Force",
+  "source_field": "Hebrew University of Jerusalem",
+  "years_field": "1944-1948",
+  "url": "https://cdn.jsdelivr.net/gh/bothness/pom-tiles@2d154a81c81c2647f74dd4ceee4b1bee66119e79/aerial1940s/{z}/{x}/{y}.png",
+  "tile_format": "PNG, 256 x 256, 8-bit grey with alpha, Web Mercator XYZ",
+  "max_zoom_declared": 16,
+  "max_zoom_verified": "z16 returns tiles; z17 and z18 return 404 at Kh. Qumran, and z17 returns 404 at Kh. el-Mafjar (tiles fetched, not viewed)",
+  "nominal_ground_pixel_m": 2.03,
+  "nominal_ground_pixel_basis": "Web Mercator zoom 16 at latitude 31.87 N: 156543.034 / 2^16 x cos(31.87) = 2.03 m"
+ },
+ "frames": "The layer names no sortie, frame or date for any area. For this box the Hebrew University catalogue lists RAF No. 680 Squadron sorties PS29 (14 Mar 1945), PS30 (15 Mar 1945) and PS32 (16 Apr 1945), 1:15,000 with a 12-inch lens (W2G report, research/agent_review_2026-10-07/wave2/W2G_browser/REPORT.md s. 3). Which frames the mosaic uses near Jericho is not stated (INFERENCE: probably PS30 5107/5137 or PS32 5069/5070, the frames that cover the tell).",
+ "original_scans": "The Hebrew University department scanned pre-1948 frames at 600 dpi (W2G report); at 1:15,000 that is about 0.64 m per pixel (INFERENCE from 25.4 mm / 600 x 15,000). High-resolution scans are sold; none is ordered (record REC-RAF-JERICHO).",
+ "licence_and_credit": "Palestine Open Maps states no licence for this layer. Its about page says its maps are public domain under the UK CDPA 1998; that statement names maps, not this photo layer. Credit as given: Royal Air Force; Hebrew University of Jerusalem; georeferenced by Shaul Holtzman; Palestine Open Maps. No image is stored in the repository; tile URLs and SHA-256 are recorded instead.",
+ "not_found": "The tile repository (github.com/bothness/pom-tiles) has a two-line README. jsDelivr refuses a directory listing (package over 50 MB). The GitHub API and github.com were not reachable from this session (HTTP 403). No metadata.json exists at the layer root (404).",
+ "prior_exposure_audit": "W2G (7 October) viewed Hebrew University IIIF previews of the RAF frames at about 4-5 m per pixel (W2G report s. 3); at that scale 1-2 m openings cannot be seen. No repository record shows a view of this Palestine Open Maps layer. The strip north of the tell has not been seen at high resolution in any RAF image."
+}

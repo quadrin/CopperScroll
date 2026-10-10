@@ -1,0 +1,26 @@
+{
+ "kind": "check-point decision on the coarse masked preview (registration_protocol.md section 2 step 4); written before any full-resolution view of the layer",
+ "prepreview_sha256": "ea79a8b86026cb78222ae6b9dafa0264ebb09f78a7eb05cb91472146d06e2462",
+ "preview": {
+  "scale_m_per_px": 8.1,
+  "extent_grid": "E189500-194500 N140000-145000",
+  "mask_painted": "E 191650-192700, N 142070-142850 (solid, before downsampling)",
+  "file": "scratch only"
+ },
+ "what_the_preview_shows": "A patchwork of several photographs with different contrast. Roads, Wadi en-Nuʿeima, the town of Jericho and the relief of Jebel Quruntul are clear. South of the mask a bright area matches the tell's south half. The spring house and reservoir are not identifiable at 8 m per pixel. At Kh. el-Mafjar a bright patch lies at or within about 30 m of the reference palace centre.",
+ "decision": "The spring is not identifiable on the preview, so the check point is RP-TELL-FOOT-W (the first identifiable candidate in the declared order: the west edge of the bright mound is visible just south of the mask).",
+ "controls": "RP-TELL-FOOT-S, RP-TAWAHIN, RP-MEFJAR; RP-TELL-FOOT-E only if the spring proves identifiable at full resolution (its line runs through the spring). The spring itself is then not used.",
+ "layer_offset_coarse": "Not distinguishable from zero at 8 m per pixel (|offset| about 30 m or less at Kh. el-Mafjar). Taken as (0, 0) for the mask.",
+ "full_resolution_mask_grid": {
+  "E": [
+   191725,
+   192625
+  ],
+  "N": [
+   142070,
+   142775
+  ],
+  "basis": "mask_grid E 191800-192550, N 142120-142700, offset (0,0), widened 75 m west, east and north and 50 m south"
+ },
+ "gate_reminder": "The resolvability gate (declaration) is measured on full-resolution views outside this mask before any decision to open the zone."
+}

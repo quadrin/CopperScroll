@@ -33,3 +33,13 @@ Four workers ran in parallel. Each worker owned one folder. The integrator owned
 - Pre-registration R3 (east of the Jordan): needs the owner's approval and a site inventory (MEGA-Jordan or EAMENA).
 - Access requests for MEGA-Jordan and EAMENA: drafts in [access_requests.md](../regional/peraea/access_requests.md). The owner decides whether to send them.
 - Needs a person with a browser: the HA-ESI map search and the portal PDFs listed in the haesi README; the printed ASI volumes for page numbers; the 1:20,000 sheet margins.
+
+## Follow-up, 10 October: the open RAF 1940s layer
+
+The owner approved opening the Palestine Open Maps RAF layer for the strip north of Tell es-Sultan under the registration protocol ([RAF 1940s](../regional/raf_1940s/README.md); records `registrations/POM-aerial1940s-z16-jericho.*`).
+- A resolvability gate was declared before the zone could be opened: a 1 m opening must span about 2 pixels (0.5 m effective resolution).
+- The layer stops at zoom 16 (2.03 m pixels). Its effective resolution outside the zone is 9.2 m. The gate failed, so the zone was never viewed. The strip stays unexposed in every RAF image.
+- The registration is invalid: only two of the declared controls can be identified at this resolution. SULTAN-1 is not tested.
+- The next record is the RAF scans at the Hebrew University aerial archive (PS30 5107/5137, PS32 5069–5070; sorties of March–April 1945, 1:15,000). At 600 dpi they give about 0.64 m per pixel, just above the gate, so a higher scan resolution should be asked for. Ordering needs the owner (fee).
+- The main source list now has a section for the datasets of this round ([sources.md](../sources/sources.md)).
+
