@@ -23,7 +23,7 @@ Exploratory work, 9 October 2026 UTC, by the peraea worker. No identification cl
 | `sources.csv` | Every report read: citation, URL, SHA-256 of the file read, text layer or OCR |
 | `doa_search_log.csv` | The 108 frozen DoA archive searches and their hit counts |
 | `PLAN_v3.md` | Frozen rule and runs for the model variant |
-| `PREREG_DRAFT_R3.md` | DRAFT pre-registration of a Koḥlit rarity count east of the Jordan (for the owner) |
+| `PREREG_DRAFT_R3.md` | Draft pre-registration of a Koḥlit rarity count east of the Jordan; approved 9 October 2026 as [kohlit_rarity_r3_2026-10-09.md](../../preregistration/kohlit_rarity_r3_2026-10-09.md) |
 | `access_requests.md` | How to request MEGA-Jordan and EAMENA access, with draft texts (nothing sent) |
 | `scripts/build_gazetteer.py` | Builds the three CSV files from the coded data (`--check` verifies) |
 | `scripts/run_v3.py` | Runs R0-R2 of PLAN_v3 and writes `W2B_model_v1/outputs_v3/` |
