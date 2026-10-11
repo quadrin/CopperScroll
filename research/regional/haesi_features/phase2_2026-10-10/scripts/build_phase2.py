@@ -212,10 +212,16 @@ def main(out_dir=LANE):
         for i, (_, hid) in enumerate(sorted(lst), 1):
             pos[hid] = i
     coded = {r["report_id"].split("-", 1)[1]: r["report_id"] for r in reps if r["_source"] == "online"}
+    zone_by_rid = {r["report_id"]: r["region_zone"] for r in reports}
     srows = []
     for hid, c in cands.items():
         st = ostatus.get(hid)
-        status = st["status"] if st else ("read" if hid in coded else "not read (time limit)")
+        if st:
+            status = st["status"]
+        elif hid in coded:
+            status = "read" if zone_by_rid[coded[hid]] in ZONES else "read: map ref outside region"
+        else:
+            status = "not read (time limit)"
         if hid in coded and not status.startswith("read"):
             raise AssertionError("coded report %s has status %s" % (hid, status))
         srows.append(dict(report_id=hid, volume=c["volume"], year=c["year"], title=c["title"], url=c["url"],
@@ -315,10 +321,21 @@ def summarize(features, reports, srows, xrows, outside_feats, lrows):
         md.append("| %s | %d | %d | %d |" % (z, sum(1 for r in rr if r["series"] != "HA-ESI"), sum(1 for r in rr if r["series"] == "HA-ESI"),
                                          sum(int(r["n_feature_rows"]) for r in rr)))
     md.append("\n## Online screen status by tier\n")
+    def cat(s):
+        if s == "read":
+            return "read, in region"
+        if s.startswith(("read: map ref outside", "opened: map ref outside")):
+            return "opened, outside region"
+        if s.startswith("held"):
+            return "held (cave report, held area)"
+        if s.startswith("dropped"):
+            return "dropped by title (A3)"
+        return "not read (time limit)"
     st = defaultdict(Counter)
     for r in srows:
-        st[r["tier"]][r["status"].split(":")[0]] += 1
-    statuses = sorted({s for c in st.values() for s in c})
+        st[r["tier"]][cat(r["status"])] += 1
+    statuses = ["read, in region", "opened, outside region", "held (cave report, held area)", "dropped by title (A3)",
+                "not read (time limit)"]
     md.append("| tier | candidates | " + " | ".join(statuses) + " |")
     md.append("|---|---|" + "---|" * len(statuses))
     for t in sorted(st):

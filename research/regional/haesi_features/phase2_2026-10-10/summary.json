@@ -20,14 +20,14 @@
   },
   "cave_with_finds|Z4_JERUSALEM_HILLS": {
    "no": 7,
-   "rows": 27,
-   "unknown": 17,
+   "rows": 30,
+   "unknown": 20,
    "yes": 3
   },
   "cave_with_finds|all": {
    "no": 12,
-   "rows": 52,
-   "unknown": 26,
+   "rows": 55,
+   "unknown": 29,
    "yes": 14
   },
   "channel_aqueduct|Z1_GERIZIM": {
@@ -49,16 +49,16 @@
    "yes": 5
   },
   "channel_aqueduct|Z4_JERUSALEM_HILLS": {
-   "no": 8,
-   "rows": 29,
-   "unknown": 15,
-   "yes": 6
+   "no": 11,
+   "rows": 39,
+   "unknown": 20,
+   "yes": 8
   },
   "channel_aqueduct|all": {
-   "no": 13,
-   "rows": 43,
-   "unknown": 18,
-   "yes": 12
+   "no": 16,
+   "rows": 53,
+   "unknown": 23,
+   "yes": 14
   },
   "cistern|Z1_GERIZIM": {
    "no": 0,
@@ -79,16 +79,16 @@
    "yes": 1
   },
   "cistern|Z4_JERUSALEM_HILLS": {
-   "no": 6,
-   "rows": 27,
-   "unknown": 17,
-   "yes": 4
+   "no": 7,
+   "rows": 31,
+   "unknown": 19,
+   "yes": 5
   },
   "cistern|all": {
-   "no": 18,
-   "rows": 45,
-   "unknown": 22,
-   "yes": 5
+   "no": 19,
+   "rows": 49,
+   "unknown": 24,
+   "yes": 6
   },
   "columbarium_dovecote|Z1_GERIZIM": {
    "no": 0,
@@ -110,14 +110,14 @@
   },
   "columbarium_dovecote|Z4_JERUSALEM_HILLS": {
    "no": 2,
-   "rows": 6,
-   "unknown": 2,
+   "rows": 7,
+   "unknown": 3,
    "yes": 2
   },
   "columbarium_dovecote|all": {
    "no": 2,
-   "rows": 7,
-   "unknown": 3,
+   "rows": 8,
+   "unknown": 4,
    "yes": 2
   },
   "dam|Z1_GERIZIM": {
@@ -139,14 +139,14 @@
    "yes": 0
   },
   "dam|Z4_JERUSALEM_HILLS": {
-   "no": 0,
-   "rows": 4,
+   "no": 1,
+   "rows": 5,
    "unknown": 4,
    "yes": 0
   },
   "dam|all": {
-   "no": 1,
-   "rows": 5,
+   "no": 2,
+   "rows": 6,
    "unknown": 4,
    "yes": 0
   },
@@ -169,14 +169,14 @@
    "yes": 1
   },
   "hoard_cache|Z4_JERUSALEM_HILLS": {
-   "no": 3,
-   "rows": 5,
+   "no": 4,
+   "rows": 6,
    "unknown": 1,
    "yes": 1
   },
   "hoard_cache|all": {
-   "no": 6,
-   "rows": 9,
+   "no": 7,
+   "rows": 10,
    "unknown": 1,
    "yes": 2
   },
@@ -200,15 +200,15 @@
   },
   "pool_reservoir|Z4_JERUSALEM_HILLS": {
    "no": 8,
-   "rows": 18,
-   "unknown": 9,
-   "yes": 1
+   "rows": 23,
+   "unknown": 13,
+   "yes": 2
   },
   "pool_reservoir|all": {
    "no": 16,
-   "rows": 34,
-   "unknown": 15,
-   "yes": 3
+   "rows": 39,
+   "unknown": 19,
+   "yes": 4
   },
   "ritual_bath|Z1_GERIZIM": {
    "no": 0,
@@ -230,14 +230,14 @@
   },
   "ritual_bath|Z4_JERUSALEM_HILLS": {
    "no": 1,
-   "rows": 8,
-   "unknown": 2,
+   "rows": 9,
+   "unknown": 3,
    "yes": 5
   },
   "ritual_bath|all": {
    "no": 1,
-   "rows": 12,
-   "unknown": 4,
+   "rows": 13,
+   "unknown": 5,
    "yes": 7
   },
   "rockcut_installation|Z1_GERIZIM": {
@@ -259,16 +259,16 @@
    "yes": 0
   },
   "rockcut_installation|Z4_JERUSALEM_HILLS": {
-   "no": 14,
-   "rows": 46,
-   "unknown": 29,
-   "yes": 3
+   "no": 16,
+   "rows": 55,
+   "unknown": 35,
+   "yes": 4
   },
   "rockcut_installation|all": {
-   "no": 16,
-   "rows": 56,
-   "unknown": 37,
-   "yes": 3
+   "no": 18,
+   "rows": 65,
+   "unknown": 43,
+   "yes": 4
   },
   "tomb_burial_cave|Z1_GERIZIM": {
    "no": 1,
@@ -289,32 +289,31 @@
    "yes": 2
   },
   "tomb_burial_cave|Z4_JERUSALEM_HILLS": {
-   "no": 20,
-   "rows": 61,
-   "unknown": 25,
-   "yes": 16
+   "no": 22,
+   "rows": 67,
+   "unknown": 28,
+   "yes": 17
   },
   "tomb_burial_cave|all": {
-   "no": 32,
-   "rows": 82,
-   "unknown": 31,
-   "yes": 19
+   "no": 34,
+   "rows": 88,
+   "unknown": 34,
+   "yes": 20
   }
  },
- "feature_rows": 345,
- "looks": 57,
+ "feature_rows": 386,
+ "looks": 58,
  "online_status": {
   "T1": {
-   "dropped": 2,
-   "held": 4,
-   "opened": 9,
-   "read": 33
+   "dropped by title (A3)": 2,
+   "held (cave report, held area)": 4,
+   "opened, outside region": 9,
+   "read, in region": 33
   },
   "T2": {
-   "dropped": 14,
-   "not read (time limit)": 21,
-   "opened": 3,
-   "read": 50
+   "dropped by title (A3)": 14,
+   "opened, outside region": 10,
+   "read, in region": 64
   },
   "T3": {
    "not read (time limit)": 662
@@ -335,21 +334,21 @@
   "reports|outside": 6,
   "reports|unlocated (name only in phase 1)": 37
  },
- "reports": 178,
+ "reports": 194,
  "reports_by_source": {
   "local": 95,
-  "online": 83
+  "online": 99
  },
- "reports_in_region": 176,
+ "reports_in_region": 192,
  "rows_by_zone": {
   "Z1_GERIZIM": 4,
   "Z2_JORDAN_VALLEY": 14,
   "Z3_JUDEAN_DESERT": 96,
-  "Z4_JERUSALEM_HILLS": 231
+  "Z4_JERUSALEM_HILLS": 272
  },
  "window": {
-  "no": 117,
-  "unknown": 161,
-  "yes": 67
+  "no": 127,
+  "unknown": 186,
+  "yes": 73
  }
 }
