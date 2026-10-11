@@ -1,0 +1,54 @@
+{
+  "note": "Plan measurements under the frozen aspect rule (A3-A4, A6), made only for rows that on the record have exactly two openings and a pillar or terrace stated or drawn (PLAN.md 4.3 triage). Pixel coordinates are image coordinates (y down). INFERENCE throughout. Endpoint radius r = max(0.10 m, 2 px); arrow endpoint e = 2 px (as the repository's IV/17 measurement); distortion d = 1 deg; north n = 6 deg (arrow of unstated kind, A2).",
+  "rows": {
+    "A41:XII/53": {
+      "source": "Atiqot 41 file 18 (Cohen and Israel), PDF page 4, Plan 3 (p. 209), rendered at 400 dpi (2815 x 4506 px), crop box (140, 360, 1463, 1802)",
+      "first_measured_utc": "2026-10-11T04:40:05Z",
+      "exposure": "unexposed-at-freeze",
+      "y_axis": "down",
+      "north_tail_px": [525, 330],
+      "north_tip_px": [505, 165],
+      "metres_per_px": 0.00851063829787234,
+      "scale_bar_px": [[880, 1172], [1115, 1172]],
+      "scale_bar_m": 2.0,
+      "north_case": "unspecified",
+      "mouths": {
+        "whole_opening": {
+          "role": "facade chord: north rock jamb to south rock jamb across the whole divided opening",
+          "p1_px": [700, 390], "p2_px": [1050, 880], "interior_px": [630, 810],
+          "interior_basis": "INFERENCE: a point inside the cave on the opening's west side"
+        },
+        "north_part": {"role": "northern part of the divided opening", "measurable": false,
+                       "reason": "its southern jamb is the built pillar W2 (masonry is excluded, A3), so no rock-cut chord exists"},
+        "south_part": {"role": "southern part of the divided opening (blocked by a boulder)", "measurable": false,
+                       "reason": "its northern jamb is the built pillar W2 (masonry excluded)"}
+      },
+      "northern_member": {"a_px": [812, 532], "b_px": [987, 777], "a_label": "northern part (midpoint between the north jamb and W2)",
+                          "b_label": "southern part (midpoint between W2 and the south jamb)"}
+    },
+    "A41:IV/17": {
+      "source": "repository frame states-iv17-plan5-crop (research/feature_workbench/states/register.json; Sion Plan 5 p. 63); exposed; exploratory",
+      "exposure": "exposed-repo",
+      "y_axis": "down",
+      "north_tail_px": [99, 147],
+      "north_tip_px": [169, 64],
+      "metres_per_px": 0.017857,
+      "north_case": "unspecified",
+      "mouths": {
+        "north_mouth": {"role": "northern mouth (surveyed present aperture chord, repository endpoints)", "p1_px": [548, 386], "p2_px": [502, 400],
+                        "interior_px": [511, 347], "interior_basis": "INFERENCE: a point inside the cave behind the northern mouth"},
+        "south_mouth": {"role": "southern mouth", "measurable": false,
+                        "reason": "one end of its chord is the built wall (2.4 m) that partly blocks it (masonry excluded, A3)"}
+      },
+      "northern_member_from_record": "decided (repository A6 on Plan 5 midpoints, c. 2.6 m)"
+    },
+    "A41:III/11": {
+      "source": "Atiqot 41 file 05 (Barshad and Shaked), Plan 2 (p. 39)",
+      "exposure": "unexposed-at-freeze",
+      "mouths": {
+        "opening_large_space": {"measurable": false, "reason": "no rock-cut jamb chord could be read for this opening on Plan 2 (A3); judged when coding at 04:13Z"},
+        "opening_L3_L4": {"measurable": false, "reason": "no rock-cut jamb chord could be read for this opening on Plan 2 (A3); judged when coding at 04:13Z"}
+      }
+    }
+  }
+}

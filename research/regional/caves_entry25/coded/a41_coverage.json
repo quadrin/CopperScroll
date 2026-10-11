@@ -1,0 +1,59 @@
+{
+  "source": "Atiqot 41 Part 1, Wexler, 'Preface' (file 02), Table 1 'The sites surveyed and excavated' (PDF p. 13), read from the page image; text pp. ix-x (PDF pp. 9-10)",
+  "first_read_utc": "2026-10-11T04:53:08Z",
+  "exposure": "unexposed-at-freeze",
+  "numbered_cave_sites_per_region": {
+    "I": 19,
+    "II": 68,
+    "III": 14,
+    "IV": 30,
+    "V": 69,
+    "VI": 28,
+    "VII": 31,
+    "VIII": 50,
+    "IX": 22,
+    "X": 61,
+    "XI": 22,
+    "XII": null,
+    "XIII": 17,
+    "XIV": 61,
+    "XV": null,
+    "total": 495
+  },
+  "without_remains_per_region": {
+    "I": 11,
+    "II": 39,
+    "III": 2,
+    "IV": 14,
+    "V": 47,
+    "VI": 15,
+    "VII": 25,
+    "VIII": 34,
+    "IX": 17,
+    "X": 53,
+    "XI": 9,
+    "XII": null,
+    "XIII": 6,
+    "XIV": 58,
+    "XV": null,
+    "total": 330
+  },
+  "table_notes": {
+    "XIV": "61 numbered, plus 3 unnumbered caves in the marl area",
+    "V_VII": "note 6: in some survey descriptions caves were numbered but not described; counted with the caves without remains",
+    "XII_XV": "note 7: no survey description for Regions XII and XV; only the excavations published in the volume are tabulated",
+    "II": "note 4: caves 20-31/II, 33-41/II and 52-60/II were not surveyed systematically"
+  },
+  "text_statements": [
+    "More than 495 cave-sites were surveyed; some natural spaces were not numbered separately and sometimes not examined (p. ix, paraphrase).",
+    "Subtracting 17 non-cave sites (plots, cisterns, buildings, a kiln, retaining walls, other) leaves more than 478 caves (p. ix, paraphrase).",
+    "The SPNI Cave Research Center (Malham) surveyed and mapped many caves in wide parts of the Judean Desert, published case by case in Niqrot Zurim (note 4, paraphrase).",
+    "Earlier surveys named: Aharoni (Ein Gedi), Bar-Adon emergency survey, Cross and Milik (Buqeia, Region IX southwards), Marcus, Hirschfeld (Herodium area and beyond), Goldfus and Golani (upper Wadi el-Mabuk), Patrich (Hyrcania valley; much unpublished), Sion (Kalia and Wadi el-Qelt) (pp. ix-x, paraphrase)."
+  ],
+  "index": {
+    "source": "Atiqot 41 Part 1, file 24 'Index' (site index: nickname, 1993 cave number, survey/excavation permit, number in this publication)",
+    "first_read_utc": "2026-10-11T04:49:15Z",
+    "exposure": "page-opened-before for printed pp. 257-260 (PLAN.md section 8); unexposed-at-freeze for the other index pages (pp. 254-256, 261-271)",
+    "coded_as": "a41_index_crosswalk.csv (scripts/intake/a41_index_*.py)"
+  }
+}
