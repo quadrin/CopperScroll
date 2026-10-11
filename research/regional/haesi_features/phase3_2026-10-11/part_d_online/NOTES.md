@@ -1,19 +1,21 @@
 # HA-ESI phase 3, part D: online tier T3 (Jerusalem), positions 81–662
 
-Work in progress; this file is updated with each batch commit.
+Complete: all 582 positions in scope (81–662) were read and coded on 2026-10-11.
 
 ## Scope and rules
 
 - Scope: online tier T3 (titles beginning "Jerusalem"), positions 81–662 of 662 in the frozen order of `../../phase2_2026-10-10/online_screen.csv` (ascending SHA-256 of the report id). Positions 1–80 were read in phase 2 and are not re-coded.
 - Rules: phase-2 frozen plan (`../../phase2_2026-10-10/PLAN.md`, SHA-256 `5b1a5c08…b3be`) with amendments A1–A4, under the phase-3 scope freeze (`../PLAN.md`, commit 4d8325e, SHA-256 `312c2733…5cf2`). Classes and in-window rule as plan §5–§6; A4 coding notes followed (hedged datings follow the named period; partial-overlap ranges unknown; modern-dated features coded no).
 - Exposure: every report coded here was first read in this session, after both freezes (`unexposed at freeze`).
-- Held cave areas and the Tell es-Sultan strip (plan §7) do not occur in T3 so far; no report was held.
+- Held cave areas and the Tell es-Sultan strip (plan §7) did not occur in T3; no report was held.
 
 ## Access route
 
 - hadashot.iaa.org.il in the owner's Chrome (Claude in Chrome), one tab created for this session, one report page at a time. No downloads; no linked files (for example the full text of an "Extended report") were opened.
 - Pacing: each load is followed by a script step that waits until at least 3 s after that page's navigation start (and until the page has finished loading) before anything else happens, so successive loads are at least 3 s apart; in practice the gap was much longer.
 - No Cloudflare or other check appeared. The extension disconnected once (before position 85); after reconnecting, the already-loaded page was read without reloading.
+- Tool use: for each report one `browser_batch` call sent three steps in order: `navigate` to the report URL, a `javascript_tool` step (wait for the 3 s minimum and page load, then hash the content element; no `fetch`, no requests, no loop over pages) and `get_page_text`. This is the same one-page-at-a-time route; it is recorded here because the hash and the wait ran as a page script.
+- HAESI-1217 was loaded twice by mistake (the second load more than 3 s after the first); only one reading was used. No other page was loaded more than once.
 
 ## Text read and hashes
 
@@ -58,11 +60,22 @@ Work in progress; this file is updated with each batch commit.
 - A well dug into the ground and lined with fieldstones is not in the plan §5 classes (HAESI-922 Site 13). A built cavern glimpsed through a pit (HAESI-1571) and built plastered installations of unstated function (HAESI-4340 L108, HAESI-1745 L105, HAESI-2306 L1152, HAESI-25411 L20, HAESI-26310 L625, HAESI-25986) are not coded.
 - Where a report's body says a dating is uncertain between periods, that prevails over a broader summary sentence (HAESI-988 winepresses: "Early Roman or Byzantine", unknown); where the body is silent, the summary's dating is used (HAESI-988 quarries and water installations: Byzantine).
 - Same features in two reports (not independent): the Abbasid drainage channel of HAESI-2306 continued in HAESI-25020; HAESI-16734 is probably the continuation of the HAESI-1875 quarry.
+- Positions 511–662. Alternative datings both inside the window are yes (HAESI-25638); alternatives across the window boundary are unknown (HAESI-5388, 25067, 1995, 1704, 26314), as HAESI-988.
+- A quarry the report relates, even hedged, to dated Early Roman or Second Temple quarries is yes (HAESI-25458, 25246, 8503 Area A), as HAESI-631. A feature the report itself dates by analogy is coded with that dating even when the report also calls it hard to date (HAESI-26590 cistern, "first-century CE" by similar nearby installations: yes). Context cited without a dating for the feature stays unknown (HAESI-10577, 26373, 1812 quarry); relation to quarries dated 2nd–6th c. CE is unknown (HAESI-10617, 24867).
+- Later re-quarrying with drill or explosive holes is a separate row coded no (HAESI-25043, 2102, 24867).
+- A feature built inside the window and used beyond it is yes (HAESI-861 quarry used into the 2nd c. CE; HAESI-1197 Cave A used to the 3rd–4th c.), as HAESI-26183. A phase dated only "no later than the Early Roman period" is a terminus ante quem: unknown (HAESI-1117 chamber L108).
+- Lower Aqueduct segments: where the body gives no other dating, the report's general statement that the aqueduct was built in the Second Temple period (probably Hasmonean) is applied to the original channel (HAESI-25648, 25422, 26434, 434), as HAESI-8547; where the body dates the exposed phase otherwise, the body prevails (HAESI-2158, Byzantine–Early Islamic: no). Later pipes are separate rows (no). An Upper Aqueduct section with no dating statement is unknown (HAESI-24834), as HAESI-25266.
+- Surveys that date their sites only collectively ("Second Temple, Byzantine and Ottoman"; "some of the sites") give unknown for each feature (HAESI-1022, 806, 1802).
+- Finds in situ on a tomb's blocking slabs are its use assemblage (HAESI-1812, Byzantine lamps: no), as HAESI-25316. A coin deposit in a floor bedding (HAESI-26542) and 20th-c. weapons stored in a cistern (HAESI-26590) are coded hoard_cache with their datings (no).
+- Map-ref misprints located by name (A4): HAESI-4358, 758, 638 and 689 (printed values resolve 5–16 km from the named place). HAESI-8486 and HAESI-25175 print the northing first; HAESI-25941, 1884, 1376 and 269 give no map reference.
+- "Extended report" pages that only summarise and link a full report (HAESI-25804, HAESI-26431) were coded from the page body; the linked files were not opened.
+- Same structure in several reports (not independent): the Arzei Ha-Bira quarry (HAESI-4358, HAESI-8503); the Lower Aqueduct at Umm Tuba (HAESI-25422, HAESI-26434); the Tyropoeon drainage channel (HAESI-1884 and other segments, for example HAESI-26183).
+- EVIDENCE recorded in the notes field only, not coded: HAESI-1072 relates most quarried block sizes to a cubit of c. 0.425 m (the report calls this inconclusive); HAESI-25347 has blue-painted incised Hebrew letters beside a loculus.
 
 ## Positions read
 
-See `screen.csv` (status per position) and `summary.md`.
+All positions 81–662 (582 reports) were read; see `screen.csv` (status per position) and `summary.md`.
 
 ## Not read
 
-Positions not yet reached are listed in `screen.csv` as `not read (time limit)`.
+No position in scope is unread. Not opened: the linked full reports of HAESI-25804 and HAESI-26431 (no downloads under the access rule).
