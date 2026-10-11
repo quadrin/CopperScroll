@@ -2,7 +2,7 @@
 
 Updated 10 October 2026 UTC / 10 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (11 October): **obtained**: the IAA journals read in full (101 downloaded volumes and the online Jerusalem tier; 1,260 more reports, [phase 3](regional/haesi_features/phase3_2026-10-11/README.md)) and the Jericho cemetery coded tomb by tomb ([tombs](regional/tombs/README.md)). No registered result changed; nothing bears on the three active questions.
+Last session (11 October): **obtained**: the IAA journals read in full ([phase 3](regional/haesi_features/phase3_2026-10-11/README.md)), deduplicated ([merged](regional/haesi_features/merged_2026-10-11/README.md): 1,465 report groups at 772 sites) and folded into the cave, columbarium, tomb and water lanes as exploratory views; the Jericho cemetery coded tomb by tomb. No registered result changed; nothing bears on the three active questions.
 
 ## Active questions and the observation that decides each
 
