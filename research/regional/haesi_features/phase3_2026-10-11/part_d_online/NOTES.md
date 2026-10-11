@@ -30,7 +30,10 @@ Work in progress; this file is updated with each batch commit.
 - Natural rock shelters with finds are coded cave_with_finds (HAESI-26591).
 - Plastered installations whose function the report does not state are not coded; installations the report calls water-related are coded pool_reservoir.
 - Where a survey or multi-area report gives different datings for features of one class, the class is split into rows by site or area (`site` field), so each row has one dating.
-- Stepped plastered installations are coded ritual_bath whatever the excavator's label (plan §5), with the label in the subtype (for example "probably not a miqveh", HAESI-26474; "stepped pool", HAESI-26253).
+- Stepped plastered installations are coded ritual_bath whatever the excavator's label (plan §5), with the label in the subtype (for example "probably not a miqveh", HAESI-26474; "stepped pool", HAESI-26253; "storage pool" of an irrigation system, HAESI-2094).
+- One rock-cut feature with successive uses dated differently is coded as one row per use, each with its own dating: HAESI-26501 (Iron Age burial cave, Second Temple miqveh, Byzantine–Mamluk shelter) and HAESI-26178 L501 (probable Second Temple miqveh, Roman–Byzantine cistern).
+- Grave goods that a report calls "a cache" inside a sealed burial niche (HAESI-24894) are not coded hoard_cache.
+- HAESI-2094 ('Ir Gannim) prints a northing c. 7 km south of the named streets; located by name (A4 handling). HAESI-1799 and HAESI-539 give no map reference and are located by name.
 - A function discussed only as one of several proposals in the literature is not imposed: the Hasmonean wall W4493 under Wilson's Arch (HAESI-25662) is not coded as a dam; the broad wall at the Tyropoeon outlet that the excavators themselves call "probably ... a dam" (HAESI-26253) is.
 - Natural pits without cutting or plaster (HAESI-20771, HAESI-2027) and a plastered pit for "liquids" with water not stated (HAESI-25770) are not coded.
 - A radiocarbon range straddling the window start (HAESI-25047 furnace, 205–90 BCE) and dates given as "2nd c. CE, at the latest under Hadrian" (HAESI-1219 cardo drains) are partial overlaps: unknown.
