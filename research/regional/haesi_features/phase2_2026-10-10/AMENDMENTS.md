@@ -25,6 +25,14 @@ Plan §7 holds cave reports in the Qumran cliffs and marl terrace, the Jericho e
 
 Both texts are now exposed to this lane and cannot serve as unseen evidence for the arrival items. Neither text gives a direction for the cave opening. After this, cave reports in the held areas were opened only to their first lines (title, author and map reference) and then held. The held passages are listed in `README.md` (Blocked and held).
 
+## A4. Coding notes from the T3 reading (no parameter change)
+
+- Hedged datings ("probably", "possibly", "tentatively") follow the period the report names: yes if it is inside the window, no if it is only outside it. The hedge is kept in `period_as_given`. Examples: HAESI-26645 winepress and stepped cavity (yes); HAESI-26484 columbaria and HAESI-26460 quarry (no).
+- A range such as "Hellenistic and Early Roman" stays unknown (plan §6, partial overlap), as already done for HAESI-550. HAESI-2071 (winepresses) was entered as yes in work-in-progress commit e8c535e and set to unknown before the final tables, for consistency with HAESI-550. No other row changed.
+- Features of an eligible class that the report dates to the modern era (20th-century cisterns; the 1940s–1950s genizah deposit in the disused miqveh, HAESI-969) are coded no, not left out.
+- Misprinted map references are handled in `location_note`: HAESI-436 (northing falls south of Hebron; located by name in Z4) and HAESI-686 (first NIG northing misprinted; the second reference is used).
+- Stop rule (plan §3.5): T3 reading stopped after position 80 of 662 so that the tables, tests and README could be finished in the session. Positions 81–662 are `not read (time limit)`.
+
 ## Access notes (not amendments)
 
 - Portal PDF test (plan §3.2): the HA 2–3 PDF (https://publications.iaa.org.il/cgi/viewcontent.cgi?article=1001&context=ha_hebrew_series) opened in Chrome's built-in viewer, but the page-text tool returned no text from the viewer. Nothing was downloaded. The route stopped as the brief requires, and `portal_pdfs_needed.csv` was written. HA 28–29 (Tier-1 record) is therefore unread.

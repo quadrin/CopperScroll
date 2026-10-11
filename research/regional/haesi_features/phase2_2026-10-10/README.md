@@ -2,15 +2,15 @@
 
 **What it is.** An exploratory count, from the IAA's own excavation reports (HA, ESI, HA-ESI), of every reported cistern, pool, channel, dam, stepped pool, cave, tomb, columbarium, rock-cut installation and hoard in a fixed region (Gerizim–Shechem, the Jordan Valley from Phasaelis to the Dead Sea, the Judean Desert, and Jerusalem with the hills to Bethlehem and Herodium), whatever its distance to a proposed scroll place. No identification claim; no outcome or test changes.
 
-**Main result.** __N_REPORTS__ reports read and coded (95 from ten local PDF volumes, __N_ONLINE__ online HA-ESI reports) give __N_ROWS__ feature rows in the region; __N_YES__ rows are dated by the report to the window (Hasmonean–135 CE), __N_NO__ only outside it, __N_UNK__ unknown. Tombs (__N_TOMB__), rock-cut installations (__N_ROCK__), caves (__N_CAVE__), channels (__N_CHAN__) and cisterns (__N_CIST__) dominate; most rows come from the Jerusalem hills (Z4, __N_Z4__) and the Judean Desert (Z3, __N_Z3__). The online title screen is complete (4,667 titles, 798 candidates); tiers T1 (desert, Jordan Valley, Gerizim) and T2 (Jerusalem hills outside the city) were read in full, T3 (titles beginning "Jerusalem,") only as a pseudo-random sample (__N_T3READ__ of 662).
+**Main result.** 274 reports read and coded (95 from ten local PDF volumes, 179 online HA-ESI reports; 272 in the region) give 526 feature rows in the region; 98 rows are dated by the report to the window (Hasmonean–135 CE), 167 only outside it, 261 unknown. Rock-cut installations (108), tombs (104), channels (76), cisterns (75) and caves (69) dominate; stepped pools coded as ritual baths are few (22) but mostly in the window (15). Most rows come from the Jerusalem hills (Z4, 412) and the Judean Desert (Z3, 96); Gerizim (Z1, 4) and the Jordan Valley (Z2, 14) are thin. The online title screen is complete (4,667 titles, 798 candidates); tiers T1 (desert, Jordan Valley, Gerizim) and T2 (Jerusalem hills outside the city) were handled in full, T3 (titles beginning "Jerusalem,") only as a pseudo-random sample (80 of 662, positions 1–80 in hash order; 140 rows, 25 in the window).
 
-**What stays unknown.** Every row is a row in the read corpus, not a count of features on the ground: several seasons can report one feature, and unread reports are silent, not empty. Not read: __N_T3UNREAD__ T3 Jerusalem reports, all portal-only volumes (HA 1–107, ESI 1–19 and HA-ESI 108–115 except the ten local copies; listed with exact PDF URLs in `portal_pdfs_needed.csv`), including the Tier-1 record HA 28–29, and the cave reports held for the arrival procedure. Region boxes are approximate (INFERENCE), so a few reports at the edges (Abu Ghosh west, ‘En Boqeq) fall just outside.
+**What stays unknown.** Every row is a row in the read corpus, not a count of features on the ground: several seasons can report one feature, and unread reports are silent, not empty. Not read: 582 T3 Jerusalem reports, 111 portal volumes listed in `portal_pdfs_needed.csv` (priority A 50, B 35, C 16, local copy 10; the ten local copies were read), including the Tier-1 record HA 28–29, and the cave reports held for the arrival procedure. All counts are lower bounds; Z4 is cut further by the T3 sample, so zone totals are not comparable as densities. Region boxes are approximate (INFERENCE), so a few reports at the edges (Abu Ghosh west, ‘En Boqeq) fall just outside.
 
 ## Freeze record
 
 - Plan: `PLAN.md`, committed alone as `d0f8c7c` ("Freeze HA-ESI phase 2 plan"), 2026-10-11T04:06:41Z (UTC).
 - PLAN.md SHA-256: `5b1a5c082b41333a472a1d676066a5d377a24de72bd03c837025baf45eb7b3be` (checked by `tests/test_phase2.py`).
-- Changes after the freeze are in `AMENDMENTS.md` (A1–A3, exploratory) with one deviation (D1: two held-area cave passages read before the hold was checked; both now marked exposed). The frozen plan is not edited.
+- Changes after the freeze are in `AMENDMENTS.md` (A1–A3 exploratory screen changes, A4 coding notes) with one deviation (D1: two held-area cave passages read before the hold was checked; both now marked exposed). The frozen plan is not edited.
 - Exposure: every report coded here was first read after the freeze (`exposure_at_freeze = unexposed at freeze`), except ESI 5 p. 110 (Wadi Nueima), which the repository had read before (`research/assessments/entry29_jericho_pools/`). Phase-1 reports are not re-coded (see `phase1_zone_crosswalk.csv`).
 - Tier-1 records (arrival register, step 5): the Kh. ‘Almit notice in ESI 5 p. 1 was read after the freeze, extraction only (`ESI05-001-kh-almit`, `tier1_record` note in `reports.csv`); no chain file or arrival item was opened. HA 28–29 (Tananir) was not read (portal PDF not readable in the browser; see Blocked).
 
@@ -19,7 +19,7 @@
 | Source | Route | Coverage | Not read |
 |---|---|---|---|
 | ESI 2, 3, 5, 6, 7–8 (whole volumes); ESI 9 and 15 (items not read in phase 1); HA 40, 45, 59–60 (screened) | Owner's Mac, `~/Downloads` (narrow filter), `pdftotext -raw` on the Mac; text kept outside the repository; SHA-256 of each PDF and text file in `data/local_sources.csv`, of each coded span in `data/local_spans.csv` | Every report heading screened by map reference or name; every in-region report read and coded (95 records) | Held cave sections (below); HA 45 printed pp. 20–25 missing from the copy |
-| HA-ESI online, volumes 116–137 (2004–2025) | Owner's Chrome, one tab, one page at a time, ≥3 s between loads, no downloads, no bot checks met | All 22 volume lists read and hashed (`data/online_lists.csv`, 4,667 titles in `data/online_titles.csv`); 798 candidates; T1 48 and T2 88 handled in full; T3 sample | T3 positions after the stop (`online_screen.csv`, status `not read (time limit)`) |
+| HA-ESI online, volumes 116–137 (2004–2025) | Owner's Chrome, one tab, one page at a time, ≥3 s between loads, no downloads, no bot checks met | All 22 volume lists read and hashed (`data/online_lists.csv`, 4,667 titles in `data/online_titles.csv`); 798 candidates; T1 48 and T2 88 handled in full; T3 positions 1–80 of 662 | T3 positions 81–662 (`online_screen.csv`, status `not read (time limit)`) |
 | IAA publications portal PDFs (HA, ESI, HA-ESI 1999–2003) | One PDF opened in Chrome as the plan's test; the viewer showed the cover but the page-text tool read no text | None | All portal-only volumes; listed with URLs, sizes and priority in `portal_pdfs_needed.csv` (111 rows: priority A 50, B 35, C 16, local copy 10) |
 
 Every online report's main text (title block, body, references and captions as shown) was hashed in the browser (SHA-256 of the whitespace-collapsed text) and the hash is in `reports.csv` (`text_sha256`). Local spans are hashed the same way over the listed lines of the `pdftotext -raw` file. Quotes are 12 words or fewer and were checked against the local spans (all found) or copied from the page text.
@@ -36,9 +36,23 @@ Every online report's main text (title block, body, references and captions as s
 
 Full tables: `summary.md` (generated). Headline (rows; yes / no / unknown):
 
-__RESULTS_TABLE__
+| class | rows | yes | no | unknown | Z1 | Z2 | Z3 | Z4 |
+|---|---|---|---|---|---|---|---|---|
+| cistern | 75 | 7 | 31 | 37 | 0 | 1 | 17 | 57 |
+| pool_reservoir | 42 | 5 | 16 | 21 | 1 | 2 | 13 | 26 |
+| channel_aqueduct | 76 | 18 | 25 | 33 | 1 | 2 | 11 | 62 |
+| dam | 8 | 0 | 2 | 6 | 0 | 1 | 0 | 7 |
+| ritual_bath | 22 | 15 | 1 | 6 | 0 | 2 | 2 | 18 |
+| cave_with_finds | 69 | 15 | 15 | 39 | 0 | 1 | 24 | 44 |
+| tomb_burial_cave | 104 | 22 | 43 | 39 | 2 | 3 | 16 | 83 |
+| columbarium_dovecote | 10 | 3 | 3 | 4 | 0 | 0 | 1 | 9 |
+| rockcut_installation | 108 | 11 | 22 | 75 | 0 | 1 | 9 | 98 |
+| hoard_cache | 12 | 2 | 9 | 1 | 0 | 1 | 3 | 8 |
+| all | 526 | 98 | 167 | 261 | 4 | 14 | 96 | 412 |
 
-Notable in-window rows (EVIDENCE, report's dating; no identification is implied): the Cave of the Pool in Nahal David with its plastered stepped pool and feeder groove (HAESI-198, -1173, -5384); refuge caves of the Bar Kokhba period in Nahal Hever (HAESI-25608) and Nahal ‘Arugot (HAESI-25101); a Second Temple tomb with a bronze-vessel hoard in the cliff at ‘En Gedi, entrance marked by a stone and an incised X (HAESI-1594); the ‘En Shulamit aqueduct (HAESI-1671); a deliberately buried, covered Early Roman cooking pot at Waladje (HAESI-2081); the Colonia (Moza) water systems, stepped pool and cistern of the late 1st–early 2nd century CE (HAESI-25953, -26581); and the Wadi Suweinit hiding complex with a stepped ritual bath (ESI02-107).
+Sixty of the 272 in-region reports had no feature of the eligible classes. The T3 sample (80 reports) gave 140 rows (25 yes, 40 no, 75 unknown), mostly rock-cut installations (43, chiefly quarries), cisterns (26) and channels (23).
+
+Notable in-window rows (EVIDENCE, report's dating; no identification is implied): the Cave of the Pool in Nahal David with its plastered stepped pool and feeder groove (HAESI-198, -1173, -5384); refuge caves of the Bar Kokhba period in Nahal Hever (HAESI-25608) and Nahal ‘Arugot (HAESI-25101); a Second Temple tomb with a bronze-vessel hoard in the cliff at ‘En Gedi, entrance marked by a stone and an incised X (HAESI-1594); the ‘En Shulamit aqueduct (HAESI-1671); a deliberately buried, covered Early Roman cooking pot at Waladje (HAESI-2081); the Colonia (Moza) water systems, stepped pool and cistern of the late 1st–early 2nd century CE (HAESI-25953, -26581); and the Wadi Suweinit hiding complex with a stepped ritual bath (ESI02-107). From the T3 sample: a plastered reservoir inside a Hasmonean gate-tower and a stepped pool inside the gate south of the Siloam Pool (HAESI-10572); miqva'ot dated by plan or finds at the Israel Museum (east-facing opening; HAESI-969), Beit Safafa (HAESI-670), Mar Elias (HAESI-8488), the Giv‘ati car park (HAESI-250), Har Homa with a columbarium of the 2nd c. BCE–1st c. CE (HAESI-26607) and Shu‘fat, where a pillared cistern of the settlement between the revolts was deliberately filled with stones (HAESI-25163); a tomb in Silwan with a rolling stone in situ (HAESI-463, Cave C); and the Lower Aqueduct in use from the Early Roman period at Mishkenot Sha’ananim (HAESI-26461). One modern deposit is coded hoard_cache, window no: worn holy books stored in the disused Israel Museum miqveh (HAESI-969).
 
 Phase-1 rows by zone (not re-coded; phase-1 classes): see `phase1_zone_crosswalk.csv` and `summary.md`.
 
@@ -76,4 +90,5 @@ Run: `python3 -I research/regional/haesi_features/phase2_2026-10-10/scripts/buil
 - Arrival register: add the seven held cave items above (four online, three local sections) as arrival items; record deviation D1 (ESI 3 pp. 61–62 ‘Ein Far‘a section and ESI 5 p. 58 Ketef Yeriho cave read before the hold was checked; no opening direction in either) against the IAA-archive cave-records item.
 - Tier-1 record Kh. ‘Almit: extraction from ESI 5 p. 1 is in `reports.csv` (`ESI05-001-kh-almit`) for the integrator's comparison.
 - Entry lanes may use `features.csv` as a denominator by class and zone; rows are reports' rows, not unique features (Cave of the Pool and Moza appear in several seasons).
+- A later session can continue T3 from position 81 in `online_screen.csv` with the same method (`not read (time limit)` rows, hash order); the tests check that reading resumes where it stopped.
 - `research/sources/drive_index.md`: the owner's Mac holds local copies of ESI 2, 3, 5, 6, 7–8, 9, 15 and HA 40, 45, 59–60 (hashes in `data/local_sources.csv`); consider adding them to the Drive index.

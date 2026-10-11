@@ -3,7 +3,7 @@
 Reports read and coded: 274 (local PDFs 95, online 179); in the region 272; outside the region or unlocated 2.
 Reports in the region with no eligible feature: 60.
 
-Feature rows in the region: 526 (dated in window: yes 99, no 167, unknown 260). Rows outside the region (feature map ref): 4.
+Feature rows in the region: 526 (dated in window: yes 98, no 167, unknown 261). Rows outside the region (feature map ref): 4.
 
 ## Feature rows by class and zone (yes / no / unknown)
 
@@ -17,7 +17,7 @@ Feature rows in the region: 526 (dated in window: yes 99, no 167, unknown 260). 
 | cave_with_finds | 0 | 1 (0/1/0) | 24 (11/4/9) | 44 (4/10/30) | 69 (15/15/39) |
 | tomb_burial_cave | 2 (1/1/0) | 3 (0/2/1) | 16 (2/9/5) | 83 (19/31/33) | 104 (22/43/39) |
 | columbarium_dovecote | 0 | 0 | 1 (0/0/1) | 9 (3/3/3) | 10 (3/3/4) |
-| rockcut_installation | 0 | 1 (0/1/0) | 9 (0/1/8) | 98 (12/20/66) | 108 (12/22/74) |
+| rockcut_installation | 0 | 1 (0/1/0) | 9 (0/1/8) | 98 (11/20/67) | 108 (11/22/75) |
 | hoard_cache | 0 | 1 (0/1/0) | 3 (1/2/0) | 8 (1/6/1) | 12 (2/9/1) |
 | all classes | 4 | 14 | 96 | 412 | 526 |
 
@@ -95,7 +95,6 @@ Feature rows in the region: 526 (dated in window: yes 99, no 167, unknown 260). 
 | HAESI-198 | Z3_JUDEAN_DESERT | ein_ghuweir (18.092) | cave_with_finds | Cave of the Pool: living surface with textiles, matting, coins of Agrippa I | mostly 1st c. BCE, some 1st-2nd c. CE; also PPNA, Chalcolithic, Iron Age, Late Roman |
 | HAESI-198 | Z3_JUDEAN_DESERT | ein_ghuweir (18.092) | channel_aqueduct | hewn groove conveying runoff from a funnelled surface to the pool | with the Second Temple-period miqveh |
 | HAESI-198 | Z3_JUDEAN_DESERT | ein_ghuweir (18.092) | ritual_bath | plastered pool with two-step staircase and landing (capacity 12 cu m); excavator: miqveh | Second Temple period (plaster of the 1st c. BCE-1st c. CE) |
-| HAESI-2071 | Z4_JERUSALEM_HILLS | tell_el_ful (1.597) | rockcut_installation | three rock-hewn winepresses (103 with three treading floors and ten cupmarks; 105 with filtration pit; 122) | use mainly Hellenistic and Early Roman (swept-in sherds) |
 | HAESI-2081 | Z4_JERUSALEM_HILLS | ramat_rahel (5.924) | hoard_cache | complete empty cooking pot deliberately placed in a stone layer beside a terrace wall, mouth covered with a sherd, four large stones above (purpose not stated) | Early Roman period (1st century CE) |
 | HAESI-23815 | Z4_JERUSALEM_HILLS | beth_horon (9.126) | channel_aqueduct | large slab-covered water channel built of two stone walls, unplastered (L121) | 1st century CE (Stratum IV) |
 | HAESI-23815 | Z4_JERUSALEM_HILLS | beth_horon (9.126) | rockcut_installation | olive crushing installation with peripheral channel set in a bedrock floor | 1st century CE (Stratum IV) |
