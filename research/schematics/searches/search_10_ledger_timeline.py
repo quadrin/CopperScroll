@@ -1,19 +1,21 @@
-"""Past searches 10: every search in the ledger on one time axis, 1952–2017.
+"""Past searches 10: every search in the ledger on one time axis.
 
 Sources (all read when the sheet is built):
-- research/history/salvage_records/searches.csv: the 27 ledger rows. Columns used: search_id,
-  where_name, who, when_start, when_end, when_text, purpose, result, kind, extent_depth, notes.
-- research/history/salvage_records/summary.json: the published counts by purpose, result and kind;
+- research/history/salvage_records/searches.csv: the ledger rows (33 on 10 October 2026). Columns used:
+  search_id, where_name, who, when_start, when_end, when_text, purpose, result, kind, extent_depth,
+  documentation, notes.
+- research/history/salvage_records/summary.json: the published counts by row, purpose, result and kind;
   the script stops if its own counts differ.
-- research/history/salvage_records/README.md, section "The search ledger": the four deposit searches
-  (S03, S14, S15, S17), the three scroll-motivated rows (S09, S10, S13) and the three negatives
-  (S03, S10, S17); the script checks these lists against the CSV.
+- research/history/salvage_records/README.md, section "The search ledger": the seven deposit searches
+  (S03, S14, S15, S17, S28, S29, S30), the four scroll-motivated rows (S09, S10, S13, S31) and the
+  three negatives (S03, S10, S17); the script checks these lists against the CSV.
 - research/history/salvage_records/summarize.py: the coded values of purpose, result and kind.
 Each row's own publications and pages are in its source_ids and documentation columns
 (for example S03: Wright, Biblica 42 (1961) p. 1; Allegro, Search in the Desert (1966) p. 93).
-The date notes on S04, S05 and S26 come from those rows' when_text and notes, which cite Allegro,
-Search in the Desert (1966) pp. 2-3, 37, 158, 164, Rasmussen et al., Heritage Science 10:18 (2022) p. 2,
-and the Times of Israel, 16 March 2021. The sheet adds no dating of its own.
+The row notes come from those rows' when_text, notes and documentation, which cite Allegro, Search in
+the Desert (1966) pp. 2-3, 37, 158, 164; Allegro, The Treasure of the Copper Scroll, 2nd ed. (1964)
+pp. 55, 65-69, 75, 105; Rasmussen et al., Heritage Science 10:18 (2022) p. 2; and the Times of Israel,
+16 March 2021. The sheet adds no dating of its own.
 """
 import csv
 import json
@@ -31,9 +33,10 @@ with open(LEDGER / "searches.csv", encoding="utf-8", newline="") as fh:
     ROWS = list(csv.DictReader(fh))
 SUMMARY = json.loads((LEDGER / "summary.json").read_text(encoding="utf-8"))
 BY_ID = {r["search_id"]: r for r in ROWS}
+N = len(ROWS)
 
 # ---------------------------------------------------------------- checks against the published counts
-assert len(ROWS) == SUMMARY["search_rows"] == 27
+assert N == SUMMARY["search_rows"] and len(BY_ID) == N
 assert dict(Counter(r["purpose"] for r in ROWS)) == SUMMARY["searches_by_purpose"]
 assert dict(Counter(r["result"] for r in ROWS)) == SUMMARY["searches_by_result"]
 assert dict(Counter(r["kind"] for r in ROWS)) == SUMMARY["searches_by_kind"]
@@ -43,9 +46,12 @@ def ids(cond):
     return sorted(r["search_id"] for r in ROWS if cond(r))
 
 
-assert ids(lambda r: r["purpose"] == "scroll_deposit_search") == ["S03", "S14", "S15", "S17"]   # README
-assert ids(lambda r: r["purpose"] == "scroll_motivated") == ["S09", "S10", "S13"]               # README
-assert ids(lambda r: r["result"] == "negative") == ["S03", "S10", "S17"]                         # README
+# the lists named in README.md, "The search ledger"
+assert ids(lambda r: r["purpose"] == "scroll_deposit_search") == ["S03", "S14", "S15", "S17", "S28", "S29", "S30"]
+assert ids(lambda r: r["purpose"] == "scroll_motivated") == ["S09", "S10", "S13", "S31"]
+assert ids(lambda r: r["purpose"] == "scroll_find_site") == ["S11"]
+assert ids(lambda r: r["purpose"] == "claim_only") == ["S16"]
+assert ids(lambda r: r["result"] == "negative") == ["S03", "S10", "S17"]
 
 # ---------------------------------------------------------------- coded values -> sheet labels
 SCROLL = ("scroll_deposit_search", "scroll_motivated", "scroll_find_site")       # blue
@@ -76,7 +82,9 @@ PLACE = {
     "S15": "Qumran area", "S16": "north of Qumran", "S17": "Kh. Qumran, near L138", "S18": "Kh. Qumran",
     "S19": "northern Judean Desert", "S20": "Jebel Abu Saraj cliffs", "S21": "Jebel Quruntul cliff",
     "S22": "Jebel Quruntul east cliff", "S23": "escarpment above Qumran", "S24": "Kidron to Nahal Deragot",
-    "S25": "Ketef Jericho", "S26": "Judean Desert", "S27": "Qumran cliffs",
+    "S25": "Ketef Jericho", "S26": "Judean Desert", "S27": "Qumran cliffs", "S28": "Kh. Qumran",
+    "S29": "Cypros, near Jericho", "S30": "Zechariah monument, Kidron", "S31": "Hyrcania, stepped tunnel",
+    "S32": "Hyrcania summit", "S33": "Mazin; Feshkha; Cave 11; Mird",
 }
 # Who, shortened from the who column. Every capitalised word must occur in who.
 WHO = {
@@ -86,15 +94,20 @@ WHO = {
     "S14": "Jones", "S15": "Jones", "S16": "Jones", "S17": "Peleg", "S18": "Magen, Peleg",
     "S19": "Israel Antiquities Authority", "S20": "Sion; Feig", "S21": "Aronshtam; Eisenberg",
     "S22": "Abeles", "S23": "Baruch, Mazor, Sandhaus", "S24": "Dahari", "S25": "Eshel, Zissu",
-    "S26": "IAA", "S27": "Gutfeld, Ovadia",
+    "S26": "IAA", "S27": "Gutfeld, Ovadia", "S28": "Allegro", "S29": "Allegro", "S30": "Allegro",
+    "S31": "Gutfeld", "S32": "Haber, Gutfeld", "S33": "Allegro, Dead Sea Scrolls Fund",
 }
-# Date notes, each backed by a phrase in the row.
-DATE_NOTE = {
+# Row notes: (text on the sheet, column, phrase that must stand in that column).
+ROW_NOTE = {
     "S04": ("year 1960 or 1961, kept open", "notes", "Date conflict, kept open"),
     "S05": ("end year inferred in the ledger", "when_text", "(inference"),
     "S26": ("continuing in 2021", "when_text", "continuing in 2021"),
+    "S28": ("reported only in his 1964 edition", "documentation", "not in his 1960 book or in Search in"),
+    "S29": ("dated only “our expedition” (1964 p. 75)", "when_text", "dated only 'our expedition' (1964 p. 75)"),
+    "S30": ("dated only “our expedition” (1964 p. 105)", "when_text", "dated only 'our expedition' (1964 p. 105)"),
+    "S33": ("year inferred in the ledger", "when_text", "(inference"),
 }
-assert set(PLACE) == set(WHO) == set(BY_ID)
+assert set(PLACE) == set(WHO) == set(BY_ID), sorted(set(BY_ID) ^ set(PLACE) | set(BY_ID) ^ set(WHO))
 for sid, short in PLACE.items():
     where = BY_ID[sid]["where_name"].lower()
     for w in re.findall(r"[A-Za-z][A-Za-z\-]{3,}", short):
@@ -102,9 +115,9 @@ for sid, short in PLACE.items():
 for sid, short in WHO.items():
     for w in re.findall(r"\b[A-Z][A-Za-z\-]+", short):
         assert w in BY_ID[sid]["who"], f"{sid}: '{w}' not in who"
-for sid, (_, col, phrase) in DATE_NOTE.items():
+for sid, (_, col, phrase) in ROW_NOTE.items():
     assert phrase in BY_ID[sid][col], f"{sid}: '{phrase}' not in {col}"
-assert ids(lambda r: "inference" in r["when_text"]) == ["S05"]
+assert ids(lambda r: "inference" in r["when_text"]) == ["S05", "S33"]
 
 
 # ---------------------------------------------------------------- dates
@@ -138,10 +151,18 @@ for r in ROWS:
     assert b > a, r["search_id"]
     r["_a"], r["_b"], r["_open"] = a, b, open_end
     r["_point"] = (b - a) <= 1.0 + 1e-9
+    r["_window"] = "dated only" in r["when_text"]      # undated work somewhere in [a, b]
 ROWS.sort(key=lambda r: (r["_a"], r["_b"], r["search_id"]))
 assert ids(lambda r: r["_open"]) == ["S04", "S26"]
-FIRST, LAST = int(ROWS[0]["when_start"][:4]), int(ROWS[-1]["when_start"][:4])
-assert (FIRST, LAST) == (1952, 2017)
+assert ids(lambda r: r["_window"]) == ["S29", "S30"]
+assert all(not r["_point"] and not r["_open"] for r in ROWS if r["_window"])
+WINDOW_IDS = ids(lambda r: r["_window"])
+WIN_A, WIN_B = (int(BY_ID[WINDOW_IDS[0]]["when_start"]), int(BY_ID[WINDOW_IDS[0]]["when_end"]))
+assert all((int(BY_ID[i]["when_start"]), int(BY_ID[i]["when_end"])) == (WIN_A, WIN_B) for i in WINDOW_IDS)
+FIRST = min(int(r["when_start"][:4]) for r in ROWS)
+LAST = max(int(r["when_start"][:4]) for r in ROWS)
+Y0, Y1 = 1950, 2025
+assert Y0 <= FIRST and max(r["_b"] for r in ROWS) <= Y1
 
 # ---------------------------------------------------------------- depth in extent_depth
 NULL = ("not given", "not reported", "not compiled")
@@ -151,19 +172,33 @@ def first_clause(s):
     return re.split(r"[;.]", s, maxsplit=1)[0].lower()
 
 
-ENTERED = ids(lambda r: r["extent_depth"] and not any(n in first_clause(r["extent_depth"]) for n in NULL))
+def has_entry(s):
+    return bool(s) and not s.lower().startswith("no depth") and not any(n in first_clause(s) for n in NULL)
+
+
 DEPTH_RE = re.compile(r"bedrock|virgin rock|\b\d+(?:\.\d+)?(?:-\d+(?:\.\d+)?)?\s?(?:m|cm|feet)\b"
                       r"(?!\s+(?:N|S|E|W|NE|NW|SE|SW)\b)")
-DEPTH = ids(lambda r: DEPTH_RE.search(r["extent_depth"]))
+
+
+def has_depth(s):
+    """A depth figure or bedrock. Clauses about a detector's reach or a height above sea level are
+    skipped, and a figure followed by a compass direction is a distance."""
+    return any(DEPTH_RE.search(cl) for cl in s.split(";") if "detector" not in cl and " asl" not in cl)
+
+
+ENTERED = ids(lambda r: has_entry(r["extent_depth"]))
+DEPTH = ids(lambda r: has_depth(r["extent_depth"]))
 assert ENTERED == ["S01", "S03", "S05", "S07", "S09", "S11", "S13", "S14", "S15", "S17", "S19", "S20",
-                   "S21", "S26"], ENTERED
-assert DEPTH == ["S07", "S11", "S13", "S14", "S17", "S20", "S21"], DEPTH
+                   "S21", "S26", "S29", "S31", "S32", "S33"], ENTERED
+assert DEPTH == ["S07", "S11", "S13", "S14", "S17", "S20", "S21", "S29", "S32"], DEPTH
 assert "Roman floor" in BY_ID["S05"]["extent_depth"] and "several metres deep" in BY_ID["S09"]["extent_depth"]
+assert "detector reach about 0.46 m" in BY_ID["S28"]["extent_depth"]
 
 # ---------------------------------------------------------------- counts for the side panel
 TAB = Counter((r["purpose"], r["result"]) for r in ROWS)
 blue_ids = ids(lambda r: r["purpose"] in SCROLL)
 dep_ids = ids(lambda r: r["purpose"] == "scroll_deposit_search")
+mot_ids = ids(lambda r: r["purpose"] == "scroll_motivated")
 neg_ids = ids(lambda r: r["result"] == "negative")
 claimed_ids = ids(lambda r: r["result"] == "claimed_find")
 claim_kind = ids(lambda r: r["kind"] == "CLAIM")
@@ -176,33 +211,39 @@ assert BY_ID["S17"]["documentation"].startswith("blog reports only")
 assert all(r["result"] == "other_finds" for r in survey_exc)
 blue_years = sorted(int(BY_ID[i]["when_start"][:4]) for i in blue_ids)
 claim_scroll = [i for i in claim_kind if i in blue_ids]
+dep_res = {res: TAB[("scroll_deposit_search", res)] for res in RESULTS}
 
 
 def words(ls):
     return ", ".join(ls[:-1]) + " and " + ls[-1] if len(ls) > 1 else ls[0]
 
 
+def pct(n):
+    return round(100 * n / N)
+
+
 # ---------------------------------------------------------------- page
 c = page("10", f"the search ledger on one time axis, {FIRST}–{LAST}",
-         "All 27 rows of the search ledger (salvage_records/searches.csv), one row per search. "
+         f"All {N} rows of the search ledger (salvage_records/searches.csv), one row per search. "
          "Year axis linear and to scale; not a map.")
 c.add('<defs><pattern id="ghatch" width="4" height="4" patternUnits="userSpaceOnUse" '
       'patternTransform="rotate(45)"><rect width="4" height="4" fill="#f3f1ed"/>'
       f'<line x1="0" y1="0" x2="0" y2="4" stroke="{GREY}" stroke-width="1"/></pattern></defs>')
 TOP, BOTTOM = 100, 810
-mx, my, mw, mh = S.panel(c, 40, TOP, 900, BOTTOM - TOP, "27 searches, sorted by start date", None)
+mx, my, mw, mh = S.panel(c, 40, TOP, 900, BOTTOM - TOP, f"{N} searches, sorted by start date", None)
 RIGHT = mx + mw - 6                       # right limit for labels
-X_ID, X_PLACE, X_PURP, X_KIND = mx + 6, mx + 34, mx + 190, mx + 290
-Y0, Y1 = 1950, 2025
-P0, P1 = mx + 340, mx + 850
+X_ID, X_PLACE, X_PURP, X_KIND = mx + 6, mx + 34, mx + 200, mx + 296
+P0, P1 = mx + 346, mx + 850
 PX = (P1 - P0) / (Y1 - Y0)
 X = lambda yr: P0 + (yr - Y0) * PX        # noqa: E731
-RH = 20
-MH = 10                                   # mark height
-KEY_Y = my + 4
-HEAD_Y = my + 64
-ROW0 = HEAD_Y + 18
-AXIS_Y = ROW0 + len(ROWS) * RH - RH / 2 + 8
+KEY_Y = my + 2
+HEAD_Y = my + 58
+ROW0 = HEAD_Y + 16
+NOTE_H = 30                               # axis labels and the note under the axis
+RH = min(20, int((BOTTOM - 8 - NOTE_H - 6 - ROW0) / (N - 0.5)))   # largest row height that fits
+assert RH >= 16, f"{N} rows need a taller panel (row height {RH})"
+MH = 9 if RH < 19 else 10                 # mark height
+AXIS_Y = ROW0 + N * RH - RH / 2 + 6
 INK = P["ink"]
 
 
@@ -210,8 +251,12 @@ def est_w(s, size):
     return len(s) * size * 0.56
 
 
-def mark(x0, x1, y, purpose):
-    if purpose in SCROLL:
+def mark(x0, x1, y, purpose, window=False):
+    blue = purpose in SCROLL
+    if window:
+        col = BLUE if blue else GREY
+        c.rect(x0, y - MH / 2, x1 - x0, MH, fill=col, fill_opacity=0.14, stroke=col, width=1.3, dash="4 3", rx=2)
+    elif blue:
         c.rect(x0, y - MH / 2, x1 - x0, MH, fill=BLUE, rx=2)
     else:
         c.rect(x0, y - MH / 2, x1 - x0, MH, fill="url(#ghatch)", stroke=GREY, width=1.1, rx=2)
@@ -229,7 +274,7 @@ def marker(x, y, result):
 
 
 def claim_tag(x, y):
-    c.rect(x, y - 7.5, 38, 15, fill=P["panel"], stroke=INK, width=1, rx=2)
+    c.rect(x, y - 6.5, 38, 13, fill=P["panel"], stroke=INK, width=1, rx=2)
     c.text(x + 19, y + 3.6, "CLAIM", 10, INK, 700, anchor="middle")
 
 
@@ -239,37 +284,44 @@ def tail(x, y):
 
 
 # ---------------- key (top of the main panel)
+KW = 0.5                                  # text width per font-size unit, for spacing the key
 ky = KEY_Y + 14
 kx = X_ID
 c.rect(kx, ky - 9, 24, MH, fill=BLUE, rx=2)
 c.text(kx + 30, ky, "scroll-related purpose", 11, INK)
-kx += 30 + est_w("scroll-related purpose", 11) + 20
+kx += 30 + len("scroll-related purpose") * 11 * KW + 16
 c.rect(kx, ky - 9, 24, MH, fill="url(#ghatch)", stroke=GREY, width=1.1, rx=2)
 c.text(kx + 30, ky, "other purpose", 11, INK)
-kx += 30 + est_w("other purpose", 11) + 24
+kx += 30 + len("other purpose") * 11 * KW + 16
 c.rect(kx, ky - 9, 24, MH, fill="none", stroke=INK, width=1.1, rx=2)
 c.text(kx + 30, ky, "first to last date", 11, INK)
-kx += 30 + est_w("first to last date", 11) + 20
+kx += 30 + len("first to last date") * 11 * KW + 16
 c.rect(kx, ky - 9, 7, MH, fill="none", stroke=INK, width=1.1, rx=2)
 c.text(kx + 13, ky, "one year or less", 11, INK)
-kx += 13 + est_w("one year or less", 11) + 20
+kx += 13 + len("one year or less") * 11 * KW + 16
 c.rect(kx, ky - 9, 7, MH, fill="none", stroke=INK, width=1.1, rx=2)
 tail(kx + 7, ky - 4)
-c.text(kx + 28, ky, "no end date (S04, S26)", 11, INK)
+lab = f"no end date ({', '.join(ids(lambda r: r['_open']))})"
+c.text(kx + 28, ky, lab, 11, INK)
+kx += 28 + len(lab) * 11 * KW + 16
+c.rect(kx, ky - 9, 24, MH, fill="none", stroke=INK, width=1.2, dash="4 3", rx=2)
+lab = f"date window ({', '.join(WINDOW_IDS)})"
+c.text(kx + 30, ky, lab, 11, INK)
+assert kx + 30 + est_w(lab, 11) <= RIGHT + 6
 
-ky += 22
+ky += 21
 kx = X_ID
 for res, lab in (("other_finds", "other finds"), ("negative", "negative"), ("claimed_find", "claimed find"),
                  ("unknown", "result unknown")):
     marker(kx + 5, ky - 4, res)
     c.text(kx + 15, ky, lab, 11, INK)
-    kx += 15 + est_w(lab, 11) + 18
+    kx += 15 + len(lab) * 11 * KW + 18
 claim_tag(kx, ky - 4)
 c.text(kx + 45, ky, "CLAIM-grade documentation; untagged rows are EVIDENCE", 11, INK)
 
 # ---------------- row bands, grid, column heads and axis
 BAND = "#f5f2ed"
-for i in range(0, len(ROWS), 2):
+for i in range(0, N, 2):
     c.rect(mx + 2, ROW0 + i * RH - RH / 2, mw - 4, RH, fill=BAND)
 for yr in range(Y0, Y1 + 1, 10):
     c.line(X(yr), HEAD_Y + 6, X(yr), AXIS_Y, "#e6e0d6", 1)
@@ -298,14 +350,14 @@ for i, r in enumerate(ROWS):
         x0, x1 = xm - 3.5, xm + 3.5
     else:
         x0, x1 = X(r["_a"]), X(r["_b"])
-    mark(x0, x1, y, r["purpose"])
+    mark(x0, x1, y, r["purpose"], r["_window"])
     xe = tail(x1 + 1, y) if r["_open"] else x1
     xmk = xe + 9
     marker(xmk, y, r["result"])
     parts = [(RESULT_WORD[r["result"]], INK, "600")] if RESULT_WORD[r["result"]] else []
     parts.append((WHO[sid], P["sub"], None))
-    if sid in DATE_NOTE:
-        parts.append((DATE_NOTE[sid][0], P["sub"], None))
+    if sid in ROW_NOTE:
+        parts.append((ROW_NOTE[sid][0], P["sub"], None))
     full = " · ".join(p[0] for p in parts)
     spans = []
     for k, (s, col, wt) in enumerate(parts):
@@ -318,36 +370,37 @@ for i, r in enumerate(ROWS):
     else:
         tx, anchor, bx = x0 - 7, "end", x0 - 9 - tw
         assert bx > P0, sid
-    c.rect(bx, y - 7, tw + 4, 14, fill=bg)          # keeps the grid out of the label
+    c.rect(bx, y - 6.5, tw + 4, 13, fill=bg)          # keeps the grid out of the label
     c.add(f'<text x="{tx:.1f}" y="{y + 4:.1f}" font-size="10.5" text-anchor="{anchor}" stroke="{bg}" '
           f'stroke-width="4" stroke-linejoin="round" paint-order="stroke">{"".join(spans)}</text>')
     c.add("</g>")
 
 c.text(P1 + 8, AXIS_Y + 15, "year", 10.5, P["sub"])
-c.text(X_ID, AXIS_Y + 36, "Colour marks the purpose coded in the ledger, not whether a place was dug. "
+c.text(X_ID, AXIS_Y + NOTE_H, "Colour marks the purpose coded in the ledger, not whether a place was dug. "
        "Bars ignore gaps between seasons.", 10.5, P["sub"])
+assert AXIS_Y + NOTE_H + 4 <= BOTTOM - 4
 
 # ---------------------------------------------------------------- side panel
 sx, sy, sw, sh = S.panel(c, 960, TOP, 400, BOTTOM - TOP, "Counts from the ledger",
                          "Computed from searches.csv; totals equal summary.json.")
 x0 = sx + 8
-y = sy + 14
+y = sy + 12
 c.text(x0, y, "Purpose groups", 12.5, INK, 700)
-y = c.wrap(x0, y + 18, f"Blue ({len(blue_ids)}): the README's four deposit searches and three "
-           "scroll-motivated rows, plus S11, the 1986 re-excavation of Cave 3Q, the scroll's find site. "
-           "Grey: all other rows, including S16 (claim_only: Jones's 1995 geophysical surveys, "
-           "looking for Gilgal).", 62, 11, fill=P["sub"]) + 8
+y = c.wrap(x0, y + 17, f"Blue ({len(blue_ids)}): the README's {len(dep_ids)} deposit searches and "
+           f"{len(mot_ids)} scroll-motivated rows, plus S11, the 1986 re-excavation of Cave 3Q, the scroll's "
+           "find site. Grey: all other rows, including S16 (claim_only: Jones's 1995 geophysical surveys, "
+           "looking for Gilgal).", 62, 11, fill=P["sub"]) + 6
 
 # cross-tab
 c.text(x0, y, "Purpose × result (rows)", 12.5, INK, 700)
-y += 20
+y += 19
 COLS = [x0 + 142 + k * 50 for k in range(5)]
 for cx_, res in zip(COLS, RESULTS):
     marker(cx_, y - 4, res)
 heads = ["negative", "claimed", "other", "unknown", "all"]
 for cx_, h in zip(COLS, heads):
     c.text(cx_, y + 13, h, 10, P["sub"], 600, anchor="middle")
-y += 30
+y += 29
 
 
 def tab_row(y, label, counts, total, bold=False, swatch=None):
@@ -356,7 +409,7 @@ def tab_row(y, label, counts, total, bold=False, swatch=None):
     c.text(x0 + (18 if swatch else 0), y, label, 11, INK, 700 if bold else None)
     for cx_, n in zip(COLS, list(counts) + [total]):
         c.text(cx_, y, str(n), 11, INK if n else P["sub"], 700 if (bold or n) else None, anchor="middle")
-    return y + 16
+    return y + 15.5
 
 
 for group, gname in ((SCROLL, "scroll-related"), (OTHER, "other")):
@@ -369,43 +422,46 @@ for group, gname in ((SCROLL, "scroll-related"), (OTHER, "other")):
 c.line(x0, y - 12, x0 + sw - 20, y - 12, P["border"], 1)
 tot = [SUMMARY["searches_by_result"][res] for res in RESULTS]
 assert tot == [sum(TAB[(p_, res)] for p_ in PURPOSE_LABEL) for res in RESULTS]
-y = tab_row(y + 2, "all rows", tot, len(ROWS), bold=True) + 8
+y = tab_row(y + 2, "all rows", tot, N, bold=True) + 6
 
 # depth
 c.text(x0, y, "Depth in extent_depth", 12.5, INK, 700)
-y = bullets(c, x0, y + 18, [
-    f"{len(ENTERED)} of {len(ROWS)} rows ({round(100 * len(ENTERED) / len(ROWS))}%) have an entry. Rule: "
-    "the field's first clause does not say “not given”, “not reported” or “not compiled”.",
-    f"{len(DEPTH)} of {len(ROWS)} ({round(100 * len(DEPTH) / len(ROWS))}%) give a depth in m, cm or feet, "
-    f"or say bedrock was reached: {words(DEPTH)}. S05 (stopped at the Roman floor) and S09 "
-    "(a deposit several metres deep) describe depth without a figure.",
-], 58, 11, 5) + 4
+y = bullets(c, x0, y + 17, [
+    f"{len(ENTERED)} of {N} rows ({pct(len(ENTERED))}%) have an entry: the field does not open with "
+    "“no depth”, and its first clause does not say “not given”, “not reported” or “not compiled”.",
+    f"{len(DEPTH)} of {N} ({pct(len(DEPTH))}%) give a depth in m, cm or feet, or say bedrock was reached: "
+    f"{words(DEPTH)}. Not counted: distances, heights above sea level, detector reach (S28), and depth "
+    "in words only (S05, S09).",
+], 58, 11, 4) + 2
 
 # observations
 c.text(x0, y, "What the counts say", 12.5, INK, 700)
-bullets(c, x0, y + 18, [
-    f"{len(blue_ids)} of {len(ROWS)} searches had a scroll-related purpose; {len(dep_ids)} were aimed at "
-    f"the scroll's deposits ({words(dep_ids)}).",
+y = bullets(c, x0, y + 17, [
+    f"{len(blue_ids)} of {N} searches had a scroll-related purpose; {len(dep_ids)} were aimed at the "
+    f"scroll's deposits: {dep_res['negative']} negative, {dep_res['claimed_find']} claimed find, "
+    f"{dep_res['other_finds']} other finds, {dep_res['unknown']} unknown.",
     f"{len(neg_ids)} came back negative ({words(neg_ids)}), all scroll-related. Only {neg_depth[0]} "
     "gives a depth (bedrock); its row is CLAIM-grade, from blog reports only.",
     f"Both claimed finds ({words(claimed_ids)}) are CLAIM-grade rows. Of the {len(claim_kind)} CLAIM rows, "
     f"{len(claim_scroll)} are scroll-related.",
     f"All {len(survey_exc)} manuscript surveys and place excavations report other finds.",
-], 58, 11, 5)
+], 58, 11, 4)
+assert y <= BOTTOM - 6, y
 
 # ---------------------------------------------------------------- footer
 S.footer(c, 830, [
-    ("Sources", "research/history/salvage_records: searches.csv (27 rows), README.md (search ledger section), "
-     "summary.json. Each row cites its own pages (source_ids, documentation). S04–S05 date notes: Allegro, "
-     "Search in the Desert (1966) pp. 2–3, 37, 158, 164; Rasmussen et al. 2022 p. 2."),
+    ("Sources", "research/history/salvage_records: searches.csv, README.md (search ledger section), "
+     "summary.json. Rows cite their own pages. Row notes: Allegro, Search in the Desert (1966) pp. 2–3, 37, "
+     "158, 164, and Treasure of the Copper Scroll, 2nd ed. (1964) pp. 65–69, 75, 105; Rasmussen et al. 2022 p. 2."),
     ("How it was drawn", "Partial dates cover their whole period (“1959” = all of 1959). Rows of one year or "
-     "less are blocks at the midpoint; longer rows run first to last date; an empty when_end gets a dashed tail."),
+     "less are blocks at the midpoint; longer rows run first to last date; an empty when_end gets a dashed "
+     f"tail. {words(WINDOW_IDS)}, dated only within {WIN_A}–{WIN_B}, are dashed windows, not durations."),
     ("What it shows", f"When each ledger search ran, for what purpose and with what result. The scroll-related "
-     f"searches run from {blue_years[0]} to {blue_years[-1]}; most rows are manuscript surveys and "
+     f"searches start between {blue_years[0]} and {blue_years[-1]}; most rows are manuscript surveys and "
      "excavations that report other finds."),
     ("What it does not show", "How much ground a search covered or whether it reached any target: no row "
      "gives a target volume (README). Date conflicts the README keeps open (S03, S04, S05, S13, S14) are "
      "not resolved. The ledger's entry_ids are not drawn here."),
 ])
 print(c.save(out_path("search_10_ledger_timeline")))
-print(f"rows {len(ROWS)}; blue {len(blue_ids)}; entered {len(ENTERED)}; depth {len(DEPTH)}")
+print(f"rows {N}; RH {RH}; blue {len(blue_ids)}; entered {len(ENTERED)}; depth {len(DEPTH)}; side y {y:.0f}")

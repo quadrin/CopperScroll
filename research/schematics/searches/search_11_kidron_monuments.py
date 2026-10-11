@@ -4,13 +4,15 @@ Sources:
 - text/translation_en.json X 12–14, XI 2–11 (entries 48, 51, 52, 54), I 5–6 (2); atlas/app/atlas-data.json
   (entries 2, 36, 48, 51–54; places jer_kidron_mon, jer_kidron_east, jer_se_corner); text/readings.json
   (e48-absalom, e51-zadok-tomb, e52-zadok-court, e54-jericho-or-pure); tables/phase5_assessments.csv (JER 48, 51, 52);
-  tables/entry_concordance.csv (header only: no Allegro column).
+  tables/entry_concordance.csv (item_allegro, allegro_match: Allegro 1960 items matched by line, not checked
+  against his text).
 - research/history/allegro1964_treasure_2nd_ed_extracted.md §1.6, §2.4, §3, §4 (Allegro 1964 pp. 103–112, 161, Figs. 12, 15,
   Pls. 30–32): the excavation at the base of the Zechariah monument and in the unfinished tomb south of it.
 - research/history/allegro1960_treasure_extracted.md §1 items 48–55, §3 (Allegro 1960 pp. 93–103, nn. 248–280).
 - research/history/allegro1966_search_in_the_desert_extracted.md §3, §7, §8 (no Jerusalem Kidron monument; its Kidron
   work is the lower gorge, Wadi en-Nar).
-- research/history/salvage_records/searches.csv S03 (looked_at, notes) and README.md ("Candidate rows, not added").
+- research/history/salvage_records/searches.csv S30 (the Zechariah dig, own row since 10 Oct 2026) and S03
+  (looked_at points to S28-S30); README.md ("The search ledger", "Rows added on 10 October 2026").
 - research/regional/asi_jerusalem/README.md and sites.csv (ASI Map 102, sites 410 and 411).
 - research/logs/findings_log.md F5.6 and the 10 Oct 2026 entry; research/phases/phase5_summary.md.
 """
@@ -86,18 +88,47 @@ assert r48["Puech 2006"]["ref"] == "p. 199" and "Kidron below Siloam" in r48["Pu
 assert "SW necropolis" in r48["Milik 1962"]["meaning"] and "Kidron" in r48["Høgenhaven 2020"]["meaning"]
 
 with open(REPO / "tables" / "entry_concordance.csv", encoding="utf-8-sig", newline="") as fh:
-    conc_header = next(csv.reader(fh))
-assert not any("allegro" in h.lower() for h in conc_header), "concordance now has an Allegro column: redraw the panel"
+    conc = {r["entry_puech"].split(":")[0]: r for r in csv.DictReader(fh)}
+TABLE_ENTRIES = ["47", "48", "51", "52", "53", "54"]
+ALLEGRO = {e: conc[e]["item_allegro"] for e in TABLE_ENTRIES}
+# the same pairs this sheet drew before the concordance had an Allegro column (from the 1960 extraction's lines)
+assert ALLEGRO == {"47": "48", "48": "49", "51": "52", "52": "53", "53": "54", "54": "55"}, ALLEGRO
+assert conc["2"]["item_allegro"] == "2" and conc["36"]["item_allegro"] == "37"
+for e in TABLE_ENTRIES:
+    m = conc[e]["allegro_match"]
+    assert m.startswith(f"same lines as Allegro 1960 item {ALLEGRO[e]} (") and \
+        m.endswith("matched by line, not checked against his text"), m
+
+
+def roman_lines(col_line):
+    """'X:8–X:11' -> 'X 8–11'; 'XI:8' -> 'XI 8'."""
+    a, _, b = col_line.partition("–")
+    ca, la = a.split(":")
+    if not b:
+        return f"{ca} {la}"
+    cb, lb = b.split(":")
+    return f"{ca} {la}–{lb}" if ca == cb else f"{ca} {la}–{cb} {lb}"
+
+
+LINES = {e: roman_lines(conc[e]["col_line"]) for e in TABLE_ENTRIES}
+assert LINES == {"47": "X 8–11", "48": "X 12–14", "51": "XI 2–4", "52": "XI 5–7", "53": "XI 8", "54": "XI 9–11"}
 
 with open(HIST / "salvage_records" / "searches.csv", encoding="utf-8", newline="") as fh:
     ledger = list(csv.DictReader(fh))
 s03 = next(r for r in ledger if r["search_id"] == "S03")
-assert "base of the Zechariah monument" in s03["looked_at"] and "item 52" in s03["looked_at"]
-assert "not checked" in s03["notes"]
-assert not [r["search_id"] for r in ledger if r["search_id"] != "S03"
-            and re.search(r"Zechariah|Absalom|Zadok|Hezir", " ".join(r.values()))]
+assert "rows S28-S30" in s03["looked_at"] and "base of the Zechariah monument" in s03["looked_at"]
+s30 = next(r for r in ledger if r["search_id"] == "S30")
+assert (s30["place_id"], s30["place_match"], s30["purpose"], s30["result"], s30["kind"]) == \
+    ("jer_kidron_mon", "exact", "scroll_deposit_search", "other_finds", "EVIDENCE")
+assert (s30["when_start"], s30["when_end"]) == ("1959", "1963") and "our expedition" in s30["when_text"]
+assert "Zechariah" in s30["looked_at"] and "item 52" in s30["looked_at"]
+assert s30["extent_depth"] == "no depth, footprint or plan given"
+assert "entry 48 names" in s30["coverage_notes"] and "not checked" in s30["notes"]
+assert sorted(r["search_id"] for r in ledger
+              if re.search(r"Zechariah|Absalom|Zadok|Hezir", " ".join(r.values()))) == ["S03", "S30"]
 readme = (HIST / "salvage_records" / "README.md").read_text(encoding="utf-8")
-assert "Candidate rows, not added" in readme and "base of the Zechariah monument" in readme
+assert "S30, the excavation at the base of the Zechariah monument" in readme
+assert "Rows added on 10 October 2026, with the owner's approval" in readme
 
 a64 = (HIST / "allegro1964_treasure_2nd_ed_extracted.md").read_text(encoding="utf-8")
 for s in ("around the base", "clear the ground in front of the huge monolith", "Excavating the “Zadok” tomb.",
@@ -126,11 +157,11 @@ c = page("11", "the Kidron monuments in Jerusalem: scroll entries and what was d
 TOP, BOTTOM = 100, 810
 MX, MW = 40, 760
 mx, my, mw, mh = S.panel(c, MX, TOP, MW, BOTTOM - TOP, "The Kidron below the Temple Mount (schematic)",
-                         ["Blue = dug (Allegro's expedition, undated). Ochre dashed = recorded or planned only. "
+                         ["Blue = dug (Allegro's expedition, ledger S30). Ochre dashed = recorded or planned only. "
                           "Grey = no dig recorded.",
                           "Red = the scroll's wording (project translation) and who proposed the tie. "
                           "Every tie is a candidate.",
-                          "Allegro's item numbers are matched to the project's entries by line numbers only "
+                          "Allegro's item numbers: the concordance, matched by line, not checked against his text "
                           "(table at right)."])
 
 VX = 195                       # valley line
@@ -159,7 +190,7 @@ BLOCKS = [
     ]),
     ("ze", BLUE, [
         ("Zechariah's monument: Allegro's expedition dug “around the base” and cleared “the ground in "
-         "front of the huge monolith” (1964 pp. 105, 108).", BLUE, 700),
+         "front of the huge monolith” (1964 pp. 105, 108; ledger S30).", BLUE, 700),
         ("Found: a courtyard, a chamber once cut into the pedestal (cf. Fig. 15), a roughly hewn conduit. "
          "No depth, extent or plan recorded. ASI 102/411.", BLUE, None),
         (f"Entry 52 (XI 5–7): “{QUOTES['52']}”.", RED, 700),
@@ -167,7 +198,7 @@ BLOCKS = [
          "Project: the east slope, low; the garden is not located.", RED, None),
     ]),
     ("ut", BLUE, [
-        ("Unfinished tomb S of Zechariah, Allegro's “Tomb of Zadok”: excavated (Pl. 32).", BLUE, 700),
+        ("Unfinished tomb S of Zechariah, Allegro's “Tomb of Zadok”: excavated (Pl. 32; S30).", BLUE, 700),
         ("Pillars only rough-hewn; a skeleton in the entrance; a small niche ends “very nearly under the "
          "pillar” (pp. 105–112). No depth, size, date or team.", BLUE, None),
         (f"Entry 51 (XI 2–4): “{QUOTES['51']}”.", RED, 700),
@@ -284,7 +315,7 @@ assert y_s + 2 * LH < my + mh, "main panel overflows"
 # ---------------- side panel
 SX = MX + MW + 20
 sx, sy, sw, sh = S.panel(c, SX, TOP, 1360 - SX, BOTTOM - TOP, "Allegro's numbers, the sources, the gaps",
-                         ["What each source reports, and what none reports."], "One dig recorded, no depth", "warn")
+                         ["What each source reports, and what none reports."], "One dig recorded (S30), no depth", "warn")
 x0 = sx + 10
 y = sy + 16
 c.text(x0, y, "Allegro's items and the project's entries", 12, P["ink"], 700)
@@ -294,23 +325,26 @@ for xx, h in zip(cols, ("Allegro", "lines", "entry", "Allegro's place for it (19
     c.text(xx, y, h, 10.5, P["ink"], 600)
 c.line(x0, y + 5, sx + sw - 10, y + 5, P["border"], 1)
 y += 19
-for it, ln, en, place in (
-        ("48", "X 8–11", "47", "the Gethsemane press, perhaps on the cliff above the St. James tomb "
-                               "(1960 pp. 99–100); dropped in 1964"),
-        ("49", "X 12–14", "48", "Absalom's monument; a cistern on its W side (1960 pp. 102–103); "
-                                "dropped in 1964, the cistern still on Fig. 15"),
-        ("52", "XI 2–4", "51", "tomb of Zadok: 1960 the Bene Ḥezir tomb or the façade S of it (p. 94); "
-                               "1964 the unfinished tomb S of Zechariah (p. 105)"),
-        ("53", "XI 5–7", "52", "garden of Zadok: 1960 perhaps Gethsemane (p. 100); 1964 the courtyard "
-                               "before Zechariah (p. 108)"),
-        ("54", "XI 8", "53", "not located (1960 nn. 277–278)"),
-        ("55", "XI 9–11", "54", "the common graves on the E bank of the Kidron (1960 p. 93)")):
+PLACES = {
+    "47": "the Gethsemane press, perhaps on the cliff above the St. James tomb "
+          "(1960 pp. 99–100); dropped in 1964",
+    "48": "Absalom's monument; a cistern on its W side (1960 pp. 102–103); "
+          "dropped in 1964, the cistern still on Fig. 15",
+    "51": "tomb of Zadok: 1960 the Bene Ḥezir tomb or the façade S of it (p. 94); "
+          "1964 the unfinished tomb S of Zechariah (p. 105)",
+    "52": "garden of Zadok: 1960 perhaps Gethsemane (p. 100); 1964 the courtyard "
+          "before Zechariah (p. 108)",
+    "53": "not located (1960 nn. 277–278)",
+    "54": "the common graves on the E bank of the Kidron (1960 p. 93)",
+}
+for en in TABLE_ENTRIES:
+    it, ln, place = ALLEGRO[en], LINES[en], PLACES[en]
     c.text(cols[0], y, it, 10.5, P["ink"], 600)
     c.text(cols[1], y, ln, 10.5, P["sub"])
     c.text(cols[2], y, en, 10.5, RED, 600)
     y = c.wrap(cols[3], y, place, 70, 10.5, lh=13.6, fill=P["sub"]) + 4
-y = c.wrap(x0, y + 2, "Matched here by Allegro's line numbers only (our comparison). The repo's concordance has "
-           "no Allegro column, and ledger S03 says the mapping is not checked.", 92, 10.5,
+y = c.wrap(x0, y + 2, "Items and lines from tables/entry_concordance.csv (item_allegro): “matched by line, not "
+           "checked against his text”. Places from the Allegro extractions.", 92, 10.5,
            fill=P["muted"], italic=True) + 8
 
 c.text(x0, y, "What each source reports", 12, P["ink"], 700)
@@ -323,8 +357,8 @@ y = bullets(c, x0, y + 18, [
     "Search in the Desert (1966): no Jerusalem Kidron monument and no tomb of Zadok. Its Kidron work is the "
     "lower gorge, Wadi en-Nar and Christmas Cave (ledger S05), not this place. The 1964 book's “first "
     "campaign in the Kidron Valley” (p. 161) refers to that book.",
-    "Ledger: the Zechariah dig is recorded inside S03 (looked_at; the 1959–60 expedition), not as its own "
-    "row. A separate row awaits the owner's approval (README, candidate rows).",
+    "Ledger row S30 (own row since 10 Oct 2026): place jer_kidron_mon, a scroll-deposit search, result "
+    "“other finds”, window 1959–1963; “no depth, footprint or plan given”.",
     "ASI Map 102 (Kloner's survey): records 102/410 and 102/411 for the monuments. The repo holds no "
     "excavation account for them.",
 ], 90, 10.5, gap=4)
@@ -332,7 +366,7 @@ c.text(x0, y + 4, "What no source in the repo reports", 12, P["ink"], 700)
 y = bullets(c, x0, y + 22, [
     "Any dig on the west side of Absalom's monument, at twelve cubits or at any depth.",
     "Any dig at the Bene Ḥezir tomb or the Cave of Jehoshaphat.",
-    "The depth, extent, plan or date of the Zechariah and unfinished-tomb dig.",
+    "The depth, extent, plan or exact date of the Zechariah and unfinished-tomb dig.",
     "Whether Allegro entered or measured the cistern west of Absalom's monument.",
     "Any deposit or treasure found at any of the monuments.",
 ], 90, 10.5, gap=2)
@@ -343,15 +377,15 @@ SIDE_LAST_Y = y
 
 # ---------------- footer
 S.footer(c, 830, [
-    ("Sources", "Allegro, Treasure of the Copper Scroll (1960) pp. 93–103, nn. 248–280; 2nd ed. (1964) pp. 103–112, "
-     "161, Figs. 12, 15, Pls. 30–32; Search in the Desert (1966); ASI Map 102 sites 410–411; project translation, atlas, "
-     "readings.json, phase5_assessments.csv; ledger S03 and README."),
+    ("Sources", "Allegro, Treasure of the Copper Scroll (1960) pp. 93–103; 2nd ed. (1964) pp. 103–112, 161, Figs. 12, "
+     "15, Pls. 30–32; Search in the Desert (1966); ASI Map 102 sites 410–411; project translation, atlas, readings, "
+     "entry concordance, phase-5 table; ledger S30, S03, README."),
     ("How it was drawn", "Schematic, after Allegro 1964 p. 105 (order of the tombs; the unfinished tomb S of "
      "Zechariah) and ASI Map 102 (102/410 lies N of 102/411; the cave lies behind Absalom's monument, drawn E by "
      "inference). East bank after Milik (phase 5). Nothing traced; sizes and spacing unknown."),
     ("What it shows", "One recorded dig at the monuments: Allegro's, round the base of the Zechariah monument and in "
-     "the unfinished tomb south of it, his “Tomb of Zadok” (item 52; entry 51 by lines). It has no depth or plan. The west side of "
-     "Absalom's monument, entry 48's spot, has no recorded dig."),
+     "the unfinished tomb south of it, his “Tomb of Zadok” (ledger S30; his item 52, entry 51 by line, not checked). "
+     "It has no depth or plan. The west side of Absalom's monument, entry 48's spot, has no recorded dig."),
     ("What it does not show", "That any entry belongs to any monument: every tie is a candidate. True positions, "
      "or digging by others that the repo does not record."),
 ])

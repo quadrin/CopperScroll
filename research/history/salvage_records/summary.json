@@ -65,10 +65,10 @@
    }
   }
  },
- "search_rows": 27,
+ "search_rows": 33,
  "searches_by_kind": {
   "CLAIM": 5,
-  "EVIDENCE": 22
+  "EVIDENCE": 28
  },
  "searches_by_place_id": {
   "(none)": [
@@ -80,7 +80,9 @@
    "S19",
    "S24",
    "S25",
-   "S26"
+   "S26",
+   "S29",
+   "S33"
   ],
   "ain_duk": [
    "S20",
@@ -92,6 +94,13 @@
   "gerizim": [
    "S07",
    "S08"
+  ],
+  "hyrcania": [
+   "S31",
+   "S32"
+  ],
+  "jer_kidron_mon": [
+   "S30"
   ],
   "kh_qumran": [
    "S01",
@@ -106,22 +115,23 @@
    "S17",
    "S18",
    "S23",
-   "S27"
+   "S27",
+   "S28"
   ]
  },
  "searches_by_purpose": {
   "claim_only": 1,
-  "excavation_of_named_place": 5,
-  "manuscript_survey": 12,
-  "scroll_deposit_search": 4,
+  "excavation_of_named_place": 6,
+  "manuscript_survey": 13,
+  "scroll_deposit_search": 7,
   "scroll_find_site": 1,
-  "scroll_motivated": 3,
+  "scroll_motivated": 4,
   "unknown": 1
  },
  "searches_by_result": {
   "claimed_find": 2,
   "negative": 3,
-  "other_finds": 19,
-  "unknown": 3
+  "other_finds": 23,
+  "unknown": 5
  }
 }

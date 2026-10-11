@@ -3,7 +3,8 @@
 Sources (all read when the sheet is built):
 - atlas/app/atlas-data.json: 39 places (lat/lon, region, precision) and 61 entries with their
   candidate lists (placeId, status, confidence).
-- research/history/salvage_records/searches.csv (27 ledger rows S01-S27) and README.md (coded values;
+- research/history/salvage_records/searches.csv (ledger rows S01-Snn; 33 rows on 10 Oct 2026),
+  summary.json (row count and rows by place_id, checked against the ledger) and README.md (coded values;
   "joins should keep near rows separate"; negative rows S03, S10, S17).
 - research/models/search_effectiveness/looks.csv (46 looks; looks_v2.csv differs only at non-atlas
   places), results.json (phantom_coverage, plan.phantom_pd_threshold) and README.md section 5
@@ -48,14 +49,22 @@ SR = REPO / "research" / "history" / "salvage_records"
 with open(SR / "searches.csv", encoding="utf-8", newline="") as fh:
     ledger = sorted(csv.DictReader(fh), key=lambda r: r["search_id"])
 L = {r["search_id"]: r for r in ledger}
-assert len(ledger) == 27 and sorted(L) == [f"S{i:02d}" for i in range(1, 28)]
+N_ROWS = len(ledger)
+summary = json.loads((SR / "summary.json").read_text(encoding="utf-8"))
+assert N_ROWS == summary["search_rows"], "searches.csv and summary.json disagree: rerun summarize.py"
+assert sorted(L) == [f"S{i:02d}" for i in range(1, N_ROWS + 1)], "search ids should run S01..Snn"
+by_pid = {}
+for r in ledger:
+    by_pid.setdefault(r["place_id"] or "(none)", []).append(r["search_id"])
+assert by_pid == summary["searches_by_place_id"], "place_id join differs from summary.json"
 for r in ledger:
     assert r["purpose"] in PURPOSES, r["purpose"]
     assert r["place_match"] in ("exact", "near", "none")
     assert (r["place_match"] == "none") == (r["place_id"] == ""), r["search_id"]
     assert r["place_id"] == "" or r["place_id"] in places, r["place_id"]
 NEGATIVE = sorted(r["search_id"] for r in ledger if r["result"] == "negative")
-assert NEGATIVE == ["S03", "S10", "S17"]
+# the footer repeats the salvage README's footprint remark, which covers exactly these rows
+assert NEGATIVE == ["S03", "S10", "S17"], NEGATIVE
 
 # WGS84 points that the repo itself gives for a ledger row (checked against the row's own text)
 pts = {}
@@ -89,8 +98,7 @@ for r in ledger:
         drawn_at[sid] = (p["lat"], p["lon"], "place")
     else:
         unmapped.append(sid)
-assert unmapped == ["S03", "S04", "S16", "S19", "S24", "S26"], unmapped
-assert len(drawn_at) == 21 and all(not L[s]["place_id"] for s in unmapped)
+assert len(drawn_at) + len(unmapped) == N_ROWS and all(not L[s]["place_id"] for s in unmapped)
 
 with_search = {}
 for r in ledger:
@@ -99,9 +107,6 @@ for r in ledger:
 EXACT = sorted(pid for pid, ss in with_search.items() if any(L[s]["place_match"] == "exact" for s in ss))
 NEAR_ONLY = sorted(pid for pid in with_search if pid not in EXACT)
 SCROLL_PL = sorted(pid for pid, ss in with_search.items() if any(L[s]["purpose"] in SCROLL for s in ss))
-QS_EXACT = [s for s in with_search["kh_qumran"] if L[s]["purpose"] in SCROLL and L[s]["place_match"] == "exact"]
-QS_NEAR = [s for s in with_search["kh_qumran"] if L[s]["purpose"] in SCROLL and L[s]["place_match"] == "near"]
-assert QS_EXACT == ["S17"] and QS_NEAR == ["S09", "S10", "S11", "S13", "S14", "S15"]
 
 # looks table (search-effectiveness layer)
 SE = REPO / "research" / "models" / "search_effectiveness"
@@ -141,8 +146,6 @@ for pid, lid in phantom:
 assert PH == {"tell_es_sultan": ["L09", "L13", "L25", "L32", "L35", "L36"]}, PH
 assert PH["tell_es_sultan"] == [r["look_id"] for r in looks_at["tell_es_sultan"] if r["result"] != "reported"]
 REP = {pid: [r["look_id"] for r in rs if r["result"] == "reported"] for pid, rs in looks_at.items()}
-assert REP["hyrcania"] == ["L46"] and REP["jericho_palaces"] == ["L45"] and REP["kh_qumran"] == ["L42"]
-assert len(REP["tell_es_sultan"]) == 10
 LOOKS_ONLY = sorted(pid for pid in looks_at if pid not in with_search)
 
 
@@ -153,17 +156,17 @@ def rep_text(pid):
     return f"{lid}: a feature reported (entry {r['entry_id']})"
 NOTHING = sorted(pid for pid in places if pid not in with_search and pid not in looks_at)
 
-# the counts printed on the sheet
+# the counts printed on the sheet are computed; these checks guard the hand-placed labels
 N_PL = len(places)
-assert N_PL == 39 and N_PL - len(NOCOORD) == 36
-assert len(with_search) == 4 and EXACT == ["gerizim", "kh_qumran"] and NEAR_ONLY == ["ain_duk", "doq"]
-assert SCROLL_PL == ["kh_qumran"]
-assert LOOKS_ONLY == ["hyrcania", "jericho_palaces", "tell_es_sultan"]
-assert len(NOTHING) == 32 and len(with_search) + len(LOOKS_ONLY) + len(NOTHING) == N_PL
-assert set(NOCOORD) <= set(NOTHING)
+assert len(with_search) + len(LOOKS_ONLY) + len(NOTHING) == N_PL
+assert set(NOCOORD) <= set(NOTHING), "a place without coordinates gained a search or look: list it"
+SEARCH_LAYOUT = {"kh_qumran", "gerizim", "ain_duk", "doq", "hyrcania", "jer_kidron_mon"}
+assert set(with_search) == SEARCH_LAYOUT, f"places with a ledger search changed: place chips for {set(with_search) ^ SEARCH_LAYOUT}"
+LOOKS_LAYOUT = {"tell_es_sultan", "jericho_palaces", "hyrcania", "kh_qumran"}
+assert set(looks_at) == LOOKS_LAYOUT, f"places in the looks table changed: {set(looks_at) ^ LOOKS_LAYOUT}"
 assert all(places[p]["region"] == "jerusalem" for p in places if p.startswith("jer_"))
 JER = sorted(p for p in places if places[p]["region"] == "jerusalem")
-assert len(JER) == 15 and set(JER) <= set(NOTHING)
+assert not set(JER) & set(looks_at)
 assert {s for s, (la, lo, h) in drawn_at.items() if la > 32} == {"S07", "S08"}
 
 # short descriptions of the rows (from who / where_name / looked_at); years come from the row itself
@@ -175,17 +178,28 @@ DESC = {
     "S15": "Jones, Column area", "S17": "Barfield probe", "S18": "Magen and Peleg",
     "S20": "Abu Saraj cliffs (IV/11)", "S21": "Quruntul cliff (V/49)",
     "S22": "Quruntul east cliff", "S23": "escarpment survey", "S25": "Ketef Jericho (no place)",
-    "S27": "Gutfeld and Ovadia",
-    "S03": "Allegro: trench at Kh. Qumran, monument at Kh. Mird (sheets 02, 03).",
-    "S04": "Allegro, Mazin building; not a candidate place. Year disputed.",
+    "S27": "Gutfeld and Ovadia", "S28": "Allegro, cistern and trench", "S30": "Allegro",
+    "S31": "Gutfeld, tunnel(s)", "S32": "Haber and Gutfeld, summit",
+    "S03": "Allegro: Kh. Qumran trench, Kh. Mird monument (sheets 02, 03).",
+    "S04": "Allegro, Mazin building; not a candidate place; year disputed.",
     "S16": "Jones, north of Qumran, for Gilgal.",
-    "S19": "IAA, Wadi ed-Daliyeh to Nahal Deragot (region rows S20–S25).",
+    "S19": "IAA, Wadi ed-Daliyeh to Nahal Deragot (S20–S25).",
     "S24": "IAA, Kidron outlet (XIV/2); grid ref only; not Mar Saba.",
     "S26": "IAA, Judean Desert cliffs.",
+    "S29": "Allegro, Cypros cistern shaft; Cypros is not an atlas place.",
+    "S33": "Fund expedition: Mazin, Feshkha, caves by Cave 11; Kh. Mird seen, not dug. Year inferred.",
 }
 assert sorted(DESC) == sorted(L)
 assert "Mird" in L["S03"]["where_name"] and "Qumran" in L["S03"]["where_name"]
 assert "Mar Saba" in L["S24"]["coverage_notes"] and "Gilgal" in L["S16"]["looked_at"]
+assert "Cypros" in L["S29"]["where_name"] and "not one of the atlas's candidate places" in L["S29"]["coverage_notes"]
+assert "Mird" in L["S33"]["where_name"] and "Nothing was dug at Kh. Mird" in L["S33"]["coverage_notes"]
+assert "inference" in L["S33"]["when_text"] and "Zechariah" in L["S30"]["where_name"]
+assert "not the spot entry 48 names" in L["S30"]["coverage_notes"] and "tunnel" in L["S31"]["looked_at"]
+assert "both tunnels" in L["S31"]["coverage_notes"] and "summit" in L["S32"]["where_name"]
+assert "cistern" in L["S28"]["looked_at"] and "trench" in L["S28"]["looked_at"]
+MIRD_NOPLACE = [s for s in unmapped if "Mird" in L[s]["where_name"]]
+assert MIRD_NOPLACE == ["S03", "S33"], MIRD_NOPLACE
 assert "Daliyeh" in L["S19"]["looked_at"] and "Mazin" in L["S04"]["where_name"]
 
 
@@ -203,7 +217,7 @@ assert "Date conflict" in L["S04"]["notes"] and "winter of 1961" in L["S05"]["wh
 def chip_text(sid):
     r = L[sid]
     t = f"{DESC[sid]}, {years(r)}" + (" (claim)" if r["kind"] == "CLAIM" else "")
-    return t + (" (start year disputed)" if sid in DISPUTED and sid in drawn_at else "")
+    return t + (" (year disputed)" if sid in DISPUTED and sid in drawn_at else "")
 
 
 # ================================================================== drawing helpers
@@ -286,6 +300,19 @@ def bearing_km(a, b):
     return math.hypot(dx, dy), words[int((ang + 11.25) // 22.5) % 16]
 
 
+def idwrap(x, y, sid, text, first_chars, chars, rest_x=None, size=10, lh=12.0):
+    """Search glyph and bold id, then text that wraps: the first line beside the id, the rest at rest_x."""
+    r = L[sid]
+    glyph(x + 5, y - 3.8, r["purpose"] in SCROLL, r["place_match"] == "exact")
+    c.text(x + 14, y, sid, size, P["ink"], 700)
+    words, first = text.split(), ""
+    while words and len(first) + 1 + len(words[0]) <= first_chars:
+        first = (first + " " + words.pop(0)).strip()
+    c.text(x + 38, y, first, size, P["sub"])
+    return c.wrap(rest_x if rest_x is not None else x + 14, y + lh, " ".join(words), chars, size, lh=lh) \
+        if words else y + lh
+
+
 def lead(x1, y1, x2, y2, col=None):
     c.line(x1, y1, x2, y2, col or P["muted"], 0.8)
 
@@ -338,8 +365,11 @@ S.scale_bar(c, ox + 36, oy + 62, 20 * s1, "0", "20 km")
 by0 = oy + 268
 c.rect(ox, by0, ow, oy + oh - by0, fill=P["panel"], stroke=P["border"], width=1.0, rx=4)
 c.text(ox + 8, by0 + 18, "B — Jerusalem, enlarged", 12.5, P["ink"], 700)
-c.text(ox + 8, by0 + 34, "No ledger search, no look.", 10.5, P["sub"])
-s2 = 128.0
+JS = [p for p in JER if p in with_search]
+c.text(ox + 8, by0 + 34, "Ledger: " + "; ".join(f"{', '.join(with_search[p])} at {places[p]['shortName']}" for p in JS)
+       + "." if JS else "No ledger search.", 10.5, P["sub"])
+c.text(ox + 8, by0 + 47, "No looks.", 10.5, P["sub"])
+s2 = 120.0
 P2 = proj(B_BOX[0], B_BOX[1], ox + 70, by0 + 52, s2, 31.776)
 B_WEST = {"jer_bethesda": ["Bethesda ·", "St Anne’s"], "jer_temple": ["Temple", "enclosure"],
           "jer_tyropoeon": ["Tyropoeon", "valley"], "jer_south_wall": ["Southern", "Temple wall"],
@@ -356,26 +386,47 @@ for pid in sorted(set(B_WEST) | set(B_EAST)):
 
 
 def column(items, xcol, anchor, gap=3.0, lh=12.0):
-    """Stack labels in a column near their points' heights, without overlap; draw leaders."""
+    """Stack labels in a column near their points' heights, without overlap; draw leaders.
+    A place with ledger rows gets ink text and one more line with its search glyphs and ids."""
     items = sorted(items, key=lambda t: t[1])
     ycur = -1e9
-    for px, py, lines, r in items:
-        h = len(lines) * lh
+    for px, py, lines, r, pid in items:
+        sids = with_search.get(pid, [])
+        h = (len(lines) + (1 if sids else 0)) * lh
         top = max(py - lh / 2 - 2, ycur + gap)
         ycur = top + h
-        lbl(xcol, top + lh - 3, lines, anchor, 10, None, P["sub"], lh)
+        for i, s in enumerate(lines):
+            c.text(xcol, top + lh - 3 + i * lh, s, 10, P["ink"] if sids else P["sub"], 600 if sids else None,
+                   anchor=anchor)
+        if sids:
+            assert anchor is None, "search glyphs are drawn only in the east column"
+            yy = top + lh - 3 + len(lines) * lh
+            for j, sid in enumerate(sids):
+                glyph(xcol + 4 + j * 36, yy - 3.8, L[sid]["purpose"] in SCROLL, L[sid]["place_match"] == "exact")
+                c.text(xcol + 12 + j * 36, yy, sid, 10, P["ink"], 700)
         ex = xcol + (4 if anchor == "end" else -4)
         sx = px + (-r - 1 if anchor == "end" else r + 1)
-        lead(sx, py, ex, top + lh / 2 - 1)
+        lead(sx, py, ex, top + lh / 2 - 1, BLUE if sids else None)
 
 
 west_x = min(P2(places[p]["lat"], places[p]["lon"])[0] for p in B_WEST) - 22
-column([(*P2(places[p]["lat"], places[p]["lon"]), B_WEST[p], rad(p)) for p in B_WEST], west_x, "end")
+column([(*P2(places[p]["lat"], places[p]["lon"]), B_WEST[p], rad(p) + (2.6 if p in with_search else 0), p)
+        for p in B_WEST], west_x, "end")
 east_x = max(P2(places[p]["lat"], places[p]["lon"])[0] for p in B_EAST) + 18
-column([(*P2(places[p]["lat"], places[p]["lon"]), B_EAST[p], rad(p)) for p in B_EAST], east_x, None)
+column([(*P2(places[p]["lat"], places[p]["lon"]), B_EAST[p], rad(p) + (2.6 if p in with_search else 0), p)
+        for p in B_EAST], east_x, None)
+assert set(JS) <= set(B_EAST), "a Jerusalem place with a search must be in the east label column"
+yb = P2(places["jer_bir_ayyub"]["lat"], places["jer_bir_ayyub"]["lon"])[1] + 28
+NOTE_B = {"S30": "Zechariah monument, tomb south of it. No dig recorded at entry 48's spot, W of "
+                 "Absalom's monument."}
+for p in JS:
+    for sid in with_search[p]:
+        yb = idwrap(ox + 8, yb, sid, f"{DESC[sid]}, {years(L[sid])}: {NOTE_B[sid]}", 42, 50) + 4
+assert JS == ["jer_kidron_mon"] and with_search["jer_kidron_mon"] == ["S30"], "describe the new Jerusalem row"
 off = [p for p in JER if places[p]["lat"] is not None and not in_box(B_BOX, places[p])]
 assert sorted(off) == ["jer_baqa", "jer_tombs_kings", "ramat_rahel"]
-yb = oy + oh - 58
+assert yb < oy + oh - 54, yb
+yb = oy + oh - 50
 c.text(ox + 8, yb, "Off this frame (from the Temple enclosure):", 10, P["sub"])
 for pid in sorted(off, key=lambda q: bearing_km("jer_temple", q)[0]):
     d, w = bearing_km("jer_temple", pid)
@@ -386,8 +437,16 @@ S.scale_bar(c, ox + ow - 52, by0 + 14, 0.25 * s2, "0", "250 m")
 S.north_arrow(c, ox + ow - 20, by0 + 84)
 
 # ------------------------------------------------------------------ panel 2: inset A
+outside = {}
+for sid, (la, lo, how) in sorted(drawn_at.items()):
+    if not (A_BOX[2] <= la <= A_BOX[0] and A_BOX[1] <= lo <= A_BOX[3]):
+        pid = L[sid]["place_id"]
+        outside.setdefault("Jerusalem, B" if pid in JER else places[pid]["shortName"], []).append(sid)
+assert set(outside) == {"Mount Gerizim", "Jerusalem, B"}, outside
+outside_note = ("Every ledger search that can be placed lies here, except "
+                + " and ".join(f"{', '.join(v)} ({k})" for k, v in sorted(outside.items(), key=lambda t: t[1])) + ".")
 ax, ay, aw, ah = S.panel(c, 346, TOP, 664, BOTTOM - TOP, "A — Jericho, Qumran and the desert, enlarged",
-                         ["Every ledger search that can be placed lies here, except S07 and S08 at Mount Gerizim."])
+                         [outside_note])
 mx0 = ax + 170
 c.rect(mx0, ay, ax + aw - mx0, ah, stroke=P["border"], width=1.0)
 s3 = 21.0
@@ -449,17 +508,19 @@ x, y = xy["kh_qumran"]
 pname("kh_qumran", x + 18, y + 2, extra=[rep_text("kh_qumran")])
 QB = [s for s in with_search["kh_qumran"] if s != "S01"]
 QB = sorted(QB, key=lambda s: (L[s]["place_match"] != "exact", L[s]["purpose"] not in SCROLL, s))
-assert len(QB) == 12 and spt["S02"] == P3(*pts["S02"])
-bx0 = ax + aw - 266
-c.rect(bx0, y + 26, 260, len(QB) * LH + 8, fill=P["panel"], stroke=P["border"], width=1.0, rx=3)
-rows = chips(bx0 + 6, y + 40, QB)
-lead(x, y + rad("kh_qumran") + 3, x, y + 26, BLUE)
+assert spt["S02"] == P3(*pts["S02"]) and len(QB) <= 13, "the Kh. Qumran box holds at most 13 rows"
+bx0 = ax + aw - 254
+c.rect(bx0, y + 24, 248, len(QB) * LH + 8, fill=P["panel"], stroke=P["border"], width=1.0, rx=3)
+rows = chips(bx0 + 6, y + 38, QB)
+lead(x, y + rad("kh_qumran") + 3, x, y + 24, BLUE)
 # Hyrcania, Buqeia, Mar Saba
 x, y = xy["hyrcania"]
-lead(x, y - 13, x, y - 24)
-c.text(x - 68, y - 64, places["hyrcania"]["shortName"], 10.5, P["ink"])
-lbl(x - 68, y - 51.5, [rep_text("hyrcania") + ".", "S03 names Kh. Mird but has", "no place_id (see left)."],
-    None, 10.5, None, P["sub"], 12.5)
+hy0 = y - 131
+c.text(x - 68, hy0, places["hyrcania"]["shortName"], 10.5, P["ink"], 600)
+lbl(x - 68, hy0 + 12.5, [rep_text("hyrcania") + ".", f"{' and '.join(MIRD_NOPLACE)} name Kh. Mird but have",
+                         "no place_id (see the list at left)."], None, 10.5, None, P["sub"], 12.5)
+rows = chips(x - 68, hy0 + 55, with_search["hyrcania"])
+lead(x, y - rad("hyrcania") - 7, x, rows[-1][0] + 8, BLUE)
 x, y = xy["buqeia"]
 pname("buqeia", x, y + 20, "middle")
 x, y = xy["mar_saba"]
@@ -486,44 +547,43 @@ ky = c.wrap(kx, ky + 22, "Candidate place; circle area = entries that name it", 
 def key_item(draw, text):
     global ky
     draw(kx + 8, ky - 4)
-    ky = c.wrap(kx + 22, ky, text, 26, 10.5) + 5
+    ky = c.wrap(kx + 21, ky, text, 28, 10, lh=12.4) + 6
 
 
 key_item(lambda x, y: (c.circle(x, y, 4, fill=FILL, stroke=GREY), c.circle(x, y, 6.6, stroke=BLUE, width=2)),
-         "a ledger row has this place_id")
-key_item(lambda x, y: glyph(x, y, True, True), "scroll-motivated, exact place")
-key_item(lambda x, y: glyph(x, y, True, False), "scroll-motivated, near or none")
-key_item(lambda x, y: glyph(x, y, False, True), "other search, exact place")
-key_item(lambda x, y: glyph(x, y, False, False), "other search, near or none")
+         "ledger row has this place_id")
+key_item(lambda x, y: glyph(x, y, True, True), "scroll-motivated, exact")
+key_item(lambda x, y: glyph(x, y, True, False), "scroll-motivated, near/none")
+key_item(lambda x, y: glyph(x, y, False, True), "other search, exact")
+key_item(lambda x, y: glyph(x, y, False, False), "other search, near/none")
 key_item(lambda x, y: search_point(x, y), "point the repo gives")
 key_item(lambda x, y: (c.circle(x, y, 3, fill=FILL, stroke=GREY), c.circle(x, y, 8, stroke=GREY, width=1.2,
                                                                          dash="3 2.5")),
-         "in the looks table; no look has a detection probability")
+         "looks table; no look has a detection probability")
 ky += 14
-c.text(kx, ky, "Not drawn (6 rows)", 12.5, P["ink"], 700)
-ky = c.wrap(kx, ky + 16, "No place_id and no WGS84 point in the repo:", 27, 10.5) + 4
+c.text(kx, ky, f"Not drawn ({len(unmapped)} rows)", 12.5, P["ink"], 700)
+ky = c.wrap(kx, ky + 16, "No place_id, no WGS84 point:", 30, 10.5) + 3
 for sid in unmapped:
     r = L[sid]
-    scroll = r["purpose"] in SCROLL
-    glyph(kx + 5, ky - 3.8, scroll, False)
-    c.text(kx + 14, ky, f"{sid}, {years(r)}", 10.5, P["ink"], 700)
-    ky = c.wrap(kx + 14, ky + 13, DESC[sid] + (" (claim)" if r["kind"] == "CLAIM" else ""), 26, 10, lh=12.4) + 4
+    ky = idwrap(kx, ky, sid, f"{years(r)}. {DESC[sid]}" + (" (claim)" if r["kind"] == "CLAIM" else ""),
+                22, 27, lh=12.2) + 4
+assert ky - 16 < ay + ah - 4, ky   # last line inside the panel
 
 # ------------------------------------------------------------------ panel 3: counts and the unsearched list
 sx, sy, sw, sh = S.panel(c, 1026, TOP, 334, BOTTOM - TOP, "Coverage of the record",
                          ["Counted from the three tables when the sheet is built."])
+SHORT = {"kh_qumran": "Kh. Qumran", "hyrcania": "Hyrcania"}    # shorter forms of the atlas names
 CNT = [
     (N_PL, f"candidate places ({N_PL - len(NOCOORD)} with coordinates)"),
-    (len(with_search), f"with a ledger search (place_id): {len(EXACT)} exact, {len(NEAR_ONLY)} near only"),
-    (len(SCROLL_PL), "with a scroll-motivated search: Kh. Qumran"),
+    (len(with_search), f"with a ledger search: {len(EXACT)} exact, {len(NEAR_ONLY)} near only"),
+    (len(SCROLL_PL), f"with a scroll-motivated search: {', '.join(SHORT.get(p, places[p]['shortName']) for p in SCROLL_PL)}"),
     (len(LOOKS_ONLY), "looks only, none with a detection probability"),
     (len(NOTHING), "with nothing in either table"),
 ]
 y = sy + 12
 for n, text in CNT:
     c.text(sx + 30, y + 1, str(n), 14, P["ink"], 700, anchor="end")
-    c.text(sx + 40, y, text, 10.5, P["sub"])
-    y += 18
+    y = c.wrap(sx + 40, y, text, 51, 10.5, lh=13) + 4
 y += 8
 c.text(sx + 6, y, f"The {len(NOTHING)} places with nothing recorded", 12.5, P["ink"], 700)
 y = c.wrap(sx + 6, y + 15, "Entries that name each place. * = the atlas's preferred candidate; "
@@ -549,9 +609,9 @@ for reg, head in GROUPS:
         c.text(sx + sw - 6, y, ent_list(pid), 10, P["ink"], anchor="end")
         y += 12.0
     y += 3
-y = c.wrap(sx + 6, y + 8, "Scroll-motivated: purpose coded scroll_deposit_search, scroll_motivated or "
-           "scroll_find_site; other: surveys and digs of named places. Near: the ledger matched only the "
-           "nearest place. (claim): row graded CLAIM.", 58, 10, fill=P["sub"], lh=12.4)
+y = c.wrap(sx + 6, y + 8, "Scroll-motivated: purpose scroll_deposit_search, scroll_motivated or "
+           "scroll_find_site. Near: the ledger matched only the nearest place. (claim): graded CLAIM.",
+           58, 10, fill=P["sub"], lh=12.4)
 assert y - 12.4 < sy + sh - 8, y   # last baseline inside the panel
 
 # ------------------------------------------------------------------ footer
@@ -561,11 +621,13 @@ S.footer(c, 830, [
      "results.json and README §5; WGS84 points from devaux1952_cave_points (S01) and W2B grid_conversions_v2 (S20)."),
     ("How it was drawn", "WGS84 lat/lon, 111.32 km per degree, x scaled by cos latitude at each map's centre; a bar "
      "on each map. Rows with no WGS84 point in the repo sit at their place's atlas point. No datum transform."),
-    ("What it shows", f"Of {N_PL} candidate places, {len(with_search)} have a ledger search; {len(NEAR_ONLY)} of those are "
-     f"“near” matches only. Only Kh. Qumran has a scroll-motivated one. {len(NOTHING)} places, all of Jerusalem "
-     "among them, have nothing. No look at any candidate place has a detection probability."),
+    ("What it shows", f"Of {N_PL} candidate places, {len(with_search)} have a ledger search, {len(NEAR_ONLY)} of them "
+     f"“near” matches only; {len(SCROLL_PL)} have a scroll-motivated one "
+     f"({', '.join(SHORT.get(p, places[p]['shortName']) for p in SCROLL_PL)}). {len(NOTHING)} places, "
+     f"{len(set(JER) & set(NOTHING))} of the {len(JER)} in Jerusalem, have nothing. No look at any candidate place "
+     "has a detection probability."),
     ("What it does not show", "This sheet identifies nothing; it shows coverage of the record only. A marker does not "
-     "mean the place was covered: no row has a target volume, and the negative rows (S03, S10, S17) have "
+     f"mean the place was covered: no row has a target volume, and the negative rows ({', '.join(NEGATIVE)}) have "
      "unknown or tiny footprints."),
 ])
 print(c.save(out_path("search_05_coverage_map")))

@@ -123,12 +123,12 @@ for when, what, col in (
                      "Monument cleared; graves recorded; E tunnel mouth cleared.", DUG),
         ("1960", "Metal and cavity detectors reached about 18 in (0.46 m); the rock's natural magnetism "
                  "masked metal (Allegro 1964; “signals everywhere”, 1966).", LOOK),
-        ("1962–63", "Dead Sea Scrolls Fund day visit: court vault entered by ladder; east side checked for "
+        ("1962–63", "Dead Sea Scrolls Fund day visit (S33): court vault entered by ladder; east side checked for "
                     "steps. No digging. (The 1964 book puts the ladder descent in 1959–60.)", LOOK),
-        ("2000–04", "Gutfeld clears a stepped tunnel to a dead end (BAR 2006, abstract only).", DUG),
+        ("2000–04", "Gutfeld clears a stepped tunnel to a dead end (BAR 2006, abstract only; ledger S31).", DUG),
         ("2016", "A trial square in the NW of the summit.", DUG),
-        ("2023", "Hebrew University season, areas A, B, C-1, W-1. Not dug: the cisterns, the monument, "
-                 "the cemetery, the tunnels.", DUG)):
+        ("2023", "Hebrew University season (S32), areas A, B, C-1, W-1. Not dug: the cisterns, the "
+                 "monument, the cemetery, the tunnels.", DUG)):
     c.text(sx + 10, y, when, 12, col, 700)
     y = c.wrap(sx + 88, y, what, 44, 11, fill=P["sub"]) + 8
 y += 6

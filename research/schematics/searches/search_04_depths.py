@@ -181,7 +181,7 @@ bar(y, 0, 3.0, dashed=True)
 c.text(X(1.5), y + 4, "?", 12, BLUE, 700, anchor="middle")
 note(y, 3.0, "a deposit “several metres deep”; no figure given")
 
-y = srow(4, "Cypros cistern shaft (S03)", "Allegro 1964 p. 75; date not given")
+y = srow(4, "Cypros cistern shaft (S29)", "Allegro 1964 p. 75; date not given")
 cy_m = 20 * FT
 bar(y, 0, cy_m)
 c.line(X(cy_m), y, X(MAXM) + 6, y, BLUE, 1.4, dash="5 4", arrow="ink")
