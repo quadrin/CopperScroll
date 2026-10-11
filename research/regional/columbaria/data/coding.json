@@ -1,0 +1,2132 @@
+{
+ "_note": "Hand coding by the columbaria lane worker, 11 October 2026 UTC, after the plan freeze (afdd69f). One object per columbarium row. Fields left out take the defaults in scripts/assemble.py. key = ASI site id (src ASI), WBADB row id (src WBADB) or a literature key (src LIT, REPO). dup_of = the representative row of the same columbarium (dup rows are kept for provenance and not counted). Codes: lev2/lev3/acc/date/natof as PLAN.md §2, §6. quote = 12 words or fewer, only where it is the evidence for a non-UNKNOWN distinctive code. basis notes: EVIDENCE unless marked INFERENCE or CLAIM. cons 'rock-cut' was set for ASI rows whose record sentences on the columbarium say it is hewn or cut (a scripted check, then reviewed; eight false positives reverted).",
+ "rows": [
+  {
+   "cid": "A-101-8",
+   "src": "ASI",
+   "key": "9535",
+   "part": "cistern containing a columbarium",
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-101-33",
+   "src": "ASI",
+   "key": "9575",
+   "part": "columbarium, poorly preserved",
+   "setting": "settlement",
+   "cons": "unknown"
+  },
+  {
+   "cid": "A-101-34",
+   "src": "ASI",
+   "key": "9576",
+   "part": "columbarium cave near cisterns (NE of ruin)",
+   "setting": "settlement",
+   "fort_at_site": "yes",
+   "notes": "record lists 'traces of fortification (?)' with a question mark",
+   "cons": "unknown"
+  },
+  {
+   "cid": "A-101-63",
+   "src": "ASI",
+   "key": "13708",
+   "part": "rock-hewn columbarium, ceiling collapsed",
+   "cons": "rock-cut",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-101-99",
+   "src": "ASI",
+   "key": "13998",
+   "part": "columbarium-like installation of stone slabs in NE room",
+   "cons": "built",
+   "setting": "settlement",
+   "uncertain": true,
+   "date": "L",
+   "date_text": "structure tentatively Byzantine or Early Arab",
+   "quote": "tentatively related to the Byzantine or Early Arab periods"
+  },
+  {
+   "cid": "A-101-141",
+   "src": "ASI",
+   "key": "14087",
+   "part": "columbarium cave south of an ancient road",
+   "setting": "isolated"
+  },
+  {
+   "cid": "A-101-175",
+   "src": "ASI",
+   "key": "14122",
+   "part": "columbarium cave cut into a cliff at the foot of a watch-booth",
+   "cons": "rock-cut",
+   "setting": "isolated",
+   "tower_at_site": "yes",
+   "outside_tower": true,
+   "notes": "agricultural watch-booth (shomera), not a fort tower"
+  },
+  {
+   "cid": "A-101-178",
+   "src": "ASI",
+   "key": "14125",
+   "part": "remains of a columbarium cave in an agricultural complex",
+   "setting": "settlement",
+   "tower_at_site": "yes",
+   "notes": "watch-booths in the complex"
+  },
+  {
+   "cid": "A-101-216",
+   "src": "ASI",
+   "key": "14163",
+   "part": "columbarium in the village area of En Kerem",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-102-81",
+   "src": "ASI",
+   "key": "9715",
+   "part": "rock-hewn columbarium near burial caves",
+   "cons": "rock-cut",
+   "setting": "isolated",
+   "date": "D",
+   "date_text": "attributed to the Herodian period",
+   "quote": "rock-hewn columbarium, attributed to the Herodian period"
+  },
+  {
+   "cid": "A-102-103",
+   "src": "ASI",
+   "key": "10192",
+   "part": "cistern with rows of columbarium niches in its upper part",
+   "cons": "cistern-converted",
+   "setting": "isolated"
+  },
+  {
+   "cid": "A-102-114",
+   "src": "ASI",
+   "key": "10207",
+   "part": "two columbarium structures near the Hasmonean complex",
+   "n": 2,
+   "setting": "settlement",
+   "tower_at_site": "yes",
+   "outside_tower": true,
+   "date": "P",
+   "date_text": "Hellenistic; one destroyed in the Second Temple period",
+   "quote": "two columbarium structures of the Hellenistic period",
+   "notes": "the complex had defense towers; the columbaria lie 'nearby', outside it",
+   "cons": "unknown"
+  },
+  {
+   "cid": "A-102-131",
+   "src": "ASI",
+   "key": "10247",
+   "part": "bell-shaped columbarium installation on the hilltop",
+   "cons": "rock-cut",
+   "setting": "settlement",
+   "acc": "M",
+   "acc_basis": "hewn shaft leads into it (Hebrew record)",
+   "quote": "שפיר חצוב מוליך אל תוכו",
+   "date": "D",
+   "date_text": "listed under the excavated Late Hellenistic - Early Roman phase",
+   "notes": "5.3 x 4.5 m, 4.5 m high; rooms were built above it in a later phase (lev2 U for the window phase)"
+  },
+  {
+   "cid": "A-102-140",
+   "src": "ASI",
+   "key": "10367",
+   "part": "columbarium cave 4 x 4 m, seven rows of niches",
+   "cons": "rock-cut",
+   "setting": "isolated",
+   "date": "D",
+   "date_text": "probably Hasmonean or Herodian",
+   "quote": "probably dating to the Hasmonean or Herodian periods"
+  },
+  {
+   "cid": "A-102-166",
+   "src": "ASI",
+   "key": "10521",
+   "part": "cruciform columbarium, two halls, entered by a long corridor",
+   "cons": "rock-cut",
+   "setting": "isolated",
+   "date": "D",
+   "date_text": "attributed to the Hasmonean or Herodian periods",
+   "quote": "attributed to the Hasmonean or Herodian periods",
+   "notes": "an earlier cave on a lower level was cut by it (not a second level of the columbarium)"
+  },
+  {
+   "cid": "A-102-211",
+   "src": "ASI",
+   "key": "10697",
+   "part": "rock-hewn columbarium above the western cave",
+   "cons": "rock-cut",
+   "setting": "unknown",
+   "date": "D",
+   "date_text": "probably Hasmonean or Herodian",
+   "quote": "probably of the Hasmonean or Herodian periods"
+  },
+  {
+   "cid": "A-102-216",
+   "src": "ASI",
+   "key": "10702",
+   "part": "columbarium cave, four rows of ten niches",
+   "setting": "isolated",
+   "date": "D",
+   "date_text": "Herodian ? (queried by the source)",
+   "quote": "a columbarium (Herodian ?) cave"
+  },
+  {
+   "cid": "A-102-225",
+   "src": "ASI",
+   "key": "10779",
+   "part": "columbarium south of the burial cave",
+   "setting": "unknown",
+   "cons": "unknown"
+  },
+  {
+   "cid": "A-102-234",
+   "src": "ASI",
+   "key": "10789",
+   "part": "rock-hewn columbarium found 1855 (24 Ovadya St)",
+   "cons": "rock-cut",
+   "setting": "isolated",
+   "date": "D",
+   "date_text": "probably hewn in the Hasmonean or Herodian period (Hebrew record)",
+   "quote": "המתקן נחצב, כמשוער, בתקופה החשמונאית או בתקופה ההורדוסית"
+  },
+  {
+   "cid": "A-102-241",
+   "src": "ASI",
+   "key": "10799",
+   "part": "circular columbarium 16 m NW of a burial cave",
+   "setting": "isolated",
+   "acc": "M",
+   "acc_basis": "opening in the ceiling",
+   "quote": "a circular columbarium, accessed through an opening in the ceiling",
+   "cons": "unknown"
+  },
+  {
+   "cid": "A-102-248",
+   "src": "ASI",
+   "key": "10813",
+   "part": "columbarium near a Herodian burial cave",
+   "setting": "isolated",
+   "cons": "unknown"
+  },
+  {
+   "cid": "A-102-277",
+   "src": "ASI",
+   "key": "10940",
+   "part": "rock-hewn columbarium, two rows of niches",
+   "cons": "rock-cut",
+   "setting": "isolated"
+  },
+  {
+   "cid": "A-102-307a",
+   "src": "ASI",
+   "key": "11071",
+   "part": "columbarium cave 3.4 x 4.5 m, 4 m high (Wadi Abu Kharrub)",
+   "cons": "rock-cut",
+   "setting": "isolated",
+   "date": "D",
+   "date_text": "cut in the Hasmonean period, used into the Herodian period",
+   "quote": "Cut in the Hasmonean period, used into the Herodian period"
+  },
+  {
+   "cid": "A-102-307b",
+   "src": "ASI",
+   "key": "11071",
+   "part": "columbarium cave in the ruins of Ras esh-Sheikh Anbar",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-102-311",
+   "src": "ASI",
+   "key": "11088",
+   "part": "columbarium at the stone-vessel workshop (finds list)",
+   "setting": "settlement",
+   "cons": "unknown"
+  },
+  {
+   "cid": "A-102-364",
+   "src": "ASI",
+   "key": "11246",
+   "part": "installation (columbarium?): niches in a rock scarp",
+   "setting": "isolated",
+   "uncertain": true,
+   "cons": "unknown"
+  },
+  {
+   "cid": "A-102-472",
+   "src": "ASI",
+   "key": "13771",
+   "part": "rectangular columbarium cave, four cells, ten rows of niches",
+   "cons": "rock-cut",
+   "setting": "isolated",
+   "date": "D",
+   "date_text": "apparently Hasmonean or Herodian",
+   "quote": "Apparently of the Hasmonean or Herodian period"
+  },
+  {
+   "cid": "A-102-523",
+   "src": "ASI",
+   "key": "12235",
+   "part": "columbarium cave used by residents today",
+   "setting": "unknown"
+  },
+  {
+   "cid": "A-102-529a",
+   "src": "ASI",
+   "key": "12450",
+   "part": "columbarium cave damaged by the Ma'ale Adummim road",
+   "dup_of": "A-102-307a",
+   "setting": "isolated"
+  },
+  {
+   "cid": "A-102-529b",
+   "src": "ASI",
+   "key": "12450",
+   "part": "ruined columbarium cave 40 m east of the sheikh's tomb",
+   "dup_of": "A-102-307b",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-102-540",
+   "src": "ASI",
+   "key": "12466",
+   "part": "columbarium cave with about 40 niches",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-102-549",
+   "src": "ASI",
+   "key": "12480",
+   "part": "square columbarium cave with an upper opening",
+   "setting": "unknown",
+   "acc": "M",
+   "acc_basis": "upper opening (Hebrew record)",
+   "quote": "מערת-קולומבאריום ריבועית בעלת פתח עליון"
+  },
+  {
+   "cid": "A-102-556",
+   "src": "ASI",
+   "key": "12504",
+   "part": "columbarium cave SW of the hill",
+   "setting": "isolated"
+  },
+  {
+   "cid": "A-102-576",
+   "src": "ASI",
+   "key": "12649",
+   "part": "columbarium cave in the north of the site",
+   "setting": "settlement",
+   "part_of_site": "north"
+  },
+  {
+   "cid": "A-102-579",
+   "src": "ASI",
+   "key": "12652",
+   "part": "columbarium cave with 70 niches, upper opening by a cave mouth",
+   "setting": "settlement",
+   "acc": "M",
+   "acc_basis": "upper opening (Hebrew record)",
+   "quote": "פתח עליון של מערת-קולומבאריום, ובה 70 גומחות",
+   "tier1_related": true,
+   "notes": "Kh. Almit: this is the ASI survey record (Benjamin survey site 496), read after the freeze; the IAA notices on Kh. Almit (Tier 1) were not read"
+  },
+  {
+   "cid": "A-102-593",
+   "src": "ASI",
+   "key": "12845",
+   "part": "columbarium cave at the top of the dome",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-104-9",
+   "src": "ASI",
+   "key": "12904",
+   "part": "remains of a columbarium on the SW slope below the summit fortress",
+   "setting": "fort_site",
+   "fort_at_site": "yes",
+   "outside_fort": true,
+   "part_of_site": "southwest",
+   "quote": "remains of a columbarium-a complex of niches",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-104-67",
+   "src": "ASI",
+   "key": "13069",
+   "part": "two rock-hewn columbaria on the slopes",
+   "n": 2,
+   "cons": "rock-cut",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-104-116",
+   "src": "ASI",
+   "key": "13122",
+   "part": "columbarium among terraces and installations",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-104-190",
+   "src": "ASI",
+   "key": "13417",
+   "part": "rows of small niches (remains of a columbarium?)",
+   "setting": "settlement",
+   "uncertain": true,
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-104-239",
+   "src": "ASI",
+   "key": "13465",
+   "part": "columbarium in the village area of Wadi Fukin",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-105-6",
+   "src": "ASI",
+   "key": "7211",
+   "part": "horseshoe-shaped columbarium cave 1.8 m diam.",
+   "cons": "rock-cut",
+   "setting": "isolated",
+   "notes": "opening faces N; a shaft 80 cm deep is cut in the S side (role unstated)"
+  },
+  {
+   "cid": "A-105-67",
+   "src": "ASI",
+   "key": "7747",
+   "part": "ruins of a columbarium cave west of a wall",
+   "setting": "isolated"
+  },
+  {
+   "cid": "A-105-85",
+   "src": "ASI",
+   "key": "7803",
+   "part": "columbarium cave, ceiling collapsed",
+   "cons": "rock-cut",
+   "setting": "isolated"
+  },
+  {
+   "cid": "A-105-87",
+   "src": "ASI",
+   "key": "7805",
+   "part": "columbarium cave in the Musa el-Alami farm",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-106-49",
+   "src": "ASI",
+   "key": "8498",
+   "part": "rock-hewn columbarium chamber 3 x 3.5 m, about 35 niches, SW of the ruin",
+   "cons": "rock-cut",
+   "niches": 35,
+   "setting": "settlement",
+   "part_of_site": "southwest"
+  },
+  {
+   "cid": "A-106-90",
+   "src": "ASI",
+   "key": "8735",
+   "part": "rock-hewn columbarium with about 25 niches",
+   "cons": "rock-cut",
+   "niches": 25,
+   "setting": "unknown"
+  },
+  {
+   "cid": "A-106-95",
+   "src": "ASI",
+   "key": "8740",
+   "part": "columbarium at Ramat Rahel (H. Zewaha)",
+   "setting": "fort_site",
+   "fort_at_site": "yes",
+   "date": "D",
+   "date_text": "S4: Late Second Temple village 'with ritual baths and columbaria' (INJ 17 pp. 59-60, via tables/phase5_assessments.csv JER 46; not re-read)",
+   "exposed": "yes",
+   "notes": "ASI names an Iron Age fort and a Roman military camp at the site; the columbarium is not placed relative to them"
+  },
+  {
+   "cid": "A-109-1",
+   "src": "ASI",
+   "key": "2755",
+   "part": "two bell-shaped pits with columbarium niches",
+   "n": 2,
+   "cons": "rock-cut",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-24a",
+   "src": "ASI",
+   "key": "2789",
+   "part": "cruciform cave with columbarium niches (SE part)",
+   "setting": "settlement",
+   "part_of_site": "southeast",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-24b",
+   "src": "ASI",
+   "key": "2789",
+   "part": "several caves with columbarium niches (N part)",
+   "n": null,
+   "setting": "settlement",
+   "part_of_site": "north",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-24c",
+   "src": "ASI",
+   "key": "2789",
+   "part": "columbarium cave up the valley",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-24d",
+   "src": "ASI",
+   "key": "2789",
+   "part": "bell-shaped pit with 23 niches, steps to the floor",
+   "niches": 23,
+   "setting": "settlement",
+   "acc": "M",
+   "acc_basis": "steps lead down to the floor",
+   "quote": "side of the pit lead to the floor",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-26a",
+   "src": "ASI",
+   "key": "2791",
+   "part": "circular columbarium cave 4.2 m diam.",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-26b",
+   "src": "ASI",
+   "key": "2791",
+   "part": "rectangular columbarium cave with 246 niches",
+   "niches": 246,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-26c",
+   "src": "ASI",
+   "key": "2791",
+   "part": "cave with columbarium niches beyond a tunnel and hall",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-26d",
+   "src": "ASI",
+   "key": "2791",
+   "part": "eastern cistern with columbarium niches",
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-30",
+   "src": "ASI",
+   "key": "2795",
+   "part": "southern cistern with 38 niches (later phase)",
+   "cons": "cistern-converted",
+   "niches": 38,
+   "setting": "unknown"
+  },
+  {
+   "cid": "A-109-39a",
+   "src": "ASI",
+   "key": "2804",
+   "part": "bell-shaped columbarium cave with 214 niches (S slope)",
+   "niches": 214,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-39b",
+   "src": "ASI",
+   "key": "2804",
+   "part": "former cistern converted to a columbarium (S slope)",
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-39c",
+   "src": "ASI",
+   "key": "2804",
+   "part": "third bell-shaped columbarium cave (S slope)",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-70a",
+   "src": "ASI",
+   "key": "2835",
+   "part": "columbarium caves among the caves of the settlement",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-70b",
+   "src": "ASI",
+   "key": "2835",
+   "part": "bell-shaped cistern enlarged to a T-shaped cave with 230 niches",
+   "cons": "cistern-converted",
+   "niches": 230,
+   "setting": "settlement",
+   "acc": "M",
+   "acc_basis": "steps lead down to the floor",
+   "quote": "a hewn bell-shaped cistern with a complex of steps leading down"
+  },
+  {
+   "cid": "A-109-70c",
+   "src": "ASI",
+   "key": "2835",
+   "part": "columbarium cave near a burial cave (W slope)",
+   "setting": "isolated",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-70d",
+   "src": "ASI",
+   "key": "2835",
+   "part": "bell-shaped columbarium cave with large living spaces",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-70e",
+   "src": "ASI",
+   "key": "2835",
+   "part": "bell-shaped columbarium cave 5.6 m deep (S slope)",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-89a",
+   "src": "ASI",
+   "key": "2854",
+   "part": "caves with columbarium niches below the settlement",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-89b",
+   "src": "ASI",
+   "key": "2854",
+   "part": "cruciform cave with symmetric rows of niches",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-89c",
+   "src": "ASI",
+   "key": "2854",
+   "part": "columbarium caves among eight caves on the spur",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-89d",
+   "src": "ASI",
+   "key": "2854",
+   "part": "cistern with columbarium niches cut later",
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-89e",
+   "src": "ASI",
+   "key": "2854",
+   "part": "columbarium cave 17 x 22 m east of the site",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-89f",
+   "src": "ASI",
+   "key": "2854",
+   "part": "elongated columbarium cave modified by quarrying",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-89g",
+   "src": "ASI",
+   "key": "2854",
+   "part": "columbarium cave north of the cisterns",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-100a",
+   "src": "ASI",
+   "key": "2865",
+   "part": "cave 6 m deep with columbarium niches",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-100b",
+   "src": "ASI",
+   "key": "2865",
+   "part": "cruciform cave with columbarium niches",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-103a",
+   "src": "ASI",
+   "key": "2868",
+   "part": "cruciform cave with 845 niches (E fringe)",
+   "niches": 845,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-103b",
+   "src": "ASI",
+   "key": "2868",
+   "part": "double cistern with niches cut later (W of settlement)",
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-103c",
+   "src": "ASI",
+   "key": "2868",
+   "part": "other cisterns with niches cut later",
+   "n": null,
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-103d",
+   "src": "ASI",
+   "key": "2868",
+   "part": "the other columbarium caves of the six counted",
+   "n": 5,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-116",
+   "src": "ASI",
+   "key": "2881",
+   "part": "eastern cave with 12 niches",
+   "niches": 12,
+   "setting": "unknown",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-135",
+   "src": "ASI",
+   "key": "2900",
+   "part": "cistern with 48 niches, side opening cut later",
+   "cons": "cistern-converted",
+   "niches": 48,
+   "setting": "unknown"
+  },
+  {
+   "cid": "A-109-175a",
+   "src": "ASI",
+   "key": "2940",
+   "part": "chamber with 325 niches",
+   "niches": 325,
+   "setting": "settlement",
+   "date": "P",
+   "date_text": "Roman-period sherds on the cave floor",
+   "notes": "find date of use, not of cutting",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-175b",
+   "src": "ASI",
+   "key": "2940",
+   "part": "one of the caves with columbarium niches",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-175c",
+   "src": "ASI",
+   "key": "2940",
+   "part": "chambers off a corridor, some with niches",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-175d",
+   "src": "ASI",
+   "key": "2940",
+   "part": "excavated cave identified as a columbarium",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-194a",
+   "src": "ASI",
+   "key": "2959",
+   "part": "columbarium caves that were cisterns",
+   "n": null,
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-194b",
+   "src": "ASI",
+   "key": "2959",
+   "part": "bell-shaped cistern with niches in a cave complex entered by a descending staircase",
+   "cons": "cistern-converted",
+   "setting": "settlement",
+   "part_of_site": "south",
+   "acc": "M",
+   "acc_basis": "staircase descending into the cave complex",
+   "quote": "a rock-hewn cave with a staircase descending to the floor"
+  },
+  {
+   "cid": "A-109-194c",
+   "src": "ASI",
+   "key": "2959",
+   "part": "cistern with niches reached by a passage (E part)",
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-194d",
+   "src": "ASI",
+   "key": "2959",
+   "part": "second cistern in the cave with niches (E part)",
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-194e",
+   "src": "ASI",
+   "key": "2959",
+   "part": "circular columbarium cave 8 m diam., 135 niches",
+   "niches": 135,
+   "setting": "settlement",
+   "part_of_site": "north",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-194f",
+   "src": "ASI",
+   "key": "2959",
+   "part": "cave (chapel?) with several columbarium niches",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-194g",
+   "src": "ASI",
+   "key": "2959",
+   "part": "cave with columbarium niches and an oil press",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-202a",
+   "src": "ASI",
+   "key": "2968",
+   "part": "columbarium caves in the settlement",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-202b",
+   "src": "ASI",
+   "key": "2968",
+   "part": "two columbarium caves east of the settlement",
+   "n": 2,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-202c",
+   "src": "ASI",
+   "key": "2968",
+   "part": "cistern with about 200 niches cut later",
+   "cons": "cistern-converted",
+   "niches": 200,
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-203a",
+   "src": "ASI",
+   "key": "2969",
+   "part": "columbarium caves among twelve caves",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-203b",
+   "src": "ASI",
+   "key": "2969",
+   "part": "columbarium cave in the cave complex east of the site",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-210a",
+   "src": "ASI",
+   "key": "2976",
+   "part": "western cave with 124 niches",
+   "niches": 124,
+   "setting": "settlement",
+   "fort_at_site": "yes",
+   "notes": "a wall 'part of an ancient fortification that encircled this part of the settlement'",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-210b",
+   "src": "ASI",
+   "key": "2976",
+   "part": "bell-shaped cave with niches at the foot of the E slope",
+   "setting": "settlement",
+   "fort_at_site": "yes",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-210c",
+   "src": "ASI",
+   "key": "2976",
+   "part": "cistern with about 45 niches cut later",
+   "cons": "cistern-converted",
+   "niches": 45,
+   "setting": "settlement",
+   "fort_at_site": "yes",
+   "acc": "M",
+   "acc_basis": "staircases lead to the floors of both cisterns",
+   "quote": "two rock-hewn cisterns with staircases leading to their floors"
+  },
+  {
+   "cid": "A-109-220",
+   "src": "ASI",
+   "key": "3883",
+   "part": "cave with 140 niches reached from an arcosolium tomb",
+   "niches": 140,
+   "setting": "fort_site",
+   "fort_at_site": "yes",
+   "outside_fort": true,
+   "date": "P",
+   "date_text": "debris with Hellenistic sherds removed from the cave",
+   "notes": "outside the tell (town wall, fortifications; a possible Roman fortress east of the tell), in a burial-cave context",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-229a",
+   "src": "ASI",
+   "key": "3899",
+   "part": "western bell-shaped cave with 100 niches",
+   "niches": 100,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-229b",
+   "src": "ASI",
+   "key": "3899",
+   "part": "western cistern with columbarium niches",
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-245",
+   "src": "ASI",
+   "key": "3926",
+   "part": "cruciform cave with 260 niches (enlarged cistern)",
+   "cons": "cistern-converted",
+   "niches": 260,
+   "setting": "unknown"
+  },
+  {
+   "cid": "A-109-258a",
+   "src": "ASI",
+   "key": "3943",
+   "part": "columbarium caves in the settlement",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-258b",
+   "src": "ASI",
+   "key": "3943",
+   "part": "bell-shaped pits with columbarium niches (upper part)",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-258c",
+   "src": "ASI",
+   "key": "3943",
+   "part": "cruciform cave with 68 niches",
+   "niches": 68,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-258d",
+   "src": "ASI",
+   "key": "3943",
+   "part": "cave with about 320 niches",
+   "niches": 320,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-258e",
+   "src": "ASI",
+   "key": "3943",
+   "part": "columbarium cave reached by a passage near the orchard",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-260a",
+   "src": "ASI",
+   "key": "4603",
+   "part": "hall with 155 niches",
+   "niches": 155,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-260b",
+   "src": "ASI",
+   "key": "4603",
+   "part": "columbarium cave on the southern fringe",
+   "setting": "settlement",
+   "part_of_site": "south",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-270a",
+   "src": "ASI",
+   "key": "3967",
+   "part": "caves with columbarium niches",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-270b",
+   "src": "ASI",
+   "key": "3967",
+   "part": "circular cave 5 m high with about 200 niches",
+   "niches": 200,
+   "setting": "settlement",
+   "notes": "main entrance blocked; entered today by a side opening",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-283",
+   "src": "ASI",
+   "key": "3989",
+   "part": "circular columbarium cave, ceiling collapsed",
+   "setting": "settlement",
+   "notes": "reached today by rope through the collapse (modern access, not coded)",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-288",
+   "src": "ASI",
+   "key": "4031",
+   "part": "southern cave with 44 niches",
+   "niches": 44,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-294",
+   "src": "ASI",
+   "key": "4037",
+   "part": "columbarium cave 3 x 5 m with 52 niches",
+   "niches": 52,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-313",
+   "src": "ASI",
+   "key": "4058",
+   "part": "collapsed cave used as a columbarium, two chambers, about 22 niches",
+   "niches": 22,
+   "setting": "settlement",
+   "notes": "'Migdal' is in the site name only",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-325a",
+   "src": "ASI",
+   "key": "4070",
+   "part": "columbarium cave 4 m high",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-325b",
+   "src": "ASI",
+   "key": "4070",
+   "part": "columbarium cave 7 x 7 m with about 340 niches in four columns",
+   "niches": 340,
+   "setting": "settlement",
+   "notes": "reached by a short tunnel from a cistern",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-326a",
+   "src": "ASI",
+   "key": "4071",
+   "part": "cruciform columbarium cave 10 m E of the building remains (SW of the fortress)",
+   "setting": "fort_site",
+   "fort_at_site": "yes",
+   "outside_fort": true,
+   "notes": "round opening in the ceiling, but the original entrance was in the south wall (acc U)",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-326b",
+   "src": "ASI",
+   "key": "4071",
+   "part": "cruciform columbarium cave with 415 niches, 100 m S of the fortress",
+   "niches": 415,
+   "setting": "fort_site",
+   "fort_at_site": "yes",
+   "outside_fort": true,
+   "part_of_site": "south",
+   "acc": "M",
+   "acc_basis": "square opening in the centre of the ceiling",
+   "quote": "A square opening (1.3×1.4 m) is hewn in the center",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-340a",
+   "src": "ASI",
+   "key": "4089",
+   "part": "bell-shaped columbarium cave with 117 niches near the winepress",
+   "niches": 117,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-340b",
+   "src": "ASI",
+   "key": "4089",
+   "part": "eastern bell-shaped cave with 100 niches",
+   "niches": 100,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-341",
+   "src": "ASI",
+   "key": "4090",
+   "part": "cruciform columbarium cave entered through the ceiling",
+   "niches": 60,
+   "setting": "settlement",
+   "acc": "M",
+   "acc_basis": "opening in the centre of the ceiling",
+   "quote": "accessed through an opening in the center of the ceiling",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-349",
+   "src": "ASI",
+   "key": "4105",
+   "part": "cruciform cave with 55 niches, steps to the floor",
+   "niches": 55,
+   "setting": "settlement",
+   "acc": "M",
+   "acc_basis": "steps lead to the floor",
+   "quote": "steps leading to the floor from the northeastern side",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-368",
+   "src": "ASI",
+   "key": "4158",
+   "part": "cruciform columbarium cave entered by a central opening",
+   "niches": 60,
+   "setting": "settlement",
+   "acc": "M",
+   "acc_basis": "INFERENCE: an access opening at the centre of a cruciform rock-cut cave is in its ceiling",
+   "quote": "accessed via an opening in the center (the middle of the cross)",
+   "check": true,
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-383",
+   "src": "ASI",
+   "key": "4173",
+   "part": "cistern with a few niches cut later",
+   "cons": "cistern-converted",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-391",
+   "src": "ASI",
+   "key": "4182",
+   "part": "cave of three rooms with 52 niches",
+   "niches": 52,
+   "setting": "unknown",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-396",
+   "src": "ASI",
+   "key": "4187",
+   "part": "one-room cave with remains of niches",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-109-520",
+   "src": "ASI",
+   "key": "4312",
+   "part": "caves with columbaria",
+   "n": null,
+   "setting": "fort_site",
+   "fort_at_site": "yes",
+   "notes": "a fortified structure 'interpreted as a stronghold' in the SW of the compound; the caves are not placed relative to it",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-640",
+   "src": "ASI",
+   "key": "4433",
+   "part": "winepress vat deepened, 22 niches",
+   "cons": "converted vat",
+   "niches": 22,
+   "setting": "isolated"
+  },
+  {
+   "cid": "A-109-709",
+   "src": "ASI",
+   "key": "4504",
+   "part": "cave or cistern with 16 niches",
+   "niches": 16,
+   "setting": "isolated",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-727a",
+   "src": "ASI",
+   "key": "4522",
+   "part": "cave with about 120 niches",
+   "niches": 120,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-727b",
+   "src": "ASI",
+   "key": "4522",
+   "part": "cave of two bell-shaped halls with about 60 niches",
+   "niches": 60,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-729a",
+   "src": "ASI",
+   "key": "4524",
+   "part": "circular columbarium cave with about 140 niches, curved wall at the entrance",
+   "niches": 140,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-729b",
+   "src": "ASI",
+   "key": "4524",
+   "part": "bell-shaped columbarium cave north of the building remains",
+   "setting": "settlement",
+   "part_of_site": "north",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-109-732",
+   "src": "ASI",
+   "key": "4527",
+   "part": "corridor with six chambers, 172 niches, ceiling windows",
+   "niches": 172,
+   "setting": "isolated",
+   "notes": "east opening 'probably the main entrance'; four windows in the chamber ceilings (acc U)",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-120-36",
+   "src": "ASI",
+   "key": "18911",
+   "part": "cistern converted to a columbarium",
+   "cons": "cistern-converted",
+   "setting": "unknown"
+  },
+  {
+   "cid": "A-120-37",
+   "src": "ASI",
+   "key": "18912",
+   "part": "columbarium linked to a hiding complex",
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-120-68",
+   "src": "ASI",
+   "key": "18943",
+   "part": "columbarium cave entered through a round shaft",
+   "setting": "isolated",
+   "acc": "M",
+   "acc_basis": "round shaft c. 3 m diam.",
+   "quote": "The entrance to the cave is via a round shaft",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-136-62",
+   "src": "ASI",
+   "key": "19534",
+   "part": "cave with small recesses, possibly a columbarium",
+   "setting": "unknown",
+   "uncertain": true,
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-82-650",
+   "src": "ASI",
+   "key": "14888",
+   "part": "columbarium with about 30 cells NE of a burial cave",
+   "setting": "isolated"
+  },
+  {
+   "cid": "A-83/1-62",
+   "src": "ASI",
+   "key": "9224",
+   "part": "bell-shaped MB tomb with columbarium niches",
+   "setting": "isolated",
+   "notes": "record 83/1/61 repeats this text by error; not a separate row"
+  },
+  {
+   "cid": "A-83/2-56",
+   "src": "ASI",
+   "key": "9386",
+   "part": "dwelling cave with columbarium niches in the south wall",
+   "n": null,
+   "setting": "unknown"
+  },
+  {
+   "cid": "A-98-60",
+   "src": "ASI",
+   "key": "9821",
+   "part": "cross-shaped subterranean columbarium, 110 niches",
+   "niches": 110,
+   "setting": "settlement",
+   "part_of_site": "north",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-98-132",
+   "src": "ASI",
+   "key": "10003",
+   "part": "bell-shaped cave 5 m deep with about 50 niches, steps inside",
+   "niches": 50,
+   "setting": "settlement",
+   "acc": "M",
+   "acc_basis": "steps lead into a bell-shaped cave 5 m deep",
+   "quote": "(7 m diam. at bottom, 5 m deep), steps leading inside",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-98-142",
+   "src": "ASI",
+   "key": "10016",
+   "part": "bell-shaped cave with 30 niches",
+   "niches": 30,
+   "setting": "isolated",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-98-166",
+   "src": "ASI",
+   "key": "10074",
+   "part": "ruinous columbarium cave with 55 niches",
+   "niches": 55,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-98-169",
+   "src": "ASI",
+   "key": "10077",
+   "part": "plastered cistern with 17 niches cut later, steps to the bottom",
+   "cons": "cistern-converted",
+   "niches": 17,
+   "setting": "isolated",
+   "acc": "M",
+   "acc_basis": "hewn steps lead to the bottom",
+   "quote": "Hewn steps lead to bottom"
+  },
+  {
+   "cid": "A-98-261",
+   "src": "ASI",
+   "key": "10678",
+   "part": "bell-shaped columbaria linked to hiding complexes",
+   "n": null,
+   "setting": "settlement"
+  },
+  {
+   "cid": "A-98-276",
+   "src": "ASI",
+   "key": "10735",
+   "part": "cross-shaped cave with 16 niches, corridor entrance",
+   "niches": 16,
+   "setting": "isolated",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-98-279",
+   "src": "ASI",
+   "key": "10741",
+   "part": "cave walls with ten columbarium niches",
+   "niches": 10,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-98-289",
+   "src": "ASI",
+   "key": "10756",
+   "part": "bell-shaped cistern 12 m deep with ten niches, steps to the bottom",
+   "cons": "cistern-converted",
+   "niches": 10,
+   "setting": "isolated",
+   "acc": "M",
+   "acc_basis": "hewn steps along the walls lead to the bottom",
+   "quote": "Hewn steps along walls lead to bottom"
+  },
+  {
+   "cid": "A-98-296a",
+   "src": "ASI",
+   "key": "10763",
+   "part": "columbarium caves under the structures",
+   "n": null,
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-98-296b",
+   "src": "ASI",
+   "key": "10763",
+   "part": "cross-shaped columbarium cave 8 x 8 m near Bir es-Sur",
+   "setting": "settlement",
+   "cons": "rock-cut"
+  },
+  {
+   "cid": "A-98-327",
+   "src": "ASI",
+   "key": "10887",
+   "part": "cistern 8.5 m deep with 15 niches, steps lead into it",
+   "cons": "cistern-converted",
+   "niches": 15,
+   "setting": "isolated",
+   "acc": "M",
+   "acc_basis": "hewn steps lead into the cistern",
+   "quote": "Hewn steps lead into E cistern"
+  },
+  {
+   "cid": "W-S2280",
+   "src": "WBADB",
+   "key": "S2280",
+   "dup_of": "A-83/2-56"
+  },
+  {
+   "cid": "W-S2464",
+   "src": "WBADB",
+   "key": "S2464",
+   "dup_of": "A-83/1-62"
+  },
+  {
+   "cid": "W-E351",
+   "src": "WBADB",
+   "key": "E351",
+   "dup_of": "A-83/1-62"
+  },
+  {
+   "cid": "W-S2589",
+   "src": "WBADB",
+   "key": "S2589",
+   "dup_of": "L-CYPROS"
+  },
+  {
+   "cid": "W-E371",
+   "src": "WBADB",
+   "key": "E371",
+   "dup_of": "L-CYPROS"
+  },
+  {
+   "cid": "W-S2625",
+   "src": "WBADB",
+   "key": "S2625",
+   "dup_of": "A-101-8"
+  },
+  {
+   "cid": "W-S2759",
+   "src": "WBADB",
+   "key": "S2759",
+   "dup_of": "A-102-593"
+  },
+  {
+   "cid": "W-E398",
+   "src": "WBADB",
+   "key": "E398",
+   "dup_of": "A-102-593"
+  },
+  {
+   "cid": "W-S2839",
+   "src": "WBADB",
+   "key": "S2839",
+   "dup_of": "A-101-63"
+  },
+  {
+   "cid": "W-S2860",
+   "src": "WBADB",
+   "key": "S2860",
+   "dup_of": "A-102-81"
+  },
+  {
+   "cid": "W-E428",
+   "src": "WBADB",
+   "key": "E428",
+   "dup_of": "A-102-81"
+  },
+  {
+   "cid": "W-S2869",
+   "src": "WBADB",
+   "key": "S2869",
+   "dup_of": "A-102-556"
+  },
+  {
+   "cid": "W-S2957",
+   "src": "WBADB",
+   "key": "S2957",
+   "dup_of": "A-102-131"
+  },
+  {
+   "cid": "W-E448",
+   "src": "WBADB",
+   "key": "E448",
+   "dup_of": "A-102-131"
+  },
+  {
+   "cid": "W-S2981",
+   "src": "WBADB",
+   "key": "S2981",
+   "part": "columbarium cave (Ramot Allon)",
+   "setting": "settlement"
+  },
+  {
+   "cid": "W-E454",
+   "src": "WBADB",
+   "key": "E454",
+   "dup_of": "W-S2981"
+  },
+  {
+   "cid": "W-S3001",
+   "src": "WBADB",
+   "key": "S3001",
+   "dup_of": "A-102-576"
+  },
+  {
+   "cid": "W-E462",
+   "src": "WBADB",
+   "key": "E462",
+   "dup_of": "A-102-576"
+  },
+  {
+   "cid": "W-S3010",
+   "src": "WBADB",
+   "key": "S3010",
+   "dup_of": "A-102-103"
+  },
+  {
+   "cid": "W-S3015",
+   "src": "WBADB",
+   "key": "S3015",
+   "dup_of": "A-102-114"
+  },
+  {
+   "cid": "W-E459",
+   "src": "WBADB",
+   "key": "E459",
+   "dup_of": "A-102-114"
+  },
+  {
+   "cid": "W-S3112",
+   "src": "WBADB",
+   "key": "S3112",
+   "dup_of": "A-102-166"
+  },
+  {
+   "cid": "W-S3153",
+   "src": "WBADB",
+   "key": "S3153",
+   "dup_of": "A-102-216"
+  },
+  {
+   "cid": "W-S3191",
+   "src": "WBADB",
+   "key": "S3191",
+   "dup_of": "A-102-307b"
+  },
+  {
+   "cid": "W-S3192",
+   "src": "WBADB",
+   "key": "S3192",
+   "dup_of": "A-102-307a"
+  },
+  {
+   "cid": "W-E523",
+   "src": "WBADB",
+   "key": "E523",
+   "dup_of": "A-102-307a"
+  },
+  {
+   "cid": "W-S3198",
+   "src": "WBADB",
+   "key": "S3198",
+   "dup_of": "A-102-277"
+  },
+  {
+   "cid": "W-S3201",
+   "src": "WBADB",
+   "key": "S3201",
+   "dup_of": "A-102-549"
+  },
+  {
+   "cid": "W-S3235",
+   "src": "WBADB",
+   "key": "S3235",
+   "dup_of": "A-102-311"
+  },
+  {
+   "cid": "W-E537",
+   "src": "WBADB",
+   "key": "E537",
+   "dup_of": "A-102-311"
+  },
+  {
+   "cid": "W-S3265",
+   "src": "WBADB",
+   "key": "S3265",
+   "dup_of": "A-102-364"
+  },
+  {
+   "cid": "W-S3457",
+   "src": "WBADB",
+   "key": "S3457",
+   "dup_of": "A-102-523"
+  },
+  {
+   "cid": "W-S3609",
+   "src": "WBADB",
+   "key": "S3609",
+   "dup_of": "A-102-540"
+  },
+  {
+   "cid": "W-S3640",
+   "src": "WBADB",
+   "key": "S3640",
+   "dup_of": "A-106-49"
+  },
+  {
+   "cid": "W-S3848",
+   "src": "WBADB",
+   "key": "S3848",
+   "dup_of": "A-106-90"
+  },
+  {
+   "cid": "W-S3868",
+   "src": "WBADB",
+   "key": "S3868",
+   "dup_of": "A-105-87"
+  },
+  {
+   "cid": "W-S3930",
+   "src": "WBADB",
+   "key": "S3930",
+   "dup_of": "A-105-85"
+  },
+  {
+   "cid": "W-S3945",
+   "src": "WBADB",
+   "key": "S3945",
+   "dup_of": "A-105-67"
+  },
+  {
+   "cid": "W-S4022",
+   "src": "WBADB",
+   "key": "S4022",
+   "part": "columbarium at Kh. Abu Shawan",
+   "setting": "fort_site",
+   "fort_at_site": "yes",
+   "notes": "'Fortified tell at S part of the site; EB3 fortification'; columbarium not placed"
+  },
+  {
+   "cid": "W-E783",
+   "src": "WBADB",
+   "key": "E783",
+   "dup_of": "W-S4022"
+  },
+  {
+   "cid": "W-S4087",
+   "src": "WBADB",
+   "key": "S4087",
+   "part": "columbarium at Kh. el-Khamis (Armenian monastery)",
+   "setting": "settlement"
+  },
+  {
+   "cid": "W-E793",
+   "src": "WBADB",
+   "key": "E793",
+   "dup_of": "W-S4087"
+  },
+  {
+   "cid": "W-S4114",
+   "src": "WBADB",
+   "key": "S4114",
+   "part": "columbarium at Kh. Umm el-Asafir",
+   "setting": "settlement"
+  },
+  {
+   "cid": "W-E799",
+   "src": "WBADB",
+   "key": "E799",
+   "dup_of": "W-S4114"
+  },
+  {
+   "cid": "W-S4148",
+   "src": "WBADB",
+   "key": "S4148",
+   "dup_of": "A-104-239"
+  },
+  {
+   "cid": "W-S4812",
+   "src": "WBADB",
+   "key": "S4812",
+   "part": "columbaria at H. Bet Elem [8]",
+   "n": null,
+   "setting": "settlement"
+  },
+  {
+   "cid": "W-E881",
+   "src": "WBADB",
+   "key": "E881",
+   "dup_of": "W-S4812"
+  },
+  {
+   "cid": "W-S4817",
+   "src": "WBADB",
+   "key": "S4817",
+   "dup_of": "A-109-39a",
+   "notes": "WBADB's three bell-shaped columbarium caves = ASI 109/39 a-c"
+  },
+  {
+   "cid": "W-S5115",
+   "src": "WBADB",
+   "key": "S5115",
+   "dup_of": "A-109-294"
+  },
+  {
+   "cid": "W-S5211",
+   "src": "WBADB",
+   "key": "S5211",
+   "dup_of": "A-109-341"
+  },
+  {
+   "cid": "W-S5717",
+   "src": "WBADB",
+   "key": "S5717",
+   "part": "columbarium at Tell el-Hadab",
+   "setting": "fort_site",
+   "fort_at_site": "yes",
+   "notes": "'Fortification?' with a question mark"
+  },
+  {
+   "cid": "W-S5875",
+   "src": "WBADB",
+   "key": "S5875",
+   "part": "columbarium in a cemetery (Simye E)",
+   "setting": "isolated"
+  },
+  {
+   "cid": "W-S5915",
+   "src": "WBADB",
+   "key": "S5915",
+   "part": "columbarium (Eshtemoa NW)",
+   "setting": "unknown"
+  },
+  {
+   "cid": "W-S5917",
+   "src": "WBADB",
+   "key": "S5917",
+   "part": "columbarium (Ma'in S)",
+   "setting": "unknown"
+  },
+  {
+   "cid": "W-S5978",
+   "src": "WBADB",
+   "key": "S5978",
+   "part": "columbarium tower by a water cistern (Batz 2006b, Separation Barrier)",
+   "cons": "built",
+   "setting": "tower_itself",
+   "tower_at_site": "yes",
+   "notes": "first publication Batz 2006b pp. 58-61 not read"
+  },
+  {
+   "cid": "W-E978",
+   "src": "WBADB",
+   "key": "E978",
+   "dup_of": "W-S5978"
+  },
+  {
+   "cid": "W-S5981",
+   "src": "WBADB",
+   "key": "S5981",
+   "part": "rock-cut columbarium caves at Kh. el-Hanzir",
+   "n": null,
+   "cons": "rock-cut",
+   "setting": "settlement"
+  },
+  {
+   "cid": "W-E785",
+   "src": "WBADB",
+   "key": "E785",
+   "part": "columbarium cave at Deir Tantur",
+   "setting": "settlement",
+   "date": "D",
+   "date_text": "'Hel and Rom1 columbarium cave' (Rom1 lies inside the window)",
+   "quote": "Hel and Rom1 columbarium cave"
+  },
+  {
+   "cid": "W-E788",
+   "src": "WBADB",
+   "key": "E788",
+   "part": "columbarium cave at Gillo (Sion excavation)",
+   "setting": "isolated"
+  },
+  {
+   "cid": "W-E846",
+   "src": "WBADB",
+   "key": "E846",
+   "part": "columbarium at Kh. Beit Sawir",
+   "setting": "settlement"
+  },
+  {
+   "cid": "W-E872",
+   "src": "WBADB",
+   "key": "E872",
+   "part": "columbarium at Kh. Kharuf",
+   "setting": "settlement"
+  },
+  {
+   "cid": "W-E950",
+   "src": "WBADB",
+   "key": "E950",
+   "part": "columbarium at Kh. Ma'in (Byzantine stronghold site)",
+   "setting": "fort_site",
+   "fort_at_site": "yes"
+  },
+  {
+   "cid": "L-JER-ROUND",
+   "src": "LIT",
+   "key": "netzer2001pal",
+   "name": "Jericho, round columbarium tower west of the royal estate",
+   "ref": "Netzer 2001, The Palaces of the Hasmoneans and Herod the Great, pp. 14-15 (Fig. 5), 127",
+   "lat": 31.85187,
+   "lon": 35.43624,
+   "p_m": 2000,
+   "coord_src": "places_v2 jericho_palaces point (Wikidata Q2460244); the tower lies on the west margin of the royal estate, position not given",
+   "cons": "built",
+   "setting": "tower_itself",
+   "tower_at_site": "yes",
+   "lev2": "M",
+   "lev_basis": "CLAIM: lower part a dovecote, upper part probably a guard post (p. 14)",
+   "lev_pos": "dovecote in the lower part",
+   "date": "D",
+   "date_text": "'apparently built by the Hasmoneans' (p. 127)",
+   "quote": "the lower part of which served as a dovecote (columbarium)",
+   "post_freeze_override": {
+    "date": "U",
+    "date_text": "Final Reports I p. 335: date of construction 'still indeterminable'"
+   },
+   "prio": 3
+  },
+  {
+   "cid": "L-JER-ROUND-FR",
+   "src": "LIT",
+   "key": "netzer2001fr",
+   "name": "Jericho, round tower A106 (Final Reports I)",
+   "ref": "Netzer 2001, Hasmonean and Herodian Palaces at Jericho, Final Reports I, pp. 2, 335",
+   "dup_of": "L-JER-ROUND",
+   "post_freeze_source": true,
+   "notes": "'no doubt' that 'the lower part of the round tower served as a columbarium'; date indeterminable (p. 335)"
+  },
+  {
+   "cid": "L-JER-SQUARE",
+   "src": "LIT",
+   "key": "netzer2001pal",
+   "name": "Jericho, square Herodian columbarium structure south of the twin pools",
+   "ref": "Netzer 2001, The Palaces of the Hasmoneans and Herod the Great, p. 44 (Fig. 47 G), p. 127",
+   "lat": 31.85187,
+   "lon": 35.43624,
+   "p_m": 500,
+   "coord_src": "places_v2 jericho_palaces point; inside the Pools Complex",
+   "cons": "built",
+   "setting": "palace_estate",
+   "date": "D",
+   "date_text": "'from the Herodian period' (p. 127)",
+   "quote": "served at least as a columbarium",
+   "post_freeze_override": {
+    "acc": "M",
+    "acc_basis": "CLAIM/INFERENCE: no entrance door at ground level (Final Reports I pp. 91-92); columbarium towers entered from the upper storey (p. 28)",
+    "uncertain": true
+   },
+   "prio": 3
+  },
+  {
+   "cid": "L-JER-SQUARE-FR",
+   "src": "LIT",
+   "key": "netzer2001fr",
+   "name": "Jericho, Structure A(B)14 (columbarium?)",
+   "ref": "Netzer 2001, Final Reports I, pp. 91-92, Ill. 129; p. 28",
+   "dup_of": "L-JER-SQUARE",
+   "post_freeze_source": true,
+   "notes": "6.7 x 6.7 m, one room with four projecting walls; no entrances up to the preserved 30 cm; no pigeonholes found"
+  },
+  {
+   "cid": "L-CYPROS",
+   "src": "LIT",
+   "key": "netzer2001pal",
+   "name": "Cypros, round watchtower that apparently contained a columbarium",
+   "ref": "Netzer 2001, The Palaces of the Hasmoneans and Herod the Great, pp. 73, 127; WBADB S2589/E371",
+   "lat": 31.844093,
+   "lon": 35.426772,
+   "p_m": 300,
+   "coord_src": "WBADB S2589 point (Old Israel Grid 190500/139050)",
+   "cons": "built",
+   "setting": "tower_itself",
+   "fort_at_site": "yes",
+   "tower_at_site": "yes",
+   "lev2": "M",
+   "lev_basis": "CLAIM: Netzer assumes these towers had a dovecote below and a watchtower above (p. 14)",
+   "date": "D",
+   "date_text": "Hasmonean, apparently (p. 127); WBADB 'Herodian tower - columbarium'",
+   "quote": "a round watchtower which apparently also contained a columbarium",
+   "notes": "on the level area 30 m below the summit, alone there in the Hasmonean period; part of Herodian Cypros later (in_fort U)"
+  },
+  {
+   "cid": "L-MASADA-SQ1",
+   "src": "LIT",
+   "key": "netzer2001pal",
+   "name": "Masada, square columbarium tower 1 (western edge)",
+   "ref": "Netzer 2001, The Palaces of the Hasmoneans and Herod the Great, p. 82 (Fig. 100), pp. 14, 127",
+   "lat": 31.3158,
+   "lon": 35.3534,
+   "p_m": 400,
+   "coord_src": "Masada summit point from research/agent_review_2026-10-07/wave1/T02_hoard_match/chre_list_raw.csv",
+   "cons": "built",
+   "setting": "fortress_inside",
+   "fort_at_site": "yes",
+   "tower_at_site": "yes",
+   "levels": 2,
+   "lev2": "M",
+   "lev3": "F",
+   "lev_basis": "published reconstruction (Fig. 100): pigeonhole storey below, a room above, flat roof",
+   "lev_pos": "dovecote in the lower of two storeys; the second storey counted from the top if the roof is not counted",
+   "acc": "M",
+   "acc_basis": "INFERENCE from the reconstruction drawing (Fig. 100): no ground-floor door, an external ladder to an upper door, openings between levels",
+   "part_of_site": "west",
+   "date": "D",
+   "date_text": "first Herodian building phase 'or, theoretically, even ... the Hasmoneans' (p. 82)",
+   "quote": "Two such towers were revealed at the western edge of Masada",
+   "exposed": "yes",
+   "check": true,
+   "prio": 3
+  },
+  {
+   "cid": "L-MASADA-SQ2",
+   "src": "LIT",
+   "key": "netzer2001pal",
+   "name": "Masada, square columbarium tower 2 (western edge)",
+   "ref": "Netzer 2001, The Palaces of the Hasmoneans and Herod the Great, p. 82 (Fig. 100), pp. 14, 127",
+   "lat": 31.3158,
+   "lon": 35.3534,
+   "p_m": 400,
+   "coord_src": "as L-MASADA-SQ1",
+   "cons": "built",
+   "setting": "fortress_inside",
+   "fort_at_site": "yes",
+   "tower_at_site": "yes",
+   "levels": 2,
+   "lev2": "M",
+   "lev3": "F",
+   "lev_basis": "published reconstruction (Fig. 100), as SQ1",
+   "lev_pos": "as SQ1",
+   "acc": "M",
+   "acc_basis": "INFERENCE from the reconstruction drawing, as SQ1",
+   "part_of_site": "west",
+   "date": "D",
+   "date_text": "as SQ1",
+   "quote": "Two such towers were revealed at the western edge of Masada",
+   "exposed": "yes",
+   "check": true,
+   "prio": 3
+  },
+  {
+   "cid": "L-MASADA-RD",
+   "src": "LIT",
+   "key": "netzer2001pal",
+   "name": "Masada, round columbarium tower",
+   "ref": "Netzer 2001, The Palaces of the Hasmoneans and Herod the Great, p. 82 (Fig. 100 caption), p. 127",
+   "lat": 31.3158,
+   "lon": 35.3534,
+   "p_m": 400,
+   "coord_src": "as L-MASADA-SQ1",
+   "cons": "built",
+   "setting": "fortress_inside",
+   "fort_at_site": "yes",
+   "tower_at_site": "yes",
+   "lev2": "M",
+   "lev_basis": "CLAIM: 'The setup in the round columbarium tower was apparently similar' (to Fig. 100)",
+   "acc": "M",
+   "acc_basis": "CLAIM by analogy with Fig. 100 (INFERENCE from the drawing)",
+   "date": "D",
+   "date_text": "as SQ1",
+   "quote": "The setup in the round columbarium tower was apparently similar",
+   "exposed": "yes",
+   "check": true,
+   "prio": 3
+  },
+  {
+   "cid": "L-MARESHA-SC30",
+   "src": "LIT",
+   "key": "klonerzissu2013",
+   "name": "Maresha lower city, SC 30 'es-Suk' columbarium",
+   "ref": "Kloner and Zissu 2013, Opera Ipogea 2, pp. 48, 53-54 (Figs. 14, 16-18)",
+   "lat": 31.59306,
+   "lon": 34.89833,
+   "p_m": 700,
+   "coord_src": "Tel Maresha, en.wikipedia.org/wiki/Maresha (31.59306 N, 34.89833 E); the lower city surrounds the tell",
+   "cons": "rock-cut",
+   "niches": 2000,
+   "setting": "settlement",
+   "fort_at_site": "yes",
+   "acc": "M",
+   "acc_basis": "Maresha columbaria 'accessed by staircases' from courtyards (p. 53); Fig. 18 stepped corridor to the surface (WebFetch summary only)",
+   "part_of_site": "west",
+   "date": "L",
+   "date_text": "no longer used as a columbarium from the beginning of the 2nd century BCE (p. 53)",
+   "quote": "no longer used as such from the beginning of the 2nd",
+   "exposed": "yes",
+   "read_via": "WebFetch text extraction; not checked against page images",
+   "prio": 2
+  },
+  {
+   "cid": "L-MARESHA-SC21",
+   "src": "LIT",
+   "key": "klonerzissu2013",
+   "name": "Maresha lower city, columbarium in SC 21",
+   "ref": "Kloner and Zissu 2013, Opera Ipogea 2, p. 53 (Fig. 13, after Kloner and Hess 1985)",
+   "lat": 31.59306,
+   "lon": 34.89833,
+   "p_m": 700,
+   "coord_src": "as L-MARESHA-SC30",
+   "cons": "rock-cut",
+   "setting": "settlement",
+   "fort_at_site": "yes",
+   "acc": "M",
+   "acc_basis": "general statement for the Maresha lower-city columbaria (p. 53)",
+   "date": "P",
+   "date_text": "the 85 lower-city columbaria are of the 3rd and 2nd centuries BCE (p. 52)",
+   "quote": "accessed by staircases",
+   "exposed": "yes",
+   "read_via": "WebFetch text extraction; not checked against page images",
+   "prio": 2
+  },
+  {
+   "cid": "L-MARESHA-LC",
+   "src": "LIT",
+   "key": "klonerzissu2013",
+   "name": "Maresha lower city, the other columbaria (85 counted, less SC 21 and SC 30)",
+   "ref": "Kloner and Zissu 2013, Opera Ipogea 2, pp. 52-53",
+   "lat": 31.59306,
+   "lon": 34.89833,
+   "p_m": 700,
+   "coord_src": "as L-MARESHA-SC30",
+   "n": 83,
+   "cons": "rock-cut",
+   "setting": "settlement",
+   "fort_at_site": "yes",
+   "acc": "M",
+   "acc_basis": "general statement (p. 53)",
+   "date": "P",
+   "date_text": "3rd and 2nd centuries BCE (p. 52)",
+   "quote": "At Maresha LC, 85 columbaria installations were found in caves",
+   "exposed": "yes",
+   "read_via": "WebFetch text extraction; not checked against page images",
+   "notes": "Puech 2015 p. 77 n. 318 gives 'more than 85' with 'more than 50,000 pigeonholes' (secondary)",
+   "prio": 2
+  }
+ ],
+ "excluded": [
+  {
+   "src": "ASI",
+   "key": "13022",
+   "label": "104/49 Har Ya'ala",
+   "reason": "niches 'resembling those of columbaria' in a cistern: a comparison, not a columbarium"
+  },
+  {
+   "src": "ASI",
+   "key": "9223",
+   "label": "83/1/61 [156]",
+   "reason": "the record repeats the text of site [157] (83/1/62) by error"
+  },
+  {
+   "src": "LIT",
+   "key": "netzer2001fr p. 303",
+   "label": "Jericho Tower AA1",
+   "reason": "'could also have served as a columbarium but this is doubtful'"
+  },
+  {
+   "src": "LIT",
+   "key": "Josephus, Jewish War 5.181 (via Netzer 2001 Palaces p. 125)",
+   "label": "Herod's palace, Jerusalem",
+   "reason": "text-only mention of 'cots for tame pigeons'; no recorded remains"
+  },
+  {
+   "src": "LIT",
+   "key": "BAR image caption bsba350303423 (Zissu)",
+   "label": "Horvat Abu Haf tower columbarium",
+   "reason": "unplaced: 'about 6 mi north of modern Beer Sheva' only (more than 2 km uncertainty; popular-magazine caption); Zissu 1995 not read"
+  },
+  {
+   "src": "LIT",
+   "key": "Bet Guvrin necropolis ch. 4 (Avni, Dahari and Kloner 2008, pp. 119-120)",
+   "label": "Bet Guvrin",
+   "reason": "read; no columbarium mentioned"
+  }
+ ]
+}
