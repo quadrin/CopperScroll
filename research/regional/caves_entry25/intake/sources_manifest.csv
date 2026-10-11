@@ -1,0 +1,16 @@
+plan_key,source,route,bytes,sha256,exposure_note,read_scope
+S1-S2,DJD III Part I; RB 60 pl. XX points,repository extraction research/history/djd3_text_cave_list_extracted.md; research/history/devaux1952_cave_points/,,,exposed-repo,whole extraction
+S3,"Reed, BASOR 135 (1954) 8-13","Downloads: Reed 1954 - The Qumran Caves Expedition of March, 1952 (BASOR 135).pdf",1007445,d9be5b197dfeba2b4b653c8870c863474a78e0ea6e2e7024cffe391f002f107d,exposed-repo (salvage record S01 read it before),pp. 8-13 read 04:57Z (text layer; pp. 12-13 page images)
+S4,Atiqot 41 Part 1 (Hebrew),Downloads zip(s); see atiqot41_intake.json,,576e957af0c1cfeac7a9c2a2425b42ef10fd97c99a460b7d7bfb6f0527378f67,see caves.csv per row,"Regions I-XV, excavation reports, Preface, Index (files 02-24); Part 2 and the English volume not read"
+S5,ESI 2,Downloads: Excavations and Surveys in Israel 2.pdf,70660874,d52b8ba732e398d2524eade0e02ba8f133f85f7e37138ba153e487b50756e95f,,text layer heading scan 04:58Z; no in-box cave-titled report
+S5,ESI 3,Downloads: Excavations and Surveys in Israel 3.pdf,70106903,cccf13e0d7e6e100d4b63c71de9d3443ea4acdf934e2490df49f7787f82c26d6,,scan; pp. 61-62 read (outside the box)
+S5,ESI 5,Downloads: Excavations and Surveys in Israel 5.pdf,73822455,9a19fa77731b05fa59c0587becf67f70c3b652ea0e51c6dd6f7dfb5f8a0e94fa,,scan; none
+S5,ESI 6,Downloads: Excavations and Surveys in Israel 6.pdf,91897765,0d26d7b4ebc697c106b95b9aa98dae2dcdef1d9b5650b703f62ea6d92b89e3ec,pp. 66-70 opened before (Twin Cave),pp. 66-70 read
+S5,ESI 7-8,Downloads: Excavations and Surveys in Israel 7_8.pdf,137137751,7e245f8ef79f32858a7ef3733c6e93670b6a06cde0794fcacc1626425ee0b0a0,,pp. 92-95 and 117 read; pp. 95-100 (monastery survey) scanned
+S5,ESI 9,Downloads: Excavations and Surveys in Israel 9.pdf,41126897,c2cee479df27ba01e8d9c43b0531c8ead16eeef06842eabba9eb3b06e68c14bb,,scan; none
+S5,ESI 15,Downloads: Excavations and Surveys in Israel 15.pdf,33076168,aabc5a327eef6daeaf9845345ae48a0aecb03d1b3c91c069ec1d0b23019042d8,,scan; none
+S6,"Patrich and Arubas, IEJ 39 (1989) 43-59",Downloads: Patrich & Arubas 1989 - A Juglet Containing Balsam Oil(?) from a Cave near Qumran (IEJ 39).pdf,,acad93176a3479baf9ddd9b94627a659023cd16b88282cc092dfc27cf9c548c6,exposed-repo (salvage record S13),text layer checked 04:58Z: only Cave 13 is described (merged in A41 X/35)
+"S7-S8, S14","Bar-Adon 1989 ch. B; Jones north entrance; IV/11, IV/17",repository notes,,,exposed-repo,
+S9,"ASI online maps 83/12, 109/4, 109/5, 109/7, 147",survey.iaa.org.il JSON services,,see asi_manifest.csv,9 sites exposed-repo; rest first read 05:06Z,site GeoJSON (English and Hebrew) of the five sheets
+S10,WBADB_data1.xlsx,https://emekshaveh.org/en/wp-content/uploads/2020/08/WBADB_data1.xlsx,1972863,3db734cdc1a705a6b40a5026fd98965e2e64f14313589cefae223e58bd9dea5b,,both sheets; downloaded 05:13Z; not committed
+S11,Zissu 2023,repository extraction registration/zissu2023_extracted.md,,,exposed-repo,
