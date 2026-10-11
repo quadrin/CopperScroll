@@ -138,3 +138,30 @@ How these were checked: each URL was opened with curl or WebFetch, or resolved t
 - **Herodium (item 2):** only vol. I (2015) is published. Vol. II is forthcoming.
 - **Jewish Quarter (item 5):** the series now runs to vol. X.
 - **Masada (item 1):** archive.org items masadayigaelyadi0001–0005unse are vols. I–V (per item metadata and page counts). Vols. VI–VIII are not on archive.org.
+
+## Access from San Francisco (checked 11 October 2026)
+
+Catalogues searched: SFPL, LINK+, UC Berkeley (UC Library Search) and GTU (GRACE). C = seen on a catalogue record; I = inferred from a series record. Stanford SearchWorks and HathiTrust blocked automated searches, so neither was checked.
+
+- **SFPL and LINK+** hold none of the reports, surveys or Hebrew items. The one exception is Hirschfeld 1992, which LINK+ has (C).
+- **SFPL JSTOR** works remotely with a card (sfpl.org/articles-databases). Which collections it includes is not checked.
+- **SFPL interlibrary loan** is free and covers books and articles from North American libraries. The limit is 10 at a time and it takes 4–6 weeks. It does not cover e-books or current-year publications.
+- **No US holding found:** *Niqrot Zurim* (any volume). The routes are the Israel Cave Research Center, the National Library of Israel or the article's authors.
+- **Not in Berkeley or GTU:**
+  - Herodium I: another UC campus has it.
+  - Machaerus I and III: Berkeley has only II.
+  - Kloner & Zissu 2007 in English: Berkeley has the Hebrew 2003 edition.
+  - Qedem 57 and 64: not identified by number.
+  - All of these are for SFPL interlibrary loan. Machaerus III's US holdings are unknown.
+- **E-book only at Berkeley:**
+  - CIIP IV/2: on library computers only.
+  - IAA Reports 52: check the IAA portal first.
+- **Library use only:** *Tabula Imperii Romani* (Berkeley Earth Sciences & Map Library reference copy).
+- **Not for visitors:** Coin Hoards (Berkeley AHC).
+- **Berkeley shelves (C):**
+  - *Liber Annuus*; *JSRS* from vol. 1; ʿAtiqot old series and English Series 4–19; *Qadmoniot*.
+  - Kochavi 1972; Benjamin survey 1993; Refuge Caves 1998 (vol. 2 I); Kloner & Tepper 1987.
+  - Masada series (VI–VIII I); Jericho palaces I–IV (NRLF; V I); En-Gedi I–II; Jewish Quarter (series; volumes I).
+  - City of David (Qedem 19–41, NRLF); Qedem 29; Summit I (NRLF); Ophel I (II I); Machaerus II; *Aqueducts of Israel*; Hirschfeld 1992 (NRLF).
+- **GTU (C):** Dalman 1925 (SFTS folio, available) and Hirschfeld 1992 (available). Entry needs a GTU library card.
+- **Archives:** the BayHStA images need a request to Munich, because the DDB shows metadata only. HUJI high-resolution aerials are a paid order.
