@@ -21,6 +21,7 @@ Work in progress; this file is updated with each batch commit.
 - The hash is SHA-256 (UTF-8) of the `innerText` of the page's `.reportcontent` element with whitespace collapsed to single spaces and trimmed, computed in the page by a short script (no network request). This reproduces the phase-2 hash exactly: checked on the already-read T3 position 1 (HAESI-886, `9e50e172…5c65`, 2,930 characters), the only page reloaded outside the scope.
 - From position 119 on, the script also returns the first 8 hex digits of SHA-256 of the hash string; `scripts/add_records.py` rejects a record whose typed hash does not match it (transcription check). Hashes for positions 81–118 were copied from the same script output without that check.
 - HAESI-20777: the first hash attempt ran before the content element existed; the hash was taken again after the page finished loading (no reload). The script waits for the element from then on.
+- The transcription check caught one error: for HAESI-35 the third and fourth 16-digit chunks had been typed in swapped order; the record was corrected before saving.
 - HAESI-1738 and HAESI-1219: the page-text tool cut its output at 50,000 characters, inside the figure-caption list at the end; the body text was read in full and the hash covers the whole element.
 
 ## Coding notes (exploratory, no parameter change)
@@ -42,6 +43,11 @@ Work in progress; this file is updated with each batch commit.
 - A quarry that the report places in a regional quarry field it dates to the Second Temple period is coded yes (as HAESI-12637): HAESI-631, HAESI-1844.
 - A single step in a winepress collecting vat (HAESI-866 L103) is kept in the winepress row; a staircase descending into a plastered vat (HAESI-587 L1018) is coded ritual_bath, label in the subtype, as HAESI-2020.
 - Built installations the excavator calls "possibly" pit graves are coded tomb_burial_cave with the hedge in the subtype (HAESI-25028). A rock-hewn moat is a fortification and is not coded (HAESI-268).
+- A terminus ante quem alone is likewise not a dating: a rock-hewn pit sealed by Second Temple fill, dated "at the latest" to that period (HAESI-655), is coded unknown. Ranges such as "Hellenistic–Early Roman" (HAESI-230), "1st–2nd c. CE" (HAESI-25383) and "end of the Second Temple period to the Early Islamic period" (HAESI-26021) are partial overlaps: unknown.
+- Rock-hewn pits and installations of unstated function are coded rockcut_installation (plan §5 class definition), for example HAESI-832, HAESI-25110 L101, HAESI-11627 L104; pits dug in fills, cesspits and built plastered installations of unstated function are not coded.
+- A later quarrying of the same quarry (modern blasting holes) is a separate row coded no (HAESI-2014, 785, 5447, 25438).
+- Coins that a figure caption calls a hoard are coded hoard_cache (HAESI-26022, Year 4 coins of the Great Revolt).
+- Map-ref misprints located by name (A4): HAESI-432 (impossible NIG northing; the printed OIG value is consistent with the named street). HAESI-295 gives no map reference; HAESI-230 has no introduction, permit or map reference online and is located by its title. HAESI-25249 prints Old Israel Grid values without a label; the parser reads them as OIG.
 - Map-ref misprints located by name (A4): HAESI-631 (northing c. 20 km south of Golda Meir Way) and HAESI-303 (Church of the Ascension; printed ref c. 60 km away). HAESI-162, HAESI-518 and HAESI-268 give no map reference and are located by name.
 
 ## Positions read
