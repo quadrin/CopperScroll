@@ -1,0 +1,545 @@
+{
+ "candidates": {
+  "held: citation and first lines only": 1,
+  "not coded (not a field report)": 3,
+  "not coded (outside region)": 53,
+  "not read (pages missing from the copy)": 1,
+  "read and coded": 144
+ },
+ "class_zone": {
+  "cave_with_finds|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 1,
+   "yes": 0
+  },
+  "cave_with_finds|Z2_JORDAN_VALLEY": {
+   "no": 1,
+   "rows": 1,
+   "unknown": 0,
+   "yes": 0
+  },
+  "cave_with_finds|Z3_JUDEAN_DESERT": {
+   "no": 1,
+   "rows": 8,
+   "unknown": 4,
+   "yes": 3
+  },
+  "cave_with_finds|Z4_JERUSALEM_HILLS": {
+   "no": 10,
+   "rows": 38,
+   "unknown": 17,
+   "yes": 11
+  },
+  "cave_with_finds|all": {
+   "no": 12,
+   "rows": 48,
+   "unknown": 22,
+   "yes": 14
+  },
+  "channel_aqueduct|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "channel_aqueduct|Z2_JORDAN_VALLEY": {
+   "no": 0,
+   "rows": 2,
+   "unknown": 1,
+   "yes": 1
+  },
+  "channel_aqueduct|Z3_JUDEAN_DESERT": {
+   "no": 3,
+   "rows": 8,
+   "unknown": 4,
+   "yes": 1
+  },
+  "channel_aqueduct|Z4_JERUSALEM_HILLS": {
+   "no": 53,
+   "rows": 89,
+   "unknown": 29,
+   "yes": 7
+  },
+  "channel_aqueduct|all": {
+   "no": 56,
+   "rows": 99,
+   "unknown": 34,
+   "yes": 9
+  },
+  "cistern|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 1,
+   "yes": 0
+  },
+  "cistern|Z2_JORDAN_VALLEY": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 1,
+   "yes": 0
+  },
+  "cistern|Z3_JUDEAN_DESERT": {
+   "no": 3,
+   "rows": 8,
+   "unknown": 5,
+   "yes": 0
+  },
+  "cistern|Z4_JERUSALEM_HILLS": {
+   "no": 34,
+   "rows": 85,
+   "unknown": 37,
+   "yes": 14
+  },
+  "cistern|all": {
+   "no": 37,
+   "rows": 95,
+   "unknown": 44,
+   "yes": 14
+  },
+  "columbarium_dovecote|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "columbarium_dovecote|Z2_JORDAN_VALLEY": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 0,
+   "yes": 1
+  },
+  "columbarium_dovecote|Z3_JUDEAN_DESERT": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "columbarium_dovecote|Z4_JERUSALEM_HILLS": {
+   "no": 3,
+   "rows": 10,
+   "unknown": 5,
+   "yes": 2
+  },
+  "columbarium_dovecote|all": {
+   "no": 3,
+   "rows": 11,
+   "unknown": 5,
+   "yes": 3
+  },
+  "dam|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "dam|Z2_JORDAN_VALLEY": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 1,
+   "yes": 0
+  },
+  "dam|Z3_JUDEAN_DESERT": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 1,
+   "yes": 0
+  },
+  "dam|Z4_JERUSALEM_HILLS": {
+   "no": 3,
+   "rows": 3,
+   "unknown": 0,
+   "yes": 0
+  },
+  "dam|all": {
+   "no": 3,
+   "rows": 5,
+   "unknown": 2,
+   "yes": 0
+  },
+  "hoard_cache|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "hoard_cache|Z2_JORDAN_VALLEY": {
+   "no": 1,
+   "rows": 1,
+   "unknown": 0,
+   "yes": 0
+  },
+  "hoard_cache|Z3_JUDEAN_DESERT": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "hoard_cache|Z4_JERUSALEM_HILLS": {
+   "no": 5,
+   "rows": 8,
+   "unknown": 0,
+   "yes": 3
+  },
+  "hoard_cache|all": {
+   "no": 6,
+   "rows": 9,
+   "unknown": 0,
+   "yes": 3
+  },
+  "pool_reservoir|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "pool_reservoir|Z2_JORDAN_VALLEY": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 0,
+   "yes": 1
+  },
+  "pool_reservoir|Z3_JUDEAN_DESERT": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "pool_reservoir|Z4_JERUSALEM_HILLS": {
+   "no": 18,
+   "rows": 34,
+   "unknown": 10,
+   "yes": 6
+  },
+  "pool_reservoir|all": {
+   "no": 18,
+   "rows": 35,
+   "unknown": 10,
+   "yes": 7
+  },
+  "ritual_bath|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "ritual_bath|Z2_JORDAN_VALLEY": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 0,
+   "yes": 1
+  },
+  "ritual_bath|Z3_JUDEAN_DESERT": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "ritual_bath|Z4_JERUSALEM_HILLS": {
+   "no": 1,
+   "rows": 21,
+   "unknown": 3,
+   "yes": 17
+  },
+  "ritual_bath|all": {
+   "no": 1,
+   "rows": 22,
+   "unknown": 3,
+   "yes": 18
+  },
+  "rockcut_installation|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "rockcut_installation|Z2_JORDAN_VALLEY": {
+   "no": 1,
+   "rows": 5,
+   "unknown": 3,
+   "yes": 1
+  },
+  "rockcut_installation|Z3_JUDEAN_DESERT": {
+   "no": 2,
+   "rows": 4,
+   "unknown": 2,
+   "yes": 0
+  },
+  "rockcut_installation|Z4_JERUSALEM_HILLS": {
+   "no": 34,
+   "rows": 112,
+   "unknown": 62,
+   "yes": 16
+  },
+  "rockcut_installation|all": {
+   "no": 37,
+   "rows": 121,
+   "unknown": 67,
+   "yes": 17
+  },
+  "tomb_burial_cave|Z1_GERIZIM": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 1,
+   "yes": 0
+  },
+  "tomb_burial_cave|Z2_JORDAN_VALLEY": {
+   "no": 1,
+   "rows": 2,
+   "unknown": 0,
+   "yes": 1
+  },
+  "tomb_burial_cave|Z3_JUDEAN_DESERT": {
+   "no": 2,
+   "rows": 10,
+   "unknown": 3,
+   "yes": 5
+  },
+  "tomb_burial_cave|Z4_JERUSALEM_HILLS": {
+   "no": 46,
+   "rows": 121,
+   "unknown": 31,
+   "yes": 44
+  },
+  "tomb_burial_cave|all": {
+   "no": 49,
+   "rows": 134,
+   "unknown": 35,
+   "yes": 50
+  }
+ },
+ "feature_rows": 579,
+ "headings_screened": 1900,
+ "outside_feature_rows": 0,
+ "reports": 248,
+ "reports_in_region": 247,
+ "rows_by_zone": {
+  "Z1_GERIZIM": 3,
+  "Z2_JORDAN_VALLEY": 16,
+  "Z3_JUDEAN_DESERT": 39,
+  "Z4_JERUSALEM_HILLS": 521
+ },
+ "screen_status": {
+  "held: citation and first lines only": 1,
+  "not coded (not a field report)": 3,
+  "not coded (outside region)": 1647,
+  "not read (pages missing from the copy)": 1,
+  "read and coded": 248
+ },
+ "volumes": {
+  "ESI01": {
+   "feature_rows": 54,
+   "headings": 109,
+   "reports": 22,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 1,
+    "Z3_JUDEAN_DESERT": 1,
+    "Z4_JERUSALEM_HILLS": 20
+   }
+  },
+  "ESI04": {
+   "feature_rows": 28,
+   "headings": 116,
+   "reports": 14,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 3,
+    "Z4_JERUSALEM_HILLS": 11
+   }
+  },
+  "ESI10": {
+   "feature_rows": 44,
+   "headings": 120,
+   "reports": 15,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 1,
+    "Z3_JUDEAN_DESERT": 1,
+    "Z4_JERUSALEM_HILLS": 13
+   }
+  },
+  "ESI11": {
+   "feature_rows": 0,
+   "headings": 6,
+   "reports": 0,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 0,
+    "Z4_JERUSALEM_HILLS": 0
+   }
+  },
+  "ESI12": {
+   "feature_rows": 43,
+   "headings": 88,
+   "reports": 14,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 2,
+    "Z4_JERUSALEM_HILLS": 12
+   }
+  },
+  "ESI13": {
+   "feature_rows": 57,
+   "headings": 88,
+   "reports": 18,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 1,
+    "Z3_JUDEAN_DESERT": 5,
+    "Z4_JERUSALEM_HILLS": 12
+   }
+  },
+  "ESI14": {
+   "feature_rows": 60,
+   "headings": 100,
+   "reports": 17,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 1,
+    "Z3_JUDEAN_DESERT": 4,
+    "Z4_JERUSALEM_HILLS": 12
+   }
+  },
+  "ESI16": {
+   "feature_rows": 26,
+   "headings": 84,
+   "reports": 17,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 2,
+    "Z3_JUDEAN_DESERT": 1,
+    "Z4_JERUSALEM_HILLS": 14
+   }
+  },
+  "ESI17": {
+   "feature_rows": 0,
+   "headings": 45,
+   "reports": 0,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 0,
+    "Z4_JERUSALEM_HILLS": 0
+   }
+  },
+  "ESI18": {
+   "feature_rows": 33,
+   "headings": 119,
+   "reports": 15,
+   "zones": {
+    "Z1_GERIZIM": 1,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 2,
+    "Z4_JERUSALEM_HILLS": 12
+   }
+  },
+  "ESI19": {
+   "feature_rows": 25,
+   "headings": 122,
+   "reports": 17,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 1,
+    "Z4_JERUSALEM_HILLS": 15
+   }
+  },
+  "ESI20": {
+   "feature_rows": 12,
+   "headings": 146,
+   "reports": 10,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 1,
+    "Z4_JERUSALEM_HILLS": 9
+   }
+  },
+  "HAESI109": {
+   "feature_rows": 14,
+   "headings": 102,
+   "reports": 6,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 0,
+    "Z4_JERUSALEM_HILLS": 6
+   }
+  },
+  "HAESI110": {
+   "feature_rows": 30,
+   "headings": 122,
+   "reports": 13,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 1,
+    "Z4_JERUSALEM_HILLS": 12
+   }
+  },
+  "HAESI111": {
+   "feature_rows": 40,
+   "headings": 133,
+   "reports": 18,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 0,
+    "Z4_JERUSALEM_HILLS": 18
+   }
+  },
+  "HAESI112": {
+   "feature_rows": 39,
+   "headings": 113,
+   "reports": 18,
+   "zones": {
+    "Z1_GERIZIM": 1,
+    "Z2_JORDAN_VALLEY": 2,
+    "Z3_JUDEAN_DESERT": 1,
+    "Z4_JERUSALEM_HILLS": 14
+   }
+  },
+  "HAESI113": {
+   "feature_rows": 35,
+   "headings": 97,
+   "reports": 12,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 0,
+    "Z4_JERUSALEM_HILLS": 12
+   }
+  },
+  "HAESI114": {
+   "feature_rows": 18,
+   "headings": 109,
+   "reports": 9,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 0,
+    "Z3_JUDEAN_DESERT": 0,
+    "Z4_JERUSALEM_HILLS": 9
+   }
+  },
+  "HAESI115": {
+   "feature_rows": 21,
+   "headings": 81,
+   "reports": 13,
+   "zones": {
+    "Z1_GERIZIM": 0,
+    "Z2_JORDAN_VALLEY": 1,
+    "Z3_JUDEAN_DESERT": 1,
+    "Z4_JERUSALEM_HILLS": 11
+   }
+  }
+ },
+ "window": {
+  "no": 222,
+  "unknown": 222,
+  "yes": 135
+ }
+}
