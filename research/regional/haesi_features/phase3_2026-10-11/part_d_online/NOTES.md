@@ -37,6 +37,12 @@ Work in progress; this file is updated with each batch commit.
 - A function discussed only as one of several proposals in the literature is not imposed: the Hasmonean wall W4493 under Wilson's Arch (HAESI-25662) is not coded as a dam; the broad wall at the Tyropoeon outlet that the excavators themselves call "probably ... a dam" (HAESI-26253) is.
 - Natural pits without cutting or plaster (HAESI-20771, HAESI-2027) and a plastered pit for "liquids" with water not stated (HAESI-25770) are not coded.
 - A radiocarbon range straddling the window start (HAESI-25047 furnace, 205–90 BCE) and dates given as "2nd c. CE, at the latest under Hadrian" (HAESI-1219 cardo drains) are partial overlaps: unknown.
+- A terminus post quem alone is not a dating: the cistern plaster with an Archelaus prutah, dated "at the earliest" to the late 1st c. BCE–1st c. CE (HAESI-26426), is coded unknown.
+- Where the report gives no dating statement for a feature and only reports pottery from its fill or covering soil, the feature is coded unknown with the pottery in `period` (as HAESI-25047): HAESI-22787 miqveh (1st c. CE fill), HAESI-587 winepress and stepped vat (Early Roman pottery in the vats).
+- A quarry that the report places in a regional quarry field it dates to the Second Temple period is coded yes (as HAESI-12637): HAESI-631, HAESI-1844.
+- A single step in a winepress collecting vat (HAESI-866 L103) is kept in the winepress row; a staircase descending into a plastered vat (HAESI-587 L1018) is coded ritual_bath, label in the subtype, as HAESI-2020.
+- Built installations the excavator calls "possibly" pit graves are coded tomb_burial_cave with the hedge in the subtype (HAESI-25028). A rock-hewn moat is a fortification and is not coded (HAESI-268).
+- Map-ref misprints located by name (A4): HAESI-631 (northing c. 20 km south of Golda Meir Way) and HAESI-303 (Church of the Ascension; printed ref c. 60 km away). HAESI-162, HAESI-518 and HAESI-268 give no map reference and are located by name.
 
 ## Positions read
 
