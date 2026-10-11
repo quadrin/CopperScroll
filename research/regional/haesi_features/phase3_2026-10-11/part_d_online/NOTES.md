@@ -1,0 +1,81 @@
+# HA-ESI phase 3, part D: online tier T3 (Jerusalem), positions 81–662
+
+Complete: all 582 positions in scope (81–662) were read and coded on 2026-10-11.
+
+## Scope and rules
+
+- Scope: online tier T3 (titles beginning "Jerusalem"), positions 81–662 of 662 in the frozen order of `../../phase2_2026-10-10/online_screen.csv` (ascending SHA-256 of the report id). Positions 1–80 were read in phase 2 and are not re-coded.
+- Rules: phase-2 frozen plan (`../../phase2_2026-10-10/PLAN.md`, SHA-256 `5b1a5c08…b3be`) with amendments A1–A4, under the phase-3 scope freeze (`../PLAN.md`, commit 4d8325e, SHA-256 `312c2733…5cf2`). Classes and in-window rule as plan §5–§6; A4 coding notes followed (hedged datings follow the named period; partial-overlap ranges unknown; modern-dated features coded no).
+- Exposure: every report coded here was first read in this session, after both freezes (`unexposed at freeze`).
+- Held cave areas and the Tell es-Sultan strip (plan §7) did not occur in T3; no report was held.
+
+## Access route
+
+- hadashot.iaa.org.il in the owner's Chrome (Claude in Chrome), one tab created for this session, one report page at a time. No downloads; no linked files (for example the full text of an "Extended report") were opened.
+- Pacing: each load is followed by a script step that waits until at least 3 s after that page's navigation start (and until the page has finished loading) before anything else happens, so successive loads are at least 3 s apart; in practice the gap was much longer.
+- No Cloudflare or other check appeared. The extension disconnected once (before position 85); after reconnecting, the already-loaded page was read without reloading.
+- Tool use: for each report one `browser_batch` call sent three steps in order: `navigate` to the report URL, a `javascript_tool` step (wait for the 3 s minimum and page load, then hash the content element; no `fetch`, no requests, no loop over pages) and `get_page_text`. This is the same one-page-at-a-time route; it is recorded here because the hash and the wait ran as a page script.
+- HAESI-1217 was loaded twice by mistake (the second load more than 3 s after the first); only one reading was used. No other page was loaded more than once.
+
+## Text read and hashes
+
+- The report body was read with the page-text tool (`get_page_text`).
+- The hash is SHA-256 (UTF-8) of the `innerText` of the page's `.reportcontent` element with whitespace collapsed to single spaces and trimmed, computed in the page by a short script (no network request). This reproduces the phase-2 hash exactly: checked on the already-read T3 position 1 (HAESI-886, `9e50e172…5c65`, 2,930 characters), the only page reloaded outside the scope.
+- From position 119 on, the script also returns the first 8 hex digits of SHA-256 of the hash string; `scripts/add_records.py` rejects a record whose typed hash does not match it (transcription check). Hashes for positions 81–118 were copied from the same script output without that check.
+- HAESI-20777: the first hash attempt ran before the content element existed; the hash was taken again after the page finished loading (no reload). The script waits for the element from then on.
+- The transcription check caught one error: for HAESI-35 the third and fourth 16-digit chunks had been typed in swapped order; the record was corrected before saving.
+- HAESI-1738 and HAESI-1219: the page-text tool cut its output at 50,000 characters, inside the figure-caption list at the end; the body text was read in full and the hash covers the whole element.
+
+## Coding notes (exploratory, no parameter change)
+
+- Map references are recorded as printed. Misprints are handled as phase 2 did (A4): HAESI-25494 and HAESI-1801 (eastings or northings far from the named place) are located by name in Z4; HAESI-9546 printed a dash for the slash. Reports without a map reference (Giv‘ati Parking Lot, Wilson's Arch) are located by name in Z4. HAESI-25420 writes the northing first (handled by the phase-1 parser).
+- Bathtubs in bathhouses are coded pool_reservoir with subtype "bathtub" (HAESI-347) so that they can be filtered out.
+- Natural rock shelters with finds are coded cave_with_finds (HAESI-26591).
+- Plastered installations whose function the report does not state are not coded; installations the report calls water-related are coded pool_reservoir.
+- Where a survey or multi-area report gives different datings for features of one class, the class is split into rows by site or area (`site` field), so each row has one dating.
+- Stepped plastered installations are coded ritual_bath whatever the excavator's label (plan §5), with the label in the subtype (for example "probably not a miqveh", HAESI-26474; "stepped pool", HAESI-26253; "storage pool" of an irrigation system, HAESI-2094).
+- One rock-cut feature with successive uses dated differently is coded as one row per use, each with its own dating: HAESI-26501 (Iron Age burial cave, Second Temple miqveh, Byzantine–Mamluk shelter) and HAESI-26178 L501 (probable Second Temple miqveh, Roman–Byzantine cistern).
+- Grave goods that a report calls "a cache" inside a sealed burial niche (HAESI-24894) are not coded hoard_cache.
+- HAESI-2094 ('Ir Gannim) prints a northing c. 7 km south of the named streets; located by name (A4 handling). HAESI-1799 and HAESI-539 give no map reference and are located by name.
+- A function discussed only as one of several proposals in the literature is not imposed: the Hasmonean wall W4493 under Wilson's Arch (HAESI-25662) is not coded as a dam; the broad wall at the Tyropoeon outlet that the excavators themselves call "probably ... a dam" (HAESI-26253) is.
+- Natural pits without cutting or plaster (HAESI-20771, HAESI-2027) and a plastered pit for "liquids" with water not stated (HAESI-25770) are not coded.
+- A radiocarbon range straddling the window start (HAESI-25047 furnace, 205–90 BCE) and dates given as "2nd c. CE, at the latest under Hadrian" (HAESI-1219 cardo drains) are partial overlaps: unknown.
+- A terminus post quem alone is not a dating: the cistern plaster with an Archelaus prutah, dated "at the earliest" to the late 1st c. BCE–1st c. CE (HAESI-26426), is coded unknown.
+- Where the report gives no dating statement for a feature and only reports pottery from its fill or covering soil, the feature is coded unknown with the pottery in `period` (as HAESI-25047): HAESI-22787 miqveh (1st c. CE fill), HAESI-587 winepress and stepped vat (Early Roman pottery in the vats).
+- A quarry that the report places in a regional quarry field it dates to the Second Temple period is coded yes (as HAESI-12637): HAESI-631, HAESI-1844.
+- A single step in a winepress collecting vat (HAESI-866 L103) is kept in the winepress row; a staircase descending into a plastered vat (HAESI-587 L1018) is coded ritual_bath, label in the subtype, as HAESI-2020.
+- Built installations the excavator calls "possibly" pit graves are coded tomb_burial_cave with the hedge in the subtype (HAESI-25028). A rock-hewn moat is a fortification and is not coded (HAESI-268).
+- A terminus ante quem alone is likewise not a dating: a rock-hewn pit sealed by Second Temple fill, dated "at the latest" to that period (HAESI-655), is coded unknown. Ranges such as "Hellenistic–Early Roman" (HAESI-230), "1st–2nd c. CE" (HAESI-25383) and "end of the Second Temple period to the Early Islamic period" (HAESI-26021) are partial overlaps: unknown.
+- Rock-hewn pits and installations of unstated function are coded rockcut_installation (plan §5 class definition), for example HAESI-832, HAESI-25110 L101, HAESI-11627 L104; pits dug in fills, cesspits and built plastered installations of unstated function are not coded.
+- A later quarrying of the same quarry (modern blasting holes) is a separate row coded no (HAESI-2014, 785, 5447, 25438).
+- Coins that a figure caption calls a hoard are coded hoard_cache (HAESI-26022, Year 4 coins of the Great Revolt).
+- Map-ref misprints located by name (A4): HAESI-432 (impossible NIG northing; the printed OIG value is consistent with the named street). HAESI-295 gives no map reference; HAESI-230 has no introduction, permit or map reference online and is located by its title. HAESI-25249 prints Old Israel Grid values without a label; the parser reads them as OIG.
+- Map-ref misprints located by name (A4): HAESI-631 (northing c. 20 km south of Golda Meir Way) and HAESI-303 (Church of the Ascension; printed ref c. 60 km away). HAESI-162, HAESI-518 and HAESI-268 give no map reference and are located by name.
+- Positions 451–510: HAESI-458 (Gonen) prints NIG 17995/67050, far outside Jerusalem, and is located by name; HAESI-100 and HAESI-456 give no map reference. HAESI-922, HAESI-10577 and HAESI-9563 print the northing first (read by the parser).
+- A use span partly outside the window stays unknown under phase-2 A4 ("Hellenistic and Early Roman"): HAESI-759 columbarium, HAESI-25411 Cave A (2nd c. BCE into the 1st c. CE). A dated end of use alone is a terminus like HAESI-655 and is unknown: HAESI-1743 Cave 2 pit (fill of the end of the 1st–beginning of the 2nd c. CE), HAESI-15729 quarry negated by 1st c. CE retaining walls. Both HAESI-1743 and HAESI-25411 were first entered as yes during this batch and set to unknown before commit.
+- A plastered rock-hewn bell-shaped pit whose function the report does not state is coded cistern under the plan §5 class terms (HAESI-25228 F3); bell-shaped pits with a stated other function (winepress vat, furnace, press storage) stay rockcut_installation.
+- The contents of a plundered tomb cleared by robbers (ossuary fragments, Second Temple sherds) are treated as its use assemblage, not as a later fill (HAESI-25316).
+- Coins under a pavement that the report calls a foundation offering or possibly a scattered hoard (HAESI-25207, Umayyad) and a modern coin jar under a floor (HAESI-26693) are coded hoard_cache with their datings (no).
+- HAESI-2095 lies on Wadi el-Khafi in the Newe Ya‘aqov neighborhood, a tributary in the upper catchment of Nahal Perat; INFERENCE: not the held Wadi Qelt gorge of plan §7, so it was read as an ordinary T3 report.
+- A well dug into the ground and lined with fieldstones is not in the plan §5 classes (HAESI-922 Site 13). A built cavern glimpsed through a pit (HAESI-1571) and built plastered installations of unstated function (HAESI-4340 L108, HAESI-1745 L105, HAESI-2306 L1152, HAESI-25411 L20, HAESI-26310 L625, HAESI-25986) are not coded.
+- Where a report's body says a dating is uncertain between periods, that prevails over a broader summary sentence (HAESI-988 winepresses: "Early Roman or Byzantine", unknown); where the body is silent, the summary's dating is used (HAESI-988 quarries and water installations: Byzantine).
+- Same features in two reports (not independent): the Abbasid drainage channel of HAESI-2306 continued in HAESI-25020; HAESI-16734 is probably the continuation of the HAESI-1875 quarry.
+- Positions 511–662. Alternative datings both inside the window are yes (HAESI-25638); alternatives across the window boundary are unknown (HAESI-5388, 25067, 1995, 1704, 26314), as HAESI-988.
+- A quarry the report relates, even hedged, to dated Early Roman or Second Temple quarries is yes (HAESI-25458, 25246, 8503 Area A), as HAESI-631. A feature the report itself dates by analogy is coded with that dating even when the report also calls it hard to date (HAESI-26590 cistern, "first-century CE" by similar nearby installations: yes). Context cited without a dating for the feature stays unknown (HAESI-10577, 26373, 1812 quarry); relation to quarries dated 2nd–6th c. CE is unknown (HAESI-10617, 24867).
+- Later re-quarrying with drill or explosive holes is a separate row coded no (HAESI-25043, 2102, 24867).
+- A feature built inside the window and used beyond it is yes (HAESI-861 quarry used into the 2nd c. CE; HAESI-1197 Cave A used to the 3rd–4th c.), as HAESI-26183. A phase dated only "no later than the Early Roman period" is a terminus ante quem: unknown (HAESI-1117 chamber L108).
+- Lower Aqueduct segments: where the body gives no other dating, the report's general statement that the aqueduct was built in the Second Temple period (probably Hasmonean) is applied to the original channel (HAESI-25648, 25422, 26434, 434), as HAESI-8547; where the body dates the exposed phase otherwise, the body prevails (HAESI-2158, Byzantine–Early Islamic: no). Later pipes are separate rows (no). An Upper Aqueduct section with no dating statement is unknown (HAESI-24834), as HAESI-25266.
+- Surveys that date their sites only collectively ("Second Temple, Byzantine and Ottoman"; "some of the sites") give unknown for each feature (HAESI-1022, 806, 1802).
+- Finds in situ on a tomb's blocking slabs are its use assemblage (HAESI-1812, Byzantine lamps: no), as HAESI-25316. A coin deposit in a floor bedding (HAESI-26542) and 20th-c. weapons stored in a cistern (HAESI-26590) are coded hoard_cache with their datings (no).
+- Map-ref misprints located by name (A4): HAESI-4358, 758, 638 and 689 (printed values resolve 5–16 km from the named place). HAESI-8486 and HAESI-25175 print the northing first; HAESI-25941, 1884, 1376 and 269 give no map reference.
+- "Extended report" pages that only summarise and link a full report (HAESI-25804, HAESI-26431) were coded from the page body; the linked files were not opened.
+- Same structure in several reports (not independent): the Arzei Ha-Bira quarry (HAESI-4358, HAESI-8503); the Lower Aqueduct at Umm Tuba (HAESI-25422, HAESI-26434); the Tyropoeon drainage channel (HAESI-1884 and other segments, for example HAESI-26183).
+- EVIDENCE recorded in the notes field only, not coded: HAESI-1072 relates most quarried block sizes to a cubit of c. 0.425 m (the report calls this inconclusive); HAESI-25347 has blue-painted incised Hebrew letters beside a loculus.
+
+## Positions read
+
+All positions 81–662 (582 reports) were read; see `screen.csv` (status per position) and `summary.md`.
+
+## Not read
+
+No position in scope is unread. Not opened: the linked full reports of HAESI-25804 and HAESI-26431 (no downloads under the access rule).
