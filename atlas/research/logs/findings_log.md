@@ -1287,3 +1287,15 @@ Sheets: [index](../schematics/searches/README.md).
 - **Mird vault conflict entered in the ledger.** Allegro 1964 puts the ladder descent into the Mird vault in the winter 1959–60 visit; *Search in the Desert* puts it in a 1962–63 day visit, with width and height swapped. Kept open in the salvage ledger's conflicts.
 - **Counters archived.** The "Activity measures" section of OPEN_QUESTIONS and `activity_counts` in the outcome ledger were moved verbatim to [activity_history_2026-10-10.md](activity_history_2026-10-10.md). This log's atlas mirror, which had fallen behind from line 317, is in step again.
 - **Ilan–Amit 2002 p. 385.** Internet Archive still has no copy (title and editor searches). Only a scan of the page can settle Stacey's wording.
+
+
+## Regional round 2: every recorded example, not only proposed places — 11 October 2026 UTC / 10 October Los Angeles
+
+The owner asked for every recorded cave, columbarium, tomb, water installation, hidden deposit and IAA report in the region to be scored against the scroll in the same way, not just the places already proposed. Six lanes ran in parallel, each with a plan frozen before scoring. All exploratory; no outcome changed. Full summary: [regional round 2](regional_round_2026-10-10.md).
+
+- **Caves (entry 25).** 635 caves. One matches every clause at cave level: ʿAtiqot 41 cave XII/53 in Naḥal Qumran (east-facing opening split by a built, undated pillar; an Early Roman layer inside). At the both-mouths level only the Twin Cave. 436 unknown. ([caves](../regional/caves_entry25/README.md))
+- **Columbaria (entries 38, 44; dovecote reading only; of the four core editions only Puech reads it).** 179 rows. None within 2 km of either Netophah candidate. For entry 44, Masada's three towers match, on Netzer's reconstruction. ([columbaria](../regional/columbaria/README.md))
+- **Tombs.** 1,055 units; 197 in Jerusalem dated to the window. No record names Zadok or has an ancient garden; matches are the known monuments only. The Jericho cemetery report is not yet readable. ([tombs](../regional/tombs/README.md))
+- **Water (entries 21, 22, 29, 32, 42, 45, 46).** 1,437 units. No conduit head with a stone on its north; no "Solomon" reservoir with a fissure to its east; entry 29 stays closed. New lead for entry 32: ʿEin Kuweiziba at the head of the ʿArrub aqueduct. ([water](../regional/water_systems/README.md))
+- **Hoards.** 204 deposits. The scroll's hiding places still differ from recorded ones (D = 0.68), but the added known-context deposits are almost all Qumran caves. Recorded deposits are shallow (stated depths: median 0.5 m, 5 deposits); none sits by a step, pillar or gate. ([hoards](../comparanda/hoards_full/README.md))
+- **IAA reports.** 274 more reports coded, 526 feature rows in the region, 98 dated to the window. The 111 portal volume PDFs and 582 Jerusalem online reports remain. ([phase 2](../regional/haesi_features/phase2_2026-10-10/README.md))
