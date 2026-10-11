@@ -1,0 +1,765 @@
+{
+ "_note": "Exploratory view (PLAN_AMENDMENT_IAA_2026-10-11.md); summary.json is unchanged.",
+ "coverage": {
+  "outside_region": 0,
+  "unplaced_by_zone": {
+   "Z1_GERIZIM": 1,
+   "Z4_JERUSALEM_HILLS": 2
+  }
+ },
+ "inputs": {
+  "features_all.csv": "2170f7fb15b097621e07648c128719f25e50e3550d5ec8756c08fca6267e455b",
+  "report_groups.csv": "06085467541339b097fcd29a55a5d7e8d49ade829b7f8329a00f981e9624b89c",
+  "sites.csv": "7e89ddce959869e8a960103e63417870d621edb5f7f1b0376b3d12f54450e87b"
+ },
+ "scopes": {
+  "all": {
+   "bracket_rows_counted": {
+    "dedup_300m": 19,
+    "no_dedup": 35
+   },
+   "iaa_rows_counted": 21,
+   "iaa_rows_dup_of_iaa": 2,
+   "iaa_rows_dup_of_lane": 12,
+   "union_clauses": {
+    "A": {
+     "N": 200,
+     "f_fail": 0,
+     "k_match": 29,
+     "m_unknown": 171,
+     "n_weighted": {
+      "N": 293,
+      "fail": 0,
+      "match": 112,
+      "unknown": 181
+     }
+    },
+    "F_survey": {
+     "N": 200,
+     "f_fail": 34,
+     "k_match": 20,
+     "m_unknown": 146,
+     "n_weighted": {
+      "N": 293,
+      "fail": 34,
+      "match": 102,
+      "unknown": 157
+     }
+    },
+    "F_text": {
+     "N": 200,
+     "f_fail": 38,
+     "k_match": 3,
+     "m_unknown": 159,
+     "n_weighted": {
+      "N": 293,
+      "fail": 38,
+      "match": 3,
+      "unknown": 252
+     }
+    },
+    "Fplus_survey": {
+     "N": 200,
+     "f_fail": 33,
+     "k_match": 28,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 293,
+      "fail": 33,
+      "match": 111,
+      "unknown": 149
+     }
+    },
+    "Fplus_text": {
+     "N": 200,
+     "f_fail": 39,
+     "k_match": 6,
+     "m_unknown": 155,
+     "n_weighted": {
+      "N": 293,
+      "fail": 40,
+      "match": 6,
+      "unknown": 247
+     }
+    },
+    "L2": {
+     "N": 200,
+     "f_fail": 0,
+     "k_match": 5,
+     "m_unknown": 195,
+     "n_weighted": {
+      "N": 293,
+      "fail": 0,
+      "match": 5,
+      "unknown": 288
+     }
+    },
+    "L3": {
+     "N": 200,
+     "f_fail": 2,
+     "k_match": 0,
+     "m_unknown": 198,
+     "n_weighted": {
+      "N": 293,
+      "fail": 2,
+      "match": 0,
+      "unknown": 291
+     }
+    },
+    "Masada": {
+     "N": 200,
+     "f_fail": 197,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 290,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "N1_1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N1_1km_text": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N1_2km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_1km_text": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_2km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "P": {
+     "N": 200,
+     "f_fail": 5,
+     "k_match": 19,
+     "m_unknown": 176,
+     "n_weighted": {
+      "N": 293,
+      "fail": 6,
+      "match": 19,
+      "unknown": 268
+     }
+    },
+    "P_relaxed": {
+     "N": 200,
+     "f_fail": 5,
+     "k_match": 195,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 6,
+      "match": 287,
+      "unknown": 0
+     }
+    },
+    "S_A": {
+     "N": 200,
+     "f_fail": 48,
+     "k_match": 151,
+     "m_unknown": 1,
+     "n_weighted": {
+      "N": 293,
+      "fail": 50,
+      "match": 242,
+      "unknown": 1
+     }
+    },
+    "S_B1": {
+     "N": 200,
+     "f_fail": 80,
+     "k_match": 120,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 85,
+      "match": 208,
+      "unknown": 0
+     }
+    },
+    "S_B2": {
+     "N": 200,
+     "f_fail": 172,
+     "k_match": 27,
+     "m_unknown": 1,
+     "n_weighted": {
+      "N": 293,
+      "fail": 265,
+      "match": 27,
+      "unknown": 1
+     }
+    },
+    "S_C": {
+     "N": 200,
+     "f_fail": 9,
+     "k_match": 3,
+     "m_unknown": 188,
+     "n_weighted": {
+      "N": 293,
+      "fail": 9,
+      "match": 3,
+      "unknown": 281
+     }
+    }
+   },
+   "union_headline": {
+    "38-D-N0|survey": {
+     "N": 200,
+     "f_fail": 5,
+     "k_match": 19,
+     "m_unknown": 176,
+     "n_weighted": {
+      "N": 293,
+      "fail": 6,
+      "match": 19,
+      "unknown": 268
+     }
+    },
+    "38-D-N1|survey|1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|text": {
+     "N": 200,
+     "f_fail": 197,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 290,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-P|survey|F|S_A": {
+     "N": 200,
+     "f_fail": 66,
+     "k_match": 3,
+     "m_unknown": 131,
+     "n_weighted": {
+      "N": 293,
+      "fail": 69,
+      "match": 3,
+      "unknown": 221
+     }
+    },
+    "44-D-P|text|F|S_A": {
+     "N": 200,
+     "f_fail": 70,
+     "k_match": 3,
+     "m_unknown": 127,
+     "n_weighted": {
+      "N": 293,
+      "fail": 73,
+      "match": 3,
+      "unknown": 217
+     }
+    },
+    "44-D-T|survey|F|S_A": {
+     "N": 200,
+     "f_fail": 68,
+     "k_match": 0,
+     "m_unknown": 132,
+     "n_weighted": {
+      "N": 293,
+      "fail": 71,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-T|text|F|S_A": {
+     "N": 200,
+     "f_fail": 72,
+     "k_match": 0,
+     "m_unknown": 128,
+     "n_weighted": {
+      "N": 293,
+      "fail": 75,
+      "match": 0,
+      "unknown": 218
+     }
+    }
+   },
+   "union_rows_counted": 200
+  },
+  "frozen": {
+   "bracket_rows_counted": {
+    "dedup_300m": 19,
+    "no_dedup": 35
+   },
+   "iaa_rows_counted": 21,
+   "iaa_rows_dup_of_iaa": 2,
+   "iaa_rows_dup_of_lane": 12,
+   "union_clauses": {
+    "A": {
+     "N": 200,
+     "f_fail": 0,
+     "k_match": 28,
+     "m_unknown": 172,
+     "n_weighted": {
+      "N": 293,
+      "fail": 0,
+      "match": 111,
+      "unknown": 182
+     }
+    },
+    "F_survey": {
+     "N": 200,
+     "f_fail": 34,
+     "k_match": 20,
+     "m_unknown": 146,
+     "n_weighted": {
+      "N": 293,
+      "fail": 34,
+      "match": 102,
+      "unknown": 157
+     }
+    },
+    "F_text": {
+     "N": 200,
+     "f_fail": 38,
+     "k_match": 3,
+     "m_unknown": 159,
+     "n_weighted": {
+      "N": 293,
+      "fail": 38,
+      "match": 3,
+      "unknown": 252
+     }
+    },
+    "Fplus_survey": {
+     "N": 200,
+     "f_fail": 33,
+     "k_match": 28,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 293,
+      "fail": 33,
+      "match": 111,
+      "unknown": 149
+     }
+    },
+    "Fplus_text": {
+     "N": 200,
+     "f_fail": 39,
+     "k_match": 6,
+     "m_unknown": 155,
+     "n_weighted": {
+      "N": 293,
+      "fail": 40,
+      "match": 6,
+      "unknown": 247
+     }
+    },
+    "L2": {
+     "N": 200,
+     "f_fail": 0,
+     "k_match": 5,
+     "m_unknown": 195,
+     "n_weighted": {
+      "N": 293,
+      "fail": 0,
+      "match": 5,
+      "unknown": 288
+     }
+    },
+    "L3": {
+     "N": 200,
+     "f_fail": 2,
+     "k_match": 0,
+     "m_unknown": 198,
+     "n_weighted": {
+      "N": 293,
+      "fail": 2,
+      "match": 0,
+      "unknown": 291
+     }
+    },
+    "Masada": {
+     "N": 200,
+     "f_fail": 197,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 290,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "N1_1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N1_1km_text": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N1_2km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_1km_text": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_2km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "P": {
+     "N": 200,
+     "f_fail": 5,
+     "k_match": 20,
+     "m_unknown": 175,
+     "n_weighted": {
+      "N": 293,
+      "fail": 6,
+      "match": 20,
+      "unknown": 267
+     }
+    },
+    "P_relaxed": {
+     "N": 200,
+     "f_fail": 5,
+     "k_match": 195,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 6,
+      "match": 287,
+      "unknown": 0
+     }
+    },
+    "S_A": {
+     "N": 200,
+     "f_fail": 48,
+     "k_match": 151,
+     "m_unknown": 1,
+     "n_weighted": {
+      "N": 293,
+      "fail": 50,
+      "match": 242,
+      "unknown": 1
+     }
+    },
+    "S_B1": {
+     "N": 200,
+     "f_fail": 80,
+     "k_match": 120,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 85,
+      "match": 208,
+      "unknown": 0
+     }
+    },
+    "S_B2": {
+     "N": 200,
+     "f_fail": 172,
+     "k_match": 27,
+     "m_unknown": 1,
+     "n_weighted": {
+      "N": 293,
+      "fail": 265,
+      "match": 27,
+      "unknown": 1
+     }
+    },
+    "S_C": {
+     "N": 200,
+     "f_fail": 9,
+     "k_match": 3,
+     "m_unknown": 188,
+     "n_weighted": {
+      "N": 293,
+      "fail": 9,
+      "match": 3,
+      "unknown": 281
+     }
+    }
+   },
+   "union_headline": {
+    "38-D-N0|survey": {
+     "N": 200,
+     "f_fail": 5,
+     "k_match": 20,
+     "m_unknown": 175,
+     "n_weighted": {
+      "N": 293,
+      "fail": 6,
+      "match": 20,
+      "unknown": 267
+     }
+    },
+    "38-D-N1|survey|1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|1km": {
+     "N": 200,
+     "f_fail": 200,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 293,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|text": {
+     "N": 200,
+     "f_fail": 197,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 293,
+      "fail": 290,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-P|survey|F|S_A": {
+     "N": 200,
+     "f_fail": 66,
+     "k_match": 3,
+     "m_unknown": 131,
+     "n_weighted": {
+      "N": 293,
+      "fail": 69,
+      "match": 3,
+      "unknown": 221
+     }
+    },
+    "44-D-P|text|F|S_A": {
+     "N": 200,
+     "f_fail": 70,
+     "k_match": 3,
+     "m_unknown": 127,
+     "n_weighted": {
+      "N": 293,
+      "fail": 73,
+      "match": 3,
+      "unknown": 217
+     }
+    },
+    "44-D-T|survey|F|S_A": {
+     "N": 200,
+     "f_fail": 68,
+     "k_match": 0,
+     "m_unknown": 132,
+     "n_weighted": {
+      "N": 293,
+      "fail": 71,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-T|text|F|S_A": {
+     "N": 200,
+     "f_fail": 72,
+     "k_match": 0,
+     "m_unknown": 128,
+     "n_weighted": {
+      "N": 293,
+      "fail": 75,
+      "match": 0,
+      "unknown": 218
+     }
+    }
+   },
+   "union_rows_counted": 200
+  }
+ }
+}

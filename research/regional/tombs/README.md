@@ -251,6 +251,61 @@ Each cell is "k match / f fail / m unknown of N", Region B. "Frozen union" is th
 
 IAA Reports are under IAA copyright, so no page image is committed. [data/iaa_reports_figures.csv](data/iaa_reports_figures.csv) lists the maps, plans and tables met (pages, PDF pages, use). Retrieval: the portal pages https://publications.iaa.org.il/iaareports/69 and /74, or the owner's copies under `~/Downloads/IAA portal volumes/` (hashes in `sources_access.csv`).
 
+## IAA inventory view, 11 October 2026 (exploratory)
+
+**What changed.** The merged IAA inventory (`research/regional/haesi_features/merged_2026-10-11/`, commit cf60d97) replaces the 21 phase-1 HA-ESI units, none of which was counted. It adds 78 non-duplicate tomb units: 77 in Region A and 1 in Region B, at 50 distinct merged sites. Region A strict N goes from 197 to 226. No branch gains a match in the strict or lenient date sets. The frozen tables and headline above are unchanged. This is a source extension made after the results were seen, so it is exploratory.
+
+- **Rules.** [PLAN_AMENDMENT_IAA_2026-10-11.md](PLAN_AMENDMENT_IAA_2026-10-11.md) was committed alone as `c14468e` (2026-10-11T17:52:31Z), before any IAA row was mapped. SHA-256 `980a020b4057c447f5127ab60fc1b25f69f27160623414b9183e04300fd1aad0`.
+- **How the units were coded.** The frozen `Coder`, `clause_value` and duplicate rule were used unchanged. The frozen units are scored from their committed codes in `tombs.csv`. The script checks that this reproduces every cell of `scores_summary.csv` (views `all_lineages` and `primary`) and of `amendment1_scores_summary.csv`.
+- **Units.** 228 IAA tomb units have coordinates and lie in a region (preferred report versions). 150 of them lie within 0.15 km of an ASI or WBADB primary record, so they are possible duplicates under the frozen rule. 78 are new. Hand checks: 5 frozen-code yeses and 5 Amendment 1 orientations ([data/manual_check_iaa.csv](data/manual_check_iaa.csv), [data/manual_check_iaa_amendment1.csv](data/manual_check_iaa_amendment1.csv)).
+
+**k match / f fail / m unknown, of N**, headline region, union of lineages without duplicates (frozen → with the IAA units):
+
+| Branch | Region | Strict | Lenient | Any date |
+|---|---|---|---|---|
+| 14-M62 | A | 1/190/6 of 197 → 1/218/7 of 226 | 2/296/10 of 308 → 2/325/11 of 338 | 2/430/12 of 444 → 2/502/17 of 521 |
+| 14-P06 | A | 0/190/7 of 197 → 0/218/8 of 226 | 1/296/11 of 308 → 1/325/12 of 338 | 1/430/13 of 444 → 2/502/17 of 521 |
+| 14-NAME | A∪B | 0/0/202 of 202 → 0/0/231 of 231 | 0/0/315 of 315 → 0/0/345 of 345 | 0/0/486 of 486 → 0/0/564 of 564 |
+| 24-J | B | 0/0/5 of 5 → unchanged | 1/0/6 of 7 → unchanged | 3/4/35 of 42 → 3/5/35 of 43 |
+| 24-A | B | 0/5/0 of 5 → unchanged | 0/7/0 of 7 → unchanged | 0/41/1 of 42 → 0/42/1 of 43 |
+| 27-T | A∪B | 1/0/201 of 202 → 1/0/230 of 231 | 1/0/314 of 315 → 1/0/344 of 345 | 1/0/485 of 486 → 1/0/563 of 564 |
+| 48-Y, 48-L | A | 1/0/196 of 197 → 1/0/225 of 226 | 1/0/307 of 308 → 1/0/337 of 338 | 1/0/443 of 444 → 1/0/520 of 521 |
+| 51-S | A | 0/190/7 of 197 → 0/218/8 of 226 | 0/296/12 of 308 → 0/325/13 of 338 | 0/430/14 of 444 → 0/502/19 of 521 |
+| 51-O | A | 0/0/197 of 197 → 0/0/226 of 226 | 0/0/308 of 308 → 0/0/338 of 338 | 0/0/444 of 444 → 0/0/521 of 521 |
+| 51-J | A | 1/190/6 of 197 → 1/218/7 of 226 | 2/296/10 of 308 → 2/325/11 of 338 | 2/430/12 of 444 → 2/502/17 of 521 |
+| 52-M | A | 0/0/197 of 197 → 0/0/226 of 226 | 0/0/308 of 308 → 0/0/338 of 338 | 0/0/444 of 444 → 0/2/519 of 521 |
+| 53-P | A | 1/195/1 of 197 → 1/224/1 of 226 | 3/303/2 of 308 → 3/333/2 of 338 | 3/437/4 of 444 → 5/510/6 of 521 |
+| 53-K | A | 0/0/197 of 197 → 0/0/226 of 226 | 0/0/308 of 308 → 0/0/338 of 338 | 0/0/444 of 444 → 0/0/521 of 521 |
+| 54-P | B | 0/0/5 of 5 → unchanged | 2/0/5 of 7 → unchanged | 21/5/16 of 42 → 21/6/16 of 43 |
+| 54-L, 54-M | A∪B | 0/1/201 of 202 → 0/1/230 of 231 | 0/4/311 of 315 → 0/4/341 of 345 | 0/30/456 of 486 → 0/30/534 of 564 |
+| 54-W | A | 0/185/12 of 197 → 0/207/19 of 226 | 0/282/26 of 308 → 0/305/33 of 338 | 0/389/55 of 444 → 0/444/77 of 521 |
+| 56-P, 56-M | A | 0/26/171 of 197 → 0/26/200 of 226 | 0/31/277 of 308 → 0/31/307 of 338 | 0/34/410 of 444 → 0/36/485 of 521 |
+
+Every region, date set and sensitivity is in [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv). That file also has the IAA units alone (`iaa_*`) and the "other classes" sensitivity, which adds 24 non-duplicate units of other classes that pass the TOMB-term test and changes no match.
+
+**What drives the change.**
+- **The 29 new strictly dated units in Region A.** The largest groups are at Bayit va-Gan (Yosef Hakhami St.), the Mount of Olives, Binyene Ha-Umma and ʿEin el-Lauza. By the frozen word lists they carry kokhim (17), slabs or closing stones (11), ossuaries (7), more than one chamber (5) and repositories (3).
+- **No new unit has a monument, a columned porch, an inner pillar, an inscription, a garden or an oriented entrance.** So the new units add fails to the location branches (14, 51-S, 51-J, 53-P) and unknowns elsewhere. No new unit names Zadok, Absalom, Obed or a queen.
+- **New matches with any date only:**
+  - 14-P06 gains a 13th-century cist grave sealed with slabs at the Western Wall Plaza (HA-ESI 121).
+  - 53-P gains a Mamluk grave at the Ha-Maʿaraviyim (Mughrabi) Gate, coded twice (HA 104, ESI 16; see below).
+  - All of these are dated outside the window.
+- **IAA units alone.** In the lineage view, 53-P gains one strict match: a burial cave at Naḥal Ha-Egoz (HA-ESI 117). Its coded point lies 190 m from the Temple Mount point, but the report puts the cave in the Mount Scopus cemetery. INFERENCE: a position error, as for ASI 102/408. The unit is a duplicate of ASI 102/409, so it does not enter the union.
+- **Amendment 1 (exploratory)** ([iaa_amendment1_view.csv](iaa_amendment1_view.csv)). No match changes. 56-P stays at 10 matches, now of 226 (strict), and the 52-P proxy stays at 9. No new strictly dated unit has an entrance orientation. Three strictly dated IAA units do: Reḥavya (north-west), Nisan Beck St. (west) and the Shuʿfat survey (south). All three are duplicates of ASI records (102/380, 102/227 and 102/102).
+- **A columned façade the rules miss.** Arzei Ha-Bira (HA-ESI, Second Temple period) has a façade "with engaged pillars". The frozen sentence split at "c." separates the pillars from the word façade, so neither F2 nor F2xa fires, and F3 was rejected by hand. It lies 1.65 km from the Temple Mount, so no branch would change.
+- **A class-name artefact.** The coded text includes the class name ("tomb burial cave"), as the frozen HAESI rule did. So every IAA unit carries the family-type term "burial cave". For 4 of the 29 new strict units this changes the communal code: 2 fail on 54-W only because of it, and 2 would otherwise be communal.
+
+**New match worth a closer look:** none.
+
+**Gaps.**
+- 165 IAA tomb rows in the Jerusalem hills, 23 in the Judean Desert and 4 in the Jordan Valley have no coordinates. The frozen rule does not count them. Among them is HA 28's kokhim cave on Shmuel ha-Navi St. (a Tier 1 record, extracted by phase 3).
+- Two Hebrew–English pairs were not joined by the merged inventory: Ben-Zvi Boulevard (HA 99, ESI 12; same point, strictly dated) and the Ha-Maʿaraviyim Gate (HA 104, ESI 16). The union's strict N is therefore probably one too high. This is reported to the merge lane.
+- Under the frozen rule, IAA units at one place are not deduplicated among themselves.
+- No IAA tomb unit falls in Region B's strict set. Jericho's tombs still rest on Kenyon and IAA Reports 7.
+
+Files: [iaa_units.csv](iaa_units.csv) (276 units with codes, duplicate flags and Amendment 1 codes; no text), [iaa_scores.csv](iaa_scores.csv), [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv), [iaa_amendment1_view.csv](iaa_amendment1_view.csv), [iaa_summary.json](iaa_summary.json), [scripts/iaa_view.py](scripts/iaa_view.py), [tests/test_iaa_view.py](tests/test_iaa_view.py).
+- Rebuild: `python3 -I -B research/regional/tombs/scripts/iaa_view.py`. It needs no ASI cache or WBADB file.
+
 ## Blocked: what a person would need to do
 
 1. ~~IAA Reports 7 (Hachlili and Killebrew 1999)~~, https://publications.iaa.org.il/iaareports/69: done, read 11 October (addendum). Still unread there: the rotated Table II.2 (p. 52) and the figures themselves.

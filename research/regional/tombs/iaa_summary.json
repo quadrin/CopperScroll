@@ -1,0 +1,48 @@
+{
+ "note": "Exploratory view (PLAN_AMENDMENT_IAA_2026-10-11.md). The frozen tables are unchanged.",
+ "inputs": {
+  "features_all.csv": "2170f7fb15b097621e07648c128719f25e50e3550d5ec8756c08fca6267e455b",
+  "report_groups.csv": "06085467541339b097fcd29a55a5d7e8d49ade829b7f8329a00f981e9624b89c",
+  "sites.csv": "7e89ddce959869e8a960103e63417870d621edb5f7f1b0376b3d12f54450e87b"
+ },
+ "frozen_haesi_units_removed": 21,
+ "iaa_units": {
+  "primary": 228,
+  "primary_not_duplicate": 78,
+  "primary_not_duplicate_distinct_sites": 50,
+  "other_class": 48,
+  "other_class_not_duplicate": 24
+ },
+ "iaa_units_by_region_not_duplicate": {
+  "A": 77,
+  "A3": 43,
+  "B": 1,
+  "B1": 1,
+  "B2": 0,
+  "B2_5": 1,
+  "AB": 78
+ },
+ "iaa_strict_not_duplicate": {
+  "A": 29,
+  "A3": 16,
+  "B": 0,
+  "B1": 0,
+  "B2": 0,
+  "B2_5": 0,
+  "AB": 29
+ },
+ "coverage_primary": {
+  "outside the regions": 156,
+  "unlocated@Z1_GERIZIM": 9,
+  "unlocated@Z2_JORDAN_VALLEY": 4,
+  "unlocated@Z3_JUDEAN_DESERT": 23,
+  "unlocated@Z4_JERUSALEM_HILLS": 165
+ },
+ "coverage_other_class": {
+  "outside the regions": 35,
+  "unlocated@Z1_GERIZIM": 1,
+  "unlocated@Z3_JUDEAN_DESERT": 2,
+  "unlocated@Z4_JERUSALEM_HILLS": 23
+ },
+ "tier1_units": []
+}

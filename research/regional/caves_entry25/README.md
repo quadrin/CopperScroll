@@ -91,6 +91,50 @@ All 30 cluster records are unknown on every branch.
 
 **Near misses** (no failing clause, at least three matches, primary): III/11 and IV/17 (pillar between two openings, facing unmeasurable), III/3 (natural pillar at the upper of two openings), II/2, IV/21, VIII/29 and ASI 147 site 91 (two openings with a northern member; pillar and facing unrecorded). Rows whose pillar clause would change under a looser reading (AMENDMENT_1 item 2): VI/53 (a stone partition in the opening), X/51 (a drawn rock mass between its two openings), lower Wadi Makkuk Cave 1 (a rock column on the ledge in front) and Mar Saba Complex 34 (pillars carrying the front wall). Mar Saba Complex 48 has a rock pillar at its opening but an unknown number of openings.
 
+## IAA inventory view, 11 October 2026 (exploratory)
+
+**What changed.** The merged IAA inventory (`research/regional/haesi_features/merged_2026-10-11/`, commit cf60d97) adds 7 cave rows and 3 cluster records to this lane's region. No new row matches every clause, so the frozen headline above stands unchanged. Most of the new rows fail on the number of entrances or stay unknown. The lane did not use HA-ESI before, so the whole view is a source extension made after the results were seen. It is exploratory.
+
+- **Rules.** [PLAN_AMENDMENT_IAA_2026-10-11.md](PLAN_AMENDMENT_IAA_2026-10-11.md) was committed alone as `7e88f3d` (2026-10-11T17:50:20Z), before any IAA row was mapped. SHA-256 `fc23efe51213b269742f50537e01f76a9816aa21ea66096e71ebedfdb1ef4125`. Choices made after the rows were seen are in the hand-coding notes ([coded/iaa_coding.csv](coded/iaa_coding.csv)).
+- **Rows in the box.** 23 cave and tomb rows of the merged inventory lie in the box (preferred report versions): 22 by their own point, and 1 by its reader's place. 6 tomb rows do not call the feature a cave (graves, tumuli, rock-cut tombs, shaft graves, a tomb with built kokhim, a late burial), so they are not rows (PLAN 4.1(2)).
+- **Already in the lane, not added (7).**
+  - Eshel's "Makkuk Cave" (ESI 7–8) is the report the lane coded under S5.
+  - Six rows are merged by a stated identity:
+    - three seasons at the Cave of the Pool, Naḥal David (a lane proper name);
+    - the "grotto of St. Saba" in Patrich's Mar Saba map notice (ESI 2), the survey the lane holds as ASI 109/7;
+    - Patrich and Arubas's Wadi Murrar ʿEin Abu Mahmud caves (ESI 13 p. 61), which WBADB E519 cites;
+    - Peleg's Mishor Adummim cave (HA-ESI 112 p. 73*), which WBADB E572 cites.
+- **Added (10).**
+  - Caves: the ʿEn Gedi burial cave in the cliff (HAESI-1594), the Cave of the Rope (No. 347B) and the seal-impression cave in Naḥal ʿArugot, Naḥal Ḥever Cave B, the Ḥever Nostrils Cave, a small cave in Naḥal Ḥazazon, and Bar-Adon's cave above ʿEin el-Ghuweir (HA 40; placed by description; INFERENCE: probably A41:XIV/51, but no source states it).
+  - Clusters: the Wadi el-Makkuk laura caves and its two burial caves (ESI 3), and a monastery cave with a cave church (Hirschfeld, ESI 7–8). Cluster records go from 30 to 33; every cluster record is unknown.
+
+**k match every clause / f fail at least one / m unknown, of N** (primary rule set; rows, with N_min in brackets):
+
+| Branch | Level | Frozen | With the IAA rows |
+|---|---|---|---|
+| B-PILLAR | cave | 1 / 198 / 436 of 635 (1 / 186 / 418 of 605) | 1 / 201 / 440 of 642 (1 / 189 / 421 of 611) |
+| B-PILLAR | both-mouths | 1 / 201 / 433 of 635 (1 / 189 / 415 of 605) | 1 / 205 / 436 of 642 (1 / 192 / 418 of 611) |
+| B-TERRACE | cave | 0 / 195 / 440 of 635 (0 / 184 / 421 of 605) | 0 / 198 / 444 of 642 (0 / 187 / 424 of 611) |
+| B-TERRACE | both-mouths | 0 / 198 / 437 of 635 (0 / 187 / 418 of 605) | 0 / 202 / 440 of 642 (0 / 190 / 421 of 611) |
+
+The other rule sets are in [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv). No rule set gains an all-match row. The all-match rows are still XII/53 (cave level) and the Twin Cave (both-mouths).
+
+**What drives the change** (B-PILLAR, primary; codes come from the IAA coding fields only, and no plan was opened):
+- **Fail on C3.** Three caves fail at both levels. The ʿEn Gedi burial cave and the Naḥal Ḥazazon cave each have one entrance, described in the singular. The Nostrils Cave has three entrances. Under `s_singular_unknown` the two singular cases become unknown.
+- **Ḥever Cave B** (HAESI-25608) is the only new cave with two entrances. It is coded "two entrances (east and west)". At the both-mouths level it fails, because the west mouth lies outside the east sector. At the cave level it stays unknown, because the mouths have no positions. It has no northern member. Its point lies 36 m from ASI 147 site 413 (the Gavei Ḥever two-chamber cave), so N_min joins the two.
+- **Unknown on every clause except C1:** the Cave of the Rope, the seal-impression cave and the cave above ʿEin el-Ghuweir.
+- **Reported, not applied.** The IAA coding of Mishor Adummim gives one opening, facing south. If applied to WBADB E572, that row would move from unknown to fail on both branches. The frozen row is not recoded.
+
+**New match worth a closer look:** none for entry 25. No new row records a pillar or a terrace. The only new east-facing entrance (Ḥever Cave B) is paired with a west-facing one.
+
+**Gaps.**
+- Rows of these classes with neither coordinates nor a reader place: 15 caves and 17 tombs in the Jordan Valley and Judean Desert zones. Some of them may lie in the box.
+- The coding fields are short, so most clauses stay unknown.
+- Three rows of other classes in the box mention a cave (a niche at the Cave of the Pool; storage pits in the Murrar caves). All belong to caves above.
+
+Files: [iaa_units.csv](iaa_units.csv) (the 10 added rows in the `caves.csv` schema), [iaa_excluded.csv](iaa_excluded.csv) (the 13 rows read but not added, with reasons), [iaa_scores.csv](iaa_scores.csv), [iaa_summary.json](iaa_summary.json), [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv), [scripts/iaa_view.py](scripts/iaa_view.py), [tests/test_iaa_view.py](tests/test_iaa_view.py).
+- Rebuild: `python3 -I -B scripts/iaa_view.py`. It reads only committed tables and never writes the frozen outputs.
+
 ## Blocked or not read
 
 - Israel Exploration Journal 11 (1961) and 12 (1962), the Judean Desert expedition reports (Naḥal David, Naḥal Ḥever, Cave of Letters, Cave of Horror): no open copy found. Routes: Israel Exploration Society offprints https://www.israelexplorationsociety.com/product-page/judean-desert-caves-i and https://www.israelexplorationsociety.com/product-page/copy-of-judean-desert-caves-ii (for sale); JSTOR (subscription).

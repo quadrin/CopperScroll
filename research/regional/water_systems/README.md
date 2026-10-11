@@ -112,6 +112,72 @@ Counts read "k match, f fail, m unknown, of N". MERGED = one count per installat
 
 **Known limits.** The survey sentence rule is crude: one sentence can carry a date or a direction that belongs to a different feature (five confirmed errors above). Patrich's ASI records write N, S, E and W, which the frozen word list does not read as directions. Positions of literature rows are site points, so no computed bearing or "near" distance uses them except the two aqueducts with stated destinations. Aggregate rows ("cisterns") count once whatever their number. OCR of the Hebrew chapters is good but not proof-read, and one dimension (Birket el-ʿArrub "?8 × 68 m") and one grid reference (ʿEin Artas) are partly illegible.
 
+## IAA inventory view, 11 October 2026 (exploratory)
+
+**What changed.** The merged IAA inventory (`research/regional/haesi_features/merged_2026-10-11/`, commit cf60d97) replaces the 17 phase-1 HA-ESI rows. In the box it gives 769 rows: 328 cisterns, 307 aqueducts or channels, 122 pools or reservoirs and 12 dams. 27 of them are superseded by literature sites, and the other 742 become merged units, which takes the lane from 1,437 to 2,162 units. Installations dated in the window go from 101 to 184 units.
+
+No new match appears in entries 21, 22, 29, 32, 42 or 45. Entry 46 gains a dated match near ʿEin Kerem, and one near Ramat Raḥel at 2 km. Both are miqvaʾot that enter only because the IAA subtype mentions an "immersion pool" (see below). The frozen headline is unchanged. This is a source extension made after the results were seen, so it is exploratory.
+
+- **Rules.** [PLAN_AMENDMENT_IAA_2026-10-11.md](PLAN_AMENDMENT_IAA_2026-10-11.md) was committed alone as `1804f6d` (2026-10-11T17:53:04Z), before any IAA row was mapped. SHA-256 `8387f23fdf84009a8746cf6c49ec90f41ea194de406082d37c511e77f54371c6`.
+- **How the view was run.** The frozen `build_water` and `score` ran unchanged on working copies. The script first checks that the same procedure on the committed `survey_rows.csv` reproduces `counts.csv` and `headline.csv` byte for byte.
+- **Two runs beside the primary.**
+  - **300 m bracket.** 484 IAA rows lie within 300 m of an ASI or WBADB unit of the same type and are treated as duplicates (1,699 merged units).
+  - **Quote-only.** The IAA rows are coded exactly as the frozen `build_haesi`, from the quote only, without the subtype. This gives 755 rows in the box.
+- **Choice made after the rows were seen.** The quote-only run was added after the first run showed that the two new entry 46 matches depend on the subtype.
+
+**k match / f fail / m unknown, of N** (lineage MERGED, main date rule; "dated" is k under the dated-only rule; the last column gives k in the bracket and quote-only runs):
+
+| Entry | Branch | Frozen | With the IAA rows | k, dated only | k: bracket; quote-only |
+|---|---|---|---|---|---|
+| 21 | head recorded (S-open, N-side) | 12/30/241 of 283 | 12/182/372 of 566 | 8 → 8 | 12 of 380; 12 of 566 |
+| 21 | stone at the head on its north | 0/30/253 of 283 | 0/182/384 of 566 | 0 → 0 | 0; 0 |
+| 21 | water from the north (S-open, F-flow) | 1/40/242 of 283 | 1/192/373 of 566 | 1 → 1 | 1; 1 |
+| 22 | Solomon's + fissure east ≤ 500 m | 0/27/237 of 264 | 0/80/297 of 377 | 0 → 0 | 0; 0 |
+| 29 | conduit, great, northern, four sides (Q-any) | 0/76/188 of 264 | 0/131/246 of 377 | 0 → 0 | 0; 0 |
+| 29 | the same at Jericho (Q-Jericho) | 0/239/25 of 264 | 0/352/25 of 377 | 0 → 0 | 0; 0 |
+| 32 | built outlet or head at Wadi Qelt | 5/80/213 of 298 | 5/235/341 of 581 | 5 → 5 | 5; 5 |
+| 32 | the same with a wall at the outlet | 0/80/218 of 298 | 0/235/346 of 581 | 0 → 0 | 0; 0 |
+| 42 | waterfall by a conduit bend (250 m) | 2/0/4 of 6 | 2/0/4 of 6 | 0 → 0 | 2; 2 |
+| 42 | dam or reservoir by a bend (250 m) | 0/28/272 of 300 | 0/84/341 of 425 | 0 → 0 | 0; 0 |
+| 45 | cistern fed by channels from a trunk wadi | 1/92/559 of 652 | 1/248/720 of 969 | 1 → 1 | 1; 1 |
+| 45 | the same, any wadi | 3/41/608 of 652 | 3/192/774 of 969 | 2 → 2 | 3; 3 |
+| 46 | reservoir with a way in, Ramat Raḥel ≤ 1 km | 0/261/3 of 264 | 0/374/3 of 377 | 0 → 0 | 0; 0 |
+| 46 | the same, ≤ 2 km | 0/256/8 of 264 | 1/364/12 of 377 | 0 → 1 | 0; 0 |
+| 46 | the same, ʿEin Kerem ≤ 1 km | 0/260/4 of 264 | 1/371/5 of 377 | 0 → 1 | 1; 0 |
+| 46 | reservoirs and cisterns, ʿEin Kerem ≤ 1 km | 1/908/7 of 916 | 2/1335/9 of 1346 | 0 → 1 | 2; 1 |
+| 46 | reservoir with a way in, anywhere (B-any) | 25/27/212 of 264 | 38/80/259 of 377 | 18 → 24 | 32; 28 |
+
+Every entry, branch, lineage and date rule is in [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv), and the full count table is in [iaa_counts.csv](iaa_counts.csv).
+
+**Headline counts, merged units** ([iaa_headline.csv](iaa_headline.csv)):
+- Reservoirs: 264 → 377.
+  - Described as great: 22 → 39.
+  - Described as northern: 6 → 12.
+  - Both great and northern: 1 → 2.
+- Cisterns: 652 → 969; fed by channels: 35 → 48.
+- Aqueducts: 283 → 566. No IAA aqueduct has a recorded head, so aqueduct heads stay at 17.
+
+**What drives the change.**
+- **Entry 46, ʿEin Kerem: worth a closer look, with caveats.** A rock-hewn stepped miqveh with an immersion pool (HA-ESI 128; "Early Roman (1st c. CE)") lies 164 m from the Ein Karem point. It matches the B-EinKerem branch (Conder's Beth ha-Kerem) at 1 km, both in the main set and dated. The caveats:
+  - It is a ritual bath, not a reservoir. PLAN §4 admits a stepped installation only when the source also calls it a pool.
+  - It enters only because the IAA subtype mentions its "immersion pool", so the quote-only run drops it.
+  - It is exposed, as every IAA row is.
+- **Entry 46, Ramat Raḥel at 2 km.** A miqveh at Beit Safafa (HA-ESI 119; late Second Temple) lies 1.7 km away and matches the same way. It disappears in the bracket run, since it lies within 300 m of an ASI reservoir, and in the quote-only run.
+- **Entry 46, B-any.** 13 more units have a recorded way in, most of them stepped pools and miqvaʾot. The post-hoc reading does not confirm two of these: the steps at the Jewish Quarter swimming pool and the cleaning step at ʿEn ʿAminadav.
+- **Entry 29.** No IAA reservoir meets all four clauses. The only IAA unit that meets three (conduit, great, four sides) is the Byzantine reservoir of the monastery survey (ESI 7–8; "large plastered reservoir (14 x 29 m, 10 m deep) fed by a long channel"), which fails on date. The best units dated in the window are still the frozen three.
+- **Entry 32.** Three IAA aqueduct rows name Wadi Qelt springs (Qalʿat Musa from ʿEin Fara; the aqueducts from ʿEin el-Qilt to Jericho; the Wadi Qelt mill channel). None records the head or an outlet, so none matches.
+- **Post-hoc reading** of all 427 IAA-row matches in non-trivial clauses ([iaa_posthoc_checks.csv](iaa_posthoc_checks.csv)): 325 confirmed, 7 partly confirmed, 95 not confirmed. The unconfirmed ones include all 41 "wall at the outlet" matches (walls along channels), 18 "four sides" matches (a square shaft or opening, an ellipse) and 13 "northern" matches (a wall or a room, not the reservoir's place). The counts above are not corrected for these readings, as in the frozen lane.
+
+**New match worth a closer look:** the ʿEn Kerem miqveh (HA-ESI 128) for entry 46 B-EinKerem, read as above: a rule-edge match, exposed, and a ritual bath rather than a reservoir.
+
+**Gaps.**
+- 368 IAA water rows have no coordinates, so they are not placed, as under the frozen rule. They comprise 149 aqueducts, 118 cisterns, 89 pools or reservoirs and 12 dams. 14 of the reservoirs and 12 of the aqueducts are in the Jordan Valley zone, where entries 29 and 32 look.
+- 66 ritual-bath rows are not used, because their coding never calls them a pool, reservoir or cistern.
+- The primary view does not deduplicate IAA rows against ASI and WBADB (the frozen plan has no such rule), so merged units are an upper bound. The 300 m bracket gives 1,699 units.
+
+Files: [iaa_survey_rows.csv](iaa_survey_rows.csv) (the 769 IAA rows in the survey schema, with their view supersession and unit), [iaa_counts.csv](iaa_counts.csv), [iaa_headline.csv](iaa_headline.csv), [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv), [iaa_posthoc_checks.csv](iaa_posthoc_checks.csv), [iaa_summary.json](iaa_summary.json), [scripts/iaa_view.py](scripts/iaa_view.py), [tests/test_iaa_view.py](tests/test_iaa_view.py).
+- Rebuild: `python3 -I research/regional/water_systems/scripts/iaa_view.py`. It uses committed tables only and never writes the frozen outputs.
+
 ## Blocked and not covered
 
 - English *The Aqueducts of Israel* (Amit, Patrich & Hirschfeld eds, JRA Suppl. 46, 2002): on interlibrary loan; not read. It would add the updated English versions of the 1989 chapters, with later survey data (for example Patrich on Hyrcania, pp. 336–352, and Ilan & Amit on Qumran, pp. 380–386, as cited in repo notes). Routes already recorded in the repository (`registration/hyrcania_patrich1989_extracted.md`): Google Books GWhoAAAAMAAJ (snippets only) and HathiTrust item mdp.39015051834664 (https://babel.hathitrust.org/cgi/pt?id=mdp.39015051834664, full-text search only); the owner's interlibrary-loan request is pending.

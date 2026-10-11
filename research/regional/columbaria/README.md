@@ -115,6 +115,58 @@ The three matches are Masada's two square and one round columbarium towers (`L-M
 - **Ramat Raḥel** (106/95). A fort and a Roman camp are recorded at the site, and the columbarium is dated by the S4 note. Its levels, access and place relative to the fort are not recorded (UNKNOWN).
 - **ʿAin en-Naṭuf.** No columbarium is recorded nearby (FAIL at 1 and 2 km).
 
+## IAA inventory view, 11 October 2026 (exploratory)
+
+**What changed.** The merged IAA inventory (`research/regional/haesi_features/merged_2026-10-11/`, commit cf60d97) adds 21 counted rows to the lane, all of them in the Jerusalem hills. Together they hold at least 24 columbaria. No new row matches entry 38 near a Netophah candidate, or any branch of entry 44. Three rows add to the count of columbaria dated in the window. The frozen headline (scope `frozen`, above) is unchanged. The frozen plan's HA-ESI source held no columbarium row, so this whole view is a source extension made after the results were seen. It is exploratory.
+
+- **Rules.** [PLAN_AMENDMENT_IAA_2026-10-11.md](PLAN_AMENDMENT_IAA_2026-10-11.md) was committed alone as `b96833a` (2026-10-11T17:51:24Z), before any IAA row was mapped. SHA-256 `3187592c5b9f6cbef5d0935a90b051fc952dac70632b6c1dae6bec91448e7ff4`.
+- **Hand coding and duplicate decisions.** The rows were coded by hand from the IAA coding fields only, in [data/iaa_coding.json](data/iaa_coding.json). The 52 candidate duplicate pairs each got a decision in [data/iaa_dedup_decisions.csv](data/iaa_dedup_decisions.csv). These decisions were made after the rows were seen. A pair is "same" when the IAA row describes a columbarium at the same site that the coding cannot tell apart from the lane's. That is the plan's unit (one columbarium), so two different columbaria at one site stay separate.
+- **Rows.** The class has 40 rows in their preferred report versions.
+  - 3 are unplaced: Deir el-Hatab, a 1980 survey of the Jerusalem hills, and the Mount Scopus slopes survey.
+  - 37 lie in the polygon. One has no columbarium word (Har Hozevim, niches "probably for raising poultry"), and one is a comparison (City of David 1981, a structure "built like a columbarium"). Both are excluded.
+  - Of the remaining 35, 12 are columbaria the lane already holds (for example Kh. Kaʿkul = ASI 102/131, the Jericho round tower = Netzer's, Ramot Allon = WBADB S2981, Gillo = WBADB E788), and 2 repeat other IAA rows (City of David Area D2, 1984 and 1985; Har Homa, two reports 59 m apart). That leaves **21 new counted rows**.
+- **Word screen.** 11 rows of other classes name a columbarium. All of them belong to reports that already give a columbarium row, so none is added.
+
+**k match / f fail / m unknown, of N** (scope `frozen`; counted rows). The brackets give the result with no deduplication against older rows, and with every pair within 300 m merged:
+
+| Branch | Level | Frozen | With the IAA rows | No dedup / 300 m only |
+|---|---|---|---|---|
+| 38-D-N1 ʿAin en-Naṭuf, 1 km | survey and text | 0 / 179 / 0 of 179 | 0 / 200 / 0 of 200 | 0 of 214 / 0 of 198 |
+| 38-D-N2 Kh. Badd Faluh, 1 km | survey and text | 0 / 179 / 0 of 179 | 0 / 200 / 0 of 200 | 0 of 214 / 0 of 198 |
+| 38-D-N0 (dated in the window) | survey | 17 / 2 / 160 of 179 | 20 / 5 / 175 of 200 | 26 / 6 / 182 of 214; 20 / 4 / 174 of 198 |
+| 44-D-P Puech (fort, S-A, two levels, way down, dated) | survey | 3 / 55 / 121 of 179 | 3 / 66 / 131 of 200 | 3 of 214 / 3 of 198 |
+| 44-D-P | text | 3 / 59 / 117 of 179 | 3 / 70 / 127 of 200 | 3 of 214 / 3 of 198 |
+| 44-D-T text shown (three levels) | survey | 0 / 57 / 122 of 179 | 0 / 68 / 132 of 200 | 0 / 0 |
+| 44-D-T | text | 0 / 61 / 118 of 179 | 0 / 72 / 128 of 200 | 0 / 0 |
+| 44-D-Masada | text | 3 / 176 / 0 of 179 | 3 / 197 / 0 of 200 | 3 / 3 |
+
+The per-clause tallies, the sensitivities (S-B1, S-B2, S-C, F+, period relaxed) and scope `all` are in [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv).
+
+**What drives the change.**
+- **Entry 38.** No new columbarium lies within 2 km of either Netophah candidate. The nearest new one is 6.2 km from Kh. Badd Faluh (Har Homa) and 8.5 km from ʿAin en-Naṭuf (Kh. Deir el-ʿAmud North). WBADB S4114 stays the nearest overall, at 5.5 km.
+- **Dated in the window, 17 → 20.** Three columbaria are added:
+  - a round rock-hewn cave with a roof shaft at Har Homa (HAESI-26607; first used in the 2nd century BCE, in use in the 1st century CE);
+  - a funnel-shaped cave with a ceiling shaft at Bet Leḥem (North) (HAESI-550; "probably Hellenistic and Early Roman");
+  - a rock-hewn columbarium at Kh. Umm Tuba (HAESI-24947; "Hasmonean").
+- **Three new date fails.** They are all outside the window: two City of David structures (Iron II, and Persian; both uncertain identifications) and Kh. Deir el-ʿAmud (North) ("possibly hewn in Iron Age II").
+- **Entry 44.** No new row has a fort recorded inside or at its site, or a second storey, so no branch gains a match. 11 new rows fail: 9 lie north of the S-A line, 1 is dated outside the window, and 1 is a columbarium hewn in a quarry, which fails the fort clause. The closest are Har Homa (HAESI-26607) and Bet Leḥem (North) (HAESI-550). Each is south of Jerusalem, dated, and entered from above, but no fort and no second storey is recorded. "Four levels of niches" at Bet Leḥem are rows of niches, not storeys (PLAN §2).
+- **Clause tallies.**
+  - Way down from above: 23 → 28 (Armon Ha-Naẓiv, Qiryat Menaḥem, Kh. Deir el-ʿAmud, Har Homa, Bet Leḥem (North)).
+  - A tower at the site (F+, survey): 25 → 28 (the City of David North Tower, the Har Etan watchtower, the Gihon spring tower).
+  - Inside a fortress at text level: unchanged at 3 (Masada).
+- **Reported, not applied.** The IAA coding would add a date in the window and a shaft or ceiling opening to WBADB E788 (Gillo) and S2981 (Ramot Allon). It would add a ceiling opening to ASI 102/593 (Kh. Abu Musarrah) and a field tower to ASI 102/131 (Kh. Kaʿkul). None of these would complete an entry 44 match, since none has a fort or a second storey.
+- **Tier 1.** No row comes from HA 28–29 or a Kh. ʿAlmit notice.
+
+**New match worth a closer look:** none.
+
+**Gaps.**
+- The IAA rows add only Jerusalem-area columbaria. The Hebron hills, the Shephelah and Beth Guvrin–Maresha remain as thin as before.
+- Three IAA columbaria have no position.
+- The coding fields rarely state levels or forts.
+
+Files: [iaa_rows.csv](iaa_rows.csv) (the 35 in-region IAA rows in the `columbaria.csv` schema, with `dup_of`), [iaa_excluded.csv](iaa_excluded.csv), [iaa_scores.csv](iaa_scores.csv), [iaa_summary.json](iaa_summary.json), [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv), [scripts/iaa_view.py](scripts/iaa_view.py), [tests/test_iaa_view.py](tests/test_iaa_view.py).
+- Rebuild: `python3 -I research/regional/columbaria/scripts/iaa_view.py`. It uses committed tables only and never writes the frozen outputs.
+
 ## Blocked
 
 - Zissu 1995, "Two Herodian Dovecotes: Horvat Abu Haf and Horvat ʿAleq", JRA Suppl. 14 pp. 56–69: <https://www.academia.edu/14951435> (download needs a sign-in). Record: <https://cris.biu.ac.il/en/publications/two-herodian-dovecotes-horvat-abu-haf-and-horvat-aleq/>. The Hebrew version is in *Qadmoniot* 29.2 (1996); no copy was found online.
