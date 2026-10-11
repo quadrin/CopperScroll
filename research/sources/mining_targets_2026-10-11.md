@@ -165,3 +165,20 @@ Catalogues searched: SFPL, LINK+, UC Berkeley (UC Library Search) and GTU (GRACE
   - City of David (Qedem 19–41, NRLF); Qedem 29; Summit I (NRLF); Ophel I (II I); Machaerus II; *Aqueducts of Israel*; Hirschfeld 1992 (NRLF).
 - **GTU (C):** Dalman 1925 (SFTS folio, available) and Hirschfeld 1992 (available). Entry needs a GTU library card.
 - **Archives:** the BayHStA images need a request to Munich, because the DDB shows metadata only. HUJI high-resolution aerials are a paid order.
+
+## Owner-supplied sources (11 October 2026)
+
+The owner sent these after the access check. None of them is read yet. Three of them replace a gap only in part.
+
+| Gap | What the owner supplied | Where | Covers |
+|---|---|---|---|
+| Machaerus I and III | Vörös 2011, "Machaerus Revealed", *Liber Annuus* 61: 555–573 ([10.1484/J.LA.5.100362](https://doi.org/10.1484/J.LA.5.100362)) · Vörös 2014, "Machaerus Anastyloses", *Liber Annuus* 64: 575–589 ([10.1484/J.LA.5.105510](https://doi.org/10.1484/J.LA.5.105510)) · ACOR lecture, "Excavations at the Fortified Royal Palace of Machaerus" ([YouTube](https://www.youtube.com/watch?v=IE2N0ZDvBtY); the page could not be read automatically, so the title comes from the owner's screenshot) | Drive, 04 Articles and chapters | Summaries and reconstruction only; not the final reports |
+| Herodium I | Netzer, Kalman, Porath & Chachy-Laureys 2010, "Preliminary report on Herod's mausoleum and theatre with a royal box at Herodium", *JRA* 23: 84–108 ([10.1017/S1047759400002312](https://doi.org/10.1017/S1047759400002312)) | Drive, 04 Articles and chapters | Preliminary report on the tomb precinct; not the final report |
+| Qedem 64 | Porath, *The Synagogue at En-Gedi* ([archive.org](https://archive.org/details/isbn_9789659282579)) | archive.org, a restricted item in the print-disabled collection; open it with the owner's account | Complete volume |
+| *Niqrot Zurim* (Naḥal Ḥever caves) | Klein, Davidovich, Ganor & Sukenik 2019, Naḥal Ḥever, *HA-ESI* 131 ([report 25608](https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25608)) | Online | Already coded in phase 2 (HAESI-25608) and in the caves lane (`iaa_units.csv`). It is a different publication, so the *Niqrot Zurim* article is still not obtained |
+
+**Correction:** four BS Pal. images are already in Drive (07 Maps and GIS/Bavarian aerials 1918), so the German Digital Library does deliver images for some records. Check the SULTAN-1 protocol before you view a frame near Tell es-Sultan.
+
+**Drive index:**
+- The three Drive files were renamed and moved through the Drive API; their former names are in [drive_reorg_2026-10-11.tsv](drive_reorg_2026-10-11.tsv).
+- `drive_index.md` was last built on 9 October and does not list the files added since then. Rebuild it on the Mac with `tools/drive_navtree.py … --log research/sources/drive_reorg_2026-10-11.tsv`.
