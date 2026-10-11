@@ -1,0 +1,55 @@
+{
+ "note": "Exploratory view (PLAN_AMENDMENT_IAA_2026-10-11.md). The frozen tables are unchanged.",
+ "inputs": {
+  "features_all.csv": "2170f7fb15b097621e07648c128719f25e50e3550d5ec8756c08fca6267e455b",
+  "report_groups.csv": "06085467541339b097fcd29a55a5d7e8d49ade829b7f8329a00f981e9624b89c",
+  "sites.csv": "7e89ddce959869e8a960103e63417870d621edb5f7f1b0376b3d12f54450e87b"
+ },
+ "frozen_haesi_rows_removed": 17,
+ "iaa_rows_in_box": 769,
+ "iaa_rows_by_type": {
+  "aqueduct": 307,
+  "cistern": 328,
+  "reservoir_pool": 122,
+  "dam": 12
+ },
+ "iaa_rows_superseded": 27,
+ "iaa_merged_units": 742,
+ "merged_units_frozen": 1437,
+ "merged_units_view": 2162,
+ "bracket_iaa_rows_treated_as_duplicates": 484,
+ "merged_units_bracket": 1699,
+ "iaa_rows_unlocated": 368,
+ "quote_only_iaa_rows_in_box": 755,
+ "iaa_rows_dated_in_window": {
+  "undated": 194,
+  "partly": 104,
+  "out": 378,
+  "in": 79,
+  "in_hedged": 14
+ },
+ "coverage": {
+  "outside the box": 31,
+  "ritual bath not called a pool, reservoir or cistern": 66,
+  "unlocated aqueduct@Z1_GERIZIM": 2,
+  "unlocated aqueduct@Z2_JORDAN_VALLEY": 12,
+  "unlocated aqueduct@Z3_JUDEAN_DESERT": 20,
+  "unlocated aqueduct@Z4_JERUSALEM_HILLS": 115,
+  "unlocated cistern@Z1_GERIZIM": 2,
+  "unlocated cistern@Z2_JORDAN_VALLEY": 3,
+  "unlocated cistern@Z3_JUDEAN_DESERT": 11,
+  "unlocated cistern@Z4_JERUSALEM_HILLS": 102,
+  "unlocated dam@Z3_JUDEAN_DESERT": 3,
+  "unlocated dam@Z4_JERUSALEM_HILLS": 9,
+  "unlocated reservoir_pool@Z1_GERIZIM": 2,
+  "unlocated reservoir_pool@Z2_JORDAN_VALLEY": 14,
+  "unlocated reservoir_pool@Z3_JUDEAN_DESERT": 16,
+  "unlocated reservoir_pool@Z4_JERUSALEM_HILLS": 57
+ },
+ "tier1_rows": [],
+ "posthoc": {
+  "confirmed": 325,
+  "partly confirmed": 7,
+  "not confirmed": 95
+ }
+}
