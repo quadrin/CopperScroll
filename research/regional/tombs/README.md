@@ -1,8 +1,8 @@
 # Regional tomb inventory: entries 14, 24, 27, 48, 51–54 and 56
 
-**What it is.** Every tomb record in two fixed regions, coded from the source text by frozen rules and scored against each reading branch of the scroll's tomb entries. The regions are the Jerusalem necropolis (5 km around the Temple Mount) and Jericho with the road to Qumran. The sources are 1,055 records from the online ASI survey maps, WBADB, the HA-ESI lane and Kenyon *Jericho* II.\
-**Main result.** Region A has 197 tomb units that the source itself dates to the window. Any landmark clause that a survey can record matches only a handful of them: 1 nefesh, 5 columned façades or porches, 1 inner pillar, 6 named inscriptions, and no ancient garden. The tombs named Absalom (48) and "of the Queen" (27) match one exposed unit each (ASI 102/410, 102/320). No tomb is recorded as Zadok's (51) or Obed's (54). Region B has only 5 tomb units strictly dated to the window, all of them graves north of Tell es-Sultan. The Jericho cemetery itself is a single WBADB row.\
-**What stays unknown.** Most clauses are silent in survey text, so most results are "unknown", not "fail". Three sources are blocked: the Jericho cemetery report (Hachlili and Killebrew 1999), Kloner and Zissu 2007 and Avigad 1954. The walled Old City has only scattered WBADB excavation rows. In the frozen rules, entrance orientation is almost never readable (see Amendment 1).
+**What it is.** Every tomb record in two fixed regions, coded from the source text by frozen rules and scored against each reading branch of the scroll's tomb entries. The regions are the Jerusalem necropolis (5 km around the Temple Mount) and Jericho with the road to Qumran. The sources are 1,055 records from the online ASI survey maps, WBADB, the HA-ESI lane and Kenyon *Jericho* II, plus (11 October) the 104 tomb units of the Jericho cemetery report (IAA Reports 7).\
+**Main result.** Region A has 197 tomb units that the source itself dates to the window. Any landmark clause that a survey can record matches only a handful of them: 1 nefesh, 5 columned façades or porches, 1 inner pillar, 6 named inscriptions, and no ancient garden. The tombs named Absalom (48) and "of the Queen" (27) match one exposed unit each (ASI 102/410, 102/320). No tomb is recorded as Zadok's (51) or Obed's (54). Region B's union count still has only 5 strictly dated units: the 104 Jericho cemetery tombs sit inside the cemetery row WBADB S2446, so the frozen duplicate rule leaves them out of it. Counted on their own, 25 of those tombs are dated to the window; they give 3 matches for 54-M (named family tombs A2, D1, H), 1 for 27-T (Tomb H, whose ossuary names "Queen Agrippina" as a freedman's patron), and none for 24-J or 54-P ([addendum](#addendum-11-october-2026-iaa-reports-7-and-1)).\
+**What stays unknown.** Most clauses are silent in survey text, so most results are "unknown", not "fail". Two sources are blocked: Kloner and Zissu 2007 and Avigad 1954. The Jericho report gives no tomb positions, so the road clause of 24-J stays unknown for its tombs. The walled Old City has only scattered WBADB excavation rows. In the frozen rules, entrance orientation is almost never readable (see Amendment 1).
 
 Exploratory regional count, 10–11 October 2026 (UTC). No identification claim. No registered result, outcome count, candidate confidence or atlas value changes. Labels: EVIDENCE (a source says it), INFERENCE (our reasoning), CLAIM (an author's assertion without a field record). Unknown stays unknown.
 
@@ -38,6 +38,8 @@ Details and exact URLs: [sources_access.csv](sources_access.csv).
 | WBADB (`WBADB_data1.xlsx`, hash checked) | A, B | Both sheets | 572 tomb rows; 544 are possible duplicates of ASI records |
 | HA-ESI lane rows | A | Reused | 21 (6 located, all duplicates; 15 unlocated) |
 | Kenyon *Jericho* II, via the repo note | B1 | Reused | 23 |
+| Hachlili and Killebrew 1999 (IAA Reports 7), 11 Oct | B1 | ch. I–II, IV–VIII (see [addendum](#addendum-11-october-2026-iaa-reports-7-and-1)) | 104; all possible duplicates of WBADB S2446 |
+| Avni and Greenhut 1996 (IAA Reports 1), 11 Oct, exploratory | A | ch. 1; ch. 3 Table 3.1 | 3, kept out of the frozen tables |
 | Allegro 1964, via the repo extraction | A | Enrichment column only | 2 |
 
 Coverage (`coverage.csv`, a 100 m sample grid):
@@ -46,7 +48,7 @@ Coverage (`coverage.csv`, a 100 m sample grid):
 - Detection limits are as the ASI lane recorded them: Kloner's teams "were often unable to locate and record all" remains. No detection rate is known.
 
 **Not read.**
-- Hachlili and Killebrew 1999 (IAA Reports 7) and Avni and Greenhut 1996 (IAA Reports 1): the IAA PDFs answer HTTP 403 with a Cloudflare challenge, which was not bypassed.
+- Hachlili and Killebrew 1999 (IAA Reports 7) and Avni and Greenhut 1996 (IAA Reports 1) were blocked on 10–11 October (HTTP 403, Cloudflare challenge, not bypassed). Both were read on 11 October from copies saved to the owner's computer; see the addendum.
 - Kloner and Zissu 2007: no open copy; library only.
 - Avigad 1954: no digital copy found.
 - Kenyon *Jericho* I: not opened (time).
@@ -171,10 +173,88 @@ With the enrichment, no branch result changes. 51-S still lacks a recorded Zadok
 - **Points.** ASI points can be approximate (102/408). Kenyon tombs have no grid value.
 - **Eligibility.** A record qualifies on any tomb word, so monastic sites with burials (109/4/7) and multi-feature records enter as tomb units.
 
+## Addendum, 11 October 2026: IAA Reports 7 and 1
+
+Source HK (Hachlili and Killebrew 1999, IAA Reports 7) is in the frozen source list, so its tombs are coded and scored under the frozen plan. The Akeldama report (Avni and Greenhut 1996, IAA Reports 1) is not, so it is an exploratory addition. No identification claim; no registered result changes.
+
+### Record
+
+- [PLAN_AMENDMENT_2_exploratory.md](PLAN_AMENDMENT_2_exploratory.md) was committed alone in **cd706b0** at 2026-10-11T13:00:00Z (UTC). Its SHA-256 is `e6712b1611a9ff91f89e61fb86d875633ff181d720a07b03d2374b8bb3a1f412`. It was written before any tomb description in either report was read. Part A fixes how HK is coded (the frozen plan lists HK but does not say how). Part B makes Akeldama exploratory.
+- Both PDFs on the owner's computer match the hashes given by the integrator: IAA Reports 7 `7c6e6208…a2efb7` (209 PDF pages), IAA Reports 1 `f23c881e…e1d5` (140 PDF pages). Both are page scans without a text layer. OCR (tesseract 4.1.1, English, 300 dpi) ran on the owner's computer; the text stayed outside the repo. Printed page = PDF page − 7 (Reports 7) and − 11 (Reports 1).
+- Two readings were checked by eye on cropped strips kept in the scratch folder: "16 km" on p. 166, and the tomb column of Table II.5.
+- **Choices made after records were read** (exploratory, logged here):
+  1. After the first coding pass, phrases that used a feature word in another sense were reworded. "No ossuaries or coffins" (D3, F4, F7) became "no burial containers", because the frozen coder has no negation. "Grave goods" (Tomb H) and "grave marker" (the nefesh) became "finds" and "marker on a tomb", because the communal rule reads "grave" as a grave field. This removed 3 false ossuary codes and 1 false communal code.
+  2. Dating uses the type lists of the classification text (p. 59) and the dates of ch. VII (p. 165). Table II.5 also prints Type III beside C3, C4, C9b, C10 and B1, and the catalogue labels D13 Type III. These are kept in `data/hk_units.csv` (`note`) but not used; they would add up to five strictly dated tombs (B1 conflicts with the text, which gives the type to B2).
+  3. A statement about a whole hill was applied to its tombs only where it holds for every tomb: Hill A ("the entrances of all the tombs faced north", p. 5), Hill B (the two excavated tombs, p. 9) and Hill F (entrances facing south, p. 51). "Most of the tomb entrances faced east" on Hill D (p. 12) was not applied.
+  4. D20 and D24 are units because the report's Hill D total of 27 implies them, though its text never names them.
+
+### What IAA Reports 7 gives, tomb by tomb
+
+EVIDENCE from the report; codes by the frozen word lists, checked by hand where PLAN §5 asks (`data/manual_check.csv`).
+
+- **Units.** 104: the 103 numbered tombs of Table II.1 (Hills A 7, B 4, C 32, D 27, E 12, F 7, G 9, H 5) and the stone nefesh found out of context on Hill D (p. 162, Fig. VI.2).
+- **Position.** The report gives no grid reference for any tomb. Fig. I.1 is a regional map; Figs. II.1–II.2 place the tombs within their hills. All units therefore take the point of WBADB S2446 (the cemetery row), with ±16 km: the report speaks of "the boundaries of the 16 km long Second Temple period cemetery" (p. 166). INFERENCE: probably a misprint for 1.6 km, since the report bounds the cemetery between Hill H and Wadi Quruntul (pp. 2, 166). The 1.6 km value is run as an exploratory sensitivity.
+- **Duplicates.** All 104 units lie at the S2446 point, so the frozen rule flags each as `possible_duplicate_of = WBADB S2446`. `linked_to` names S2446 and E349. The report names no tomb that Kenyon dug; it says Kenyon's tombs lie further north (p. 166).
+- **Dating.** 25 units are strictly in the window. Type I, wooden coffins, "first century BCE, perhaps continuing into the early first century CE" (p. 165): D2, D6, D8, D9, D10, D11, D12, D14, D15, D16, D18, D22, D27. Type II, collected bones, and Type III, ossuaries, "early first century CE until" 68 CE: D3, D21, D23, F4, F7 and A1, A2, A6, B2, D1, D17, H. F5 is Early Bronze III (no). The other 78, mostly robbed or only surveyed, have no date of their own.
+- **Features.**
+  - Above-ground monument: only the undated nefesh fragment. The "nefesh columns" in Tomb F4 are a charcoal drawing on its wall (Fig. VI.1); rejected.
+  - Columned porch, exedra pillar, inner pillar: none. Tomb H's entrance has a masonry lintel and doorjambs (p. 37).
+  - Named inscriptions: 3 tombs. A2: Yehosef (Inscr. 18, p. 158). D1: Ishma'el son of Shim'on son of Palta, Pelatya and Simon, two of them "from Jerusalem" (Inscr. 15–17, pp. 155–158). H: thirteen personal names of the "Goliath" family, among them Yeho'ezer son of Ele'azar, and Theodotos, "freedman of Queen Agrippina" (Inscr. 1–14, pp. 142–155). No Obed, Zadok or Absalom.
+  - Ancient garden: none.
+  - Entrance direction: 27 tombs, none westerly (north 8, east 12, south 7). The report found "no particular orientation of the tomb entrances" (p. 51).
+  - Kokhim 79; bone repository 2 (D27, H); channel 1 (the small channel feeding Tomb H's miqveh, p. 47); closing stones or slabs 17; wadi setting 16 (Hills F and G, beside Wadi Tasun); more than one chamber 1 (H).
+
+### Region B branches, old and new
+
+Each cell is "k match / f fail / m unknown of N", Region B. "Frozen union" is the headline view of PLAN §3 (no duplicates). The last two columns are exploratory (Amendment 2, Part C, chosen after the coding).
+
+| Branch | Date set | Frozen union, 10 Oct | Frozen union, 11 Oct | IAA Reports 7 tombs alone (lineage view) | Union, tombs in place of S2446 and E349, ±16 km | The same, ±1.6 km |
+|---|---|---|---|---|---|---|
+| 24-J | strict | 0/0/5 of 5 | 0/0/5 of 5 | 0/0/25 of 25 | 0/0/30 of 30 | 2/0/28 of 30 (F4, F7) |
+| 24-J | any | 3/4/35 of 42 | 3/4/35 of 42 | 0/0/104 of 104 | 3/4/138 of 145 | 19/4/122 of 145 |
+| 24-A | strict | 0/5/0 of 5 | 0/5/0 of 5 | 0/0/25 of 25 | 0/5/25 of 30 | 0/30/0 of 30 |
+| 24-A | any | 0/41/1 of 42 | 0/41/1 of 42 | 0/0/104 of 104 | 0/40/105 of 145 | 0/144/1 of 145 |
+| 54-P | strict | 0/0/5 of 5 | 0/0/5 of 5 | 0/24/1 of 25 | 0/24/6 of 30 | 0/24/6 of 30 |
+| 54-P | any | 21/5/16 of 42 | 21/5/16 of 42 | 0/79/25 of 104 | 20/84/41 of 145 | 20/84/41 of 145 |
+| 27-T | strict | 0/0/5 of 5 | 0/0/5 of 5 | 1/0/24 of 25 (H) | 1/0/29 of 30 (H) | 1/0/29 of 30 (H) |
+| 54-L | strict | 0/0/5 of 5 | 0/0/5 of 5 | 0/0/25 of 25 | 0/0/30 of 30 | 0/0/30 of 30 |
+| 54-L | any | 0/24/18 of 42 | 0/24/18 of 42 | 0/0/104 of 104 | 0/23/122 of 145 | 0/23/122 of 145 |
+| 54-M | strict | 0/0/5 of 5 | 0/0/5 of 5 | 3/0/22 of 25 (A2, D1, H) | 3/0/27 of 30 (A2, D1, H) | 3/0/27 of 30 |
+| 54-M | any | 0/24/18 of 42 | 0/24/18 of 42 | 3/0/101 of 104 | 3/23/119 of 145 | 3/23/119 of 145 |
+| 14-NAME | any | 0/0/42 of 42 | 0/0/42 of 42 | 0/0/104 of 104 | 0/0/145 of 145 | 0/0/145 of 145 |
+
+- **The frozen counts do not change.** No cell of the 10 October `scores_summary.csv` or `features_summary.csv` changed; the new rows are the `lineage_HK` view. The Region A and A∪B headlines are unchanged as well.
+- **24-J** (tomb in a wadi on the way from Jericho to Secacah). At ±16 km the road clause is unknown for every Jericho tomb. At ±1.6 km the 16 tombs of Hills F and G match, F4 and F7 strictly. INFERENCE: they match because the 3 km road zone reaches round the palaces end of the road line; Wadi Tasun runs below the Quruntul monastery, north-west of the town, away from the direction of Qumran.
+- **54-P** (tomb of the common people of Jericho). The report's tombs are family loculi tombs, so the communal clause fails for 24 of the 25 dated ones. The earlier lenient match of S2446 came from the word "cemetery" in that row.
+- **54-M** (sons of […], the Jerichoite). Three family tombs at Jericho carry named inscriptions: A2, D1 and H. All are exposed (PLAN §1). D1's family is "from Jerusalem" by its own inscriptions (Inscr. 15a, 16). **54-L**: no Obed.
+- **27-T** (the queen's tomb). Tomb H matches on the name clause only. The queen is Agrippina, named as the patron of a freedman buried there; the tomb is not hers. It was exposed before reading (background knowledge, listed in Amendment 2).
+- Other branches in Region B (lineage view, strict): 52-M 0/17/8 and 56-P 0/18/7 (no west-facing entrance); 14-M62, 14-P06, 51-S, 51-J and 53-P fail on location; 48-Y, 48-L and 51-O stay unknown.
+
+### Akeldama (exploratory, Amendment 2 Part B)
+
+- **Coded.** Three caves (pp. 1–32): rock-cut caves of 4, 3 and 4 chambers with loculi, arcosolia with burial troughs, repositories and stone doors; 8, 16 and 16 ossuaries. Caves 2 and 3 have named ossuary inscriptions (Table 3.1, p. 69). All three are dated to the first century CE (strict), with Late Roman and Byzantine reuse. Units and decisions: `amendment2_akeldama_units.csv`, `data/manual_check_amendment2.csv`.
+- **Position.** The report gives no grid. The text of ASI 102/484 names these caves (excavated by Avni and Greenhut, 1989), so they take its point (±0.05 km). The ASI map reference given for them lies 54 m away.
+- **Result.** All three caves lie within 0.15 km of ASI 102/484, so under the frozen duplicate rule **no Region A count changes**, and the frozen Region A headline stands.
+- **If they were counted as new units** (exploratory): Region A strict N goes from 197 to 200. No branch gains a match. 14-M62, 14-P06, 24-J, 24-A, 51-S, 51-J, 53-P, 54-P and 54-W each gain 3 fails; 52-M, 56-P and 56-M gain 1 fail (Cave 3 is entered from the south-east). Named inscriptions in Region A would go from 6 to 8, inner pillars from 1 to 2 (Cave 3's relief pilasters, accepted as for 102/435).
+- Hand decisions: Cave 3's "Helene" is a woman buried there, not the queen of Adiabene, so 27-T stays unknown. Cave 1 (entrance in the courtyard's south-west wall) and Cave 2 ("faced northwest") were not accepted as west-facing: both open from their shared courtyard (INFERENCE from p. 2).
+
+### Gaps
+
+- No Jericho tomb has a grid position; all share one point at ±16 km.
+- 78 of the 104 units have no date of their own, including all of robbed Hill C.
+- The excavators "could examine only a small part of this extensive area" (p. 3). The detection rate is unknown.
+- Not read: the rotated Table II.2 (p. 52); the figures themselves (plans are cited only); Akeldama ch. 2 and the full inscription entries of ch. 3.
+- Names and numbers come from OCR text. Only "16 km" and the Table II.5 tomb column were checked by eye.
+- The introduction (p. 4) says 14 tombs on Hill G were excavated; ch. II (p. 34) and Table II.1 give 9. Nine are coded.
+
+### Figures
+
+IAA Reports are under IAA copyright, so no page image is committed. [data/iaa_reports_figures.csv](data/iaa_reports_figures.csv) lists the maps, plans and tables met (pages, PDF pages, use). Retrieval: the portal pages https://publications.iaa.org.il/iaareports/69 and /74, or the owner's copies under `~/Downloads/IAA portal volumes/` (hashes in `sources_access.csv`).
+
 ## Blocked: what a person would need to do
 
-1. **IAA Reports 7 (Hachlili and Killebrew 1999).** In a browser, download the free full text (33.1 MB) from https://publications.iaa.org.il/iaareports/69 and put it in Drive. Needed: ch. II, The Tombs; ch. IV, Inscriptions; ch. VI, The Nefesh; ch. VII, Chronology. The Jericho cemetery could then be counted tomb by tomb.
-2. **IAA Reports 1 (The Akeldama Tombs).** The same, from https://publications.iaa.org.il/iaareports/74.
+1. ~~IAA Reports 7 (Hachlili and Killebrew 1999)~~, https://publications.iaa.org.il/iaareports/69: done, read 11 October (addendum). Still unread there: the rotated Table II.2 (p. 52) and the figures themselves.
+2. ~~IAA Reports 1 (The Akeldama Tombs)~~, https://publications.iaa.org.il/iaareports/74: done, read 11 October (addendum, exploratory).
 3. **Kloner and Zissu 2007** (Peeters, ISACR 8). Interlibrary loan or purchase. Catalogue: https://library.arce.org/portal/Record/22665 (DS109.25 .K5613 2007). Needed: the tomb catalogue and the necropolis map.
 4. **Avigad 1954** (Hebrew). Library only.
 
@@ -184,11 +264,17 @@ With the enrichment, no branch result changes. 51-S still lacks a recorded Zadok
 |---|---|
 | PLAN.md | Frozen plan (cd394d7) |
 | PLAN_AMENDMENT_1_exploratory.md | Post-hoc exploratory rules |
-| tombs.csv | One row per unit (1,055): source, record id, locator, name, lat/lon (EPSG:4326), uncertainty, region flags and distances, duplicate flag, every feature code with matched terms, names, period terms, dating, manual rejections, exposure, enrichment, text hash |
-| scores.csv | One row per located unit and scored branch (20,800): clause values, result, sensitivity result |
-| scores_summary.csv | Per branch × region × date set × lineage view: N, k/f/m, sensitivity k/f/m, clause counts, matches |
+| PLAN_AMENDMENT_2_exploratory.md | Coding choices for IAA Reports 7 (Part A) and the exploratory Akeldama addition (Part B), committed before either report's records were read (cd706b0) |
+| tombs.csv | One row per unit (1,159; T1056–T1159 are the IAA Reports 7 units): source, record id, locator, name, lat/lon (EPSG:4326), uncertainty, region flags and distances, duplicate flag, links to earlier rows, every feature code with matched terms, names, period terms, dating, manual rejections, exposure, enrichment, text hash |
+| scores.csv | One row per located unit and scored branch (22,880): clause values, result, sensitivity result |
+| scores_summary.csv | Per branch × region × date set × view (`all_lineages`, `primary`, `lineage_HK`): N, k/f/m, sensitivity k/f/m, clause counts, matches |
 | features_summary.csv | Per region × date set × view: feature counts |
 | amendment1_codes.csv, amendment1_scores_summary.csv | Exploratory amendment outputs |
+| amendment2_akeldama_units.csv, amendment2_scores_summary.csv | Amendment 2: the three Akeldama caves, coded and scored; Region A counts with and without them; Region B views with the Jericho tombs in place of the cemetery rows |
+| data/hk_units.csv | IAA Reports 7: one short transcription per tomb (feature words only), pages, figures, report type, inscriptions |
+| data/akeldama_units.csv | IAA Reports 1: the same for the three caves |
+| data/manual_check_amendment2.csv | Hand decisions for the caves |
+| data/iaa_reports_figures.csv | Figures and plans of both reports: references only, not copied |
 | coverage.csv | Share of each region inside online ASI sheets |
 | sources_access.csv | Every source, URL, status and what was read |
 | data/kenyon_ii_units.csv | Kenyon II units, transcribed from the repo note |
@@ -196,7 +282,7 @@ With the enrichment, no branch result changes. 51-S still lacks a recorded Zadok
 | data/exposure.csv | Units exposed before the freeze |
 | data/enrichment_a64.csv | Allegro 1964 observations (exploratory) |
 | data/asi_manifest.csv, data/asi_selected_maps.json | Hashes and times of the ASI responses; the maps used |
-| scripts/ | `fetch_asi_maps.py`, `build_tombs.py`, `amendment1.py`, `coverage.py`, `tombs_common.py` |
+| scripts/ | `fetch_asi_maps.py`, `build_tombs.py`, `amendment1.py`, `amendment2.py`, `coverage.py`, `tombs_common.py` |
 | tests/test_tombs.py | Plan hash, schema, rules, reproduction of the scores; rebuild check with the cache |
 
 Run from the repository root:
@@ -205,11 +291,12 @@ Run from the repository root:
 python3 -I -B research/regional/tombs/scripts/fetch_asi_maps.py CACHE
 python3 -I -B research/regional/tombs/scripts/build_tombs.py CACHE WBADB_data1.xlsx
 python3 -I -B research/regional/tombs/scripts/amendment1.py CACHE WBADB_data1.xlsx
+python3 -I -B research/regional/tombs/scripts/amendment2.py CACHE WBADB_data1.xlsx
 python3 -I -B research/regional/tombs/scripts/coverage.py CACHE
 TOMBS_ASI_CACHE=CACHE TOMBS_WBADB=WBADB_data1.xlsx python3 -I -B -m unittest discover -s research/regional/tombs/tests -v
 ```
 
-All 15 tests pass with the worker's cache (11 October). Without the cache, the two rebuild tests are skipped.
+All 20 tests pass with the worker's cache (11 October). Without the cache, the two rebuild tests are skipped.
 
 ## Proposed changes for the integrator
 
@@ -221,3 +308,7 @@ All 15 tests pass with the worker's cache (11 October). Without the cache, the t
    - The shared scratch folder `asi_cache/` belongs to another lane. This lane's first fetch wrote 18 files there and appended 17 rows to that folder's `manifest.csv`.
    - The files were moved to `scratchpad/tombs/asi_cache/`, and that manifest was restored to its own 46 rows.
    - The other lane may want to re-verify its manifest.
+6. **Addendum, 11 October (IAA Reports 7 and 1).**
+   - Pending requests: the request for IAA Reports 7 and 1 is satisfied; drop it if it is listed. Kloner and Zissu 2007 (loan) remains.
+   - `research/OPEN_QUESTIONS.md`, entries 24, 27 and 54 (keep the tracker pair identical): "IAA Reports 7 read (regional/tombs addendum, 11 Oct): 103 Jericho tombs and a nefesh, 25 dated to the window. The frozen union counts are unchanged, since all lie inside the cemetery row WBADB S2446. Counted alone: 54-M 3 matches (A2, D1, H; exposed), 27-T 1 (Tomb H, Queen Agrippina as a freedman's patron), 24-J and 54-P none. No tomb has a grid position. Next evidence: georeferenced tomb positions from Figs. II.1–II.2."
+   - Akeldama (exploratory): no Region A count changes; nothing to add to the shared files.

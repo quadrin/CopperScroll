@@ -5,6 +5,8 @@ Run from the repository root:
     python3 -I research/regional/tombs/scripts/build_tombs.py ASI_CACHE WBADB_XLSX [OUT_DIR]
 ASI_CACHE is the folder written by fetch_asi_maps.py; WBADB_XLSX is WBADB_data1.xlsx (hash checked).
 OUT_DIR defaults to the lane folder. Rules: the JSON block of PLAN.md (commit cd394d7).
+Source HK (IAA Reports 7, added 11 October 2026) is read from data/hk_units.csv, coded as PLAN_AMENDMENT_2 Part A
+fixes; its units are numbered after the frozen build's 1,055, and scores_summary.csv gains the view lineage_HK.
 Manual checks (PLAN §5) are read from data/manual_check.csv; each one names the unit, the code and
 the decision. Nothing else is set by hand.
 """
@@ -274,6 +276,30 @@ def haesi_units(plan):
     return out
 
 
+HK_ANCHOR = 'WBADB S2446'   # the WBADB row for this cemetery (Amendment 2, Part A.4)
+HK_UNC_KM = 16.0            # the cemetery's extent as the report states it: "16 km long" (p. 166)
+HK_REF = 'Hachlili and Killebrew 1999, Jericho: The Jewish Cemetery of the Second Temple Period (IAA Reports 7)'
+ADDENDUM_SOURCES = ('HK',)  # numbered after the 1,055 units of the frozen build, so no earlier unit id moves
+
+
+def hk_units(plan, anchor_lat, anchor_lon):
+    """Source HK (PLAN §3), coded from data/hk_units.csv as Amendment 2, Part A fixes: one transcription per tomb,
+    position = the WBADB cemetery point, uncertainty = the extent the report states."""
+    out = []
+    with open(os.path.join(DATA, 'hk_units.csv'), encoding='utf-8') as fh:
+        for r in csv.DictReader(fh):
+            typ = f"; Type {r['report_type']} (p. 59)" if r['report_type'] else ''
+            ins = f"; {r['inscriptions']}" if r['inscriptions'] else ''
+            out.append(dict(source='HK', record_id=f"HK {r['record_id']}",
+                            locator=f"{HK_REF}, Hill {r['hill']}, pp. {r['pages']}; Figs. {r['figures']}{typ}{ins}; "
+                                    f"position = {HK_ANCHOR} point (no grid given), ±{HK_UNC_KM:g} km (p. 166)",
+                            name=f"Jericho, Tomb {r['record_id']}" if not r['record_id'].startswith('nefesh')
+                            else f"Jericho, Hill D {r['record_id']}",
+                            lat=anchor_lat, lon=anchor_lon, unc=HK_UNC_KM, text=r['text'], period_text=None,
+                            flags=(), text_hash=T.sha256_text(r['text']), linked_to=r['linked_to']))
+    return out
+
+
 def kenyon_units(plan):
     out = []
     lat, lon = plan['points']['tell_es_sultan']
@@ -330,6 +356,9 @@ def exposure_of(u, listed, asi_lane_ids):
         return 'exposed: ' + listed[u['record_id']]
     if u['source'] == 'KEN':
         return 'exposed: repo extraction of Kenyon II read before the freeze'
+    if u['source'] == 'HK':
+        return ("exposed: PLAN §1 lists Jericho's cemetery as exposed; this tomb record (IAA Reports 7) was first read "
+                "on 11 Oct, after the freeze")
     if u['source'] == 'HAESI':
         return 'repo-coded by the HA-ESI lane (9 Oct); rows not seen by this lane before the freeze'
     if u.get('tier1_lineage'):
@@ -344,7 +373,9 @@ def build_units(cache, xlsx):
     plan = T.load_plan()
     coder = Coder(plan)
     asi, sheets = asi_units(plan, cache)
-    units = asi + wbadb_units(plan, xlsx) + haesi_units(plan) + kenyon_units(plan)
+    wb = wbadb_units(plan, xlsx)
+    anchor = [u for u in wb if u['record_id'] == HK_ANCHOR][0]
+    units = asi + wb + haesi_units(plan) + kenyon_units(plan) + hk_units(plan, anchor['lat'], anchor['lon'])
 
     # eligibility and region
     elig = []
@@ -424,8 +455,14 @@ def build_units(cache, xlsx):
         elif u['source'] == 'WBADB' and u.get('wbadb_excavation_also_surveyed'):
             u['possible_duplicate_of'] = 'WBADB survey row (Excavations row marked Surveyed)'
 
-    # unit ids
-    for i, u in enumerate(sorted(elig, key=lambda x: (x['source'], x['record_id']))):
+    # unit ids: the frozen build's units keep their ids; addendum sources follow, in natural order
+    def natural(s):
+        return tuple((0, int(p)) if p.isdigit() else (1, p) for p in re.findall(r'\d+|\D+', s))
+
+    def id_key(x):
+        add = x['source'] in ADDENDUM_SOURCES
+        return (add, x['source'], natural(x['record_id']) if add else x['record_id'])
+    for i, u in enumerate(sorted(elig, key=id_key)):
         u['unit_id'] = f"T{i + 1:04d}"
 
     # exposure (PLAN §1)
@@ -455,7 +492,7 @@ def main(cache, xlsx, out_dir):
     # ---------------------------------------------------------------- write tombs.csv
     tcols = ['unit_id', 'source', 'record_id', 'locator', 'name', 'lat', 'lon', 'crs', 'position_uncertainty_km',
              'd_temple_km', 'd_jericho_km', 'd_road_km', 'in_A', 'in_A3', 'in_B1', 'in_B2', 'in_B2_5', 'region_note',
-             'in_asi_sheet', 'possible_duplicate_of', 'multi_tomb_record', 'tomb_terms',
+             'in_asi_sheet', 'possible_duplicate_of', 'linked_to', 'multi_tomb_record', 'tomb_terms',
              'monument_F1', 'F1_terms', 'porch_F2', 'F2_terms', 'exedra_pillar_F2x', 'inside_pillar_F3', 'F3_terms',
              'chambers_F10', 'F10_n', 'inscription_F4', 'named_inscription_F5', 'F5_terms', 'setting_wadi_F19', 'F19_terms',
              'garden_mention', 'garden_ancient_F6', 'entrance_orientation_F7', 'west_facing_F7w',
@@ -527,9 +564,12 @@ def main(cache, xlsx, out_dir):
         return {'strict': u['dated_in_window'] == 'yes', 'lenient': u['dated_lenient'] == 'yes', 'any': True}[ds]
 
     def in_view(u, view):
+        if view.startswith('lineage_'):   # PLAN §3: each lineage is also counted on its own (duplicates included)
+            return u['source'] == view[len('lineage_'):]
         return view == 'all_lineages' and not u['possible_duplicate_of'] or view == 'primary' and (
             u['source'] == 'ASI' or (u['source'] == 'WBADB' and u['in_asi_sheet'] == 'no'
                                      and not u.get('wbadb_excavation_also_surveyed')))
+    views = ('all_lineages', 'primary', 'lineage_HK')
 
     by_unit = {}
     for s in srows:
@@ -541,7 +581,7 @@ def main(cache, xlsx, out_dir):
     for b, spec in branches.items():
         for reg in regions:
             for ds in plan['date_sets']:
-                for view in ('all_lineages', 'primary'):
+                for view in views:
                     if not spec['clauses']:
                         sum_rows.append(dict(branch=b, headline='', region=reg, date_set=ds, view=view, N='',
                                              k_match='', f_fail='', m_unknown='', k_sens='', f_sens='', m_sens='',
@@ -575,7 +615,7 @@ def main(cache, xlsx, out_dir):
     frows = []
     for reg in regions:
         for ds in plan['date_sets']:
-            for view in ('all_lineages', 'primary'):
+            for view in views:
                 us = [u for u in located if in_region(u, reg) and in_dateset(u, ds) and in_view(u, view)]
                 frows.append(dict(
                     region=reg, date_set=ds, view=view, N=len(us),
