@@ -2,32 +2,32 @@
  "by_class": {
   "cave_with_finds": {
    "no": 4,
-   "rows": 22,
-   "unknown": 17,
-   "yes": 1
+   "rows": 27,
+   "unknown": 21,
+   "yes": 2
   },
   "channel_aqueduct": {
-   "no": 18,
-   "rows": 36,
-   "unknown": 10,
-   "yes": 8
+   "no": 28,
+   "rows": 58,
+   "unknown": 17,
+   "yes": 13
   },
   "cistern": {
-   "no": 14,
-   "rows": 36,
-   "unknown": 19,
-   "yes": 3
+   "no": 21,
+   "rows": 54,
+   "unknown": 26,
+   "yes": 7
   },
   "columbarium_dovecote": {
    "no": 0,
-   "rows": 2,
+   "rows": 3,
    "unknown": 2,
-   "yes": 0
+   "yes": 1
   },
   "dam": {
    "no": 0,
-   "rows": 2,
-   "unknown": 0,
+   "rows": 3,
+   "unknown": 1,
    "yes": 2
   },
   "hoard_cache": {
@@ -37,52 +37,52 @@
    "yes": 1
   },
   "pool_reservoir": {
-   "no": 7,
-   "rows": 15,
-   "unknown": 4,
-   "yes": 4
+   "no": 12,
+   "rows": 22,
+   "unknown": 5,
+   "yes": 5
   },
   "ritual_bath": {
    "no": 0,
-   "rows": 4,
+   "rows": 10,
    "unknown": 1,
-   "yes": 3
+   "yes": 9
   },
   "rockcut_installation": {
-   "no": 16,
-   "rows": 63,
-   "unknown": 41,
-   "yes": 6
+   "no": 20,
+   "rows": 86,
+   "unknown": 55,
+   "yes": 11
   },
   "tomb_burial_cave": {
-   "no": 10,
-   "rows": 29,
-   "unknown": 10,
-   "yes": 9
+   "no": 13,
+   "rows": 43,
+   "unknown": 15,
+   "yes": 15
   }
  },
- "feature_rows": 212,
+ "feature_rows": 309,
  "outside_feature_rows": 0,
  "positions_in_scope": 582,
  "positions_read": [
   81,
-  200
+  250
  ],
- "reports": 120,
- "reports_in_region": 120,
+ "reports": 170,
+ "reports_in_region": 170,
  "rows_by_zone": {
   "Z1_GERIZIM": 0,
   "Z2_JORDAN_VALLEY": 0,
   "Z3_JUDEAN_DESERT": 0,
-  "Z4_JERUSALEM_HILLS": 212
+  "Z4_JERUSALEM_HILLS": 309
  },
  "status": {
-  "not read (time limit)": 462,
-  "read": 120
+  "not read (time limit)": 412,
+  "read": 170
  },
  "window": {
-  "no": 71,
-  "unknown": 104,
-  "yes": 37
+  "no": 100,
+  "unknown": 143,
+  "yes": 66
  }
 }

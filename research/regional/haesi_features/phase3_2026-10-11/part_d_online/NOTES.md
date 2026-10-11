@@ -21,7 +21,7 @@ Work in progress; this file is updated with each batch commit.
 - The hash is SHA-256 (UTF-8) of the `innerText` of the page's `.reportcontent` element with whitespace collapsed to single spaces and trimmed, computed in the page by a short script (no network request). This reproduces the phase-2 hash exactly: checked on the already-read T3 position 1 (HAESI-886, `9e50e172…5c65`, 2,930 characters), the only page reloaded outside the scope.
 - From position 119 on, the script also returns the first 8 hex digits of SHA-256 of the hash string; `scripts/add_records.py` rejects a record whose typed hash does not match it (transcription check). Hashes for positions 81–118 were copied from the same script output without that check.
 - HAESI-20777: the first hash attempt ran before the content element existed; the hash was taken again after the page finished loading (no reload). The script waits for the element from then on.
-- HAESI-1738: the page-text tool cut its output at 50,000 characters, inside the figure-caption list at the end; the body text was read in full and the hash covers the whole element.
+- HAESI-1738 and HAESI-1219: the page-text tool cut its output at 50,000 characters, inside the figure-caption list at the end; the body text was read in full and the hash covers the whole element.
 
 ## Coding notes (exploratory, no parameter change)
 
@@ -30,6 +30,10 @@ Work in progress; this file is updated with each batch commit.
 - Natural rock shelters with finds are coded cave_with_finds (HAESI-26591).
 - Plastered installations whose function the report does not state are not coded; installations the report calls water-related are coded pool_reservoir.
 - Where a survey or multi-area report gives different datings for features of one class, the class is split into rows by site or area (`site` field), so each row has one dating.
+- Stepped plastered installations are coded ritual_bath whatever the excavator's label (plan §5), with the label in the subtype (for example "probably not a miqveh", HAESI-26474; "stepped pool", HAESI-26253).
+- A function discussed only as one of several proposals in the literature is not imposed: the Hasmonean wall W4493 under Wilson's Arch (HAESI-25662) is not coded as a dam; the broad wall at the Tyropoeon outlet that the excavators themselves call "probably ... a dam" (HAESI-26253) is.
+- Natural pits without cutting or plaster (HAESI-20771, HAESI-2027) and a plastered pit for "liquids" with water not stated (HAESI-25770) are not coded.
+- A radiocarbon range straddling the window start (HAESI-25047 furnace, 205–90 BCE) and dates given as "2nd c. CE, at the latest under Hadrian" (HAESI-1219 cardo drains) are partial overlaps: unknown.
 
 ## Positions read
 
