@@ -5,7 +5,8 @@ Some in-volume tables of contents omit reports (HA 76 omits the Judean Desert su
 lists every short heading-like line of the layout text (1-8 words, a blank line before it, no full stop at the
 end) whose words match the frozen gazetteer, the region-wide terms or the A3 variants, and which does not
 repeat a heading already in screen_auto.csv for that page range. Each listed line is opened by hand and decided
-in data/screen_decisions.csv (a new report heading, or a sub-heading, caption or running text).
+in data/body_heading_review.csv (same report as a screened heading, sub-heading, caption or running text);
+bare group words and imprint lines are classified automatically by the build.
 
 Run: python3 -I .../part_b/scripts/body_headings.py TEXTDIR   (after screen_partb.py)
 Writes part_b/data/body_heading_hits.csv. Deterministic.

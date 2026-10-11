@@ -7,7 +7,7 @@ map references printed on the heading's pages are converted (Old Israel Grid EPS
 EPSG:2039; phase-1 geo.py) and zoned with the frozen phase-2 boxes; the heading (English and Hebrew, with
 its group heading) is matched to the frozen gazetteer plus the A3 variants. The automatic flags only decide
 which headings must be opened; the decision for every flagged heading is made by reading its first lines
-(data/screen_decisions.csv) and the build script merges the two.
+(data/decisions/*.csv) and the build script (build_partb.py) merges the two.
 
 The pdftotext output is NOT in the repository. Run (from the repository root):
   python3 -I research/regional/haesi_features/phase3_2026-10-11/part_b/scripts/screen_partb.py TEXTDIR
