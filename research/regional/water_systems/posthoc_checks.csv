@@ -1,0 +1,16 @@
+row_id,entry_branch,clause,rule_code,verdict,reason
+ASI-109/4/16-aqueduct,21 S-any and S-pool | N-side,side,MATCH,not confirmed,"""north"" in the merged sentence is the aqueduct's northern bank of Nahal Perat; the record gives no side for the dam and pool at the head (the frozen abbreviation rule kept ""km."" from ending the sentence)"
+ASI-109/4/16-aqueduct,all branches,date,in,not confirmed,"the label ""Hasmonean"" dates the palaces the aqueduct reaches; the record dates no phase of the aqueduct (""has an early phase"")"
+ASI-109/4/16-aqueduct,21 head; 32 O-built,head,MATCH,confirmed,"""It begins in a rock-cutting and diverts the spring water"" by a dam from a natural pool"
+ASI-109/4/16-outlet,32 O-built | K-Qelt,date,in,not confirmed,same sentence-rule date as the aqueduct row
+ASI-108/2/69-aqueduct,21 head,head,MATCH,not confirmed,"""source"" names the monastery's main water source (a channel draining the wadi bank), not the head of a conduit"
+ASI-109/7/98-aqueduct,21 head and S-pool,head; marker,MATCH,confirmed,"a conduit ""begins near reservoirs 50 m to N"" (N of the cistern; the side relative to the head is not stated)"
+ASI-109/7/48-aqueduct,21 head and S-stone,marker,MATCH,partly confirmed,"the aqueduct ""begins at a dam ... of large stones"": a stone-built dam, not a single great stone; row superseded by the literature group G-HYR-NAQ"
+ASI-109/5/6-aqueduct,32 T-wall,tur,MATCH,not confirmed,the long high walls support the ancient aqueduct along its course; none is described at its mouth
+ASI-109/5/6-aqueduct,21 head; 32 O-built,head,MATCH,confirmed,"""The aqueduct begins at ‘En Qelt"""
+ASI-102/447-cistern,45 C-open | G-loose,wadi,MATCH,not confirmed,"""from N."" means from the north; the rule's ""n."" (Nahal) abbreviation matched it; the conduit feeding the cistern is confirmed"
+ASI-101/219-cistern,46 res+cis | B-EinKerem and B-any,entrance; place,MATCH,confirmed,"Be'er No'omi, ""a rock-hewn staircase descends to the cistern""; in the valley SE of ʿEn Kerem"
+ASI-105/95-cistern,46 res+cis | B-RamatRahel and B-any,entrance,MATCH,confirmed,"a stepped vaulted corridor of a Herodian tomb ""served as a cistern"" in the Byzantine period (row FAILs on date)"
+ASI-102/610-spring,32 O-spring | K-Qelt,kozeba,MATCH,confirmed,ʿEin Fara is the uppermost spring of Nahal Perat (Wadi Qelt)
+WBADB-S2709-spring,32 O-spring | K-Qelt,kozeba,MATCH,confirmed,ʿEin Fara (same place as ASI 102/610; WBADB row dup_of it)
+ASI-109/4/21-spring,32 O-spring | K-Qelt,kozeba,MATCH,confirmed,"aggregate mention of ""the springs at ‘Ein Farah, ‘Ein Fu’ar and ‘Ein Fejira"" in an aqueduct record"
