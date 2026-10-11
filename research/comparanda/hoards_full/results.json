@@ -1,0 +1,2017 @@
+{
+ "plan_sha256": "1f0a90a932b98ee7e6c0549b6550ae54048e2ed727ac6bf1aa0a85441ee0362c",
+ "frozen_inputs": {
+  "research/comparanda/concealment_contexts/PLAN.md": "6d797192bffdb92473237347a6fbe59a93593eca6bd7fc32e3f54acc647369d1",
+  "research/comparanda/concealment_contexts/concealment.py": "976b59b1dcd8ccb60cb4a127da80ca7e12de9bbb53f8fdf78c3a476d8771b265",
+  "research/comparanda/concealment_contexts/scroll_contexts.csv": "c9547bb28dc93aed3d6256148d5bb7211b7403e91da922c4aa82c2be1949ae50",
+  "research/comparanda/concealment_contexts/comparanda.csv": "2e1f970ede7e974aa76f0fa0d8e495d0026872be93722e6d6392d3b4f5c0d542",
+  "research/schematics/searches/search_04_depths.py": "71e39b3dd9f9812ba16fe59cd7e695ba8c58802dd95577c0ee5fe9de72bd059b",
+  "research/agent_review_2026-10-07/wave1/T02_hoard_match/hoards.json": "e5972e7f486ed7bac1e5db424f9174a855895f7f02b40e03b04f4069baa3e4d8"
+ },
+ "settings": {
+  "seed": 20261009,
+  "n_perm": 20000,
+  "n_boot": 2000,
+  "alpha": 0.05,
+  "D_threshold": 0.25,
+  "min_known_comparanda": 30,
+  "window_main": [
+   -150,
+   135
+  ],
+  "window_sens": [
+   -63,
+   70
+  ],
+  "window_catalogue": [
+   -200,
+   135
+  ]
+ },
+ "catalogue": {
+  "rows": 204,
+  "excluded_by_definition": 22,
+  "eligible": 182,
+  "eligible_in_region": 182,
+  "eligible_in_catalogue_window": 181,
+  "eligible_in_main_window": 179,
+  "catalogue_window_by_origin": {
+   "precedent": 161,
+   "new": 20
+  },
+  "catalogue_window_by_object_class": {
+   "coins": 165,
+   "metal_objects": 3,
+   "coins_and_metal": 1,
+   "documents": 12
+  },
+  "catalogue_window_by_how_found": {
+   "excavation": 84,
+   "chance": 7,
+   "looting_recovered": 24,
+   "unknown": 66
+  },
+  "catalogue_window_by_window_status": {
+   "inside": 138,
+   "partial": 43
+  },
+  "catalogue_window_by_setting": {
+   "cistern": 1,
+   "pool_reservoir": 1,
+   "channel": 1,
+   "tomb": 2,
+   "cave": 30,
+   "structure": 44,
+   "open_ground": 3,
+   "unknown": 99
+  },
+  "catalogue_window_known_context": 82,
+  "catalogue_window_with_stated_depth": 5,
+  "temple_related": 0,
+  "recoded_precedent_rows": [
+   "chre8178"
+  ],
+  "unexposed_at_freeze_rows": [],
+  "new_rows": [
+   "n01_haifa1906",
+   "n02_nablus1891",
+   "n03_rafah1968",
+   "n04_barag1988",
+   "n05_jannaeus_lead1",
+   "n06_jannaeus_lead2",
+   "n07_jannaeus_lead3",
+   "n08_swords2023",
+   "n09_iaa2021_cache",
+   "n_qumran_2Q",
+   "n_qumran_4Q",
+   "n_qumran_5Q",
+   "n_qumran_6Q",
+   "n_qumran_7Q",
+   "n_qumran_8Q",
+   "n_qumran_9Q",
+   "n_qumran_11Q",
+   "n_qumran_12Q",
+   "n_qumran_10Q",
+   "n_or_aqiva",
+   "n_givati_rings",
+   "n_thirdwall_tools",
+   "n_ethri"
+  ],
+  "excluded": [
+   {
+    "id": "chre7592",
+    "reason": "source: found on a street, not deliberately concealed"
+   },
+   {
+    "id": "chre7618",
+    "reason": "single coin"
+   },
+   {
+    "id": "chre7659",
+    "reason": "mint debris (found with flan mould)"
+   },
+   {
+    "id": "chre7726",
+    "reason": "grave goods: hoard lay on the uppermost body in a mass grave"
+   },
+   {
+    "id": "chre8013",
+    "reason": "single coin"
+   },
+   {
+    "id": "chre8043",
+    "reason": "single coin"
+   },
+   {
+    "id": "chre8096",
+    "reason": "source: probably a dealer's lot, not a hoard"
+   },
+   {
+    "id": "chre8132",
+    "reason": "duplicate of chre18771 (same 114-coin money-box hoard, 2014)"
+   },
+   {
+    "id": "chre8149",
+    "reason": "shipwreck: accidental loss, not a deposit"
+   },
+   {
+    "id": "chre8166",
+    "reason": "source: no coins found together as hoards"
+   },
+   {
+    "id": "chre8169",
+    "reason": "excavators uncertain whether these were hoards"
+   },
+   {
+    "id": "chre8177",
+    "reason": "grave goods: three coins in a skull"
+   },
+   {
+    "id": "chre8445",
+    "reason": "shipwreck: accidental loss, not a deposit"
+   },
+   {
+    "id": "chre8455",
+    "reason": "probably the same hoard(s) as chre8500 (same summary and coordinates)"
+   },
+   {
+    "id": "chre8594",
+    "reason": "single coin"
+   },
+   {
+    "id": "chre8595",
+    "reason": "single coin"
+   },
+   {
+    "id": "chre9012",
+    "reason": "shipwreck: found underwater, accidental loss"
+   },
+   {
+    "id": "chre18787",
+    "reason": "single coin"
+   },
+   {
+    "id": "chre21648",
+    "reason": "shipwreck: accidental loss, not a deposit"
+   },
+   {
+    "id": "t02H10",
+    "reason": "the Copper Scroll's own findspot (PLAN 5)"
+   },
+   {
+    "id": "n_qumran_10Q",
+    "reason": "ostraca only; no manuscript deposit or scroll jar reported"
+   },
+   {
+    "id": "n_thirdwall_tools",
+    "reason": "a stonemason's tool kit; not described as concealed; date only 'Second Temple period'"
+   }
+  ],
+  "eligible_outside_catalogue_window": [
+   "n_or_aqiva"
+  ]
+ },
+ "runs": {
+  "main": {
+   "n_a": 60,
+   "n_b": 78,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 29,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 66.5293,
+   "p": 5e-05,
+   "D": 0.6808,
+   "D_ci95": [
+    0.5551,
+    0.8064
+   ],
+   "residuals_a": {
+    "G1": 6.139,
+    "G2": 2.674,
+    "G3": -3.898,
+    "G4": -4.774,
+    "G5": 2.305
+   },
+   "n_comparanda_units_total": 177,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Main: branch P, 150 BCE-135 CE, southern Levant, clusters, all types, coarse"
+  },
+  "s1_window": {
+   "n_a": 60,
+   "n_b": 35,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 2,
+    "G2": 0,
+    "G3": 13,
+    "G4": 18,
+    "G5": 2
+   },
+   "chi2": 40.6054,
+   "p": 5e-05,
+   "D": 0.669,
+   "D_ci95": [
+    0.5214,
+    0.8167
+   ],
+   "residuals_a": {
+    "G1": 4.274,
+    "G2": 2.408,
+    "G3": -3.456,
+    "G4": -4.017,
+    "G5": 1.364
+   },
+   "n_comparanda_units_total": 73,
+   "n_comparanda_unknown": 38,
+   "verdict": "DIFFERENT",
+   "label": "Window 63 BCE-70 CE"
+  },
+  "s2_region": {
+   "n_a": 60,
+   "n_b": 55,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 1,
+    "G2": 2,
+    "G3": 27,
+    "G4": 22,
+    "G5": 3
+   },
+   "chi2": 55.133,
+   "p": 5e-05,
+   "D": 0.6742,
+   "D_ci95": [
+    0.5364,
+    0.797
+   ],
+   "residuals_a": {
+    "G1": 5.675,
+    "G2": 2.07,
+    "G3": -4.872,
+    "G4": -3.253,
+    "G5": 1.673
+   },
+   "n_comparanda_units_total": 95,
+   "n_comparanda_unknown": 40,
+   "verdict": "DIFFERENT",
+   "label": "Region: Judaea and the Jordan valley"
+  },
+  "s3_branch_Pu": {
+   "n_a": 60,
+   "n_b": 78,
+   "counts_a": {
+    "G1": 28,
+    "G2": 9,
+    "G3": 5,
+    "G4": 9,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 29,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 63.7742,
+   "p": 5e-05,
+   "D": 0.6641,
+   "D_ci95": [
+    0.5295,
+    0.791
+   ],
+   "residuals_a": {
+    "G1": 5.975,
+    "G2": 2.674,
+    "G3": -3.898,
+    "G4": -4.551,
+    "G5": 2.305
+   },
+   "n_comparanda_units_total": 177,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Scroll branch Pu (Puech 2006/2015)"
+  },
+  "s4_branch_M": {
+   "n_a": 60,
+   "n_b": 78,
+   "counts_a": {
+    "G1": 30,
+    "G2": 9,
+    "G3": 6,
+    "G4": 6,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 29,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 69.5592,
+   "p": 5e-05,
+   "D": 0.6974,
+   "D_ci95": [
+    0.5705,
+    0.8154
+   ],
+   "residuals_a": {
+    "G1": 6.301,
+    "G2": 2.674,
+    "G3": -3.638,
+    "G4": -5.23,
+    "G5": 2.305
+   },
+   "n_comparanda_units_total": 177,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Scroll branch M (Milik 1960/1962)"
+  },
+  "s5_branch_L": {
+   "n_a": 60,
+   "n_b": 78,
+   "counts_a": {
+    "G1": 28,
+    "G2": 8,
+    "G3": 5,
+    "G4": 9,
+    "G5": 10
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 29,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 63.6874,
+   "p": 5e-05,
+   "D": 0.6641,
+   "D_ci95": [
+    0.5295,
+    0.791
+   ],
+   "residuals_a": {
+    "G1": 5.975,
+    "G2": 2.419,
+    "G3": -3.898,
+    "G4": -4.551,
+    "G5": 2.556
+   },
+   "n_comparanda_units_total": 177,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Scroll branch L (Lefkovits 2000)"
+  },
+  "s6_pit_unknown": {
+   "n_a": 53,
+   "n_b": 78,
+   "counts_a": {
+    "G1": 22,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 29,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 58.4167,
+   "p": 5e-05,
+   "D": 0.6522,
+   "D_ci95": [
+    0.514,
+    0.7842
+   ],
+   "residuals_a": {
+    "G1": 5.384,
+    "G2": 2.92,
+    "G3": -3.555,
+    "G4": -4.35,
+    "G5": 2.558
+   },
+   "n_comparanda_units_total": 177,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Scroll pits (שית/שיח/שוחה/שיא) set to unknown"
+  },
+  "s7_rows": {
+   "n_a": 60,
+   "n_b": 80,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 29,
+    "G4": 43,
+    "G5": 3
+   },
+   "chi2": 68.0724,
+   "p": 5e-05,
+   "D": 0.6833,
+   "D_ci95": [
+    0.5542,
+    0.8042
+   ],
+   "residuals_a": {
+    "G1": 6.217,
+    "G2": 2.72,
+    "G3": -3.812,
+    "G4": -4.918,
+    "G5": 2.353
+   },
+   "n_comparanda_units_total": 179,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Comparanda counted as rows, not clusters"
+  },
+  "s8_metal_only": {
+   "n_a": 59,
+   "n_b": 66,
+   "counts_a": {
+    "G1": 28,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 18,
+    "G4": 40,
+    "G5": 3
+   },
+   "chi2": 56.0809,
+   "p": 5e-05,
+   "D": 0.6584,
+   "D_ci95": [
+    0.5193,
+    0.7815
+   ],
+   "residuals_a": {
+    "G1": 5.546,
+    "G2": 2.408,
+    "G3": -2.708,
+    "G4": -5.399,
+    "G5": 2.029
+   },
+   "n_comparanda_units_total": 165,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Coins and metal only (documents dropped on both sides)"
+  },
+  "s9_fine": {
+   "n_a": 60,
+   "n_b": 78,
+   "counts_a": {
+    "C01": 14,
+    "C02": 8,
+    "C03": 7,
+    "C04": 9,
+    "C05": 5,
+    "C06": 0,
+    "C07": 7,
+    "C08": 3,
+    "C09": 1,
+    "C11": 0,
+    "C12": 5,
+    "C13": 1,
+    "C14": 0
+   },
+   "counts_b": {
+    "C01": 1,
+    "C02": 1,
+    "C03": 1,
+    "C04": 2,
+    "C05": 29,
+    "C06": 6,
+    "C07": 7,
+    "C08": 2,
+    "C09": 0,
+    "C11": 3,
+    "C12": 0,
+    "C13": 12,
+    "C14": 14
+   },
+   "chi2": 80.13,
+   "p": 5e-05,
+   "D": 0.7205,
+   "D_ci95": [
+    0.6282,
+    0.8385
+   ],
+   "residuals_a": {
+    "C01": 4.126,
+    "C02": 2.842,
+    "C03": 2.588,
+    "C04": 2.674,
+    "C05": -3.898,
+    "C06": -2.197,
+    "C07": 0.519,
+    "C08": 0.759,
+    "C09": 1.144,
+    "C11": -1.536,
+    "C12": 2.597,
+    "C13": -2.735,
+    "C14": -3.462
+   },
+   "n_comparanda_units_total": 177,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Fine categories C01-C14 (secondary test)"
+  }
+ },
+ "bias": {
+  "B1_excavated_vs_not": {
+   "n_a": 67,
+   "n_b": 9,
+   "counts_a": {
+    "G1": 2,
+    "G2": 2,
+    "G3": 21,
+    "G4": 40,
+    "G5": 2
+   },
+   "counts_b": {
+    "G1": 1,
+    "G2": 0,
+    "G3": 6,
+    "G4": 1,
+    "G5": 1
+   },
+   "chi2": 9.1822,
+   "p": 0.0904,
+   "D": 0.5158,
+   "D_ci95": [
+    0.3002,
+    0.7313
+   ],
+   "residuals_a": {
+    "G1": -1.175,
+    "G2": 0.525,
+    "G3": -2.079,
+    "G4": 2.746,
+    "G5": -1.175
+   },
+   "verdict": "INCONCLUSIVE",
+   "note": "group a = excavated, group b = chance plus looting_recovered"
+  },
+  "B2a_scroll_vs_excavated": {
+   "n_a": 60,
+   "n_b": 67,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 2,
+    "G2": 2,
+    "G3": 21,
+    "G4": 40,
+    "G5": 2
+   },
+   "chi2": 63.4115,
+   "p": 5e-05,
+   "D": 0.6938,
+   "D_ci95": [
+    0.5726,
+    0.8219
+   ],
+   "residuals_a": {
+    "G1": 5.94,
+    "G2": 2.403,
+    "G3": -3.208,
+    "G4": -5.38,
+    "G5": 2.403
+   },
+   "verdict": "DIFFERENT"
+  },
+  "B2b_scroll_vs_not_excavated": {
+   "n_a": 60,
+   "n_b": 9,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 1,
+    "G2": 0,
+    "G3": 6,
+    "G4": 1,
+    "G5": 1
+   },
+   "chi2": 20.6597,
+   "p": 0.0011,
+   "D": 0.5833,
+   "D_ci95": [
+    0.3833,
+    0.9
+   ],
+   "residuals_a": {
+    "G1": 2.101,
+    "G2": 1.246,
+    "G3": -4.458,
+    "G4": 0.185,
+    "G5": 0.309
+   },
+   "verdict": "NOT TESTABLE"
+  },
+  "B3_unknown_share_by_how_found": {
+   "excavation": {
+    "units": 80,
+    "unknown_context": 13,
+    "share_unknown": 0.163
+   },
+   "chance": {
+    "units": 7,
+    "unknown_context": 4,
+    "share_unknown": 0.571
+   },
+   "looting_recovered": {
+    "units": 24,
+    "unknown_context": 18,
+    "share_unknown": 0.75
+   },
+   "unknown": {
+    "units": 66,
+    "unknown_context": 64,
+    "share_unknown": 0.97
+   }
+  }
+ },
+ "summary": {
+  "main_verdict": "DIFFERENT",
+  "robust": true,
+  "runs_changing_verdict": [],
+  "reporting_sensitive": true
+ },
+ "extra_runs": {
+  "x1_catalogue_window": {
+   "n_a": 60,
+   "n_b": 80,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 30,
+    "G4": 42,
+    "G5": 3
+   },
+   "chi2": 68.0891,
+   "p": 5e-05,
+   "D": 0.6833,
+   "D_ci95": [
+    0.5542,
+    0.8042
+   ],
+   "residuals_a": {
+    "G1": 6.217,
+    "G2": 2.72,
+    "G3": -3.944,
+    "G4": -4.786,
+    "G5": 2.353
+   },
+   "n_comparanda_units_total": 179,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Catalogue window 200 BCE-135 CE instead of 150 BCE-135 CE"
+  },
+  "x2_new_rows_only": {
+   "n_a": 60,
+   "n_b": 10,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 0,
+    "G2": 0,
+    "G3": 10,
+    "G4": 0,
+    "G5": 0
+   },
+   "chi2": 42.7778,
+   "p": 5e-05,
+   "D": 0.9167,
+   "D_ci95": [
+    0.8333,
+    0.9833
+   ],
+   "residuals_a": {
+    "G1": 2.873,
+    "G2": 1.312,
+    "G3": -6.54,
+    "G4": 1.227,
+    "G5": 1.312
+   },
+   "n_comparanda_units_total": 19,
+   "n_comparanda_unknown": 9,
+   "verdict": "NOT TESTABLE",
+   "label": "Main run on rows first catalogued in this lane (origin new or t02)"
+  },
+  "x3_precedent_coding": {
+   "n_a": 60,
+   "n_b": 78,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 29,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 66.5293,
+   "p": 5e-05,
+   "D": 0.6808,
+   "D_ci95": [
+    0.5551,
+    0.8064
+   ],
+   "residuals_a": {
+    "G1": 6.139,
+    "G2": 2.674,
+    "G3": -3.898,
+    "G4": -4.774,
+    "G5": 2.305
+   },
+   "n_comparanda_units_total": 177,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "Main run with the precedent's coding restored for recoded rows"
+  },
+  "x4_after_freeze_only": {
+   "n_a": 60,
+   "n_b": 10,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 0,
+    "G2": 0,
+    "G3": 10,
+    "G4": 0,
+    "G5": 0
+   },
+   "chi2": 42.7778,
+   "p": 5e-05,
+   "D": 0.9167,
+   "D_ci95": [
+    0.8333,
+    0.9833
+   ],
+   "residuals_a": {
+    "G1": 2.873,
+    "G2": 1.312,
+    "G3": -6.54,
+    "G4": 1.227,
+    "G5": 1.312
+   },
+   "n_comparanda_units_total": 19,
+   "n_comparanda_unknown": 9,
+   "verdict": "NOT TESTABLE",
+   "label": "Main run on rows first read after this lane's freeze"
+  }
+ },
+ "exploratory_runs": {
+  "e1_without_new_qumran_caves": {
+   "n_a": 60,
+   "n_b": 69,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 20,
+    "G4": 41,
+    "G5": 3
+   },
+   "chi2": 59.4656,
+   "p": 5e-05,
+   "D": 0.6674,
+   "D_ci95": [
+    0.5384,
+    0.792
+   ],
+   "residuals_a": {
+    "G1": 5.77,
+    "G2": 2.455,
+    "G3": -2.96,
+    "G4": -5.379,
+    "G5": 2.078
+   },
+   "n_comparanda_units_total": 168,
+   "n_comparanda_unknown": 99,
+   "verdict": "DIFFERENT",
+   "label": "EXPLORATORY (chosen after coding): main run without the Qumran caves 2Q-12Q added here"
+  },
+  "e2_s1_window_without_new_qumran_caves": {
+   "n_a": 60,
+   "n_b": 26,
+   "counts_a": {
+    "G1": 29,
+    "G2": 9,
+    "G3": 5,
+    "G4": 8,
+    "G5": 9
+   },
+   "counts_b": {
+    "G1": 2,
+    "G2": 0,
+    "G3": 4,
+    "G4": 18,
+    "G5": 2
+   },
+   "chi2": 32.5781,
+   "p": 5e-05,
+   "D": 0.6295,
+   "D_ci95": [
+    0.4859,
+    0.8
+   ],
+   "residuals_a": {
+    "G1": 3.605,
+    "G2": 2.087,
+    "G3": -0.981,
+    "G4": -5.184,
+    "G5": 0.932
+   },
+   "n_comparanda_units_total": 64,
+   "n_comparanda_unknown": 38,
+   "verdict": "NOT TESTABLE",
+   "label": "EXPLORATORY (chosen after coding): run s1 (63 BCE-70 CE) without the Qumran caves 2Q-12Q added here"
+  }
+ },
+ "delta_vs_precedent": {
+  "precedent": {
+   "counts_comparanda": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 19,
+    "G4": 41,
+    "G5": 3
+   },
+   "n_known": 68,
+   "n_unknown": 90,
+   "D": 0.6657,
+   "p": 5e-05,
+   "verdict": "DIFFERENT"
+  },
+  "here": {
+   "counts_comparanda": {
+    "G1": 3,
+    "G2": 2,
+    "G3": 29,
+    "G4": 41,
+    "G5": 3
+   },
+   "n_known": 78,
+   "n_unknown": 99,
+   "D": 0.6808,
+   "p": 5e-05,
+   "verdict": "DIFFERENT"
+  },
+  "change_by_group": {
+   "G1": 0,
+   "G2": 0,
+   "G3": 10,
+   "G4": 0,
+   "G5": 0
+  },
+  "new_units_in_main_run": [
+   "n01_haifa1906",
+   "n02_nablus1891",
+   "n03_rafah1968",
+   "n04_barag1988",
+   "n05_jannaeus_lead1",
+   "n06_jannaeus_lead2",
+   "n07_jannaeus_lead3",
+   "n08_swords2023",
+   "n09_iaa2021_cache",
+   "n_qumran_2Q",
+   "n_qumran_4Q",
+   "n_qumran_5Q",
+   "n_qumran_6Q",
+   "n_qumran_7Q",
+   "n_qumran_8Q",
+   "n_qumran_9Q",
+   "n_qumran_11Q",
+   "n_qumran_12Q",
+   "n_ethri"
+  ]
+ },
+ "depth": {
+  "scroll_phrases": 26,
+  "cubit_branches_m": {
+   "short": 0.445,
+   "working": 0.5,
+   "royal": 0.525
+  },
+  "scroll_restored_or_corrupt_entries": [
+   "21",
+   "38",
+   "28"
+  ],
+  "comparanda_eligible_catalogue_window": 181,
+  "comparanda_with_stated_depth": 5,
+  "comparanda_without_stated_depth": 176,
+  "comparanda_rows": [
+   {
+    "id": "chre7288",
+    "depth_m": 3.5,
+    "datum": "feature_top",
+    "text": "hoard niche \"3.5 m below the shaft leading into the hall\"; also \"0.5 m above the beaten chalk floor\""
+   },
+   {
+    "id": "chre7732",
+    "depth_m": 0.5,
+    "datum": "feature_top",
+    "text": "underneath \"a thick (at least 50 cm) undisturbed layer of quarry chips\" (minimum)"
+   },
+   {
+    "id": "chre7813",
+    "depth_m": 1.55,
+    "datum": "present_surface",
+    "text": "shaft \"to a depth of about 1.8 m\"; hoard \"some 20-30 cm above the floor\" (1.8 - 0.25 = 1.55, computed)"
+   },
+   {
+    "id": "chre8472",
+    "depth_m": 0.4,
+    "datum": "present_surface",
+    "text": "\"At 40 cm, a beaten earth floor\"; purse \"found at this depth\""
+   },
+   {
+    "id": "chre8474",
+    "depth_m": 0.2,
+    "datum": "present_surface",
+    "text": "under a large stone, \"at a depth of about 20 cm\""
+   }
+  ],
+  "comparanda": {
+   "all": {
+    "n": 5,
+    "min": 0.2,
+    "median": 0.5,
+    "max": 3.5,
+    "q1": 0.4,
+    "q3": 1.55,
+    "share_deeper_than_0.5m": 0.4,
+    "share_deeper_than_1m": 0.4,
+    "share_deeper_than_2m": 0.2,
+    "share_deeper_than_3m": 0.2
+   },
+   "main_window": {
+    "n": 5,
+    "min": 0.2,
+    "median": 0.5,
+    "max": 3.5,
+    "q1": 0.4,
+    "q3": 1.55,
+    "share_deeper_than_0.5m": 0.4,
+    "share_deeper_than_1m": 0.4,
+    "share_deeper_than_2m": 0.2,
+    "share_deeper_than_3m": 0.2
+   },
+   "surface_and_floor_only": {
+    "n": 3,
+    "note": "too few stated depths to describe",
+    "rows": [
+     "chre7813",
+     "chre8472",
+     "chre8474"
+    ]
+   },
+   "datum_present_surface": {
+    "n": 3,
+    "note": "too few stated depths to describe",
+    "rows": [
+     "chre7813",
+     "chre8472",
+     "chre8474"
+    ]
+   },
+   "datum_ancient_floor": {
+    "n": 0,
+    "note": "too few stated depths to describe",
+    "rows": []
+   },
+   "datum_feature_top": {
+    "n": 2,
+    "note": "too few stated depths to describe",
+    "rows": [
+     "chre7288",
+     "chre7732"
+    ]
+   },
+   "datum_unstated": {
+    "n": 0,
+    "note": "too few stated depths to describe",
+    "rows": []
+   }
+  },
+  "scroll": {
+   "all_phrases:short": {
+    "n": 26,
+    "min": 0.445,
+    "median": 3.115,
+    "max": 10.68,
+    "q1": 1.335,
+    "q3": 4.784,
+    "share_deeper_than_0.5m": 0.962,
+    "share_deeper_than_1m": 0.962,
+    "share_deeper_than_2m": 0.654,
+    "share_deeper_than_3m": 0.615,
+    "share_scroll_deeper_than_comparanda_max": 0.462,
+    "share_comparanda_shallower_than_scroll_min": 0.4
+   },
+   "all_phrases:working": {
+    "n": 26,
+    "min": 0.5,
+    "median": 3.5,
+    "max": 12.0,
+    "q1": 1.5,
+    "q3": 5.375,
+    "share_deeper_than_0.5m": 0.962,
+    "share_deeper_than_1m": 0.962,
+    "share_deeper_than_2m": 0.654,
+    "share_deeper_than_3m": 0.615,
+    "share_scroll_deeper_than_comparanda_max": 0.462,
+    "share_comparanda_shallower_than_scroll_min": 0.4
+   },
+   "all_phrases:royal": {
+    "n": 26,
+    "min": 0.525,
+    "median": 3.675,
+    "max": 12.6,
+    "q1": 1.575,
+    "q3": 5.644,
+    "share_deeper_than_0.5m": 1.0,
+    "share_deeper_than_1m": 0.962,
+    "share_deeper_than_2m": 0.692,
+    "share_deeper_than_3m": 0.654,
+    "share_scroll_deeper_than_comparanda_max": 0.615,
+    "share_comparanda_shallower_than_scroll_min": 0.6
+   },
+   "without_restored_or_corrupt:short": {
+    "n": 23,
+    "min": 0.445,
+    "median": 3.115,
+    "max": 10.68,
+    "q1": 1.335,
+    "q3": 5.117,
+    "share_deeper_than_0.5m": 0.957,
+    "share_deeper_than_1m": 0.957,
+    "share_deeper_than_2m": 0.652,
+    "share_deeper_than_3m": 0.609,
+    "share_scroll_deeper_than_comparanda_max": 0.478,
+    "share_comparanda_shallower_than_scroll_min": 0.4
+   },
+   "without_restored_or_corrupt:working": {
+    "n": 23,
+    "min": 0.5,
+    "median": 3.5,
+    "max": 12.0,
+    "q1": 1.5,
+    "q3": 5.75,
+    "share_deeper_than_0.5m": 0.957,
+    "share_deeper_than_1m": 0.957,
+    "share_deeper_than_2m": 0.652,
+    "share_deeper_than_3m": 0.609,
+    "share_scroll_deeper_than_comparanda_max": 0.478,
+    "share_comparanda_shallower_than_scroll_min": 0.4
+   },
+   "without_restored_or_corrupt:royal": {
+    "n": 23,
+    "min": 0.525,
+    "median": 3.675,
+    "max": 12.6,
+    "q1": 1.575,
+    "q3": 6.038,
+    "share_deeper_than_0.5m": 1.0,
+    "share_deeper_than_1m": 0.957,
+    "share_deeper_than_2m": 0.696,
+    "share_deeper_than_3m": 0.652,
+    "share_scroll_deeper_than_comparanda_max": 0.609,
+    "share_comparanda_shallower_than_scroll_min": 0.6
+   }
+  }
+ },
+ "landmark": {
+  "scroll": {
+   "primary_deposit:main": {
+    "n": 61,
+    "any": 19,
+    "share_any": 0.311,
+    "corner": 6,
+    "step": 4,
+    "pillar": 3,
+    "threshold": 6,
+    "gate": 1,
+    "wall_face": 1,
+    "hits": {
+     "1": [
+      "step"
+     ],
+     "5": [
+      "step"
+     ],
+     "6": [
+      "step"
+     ],
+     "9": [
+      "gate"
+     ],
+     "10": [
+      "wall_face"
+     ],
+     "11": [
+      "corner"
+     ],
+     "12": [
+      "corner"
+     ],
+     "12a": [
+      "corner"
+     ],
+     "15": [
+      "pillar"
+     ],
+     "16": [
+      "threshold"
+     ],
+     "25": [
+      "pillar",
+      "threshold"
+     ],
+     "26": [
+      "corner",
+      "threshold"
+     ],
+     "31": [
+      "corner"
+     ],
+     "46": [
+      "threshold"
+     ],
+     "50": [
+      "corner"
+     ],
+     "51": [
+      "pillar"
+     ],
+     "55": [
+      "threshold"
+     ],
+     "56": [
+      "threshold"
+     ],
+     "57": [
+      "step"
+     ]
+    }
+   },
+   "translation:main": {
+    "n": 61,
+    "any": 20,
+    "share_any": 0.328,
+    "corner": 8,
+    "step": 3,
+    "pillar": 3,
+    "threshold": 9,
+    "gate": 1,
+    "wall_face": 1,
+    "hits": {
+     "1": [
+      "step"
+     ],
+     "6": [
+      "step"
+     ],
+     "9": [
+      "gate"
+     ],
+     "10": [
+      "threshold",
+      "wall_face"
+     ],
+     "11": [
+      "corner"
+     ],
+     "12": [
+      "corner"
+     ],
+     "12a": [
+      "corner"
+     ],
+     "13": [
+      "corner",
+      "threshold"
+     ],
+     "15": [
+      "pillar"
+     ],
+     "16": [
+      "threshold"
+     ],
+     "25": [
+      "pillar",
+      "threshold"
+     ],
+     "26": [
+      "corner",
+      "threshold"
+     ],
+     "31": [
+      "corner"
+     ],
+     "46": [
+      "threshold"
+     ],
+     "47": [
+      "threshold"
+     ],
+     "50": [
+      "corner"
+     ],
+     "51": [
+      "corner",
+      "pillar"
+     ],
+     "55": [
+      "threshold"
+     ],
+     "56": [
+      "threshold"
+     ],
+     "57": [
+      "step"
+     ]
+    }
+   },
+   "primary_deposit:strict": {
+    "n": 61,
+    "any": 15,
+    "share_any": 0.246,
+    "corner": 6,
+    "step": 4,
+    "pillar": 3,
+    "threshold": 0,
+    "gate": 1,
+    "wall_face": 1,
+    "hits": {
+     "1": [
+      "step"
+     ],
+     "5": [
+      "step"
+     ],
+     "6": [
+      "step"
+     ],
+     "9": [
+      "gate"
+     ],
+     "10": [
+      "wall_face"
+     ],
+     "11": [
+      "corner"
+     ],
+     "12": [
+      "corner"
+     ],
+     "12a": [
+      "corner"
+     ],
+     "15": [
+      "pillar"
+     ],
+     "25": [
+      "pillar"
+     ],
+     "26": [
+      "corner"
+     ],
+     "31": [
+      "corner"
+     ],
+     "50": [
+      "corner"
+     ],
+     "51": [
+      "pillar"
+     ],
+     "57": [
+      "step"
+     ]
+    }
+   },
+   "translation:strict": {
+    "n": 61,
+    "any": 16,
+    "share_any": 0.262,
+    "corner": 8,
+    "step": 3,
+    "pillar": 3,
+    "threshold": 2,
+    "gate": 1,
+    "wall_face": 1,
+    "hits": {
+     "1": [
+      "step"
+     ],
+     "6": [
+      "step"
+     ],
+     "9": [
+      "gate"
+     ],
+     "10": [
+      "threshold",
+      "wall_face"
+     ],
+     "11": [
+      "corner"
+     ],
+     "12": [
+      "corner"
+     ],
+     "12a": [
+      "corner"
+     ],
+     "13": [
+      "corner"
+     ],
+     "15": [
+      "pillar"
+     ],
+     "25": [
+      "pillar"
+     ],
+     "26": [
+      "corner"
+     ],
+     "31": [
+      "corner"
+     ],
+     "50": [
+      "corner"
+     ],
+     "51": [
+      "corner",
+      "pillar"
+     ],
+     "56": [
+      "threshold"
+     ],
+     "57": [
+      "step"
+     ]
+    }
+   }
+  },
+  "comparanda": {
+   "a_all_units_main:main": {
+    "n": 177,
+    "any": 20,
+    "share_any": 0.113,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "a_all_units_main:strict": {
+    "n": 177,
+    "any": 17,
+    "share_any": 0.096,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "b_known_context_main:main": {
+    "n": 78,
+    "any": 20,
+    "share_any": 0.256,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "b_known_context_main:strict": {
+    "n": 78,
+    "any": 17,
+    "share_any": 0.218,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_all_units_catalogue_window:main": {
+    "n": 179,
+    "any": 20,
+    "share_any": 0.112,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_all_units_catalogue_window:strict": {
+    "n": 179,
+    "any": 17,
+    "share_any": 0.095,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_known_context_catalogue_window:main": {
+    "n": 80,
+    "any": 20,
+    "share_any": 0.25,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_known_context_catalogue_window:strict": {
+    "n": 80,
+    "any": 17,
+    "share_any": 0.212,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   }
+  }
+ }
+}
