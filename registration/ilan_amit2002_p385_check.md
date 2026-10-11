@@ -39,7 +39,7 @@ Inference: p. 385 discusses dating (Hasmonean / Herodian / Herod Archelaus, with
 
 ## Other routes tried
 
-- Internet Archive: title search `"aqueducts of israel"` returns 0 items (29 Sep 2026).
+- Internet Archive: title search `"aqueducts of israel"` returns 0 items (29 Sep 2026). Repeated 10 Oct 2026 with the title and with the three editors' names: still 0 items. A scan of p. 385 remains the only route.
 - Cambridge Core / JRA: not tried in this run. The JRA supplements are not known to be on Cambridge Core (BK).
 
 ## What the sources do NOT tell us

@@ -84,4 +84,4 @@ Edition plates, page images, crops and screenshots of rights-restricted material
 - Kallai 1972 pp.172–173 in Kochavi’s edited survey remains unread. Zohar, HA76(1981)p.19 is now [inspected](followup/B_kh_el_marjama.md#supplied-ha-76-original-inspected--8-october-utc--7-october-los-angeles) and supplies no pool observation. Mazar, IEJ 45 (1995), Zohar, IEJ 30 (1980) and Dorrell, PEQ 125 (1993) were read in the follow-up.
 - Bar-Adon 1972; Lurie 1963; Pixner 1983; Goranson 1992; Puech 1997.
 - NEAEHL vols 1–3; the DJD III plates; CIIP II (Jatt).
-- The Judaean Desert Greek papyri (papyri.info anti-bot); Leonard 2000 (numismatics). Finkelstein et al. 1997 was read in the follow-up.
+- The Judaean Desert Greek papyri (papyri.info anti-bot); searched on 10 October through the DDbDP files on GitHub instead: [papyri lane](wave1/T07_greek_letters/papyri_2026-10-10/REPORT.md). Leonard 2000 (numismatics). Finkelstein et al. 1997 was read in the follow-up.

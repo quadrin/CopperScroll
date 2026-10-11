@@ -17,4 +17,6 @@ The IIP GitHub repository; papyri.info (anti-bot check, so the Murabbaʿat and N
 ## Best next step
 Check the CIIP I–IV indices and the Judaean Desert Greek papyri for ΚΕΝ, ΧΑΓ and ΗΝ.
 
+*10 October 2026:* the papyri were searched through the DDbDP EpiDoc files on GitHub (papyri/idp.data), under this pre-registration unchanged. No group appears as a mark in the window. See [papyri_2026-10-10/REPORT.md](papyri_2026-10-10/REPORT.md).
+
 Files: PREREGISTRATION.md, data/hits_graded.csv, data/comparanda_mark_systems.csv, data/system_assessment.csv, data/corpus_coverage.csv, data/chance_expectation.json, data/system_tests.json, data/iip_all.json, scripts/.

@@ -4,8 +4,8 @@ Sources:
 - text/translation_en.json X 12–14, XI 2–11 (entries 48, 51, 52, 54), I 5–6 (2); atlas/app/atlas-data.json
   (entries 2, 36, 48, 51–54; places jer_kidron_mon, jer_kidron_east, jer_se_corner); text/readings.json
   (e48-absalom, e51-zadok-tomb, e52-zadok-court, e54-jericho-or-pure); tables/phase5_assessments.csv (JER 48, 51, 52);
-  tables/entry_concordance.csv (item_allegro, allegro_match: Allegro 1960 items matched by line, not checked
-  against his text).
+  tables/entry_concordance.csv (item_allegro, allegro_match: Allegro 1960 items matched by line and
+  checked against his text on 10 Oct 2026).
 - research/history/allegro1964_treasure_2nd_ed_extracted.md §1.6, §2.4, §3, §4 (Allegro 1964 pp. 103–112, 161, Figs. 12, 15,
   Pls. 30–32): the excavation at the base of the Zechariah monument and in the unfinished tomb south of it.
 - research/history/allegro1960_treasure_extracted.md §1 items 48–55, §3 (Allegro 1960 pp. 93–103, nn. 248–280).
@@ -96,8 +96,8 @@ assert ALLEGRO == {"47": "48", "48": "49", "51": "52", "52": "53", "53": "54", "
 assert conc["2"]["item_allegro"] == "2" and conc["36"]["item_allegro"] == "37"
 for e in TABLE_ENTRIES:
     m = conc[e]["allegro_match"]
-    assert m.startswith(f"same lines as Allegro 1960 item {ALLEGRO[e]} (") and \
-        m.endswith("matched by line, not checked against his text"), m
+    assert m.startswith(f"same lines and same passage as Allegro 1960 item {ALLEGRO[e]} (") and \
+        "checked against his text" in m, m
 
 
 def roman_lines(col_line):
@@ -123,7 +123,7 @@ assert (s30["place_id"], s30["place_match"], s30["purpose"], s30["result"], s30[
 assert (s30["when_start"], s30["when_end"]) == ("1959", "1963") and "our expedition" in s30["when_text"]
 assert "Zechariah" in s30["looked_at"] and "item 52" in s30["looked_at"]
 assert s30["extent_depth"] == "no depth, footprint or plan given"
-assert "entry 48 names" in s30["coverage_notes"] and "not checked" in s30["notes"]
+assert "entry 48 names" in s30["coverage_notes"] and "checked against his text" in s30["notes"]
 assert sorted(r["search_id"] for r in ledger
               if re.search(r"Zechariah|Absalom|Zadok|Hezir", " ".join(r.values()))) == ["S03", "S30"]
 readme = (HIST / "salvage_records" / "README.md").read_text(encoding="utf-8")
@@ -161,7 +161,7 @@ mx, my, mw, mh = S.panel(c, MX, TOP, MW, BOTTOM - TOP, "The Kidron below the Tem
                           "Grey = no dig recorded.",
                           "Red = the scroll's wording (project translation) and who proposed the tie. "
                           "Every tie is a candidate.",
-                          "Allegro's item numbers: the concordance, matched by line, not checked against his text "
+                          "Allegro's item numbers: the concordance, matched by line and checked against his text "
                           "(table at right)."])
 
 VX = 195                       # valley line
@@ -343,8 +343,8 @@ for en in TABLE_ENTRIES:
     c.text(cols[1], y, ln, 10.5, P["sub"])
     c.text(cols[2], y, en, 10.5, RED, 600)
     y = c.wrap(cols[3], y, place, 70, 10.5, lh=13.6, fill=P["sub"]) + 4
-y = c.wrap(x0, y + 2, "Items and lines from tables/entry_concordance.csv (item_allegro): “matched by line, not "
-           "checked against his text”. Places from the Allegro extractions.", 92, 10.5,
+y = c.wrap(x0, y + 2, "Items and lines from tables/entry_concordance.csv (item_allegro): same lines and same passage, "
+           "checked against his text (1960 ch. 2). Places from the Allegro extractions.", 92, 10.5,
            fill=P["muted"], italic=True) + 8
 
 c.text(x0, y, "What each source reports", 12, P["ink"], 700)
@@ -384,7 +384,7 @@ S.footer(c, 830, [
      "Zechariah) and ASI Map 102 (102/410 lies N of 102/411; the cave lies behind Absalom's monument, drawn E by "
      "inference). East bank after Milik (phase 5). Nothing traced; sizes and spacing unknown."),
     ("What it shows", "One recorded dig at the monuments: Allegro's, round the base of the Zechariah monument and in "
-     "the unfinished tomb south of it, his “Tomb of Zadok” (ledger S30; his item 52, entry 51 by line, not checked). "
+     "the unfinished tomb south of it, his “Tomb of Zadok” (ledger S30; his item 52, entry 51). "
      "It has no depth or plan. The west side of Absalom's monument, entry 48's spot, has no recorded dig."),
     ("What it does not show", "That any entry belongs to any monument: every tie is a candidate. True positions, "
      "or digging by others that the repo does not record."),

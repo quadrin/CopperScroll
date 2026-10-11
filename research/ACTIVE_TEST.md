@@ -2,7 +2,7 @@
 
 Updated 10 October 2026 UTC / 10 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (10 October): **obtained**: desktop and phone browser observations of the atlas with History removed. Places, Landscapes and Read the scroll remain accessible; a retired entry-31 History link opens its candidate map. The film panel and development source-film route were removed, and the generated Pages build contains no History bundle ([atlas guide](../atlas/README.md)).
+Last session (10 October, evening): **obtained**: the Judaean Desert Greek papyri (DDbDP on GitHub) searched for the R11 letter groups, with none found as a mark ([papyri lane](agent_review_2026-10-07/wave1/T07_greek_letters/papyri_2026-10-10/REPORT.md)), and Allegro 1960 ch. 2 checked against the concordance (all 61 items agree). Also merged the entry 25 licence leads and archived the activity counters ([findings log](logs/findings_log.md)). Nothing here bears on the three active questions.
 
 ## Active questions and the observation that decides each
 

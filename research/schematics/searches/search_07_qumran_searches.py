@@ -14,7 +14,7 @@ Sources (all repo paths are relative to the repository root):
   trench), S17 (2009 probe near L138), S18 (Magen and Peleg), S28 (Allegro's crawl, courtyard trench and
   wall deposit, from the 1964 book only). Read and checked below.
 - tables/entry_concordance.csv: item_allegro and allegro_match (Allegro 1960 item numbers matched to the
-  project's entries by line, not checked against his text). Read below.
+  project's entries by line and checked against his text, 10 Oct 2026). Read below.
 - research/sources/humbert2016_pp425-432_check.md: Humbert and Chambon 2016 p. 375 (the large pools L91,
   56-58 and 71) and pp. 425-427 (L138 bath at the aqueduct inlet beside entrance 702; de Vaux's 1955 journal).
 - research/sources/qumran_northern_dump_contact_test_2026-10-02.md: Magen and Peleg 2007 pp. 7-8, n. 8;
@@ -73,20 +73,20 @@ for e in atlas["entries"]:
 PREF = sorted((k for k, v in CAND.items() if v == "preferred"), key=int)
 POSS = sorted((k for k, v in CAND.items() if v == "possible"), key=int)
 assert PREF == ["21", "22"] and POSS == ["20", "23", "25", "26"], (PREF, POSS)
-# Allegro's item numbers -> project entries, as recorded (by line, unchecked) in the entry concordance
+# Allegro's item numbers -> project entries, as recorded (by line, checked against his text) in the entry concordance
 with open(REPO / "tables" / "entry_concordance.csv", encoding="utf-8-sig", newline="") as fh:
     CONC = list(csv.DictReader(fh))
 ENTRY_OF = {}
 for r in CONC:
     if r["item_allegro"]:
-        assert "matched by line, not checked against his text" in r["allegro_match"], r
+        assert "checked against his text" in r["allegro_match"], r
         ENTRY_OF[r["item_allegro"]] = r["entry_puech"]
 ITEMS = ["21", "22", "23", "24", "25"]
 assert all(i in ENTRY_OF for i in ITEMS)
 
 
 def by_line(item):
-    return f"entry {ENTRY_OF[item]} by line"
+    return f"entry {ENTRY_OF[item]}"
 
 
 # ---------------------------------------------------------------- page
@@ -354,7 +354,7 @@ assert ENTS == list(range(ENTS[0], ENTS[0] + len(ITEMS))), ENTS
 yend = c.wrap(sx + 10, y + 18, f"Atlas: Kh. Qumran is the preferred candidate for entries {' and '.join(PREF)}, "
               f"a possible one for {', '.join(POSS[:-1])} and {POSS[-1]}. Allegro's item numbers are his own; "
               f"tables/entry_concordance.csv matches his items {ITEMS[0]}–{ITEMS[-1]} to entries "
-              f"{ENTS[0]}–{ENTS[-1]} by line, not checked against his text.", 58, 11, fill=P["sub"])
+              f"{ENTS[0]}–{ENTS[-1]}: same lines and same passages, checked against his text.", 58, 11, fill=P["sub"])
 assert yend - 14.5 < sy + sh, yend
 
 # ---------------- footer ----------------
