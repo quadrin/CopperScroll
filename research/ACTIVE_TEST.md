@@ -2,7 +2,7 @@
 
 Updated 10 October 2026 UTC / 10 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (10–11 October): **obtained**: regional inventories of every recorded cave, columbarium, tomb, water installation and hidden deposit, plus 274 more IAA reports, each scored against the scroll under a plan frozen first ([regional round 2](logs/regional_round_2026-10-10.md)). One new cave fits every entry 25 clause at cave level (ʿAtiqot 41 XII/53, Naḥal Qumran; already exposed, so a control, not a holdout). Nothing bears on the three active questions.
+Last session (11 October): **obtained**: the IAA journals read in full (101 downloaded volumes and the online Jerusalem tier; 1,260 more reports, [phase 3](regional/haesi_features/phase3_2026-10-11/README.md)) and the Jericho cemetery coded tomb by tomb ([tombs](regional/tombs/README.md)). No registered result changed; nothing bears on the three active questions.
 
 ## Active questions and the observation that decides each
 

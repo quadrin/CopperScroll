@@ -1299,3 +1299,10 @@ The owner asked for every recorded cave, columbarium, tomb, water installation, 
 - **Water (entries 21, 22, 29, 32, 42, 45, 46).** 1,437 units. No conduit head with a stone on its north; no "Solomon" reservoir with a fissure to its east; entry 29 stays closed. New lead for entry 32: ʿEin Kuweiziba at the head of the ʿArrub aqueduct. ([water](../regional/water_systems/README.md))
 - **Hoards.** 204 deposits. The scroll's hiding places still differ from recorded ones (D = 0.68), but the added known-context deposits are almost all Qumran caves. Recorded deposits are shallow (stated depths: median 0.5 m, 5 deposits); none sits by a step, pillar or gate. ([hoards](../comparanda/hoards_full/README.md))
 - **IAA reports.** 274 more reports coded, 526 feature rows in the region, 98 dated to the window. The 111 portal volume PDFs and 582 Jerusalem online reports remain. ([phase 2](../regional/haesi_features/phase2_2026-10-10/README.md))
+
+
+## IAA journals read in full; Jericho cemetery tomb by tomb — 11 October 2026
+
+- **IAA reports.** The 101 portal volumes (HA 1961–1998, ESI, HA-ESI 109–115) were downloaded with the owner's approval and screened heading by heading, and the online Jerusalem tier was finished: 1,260 more reports, 2,582 feature rows in the region, 628 dated to the window. With phases 1–2, about 1,600 IAA reports are now coded. The desert, Jordan Valley and Gerizim zones hold only 207 of the new rows: little was published there. ([phase 3](../regional/haesi_features/phase3_2026-10-11/README.md))
+- **Jericho cemetery.** IAA Reports 7 coded tomb by tomb (104 units). No tomb faces west; no name matches Zadok, Obed or Absalom; one ossuary in Tomb H names Queen Agrippina as a freedman's patron (not her tomb). Frozen tomb counts unchanged. ([tombs addendum](../regional/tombs/README.md))
+- **Protected records.** HA 28–29 and the Kh. ʿAlmit notices were extracted blind; with no registered arrival item, they cannot be scored as tests.

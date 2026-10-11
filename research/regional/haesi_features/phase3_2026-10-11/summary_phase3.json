@@ -1,0 +1,103 @@
+{
+  "note": "Feature rows as coded per report and class; repeated seasons and Hebrew/English versions of one report are not yet deduplicated.",
+  "parts": {
+    "part_a": {
+      "reports": 251,
+      "feature_rows_in_region": 364,
+      "dated_in_window": {
+        "yes": 152,
+        "no": 91,
+        "unknown": 121
+      }
+    },
+    "part_b": {
+      "reports": 179,
+      "feature_rows_in_region": 473,
+      "dated_in_window": {
+        "no": 188,
+        "unknown": 170,
+        "yes": 115
+      }
+    },
+    "part_c": {
+      "reports": 248,
+      "feature_rows_in_region": 579,
+      "dated_in_window": {
+        "no": 222,
+        "yes": 135,
+        "unknown": 222
+      }
+    },
+    "part_d_online": {
+      "reports": 582,
+      "feature_rows_in_region": 1166,
+      "dated_in_window": {
+        "yes": 226,
+        "no": 365,
+        "unknown": 575
+      }
+    }
+  },
+  "by_class": {
+    "rockcut_installation": {
+      "no": 164,
+      "unknown": 388,
+      "yes": 89
+    },
+    "tomb_burial_cave": {
+      "no": 176,
+      "yes": 225,
+      "unknown": 143
+    },
+    "channel_aqueduct": {
+      "unknown": 138,
+      "no": 221,
+      "yes": 66
+    },
+    "cistern": {
+      "unknown": 193,
+      "yes": 57,
+      "no": 153
+    },
+    "cave_with_finds": {
+      "yes": 43,
+      "no": 54,
+      "unknown": 132
+    },
+    "pool_reservoir": {
+      "no": 62,
+      "unknown": 46,
+      "yes": 37
+    },
+    "ritual_bath": {
+      "yes": 84,
+      "no": 7,
+      "unknown": 14
+    },
+    "columbarium_dovecote": {
+      "unknown": 23,
+      "yes": 8,
+      "no": 5
+    },
+    "hoard_cache": {
+      "no": 19,
+      "yes": 14,
+      "unknown": 1
+    },
+    "dam": {
+      "unknown": 10,
+      "yes": 5,
+      "no": 5
+    }
+  },
+  "by_zone": {
+    "Z4_JERUSALEM_HILLS": 2375,
+    "Z3_JUDEAN_DESERT": 128,
+    "Z2_JORDAN_VALLEY": 62,
+    "Z1_GERIZIM": 17
+  },
+  "totals": {
+    "reports": 1260,
+    "feature_rows_in_region": 2582
+  }
+}
