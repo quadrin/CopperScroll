@@ -55,8 +55,9 @@ def main():
             note.append(TIER1[key])
         if key in LOCAL_COPIES:
             note.append(f"also on the owner's Mac ({LOCAL_COPIES[key]}); read in phase 2 from that copy")
-        if key == "ha_hebrew_series_1":
-            note.append("CHECK: opened in Chrome on 11 Oct 2026 as article=1001; its cover reads Hadashot Arkheologiyot 2-3 (1962), not HA 1")
+        if key == "ha_hebrew_series_2":
+            note.append("portal test (plan 3.2): opened in Chrome on 11 Oct 2026; the viewer showed the cover (HA 2-3, 1962) "
+                        "but the page-text tool read no text; nothing saved; route stopped")
         prio = "A" if (key in TIER1 or creg[key] >= 5) else ("B" if creg[key] else "C")
         if key in LOCAL_COPIES:
             prio = "local copy"
