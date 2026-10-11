@@ -38,6 +38,6 @@ All of this work is exploratory. It makes no identification claim. No registered
 
 ## What would fill the gaps
 
-- **Owner downloads** (free, but behind a browser check): the IAA portal volumes in [portal_pdfs_needed.csv](../regional/haesi_features/phase2_2026-10-10/portal_pdfs_needed.csv), priority A first, including HA 28–29; IAA Reports 7 (Jericho cemetery) and IAA Reports 1 (Akeldama); five ʿAtiqot hoard articles listed in the hoards README.
+- **Done 11 October:** all 101 IAA portal volumes and IAA Reports 7 and 1 are now on the owner's computer (`~/Downloads/IAA portal volumes/`, hashes in [portal_downloads_2026-10-11.csv](../regional/haesi_features/phase2_2026-10-10/portal_downloads_2026-10-11.csv)); none read yet, and HA 28–29 only under the arrival procedure. **Still for the owner:** five ʿAtiqot hoard articles listed in the hoards README.
 - **Through the owner's library or loans:** the IEJ 1961–62 Judean Desert caves reports (JSTOR); Kloner & Zissu 2007; *Masada* III (tower plans); IGCH and *Coin Hoards* I–X (Internet Archive loans); Eshel & Zissu 2019; the Porat refuge-cave reports; Zissu 1995 (academia.edu); the 2002 *Aqueducts of Israel* (interlibrary loan already pending).
 - **A later session:** the Jerusalem tier of the online HA-ESI reports from position 81 (582 left); the Annual of the Department of Antiquities of Jordan for hoards; ASI sheets that are not online (Qumran–Feshkha shore 109/8, Jericho 83/13, Beth Guvrin–Maresha, Hebron).

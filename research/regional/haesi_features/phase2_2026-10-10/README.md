@@ -70,6 +70,10 @@ Held for the arrival procedure (not read beyond the first lines; listed with cit
 - ESI 7–8 (1990) pp. 92–93, "Judean Desert, Cave Survey 1986/87", including Na‘aran–Jericho cliff — local PDF, not read.
 - ESI 7–8 (1990) pp. 95–97, Pharan and ‘Ein el-Fawwar sections of the monastery survey (Wadi Qelt) — local PDF, not read.
 
+## Portal PDFs downloaded (11 October 2026, after this phase)
+
+With the owner's approval, the 101 portal volumes in `portal_pdfs_needed.csv` (priorities A, B and C; the ten local copies skipped) and the full texts of IAA Reports 7 (Hachlili & Killebrew 1999, Jericho cemetery) and IAA Reports 1 (Avni & Greenhut 1996, Akeldama) were saved through the owner's own Chrome, one file per fresh tab, into `~/Downloads/IAA portal volumes/` on his computer (103 files, about 3.2 GB). No bot check appeared. Every file is a PDF whose size matches the portal's stated size. [portal_downloads_2026-10-11.csv](portal_downloads_2026-10-11.csv) records each file's source URL, bytes and SHA-256. None has been read yet. HA 28–29 (Tier 1 in the arrival register) was hashed before anyone opened it and must be read only under the arrival procedure.
+
 ## Files
 
 - `PLAN.md` (frozen), `AMENDMENTS.md`, `README.md`.
