@@ -1,0 +1,42 @@
+{
+  "_note": "Copy of PLAN.md Appendix A (frozen 2026-10-11T04:06:45Z, commit afdd69f). tests/test_columbaria.py checks that every pattern here appears verbatim in the appendix. Python re, IGNORECASE.",
+  "region_polygon_lonlat_wgs84": [[34.85, 31.90], [35.55, 31.90], [35.45, 31.30], [34.75, 31.30]],
+  "hebrew_prefix": "[בהוכלמש]{0,2}",
+  "columbarium_en": [
+    "columbar\\w*",
+    "\\bdove[\\s\\-]?cot(?:e|es|s)?\\b",
+    "\\bpigeon[\\s\\-]?(?:house|houses|loft|lofts|cote|cotes|holes?)\\b"
+  ],
+  "columbarium_he": [
+    "קולומב[א-ת]*",
+    "שובך",
+    "שובכ(?:ים|י|ות)?",
+    "(?:מגדל|מערת|שובך|שובכי)\\s+ה?יונים"
+  ],
+  "flags": {
+    "fort": {
+      "en": ["\\b(?:forts?|fortress(?:es)?|fortified|fortifications?|citadels?|strongholds?|castles?|castellum|burgus|qasr|kasr)\\b"],
+      "he": ["מצד", "מצודה", "מצודת", "מבצר", "ביצור(?:ים)?", "מבוצר(?:ת)?"]
+    },
+    "tower": {
+      "en": ["\\b(?:towers?|migdal)\\b"],
+      "he": ["מגדל(?:ים)?"]
+    },
+    "levels": {
+      "en": ["\\b(?:storeys?|story|stories|floors?|levels?|upper|lower|two[\\s\\-]stor(?:e)?y|tiers?)\\b"],
+      "he": ["קומ(?:ה|ות|תי|תיים)", "מפלס(?:ים)?", "עלי(?:י)?ה"]
+    },
+    "access": {
+      "en": ["\\b(?:stairs?|staircases?|steps|shafts?|descen\\w*|hatch\\w*|ceiling)\\b"],
+      "he": ["מדרג(?:ה|ות)", "פיר", "ירידה", "יורד(?:ים|ת)?", "תקרה"]
+    },
+    "south": {
+      "en": ["\\b(?:south\\w*)\\b"],
+      "he": ["דרומ(?:י|ית)?", "דרום"]
+    },
+    "natof": {
+      "en": ["na[tṭ]uf|na[tṭ]of|kh[ao]?reit[uo]n|chariton|bad+[\\s\\-]*fal[uū][hḥ]|netoph\\w*"],
+      "he": ["נטוף", "נטופה", "חריטון", "בד פלוח"]
+    }
+  }
+}

@@ -1,0 +1,2936 @@
+{
+ "_note": "k/f/m by counted row (duplicates removed); n_weighted sums n_columbaria, counting an unspecified plural as 1 (a lower bound).",
+ "scopes": {
+  "all": {
+   "by_source": {
+    "ASI": 154,
+    "LIT": 9,
+    "WBADB": 16
+   },
+   "clauses": {
+    "A": {
+     "N": 179,
+     "f_fail": 0,
+     "k_match": 24,
+     "m_unknown": 155,
+     "n_weighted": {
+      "N": 269,
+      "fail": 0,
+      "match": 106,
+      "unknown": 163
+     }
+    },
+    "F_survey": {
+     "N": 179,
+     "f_fail": 32,
+     "k_match": 20,
+     "m_unknown": 127,
+     "n_weighted": {
+      "N": 269,
+      "fail": 32,
+      "match": 102,
+      "unknown": 135
+     }
+    },
+    "F_text": {
+     "N": 179,
+     "f_fail": 36,
+     "k_match": 3,
+     "m_unknown": 140,
+     "n_weighted": {
+      "N": 269,
+      "fail": 36,
+      "match": 3,
+      "unknown": 230
+     }
+    },
+    "Fplus_survey": {
+     "N": 179,
+     "f_fail": 31,
+     "k_match": 25,
+     "m_unknown": 123,
+     "n_weighted": {
+      "N": 269,
+      "fail": 31,
+      "match": 108,
+      "unknown": 130
+     }
+    },
+    "Fplus_text": {
+     "N": 179,
+     "f_fail": 37,
+     "k_match": 6,
+     "m_unknown": 136,
+     "n_weighted": {
+      "N": 269,
+      "fail": 38,
+      "match": 6,
+      "unknown": 225
+     }
+    },
+    "L2": {
+     "N": 179,
+     "f_fail": 0,
+     "k_match": 5,
+     "m_unknown": 174,
+     "n_weighted": {
+      "N": 269,
+      "fail": 0,
+      "match": 5,
+      "unknown": 264
+     }
+    },
+    "L3": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 0,
+     "m_unknown": 177,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 0,
+      "unknown": 267
+     }
+    },
+    "Masada": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "N1_1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N1_1km_text": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N1_2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_1km_text": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "P": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 16,
+     "m_unknown": 161,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 16,
+      "unknown": 251
+     }
+    },
+    "P_relaxed": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 177,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 267,
+      "unknown": 0
+     }
+    },
+    "S_A": {
+     "N": 179,
+     "f_fail": 39,
+     "k_match": 139,
+     "m_unknown": 1,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 228,
+      "unknown": 1
+     }
+    },
+    "S_B1": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 120,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 61,
+      "match": 208,
+      "unknown": 0
+     }
+    },
+    "S_B2": {
+     "N": 179,
+     "f_fail": 151,
+     "k_match": 27,
+     "m_unknown": 1,
+     "n_weighted": {
+      "N": 269,
+      "fail": 241,
+      "match": 27,
+      "unknown": 1
+     }
+    },
+    "S_C": {
+     "N": 179,
+     "f_fail": 8,
+     "k_match": 3,
+     "m_unknown": 168,
+     "n_weighted": {
+      "N": 269,
+      "fail": 8,
+      "match": 3,
+      "unknown": 258
+     }
+    }
+   },
+   "columbaria_lower_bound": 269,
+   "combinations": {
+    "38-D-N0|survey": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 16,
+     "m_unknown": 161,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 16,
+      "unknown": 251
+     }
+    },
+    "38-D-N0|survey|period_relaxed": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 177,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 267,
+      "unknown": 0
+     }
+    },
+    "38-D-N0|text": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 16,
+     "m_unknown": 161,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 16,
+      "unknown": 251
+     }
+    },
+    "38-D-N0|text|period_relaxed": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 177,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 267,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|survey|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|survey|1km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|survey|2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|survey|2km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|1km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|2km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|1km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|2km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|1km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|2km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|survey": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|survey|period_relaxed": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|text": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|text|period_relaxed": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-P|survey|Fplus|S_A": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|survey|Fplus|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|survey|Fplus|S_B1": {
+     "N": 179,
+     "f_fail": 71,
+     "k_match": 3,
+     "m_unknown": 105,
+     "n_weighted": {
+      "N": 269,
+      "fail": 73,
+      "match": 3,
+      "unknown": 193
+     }
+    },
+    "44-D-P|survey|Fplus|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 71,
+     "k_match": 3,
+     "m_unknown": 105,
+     "n_weighted": {
+      "N": 269,
+      "fail": 73,
+      "match": 3,
+      "unknown": 193
+     }
+    },
+    "44-D-P|survey|Fplus|S_B2": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|survey|Fplus|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|survey|Fplus|S_C": {
+     "N": 179,
+     "f_fail": 40,
+     "k_match": 0,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 0,
+      "unknown": 229
+     }
+    },
+    "44-D-P|survey|Fplus|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 40,
+     "k_match": 0,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 0,
+      "unknown": 229
+     }
+    },
+    "44-D-P|survey|F|S_A": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|survey|F|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|survey|F|S_B1": {
+     "N": 179,
+     "f_fail": 71,
+     "k_match": 3,
+     "m_unknown": 105,
+     "n_weighted": {
+      "N": 269,
+      "fail": 73,
+      "match": 3,
+      "unknown": 193
+     }
+    },
+    "44-D-P|survey|F|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 71,
+     "k_match": 3,
+     "m_unknown": 105,
+     "n_weighted": {
+      "N": 269,
+      "fail": 73,
+      "match": 3,
+      "unknown": 193
+     }
+    },
+    "44-D-P|survey|F|S_B2": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|survey|F|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|survey|F|S_C": {
+     "N": 179,
+     "f_fail": 41,
+     "k_match": 0,
+     "m_unknown": 138,
+     "n_weighted": {
+      "N": 269,
+      "fail": 41,
+      "match": 0,
+      "unknown": 228
+     }
+    },
+    "44-D-P|survey|F|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 41,
+     "k_match": 0,
+     "m_unknown": 138,
+     "n_weighted": {
+      "N": 269,
+      "fail": 41,
+      "match": 0,
+      "unknown": 228
+     }
+    },
+    "44-D-P|text|Fplus|S_A": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-P|text|Fplus|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-P|text|Fplus|S_B1": {
+     "N": 179,
+     "f_fail": 74,
+     "k_match": 3,
+     "m_unknown": 102,
+     "n_weighted": {
+      "N": 269,
+      "fail": 76,
+      "match": 3,
+      "unknown": 190
+     }
+    },
+    "44-D-P|text|Fplus|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 74,
+     "k_match": 3,
+     "m_unknown": 102,
+     "n_weighted": {
+      "N": 269,
+      "fail": 76,
+      "match": 3,
+      "unknown": 190
+     }
+    },
+    "44-D-P|text|Fplus|S_B2": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|text|Fplus|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|text|Fplus|S_C": {
+     "N": 179,
+     "f_fail": 46,
+     "k_match": 0,
+     "m_unknown": 133,
+     "n_weighted": {
+      "N": 269,
+      "fail": 47,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-P|text|Fplus|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 46,
+     "k_match": 0,
+     "m_unknown": 133,
+     "n_weighted": {
+      "N": 269,
+      "fail": 47,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-P|text|F|S_A": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-P|text|F|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-P|text|F|S_B1": {
+     "N": 179,
+     "f_fail": 74,
+     "k_match": 3,
+     "m_unknown": 102,
+     "n_weighted": {
+      "N": 269,
+      "fail": 76,
+      "match": 3,
+      "unknown": 190
+     }
+    },
+    "44-D-P|text|F|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 74,
+     "k_match": 3,
+     "m_unknown": 102,
+     "n_weighted": {
+      "N": 269,
+      "fail": 76,
+      "match": 3,
+      "unknown": 190
+     }
+    },
+    "44-D-P|text|F|S_B2": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|text|F|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|text|F|S_C": {
+     "N": 179,
+     "f_fail": 45,
+     "k_match": 0,
+     "m_unknown": 134,
+     "n_weighted": {
+      "N": 269,
+      "fail": 45,
+      "match": 0,
+      "unknown": 224
+     }
+    },
+    "44-D-P|text|F|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 45,
+     "k_match": 0,
+     "m_unknown": 134,
+     "n_weighted": {
+      "N": 269,
+      "fail": 45,
+      "match": 0,
+      "unknown": 224
+     }
+    },
+    "44-D-T|survey|Fplus|S_A": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|survey|Fplus|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|survey|Fplus|S_B1": {
+     "N": 179,
+     "f_fail": 73,
+     "k_match": 0,
+     "m_unknown": 106,
+     "n_weighted": {
+      "N": 269,
+      "fail": 75,
+      "match": 0,
+      "unknown": 194
+     }
+    },
+    "44-D-T|survey|Fplus|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 73,
+     "k_match": 0,
+     "m_unknown": 106,
+     "n_weighted": {
+      "N": 269,
+      "fail": 75,
+      "match": 0,
+      "unknown": 194
+     }
+    },
+    "44-D-T|survey|Fplus|S_B2": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|survey|Fplus|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|survey|Fplus|S_C": {
+     "N": 179,
+     "f_fail": 40,
+     "k_match": 0,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 0,
+      "unknown": 229
+     }
+    },
+    "44-D-T|survey|Fplus|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 40,
+     "k_match": 0,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 0,
+      "unknown": 229
+     }
+    },
+    "44-D-T|survey|F|S_A": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|survey|F|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|survey|F|S_B1": {
+     "N": 179,
+     "f_fail": 73,
+     "k_match": 0,
+     "m_unknown": 106,
+     "n_weighted": {
+      "N": 269,
+      "fail": 75,
+      "match": 0,
+      "unknown": 194
+     }
+    },
+    "44-D-T|survey|F|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 73,
+     "k_match": 0,
+     "m_unknown": 106,
+     "n_weighted": {
+      "N": 269,
+      "fail": 75,
+      "match": 0,
+      "unknown": 194
+     }
+    },
+    "44-D-T|survey|F|S_B2": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|survey|F|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|survey|F|S_C": {
+     "N": 179,
+     "f_fail": 41,
+     "k_match": 0,
+     "m_unknown": 138,
+     "n_weighted": {
+      "N": 269,
+      "fail": 41,
+      "match": 0,
+      "unknown": 228
+     }
+    },
+    "44-D-T|survey|F|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 41,
+     "k_match": 0,
+     "m_unknown": 138,
+     "n_weighted": {
+      "N": 269,
+      "fail": 41,
+      "match": 0,
+      "unknown": 228
+     }
+    },
+    "44-D-T|text|Fplus|S_A": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    },
+    "44-D-T|text|Fplus|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    },
+    "44-D-T|text|Fplus|S_B1": {
+     "N": 179,
+     "f_fail": 76,
+     "k_match": 0,
+     "m_unknown": 103,
+     "n_weighted": {
+      "N": 269,
+      "fail": 78,
+      "match": 0,
+      "unknown": 191
+     }
+    },
+    "44-D-T|text|Fplus|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 76,
+     "k_match": 0,
+     "m_unknown": 103,
+     "n_weighted": {
+      "N": 269,
+      "fail": 78,
+      "match": 0,
+      "unknown": 191
+     }
+    },
+    "44-D-T|text|Fplus|S_B2": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|text|Fplus|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|text|Fplus|S_C": {
+     "N": 179,
+     "f_fail": 46,
+     "k_match": 0,
+     "m_unknown": 133,
+     "n_weighted": {
+      "N": 269,
+      "fail": 47,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-T|text|Fplus|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 46,
+     "k_match": 0,
+     "m_unknown": 133,
+     "n_weighted": {
+      "N": 269,
+      "fail": 47,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-T|text|F|S_A": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    },
+    "44-D-T|text|F|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    },
+    "44-D-T|text|F|S_B1": {
+     "N": 179,
+     "f_fail": 76,
+     "k_match": 0,
+     "m_unknown": 103,
+     "n_weighted": {
+      "N": 269,
+      "fail": 78,
+      "match": 0,
+      "unknown": 191
+     }
+    },
+    "44-D-T|text|F|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 76,
+     "k_match": 0,
+     "m_unknown": 103,
+     "n_weighted": {
+      "N": 269,
+      "fail": 78,
+      "match": 0,
+      "unknown": 191
+     }
+    },
+    "44-D-T|text|F|S_B2": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|text|F|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|text|F|S_C": {
+     "N": 179,
+     "f_fail": 45,
+     "k_match": 0,
+     "m_unknown": 134,
+     "n_weighted": {
+      "N": 269,
+      "fail": 45,
+      "match": 0,
+      "unknown": 224
+     }
+    },
+    "44-D-T|text|F|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 45,
+     "k_match": 0,
+     "m_unknown": 134,
+     "n_weighted": {
+      "N": 269,
+      "fail": 45,
+      "match": 0,
+      "unknown": 224
+     }
+    }
+   },
+   "headline": {
+    "38-D-N0|survey": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 16,
+     "m_unknown": 161,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 16,
+      "unknown": 251
+     }
+    },
+    "38-D-N1|survey|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|text": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-P|survey|F|S_A": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|text|F|S_A": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-T|survey|F|S_A": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|text|F|S_A": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    }
+   },
+   "rows_counted": 179,
+   "rows_matching_a_distinctive_clause": [
+    "A-102-131",
+    "A-102-241",
+    "A-102-549",
+    "A-102-579",
+    "A-109-194b",
+    "A-109-210c",
+    "A-109-24d",
+    "A-109-260b",
+    "A-109-326b",
+    "A-109-341",
+    "A-109-349",
+    "A-109-368",
+    "A-109-70b",
+    "A-120-68",
+    "A-98-132",
+    "A-98-169",
+    "A-98-289",
+    "A-98-327",
+    "L-CYPROS",
+    "L-JER-ROUND",
+    "L-JER-SQUARE",
+    "L-MARESHA-LC",
+    "L-MARESHA-SC21",
+    "L-MARESHA-SC30",
+    "L-MASADA-RD",
+    "L-MASADA-SQ1",
+    "L-MASADA-SQ2"
+   ],
+   "rows_partial_44_text": [
+    "L-MASADA-RD",
+    "L-MASADA-SQ1",
+    "L-MASADA-SQ2"
+   ],
+   "rows_with_unspecified_plural": 18
+  },
+  "frozen": {
+   "by_source": {
+    "ASI": 154,
+    "LIT": 9,
+    "WBADB": 16
+   },
+   "clauses": {
+    "A": {
+     "N": 179,
+     "f_fail": 0,
+     "k_match": 23,
+     "m_unknown": 156,
+     "n_weighted": {
+      "N": 269,
+      "fail": 0,
+      "match": 105,
+      "unknown": 164
+     }
+    },
+    "F_survey": {
+     "N": 179,
+     "f_fail": 32,
+     "k_match": 20,
+     "m_unknown": 127,
+     "n_weighted": {
+      "N": 269,
+      "fail": 32,
+      "match": 102,
+      "unknown": 135
+     }
+    },
+    "F_text": {
+     "N": 179,
+     "f_fail": 36,
+     "k_match": 3,
+     "m_unknown": 140,
+     "n_weighted": {
+      "N": 269,
+      "fail": 36,
+      "match": 3,
+      "unknown": 230
+     }
+    },
+    "Fplus_survey": {
+     "N": 179,
+     "f_fail": 31,
+     "k_match": 25,
+     "m_unknown": 123,
+     "n_weighted": {
+      "N": 269,
+      "fail": 31,
+      "match": 108,
+      "unknown": 130
+     }
+    },
+    "Fplus_text": {
+     "N": 179,
+     "f_fail": 37,
+     "k_match": 6,
+     "m_unknown": 136,
+     "n_weighted": {
+      "N": 269,
+      "fail": 38,
+      "match": 6,
+      "unknown": 225
+     }
+    },
+    "L2": {
+     "N": 179,
+     "f_fail": 0,
+     "k_match": 5,
+     "m_unknown": 174,
+     "n_weighted": {
+      "N": 269,
+      "fail": 0,
+      "match": 5,
+      "unknown": 264
+     }
+    },
+    "L3": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 0,
+     "m_unknown": 177,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 0,
+      "unknown": 267
+     }
+    },
+    "Masada": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "N1_1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N1_1km_text": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N1_2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_1km_text": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "N2_2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "P": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 17,
+     "m_unknown": 160,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 17,
+      "unknown": 250
+     }
+    },
+    "P_relaxed": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 177,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 267,
+      "unknown": 0
+     }
+    },
+    "S_A": {
+     "N": 179,
+     "f_fail": 39,
+     "k_match": 139,
+     "m_unknown": 1,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 228,
+      "unknown": 1
+     }
+    },
+    "S_B1": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 120,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 61,
+      "match": 208,
+      "unknown": 0
+     }
+    },
+    "S_B2": {
+     "N": 179,
+     "f_fail": 151,
+     "k_match": 27,
+     "m_unknown": 1,
+     "n_weighted": {
+      "N": 269,
+      "fail": 241,
+      "match": 27,
+      "unknown": 1
+     }
+    },
+    "S_C": {
+     "N": 179,
+     "f_fail": 8,
+     "k_match": 3,
+     "m_unknown": 168,
+     "n_weighted": {
+      "N": 269,
+      "fail": 8,
+      "match": 3,
+      "unknown": 258
+     }
+    }
+   },
+   "columbaria_lower_bound": 269,
+   "combinations": {
+    "38-D-N0|survey": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 17,
+     "m_unknown": 160,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 17,
+      "unknown": 250
+     }
+    },
+    "38-D-N0|survey|period_relaxed": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 177,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 267,
+      "unknown": 0
+     }
+    },
+    "38-D-N0|text": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 17,
+     "m_unknown": 160,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 17,
+      "unknown": 250
+     }
+    },
+    "38-D-N0|text|period_relaxed": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 177,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 267,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|survey|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|survey|1km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|survey|2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|survey|2km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|1km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|2km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|1km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|2km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|1km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|2km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|2km|period_relaxed": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|survey": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|survey|period_relaxed": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|text": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|text|period_relaxed": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-P|survey|Fplus|S_A": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|survey|Fplus|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|survey|Fplus|S_B1": {
+     "N": 179,
+     "f_fail": 71,
+     "k_match": 3,
+     "m_unknown": 105,
+     "n_weighted": {
+      "N": 269,
+      "fail": 73,
+      "match": 3,
+      "unknown": 193
+     }
+    },
+    "44-D-P|survey|Fplus|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 71,
+     "k_match": 3,
+     "m_unknown": 105,
+     "n_weighted": {
+      "N": 269,
+      "fail": 73,
+      "match": 3,
+      "unknown": 193
+     }
+    },
+    "44-D-P|survey|Fplus|S_B2": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|survey|Fplus|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|survey|Fplus|S_C": {
+     "N": 179,
+     "f_fail": 40,
+     "k_match": 0,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 0,
+      "unknown": 229
+     }
+    },
+    "44-D-P|survey|Fplus|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 40,
+     "k_match": 0,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 0,
+      "unknown": 229
+     }
+    },
+    "44-D-P|survey|F|S_A": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|survey|F|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|survey|F|S_B1": {
+     "N": 179,
+     "f_fail": 71,
+     "k_match": 3,
+     "m_unknown": 105,
+     "n_weighted": {
+      "N": 269,
+      "fail": 73,
+      "match": 3,
+      "unknown": 193
+     }
+    },
+    "44-D-P|survey|F|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 71,
+     "k_match": 3,
+     "m_unknown": 105,
+     "n_weighted": {
+      "N": 269,
+      "fail": 73,
+      "match": 3,
+      "unknown": 193
+     }
+    },
+    "44-D-P|survey|F|S_B2": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|survey|F|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|survey|F|S_C": {
+     "N": 179,
+     "f_fail": 41,
+     "k_match": 0,
+     "m_unknown": 138,
+     "n_weighted": {
+      "N": 269,
+      "fail": 41,
+      "match": 0,
+      "unknown": 228
+     }
+    },
+    "44-D-P|survey|F|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 41,
+     "k_match": 0,
+     "m_unknown": 138,
+     "n_weighted": {
+      "N": 269,
+      "fail": 41,
+      "match": 0,
+      "unknown": 228
+     }
+    },
+    "44-D-P|text|Fplus|S_A": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-P|text|Fplus|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-P|text|Fplus|S_B1": {
+     "N": 179,
+     "f_fail": 74,
+     "k_match": 3,
+     "m_unknown": 102,
+     "n_weighted": {
+      "N": 269,
+      "fail": 76,
+      "match": 3,
+      "unknown": 190
+     }
+    },
+    "44-D-P|text|Fplus|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 74,
+     "k_match": 3,
+     "m_unknown": 102,
+     "n_weighted": {
+      "N": 269,
+      "fail": 76,
+      "match": 3,
+      "unknown": 190
+     }
+    },
+    "44-D-P|text|Fplus|S_B2": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|text|Fplus|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|text|Fplus|S_C": {
+     "N": 179,
+     "f_fail": 46,
+     "k_match": 0,
+     "m_unknown": 133,
+     "n_weighted": {
+      "N": 269,
+      "fail": 47,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-P|text|Fplus|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 46,
+     "k_match": 0,
+     "m_unknown": 133,
+     "n_weighted": {
+      "N": 269,
+      "fail": 47,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-P|text|F|S_A": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-P|text|F|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-P|text|F|S_B1": {
+     "N": 179,
+     "f_fail": 74,
+     "k_match": 3,
+     "m_unknown": 102,
+     "n_weighted": {
+      "N": 269,
+      "fail": 76,
+      "match": 3,
+      "unknown": 190
+     }
+    },
+    "44-D-P|text|F|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 74,
+     "k_match": 3,
+     "m_unknown": 102,
+     "n_weighted": {
+      "N": 269,
+      "fail": 76,
+      "match": 3,
+      "unknown": 190
+     }
+    },
+    "44-D-P|text|F|S_B2": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|text|F|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 159,
+     "k_match": 3,
+     "m_unknown": 17,
+     "n_weighted": {
+      "N": 269,
+      "fail": 249,
+      "match": 3,
+      "unknown": 17
+     }
+    },
+    "44-D-P|text|F|S_C": {
+     "N": 179,
+     "f_fail": 45,
+     "k_match": 0,
+     "m_unknown": 134,
+     "n_weighted": {
+      "N": 269,
+      "fail": 45,
+      "match": 0,
+      "unknown": 224
+     }
+    },
+    "44-D-P|text|F|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 45,
+     "k_match": 0,
+     "m_unknown": 134,
+     "n_weighted": {
+      "N": 269,
+      "fail": 45,
+      "match": 0,
+      "unknown": 224
+     }
+    },
+    "44-D-T|survey|Fplus|S_A": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|survey|Fplus|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|survey|Fplus|S_B1": {
+     "N": 179,
+     "f_fail": 73,
+     "k_match": 0,
+     "m_unknown": 106,
+     "n_weighted": {
+      "N": 269,
+      "fail": 75,
+      "match": 0,
+      "unknown": 194
+     }
+    },
+    "44-D-T|survey|Fplus|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 73,
+     "k_match": 0,
+     "m_unknown": 106,
+     "n_weighted": {
+      "N": 269,
+      "fail": 75,
+      "match": 0,
+      "unknown": 194
+     }
+    },
+    "44-D-T|survey|Fplus|S_B2": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|survey|Fplus|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|survey|Fplus|S_C": {
+     "N": 179,
+     "f_fail": 40,
+     "k_match": 0,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 0,
+      "unknown": 229
+     }
+    },
+    "44-D-T|survey|Fplus|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 40,
+     "k_match": 0,
+     "m_unknown": 139,
+     "n_weighted": {
+      "N": 269,
+      "fail": 40,
+      "match": 0,
+      "unknown": 229
+     }
+    },
+    "44-D-T|survey|F|S_A": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|survey|F|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|survey|F|S_B1": {
+     "N": 179,
+     "f_fail": 73,
+     "k_match": 0,
+     "m_unknown": 106,
+     "n_weighted": {
+      "N": 269,
+      "fail": 75,
+      "match": 0,
+      "unknown": 194
+     }
+    },
+    "44-D-T|survey|F|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 73,
+     "k_match": 0,
+     "m_unknown": 106,
+     "n_weighted": {
+      "N": 269,
+      "fail": 75,
+      "match": 0,
+      "unknown": 194
+     }
+    },
+    "44-D-T|survey|F|S_B2": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|survey|F|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|survey|F|S_C": {
+     "N": 179,
+     "f_fail": 41,
+     "k_match": 0,
+     "m_unknown": 138,
+     "n_weighted": {
+      "N": 269,
+      "fail": 41,
+      "match": 0,
+      "unknown": 228
+     }
+    },
+    "44-D-T|survey|F|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 41,
+     "k_match": 0,
+     "m_unknown": 138,
+     "n_weighted": {
+      "N": 269,
+      "fail": 41,
+      "match": 0,
+      "unknown": 228
+     }
+    },
+    "44-D-T|text|Fplus|S_A": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    },
+    "44-D-T|text|Fplus|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    },
+    "44-D-T|text|Fplus|S_B1": {
+     "N": 179,
+     "f_fail": 76,
+     "k_match": 0,
+     "m_unknown": 103,
+     "n_weighted": {
+      "N": 269,
+      "fail": 78,
+      "match": 0,
+      "unknown": 191
+     }
+    },
+    "44-D-T|text|Fplus|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 76,
+     "k_match": 0,
+     "m_unknown": 103,
+     "n_weighted": {
+      "N": 269,
+      "fail": 78,
+      "match": 0,
+      "unknown": 191
+     }
+    },
+    "44-D-T|text|Fplus|S_B2": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|text|Fplus|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|text|Fplus|S_C": {
+     "N": 179,
+     "f_fail": 46,
+     "k_match": 0,
+     "m_unknown": 133,
+     "n_weighted": {
+      "N": 269,
+      "fail": 47,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-T|text|Fplus|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 46,
+     "k_match": 0,
+     "m_unknown": 133,
+     "n_weighted": {
+      "N": 269,
+      "fail": 47,
+      "match": 0,
+      "unknown": 222
+     }
+    },
+    "44-D-T|text|F|S_A": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    },
+    "44-D-T|text|F|S_A|period_relaxed": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    },
+    "44-D-T|text|F|S_B1": {
+     "N": 179,
+     "f_fail": 76,
+     "k_match": 0,
+     "m_unknown": 103,
+     "n_weighted": {
+      "N": 269,
+      "fail": 78,
+      "match": 0,
+      "unknown": 191
+     }
+    },
+    "44-D-T|text|F|S_B1|period_relaxed": {
+     "N": 179,
+     "f_fail": 76,
+     "k_match": 0,
+     "m_unknown": 103,
+     "n_weighted": {
+      "N": 269,
+      "fail": 78,
+      "match": 0,
+      "unknown": 191
+     }
+    },
+    "44-D-T|text|F|S_B2": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|text|F|S_B2|period_relaxed": {
+     "N": 179,
+     "f_fail": 161,
+     "k_match": 0,
+     "m_unknown": 18,
+     "n_weighted": {
+      "N": 269,
+      "fail": 251,
+      "match": 0,
+      "unknown": 18
+     }
+    },
+    "44-D-T|text|F|S_C": {
+     "N": 179,
+     "f_fail": 45,
+     "k_match": 0,
+     "m_unknown": 134,
+     "n_weighted": {
+      "N": 269,
+      "fail": 45,
+      "match": 0,
+      "unknown": 224
+     }
+    },
+    "44-D-T|text|F|S_C|period_relaxed": {
+     "N": 179,
+     "f_fail": 45,
+     "k_match": 0,
+     "m_unknown": 134,
+     "n_weighted": {
+      "N": 269,
+      "fail": 45,
+      "match": 0,
+      "unknown": 224
+     }
+    }
+   },
+   "headline": {
+    "38-D-N0|survey": {
+     "N": 179,
+     "f_fail": 2,
+     "k_match": 17,
+     "m_unknown": 160,
+     "n_weighted": {
+      "N": 269,
+      "fail": 2,
+      "match": 17,
+      "unknown": 250
+     }
+    },
+    "38-D-N1|survey|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N1|text|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|survey|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "38-D-N2|text|1km": {
+     "N": 179,
+     "f_fail": 179,
+     "k_match": 0,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 269,
+      "match": 0,
+      "unknown": 0
+     }
+    },
+    "44-D-Masada|text": {
+     "N": 179,
+     "f_fail": 176,
+     "k_match": 3,
+     "m_unknown": 0,
+     "n_weighted": {
+      "N": 269,
+      "fail": 266,
+      "match": 3,
+      "unknown": 0
+     }
+    },
+    "44-D-P|survey|F|S_A": {
+     "N": 179,
+     "f_fail": 55,
+     "k_match": 3,
+     "m_unknown": 121,
+     "n_weighted": {
+      "N": 269,
+      "fail": 56,
+      "match": 3,
+      "unknown": 210
+     }
+    },
+    "44-D-P|text|F|S_A": {
+     "N": 179,
+     "f_fail": 59,
+     "k_match": 3,
+     "m_unknown": 117,
+     "n_weighted": {
+      "N": 269,
+      "fail": 60,
+      "match": 3,
+      "unknown": 206
+     }
+    },
+    "44-D-T|survey|F|S_A": {
+     "N": 179,
+     "f_fail": 57,
+     "k_match": 0,
+     "m_unknown": 122,
+     "n_weighted": {
+      "N": 269,
+      "fail": 58,
+      "match": 0,
+      "unknown": 211
+     }
+    },
+    "44-D-T|text|F|S_A": {
+     "N": 179,
+     "f_fail": 61,
+     "k_match": 0,
+     "m_unknown": 118,
+     "n_weighted": {
+      "N": 269,
+      "fail": 62,
+      "match": 0,
+      "unknown": 207
+     }
+    }
+   },
+   "rows_counted": 179,
+   "rows_matching_a_distinctive_clause": [
+    "A-102-131",
+    "A-102-241",
+    "A-102-549",
+    "A-102-579",
+    "A-109-194b",
+    "A-109-210c",
+    "A-109-24d",
+    "A-109-260b",
+    "A-109-326b",
+    "A-109-341",
+    "A-109-349",
+    "A-109-368",
+    "A-109-70b",
+    "A-120-68",
+    "A-98-132",
+    "A-98-169",
+    "A-98-289",
+    "A-98-327",
+    "L-CYPROS",
+    "L-JER-ROUND",
+    "L-MARESHA-LC",
+    "L-MARESHA-SC21",
+    "L-MARESHA-SC30",
+    "L-MASADA-RD",
+    "L-MASADA-SQ1",
+    "L-MASADA-SQ2"
+   ],
+   "rows_partial_44_text": [
+    "L-MASADA-RD",
+    "L-MASADA-SQ1",
+    "L-MASADA-SQ2"
+   ],
+   "rows_with_unspecified_plural": 18
+  }
+ }
+}
