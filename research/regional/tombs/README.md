@@ -306,6 +306,111 @@ Every region, date set and sensitivity is in [iaa_view_2026-10-11.csv](iaa_view_
 Files: [iaa_units.csv](iaa_units.csv) (276 units with codes, duplicate flags and Amendment 1 codes; no text), [iaa_scores.csv](iaa_scores.csv), [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv), [iaa_amendment1_view.csv](iaa_amendment1_view.csv), [iaa_summary.json](iaa_summary.json), [scripts/iaa_view.py](scripts/iaa_view.py), [tests/test_iaa_view.py](tests/test_iaa_view.py).
 - Rebuild: `python3 -I -B research/regional/tombs/scripts/iaa_view.py`. It needs no ASI cache or WBADB file.
 
+## Phase-4 inventory view, 12 October 2026 (exploratory)
+
+**What changed.** The merged inventory over phases 1–4 (`research/regional/haesi_features/merged_2026-10-12/`, commit b4a41cc) replaces the phase 1–3 inventory of the 11 October view. Phase 4 adds ʿAtiqot 42–121, IAA Reports, QDAP, SWP, Guérin and ADAJ. The phase-4 rows give 31 phase-4 tomb units with coordinates in the regions. 18 lie within 0.15 km of an ASI record, and 13 are new. All 13 are in Region A. Region A strict N goes from 226 to 230. No branch gains or loses a match in any region, date set or sensitivity. The frozen tables and headline, Amendments 1 and 2 and the 11 October view files are unchanged.
+
+- **Rules.** [PLAN_AMENDMENT_PHASE4_2026-10-12.md](PLAN_AMENDMENT_PHASE4_2026-10-12.md) was committed alone as `d5a837e` (2026-10-12T04:49:52Z), before any phase-4 tomb row was read. SHA-256 `f9b0ad579e2e551b04708aaa825c828b98c2fae7a82f49b95f953cc40875b9bc`. It applies the IAA amendment's method unchanged.
+- **Exposure before the freeze.** The amendment's §1 lists headers, value counts and the two READMEs. One phase-4 tomb report was exposed by name and dating: ʿAtiqot 113 (Mount Scopus chalk quarry, ATQ113-i09), which the merge README lists as moving from undated to in-window.
+- **Checks.** The script rebuilds the 11 October view from `merged_2026-10-11` and checks it against `iaa_view_2026-10-11.csv` and `iaa_amendment1_view.csv` cell by cell. It also checks the frozen units against `scores_summary.csv`. Hand checks: 4 frozen-code yeses ([data/manual_check_phase4.csv](data/manual_check_phase4.csv)) and 1 Amendment 1 orientation ([data/manual_check_phase4_amendment1.csv](data/manual_check_phase4_amendment1.csv)). Earlier decisions for the same phase 1–3 rows were reused.
+
+**Units.**
+- 244 IAA tomb units have coordinates and lie in a region, against 228 on 11 October.
+- 31 come from phase-4 rows. 18 of them are possible duplicates of ASI records (102/93, 102/231, 102/345, 102/374, 102/402, 102/435, 102/439, 102/484, 105/22, 106/68). 13 are new.
+- 15 phase 1–3 units dropped out. In each case a phase-4 ʿAtiqot report joined the unit's report group and became the preferred version, so the version rule now takes the ʿAtiqot rows.
+  - 14 are replaced by ʿAtiqot units of the same excavation (Arnona, Naḥal Qidron, ʿEin el-Luza, Kh. Kaʿkul, Naḥalat Aḥim, Pisgat Zeʾev E, Mount Scopus East, Abu Ṭor, the Mount of Olives, Givʿat Gonen, Sanhedriyya / Tel Arza).
+  - Sallah ed-Din Street lost its point: the preferred ʿAtiqot 80 version is placed by name only. It was a duplicate of ASI 102/332, dated outside the window, so no count moves.
+- Non-duplicate units: 78 → 85, at 54 distinct merged sites.
+
+**k match / f fail / m unknown, of N**, headline region, union of lineages without duplicates (11 October view → 12 October view; the frozen values are in the table of the previous section):
+
+| Branch | Region | Strict | Lenient | Any date |
+|---|---|---|---|---|
+| 14-M62 | A | 1/218/7 of 226 → 1/222/7 of 230 | 2/325/11 of 338 → 2/330/11 of 343 | 2/502/17 of 521 → 2/509/17 of 528 |
+| 14-P06 | A | 0/218/8 of 226 → 0/222/8 of 230 | 1/325/12 of 338 → 1/330/12 of 343 | 2/502/17 of 521 → 2/509/17 of 528 |
+| 14-NAME | A∪B | 0/0/231 of 231 → 0/0/235 of 235 | 0/0/345 of 345 → 0/0/350 of 350 | 0/0/564 of 564 → 0/0/571 of 571 |
+| 24-J | B | 0/0/5 of 5 → unchanged | 1/0/6 of 7 → unchanged | 3/5/35 of 43 → unchanged |
+| 24-A | B | 0/5/0 of 5 → unchanged | 0/7/0 of 7 → unchanged | 0/42/1 of 43 → unchanged |
+| 27-T | A∪B | 1/0/230 of 231 → 1/0/234 of 235 | 1/0/344 of 345 → 1/0/349 of 350 | 1/0/563 of 564 → 1/0/570 of 571 |
+| 48-Y, 48-L | A | 1/0/225 of 226 → 1/0/229 of 230 | 1/0/337 of 338 → 1/0/342 of 343 | 1/0/520 of 521 → 1/0/527 of 528 |
+| 51-S | A | 0/218/8 of 226 → 0/222/8 of 230 | 0/325/13 of 338 → 0/330/13 of 343 | 0/502/19 of 521 → 0/509/19 of 528 |
+| 51-O | A | 0/0/226 of 226 → 0/0/230 of 230 | 0/0/338 of 338 → 0/0/343 of 343 | 0/0/521 of 521 → 0/0/528 of 528 |
+| 51-J | A | 1/218/7 of 226 → 1/222/7 of 230 | 2/325/11 of 338 → 2/330/11 of 343 | 2/502/17 of 521 → 2/509/17 of 528 |
+| 52-M | A | 0/0/226 of 226 → 0/0/230 of 230 | 0/0/338 of 338 → 0/0/343 of 343 | 0/2/519 of 521 → 0/3/525 of 528 |
+| 53-P | A | 1/224/1 of 226 → 1/228/1 of 230 | 3/333/2 of 338 → 3/338/2 of 343 | 5/510/6 of 521 → 5/517/6 of 528 |
+| 53-K | A | 0/0/226 of 226 → 0/0/230 of 230 | 0/0/338 of 338 → 0/0/343 of 343 | 0/0/521 of 521 → 0/0/528 of 528 |
+| 54-P | B | 0/0/5 of 5 → unchanged | 2/0/5 of 7 → unchanged | 21/6/16 of 43 → unchanged |
+| 54-L, 54-M | A∪B | 0/1/230 of 231 → 0/1/234 of 235 | 0/4/341 of 345 → 0/4/346 of 350 | 0/30/534 of 564 → 0/30/541 of 571 |
+| 54-W | A | 0/207/19 of 226 → 0/210/20 of 230 | 0/305/33 of 338 → 0/309/34 of 343 | 0/444/77 of 521 → 0/449/79 of 528 |
+| 56-P, 56-M | A | 0/26/200 of 226 → 0/26/204 of 230 | 0/31/307 of 338 → 0/31/312 of 343 | 0/36/485 of 521 → 0/37/491 of 528 |
+
+Every region, date set and sensitivity, the IAA units alone and the other-classes sensitivity (27 non-duplicate units) are in [phase4_view_2026-10-12.csv](phase4_view_2026-10-12.csv). None of them changes a match. Amendment 1 ([phase4_amendment1_view.csv](phase4_amendment1_view.csv)) changes no match either: 56-P stays at 10 and the 52-P proxy at 9 (strict, now of 230). No phase-4 unit has an oriented entrance under Amendment 1.
+
+**What is new, by level** (non-duplicate units; strict / lenient / any date, all in Region A):
+- **Rows:** 13 units from phase-4 rows (6 / 7 / 13).
+- **Reports:** 1 unit whose report group has no phase 1–3 report (0 / 0 / 1): the Hulda / St Pelagia shrine on the Mount of Olives (ʿAtiqot 42, p. 228), dated outside the window.
+- **Sites:** 5 units at sites with no phase 1–3 row (2 / 2 / 5). Counting duplicates too: 31 rows, 10 report units and 10 site units (14 / 4 / 4 strict).
+- **The 6 new strictly dated units:**
+
+| Unit | Source unit id | Printed page | Place | Codes |
+|---|---|---|---|---|
+| P0270 | ATQ54-001 | ʿAtiqot 54, pp. 1–73 | Kh. Kaʿkul (Pisgat Zeʾev H) | kokhim |
+| P0275 | ATQ42-i27 | ʿAtiqot 42, pp. 3*–8* (Hebrew) | Abu Ṭor, two burial caves | none |
+| P0277 | ATQ69-069s | ʿAtiqot 69, p. 161 (English summary) | near the Kathisma, Hebron Road | kokhim |
+| P0288 | ATQ113-i09 | ʿAtiqot 113, from p. [185] (pp. 187–265 seen by the reader) | Mount Scopus chalk quarry (exposed, see above) | kokhim |
+| P0293 | ATQ59-021s | ʿAtiqot 59, pp. 21*–35* | ʿEin el-Luza | none |
+| P0294 | ATQ63-027 | ʿAtiqot 63, pp. 27–43 | southern slope of Mount Scopus | kokhim |
+
+Three of them replace phase 1–3 units of the same excavation that were already counted: Kaʿkul, ʿEin el-Luza and Abu Ṭor. Abu Ṭor's other cave (P0276) is now a duplicate of ASI 102/484. Net, Region A strict N rises by 4.
+
+**Which phase-4 units meet a clause** (all 31, duplicates included; ids in [phase4_scores.csv](phase4_scores.csv)):
+- **14-M62, 14-P06.** Repository (F13): Wadi el-Ḥalaf (ʿAtiqot 48), Arnona (ʿAtiqot 54, p. 154) and the Mount of Olives (ʿAtiqot 49). Slab (F14): the Late Iron Age tomb on Mount Zion (ʿAtiqot 98) and Naḥalat Aḥim (ʿAtiqot 54). All five are duplicates of ASI records. All fail L_millo.
+- **The nearest unit to the south wall** is the pair of rock-cut caves with Greek inscriptions (ʿAtiqot 78, pp. 13–24), 0.42 km from the Temple Mount point. It is unknown on L_millo, L_south_corner and L_temple, because the tolerance lies inside its position uncertainty. It is dated outside the window and is a duplicate of ASI 102/345.
+- **24-J, 24-A, 54-P.** No phase-4 tomb unit has coordinates in Region B.
+- **27-T, 48-L, 51-O, 54-L.** No phase-4 unit, located or not, names a queen, Absalom, Zadok or Obed.
+- **48-Y.** F1 holds for the built tomb in the Hulda shrine crypt (ʿAtiqot 42, p. 228). It has no Absalom name and is dated outside the window.
+- **51-S, 51-J.** The Tel Arza monumental cave (ATQ106-161, ʿAtiqot 106, pp. 161–176) has a distyle in antis façade, dated from Herod to 70 CE, so F2x holds. It fails L_south_corner (2.5 km). It is a duplicate of ASI 102/231 (Sanhedriyya), whose façade the frozen count already holds.
+- **52-M.** Slab on 2 units and a channel on 1. No garden, no west-facing entrance.
+- **54-M.** 22 units are family-type tombs. None has a named inscription or a Jericho name.
+- **54-W.** "Unfinished" or "unused" on 2 units (Wadi el-Ḥalaf, Kh. Kaʿkul). Kaʿkul fails as a family-type tomb.
+- **56-P, 56-M.** Kokhim on 9 units and more than one chamber on 2. No oriented entrance, no cistern.
+  - One frozen-rule fail is new, in the any-date set only: the Byzantine monastery in Naḥal Qidron (ʿAtiqot 89, pp. 49–82). The frozen F7 reads "eastern" in "the eastern tomb's staircase" as an entrance facing east.
+  - INFERENCE: the word names which tomb, as the Amendment 1 hand check found for the same report's channel row. Frozen "no" codes are not hand-checked, so the fail stands.
+
+**New matches:** none. **Lost matches:** none.
+
+**Protected and held.** Seven phase-4 rows were met and excluded before coding. Their text was not printed or read.
+- Held-unit ids:
+  - SWP III pp. 192–198, Deir el-Kelt: a tomb row;
+  - SWP III pp. 222–223, Tell es-Sultan: a channel and a pool. These two rows also match the strip guard.
+- Tell es-Sultan strip, name guard:
+  - ADAJ 3 pp. 74–75, Jericho 1954: a tomb and a pool;
+  - ADAJ 4/5 (Arabic) pp. 6–9: a tomb.
+- Held cave area, name guard: ADAJ 2 p. 90, Wadi en-Nar cave (cave with finds, located).
+
+INFERENCE: the readers probably coded these rows from parts of the entries that they read normally (built sites). This view excludes them anyway, as the amendment's conservative guards require. All three tomb rows are unplaced, so the frozen name-only rule would not have counted them. No row has `protected_strip = yes`. No Kh. ʿAlmit or ʿAtiqot 41 row occurs.
+
+**What stays unknown.**
+- **Unplaced rows.** 80 phase-4 tomb rows of preferred versions have no coordinates, so they are not counted: 63 in the Jerusalem hills, 11 Gerizim, 4 Judean Desert, 2 Jordan Valley. 5 are dated to the window.
+  - They include 22 QDAP, 22 SWP and Guérin, and 25 ADAJ rows.
+  - By reader place they include 2 at the Tombs of the Kings, 1 at Tel Arza and 2 at Qumran.
+  - Coded only for listing, none names a queen, Absalom, Zadok or Obed. None has a named inscription. Only one has a monument (F1): the YMCA ashlar family mausoleum (QDAP 4, pp. 70–80), third century AD.
+- **Region B gains nothing located.** Jericho's tombs still rest on Kenyon and IAA Reports 7. The phase-4 Jericho tomb texts that might add to them are held: Kenyon's "Burial Customs at Jericho" (ADAJ 16) and ADAJ 2 p. 88.
+- **The version rule can drop a point.** When an unplaced ʿAtiqot version becomes preferred, a located HA-ESI version drops out (Sallah ed-Din Street, here).
+- **Earlier limits still hold.** The unjoined Hebrew–English pairs, the absence of deduplication among non-primary units, and the class-name artefact of the 11 October view are all unchanged.
+
+Files:
+- [phase4_units.csv](phase4_units.csv): 296 units, with phase, novelty flags, codes, duplicate flags and Amendment 1 codes; no text.
+- [phase4_scores.csv](phase4_scores.csv), [phase4_view_2026-10-12.csv](phase4_view_2026-10-12.csv), [phase4_amendment1_view.csv](phase4_amendment1_view.csv).
+- [phase4_summary.json](phase4_summary.json): exclusions, changes against 11 October, levels and coverage.
+- [scripts/phase4_view.py](scripts/phase4_view.py) and [tests/test_phase4_view.py](tests/test_phase4_view.py).
+- Rebuild: `python3 -I -B research/regional/tombs/scripts/phase4_view.py`.
+
+**Proposed shared-file changes (integrator).**
+- `research/OPEN_QUESTIONS.md`, Jerusalem tomb entries (keep the tracker pair identical): "Phase 1–4 inventory view (regional/tombs, 12 Oct, exploratory): 13 more located tomb units in Region A, none in Region B; Region A strict N 230. No branch gains a match. No ʿAtiqot, QDAP, SWP or ADAJ tomb names Zadok, Absalom, Obed or a queen."
+- No change to ACTIVE_TEST, the outcome ledger, PROGRESS_METRICS, atlas data or candidate confidences.
+- For the merge lane: the held-unit and strip guards caught 7 coded rows from partly held SWP and ADAJ entries. Consider marking such rows in `features_all.csv`, so that every lane excludes them the same way.
+
 ## Blocked: what a person would need to do
 
 1. ~~IAA Reports 7 (Hachlili and Killebrew 1999)~~, https://publications.iaa.org.il/iaareports/69: done, read 11 October (addendum). Still unread there: the rotated Table II.2 (p. 52) and the figures themselves.
