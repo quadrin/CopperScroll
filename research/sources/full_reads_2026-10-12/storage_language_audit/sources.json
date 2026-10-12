@@ -134,6 +134,93 @@
       "nonraw_fetch": "successful empty text; no materializable file_uri",
       "history": "PDF supersedes need for DjVu rendering if an accessible copy/page extract becomes available; previous DjVu decoder failure retained as history",
       "copyright": "public reproduction terms unestablished; retrieval only"
+    },
+    {
+      "id": "netzer1981_attached_compressed_pdf",
+      "title": "Greater Herodium (Ehud Netzer)-compressed.pdf",
+      "author": "Ehud Netzer with Joseph Naveh inscription discussion",
+      "year": 1981,
+      "series": "Qedem13",
+      "provenance": "Owner supplied compressed PDF in this conversation on 12 October 2026; local copy read directly",
+      "mime": "application/pdf",
+      "actual_bytes": 10259112,
+      "source_sha256": "7209bab820bcaaa2d9fa584db851f1e1954d31c563d87274eaafd59de92d61bc",
+      "pages": 154,
+      "edition_identity": "Native viewer3 shows Qedem13, Hebrew University and1981; viewer4 shows Netzer Greater Herodium title/contributors",
+      "native_pages_inspected_this_pass": [
+        {
+          "viewer": 3,
+          "printed": "series/title1981",
+          "image_xref": 17,
+          "embedded_width": 4544,
+          "embedded_height": 6572,
+          "embedded_image_sha256": "568d3124ce95c3f525111cb6b7f9c00da0112f4dbd9ebe916fc000466cbaee97",
+          "inspection_render_sha256": "58f898b5e04e4f4a7507df7545b2445acb66630eada7994a1f2eae0a491e38f1",
+          "inspection": "native rendered page; coarse text/photo on viewers78–79; full readable noteIII13 on141"
+        },
+        {
+          "viewer": 4,
+          "printed": "Greater Herodium title",
+          "image_xref": 22,
+          "embedded_width": 363,
+          "embedded_height": 525,
+          "embedded_image_sha256": "722d46eba0722e8b07573e70ca19c613c2ce1d9aa1db39c7316c2efb0f26351e",
+          "inspection_render_sha256": "9e37f6a639c9b0d1f27d4cd2b3fd4166663b7bf2e2e4761e2f592abcc313a957",
+          "inspection": "native rendered page; coarse text/photo on viewers78–79; full readable noteIII13 on141"
+        },
+        {
+          "viewer": 77,
+          "printed": "69",
+          "image_xref": 387,
+          "embedded_width": 4544,
+          "embedded_height": 6572,
+          "embedded_image_sha256": "f326b9d3d477cc93d6b324b48799b5847222def282c7bd25a10ebc6a3726b67d",
+          "inspection_render_sha256": "c33e23eb4b5a986acbe3c8c8dbed70fe0e41db288f4e2460dc220e18ef299a4c",
+          "inspection": "native rendered page; coarse text/photo on viewers78–79; full readable noteIII13 on141"
+        },
+        {
+          "viewer": 78,
+          "printed": "70 (sequence; footer not legible)",
+          "image_xref": 392,
+          "embedded_width": 363,
+          "embedded_height": 525,
+          "embedded_image_sha256": "b6caa94444c0dd5f56f391c7fa524ca8d50a705fa9f28e2b4ba05b98fd36b71d",
+          "inspection_render_sha256": "a380990824cdae9487c6a7fe523a0ad96bb03bcaf8010b51fc3c1579c0fc2fa3",
+          "inspection": "native rendered page; coarse text/photo on viewers78–79; full readable noteIII13 on141"
+        },
+        {
+          "viewer": 79,
+          "printed": "71 (sequence and Ill99; footer not legible)",
+          "image_xref": 397,
+          "embedded_width": 363,
+          "embedded_height": 525,
+          "embedded_image_sha256": "ae3ff7dc035b25ac5657fca8a7d732f45497e74b437dad454c3127619d9348af",
+          "inspection_render_sha256": "8bcc711b6ccb0f0a7c78a68a55066e1b8aa2902e5bdc3abf1dba400e5889767e",
+          "inspection": "native rendered page; coarse text/photo on viewers78–79; full readable noteIII13 on141"
+        },
+        {
+          "viewer": 80,
+          "printed": "72",
+          "image_xref": 402,
+          "embedded_width": 4544,
+          "embedded_height": 6572,
+          "embedded_image_sha256": "db9df0d60b52cac9a90b0c89cf643f5cc0be0b1d86defc02ef7a0dd36c09f66e",
+          "inspection_render_sha256": "7afbe477885af643098309bb7ec1548f87ad764be6402f132870866e10e410d2",
+          "inspection": "native rendered page; coarse text/photo on viewers78–79; full readable noteIII13 on141"
+        },
+        {
+          "viewer": 141,
+          "printed": "134",
+          "image_xref": 707,
+          "embedded_width": 4544,
+          "embedded_height": 6572,
+          "embedded_image_sha256": "54b64bd99372220bb784b642ff980571f5f40703b9e036e3ea701ed28be02693",
+          "inspection_render_sha256": "f888d939dcd0734525c9ad918b6f7c8d3ca5cfddb9fa08f648777b2d5f998111",
+          "inspection": "native rendered page; coarse text/photo on viewers78–79; full readable noteIII13 on141"
+        }
+      ],
+      "status": "partly inspected: direct readable noteIII13; low-resolution illustration99 leaves exact damaged inscriptions unresolved",
+      "copyright": "Public reproduction terms unestablished; private source/renders excluded"
     }
   ]
 }
