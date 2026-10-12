@@ -2,20 +2,20 @@
  "by_class": {
   "cave_with_finds": {
    "no": 0,
-   "rows": 10,
-   "unknown": 10,
+   "rows": 12,
+   "unknown": 12,
    "yes": 0
   },
   "channel_aqueduct": {
    "no": 0,
-   "rows": 8,
-   "unknown": 8,
+   "rows": 11,
+   "unknown": 11,
    "yes": 0
   },
   "cistern": {
    "no": 0,
-   "rows": 12,
-   "unknown": 12,
+   "rows": 15,
+   "unknown": 15,
    "yes": 0
   },
   "columbarium_dovecote": {
@@ -37,45 +37,45 @@
    "yes": 0
   },
   "pool_reservoir": {
-   "no": 0,
-   "rows": 9,
-   "unknown": 9,
+   "no": 1,
+   "rows": 13,
+   "unknown": 12,
    "yes": 0
   },
   "ritual_bath": {
-   "no": 0,
-   "rows": 2,
-   "unknown": 2,
+   "no": 1,
+   "rows": 4,
+   "unknown": 3,
    "yes": 0
   },
   "rockcut_installation": {
    "no": 0,
-   "rows": 4,
-   "unknown": 4,
+   "rows": 6,
+   "unknown": 6,
    "yes": 0
   },
   "tomb_burial_cave": {
    "no": 4,
-   "rows": 14,
-   "unknown": 10,
+   "rows": 19,
+   "unknown": 15,
    "yes": 0
   }
  },
  "by_class_and_zone": {
   "cave_with_finds": {
-   "Z1_GERIZIM": 0,
+   "Z1_GERIZIM": 1,
    "Z2_JORDAN_VALLEY": 1,
-   "Z3_JUDEAN_DESERT": 3,
+   "Z3_JUDEAN_DESERT": 4,
    "Z4_JERUSALEM_HILLS": 6
   },
   "channel_aqueduct": {
-   "Z1_GERIZIM": 0,
-   "Z2_JORDAN_VALLEY": 3,
+   "Z1_GERIZIM": 2,
+   "Z2_JORDAN_VALLEY": 4,
    "Z3_JUDEAN_DESERT": 3,
    "Z4_JERUSALEM_HILLS": 2
   },
   "cistern": {
-   "Z1_GERIZIM": 0,
+   "Z1_GERIZIM": 3,
    "Z2_JORDAN_VALLEY": 2,
    "Z3_JUDEAN_DESERT": 5,
    "Z4_JERUSALEM_HILLS": 5
@@ -99,25 +99,25 @@
    "Z4_JERUSALEM_HILLS": 0
   },
   "pool_reservoir": {
-   "Z1_GERIZIM": 0,
-   "Z2_JORDAN_VALLEY": 1,
-   "Z3_JUDEAN_DESERT": 4,
+   "Z1_GERIZIM": 2,
+   "Z2_JORDAN_VALLEY": 2,
+   "Z3_JUDEAN_DESERT": 5,
    "Z4_JERUSALEM_HILLS": 4
   },
   "ritual_bath": {
-   "Z1_GERIZIM": 0,
+   "Z1_GERIZIM": 2,
    "Z2_JORDAN_VALLEY": 0,
    "Z3_JUDEAN_DESERT": 2,
    "Z4_JERUSALEM_HILLS": 0
   },
   "rockcut_installation": {
-   "Z1_GERIZIM": 0,
+   "Z1_GERIZIM": 2,
    "Z2_JORDAN_VALLEY": 1,
    "Z3_JUDEAN_DESERT": 0,
    "Z4_JERUSALEM_HILLS": 3
   },
   "tomb_burial_cave": {
-   "Z1_GERIZIM": 0,
+   "Z1_GERIZIM": 5,
    "Z2_JORDAN_VALLEY": 2,
    "Z3_JUDEAN_DESERT": 4,
    "Z4_JERUSALEM_HILLS": 8
@@ -126,20 +126,20 @@
  "by_class_zone_unresolved": {
   "cave_with_finds": {
    "no": 2,
-   "rows": 13,
-   "unknown": 11,
+   "rows": 14,
+   "unknown": 12,
    "yes": 0
   },
   "channel_aqueduct": {
-   "no": 2,
-   "rows": 7,
-   "unknown": 5,
+   "no": 3,
+   "rows": 9,
+   "unknown": 6,
    "yes": 0
   },
   "cistern": {
    "no": 2,
-   "rows": 35,
-   "unknown": 33,
+   "rows": 36,
+   "unknown": 34,
    "yes": 0
   },
   "columbarium_dovecote": {
@@ -186,6 +186,14 @@
   }
  },
  "by_source": {
+  "swp2": {
+   "not read (no description (general note on Guerin's route along the Jordan valley (not a site entry)))": 1,
+   "not read (no description (the Section C heading of Sheet XIV ('SHEET XIV.- SECTION' C.'), OCR apostrophe defeated the section match))": 1,
+   "not read (out)": 447,
+   "not read (unlocated)": 213,
+   "read": 13,
+   "read (zone unresolved)": 2
+  },
   "swp3": {
    "Tier-1 extraction only": 1,
    "held or protected (citation only)": 2,
@@ -199,21 +207,21 @@
  },
  "by_zone": {
   "Z1_GERIZIM": {
-   "no": 0,
-   "rows": 0,
-   "unknown": 0,
+   "no": 2,
+   "rows": 17,
+   "unknown": 15,
    "yes": 0
   },
   "Z2_JORDAN_VALLEY": {
    "no": 2,
-   "rows": 10,
-   "unknown": 8,
+   "rows": 12,
+   "unknown": 10,
    "yes": 0
   },
   "Z3_JUDEAN_DESERT": {
    "no": 1,
-   "rows": 21,
-   "unknown": 20,
+   "rows": 23,
+   "unknown": 22,
    "yes": 0
   },
   "Z4_JERUSALEM_HILLS": {
@@ -224,32 +232,34 @@
   }
  },
  "by_zone_unresolved": {
-  "Z2_JORDAN_VALLEY|Z3_JUDEAN_DESERT": 18,
+  "Z2_JORDAN_VALLEY|Z3_JUDEAN_DESERT": 22,
   "Z3_JUDEAN_DESERT|Z4_JERUSALEM_HILLS": 72
  },
- "feature_rows": 59,
- "feature_rows_zone_unresolved": 90,
+ "feature_rows": 80,
+ "feature_rows_zone_unresolved": 94,
  "held_records": 6,
  "status": {
   "Tier-1 extraction only": 1,
   "held or protected (citation only)": 2,
   "not read (no description ('The account of Jerusalem is reserved for another volume' (no description)))": 1,
   "not read (no description (cross-reference only ('See Section A. and el Haram')))": 1,
-  "not read (out)": 716,
-  "not read (unlocated)": 174,
-  "read": 46,
-  "read (zone unresolved)": 117
+  "not read (no description (general note on Guerin's route along the Jordan valley (not a site entry)))": 1,
+  "not read (no description (the Section C heading of Sheet XIV ('SHEET XIV.- SECTION' C.'), OCR apostrophe defeated the section match))": 1,
+  "not read (out)": 1163,
+  "not read (unlocated)": 387,
+  "read": 59,
+  "read (zone unresolved)": 119
  },
- "units_read": 163,
- "units_screened": 1058,
+ "units_read": 178,
+ "units_screened": 1735,
  "window": {
-  "no": 4,
-  "unknown": 55,
+  "no": 6,
+  "unknown": 74,
   "yes": 0
  },
  "window_zone_unresolved": {
-  "no": 13,
-  "unknown": 77,
+  "no": 14,
+  "unknown": 80,
   "yes": 0
  }
 }
