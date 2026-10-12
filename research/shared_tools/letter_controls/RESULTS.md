@@ -1,0 +1,17 @@
+# Original-letter controls: result
+
+**Not identifiable from available evidence:** independent human accuracy on authenticated, comparably damaged original Hebrew glyphs. Empirical accuracy remains unmeasured.
+
+The source-linked [eligibility audit](outputs/control_eligibility_audit.json) imports every original-frame catalogue row and its acquisition metadata. The target mappings for VII 11, IX 7, X 15, X 16 and XII 10 all have null original ROIs and neighboring-original-Hebrew anchors. VII 11 has only a physical scaffold; IX 7 and X 15–16 remain provisional; XII 10 retains its edition scaffold. A catalogue cut identity consequently supplies no registered target or independent control truth. These limits appear in the existing [mapping record](../mapping_claims.json) and [original-photo audit](../../../registration/plate_check/original_photo_audit_2026-10-06.json).
+
+The [earlier plate check](../../text/plate_check.md) identifies its two readers as separate model sessions. It records object recognition and uncertain remembered-reading exposure. Those votes cannot supply independent experienced-human accuracy. Its plate/copy/radiograph observations are exposed. The frozen XII 10 protocol also records prior USC cuts 21–23 native inspection, previews/contact sheets and edition derivatives; a rescanned known image supplies no automatic holdout. No secure original-letter truth was imported from an edition transcription or a repaired replica.
+
+The checkout used for this run intentionally omits raster/PDF payloads. The audit marks these assets `not_materialized_in_this_runtime`; local absence supplies no evidence that the source repository lacks them. Original registration, truth, comparability and independent human responses remain unresolved even if existing payloads are materialized.
+
+The [anonymous metadata manifest](outputs/packet/reviewer/items.json) and [coordinator item gaps](outputs/packet/coordinator/item_gaps.csv) now specify each target and its complete local-control-pool dependency. They carry no invented crop, glyph truth or reader vote. The [selection plan](outputs/packet/coordinator/control_selection_plan.json) fixes the treatment of all legible local comparators, damage/resolution strata, duplicate views and exposure. The [readiness record](outputs/packet/coordinator/readiness.json) blocks dispatch until original images, registration, independent truth and experienced human readers exist. Source keys remain coordinator preparation material; future delivery must restrict readers to the anonymous package.
+
+The [synthetic pilot](outputs/synthetic_pilot_result.json) exercises scoring arithmetic with explicitly fabricated inputs. It tests confusion, abstention, unknown, missing-response and disagreement accounting; its accuracy values describe fixtures only. The [empirical result](outputs/empirical_accuracy.json) has no qualified glyphs or human responses and records no measured accuracy. All 14 focused software tests passed.
+
+Reopen the empirical claim for a bounded registered original comparator inventory with independently established truth, a completed exposure/comparability audit and locked independent qualified-human responses. Continue the already pending original-image route under the existing XII 10 protocol; this work sends no new request and reopens no parked image search.
+
+**Partly:** obtained an item-level original-letter eligibility dataset, anonymous packet staging and verified scoring; empirical human accuracy was not obtained.

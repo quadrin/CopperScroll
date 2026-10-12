@@ -91,6 +91,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 
 ## R02 — What cave arrangement does entry 25 describe?
 
+12 October applied result: Applied book facts now distinguish cave form from dated usable architecture at IV/17, Twin and XII/53; all ancient threshold/configuration joins remain unknown. [Applied witnesses](feature_workbench/book_application_2026-10-12/README.md).
+
 - **Priority / status:** P1 / In progress.
 - **Baseline:** Twin Cave near 11Q, Abu Saraj IV/11, Abu Saraj IV/17 and manuscript cave 3Q are separate records. The wording permits a cave-level eastward aspect; requiring both openings to face east is a stricter model. Existing edition comparison and Milik p. 140 recheck apply; original apparatus/manuscript verification remains pending.
 - **Supporting evidence and limits:** direct inspection of supplied capture PDF pp. 24–26, covering Bar-Adon pp. [15]–17, supports Twin Cave's pillar and two openings, both published as facing east. The northern 35 m / 4 m average measurements describe its cavity, not entrance dimensions. Fig. B1 is an unscaled exterior photograph; surveyed bearings, spacing, internal communication and dated northern threshold remain unresolved. Late Second Temple-compatible objects establish use rather than entrance chronology. IV/17 separately supplies a measured two-mouth/pillar plan without a dated first-century threshold. IV/11's internal pillar and upper-fill coins do not establish the required exterior pair or phase.
@@ -153,6 +155,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 
 ## R07 — Where were Koḥlit, Achor and Sekakah?
 
+12 October applied result: The 12 October Manchester/CBRL replies narrow custody routes without a diagnostic XII10 frame or north-strip observation. [Access evidence](agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026).
+
 - **Priority / status:** P3 / In progress.
 - **Baseline:** All five map components and the selected gazetteer originals are now readable. TIR p56 adopts AchorVallis/Wadi enNuʿeima; p197 groups Noorath/Neara/Naʿaran atEinDuyuk. These scholarly equations remain distinct from an independently discriminated Scroll landmark. Competing geography and period-specific feature uncertainties remain.
 - **Next test:** Noth1955 42–55 and MilikRB1959 331–332 are now inspected. Obtain labelled early-settlement/reservoir/spring/conduit construction/use sections and dated context registers; inspect the namedBar/ZertalManassehV314–324/547–555 Auja/supply alternative. Preserve Nuʿeima/Buqeiʿa and deVos's conditional biblical alternative; Milik's monastery succession needs an observed join. Koḥlit/Sekakah need separate evidence.
@@ -166,6 +170,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 - **Evidence / historical questions:** [Michigan map intake](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md); [Achor/Noorath source trace](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_achor_noorath_aqueduct_trace_2026-10-01.md); [Current site assessment](https://github.com/quadrin/CopperScroll/blob/main/research/sites/site_identification_review.md); Q13, Q17, Q42.
 ## R08 — How should directions and measurements be applied?
 
+12 October applied result: The same-document uncertainty shortcut was corrected: common translation cancels, while scale/differential distortion remain. Entry29’s free-unit 24/27 bands overlap, and unresolved ancient datums block depth comparisons. [Resolution result](feature_workbench/measurement_resolution_2026-10-12/README.md). Rachel Bar-Nathan now reports holding Jericho field notes and requests an owner call; no junction/level record supplied.
+
 - **Priority / status:** P2 / In progress.
 - **Baseline:** bare cubit quantities may denote depth, travel or offset. Hyrcania's tested pool-side model conflicts with the reported dimensions; that check does not test Eshel’s northward-offset model; its regional registration missed the withheld check by about 244 m.
 - **Next test:** Hyrcania: identify the edition-specific measuring origin and validate north from survey controls before accepting an offset. For Sartaba, obtain matched Amit/2001-survey endpoints and located interior sections; Amit’s original chapter is now read, resolving 190≈192 m but not 250 m or the later 0.60 m height. The survey preliminary pp. 24–26 are in the earlier Amit lecture collection (Jerusalem תש״ם), currently unrecovered; the supplied1989 pages contain another article. Preserve separate phases. Existing Jericho work: the bounded28-record source-sector inventory is complete, with21explicit additional coverage obligations. Individual identity/state crosswalks, geographic/detection coverage, calibrated finite units, source-specific uncertainty and a verified unseen observation remain unresolved. Obtain phase-controlled aperture/face/surface survey definitions for A(C)94 and the same observations for A(C)90/AC44 before new metric comparisons. Use the active test to protect reserved confirmatory observations while logging exploratory sourcing. A frozen branch-level contact test may proceed before the regional inventory and cubit calibration are complete; it cannot establish entry29's identification. The required later contact/profile and collector evidence does not itself constitute a registered prediction; Plans15/23 remain phase-control gaps. Herodian supply is unknown; early offsets cannot transfer to the joined basin. Also use the parallel packets to repeat IV/17 source-space picks, verify Hyrcania's independent controls/guide notation and attach observed surfaces to unit models. Local-plan geometry and datum/phase work remain separate.
@@ -175,6 +181,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 - **Evidence / historical questions:** [Grid-cell test](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle2/hyrcania_grid_cell_report.md); [Dimension provenance and missing original](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle2/hyrcania_dimensions.md); [Measurement worklist](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/README.md); [Hyrcania packet](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/registration_packet.md); [Units/datum packet](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/units_packet.md); [Hyrcania registration](https://github.com/quadrin/CopperScroll/blob/main/research/sites/hyrcania_plan_registration_2026-09-30.md); [Plan follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sites/cave_plan_followup_2026-09-30.md); Q15, Q19, Q49.
 
 ## R09 — Which candidate layouts existed when the instructions were usable?
+
+12 October applied result: Atara’s west/east pools and Absalom’s original south/later west accesses are scored as separate physical/phase witnesses. Entry46 now retains pit/pool and distance/depth/ten-small-pits models, with native source map-reference extents distinguished from metre-precise points. [Phase applications](feature_workbench/book_application_2026-10-12/README.md) and [entry46 audit](text/entry46_alternatives_2026-10-12/README.md).
 
 - **Priority / status:** P3 / In progress.
 - **Baseline:** the inspected TIR synagogue legend separates Second Temple, Mishnah/Talmud and Samaritan categories. Its Herodion/Jericho/Naʿaran symbol assignments are reference leads requiring original dating evidence. Tombs and waterworks often combine construction and reuse phases. Maresha numbering chains support I.92 = Tomb 515 and I.90 = Tomb 513; I.89 and I.91 remain unresolved.
@@ -198,6 +206,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 
 ## R11 — What do the Greek letters represent?
 
+12 October applied result: The completed 10 October DDbDP papyri screen remains closed. CIIPII, Jatt’s Porath/Kasher pp47*–51* and untranscribed primary originals remain unread; a bounded coauthor-catalogue check supplied no native inscription pages. [Coverage audit](text/entry46_alternatives_2026-10-12/greek_coverage_audit.json).
+
 - **Priority / status:** P3 / In progress.
 - **Baseline:** several hypotheses have been tested; letter function and their stopping point remain unexplained.
 - **Next test:** labeled original column reconstruction/archival mapping linking edition line ends and adjacent Hebrew to curved cuts/rotations; then archival-resolution paired light frames or calibrated original geometry with conservation history. Acquired previews inspected; all seven target ROIs and timing assessments remain unknown. Name/common-noun comparisons stay complete.
@@ -209,6 +219,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 - **Evidence / historical questions:** [Phase 4](https://github.com/quadrin/CopperScroll/blob/main/research/phases/phase4_summary.md); Q27–Q31.
 
 ## R12 — What kind of inventory was this, and when was it compiled?
+
+12 October applied result: The numbered-label comparison specifies observations distinguishing places, objects/lots, counts, contents measures and retrieval instructions. Herodium’s number roles remain not identifiable, with restorations/dots and hidden-place/hidden-object alternatives preserved; Masada’s explicit log-unit comparator supplies a different discriminator. [Role comparison](comparanda/inventory_forms_2026-10-12/README.md).
 
 - **Priority / status:** P3 / In progress.
 - **Baseline:** edition disagreements over the weight unit materially alter the claimed quantities. Institutional vocabulary and landmark chronology provide possible tests; origin and compilation date remain interpretations.

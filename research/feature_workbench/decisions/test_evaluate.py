@@ -69,10 +69,11 @@ class DecisionQueueTests(unittest.TestCase):
         self.assertEqual(task["freeze"]["unused_status"], "unverified")
         self.assertEqual(task["request"]["status"], "sent_pending")
 
-    def test_generic_iaa_request_not_relabelled_as_l656_request(self):
+    def test_specific_l656_request_preserves_separate_inventory_and_unknown_custody(self):
         task = self.tasks["decisions-iv17-l656"]
-        self.assertEqual(task["request"]["status"], "related_request_pending")
-        self.assertIn("not a verified request", task["request"]["scope"])
+        self.assertEqual(task["request"]["status"], "sent_pending")
+        self.assertIn("11 October", task["request"]["scope"])
+        self.assertIn("separate IAA regional", task["request"]["scope"])
         self.assertIs(task["access"]["custody_verified"], False)
         sources = {s["id"]: s for s in self.snapshot["sources"]}
         self.assertEqual(sources["decisions-iv17-unread-file"]["inspection"], "not_inspected")

@@ -1,0 +1,130 @@
+{
+  "scope": "Phase-attached entry-46 target measurements, distinct from basin dimensions or excavation reach",
+  "observations": [],
+  "reason_empty": "Native PDFs add feature depths, a1.9m compass relation and incomplete survey counts; none locates an entry46 deposit target or ancient incoming axis/vertical datum. Those facts remain separate from qualifying numerical observations.",
+  "source_measurements": [
+    {
+      "id": "RR-L201",
+      "origin_row": "phase2_2026-10-10/features.csv#454",
+      "feature": "L201 unplastered pit",
+      "dimensions_m": [
+        0.85,
+        0.9
+      ],
+      "feature_depth_m": 0.75,
+      "kind": "pit-mouth-to-pit-floor",
+      "deposit_target_observed": false,
+      "phase": "undated exposed configuration",
+      "source": "Novoselsky2025 PDF2; Figs4–5/PDF7–8",
+      "left_origin": "UNKNOWN",
+      "count_complete": false
+    },
+    {
+      "id": "RR-L302",
+      "origin_row": "phase2_2026-10-10/features.csv#454",
+      "feature": "L302 unplastered pit",
+      "dimensions_m": [
+        0.7,
+        0.94
+      ],
+      "feature_depth_m": 0.25,
+      "kind": "pit-mouth-to-pit-floor",
+      "deposit_target_observed": false,
+      "phase": "undated exposed configuration",
+      "source": "Novoselsky2025 PDF2; Fig6/PDF9",
+      "channel_m": {
+        "length": 0.75,
+        "width": 0.1,
+        "depth": 0.15,
+        "direction": "southwest from western corner; possible further installation outside excavation"
+      },
+      "left_origin": "UNKNOWN",
+      "count_complete": false
+    },
+    {
+      "id": "RR-L301",
+      "origin_row": "phase2_2026-10-10/features.csv#454",
+      "feature": "L301 hewn shaft into karstic cave",
+      "dimensions_m": [
+        1,
+        1.05
+      ],
+      "feature_depth_m": 0.6,
+      "kind": "shaft-depth-to-cave-opening",
+      "deposit_target_observed": false,
+      "phase": "undated exposed configuration",
+      "source": "Novoselsky2025 PDF2; Fig6/PDF9",
+      "relative_position": "southeast of L302",
+      "left_origin": "UNKNOWN",
+      "count_complete": false
+    },
+    {
+      "id": "RR-census",
+      "feature": "unexcavated installations near AreasB/C",
+      "minimum_additional_installations": 5,
+      "object_type": "hewn installations; purpose/type unknown",
+      "kind": "incomplete-survey-count",
+      "count_complete": false,
+      "source": "Novoselsky2025 PDF2",
+      "phase": "UNKNOWN"
+    },
+    {
+      "id": "EK-Point1-square",
+      "origin_row": "phase2_2026-10-10/features.csv#392",
+      "feature": "square cutting beside Point1 cistern",
+      "dimensions_m": [
+        0.65,
+        0.7
+      ],
+      "feature_depth_m": 0.2,
+      "kind": "feature-mouth-to-feature-floor",
+      "deposit_target_observed": false,
+      "phase": "undated exposed configuration",
+      "source": "EinMor/Levi2021 PDF2; Fig2/PDF7 shows cisternmouth",
+      "relative_position": {
+        "distance_m": 1.9,
+        "direction": "southwest of cisternmouth"
+      },
+      "mouth_dimensions_m": [
+        1,
+        1.3
+      ],
+      "mouth_map_ref": "217037/630944",
+      "left_origin": "UNKNOWN",
+      "count_complete": false
+    },
+    {
+      "id": "EK-Point4-settling",
+      "origin_row": "phase2_2026-10-10/features.csv#393",
+      "feature": "Point4 settlingpit and cistern",
+      "kind": "modern-concrete-settling-configuration",
+      "deposit_target_observed": false,
+      "phase": "recent agriculturalunit; earlier cisterncutting unestablished",
+      "source": "EinMor/Levi2021 PDF2–3; Figs5–7/PDF10–12",
+      "construction_observation": "modern concrete in building and settlingpit",
+      "older_pottery_conflict": "Kloner2003 Site120 recorded Byzantine/EarlyIslamic pottery; currentsurvey found none",
+      "left_origin": "UNKNOWN",
+      "count_complete": false
+    },
+    {
+      "id": "EK-Point6-facade",
+      "origin_row": "phase2_2026-10-10/features.csv#395",
+      "feature": "unfinished tomb facade/niche",
+      "dimensions_m": [
+        2.1,
+        2.2
+      ],
+      "feature_depth_interval_m": [
+        0.8,
+        1.1
+      ],
+      "kind": "unfinished-horizontal-niche-depth",
+      "deposit_target_observed": false,
+      "phase": "EarlyRoman typology; cutting date unestablished",
+      "source": "EinMor/Levi2021 PDF3; Fig9/PDF14",
+      "facing": "northwest",
+      "left_origin": "UNKNOWN",
+      "count_complete": false
+    }
+  ]
+}

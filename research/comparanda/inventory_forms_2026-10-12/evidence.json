@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "source_snapshot": "3b2d5c44b8c0add84a69d25f8e72cd16acc886db",
+  "scope": "Exploratory role comparison of previously selected Herodium labels and two source-indexed Masada electronic-edition records; no completeness/rarity sample",
+  "sources": [
+    {
+      "id": "HERODIUM",
+      "title": "Ehud Netzer, Greater Herodium, Qedem 13 (1981); Joseph Naveh's specialist report",
+      "locator": "printed 70–71, illustration 99:1–2; printed 134 note III.13",
+      "access_basis": "Pinned previously inspected published-reading record, source discussion and book ledger. Original source pages were inspected in the preceding session; this worker read their evidence record, without recovering the pruned packet.",
+      "record_path": "research/sources/full_reads_2026-10-12/storage_language_audit/herodium_published_readings.json",
+      "record_git_blob_sha": "fc31f5cd51eb0489b847ff4310541bdc8dd6e270",
+      "repository_pin": "3b2d5c44b8c0add84a69d25f8e72cd16acc886db",
+      "provenance_tier": "Q",
+      "date_report": "cursive script approximately first century CE",
+      "date_basis": "Naveh's palaeographic attribution, recorded in preceding native-page inspection; distinct from installation construction dates.",
+      "ancestry_id": "NETZER_HERODIUM_1972_1978_B20",
+      "ancestry": "Netzer excavation, B20 storage hall, with Naveh's specialist interpretation and the separately reported chemistry.",
+      "dependency": "Original sherd inspection/complete independently read inscriptions and their contextual assignment; contents identification."
+    },
+    {
+      "id": "MASA0595",
+      "title": "Inscriptions of Israel/Palestine, masa0595",
+      "locator": "transcription lines 1–2; Masada I (1989), inscription 595",
+      "access_basis": "Electronic edition XML directly read this session; original printed catalogue and sherd photographs were not inspected.",
+      "url": "https://github.com/Brown-University-Library/iip-texts/blob/0b7dc8358ccdfd0c9391f049da4839fbd91c26e5/epidoc-files/masa0595.xml",
+      "repository_pin": "0b7dc8358ccdfd0c9391f049da4839fbd91c26e5",
+      "git_blob_sha": "08f8a3d9dcf4ef13ee3df3bc1b191635d1953427",
+      "provenance_tier": "V",
+      "tier_scope": "Verbatim electronic-edition data; no physical-surface authentication.",
+      "date_report": "Most likely 66-73 CE",
+      "date_basis": "Electronic-edition metadata; no independently checked sealed dating context.",
+      "ancestry_id": "YADIN_MASADA_1963_1965",
+      "ancestry": "Yigael Yadin's 1963–1965 excavation; Yadin, Naveh and Meshorer, Masada I (Israel Exploration Society, Jerusalem, 1989). Archival masa0595 XML directly verifies this bibliography.",
+      "dependency": "Native printed catalogue context and any photograph/figure; date-specific stratigraphic proof."
+    },
+    {
+      "id": "MASA0302",
+      "title": "Inscriptions of Israel/Palestine, masa0302",
+      "locator": "transcription lines 1–2; Masada I (1989), inscriptions 302–312",
+      "access_basis": "Electronic edition XML directly read this session; original printed catalogue and sherd photographs were not inspected.",
+      "url": "https://github.com/Brown-University-Library/iip-texts/blob/0b7dc8358ccdfd0c9391f049da4839fbd91c26e5/epidoc-files/masa0302.xml",
+      "repository_pin": "0b7dc8358ccdfd0c9391f049da4839fbd91c26e5",
+      "git_blob_sha": "d33e25f702ffab5b87308d6ca04164e81b79f382",
+      "provenance_tier": "V",
+      "tier_scope": "Verbatim electronic-edition data; no physical-surface authentication.",
+      "date_report": "66-73 CE",
+      "date_basis": "Electronic-edition metadata; no independently checked sealed dating context.",
+      "ancestry_id": "YADIN_MASADA_1963_1965",
+      "ancestry": "Yigael Yadin's 1963–1965 excavation; Yadin, Naveh and Meshorer, Masada I (Israel Exploration Society, Jerusalem, 1989). Archival masa0595 XML directly verifies this bibliography.",
+      "dependency": "Native printed catalogue context and any photograph/figure; date-specific stratigraphic proof."
+    }
+  ],
+  "records": [
+    {
+      "id": "HERODIUM_A",
+      "source_id": "HERODIUM",
+      "locator": "p.71, illustration 99:1",
+      "carrier": "bell-shaped jar fragment",
+      "findspot": "B20 storage hall",
+      "published_lines": [
+        "מטמר מ",
+        "[מהמט]מרים שבטין"
+      ],
+      "editorial_markers": {
+        "bracketed_restoration": "מהמט",
+        "supralinear_dots": "Two visible supra-linear dots in A: over the tet in first-line מטמר and over the mem beginning visible מרים in second line; represented separately rather than silently omitted as certain letters"
+      },
+      "number_letters": "מ",
+      "number_value_as_editor": 40,
+      "number_status": "tentative numeral interpretation",
+      "numeric_quote_ref": "extracts/herodium_source_record.md#A",
+      "lexical_referent": "hiding place OR hidden object, per Naveh",
+      "contents_status": "UNKNOWN",
+      "contents_inference": "wheat/barley is inferred from storeroom context; chemistry supplies no content identity",
+      "ancient_place_id_status": "UNKNOWN",
+      "ancient_object_id_status": "UNKNOWN",
+      "counted_objects_status": "UNKNOWN",
+      "content_measure_status": "UNKNOWN",
+      "location_instruction_status": "UNKNOWN",
+      "preservation_limit": "restored plural prefix and supra-linear uncertainty marks; complete unmarked syntax unavailable"
+    },
+    {
+      "id": "HERODIUM_B",
+      "source_id": "HERODIUM",
+      "locator": "p.71, illustration 99:2",
+      "carrier": "bell-shaped jar fragment",
+      "findspot": "B20 storage hall",
+      "published_lines": [
+        ".........",
+        "מטמר לה"
+      ],
+      "editorial_markers": {
+        "lacuna": "Printed row of dots represents lost/unread preceding text; dots are not recovered inscription characters"
+      },
+      "number_letters": "לה",
+      "number_value_as_editor": 35,
+      "number_status": "tentative numeral interpretation",
+      "numeric_quote_ref": "extracts/herodium_source_record.md#B",
+      "lexical_referent": "hiding place OR hidden object, per Naveh",
+      "contents_status": "UNKNOWN",
+      "contents_inference": "same source-level storeroom inference; no identification of B's contents",
+      "ancient_place_id_status": "UNKNOWN",
+      "ancient_object_id_status": "UNKNOWN",
+      "counted_objects_status": "UNKNOWN",
+      "content_measure_status": "UNKNOWN",
+      "location_instruction_status": "UNKNOWN",
+      "preservation_limit": "lost/unread preceding text represented by a printed row of dots"
+    },
+    {
+      "id": "MASADA_595",
+      "source_id": "MASA0595",
+      "locator": "electronic transcription lines 1–2 / print catalogue no. 595",
+      "carrier": "painted clay ostracon; contiguous fragments in edition metadata",
+      "findspot": "locus 415 in edition metadata",
+      "number_letters": "ΚΓ",
+      "number_value_as_editor": 23,
+      "number_status": "electronic edition encodes 23 twice, Greek and Phoenician-type signs",
+      "numeric_quote_ref": "extracts/masada_0595.md",
+      "unit": "לג",
+      "unit_status": "PRESENT_IN_EDITION",
+      "uncertain_word": "ע<unclear>וזר</unclear>ל",
+      "contents_status": "UNKNOWN",
+      "contents_inference": "electronic commentary offers medlar tentatively; uncertain letters retained",
+      "ancient_place_id_status": "UNKNOWN",
+      "ancient_object_id_status": "UNKNOWN",
+      "counted_objects_status": "UNKNOWN",
+      "content_measure_status": "PRESENT_IN_EDITION",
+      "location_instruction_status": "UNKNOWN",
+      "preservation_limit": "lacunae and illegible characters; exact translation absent; capacity/function rests on edition"
+    },
+    {
+      "id": "MASADA_302_GROUP",
+      "source_id": "MASA0302",
+      "locator": "electronic transcription lines 1–2 / print catalogue nos. 302–312",
+      "carrier": "painted clay ostraca grouped in electronic record",
+      "findspot": "locus 92 in edition metadata",
+      "published_name": "יהוחנן",
+      "number_letters": "palaeo-Hebrew yod",
+      "number_value_as_editor": null,
+      "number_status": "numeral ten is one alternative beside wine abbreviation and tithe",
+      "numeric_quote_ref": "extracts/masada_0302.md",
+      "other_mark": "Greek Α",
+      "contents_status": "UNKNOWN",
+      "contents_inference": "wine/ten/tithe unresolved; alpha's product/quality function tentative",
+      "ancient_place_id_status": "UNKNOWN",
+      "ancient_object_id_status": "UNKNOWN",
+      "counted_objects_status": "UNKNOWN",
+      "content_measure_status": "UNKNOWN",
+      "location_instruction_status": "UNKNOWN",
+      "preservation_limit": "record groups multiple fragments; group is no statistical sample of independent observations"
+    }
+  ],
+  "numerical_aggregation": "none; number tokens are attributed readings, not weights, vessel counts, place IDs or pooled evidence",
+  "reuse": "Ancient text and authored analysis only; no source photographs, PDFs or full copyrighted commentary",
+  "closed_tests": {
+    "R12": "preserved; no unit total, roundness, chronology or ownership rerun",
+    "ordering": "preserved; modern entry35/40 never treated as ancientIDs"
+  },
+  "ancestry_rule": "Herodium A/B share one field/specialist source; both Masada records share one excavation and catalogue. Diplomatic, segmented, archival and website versions are derivatives, not independent witnesses."
+}
+

@@ -1,0 +1,144 @@
+unit_id,name,condition,A_status,B_status,frozen_final_status,A_features,B_recovered_features,B_unresolved_candidates,witness_agreement,shared_claim_ids,citation_class_compatibility,physical_identity
+S206,Tell Qa'un,C2,MATCH,,MATCH,"[""f7"", ""s2z_s2f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S206,Tell Qa'un,C3s,MATCH,,MATCH,"[""f8""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S219,Tilfit,C2,MATCH,,MATCH,"[""f2"", ""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S223,Kh. esh-Sheikh Safiryyan,C2,MATCH,,MATCH,"[""f7"", ""f8""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S331,Kh. Ibziq,C2,MATCH,,MATCH,"[""f5"", ""f6"", ""f7"", ""f8""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S577,Kh. es-Suwede,C1,MATCH,,MATCH,"[""s2z_s2f1""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S592,Kh. Burj el-Fari'a,C1,MATCH,MATCH,MATCH,"[""f7""]","[""f1""]",[],CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""SWP:II:30|pool|open-basin-group""]",UNKNOWN
+S779,Tel el-Hadad,C3s,MATCH,,MATCH,"[""f1"", ""f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S790,Bab en-Naqb,C3s,MATCH,MATCH,MATCH,"[""f3"", ""f4""]",[],"[""f1"", ""f3"", ""f4"", ""f5""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S791,'Ein Shibli',C3s,MATCH,,MATCH,"[""f3"", ""f4""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+E96,Balata - Ancient Shechem,C3s,MATCH,,MATCH,"[""f1""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S836,Kh. el-Ghirur,C2,UNKNOWN,MATCH,UNKNOWN,[],"[""s2z_s2f1""]","[""f1"", ""f5"", ""s4_s4f1""]",NO_JOINT_POSITIVE,[],[],UNKNOWN
+E99,Tananir,C2,MATCH,,MATCH,"[""s4_s4f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+E99,Tananir,C3s,MATCH,,MATCH,"[""f4"", ""f5""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S842,Kh. esh-Sheikh Nasrallah,C1,MATCH,,MATCH,"[""f11""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S845,Kh. es-Saleh,C2,MATCH,,MATCH,"[""f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S845,Kh. es-Saleh,C3s,MATCH,,MATCH,"[""f3"", ""f4""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S848,Kh. Maraḥ el-'Inab,C3s,MATCH,,MATCH,"[""f2"", ""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S916,en-Na'ajeh 4,C2,UNKNOWN,MATCH,UNKNOWN,[],"[""s2z_s2f1"", ""s2z_s2f2""]","[""f1"", ""f3"", ""f5"", ""f6"", ""f7"", ""f9"", ""f12""]",NO_JOINT_POSITIVE,[],[],UNKNOWN
+S1029,Kh. Tana et-Tahta,C3s,MATCH,,MATCH,"[""f5""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1032,Udala,C2,MATCH,,MATCH,"[""f3"", ""f4""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1032,Udala,C3s,MATCH,,MATCH,"[""f5"", ""f6"", ""f7""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1089,'Iraq er-Resifeh 4,C2,MATCH,,MATCH,"[""f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1092,Wadi edh-Dhba' 3,C2,MATCH,,MATCH,"[""f1"", ""f2"", ""f5""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1116,Tell eṣ-Ṣimadi,C3s,MATCH,,MATCH,"[""f7"", ""f8"", ""s2z_f5""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1137,Qarawet et-Tahta,C2,MATCH,,MATCH,"[""f6""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1137,Qarawet et-Tahta,C3s,MATCH,,MATCH,"[""f4""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1148,-,C2,MATCH,,MATCH,"[""f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1169,Wadi Khallal el-Fal 1,C2,MATCH,,MATCH,"[""f5""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1200,Kh. 'Afrata,C2,MATCH,,MATCH,"[""f7""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1217,Kh. 'Afrit,C2,MATCH,,MATCH,"[""f1"", ""f2"", ""f5""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1218,Yatma,C1,MATCH,,MATCH,"[""f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1275,Masu'a 2,C2,MATCH,,MATCH,"[""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1283,Qarn Sarṭaba,C1,MATCH,MATCH,MATCH,"[""s2z_f3""]","[""f16""]","[""f4"", ""f7"", ""f9"", ""f18""]",CURATED_SAME_SOURCE_FEATURE_GROUP,"[""S1283:Herodian-peristyle-small-pool""]",[],UNKNOWN
+S1283,Qarn Sarṭaba,C2,MATCH,MATCH,MATCH,"[""f11""]","[""f14""]","[""f1"", ""f3"", ""f6"", ""f8"", ""f12"", ""f20"", ""f21"", ""f24"", ""f26""]",NO_SHARED_SOURCE_FEATURE_ANCHOR,[],[],UNKNOWN
+S1295,"Lower Sartaba, Kh. Kuffah",C2,MATCH,,MATCH,"[""s2z_f1""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1382,Yafit 8,C1,MATCH,,MATCH,"[""f1""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1492,Tell Shiloh,C2,MATCH,MATCH,MATCH,"[""s4_s4f3"", ""s4_s4f5""]","[""f19"", ""f21""]","[""f1"", ""f2"", ""f4"", ""f5"", ""f16"", ""f20"", ""f22""]",CURATED_SAME_SOURCE_FEATURE_GROUP,"[""S1492:Area-K-silo-1207"", ""S1492:Area-M-silo-2009""]",[],UNKNOWN
+S6040,Tell esh-Sheikh Dhiab,C1,MATCH,MATCH,MATCH,"[""f4""]",[],"[""f1"", ""f2"", ""f4""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S6040,Tell esh-Sheikh Dhiab,C2,MATCH,MATCH,MATCH,"[""f5""]",[],"[""f3"", ""f5"", ""f6"", ""f9"", ""f11""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S1502,Kh. Sara C,C2,MATCH,,MATCH,"[""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1502,Kh. Sara C,C3s,MATCH,,MATCH,"[""f4""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1509,-,C1,MATCH,MATCH,MATCH,"[""f1"", ""f2"", ""f6""]","[""f1""]","[""f2"", ""f4"", ""f8""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S6040|pool|open-basin-group""]",UNKNOWN
+S1525,Kh. er-Rafid,C3s,MATCH,,MATCH,"[""f1""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S5991,Fussail 2,C1,MATCH,,MATCH,"[""f2"", ""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1658,Kh. Marjame,C1,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S1658,Kh. Marjame,C2,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S1658,Kh. Marjame,C3s,MATCH,,MATCH,"[""f6"", ""f8"", ""f9""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1658,Kh. Marjame,C3t,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S1667,Kh. Samiyye,C1,UNKNOWN,UNKNOWN,UNKNOWN,[],[],[],NO_JOINT_POSITIVE,[],[],UNKNOWN
+S1667,Kh. Samiyye,C2,MATCH,MATCH,MATCH,"[""f9""]","[""f8""]",[],CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S1658|pit|pit-group""]",UNKNOWN
+S1667,Kh. Samiyye,C3s,MATCH,MATCH,MATCH,"[""f12"", ""f14"", ""f15"", ""s4_s4f1"", ""s4_s4f2"", ""s4_s4f3""]",[],"[""f1"", ""f2"", ""f3"", ""f4"", ""f5"", ""f6"", ""f9"", ""f10"", ""f11"", ""f12"", ""f13"", ""f14"", ""f15"", ""f16"", ""f17"", ""s4_f1"", ""s4_f2"", ""s4_f3"", ""s4_f4"", ""s4_f5"", ""s4_f6"", ""s4_f7"", ""s4_f8"", ""s4_f9""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S1667,Kh. Samiyye,C3t,UNKNOWN,UNKNOWN,UNKNOWN,[],[],[],NO_JOINT_POSITIVE,[],[],UNKNOWN
+S6019,Wadi Aujah 1,C2,UNKNOWN,MATCH,UNKNOWN,[],"[""f3""]","[""f6"", ""f13""]",NO_JOINT_POSITIVE,[],[],UNKNOWN
+S1782,Kh. Dar Haiyeh,C2,MATCH,,MATCH,"[""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1785,Kh. el-'Awja,C2,MATCH,,MATCH,"[""f3"", ""f6""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1790,Ein el-'Auja,C2,MATCH,,MATCH,"[""f3"", ""f6""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1798,Kh. Umm 'Azbe,C1,MATCH,,MATCH,"[""f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1808,Malkhaka el-Wadin,C3s,MATCH,MATCH,MATCH,"[""f3""]",[],"[""f3""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S1831,Kh. el-Kilya,C2,MATCH,UNKNOWN,UNKNOWN,"[""s4_s4f1""]",[],[],NO_JOINT_POSITIVE,[],[],UNKNOWN
+S1929,Kh. el-Khudriya,C2,MATCH,,MATCH,"[""s4_s4f1"", ""s4_s4f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1929,Kh. el-Khudriya,C3s,MATCH,,MATCH,"[""f2"", ""f3"", ""s4_s4f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2045,Khallat ed-Dinnabiya,C2,MATCH,,MATCH,"[""f25"", ""f30"", ""f33"", ""f37"", ""f38"", ""f39"", ""f45""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2376,Tell Maryam,C2,MATCH,,MATCH,"[""f2"", ""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2376,Tell Maryam,C3s,MATCH,,MATCH,"[""f4"", ""f5""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2411,Kh. ed-Dawwara,C2,MATCH,,MATCH,"[""f4""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2430,Tell es-Samrat,C2,MATCH,,MATCH,"[""f14"", ""f15"", ""f65""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2430,Tell es-Samrat,C3s,MATCH,,MATCH,"[""f16"", ""f60"", ""f63"", ""f64"", ""f66"", ""f67"", ""f68"", ""f69"", ""f70"", ""f71"", ""f72"", ""f73""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2431,Kh. el-Qubba,C2,MATCH,,MATCH,"[""f6"", ""f7""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2488,Kh. Marjama,C1,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S2488,Kh. Marjama,C2,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S2488,Kh. Marjama,C3s,MATCH,,MATCH,"[""f6""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2488,Kh. Marjama,C3t,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S2490,el-'Aleiliyat,C3s,MATCH,,MATCH,"[""f9""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2515,-,C1,MATCH,MATCH,MATCH,"[""f4""]","[""f5""]",[],CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S2490|pool|open-basin-group""]",UNKNOWN
+S2525,-,C2,MATCH,,MATCH,"[""f7"", ""f8"", ""f9""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2526,el-Hadaba,C1,MATCH,MATCH,MATCH,"[""f7""]","[""f7""]",[],CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S2490|pool|open-basin-group""]",UNKNOWN
+S2539,Tulul Abu el-'Alaiq,C1,MATCH,MATCH,MATCH,"[""f2"", ""f27"", ""f42""]",[],"[""f1"", ""f2"", ""f3"", ""f12"", ""f13"", ""f19"", ""f20"", ""f34"", ""f35"", ""f36"", ""f38"", ""f40"", ""f43"", ""f48"", ""f49""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S2539,Tulul Abu el-'Alaiq,C2,MATCH,MATCH,MATCH,"[""f3"", ""f7"", ""f8"", ""f9"", ""f24""]",[],"[""f4"", ""f5"", ""f6"", ""f7"", ""f8"", ""f9"", ""f10"", ""f11"", ""f17"", ""f21"", ""f24"", ""f26"", ""f27"", ""f28"", ""f29"", ""f30"", ""f31"", ""f32"", ""f37"", ""f39"", ""f42"", ""f44"", ""f50""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S2562,Megharat el-Jai,C2,MATCH,,MATCH,"[""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2565,Kh. et-Tinat,C2,MATCH,MATCH,MATCH,"[""f7""]","[""f7""]","[""f3"", ""f12"", ""f13"", ""f20"", ""f23"", ""s4_f5""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S2490|pit|cistern-group""]",UNKNOWN
+S2589,Kypros,C1,MATCH,MATCH,MATCH,"[""f28""]",[],"[""f14"", ""f15"", ""f17"", ""f18"", ""f19"", ""f21"", ""f24"", ""f25"", ""f27"", ""f32"", ""s4_s4f1"", ""s4_s4f3"", ""s4_s4f6"", ""s4_s4f7"", ""s4_s4f8""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S2589,Kypros,C2,MATCH,MATCH,MATCH,"[""f3"", ""f4"", ""f17""]",[],"[""f2"", ""f4"", ""f5"", ""f6"", ""f7"", ""f8"", ""f9"", ""f10"", ""f11"", ""f12"", ""f20"", ""f23"", ""f29"", ""f33"", ""s4_s4f2"", ""s4_s4f4"", ""s4_s4f5"", ""s4_s4f9""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S2631,Kh. el-Kharaba,C3s,MATCH,,MATCH,"[""f4""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2698,Kh. Abu 'Aum,C1,MATCH,,MATCH,"[""f5"", ""f9"", ""f10""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2699,Wadi Fara,C3s,MATCH,,MATCH,"[""f13""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2759,Kh. Abu Musarraḥ,C2,MATCH,,MATCH,"[""f7""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2849,-,C2,MATCH,MATCH,MATCH,"[""f2"", ""f3"", ""f8"", ""f9"", ""f10"", ""f19""]","[""f2"", ""f7""]","[""f1"", ""f8"", ""f13"", ""f14"", ""f16"", ""f17"", ""f21"", ""f23"", ""f24"", ""f26"", ""f30"", ""f31"", ""f33"", ""f36"", ""f40"", ""f43"", ""f45"", ""f46"", ""f50"", ""f54"", ""f56"", ""f58"", ""f59"", ""f60"", ""f61"", ""f62"", ""f63"", ""f64"", ""f67""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S2806|pit|cave-group"", ""WBADB:S2806|pit|cistern-group""]",UNKNOWN
+S2849,-,C3s,MATCH,MATCH,MATCH,"[""f4"", ""f5"", ""f6"", ""f7"", ""f11"", ""f12"", ""f13"", ""f14""]","[""f3"", ""f4"", ""f5"", ""f6""]","[""f9"", ""f10"", ""f11"", ""f12"", ""f15"", ""f18"", ""f22"", ""f25"", ""f27"", ""f28"", ""f32"", ""f42"", ""f44"", ""f51"", ""f52"", ""f57"", ""f65""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S2806|grave|burial-group""]",UNKNOWN
+S2990,Qaṣr er-Rawabi,C2,MATCH,,MATCH,"[""f4"", ""f5""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S3001,Kh. Deir es-Sidd,C2,MATCH,MATCH,MATCH,"[""f18""]",[],"[""f1"", ""f2"", ""f3"", ""f5"", ""f6"", ""f7"", ""f9"", ""f10"", ""f15"", ""f16"", ""f18"", ""f19"", ""f20"", ""f21"", ""f25"", ""f28"", ""f30"", ""f31"", ""f35"", ""f36"", ""f39"", ""f40"", ""f51"", ""f52"", ""f59"", ""f60"", ""f61"", ""f62"", ""f63"", ""f66"", ""f67"", ""f68"", ""f69"", ""f73"", ""f74"", ""f76"", ""s4_s4f1"", ""s4_s4f2"", ""s4_s4f3""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S3036,Kh. esh-Sheikh 'Antar,C2,MATCH,MATCH,MATCH,"[""f4"", ""f5"", ""f6"", ""f8"", ""f9"", ""f10"", ""f12"", ""f13""]","[""f4"", ""f5"", ""f6""]","[""f1"", ""f2"", ""f8"", ""f9"", ""f10"", ""f12"", ""f13"", ""f15"", ""f16"", ""f18"", ""f21"", ""f22"", ""f26"", ""f27"", ""f30"", ""f31"", ""f32"", ""f39"", ""f40"", ""f41"", ""f46"", ""f47"", ""f48"", ""f49"", ""f50"", ""f51"", ""f53"", ""f54"", ""f55"", ""f56"", ""f57"", ""f58"", ""f59"", ""f61"", ""f69"", ""f70""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S3001|pit|cave-group"", ""WBADB:S3001|pit|cistern-group""]",UNKNOWN
+S3036,Kh. esh-Sheikh 'Antar,C3s,MATCH,MATCH,MATCH,"[""f7"", ""f11"", ""f14""]","[""f7""]","[""f3"", ""f11"", ""f14"", ""f17"", ""f33"", ""f42"", ""f43"", ""f52"", ""f60"", ""f71"", ""f72"", ""f73"", ""f74""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S3001|grave|burial-group""]",UNKNOWN
+S3049,Qaṣr 'Ali,C2,MATCH,,MATCH,"[""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S3137,el-Muntar,C1,MATCH,MATCH,MATCH,"[""f5"", ""f6""]","[""f8""]","[""f9""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S3049|pool|open-basin-group""]",UNKNOWN
+S3137,el-Muntar,C2,MATCH,MATCH,MATCH,"[""f2""]",[],"[""f1"", ""f2"", ""f3"", ""f10"", ""f11"", ""f20"", ""f21"", ""f22"", ""f24"", ""f25"", ""f29"", ""f30"", ""f33"", ""f34"", ""f36"", ""f37"", ""f40""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S3170,Zanaba,C2,MATCH,MATCH,MATCH,"[""f3"", ""f4""]","[""f3"", ""f4""]","[""f1"", ""f2"", ""f5"", ""f6"", ""f10"", ""f11"", ""f14"", ""f15"", ""f20"", ""f21"", ""f22"", ""f23"", ""f24"", ""f25"", ""f26"", ""f27"", ""f31"", ""f32"", ""f33"", ""f34"", ""f35"", ""f36"", ""f37"", ""f38"", ""f39"", ""f40"", ""f41"", ""f42"", ""f43"", ""f44"", ""f45"", ""f46"", ""f56"", ""f59"", ""f60""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S3134|pit|cave-group"", ""WBADB:S3134|pit|cistern-group""]",UNKNOWN
+S3243,ez-Zu'aiyim,C2,MATCH,MATCH,MATCH,"[""f15"", ""f16""]","[""f17"", ""f18""]","[""f1"", ""f4"", ""f5"", ""f6"", ""f7"", ""f8"", ""f9"", ""f10"", ""f11"", ""f13"", ""f15"", ""f19"", ""f20"", ""f21"", ""f22"", ""f25"", ""f26"", ""f27"", ""f28"", ""f29"", ""f30"", ""f31"", ""f32"", ""f33"", ""f34"", ""f35"", ""f37"", ""f38"", ""f39"", ""f40"", ""f44"", ""f45"", ""f46"", ""f47"", ""f48"", ""f49"", ""f50"", ""f51"", ""f52"", ""f53"", ""f54"", ""f55"", ""f61"", ""f62"", ""f64"", ""f65"", ""f70"", ""f71"", ""f72"", ""f73"", ""f74"", ""f75"", ""f76"", ""f77"", ""f79"", ""f83"", ""f86"", ""f88"", ""f91"", ""f103"", ""f104"", ""f105"", ""f106"", ""f107"", ""f112"", ""f113"", ""f114"", ""f118"", ""f119"", ""f121"", ""f122"", ""f124""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S3173|pit|cave-group"", ""WBADB:S3173|pit|cistern-group""]",UNKNOWN
+S3321,Mashru' el-'Eizariya,C2,MATCH,,MATCH,"[""f1"", ""f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S3419,Ras el-'Eizariya,C2,MATCH,MATCH,MATCH,"[""f4""]",[],"[""f2"", ""f4"", ""f5"", ""f7"", ""f8"", ""f9"", ""f10"", ""f11"", ""f13"", ""f17"", ""f19"", ""f20"", ""f21"", ""f22"", ""f24"", ""f25"", ""f30"", ""f31"", ""f32"", ""f33"", ""f38"", ""f41"", ""f43"", ""f46"", ""f47"", ""f49""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S3419,Ras el-'Eizariya,C3s,MATCH,MATCH,MATCH,"[""f3""]",[],"[""f1"", ""f3"", ""f34"", ""f37"", ""f39"", ""f40"", ""f42"", ""f45"", ""f50"", ""f51""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S3520,-,C2,MATCH,,MATCH,"[""f3"", ""f4"", ""f8""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S3609,Abu Dis,C2,MATCH,,MATCH,"[""f4""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+E754,Kh. Qumran,C1,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+E754,Kh. Qumran,C2,MATCH,,MATCH,"[""f13"", ""f14"", ""f16"", ""f17"", ""f18"", ""f19""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+E754,Kh. Qumran,C3s,MATCH,,MATCH,"[""s4_f23""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+E754,Kh. Qumran,C3t,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S3961,-,C2,MATCH,,MATCH,"[""f4"", ""f5"", ""f6"", ""f7"", ""f8"", ""f9"", ""f10""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S3961,-,C3s,MATCH,,MATCH,"[""f13""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S4109,Hyrcania,C2,MATCH,,MATCH,"[""f10"", ""f11"", ""f12""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S203,Er-Randeh,C2,MATCH,,MATCH,"[""f5""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S452,Kh. el-Mite,C1,MATCH,,MATCH,"[""f1""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S458,el-Bird,C1,MATCH,,MATCH,"[""f1""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S695,el-Khelayel,C3s,MATCH,UNKNOWN,UNKNOWN,"[""s2z_f1""]",[],[],NO_JOINT_POSITIVE,[],[],UNKNOWN
+S843,Kh. edh-Dhra',C2,MATCH,,MATCH,"[""f1""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S843,Kh. edh-Dhra',C3s,MATCH,,MATCH,"[""f2"", ""f3""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1319,Masu'a 9,C3s,MATCH,,MATCH,"[""f1"", ""f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S6035,Faṣa'el 4,C1,MATCH,,MATCH,"[""f6""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S1666,Water Line - 'Ein Samiya,C1,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S1666,Water Line - 'Ein Samiya,C2,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S1666,Water Line - 'Ein Samiya,C3s,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S1666,Water Line - 'Ein Samiya,C3t,UNKNOWN,,UNKNOWN,[],[],[],SINGLE_CODER,[],[],UNKNOWN
+S2037,-,C3s,MATCH,,MATCH,"[""f8""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2096,-,C2,MATCH,MATCH,MATCH,"[""f1"", ""f2"", ""f4""]","[""f1""]","[""f2"", ""f4"", ""f12"", ""f13"", ""f15"", ""f19"", ""f24"", ""f26"", ""f27""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S2041|pit|cistern-group""]",UNKNOWN
+S2096,-,C3s,MATCH,MATCH,MATCH,"[""f5""]",[],"[""f5"", ""f8"", ""f11"", ""f14"", ""f16"", ""f20"", ""f21"", ""f22"", ""f23"", ""f28""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+E334,Tell es-Sultan,C1,MATCH,MATCH,MATCH,"[""f89""]","[""f88""]","[""f67""]",CURATED_SAME_SOURCE_FEATURE_GROUP,"[""E334:SWP-24-by-40-foot-spring-reservoir""]",[],UNKNOWN
+E334,Tell es-Sultan,C2,UNKNOWN,UNKNOWN,UNKNOWN,[],[],[],NO_JOINT_POSITIVE,[],[],UNKNOWN
+E334,Tell es-Sultan,C3s,MATCH,MATCH,MATCH,"[""f107""]",[],"[""f1"", ""f9"", ""f11"", ""f66"", ""f68"", ""f69"", ""f73"", ""f87"", ""f89"", ""f90"", ""f92"", ""f93"", ""f94"", ""f95"", ""f102"", ""f103"", ""f104"", ""f105"", ""f109""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+E334,Tell es-Sultan,C3t,UNKNOWN,UNKNOWN,UNKNOWN,[],[],[],NO_JOINT_POSITIVE,[],[],UNKNOWN
+E357,Naḥal Mikhmas,C1,MATCH,MATCH,MATCH,"[""f4""]","[""f4""]",[],CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S2490|pool|open-basin-group""]",UNKNOWN
+E357,Naḥal Mikhmas,C2,MATCH,MATCH,MATCH,"[""f6"", ""f7""]",[],"[""f6"", ""f7"", ""f9"", ""f10"", ""f16"", ""f19"", ""f20"", ""f22"", ""f29"", ""f30"", ""f32"", ""f33"", ""f34"", ""f35"", ""f37""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+E357,Naḥal Mikhmas,C3s,MATCH,UNKNOWN,UNKNOWN,"[""f8""]",[],[],NO_JOINT_POSITIVE,[],[],UNKNOWN
+S2547,-,C1,MATCH,,MATCH,"[""f2"", ""f28""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2594,-,C2,MATCH,MATCH,MATCH,"[""f4"", ""f5""]",[],"[""f5"", ""f8"", ""f19"", ""f25"", ""f26""]",UNKNOWN_PACKET_GEOMETRY,[],[],UNKNOWN
+S2594,-,C3s,MATCH,MATCH,MATCH,"[""f2""]","[""f2""]","[""f1"", ""f4"", ""f6"", ""f21"", ""f27""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S2565|grave|burial-group""]",UNKNOWN
+S2626,Ras Shiḥ,C3s,MATCH,,MATCH,"[""f4"", ""f9"", ""f10""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2653,Wadi Fara,C3s,MATCH,,MATCH,"[""f2""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S2811,'En Hogla,C2,MATCH,,MATCH,"[""f7""]",[],[],SINGLE_CODER,[],[],UNKNOWN
+S3072,-,C2,MATCH,MATCH,MATCH,"[""f3"", ""f6"", ""f8"", ""f11""]","[""f9"", ""f10"", ""f11""]","[""f4"", ""f5"", ""f13"", ""f14"", ""f15"", ""f17"", ""f18"", ""f19"", ""f23"", ""f24"", ""f25"", ""f28"", ""f32"", ""f33"", ""f34"", ""f35"", ""f36"", ""f37"", ""f38"", ""f39"", ""f40"", ""f41"", ""f46"", ""f47"", ""f48"", ""f49"", ""f50"", ""f52"", ""f53"", ""f54"", ""f55"", ""f56"", ""f57"", ""f58"", ""f60"", ""f62"", ""f64"", ""f65"", ""f66"", ""f67"", ""f68"", ""f73"", ""f74"", ""f79"", ""f80"", ""f82""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S3001|pit|cistern-group""]",UNKNOWN
+S3072,-,C3s,MATCH,MATCH,MATCH,"[""f4"", ""f7"", ""f9"", ""f12""]","[""f12""]","[""f6"", ""f16"", ""f20"", ""f29"", ""f42"", ""f43"", ""f51"", ""f59"", ""f61"", ""f63"", ""f69""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S3001|grave|burial-group""]",UNKNOWN
+S3134,-,C2,MATCH,MATCH,MATCH,"[""f8"", ""f9""]","[""f5""]","[""f1"", ""f3"", ""f7"", ""f10"", ""f14"", ""f18"", ""f20"", ""f21"", ""f22"", ""f23"", ""f25"", ""f26"", ""f27"", ""f28"", ""f31"", ""f32"", ""f33"", ""f34"", ""f36""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S3036|pit|cistern-group""]",UNKNOWN
+S3134,-,C3s,UNKNOWN,MATCH,UNKNOWN,[],"[""f6""]","[""f11"", ""f15"", ""f19"", ""f35"", ""f37"", ""f38""]",NO_JOINT_POSITIVE,[],[],UNKNOWN
+S3769,Wadi Abu Hindi,C2,MATCH,MATCH,MATCH,"[""f1""]","[""f1""]","[""f2""]",CITATION_CLASS_COMPATIBLE_IDENTITY_UNRESOLVED,[],"[""WBADB:S3612|pit|cistern-group""]",UNKNOWN

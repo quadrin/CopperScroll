@@ -1,0 +1,249 @@
+{
+  "schema": "copper-scroll-feature-recovery-pilot-v1",
+  "reviewer_input_sha256": "5023b60674330722c4d971586fa4fe3d732fe595e439dcfeffceddebad0d5bea",
+  "results": [
+    {
+      "case_code": "R001",
+      "case_kind": "source_identity",
+      "decision": "unique_documentary_match",
+      "selected_model_id": "migdal_1",
+      "surviving_model_ids": [
+        "migdal_1"
+      ],
+      "documentary_identity_recovery": true,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy.",
+      "forecast_agreement": [
+        {
+          "field": "sump_corner",
+          "reference": "southwest",
+          "agreement": true,
+          "evidence_class": "same_report_exposed_expectation",
+          "independent_confirmation": false
+        }
+      ]
+    },
+    {
+      "case_code": "R002",
+      "case_kind": "source_identity",
+      "decision": "unique_documentary_match",
+      "selected_model_id": "migdal_3",
+      "surviving_model_ids": [
+        "migdal_3"
+      ],
+      "documentary_identity_recovery": true,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy.",
+      "forecast_agreement": [
+        {
+          "field": "floor_vat_perforations",
+          "reference": 2,
+          "agreement": true,
+          "evidence_class": "same_report_exposed_expectation",
+          "independent_confirmation": false
+        }
+      ]
+    },
+    {
+      "case_code": "R003",
+      "case_kind": "source_identity",
+      "decision": "unique_documentary_match",
+      "selected_model_id": "migdal_5",
+      "surviving_model_ids": [
+        "migdal_5"
+      ],
+      "documentary_identity_recovery": true,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy.",
+      "forecast_agreement": [
+        {
+          "field": "sump_corner",
+          "reference": "north",
+          "agreement": true,
+          "evidence_class": "same_report_exposed_expectation",
+          "independent_confirmation": false
+        }
+      ]
+    },
+    {
+      "case_code": "R004",
+      "case_kind": "source_identity",
+      "decision": "unique_documentary_match",
+      "selected_model_id": "etri_z1",
+      "surviving_model_ids": [
+        "etri_z1"
+      ],
+      "documentary_identity_recovery": true,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy.",
+      "forecast_agreement": [
+        {
+          "field": "repaired_karstic_floor_fissure",
+          "reference": true,
+          "agreement": true,
+          "evidence_class": "same_report_exposed_expectation",
+          "independent_confirmation": false
+        }
+      ]
+    },
+    {
+      "case_code": "R005",
+      "case_kind": "source_identity",
+      "decision": "unique_documentary_match",
+      "selected_model_id": "dagesh_press",
+      "surviving_model_ids": [
+        "dagesh_press"
+      ],
+      "documentary_identity_recovery": true,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy.",
+      "forecast_agreement": [
+        {
+          "field": "settling_channel_wall",
+          "reference": "northwest",
+          "agreement": true,
+          "evidence_class": "same_report_exposed_expectation",
+          "independent_confirmation": false
+        }
+      ]
+    },
+    {
+      "case_code": "R006",
+      "case_kind": "source_identity",
+      "decision": "unique_documentary_match",
+      "selected_model_id": "migdal_19",
+      "surviving_model_ids": [
+        "migdal_19"
+      ],
+      "documentary_identity_recovery": true,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy.",
+      "forecast_agreement": [
+        {
+          "field": "channel_direction",
+          "reference": "north",
+          "agreement": true,
+          "evidence_class": "same_report_exposed_expectation",
+          "independent_confirmation": false
+        }
+      ]
+    },
+    {
+      "case_code": "R007",
+      "case_kind": "ambiguous",
+      "decision": "insufficient_evidence",
+      "selected_model_id": null,
+      "surviving_model_ids": [
+        "migdal_1",
+        "migdal_4"
+      ],
+      "documentary_identity_recovery": null,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Both source records satisfy the retained descriptor; the missing descriptor cannot identify one.",
+      "forecast_agreement": []
+    },
+    {
+      "case_code": "R008",
+      "case_kind": "ambiguous",
+      "decision": "insufficient_evidence",
+      "selected_model_id": null,
+      "surviving_model_ids": [
+        "migdal_3",
+        "migdal_5"
+      ],
+      "documentary_identity_recovery": null,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Both source records satisfy the retained descriptors.",
+      "forecast_agreement": []
+    },
+    {
+      "case_code": "R009",
+      "case_kind": "crafted_null",
+      "decision": "no_compatible_candidate",
+      "selected_model_id": null,
+      "surviving_model_ids": [],
+      "documentary_identity_recovery": null,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "The southwest descriptor is deliberately fabricated as a null task. All six observed directions contradict it. No landscape-wide absence claim follows.",
+      "forecast_agreement": []
+    },
+    {
+      "case_code": "R010",
+      "case_kind": "unscorable_ancient_truth",
+      "decision": "insufficient_evidence",
+      "selected_model_id": null,
+      "surviving_model_ids": [
+        "migdal_cave7"
+      ],
+      "documentary_identity_recovery": null,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Report did not find the entrance. North is an excavator inference; observed ancient entrance truth is absent.",
+      "forecast_agreement": []
+    },
+    {
+      "case_code": "R011",
+      "case_kind": "unscorable_ancient_truth",
+      "decision": "insufficient_evidence",
+      "selected_model_id": null,
+      "surviving_model_ids": [
+        "migdal_cave6",
+        "migdal_cave7"
+      ],
+      "documentary_identity_recovery": null,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Cave 6 use is undated; Cave 7 pottery has a Middle Roman attribution without a first-century occupation control. The required phase is unscorable.",
+      "forecast_agreement": []
+    },
+    {
+      "case_code": "R012",
+      "case_kind": "unscorable_ancient_truth",
+      "decision": "insufficient_evidence",
+      "selected_model_id": null,
+      "surviving_model_ids": [
+        "etri_z_early",
+        "etri_z_late"
+      ],
+      "documentary_identity_recovery": null,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "Both phase assignments are published reconstructions. Observed contemporaneity is unavailable; feature sharing across phase models cannot establish it.",
+      "forecast_agreement": []
+    },
+    {
+      "case_code": "R013",
+      "case_kind": "missing_competitor_observation",
+      "decision": "insufficient_evidence",
+      "selected_model_id": null,
+      "surviving_model_ids": [
+        "migdal_1",
+        "migdal_4"
+      ],
+      "documentary_identity_recovery": null,
+      "decision_and_survivor_check": true,
+      "field_accuracy_scorable": false,
+      "truth_limit": "An omitted shape remains unknown. A complete match gains no uniqueness while a competitor has no recorded contradiction.",
+      "forecast_agreement": []
+    }
+  ],
+  "summary": {
+    "documentary_identity_cases": 6,
+    "documentary_identities_recovered": 6,
+    "decision_survivor_checks": 13,
+    "decision_survivor_checks_passed": 13,
+    "unscorable_ancient_truth_cases": 3,
+    "independent_field_accuracy": null,
+    "unseen_archaeological_confirmation": null
+  },
+  "limits": "Convenience tasks authored after source inspection; target descriptors and model facts derive from the same reports. Recovery checks documentary consistency. Null and ambiguity cases audit stopping behavior. Ancient phase, observed entrance and field accuracy require independent truth."
+}

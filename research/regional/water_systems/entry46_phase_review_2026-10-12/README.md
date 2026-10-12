@@ -37,3 +37,7 @@ Run `python3 -I -B research/regional/water_systems/entry46_phase_review_2026-10-
 Next: original Sion 2002 pp. 115–122 or the 1999 locus/section records for Rogem; stratified L5 access/W11/W1 contacts for Armon; an original bath-phase dating context at Ramat. A confirmatory identification further requires equally inspected controls and a registered, demonstrably unseen observation. This review's selected sources and alternatives are exposed exploratory evidence.
 
 **Obtained** — a reproducible pool-reading function/phase screen and applied bath branches, with original-stair failures separated from unknown alternative access.
+
+## Pit/numerical and native-position extension
+
+The [entry46 alternatives](../../../text/entry46_alternatives_2026-10-12/README.md) apply deep-pit, horizontal distance, vertical depth and ten-small-pits readings under equal candidate/control rules. The owner-supplied Ramat Rahel and Naḥal En Kerem originals supply exact feature dimensions and an incomplete installation census. Report-wide map-reference rectangles supersede the prior metre-precise point convention for affected source descriptions in the new current-position screen; historical outputs remain available. These dimensions and area positions do not provide a dated left-side target or deposit datum.

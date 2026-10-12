@@ -12,3 +12,13 @@ The owner gave explicit instruction, then confirmed sending after reviewing the 
 - Message 1 adds to the existing Museum enquiry instead of opening a new thread. This follows the rule in `wave1/T10_outreach/drafts/T11_manchester_1950s_photographs.md` §2.
 - Message 3 follows the IAA draft in `wave1/T09_T12_T19_landscape_field/drafts/`. That draft's ethics note still applies: the records come from surveys in the West Bank (Area C). The project owner was told this before sending.
 - The Jordan imaging proposal (tasks 14–16) was **not** sent. It needs a Jordanian partner first.
+
+## Archive replies — 12 October 2026
+
+Primary correspondence was read in the existing owner mailbox; no image attachments were opened and no reply was sent.
+
+Manchester University Library archivist James Peters reports that TPA/1/132 contains general methods/schedules material, without Wright Baker’s Copper Scroll research notes or photographs. Faculty/departmental archives supply no relevant records in his assessment; the possible loss of Wright Baker’s papers is his inference, not verified destruction. He continues checking Allegro’s involvement. This limits the TPA/1/132 route; Museum/Taylor photograph requests remain separate.
+
+CBRL Archives and Repository Manager Alice Lubbock considers PEF the likelier custodian of the requested Garstang photographs/negatives. Her preliminary PDF-list check found no pertinent early Jericho item; it is not a complete holdings search. She copied the Kenyon and Amman regional archivists for further confirmation. Shared historical archive ownership and dispersed custody do not establish an exact negative’s location. A terms document was linked but not read. No archive photo, negative register or pre-camp target-strip observation arrived.
+
+The arrival manifest check passed before this retrieval. These are custody/access responses, without XII10 frame data or a located ancient mouth; reserved originals retain their prescribed intake, masking and registration gates.

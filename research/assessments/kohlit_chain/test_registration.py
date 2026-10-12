@@ -132,9 +132,18 @@ class VerdictTests(unittest.TestCase):
         self.assertEqual("indeterminate", RG.classify_distance(7.0, 10.0, 2.5))
         self.assertEqual("outside", RG.classify_distance(16.0, 10.0, 2.5))
 
-    def test_same_document_pair_uses_picking_error(self):
-        self.assertAlmostEqual(math.hypot(0.5, 0.5), RG.pair_error(9.0, 9.0, same_document=True, pick_error_m=0.5))
+    def test_same_document_requires_complete_pair_uncertainty(self):
+        with self.assertRaises(ValueError):
+            RG.pair_error(9.0, 9.0, same_document=True, pick_error_m=0.5)
+        self.assertEqual(1.25, RG.pair_error(9.0, 9.0, same_document=True, pair_local_error_m=1.25))
         self.assertAlmostEqual(math.hypot(3.0, 4.0), RG.pair_error(3.0, 4.0))
+
+    def test_pair_uncertainty_rejects_invalid_or_double_counted_components(self):
+        for value in [-1, float('nan'), float('inf'), True]:
+            with self.assertRaises(ValueError):
+                RG.pair_error(9, 9, same_document=True, pair_local_error_m=value)
+        with self.assertRaises(ValueError):
+            RG.pair_error(9, 9, same_document=True, pick_error_m=.5, pair_local_error_m=1)
 
     def test_sector_verdict_depends_on_anchor_error(self):
         a = [0.0, 0.0]

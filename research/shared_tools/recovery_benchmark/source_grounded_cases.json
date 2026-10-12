@@ -1,0 +1,891 @@
+{
+  "schema": "copper-scroll-feature-recovery-source-cases-v1",
+  "created_utc": "2026-10-09",
+  "created_los_angeles": "2026-10-08",
+  "source_repo_base": "897733283606988581155a3c1df0cd235cb7bea9",
+  "exposure": {
+    "analyst_saw_reports_before_case_selection": true,
+    "analyst_saw_truth_before_redaction": true,
+    "candidate_and_reference_source_independence": false,
+    "unused_original_archaeological_observation": false,
+    "program_forecast_exclusion_only": true,
+    "selection": "Convenience alternatives from three accessible primary reports, deliberately including ambiguity and missing observations. No regional sample or accuracy denominator."
+  },
+  "sources": [
+    {
+      "id": "ha128_dagesh",
+      "title": "Yoram Haimi, Horbat Dagesh, HA-ESI 128 (2016)",
+      "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25151",
+      "report_date": "2016-12-26",
+      "campaign": "IAA A-6891, June 2013",
+      "inspected": "English report prose and caption list, paragraphs describing L1-L3; no new raster inspection",
+      "locators": "Winepress paragraph, Figures 2-6",
+      "printed_page": null,
+      "pdf_page": null,
+      "reuse": "Factual selections and original paraphrases; IAA copyrighted text/images omitted."
+    },
+    {
+      "id": "ha135_migdal",
+      "title": "Abdallah Mokary, Migdal Ha-'Emeq (A), HA-ESI 135 (2023)",
+      "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=26364",
+      "report_date": "2023-08-17",
+      "campaign": "IAA A-8469, March-April 2019",
+      "inspected": "English report prose and caption list; no new raster inspection",
+      "locators": "Area A, Winepresses 1, 3-5 and Caves 6-7; Area B, Winepresses 19-20; Figures 3, 5-8, 10, 20-21",
+      "printed_page": null,
+      "pdf_page": null,
+      "reuse": "Factual selections and original paraphrases; IAA copyrighted text/images omitted."
+    },
+    {
+      "id": "ha122_etri",
+      "title": "Boaz Zissu, Amir Ganor and Hagit Neugeborn, Horbat 'Etri, HA-ESI 122 (2010)",
+      "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=1572&mag_id=117",
+      "report_date": "2010-12-08",
+      "campaign": "IAA A-5038, A-5377, 2007-2008",
+      "inspected": "English report prose and caption list; no new raster inspection",
+      "locators": "Winepress Z, Z1 and Z2 paragraphs, Figures 3-9",
+      "printed_page": null,
+      "pdf_page": null,
+      "reuse": "Factual selections and original paraphrases; IAA copyrighted text/images omitted.",
+      "access_note": "Base URL without mag_id failed in search-service reader; exact alternate URL succeeded."
+    }
+  ],
+  "models": [
+    {
+      "id": "dagesh_press",
+      "source_label": "Winepress L1-L3",
+      "source_id": "ha128_dagesh",
+      "locator": "Winepress paragraph; Figures 2-6",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "reported_floor_long_m": {
+          "value": 2.8,
+          "basis": "published_description"
+        },
+        "settling_relative_floor": {
+          "value": "northwest",
+          "basis": "published_description"
+        },
+        "settling_channel_wall": {
+          "value": "northwest",
+          "basis": "published_description"
+        },
+        "vat_opening_wall": {
+          "value": "southeast",
+          "basis": "published_description"
+        },
+        "vat_opening_destination": {
+          "value": "cave",
+          "basis": "excavator_inference"
+        }
+      }
+    },
+    {
+      "id": "migdal_1",
+      "source_label": "Winepress 1, floor L32, vat L35",
+      "source_id": "ha135_migdal",
+      "locator": "Area A, Winepress 1; Figure 3",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "floor_shape": {
+          "value": "square",
+          "basis": "published_description"
+        },
+        "floor_slope": {
+          "value": "northwest",
+          "basis": "published_description"
+        },
+        "reported_floor_long_m": {
+          "value": 4.0,
+          "basis": "published_description"
+        },
+        "vat_steps_side": {
+          "value": "north",
+          "basis": "published_description"
+        },
+        "vat_steps_count": {
+          "value": 3,
+          "basis": "published_description"
+        },
+        "sump_corner": {
+          "value": "southwest",
+          "basis": "published_description"
+        }
+      }
+    },
+    {
+      "id": "migdal_3",
+      "source_label": "Winepress 3, floor L19, vat L28",
+      "source_id": "ha135_migdal",
+      "locator": "Area A, Winepress 3; Figure 5",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "floor_shape": {
+          "value": "trapezoid",
+          "basis": "published_description"
+        },
+        "floor_slope": {
+          "value": "northeast",
+          "basis": "published_description"
+        },
+        "floor_vat_perforations": {
+          "value": 2,
+          "basis": "published_description"
+        }
+      }
+    },
+    {
+      "id": "migdal_4",
+      "source_label": "Winepress 4, floor L49, vat L50",
+      "source_id": "ha135_migdal",
+      "locator": "Area A, Winepress 4; Figure 6",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "floor_shape": {
+          "value": null,
+          "basis": "published_description"
+        },
+        "floor_slope": {
+          "value": "northwest",
+          "basis": "published_description"
+        },
+        "reported_floor_long_m": {
+          "value": 1.5,
+          "basis": "published_description"
+        }
+      }
+    },
+    {
+      "id": "migdal_5",
+      "source_label": "Winepress 5, floor L39, vat L40",
+      "source_id": "ha135_migdal",
+      "locator": "Area A, Winepress 5; Figure 7",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "floor_shape": {
+          "value": "trapezoid",
+          "basis": "published_description"
+        },
+        "floor_slope": {
+          "value": "southeast",
+          "basis": "published_description"
+        },
+        "floor_vat_perforations": {
+          "value": 2,
+          "basis": "published_description"
+        },
+        "sump_corner": {
+          "value": "north",
+          "basis": "published_description"
+        }
+      }
+    },
+    {
+      "id": "migdal_19",
+      "source_label": "Winepress 19, floor L213",
+      "source_id": "ha135_migdal",
+      "locator": "Area B, Winepress 19; Figures 20-21",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "floor_slope": {
+          "value": "west",
+          "basis": "published_description"
+        },
+        "channel_direction": {
+          "value": "north",
+          "basis": "published_description"
+        },
+        "later_vat_enlargement": {
+          "value": true,
+          "basis": "published_description"
+        }
+      }
+    },
+    {
+      "id": "migdal_20",
+      "source_label": "Winepress 20, floor L216",
+      "source_id": "ha135_migdal",
+      "locator": "Area B, Winepress 20; Figures 20-21",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "floor_slope": {
+          "value": "north",
+          "basis": "published_description"
+        },
+        "channel_direction": {
+          "value": null,
+          "basis": "published_description"
+        }
+      }
+    },
+    {
+      "id": "migdal_cave6",
+      "source_label": "Cave 6, floor L61",
+      "source_id": "ha135_migdal",
+      "locator": "Area A, Cave 6; Figure 8",
+      "facts": {
+        "kind": {
+          "value": "cave",
+          "basis": "published_description"
+        },
+        "outline": {
+          "value": "oval",
+          "basis": "published_description"
+        },
+        "entrance_direction": {
+          "value": null,
+          "basis": "published_description"
+        },
+        "first_century_use": {
+          "value": null,
+          "basis": "published_description"
+        }
+      }
+    },
+    {
+      "id": "migdal_cave7",
+      "source_label": "Cave 7, floor deposit L168",
+      "source_id": "ha135_migdal",
+      "locator": "Area A, Cave 7; Figure 10",
+      "facts": {
+        "kind": {
+          "value": "cave",
+          "basis": "published_description"
+        },
+        "outline": {
+          "value": "irregular",
+          "basis": "published_description"
+        },
+        "entrance_direction": {
+          "value": "north",
+          "basis": "excavator_inference"
+        },
+        "first_century_use": {
+          "value": null,
+          "basis": "published_description"
+        }
+      }
+    },
+    {
+      "id": "etri_z_early",
+      "source_label": "Winepress Z, early interpreted phase",
+      "source_id": "ha122_etri",
+      "locator": "Winepress Z phase paragraphs; Figures 3-5",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "reported_floor_long_m": {
+          "value": 5.0,
+          "basis": "published_description"
+        },
+        "circular_screw_depression": {
+          "value": null,
+          "basis": "published_description"
+        },
+        "settling_pit_active": {
+          "value": true,
+          "basis": "published_phase_reconstruction"
+        }
+      }
+    },
+    {
+      "id": "etri_z_late",
+      "source_label": "Winepress Z, late interpreted phase",
+      "source_id": "ha122_etri",
+      "locator": "Winepress Z phase paragraphs; Figures 3-5",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "reported_floor_long_m": {
+          "value": 5.0,
+          "basis": "published_description"
+        },
+        "circular_screw_depression": {
+          "value": true,
+          "basis": "published_phase_reconstruction"
+        },
+        "settling_pit_active": {
+          "value": false,
+          "basis": "published_phase_reconstruction"
+        }
+      }
+    },
+    {
+      "id": "etri_z1",
+      "source_label": "Winepress Z1",
+      "source_id": "ha122_etri",
+      "locator": "Winepress Z1 paragraph; Figures 6-7",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "reported_floor_long_m": {
+          "value": 2.2,
+          "basis": "published_description"
+        },
+        "repaired_karstic_floor_fissure": {
+          "value": true,
+          "basis": "published_description"
+        }
+      }
+    },
+    {
+      "id": "etri_z2",
+      "source_label": "Winepress Z2",
+      "source_id": "ha122_etri",
+      "locator": "Winepress Z2 paragraph; Figures 8-9",
+      "facts": {
+        "kind": {
+          "value": "winepress",
+          "basis": "published_description"
+        },
+        "reported_floor_long_m": {
+          "value": 4.8,
+          "basis": "published_description"
+        },
+        "settling_channel_wall": {
+          "value": "northeast",
+          "basis": "published_description"
+        },
+        "secondary_channel_terracotta_pipe": {
+          "value": true,
+          "basis": "published_description"
+        }
+      }
+    }
+  ],
+  "cases": [
+    {
+      "id": "square_nw",
+      "kind": "source_identity",
+      "redacted_description": "A square treading floor slopes northwest. Select a compatible installation and retain its unused sump expectation.",
+      "model_ids": [
+        "migdal_1",
+        "migdal_3",
+        "migdal_5"
+      ],
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "square",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_slope",
+          "equals": "northwest",
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [
+        "sump_corner"
+      ],
+      "forecast_references": [
+        {
+          "field": "sump_corner",
+          "value": "southwest"
+        }
+      ],
+      "expected": {
+        "decision": "unique_documentary_match",
+        "survivor_ids": [
+          "migdal_1"
+        ]
+      },
+      "truth": {
+        "target_id": "migdal_1",
+        "validation": "published_record_checked",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy."
+      }
+    },
+    {
+      "id": "trapezoid_ne",
+      "kind": "source_identity",
+      "redacted_description": "A trapezoid treading floor slopes northeast. Retain the separate connection-count expectation.",
+      "model_ids": [
+        "migdal_1",
+        "migdal_3",
+        "migdal_5"
+      ],
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "trapezoid",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_slope",
+          "equals": "northeast",
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [
+        "floor_vat_perforations"
+      ],
+      "forecast_references": [
+        {
+          "field": "floor_vat_perforations",
+          "value": 2
+        }
+      ],
+      "expected": {
+        "decision": "unique_documentary_match",
+        "survivor_ids": [
+          "migdal_3"
+        ]
+      },
+      "truth": {
+        "target_id": "migdal_3",
+        "validation": "published_record_checked",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy."
+      }
+    },
+    {
+      "id": "trapezoid_se",
+      "kind": "source_identity",
+      "redacted_description": "A trapezoid treading floor slopes southeast. Retain its unused sump expectation.",
+      "model_ids": [
+        "migdal_1",
+        "migdal_3",
+        "migdal_5"
+      ],
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "trapezoid",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_slope",
+          "equals": "southeast",
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [
+        "sump_corner"
+      ],
+      "forecast_references": [
+        {
+          "field": "sump_corner",
+          "value": "north"
+        }
+      ],
+      "expected": {
+        "decision": "unique_documentary_match",
+        "survivor_ids": [
+          "migdal_5"
+        ]
+      },
+      "truth": {
+        "target_id": "migdal_5",
+        "validation": "published_record_checked",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy."
+      }
+    },
+    {
+      "id": "small_floor",
+      "kind": "source_identity",
+      "redacted_description": "The report gives the longer floor dimension as approximately 2.2 m. Use the printed-value window only.",
+      "model_ids": [
+        "etri_z_early",
+        "etri_z_late",
+        "etri_z1",
+        "etri_z2"
+      ],
+      "predicates": [
+        {
+          "field": "reported_floor_long_m",
+          "range": [
+            2.15,
+            2.25
+          ],
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [
+        "repaired_karstic_floor_fissure"
+      ],
+      "forecast_references": [
+        {
+          "field": "repaired_karstic_floor_fissure",
+          "value": true
+        }
+      ],
+      "expected": {
+        "decision": "unique_documentary_match",
+        "survivor_ids": [
+          "etri_z1"
+        ]
+      },
+      "truth": {
+        "target_id": "etri_z1",
+        "validation": "published_record_checked",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy."
+      }
+    },
+    {
+      "id": "middle_floor",
+      "kind": "source_identity",
+      "redacted_description": "The report gives the longer floor dimension as 2.8 m. Use the printed-value window only.",
+      "model_ids": [
+        "dagesh_press",
+        "etri_z_early",
+        "etri_z_late",
+        "etri_z1",
+        "etri_z2"
+      ],
+      "predicates": [
+        {
+          "field": "reported_floor_long_m",
+          "range": [
+            2.75,
+            2.85
+          ],
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [
+        "settling_channel_wall"
+      ],
+      "forecast_references": [
+        {
+          "field": "settling_channel_wall",
+          "value": "northwest"
+        }
+      ],
+      "expected": {
+        "decision": "unique_documentary_match",
+        "survivor_ids": [
+          "dagesh_press"
+        ]
+      },
+      "truth": {
+        "target_id": "dagesh_press",
+        "validation": "published_record_checked",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy."
+      }
+    },
+    {
+      "id": "western_floor",
+      "kind": "source_identity",
+      "redacted_description": "A shallow floor drains west. Retain the separate channel-direction expectation.",
+      "model_ids": [
+        "migdal_19",
+        "migdal_20"
+      ],
+      "predicates": [
+        {
+          "field": "floor_slope",
+          "equals": "west",
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [
+        "channel_direction"
+      ],
+      "forecast_references": [
+        {
+          "field": "channel_direction",
+          "value": "north"
+        }
+      ],
+      "expected": {
+        "decision": "unique_documentary_match",
+        "survivor_ids": [
+          "migdal_19"
+        ]
+      },
+      "truth": {
+        "target_id": "migdal_19",
+        "validation": "published_record_checked",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Official excavation report explicitly names this documented feature. Source values remain exposed and do not certify field accuracy."
+      }
+    },
+    {
+      "id": "shared_nw",
+      "kind": "ambiguous",
+      "redacted_description": "Only the northwest slope survives in this reduced description.",
+      "model_ids": [
+        "migdal_1",
+        "migdal_4"
+      ],
+      "predicates": [
+        {
+          "field": "floor_slope",
+          "equals": "northwest",
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [],
+      "forecast_references": [],
+      "expected": {
+        "decision": "insufficient_evidence",
+        "survivor_ids": [
+          "migdal_1",
+          "migdal_4"
+        ]
+      },
+      "truth": {
+        "target_id": null,
+        "validation": "unscorable_identity",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Both source records satisfy the retained descriptor; the missing descriptor cannot identify one."
+      }
+    },
+    {
+      "id": "shared_perforations",
+      "kind": "ambiguous",
+      "redacted_description": "The trapezoid floor connects to its vat through two perforations; direction is omitted.",
+      "model_ids": [
+        "migdal_3",
+        "migdal_5"
+      ],
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "trapezoid",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_vat_perforations",
+          "equals": 2,
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [],
+      "forecast_references": [],
+      "expected": {
+        "decision": "insufficient_evidence",
+        "survivor_ids": [
+          "migdal_3",
+          "migdal_5"
+        ]
+      },
+      "truth": {
+        "target_id": null,
+        "validation": "unscorable_identity",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Both source records satisfy the retained descriptors."
+      }
+    },
+    {
+      "id": "absent_southwest",
+      "kind": "crafted_null",
+      "redacted_description": "Crafted null control: require a southwest floor slope within these six fully reported directions.",
+      "model_ids": [
+        "migdal_1",
+        "migdal_3",
+        "migdal_4",
+        "migdal_5",
+        "migdal_19",
+        "migdal_20"
+      ],
+      "predicates": [
+        {
+          "field": "floor_slope",
+          "equals": "southwest",
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [],
+      "forecast_references": [],
+      "expected": {
+        "decision": "no_compatible_candidate",
+        "survivor_ids": []
+      },
+      "truth": {
+        "target_id": null,
+        "validation": "unscorable_identity",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "The southwest descriptor is deliberately fabricated as a null task. All six observed directions contradict it. No landscape-wide absence claim follows."
+      }
+    },
+    {
+      "id": "lost_entrance",
+      "kind": "unscorable_ancient_truth",
+      "redacted_description": "Require an observed northern entrance on the irregular cave.",
+      "model_ids": [
+        "migdal_cave6",
+        "migdal_cave7"
+      ],
+      "predicates": [
+        {
+          "field": "outline",
+          "equals": "irregular",
+          "requires_observation": true
+        },
+        {
+          "field": "entrance_direction",
+          "equals": "north",
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [],
+      "forecast_references": [],
+      "expected": {
+        "decision": "insufficient_evidence",
+        "survivor_ids": [
+          "migdal_cave7"
+        ]
+      },
+      "truth": {
+        "target_id": null,
+        "validation": "unscorable_identity",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Report did not find the entrance. North is an excavator inference; observed ancient entrance truth is absent."
+      }
+    },
+    {
+      "id": "first_century_cave",
+      "kind": "unscorable_ancient_truth",
+      "redacted_description": "Require established first-century use of either cave.",
+      "model_ids": [
+        "migdal_cave6",
+        "migdal_cave7"
+      ],
+      "predicates": [
+        {
+          "field": "kind",
+          "equals": "cave",
+          "requires_observation": true
+        },
+        {
+          "field": "first_century_use",
+          "equals": true,
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [],
+      "forecast_references": [],
+      "expected": {
+        "decision": "insufficient_evidence",
+        "survivor_ids": [
+          "migdal_cave6",
+          "migdal_cave7"
+        ]
+      },
+      "truth": {
+        "target_id": null,
+        "validation": "unscorable_identity",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Cave 6 use is undated; Cave 7 pottery has a Middle Roman attribution without a first-century occupation control. The required phase is unscorable."
+      }
+    },
+    {
+      "id": "phase_join",
+      "kind": "unscorable_ancient_truth",
+      "redacted_description": "Require a circular screw depression and an active settling pit in the same observed operational phase.",
+      "model_ids": [
+        "etri_z_early",
+        "etri_z_late"
+      ],
+      "predicates": [
+        {
+          "field": "circular_screw_depression",
+          "equals": true,
+          "requires_observation": true
+        },
+        {
+          "field": "settling_pit_active",
+          "equals": true,
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [],
+      "forecast_references": [],
+      "expected": {
+        "decision": "insufficient_evidence",
+        "survivor_ids": [
+          "etri_z_early",
+          "etri_z_late"
+        ]
+      },
+      "truth": {
+        "target_id": null,
+        "validation": "unscorable_identity",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "Both phase assignments are published reconstructions. Observed contemporaneity is unavailable; feature sharing across phase models cannot establish it."
+      }
+    },
+    {
+      "id": "missing_shape_competitor",
+      "kind": "missing_competitor_observation",
+      "redacted_description": "A square floor slopes northwest. One competing record reports the slope but omits its shape.",
+      "model_ids": [
+        "migdal_1",
+        "migdal_4"
+      ],
+      "predicates": [
+        {
+          "field": "floor_shape",
+          "equals": "square",
+          "requires_observation": true
+        },
+        {
+          "field": "floor_slope",
+          "equals": "northwest",
+          "requires_observation": true
+        }
+      ],
+      "forecast_fields": [],
+      "forecast_references": [],
+      "expected": {
+        "decision": "insufficient_evidence",
+        "survivor_ids": [
+          "migdal_1",
+          "migdal_4"
+        ]
+      },
+      "truth": {
+        "target_id": null,
+        "validation": "unscorable_identity",
+        "independent_of_copper_scroll": true,
+        "independent_of_matching_source": false,
+        "limit": "An omitted shape remains unknown. A complete match gains no uniqueness while a competitor has no recorded contradiction."
+      }
+    }
+  ]
+}

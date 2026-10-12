@@ -1,5 +1,7 @@
 # Decision queue
 
+The [separating-observation planner](separation/RESULTS.md) extends this queue with conservative prediction sets and minimum logical observation sets. Its results distinguish available observations from pending acquisitions; overlapping and unknown predictions never become discrimination or a numerical success probability.
+
 `plans.json` specifies seven exact record dependencies and four possible outcomes for each. The evaluator imports all six tracks from `research/measurements/queue.json` unchanged, with the source hash and original dates. Historical execution states and counters remain historical.
 
 The atlas can select `data.tasks[].id`, then an item in `outcomes[]`. `preview()` returns **Possible outcome — not observed**, the conditional consequence and the unchanged current evidence. It never records the selected outcome, sends a request or reopens a closed test. The generated `results` use only each task's recorded evidence status; all seven currently remain unknown.

@@ -7,6 +7,8 @@ import json
 import math
 import re
 import sqlite3
+import subprocess
+import tempfile
 import unicodedata
 from pathlib import Path
 from urllib.parse import quote
@@ -46,6 +48,18 @@ def dump(value, path):
 
 def source_link(path, line=None, ref=BASE):
     return URL + ref + '/' + quote(str(path), safe='/') + (f'#L{line}' if line else '')
+
+
+def repository_ref(root=ROOT):
+    """Pin new source links to the checked-out commit, with a non-Git fallback."""
+    try:
+        ref = subprocess.run(['git', '-C', str(root), 'rev-parse', 'HEAD'],
+                             check=True, capture_output=True, text=True, timeout=2).stdout.strip()
+        if re.fullmatch('[0-9a-f]{40}', ref):
+            return ref
+    except (OSError, subprocess.SubprocessError):
+        pass
+    return BASE
 
 
 def digest(path):
@@ -117,7 +131,7 @@ def locator_record(obj, manifest):
             'rights_as_recorded': obj.get('rights', obj.get('reuse', 'consult source manifest'))}
 
 
-def evidence_records(root=ROOT, ocr=False):
+def evidence_records(root=ROOT, ocr=False, ref=BASE):
     for p in source_paths(root, ocr):
         rel = p.relative_to(root).as_posix()
         content = p.read_text(encoding='utf-8-sig')
@@ -131,15 +145,16 @@ def evidence_records(root=ROOT, ocr=False):
                     obj = {**obj, 'source_title': document_titles[obj['original_pdf']]}
                 loc = locator_record(obj, rel)
                 if loc:
+                    loc['asset_url'] = source_link(loc['asset_path'], ref=ref) if loc['asset_path'] else None
                     body = json.dumps({k: v for k, v in obj.items() if k not in ('direct_image_url',)}, ensure_ascii=False)
                     yield {'id': rel + '#' + pointer, 'kind': 'figure', 'path': rel, 'line': None,
-                           'title': loc['title'], 'body': body, 'locator': loc, 'url': source_link(rel)}
+                           'title': loc['title'], 'body': body, 'locator': loc, 'url': source_link(rel, ref=ref)}
         elif p.suffix == '.csv':
             for n, row in rows_with_lines(p):
                 clean = {k: v for k, v in row.items() if k != 'direct_image_url'}
                 yield {'id': f'{rel}#row{n}', 'kind': 'catalog', 'path': rel, 'line': n,
                        'title': row.get('title') or row.get('constraint') or Path(rel).name,
-                       'body': json.dumps(clean, ensure_ascii=False), 'locator': clean, 'url': source_link(rel, n)}
+                       'body': json.dumps(clean, ensure_ascii=False), 'locator': clean, 'url': source_link(rel, n, ref=ref)}
         else:
             title = Path(rel).stem
             section, start, chunk = title, 1, []
@@ -149,7 +164,7 @@ def evidence_records(root=ROOT, ocr=False):
                         yield {'id': f'{rel}#L{start}', 'kind': 'ocr' if p.suffix == '.txt' else 'note',
                                'path': rel, 'line': start, 'title': section, 'body': '\n'.join(chunk),
                                'locator': {'inspection_as_recorded': 'project note; consult linked original'},
-                               'url': source_link(rel, start)}
+                               'url': source_link(rel, start, ref=ref)}
                     chunk, start = [], n
                     if line.startswith('#'):
                         section = line.lstrip('# ').strip()
@@ -157,23 +172,29 @@ def evidence_records(root=ROOT, ocr=False):
             if chunk:
                 yield {'id': f'{rel}#L{start}', 'kind': 'ocr' if p.suffix == '.txt' else 'note',
                        'path': rel, 'line': start, 'title': section, 'body': '\n'.join(chunk),
-                       'locator': {'inspection_as_recorded': 'project note; consult linked original'}, 'url': source_link(rel, start)}
+                       'locator': {'inspection_as_recorded': 'project note; consult linked original'}, 'url': source_link(rel, start, ref=ref)}
 
 
 def build_index(root=ROOT, destination=CACHE, ocr=False):
     destination.mkdir(parents=True, exist_ok=True)
+    ref = repository_ref(root)
     db = destination / 'evidence.sqlite'
-    with sqlite3.connect(db) as con:
-        con.executescript('DROP TABLE IF EXISTS search; DROP TABLE IF EXISTS records; '
-                          'CREATE TABLE records(id TEXT PRIMARY KEY,kind TEXT,path TEXT,line INTEGER,title TEXT,body TEXT,locator TEXT,url TEXT); '
-                          'CREATE VIRTUAL TABLE search USING fts5(id UNINDEXED,title,body,tokenize="unicode61 remove_diacritics 2");')
-        for item in evidence_records(root, ocr):
-            con.execute('INSERT INTO records VALUES(?,?,?,?,?,?,?,?)',
-                        [item[k] for k in ('id', 'kind', 'path', 'line', 'title', 'body')] + [json.dumps(item['locator'], ensure_ascii=False), item['url']])
-            con.execute('INSERT INTO search VALUES(?,?,?)', (item['id'], search_text(item['title']), search_text(item['body'])))
+    with tempfile.NamedTemporaryFile(dir=destination, prefix='evidence-', suffix='.sqlite', delete=False) as file:
+        staged = Path(file.name)
+    try:
+        with sqlite3.connect(staged) as con:
+            con.executescript('CREATE TABLE records(id TEXT PRIMARY KEY,kind TEXT,path TEXT,line INTEGER,title TEXT,body TEXT,locator TEXT,url TEXT); '
+                              'CREATE VIRTUAL TABLE search USING fts5(id UNINDEXED,title,body,tokenize="unicode61 remove_diacritics 2");')
+            for item in evidence_records(root, ocr, ref):
+                con.execute('INSERT INTO records VALUES(?,?,?,?,?,?,?,?)',
+                            [item[k] for k in ('id', 'kind', 'path', 'line', 'title', 'body')] + [json.dumps(item['locator'], ensure_ascii=False), item['url']])
+                con.execute('INSERT INTO search VALUES(?,?,?)', (item['id'], search_text(item['title']), search_text(item['body'])))
+        staged.replace(db)
+    finally:
+        staged.unlink(missing_ok=True)
     # Hash the exact bytes used, independent of workspace or wall-clock time.
     inputs = {p.relative_to(root).as_posix(): digest(p) for p in source_paths(root, ocr)}
-    dump({'base_commit': BASE, 'ocr_opt_in': ocr, 'inputs': inputs, 'builder_sha256': digest(HERE / 'core.py')}, destination / 'index_inputs.json')
+    dump({'base_commit': ref, 'ocr_opt_in': ocr, 'inputs': inputs, 'builder_sha256': digest(HERE / 'core.py')}, destination / 'index_inputs.json')
 
 
 def check_index(root=ROOT, destination=CACHE):
@@ -331,7 +352,7 @@ def build(root=ROOT, destination=CACHE, ocr=False):
     dump({'builder_sha256': digest(HERE / 'core.py'),
           'datasets': {name: {path: digest(root / path) for path in paths} for name, paths in dependencies.items()}},
          destination / 'adapter_inputs.json')
-    return {'status': 'built', 'base_commit': BASE, 'destination': str(destination)}
+    return {'status': 'built', 'base_commit': repository_ref(root), 'destination': str(destination)}
 
 
 def cached_dataset(name, root=ROOT, destination=CACHE):

@@ -1,0 +1,1183 @@
+{
+  "schema": 1,
+  "evidence_class": "derived_exploratory_resolution_audit",
+  "bounds_are_confidence_intervals": false,
+  "independent_field_reference": false,
+  "pilot": {
+    "schema": 1,
+    "status": "completed",
+    "evidence_class": "published_dimension_pilot",
+    "analyst_answer_exposure": true,
+    "references_used_in_prediction": false,
+    "independent_field_reference_verified": false,
+    "cases": [
+      {
+        "id": "dagesh_l1",
+        "primary": {
+          "id": "axis_a",
+          "pixel_length": 140.46351839534705,
+          "predicted_metres": 2.553882152642674,
+          "digitization_only_interval_metres": [
+            2.394096813953457,
+            2.7257267621763597
+          ],
+          "reference_metres": 2.8,
+          "signed_error_metres": -0.246117847357326,
+          "absolute_error_metres": 0.246117847357326,
+          "absolute_error_percent": 8.7899231199045,
+          "screening_budget_metres": 0.13999999999999999,
+          "screening_flag": "outside_budget"
+        },
+        "diagnostic": {
+          "id": "axis_b",
+          "pixel_length": 129.40247292845683,
+          "predicted_metres": 2.3527722350628513,
+          "digitization_only_interval_metres": [
+            2.200043384709769,
+            2.5170277911029593
+          ],
+          "reference_metres": 2.3,
+          "signed_error_metres": 0.05277223506285145,
+          "absolute_error_metres": 0.05277223506285145,
+          "absolute_error_percent": 2.294445002732672,
+          "screening_budget_metres": 0.11499999999999999,
+          "screening_flag": "within_budget"
+        }
+      },
+      {
+        "id": "migdal_l32",
+        "primary": {
+          "id": "axis_a",
+          "pixel_length": 120.81390648431164,
+          "predicted_metres": 4.314782374439702,
+          "digitization_only_interval_metres": [
+            4.056038419594155,
+            4.588746561923223
+          ],
+          "reference_metres": 4,
+          "signed_error_metres": 0.3147823744397016,
+          "absolute_error_metres": 0.3147823744397016,
+          "absolute_error_percent": 7.86955936099254,
+          "screening_budget_metres": 0.2,
+          "screening_flag": "outside_budget"
+        },
+        "diagnostic": {
+          "id": "axis_b",
+          "pixel_length": 99.92497185388645,
+          "predicted_metres": 3.568748994781659,
+          "digitization_only_interval_metres": [
+            3.330728189371057,
+            3.820771024039943
+          ],
+          "reference_metres": 4,
+          "signed_error_metres": -0.4312510052183409,
+          "absolute_error_metres": 0.4312510052183409,
+          "absolute_error_percent": 10.781275130458523,
+          "screening_budget_metres": 0.2,
+          "screening_flag": "outside_budget"
+        }
+      },
+      {
+        "id": "etri_z2",
+        "status": "unmeasurable",
+        "scale_pixel_length": 108,
+        "metres_per_pixel": 0.018518518518518517,
+        "available_chords": [
+          {
+            "id": "axis_a",
+            "pixel_length": 274,
+            "predicted_metres": 5.074074074074074,
+            "digitization_only_interval_metres": [
+              4.821428571428571,
+              5.346153846153846
+            ]
+          }
+        ],
+        "reason": "Both floor spans are required to identify the longer primary chord",
+        "reference_dimensions_metres": [
+          4.8,
+          4.8
+        ],
+        "screening_flag": "unmeasurable"
+      }
+    ],
+    "limits": "Convenience sample; program-level answer separation only. Digitization intervals omit source, geometry and field error. Screening budget is chosen, not estimated.",
+    "predictions_sha256": "ae29cfc46728530b8e32ec2920c3a680dc757294bff3a81a921c6e3c9f631a87",
+    "references_sha256": "c4e89fd9afe396028e131bb46fcff2a82eb33f5a5fe3bbfdb14f2a597b611b9c"
+  },
+  "pilot_measurements": {
+    "schema": 1,
+    "cases": [
+      {
+        "id": "dagesh_l1",
+        "scale": {
+          "endpoints_px": [
+            [
+              56,
+              661
+            ],
+            [
+              166,
+              661
+            ]
+          ],
+          "metres": 2
+        },
+        "targets": [
+          {
+            "id": "axis_a",
+            "endpoints_px": [
+              [
+                303,
+                501
+              ],
+              [
+                410,
+                592
+              ]
+            ]
+          },
+          {
+            "id": "axis_b",
+            "endpoints_px": [
+              [
+                402,
+                499
+              ],
+              [
+                311,
+                591
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "migdal_l32",
+        "scale": {
+          "endpoints_px": [
+            [
+              84,
+              525
+            ],
+            [
+              224,
+              525
+            ]
+          ],
+          "metres": 5
+        },
+        "targets": [
+          {
+            "id": "axis_a",
+            "endpoints_px": [
+              [
+                202,
+                227
+              ],
+              [
+                316,
+                267
+              ]
+            ]
+          },
+          {
+            "id": "axis_b",
+            "endpoints_px": [
+              [
+                279,
+                202
+              ],
+              [
+                240,
+                294
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "etri_z2",
+        "scale": {
+          "endpoints_px": [
+            [
+              137,
+              342
+            ],
+            [
+              245,
+              342
+            ]
+          ],
+          "metres": 2
+        },
+        "targets": [
+          {
+            "id": "axis_a",
+            "endpoints_px": [
+              [
+                65,
+                202
+              ],
+              [
+                339,
+                202
+              ]
+            ]
+          },
+          {
+            "id": "axis_b",
+            "endpoints_px": null
+          }
+        ]
+      }
+    ]
+  },
+  "pilot_references": {
+    "schema": 1,
+    "reference_type": "dimensions_in_excavation_report_prose",
+    "independent_field_measurement_verified": false,
+    "cases": [
+      {
+        "id": "dagesh_l1",
+        "dimensions_metres": [
+          2.3,
+          2.8
+        ],
+        "source": "Yoram Haimi, Horbat Dagesh, HA-ESI 128 (2016), 26 December 2016",
+        "source_url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25151",
+        "locator": "Winepress description, treading floor L1; Figure 2",
+        "printed_page": null,
+        "pdf_page": null,
+        "approximation_label": null,
+        "rounding_error_metres": null,
+        "endpoint_definition": null
+      },
+      {
+        "id": "migdal_l32",
+        "dimensions_metres": [
+          4,
+          4
+        ],
+        "source": "Abdallah Mokary, Migdal Ha-'Emeq (A), HA-ESI 135 (2023), 17 August 2023",
+        "source_url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=26364",
+        "locator": "Area A, Winepress 1, treading floor L32; Figure 3",
+        "printed_page": null,
+        "pdf_page": null,
+        "approximation_label": "circa",
+        "rounding_error_metres": null,
+        "endpoint_definition": null
+      },
+      {
+        "id": "etri_z2",
+        "dimensions_metres": [
+          4.8,
+          4.8
+        ],
+        "source": "Boaz Zissu, Amir Ganor and Hagit Neugeborn, Horbat 'Etri, HA-ESI 122 (2010), 8 December 2010",
+        "source_url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=1572&mag_id=117",
+        "locator": "Winepress Z2, treading floor; Figure 8",
+        "printed_page": null,
+        "pdf_page": null,
+        "approximation_label": "circa",
+        "rounding_error_metres": null,
+        "endpoint_definition": null
+      }
+    ]
+  },
+  "cubit_scenarios": {
+    "continuum_m": [
+      0.4,
+      0.6
+    ],
+    "narrower_exposed_m": [
+      0.445,
+      0.525
+    ],
+    "illustrative_fixed_choices_m": [
+      0.445,
+      0.5,
+      0.525
+    ],
+    "status": "exploratory legacy choices; no local calibration or probabilities"
+  },
+  "depth_entries": [
+    {
+      "entry": 11,
+      "cubits": 4,
+      "source": "research/measurements/units_packet.md",
+      "datum_m": null,
+      "phase": null
+    },
+    {
+      "entry": 25,
+      "cubits": 3,
+      "source": "research/measurements/units_packet.md",
+      "datum_m": null,
+      "phase": null
+    },
+    {
+      "entry": 26,
+      "cubits": 9,
+      "source": "research/measurements/units_packet.md",
+      "datum_m": null,
+      "phase": null
+    }
+  ],
+  "ac94": {
+    "source": "research/assessments/entry29_jericho_pools/ac94_results.json",
+    "numerals": [
+      24,
+      27
+    ],
+    "dimension_diagnostic": {
+      "north_inner_span_m": 8.177472,
+      "east_inner_trace_m": 8.318093,
+      "east_outer_trace_m": 9.318109,
+      "reported_pool_dimensions_m": [
+        8.8,
+        8.2
+      ],
+      "total_archaeological_error_bound_m": null,
+      "rule": "Keep the printed scale. Proposed east-inner trace length differs from reported8.8m; contour/elevation datum and scan distortion are not independently bounded. Do not force dimensional agreement or treat the picking envelope as total archaeological uncertainty."
+    },
+    "rows": [
+      {
+        "target_set": "drawn_terminus_only",
+        "wall_trace": "west_inner",
+        "shortest_distance_nominal_range_m": [
+          0.960824,
+          0.960824
+        ],
+        "perpendicular_nominal": {
+          "permitted_target_parameter": null,
+          "range_px": null,
+          "signed_projection_from_north_endpoint_px": [
+            -24.351806,
+            -24.351806
+          ],
+          "status": "no nominal target projects onto the finite trace"
+        },
+        "branches": [
+          {
+            "envelope": "manual",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.654826,
+              1.276024
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "manual",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.654826,
+              1.276024
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.357635,
+              1.600849
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.357635,
+              1.600849
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          }
+        ],
+        "conduit_chainage_status": "unknown: no justified connection to either long side",
+        "other_axes_status": "unknown: ancient origin and surface unspecified"
+      },
+      {
+        "target_set": "drawn_terminus_only",
+        "wall_trace": "east_inner",
+        "shortest_distance_nominal_range_m": [
+          7.926272,
+          7.926272
+        ],
+        "perpendicular_nominal": {
+          "permitted_target_parameter": null,
+          "range_px": null,
+          "signed_projection_from_north_endpoint_px": [
+            -26.145594,
+            -26.145594
+          ],
+          "status": "no nominal target projects onto the finite trace"
+        },
+        "branches": [
+          {
+            "envelope": "manual",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.518589,
+              8.346216
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "manual",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.518589,
+              8.346216
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.122638,
+              8.778983
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.122638,
+              8.778983
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          }
+        ],
+        "conduit_chainage_status": "unknown: no justified connection to either long side",
+        "other_axes_status": "unknown: ancient origin and surface unspecified"
+      },
+      {
+        "target_set": "drawn_terminus_only",
+        "wall_trace": "west_outer",
+        "shortest_distance_nominal_range_m": [
+          0.997253,
+          0.997253
+        ],
+        "perpendicular_nominal": {
+          "permitted_target_parameter": null,
+          "range_px": null,
+          "signed_projection_from_north_endpoint_px": [
+            -10.284322,
+            -10.284322
+          ],
+          "status": "no nominal target projects onto the finite trace"
+        },
+        "branches": [
+          {
+            "envelope": "manual",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.690724,
+              1.313001
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "manual",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.690724,
+              1.313001
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.393015,
+              1.63839
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.393015,
+              1.63839
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          }
+        ],
+        "conduit_chainage_status": "unknown: no justified connection to either long side",
+        "other_axes_status": "unknown: ancient origin and surface unspecified"
+      },
+      {
+        "target_set": "drawn_terminus_only",
+        "wall_trace": "east_outer",
+        "shortest_distance_nominal_range_m": [
+          8.37504,
+          8.37504
+        ],
+        "perpendicular_nominal": {
+          "permitted_target_parameter": null,
+          "range_px": null,
+          "signed_projection_from_north_endpoint_px": [
+            -10.791412,
+            -10.791412
+          ],
+          "status": "no nominal target projects onto the finite trace"
+        },
+        "branches": [
+          {
+            "envelope": "manual",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.960806,
+              8.801732
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "manual",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.960806,
+              8.801732
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.558492,
+              9.241453
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.558492,
+              9.241453
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          }
+        ],
+        "conduit_chainage_status": "unknown: no justified connection to either long side",
+        "other_axes_status": "unknown: ancient origin and surface unspecified"
+      },
+      {
+        "target_set": "entire_drawn_preserved_approach",
+        "wall_trace": "west_inner",
+        "shortest_distance_nominal_range_m": [
+          0.960824,
+          3.865006
+        ],
+        "perpendicular_nominal": {
+          "permitted_target_parameter": null,
+          "range_px": null,
+          "signed_projection_from_north_endpoint_px": [
+            -24.351806,
+            -93.936265
+          ],
+          "status": "no nominal target projects onto the finite trace"
+        },
+        "branches": [
+          {
+            "envelope": "manual",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.654826,
+              4.223878
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "manual",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.654826,
+              4.223878
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.357635,
+              4.593709
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.357635,
+              4.593709
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          }
+        ],
+        "conduit_chainage_status": "unknown: no justified connection to either long side",
+        "other_axes_status": "unknown: ancient origin and surface unspecified"
+      },
+      {
+        "target_set": "entire_drawn_preserved_approach",
+        "wall_trace": "east_inner",
+        "shortest_distance_nominal_range_m": [
+          7.926272,
+          10.538127
+        ],
+        "perpendicular_nominal": {
+          "permitted_target_parameter": null,
+          "range_px": null,
+          "signed_projection_from_north_endpoint_px": [
+            -26.145594,
+            -94.457191
+          ],
+          "status": "no nominal target projects onto the finite trace"
+        },
+        "branches": [
+          {
+            "envelope": "manual",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.518589,
+              10.997347
+            ],
+            "shortest_distance_nominal_overlap": true,
+            "shortest_distance_nominal_attainable_cubit_m": [
+              0.4,
+              0.439089
+            ],
+            "shortest_distance_band_status": "possible overlap of conservative bounds",
+            "perpendicular_band_status": "no nominal eligible projection; perturbed eligibility/fit not established",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "manual",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.518589,
+              10.997347
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "possible overlap of conservative bounds",
+            "perpendicular_band_status": "no nominal eligible projection; perturbed eligibility/fit not established",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.122638,
+              11.470589
+            ],
+            "shortest_distance_nominal_overlap": true,
+            "shortest_distance_nominal_attainable_cubit_m": [
+              0.4,
+              0.439089
+            ],
+            "shortest_distance_band_status": "possible overlap of conservative bounds",
+            "perpendicular_band_status": "no nominal eligible projection; perturbed eligibility/fit not established",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.122638,
+              11.470589
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "possible overlap of conservative bounds",
+            "perpendicular_band_status": "no nominal eligible projection; perturbed eligibility/fit not established",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          }
+        ],
+        "conduit_chainage_status": "unknown: no justified connection to either long side",
+        "other_axes_status": "unknown: ancient origin and surface unspecified"
+      },
+      {
+        "target_set": "entire_drawn_preserved_approach",
+        "wall_trace": "west_outer",
+        "shortest_distance_nominal_range_m": [
+          0.960696,
+          3.15359
+        ],
+        "perpendicular_nominal": {
+          "permitted_target_parameter": null,
+          "range_px": null,
+          "signed_projection_from_north_endpoint_px": [
+            -10.284322,
+            -79.868782
+          ],
+          "status": "no nominal target projects onto the finite trace"
+        },
+        "branches": [
+          {
+            "envelope": "manual",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.654701,
+              3.501764
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "manual",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.654701,
+              3.501764
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.357511,
+              3.86057
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              0.357511,
+              3.86057
+            ],
+            "shortest_distance_nominal_overlap": false,
+            "shortest_distance_nominal_attainable_cubit_m": null,
+            "shortest_distance_band_status": "disjoint",
+            "perpendicular_band_status": "disjoint even if a perturbed finite projection becomes eligible",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          }
+        ],
+        "conduit_chainage_status": "unknown: no justified connection to either long side",
+        "other_axes_status": "unknown: ancient origin and surface unspecified"
+      },
+      {
+        "target_set": "entire_drawn_preserved_approach",
+        "wall_trace": "east_outer",
+        "shortest_distance_nominal_range_m": [
+          8.37504,
+          10.826604
+        ],
+        "perpendicular_nominal": {
+          "permitted_target_parameter": null,
+          "range_px": null,
+          "signed_projection_from_north_endpoint_px": [
+            -10.791412,
+            -79.570267
+          ],
+          "status": "no nominal target projects onto the finite trace"
+        },
+        "branches": [
+          {
+            "envelope": "manual",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.960806,
+              11.290162
+            ],
+            "shortest_distance_nominal_overlap": true,
+            "shortest_distance_nominal_attainable_cubit_m": [
+              0.4,
+              0.451109
+            ],
+            "shortest_distance_band_status": "possible overlap of conservative bounds",
+            "perpendicular_band_status": "no nominal eligible projection; perturbed eligibility/fit not established",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "manual",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.960806,
+              11.290162
+            ],
+            "shortest_distance_nominal_overlap": true,
+            "shortest_distance_nominal_attainable_cubit_m": [
+              0.4,
+              0.400985
+            ],
+            "shortest_distance_band_status": "possible overlap of conservative bounds",
+            "perpendicular_band_status": "no nominal eligible projection; perturbed eligibility/fit not established",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 24,
+            "cubit_band_m": [
+              9.6,
+              14.4
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.558492,
+              11.767875
+            ],
+            "shortest_distance_nominal_overlap": true,
+            "shortest_distance_nominal_attainable_cubit_m": [
+              0.4,
+              0.451109
+            ],
+            "shortest_distance_band_status": "possible overlap of conservative bounds",
+            "perpendicular_band_status": "no nominal eligible projection; perturbed eligibility/fit not established",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          },
+          {
+            "envelope": "stress",
+            "numeral_cubits": 27,
+            "cubit_band_m": [
+              10.8,
+              16.2
+            ],
+            "shortest_distance_outer_envelope_m": [
+              7.558492,
+              11.767875
+            ],
+            "shortest_distance_nominal_overlap": true,
+            "shortest_distance_nominal_attainable_cubit_m": [
+              0.4,
+              0.400985
+            ],
+            "shortest_distance_band_status": "possible overlap of conservative bounds",
+            "perpendicular_band_status": "no nominal eligible projection; perturbed eligibility/fit not established",
+            "archaeological_status": "unknown: aperture/face/surface/phase gates unresolved"
+          }
+        ],
+        "conduit_chainage_status": "unknown: no justified connection to either long side",
+        "other_axes_status": "unknown: ancient origin and surface unspecified"
+      }
+    ],
+    "total_archaeological_error_bound_m": null
+  },
+  "iv17": {
+    "source": "research/measurements/cycle2/iv17_repeat_report.md",
+    "northern_chord_m": 0.85863,
+    "southern_chord_m": 1.164143,
+    "midpoint_separation_m": 4.225,
+    "northern_bearing_deg": 122.9,
+    "proxy_bearing_picking_interval_deg": [
+      99.5,
+      140.8
+    ],
+    "southern_bearing_deg": 119.2,
+    "southern_proxy_interval_deg": [
+      104,
+      132.4
+    ],
+    "north_convention": "unspecified",
+    "ancient_threshold": null,
+    "ancient_southern_jambs": null,
+    "primary_east_sector_deg": [
+      45,
+      135
+    ],
+    "frozen_rule_source": "research/preregistration/entry25_iv17_rules/RULES.md",
+    "diagnostic_only": true,
+    "opportunity_step_cubit_m": 0.01
+  },
+  "hyrcania": {
+    "source": "research/measurements/registration_packet.md",
+    "geographic_withheld_check_error_m": 244.371061,
+    "pool_centre_pick_px": 8,
+    "scale_m": 50,
+    "scale_px": 143,
+    "north_pool_sides_m": [
+      19,
+      15,
+      18.2,
+      16
+    ],
+    "derivative_scale_disagreement_fraction": 0.116,
+    "derivative_is_independent": false,
+    "total_error_bound": null
+  },
+  "siloam": {
+    "entry": 49,
+    "has_metric_offset_instruction": false,
+    "trough_underside": null,
+    "ancient_main_floor": null,
+    "source": "research/measurements/cycle8/entry49_constraints.md"
+  },
+  "registration": {
+    "source": "research/assessments/kohlit_chain/registration_protocol.md",
+    "map_withheld_check_error_m": 49,
+    "source_of_map_error": "research/ACTIVE_TEST.md @3b2d5c44b8c0add84a69d25f8e72cd16acc886db",
+    "mouth_threshold_m": 10,
+    "mouth_max_registration_proxy_m": 2.5,
+    "anchor_error_proxy_m": 50,
+    "example_feature_error_proxy_m": 10,
+    "example_distance_m": 150,
+    "proxy_is_calibrated_probability": false,
+    "same_document_translation_cancels": true,
+    "same_document_scale_cancels": false,
+    "same_document_rotation_cancels_for_length": true,
+    "same_document_rotation_cancels_for_cardinal_relations": false
+  },
+  "benchmark_audit": {
+    "source": "research/shared_tools/recovery_benchmark/reserved_batch_template.json",
+    "template": {
+      "schema": "copper-scroll-reserved-recovery-batch-v1",
+      "status": "not_run",
+      "coordinator_id": null,
+      "reviewer_ids": [],
+      "freeze_commit": null,
+      "frozen_before_truth_access": null,
+      "cases": [],
+      "case_contract": {
+        "case_code": "A fresh anonymous identifier assigned by the curator",
+        "reviewer_exposed_to_truth": false,
+        "prediction_sha256": "Hash of the reviewer prediction frozen before revealing the truth",
+        "selection_observation_ids": [
+          "Original observation IDs used to select and fit the model"
+        ],
+        "surviving_models_registered": [
+          "All allowed model IDs"
+        ],
+        "failure_rule": "A finite measurable failure condition with justified datum and tolerance",
+        "truth": {
+          "validation": "independent_reference_verified",
+          "verified_by": "A named coordinator distinct from the reviewers",
+          "source_locator": "Exact source, page, figure or field-record identifier",
+          "original_observation_id": "Reserved original observation, different from fitting observations",
+          "lineage_checked": true
+        }
+      },
+      "instructions": "This empty template intentionally fails audit-reserved. Populate cases only after curator assignment and real source validation; example text supplies no evidence. Verify commit chronology externally."
+    },
+    "existing_pilot_families": [
+      "Dagesh",
+      "Migdal",
+      "Etri"
+    ],
+    "unused_eligible_case_verified": false,
+    "independent_endpoint_reference_verified": false,
+    "reserved_field_records_opened": false,
+    "truth_release_authorized": false
+  }
+}
