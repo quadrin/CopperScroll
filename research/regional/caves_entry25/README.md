@@ -135,6 +135,70 @@ The other rule sets are in [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv). N
 Files: [iaa_units.csv](iaa_units.csv) (the 10 added rows in the `caves.csv` schema), [iaa_excluded.csv](iaa_excluded.csv) (the 13 rows read but not added, with reasons), [iaa_scores.csv](iaa_scores.csv), [iaa_summary.json](iaa_summary.json), [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv), [scripts/iaa_view.py](scripts/iaa_view.py), [tests/test_iaa_view.py](tests/test_iaa_view.py).
 - Rebuild: `python3 -I -B scripts/iaa_view.py`. It reads only committed tables and never writes the frozen outputs.
 
+## Phase 1–4 inventory view, 12 October 2026 (exploratory)
+
+**What changed.** The merged inventory now holds phases 1–4 (`research/regional/haesi_features/merged_2026-10-12/`, commit b4a41cc). Phase 4 adds one cave row to this lane's region: the "Small Pyrite Cave" near ʿEn Gedi. It stays unknown on every clause except C1. No new row matches every clause. The frozen headline and the 11 October IAA view stand unchanged. Phase 4 was read after the frozen results were seen, so the whole view is exploratory.
+
+- **Rules.** [PLAN_AMENDMENT_PHASE4_2026-10-12.md](PLAN_AMENDMENT_PHASE4_2026-10-12.md) was committed alone as `9fad7f4` (2026-10-12T04:51:00Z), before any phase-4 row of this lane's classes was printed or mapped. SHA-256 `50e7a8762cc08e065251dde9e7bb248225ff1ef43a4a4d5ea0cec61885a6d8c1`. Its §1 lists what had been seen. It reruns the IAA-view method unchanged on all phases. It adds a screen for protected material, applied before a phase-4 row is read.
+- **Version changes.** Phase-4 reports join some earlier report groups. Even so, all 10 rows added on 11 October are still the selected version, and the 13 rows not added then are still not added.
+
+**Phase-4 rows of this lane's classes met by the view (10).** The three rows that were read (added or merged) are in report groups and sites that hold only phase-4 rows. None of them joins an earlier report.
+- **Added (1 cave).** Hadas, ʿAtiqot 46 (2004) pp. 5–14 (Hebrew; English summary pp. 127*–128*), unit `ATQ46-i13-pyrite-lemonite-mine-near-spring-en`, site S0789. It is a rock-cut pyrite and limonite mine in the fault-escarpment cliff, 15 m long, called the "Small Pyrite Cave". It is admitted because its coding calls it a cave by name (PLAN 4.1(1)). Admitting a hewn mine is an exploratory choice. Its period is coded `partly` (Second Temple unqualified, with other periods). The same report's burial row does not call the feature a cave, so it is not admitted.
+- **Merged by stated identity (2).**
+  - Harding, ADAJ 2 (1953) p. 85, unit `ADAJ2-085-wadi-murabbaat`: "four large caves" in Wadi Murabbaʿat. These are the lane's Murabbaʿat caves Nos. 1–4 (Zissu 2023).
+  - Klein et al., ʿAtiqot 112 (2023) pp. 53–92, unit `ATQ112-i04-hoard-ptolemaic-coins-found-murabbaat-cave`: Murabbaʿat Cave II, which is the lane's No. 2. INFERENCE: Roman II is No. 2 of the 1952 numbering.
+  - Neither coding gives a pillar, terrace, opening or facing, so no clause would change.
+- **Excluded as protected (6).** They were listed by id only, and their coding fields were not read for this lane.
+  - 1 row whose unit is in the part-H `held.csv` (§5.1): SWP III p. 192, Deir el Kelt.
+  - 3 rows by a held-area term (§5.2): ADAJ 2 p. 83 (Kh. Qumran), ADAJ 2 p. 90 (a Wadi en-Nar cave) and SWP III p. 210 (Khurbet Kumran).
+  - 2 Jericho tomb rows placed at Tell es-Sultan, by strip term or position (§5.4): ADAJ 3 p. 74 and ADAJ 4–5 (Arabic) p. 6.
+  - The phase-4 readers had given these rows feature rows. This lane did not check why, and excludes all of them under its conservative screen. Kh. ʿAlmit lies outside the box, and no ʿAtiqot 41 row appeared.
+- **Not admitted (1).** The ʿAtiqot 46 burial row, as above.
+
+**k match every clause / f fail at least one / m unknown, of N** (primary rule set; rows, with N_min in brackets):
+
+| Branch | Level | Frozen | With the 11 Oct IAA rows | With the phase 1–4 rows |
+|---|---|---|---|---|
+| B-PILLAR | cave | 1 / 198 / 436 of 635 (1 / 186 / 418 of 605) | 1 / 201 / 440 of 642 (1 / 189 / 421 of 611) | 1 / 201 / 441 of 643 (1 / 189 / 422 of 612) |
+| B-PILLAR | both-mouths | 1 / 201 / 433 of 635 | 1 / 205 / 436 of 642 | 1 / 205 / 437 of 643 |
+| B-TERRACE | cave | 0 / 195 / 440 of 635 | 0 / 198 / 444 of 642 | 0 / 198 / 445 of 643 |
+| B-TERRACE | both-mouths | 0 / 198 / 437 of 635 | 0 / 202 / 440 of 642 | 0 / 202 / 441 of 643 |
+
+Cluster records stay at 33 (all unknown). The other rule sets are in [phase4_view_2026-10-12.csv](phase4_view_2026-10-12.csv). Each rule set gains exactly one unknown row and no all-match or fail row.
+
+**Clause by clause** (B-PILLAR, cave level, primary; match / fail / unknown of 643):
+- C1 cave: 616 / 0 / 27.
+- C2p pillar: 14 / 3 / 626. C2t terrace (B-TERRACE): 30 / 0 / 613.
+- C3 two entrances: 29 / 198 / 416.
+- C4 east: 15 / 13 / 615 at the cave level, and 1 / 5 / 637 at both mouths.
+- C5 northern entrance: 9 / 189 / 445.
+
+The new phase-4 row adds a C1 match only. Among all IAA-method rows, only Naḥal Ḥever Cave B (HAESI-25608) matches anything beyond C1: C3, with two entrances. No added row matches a pillar, a terrace, an east facing or a northern entrance on either branch. Entry 25 is the only entry this lane scores.
+
+**New matches:** none. **Misses:** the Pyrite Cave is unknown on C2–C5, and its record gives no opening count or facing. The two Murabbaʿat records give no clause value for the lane's Murabbaʿat rows.
+
+**What stays unknown.**
+- **Unplaced phase-4 rows.** 13 rows in zones Z2 and Z3 have no point and no `places_v2` id, so they are not admitted ([phase4_unplaced.csv](phase4_unplaced.csv)).
+  - Probably in the box, by name (INFERENCE from `places_v2` points; not checked on a map): the SWP III Mar Saba rows (p. 219, a cave row and a tomb row), Neby Musa (p. 220), Tell Muhalhal (p. 222), Khurbet es Sumrah (pp. 212–213) and Kurm Abu Tubk (p. 213). The lane already holds the Mar Saba laura caves (ASI 109/7).
+  - Probably outside the box: the QDAP ʿIrq el-Ahmar, Umm Qatafa and Umm ez-Zuweitina rows (Wadi Khareitun, west), and SWP Sebbeh (Masada, south).
+  - Unknown: SWP Khurbet Samieh and Kusr el ʿAreijeh.
+- **The rest of the region.** 83 phase-4 cave and tomb rows lie outside the box, and 92 have no position and lie in zones Z1 and Z4, which do not meet the box.
+- **Coding limits.** The coding fields are short, and no plan was opened. The coverage gaps listed above for the frozen inventory remain.
+- **Safety box.** The Qumran safety box (§5.3) also covers Nebi Musa, so it is broader than the held area. No admitted row was affected.
+
+**Files.**
+- [phase4_units.csv](phase4_units.csv): the 11 added rows (10 from 11 October and 1 from phase 4), with `phase`.
+- [phase4_excluded.csv](phase4_excluded.csv) and [phase4_unplaced.csv](phase4_unplaced.csv).
+- [phase4_scores.csv](phase4_scores.csv), [phase4_summary.json](phase4_summary.json) and [phase4_view_2026-10-12.csv](phase4_view_2026-10-12.csv).
+- [coded/phase4_coding.csv](coded/phase4_coding.csv), [scripts/phase4_view.py](scripts/phase4_view.py) and [tests/test_phase4_view.py](tests/test_phase4_view.py).
+- Rebuild with `python3 -I -B scripts/phase4_view.py`. It never writes the frozen or IAA-view outputs.
+
+**Proposed shared-file changes (for the integrator; not applied).**
+- ACTIVE_TEST / findings log: the phase 1–4 view adds 1 unknown cave row. It leaves the entry-25 denominator otherwise unchanged (B-PILLAR cave, primary: 1 / 201 / 441 of 643, exploratory). No registered outcome changes.
+- Merged inventory: sites S0782 (ʿAtiqot 112, Murabbaʿat Cave II) and S0995 (ADAJ 2, Wadi Murabbaʿat) lie 43 m apart and name the same caves, but are kept as separate sites. The site count is probably one too high.
+- Phase 4: four ADAJ rows (Kh. Qumran, Wadi en-Nar, two Jericho rows placed at Tell es-Sultan) and two SWP III rows (pp. 192 and 210) have feature rows. The integrator may want to confirm that they are built-site or cemetery records and not held cave records.
+- Placement: a frozen rule that places SWP gazetteer terms by their `places_v2` point would let the six SWP rows probably in the box be scored. It would be a new exploratory step.
+
 ## Blocked or not read
 
 - Israel Exploration Journal 11 (1961) and 12 (1962), the Judean Desert expedition reports (Naḥal David, Naḥal Ḥever, Cave of Letters, Cave of Horror): no open copy found. Routes: Israel Exploration Society offprints https://www.israelexplorationsociety.com/product-page/judean-desert-caves-i and https://www.israelexplorationsociety.com/product-page/copy-of-judean-desert-caves-ii (for sale); JSTOR (subscription).

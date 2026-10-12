@@ -1,0 +1,258 @@
+{
+ "note": "Exploratory view (PLAN_AMENDMENT_PHASE4_2026-10-12.md). The frozen counts (summary.json) and the 11 October IAA view are unchanged.",
+ "inputs": {
+  "features_all.csv": "940e6c04b1ecd18c79a7c88a784a463d69056f70c6e31ad18e5a18c46866d65d",
+  "report_groups.csv": "38b67f3c7095993287ac9da80eb229a9752d56ff7c27cb9bb3b1024f47da702f",
+  "sites.csv": "5d7458016d7955cced5540d4307570879fbc5b2071d5f644e85d3cec0fcc16db",
+  "places_v2.csv": "315474bd3be8cce3e1776e119417e2444edd99e3f028c7413185302fc7663683"
+ },
+ "rows_added": {
+  "caves": 8,
+  "clusters": 3
+ },
+ "phase4_rows_added": {
+  "caves": 1,
+  "clusters": 0
+ },
+ "rows_not_added": {
+  "held-area": 3,
+  "merged (stated identity)": 8,
+  "protected-strip": 2,
+  "not admitted": 7,
+  "already in the lane": 1,
+  "held": 1
+ },
+ "phase4_unplaced_in_box_zones": 13,
+ "changes_vs_iaa_2026_10_11": {
+  "units_new": [
+   "IAA:phase4_2026-10-11/part_e_atiqot/reading_r1/features.csv#10"
+  ],
+  "units_dropped": [],
+  "excluded_new": [
+   "phase4_2026-10-11/part_e_atiqot/reading_r1/features.csv#1",
+   "phase4_2026-10-11/part_e_atiqot/reading_r1/features.csv#11",
+   "phase4_2026-10-11/part_h_surveys/features.csv#66",
+   "phase4_2026-10-11/part_h_surveys/features.csv#70",
+   "phase4_2026-10-11/part_i_adaj/features.csv#26",
+   "phase4_2026-10-11/part_i_adaj/features.csv#27",
+   "phase4_2026-10-11/part_i_adaj/features.csv#31",
+   "phase4_2026-10-11/part_i_adaj/features.csv#36",
+   "phase4_2026-10-11/part_i_adaj/features.csv#52"
+  ],
+  "excluded_dropped": [],
+  "dropped_reason": {}
+ },
+ "coverage": {
+  "unplaced": {
+   "cave_with_finds@Z1_GERIZIM|phase4": 2,
+   "cave_with_finds@Z2_JORDAN_VALLEY|phase1-3": 1,
+   "cave_with_finds@Z2_JORDAN_VALLEY|phase4": 1,
+   "cave_with_finds@Z3_JUDEAN_DESERT|phase1-3": 14,
+   "cave_with_finds@Z3_JUDEAN_DESERT|phase4": 8,
+   "cave_with_finds@Z4_JERUSALEM_HILLS|phase1-3": 21,
+   "cave_with_finds@Z4_JERUSALEM_HILLS|phase4": 19,
+   "tomb_burial_cave@Z1_GERIZIM|phase1-3": 7,
+   "tomb_burial_cave@Z1_GERIZIM|phase4": 11,
+   "tomb_burial_cave@Z2_JORDAN_VALLEY|phase1-3": 4,
+   "tomb_burial_cave@Z2_JORDAN_VALLEY|phase4": 2,
+   "tomb_burial_cave@Z3_JUDEAN_DESERT|phase1-3": 13,
+   "tomb_burial_cave@Z3_JUDEAN_DESERT|phase4": 4,
+   "tomb_burial_cave@Z4_JERUSALEM_HILLS|phase1-3": 156,
+   "tomb_burial_cave@Z4_JERUSALEM_HILLS|phase4": 60
+  },
+  "outside_box": {
+   "cave_with_finds|phase1-3": 218,
+   "cave_with_finds|phase4": 23,
+   "tomb_burial_cave|phase1-3": 377,
+   "tomb_burial_cave|phase4": 60
+  }
+ },
+ "headline": {
+  "frozen": {
+   "N": 635,
+   "all-match": 1,
+   "fail": 198,
+   "unknown": 436,
+   "by_clause": {
+    "c1": {
+     "match": 608,
+     "unknown": 27
+    },
+    "c2": {
+     "unknown": 618,
+     "fail": 3,
+     "match": 14
+    },
+    "c3": {
+     "unknown": 412,
+     "fail": 195,
+     "match": 28
+    },
+    "c4": {
+     "unknown": 607,
+     "fail": 13,
+     "match": 15
+    },
+    "c5": {
+     "unknown": 439,
+     "fail": 187,
+     "match": 9
+    }
+   }
+  },
+  "union": {
+   "N": 643,
+   "all-match": 1,
+   "fail": 201,
+   "unknown": 441,
+   "by_clause": {
+    "c1": {
+     "match": 616,
+     "unknown": 27
+    },
+    "c2": {
+     "unknown": 626,
+     "fail": 3,
+     "match": 14
+    },
+    "c3": {
+     "unknown": 416,
+     "fail": 198,
+     "match": 29
+    },
+    "c4": {
+     "unknown": 615,
+     "fail": 13,
+     "match": 15
+    },
+    "c5": {
+     "unknown": 445,
+     "fail": 189,
+     "match": 9
+    }
+   }
+  },
+  "frozen_min": {
+   "N": 605,
+   "all-match": 1,
+   "fail": 186,
+   "unknown": 418,
+   "by_clause": {
+    "c1": {
+     "match": 579,
+     "unknown": 26
+    },
+    "c2": {
+     "unknown": 590,
+     "match": 13,
+     "fail": 2
+    },
+    "c3": {
+     "unknown": 393,
+     "fail": 184,
+     "match": 28
+    },
+    "c4": {
+     "unknown": 578,
+     "fail": 12,
+     "match": 15
+    },
+    "c5": {
+     "unknown": 420,
+     "fail": 176,
+     "match": 9
+    }
+   }
+  },
+  "union_min": {
+   "N": 612,
+   "all-match": 1,
+   "fail": 189,
+   "unknown": 422,
+   "by_clause": {
+    "c1": {
+     "match": 586,
+     "unknown": 26
+    },
+    "c2": {
+     "unknown": 597,
+     "match": 13,
+     "fail": 2
+    },
+    "c3": {
+     "unknown": 396,
+     "fail": 187,
+     "match": 29
+    },
+    "c4": {
+     "unknown": 585,
+     "fail": 12,
+     "match": 15
+    },
+    "c5": {
+     "unknown": 425,
+     "fail": 178,
+     "match": 9
+    }
+   }
+  }
+ },
+ "union_N_rows": 643,
+ "union_N_min": 612,
+ "union_cluster_records": 33,
+ "union_cluster_stated_members": 88,
+ "added_by_clause": {
+  "c1": {
+   "match": 8
+  },
+  "c2": {
+   "unknown": 8
+  },
+  "c3": {
+   "unknown": 4,
+   "fail": 3,
+   "match": 1
+  },
+  "c4": {
+   "unknown": 8
+  },
+  "c5": {
+   "unknown": 6,
+   "fail": 2
+  }
+ },
+ "union_all_match_rows": {
+  "B-PILLAR|both-mouths|primary": [
+   "REPO:TwinCave"
+  ],
+  "B-PILLAR|both-mouths|s_open_ge2": [
+   "REPO:TwinCave"
+  ],
+  "B-PILLAR|both-mouths|s_pillar_between": [
+   "REPO:TwinCave"
+  ],
+  "B-PILLAR|both-mouths|s_singular_unknown": [
+   "REPO:TwinCave"
+  ],
+  "B-PILLAR|cave|primary": [
+   "A41:XII/53"
+  ],
+  "B-PILLAR|cave|s_open_ge2": [
+   "A41:XII/53"
+  ],
+  "B-PILLAR|cave|s_pillar_between": [
+   "A41:XII/53"
+  ],
+  "B-PILLAR|cave|s_singular_unknown": [
+   "A41:XII/53"
+  ],
+  "B-TERRACE|both-mouths|primary": [],
+  "B-TERRACE|both-mouths|s_open_ge2": [],
+  "B-TERRACE|both-mouths|s_pillar_between": [],
+  "B-TERRACE|both-mouths|s_singular_unknown": [],
+  "B-TERRACE|cave|primary": [],
+  "B-TERRACE|cave|s_open_ge2": [],
+  "B-TERRACE|cave|s_pillar_between": [],
+  "B-TERRACE|cave|s_singular_unknown": []
+ }
+}
