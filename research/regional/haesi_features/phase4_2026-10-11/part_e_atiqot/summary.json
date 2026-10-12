@@ -1,0 +1,56 @@
+{
+ "volumes_screened": 80,
+ "listings_screened": 1357,
+ "articles_screened": 1336,
+ "decisions": {
+  "candidate: in region (PDF needed)": 228,
+  "candidate: unlocated (PDF needed for the map reference)": 9,
+  "dropped: outside region (landing page)": 19,
+  "dropped: outside region by title (A3)": 32,
+  "duplicate listing": 21,
+  "not a candidate": 1048
+ },
+ "gazetteer_candidates": 234,
+ "manual_screen_rows": 55,
+ "landing_pages_fetched": 256,
+ "pdfs_needed": 237,
+ "pdfs_by_tier": {
+  "T1": {
+   "pdfs": 17,
+   "with_page_range": 1,
+   "pages_known_total": 14,
+   "pdf_size_mb_total": 36.8
+  },
+  "T2": {
+   "pdfs": 208,
+   "with_page_range": 130,
+   "pages_known_total": 1847,
+   "pdf_size_mb_total": 387.6
+  },
+  "T3": {
+   "pdfs": 3,
+   "with_page_range": 2,
+   "pages_known_total": 91,
+   "pdf_size_mb_total": 14.1
+  },
+  "U": {
+   "pdfs": 9,
+   "with_page_range": 6,
+   "pages_known_total": 166,
+   "pdf_size_mb_total": 24.9
+  }
+ },
+ "pdfs_by_tier_zone": {
+  "T1|REGION_WIDE (unplaced)": 3,
+  "T1|Z2_JORDAN_VALLEY": 1,
+  "T1|Z3_JUDEAN_DESERT": 13,
+  "T2|Z4_JERUSALEM_HILLS": 208,
+  "T3|Z4_JERUSALEM_HILLS": 3,
+  "U|": 9
+ },
+ "held": 0,
+ "tier1_kh_almit": 0,
+ "protected_strip": 0,
+ "reports_rows": 0,
+ "features_rows": 0
+}
