@@ -1,0 +1,24 @@
+{
+ "report_id": "QDAP2-105-qalandia-bath",
+ "volume": "2", "issue": "2-3", "year": "1932",
+ "ia_item": "quarterly-department-of-antiquities-palestine_1932_2_2-3", "span": "95.0-103.99",
+ "pages": "105-109", "title": "A Byzantine Bath at Qalandia", "author": "D. C. Baramki",
+ "unit_kind": "article", "screen": "S-MAN", "screen_term": "qalandia (spelling of gazetteer 'qalandiya')",
+ "tier": "T2", "map_ref": "", "name_zone": "Z4_JERUSALEM_HILLS", "name_place": "",
+ "location_note": "Qalandia, twelve kilometres north of Jerusalem; no map reference; placed by name. p. 105 from the contents; first leaf unnumbered.",
+ "excavated_or_surveyed": "excavated",
+ "text_sha256": "81749ea54198d45476251b19e087680d1616d190f8251daff4f577f879727680", "text_chars": 6637,
+ "reading": "full",
+ "notes": "Found by villagers in Aug. 1931, then excavated: two room groups with mosaic and slab floors, furnace remains, plastered recesses ('stoups'), stepped tanks, basins, runnels and pipes; the excavator interprets the whole as a bathing establishment (caldarium, tepidarium, frigidarium) with a fire and rebuilding. Stepped tanks are coded as ritual_bath under plan section 5 (stepped pool, whatever the excavator's label); the excavator's label is 'tank' in a 'bath'. Iliffe (QDAP IV p. 80) later compared the Y.M.C.A. 'bath' to 'its analogue at Qalandia' as a cistern; that view is not applied here.",
+ "features": [
+  {"type": "ritual_bath", "site": "chambers C and E, and east of Group II", "subtype": "stepped plastered tanks (excavator: 'tank'): original tank with steps at both ends, later tank (a) with steps in the SW corner; tank (b) with four steps and sump; circular pit with two steps fed by a channel", "n": "3",
+   "period": "Byzantine (title; ribbed sherds set in the plaster)", "window": "no",
+   "quote": "Access to it was by a flight of steps"},
+  {"type": "pool_reservoir", "site": "chambers C and E", "subtype": "basin beside tank (a), roughly circular in its latest phase; tank (c) with sump and niche", "n": "2",
+   "period": "Byzantine", "window": "no",
+   "quote": "Tank (c) was paved and plastered in the same way"},
+  {"type": "channel_aqueduct", "site": "chambers B, C and east of Group II", "subtype": "runnel under the connecting door, pottery pipes into the original tank, funnel inlets, narrow channel to the stepped pit", "n": "",
+   "period": "Byzantine", "window": "no",
+   "quote": "Two pottery pipes discharged into it from the north"}
+ ]
+}

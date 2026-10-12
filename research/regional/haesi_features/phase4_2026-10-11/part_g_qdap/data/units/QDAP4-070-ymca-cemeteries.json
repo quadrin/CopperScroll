@@ -1,0 +1,33 @@
+{
+ "report_id": "QDAP4-070-ymca-cemeteries",
+ "volume": "4", "issue": "1-2", "year": "1934",
+ "ia_item": "quarterly-department-of-antiquities-palestine_1934_4_1-2", "span": "129.0-151.99",
+ "pages": "70-80", "title": "Cemeteries and a 'Monastery' at the Y.M.C.A., Jerusalem", "author": "J. H. Iliffe",
+ "unit_kind": "article", "screen": "S-G", "screen_term": "jerusalem",
+ "tier": "T2", "map_ref": "", "name_zone": "Z4_JERUSALEM_HILLS", "name_place": "",
+ "location_note": "Sports ground west of the Y.M.C.A. building, Jerusalem; no map reference; placed by name.",
+ "excavated_or_surveyed": "excavated (salvage)",
+ "text_sha256": "76661fc1de37ff5d69ea1cbe7bdbfca3ba0bbd7161386573738a7be805b880d3", "text_chars": 26357,
+ "reading": "full (pp. 70-80; text from the DjVu XML, the searchtext file was refused with HTTP 500); plate leaves carry captions only",
+ "notes": "Clearance Sept.-Oct. 1932 after levelling for a sports ground. Greek tombstone of a bishop of the Georgians mentioning the 'Tower of David'. The excavator first called one installation a 'bath', then in an additional note (p. 80) a cistern like the one at Qalandia; both labels kept in the subtype. The cave tombs were cut 'probably by enlarging small caves already existing' (not coded separately).",
+ "features": [
+  {"type": "tomb_burial_cave", "site": "masonry tombs", "subtype": "ashlar family mausoleum with three lead sarcophagi, built inside a disused cistern", "n": "1",
+   "period": "third century AD (by contents; coin of Julia Domna type)", "window": "no",
+   "quote": "A group of ashlar masonry tombs, apparently a family mausoleum"},
+  {"type": "tomb_burial_cave", "site": "cave tombs I and II", "subtype": "two rock-cut cave tombs with five graves cut in the floor (lead and wooden coffins, slab covers)", "n": "2",
+   "period": "early third century AD (excavator; section heading 'c. second to third century')", "window": "no",
+   "quote": "Two cave tombs, situated immediately behind and west of the masonry tombs"},
+  {"type": "tomb_burial_cave", "site": "late rock-cut cemetery", "subtype": "over forty rock-cut cist graves in two rows, slab-covered, institutional ('monastery') cemetery", "n": "40",
+   "period": "fifth to seventh century AD (Byzantine and Umayyad coins)", "window": "no",
+   "quote": "A group of rock-cut graves of a poorer type"},
+  {"type": "cistern", "site": "under the masonry tombs", "subtype": "disused plastered cistern into which the mausoleum was built", "n": "1",
+   "period": "earlier than the third-century mausoleum; not otherwise dated", "window": "unknown",
+   "quote": "it was built in a disused cistern, whose plastered walls"},
+  {"type": "cistern", "site": "'monastery', east end", "subtype": "plastered cistern with descending flight of steps; second installation called a 'bath' with foot niches and sump, re-identified as a cistern (p. 80)", "n": "2",
+   "period": "fifth century AD (plaster over Byzantine sherds; building occupied from the fifth century)", "window": "no",
+   "quote": "usual descending flight of steps and was plastered all over"},
+  {"type": "channel_aqueduct", "site": "'monastery'", "subtype": "clay drain-pipes from mosaic floors; channel cut through a wall from a runnel to the 'bath'", "n": "",
+   "period": "fifth to seventh century AD (building)", "window": "no",
+   "quote": "draining to one corner (the south- west) through clay drain-pipes"}
+ ]
+}

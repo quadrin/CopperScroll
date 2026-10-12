@@ -1,0 +1,24 @@
+{
+ "report_id": "QDAP1-105-tyropoeon-street-levels",
+ "volume": "1", "issue": "3", "year": "1931",
+ "ia_item": "quarterly-department-of-antiquities-palestine_1931_1_3", "span": "11.0-16.99",
+ "pages": "105-110", "title": "Street Levels in the Tyropoeon Valley", "author": "R. W. H[amilton]",
+ "unit_kind": "article", "screen": "S-MAN", "screen_term": "Tyropoeon Valley (Jerusalem)",
+ "tier": "T2", "map_ref": "", "name_zone": "Z4_JERUSALEM_HILLS", "name_place": "jer_tyropoeon",
+ "location_note": "Shafts II and III on the line of the main sewer in Tariq el Wad, south of David Street, Old City of Jerusalem; placed by name.",
+ "excavated_or_surveyed": "excavated",
+ "text_sha256": "c1298f1039ba074eec570adaf2976c45c0c8020761cdb73c9390f4ce6eda2018", "text_chars": 9991,
+ "reading": "pp. 105-108 in full; p. 110 in full; p. 109 (drawings) by keyword",
+ "notes": "Municipal sewer repair 1931: two superimposed streets; the excavator's hypothesis assigns the lower to the Herodian city and the upper to the early Byzantine period (coin of the First Revolt, year 2, from the shaft, not stratified). A comb-picked vault at the bottom of Shaft II, function unknown, is not coded. Signed 'R. W. H.' (p. 110).",
+ "features": [
+  {"type": "channel_aqueduct", "site": "main sewer, lower part", "subtype": "lower, mortared part of the main drain, contemporary with the lower pavement", "n": "1",
+   "period": "with the lower street, assigned by hypothesis to the Herodian city", "window": "yes",
+   "quote": "the lower and better-built part of the drain is contemporary"},
+  {"type": "channel_aqueduct", "site": "main sewer, vault and manholes", "subtype": "sewer in its present form with vault and manholes, contemporary with the upper street", "n": "1",
+   "period": "with the upper street, assigned to the early Byzantine period", "window": "no",
+   "quote": "the sewer in its present form is contemporary with the upper"},
+  {"type": "channel_aqueduct", "site": "Shaft II and demolition line", "subtype": "side water conduits A, B, C and at least two more, flowing east, cut by the sewer", "n": "5",
+   "period": "C earlier than the lower street; B between the two streets; A uncertain", "window": "unknown",
+   "quote": "to have been water conduits rather than drains"}
+ ]
+}

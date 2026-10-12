@@ -1,0 +1,27 @@
+{
+ "report_id": "QDAP12-103-abu-ghosh",
+ "volume": "12", "issue": "3-4", "year": "1946",
+ "ia_item": "quarterly-department-of-antiquities-palestine_1946_12_3-4", "span": "79.0-81.3",
+ "pages": "103-105", "title": "Excavations in Palestine and Trans-Jordan, 1940-2: Abu Ghosh (Qaryat el 'Inab)", "author": "(round-up; excavation directed by R. de Vaux)",
+ "unit_kind": "roundup paragraph", "screen": "S-G", "screen_term": "abu ghosh",
+ "tier": "T2", "map_ref": "", "name_zone": "Z4_JERUSALEM_HILLS", "name_place": "",
+ "location_note": "Area between the Crusader church, the mosque and the modern monastery at Abu Ghosh; no map reference; placed by name.",
+ "excavated_or_surveyed": "excavated",
+ "text_sha256": "b53e98ef5bef941daa0fafe555beda158f6f6c5b177046c71345b9c60460b015", "text_chars": 4838,
+ "reading": "full (the span includes the map figure on p. 104)",
+ "notes": "1944 excavation of an Arab caravanserai of about the mid-9th century (excavators), re-used by the Hospitallers from 1141 and restored in the Mamluk period. Same site as QDAP11-113-abu-ghosh (1941 season); not deduplicated.",
+ "features": [
+  {"type": "pool_reservoir", "site": "khan and its east side", "subtype": "spring pool against the west wall, small round basin with kiosk in the court, great reservoir outside the east wall, possibly a lower reservoir under the mosque", "n": "4",
+   "period": "khan built apparently in the middle of the ninth century", "window": "no",
+   "quote": "The water supply of the khan is of special interest"},
+  {"type": "channel_aqueduct", "site": "khan", "subtype": "channel from the pool to the court basin and drain for waste water", "n": "2",
+   "period": "ninth century (khan)", "window": "no",
+   "quote": "From there a channel led to the centre of the yard"},
+  {"type": "channel_aqueduct", "site": "through the ruins to the mosque fountain", "subtype": "later conduit from a spring south-west of the church, still in use", "n": "1",
+   "period": "after the Mamluk restoration, date 'difficult to determine'; still in use", "window": "no",
+   "quote": "Still later, at a period difficult to determine, a new con- duit"},
+  {"type": "cistern", "site": "khan, south-east corner, and the yard", "subtype": "internal cistern linked to the great reservoir (later a latrine and cesspit; 10th-11th c. pottery); cistern on a branch of the late conduit", "n": "2",
+   "period": "ninth century khan, re-used by the Crusaders; the second later than the Mamluk period", "window": "no",
+   "quote": "Yet another cistern situated in the south-east corner of the khan"}
+ ]
+}
