@@ -1,0 +1,768 @@
+rule,report_a,report_b,series_a,series_b,year_a,year_b,author_test,position_test,distance_m,name_test,place_test,outcome,note
+R1,ADAJ3-007-news-kh-qumran-works,ADAJ3-007-news-palace-of-hisham,ADAJ,ADAJ,1956,1956,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R1,ADAJ4_5ar-009-kh-al-mafjar,ADAJ4_5ar-009-roman-jericho,ADAJ,ADAJ,1960,1960,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R1,ESI01-054-jerusalem-isawiye,ESI01-054-jerusalem-isawiye-survey-of-new-road,ESI,ESI,1984,1984,no,no,610,yes,no,"not linked (author or place test failed, A3)",
+R1,ESI13-125-jerusalem-morasha-city-hall-plaza,ESI13-125-jerusalem-morasha-new-gate,ESI,ESI,1995,1995,yes,no,969,yes,no,"not linked (author or place test failed, A3)",
+R1,HA100-109-morasha-city-plaza,HA100-109-morasha-new-gate,HA,HA,1993,1993,yes,no,969,yes,no,"not linked (author or place test failed, A3)",
+R1,HA34-012-beit-sahur-tomb,HA34-012-naaran-synagogue-conservation,HA,HA,1970,1970,no,,,yes,yes,"not linked (author or place test failed, A3)",
+R1,HAESI112-053-pezael-east,HAESI112-053-pezael-north,HA-ESI print,HA-ESI print,2000,2000,yes,no,2576,yes,no,"not linked (author or place test failed, A3)",
+R2,HA100-052-wadi-murrar-en-abu-mahmud,ESI13-061-wadi-murrar-ein-abu-mahmud-caves,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-055-kh-handoma,ESI13-065-kh-handoma,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-056-kh-abu-suwwana,ESI13-066-kh-abu-suwwana,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-059-kh-kakul,ESI13-069-jerusalem-kh-kakul,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-060-kh-er-ras-shufat,ESI13-071-jerusalem-kh-er-ras,HA,ESI,1993,1995,yes,yes,0,no,yes,linked,
+R2,HA100-061-mt-scopus,ESI13-072-jerusalem-mt-scopus,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-063-binyane-haumma,ESI13-074-jerusalem-binyane-haumma,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-067-third-wall-area-c,ESI13-078-jerusalem-the-third-wall-area-c,HA,ESI,1993,1995,yes,yes,0,no,yes,linked,
+R2,HA100-068-third-wall-area-d,ESI13-080-jerusalem-the-third-wall-area-d,HA,ESI,1993,1995,yes,yes,0,no,yes,linked,
+R2,HA100-072-east-talpiyot-lower-aqueduct,ESI13-083-jerusalem-east-talpiyot,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-073-givat-hamatos,ESI13-085-jerusalem-givat-hamatos,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-077-mar-elias,ESI13-089-jerusalem-mar-elias,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-096-masada,ESI13-111-masada,HA,ESI,1993,1995,yes,,,yes,yes,linked,
+R2,HA100-108-maalot-daphna,ESI13-124-jerusalem-maalot-daphna,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-109-morasha-city-plaza,ESI13-125-jerusalem-morasha-city-hall-plaza,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-109-morasha-city-plaza,ESI13-125-jerusalem-morasha-new-gate,HA,ESI,1993,1995,yes,no,969,yes,no,not linked (manual: different),reviewed: different
+R2,HA100-109-morasha-new-gate,ESI13-125-jerusalem-morasha-city-hall-plaza,HA,ESI,1993,1995,yes,no,969,yes,no,not linked (manual: different),reviewed: different
+R2,HA100-109-morasha-new-gate,ESI13-125-jerusalem-morasha-new-gate,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-110-en-gedi-anchor,ESI13-126-en-gedi,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA100-110-masada-gardens,ESI13-127-masada,HA,ESI,1993,1995,yes,,,yes,yes,linked,
+R2,HA101-068-map-of-el-mughayir-survey,ESI14-078-map-of-el-mughayir-survey,HA,ESI,1993,1995,yes,,,yes,yes,linked,
+R2,HA101-074-adam,ESI14-086-adam,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-076-har-adar,ESI14-087-har-adar,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-077-kh-el-burj-ramot,ESI14-088-jerusalem-khirbet-el-burj,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-080-mamilla-1991-1993,ESI14-092-jerusalem-mamilla,HA,ESI,1993,1995,yes,,,yes,yes,linked,
+R2,HA101-083-city-of-david,ESI14-096-jerusalem-city-of-david,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-084-arnona,ESI14-097-jerusalem-arnona,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-086-beit-safafa,ESI14-099-jerusalem-beit-safafa,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-089-nahal-refaim,ESI14-103-jerusalem-nahal-refaim,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-090-har-etan-survey,ESI14-104-har-etan-survey,HA,ESI,1993,1995,yes,,,yes,yes,linked,
+R2,HA101-096-alon-shevut,ESI14-111-alon-shevut,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-123-duma,ESI14-142-duma,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-124-netiv-hagedud,ESI14-142-netiv-hagedud,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-125-ras-makabb-es-samn,ESI14-143-ras-makab-es-saman,HA,ESI,1993,1995,yes,yes,0,no,yes,linked,
+R2,HA101-126-hebron-rd,ESI14-145-jerusalem-hebron-road,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA101-126-shemuel-hanavi-st,ESI14-144-jerusalem-shemuel-hanavi-street,HA,ESI,1993,1995,yes,yes,0,yes,yes,linked,
+R2,HA103-089-en-gedi-synagogue-area,ESI15-144-map-en-gedi,HA,ESI,1995,1996,yes,,,yes,yes,linked,
+R2,HA104-081-kh-kakul,ESI16-091-jerusalem-khirbet-kakul,HA,ESI,1995,1997,yes,,,yes,yes,linked,
+R2,HA104-085-kh-adasa,ESI16-095-jerusalem-khirbet-adasa,HA,ESI,1995,1997,yes,yes,0,yes,yes,linked,
+R2,HA104-087-kh-el-burj-ramot,ESI16-097-jerusalem-khirbet-el-burj,HA,ESI,1995,1997,yes,yes,0,yes,yes,linked,
+R2,HA104-087-pisgat-zeev-east-a,ESI16-098-jerusalem-pisgat-zeev-east-a,HA,ESI,1995,1997,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA104-089-pisgat-zeev-e,ESI16-099-jerusalem-pisgat-zeev-e,HA,ESI,1995,1997,yes,yes,0,yes,yes,linked,
+R2,HA104-091-bet-eliyahu,ESI16-102-jerusalem-bet-eliyahu,HA,ESI,1995,1997,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA104-092-ha-shalshelet-st,ESI16-104-jerusalem-hashalshelet-street,HA,ESI,1995,1997,yes,yes,0,no,yes,linked,
+R2,HA104-096-robinsons-arch,ESI16-108-jerusalem-robinsons-arch,HA,ESI,1995,1997,yes,,,yes,yes,linked,
+R2,HA104-097-mt-of-olives,ESI16-109-jerusalem-mount-of-olives,HA,ESI,1995,1997,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA104-098-mt-zion,ESI16-110-jerusalem-mount-zion,HA,ESI,1995,1997,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA104-102-kh-kabbar,ESI16-113-khirbet-kabbar,HA,ESI,1995,1997,yes,yes,0,yes,yes,linked,
+R2,HA104-126-maale-adummim,ESI16-141-maale-adummim,HA,ESI,1995,1997,yes,yes,0,yes,yes,linked,
+R2,HA106-119-maale-mikhmash,ESI18-078-maale-mikhmash,HA,ESI,1996,1998,yes,yes,0,yes,yes,linked,
+R2,HA106-134-golden-gate,ESI18-087-jerusalem-the-golden-gate,HA,ESI,1996,1998,yes,yes,0,yes,yes,linked,
+R2,HA106-134-robinsons-arch,ESI18-088-jerusalem-robinsons-arch,HA,ESI,1996,1998,yes,,,yes,yes,linked,
+R2,HA106-137-akeldama,ESI18-091-jerusalem-akeldama,HA,ESI,1996,1998,yes,yes,0,yes,yes,linked,
+R2,HA106-139-city-of-david,ESI18-091-jerusalem-city-of-david,HA,ESI,1996,1998,yes,,,yes,yes,linked,
+R2,HA106-140-gallicantu,ESI18-093-jerusalem-church-of-st-peter-in-gallicantu,HA,ESI,1996,1998,yes,,,yes,yes,linked,
+R2,HA106-141-holyland-hotel,ESI18-094-jerusalem-holyland-hotel,HA,ESI,1996,1998,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA106-142-beit-safafa-west,ESI18-094-jerusalem-beit-safafa-west,HA,ESI,1996,1998,yes,yes,0,yes,yes,linked,
+R2,HA106-147-kh-beit-bassa,ESI18-098-khirbet-beit-bassa,HA,ESI,1996,1998,yes,yes,0,yes,yes,linked,
+R2,HA106-169-kafr-qallil,ESI18-110-kafr-qallil,HA,ESI,1996,1998,yes,yes,0,yes,yes,linked,
+R2,HA106-171-shemuel-ha-navi-st,ESI18-112-jerusalem-shemuel-ha-navi-street,HA,ESI,1996,1998,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA106-172-bet-ha-kerem,ESI18-112-jerusalem-bet-ha-kerem,HA,ESI,1996,1998,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA107-081-har-hozevim,ESI19-056-jerusalem-har-hozevim,HA,ESI,1997,1999,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA107-084-mt-scopus,ESI19-058-jerusalem-mount-scopus,HA,ESI,1997,1999,yes,yes,0,no,yes,linked,
+R2,HA107-085-ha-ofel-road,ESI19-059-jerusalem-the-ophel-road,HA,ESI,1997,1999,yes,yes,0,no,yes,linked,
+R2,HA107-086-gihon-spring,ESI19-060-jerusalem-the-gihon-spring,HA,ESI,1997,1999,yes,yes,0,yes,yes,linked,
+R2,HA107-087-abu-tor,ESI19-061-jerusalem-abu-tor,HA,ESI,1997,1999,yes,yes,0,yes,yes,linked,
+R2,HA107-088-gallicantu-1995,ESI19-062-jerusalem-church-of-st-peter-in-gallicantu-1995,HA,ESI,1997,1999,yes,,,yes,yes,linked,
+R2,HA107-089-mamilla-st,ESI19-063-jerusalem-mamilla-street,HA,ESI,1997,1999,yes,yes,0,yes,yes,linked,
+R2,HA107-091-nave-shaanan,ESI19-064-jerusalem-neve-shaanan,HA,ESI,1997,1999,yes,yes,0,no,yes,linked,
+R2,HA107-092-en-kerem,ESI19-065-jerusalem-en-kerem,HA,ESI,1997,1999,yes,yes,0,yes,yes,linked,
+R2,HA107-093-givat-homa,ESI19-065-jerusalem-givat-homa,HA,ESI,1997,1999,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA107-094-en-yaal-a,ESI19-066-jerusalem-en-yaal-a,HA,ESI,1997,1999,yes,yes,0,yes,yes,linked,
+R2,HA107-095-en-yaal-b,ESI19-067-jerusalem-en-yaal-b,HA,ESI,1997,1999,yes,,,yes,yes,linked,
+R2,HA107-096-alona,ESI19-068-alona,HA,ESI,1997,1999,yes,yes,0,yes,yes,linked,
+R2,HA107-099-abu-ghosh,ESI19-070-abu-ghosh,HA,ESI,1997,1999,yes,yes,0,yes,yes,linked,
+R2,HA107-102-rekhes-soreq,ESI19-072-soreq-ridge,HA,ESI,1997,1999,yes,yes,0,no,yes,linked,
+R2,HA107-137-frankish-buildings-survey,ESI19-095-survey-of-frankish-buildings,HA,ESI,1997,1999,yes,no,138663,yes,no,linked (manual: same),reviewed: same
+R2,HA107-151-maale-adummim,ESI19-107-maale-adummim,HA,ESI,1997,1999,yes,yes,0,yes,yes,linked,
+R2,HA108-133-ramot-forest,ESI20-096-jerusalem-ramot-forest,HA,ESI,1998,2000,yes,yes,0,yes,yes,linked,
+R2,HA108-134-givat-ha-mivtar,ESI20-098-jerusalem-givat-ha-mivtar,HA,ESI,1998,2000,yes,yes,0,yes,yes,linked,
+R2,HA108-136-gihon-spring,ESI20-099-jerusalem-the-gihon-spring,HA,ESI,1998,2000,yes,,,yes,yes,linked,
+R2,HA108-138-old-city-wall,ESI20-100-jerusalem-old-city-wall,HA,ESI,1998,2000,yes,yes,0,yes,yes,linked,
+R2,HA108-139-kathisma-church,ESI20-101-jerusalem-mar-elias-the-kathisma-church,HA,ESI,1998,2000,yes,,,yes,yes,linked,
+R2,HA108-142-betar-forest,ESI20-104-betar-forest,HA,ESI,1998,2000,yes,yes,0,yes,yes,linked,
+R2,HA108-156-jebel-el-habun,ESI20-115-jebel-el-habun-alon-shevut,HA,ESI,1998,2000,yes,yes,0,yes,yes,linked,
+R2,HA108-179-qumran-graffito,ESI20-134-horbat-qumran-graffito,HA,ESI,1998,2000,yes,yes,0,yes,yes,linked,
+R2,HA108-180-diskin-st,ESI20-135-jerusalem-diskin-street,HA,ESI,1998,2000,yes,yes,0,yes,yes,linked,
+R2,HA108-180-robinsons-arch-coins,ESI20-135-jerusalem-robinsons-arch,HA,ESI,1998,2000,yes,,,yes,yes,linked,
+R2,HA65-031-jerusalem-jewish-quarter,ESI01-055-jerusalem-jewish-quarter,HA,ESI,1978,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA65-037-jerusalem-city-of-david-birket-el-hamra,ESI01-049-jerusalem-city-of-david,HA,ESI,1978,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA65-037-jerusalem-city-of-david-birket-el-hamra,ESI02-052-city-of-david,HA,ESI,1978,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA67-043-jerusalem-city-of-david,ESI01-049-jerusalem-city-of-david,HA,ESI,1978,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA67-043-jerusalem-city-of-david,ESI02-052-city-of-david,HA,ESI,1978,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA69-057-jerusalem-mt-scopus-tombs,ESI01-056-jerusalem-mt-scopus,HA,ESI,1979,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA72-028-jerusalem-mount-zion-gate,ESI01-057-jerusalem-mt-zion,HA,ESI,1979,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA72-028-jerusalem-mount-zion-gate,ESI02-057-mt-zion,HA,ESI,1979,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA73-025-city-of-david-1979,ESI01-049-jerusalem-city-of-david,HA,ESI,1980,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA73-025-city-of-david-1979,ESI02-052-city-of-david,HA,ESI,1980,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA73-025-city-of-david-1979,ESI03-049-city-of-david-1984,HA,ESI,1980,1985,yes,,,yes,yes,not linked (manual: different),
+R2,HA73-025-city-of-david-1979,ESI04-051-jerusalem-city-of-david,HA,ESI,1980,1986,yes,,,yes,yes,not linked (manual: different),
+R2,HA74-020-city-of-david-1980,ESI01-049-jerusalem-city-of-david,HA,ESI,1980,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA74-020-city-of-david-1980,ESI02-052-city-of-david,HA,ESI,1980,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA74-020-city-of-david-1980,ESI03-049-city-of-david-1984,HA,ESI,1980,1985,yes,,,yes,yes,not linked (manual: different),
+R2,HA74-020-city-of-david-1980,ESI04-051-jerusalem-city-of-david,HA,ESI,1980,1986,yes,,,yes,yes,not linked (manual: different),
+R2,HA77-025-kh-ein-el-tut,ESI01-052-jerusalem-kh-ein-et-tut,HA,ESI,1981,1984,yes,,,yes,yes,linked (manual: same),
+R2,HA77-026-mount-zion,ESI01-057-jerusalem-mt-zion,HA,ESI,1981,1984,yes,,,yes,yes,linked (manual: same),
+R2,HA77-026-mount-zion,ESI02-057-mt-zion,HA,ESI,1981,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA77-026-mount-zion,ESI04-055-jerusalem-mt-zion,HA,ESI,1981,1986,yes,,,yes,yes,not linked (manual: different),
+R2,HA77-062-en-gedi-gem,ESI04-025-en-gedi,HA,ESI,1981,1986,yes,,,yes,yes,not linked (manual: different),
+R2,HA78-053-jericho-winter-palaces,ESI01-044-jericho-winter-palaces,HA,ESI,1982,1984,yes,,,yes,yes,linked,
+R2,HA78-059-ras-et-tawil,ESI01-101-ras-et-tawil,HA,ESI,1982,1984,yes,,,yes,yes,linked (manual: same),
+R2,HA78-061-jewish-quarter-1981-1982,ESI01-055-jerusalem-jewish-quarter,HA,ESI,1982,1984,yes,,,yes,yes,linked,
+R2,HA78-062-city-of-david-1981,ESI01-049-jerusalem-city-of-david,HA,ESI,1982,1984,yes,,,yes,yes,linked,
+R2,HA78-066-ramot-survey,ESI01-058-jerusalem-ramot-survey,HA,ESI,1982,1984,yes,,,yes,yes,linked,
+R2,HA78-068-ramot-tomb,ESI01-057-jerusalem-ramot,HA,ESI,1982,1984,yes,,,yes,yes,linked (manual: same),
+R2,HA78-068-winepress-ein-et-tut,ESI01-052-jerusalem-kh-ein-et-tut,HA,ESI,1982,1984,yes,,,yes,yes,not linked (one side already paired),
+R2,HA78-069-giloh-tomb,ESI01-052-jerusalem-giloh,HA,ESI,1982,1984,yes,yes,0,yes,yes,linked,
+R2,HA78-069-neve-yaaqov,ESI01-057-jerusalem-neve-yaaqov,HA,ESI,1982,1984,yes,yes,0,yes,yes,linked (manual: same),
+R2,HA78-069-neve-yaaqov,ESI01-101-ras-et-tawil,HA,ESI,1982,1984,yes,yes,233,no,yes,not linked (manual: different),
+R2,HA78-070-mount-scopus,ESI01-056-jerusalem-mt-scopus,HA,ESI,1982,1984,yes,yes,0,yes,yes,linked,
+R2,HA78-071-russian-compound,ESI01-058-jerusalem-russian-compound,HA,ESI,1982,1984,yes,,,yes,yes,linked,
+R2,HA78-071-zova-tomb,ESI01-114-sova-iron-age-tomb,HA,ESI,1982,1984,yes,yes,0,no,yes,linked,
+R2,HA78-079-herodion-1980,ESI01-040-herodion,HA,ESI,1982,1984,yes,,,yes,yes,linked,
+R2,HA78-087-en-gedi-mill,ESI01-026-en-gedi,HA,ESI,1982,1984,yes,,,yes,yes,linked,
+R2,HA80-028-isawiya-miqveh,ESI01-054-jerusalem-isawiye,HA,ESI,1982,1984,yes,yes,0,no,yes,linked,
+R2,HA80-030-mount-zion-1981,ESI01-057-jerusalem-mt-zion,HA,ESI,1982,1984,yes,,,yes,yes,not linked (one side already paired),
+R2,HA80-030-ramot-burial-cave,ESI01-057-jerusalem-ramot,HA,ESI,1982,1984,yes,,,yes,yes,not linked (manual: different),
+R2,HA86-020-wadi-el-ein-monastery,ESI04-109-wadi-el-ein-byzantine-monastery,HA,ESI,1985,1986,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA86-021-anata,ESI04-003-anata,HA,ESI,1985,1986,yes,yes,0,yes,yes,linked,
+R2,HA86-022-dung-gate,ESI04-052-jerusalem-dung-gate,HA,ESI,1985,1986,yes,,,yes,yes,linked,
+R2,HA86-023-abu-tor,ESI04-051-jerusalem-abu-tor,HA,ESI,1985,1986,yes,yes,0,yes,yes,linked,
+R2,HA86-023-deir-mukallik,ESI04-021-deir-mukallik,HA,ESI,1985,1986,yes,,,yes,yes,linked,
+R2,HA86-024-el-mazia-cave,ESI04-062-el-maasia-cave,HA,ESI,1985,1986,yes,yes,0,no,yes,linked,
+R2,HA86-030-en-gedi,ESI04-025-en-gedi,HA,ESI,1985,1986,yes,,,yes,yes,linked,
+R2,HA87-028-er-ram,ESI04-094-er-ram,HA,ESI,1985,1986,yes,yes,0,yes,yes,linked,
+R2,HA87-028-kh-ed-dawara,ESI04-020-kh-ed-dawara,HA,ESI,1985,1986,yes,yes,0,yes,yes,linked,
+R2,HA87-029-nahal-zimrah,ESI04-080-nahal-zimra-site,HA,ESI,1985,1986,yes,yes,0,no,yes,linked,
+R2,HA87-031-city-of-david-1985,ESI04-051-jerusalem-city-of-david,HA,ESI,1985,1986,yes,,,yes,yes,linked,
+R2,HA87-032-mount-zion-1985,ESI04-055-jerusalem-mt-zion,HA,ESI,1985,1986,yes,,,yes,yes,linked,
+R2,HA87-033-emeq-refaim-1985,ESI04-053-jerusalem-emeq-refaim,HA,ESI,1985,1986,yes,,,yes,yes,linked,
+R2,HA96-020-mamilla-area,ESI10-024-jerusalem-mamilla-area,HA,ESI,1991,1992,yes,yes,0,yes,yes,linked,
+R2,HA96-021-ezrat-torah,ESI10-026-jerusalem-ezrat-torah-quarter,HA,ESI,1991,1992,yes,yes,0,yes,yes,linked,
+R2,HA96-023-sataf-1989,ESI10-027-sataf-1989,HA,ESI,1991,1992,yes,,,yes,yes,linked,
+R2,HA96-030-hariton-suspended-cave,ESI10-036-suspended-cave-of-chariton,HA,ESI,1991,1992,yes,,,yes,yes,linked,
+R2,HA97-058-ancient-road-n-judean-desert,ESI10-125-ancient-road-northern-judean-desert,HA,ESI,1991,1992,yes,yes,0,no,yes,linked,
+R2,HA97-059-wadi-zimra,ESI10-125-jerusalem-wadi-zimra,HA,ESI,1991,1992,yes,,,yes,yes,linked,
+R2,HA97-060-pisgat-zeev-deir-ghazali,ESI10-128-jerusalem-pisgat-zeev-deir-ghazala,HA,ESI,1991,1992,yes,yes,0,yes,yes,linked,
+R2,HA97-066-street-of-the-chain-a,ESI10-134-jerusalem-street-of-the-chain-a,HA,ESI,1991,1992,no,yes,0,yes,yes,linked (manual: same),reviewed: same
+R2,HA97-066-street-of-the-chain-a,ESI10-135-jerusalem-street-of-the-chain-b,HA,ESI,1991,1992,no,yes,210,yes,yes,not linked (manual: different),reviewed: different
+R2,HA97-067-street-of-the-chain-b,ESI10-134-jerusalem-street-of-the-chain-a,HA,ESI,1991,1992,no,yes,210,yes,yes,not linked (manual: different),reviewed: different
+R2,HA97-067-street-of-the-chain-b,ESI10-135-jerusalem-street-of-the-chain-b,HA,ESI,1991,1992,yes,yes,0,yes,yes,linked,
+R2,HA97-068-akeldama,ESI10-136-jerusalem-akeldama,HA,ESI,1991,1992,yes,yes,0,yes,yes,linked,
+R2,HA97-071-east-talpiyot,ESI10-140-jerusalem-east-talpiyot-yaar-hashalom,HA,ESI,1991,1992,yes,yes,0,yes,yes,linked,
+R2,HA97-078-kh-khamase,ESI10-147-farmsteads-in-northern-judea-betar-area-survey,HA,ESI,1991,1992,yes,yes,223,no,yes,not linked (manual: different),
+R2,HA97-078-kh-khamase,ESI10-148-khirbet-khamase,HA,ESI,1991,1992,yes,yes,0,yes,yes,linked (manual: same),
+R2,HA97-079-kh-hilal,ESI10-150-khirbet-hilal,HA,ESI,1991,1992,yes,yes,0,no,yes,linked,
+R2,HA99-047-pisgat-zeev-east-a,ESI12-052-jerusalem-pisgat-zeev-east-a,HA,ESI,1993,1994,yes,yes,0,yes,yes,linked,
+R2,HA99-049-pisgat-zeev-d,ESI12-054-jerusalem-pisgat-zeev-d-h-zimri,HA,ESI,1993,1994,yes,yes,0,yes,yes,linked,
+R2,HA99-051-pisgat-zeev-bne-beitkha,ESI12-056-jerusalem-pisgat-zeev-villa-quarter,HA,ESI,1993,1994,yes,yes,9,yes,yes,linked,
+R2,HA99-054-mamilla-a,ESI12-059-jerusalem-mamilla-1,HA,ESI,1993,1994,yes,,,yes,yes,linked,
+R2,HA99-055-mamilla-b,ESI12-061-jerusalem-mamilla-2,HA,ESI,1993,1994,yes,yes,0,yes,yes,linked,
+R2,HA99-057-nahalat-ahim,ESI12-063-jerusalem-nahalat-ahim,HA,ESI,1993,1994,yes,yes,0,yes,yes,linked,
+R2,HA99-059-manahat,ESI12-066-jerusalem-manahat,HA,ESI,1993,1994,yes,yes,0,yes,yes,linked,
+R2,HA99-061-nahal-refaim-1990,ESI12-067-jerusalem-nahal-refaim-1990,HA,ESI,1993,1994,yes,,,yes,yes,linked,
+R2,HA99-064-givat-massua,ESI12-071-jerusalem-givat-massua,HA,ESI,1993,1994,yes,no,612,yes,no,linked (manual: same),reviewed: same
+R2,HA99-103-en-gedi,ESI12-114-en-gedi,HA,ESI,1993,1994,yes,yes,20,yes,yes,linked,
+R4,ATQ119-i12-monumental-construction-water-management-foot-temple,ATQ106-239-work-cilo-impression-roman-period-private,ATQ,ATQ,2025,2022,yes,,,no,no,not linked (place test failed),permit A8276
+R4,HAESI-106,IAAR69-kathisma,HA-ESI online,IAAR,2005,2022,yes,,,no,no,linked (manual: same),permit A3276; place test failed; reviewed: same
+R4,HAESI-1219,IAAR63-jerusalem-western-wall-plaza-i,HA-ESI online,IAAR,2009,2019,yes,yes,0,yes,yes,linked,permit A4604
+R4,HAESI-1219,IAAR67-jerusalem-western-wall-plaza-iii,HA-ESI online,IAAR,2009,2021,yes,,,yes,yes,linked,permit A4604
+R4,HAESI-1738,ATQ106-195-herodian-pavement-esplanade-later-remains-near,HA-ESI online,ATQ,2011,2022,yes,,,no,no,linked (manual: same),permit A5124; place test failed; reviewed: same
+R4,HAESI-18755,IAAR67-jerusalem-western-wall-plaza-iii,HA-ESI online,IAAR,2015,2021,yes,,,yes,yes,linked,permit A5835
+R4,HAESI-2198,HAESI-25217,HA-ESI online,HA-ESI online,2012,2017,yes,yes,0,yes,yes,linked,permit A5276
+R4,HAESI-22787,ATQ113-i02-first-century-bce-chalk-vessel-assemblage,HA-ESI online,ATQ,2015,2023,yes,,,yes,yes,linked,permit A5854
+R4,HAESI-23802,HAESI-25480,HA-ESI online,HA-ESI online,2015,2018,yes,yes,100,no,yes,linked,permit A6112
+R4,HAESI-23807,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HA-ESI online,ATQ,2015,2026,yes,yes,0,no,yes,linked,permit A7130
+R4,HAESI-24931,ATQ106-257-byzantine-period-monastery-har-homa-between,HA-ESI online,ATQ,2016,2022,yes,yes,0,yes,yes,linked,permit A6520
+R4,HAESI-25085,HAESI-25804,HA-ESI online,HA-ESI online,2016,2020,yes,yes,0,yes,yes,linked,permit A5249
+R4,HAESI-25185,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HA-ESI online,ATQ,2017,2026,yes,yes,0,no,yes,linked,permit A7288
+R4,HAESI-25221,ATQ106-195-herodian-pavement-esplanade-later-remains-near,HA-ESI online,ATQ,2017,2022,yes,,,no,no,linked (manual: same),permit A5124; place test failed; reviewed: same
+R4,HAESI-25221,HAESI-1738,HA-ESI online,HA-ESI online,2017,2011,yes,,,no,no,not linked (place test failed),permit A5124
+R4,HAESI-25405,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HA-ESI online,ATQ,2018,2022,yes,yes,0,yes,yes,linked,permit A7721
+R4,HAESI-25538,HAESI-25961,HA-ESI online,HA-ESI online,2019,2021,yes,yes,0,yes,yes,linked,permit A8248
+R4,HAESI-25748,ATQ106-001-middle-bronze-age-ii-burial-cave,HA-ESI online,ATQ,2020,2022,yes,yes,10,yes,yes,linked,permit A6898
+R4,HAESI-25810,HAESI-25865,HA-ESI online,HA-ESI online,2020,2020,yes,no,2903,no,no,not linked (place test failed),permit A8577
+R4,HAESI-25886,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HA-ESI online,ATQ,2021,2022,yes,yes,47,yes,yes,linked,permit A6987
+R4,HAESI-25927,IAAR67-jerusalem-western-wall-plaza-iii,HA-ESI online,IAAR,2021,2021,yes,,,no,no,linked (manual: same),permit A8053; place test failed; reviewed: same
+R4,HAESI-26195,ATQ106-239-work-cilo-impression-roman-period-private,HA-ESI online,ATQ,2022,2022,yes,,,yes,yes,linked,permit A8276
+R4,HAESI-26195,ATQ119-i12-monumental-construction-water-management-foot-temple,HA-ESI online,ATQ,2022,2025,yes,yes,0,yes,yes,linked,permit A8276
+R4,HAESI-26256,ATQ110-i15-greek-inscribed-early-islamic-period-oil,HA-ESI online,ATQ,2022,2023,yes,,,no,no,linked (manual: same),permit A7976; place test failed; reviewed: same
+R4,HAESI-26310,ATQ110-i18-unique-crusader-period-lead-seal-old,HA-ESI online,ATQ,2023,2023,yes,yes,0,no,yes,linked,permit A8715
+R4,HAESI-26607,ATQ113-i02-first-century-bce-chalk-vessel-assemblage,HA-ESI online,ATQ,2025,2023,yes,,,yes,yes,linked,permit A7970
+R4,HAESI112-075-jerusalem-mount-scopus-east,ATQ113-i09-second-temple-period-chalk-quarry-vessel,HA-ESI print,ATQ,2000,2023,yes,no,860,yes,no,linked (manual: same),permit A3114; place test failed; reviewed: same
+R4,HAESI113-075-jerusalem-sallah-ed-din-street,ATQ80-045-excavations-sallah-ed-din-street-jerusalem,HA-ESI print,ATQ,2001,2015,yes,,,yes,yes,linked,permit A2900
+R4,IAAR63-jerusalem-western-wall-plaza-i,IAAR67-jerusalem-western-wall-plaza-iii,IAAR,IAAR,2019,2021,yes,,,no,no,not linked (place test failed),permit A4604
+R5,ATQ101-001s-remains-rural-settlements-middle-bronze-age,ATQ101-047-middle-bronze-age-pottery-horbat-alona,ATQ,ATQ,2020,2020,no,yes,0,yes,yes,linked,
+R5,ATQ101-047-middle-bronze-age-pottery-horbat-alona,ATQ101-075-scarab-two-scaraboids-horbat-alona-khirbat,ATQ,ATQ,2020,2020,no,yes,0,yes,yes,linked,
+R5,ATQ101-071s-city-david-ir-david-siloam-road,ATQ101-079-radiocarbon-dating-plaster-siloam-pool-city,ATQ,ATQ,2020,2020,no,,,yes,yes,linked,
+R5,ATQ101-089s-coins-city-david-ir-david-siloam,ATQ101-071s-city-david-ir-david-siloam-road,ATQ,ATQ,2020,2020,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ101-089s-coins-city-david-ir-david-siloam,ATQ101-079-radiocarbon-dating-plaster-siloam-pool-city,ATQ,ATQ,2020,2020,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ101-089s-coins-city-david-ir-david-siloam,ATQ101-087s-second-temple-period-registration-tag-city,ATQ,ATQ,2020,2020,no,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R5,ATQ104-193-remains-late-byzantine-early-islamic-mamluk,ATQ104-211-pottery-assemblages-zahal-square-tunnel-jerusalem,ATQ,ATQ,2021,2021,no,,,yes,yes,linked,
+R5,ATQ104-193-remains-late-byzantine-early-islamic-mamluk,ATQ104-231-coins-zahal-square-tunnel-jerusalem,ATQ,ATQ,2021,2021,no,,,yes,yes,linked,
+R5,ATQ104-211-pottery-assemblages-zahal-square-tunnel-jerusalem,ATQ104-231-coins-zahal-square-tunnel-jerusalem,ATQ,ATQ,2021,2021,no,,,yes,yes,linked,
+R5,ATQ106-033-residue-analysis-middle-bronze-age-vessels,ATQ106-001-middle-bronze-age-ii-burial-cave,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-047-human-skeletal-remains-middle-bronze-age,ATQ106-001-middle-bronze-age-ii-burial-cave,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-047-human-skeletal-remains-middle-bronze-age,ATQ106-033-residue-analysis-middle-bronze-age-vessels,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-047-human-skeletal-remains-middle-bronze-age,ATQ106-049-animal-bone-remains-middle-bronze-age,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-049-animal-bone-remains-middle-bronze-age,ATQ106-001-middle-bronze-age-ii-burial-cave,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-057-jerusalem-ivories-iron-age-decorated-ivory,ATQ106-339-coins-givati-parking-lot-jerusalem,ATQ,ATQ,2022,2022,no,,,yes,yes,not linked (manual: different),reviewed: different
+R5,ATQ106-089-herodian-period-staircase-mount-zion-jerusalem,ATQ106-129-pottery-bishop-gobat-school-mount-zion,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-089-herodian-period-staircase-mount-zion-jerusalem,ATQ106-151-coins-bishop-gobat-school-mount-zion,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-147-chalkstone-vessels-bishop-gobat-school-mount,ATQ106-129-pottery-bishop-gobat-school-mount-zion,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-147-chalkstone-vessels-bishop-gobat-school-mount,ATQ106-151-coins-bishop-gobat-school-mount-zion,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-151-coins-bishop-gobat-school-mount-zion,ATQ106-129-pottery-bishop-gobat-school-mount-zion,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-177-facade-tel-arza-burial-cave-architectural,ATQ106-193-arabic-letters-facade-tel-arza-burial,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-195-herodian-pavement-esplanade-later-remains-near,ATQ106-211-early-roman-medieval-period-pottery-excavation,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-235-coins-excavation-near-warrens-gate-jerusalem,ATQ106-195-herodian-pavement-esplanade-later-remains-near,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-235-coins-excavation-near-warrens-gate-jerusalem,ATQ106-211-early-roman-medieval-period-pottery-excavation,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-257-byzantine-period-monastery-har-homa-between,ATQ106-293-glass-finds-monastery-har-homa,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-257-byzantine-period-monastery-har-homa-between,ATQ106-297-coins-monastery-har-homa,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-293-glass-finds-monastery-har-homa,ATQ106-297-coins-monastery-har-homa,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-301-skeletal-remains-byzantine-period-monk-har,ATQ106-257-byzantine-period-monastery-har-homa-between,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-301-skeletal-remains-byzantine-period-monk-har,ATQ106-293-glass-finds-monastery-har-homa,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-301-skeletal-remains-byzantine-period-monk-har,ATQ106-297-coins-monastery-har-homa,ATQ,ATQ,2022,2022,no,,,yes,yes,linked,
+R5,ATQ106-339-coins-givati-parking-lot-jerusalem,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,ATQ,ATQ,2022,2022,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ106-339-coins-givati-parking-lot-jerusalem,ATQ106-347-chemical-lead-isotope-composition-metal-scrap,ATQ,ATQ,2022,2022,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i12-byzantine-early-islamic-building-along-southern,ATQ112-i13-byzantine-pottery-building-900-southern-tyropoeon,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i12-byzantine-early-islamic-building-along-southern,ATQ112-i15-glass-finds-building-900-southern-tyropoeon,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i12-byzantine-early-islamic-building-along-southern,ATQ112-i16-coins-building-900-southern-tyropoeon-valley,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i12-byzantine-early-islamic-building-along-southern,ATQ112-i17-byzantine-early-islamic-faunal-remains-building,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i14-early-islamic-period-pottery-building-900,ATQ112-i12-byzantine-early-islamic-building-along-southern,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i14-early-islamic-period-pottery-building-900,ATQ112-i13-byzantine-pottery-building-900-southern-tyropoeon,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i14-early-islamic-period-pottery-building-900,ATQ112-i15-glass-finds-building-900-southern-tyropoeon,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i14-early-islamic-period-pottery-building-900,ATQ112-i16-coins-building-900-southern-tyropoeon-valley,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i14-early-islamic-period-pottery-building-900,ATQ112-i17-byzantine-early-islamic-faunal-remains-building,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i14-early-islamic-period-pottery-building-900,ATQ112-i18-byzantine-early-islamic-malacological-remains-building,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i15-glass-finds-building-900-southern-tyropoeon,ATQ112-i13-byzantine-pottery-building-900-southern-tyropoeon,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i15-glass-finds-building-900-southern-tyropoeon,ATQ112-i16-coins-building-900-southern-tyropoeon-valley,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i15-glass-finds-building-900-southern-tyropoeon,ATQ112-i17-byzantine-early-islamic-faunal-remains-building,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i15-glass-finds-building-900-southern-tyropoeon,ATQ112-i18-byzantine-early-islamic-malacological-remains-building,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i16-coins-building-900-southern-tyropoeon-valley,ATQ112-i13-byzantine-pottery-building-900-southern-tyropoeon,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i17-byzantine-early-islamic-faunal-remains-building,ATQ112-i13-byzantine-pottery-building-900-southern-tyropoeon,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i17-byzantine-early-islamic-faunal-remains-building,ATQ112-i16-coins-building-900-southern-tyropoeon-valley,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i17-byzantine-early-islamic-faunal-remains-building,ATQ112-i18-byzantine-early-islamic-malacological-remains-building,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i18-byzantine-early-islamic-malacological-remains-building,ATQ112-i13-byzantine-pottery-building-900-southern-tyropoeon,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ112-i18-byzantine-early-islamic-malacological-remains-building,ATQ112-i16-coins-building-900-southern-tyropoeon-valley,ATQ,ATQ,2023,2023,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ113-i09-second-temple-period-chalk-quarry-vessel,ATQ113-i11-stratigraphic-setting-lithology-mount-scopus-chalk,ATQ,ATQ,2023,2023,no,,,yes,yes,linked,
+R5,ATQ113-i10-pottery-assemblage-mount-scopus-chalk-vessel,ATQ113-i09-second-temple-period-chalk-quarry-vessel,ATQ,ATQ,2023,2023,no,,,yes,yes,linked,
+R5,ATQ113-i10-pottery-assemblage-mount-scopus-chalk-vessel,ATQ113-i11-stratigraphic-setting-lithology-mount-scopus-chalk,ATQ,ATQ,2023,2023,no,,,yes,yes,linked,
+R5,ATQ116-i11-intermediate-middle-bronze-age-settlement-remains,ATQ116-i12-intermediate-bronze-age-middle-bronze-age,ATQ,ATQ,2024,2024,no,,,no,no,linked (manual: same),reviewed: same
+R5,ATQ116-i13-early-bronze-age-iv-intermediate-bronze,ATQ116-i11-intermediate-middle-bronze-age-settlement-remains,ATQ,ATQ,2024,2024,no,,,no,no,linked (manual: same),reviewed: same
+R5,ATQ116-i13-early-bronze-age-iv-intermediate-bronze,ATQ116-i12-intermediate-bronze-age-middle-bronze-age,ATQ,ATQ,2024,2024,no,,,yes,yes,linked,
+R5,ATQ116-i14-intermediate-bronze-age-fauna-suspected-cultic,ATQ116-i11-intermediate-middle-bronze-age-settlement-remains,ATQ,ATQ,2024,2024,no,,,no,no,linked (manual: same),reviewed: same
+R5,ATQ119-i13-pottery-western-wall-tunnels-jerusalem,ATQ119-i12-monumental-construction-water-management-foot-temple,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i13-pottery-western-wall-tunnels-jerusalem,ATQ119-i14-glass-western-wall-tunnels-jerusalem,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i13-pottery-western-wall-tunnels-jerusalem,ATQ119-i15-architectural-elements-statue-fragment-western-wall,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i13-pottery-western-wall-tunnels-jerusalem,ATQ119-i16-coins-western-wall-tunnels-jerusalem,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i13-pottery-western-wall-tunnels-jerusalem,ATQ119-i17-roman-period-radiocarbon-chronology-great-causeway,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i14-glass-western-wall-tunnels-jerusalem,ATQ119-i12-monumental-construction-water-management-foot-temple,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i14-glass-western-wall-tunnels-jerusalem,ATQ119-i17-roman-period-radiocarbon-chronology-great-causeway,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i15-architectural-elements-statue-fragment-western-wall,ATQ119-i14-glass-western-wall-tunnels-jerusalem,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i15-architectural-elements-statue-fragment-western-wall,ATQ119-i16-coins-western-wall-tunnels-jerusalem,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i16-coins-western-wall-tunnels-jerusalem,ATQ119-i12-monumental-construction-water-management-foot-temple,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i16-coins-western-wall-tunnels-jerusalem,ATQ119-i14-glass-western-wall-tunnels-jerusalem,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ119-i16-coins-western-wall-tunnels-jerusalem,ATQ119-i17-roman-period-radiocarbon-chronology-great-causeway,ATQ,ATQ,2025,2025,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ120-i19-dendroarchaeological-analysis-charcoal-fragments-byzantine-street,ATQ120-i16-coins-excavations-byzantine-street-area-s2,ATQ,ATQ,2026,2026,no,,,yes,yes,linked,
+R5,ATQ48-i07-note-fauna-recovered-tombs-wadi-el,ATQ48-i06-human-skeletal-remains-wadi-el-halaf,ATQ,ATQ,2004,2004,no,,,yes,yes,linked,
+R5,ATQ48-i15-burial-grounds-industrial-area-wadi-el,ATQ48-i06-human-skeletal-remains-wadi-el-halaf,ATQ,ATQ,2004,2004,no,,,yes,yes,linked,
+R5,ATQ49-i06-medieval-pottery-en-gedi,ATQ49-i22-coins-excavations-village-en-gedi-1993,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i06-medieval-pottery-en-gedi,ATQ49-i24-radiocarbon-dating-samples-village-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i07-identification-charred-wood-remains-en-gedi,ATQ49-i06-medieval-pottery-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i07-identification-charred-wood-remains-en-gedi,ATQ49-i20-excavations-village-en-gedi-1993-1995,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i07-identification-charred-wood-remains-en-gedi,ATQ49-i21-glass-vessels-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i07-identification-charred-wood-remains-en-gedi,ATQ49-i22-coins-excavations-village-en-gedi-1993,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i08-fish-remains-en-gedi,ATQ49-i06-medieval-pottery-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i08-fish-remains-en-gedi,ATQ49-i20-excavations-village-en-gedi-1993-1995,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i08-fish-remains-en-gedi,ATQ49-i21-glass-vessels-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i08-fish-remains-en-gedi,ATQ49-i22-coins-excavations-village-en-gedi-1993,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i20-excavations-village-en-gedi-1993-1995,ATQ49-i06-medieval-pottery-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i20-excavations-village-en-gedi-1993-1995,ATQ49-i21-glass-vessels-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i20-excavations-village-en-gedi-1993-1995,ATQ49-i22-coins-excavations-village-en-gedi-1993,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i20-excavations-village-en-gedi-1993-1995,ATQ49-i23-remains-seeds-fruits-insects-excavations-village,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i20-excavations-village-en-gedi-1993-1995,ATQ49-i24-radiocarbon-dating-samples-village-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i21-glass-vessels-en-gedi,ATQ49-i06-medieval-pottery-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i21-glass-vessels-en-gedi,ATQ49-i22-coins-excavations-village-en-gedi-1993,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i21-glass-vessels-en-gedi,ATQ49-i24-radiocarbon-dating-samples-village-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i23-remains-seeds-fruits-insects-excavations-village,ATQ49-i06-medieval-pottery-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i23-remains-seeds-fruits-insects-excavations-village,ATQ49-i21-glass-vessels-en-gedi,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i23-remains-seeds-fruits-insects-excavations-village,ATQ49-i22-coins-excavations-village-en-gedi-1993,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ49-i24-radiocarbon-dating-samples-village-en-gedi,ATQ49-i22-coins-excavations-village-en-gedi-1993,ATQ,ATQ,2005,2005,no,,,yes,yes,linked,
+R5,ATQ54-001-jerusalem-khirbat-kakul-pisgat-zeev-h,ATQ54-075-medieval-ceramics-khirbat-kakul,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ54-001-jerusalem-khirbat-kakul-pisgat-zeev-h,ATQ54-105-inscribed-jar-handle-khirbat-kakul,ATQ,ATQ,2006,2006,no,yes,0,yes,yes,linked,
+R5,ATQ54-001-jerusalem-khirbat-kakul-pisgat-zeev-h,ATQ54-107-glass-vessels-khirbat-kakul,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ54-001-jerusalem-khirbat-kakul-pisgat-zeev-h,ATQ54-113-coins-excavations-khirbat-kakul,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ54-105-inscribed-jar-handle-khirbat-kakul,ATQ54-107-glass-vessels-khirbat-kakul,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ54-105-inscribed-jar-handle-khirbat-kakul,ATQ54-113-coins-excavations-khirbat-kakul,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ54-107-glass-vessels-khirbat-kakul,ATQ54-075-medieval-ceramics-khirbat-kakul,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ54-113-coins-excavations-khirbat-kakul,ATQ54-075-medieval-ceramics-khirbat-kakul,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ54-113-coins-excavations-khirbat-kakul,ATQ54-107-glass-vessels-khirbat-kakul,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ54-117-human-skeletal-remains-second-temple-period,ATQ54-015s-burial-cave-second-temple-period-arnona,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ54-121-anthropological-analysis-human-skeletal-remains-nahalat,ATQ54-061s-burial-cave-byzantine-period-nahalat-ahim,ATQ,ATQ,2006,2006,no,,,yes,yes,linked,
+R5,ATQ58-123-glass-finds-khirbat-adasa,ATQ58-091-khirbat-adasa-farmstead-umayyad-mamluk-periods,ATQ,ATQ,2008,2008,no,,,yes,yes,linked,
+R5,ATQ63-027-iron-age-quarries-second-temple-period,ATQ63-045-four-pottery-assemblages-southern-slope-mount,ATQ,ATQ,2010,2010,no,,,no,no,linked (manual: same),reviewed: same
+R5,ATQ72-015s-member-entourage-yahweh-uraeus-seal-western,ATQ72-021s-scarab-western-wall-plaza-excavations-jerusalem,ATQ,ATQ,2012,2012,no,,,yes,yes,linked,
+R5,ATQ72-021s-scarab-western-wall-plaza-excavations-jerusalem,ATQ72-001-inscriptions-incised-potsherds-western-wall-plaza,ATQ,ATQ,2012,2012,no,,,yes,yes,linked,
+R5,ATQ72-021s-scarab-western-wall-plaza-excavations-jerusalem,ATQ72-001s-lord-will-roar-zion-amos-1,ATQ,ATQ,2012,2012,no,,,yes,yes,linked,
+R5,ATQ76-011s-burial-cave-roman-byzantine-periods-en,ATQ76-015s-glass-vessels-beads-metal-artifacts-burial,ATQ,ATQ,2013,2013,no,,,yes,yes,linked,
+R5,ATQ76-011s-burial-cave-roman-byzantine-periods-en,ATQ76-123-ceramic-oil-lamps-vessels-burial-cave,ATQ,ATQ,2013,2013,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ76-015s-glass-vessels-beads-metal-artifacts-burial,ATQ76-123-ceramic-oil-lamps-vessels-burial-cave,ATQ,ATQ,2013,2013,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ76-115-ceramic-finds-khirbat-el-mughram-shuafat,ATQ76-001s-burial-cave-agricultural-terrace-khirbat-el,ATQ,ATQ,2013,2013,no,,,yes,yes,linked,
+R5,ATQ76-135-byzantine-period-pendant-burial-cave-en,ATQ76-123-ceramic-oil-lamps-vessels-burial-cave,ATQ,ATQ,2013,2013,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ78-013-two-rock-cut-burial-caves-greek,ATQ78-025-coins-two-burial-caves-qidron-valley,ATQ,ATQ,2014,2014,no,,,yes,yes,linked,
+R5,ATQ78-013-two-rock-cut-burial-caves-greek,ATQ78-029-human-skeletal-remains-burial-cave-qidron,ATQ,ATQ,2014,2014,no,,,yes,yes,linked,
+R5,ATQ78-029-human-skeletal-remains-burial-cave-qidron,ATQ78-025-coins-two-burial-caves-qidron-valley,ATQ,ATQ,2014,2014,no,,,yes,yes,linked,
+R5,ATQ80-001s-iron-age-second-temple-period-remains,ATQ80-013-coins-ras-el-amud-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked,
+R5,ATQ80-023s-cemetery-quarry-remains-church-ketef-hinnom,ATQ80-055s-skeletal-remains-excavations-ketef-hinnom-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked,
+R5,ATQ80-023s-cemetery-quarry-remains-church-ketef-hinnom,ATQ80-059s-coins-excavations-ketef-hinnom-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked,
+R5,ATQ80-035-glass-finds-ketef-hinnom-jerusalem,ATQ80-023s-cemetery-quarry-remains-church-ketef-hinnom,ATQ,ATQ,2015,2015,no,,,yes,yes,linked,
+R5,ATQ80-035-glass-finds-ketef-hinnom-jerusalem,ATQ80-055s-skeletal-remains-excavations-ketef-hinnom-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked,
+R5,ATQ80-035-glass-finds-ketef-hinnom-jerusalem,ATQ80-059s-coins-excavations-ketef-hinnom-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked,
+R5,ATQ80-045-excavations-sallah-ed-din-street-jerusalem,ATQ80-073-human-skeletal-remains-late-roman-tombs,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ80-045-excavations-sallah-ed-din-street-jerusalem,ATQ80-133-chemical-isotopic-study-lead-based-objects,ATQ,ATQ,2015,2015,no,,,yes,yes,linked,
+R5,ATQ80-055s-skeletal-remains-excavations-ketef-hinnom-jerusalem,ATQ80-059s-coins-excavations-ketef-hinnom-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked,
+R5,ATQ80-073-human-skeletal-remains-late-roman-tombs,ATQ80-133-chemical-isotopic-study-lead-based-objects,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ80-081-late-roman-funerary-customs-light-grave,ATQ80-073-human-skeletal-remains-late-roman-tombs,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ80-125-coins-excavations-sallah-ed-din-street,ATQ80-045-excavations-sallah-ed-din-street-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ80-125-coins-excavations-sallah-ed-din-street,ATQ80-073-human-skeletal-remains-late-roman-tombs,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ80-125-coins-excavations-sallah-ed-din-street,ATQ80-081-late-roman-funerary-customs-light-grave,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ80-125-coins-excavations-sallah-ed-din-street,ATQ80-127-magical-amulet-cemetery-sallah-ed-din,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ80-125-coins-excavations-sallah-ed-din-street,ATQ80-133-chemical-isotopic-study-lead-based-objects,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ80-127-magical-amulet-cemetery-sallah-ed-din,ATQ80-073-human-skeletal-remains-late-roman-tombs,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-145-georgian-monastery-byzantine-period-khirbat-umm,ATQ83-185-inscription-khirbat-umm-leisun-georgian-presence,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-145-georgian-monastery-byzantine-period-khirbat-umm,ATQ83-205-skeletal-remains-khirbat-umm-leisun-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-181-paleographic-study-georgian-tombstone-khirbat-umm,ATQ83-185-inscription-khirbat-umm-leisun-georgian-presence,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-181-paleographic-study-georgian-tombstone-khirbat-umm,ATQ83-205-skeletal-remains-khirbat-umm-leisun-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-185-inscription-khirbat-umm-leisun-georgian-presence,ATQ83-205-skeletal-remains-khirbat-umm-leisun-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-195-bishop-iohane-khirbat-umm-leisun-caucasian,ATQ83-185-inscription-khirbat-umm-leisun-georgian-presence,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-195-bishop-iohane-khirbat-umm-leisun-caucasian,ATQ83-205-skeletal-remains-khirbat-umm-leisun-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-199-glass-vessels-monastery-khirbat-umm-leisun,ATQ83-145-georgian-monastery-byzantine-period-khirbat-umm,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-199-glass-vessels-monastery-khirbat-umm-leisun,ATQ83-181-paleographic-study-georgian-tombstone-khirbat-umm,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-199-glass-vessels-monastery-khirbat-umm-leisun,ATQ83-185-inscription-khirbat-umm-leisun-georgian-presence,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-199-glass-vessels-monastery-khirbat-umm-leisun,ATQ83-195-bishop-iohane-khirbat-umm-leisun-caucasian,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ83-199-glass-vessels-monastery-khirbat-umm-leisun,ATQ83-205-skeletal-remains-khirbat-umm-leisun-jerusalem,ATQ,ATQ,2015,2015,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ85-037-excavations-near-triple-gate-temple-mount,ATQ85-097-coins-excavations-near-triple-gate-temple,ATQ,ATQ,2016,2016,no,,,yes,yes,linked,
+R5,ATQ87-071s-villa-pottery-kiln-late-roman-byzantine,ATQ87-081-coins-en-yaal-nahal-refaim-jerusalem,ATQ,ATQ,2016,2016,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ87-077-fragments-roman-period-wall-painting-en,ATQ87-081-coins-en-yaal-nahal-refaim-jerusalem,ATQ,ATQ,2016,2016,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ87-121s-mosaic-floor-xenia-en-yaal-nahal,ATQ87-081-coins-en-yaal-nahal-refaim-jerusalem,ATQ,ATQ,2016,2016,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ88-017-intermediate-middle-bronze-age-burial-cave,ATQ88-033-pottery-small-finds-burial-cave-900,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ88-017-intermediate-middle-bronze-age-burial-cave,ATQ88-069-petrographic-analysis-seven-vessels-middle-bronze,ATQ,ATQ,2017,2017,no,,,yes,yes,linked,
+R5,ATQ88-017-intermediate-middle-bronze-age-burial-cave,ATQ88-071-scarab-burial-cave-900-nahal-refaim,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ88-033-pottery-small-finds-burial-cave-900,ATQ88-069-petrographic-analysis-seven-vessels-middle-bronze,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ88-033-pottery-small-finds-burial-cave-900,ATQ88-071-scarab-burial-cave-900-nahal-refaim,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ88-071-scarab-burial-cave-900-nahal-refaim,ATQ88-069-petrographic-analysis-seven-vessels-middle-bronze,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ88-073-anthropological-remains-burial-cave-900-nahal,ATQ88-017-intermediate-middle-bronze-age-burial-cave,ATQ,ATQ,2017,2017,no,,,yes,yes,linked,
+R5,ATQ88-073-anthropological-remains-burial-cave-900-nahal,ATQ88-033-pottery-small-finds-burial-cave-900,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ88-073-anthropological-remains-burial-cave-900-nahal,ATQ88-071-scarab-burial-cave-900-nahal-refaim,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ88-075-archaeozoology-bronze-age-offerings-burial-cave,ATQ88-033-pottery-small-finds-burial-cave-900,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ88-075-archaeozoology-bronze-age-offerings-burial-cave,ATQ88-071-scarab-burial-cave-900-nahal-refaim,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ89-049-byzantine-monastery-nahal-qidron-jerusalem,ATQ89-111-leather-fragments-tomb-byzantine-monasteryin-nahal,ATQ,ATQ,2017,2017,no,,,yes,yes,linked,
+R5,ATQ89-083-mosaic-floors-liturgical-vessels-furniture-andarchitectural,ATQ89-049-byzantine-monastery-nahal-qidron-jerusalem,ATQ,ATQ,2017,2017,no,,,yes,yes,linked,
+R5,ATQ89-101-glass-finds-byzantine-monastery-nahal-qidron,ATQ89-049-byzantine-monastery-nahal-qidron-jerusalem,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ89-101-glass-finds-byzantine-monastery-nahal-qidron,ATQ89-083-mosaic-floors-liturgical-vessels-furniture-andarchitectural,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ89-101-glass-finds-byzantine-monastery-nahal-qidron,ATQ89-107-provenance-study-basaltic-millstone-byzantinemonastery-nahal,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ89-101-glass-finds-byzantine-monastery-nahal-qidron,ATQ89-111-leather-fragments-tomb-byzantine-monasteryin-nahal,ATQ,ATQ,2017,2017,no,,,yes,yes,linked (manual: same),reviewed: same
+R5,ATQ90-079-coins-armon-ha-naziv-tunnel-government,ATQ90-001s-armon-ha-naziv-tunnel-government-house,ATQ,ATQ,2018,2018,no,,,yes,yes,linked,
+R5,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,ATQ91-193-ayyubid-mamluk-pottery-crusader-period-subterranean,ATQ,ATQ,2018,2018,no,,,yes,yes,linked,
+R5,ATQ98-001s-burial-cave-byzantine-early-islamic-periods,ATQ98-103-ceramic-vessels-oil-lamps-burial-cave,ATQ,ATQ,2020,2020,no,,,yes,yes,linked,
+R5,ATQ98-001s-burial-cave-byzantine-early-islamic-periods,ATQ98-123-glass-vessels-metal-artifacts-beads-burial,ATQ,ATQ,2020,2020,no,,,yes,yes,linked,
+R5,ATQ98-123-glass-vessels-metal-artifacts-beads-burial,ATQ98-103-ceramic-vessels-oil-lamps-burial-cave,ATQ,ATQ,2020,2020,no,,,yes,yes,linked,
+R6,ATQ101-001s-remains-rural-settlements-middle-bronze-age,ESI19-068-alona,ATQ,ESI,2020,1999,yes,yes,2,yes,yes,linked,
+R6,ATQ101-001s-remains-rural-settlements-middle-bronze-age,HA107-096-alona,ATQ,HA,2020,1997,yes,yes,2,yes,yes,linked,
+R6,ATQ101-047-middle-bronze-age-pottery-horbat-alona,ESI19-068-alona,ATQ,ESI,2020,1999,no,yes,2,yes,yes,not linked,LISTED: author test failed
+R6,ATQ101-047-middle-bronze-age-pottery-horbat-alona,HA107-096-alona,ATQ,HA,2020,1997,no,yes,2,yes,yes,not linked,LISTED: author test failed
+R6,ATQ101-071s-city-david-ir-david-siloam-road,ESI10-136-jerusalem-akeldama,ATQ,ESI,2020,1992,yes,yes,173,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ101-071s-city-david-ir-david-siloam-road,ESI15-075-city-of-david,ATQ,ESI,2020,1996,no,yes,149,yes,yes,not linked,LISTED: author test failed
+R6,ATQ101-071s-city-david-ir-david-siloam-road,HA97-068-akeldama,ATQ,HA,2020,1991,yes,yes,173,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ101-071s-city-david-ir-david-siloam-road,HAESI-188,ATQ,HA-ESI online,2020,2005,yes,no,314,yes,no,not linked,LISTED: place test failed
+R6,ATQ101-071s-city-david-ir-david-siloam-road,HAESI-1905,ATQ,HA-ESI online,2020,2011,no,yes,207,yes,yes,not linked,LISTED: author test failed
+R6,ATQ101-071s-city-david-ir-david-siloam-road,HAESI-25721,ATQ,HA-ESI online,2020,2020,yes,yes,111,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ101-071s-city-david-ir-david-siloam-road,HAESI-716,ATQ,HA-ESI online,2020,2008,yes,no,441,yes,no,not linked,LISTED: place test failed
+R6,ATQ101-071s-city-david-ir-david-siloam-road,HAESI-834,ATQ,HA-ESI online,2020,2008,yes,yes,140,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ101-071s-city-david-ir-david-siloam-road,HAESI110-062-jerusalem-the-city-of-david,ATQ,HA-ESI print,2020,1999,no,yes,189,yes,yes,not linked,LISTED: author test failed
+R6,ATQ101-075-scarab-two-scaraboids-horbat-alona-khirbat,ESI19-068-alona,ATQ,ESI,2020,1999,no,yes,2,yes,yes,not linked,LISTED: author test failed
+R6,ATQ101-075-scarab-two-scaraboids-horbat-alona-khirbat,HA107-096-alona,ATQ,HA,2020,1997,no,yes,2,yes,yes,not linked,LISTED: author test failed
+R6,ATQ101-087s-second-temple-period-registration-tag-city,ESI18-091-jerusalem-city-of-david,ATQ,ESI,2020,1998,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ101-087s-second-temple-period-registration-tag-city,HA106-139-city-of-david,ATQ,HA,2020,1996,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ101-087s-second-temple-period-registration-tag-city,HAESI-250,ATQ,HA-ESI online,2020,2005,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ101-087s-second-temple-period-registration-tag-city,HAESI112-082-jerusalem-city-of-david,ATQ,HA-ESI print,2020,2000,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ101-087s-second-temple-period-registration-tag-city,HAESI113-081-jerusalem-city-of-david,ATQ,HA-ESI print,2020,2001,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ101-087s-second-temple-period-registration-tag-city,HAESI114-077-jerusalem-city-of-david,ATQ,HA-ESI print,2020,2002,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ101-087s-second-temple-period-registration-tag-city,HAESI115-051-jerusalem-city-of-david,ATQ,HA-ESI print,2020,2003,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ104-193-remains-late-byzantine-early-islamic-mamluk,HAESI-910,ATQ,HA-ESI online,2021,2008,no,yes,12,yes,yes,not linked,LISTED: author test failed
+R6,ATQ104-193-remains-late-byzantine-early-islamic-mamluk,HAESI-994,ATQ,HA-ESI online,2021,2009,no,yes,122,yes,yes,not linked,LISTED: author test failed
+R6,ATQ104-193-remains-late-byzantine-early-islamic-mamluk,HAESI113-079-jerusalem-the-old-city-walls,ATQ,HA-ESI print,2021,2001,yes,yes,115,no,yes,not linked (permit contradiction),
+R6,ATQ106-001-middle-bronze-age-ii-burial-cave,ESI18-094-jerusalem-beit-safafa-west,ATQ,ESI,2022,1998,no,yes,117,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-001-middle-bronze-age-ii-burial-cave,HA106-142-beit-safafa-west,ATQ,HA,2022,1996,no,yes,117,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-001-middle-bronze-age-ii-burial-cave,HAESI-20767,ATQ,HA-ESI online,2022,2015,no,yes,88,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-001-middle-bronze-age-ii-burial-cave,HAESI-24862,ATQ,HA-ESI online,2022,2015,no,yes,223,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-001-middle-bronze-age-ii-burial-cave,HAESI-25152,ATQ,HA-ESI online,2022,2016,no,yes,115,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-001-middle-bronze-age-ii-burial-cave,HAESI-25356,ATQ,HA-ESI online,2022,2017,no,yes,97,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-001-middle-bronze-age-ii-burial-cave,HAESI-25748,ATQ,HA-ESI online,2022,2020,yes,yes,10,yes,yes,linked,
+R6,ATQ106-001-middle-bronze-age-ii-burial-cave,HAESI-26036,ATQ,HA-ESI online,2022,2021,no,yes,97,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-047-human-skeletal-remains-middle-bronze-age,HAESI-20767,ATQ,HA-ESI online,2022,2015,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ106-047-human-skeletal-remains-middle-bronze-age,HAESI-24862,ATQ,HA-ESI online,2022,2015,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ106-047-human-skeletal-remains-middle-bronze-age,HAESI-25356,ATQ,HA-ESI online,2022,2017,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ106-047-human-skeletal-remains-middle-bronze-age,HAESI-26036,ATQ,HA-ESI online,2022,2021,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ106-057-jerusalem-ivories-iron-age-decorated-ivory,HAESI-26089,ATQ,HA-ESI online,2022,2021,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ106-057-jerusalem-ivories-iron-age-decorated-ivory,HAESI-26474,ATQ,HA-ESI online,2022,2024,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ106-075-aramaic-inscription-beneath-wilsons-arch,HAESI-25662,ATQ,HA-ESI online,2022,2019,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ106-075-aramaic-inscription-beneath-wilsons-arch,HAESI-26288,ATQ,HA-ESI online,2022,2023,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ106-089-herodian-period-staircase-mount-zion-jerusalem,HAESI-1907,ATQ,HA-ESI online,2022,2011,no,yes,213,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-089-herodian-period-staircase-mount-zion-jerusalem,HAESI-2197,ATQ,HA-ESI online,2022,2012,yes,yes,175,no,yes,not linked (permit contradiction),
+R6,ATQ106-089-herodian-period-staircase-mount-zion-jerusalem,HAESI-25840,ATQ,HA-ESI online,2022,2020,no,yes,206,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-089-herodian-period-staircase-mount-zion-jerusalem,HAESI-25903,ATQ,HA-ESI online,2022,2021,no,yes,185,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-089-herodian-period-staircase-mount-zion-jerusalem,HAESI-5414,ATQ,HA-ESI online,2022,2013,no,yes,32,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-161-monumental-burial-cave-tel-arza-neighborhood,HAESI-9545,ATQ,HA-ESI online,2022,2014,yes,yes,172,no,yes,linked,
+R6,ATQ106-195-herodian-pavement-esplanade-later-remains-near,HAESI-1738,ATQ,HA-ESI online,2022,2011,yes,,,no,no,linked (manual: same),reviewed: same
+R6,ATQ106-195-herodian-pavement-esplanade-later-remains-near,HAESI-25221,ATQ,HA-ESI online,2022,2017,yes,,,no,no,linked (manual: same),reviewed: same
+R6,ATQ106-239-work-cilo-impression-roman-period-private,HAESI-25120,ATQ,HA-ESI online,2022,2016,yes,,,yes,yes,not linked (permit contradiction),
+R6,ATQ106-239-work-cilo-impression-roman-period-private,HAESI-25221,ATQ,HA-ESI online,2022,2017,yes,,,yes,yes,not linked (permit contradiction),
+R6,ATQ106-239-work-cilo-impression-roman-period-private,HAESI-26195,ATQ,HA-ESI online,2022,2022,yes,,,yes,yes,linked,
+R6,ATQ106-257-byzantine-period-monastery-har-homa-between,HAESI-24931,ATQ,HA-ESI online,2022,2016,yes,yes,0,yes,yes,linked,
+R6,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HAESI-1377,ATQ,HA-ESI online,2022,2010,yes,,,yes,yes,not linked (permit contradiction),
+R6,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HAESI-25405,ATQ,HA-ESI online,2022,2018,yes,yes,0,yes,yes,linked,
+R6,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HAESI-25690,ATQ,HA-ESI online,2022,2020,yes,yes,44,no,yes,not linked (permit contradiction),
+R6,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HAESI-25886,ATQ,HA-ESI online,2022,2021,yes,yes,47,yes,yes,linked,
+R6,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HAESI-26089,ATQ,HA-ESI online,2022,2021,no,yes,0,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HAESI-26474,ATQ,HA-ESI online,2022,2024,no,yes,23,yes,yes,not linked,LISTED: author test failed
+R6,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HAESI-5432,ATQ,HA-ESI online,2022,2013,yes,yes,47,yes,yes,not linked (permit contradiction),
+R6,ATQ106-303-excavations-southwestern-margins-givati-parking-lot,HAESI-873,ATQ,HA-ESI online,2022,2008,yes,yes,0,yes,yes,not linked (permit contradiction),
+R6,ATQ110-i07-second-temple-period-inscription-stone-ossuary,ESI01-049-jerusalem-city-of-david,ATQ,ESI,2023,1984,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ110-i07-second-temple-period-inscription-stone-ossuary,ESI02-052-city-of-david,ATQ,ESI,2023,1984,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ110-i07-second-temple-period-inscription-stone-ossuary,ESI03-049-city-of-david-1984,ATQ,ESI,2023,1985,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ110-i07-second-temple-period-inscription-stone-ossuary,ESI04-051-jerusalem-city-of-david,ATQ,ESI,2023,1986,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ110-i07-second-temple-period-inscription-stone-ossuary,HA87-031-city-of-david-1985,ATQ,HA,2023,1985,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ110-i07-second-temple-period-inscription-stone-ossuary,HAESI-22795,ATQ,HA-ESI online,2023,2015,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ110-i07-second-temple-period-inscription-stone-ossuary,HAESI-25046,ATQ,HA-ESI online,2023,2016,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ110-i07-second-temple-period-inscription-stone-ossuary,HAESI-26183,ATQ,HA-ESI online,2023,2022,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ110-i07-second-temple-period-inscription-stone-ossuary,HAESI-5445,ATQ,HA-ESI online,2023,2013,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ110-i15-greek-inscribed-early-islamic-period-oil,HAESI-26256,ATQ,HA-ESI online,2023,2022,yes,,,no,no,linked (manual: same),reviewed: same
+R6,ATQ110-i16-abbasid-period-stone-mold-engraved-kufic,HAESI-26089,ATQ,HA-ESI online,2023,2021,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ110-i16-abbasid-period-stone-mold-engraved-kufic,HAESI-26474,ATQ,HA-ESI online,2023,2024,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ110-i18-unique-crusader-period-lead-seal-old,HAESI-24990,ATQ,HA-ESI online,2023,2016,no,yes,80,yes,yes,not linked,LISTED: author test failed
+R6,ATQ110-i18-unique-crusader-period-lead-seal-old,HAESI-25202,ATQ,HA-ESI online,2023,2017,yes,yes,234,yes,yes,not linked (permit contradiction),
+R6,ATQ110-i18-unique-crusader-period-lead-seal-old,HAESI-25393,ATQ,HA-ESI online,2023,2018,yes,yes,246,yes,yes,not linked (permit contradiction),
+R6,ATQ110-i18-unique-crusader-period-lead-seal-old,HAESI-25639,ATQ,HA-ESI online,2023,2019,no,yes,119,yes,yes,not linked,LISTED: author test failed
+R6,ATQ110-i18-unique-crusader-period-lead-seal-old,HAESI-26310,ATQ,HA-ESI online,2023,2023,yes,yes,0,no,yes,linked,
+R6,ATQ110-i18-unique-crusader-period-lead-seal-old,HAESI-27699,ATQ,HA-ESI online,2023,2025,yes,yes,16,no,yes,not linked (permit contradiction),
+R6,ATQ110-i18-unique-crusader-period-lead-seal-old,HAESI-786,ATQ,HA-ESI online,2023,2008,no,yes,239,yes,yes,not linked,LISTED: author test failed
+R6,ATQ110-i18-unique-crusader-period-lead-seal-old,HAESI115-050-jerusalem-the-old-city,ATQ,HA-ESI print,2023,2003,no,yes,269,yes,yes,not linked,LISTED: author test failed
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-22792,ATQ,HA-ESI online,2023,2015,yes,yes,121,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-22795,ATQ,HA-ESI online,2023,2015,yes,yes,142,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-2306,ATQ,HA-ESI online,2023,2013,yes,yes,163,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-23807,ATQ,HA-ESI online,2023,2015,yes,yes,192,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-25020,ATQ,HA-ESI online,2023,2016,yes,yes,163,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-25046,ATQ,HA-ESI online,2023,2016,yes,yes,155,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-25184,ATQ,HA-ESI online,2023,2017,yes,yes,134,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-25185,ATQ,HA-ESI online,2023,2017,yes,yes,192,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-25841,ATQ,HA-ESI online,2023,2020,yes,yes,138,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-26064,ATQ,HA-ESI online,2023,2021,yes,yes,134,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-26183,ATQ,HA-ESI online,2023,2022,yes,yes,192,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-26273,ATQ,HA-ESI online,2023,2023,yes,yes,214,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-26502,ATQ,HA-ESI online,2023,2024,yes,yes,138,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-4385,ATQ,HA-ESI online,2023,2013,yes,yes,159,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ112-i12-byzantine-early-islamic-building-along-southern,HAESI-5445,ATQ,HA-ESI online,2023,2013,yes,yes,188,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ113-i02-first-century-bce-chalk-vessel-assemblage,HAESI-22787,ATQ,HA-ESI online,2023,2015,yes,,,yes,yes,linked,
+R6,ATQ113-i02-first-century-bce-chalk-vessel-assemblage,HAESI-26607,ATQ,HA-ESI online,2023,2025,yes,,,yes,yes,linked,
+R6,ATQ113-i09-second-temple-period-chalk-quarry-vessel,ESI07-090-mt-scopus,ATQ,ESI,2023,1990,no,yes,143,yes,yes,not linked,LISTED: author test failed
+R6,ATQ113-i09-second-temple-period-chalk-quarry-vessel,HAESI111-065-jerusalem-mount-scopus-east,ATQ,HA-ESI print,2023,2000,yes,yes,256,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ113-i09-second-temple-period-chalk-quarry-vessel,HAESI112-075-jerusalem-mount-scopus-east,ATQ,HA-ESI print,2023,2000,yes,no,860,yes,no,linked (manual: same),reviewed: same
+R6,ATQ113-i09-second-temple-period-chalk-quarry-vessel,HAESI114-073-jerusalem-mount-scopus-a,ATQ,HA-ESI print,2023,2002,no,yes,897,yes,yes,not linked,LISTED: author test failed
+R6,ATQ113-i09-second-temple-period-chalk-quarry-vessel,HAESI115-075-jerusalem-mount-scopus,ATQ,HA-ESI print,2023,2003,no,yes,278,yes,yes,not linked,LISTED: author test failed
+R6,ATQ116-i02-emergence-worship-religion-neolithic-period-direct,HAESI-10582,ATQ,HA-ESI online,2024,2014,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ116-i02-emergence-worship-religion-neolithic-period-direct,HAESI-169,ATQ,HA-ESI online,2024,2005,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ116-i02-emergence-worship-religion-neolithic-period-direct,HAESI-25536,ATQ,HA-ESI online,2024,2019,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ116-i02-emergence-worship-religion-neolithic-period-direct,HAESI-25538,ATQ,HA-ESI online,2024,2019,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ116-i02-emergence-worship-religion-neolithic-period-direct,HAESI-25953,ATQ,HA-ESI online,2024,2021,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ116-i02-emergence-worship-religion-neolithic-period-direct,HAESI-25961,ATQ,HA-ESI online,2024,2021,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ116-i05-evidence-worship-rock-cut-rooms-eastern,ESI18-091-jerusalem-city-of-david,ATQ,ESI,2024,1998,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ116-i05-evidence-worship-rock-cut-rooms-eastern,HA106-139-city-of-david,ATQ,HA,2024,1996,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ116-i05-evidence-worship-rock-cut-rooms-eastern,HAESI-250,ATQ,HA-ESI online,2024,2005,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ116-i05-evidence-worship-rock-cut-rooms-eastern,HAESI-5445,ATQ,HA-ESI online,2024,2013,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ116-i05-evidence-worship-rock-cut-rooms-eastern,HAESI112-082-jerusalem-city-of-david,ATQ,HA-ESI print,2024,2000,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ116-i05-evidence-worship-rock-cut-rooms-eastern,HAESI113-081-jerusalem-city-of-david,ATQ,HA-ESI print,2024,2001,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ116-i05-evidence-worship-rock-cut-rooms-eastern,HAESI114-077-jerusalem-city-of-david,ATQ,HA-ESI print,2024,2002,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ116-i05-evidence-worship-rock-cut-rooms-eastern,HAESI115-051-jerusalem-city-of-david,ATQ,HA-ESI print,2024,2003,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ116-i06-iron-age-iib-c-hebrew-stamp,HAESI-1285,ATQ,HA-ESI online,2024,2009,yes,yes,182,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ116-i06-iron-age-iib-c-hebrew-stamp,HAESI-26064,ATQ,HA-ESI online,2024,2021,yes,yes,245,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ116-i06-iron-age-iib-c-hebrew-stamp,HAESI-26274,ATQ,HA-ESI online,2024,2023,yes,yes,25,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ116-i06-iron-age-iib-c-hebrew-stamp,HAESI138-003-archaeological-park,ATQ,HA-ESI print,2024,2026,yes,yes,54,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ116-i12-intermediate-bronze-age-middle-bronze-age,HAESI-36,ATQ,HA-ESI online,2024,2004,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ116-i13-early-bronze-age-iv-intermediate-bronze,HAESI138-018-nahal-refaim,ATQ,HA-ESI print,2024,2026,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ117-i04-iron-age-ii-miniature-black-juglets,ESI10-024-jerusalem-mamilla-area,ATQ,ESI,2025,1992,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ117-i04-iron-age-ii-miniature-black-juglets,ESI12-059-jerusalem-mamilla-1,ATQ,ESI,2025,1994,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ117-i04-iron-age-ii-miniature-black-juglets,ESI14-092-jerusalem-mamilla,ATQ,ESI,2025,1995,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ117-i04-iron-age-ii-miniature-black-juglets,HA101-080-mamilla-1991-1993,ATQ,HA,2025,1993,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ117-i04-iron-age-ii-miniature-black-juglets,HA96-020-mamilla-area,ATQ,HA,2025,1991,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ117-i04-iron-age-ii-miniature-black-juglets,HA99-054-mamilla-a,ATQ,HA,2025,1993,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ117-i04-iron-age-ii-miniature-black-juglets,HAESI-175,ATQ,HA-ESI online,2025,2005,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ119-i12-monumental-construction-water-management-foot-temple,HAESI-1219,ATQ,HA-ESI online,2025,2009,yes,yes,96,no,yes,not linked (permit contradiction),
+R6,ATQ119-i12-monumental-construction-water-management-foot-temple,HAESI-18755,ATQ,HA-ESI online,2025,2015,yes,yes,76,no,yes,not linked (permit contradiction),
+R6,ATQ119-i12-monumental-construction-water-management-foot-temple,HAESI-25120,ATQ,HA-ESI online,2025,2016,yes,,,yes,yes,not linked (permit contradiction),
+R6,ATQ119-i12-monumental-construction-water-management-foot-temple,HAESI-25221,ATQ,HA-ESI online,2025,2017,yes,yes,24,yes,yes,not linked (permit contradiction),
+R6,ATQ119-i12-monumental-construction-water-management-foot-temple,HAESI-25927,ATQ,HA-ESI online,2025,2021,yes,yes,136,no,yes,not linked (permit contradiction),
+R6,ATQ119-i12-monumental-construction-water-management-foot-temple,HAESI-26195,ATQ,HA-ESI online,2025,2022,yes,yes,0,yes,yes,linked,
+R6,ATQ119-i12-monumental-construction-water-management-foot-temple,HAESI-26256,ATQ,HA-ESI online,2025,2022,yes,yes,390,no,yes,not linked (permit contradiction),
+R6,ATQ119-i12-monumental-construction-water-management-foot-temple,HAESI-26654,ATQ,HA-ESI online,2025,2025,yes,yes,213,no,yes,not linked (permit contradiction),
+R6,ATQ119-i12-monumental-construction-water-management-foot-temple,HAESI138-057-western-wall-plaza,ATQ,HA-ESI print,2025,2026,yes,yes,136,no,yes,not linked (permit contradiction),
+R6,ATQ119-i13-pottery-western-wall-tunnels-jerusalem,HAESI-25221,ATQ,HA-ESI online,2025,2017,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ119-i17-roman-period-radiocarbon-chronology-great-causeway,HAESI-25120,ATQ,HA-ESI online,2025,2016,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ119-i17-roman-period-radiocarbon-chronology-great-causeway,HAESI-25221,ATQ,HA-ESI online,2025,2017,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ119-i17-roman-period-radiocarbon-chronology-great-causeway,HAESI-26195,ATQ,HA-ESI online,2025,2022,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ120-i02-walking-through-alleys-motza-moza-early,HAESI-10582,ATQ,HA-ESI online,2026,2014,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ120-i02-walking-through-alleys-motza-moza-early,HAESI-169,ATQ,HA-ESI online,2026,2005,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ120-i02-walking-through-alleys-motza-moza-early,HAESI-25536,ATQ,HA-ESI online,2026,2019,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ120-i02-walking-through-alleys-motza-moza-early,HAESI-25538,ATQ,HA-ESI online,2026,2019,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ120-i02-walking-through-alleys-motza-moza-early,HAESI-25953,ATQ,HA-ESI online,2026,2021,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ120-i02-walking-through-alleys-motza-moza-early,HAESI-25961,ATQ,HA-ESI online,2026,2021,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ120-i02-walking-through-alleys-motza-moza-early,HAESI-26334,ATQ,HA-ESI online,2026,2023,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-15729,ATQ,HA-ESI online,2026,2015,yes,yes,106,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-22795,ATQ,HA-ESI online,2026,2015,yes,yes,225,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-2306,ATQ,HA-ESI online,2026,2013,yes,yes,85,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-23807,ATQ,HA-ESI online,2026,2015,yes,yes,0,no,yes,linked,
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-25020,ATQ,HA-ESI online,2026,2016,yes,yes,85,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-25029,ATQ,HA-ESI online,2026,2016,yes,yes,106,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-25184,ATQ,HA-ESI online,2026,2017,yes,yes,220,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-25185,ATQ,HA-ESI online,2026,2017,yes,yes,0,no,yes,linked,
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-25841,ATQ,HA-ESI online,2026,2020,yes,yes,218,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-26064,ATQ,HA-ESI online,2026,2021,yes,yes,220,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-26183,ATQ,HA-ESI online,2026,2022,yes,yes,0,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-26273,ATQ,HA-ESI online,2026,2023,yes,yes,25,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-26502,ATQ,HA-ESI online,2026,2024,yes,yes,218,no,yes,not linked (permit contradiction),
+R6,ATQ120-i13-excavations-jerusalem-byzantine-street-area-s2,HAESI-4385,ATQ,HA-ESI online,2026,2013,yes,yes,179,no,yes,not linked (permit contradiction),
+R6,ATQ42-i19-shrine-three-religions-mount-olives-tomb,HA67-046-jerusalem-mount-of-olives-tomb,ATQ,HA,2001,1978,no,yes,170,yes,yes,not linked,LISTED: author test failed
+R6,ATQ42-i19-shrine-three-religions-mount-olives-tomb,HAESI112-079-jerusalem-mount-of-olives,ATQ,HA-ESI print,2001,2000,yes,,,yes,yes,not linked (permit contradiction),
+R6,ATQ42-i22-yet-another-medieval-tower-section-jerusalems,ESI20-100-jerusalem-old-city-wall,ATQ,ESI,2001,2000,yes,yes,0,no,yes,linked,
+R6,ATQ42-i22-yet-another-medieval-tower-section-jerusalems,HA108-138-old-city-wall,ATQ,HA,2001,1998,yes,yes,0,no,yes,linked,
+R6,ATQ42-i27-two-second-temple-period-burial-caves,HAESI115-054-jerusalem-abu-tor,ATQ,HA-ESI print,2001,2003,yes,yes,244,yes,yes,linked,
+R6,ATQ42-i33-sixth-seventh-century-ce-structure-near,ESI02-029-en-aneva,ATQ,ESI,2001,1984,yes,yes,0,yes,yes,linked,
+R6,ATQ43-i06-jerusalems-ancient-walls-strike-again-knights,HAESI109-076-jerusalem-the-knights-palace-hotel,ATQ,HA-ESI print,2002,1999,yes,yes,0,yes,yes,linked,
+R6,ATQ43-i11-byzantine-monastery-khirbet-umm-leisun-jerusalem,HAESI111-072-jerusalem-umm-leisun,ATQ,HA-ESI print,2002,2000,yes,,,yes,yes,linked,
+R6,ATQ43-i15-har-hozevim-frankish-farmhouse-north-jerusalem,ESI15-070-har-hozevim,ATQ,ESI,2002,1996,yes,,,yes,yes,linked,
+R6,ATQ43-i15-har-hozevim-frankish-farmhouse-north-jerusalem,ESI19-056-jerusalem-har-hozevim,ATQ,ESI,2002,1999,no,yes,142,yes,yes,not linked,LISTED: author test failed
+R6,ATQ43-i15-har-hozevim-frankish-farmhouse-north-jerusalem,ESI19-095-survey-of-frankish-buildings,ATQ,ESI,2002,1999,yes,no,138131,yes,no,not linked,LISTED: place test failed
+R6,ATQ43-i15-har-hozevim-frankish-farmhouse-north-jerusalem,HA107-081-har-hozevim,ATQ,HA,2002,1997,no,yes,142,yes,yes,not linked,LISTED: author test failed
+R6,ATQ43-i15-har-hozevim-frankish-farmhouse-north-jerusalem,HA107-137-frankish-buildings-survey,ATQ,HA,2002,1997,yes,no,2401,yes,no,not linked,LISTED: place test failed
+R6,ATQ44-i13-excavations-beit-safafa-iron-age-ii,ESI14-099-jerusalem-beit-safafa,ATQ,ESI,2003,1995,yes,no,1821,yes,no,not linked,LISTED: place test failed
+R6,ATQ44-i13-excavations-beit-safafa-iron-age-ii,HA101-086-beit-safafa,ATQ,HA,2003,1993,yes,no,1821,yes,no,not linked,LISTED: place test failed
+R6,ATQ44-i16-byzantine-period-cistern-near-church-st,HAESI114-073-jerusalem-mount-scopus-a,ATQ,HA-ESI print,2003,2002,yes,yes,1177,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,ESI04-025-en-gedi,ATQ,ESI,2004,1986,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,ESI07-051-en-gedi,ATQ,ESI,2004,1990,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,ESI12-114-en-gedi,ATQ,ESI,2004,1994,yes,no,1456,yes,no,not linked,LISTED: place test failed
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,ESI13-126-en-gedi,ATQ,ESI,2004,1995,yes,no,1523,yes,no,not linked,LISTED: place test failed
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,ESI15-144-map-en-gedi,ATQ,ESI,2004,1996,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,HA100-110-en-gedi-anchor,ATQ,HA,2004,1993,yes,no,1523,yes,no,not linked,LISTED: place test failed
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,HA103-089-en-gedi-synagogue-area,ATQ,HA,2004,1995,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,HA77-062-en-gedi-gem,ATQ,HA,2004,1981,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,HA86-030-en-gedi,ATQ,HA,2004,1985,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,HA99-103-en-gedi,ATQ,HA,2004,1993,yes,no,1448,yes,no,not linked,LISTED: place test failed
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,HAESI-105,ATQ,HA-ESI online,2004,2005,yes,no,4494,yes,no,not linked,LISTED: place test failed
+R6,ATQ46-i13-pyrite-lemonite-mine-near-spring-en,HAESI-348,ATQ,HA-ESI online,2004,2006,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ47-i22-iron-age-structure-shuafat-ridge-northern,ESI20-096-jerusalem-ramot-forest,ATQ,ESI,2004,2000,yes,yes,202,no,yes,linked,
+R6,ATQ47-i22-iron-age-structure-shuafat-ridge-northern,HA108-133-ramot-forest,ATQ,HA,2004,1998,yes,yes,202,no,yes,linked,
+R6,ATQ47-i25-excavations-kikkar-safra-city-hall-jerusalem,ESI09-055-city-hall-square,ATQ,ESI,2004,1991,yes,,,yes,yes,linked,
+R6,ATQ48-i08-another-miqveh-near-alon-shevut,ESI14-111-alon-shevut,ATQ,ESI,2004,1995,yes,yes,1,yes,yes,linked,
+R6,ATQ48-i08-another-miqveh-near-alon-shevut,ESI20-115-jebel-el-habun-alon-shevut,ATQ,ESI,2004,2000,yes,no,534,yes,no,not linked,LISTED: place test failed
+R6,ATQ48-i08-another-miqveh-near-alon-shevut,HA101-096-alon-shevut,ATQ,HA,2004,1993,yes,yes,1,yes,yes,linked,
+R6,ATQ48-i15-burial-grounds-industrial-area-wadi-el,ESI16-099-jerusalem-pisgat-zeev-e,ATQ,ESI,2004,1997,yes,yes,2,yes,yes,linked,
+R6,ATQ48-i15-burial-grounds-industrial-area-wadi-el,HA104-089-pisgat-zeev-e,ATQ,HA,2004,1995,yes,yes,2,yes,yes,linked,
+R6,ATQ49-i02-rock-cut-shaft-tombs-intermediate-bronze,HAESI-35,ATQ,HA-ESI online,2005,2004,yes,yes,0,yes,yes,linked,
+R6,ATQ49-i05-second-temple-period-burial-cave-mount,ESI16-109-jerusalem-mount-of-olives,ATQ,ESI,2005,1997,no,yes,1,yes,yes,not linked,LISTED: author test failed
+R6,ATQ49-i05-second-temple-period-burial-cave-mount,HA104-097-mt-of-olives,ATQ,HA,2005,1995,no,yes,1,yes,yes,not linked,LISTED: author test failed
+R6,ATQ49-i05-second-temple-period-burial-cave-mount,HAESI-579,ATQ,HA-ESI online,2005,2007,no,yes,149,yes,yes,not linked,LISTED: author test failed
+R6,ATQ49-i05-second-temple-period-burial-cave-mount,HAESI-80,ATQ,HA-ESI online,2005,2005,no,yes,271,yes,yes,not linked,LISTED: author test failed
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,ESI04-025-en-gedi,ATQ,ESI,2005,1986,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,ESI07-051-en-gedi,ATQ,ESI,2005,1990,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,ESI12-114-en-gedi,ATQ,ESI,2005,1994,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,ESI13-126-en-gedi,ATQ,ESI,2005,1995,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,ESI15-144-map-en-gedi,ATQ,ESI,2005,1996,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,HA100-110-en-gedi-anchor,ATQ,HA,2005,1993,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,HA103-089-en-gedi-synagogue-area,ATQ,HA,2005,1995,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,HA77-062-en-gedi-gem,ATQ,HA,2005,1981,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,HA86-030-en-gedi,ATQ,HA,2005,1985,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,HA94-066-en-gedi-shore,ATQ,HA,2005,1989,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,HA99-103-en-gedi,ATQ,HA,2005,1993,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,HAESI-105,ATQ,HA-ESI online,2005,2005,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ49-i20-excavations-village-en-gedi-1993-1995,HAESI-348,ATQ,HA-ESI online,2005,2006,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ50-i14-survey-ancient-agricultural-systems-en-gedi,ESI01-026-en-gedi,ATQ,ESI,2005,1984,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ50-i14-survey-ancient-agricultural-systems-en-gedi,ESI05-027-en-gedi,ATQ,ESI,2005,1987,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ50-i14-survey-ancient-agricultural-systems-en-gedi,HA34-020-en-gedi-synagogue,ATQ,HA,2005,1970,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ50-i14-survey-ancient-agricultural-systems-en-gedi,HA41-036-en-gedi-synagogue,ATQ,HA,2005,1972,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ50-i14-survey-ancient-agricultural-systems-en-gedi,HA41-037-en-gedi-second-temple-tombs,ATQ,HA,2005,1972,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ50-i14-survey-ancient-agricultural-systems-en-gedi,HA78-087-en-gedi-mill,ATQ,HA,2005,1982,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ52-049s-buildings-persian-hellenistic-early-roman-periods,ESI16-113-khirbet-kabbar,ATQ,ESI,2006,1997,yes,yes,404,no,yes,linked (manual: same),reviewed: same
+R6,ATQ52-049s-buildings-persian-hellenistic-early-roman-periods,HA104-102-kh-kabbar,ATQ,HA,2006,1995,yes,yes,404,no,yes,linked (manual: same),reviewed: same
+R6,ATQ52-049s-buildings-persian-hellenistic-early-roman-periods,HAESI113-097-khirbet-kabbar,ATQ,HA-ESI print,2006,2001,yes,yes,102,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ54-001-jerusalem-khirbat-kakul-pisgat-zeev-h,ESI12-052-jerusalem-pisgat-zeev-east-a,ATQ,ESI,2006,1994,yes,no,1074,yes,no,not linked,LISTED: place test failed
+R6,ATQ54-001-jerusalem-khirbat-kakul-pisgat-zeev-h,ESI13-069-jerusalem-kh-kakul,ATQ,ESI,2006,1995,yes,yes,2,yes,yes,linked,
+R6,ATQ54-001-jerusalem-khirbat-kakul-pisgat-zeev-h,HA100-059-kh-kakul,ATQ,HA,2006,1993,yes,yes,2,yes,yes,linked,
+R6,ATQ54-001-jerusalem-khirbat-kakul-pisgat-zeev-h,HA99-047-pisgat-zeev-east-a,ATQ,HA,2006,1993,yes,no,1074,yes,no,not linked,LISTED: place test failed
+R6,ATQ54-001-jerusalem-khirbat-kakul-pisgat-zeev-h,HAESI-892,ATQ,HA-ESI online,2006,2008,no,yes,208,yes,yes,not linked,LISTED: author test failed
+R6,ATQ54-015s-burial-cave-second-temple-period-arnona,ESI14-097-jerusalem-arnona,ATQ,ESI,2006,1995,no,yes,17,yes,yes,not linked,LISTED: author test failed
+R6,ATQ54-015s-burial-cave-second-temple-period-arnona,ESI15-080-arnona,ATQ,ESI,2006,1996,yes,yes,1,yes,yes,linked,
+R6,ATQ54-015s-burial-cave-second-temple-period-arnona,HA101-084-arnona,ATQ,HA,2006,1993,no,yes,17,yes,yes,not linked,LISTED: author test failed
+R6,ATQ54-047s-burial-caves-second-temple-byzantine-periods,HAESI-117,ATQ,HA-ESI online,2006,2005,yes,no,346,yes,no,not linked,LISTED: place test failed
+R6,ATQ54-047s-burial-caves-second-temple-byzantine-periods,HAESI-276,ATQ,HA-ESI online,2006,2005,yes,no,834,yes,no,not linked,LISTED: place test failed
+R6,ATQ54-047s-burial-caves-second-temple-byzantine-periods,HAESI-80,ATQ,HA-ESI online,2006,2005,yes,no,533,yes,no,not linked,LISTED: place test failed
+R6,ATQ54-047s-burial-caves-second-temple-byzantine-periods,HAESI112-079-jerusalem-mount-of-olives,ATQ,HA-ESI print,2006,2000,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ54-047s-burial-caves-second-temple-byzantine-periods,HAESI114-073-jerusalem-mount-scopus-a,ATQ,HA-ESI print,2006,2002,yes,yes,1590,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ54-061s-burial-cave-byzantine-period-nahalat-ahim,ESI12-063-jerusalem-nahalat-ahim,ATQ,ESI,2006,1994,yes,yes,1,yes,yes,linked,
+R6,ATQ54-061s-burial-cave-byzantine-period-nahalat-ahim,HA99-057-nahalat-ahim,ATQ,HA,2006,1993,yes,yes,1,yes,yes,linked,
+R6,ATQ54-087s-burial-cave-byzantine-early-islamic-periods,HAESI-64,ATQ,HA-ESI online,2006,2004,yes,yes,0,yes,yes,linked,
+R6,ATQ54-095s-old-city-wall-jerusalem-northeastern-corner,HAESI113-079-jerusalem-the-old-city-walls,ATQ,HA-ESI print,2006,2001,yes,yes,7,no,yes,linked,
+R6,ATQ54-095s-old-city-wall-jerusalem-northeastern-corner,HAESI115-050-jerusalem-the-old-city,ATQ,HA-ESI print,2006,2003,no,yes,216,yes,yes,not linked,LISTED: author test failed
+R6,ATQ54-105-inscribed-jar-handle-khirbat-kakul,ESI13-069-jerusalem-kh-kakul,ATQ,ESI,2006,1995,no,yes,2,yes,yes,not linked,LISTED: author test failed
+R6,ATQ54-105-inscribed-jar-handle-khirbat-kakul,HA100-059-kh-kakul,ATQ,HA,2006,1993,no,yes,2,yes,yes,not linked,LISTED: author test failed
+R6,ATQ54-105-inscribed-jar-handle-khirbat-kakul,HAESI-892,ATQ,HA-ESI online,2006,2008,no,yes,208,yes,yes,not linked,LISTED: author test failed
+R6,ATQ56-025-farmstead-end-iron-age-installations-foot,HAESI113-095-khirbet-abu-shawan,ATQ,HA-ESI print,2007,2001,yes,yes,2,yes,yes,linked,
+R6,ATQ58-091-khirbat-adasa-farmstead-umayyad-mamluk-periods,ESI16-095-jerusalem-khirbet-adasa,ATQ,ESI,2008,1997,yes,no,2943,yes,no,not linked,LISTED: place test failed
+R6,ATQ58-091-khirbat-adasa-farmstead-umayyad-mamluk-periods,HA104-085-kh-adasa,ATQ,HA,2008,1995,yes,no,2943,yes,no,not linked,LISTED: place test failed
+R6,ATQ58-135-underground-reservoirs-crusader-period-later-remains,ESI15-083-moza-1993,ATQ,ESI,2008,1996,yes,yes,180,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ58-135-underground-reservoirs-crusader-period-later-remains,HAESI-147,ATQ,HA-ESI online,2008,2005,no,yes,178,yes,yes,not linked,LISTED: author test failed
+R6,ATQ58-135-underground-reservoirs-crusader-period-later-remains,HAESI-155,ATQ,HA-ESI online,2008,2005,no,yes,53,yes,yes,not linked,LISTED: author test failed
+R6,ATQ58-135-underground-reservoirs-crusader-period-later-remains,HAESI-169,ATQ,HA-ESI online,2008,2005,yes,yes,112,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ58-135-underground-reservoirs-crusader-period-later-remains,HAESI-403,ATQ,HA-ESI online,2008,2006,no,yes,180,yes,yes,not linked,LISTED: author test failed
+R6,ATQ58-135-underground-reservoirs-crusader-period-later-remains,HAESI115-055-moza,ATQ,HA-ESI print,2008,2003,yes,yes,113,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ59-021s-caves-iron-age-early-roman-period,HAESI-1187,ATQ,HA-ESI online,2008,2009,yes,yes,1444,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ59-021s-caves-iron-age-early-roman-period,HAESI-463,ATQ,HA-ESI online,2008,2007,yes,yes,349,no,yes,linked (manual: same),reviewed: same
+R6,ATQ60-115-four-hebrew-seals-one-depicting-assyrian,HAESI-1219,ATQ,HA-ESI online,2008,2009,yes,,,yes,yes,linked,
+R6,ATQ63-001s-middle-bronze-age-ii-remains-khirbat,HAESI-1265,ATQ,HA-ESI online,2010,2009,yes,no,2336,yes,no,not linked,LISTED: place test failed
+R6,ATQ63-001s-middle-bronze-age-ii-remains-khirbat,HAESI-1943,ATQ,HA-ESI online,2010,2012,yes,yes,50,yes,yes,linked,
+R6,ATQ63-027-iron-age-quarries-second-temple-period,ESI01-056-jerusalem-mt-scopus,ATQ,ESI,2010,1984,no,yes,379,yes,yes,not linked,LISTED: author test failed
+R6,ATQ63-027-iron-age-quarries-second-temple-period,HA78-070-mount-scopus,ATQ,HA,2010,1982,no,yes,379,yes,yes,not linked,LISTED: author test failed
+R6,ATQ63-027-iron-age-quarries-second-temple-period,HAESI114-073-jerusalem-mount-scopus-a,ATQ,HA-ESI print,2010,2002,yes,yes,633,yes,yes,linked,
+R6,ATQ63-027-iron-age-quarries-second-temple-period,HAESI114-074-jerusalem-mount-scopus-b,ATQ,HA-ESI print,2010,2002,yes,no,686,yes,no,not linked,LISTED: place test failed
+R6,ATQ65-093-burial-cave-early-roman-period-diskin,ESI20-135-jerusalem-diskin-street,ATQ,ESI,2011,2000,yes,no,459,yes,no,not linked,LISTED: place test failed
+R6,ATQ65-093-burial-cave-early-roman-period-diskin,HA108-180-diskin-st,ATQ,HA,2011,1998,yes,no,459,yes,no,not linked,LISTED: place test failed
+R6,ATQ66-079-excavations-rogem-gannim-jerusalem-installations-iron,HAESI-1361,ATQ,HA-ESI online,2011,2010,yes,yes,81,no,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ66-079-excavations-rogem-gannim-jerusalem-installations-iron,HAESI114-080-jerusalem-ir-gannim,ATQ,HA-ESI print,2011,2002,yes,yes,156,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ66-137-crusader-remains-muristan-old-city-jerusalem,HAESI-1270,ATQ,HA-ESI online,2011,2009,yes,yes,121,yes,yes,linked (manual: same),reviewed: same
+R6,ATQ66-137-crusader-remains-muristan-old-city-jerusalem,HAESI110-060-jerusalem-shuq-ha-qazzavim,ATQ,HA-ESI print,2011,1999,yes,yes,183,no,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ66-137-crusader-remains-muristan-old-city-jerusalem,HAESI111-069-jerusalem-church-of-the-holy-sepulchre,ATQ,HA-ESI print,2011,2000,yes,yes,234,no,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ66-137-crusader-remains-muristan-old-city-jerusalem,HAESI115-050-jerusalem-the-old-city,ATQ,HA-ESI print,2011,2003,no,yes,181,yes,yes,not linked,LISTED: author test failed
+R6,ATQ67-041-iron-age-ii-dwelling-cave-mount,ESI16-109-jerusalem-mount-of-olives,ATQ,ESI,2011,1997,no,yes,147,yes,yes,not linked,LISTED: author test failed
+R6,ATQ67-041-iron-age-ii-dwelling-cave-mount,HA104-097-mt-of-olives,ATQ,HA,2011,1995,no,yes,147,yes,yes,not linked,LISTED: author test failed
+R6,ATQ67-041-iron-age-ii-dwelling-cave-mount,HAESI-579,ATQ,HA-ESI online,2011,2007,yes,yes,0,yes,yes,linked,
+R6,ATQ67-041-iron-age-ii-dwelling-cave-mount,HAESI-80,ATQ,HA-ESI online,2011,2005,no,yes,148,yes,yes,not linked,LISTED: author test failed
+R6,ATQ67-119-soap-production-factory-ottoman-period-suq,HAESI-786,ATQ,HA-ESI online,2011,2008,yes,,,yes,yes,not linked (permit contradiction),
+R6,ATQ69-069s-upper-aqueduct-jerusalem-church-kathisma-other,HAESI-10580,ATQ,HA-ESI online,2012,2014,yes,yes,63,no,yes,linked,
+R6,ATQ69-069s-upper-aqueduct-jerusalem-church-kathisma-other,HAESI-2332,ATQ,HA-ESI online,2012,2013,yes,no,828,yes,no,not linked,LISTED: place test failed
+R6,ATQ70-021s-three-military-bread-stamps-western-wall,HAESI-1219,ATQ,HA-ESI online,2012,2009,yes,,,yes,yes,linked,
+R6,ATQ72-001s-lord-will-roar-zion-amos-1,HAESI-1219,ATQ,HA-ESI online,2012,2009,yes,,,yes,yes,linked,
+R6,ATQ76-001s-burial-cave-agricultural-terrace-khirbat-el,HAESI-8545,ATQ,HA-ESI online,2013,2014,yes,yes,150,yes,yes,linked,
+R6,ATQ76-011s-burial-cave-roman-byzantine-periods-en,ESI19-066-jerusalem-en-yaal-a,ATQ,ESI,2013,1999,yes,,,yes,yes,linked,
+R6,ATQ76-011s-burial-cave-roman-byzantine-periods-en,HA107-094-en-yaal-a,ATQ,HA,2013,1997,yes,,,yes,yes,linked,
+R6,ATQ78-013-two-rock-cut-burial-caves-greek,HAESI-115,ATQ,HA-ESI online,2014,2005,yes,yes,234,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ78-013-two-rock-cut-burial-caves-greek,HAESI-1457,ATQ,HA-ESI online,2014,2010,yes,yes,67,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ78-013-two-rock-cut-burial-caves-greek,HAESI-276,ATQ,HA-ESI online,2014,2005,yes,yes,150,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ78-013-two-rock-cut-burial-caves-greek,HAESI-5405,ATQ,HA-ESI online,2014,2013,yes,no,992,yes,no,not linked,LISTED: place test failed
+R6,ATQ78-013-two-rock-cut-burial-caves-greek,HAESI-9551,ATQ,HA-ESI online,2014,2014,yes,yes,253,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ80-001s-iron-age-second-temple-period-remains,HAESI-3340,ATQ,HA-ESI online,2015,2013,no,yes,234,yes,yes,not linked,LISTED: author test failed
+R6,ATQ80-019-faunal-remains-1994-1996-excavations-temple,ESI14-096-jerusalem-city-of-david,ATQ,ESI,2015,1995,yes,yes,237,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ80-019-faunal-remains-1994-1996-excavations-temple,HA101-083-city-of-david,ATQ,HA,2015,1993,yes,yes,237,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ80-019-faunal-remains-1994-1996-excavations-temple,HAESI-1919,ATQ,HA-ESI online,2015,2011,yes,yes,198,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ80-023s-cemetery-quarry-remains-church-ketef-hinnom,HAESI113-082-jerusalem-ketef-hinnom,ATQ,HA-ESI print,2015,2001,yes,yes,2,yes,yes,linked,
+R6,ATQ80-045-excavations-sallah-ed-din-street-jerusalem,HAESI113-075-jerusalem-sallah-ed-din-street,ATQ,HA-ESI print,2015,2001,yes,,,yes,yes,linked,
+R6,ATQ80-067s-excavation-courtyard-knights-palace-hotel-christian,HAESI109-076-jerusalem-the-knights-palace-hotel,ATQ,HA-ESI print,2015,1999,no,yes,15,yes,yes,not linked,LISTED: author test failed
+R6,ATQ80-067s-excavation-courtyard-knights-palace-hotel-christian,HAESI113-079-jerusalem-the-old-city-walls,ATQ,HA-ESI print,2015,2001,yes,yes,5,no,yes,linked,
+R6,ATQ80-067s-excavation-courtyard-knights-palace-hotel-christian,HAESI115-050-jerusalem-the-old-city,ATQ,HA-ESI print,2015,2003,no,yes,206,yes,yes,not linked,LISTED: author test failed
+R6,ATQ82-085-abu-ghosh-jasmine-street-pre-ghassulian,ESI19-070-abu-ghosh,ATQ,ESI,2015,1999,yes,,,yes,yes,linked,
+R6,ATQ82-085-abu-ghosh-jasmine-street-pre-ghassulian,HA107-099-abu-ghosh,ATQ,HA,2015,1997,yes,,,yes,yes,linked,
+R6,ATQ83-145-georgian-monastery-byzantine-period-khirbat-umm,HAESI-24883,ATQ,HA-ESI online,2015,2015,no,yes,221,yes,yes,not linked,LISTED: author test failed
+R6,ATQ83-145-georgian-monastery-byzantine-period-khirbat-umm,HAESI-5388,ATQ,HA-ESI online,2015,2013,no,yes,96,yes,yes,not linked,LISTED: author test failed
+R6,ATQ83-145-georgian-monastery-byzantine-period-khirbat-umm,HAESI111-072-jerusalem-umm-leisun,ATQ,HA-ESI print,2015,2000,yes,,,yes,yes,linked,
+R6,ATQ84-065s-burial-cave-second-first-centuries-bce,HAESI-1594,ATQ,HA-ESI online,2016,2010,yes,yes,49,yes,yes,linked,
+R6,ATQ85-037-excavations-near-triple-gate-temple-mount,ESI19-060-jerusalem-the-gihon-spring,ATQ,ESI,2016,1999,yes,yes,206,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ85-037-excavations-near-triple-gate-temple-mount,HA107-086-gihon-spring,ATQ,HA,2016,1997,yes,yes,206,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ85-037-excavations-near-triple-gate-temple-mount,HAESI-1285,ATQ,HA-ESI online,2016,2009,yes,yes,264,no,yes,not linked (manual: different),reviewed: different
+R6,ATQ87-071s-villa-pottery-kiln-late-roman-byzantine,HAESI-36,ATQ,HA-ESI online,2016,2004,yes,no,717,yes,no,not linked,LISTED: place test failed
+R6,ATQ88-017-intermediate-middle-bronze-age-burial-cave,ESI07-084-nahal-refaim,ATQ,ESI,2017,1990,no,yes,299,yes,yes,not linked,LISTED: author test failed
+R6,ATQ88-017-intermediate-middle-bronze-age-burial-cave,HAESI-2146,ATQ,HA-ESI online,2017,2012,no,yes,155,yes,yes,not linked,LISTED: author test failed
+R6,ATQ88-017-intermediate-middle-bronze-age-burial-cave,HAESI-24833,ATQ,HA-ESI online,2017,2015,no,yes,165,yes,yes,not linked,LISTED: author test failed
+R6,ATQ88-017-intermediate-middle-bronze-age-burial-cave,HAESI-36,ATQ,HA-ESI online,2017,2004,yes,yes,10,yes,yes,linked,
+R6,ATQ88-017-intermediate-middle-bronze-age-burial-cave,HAESI-694,ATQ,HA-ESI online,2017,2008,no,yes,186,yes,yes,not linked,LISTED: author test failed
+R6,ATQ88-033-pottery-small-finds-burial-cave-900,HAESI-36,ATQ,HA-ESI online,2017,2004,yes,,,yes,yes,linked,
+R6,ATQ88-073-anthropological-remains-burial-cave-900-nahal,HAESI-823,ATQ,HA-ESI online,2017,2008,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ89-049-byzantine-monastery-nahal-qidron-jerusalem,HAESI-270,ATQ,HA-ESI online,2017,2005,yes,yes,0,yes,yes,linked,
+R6,ATQ90-001s-armon-ha-naziv-tunnel-government-house,ESI13-083-jerusalem-east-talpiyot,ATQ,ESI,2018,1995,yes,yes,262,no,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ90-001s-armon-ha-naziv-tunnel-government-house,HA100-072-east-talpiyot-lower-aqueduct,ATQ,HA,2018,1993,yes,yes,262,no,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ90-001s-armon-ha-naziv-tunnel-government-house,HAESI114-116-jerusalem-east-talpiyot,ATQ,HA-ESI print,2018,2002,yes,yes,275,no,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ90-127-remains-late-roman-mamluk-periods-djabsha,HAESI-24990,ATQ,HA-ESI online,2018,2016,no,yes,235,yes,yes,not linked,LISTED: author test failed
+R6,ATQ90-127-remains-late-roman-mamluk-periods-djabsha,HAESI-25202,ATQ,HA-ESI online,2018,2017,no,yes,110,yes,yes,not linked,LISTED: author test failed
+R6,ATQ90-127-remains-late-roman-mamluk-periods-djabsha,HAESI-25393,ATQ,HA-ESI online,2018,2018,yes,yes,221,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ90-127-remains-late-roman-mamluk-periods-djabsha,HAESI-486,ATQ,HA-ESI online,2018,2007,yes,yes,336,no,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ90-127-remains-late-roman-mamluk-periods-djabsha,HAESI115-050-jerusalem-the-old-city,ATQ,HA-ESI print,2018,2003,no,yes,223,yes,yes,not linked,LISTED: author test failed
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,ESI15-083-moza-1993,ATQ,ESI,2018,1996,yes,yes,164,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI-10582,ATQ,HA-ESI online,2018,2014,yes,yes,250,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI-147,ATQ,HA-ESI online,2018,2005,no,yes,191,yes,yes,not linked,LISTED: author test failed
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI-155,ATQ,HA-ESI online,2018,2005,no,yes,64,yes,yes,not linked,LISTED: author test failed
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI-169,ATQ,HA-ESI online,2018,2005,yes,yes,88,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI-24825,ATQ,HA-ESI online,2018,2015,yes,yes,9,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI-25536,ATQ,HA-ESI online,2018,2019,no,yes,187,yes,yes,not linked,LISTED: author test failed
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI-25649,ATQ,HA-ESI online,2018,2019,yes,yes,156,yes,yes,not linked (manual: different),reviewed: different
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI-25702,ATQ,HA-ESI online,2018,2020,no,yes,250,yes,yes,not linked,LISTED: author test failed
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI-403,ATQ,HA-ESI online,2018,2006,no,yes,192,yes,yes,not linked,LISTED: author test failed
+R6,ATQ91-001s-crusader-period-subterranean-water-reservoir-moza,HAESI115-055-moza,ATQ,HA-ESI print,2018,2003,yes,yes,89,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,ATQ98-001-late-iron-age-rock-cut-tomb,HAESI-25840,ATQ,HA-ESI online,2020,2020,no,yes,238,yes,yes,not linked,LISTED: author test failed
+R6,ATQ98-001-late-iron-age-rock-cut-tomb,HAESI-5414,ATQ,HA-ESI online,2020,2013,no,yes,226,yes,yes,not linked,LISTED: author test failed
+R6,ATQ98-001s-burial-cave-byzantine-early-islamic-periods,HAESI-694,ATQ,HA-ESI online,2020,2008,yes,no,1385,yes,no,not linked,LISTED: place test failed
+R6,IAAR19-abu-ghosh,ESI19-070-abu-ghosh,IAAR,ESI,2003,1999,yes,yes,37,yes,yes,linked,
+R6,IAAR19-abu-ghosh,HA107-099-abu-ghosh,IAAR,HA,2003,1997,yes,yes,37,yes,yes,linked,
+R6,IAAR3-manahat,ESI07-117-manahat,IAAR,ESI,1998,1990,yes,,,no,no,linked (manual: same),reviewed: same
+R6,IAAR39-tel-moza,ESI15-083-moza-1993,IAAR,ESI,2009,1996,yes,yes,50,yes,yes,linked (manual: same),reviewed: same
+R6,IAAR39-tel-moza,HAESI-147,IAAR,HA-ESI online,2009,2005,no,yes,251,yes,yes,not linked,LISTED: author test failed
+R6,IAAR39-tel-moza,HAESI-155,IAAR,HA-ESI online,2009,2005,no,yes,198,yes,yes,not linked,LISTED: author test failed
+R6,IAAR39-tel-moza,HAESI-169,IAAR,HA-ESI online,2009,2005,yes,yes,111,yes,yes,linked (manual: same),reviewed: same
+R6,IAAR39-tel-moza,HAESI-403,IAAR,HA-ESI online,2009,2006,no,yes,252,yes,yes,not linked,LISTED: author test failed
+R6,IAAR39-tel-moza,HAESI115-055-moza,IAAR,HA-ESI print,2009,2003,yes,yes,111,yes,yes,linked (manual: same),reviewed: same
+R6,IAAR39-tel-moza,HAESI115-076-moza-illit,IAAR,HA-ESI print,2009,2003,yes,yes,150,yes,yes,not linked (manual: different),reviewed: different
+R6,IAAR52-jerusalem-givati-i,HAESI-5432,IAAR,HA-ESI online,2013,2013,no,yes,134,yes,yes,not linked,LISTED: author test failed
+R6,IAAR52-jerusalem-givati-i,HAESI-873,IAAR,HA-ESI online,2013,2008,no,yes,87,yes,yes,linked (manual: same),reviewed: same
+R6,IAAR63-jerusalem-western-wall-plaza-i,HAESI-1219,IAAR,HA-ESI online,2019,2009,yes,yes,0,yes,yes,linked,
+R6,IAAR63-jerusalem-western-wall-plaza-i,HAESI-1285,IAAR,HA-ESI online,2019,2009,no,yes,51,yes,yes,not linked,LISTED: author test failed
+R6,IAAR63-jerusalem-western-wall-plaza-i,HAESI-18755,IAAR,HA-ESI online,2019,2015,yes,yes,60,yes,yes,not linked (permit contradiction),
+R6,IAAR63-jerusalem-western-wall-plaza-i,HAESI-25221,IAAR,HA-ESI online,2019,2017,yes,yes,116,no,yes,not linked (permit contradiction),
+R6,IAAR63-jerusalem-western-wall-plaza-i,HAESI-25927,IAAR,HA-ESI online,2019,2021,yes,yes,47,no,yes,not linked (permit contradiction),
+R6,IAAR66p1-jerusalem-givati-ii-byzantine,HAESI-1377,IAAR,HA-ESI online,2020,2010,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,IAAR66p1-jerusalem-givati-ii-byzantine,HAESI-25405,IAAR,HA-ESI online,2020,2018,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,IAAR66p1-jerusalem-givati-ii-byzantine,HAESI-25886,IAAR,HA-ESI online,2020,2021,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,IAAR66p1-jerusalem-givati-ii-byzantine,HAESI-5432,IAAR,HA-ESI online,2020,2013,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,IAAR66p1-jerusalem-givati-ii-byzantine,HAESI-873,IAAR,HA-ESI online,2020,2008,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,IAAR66p2-jerusalem-givati-ii-early-islamic,HAESI-1377,IAAR,HA-ESI online,2020,2010,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,IAAR66p2-jerusalem-givati-ii-early-islamic,HAESI-25405,IAAR,HA-ESI online,2020,2018,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,IAAR66p2-jerusalem-givati-ii-early-islamic,HAESI-25886,IAAR,HA-ESI online,2020,2021,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,IAAR66p2-jerusalem-givati-ii-early-islamic,HAESI-5432,IAAR,HA-ESI online,2020,2013,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,IAAR66p2-jerusalem-givati-ii-early-islamic,HAESI-873,IAAR,HA-ESI online,2020,2008,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,IAAR66p3-jerusalem-givati-ii-finds,HAESI-1377,IAAR,HA-ESI online,2020,2010,yes,,,yes,yes,linked (manual: same),reviewed: same
+R6,IAAR66p3-jerusalem-givati-ii-finds,HAESI-25405,IAAR,HA-ESI online,2020,2018,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,IAAR66p3-jerusalem-givati-ii-finds,HAESI-25886,IAAR,HA-ESI online,2020,2021,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R6,IAAR66p3-jerusalem-givati-ii-finds,HAESI-5432,IAAR,HA-ESI online,2020,2013,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,IAAR66p3-jerusalem-givati-ii-finds,HAESI-873,IAAR,HA-ESI online,2020,2008,yes,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R6,IAAR67-jerusalem-western-wall-plaza-iii,HAESI-1219,IAAR,HA-ESI online,2021,2009,yes,,,yes,yes,linked,
+R6,IAAR67-jerusalem-western-wall-plaza-iii,HAESI-18755,IAAR,HA-ESI online,2021,2015,yes,,,yes,yes,linked,
+R6,IAAR67-jerusalem-western-wall-plaza-iii,HAESI-25927,IAAR,HA-ESI online,2021,2021,yes,,,no,no,linked (manual: same),reviewed: same
+R6,IAAR69-kathisma,ESI20-101-jerusalem-mar-elias-the-kathisma-church,IAAR,ESI,2022,2000,yes,,,no,no,linked (manual: same),reviewed: same
+R6,IAAR69-kathisma,HA108-139-kathisma-church,IAAR,HA,2022,1998,yes,,,no,no,linked (manual: same),reviewed: same
+R6,IAAR69-kathisma,HAESI-106,IAAR,HA-ESI online,2022,2005,yes,,,no,no,linked (manual: same),reviewed: same
+R6,IAAR69-kathisma,HAESI113-089-jerusalem-mar-elias-the-kathisma-church,IAAR,HA-ESI print,2022,2001,yes,,,no,no,linked (manual: same),reviewed: same
+R7,IAAR63-jerusalem-western-wall-plaza-i,IAAR64-jerusalem-western-wall-plaza-ii,IAAR,IAAR,2019,2019,no,,,no,no,linked (manual: same),reviewed: same
+R7,IAAR66p1-jerusalem-givati-ii-byzantine,IAAR66p2-jerusalem-givati-ii-early-islamic,IAAR,IAAR,2020,2020,yes,,,yes,yes,linked,
+R7,IAAR66p1-jerusalem-givati-ii-byzantine,IAAR66p3-jerusalem-givati-ii-finds,IAAR,IAAR,2020,2020,yes,,,yes,yes,linked,
+R7,IAAR66p2-jerusalem-givati-ii-early-islamic,IAAR66p3-jerusalem-givati-ii-finds,IAAR,IAAR,2020,2020,yes,,,yes,yes,linked,
+R8,ADAJ1-047-wadi-al-badhan-tomb,ADAJ2-078-wadi-el-badhan-tomb,ADAJ,ADAJ,1951,1953,yes,,,yes,yes,not linked (manual: different),reviewed: different
+R8,ADAJ1-048-al-jib-tomb,ADAJ2-066-al-jib-tomb,ADAJ,ADAJ,1951,1953,yes,,,yes,yes,linked,
+R8,ADAJ4_5ar-030-silwan,ADAJ8_9-077-hablet-el-mud-silwan,ADAJ,ADAJ,1960,1964,no,,,yes,yes,not linked (manual: different),reviewed: different
+R8,ADAJ6_7-104-el-jib-expedition,ADAJ6_7-121-el-jib-1960,ADAJ,ADAJ,1962,1962,no,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R8,ADAJ6_7-104-el-jib-expedition,ADAJ8_9-086-el-jib-1962,ADAJ,ADAJ,1962,1964,no,,,yes,yes,not linked (manual: undetermined),reviewed: undetermined
+R8,ADAJ6_7-109-orif-hoard-news,ADAJ6_7-076-orif-hoard,ADAJ,ADAJ,1962,1962,no,,,yes,yes,linked,
+R8,QDAP13-170-citadel-jerusalem,QDAP14-121-citadel-jerusalem,QDAP,QDAP,1948,1950,no,,,yes,yes,linked,
