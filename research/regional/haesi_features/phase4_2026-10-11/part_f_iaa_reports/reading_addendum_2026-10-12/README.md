@@ -20,7 +20,7 @@ Both are image-only scans and were read from the page images. The PDFs are not c
 
 ## Exploratory checks (no frozen result touched)
 
-**Entry 46, water lane:** no change. The Manaḥat miqveh is 3.19 km from the Ramat Raḥel point and 3.26 km from ʿEin Kerem, beyond both the 1 km rule and the 2 km sensitivity. It is a ritual bath, not a row called a pool or cistern.
+**Entry 46, water lane:** no change. The Manaḥat miqveh is 3.19 km from the Ramat Raḥel point and 2.99 km from the water lane's ʿEin Kerem point (Wikidata Q1022487), beyond both the 1 km rule and the 2 km sensitivity. It is a ritual bath, not a row called a pool or cistern.
 
 **Recorded features worth noting (EVIDENCE, Reich p. 122):**
 - A rock-cut, plastered **fissure in the ceiling** near the opening, and a crevice along the stair. Both channelled rainwater into the installation.

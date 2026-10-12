@@ -72,6 +72,10 @@
   "phase4_2026-10-11/part_i_adaj/features.csv": {
    "rows": 76,
    "sha256": "9ca3f073c50b193ef55dc88836bf248f750d57ef9f3e81dd72139ff7f7c78c9b"
+  },
+  "phase4_2026-10-11/part_f_iaa_reports/reading_addendum_2026-10-12/features.csv": {
+   "rows": 2,
+   "sha256": "4f7d0e4a1fd9e6576afbaec08f27b795debc804d16e685fe3a9750e9b3f04705"
   }
  },
  "report_inputs": {
@@ -240,7 +244,7 @@
      "unknown": 3
     },
     "Z4_JERUSALEM_HILLS": {
-     "yes": 108,
+     "yes": 109,
      "no": 9,
      "unknown": 20
     }
@@ -263,7 +267,7 @@
     },
     "Z4_JERUSALEM_HILLS": {
      "yes": 51,
-     "no": 68,
+     "no": 69,
      "unknown": 179
     }
    },
@@ -462,9 +466,9 @@
      "unknown": 3
     },
     "Z4_JERUSALEM_HILLS": {
-     "yes": 73,
+     "yes": 74,
      "no": 5,
-     "unknown": 15
+     "unknown": 14
     }
    },
    "cave_with_finds": {
@@ -485,7 +489,7 @@
     },
     "Z4_JERUSALEM_HILLS": {
      "yes": 40,
-     "no": 49,
+     "no": 50,
      "unknown": 133
     }
    },
@@ -684,7 +688,7 @@
      "unknown": 2
     },
     "Z4_JERUSALEM_HILLS": {
-     "yes": 54,
+     "yes": 55,
      "no": 4,
      "unknown": 12
     }
@@ -707,7 +711,7 @@
     },
     "Z4_JERUSALEM_HILLS": {
      "yes": 37,
-     "no": 38,
+     "no": 39,
      "unknown": 119
     }
    },
@@ -829,16 +833,16 @@
      "all": 35
     },
     "ritual_bath": {
-     "yes": 121,
+     "yes": 122,
      "no": 11,
      "unknown": 26,
-     "all": 158
+     "all": 159
     },
     "cave_with_finds": {
      "yes": 69,
-     "no": 86,
+     "no": 87,
      "unknown": 208,
-     "all": 363
+     "all": 364
     },
     "tomb_burial_cave": {
      "yes": 294,
@@ -885,17 +889,17 @@
      "all": 295
     },
     "Z4_JERUSALEM_HILLS": {
-     "yes": 796,
-     "no": 1219,
+     "yes": 797,
+     "no": 1220,
      "unknown": 1426,
-     "all": 3441
+     "all": 3443
     }
    },
    "all_classes": {
-    "yes": 905,
-    "no": 1365,
+    "yes": 906,
+    "no": 1366,
     "unknown": 1630,
-    "all": 3900
+    "all": 3902
    }
   },
   "reports": {
@@ -925,16 +929,16 @@
      "all": 29
     },
     "ritual_bath": {
-     "yes": 84,
+     "yes": 85,
      "no": 7,
-     "unknown": 21,
+     "unknown": 20,
      "all": 112
     },
     "cave_with_finds": {
      "yes": 57,
-     "no": 65,
+     "no": 66,
      "unknown": 151,
-     "all": 273
+     "all": 274
     },
     "tomb_burial_cave": {
      "yes": 218,
@@ -981,17 +985,17 @@
      "all": 224
     },
     "Z4_JERUSALEM_HILLS": {
-     "yes": 606,
-     "no": 802,
-     "unknown": 916,
-     "all": 2324
+     "yes": 607,
+     "no": 803,
+     "unknown": 915,
+     "all": 2325
     }
    },
    "all_classes": {
-    "yes": 697,
-    "no": 917,
-    "unknown": 1073,
-    "all": 2687
+    "yes": 698,
+    "no": 918,
+    "unknown": 1072,
+    "all": 2688
    }
   },
   "sites": {
@@ -1021,16 +1025,16 @@
      "all": 23
     },
     "ritual_bath": {
-     "yes": 62,
+     "yes": 63,
      "no": 6,
      "unknown": 16,
-     "all": 84
+     "all": 85
     },
     "cave_with_finds": {
      "yes": 51,
-     "no": 53,
+     "no": 54,
      "unknown": 139,
-     "all": 243
+     "all": 244
     },
     "tomb_burial_cave": {
      "yes": 156,
@@ -1077,23 +1081,23 @@
      "all": 203
     },
     "Z4_JERUSALEM_HILLS": {
-     "yes": 454,
-     "no": 578,
+     "yes": 455,
+     "no": 579,
      "unknown": 741,
-     "all": 1773
+     "all": 1775
     }
    },
    "all_classes": {
-    "yes": 522,
-    "no": 685,
+    "yes": 523,
+    "no": 686,
     "unknown": 888,
-    "all": 2095
+    "all": 2097
    }
   }
  },
  "distinct": {
-  "rows_all": 4035,
-  "rows_counted": 3900,
+  "rows_all": 4037,
+  "rows_counted": 3902,
   "rows_not_counted": {
    "class wall_tower not eligible in phase 2": 31,
    "zone outside": 7,
@@ -1105,10 +1109,10 @@
   "report_groups_multi": 201,
   "reports_in_multi_groups": 518,
   "report_groups_with_counted_rows": 1362,
-  "sites": 1007,
-  "sites_with_counted_rows": 934,
+  "sites": 1008,
+  "sites_with_counted_rows": 935,
   "sites_multi_report_group": 193,
-  "sites_counted_located": 671,
+  "sites_counted_located": 672,
   "sites_counted_name_only": 263,
   "sites_spread_flagged": 6,
   "sites_ambiguous_name": 43
@@ -1155,7 +1159,7 @@
  },
  "conflicts_by_type": {
   "class_in_one_version": 195,
-  "dating": 66,
+  "dating": 67,
   "n_features": 26,
   "position": 4
  },
@@ -1174,7 +1178,7 @@
  "s3_external_site_ids": 0,
  "sensitivity_sites_without_S2": {
   "note": "rows without coordinates joined only by S4 (same report group) and S5 (manual); an upper bracket on the site count",
-  "sites_with_counted_rows": 1172,
+  "sites_with_counted_rows": 1173,
   "by_class": {
    "cistern": {
     "yes": 55,
@@ -1201,16 +1205,16 @@
     "all": 27
    },
    "ritual_bath": {
-    "yes": 77,
+    "yes": 78,
     "no": 6,
     "unknown": 20,
-    "all": 103
+    "all": 104
    },
    "cave_with_finds": {
     "yes": 54,
-    "no": 58,
+    "no": 59,
     "unknown": 146,
-    "all": 258
+    "all": 259
    },
    "tomb_burial_cave": {
     "yes": 196,
@@ -1257,17 +1261,17 @@
     "all": 239
    },
    "Z4_JERUSALEM_HILLS": {
-    "yes": 538,
-    "no": 667,
+    "yes": 539,
+    "no": 668,
     "unknown": 820,
-    "all": 2025
+    "all": 2027
    }
   },
   "all_classes": {
-   "yes": 627,
-   "no": 791,
+   "yes": 628,
+   "no": 792,
    "unknown": 990,
-   "all": 2408
+   "all": 2410
   }
  },
  "phase4": {
@@ -1316,8 +1320,8 @@
    "S0232": "S0233;S0699",
    "S0394": "S0396;S0769"
   },
-  "sites_counted_with_phase4_rows": 228,
-  "sites_counted_phase4_only": 168,
+  "sites_counted_with_phase4_rows": 229,
+  "sites_counted_phase4_only": 169,
   "levels": {
    "rows": {
     "phase4": {
@@ -1427,7 +1431,7 @@
         "unknown": 2
        },
        "Z4_JERUSALEM_HILLS": {
-        "yes": 19,
+        "yes": 20,
         "no": 2,
         "unknown": 3
        }
@@ -1450,7 +1454,7 @@
        },
        "Z4_JERUSALEM_HILLS": {
         "yes": 10,
-        "no": 10,
+        "no": 11,
         "unknown": 27
        }
       },
@@ -1569,16 +1573,16 @@
        "all": 7
       },
       "ritual_bath": {
-       "yes": 19,
+       "yes": 20,
        "no": 3,
        "unknown": 6,
-       "all": 28
+       "all": 29
       },
       "cave_with_finds": {
        "yes": 11,
-       "no": 15,
+       "no": 16,
        "unknown": 36,
-       "all": 62
+       "all": 63
       },
       "tomb_burial_cave": {
        "yes": 36,
@@ -1625,17 +1629,17 @@
        "all": 67
       },
       "Z4_JERUSALEM_HILLS": {
-       "yes": 131,
-       "no": 268,
+       "yes": 132,
+       "no": 269,
        "unknown": 192,
-       "all": 591
+       "all": 593
       }
      },
      "all_classes": {
-      "yes": 152,
-      "no": 306,
+      "yes": 153,
+      "no": 307,
       "unknown": 260,
-      "all": 718
+      "all": 720
      }
     }
    },
@@ -1770,7 +1774,7 @@
        },
        "Z4_JERUSALEM_HILLS": {
         "yes": 5,
-        "no": 4,
+        "no": 5,
         "unknown": 18
        }
       },
@@ -1896,9 +1900,9 @@
       },
       "cave_with_finds": {
        "yes": 6,
-       "no": 9,
+       "no": 10,
        "unknown": 27,
-       "all": 42
+       "all": 43
       },
       "tomb_burial_cave": {
        "yes": 16,
@@ -1946,16 +1950,16 @@
       },
       "Z4_JERUSALEM_HILLS": {
        "yes": 58,
-       "no": 130,
+       "no": 131,
        "unknown": 111,
-       "all": 299
+       "all": 300
       }
      },
      "all_classes": {
       "yes": 76,
-      "no": 160,
+      "no": 161,
       "unknown": 177,
-      "all": 413
+      "all": 414
      }
     },
     "shared": {
@@ -2065,9 +2069,9 @@
         "unknown": 0
        },
        "Z4_JERUSALEM_HILLS": {
-        "yes": 9,
+        "yes": 10,
         "no": 0,
-        "unknown": 1
+        "unknown": 0
        }
       },
       "cave_with_finds": {
@@ -2207,9 +2211,9 @@
        "all": 1
       },
       "ritual_bath": {
-       "yes": 9,
+       "yes": 10,
        "no": 0,
-       "unknown": 1,
+       "unknown": 0,
        "all": 10
       },
       "cave_with_finds": {
@@ -2263,16 +2267,16 @@
        "all": 2
       },
       "Z4_JERUSALEM_HILLS": {
-       "yes": 47,
+       "yes": 48,
        "no": 49,
-       "unknown": 6,
+       "unknown": 5,
        "all": 102
       }
      },
      "all_classes": {
-      "yes": 49,
+      "yes": 50,
       "no": 49,
-      "unknown": 6,
+      "unknown": 5,
       "all": 104
      }
     },
@@ -2605,6 +2609,7 @@
      "RG:ATQ66-079-excavations-rogem-gannim-jerusalem-installations-iron cistern@Z4_JERUSALEM_HILLS: unknown -> yes",
      "RG:ATQ66-079-excavations-rogem-gannim-jerusalem-installations-iron rockcut_installation@Z4_JERUSALEM_HILLS: unknown -> yes",
      "RG:ATQ80-045-excavations-sallah-ed-din-street-jerusalem rockcut_installation@Z4_JERUSALEM_HILLS: unknown -> yes",
+     "RG:ESI07-117-manahat ritual_bath@Z4_JERUSALEM_HILLS: unknown -> yes",
      "RG:ESI15-083-moza-1993 channel_aqueduct@Z4_JERUSALEM_HILLS: unknown -> no",
      "RG:ESI15-083-moza-1993 pool_reservoir@Z4_JERUSALEM_HILLS: unknown -> no"
     ]
@@ -2717,7 +2722,7 @@
         "unknown": 2
        },
        "Z4_JERUSALEM_HILLS": {
-        "yes": 7,
+        "yes": 8,
         "no": 2,
         "unknown": 0
        }
@@ -2740,7 +2745,7 @@
        },
        "Z4_JERUSALEM_HILLS": {
         "yes": 4,
-        "no": 3,
+        "no": 4,
         "unknown": 16
        }
       },
@@ -2859,16 +2864,16 @@
        "all": 2
       },
       "ritual_bath": {
-       "yes": 7,
+       "yes": 8,
        "no": 3,
        "unknown": 3,
-       "all": 13
+       "all": 14
       },
       "cave_with_finds": {
        "yes": 5,
-       "no": 7,
+       "no": 8,
        "unknown": 24,
-       "all": 36
+       "all": 37
       },
       "tomb_burial_cave": {
        "yes": 16,
@@ -2915,17 +2920,17 @@
        "all": 52
       },
       "Z4_JERUSALEM_HILLS": {
-       "yes": 48,
-       "no": 106,
+       "yes": 49,
+       "no": 107,
        "unknown": 99,
-       "all": 253
+       "all": 255
       }
      },
      "all_classes": {
-      "yes": 62,
-      "no": 135,
+      "yes": 63,
+      "no": 136,
       "unknown": 159,
-      "all": 356
+      "all": 358
      }
     },
     "shared": {

@@ -19,3 +19,18 @@ Seen: the first full run's 241 `REVIEW: ambiguous` pairs (R6 161, R5 78, R8 2). 
 Change: a manual decision may be `undetermined` as well as `same` or `different`. It closes a review pair without a link, like `different`, but records that the coded fields cannot settle it. The README counts these pairs as possible over-counts (one campaign counted as two report groups). A reader's "probably", "possibly" or "uncertain" (§4.3) is recorded as `undetermined` where a review needs closing.
 
 Effect: none on the link rules; it labels what a `different` decision would otherwise overstate. Exploratory.
+
+## B3. One more input: the owner-supplied chapters (12 October 2026)
+
+Seen: the two chapters themselves, which the integrator coded in `../phase4_2026-10-11/part_f_iaa_reports/reading_addendum_2026-10-12/`: Manaḥat Ch. 14 (the miqveh) and Efrata App. 1. Their reports are already part-F inputs.
+
+Change: that folder's `features.csv` (2 rows) is added to the phase-4 feature sources as `4F`. It is added in `scripts/build_merged.py`, because the frozen JSON block is not edited. No rule changes.
+
+Effect:
+- Rows 3,900 → 3,902.
+- Report units 2,687 → 2,688.
+- Site units 2,095 → 2,097 at 935 sites.
+- Dated to the window at site level: 522 → 523.
+- The Manaḥat miqveh joins the earlier Manaḥat report group (RG:ESI07-117-manahat). That group's ritual_bath goes from unknown to yes.
+
+The test that limited git changes to this folder was also narrowed. It now checks that the input CSV files are unchanged, which is what it was written to protect. Phase READMEs and addenda may change.

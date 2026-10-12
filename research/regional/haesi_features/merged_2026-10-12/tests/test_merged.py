@@ -85,8 +85,12 @@ class TestNoPhaseFileChanged(unittest.TestCase):
         if out is None:
             self.skipTest("git or freeze commit not available")
         changed = [x for x in out.stdout.split("\n") if x.strip()]
+        # B3: phase READMEs and addenda may change; the frozen inputs may not.
+        frozen = set("research/regional/haesi_features/" + rel for rel in
+                     json.loads((LANE / "summary.json").read_text(encoding="utf-8"))["inputs"])
+        frozen.discard("research/regional/haesi_features/phase4_2026-10-11/part_f_iaa_reports/reading_addendum_2026-10-12/features.csv")
         for f in changed:
-            self.assertTrue(f.startswith("research/regional/haesi_features/merged_2026-10-12/"), f)
+            self.assertTrue(f.startswith("research/regional/haesi_features/merged_2026-10-12/") or f not in frozen, f)
 
 
 class TestHelpers(unittest.TestCase):

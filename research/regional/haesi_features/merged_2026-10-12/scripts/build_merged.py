@@ -72,6 +72,8 @@ CLASSES = P["phase2_classes"]
 ZONES = P["zones_order"]
 DATING = P["dating_order"]
 FEATURE_SOURCES4 = [tuple(x) for x in PX["phase4_feature_sources"]]
+# Amendment B3 (12 Oct 2026): the owner-supplied chapters coded after the extension froze.
+FEATURE_SOURCES4 += [("4F", "phase4_2026-10-11/part_f_iaa_reports/reading_addendum_2026-10-12/features.csv")]
 REPORT_SOURCES4 = [tuple(x) for x in PX["phase4_report_sources"]]
 NEVER_COUNTED = PX["never_counted_sources"]
 PHASE4 = set(p for p, _ in REPORT_SOURCES4)

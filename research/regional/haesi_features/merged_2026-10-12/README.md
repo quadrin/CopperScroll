@@ -1,16 +1,17 @@
 # Regional inventory, merged and deduplicated (phases 1, 2, 3 and 4)
 
-**What it is.** One table of every feature row coded in phases 1–4 (4,035 rows from 2,200 coded reports: HA, ESI and HA-ESI; ʿAtiqot and IAA Reports; QDAP; SWP and Guérin; ADAJ), each tied to a report group (one field campaign's report in all its versions and parts) and a site, with counts by class × zone × `dated_in_window` at three levels.
-**Main result.** In the four zones, 3,900 counted rows reduce to 2,687 (report group × class × zone) units and to 2,095 (site × class × zone) units at 934 sites; dated in the window (yes / no / unknown): rows 905 / 1,365 / 1,630, reports 697 / 917 / 1,073, sites 522 / 685 / 888. Phase 4 adds 718 counted rows: 413 report units and 356 site units are new (phase 4 only), 104 report units and 129 site units also have phase 1–3 rows, and 55 phase-4 report groups (131 ʿAtiqot and IAA Reports articles and volumes) are joined to earlier HA, ESI or HA-ESI reports of the same excavation.
+**What it is.** One table of every feature row coded in phases 1–4 (4,037 rows from 2,200 coded reports: HA, ESI and HA-ESI; ʿAtiqot and IAA Reports; QDAP; SWP and Guérin; ADAJ), each tied to a report group (one field campaign's report in all its versions and parts) and a site, with counts by class × zone × `dated_in_window` at three levels.
+**Main result.** In the four zones, 3,902 counted rows reduce to 2,688 (report group × class × zone) units and to 2,097 (site × class × zone) units at 935 sites; dated in the window (yes / no / unknown): rows 906 / 1,366 / 1,630, reports 698 / 918 / 1,072, sites 523 / 686 / 888. Phase 4 adds 720 counted rows: 414 report units and 358 site units are new (phase 4 only), 104 report units and 129 site units also have phase 1–3 rows, and 55 phase-4 report groups (131 ʿAtiqot and IAA Reports articles and volumes) are joined to earlier HA, ESI or HA-ESI reports of the same excavation.
 **What stays unknown.** A site count is still not a count of features on the ground. The QDAP, ADAJ, SWP and Guérin rows are placed by name in old spellings that rarely match modern names, so most of them stay separate sites (an upper bound). 159 report pairs could not be settled (56 `undetermined`, 103 listed but unreviewed) and may count one campaign twice. All counts are of the read corpus.
 
-Exploratory bookkeeping, 11–12 October 2026 (phase-4 merge worker). No identification claim; no registered outcome changes. No phase file and nothing in `../merged_2026-10-11/` was changed, and no row was re-coded: classes, datings, quotes and coordinates are the phase readers'. Labels: EVIDENCE (a report says it), INFERENCE (our reasoning), CLAIM (an author's assertion).
+Exploratory bookkeeping, 11–12 October 2026 (phase-4 merge worker; amendment B3 added the owner-supplied Manaḥat and Efrata chapters, 12 October). No identification claim; no registered outcome changes. No phase file and nothing in `../merged_2026-10-11/` was changed, and no row was re-coded: classes, datings, quotes and coordinates are the phase readers'. Labels: EVIDENCE (a report says it), INFERENCE (our reasoning), CLAIM (an author's assertion).
 
 ## Freeze record
 
 - Rules for phases 1–3, adopted unchanged: `../merged_2026-10-11/DEDUPE_PLAN.md` (commit bf4320f, SHA-256 `ff13b357ae37c558bf5cebba0db01541cc0d17db0d2b12e1c7b8fe0710be676f`), its amendments A1–A4, and its 88 manual decisions (the first 88 rows of [data/manual_decisions.csv](data/manual_decisions.csv), byte-identical). Run on phases 1–3 alone (`--phases13`), the build reproduces every `merged_2026-10-11` output byte for byte (tested).
 - Phase-4 rules: [PLAN_EXTENSION.md](PLAN_EXTENSION.md), committed alone as `f596618` ("Freeze phase-4 merge extension"), SHA-256 `bedae3bf7ead121f84790d6346723c5e42bcf8e2aa9e00d833234a781803c3cf` (checked by the tests). Before the freeze only headers, value counts, a word-frequency list and the readers' NOTES had been seen; its §8 lists them. No pair had been compared.
 - Changes after the freeze, both exploratory, in [AMENDMENTS.md](AMENDMENTS.md):
+  - **B3** one more input: the two owner-supplied IAA Reports chapters (2 rows); the Manaḥat miqveh joins the earlier Manaḥat report group (ritual bath unknown → yes).
   - **B1** R1 (same page) uses the equal-key name test for phase-4 reports, and a manual decision can reject a listed R1 pair. The first run's five R1 links were all different SWP entries or round-up paragraphs printed on one page.
   - **B2** a manual decision may be `undetermined`: the review is closed with no link, and the pair is counted below as a possible over-count.
 
@@ -24,7 +25,7 @@ Exploratory bookkeeping, 11–12 October 2026 (phase-4 merge worker). No identif
 | 4G QDAP 1–14 | 71 | 88 | 88 |
 | 4H SWP Memoirs II–III, Guérin *Judée* I | 200 | 195 (101 + 94 in two-zone squares) | 101 |
 | 4I ADAJ | 77 | 76 | 76 |
-| **All** | **2,200** | **4,035** | **3,900** |
+| **All** | **2,200** | **4,037** | **3,902** |
 
 Not counted (kept in `features_all.csv`): the 94 SWP rows of `features_zone_unresolved.csv` (zone Z2|Z3 or Z3|Z4), and, as before, 31 phase-1 `wall_tower` rows, 7 phase-1 rows outside the zones and 3 that cannot be zoned. The header-only `reports.csv` and `features.csv` at the top of parts E and F are not inputs. SHA-256 of every input is in `summary.json`.
 
@@ -54,13 +55,13 @@ Cells: yes / no / unknown (all), where yes, no and unknown are `dated_in_window`
 | pool_reservoir | 0 / 2 / 2 (4) | 11 / 3 / 6 (20) | 8 / 9 / 19 (36) | 39 / 98 / 64 (201) | 58 / 112 / 91 (261) |
 | channel_aqueduct | 0 / 3 / 2 (5) | 9 / 7 / 14 (30) | 14 / 12 / 23 (49) | 94 / 281 / 175 (550) | 117 / 303 / 214 (634) |
 | dam | 0 / 0 / 0 (0) | 0 / 2 / 2 (4) | 0 / 0 / 4 (4) | 10 / 5 / 12 (27) | 10 / 7 / 18 (35) |
-| ritual_bath | 0 / 1 / 1 (2) | 8 / 0 / 2 (10) | 5 / 1 / 3 (9) | 108 / 9 / 20 (137) | 121 / 11 / 26 (158) |
-| cave_with_finds | 0 / 0 / 3 (3) | 0 / 4 / 2 (6) | 18 / 14 / 24 (56) | 51 / 68 / 179 (298) | 69 / 86 / 208 (363) |
+| ritual_bath | 0 / 1 / 1 (2) | 8 / 0 / 2 (10) | 5 / 1 / 3 (9) | 109 / 9 / 20 (138) | 122 / 11 / 26 (159) |
+| cave_with_finds | 0 / 0 / 3 (3) | 0 / 4 / 2 (6) | 18 / 14 / 24 (56) | 51 / 69 / 179 (299) | 69 / 87 / 208 (364) |
 | tomb_burial_cave | 1 / 7 / 16 (24) | 1 / 8 / 1 (10) | 15 / 21 / 19 (55) | 277 / 285 / 203 (765) | 294 / 321 / 239 (854) |
 | columbarium_dovecote | 0 / 0 / 1 (1) | 1 / 0 / 1 (2) | 0 / 0 / 1 (1) | 13 / 8 / 27 (48) | 14 / 8 / 30 (52) |
 | rockcut_installation | 0 / 1 / 3 (4) | 2 / 3 / 5 (10) | 0 / 14 / 12 (26) | 122 / 225 / 495 (842) | 124 / 243 / 515 (882) |
 | hoard_cache | 0 / 4 / 0 (4) | 3 / 3 / 0 (6) | 7 / 6 / 2 (15) | 12 / 38 / 2 (52) | 22 / 51 / 4 (77) |
-| all classes | 1 / 19 / 34 (54) | 38 / 33 / 39 (110) | 70 / 94 / 131 (295) | 796 / 1219 / 1426 (3441) | 905 / 1365 / 1630 (3900) |
+| all classes | 1 / 19 / 34 (54) | 38 / 33 / 39 (110) | 70 / 94 / 131 (295) | 797 / 1220 / 1426 (3443) | 906 / 1366 / 1630 (3902) |
 
 ### Level 2, deduplicated reports (report group x class x zone)
 
@@ -70,13 +71,13 @@ Cells: yes / no / unknown (all), where yes, no and unknown are `dated_in_window`
 | pool_reservoir | 0 / 2 / 2 (4) | 8 / 3 / 5 (16) | 7 / 6 / 18 (31) | 27 / 74 / 49 (150) | 42 / 85 / 74 (201) |
 | channel_aqueduct | 0 / 3 / 2 (5) | 6 / 5 / 12 (23) | 14 / 7 / 18 (39) | 76 / 172 / 117 (365) | 96 / 187 / 149 (432) |
 | dam | 0 / 0 / 0 (0) | 0 / 2 / 1 (3) | 0 / 0 / 3 (3) | 6 / 5 / 12 (23) | 6 / 7 / 16 (29) |
-| ritual_bath | 0 / 1 / 1 (2) | 6 / 0 / 2 (8) | 5 / 1 / 3 (9) | 73 / 5 / 15 (93) | 84 / 7 / 21 (112) |
-| cave_with_finds | 0 / 0 / 3 (3) | 0 / 3 / 2 (5) | 17 / 13 / 13 (43) | 40 / 49 / 133 (222) | 57 / 65 / 151 (273) |
+| ritual_bath | 0 / 1 / 1 (2) | 6 / 0 / 2 (8) | 5 / 1 / 3 (9) | 74 / 5 / 14 (93) | 85 / 7 / 20 (112) |
+| cave_with_finds | 0 / 0 / 3 (3) | 0 / 3 / 2 (5) | 17 / 13 / 13 (43) | 40 / 50 / 133 (223) | 57 / 66 / 151 (274) |
 | tomb_burial_cave | 1 / 6 / 15 (22) | 1 / 8 / 1 (10) | 9 / 17 / 14 (40) | 207 / 168 / 115 (490) | 218 / 199 / 145 (562) |
 | columbarium_dovecote | 0 / 0 / 1 (1) | 1 / 0 / 0 (1) | 0 / 0 / 1 (1) | 10 / 6 / 23 (39) | 11 / 6 / 25 (42) |
 | rockcut_installation | 0 / 1 / 3 (4) | 1 / 2 / 4 (7) | 0 / 7 / 6 (13) | 99 / 144 / 278 (521) | 100 / 154 / 291 (545) |
 | hoard_cache | 0 / 3 / 0 (3) | 3 / 3 / 0 (6) | 7 / 6 / 2 (15) | 10 / 28 / 2 (40) | 20 / 40 / 4 (64) |
-| all classes | 1 / 17 / 33 (51) | 28 / 28 / 32 (88) | 62 / 70 / 92 (224) | 606 / 802 / 916 (2324) | 697 / 917 / 1073 (2687) |
+| all classes | 1 / 17 / 33 (51) | 28 / 28 / 32 (88) | 62 / 70 / 92 (224) | 607 / 803 / 915 (2325) | 698 / 918 / 1072 (2688) |
 
 ### Level 3, distinct sites (site x class x zone)
 
@@ -86,15 +87,15 @@ Cells: yes / no / unknown (all), where yes, no and unknown are `dated_in_window`
 | pool_reservoir | 0 / 2 / 2 (4) | 3 / 3 / 5 (11) | 5 / 6 / 16 (27) | 21 / 57 / 38 (116) | 29 / 68 / 61 (158) |
 | channel_aqueduct | 0 / 3 / 2 (5) | 5 / 6 / 9 (20) | 10 / 6 / 15 (31) | 50 / 116 / 78 (244) | 65 / 131 / 104 (300) |
 | dam | 0 / 0 / 0 (0) | 0 / 2 / 1 (3) | 0 / 0 / 3 (3) | 2 / 4 / 11 (17) | 2 / 6 / 15 (23) |
-| ritual_bath | 0 / 1 / 1 (2) | 4 / 0 / 1 (5) | 4 / 1 / 2 (7) | 54 / 4 / 12 (70) | 62 / 6 / 16 (84) |
-| cave_with_finds | 0 / 0 / 3 (3) | 0 / 3 / 2 (5) | 14 / 12 / 15 (41) | 37 / 38 / 119 (194) | 51 / 53 / 139 (243) |
+| ritual_bath | 0 / 1 / 1 (2) | 4 / 0 / 1 (5) | 4 / 1 / 2 (7) | 55 / 4 / 12 (71) | 63 / 6 / 16 (85) |
+| cave_with_finds | 0 / 0 / 3 (3) | 0 / 3 / 2 (5) | 14 / 12 / 15 (41) | 37 / 39 / 119 (195) | 51 / 54 / 139 (244) |
 | tomb_burial_cave | 1 / 5 / 9 (15) | 1 / 5 / 1 (7) | 7 / 12 / 12 (31) | 147 / 112 / 96 (355) | 156 / 134 / 118 (408) |
 | columbarium_dovecote | 0 / 0 / 1 (1) | 1 / 0 / 0 (1) | 0 / 0 / 1 (1) | 10 / 3 / 22 (35) | 11 / 3 / 24 (38) |
 | rockcut_installation | 0 / 1 / 3 (4) | 1 / 2 / 5 (8) | 0 / 12 / 7 (19) | 82 / 106 / 212 (400) | 83 / 121 / 227 (431) |
 | hoard_cache | 0 / 2 / 0 (2) | 3 / 3 / 0 (6) | 5 / 2 / 1 (8) | 10 / 20 / 2 (32) | 18 / 27 / 3 (48) |
-| all classes | 1 / 15 / 27 (43) | 20 / 26 / 30 (76) | 47 / 66 / 90 (203) | 454 / 578 / 741 (1773) | 522 / 685 / 888 (2095) |
+| all classes | 1 / 15 / 27 (43) | 20 / 26 / 30 (76) | 47 / 66 / 90 (203) | 455 / 579 / 741 (1775) | 523 / 686 / 888 (2097) |
 
-Without S2 (rows without coordinates joined only within their report group or by manual decision) there would be 1,172 counted sites and 2,408 site units (627 / 791 / 990). The true number of places is probably between the two figures.
+Without S2 (rows without coordinates joined only within their report group or by manual decision) there would be 1,173 counted sites and 2,408 site units (627 / 791 / 990). The true number of places is probably between the two figures.
 
 ## Phase-4 contribution
 
@@ -102,10 +103,10 @@ A unit is **phase 4 only** if all its counted rows are phase-4 rows, **shared** 
 
 | level | phase 4 only | shared | phases 1-3 only | shared units whose dating phase 4 changed |
 |---|---|---|---|---|
-| reports | 76 / 160 / 177 (413) | 49 / 49 / 6 (104) | 572 / 708 / 890 (2170) | 12 |
-| sites | 62 / 135 / 159 (356) | 69 / 50 / 10 (129) | 391 / 500 / 719 (1610) | 16 |
+| reports | 76 / 161 / 177 (414) | 50 / 49 / 5 (104) | 572 / 708 / 890 (2170) | 13 |
+| sites | 63 / 136 / 159 (358) | 69 / 50 / 10 (129) | 391 / 500 / 719 (1610) | 16 |
 
-- **What phase 4 adds.** Report units rise from 2,292 to 2,687 and site units from 1,756 to 2,095. Units with phase 1–3 rows fall from 2,292 to 2,274 (reports) and from 1,756 to 1,739 (sites), because phase-4 reports join some earlier groups and sites (below).
+- **What phase 4 adds.** Report units rise from 2,292 to 2,688 and site units from 1,756 to 2,097. Units with phase 1–3 rows fall from 2,292 to 2,274 (reports) and from 1,756 to 1,739 (sites), because phase-4 reports join some earlier groups and sites (below).
 - **Datings changed in shared units.** Report units: 4 move from no to yes, 4 from unknown to yes and 4 from unknown to no. Site units: 6 no to yes, 5 unknown to yes, 5 unknown to no. The no-to-yes report units are the Mount Scopus chalk quarry cisterns and burial caves (ATQ113-i09), the Byzantine Street channel (ATQ120-i13) and the Kh. Kaʿkul installations (ATQ54-001). The list is in `summary.json` (`phase4.levels.*.shared_dating_changed_by_phase4`).
 
 ### Phase 4, level 1, rows
@@ -116,13 +117,13 @@ A unit is **phase 4 only** if all its counted rows are phase-4 rows, **shared** 
 | pool_reservoir | 0 / 1 / 1 (2) | 2 / 1 / 4 (7) | 3 / 1 / 7 (11) | 8 / 29 / 10 (47) | 13 / 32 / 22 (67) |
 | channel_aqueduct | 0 / 1 / 2 (3) | 2 / 3 / 6 (11) | 5 / 1 / 7 (13) | 20 / 46 / 26 (92) | 27 / 51 / 41 (119) |
 | dam | 0 / 0 / 0 (0) | 0 / 0 / 1 (1) | 0 / 0 / 0 (0) | 5 / 0 / 1 (6) | 5 / 0 / 2 (7) |
-| ritual_bath | 0 / 1 / 1 (2) | 0 / 0 / 0 (0) | 0 / 0 / 2 (2) | 19 / 2 / 3 (24) | 19 / 3 / 6 (28) |
-| cave_with_finds | 0 / 0 / 2 (2) | 0 / 0 / 1 (1) | 1 / 5 / 6 (12) | 10 / 10 / 27 (47) | 11 / 15 / 36 (62) |
+| ritual_bath | 0 / 1 / 1 (2) | 0 / 0 / 0 (0) | 0 / 0 / 2 (2) | 20 / 2 / 3 (25) | 20 / 3 / 6 (29) |
+| cave_with_finds | 0 / 0 / 2 (2) | 0 / 0 / 1 (1) | 1 / 5 / 6 (12) | 10 / 11 / 27 (48) | 11 / 16 / 36 (63) |
 | tomb_burial_cave | 0 / 3 / 8 (11) | 0 / 4 / 0 (4) | 2 / 2 / 4 (8) | 34 / 92 / 38 (164) | 36 / 101 / 50 (187) |
 | columbarium_dovecote | 0 / 0 / 0 (0) | 0 / 0 / 0 (0) | 0 / 0 / 0 (0) | 3 / 0 / 3 (6) | 3 / 0 / 3 (6) |
 | rockcut_installation | 0 / 1 / 2 (3) | 0 / 0 / 1 (1) | 0 / 6 / 0 (6) | 20 / 46 / 45 (111) | 20 / 53 / 48 (121) |
 | hoard_cache | 0 / 4 / 0 (4) | 1 / 1 / 0 (2) | 3 / 1 / 2 (6) | 2 / 15 / 0 (17) | 6 / 21 / 2 (29) |
-| all classes | 0 / 11 / 19 (30) | 5 / 10 / 15 (30) | 16 / 17 / 34 (67) | 131 / 268 / 192 (591) | 152 / 306 / 260 (718) |
+| all classes | 0 / 11 / 19 (30) | 5 / 10 / 15 (30) | 16 / 17 / 34 (67) | 132 / 269 / 192 (593) | 153 / 307 / 260 (720) |
 
 ### Phase 4, level 2, phase-4-only report units
 
@@ -133,12 +134,12 @@ A unit is **phase 4 only** if all its counted rows are phase-4 rows, **shared** 
 | channel_aqueduct | 0 / 1 / 2 (3) | 1 / 3 / 6 (10) | 5 / 0 / 6 (11) | 10 / 22 / 14 (46) | 16 / 26 / 28 (70) |
 | dam | 0 / 0 / 0 (0) | 0 / 0 / 1 (1) | 0 / 0 / 0 (0) | 1 / 0 / 1 (2) | 1 / 0 / 2 (3) |
 | ritual_bath | 0 / 1 / 1 (2) | 0 / 0 / 0 (0) | 0 / 0 / 2 (2) | 7 / 2 / 1 (10) | 7 / 3 / 4 (14) |
-| cave_with_finds | 0 / 0 / 2 (2) | 0 / 0 / 1 (1) | 1 / 5 / 6 (12) | 5 / 4 / 18 (27) | 6 / 9 / 27 (42) |
+| cave_with_finds | 0 / 0 / 2 (2) | 0 / 0 / 1 (1) | 1 / 5 / 6 (12) | 5 / 5 / 18 (28) | 6 / 10 / 27 (43) |
 | tomb_burial_cave | 0 / 3 / 8 (11) | 0 / 4 / 0 (4) | 1 / 2 / 4 (7) | 15 / 37 / 22 (74) | 16 / 46 / 34 (96) |
 | columbarium_dovecote | 0 / 0 / 0 (0) | 0 / 0 / 0 (0) | 0 / 0 / 0 (0) | 1 / 0 / 2 (3) | 1 / 0 / 2 (3) |
 | rockcut_installation | 0 / 1 / 2 (3) | 0 / 0 / 1 (1) | 0 / 1 / 0 (1) | 8 / 21 / 20 (49) | 8 / 23 / 23 (54) |
 | hoard_cache | 0 / 3 / 0 (3) | 1 / 1 / 0 (2) | 3 / 1 / 2 (6) | 2 / 8 / 0 (10) | 6 / 13 / 2 (21) |
-| all classes | 0 / 10 / 19 (29) | 4 / 10 / 14 (28) | 14 / 10 / 33 (57) | 58 / 130 / 111 (299) | 76 / 160 / 177 (413) |
+| all classes | 0 / 10 / 19 (29) | 4 / 10 / 14 (28) | 14 / 10 / 33 (57) | 58 / 131 / 111 (300) | 76 / 161 / 177 (414) |
 
 ### Phase 4, level 3, phase-4-only site units
 
@@ -148,13 +149,13 @@ A unit is **phase 4 only** if all its counted rows are phase-4 rows, **shared** 
 | pool_reservoir | 0 / 1 / 1 (2) | 1 / 1 / 4 (6) | 2 / 0 / 7 (9) | 3 / 16 / 7 (26) | 6 / 18 / 19 (43) |
 | channel_aqueduct | 0 / 1 / 2 (3) | 2 / 2 / 5 (9) | 3 / 0 / 5 (8) | 6 / 21 / 13 (40) | 11 / 24 / 25 (60) |
 | dam | 0 / 0 / 0 (0) | 0 / 0 / 1 (1) | 0 / 0 / 0 (0) | 0 / 0 / 1 (1) | 0 / 0 / 2 (2) |
-| ritual_bath | 0 / 1 / 1 (2) | 0 / 0 / 0 (0) | 0 / 0 / 2 (2) | 7 / 2 / 0 (9) | 7 / 3 / 3 (13) |
-| cave_with_finds | 0 / 0 / 2 (2) | 0 / 0 / 1 (1) | 1 / 4 / 5 (10) | 4 / 3 / 16 (23) | 5 / 7 / 24 (36) |
+| ritual_bath | 0 / 1 / 1 (2) | 0 / 0 / 0 (0) | 0 / 0 / 2 (2) | 8 / 2 / 0 (10) | 8 / 3 / 3 (14) |
+| cave_with_finds | 0 / 0 / 2 (2) | 0 / 0 / 1 (1) | 1 / 4 / 5 (10) | 4 / 4 / 16 (24) | 5 / 8 / 24 (37) |
 | tomb_burial_cave | 0 / 2 / 6 (8) | 0 / 3 / 0 (3) | 1 / 1 / 4 (6) | 15 / 26 / 20 (61) | 16 / 32 / 30 (78) |
 | columbarium_dovecote | 0 / 0 / 0 (0) | 0 / 0 / 0 (0) | 0 / 0 / 0 (0) | 1 / 0 / 2 (3) | 1 / 0 / 2 (3) |
 | rockcut_installation | 0 / 1 / 2 (3) | 0 / 0 / 1 (1) | 0 / 6 / 0 (6) | 5 / 17 / 15 (37) | 5 / 24 / 18 (47) |
 | hoard_cache | 0 / 2 / 0 (2) | 1 / 1 / 0 (2) | 2 / 1 / 1 (4) | 2 / 5 / 0 (7) | 5 / 9 / 1 (15) |
-| all classes | 0 / 8 / 17 (25) | 4 / 8 / 14 (26) | 10 / 13 / 29 (52) | 48 / 106 / 99 (253) | 62 / 135 / 159 (356) |
+| all classes | 0 / 8 / 17 (25) | 4 / 8 / 14 (26) | 10 / 13 / 29 (52) | 49 / 107 / 99 (255) | 63 / 136 / 159 (358) |
 
 ### Phase-4 report groups joined to earlier reports
 
@@ -186,10 +187,10 @@ A unit is **phase 4 only** if all its counted rows are phase-4 rows, **shared** 
   - a pottery report tied by R6 to an earlier season, although its notes name the 2018–2020 excavation (ATQ119-i13);
   - the St. Stephen's cistern (ATQ44-i16), linked to Mount Scopus (A) only through a 1 km map-reference unit.
 
-### Conflicts (291, `conflicts.csv`)
+### Conflicts (292, `conflicts.csv`)
 
 - 195 classes coded in one version only. Mostly a finds report coding one context of its site report, or a final report coding more than the preliminary report.
-- 66 different datings, 26 different stated numbers of features, and 4 positions that fail the position test.
+- 67 different datings, 26 different stated numbers of features, and 4 positions that fail the position test.
 - The 79 conflicts of phases 1–3 are among them.
 
 ## What stays uncertain
@@ -209,10 +210,10 @@ A unit is **phase 4 only** if all its counted rows are phase-4 rows, **shared** 
 |---|---|
 | `PLAN_EXTENSION.md` | Frozen phase-4 rules and parameters (JSON block read by the script) |
 | `AMENDMENTS.md` | B1, B2, after the freeze |
-| `features_all.csv` | Every input row (4,035): phase-2 columns, then `phase`, `source_file`, `report_group`, `site_id`, `row_uid`, `counted`, `count_zone`, `zone_source`, `not_counted_reason`, `version_role`, `level2_zone` |
+| `features_all.csv` | Every input row (4,037): phase-2 columns, then `phase`, `source_file`, `report_group`, `site_id`, `row_uid`, `counted`, `count_zone`, `zone_source`, `not_counted_reason`, `version_role`, `level2_zone` |
 | `report_groups.csv` | 1,883 groups: members, preferred version, link rules, level-2 units, sites, conflicts, `phase4_members`, `phase13_groups` (the `merged_2026-10-11` groups it contains) |
-| `sites.csv` | 1,007 sites: rows, groups, keys, position, spread, zone, rules, level-3 units, `phase4_rows`, `phase13_sites` |
-| `conflicts.csv` | 291 conflicts with resolution |
+| `sites.csv` | 1,008 sites: rows, groups, keys, position, spread, zone, rules, level-3 units, `phase4_rows`, `phase13_sites` |
+| `conflicts.csv` | 292 conflicts with resolution |
 | `pair_candidates.csv` | Every report pair the rules tested and listed, with each test and the outcome (`REVIEW` closed by decisions; `LISTED` not linked) |
 | `site_review.csv` | Located row pairs within the distance whose names could not be compared |
 | `ha_esi_volume_map.csv` | A2 correspondence (unchanged) |
