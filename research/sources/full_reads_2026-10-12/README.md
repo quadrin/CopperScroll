@@ -32,7 +32,15 @@ The Dalman source is an intact 148-page Drive file. Its earlier local download w
 
 Public reproduction permission was not established for these books. The repository contains original paraphrases, exact printed/viewer locators, source hashes and retrieval/render provenance. PDFs, DjVu, full OCR, scan images, private preparation scripts and model inputs are excluded. Useful figures can be retrieved from the listed source file and exact page without publishing the copyrighted scan.
 
-## Verification
+## Applied follow-up, 12 October 2026
+
+The [feature-phase audit](feature_phase_audit/README.md) attaches construction, use, fill, access and alteration events to exact observation and inventory IDs. It qualifies Herodium's undiscovered inlet/transferred chronology, Atara's aggregate undated pools, Beth-Horon's unknown bearings and Absalom's separate access events. The [source-lineage audit](source_lineage_audit/README.md) traces repeated claims and natively verifies Rogem's locus list: Roman soil L114 lies near Cistern 2, while WP3/Cave 1 contexts do not date its stairs. Sion 2002's earlier primary report remains unavailable.
+
+The [storage-language audit](storage_language_audit/README.md) adds native Puech/Lefkovits constraints, retains entry 46's deep-pit and numerical alternatives, and limits the Herodium numbered-label comparison to its actual referents and source access. Its new PDF is indexed but exceeds the raw-reader limit. The [entry-46 function/phase review](../../regional/water_systems/entry46_phase_review_2026-10-12/README.md) applies declared function/place gates equally to retained receptacle and bath descriptions, separates original-stair failures from unknown alternative access, and exposes the full claim's missing joins.
+
+These are applied exploratory records. Previously read sources, alternative formulations and source availability supply no independent confirmation. Future original construction/access observations must use the existing intake and registration procedures.
+
+## Verification of the reading pass
 
 All seven full-source byte lengths and SHA-256 hashes were checked. Final CSVs were parsed, page ranges checked for exact contiguous coverage, segment ranges checked for overlaps, observation IDs checked for duplicates and figure-access records checked against their declared source and page scope. Additional readers audited the completed book records. Fine-detail and missing-page statuses were retained during integration.
 

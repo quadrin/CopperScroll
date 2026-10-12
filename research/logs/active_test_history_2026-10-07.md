@@ -198,3 +198,7 @@ An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or M
 ## Superseded status before whole-book reading, 12 October 2026
 
 Last session (12 October): **obtained**: a separate [manual-check shortlist](regional/water_systems/manual_review_2026-10-12/README.md), [native entry-46 bath phases](assessments/entry46_baths_2026-10-12/README.md), and original [Beth-Horon](sources/benjamin1993_targeted_2026-10-12/README.md), [Jerusalem tomb](sources/kloner_zissu2003_targeted_2026-10-12/README.md) and [Herodium pool](sources/netzer1981_targeted_2026-10-12/README.md) records. The audit distinguishes bath access from later cistern phases and source-attributed supply from an observed inlet. [Archive routes](sources/kohlit_incoming_2026-10-12/ACCESS_EVIDENCE.md) and the [Drive index](sources/drive_index.md) are corrected.
+
+## 12 October 2026: before post-reading application
+
+Last session (12 October): **partly**: the [whole-book source records](sources/full_reads_2026-10-12/README.md) now contain sequential reading of the available legible text and ordinary imagery, with missing edition pages and damaged map labels retained. Dalman plate25 fine detail remains reserved; its caption/provenance intake was [declared before detail](assessments/kohlit_chain/registrations/dalman1995-plate25.declaration.json), and the source record corrects coarse-raster dimensions and slide-ID inference.

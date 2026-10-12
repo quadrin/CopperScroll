@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "snapshot_ref": "09e045de120c4954fc0bd2ab14f475d9106e6de4",
+  "sources": [
+    {
+      "id": "puech2015",
+      "title": "The Copper Scroll Revisited",
+      "author": "Émile Puech",
+      "year": 2015,
+      "series": "STDJ112",
+      "url": "https://drive.google.com/file/d/1ZzbdiNt-REc9RL4JfFI-tHGLNFemNqLV/view",
+      "mime": "application/pdf",
+      "expected_bytes": 5041693,
+      "native_pages_inspected": [
+        {
+          "printed": "55–56",
+          "viewer": "66–67"
+        },
+        {
+          "printed": "85",
+          "viewer": "96"
+        },
+        {
+          "printed": "87–88",
+          "viewer": "98–99"
+        },
+        {
+          "printed": "103",
+          "viewer": "114"
+        }
+      ],
+      "inspection_kind": "edition pages; no manuscript photograph",
+      "limits": "Mesha and Sirach originals cited by editor, not independently inspected",
+      "copyright": "public page reproduction permission unestablished; source pages/OCR private",
+      "actual_bytes": 5041693,
+      "source_sha256": "864a843aa9aa8d8bb3c8470f8df0be35cc1abc319c0d4de6e99a1ceedfac99d4"
+    },
+    {
+      "id": "lefkovits2000",
+      "title": "The Copper Scroll 3Q15: A Reevaluation",
+      "author": "Judah K. Lefkovits",
+      "year": 2000,
+      "series": "STDJ25",
+      "url": "https://drive.google.com/file/d/16hjo90sXMoG8hcKVvFwPvjTb4K3YKeI5/view",
+      "mime": "application/pdf",
+      "expected_bytes": 60384566,
+      "native_pages_inspected": [
+        {
+          "printed": "331",
+          "viewer": "352"
+        },
+        {
+          "printed": "333",
+          "viewer": "354"
+        },
+        {
+          "printed": "394",
+          "viewer": "415"
+        }
+      ],
+      "inspection_kind": "edition pages; no manuscript photograph",
+      "text_layer_only_pages": "191–192,392 (used only as retrieval pointers)",
+      "limits": "Ben Sira cited as3:3 in print, Puech gives50:3; original witness not independently inspected",
+      "copyright": "public page reproduction permission unestablished; source pages/OCR private",
+      "actual_bytes": 60384566,
+      "source_sha256": "09c76f1bffd587d0b8f44f89174ccd7e5e41d2c9007823217b7225bf1c1d0d26"
+    },
+    {
+      "id": "netzer1981",
+      "title": "Greater Herodium",
+      "author": "Ehud Netzer; Joseph Naveh inscription discussion",
+      "year": 1981,
+      "series": "Qedem13",
+      "url": "https://drive.google.com/file/d/1jsSwhKMFW_SLkQcfCKPmQOsxXQQcs53s/view",
+      "stable_catalogue_url": "https://www.jstor.org/stable/i40142918",
+      "mime": "image/x.djvu",
+      "expected_bytes": 35672417,
+      "source_sha256": "285093b73e70a11183b6ebd0aacee2392928004d8f3ff4364c69895294d616bc",
+      "native_pages_inspected_this_pass": [],
+      "prior_native_record": "../netzer1981/observations.csv#N014; printed71/viewer79 Ill99; N020 printed134/viewer141 noteIII13",
+      "blocker": "complete raw file obtained; no installed DjVu decode delegate; bounded Drive text fetch Transport closed",
+      "letter_reading_limits": "full inscriptions/individual uncertain letters/restorations/numeral encoding unavailable from observation summary",
+      "copyright": "public reproduction permission unestablished; source images not committed",
+      "actual_bytes": 35672417
+    },
+    {
+      "id": "milik1962_indexed_file",
+      "title": "DJDIII indexed plate scan",
+      "author": "Baillet, Milik and de Vaux",
+      "year": 1962,
+      "url": "https://drive.google.com/file/d/1GzRnplCiUtwZYLg_bAMSM4IJuCsSs6ZS/view",
+      "mime": "application/pdf",
+      "expected_bytes": 4795367,
+      "pages": 88,
+      "scope": "front matter/text layer inspected only to determine plate-only contents; no protected manuscript plate opened",
+      "needed": "printed244 C70 (locator via Lefkovits191 n6), absent from supplied plate file",
+      "claim_status": "Milik large-built-reservoir definition repository-reported only",
+      "actual_bytes": 4795367,
+      "source_sha256": "b7a52c275ad42a333f4d825efd12425e11574aa00bdd76e72e41656de86a2eb2"
+    },
+    {
+      "id": "displayed_corpus",
+      "title": "ETCBC-derived displayed ancient text",
+      "path": "data/scroll-text.js",
+      "url": "https://github.com/quadrin/CopperScroll/blob/09e045de120c4954fc0bd2ab14f475d9106e6de4/data/scroll-text.js",
+      "basis": "ETCBC DSS Text-Fabric2.0.1; Abegg, Bowley and Cook; display conversion Jacobs,Naaijer,Roorda",
+      "licence": "CC BY-NC4.0; changes listed in tools/build_scroll_text.py",
+      "scope": "rendered segments, surface-morphology fields and numeric tokens; one derivative transcription"
+    },
+    {
+      "id": "readings",
+      "path": "text/readings.json",
+      "url": "https://github.com/quadrin/CopperScroll/blob/09e045de120c4954fc0bd2ab14f475d9106e6de4/text/readings.json",
+      "scope": "existing edition records e22-solomon,e46-bet-hakerem,e46-left-depth,e46-feet,e55-bethesda",
+      "limits": "record-derived claims only unless explicitly verified against native edition pages"
+    },
+    {
+      "id": "netzer1981_new_pdf",
+      "title": "Greater Herodium (Ehud Netzer).pdf",
+      "author": "Ehud Netzer (edition identity not yet natively verified)",
+      "url": "https://drive.google.com/file/d/1Szh3CG_2Q0hhPli0eMTi47ckGGDAg3iZ/view",
+      "drive_id": "1Szh3CG_2Q0hhPli0eMTi47ckGGDAg3iZ",
+      "parent_id": "114qehR0C8LouGds9UwZ5-hpStbv2GMQb",
+      "mime": "application/pdf",
+      "metadata_bytes": 289005216,
+      "created_time": "2026-10-12T18:49:17.562Z",
+      "modified_time": "2026-10-12T18:47:32.908Z",
+      "source_sha256": null,
+      "native_pages_inspected_this_pass": [],
+      "needed": "printed71 Ill99; printed134 noteIII13; viewer mapping unverified",
+      "status": "user supplied PDF discovered; native inspection blocked",
+      "raw_fetch_error": "HTTP413:289005216 exceeds268435456-byte limit",
+      "nonraw_fetch": "successful empty text; no materializable file_uri",
+      "history": "PDF supersedes need for DjVu rendering if an accessible copy/page extract becomes available; previous DjVu decoder failure retained as history",
+      "copyright": "public reproduction terms unestablished; retrieval only"
+    }
+  ]
+}

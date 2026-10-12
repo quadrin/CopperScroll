@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "status": "exploratory",
+  "source_ref": "09e045de120c4954fc0bd2ab14f475d9106e6de4",
+  "lexical_branches": [
+    {
+      "id": "pool_basin",
+      "ancient_word_variants": [
+        "אשוח",
+        "אשיח"
+      ],
+      "sources": [
+        "Puech2015 printed85/viewer96;55–56/viewer66–67",
+        "Lefkovits2000 printed331/viewer352;394/viewer415"
+      ],
+      "bathing_eligibility": "permitted as a physical water basin; ritual status alone does not resolve the intended referent",
+      "size_or_built_form_requirement": "not established by inspected editions"
+    },
+    {
+      "id": "deep_pit",
+      "ancient_word": "באשית",
+      "source": "Lefkovits2000 printed331/viewer352",
+      "water_screen_applicability": "unknown; requires separately declared inventory/constraints"
+    }
+  ],
+  "function_branches": [
+    {
+      "id": "contained_water_basin",
+      "meaning_status": "exploratory lexical compatibility",
+      "apply_to": [
+        "pool",
+        "cistern",
+        "ritual_bath",
+        "swimming_pool",
+        "basin_tank"
+      ],
+      "match": "phase-specific evidence for a physical water-retaining basin/cistern",
+      "unknown": "water retention or contemporaneous configuration unestablished",
+      "fail": "positive phase-specific evidence contradicts a water-retaining receptacle",
+      "press_vat_rule": "retention of wine/oil alone does not establish water retention/use; inspect function rather than include on shape alone",
+      "ritual_label_rule": "neither necessary nor disqualifying"
+    },
+    {
+      "id": "storage_service",
+      "meaning_status": "narrower sensitivity assumption; not a proved lexical necessity",
+      "apply_to": [
+        "pool",
+        "cistern",
+        "ritual_bath",
+        "swimming_pool",
+        "basin_tank"
+      ],
+      "match": "contained_water_basin MATCH plus documented same-phase water storage for withdrawal or supply/service use",
+      "unknown": "storage/service role beyond immersion/containment unestablished",
+      "fail": "positive evidence contradicting storage/service use in that retained phase",
+      "inlet_rule": "an inlet supplying the basin establishes inlet supply; it does not alone establish that the basin supplied other users",
+      "silence_rule": "UNKNOWN, never FAIL"
+    }
+  ],
+  "phase_rules": {
+    "site_date": "occupation/fill dates cannot silently date cutting, plaster, stairs or conversions",
+    "phase_mixing": "function, stairs, orientation and date must coexist within a retained phase",
+    "change_of_use": "code separately; later cistern conversion cannot date or classify an earlier bath",
+    "date_uncertainty": "preserve typological/published inference versus sealed construction evidence"
+  },
+  "full_claim_gates": [
+    "retained lexical reading branch",
+    "phase-specific Beth ha-Kerem association",
+    "contemporaneous entrance origin and approach direction",
+    "retained leftward reading",
+    "retained distance/depth/unit or ten-small-pits branch",
+    "same-phase target observation",
+    "equal treatment of controls",
+    "registered demonstrably unseen prediction for confirmatory identification"
+  ],
+  "numerical_readings": {
+    "Puech2015": "ten cubits, relative left (printed85,87–88/viewer96,98–99)",
+    "Lefkovits2000": "ten cubits distance; alternatively depth; alternatively ten small pits (printed333/viewer354)",
+    "Milik1962": "inherited feet branch; native commentary not inspected"
+  },
+  "prohibited_inferences": [
+    "candidate class/size fixes lexical meaning",
+    "ritual label supplies construction date",
+    "supply channel automatically proves reservoir service",
+    "modern entry number equals ancient numbered storage place",
+    "eligibility match equals full entry46 identification"
+  ]
+}

@@ -1,8 +1,8 @@
 # Active test
 
-Updated 12 October 2026 UTC / 11 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 12 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **partly**: the [whole-book source records](sources/full_reads_2026-10-12/README.md) now contain sequential reading of the available legible text and ordinary imagery, with missing edition pages and damaged map labels retained. Dalman plate25 fine detail remains reserved; its caption/provenance intake was [declared before detail](assessments/kohlit_chain/registrations/dalman1995-plate25.declaration.json), and the source record corrects coarse-raster dimensions and slide-ID inference.
+Last session (12 October): **partly**: applied the [whole-book phase and source-lineage joins](sources/full_reads_2026-10-12/README.md#applied-follow-up-12-october-2026), natively checked entry 46 edition alternatives, and ran the [pool-reading function/phase review](regional/water_systems/entry46_phase_review_2026-10-12/README.md). Rogem L114 dates nearby soil, not its stairs. Sion 2002 and exact Herodium label sequences remain uninspected; the newly indexed Herodium PDF exceeds the raw-reader limit. Dalman plate25 fine detail stays reserved.
 
 ## Active questions and the observation that decides each
 

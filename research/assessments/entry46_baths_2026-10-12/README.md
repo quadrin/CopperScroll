@@ -61,6 +61,14 @@ Armon's value is a bounded Area A marker interpolation, rather than a registered
 
 ## Next decisive evidence
 
+### Post-reading application, 12 October 2026
+
+Native Puech 2015 and Lefkovits 2000 commentary now establish that a physical bathing basin is compatible with the retained pool reading, while a separate storage/service requirement is a narrower operational sensitivity. Lefkovits also retains a deep-pit reading and distance/depth/ten-small-pits interpretations. The old reservoir-only/ten-unit simplification therefore cannot stand for every edition branch. See the [lexical audit](../../sources/full_reads_2026-10-12/storage_language_audit/README.md) and [equal-rule phase review](../../regional/water_systems/entry46_phase_review_2026-10-12/README.md). The water screen does not assess the deep-pit branch or establish a numerical datum.
+
+Fresh inspection of Greenberg and Cinamon 2011 p. 103 identifies L114 as Roman soil **near** Cistern 2 and L118 as an undated bordering wall; L101/L104 belong to WP3 and L108/L130/L135 to Cave 1 fills. These contexts supply no stair foundation date. The [source-lineage record](../../sources/full_reads_2026-10-12/source_lineage_audit/README.md) includes the native locus table and exact original-report access gap. Later removed/blocked original stairs contradict that particular origin model; alternative access remains unknown. Ramat's medieval conversion independently fails the relevant period requirement.
+
+### Required observations retained from the original audit
+
 1. For Armon, a stratified L5 basket/level sequence separating the first-century stair fill, W11 construction and W1 intrusion; date-bearing junctions establishing which entrance/basin phase existed before 135 CE. The first-century aqueduct foundation does not settle this.
 2. For Rogem, Sion's 1999 Cistern 2 sections, locus/register and the source behind the Early Roman association. Preserve the collecting-vat, bath and later rainwater-cistern phases separately.
 3. For Ramat, a datable context attached to the original stair/plaster phase. Its medieval fill and washed-in Roman coin have already failed that role.
