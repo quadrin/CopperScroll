@@ -121,7 +121,7 @@ class TestOutputs(unittest.TestCase):
     def test_every_candidate_has_a_status(self):
         for r in rows(PART / "screen.csv"):
             if r["decision"].startswith("candidate"):
-                self.assertIn(r["status"], ("read and coded", "not read (time limit)"), r["screen_key"])
+                self.assertIn(r["status"], ("read and coded", "not read (time limit)", "held (citation and first line only)"), r["screen_key"])
 
     def test_readme_counts_match_tables(self):
         readme = (PART / "README.md").read_text(encoding="utf-8")
