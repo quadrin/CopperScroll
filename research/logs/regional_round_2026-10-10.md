@@ -57,3 +57,27 @@ The owner asked for more of the region's reports to be mined. Five workers read 
 - **Waiting for the owner:** ʿAtiqot 42–121 and IAA Reports were screened only. Their 249 in-region PDFs need his approval to download.
 - **Exposure:** four parts saw some held text before applying the hold, including ADAJ 16 pp. 5–12 (Kenyon, "Burial Customs at Jericho"). Nothing was coded from it, and the exact lines are in each part's NOTES.
 - **12 October, reading of the portal PDFs.** With the owner's approval, the 249 ʿAtiqot and IAA Reports PDFs were downloaded to his Mac and read by four readers (merge commits after 8f01a3b). 245 units were read and 453 feature rows coded: 130 dated to the window, 215 dated outside it, 108 undated; 426 of the rows are in Z4. Phase 4 now totals 592 units and 718 single-zone rows (152 / 306 / 260). Nothing was held. Two IAA Reports chapters are missing from the portal scans.
+
+## Phase 4 deduplicated and folded into the lanes, 12 October 2026
+
+**Merged inventory.** [merged_2026-10-12](../regional/haesi_features/merged_2026-10-12/README.md) extends the frozen dedupe rules to phase 4. The extension was frozen in f596618 and is exploratory.
+- Inputs: 4,035 rows from 2,200 reports.
+- Totals: 3,900 counted rows, 2,687 report units and 2,095 site units at 934 sites. Dated to the window: 522 / 685 / 888 at site level (yes / no / unknown).
+- Phase 4 alone adds 413 report units and 356 site units.
+- 55 phase-4 groups join earlier reports. All of them are ʿAtiqot or IAA Reports final publications of excavations already in HA-ESI.
+
+**Lane views,** each frozen before scoring; frozen results unchanged.
+
+| Lane | Phase-4 effect |
+|---|---|
+| Caves (entry 25) | One unknown cave added (Small Pyrite Cave, ʿAtiqot 46). No new match: 1 / 201 / 441 of 643 |
+| Columbaria | One undated columbarium added (ʿEn Lavan, ʿAtiqot 98). No new match; entry 44 still only Masada |
+| Tombs | 13 Region A units added; strict N 230. No branch gains a match. No tomb names Zadok, Absalom, Obed or a queen |
+| Water | No new match for entries 21, 22, 29, 32, 42, 45. Entry 46 gains three matches at the 2 km sensitivity, all miqvaʾot. The strongest is Armon ha-Naẓiv stepped pool L5 (ʿAtiqot 90 p. 165, 1st c. CE, fed from the aqueduct), 1.94 km from Ramat Raḥel. One earlier B-any match (HA-ESI 25927) dropped when its group's preferred report changed |
+| Hoards | No new in-window deposit from phase 4. The context-mix difference stands (D = 0.669, 79 known units). Two additions come from phases 1–3: an ʿEn Gedi tomb hoard and Tifʾeret Yisraʾel Year-4 coins |
+
+**Proposed for later, not applied:**
+- In `features_all.csv`, mark the rows that come from partly held SWP and ADAJ entries, so every lane excludes them the same way.
+- Keep separate seasons apart in report groups.
+- Place SWP and old-spelling names at `places_v2` points, under a separately frozen rule.
+- Add Mordot Arnona and el-Jib to `places_v2.csv`.

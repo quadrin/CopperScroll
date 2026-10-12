@@ -1320,3 +1320,8 @@ The owner asked for every recorded cave, columbarium, tomb, water installation, 
 - **Held:** IAA Reports 5 (Cave of the Warrior), Qumran-area cave passages in ADAJ, the Quruntul and ʿAin ed Duk entries in SWP, and the Tell es-Sultan items in QDAP and ADAJ, with the deviations listed in the README. Kh. ʿAlmit: SWP III p. 107 and QDAP 5 extracted only.
 - Not deduplicated yet. Exploratory; no registered result changed.
 - **12 October: ʿAtiqot and IAA Reports read.** With the owner's approval, the 249 portal PDFs were downloaded to his Mac and read: 245 units and 453 feature rows (130 dated to the window). Phase 4 now totals 592 units and 718 single-zone rows (152 dated to the window, 306 outside, 260 undated). Most rows are Jerusalem tombs, quarries, cisterns, channels and miqvaʾot. The desert and valley rows are mainly ʿEn Gedi irrigation works, the ʿAujah aqueducts and the Murabbaʿat Ptolemaic hoard. Finds reports repeat their sites' features, so nothing is counted until deduplication.
+- **12 October: phase 4 deduplicated and folded into the lanes** ([merged_2026-10-12](../regional/haesi_features/merged_2026-10-12/README.md)). The merged inventory now holds 2,095 site units at 934 sites, 522 of them dated to the window.
+  - Lane views, exploratory: no new match for the caves (entry 25), the columbaria (entries 38 and 44) or the tombs.
+  - Water: no new match for entries 21, 22, 29, 32, 42 or 45. Entry 46 gains three miqveh matches at the 2 km sensitivity. The lead is Armon ha-Naẓiv stepped pool L5 (ʿAtiqot 90 p. 165), 1.94 km from Ramat Raḥel.
+  - Hoards: the context-mix difference stands (D = 0.669).
+  - No registered result changed.
