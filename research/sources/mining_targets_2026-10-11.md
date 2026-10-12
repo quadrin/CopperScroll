@@ -199,3 +199,10 @@ The owner added four more files to Drive. None is read yet.
 - Its eastern sheets may reach the Wadi Qelt gorge. Entries in the gorge are held, so cite them only.
 
 **Kochavi 1972** is a registered arrival item (`kochavi-1972`, status not obtained). If it arrives, open it only under the arrival procedure.
+
+### Third batch (11 October 2026, night)
+
+- **Hirschfeld 1992**, *The Judean Desert Monasteries in the Byzantine Period* (Yale), complete, in 03 Surveys. It fills that gap.
+- ***Palästinawissenschaft in Deutschland: das Gustaf-Dalman-Institut Greifswald 1920–1995*** (de Gruyter; Crossref lists Hardmeier and Neumann; ISBN 9783110814866), in 03 Surveys. It is a history of the Dalman Institute with plates (Tafeln), not Dalman's 1925 *Fliegerbilder*. The Institute holds Dalman's photograph collection. A plate showing Jericho falls under the SULTAN-1 protocol, so check it before viewing.
+
+Not read yet.
