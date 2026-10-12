@@ -1,6 +1,6 @@
 # Further sources to mine: verified links (11 October 2026)
 
-Links for the journals, nineteenth-century surveys, final reports, corpora and archives proposed after the regional round ([regional_round_2026-10-10.md](../logs/regional_round_2026-10-10.md)). Two link-checking workers opened or resolved each link on 11 October 2026; the method is under each part. Nothing listed here has been read for the project yet. Availability adds no identification confidence.
+Links for the journals, nineteenth-century surveys, final reports, corpora and archives proposed after the regional round ([regional_round_2026-10-10.md](../logs/regional_round_2026-10-10.md)). Two link-checking workers opened or resolved each link on 11 October 2026; the method is under each part. This was the access status on 11 October. Later targeted reads are recorded below; the [whole-scan reading records](full_reads_2026-10-12/README.md) now document the seven supplied books and their remaining scan/visual gaps. Availability adds no identification confidence.
 
 Already in the owner's Drive ([drive_index.md](drive_index.md)): CIIP IV.1, the Eusebius *Onomasticon*, and Hirschfeld & Patrich (eds.) 1989, *The Aqueducts of Jerusalem* (not the 2002 *Aqueducts of Israel*).
 
@@ -211,3 +211,8 @@ Not read yet.
 ### Targeted original readings, 12 October 2026
 
 The Benjamin survey is now inspected for Upper Beth-Horon site 143 and its site-28 cross-reference ([evidence](benjamin1993_targeted_2026-10-12/README.md)); the individual tomb-plan and chronology gap persists. Kloner–Zissu 2003 is inspected for the selected monument/entrance controls ([evidence](kloner_zissu2003_targeted_2026-10-12/README.md)). Netzer 1981 is inspected for the pool complex, northern bath and service-system phase relations ([evidence](netzer1981_targeted_2026-10-12/README.md)). These are finite source scopes, not whole-book completion. Their manifests retain page coverage, original ancestry and image-reuse status. The Drive index now includes the portal batches and supplied chapters.
+
+
+### Sequential reading of supplied books, 12 October 2026
+
+The available legible source text and ordinary figures have now been read from beginning to end: Benjamin1993, Kloner–Zissu2003, Highlands1997, Hirschfeld1992, Finkelstein1988, the Dalman Institute1995 history and Netzer1981. The [authoritative reading records](full_reads_2026-10-12/README.md) distinguish full supplied-page coverage from missing physical-edition pages, damaged grid-map labels and reserved Dalman plate25 fine detail. English Benjamin abridgements partly recover the missing Hebrew subject matter. The corrected Dalman download is intact; the earlier local transfer was truncated. These reads do not imply full inspection of other sources in this historical access list.

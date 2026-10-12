@@ -1,0 +1,58 @@
+{
+  "title": "Archaeological Survey of the Hill Country of Benjamin",
+  "editors": [
+    "Israel Finkelstein",
+    "Yitzhak Magen"
+  ],
+  "year": 1993,
+  "source_url": "https://drive.google.com/file/d/1evqJT-QX-3HMFqr-ON069yuLnyp1Te_8/view",
+  "local_source_read_only": "/workspace/scratch/c866a82ef703/inputs/benjamin1993.pdf",
+  "bytes": 236490774,
+  "pdf_pages": 562,
+  "sha256": "074a689271ad137526c8b040a5fed1b2c8ba39204f4dfd80082576d610929b08",
+  "rights": "All rights reserved, Israel Antiquities Authority, 1993; reproduction permission not established",
+  "scope": "Full sequential reading requested; coverage ledger is authoritative and not_read pages must not be represented as read",
+  "source_pdf_or_scan_archived": false,
+  "full_read_status": "complete_for_all_supplied_scan_pages; physical edition gaps explicitly retained",
+  "read_pages": 562,
+  "unread_pages": 0,
+  "coverage_ledger": "page_coverage.csv",
+  "pagination_caveat": "PDF23–201 printed1–179; printed180–181 absent; PDF202–359 printed182–339; PDF360 blank; PDF361–486 printed341–466. English reverse-star pagination and final leaves checked separately in segment431–562; exact labels in ledger.",
+  "previous_exposure": "Front colour Ein Fara plate incidentally exposed; prior targeted Beth-Horon reading exists. Full sequential review is exploratory, never independent holdout.",
+  "missing_printed_pages": [
+    {
+      "printed_pages": "180–181",
+      "gap_between_viewer_pages": "201–202",
+      "verified": "fresh native PDF page202 re-render shows printed182 after viewer201 printed179",
+      "scope": "Site208 continuation and sites209–213 absent at this location",
+      "status": "missing_from_supplied_scan; not_read"
+    }
+  ],
+  "coverage_scope": "one authoritative merged supplied-page ledger; disjoint segment provenance retained",
+  "next_unread_primary_page": null,
+  "reading_status": "complete_for_supplied_scan",
+  "fully_read_page_count": 562,
+  "source_label_gap_pages": [],
+  "pages_read": 562,
+  "first_unread_pdf_page": null,
+  "segment_ranges": [
+    [
+      1,
+      300
+    ],
+    [
+      301,
+      430
+    ],
+    [
+      431,
+      562
+    ]
+  ],
+  "completed_date": "2026-10-12",
+  "exposure_scope": "All integrator synthesis exploratory; descriptive extraction procedures do not certify an unused holdout. Known previous exposure and reader-specific unblinding retained in segment manifests.",
+  "english_summary_recovery": "Abridged English entries208–214 at PDF522/printed35* preserve partial content for missing Hebrew180–181; they do not restore the missing prose, tables or figures.",
+  "observation_records": 211,
+  "figure_access_record_count": 241,
+  "unresolved_external_map": "Defaced library stamp on PDF556 refers to accompanying map; separate availability unresolved. Internal period maps read. English foreword notes complete southern maps not presented."
+}

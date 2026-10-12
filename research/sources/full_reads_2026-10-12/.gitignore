@@ -1,0 +1,19 @@
+# Original publications, OCR, renders and reader helpers are private inputs.
+**/inputs/
+**/scratch/
+**/cache/
+**/__pycache__/
+**/*.pdf
+**/*.djvu
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.tif
+**/*.tiff
+**/*.ppm
+**/*.traineddata
+**/page_text.json
+**/source_text.txt
+
+**/checkpoint.py
+**/private*.json

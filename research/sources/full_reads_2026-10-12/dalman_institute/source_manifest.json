@@ -1,0 +1,86 @@
+{
+  "title": "Palästinawissenschaft in Deutschland: das Gustaf-Dalman-Institut Greifswald 1920–1995",
+  "editors": [
+    "Christof Hardmeier",
+    "Thomas Neumann"
+  ],
+  "publisher": "Walter de Gruyter",
+  "publication_year": 1995,
+  "isbn": "3-11-015026-3",
+  "drive_id": "1skzKO7DCwcnQi7C9AhX9jOf3IH_giGjY",
+  "source_url": "https://drive.google.com/file/d/1skzKO7DCwcnQi7C9AhX9jOf3IH_giGjY/view",
+  "metadata_before_raw_fetch": true,
+  "mime_type": "application/pdf",
+  "expected_bytes": 33946346,
+  "actual_bytes": 33946346,
+  "sha256": "398b4d8df8b45d92d037c78c1f6282125003f24e031a6ac0a7f8e3d65181f9a2",
+  "acquired_utc": "2026-10-12",
+  "recovered_page_tree_count": 148,
+  "available_page_range": "1–148",
+  "missing_pdf_pages": [],
+  "status": "partial_visual_reserved; all148sourcepages accounted for",
+  "reading_method": "Saved continuation: all German prose and footnotes consumed sequentially through printedp.71/PDF85, with the short continuation printedp.60/PDF74 visually checked in the first reading. Continuation confirmed all blank pages and inspected each plate individually as native JPEG with captions; all end matter read. Caption-only screening and an uncalibrated coarse overview for plate25, fine detail reserved.",
+  "rights": "1995 copyright notice reserves rights to all parts. No reproduction permission established. PDF/OCR/rendered page images restricted scratch inputs; public output is original notes and retrieval manifests only.",
+  "reserved_exposure": "Plate25/PDF116 caption margins and an uncalibrated coarse overview,535x360 after rotation (360px short side), were inspected. Fine detail remains reserved; footprint and ground scale unresolved. Declaration e5fada2d3fc08b06509b584e9050c64911c92ea4 remains historical. No protected Copper Scroll manuscript photograph opened.",
+  "integrity_diagnostics": [
+    "Original local download was a 33,554,432-byte prefix, SHA256 fafb72cde5fbbb83b2d3945a4dc13429d9a8524a3eb5cded49ce27e902a92782. Missing tail was caused by local transfer truncation, not damage to the Drive original.",
+    "Root recovered authenticated Drive bytes 33554432–33946345 (391,914 bytes) and joined the tail to the validated prefix.",
+    "Complete source opens in MuPDF without repair, 148 pages, including final pages 146–148."
+  ],
+  "source_byte_boundary": "Complete file contains offsets 0..33946345 inclusive (33,946,346 bytes) and a PDF EOF marker.",
+  "chapter_ranges": [
+    {
+      "author": "Hardmeier",
+      "printed": "VII–XII",
+      "pdf": "9–14"
+    },
+    {
+      "author": "Zobel",
+      "printed": "1–11",
+      "pdf": "15–25"
+    },
+    {
+      "author": "Männchen",
+      "printed": "13–27",
+      "pdf": "27–41"
+    },
+    {
+      "author": "Willi",
+      "printed": "29–60",
+      "pdf": "43–74"
+    },
+    {
+      "author": "Neumann",
+      "printed": "61–71",
+      "pdf": "75–85"
+    }
+  ],
+  "source_path": "inputs/dalman_institute_complete.pdf",
+  "page_count": 148,
+  "full_read_status": "147 fully read pages; PDF p.116 caption and uncalibrated coarse view read, fine detail reserved",
+  "fully_read_page_count": 147,
+  "partial_page_count": 1,
+  "unread_page_count": 0,
+  "reserved_pdf_pages": [
+    116
+  ],
+  "caption_missing_pdf_pages": [
+    123
+  ],
+  "plate_count": 56,
+  "figure_access_record_count": 57,
+  "pagination_caveats": "148PDFpages: frontmatter1–14 (forewordVII–XII atPDF9–14), printed1–72 atPDF15–86, plate dividerPDF87,56plate pagesPDF88–143,blankPDF144,unnumbered provenancePDF145,advertisementPDF146,blankPDF147–148. Plate32/PDF123 has no visible caption; its sequence number is inferred.",
+  "intake_metadata_corrections": [
+    {
+      "field": "prior_exposure.coarse_preview",
+      "historic_declaration_wording": "360pixel-wide full-page preview",
+      "corrected_metadata": "535x360 rotated landscape overview;360px short side, uncalibrated ground scale"
+    },
+    {
+      "field": "document.collection_slide_id",
+      "historic_declaration_value": "745",
+      "source_statement": "PDF145 collectively names slides745 and844 for plates25 and26; individual pairing not explicit",
+      "limit": "745-to-plate25 is an ordering inference only. No original flight/frame identifier established."
+    }
+  ]
+}

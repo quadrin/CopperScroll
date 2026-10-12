@@ -91,3 +91,8 @@ The 2003 access gap is resolved for the stated pages. The 2007 edition, Avigad 1
 The copyright page (PDF p. 6) reserves all rights; no reproduction permission for public repository images was supplied. Private renders remain with the supplied PDF in scratch. [figures_access.csv](figures_access.csv) records every figure encountered on the inspected pages, including incidental plans and photographs, with printed/viewer locators, source ancestry and access scope. No full pages, book, figure images or extensive text were added to the public repository. The manifest enables later retrieval from the supplied source and a rights-cleared archive or labelled project tracing.
 
 Checks: source byte size and SHA-256; PDF page count; multiple printed/viewer pagination matches; visual inspection of named text, plans, captions and north arrows; CSV/schema readback. No numerical geometry was inferred from a schematic or restoration.
+
+
+### Later sequential reading
+
+The later [whole-scan reading record](../full_reads_2026-10-12/kloner_zissu2003/README.md) documents the remaining available book pages, all ordinary figures and explicit physical-edition gaps. This earlier targeted record retains its original question, exposure and inference scope.

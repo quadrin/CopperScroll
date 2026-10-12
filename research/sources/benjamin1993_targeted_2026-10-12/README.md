@@ -61,3 +61,8 @@ Front photographs and unrelated pottery drawings were also encountered while loc
 The next useful object is a field drawing or measured description identifying one of the four western tombs, its opening direction and any physical channel relationship, with a chronology basis. Source acquisition should name that individual tomb or original survey drawing. Another village coordinate or settlement pottery table would leave these fields unknown.
 
 **Last session: obtained** - original site-143 and site-28 descriptions and their local illustration coverage; the original-text access gap closes, while individual tomb geometry and feature chronology remain unavailable in these entries.
+
+
+### Later sequential reading
+
+The later [whole-scan reading record](../full_reads_2026-10-12/benjamin1993/README.md) documents the remaining available book pages, all ordinary figures and explicit physical-edition gaps. This earlier targeted record retains its original question, exposure and inference scope.

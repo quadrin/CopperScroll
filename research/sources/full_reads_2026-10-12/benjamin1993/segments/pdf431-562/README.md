@@ -1,0 +1,34 @@
+# Benjamin 1993: viewer pages 431–562
+
+All 132 assigned pages have been read directly from the native scan. This separate segment awaits the parent audit and combination with viewer pages 1–300 and 301–430. Its page ledger records actual reading, including every available figure, caption, table, index, bibliography entry, map, blank leaf and cover. Complete OCR was consumed as an aid where present; native scans controlled numerals, coordinates and captions. Viewer page 506 had empty OCR and was read wholly from the scan.
+
+The manifest records the supplied PDF's SHA256, provenance and rights. Scans, page renders, crops and raw OCR remain in private scratch. These records contain original notes and factual paraphrases. Reproduction permission for the source images has not been established.
+
+Two access limits remain. Hebrew printed pages 180–181 are missing between viewer pages 201 and 202. English abridgements for sites 208–213, read at viewer 522 / printed 35*, partially recover their subject matter; the detailed Hebrew text and any illustrations remain unavailable. A heavily crossed-out library stamp at viewer 556 refers to a separate accompanying map in the University of Michigan map collection. Its availability is unresolved. The internal period maps were inspected in full.
+
+Almit and Wadi Qelt/Fara material was extracted as blind factual evidence. Candidate predictions and scoring were not consulted. Protected manuscript loci remain human-only; no unexpected Copper Scroll XII 8–12 or segments 21/22 images were encountered in this segment. No Tell es-Sultan north-strip photograph was encountered.
+
+| Viewer pages | Content actually read | Principal notes |
+|---|---|---|
+| 431–440 | Hebrew sites 537–544; beginning of supplementary inventory | Jurat Musa aqueduct feeds and flood-protection walls; Fara spring sites; Suweinit monastic drains, gutters, cisterns and channels. Pottery collection areas remain separate from construction dates. |
+| 441–450 | Complete supplementary rows; name and period indices; Hebrew bibliography beginning | Source anomalies include coordinate 180400 and period-index entry 554. Almit/Fara references are blind metadata; cited works were not read merely because their titles appear here. |
+| 451–460 | Remaining Hebrew/Latin bibliography; abbreviation key; first period map | Every bibliographic entry and plotted point read. Viewer 458 is an unnumbered blank leaf. |
+| 461–470 | Chalcolithic continuation; Early Bronze, Intermediate Bronze, Middle Bronze and Iron I maps; Iron II beginning | Filled circles denote sites, open circles presumed sites. Map 3's Hebrew Intermediate Bronze heading differs from its English Middle Bronze Age I heading. The dense Iron II southern cluster received an enlarged native inspection. |
+| 471–480 | Iron II continuation; Persian, Hellenistic, Roman and Byzantine maps; Early Islamic beginning | Crowded and unlabelled points retained as source limits. Apparent duplicate 134 on Roman continuation and printed 354 in two Byzantine positions were preserved without correction. |
+| 481–490 | Remaining Early Islamic, medieval and Ottoman maps; English map divider; summaries 537–509 | Summary repetition is one source. Site 538 explicitly has transported Early Bronze pottery; site 544 distinguishes monastic Byzantine pottery from mixed wadi pottery. |
+| 491–500 | English summaries 500–417 | Blind Almit 496 and Kanat Musa 420; sparse hydraulic-feature assemblages. Native scans corrected repeated OCR losses of the second stroke in Iron II. |
+| 501–510 | English summaries 407–318 | Current finds separated from reused 1968 collections; viewer 506 read natively despite empty OCR. Ez-Zahaliq 322's native coordinate is 18060/14770. |
+| 511–520 | English summaries 309–224 | Nebi Samwil excludes medieval/Ottoman pottery from its counted denominator. Beit Tulma has no identifiable sherds. Tomb-interior material distinguished from vicinity samples; material from monastery 232 displaced to site 231. |
+| 521–530 | English summaries 215–130 | Abridgements partly recover missing-page sites 208–213. Tomb conversions, transported pottery and excluded Ottoman material retained. Qalandiya's longer Hebrew bath-versus-press alternative survives its shortened English bath label. |
+| 531–540 | English summaries 122–35 | Coins separated from feature construction dates; inaccessible sites and displaced pottery retained. Burj Beitin 86 prints coordinate 14330/14775; the anomalous source value was preserved. |
+| 541–550 | English summaries 34–1; summary introduction; methodological preface; credits | Abridgement explicitly directs readers to Hebrew detail. Ceramic transitions, area conventions, visibility/access differences, prehistoric expertise and incomplete Ottoman collection recorded. Blank leaves 545 and 549 inspected. |
+| 551–560 | Foreword, title, authors, rights, half-title, cover and end leaves | Survey history and institutional credits read as attributed provenance. Separate accompanying-map stamp retained as unresolved access evidence. Cover photograph has no location caption here. |
+| 561–562 | Library stamp leaf and dark cloth binding | Native inspection complete; no archaeological text. |
+
+Jurat Musa's aqueduct and retaining-wall descriptions state water-feed and flood-protection relationships. The northern Suweinit laura describes a covered drain that becomes a cliff gutter and a rectangular cistern fed by plastered gutters; southern cells receive runoff through a slab-covered channel. These observed relationships are useful hydraulic evidence, while the mixed ceramic collections provide no stratified cutting, plaster or repair phase in these descriptions.
+
+Period maps consolidate catalogue dating. They provide no independent construction date for a pool, aqueduct, channel, tomb conversion or cistern. The English summaries compress longer descriptions and sometimes omit dimensions, reuse relationships or alternative identifications. Their repetition does not constitute a second archaeological observation.
+
+The editor identifies several catalogue-wide limits: slash period labels may indicate uncertain distinction or transitional pottery; periods joined by “and” were distinguished but counted together. Some Roman jars belong to late Hellenistic/early Roman use, and some Byzantine forms continue into Early Islamic production. Medieval painted/glazed ware was left undivided; Ottoman collection may be incomplete. Teams faced different terrain, vegetation, occupation and access, and the absence of prehistoric specialists weakened prehistoric recovery. Site areas normally describe built settlement, with explicit entry-level exceptions for installations.
+
+Coverage status: complete assigned available-scan segment, 132 of 132 pages. Whole-book completion remains subject to the parent audit, the other assigned range and the source-access caveats above.

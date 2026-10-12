@@ -1,0 +1,41 @@
+{
+  "title": "Archaeological Survey of the Hill Country of Benjamin",
+  "editors": [
+    "Israel Finkelstein",
+    "Yitzhak Magen"
+  ],
+  "year": 1993,
+  "source_url": "https://drive.google.com/file/d/1evqJT-QX-3HMFqr-ON069yuLnyp1Te_8/view",
+  "local_source_read_only": "/workspace/scratch/c866a82ef703/inputs/benjamin1993.pdf",
+  "bytes": 236490774,
+  "pdf_pages": 562,
+  "sha256": "074a689271ad137526c8b040a5fed1b2c8ba39204f4dfd80082576d610929b08",
+  "rights": "All rights reserved, Israel Antiquities Authority, 1993; reproduction permission not established",
+  "scope": "All 132 available viewer pages 431–562 read; this is an unmerged segment, not a standalone whole-book completion claim.",
+  "source_pdf_or_scan_archived": false,
+  "full_read_status": "complete_assigned_segment_only; parent audit and range merge pending",
+  "read_pages": 132,
+  "unread_pages": 0,
+  "coverage_ledger": "page_coverage.csv",
+  "pagination_caveat": "Viewer 431–485 corresponds to Hebrew printed 411–465 except unnumbered blank viewer 458; viewer 486 is English map divider printed 466. Viewer 487–544 runs English 70*–13* in reverse printed order; later title/frontmatter/endleaves verified individually. Primary scan gap: Hebrew printed 180–181 absent between viewer 201 and 202.",
+  "previous_exposure": "Front colour Ein Fara plate incidentally exposed; prior targeted Beth-Horon reading exists. Full sequential review is exploratory, never independent holdout.",
+  "missing_printed_pages": [
+    {
+      "printed_pages": "180–181",
+      "gap_between_viewer_pages": "201–202",
+      "verified": "fresh native PDF page202 re-render shows printed182 after viewer201 printed179",
+      "scope": "Site208 continuation and sites209–213 absent at this location",
+      "status": "missing_from_supplied_scan; not_read",
+      "partial_recovery": "English abridgements for sites 208–213 read at viewer 522/printed 35*; missing detailed Hebrew text and figures remain unavailable."
+    }
+  ],
+  "coverage_scope": "unmerged segment viewer431–562",
+  "segment_start": 431,
+  "segment_end": 562,
+  "status": "complete_segment",
+  "unresolved_supplement": {
+    "locator": "viewer 556, unnumbered English half-title",
+    "evidence": "Heavily crossed-out library stamp refers to an accompanying map in University of Michigan Map Collection.",
+    "status": "Separate accompanying sheet not supplied or inspected here; internal period maps were read."
+  }
+}

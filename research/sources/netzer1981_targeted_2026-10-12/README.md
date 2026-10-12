@@ -35,3 +35,8 @@ The source's preface describes continuity with Netzer's 1977 dissertation; the e
 The title page's copyright statement names the Hebrew University Institute of Archaeology. No public reproduction licence was established. The manifest therefore records each encountered figure, page-render hash, scale/north information and its retrieval status; no source page or figure was uploaded to GitHub. Original captions, scales and arrows remain intact in the privately rendered full pages. A later permission decision can use the manifest to retrieve the exact item.
 
 **Obtained:** native pool and bath plans resolve the exploratory northern clause for B101 and distinguish local hydraulic phases; the exact pool inlet/phase contact needed to reopen entry 29 was not obtained.
+
+
+### Later sequential reading
+
+The later [whole-scan reading record](../full_reads_2026-10-12/netzer1981/README.md) documents the remaining available book pages, all ordinary figures and explicit physical-edition gaps. This earlier targeted record retains its original question, exposure and inference scope.
