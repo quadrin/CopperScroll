@@ -167,6 +167,77 @@ The per-clause tallies, the sensitivities (S-B1, S-B2, S-C, F+, period relaxed) 
 Files: [iaa_rows.csv](iaa_rows.csv) (the 35 in-region IAA rows in the `columbaria.csv` schema, with `dup_of`), [iaa_excluded.csv](iaa_excluded.csv), [iaa_scores.csv](iaa_scores.csv), [iaa_summary.json](iaa_summary.json), [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv), [scripts/iaa_view.py](scripts/iaa_view.py), [tests/test_iaa_view.py](tests/test_iaa_view.py).
 - Rebuild: `python3 -I research/regional/columbaria/scripts/iaa_view.py`. It uses committed tables only and never writes the frozen outputs.
 
+## Phase 1–4 inventory view, 12 October 2026 (exploratory)
+
+**What changed.** Phase 4 (ʿAtiqot, IAA Reports, QDAP, SWP and Guérin, ADAJ) adds one counted columbarium to the lane: an undated rock-cut columbarium cave at ʿEn Lavan, Naḥal Refaʾim. It matches nothing new. No columbarium lies within 2 km of either Netophah candidate, and Masada's three towers are still the only rows that meet Puech's reading of entry 44. One row dated in the window drops out (Har Ḥoma), because the merge now treats two Har Ḥoma seasons as one report. The frozen headline and the 11 October view are unchanged.
+
+- **Rules.** [PLAN_AMENDMENT_PHASE4_2026-10-12.md](PLAN_AMENDMENT_PHASE4_2026-10-12.md) was committed alone as `f8a016e` (2026-10-12T04:49:32Z), before any phase-4 row of the class was printed. SHA-256 `566502d8907fe5060546556aeb326baf60e653d20dfc5915d0abf63c589978e1`. It applies the frozen plan and the IAA-view method unchanged. The only change is the input, `merged_2026-10-12` (commit b4a41cc). Its §1 lists what had been seen: the merged README's class counts (6 phase-4 rows) and its mention of Kh. Kaʿkul.
+- **Rows without coordinates** use the IAA amendment's name-only rule: a row is placed at its reader's `places_v2` place, if that place's sigma is 2 km or less. Otherwise it is listed as unplaced and not counted.
+- **Coding.** The three placed phase-4 rows were coded by hand from the coding fields only ([data/phase4_coding.json](data/phase4_coding.json)). Four new candidate pairs got decisions ([data/phase4_dedup_decisions.csv](data/phase4_dedup_decisions.csv)). No second coder.
+- **Protected material.** No phase-4 row of the class comes from a held unit, the Tell es-Sultan strip or Kh. ʿAlmit. None was met or excluded.
+
+**The six phase-4 rows of the class.**
+
+| Source unit (printed pages) | What the coding says | In this view |
+|---|---|---|
+| ATQ98-001s, Solimany, ʿAtiqot 98 (2020) pp. 1*–8* (Hebrew), English summary pp. 171–172 | ʿEn Lavan: "rock-cut columbarium cave (survey)", undated | **New counted row.** Its report group and site (S0805) are phase 4 only. 13.7 km from ʿAin en-Naṭuf and 10.7 km from Kh. Badd Faluh. South of S-A. Fort, levels, access and date are silent, so every entry-44 branch is UNKNOWN. |
+| ATQ54-001, Seligman, ʿAtiqot 54 (2006) pp. 1–73 | Kh. Kaʿkul: bell-shaped columbarium L330, later a cistern; "late Hellenistic / Second Temple" | Now the preferred version of the HA 100 / ESI 13 group. It is the same columbarium as ASI 102/131, so it is not counted again. |
+| ATQ56-025, Baruch, ʿAtiqot 56 (2007) pp. 25–44 (Hebrew), English summary pp. 71*–74* | Kh. Abu Shawan: cave with niches hewn in its walls, collapsed opening, not examined; undated | Now the preferred version of the HA-ESI 113 group. It is the same columbarium as WBADB S4022, so it is not counted again. |
+| ATQ113-i02, Mizzi et al., ʿAtiqot 113 (2023) p. 4 | Har Ḥoma: Caves 214 and 216 converted to columbaria at "a later stage"; the fill holds 2nd–1st c. BCE pottery | Not used. It is an alternate version in a group whose preferred version (HAESI-22787) has a columbarium row. |
+| ATQ110-i02, Sapir et al., ʿAtiqot 110 (2023) p. 5 | Mordot Arnona: "columbarium" in a stratigraphic table, Stratum 2, Early Roman (1st c. BCE–1st c. CE) | **Unplaced**, so not counted. Its place is given by name only, with no `places_v2` id. It would be coded D. BK: Arnona lies in south Jerusalem, about 9–10 km from both Netophah candidates, so it cannot meet entry 38 anywhere there. No fort or storey is coded. |
+| ADAJ8_9-086, Pritchard, ADAJ 8/9 (1964) pp. 86–87 | El-Jib: a Bronze Age shaft tomb converted into a columbarium with 66 niches in the Roman period | **Unplaced** (name only), not counted. It would be coded P. BK: el-Jib lies north of Jerusalem, so it fails S-A and lies more than 15 km from N1 and N2. |
+
+**Counts at three levels.**
+- **Rows.** Of the 6 phase-4 rows of the class, 1 is newly counted, 2 are duplicates of lane rows, 1 is an alternate version and 2 are unplaced.
+- **Reports.** 1 report group is new and counted (ATQ98-001s). 2 more phase-4-only groups are unplaced (ATQ110-i02, ADAJ8_9-086).
+- **Sites.** 1 site is new and counted (S0805).
+
+**k match / f fail / m unknown, of N** (scope `frozen`; counted rows). The last column gives the brackets: no deduplication, and every pair within 300 m merged.
+
+| Branch | Frozen | IAA view, 11 October | Phases 1–4 | No dedup / 300 m only (k of N) |
+|---|---|---|---|---|
+| `38-D-N1, survey, 1km` | 0 / 179 / 0 of 179 | 0 / 200 / 0 of 200 | 0 / 201 / 0 of 201 | 0 of 214 / 0 of 199 |
+| `38-D-N1, text, 1km` | 0 / 179 / 0 of 179 | 0 / 200 / 0 of 200 | 0 / 201 / 0 of 201 | 0 of 214 / 0 of 199 |
+| `38-D-N2, survey, 1km` | 0 / 179 / 0 of 179 | 0 / 200 / 0 of 200 | 0 / 201 / 0 of 201 | 0 of 214 / 0 of 199 |
+| `38-D-N2, text, 1km` | 0 / 179 / 0 of 179 | 0 / 200 / 0 of 200 | 0 / 201 / 0 of 201 | 0 of 214 / 0 of 199 |
+| `38-D-N0, survey` | 17 / 2 / 160 of 179 | 20 / 5 / 175 of 200 | 19 / 5 / 177 of 201 | 24 of 214 / 19 of 199 |
+| `44-D-P, survey, F, S_A` | 3 / 55 / 121 of 179 | 3 / 66 / 131 of 200 | 3 / 66 / 132 of 201 | 3 of 214 / 3 of 199 |
+| `44-D-P, text, F, S_A` | 3 / 59 / 117 of 179 | 3 / 70 / 127 of 200 | 3 / 70 / 128 of 201 | 3 of 214 / 3 of 199 |
+| `44-D-T, survey, F, S_A` | 0 / 57 / 122 of 179 | 0 / 68 / 132 of 200 | 0 / 68 / 133 of 201 | 0 of 214 / 0 of 199 |
+| `44-D-T, text, F, S_A` | 0 / 61 / 118 of 179 | 0 / 72 / 128 of 200 | 0 / 72 / 129 of 201 | 0 of 214 / 0 of 199 |
+| `44-D-Masada, text` | 3 / 176 / 0 of 179 | 3 / 197 / 0 of 200 | 3 / 198 / 0 of 201 | 3 of 214 / 3 of 199 |
+
+The sensitivities (S-B1, S-B2, S-C, F+, period relaxed), scope `all` and the per-clause tallies are in [phase4_view_2026-10-12.csv](phase4_view_2026-10-12.csv). The word-screen sensitivity adds nothing: every phase-4 row of another class that names a columbarium belongs to a report group that already gives a columbarium row.
+
+**Which rows meet each clause, branch and entry.**
+- **Entry 38.** No row lies near ʿAin en-Naṭuf or Kh. Badd Faluh, at 1 km or 2 km, at either level. Dated in the window (N0), 19 rows: the 17 frozen rows, plus Kh. Umm Tuba (HAESI-24947) and Bet Leḥem (North) (HAESI-550).
+- **Entry 44.** Puech's reading is met by Masada's three towers only (`L-MASADA-SQ1`, `-SQ2`, `-RD`). The same holds for the Masada branch. The text shown (three levels) is met by none.
+- **Changes in the clause tallies against 11 October:**
+  - date in the window, 20 → 19;
+  - way down from above, 28 → 27;
+  - south of S-A, 151 → 152 (ʿEn Lavan);
+  - date with the period relaxed, 195 → 196 (ʿEn Lavan is undated);
+  - every other clause adds only a fail or an unknown.
+  - Inside a fortress at text level stays at 3 (Masada).
+
+**New matches:** none.
+
+**Why Har Ḥoma drops out.** The merge put three Har Ḥoma reports in one report group (RG:ATQ113-i02): HAESI-22787 (2015, preferred), HAESI-26607 (2025) and ʿAtiqot 113. The phase-4 article joined them through a shared permit and the R6 rule. The lane's version rule, applied unchanged, keeps only the preferred version's columbarium row: L214, unexcavated and undated. It drops the 2025 report's round columbarium with a roof shaft, dated from the 2nd c. BCE to the 1st c. CE. That accounts for both one-row losses in the clause tallies above. This is bookkeeping, not new evidence. INFERENCE: the 2025 Area F17 cave may be a different columbarium from L214. On 11 October this lane decided that the two "cannot be told apart". Four duplicate decisions of 11 October no longer apply, because their IAA row is no longer selected (Har Ḥoma 2025, and the HA 100 Kaʿkul and HA-ESI 113 Abu Shawan rows, now alternate versions). They are listed in `phase4_summary.json`.
+
+**Reported, not applied.** ʿAtiqot 54 dates Kh. Kaʿkul L330 "late Hellenistic / Second Temple" (P). The lane row ASI 102/131 is D, through ESI 13's "Late Hellenistic–Early Roman" (Amendment 1 B1). The frozen row is not recoded.
+
+**What stays unknown.**
+- Two phase-4 columbaria cannot be placed by the rule (Mordot Arnona, el-Jib); a third (Har Ḥoma) is an unused version. `places_v2.csv` has no entry for Mordot Arnona or el-Jib.
+- Phase 4 adds nothing from the Hebron hills, the Shephelah, Beth Guvrin–Maresha or the Judean Desert. IAA Reports, QDAP and the nineteenth-century surveys gave no columbarium row. *Masada III* is still unread.
+- The ʿEn Lavan columbarium has no date, plan, level or entrance in the coding.
+
+Files: [phase4_rows.csv](phase4_rows.csv) (the in-region inventory rows of phases 1–4 in the `columbaria.csv` schema, with `phase` and `dup_of`), [phase4_excluded.csv](phase4_excluded.csv), [phase4_scores.csv](phase4_scores.csv), [phase4_summary.json](phase4_summary.json), [phase4_view_2026-10-12.csv](phase4_view_2026-10-12.csv), [scripts/phase4_view.py](scripts/phase4_view.py), [tests/test_phase4_view.py](tests/test_phase4_view.py). Rebuild: `python3 -I research/regional/columbaria/scripts/phase4_view.py`.
+
+**Proposed shared-file changes (not applied).**
+- The entry 38 and 44 records and the DN 38 / DN 39-45 rows: no change. Phase 4 adds no columbarium near either Netophah candidate and no entry-44 match. If the 11 October wording is adopted, "of 179" can stay, since the frozen count is the reference.
+- Merged inventory (`haesi_features`): RG:ATQ113-i02 joins two separate Har Ḥoma seasons (2015 and 2025) as versions of one report. A lane that applies a version rule then drops one season's features. The integrator may want seasons kept apart, or a `season` flag added, in a later, separately frozen merge.
+- Gazetteer: adding Mordot Arnona and el-Jib to `places_v2.csv`, under a separately frozen step, would let two phase-4 rows be placed.
+
 ## Blocked
 
 - Zissu 1995, "Two Herodian Dovecotes: Horvat Abu Haf and Horvat ʿAleq", JRA Suppl. 14 pp. 56–69: <https://www.academia.edu/14951435> (download needs a sign-in). Record: <https://cris.biu.ac.il/en/publications/two-herodian-dovecotes-horvat-abu-haf-and-horvat-aleq/>. The Hebrew version is in *Qadmoniot* 29.2 (1996); no copy was found online.
