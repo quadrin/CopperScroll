@@ -1,0 +1,72 @@
+{
+  "document": {
+    "id": "DALMAN1995-PLATE25",
+    "title": "Jericho and Nabi Musa road, 27 March1918,07:30; plate25 in Hardmeier/Neumann1995",
+    "custodian": "Gustaf-Dalman-Institut; book provenance attributes glass positive to Reichsarchiv/Bavarian Fliegerstaffel304",
+    "date": "1918-03-27",
+    "kind": "oblique_aerial_uncalibrated",
+    "source_book_sha256": "398b4d8df8b45d92d037c78c1f6282125003f24e031a6ac0a7f8e3d65181f9a2",
+    "source_url": "https://drive.google.com/file/d/1skzKO7DCwcnQi7C9AhX9jOf3IH_giGjY/view",
+    "viewer_page": 116,
+    "plate": 25,
+    "provenance_viewer_page": 145,
+    "collection_slide_id": "745; a slide identifier, not an authenticated original aerial-frame ID",
+    "rights": "Source rights and public reproduction permission unestablished; retrieval reference only"
+  },
+  "declared_before_fit": "2026-10-12T14:39:11.842748+00:00 dated intake; integrator publishes before any full-resolution inspection or fit",
+  "prediction": {
+    "id": "SULTAN-1-precamp-mouth",
+    "kind": "landmark",
+    "relations": [
+      "R-E60-TOMBS-AT-MOUTH"
+    ],
+    "branch": "RB-M, RB-P, RB-L",
+    "expect": "A non-funerary opening (shaft, cistern or pit mouth, 1 m or wider) with at least one grave cut or tomb opening within 10 m of it.",
+    "where": "The strip from the tell's north foot to about 250 m north: Kenyon II p. 169 skipped it; Area D lies about 100–200 m north (Fig. 91, inference). Under the ʿAin es-Sultan camp since 1948.",
+    "record_ids": [
+      "REC-GARSTANG-LIV",
+      "REC-PEF",
+      "REC-NIGRO-RECORDS",
+      "REC-BSPAL-1032",
+      "REC-RAF-JERICHO",
+      "REC-POM-RAF-1940S",
+      "REC-POM-20K-19-14"
+    ],
+    "success": "The opening and the grave appear in one registered record, and their distance is 'inside' 10 m under registration_protocol.md.",
+    "contradiction": "Photographs and plans alone cannot contradict: absence may be concealment, burial or resolution. A contradiction needs a coverage-gated excavation record of the strip (coverage module gates) that reached the ancient surface and reports no such pair.",
+    "contradiction_strength": "one-sided",
+    "priority": 1,
+    "reading_dependencies": [
+      "D-E60-SECOND-WORD",
+      "D-E60-BURIED",
+      "D-E60-OPENING"
+    ],
+    "notes": "Locating an opening does not date it. A success opens the next link (R-E60-PIT-PERIOD, R-E60-JOINT-ACCESS) on the same feature."
+  },
+  "prior_exposure": {
+    "caption_and_margin_only": true,
+    "full_resolution_photo_opened": false,
+    "coarse_preview": "Worker viewed a360pixel-wide full-page preview; ground metres/pixel uncalibrated, no claim that it meets the5m/pixel gate",
+    "coarse_description": "Oblique broad view of dissected bare hills and winding road; exact footprint unidentified; no fine pit/grave observations recorded"
+  },
+  "protocol": "research/assessments/kohlit_chain/registration_protocol.md",
+  "transform": "none: section3 excludes a planar fit for oblique air views",
+  "target_relations": [
+    "mouth_10m",
+    "north_sector"
+  ],
+  "control_candidates": [
+    "RP-TELL-FOOT-E",
+    "RP-TELL-FOOT-W",
+    "RP-TELL-FOOT-S",
+    "RP-MEFJAR",
+    "RP-TAWAHIN",
+    "RP-ROADS"
+  ],
+  "default_withheld_check": "RP-SPRING if shown; any substitute must be selected before fitting under existing protocol",
+  "controls_selected": [],
+  "check_selected": null,
+  "next_step": "Establish image footprint and coarse ground scale from independent caption/custody or topographic references. Any finer preview must keep target unresolvable. If oblique and unlocatable, record nonregistrability and retain fine detail reserved; identify any feature only by a permissible view and then locate it on a separately registered vertical/plan.",
+  "failure_rule": "No planar fit, invented control coordinates or target-derived controls. An unlocated/uncalibrated photo supports no spatial relation or absence claim.",
+  "review_status": "declaration_only; no fit; fine-resolution photo withheld"
+}
