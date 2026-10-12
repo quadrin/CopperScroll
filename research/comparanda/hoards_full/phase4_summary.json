@@ -1,0 +1,5201 @@
+{
+ "amendment_sha256": "ba1f690c9a556290895b119f23464201f0ac736ddee4f98bb42c5daca98b5f2d",
+ "amendment_commit": "f2b42ac",
+ "plan_sha256": "1f0a90a932b98ee7e6c0549b6550ae54048e2ed727ac6bf1aa0a85441ee0362c",
+ "inputs": {
+  "research/regional/haesi_features/merged_2026-10-12/features_all.csv": "940e6c04b1ecd18c79a7c88a784a463d69056f70c6e31ad18e5a18c46866d65d",
+  "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v2/places_v2.csv": "315474bd3be8cce3e1776e119417e2444edd99e3f028c7413185302fc7663683",
+  "research/comparanda/hoards_full/hoards.csv": "211bef3cee9fece1de0afbfc26cb549af923380de043a8c2df757fa7342d5eb1",
+  "research/comparanda/hoards_full/data/phase4_manual_check.csv": "ddc08260ed0c3fc3bfe97730ff9a9bc08e0cfcc6939e87345037f9c49d1a5b12",
+  "research/comparanda/hoards_full/data/phase4_dedupe_decisions.csv": "dc09b1c58f069b63e0ba647ac5850eb9edb73cc0aed4f420da5f39870298405d"
+ },
+ "frozen_reproduced": true,
+ "inventory": {
+  "hoard_rows_counted": 77,
+  "status_by_phase": {
+   "1-3|alternate version (not a unit)": 7,
+   "1-3|duplicate": 8,
+   "1-3|excluded": 12,
+   "1-3|new unit": 20,
+   "1-3|undetermined duplicate": 1,
+   "4|alternate version (not a unit)": 5,
+   "4|duplicate": 6,
+   "4|excluded": 8,
+   "4|new unit": 10
+  },
+  "units": 65,
+  "candidate_pairs": 67
+ },
+ "new_units_view_A": [
+  {
+   "id": "iaa_features.csv#69",
+   "site": "Jerusalem, Mount Zion – 2021, 2022 (G-50/2021, G-43/2022)",
+   "source": "HA-ESI 138 (2026) article 5; report HAESI138-005-mount-zion-dormition",
+   "setting": "structure",
+   "placement": "not_stated",
+   "coarse_group": "G4",
+   "landmark": "wall_face",
+   "depth_m": "",
+   "date": "512..607",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_features.csv#85",
+   "site": "Jerusalem, Western Wall Plaza (A-9317, A-9796)",
+   "source": "HA-ESI 138 (2026) article 57; report HAESI138-057-western-wall-plaza",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "1201..1500",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase2_2026-10-10/features.csv#221",
+   "site": "Moza, Tel Moza",
+   "source": "HA-ESI 126 (2014) ; report HAESI-10582",
+   "setting": "structure",
+   "placement": "floor_surface",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "-900..-801",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase2_2026-10-10/features.csv#250",
+   "site": "‘En Gedi",
+   "source": "HA-ESI 122 (2010) ; report HAESI-1594",
+   "setting": "tomb",
+   "placement": "not_stated",
+   "coarse_group": "G2",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "-200..-1",
+   "in_window_main": 1,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase2_2026-10-10/features.csv#349",
+   "site": "‘En Gedi – 2018",
+   "source": "HA-ESI 131 (2019) ; report HAESI-25514",
+   "setting": "structure",
+   "placement": "under_floor",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "324..638",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase2_2026-10-10/features.csv#412",
+   "site": "Bet Neqofa (South)",
+   "source": "HA-ESI 135 (2023) ; report HAESI-26390",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "612..612",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase2_2026-10-10/features.csv#511",
+   "site": "Jerusalem, Mar Elias",
+   "source": "HA-ESI 126 (2014) ; report HAESI-8488",
+   "setting": "structure",
+   "placement": "floor_surface",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "401..500",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_a/features.csv#120",
+   "site": "בית כנסת עתיק בעין-גדי (ancient synagogue at En Gedi)",
+   "source": "HA 34-35 (1970) 20-21; report HA34-020-en-gedi-synagogue",
+   "setting": "structure",
+   "placement": "wall_cavity",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "301..600",
+   "in_window_main": 0,
+   "judaea": 0
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_a/features.csv#180",
+   "site": "בית הכנסת העתיק בעין-גדי - 1971 (the ancient synagogue at En Gedi, 1971)",
+   "source": "HA 41-42 (1972) 36-37; report HA41-036-en-gedi-synagogue",
+   "setting": "structure",
+   "placement": "not_stated",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "324..638",
+   "in_window_main": 0,
+   "judaea": 0
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_a/features.csv#7",
+   "site": "העונה השניה בעין-גדי (En Gedi, second season)",
+   "source": "HA 3 (1962) 6-7; report HA03-006-en-gedi",
+   "setting": "structure",
+   "placement": "not_stated",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "-630..-580",
+   "in_window_main": 0,
+   "judaea": 0
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_b/features.csv#453",
+   "site": "ירושלים - ממילא (ב) (Jerusalem, Mamilla B)",
+   "source": "HA 99 (1993) 55-57; report HA99-055-mamilla-b",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "324..638",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_c/features.csv#402",
+   "site": "Jerusalem, Et-Tur",
+   "source": "HA-ESI 110 (1999) 59*; report HAESI110-059-jerusalem-et-tur",
+   "setting": "cave",
+   "placement": "not_stated",
+   "coarse_group": "G3",
+   "landmark": "wall_face",
+   "depth_m": "",
+   "date": "383..395",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_c/features.csv#409",
+   "site": "Jerusalem, Church of St. Peter in Gallicantu - 1997",
+   "source": "HA-ESI 110 (1999) 61*; report HAESI110-061-jerusalem-church-of-st-peter-in-gallicantu-1997",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "501..700",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_c/features.csv#51",
+   "site": "Ras et-Tawil",
+   "source": "ESI 1 (1984) 101; report ESI01-101-ras-et-tawil",
+   "setting": "structure",
+   "placement": "under_floor",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "750..770",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_d_online/features.csv#562",
+   "site": "Jerusalem, Khirbat Umm Tuba",
+   "source": "HA-ESI 129 (2017) ; report HAESI-25207",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "710..750",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_d_online/features.csv#752",
+   "site": "Jerusalem, the Old City, Tif’eret Yisra’el Synagogue",
+   "source": "HA-ESI 133 (2021) ; report HAESI-26022",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "69..69",
+   "in_window_main": 1,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_d_online/features.csv#874",
+   "site": "Jerusalem, Church of the Holy Sepulchre",
+   "source": "HA-ESI 136 (2024) ; report HAESI-26542",
+   "setting": "structure",
+   "placement": "under_floor",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "301..400",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_d_online/features.csv#885",
+   "site": "Jerusalem, Sacher Park",
+   "source": "HA-ESI 136 (2024) ; report HAESI-26590",
+   "setting": "cistern",
+   "placement": "not_stated",
+   "coarse_group": "G1",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "1901..2000",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_d_online/features.csv#911",
+   "site": "Jerusalem, ‘En Kerem",
+   "source": "HA-ESI 137 (2025) ; report HAESI-26693",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "1901..2000",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase3_2026-10-11/part_d_online/features.csv#931",
+   "site": "Jerusalem, ‘En Kerem",
+   "source": "HA-ESI 118 (2006) ; report HAESI-287",
+   "setting": "structure",
+   "placement": "under_floor",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "401..600",
+   "in_window_main": 0,
+   "judaea": 1
+  }
+ ],
+ "new_units_view_B_phase4": [
+  {
+   "id": "iaa_phase4_2026-10-11/part_e_atiqot/reading_r1/features.csv#107",
+   "site": "A Byzantine and Early Islamic Building along the Southern Tyropoeon Valley",
+   "source": "Atiqot 112 (2023) 281-297; report ATQ112-i12-byzantine-early-islamic-building-along-southern",
+   "setting": "structure",
+   "placement": "not_stated",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "518..538",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase4_2026-10-11/part_e_atiqot/reading_r2/features.csv#16",
+   "site": "A Byzantine-Period Monastery at Har Ḥoma, between Jerusalem and Bethlehem (pp. 257–292)",
+   "source": "'Atiqot 106 (2022) 262; report ATQ106-257-byzantine-period-monastery-har-homa-between",
+   "setting": "structure",
+   "placement": "wall_cavity",
+   "coarse_group": "G4",
+   "landmark": "wall_face",
+   "depth_m": "",
+   "date": "501..600",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase4_2026-10-11/part_f_iaa_reports/reading/features.csv#35",
+   "site": "Jerusalem: Excavations in the Tyropoeon Valley (Givati Parking Lot) Volume II The Byzantine and Early Islamic Periods Part 1: Stratum V: The Byzantine Period",
+   "source": "IAA Reports 66/1 (2020) 48–50; report IAAR66p1-jerusalem-givati-ii-byzantine",
+   "setting": "structure",
+   "placement": "not_stated",
+   "coarse_group": "G4",
+   "landmark": "wall_face",
+   "depth_m": "",
+   "date": "613..614",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase4_2026-10-11/part_f_iaa_reports/reading/features.csv#50",
+   "site": "The Kathisma Church and Monastery of Mary Theotokos on the Jerusalem–Bethlehem Road Final Report of the 1992, 1997, 1999 and 2000 Excavation Seasons",
+   "source": "IAA Reports 69 (2022) 48; report IAAR69-kathisma",
+   "setting": "structure",
+   "placement": "not_stated",
+   "coarse_group": "G4",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "501..800",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase4_2026-10-11/part_i_adaj/features.csv#1",
+   "site": "A Hoard of Byzantine Gold Coins from Awarta, Nablus",
+   "source": "ADAJ 1 (1951) 41-43; report ADAJ1-041-awarta-hoard",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "602..685",
+   "in_window_main": 0,
+   "judaea": 0
+  },
+  {
+   "id": "iaa_phase4_2026-10-11/part_i_adaj/features.csv#32",
+   "site": "Other Discoveries: Wady el Nar (cave deposit)",
+   "source": "ADAJ 2 (1953) 90; report ADAJ2-090-wadi-en-nar-cave",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "401..900",
+   "in_window_main": 0,
+   "judaea": 1
+  },
+  {
+   "id": "iaa_phase4_2026-10-11/part_i_adaj/features.csv#34",
+   "site": "A Typological Study of the El Khadr Javelin- and Arrow-heads",
+   "source": "ADAJ 3 (1956) 15-23; report ADAJ3-015-el-khadr-hoard",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "-1100..-1100",
+   "in_window_main": 0,
+   "judaea": 0
+  },
+  {
+   "id": "iaa_phase4_2026-10-11/part_i_adaj/features.csv#4",
+   "site": "Discoveries in Western Jordan 1949-1950: Hoard of Copper Coins at al-Bireh Village",
+   "source": "ADAJ 1 (1951) 47-48; report ADAJ1-047-al-bireh-hoard",
+   "setting": "cistern",
+   "placement": "not_stated",
+   "coarse_group": "G1",
+   "landmark": "none_stated",
+   "depth_m": "",
+   "date": "1101..1300",
+   "in_window_main": 0,
+   "judaea": 0
+  },
+  {
+   "id": "iaa_phase4_2026-10-11/part_i_adaj/features.csv#57",
+   "site": "A Hoard of Ommayad Dinars from Orif",
+   "source": "ADAJ 6/7 (1962) 76-79; report ADAJ6_7-076-orif-hoard",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "",
+   "date": "638..750",
+   "in_window_main": 0,
+   "judaea": 0
+  },
+  {
+   "id": "iaa_phase4_2026-10-11/part_i_adaj/features.csv#59",
+   "site": "Recent Archaeological Discoveries in Jordan: Jerusalem, foundations of a new building (Spanish Nuns' Convent)",
+   "source": "ADAJ 6/7 (1962) 105-106; report ADAJ6_7-105-jerusalem-new-building-vases",
+   "setting": "unknown",
+   "placement": "not_stated",
+   "coarse_group": "",
+   "landmark": "",
+   "depth_m": "2.5",
+   "date": "1201..1600",
+   "in_window_main": 0,
+   "judaea": 0
+  }
+ ],
+ "undetermined_units": [
+  {
+   "id": "iaa_phase3_2026-10-11/part_c/features.csv#326",
+   "site": "Jerusalem, Robinson’s Arch",
+   "source": "ESI 18 (1998) 88; report ESI18-088-jerusalem-robinsons-arch",
+   "setting": "structure",
+   "placement": "not_stated",
+   "coarse_group": "G4",
+   "landmark": "wall_face",
+   "depth_m": "",
+   "date": "69..69",
+   "in_window_main": 1,
+   "judaea": 0
+  }
+ ],
+ "results": {
+  "frozen": {
+   "runs": {
+    "main": {
+     "n_a": 60,
+     "n_b": 78,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 2,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 66.5293,
+     "p": 5e-05,
+     "D": 0.6808,
+     "D_ci95": [
+      0.5551,
+      0.8064
+     ],
+     "residuals_a": {
+      "G1": 6.139,
+      "G2": 2.674,
+      "G3": -3.898,
+      "G4": -4.774,
+      "G5": 2.305
+     },
+     "n_comparanda_units_total": 177,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Main: branch P, 150 BCE-135 CE, southern Levant, clusters, all types, coarse"
+    },
+    "s1_window": {
+     "n_a": 60,
+     "n_b": 35,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 2,
+      "G2": 0,
+      "G3": 13,
+      "G4": 18,
+      "G5": 2
+     },
+     "chi2": 40.6054,
+     "p": 5e-05,
+     "D": 0.669,
+     "D_ci95": [
+      0.5214,
+      0.8167
+     ],
+     "residuals_a": {
+      "G1": 4.274,
+      "G2": 2.408,
+      "G3": -3.456,
+      "G4": -4.017,
+      "G5": 1.364
+     },
+     "n_comparanda_units_total": 73,
+     "n_comparanda_unknown": 38,
+     "verdict": "DIFFERENT",
+     "label": "Window 63 BCE-70 CE"
+    },
+    "s2_region": {
+     "n_a": 60,
+     "n_b": 55,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 2,
+      "G3": 27,
+      "G4": 22,
+      "G5": 3
+     },
+     "chi2": 55.133,
+     "p": 5e-05,
+     "D": 0.6742,
+     "D_ci95": [
+      0.5364,
+      0.797
+     ],
+     "residuals_a": {
+      "G1": 5.675,
+      "G2": 2.07,
+      "G3": -4.872,
+      "G4": -3.253,
+      "G5": 1.673
+     },
+     "n_comparanda_units_total": 95,
+     "n_comparanda_unknown": 40,
+     "verdict": "DIFFERENT",
+     "label": "Region: Judaea and the Jordan valley"
+    },
+    "s3_branch_Pu": {
+     "n_a": 60,
+     "n_b": 78,
+     "counts_a": {
+      "G1": 28,
+      "G2": 9,
+      "G3": 5,
+      "G4": 9,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 2,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 63.7742,
+     "p": 5e-05,
+     "D": 0.6641,
+     "D_ci95": [
+      0.5295,
+      0.791
+     ],
+     "residuals_a": {
+      "G1": 5.975,
+      "G2": 2.674,
+      "G3": -3.898,
+      "G4": -4.551,
+      "G5": 2.305
+     },
+     "n_comparanda_units_total": 177,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch Pu (Puech 2006/2015)"
+    },
+    "s4_branch_M": {
+     "n_a": 60,
+     "n_b": 78,
+     "counts_a": {
+      "G1": 30,
+      "G2": 9,
+      "G3": 6,
+      "G4": 6,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 2,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 69.5592,
+     "p": 5e-05,
+     "D": 0.6974,
+     "D_ci95": [
+      0.5705,
+      0.8154
+     ],
+     "residuals_a": {
+      "G1": 6.301,
+      "G2": 2.674,
+      "G3": -3.638,
+      "G4": -5.23,
+      "G5": 2.305
+     },
+     "n_comparanda_units_total": 177,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch M (Milik 1960/1962)"
+    },
+    "s5_branch_L": {
+     "n_a": 60,
+     "n_b": 78,
+     "counts_a": {
+      "G1": 28,
+      "G2": 8,
+      "G3": 5,
+      "G4": 9,
+      "G5": 10
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 2,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 63.6874,
+     "p": 5e-05,
+     "D": 0.6641,
+     "D_ci95": [
+      0.5295,
+      0.791
+     ],
+     "residuals_a": {
+      "G1": 5.975,
+      "G2": 2.419,
+      "G3": -3.898,
+      "G4": -4.551,
+      "G5": 2.556
+     },
+     "n_comparanda_units_total": 177,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch L (Lefkovits 2000)"
+    },
+    "s6_pit_unknown": {
+     "n_a": 53,
+     "n_b": 78,
+     "counts_a": {
+      "G1": 22,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 2,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 58.4167,
+     "p": 5e-05,
+     "D": 0.6522,
+     "D_ci95": [
+      0.514,
+      0.7842
+     ],
+     "residuals_a": {
+      "G1": 5.384,
+      "G2": 2.92,
+      "G3": -3.555,
+      "G4": -4.35,
+      "G5": 2.558
+     },
+     "n_comparanda_units_total": 177,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Scroll pits (שית/שיח/שוחה/שיא) set to unknown"
+    },
+    "s7_rows": {
+     "n_a": 60,
+     "n_b": 80,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 2,
+      "G3": 29,
+      "G4": 43,
+      "G5": 3
+     },
+     "chi2": 68.0724,
+     "p": 5e-05,
+     "D": 0.6833,
+     "D_ci95": [
+      0.5542,
+      0.8042
+     ],
+     "residuals_a": {
+      "G1": 6.217,
+      "G2": 2.72,
+      "G3": -3.812,
+      "G4": -4.918,
+      "G5": 2.353
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Comparanda counted as rows, not clusters"
+    },
+    "s8_metal_only": {
+     "n_a": 59,
+     "n_b": 66,
+     "counts_a": {
+      "G1": 28,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 2,
+      "G3": 18,
+      "G4": 40,
+      "G5": 3
+     },
+     "chi2": 56.0809,
+     "p": 5e-05,
+     "D": 0.6584,
+     "D_ci95": [
+      0.5193,
+      0.7815
+     ],
+     "residuals_a": {
+      "G1": 5.546,
+      "G2": 2.408,
+      "G3": -2.708,
+      "G4": -5.399,
+      "G5": 2.029
+     },
+     "n_comparanda_units_total": 165,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Coins and metal only (documents dropped on both sides)"
+    },
+    "s9_fine": {
+     "n_a": 60,
+     "n_b": 78,
+     "counts_a": {
+      "C01": 14,
+      "C02": 8,
+      "C03": 7,
+      "C04": 9,
+      "C05": 5,
+      "C06": 0,
+      "C07": 7,
+      "C08": 3,
+      "C09": 1,
+      "C11": 0,
+      "C12": 5,
+      "C13": 1,
+      "C14": 0
+     },
+     "counts_b": {
+      "C01": 1,
+      "C02": 1,
+      "C03": 1,
+      "C04": 2,
+      "C05": 29,
+      "C06": 6,
+      "C07": 7,
+      "C08": 2,
+      "C09": 0,
+      "C11": 3,
+      "C12": 0,
+      "C13": 12,
+      "C14": 14
+     },
+     "chi2": 80.13,
+     "p": 5e-05,
+     "D": 0.7205,
+     "D_ci95": [
+      0.6282,
+      0.8385
+     ],
+     "residuals_a": {
+      "C01": 4.126,
+      "C02": 2.842,
+      "C03": 2.588,
+      "C04": 2.674,
+      "C05": -3.898,
+      "C06": -2.197,
+      "C07": 0.519,
+      "C08": 0.759,
+      "C09": 1.144,
+      "C11": -1.536,
+      "C12": 2.597,
+      "C13": -2.735,
+      "C14": -3.462
+     },
+     "n_comparanda_units_total": 177,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Fine categories C01-C14 (secondary test)"
+    },
+    "x1_catalogue_window": {
+     "n_a": 60,
+     "n_b": 80,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 2,
+      "G3": 30,
+      "G4": 42,
+      "G5": 3
+     },
+     "chi2": 68.0891,
+     "p": 5e-05,
+     "D": 0.6833,
+     "D_ci95": [
+      0.5542,
+      0.8042
+     ],
+     "residuals_a": {
+      "G1": 6.217,
+      "G2": 2.72,
+      "G3": -3.944,
+      "G4": -4.786,
+      "G5": 2.353
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Catalogue window 200 BCE-135 CE instead of 150 BCE-135 CE"
+    },
+    "x3_precedent_coding": {
+     "n_a": 60,
+     "n_b": 78,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 2,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 66.5293,
+     "p": 5e-05,
+     "D": 0.6808,
+     "D_ci95": [
+      0.5551,
+      0.8064
+     ],
+     "residuals_a": {
+      "G1": 6.139,
+      "G2": 2.674,
+      "G3": -3.898,
+      "G4": -4.774,
+      "G5": 2.305
+     },
+     "n_comparanda_units_total": 177,
+     "n_comparanda_unknown": 99,
+     "verdict": "DIFFERENT",
+     "label": "Main run with the precedent's coding restored for recoded rows"
+    }
+   },
+   "bias": {
+    "B1_excavated_vs_not": {
+     "n_a": 67,
+     "n_b": 9,
+     "counts_a": {
+      "G1": 2,
+      "G2": 2,
+      "G3": 21,
+      "G4": 40,
+      "G5": 2
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 0,
+      "G3": 6,
+      "G4": 1,
+      "G5": 1
+     },
+     "chi2": 9.1822,
+     "p": 0.0904,
+     "D": 0.5158,
+     "D_ci95": [
+      0.3002,
+      0.7313
+     ],
+     "residuals_a": {
+      "G1": -1.175,
+      "G2": 0.525,
+      "G3": -2.079,
+      "G4": 2.746,
+      "G5": -1.175
+     },
+     "verdict": "INCONCLUSIVE",
+     "note": "group a = excavated, group b = chance plus looting_recovered"
+    },
+    "B2a_scroll_vs_excavated": {
+     "n_a": 60,
+     "n_b": 67,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 2,
+      "G2": 2,
+      "G3": 21,
+      "G4": 40,
+      "G5": 2
+     },
+     "chi2": 63.4115,
+     "p": 5e-05,
+     "D": 0.6938,
+     "D_ci95": [
+      0.5726,
+      0.8219
+     ],
+     "residuals_a": {
+      "G1": 5.94,
+      "G2": 2.403,
+      "G3": -3.208,
+      "G4": -5.38,
+      "G5": 2.403
+     },
+     "verdict": "DIFFERENT"
+    },
+    "B2b_scroll_vs_not_excavated": {
+     "n_a": 60,
+     "n_b": 9,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 0,
+      "G3": 6,
+      "G4": 1,
+      "G5": 1
+     },
+     "chi2": 20.6597,
+     "p": 0.0011,
+     "D": 0.5833,
+     "D_ci95": [
+      0.3833,
+      0.9
+     ],
+     "residuals_a": {
+      "G1": 2.101,
+      "G2": 1.246,
+      "G3": -4.458,
+      "G4": 0.185,
+      "G5": 0.309
+     },
+     "verdict": "NOT TESTABLE"
+    },
+    "B3_unknown_share_by_how_found": {
+     "excavation": {
+      "units": 80,
+      "unknown_context": 13,
+      "share_unknown": 0.163
+     },
+     "chance": {
+      "units": 7,
+      "unknown_context": 4,
+      "share_unknown": 0.571
+     },
+     "looting_recovered": {
+      "units": 24,
+      "unknown_context": 18,
+      "share_unknown": 0.75
+     },
+     "unknown": {
+      "units": 66,
+      "unknown_context": 64,
+      "share_unknown": 0.97
+     }
+    }
+   },
+   "summary": {
+    "main_verdict": "DIFFERENT",
+    "robust": true,
+    "runs_changing_verdict": [],
+    "reporting_sensitive": true
+   }
+  },
+  "A_frozen_plus_p13": {
+   "runs": {
+    "main": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 64.9063,
+     "p": 5e-05,
+     "D": 0.6694,
+     "D_ci95": [
+      0.5401,
+      0.7947
+     ],
+     "residuals_a": {
+      "G1": 6.178,
+      "G2": 2.329,
+      "G3": -3.855,
+      "G4": -4.714,
+      "G5": 2.329
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Main: branch P, 150 BCE-135 CE, southern Levant, clusters, all types, coarse"
+    },
+    "s1_window": {
+     "n_a": 60,
+     "n_b": 35,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 2,
+      "G2": 0,
+      "G3": 13,
+      "G4": 18,
+      "G5": 2
+     },
+     "chi2": 40.6054,
+     "p": 5e-05,
+     "D": 0.669,
+     "D_ci95": [
+      0.5214,
+      0.8167
+     ],
+     "residuals_a": {
+      "G1": 4.274,
+      "G2": 2.408,
+      "G3": -3.456,
+      "G4": -4.017,
+      "G5": 1.364
+     },
+     "n_comparanda_units_total": 74,
+     "n_comparanda_unknown": 39,
+     "verdict": "DIFFERENT",
+     "label": "Window 63 BCE-70 CE"
+    },
+    "s2_region": {
+     "n_a": 60,
+     "n_b": 56,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 3,
+      "G3": 27,
+      "G4": 22,
+      "G5": 3
+     },
+     "chi2": 53.7176,
+     "p": 5e-05,
+     "D": 0.6583,
+     "D_ci95": [
+      0.5226,
+      0.7952
+     ],
+     "residuals_a": {
+      "G1": 5.721,
+      "G2": 1.704,
+      "G3": -4.802,
+      "G4": -3.19,
+      "G5": 1.704
+     },
+     "n_comparanda_units_total": 97,
+     "n_comparanda_unknown": 41,
+     "verdict": "DIFFERENT",
+     "label": "Region: Judaea and the Jordan valley"
+    },
+    "s3_branch_Pu": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 28,
+      "G2": 9,
+      "G3": 5,
+      "G4": 9,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 62.1465,
+     "p": 5e-05,
+     "D": 0.6527,
+     "D_ci95": [
+      0.5241,
+      0.7827
+     ],
+     "residuals_a": {
+      "G1": 6.014,
+      "G2": 2.329,
+      "G3": -3.855,
+      "G4": -4.49,
+      "G5": 2.329
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch Pu (Puech 2006/2015)"
+    },
+    "s4_branch_M": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 30,
+      "G2": 9,
+      "G3": 6,
+      "G4": 6,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 67.9413,
+     "p": 5e-05,
+     "D": 0.6861,
+     "D_ci95": [
+      0.5574,
+      0.8074
+     ],
+     "residuals_a": {
+      "G1": 6.341,
+      "G2": 2.329,
+      "G3": -3.593,
+      "G4": -5.172,
+      "G5": 2.329
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch M (Milik 1960/1962)"
+    },
+    "s5_branch_L": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 28,
+      "G2": 8,
+      "G3": 5,
+      "G4": 9,
+      "G5": 10
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 62.1893,
+     "p": 5e-05,
+     "D": 0.6527,
+     "D_ci95": [
+      0.5241,
+      0.7827
+     ],
+     "residuals_a": {
+      "G1": 6.014,
+      "G2": 2.063,
+      "G3": -3.855,
+      "G4": -4.49,
+      "G5": 2.581
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch L (Lefkovits 2000)"
+    },
+    "s6_pit_unknown": {
+     "n_a": 53,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 22,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 56.6836,
+     "p": 5e-05,
+     "D": 0.6408,
+     "D_ci95": [
+      0.4958,
+      0.7855
+     ],
+     "residuals_a": {
+      "G1": 5.421,
+      "G2": 2.583,
+      "G3": -3.513,
+      "G4": -4.29,
+      "G5": 2.583
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll pits (שית/שיח/שוחה/שיא) set to unknown"
+    },
+    "s7_rows": {
+     "n_a": 60,
+     "n_b": 81,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 43,
+      "G5": 3
+     },
+     "chi2": 66.4317,
+     "p": 5e-05,
+     "D": 0.6722,
+     "D_ci95": [
+      0.5432,
+      0.7926
+     ],
+     "residuals_a": {
+      "G1": 6.256,
+      "G2": 2.377,
+      "G3": -3.77,
+      "G4": -4.857,
+      "G5": 2.377
+     },
+     "n_comparanda_units_total": 181,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Comparanda counted as rows, not clusters"
+    },
+    "s8_metal_only": {
+     "n_a": 59,
+     "n_b": 67,
+     "counts_a": {
+      "G1": 28,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 18,
+      "G4": 40,
+      "G5": 3
+     },
+     "chi2": 54.5544,
+     "p": 5e-05,
+     "D": 0.6453,
+     "D_ci95": [
+      0.5118,
+      0.7728
+     ],
+     "residuals_a": {
+      "G1": 5.589,
+      "G2": 2.056,
+      "G3": -2.667,
+      "G4": -5.322,
+      "G5": 2.056
+     },
+     "n_comparanda_units_total": 167,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Coins and metal only (documents dropped on both sides)"
+    },
+    "s9_fine": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "C01": 14,
+      "C02": 8,
+      "C03": 7,
+      "C04": 9,
+      "C05": 5,
+      "C06": 0,
+      "C07": 7,
+      "C08": 3,
+      "C09": 1,
+      "C11": 0,
+      "C12": 5,
+      "C13": 1,
+      "C14": 0
+     },
+     "counts_b": {
+      "C01": 1,
+      "C02": 1,
+      "C03": 1,
+      "C04": 3,
+      "C05": 29,
+      "C06": 6,
+      "C07": 7,
+      "C08": 2,
+      "C09": 0,
+      "C11": 3,
+      "C12": 0,
+      "C13": 12,
+      "C14": 14
+     },
+     "chi2": 78.5301,
+     "p": 5e-05,
+     "D": 0.7101,
+     "D_ci95": [
+      0.6135,
+      0.8314
+     ],
+     "residuals_a": {
+      "C01": 4.153,
+      "C02": 2.864,
+      "C03": 2.608,
+      "C04": 2.329,
+      "C05": -3.855,
+      "C06": -2.182,
+      "C07": 0.544,
+      "C08": 0.774,
+      "C09": 1.152,
+      "C11": -1.526,
+      "C12": 2.613,
+      "C13": -2.712,
+      "C14": -3.439
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Fine categories C01-C14 (secondary test)"
+    },
+    "x1_catalogue_window": {
+     "n_a": 60,
+     "n_b": 81,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 30,
+      "G4": 42,
+      "G5": 3
+     },
+     "chi2": 66.4484,
+     "p": 5e-05,
+     "D": 0.6722,
+     "D_ci95": [
+      0.5432,
+      0.7926
+     ],
+     "residuals_a": {
+      "G1": 6.256,
+      "G2": 2.377,
+      "G3": -3.901,
+      "G4": -4.727,
+      "G5": 2.377
+     },
+     "n_comparanda_units_total": 181,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Catalogue window 200 BCE-135 CE instead of 150 BCE-135 CE"
+    },
+    "x3_precedent_coding": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 64.9063,
+     "p": 5e-05,
+     "D": 0.6694,
+     "D_ci95": [
+      0.5401,
+      0.7947
+     ],
+     "residuals_a": {
+      "G1": 6.178,
+      "G2": 2.329,
+      "G3": -3.855,
+      "G4": -4.714,
+      "G5": 2.329
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Main run with the precedent's coding restored for recoded rows"
+    }
+   },
+   "bias": {
+    "B1_excavated_vs_not": {
+     "n_a": 68,
+     "n_b": 9,
+     "counts_a": {
+      "G1": 2,
+      "G2": 3,
+      "G3": 21,
+      "G4": 40,
+      "G5": 2
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 0,
+      "G3": 6,
+      "G4": 1,
+      "G5": 1
+     },
+     "chi2": 9.4209,
+     "p": 0.10824,
+     "D": 0.5212,
+     "D_ci95": [
+      0.2843,
+      0.7353
+     ],
+     "residuals_a": {
+      "G1": -1.19,
+      "G2": 0.643,
+      "G3": -2.114,
+      "G4": 2.696,
+      "G5": -1.19
+     },
+     "verdict": "INCONCLUSIVE",
+     "note": "group a = excavated, group b = chance plus looting_recovered"
+    },
+    "B2a_scroll_vs_excavated": {
+     "n_a": 60,
+     "n_b": 68,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 2,
+      "G2": 3,
+      "G3": 21,
+      "G4": 40,
+      "G5": 2
+     },
+     "chi2": 61.8919,
+     "p": 5e-05,
+     "D": 0.6804,
+     "D_ci95": [
+      0.5569,
+      0.8059
+     ],
+     "residuals_a": {
+      "G1": 5.982,
+      "G2": 2.051,
+      "G3": -3.164,
+      "G4": -5.305,
+      "G5": 2.429
+     },
+     "verdict": "DIFFERENT"
+    },
+    "B2b_scroll_vs_not_excavated": {
+     "n_a": 60,
+     "n_b": 9,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 0,
+      "G3": 6,
+      "G4": 1,
+      "G5": 1
+     },
+     "chi2": 20.6597,
+     "p": 0.0011,
+     "D": 0.5833,
+     "D_ci95": [
+      0.3833,
+      0.9
+     ],
+     "residuals_a": {
+      "G1": 2.101,
+      "G2": 1.246,
+      "G3": -4.458,
+      "G4": 0.185,
+      "G5": 0.309
+     },
+     "verdict": "NOT TESTABLE"
+    },
+    "B3_unknown_share_by_how_found": {
+     "excavation": {
+      "units": 82,
+      "unknown_context": 14,
+      "share_unknown": 0.171
+     },
+     "chance": {
+      "units": 7,
+      "unknown_context": 4,
+      "share_unknown": 0.571
+     },
+     "looting_recovered": {
+      "units": 24,
+      "unknown_context": 18,
+      "share_unknown": 0.75
+     },
+     "unknown": {
+      "units": 66,
+      "unknown_context": 64,
+      "share_unknown": 0.97
+     }
+    }
+   },
+   "summary": {
+    "main_verdict": "DIFFERENT",
+    "robust": true,
+    "runs_changing_verdict": [],
+    "reporting_sensitive": true
+   }
+  },
+  "B_frozen_plus_p1to4": {
+   "runs": {
+    "main": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 64.9063,
+     "p": 5e-05,
+     "D": 0.6694,
+     "D_ci95": [
+      0.5401,
+      0.7947
+     ],
+     "residuals_a": {
+      "G1": 6.178,
+      "G2": 2.329,
+      "G3": -3.855,
+      "G4": -4.714,
+      "G5": 2.329
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Main: branch P, 150 BCE-135 CE, southern Levant, clusters, all types, coarse"
+    },
+    "s1_window": {
+     "n_a": 60,
+     "n_b": 35,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 2,
+      "G2": 0,
+      "G3": 13,
+      "G4": 18,
+      "G5": 2
+     },
+     "chi2": 40.6054,
+     "p": 5e-05,
+     "D": 0.669,
+     "D_ci95": [
+      0.5214,
+      0.8167
+     ],
+     "residuals_a": {
+      "G1": 4.274,
+      "G2": 2.408,
+      "G3": -3.456,
+      "G4": -4.017,
+      "G5": 1.364
+     },
+     "n_comparanda_units_total": 74,
+     "n_comparanda_unknown": 39,
+     "verdict": "DIFFERENT",
+     "label": "Window 63 BCE-70 CE"
+    },
+    "s2_region": {
+     "n_a": 60,
+     "n_b": 56,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 3,
+      "G3": 27,
+      "G4": 22,
+      "G5": 3
+     },
+     "chi2": 53.7176,
+     "p": 5e-05,
+     "D": 0.6583,
+     "D_ci95": [
+      0.5226,
+      0.7952
+     ],
+     "residuals_a": {
+      "G1": 5.721,
+      "G2": 1.704,
+      "G3": -4.802,
+      "G4": -3.19,
+      "G5": 1.704
+     },
+     "n_comparanda_units_total": 97,
+     "n_comparanda_unknown": 41,
+     "verdict": "DIFFERENT",
+     "label": "Region: Judaea and the Jordan valley"
+    },
+    "s3_branch_Pu": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 28,
+      "G2": 9,
+      "G3": 5,
+      "G4": 9,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 62.1465,
+     "p": 5e-05,
+     "D": 0.6527,
+     "D_ci95": [
+      0.5241,
+      0.7827
+     ],
+     "residuals_a": {
+      "G1": 6.014,
+      "G2": 2.329,
+      "G3": -3.855,
+      "G4": -4.49,
+      "G5": 2.329
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch Pu (Puech 2006/2015)"
+    },
+    "s4_branch_M": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 30,
+      "G2": 9,
+      "G3": 6,
+      "G4": 6,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 67.9413,
+     "p": 5e-05,
+     "D": 0.6861,
+     "D_ci95": [
+      0.5574,
+      0.8074
+     ],
+     "residuals_a": {
+      "G1": 6.341,
+      "G2": 2.329,
+      "G3": -3.593,
+      "G4": -5.172,
+      "G5": 2.329
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch M (Milik 1960/1962)"
+    },
+    "s5_branch_L": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 28,
+      "G2": 8,
+      "G3": 5,
+      "G4": 9,
+      "G5": 10
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 62.1893,
+     "p": 5e-05,
+     "D": 0.6527,
+     "D_ci95": [
+      0.5241,
+      0.7827
+     ],
+     "residuals_a": {
+      "G1": 6.014,
+      "G2": 2.063,
+      "G3": -3.855,
+      "G4": -4.49,
+      "G5": 2.581
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch L (Lefkovits 2000)"
+    },
+    "s6_pit_unknown": {
+     "n_a": 53,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 22,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 56.6836,
+     "p": 5e-05,
+     "D": 0.6408,
+     "D_ci95": [
+      0.4958,
+      0.7855
+     ],
+     "residuals_a": {
+      "G1": 5.421,
+      "G2": 2.583,
+      "G3": -3.513,
+      "G4": -4.29,
+      "G5": 2.583
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll pits (שית/שיח/שוחה/שיא) set to unknown"
+    },
+    "s7_rows": {
+     "n_a": 60,
+     "n_b": 81,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 43,
+      "G5": 3
+     },
+     "chi2": 66.4317,
+     "p": 5e-05,
+     "D": 0.6722,
+     "D_ci95": [
+      0.5432,
+      0.7926
+     ],
+     "residuals_a": {
+      "G1": 6.256,
+      "G2": 2.377,
+      "G3": -3.77,
+      "G4": -4.857,
+      "G5": 2.377
+     },
+     "n_comparanda_units_total": 181,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Comparanda counted as rows, not clusters"
+    },
+    "s8_metal_only": {
+     "n_a": 59,
+     "n_b": 67,
+     "counts_a": {
+      "G1": 28,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 18,
+      "G4": 40,
+      "G5": 3
+     },
+     "chi2": 54.5544,
+     "p": 5e-05,
+     "D": 0.6453,
+     "D_ci95": [
+      0.5118,
+      0.7728
+     ],
+     "residuals_a": {
+      "G1": 5.589,
+      "G2": 2.056,
+      "G3": -2.667,
+      "G4": -5.322,
+      "G5": 2.056
+     },
+     "n_comparanda_units_total": 167,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Coins and metal only (documents dropped on both sides)"
+    },
+    "s9_fine": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "C01": 14,
+      "C02": 8,
+      "C03": 7,
+      "C04": 9,
+      "C05": 5,
+      "C06": 0,
+      "C07": 7,
+      "C08": 3,
+      "C09": 1,
+      "C11": 0,
+      "C12": 5,
+      "C13": 1,
+      "C14": 0
+     },
+     "counts_b": {
+      "C01": 1,
+      "C02": 1,
+      "C03": 1,
+      "C04": 3,
+      "C05": 29,
+      "C06": 6,
+      "C07": 7,
+      "C08": 2,
+      "C09": 0,
+      "C11": 3,
+      "C12": 0,
+      "C13": 12,
+      "C14": 14
+     },
+     "chi2": 78.5301,
+     "p": 5e-05,
+     "D": 0.7101,
+     "D_ci95": [
+      0.6135,
+      0.8314
+     ],
+     "residuals_a": {
+      "C01": 4.153,
+      "C02": 2.864,
+      "C03": 2.608,
+      "C04": 2.329,
+      "C05": -3.855,
+      "C06": -2.182,
+      "C07": 0.544,
+      "C08": 0.774,
+      "C09": 1.152,
+      "C11": -1.526,
+      "C12": 2.613,
+      "C13": -2.712,
+      "C14": -3.439
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Fine categories C01-C14 (secondary test)"
+    },
+    "x1_catalogue_window": {
+     "n_a": 60,
+     "n_b": 81,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 30,
+      "G4": 42,
+      "G5": 3
+     },
+     "chi2": 66.4484,
+     "p": 5e-05,
+     "D": 0.6722,
+     "D_ci95": [
+      0.5432,
+      0.7926
+     ],
+     "residuals_a": {
+      "G1": 6.256,
+      "G2": 2.377,
+      "G3": -3.901,
+      "G4": -4.727,
+      "G5": 2.377
+     },
+     "n_comparanda_units_total": 181,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Catalogue window 200 BCE-135 CE instead of 150 BCE-135 CE"
+    },
+    "x3_precedent_coding": {
+     "n_a": 60,
+     "n_b": 79,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 64.9063,
+     "p": 5e-05,
+     "D": 0.6694,
+     "D_ci95": [
+      0.5401,
+      0.7947
+     ],
+     "residuals_a": {
+      "G1": 6.178,
+      "G2": 2.329,
+      "G3": -3.855,
+      "G4": -4.714,
+      "G5": 2.329
+     },
+     "n_comparanda_units_total": 179,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Main run with the precedent's coding restored for recoded rows"
+    }
+   },
+   "bias": {
+    "B1_excavated_vs_not": {
+     "n_a": 68,
+     "n_b": 9,
+     "counts_a": {
+      "G1": 2,
+      "G2": 3,
+      "G3": 21,
+      "G4": 40,
+      "G5": 2
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 0,
+      "G3": 6,
+      "G4": 1,
+      "G5": 1
+     },
+     "chi2": 9.4209,
+     "p": 0.10824,
+     "D": 0.5212,
+     "D_ci95": [
+      0.2843,
+      0.7353
+     ],
+     "residuals_a": {
+      "G1": -1.19,
+      "G2": 0.643,
+      "G3": -2.114,
+      "G4": 2.696,
+      "G5": -1.19
+     },
+     "verdict": "INCONCLUSIVE",
+     "note": "group a = excavated, group b = chance plus looting_recovered"
+    },
+    "B2a_scroll_vs_excavated": {
+     "n_a": 60,
+     "n_b": 68,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 2,
+      "G2": 3,
+      "G3": 21,
+      "G4": 40,
+      "G5": 2
+     },
+     "chi2": 61.8919,
+     "p": 5e-05,
+     "D": 0.6804,
+     "D_ci95": [
+      0.5569,
+      0.8059
+     ],
+     "residuals_a": {
+      "G1": 5.982,
+      "G2": 2.051,
+      "G3": -3.164,
+      "G4": -5.305,
+      "G5": 2.429
+     },
+     "verdict": "DIFFERENT"
+    },
+    "B2b_scroll_vs_not_excavated": {
+     "n_a": 60,
+     "n_b": 9,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 0,
+      "G3": 6,
+      "G4": 1,
+      "G5": 1
+     },
+     "chi2": 20.6597,
+     "p": 0.0011,
+     "D": 0.5833,
+     "D_ci95": [
+      0.3833,
+      0.9
+     ],
+     "residuals_a": {
+      "G1": 2.101,
+      "G2": 1.246,
+      "G3": -4.458,
+      "G4": 0.185,
+      "G5": 0.309
+     },
+     "verdict": "NOT TESTABLE"
+    },
+    "B3_unknown_share_by_how_found": {
+     "excavation": {
+      "units": 82,
+      "unknown_context": 14,
+      "share_unknown": 0.171
+     },
+     "chance": {
+      "units": 7,
+      "unknown_context": 4,
+      "share_unknown": 0.571
+     },
+     "looting_recovered": {
+      "units": 24,
+      "unknown_context": 18,
+      "share_unknown": 0.75
+     },
+     "unknown": {
+      "units": 66,
+      "unknown_context": 64,
+      "share_unknown": 0.97
+     }
+    }
+   },
+   "summary": {
+    "main_verdict": "DIFFERENT",
+    "robust": true,
+    "runs_changing_verdict": [],
+    "reporting_sensitive": true
+   }
+  },
+  "B_undetermined_counted": {
+   "runs": {
+    "main": {
+     "n_a": 60,
+     "n_b": 80,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 42,
+      "G5": 3
+     },
+     "chi2": 65.6692,
+     "p": 5e-05,
+     "D": 0.6708,
+     "D_ci95": [
+      0.5375,
+      0.7917
+     ],
+     "residuals_a": {
+      "G1": 6.217,
+      "G2": 2.353,
+      "G3": -3.812,
+      "G4": -4.786,
+      "G5": 2.353
+     },
+     "n_comparanda_units_total": 180,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Main: branch P, 150 BCE-135 CE, southern Levant, clusters, all types, coarse"
+    },
+    "s1_window": {
+     "n_a": 60,
+     "n_b": 36,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 2,
+      "G2": 0,
+      "G3": 13,
+      "G4": 19,
+      "G5": 2
+     },
+     "chi2": 41.6082,
+     "p": 5e-05,
+     "D": 0.6722,
+     "D_ci95": [
+      0.5278,
+      0.8167
+     ],
+     "residuals_a": {
+      "G1": 4.34,
+      "G2": 2.441,
+      "G3": -3.376,
+      "G4": -4.161,
+      "G5": 1.406
+     },
+     "n_comparanda_units_total": 75,
+     "n_comparanda_unknown": 39,
+     "verdict": "DIFFERENT",
+     "label": "Window 63 BCE-70 CE"
+    },
+    "s2_region": {
+     "n_a": 60,
+     "n_b": 56,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 3,
+      "G3": 27,
+      "G4": 22,
+      "G5": 3
+     },
+     "chi2": 53.7176,
+     "p": 5e-05,
+     "D": 0.6583,
+     "D_ci95": [
+      0.5226,
+      0.7952
+     ],
+     "residuals_a": {
+      "G1": 5.721,
+      "G2": 1.704,
+      "G3": -4.802,
+      "G4": -3.19,
+      "G5": 1.704
+     },
+     "n_comparanda_units_total": 97,
+     "n_comparanda_unknown": 41,
+     "verdict": "DIFFERENT",
+     "label": "Region: Judaea and the Jordan valley"
+    },
+    "s3_branch_Pu": {
+     "n_a": 60,
+     "n_b": 80,
+     "counts_a": {
+      "G1": 28,
+      "G2": 9,
+      "G3": 5,
+      "G4": 9,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 42,
+      "G5": 3
+     },
+     "chi2": 62.8816,
+     "p": 5e-05,
+     "D": 0.6542,
+     "D_ci95": [
+      0.5167,
+      0.7792
+     ],
+     "residuals_a": {
+      "G1": 6.052,
+      "G2": 2.353,
+      "G3": -3.812,
+      "G4": -4.563,
+      "G5": 2.353
+     },
+     "n_comparanda_units_total": 180,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch Pu (Puech 2006/2015)"
+    },
+    "s4_branch_M": {
+     "n_a": 60,
+     "n_b": 80,
+     "counts_a": {
+      "G1": 30,
+      "G2": 9,
+      "G3": 6,
+      "G4": 6,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 42,
+      "G5": 3
+     },
+     "chi2": 68.7511,
+     "p": 5e-05,
+     "D": 0.6875,
+     "D_ci95": [
+      0.5583,
+      0.8083
+     ],
+     "residuals_a": {
+      "G1": 6.38,
+      "G2": 2.353,
+      "G3": -3.55,
+      "G4": -5.243,
+      "G5": 2.353
+     },
+     "n_comparanda_units_total": 180,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch M (Milik 1960/1962)"
+    },
+    "s5_branch_L": {
+     "n_a": 60,
+     "n_b": 80,
+     "counts_a": {
+      "G1": 28,
+      "G2": 8,
+      "G3": 5,
+      "G4": 9,
+      "G5": 10
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 42,
+      "G5": 3
+     },
+     "chi2": 62.9244,
+     "p": 5e-05,
+     "D": 0.6542,
+     "D_ci95": [
+      0.5167,
+      0.7792
+     ],
+     "residuals_a": {
+      "G1": 6.052,
+      "G2": 2.085,
+      "G3": -3.812,
+      "G4": -4.563,
+      "G5": 2.606
+     },
+     "n_comparanda_units_total": 180,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll branch L (Lefkovits 2000)"
+    },
+    "s6_pit_unknown": {
+     "n_a": 53,
+     "n_b": 80,
+     "counts_a": {
+      "G1": 22,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 42,
+      "G5": 3
+     },
+     "chi2": 57.3849,
+     "p": 5e-05,
+     "D": 0.6422,
+     "D_ci95": [
+      0.5101,
+      0.7802
+     ],
+     "residuals_a": {
+      "G1": 5.457,
+      "G2": 2.607,
+      "G3": -3.471,
+      "G4": -4.36,
+      "G5": 2.607
+     },
+     "n_comparanda_units_total": 180,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Scroll pits (שית/שיח/שוחה/שיא) set to unknown"
+    },
+    "s7_rows": {
+     "n_a": 60,
+     "n_b": 82,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 44,
+      "G5": 3
+     },
+     "chi2": 67.1937,
+     "p": 5e-05,
+     "D": 0.6736,
+     "D_ci95": [
+      0.5415,
+      0.8012
+     ],
+     "residuals_a": {
+      "G1": 6.294,
+      "G2": 2.4,
+      "G3": -3.729,
+      "G4": -4.927,
+      "G5": 2.4
+     },
+     "n_comparanda_units_total": 182,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Comparanda counted as rows, not clusters"
+    },
+    "s8_metal_only": {
+     "n_a": 59,
+     "n_b": 68,
+     "counts_a": {
+      "G1": 28,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 18,
+      "G4": 41,
+      "G5": 3
+     },
+     "chi2": 55.3739,
+     "p": 5e-05,
+     "D": 0.6473,
+     "D_ci95": [
+      0.5117,
+      0.7739
+     ],
+     "residuals_a": {
+      "G1": 5.632,
+      "G2": 2.083,
+      "G3": -2.627,
+      "G4": -5.396,
+      "G5": 2.083
+     },
+     "n_comparanda_units_total": 168,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Coins and metal only (documents dropped on both sides)"
+    },
+    "s9_fine": {
+     "n_a": 60,
+     "n_b": 80,
+     "counts_a": {
+      "C01": 14,
+      "C02": 8,
+      "C03": 7,
+      "C04": 9,
+      "C05": 5,
+      "C06": 0,
+      "C07": 7,
+      "C08": 3,
+      "C09": 1,
+      "C11": 0,
+      "C12": 5,
+      "C13": 1,
+      "C14": 0
+     },
+     "counts_b": {
+      "C01": 1,
+      "C02": 1,
+      "C03": 1,
+      "C04": 3,
+      "C05": 29,
+      "C06": 6,
+      "C07": 7,
+      "C08": 2,
+      "C09": 0,
+      "C11": 3,
+      "C12": 0,
+      "C13": 12,
+      "C14": 15
+     },
+     "chi2": 79.4237,
+     "p": 5e-05,
+     "D": 0.7125,
+     "D_ci95": [
+      0.6125,
+      0.8292
+     ],
+     "residuals_a": {
+      "C01": 4.181,
+      "C02": 2.885,
+      "C03": 2.628,
+      "C04": 2.353,
+      "C05": -3.812,
+      "C06": -2.168,
+      "C07": 0.569,
+      "C08": 0.789,
+      "C09": 1.159,
+      "C11": -1.516,
+      "C12": 2.629,
+      "C13": -2.69,
+      "C14": -3.55
+     },
+     "n_comparanda_units_total": 180,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Fine categories C01-C14 (secondary test)"
+    },
+    "x1_catalogue_window": {
+     "n_a": 60,
+     "n_b": 82,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 30,
+      "G4": 43,
+      "G5": 3
+     },
+     "chi2": 67.2065,
+     "p": 5e-05,
+     "D": 0.6736,
+     "D_ci95": [
+      0.5415,
+      0.8012
+     ],
+     "residuals_a": {
+      "G1": 6.294,
+      "G2": 2.4,
+      "G3": -3.859,
+      "G4": -4.798,
+      "G5": 2.4
+     },
+     "n_comparanda_units_total": 182,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Catalogue window 200 BCE-135 CE instead of 150 BCE-135 CE"
+    },
+    "x3_precedent_coding": {
+     "n_a": 60,
+     "n_b": 80,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 42,
+      "G5": 3
+     },
+     "chi2": 65.6692,
+     "p": 5e-05,
+     "D": 0.6708,
+     "D_ci95": [
+      0.5375,
+      0.7917
+     ],
+     "residuals_a": {
+      "G1": 6.217,
+      "G2": 2.353,
+      "G3": -3.812,
+      "G4": -4.786,
+      "G5": 2.353
+     },
+     "n_comparanda_units_total": 180,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "Main run with the precedent's coding restored for recoded rows"
+    }
+   },
+   "bias": {
+    "B1_excavated_vs_not": {
+     "n_a": 69,
+     "n_b": 9,
+     "counts_a": {
+      "G1": 2,
+      "G2": 3,
+      "G3": 21,
+      "G4": 41,
+      "G5": 2
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 0,
+      "G3": 6,
+      "G4": 1,
+      "G5": 1
+     },
+     "chi2": 9.6536,
+     "p": 0.10069,
+     "D": 0.5266,
+     "D_ci95": [
+      0.2754,
+      0.7391
+     ],
+     "residuals_a": {
+      "G1": -1.205,
+      "G2": 0.638,
+      "G3": -2.149,
+      "G4": 2.734,
+      "G5": -1.205
+     },
+     "verdict": "INCONCLUSIVE",
+     "note": "group a = excavated, group b = chance plus looting_recovered"
+    },
+    "B2a_scroll_vs_excavated": {
+     "n_a": 60,
+     "n_b": 69,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 2,
+      "G2": 3,
+      "G3": 21,
+      "G4": 41,
+      "G5": 2
+     },
+     "chi2": 62.7187,
+     "p": 5e-05,
+     "D": 0.6819,
+     "D_ci95": [
+      0.5551,
+      0.8065
+     ],
+     "residuals_a": {
+      "G1": 6.024,
+      "G2": 2.078,
+      "G3": -3.121,
+      "G4": -5.379,
+      "G5": 2.455
+     },
+     "verdict": "DIFFERENT"
+    },
+    "B2b_scroll_vs_not_excavated": {
+     "n_a": 60,
+     "n_b": 9,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 1,
+      "G2": 0,
+      "G3": 6,
+      "G4": 1,
+      "G5": 1
+     },
+     "chi2": 20.6597,
+     "p": 0.0011,
+     "D": 0.5833,
+     "D_ci95": [
+      0.3833,
+      0.9
+     ],
+     "residuals_a": {
+      "G1": 2.101,
+      "G2": 1.246,
+      "G3": -4.458,
+      "G4": 0.185,
+      "G5": 0.309
+     },
+     "verdict": "NOT TESTABLE"
+    },
+    "B3_unknown_share_by_how_found": {
+     "excavation": {
+      "units": 83,
+      "unknown_context": 14,
+      "share_unknown": 0.169
+     },
+     "chance": {
+      "units": 7,
+      "unknown_context": 4,
+      "share_unknown": 0.571
+     },
+     "looting_recovered": {
+      "units": 24,
+      "unknown_context": 18,
+      "share_unknown": 0.75
+     },
+     "unknown": {
+      "units": 66,
+      "unknown_context": 64,
+      "share_unknown": 0.97
+     }
+    }
+   },
+   "summary": {
+    "main_verdict": "DIFFERENT",
+    "robust": true,
+    "runs_changing_verdict": [],
+    "reporting_sensitive": true
+   }
+  },
+  "inventory_units_B": {
+   "runs": {
+    "main": {
+     "n_a": 60,
+     "n_b": 1,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 0,
+      "G2": 1,
+      "G3": 0,
+      "G4": 0,
+      "G5": 0
+     },
+     "chi2": 5.185,
+     "p": 0.52577,
+     "D": 0.85,
+     "D_ci95": [
+      0.75,
+      0.9333
+     ],
+     "residuals_a": {
+      "G1": 0.96,
+      "G2": -2.277,
+      "G3": 0.301,
+      "G4": 0.392,
+      "G5": 0.419
+     },
+     "n_comparanda_units_total": 2,
+     "n_comparanda_unknown": 1,
+     "verdict": "NOT TESTABLE",
+     "label": "Main run on the inventory units alone (x2/x4 analogue)"
+    }
+   }
+  },
+  "inventory_units_p4": {
+   "runs": {
+    "main": {
+     "n_a": 60,
+     "n_b": 0,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 0,
+      "G2": 0,
+      "G3": 0,
+      "G4": 0,
+      "G5": 0
+     },
+     "chi2": null,
+     "p": null,
+     "D": null,
+     "D_ci95": null,
+     "residuals_a": null,
+     "n_comparanda_units_total": 0,
+     "n_comparanda_unknown": 0,
+     "verdict": "NOT TESTABLE",
+     "label": "Main run on the inventory units alone (x2/x4 analogue)"
+    }
+   }
+  },
+  "e_B_thirdwall_as_reader_coded": {
+   "runs": {
+    "main": {
+     "n_a": 60,
+     "n_b": 80,
+     "counts_a": {
+      "G1": 29,
+      "G2": 9,
+      "G3": 5,
+      "G4": 8,
+      "G5": 9
+     },
+     "counts_b": {
+      "G1": 3,
+      "G2": 3,
+      "G3": 29,
+      "G4": 41,
+      "G5": 4
+     },
+     "chi2": 63.6557,
+     "p": 5e-05,
+     "D": 0.6583,
+     "D_ci95": [
+      0.525,
+      0.7833
+     ],
+     "residuals_a": {
+      "G1": 6.217,
+      "G2": 2.353,
+      "G3": -3.812,
+      "G4": -4.655,
+      "G5": 2.017
+     },
+     "n_comparanda_units_total": 180,
+     "n_comparanda_unknown": 100,
+     "verdict": "DIFFERENT",
+     "label": "EXPLORATORY: view B, Third Wall tools as coded by the Atiqot 88 reader"
+    }
+   }
+  }
+ },
+ "depth": {
+  "A_frozen_plus_p13": {
+   "scroll_phrases": 26,
+   "cubit_branches_m": {
+    "short": 0.445,
+    "working": 0.5,
+    "royal": 0.525
+   },
+   "scroll_restored_or_corrupt_entries": [
+    "21",
+    "38",
+    "28"
+   ],
+   "comparanda_eligible_catalogue_window": 183,
+   "comparanda_with_stated_depth": 5,
+   "comparanda_without_stated_depth": 178,
+   "comparanda_rows": [
+    {
+     "id": "chre7288",
+     "depth_m": 3.5,
+     "datum": "feature_top",
+     "text": "hoard niche \"3.5 m below the shaft leading into the hall\"; also \"0.5 m above the beaten chalk floor\""
+    },
+    {
+     "id": "chre7732",
+     "depth_m": 0.5,
+     "datum": "feature_top",
+     "text": "underneath \"a thick (at least 50 cm) undisturbed layer of quarry chips\" (minimum)"
+    },
+    {
+     "id": "chre7813",
+     "depth_m": 1.55,
+     "datum": "present_surface",
+     "text": "shaft \"to a depth of about 1.8 m\"; hoard \"some 20-30 cm above the floor\" (1.8 - 0.25 = 1.55, computed)"
+    },
+    {
+     "id": "chre8472",
+     "depth_m": 0.4,
+     "datum": "present_surface",
+     "text": "\"At 40 cm, a beaten earth floor\"; purse \"found at this depth\""
+    },
+    {
+     "id": "chre8474",
+     "depth_m": 0.2,
+     "datum": "present_surface",
+     "text": "under a large stone, \"at a depth of about 20 cm\""
+    }
+   ],
+   "comparanda": {
+    "all": {
+     "n": 5,
+     "min": 0.2,
+     "median": 0.5,
+     "max": 3.5,
+     "q1": 0.4,
+     "q3": 1.55,
+     "share_deeper_than_0.5m": 0.4,
+     "share_deeper_than_1m": 0.4,
+     "share_deeper_than_2m": 0.2,
+     "share_deeper_than_3m": 0.2
+    },
+    "main_window": {
+     "n": 5,
+     "min": 0.2,
+     "median": 0.5,
+     "max": 3.5,
+     "q1": 0.4,
+     "q3": 1.55,
+     "share_deeper_than_0.5m": 0.4,
+     "share_deeper_than_1m": 0.4,
+     "share_deeper_than_2m": 0.2,
+     "share_deeper_than_3m": 0.2
+    },
+    "surface_and_floor_only": {
+     "n": 3,
+     "note": "too few stated depths to describe",
+     "rows": [
+      "chre7813",
+      "chre8472",
+      "chre8474"
+     ]
+    },
+    "datum_present_surface": {
+     "n": 3,
+     "note": "too few stated depths to describe",
+     "rows": [
+      "chre7813",
+      "chre8472",
+      "chre8474"
+     ]
+    },
+    "datum_ancient_floor": {
+     "n": 0,
+     "note": "too few stated depths to describe",
+     "rows": []
+    },
+    "datum_feature_top": {
+     "n": 2,
+     "note": "too few stated depths to describe",
+     "rows": [
+      "chre7288",
+      "chre7732"
+     ]
+    },
+    "datum_unstated": {
+     "n": 0,
+     "note": "too few stated depths to describe",
+     "rows": []
+    }
+   },
+   "scroll": {
+    "all_phrases:short": {
+     "n": 26,
+     "min": 0.445,
+     "median": 3.115,
+     "max": 10.68,
+     "q1": 1.335,
+     "q3": 4.784,
+     "share_deeper_than_0.5m": 0.962,
+     "share_deeper_than_1m": 0.962,
+     "share_deeper_than_2m": 0.654,
+     "share_deeper_than_3m": 0.615,
+     "share_scroll_deeper_than_comparanda_max": 0.462,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "all_phrases:working": {
+     "n": 26,
+     "min": 0.5,
+     "median": 3.5,
+     "max": 12.0,
+     "q1": 1.5,
+     "q3": 5.375,
+     "share_deeper_than_0.5m": 0.962,
+     "share_deeper_than_1m": 0.962,
+     "share_deeper_than_2m": 0.654,
+     "share_deeper_than_3m": 0.615,
+     "share_scroll_deeper_than_comparanda_max": 0.462,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "all_phrases:royal": {
+     "n": 26,
+     "min": 0.525,
+     "median": 3.675,
+     "max": 12.6,
+     "q1": 1.575,
+     "q3": 5.644,
+     "share_deeper_than_0.5m": 1.0,
+     "share_deeper_than_1m": 0.962,
+     "share_deeper_than_2m": 0.692,
+     "share_deeper_than_3m": 0.654,
+     "share_scroll_deeper_than_comparanda_max": 0.615,
+     "share_comparanda_shallower_than_scroll_min": 0.6
+    },
+    "without_restored_or_corrupt:short": {
+     "n": 23,
+     "min": 0.445,
+     "median": 3.115,
+     "max": 10.68,
+     "q1": 1.335,
+     "q3": 5.117,
+     "share_deeper_than_0.5m": 0.957,
+     "share_deeper_than_1m": 0.957,
+     "share_deeper_than_2m": 0.652,
+     "share_deeper_than_3m": 0.609,
+     "share_scroll_deeper_than_comparanda_max": 0.478,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "without_restored_or_corrupt:working": {
+     "n": 23,
+     "min": 0.5,
+     "median": 3.5,
+     "max": 12.0,
+     "q1": 1.5,
+     "q3": 5.75,
+     "share_deeper_than_0.5m": 0.957,
+     "share_deeper_than_1m": 0.957,
+     "share_deeper_than_2m": 0.652,
+     "share_deeper_than_3m": 0.609,
+     "share_scroll_deeper_than_comparanda_max": 0.478,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "without_restored_or_corrupt:royal": {
+     "n": 23,
+     "min": 0.525,
+     "median": 3.675,
+     "max": 12.6,
+     "q1": 1.575,
+     "q3": 6.038,
+     "share_deeper_than_0.5m": 1.0,
+     "share_deeper_than_1m": 0.957,
+     "share_deeper_than_2m": 0.696,
+     "share_deeper_than_3m": 0.652,
+     "share_scroll_deeper_than_comparanda_max": 0.609,
+     "share_comparanda_shallower_than_scroll_min": 0.6
+    }
+   }
+  },
+  "B_frozen_plus_p1to4": {
+   "scroll_phrases": 26,
+   "cubit_branches_m": {
+    "short": 0.445,
+    "working": 0.5,
+    "royal": 0.525
+   },
+   "scroll_restored_or_corrupt_entries": [
+    "21",
+    "38",
+    "28"
+   ],
+   "comparanda_eligible_catalogue_window": 183,
+   "comparanda_with_stated_depth": 5,
+   "comparanda_without_stated_depth": 178,
+   "comparanda_rows": [
+    {
+     "id": "chre7288",
+     "depth_m": 3.5,
+     "datum": "feature_top",
+     "text": "hoard niche \"3.5 m below the shaft leading into the hall\"; also \"0.5 m above the beaten chalk floor\""
+    },
+    {
+     "id": "chre7732",
+     "depth_m": 0.5,
+     "datum": "feature_top",
+     "text": "underneath \"a thick (at least 50 cm) undisturbed layer of quarry chips\" (minimum)"
+    },
+    {
+     "id": "chre7813",
+     "depth_m": 1.55,
+     "datum": "present_surface",
+     "text": "shaft \"to a depth of about 1.8 m\"; hoard \"some 20-30 cm above the floor\" (1.8 - 0.25 = 1.55, computed)"
+    },
+    {
+     "id": "chre8472",
+     "depth_m": 0.4,
+     "datum": "present_surface",
+     "text": "\"At 40 cm, a beaten earth floor\"; purse \"found at this depth\""
+    },
+    {
+     "id": "chre8474",
+     "depth_m": 0.2,
+     "datum": "present_surface",
+     "text": "under a large stone, \"at a depth of about 20 cm\""
+    }
+   ],
+   "comparanda": {
+    "all": {
+     "n": 5,
+     "min": 0.2,
+     "median": 0.5,
+     "max": 3.5,
+     "q1": 0.4,
+     "q3": 1.55,
+     "share_deeper_than_0.5m": 0.4,
+     "share_deeper_than_1m": 0.4,
+     "share_deeper_than_2m": 0.2,
+     "share_deeper_than_3m": 0.2
+    },
+    "main_window": {
+     "n": 5,
+     "min": 0.2,
+     "median": 0.5,
+     "max": 3.5,
+     "q1": 0.4,
+     "q3": 1.55,
+     "share_deeper_than_0.5m": 0.4,
+     "share_deeper_than_1m": 0.4,
+     "share_deeper_than_2m": 0.2,
+     "share_deeper_than_3m": 0.2
+    },
+    "surface_and_floor_only": {
+     "n": 3,
+     "note": "too few stated depths to describe",
+     "rows": [
+      "chre7813",
+      "chre8472",
+      "chre8474"
+     ]
+    },
+    "datum_present_surface": {
+     "n": 3,
+     "note": "too few stated depths to describe",
+     "rows": [
+      "chre7813",
+      "chre8472",
+      "chre8474"
+     ]
+    },
+    "datum_ancient_floor": {
+     "n": 0,
+     "note": "too few stated depths to describe",
+     "rows": []
+    },
+    "datum_feature_top": {
+     "n": 2,
+     "note": "too few stated depths to describe",
+     "rows": [
+      "chre7288",
+      "chre7732"
+     ]
+    },
+    "datum_unstated": {
+     "n": 0,
+     "note": "too few stated depths to describe",
+     "rows": []
+    }
+   },
+   "scroll": {
+    "all_phrases:short": {
+     "n": 26,
+     "min": 0.445,
+     "median": 3.115,
+     "max": 10.68,
+     "q1": 1.335,
+     "q3": 4.784,
+     "share_deeper_than_0.5m": 0.962,
+     "share_deeper_than_1m": 0.962,
+     "share_deeper_than_2m": 0.654,
+     "share_deeper_than_3m": 0.615,
+     "share_scroll_deeper_than_comparanda_max": 0.462,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "all_phrases:working": {
+     "n": 26,
+     "min": 0.5,
+     "median": 3.5,
+     "max": 12.0,
+     "q1": 1.5,
+     "q3": 5.375,
+     "share_deeper_than_0.5m": 0.962,
+     "share_deeper_than_1m": 0.962,
+     "share_deeper_than_2m": 0.654,
+     "share_deeper_than_3m": 0.615,
+     "share_scroll_deeper_than_comparanda_max": 0.462,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "all_phrases:royal": {
+     "n": 26,
+     "min": 0.525,
+     "median": 3.675,
+     "max": 12.6,
+     "q1": 1.575,
+     "q3": 5.644,
+     "share_deeper_than_0.5m": 1.0,
+     "share_deeper_than_1m": 0.962,
+     "share_deeper_than_2m": 0.692,
+     "share_deeper_than_3m": 0.654,
+     "share_scroll_deeper_than_comparanda_max": 0.615,
+     "share_comparanda_shallower_than_scroll_min": 0.6
+    },
+    "without_restored_or_corrupt:short": {
+     "n": 23,
+     "min": 0.445,
+     "median": 3.115,
+     "max": 10.68,
+     "q1": 1.335,
+     "q3": 5.117,
+     "share_deeper_than_0.5m": 0.957,
+     "share_deeper_than_1m": 0.957,
+     "share_deeper_than_2m": 0.652,
+     "share_deeper_than_3m": 0.609,
+     "share_scroll_deeper_than_comparanda_max": 0.478,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "without_restored_or_corrupt:working": {
+     "n": 23,
+     "min": 0.5,
+     "median": 3.5,
+     "max": 12.0,
+     "q1": 1.5,
+     "q3": 5.75,
+     "share_deeper_than_0.5m": 0.957,
+     "share_deeper_than_1m": 0.957,
+     "share_deeper_than_2m": 0.652,
+     "share_deeper_than_3m": 0.609,
+     "share_scroll_deeper_than_comparanda_max": 0.478,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "without_restored_or_corrupt:royal": {
+     "n": 23,
+     "min": 0.525,
+     "median": 3.675,
+     "max": 12.6,
+     "q1": 1.575,
+     "q3": 6.038,
+     "share_deeper_than_0.5m": 1.0,
+     "share_deeper_than_1m": 0.957,
+     "share_deeper_than_2m": 0.696,
+     "share_deeper_than_3m": 0.652,
+     "share_scroll_deeper_than_comparanda_max": 0.609,
+     "share_comparanda_shallower_than_scroll_min": 0.6
+    }
+   }
+  },
+  "B_undetermined_counted": {
+   "scroll_phrases": 26,
+   "cubit_branches_m": {
+    "short": 0.445,
+    "working": 0.5,
+    "royal": 0.525
+   },
+   "scroll_restored_or_corrupt_entries": [
+    "21",
+    "38",
+    "28"
+   ],
+   "comparanda_eligible_catalogue_window": 184,
+   "comparanda_with_stated_depth": 5,
+   "comparanda_without_stated_depth": 179,
+   "comparanda_rows": [
+    {
+     "id": "chre7288",
+     "depth_m": 3.5,
+     "datum": "feature_top",
+     "text": "hoard niche \"3.5 m below the shaft leading into the hall\"; also \"0.5 m above the beaten chalk floor\""
+    },
+    {
+     "id": "chre7732",
+     "depth_m": 0.5,
+     "datum": "feature_top",
+     "text": "underneath \"a thick (at least 50 cm) undisturbed layer of quarry chips\" (minimum)"
+    },
+    {
+     "id": "chre7813",
+     "depth_m": 1.55,
+     "datum": "present_surface",
+     "text": "shaft \"to a depth of about 1.8 m\"; hoard \"some 20-30 cm above the floor\" (1.8 - 0.25 = 1.55, computed)"
+    },
+    {
+     "id": "chre8472",
+     "depth_m": 0.4,
+     "datum": "present_surface",
+     "text": "\"At 40 cm, a beaten earth floor\"; purse \"found at this depth\""
+    },
+    {
+     "id": "chre8474",
+     "depth_m": 0.2,
+     "datum": "present_surface",
+     "text": "under a large stone, \"at a depth of about 20 cm\""
+    }
+   ],
+   "comparanda": {
+    "all": {
+     "n": 5,
+     "min": 0.2,
+     "median": 0.5,
+     "max": 3.5,
+     "q1": 0.4,
+     "q3": 1.55,
+     "share_deeper_than_0.5m": 0.4,
+     "share_deeper_than_1m": 0.4,
+     "share_deeper_than_2m": 0.2,
+     "share_deeper_than_3m": 0.2
+    },
+    "main_window": {
+     "n": 5,
+     "min": 0.2,
+     "median": 0.5,
+     "max": 3.5,
+     "q1": 0.4,
+     "q3": 1.55,
+     "share_deeper_than_0.5m": 0.4,
+     "share_deeper_than_1m": 0.4,
+     "share_deeper_than_2m": 0.2,
+     "share_deeper_than_3m": 0.2
+    },
+    "surface_and_floor_only": {
+     "n": 3,
+     "note": "too few stated depths to describe",
+     "rows": [
+      "chre7813",
+      "chre8472",
+      "chre8474"
+     ]
+    },
+    "datum_present_surface": {
+     "n": 3,
+     "note": "too few stated depths to describe",
+     "rows": [
+      "chre7813",
+      "chre8472",
+      "chre8474"
+     ]
+    },
+    "datum_ancient_floor": {
+     "n": 0,
+     "note": "too few stated depths to describe",
+     "rows": []
+    },
+    "datum_feature_top": {
+     "n": 2,
+     "note": "too few stated depths to describe",
+     "rows": [
+      "chre7288",
+      "chre7732"
+     ]
+    },
+    "datum_unstated": {
+     "n": 0,
+     "note": "too few stated depths to describe",
+     "rows": []
+    }
+   },
+   "scroll": {
+    "all_phrases:short": {
+     "n": 26,
+     "min": 0.445,
+     "median": 3.115,
+     "max": 10.68,
+     "q1": 1.335,
+     "q3": 4.784,
+     "share_deeper_than_0.5m": 0.962,
+     "share_deeper_than_1m": 0.962,
+     "share_deeper_than_2m": 0.654,
+     "share_deeper_than_3m": 0.615,
+     "share_scroll_deeper_than_comparanda_max": 0.462,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "all_phrases:working": {
+     "n": 26,
+     "min": 0.5,
+     "median": 3.5,
+     "max": 12.0,
+     "q1": 1.5,
+     "q3": 5.375,
+     "share_deeper_than_0.5m": 0.962,
+     "share_deeper_than_1m": 0.962,
+     "share_deeper_than_2m": 0.654,
+     "share_deeper_than_3m": 0.615,
+     "share_scroll_deeper_than_comparanda_max": 0.462,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "all_phrases:royal": {
+     "n": 26,
+     "min": 0.525,
+     "median": 3.675,
+     "max": 12.6,
+     "q1": 1.575,
+     "q3": 5.644,
+     "share_deeper_than_0.5m": 1.0,
+     "share_deeper_than_1m": 0.962,
+     "share_deeper_than_2m": 0.692,
+     "share_deeper_than_3m": 0.654,
+     "share_scroll_deeper_than_comparanda_max": 0.615,
+     "share_comparanda_shallower_than_scroll_min": 0.6
+    },
+    "without_restored_or_corrupt:short": {
+     "n": 23,
+     "min": 0.445,
+     "median": 3.115,
+     "max": 10.68,
+     "q1": 1.335,
+     "q3": 5.117,
+     "share_deeper_than_0.5m": 0.957,
+     "share_deeper_than_1m": 0.957,
+     "share_deeper_than_2m": 0.652,
+     "share_deeper_than_3m": 0.609,
+     "share_scroll_deeper_than_comparanda_max": 0.478,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "without_restored_or_corrupt:working": {
+     "n": 23,
+     "min": 0.5,
+     "median": 3.5,
+     "max": 12.0,
+     "q1": 1.5,
+     "q3": 5.75,
+     "share_deeper_than_0.5m": 0.957,
+     "share_deeper_than_1m": 0.957,
+     "share_deeper_than_2m": 0.652,
+     "share_deeper_than_3m": 0.609,
+     "share_scroll_deeper_than_comparanda_max": 0.478,
+     "share_comparanda_shallower_than_scroll_min": 0.4
+    },
+    "without_restored_or_corrupt:royal": {
+     "n": 23,
+     "min": 0.525,
+     "median": 3.675,
+     "max": 12.6,
+     "q1": 1.575,
+     "q3": 6.038,
+     "share_deeper_than_0.5m": 1.0,
+     "share_deeper_than_1m": 0.957,
+     "share_deeper_than_2m": 0.696,
+     "share_deeper_than_3m": 0.652,
+     "share_scroll_deeper_than_comparanda_max": 0.609,
+     "share_comparanda_shallower_than_scroll_min": 0.6
+    }
+   }
+  }
+ },
+ "landmark": {
+  "A_frozen_plus_p13": {
+   "a_all_units_main:main": {
+    "n": 179,
+    "any": 20,
+    "share_any": 0.112,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "a_all_units_main:strict": {
+    "n": 179,
+    "any": 17,
+    "share_any": 0.095,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "b_known_context_main:main": {
+    "n": 79,
+    "any": 20,
+    "share_any": 0.253,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "b_known_context_main:strict": {
+    "n": 79,
+    "any": 17,
+    "share_any": 0.215,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_all_units_catalogue_window:main": {
+    "n": 181,
+    "any": 20,
+    "share_any": 0.11,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_all_units_catalogue_window:strict": {
+    "n": 181,
+    "any": 17,
+    "share_any": 0.094,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_known_context_catalogue_window:main": {
+    "n": 81,
+    "any": 20,
+    "share_any": 0.247,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_known_context_catalogue_window:strict": {
+    "n": 81,
+    "any": 17,
+    "share_any": 0.21,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   }
+  },
+  "B_frozen_plus_p1to4": {
+   "a_all_units_main:main": {
+    "n": 179,
+    "any": 20,
+    "share_any": 0.112,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "a_all_units_main:strict": {
+    "n": 179,
+    "any": 17,
+    "share_any": 0.095,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "b_known_context_main:main": {
+    "n": 79,
+    "any": 20,
+    "share_any": 0.253,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "b_known_context_main:strict": {
+    "n": 79,
+    "any": 17,
+    "share_any": 0.215,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_all_units_catalogue_window:main": {
+    "n": 181,
+    "any": 20,
+    "share_any": 0.11,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_all_units_catalogue_window:strict": {
+    "n": 181,
+    "any": 17,
+    "share_any": 0.094,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_known_context_catalogue_window:main": {
+    "n": 81,
+    "any": 20,
+    "share_any": 0.247,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_known_context_catalogue_window:strict": {
+    "n": 81,
+    "any": 17,
+    "share_any": 0.21,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 7,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ]
+    }
+   }
+  },
+  "B_undetermined_counted": {
+   "a_all_units_main:main": {
+    "n": 180,
+    "any": 21,
+    "share_any": 0.117,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 8,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ],
+     "iaa_phase3_2026-10-11/part_c/features.csv#326": [
+      "wall_face"
+     ]
+    }
+   },
+   "a_all_units_main:strict": {
+    "n": 180,
+    "any": 18,
+    "share_any": 0.1,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 8,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ],
+     "iaa_phase3_2026-10-11/part_c/features.csv#326": [
+      "wall_face"
+     ]
+    }
+   },
+   "b_known_context_main:main": {
+    "n": 80,
+    "any": 21,
+    "share_any": 0.263,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 8,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ],
+     "iaa_phase3_2026-10-11/part_c/features.csv#326": [
+      "wall_face"
+     ]
+    }
+   },
+   "b_known_context_main:strict": {
+    "n": 80,
+    "any": 18,
+    "share_any": 0.225,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 8,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ],
+     "iaa_phase3_2026-10-11/part_c/features.csv#326": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_all_units_catalogue_window:main": {
+    "n": 182,
+    "any": 21,
+    "share_any": 0.115,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 8,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ],
+     "iaa_phase3_2026-10-11/part_c/features.csv#326": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_all_units_catalogue_window:strict": {
+    "n": 182,
+    "any": 18,
+    "share_any": 0.099,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 8,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ],
+     "iaa_phase3_2026-10-11/part_c/features.csv#326": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_known_context_catalogue_window:main": {
+    "n": 82,
+    "any": 21,
+    "share_any": 0.256,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 8,
+    "gate": 0,
+    "wall_face": 8,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre8469": [
+      "threshold"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "chre18784": [
+      "threshold"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02H22": [
+      "threshold"
+     ],
+     "t02X05": [
+      "wall_face"
+     ],
+     "iaa_phase3_2026-10-11/part_c/features.csv#326": [
+      "wall_face"
+     ]
+    }
+   },
+   "c_known_context_catalogue_window:strict": {
+    "n": 82,
+    "any": 18,
+    "share_any": 0.22,
+    "corner": 6,
+    "step": 0,
+    "pillar": 0,
+    "threshold": 5,
+    "gate": 0,
+    "wall_face": 8,
+    "hits": {
+     "chre5386": [
+      "corner"
+     ],
+     "chre5387": [
+      "corner"
+     ],
+     "chre7288": [
+      "corner"
+     ],
+     "chre7495": [
+      "wall_face"
+     ],
+     "chre7496": [
+      "threshold"
+     ],
+     "chre7596": [
+      "wall_face"
+     ],
+     "chre7601": [
+      "wall_face"
+     ],
+     "chre7631": [
+      "corner"
+     ],
+     "chre7692": [
+      "threshold"
+     ],
+     "chre7703": [
+      "threshold"
+     ],
+     "chre7704": [
+      "corner",
+      "wall_face"
+     ],
+     "chre7832": [
+      "threshold"
+     ],
+     "chre8172": [
+      "threshold"
+     ],
+     "chre8178": [
+      "wall_face"
+     ],
+     "chre18771": [
+      "corner"
+     ],
+     "t02H18": [
+      "wall_face"
+     ],
+     "t02X05": [
+      "wall_face"
+     ],
+     "iaa_phase3_2026-10-11/part_c/features.csv#326": [
+      "wall_face"
+     ]
+    }
+   }
+  }
+ }
+}
