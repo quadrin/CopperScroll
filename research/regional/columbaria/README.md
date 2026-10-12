@@ -175,6 +175,7 @@ Files: [iaa_rows.csv](iaa_rows.csv) (the 35 in-region IAA rows in the `columbari
 - **Rows without coordinates** use the IAA amendment's name-only rule: a row is placed at its reader's `places_v2` place, if that place's sigma is 2 km or less. Otherwise it is listed as unplaced and not counted.
 - **Coding.** The three placed phase-4 rows were coded by hand from the coding fields only ([data/phase4_coding.json](data/phase4_coding.json)). Four new candidate pairs got decisions ([data/phase4_dedup_decisions.csv](data/phase4_dedup_decisions.csv)). No second coder.
 - **Protected material.** No phase-4 row of the class comes from a held unit, the Tell es-Sultan strip or Kh. ʿAlmit. None was met or excluded.
+- **B3 refresh (12 Oct):** reran against the merge rebuilt under its amendment B3 (two owner-supplied IAA Reports rows: the Manaḥat miqveh and a Byzantine storage cave at Efrata), with the frozen rules unchanged. Nothing changed in substance: neither row is of the class or has a columbarium word, no new candidate pair or review item arose, and every count, row and score below is the same. Only the pinned input hashes in `scripts/phase4_view.py` and `phase4_summary.json` changed (`features_all.csv` `23a23214…`, `report_groups.csv` `e3121121…`, `sites.csv` `749dfca8…`); the amendment's §2 values describe the pre-B3 build.
 
 **The six phase-4 rows of the class.**
 
