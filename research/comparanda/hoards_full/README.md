@@ -128,3 +128,127 @@ python3 -I -B -m unittest discover -s research/comparanda/hoards_full/tests -t r
 - `research/sources/sources.md`, row "Concealment comparanda": add this lane, with its CHRE, Noe 1925, ʿAtiqot abstract, Hendin and web-search routes, and its blocked list.
 - The precedent's `comparanda.csv` (not edited here). CHRE 8178 should be placement `wall_cavity` (CHRE quotes "found in the wall of a building"). CHRE 5386 lay "in the NE corner of the NW room" (Leibner 2010: 225). CHRE 7617 (Nahal Shalva) lay near a skeleton in the pit, per the ʿAtiqot 112 abstract, so its grave-good status is open. None of these changes a coarse group.
 - ACTIVE_TEST and the outcome ledger: no change. This is exploratory and closes no registered question. If a line is wanted for R12: "Fuller hoard catalogue (hoards_full): still DIFFERENT, D = 0.68. The new robustness rests on Qumran caves 2Q–12Q. Recorded deposits almost never state a depth (5 of 181)."
+
+## Regional inventory view, phases 1–4, 12 October 2026 (exploratory)
+
+**What it is.** The `hoard_cache` rows of the merged regional inventory (`merged_2026-10-12`, phases 1–4: HA, ESI, HA-ESI, ʿAtiqot, IAA Reports, QDAP, ADAJ) folded into this catalogue under [PLAN_AMENDMENT_PHASE4_2026-10-12.md](PLAN_AMENDMENT_PHASE4_2026-10-12.md). This lane had no IAA amendment, so phases 1–3 (view A) and phase 4 (view B − A) are reported as layers.
+**Main result.** Phase 4 adds no deposit inside the catalogue window. Its 8 in-window hoard rows are 5 deposits already in `hoards.csv` and 3 that fail the precedent's definition. Phases 1–3 add two in-window units: a bronze-vessel hoard among tomb finds at ʿEn Gedi (tomb) and a Year-4 coin hoard at the Tifʾeret Yisraʾel synagogue (context unknown). Main run: still DIFFERENT, D = 0.669 (95% interval 0.540–0.795), p = 0.00005, 79 known-context units of 179 (frozen: 0.681, 78 of 177). Every run keeps its verdict word.
+**What stays unknown.** The inventory covers four zones only, not the whole region. Its rows carry 12-word quotes, so most contexts stay unknown: 12 of the 30 new units. Rows without coordinates or a reader place id fall outside the Judaea boxes (run s2). One pair (Robinson's Arch and CHRE 7703) could not be settled.
+
+**Freeze.** The amendment was committed alone as `f2b42ac` (2026-10-12T04:51Z), SHA-256 `ba1f690c9a556290895b119f23464201f0ac736ddee4f98bb42c5daca98b5f2d`. Its §1 lists what had been seen: READMEs, value counts by phase, and the hoards named in the task message. No `hoard_cache` row had been read. The frozen catalogue, `results.json` and `RESULTS.md` are unchanged and hash-checked. The `frozen` view reproduces every frozen run exactly.
+
+### Rows, reports and sites
+
+| | rows | reports | sites | alternate version | excluded | duplicate | undetermined | new units (reports, sites) | new units in catalogue window |
+|---|---|---|---|---|---|---|---|---|---|
+| phases 1–3 | 48 | 43 | 33 | 7 | 12 | 8 | 1 | 20 (20, 17) | 2 |
+| phase 4 | 29 | 23 | 19 | 5 | 8 | 6 | 0 | 10 (10, 9) | 0 |
+
+- **Excluded, 20 rows.**
+  - 9 have no date (precedent §3). One of them is Gilgal: the check did not exclude it as a foundation deposit, because its excavator is unsure.
+  - 3 are foundation deposits by the excavator's label: ʿAtiqot 119 pp. 21–63 (ʿAujah aqueduct), IAA Reports 63 pp. 80–81 and IAA Reports 64 p. 284.
+  - 8 failed the precedent's definition when the coding fields were read:
+    - Waladje, an empty pot;
+    - Moza, glass bottles in a pit;
+    - ʿEn Gedi 2019, a single coin;
+    - City of David, cooking pots with bones (ESI 18 p. 91);
+    - Mamilla, a bronze bottle, a juglet and lamps (ESI 10 p. 24);
+    - Maʿalot ʿIr David, pottery in a reservoir;
+    - Kh. Qumran, a jar "found empty" (ADAJ 2 pp. 83–85);
+    - ʿAin Feshkha, 48 coins "in the rooms", which the report calls a "collection" (ADAJ 4/5 pp. 7–11).
+- **Protected and held.** No row met the Tell es-Sultan, Kh. ʿAlmit or held-cave tests. None is used.
+- **Phase-4 rows already in the catalogue** (source unit id, printed pages → catalogue row):
+  - ATQ112-i04, pp. 53–92, Murabbaʿat Cave II Ptolemaic hoard → `t02H20`;
+  - ATQ121-i06, pp. 1–22, Givʿati jewellery → `n_givati_rings`;
+  - ATQ88-001s, pp. 1*–8* and 153–154, Third Wall tools → `n_thirdwall_tools` (excluded there);
+  - QDAP11-083, pp. 83–85, Reifenberg's Silwan shekel pyxis → `chre8000` ("Siloam"; CHRE says bronze pyxis, the reader says pottery);
+  - ADAJ3-075, pp. 75–77, Kh. Qumran Second Revolt coins → `chre18784`;
+  - ADAJ4_5ar-032, p. 32, Awarta (Arabic) → ADAJ1-041, pp. 41–43. The reader's NOTES say they are one hoard.
+- **Phase 1–3 rows already in the catalogue:**
+  - Tulul Abu el-ʿAlayiq, HA 47 pp. 18–19 and HA 50 pp. 11–13 → `chre7828`;
+  - Jewish Quarter shekels in a small pool, HA 54–55 pp. 15–17 → `chre7609`;
+  - ʿEn Gedi, HA 10 pp. 4–8 → `chre7496`, and HA 14 pp. 16–18 → `chre7495`;
+  - Masada, HA 14 pp. 18–20 → `chre7697` and `chre8167`;
+  - Herodium, HA 30 pp. 27–28 → `chre8044`;
+  - Tell el-Ful, HA-ESI 111 p. 62* → `chre7601`.
+- **Undetermined:** Robinson's Arch (ESI 18 p. 88). The inventory has a hoard "probably concealed in a shop wall"; CHRE 7703 (1994) has coins "scattered on the threshold of one of the shops". The main view leaves it out; one sensitivity view adds it.
+
+### New units in the runs (the only changes)
+
+| unit | source (printed page) | date | setting → group | landmark | runs entered |
+|---|---|---|---|---|---|
+| ʿEn Gedi, bronze vessels (ladle, kohl bottle, amulet) "among the tomb finds" | HA-ESI 122 (2010), HAESI-1594, online, no printed page | 2nd–1st c. BCE | tomb → G2 | none stated | main, s2–s9, x1, x3 (not s1) |
+| Jerusalem, Tifʾeret Yisraʾel synagogue, "over a dozen coins of Year 4" | HA-ESI 133 (2021), HAESI-26022, online | 69/70 CE | unknown | – | every run, as unknown |
+| *sensitivity only:* Robinson's Arch | ESI 18 (1998) p. 88 | 69 CE | structure → G4 | wall face ("in a shop wall") | B with undetermined counted |
+
+- **Main run, comparanda by coarse group** (water installations, tombs, caves, structures, open air): frozen 3 / 2 / 29 / 41 / 3; views A and B 3 / 3 / 29 / 41 / 3. The ʿEn Gedi row is the third recorded tomb deposit. Whether it is a grave good is open; precedent §5 keeps a hoard in a tomb "as the source reports it".
+- **Every run, views A and B** (`phase4_scores.csv`):
+
+  | run | D |
+  |---|---|
+  | main | 0.669 |
+  | s1 | 0.669 (35 known; the ʿEn Gedi hoard predates 63 BCE) |
+  | s2 | 0.658 |
+  | Pu | 0.653 |
+  | M | 0.686 |
+  | L | 0.653 |
+  | s6 | 0.641 |
+  | s7 | 0.672 |
+  | s8 | 0.645 |
+  | s9 | 0.710 |
+  | x1 | 0.672 |
+  | x3 | 0.669 |
+
+  - All are DIFFERENT, so the verdict stays robust.
+  - It stays reporting-sensitive: B1 is INCONCLUSIVE (D = 0.52, p = 0.11) and B2b is NOT TESTABLE.
+  - With the undetermined pair counted, main D = 0.671 (80 known).
+- **Inventory units alone (x2/x4 analogue):** 2 units in the main window, 1 of known context. NOT TESTABLE.
+- **Exploratory, chosen after seeing the rows.** This lane excluded the Third Wall tools from the abstract alone. The ʿAtiqot 88 reader codes them as "concealed in a rock pocket at the edge of a quarry", Stratum 4, 1st c. CE. Coded that way in view B, they add an open-air unit: G5 3 → 4, D = 0.658, DIFFERENT.
+- **Depths.** No new in-window deposit states a depth; still 5 of 183 eligible deposits. The one new depth (2.5 m, ADAJ 6/7 pp. 105–106, Mamluk copper vessels) is out of window.
+- **Landmarks.**
+  - Known-context deposits placed by a landmark: 20 of 79 (25%); frozen, 20 of 78.
+  - The undetermined Robinson's Arch row would add one wall face (21 of 80).
+  - Still no step, pillar or gate.
+  - Out of window, the new rows add only wall faces (Mount Zion, Et-Tur, Har Ḥoma, Givʿati gold).
+- **What stays unknown.** The new units come with 12-word quotes, not report text. 12 of the 30 new units have no codable setting, and 28 of the 30 lie outside the window.
+
+### Method notes and deviations (exploratory)
+
+- **Manual check (§7), 108 items.**
+  - Confirmed: 61 settings, 14 placements, 8 landmarks and 1 depth.
+  - Changed: 4 settings, 5 placements and 3 landmarks were set back, or another proposed code was chosen. Two of the settings went from `ruin_heap` to unknown, because a building's own debris takes the building (Herodium gate, Bet Neqofa).
+  - Exclusion labels: 3 confirmed and 1 overruled (Gilgal). 8 rows were excluded by hand (listed above).
+  - Files: `data/phase4_manual_check.csv`, and `data/phase4_dedupe_decisions.csv` (67 pairs: 15 same, 2 undetermined, 50 different).
+- **D1, implementation fixes.** They were made after the first dump of rows and before any run:
+  - The date parser now reads "612/3" as 612.
+  - In "512–607 CE" and "2nd–1st centuries BCE", the era now applies to both ends.
+  - "A.D. 602–685" is now read as a range.
+  - The region text now contains "Israel, Palestinian Territories or Jordan", so the precedent's `in_region_main` codes the rows inside, as §4 requires.
+- **D2.** The screen missed three pairs. They were added by hand under PLAN 7: Herodium (spelt Herodion in CHRE), Silwan/Siloam, and the two Awarta rows. Without D2, the Herodium and Silwan rows would enter as unknown-context units, and no group count would change.
+- **D3.** Excluded units skip the duplicate screen, because they enter no view.
+- **D4.** Run s7 expands a row into `n_features` rows. Some readers put the number of coins in that field (48 at ʿAin Feshkha, 116 at al-Bireh). No expanded row falls in a window this time.
+- **D5.** Under the §4 place-id rule, a row with no reader place id falls outside the Judaea boxes, even when it names Jerusalem or ʿEn Gedi (Robinson's Arch, for example). The precedent's name rule would place such rows inside. This affects run s2 only.
+
+### Files (this section)
+
+- `PLAN_AMENDMENT_PHASE4_2026-10-12.md`: the frozen amendment.
+- `scripts/phase4_view.py`: commands `candidates`, `run` and `check`. Standard library only, deterministic, about 45 s.
+- `phase4_view_2026-10-12.csv`: all 77 counted `hoard_cache` rows, with status, codes, proposals, duplicate links and view membership.
+- `phase4_scores.csv`: every view and run.
+- `phase4_summary.json`: input hashes, the frozen reproduction, the new units, the depth and landmark tallies per view, and the bias checks.
+- `data/phase4_manual_check.csv`, `data/phase4_dedupe_decisions.csv`: the hand decisions.
+- `tests/test_phase4_view.py`. It checks:
+  - the amendment hash;
+  - that the frozen lane files are unchanged and the frozen counts are reproduced;
+  - reproducibility;
+  - that no protected row is in a view;
+  - that the checks never add a code;
+  - that every review item is decided.
+
+### Proposed changes for the integrator (this section)
+
+- ACTIVE_TEST, the outcome ledger and the status files: no change. A possible line for R12: "Hoard catalogue with the regional inventory, phases 1–4 (exploratory): still DIFFERENT, D = 0.67. Phase 4 adds no in-window deposit. Phases 1–3 add one tomb hoard (ʿEn Gedi, HA-ESI 122)."
+- `merged_2026-10-12` (not edited here). Two notes for its next build:
+  - The phase-4 ADAJ and ʿAtiqot hoard rows often give the number of coins in `n_features`.
+  - ADAJ4_5ar-032 and ADAJ1-041 (Awarta) are one hoard, though their dates do not overlap (6th c. against 602–685).
+- This lane's `n_thirdwall_tools` row. The ʿAtiqot 88 reader's coding contradicts its exclusion. Whether to recode it is the lane owner's exploratory choice; it is not applied here.
