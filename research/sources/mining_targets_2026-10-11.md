@@ -182,3 +182,20 @@ The owner sent these after the access check. None of them is read yet. Three of 
 **Drive index:**
 - The three Drive files were renamed and moved through the Drive API; their former names are in [drive_reorg_2026-10-11.tsv](drive_reorg_2026-10-11.tsv).
 - `drive_index.md` was last built on 9 October and does not list the files added since then. Rebuild it on the Mac with `tools/drive_navtree.py … --log research/sources/drive_reorg_2026-10-11.tsv`.
+
+### Second batch (11 October 2026, evening)
+
+The owner added four more files to Drive. None is read yet.
+
+| Gap | File | Covers |
+|---|---|---|
+| Benjamin survey (1993) | Magen & Finkelstein (eds.), *Archaeological Survey of the Hill Country of Benjamin* (IAA, Hebrew), 03 Surveys | Complete volume. The imprint confirms the IAA |
+| Kloner & Zissu | *The Necropolis of Jerusalem in the Second Temple Period* (Yad Ben-Zvi & IES 2003, Hebrew), 03 Surveys | The Hebrew original. The English 2007 edition is still not in hand |
+| Herodium | Netzer 1981, *Greater Herodium* (Qedem 13), DjVu, 02 Excavation reports | Lower Herodium, including the pool complex |
+| Qedem 57 | Gordon 2018, review in *IMAGES* 11: 262–264 ([10.1163/18718000-12340098](https://doi.org/10.1163/18718000-12340098)), 04 Articles | Review only; the volume is still needed |
+
+**Before reading the Benjamin survey:**
+- It covers Kh. ʿAlmit. The IAA notices on Kh. ʿAlmit are Tier 1 and unread, so treat the survey entry under the same rule: extract it blind before comparing it with any model. The columbaria lane has already seen the ASI record of the site; check whether it is the same text.
+- Its eastern sheets may reach the Wadi Qelt gorge. Entries in the gorge are held, so cite them only.
+
+**Kochavi 1972** is a registered arrival item (`kochavi-1972`, status not obtained). If it arrives, open it only under the arrival procedure.
