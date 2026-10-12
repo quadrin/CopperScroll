@@ -30,10 +30,10 @@ HF = os.path.join(T.REPO, 'research', 'regional', 'haesi_features')
 MERGED12 = os.path.join(HF, 'merged_2026-10-12')
 MERGED11 = V.MERGED
 PHASE4 = os.path.join(HF, 'phase4_2026-10-11')
-INPUT_SHA = {  # amendment §2
-    'features_all.csv': '940e6c04b1ecd18c79a7c88a784a463d69056f70c6e31ad18e5a18c46866d65d',
-    'report_groups.csv': '38b67f3c7095993287ac9da80eb229a9752d56ff7c27cb9bb3b1024f47da702f',
-    'sites.csv': '5d7458016d7955cced5540d4307570879fbc5b2071d5f644e85d3cec0fcc16db',
+INPUT_SHA = {  # merged_2026-10-12 as rebuilt under its amendment B3 (12 Oct); amendment §2 gives the b4a41cc values
+    'features_all.csv': '23a23214ed475b5c3a3a213f29d4094518acbdf1b187cffd7c78949a635eae38',
+    'report_groups.csv': 'e3121121f77a4cdc85aca2158839d66372c785bde7a53746ece5861bb2d1b47d',
+    'sites.csv': '749dfca8fed2473a117cb15fe1172da94206ca4779465133d460dffdc77f2626',
 }
 EXPOSURE4 = ('repo-coded by the phase-4 readers and merged_2026-10-12; first mapped by this lane on 12 Oct 2026, '
              'after the phase-4 amendment (d5a837e)')
