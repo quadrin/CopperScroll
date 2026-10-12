@@ -16,6 +16,7 @@ log given with --log (tab-separated: drive_id, old_path, new_path, bytes).
 """
 import argparse
 import csv
+import json
 import os
 import subprocess
 import sys
@@ -127,7 +128,8 @@ def build_md(rows, root_id, date):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("root")
+    ap.add_argument("root", nargs="?", help="mounted Copper Scroll folder")
+    ap.add_argument("--metadata-snapshot", help="verified connector snapshot with root_id and rows")
     ap.add_argument("--out-dir", default=".")
     ap.add_argument("--previous", help="earlier drive_manifest.csv, to keep former names")
     ap.add_argument("--log", action="append", default=[], help="reorganization log TSV")
@@ -135,6 +137,10 @@ def main():
     ap.add_argument("--drive-names", action="store_true",
                     help="write '00 drive_manifest.csv' and '00 START HERE – Drive index.md' (names used in the Drive root)")
     a = ap.parse_args()
+    if not a.root and not a.metadata_snapshot:
+        ap.error("provide a mounted root or --metadata-snapshot")
+    if a.root and a.metadata_snapshot:
+        ap.error("choose a mounted root or --metadata-snapshot")
 
     former = {}
     if a.previous and os.path.exists(a.previous):
@@ -149,7 +155,24 @@ def main():
                 if os.path.basename(old) != os.path.basename(new):
                     former.setdefault(i, os.path.basename(old))
 
-    rows = walk(a.root)
+    if a.metadata_snapshot:
+        with open(a.metadata_snapshot, encoding="utf-8") as fh:
+            snapshot = json.load(fh)
+        root_id = snapshot["root_id"]
+        rows = snapshot["rows"]
+        seen = set()
+        for r in rows:
+            if not r.get("drive_id") or r["drive_id"] in seen:
+                raise ValueError("snapshot has a missing or repeated Drive ID")
+            seen.add(r["drive_id"])
+            if not r["path"] or r["path"].startswith("/") or ".." in r["path"].split("/"):
+                raise ValueError("snapshot paths must stay within the selected folder")
+            if r["bytes_or_folder"] != "folder" and int(r["bytes_or_folder"]) < 0:
+                raise ValueError("snapshot contains a negative file size")
+        rows.sort(key=lambda r: r["path"])
+    else:
+        root_id = drive_id(a.root)
+        rows = walk(a.root)
     for r in rows:
         r["former_name"] = former.get(r["drive_id"], "")
     missing = [r["path"] for r in rows if not r["drive_id"]]
@@ -165,7 +188,10 @@ def main():
     import datetime
     date = a.date or datetime.date.today().isoformat()
     with open(os.path.join(a.out_dir, md_name), "w", encoding="utf-8") as fh:
-        fh.write(build_md(rows, drive_id(a.root), date))
+        md = build_md(rows, root_id, date)
+        if a.metadata_snapshot:
+            md = md.replace("## How to use this index", "This build uses a complete connector metadata traversal of the selected folder, including cloud-only files. Sizes and Drive IDs are metadata; they do not establish source inspection or reuse rights.\n\n## How to use this index", 1)
+        fh.write(md)
     print(f"{len(rows)} rows written to {a.out_dir}")
 
 

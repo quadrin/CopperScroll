@@ -2,7 +2,11 @@
 
 Research date: 2026-10-01. Project-authored findings from public sources and local files. Scope: original Upper Beth Horon site 143, tomb geometry and drainage comparisons. No candidate, coordinate, log, mirrored-note or registration edits were made.
 
-## Result
+## Current source update, 12 October 2026
+
+The original 1993 site-143 pages are now inspected: Hebrew p. 142/PDF 164 and English p. 28*/PDF 529, with adjacent illustration coverage and the site-28 cross-reference. The source supplies no individual tomb plan, entrance bearing, tomb-channel relationship or feature-specific date. The next evidence is an identifiable tomb field drawing with bearings, contacts and chronology. [Exact original reading and figure access](benjamin1993_targeted_2026-10-12/README.md).
+
+## Historical result, 1 October 2026
 
 The original 1993 site-143 pages and any associated tomb plans remain unread. Printed p. 142 now has a traceable supporting citation in Hawari 2004, p. 254, but this does **not** verify the original page itself. The newly accessed 1997 survey provides the cross-reference recorded in §2, without resolving the missing original drawings.
 
@@ -132,3 +136,8 @@ The decisive missing source remains the **original 1993 site-143 description and
 Eitam's own indexed CV names a 1984 survey item in volume **80**, whereas the independently verified IAA/JSTOR contents locate the same survey title and author in **85**, p. 31. The CV statement does not establish whether there was another preliminary article or a bibliographic error. Preserve this discrepancy; use the verified 85/31 target for retrieval. CV URL: https://independent.academia.edu/DavidEitam/CurriculumVitae (turn244search0).
 
 The original IAA English-series contents were also screened for a corresponding Benjamin survey entry in the early volumes; the displayed volume-3 contents did not identify one (https://publications.iaa.org.il/esi_english_series/, turn257view0). This is a contents check, not proof that no English version exists. Focused public searches for an original 1993 scan through publisher/university listings and indexed digital-library records yielded bibliography, catalogues and the already limited author listings, without a new readable original or drawing. The public-access lead is paused at these concrete text-access limits; institutional retrieval of the exact items above would provide a materially different next route.
+
+
+## Original-page acquisition resolved, 12 October 2026
+
+The original site-143 description and adjacent pp. 141–144 are now read directly. Its four west-slope bench tombs and eastern 16.5 m roofed/plastered reservoir repeat the online source’s observations; the publication does not join them or date their construction. Site 28 supplies an aerial village photograph, not a tomb plan. The original-page access gap closes; individual tomb geometry and phase remain the discriminating dependencies. See the linked original-reading record above, including its incidental-exposure and rights notes. Earlier access statements describe the 1 October session.

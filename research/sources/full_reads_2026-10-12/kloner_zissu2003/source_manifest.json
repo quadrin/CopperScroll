@@ -1,0 +1,53 @@
+{
+  "source_code": "KZ2003",
+  "title": "The Necropolis of Jerusalem in the Second Temple Period (Hebrew)",
+  "authors": [
+    "Amos Kloner",
+    "Boaz Zissu"
+  ],
+  "edition_year": 2003,
+  "publisher": [
+    "Yad Izhak Ben-Zvi",
+    "Israel Exploration Society"
+  ],
+  "isbn": "965-217-211-1",
+  "drive_file_id": "1PgjU7hPC8g3Qi3NA7BRtdz7Oiuf7nq7u",
+  "source_url": "https://drive.google.com/file/d/1PgjU7hPC8g3Qi3NA7BRtdz7Oiuf7nq7u/view",
+  "source_local_private": "/workspace/scratch/c866a82ef703/inputs/kloner_zissu2003.pdf",
+  "source_bytes": 79358415,
+  "source_sha256": "21c0dcdb957e596c059673ca9b528498feb9d87d21878d5febf0a9b8743cca86",
+  "pdf_pages": 362,
+  "text_layer": false,
+  "access": "User-supplied private PDF; native Hebrew page images read sequentially by continuation readers",
+  "reading_date": "2026-10-12",
+  "supplied_scan_leaves_read": 362,
+  "supplied_scan_leaves_unread": 0,
+  "full_read_status": "Complete read of supplied 362-leaf scan; published edition coverage incomplete because printed165 is absent",
+  "pagination": {
+    "usual_rule": "PDF page = Arabic printed page +14",
+    "frontmatter": "Cover, unnumbered title/copyright/blank leaves and Hebrew labels ה–יב recorded individually",
+    "arabic_end": "Printed344 = PDF358; rear blank/Englishcontents/title/copyright are PDF359–362",
+    "defect": "PDF178 and179 both carry printed164 and Fig160; PDF180 resumes166. Printed165, including Fig161 (tomb7-49 plan/section), is absent. Duplicate leaf was inspected separately.",
+    "illustration_list_caveat": "Printed313 lists Fig161 at165; printed315 ends atFig326 although actual Fig327 appears on306. Variant figures10a/71a/71b/234a/234b/272a/272b retained."
+  },
+  "previous_exposure": {
+    "scope": "Prior targeted reading was exploratory; full-reading ledgers retained sequential native access. No ACTIVE_TEST, candidate predictions or confirmatory scoring were read by this continuation.",
+    "prior_record": "../../kloner_zissu2003_targeted_2026-10-12/source_manifest.json"
+  },
+  "rights": "All rights reserved ©Jerusalem2003 (PDF6 and362); public source-page/figure reproduction permission not supplied",
+  "source_images_committed": false,
+  "raw_ocr_committed": false,
+  "private_helpers_committed": false,
+  "protected_content": "No unexpected CopperScroll manuscript XII8–12/segments21–22 or Tell-es-Sultan north-strip images encountered in PDF301–362. Bibliographic Qumran/Jericho entries are locators only.",
+  "coverage_files": [
+    "page_coverage.csv",
+    "observations.csv",
+    "figures_access.csv"
+  ],
+  "limitations": [
+    "Absence of printed165 prevents complete published-edition reading, despite complete supplied-scan coverage.",
+    "Catalogue synthesizes published excavation, archive, survey and author field records; dependent publication routes are not independent corroboration.",
+    "Dates of cutting, burial use, closure, fill and later conversion may differ. Traditional names and author attributions remain separate.",
+    "No candidate identity, new coordinate conversion, landscape rarity or unseen-prediction claim is made."
+  ]
+}

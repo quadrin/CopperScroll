@@ -1,0 +1,72 @@
+{
+  "method": "pyproj EPSG:2039 to EPSG:4326; haversine R=6371.0088 km",
+  "pyproj_version": "3.8.0",
+  "ramat_rahel": {
+    "lat": 31.73999,
+    "lon": 35.21899
+  },
+  "ein_kerem": {
+    "lat": 31.766728,
+    "lon": 35.161996
+  },
+  "positions": [
+    {
+      "key": "armon_L5_area",
+      "easting": 222244,
+      "northing": 628822,
+      "source_crs": "EPSG:2039",
+      "lat": 31.75202646401771,
+      "lon": 35.23386281412254,
+      "target_crs": "EPSG:4326",
+      "precision_envelope_m": 25,
+      "locator": "Billig 2018 Fig. 2, p. 2*",
+      "note": "Exploratory bounded Area A marker interpolation; exact L5 datum not printed in global grid; conservative 25 m envelope; Plan 3 offsets are not registered",
+      "ramat_rahel_distance_km": 1.9414296970960772,
+      "ein_kerem_distance_km": 6.9885624467050445,
+      "ramat_rahel_1km": "FAIL",
+      "ramat_rahel_2km": "MATCH",
+      "ein_kerem_1km": "FAIL",
+      "ein_kerem_2km": "FAIL",
+      "origin_note": "Fixed lane place points are operational hypotheses, not established ancient Beth ha-Kerem boundaries",
+      "interpolation_anchors": "Rendered viewer page 3 at 144 dpi: easting grid 222125 near x399 and 222250 near x678; northing 629125 near y440 and 628875 near y1003; Area A marker near x665/y1125. Pixel observations are approximate and do not register a surveyed bath coordinate."
+    },
+    {
+      "key": "rogem_site",
+      "easting": 215750,
+      "northing": 629250,
+      "source_crs": "EPSG:2039",
+      "lat": 31.755883778630366,
+      "lon": 35.16532128842402,
+      "target_crs": "EPSG:4326",
+      "precision_envelope_m": 100,
+      "locator": "Greenberg and Cinamon 2011 p. 79",
+      "note": "Site map reference, not Cistern 2 feature point; Figure 2 and Plan 1 locate its terrace; conservative site envelope",
+      "ramat_rahel_distance_km": 5.373690042558048,
+      "ein_kerem_distance_km": 1.2461336593275276,
+      "ramat_rahel_1km": "FAIL",
+      "ramat_rahel_2km": "FAIL",
+      "ein_kerem_1km": "FAIL",
+      "ein_kerem_2km": "MATCH",
+      "origin_note": "Fixed lane place points are operational hypotheses, not established ancient Beth ha-Kerem boundaries"
+    },
+    {
+      "key": "ramat_miqveh_I1",
+      "easting": 217375,
+      "northing": 630125,
+      "source_crs": "EPSG:2039",
+      "lat": 31.76377901479691,
+      "lon": 35.182470946417986,
+      "target_crs": "EPSG:4326",
+      "precision_envelope_m": 10,
+      "locator": "Reem and de Vincenz 2006 p. 39* Plan 5",
+      "note": "Published feature grid; last digits do not establish survey accuracy; conservative 10 m envelope",
+      "ramat_rahel_distance_km": 4.349749832317225,
+      "ein_kerem_distance_km": 1.9632675370955146,
+      "ramat_rahel_1km": "FAIL",
+      "ramat_rahel_2km": "FAIL",
+      "ein_kerem_1km": "FAIL",
+      "ein_kerem_2km": "MATCH",
+      "origin_note": "Fixed lane place points are operational hypotheses, not established ancient Beth ha-Kerem boundaries"
+    }
+  ]
+}

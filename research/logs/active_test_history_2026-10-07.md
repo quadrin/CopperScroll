@@ -159,3 +159,54 @@ Last session (8 October UTC): **partly**: nine exploratory method tools, built i
 ## Status preserved before the regional round — 9 October 2026
 
 Last session (9 October UTC): **partly**: seven exploratory tools from solved-search case studies, built in parallel ([analogues round](logs/analogues_round_2026-10-09.md)). Obtained: every PEF *Quarterly Statement* find report 1869–1914 (none in the strip north of Tell es-Sultan). Only 2 of 22 negative looks in the repository have a detection probability, so they barely move the joint model; ב–כ and ה–ח lead the edition confusions; every requested item now has frozen predictions, and none has arrived; the scroll's hiding places differ from recorded hoards (reporting-sensitive). Registered results are unchanged. Follow-up the same day: three reading notes corrected (entries 4, 17, 48); the Entry 25 aspect rule and IV/17 targets frozen; two exploratory joint-model candidates added in a [v2 run](models/search_effectiveness/README_v2.md).
+
+
+## Superseded status before the parallel follow-up, 12 October 2026
+
+Last session (12 October): **obtained**: the phase-4 rows ([ʿAtiqot, IAA Reports, QDAP, SWP, Guérin, ADAJ](regional/haesi_features/phase4_2026-10-11/README.md)) deduplicated with the IAA inventory ([merged](regional/haesi_features/merged_2026-10-12/README.md): 2,097 site units at 935 sites, including the owner-supplied Manaḥat and Efrata chapters) and folded into the cave, columbarium, tomb, water and hoard lanes as exploratory views. The only new matches are for entry 46: three miqvaʾot within 2 km, led by Armon ha-Naẓiv L5. No registered result changed; nothing bears on the three active questions.
+
+### Pending routes before correction
+
+Sent 8 October UTC / 7 October Los Angeles:
+- USC Libraries Special Collections: 1200-ppi WSRP masters of cuts 21–22 (20 records).
+- Facsimile Editions, London: their 3D scan of the EDF plates at XII 10. Declined 8 October.
+- Garstang Museum, Liverpool: Jericho papers JG/8; pre-camp records and photos north of the tell.
+- Palestine Exploration Fund: Garstang Papers 1930–36; pre-1948 photos of Jericho.
+- Lorenzo Nigro, Sapienza: records of the ground north of Tell es-Sultan. Replied: karstic cavities are common there; whether any dates to the scroll's period is the question, and he will check. Meeting proposed for the Jerusalem visit, 18–24 October.
+- ÉBAF, via J.-B. Humbert: to see ÉBAF's EDF copy and the EDF X-rays of segments 21–22 during the visit. 8 October: visit passed to Fr. Cyrille Jalabert, with gift copies of Qumran vols I–II.
+- Carla Benelli, Mosaic Centre Jericho: replied 7 October. Osama Hamdan has died; she will scan Meinardus 1965–66 free of charge in mid-October. Archive visit requested; 8 October: welcome except Friday and Thursday afternoon, with notice.
+
+Earlier, no reply recorded unless stated:
+- Manchester Museum: study scans of C.10a.1/C.10.1 (5 October, rerouted after a bounce); Allegro strips C.21–23, cutting photos and the 1955 film (7 October, same thread). 8 October: checking with the Allegro estate; referred us to Joan Taylor.
+- Joan Taylor, King's College London (DQCAAS orders): Allegro scans C.21A.1–4, C.22A.1–10, C.22.1–2, C.21-23.1 and any film of segments 21–22 (8 October).
+- University of Manchester Library: file GB 133 TPA/1/132 and Wright Baker records of the cutting (7 October).
+- IAA Archive, for the Judean Desert cave survey: cave records for the Qumran cliffs, Jericho escarpment and Wadi Qelt (7 October).
+- Bruce Zuckerman, USC: the original WSRP Figure 4.6 composite and its component map (5 October).
+- Nahshon Szanton, Tel Aviv University: the Siloam main-side L103 junction section (6 October).
+- Rachel Bar-Nathan and Roi Porat: A(C)94 wall-junction drawing and level register (6 October), on referral from Ruhama Bonfil, whose unit holds none.
+- Archaeology Unit, Staff Officer for Archaeology: the Wadi Nuʿeima inspection file from ESI 5 pp. 110–111 (6 October).
+- P. Reeder and H. Jol: 2002 Qumran aqueduct survey and GPR records (29 September).
+- J. Høgenhaven: independent reading of X 15, VII 11, IX 7 and XII 10 (29 September).
+- 9 October: the owner registered for EAMENA (access level pending); a MEGA-Jordan access request to the Department of Antiquities of Jordan is drafted in Gmail for the owner to send. Either one starts the approved [count east of the Jordan](preregistration/kohlit_rarity_r3_2026-10-09.md) (not run).
+
+
+### Next evidence before correction
+
+An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or Manchester C.21–23 by reply, or the EDF copy and X-rays at ÉBAF during the 18–24 October visit. Then the Meinardus scan expected mid-October.
+
+
+## Superseded status before whole-book reading, 12 October 2026
+
+Last session (12 October): **obtained**: a separate [manual-check shortlist](regional/water_systems/manual_review_2026-10-12/README.md), [native entry-46 bath phases](assessments/entry46_baths_2026-10-12/README.md), and original [Beth-Horon](sources/benjamin1993_targeted_2026-10-12/README.md), [Jerusalem tomb](sources/kloner_zissu2003_targeted_2026-10-12/README.md) and [Herodium pool](sources/netzer1981_targeted_2026-10-12/README.md) records. The audit distinguishes bath access from later cistern phases and source-attributed supply from an observed inlet. [Archive routes](sources/kohlit_incoming_2026-10-12/ACCESS_EVIDENCE.md) and the [Drive index](sources/drive_index.md) are corrected.
+
+## 12 October 2026: before post-reading application
+
+Last session (12 October): **partly**: the [whole-book source records](sources/full_reads_2026-10-12/README.md) now contain sequential reading of the available legible text and ordinary imagery, with missing edition pages and damaged map labels retained. Dalman plate25 fine detail remains reserved; its caption/provenance intake was [declared before detail](assessments/kohlit_chain/registrations/dalman1995-plate25.declaration.json), and the source record corrects coarse-raster dimensions and slide-ID inference.
+
+## 12 October 2026: before compressed Herodium inspection
+
+Last session (12 October): **partly**: applied the [whole-book phase and source-lineage joins](sources/full_reads_2026-10-12/README.md#applied-follow-up-12-october-2026), natively checked entry 46 edition alternatives, and ran the [pool-reading function/phase review](regional/water_systems/entry46_phase_review_2026-10-12/README.md). Rogem L114 dates nearby soil, not its stairs. Sion 2002 and exact Herodium label sequences remain uninspected; the newly indexed Herodium PDF exceeds the raw-reader limit. Dalman plate25 fine detail stays reserved.
+
+## 12 October 2026: before original Herodium extract inspection
+
+Last session (12 October): **partly**: the [compressed Herodium attachment](sources/full_reads_2026-10-12/storage_language_audit/README.md#compressed-attachment-reinspection-12-october-2026) permits native note III.13 verification: jar-salt chemistry did not identify the stored liquid. Ill. 99 and published translations are only coarsely legible because viewer 79/printed 71 is363×525 pixels. Exact damaged labels still need original viewers 78–79/printed 70–71; earlier large-file/DjVu blockers are access history.

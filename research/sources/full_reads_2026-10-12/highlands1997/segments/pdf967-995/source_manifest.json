@@ -1,0 +1,66 @@
+{
+  "source_id": "highlands1997",
+  "citation": "Finkelstein, I., Lederman, Z., and Bunimovitz, S. 1997. Highlands of Many Cultures: The Southern Samaria Survey, The Sites. Monograph Series 14. Tel Aviv University, vols I–II.",
+  "stable_url": "https://drive.google.com/file/d/1rpzaPWc8DywBYpTIYUVaEcHfVRwd-AyM/view",
+  "publisher_access_route": "https://tau.alma.exlibrisgroup.com/view/UniversalViewer/972TAU_INST/12437174030004146",
+  "local_input": "../../inputs/highlands1997.pdf",
+  "bytes": 92450315,
+  "sha256": "2074020593f986fdc2189448f74c3037b577fb0093bb35b658eadcf47085c16c",
+  "pdf_pages": 995,
+  "reading_date": "2026-10-12",
+  "segment": {
+    "first_pdf_page": 967,
+    "last_pdf_page": 995,
+    "supplied_pages_reviewed": 29,
+    "pages_without_source_label_gaps": 28,
+    "source_limitation_pages": [
+      995
+    ],
+    "status": "complete reading of available supplied content; source label gaps on PDF995 retained",
+    "first_unviewed_page_in_segment": null
+  },
+  "pagination_verified": {
+    "967–976": "932–941: period-index tables",
+    "977–994": "942–959: geographical-unit and period maps",
+    "995": "Unnumbered colour survey-grid map; no printed-page numeral"
+  },
+  "read_method": "Every supplied page read sequentially. All index rows checked against individually viewed native pages. All map titles, legends, labels, points, coordinates and notes inspected. Private native crops clarified crowded labels on PDF 986/989; full PDF 995 plus four overlapping native quadrants inspected. Empty PDF 995 extraction was not accepted as blank. Missing image pixels at source seams were left unresolved.",
+  "counts": {
+    "page_coverage": 29,
+    "observations": 20,
+    "figure_and_table_access_records": 31,
+    "period_index_table_records": 12,
+    "geographical_unit_map_records": 1,
+    "period_distribution_map_records": 17,
+    "supplementary_grid_map_records": 1
+  },
+  "previous_exposure": "Same reader completed PDF501–750 separately. This final segment was assigned after that handoff. No ACTIVE_TEST or prediction/scoring files were read; subsequent record audit of other books disclosed prior exposure metadata only. No blind or holdout certification claimed.",
+  "claim_scope": "Descriptive/exploratory full reading of available assigned source content; no site-identification result, regional rarity, unused observation or holdout certification.",
+  "rights": "Publication copyright 1997; reproduction permission not established. Input PDF, complete extracted text, page renders and crops remain private ignored inspection inputs. Deliverables contain original notes, hashes and retrieval locators only.",
+  "supplementary_map_provenance": {
+    "pdf_page": 995,
+    "printed_page": null,
+    "title": "The Southern Samaria Survey Grid",
+    "credited_creator": "Edtal N. Levy",
+    "credited_affiliation": "Department of Geography, Tel-Aviv University",
+    "creation_date": null,
+    "edition_relationship": "Not stated on leaf; distinct unnumbered colour map after numbered page 959",
+    "source_pixel_dimensions": "3224x2281",
+    "source_limitation": "White vertical/horizontal seams interrupt portions of some names and the title. Only surviving characters inspected; exact interrupted label text remains unresolved."
+  },
+  "protected_images": "No CS XII 8–12/segments 21–22 manuscript image or Tell-es-Sultan northstrip target encountered. No Kh. Almit or Wadi Qelt detail appeared in the assigned pages.",
+  "limitations": [
+    "Period indexes and maps reorganize catalogue assignments and are not an independent observation dataset.",
+    "Map notes preserve excluded sites and possible broader/transitional assignments; no regional totals inferred.",
+    "The map hectare ranges must not be assumed to equal numeric index size codes without the separate key.",
+    "PDF995 is not blank and has a separate creator credit; some source labels are interrupted by actual white image seams.",
+    "No date attached to an individual cistern, cave, press or wall follows from map inclusion."
+  ],
+  "files": [
+    "README.md",
+    "source_manifest.json",
+    "page_coverage.csv",
+    "observations.csv",
+    "figures_access.csv"
+  ]
+}

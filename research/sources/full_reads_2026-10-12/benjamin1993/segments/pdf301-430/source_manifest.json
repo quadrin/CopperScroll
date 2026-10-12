@@ -1,0 +1,47 @@
+{
+  "title": "Archaeological Survey of the Hill Country of Benjamin",
+  "editors": [
+    "Israel Finkelstein",
+    "Yitzhak Magen"
+  ],
+  "year": 1993,
+  "source_url": "https://drive.google.com/file/d/1evqJT-QX-3HMFqr-ON069yuLnyp1Te_8/view",
+  "local_source_read_only": "/workspace/scratch/c866a82ef703/inputs/benjamin1993.pdf",
+  "bytes": 236490774,
+  "pdf_pages": 562,
+  "sha256": "074a689271ad137526c8b040a5fed1b2c8ba39204f4dfd80082576d610929b08",
+  "rights": "All rights reserved, Israel Antiquities Authority, 1993; reproduction permission not established",
+  "scope": "Completed assigned sequential segment PDF 301–430 only. Primary reader owns PDF 1–300 and 431–562.",
+  "source_pdf_or_scan_archived": false,
+  "full_read_status": "complete",
+  "read_pages": 130,
+  "unread_pages": 0,
+  "coverage_ledger": "page_coverage.csv",
+  "pagination_caveat": "Native labels verified per page: PDF301–359 printed281–339; PDF360 is an unprinted blank verso; PDF361–430 printed341–410. The blank verso has no printed340 label and no text; it is not treated as missing content.",
+  "previous_exposure": "Reader exposed to ACTIVE_TEST candidate statements during prior Hirschfeld resume; all new regional facts exploratory/unblinded, with no scoring. Previous targeted source exposure retained by primary owner.",
+  "missing_printed_pages": [
+    {
+      "printed_pages": "180–181",
+      "gap_between_viewer_pages": "201–202",
+      "verified": "fresh native PDF page202 re-render shows printed182 after viewer201 printed179",
+      "scope": "Site208 continuation and sites209–213 absent at this location",
+      "status": "missing_from_supplied_scan; not_read"
+    }
+  ],
+  "assigned_pdf_pages": [
+    301,
+    430
+  ],
+  "source_sha256_verified": "074a689271ad137526c8b040a5fed1b2c8ba39204f4dfd80082576d610929b08",
+  "completed_on": "2026-10-12",
+  "figure_records": 45,
+  "observation_records": 54,
+  "unresolved_native_pages": [],
+  "known_limits": [
+    "Halftone colour moire limits fine interpretation of photographs; captions, prose, plans and overview images inspected.",
+    "Printed central-pit dimension at PDF388/printed368 is internally inconsistent and retained as unresolved measurement anomaly.",
+    "All new observations exploratory/unblinded after prior ACTIVE_TEST exposure; no prediction scoring."
+  ],
+  "assigned_exposure_range": "2026-10-12: PDF301–430, observations B93-S301-0001–0054, exploratory/unblinded",
+  "missing_printed_pages_scope": "Known source scan gap printed180–181 belongs to primary reader PDF1–300, outside this completed segment; retained from source manifest for ancestry only."
+}

@@ -356,3 +356,14 @@ python3 -I -m unittest discover -s research/regional/water_systems/tests -v
 - **Entry 29 note (no reopening):** the best regional units dated in the window lack only the "northern" clause (Lower Herodium great pool, Qumran L71, Birket Musa).
 - **Asset archive:** consider archiving the Mazar, Damati and Hirschfeld figures listed above under `research/assets/plans/aqueducts1989/`, with atlas mirrors and manifests. They fall under the owner's existing authorization for this volume.
 - No change to ACTIVE_TEST, the outcome ledger or PROGRESS_METRICS: this lane changes no outcome.
+
+
+## Manual checks and native source audit, 12 October 2026
+
+A separate [manual-review overlay](manual_review_2026-10-12/README.md) applies the existing check ledgers to the earlier coding and supplies a [source-linked follow-up shortlist](manual_review_2026-10-12/SHORTLIST.md). The new unconfirmed word hits alter no date-eligible complete match; older source/feature/date attribution checks do alter some branches. Those are evidence corrections, with unknown support distinct from physical contradiction.
+
+The [entry-46 original-source audit](../../assessments/entry46_baths_2026-10-12/README.md) separates Armon L5 construction and fill, Rogem’s tentative stepped phase and later staircase removal, and Ramat Sharet’s medieval cistern conversion. Its earlier bath interpretation needs its own textual/type argument. The [Netzer 1981 audit](../../sources/netzer1981_targeted_2026-10-12/README.md) finds smaller pools farther north than B101 within the source-defined Herodium complex and explicitly unlocated inlet evidence. These native-source deductions are separately documented exploratory assessments, not silent recodings of the prior tables.
+
+## Entry 46: applied function and phase review — 12 October 2026
+
+The [pool-reading phase review](entry46_phase_review_2026-10-12/README.md) adds consistent contained-water and narrower storage/service gates to the retained receptacle inventory, including ritual-bath descriptions previously omitted by the English keyword gate. Source labels supply only a reported-form screen; unverified water use and contemporaneity remain unknown. Armon, the tentative Rogem bath and the original Ramat bath retain conditional 2 km function/access subsets; construction, site association and numerical/leftward joins remain unresolved. Original stair removal/blockage fails only that origin model; other access remains unknown. The deep-pit reading is outside this water screen. Generated source/phase outputs are exploratory and supply no rarity denominator.

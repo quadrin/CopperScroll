@@ -1,0 +1,42 @@
+# Netzer 1981: Lower Herodium pool controls
+
+12 October 2026 UTC. **Obtained:** the native pool-complex plan and sections, northern bath plans, and their construction/fill descriptions. The report explicitly leaves the great pool's inlet unlocated. This is exploratory source mining, with no reserved observation or entry-29 geometry rerun.
+
+Source: Ehud Netzer, *Greater Herodium*, Qedem 13 (Jerusalem, 1981), with contributions by Rachel Bar-Nathan and others. [Owner's DjVu](https://drive.google.com/file/d/1jsSwhKMFW_SLkQcfCKPmQOsxXQQcs53s/view). File: 35,672,417 bytes; SHA-256 `285093b73e70a11183b6ebd0aacee2392928004d8f3ff4364c69895294d616bc`; 154 viewer pages. [Publisher route](https://www.israelexplorationsociety.com/product-page/greater-herodium). Original file, OCR and private page renders remain outside the repository. [Evidence and scope](evidence.json); [figure retrieval/reuse manifest](figure_manifest.csv).
+
+## Target and scope
+
+The named gap was an original plan or section relating B101, its pool walls/floor and the supplying conduit, plus the position of other pools in the same source-defined Herodium complex. The existing water lane records B101 as conduit/great/four-sided MATCH and northern UNKNOWN (`LIT-NET01-LH-POOL`, group `G-LHERODIUM-POOL`). The new source was selected after those records were exposed. All deductions here are exploratory. The older closed entry-29 result stays under its own [reopening condition](../../ACTIVE_TEST.md): a phase-controlled aperture, named wall face and contemporaneous floor.
+
+Native page images inspected: printed pp. 11–15, 23, 26–28, 46–48, 52–54 and 78, each at 220 dpi except the initial p. 11 preview at 100 dpi. For these inspected pages only, viewer page = printed page + 8. Table of contents and context pp. 4, 10, 16–22, 24–25, 29, 45, 51 were read as embedded OCR, without claiming image inspection. No whole-book reading or native ceramic-plate inspection occurred. DjVuLibre 3.5.28 tools and dependencies were extracted into scratch; no system installation was needed. An initial scratch prefix failed the post-download size check. A fresh raw fetch was saved to a unique `.part` path and atomically renamed after its byte count and hash validated; every inspected page was regenerated from that full file and matched its earlier render byte for byte.
+
+## What the original report supplies
+
+- **Great pool B101, pp. 11–13, Ills. 9–12:** inner dimensions 69.2 × 45.5 m.; rectangular walls and an integrated central island B102. Wall W1 is north, W2 east, W3 south, W4 west on Ill. 9. The report expressly states that the water entrance and its connection with the Urtas aqueduct were not discovered (p. 11). The p. 53 water-supply account is the excavator's synthesis, not an observed inlet contact. This preserves the lane's permissive source-attributed conduit MATCH while leaving the surveyed aperture geometry UNKNOWN.
+- **Observed floors and disturbance, pp. 12–15, Ills. 12–18:** three soundings reached the pool floor. At B5 a later wall, probably Byzantine, masks the ancient west-wall face; the upper W4 courses have shifted about 25 cm east. At B31 both the original floor and southern W3 face were exposed; the floor and lower wall carry continuous rounded hydraulic plaster. B49 exposed the upper southeast stairway, followed by an incompletely excavated ramp. These observations supply local contacts; none supplies the aperture required by entry 29. Ill. 11 is explicitly a restored schematic section, with reconstructed buildings and garden elements.
+- **Northern wing pools, pp. 46–48, Ills. 75 and 77–79:** C11/2 is a 3.6 × 2.0 m., 2.0 m. deep stepped pool, interpreted as the frigidarium; C35 is a 3.5 × 1.4 m., 2.7 m. deep pool adjacent on its south. A 40 cm layer of broken Herodian vessels was found on C35's floor. That is a use/fill context, not a sealed construction date. A nearby covered channel may have served both pools; its continuation is missing. The plan and prose place this bath in the northern wing north of the main pool complex. Do not transfer its channel to B101.
+- **Service-building water installations, pp. 23, 26–28, Ills. 36, 44–45:** the courtyard B46 has a 1.1 × 1.1 m. pool, probably a settling tank, with a directly described incoming channel and two outgoing channels. Excavation reached 2 m. without its bottom. B58 contains a 1.3 × 1.0 m. small pool receiving a covered channel. B58 and at least parts of its channel were built above fill over the destroyed B52 floor (+658.45 m.). The B46 system is probably original; B40/B58 are later. Supply of either from Urtas is inferred; the nearest known main-channel segment was about 200 m. northwest. These are distinct installations and phases.
+- **Dating, pp. 54 and 78:** Bar-Nathan assigns the eastern-plateau fill to the original Herodian construction phase; the service-building material is explicitly divided into lower-floor and upper-floor/dump contexts. Netzer and Bar-Nathan's synthesis proposes construction in 23–15 BCE from architectural unity and site finds. It does not date a particular B101 aperture or prove that all later channels functioned simultaneously. The exact lower-site occupation/use sequence into the revolts remains incompletely known.
+
+## Effect under the existing water-lane rules
+
+For the **source-defined Greater Herodium complex**, B101 has conduit MATCH (excavator attribution), great MATCH (large/main reservoir), four sides MATCH (native plan and dimensions), but **northern FAIL**: the source places other pools in the northern wing north of it. This changes the old UNKNOWN only in this proposed exploratory source audit. The frozen headline and earlier IAA/phase-4 files were not edited. The smaller pools also fail great under the same site-complex size comparison. No full entry-29 match follows.
+
+This is a lane-level relative-position result. Exact contemporaneity of every water installation is not established; B58 has a demonstrated later construction relation. A stricter single-phase hydraulic comparison must retain UNKNOWN where the necessary phase contacts are absent. Membership of C11/2 in a Roman bath and the label frigidarium are excavator interpretation; no ritual-bath classification is introduced.
+
+The site's greater pool is a control for the broad conduit–great–four-sided subset, not a new Jericho candidate. Under the retained place branches Q-Jericho, Q-Cypros and Q-Kidron, Herodium still fails the place gate; Q-any adds no place gate. No distances in cubits, aperture origin, bearing measurements or excavation-based deposit exclusion were tested.
+
+## Plan orientation, provenance and reuse
+
+Ill. 9 (p. 11) and Ill. 75 (p. 46) place north up; Ill. 77 (p. 48) places north right; Ill. 85 (p. 52) places north **down**. Use their printed arrows, not page orientation. The plans carry metre scale bars, and local floor/wall values use the source's shortened elevation convention (p. 4; hundreds omitted). Ills. 12, 15 and 16 are local excavation plans/sections, whereas Ills. 11 and 47 are explicitly reconstructions. No geographic registration was performed.
+
+The source's preface describes continuity with Netzer's 1977 dissertation; the excavation report concerns the 1972, 1973 and 1978 Lower Herodium seasons, with selected 1980 details. Later Netzer summaries, reused field plans and the expedition website share original-observation ancestry and provide no independent confirmation. Ceramic dates are contextual assessments, not additional excavations.
+
+The title page's copyright statement names the Hebrew University Institute of Archaeology. No public reproduction licence was established. The manifest therefore records each encountered figure, page-render hash, scale/north information and its retrieval status; no source page or figure was uploaded to GitHub. Original captions, scales and arrows remain intact in the privately rendered full pages. A later permission decision can use the manifest to retrieve the exact item.
+
+**Obtained:** native pool and bath plans resolve the exploratory northern clause for B101 and distinguish local hydraulic phases; the exact pool inlet/phase contact needed to reopen entry 29 was not obtained.
+
+
+### Later sequential reading
+
+The later [whole-scan reading record](../full_reads_2026-10-12/netzer1981/README.md) documents the remaining available book pages, all ordinary figures and explicit physical-edition gaps. This earlier targeted record retains its original question, exposure and inference scope.

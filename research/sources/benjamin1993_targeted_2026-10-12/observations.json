@@ -1,0 +1,104 @@
+{
+  "extraction_date_utc": "2026-10-12",
+  "mode": "exploratory",
+  "scope": "Original site 143 and explicit site 28 cross-reference; local adjacent illustration check",
+  "source": {
+    "title": "Archaeological Survey of the Hill Country of Benjamin",
+    "editors": ["Israel Finkelstein", "Yitzhak Magen"],
+    "year": 1993,
+    "isbn": "965-406-007-8",
+    "drive_id": "1evqJT-QX-3HMFqr-ON069yuLnyp1Te_8",
+    "bytes": 236490774,
+    "pdf_pages": 562,
+    "sha256": "074a689271ad137526c8b040a5fed1b2c8ba39204f4dfd80082576d610929b08",
+    "rights": "All rights reserved; IAA 1993, verified at viewer pages 24 and 555",
+    "inspection": "Direct page-image reading; no searchable source text layer",
+    "public_source_images_archived": false
+  },
+  "site": {
+    "original_number": 143,
+    "name_printed": "Beit 'Ur el-Fauqa",
+    "cross_reference": 28,
+    "code_printed": "16-14/03/1",
+    "reference_type": "settlement/site anchor, not individual feature",
+    "israel_grid_reference_printed": "16085 14360",
+    "utm_reference_printed": "69995 52990",
+    "datum": null,
+    "utm_zone": null,
+    "coordinate_conversion_performed": false,
+    "area_dunams": 18,
+    "elevation_m": 600,
+    "published_distance_to_perennial_water_m": 400,
+    "water_point_and_path_convention": null,
+    "printed_hebrew_page": 142,
+    "hebrew_viewer_page_1based": 164,
+    "printed_english_page": "28*",
+    "english_viewer_page_1based": 529,
+    "observation_ancestry": "Original survey entry; IAA online record 9199 derives from it. No independent tomb corroboration."
+  },
+  "features": [
+    {
+      "id": "BEN1993-143-west-tomb-group",
+      "class": "rock-cut bench tomb group",
+      "count": 4,
+      "relation": "west of village core, on slope of spur",
+      "repository": "present in one unidentified member",
+      "relation_support": "published Hebrew description, p.142",
+      "entrance_bearing": null,
+      "individual_coordinates": null,
+      "measured_plan_obtained": false,
+      "shaft_depth": null,
+      "channel_relationship": null,
+      "feature_date": null,
+      "missing_data_meaning": "not supplied by this entry; no claim that a channel or shaft was absent in the field"
+    },
+    {
+      "id": "BEN1993-143-east-reservoir",
+      "class": "roofed plastered reservoir",
+      "relation": "on saddle east of village core",
+      "length_m": 16.5,
+      "width_m": null,
+      "width_source_status": "author says unclear",
+      "foundation_date_label": "ancient",
+      "construction_period": null,
+      "sealed_dating_context": null,
+      "tomb_relationship": null,
+      "relation_support": "published Hebrew description, p.142"
+    },
+    {
+      "id": "BEN1993-143-south-caves",
+      "class": "caves",
+      "relation": "southern edge of village core",
+      "count": null,
+      "function": "authors suggest some may have served for burial; one contains an olive press",
+      "individual_coordinates": null,
+      "feature_date": null
+    }
+  ],
+  "settlement_ceramics": {
+    "association": "site survey collection, not stated as a tomb/reservoir context",
+    "total_sherds": 322,
+    "categories_percent": {
+      "Iron_II": 46,
+      "Hellenistic": 12,
+      "Roman": 6,
+      "Byzantine": 9,
+      "Early_Islamic_Medieval_Ottoman_combined": 27
+    },
+    "feature_dating_use": "none"
+  },
+  "illustration_check": {
+    "hebrew_pages_inspected": [141, 142, 143, 144],
+    "site_143_illustration_in_these_pages": false,
+    "site_28_hebrew_page": 49,
+    "site_28_viewer_page_1based": 71,
+    "site_28_figure": "unnumbered aerial view of village core",
+    "site_28_figure_is_tomb_plan": false,
+    "whole_volume_plan_absence_claim": false
+  },
+  "outcome": "obtained",
+  "change": "Original text and local illustration-access gap closed; geometry/date fields remain unknown in the source entry",
+  "registered_test_reopened": false,
+  "candidate_score_changed": false,
+  "unseen_prediction_used": false
+}

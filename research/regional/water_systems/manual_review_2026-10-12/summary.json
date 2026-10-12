@@ -1,0 +1,54 @@
+{
+  "phase4_unconfirmed_only": {
+    "applied_row_clause_pairs": 14,
+    "branch_scores_changed": 60,
+    "merged_branch_changes": 7
+  },
+  "phase4_checks_only": {
+    "applied_row_clause_pairs": 20,
+    "branch_scores_changed": 76,
+    "merged_branch_changes": 8
+  },
+  "verified": {
+    "applied_row_clause_pairs": 125,
+    "branch_scores_changed": 423,
+    "merged_branch_changes": 40
+  },
+  "retain_partial": {
+    "applied_row_clause_pairs": 111,
+    "branch_scores_changed": 371,
+    "merged_branch_changes": 39
+  },
+  "input_sha256": {
+    "research/regional/water_systems/posthoc_checks.csv": "520997d104a3ee16aa814448b1a5b303edcd534b2b5b63cc6d6e23d1dc5ace40",
+    "research/regional/water_systems/iaa_posthoc_checks.csv": "0058a214b67b0e0944eb0c64422e399c8bd209bd8a4e73b6418fe99f23bd133e",
+    "research/regional/water_systems/phase4_posthoc_checks.csv": "a23e02a4acc6b0c9923f21febc6b0128cb637aec72c4e6f79a576cdf73fe47f3",
+    "research/regional/water_systems/phase4_survey_rows.csv": "47840f5cda1b6697dff0e5ea51e864747c47de0ee1845d501a8e0f8d5b6b7e6f",
+    "research/regional/water_systems/phase4_counts.csv": "0ee24d1270a0e2981ab0a9bedfd692cf131b50f311423610512352329d767804",
+    "research/regional/water_systems/survey_rows.csv": "9330e8e4a69fc6ebcf236f4bac9886f6b2db24a2b391bf0bb42296f69827f08f",
+    "research/regional/water_systems/site_points.csv": "e89cc0f7d598159ec2e3ff2062c731498f0261b1de1fefdb8958561f9cef6bd9",
+    "research/regional/water_systems/sources_read.csv": "aac777680163aad6fab2a8a4605b95a4c2fc65130d0684373c7b877da2f06d9e",
+    "research/regional/water_systems/manual_review_2026-10-12/decisions.csv": "5611632f180a97f6e1872347e5e2456a0814823efc8968b76eff413b28da38e3",
+    "research/regional/water_systems/scripts/score.py": "daa764011ef3d1bd15a2ca695384c78d9827c12b1ba2ce056bacf1b7ff63b819",
+    "research/regional/water_systems/scripts/build_water.py": "df4469577ff7b96287b202236245f53b194a67ba3ed52c213f7014397ef57a40",
+    "research/regional/water_systems/scripts/iaa_view.py": "927b4c5754c744800dd8d54af195a96c440d0e7ee566a73841520f710f3f4a0e",
+    "research/regional/water_systems/scripts/phase4_view.py": "f137cb4799e4ba4be4825fb4e967179b6131608fa4237fed9065c3dcbcbab92c",
+    "research/regional/water_systems/scripts/literature_data.py": "e819bbf5ebeb45acbd3a7c1415dec798850261e82fcdccd9045c9fd86931daad",
+    "research/regional/water_systems/scripts/literature_data_2.py": "2939f5b2720423b7a14c93505c58b75a4bdf710871c7c63e4168493d6373c47e",
+    "research/regional/water_systems/scripts/common.py": "bd47c94c383ffb194fca430164fc5ae351bf18f39097c66bfa2aede508ee85e4",
+    "research/regional/water_systems/manual_review_2026-10-12/PLAN.md": "91191eff0d8207e0e1172dab8058ee6ec04b9f1a8f992c9d1938795392559640",
+    "research/regional/water_systems/manual_review_2026-10-12/rebuild.py": "e7f7e409a481a7fb35621b13dd7a5e3925466ede6032ff1b0f48050c8b5987e0",
+    "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v2/places_v2.csv": "315474bd3be8cce3e1776e119417e2444edd99e3f028c7413185302fc7663683",
+    "registration/christmas_hyrcania_primary_features_2026-09-30.json": "ba4049e71fccfa8dae43f1af64d86f6b98a11962c62a3c4349b5ff557b5276ac",
+    "registration/magen2018_extracted.md": "ab678e7fad966134955ed75c7a5ef14f1b51d39ad2d57a69bc01cfab50b3d216",
+    "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.csv": "bca47cf05fc4206df87044a1b5c9b5c3f5603a21575dffc376c479ab6b31feca",
+    "research/measurements/cycle15/siloam_bathing.md": "eea572e581858e6df345aabd0296a4ef3932c736242e433536adcf6c3c2dc330",
+    "research/sites/site_identification_review.md": "87940e02cd86c2f04657df99b1f166c3d86646c81fd7e59a43c04751dbce1391",
+    "research/regional/haesi_features/merged_2026-10-12/features_all.csv": "23a23214ed475b5c3a3a213f29d4094518acbdf1b187cffd7c78949a635eae38",
+    "research/regional/haesi_features/merged_2026-10-12/report_groups.csv": "e3121121f77a4cdc85aca2158839d66372c785bde7a53746ece5861bb2d1b47d",
+    "research/regional/haesi_features/merged_2026-10-12/sites.csv": "749dfca8fed2473a117cb15fe1172da94206ca4779465133d460dffdc77f2626"
+  },
+  "note": "Separate exploratory review overlay; original lane files remain byte-identical.",
+  "date_rule_note": "A failed date-only eligibility rule is counted in f_fail; it is not a source contradiction.",
+  "inspection_scope": "Existing coded rows and manual review ledgers; no new source PDFs or reserved observations opened."
+}
