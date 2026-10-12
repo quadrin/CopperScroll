@@ -1,0 +1,33 @@
+{
+ "report_id": "QDAP14-121-citadel-jerusalem",
+ "volume": "14", "issue": "", "year": "1950",
+ "ia_item": "quarterly-department-of-antiquities-palestine_1950_14", "span": "183.0-280.99",
+ "pages": "121-190", "title": "The Citadel, Jerusalem. A Summary of Work since 1934", "author": "C. N. Johns",
+ "unit_kind": "article", "screen": "S-G", "screen_term": "jerusalem",
+ "tier": "T2", "map_ref": "", "name_zone": "Z4_JERUSALEM_HILLS", "name_place": "",
+ "location_note": "The Citadel (el-Qal'a) by the Jaffa Gate, Jerusalem; no map reference; placed by name.",
+ "excavated_or_surveyed": "excavated",
+ "text_sha256": "4a31b61a794e75711d292ba61ae99b3fc77f15c37a82b464adb2dd797e468aa7", "text_chars": 214392,
+ "reading": "pp. 121-123 in full; then every paragraph with an eligible-class keyword, with the drain, stepped tank, quarry pit, burial and cistern passages read in full (pp. 138-139, 147, 152-153, 158, 162, 175, 179, 185, 188-190)",
+ "notes": "Final summary of the Citadel excavations 1934-48: first to fourth builds of the city wall and towers (Early Hellenistic or Maccabean to Herodian), Roman legionary cantonment after AD 70, Byzantine-Islamic deposits, Crusader, Mamluk and Turkish castle. Walls and towers not eligible. A dry-stone corbelled chamber with access shaft (p. 147), function not given, is not coded. Cisterns of Ophel and Bishop Gobat School are cited comparisons, not coded. The full title is taken from the article heading as printed in the issue; the contents line reads 'The Citadel, Jerusalem'.",
+ "features": [
+  {"type": "channel_aqueduct", "site": "legionary building inside the city-wall elbow", "subtype": "piped drain of a legionary building (Tenth Legion stamped pipes)", "n": "1",
+   "period": "work of the Tenth Legion settling in the ruins of Herod's palace, AD 70-1 (excavator)", "window": "yes",
+   "quote": "the building can be dated from the piped drain"},
+  {"type": "channel_aqueduct", "site": "north-west sounding at the ancient tower", "subtype": "drain in a later cutting", "n": "1",
+   "period": "medieval", "window": "no",
+   "quote": "for a medieval drain crossing the west corner of the sounding"},
+  {"type": "ritual_bath", "site": "in front of the south curtain near G", "subtype": "small stepped tank (excavator's word 'tank'; no ritual function stated)", "n": "1",
+   "period": "'intermediate period'; fell out of use in the Late Roman or Early Byzantine period", "window": "unknown",
+   "quote": "a small stepped tank of an intermediate period remains in front"},
+  {"type": "rockcut_installation", "site": "below the ancient tower base", "subtype": "deep quarry pit under deposits earlier than the tower", "n": "1",
+   "period": "earlier than the tower (first build); not otherwise dated", "window": "unknown",
+   "quote": "over a quarry pit which was so deep that the builders"},
+  {"type": "cistern", "site": "Crusader vaulted quarters, towers and courtyard", "subtype": "cisterns of the Crusader and later castle, incl. a large cross-vaulted cistern with an embossed cross on its plaster", "n": "5",
+   "period": "Crusader to Turkish", "window": "no",
+   "quote": "it is wholly occupied by a large cistern, cross-vaulted in four bays"},
+  {"type": "tomb_burial_cave", "site": "against the north-east curtain", "subtype": "pilgrims' graves with scallop shells and crosses", "n": "",
+   "period": "early thirteenth century (coins)", "window": "no",
+   "quote": "Crusader burials with pilgrim scallop-shells"}
+ ]
+}

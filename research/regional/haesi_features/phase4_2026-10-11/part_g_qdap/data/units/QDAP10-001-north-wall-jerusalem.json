@@ -1,0 +1,27 @@
+{
+ "report_id": "QDAP10-001-north-wall-jerusalem",
+ "volume": "10", "issue": "1", "year": "1940",
+ "ia_item": "quarterly-department-of-antiquities-palestine_1940_10_1", "span": "3.0-76.99",
+ "pages": "1-50", "title": "Excavations against the North Wall of Jerusalem, 1937-8", "author": "R. W. Hamilton",
+ "unit_kind": "article", "screen": "S-G", "screen_term": "jerusalem",
+ "tier": "T2", "map_ref": "", "name_zone": "Z4_JERUSALEM_HILLS", "name_place": "",
+ "location_note": "Soundings A-E at the Damascus Gate and along the north wall of the Old City, Jerusalem; no map reference; placed by name.",
+ "excavated_or_surveyed": "excavated",
+ "text_sha256": "1a8c3246b263095abfa47301731ba76dc1aee3a2d9af56be54a394650d6ca589", "text_chars": 120740,
+ "reading": "pp. 1-4 in full; then eligible-class keyword paragraphs, with the cistern (pp. 21-26) and aqueduct (pp. 38-41, 50-53) sections read in full",
+ "notes": "Soundings against the Damascus Gate towers and the north wall 1937-8: wall phases from Aelia Capitolina (or later) to the 6th-7th c. and Islamic work; pottery and coin tables. A circular rubble-lined cesspit against the tower is not an eligible class (not coded). Drain-pipe fragments are finds, not features. The Fatalis tombstone is re-used in the aqueduct inspection chamber (not a burial feature).",
+ "features": [
+  {"type": "cistern", "site": "Damascus Gate, east and west of the gate (soundings D and E)", "subtype": "two vaulted, plastered cisterns in the angles between towers and curtain; west cistern possibly by the builders of the tower revetment", "n": "2",
+   "period": "not dated (incorporate older masonry; manhole heightened in Turkish times)", "window": "unknown",
+   "quote": "the two cisterns which occupy the angles between the towers"},
+  {"type": "channel_aqueduct", "site": "sounding C, under the city wall", "subtype": "rock-cut, plastered and slab-covered aqueduct with inspection chamber and manholes", "n": "1",
+   "period": "earlier than soil B (contents not later than 1st-2nd c. AD); in use and repaired until the 3rd or early 4th c. AD", "window": "unknown",
+   "quote": "This is an aqueduct, which was found running from north to south"},
+  {"type": "channel_aqueduct", "site": "sounding A, north face of the west tower", "subtype": "modern flood drain", "n": "1",
+   "period": "modern", "window": "no",
+   "quote": "the presence of a modern flood drain which passes close"},
+  {"type": "rockcut_installation", "site": "sounding C", "subtype": "quarried rock scarp (fosse) cutting the aqueduct, part of the great quarry of Solomon's Caverns", "n": "1",
+   "period": "fosse dug after the third or early fourth century AD", "window": "no",
+   "quote": "the fosse was not dug till after the third or early fourth"}
+ ]
+}
