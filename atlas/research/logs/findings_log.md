@@ -1325,3 +1325,12 @@ The owner asked for every recorded cave, columbarium, tomb, water installation, 
   - Water: no new match for entries 21, 22, 29, 32, 42 or 45. Entry 46 gains three miqveh matches at the 2 km sensitivity. The lead is Armon ha-Naẓiv stepped pool L5 (ʿAtiqot 90 p. 165), 1.94 km from Ramat Raḥel.
   - Hoards: the context-mix difference stands (D = 0.669).
   - No registered result changed.
+
+
+## Native source audits and corrected water shortlist — 12 October 2026
+
+- [Manual-check water shortlist](../regional/water_systems/manual_review_2026-10-12/SHORTLIST.md): the new unconfirmed phase-4 clause hits add no date-eligible complete match. Earlier reviews reduce conduit-head and cistern lists; the dated-only Wadi Qelt outlet view drops palace-derived dates. Unknown clauses remain unknown.
+- [Entry 46 bath phases](../assessments/entry46_baths_2026-10-12/README.md): Armon L5 remains an exploratory 2 km lead with an uncertain initial date; Rogem is a tentative bath with later cistern reuse. Ramat Sharet's accessible bath and blocked cistern opening belong to different phases. The ten-unit datum remains unresolved.
+- [Original Beth-Horon survey](../sources/benjamin1993_targeted_2026-10-12/README.md): the original confirms bench tombs and a separate roofed reservoir, but supplies no tomb plan, entrance bearings, depths or construction date. [Jerusalem necropolis originals](../sources/kloner_zissu2003_targeted_2026-10-12/README.md) show west-facing multiroom kokhim tombs at several known monuments; that coarse combination does not discriminate a location.
+- [Greater Herodium](../sources/netzer1981_targeted_2026-10-12/README.md): the great pool's inlet was not discovered, and other basins lie farther north in the published complex. Supply attribution and northmost geometry are separate claims.
+- [Incoming-evidence check](../sources/kohlit_incoming_2026-10-12/ACCESS_EVIDENCE.md) corrected archive custody and access routes; the deciding Koḥlit records remain pending. [Drive index](../sources/drive_index.md) refreshed to include the IAA portal PDFs and supplied chapters.

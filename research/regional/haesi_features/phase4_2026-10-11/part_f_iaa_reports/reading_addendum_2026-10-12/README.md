@@ -16,7 +16,7 @@ Both are image-only scans and were read from the page images. The PDFs are not c
 - **Manaḥat miqveh:** rock-cut and plastered. Own map reference OIG 16790/12875 (31.75140 N, 35.18802 E, 10 m).
 - **Efrata:** the two winepresses were already coded from the volume's introduction. Their pits and channel are parts of those presses, so they get no new row.
 
-**What stays unknown.** These rows are not in `merged_2026-10-12` or in the lane views, which were built before they existed. The next merge build should read this folder too.
+**Integration, 12 October.** Both rows are now in `merged_2026-10-12` under amendment B3 and the lane views were refreshed. The Manaḥat bath’s type and distance still leave it outside the water lane’s entry-46 eligibility. [Merged amendment](../../../merged_2026-10-12/AMENDMENTS.md#b3-one-more-input-the-owner-supplied-chapters-12-october-2026).
 
 ## Exploratory checks (no frozen result touched)
 
@@ -29,3 +29,6 @@ Both are image-only scans and were read from the page images. The PDFs are not c
 These echo the clause words of other entries (a fissure; an opening divided by a pillar). This is an installation, not a cave, and the divided opening is reconstructed, not observed. Nothing is scored from them.
 
 **Figures, to archive later if rights allow:** Manaḥat Plan 14.1 (plan and sections, p. 122) and Figs. 14.1–14.2 (p. 123); Efrata Plans 32–33 (pp. 127–128) and Figs. 59–61 (p. 128).
+
+
+**Source continuity, 12 October:** the original chapter PDFs are now in the owner’s [IAA portal volumes folder](https://drive.google.com/drive/folders/1GseRSat-ptIBCAXsFshB275WlCshD64z): [Manaḥat Chapter 14](https://drive.google.com/file/d/1Q14Ny2sI4JIenBDEDyIVpOWp8fjNrrQC/view) and [Efrata Appendix 1](https://drive.google.com/file/d/1iCadjmdDsrWPQ9Z1zxVY9qNOCikMNq9r/view). The connector metadata and source index establish their presence; this continuity check adds no original-page inspection.

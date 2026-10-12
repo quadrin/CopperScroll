@@ -473,3 +473,8 @@ All 20 tests pass with the worker's cache (11 October). Without the cache, the t
    - Pending requests: the request for IAA Reports 7 and 1 is satisfied; drop it if it is listed. Kloner and Zissu 2007 (loan) remains.
    - `research/OPEN_QUESTIONS.md`, entries 24, 27 and 54 (keep the tracker pair identical): "IAA Reports 7 read (regional/tombs addendum, 11 Oct): 103 Jericho tombs and a nefesh, 25 dated to the window. The frozen union counts are unchanged, since all lie inside the cemetery row WBADB S2446. Counted alone: 54-M 3 matches (A2, D1, H; exposed), 27-T 1 (Tomb H, Queen Agrippina as a freedman's patron), 24-J and 54-P none. No tomb has a grid position. Next evidence: georeferenced tomb positions from Figs. II.1–II.2."
    - Akeldama (exploratory): no Region A count changes; nothing to add to the shared files.
+
+
+## Targeted Hebrew catalogue reading, 12 October 2026
+
+The owner-supplied [Kloner–Zissu 2003 original](../../sources/kloner_zissu2003_targeted_2026-10-12/README.md) is now read for selected exposed monument leads and layout controls. It reports an ancient queen title separately from Helena’s attribution and documents several west-facing multi-chamber kokhim layouts. Traditional monument names and republished excavation plans retain their naming and observation-ancestry limits. This targeted supplement resolves access to the selected 2003 pages; the English 2007 edition and original Avigad volume are separate dependencies. Its observations are recorded beside the earlier corpus, not substituted into the frozen inventory.

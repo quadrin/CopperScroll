@@ -1,8 +1,8 @@
 # Active test
 
-Updated 10 October 2026 UTC / 10 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 12 October 2026 UTC / 11 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **obtained**: the phase-4 rows ([ʿAtiqot, IAA Reports, QDAP, SWP, Guérin, ADAJ](regional/haesi_features/phase4_2026-10-11/README.md)) deduplicated with the IAA inventory ([merged](regional/haesi_features/merged_2026-10-12/README.md): 2,097 site units at 935 sites, including the owner-supplied Manaḥat and Efrata chapters) and folded into the cave, columbarium, tomb, water and hoard lanes as exploratory views. The only new matches are for entry 46: three miqvaʾot within 2 km, led by Armon ha-Naẓiv L5. No registered result changed; nothing bears on the three active questions.
+Last session (12 October): **obtained**: a separate [manual-check shortlist](regional/water_systems/manual_review_2026-10-12/README.md), [native entry-46 bath phases](assessments/entry46_baths_2026-10-12/README.md), and original [Beth-Horon](sources/benjamin1993_targeted_2026-10-12/README.md), [Jerusalem tomb](sources/kloner_zissu2003_targeted_2026-10-12/README.md) and [Herodium pool](sources/netzer1981_targeted_2026-10-12/README.md) records. The audit distinguishes bath access from later cistern phases and source-attributed supply from an observed inlet. [Archive routes](sources/kohlit_incoming_2026-10-12/ACCESS_EVIDENCE.md) and the [Drive index](sources/drive_index.md) are corrected.
 
 ## Active questions and the observation that decides each
 
@@ -22,27 +22,27 @@ All are **not identifiable from available evidence**; details in the history fil
 
 ## Pending requests
 
-Sent 8 October UTC / 7 October Los Angeles:
-- USC Libraries Special Collections: 1200-ppi WSRP masters of cuts 21–22 (20 records).
-- Facsimile Editions, London: their 3D scan of the EDF plates at XII 10. Declined 8 October.
-- Garstang Museum, Liverpool: Jericho papers JG/8; pre-camp records and photos north of the tell.
-- Palestine Exploration Fund: Garstang Papers 1930–36; pre-1948 photos of Jericho.
-- Lorenzo Nigro, Sapienza: records of the ground north of Tell es-Sultan. Replied: karstic cavities are common there; whether any dates to the scroll's period is the question, and he will check. Meeting proposed for the Jerusalem visit, 18–24 October.
-- ÉBAF, via J.-B. Humbert: to see ÉBAF's EDF copy and the EDF X-rays of segments 21–22 during the visit. 8 October: visit passed to Fr. Cyrille Jalabert, with gift copies of Qumran vols I–II.
-- Carla Benelli, Mosaic Centre Jericho: replied 7 October. Osama Hamdan has died; she will scan Meinardus 1965–66 free of charge in mid-October. Archive visit requested; 8 October: welcome except Friday and Thursday afternoon, with notice.
-
-Earlier, no reply recorded unless stated:
-- Manchester Museum: study scans of C.10a.1/C.10.1 (5 October, rerouted after a bounce); Allegro strips C.21–23, cutting photos and the 1955 film (7 October, same thread). 8 October: checking with the Allegro estate; referred us to Joan Taylor.
-- Joan Taylor, King's College London (DQCAAS orders): Allegro scans C.21A.1–4, C.22A.1–10, C.22.1–2, C.21-23.1 and any film of segments 21–22 (8 October).
-- University of Manchester Library: file GB 133 TPA/1/132 and Wright Baker records of the cutting (7 October).
-- IAA Archive, for the Judean Desert cave survey: cave records for the Qumran cliffs, Jericho escarpment and Wadi Qelt (7 October).
-- Bruce Zuckerman, USC: the original WSRP Figure 4.6 composite and its component map (5 October).
-- Nahshon Szanton, Tel Aviv University: the Siloam main-side L103 junction section (6 October).
-- Rachel Bar-Nathan and Roi Porat: A(C)94 wall-junction drawing and level register (6 October), on referral from Ruhama Bonfil, whose unit holds none.
-- Archaeology Unit, Staff Officer for Archaeology: the Wadi Nuʿeima inspection file from ESI 5 pp. 110–111 (6 October).
-- P. Reeder and H. Jol: 2002 Qumran aqueduct survey and GPR records (29 September).
-- J. Høgenhaven: independent reading of X 15, VII 11, IX 7 and XII 10 (29 September).
-- 9 October: the owner registered for EAMENA (access level pending); a MEGA-Jordan access request to the Department of Antiquities of Jordan is drafted in Gmail for the owner to send. Either one starts the approved [count east of the Jordan](preregistration/kohlit_rarity_r3_2026-10-09.md) (not run).
+- USC Libraries Special Collections (8 October UTC / 7 October Los Angeles): 1200-ppi WSRP masters of cuts 21–22.
+- Liverpool Special Collections and Archives (9 October): Jericho papers JG/8 and pre-camp records north of the tell; acknowledgement received, holdings not established.
+- CBRL (9 October): possible Garstang Jericho negatives and photographs north of the tell; museum referral does not establish custody.
+- Palestine Exploration Fund (8 October UTC / 7 October Los Angeles): Garstang Papers 1930–36 and pre-1948 Jericho photos.
+- Lorenzo Nigro, Sapienza (8 October UTC / 7 October Los Angeles): records north of Tell es-Sultan; period attribution to be checked, meeting proposed for 18–24 October.
+- ÉBAF (8 October): EDF copy and X-rays of segments 21–22. On 11 October Jalabert referred access to the secretariat; he is away until 25 October. Replica/X-ray access needs separate confirmation.
+- J.-B. Humbert (11 October): postage quotation for his two offered Qumran volumes; the book offer supplies no replica appointment.
+- Carla Benelli, Mosaic Centre Jericho (7 October): Meinardus scan expected mid-October; 8 October welcome for an archive visit with notice, except Friday and Thursday afternoon.
+- Manchester Museum (5 and 7 October): C.10a.1/C.10.1 and Allegro strips C.21–23, cutting photos and 1955 film; 8 October estate check and Joan Taylor referral.
+- Joan Taylor, King's College London (8 October): Allegro C.21A.1–4, C.22A.1–10, C.22.1–2, C.21-23.1 and film of segments 21–22.
+- University of Manchester Library (7 October): GB 133 TPA/1/132 and Wright Baker cutting records.
+- IAA Archive (7 October): cave records for the Qumran cliffs, Jericho escarpment and Wadi Qelt.
+- Bruce Zuckerman, USC (5 October): original WSRP Figure 4.6 composite and component map.
+- Nahshon Szanton, Tel Aviv University (6 October): Siloam main-side L103 junction section.
+- Rachel Bar-Nathan and Roi Porat (6 October): A(C)94 wall-junction drawing and level register, on Ruhama Bonfil's referral.
+- Staff Officer for Archaeology archive (6 October): Wadi Nuʿeima inspection file from ESI 5 pp. 110–111.
+- Staff Officer for Archaeology archive (11 October UTC / 10 October Los Angeles): IV/17, Dadon, permit L-656; plans, threshold/wall sections, level and basket registers.
+- Hebrew University aerial archive (11 October UTC / 10 October Los Angeles): RAF PS30 5107/5137 and PS32 5069/5070 scans; resolution, coverage, quote and reuse terms.
+- P. Reeder and H. Jol (29 September): Qumran aqueduct survey and GPR records.
+- J. Høgenhaven (29 September): independent readings of X 15, VII 11, IX 7 and XII 10.
+- EAMENA (9 October): owner registered, access level pending. MEGA-Jordan access request sent 10 October UTC / 9 October Los Angeles; account access is pending. Either supplies the approved [east-of-Jordan count](preregistration/kohlit_rarity_r3_2026-10-09.md).
 
 Before opening any arrival, run `python3 -I research/preregistration/arrivals/arrival.py check` and follow the [arrival procedure](preregistration/arrivals/ARRIVAL_PROCEDURE.md): the [arrival register](preregistration/arrivals/README.md) froze each item's predictions on 9 October. Before reading the L-656 file or the IAA cave records, apply the [frozen Entry 25 aspect rule and IV/17 target declarations](preregistration/entry25_iv17_rules/RULES.md) (9 October).
 
@@ -50,7 +50,7 @@ Full request texts: [7 October outreach](agent_review_2026-10-07/followup/F_outr
 
 ## Next evidence to obtain
 
-An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or Manchester C.21–23 by reply, or the EDF copy and X-rays at ÉBAF during the 18–24 October visit. Then the Meinardus scan expected mid-October.
+An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or Manchester C.21–23 by reply, or the EDF copy/X-rays through separately confirmed ÉBAF access. Then the Meinardus scan expected mid-October. Source-bearing arrivals follow the frozen arrival procedure; the corrected custodial routes are in the access evidence above.
 
 ## Key reports
 

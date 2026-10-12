@@ -206,3 +206,8 @@ The owner added four more files to Drive. None is read yet.
 - ***Palästinawissenschaft in Deutschland: das Gustaf-Dalman-Institut Greifswald 1920–1995*** (de Gruyter; Crossref lists Hardmeier and Neumann; ISBN 9783110814866), in 03 Surveys. It is a history of the Dalman Institute with plates (Tafeln), not Dalman's 1925 *Fliegerbilder*. The Institute holds Dalman's photograph collection. A plate showing Jericho falls under the SULTAN-1 protocol, so check it before viewing.
 
 Not read yet.
+
+
+### Targeted original readings, 12 October 2026
+
+The Benjamin survey is now inspected for Upper Beth-Horon site 143 and its site-28 cross-reference ([evidence](benjamin1993_targeted_2026-10-12/README.md)); the individual tomb-plan and chronology gap persists. Kloner–Zissu 2003 is inspected for the selected monument/entrance controls ([evidence](kloner_zissu2003_targeted_2026-10-12/README.md)). Netzer 1981 is inspected for the pool complex, northern bath and service-system phase relations ([evidence](netzer1981_targeted_2026-10-12/README.md)). These are finite source scopes, not whole-book completion. Their manifests retain page coverage, original ancestry and image-reuse status. The Drive index now includes the portal batches and supplied chapters.
