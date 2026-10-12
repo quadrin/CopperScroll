@@ -1312,3 +1312,10 @@ The owner asked for every recorded cave, columbarium, tomb, water installation, 
 
 - **Deduplicated.** All IAA rows (phases 1–3) merged under rules frozen first: 1,607 coded reports form 1,465 report groups (142 Hebrew/English or print/online pairs), at 772 sites (968 without joining by name only). 3,182 rows in the region; at site level 1,756 site-class units, 457 dated to the window. ([merged inventory](../regional/haesi_features/merged_2026-10-11/README.md))
 - **Lanes, exploratory view beside the frozen counts.** Caves (entry 25): 7 caves and 3 clusters added, no new all-clause match. Columbaria: 21 added, still none near a Netophah candidate; entry 44 still only Masada. Tombs: 78 new Jerusalem units, no new strict match. Water: 742 new units, no new match for entries 21, 22, 29, 32, 42 or 45. Entry 46 gains one compatible point: a stepped miqveh (Early Roman) 164 m from the ʿEin Kerem point (HA-ESI 128) — a ritual bath, not a reservoir, and exposed, so compatibility only.
+
+## Phase 4 regional reading: ʿAtiqot, IAA Reports, QDAP, SWP and Guérin, ADAJ — 11 October 2026
+
+- **Read under the phase-2 rules, unchanged** (scope frozen in b002e03). QDAP 1–14, SWP Memoirs III and II, Guérin *Judée* I and ADAJ 1–62 gave 347 units in the region and 265 feature rows: 22 dated to the window, 91 dated outside it, 152 undated. There are also 94 SWP rows in squares split between two zones. The in-window rows are Jerusalem drains, kokhim tombs and the Silwan hoard (QDAP), and Qumran, ʿAin Feshkha, Murabbaʿat, Tulul Abu el-ʿAlayiq and Siyar el-Ghanam (ADAJ). ([phase 4](../regional/haesi_features/phase4_2026-10-11/README.md))
+- **Screened, not read:** ʿAtiqot 42–121 (1,336 articles, 237 in-region PDFs) and IAA Reports (12 in-region PDFs). They wait for the owner's approval of the downloads.
+- **Held:** IAA Reports 5 (Cave of the Warrior), Qumran-area cave passages in ADAJ, the Quruntul and ʿAin ed Duk entries in SWP, and the Tell es-Sultan items in QDAP and ADAJ, with the deviations listed in the README. Kh. ʿAlmit: SWP III p. 107 and QDAP 5 extracted only.
+- Not deduplicated yet. Exploratory; no registered result changed.

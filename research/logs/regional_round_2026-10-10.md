@@ -48,3 +48,11 @@ With the owner's approval the IAA portal volumes and two IAA Reports were downlo
 
 - **IAA reports, phase 3** ([README](../regional/haesi_features/phase3_2026-10-11/README.md); scope frozen in commit 4d8325e, phase-2 rules unchanged): all 101 downloaded volumes screened heading by heading, the online Jerusalem tier finished. 1,260 more reports coded; 2,582 feature rows in the region, 628 dated to the window; all 684 phase-1 candidates in these volumes accounted for. Rows are not yet deduplicated across seasons or across Hebrew and English versions. HA 28–29 and the Kh. ʿAlmit notices were extracted blind; no arrival item exists for them, so nothing is scored.
 - **Tombs addendum** ([README](../regional/tombs/README.md), section "Addendum, 11 October 2026"): IAA Reports 7 read by OCR, 104 Jericho tomb units coded (25 dated to the window; entrances 8 north, 12 east, 7 south, none west; names in A2, D1 and H, none Zadok or Absalom). Under the frozen rules every region-B count is unchanged, because the report gives no grid positions and every tomb is a possible duplicate of the cemetery's WBADB row. Counted alone, "the Queen" (27-T) gets one hit, Tomb H, where an ossuary names Queen Agrippina as a freedman's patron; it is not her tomb. Akeldama (IAA Reports 1, exploratory amendment 2): three first-century caves, no Region A count changes.
+
+## Phase 4: more sources, 11 October 2026
+
+The owner asked for more of the region's reports to be mined. Five workers read ʿAtiqot, IAA Reports, QDAP, the nineteenth-century surveys and ADAJ under the phase-2 rules, unchanged. The scope was frozen in commit b002e03 and the parts were merged in commits 26d7ded to 9d4e011. See the [phase-4 README](../regional/haesi_features/phase4_2026-10-11/README.md).
+
+- **Read:** 347 units in the region gave 265 feature rows: 22 dated to the window, 91 dated outside it, 152 undated. There are also 94 SWP rows split between two zones.
+- **Waiting for the owner:** ʿAtiqot 42–121 and IAA Reports were screened only. Their 249 in-region PDFs need his approval to download.
+- **Exposure:** four parts saw some held text before applying the hold, including ADAJ 16 pp. 5–12 (Kenyon, "Burial Customs at Jericho"). Nothing was coded from it, and the exact lines are in each part's NOTES.
