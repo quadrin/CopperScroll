@@ -137,6 +137,8 @@ python3 -I -B -m unittest discover -s research/comparanda/hoards_full/tests -t r
 
 **Freeze.** The amendment was committed alone as `f2b42ac` (2026-10-12T04:51Z), SHA-256 `ba1f690c9a556290895b119f23464201f0ac736ddee4f98bb42c5daca98b5f2d`. Its §1 lists what had been seen: READMEs, value counts by phase, and the hoards named in the task message. No `hoard_cache` row had been read. The frozen catalogue, `results.json` and `RESULTS.md` are unchanged and hash-checked. The `frozen` view reproduces every frozen run exactly.
 
+**B3 refresh (12 Oct):** reran against `merged_2026-10-12` as rebuilt under its amendment B3 (two added rows, a miqveh and a storage cave, neither `hoard_cache`). The 77 counted hoard rows are byte-identical, no new review item arose and no decision was added. Only the pinned `features_all.csv` hash (now `23a23214…eae38`) and its line in `phase4_summary.json` changed; the view, scores and every number in this section are unchanged. Nothing changed in substance.
+
 ### Rows, reports and sites
 
 | | rows | reports | sites | alternate version | excluded | duplicate | undetermined | new units (reports, sites) | new units in catalogue window |
