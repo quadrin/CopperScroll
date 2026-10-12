@@ -182,6 +182,8 @@ Files: [iaa_survey_rows.csv](iaa_survey_rows.csv) (the 769 IAA rows in the surve
 
 **What changed.** The merged inventory now covers phases 1–4 (`research/regional/haesi_features/merged_2026-10-12/`, commit b4a41cc). Run under the IAA-view rules unchanged, it adds 91 phase-4 rows in the box: 84 from ʿAtiqot, 6 from IAA Reports and 1 from ADAJ. QDAP, Guérin and SWP add none (no coordinates, or excluded). No new match appears in entries 21, 22, 29, 32, 42 or 45. Entry 46 gains one dated reservoir match within 2 km of Ramat Raḥel (the Armon ha-Naẓiv stepped pool) and two dated cistern-sensitivity matches within 2 km of ʿEin Kerem. All three are stepped installations that the excavators call ritual baths or miqvaʾot. The frozen headline and the IAA view are unchanged. Every row is exposed, so the whole view is exploratory.
 
+B3 refresh (12 Oct): rerun with the frozen rules on the merge as rebuilt under its amendment B3 (`features_all.csv` SHA-256 `23a23214…`); nothing changed in substance. The Manaḥat miqveh (IAA Reports, row `IAAR3-manahat`) lies in the box, 3.19 km from Ramat Raḥel and 2.99 km from the lane's ʿEin Kerem point (lane script), but its coding never calls it a pool, reservoir or cistern, so it is not used (phase-4 ritual baths not used: 8 → 9). The Efrata storage cave is not a water class. Survey rows, counts, scores and matches are byte-identical; no new post-hoc reading arose. Only the script's input pins and `phase4_summary.json` changed.
+
 - **Rules.** [PLAN_AMENDMENT_PHASE4_2026-10-12.md](PLAN_AMENDMENT_PHASE4_2026-10-12.md) was committed alone as `6508ab7` (2026-10-12T04:49:29Z), before any phase-4 water row was printed or mapped. SHA-256 `3112926d89e6197ae704b43a05672c8c7e96fe28f64a5100dfb577af11a5f977`. Its §1 lists what had been seen: READMEs, headers, value counts and the held unit ids.
 - **How it was run.** `scripts/phase4_view.py` imports the frozen `build_water` and `score` and the IAA-view helpers, all unchanged. It first checks that the frozen procedure reproduces `counts.csv` and `headline.csv`, and that the IAA-view inputs reproduce `iaa_counts.csv`, byte for byte.
 - **Runs beside the primary.** Phases 1–3 alone under the new grouping; the 300 m bracket (508 rows treated as duplicates, 1,729 units); quote-only (806 rows); and "with SWP". The SWP run equals the primary, because no SWP water row has coordinates. Its only effect is that two rows of the held unit `SWP3-222-tell-es-sultan` are excluded.
@@ -277,7 +279,7 @@ Every entry, branch, lineage and date rule is in [phase4_view_2026-10-12.csv](ph
   - QDAP ʿAin Karim (Visitation) channel, cistern and pool (item starting QDAP 8 p. 170).
 
   The name list also caught a Kh. Fasayil aqueduct (QDAP 10 p. 202). That site lies north of the box.
-- 8 phase-4 ritual baths are not used, because they are never called pools or cisterns. 10 phase-4 rows lie outside the box. 43 SWP water rows are not used (PLAN §3.5).
+- 9 phase-4 ritual baths are not used, because they are never called pools or cisterns. 10 phase-4 rows lie outside the box. 43 SWP water rows are not used (PLAN §3.5).
 - Rarity is still not measurable: m ≫ k in every branch.
 
 **Protected material.**
