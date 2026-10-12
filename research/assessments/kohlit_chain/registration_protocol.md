@@ -52,8 +52,10 @@ Prepared 8 October 2026 UTC. This is a method, not a result. No incoming record 
 - **Chained documents.**
   - Register Kenyon's plans to the same target frame. Use the tell's feet and Trench II corners. Use camp blocks only for documents of 1956–67.
   - For two features from different documents, E_pair = √(E1² + E2²).
-  - For two features drawn in one document, E_pair comes from picking error only, because they share the transform.
+  - For two features drawn in one document, declare a complete pair-local uncertainty model before measurement. Shared translation cancels; a shared rigid rotation cancels for scalar distance, while scale and differential distortion remain. Cardinal/vector relations also retain rotation uncertainty. Endpoint picking alone is insufficient; `pair_error` requires `pair_local_error_m` in the decision margin’s declared convention.
 - **No rescue.** Do not change controls, transform or check point after seeing the check error. A changed choice is a new, exploratory registration and is logged as such.
+
+Correction (12 October 2026): the earlier same-document picking-only rule omitted scale and differential distortion. The [resolution audit](../../feature_workbench/measurement_resolution_2026-10-12/README.md#analytical-correction-applied) documents the error and the preserved prior result. Historical registrations are not rescored; the arrival manifest and all frozen outcomes remain intact.
 
 ## 5. Acceptance thresholds
 

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "cases": [
+    {
+      "id": "dagesh_l1",
+      "scale": {"endpoints_px": [[56, 661], [166, 661]], "metres": 2},
+      "targets": [
+        {"id": "axis_a", "endpoints_px": [[303, 501], [410, 592]]},
+        {"id": "axis_b", "endpoints_px": [[402, 499], [311, 591]]}
+      ]
+    },
+    {
+      "id": "migdal_l32",
+      "scale": {"endpoints_px": [[84, 525], [224, 525]], "metres": 5},
+      "targets": [
+        {"id": "axis_a", "endpoints_px": [[202, 227], [316, 267]]},
+        {"id": "axis_b", "endpoints_px": [[279, 202], [240, 294]]}
+      ]
+    },
+    {
+      "id": "etri_z2",
+      "scale": {"endpoints_px": [[137, 342], [245, 342]], "metres": 2},
+      "targets": [
+        {"id": "axis_a", "endpoints_px": [[65, 202], [339, 202]]},
+        {"id": "axis_b", "endpoints_px": null}
+      ]
+    }
+  ]
+}

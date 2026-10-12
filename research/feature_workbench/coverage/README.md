@@ -1,5 +1,7 @@
 # Investigation coverage
 
+The [source-instrument and registration audit](audit/RESULTS.md) adds exact survey-absence witnesses and evaluates the existing plan records for independent geographic validation. It preserves the frozen Koḥlit FAIL values while keeping their physical search coverage unknown.
+
 `evaluate.py` imports the reviewed Jericho source-sector inventory, its current Wadi original-report review and the IV/17 assessment/context chain. It returns a machine-readable module for the feature workbench. Rebuild from the repository root with:
 
 ```sh

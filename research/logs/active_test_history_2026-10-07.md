@@ -210,3 +210,13 @@ Last session (12 October): **partly**: applied the [whole-book phase and source-
 ## 12 October 2026: before original Herodium extract inspection
 
 Last session (12 October): **partly**: the [compressed Herodium attachment](sources/full_reads_2026-10-12/storage_language_audit/README.md#compressed-attachment-reinspection-12-october-2026) permits native note III.13 verification: jar-salt chemistry did not identify the stored liquid. Ill. 99 and published translations are only coarsely legible because viewer 79/printed 71 is363×525 pixels. Exact damaged labels still need original viewers 78–79/printed 70–71; earlier large-file/DjVu blockers are access history.
+
+
+## Status preserved before the plan pilot — 9 October 2026 UTC / 8 October Los Angeles
+
+Last session (8 October UTC): **partly**: [shared research tools](shared_tools/README.md) implement source/figure retrieval, manuscript correspondence queries, entry/control imports, calibration diagnostics, anonymous-review staging and visit capture validation. Original-line registration, independent empirical calibration and human review still need the specified source records and readers.
+
+
+## Status preserved before the case-study methods — 9 October 2026 UTC
+
+Last session (8 October UTC): **obtained**: Puech 2015 pages for every atlas title and landmark that differs from the text shown. Sixteen more entries (6, 7, 13, 14, 16, 17, 27, 29, 33, 34, 43, 47, 49, 50, 53, 56) now say in the atlas which edition reading they follow, and their reading records add Puech 2015; the descriptions of entries 4, 8 and 39 and the Hebrew label of entry 16 now match the text; at II 1 Puech 2015 reads "the salt", not the Millo. The scroll notes, two schematics and the atlas site were rebuilt.

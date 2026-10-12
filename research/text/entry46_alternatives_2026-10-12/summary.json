@@ -1,0 +1,86 @@
+{
+  "baseline_commit": "3b2d5c44b8c0add84a69d25f8e72cd16acc886db",
+  "exploratory": true,
+  "result": "not identifiable from available evidence",
+  "claim": "complete entry46 landmark/left/numerical relation",
+  "input_sha256": {
+    "research/regional/haesi_features/merged_2026-10-12/features_all.csv": "23a23214ed475b5c3a3a213f29d4094518acbdf1b187cffd7c78949a635eae38",
+    "research/regional/water_systems/entry46_phase_review_2026-10-12/phases.csv.gz": "9d8c8b380cec2a8100e2d69a66ee48e99e2999a7ad4e0b2e8b0d9618be04aef0",
+    "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v2/places_v2.csv": "315474bd3be8cce3e1776e119417e2444edd99e3f028c7413185302fc7663683",
+    "text/readings.json": "45a461fbfad2453fdbed0de8e57c021640256d037b0b61c277eb70b61c831350",
+    "research/text/entry46_alternatives_2026-10-12/SPEC.md": "2b7470b02ab2bc695670f9b56091228b8b21ab6d2dd4127c9ad7a2b1a3ef13bc",
+    "research/text/entry46_alternatives_2026-10-12/numerical_observations.json": "0902199a8e01f0c1ccca5ab33b88e69320513e4a03394f4d10673b6f5061423a",
+    "research/text/entry46_alternatives_2026-10-12/native_sources.json": "180626f19349e3debe40419a1a3671b76925db51291cfbe1720b01cbec1ed615",
+    "research/text/entry46_alternatives_2026-10-12/native_feature_overrides.json": "518cf52c4772d691eb0cc48fe173f6cbe8507cfa6df24cfff96e93f2d3a9376e",
+    "research/text/entry46_alternatives_2026-10-12/evaluate.py": "cf6ee26749e73a7978ffeae2b6ed2dfb2a2fe591e1b9c2c079d345d83bd9c427",
+    "research/regional/haesi_features/phase4_2026-10-11/part_e_atiqot/held.csv": "7d2d3f58dbca5b1584725110a9b9d99f1be5f453dbb0dd561511186126f2b497",
+    "research/regional/haesi_features/phase4_2026-10-11/part_e_atiqot/reading_r1/held.csv": "7d2d3f58dbca5b1584725110a9b9d99f1be5f453dbb0dd561511186126f2b497",
+    "research/regional/haesi_features/phase4_2026-10-11/part_e_atiqot/reading_r2/held.csv": "7d2d3f58dbca5b1584725110a9b9d99f1be5f453dbb0dd561511186126f2b497",
+    "research/regional/haesi_features/phase4_2026-10-11/part_e_atiqot/reading_r3/held.csv": "7d2d3f58dbca5b1584725110a9b9d99f1be5f453dbb0dd561511186126f2b497",
+    "research/regional/haesi_features/phase4_2026-10-11/part_f_iaa_reports/held.csv": "03617b003e20609ebdcf47069b418163bbd31b8e2791e7ede1467eefdff5c57c",
+    "research/regional/haesi_features/phase4_2026-10-11/part_f_iaa_reports/reading/held.csv": "3bd71d696b4a7067fd96ad70458ddad9d52fd539178f50e49b98ec9b31bf8405",
+    "research/regional/haesi_features/phase4_2026-10-11/part_g_qdap/held.csv": "9d53b8c15a05d53aadcaaf7909d21c092baf5f4e78366eed68023dd545155fc7",
+    "research/regional/haesi_features/phase4_2026-10-11/part_h_surveys/held.csv": "7397ccd0560e60bbe028fc8d65e3522368591e7eb9abbbc3aa0b27ea610b4fb3",
+    "research/regional/haesi_features/phase4_2026-10-11/part_i_adaj/data/held.csv": "6e2e0ad8932a3e92df9a89dd2086cbd498f47e95842b1eb8fcac6ba379facc68",
+    "research/regional/haesi_features/phase4_2026-10-11/part_i_adaj/held.csv": "4309776e07ba845c671a287e4f1585e3c2f19dcb9f0cffce5b53d73bd2394047"
+  },
+  "exclusions": {
+    "outside_prior_water_box": 129,
+    "protected_or_tier1_metadata": 16,
+    "SWP_unresolved_placement": 67
+  },
+  "pit_source_descriptions": 2539,
+  "pit_reported_morphology": {
+    "UNKNOWN": 2067,
+    "MATCH": 471,
+    "FAIL": 1
+  },
+  "pit_reported_deep_qualification": {
+    "UNKNOWN": 2538,
+    "FAIL": 1
+  },
+  "unlocated_pit_sensitivity_descriptions": 857,
+  "pit_dimension_descriptions": 92,
+  "pit_count_phrase_descriptions": 32,
+  "retained_held_metadata_files": [
+    "research/regional/haesi_features/phase4_2026-10-11/part_e_atiqot/held.csv",
+    "research/regional/haesi_features/phase4_2026-10-11/part_e_atiqot/reading_r1/held.csv",
+    "research/regional/haesi_features/phase4_2026-10-11/part_e_atiqot/reading_r2/held.csv",
+    "research/regional/haesi_features/phase4_2026-10-11/part_e_atiqot/reading_r3/held.csv",
+    "research/regional/haesi_features/phase4_2026-10-11/part_f_iaa_reports/held.csv",
+    "research/regional/haesi_features/phase4_2026-10-11/part_f_iaa_reports/reading/held.csv",
+    "research/regional/haesi_features/phase4_2026-10-11/part_g_qdap/held.csv",
+    "research/regional/haesi_features/phase4_2026-10-11/part_h_surveys/held.csv",
+    "research/regional/haesi_features/phase4_2026-10-11/part_i_adaj/data/held.csv",
+    "research/regional/haesi_features/phase4_2026-10-11/part_i_adaj/held.csv"
+  ],
+  "pool_phase_descriptions": 1536,
+  "numerical_target_observations": 0,
+  "full_branch": {
+    "UNKNOWN": 13059,
+    "FAIL": 54273
+  },
+  "numeric_clause": {
+    "UNKNOWN": 67332
+  },
+  "denominator": "source/phase descriptions; unresolved physical duplicates/aggregates, not installations or regional rarity",
+  "protected_access": "metadata exclusions only; no new protected originals opened",
+  "metric_limit": "basin/shaft depth, cave height and original n_features remain source observations; none supplies a deposit target/datum or complete left-side pit count",
+  "branch_provenance": "Cartesian operational sensitivity across retained installation and numeric interpretations; not a claim that every combination is one edition's continuous translation. Puech sequence lacks displayed derivative חפור; no digging imperative is silently borrowed.",
+  "position_range_correction": "all comparator/candidate source mapref ranges use a conservative enclosing circle including printed-grid rounding; unparseable range/CRS disables prior point and leaves geography UNKNOWN",
+  "pit_position_kinds": {
+    "inherited source point": 1708,
+    "report range; conservative enclosing circle": 705,
+    "range unresolved; point disabled": 126
+  },
+  "pool_position_kinds": {
+    "inherited phase position": 1323,
+    "report range; conservative enclosing circle": 185,
+    "range unresolved; point disabled": 28
+  },
+  "pyproj_version": "3.8.0",
+  "source_access_errors": [
+    "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26686",
+    "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26098"
+  ]
+}

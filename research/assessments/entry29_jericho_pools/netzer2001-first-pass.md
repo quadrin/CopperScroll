@@ -215,3 +215,9 @@ Current routing now awaits Rachel/Roi's named file or custodian response rather 
 ## Exact2002 access route update — 6 October 2026 UTC
 
 The user authorized a targeted Fig6/Fig10 follow-up after the identity audit. No2002 chapter/figure was recovered. The current JRA supplier route and J24’s exact pp369–370/Fig10 locator are recorded once in the [canonical access supplement](README.md#exact-source-access-follow-up--6-october-2026-utc), alongside the unrelated monastery-source thread. Preserve the2002/1989 figure distinction, pagination discrepancy and historical access results. No email/order/fee, original archaeological inspection or activity increment occurred; exact public retries stop pending a supplied copy or identified holding/accession.
+
+## Field-notes holder response — 12 October 2026
+
+Rachel Bar-Nathan replied in the existing A(C)94 inquiry that she holds records, that the field notes are unorganized, and that she is willing to help; she requests a telephone call. This is a firsthand current custody lead, without a verified accession or guarantee that the requested pipe-junction drawing/level register survives. Her number is in the private reply. No file, keyed section, level definition or new measurement was attached.
+
+Ruhama Bonfil separately confirms that she has no Jericho excavation material, including publications, for the folded-plan request. Her earlier excavation-team referral remains the route to the field records. Neither response supplies the pipe’s ancient datum or changes the closed A(C)94 assessment. The next action is the owner’s call to identify and obtain the wall-junction/level records under the existing source and exposure gates; no call, message or order was made by this session.

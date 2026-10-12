@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "planning_only",
-  "as_of_utc": "2026-10-08",
+  "as_of_utc": "2026-10-12",
   "priority_scale": [
     {
       "id": "high",
@@ -63,7 +63,7 @@
     {
       "id": "decisions-outreach",
       "title": "Manchester and IAA sent-request record",
-      "citation": "7 October 2026, 15:43:39–15:43:42 UTC: Manchester C.21A.1–4/C.22A.1–10/C.21-23.1 and TPA/1/132; IAA regional cave inventory. Sent verified; delivery/replies unverified.",
+      "citation": "Sent-request record, 7 October; 12 October Manchester Library/CBRL custody replies. No reserved diagnostic photographs received.",
       "repo_path": "research/agent_review_2026-10-07/followup/F_outreach_sent.md",
       "inspection": "already_inspected"
     },
@@ -168,9 +168,9 @@
       },
       "request": {
         "status": "sent_pending",
-        "scope": "Manchester Museum strip-photo request and Library cutting-record request were sent; their delivery/replies and a fresh diagnostic frame are unverified.",
+        "scope": "Museum/Taylor photograph requests remain pending. Manchester Library replied on 12 October that TPA/1/132 has general methods/schedules material without cutting photos or research notes; Allegro inquiry continues.",
         "delivery": "unverified",
-        "reply": "unverified",
+        "reply": "library_custody_reply_received",
         "source_ids": [
           "decisions-outreach"
         ]
@@ -183,8 +183,8 @@
       ],
       "access": {
         "status": "pending_record",
-        "route": "Existing Manchester requests",
-        "detail": "Await the recorded requests; an enlarged known image is the same observational lineage. No duplicate inquiry or paid scan is scheduled.",
+        "route": "USC/Museum/Taylor requests and separately confirmed ÉBAF copy/X-ray access",
+        "detail": "TPA/1/132 cannot supply the requested photographs/notes according to its archivist. Await exact authenticated frames under the frozen masking/human-reader gates.",
         "custody_verified": false
       },
       "effort": {
@@ -334,8 +334,8 @@
         "exposure": "already_inspected"
       },
       "request": {
-        "status": "related_request_pending",
-        "scope": "IAA regional cave-inventory inquiry is sent and pending. It is not a verified request for, holding of, or accession to the particular L-656 file.",
+        "status": "sent_pending",
+        "scope": "Specific Dadon/L-656 file request sent to the Staff Officer archaeology archive on 11 October; separate IAA regional cave-inventory request remains pending.",
         "delivery": "unverified",
         "reply": "unverified",
         "source_ids": [
@@ -351,7 +351,7 @@
       ],
       "access": {
         "status": "pending_record",
-        "route": "Published archive-class pointer and pending IAA inventory request",
+        "route": "Specific Staff Officer archive request plus published permit/basket identifiers",
         "detail": "Specific L-656 online file and current custody are unverified. Preserve the inventory request status; no new correspondence is initiated here.",
         "custody_verified": false
       },
@@ -359,7 +359,7 @@
         "level": "field_record_audit",
         "detail": "Join drawings, notebooks, baskets and levels across the original file; survey-find dates alone do not date architecture."
       },
-      "next_action": "Prepare the permit/basket/contact extraction fields. Await a specific file or custodian referral; freeze the chosen Entry25 branches and audit exposure before any reserved observation.",
+      "next_action": "Await the file/custodian response; apply the 9 October frozen aspect/target declarations before opening originals, then extract threshold/wall contacts without transferring survey-pottery dates.",
       "freeze": {
         "status": "partly_frozen",
         "commit": "2ae09762d6726a353f64947bdfbaccffe0d47bcc",
@@ -708,14 +708,14 @@
       ],
       "current_evidence": {
         "status": "unknown",
-        "detail": "No J01–J28 record has a complete verified phase/contact/face/surface/datum package. A(C)94 numbers102.87/102.80 and bench102.73 have unresolved point definitions. The A(C)94 geometry result is closed and acquisition remains parked.",
+        "detail": "A(C)94 pipe/bench point definitions and ancient face/surface/phase remain unresolved. Rachel Bar-Nathan reports holding unorganized field notes; no keyed junction drawing or level register supplied.",
         "exposure": "already_inspected"
       },
       "request": {
         "status": "sent_pending",
-        "scope": "Ruhama's unit replied that it holds no requested records; referrals to Rachel Bar-Nathan and Roi Porat were sent. Their delivery/replies, a current custodian, section and accession remain unverified.",
+        "scope": "Rachel Bar-Nathan replied on 12 October that she holds unorganized records and requests an owner call; Roi referral remains pending. Ruhama has no Jericho material or publications.",
         "delivery": "unverified",
-        "reply": "unverified",
+        "reply": "records_holder_offers_help",
         "source_ids": [
           "decisions-jericho-contacts"
         ]
@@ -727,16 +727,16 @@
         "Same observations for A(C)90/AC44 and identity crosswalks for aggregate records; fixed regional boundary/coverage for broader claims"
       ],
       "access": {
-        "status": "pending_record",
-        "route": "Existing Jericho archive referrals",
-        "detail": "Await the specific named file/custodian response. Do not resend requests to the unit that denied custody or rerun parked geometry from known figures.",
-        "custody_verified": false
+        "status": "holder_contact_needed",
+        "route": "Rachel Bar-Nathan’s owner-requested telephone contact",
+        "detail": "Holder reports records, but exact field-item, requested junction section and level-register survival remain unverified.",
+        "custody_verified": true
       },
       "effort": {
         "level": "field_record_audit",
         "detail": "Join original section, survey and stratigraphic records, then apply the same extraction to controls; annotation numbers alone are insufficient."
       },
-      "next_action": "Prepare a common aperture/face/surface/phase extraction form for the candidate and controls. Reopen only for the named new section/datum/contact observation or a documented analytical correction.",
+      "next_action": "Owner calls to identify/access the pipe-junction section and level register. Record exact accession, intake and exposure before scientific comparison; obtain the same datum/phase observations for controls.",
       "freeze": {
         "status": "not_frozen",
         "commit": null,

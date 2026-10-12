@@ -1,0 +1,25 @@
+{
+  "schema": "copper-scroll-reserved-recovery-batch-v1",
+  "status": "not_run",
+  "coordinator_id": null,
+  "reviewer_ids": [],
+  "freeze_commit": null,
+  "frozen_before_truth_access": null,
+  "cases": [],
+  "case_contract": {
+    "case_code": "A fresh anonymous identifier assigned by the curator",
+    "reviewer_exposed_to_truth": false,
+    "prediction_sha256": "Hash of the reviewer prediction frozen before revealing the truth",
+    "selection_observation_ids": ["Original observation IDs used to select and fit the model"],
+    "surviving_models_registered": ["All allowed model IDs"],
+    "failure_rule": "A finite measurable failure condition with justified datum and tolerance",
+    "truth": {
+      "validation": "independent_reference_verified",
+      "verified_by": "A named coordinator distinct from the reviewers",
+      "source_locator": "Exact source, page, figure or field-record identifier",
+      "original_observation_id": "Reserved original observation, different from fitting observations",
+      "lineage_checked": true
+    }
+  },
+  "instructions": "This empty template intentionally fails audit-reserved. Populate cases only after curator assignment and real source validation; example text supplies no evidence. Verify commit chronology externally."
+}

@@ -2,6 +2,7 @@
 from __future__ import annotations
 import math
 from core import read, dump, ROOT, HERE
+from plan_benchmark import load_saved
 
 
 def solve(a, b):
@@ -93,7 +94,8 @@ def run(root=ROOT):
                            'limits': 'Local transform reproduced; geodetic conversion is not rerun. The source check is already exposed and retains unknown anchor, grid-notation and feature-identity error.'}
     return {'schema': 1, 'synthetic_calibration': fixtures, 'exposed_plan_calibration': empirical,
             'exposed_registration_diagnostic': failed_registration,
-            'independent_empirical_benchmark': {'status': 'not_run', 'required': 'New, independently established survey/letter/phase answers reserved before testing.'},
+            'published_dimension_pilot': load_saved(root / 'research/shared_tools/plan_pilot'),
+            'independent_empirical_benchmark': {'status': 'not_run', 'required': 'Independently established survey/letter/phase answers reserved before testing. The published-dimension pilot has exposed analyst answers and unverified independence of its field references.'},
             'human_reading_benchmark': {'status': 'not_run', 'required': 'Curated legible original-letter controls and independent readers.'},
             'limits': 'These diagnostics test computational calibration and reproduce exposed picks. They supply no reading accuracy, field accuracy or identification probability.'}
 

@@ -1,0 +1,533 @@
+{
+  "schema": "copper-scroll-feature-recovery-pilot-v1",
+  "reviewer_input_sha256": "5023b60674330722c4d971586fa4fe3d732fe595e439dcfeffceddebad0d5bea",
+  "responses": [
+    {
+      "case_code": "R001",
+      "decision": "unique_documentary_match",
+      "selected_candidate_code": "K01",
+      "surviving_candidate_codes": [
+        "K01"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_shape",
+            "floor_slope"
+          ]
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [
+            "floor_shape",
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K03",
+          "contradictions": [
+            "floor_shape",
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        }
+      ],
+      "forecasts": [
+        {
+          "candidate_code": "K01",
+          "field": "sump_corner",
+          "value": "southwest",
+          "basis": "published_description",
+          "claim_scope": "exposed_source_expectation_excluded_from_matching"
+        }
+      ]
+    },
+    {
+      "case_code": "R002",
+      "decision": "unique_documentary_match",
+      "selected_candidate_code": "K02",
+      "surviving_candidate_codes": [
+        "K02"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [
+            "floor_shape",
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_shape",
+            "floor_slope"
+          ]
+        },
+        {
+          "candidate_code": "K03",
+          "contradictions": [
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_shape"
+          ]
+        }
+      ],
+      "forecasts": [
+        {
+          "candidate_code": "K02",
+          "field": "floor_vat_perforations",
+          "value": 2,
+          "basis": "published_description",
+          "claim_scope": "exposed_source_expectation_excluded_from_matching"
+        }
+      ]
+    },
+    {
+      "case_code": "R003",
+      "decision": "unique_documentary_match",
+      "selected_candidate_code": "K03",
+      "surviving_candidate_codes": [
+        "K03"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [
+            "floor_shape",
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_shape"
+          ]
+        },
+        {
+          "candidate_code": "K03",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_shape",
+            "floor_slope"
+          ]
+        }
+      ],
+      "forecasts": [
+        {
+          "candidate_code": "K03",
+          "field": "sump_corner",
+          "value": "north",
+          "basis": "published_description",
+          "claim_scope": "exposed_source_expectation_excluded_from_matching"
+        }
+      ]
+    },
+    {
+      "case_code": "R004",
+      "decision": "unique_documentary_match",
+      "selected_candidate_code": "K03",
+      "surviving_candidate_codes": [
+        "K03"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [
+            "reported_floor_long_m"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [
+            "reported_floor_long_m"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K03",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "reported_floor_long_m"
+          ]
+        },
+        {
+          "candidate_code": "K04",
+          "contradictions": [
+            "reported_floor_long_m"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        }
+      ],
+      "forecasts": [
+        {
+          "candidate_code": "K03",
+          "field": "repaired_karstic_floor_fissure",
+          "value": true,
+          "basis": "published_description",
+          "claim_scope": "exposed_source_expectation_excluded_from_matching"
+        }
+      ]
+    },
+    {
+      "case_code": "R005",
+      "decision": "unique_documentary_match",
+      "selected_candidate_code": "K01",
+      "surviving_candidate_codes": [
+        "K01"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "reported_floor_long_m"
+          ]
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [
+            "reported_floor_long_m"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K03",
+          "contradictions": [
+            "reported_floor_long_m"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K04",
+          "contradictions": [
+            "reported_floor_long_m"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K05",
+          "contradictions": [
+            "reported_floor_long_m"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        }
+      ],
+      "forecasts": [
+        {
+          "candidate_code": "K01",
+          "field": "settling_channel_wall",
+          "value": "northwest",
+          "basis": "published_description",
+          "claim_scope": "exposed_source_expectation_excluded_from_matching"
+        }
+      ]
+    },
+    {
+      "case_code": "R006",
+      "decision": "unique_documentary_match",
+      "selected_candidate_code": "K01",
+      "surviving_candidate_codes": [
+        "K01"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_slope"
+          ]
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        }
+      ],
+      "forecasts": [
+        {
+          "candidate_code": "K01",
+          "field": "channel_direction",
+          "value": "north",
+          "basis": "published_description",
+          "claim_scope": "exposed_source_expectation_excluded_from_matching"
+        }
+      ]
+    },
+    {
+      "case_code": "R007",
+      "decision": "insufficient_evidence",
+      "selected_candidate_code": null,
+      "surviving_candidate_codes": [
+        "K01",
+        "K02"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_slope"
+          ]
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_slope"
+          ]
+        }
+      ],
+      "forecasts": []
+    },
+    {
+      "case_code": "R008",
+      "decision": "insufficient_evidence",
+      "selected_candidate_code": null,
+      "surviving_candidate_codes": [
+        "K01",
+        "K02"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_shape",
+            "floor_vat_perforations"
+          ]
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_shape",
+            "floor_vat_perforations"
+          ]
+        }
+      ],
+      "forecasts": []
+    },
+    {
+      "case_code": "R009",
+      "decision": "no_compatible_candidate",
+      "selected_candidate_code": null,
+      "surviving_candidate_codes": [],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K03",
+          "contradictions": [
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K04",
+          "contradictions": [
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K05",
+          "contradictions": [
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K06",
+          "contradictions": [
+            "floor_slope"
+          ],
+          "unknown_fields": [],
+          "matched_fields": []
+        }
+      ],
+      "forecasts": []
+    },
+    {
+      "case_code": "R010",
+      "decision": "insufficient_evidence",
+      "selected_candidate_code": null,
+      "surviving_candidate_codes": [
+        "K02"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [
+            "outline"
+          ],
+          "unknown_fields": [
+            "entrance_direction"
+          ],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [],
+          "unknown_fields": [
+            "entrance_direction"
+          ],
+          "matched_fields": [
+            "outline"
+          ]
+        }
+      ],
+      "forecasts": []
+    },
+    {
+      "case_code": "R011",
+      "decision": "insufficient_evidence",
+      "selected_candidate_code": null,
+      "surviving_candidate_codes": [
+        "K01",
+        "K02"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [],
+          "unknown_fields": [
+            "first_century_use"
+          ],
+          "matched_fields": [
+            "kind"
+          ]
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [],
+          "unknown_fields": [
+            "first_century_use"
+          ],
+          "matched_fields": [
+            "kind"
+          ]
+        }
+      ],
+      "forecasts": []
+    },
+    {
+      "case_code": "R012",
+      "decision": "insufficient_evidence",
+      "selected_candidate_code": null,
+      "surviving_candidate_codes": [
+        "K01",
+        "K02"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [],
+          "unknown_fields": [
+            "circular_screw_depression",
+            "settling_pit_active"
+          ],
+          "matched_fields": []
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [],
+          "unknown_fields": [
+            "circular_screw_depression",
+            "settling_pit_active"
+          ],
+          "matched_fields": []
+        }
+      ],
+      "forecasts": []
+    },
+    {
+      "case_code": "R013",
+      "decision": "insufficient_evidence",
+      "selected_candidate_code": null,
+      "surviving_candidate_codes": [
+        "K01",
+        "K02"
+      ],
+      "candidate_checks": [
+        {
+          "candidate_code": "K01",
+          "contradictions": [],
+          "unknown_fields": [],
+          "matched_fields": [
+            "floor_shape",
+            "floor_slope"
+          ]
+        },
+        {
+          "candidate_code": "K02",
+          "contradictions": [],
+          "unknown_fields": [
+            "floor_shape"
+          ],
+          "matched_fields": [
+            "floor_slope"
+          ]
+        }
+      ],
+      "forecasts": []
+    }
+  ],
+  "evidence_class": "exposed_published_record_recovery",
+  "independent_field_accuracy": null,
+  "unseen_confirmation": false
+}

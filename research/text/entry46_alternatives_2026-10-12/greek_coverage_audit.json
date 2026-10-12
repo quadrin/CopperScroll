@@ -1,0 +1,39 @@
+{
+  "baseline_commit": "3b2d5c44b8c0add84a69d25f8e72cd16acc886db",
+  "source_records": [
+    {
+      "path": "research/agent_review_2026-10-07/wave1/T07_greek_letters/papyri_2026-10-10/REPORT.md",
+      "blob_sha": "daa983d11e844f748c301403c7c6a3095564c462"
+    },
+    {
+      "path": "research/agent_review_2026-10-07/wave2/W2D_greek_letters/REPORT.txt",
+      "blob_sha": "ba5959f72b6dee462dad9dabe530fc3f6063a5d9"
+    }
+  ],
+  "coverage_result": "Judaean Desert papyri already screened in the 10 October DDbDP lane; broad re-screening has no new target",
+  "reported_prior_scope": {
+    "files": 580,
+    "transcribed_Greek_window": 145,
+    "core": 108,
+    "extended": 37,
+    "source_commit": "papyri/idp.data 35b5e2279ad29c44824f6dc60d9fc748dc109305"
+  },
+  "remaining_exact_sources": [
+    "CIIP II Jatt inscriptions",
+    "Porath and Kasher, The Inscriptions in Burial Cave 5, Atiqot37 (1999), pp47*–51*",
+    "untranscribed P.Mur108–111,122,126,158–163,166–168; O.Masada750–771,782–783; exact Greek originals only"
+  ],
+  "scope_limit": "Read pinned prior reports and current Drive index; did not independently reprocess the DDbDP corpus, inspect native Jatt inscriptions or expand the prior personal-initial test",
+  "bounded_original_search": {
+    "status": "not obtained",
+    "queries": [
+      "Jatt tomb5 Agrippas Berenike Atiqot37 inscriptions",
+      "site:publications.iaa.org.il Jatt 37",
+      "Archaeological Remains at Jatt / The Inscriptions in Burial Cave5"
+    ],
+    "result": "No exact readable primary Jatt inscription page recovered. Bibliographic routes do not authenticate the abbreviation chain.",
+    "catalogue_route": "https://independent.academia.edu/eliyannai",
+    "native_page_locator": "Atiqot37 pp47*–51*; CIIPII exact inscription numbers still unresolved"
+  },
+  "frozen_result_effect": "No reopened Greek group-function, personal-initial or engraving-order result"
+}

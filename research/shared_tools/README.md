@@ -1,6 +1,6 @@
 # Shared research tools
 
-These tools apply across the project's entries. They import existing source records and preserve their inspection, uncertainty and exposure limits. The initial data is pinned to main commit `26871df2e5e673f590b6fdf031489791dd88c38b`.
+These tools apply across the project's entries. They import existing source records and preserve their inspection, uncertainty and exposure limits. The initial adapters originated at main commit `26871df2e5e673f590b6fdf031489791dd88c38b`. Source-index links now pin the checked-out commit at build time; build from a committed checkout. Without Git, links fall back to that original snapshot.
 
 ## Run
 
@@ -29,7 +29,7 @@ python research/shared_tools/cli.py benchmark
 
 The local SQLite index searches project notes, catalogue rows and structured figure/page metadata. A result retains its source path, source-line or JSON-pointer identity, and original-asset path where recorded. Printed pages and one-based PDF pages remain separate; the builder never estimates an offset. For example, the Siloam Plan 1 record links printed 74* to PDF 5 and its archived original.
 
-Search normalizes accents and Hebrew vocalization. Displayed snippets identify that normalization; follow the source for exact spellings. Query input is literal text, rather than an SQL or FTS expression. Source and builder hashes reject stale indexes; separate dependency hashes protect the manuscript, entry and control caches. Atlas mirrors are excluded; documentary records retain separate provenance even when they refer to the same underlying observation.
+Search normalizes accents and Hebrew vocalization. Displayed snippets identify that normalization; follow the source for exact spellings. Query input is literal text, rather than an SQL or FTS expression. Source and builder hashes reject stale indexes; separate dependency hashes protect the manuscript, entry and control caches. Rebuilding creates a fresh database and replaces the generated cache after successful indexing, including when the old cache is corrupt. Atlas mirrors are excluded; documentary records retain separate provenance even when they refer to the same underlying observation.
 
 `build --ocr` also indexes existing local `.txt` files. The default index imports metadata and notes. Original PDFs, restricted images and OCR remain in their existing locations. Generated databases and exports stay outside Git through this directory's `.gitignore`. A search hit establishes retrieval, with inspection scope inherited from its record.
 
@@ -57,6 +57,16 @@ The Hyrcania diagnostic reproduces the local transform for the existing failed r
 
 Independent empirical accuracy and human letter-reading accuracy remain untested. The [recovery benchmark](../benchmarks/recovery/README.md) and the [letter-reading controls](../text/letter_controls/PROTOCOL.md) (8 October) prepare those tests; neither has been run. Those evaluations need independently established answers, appropriate controls and a record of which observations were reserved before testing. Synthetic holdouts are computational fixtures.
 
+The [published-dimension pilot](plan_pilot/RESULTS.md) now checks newly selected scale-bar chords against three excavation reports. Prediction inputs exclude the prose reference values; input hashes and recomputation reject stale saved results. The analyst saw the references before selecting points, and independent field-reference provenance is unverified. Both measurable primary chords exceed the chosen screening budget; the third plan lacks a reliable second boundary and remains unmeasurable. This supplies documentary agreement errors, with source/datum uncertainty preserved.
+
+Reproduce the staged computation:
+
+```sh
+python research/shared_tools/plan_benchmark.py predict research/shared_tools/plan_pilot/measurements.json --protocol research/shared_tools/plan_pilot/PROTOCOL.md --output research/shared_tools/cache/pilot-predictions.json
+python research/shared_tools/plan_benchmark.py grade research/shared_tools/cache/pilot-predictions.json research/shared_tools/plan_pilot/references.json --output research/shared_tools/cache/pilot-results.json
+python research/shared_tools/cli.py benchmark
+```
+
 ## Blind review and visit capture
 
 Prepare local packets:
@@ -71,6 +81,28 @@ The review export separates anonymous reviewer item codes and a response form fr
 
 The capture form records document/object identifiers, custodian, printed/PDF page, figure, view, lighting, rotation, scale, north convention, coordinate frame, phase basis, derivation and reuse terms. Validation computes local-file hashes, detects duplicates/hash mismatches/path escapes and keeps unrecorded information unknown. Complete capture metadata supplies neither depth calibration nor an ancient phase.
 
+## Case-study methods
+
+The parallel case-study work adds source-linked witness auditing, finite observation planning, published-feature recovery, original-letter control preparation, repeated text constraints and a source-instrument/registration audit. Each report distinguishes the obtained dataset from the primary evidence still needed. These outputs are exploratory; independently established field truth and qualified human letter readings remain dependencies.
+
+Inspect the saved results through the shared CLI:
+
+```sh
+python research/shared_tools/cli.py methods
+python research/shared_tools/cli.py methods observations
+```
+
+The first command lists reports and snapshot hashes; selecting a method also returns its saved JSON. It does not rerun a test or certify that inputs are current. Rebuild with the method's own command and compare its input hashes when source evidence changes.
+
+| Method | Result and reusable operation |
+| --- | --- |
+| `witnesses` | [Koḥlit feature witnesses](../rarity/kohlit/witness_audit/RESULTS.md): recover each coder's exact feature, preserve unknown geometry and distinguish condition agreement from an agreed assignment. |
+| `observations` | [Separating observations](../feature_workbench/decisions/separation/RESULTS.md): compute minimum observation sets over finite prediction sets, collapse duplicate nuisance branches and retain acquisition gates. |
+| `recovery` | [Published-feature recovery](recovery_benchmark/RESULTS.md): recover redacted source identities, preserve ambiguous/null cases and keep independent field truth outside the exposed pilot. |
+| `letters` | [Original-letter controls](letter_controls/RESULTS.md): audit item eligibility, stage anonymous packets and score locked responses, abstentions and disagreements. Empirical accuracy is not yet measured. |
+| `text` | [Repeated text constraints](text_constraints/RESULTS.md): retain exact Hebrew word anchors, damage/editorial flags and alternative parses, then propagate source-controlled constraints. |
+| `coverage` | [Negative notices and registration](../feature_workbench/coverage/audit/RESULTS.md): separate documentary absence from searched ancient volume and test whether actual plan records support independent geographic validation. |
+
 ## Verification
 
 ```sh
@@ -81,3 +113,7 @@ python research/shared_tools/cli.py build
 Tests cover locator ambiguity, Unicode retrieval, stale input rejection, original/replica separation, unresolved mappings, shared entry boundaries, missing control observations, transformation errors and capture/review separation. The five interface API routes and JavaScript syntax were checked. Browser rendering remains unverified because Chromium is unavailable in this runtime.
 
 Next evidence remains in [ACTIVE_TEST](../ACTIVE_TEST.md). These tools support retrieval and preparation across lanes; each closed scientific test retains its recorded reopening condition.
+
+## Applied constraints and uncertainty
+
+The [12 October workbench comparisons](../feature_workbench/README.md#applied-comparisons--12-october-2026) apply the books and source ancestry to physical witnesses, pit/pool readings, measurement resolution and inventory roles. The [registration helper correction](../assessments/kohlit_chain/registration_protocol.md#4-the-fit) requires complete pair-local uncertainty for same-plan relations; scale and differential distortion do not cancel with shared translation. Historical pilot failures remain recorded.

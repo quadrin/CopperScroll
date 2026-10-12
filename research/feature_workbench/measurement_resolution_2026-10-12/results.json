@@ -1,0 +1,361 @@
+{
+  "schema": 1,
+  "scope": "derived exploratory resolution analysis; no frozen archaeological verdicts changed",
+  "pilot_reproduction": [
+    {
+      "id": "dagesh_l1",
+      "status": "measured_documentary_discrepancy",
+      "chords": [
+        {
+          "id": "axis_a",
+          "metres": 2.553882152642674,
+          "picking_only_interval_m": [
+            2.394096813953457,
+            2.7257267621763597
+          ]
+        },
+        {
+          "id": "axis_b",
+          "metres": 2.3527722350628513,
+          "picking_only_interval_m": [
+            2.200043384709769,
+            2.5170277911029593
+          ]
+        }
+      ],
+      "field_accuracy": null,
+      "source_total_error_m": null,
+      "primary_error_percent": 8.7899231199045,
+      "same_as_saved_primary": true
+    },
+    {
+      "id": "migdal_l32",
+      "status": "measured_documentary_discrepancy",
+      "chords": [
+        {
+          "id": "axis_a",
+          "metres": 4.314782374439702,
+          "picking_only_interval_m": [
+            4.056038419594155,
+            4.588746561923223
+          ]
+        },
+        {
+          "id": "axis_b",
+          "metres": 3.568748994781659,
+          "picking_only_interval_m": [
+            3.330728189371057,
+            3.820771024039943
+          ]
+        }
+      ],
+      "field_accuracy": null,
+      "source_total_error_m": null,
+      "primary_error_percent": 7.86955936099254,
+      "same_as_saved_primary": true
+    },
+    {
+      "id": "etri_z2",
+      "status": "unmeasurable",
+      "chords": [
+        {
+          "id": "axis_a",
+          "metres": 5.074074074074074,
+          "picking_only_interval_m": [
+            4.821428571428571,
+            5.346153846153846
+          ]
+        }
+      ],
+      "field_accuracy": null,
+      "source_total_error_m": null
+    }
+  ],
+  "depth_resolution": [
+    {
+      "entry": 11,
+      "conditional_depth_band_m": [
+        1.6,
+        2.4
+      ],
+      "discrete_alternatives": [
+        {
+          "cubit_m": 0.445,
+          "distance_m": 1.78
+        },
+        {
+          "cubit_m": 0.5,
+          "distance_m": 2.0
+        },
+        {
+          "cubit_m": 0.525,
+          "distance_m": 2.1
+        }
+      ],
+      "pairwise_resolution_requirements": [
+        {
+          "cubits_m": [
+            0.445,
+            0.5
+          ],
+          "prediction_gap_m": 0.21999999999999997,
+          "equal_error_must_be_strictly_less_than_m": 0.10999999999999999
+        },
+        {
+          "cubits_m": [
+            0.445,
+            0.525
+          ],
+          "prediction_gap_m": 0.32000000000000006,
+          "equal_error_must_be_strictly_less_than_m": 0.16000000000000003
+        },
+        {
+          "cubits_m": [
+            0.5,
+            0.525
+          ],
+          "prediction_gap_m": 0.10000000000000009,
+          "equal_error_must_be_strictly_less_than_m": 0.050000000000000044
+        }
+      ],
+      "one_centimetre_cubit_step_error_ceiling_m": 0.02,
+      "datum_m": null,
+      "phase": null,
+      "total_target_interval_m": null,
+      "can_discriminate_archaeologically": false,
+      "reason": "Ancient datum/axis/phase and complete metric error remain unavailable"
+    },
+    {
+      "entry": 25,
+      "conditional_depth_band_m": [
+        1.2000000000000002,
+        1.7999999999999998
+      ],
+      "discrete_alternatives": [
+        {
+          "cubit_m": 0.445,
+          "distance_m": 1.335
+        },
+        {
+          "cubit_m": 0.5,
+          "distance_m": 1.5
+        },
+        {
+          "cubit_m": 0.525,
+          "distance_m": 1.5750000000000002
+        }
+      ],
+      "pairwise_resolution_requirements": [
+        {
+          "cubits_m": [
+            0.445,
+            0.5
+          ],
+          "prediction_gap_m": 0.16500000000000004,
+          "equal_error_must_be_strictly_less_than_m": 0.08250000000000002
+        },
+        {
+          "cubits_m": [
+            0.445,
+            0.525
+          ],
+          "prediction_gap_m": 0.2400000000000002,
+          "equal_error_must_be_strictly_less_than_m": 0.1200000000000001
+        },
+        {
+          "cubits_m": [
+            0.5,
+            0.525
+          ],
+          "prediction_gap_m": 0.07500000000000018,
+          "equal_error_must_be_strictly_less_than_m": 0.03750000000000009
+        }
+      ],
+      "one_centimetre_cubit_step_error_ceiling_m": 0.015,
+      "datum_m": null,
+      "phase": null,
+      "total_target_interval_m": null,
+      "can_discriminate_archaeologically": false,
+      "reason": "Ancient datum/axis/phase and complete metric error remain unavailable"
+    },
+    {
+      "entry": 26,
+      "conditional_depth_band_m": [
+        3.6,
+        5.3999999999999995
+      ],
+      "discrete_alternatives": [
+        {
+          "cubit_m": 0.445,
+          "distance_m": 4.005
+        },
+        {
+          "cubit_m": 0.5,
+          "distance_m": 4.5
+        },
+        {
+          "cubit_m": 0.525,
+          "distance_m": 4.7250000000000005
+        }
+      ],
+      "pairwise_resolution_requirements": [
+        {
+          "cubits_m": [
+            0.445,
+            0.5
+          ],
+          "prediction_gap_m": 0.4950000000000001,
+          "equal_error_must_be_strictly_less_than_m": 0.24750000000000005
+        },
+        {
+          "cubits_m": [
+            0.445,
+            0.525
+          ],
+          "prediction_gap_m": 0.7200000000000006,
+          "equal_error_must_be_strictly_less_than_m": 0.3600000000000003
+        },
+        {
+          "cubits_m": [
+            0.5,
+            0.525
+          ],
+          "prediction_gap_m": 0.22500000000000053,
+          "equal_error_must_be_strictly_less_than_m": 0.11250000000000027
+        }
+      ],
+      "one_centimetre_cubit_step_error_ceiling_m": 0.045,
+      "datum_m": null,
+      "phase": null,
+      "total_target_interval_m": null,
+      "can_discriminate_archaeologically": false,
+      "reason": "Ancient datum/axis/phase and complete metric error remain unavailable"
+    }
+  ],
+  "ac94": {
+    "stress_envelope_terminus_upper_m": 9.241453,
+    "numeral_bands_m": [
+      [
+        9.600000000000001,
+        14.399999999999999
+      ],
+      [
+        10.8,
+        16.2
+      ]
+    ],
+    "bands_overlap_m": [
+      10.8,
+      14.399999999999999
+    ],
+    "numeral_discrimination_with_free_unit": "impossible over the overlapping bands even with zero measurement error",
+    "additional_source_budget_needed_to_preserve_plan_miss": [
+      {
+        "numeral": 24,
+        "additive_must_be_less_than_m": 0.3585470000000015,
+        "multiplicative_must_be_less_than_fraction": 0.0387976869005342
+      },
+      {
+        "numeral": 27,
+        "additive_must_be_less_than_m": 1.5585470000000008,
+        "multiplicative_must_be_less_than_fraction": 0.16864739776310067
+      }
+    ],
+    "illustrative_stress_only": [
+      {
+        "scenario": "zero_additional_error",
+        "fraction": 0.0,
+        "upper_m": 9.241453,
+        "still_below_band_minimum": [
+          true,
+          true
+        ]
+      },
+      {
+        "scenario": "ac94_inner_trace_report_relative_discrepancy",
+        "fraction": 0.05476215909090925,
+        "upper_m": 9.747534919417161,
+        "still_below_band_minimum": [
+          false,
+          true
+        ]
+      },
+      {
+        "scenario": "Dagesh_primary_documentary_mismatch",
+        "fraction": 0.08789923119904501,
+        "upper_m": 10.053769613862107,
+        "still_below_band_minimum": [
+          false,
+          true
+        ]
+      },
+      {
+        "scenario": "Migdal_primary_documentary_mismatch",
+        "fraction": 0.0786955936099254,
+        "upper_m": 9.968714629653226,
+        "still_below_band_minimum": [
+          false,
+          true
+        ]
+      }
+    ],
+    "stress_limit": "Documentary mismatch magnitudes are sensitivity scenarios, never calibrated transferred errors or scale corrections",
+    "archaeological_decision": "not identifiable from available evidence",
+    "total_archaeological_error_m": null
+  },
+  "iv17": {
+    "observed_proxy_interval_deg": [
+      99.5,
+      140.8
+    ],
+    "distance_from_central_proxy_to_primary_sector_edge_deg": 12.099999999999994,
+    "ancient_aspect_decision": "unknown",
+    "ancient_depth_decision": "unknown",
+    "reason": "Proxy envelope crosses sector edge; north convention and ancient jambs/threshold unresolved; no exposed-plan scoring under frozen rule"
+  },
+  "hyrcania": {
+    "centre_pick_only_m": 2.797202797202797,
+    "failed_geographic_check_m": 244.371061,
+    "shortest_side_m": 15,
+    "24_cubit_narrow_band_m": [
+      10.68,
+      12.600000000000001
+    ],
+    "24_cubit_broad_band_m": [
+      9.600000000000001,
+      14.399999999999999
+    ],
+    "narrow_gap_m": 2.3999999999999986,
+    "broad_gap_m": 0.6000000000000014,
+    "field_exclusion": false,
+    "reason": "Side datum and survey error unquantified; offset origins undefined; failed geography retained"
+  },
+  "siloam": {
+    "entry": 49,
+    "metric_offset_test_permitted": false,
+    "depth_budget_m": null,
+    "reason": "No cubit/depth instruction; main-side underside/floor contact unresolved"
+  },
+  "registration": {
+    "north_sector_example_required_margin_deg": 34.21057985417024,
+    "near_due_north_remaining_half_width_deg": 10.789420145829759,
+    "existing_map_error_m": 49,
+    "mouth_max_project_proxy_m": 2.5,
+    "existing_map_can_test_mouth_relation": false,
+    "same_document_error_requires_differential_model": true,
+    "probabilistic_field_accuracy_estimated": false
+  },
+  "benchmark_readiness": {
+    "unused_eligible_case_verified": false,
+    "ready": false,
+    "missing": [
+      "coordinator_id",
+      "reviewer_ids",
+      "freeze_commit",
+      "frozen_before_truth_access",
+      "cases"
+    ],
+    "decision": "not identifiable from available evidence: independent field accuracy"
+  },
+  "inputs_sha256": "eccd22ce5443933c6bba0ad9e389f1143bfcfc1aff1c142187c6792c3aed0038"
+}

@@ -2,7 +2,7 @@
 
 Updated 12 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **obtained**: the [Herodium original-page extract and readable crops](sources/full_reads_2026-10-12/storage_language_audit/README.md#original-page-packet-inspection-12-october-2026) recover Naveh's published tentative readings, מ=40 and לה=35, restoration/uncertainty marks and full commentary. מטמר permits hiding place or hidden object; numbered spatial referents remain tentative. Wheat/barley is his context inference, with no contents identification from chemistry. Claimed and received image hashes/dimensions stay separate.
+Last session (12 October): **partly** — obtained [applied feature/phase comparisons](feature_workbench/book_application_2026-10-12/README.md), [pit/pool/numerical alternatives and native report audit](text/entry46_alternatives_2026-10-12/README.md), [measurement resolution and corrected pair uncertainty](feature_workbench/measurement_resolution_2026-10-12/README.md), and [inventory-role predictions](comparanda/inventory_forms_2026-10-12/README.md). Atara’s western conduit and Absalom’s separate entrance phases change conditional clauses; missing dates/datums prevent identification. [Archive replies](agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026) narrow Manchester/CBRL routes; [Rachel Bar-Nathan reports holding Jericho field notes and requests an owner call](assessments/entry29_jericho_pools/netzer2001-first-pass.md#field-notes-holder-response--12-october-2026), without supplying the junction/level records.
 
 ## Active questions and the observation that decides each
 
@@ -24,7 +24,7 @@ All are **not identifiable from available evidence**; details in the history fil
 
 - USC Libraries Special Collections (8 October UTC / 7 October Los Angeles): 1200-ppi WSRP masters of cuts 21–22.
 - Liverpool Special Collections and Archives (9 October): Jericho papers JG/8 and pre-camp records north of the tell; acknowledgement received, holdings not established.
-- CBRL (9 October): possible Garstang Jericho negatives and photographs north of the tell; museum referral does not establish custody.
+- CBRL (9 October; reply 12 October): preliminary list check found no early Jericho target; PEF considered likelier, regional archivists copied for custody confirmation.
 - Palestine Exploration Fund (8 October UTC / 7 October Los Angeles): Garstang Papers 1930–36 and pre-1948 Jericho photos.
 - Lorenzo Nigro, Sapienza (8 October UTC / 7 October Los Angeles): records north of Tell es-Sultan; period attribution to be checked, meeting proposed for 18–24 October.
 - ÉBAF (8 October): EDF copy and X-rays of segments 21–22. On 11 October Jalabert referred access to the secretariat; he is away until 25 October. Replica/X-ray access needs separate confirmation.
@@ -32,11 +32,11 @@ All are **not identifiable from available evidence**; details in the history fil
 - Carla Benelli, Mosaic Centre Jericho (7 October): Meinardus scan expected mid-October; 8 October welcome for an archive visit with notice, except Friday and Thursday afternoon.
 - Manchester Museum (5 and 7 October): C.10a.1/C.10.1 and Allegro strips C.21–23, cutting photos and 1955 film; 8 October estate check and Joan Taylor referral.
 - Joan Taylor, King's College London (8 October): Allegro C.21A.1–4, C.22A.1–10, C.22.1–2, C.21-23.1 and film of segments 21–22.
-- University of Manchester Library (7 October): GB 133 TPA/1/132 and Wright Baker cutting records.
+- University of Manchester Library (7 October; reply 12 October): TPA/1/132 has general material without cutting photos/research notes; archivist continues Allegro inquiry.
 - IAA Archive (7 October): cave records for the Qumran cliffs, Jericho escarpment and Wadi Qelt.
 - Bruce Zuckerman, USC (5 October): original WSRP Figure 4.6 composite and component map.
 - Nahshon Szanton, Tel Aviv University (6 October): Siloam main-side L103 junction section.
-- Rachel Bar-Nathan and Roi Porat (6 October): A(C)94 wall-junction drawing and level register, on Ruhama Bonfil's referral.
+- Rachel Bar-Nathan and Roi Porat (6 October; Rachel reply 12 October): Rachel holds unorganized field notes and requests owner call; A(C)94 junction/level records not supplied, Roi reply pending.
 - Staff Officer for Archaeology archive (6 October): Wadi Nuʿeima inspection file from ESI 5 pp. 110–111.
 - Staff Officer for Archaeology archive (11 October UTC / 10 October Los Angeles): IV/17, Dadon, permit L-656; plans, threshold/wall sections, level and basket registers.
 - Hebrew University aerial archive (11 October UTC / 10 October Los Angeles): RAF PS30 5107/5137 and PS32 5069/5070 scans; resolution, coverage, quote and reuse terms.
@@ -50,7 +50,7 @@ Full request texts: [7 October outreach](agent_review_2026-10-07/followup/F_outr
 
 ## Next evidence to obtain
 
-An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or Manchester C.21–23 by reply, or the EDF copy/X-rays through separately confirmed ÉBAF access. Then the Meinardus scan expected mid-October. Source-bearing arrivals follow the frozen arrival procedure; the corrected custodial routes are in the access evidence above.
+An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or Manchester C.21–23 by reply, or the EDF copy/X-rays through separately confirmed ÉBAF access. Also the owner’s call to Rachel to identify/access A(C)94’s exact wall-junction section and level register, and the Meinardus scan expected mid-October. Source-bearing arrivals follow the frozen arrival procedure; the corrected custodial routes are in the access evidence above.
 
 ## Key reports
 
