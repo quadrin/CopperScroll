@@ -1,0 +1,113 @@
+{
+ "by_class": {
+  "cave_with_finds": {
+   "no": 4,
+   "rows": 7,
+   "unknown": 2,
+   "yes": 1
+  },
+  "channel_aqueduct": {
+   "no": 11,
+   "rows": 25,
+   "unknown": 12,
+   "yes": 2
+  },
+  "cistern": {
+   "no": 9,
+   "rows": 16,
+   "unknown": 7,
+   "yes": 0
+  },
+  "columbarium_dovecote": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "dam": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "hoard_cache": {
+   "no": 1,
+   "rows": 2,
+   "unknown": 0,
+   "yes": 1
+  },
+  "pool_reservoir": {
+   "no": 3,
+   "rows": 6,
+   "unknown": 3,
+   "yes": 0
+  },
+  "ritual_bath": {
+   "no": 1,
+   "rows": 2,
+   "unknown": 1,
+   "yes": 0
+  },
+  "rockcut_installation": {
+   "no": 4,
+   "rows": 8,
+   "unknown": 3,
+   "yes": 1
+  },
+  "tomb_burial_cave": {
+   "no": 11,
+   "rows": 22,
+   "unknown": 8,
+   "yes": 3
+  }
+ },
+ "by_zone": {
+  "Z1_GERIZIM": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "Z2_JORDAN_VALLEY": {
+   "no": 3,
+   "rows": 6,
+   "unknown": 3,
+   "yes": 0
+  },
+  "Z3_JUDEAN_DESERT": {
+   "no": 5,
+   "rows": 7,
+   "unknown": 2,
+   "yes": 0
+  },
+  "Z4_JERUSALEM_HILLS": {
+   "no": 36,
+   "rows": 75,
+   "unknown": 31,
+   "yes": 8
+  }
+ },
+ "decisions": {
+  "HELD": 4,
+  "IN": 71,
+  "NOT_FIELD": 83,
+  "NO_TEXT": 4,
+  "OUT_REGION": 182,
+  "OUT_TITLE": 2
+ },
+ "feature_rows": 88,
+ "held": 4,
+ "reports": 71,
+ "reports_by_tier": {
+  "T1": 20,
+  "T2": 42,
+  "T3": 9
+ },
+ "reports_without_feature": 22,
+ "units_screened": 346,
+ "window": {
+  "no": 44,
+  "unknown": 36,
+  "yes": 8
+ }
+}
