@@ -34,8 +34,10 @@ DATA = os.path.join(LANE, "data")
 AMENDMENT = os.path.join(LANE, "PLAN_AMENDMENT_PHASE4_2026-10-12.md")
 AMENDMENT_SHA256 = "ba1f690c9a556290895b119f23464201f0ac736ddee4f98bb42c5daca98b5f2d"
 AMENDMENT_COMMIT = "f2b42ac"
-# merged_2026-10-12/features_all.csv at commit 7cac03b (amendment §2)
-FEATURES_ALL_SHA256 = "940e6c04b1ecd18c79a7c88a784a463d69056f70c6e31ad18e5a18c46866d65d"
+# merged_2026-10-12/features_all.csv as rebuilt under merge amendment B3 (12 Oct 2026). Amendment §2 pinned the
+# commit-7cac03b build (940e6c04…6d65d); B3 adds two non-hoard rows, and the 77 counted hoard_cache rows are
+# byte-identical between the two builds.
+FEATURES_ALL_SHA256 = "23a23214ed475b5c3a3a213f29d4094518acbdf1b187cffd7c78949a635eae38"
 # the frozen lane outputs, which this view must never change
 FROZEN_LANE_SHA256 = {
     "hoards.csv": "211bef3cee9fece1de0afbfc26cb549af923380de043a8c2df757fa7342d5eb1",
