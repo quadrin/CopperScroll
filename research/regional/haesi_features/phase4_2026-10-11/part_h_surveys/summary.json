@@ -1,0 +1,265 @@
+{
+ "by_class": {
+  "cave_with_finds": {
+   "no": 0,
+   "rows": 16,
+   "unknown": 16,
+   "yes": 0
+  },
+  "channel_aqueduct": {
+   "no": 0,
+   "rows": 11,
+   "unknown": 11,
+   "yes": 0
+  },
+  "cistern": {
+   "no": 1,
+   "rows": 24,
+   "unknown": 23,
+   "yes": 0
+  },
+  "columbarium_dovecote": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "dam": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "hoard_cache": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "pool_reservoir": {
+   "no": 2,
+   "rows": 14,
+   "unknown": 12,
+   "yes": 0
+  },
+  "ritual_bath": {
+   "no": 1,
+   "rows": 4,
+   "unknown": 3,
+   "yes": 0
+  },
+  "rockcut_installation": {
+   "no": 0,
+   "rows": 9,
+   "unknown": 9,
+   "yes": 0
+  },
+  "tomb_burial_cave": {
+   "no": 6,
+   "rows": 23,
+   "unknown": 17,
+   "yes": 0
+  }
+ },
+ "by_class_and_zone": {
+  "cave_with_finds": {
+   "Z1_GERIZIM": 1,
+   "Z2_JORDAN_VALLEY": 1,
+   "Z3_JUDEAN_DESERT": 4,
+   "Z4_JERUSALEM_HILLS": 10
+  },
+  "channel_aqueduct": {
+   "Z1_GERIZIM": 2,
+   "Z2_JORDAN_VALLEY": 4,
+   "Z3_JUDEAN_DESERT": 3,
+   "Z4_JERUSALEM_HILLS": 2
+  },
+  "cistern": {
+   "Z1_GERIZIM": 3,
+   "Z2_JORDAN_VALLEY": 2,
+   "Z3_JUDEAN_DESERT": 5,
+   "Z4_JERUSALEM_HILLS": 14
+  },
+  "columbarium_dovecote": {
+   "Z1_GERIZIM": 0,
+   "Z2_JORDAN_VALLEY": 0,
+   "Z3_JUDEAN_DESERT": 0,
+   "Z4_JERUSALEM_HILLS": 0
+  },
+  "dam": {
+   "Z1_GERIZIM": 0,
+   "Z2_JORDAN_VALLEY": 0,
+   "Z3_JUDEAN_DESERT": 0,
+   "Z4_JERUSALEM_HILLS": 0
+  },
+  "hoard_cache": {
+   "Z1_GERIZIM": 0,
+   "Z2_JORDAN_VALLEY": 0,
+   "Z3_JUDEAN_DESERT": 0,
+   "Z4_JERUSALEM_HILLS": 0
+  },
+  "pool_reservoir": {
+   "Z1_GERIZIM": 2,
+   "Z2_JORDAN_VALLEY": 2,
+   "Z3_JUDEAN_DESERT": 5,
+   "Z4_JERUSALEM_HILLS": 5
+  },
+  "ritual_bath": {
+   "Z1_GERIZIM": 2,
+   "Z2_JORDAN_VALLEY": 0,
+   "Z3_JUDEAN_DESERT": 2,
+   "Z4_JERUSALEM_HILLS": 0
+  },
+  "rockcut_installation": {
+   "Z1_GERIZIM": 2,
+   "Z2_JORDAN_VALLEY": 1,
+   "Z3_JUDEAN_DESERT": 0,
+   "Z4_JERUSALEM_HILLS": 6
+  },
+  "tomb_burial_cave": {
+   "Z1_GERIZIM": 5,
+   "Z2_JORDAN_VALLEY": 2,
+   "Z3_JUDEAN_DESERT": 4,
+   "Z4_JERUSALEM_HILLS": 12
+  }
+ },
+ "by_class_zone_unresolved": {
+  "cave_with_finds": {
+   "no": 2,
+   "rows": 14,
+   "unknown": 12,
+   "yes": 0
+  },
+  "channel_aqueduct": {
+   "no": 3,
+   "rows": 9,
+   "unknown": 6,
+   "yes": 0
+  },
+  "cistern": {
+   "no": 2,
+   "rows": 36,
+   "unknown": 34,
+   "yes": 0
+  },
+  "columbarium_dovecote": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "dam": {
+   "no": 0,
+   "rows": 1,
+   "unknown": 1,
+   "yes": 0
+  },
+  "hoard_cache": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "pool_reservoir": {
+   "no": 2,
+   "rows": 9,
+   "unknown": 7,
+   "yes": 0
+  },
+  "ritual_bath": {
+   "no": 0,
+   "rows": 0,
+   "unknown": 0,
+   "yes": 0
+  },
+  "rockcut_installation": {
+   "no": 0,
+   "rows": 4,
+   "unknown": 4,
+   "yes": 0
+  },
+  "tomb_burial_cave": {
+   "no": 5,
+   "rows": 21,
+   "unknown": 16,
+   "yes": 0
+  }
+ },
+ "by_source": {
+  "gue_j1": {
+   "not read (no description)": 4,
+   "not read (unlocated)": 56,
+   "read": 22
+  },
+  "swp2": {
+   "not read (no description)": 2,
+   "not read (out)": 447,
+   "not read (unlocated)": 213,
+   "read": 13,
+   "read (zone unresolved)": 2
+  },
+  "swp3": {
+   "Tier-1 extraction only": 1,
+   "held or protected (citation only)": 2,
+   "not read (no description)": 2,
+   "not read (out)": 716,
+   "not read (unlocated)": 174,
+   "read": 46,
+   "read (zone unresolved)": 117
+  }
+ },
+ "by_zone": {
+  "Z1_GERIZIM": {
+   "no": 2,
+   "rows": 17,
+   "unknown": 15,
+   "yes": 0
+  },
+  "Z2_JORDAN_VALLEY": {
+   "no": 2,
+   "rows": 12,
+   "unknown": 10,
+   "yes": 0
+  },
+  "Z3_JUDEAN_DESERT": {
+   "no": 1,
+   "rows": 23,
+   "unknown": 22,
+   "yes": 0
+  },
+  "Z4_JERUSALEM_HILLS": {
+   "no": 5,
+   "rows": 49,
+   "unknown": 44,
+   "yes": 0
+  }
+ },
+ "by_zone_unresolved": {
+  "Z2_JORDAN_VALLEY|Z3_JUDEAN_DESERT": 22,
+  "Z3_JUDEAN_DESERT|Z4_JERUSALEM_HILLS": 72
+ },
+ "feature_rows": 101,
+ "feature_rows_zone_unresolved": 94,
+ "held_records": 6,
+ "status": {
+  "Tier-1 extraction only": 1,
+  "held or protected (citation only)": 2,
+  "not read (no description)": 8,
+  "not read (out)": 1163,
+  "not read (unlocated)": 443,
+  "read": 81,
+  "read (zone unresolved)": 119
+ },
+ "units_read": 200,
+ "units_screened": 1817,
+ "window": {
+  "no": 10,
+  "unknown": 91,
+  "yes": 0
+ },
+ "window_zone_unresolved": {
+  "no": 14,
+  "unknown": 80,
+  "yes": 0
+ }
+}
