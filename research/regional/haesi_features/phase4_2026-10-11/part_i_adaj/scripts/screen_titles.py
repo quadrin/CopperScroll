@@ -46,7 +46,7 @@ def main():
             for r in csv.DictReader(f):
                 h = hits_for(r["title"], pats)
                 if h:
-                    print(json.dumps(dict(source=name, key=r.get("chapter_id") or r.get("heading_id"),
+                    print(json.dumps(dict(source=name, key=r.get("heading_id") or r.get("chapter_id"),
                                           volume=r["volume"], title=r["title"], hits=h), ensure_ascii=False))
 
 
