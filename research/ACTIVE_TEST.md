@@ -2,7 +2,7 @@
 
 Updated 10 October 2026 UTC / 10 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (11 October): **partly**: QDAP, SWP Memoirs II–III, Guérin *Judée* I and ADAJ read under the phase-2 rules ([phase 4](regional/haesi_features/phase4_2026-10-11/README.md): 347 units, 265 feature rows, 22 dated to the window); ʿAtiqot 42–121 and IAA Reports screened, their 249 in-region PDFs awaiting the owner's download approval. No registered result changed; nothing bears on the three active questions.
+Last session (12 October): **obtained**: ʿAtiqot 42–121, IAA Reports, QDAP, SWP Memoirs II–III, Guérin *Judée* I and ADAJ read under the phase-2 rules ([phase 4](regional/haesi_features/phase4_2026-10-11/README.md): 592 units, 718 feature rows, 152 dated to the window; the 249 portal PDFs downloaded with the owner's approval). Not yet deduplicated. No registered result changed; nothing bears on the three active questions.
 
 ## Active questions and the observation that decides each
 
