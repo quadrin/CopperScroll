@@ -141,6 +141,7 @@ Files: [iaa_units.csv](iaa_units.csv) (the 10 added rows in the `caves.csv` sche
 
 - **Rules.** [PLAN_AMENDMENT_PHASE4_2026-10-12.md](PLAN_AMENDMENT_PHASE4_2026-10-12.md) was committed alone as `9fad7f4` (2026-10-12T04:51:00Z), before any phase-4 row of this lane's classes was printed or mapped. SHA-256 `50e7a8762cc08e065251dde9e7bb248225ff1ef43a4a4d5ea0cec61885a6d8c1`. Its §1 lists what had been seen. It reruns the IAA-view method unchanged on all phases. It adds a screen for protected material, applied before a phase-4 row is read.
 - **Version changes.** Phase-4 reports join some earlier report groups. Even so, all 10 rows added on 11 October are still the selected version, and the 13 rows not added then are still not added.
+- **B3 refresh (12 Oct):** rerun unchanged on merged_2026-10-12 as rebuilt under its amendment B3 (input hashes in `scripts/phase4_view.py`). Nothing changed in substance. Of the two added rows, only the Efrata storage cave (`IAAR12-efrata`, cave_with_finds) is in this lane's classes; it lies west of the box, so the outside-box count goes from 83 to 84. No row was added, excluded or newly placed, there were no new review items, and every count and score is unchanged.
 
 **Phase-4 rows of this lane's classes met by the view (10).** The three rows that were read (added or merged) are in report groups and sites that hold only phase-4 rows. None of them joins an earlier report.
 - **Added (1 cave).** Hadas, ʿAtiqot 46 (2004) pp. 5–14 (Hebrew; English summary pp. 127*–128*), unit `ATQ46-i13-pyrite-lemonite-mine-near-spring-en`, site S0789. It is a rock-cut pyrite and limonite mine in the fault-escarpment cliff, 15 m long, called the "Small Pyrite Cave". It is admitted because its coding calls it a cave by name (PLAN 4.1(1)). Admitting a hewn mine is an exploratory choice. Its period is coded `partly` (Second Temple unqualified, with other periods). The same report's burial row does not call the feature a cave, so it is not admitted.
@@ -182,7 +183,7 @@ The new phase-4 row adds a C1 match only. Among all IAA-method rows, only Naḥa
   - Probably in the box, by name (INFERENCE from `places_v2` points; not checked on a map): the SWP III Mar Saba rows (p. 219, a cave row and a tomb row), Neby Musa (p. 220), Tell Muhalhal (p. 222), Khurbet es Sumrah (pp. 212–213) and Kurm Abu Tubk (p. 213). The lane already holds the Mar Saba laura caves (ASI 109/7).
   - Probably outside the box: the QDAP ʿIrq el-Ahmar, Umm Qatafa and Umm ez-Zuweitina rows (Wadi Khareitun, west), and SWP Sebbeh (Masada, south).
   - Unknown: SWP Khurbet Samieh and Kusr el ʿAreijeh.
-- **The rest of the region.** 83 phase-4 cave and tomb rows lie outside the box, and 92 have no position and lie in zones Z1 and Z4, which do not meet the box.
+- **The rest of the region.** 84 phase-4 cave and tomb rows lie outside the box, and 92 have no position and lie in zones Z1 and Z4, which do not meet the box.
 - **Coding limits.** The coding fields are short, and no plan was opened. The coverage gaps listed above for the frozen inventory remain.
 - **Safety box.** The Qumran safety box (§5.3) also covers Nebi Musa, so it is broader than the held area. No admitted row was affected.
 

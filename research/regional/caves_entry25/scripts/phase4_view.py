@@ -28,10 +28,11 @@ from build_caves import OUT_FIELDS  # noqa: E402
 
 MERGED = REPO / "research/regional/haesi_features/merged_2026-10-12"
 PHASE4 = REPO / "research/regional/haesi_features/phase4_2026-10-11"
-INPUT_SHA = {  # PLAN_AMENDMENT_PHASE4 section 2
-    "features_all.csv": "940e6c04b1ecd18c79a7c88a784a463d69056f70c6e31ad18e5a18c46866d65d",
-    "report_groups.csv": "38b67f3c7095993287ac9da80eb229a9752d56ff7c27cb9bb3b1024f47da702f",
-    "sites.csv": "5d7458016d7955cced5540d4307570879fbc5b2071d5f644e85d3cec0fcc16db",
+INPUT_SHA = {  # merged_2026-10-12 as rebuilt under its amendment B3 (12 Oct; adds two owner-supplied chapter rows).
+    # The amendment's section 2 values (pre-B3 build b4a41cc) were 940e6c04..., 38b67f3c..., 5d745801...
+    "features_all.csv": "23a23214ed475b5c3a3a213f29d4094518acbdf1b187cffd7c78949a635eae38",
+    "report_groups.csv": "e3121121f77a4cdc85aca2158839d66372c785bde7a53746ece5861bb2d1b47d",
+    "sites.csv": "749dfca8fed2473a117cb15fe1172da94206ca4779465133d460dffdc77f2626",
 }
 PLACES_SHA = "315474bd3be8cce3e1776e119417e2444edd99e3f028c7413185302fc7663683"
 MAPPED_UTC = "2026-10-12T04:52:30Z"  # first mapping of the in-box rows (scan), after amendment commit 9fad7f4
