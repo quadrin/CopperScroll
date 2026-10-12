@@ -34,9 +34,11 @@ SHEET_RANGE = {
     "XVII": ("JKLMN", "stu"), "XVIII": ("MNOP", "rstu"), "XIX": ("BCDE", "uvwx"), "XX": ("DEFGHIJ", "uvwx"),
     "XXI": ("IJKLM", "uvwx"), "XXII": ("NO", "vwx"), "XXIII": ("CDE", "x"), "XXIV": ("DEFGHIJ", "xyz"),
     "XXV": ("IJKLM", "xyz"), "XXVI": ("NO", "yz"),
-    "XI": ("IJKLMN", "nop"), "XII": ("NOPQ", "nop"), "XIV": ("JKLMN", "pqr"), "XV": ("NOPQ", "pqr"),
+    "IX": ("NOPQ", "jk"), "X": ("HIJ", "mno"), "XI": ("IJKLMN", "mno"), "XII": ("NOPQ", "mno"),
+    "XIII": ("GHIJ", "pqr"), "XIV": ("IJKLMN", "pqr"), "XV": ("NOP", "opqr"), "XVI": ("EFGHIJ", "stu"),
 }
-SHEETS_OUTSIDE = {"XIX", "XX", "XXIII", "XXIV"}  # every valid square of these sheets is outside the region
+SHEETS_OUTSIDE = {"XIX", "XX", "XXIII", "XXIV",   # every valid square of these sheets is outside the region
+                  "IX", "X", "XIII", "XVI"}
 
 
 def load_fixes():
@@ -57,7 +59,7 @@ def tier_of(zones):
 
 
 def screen(entries, vol, coef=None):
-    coef = coef or swp_grid.fit()
+    coef = coef or swp_grid.fit(group="III" if str(vol) == "3" else "II")
     fixes = load_fixes()
     rows = []
     merged = []
@@ -97,7 +99,7 @@ def screen(entries, vol, coef=None):
                 if status == "clear":
                     zone = z or "OUTSIDE"
                     basis = "SWP square"
-        hits = names.gaz_hits(e["name"])
+        hits = {z: h for z, h in names.gaz_hits(e["name"]).items() if z != "REGION_WIDE"}  # region-wide terms tier, they do not place
         hit_txt = "; ".join("%s: %s" % (z, ",".join(h)) for z, h in sorted(hits.items()))
         decision = ""
         if e.get("noentry"):

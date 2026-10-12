@@ -33,7 +33,12 @@ def idx(square):
     return ord(square[0]) - ord('A'), ord(square[1]) - ord('a')
 
 
-def load_calibration(path=CALIB):
+# Fit groups: the Memoirs III screen was frozen with the volume-III points only; Memoirs II uses all points
+# (the Samaria points were added before any volume-II entry was read).
+FIT_GROUPS = {"III": ("III",), "II": ("II", "III")}
+
+
+def load_calibration(path=CALIB, vols=None):
     places = {}
     with open(PLACES, newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
@@ -47,7 +52,8 @@ def load_calibration(path=CALIB):
             else:
                 pid = r["coord_source"].split()[1]
                 lat, lon = places[pid]
-            pts.append(dict(r, lat=lat, lon=lon))
+            if vols is None or r["swp_vol"] in vols:
+                pts.append(dict(r, lat=lat, lon=lon))
     return pts
 
 
@@ -66,9 +72,9 @@ def _lsq(X, y):
     return [M[i][n] / M[i][i] for i in range(n)]
 
 
-def fit(pts=None):
+def fit(pts=None, group="III"):
     """Affine fit lat, lon = a + b*row + c*col on square centres. Returns (lat_coef, lon_coef)."""
-    pts = pts or load_calibration()
+    pts = pts or load_calibration(vols=FIT_GROUPS[group])
     X = [[1.0, idx(p["swp_square"])[1], idx(p["swp_square"])[0]] for p in pts]
     return _lsq(X, [p["lat"] for p in pts]), _lsq(X, [p["lon"] for p in pts])
 
@@ -87,9 +93,9 @@ def to_rowcol(lat, lon, coef):
     return (c * e - b * f) / det, (a * f - c * d) / det
 
 
-def residuals(pts=None, coef=None):
+def residuals(pts=None, coef=None, group="III"):
     """Offset of each calibration point from its square centre, in square units (row, col)."""
-    pts = pts or load_calibration()
+    pts = pts or load_calibration(vols=FIT_GROUPS[group])
     coef = coef or fit(pts)
     out = []
     for p in pts:
@@ -119,10 +125,13 @@ def square_zone(square, coef=None, params=None, margin=MARGIN):
 
 
 if __name__ == "__main__":
-    coef = fit()
+    group = "III"
+    if sys.argv[1:2] in (["II"], ["III"]):
+        group = sys.argv.pop(1)
+    coef = fit(group=group)
     print("lat = %.5f %+.5f*row %+.5f*col" % tuple(coef[0]))
     print("lon = %.5f %+.5f*row %+.5f*col" % tuple(coef[1]))
-    for name, sq, dr, dc in residuals(coef=coef):
+    for name, sq, dr, dc in residuals(coef=coef, group=group):
         print("%-28s %s  row %+.2f  col %+.2f" % (name, sq, dr, dc))
     for sq in sys.argv[1:]:
         print(sq, square_zone(sq, coef))
