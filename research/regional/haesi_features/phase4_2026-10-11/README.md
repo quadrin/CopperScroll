@@ -69,7 +69,7 @@ The exact lines are in each part's `NOTES.md`. These texts are now exposed and c
 ## Not read
 
 - ʿAtiqot: nothing unread. Long reports were read at every passage naming an eligible feature, plus the dating and description passages. Three long Hebrew reports were coded from their English summaries.
-- IAA Reports: two chapters are missing from the portal scans. Manaḥat Ch. 14 (the miqveh) and Efrata App. 1 (the Byzantine winepresses) are separate chapter PDFs on the portal and were not downloaded.
+- IAA Reports: the two chapters missing from the portal scans (Manaḥat Ch. 14, the miqveh; Efrata App. 1, the Byzantine winepresses) were supplied by the owner on 12 October and coded in [an addendum](part_f_iaa_reports/reading_addendum_2026-10-12/README.md). It adds 2 rows: the Manaḥat miqveh, dated to the window, and a Byzantine storage cave. They are not yet in `merged_2026-10-12`. The other chapters of Manaḥat (6–13, 15–16) and Efrata (5–9) are still not read.
 - QDAP vol. 6 nos. 3–4 (archive.org returned HTTP 500 for the OCR text) and vol. 10 nos. 2–3 (not on archive.org). The British Library EAP1544 page images (records -63 and -69) could fill both.
 - Guérin *Judée* II–III and *Samarie* I (time limit); 443 SWP and Guérin entries that could not be located; SWP II pp. 401–408 (missing from the scan).
 - ADAJ 6/7 p. 116 (blank in the scan) and ADAJ 11 "Notes & News" (missing). The Arabic parts were read from page images, because the Arabic OCR model was blocked by the proxy.
