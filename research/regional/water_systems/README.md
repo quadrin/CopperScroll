@@ -178,6 +178,129 @@ Every entry, branch, lineage and date rule is in [iaa_view_2026-10-11.csv](iaa_v
 Files: [iaa_survey_rows.csv](iaa_survey_rows.csv) (the 769 IAA rows in the survey schema, with their view supersession and unit), [iaa_counts.csv](iaa_counts.csv), [iaa_headline.csv](iaa_headline.csv), [iaa_view_2026-10-11.csv](iaa_view_2026-10-11.csv), [iaa_posthoc_checks.csv](iaa_posthoc_checks.csv), [iaa_summary.json](iaa_summary.json), [scripts/iaa_view.py](scripts/iaa_view.py), [tests/test_iaa_view.py](tests/test_iaa_view.py).
 - Rebuild: `python3 -I research/regional/water_systems/scripts/iaa_view.py`. It uses committed tables only and never writes the frozen outputs.
 
+## Phase 1–4 inventory view, 12 October 2026 (exploratory)
+
+**What changed.** The merged inventory now covers phases 1–4 (`research/regional/haesi_features/merged_2026-10-12/`, commit b4a41cc). Run under the IAA-view rules unchanged, it adds 91 phase-4 rows in the box: 84 from ʿAtiqot, 6 from IAA Reports and 1 from ADAJ. QDAP, Guérin and SWP add none (no coordinates, or excluded). No new match appears in entries 21, 22, 29, 32, 42 or 45. Entry 46 gains one dated reservoir match within 2 km of Ramat Raḥel (the Armon ha-Naẓiv stepped pool) and two dated cistern-sensitivity matches within 2 km of ʿEin Kerem. All three are stepped installations that the excavators call ritual baths or miqvaʾot. The frozen headline and the IAA view are unchanged. Every row is exposed, so the whole view is exploratory.
+
+- **Rules.** [PLAN_AMENDMENT_PHASE4_2026-10-12.md](PLAN_AMENDMENT_PHASE4_2026-10-12.md) was committed alone as `6508ab7` (2026-10-12T04:49:29Z), before any phase-4 water row was printed or mapped. SHA-256 `3112926d89e6197ae704b43a05672c8c7e96fe28f64a5100dfb577af11a5f977`. Its §1 lists what had been seen: READMEs, headers, value counts and the held unit ids.
+- **How it was run.** `scripts/phase4_view.py` imports the frozen `build_water` and `score` and the IAA-view helpers, all unchanged. It first checks that the frozen procedure reproduces `counts.csv` and `headline.csv`, and that the IAA-view inputs reproduce `iaa_counts.csv`, byte for byte.
+- **Runs beside the primary.** Phases 1–3 alone under the new grouping; the 300 m bracket (508 rows treated as duplicates, 1,729 units); quote-only (806 rows); and "with SWP". The SWP run equals the primary, because no SWP water row has coordinates. Its only effect is that two rows of the held unit `SWP3-222-tell-es-sultan` are excluded.
+- **Choice made after the rows were seen.** The `new_match_units_vs_iaa` column was fixed to apply the date rule. `iaa_view.py` lists main-rule units without the date test: 13 units dated `out` appear in the entry 46 B-any listing of `iaa_view_2026-10-11.csv` (9 for reservoirs and cisterns, 4 for reservoirs only). The IAA counts are not affected, and that file is left as committed.
+
+**What is new**
+- **Rows.** 91 phase-4 rows lie in the box: 36 cisterns, 31 aqueducts, 22 pools or reservoirs and 2 dams.
+  - Dating: 21 `in`, 4 `in_hedged`, 9 `partly`, 18 undated and 39 `out`.
+  - None is placed by name only.
+  - 3 rows are superseded by literature sites: two Siloam Road rows by the Siloam site, and Bir Qadismu by Mar Elias.
+- **Report level.** 35 report groups have phase-4 rows in the box, giving 71 group × type units. Only 2 of those units share a group with phase 1–3 rows used here.
+- **Site level.** 35 sites, giving 72 site × type units: 59 have phase-4 rows only and 13 are shared with phase 1–3 rows.
+- **Regrouping.** 36 phase 1–3 rows of the IAA view drop out. Their report group is now led by another version (mostly a phase-4 ʿAtiqot or IAA Reports final report) that has a row of the same class.
+  - For 34 of them the preferred row is in the box.
+  - For 2 (Western Wall Tunnels channels, group ATQ106-195) the preferred row has no coordinates.
+  - This costs one entry 46 B-any reservoir match: HA-ESI 25927, the Western Wall Plaza stepped installation. It is now an alternate to HA-ESI 1219, whose ritual-bath row is not called a pool.
+  - Phases 1–3 alone give 733 rows in the box (769 in the IAA view). The column `p13new` of the view table holds their counts.
+- **Totals.** 824 inventory rows and 2,216 merged units (IAA view 2,162; frozen 1,437). Units dated in the window: 184 → 201.
+
+**k match / f fail / m unknown, of N** (lineage MERGED, main date rule; the last column gives the primary-view k in the bracket and quote-only runs):
+
+| Entry | Branch | Frozen | IAA view (11 Oct) | Phases 1–4 | k, dated only: IAA → 1–4 | k: bracket; quote-only |
+|---|---|---|---|---|---|---|
+| 21 | head recorded (S-open, N-side) | 12/30/241 of 283 | 12/182/372 of 566 | 12/190/381 of 583 | 8 → 8 | 12 of 390; 12 of 583 |
+| 21 | stone at the head on its north | 0/30/253 of 283 | 0/182/384 of 566 | 0/190/393 of 583 | 0 → 0 | 0 of 390; 0 of 583 |
+| 21 | water from the north (S-open, F-flow) | 1/40/242 of 283 | 1/192/373 of 566 | 1/200/382 of 583 | 1 → 1 | 1 of 390; 1 of 583 |
+| 22 | Solomon's + fissure east ≤ 500 m | 0/27/237 of 264 | 0/80/297 of 377 | 0/91/303 of 394 | 0 → 0 | 0 of 326; 0 of 385 |
+| 29 | conduit, great, northern, four sides (Q-any) | 0/76/188 of 264 | 0/131/246 of 377 | 0/142/252 of 394 | 0 → 0 | 0 of 326; 0 of 385 |
+| 29 | the same at Jericho (Q-Jericho) | 0/239/25 of 264 | 0/352/25 of 377 | 0/369/25 of 394 | 0 → 0 | 0 of 326; 0 of 385 |
+| 32 | built outlet or head at Wadi Qelt | 5/80/213 of 298 | 5/235/341 of 581 | 5/243/350 of 598 | 5 → 5 | 5 of 405; 5 of 598 |
+| 32 | the same with a wall at the outlet | 0/80/218 of 298 | 0/235/346 of 581 | 0/243/355 of 598 | 0 → 0 | 0 of 405; 0 of 598 |
+| 42 | waterfall by a conduit bend (250 m) | 2/0/4 of 6 | 2/0/4 of 6 | 2/0/4 of 6 | 0 → 0 | 2 of 6; 2 of 6 |
+| 42 | dam or reservoir by a bend (250 m) | 0/28/272 of 300 | 0/84/341 of 425 | 0/95/349 of 444 | 0 → 0 | 0 of 375; 0 of 435 |
+| 45 | cistern fed by channels from a trunk wadi | 1/92/559 of 652 | 1/248/720 of 969 | 1/248/738 of 987 | 1 → 1 | 1 of 762; 1 of 982 |
+| 45 | the same, any wadi | 3/41/608 of 652 | 3/192/774 of 969 | 3/192/792 of 987 | 2 → 2 | 3 of 762; 3 of 982 |
+| 46 | reservoir with a way in, Ramat Raḥel ≤ 1 km | 0/261/3 of 264 | 0/374/3 of 377 | 0/390/4 of 394 | 0 → 0 | 0 of 326; 0 of 385 |
+| 46 | the same, ≤ 2 km | 0/256/8 of 264 | 1/364/12 of 377 | 2/379/13 of 394 | 1 → 2 | 1 of 326; 1 of 385 |
+| 46 | reservoirs and cisterns, Ramat Raḥel ≤ 2 km | 0/892/24 of 916 | 1/1299/46 of 1346 | 2/1328/51 of 1381 | 1 → 2 | 1 of 1088; 1 of 1367 |
+| 46 | reservoir with a way in, ʿEin Kerem ≤ 1 km | 0/260/4 of 264 | 1/371/5 of 377 | 1/388/5 of 394 | 1 → 1 | 1 of 326; 0 of 385 |
+| 46 | reservoirs and cisterns, ʿEin Kerem ≤ 1 km | 1/908/7 of 916 | 2/1335/9 of 1346 | 2/1370/9 of 1381 | 1 → 1 | 2 of 1088; 1 of 1367 |
+| 46 | reservoirs and cisterns, ʿEin Kerem ≤ 2 km | 1/894/21 of 916 | 2/1313/31 of 1346 | 4/1342/35 of 1381 | 1 → 3 | 3 of 1088; 1 of 1367 |
+| 46 | reservoir with a way in, anywhere (B-any) | 25/27/212 of 264 | 38/80/259 of 377 | 39/91/264 of 394 | 24 → 26 | 33 of 326; 29 of 385 |
+| 46 | reservoirs and cisterns with a way in, anywhere | 36/67/813 of 916 | 60/271/1015 of 1346 | 64/282/1035 of 1381 | 29 → 34 | 49 of 1088; 40 of 1367 |
+
+Every entry, branch, lineage and date rule is in [phase4_view_2026-10-12.csv](phase4_view_2026-10-12.csv), with the counts of every run and the new match units. The full table is in [phase4_counts.csv](phase4_counts.csv), and the headline counts are in [phase4_headline.csv](phase4_headline.csv).
+- Reservoirs: 377 → 394. Described as great: 39 → 41. Described as northern: 12 → 12. Both: 2 → 2.
+- Cisterns: 969 → 987. Fed by channels: 48 → 49.
+- Aqueducts: 566 → 583. Aqueduct heads stay at 17.
+
+**New matches.** Each is listed with its source unit and printed page. All are exposed, so each is compatibility only. Distances are from the lane's points.
+- **Entry 46, B-RamatRahel at 2 km (reservoirs, and reservoirs with cisterns).**
+  - Row: ʿAtiqot 90 (2018), the Armon ha-Naẓiv tunnel, English summary p. 165; unit `ATQ90-001s-armon-ha-naziv-tunnel-government-house`, merged row `part_e_atiqot/reading_r2/features.csv#142`.
+  - What it is: the stepped pool L5, "fed by a channel from the aqueduct", filled with 1st c. CE pottery. The excavators call it "apparently a ritual bath (miqveh)".
+  - Distance: 1.94 km from Ramat Raḥel. It matches only at the 2 km sensitivity tolerance, not at 1 km.
+  - It survives the bracket and quote-only runs.
+  - The post-hoc reading confirms the way in and the conduit.
+- **Entry 46, B-EinKerem at 2 km (sensitivity with cisterns only).** Both depend on the subtype (quote-only drops them). Neither is a reservoir row.
+  - ʿAtiqot 66 (2011), Rogem Gannim, p. 86 (unit `ATQ66-079-excavations-rogem-gannim-jerusalem-installations-iron`). Cistern 2 is a plastered stepped basin; the excavator says "miqweh for the grape-treaders". Early Roman. 1.25 km from ʿEin Kerem.
+  - ʿAtiqot 54 (2006), Ramat Sharet, Hebrew pp. 31*–45* (unit `ATQ54-031s-installations-burial-caves-ramat-sharet-ramat`). Miqveh 1I, with four steps, late Second Temple, became a cistern only in the Mamluk period. INFERENCE: as a cistern it is Mamluk, so its `in` date belongs to the miqveh. 1.96 km from ʿEin Kerem.
+- **Entry 46, B-any (place not scored).**
+  - Reservoirs, dated: the Kh. Kaʿkul stepped pools identified as miqwaʾot (ʿAtiqot 54 pp. 1–73) and Armon ha-Naẓiv L5.
+  - Reservoirs with cisterns, dated, also:
+    - Mount Scopus cistern L1560, with a stepped corridor entrance (ʿAtiqot 113);
+    - Armenian Patriarchate Road L15, "cistern or miqveh?" (ʿAtiqot 42 p. 263);
+    - Mount Scopus south slope, Installation II, a cistern converted to a miqveh (ʿAtiqot 63 pp. 27–43);
+    - Rogem Gannim Cistern 2 and Ramat Sharet 1I.
+  - Most of these are miqvaʾot, which PLAN §4 admits only as pools or cisterns.
+- **Post-hoc reading** of all 60 phase-4 matches in non-trivial clauses ([phase4_posthoc_checks.csv](phase4_posthoc_checks.csv)): 40 confirmed, 6 partly confirmed, 14 not confirmed. 405 phase 1–3 readings were reused from `iaa_posthoc_checks.csv`. The unconfirmed matches are:
+  - all 5 "wall at the outlet" matches (walls along channels);
+  - "great" from "Great Revolt" (Siloam Road);
+  - "great" from "3.5 × 7.0 m large" (Beit Safafa);
+  - "four sides" from an elliptic cistern, a cistern mouth and a square opening;
+  - "northern" where it describes a building, area, courtyard or wall.
+
+  The counts are not corrected for these readings, as in the frozen lane.
+
+**Misses.**
+- **Entry 29.** No phase-4 reservoir meets three clauses with a passing date.
+  - The Kathisma cistern (IAA Reports 69, pp. 33, 36, 62, 89–90; Byzantine) meets conduit, northern and four sides, but fails on date, and its "northern" and "four sides" are not confirmed on reading.
+  - Two dated rows meet great and four sides:
+    - the Giv‘ati cistern L702 (IAA Reports 52 p. 28; "large, quadrangular (2.60 × 2.80 m)");
+    - the Siloam Road Plastered Pool (ʿAtiqot 101 pp. 71*–86*; 8.4 × 3 m). Its "great" is the Great Revolt, and the row is superseded by the Siloam site.
+- **Entry 32.** No phase-4 aqueduct records a head or outlet. Its only "wall" matches are not confirmed.
+- **Entry 45.** One phase-4 cistern is fed by a channel (Kathisma Channel 147), but it is Byzantine and the channel's source is not a wadi.
+- **Entries 21, 22 and 42.** Nothing new.
+
+**What stays unknown.**
+- 111 phase-4 water rows have no coordinates and are not placed (IAA §4 rule, reused): 52 aqueducts, 37 cisterns and 22 pools or reservoirs. 18 of them name a lane place, and so could bear on entries 29, 32 and 46 (ids in `phase4_summary.json`):
+  - ADAJ Kh. Qumran aqueducts, cisterns and a reservoir (items starting ADAJ 2 p. 83 and ADAJ 3 p. 75);
+  - Jericho reservoirs (items starting ADAJ 1 p. 44 and ADAJ 3 p. 74);
+  - the Nuweimeh aqueduct (item starting ADAJ 6/7 p. 112);
+  - QDAP Kh. el-Mefjer and ʿAin el-Fawwar channels and pools;
+  - QDAP ʿAin Karim (Visitation) channel, cistern and pool (item starting QDAP 8 p. 170).
+
+  The name list also caught a Kh. Fasayil aqueduct (QDAP 10 p. 202). That site lies north of the box.
+- 8 phase-4 ritual baths are not used, because they are never called pools or cisterns. 10 phase-4 rows lie outside the box. 43 SWP water rows are not used (PLAN §3.5).
+- Rarity is still not measurable: m ≫ k in every branch.
+
+**Protected material.**
+- No row from a held cave area, the Tell es-Sultan strip or Kh. ʿAlmit is used. The two `SWP3-222-tell-es-sultan` rows met in the SWP run were excluded by id and not read.
+- No `held.csv` row other than its `unit_id` was read. The Kh. ʿAlmit extraction files were not opened.
+
+Files:
+- [phase4_survey_rows.csv](phase4_survey_rows.csv): the 824 rows used, in the survey schema, with phase, report group, site, pages and view unit.
+- [phase4_scores.csv](phase4_scores.csv): the clause codes of the phase-4 rows.
+- [phase4_counts.csv](phase4_counts.csv), [phase4_headline.csv](phase4_headline.csv), [phase4_view_2026-10-12.csv](phase4_view_2026-10-12.csv), [phase4_posthoc_checks.csv](phase4_posthoc_checks.csv), [phase4_summary.json](phase4_summary.json).
+- [scripts/phase4_view.py](scripts/phase4_view.py) and [tests/test_phase4_view.py](tests/test_phase4_view.py).
+
+Rebuild with `python3 -I research/regional/water_systems/scripts/phase4_view.py`.
+
+**Proposed shared-file changes (not applied).**
+- **Regional round log or key reports:** "Water systems, phase 1–4 view (12 Oct): 91 phase-4 rows in the box; no new match for entries 21, 22, 29, 32, 42 or 45. Entry 46 has three new rule-edge matches at the 2 km tolerance, all miqvaʾot." Link to this section.
+- **OPEN_QUESTIONS, entry 46 (and the tracker copy):**
+  - add the Armon ha-Naẓiv stepped pool (ʿAtiqot 90 p. 165) as an exploratory, exposed lead at 1.94 km from Ramat Raḥel;
+  - add that this inventory now shows several dated stepped miqvaʾot within 2 km of both Beth ha-Kerem candidates.
+  No status change.
+- **A placement step, frozen separately:** the 18 unlocated phase-4 rows at lane places (Qumran, Jericho, Nuweimeh, ʿAin Karim) could only enter with one. It is a new exploratory step.
+- No change to ACTIVE_TEST, the outcome ledger or PROGRESS_METRICS.
+
 ## Blocked and not covered
 
 - English *The Aqueducts of Israel* (Amit, Patrich & Hirschfeld eds, JRA Suppl. 46, 2002): on interlibrary loan; not read. It would add the updated English versions of the 1989 chapters, with later survey data (for example Patrich on Hyrcania, pp. 336–352, and Ilan & Amit on Qumran, pp. 380–386, as cited in repo notes). Routes already recorded in the repository (`registration/hyrcania_patrich1989_extracted.md`): Google Books GWhoAAAAMAAJ (snippets only) and HathiTrust item mdp.39015051834664 (https://babel.hathitrust.org/cgi/pt?id=mdp.39015051834664, full-text search only); the owner's interlibrary-loan request is pending.
