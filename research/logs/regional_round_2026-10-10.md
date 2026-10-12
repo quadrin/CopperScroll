@@ -81,3 +81,4 @@ The owner asked for more of the region's reports to be mined. Five workers read 
 - Keep separate seasons apart in report groups.
 - Place SWP and old-spelling names at `places_v2` points, under a separately frozen rule.
 - Add Mordot Arnona and el-Jib to `places_v2.csv`.
+- **12 October, amendment B3.** The two owner-supplied IAA Reports chapters (Manaḥat Ch. 14, Efrata App. 1) are now merged ([B3](../regional/haesi_features/merged_2026-10-12/AMENDMENTS.md)). The totals are 2,097 site units at 935 sites, 523 of them dated to the window. All five lane views were refreshed. Nothing changed in substance: the Manaḥat miqveh is a ritual bath not called a pool, and it lies about 3 km from both entry-46 candidates.

@@ -2,7 +2,7 @@
 
 Updated 10 October 2026 UTC / 10 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **obtained**: the phase-4 rows ([ʿAtiqot, IAA Reports, QDAP, SWP, Guérin, ADAJ](regional/haesi_features/phase4_2026-10-11/README.md)) deduplicated with the IAA inventory ([merged](regional/haesi_features/merged_2026-10-12/README.md): 2,095 site units at 934 sites) and folded into the cave, columbarium, tomb, water and hoard lanes as exploratory views. The only new matches are for entry 46: three miqvaʾot within 2 km, led by Armon ha-Naẓiv L5. No registered result changed; nothing bears on the three active questions.
+Last session (12 October): **obtained**: the phase-4 rows ([ʿAtiqot, IAA Reports, QDAP, SWP, Guérin, ADAJ](regional/haesi_features/phase4_2026-10-11/README.md)) deduplicated with the IAA inventory ([merged](regional/haesi_features/merged_2026-10-12/README.md): 2,097 site units at 935 sites, including the owner-supplied Manaḥat and Efrata chapters) and folded into the cave, columbarium, tomb, water and hoard lanes as exploratory views. The only new matches are for entry 46: three miqvaʾot within 2 km, led by Armon ha-Naẓiv L5. No registered result changed; nothing bears on the three active questions.
 
 ## Active questions and the observation that decides each
 
