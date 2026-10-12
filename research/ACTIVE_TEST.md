@@ -2,7 +2,7 @@
 
 Updated 12 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **partly**: the [compressed Herodium attachment](sources/full_reads_2026-10-12/storage_language_audit/README.md#compressed-attachment-reinspection-12-october-2026) permits native note III.13 verification: jar-salt chemistry did not identify the stored liquid. Ill. 99 and published translations are only coarsely legible because viewer 79/printed 71 is363×525 pixels. Exact damaged labels still need original viewers 78–79/printed 70–71; earlier large-file/DjVu blockers are access history.
+Last session (12 October): **obtained**: the [Herodium original-page extract and readable crops](sources/full_reads_2026-10-12/storage_language_audit/README.md#original-page-packet-inspection-12-october-2026) recover Naveh's published tentative readings, מ=40 and לה=35, restoration/uncertainty marks and full commentary. מטמר permits hiding place or hidden object; numbered spatial referents remain tentative. Wheat/barley is his context inference, with no contents identification from chemistry. Claimed and received image hashes/dimensions stay separate.
 
 ## Active questions and the observation that decides each
 

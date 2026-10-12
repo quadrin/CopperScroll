@@ -206,3 +206,7 @@ Last session (12 October): **partly**: the [whole-book source records](sources/f
 ## 12 October 2026: before compressed Herodium inspection
 
 Last session (12 October): **partly**: applied the [whole-book phase and source-lineage joins](sources/full_reads_2026-10-12/README.md#applied-follow-up-12-october-2026), natively checked entry 46 edition alternatives, and ran the [pool-reading function/phase review](regional/water_systems/entry46_phase_review_2026-10-12/README.md). Rogem L114 dates nearby soil, not its stairs. Sion 2002 and exact Herodium label sequences remain uninspected; the newly indexed Herodium PDF exceeds the raw-reader limit. Dalman plate25 fine detail stays reserved.
+
+## 12 October 2026: before original Herodium extract inspection
+
+Last session (12 October): **partly**: the [compressed Herodium attachment](sources/full_reads_2026-10-12/storage_language_audit/README.md#compressed-attachment-reinspection-12-october-2026) permits native note III.13 verification: jar-salt chemistry did not identify the stored liquid. Ill. 99 and published translations are only coarsely legible because viewer 79/printed 71 is363×525 pixels. Exact damaged labels still need original viewers 78–79/printed 70–71; earlier large-file/DjVu blockers are access history.
