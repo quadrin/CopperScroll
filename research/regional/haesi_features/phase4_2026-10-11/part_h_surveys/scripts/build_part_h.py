@@ -35,6 +35,10 @@ SOURCES = {
     "swp2": dict(series="SWP Memoirs", volume="II", year="1882", author="C. R. Conder and H. H. Kitchener",
                  url="https://archive.org/details/surveyofwesternp02conduoft",
                  access="archive.org OCR (hOCR search text with its page index, surveyofwesternp02conduoft), fetched in the workspace; text kept outside the repository"),
+    "gue_j1": dict(series="Guerin, Description geographique, historique et archeologique de la Palestine, Judee",
+                   volume="I", year="1868", author="V. Guerin",
+                   url="https://archive.org/details/descriptiongeogr01guer",
+                   access="archive.org OCR (hOCR search text with its page index, descriptiongeogr01guer), fetched in the workspace; text kept outside the repository"),
 }
 SCREEN_FIELDS = ["unit_id", "source", "sheet_or_part", "name", "name_as_printed", "square", "page_first", "page_last",
                  "square_status", "zones_seen", "gazetteer_hits", "zone", "location_basis", "decision", "tier",
@@ -91,7 +95,7 @@ def build_rows(screens, coding, held):
             elif s["decision"].startswith("candidate"):
                 status = "not read (time limit)"
             else:
-                status = "not read (%s)" % s["decision"].split(":")[0]
+                status = "not read (%s)" % s["decision"].split(":")[0].split(" (")[0]
             nrows = 0
             if rec:
                 title_norm = common.norm(rec["name"]).strip()
@@ -116,7 +120,7 @@ def build_rows(screens, coding, held):
                 reports.append(dict(report_id=uid, url=meta["url"], access=meta["access"], series=meta["series"],
                                     volume=meta["volume"], year=meta["year"], pages=rec["pages"], site_name=rec["name"],
                                     author=meta["author"], permit="", screen="%s (%s)" % (s["decision"], s["location_basis"]),
-                                    toc_item="Sheet %s, Section B" % s["sheet_or_part"] if src.startswith("swp") else s["sheet_or_part"],
+                                    toc_item=("Sheet %s, Section B" % s["sheet_or_part"]) if src.startswith("swp") else ("Judee %s" % meta["volume"]),
                                     map_ref_as_given=maptxt, map_ref_used="", grid="SWP reference square" if s["square"] else "",
                                     crs_used="", lat="", lon="", coordinate_source=location_text(s), nearest_place="",
                                     distance_km="", places_within_2km="", places_within_5km="", regions=";".join(regs),

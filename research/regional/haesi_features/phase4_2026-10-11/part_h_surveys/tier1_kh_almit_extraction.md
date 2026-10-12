@@ -15,4 +15,4 @@ Extraction only (phase-2 plan §7). The reader did not open `research/preregistr
 
 ## Guérin
 
-Not reached in this session (see `NOTES.md`, not read). Guérin, *Judée* III, describes the area north-east of Jerusalem; any ʿAlmit text there remains to be extracted under this rule.
+*Judée* I was screened and read: none of its headings names ʿAlmit. *Judée* II and III were not read this session (see `NOTES.md`). Any ʿAlmit text there, most likely in *Judée* III, remains to be extracted under this rule.

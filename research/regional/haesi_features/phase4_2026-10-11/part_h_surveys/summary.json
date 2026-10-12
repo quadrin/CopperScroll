@@ -2,8 +2,8 @@
  "by_class": {
   "cave_with_finds": {
    "no": 0,
-   "rows": 12,
-   "unknown": 12,
+   "rows": 16,
+   "unknown": 16,
    "yes": 0
   },
   "channel_aqueduct": {
@@ -13,9 +13,9 @@
    "yes": 0
   },
   "cistern": {
-   "no": 0,
-   "rows": 15,
-   "unknown": 15,
+   "no": 1,
+   "rows": 24,
+   "unknown": 23,
    "yes": 0
   },
   "columbarium_dovecote": {
@@ -37,8 +37,8 @@
    "yes": 0
   },
   "pool_reservoir": {
-   "no": 1,
-   "rows": 13,
+   "no": 2,
+   "rows": 14,
    "unknown": 12,
    "yes": 0
   },
@@ -50,14 +50,14 @@
   },
   "rockcut_installation": {
    "no": 0,
-   "rows": 6,
-   "unknown": 6,
+   "rows": 9,
+   "unknown": 9,
    "yes": 0
   },
   "tomb_burial_cave": {
-   "no": 4,
-   "rows": 19,
-   "unknown": 15,
+   "no": 6,
+   "rows": 23,
+   "unknown": 17,
    "yes": 0
   }
  },
@@ -66,7 +66,7 @@
    "Z1_GERIZIM": 1,
    "Z2_JORDAN_VALLEY": 1,
    "Z3_JUDEAN_DESERT": 4,
-   "Z4_JERUSALEM_HILLS": 6
+   "Z4_JERUSALEM_HILLS": 10
   },
   "channel_aqueduct": {
    "Z1_GERIZIM": 2,
@@ -78,7 +78,7 @@
    "Z1_GERIZIM": 3,
    "Z2_JORDAN_VALLEY": 2,
    "Z3_JUDEAN_DESERT": 5,
-   "Z4_JERUSALEM_HILLS": 5
+   "Z4_JERUSALEM_HILLS": 14
   },
   "columbarium_dovecote": {
    "Z1_GERIZIM": 0,
@@ -102,7 +102,7 @@
    "Z1_GERIZIM": 2,
    "Z2_JORDAN_VALLEY": 2,
    "Z3_JUDEAN_DESERT": 5,
-   "Z4_JERUSALEM_HILLS": 4
+   "Z4_JERUSALEM_HILLS": 5
   },
   "ritual_bath": {
    "Z1_GERIZIM": 2,
@@ -114,13 +114,13 @@
    "Z1_GERIZIM": 2,
    "Z2_JORDAN_VALLEY": 1,
    "Z3_JUDEAN_DESERT": 0,
-   "Z4_JERUSALEM_HILLS": 3
+   "Z4_JERUSALEM_HILLS": 6
   },
   "tomb_burial_cave": {
    "Z1_GERIZIM": 5,
    "Z2_JORDAN_VALLEY": 2,
    "Z3_JUDEAN_DESERT": 4,
-   "Z4_JERUSALEM_HILLS": 8
+   "Z4_JERUSALEM_HILLS": 12
   }
  },
  "by_class_zone_unresolved": {
@@ -186,9 +186,13 @@
   }
  },
  "by_source": {
+  "gue_j1": {
+   "not read (no description)": 4,
+   "not read (unlocated)": 56,
+   "read": 22
+  },
   "swp2": {
-   "not read (no description (general note on Guerin's route along the Jordan valley (not a site entry)))": 1,
-   "not read (no description (the Section C heading of Sheet XIV ('SHEET XIV.- SECTION' C.'), OCR apostrophe defeated the section match))": 1,
+   "not read (no description)": 2,
    "not read (out)": 447,
    "not read (unlocated)": 213,
    "read": 13,
@@ -197,8 +201,7 @@
   "swp3": {
    "Tier-1 extraction only": 1,
    "held or protected (citation only)": 2,
-   "not read (no description ('The account of Jerusalem is reserved for another volume' (no description)))": 1,
-   "not read (no description (cross-reference only ('See Section A. and el Haram')))": 1,
+   "not read (no description)": 2,
    "not read (out)": 716,
    "not read (unlocated)": 174,
    "read": 46,
@@ -225,9 +228,9 @@
    "yes": 0
   },
   "Z4_JERUSALEM_HILLS": {
-   "no": 1,
-   "rows": 28,
-   "unknown": 27,
+   "no": 5,
+   "rows": 49,
+   "unknown": 44,
    "yes": 0
   }
  },
@@ -235,26 +238,23 @@
   "Z2_JORDAN_VALLEY|Z3_JUDEAN_DESERT": 22,
   "Z3_JUDEAN_DESERT|Z4_JERUSALEM_HILLS": 72
  },
- "feature_rows": 80,
+ "feature_rows": 101,
  "feature_rows_zone_unresolved": 94,
  "held_records": 6,
  "status": {
   "Tier-1 extraction only": 1,
   "held or protected (citation only)": 2,
-  "not read (no description ('The account of Jerusalem is reserved for another volume' (no description)))": 1,
-  "not read (no description (cross-reference only ('See Section A. and el Haram')))": 1,
-  "not read (no description (general note on Guerin's route along the Jordan valley (not a site entry)))": 1,
-  "not read (no description (the Section C heading of Sheet XIV ('SHEET XIV.- SECTION' C.'), OCR apostrophe defeated the section match))": 1,
+  "not read (no description)": 8,
   "not read (out)": 1163,
-  "not read (unlocated)": 387,
-  "read": 59,
+  "not read (unlocated)": 443,
+  "read": 81,
   "read (zone unresolved)": 119
  },
- "units_read": 178,
- "units_screened": 1735,
+ "units_read": 200,
+ "units_screened": 1817,
  "window": {
-  "no": 6,
-  "unknown": 74,
+  "no": 10,
+  "unknown": 91,
   "yes": 0
  },
  "window_zone_unresolved": {
