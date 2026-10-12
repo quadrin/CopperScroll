@@ -1,0 +1,193 @@
+[
+ {
+  "report_id": "ATQ120-i06-roads-holy-city-integrated-archaeological-spatial",
+  "pages": "",
+  "name_zone": "Z4_JERUSALEM_HILLS",
+  "location_note": "Regional synthesis of roads leading to Jerusalem (map frame NIG 620000-640000/210000-230000); no single site.",
+  "excavated_or_surveyed": "synthesis (GIS analysis of published excavations)",
+  "text_lines": "36-62",
+  "notes": "Synthesis of earlier rescue excavations and GIS analysis; the roadside miqwa'ot, reservoirs and tombs it discusses are cited from earlier work, so no row is coded. Page numbers are not printed as running heads in the text layer (not recorded).",
+  "features": []
+ },
+ {
+  "report_id": "ATQ48-i08-another-miqveh-near-alon-shevut",
+  "pages": "95-98",
+  "map_ref": "2125/6188",
+  "location_note": "Near the twelfth milestone of the Roman road Jerusalem-Hebron (NIG 2125/6188, OIG 1625/1188).",
+  "excavated_or_surveyed": "excavated",
+  "text_lines": "10-175",
+  "notes": "Eastern installation of a pair; the western miqveh was published by Amit 1999 (cited). One cavity with three stages of use is coded under three classes, one per stage.",
+  "features": [
+   {"type": "ritual_bath", "subtype": "large rock-hewn miqveh (10 x 10 m) with two arched entries, pentagonal rock column and steps (Stage 1)", "n": "1",
+    "period": "Early Roman (1st c. CE); late Second Temple", "window": "yes",
+    "quote": "proved Amit’s hypothesis that it was a large miqveh"},
+   {"type": "cistern", "subtype": "the miqveh reused as a water cistern, entries blocked and shaft cut (Stage 2)", "n": "1",
+    "period": "Byzantine (6th c.)", "window": "no",
+    "quote": "It was reused as a water cistern during the Byzantine period"},
+   {"type": "cave_with_finds", "subtype": "the same cavity used as a dwelling cave (Stage 3)", "n": "1",
+    "period": "Mamluk/Ottoman (14th-17th c.)", "window": "no",
+    "quote": "Mamluk/Ottoman (14th–17th c.) Dwelling cave"}
+  ]
+ },
+ {
+  "report_id": "ATQ91-001s-crusader-period-subterranean-water-reservoir-moza",
+  "text_file": "plain",
+  "pages": "1*-11* (Hebrew); English summary 165-166",
+  "map_ref": "633326/215646",
+  "location_note": "Bet Yellin courtyard, Moza; printed with the northing first (633326/215646), read as NIG 215646/633326 by the phase-1 parser.",
+  "excavated_or_surveyed": "excavated (salvage)",
+  "text_lines": "30-250;387-412",
+  "notes": "Read in Hebrew with the English summary. Excavation and cleaning in 2000. The sewage channel and toilet structure of 2011 are from Greenhut and Zenton 2015 (cited).",
+  "features": [
+   {"type": "pool_reservoir", "subtype": "subterranean water reservoir of two parallel vaults (c. 300 cu m), part of a vaulted building", "n": "1",
+    "period": "Crusader (12th c.); fill Ayyubid-Mamluk", "window": "no",
+    "quote": "נתגלה ותועד מאגר מים צלבני בחצר בית ילין"},
+   {"type": "channel_aqueduct", "subtype": "shallow channels hewn in the floor of Vault II leading to an oval depression below the drain of a modern toilet", "n": "",
+    "period": "modern (Yellin family, late 19th-20th c.) (INFERENCE from context)", "window": "no",
+    "quote": "חצובות בקרקעית הסלע"}
+  ]
+ },
+ {
+  "report_id": "ATQ80-125-coins-excavations-sallah-ed-din-street",
+  "pages": "125-126",
+  "name_zone": "Z4_JERUSALEM_HILLS",
+  "location_note": "Sallah ed-Din Street, Jerusalem; located by name (no map reference in this note).",
+  "excavated_or_surveyed": "excavated",
+  "text_lines": "28-75",
+  "notes": "Coin report. It records coins found in tombs of the northern cemetery of Aelia Capitolina and in a Second Temple quarry, so those contexts are coded (finds-report rule); the features themselves are published in the companion site report.",
+  "features": [
+   {"type": "rockcut_installation", "subtype": "quarry that probably supplied blocks for the 'Third Wall' (first phase)", "n": "1",
+    "period": "Second Temple period (prutah of Agrippa I)", "window": "yes",
+    "quote": "the Second Temple-period quarry"},
+   {"type": "tomb_burial_cave", "subtype": "tombs T5000 (coin in the skull) and T3500 (unusual shape) of the northern cemetery of Aelia Capitolina", "n": "2",
+    "period": "Roman (Aelia Capitolina), 2nd-4th c. CE", "window": "no",
+    "quote": "the northern cemetery of Aelia Capitolina"}
+  ]
+ },
+ {
+  "report_id": "ATQ87-077-fragments-roman-period-wall-painting-en",
+  "pages": "77-79",
+  "name_zone": "Z4_JERUSALEM_HILLS",
+  "location_note": "'En Ya'al, northern bank of Nahal Refa'im; located by name.",
+  "excavated_or_surveyed": "excavated",
+  "text_lines": "28-70",
+  "notes": "Finds study (painted plaster); no eligible feature recorded as found.",
+  "features": []
+ },
+ {
+  "report_id": "ATQ72-015s-member-entourage-yahweh-uraeus-seal-western",
+  "text_file": "raw",
+  "pages": "15*-20* (Hebrew)",
+  "name_zone": "Z4_JERUSALEM_HILLS",
+  "location_note": "Western Wall Plaza excavations, Jerusalem; located by name.",
+  "excavated_or_surveyed": "excavated",
+  "text_lines": "1-60",
+  "notes": "Finds study (seal); tomb mentions are comparanda. No eligible feature recorded as found.",
+  "features": []
+ },
+ {
+  "report_id": "ATQ120-i19-dendroarchaeological-analysis-charcoal-fragments-byzantine-street",
+  "pages": "1-12 (article pagination)",
+  "name_zone": "Z4_JERUSALEM_HILLS",
+  "location_note": "Byzantine Street, Area S2, City of David; located by name.",
+  "excavated_or_surveyed": "excavated",
+  "text_lines": "36-60",
+  "notes": "Specialist report (charcoal). No eligible feature recorded as found.",
+  "features": []
+ },
+ {
+  "report_id": "ATQ71-001s-khirbat-zakuka-iron-age-i-site",
+  "pages": "1*-20*",
+  "map_ref": "22249/62679",
+  "location_note": "Kh. Za'kuka, Zur Bahir (NIG 22249/62679 for the excavation, 22250/62655 for the hilltop). The survey table gives six-digit references (NIG c. 222446-222529/626217-626327), about 500 m south of the printed excavation reference; the excavation reference is used for every row (NOTES).",
+  "excavated_or_surveyed": "excavated and surveyed",
+  "text_lines": "25-60;200-260;759-850;965-1000",
+  "notes": "Salvage excavation 2006 and GPS survey of 35 rock-hewn sites. The author attributes most surveyed installations to Iron I because the site is single-period (general dating, coded unknown). Five cisterns and a small pool of Kloner's survey (Site 120) are included in the 2006 table.",
+  "features": [
+   {"type": "rockcut_installation", "subtype": "olive press L103, two bell-shaped subterranean storage installations (L107, L110), cupmarks L108 and L111, bedrock quarried for monolithic pillars", "n": "6",
+    "period": "Iron I (Iron IB, 11th c. BCE)", "window": "no",
+    "quote": "A well-preserved olive press (L103) was uncovered"},
+   {"type": "cistern", "subtype": "seven rock-hewn cisterns (survey Nos. 10, 11, 18, 23, 24, 26, 33), No. 10 still active", "n": "7",
+    "period": "attributed in general to the Iron I site; reuse likely", "window": "unknown",
+    "quote": "5 cylindrical installations (silos; Plan 3; Fig. 16), 7 cisterns"},
+   {"type": "cave_with_finds", "subtype": "five caves (survey Nos. 3, 17?, 25, 27, 28; No. 28 c. 8 x 10 m with a pillar, dwelling?)", "n": "5",
+    "period": "undated", "window": "unknown",
+    "quote": "c. 8 × 10 m, supported by a square pillar"},
+   {"type": "rockcut_installation", "subtype": "surveyed cupmarks (12), silos (5), basin, square installations, winepress vat? (No. 22) and winepress No. 34 (later period)", "n": "21",
+    "period": "mostly attributed to Iron I in general; winepress 34 later", "window": "unknown",
+    "quote": "All the surveyed remains were rock-hewn"}
+  ]
+ },
+ {
+  "report_id": "ATQ110-i14-bilingual-greek-georgian-inscription-mount-zion",
+  "pages": "173-183",
+  "map_ref": "23180/63088",
+  "map_ref_unusable": true,
+  "name_zone": "Z4_JERUSALEM_HILLS",
+  "name_place": "mount_zion",
+  "location_note": "Former Shulchan David Hall, southern Mount Zion. The printed 'map ref. 23180/63088' converts to a point c. 10 km east of Mount Zion (NIG easting misprinted, INFERENCE); located by name in Z4 (NOTES).",
+  "excavated_or_surveyed": "excavated (salvage)",
+  "text_lines": "28-125",
+  "notes": "Salvage excavation 2020-2021 (Permits A-8781, A-8925). The full report is to be published separately; coded from the summary of the architecture given here.",
+  "features": [
+   {"type": "ritual_bath", "subtype": "two rock-hewn stepped pools (L183, L160), probably Early Roman miqva'ot", "n": "2",
+    "period": "probably Early Roman", "window": "yes",
+    "quote": "were probably originally Early Roman-period miqva‘ot (ritual baths)"},
+   {"type": "cistern", "subtype": "the same stepped pools converted to cisterns; Cistern 160 with secondary pillars, in use until the 8th c.", "n": "2",
+    "period": "Byzantine to Umayyad", "window": "no",
+    "quote": "Two underground, rock-hewn stepped cisterns (L183, L160)"},
+   {"type": "channel_aqueduct", "subtype": "rock-hewn drainage channels roofed with slabs under the central street (L156) and side street (L106)", "n": "2",
+    "period": "Late Roman, Byzantine and Umayyad", "window": "no",
+    "quote": "a rock-hewn drainage channel, roofed with stone slabs"}
+  ]
+ },
+ {
+  "report_id": "ATQ101-089s-coins-city-david-ir-david-siloam",
+  "text_file": "plain",
+  "pages": "89*-91* (Hebrew); English summary 140",
+  "name_zone": "Z4_JERUSALEM_HILLS",
+  "location_note": "Siloam Road, south-eastern City of David; located by name.",
+  "excavated_or_surveyed": "excavated",
+  "text_lines": "30-50;340-358",
+  "notes": "Coin report (27 coins). It records coins found in the foundation and fill of the Plastered Pool and in Channel 103, so those contexts are coded (finds-report rule). The dam wall is named as context only and is not coded here.",
+  "features": [
+   {"type": "pool_reservoir", "subtype": "the Plastered Pool (seven coins in its foundation, twelve in its fill)", "n": "1",
+    "period": "completed in 69 or 70 CE (excavators' conclusion, supported by the coins)", "window": "yes",
+    "quote": "the Plastered Pool was completed in 69 or 70 CE"},
+   {"type": "channel_aqueduct", "subtype": "Channel 103, an overflow channel later than the dam wall and the pool", "n": "1",
+    "period": "after the pool's construction; one coin of the 1st c. CE inside", "window": "unknown",
+    "quote": "One coin (No. 17) was found in Channel 103"}
+  ]
+ },
+ {
+  "report_id": "ATQ101-087s-second-temple-period-registration-tag-city",
+  "text_file": "plain",
+  "pages": "87*-88* (Hebrew); English summary",
+  "name_zone": "Z4_JERUSALEM_HILLS",
+  "location_note": "Siloam Road, City of David; located by name.",
+  "excavated_or_surveyed": "excavated",
+  "text_lines": "85-100",
+  "notes": "Inscribed jar fragment (1st c. CE). No eligible feature recorded as found.",
+  "features": []
+ },
+ {
+  "report_id": "ATQ116-i06-iron-age-iib-c-hebrew-stamp",
+  "pages": "125-142",
+  "map_ref": "222317/631361",
+  "location_note": "Jerusalem Archaeological Park, Old City (Permit A-9204).",
+  "excavated_or_surveyed": "excavated",
+  "text_lines": "55-140",
+  "notes": "Finds study (stamp seal from Stratum III). The stratigraphic table lists a Herodian stepped street (not eligible). No eligible feature recorded as found.",
+  "features": []
+ },
+ {
+  "report_id": "ATQ110-i03-nasas-semakhyahu-two-new-engraved-inscriptions",
+  "pages": "23-31",
+  "name_zone": "Z4_JERUSALEM_HILLS",
+  "location_note": "Tel Moza, western bank of Nahal Soreq; located by name (Moza).",
+  "excavated_or_surveyed": "excavated",
+  "text_lines": "30-52",
+  "notes": "Inscriptions from fills over Iron Age retaining walls (Permit A-7906 area). No eligible feature recorded as found.",
+  "features": []
+ }
+]
