@@ -1,0 +1,409 @@
+{
+ "note": "Exploratory view (PLAN_AMENDMENT_PHASE4_2026-10-12.md). The frozen tables and the 11 October view files are unchanged.",
+ "inputs": {
+  "features_all.csv": "940e6c04b1ecd18c79a7c88a784a463d69056f70c6e31ad18e5a18c46866d65d",
+  "report_groups.csv": "38b67f3c7095993287ac9da80eb229a9752d56ff7c27cb9bb3b1024f47da702f",
+  "sites.csv": "5d7458016d7955cced5540d4307570879fbc5b2071d5f644e85d3cec0fcc16db"
+ },
+ "excluded_rows": {
+  "phase4_2026-10-11/part_h_surveys/features.csv#66": "held unit",
+  "phase4_2026-10-11/part_h_surveys/features.csv#83": "held unit; Tell es-Sultan strip (name guard)",
+  "phase4_2026-10-11/part_h_surveys/features.csv#84": "held unit; Tell es-Sultan strip (name guard)",
+  "phase4_2026-10-11/part_i_adaj/features.csv#31": "held cave area (name guard)",
+  "phase4_2026-10-11/part_i_adaj/features.csv#35": "Tell es-Sultan strip (name guard)",
+  "phase4_2026-10-11/part_i_adaj/features.csv#36": "Tell es-Sultan strip (name guard)",
+  "phase4_2026-10-11/part_i_adaj/features.csv#52": "Tell es-Sultan strip (name guard)"
+ },
+ "excluded_by_reason": {
+  "held unit": 3,
+  "Tell es-Sultan strip (name guard)": 5,
+  "held cave area (name guard)": 1
+ },
+ "excluded_tomb_rows": 3,
+ "units": {
+  "primary": 244,
+  "primary_not_duplicate": 85,
+  "primary_not_duplicate_distinct_sites": 54,
+  "primary_from_phase4_rows": 31,
+  "primary_from_phase4_rows_not_duplicate": 13,
+  "other_class": 52,
+  "other_class_not_duplicate": 27
+ },
+ "change_vs_11oct": {
+  "units_11oct": 228,
+  "units_now": 244,
+  "phase13_units_dropped": [
+   "IAA features.csv#18",
+   "IAA phase2_2026-10-10/features.csv#458",
+   "IAA phase2_2026-10-10/features.csv#476",
+   "IAA phase2_2026-10-10/features.csv#477",
+   "IAA phase3_2026-10-11/part_b/features.csv#17",
+   "IAA phase3_2026-10-11/part_c/features.csv#155",
+   "IAA phase3_2026-10-11/part_c/features.csv#299",
+   "IAA phase3_2026-10-11/part_c/features.csv#300",
+   "IAA phase3_2026-10-11/part_c/features.csv#476",
+   "IAA phase3_2026-10-11/part_c/features.csv#507",
+   "IAA phase3_2026-10-11/part_c/features.csv#569",
+   "IAA phase3_2026-10-11/part_c/features.csv#570",
+   "IAA phase3_2026-10-11/part_d_online/features.csv#1033",
+   "IAA phase3_2026-10-11/part_d_online/features.csv#1048",
+   "IAA phase3_2026-10-11/part_d_online/features.csv#1150"
+  ],
+  "phase13_units_added": [],
+  "dating_changed": [],
+  "not_duplicate_11oct": 78,
+  "not_duplicate_now": 85
+ },
+ "not_duplicate_by_region": {
+  "A": 84,
+  "A3": 45,
+  "B": 1,
+  "B1": 1,
+  "B2": 0,
+  "B2_5": 1,
+  "AB": 85
+ },
+ "strict_not_duplicate_by_region": {
+  "A": 33,
+  "A3": 19,
+  "B": 0,
+  "B1": 0,
+  "B2": 0,
+  "B2_5": 0,
+  "AB": 33
+ },
+ "new_levels_not_duplicate": {
+  "new_row": {
+   "A": {
+    "strict": 6,
+    "lenient": 7,
+    "any": 13
+   },
+   "B": {
+    "strict": 0,
+    "lenient": 0,
+    "any": 0
+   },
+   "AB": {
+    "strict": 6,
+    "lenient": 7,
+    "any": 13
+   }
+  },
+  "new_report": {
+   "A": {
+    "strict": 0,
+    "lenient": 0,
+    "any": 1
+   },
+   "B": {
+    "strict": 0,
+    "lenient": 0,
+    "any": 0
+   },
+   "AB": {
+    "strict": 0,
+    "lenient": 0,
+    "any": 1
+   }
+  },
+  "new_site": {
+   "A": {
+    "strict": 2,
+    "lenient": 2,
+    "any": 5
+   },
+   "B": {
+    "strict": 0,
+    "lenient": 0,
+    "any": 0
+   },
+   "AB": {
+    "strict": 2,
+    "lenient": 2,
+    "any": 5
+   }
+  }
+ },
+ "new_levels_all": {
+  "new_row": {
+   "A": {
+    "strict": 14,
+    "lenient": 19,
+    "any": 31
+   },
+   "B": {
+    "strict": 0,
+    "lenient": 0,
+    "any": 0
+   },
+   "AB": {
+    "strict": 14,
+    "lenient": 19,
+    "any": 31
+   }
+  },
+  "new_report": {
+   "A": {
+    "strict": 4,
+    "lenient": 7,
+    "any": 10
+   },
+   "B": {
+    "strict": 0,
+    "lenient": 0,
+    "any": 0
+   },
+   "AB": {
+    "strict": 4,
+    "lenient": 7,
+    "any": 10
+   }
+  },
+  "new_site": {
+   "A": {
+    "strict": 4,
+    "lenient": 7,
+    "any": 10
+   },
+   "B": {
+    "strict": 0,
+    "lenient": 0,
+    "any": 0
+   },
+   "AB": {
+    "strict": 4,
+    "lenient": 7,
+    "any": 10
+   }
+  }
+ },
+ "new_row_units_not_duplicate_codes": {
+  "A": {
+   "strict": {
+    "F1": 0,
+    "F2": 0,
+    "F2x": 0,
+    "F3": 0,
+    "F4": 0,
+    "F5": 0,
+    "F6": 0,
+    "F7w": 0,
+    "F7wa": 0,
+    "F2xa": 0,
+    "F10": 0,
+    "F11": 4,
+    "F12": 0,
+    "F13": 0,
+    "F14": 0,
+    "F16": 0,
+    "F17": 0,
+    "F19": 0,
+    "F21": 0,
+    "name_zadok": 0,
+    "name_absalom": 0,
+    "name_queen": 0,
+    "name_obed": 0,
+    "name_jericho": 0
+   },
+   "lenient": {
+    "F1": 0,
+    "F2": 0,
+    "F2x": 0,
+    "F3": 0,
+    "F4": 0,
+    "F5": 0,
+    "F6": 0,
+    "F7w": 0,
+    "F7wa": 0,
+    "F2xa": 0,
+    "F10": 0,
+    "F11": 4,
+    "F12": 0,
+    "F13": 0,
+    "F14": 0,
+    "F16": 0,
+    "F17": 0,
+    "F19": 0,
+    "F21": 1,
+    "name_zadok": 0,
+    "name_absalom": 0,
+    "name_queen": 0,
+    "name_obed": 0,
+    "name_jericho": 0
+   },
+   "any": {
+    "F1": 1,
+    "F2": 0,
+    "F2x": 0,
+    "F3": 0,
+    "F4": 1,
+    "F5": 0,
+    "F6": 0,
+    "F7w": 0,
+    "F7wa": 0,
+    "F2xa": 0,
+    "F10": 0,
+    "F11": 4,
+    "F12": 0,
+    "F13": 0,
+    "F14": 0,
+    "F16": 0,
+    "F17": 1,
+    "F19": 1,
+    "F21": 1,
+    "name_zadok": 0,
+    "name_absalom": 0,
+    "name_queen": 0,
+    "name_obed": 0,
+    "name_jericho": 0
+   }
+  },
+  "B": {
+   "strict": {
+    "F1": 0,
+    "F2": 0,
+    "F2x": 0,
+    "F3": 0,
+    "F4": 0,
+    "F5": 0,
+    "F6": 0,
+    "F7w": 0,
+    "F7wa": 0,
+    "F2xa": 0,
+    "F10": 0,
+    "F11": 0,
+    "F12": 0,
+    "F13": 0,
+    "F14": 0,
+    "F16": 0,
+    "F17": 0,
+    "F19": 0,
+    "F21": 0,
+    "name_zadok": 0,
+    "name_absalom": 0,
+    "name_queen": 0,
+    "name_obed": 0,
+    "name_jericho": 0
+   },
+   "lenient": {
+    "F1": 0,
+    "F2": 0,
+    "F2x": 0,
+    "F3": 0,
+    "F4": 0,
+    "F5": 0,
+    "F6": 0,
+    "F7w": 0,
+    "F7wa": 0,
+    "F2xa": 0,
+    "F10": 0,
+    "F11": 0,
+    "F12": 0,
+    "F13": 0,
+    "F14": 0,
+    "F16": 0,
+    "F17": 0,
+    "F19": 0,
+    "F21": 0,
+    "name_zadok": 0,
+    "name_absalom": 0,
+    "name_queen": 0,
+    "name_obed": 0,
+    "name_jericho": 0
+   },
+   "any": {
+    "F1": 0,
+    "F2": 0,
+    "F2x": 0,
+    "F3": 0,
+    "F4": 0,
+    "F5": 0,
+    "F6": 0,
+    "F7w": 0,
+    "F7wa": 0,
+    "F2xa": 0,
+    "F10": 0,
+    "F11": 0,
+    "F12": 0,
+    "F13": 0,
+    "F14": 0,
+    "F16": 0,
+    "F17": 0,
+    "F19": 0,
+    "F21": 0,
+    "name_zadok": 0,
+    "name_absalom": 0,
+    "name_queen": 0,
+    "name_obed": 0,
+    "name_jericho": 0
+   }
+  }
+ },
+ "phase4_duplicates_of": [
+  "ASI 102/231",
+  "ASI 102/345",
+  "ASI 102/374",
+  "ASI 102/402",
+  "ASI 102/435",
+  "ASI 102/439",
+  "ASI 102/484",
+  "ASI 102/93",
+  "ASI 105/22",
+  "ASI 106/68"
+ ],
+ "coverage_primary": {
+  "outside the regions": 178,
+  "unlocated@Z1_GERIZIM": 20,
+  "unlocated@Z2_JORDAN_VALLEY": 6,
+  "unlocated@Z3_JUDEAN_DESERT": 27,
+  "unlocated@Z4_JERUSALEM_HILLS": 228
+ },
+ "coverage_other_class": {
+  "outside the regions": 53,
+  "unlocated@Z1_GERIZIM": 2,
+  "unlocated@Z3_JUDEAN_DESERT": 2,
+  "unlocated@Z4_JERUSALEM_HILLS": 34
+ },
+ "unlocated_phase4_tomb_rows_by_zone_and_reader_place": {
+  "Z1_GERIZIM | name only": 6,
+  "Z1_GERIZIM | name only (gazetteer: Z1_GERIZIM: aqraba)": 1,
+  "Z1_GERIZIM | name only (gazetteer: Z1_GERIZIM: askar)": 1,
+  "Z1_GERIZIM | name only (gazetteer: Z1_GERIZIM: gerizim)": 1,
+  "Z1_GERIZIM | name only (gazetteer: Z1_GERIZIM: josephs tomb)": 1,
+  "Z1_GERIZIM | name only (gazetteer: Z1_GERIZIM: nablus)": 1,
+  "Z2_JORDAN_VALLEY | name only (gazetteer: Z2_JORDAN_VALLEY: muhalhil)": 1,
+  "Z2_JORDAN_VALLEY | name only (gazetteer: Z2_JORDAN_VALLEY: nebi musa)": 1,
+  "Z3_JUDEAN_DESERT | SWP square (zone only; swp_grid calibration)": 1,
+  "Z3_JUDEAN_DESERT | name only (gazetteer: Z3_JUDEAN_DESERT: mar saba)": 1,
+  "Z3_JUDEAN_DESERT | name only (gazetteer: Z3_JUDEAN_DESERT: qumran)": 1,
+  "Z3_JUDEAN_DESERT | name only (kh_qumran)": 1,
+  "Z4_JERUSALEM_HILLS | name only": 46,
+  "Z4_JERUSALEM_HILLS | name only (Jerusalem, Tel Arza)": 1,
+  "Z4_JERUSALEM_HILLS | name only (Khirbat Umm Leisun, Jerusalem)": 1,
+  "Z4_JERUSALEM_HILLS | name only (gazetteer: Z4_JERUSALEM_HILLS: beit sahur)": 1,
+  "Z4_JERUSALEM_HILLS | name only (gazetteer: Z4_JERUSALEM_HILLS: bethlehem)": 2,
+  "Z4_JERUSALEM_HILLS | name only (gazetteer: Z4_JERUSALEM_HILLS: bir nabala)": 1,
+  "Z4_JERUSALEM_HILLS | name only (gazetteer: Z4_JERUSALEM_HILLS: ein kerem)": 1,
+  "Z4_JERUSALEM_HILLS | name only (gazetteer: Z4_JERUSALEM_HILLS: malha)": 1,
+  "Z4_JERUSALEM_HILLS | name only (gazetteer: Z4_JERUSALEM_HILLS: nebi samwil)": 2,
+  "Z4_JERUSALEM_HILLS | name only (gazetteer: Z4_JERUSALEM_HILLS: ramallah)": 1,
+  "Z4_JERUSALEM_HILLS | name only (gazetteer: Z4_JERUSALEM_HILLS: tekoa)": 1,
+  "Z4_JERUSALEM_HILLS | name only (gazetteer: Z4_JERUSALEM_HILLS: zova)": 2,
+  "Z4_JERUSALEM_HILLS | name only (jer_tombs_kings)": 2,
+  "Z4_JERUSALEM_HILLS | name only (ramat_rahel)": 1
+ },
+ "unlocated_phase4_listing": [
+  {
+   "record_id": "IAA phase4_2026-10-11/part_g_qdap/features.csv#58",
+   "report_id": "QDAP4-070-ymca-cemeteries",
+   "pages": "70-80",
+   "site_name": "Cemeteries and a 'Monastery' at the Y.M.C.A., Jerusalem",
+   "zone": "Z4_JERUSALEM_HILLS",
+   "reader_place": "name only",
+   "code": "F1",
+   "dated_in_window": "no"
+  }
+ ],
+ "tier1_units": []
+}
