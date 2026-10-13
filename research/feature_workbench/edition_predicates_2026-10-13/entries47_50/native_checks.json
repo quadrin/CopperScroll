@@ -1,0 +1,96 @@
+{
+  "sources": [
+    {
+      "stem": "puech2015",
+      "local_path": "research-work/sources/puech2015.pdf",
+      "bytes": 5041693,
+      "sha256": "864a843aa9aa8d8bb3c8470f8df0be35cc1abc319c0d4de6e99a1ceedfac99d4"
+    },
+    {
+      "stem": "lefkovits2000",
+      "local_path": "research-work/sources/lefkovits2000.pdf",
+      "bytes": 60384566,
+      "sha256": "09c76f1bffd587d0b8f44f89174ccd7e5e41d2c9007823217b7225bf1c1d0d26"
+    },
+    {
+      "stem": "milik1960",
+      "local_path": "research-work/sources/milik1960.pdf",
+      "bytes": 6832823,
+      "sha256": "c7a606f4aaa6b6230a9abdfcf65afe5b03b88bb5b12d6d13d84a2041f3932427"
+    },
+    {
+      "stem": "djd1962",
+      "local_path": "research-work/sources/djd1962.pdf",
+      "bytes": 4795367,
+      "sha256": "b7a52c275ad42a333f4d825efd12425e11574aa00bdd76e72e41656de86a2eb2"
+    },
+    {
+      "stem": "stables2007",
+      "local_path": "research-work/sources/stables2007.pdf",
+      "bytes": 641208,
+      "sha256": "1a38af5efaf621b27a2442ef273ba25682b5a54a7165fd85a8b4cbf8493705c4"
+    },
+    {
+      "stem": "aqueducts1989",
+      "local_path": "research-work/sources/aqueducts1989.pdf",
+      "bytes": 73655820,
+      "sha256": "2330e0b31590057b26ffebdb56852e40ed78bf32b5e0b7453d293a1278abab15"
+    }
+  ],
+  "native_comparisons": [
+    {
+      "entry": 50,
+      "id": "LIT-MAZ-SOL-UPPER",
+      "source": "Mazar1989 pp183\u2013185 Fig15 p184",
+      "predicates": {
+        "basin": "supported",
+        "four_corners": "supported current form only",
+        "upper_relation": "supported",
+        "contemporaneous_phase": "unknown"
+      },
+      "status": "not identifiable from available evidence"
+    },
+    {
+      "entry": 47,
+      "id": "LIT-MAZ-SALEH-SPR",
+      "source": "Mazar1989 p185 Fig16",
+      "predicates": {
+        "spring_underground_relation": "supported",
+        "basin": "unknown same-feature link",
+        "original_entrance": "unknown",
+        "black_stone": "unknown",
+        "stone_at_entrance": "unknown",
+        "stone_from_origin_2c": "unknown",
+        "contemporaneous_phase": "unknown"
+      },
+      "status": "not identifiable from available evidence"
+    },
+    {
+      "entry": 50,
+      "id": "LIT-DAM-UPPER-POOL",
+      "source": "Damati1989 pp299\u2013300 Fig2 p300",
+      "predicates": {
+        "basin": "supported",
+        "four_corners": "supported rectangular form",
+        "upper_relation": "unknown: adjective upper modifies garden",
+        "contemporaneous_phase": "unknown: construction fabric and earlier reuse not dated"
+      },
+      "status": "not identifiable for physical basin; reported monastic garden configuration excluded",
+      "coded_reported_configuration_phase": "outside_window: monastic upper-garden use, not independent pool construction",
+      "physical_pool_status": "not identifiable from available evidence"
+    },
+    {
+      "entry": 50,
+      "id": "Solomons_stables",
+      "source": "Seligman2007 pp34*\u201339* Plans1\u20132",
+      "predicates": {
+        "court": "unknown ancient court relation",
+        "inner_relation": "unknown",
+        "zadok_tomb_association": "unknown",
+        "contemporaneous_phase": "unknown: architecture/reused masonry cannot phase-link court"
+      },
+      "status": "not identifiable from available evidence"
+    }
+  ],
+  "no_new_unseen_prediction": true
+}

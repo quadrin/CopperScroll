@@ -1,0 +1,162 @@
+{
+  "mode": "exploratory",
+  "archaeology_scope": "held water.csv 2043 pre-coded installation rows; courts incompletely covered",
+  "identification_claim": false,
+  "branches": [
+    {
+      "id": "E47-L1",
+      "edition": "Lefkovits2000 pp335/345",
+      "required": [
+        "basin",
+        "valley",
+        "west_relation",
+        "black_stone",
+        "stone_to_entrance_2c",
+        "contemporaneous_phase"
+      ],
+      "distance_type": "stone-to-entrance; bearing unknown",
+      "cubits": [
+        0.45,
+        0.5,
+        0.525
+      ],
+      "tolerance_m": null
+    },
+    {
+      "id": "E47-L2",
+      "edition": "Lefkovits2000 p345",
+      "required": [
+        "basin",
+        "valley",
+        "west_relation",
+        "black_stone",
+        "stone_at_entrance",
+        "stone_from_origin_2c",
+        "contemporaneous_phase"
+      ],
+      "distance_type": "unspecified origin-to-stone/entrance",
+      "cubits": [
+        0.45,
+        0.5,
+        0.525
+      ],
+      "tolerance_m": null
+    },
+    {
+      "id": "E47-P",
+      "edition": "Puech2015 pp85/88-90",
+      "required": [
+        "basin",
+        "valley",
+        "spring_underground_relation",
+        "black_stone",
+        "stone_at_entrance",
+        "stone_from_origin_2c",
+        "contemporaneous_phase"
+      ],
+      "distance_type": "unspecified datum; no west bearing",
+      "cubits": [
+        0.45,
+        0.5,
+        0.525
+      ],
+      "tolerance_m": null
+    },
+    {
+      "id": "E47-M",
+      "edition": "Milik1960 p141 item49",
+      "required": [
+        "basin",
+        "valley",
+        "west_relation",
+        "stone_two_clamps",
+        "stone_at_entrance",
+        "contemporaneous_phase"
+      ],
+      "distance_type": null
+    },
+    {
+      "id": "E47-W-reported",
+      "edition": "Wolters reported in Lefkovits pp335/339/344; original unverified",
+      "required": [
+        "basin",
+        "zered_setting",
+        "stone_two_coins",
+        "stone_at_entrance",
+        "contemporaneous_phase"
+      ],
+      "distance_type": null
+    },
+    {
+      "id": "E50-P",
+      "edition": "Puech2015 pp86/94-95",
+      "required": [
+        "court",
+        "four_corners",
+        "zadok_tomb_association",
+        "contemporaneous_phase"
+      ],
+      "restored": false
+    },
+    {
+      "id": "E50-L",
+      "edition": "Lefkovits2000 pp358-362",
+      "required": [
+        "court",
+        "four_corners",
+        "inner_relation",
+        "contemporaneous_phase"
+      ],
+      "restored": true
+    },
+    {
+      "id": "E50-U",
+      "edition": "Wise reported in Lefkovits p359; Lefkovits alternative p360; project displayed text",
+      "required": [
+        "basin",
+        "four_corners",
+        "upper_relation",
+        "contemporaneous_phase"
+      ],
+      "restored": true
+    },
+    {
+      "id": "E50-M-reported",
+      "edition": "Milik1962 Addenda pp301-302 reported in Puech p94 and Lefkovits pp358/360",
+      "required": [
+        "basin",
+        "four_corners",
+        "siloam_association",
+        "contemporaneous_phase"
+      ],
+      "restored": true
+    },
+    {
+      "id": "E50-B-reported",
+      "edition": "Beyer joined division reported in Lefkovits p358",
+      "required": [
+        "basin",
+        "four_corners",
+        "siloam_association",
+        "same_as_entry49",
+        "contemporaneous_phase"
+      ],
+      "restored": true,
+      "closed_E49_test_reopened": false
+    },
+    {
+      "id": "E50-M1960",
+      "edition": "Milik1960 p142 item52",
+      "required": [
+        "four_corners",
+        "unrestored_structure_identity",
+        "contemporaneous_phase"
+      ],
+      "restored": true,
+      "opening_noun": "unfilled; no named pool requirement"
+    }
+  ],
+  "rule": "All required supported => limited landmark fit. Any explicit contradiction => conditional exclusion for this row. Otherwise not identifiable. Missing data never exclusion.",
+  "new_unseen_prediction": null,
+  "numeric_measurement_status": "none: no origin/axis/uncertainty for any retained 2c branch; metric equality cannot be scored"
+}

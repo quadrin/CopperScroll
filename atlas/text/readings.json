@@ -389,19 +389,32 @@
       1,
       2
     ],
-    "label": "בנדבך השלשי: the third course",
+    "label": "בנדבך השלשי: third course, third gravestone or a name",
     "readings": [
       {
-        "who": "Project atlas",
-        "reading": "נדבך",
-        "meaning": "a course of masonry",
-        "ref": ""
+        "who": "Puech 2015",
+        "reading": "",
+        "meaning": "third masonry course; adopted interpretation",
+        "ref": "p. 29"
+      },
+      {
+        "who": "Lefkovits 2000",
+        "reading": "",
+        "meaning": "third gravestone; adopted interpretation",
+        "ref": "p. 50"
+      },
+      {
+        "who": "Milik 1960",
+        "reading": "",
+        "meaning": "Ben Rabbah of (Bet) Shalishah; proposed personal-name interpretation",
+        "ref": "pp. 139, 144"
       }
     ],
-    "note": "The lexicon rates the meaning of נדבך as medium; it occurs once in the Bible (Ezra 6:4) and in the Mishnah (for example m. Middot 3:7). The files record no editor who reads it differently.",
+    "note": "The original editions disagree on the third datum. Puech prefers a third masonry course; Lefkovits adopts a third gravestone; Milik proposes a personal name. These require separate archaeological tests. A preserved rock-cut monument cannot supply built masonry courses in that component, but that does not exclude its associated or lost parts, the gravestone branch or the whole site.",
     "sources": [
       "tables/landmark_lexicon_index.csv",
-      "atlas/app/atlas-data.json"
+      "atlas/app/atlas-data.json",
+      "research/feature_workbench/edition_predicates_2026-10-13/entries2_26/README.md"
     ]
   },
   {
@@ -792,25 +805,26 @@
     "label": "המלח: the Millo, the Esplanade or salt",
     "readings": [
       {
-        "who": "Research files (Phase 2 lexicon)",
-        "reading": "מלה / מלח",
-        "meaning": "'Esplanade? Millo? salt' (meaning rated low)",
-        "ref": ""
-      },
-      {
         "who": "Puech 2015",
         "reading": "המלח",
-        "meaning": "'the salt': a salt cistern",
+        "meaning": "salt-related pit below steps; mixing/dissolving and ha-Melah alternatives discussed",
         "ref": "pp. 38–39"
+      },
+      {
+        "who": "Lefkovits 2000",
+        "reading": "",
+        "meaning": "salt pit adopted; other feature types discussed in apparatus",
+        "ref": "pp. 103–104"
       }
     ],
-    "note": "Here Puech 2015 reads ḥet, 'the salt', a salt cistern (pp. 38–39). The same word recurs at III 8 and III 11, where Milik and Puech take it as the Temple Esplanade (Puech 2015 p. 46). The text shown has המלח, which the translation leaves as a name, ha-Melaḥ; the atlas title 'Millo' follows the Esplanade reading of III 8 and III 11. The files keep only the Tyropoeon valley in Jerusalem as a possible place for this entry.",
+    "note": "Puech 2015 and Lefkovits adopt a salt-related pit below steps. Puech also discusses mixing/dissolving and retains the ha-Melah/Millo alternative; Lefkovits lists furnace, burial-niche and named-pit alternatives in his apparatus. The atlas Millo/Tyropoeon placement depends on the selected lexical/site branch. Salt association does not require a saline spring. Steps entering a pit do not alone establish the specified below-steps relation. The numeral gives treasure quantity, not distance or depth.",
     "sources": [
       "tables/landmark_lexicon_index.csv",
       "atlas/app/atlas-data.json",
       "tables/phase3_site_index.csv",
       "research/logs/findings_log.md",
-      "tables/phase5_assessments.csv"
+      "tables/phase5_assessments.csv",
+      "research/feature_workbench/edition_predicates_2026-10-13/entry6/README.md"
     ]
   },
   {
@@ -2926,23 +2940,30 @@
     "label": "הרגם: boulder or mound",
     "readings": [
       {
-        "who": "Puech 2006",
+        "who": "Puech 2006, 2015",
         "reading": "הרגב",
-        "meaning": "the boulder",
-        "ref": ""
+        "meaning": "cave at the base of a boulder",
+        "ref": "2006 p. 190; 2015 pp. 60–61"
       },
       {
-        "who": "Research files (no editor named)",
+        "who": "Lefkovits 2000",
         "reading": "",
-        "meaning": "a mound or clod",
-        "ref": ""
+        "meaning": "cave of the builder of a sepulcher; alternative aspect attachments",
+        "ref": "pp. 209–212"
+      },
+      {
+        "who": "Allegro, reported by Lefkovits",
+        "reading": "",
+        "meaning": "inner chamber of a watchtower",
+        "ref": "Lefkovits pp. 209–212"
       }
     ],
-    "note": "The text shown has הרגם (final mem) where Puech reads הרגב, the same word as in entry 23. The lexicon rates its meaning low, so the landmark could be a boulder or a mound, and the files do not decide.",
+    "note": "Puech reads a cave at the base of a boulder. Lefkovits instead adopts a cave of the builder of a sepulcher and allows the east aspect to attach to the cave or its landmark. Allegro’s watchtower/inner-chamber branch requires a different inventory. The displayed heap/corner model is one selected branch. A modern cave facing without its ancient phase cannot exclude the ancient target.",
     "sources": [
       "research/phases/phase1_summary.md",
       "tables/landmark_lexicon_index.csv",
-      "atlas/app/atlas-data.json"
+      "atlas/app/atlas-data.json",
+      "research/feature_workbench/edition_predicates_2026-10-13/entries2_26/README.md"
     ]
   },
   {
@@ -3664,16 +3685,23 @@
     "label": "באמא: in the conduit",
     "readings": [
       {
-        "who": "Puech 2006",
+        "who": "Puech 2015",
         "reading": "[בא]מא",
-        "meaning": "in the [con]duit (restored)",
-        "ref": ""
+        "meaning": "conduit restoration",
+        "ref": "pp. 69–71"
+      },
+      {
+        "who": "Lefkovits 2000",
+        "reading": "",
+        "meaning": "conduit adopted; alternative first-word restorations discussed",
+        "ref": "pp. 245–247"
       }
     ],
-    "note": "The first letters of the landmark are restored, as the brackets in the text shown mark. The research files list this among the restorations that affect the landmark; no other reading is reported.",
+    "note": "The conduit noun is restored. Puech argues for the conduit; Lefkovits adopts a conduit but lists alternative restorations. A conduit-only inventory tests only that branch. An aqueduct or drain must also satisfy the chosen road relation, named references, two east-of relations and shared ancient phase.",
     "sources": [
       "research/phases/phase1_summary.md",
-      "tables/landmark_lexicon_index.csv"
+      "tables/landmark_lexicon_index.csv",
+      "research/feature_workbench/edition_predicates_2026-10-13/entries33_34/README.md"
     ]
   },
   {
@@ -3752,14 +3780,21 @@
         "reading": "",
         "meaning": "'(the house of) Aḥiyah'",
         "ref": "p. 69"
+      },
+      {
+        "who": "Lefkovits 2000",
+        "reading": "",
+        "meaning": "Ahim; second reference in the adopted translation",
+        "ref": "pp. 245–247"
       }
     ],
-    "note": "The אחור shown here matches neither form given in the research files. The lexicon rates the word low (Ahijah is a personal name in the Bible, never a place), and the question is open. The translation follows the letters shown ('Aḥor'); the atlas title 'Ahiyah' follows Puech.",
+    "note": "Puech supplies a house of Ahiyah as the second reference; Lefkovits adopts Ahim. The displayed Ahor is a different transcription and supplies no independently located settlement. Milik’s named-place chain remains a separate alternative; its proposed modern equations are not established origins for measurement.",
     "sources": [
       "research/logs/findings_log.md",
       "research/phases/phase2_summary.md",
       "tables/landmark_lexicon_index.csv",
-      "atlas/app/atlas-data.json"
+      "atlas/app/atlas-data.json",
+      "research/feature_workbench/edition_predicates_2026-10-13/entries33_34/README.md"
     ]
   },
   {
@@ -3816,35 +3851,30 @@
     "label": "בתך דר◦: inscription or steep slope",
     "readings": [
       {
-        "who": "Puech 2006",
+        "who": "Puech 2006, 2015",
         "reading": "כתב חרת",
-        "meaning": "an engraved inscription",
-        "ref": ""
+        "meaning": "engraved inscription on stone/possible monument; lower down",
+        "ref": "2006 p. 212; 2015 pp. 69–72, 135"
       },
       {
         "who": "Lefkovits 2000",
         "reading": "כתב חרת",
-        "meaning": "an engraved inscription",
-        "ref": ""
+        "meaning": "engraved inscription; seventeen cubits a distance rather than depth",
+        "ref": "pp. 253–258"
       },
       {
-        "who": "Milik",
+        "who": "Milik 1960",
         "reading": "",
-        "meaning": "the steep part of a slope",
-        "ref": ""
-      },
-      {
-        "who": "Puech 2015",
-        "reading": "",
-        "meaning": "'an inscription engraved on the stone (/monument?)'",
-        "ref": "p. 69"
+        "meaning": "middle of an abrupt slope, near a stone",
+        "ref": "p. 141"
       }
     ],
-    "note": "The landmark is either a written marker or a feature of the terrain; the letters shown here are not the כתב חרת of Puech and Lefkovits, and the files do not print Milik's Hebrew. The lexicon rates the meaning low, and the valley itself is not identified. The translation follows the letters shown ('in the middle of the ◦'); the atlas title 'The inscribed stone' follows Puech and Lefkovits.",
+    "note": "Puech and Lefkovits read an engraved inscription on a stone or possible monument. That clause gives no inscription midpoint. The displayed middle-of reading and Milik’s abrupt-slope model are separate branches. Lefkovits explicitly treats seventeen cubits as distance rather than depth; Puech interprets the position as lower down. Neither fixes a horizontal axis or a surveyed datum. The schematic’s vertical shaft applies only to the conditional project depth model.",
     "sources": [
       "research/phases/phase2_summary.md",
       "tables/landmark_lexicon_index.csv",
-      "tables/phase3_site_index.csv"
+      "tables/phase3_site_index.csv",
+      "research/feature_workbench/edition_predicates_2026-10-13/entries33_34/README.md"
     ]
   },
   {
@@ -5302,7 +5332,7 @@
         "ref": ""
       },
       {
-        "who": "Milik 1962 (Addenda)",
+        "who": "Milik 1962 Addenda, secondary-reported",
         "reading": "גי איך",
         "meaning": "for an original איב: the Vale of Job = Bîr Ayyûb",
         "ref": "p. 301"
@@ -5314,7 +5344,7 @@
         "ref": ""
       }
     ],
-    "note": "The name decides the setting: Puech and Milik's Addenda read a 'valley of Job' near Jerusalem, Lefkovits a 'Pure Valley', Wolters Zered. The text shown prints Wolters's letters גי זרד; the research rates the name low to medium and lists Bîr Ayyûb only as possible.",
+    "note": "The name decides the setting: Puech and Milik's Addenda read a 'valley of Job' near Jerusalem, Lefkovits a 'Pure Valley', Wolters Zered. The text shown prints Wolters's letters גי זרד; the research rates the name low to medium and lists Bîr Ayyûb only as possible. The Addenda interpretation is reported through the inspected later editions; the held DJD plates volume does not contain its text.",
     "sources": [
       "research/phases/phase1_summary.md",
       "research/logs/findings_log.md",
@@ -5345,13 +5375,13 @@
         "who": "Milik 1960",
         "reading": "",
         "meaning": "on the west side",
-        "ref": ""
+        "ref": "p. 141"
       },
       {
         "who": "Lefkovits 2000",
         "reading": "",
         "meaning": "its western side",
-        "ref": ""
+        "ref": "pp. 335, 344–345"
       },
       {
         "who": "Puech 2006",
@@ -5366,11 +5396,12 @@
         "ref": "pp. 85, 88"
       }
     ],
-    "note": "Milik and Lefkovits give a direction here; Puech reads an underground chamber by a spring, so his entry has no direction at this point. The text shown follows Milik (בצדו המערבי). The translation follows the text shown ('on its west side'); the atlas description's spring and chamber follow Puech.",
+    "note": "Milik and Lefkovits give a west-side relation; Puech gives a spring-associated underground feature. Keep those requirements separate. Lefkovits’s two cubits are a distance between stone and entrance or an offset to their shared position from an unspecified origin. Puech also gives an offset with unspecified datum. Milik 1960 describes two clamps, without requiring black colour or a two-cubit dimension. No inspected source specifies a two-cubit stone length.",
     "sources": [
       "research/logs/findings_log.md",
       "research/phases/phase1_summary.md",
-      "tables/landmark_lexicon_index.csv"
+      "tables/landmark_lexicon_index.csv",
+      "research/feature_workbench/edition_predicates_2026-10-13/entries47_50/README.md"
     ]
   },
   {
@@ -5634,36 +5665,37 @@
     "label": "בברכא העליונה ב: pool, or Zadok's court",
     "readings": [
       {
-        "who": "Puech 2006",
-        "reading": "",
-        "meaning": "court of Zadok",
-        "ref": ""
-      },
-      {
         "who": "Puech 2015",
         "reading": "",
-        "meaning": "'in the courtyard (of the tomb) of Ṣadoq'",
-        "ref": "p. 86"
+        "meaning": "courtyard associated with Zadok’s tomb",
+        "ref": "pp. 93–95"
       },
       {
         "who": "Lefkovits 2000",
         "reading": "",
-        "meaning": "[inner court] (restored)",
-        "ref": ""
+        "meaning": "inner court; largely supplied opening",
+        "ref": "pp. 358–362"
       },
       {
-        "who": "Milik 1962 (Addenda)",
-        "reading": "[בברכת]ה",
-        "meaning": "its pool = the pool of Siloam (Birket el-Ḥamrâ)",
-        "ref": "pp. 299–301"
+        "who": "Wise, reported by Lefkovits",
+        "reading": "",
+        "meaning": "Upper Pool; conjectural restoration",
+        "ref": "Lefkovits pp. 359–360"
+      },
+      {
+        "who": "Milik 1962 Addenda, secondary-reported",
+        "reading": "",
+        "meaning": "Siloam pool restoration",
+        "ref": "Puech 2015 p. 94 n. 415 cites Addenda pp. 301–302"
       }
     ],
-    "note": "Puech names Zadok already on this line (the only place where the name rests on his reading alone), Lefkovits restores an inner court, and Milik's Addenda restore the pool of Siloam. The files do not give Puech's letters here, so which words of the text shown his reading replaces is not stated. The translation follows the text shown ('in the upper pool', restored); the atlas title 'Zadok's court' follows Puech.",
+    "note": "The displayed Upper Pool is Wise’s conjectural restoration, reported by Lefkovits, rather than a secure pool/elevation requirement. Puech adopts a courtyard associated with Zadok’s tomb; Lefkovits adopts an inner court. Their court branches cannot be tested by a water-only inventory. Milik’s later Siloam-pool restoration was checked through secondary reports: the held DJD file is the plates volume and lacks the text Addenda. Four corners alone does not distinguish a particular landmark.",
     "sources": [
       "research/phases/phase1_summary.md",
       "research/logs/findings_log.md",
       "tables/landmark_lexicon_index.csv",
-      "tables/phase3_site_index.csv"
+      "tables/phase3_site_index.csv",
+      "research/feature_workbench/edition_predicates_2026-10-13/entries47_50/README.md"
     ]
   },
   {
@@ -5690,10 +5722,10 @@
         "ref": "pp. 358–362"
       },
       {
-        "who": "Milik 1962 (Addenda)",
+        "who": "Milik 1962 Addenda, secondary-reported",
         "reading": "מקצועותיהם",
         "meaning": "their corners",
-        "ref": "pp. 299–301"
+        "ref": "Puech 2015 p. 94 n. 415 cites Addenda pp. 301–302"
       },
       {
         "who": "Schiffman 2002",
@@ -5708,7 +5740,7 @@
         "ref": "via Lefkovits pp. 358–362"
       }
     ],
-    "note": "Lefkovits counts four deposits here, one at each corner, while Beyer joins entries 49 and 50 into one unit. Milik's Addenda return to the form 'their corners'.",
+    "note": "Lefkovits counts four deposits here, one at each corner, while Beyer joins entries 49 and 50 into one unit. Milik's Addenda return to the form 'their corners'. The held DJD plates volume does not permit direct verification of the text Addenda.",
     "sources": [
       "research/logs/findings_log.md",
       "tables/entry_concordance.csv",
@@ -6997,6 +7029,95 @@
       "research/sources/baradon1989_capture_direct_review_2026-10-01.md",
       "research/sources/atiqot41_iv11_iv17_review_2026-10-01.md",
       "research/measurements/cycle4/puech_entry25.md"
+    ]
+  },
+  {
+    "id": "e34-distance",
+    "entry": "34",
+    "line": "VIII 5",
+    "words": [
+      2,
+      3,
+      4
+    ],
+    "also": [
+      {
+        "line": "VIII 6",
+        "words": [
+          0,
+          1
+        ]
+      }
+    ],
+    "label": "Seventeen cubits: depth or lower-distance branch",
+    "readings": [
+      {
+        "who": "Lefkovits 2000",
+        "reading": "",
+        "meaning": "distance rather than depth",
+        "ref": "pp. 257–258"
+      },
+      {
+        "who": "Puech 2015",
+        "reading": "",
+        "meaning": "lower down; axis and path unspecified",
+        "ref": "p. 72"
+      }
+    ],
+    "note": "A vertical seventeen-cubit shaft belongs to the separate traditional project model. The inscription branch requires its own origin, direction/path, surface and ancient configuration; it gives no inscription midpoint.",
+    "sources": [
+      "research/feature_workbench/edition_predicates_2026-10-13/entries33_34/README.md"
+    ]
+  },
+  {
+    "id": "e47-stone-distance",
+    "entry": "47",
+    "line": "X 9",
+    "words": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "also": [
+      {
+        "line": "X 10",
+        "words": [
+          0,
+          1
+        ]
+      }
+    ],
+    "label": "Black stone and two cubits: distance, clamps or coins",
+    "readings": [
+      {
+        "who": "Lefkovits 2000",
+        "reading": "",
+        "meaning": "two-cubit distance; two possible origin/attachment models",
+        "ref": "pp. 335, 344–345"
+      },
+      {
+        "who": "Puech 2015",
+        "reading": "",
+        "meaning": "access-marking stone at a two-cubit offset; origin unspecified",
+        "ref": "pp. 89–90"
+      },
+      {
+        "who": "Milik 1960",
+        "reading": "",
+        "meaning": "stone with two clamps marking entrance",
+        "ref": "p. 141"
+      },
+      {
+        "who": "Wolters, reported by Lefkovits",
+        "reading": "",
+        "meaning": "coin-related alternative; separate from two-cubit model",
+        "ref": "Lefkovits pp. 339, 344"
+      }
+    ],
+    "note": "The numeral is not an invariant stone dimension. Black appearance supplies no rock-material identification. Each retained edition branch needs its own ancient entrance, attachment and datum.",
+    "sources": [
+      "research/feature_workbench/edition_predicates_2026-10-13/entries47_50/EDITION_AUDIT.md"
     ]
   }
 ]

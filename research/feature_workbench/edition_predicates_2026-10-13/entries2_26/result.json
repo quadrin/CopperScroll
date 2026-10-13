@@ -1,0 +1,111 @@
+{
+  "claim": "Entries 2 and 26 identify an archaeological structure in available evidence",
+  "terminal_result": "not identifiable from available evidence",
+  "observations_exposed": true,
+  "confirmation": false,
+  "landscape_rarity": false,
+  "source_record_counts": {
+    "tomb_catalogue_rows": 1159,
+    "cave_catalogue_rows": 665,
+    "cave_cluster_rows": 30,
+    "cave_scope": "canonical caves.csv only; phase4 supplementary11 rows not imported"
+  },
+  "E2_complete_status": {
+    "unknown": 5795
+  },
+  "E26_complete_ancient_status": {
+    "unknown": 7980,
+    "not_scored_natural_cave_inventory": 665
+  },
+  "E26_documentary_cave_aspect_codes": {
+    "unknown": 637,
+    "documentary_non_E_code": 13,
+    "documentary_E_code": 15
+  },
+  "documentary_non_E_codes": [
+    {
+      "record": "A41:I/14",
+      "facing": "cave:S",
+      "locator": "A41 Region I (Peleg and Hameiri) pp. 4-6, Plan 1, Figs. 1-3",
+      "phase": "not established"
+    },
+    {
+      "record": "A41:II/32",
+      "facing": "cave:S",
+      "locator": "A41 Region II (Hirschfeld and Riklin) pp. 21-22, Fig. 19",
+      "phase": "not established"
+    },
+    {
+      "record": "A41:VII/13",
+      "facing": "cave:S",
+      "locator": "A41 Region VII (Abeles) p. 136",
+      "phase": "not established"
+    },
+    {
+      "record": "A41:VII/14",
+      "facing": "cave:S",
+      "locator": "A41 Region VII (Abeles) p. 136",
+      "phase": "not established"
+    },
+    {
+      "record": "A41:VII/6",
+      "facing": "cave:S",
+      "locator": "A41 Region VII (Abeles) p. 135",
+      "phase": "not established"
+    },
+    {
+      "record": "A41:XIV/2/11",
+      "facing": "cave:N",
+      "locator": "A41 Region XIV (Dahari) pp. 231-234, Figs. 2, 4-5",
+      "phase": "not established"
+    },
+    {
+      "record": "A41:XIV/33",
+      "facing": "cave:S",
+      "locator": "A41 Region XIV (Dahari) p. 245",
+      "phase": "not established"
+    },
+    {
+      "record": "DJD3:18",
+      "facing": "cave:N",
+      "locator": "DJD III (de Vaux 1962) pp. 6-13 (repo extraction); site 18, p. 9",
+      "phase": "not established"
+    },
+    {
+      "record": "DJD3:20",
+      "facing": "cave:S",
+      "locator": "DJD III (de Vaux 1962) pp. 6-13 (repo extraction); site 20, p. 9",
+      "phase": "not established"
+    },
+    {
+      "record": "DJD3:4",
+      "facing": "cave:S",
+      "locator": "DJD III (de Vaux 1962) pp. 6-13 (repo extraction); site 4, p. 7",
+      "phase": "not established"
+    },
+    {
+      "record": "DJD3:6",
+      "facing": "cave:S",
+      "locator": "DJD III (de Vaux 1962) pp. 6-13 (repo extraction); site 6, p. 7",
+      "phase": "not established"
+    },
+    {
+      "record": "ASI:109/4-105",
+      "facing": "cave:NW",
+      "locator": "ASI Map of Wadi Qelt (109/4), Sion 2013, site 105 (survey.iaa.org.il online record)",
+      "phase": "not established"
+    },
+    {
+      "record": "ASI:109/4-23-4",
+      "facing": "cave:N",
+      "locator": "ASI Map of Wadi Qelt (109/4), Sion 2013, site 23 (survey.iaa.org.il online record)",
+      "phase": "not established"
+    }
+  ],
+  "hashes": {
+    "research/regional/tombs/tombs.csv": "b2b5ba9d0f20a35790aadf0ec92adef46aff88baf11ba4584c6e9259e391fd2b",
+    "research/regional/caves_entry25/caves.csv": "16ab5e3437f317fcb01a36639f66beb05c956ad49d9250a1308cd72287528f2d",
+    "research/feature_workbench/edition_predicates_2026-10-13/entries2_26/PREDICATES.md": "41e1ccfe544261aae9bb1e20b6e421e01b730cac972e6e501e88e28d3b1ba7e0"
+  },
+  "no_false_exclusions": "Survey silence, old tomb dates, modern orientation without ancient phase, blocked openings and incomplete groups do not exclude whole sites."
+}

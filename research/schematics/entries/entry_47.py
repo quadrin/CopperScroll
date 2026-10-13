@@ -21,9 +21,9 @@ def black_stone(c, x, y, w, h):
 
 # ---------------- main panel ----------------
 ix, iy, iw, ih = S.panel(
-    c, mx, my, mw, mh, "Text shown (Milik, Lefkovits): a black stone on the basin's west side",
-    ["Milik 1960: “pool of the vale of …, on the west side”; Lefkovits: “its western side”.",
-     "The black stone is “the entrance”; the deposit is drawn just behind it (assumed)."],
+    c, mx, my, mw, mh, "Project west-side model; Lefkovits distance alternative",
+    ["Lefkovits retains a western-side marker; two cubits measure a distance.",
+     "Milik 1960 instead describes a joined stone with two clamps."],
     "Project text · west side", "counted")
 
 px0, py0, pw, ph = ix + 10, iy + 6, 450, ih - 12
@@ -51,7 +51,7 @@ S.deposit(c, stx - 22, bcy + 6, size=6)
 S.leader(c, stx - 28, bcy + 14, px0 + 70, bcy + 76, P["red_d"])
 S.label(c, px0 + 18, bcy + 92, ["300 talents of gold,", "twenty cups"], P["red_d"], 11.5, 700)
 S.leader(c, stx, bcy - 10, px0 + 96, bcy - 64, P["ink"])
-S.label(c, px0 + 18, bcy - 92, ["black stone, 2 cubits", "= the entrance"], P["ink"], 11.5, 700)
+S.label(c, px0 + 18, bcy - 92, ["black-stone marker", "entrance relation varies"], P["ink"], 11.5, 700)
 S.north_arrow(c, px0 + pw - 30, py0 + 60)
 c.text(px0 + pw - 12, py0 + ph - 12, "Not to scale; basin and stone enlarged.", 10.5, P["muted"], anchor="end")
 
@@ -59,29 +59,30 @@ c.text(px0 + pw - 12, py0 + ph - 12, "Not to scale; basin and stone enlarged.", 
 dx0, dy0, dw0, dh0 = px0 + pw + 20, py0, iw - pw - 40, 380
 c.rect(dx0, dy0, dw0, dh0, fill=P["paper"], stroke=P["border"], width=0.8)
 c.text(dx0 + 12, dy0 + 22, "DETAIL · the west side, enlarged", 12, P["ink"], 700)
-c.text(dx0 + 12, dy0 + 38, "plan, north up; 1 cubit ≈ 0.5 m", 10.5, P["muted"], italic=True)
+c.text(dx0 + 12, dy0 + 38, "linear relation; axis illustrative, not surveyed", 10.5, P["muted"], italic=True)
 edge = dx0 + dw0 - 70
 c.rect(edge, dy0 + 60, dx0 + dw0 - 1 - edge, dh0 - 70, fill=P["water"], stroke="none")
 c.line(edge, dy0 + 60, edge, dy0 + dh0 - 10, P["water_d"], 2.2)
 c.text(edge + 8, dy0 + 80, "basin", 11, P["water_d"])
 cub = 55                                     # px per cubit in the detail
 sy_mid = dy0 + 210
-black_stone(c, edge - 14, sy_mid, 18, 2 * cub)
-S.dim(c, edge - 38, sy_mid - cub, edge - 38, sy_mid + cub, "2 cubits ≈ 1 m", P["ink"])
-S.label(c, edge - 4, sy_mid - cub - 40, ["black stone · אבן, drawn as its length", "= “the entrance” · פתח"],
+black_stone(c, edge - 14 - 2 * cub, sy_mid, 18, 30)
+c.rect(edge - 21, sy_mid - 20, 14, 40, fill=P["paper"], stroke=P["grave_d"], width=1, dash="3 3")
+S.dim(c, edge - 14 - 2 * cub, sy_mid + 40, edge - 14, sy_mid + 40, "2 cubits: distance", P["ink"])
+S.label(c, edge - 4, sy_mid - cub - 40, ["marker → entrance: one Lefkovits branch", "stone dimensions are unknown"],
         P["ink"], 11.5, 700, anchor="end")
 # the deposit just behind (west of) the entrance
-c.line(edge - 60, sy_mid, edge - 112, sy_mid, P["grave_d"], 1.2, dash="4 3", arrow="ink")
-S.deposit(c, edge - 128, sy_mid, size=7)
-S.label(c, edge - 128, sy_mid + 28, ["300 talents of gold,", "twenty cups"], P["red_d"], 11.5, 700, anchor="middle")
-S.label(c, edge - 128, sy_mid + 60, ["behind the entrance (assumed)"], P["muted"], 10.5, anchor="middle")
+
+
+
+S.label(c, dx0 + 12, sy_mid + 100, ["Alternative: two cubits to the", "stone / entrance; origin unknown."], P["muted"], 10.5)
 S.label(c, dx0 + 12, dy0 + dh0 - 14, ["What the entrance leads to is not said."], P["muted"], 10.5)
 
 ny = dy0 + dh0 + 26
 c.text(dx0, ny, "Reading the words", 12.5, P["ink"], 700)
 ny = c.wrap(dx0, ny + 20, "ים here is a basin or pool, not “sea” or “west” as at IX 7 (lexicon: medium). "
             "The text shown follows Milik's בצדו המערבי.", 46, 11.5)
-c.wrap(dx0, ny + 6, "“Two cubits” could also give a distance; the records do not discuss it.", 46, 11.5)
+c.wrap(dx0, ny + 6, "Lefkovits p345 gives two offset alternatives. Puech2015 pp85,89–90 leaves the measuring origin unspecified. Neither fixes stone length.", 46, 11.5)
 
 # ---------------- side panels ----------------
 sx, sy, sw, sh = L["side"]
@@ -108,7 +109,7 @@ S.label(c, chx + chw + 14, chy + 30, ["black stone at", "its entrance", "(one ch
 
 # V2: the valley's name
 ix, iy, iw, ih = S.panel(c, sx, sy + ph1 + gap, sw, ph2, "The valley's name: the setting, not the plan",
-                         ["Every reading keeps a basin in a valley; the name moves it."],
+                         ["Retained basin/chamber readings; the setting remains disputed."],
                          "Changes the setting only", "neutral")
 yy = iy + 16
 for who, what in (("Wolters", "Valley of Zered · גי זרד (text shown)"),
@@ -140,3 +141,4 @@ S.footer(c, L["footer_y"], [
      "keeps Bir Ayyub for comparison only (Phase 3 site index)."),
 ])
 print(c.save(S.out_path("47")))
+

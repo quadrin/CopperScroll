@@ -31,3 +31,7 @@ Run `python3 -I -B research/feature_workbench/available_evidence_2026-10-13/eval
 The reported-form intersection and source-scope corrections are obtained. They provide no independent site identification or unused field prediction. Closed hydraulic and manuscript tests retain their named reopening conditions. Reserved archive arrivals and manuscript targets were not opened. The primary-source books were inspected at the specified pages, not reread in their entirety in this assessment.
 
 **Last session: partly** — obtained the 102-record form intersection, exact-source verification and corrected source dependencies; no independently identified locality.
+
+## Correction to the entry coverage interpretation
+
+The entries absent from the Phase 5 index already had earlier text/candidate work. The [original-edition audit](../edition_predicates_2026-10-13/README.md) corrects their archaeological requirements; index absence alone does not identify unworked entries.

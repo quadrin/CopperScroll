@@ -60,3 +60,4 @@ The [active test](../ACTIVE_TEST.md) remains authoritative. The L-656 field-file
 
 The interface provides saved exploratory queries, native-state views, coverage gates, provenance and a planning-only outcome selector. It supplies no precise field location or detection probability. A registered world overlay, complete regional roster, phase-controlled contacts and unused observation remain evidence dependencies.
 
+[Original-edition corrections, 13 October](edition_predicates_2026-10-13/README.md) distinguish the retained archaeological branches for entries 2, 6, 26, 33, 34, 47 and 50 and link corrected entry34/47 schematics.

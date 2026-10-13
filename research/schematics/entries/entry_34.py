@@ -14,7 +14,7 @@ P = S.P
 CUT = 15
 c, L = S.page("34", "the inscribed stone", "VIII 4–7", height=1000,
               subtitle="Schematic plan and section. The text gives no direction, so the plan has no north arrow. "
-                       "One arrangement the text allows; not a real site.")
+                       "Conditional project depth model; edition alternatives remain separate.")
 mx, my, mw, mh = L["main"]
 mh -= CUT
 sx, sy, sw, sh = L["side"]
@@ -57,15 +57,15 @@ S.label(c, sxp - 200, vy + 152, ["last letter unread; drawn as a dashed zone"], 
 S.leader(c, sxp + 8, syp + 8, sxp + 40, vy + 180)
 S.label(c, sxp - 20, vy + 196, ["on the stone, dig 17 cubits ≈ 8.5 m;", "under it: silver and gold, 17 talents"],
         P["red_d"], 11.5, 600)
-c.text(mx + 20, my + mh - 46, "Plan not to scale; the section is to scale in depth.", 11, P["muted"])
+c.text(mx + 20, my + mh - 46, "Plan not to scale; depth shown only for the conditional depth model.", 11, P["muted"])
 
 # section
 bx0, by0, bw0 = mx + 480, my + 90, mw - 500
 depth = 17 * PXC
 bh0 = 120 + depth + 40 + 70
 c.rect(bx0, by0, bw0, bh0, fill=P["paper"], stroke=P["border"], width=1, rx=4)
-c.text(bx0 + 12, by0 + 22, "Section at the stone", 12.5, P["ink"], 700)
-c.text(bx0 + 12, by0 + 38, "depth to scale; 1 cubit ≈ 0.5 m", 11, P["muted"])
+c.text(bx0 + 12, by0 + 22, "Conditional depth model", 12.5, P["ink"], 700)
+c.text(bx0 + 12, by0 + 38, "axis chosen for this model; 1 cubit ≈ 0.5 m", 11, P["muted"])
 g = by0 + 120
 gx = bx0 + bw0 * 0.38
 c.rect(bx0 + 1, g, bw0 - 2, depth + 40, fill="url(#earth)")
@@ -85,19 +85,19 @@ ph = (sh - 10) / 2
 
 # V1: inscription
 bx, by, bw, bh = S.panel(c, sx, sy, sw, ph, "Puech 2006, Lefkovits 2000: an engraved inscription",
-                         ["Both read כתב חרת: “in the middle of the engraved inscription,",
-                          "on the stone”. The atlas title follows them."],
+                         ["The stone bears an engraved inscription; neither adopted branch",
+                          "requires its midpoint. The target lies seventeen cubits lower down."],
                          "Alternative reading · atlas title", "neutral")
 fx, fy, fw, fh = bx + 30, by + 30, 190, 120
 c.rect(fx, fy, fw, fh, fill=P["stone"], stroke=P["stone_d"], width=1.6, rx=6)
 for i in range(5):
     yy = fy + 22 + i * 19
     c.line(fx + 20, yy, fx + fw - 20 - (i % 2) * 24, yy, P["stone_d"], 1.6, dash="9 3 4 3")
-S.deposit(c, fx + fw / 2, fy + fh / 2 + 2, size=6)
+
 c.text(fx + fw / 2, fy + fh + 20, "stone face with inscription", 10.5, P["sub"], anchor="middle")
-S.label(c, fx + fw + 26, fy + 10, ["The landmark is a written marker:", "the stone bears the inscription,",
-                                   "and the digging starts at its", "middle. Depth and contents",
-                                   "are the same: 17 cubits,", "17 talents."], P["sub"], 11.5)
+S.label(c, fx + fw + 26, fy + 10, ["The inscription identifies a marker.", "No midpoint origin is specified.",
+                                   "Lefkovits: distance, not depth.", "Puech: lower down, not under it.",
+                                   "Axis, path and datum are unknown.", "Contents/unit readings also vary."], P["sub"], 11.5)
 c.text(fx, fy + fh + 44, "The lexicon rates the meaning low (one Bible use, Exod 32:16).", 11, P["muted"])
 
 # V2: steep slope
@@ -131,7 +131,8 @@ S.footer(c, L["footer_y"] - CUT, [
     ("Project placement", "Atlas: possible only, low. Candidates, each possible, low: Bir Ayyub (En-Rogel) at the "
      "Kidron–Hinnom junction; the Jericho oasis; Doq (Jebel Qarantal). The valley itself is not identified."),
     ("What the records show", "phase3_site_index.csv: seven candidates, none best (3 possible, 4 weak). No phase-5 "
-     "assessment or feature constraint names this entry, so nothing on the ground has been checked; readings.json "
-     "e34-inscription: the letters shown are not those of Puech and Lefkovits."),
+     "assessment or feature constraint names this entry in that index. Original edition checks remove the inscription "
+     "midpoint and universal vertical depth from the Puech/Lefkovits branches (Puech2015 pp69–72; Lefkovits pp253–258)."),
 ])
 print(c.save(S.out_path("34")))
+
