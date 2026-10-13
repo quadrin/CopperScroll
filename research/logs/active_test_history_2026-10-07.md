@@ -220,3 +220,16 @@ Last session (8 October UTC): **partly**: [shared research tools](shared_tools/R
 ## Status preserved before the case-study methods — 9 October 2026 UTC
 
 Last session (8 October UTC): **obtained**: Puech 2015 pages for every atlas title and landmark that differs from the text shown. Sixteen more entries (6, 7, 13, 14, 16, 17, 27, 29, 33, 34, 43, 47, 49, 50, 53, 56) now say in the atlas which edition reading they follow, and their reading records add Puech 2015; the descriptions of entries 4, 8 and 39 and the Hebrew label of entry 16 now match the text; at II 1 Puech 2015 reads "the salt", not the Millo. The scroll notes, two schematics and the atlas site were rebuilt.
+
+
+## Session record preserved during atlas UI work
+
+Last session (12 October): **partly** — obtained [applied feature/phase comparisons](feature_workbench/book_application_2026-10-12/README.md), [pit/pool/numerical alternatives and native report audit](text/entry46_alternatives_2026-10-12/README.md), [measurement resolution and corrected pair uncertainty](feature_workbench/measurement_resolution_2026-10-12/README.md), and [inventory-role predictions](comparanda/inventory_forms_2026-10-12/README.md). Atara’s western conduit and Absalom’s separate entrance phases change conditional clauses; missing dates/datums prevent identification. [Archive replies](agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026) narrow Manchester/CBRL routes; [Rachel Bar-Nathan reports holding Jericho field notes and requests an owner call](assessments/entry29_jericho_pools/netzer2001-first-pass.md#field-notes-holder-response--12-october-2026), without supplying the junction/level records.
+
+
+
+## Session records preserved during Atara source trace
+
+Last session (12 October): **partly** — obtained [desktop/mobile atlas interaction checks](../atlas/INTERACTION_VALIDATION.md) for the copper reader and site exploration controls, and [a photo integration proposal](../atlas/PHOTO_INTEGRATION.md). External map, terrain, photograph and JerusalemMap CDN loading remain blocked by the cloud proxy; network additions and reusable setup instructions were saved for review. The preceding session record is preserved in [history](logs/active_test_history_2026-10-07.md#session-record-preserved-during-atlas-ui-work).
+
+Last session (13 October UTC): **obtained** — applied [the five native source readings to exact witnesses](feature_workbench/book_application_2026-10-12/README.md#native-source-application--13-october-2026-utc): Ci320/colonnade and reset-stone inference failures, Jason's chamber/niche/access alternatives, Arnona's group/count/date qualifications, separate Gibeon installations and Atara's remaining original-contact dependency. Conditional results retain unknown bearings, phases, target datums and incomplete coverage.

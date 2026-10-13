@@ -6,7 +6,7 @@
 
 | Physical witness and entry | Immediate baseline | Applied result | Deciding source |
 |---|---|---|---|
-| Atara176 **western** pool, entry29 | Aggregate ASI83/2/34 has unknown feed. | Reported conduit becomes MATCH for the western child only. Great/north/four-sides and a dated inlet/wall/floor join remain UNKNOWN. The complete branch remains UNKNOWN. | McCown1947pp54–55 now read; original feature-specific western bottom-channel section and dated contacts still required. |
+| Atara176 **western** pool, entry29 | Aggregate ASI83/2/34 has unknown feed. | Reported channel join becomes MATCH for the western child only; flow direction is unresolved. Great/north/four-sides and a dated inlet/wall/floor join remain UNKNOWN. The complete branch remains UNKNOWN. | SWP1883pp82–83 and native Benjamin1993p162 now checked; exact opening identity, gradient and dated contacts required. |
 | Atara176 **eastern** pool, entry29 | Same two-pool aggregate. | No conduit promotion. The western channel supplies no eastern inlet. Dimensions remain descriptive; they do not automatically create a four-sides code. | Eastern-pool inlet/lining/floor section and dated context. |
 | Absalom monument original access, entry56 | ASI102/410/T0247 has unknown west entrance, eight chambers and kokhim in its combined monument/associated-cave description. | Under the **published entrance-face model**, original southern access fails the west-access clause. Chamber count/kokhim/cistern become UNKNOWN for this separated monument witness; the sibling cave remains unpartitioned. | Original access/fabric plans and a phase-attached threshold record. |
 | Absalom later breach, entry56 | Same parent record. | Later western access passes the reported-face clause, but breach date and matching chamber/threshold remain UNKNOWN. The original-access failure excludes only that access event. | Absolute breach sequence/date and feature-specific chamber plan. |
@@ -18,7 +18,7 @@
 
 The Absalom changes use the book's reported **access face**, not a measured entrance azimuth or inferred approach path. A narrower surveyed-bearing interpretation remains unmeasured. The inventory flag `multi_tomb_record=no` does not authorize combining the monument's name and entrance with all chambers of its associated cave. Conversely, separating a child witness does not reject every feature in the parent record or remove that record from the historical denominator. Entry48's traditional-name match remains a reported catalogue match; ancient name attestation is separate. The broad facade-to-exedra keyword proxy in entry51 stays visible rather than silently acquiring an observed under-pillar relationship.
 
-The Atara source is Benjamin1993 printed162/viewer184, observation `B93-0076`/FP05. Absalom's source is Kloner–Zissu2003 printed142–143/viewer156–157, `KZ2003-PDF156/157`/FP17, figs125–127. BeneHezir is printed144/viewer158, `KZ2003-PDF158`/FP18, fig128. Jason is printed242–243/viewer256–257, `KZ2003-PDF256/257`/FP19, figs250–252. Herodium B101 is Netzer1981 printed11/viewer19, `N002`, ill9, and printed70/viewer78, `N013`/FP20. Exact source URLs, observation-row hashes and figure IDs accompany each physical witness in [results.json](results.json). These references inherit verified project reading records; no new source page or protected arrival was opened here.
+The Atara source is Benjamin1993 printed162/viewer184, observation `B93-0076`/FP05. Absalom's source is Kloner–Zissu2003 printed142–143/viewer156–157, `KZ2003-PDF156/157`/FP17, figs125–127. BeneHezir is printed144/viewer158, `KZ2003-PDF158`/FP18, fig128. Jason is printed242–243/viewer256–257, `KZ2003-PDF256/257`/FP19, figs250–252. Herodium B101 is Netzer1981 printed11/viewer19, `N002`, ill9, and printed70/viewer78, `N013`/FP20. Exact source URLs, observation-row hashes and figure IDs accompany each physical witness in [results.json](results.json). These initial references inherit verified project reading records. The subsequent Atara original-source trace below records its newly opened SWP pages and source limits.
 
 ## Where application stops
 
@@ -65,10 +65,35 @@ The prior unresolved Arnona grid ranges keep their disabled coordinates. Mordot 
 
 **Gibeon.** The northeast rectangular reservoir, small western stepped pool and circular cut receive distinct source witness IDs, dimensions and date/supply qualifications (Pritchard pp. 67–70 / PDF 4–7). Tunnel mouths and branches receive a separate access record (pp. 71–75 / PDF 8–12, Figs. 4–5). Combining their properties into one feature is rejected. No exact matching parent row was found in the inspected cave/tomb/water lanes, so these source-defined comparanda have no invented lane score or map geometry. A future entry comparison must first name the actual installation, original use phase and measured entrance relation.
 
-**Atara dependency.** McCown pp. 54–55 / PDF 78–79 transmits SWP, Guérin and Dalman observations, including a pointed-arched outlet. It does not supply the missing dated western bottom-conduit/wall/floor section. The older Benjamin-based reported conduit code remains attached to the western child; McCown is not independent corroboration. The next record is the feature-specific original SWP Memoirs III pp. 82–83 or later contact record, with use/construction evidence.
+**Atara dependency.** McCown pp. 54–55 / PDF 78–79 transmits SWP, Guérin and Dalman observations. The cited SWP pages have now been read directly: they describe an outlet but print no Atara hydraulic drawing. The detailed source comparison and replacement dependency are below.
 
 The full candidate comparisons remain **not identifiable from available evidence**. The explicitly named relation/group/direction failures are conditional source-consistency results from exposed evidence. They add no registered unseen prediction or regional rarity inference.
 
 Rebuild with `evaluate.py`; run `test_application.py` and `test_native_application.py`. The native checks cover entrance-model separation, niche/chamber count scope, inherited position disabling, group-count versus unknown coverage, preservation of every numerical reading and reproducible source/hash joins.
 
 **Obtained** — native source-to-clause applications, exact locus/feature splits, conditional failures and explicit next observations.
+
+## Atara original-source trace — 13 October UTC / 12 October Los Angeles
+
+The original published entry is Conder and Kitchener, *SWP Memoirs III: Judaea* (1883), printed **82–83**, University of Toronto scan **PDF98–99**. The [native source pages](../../assets/plans/swp1883-atara/swp1883-atara-source-pages.pdf) preserve its title, illustration list and full entry context. The [figure manifest](../../assets/plans/swp1883-atara/figure_manifest.json) records hashes, extraction and reuse; the assets have identical atlas mirrors. The user-supplied scan matches the downloaded scan byte for byte. The [source trace](atara_source_trace.json) records observations, source labels, identity limits and access routes.
+
+SWP describes two reservoirs, the second northeast of the first. Its principal reservoir is **78×37ft** (23.7744×11.2776m), with a nine-foot wall and four internal buttresses. It explicitly calls the pointed-arched opening an **outlet**. These dimensions closely match Benjamin1993's western **24×11.5m** pool, rather than the eastern32×14.5m pool. That supports a likely pool crosswalk. SWP does not expressly label its principal reservoir western, and supplies no plan identifying the individual opening.
+
+Benjamin1993, printed **162 / PDF184**, site176, was reread in the native Hebrew scan. It places a vaulted corridor at the western pool bottom and a water channel at the corridor bottom, then describes that stone-section channel as **leading to the pools** (plural). This is a published supply-direction label. It does not establish which pool-wall aperture the channel enters, its gradient, or the date of operation. The spring pool and open channel about100m north are distinct installations.
+
+| Required relationship | Source observation | Result |
+|---|---|---|
+| Principal SWP pool = later western pool | Dimensions agree closely; second pool is northeast | Likely pool identity; not a surveyed outline crosswalk |
+| SWP arched outlet = Benjamin bottom-channel | Neither entry provides an aperture plan, section or station ID | UNKNOWN |
+| Bottom-channel fed or drained the western pool | SWP labels an outlet; Benjamin describes a channel leading to the pools | Actual flow UNKNOWN until those features are crosswalked |
+| Channel and pool operated together | No joint fabric contact, invert/gradient or dated use context | UNKNOWN |
+
+There is **no Atara drawing on pp82–83**. The plan on p82 belongs to **Anata's colonnaded building**, as its surrounding text and the illustration list show. Neither it nor a general SheetXVII map can supply an Atara inlet section. A single opening described differently, separate inlet/outlet openings, and changed hydraulic phases remain unresolved possibilities; none is an observed reconstruction. The pointed arch and site-level Byzantine sherds cannot date the cutting or joint operation.
+
+The existing entry29 **conduit=MATCH** means only a **reported channel join**, under the lane's published “feeds or joins” rule. It cannot be restated as a proved feeder, a contemporary inlet or an ancient operating configuration. The original whole-candidate comparison remains **not identifiable from available evidence** for those missing relationships.
+
+The British Library's [AddMS71548A–V](https://searcharchives.bl.uk/catalog/032-001965756) catalogue identifies survey observation/calculation notebooks, but supplies no digitized content or confirmed Atara sheet. [AddMS69848](https://searcharchives.bl.uk/catalog/032-002043164) mainly holds mapping calculations and a four-miles-to-inch working map; its catalogue expressly says the papers are not by Conder/Kitchener themselves. The exact Atara drawing is not established in either collection. The PEF documents/maps page failed to open. These are custody leads, not inspected drawings; exact failed URLs are in the trace.
+
+Next obtain the **Atara/Attara (M s, SheetXVII, beside Tell enNasbeh) original hydraulic plan/section**, identifying the78×37ft pool, nine-foot east wall, four buttresses, pointed-arched outlet and stone-section channel. The deciding evidence is channel invert/gradient plus the pool-floor/wall contacts and a dated construction or use context. Establish the drawing's existence and shelfmark first. McCown and the published SWP entry are now resolved dependencies; rereading them cannot supply that missing section.
+
+**Partly** — obtained the original published description and separated its outlet label from the later supply account; the exact hydraulic drawing, actual channel direction and joint-use phase remain unavailable.

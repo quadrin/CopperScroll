@@ -258,7 +258,10 @@
       "audit_ids": [
         "FP05"
       ],
-      "context_refs": [],
+      "context_refs": [
+        "research/feature_workbench/book_application_2026-10-12/atara_source_trace.json",
+        "research/assets/plans/swp1883-atara/figure_manifest.json"
+      ],
       "entries": [
         29
       ],
@@ -267,9 +270,9 @@
       },
       "configuration_in_window": "UNKNOWN",
       "datum": "UNKNOWN",
-      "phase": "Western24x11.5m pool with bottom vaulted corridor/channel; operation and contacts undated.",
-      "reason": "The individual western feature supports reported conduit supply. The two-pool aggregate previously has feed=unknown. Dimensions alone do not supply the four-sides code, great/northern relation or same-phase aperture.",
-      "next_source": "McCown1947pp54–55 now read; it transmits SWP/Guérin/Dalman accounts without the exact western join. Obtain original SWP MemoirsIIIpp82–83 or a later feature-specific conduit, wall and contemporaneous floor section with dated context.",
+      "phase": "Western24x11.5m pool and bottom vaulted corridor/channel. Benjamin reports a channel leading to the pools; SWP reports an outlet on a likely corresponding pool. Exact opening identity, flow and joint-use phase unresolved.",
+      "reason": "Reported conduit MATCH denotes the Benjamin channel join under the existing feeds-or-joins rule. Native SWPpp82–83 calls its opening an outlet; dimensions support a likely western-pool crosswalk but no section proves that outlet is the same bottom-channel. Flow labels cannot establish a measured inlet or joint operation.",
+      "next_source": "Locate an original Atara/Attara (Ms, SheetXVII, by Tell enNasbeh) plan or section identifying the78x37ft western pool, its9ft east wall, four buttresses, pointed-arched outlet and stone-section bottom-channel. Require channel invert/gradient, pool-floor and wall contacts, plus dated construction or use context. First establish the drawing shelfmark/existence; neither published entry supplies it.",
       "parent_record": {
         "id": "ASI-83/2/34-reservoir_pool",
         "lineage": "ASI",
@@ -8357,8 +8360,13 @@
         "terminal_claim": "not identifiable from available evidence",
         "scope": "McCown transmits SWP/Guérin/Dalman accounts; a generic pointed-arched outlet is not the requested dated western contact.",
         "locator": "pp. 54–55 / PDF 78–79; cited SWP Memoirs III (1883), pp. 82–83",
-        "next_observation": "SWP or later original feature-specific western conduit, wall and floor section with construction/use context.",
+        "next_observation": "Locate an original Atara/Attara (Ms, SheetXVII, by Tell enNasbeh) plan or section identifying the78x37ft western pool, its9ft east wall, four buttresses, pointed-arched outlet and stone-section bottom-channel. Require channel invert/gradient, pool-floor and wall contacts, plus dated construction or use context. First establish the drawing shelfmark/existence; neither published entry supplies it.",
         "original_campaign": "SWP, Guérin and Dalman inherited observations; not the Tell en-Nasbeh excavation campaign",
+        "followup": {
+          "record": "research/feature_workbench/book_application_2026-10-12/atara_source_trace.json",
+          "printed_source_read": "SWP1883pp82–83 / conduoftPDF98–99",
+          "result": "No Atara drawing in the published entry. SWP outlet and Benjamin supply labels cannot be joined to one exact opening; flow and joint-use phase UNKNOWN."
+        },
         "source_refs": [
           {
             "source_id": "mccown",

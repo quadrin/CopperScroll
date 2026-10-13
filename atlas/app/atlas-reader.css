@@ -116,3 +116,41 @@
   .reading-desk .scroll-heading h2{font-size:22px}
   .reading-desk .reader-desk-body{display:flex}
 }
+
+/* A continuous vertical column of metal, with apparatus outside the inscription. */
+.copper-reader .reader-head-actions{flex-wrap:wrap;justify-content:flex-end;gap:10px}
+.copper-reader .reader-text-button{font:12px var(--sans);border:1px solid #cbb394;border-radius:4px;padding:8px 10px;color:#704a32;background:#fbf3e6;cursor:pointer}
+.copper-reader .reader-text-button[aria-pressed=true]{background:#714a34;color:#fff4df}
+.copper-reader .reader-desk-body{display:flex;overflow:hidden;background:radial-gradient(ellipse at top,#28352e,#111c18);border-top:1px solid #35473c}
+.copper-reader .reader-desk-image[hidden]{display:none}
+.copper-reader.with-sources .reader-desk-image{flex:0 0 38%}
+.copper-reader .reader-desk-body .scroll-body{flex:1;overflow-y:auto;min-width:0;padding:22px 24px 40px;scrollbar-color:#9c7150 #18251d}
+.copper-reader-caption{max-width:580px;margin:0 auto 18px;font:11px/1.6 var(--sans);color:#c5cbbd;text-align:center}
+.copper-sheet{max-width:580px;margin:auto;padding:22px 28px 38px;border:1px solid #97623e;border-radius:45% 6% 12% 3% / 5px 8px 12px 10px;background:radial-gradient(ellipse at 15% 20%,#49655755,transparent 42%),radial-gradient(ellipse at 86% 70%,#214a3b88,transparent 35%),repeating-linear-gradient(173deg,#ffdf9a0a 0 1px,transparent 1px 5px),linear-gradient(95deg,#68402c,#b57f50 12%,#b8885a 55%,#895636 96%,#533420);box-shadow:inset 3px 0 10px #ffddb03b,inset -5px 0 12px #1b171970,0 12px 35px #0008}
+.copper-reader .scroll-entry{margin:22px 0 12px;padding:8px 10px;background:#261e1970;color:#ffebc9;border:1px solid #e3bf8f55;box-shadow:none}
+.copper-reader .scroll-entry.selected{background:#1a241db0;box-shadow:inset 3px 0 #f3d19b}
+.copper-reader .scroll-entry .entry-text small{color:#e2c8a8;font-size:10px}
+.copper-reader .scroll-entry .register-confidence{color:#ffe1b5}
+.copper-reader .scroll-row{grid-template-columns:24px minmax(0,1fr);grid-template-areas:"no he" ". en";gap:4px 10px;padding:7px 0;border-color:#38251935;background:none;box-shadow:none}
+.copper-reader .scroll-row.in-entry{background:#ffd2940e}
+.copper-reader .scroll-row.active{background:#efd6a329}
+.copper-reader .scroll-he{grid-area:he;font-size:27px;line-height:1.85;color:#251e16;text-shadow:0 1px 0 #ffd9a459}
+.copper-reader .scroll-no{grid-area:no;color:#35271d;font-size:11px}
+.copper-reader .scroll-en{grid-area:en;margin:4px 0 8px;padding:10px 12px;font:15px/1.6 var(--serif);color:#f9e7c9;background:#25261fd9;border-radius:3px;text-shadow:none}
+.copper-reader .scroll-en[hidden]{display:none}
+.copper-reader .st-w{color:inherit;min-height:36px}
+.copper-reader .st-w:hover,.copper-reader .st-w.on{background:#ffe3a15c;color:#171a13}
+.copper-reader .scroll-row .st-card{grid-column:1/-1;grid-row:3;background:#fff4df;color:#3e392d;text-shadow:none;border-radius:4px;margin:10px 0}
+.copper-reader .reader-disclosure{background:#f5e8d1;padding:10px;border-radius:3px}
+@container(max-width:640px){
+ .copper-reader .scroll-heading{align-items:flex-start;gap:10px}
+ .copper-reader .reader-head-actions{flex-direction:row;max-width:240px;gap:6px}
+ .copper-reader .reader-text-button,.copper-reader .reader-column-choice{font-size:11px;padding:7px}
+ .copper-reader .reader-desk-body{display:flex;flex-direction:column;overflow-y:auto}
+ .copper-reader.with-sources .reader-desk-image{flex:none;max-height:320px;overflow-y:auto}
+ .copper-reader .reader-desk-body .scroll-body{flex:none;overflow:visible;padding:18px 12px 30px}
+ .copper-sheet{padding:12px 14px 28px}
+ .copper-reader .scroll-he{font-size:24px}
+ .copper-reader .scroll-entry{gap:6px;padding:8px 6px}
+ .copper-reader .scroll-entry .register-confidence{display:none}
+}

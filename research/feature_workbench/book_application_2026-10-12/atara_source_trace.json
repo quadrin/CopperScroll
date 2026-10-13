@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-13",
+  "date_los_angeles": "2026-10-12",
+  "analysis_kind": "exploratory original-source trace",
+  "witness_id": "atara176@western-pool",
+  "parent_id": "ASI-83/2/34-reservoir_pool",
+  "claim": "Whether the western bottom-channel is the SWP outlet, whether it fed or drained this pool, and whether the channel and pool operated together.",
+  "exposure": "Selected already exposed Atara comparison; original SWP entry newly inspected. No unseen prediction, identification support or independent confirmation.",
+  "sources": [
+    {
+      "source_id": "swp1883",
+      "title": "The Survey of Western Palestine, Memoirs III: Judaea",
+      "authors": [
+        "C. R. Conder",
+        "H. H. Kitchener"
+      ],
+      "edition": "1883",
+      "printed_pages": [
+        82,
+        83
+      ],
+      "viewer_pages": [
+        98,
+        99
+      ],
+      "source_url": "https://archive.org/download/surveyofwesternp03conduoft/surveyofwesternp03conduoft.pdf",
+      "sha256": "97fdb65dbdad36ae2bab02bb3ec6b60c972801865b6f3c705ffe5d5c0273f159",
+      "figure_ids": [],
+      "asset_manifest": "research/assets/plans/swp1883-atara/figure_manifest.json",
+      "inspection_scope": "Native entry on pages82–83; title page and complete illustrations list. Volume not read in full for this trace.",
+      "observations": {
+        "site": "Attara (M s), Tell en Nasbeh; two reservoirs on slope",
+        "first_tank": "rock-cut with cemented wall on east",
+        "second_tank": "to northeast, much ruined, northwest rock-cut steps, east wall",
+        "principal_reservoir_dimensions_ft": [
+          78,
+          37
+        ],
+        "wall_thickness_ft": 9,
+        "internal_buttresses": 4,
+        "opening_function_as_given": "outlet",
+        "opening_fabric": "pointed arch",
+        "wall_fabric": "rubble core, irregular ashlar face, hard cement",
+        "hydraulic_section": null,
+        "hydraulic_level_or_gradient": null,
+        "dated_construction_or_joint_use_context": null
+      }
+    },
+    {
+      "source_id": "benjamin1993",
+      "title": "Archaeological Survey of the Hill Country of Benjamin",
+      "editors": [
+        "Y. Magen",
+        "I. Finkelstein"
+      ],
+      "edition": "1993, Hebrew",
+      "site_number": 176,
+      "observation_id": "B93-0076",
+      "printed_pages": [
+        162
+      ],
+      "viewer_pages": [
+        184
+      ],
+      "source_url": "https://drive.google.com/file/d/1evqJT-QX-3HMFqr-ON069yuLnyp1Te_8/view",
+      "sha256": "074a689271ad137526c8b040a5fed1b2c8ba39204f4dfd80082576d610929b08",
+      "figure_ids": [],
+      "inspection_scope": "Native Hebrew site176 page reread, including flow wording and bibliography. No modern copyrighted page image uploaded.",
+      "flow_wording_checked": "המובילה אל הבריכות",
+      "flow_wording_literal_gloss": "leading to the pools (plural)",
+      "observations": {
+        "western_pool_dimensions_m": [
+          24,
+          11.5
+        ],
+        "eastern_pool_dimensions_m": [
+          32,
+          14.5
+        ],
+        "western_pool_bottom": "vaulted corridor, water channel at its bottom",
+        "channel_fabric": "stone sections",
+        "opening_function_as_given": "channel leading to the pools",
+        "separate_northern_installation": "about100m north, cemetery and spring-fed pool at Ein Abu Iskandar; open channel is separate",
+        "dating_basis": "30 Byzantine surface sherds at site, not pool/channel contact date",
+        "bibliography": "McCown1947pp54–55",
+        "hydraulic_section": null,
+        "hydraulic_level_or_gradient": null,
+        "dated_construction_or_joint_use_context": null
+      }
+    },
+    {
+      "source_id": "mccown1947",
+      "title": "Tell en-Nasbeh I",
+      "printed_pages": [
+        54,
+        55
+      ],
+      "viewer_pages": [
+        78,
+        79
+      ],
+      "sha256": "65334d98e81b27acff13e54695bedd875fdd4c9f69bec7424a319ed6ddb1e659",
+      "inspection_scope": "Already fully read supplied copy; exact pages reread for source ancestry.",
+      "source_ancestry": "SWP MemoirsIII1883pp82–83; Guerin JudeeIII1869pp6–7; Dalman PJB10(1914)pp17–18. McCown transmits the pointed-arched outlet; not an excavated Atara hydraulic contact."
+    }
+  ],
+  "identity_checks": {
+    "swp_principal_dimensions_m": [
+      23.7744,
+      11.277600000000001
+    ],
+    "difference_from_benjamin_western_m": [
+      0.22560000000000002,
+      0.2223999999999986
+    ],
+    "pool_crosswalk": "likely western pool: dimensions and first/second northeast relation agree; SWP does not explicitly label its principal pool western",
+    "opening_crosswalk": "UNKNOWN: no plan, section, station number, level or fabric contact joins the SWP arched outlet to the later bottom-channel",
+    "distinct_features_not_combined": [
+      "eastern pool",
+      "cemetery/spring pool about100m north",
+      "Anata church plan on SWP p82"
+    ]
+  },
+  "results": {
+    "swp_reported_outlet": "explicit source function label, not measured flow",
+    "benjamin_reported_supply": "explicit source direction label toward pools, not a measured inlet at the western wall",
+    "actual_western_bottom_channel_flow": "UNKNOWN",
+    "pool_channel_joint_use": "UNKNOWN",
+    "pool_channel_construction_order": "UNKNOWN",
+    "configuration_in_scroll_window": "UNKNOWN",
+    "claim_status": "not identifiable from available evidence",
+    "surviving_alternatives": [
+      "same opening described differently in the two reports",
+      "different inlet and outlet openings",
+      "changed hydraulic arrangement or reuse phases"
+    ],
+    "alternatives_status": "unresolved possibilities, not observed reconstructions",
+    "lane_effect": "Entry29 conduit MATCH is a reported channel-join clause under the existing feeds-or-joins rule, not a proved inlet, flow direction or contemporary operation. No new regional score or count."
+  },
+  "archive_routes": [
+    {
+      "institution": "British Library",
+      "shelfmark": "Add MS 71548 A–V",
+      "url": "https://searcharchives.bl.uk/catalog/032-001965756",
+      "scope": "Palestine Surveys Observation Books1872–1882; surveying observations/calculations. Catalogue inspected; notebooks not accessed; Atara contents unconfirmed; no digitized-content link supplied."
+    },
+    {
+      "institution": "British Library",
+      "shelfmark": "Add MS 69848",
+      "url": "https://searcharchives.bl.uk/catalog/032-002043164",
+      "scope": "SWP working papers1872–1877, mainly map calculations and a four-miles-to-inch working map; catalogue says papers are not by Conder/Kitchener themselves. Search-returned catalogue description read; direct opening timed out. No Atara reservoir drawing identified."
+    },
+    {
+      "institution": "Palestine Exploration Fund",
+      "url": "https://www.pef.org.uk/collections/documents-and-maps/",
+      "scope": "Possible original archaeological drawings route; page failed in reader. No exact Atara shelfmark or drawing existence established."
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://archive.org/details/surveyofwesternp03conduoft",
+      "error": "web reader timeout; direct PDF download succeeded"
+    },
+    {
+      "url": "https://archive.org/download/surveyofwesternp03conduoft/surveyofwesternp03conduoft.pdf",
+      "error": "web preview too large; native scan downloaded and read"
+    },
+    {
+      "url": "https://archive.org/download/surveyofwesternp03conduoft/surveyofwesternp03conduoft_djvu.txt",
+      "error": "web reader inaccessible; native scan used"
+    },
+    {
+      "url": "https://www.pef.org.uk/collections/documents-and-maps/",
+      "error": "web reader inaccessible"
+    },
+    {
+      "url": "https://searcharchives.bl.uk/?q=Add+MS+69848&search_field=all_fields",
+      "error": "web reader inaccessible; exact catalogue found through search"
+    },
+    {
+      "url": "https://searcharchives.bl.uk/catalog/032-002043164",
+      "error": "direct web reader timeout; search returned catalogue text"
+    }
+  ],
+  "catalogue_caution": "The other independently downloaded scan, surveyofwesternp03pale.pdf (SHA25607c42f05488658faff9a12b01c3af37707192e72214a32f5242469c708cce18c), also has the correct1883MemoirsIII title page despite misleading archive catalogue metadata. Existing Jericho asset source register therefore does not require a volume correction. Page offsets differ between scans; this trace uses conduoft pages98–99.",
+  "next_observation": "Locate an original Atara/Attara (Ms, SheetXVII, by Tell enNasbeh) plan or section identifying the78x37ft western pool, its9ft east wall, four buttresses, pointed-arched outlet and stone-section bottom-channel. Require channel invert/gradient, pool-floor and wall contacts, plus dated construction or use context. First establish the drawing shelfmark/existence; neither published entry supplies it.",
+  "completion": "partly — original published entry obtained, inlet/outlet labels separated; exact hydraulic drawing and same-phase use not obtained."
+}
