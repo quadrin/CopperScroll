@@ -116,3 +116,7 @@ python3 -I -B -m unittest discover -s research/comparanda/concealment_contexts -
 - https://www.hadashot-esi.org.il/Search.aspx?lang=en: HTTP 301 to curl; not followed. Web searches limited to that site returned no HA-ESI pages.
 - coinhoards.org (IGCH) was not tried; T02 found it blocked by robots. Hellenistic hoards are therefore under-represented.
 - Primary reports behind several rows (Yadin 1963; Yadin and Talmon, Masada VI; de Vaux 1956; Mildenberg 1984) are not open access. Rows cite them through CHRE or open secondary pages.
+
+## Library source context — 12 October 2026
+
+[Raviv–Zissu 2022 access record](../../assets/plans/raviv-zissu2022/README.md) distinguishes earlier underground facilities from later concealment adaptations and purpose-hewn hiding complexes. The atlas IV/17 dossier links it as regional phase context. No new concealment row or numerical comparison is derived from the article.

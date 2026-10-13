@@ -79,3 +79,9 @@ URLs and printed locators above are the durable references. Session citations: `
 Reopened the [official JSP20 architectural-volume record](https://www.israelexplorationsociety.com/product-page/jsp-20-mount-gerizim-excavations-the-architecture-of-private-dwellings), ISBN9789654067294,431pages. Its description confirms an architectural publication covering more than35 private buildings; it supplies no AreaP/5178 plan, basket51777 section or K35264 deposit record. The shop's2004 year remains unresolved catalogue metadata. The book interior and architectural concordance were not recovered.
 
 The supplied folder's complete115-document metadata audit and focused public searches recovered no exact JSP20 interior or field record joining **P5178 / basket51777 / K35264** to a named architectural feature. This bounds the retrieval result; it does not establish absence from the book or an archive. Continue only with a located architectural concordance and basket/section record. The coin date and isolated-find limits above remain unchanged.
+
+## Atlas correction and source-plan access — 12 October 2026
+
+The atlas entry-57 text now carries the existing catalogue-methodology correction: K35264 has the published P5178 / basket 51777 findspot; three remains a type total. The atlas separates the eastern monumental staircase, southern seven-step flight, E1’s 15-step flight and Area P courtyard cistern. A simplified precinct/mansion diagram uses the checked p. 1743 overview and descriptions on pp. 1745–1747. Its mansion envelope supplies no precise cistern or P5178 position.
+
+Authenticated Drive access recovered the newly uploaded file `dedupmrg54258818_IE199398504.pdf`. Its checked title identifies the 1880 SWP map set, not JSP 8 or JSP 20. [Source identity and inspected sheet archive](../assets/plans/swp1880-upload/README.md). That historical map cannot resolve the architectural concordance or coin-deposition context.

@@ -75,6 +75,84 @@
       "registration": "none",
       "selection_method": "Qumran: reuse of the existing entry21-comparison source-relative redrawing. Jericho: approximate image-coordinate selection regions over existing licensed figures. Siloam: original simplified project line tracing of selected structural relations from the already inspected Plan 1 on p. 74*.",
       "limit": "No geographic registration. L103’s height datum refers to the small receiving basin. The larger southern pool is a different installation."
+    },
+    {
+      "plan_id": "gerizim-precinct",
+      "source": "Magen 2008, NEAEHL 5 p. 1743 site plan; pp. 1745–1747",
+      "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
+      "frame": [
+        650,
+        650
+      ],
+      "registration": "none",
+      "selection_method": "Original simplified diagram of selected factual spatial relations; approximate manually sampled source-relative positions. Not a complete facsimile or survey.",
+      "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. Selected Hellenistic precinct and Area P envelopes only; the source also includes Persian, Byzantine and later remains. Staircases elsewhere and the courtyard cistern are described separately. The cistern and P5178 are not located by this overview.",
+      "source_url": "https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/neaehl-vol5/gerizim-extract.pdf",
+      "source_archive": "research/assets/plans/neaehl-vol5/gerizim-extract.pdf",
+      "source_sha256": "4b97f9c0afac9c499a071dcc689ecd7fa02ae32a3eb4e3020ac33809b37d37b0",
+      "public_data_sha256": "e7500ea6620eefa6ac852631b8348d4f077381c88930d9760986ca3e08d3bd7e"
+    },
+    {
+      "plan_id": "doq-waterworks",
+      "source": "Amit 1989 Fig. 2, p. 224 · water system of Doq",
+      "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
+      "frame": [
+        700,
+        620
+      ],
+      "registration": "none",
+      "selection_method": "Original simplified diagram of selected factual spatial relations; approximate manually sampled source-relative positions. Not a complete facsimile or survey.",
+      "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. The source north arrow points page-right. Individual cistern dots retain their relative positions; contours, towers and the modern monastery are omitted. No guard-post or drying-room footprint is supplied.",
+      "source_url": "https://drive.google.com/file/d/1-6s-nqSD-PP_FpZ788Tc0dvH_z7eziZg/view",
+      "source_archive": "research/assets/plans/aqueducts1989/amit-doq-pp223-228.pdf",
+      "source_sha256": "0b7ec184cb524982f7da36327f66f01354e7edd32b92c3afb25f295408ab20c3",
+      "public_data_sha256": "e7500ea6620eefa6ac852631b8348d4f077381c88930d9760986ca3e08d3bd7e"
+    },
+    {
+      "plan_id": "hyrcania-waterworks",
+      "source": "Patrich 1989 Fig. 22, p. 256; double-pool description p. 255",
+      "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
+      "frame": [
+        700,
+        650
+      ],
+      "registration": "none",
+      "selection_method": "Original simplified diagram of selected factual spatial relations; approximate manually sampled source-relative positions. Not a complete facsimile or survey.",
+      "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. The source figure has no visible north arrow; no compass is inferred from page-up. Selected water installations only. The basin-centre and rim distance origins remain separate, unresolved hypotheses.",
+      "source_url": "https://drive.google.com/file/d/1-6s-nqSD-PP_FpZ788Tc0dvH_z7eziZg/view",
+      "source_archive": "research/assets/plans/aqueducts1989/patrich-hyrcania-pp243-260.pdf",
+      "source_sha256": "801d6913203eef7c7937abb84f0bb723a0517d52a372493bb6248e64b011855c",
+      "public_data_sha256": "e7500ea6620eefa6ac852631b8348d4f077381c88930d9760986ca3e08d3bd7e"
+    },
+    {
+      "plan_id": "abu-saraj-iv17",
+      "source": "Sion 2002, ʿAtiqot 41, Plan 5 p. 63 · IV/17",
+      "credit": "Ofer Sion / Israel Antiquities Authority · CC BY-NC 4.0. Complete Plan 5 figure crop; source caption, scale and north arrow retained.",
+      "frame": [
+        660,
+        615
+      ],
+      "registration": "none",
+      "selection_method": "Complete Plan 5 crop from a 1600-pixel-wide native page render, bounds [165,205,825,820]. Scale, north arrow and caption retained; source image unaltered beyond crop/format conversion. Independent overlay selectors.",
+      "limit": "No geographic registration. Complete published Plan 5 figure cropped from p. 63; no rotation or annotation baked into the image. Numbered selection markers are separate. The north arrow defines the right opening as northern. Present gaps do not reconstruct ancient thresholds, wall phases or floor elevations.",
+      "source_url": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/",
+      "reuse": "CC BY-NC 4.0 under current IAA article-content policy; no third-party credit appears on Plan 5.",
+      "rights_url": "https://publications.iaa.org.il/atiqot/policies.html",
+      "rights_verified": "2026-10-12",
+      "source_sha256": "8e8739c60bfb4ad63e5b9ebcebbad3f26472f9d74e00ef6cc4c73d45025e5011"
+    },
+    {
+      "plan_id": "gerizim-swp-context",
+      "source": "Conder & Kitchener, Map of Western Palestine (1880), Sheet XI; surveys 1872–1877",
+      "credit": "Palestine Exploration Fund · 1:63,360 · public-domain cartography. Complete sheet, margins and source scale retained.",
+      "frame": [
+        2600,
+        2224
+      ],
+      "registration": "none",
+      "selection_method": "Complete public-domain historical sheet; one broad approximate source-image sector selector, not a feature outline.",
+      "limit": "Unregistered historical survey; no geographic registration is inferred from the source grid. The broad Shechem-sector selection is context, not an excavation footprint or individual Gerizim stair/cistern. Symbols do not establish ancient chronology.",
+      "source_url": "https://drive.google.com/file/d/1Y85eW04_sZkObCF2K_rUmFPYOP8kMVqt/view"
     }
   ],
   "images": [
@@ -92,6 +170,16 @@
       "file": "atlas/public/dossiers/trumper2018-fig22-p286.jpg",
       "sha256": "166fabb30fd441f607ac434dd8e8297878ff092d680e744c5b7dd1425e5a533d",
       "reuse": "Existing licensed CC BY-NC 3.0 figure, complete caption/scale retained; overlays are separate SVG selection regions."
+    },
+    {
+      "file": "atlas/public/dossiers/swp-sheet-xi.webp",
+      "sha256": "cb02d44fe8434cf973a3824f1637f7067bdef669e3250a7b39879ff2f646b4fb",
+      "reuse": "Underlying 1880 cartography public domain. Library stamps retained; no open licence asserted for contemporary annotations."
+    },
+    {
+      "file": "atlas/public/dossiers/sion2002-plan5-iv17.webp",
+      "sha256": "b3964ff6077c0bb321b1e4620b92150de036eac58ff85db66da35b0232dde824",
+      "reuse": "Ofer Sion / Israel Antiquities Authority · CC BY-NC 4.0. Complete Plan 5 figure crop; source caption, scale and north arrow retained."
     }
   ],
   "siloam_original": {
@@ -100,5 +188,5 @@
     "delivery": "Original page pixels are not added to the public application; the app displays a labelled project tracing."
   },
   "photo_links": "Existing atlas-scenes.json records and image-relative highlight polygons are reused. Plan features are not automatically registered to photographs.",
-  "drive_access": "The owner supplied the existing Copper Scroll library folder again. drive.google.com was added to the cloud draft; the public folder redirects to Google sign-in. This session has no callable Drive connector, so no new library documents were inspected."
+  "drive_access": "Authenticated Google Drive access verified 12 October 2026. Folder index and newly uploaded SWP map set and Raviv–Zissu 2022 article retrieved; modern excavation scans already archived in the repository were reinspected. The SWP upload is a survey map set, not a Gerizim architectural report."
 }

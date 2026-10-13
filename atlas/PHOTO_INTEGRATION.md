@@ -1,6 +1,6 @@
 # Site exploration and photo integration
 
-The atlas now has two primary views: **Explore** and **Read the scroll**. Find opens searchable entry browsing. The selected map card's **Explore candidate** opens a source-plan explorer for Qumran, Jericho royal palaces and Siloam. Candidates without a specific source plan open a catalogue of documented regional excavations and the entry’s unresolved feature requirements. Regional plans are context, not substitute identifications. Saved older city-map views migrate to this archaeological starting point.
+The atlas now has two primary views: **Explore** and **Read the scroll**. Find opens searchable entry browsing. The selected map card's **Explore candidate** opens a source-plan explorer for Qumran, Jericho royal palaces, Siloam, Gerizim, Doq, Hyrcania and the provisional Abu Saraj IV/17 comparison. Candidates without a specific source plan open a catalogue of documented regional excavations and the entry’s unresolved feature requirements. Regional plans are context, not substitute identifications. Saved older city-map views migrate to this archaeological starting point.
 
 ## Current interaction
 
@@ -22,4 +22,4 @@ Extend `app/atlas-site-plans.json` and the existing `app/atlas-scenes.json` with
 
 Registered plans can add geographical footprints, channel paths and camera locations. Excavation phases should retain their own dated geometry. Simple 3D walls or basin outlines need published dimensions; a decorative reconstruction should never stand in for surveyed remains.
 
-The supplied Drive link points to the library already indexed in `research/sources/drive_index.md`. The public folder redirects to Google sign-in and this session has no callable Drive connector; no new Drive contents were inspected. The locally archived material supports this implementation. Further intake can resume when authenticated folder access is available.
+Authenticated Drive access was verified on 12 October 2026. The newly uploaded 28-page scan is the 1880 SWP map set, with 26 sheets, key and title; Sheet XI is available beside the Gerizim structural diagram as historical context. Raviv–Zissu 2022 is linked as a regional comparison for phased reuse of underground installations. Gerizim, Doq and Hyrcania diagrams use reinspected archived source pages. IV/17 displays the published Plan 5 with its source caption, north arrow and scale under the IAA’s verified CC BY-NC 4.0 policy. Simplified project outlines retain explicit omissions, source orientation and archaeological limits. Gerizim’s stale three-coin mansion inference is corrected to one catalogued findspot and a separate type total. The IV/17 mouth coordinates remain unassigned.

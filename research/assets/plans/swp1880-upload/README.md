@@ -1,0 +1,5 @@
+# Original Survey of Western Palestine sheets from Drive
+
+The newly supplied 115.7 MB PDF is Conder and Kitchener’s *Map of Western Palestine in 26 sheets*, London 1880, based on the 1872–1877 surveys, at 1:63,360. It contains 26 map sheets, a key/legend and a title page. The scan has no text layer. Title and legend were visually checked; it is not an excavation report or a Mount Gerizim architectural volume.
+
+[Authenticated source](https://drive.google.com/file/d/1Y85eW04_sZkObCF2K_rUmFPYOP8kMVqt/view). Complete derivatives of the inspected pages retain margins, scale, sheet identifiers and stamps: [Sheet I](swp-pdf01.webp), [Sheet II](swp-pdf02.webp), [Sheet XI](swp-pdf11.webp), [key and legend](swp-pdf27.webp), [title](swp-pdf28.webp). The [manifest](manifest.json) records the source hash, exact inspection scope and transformations. Sheet XI gives historical Shechem-region context; its symbols are not surveyed archaeological footprints or construction dates. Fine detail in the reserved Jericho strip was not inspected.

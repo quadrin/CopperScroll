@@ -3,7 +3,7 @@ import { entryHash, parseAtlasHash } from "./atlas-navigation";
 export type Camera = { center: [number, number]; zoom: number; bearing: number; pitch: number };
 export type Viewport = { x: number; y: number; zoom: number };
 export type SiteFeature = { id: string; label: string; x: number; y: number; path?: string; kind: string; entryIds: string[]; description: string; limit: string; sources: string[]; sourceUrl: string };
-export type SitePlan = { id: string; placeIds: string[]; label: string; width: number; height: number; transform?: string; image?: string; shapes?: { d: string; kind: string }[]; features: SiteFeature[]; source: string; credit: string; licenseUrl?: string; limit: string };
+export type SitePlan = { id: string; placeIds: string[]; label: string; kind?: "site-plan" | "survey-map"; width: number; height: number; transform?: string; image?: string; shapes?: { d: string; kind: string }[]; annotations?: { x: number; y: number; text: string }[]; north?: { x: number; y: number; dx: number; dy: number }; scale?: { x: number; y: number; length: number; label: string }; features: SiteFeature[]; source: string; sourceUrl?: string; credit: string; licenseUrl?: string; limit: string };
 export const sitePlans = planData as SitePlan[];
 export const plansForPlace = (id: string | null) => sitePlans.filter(p => id && p.placeIds.includes(id));
 export type ExplorerState = {
