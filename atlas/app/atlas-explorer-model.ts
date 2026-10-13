@@ -11,13 +11,18 @@ export type ExplorerState = {
  siteView: "plan" | "photo"; highlightId?: string | null; scrollPhoto: boolean; workbench: string | null; recordId: string | null;
  camera?: Camera; viewport?: Viewport; photoViewport?: Viewport; scrollTop?: number; scrollColumn?: number;
 };
-export const initialExplorer: ExplorerState = { entryId: "21", placeId: "kh_qumran", mode: "3d", planId: null, featureId: null, siteView: "plan", scrollPhoto: false, workbench: null, recordId: null };
+export const initialExplorer: ExplorerState = { entryId: "21", placeId: "kh_qumran", mode: "site", planId: "qumran-ilan", featureId: null, siteView: "plan", scrollPhoto: false, workbench: null, recordId: null };
+export function archaeologyForPlace(entryId:string,placeId:string|null):ExplorerState {
+ return {...initialExplorer,entryId,placeId,mode:"site",planId:plansForPlace(placeId)[0]?.id??null,featureId:null};
+}
 export function explorerHash(s: ExplorerState) {
  if (s.workbench) return `#workbench/${s.workbench}`;
  if (s.mode === "site" && s.planId) return `#entry-${s.entryId}/site/${s.planId}${s.featureId ? `/${s.featureId}` : ""}${s.siteView === "photo" ? "/photo" : ""}`;
  return entryHash(s.entryId, s.mode) + (s.mode === "scroll" && s.scrollPhoto ? "/photo" : "");
 }
 export function explorerFromHash(hash: string, primaryPlace: (id: string) => string | null): ExplorerState | null {
+ const overview=hash.match(/^#entry-((?:[1-9]|[1-5]\d|60|12a))\/site$/);
+ if(overview)return archaeologyForPlace(overview[1],primaryPlace(overview[1]));
  const site = hash.match(/^#entry-([\da-z]+)\/site\/([\w-]+)(?:\/([\w-]+))?(?:\/(photo))?$/);
  if (site) {
   const [,entryId, planId, part, photo] = site;
@@ -29,5 +34,6 @@ export function explorerFromHash(hash: string, primaryPlace: (id: string) => str
  }
  const parsed = parseAtlasHash(hash); if (!parsed) return null;
  const id = parsed.entryId ?? initialExplorer.entryId;
- return { ...initialExplorer, entryId: id, placeId: primaryPlace(id), mode: parsed.mode ?? initialExplorer.mode, workbench: parsed.workbench, scrollPhoto: /\/scroll\/photo$/.test(hash) || hash === "#scroll/photo" };
+ if(/^#entry-(?:[1-9]|[1-5]\d|60|12a)$/.test(hash))return archaeologyForPlace(id,primaryPlace(id));
+ return { ...initialExplorer, entryId: id, placeId: primaryPlace(id), planId:null, mode: parsed.mode ?? initialExplorer.mode, workbench: parsed.workbench, scrollPhoto: /\/scroll\/photo$/.test(hash) || hash === "#scroll/photo" };
 }

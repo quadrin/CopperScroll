@@ -106,9 +106,9 @@ Collection custody is established. **An Atara drawing, its shelfmark and its con
 
 The surviving possibilities include an unindexed PEF sketch or notebook entry, a record with another custodian, and a drawing that was never made or no longer survives. Catalogue silence cannot choose among them. The next evidence is the curator's holdings response identifying the original record and what it actually shows.
 
-### Prepared holdings enquiry
+### Holdings enquiry sent — 13 October UTC / 12 October Los Angeles
 
-Prepared as an **unsent Gmail draft**, from the owner's existing personal project account to the verified curator address. It asks for holdings metadata and a custodial reference. Sending awaits explicit authorization to contact PEF about this new subject.
+**Sent 13 October 2026 at02:58:42UTC / 12 October at19:58:42LosAngeles**, following the owner's explicit send instruction, from the existing personal project account to Felicity Cobbing's verified PEF office address. Gmail confirmed SENT. The enquiry asks for holdings metadata and a custodial reference; the drawing's existence and exact shelfmark await a reply.
 
 Subject: **SWP holdings enquiry: ‘Attara reservoirs beside Tell en-Nasbeh**
 
@@ -125,7 +125,7 @@ I’m trying to establish whether the two reports describe the same opening and 
 Thank you,
 Alex
 
-**Partly** — confirmed PEF's SWP archive and curator route; Atara drawing/shelfmark remain unconfirmed; prepared the unsent holdings enquiry.
+**Partly** — confirmed PEF's SWP archive and curator route; sent the Atara holdings enquiry; drawing/shelfmark await a reply.
 
 ### Uploaded SWP map check
 

@@ -4,23 +4,7 @@ const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.ATLAS_PLAYWRIGHT_MODULE||'playwright-core');
 const origin=process.env.ATLAS_TEST_ORIGIN||'http://127.0.0.1:5173/CopperScroll/atlas-site/';
 const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
-// Chromium cannot reach loopback through the cloud egress proxy. Forward only
-// public map/image requests via curl, preserving proxy routing and TLS checks.
-const {execFile}=await import('node:child_process');
-const {promisify}=await import('node:util');
-const {mkdtemp,readFile,rm}=await import('node:fs/promises');
-const {tmpdir}=await import('node:os');
-const {join}=await import('node:path');
-const run=promisify(execFile);
-async function forwardPublic(route){
- const dir=await mkdtemp(join(tmpdir(),'atlas-network-'));
- try{
-  await run('curl',['--silent','--show-error','--fail','--location','--compressed','--max-time','45','--dump-header',join(dir,'headers'),'--output',join(dir,'body'),route.request().url()]);
-  const raw=await readFile(join(dir,'headers'),'utf8');const blocks=raw.trim().split(/\r?\n\r?\n/);const last=blocks[blocks.length-1];
-  const type=last.match(/^content-type:\s*(.+)$/im)?.[1].trim()??'application/octet-stream';
-  await route.fulfill({status:200,contentType:type,body:await readFile(join(dir,'body'))});
- }catch{await route.abort('failed')}finally{await rm(dir,{recursive:true,force:true});}
-}
+import {forwardPublic} from './browser-public-network.mjs';
 const passed=[];
 try {
 for(const mobile of [false,true]){
@@ -31,10 +15,14 @@ for(const mobile of [false,true]){
  const back=()=>page.getByRole('button',{name:'Back',exact:true}).click({noWaitAfter:true});
  const state=()=>page.evaluate(()=>history.state.atlas);
  await page.goto(origin);
+ await page.locator(".site-stage").waitFor();
+ assert.equal((await state()).mode,"site");
+ await page.goto(origin+"#entry-21/3d");
  await page.getByRole('button',{name:'Explore candidate',exact:true}).waitFor();
  assert.equal(await page.getByRole('button',{name:'Landscapes',exact:true}).count(),0);
  assert.equal(await page.getByRole('tab',{name:'Scene',exact:true}).count(),0);
  await page.waitForFunction(()=>!document.querySelector('.map-status'),null,{timeout:45000});
+ assert.equal(await page.locator('.map-canvas').getAttribute('data-modern-layer-count'),'0');
  await page.screenshot({path:`/tmp/explorer-map-${mobile?'mobile':'desktop'}.png`});
  await page.getByRole('button',{name:'Zoom in',exact:true}).click();
  await page.waitForTimeout(500);

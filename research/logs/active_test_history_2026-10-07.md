@@ -232,6 +232,13 @@ Last session (12 October): **partly** — obtained [applied feature/phase compar
 Last session (12 October): **partly** — obtained [desktop/mobile atlas interaction checks](../atlas/INTERACTION_VALIDATION.md) for the copper reader and site exploration controls, and [a photo integration proposal](../atlas/PHOTO_INTEGRATION.md). External map, terrain, photograph and JerusalemMap CDN loading remain blocked by the cloud proxy; network additions and reusable setup instructions were saved for review. The preceding session record is preserved in [history](logs/active_test_history_2026-10-07.md#session-record-preserved-during-atlas-ui-work).
 
 
+## Archaeology-first interface correction
+
+Last session (12 October): **obtained** — [source-plan exploration and restorable Back navigation](../atlas/PHOTO_INTEGRATION.md), with [desktop/mobile browser validation](../atlas/INTERACTION_VALIDATION.md) and [source/geometry provenance](assets/plans/atlas-explorer/manifest.json). Public map/photograph loading now works through the cloud proxy. The supplied Drive folder redirects to sign-in and exposes no callable connector here, so additional library documents were not inspected. The preceding UI session record is preserved in [history](logs/active_test_history_2026-10-07.md#atlas-source-plan-and-navigation-session).
+
+
+
+
 
 
 
@@ -250,3 +257,10 @@ Last session (13 October UTC / 12 October Los Angeles): **partly** — obtained 
 ## Atlas session preserved during Atara custody lookup
 
 Last session (12 October): **obtained** — [source-plan exploration and restorable Back navigation](../atlas/PHOTO_INTEGRATION.md), with [desktop/mobile browser validation](../atlas/INTERACTION_VALIDATION.md) and [source/geometry provenance](assets/plans/atlas-explorer/manifest.json). Public map/photograph loading now works through the cloud proxy. The supplied Drive folder redirects to sign-in and exposes no callable connector here, so additional library documents were not inspected. The preceding UI session record is preserved in [history](logs/active_test_history_2026-10-07.md#atlas-source-plan-and-navigation-session).
+
+
+## Session records preserved when the Atara enquiry was sent
+
+Last session (12 October): **obtained** — [archaeology-first interface correction](../atlas/PHOTO_INTEGRATION.md) and [desktop/mobile checks](../atlas/INTERACTION_VALIDATION.md): source plans are the default, broad candidates open regional excavation context, and modern urban geometry is removed from the terrain locator. Old city-map views migrate to the archaeological view. The preceding session record is preserved in [history](logs/active_test_history_2026-10-07.md#archaeology-first-interface-correction).
+
+Last session (13 October UTC / 12 October Los Angeles): **partly** — confirmed [PEF's SWP archive and curator route](feature_workbench/book_application_2026-10-12/README.md#atara-drawing-custody--13-october-utc--12-october-los-angeles). Checked the uploaded SheetXVII Attara tank notation. Original drawing/shelfmark remain unconfirmed; prepared an unsent holdings enquiry naming the78×37ft pool, outlet and bottom-channel. The next evidence is the curator's holdings response. The preceding source-trace record is preserved in [history](logs/active_test_history_2026-10-07.md#session-record-preserved-during-atara-custody-lookup).
