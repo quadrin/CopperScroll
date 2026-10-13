@@ -1,167 +1,123 @@
 "use client";
-
-import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { BookOpen, ChevronDown, ChevronLeft, ChevronRight, ExternalLink, Feather, FileText, FlaskConical, Info, Layers, List, Map, MapPin, PanelRightOpen, Search, ScrollText, X } from "lucide-react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Input } from "@/components/ui/input";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from "react";
+import { ArrowLeft, BookOpen, ChevronDown, ExternalLink, FlaskConical, Layers, Map, Search, ScrollText, X } from "lucide-react";
 import AtlasMap from "./atlas-map";
-import EvidenceReview from "./atlas-evidence";
 import EntryText from "./atlas-text";
+import EvidenceReview from "./atlas-evidence";
+import SiteExplorer, { FeatureNote } from "./atlas-site-explorer";
 import data from "./atlas-data.json";
+import records from "./atlas-landscape-features.json";
+import { explorerFromHash, explorerHash, initialExplorer, plansForPlace, sitePlans, type ExplorerState, type Camera, type Viewport } from "./atlas-explorer-model";
 import type { Entry, Place } from "./atlas-types";
-import { sortCandidates, sortEntries, sortLabels, type SortOrder } from "./atlas-order";
-import { entryHash, parseAtlasHash } from "./atlas-navigation";
 import "./atlas-revamp.css";
-
-const entries=data.entries as Entry[];
-const places=data.places as Place[];
-const mappedCount=places.filter(p=>p.lat!=null&&p.lon!=null).length;
-const unmappedCount=places.length-mappedCount;
-const placeById=Object.fromEntries(places.map(p=>[p.id,p]));
-const repo="https://github.com/quadrin/CopperScroll/blob/main";
-const regions:Record<string,string>={all:"All regions",jericho:"Jericho & Qumran",jerusalem:"Jerusalem",region:"Judean hills & north",unplaced:"Unplaced"};
-const AtlasWorkbench=lazy(()=>import("./atlas-workbench"));
-const workbenchModules=["relationships","inventory","states","coverage","decisions"];
+import "./atlas-unified.css";
+const entries = data.entries as Entry[];
+const places = data.places as Place[];
+const byPlace = Object.fromEntries(places.map(p=>[p.id,p]));
+const primaryPlace = (id:string)=>entries.find(e=>e.id===id)?.candidates[0]?.placeId??null;
+const Workbench = lazy(()=>import("./atlas-workbench"));
+const Dossier = lazy(()=>import("./atlas-dossier"));
+const repo = "https://github.com/quadrin/CopperScroll/blob/main";
+type HistoryState = ExplorerState & { enlarged?: boolean };
 
 export default function Atlas(){
-  const [selectedId,setSelectedId]=useState("21");
-  const [focusId,setFocusId]=useState<string|null>("kh_qumran");
-  const [focusNonce,setFocusNonce]=useState(0);
-  const [query,setQuery]=useState("");
-  const [region,setRegion]=useState("all");
-  const [sortOrder,setSortOrder]=useState<SortOrder>("scroll");
-  const [detailTab,setDetailTab]=useState("places");
-  const [candidateOrder,setCandidateOrder]=useState("confidence");
-  const [mode,setMode]=useState("2d");
-  const [mobileView,setMobileView]=useState("map");
-  const [workbenchModule,setWorkbenchModule]=useState<string|null>(null);
-  const [showNotes,setShowNotes]=useState(false);
-  const [showRegister,setShowRegister]=useState(false);
-  const [aboutOpen,setAboutOpen]=useState(false);
-  const wideMode=["scroll","landscape","dossier"].includes(mode);
-  const focusedMode=["scroll","landscape"].includes(mode);
-  const entryListRef=useRef<HTMLElement>(null);
-  const detailRef=useRef<HTMLElement>(null);
-  const evidenceTabRef=useRef<HTMLButtonElement>(null);
-  const entry=entries.find(e=>e.id===selectedId)!;
-  const place=focusId?placeById[focusId]:null;
-  const visibleEntries=useMemo(()=>sortEntries(entries.filter(e=>{
-    const text=[e.id,e.title,e.hebrew,e.description,...e.candidates.map(c=>placeById[c.placeId].name)].join(" ").toLowerCase();
-    return (!query||text.includes(query.toLowerCase())) && (region==="all"||e.region===region||e.candidates.some(c=>placeById[c.placeId].region===region));
-  }),sortOrder,placeById),[query,region,sortOrder]);
-  const orderedCandidates=useMemo(()=>sortCandidates(entry.candidates,candidateOrder,placeById),[entry,candidateOrder]);
-  const visibleIds=useMemo(()=>Array.from(new Set((query||region!=="all"?visibleEntries:entries).flatMap(e=>e.candidates.map(c=>c.placeId)))),[visibleEntries,query,region]);
-
-  useEffect(()=>{
-    entryListRef.current?.querySelector('[aria-current="true"]')?.scrollIntoView({block:"center",behavior:"instant"});
-  },[selectedId,visibleEntries]);
-
-  const modeRef=useRef(mode);
-  useEffect(()=>{modeRef.current=mode},[mode]);
-  const chooseEntry=useCallback((id:string,focus?:string,stayInView?:boolean)=>{
-    const e=entries.find(x=>x.id===id);if(!e)return;
-    setWorkbenchModule(null);
-    setSelectedId(id);setFocusId(focus??e.candidates[0]?.placeId??null);setFocusNonce(n=>n+1);setShowRegister(false);if(!stayInView)setMobileView(["scroll","landscape"].includes(modeRef.current)?"map":"detail");
-    const photograph=modeRef.current==="scroll"&&/^#(?:entry-[\da]+\/)?scroll\/photo$/.test(location.hash);
-    history.replaceState(null,"",entryHash(id,modeRef.current)+(photograph?"/photo":""));
-    detailRef.current?.scrollTo({top:0});
-  },[]);
-  // An entry chosen in the scroll view: the register, map and field note follow, the view stays.
-  function chooseFromScroll(id:string){const e=entries.find(x=>x.id===id);if(e)chooseEntry(id,undefined,true)}
-  function changeMode(next:string){setWorkbenchModule(null);setMode(next);setShowRegister(false);setShowNotes(false);setMobileView("map");history.replaceState(null,"",entryHash(selectedId,next));window.dispatchEvent(new Event("atlas:modechange"))}
-  function openWorkbench(id="relationships"){setWorkbenchModule(id);history.replaceState(null,"",`#workbench/${id}`)}
-  function openScroll(){changeMode("scroll");setMobileView("map")}
-  function choosePlace(id:string){
-    const linked=entry.candidates.some(c=>c.placeId===id)?entry:entries.find(e=>e.candidates.some(c=>c.placeId===id&&c.status==="preferred"))??entries.find(e=>e.candidates.some(c=>c.placeId===id));
-    if(linked){setQuery("");setRegion("all");chooseEntry(linked.id,id);}
+ const [state,setState] = useState<HistoryState>(()=>{if(typeof window==="undefined")return initialExplorer;const saved=window.history.state?.atlas;return saved&&explorerHash(saved)===location.hash?saved:explorerFromHash(location.hash,primaryPlace)??initialExplorer});
+ const current=useRef(state);
+ const [depth,setDepth]=useState(0);
+ const [restoreNonce,setRestoreNonce]=useState(0);
+ const [mapRestore,setMapRestore]=useState<{camera?:Camera;nonce:number}>({nonce:0});
+ const [focusNonce,setFocusNonce]=useState(0);
+ const [browse,setBrowse]=useState(false);
+ const [query,setQuery]=useState("");
+ const [region,setRegion]=useState("all");
+ const [notes,setNotes]=useState(false);
+ const [more,setMore]=useState(false);
+ const [layers,setLayers]=useState(false);
+ const [about,setAbout]=useState(false);
+ useEffect(()=>{function escape(event:KeyboardEvent){if(event.key!=="Escape")return;setBrowse(false);setNotes(false);setMore(false);setLayers(false);setAbout(false);}window.addEventListener("keydown",escape);return()=>window.removeEventListener("keydown",escape)},[]);
+ const entry=entries.find(e=>e.id===state.entryId)??entries[0];
+ const place=state.placeId?byPlace[state.placeId]??null:null;
+ const plan=sitePlans.find(p=>p.id===state.planId)??plansForPlace(state.placeId)[0];
+ const feature=plan?.features.find(f=>f.id===state.featureId);
+ const record=records.features.find(f=>f.id===state.recordId);
+ const matches=entries.filter(e=>(region==="all"||e.region===region)&&(!query||[e.id,e.title,e.hebrew,e.description,...e.candidates.map(c=>byPlace[c.placeId].name)].join(" ").toLowerCase().includes(query.toLowerCase())));
+ const visibleIds=Array.from(new Set((query||region!=="all"?matches:entries).flatMap(e=>e.candidates.map(c=>c.placeId))));
+ const saveSnapshot=useCallback((patch:Partial<HistoryState>)=>{
+  current.current={...current.current,...patch};
+  const h=window.history.state;
+  if(h?.atlas)window.history.replaceState({...h,atlas:current.current},"",location.href);
+ },[]);
+ const navigate=useCallback((patch:Partial<HistoryState>,replace=false)=>{
+  const prev=current.current;
+  const next={...prev,...patch};
+  if(explorerHash(next)===explorerHash(prev)&&JSON.stringify(next)===JSON.stringify(prev))return;
+  const h=window.history.state;
+  window.history.replaceState({...h,atlas:prev,atlasDepth:h?.atlasDepth??0},"",location.href);
+  const nextDepth=replace?h?.atlasDepth??0:(h?.atlasDepth??0)+1;
+  window.history[replace?"replaceState":"pushState"]({atlas:next,atlasDepth:nextDepth},"",explorerHash(next));
+  current.current=next;setState(next);setDepth(nextDepth);setBrowse(false);setMore(false);setLayers(false);
+  if(next.entryId!==prev.entryId||next.placeId!==prev.placeId)setFocusNonce(n=>n+1);
+  if(next.mode!==prev.mode||next.scrollPhoto!==prev.scrollPhoto)window.dispatchEvent(new Event("atlas:modechange"));
+ },[]);
+ useEffect(()=>{
+  const existing=window.history.state;
+  if(existing?.atlas&&explorerHash(existing.atlas)===location.hash){current.current=existing.atlas;setState(existing.atlas);setDepth(existing.atlasDepth??0);setMapRestore({camera:existing.atlas.camera,nonce:1});}
+  else window.history.replaceState({atlas:current.current,atlasDepth:0},"",explorerHash(current.current));
+  function restore(){
+   const h=window.history.state;
+   const restored=h?.atlas??explorerFromHash(location.hash,primaryPlace);
+   if(!restored)return;
+   if(!h?.atlas)window.history.replaceState({atlas:restored,atlasDepth:0},"",location.href);
+   current.current=restored;setState(restored);setDepth(h?.atlasDepth??0);setRestoreNonce(n=>n+1);setMapRestore(old=>({camera:restored.camera,nonce:old.nonce+1}));setBrowse(false);setNotes(false);setMore(false);setLayers(false);
   }
-  function focusCandidate(id:string){setFocusId(id);setFocusNonce(n=>n+1);setMobileView("map")}
-  const index=entries.indexOf(entry);
-  function stepEntry(delta:number){const e=entries[(index+delta+entries.length)%entries.length];chooseEntry(e.id)}
-  useEffect(()=>{
-    function restore(){const route=parseAtlasHash(location.hash);if(!route)return;
-      if(route.workbench){setWorkbenchModule(route.workbench);return;}
-      setWorkbenchModule(null);const id=route.entryId;
-      if(id&&entries.some(e=>e.id===id)){const e=entries.find(e=>e.id===id)!;setSelectedId(id);setFocusId(e.candidates[0]?.placeId??null);setFocusNonce(n=>n+1);}
-      if(route.mode){setMode(route.mode);setMobileView("map");}
-    }
-    restore();window.addEventListener("hashchange",restore);return()=>window.removeEventListener("hashchange",restore);
-  },[]);
-
-  // Structured navigation uses the same entry-selection action as the visible register.
-  useEffect(()=>{
-    const context=(document as Document & {modelContext?:{registerTool:(tool:unknown,opts:{signal:AbortSignal})=>void|Promise<void>}}).modelContext;
-    if(!context?.registerTool)return;
-    const lifecycle=new AbortController();
-    const tool={name:"navigate_scroll_entry",title:"Explore a Copper Scroll entry",description:"Open a numbered scroll entry, its candidate sites and evidence in the atlas.",inputSchema:{type:"object",properties:{entryId:{type:"string",enum:entries.map(e=>e.id)}},required:["entryId"],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:async(input:unknown)=>{
-      const id=(input as {entryId?:unknown})?.entryId;if(typeof id!=="string"||!entries.some(e=>e.id===id))throw new Error("Use an entry number 1–60, or 12a.");
-      setQuery("");setRegion("all");chooseEntry(id);
-      await new Promise<void>(resolve=>requestAnimationFrame(()=>requestAnimationFrame(()=>resolve())));
-      const e=entries.find(e=>e.id===id)!;return {entryId:id,title:e.title,candidates:e.candidates.map(c=>({site:placeById[c.placeId].shortName,confidence:c.confidence,status:c.status}))};
-    }};
-    try{void Promise.resolve(context.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{});}catch{}
-    return()=>lifecycle.abort();
-  },[chooseEntry]);
-
-  const primaryFocus=focusId===entry.candidates[0]?.placeId;
-  return <main className="atlas-shell" data-reading={mode==="scroll"&&!workbenchModule}>
-    <a className="skip-link" href={workbenchModule?"#research-workbench":"#entry-detail"} onClick={event=>{event.preventDefault();if(workbenchModule){document.getElementById("research-workbench")?.focus();}else{setShowRegister(false);setShowNotes(true);setMobileView("detail");requestAnimationFrame(()=>detailRef.current?.focus())}}}>{workbenchModule?"Skip to research tools":"Skip to selected entry"}</a>
-    <header className="app-header">
-      <div className="app-brand"><ScrollText size={22} strokeWidth={1.6}/><div><h1>Copper Scroll Atlas</h1><span>3Q15 · Places, text and evidence</span></div></div>
-      <nav className="primary-nav" aria-label="Explore the atlas">
-        <button type="button" aria-label="Explore places" aria-current={!workbenchModule&&["2d","3d","ground","scene","dossier"].includes(mode)?"page":undefined} onClick={()=>changeMode("2d")}><Map size={17}/>Places</button>
-        <button type="button" aria-current={!workbenchModule&&mode==="landscape"?"page":undefined} onClick={()=>changeMode("landscape")}><Layers size={17}/>Landscapes</button>
-        <button type="button" aria-current={!workbenchModule&&mode==="scroll"?"page":undefined} onClick={openScroll}><ScrollText size={17}/>Read the scroll</button>
-      </nav>
-      <div className="header-actions">{focusedMode&&!workbenchModule&&<button className="reader-register-toggle" aria-expanded={showRegister} aria-controls="entry-register" onClick={()=>{setShowRegister(v=>!v);setShowNotes(false);}}><List size={15}/>Entries</button>}
-        <DropdownMenu><DropdownMenuTrigger asChild><button aria-label="More atlas options" aria-current={workbenchModule?"page":undefined}>More<ChevronDown size={14}/></button></DropdownMenuTrigger><DropdownMenuContent align="end">
-          <DropdownMenuItem onSelect={()=>openWorkbench(workbenchModule??"relationships")}><FlaskConical size={15}/>Research tools</DropdownMenuItem>
-          {wideMode&&!workbenchModule&&<DropdownMenuItem onSelect={()=>{setShowRegister(false);setShowNotes(v=>!v);if(window.innerWidth<=1100)setMobileView(mobileView==="detail"?"map":"detail")}}><PanelRightOpen size={15}/>{showNotes?"Close entry notes":"Entry notes"}</DropdownMenuItem>}
-          <DropdownMenuSeparator/><DropdownMenuItem onSelect={()=>setAboutOpen(true)}><BookOpen size={15}/>About the atlas</DropdownMenuItem>
-          <DropdownMenuItem asChild><a href={`${repo}/research/README.md`} target="_blank" rel="noreferrer">Research notes<ExternalLink size={13}/></a></DropdownMenuItem>
-        </DropdownMenuContent></DropdownMenu>
-        <Dialog open={aboutOpen} onOpenChange={setAboutOpen}><DialogContent className="method-dialog"><DialogHeader><DialogTitle>Reading the landscape</DialogTitle><DialogDescription>The Copper Scroll names places, buildings and waterworks. This atlas pairs their descriptions with the candidates retained in the current research.</DialogDescription></DialogHeader><div><h3>61 entries, {places.length} candidate places</h3><p>The numbering follows Puech and Lefkovits: entries 1–60, plus 12a. Descriptions are short editorial paraphrases. Hebrew labels show names or selected editorial readings, rather than a facsimile transcription.</p><h3>The text of each entry</h3><p>Each field note shows the entry’s lines of the scroll: Martin G. Abegg Jr.’s transcription from the ETCBC Dead Sea Scrolls dataset (CC BY-NC 4.0), which draws mainly on Milik’s edition, with an English translation written for this project. Select a Hebrew word or an underlined phrase to see how the editions of Milik, Lefkovits, Puech and others read it, with pages from the research files. <strong>Read the scroll</strong> in the top bar shows the whole scroll column by column; selecting an entry there opens its places.</p><h3>What the pins mean</h3><p>A solid pin marks a preferred candidate for at least one entry. A hollow pin marks an alternative. “Preferred” is a comparison among proposals; all current identifications remain medium or low confidence. No individual deposit has been identified.</p><p>Coordinates come from the repository’s curated gazetteer. Copper shading marks the selected candidate’s approximate area; sage shading shows the other candidates for the entry. Dashed outlines indicate coordinate precision, not surveyed site boundaries. Three places have no defensible coordinate and remain unpinned.</p><h3>Map, terrain & photos</h3><p>Map shows a flat map. Terrain uses elevation tiles, with adjustable vertical exaggeration. Both use modern geographical data. The shorelines and roads do not reconstruct the ancient landscape. Photos offers four real photographs with anchored highlights and feature notes. Photographs have a limited field of view; their visible features provide comparisons, not verified scroll landmarks. A separate Google Street View link opens nearby imagery where coverage exists.</p><h3>Textual scenes</h3><p>Scene draws entries 11 and 25 as plans and cutaways. Copper marks encode a textual relationship or digging instruction; dashed outlines mark assumed architecture. Envelope size, digging origin and the exploratory cubit conversion remain model assumptions. Deposit markers represent claims in the text. Scenes supply no archaeological feature identification or geographic coordinates.</p><h3>Research and map sources</h3><p>Research snapshot: 28 September 2026, commit <a href={`https://github.com/quadrin/AncientHebrewTexts/commit/${data.snapshot}`} target="_blank" rel="noreferrer">5220e8b</a>. It includes the Siloam confidence correction and Q37 on Solomon’s Pool. The feature review adds the full Phase 5 tables from commit cecb12d and separates reading, site and exact-feature confidence for five priority entries. These are qualitative assessments, not probabilities.</p><p><a href={`${repo}/research/sites/site_identification_review.md`} target="_blank" rel="noreferrer">Site identification review</a> · <a href={`${repo}/research/sources/sources.md`} target="_blank" rel="noreferrer">Research bibliography</a> · <a href="https://openfreemap.org" target="_blank" rel="noreferrer">OpenFreeMap</a> / <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> · <a href="https://mapterhorn.com" target="_blank" rel="noreferrer">Mapterhorn terrain</a></p></div></DialogContent></Dialog></div>
-    </header>
-    {workbenchModule?<Suspense fallback={<div className="workbench-loading" role="status">Loading reviewed research tools…</div>}><AtlasWorkbench moduleId={workbenchModule} onModule={id=>{if(workbenchModules.includes(id))openWorkbench(id)}} onClose={()=>changeMode(mode)}/></Suspense>:<><div className="working-surface" data-mobile-view={mobileView} data-expanded={wideMode&&!showNotes} data-focused={focusedMode} data-reading={mode==="scroll"} data-register-open={showRegister}>
-      <aside id="entry-register" className="entry-register" aria-label="Ancient place register" onKeyDown={event=>{if(event.key==="Escape"){setShowRegister(false);setMobileView("map")}}}>
-        {focusedMode&&<button className="register-close" aria-label="Close entries" onClick={()=>{setShowRegister(false);setMobileView("map")}}><X size={16}/></button>}
-        <div className="register-heading"><span className="small-caps">61 scroll entries</span><h2>Browse entries</h2><div className="search-wrap"><Search/><Input aria-label="Find an ancient name or candidate" placeholder="Search names, places, entries…" value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button className="clear-search" aria-label="Clear search" onClick={()=>setQuery("")}><X size={15}/></button>}</div><div className="filter-row"><Select value={region} onValueChange={setRegion}><SelectTrigger aria-label="Filter by region"><SelectValue/></SelectTrigger><SelectContent>{Object.entries(regions).map(([key,label])=><SelectItem key={key} value={key}>{label}</SelectItem>)}</SelectContent></Select></div></div>
-        <div className="register-sort"><label htmlFor="register-sort">Sort by</label><Select value={sortOrder} onValueChange={value=>setSortOrder(value as SortOrder)}><SelectTrigger id="register-sort" aria-label="Sort the place register"><SelectValue/></SelectTrigger><SelectContent>{Object.entries(sortLabels).map(([key,label])=><SelectItem key={key} value={key}>{label}</SelectItem>)}</SelectContent></Select></div>
-        <div className="register-count" aria-live="polite">{visibleEntries.length} {visibleEntries.length===1?"entry":"entries"}{query?" found":" to explore"}{sortOrder==="confidence"&&<span className="sort-explanation">Best candidate’s site confidence; ties in scroll order.</span>}</div>
-        <nav ref={entryListRef} className="entry-list" aria-label="Select a scroll entry">{visibleEntries.map(e=><button key={e.id} className={`entry-item ${e.id===selectedId?"selected":""}`} aria-current={e.id===selectedId?"true":undefined} onClick={()=>chooseEntry(e.id)}><span className="entry-number">{e.id.padStart(2,"0")}</span><span className="entry-text"><strong>{e.title}</strong><small>{e.candidates[0]?placeById[e.candidates[0].placeId].shortName:"Location unresolved"}</small></span>{sortOrder==="confidence"?<span className="register-confidence">{sortCandidates(e.candidates,"confidence",placeById)[0]?.confidence??"unplaced"}</span>:<ChevronRight className="entry-status" size={13}/>}</button>)}{visibleEntries.length===0&&<div className="empty-list">No entries match this view.<br/><button onClick={()=>{setQuery("");setRegion("all")}}>Show all entries</button></div>}</nav>
-        <div className="register-foot"><MapPin size={15}/><span>{mappedCount} mapped anchors<br/><small>{unmappedCount} places remain unlocated</small></span></div>
-      </aside>
-      <AtlasMap entry={entry} places={places} entries={entries} focusId={focusId} focusNonce={focusNonce} visibleIds={visibleIds} mode={mode} onMode={changeMode} onPlace={choosePlace} onEntry={chooseFromScroll} mobileView={mobileView} onText={()=>{setDetailTab("text");setMobileView("detail")}}/>
-      <aside ref={detailRef} id="entry-detail" tabIndex={-1} className="detail-panel" aria-label="Selected entry and candidates">
-        <div className="folio-header"><span className="small-caps">Entry <b>{entry.id.padStart(2,"0")}</b> / 3Q15</span><div className="folio-nav"><button aria-label="Previous scroll entry" onClick={()=>stepEntry(-1)}><ChevronLeft size={15}/></button><button aria-label="Next scroll entry" onClick={()=>stepEntry(1)}><ChevronRight size={15}/></button></div></div>
-        <article className="folio" key={entry.id}><div className="overline"><span>Ancient description</span><span className="hebrew" lang="he" dir="rtl">{entry.hebrew}</span></div><h2>{entry.title}</h2><div className="line-reference">3Q15 · {entry.lines} · Entry {entry.id}</div><p className="entry-description">{entry.description}</p><span className="paraphrase-label">Editorial paraphrase</span><Tabs value={detailTab} onValueChange={setDetailTab} className="detail-tabs">
-          <TabsList aria-label="Entry information"><TabsTrigger value="places"><MapPin size={14}/>Sites</TabsTrigger><TabsTrigger value="text"><ScrollText size={14}/>Text</TabsTrigger><TabsTrigger ref={evidenceTabRef} value="evidence"><FileText size={14}/>Evidence</TabsTrigger></TabsList>
-          <TabsContent value="text"><EntryText entryId={entry.id} onOpenScroll={openScroll}/></TabsContent>
-          <TabsContent value="places">
-          <div className="candidate-heading"><h3>Candidate {entry.candidates.length===1?"site":"sites"}</h3><span>{entry.candidates.length} {entry.candidates.length===1?"placement":"placements"}</span></div>
-          {entry.candidates.length>1&&<div className="candidate-sort"><Select value={candidateOrder} onValueChange={setCandidateOrder}><SelectTrigger aria-label="Sort this entry’s candidates"><SelectValue/></SelectTrigger><SelectContent><SelectItem value="confidence">Confidence · highest first</SelectItem><SelectItem value="alphabetical">Candidate name · A–Z</SelectItem><SelectItem value="preferred">Preferred first</SelectItem></SelectContent></Select></div>}
-          {orderedCandidates.map(c=>{const p=placeById[c.placeId];return <button className={`candidate-card ${focusId===p.id?"active":""}`} key={p.id} onClick={()=>focusCandidate(p.id)} aria-pressed={focusId===p.id}><span className="candidate-top">{p.shortName}{p.lat!==null?<MapPin size={15}/>:<Info size={15}/>}</span><span className="candidate-meta"><span className={`confidence ${c.confidence}`}>{c.confidence.charAt(0).toUpperCase()+c.confidence.slice(1)} site confidence</span><span className="status">{c.status==="preferred"?"Preferred candidate":c.status==="weak"?"Weak alternative":"Possible alternative"}</span></span></button>})}
-          {!entry.candidates.length&&<p className="folio-empty">This entry has no mapped candidate.</p>}
-          {place&&<div className="precision-note"><MapPin size={13}/><span>{place.lat===null?"No coordinate assigned. The source defines no defensible point.":`Approximate anchor · ${place.precision}.`}{place.note&&<> {place.note}</>}</span></div>}
-          <button className="evidence-link dossier-launch" onClick={()=>changeMode("dossier")}><span><BookOpen size={14}/>Open {place?.shortName??"the place"} dossier</span><ChevronRight size={16}/></button>
-          <button className="evidence-link" onClick={()=>changeMode("landscape")}><span><Layers size={14}/>Compare historical landscapes</span><ChevronRight size={16}/></button>
-          <button className="evidence-link" onClick={()=>{setDetailTab("evidence");evidenceTabRef.current?.focus()}}>Review evidence & uncertainty <ChevronRight size={16}/></button>
-          </TabsContent>
-          <TabsContent value="evidence">
-          <EvidenceReview entryId={entry.id} placeId={focusId}/>
-          <button className="evidence-link dossier-launch" onClick={()=>changeMode("dossier")}><span><BookOpen size={14}/>Inspect reading branches and place evidence</span><ChevronRight size={16}/></button>
-          <button className="evidence-link" onClick={()=>openWorkbench(entry.id==="25"?"inventory":entry.id==="11"||entry.id==="60"?"relationships":entry.id==="29"?"coverage":"decisions")}><span><FlaskConical size={14}/>Open feature research tools</span><ChevronRight size={16}/></button>
-          <section className="evidence-section"><h3><Feather size={14}/>Why considered</h3><p>{primaryFocus||!place?entry.evidence:place.note||`The research retains ${place.shortName} as a comparison for this entry. Its position remains approximate, and the individual landmark has not been identified.`}</p></section>
-          <section className="evidence-section caution"><h3><Info size={14}/>What remains uncertain</h3><p>{entry.caution}</p></section>
-          <details className="source-details"><summary>Evidence & references</summary><p>{entry.sources}</p><p><strong>Period fit:</strong> {entry.period}.</p>{place&&<p><strong>Coordinate source:</strong> {place.source}.</p>}<a href={`${repo}/tables/phase5_archaeology_index.csv`} target="_blank" rel="noreferrer">Archaeology index <ExternalLink size={12}/></a><br/><a href={`${repo}/research/logs/open_questions.md`} target="_blank" rel="noreferrer">Read the open questions <ExternalLink size={12}/></a><br/><a href={`${repo}/tables/phase3_site_index.csv`} target="_blank" rel="noreferrer">All candidate mappings <ExternalLink size={12}/></a></details>
-          </TabsContent></Tabs>
-          <div className="folio-footer">Site-level identification · Revised 28.09.2026</div>
-        </article>
-      </aside>
-    </div>
-    <nav className="mobile-nav" aria-label="Atlas views"><button aria-pressed={mobileView==="register"} onClick={()=>setMobileView("register")}><List size={17}/>Register</button><button aria-pressed={mobileView==="map"} onClick={()=>setMobileView("map")}><Map size={17}/>{mode==="scroll"?"Scroll":mode==="ground"?"Ground":mode==="scene"?"Scene":mode==="landscape"?"Landscapes":mode==="dossier"?"Dossier":"Map"}</button><button aria-pressed={mobileView==="detail"} onClick={()=>setMobileView("detail")}><FileText size={17}/>Entry {entry.id}</button></nav></>}
-  </main>;
+  window.addEventListener("popstate",restore);window.addEventListener("hashchange",restore);
+  return()=>{window.removeEventListener("popstate",restore);window.removeEventListener("hashchange",restore)};
+ },[]);
+ function back(){
+  if((window.history.state?.atlasDepth??0)>0)window.history.back();
+  else if(state.workbench||(state.mode!=="3d"&&state.mode!=="2d"))navigate({...initialExplorer,entryId:entry.id,placeId:state.placeId,camera:state.camera},true);
+ }
+ function changeMode(mode:string){navigate({mode,workbench:null,scrollPhoto:false,recordId:null,enlarged:false});setNotes(false)}
+ function chooseEntry(id:string,placeId?:string){
+  const e=entries.find(e=>e.id===id);if(!e)return;
+  const focused=placeId??e.candidates[0]?.placeId??null;
+  navigate({entryId:id,placeId:focused,mode:state.mode==="scroll"?"scroll":"3d",workbench:null,planId:null,featureId:null,highlightId:null,recordId:null,viewport:undefined,photoViewport:undefined,enlarged:false});setNotes(false);
+ }
+ function choosePlace(id:string){const linked=entry.candidates.some(c=>c.placeId===id)?entry:entries.find(e=>e.candidates.some(c=>c.placeId===id&&c.status==="preferred"))??entries.find(e=>e.candidates.some(c=>c.placeId===id));if(linked)chooseEntry(linked.id,id);}
+ function exploreCandidate(id=state.placeId){const p=plansForPlace(id)[0];navigate({placeId:id,mode:p?"site":"3d",planId:p?.id??null,featureId:null,highlightId:null,recordId:null,viewport:undefined,photoViewport:undefined,siteView:"plan",workbench:null,enlarged:false});if(!p)setNotes(true)}
+ function selectScrollEntry(id:string){const e=entries.find(e=>e.id===id);if(!e)return;const same=e.candidates.some(c=>c.placeId===state.placeId);navigate({entryId:id,scrollColumn:undefined,...(same?{}:{placeId:primaryPlace(id),planId:null,featureId:null,highlightId:null})});}
+ function read(id=entry.id){navigate({entryId:id,mode:"scroll",workbench:null,scrollPhoto:false,scrollColumn:undefined,enlarged:false});setNotes(false)}
+ useEffect(()=>{
+  const context=(document as Document & {modelContext?:{registerTool:(t:unknown,o:{signal:AbortSignal})=>void|Promise<void>}}).modelContext;
+  if(!context?.registerTool)return;const controller=new AbortController();
+  try{void Promise.resolve(context.registerTool({name:"navigate_scroll_entry",title:"Explore a Copper Scroll entry",description:"Select an entry and its candidate sites.",inputSchema:{type:"object",properties:{entryId:{type:"string",enum:entries.map(e=>e.id)}},required:["entryId"],additionalProperties:false},execute:async(input:{entryId:string})=>{const e=entries.find(e=>e.id===input.entryId);if(!e)throw Error("Unknown entry");navigate({entryId:e.id,placeId:primaryPlace(e.id),mode:"3d",workbench:null,planId:null,featureId:null});return {entryId:e.id,title:e.title};}},{signal:controller.signal})).catch(()=>{});}catch{}return()=>controller.abort();
+ },[navigate]);
+ const canBack=depth>0||!["2d","3d"].includes(state.mode)||!!state.workbench;
+ return <main className="atlas-shell unified-atlas" data-mode={state.mode}>
+  <a className="skip-link" href="#explore-surface">Skip to exploration</a>
+  <header className="unified-header">
+   <button className="atlas-back" aria-label="Back" disabled={!canBack} onClick={back}><ArrowLeft size={18}/><span>Back</span></button>
+   <div className="unified-brand"><ScrollText size={21}/><span>Copper Scroll <small>Atlas · 3Q15</small></span></div>
+   <nav aria-label="Main views"><button aria-current={state.mode!=="scroll"&&!state.workbench?"page":undefined} onClick={()=>changeMode("3d")}><Map size={16}/>Explore</button><button aria-current={state.mode==="scroll"&&!state.workbench?"page":undefined} onClick={()=>read()}><BookOpen size={16}/>Read the scroll</button></nav>
+   <div className="unified-header-actions"><button aria-label="Find an entry or place" aria-expanded={browse} onClick={()=>{setBrowse(v=>!v);setMore(false)}}><Search size={17}/><span>Find a place or entry</span></button><div className="unified-menu-wrap"><button aria-label="More atlas options" aria-expanded={more} onClick={()=>setMore(v=>!v)}>More<ChevronDown size={13}/></button>{more&&<div className="unified-menu"><button onClick={()=>{navigate({workbench:"relationships"});setNotes(false)}}><FlaskConical size={15}/>Research tools</button><button onClick={()=>{setAbout(true);setMore(false)}}>About &amp; sources</button><a href={`${repo}/research/README.md`} target="_blank" rel="noreferrer">Research notes<ExternalLink size={13}/></a></div>}</div></div>
+  </header>
+  <div id="explore-surface" className="unified-surface">
+   {state.workbench?<Suspense fallback={<p>Opening research tools…</p>}><Workbench moduleId={state.workbench} onModule={id=>navigate({workbench:id})} onClose={back}/></Suspense>:<>
+    <AtlasMap entry={entry} places={places} entries={entries} focusId={state.placeId} focusNonce={focusNonce} visibleIds={visibleIds} mode={state.mode} onMode={changeMode} onPlace={choosePlace} onEntry={selectScrollEntry} mobileView="map" onText={()=>read()}
+     onExploreSite={()=>exploreCandidate()} onCamera={camera=>saveSnapshot({camera})} restoreCamera={mapRestore.camera} restoreNonce={mapRestore.nonce}
+     onRecord={id=>navigate({recordId:id})} recordId={state.recordId}
+     scrollPhoto={state.scrollPhoto} scrollColumn={state.scrollColumn} onScrollColumn={column=>navigate({scrollColumn:column})} onScrollPhoto={(show,id)=>navigate({scrollPhoto:show,entryId:id??entry.id})}/>
+    {state.mode==="site"&&plan&&<SiteExplorer entry={entry} place={place} plan={plan} featureId={state.featureId} highlightId={state.highlightId} onHighlight={id=>navigate({highlightId:id})} view={state.siteView} viewport={state.viewport} photoViewport={state.photoViewport} restoreNonce={restoreNonce} onViewport={(v:Viewport,photo:boolean)=>saveSnapshot(photo?{photoViewport:v}:{viewport:v})} onFeature={id=>navigate({featureId:id,enlarged:false})} onPlan={id=>navigate({planId:id,featureId:null,highlightId:null,viewport:undefined,siteView:"plan"})} onView={view=>navigate({siteView:view,enlarged:false})} onTerrain={()=>{changeMode("3d");setFocusNonce(n=>n+1)}} onRead={read} enlarged={!!state.enlarged} onEnlarge={()=>navigate({enlarged:true})} onCloseEnlarged={back}/>}
+    {state.mode==="dossier"&&<div className="unified-dossier"><Suspense fallback={<p>Opening evidence…</p>}><Dossier entry={entry} place={place} onEntry={selectScrollEntry} onRead={()=>read()}/></Suspense></div>}
+    {["2d","3d"].includes(state.mode)&&<>
+     <div className="explore-context"><span>Entry {entry.id} · {entry.title}</span><button onClick={()=>setNotes(v=>!v)} aria-expanded={notes}>{notes?"Close details":"Entry details"}</button><div className="unified-menu-wrap"><button onClick={()=>setLayers(v=>!v)} aria-expanded={layers}><Layers size={14}/>Map layers</button>{layers&&<div className="unified-menu"><p>Historical context for this place</p><button onClick={()=>changeMode("landscape")}>Historical maps &amp; archive</button><small>Source dates and alignment limits accompany each layer.</small></div>}</div></div>
+     {feature&&state.planId&&!notes&&<aside className="terrain-feature-note"><button onClick={()=>navigate({mode:"site",siteView:"plan"})}>View selected structure in plan</button><FeatureNote feature={feature} onRead={read}/><p className="terrain-registration-note">This feature has source-plan coordinates; its exact terrain position is unresolved.</p></aside>}
+     {record&&!notes&&<aside className="terrain-feature-note"><button onClick={back}><ArrowLeft size={14}/>Back to site</button><span className="site-kind">Historical map record · {record.properties.feature_class}</span><h3>{record.properties.label_as_printed||record.properties.feature_class}</h3><p>{record.properties.notes}</p><p>Position error: approximately {record.properties.position_error_m} m. Date: {record.properties.period_as_source}.</p><details><summary>Source &amp; current observation</summary><p>Survey of Palestine, sheet {record.properties.sheet}; digitized source-map symbol.</p><p>{record.properties.state_basis||"Present condition has not been checked."}</p></details></aside>}
+    </>}
+   </>}
+   {browse&&<aside className="unified-browser" aria-label="Find entries"><header><h2>Find an entry or place</h2><button aria-label="Close search" onClick={()=>setBrowse(false)}><X size={18}/></button></header><input autoFocus aria-label="Search entries and places" placeholder="Qumran, Siloam, 29…" value={query} onChange={e=>setQuery(e.target.value)}/><select aria-label="Filter region" value={region} onChange={e=>setRegion(e.target.value)}><option value="all">All regions</option><option value="jericho">Jericho &amp; Qumran</option><option value="jerusalem">Jerusalem</option><option value="region">Judean hills &amp; north</option><option value="unplaced">Unplaced</option></select><nav aria-label="Entry results">{matches.map(e=><button key={e.id} aria-current={e.id===entry.id?"true":undefined} onClick={()=>chooseEntry(e.id)}><span>{e.id}</span><div><strong>{e.title}</strong><small>{e.candidates[0]?byPlace[e.candidates[0].placeId].shortName:"Location unresolved"}</small></div></button>)}{matches.length===0&&<p>No matching entry. Try another place name.</p>}</nav></aside>}
+   {notes&&<aside className="unified-entry-note" aria-label="Entry details"><header><span>Entry {entry.id} · {entry.lines}</span><button aria-label="Close entry details" onClick={()=>setNotes(false)}><X size={18}/></button></header><h2>{entry.title}</h2><p>{entry.description}</p><h3>Candidate sites</h3>{entry.candidates.map(c=><div className="unified-candidate" key={c.placeId}><strong>{byPlace[c.placeId].shortName}</strong><small>{c.confidence} site confidence · {c.status}</small><button onClick={()=>{exploreCandidate(c.placeId);setNotes(false)}}>Explore candidate</button></div>)}{!entry.candidates.length&&<p>No mapped candidate.</p>}<button className="unified-read-link" onClick={()=>read()}><BookOpen size={16}/>Read this passage</button><details><summary>Evidence &amp; interpretation</summary><EvidenceReview entryId={entry.id} placeId={state.placeId}/><p>{entry.evidence}</p><p>{entry.caution}</p><button onClick={()=>{changeMode("dossier");setNotes(false)}}>Full source dossier</button></details><details><summary>Passage translation</summary><EntryText entryId={entry.id} onOpenScroll={()=>read()}/></details></aside>}
+  </div>
+  {about&&<div className="unified-modal" role="dialog" aria-modal="true" aria-label="About the atlas"><div><button aria-label="Close about" onClick={()=>setAbout(false)}><X/></button><h2>Places, structures &amp; the scroll</h2><p>Select a candidate, explore its source plan, and inspect a feature’s evidence. Modern terrain and buildings provide geographical context. Source-relative plans retain their own coordinates until registration is established.</p><p>All current site identifications remain conditional. A feature comparison identifies neither a deposit nor surviving treasure.</p><p>Hebrew: Abegg’s transcription, ETCBC CC BY-NC 4.0. Translation: this project. Plans and photographs retain their source credits and licences.</p><a href={`${repo}/atlas/README.md`} target="_blank" rel="noreferrer">Atlas guide &amp; sources</a></div></div>}
+ </main>;
 }

@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-12",
+  "timezone": "America/Los_Angeles",
+  "asset": "atlas/app/atlas-site-plans.json",
+  "purpose": "Interactive source-plan selection regions; no geographic registration or archaeological identification claim.",
+  "sources": [
+    {
+      "plan_id": "qumran-ilan",
+      "source": "Ilan–Amit 1989 p. 283 Fig. 1",
+      "credit": "Project redrawing from the existing entry 21 comparison; manually sampled source-plan pixels.",
+      "frame": [
+        650,
+        300
+      ],
+      "registration": "none",
+      "selection_method": "Qumran: reuse of the existing entry21-comparison source-relative redrawing. Jericho: approximate image-coordinate selection regions over existing licensed figures. Siloam: original simplified project line tracing of selected structural relations from the already inspected Plan 1 on p. 74*.",
+      "limit": "Source-relative geometry. Geographic registration is pending; highlight sizes do not represent positional accuracy."
+    },
+    {
+      "plan_id": "qumran-reeder",
+      "source": "Reeder–Jol 2006 p. 229 Fig. 4",
+      "credit": "Project redrawing from the existing entry 21 comparison; manually sampled source-plan pixels.",
+      "frame": [
+        650,
+        330
+      ],
+      "registration": "none",
+      "selection_method": "Qumran: reuse of the existing entry21-comparison source-relative redrawing. Jericho: approximate image-coordinate selection regions over existing licensed figures. Siloam: original simplified project line tracing of selected structural relations from the already inspected Plan 1 on p. 74*.",
+      "limit": "Source-relative geometry. Geographic registration is pending; highlight sizes do not represent positional accuracy."
+    },
+    {
+      "plan_id": "jericho-ac",
+      "source": "Trümper 2018 Fig. 19, p. 282, after Netzer 2001a plan 13",
+      "credit": "M. Trümper after Netzer 2001a · CC BY-NC 3.0 · complete archived figure and caption.",
+      "frame": [
+        1039,
+        1467
+      ],
+      "registration": "none",
+      "selection_method": "Qumran: reuse of the existing entry21-comparison source-relative redrawing. Jericho: approximate image-coordinate selection regions over existing licensed figures. Siloam: original simplified project line tracing of selected structural relations from the already inspected Plan 1 on p. 74*.",
+      "limit": "Selection polygons are approximate image-coordinate regions, not surveyed outlines. Area AC is separate from the northern Pools Complex."
+    },
+    {
+      "plan_id": "jericho-early",
+      "source": "Trümper 2018 Fig. 20, p. 284",
+      "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
+      "frame": [
+        1039,
+        899
+      ],
+      "registration": "none",
+      "selection_method": "Qumran: reuse of the existing entry21-comparison source-relative redrawing. Jericho: approximate image-coordinate selection regions over existing licensed figures. Siloam: original simplified project line tracing of selected structural relations from the already inspected Plan 1 on p. 74*.",
+      "limit": "Published reconstruction; source-image frame, unregistered to the terrain."
+    },
+    {
+      "plan_id": "jericho-late",
+      "source": "Trümper 2018 Fig. 22, p. 286",
+      "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
+      "frame": [
+        1039,
+        896
+      ],
+      "registration": "none",
+      "selection_method": "Qumran: reuse of the existing entry21-comparison source-relative redrawing. Jericho: approximate image-coordinate selection regions over existing licensed figures. Siloam: original simplified project line tracing of selected structural relations from the already inspected Plan 1 on p. 74*.",
+      "limit": "Published reconstruction; source-image frame, unregistered to the terrain."
+    },
+    {
+      "plan_id": "siloam-receiver",
+      "source": "Greenhut & Mazor 2020 Plan 1, p. 74*",
+      "credit": "Project tracing of selected structural relations from Plan 1. Simplified, source-relative; not a complete excavation plan.",
+      "frame": [
+        787,
+        410
+      ],
+      "registration": "none",
+      "selection_method": "Qumran: reuse of the existing entry21-comparison source-relative redrawing. Jericho: approximate image-coordinate selection regions over existing licensed figures. Siloam: original simplified project line tracing of selected structural relations from the already inspected Plan 1 on p. 74*.",
+      "limit": "No geographic registration. L103’s height datum refers to the small receiving basin. The larger southern pool is a different installation."
+    }
+  ],
+  "images": [
+    {
+      "file": "atlas/public/dossiers/trumper2018-fig19-p282.jpg",
+      "sha256": "1b1e9ba70276e1a80f1c03aca41a67bcea9e4d01cdf390d3a53dc56a20ebfcf8",
+      "reuse": "Existing licensed CC BY-NC 3.0 figure, complete caption/scale retained; overlays are separate SVG selection regions."
+    },
+    {
+      "file": "atlas/public/dossiers/trumper2018-fig20-p284.jpg",
+      "sha256": "5245a94ac30c5161ca1eafb8f315aed1d0d777e99c980742e3b643517e917075",
+      "reuse": "Existing licensed CC BY-NC 3.0 figure, complete caption/scale retained; overlays are separate SVG selection regions."
+    },
+    {
+      "file": "atlas/public/dossiers/trumper2018-fig22-p286.jpg",
+      "sha256": "166fabb30fd441f607ac434dd8e8297878ff092d680e744c5b7dd1425e5a533d",
+      "reuse": "Existing licensed CC BY-NC 3.0 figure, complete caption/scale retained; overlays are separate SVG selection regions."
+    }
+  ],
+  "siloam_original": {
+    "file": "research/assets/plans/siloam2020/greenhut-mazor2020-p74-figures.png",
+    "sha256": "eb1fe7ff6fd02dda10258883355a0cc28258ba3872c459e20470481cd3719473",
+    "delivery": "Original page pixels are not added to the public application; the app displays a labelled project tracing."
+  },
+  "photo_links": "Existing atlas-scenes.json records and image-relative highlight polygons are reused. Plan features are not automatically registered to photographs.",
+  "drive_access": "The owner supplied the existing Copper Scroll library folder again. drive.google.com was added to the cloud draft; the public folder redirects to Google sign-in. This session has no callable Drive connector, so no new library documents were inspected."
+}

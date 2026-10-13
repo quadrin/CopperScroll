@@ -92,8 +92,43 @@ There is **no Atara drawing on pp82–83**. The plan on p82 belongs to **Anata's
 
 The existing entry29 **conduit=MATCH** means only a **reported channel join**, under the lane's published “feeds or joins” rule. It cannot be restated as a proved feeder, a contemporary inlet or an ancient operating configuration. The original whole-candidate comparison remains **not identifiable from available evidence** for those missing relationships.
 
-The British Library's [AddMS71548A–V](https://searcharchives.bl.uk/catalog/032-001965756) catalogue identifies survey observation/calculation notebooks, but supplies no digitized content or confirmed Atara sheet. [AddMS69848](https://searcharchives.bl.uk/catalog/032-002043164) mainly holds mapping calculations and a four-miles-to-inch working map; its catalogue expressly says the papers are not by Conder/Kitchener themselves. The exact Atara drawing is not established in either collection. The PEF documents/maps page failed to open. These are custody leads, not inspected drawings; exact failed URLs are in the trace.
+The British Library's [AddMS71548A–V](https://searcharchives.bl.uk/catalog/032-001965756) catalogue identifies survey observation/calculation notebooks, but supplies no digitized content or confirmed Atara sheet. [AddMS69848](https://searcharchives.bl.uk/catalog/032-002043164) mainly holds mapping calculations and a four-miles-to-inch working map; its catalogue expressly says the papers are not by Conder/Kitchener themselves. The exact Atara drawing is not established in either collection. The initial PEF documents/maps URL failed; the custody follow-up below records the corrected working URL. The British Library catalogue routes identify collections, with Atara contents unconfirmed. Exact access failures remain in the trace.
 
 Next obtain the **Atara/Attara (M s, SheetXVII, beside Tell enNasbeh) original hydraulic plan/section**, identifying the78×37ft pool, nine-foot east wall, four buttresses, pointed-arched outlet and stone-section channel. The deciding evidence is channel invert/gradient plus the pool-floor/wall contacts and a dated construction or use context. Establish the drawing's existence and shelfmark first. McCown and the published SWP entry are now resolved dependencies; rereading them cannot supply that missing section.
 
 **Partly** — obtained the original published description and separated its outlet label from the later supply account; the exact hydraulic drawing, actual channel direction and joint-use phase remain unavailable.
+
+## Atara drawing custody — 13 October UTC / 12 October Los Angeles
+
+PEF's working [Documents & Maps page](https://www.pef.org.uk/collections/documents-maps/) confirms that it holds Conder and Kitchener's SWP documents, reports, plans and maps. Its [collections page](https://www.pef.org.uk/collections/) directs holdings enquiries to the curator. The [current staff page](https://www.pef.org.uk/about/staff-committee/) identifies **Felicity Cobbing, Chief Executive & Curator**, at **execsec@pef.org.uk**. The owner's existing sent Copper Scroll enquiry uses that same office address, so recipient identity is resolved for this separate subject. The earlier failing URL used `documents-and-maps`; the working page uses `documents-maps`.
+
+Collection custody is established. **An Atara drawing, its shelfmark and its contents remain UNKNOWN.** The public pages inspected provide a collection description and access route, without an item inventory sufficient to establish absence. Bounded searches under Atara/Attara, Tell en-Nasbeh, SWP and original-plan terms located no exact reservoir/channel drawing record. OpenJerusalem's indexed PEF/Conder descriptions identify the **published** map (`JM-NLI/ELCC/Pal751`) and **published SheetXVII** (`JM-NLI/ELCC/Pal751/sheet17`), held in the National Library of Israel's Laor Collection. These records do not establish custody of an unpublished hydraulic section. Live catalogue pages timed out; their indexed descriptions were readable. PEF's linked library page describes published-volume access and database redevelopment. It supplies no Atara archival item. The [source trace](atara_source_trace.json) records the inspection scope and failures.
+
+The surviving possibilities include an unindexed PEF sketch or notebook entry, a record with another custodian, and a drawing that was never made or no longer survives. Catalogue silence cannot choose among them. The next evidence is the curator's holdings response identifying the original record and what it actually shows.
+
+### Prepared holdings enquiry
+
+Prepared as an **unsent Gmail draft**, from the owner's existing personal project account to the verified curator address. It asks for holdings metadata and a custodial reference. Sending awaits explicit authorization to contact PEF about this new subject.
+
+Subject: **SWP holdings enquiry: ‘Attara reservoirs beside Tell en-Nasbeh**
+
+Hello Felicity,
+
+I’m tracing the pool and channel at ‘Attara (M s), beside Tell en-Nasbeh, described in Conder and Kitchener’s *Survey of Western Palestine, Memoirs III* (1883), pp. 82–83, Sheet XVII.
+
+The published Sheet XVII marks ‘Attara and a tank near Tell en-Nasbeh. I’m seeking the original site-level survey record.
+
+Does PEF hold an original survey sketch, plan, section or field-notebook entry for these reservoirs? The described principal pool measures 78 × 37 feet, with a nine-foot wall, four internal buttresses and a pointed-arched outlet. The 1993 Benjamin survey describes a vaulted corridor and stone-section water channel at the bottom of the western pool (24 × 11.5 m), with the channel leading to the pools.
+
+I’m trying to establish whether the two reports describe the same opening and whether an original record shows channel levels or its connection to the pool. Could you identify a shelfmark and briefly describe what survives? If another archive holds the original record, a custodial reference would help.
+
+Thank you,
+Alex
+
+**Partly** — confirmed PEF's SWP archive and curator route; Atara drawing/shelfmark remain unconfirmed; prepared the unsent holdings enquiry.
+
+### Uploaded SWP map check
+
+The owner's `dedupmrg54258818_IE199398504.pdf` (SHA256 `5a9bc74683887ab4cac377a476a20b832a05aa7cc73b7d6e1d513fa672a61ba7`) contains published SWP map scans. **PDF17 is SheetXVII**, whose imprint dates it1879; the handwritten library1880 and the catalogue map-set date remain distinct. This sheet places **Attara beside Tell enNasbeh** and marks **Tk.** by a small tank symbol. The [Atara detail](../../assets/plans/swp-upload-atara-2026-10-13/atara-detail.jpg), [overview](../../assets/plans/swp-upload-atara-2026-10-13/sheet-XVII-overview.jpg), [scale/legend](../../assets/plans/swp-upload-atara-2026-10-13/sheet-XVII-legend.jpg), [native map pages](../../assets/plans/swp-upload-atara-2026-10-13/swp-sheets-I-XVII.pdf) and [manifest](../../assets/plans/swp-upload-atara-2026-10-13/figure_manifest.json) have matching atlas copies. SheetI was encountered while identifying the upload, so its native page is also preserved.
+
+The map supplies site context and a tank notation. It does not distinguish the western/eastern pool apertures or give a hydraulic section. At its printed1:63,360 scale, a24m pool occupies about0.38mm and a2.74m wall about0.043mm; these scale conversions do not measure the tank symbol. Actual flow, connection fabric and joint-use phase remain UNKNOWN. The enquiry states that the published map has been checked and asks for the original site-level record.

@@ -103,6 +103,33 @@
       "sha256": "65334d98e81b27acff13e54695bedd875fdd4c9f69bec7424a319ed6ddb1e659",
       "inspection_scope": "Already fully read supplied copy; exact pages reread for source ancestry.",
       "source_ancestry": "SWP MemoirsIII1883pp82–83; Guerin JudeeIII1869pp6–7; Dalman PJB10(1914)pp17–18. McCown transmits the pointed-arched outlet; not an excavated Atara hydraulic contact."
+    },
+    {
+      "source_id": "uploaded_swp_map_set",
+      "title": "Palestine Exploration Fund Map, SheetXVII",
+      "source_file": "dedupmrg54258818_IE199398504.pdf",
+      "viewer_pages": [
+        17
+      ],
+      "source_pages": 28,
+      "sha256": "5a9bc74683887ab4cac377a476a20b832a05aa7cc73b7d6e1d513fa672a61ba7",
+      "attachment_id": "file_00000000029081fb86efadabfac7eaaa",
+      "figure_ids": [
+        "SheetXVII"
+      ],
+      "asset_manifest": "research/assets/plans/swp-upload-atara-2026-10-13/figure_manifest.json",
+      "inspection_scope": "SheetI used to identify upload as published maps. PDF17 header, full SheetXVII and Atara/Tell enNasbeh detail inspected. PDF18 header only confirms XVIII; its map detail and other sheets unread. No Tell esSultan fine detail opened.",
+      "observations": {
+        "label": "Attara",
+        "site_context": "beside Tell enNasbeh",
+        "hydraulic_label": "Tk.",
+        "tank_identity": "site-level mapped tank; exact west/east pool crosswalk UNKNOWN",
+        "printed_scale": "1:63,360",
+        "printed_sheet_date": 1879,
+        "hydraulic_section": null,
+        "hydraulic_level_or_gradient": null,
+        "dated_construction_or_joint_use_context": null
+      }
     }
   ],
   "identity_checks": {
@@ -153,8 +180,20 @@
     },
     {
       "institution": "Palestine Exploration Fund",
-      "url": "https://www.pef.org.uk/collections/documents-and-maps/",
-      "scope": "Possible original archaeological drawings route; page failed in reader. No exact Atara shelfmark or drawing existence established."
+      "url": "https://www.pef.org.uk/collections/documents-maps/",
+      "scope": "Correct collections URL inspected. PEF explicitly holds documents, reports, plans and maps from the Conder/Kitchener Survey of Western Palestine. This confirms collection-level custody, not an Atara drawing or shelfmark.",
+      "previous_failed_url": "https://www.pef.org.uk/collections/documents-and-maps/",
+      "collection_page": "https://www.pef.org.uk/collections/",
+      "staff_page": "https://www.pef.org.uk/about/staff-committee/",
+      "holdings_contact": {
+        "name": "Felicity Cobbing",
+        "role": "Chief Executive & Curator",
+        "public_address": "execsec@pef.org.uk",
+        "resolution": "Current official PEF staff page identifies this person/address; the collections page directs holdings access to the curator at this address. Existing sent owner correspondence for the Copper Scroll uses the same address."
+      },
+      "target_shelfmark": null,
+      "target_drawing_existence": "UNKNOWN",
+      "reproduction_scope": "PEF webpages reserve publication/commercial reproduction rights. Only catalogue descriptions/access metadata inspected here; no archival image reproduced."
     }
   ],
   "access_failures": [
@@ -181,9 +220,70 @@
     {
       "url": "https://searcharchives.bl.uk/catalog/032-002043164",
       "error": "direct web reader timeout; search returned catalogue text"
+    },
+    {
+      "url": "https://www.pef.org.uk/contact/",
+      "error": "web reader timeout; current staff and collections pages supplied recipient and access route"
+    },
+    {
+      "url": "https://archives.openjerusalem.org/index.php/informationobject/browse?languages=en&names=769&sf_culture=en&sort=identifier&sortDir=asc&topLod=0&view=table",
+      "error": "web reader and independent native HTTP retrieval timed out; indexed descriptions readable"
+    },
+    {
+      "url": "https://archives.openjerusalem.org/index.php/series-sections",
+      "error": "web reader timeout while seeking repository navigation; indexed record concerns a Warren/Alderson Jerusalem section, not Atara"
     }
   ],
   "catalogue_caution": "The other independently downloaded scan, surveyofwesternp03pale.pdf (SHA25607c42f05488658faff9a12b01c3af37707192e72214a32f5242469c708cce18c), also has the correct1883MemoirsIII title page despite misleading archive catalogue metadata. Existing Jericho asset source register therefore does not require a volume correction. Page offsets differ between scans; this trace uses conduoft pages98–99.",
   "next_observation": "Locate an original Atara/Attara (Ms, SheetXVII, by Tell enNasbeh) plan or section identifying the78x37ft western pool, its9ft east wall, four buttresses, pointed-arched outlet and stone-section bottom-channel. Require channel invert/gradient, pool-floor and wall contacts, plus dated construction or use context. First establish the drawing shelfmark/existence; neither published entry supplies it.",
-  "completion": "partly — original published entry obtained, inlet/outlet labels separated; exact hydraulic drawing and same-phase use not obtained."
+  "completion": "partly — confirmed PEF SWP custody and curator route, and uploaded SheetXVII Atara tank notation; original drawing/shelfmark and joint-use phase unknown; enquiry prepared and unsent.",
+  "custody_followup": {
+    "date_utc": "2026-10-13",
+    "date_los_angeles": "2026-10-12",
+    "claim": "Whether a surviving original Atara hydraulic drawing and exact shelfmark can be established from available public catalogues.",
+    "confirmed": "PEF collection-level SWP custody and curator access route.",
+    "not_established": "Existence, exact shelfmark or contents of an Atara reservoir/channel drawing.",
+    "terminal_claim": "not identifiable from available evidence",
+    "catalogue_scope": "PEF public documents/maps, collections, staff and library-access descriptions; bounded exact-name/feature searches in two web indexes; OpenJerusalem indexed PEF/Conder descriptions. A full PEF item inventory was not exposed by these pages.",
+    "name_variants": [
+      "Atara",
+      "Attara",
+      "Tell en Nasbeh",
+      "Tell en-Nasbeh",
+      "SWP Sheet XVII",
+      "M s"
+    ],
+    "openjerusalem": {
+      "url": "https://archives.openjerusalem.org/index.php/informationobject/browse?languages=en&names=769&sf_culture=en&sort=identifier&sortDir=asc&topLod=0&view=table",
+      "inspection": "Search-indexed catalogue descriptions read; live page and independent native HTTP retrieval timed out.",
+      "records": [
+        {
+          "reference": "JM-NLI/ELCC/Pal751",
+          "description": "Published Map of Western Palestine in26sheets; National Library of Israel Laor Collection"
+        },
+        {
+          "reference": "JM-NLI/ELCC/Pal751/sheet17",
+          "description": "Published SheetXVII(1880), Jerusalem and surroundings"
+        }
+      ],
+      "result": "These are printed map records, not an identified original Atara hydraulic plan/section. Their limited scope cannot establish absence from PEF holdings."
+    },
+    "pef_library": {
+      "url": "https://sites.google.com/site/peflibrarysearch/welcome-to-the-pef-library-database",
+      "inspection": "Public text read. Library describes published volumes and says a new database is under development.",
+      "result": "No target archival item record supplied; the library route does not locate the original Atara drawing."
+    },
+    "enquiry": {
+      "subject": "SWP holdings enquiry: ‘Attara reservoirs beside Tell en-Nasbeh",
+      "body": "Hello Felicity,\n\nI’m tracing the pool and channel at ‘Attara (M s), beside Tell en-Nasbeh, described in Conder and Kitchener’s Survey of Western Palestine, Memoirs III (1883), pp. 82–83, Sheet XVII.\n\nThe published Sheet XVII marks ‘Attara and a tank near Tell en-Nasbeh. I’m seeking the original site-level survey record.\n\nDoes PEF hold an original survey sketch, plan, section or field-notebook entry for these reservoirs? The described principal pool measures 78 × 37 feet, with a nine-foot wall, four internal buttresses and a pointed-arched outlet. The 1993 Benjamin survey describes a vaulted corridor and stone-section water channel at the bottom of the western pool (24 × 11.5 m), with the channel leading to the pools.\n\nI’m trying to establish whether the two reports describe the same opening and whether an original record shows channel levels or its connection to the pool. Could you identify a shelfmark and briefly describe what survives? If another archive holds the original record, a custodial reference would help.\n\nThank you,\nAlex",
+      "to": "execsec@pef.org.uk",
+      "recipient": "Felicity Cobbing, Chief Executive & Curator, Palestine Exploration Fund",
+      "resolution": "PEF's current staff/collections pages and owner's existing sent Copper Scroll correspondence use the same office address.",
+      "state": "prepared_unsent"
+    },
+    "enquiry_scope": "Holdings existence, shelfmark and brief contents/custodial reference only; no document-delivery or image-purchase request.",
+    "next_dependency": "Curator holdings response identifying an original Atara sketch/plan/section or notebook entry. Catalogue silence cannot show that the drawing was never made, was lost, or is absent from unindexed material.",
+    "unpublished_archive_images_opened": false,
+    "uploaded_map_check": "Newly supplied published SheetXVII confirms site context and tank notation; no original hydraulic section. Printed1879 map date does not date ancient construction/use."
+  }
 }

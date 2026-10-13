@@ -227,9 +227,26 @@ Last session (8 October UTC): **obtained**: Puech 2015 pages for every atlas tit
 Last session (12 October): **partly** — obtained [applied feature/phase comparisons](feature_workbench/book_application_2026-10-12/README.md), [pit/pool/numerical alternatives and native report audit](text/entry46_alternatives_2026-10-12/README.md), [measurement resolution and corrected pair uncertainty](feature_workbench/measurement_resolution_2026-10-12/README.md), and [inventory-role predictions](comparanda/inventory_forms_2026-10-12/README.md). Atara’s western conduit and Absalom’s separate entrance phases change conditional clauses; missing dates/datums prevent identification. [Archive replies](agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026) narrow Manchester/CBRL routes; [Rachel Bar-Nathan reports holding Jericho field notes and requests an owner call](assessments/entry29_jericho_pools/netzer2001-first-pass.md#field-notes-holder-response--12-october-2026), without supplying the junction/level records.
 
 
+## Atlas source-plan and navigation session
+
+Last session (12 October): **partly** — obtained [desktop/mobile atlas interaction checks](../atlas/INTERACTION_VALIDATION.md) for the copper reader and site exploration controls, and [a photo integration proposal](../atlas/PHOTO_INTEGRATION.md). External map, terrain, photograph and JerusalemMap CDN loading remain blocked by the cloud proxy; network additions and reusable setup instructions were saved for review. The preceding session record is preserved in [history](logs/active_test_history_2026-10-07.md#session-record-preserved-during-atlas-ui-work).
+
+
+
+
 
 ## Session records preserved during Atara source trace
 
 Last session (12 October): **partly** — obtained [desktop/mobile atlas interaction checks](../atlas/INTERACTION_VALIDATION.md) for the copper reader and site exploration controls, and [a photo integration proposal](../atlas/PHOTO_INTEGRATION.md). External map, terrain, photograph and JerusalemMap CDN loading remain blocked by the cloud proxy; network additions and reusable setup instructions were saved for review. The preceding session record is preserved in [history](logs/active_test_history_2026-10-07.md#session-record-preserved-during-atlas-ui-work).
 
 Last session (13 October UTC): **obtained** — applied [the five native source readings to exact witnesses](feature_workbench/book_application_2026-10-12/README.md#native-source-application--13-october-2026-utc): Ci320/colonnade and reset-stone inference failures, Jason's chamber/niche/access alternatives, Arnona's group/count/date qualifications, separate Gibeon installations and Atara's remaining original-contact dependency. Conditional results retain unknown bearings, phases, target datums and incomplete coverage.
+
+
+## Session record preserved during Atara custody lookup
+
+Last session (13 October UTC / 12 October Los Angeles): **partly** — obtained the [original Atara survey entry](feature_workbench/book_application_2026-10-12/README.md#atara-original-source-trace--13-october-utc--12-october-los-angeles): SWP labels an outlet, while Benjamin1993 describes a channel leading to the pools. No exact opening crosswalk or joint-use date; the p82 plan is Anata. Next obtain the Atara hydraulic section with invert/gradient, wall/floor contacts and dated use. Preceding atlas and native-book application records are preserved in [history](logs/active_test_history_2026-10-07.md#session-records-preserved-during-atara-source-trace).
+
+
+## Atlas session preserved during Atara custody lookup
+
+Last session (12 October): **obtained** — [source-plan exploration and restorable Back navigation](../atlas/PHOTO_INTEGRATION.md), with [desktop/mobile browser validation](../atlas/INTERACTION_VALIDATION.md) and [source/geometry provenance](assets/plans/atlas-explorer/manifest.json). Public map/photograph loading now works through the cloud proxy. The supplied Drive folder redirects to sign-in and exposes no callable connector here, so additional library documents were not inspected. The preceding UI session record is preserved in [history](logs/active_test_history_2026-10-07.md#atlas-source-plan-and-navigation-session).

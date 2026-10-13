@@ -2,7 +2,7 @@
 
 Updated 13 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (13 October UTC / 12 October Los Angeles): **partly** — obtained the [original Atara survey entry](feature_workbench/book_application_2026-10-12/README.md#atara-original-source-trace--13-october-utc--12-october-los-angeles): SWP labels an outlet, while Benjamin1993 describes a channel leading to the pools. No exact opening crosswalk or joint-use date; the p82 plan is Anata. Next obtain the Atara hydraulic section with invert/gradient, wall/floor contacts and dated use. Preceding atlas and native-book application records are preserved in [history](logs/active_test_history_2026-10-07.md#session-records-preserved-during-atara-source-trace).
+Last session (13 October UTC / 12 October Los Angeles): **partly** — confirmed [PEF's SWP archive and curator route](feature_workbench/book_application_2026-10-12/README.md#atara-drawing-custody--13-october-utc--12-october-los-angeles). Checked the uploaded SheetXVII Attara tank notation. Original drawing/shelfmark remain unconfirmed; prepared an unsent holdings enquiry naming the78×37ft pool, outlet and bottom-channel. The next evidence is the curator's holdings response. The preceding source-trace record is preserved in [history](logs/active_test_history_2026-10-07.md#session-record-preserved-during-atara-custody-lookup).
 
 ## Active questions and the observation that decides each
 
