@@ -7,6 +7,8 @@ import { Slider } from "@/components/ui/slider";
 import type { Map as LibreMap, Marker, StyleSpecification, GeoJSONSource } from "maplibre-gl";
 import type { Entry, Place } from "./atlas-types";
 import { candidateAreas, candidateBounds } from "./atlas-geography";
+import sceneData from "./atlas-scenes.json";
+import "./atlas-explore.css";
 import GroundView from "./atlas-ground";
 import ScrollView from "./atlas-scroll";
 import SceneView from "./atlas-scene";
@@ -28,6 +30,7 @@ export default function AtlasMap(props:Props) {
   const [error,setError]=useState("");
   const [retry,setRetry]=useState(0);
   const [bearing,setBearing]=useState(0);
+  const [buildings,setBuildings]=useState(true);
   const [exaggeration,setExaggeration]=useState(1.5);
   const [terrainState,setTerrainState]=useState("loading");
   const [coordinates,setCoordinates]=useState("31.820° N · 35.367° E");
@@ -102,6 +105,9 @@ export default function AtlasMap(props:Props) {
           map.addLayer({id:"precision-fill",type:"fill",source:"precision",paint:{"fill-color":["case",["get","selected"],"#b97436","#5c8374"],"fill-opacity":["case",["get","selected"],.34,.13]}});
           map.addLayer({id:"precision-halo",type:"line",source:"precision",filter:["==",["get","selected"],true],paint:{"line-color":"#fff0c8","line-width":7,"line-opacity":.8}});
           map.addLayer({id:"precision-line",type:"line",source:"precision",paint:{"line-color":["case",["get","selected"],"#9a4d21","#486b5e"],"line-opacity":.95,"line-width":["case",["get","selected"],2.5,1.5],"line-dasharray":[3,2]}});
+          // OpenFreeMap building footprints provide context; heights are tile estimates.
+          const buildingSource=Object.entries(map.getStyle().sources).find(([,source])=>source.type==="vector")?.[0];
+          if(buildingSource)map.addLayer({id:"site-buildings",type:"fill-extrusion",source:buildingSource,"source-layer":"building",minzoom:14,paint:{"fill-extrusion-color":"#c4b69e","fill-extrusion-height":["coalesce",["get","render_height"],5],"fill-extrusion-base":["coalesce",["get","render_min_height"],0],"fill-extrusion-opacity":.75}},firstSymbol);
           map.on("click","precision-fill",event=>{const id=event.features?.[0]?.properties?.placeId;if(typeof id==="string")latest.current.onPlace(id)});
           map.on("mouseenter","precision-fill",()=>{map.getCanvas().style.cursor="pointer"});
           map.on("mouseleave","precision-fill",()=>{map.getCanvas().style.cursor=""});
@@ -164,6 +170,12 @@ export default function AtlasMap(props:Props) {
   },[focusNonce,ready,mode,offMap,focusId,places]);
   useEffect(()=>{if(mobileView==="map")requestAnimationFrame(()=>mapRef.current?.resize())},[mobileView]);
 
+  useEffect(()=>{const map=mapRef.current;if(ready&&map?.getLayer("site-buildings"))map.setLayoutProperty("site-buildings","visibility",buildings&&mode==="3d"?"visible":"none")},[ready,buildings,mode]);
+  function inspectSite(){
+    const place=places.find(p=>p.id===focusId);
+    if(place?.lat==null||place.lon==null)return;
+    mapRef.current?.flyTo({center:[place.lon,place.lat],zoom:17.5,pitch:mode==="3d"?65:0,duration:reduced.current?0:1000});
+  }
   function overview(){mapRef.current?.flyTo({...INITIAL,pitch:mode==="3d"?55:0,bearing:mode==="3d"?-18:0,duration:reduced.current?0:900})}
   function fitEntry(){
     const bounds=entry.candidates.flatMap(c=>{const p=places.find(p=>p.id===c.placeId);const b=p?candidateBounds(p):null;return b?[b]:[]});
@@ -171,6 +183,7 @@ export default function AtlasMap(props:Props) {
     mapRef.current?.fitBounds([[Math.min(...bounds.map(b=>b[0][0])),Math.min(...bounds.map(b=>b[0][1]))],[Math.max(...bounds.map(b=>b[1][0])),Math.max(...bounds.map(b=>b[1][1]))]],{padding:{top:110,bottom:150,left:50,right:60},maxZoom:16.7,pitch:mode==="3d"?55:0,duration:reduced.current?0:800});
   }
   const selectedPlace=places.find(p=>p.id===focusId)??null;
+  const scene=sceneData.find(s=>s.placeId===selectedPlace?.id);
   return <section className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""} ${immersive?"immersive-mode":""}`} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":"Interactive candidate map"}>
     <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
@@ -180,9 +193,9 @@ export default function AtlasMap(props:Props) {
     </div>}
     <div className="map-caption">The Judean hills & the Jordan valley</div>
     <button className="compass-control" aria-label="Reset map north" onClick={()=>mapRef.current?.easeTo({bearing:0,duration:500})}><span>N</span><Compass strokeWidth={1.1} style={{transform:`rotate(${-bearing}deg)`}}/></button>
-    {mode==="3d"&&<div className="terrain-controls"><label>Terrain relief <span>{exaggeration.toFixed(1)}×</span></label><Slider aria-label="Terrain vertical exaggeration" value={[exaggeration]} min={1} max={3} step={.25} onValueChange={v=>setExaggeration(v[0])}/><span className="terrain-hint">Drag with the right mouse button to orbit. On touch, use two fingers.</span>{terrainState==="unavailable"&&<span className="terrain-hint">Elevation tiles are unavailable. Try 2D or reload.</span>}</div>}
+    {mode==="3d"&&<div className="terrain-controls"><label>Terrain relief <span>{exaggeration.toFixed(1)}×</span></label><Slider aria-label="Terrain vertical exaggeration" value={[exaggeration]} min={1} max={3} step={.25} onValueChange={v=>setExaggeration(v[0])}/><label className="building-toggle"><input type="checkbox" checked={buildings} onChange={event=>setBuildings(event.target.checked)}/> Modern buildings</label><span className="terrain-hint">Drag with the right mouse button to orbit. On touch, use two fingers.</span>{terrainState==="unavailable"&&<span className="terrain-hint">Elevation tiles are unavailable. Try 2D or reload.</span>}</div>}
     <div className="zoom-controls"><button className="tool-button" aria-label="Zoom in" onClick={()=>mapRef.current?.zoomIn()}><Plus size={18}/></button><button className="tool-button" aria-label="Zoom out" onClick={()=>mapRef.current?.zoomOut()}><Minus size={18}/></button><button className="tool-button" aria-label="Regional overview" onClick={overview}><RotateCcw size={15}/></button></div>
-    <div className="map-selection-note" aria-live="polite">{selectedPlace?<><strong>{selectedPlace.shortName}</strong><span>{selectedPlace.lat===null?"No coordinate assigned":`Shaded candidate area · ${selectedPlace.precision}`}</span><small>{selectedPlace.lat===null?"This location remains unplaced.":"Approximate extent, not a surveyed boundary."}</small></>:<span>No mapped candidate for this entry.</span>}</div>
+    <div className="map-selection-note" aria-live="polite">{selectedPlace?<><strong>{selectedPlace.shortName}</strong><span>{selectedPlace.lat===null?"No coordinate assigned":`Shaded candidate area · ${selectedPlace.precision}`}</span><small>{selectedPlace.lat===null?"This location remains unplaced.":"Approximate extent, not a surveyed boundary."}</small><div className="site-inspection-actions"><button type="button" onClick={inspectSite} disabled={selectedPlace.lat==null||selectedPlace.lon==null||!ready}>Look closer</button><button type="button" onClick={()=>onMode("dossier")}>Site evidence</button><button type="button" onClick={()=>onMode("ground")}>{scene?"Inspect photo":"Photo coverage"}</button></div>{scene&&<button type="button" className="site-photo-preview" onClick={()=>onMode("ground")}><img src={scene.src} alt="" loading="lazy" onError={event=>{event.currentTarget.hidden=true}}/><span>{scene.title} · {scene.highlights.length} details</span></button>}</>:<span>No mapped candidate for this entry.</span>}</div>
     <div className="map-legend"><span><i className="legend-area"/>Selected area</span><span><i className="legend-area alternate"/>Other candidates</span></div>
     <div className="map-loaded-note">{coordinates}</div>
     {!offMap&&!ready&&!error&&<div className="map-status" role="status">Unfolding the map…</div>}

@@ -49,6 +49,8 @@ export default function ScrollView({ entry, entries, places, onEntry }: Props) {
   // A column chosen on the strip holds until another entry is selected.
   const [chosen, setChosen] = useState<{ entry: string; col: number } | null>(null);
   const [sel, setSel] = useState<Selection>(null);
+  const [english, setEnglish] = useState(false);
+  const [sources, setSources] = useState(false);
   const body = useRef<HTMLDivElement>(null);
   const fromScroll = useRef(false);
   useEffect(() => {
@@ -126,15 +128,15 @@ export default function ScrollView({ entry, entries, places, onEntry }: Props) {
 
   const lastRow = col > 0 ? columns[col - 1][columns[col - 1].length - 1] : undefined;
   const heads = entryHeads(rows, lastRow ? lastRow.owner[lastRow.owner.length - 1] : undefined);
-  return <div className="scroll-view reading-desk">
+  return <div className={`scroll-view reading-desk copper-reader ${english ? "with-english" : ""} ${sources ? "with-sources" : ""}`}>
     <header className="scroll-heading">
-      <div><span className="small-caps">3Q15 · full text</span>
+      <div><span className="small-caps">3Q15 · edition-based transcription</span>
       <h2>Column {ROMAN[col]}</h2>
       <p>Lines 1–{rows.length} · entries {inColumn[0]}–{inColumn[inColumn.length - 1]}. Select a word or an underlined phrase for the edition apparatus.</p></div>
-      <div className="reader-head-actions"><select className="reader-column-choice" aria-label="Select scroll column" value={col} onChange={event => { setChosen({ entry: entry.id, col: +event.target.value }); setSel(null); resetTextScroll(); }}>{columns.map((_, i) => <option key={i} value={i}>Column {ROMAN[i]}</option>)}</select><button className="reader-text-button" onClick={() => showPhotograph(true)}>{hasPhotograph ? "Read the photograph" : "Photo example · VII"}</button></div>
+      <div className="reader-head-actions"><button type="button" className="reader-text-button" aria-pressed={english} onClick={() => setEnglish(v => !v)}>{english ? "Hide English" : "English translation"}</button><button type="button" className="reader-text-button" aria-expanded={sources} onClick={() => setSources(v => !v)}>Image &amp; sources</button><select className="reader-column-choice" aria-label="Select scroll column" value={col} onChange={event => { setChosen({ entry: entry.id, col: +event.target.value }); setSel(null); resetTextScroll(); }}>{columns.map((_, i) => <option key={i} value={i}>Column {ROMAN[i]}</option>)}</select><button className="reader-text-button" onClick={() => showPhotograph(true)}>{hasPhotograph ? "Read the photograph" : "Photo example · VII"}</button></div>
     </header>
     <div className="reader-desk-body">
-      <aside className="reader-desk-image" aria-label="Original image and coverage">
+      <aside className="reader-desk-image" hidden={!sources} aria-label="Original image and coverage">
         {hasPhotograph ? <>
           <figure><svg viewBox={`0 0 ${photo.width} ${photo.height}`} role="img" aria-label="Original curved copper strip 13 in the Jordan Museum; engraved Hebrew with corrosion and changing surface light."><image href={`${base}${photo.image}`} width={photo.width} height={photo.height}/></svg></figure>
           <div className="reader-desk-image-caption"><span className="small-caps">Original photograph · strip 13</span><p>Column VII · eight mapped words in VII 7–11. Entry {entry.id} has {mapped.length} mapped {mapped.length === 1 ? "word" : "words"}. The remaining surface is unaligned.</p><button type="button" className="reader-text-button" onClick={() => showPhotograph(true)}>Inspect the words · zoom and pan</button><p><a href={photo.source} target="_blank" rel="noreferrer">{photo.author}, 2020</a> · <a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a></p></div>
@@ -142,23 +144,26 @@ export default function ScrollView({ entry, entries, places, onEntry }: Props) {
         <details className="reader-desk-source-types"><summary>Image sources &amp; limits</summary><p><strong>Original</strong> · the surviving metal photographed in the museum. This is the default image.</p><p><strong>Radiograph</strong> · a separately acquired X-ray image, used to inform dashed tracing strokes.</p><p><strong>Facsimile</strong> · a copy of the scroll’s surface. It can clarify shapes but is a different object.</p><p>Puech 2006, vol. II: p. 385, pl. CCCXLVI (radiograph); p. 413, pl. CCCLXXII (facsimile). The copyrighted plates are cited, not displayed.</p></details>
       </aside>
     <div className="scroll-body" ref={body}>
+      <p className="copper-reader-caption">Copper-inspired reading surface · modern Hebrew type, not a manuscript facsimile. Select a word to inspect its reading.</p>
+      <div className="copper-sheet">
       {rows.map(r => {
         const selected = r.owner.includes(entry.id);
         return <Fragment key={r.ref}>
           {heads[r.ref].map(h => <Fragment key={`entry-${h.id}`}>{heading(h.id, h.continued, h.midLine)}{h.id === entry.id && col === entryCol && ["31", "49"].includes(entry.id) && <details className="reader-disclosure"><summary>Compare readings</summary><ReaderBranches key={entry.id} entryId={entry.id}/></details>}</Fragment>)}
           <div className={`scroll-row ${selected ? "in-entry" : ""} ${sel?.line === r.ref ? "active" : ""}`}>
-            <p className="scroll-en">{r.tr.map((s, i) => typeof s === "string" ? <Fragment key={i}>{s}</Fragment> : <button key={i} type="button" className={sel?.note === s[1] ? "st-nt on" : "st-nt"} onClick={() => setSel(sel?.note === s[1] ? null : { line: r.ref, note: s[1] })}>{s[0]}</button>)}</p>
+            <p className="scroll-en" hidden={!english}>{r.tr.map((s, i) => typeof s === "string" ? <Fragment key={i}>{s}</Fragment> : <button key={i} type="button" className={sel?.note === s[1] ? "st-nt on" : "st-nt"} onClick={() => setSel(sel?.note === s[1] ? null : { line: r.ref, note: s[1] })}>{s[0]}</button>)}</p>
             <span className="scroll-no" aria-label={`Line ${r.ref}`}>{r.no}</span>
             <p className="scroll-he" lang="he" dir="rtl">{r.w.map((w, i) => {
               const key = `${r.ref}#${i}`;
               const cls = ["st-w", w.n != null ? "st-num" : "", w.greek ? "st-greek" : "", notesFor(r.ref, i).length ? "has-note" : "", marked.has(key) ? "on" : ""].filter(Boolean).join(" ");
               const mid = i > 0 && r.owner[i] !== r.owner[i - 1];
-              return <Fragment key={i}>{i > 0 && " "}{mid && <span className="scroll-mid" title={`Entry ${r.owner[i]} begins here`}>{r.owner[i]}</span>}<button type="button" className={cls} aria-label={w.n != null ? `numeral ${w.n}` : plain(w)} onClick={() => setSel(sel?.line === r.ref && sel.word === i ? null : { line: r.ref, word: i })}>{w.n != null ? <>{w.n}{w.h.length > 0 && <> <Segments w={w}/></>}</> : <Segments w={w}/>}</button></Fragment>;
+              return <Fragment key={i}>{i > 0 && " "}{mid && <span className="scroll-mid" title={`Entry ${r.owner[i]} begins here`}>{r.owner[i]}</span>}<button type="button" className={cls} aria-label={w.n != null ? `numeral ${w.n}` : plain(w)} onClick={() => { if (r.owner[i] && r.owner[i] !== entry.id) pick(r.owner[i]); setSel(sel?.line === r.ref && sel.word === i ? null : { line: r.ref, word: i }); }}>{w.n != null ? <>{w.n}{w.h.length > 0 && <> <Segments w={w}/></>}</> : <Segments w={w}/>}</button></Fragment>;
             })}</p>
             {sel?.line === r.ref && <ReadingCard data={data} line={r} sel={sel} notesFor={notesFor} lineWords={lineWords} onClose={() => setSel(null)}/>}
           </div>
         </Fragment>;
       })}
+      </div>
     </div>
     </div>
     <footer className="scroll-foot">
