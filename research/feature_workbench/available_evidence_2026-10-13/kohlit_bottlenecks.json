@@ -1,0 +1,643 @@
+{
+  "claim": "Existing exposed observations distinguish retained entry-11/60 assignments",
+  "result": "not identifiable from available evidence",
+  "scope": "Selected exploratory roster",
+  "historical_branch_outcomes_reproduced": {
+    "unknown": 28,
+    "contradicted": 12
+  },
+  "common_missing_predicates": [
+    "pit-period",
+    "pool-north-corner",
+    "pool-period"
+  ],
+  "date_window_pairs": [
+    {
+      "assignment": "jericho-historical-ns1",
+      "reading": "RB-M",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-historical-ns1",
+      "reading": "RB-P",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-historical-ns1",
+      "reading": "RB-B",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-modern-ns1",
+      "reading": "RB-M",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-modern-ns1",
+      "reading": "RB-P",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-modern-ns1",
+      "reading": "RB-B",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-d9",
+      "reading": "RB-M",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-d9",
+      "reading": "RB-P",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-d9",
+      "reading": "RB-B",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-quarry",
+      "reading": "RB-M",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-quarry",
+      "reading": "RB-P",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "jericho-quarry",
+      "reading": "RB-B",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "samiya-kallai",
+      "reading": "RB-M",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "samiya-kallai",
+      "reading": "RB-P",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "samiya-kallai",
+      "reading": "RB-B",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "samiya-crypt",
+      "reading": "RB-M",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "samiya-crypt",
+      "reading": "RB-P",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "samiya-crypt",
+      "reading": "RB-B",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "yanun-jericho-anchor",
+      "reading": "RB-L",
+      "identical_predicate_states": true
+    },
+    {
+      "assignment": "yanun-marjama-anchor",
+      "reading": "RB-L",
+      "identical_predicate_states": true
+    }
+  ],
+  "branches": [
+    {
+      "id": "relationships-jericho-historical-ns1-RB-M-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-historical-ns1-RB-M-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-historical-ns1-RB-P-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-historical-ns1-RB-P-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-historical-ns1-RB-B-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-historical-ns1-RB-B-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-modern-ns1-RB-M-early",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "contradicted",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-modern-ns1-RB-M-extended",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "contradicted",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-modern-ns1-RB-P-early",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "contradicted",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-modern-ns1-RB-P-extended",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "contradicted",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-modern-ns1-RB-B-early",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "contradicted",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-modern-ns1-RB-B-extended",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "contradicted",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-d9-RB-M-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-d9-RB-M-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-d9-RB-P-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-d9-RB-P-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-d9-RB-B-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-d9-RB-B-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-quarry-RB-M-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-quarry-RB-M-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-quarry-RB-P-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-quarry-RB-P-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-quarry-RB-B-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-jericho-quarry-RB-B-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "compatible",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-kallai-RB-M-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "unknown",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-kallai-RB-M-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "unknown",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-kallai-RB-P-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "unknown",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-kallai-RB-P-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "unknown",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-kallai-RB-B-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "unknown",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-kallai-RB-B-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "unknown",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-crypt-RB-M-early",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "contradicted",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-crypt-RB-M-extended",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "contradicted",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "opening-north": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-crypt-RB-P-early",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "contradicted",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-crypt-RB-P-extended",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "contradicted",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "opening-concealed": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-crypt-RB-B-early",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "contradicted",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-samiya-crypt-RB-B-extended",
+      "status": "contradicted",
+      "checks": {
+        "pool-east": "contradicted",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown"
+      }
+    },
+    {
+      "id": "relationships-yanun-jericho-anchor-RB-L-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "pit-at-yanun": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-yanun-jericho-anchor-RB-L-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "compatible",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "pit-at-yanun": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-yanun-marjama-anchor-RB-L-early",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "unknown",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "pit-at-yanun": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    },
+    {
+      "id": "relationships-yanun-marjama-anchor-RB-L-extended",
+      "status": "unknown",
+      "checks": {
+        "pool-east": "unknown",
+        "pool-period": "unknown",
+        "pool-north-corner": "unknown",
+        "pit-north": "unknown",
+        "pit-period": "unknown",
+        "pit-at-yanun": "unknown",
+        "graves-at-mouth": "unknown",
+        "joint-accessibility": "unknown"
+      }
+    }
+  ],
+  "interpretation": "Date-window variation supplies no discrimination for these exposed assignments"
+}

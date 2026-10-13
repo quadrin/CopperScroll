@@ -48,3 +48,11 @@ python3 -I -B research/feature_workbench/book_application_2026-10-12/test_applic
 [input_manifest.json](input_manifest.json) pins the inspected source/inventory/score bytes and authored evaluator. Eight regression checks cover sibling isolation, access-phase alternatives, occupation-to-configuration transfer, unchanged historical inputs, exact source/parent identity, previous water corrections, all bath alternatives and byte-for-byte reproducibility. Passing checks establish provenance and evaluation discipline; they do not independently verify the original archaeology.
 
 **Obtained** — an applied physical-witness comparison with explicit phase/access branches and source-to-score identities; exact-feature records and dated contacts remain the next dependencies.
+
+
+
+## Native source-association supplement — 13 October 2026 UTC
+
+12 October Los Angeles. Benjamin1993 printed162/PDF184 was checked in the held original. Its bottom corridor/water-channel description belongs to the western pool, while the channel is described as leading to the pools, plural. Preserve that published pair-level association separately from the western observed-description contact; it supplies no located eastern inlet, hydraulic gradient or shared operation date. Native McCown1947 printed54–55/PDF78–79 transmits SWP's pointed-arch outlet at one unidentified reservoir. No inspected source proves that this is the same western channel or dates the western pool as medieval.
+
+The supply-specific interpretation requires justified feed direction. The broader entry29 noun-association branch already permits inlet or outlet in the existing wording audit, so flow direction is not a universal prerequisite. [Native-source audit, exact pages and source ancestry](../available_evidence_2026-10-13/hydraulic_review.md). This source qualification does not transfer the conduit/contact into an observed eastern inlet or relax the ancient configuration requirements.
