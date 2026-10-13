@@ -2,7 +2,7 @@
 
 Updated 12 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **partly** — obtained [desktop/mobile atlas interaction checks](../atlas/INTERACTION_VALIDATION.md) for the copper reader and site exploration controls, and [a photo integration proposal](../atlas/PHOTO_INTEGRATION.md). External map, terrain, photograph and JerusalemMap CDN loading remain blocked by the cloud proxy; network additions and reusable setup instructions were saved for review. The preceding session record is preserved in [history](logs/active_test_history_2026-10-07.md#session-record-preserved-during-atlas-ui-work).
+Last session (12 October): **obtained** — [source-plan exploration and restorable Back navigation](../atlas/PHOTO_INTEGRATION.md), with [desktop/mobile browser validation](../atlas/INTERACTION_VALIDATION.md) and [source/geometry provenance](assets/plans/atlas-explorer/manifest.json). Public map/photograph loading now works through the cloud proxy. The supplied Drive folder redirects to sign-in and exposes no callable connector here, so additional library documents were not inspected. The preceding UI session record is preserved in [history](logs/active_test_history_2026-10-07.md#atlas-source-plan-and-navigation-session).
 
 ## Active questions and the observation that decides each
 

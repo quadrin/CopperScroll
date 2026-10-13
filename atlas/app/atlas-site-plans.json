@@ -1,0 +1,504 @@
+[
+  {
+    "id": "qumran-ilan",
+    "placeIds": [
+      "kh_qumran",
+      "wadi_qumran"
+    ],
+    "label": "Aqueduct · Ilan–Amit 1989",
+    "width": 650,
+    "height": 300,
+    "transform": "translate(-120 -1080)",
+    "shapes": [
+      {
+        "d": "M160 1220 Q140 1245 169 1280 L215 1285 241 1258 234 1214Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M234 1214 L250 1268",
+        "kind": "reconstruction"
+      },
+      {
+        "d": "M253 1200 L272 1209 295 1212 305 1220 343 1230 355 1238 361 1245 383 1271 401 1268 410 1263 433 1263 450 1255 472 1271 498 1252 552 1215 574 1172 605 1147",
+        "kind": "channel"
+      },
+      {
+        "d": "M305 1220 L318 1247 335 1262 350 1256 361 1245",
+        "kind": "channel"
+      },
+      {
+        "d": "M348 1232 L361 1245 M401 1268 L433 1263",
+        "kind": "tunnel"
+      }
+    ],
+    "features": [
+      {
+        "id": "A",
+        "label": "Visible channel start · Ilan point 3",
+        "x": 133,
+        "y": 120,
+        "kind": "Proposed scroll association",
+        "entryIds": [
+          "21"
+        ],
+        "description": "Best functional match for the head of the whole aqueduct. Located at a small ravine on the northern bank.",
+        "limit": "No particular great stone identified. A northern bank does not resolve the wording’s grammatical ambiguity.",
+        "sources": [
+          "Ilan–Amit 1989, pp. 283–284, Fig. 1 point 3"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry21_feature_comparison.md"
+      },
+      {
+        "id": "C",
+        "label": "Branch junction and short western tunnel",
+        "x": 185,
+        "y": 140,
+        "kind": "Proposed scroll association",
+        "entryIds": [
+          "21"
+        ],
+        "description": "Possible beginning of a collecting branch or subsection. Short tunnel probably corresponds to Reeder Tunnel 2.",
+        "limit": "Needs a subsection-head reading. Branch function and flow direction differ among published interpretations.",
+        "sources": [
+          "Ilan–Amit 1989, p. 284, points 7–10",
+          "Reeder–Jol 2006, Fig. 4",
+          "Magen–Peleg 2018, p. 78"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry21_feature_comparison.md",
+        "path": "M185 140 L198 167 215 182 230 176 241 165 M228 152 L241 165"
+      },
+      {
+        "id": "D",
+        "label": "Long eastern tunnel · western mouth",
+        "x": 281,
+        "y": 188,
+        "kind": "Proposed scroll association",
+        "entryIds": [
+          "21"
+        ],
+        "description": "Reeder Fig. 2 and Magen Fig. 87 visually match the same long-tunnel mouth. Magen’s text supports its western/upstream attribution; Ilan point 11 and Reeder Tunnel 1 remain probable plan correspondences. Davey CJD979 supplies a matching 1974 view of this mouth.",
+        "limit": "Downstream of the intake. Reeder calls the photo an exit and Magen an entrance; the visual match itself establishes neither hydraulic direction nor a scroll identity.",
+        "sources": [
+          "Ilan–Amit 1989, p. 285, point 11",
+          "Reeder–Jol 2006, Fig. 4",
+          "Magen–Peleg 2018, p. 79",
+          "Masterman 1903, p. 267",
+          "Christopher Davey 1974, CJD979, DQCAAS photographic archive"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry21_feature_comparison.md",
+        "path": "M281 188 L313 183"
+      },
+      {
+        "id": "basin2",
+        "label": "Basin 2",
+        "x": 78,
+        "y": 168,
+        "path": "M40 140 Q20 165 49 200 L95 205 121 178 114 134Z",
+        "kind": "Reported remains",
+        "entryIds": [
+          "22"
+        ],
+        "description": "The upstream basin in Ilan–Amit’s numbered aqueduct plan. It is distinct from the settlement pools.",
+        "limit": "Its association with the named reservoir in entry 22 is conditional. No mapped fissure or geographic registration is established.",
+        "sources": [
+          "Ilan–Amit 1989 Fig. 1, p. 283; pp. 283–284"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/ilan_amit_1989_plan_review.md"
+      },
+      {
+        "id": "dam4",
+        "label": "Proposed dam · point 4",
+        "x": 123,
+        "y": 161,
+        "path": "M114 134 L130 188",
+        "kind": "Published reconstruction",
+        "entryIds": [
+          "20"
+        ],
+        "description": "A proposed lost dam alongside basin 2 in the source plan.",
+        "limit": "Its existence and ancient phase are unresolved. The dam/cairn reading remains disputed.",
+        "sources": [
+          "Ilan–Amit 1989 Fig. 1, p. 283; pp. 283–284"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/ilan_amit_1989_plan_review.md"
+      }
+    ],
+    "source": "Ilan–Amit 1989 p. 283 Fig. 1",
+    "credit": "Project redrawing from the existing entry 21 comparison; manually sampled source-plan pixels.",
+    "limit": "Source-relative geometry. Geographic registration is pending; highlight sizes do not represent positional accuracy."
+  },
+  {
+    "id": "qumran-reeder",
+    "placeIds": [
+      "kh_qumran",
+      "wadi_qumran"
+    ],
+    "label": "Aqueduct · Reeder–Jol 2006",
+    "width": 650,
+    "height": 330,
+    "transform": "translate(-40 -800) scale(1.45)",
+    "shapes": [
+      {
+        "d": "M68 570 Q95 564 124 580 L100 602 Q69 608 63 593Z M68 608 Q53 633 64 650 L80 659 91 646 85 628 98 607Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M94 585 L90 615 70 627 70 648 92 653 130 661 151 665 176 668 187 677 206 689 217 701 233 694 254 701 268 700 302 713 325 694 347 677 384 665 390 641 400 600",
+        "kind": "channel"
+      },
+      {
+        "d": "M151 665 L155 684 171 706 204 719 244 723 262 714 268 700",
+        "kind": "reconstruction"
+      },
+      {
+        "d": "M179 668 L194 685 M218 701 L234 695 256 702",
+        "kind": "tunnel"
+      },
+      {
+        "d": "M79 601 L102 604",
+        "kind": "wall"
+      },
+      {
+        "d": "M74 650 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0",
+        "kind": "rock"
+      },
+      {
+        "d": "M94 638 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0",
+        "kind": "rock"
+      }
+    ],
+    "features": [
+      {
+        "id": "B",
+        "label": "Large rock beside upstream collection works",
+        "x": 67.3,
+        "y": 142.5,
+        "kind": "Proposed scroll association",
+        "entryIds": [
+          "21"
+        ],
+        "description": "Reeder describes an approximately 3 m-high boulder incorporated into the works beside the upstream channel.",
+        "limit": "The landmark noun is restored. Its required northern relationship, ancient phase and correspondence with point 3 remain unproved.",
+        "sources": [
+          "Reeder–Jol 2006, p. 231 and Fig. 4 p. 229"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry21_feature_comparison.md"
+      },
+      {
+        "id": "C",
+        "label": "Branch junction and short western tunnel",
+        "x": 229.7,
+        "y": 178.75,
+        "kind": "Proposed scroll association",
+        "entryIds": [
+          "21"
+        ],
+        "description": "Possible beginning of a collecting branch or subsection. Short tunnel probably corresponds to Reeder Tunnel 2.",
+        "limit": "Needs a subsection-head reading. Branch function and flow direction differ among published interpretations.",
+        "sources": [
+          "Ilan–Amit 1989, p. 284, points 7–10",
+          "Reeder–Jol 2006, Fig. 4",
+          "Magen–Peleg 2018, p. 78"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry21_feature_comparison.md",
+        "path": "M219.55 168.6 L241.3 193.25"
+      },
+      {
+        "id": "D",
+        "label": "Long eastern tunnel · western mouth",
+        "x": 276.1,
+        "y": 215.0,
+        "kind": "Proposed scroll association",
+        "entryIds": [
+          "21"
+        ],
+        "description": "Reeder Fig. 2 and Magen Fig. 87 visually match the same long-tunnel mouth. Magen’s text supports its western/upstream attribution; Ilan point 11 and Reeder Tunnel 1 remain probable plan correspondences. Davey CJD979 supplies a matching 1974 view of this mouth.",
+        "limit": "Downstream of the intake. Reeder calls the photo an exit and Magen an entrance; the visual match itself establishes neither hydraulic direction nor a scroll identity.",
+        "sources": [
+          "Ilan–Amit 1989, p. 285, point 11",
+          "Reeder–Jol 2006, Fig. 4",
+          "Magen–Peleg 2018, p. 79",
+          "Masterman 1903, p. 267",
+          "Christopher Davey 1974, CJD979, DQCAAS photographic archive"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry21_feature_comparison.md",
+        "path": "M276.1 216.45 L299.3 207.75 331.2 217.9"
+      }
+    ],
+    "source": "Reeder–Jol 2006 p. 229 Fig. 4",
+    "credit": "Project redrawing from the existing entry 21 comparison; manually sampled source-plan pixels.",
+    "limit": "Source-relative geometry. Geographic registration is pending; highlight sizes do not represent positional accuracy."
+  },
+  {
+    "id": "jericho-ac",
+    "placeIds": [
+      "jericho_palaces"
+    ],
+    "label": "Area AC · pools & aqueducts",
+    "width": 1039,
+    "height": 1467,
+    "image": "dossiers/trumper2018-fig19-p282.jpg",
+    "source": "Trümper 2018 Fig. 19, p. 282, after Netzer 2001a plan 13",
+    "credit": "M. Trümper after Netzer 2001a · CC BY-NC 3.0 · complete archived figure and caption.",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "limit": "Selection polygons are approximate image-coordinate regions, not surveyed outlines. Area AC is separate from the northern Pools Complex.",
+    "features": [
+      {
+        "id": "AC90",
+        "label": "Pool A(C)90",
+        "x": 590,
+        "y": 184,
+        "path": "M464 88 L690 63 727 280 479 300Z",
+        "kind": "Reported remains",
+        "entryIds": [
+          "29"
+        ],
+        "description": "A(C)90 is the northern labelled basin in this Area AC plan.",
+        "limit": "The plan alone does not establish the scroll’s required wall-face, floor datum or water aperture.",
+        "sources": [
+          "Trümper 2018 Fig. 19, p. 282, after Netzer 2001a plan 13"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      },
+      {
+        "id": "AC94",
+        "label": "Pool A(C)94",
+        "x": 532,
+        "y": 1000,
+        "path": "M435 878 L650 930 614 1150 393 1126Z",
+        "kind": "Reported remains",
+        "entryIds": [
+          "29"
+        ],
+        "description": "A(C)94 and its adjacent supply/drain lines are explicitly labelled in Area AC.",
+        "limit": "The current feature test is not identifiable; a phase-controlled aperture-to-wall and floor section remains missing.",
+        "sources": [
+          "Trümper 2018 Fig. 19, p. 282, after Netzer 2001a plan 13"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      },
+      {
+        "id": "AC44",
+        "label": "Pool AC44",
+        "x": 850,
+        "y": 1100,
+        "path": "M797 1011 L953 1050 910 1208 762 1174Z",
+        "kind": "Reported remains",
+        "entryIds": [
+          "29"
+        ],
+        "description": "AC44 is a separate pool on the eastern side of the published Area AC plan.",
+        "limit": "Its dimensions or junctions cannot be substituted for another basin.",
+        "sources": [
+          "Trümper 2018 Fig. 19, p. 282, after Netzer 2001a plan 13"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      },
+      {
+        "id": "distribution",
+        "label": "Distribution basin",
+        "x": 794,
+        "y": 534,
+        "path": "M776 511 L826 515 831 557 778 566Z",
+        "kind": "Reported remains",
+        "entryIds": [
+          "29"
+        ],
+        "description": "The source labels this installation as a distribution basin near the aqueduct lines.",
+        "limit": "Hydraulic function labels do not identify a Copper Scroll hiding place.",
+        "sources": [
+          "Trümper 2018 Fig. 19, p. 282, after Netzer 2001a plan 13"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      },
+      {
+        "id": "aqueducts",
+        "label": "Na’aran & Wadi Qelt supplies",
+        "x": 340,
+        "y": 425,
+        "path": "M107 341 L925 391 M162 458 L757 501",
+        "kind": "Reported remains",
+        "entryIds": [
+          "29"
+        ],
+        "description": "The two labelled aqueduct approaches and coloured supply/drain lines can be examined together.",
+        "limit": "Relationships must retain each installation’s phase and datum.",
+        "sources": [
+          "Trümper 2018 Fig. 19, p. 282, after Netzer 2001a plan 13"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      }
+    ]
+  },
+  {
+    "id": "jericho-early",
+    "placeIds": [
+      "jericho_palaces"
+    ],
+    "label": "Pools Complex · early phase",
+    "width": 1039,
+    "height": 899,
+    "image": "dossiers/trumper2018-fig20-p284.jpg",
+    "source": "Trümper 2018 Fig. 20, p. 284",
+    "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "limit": "Published reconstruction; source-image frame, unregistered to the terrain.",
+    "features": [
+      {
+        "id": "complex",
+        "label": "Northern Pools Complex",
+        "x": 623.4,
+        "y": 485.46000000000004,
+        "path": "",
+        "kind": "Published reconstruction",
+        "entryIds": [
+          "29"
+        ],
+        "description": "The published reconstructed complex can be compared across early and later phases.",
+        "limit": "A reconstruction does not supply the missing ancient conduit junction or floor datum.",
+        "sources": [
+          "Trümper 2018 Fig. 20, p. 284"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      }
+    ]
+  },
+  {
+    "id": "jericho-late",
+    "placeIds": [
+      "jericho_palaces"
+    ],
+    "label": "Pools Complex · later phase",
+    "width": 1039,
+    "height": 896,
+    "image": "dossiers/trumper2018-fig22-p286.jpg",
+    "source": "Trümper 2018 Fig. 22, p. 286",
+    "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "limit": "Published reconstruction; source-image frame, unregistered to the terrain.",
+    "features": [
+      {
+        "id": "complex",
+        "label": "Northern Pools Complex",
+        "x": 623.4,
+        "y": 483.84000000000003,
+        "path": "",
+        "kind": "Published reconstruction",
+        "entryIds": [
+          "29"
+        ],
+        "description": "The published reconstructed complex can be compared across early and later phases.",
+        "limit": "A reconstruction does not supply the missing ancient conduit junction or floor datum.",
+        "sources": [
+          "Trümper 2018 Fig. 22, p. 286"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      }
+    ]
+  },
+  {
+    "id": "siloam-receiver",
+    "placeIds": [
+      "jer_siloam"
+    ],
+    "label": "Siloam · receiving basin",
+    "width": 787,
+    "height": 410,
+    "transform": "",
+    "source": "Greenhut & Mazor 2020 Plan 1, p. 74*",
+    "credit": "Project tracing of selected structural relations from Plan 1. Simplified, source-relative; not a complete excavation plan.",
+    "limit": "No geographic registration. L103’s height datum refers to the small receiving basin. The larger southern pool is a different installation.",
+    "shapes": [
+      {
+        "d": "M168 201 L690 191 651 160 330 124 211 126Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M168 201 L125 221 147 374 328 330 323 201Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M323 201 L328 330 693 239 691 191Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M224 115 L212 202 247 201 263 118Z",
+        "kind": "channel"
+      },
+      {
+        "d": "M490 194 L492 245",
+        "kind": "wall"
+      }
+    ],
+    "features": [
+      {
+        "id": "W1",
+        "label": "Wall / dam W1",
+        "x": 421,
+        "y": 166,
+        "path": "M168 201 L690 191 651 160 330 124 211 126Z",
+        "kind": "Reported remains",
+        "entryIds": [
+          "49"
+        ],
+        "description": "W1 forms the wall/dam in the published receiving-basin plan.",
+        "limit": "Its connection to the larger basin and the relevant construction phase remain unresolved.",
+        "sources": [
+          "Greenhut & Mazor 2020 Plan 1, p. 74*"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/siloam_bathing.md"
+      },
+      {
+        "id": "L103",
+        "label": "Conduit L103",
+        "x": 236,
+        "y": 161,
+        "path": "M224 115 L212 202 247 201 263 118Z",
+        "kind": "Reported remains",
+        "entryIds": [
+          "49"
+        ],
+        "description": "L103 crosses W1 into the receiving installation.",
+        "limit": "The reported height above this basin’s floor cannot be transferred to the larger pool.",
+        "sources": [
+          "Greenhut & Mazor 2020 Plan 1, p. 74*"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/siloam_bathing.md"
+      },
+      {
+        "id": "L102",
+        "label": "Receiving basin L102/L104",
+        "x": 205,
+        "y": 285,
+        "path": "M168 201 L125 221 147 374 328 330 323 201Z",
+        "kind": "Reported remains",
+        "entryIds": [
+          "49"
+        ],
+        "description": "The small receiving-basin side of the published plan and section.",
+        "limit": "A reservoir/bath function and the scroll’s under-pipe relation require separate evidence.",
+        "sources": [
+          "Greenhut & Mazor 2020 Plan 1, p. 74*"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/siloam_bathing.md"
+      },
+      {
+        "id": "W3",
+        "label": "Wall W3",
+        "x": 492,
+        "y": 220,
+        "path": "M490 194 L492 245",
+        "kind": "Reported remains",
+        "entryIds": [
+          "49"
+        ],
+        "description": "W3 is separately labelled on the plan.",
+        "limit": "The selected line is a simplified tracing; its geometry is not registered to terrain.",
+        "sources": [
+          "Greenhut & Mazor 2020 Plan 1, p. 74*"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/siloam_bathing.md"
+      }
+    ]
+  }
+]

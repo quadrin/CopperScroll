@@ -15,7 +15,7 @@ import { plain, ReadingCard, Segments, useScrollText, type Selection, type TrSeg
 
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
 type Row = { ref: string; no: number; w: Word[]; tr: TrSeg[]; owner: string[] };
-type Props = { entry: Entry; entries: Entry[]; places: Record<string, Place>; onEntry: (id: string) => void };
+type Props = { entry: Entry; entries: Entry[]; places: Record<string, Place>; onEntry: (id: string) => void; photograph?: boolean; column?: number; onColumn?: (column: number) => void; onPhotograph?: (show: boolean, id?: string) => void };
 type Head = { id: string; continued: boolean; midLine: boolean };
 
 // Where each entry begins in a column: at a line start, in mid-line, or carried
@@ -35,16 +35,18 @@ function entryHeads(rows: Row[], carried: string | undefined) {
   return heads;
 }
 
-export default function ScrollView({ entry, entries, places, onEntry }: Props) {
+export default function ScrollView({ entry, entries, places, onEntry, photograph: photoOpen, onPhotograph, column: externalColumn, onColumn }: Props) {
   const { data, failed, lineWords, notesFor } = useScrollText();
   const [photograph, setPhotograph] = useState(() => typeof window !== "undefined" && isPhotographHash(window.location.hash));
+  useEffect(()=>{if(photoOpen!==undefined)setPhotograph(photoOpen)},[photoOpen]);
   function showPhotograph(show: boolean) {
     const target = show && data ? photoTarget(data, entry.id) : null;
     if (target && target.entryId !== entry.id) onEntry(target.entryId);
     setPhotograph(show);
     setSel(null);
     if (target) setChosen({ entry: target.entryId, col: PHOTO_COLUMN });
-    history.replaceState(null, "", `#entry-${target?.entryId ?? entry.id}/scroll${show ? "/photo" : ""}`);
+    if(onPhotograph)onPhotograph(show,target?.entryId ?? entry.id);
+    else history.pushState(null, "", `#entry-${target?.entryId ?? entry.id}/scroll${show ? "/photo" : ""}`);
   }
   // A column chosen on the strip holds until another entry is selected.
   const [chosen, setChosen] = useState<{ entry: string; col: number } | null>(null);
@@ -85,7 +87,8 @@ export default function ScrollView({ entry, entries, places, onEntry }: Props) {
   }, [data]);
 
   const entryCol = data?.entries[entry.id]?.[0] ? ROMAN.indexOf(data.entries[entry.id][0].ref.split(" ")[0]) : 0;
-  const col = chosen && chosen.entry === entry.id ? chosen.col : entryCol;
+  const col = externalColumn ?? (chosen && chosen.entry === entry.id ? chosen.col : entryCol);
+  function chooseColumn(next:number){setChosen({entry:entry.id,col:next});setSel(null);resetTextScroll();onColumn?.(next)}
 
   // Bring the selected entry into view when it changes, here or in the register.
   // Only the text pane scrolls; the atlas frame around it stays put.
@@ -103,7 +106,7 @@ export default function ScrollView({ entry, entries, places, onEntry }: Props) {
 
   if (failed) return <div className="scroll-view"><p className="scroll-status">The text of the scroll could not load. Reload the page to try again.</p></div>;
   if (!data || !columns) return <div className="scroll-view"><p className="scroll-status" role="status">Unrolling the scroll…</p></div>;
-  if (photograph) return <PhotoReader entryId={entry.id} onEntry={id => { onEntry(id); history.replaceState(null, "", `#entry-${id}/scroll/photo`); }} onText={() => { setChosen({ entry: entry.id, col: PHOTO_COLUMN }); showPhotograph(false); }} onUnavailable={() => showPhotograph(false)}/>;
+  if (photograph) return <PhotoReader entryId={entry.id} onEntry={id => { onEntry(id); if(onPhotograph)onPhotograph(true,id);else history.pushState(null, "", `#entry-${id}/scroll/photo`); }} onText={() => { setChosen({ entry: entry.id, col: PHOTO_COLUMN }); showPhotograph(false); }} onUnavailable={() => showPhotograph(false)}/>;
 
   const rows = columns[col];
   const mapped = mappedWordsForEntry(data, entry.id);
@@ -133,7 +136,7 @@ export default function ScrollView({ entry, entries, places, onEntry }: Props) {
       <div><span className="small-caps">3Q15 · edition-based transcription</span>
       <h2>Column {ROMAN[col]}</h2>
       <p>Lines 1–{rows.length} · entries {inColumn[0]}–{inColumn[inColumn.length - 1]}. Select a word or an underlined phrase for the edition apparatus.</p></div>
-      <div className="reader-head-actions"><button type="button" className="reader-text-button" aria-pressed={english} onClick={() => setEnglish(v => !v)}>{english ? "Hide English" : "English translation"}</button><button type="button" className="reader-text-button" aria-expanded={sources} onClick={() => setSources(v => !v)}>Image &amp; sources</button><select className="reader-column-choice" aria-label="Select scroll column" value={col} onChange={event => { setChosen({ entry: entry.id, col: +event.target.value }); setSel(null); resetTextScroll(); }}>{columns.map((_, i) => <option key={i} value={i}>Column {ROMAN[i]}</option>)}</select><button className="reader-text-button" onClick={() => showPhotograph(true)}>{hasPhotograph ? "Read the photograph" : "Photo example · VII"}</button></div>
+      <div className="reader-head-actions"><button type="button" className="reader-text-button" aria-pressed={english} onClick={() => setEnglish(v => !v)}>{english ? "Hide English" : "English translation"}</button><button type="button" className="reader-text-button" aria-expanded={sources} onClick={() => setSources(v => !v)}>Image &amp; sources</button><select className="reader-column-choice" aria-label="Select scroll column" value={col} onChange={event => { chooseColumn(+event.target.value); }}>{columns.map((_, i) => <option key={i} value={i}>Column {ROMAN[i]}</option>)}</select><button className="reader-text-button" onClick={() => showPhotograph(true)}>{hasPhotograph ? "Read the photograph" : "Photo example · VII"}</button></div>
     </header>
     <div className="reader-desk-body">
       <aside className="reader-desk-image" hidden={!sources} aria-label="Original image and coverage">
@@ -167,9 +170,9 @@ export default function ScrollView({ entry, entries, places, onEntry }: Props) {
     </div>
     </div>
     <footer className="scroll-foot">
-      <button type="button" disabled={col === 0} onClick={() => { setChosen({ entry: entry.id, col: col - 1 }); setSel(null); resetTextScroll(); }}><ChevronLeft size={14}/>{col > 0 ? `Column ${ROMAN[col - 1]}` : "Column I"}</button>
+      <button type="button" disabled={col === 0} onClick={() => { chooseColumn(col-1); }}><ChevronLeft size={14}/>{col > 0 ? `Column ${ROMAN[col - 1]}` : "Column I"}</button>
       <span>Hebrew: M. G. Abegg Jr.’s transcription (ETCBC, <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noreferrer">CC BY-NC 4.0</a>). Translation and notes: this project.</span>
-      <button type="button" disabled={col === ROMAN.length - 1} onClick={() => { setChosen({ entry: entry.id, col: col + 1 }); setSel(null); resetTextScroll(); }}>{col < ROMAN.length - 1 ? `Column ${ROMAN[col + 1]}` : "Column XII"}<ChevronRight size={14}/></button>
+      <button type="button" disabled={col === ROMAN.length - 1} onClick={() => { chooseColumn(col+1); }}>{col < ROMAN.length - 1 ? `Column ${ROMAN[col + 1]}` : "Column XII"}<ChevronRight size={14}/></button>
     </footer>
   </div>;
 }

@@ -225,3 +225,8 @@ Last session (8 October UTC): **obtained**: Puech 2015 pages for every atlas tit
 ## Session record preserved during atlas UI work
 
 Last session (12 October): **partly** — obtained [applied feature/phase comparisons](feature_workbench/book_application_2026-10-12/README.md), [pit/pool/numerical alternatives and native report audit](text/entry46_alternatives_2026-10-12/README.md), [measurement resolution and corrected pair uncertainty](feature_workbench/measurement_resolution_2026-10-12/README.md), and [inventory-role predictions](comparanda/inventory_forms_2026-10-12/README.md). Atara’s western conduit and Absalom’s separate entrance phases change conditional clauses; missing dates/datums prevent identification. [Archive replies](agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026) narrow Manchester/CBRL routes; [Rachel Bar-Nathan reports holding Jericho field notes and requests an owner call](assessments/entry29_jericho_pools/netzer2001-first-pass.md#field-notes-holder-response--12-october-2026), without supplying the junction/level records.
+
+
+## Atlas source-plan and navigation session
+
+Last session (12 October): **partly** — obtained [desktop/mobile atlas interaction checks](../atlas/INTERACTION_VALIDATION.md) for the copper reader and site exploration controls, and [a photo integration proposal](../atlas/PHOTO_INTEGRATION.md). External map, terrain, photograph and JerusalemMap CDN loading remain blocked by the cloud proxy; network additions and reusable setup instructions were saved for review. The preceding session record is preserved in [history](logs/active_test_history_2026-10-07.md#session-record-preserved-during-atlas-ui-work).
