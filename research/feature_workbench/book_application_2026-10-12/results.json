@@ -269,7 +269,7 @@
       "datum": "UNKNOWN",
       "phase": "Western24x11.5m pool with bottom vaulted corridor/channel; operation and contacts undated.",
       "reason": "The individual western feature supports reported conduit supply. The two-pool aggregate previously has feed=unknown. Dimensions alone do not supply the four-sides code, great/northern relation or same-phase aperture.",
-      "next_source": "McCown1947pp54–55 and original section tying western conduit, named pool wall and contemporaneous floor.",
+      "next_source": "McCown1947pp54–55 now read; it transmits SWP/Guérin/Dalman accounts without the exact western join. Obtain original SWP MemoirsIIIpp82–83 or a later feature-specific conduit, wall and contemporaneous floor section with dated context.",
       "parent_record": {
         "id": "ASI-83/2/34-reservoir_pool",
         "lineage": "ASI",
@@ -1120,7 +1120,9 @@
       "audit_ids": [
         "FP19"
       ],
-      "context_refs": [],
+      "context_refs": [
+        "research/sources/full_reads_2026-10-12/five_remaining_2026-10-13/README.md"
+      ],
       "entries": [
         14,
         56
@@ -1128,9 +1130,9 @@
       "overrides": {},
       "configuration_in_window": "UNKNOWN",
       "datum": "UNKNOWN",
-      "phase": "Eight loculi and lower collecting features; rock, later walls and stratified courtyard fill separated.",
+      "phase": "Rahmani records ten kokhim in Chamber A, including partly built kokhim9/10, plus separate Chamber B, porch and courts; cutting, secondary burial, fill and blocking remain separate. The earlier eight-loculi description cannot supply a total chamber count.",
       "reason": "F11/F13 already supported. Coins/fill and earthquake/looting hypotheses cannot date every cutting or supply original entrance bearing or cistern.",
-      "next_source": "Rahmani's1956 rescue-excavation publication: contexts behind fill chronology, original entrance and collecting-feature sequence.",
+      "next_source": "Rahmani1967 original rescue report now read (pp61–68,92–100; Fig3); selected entrance bearing, exact threshold/column/cistern contact and use phase remain the dependencies.",
       "parent_record": {
         "unit_id": "T0226",
         "source": "ASI",
@@ -7464,5 +7466,3621 @@
       "closed_assessment_reopened": false
     }
   ],
-  "limitation": "Selected source/physical-witness applications; no regional count, rank, rarity or confirmatory identification. Historical lane outputs untouched."
+  "limitation": "Selected source/physical-witness applications; no regional count, rank, rarity or confirmatory identification. Historical lane outputs untouched.",
+  "native_application": {
+    "schema_version": 1,
+    "analysis_kind": "exploratory_native_report_to_witness_application",
+    "baseline_commit": "a29271112bcd4c84ae207d6f81e15976659932d9",
+    "rules": {
+      "exposure": "All five reports were selected or exposed before this application. No independent holdout.",
+      "identity": "Exact T0226 and phase-3 origin-row joins; source-defined Gibeon and Nasbeh comparanda remain outside the scored regional roster.",
+      "phase": "Cutting, use, fill, repair, blocking and excavation reach remain distinct. An undated usable configuration stays UNKNOWN.",
+      "direction": "The reported-side-as-face model is an explicit inference. A side-position, west jamb or north label does not supply a surveyed entrance bearing.",
+      "count": "Counts apply to the exact listed group; the interrupted or selected coverage cannot disprove an unlocated other set. Two locus labels can name one cut.",
+      "proxy": "F2x retains the frozen broad porch/column proxy. It does not establish an under-pillar target, named tomb or joint cistern.",
+      "geometry": "Preserve the prior Arnona disabled coordinates and Mordot enclosing report-range uncertainty. No point from a schematic plan or deposit datum.",
+      "decision": "FAIL rejects only the specified witness/model. UNKNOWN remains a terminal not-identifiable result for the full comparison. No regional rescore or formal outcome count from this selected reading."
+    },
+    "witnesses": [
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entries": [
+          14,
+          51,
+          56
+        ],
+        "burial_chambers": 2,
+        "kokhim_in_A": 10,
+        "reported_entrance_side": "south",
+        "reported_side_as_face": "FAIL",
+        "supported_proxy_clauses": {
+          "F10": "MATCH",
+          "F11": "MATCH",
+          "F2x": "MATCH"
+        },
+        "configuration_in_window": "UNKNOWN",
+        "target_relation": "UNKNOWN",
+        "datum": "UNKNOWN",
+        "phase": "Southern forecourt step interpreted by Rahmani as the outer entrance; original step height unclear.",
+        "locator": "pp. 61–68 / PDF 2–13, Fig. 3 / PDF 8–11; plates 13–19 / PDF 46–52",
+        "evidence_kind": "observed plan features; entrance-side-to-facing conversion is inference",
+        "count_note": "Rahmani has two burial chambers and a porch/courts; niches and approximately 25 redeposited burials are separate counts. Parent F10 requires more than one chamber, not eight chambers.",
+        "proxy_note": "Columned porch meets the existing F2x keyword proxy only. No under-column deposit or cistern join follows.",
+        "date_note": "Late procurator coins qualify secondary burial/blocking; original cutting and exact usable access phase require separate evidence.",
+        "next_observation": "A source-plan or measured survey tying the selected entrance, niche/cistern threshold and column to one ancient usable phase, with original levels; named-tomb identity and deposit datum remain separate.",
+        "partly_built_kokhim": [
+          9,
+          10
+        ],
+        "first_cut_kokh_count": "UNKNOWN",
+        "parent_record": {
+          "unit_id": "T0226",
+          "source": "ASI",
+          "record_id": "ASI 102/379",
+          "locator": "ASI Map 102 (Jerusalem), site 379; https://survey.iaa.org.il/#/MapSurvey/63/site/11490",
+          "name": "Rehavya",
+          "lat": "31.773513",
+          "lon": "35.212128",
+          "crs": "EPSG:4326",
+          "position_uncertainty_km": "0.05",
+          "d_temple_km": "2.257",
+          "d_jericho_km": "22.899",
+          "d_road_km": "22.384",
+          "in_A": "yes",
+          "in_A3": "yes",
+          "in_B1": "no",
+          "in_B2": "no",
+          "in_B2_5": "no",
+          "region_note": "",
+          "in_asi_sheet": "yes",
+          "possible_duplicate_of": "",
+          "linked_to": "",
+          "multi_tomb_record": "no",
+          "tomb_terms": "burial;kokhim;tomb",
+          "monument_F1": "unknown",
+          "F1_terms": "",
+          "porch_F2": "unknown",
+          "F2_terms": "",
+          "exedra_pillar_F2x": "unknown",
+          "inside_pillar_F3": "unknown",
+          "F3_terms": "",
+          "chambers_F10": "yes",
+          "F10_n": "3",
+          "inscription_F4": "yes",
+          "named_inscription_F5": "unknown",
+          "F5_terms": "",
+          "setting_wadi_F19": "unknown",
+          "F19_terms": "",
+          "garden_mention": "no-evidence",
+          "garden_ancient_F6": "unknown",
+          "entrance_orientation_F7": "unknown",
+          "west_facing_F7w": "unknown",
+          "kokhim_F11": "yes",
+          "ossuaries_F12": "unknown",
+          "repository_F13": "yes",
+          "slab_F14": "unknown",
+          "F14_terms": "",
+          "cistern_F16": "unknown",
+          "channel_F17": "unknown",
+          "communal_F20": "no",
+          "unused_F21": "unknown",
+          "name_zadok": "unknown",
+          "name_absalom": "unknown",
+          "name_queen": "unknown",
+          "name_obed": "unknown",
+          "name_jericho": "unknown",
+          "name_obed_in_inscription": "unknown",
+          "name_queen_in_inscription": "unknown",
+          "scroll_mention": "no",
+          "period_terms": "",
+          "dated_in_window": "unknown",
+          "dated_lenient": "yes",
+          "manual_rejected": "",
+          "raw_yes_before_check": "",
+          "exposure": "exposed: background knowledge of Jason's Tomb (pyramid; single-column porch; inscriptions)",
+          "enrich_A64": "",
+          "text_sha256": "e6eceb34ed8a2707822d7a667a900f27b22c4a1146f785210c39029a2787749e"
+        },
+        "parent_row_sha256": "114750b3f7a55b5727ab0afca7800786ec55f233922d3a84de66d7bf07f202d1",
+        "source_refs": [
+          {
+            "source_id": "rahmani",
+            "locator": "pp. 61–68 / PDF 2–13, Fig. 3 / PDF 8–11; plates 13–19 / PDF 46–52",
+            "source_url": "https://drive.google.com/file/d/1UBKAPs-Z11kHakQ1s07lGGKp1vBmj_vc/view",
+            "source_sha256": "1a6705bc3e99dd2e8ddbc06295377ff730a6d8c58ba8b9942cfaa5c5f1aee79b",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Jason's Tomb 1956–1957"
+          }
+        ]
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entries": [
+          14,
+          51,
+          56
+        ],
+        "burial_chambers": 2,
+        "kokhim_in_A": 10,
+        "reported_entrance_side": "north",
+        "reported_side_as_face": "FAIL",
+        "supported_proxy_clauses": {
+          "F10": "MATCH",
+          "F11": "MATCH",
+          "F2x": "MATCH"
+        },
+        "configuration_in_window": "UNKNOWN",
+        "target_relation": "UNKNOWN",
+        "datum": "UNKNOWN",
+        "phase": "Doorway on northern side of the outer court; its western jamb carries bolt/socket evidence. The internal doorway is distinct from the outer approach.",
+        "locator": "pp. 66–68 / PDF 7–13, Fig. 3 / PDF 8–11; plates 16–19 / PDF 49–52",
+        "evidence_kind": "observed plan features; entrance-side-to-facing conversion is inference",
+        "count_note": "Rahmani has two burial chambers and a porch/courts; niches and approximately 25 redeposited burials are separate counts. Parent F10 requires more than one chamber, not eight chambers.",
+        "proxy_note": "Columned porch meets the existing F2x keyword proxy only. No under-column deposit or cistern join follows.",
+        "date_note": "Late procurator coins qualify secondary burial/blocking; original cutting and exact usable access phase require separate evidence.",
+        "next_observation": "A source-plan or measured survey tying the selected entrance, niche/cistern threshold and column to one ancient usable phase, with original levels; named-tomb identity and deposit datum remain separate.",
+        "partly_built_kokhim": [
+          9,
+          10
+        ],
+        "first_cut_kokh_count": "UNKNOWN",
+        "parent_record": {
+          "unit_id": "T0226",
+          "source": "ASI",
+          "record_id": "ASI 102/379",
+          "locator": "ASI Map 102 (Jerusalem), site 379; https://survey.iaa.org.il/#/MapSurvey/63/site/11490",
+          "name": "Rehavya",
+          "lat": "31.773513",
+          "lon": "35.212128",
+          "crs": "EPSG:4326",
+          "position_uncertainty_km": "0.05",
+          "d_temple_km": "2.257",
+          "d_jericho_km": "22.899",
+          "d_road_km": "22.384",
+          "in_A": "yes",
+          "in_A3": "yes",
+          "in_B1": "no",
+          "in_B2": "no",
+          "in_B2_5": "no",
+          "region_note": "",
+          "in_asi_sheet": "yes",
+          "possible_duplicate_of": "",
+          "linked_to": "",
+          "multi_tomb_record": "no",
+          "tomb_terms": "burial;kokhim;tomb",
+          "monument_F1": "unknown",
+          "F1_terms": "",
+          "porch_F2": "unknown",
+          "F2_terms": "",
+          "exedra_pillar_F2x": "unknown",
+          "inside_pillar_F3": "unknown",
+          "F3_terms": "",
+          "chambers_F10": "yes",
+          "F10_n": "3",
+          "inscription_F4": "yes",
+          "named_inscription_F5": "unknown",
+          "F5_terms": "",
+          "setting_wadi_F19": "unknown",
+          "F19_terms": "",
+          "garden_mention": "no-evidence",
+          "garden_ancient_F6": "unknown",
+          "entrance_orientation_F7": "unknown",
+          "west_facing_F7w": "unknown",
+          "kokhim_F11": "yes",
+          "ossuaries_F12": "unknown",
+          "repository_F13": "yes",
+          "slab_F14": "unknown",
+          "F14_terms": "",
+          "cistern_F16": "unknown",
+          "channel_F17": "unknown",
+          "communal_F20": "no",
+          "unused_F21": "unknown",
+          "name_zadok": "unknown",
+          "name_absalom": "unknown",
+          "name_queen": "unknown",
+          "name_obed": "unknown",
+          "name_jericho": "unknown",
+          "name_obed_in_inscription": "unknown",
+          "name_queen_in_inscription": "unknown",
+          "scroll_mention": "no",
+          "period_terms": "",
+          "dated_in_window": "unknown",
+          "dated_lenient": "yes",
+          "manual_rejected": "",
+          "raw_yes_before_check": "",
+          "exposure": "exposed: background knowledge of Jason's Tomb (pyramid; single-column porch; inscriptions)",
+          "enrich_A64": "",
+          "text_sha256": "e6eceb34ed8a2707822d7a667a900f27b22c4a1146f785210c39029a2787749e"
+        },
+        "parent_row_sha256": "114750b3f7a55b5727ab0afca7800786ec55f233922d3a84de66d7bf07f202d1",
+        "source_refs": [
+          {
+            "source_id": "rahmani",
+            "locator": "pp. 66–68 / PDF 7–13, Fig. 3 / PDF 8–11; plates 16–19 / PDF 49–52",
+            "source_url": "https://drive.google.com/file/d/1UBKAPs-Z11kHakQ1s07lGGKp1vBmj_vc/view",
+            "source_sha256": "1a6705bc3e99dd2e8ddbc06295377ff730a6d8c58ba8b9942cfaa5c5f1aee79b",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Jason's Tomb 1956–1957"
+          }
+        ]
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entries": [
+          14,
+          51,
+          56
+        ],
+        "burial_chambers": 2,
+        "kokhim_in_A": 10,
+        "reported_entrance_side": "unknown",
+        "reported_side_as_face": "UNKNOWN",
+        "supported_proxy_clauses": {
+          "F10": "MATCH",
+          "F11": "MATCH",
+          "F2x": "MATCH"
+        },
+        "configuration_in_window": "UNKNOWN",
+        "target_relation": "UNKNOWN",
+        "datum": "UNKNOWN",
+        "phase": "Unresolved interpretation of which entrance or burial-niche/cistern threshold the entry describes; no observed western alternative invented.",
+        "locator": "pp. 61–68 / PDF 2–13; source plan Fig. 3 / PDF 8–11",
+        "evidence_kind": "observed plan features; entrance-side-to-facing conversion is inference",
+        "count_note": "Rahmani has two burial chambers and a porch/courts; niches and approximately 25 redeposited burials are separate counts. Parent F10 requires more than one chamber, not eight chambers.",
+        "proxy_note": "Columned porch meets the existing F2x keyword proxy only. No under-column deposit or cistern join follows.",
+        "date_note": "Late procurator coins qualify secondary burial/blocking; original cutting and exact usable access phase require separate evidence.",
+        "next_observation": "A source-plan or measured survey tying the selected entrance, niche/cistern threshold and column to one ancient usable phase, with original levels; named-tomb identity and deposit datum remain separate.",
+        "partly_built_kokhim": [
+          9,
+          10
+        ],
+        "first_cut_kokh_count": "UNKNOWN",
+        "parent_record": {
+          "unit_id": "T0226",
+          "source": "ASI",
+          "record_id": "ASI 102/379",
+          "locator": "ASI Map 102 (Jerusalem), site 379; https://survey.iaa.org.il/#/MapSurvey/63/site/11490",
+          "name": "Rehavya",
+          "lat": "31.773513",
+          "lon": "35.212128",
+          "crs": "EPSG:4326",
+          "position_uncertainty_km": "0.05",
+          "d_temple_km": "2.257",
+          "d_jericho_km": "22.899",
+          "d_road_km": "22.384",
+          "in_A": "yes",
+          "in_A3": "yes",
+          "in_B1": "no",
+          "in_B2": "no",
+          "in_B2_5": "no",
+          "region_note": "",
+          "in_asi_sheet": "yes",
+          "possible_duplicate_of": "",
+          "linked_to": "",
+          "multi_tomb_record": "no",
+          "tomb_terms": "burial;kokhim;tomb",
+          "monument_F1": "unknown",
+          "F1_terms": "",
+          "porch_F2": "unknown",
+          "F2_terms": "",
+          "exedra_pillar_F2x": "unknown",
+          "inside_pillar_F3": "unknown",
+          "F3_terms": "",
+          "chambers_F10": "yes",
+          "F10_n": "3",
+          "inscription_F4": "yes",
+          "named_inscription_F5": "unknown",
+          "F5_terms": "",
+          "setting_wadi_F19": "unknown",
+          "F19_terms": "",
+          "garden_mention": "no-evidence",
+          "garden_ancient_F6": "unknown",
+          "entrance_orientation_F7": "unknown",
+          "west_facing_F7w": "unknown",
+          "kokhim_F11": "yes",
+          "ossuaries_F12": "unknown",
+          "repository_F13": "yes",
+          "slab_F14": "unknown",
+          "F14_terms": "",
+          "cistern_F16": "unknown",
+          "channel_F17": "unknown",
+          "communal_F20": "no",
+          "unused_F21": "unknown",
+          "name_zadok": "unknown",
+          "name_absalom": "unknown",
+          "name_queen": "unknown",
+          "name_obed": "unknown",
+          "name_jericho": "unknown",
+          "name_obed_in_inscription": "unknown",
+          "name_queen_in_inscription": "unknown",
+          "scroll_mention": "no",
+          "period_terms": "",
+          "dated_in_window": "unknown",
+          "dated_lenient": "yes",
+          "manual_rejected": "",
+          "raw_yes_before_check": "",
+          "exposure": "exposed: background knowledge of Jason's Tomb (pyramid; single-column porch; inscriptions)",
+          "enrich_A64": "",
+          "text_sha256": "e6eceb34ed8a2707822d7a667a900f27b22c4a1146f785210c39029a2787749e"
+        },
+        "parent_row_sha256": "114750b3f7a55b5727ab0afca7800786ec55f233922d3a84de66d7bf07f202d1",
+        "source_refs": [
+          {
+            "source_id": "rahmani",
+            "locator": "pp. 61–68 / PDF 2–13; source plan Fig. 3 / PDF 8–11",
+            "source_url": "https://drive.google.com/file/d/1UBKAPs-Z11kHakQ1s07lGGKp1vBmj_vc/view",
+            "source_sha256": "1a6705bc3e99dd2e8ddbc06295377ff730a6d8c58ba8b9942cfaa5c5f1aee79b",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Jason's Tomb 1956–1957"
+          }
+        ]
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "origin_row": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "source_id": "arnona2024",
+        "pit_count": 1,
+        "locus_labels": [
+          "L1"
+        ],
+        "dimensions": {
+          "depth_m": 5.3,
+          "base_diameter_m": 4,
+          "mouth_diameter_m": 1
+        },
+        "dimension_role": "published feature dimensions; no unit or deposit-target conversion",
+        "fill": "Approximately 3 m of deliberate fill; modern refuse and nondiagnostic sherds.",
+        "coverage": "Cut exposed; ancient entrance, target and use phase unestablished.",
+        "reported_window_after_native": "UNKNOWN",
+        "function": "UNKNOWN",
+        "configuration_in_window": "UNKNOWN",
+        "entrance": "UNKNOWN",
+        "same_phase": "UNKNOWN",
+        "locator": "PDF 1–3 text; Fig. 2 / PDF 5; Figs. 3–5 / PDF 5–7",
+        "next_observation": "Dated cutting/use contact plus the original contemporaneous entrance and left-side target; a complete same-phase set is required for the ten-small-pits alternative.",
+        "parent_record": {
+          "phase_id": "IAA:phase3_2026-10-11/part_d_online/features.csv#881@unsplit",
+          "origin_row": "phase3_2026-10-11/part_d_online/features.csv#881",
+          "name": "Jerusalem, Mordot Arnona Neighborhood",
+          "source": "HA-ESI 136 (2024)",
+          "locator": "pp.; https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26567",
+          "source_file": "phase3_2026-10-11/part_d_online/features.csv",
+          "report_group": "RG:HAESI-26567",
+          "site_id": "S0720",
+          "feature_type": "rockcut_installation",
+          "feature_subtype": "bell-shaped rock-hewn pit (5.3 m deep) with round opening, unplastered; perhaps an unfinished cistern or an agricultural installation",
+          "phase": "unsplit source description; physical feature joins unverified",
+          "lat": "31.74658577",
+          "lon": "35.22374007",
+          "precision_m": "26.633",
+          "original_n_features": "1",
+          "original_period": "date and function not ascertained",
+          "reported_window": "UNKNOWN",
+          "configuration_in_window": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "pit_form": "MATCH",
+          "deep_qualification": "UNKNOWN",
+          "reported_pit_count_phrases": "",
+          "reported_vertical_dimensions": "5.3 m deep",
+          "numerical_target": "UNKNOWN",
+          "evidence": "derivative source coding; original quantity preserved; no datum/target transfer",
+          "position_kind": "report range; conservative enclosing circle",
+          "map_ref_as_given": "221265–305/628202–35",
+          "crs_used": "EPSG:2039",
+          "range_bounds_m": "[[221265,221305],[628202,628235]]"
+        },
+        "parent_row_sha256": "7ddb4eaa0565af26e46480b385fc4529643193b56a90fc141e63fe6aac1ea0ca",
+        "position": {
+          "lat": "31.74658577",
+          "lon": "35.22374007",
+          "precision_m": "26.633",
+          "position_kind": "report range; conservative enclosing circle",
+          "range_bounds_m": "[[221265,221305],[628202,628235]]"
+        },
+        "reported_window_before": "UNKNOWN",
+        "source_refs": [
+          {
+            "source_id": "arnona2024",
+            "locator": "PDF 1–3 text; Fig. 2 / PDF 5; Figs. 3–5 / PDF 5–7",
+            "source_url": "https://drive.google.com/file/d/1bUDJw3cw4MsgjYJ5zoY2FeFt5RP9T-hH/view",
+            "source_sha256": "6a79db8c46dac3cf433127093e9d02baa42d00d0c637da6b8481ab120c69a535",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "A-9163 December 2021"
+          }
+        ]
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "origin_row": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "source_id": "arnona2008",
+        "pit_count": 8,
+        "locus_labels": [
+          "L101",
+          "L103A",
+          "L103B",
+          "L104A",
+          "L104B",
+          "L106",
+          "L107A",
+          "L107B"
+        ],
+        "dimensions": {},
+        "dimension_role": "published feature dimensions; no unit or deposit-target conversion",
+        "fill": "Area pottery and neighbouring quarry do not date each cutting.",
+        "coverage": "Selected Area A group; no complete entrance-relative regional set.",
+        "reported_window_after_native": "UNKNOWN",
+        "function": "UNKNOWN",
+        "configuration_in_window": "UNKNOWN",
+        "entrance": "UNKNOWN",
+        "same_phase": "UNKNOWN",
+        "locator": "PDF 1–3; Figs. 3–8 / PDF 5–8",
+        "next_observation": "Dated cutting/use contact plus the original contemporaneous entrance and left-side target; a complete same-phase set is required for the ten-small-pits alternative.",
+        "parent_record": {
+          "phase_id": "IAA:phase3_2026-10-11/part_d_online/features.csv#1090@unsplit",
+          "origin_row": "phase3_2026-10-11/part_d_online/features.csv#1090",
+          "name": "Jerusalem, Arnona",
+          "source": "HA-ESI 120 (2008)",
+          "locator": "pp.; https://hadashot.iaa.org.il/report_detail_eng.aspx?id=832",
+          "source_file": "phase3_2026-10-11/part_d_online/features.csv",
+          "report_group": "RG:HAESI-832",
+          "site_id": "S0012",
+          "feature_type": "rockcut_installation",
+          "feature_subtype": "large quarry (c. 140 sq m) with a square hewn surface of unknown function and eight hewn pits of unclear function",
+          "phase": "unsplit source description; physical feature joins unverified",
+          "lat": "",
+          "lon": "",
+          "precision_m": "",
+          "original_n_features": "",
+          "original_period": "not dated in the report (Area A ceramic finds mostly Early Roman)",
+          "reported_window": "UNKNOWN",
+          "configuration_in_window": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "pit_form": "MATCH",
+          "deep_qualification": "UNKNOWN",
+          "reported_pit_count_phrases": "eight hewn pits",
+          "reported_vertical_dimensions": "",
+          "numerical_target": "UNKNOWN",
+          "evidence": "derivative source coding; original quantity preserved; no datum/target transfer",
+          "position_kind": "range unresolved; point disabled",
+          "map_ref_as_given": "NIG 22130–3/62835; OIG 17130–3/12835",
+          "crs_used": "EPSG:2039",
+          "range_bounds_m": ""
+        },
+        "parent_row_sha256": "110e42cfc1ec840fafeda0982741b20b479714bf95a3db4f6725bf2cab8ffbbc",
+        "position": {
+          "lat": "",
+          "lon": "",
+          "precision_m": "",
+          "position_kind": "range unresolved; point disabled",
+          "range_bounds_m": ""
+        },
+        "reported_window_before": "UNKNOWN",
+        "source_refs": [
+          {
+            "source_id": "arnona2008",
+            "locator": "PDF 1–3; Figs. 3–8 / PDF 5–8",
+            "source_url": "https://drive.google.com/file/d/16-KKwfgeycDK5fO1HnmuINWrEJOKxXXZ/view",
+            "source_sha256": "02562a2cfa6c8ffb0c583476007898f6cb28a51682cd4bdfc7a579b5ac08f323",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "A-4785 May 2006"
+          }
+        ]
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "origin_row": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "source_id": "arnona2008",
+        "pit_count": 1,
+        "locus_labels": [
+          "L105",
+          "L112"
+        ],
+        "dimensions": {
+          "length_m": 6.0,
+          "width_m": 6.8,
+          "depth_m": 2.5
+        },
+        "dimension_role": "published feature dimensions; no unit or deposit-target conversion",
+        "fill": "Intentional fill with minority Iron II and majority Early Roman pottery; not a sealed cutting date.",
+        "coverage": "Excavation interrupted; extent, reach and detection of a predicted ancient target unresolved.",
+        "reported_window_after_native": "UNKNOWN",
+        "function": "UNKNOWN",
+        "configuration_in_window": "UNKNOWN",
+        "entrance": "UNKNOWN",
+        "same_phase": "UNKNOWN",
+        "locator": "PDF 2; Figs. 3, 9–10 / PDF 5, 9",
+        "next_observation": "Dated cutting/use contact plus the original contemporaneous entrance and left-side target; a complete same-phase set is required for the ten-small-pits alternative.",
+        "parent_record": {
+          "phase_id": "IAA:phase3_2026-10-11/part_d_online/features.csv#1091@unsplit",
+          "origin_row": "phase3_2026-10-11/part_d_online/features.csv#1091",
+          "name": "Jerusalem, Arnona",
+          "source": "HA-ESI 120 (2008)",
+          "locator": "pp.; https://hadashot.iaa.org.il/report_detail_eng.aspx?id=832",
+          "source_file": "phase3_2026-10-11/part_d_online/features.csv",
+          "report_group": "RG:HAESI-832",
+          "site_id": "S0012",
+          "feature_type": "rockcut_installation",
+          "feature_subtype": "large partly hewn pit (6.0 x 6.8 m, 2.5 m deep) with intentional fill",
+          "phase": "unsplit source description; physical feature joins unverified",
+          "lat": "",
+          "lon": "",
+          "precision_m": "",
+          "original_n_features": "1",
+          "original_period": "not dated in the report; fill with Iron II and mostly Early Roman pottery",
+          "reported_window": "UNKNOWN",
+          "configuration_in_window": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "pit_form": "MATCH",
+          "deep_qualification": "UNKNOWN",
+          "reported_pit_count_phrases": "",
+          "reported_vertical_dimensions": "2.5 m deep",
+          "numerical_target": "UNKNOWN",
+          "evidence": "derivative source coding; original quantity preserved; no datum/target transfer",
+          "position_kind": "range unresolved; point disabled",
+          "map_ref_as_given": "NIG 22130–3/62835; OIG 17130–3/12835",
+          "crs_used": "EPSG:2039",
+          "range_bounds_m": ""
+        },
+        "parent_row_sha256": "e00e260b357adf83b9785104c82dc91c591e7b1afb3da32fba39f2f0ede465c4",
+        "position": {
+          "lat": "",
+          "lon": "",
+          "precision_m": "",
+          "position_kind": "range unresolved; point disabled",
+          "range_bounds_m": ""
+        },
+        "reported_window_before": "UNKNOWN",
+        "source_refs": [
+          {
+            "source_id": "arnona2008",
+            "locator": "PDF 2; Figs. 3, 9–10 / PDF 5, 9",
+            "source_url": "https://drive.google.com/file/d/16-KKwfgeycDK5fO1HnmuINWrEJOKxXXZ/view",
+            "source_sha256": "02562a2cfa6c8ffb0c583476007898f6cb28a51682cd4bdfc7a579b5ac08f323",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "A-4785 May 2006"
+          }
+        ]
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "origin_row": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "source_id": "arnona2008",
+        "pit_count": 3,
+        "locus_labels": [
+          "L109",
+          "L110",
+          "L111A"
+        ],
+        "dimensions": {},
+        "dimension_role": "published feature dimensions; no unit or deposit-target conversion",
+        "fill": "Tentative association with a previously exposed Second Temple building; no demonstrated cutting/use contact.",
+        "coverage": "Separate Area B group about 30 m from A; no common ancient entrance/phase documented.",
+        "reported_window_after_native": "UNKNOWN",
+        "function": "UNKNOWN",
+        "configuration_in_window": "UNKNOWN",
+        "entrance": "UNKNOWN",
+        "same_phase": "UNKNOWN",
+        "locator": "PDF 2; Fig. 12 / PDF 11",
+        "next_observation": "Dated cutting/use contact plus the original contemporaneous entrance and left-side target; a complete same-phase set is required for the ten-small-pits alternative.",
+        "parent_record": {
+          "phase_id": "IAA:phase3_2026-10-11/part_d_online/features.csv#1092@unsplit",
+          "origin_row": "phase3_2026-10-11/part_d_online/features.csv#1092",
+          "name": "Jerusalem, Arnona",
+          "source": "HA-ESI 120 (2008)",
+          "locator": "pp.; https://hadashot.iaa.org.il/report_detail_eng.aspx?id=832",
+          "source_file": "phase3_2026-10-11/part_d_online/features.csv",
+          "report_group": "RG:HAESI-832",
+          "site_id": "S0012",
+          "feature_type": "rockcut_installation",
+          "feature_subtype": "three round pits hewn in bedrock",
+          "phase": "unsplit source description; physical feature joins unverified",
+          "lat": "",
+          "lon": "",
+          "precision_m": "",
+          "original_n_features": "3",
+          "original_period": "Second Temple period (connected to a building so dated)",
+          "reported_window": "MATCH",
+          "configuration_in_window": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "pit_form": "MATCH",
+          "deep_qualification": "UNKNOWN",
+          "reported_pit_count_phrases": "three round pits",
+          "reported_vertical_dimensions": "",
+          "numerical_target": "UNKNOWN",
+          "evidence": "derivative source coding; original quantity preserved; no datum/target transfer",
+          "position_kind": "range unresolved; point disabled",
+          "map_ref_as_given": "NIG 22130–3/62835; OIG 17130–3/12835",
+          "crs_used": "EPSG:2039",
+          "range_bounds_m": ""
+        },
+        "parent_row_sha256": "8a878b73410d7bce5a1fa74057f8d979f10972f24be5b7edf86ba96505804f4c",
+        "position": {
+          "lat": "",
+          "lon": "",
+          "precision_m": "",
+          "position_kind": "range unresolved; point disabled",
+          "range_bounds_m": ""
+        },
+        "reported_window_before": "MATCH",
+        "source_refs": [
+          {
+            "source_id": "arnona2008",
+            "locator": "PDF 2; Fig. 12 / PDF 11",
+            "source_url": "https://drive.google.com/file/d/16-KKwfgeycDK5fO1HnmuINWrEJOKxXXZ/view",
+            "source_sha256": "02562a2cfa6c8ffb0c583476007898f6cb28a51682cd4bdfc7a579b5ac08f323",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "A-4785 May 2006"
+          }
+        ]
+      }
+    ],
+    "source_comparanda": [
+      {
+        "witness_id": "nasbeh@Ci320-closed",
+        "source_id": "mccown",
+        "name": "Cistern 320 and Silos 317/321 beneath later colonnade",
+        "inventory_parent_id": null,
+        "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+        "geometry": null,
+        "locator": "p. 213 / PDF 237, Fig. 53A; plate 77 / PDF 435",
+        "facts": {
+          "closure": "before colonnade and associated walls",
+          "simultaneous_active_cistern_and_colonnade": "FAIL",
+          "later_reopening": "UNKNOWN",
+          "deposit_target": "UNKNOWN"
+        },
+        "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase.",
+        "source_refs": [
+          {
+            "source_id": "mccown",
+            "locator": "p. 213 / PDF 237, Fig. 53A; plate 77 / PDF 435",
+            "source_url": "https://drive.google.com/file/d/1WZOl1MmfX4wt5DJs_LEeN0g9Bf1Y76lP/view",
+            "source_sha256": "65334d98e81b27acff13e54695bedd875fdd4c9f69bec7424a319ed6ddb1e659",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Tell en-Nasbeh 1926–1935"
+          }
+        ]
+      },
+      {
+        "witness_id": "nasbeh@standing-stone-reset",
+        "source_id": "mccown",
+        "name": "Standing stone placed beside proposed early gate by excavators",
+        "inventory_parent_id": null,
+        "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+        "geometry": null,
+        "locator": "p. 244 / PDF 268; plate 73:2–3 / PDF 431",
+        "facts": {
+          "ancient_gate_stone_join_from_photo": "FAIL",
+          "original_stone_location": "UNKNOWN",
+          "placement": "modern expedition reset"
+        },
+        "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase.",
+        "source_refs": [
+          {
+            "source_id": "mccown",
+            "locator": "p. 244 / PDF 268; plate 73:2–3 / PDF 431",
+            "source_url": "https://drive.google.com/file/d/1WZOl1MmfX4wt5DJs_LEeN0g9Bf1Y76lP/view",
+            "source_sha256": "65334d98e81b27acff13e54695bedd875fdd4c9f69bec7424a319ed6ddb1e659",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Tell en-Nasbeh 1926–1935"
+          }
+        ]
+      },
+      {
+        "witness_id": "gibeon@NE-rectangular-reservoir",
+        "source_id": "pritchard",
+        "name": "Northeast rectangular reservoir",
+        "inventory_parent_id": null,
+        "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+        "geometry": null,
+        "locator": "pp. 67–68 / PDF 4–5",
+        "facts": {
+          "dimensions_m": [
+            11.3,
+            18.3
+          ],
+          "distance_from_village_spring_m": 36,
+          "plaster_coats": 4,
+          "jar_date": "tentatively first century BCE; jar function unresolved",
+          "cutting_date": "UNKNOWN",
+          "first_century_usable_configuration": "UNKNOWN",
+          "entrance_bearing": "UNKNOWN"
+        },
+        "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase.",
+        "source_refs": [
+          {
+            "source_id": "pritchard",
+            "locator": "pp. 67–68 / PDF 4–5",
+            "source_url": "https://drive.google.com/file/d/1bF3X5S4aHTsRJefAnJmjEO-41n7DXBM3/view",
+            "source_sha256": "958341b9cedf2be07ddf3386e2f531dcc53ce58aeb426ac91e3eb00b1f64b12f",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Gibeon 1956"
+          }
+        ]
+      },
+      {
+        "witness_id": "gibeon@west-stepped-pool",
+        "source_id": "pritchard",
+        "name": "Small stepped pool on west of mound",
+        "inventory_parent_id": null,
+        "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+        "geometry": null,
+        "locator": "pp. 68–69 / PDF 5–6, Fig. 3 / PDF 6",
+        "facts": {
+          "dimensions_m": [
+            2,
+            2
+          ],
+          "depth_m": ">2",
+          "dating_basis": "associated houses and Alexander Jannaeus coins; cutting date not independently fixed",
+          "supply": "UNKNOWN",
+          "first_century_usable_configuration": "UNKNOWN",
+          "entrance_bearing": "UNKNOWN"
+        },
+        "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase.",
+        "source_refs": [
+          {
+            "source_id": "pritchard",
+            "locator": "pp. 68–69 / PDF 5–6, Fig. 3 / PDF 6",
+            "source_url": "https://drive.google.com/file/d/1bF3X5S4aHTsRJefAnJmjEO-41n7DXBM3/view",
+            "source_sha256": "958341b9cedf2be07ddf3386e2f531dcc53ce58aeb426ac91e3eb00b1f64b12f",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Gibeon 1956"
+          }
+        ]
+      },
+      {
+        "witness_id": "gibeon@circular-cut",
+        "source_id": "pritchard",
+        "name": "Large circular stepped cut",
+        "inventory_parent_id": null,
+        "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+        "geometry": null,
+        "locator": "pp. 69–70 / PDF 6–7; Fig. 1 / PDF 3",
+        "facts": {
+          "diameter_m": 11.5,
+          "exposed_steps": 42,
+          "exposed_depth_m": 10.51,
+          "bottom_reached": false,
+          "plaster": "not observed",
+          "supply_function": "unresolved alternatives",
+          "fill_date_role": "Iron II pottery in deposited material; not direct cutting date",
+          "first_century_usable_configuration": "UNKNOWN",
+          "entrance_bearing": "UNKNOWN"
+        },
+        "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase.",
+        "source_refs": [
+          {
+            "source_id": "pritchard",
+            "locator": "pp. 69–70 / PDF 6–7; Fig. 1 / PDF 3",
+            "source_url": "https://drive.google.com/file/d/1bF3X5S4aHTsRJefAnJmjEO-41n7DXBM3/view",
+            "source_sha256": "958341b9cedf2be07ddf3386e2f531dcc53ce58aeb426ac91e3eb00b1f64b12f",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Gibeon 1956"
+          }
+        ]
+      },
+      {
+        "witness_id": "gibeon@tunnel-branches",
+        "source_id": "pritchard",
+        "name": "Tunnel northern mouth and separate spring/stepped branches",
+        "inventory_parent_id": null,
+        "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+        "geometry": null,
+        "locator": "pp. 71–75 / PDF 8–12, Figs. 4–5 / PDF 10–11",
+        "facts": {
+          "cleared_length_m": 51,
+          "steps": 93,
+          "north_mouth_width_m": "<3",
+          "branches": [
+            "southwestern spring branch",
+            "southern stepped branch"
+          ],
+          "dating_basis": "structural order; washed-in fill cannot date cutting",
+          "construction_proposal": "later Iron II, qualified",
+          "old_survey_bearings": "questioned",
+          "first_century_usable_configuration": "UNKNOWN",
+          "surveyed_entrance_bearing": "UNKNOWN"
+        },
+        "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase.",
+        "source_refs": [
+          {
+            "source_id": "pritchard",
+            "locator": "pp. 71–75 / PDF 8–12, Figs. 4–5 / PDF 10–11",
+            "source_url": "https://drive.google.com/file/d/1bF3X5S4aHTsRJefAnJmjEO-41n7DXBM3/view",
+            "source_sha256": "958341b9cedf2be07ddf3386e2f531dcc53ce58aeb426ac91e3eb00b1f64b12f",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Gibeon 1956"
+          }
+        ]
+      }
+    ],
+    "relation_checks": [
+      {
+        "id": "nasbeh-Ci320-colonnade",
+        "source_id": "mccown",
+        "claim": "Cistern 320 functioned as an open active cistern alongside the observed R389/390 colonnade.",
+        "status": "FAIL",
+        "terminal_claim": "rejected for this specification",
+        "scope": "Only this cistern/colonnade simultaneous-active-use specification; no entry assignment or site-wide exclusion.",
+        "locator": "p. 213 / PDF 237, Fig. 53A; plate 77 / PDF 435",
+        "next_observation": "A documented analytical error or contrary original contact/reopening record for these exact features.",
+        "source_refs": [
+          {
+            "source_id": "mccown",
+            "locator": "p. 213 / PDF 237, Fig. 53A; plate 77 / PDF 435",
+            "source_url": "https://drive.google.com/file/d/1WZOl1MmfX4wt5DJs_LEeN0g9Bf1Y76lP/view",
+            "source_sha256": "65334d98e81b27acff13e54695bedd875fdd4c9f69bec7424a319ed6ddb1e659",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Tell en-Nasbeh 1926–1935"
+          }
+        ],
+        "regional_score": "not_scored",
+        "formal_outcome_ledger_eligibility": false,
+        "closed_assessment_reopened": false
+      },
+      {
+        "id": "nasbeh-stone-gate-photo",
+        "source_id": "mccown",
+        "claim": "The photographed standing stone proves its original ancient position beside the proposed early gate.",
+        "status": "FAIL",
+        "terminal_claim": "rejected for this specification",
+        "scope": "Only the inference from this reset photograph; original stone context is unresolved.",
+        "locator": "p. 244 / PDF 268; plate 73:2–3 / PDF 431",
+        "next_observation": "Original pre-reset find-position/context record.",
+        "source_refs": [
+          {
+            "source_id": "mccown",
+            "locator": "p. 244 / PDF 268; plate 73:2–3 / PDF 431",
+            "source_url": "https://drive.google.com/file/d/1WZOl1MmfX4wt5DJs_LEeN0g9Bf1Y76lP/view",
+            "source_sha256": "65334d98e81b27acff13e54695bedd875fdd4c9f69bec7424a319ed6ddb1e659",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Tell en-Nasbeh 1926–1935"
+          }
+        ],
+        "regional_score": "not_scored",
+        "formal_outcome_ledger_eligibility": false,
+        "closed_assessment_reopened": false
+      },
+      {
+        "id": "atara-western-conduit",
+        "source_id": "mccown",
+        "claim": "McCown pp. 54–55 supplies the exact western bottom-conduit/wall/floor section needed by the existing Atara176 comparison.",
+        "status": "UNKNOWN",
+        "terminal_claim": "not identifiable from available evidence",
+        "scope": "McCown transmits SWP/Guérin/Dalman accounts; a generic pointed-arched outlet is not the requested dated western contact.",
+        "locator": "pp. 54–55 / PDF 78–79; cited SWP Memoirs III (1883), pp. 82–83",
+        "next_observation": "SWP or later original feature-specific western conduit, wall and floor section with construction/use context.",
+        "original_campaign": "SWP, Guérin and Dalman inherited observations; not the Tell en-Nasbeh excavation campaign",
+        "source_refs": [
+          {
+            "source_id": "mccown",
+            "locator": "pp. 54–55 / PDF 78–79; cited SWP Memoirs III (1883), pp. 82–83",
+            "source_url": "https://drive.google.com/file/d/1WZOl1MmfX4wt5DJs_LEeN0g9Bf1Y76lP/view",
+            "source_sha256": "65334d98e81b27acff13e54695bedd875fdd4c9f69bec7424a319ed6ddb1e659",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "SWP, Guérin and Dalman inherited observations; not the Tell en-Nasbeh excavation campaign"
+          }
+        ],
+        "regional_score": "not_scored",
+        "formal_outcome_ledger_eligibility": false,
+        "closed_assessment_reopened": false
+      },
+      {
+        "id": "gibeon-feature-identity",
+        "source_id": "pritchard",
+        "claim": "The northeast rectangular reservoir, western stepped pool and circular cut constitute one physical installation with transferable dimensions, date and entrance.",
+        "status": "FAIL",
+        "terminal_claim": "rejected for this specification",
+        "scope": "Only the merged-feature specification; each named feature remains available for its own future comparison.",
+        "locator": "pp. 67–75 / PDF 4–12",
+        "next_observation": "Installation-specific plans, original use dates and measured bearings for the selected feature.",
+        "source_refs": [
+          {
+            "source_id": "pritchard",
+            "locator": "pp. 67–75 / PDF 4–12",
+            "source_url": "https://drive.google.com/file/d/1bF3X5S4aHTsRJefAnJmjEO-41n7DXBM3/view",
+            "source_sha256": "958341b9cedf2be07ddf3386e2f531dcc53ce58aeb426ac91e3eb00b1f64b12f",
+            "exposure": "already_inspected_exploratory",
+            "original_campaign": "Gibeon 1956"
+          }
+        ],
+        "regional_score": "not_scored",
+        "formal_outcome_ledger_eligibility": false,
+        "closed_assessment_reopened": false
+      }
+    ],
+    "scores": [
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-M62",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-P06",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-NAME",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "L_name_only": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_name_only": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-S",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-O",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-J",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-P",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "FAIL",
+          "F11": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-M",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "FAIL",
+          "F16": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-M62",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-P06",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-NAME",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "L_name_only": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_name_only": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-S",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-O",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-J",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-P",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@forecourt-south-step",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-M",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-M62",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-P06",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-NAME",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "L_name_only": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_name_only": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-S",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-O",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-J",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-P",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "FAIL",
+          "F11": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-M",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "FAIL",
+          "F16": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-M62",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-P06",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-NAME",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "L_name_only": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_name_only": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-S",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-O",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-J",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-P",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@internal-north-door",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-M",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-M62",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-P06",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-NAME",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "L_name_only": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_name_only": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-S",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-O",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-J",
+        "model": "reported-side-as-face",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-P",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-M",
+        "model": "reported-side-as-face",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-M62",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F13": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-P06",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_millo": "FAIL",
+          "F14": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 14,
+        "reading": "14-NAME",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "L_name_only": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_name_only": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-S",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-O",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F12": "UNKNOWN",
+          "name_zadok": "UNKNOWN",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 51,
+        "reading": "51-J",
+        "model": "surveyed-bearing",
+        "raw_result": "fail",
+        "clauses_before": {
+          "L_south_corner": "FAIL",
+          "F2x": "UNKNOWN"
+        },
+        "clauses_after": {
+          "L_south_corner": "FAIL",
+          "F2x": "MATCH"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this witness/model",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-P",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F11": "MATCH"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "jason@unselected-entrance",
+        "parent_id": "T0226",
+        "entry": 56,
+        "reading": "56-M",
+        "model": "surveyed-bearing",
+        "raw_result": "unknown",
+        "clauses_before": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "clauses_after": {
+          "F10": "MATCH",
+          "F7w": "UNKNOWN",
+          "F16": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "pool|ten-cubits-distance",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "pool|ten-cubits-depth",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "pool|ten-small-pits",
+        "model": "listed-source-group",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "FAIL",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this listed group only",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "pool|ten-small-pits",
+        "model": "unlocated-other-set",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "pool|ten-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "pool|twelve-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "pool|notches",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "deep-pit|ten-cubits-distance",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "deep-pit|ten-cubits-depth",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "deep-pit|ten-small-pits",
+        "model": "listed-source-group",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "FAIL",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this listed group only",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "deep-pit|ten-small-pits",
+        "model": "unlocated-other-set",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "deep-pit|ten-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "deep-pit|twelve-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "mordot-arnona@bell-pit",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#881",
+        "entry": 46,
+        "reading": "deep-pit|notches",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "pool|ten-cubits-distance",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "pool|ten-cubits-depth",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "pool|ten-small-pits",
+        "model": "listed-source-group",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "FAIL",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this listed group only",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "pool|ten-small-pits",
+        "model": "unlocated-other-set",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "pool|ten-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "pool|twelve-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "pool|notches",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "deep-pit|ten-cubits-distance",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "deep-pit|ten-cubits-depth",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "deep-pit|ten-small-pits",
+        "model": "listed-source-group",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "FAIL",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this listed group only",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "deep-pit|ten-small-pits",
+        "model": "unlocated-other-set",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "deep-pit|ten-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "deep-pit|twelve-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@eight-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1090",
+        "entry": 46,
+        "reading": "deep-pit|notches",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "pool|ten-cubits-distance",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "pool|ten-cubits-depth",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "pool|ten-small-pits",
+        "model": "listed-source-group",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "FAIL",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this listed group only",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "pool|ten-small-pits",
+        "model": "unlocated-other-set",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "pool|ten-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "pool|twelve-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "pool|notches",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "deep-pit|ten-cubits-distance",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "deep-pit|ten-cubits-depth",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "deep-pit|ten-small-pits",
+        "model": "listed-source-group",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "FAIL",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this listed group only",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "deep-pit|ten-small-pits",
+        "model": "unlocated-other-set",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "deep-pit|ten-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "deep-pit|twelve-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-A@L105-L112",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1091",
+        "entry": 46,
+        "reading": "deep-pit|notches",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "UNKNOWN",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "pool|ten-cubits-distance",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "pool|ten-cubits-depth",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "pool|ten-small-pits",
+        "model": "listed-source-group",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "FAIL",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this listed group only",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "pool|ten-small-pits",
+        "model": "unlocated-other-set",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "pool|ten-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "pool|twelve-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "pool|notches",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "UNKNOWN",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "deep-pit|ten-cubits-distance",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "deep-pit|ten-cubits-depth",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "deep-pit|ten-small-pits",
+        "model": "listed-source-group",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "FAIL",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "FAIL",
+        "phase_and_target_relation": "FAIL",
+        "disposition": "rejected for this listed group only",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "deep-pit|ten-small-pits",
+        "model": "unlocated-other-set",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "deep-pit|ten-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "deep-pit|twelve-feet",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      },
+      {
+        "witness_id": "arnona-B@three-pits",
+        "parent_id": "phase3_2026-10-11/part_d_online/features.csv#1092",
+        "entry": 46,
+        "reading": "deep-pit|notches",
+        "model": "existing-unresolved-target",
+        "raw_result": "existing target and geography outputs retained",
+        "clauses_before": {
+          "reported_window": "MATCH",
+          "configuration": "UNKNOWN"
+        },
+        "clauses_after": {
+          "form": "MATCH",
+          "function": "UNKNOWN",
+          "configuration": "UNKNOWN",
+          "entrance": "UNKNOWN",
+          "same_phase": "UNKNOWN",
+          "numerical_target": "UNKNOWN",
+          "original_datum": "UNKNOWN",
+          "textual_place_identity": "UNKNOWN",
+          "deep_qualification": "UNKNOWN"
+        },
+        "reported_subset": "UNKNOWN",
+        "phase_and_target_relation": "UNKNOWN",
+        "disposition": "not identifiable from available evidence",
+        "identification": "UNKNOWN",
+        "closed_assessment_reopened": false
+      }
+    ],
+    "retained_readings": [
+      {
+        "installation": "pool",
+        "interpretation": "ten-cubits-distance",
+        "status": "evaluated with missing observations retained as UNKNOWN",
+        "edition": "Puech2015 pp85,87-88; Lefkovits2000 pp331,333",
+        "conversion": "none; explicit unit/target interval required",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "pool",
+        "interpretation": "ten-cubits-depth",
+        "status": "evaluated with missing observations retained as UNKNOWN",
+        "edition": "Puech2015 pp85,87-88; Lefkovits2000 pp331,333",
+        "conversion": "none; explicit unit/target interval required",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "pool",
+        "interpretation": "ten-small-pits",
+        "status": "evaluated with missing observations retained as UNKNOWN",
+        "edition": "Lefkovits2000 p333",
+        "conversion": "count only",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "pool",
+        "interpretation": "ten-feet",
+        "status": "retained; original metric/count interpretation unverified",
+        "edition": "inherited text/readings.json; no native reinspection",
+        "conversion": "unverified",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "pool",
+        "interpretation": "twelve-feet",
+        "status": "retained; original metric/count interpretation unverified",
+        "edition": "inherited text/readings.json; no native reinspection",
+        "conversion": "unverified",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "pool",
+        "interpretation": "notches",
+        "status": "retained; original metric/count interpretation unverified",
+        "edition": "inherited text/readings.json; no native reinspection",
+        "conversion": "unverified",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "deep-pit",
+        "interpretation": "ten-cubits-distance",
+        "status": "evaluated with missing observations retained as UNKNOWN",
+        "edition": "Puech2015 pp85,87-88; Lefkovits2000 pp331,333",
+        "conversion": "none; explicit unit/target interval required",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "deep-pit",
+        "interpretation": "ten-cubits-depth",
+        "status": "evaluated with missing observations retained as UNKNOWN",
+        "edition": "Puech2015 pp85,87-88; Lefkovits2000 pp331,333",
+        "conversion": "none; explicit unit/target interval required",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "deep-pit",
+        "interpretation": "ten-small-pits",
+        "status": "evaluated with missing observations retained as UNKNOWN",
+        "edition": "Lefkovits2000 p333",
+        "conversion": "count only",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "deep-pit",
+        "interpretation": "ten-feet",
+        "status": "retained; original metric/count interpretation unverified",
+        "edition": "inherited text/readings.json; no native reinspection",
+        "conversion": "unverified",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "deep-pit",
+        "interpretation": "twelve-feet",
+        "status": "retained; original metric/count interpretation unverified",
+        "edition": "inherited text/readings.json; no native reinspection",
+        "conversion": "unverified",
+        "result": "not identifiable from available evidence"
+      },
+      {
+        "installation": "deep-pit",
+        "interpretation": "notches",
+        "status": "retained; original metric/count interpretation unverified",
+        "edition": "inherited text/readings.json; no native reinspection",
+        "conversion": "unverified",
+        "result": "not identifiable from available evidence"
+      }
+    ],
+    "limit": "Exposed selected witnesses; source-group failures are conditional. Existing geography/numerical outputs and regional denominators are retained, not recomputed. No registered unseen observation."
+  }
 }

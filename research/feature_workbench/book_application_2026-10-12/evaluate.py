@@ -5,6 +5,7 @@ import hashlib
 import io
 import json
 import re
+import importlib.util
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -202,6 +203,13 @@ def build():
               'witnesses': output, 'existing_bath_phases': phase_rows,
               'audit_dispositions': dispositions, 'scores': scores,
               'limitation': 'Selected source/physical-witness applications; no regional count, rank, rarity or confirmatory identification. Historical lane outputs untouched.'}
+    native_spec = importlib.util.spec_from_file_location('native_application', HERE / 'evaluate_native.py')
+    native = importlib.util.module_from_spec(native_spec)
+    native_spec.loader.exec_module(native)
+    native_result, native_inputs = native.build()
+    result['native_application'] = native_result
+    manifest['inputs'] = sorted({row['path']: row for row in manifest['inputs'] + native_inputs}.values(),
+                                key=lambda row: row['path'])
     return result, manifest
 
 
@@ -219,6 +227,10 @@ def artifacts(result, manifest):
     for s in result['scores']:
         writer.writerow({k: canon(v) if isinstance(v, (dict, list)) else v for k, v in s.items()})
     artifacts['applied_scores.csv'] = buf.getvalue()
+    native_spec = importlib.util.spec_from_file_location('native_application_csv', HERE / 'evaluate_native.py')
+    native = importlib.util.module_from_spec(native_spec)
+    native_spec.loader.exec_module(native)
+    artifacts['native_scores.csv'] = native.score_csv(result['native_application'])
     return artifacts
 
 

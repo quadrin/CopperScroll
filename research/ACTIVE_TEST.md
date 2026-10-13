@@ -2,7 +2,7 @@
 
 Updated 13 October 2026 UTC. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (13 October UTC): **obtained** — completed [the five supplied sources with uncertain prior coverage](sources/full_reads_2026-10-12/five_remaining_2026-10-13/README.md): McCown I, Pritchard, Rahmani and both Arnona reports. Recorded full supplied-scan scope, figure/plate checks, phase distinctions and source corrections, with missing adjoining publications explicit.
+Last session (13 October UTC): **obtained** — applied [the five native source readings to exact witnesses](feature_workbench/book_application_2026-10-12/README.md#native-source-application--13-october-2026-utc): Ci320/colonnade and reset-stone inference failures, Jason's chamber/niche/access alternatives, Arnona's group/count/date qualifications, separate Gibeon installations and Atara's remaining original-contact dependency. Conditional results retain unknown bearings, phases, target datums and incomplete coverage.
 
 ## Active questions and the observation that decides each
 
