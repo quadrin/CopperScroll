@@ -169,6 +169,8 @@ for entry in entries:
     if entry['id']=='21':
         entry['sources'] += '; Lefkovits 2000 pp. 185–189; Stacey 2009, The Dam; Stacey 2007, DSD 14 pp. 222–243'
     if entry['id']=='25':
+        # Put the documented cave comparison first without changing any candidate status or confidence.
+        entry['candidates'].sort(key=lambda c: c['placeId'] != 'abu_saraj_iv17')
         entry['sources'] += '; Sion 2002, ʿAtiqot 41 pp. 61–64, Plan 5 p. 63; existing IV/17 assessment (2 October 2026)'
     if entry['id']=='57':
         entry['sources'] += '; Magen 2008 plan p. 1743; catalogue-methodology correction (1 October 2026)'
