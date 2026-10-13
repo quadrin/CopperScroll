@@ -29,4 +29,10 @@ for(const p of plans){
  assert.equal(model.explorerFromHash(model.explorerHash(overview),primary)?.siteView,'photo');
 }
 for(const hash of ['#entry-61/site/qumran-ilan','#entry-21/site/unknown','#entry-21/site/qumran-ilan/unknown','#entry-21/site/qumran-ilan/D/photo/extra','#entry-21/site/qumran-ilan//photo'])assert.equal(model.explorerFromHash(hash,primary),null,hash);
+assert.equal(model.initialExplorer.mode,'site');
+assert.equal(model.initialExplorer.planId,'qumran-ilan');
+const generic=model.explorerFromHash('#entry-27/site',primary);
+assert.equal(generic?.mode,'site');assert.equal(generic?.placeId,'jericho_area');assert.equal(generic?.planId,null);
+assert.equal(model.explorerFromHash('#entry-27',primary)?.mode,'site');
+assert.equal(model.explorerHash(generic),'#entry-27/site');
 console.log(`Explorer data and routes passed: ${plans.length} source plans, ${roundtrips} feature/view roundtrips, bounded source coordinates, provenance and invalid routes.`);

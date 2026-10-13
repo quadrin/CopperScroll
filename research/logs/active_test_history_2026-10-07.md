@@ -230,3 +230,8 @@ Last session (12 October): **partly** — obtained [applied feature/phase compar
 ## Atlas source-plan and navigation session
 
 Last session (12 October): **partly** — obtained [desktop/mobile atlas interaction checks](../atlas/INTERACTION_VALIDATION.md) for the copper reader and site exploration controls, and [a photo integration proposal](../atlas/PHOTO_INTEGRATION.md). External map, terrain, photograph and JerusalemMap CDN loading remain blocked by the cloud proxy; network additions and reusable setup instructions were saved for review. The preceding session record is preserved in [history](logs/active_test_history_2026-10-07.md#session-record-preserved-during-atlas-ui-work).
+
+
+## Archaeology-first interface correction
+
+Last session (12 October): **obtained** — [source-plan exploration and restorable Back navigation](../atlas/PHOTO_INTEGRATION.md), with [desktop/mobile browser validation](../atlas/INTERACTION_VALIDATION.md) and [source/geometry provenance](assets/plans/atlas-explorer/manifest.json). Public map/photograph loading now works through the cloud proxy. The supplied Drive folder redirects to sign-in and exposes no callable connector here, so additional library documents were not inspected. The preceding UI session record is preserved in [history](logs/active_test_history_2026-10-07.md#atlas-source-plan-and-navigation-session).

@@ -2,7 +2,7 @@
 
 Updated 12 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **obtained** — [source-plan exploration and restorable Back navigation](../atlas/PHOTO_INTEGRATION.md), with [desktop/mobile browser validation](../atlas/INTERACTION_VALIDATION.md) and [source/geometry provenance](assets/plans/atlas-explorer/manifest.json). Public map/photograph loading now works through the cloud proxy. The supplied Drive folder redirects to sign-in and exposes no callable connector here, so additional library documents were not inspected. The preceding UI session record is preserved in [history](logs/active_test_history_2026-10-07.md#atlas-source-plan-and-navigation-session).
+Last session (12 October): **obtained** — [archaeology-first interface correction](../atlas/PHOTO_INTEGRATION.md) and [desktop/mobile checks](../atlas/INTERACTION_VALIDATION.md): source plans are the default, broad candidates open regional excavation context, and modern urban geometry is removed from the terrain locator. Old city-map views migrate to the archaeological view. The preceding session record is preserved in [history](logs/active_test_history_2026-10-07.md#archaeology-first-interface-correction).
 
 ## Active questions and the observation that decides each
 

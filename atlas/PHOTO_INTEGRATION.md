@@ -1,6 +1,6 @@
 # Site exploration and photo integration
 
-The atlas now has two primary views: **Explore** and **Read the scroll**. Find opens searchable entry browsing. The selected map card's **Explore candidate** opens a source-plan explorer for Qumran, Jericho royal palaces and Siloam. Candidates without a curated source plan retain their map and entry evidence; this is an explicit coverage limit.
+The atlas now has two primary views: **Explore** and **Read the scroll**. Find opens searchable entry browsing. The selected map card's **Explore candidate** opens a source-plan explorer for Qumran, Jericho royal palaces and Siloam. Candidates without a specific source plan open a catalogue of documented regional excavations and the entry’s unresolved feature requirements. Regional plans are context, not substitute identifications. Saved older city-map views migrate to this archaeological starting point.
 
 ## Current interaction
 
@@ -10,7 +10,7 @@ The atlas now has two primary views: **Explore** and **Read the scroll**. Find o
 - Jericho offers the licensed Area AC figure and early/later reconstructed Pools Complex figures. A(C)90, A(C)94, AC44, the distribution basin and aqueduct approaches have approximate image selection regions. The northern complex remains separate from Area AC.
 - Siloam uses a labelled project tracing of selected W1, L103, L102/L104 and W3 relations from Greenhut & Mazor 2020 Plan 1, p. 74*. It is a simplified source-relative diagram.
 - Photos opens the candidate's existing annotated photograph in the same inspector. Select a photographic detail, pan/zoom, or enlarge the image. Photograph highlights retain their image coordinates. A source-plan feature is not automatically equated with a photographed feature.
-- Terrain context returns to the candidate's close map view. Selected historical-map records become clickable at site scale, with source-map dates and positional error in their inspector. Modern buildings provide present-day context.
+- Regional terrain is a secondary physical-geography locator. Modern buildings, street geometry, land-use/POIs and modern-raster fallback have been removed. Historical-map records remain in the optional archive tools.
 - Back and browser Back/Forward restore entry, candidate, source plan, feature, photo/detail selection and recorded map/plan/photo cameras. Reload restores the saved history entry. Scroll column changes also enter browser history.
 - Historical maps are under Map layers. Dossiers and research tools remain available on demand. The persistent three-panel register and primary Landscapes/Scene navigation have been removed.
 

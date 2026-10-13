@@ -2,6 +2,8 @@
 
 Validated in the onboarding machine on 12 October 2026 (Los Angeles).
 
+- Archaeology-first correction: desktop/mobile browser checks passed for the default source plan, entry 27’s regional excavation catalogue, Area AC feature selection, Back and migration of saved old city-map views. The applied terrain style reports zero modern urban layers.
+- The real OpenFreeMap style and a failure fixture passed checks removing buildings, roads, land-use/POIs, hidden height layers and modern-raster fallback while retaining physical-geography layers.
 - Pinned pnpm installation, TypeScript and the production Pages build passed. Dependency manifests and the lockfile were preserved. Vite retains a large-chunk warning.
 - Source-plan data checks passed for provenance, frame bounds, valid entry/place references and feature/view deep-link roundtrips. Existing reader and navigation checks passed, including manuscript-photo routes and legacy aliases.
 - Research-tool rendering passed for all five modules and saved selector choices.

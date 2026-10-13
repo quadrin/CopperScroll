@@ -7,7 +7,7 @@ import { Slider } from "@/components/ui/slider";
 import type { Map as LibreMap, Marker, StyleSpecification, GeoJSONSource } from "maplibre-gl";
 import type { Entry, Place } from "./atlas-types";
 import { candidateAreas, candidateBounds } from "./atlas-geography";
-import historicalFeatures from "./atlas-landscape-features.json";
+import { terrainOnlyStyle, terrainFallback } from "./atlas-terrain-style";
 import type { Camera as MapCamera } from "./atlas-explorer-model";
 import sceneData from "./atlas-scenes.json";
 import "./atlas-explore.css";
@@ -32,7 +32,7 @@ export default function AtlasMap(props:Props) {
   const [error,setError]=useState("");
   const [retry,setRetry]=useState(0);
   const [bearing,setBearing]=useState(0);
-  const [buildings,setBuildings]=useState(true);
+  const [modernLayerCount,setModernLayerCount]=useState<number|null>(null);
   const [exaggeration,setExaggeration]=useState(1.5);
   const [terrainState,setTerrainState]=useState("loading");
   const [mapZoom,setMapZoom]=useState(10.3);
@@ -55,35 +55,10 @@ export default function AtlasMap(props:Props) {
         try {
           const res=await fetch("https://tiles.openfreemap.org/styles/liberty",{signal:AbortSignal.any([abort.signal,AbortSignal.timeout(12000)])});
           if(!res.ok)throw Error("Basemap unavailable");
-          style=await res.json();
-          style.layers=style.layers.filter(l=>l.type!=="fill-extrusion" && !/poi|aeroway|aerodrome|road_shield|boundary|housenumber/i.test(l.id));
-          for(const l of style.layers){
-            if(l.type==="background")l.paint={...l.paint,"background-color":"#e6dac0"};
-            if(l.type==="fill"){
-              const color=/water/i.test(l.id)?"#a6beb2":/park|wood|forest|landcover/i.test(l.id)?"#c8c7a4":/building/i.test(l.id)?"#cbbda0":"#ddcfaf";
-              l.paint={...l.paint,"fill-color":color};
-              if(/landcover|park/.test(l.id))l.paint["fill-opacity"]=.35;
-            }
-            if(l.type==="line"){
-              l.paint={...l.paint,"line-color":/water/i.test(l.id)?"#9db6ad":/path|track/i.test(l.id)?"#bda782":"#cbb690"};
-              if(!/water/.test(l.id))l.paint["line-opacity"]=.5;
-            }
-            if(l.type==="symbol"){
-              // Liberty names settlement layers label_city, label_town, etc.
-              // Use the tile source category instead of assuming an ID prefix.
-              const sourceLayer=l["source-layer"]??"";
-              const placeLabel=sourceLayer==="place"||/place|label_(city|town|village|state|country)/i.test(l.id);
-              const landscapeLabel=/^(water_name|mountain_peak)$/.test(sourceLayer)||/water_name|peak/i.test(l.id);
-              if(placeLabel||landscapeLabel){
-                l.paint={...l.paint,"text-color":/water/.test(l.id)?"#64847b":"#817052","text-halo-color":"#eee3c9","text-halo-width":1.6};
-                l.layout={...l.layout,visibility:"visible"};
-                if(placeLabel)l.layout["text-field"]=["coalesce",["get","name:en"],["get","name_en"],["get","name:latin"],["get","name"]];
-              }else l.layout={...l.layout,visibility:"none"};
-            }
-          }
+          style=terrainOnlyStyle(await res.json());
         }catch(e){
           if(abort.signal.aborted)return;
-          style={version:8,sources:{osm:{type:"raster",tiles:["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],tileSize:256,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}},layers:[{id:"osm",source:"osm",type:"raster",paint:{"raster-saturation":-.85,"raster-opacity":.72}}]};
+          style=structuredClone(terrainFallback);
         }
         if(gone||!container.current)return;
         const map=new lib.Map({container:container.current,style,...INITIAL,maxZoom:19,minZoom:6,maxPitch:75,attributionControl:false,renderWorldCopies:false});
@@ -109,16 +84,7 @@ export default function AtlasMap(props:Props) {
           map.addLayer({id:"precision-fill",type:"fill",source:"precision",paint:{"fill-color":["case",["get","selected"],"#b97436","#5c8374"],"fill-opacity":["interpolate",["linear"],["zoom"],10,.22,15,.045,18,.015]}});
           map.addLayer({id:"precision-halo",type:"line",source:"precision",filter:["==",["get","selected"],true],paint:{"line-color":"#fff0c8","line-width":7,"line-opacity":.8}});
           map.addLayer({id:"precision-line",type:"line",source:"precision",paint:{"line-color":["case",["get","selected"],"#9a4d21","#486b5e"],"line-opacity":.95,"line-width":["case",["get","selected"],2.5,1.5],"line-dasharray":[3,2]}});
-          // OpenFreeMap building footprints provide context; heights are tile estimates.
-          const buildingSource=Object.entries(map.getStyle().sources).find(([,source])=>source.type==="vector")?.[0];
-          if(buildingSource)map.addLayer({id:"site-buildings",type:"fill-extrusion",source:buildingSource,"source-layer":"building",minzoom:14,paint:{"fill-extrusion-color":"#c4b69e","fill-extrusion-height":["coalesce",["get","render_height"],5],"fill-extrusion-base":["coalesce",["get","render_min_height"],0],"fill-extrusion-opacity":.75}},firstSymbol);
-          map.addSource("archaeological-records",{type:"geojson",data:historicalFeatures as Parameters<GeoJSONSource["setData"]>[0]});
-          map.addLayer({id:"archaeological-points",type:"circle",source:"archaeological-records",minzoom:12,paint:{"circle-radius":["interpolate",["linear"],["zoom"],12,4,17,8],"circle-color":"#8c4d2c","circle-stroke-width":2,"circle-stroke-color":"#fff2d6"}});
-          map.addLayer({id:"archaeological-labels",type:"symbol",source:"archaeological-records",minzoom:14,layout:{"text-field":["coalesce",["get","label_as_printed"],["get","feature_class"]],"text-size":12,"text-offset":[0,1.5],"text-anchor":"top"},paint:{"text-color":"#563c28","text-halo-color":"#fff5df","text-halo-width":2}});
-          map.on("click","archaeological-points",event=>{const id=event.features?.[0]?.id;if(id!=null)latest.current.onRecord?.(String(id));});
-          map.on("mouseenter","archaeological-points",()=>{map.getCanvas().style.cursor="pointer"});
-          map.on("mouseleave","archaeological-points",()=>{map.getCanvas().style.cursor=""});
-          map.on("click","precision-fill",event=>{if(map.queryRenderedFeatures(event.point,{layers:["archaeological-points"]}).length)return;const id=event.features?.[0]?.properties?.placeId;if(typeof id==="string")latest.current.onPlace(id)});
+          map.on("click","precision-fill",event=>{const id=event.features?.[0]?.properties?.placeId;if(typeof id==="string")latest.current.onPlace(id)});
           map.on("mouseenter","precision-fill",()=>{map.getCanvas().style.cursor="pointer"});
           map.on("mouseleave","precision-fill",()=>{map.getCanvas().style.cursor=""});
           for(const place of places){
@@ -137,6 +103,7 @@ export default function AtlasMap(props:Props) {
           }
           map.on("sourcedata",e=>{if(e.sourceId==="terrain"&&e.isSourceLoaded)setTerrainState("ready")});
           if(latest.current.restoreCamera)map.jumpTo(latest.current.restoreCamera);
+          setModernLayerCount(map.getStyle().layers.filter(layer=>layer.type==="fill-extrusion"||/building|transportation|landuse|poi/i.test(("source-layer" in layer?layer["source-layer"]??"":"")+" "+layer.id)).length);
           setReady(true);
         });
         observer=new ResizeObserver(()=>map.resize());observer.observe(container.current);
@@ -182,11 +149,8 @@ export default function AtlasMap(props:Props) {
     }
   },[focusNonce,ready,focusId,places]);
   useEffect(()=>{const map=mapRef.current;if(ready&&map&&props.restoreCamera){restoring.current=true;map.stop();map.jumpTo(props.restoreCamera);requestAnimationFrame(()=>{restoring.current=false})}},[ready,props.restoreNonce]);
-  useEffect(()=>{const map=mapRef.current;if(!ready||!map)return;const filter=["==",["get","place_id"],focusId??""] as import("maplibre-gl").FilterSpecification;map.setFilter("archaeological-points",filter);map.setFilter("archaeological-labels",filter)},[ready,focusId]);
-  useEffect(()=>{const map=mapRef.current;if(!ready||!map)return;map.setPaintProperty("archaeological-points","circle-color",["case",["==",["id"],props.recordId??""],"#da8a3e","#8c4d2c"]);map.setPaintProperty("archaeological-points","circle-stroke-width",["case",["==",["id"],props.recordId??""],4,2])},[ready,props.recordId]);
   useEffect(()=>{if(mobileView==="map")requestAnimationFrame(()=>mapRef.current?.resize())},[mobileView]);
 
-  useEffect(()=>{const map=mapRef.current;if(ready&&map?.getLayer("site-buildings"))map.setLayoutProperty("site-buildings","visibility",buildings&&mode==="3d"?"visible":"none")},[ready,buildings,mode]);
   function inspectSite(){
     const place=places.find(p=>p.id===focusId);
     if(place?.lat==null||place.lon==null)return;
@@ -201,7 +165,7 @@ export default function AtlasMap(props:Props) {
   const selectedPlace=places.find(p=>p.id===focusId)??null;
   const scene=sceneData.find(s=>s.placeId===selectedPlace?.id);
   return <section className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""} ${immersive?"immersive-mode":""}`} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":"Interactive candidate map"}>
-    <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} data-map-zoom={mapZoom.toFixed(3)} data-map-center={coordinates} aria-label="Geographic map of the Copper Scroll candidate sites" />
+    <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} data-modern-layer-count={modernLayerCount??"loading"} data-map-zoom={mapZoom.toFixed(3)} data-map-center={coordinates} aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
     {!offMap&&<div className="map-toolbar">
       <Tabs value={mode} onValueChange={onMode} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger></TabsList></Tabs>
@@ -209,7 +173,7 @@ export default function AtlasMap(props:Props) {
     </div>}
     <div className="map-caption">The Judean hills & the Jordan valley</div>
     <button className="compass-control" aria-label="Reset map north" onClick={()=>mapRef.current?.easeTo({bearing:0,duration:500})}><span>N</span><Compass strokeWidth={1.1} style={{transform:`rotate(${-bearing}deg)`}}/></button>
-    {mode==="3d"&&<details className="terrain-controls"><summary>Terrain settings</summary><label>Terrain relief <span>{exaggeration.toFixed(1)}×</span></label><Slider aria-label="Terrain vertical exaggeration" value={[exaggeration]} min={1} max={3} step={.25} onValueChange={v=>setExaggeration(v[0])}/><label className="building-toggle"><input type="checkbox" checked={buildings} onChange={event=>setBuildings(event.target.checked)}/> Modern buildings</label><span className="terrain-hint">Drag with the right mouse button to orbit. On touch, use two fingers.</span>{terrainState==="unavailable"&&<span className="terrain-hint">Elevation tiles are unavailable. Try 2D or reload.</span>}</details>}
+    {mode==="3d"&&<details className="terrain-controls"><summary>Terrain settings</summary><label>Terrain relief <span>{exaggeration.toFixed(1)}×</span></label><Slider aria-label="Terrain vertical exaggeration" value={[exaggeration]} min={1} max={3} step={.25} onValueChange={v=>setExaggeration(v[0])}/><span className="terrain-hint">Drag with the right mouse button to orbit. On touch, use two fingers.</span>{terrainState==="unavailable"&&<span className="terrain-hint">Elevation tiles are unavailable. Try 2D or reload.</span>}</details>}
     <div className="zoom-controls"><button className="tool-button" aria-label="Zoom in" onClick={()=>mapRef.current?.zoomIn()}><Plus size={18}/></button><button className="tool-button" aria-label="Zoom out" onClick={()=>mapRef.current?.zoomOut()}><Minus size={18}/></button><button className="tool-button" aria-label="Regional overview" onClick={overview}><RotateCcw size={15}/></button></div>
     <div className="map-selection-note" aria-live="polite">{selectedPlace?<><strong>{selectedPlace.shortName}</strong><span>{selectedPlace.lat===null?"No coordinate assigned":`Shaded candidate area · ${selectedPlace.precision}`}</span><small>{selectedPlace.lat===null?"This location remains unplaced.":"Approximate extent, not a surveyed boundary."}</small><div className="site-inspection-actions"><button type="button" onClick={props.onExploreSite??inspectSite} disabled={!props.onExploreSite&&(selectedPlace.lat==null||selectedPlace.lon==null||!ready)}>Explore candidate</button><button type="button" onClick={props.onExploreSite??(()=>onMode("dossier"))}>Structures &amp; evidence</button></div>{scene&&<button type="button" className="site-photo-preview" onClick={props.onExploreSite??(()=>onMode("ground"))}><img src={scene.src} alt="" loading="lazy" onError={event=>{event.currentTarget.hidden=true}}/><span>{scene.title} · {scene.highlights.length} details</span></button>}</>:<span>No mapped candidate for this entry.</span>}</div>
     <div className="map-legend"><span><i className="legend-area"/>Selected area</span><span><i className="legend-area alternate"/>Other candidates</span></div>
