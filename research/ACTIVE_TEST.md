@@ -2,7 +2,7 @@
 
 Updated 12 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **obtained** — authenticated Drive access, identification of the new SWP map set, and [candidate-plan update](../atlas/PHOTO_INTEGRATION.md). Gerizim’s coin-context error is corrected; separate Gerizim, Doq, Hyrcania and IV/17 source plans and dossiers are available, with Sheet XI retained as historical context. IV/17 is carried from its existing provisional assessment with mouth coordinates unassigned.
+Last session (12 October): **obtained** — [interactive 3D site models and browser observations](../atlas/INTERACTION_VALIDATION.md#interactive-3d-site-models): local map navigation, structure focus, camera restoration, cave cutaway, responsive details and terrain context. [Source dimensions and display assumptions](assets/plans/atlas-explorer/manifest.json) are recorded; mapped surroundings use archived elevation data, and IV/17’s unlocated rock setting is labelled illustrative.
 
 ## Active questions and the observation that decides each
 

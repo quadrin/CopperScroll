@@ -13,6 +13,12 @@ Validated in the onboarding machine on 12 October 2026 (Los Angeles).
 
 Qumran and Siloam project drawings retain source-relative coordinates. Jericho figure overlays are approximate image selection regions. No source-plan feature is declared geographically registered; the sources and transformations are recorded in `research/assets/plans/atlas-explorer/manifest.json` and its atlas mirror. Feature identity and scroll association remain separate.
 
-The supplied Drive folder redirects to Google sign-in. This session has no callable Drive connector; no new library documents were inspected. The environment draft preserves existing domains and adds `drive.google.com`, plus refreshed install/start instructions. Draft saving does not supply Drive authentication or publish an environment snapshot.
+Authenticated Drive access was subsequently verified on 12 October through the user’s Chrome session; the source-plan intake is documented in [PHOTO_INTEGRATION.md](PHOTO_INTEGRATION.md).
 
 Pages assets were regenerated for the implementation. A Git push and a successful build do not establish that the public Pages deployment has completed.
+
+## Interactive 3D site models
+
+Browser observations on 12 October verified structural models rendering with source feature markers, map-style drag panning, orbit navigation, feature focus, top view, camera persistence on reload, Source plan switching and browser Back restoration. The historical SWP map retains its flat view. The cave exposes its roof/cutaway control. Desktop and 390 × 844 viewport checks cover the overview and feature inspector; the selected mobile detail sheet gives the model its own visible surface and keeps navigation controls above the sheet. Touch pan and pinch handlers are configured through OrbitControls; physical touch-device testing is pending.
+
+The surrounding ground uses archived Mapterhorn elevations around mapped site anchors, with a disclosed display bench. IV/17’s setting is labelled illustrative and receives no geographic coordinates. Elevation-grid, finite-geometry and source-dimension tests passed, including the separately published pool depths and cave height range. Existing explorer, reader, terrain-style and navigation checks passed. TypeScript and the Pages production build passed; the large-chunk warning remains.

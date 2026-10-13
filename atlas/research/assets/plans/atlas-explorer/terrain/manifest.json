@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-12",
+  "source": "Mapterhorn terrain tiles",
+  "tilejson": "https://tiles.mapterhorn.com/tilejson.json",
+  "attribution_url": "https://mapterhorn.com/attribution/",
+  "encoding": "Terrarium: R*256 + G + B/256 - 32768 metres",
+  "tiles": [
+    {
+      "url": "https://tiles.mapterhorn.com/12/2448/1666.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain/12-2448-1666.webp",
+      "sha256": "b4ce5e4ebafe5aa2c6580a6dc869570a9cb4c4f27df5088a444c578dd5b5107d"
+    },
+    {
+      "url": "https://tiles.mapterhorn.com/12/2449/1660.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain/12-2449-1660.webp",
+      "sha256": "65aa7582643ebcf98f6f653a51e385dcab21f54e247a2c6117d2e349e31d2a11"
+    },
+    {
+      "url": "https://tiles.mapterhorn.com/12/2450/1667.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain/12-2450-1667.webp",
+      "sha256": "ec72072ba162fd985b8705e9fa349cd84ef7568e0e46e7ef476b7010d7d0e196"
+    },
+    {
+      "url": "https://tiles.mapterhorn.com/12/2451/1664.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain/12-2451-1664.webp",
+      "sha256": "f0b6bc2e099936677e79f2b4dd7bdf0f06dcf8641d8ad6dabbf872fddea97238"
+    },
+    {
+      "url": "https://tiles.mapterhorn.com/12/2451/1665.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain/12-2451-1665.webp",
+      "sha256": "5039784ad5ede0fb7e9d9453a62d26e7c24a1d0c2a3621220a690042adb899b9"
+    },
+    {
+      "url": "https://tiles.mapterhorn.com/12/2451/1666.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain/12-2451-1666.webp",
+      "sha256": "868f1ece7c41c32b4fc83994a4b1ec28415ed3d0a1089a022578c179f292705e"
+    }
+  ],
+  "sources": [
+    {
+      "source": "glo30",
+      "name": "COPERNICUS GLO-30",
+      "website": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "license": "COPERNICUS full, free and open license",
+      "producer": "DLR e.V. 2010-2014, Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA. All rights reserved. Accessed via OpenTopography and AWS Open Data.",
+      "license_pdf": "https://github.com/mapterhorn/mapterhorn/blob/main/source-catalog/glo30/LICENSE.pdf",
+      "resolution": 30.0,
+      "access_year": 2025,
+      "tarball_size": 306375178240,
+      "tarball_md5sum": "133453b85b63c4a04538d77956c314d3",
+      "tarball_url": "https://download.mapterhorn.com/sources/glo30.tar"
+    },
+    {
+      "source": "isr10",
+      "name": "10 meter Digital Elevation Model (DEM) of Israel",
+      "website": "https://www.jspacesystems.or.jp/ersdac/GDEM/E/",
+      "license": "ASTER GDEM Public Domain",
+      "producer": "ASTER GDEM courtesy of METI and NASA processed by 4cast LTD using VTbuilder",
+      "license_pdf": "https://github.com/mapterhorn/mapterhorn/blob/main/source-catalog/isr10/LICENSE.pdf",
+      "resolution": 10.0,
+      "access_year": 2026,
+      "tarball_size": 1449093120,
+      "tarball_md5sum": "80a845ff3f99877fcd5b4a123dbc3eca",
+      "tarball_url": "https://download.mapterhorn.com/sources/isr10.tar"
+    }
+  ],
+  "sampling": "Bilinear decoded elevation; 65 × 65 samples over an 800 m square around the existing gazetteer anchor; x east, z south. Modern elevation is contextual, not ancient ground level. Local rendered plateau is feathered to expose the unregistered architectural model.",
+  "asset": "atlas/app/atlas-model-terrain.json",
+  "asset_sha256": "2ee460c8edafa6dc9af19f959bfb20484b333a47f36a9b3581998c6bd8facfb0",
+  "limit": "Site-anchor precision retained. Model position, compass bearing, bench and architectural thresholds are illustrative; the terrain does not register the plan or identify a feature. IV/17 has no coordinates and receives no measured terrain patch.",
+  "access_limit": "Zoom 14 tiles returned 404 for the requested sites. Zoom 12 global tiles were retrieved successfully; interpolation does not improve native terrain accuracy."
+}

@@ -188,5 +188,28 @@
     "delivery": "Original page pixels are not added to the public application; the app displays a labelled project tracing."
   },
   "photo_links": "Existing atlas-scenes.json records and image-relative highlight polygons are reused. Plan features are not automatically registered to photographs.",
-  "drive_access": "Authenticated Google Drive access verified 12 October 2026. Folder index and newly uploaded SWP map set and Raviv–Zissu 2022 article retrieved; modern excavation scans already archived in the repository were reinspected. The SWP upload is a survey map set, not a Gerizim architectural report."
+  "drive_access": "Authenticated Google Drive access verified 12 October 2026. Folder index and newly uploaded SWP map set and Raviv–Zissu 2022 article retrieved; modern excavation scans already archived in the repository were reinspected. The SWP upload is a survey map set, not a Gerizim architectural report.",
+  "model_rendering": {
+    "asset": "atlas/app/atlas-model-geometry.ts",
+    "sha256": "57c86fca67a6d6ee26d86521dc2b31f57d1b90fca427ed7eacef6c13c905d022",
+    "renderer": "Three.js 0.186.1; orthographic interactive local site model",
+    "selection": "Source feature IDs retained. Model camera focus is a display operation. Source image/tracing remains independently available.",
+    "dimensions": {
+      "abu-saraj-iv17": "Plan 5 scale, 3 m / 178 sampled pixels. Uniform height 1.55 m within reported 1.4–1.7 m. Roof cap, rock thickness, masonry height and scan sampling illustrative.",
+      "hyrcania-waterworks": "Northern pool floor at -5 m, southern member at -2.6 m; approximate published northern sides. Rock separation 5.1 m within reported 4.8–5.4 m. Southern footprint, bridge, summit and other cistern dimensions illustrative.",
+      "gerizim-precinct": "Reported 212 × 136 m enclosure, 40 × 40 m mansion, 20 × 14 m building IV, 25 × 24 m citadel. East stair uses maximum 23 m width, 34 m run, 15.5 m rise and approximately 57 steps. Western landing distinct from southern seven-step and E1 flights. Other heights, divisions, cistern and platform relief illustrative.",
+      "jericho-early": "Approximate 18 × 13 m pool envelopes; 2.5 m depth, columns and platform illustrative.",
+      "jericho-late": "Approximate 32 × 18 m joined envelope; 2.5 m depth, columns and platform illustrative.",
+      "relative_models": "Doq, Qumran, Siloam and Area AC are normalized relative frames. Heights/depths and channel cross-sections illustrative; selection envelopes are not measured footprints."
+    },
+    "historical_context": "gerizim-swp-context remains a flat survey map.",
+    "orientation": "Source frame relationships retained or simplified as documented; no geographic registration or additional compass bearing inferred.",
+    "interpretation": "Display geometry and materials are illustrative; consult each feature evidence record and model assumptions.",
+    "landscape": {
+      "geometry": "atlas/app/atlas-model-landscape.ts",
+      "elevation_data": "atlas/app/atlas-model-terrain.json",
+      "provenance": "research/assets/plans/atlas-explorer/terrain/manifest.json",
+      "method": "Modern elevation sampled around existing site anchors, with a feathered display bench and source-qualified architectural volumes. Terrain is contextual; footprint placement and compass bearing are illustrative. IV/17 uses an illustrative setting without coordinates."
+    }
+  }
 }
