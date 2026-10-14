@@ -31,3 +31,10 @@ Original PDFs and selected page renders remain in private intake. Reproduction p
 - Original PDFs, extracted text and inspection pages: `regional_sources/`
 
 Partly — source-specific comparative observations and copy corrections obtained; raw Wadi Hamam image access and missing Omrit II pages remain unresolved.
+
+
+## Full-reading follow-up, 14 October2026
+
+The targeted scopes above remain historical. [Regional-book coverage](full_coverage_regional_books.md) now records the expanded text and native reading separately from damaged or inaccessible parts. OmritI's AppendixC, printed p.372, supplies WGS84/UTM36N survey control. Its survey pointA1 (northing3678674.317, easting748176.871, elevation182.856m) is not OmritII's southwest grid cornerA1 (northing3678622.95, easting748165.09). A shared point name cannot establish one reference point. Keep datum, grid origin, survey station and architectural point roles separate; no new coordinate-transfer uncertainty is inferred.
+
+Nabratein's complete available text includes its field descriptions and appendices. AppendixA, printed p.434, calls4041 a bedrock pit rather than confirming the narrative's possible chamber. AppendixB, pp.460–461, assigns fills4032,4036 and4038 to PeriodII with Early/Middle Roman pottery; the4037 period cell is blank, while its pottery key separately labels itII. These are fill contexts. The report's conclusion, p.397 n.2, retains unused-grave or storage alternatives to a hiding-place interpretation. Excavation reach and dated fills cannot establish the original function or construction date of every cavity. Native figure/table coverage and the supplied wrong-cover anomaly remain in the coverage record.

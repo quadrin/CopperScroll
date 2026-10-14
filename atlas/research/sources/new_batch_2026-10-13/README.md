@@ -1,7 +1,8 @@
 # New PDF batch: changes and source coverage
 
-Reviewed 14 October 2026 UTC / 13 October Los Angeles against repository commit 23e2b74. The latest acquisition batch contains 72 PDF file identities; four additional earlier-timestamp cave/epigraphy sources were selected to assess the same questions. [Coverage](coverage.json) records the actual inspection scope for every batch file. Large volumes received targeted reading; selected short articles were read completely. Missing leaves, clipped captures and inaccessible native images remain explicit. Source possession, OCR generation and page rendering do not establish full reading.
+Completed the available-source full-reading pass on 14 October 2026 UTC. The batch contains 72 PDF file identities, plus four earlier cave/epigraphy sources selected for the same questions. Readable text was consumed through notes, captions, tables, appendices, bibliography and indexes. Available native figure/table targets were inspected; the City of David and full Wadi Hamam native PDFs remain inaccessible because they exceed the connector's raw-file limit. Missing leaves, clipped captures, source obstructions and illegible details remain explicit.
 
+[Coverage](coverage.json) now separates current available-text reading, native target passes and physical-publication completeness. Its earlier targeted reviews are retained as history. Duplicate copies, samples, excerpts and repeated field observations receive no independent corroboration credit.
 ## Findings that change the evidence
 
 **A particular proposed second entrance to 11Q is ruled out by the author’s reinspection.** Humbert 2019 p. 52 reports that the northern crevasse previously proposed as a passage could not have served as one. The natural pillar is internal. The same volume preserves disagreement over ancient partitions and possible excavation supports; surviving walls do not have a settled common date. This is an exploratory source correction to that named mouth model, with no registered unseen prediction. [Cave/epigraphy evidence](cave_text_changes.md) retains the alternatives, exact pages and the separate CIIP/Burgin inscription-unit discrepancy. IV/17 and Twin Cave require their own ancient access records.
@@ -14,8 +15,10 @@ Reviewed 14 October 2026 UTC / 13 October Los Angeles against repository commit 
 
 ## Copy and identity corrections
 
-- Omrit I A/B share one publication lineage; one copy adds a blank cover. Omrit II has a malformed page tree and lacks printed pp. 31–80.
-- Huqoq 2023 contains front matter and opening p. 48 only; pp. 49–65 remain missing.
+- Omrit I A/B share one publication lineage: A leaves2–415 exactly match B leaves1–414 in ordered extracted text. A adds a blank leaf. Fig555 remains obscured in both copies. Omrit II has a malformed page tree and lacks printed pp.31–80; rewriting its surviving page tree recovered no missing content.
+- The Middle Maccabees file has missing image/font resources and a French RPG sheet in place of printed42/Fig3.3. Available English text and encountered native figures were read; a sound copy is still needed.
+- Nabratein has a Gush Halav VolumeV cover, while its title, body and edition are Nabratein VolumeVI (2009). Its native catalogue keys and complete/critical locus lists are now inspected.
+- The original Huqoq 2023 copy contains front matter and opening p. 48 only. A [complete author copy](https://drive.google.com/file/d/1YySZwhcAJKb2iFsbr9DMDW_Y8SiFdQaZ/view) was recovered from the excavation project's UNC site, restoring pp. 49–65; its original incomplete file identity is retained.
 - The Muraq capture has blank loading panels in PDF pages 7–10; its readable body remains a partial source.
 - Wadi Hamam’s full PDF and the City of David report exceed the raw download limit; readable text is available, with native-image scope uninspected.
 - The 11Q publisher sample repeats the full volume’s front matter and opening. The 2024 Invisible Synagogues excerpt is only its first chapter page; its containing volume supplies the chapter, and the Hebrew 2022 article remains a distinct publication.
@@ -25,6 +28,23 @@ Reviewed 14 October 2026 UTC / 13 October Los Angeles against repository commit 
 
 ## What this allows next
 
+The authorized available-source pass is finished. The source records distinguish text actually read, native targets actually inspected, source-legibility limits and missing publication leaves: [water](full_coverage_water.md), [caves and epigraphy](full_coverage_caves.md), [regional articles](full_coverage_regional_articles.md), [regional books](full_coverage_regional_books.md), [synagogue articles](full_coverage_synagogue_articles.md), [context books](full_coverage_context_books.md), [City of David](full_coverage_city_david.md), and [Middle Maccabees](full_coverage_middle_maccabees.md). The earlier targeted-review scopes remain historical records. [The inventory](latest72_inventory.csv) now identifies canonical publication copies and links excerpts and repaired copies without treating them as independent field observations.
+
 The new reservoir/contact plans and cave phase descriptions are exposed exploratory evidence. They can define better candidate/control models and precise missing observations. A confirmatory test still requires an independently reserved observation and parameters fixed before inspection. The requested Siloam main-basin junction section was not obtained from the new report; its area assignments instead correct a retrieval crosswalk. No deposit point or site identification follows from this batch.
 
-**Last session: partly obtained** — source-specific changes and coverage recorded, the 11Q northern-crevasse model corrected and primary concealment/hydraulic contexts added; incomplete copies and targeted long-volume reading remain explicit.
+The native checks add three practical corrections. OmritI's survey pointA1 (printed372) differs in role and coordinates from OmritII's southwest grid cornerA1 (printed10). Nabratein's pottery keys and appendices preserve conflicting locus/period/date assignments, including coinC87; dates for fills do not date the rock cutting. The inscription corpus's personal-name index covers volumesI–IV and its geographical/alphabetical keys repeat one dataset, so duplicate rows cannot establish independent persons or locations.
+
+## Remaining source coverage
+
+| Needed material | Exact gap |
+|---|---|
+| Sound Middle Maccabees copy | Printed42/Fig3.3, absent native illustrations and Greek/Hebrew font resources |
+| OmritII missing leaves | Printed31–80, including pottery chapter and lamps opening |
+| Arak Hala figure suite | Printed215–226, Figs1–19 |
+| Native City of David and full Wadi Hamam | Raw PDFs exceed the256MiB connector limit; Wadi's referenced Appendices18.1–18.3 are absent from the readable response |
+| Complete article/capture versions and attachments | Clipped Diab/Muraq/Maon/Merot and other joins; absent Rimmon pottery tables, Merot plates and BetShearim attachments as itemized in the lane reports |
+| Clearer figure details | OmritI Fig555 obstruction, CIIP/11Q/Nabratein fine labels and other source-specific low-resolution details |
+
+The 11Q introduction (printed5/viewer30) identifies a1952 ÉBAF plan of3Q marking the Copper Scroll and other fragments. It is a precise retrieval lead, recorded in the existing cave evidence and R02 backlog; the original plan has not been opened. Private figure archives preserve source hashes, exact page mappings, original captions/credits and inspection scope. Local asset/ZIP hashes and uploaded ID/name/size/parent readbacks were checked; local hashes are not claimed as remote checksums. Archive metadata snapshots retain their historical timing; the current coverage records govern later reading and folio corrections.
+
+**Last session: partly** — available-source text and native target passes finished; source-specific corrections, private preservation and canonical-copy coverage reconciled. Missing originals and illegible details prevent complete physical-publication coverage.

@@ -44,6 +44,8 @@ These are applied exploratory records. Previously read sources, alternative form
 
 All seven full-source byte lengths and SHA-256 hashes were checked. Final CSVs were parsed, page ranges checked for exact contiguous coverage, segment ranges checked for overlaps, observation IDs checked for duplicates and figure-access records checked against their declared source and page scope. Additional readers audited the completed book records. Fine-detail and missing-page statuses were retained during integration.
 
+On 14 October, a further consistency audit verified each authoritative viewer-page ledger as an exact contiguous range and checked every figure register's declared source hash and numeric viewer-page locator against its source manifest. Kloner–Zissu's two-leaf duplicate locator and missing Fig. 161 locator are explicit exceptions, not out-of-range pages. The audit did not reread the source books or recover missing physical-edition leaves; the supplied-scan and reserved-image limits above remain authoritative.
+
 **Last session: partly** — completed reading of the available text and ordinary imagery in the seven supplied scans; missing physical-edition leaves and Dalman plate 25’s reserved fine detail remain explicitly uninspected.
 
 ## Remaining uncertain sources, 13 October 2026 UTC
