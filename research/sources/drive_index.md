@@ -1,7 +1,7 @@
 # Copper Scroll library in Google Drive
 
-Generated with `tools/drive_navtree.py`’s navigation builder from the current connected-Drive manifest and verified new-archive metadata for **My Drive/Copper Scroll** ([114qehR0C8LouGds9UwZ5-hpStbv2GMQb](https://drive.google.com/drive/folders/114qehR0C8LouGds9UwZ5-hpStbv2GMQb)).
-1426 files in 51 folders, 136.6 GB. Last built 14 October 2026 UTC / 13 October Los Angeles.
+Generated with `tools/drive_navtree.py`’s navigation builder from the connected-Drive inventory and verified new-file receipts for **My Drive/Copper Scroll** ([114qehR0C8LouGds9UwZ5-hpStbv2GMQb](https://drive.google.com/drive/folders/114qehR0C8LouGds9UwZ5-hpStbv2GMQb)).
+1429 files in 51 folders, 136.6 GB. Last built 14 October 2026 UTC / 13 October Los Angeles.
 
 ## How to use this index
 
@@ -61,7 +61,7 @@ Generated with `tools/drive_navtree.py`’s navigation builder from the current 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;north | 36 | [1V3f2Jp6jLeuow2UoLsMlxKhDsG5LmAWC](https://drive.google.com/drive/folders/1V3f2Jp6jLeuow2UoLsMlxKhDsG5LmAWC) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;south | 33 | [1Fm-yyOa507EWonAPFKK90-JwG7KQwfpS](https://drive.google.com/drive/folders/1Fm-yyOa507EWonAPFKK90-JwG7KQwfpS) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;synagogues | 18 | [1P91qv4LQgMEgQTJS1WKyv47icPa0ZSyV](https://drive.google.com/drive/folders/1P91qv4LQgMEgQTJS1WKyv47icPa0ZSyV) |
-| 08 Working files | 57 | [1CwJWBxQqziLOr8OceOvakrQr-U4jAPBU](https://drive.google.com/drive/folders/1CwJWBxQqziLOr8OceOvakrQr-U4jAPBU) |
+| 08 Working files | 60 | [1CwJWBxQqziLOr8OceOvakrQr-U4jAPBU](https://drive.google.com/drive/folders/1CwJWBxQqziLOr8OceOvakrQr-U4jAPBU) |
 | &nbsp;&nbsp;&nbsp;Ancient Synagogue Coins - website and data sweep - 2026-10-13 | 14 | [1_8BnvzH8Q8bdb6xmovFfqNLEKMYomw6d](https://drive.google.com/drive/folders/1_8BnvzH8Q8bdb6xmovFfqNLEKMYomw6d) |
 | &nbsp;&nbsp;&nbsp;GitHub research backup - 2026-10-13 - 23e2b74 | 27 | [1Ak0YNBl002gOCPawx1P6ctPH0XCDwL6g](https://drive.google.com/drive/folders/1Ak0YNBl002gOCPawx1P6ctPH0XCDwL6g) |
 | 99 Duplicates – review before deleting | 5 | [1qZ94zvdotj1xFJNzXWZDeIAP8sRJXtAB](https://drive.google.com/drive/folders/1qZ94zvdotj1xFJNzXWZDeIAP8sRJXtAB) |
@@ -83,8 +83,8 @@ Generated with `tools/drive_navtree.py`’s navigation builder from the current 
 | File | Size | Drive ID |
 |---|---:|---|
 | 00 MISSING resources and incomplete copies — Copper Scroll | 8 KB | [1AL4KP9cAsrqkH8Nu2PknLCVO3266h7BLTL2ebnfkhe0](https://drive.google.com/file/d/1AL4KP9cAsrqkH8Nu2PknLCVO3266h7BLTL2ebnfkhe0/view) |
-| 00 START HERE – Drive index.md | 183 KB | [1U7p_D2TNU0PPWrEG680NWJv0O5snSmWi](https://drive.google.com/file/d/1U7p_D2TNU0PPWrEG680NWJv0O5snSmWi/view) |
-| 00 drive_manifest.csv | 149 KB | [1vYj-zEAKJGIyk2O-5IbbVS6rwoV38ggt](https://drive.google.com/file/d/1vYj-zEAKJGIyk2O-5IbbVS6rwoV38ggt/view) |
+| 00 START HERE – Drive index.md | 281 KB | [1U7p_D2TNU0PPWrEG680NWJv0O5snSmWi](https://drive.google.com/file/d/1U7p_D2TNU0PPWrEG680NWJv0O5snSmWi/view) |
+| 00 drive_manifest.csv | 255 KB | [1vYj-zEAKJGIyk2O-5IbbVS6rwoV38ggt](https://drive.google.com/file/d/1vYj-zEAKJGIyk2O-5IbbVS6rwoV38ggt/view) |
 
 ### 01 Copper Scroll and DSS – editions and studies
 
@@ -1006,6 +1006,8 @@ Generated with `tools/drive_navtree.py`’s navigation builder from the current 
 |---|---:|---|
 | Copper Scroll - Site sweep tracker.xlsx | 416 KB | [1zBoGcPk49TLIqE3zsJIiqF5nf7SXS6yT](https://drive.google.com/file/d/1zBoGcPk49TLIqE3zsJIiqF5nf7SXS6yT/view) |
 | Copper Scroll — Resources still to acquire (13 October 2026) | 19 KB | [1yZSS7Hi5Kcnxr9F_FVyViGOCuf5C8tWVe2RtxTQ42cY](https://drive.google.com/file/d/1yZSS7Hi5Kcnxr9F_FVyViGOCuf5C8tWVe2RtxTQ42cY/view) |
+| CopperScroll_new_pdfs_2026-10-13_evidence_records.zip | 614 KB | [166EyaCxecZrdTVeucy495SBMUh8OCPEx](https://drive.google.com/file/d/166EyaCxecZrdTVeucy495SBMUh8OCPEx/view) |
+| CopperScroll_new_pdfs_2026-10-13_findings.md | 6 KB | [1iHD_l9ZND3ikMqaqm4UXfKLUhOauKGsN](https://drive.google.com/file/d/1iHD_l9ZND3ikMqaqm4UXfKLUhOauKGsN/view) |
 | CopperScroll_new_pdfs_2026-10-13_private_archive_01_water.zip | 45.2 MB | [1ZOr_aGrVM91kpgeWswwEruFFslRqjy54](https://drive.google.com/file/d/1ZOr_aGrVM91kpgeWswwEruFFslRqjy54/view) |
 | CopperScroll_new_pdfs_2026-10-13_private_archive_02_dissertation.zip | 18.3 MB | [1yLEdmnTgPCceYmWBEvFiuI_ldYQn-7Vv](https://drive.google.com/file/d/1yLEdmnTgPCceYmWBEvFiuI_ldYQn-7Vv/view) |
 | CopperScroll_new_pdfs_2026-10-13_private_archive_03_synagogues.zip | 13.1 MB | [1aPqJRpQth79BXKcNvnhPmJ8FKJMwOwds](https://drive.google.com/file/d/1aPqJRpQth79BXKcNvnhPmJ8FKJMwOwds/view) |
@@ -1020,6 +1022,7 @@ Generated with `tools/drive_navtree.py`’s navigation builder from the current 
 | drive reorg log 2026-10-09.tsv | 48 KB | [1YoORw4eFQzD2b0kcDF_-zVIR7bg4Vrtg](https://drive.google.com/file/d/1YoORw4eFQzD2b0kcDF_-zVIR7bg4Vrtg/view) |
 | drive reorg plan 2026-10-09.tsv | 24 KB | [1gKdoWIxmdh2hc2C4qEkjo8JMouoppt4o](https://drive.google.com/file/d/1gKdoWIxmdh2hc2C4qEkjo8JMouoppt4o/view) |
 | entry25 and secondary leads 2026-10-07.zip | 185 KB | [1wKdXHH0tDb8Eqx3n-VLAIx5BrHLmEXAs](https://drive.google.com/file/d/1wKdXHH0tDb8Eqx3n-VLAIx5BrHLmEXAs/view) |
+| new_pdf_evidence_update.patch | 3.2 MB | [1q06YFD7Qf8IhNmzIDNpFq5Fl61g0yeR5](https://drive.google.com/file/d/1q06YFD7Qf8IhNmzIDNpFq5Fl61g0yeR5/view) |
 
 ### 08 Working files/Ancient Synagogue Coins - website and data sweep - 2026-10-13
 
@@ -1761,4 +1764,4 @@ Generated with `tools/drive_navtree.py`’s navigation builder from the current 
 
 ## New-source review
 
-[Findings, reading scopes and copy corrections](new_batch_2026-10-13/README.md).
+[Findings and reading scopes](https://drive.google.com/file/d/1iHD_l9ZND3ikMqaqm4UXfKLUhOauKGsN/view) · [Detailed evidence records](https://drive.google.com/file/d/166EyaCxecZrdTVeucy495SBMUh8OCPEx/view). The GitHub patch is prepared and awaits publication approval.
