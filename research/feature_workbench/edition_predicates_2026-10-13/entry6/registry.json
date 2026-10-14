@@ -1,0 +1,102 @@
+{
+  "entry": 6,
+  "lines": "II 1-2",
+  "scope": "Edition-specific predicate and coverage check; no independently verified metal reading",
+  "sources": [
+    {
+      "edition": "Puech2015",
+      "printed_pages": [
+        38,
+        39
+      ],
+      "viewer_pages": [
+        49,
+        50
+      ],
+      "sha256": "864a843aa9aa8d8bb3c8470f8df0be35cc1abc319c0d4de6e99a1ceedfac99d4",
+      "inspection": "Native adopted text and commentary inspected",
+      "source_url": "https://drive.google.com/file/d/1ZzbdiNt-REc9RL4JfFI-tHGLNFemNqLV/view"
+    },
+    {
+      "edition": "Lefkovits2000",
+      "printed_pages": [
+        103,
+        104
+      ],
+      "viewer_pages": [
+        124,
+        125
+      ],
+      "sha256": "09c76f1bffd587d0b8f44f89174ccd7e5e41d2c9007823217b7225bf1c1d0d26",
+      "inspection": "Native adopted text and apparatus inspected",
+      "source_url": "https://drive.google.com/file/d/16hjo90sXMoG8hcKVvFwPvjTb4K3YKeI5/view"
+    }
+  ],
+  "branches": [
+    {
+      "id": "E6-salt-pit",
+      "status": "Puech and Lefkovits adopted interpretation",
+      "required": [
+        "Pit/cistern associated with salt",
+        "Below/under specified steps",
+        "Feature-specific usable phase"
+      ],
+      "not_required": [
+        "Temple location",
+        "Millo proper-name identification",
+        "Specified depth",
+        "Measured offset",
+        "A saline spring"
+      ]
+    },
+    {
+      "id": "E6-mixing-pit",
+      "status": "Puech2015 discussed semantic alternative, not adopted archaeological identification",
+      "required": [
+        "Pit used for mixing/dissolving",
+        "Below/under specified steps",
+        "Feature-specific usable phase"
+      ]
+    },
+    {
+      "id": "E6-melah-millo",
+      "status": "Retained alternative reading/interpretation, not rejected by Puech2015",
+      "required": [
+        "Pit associated with retained ha-Melah/Millo designation",
+        "Below/under specified steps",
+        "Feature-specific usable phase"
+      ],
+      "conditional_geography": "Temple esplanade association requires this selected lexical/site branch"
+    },
+    {
+      "id": "E6-L00-apparatus",
+      "status": "Grouped unscored apparatus family",
+      "discussed_types": [
+        "Furnace/smelter",
+        "Burial niche",
+        "Named pit/cistern or pit of a named place"
+      ],
+      "required": [
+        "Edition-specific named structure",
+        "Below steps/ascent relation",
+        "Usable phase"
+      ],
+      "coverage_limit": "Water-only inventory cannot test these discussed alternative feature types"
+    }
+  ],
+  "topology": {
+    "below_steps": "Required positional relation, with the steps and historical configuration independently identified",
+    "steps_into_pit": "Does not by itself establish which steps or below/under relation the entry describes",
+    "vertical_shaft_depth_m": null,
+    "planar_offset_m": null,
+    "origin": null
+  },
+  "contents": {
+    "numeral_role": "Treasure quantity; no spatial constraint",
+    "greek_HN": "Retained text marker; no new initials/numeral search"
+  },
+  "coverage_result": "Current water catalogue does not encode the named steps, pit-to-steps relation, salt/process use or matched usable configuration; missing fields are unknown",
+  "terminal_claim": "Existing held evidence identifies the entry6 structure",
+  "result": "not identifiable from available evidence",
+  "prior_work": "Phase1, Phase3, readings.json and location_language already discuss this entry; Phase5-index absence did not establish lack of research"
+}

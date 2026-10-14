@@ -66,7 +66,7 @@ Elitzur's method pages were read in session 2 (F2.21). This review checked his c
 ## Next
 
 1. ~~**DJD III D32 p. 268 and the Addenda.** Check whether Milik mentions Jeremias there.~~ **Done (29 September 2026, second run):** D32 cites "J. Jeremias, Revue Biblique, lxvii, 1960, pp. 220–2" as "Une localisation alternative, assez attrayante" (p. 268). The Addenda (pp. 300–301) do not return to it. See [registration/entry40_sources_extracted.md](../../registration/entry40_sources_extracted.md).
-2. **The printed Benjamin survey volume** (Finkelstein and Magen 1993), site 143: plans and orientation of the four tombs. *The English online record (checked 29 September 2026) gives neither.*
+2. **Individual tomb entrance plans/bearings.** The held printed Benjamin survey was inspected on 13 October UTC / 12 October Los Angeles; site143 p142 and its site28 cross-reference pp49–50 contain no such observations. See the native-source supplement below.
 3. ~~**Jeremias, *Heiligengräber* (1958) pp. 82–86,** for the date of the Beit Guvrin necropolis.~~ **Done (second run, search-inside snippets):**
    - He found "eine ausgedehnte Nekropole von seleukidischen Schachtgräbern", about 100 graves, 2 km north of Beit Guvrin, in October 1932 with Alt (p. 86).
    - He identifies it with the "cemetery of the Anakim" of the *Vitae prophetarum*, beside Micah's tomb at Kh. el-Basal.
@@ -80,3 +80,11 @@ Tepper–Tepper, *דרכים נושאות עם*, pp. 101–105, read as Kotar pa
 ## Tomb-plan check — 30 September 2026
 
 The live IAA site 143 record still provides no tomb plans, bearings or dimensions. A digital copy of the printed description/illustrations was not recovered; whether that entry contains tomb plans remains unverified. Peleg 2004 Fig. 1 was directly inspected: its north arrow confirms the Lower Beth Horon tomb's exterior entrance faces south, while niches A/B lie in the west wall. This replaces the earlier slope-based orientation inference. No channel or sixteen-cubit shaft appears in the report. The tomb fails a west-facing-exterior-entrance model, while ברוח permits a directional relationship that needs separate testing. Existing ratings and map geometry remain unchanged. [Access and plan record](../sources/entry40_tomb_plan_check_2026-09-30.md).
+
+
+
+## Native Benjamin survey check — 13 October 2026 UTC
+
+12 October Los Angeles. The [held original](https://drive.google.com/file/d/1evqJT-QX-3HMFqr-ON069yuLnyp1Te_8/view?usp=drivesdk) was downloaded completely; SHA-256 `074a689271ad137526c8b040a5fed1b2c8ba39204f4dfd80082576d610929b08` matches the 12 October source register. Site143 printed142/PDF164 describes four bench tombs west downslope, one repository and ten separately counted cisterns. The referenced site28 printed49–50/PDF71–72 has a village aerial and pottery illustrations. These pages supply no individual tomb plan or entrance bearing. Adjacent site145 printed143/PDF165 gives tomb types and descriptive positions, likewise without measured entrance geometry or channel contact.
+
+The earlier missing-copy and possible-plan statements above are historical and superseded for this exact source scope. The next evidence is an individual original entrance/channel relation and usable phase, not another copy of this survey. Descriptive counts cannot combine four tombs, a repository and ten cisterns into one complex. [Native-page scope and parallel assessment](../feature_workbench/available_evidence_2026-10-13/README.md).

@@ -1,0 +1,32 @@
+{
+  "entry2": {
+    "span": "I5–6a",
+    "branches": [
+      {"id":"PUECH_ALLEGRO_COURSE","edition":"Puech2015pp26,29; Puech2006p179; Allegro1960p33 (prior extraction)","requires":["funerary monument","third stone course/layer"],"ambiguities":["face","course count origin","count direction","construction component","ancient phase"],"editorial_status":"Puech adopted, explicitly prefers layer/course over stone"},
+      {"id":"LEFKOVITS_THIRD_GRAVESTONE","edition":"Lefkovits2000p50,pp53–56","requires":["tomb","third gravestone/stone row"],"ambiguities":["stone versus row","identity of first stone","name/row alternatives in apparatus"],"editorial_status":"adopted translation gives gravestone; commentary offers stone row"},
+      {"id":"MILIK_PERSONAL_NAME","edition":"Milik1960pp139,144","requires":["funerary monument","Ben Rabbah of (Bet)Shalishah association"],"ambiguities":["patronymic letters","gentilic letters","name versus location"],"editorial_status":"Milik explicitly extremely uncertain; Puech2015p29 rejects"},
+      {"id":"WOLTERS_PERSON_THIRD","edition":"reported in Lefkovits2000p50","requires":["sepulcher","Ben Rabbah the Third association"],"editorial_status":"Wolters original not inspected in this lane"},
+      {"id":"LEFKOVITS_OTHER_APPARATUS","edition":"Lefkovits2000pp56–59","members":["gravestone of Shalishite","gravestone of officer(s)/trustee(s)","son of Rabbah officer/trustee","son of Deker","son of Dekher/Zecher/Ram","son of Zaccur third watch","son of Ravukh/Revikh","of Jesse"],"requires":["tomb/sepulchral feature","branch-specific name/function association"],"editorial_status":"hypotheses, not equal endorsement; all branch-specific name/association predicates unobserved in imported rows"}
+    ],
+    "excluded_transfer":"I6b cistern/peristyle belongs to E3; do not import",
+    "deposit_test":"unscored"
+  },
+  "entry26": {
+    "span":"VI7–10",
+    "concordance":{"Puech":26,"Lefkovits":26,"Milik":28,"Allegro":27},
+    "branches":[
+      {"id":"PUECH_BASE_BOULDER","edition":"Puech2006p190; Puech2015pp60–61","requires":["cave","at base of boulder","eastward aspect","entrance","nine-cubit buried target"],"editorial_status":"adopted; rejects corner reading"},
+      {"id":"MILIK_ROCK_BASE","edition":"Milik1960pp140,147","requires":["cave","rock base","cave facing east","entrance","nine-cubit excavation"],"editorial_status":"adopted"},
+      {"id":"PROJECT_CORNER_HEAP","edition":"project translation_en VI7–10","requires":["cave","corner of heap of stones","eastward aspect","entrance","nine-cubit excavation"],"editorial_status":"project display, not universal edition agreement"},
+      {"id":"LURIE_CORNER_CLOD","edition":"reported in Lefkovits2000p209; Puech2015p61n238","requires":["cave","corner of clod","eastward aspect","entrance","nine-cubit excavation"],"editorial_status":"Lurie original not inspected"},
+      {"id":"LEFKOVITS_BUILDER_SEPULCHER","edition":"Lefkovits2000pp209–212","requires":["cave","builder association","sepulcher","eastward aspect","entrance","nine-cubit depth"],"editorial_status":"adopted; Puech2015p61n240 questions syntax"},
+      {"id":"LEFKOVITS_OTHER_APPARATUS","edition":"Lefkovits2000pp210–212","members":["builder of ditch/Regeb/Negeb","Bunah/Habbunah in Regeb/Negeb","corner(tower) in Regeb/Negeb/ditch","villageKanah in Regeb/Negeb","snake/Hakhinah in Regeb/Negeb","drain in Regeb/Negeb/ditch","baca-tree/lament in sepulcher/Regeb/Negeb","burial niche in sepulcher/Regeb/Negeb/ditch","molar/peak in sepulcher/Regeb/Negeb/clod/ditch"],"requires":["cave","branch-specific landmark/name/association","eastward aspect","entrance","nine-cubit target"],"editorial_status":"hypotheses; every defining predicate unknown in imported inventory"},
+      {"id":"ALLEGRO_INNER_CHAMBER_WATCHTOWER","edition":"Allegro1960p43,notes130–134p150 (prior original-source extraction); independently reported Lefkovits2000p209","requires":["inner chamber","corner of watchtower","eastward aspect","entrance","nine-cubit burial"],"editorial_status":"unscored on natural-cave inventory"}
+    ],
+    "aspect_attachments":["cave","sepulcher/clod/landmark"],
+    "aspect_source":"Lefkovits2000p212 explicitly preserves both grammatical attachments",
+    "excavation_sensitivity":{"cubits":9,"m_per_cubit":[0.40,0.60],"metres":[3.60,5.40],"axes":["vertical depth (editors' translation)","inward excavation (unverified exploratory sensitivity)","unspecified axis"],"origins":["ancient threshold/floor","ancient mouth lip","entrance ground surface"],"numerical_tolerance":null},
+    "excluded_transfer":"E25 two entrances, pillar and northern entrance do not transfer",
+    "deposit_test":"unscored"
+  }
+}

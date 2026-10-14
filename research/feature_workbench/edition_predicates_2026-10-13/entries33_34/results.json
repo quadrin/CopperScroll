@@ -1,0 +1,50 @@
+{
+  "claim": "Exploratory edition-branch audit and existing-data sufficiency check for Puech entries 33 and 34; no landscape-wide identification claim",
+  "exposure": "Phase1, Phase3, 8Oct2026 schematics, location_language, and existing feature catalogues were previously inspected in project work. Current edition pages are reinspections, not holdouts. No reserved manuscript, aerial or arrival evidence opened.",
+  "metric_sensitivity_m": {
+    "0.4": 6.8,
+    "0.445": 7.565,
+    "0.5": 8.5,
+    "0.525": 8.925,
+    "0.6": 10.2
+  },
+  "metric_warning": "These lengths belong to each selected axis/path branch. A linear length is not automatically a depth.",
+  "source_water_rows": 2043,
+  "source_aqueduct_rows": 393,
+  "activity_count_warning": "Raw coding/coverage diagnostics only; neither independent feature counts nor outcome/identification progress.",
+  "required_E33_relation_columns_not_in_existing_table": [
+    "road_feature_id",
+    "road_conduit_relation",
+    "treasury_house_id",
+    "ahiyah_house_id",
+    "ahim_reference_id",
+    "east_of_treasury",
+    "treasury_east_of_reference",
+    "ancient_relationship_phase"
+  ],
+  "E33_table_result": "unknown: the table cannot score the full road/house/reference chain",
+  "E33_existing_road_drain_source_observation": [
+    {
+      "report_id": "HAESI138-003-archaeological-park",
+      "url": "https://publications.iaa.org.il/ha-esi/vol138/iss1/3",
+      "pages": "article 3",
+      "site_name": "Jerusalem, the Old City, the Archaeological Park (A-9477)",
+      "feature_type": "channel_aqueduct",
+      "period_as_given": "monumental Herodian-period drainage channel; drainage channel of the 1st c. CE street",
+      "quote": "the roof of a monumental Herodian-period drainage channel was dismantled"
+    }
+  ],
+  "road_drain_qualification": "Source states road/drain relation only. Hydraulic noun compatibility, treasury identity, second reference, east-of relations and same-phase ties remain unknown.",
+  "E34_existing_inventory_result": "unknown: no typed marker inscription, ancient valley association, stone datum and seventeen-cubit target relation have been supplied",
+  "outcome": "not identifiable from available evidence",
+  "reopening_conditions": [
+    "A corrected edition-branch coding or direct ancient-text reading can change the branch predicates",
+    "An original report identifies the Treasury/reference house and links it to a same-phase road/conduit relationship",
+    "An original report locates a retained type of valley stone/monument with phase, inscription or slope context and surveyed local target datum"
+  ],
+  "source_sha256": {
+    "research/feature_workbench/edition_predicates_2026-10-13/entries33_34/branch_spec.json": "d14bb3685d0be5964cba1f5f3201d60e34ed685b38e4b18a0abf84eed0b80fdd",
+    "research/regional/water_systems/water.csv": "8feee7e4be21443ca73279b8d1607bae96c0be74abf68132976c70e24f2d16aa",
+    "research/regional/haesi_features/features.csv": "85af61f824dceddeb16482b271995b4b861a455f4471e61adffd23004e66635a"
+  }
+}

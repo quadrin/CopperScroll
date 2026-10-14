@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "source_policy": "Modern-edition pages and extracts were private review material. This repository packet contains derived analysis only; original sources are identified by connector-returned URL and hash.",
+  "editions": [
+    {
+      "stem": "lefkovits2000",
+      "size": 60384566,
+      "source_url": "https://drive.google.com/file/d/16hjo90sXMoG8hcKVvFwPvjTb4K3YKeI5/view?usp=drivesdk",
+      "sha256": "09c76f1bffd587d0b8f44f89174ccd7e5e41d2c9007823217b7225bf1c1d0d26",
+      "printed": [
+        245,
+        246,
+        247,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258
+      ],
+      "viewer": [
+        266,
+        267,
+        268,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279
+      ],
+      "scope": "exact specified page reinspection; no independent manuscript adjudication"
+    },
+    {
+      "stem": "puech2015",
+      "size": 5041693,
+      "source_url": "https://drive.google.com/file/d/1ZzbdiNt-REc9RL4JfFI-tHGLNFemNqLV/view?usp=drivesdk",
+      "sha256": "864a843aa9aa8d8bb3c8470f8df0be35cc1abc319c0d4de6e99a1ceedfac99d4",
+      "printed": [
+        69,
+        70,
+        71,
+        72,
+        135
+      ],
+      "viewer": [
+        80,
+        81,
+        82,
+        83,
+        146
+      ],
+      "scope": "exact specified page reinspection; no independent manuscript adjudication"
+    },
+    {
+      "stem": "puech2006",
+      "size": 95666096,
+      "source_url": "https://drive.google.com/file/d/1o8hts5BL-9PG2HejcN-AilEvbHdTkOhi/view?usp=drivesdk",
+      "sha256": "c3d824a1e3123a07cdb246bd376457d7a1cef14f05dbac03eeea0f88a057cb6e",
+      "printed": [
+        212
+      ],
+      "viewer": [
+        238
+      ],
+      "scope": "exact specified page reinspection; no independent manuscript adjudication"
+    },
+    {
+      "stem": "milik1960",
+      "size": 6832823,
+      "source_url": "https://drive.google.com/file/d/1RaaZiw0bmsaCnO9oqX91-NQOR1cvthiV/view?usp=drivesdk",
+      "sha256": "c7a606f4aaa6b6230a9abdfcf65afe5b03b88bb5b12d6d13d84a2041f3932427",
+      "printed": [
+        141,
+        149
+      ],
+      "viewer": [
+        5,
+        13
+      ],
+      "scope": "translation items35/36 and line2/8 commentary visually checked after parent atomically repaired full source"
+    }
+  ],
+  "repo_sources": {
+    "current_tree_sha": "23e2b74bdc4ceac8b4418b79a5fa501db20e7b5e",
+    "sources": [
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/schematics/entries/entry_33.py",
+        "github_sha": "df049ba280c52066b7dcd98be86d02634abb6604",
+        "inspection_scope": "entry_33.py"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/schematics/entry_33.svg",
+        "github_sha": "ac15fb897b21e0fc0379fe2f5cec543f3dddab0c",
+        "inspection_scope": "entry_33.svg"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/schematics/entry_34.svg",
+        "github_sha": "13e033fd78a6fdff894dd4051816a09b5980fea2",
+        "inspection_scope": "entry_34.svg"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/phases/phase1_summary.md",
+        "github_sha": "7694e83e52069655c382f80b1b4eefd472246fdf",
+        "inspection_scope": "phase1_summary.md"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/phases/phase3_summary.md",
+        "github_sha": "96f9b3d0acbff4f4cc5c20330b5c11169abd21d7",
+        "inspection_scope": "phase3_summary.md"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/tables/landmark_lexicon_index.csv",
+        "github_sha": "89d32729cc6325e50862ba102e9de015422bed42",
+        "inspection_scope": "landmark_lexicon_index.csv"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/shared_tools/text_constraints/results.json",
+        "github_sha": "b39aed15ddb1d82d934853bbe9fb91cab9e0cb5c",
+        "inspection_scope": "results.json"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/text/location_language/report.md",
+        "github_sha": "a2dc0ee5f1aae844c34974865fa049463190ee81",
+        "inspection_scope": "report.md"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/text/location_language/occurrence_data.py",
+        "github_sha": "889e8703288edabcc919af0300bad5c8d765ad4b",
+        "inspection_scope": "occurrence_data.py"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/logs/findings_log.md",
+        "github_sha": "6463e1380a959c41364d9786b29e6a1bb039d6a4",
+        "inspection_scope": "findings_log.md"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/schematics/entries/entry_34.py",
+        "github_sha": "e258d13250a663114d7f3cdaf6b8063d194d9eaa",
+        "inspection_scope": "entry_34.py"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/tables/phase3_site_index.csv",
+        "github_sha": "fa2596a81144a0fd01a5647d54f31715d9de35ae",
+        "inspection_scope": "phase3_site_index.csv"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/regional/water_systems/README.md",
+        "github_sha": "9ac38a2db8c8ef5d368104ea8061111149366cb7",
+        "inspection_scope": "README.md"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/regional/water_systems/water.csv",
+        "github_sha": "2570275f6cceefcb253cb96b19b5b1c26b48b1f8",
+        "inspection_scope": "schema and source-coded rows"
+      },
+      {
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/regional/haesi_features/features.csv",
+        "github_sha": "f4ceefff416916db52e17085556d88eda729b4a0",
+        "inspection_scope": "street/drain textual prefilter"
+      }
+    ]
+  },
+  "other_source_access": {
+    "milik1960": "Initial partial stream not used for evidence. Parent repaired original atomically; complete source hash verified and pp141/149 now directly visually inspected.",
+    "djd1962": "held copy plate volume, not text commentary; no reserved XII image viewed",
+    "IAA_report": {
+      "url": "https://publications.iaa.org.il/ha-esi/vol138/iss1/3/",
+      "web_ref": "turn14view0",
+      "scope": "full textual report; figures listed but not inspected"
+    }
+  }
+}

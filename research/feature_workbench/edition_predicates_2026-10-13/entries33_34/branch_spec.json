@@ -1,0 +1,253 @@
+{
+  "schema": 1,
+  "scope": "Exploratory edition-branch audit and existing-data sufficiency check for Puech entries 33 and 34; no landscape-wide identification claim",
+  "exposure": "Phase1, Phase3, 8Oct2026 schematics, location_language, and existing feature catalogues were previously inspected in project work. Current edition pages are reinspections, not holdouts. No reserved manuscript, aerial or arrival evidence opened.",
+  "new_evidence_target": "Exact original edition-page check of the two spatial clauses, to establish whether the inherited inscription-midpoint and seventeen-cubit vertical-depth rules belong to each adopted edition branch.",
+  "parameter_policy": {
+    "east_sector_degrees": [
+      45,
+      135
+    ],
+    "east_sector_status": "Inherited schematic/model convention, not precision supplied by the Hebrew text",
+    "cubit_m_sensitivity": [
+      0.4,
+      0.445,
+      0.5,
+      0.525,
+      0.6
+    ],
+    "cubit_status": "Legacy illustrative sensitivity only; no archaeological unit selected",
+    "tolerance_m": null,
+    "construction_phase": "Feature-specific ancient context required before site-identification support; inherited period screen alone is insufficient",
+    "metric_origin": "Identified same-phase stone/monument or edition-specific datum, currently unknown",
+    "path_axis": "Unknown; lower-position reading supplies no compass azimuth or path convention",
+    "prediction_holdout": null,
+    "decision_rule": "Contradiction excludes only a specified conditional branch. Missing identity, phase, metric datum or direction is unknown. No unseen prediction means no confirmatory identification."
+  },
+  "branches": [
+    {
+      "id": "E33-P15",
+      "entry": 33,
+      "edition": "Puech2015",
+      "pages": [
+        69,
+        70,
+        71,
+        135
+      ],
+      "viewer_pages": [
+        80,
+        81,
+        82,
+        146
+      ],
+      "predicates": [
+        "Restored conduit at/on a road",
+        "Road east of Treasury house",
+        "Treasury house east of the supplied house of Ahiyah"
+      ],
+      "restorations": [
+        "Beginning of conduit word",
+        "Article before Treasury",
+        "House of before Ahiyah supplied in translation"
+      ],
+      "not_required": [
+        "Road north-south axis",
+        "Located settlement named Ahor",
+        "Metric separation",
+        "Ten scrolls"
+      ],
+      "contents": "Vessels and books; final clause read as a warning. No ten-object requirement on this branch."
+    },
+    {
+      "id": "E33-L00-main",
+      "entry": 33,
+      "edition": "Lefkovits2000",
+      "pages": [
+        245,
+        246,
+        247
+      ],
+      "viewer_pages": [
+        266,
+        267,
+        268
+      ],
+      "predicates": [
+        "Adopted restored canal at/by road",
+        "Road east of storehouse",
+        "Storehouse east of Ahim"
+      ],
+      "unknowns": [
+        "Ahim identity",
+        "Storehouse identity",
+        "Conduit restoration",
+        "Same-phase connection"
+      ],
+      "contents": "Unspecified dedicated vessels and documents in vessels, no fixed ten-object requirement.",
+      "sensitivity_first_word_types": [
+        "ground/earth",
+        "canal",
+        "drain",
+        "pool",
+        "city wall",
+        "entrance/alley",
+        "staircase",
+        "stone block",
+        "burial niche"
+      ],
+      "sensitivity_note": "Nine possibilities discussed on p246; these are not all adopted canal readings and are not pooled into the hydraulic branch. Named-term and attachment alternatives on pp247ff remain separate."
+    },
+    {
+      "id": "E33-M-main",
+      "entry": 33,
+      "edition": "Milik1960/1962",
+      "pages": [
+        141,
+        149
+      ],
+      "inspection": "Milik1960 translation and commentary directly checked; Milik1962 reading retained via Lefkovits p245, direct text volume unavailable",
+      "predicates": [
+        "Restored conduit along road",
+        "Road east of Bet Ahsor/Hasor",
+        "Bet Ahsor/Hasor east of Ahzor/Hazor"
+      ],
+      "conditional_status": "Retained as edition alternative; no modern-place equations added",
+      "viewer_pages": [
+        5,
+        13
+      ]
+    },
+    {
+      "id": "E34-P15-inscription",
+      "entry": 34,
+      "edition": "Puech2015",
+      "pages": [
+        69,
+        71,
+        72,
+        135
+      ],
+      "viewer_pages": [
+        80,
+        82,
+        83,
+        146
+      ],
+      "predicates": [
+        "Outer valley",
+        "Engraved inscription on stone/possible monument",
+        "Seventeen cubits below/lower down relative to marker"
+      ],
+      "not_required": [
+        "Midpoint of inscription",
+        "Vertical seventeen-cubit shaft",
+        "Under the valley floor",
+        "Marker must be in Kidron"
+      ],
+      "metric_orientation": "P72 distinguishes lower-down from under-it; no horizontal azimuth or path convention is established",
+      "outer_valley_status": "P72 proposes downstream/lower wadi course; exact valley remains unidentified",
+      "quantity_branches": [
+        "Silver and gold counted in silver cash value",
+        "Silver and gold plus seventeen silver karsh"
+      ],
+      "quantity_note": "Do not convert this edition branch into seventeen talents as a fixed deposit test."
+    },
+    {
+      "id": "E34-L00-inscription",
+      "entry": 34,
+      "edition": "Lefkovits2000",
+      "pages": [
+        253,
+        254,
+        255,
+        256,
+        257,
+        258
+      ],
+      "viewer_pages": [
+        274,
+        275,
+        276,
+        277,
+        278,
+        279
+      ],
+      "predicates": [
+        "Outer Valley",
+        "Engraved script on stone monument",
+        "Seventeen cubits below the stone as distance"
+      ],
+      "metric_orientation": "P258 explicitly chooses distance rather than depth; direction/path still unspecified",
+      "not_required": [
+        "Inscription midpoint",
+        "Vertical seventeen-cubit digging depth",
+        "Specified inscription wording"
+      ],
+      "quantity_branches": [
+        "Unspecified silver/gold plus seventeen silver karsh",
+        "One silver and one gold piece plus seventeen silver karsh"
+      ],
+      "sensitivity_morphology_types": [
+        "circle",
+        "stable",
+        "ornamental/circular wall or twisting path",
+        "chamber",
+        "hole",
+        "dry land",
+        "script on stone"
+      ],
+      "sensitivity_note": "These p255–257 discussions are not combined with the adopted inscription branch. They change the required landmark."
+    },
+    {
+      "id": "E34-traditional-depth",
+      "entry": 34,
+      "edition": "Inherited project/older translation depth model",
+      "predicates": [
+        "Outer valley",
+        "Edition-dependent circle/slope/stable marker",
+        "Stone",
+        "Conditional vertical seventeen-cubit digging depth"
+      ],
+      "metric_orientation": "Vertical only on this separately retained interpretive model",
+      "quantity": "Seventeen talents on traditional reading, versus silver-karsh alternatives on Puech/Lefkovits branches",
+      "qualification": "Depth exclusions may apply only after selecting and citing this branch; cannot propagate to adopted inscription lower-position readings"
+    },
+    {
+      "id": "E34-M60-slope",
+      "entry": 34,
+      "edition": "Milik1960",
+      "pages": [
+        141,
+        149
+      ],
+      "viewer_pages": [
+        5,
+        13
+      ],
+      "predicates": [
+        "Outer Vale",
+        "Middle of abrupt slope",
+        "Dig seventeen cubits near stone",
+        "Under-it relation"
+      ],
+      "metric_orientation": "Dig wording retained; current schematic interprets it vertically, but source supplies no surveyed stone datum or explicit compass/dig axis",
+      "quantity": "Silver and gold, seventeen talents on this edition",
+      "qualification": "Do not combine its middle-of-slope clause with the adopted inscription clause; p149 tentatively connects Outer Vale to Kidron sequence"
+    }
+  ],
+  "prior_exposure": [
+    "research/phases/phase1_summary.md: original edition comparison",
+    "research/phases/phase3_summary.md: full candidate dossiers included both entries",
+    "tables/phase3_site_index.csv: E33 possible Jericho area; E34 Bir Ayyub/Jericho/Doq alternatives",
+    "research/schematics/entries/entry_33.py and entry_34.py: 8Oct2026 model assumptions",
+    "research/text/location_language/report.md: original clause concordance includes both entries"
+  ],
+  "outcome": "not identifiable from available evidence",
+  "changes": [
+    "Removed inscription-midpoint requirement from Puech/Lefkovits branches",
+    "Kept lower-position/distance and vertical-depth models separate",
+    "Separated house of Ahiyah from hypothetical Ahor settlement",
+    "Kept deposit numeral/unit readings separate from physical structure identification"
+  ]
+}

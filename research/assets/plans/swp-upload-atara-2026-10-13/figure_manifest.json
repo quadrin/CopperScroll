@@ -1,0 +1,102 @@
+{
+  "title": "Palestine Exploration Fund Map, Sheets I and XVII",
+  "authors": [
+    "C. R. Conder",
+    "H. H. Kitchener"
+  ],
+  "publisher": "Ordnance Survey for the Palestine Exploration Fund",
+  "edition": "SheetI imprint1878; SheetXVII imprint1879. Handwritten library1880 and catalogue map-set dates remain distinct.",
+  "source_file": "dedupmrg54258818_IE199398504.pdf",
+  "source_sha256": "5a9bc74683887ab4cac377a476a20b832a05aa7cc73b7d6e1d513fa672a61ba7",
+  "source_pages": 28,
+  "source_url": null,
+  "source_attachment_id": "file_00000000029081fb86efadabfac7eaaa",
+  "source_library_id": "libfile_63c3b5b16f188191a911a2df2d5ddc1e",
+  "provenance": "User-supplied, library-stamped published SWP map scan; exact digital catalogue/file identity unverified.",
+  "reuse_status": "Original nineteenth-century printed maps are public domain; authorized user-supplied faithful page extracts. No unpublished PEF archive image included.",
+  "attribution": "Conder and Kitchener, Survey of Western Palestine; photozincographed by the Ordnance Survey for PEF. Source scan supplied by owner.",
+  "scale": "One inch to a statute mile, 1:63,360. Full native pages preserve graticule, scale and legend.",
+  "north": "Original latitude/longitude graticule supplies orientation; no added north arrow or accepted geographic registration.",
+  "inspection_scope": "SheetI used to identify upload as published maps. PDF17 header, full SheetXVII and Atara/Tell enNasbeh detail inspected. PDF18 header only confirms XVIII; its map detail and other sheets unread. No Tell esSultan fine detail opened.",
+  "observations": "SheetXVII labels Attara by Tell enNasbeh and marks Tk. with a small tank symbol nearby. Site-level mapped tank; exact western/eastern pool and aperture identity UNKNOWN.",
+  "hydraulic_limit": "No section, invert/gradient, opening crosswalk or dated contact. At1:63,360 a24m pool spans0.38mm and2.74m wall0.043mm; illustrative scale conversions, not map-feature measurements.",
+  "verification": "Native selected-page extract renders identically to source at matrix0.3. JPEG derivatives use lossy compression and are not measurement assets.",
+  "assets": [
+    {
+      "file": "swp-sheets-I-XVII.pdf",
+      "kind": "native selected pages",
+      "viewer_pages": [
+        1,
+        17
+      ],
+      "sheet_labels": [
+        "I",
+        "XVII"
+      ],
+      "crop_pdf_points": null,
+      "crop_origin": null,
+      "render_matrix": null,
+      "jpeg_quality": null,
+      "sha256": "ab6e61748b99cc3761a27ed5278616aa9847333fda9575a29f3dc3debeac1e22",
+      "bytes": 9432628
+    },
+    {
+      "file": "sheet-XVII-overview.jpg",
+      "kind": "overview derivative",
+      "viewer_pages": [
+        17
+      ],
+      "sheet_labels": [
+        "XVII"
+      ],
+      "crop_pdf_points": null,
+      "crop_origin": null,
+      "render_matrix": 0.45,
+      "jpeg_quality": 92,
+      "sha256": "f5b167ee9f68f361d98af61488255360230576ef3ba5fe1e36d9af2d5ed22045",
+      "bytes": 1785279
+    },
+    {
+      "file": "atara-detail.jpg",
+      "kind": "crop derivative",
+      "viewer_pages": [
+        17
+      ],
+      "sheet_labels": [
+        "XVII"
+      ],
+      "crop_pdf_points": [
+        3100,
+        480,
+        3950,
+        1250
+      ],
+      "crop_origin": "upper-left PyMuPDF page coordinates",
+      "render_matrix": 1,
+      "jpeg_quality": 92,
+      "sha256": "3481d4a035cf64b264bb0276aa29fd41b23c8c5adb121fe7fa70f4856651654c",
+      "bytes": 356636
+    },
+    {
+      "file": "sheet-XVII-legend.jpg",
+      "kind": "legend derivative",
+      "viewer_pages": [
+        17
+      ],
+      "sheet_labels": [
+        "XVII"
+      ],
+      "crop_pdf_points": [
+        0,
+        3944.48,
+        5112.0,
+        4432.0
+      ],
+      "crop_origin": "upper-left PyMuPDF page coordinates",
+      "render_matrix": 0.6,
+      "jpeg_quality": 92,
+      "sha256": "71be34e89c9ee6359ec2a099ee62ad457bf5d2ede2c852c1d8227a763e31df44",
+      "bytes": 156603
+    }
+  ]
+}

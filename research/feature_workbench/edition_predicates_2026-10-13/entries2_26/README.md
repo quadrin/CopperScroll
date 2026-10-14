@@ -1,0 +1,39 @@
+# Entry 2 and 26: native-edition and existing-inventory test
+
+**Partly obtained** — primary editions correct the entry predicates, and the Zechariah preserved monument contradicts the literal built-course branch of entry2. Neither entry is identifiable from available evidence.
+
+This is exploratory. The original observations have prior exposure through editions, drawings or project descriptions; re-downloading them provides no independent holdout. No reserved archive/manuscript arrival was inspected. The repository audit's text-only status did not imply that these entries had never been studied.
+
+## What changed
+
+Entry2 requires edition-specific treatment. The project `readings.json` includes only funerary monument + third course, while its schematic treats a personal-name reading as an unverified recent Gibson report. **Milik already published that personal-name interpretation in 1960.** His original pp139,144 (viewer3,8) names Ben Rabbah of (Bet) Shalishah and marks the reading extremely uncertain. Puech2015 p29 (viewer40) explicitly rejects it in favour of a course/stone reading based on his newer documentation. That disagreement is old and real; it must not be silently flattened into agreement among editors.
+
+Lefkovits2000 adopts a third **gravestone** on p50 (viewer71), discusses gravestone/stone row on pp53–55, and tabulates further name, officer and Shalishite possibilities on pp56–59. Literal built masonry is therefore one branch. It is not a universal prerequisite. Neither the text nor the retained course branch supplies a face, a ground datum or a count direction. Entry2 ends at I6a; the cistern and peristyle in I6b belong to entry3.
+
+Entry26 similarly changes with the edition. Puech2006 p190 (viewer216), confirmed by Puech2015 pp60–61 (viewer71–72), reads a cave **at the base of a boulder** and rejects the corner reading. Milik1960 p140 (viewer4) gives a rock-base cave; p147 (viewer11) attaches eastward aspect to two successive caves, not a compulsory pair of mouths for this entry. Lefkovits2000 p209 (viewer230) instead adopts the cave of the **builder of a sepulcher**, and p212 (viewer233) permits eastward aspect to attach to either the cave or the sepulcher/clod. His alternative classes are retained without endorsement. Allegro1960 p43 and notes130–134, checked through the prior full-source extraction, supplies an inner-chamber/watchtower branch that a natural-cave inventory cannot score. Project entry26 is VI7–10, Milik28 and Allegro27; entry25's column/two-mouth conditions do not transfer.
+
+## Concrete component result from held archaeological pages
+
+Kloner–Zissu2003 **p146 / viewer160, record6-4** explicitly describes the Zechariah nefesh as monolithic and wholly carved out of rock. The surviving body has **no literal built stone courses**. It therefore contradicts using that body as entry2's third built masonry course. This excludes that component/reading combination only; gravestone and name branches remain untested, and it does not exclude other attached/lost constructions by silence.
+
+**P142 / viewer156, record6-2** separates Absalom's rock-cut lower body from its built upper section. The lower body fails the same literal-course component condition; the upper section remains a conditional built-stone comparison, with no established third original course/count origin. The description mentions two large dressed stones in the upper section; this is not coded as three masonry courses. **P144 / viewer158, Fig128** separates the Bene Hezir cave and Zechariah monument, preventing an aggregate ASI record from smuggling one structure's masonry into the other's predicate. Figures125–126/128 reproduce Avigad1954's campaign, so they are not new independent corroboration.
+
+The existing Mird test already observes coursed rubble retaining walls, founded at different heights, but its funerary versus high-place function and third-course datum remain unresolved (Wright/Milik1961 pp14–16, Fig4, platesVIII–IX, earlier native extraction reused). Earlier clearance found neither chamber nor deposit but gives no complete ancient target-volume negative. This pass does not reopen that negative test.
+
+## Complete bounded application
+
+`evaluate.py` replays **every imported source row**, preserving duplicates and aggregate records:1159 tomb catalogue/source rows and665 cave catalogue/source rows (including30clusters). These are record counts, not unique-site denominators. `evaluate.py --full` generates a complete local row matrix for every retained scoring family and every predicate value; `native_component_checks.json` gives the component tests.
+
+The cave dataset supplies direct documentary cave-level facing codes for28 catalogue rows:15 carry E and13 carry a non-E code under the bounded classifier. These are coarse label compatibilities/mismatches, not measured physical orientation contradictions. Four-wind sectors N/E meet at a boundary; ancient phases and altered mouths are unknown. No site is eliminated. NE/SE boundary bearings, opening-in-wall inferences and missing bearings stay unknown. Cluster cave-existence predicates remain unknown. This replay uses canonical `caves.csv` only; the phase4 supplementary11rows are outside the input scope. The recorded pillar or blocking boulder at XII/53 does not establish a cave at a boulder's base or heap corner; modern spoil heaps likewise do not establish an ancient landmark.
+
+Every full ancient-entry test remains unknown. The tomb fields do not observe third stones/courses or their count origin; the cave fields do not observe an ancient base/corner/builder relation plus a phase-controlled nine-cubit target. The9-cubit range3.60–5.40m is sensitivity only; vertical depth, inward excavation distance and the ancient origin remain distinct. Dating of tomb/cave use does not by itself date each target component. A non-mention is never an archaeological absence.
+
+**Terminal result:** the claim that either entry identifies a structure is **not identifiable from available evidence**. What was obtained is an edition discrepancy and component contradiction, not a new located site. To test either relation further requires a named additional observation or a documented correction; the existing closed tests retain their limits.
+
+## Provenance and integration
+
+Native PDFs are the exact project-held Drive originals downloaded by the parent; `source_provenance.json` gives the native source hashes and inspected page scope; the integrator retains the exact Drive source manifest. Rendered pages used here were inspected at viewer pages stated above. KZ pages142–146, Puech2015 pp29,60–61 and Lefkovits2000 pp50,56,209,212 were visually inspected. Puech2006 pp179,190 was text-layer checked only. Milik1960 pp139,140,144,147 were visually inspected after the parent repaired a transient partial download; no partial file informed the final findings.
+
+The evaluator uses canonical repository CSV inputs and records their hashes; input copies used for validation are not duplicated in this packet. Existing cave/tomb rows are secondary-coded evidence; this pass does not silently promote them to newly read native observations. Complete CSV/JSON/script outputs are original analysis. **Do not publish native book page images or full extracted text by default**; the local render cache and inputs are reproduction/access material with no public reuse permission established. If figures are retained privately, preserve original page/figure/ancestry and source hashes.
+
+Recommended correction: extend `text/readings.json` e2-course/e26 to show the editions above; correct entry02's personal-name badge and entry26's base/corner relation. These are text-model corrections with no atlas confidence increase, no geographic coordinate update and no outcome-ledger identification increase.
