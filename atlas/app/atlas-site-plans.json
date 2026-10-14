@@ -500,5 +500,562 @@
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/siloam_bathing.md"
       }
     ]
+  },
+  {
+    "id": "gerizim-precinct",
+    "placeIds": [
+      "gerizim"
+    ],
+    "label": "Gerizim · precinct & mansion",
+    "width": 650,
+    "height": 650,
+    "source": "Magen 2008, NEAEHL 5 p. 1743 site plan; pp. 1745–1747",
+    "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/neaehl-vol5/gerizim-extract.pdf",
+    "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
+    "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. Selected Hellenistic precinct and Area P envelopes only; the source also includes Persian, Byzantine and later remains. Staircases elsewhere and the courtyard cistern are described separately. The cistern and P5178 are not located by this overview.",
+    "shapes": [
+      {
+        "d": "M225 85 L445 120 L453 283 L420 465 L195 421Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M225 85 L241 86 L210 303 L315 333 L310 350 L193 320Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M452 153 L487 160 L483 305 L449 301Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M195 320 L286 348 L271 419 L180 393Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M383 369 L458 383 L441 454 L369 437Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M419 215 L524 221 L523 268 L414 259Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M481 222 L512 224 M481 231 L512 233 M480 241 L511 243 M479 251 L510 254",
+        "kind": "channel"
+      },
+      {
+        "d": "M149 313 L197 329 L178 392 L132 374 L122 351Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M148 336 L176 344 L166 368 L140 360Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M246 427 L259 431 L251 467 L238 463Z",
+        "kind": "wall"
+      }
+    ],
+    "annotations": [
+      {
+        "x": 225,
+        "y": 67,
+        "text": "Sacred precinct"
+      },
+      {
+        "x": 51,
+        "y": 302,
+        "text": "Area P"
+      },
+      {
+        "x": 357,
+        "y": 495,
+        "text": "Hellenistic outer envelope"
+      },
+      {
+        "x": 270,
+        "y": 575,
+        "text": "Selected structures · source-plan orientation"
+      }
+    ],
+    "north": {
+      "x": 60,
+      "y": 575,
+      "dx": 0,
+      "dy": -60
+    },
+    "features": [
+      {
+        "id": "east-stair",
+        "label": "Eastern monumental staircase · source no. 4",
+        "x": 498,
+        "y": 245,
+        "kind": "Reported remains",
+        "entryIds": [
+          "57"
+        ],
+        "description": "A staircase up to 23 m wide and 34 m long rises 15.5 m by about 57 steps to the upper gate. The eastern approach belongs to the Hellenistic precinct.",
+        "limit": "The staircase is distinct from the southern seven-step flight and the 15-step flight at E1. No particular step is identified with entry 57, and its use in the scroll’s period is unresolved.",
+        "sources": [
+          "Magen 2008 p. 1743 no. 4; p. 1747"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/gerizim_locus5178_followup_2026-10-01.md"
+      },
+      {
+        "id": "mansion",
+        "label": "Mansion · Area P, source no. 15",
+        "x": 161,
+        "y": 352,
+        "kind": "Reported remains",
+        "entryIds": [
+          "57"
+        ],
+        "description": "The approximately 40 × 40 m mansion lies west of the sacred precinct. Its building IV is approximately 20 × 14 m and contains a stone-paved courtyard with a cistern.",
+        "limit": "The overview locates the mansion envelope, not the cistern mouth. Festus specimen K35264 is catalogued at P5178; the exact installation and deposition context remain unknown.",
+        "sources": [
+          "Magen 2008 pp. 1743, 1745; Magen et al. 2021 pp. 81–82, 159"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/gerizim_locus5178_followup_2026-10-01.md"
+      },
+      {
+        "id": "west-entrance",
+        "label": "Western entrance · source no. 10",
+        "x": 248,
+        "y": 450,
+        "kind": "Reported remains",
+        "entryIds": [
+          "57"
+        ],
+        "description": "The overall site plan distinguishes a western entrance from the eastern monumental staircase. The southern wing’s separate 9 m wide staircase retains seven steps.",
+        "limit": "This selection locates source no. 10 only. The overall plan does not equate every entrance with the southern seven-step flight or locate the scroll’s upper pit.",
+        "sources": [
+          "Magen 2008 p. 1743 no. 10; pp. 1746–1747"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/gerizim_locus5178_followup_2026-10-01.md"
+      },
+      {
+        "id": "citadel",
+        "label": "Southeastern citadel · source no. 7",
+        "x": 411,
+        "y": 407,
+        "kind": "Reported remains",
+        "entryIds": [
+          "57"
+        ],
+        "description": "The Hellenistic precinct includes a southeastern citadel reported as 25 × 24 m, built around a central courtyard.",
+        "limit": "A citadel courtyard supplies no independent identification or date for entry 57’s step and upper pit.",
+        "sources": [
+          "Magen 2008 p. 1743 no. 7; p. 1747"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/gerizim_locus5178_followup_2026-10-01.md"
+      }
+    ]
+  },
+  {
+    "id": "doq-waterworks",
+    "placeIds": [
+      "doq"
+    ],
+    "label": "Doq · aqueduct & cisterns",
+    "width": 700,
+    "height": 620,
+    "source": "Amit 1989 Fig. 2, p. 224 · water system of Doq",
+    "sourceUrl": "https://drive.google.com/file/d/1-6s-nqSD-PP_FpZ788Tc0dvH_z7eziZg/view",
+    "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
+    "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. The source north arrow points page-right. Individual cistern dots retain their relative positions; contours, towers and the modern monastery are omitted. No guard-post or drying-room footprint is supplied.",
+    "shapes": [
+      {
+        "d": "M155 205 Q224 175 280 115 L421 135",
+        "kind": "channel"
+      },
+      {
+        "d": "M347 222 Q318 246 287 256 Q275 266 319 271 Q333 287 323 323 Q306 385 351 431 Q301 471 228 438",
+        "kind": "channel"
+      },
+      {
+        "d": "M336 280 Q319 339 341 389 Q351 410 359 420",
+        "kind": "reconstruction"
+      },
+      {
+        "d": "M119 285 Q205 253 266 279",
+        "kind": "channel"
+      },
+      {
+        "d": "M150 365 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M163 373 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M173 381 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M186 388 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M197 398 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M210 408 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M241 421 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M284 424 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M301 375 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0",
+        "kind": "basin"
+      }
+    ],
+    "north": {
+      "x": 560,
+      "y": 530,
+      "dx": 65,
+      "dy": 0
+    },
+    "annotations": [
+      {
+        "x": 145,
+        "y": 164,
+        "text": "Northern approach"
+      },
+      {
+        "x": 83,
+        "y": 452,
+        "text": "Cistern cluster · source nos. 1–10"
+      },
+      {
+        "x": 455,
+        "y": 585,
+        "text": "North follows the source arrow"
+      }
+    ],
+    "features": [
+      {
+        "id": "intake",
+        "label": "Aqueduct head · point A",
+        "x": 347,
+        "y": 222,
+        "kind": "Reported remains",
+        "entryIds": [
+          "31"
+        ],
+        "description": "Amit places the aqueduct’s head northwest of the fortress and traces its route toward the summit cisterns.",
+        "limit": "A hydraulic intake does not identify the guard post or drying place named under competing readings of entry 31. The modern summit pin does not supply a building corner.",
+        "sources": [
+          "Amit 1989 pp. 223–224, Fig. 2"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle3/doq_anchor.md"
+      },
+      {
+        "id": "cisterns",
+        "label": "Summit cistern cluster",
+        "x": 209,
+        "y": 400,
+        "kind": "Reported remains",
+        "entryIds": [
+          "31"
+        ],
+        "description": "Figure 2 marks ten numbered cistern positions along the summit-side water system. The diagram preserves the cluster separately from the northern approach.",
+        "limit": "The figure establishes water-storage context. Cistern positions and fortress chronology cannot date or identify a separate drying installation or guard-post corner.",
+        "sources": [
+          "Amit 1989 Fig. 2, p. 224"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle3/doq_anchor.md"
+      },
+      {
+        "id": "ditch",
+        "label": "Ditch and embankment",
+        "x": 186,
+        "y": 275,
+        "kind": "Reported remains",
+        "entryIds": [
+          "31"
+        ],
+        "description": "The source plan distinguishes a ditch north of the summit and an embankment beside it from the aqueduct and cistern symbols.",
+        "limit": "This is a topographic/defensive relation, without a dated corner or floor for the seven-cubit instruction.",
+        "sources": [
+          "Amit 1989 Fig. 2, p. 224"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle3/doq_anchor.md"
+      }
+    ]
+  },
+  {
+    "id": "hyrcania-waterworks",
+    "placeIds": [
+      "hyrcania"
+    ],
+    "label": "Hyrcania · pools, bridge & cisterns",
+    "width": 700,
+    "height": 650,
+    "source": "Patrich 1989 Fig. 22, p. 256; double-pool description p. 255",
+    "sourceUrl": "https://drive.google.com/file/d/1-6s-nqSD-PP_FpZ788Tc0dvH_z7eziZg/view",
+    "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
+    "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. The source figure has no visible north arrow; no compass is inferred from page-up. Selected water installations only. The basin-centre and rim distance origins remain separate, unresolved hypotheses.",
+    "shapes": [
+      {
+        "d": "M163 94 L201 52 L254 92 L216 133Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M134 121 L158 91 L207 134 L184 160Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M295 75 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M95 215 L121 231 L106 270 L84 257Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M70 23 L121 63 L165 111 L215 159 L253 193",
+        "kind": "channel"
+      },
+      {
+        "d": "M120 128 L175 175 L232 221 L255 243",
+        "kind": "reconstruction"
+      },
+      {
+        "d": "M320 268 L349 232 L397 278 L423 336 L414 372 L376 436 L273 398 L248 366 L263 329",
+        "kind": "channel"
+      },
+      {
+        "d": "M310 329 L333 294 L372 319 L354 348Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M376 428 L395 451 L389 478 L368 476Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M400 486 L415 501 L405 520 L391 513Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M523 280 L542 277 L545 295 L528 304Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M535 248 L548 242 L554 253 L542 263Z",
+        "kind": "basin"
+      }
+    ],
+    "annotations": [
+      {
+        "x": 112,
+        "y": 37,
+        "text": "Double pool"
+      },
+      {
+        "x": 298,
+        "y": 215,
+        "text": "Fortress summit"
+      },
+      {
+        "x": 30,
+        "y": 305,
+        "text": "Separate southern pool"
+      },
+      {
+        "x": 293,
+        "y": 605,
+        "text": "Source orientation · north unresolved"
+      }
+    ],
+    "features": [
+      {
+        "id": "north-pool",
+        "label": "Northern member of the double pool",
+        "x": 208,
+        "y": 93,
+        "kind": "Reported remains",
+        "entryIds": [
+          "29"
+        ],
+        "description": "Patrich reports unequal sides of 19, 15, 18.2 and 16 m and a depth reaching about 5 m for the northern pool.",
+        "limit": "The report’s plaster typology is not a sealed construction date. Entry 29’s reading, compass direction and distance origin must be selected independently.",
+        "sources": [
+          "Patrich 1989 p. 255; Fig. 22 p. 256"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_hyrcania/geometry.md"
+      },
+      {
+        "id": "south-member",
+        "label": "Southern member of the double pool",
+        "x": 165,
+        "y": 133,
+        "kind": "Reported remains",
+        "entryIds": [
+          "29"
+        ],
+        "description": "The adjacent southern member is shallower, reaching about 2.6 m. Approximately 4.8–5.4 m of quarried rock separates the two members.",
+        "limit": "A general 5 m pool depth cannot be assigned to this shallower basin. The pair’s survival does not identify a scroll reservoir.",
+        "sources": [
+          "Patrich 1989 p. 255; Fig. 22 p. 256"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_hyrcania/geometry.md"
+      },
+      {
+        "id": "bridge",
+        "label": "Aqueduct bridge · source no. 48",
+        "x": 207,
+        "y": 173,
+        "kind": "Reported remains",
+        "entryIds": [
+          "16",
+          "29"
+        ],
+        "description": "The double pool lies north of the bridge in Patrich’s description. The bridge carries the water approach across the saddle.",
+        "limit": "The selected bridge envelope is approximate. Two masonry phases reported elsewhere do not date each pool edge or select an entry-29 datum.",
+        "sources": [
+          "Patrich 1989 pp. 255–256, Fig. 22; Garbrecht & Peleg 1994 pp. 167–168"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_hyrcania/geometry.md"
+      },
+      {
+        "id": "separate-pool",
+        "label": "Separate filled southern pool",
+        "x": 102,
+        "y": 241,
+        "kind": "Reported remains",
+        "entryIds": [
+          "29"
+        ],
+        "description": "A distinct filled pool south of the bridge has no exposed lining at the published depth; a moat function is proposed.",
+        "limit": "Keep it separate from the double pool. Its function and phase remain uncertain.",
+        "sources": [
+          "Patrich 1989 pp. 255–256, Fig. 22"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_hyrcania/geometry.md"
+      },
+      {
+        "id": "cisterns",
+        "label": "Southern cisterns · D and F",
+        "x": 392,
+        "y": 467,
+        "kind": "Reported remains",
+        "entryIds": [
+          "16",
+          "29"
+        ],
+        "description": "The fort’s southern slope contains cisterns labelled separately in Fig. 22. Cisterns S and F receive their own detail figures on p. 258.",
+        "limit": "These are other installations, rather than sections through the double pool. Their steps cannot substitute for a pool rim or contemporaneous conduit junction.",
+        "sources": [
+          "Patrich 1989 Fig. 22 p. 256; Figs. 26–27 p. 258"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_hyrcania/geometry.md"
+      }
+    ]
+  },
+  {
+    "id": "abu-saraj-iv17",
+    "placeIds": [
+      "abu_saraj_iv17"
+    ],
+    "label": "Abu Saraj · IV/17 cave",
+    "width": 660,
+    "height": 615,
+    "source": "Sion 2002, ʿAtiqot 41, Plan 5 p. 63 · IV/17",
+    "sourceUrl": "https://publications.iaa.org.il/atiqot/vol41/iss1/6/",
+    "credit": "Ofer Sion / Israel Antiquities Authority · CC BY-NC 4.0. Complete Plan 5 figure crop; source caption, scale and north arrow retained.",
+    "limit": "No geographic registration. Complete published Plan 5 figure cropped from p. 63; no rotation or annotation baked into the image. Numbered selection markers are separate. The north arrow defines the right opening as northern. Present gaps do not reconstruct ancient thresholds, wall phases or floor elevations.",
+    "features": [
+      {
+        "id": "north-mouth",
+        "label": "Northern opening · right side of plan",
+        "x": 562,
+        "y": 416,
+        "kind": "Reported remains",
+        "entryIds": [
+          "25"
+        ],
+        "description": "The source describes a 0.8 m northern opening leading into a northern space approximately 2.2 × 4.5 m.",
+        "limit": "The northern member is distinguished using the drawn north arrow. Its present-aperture chord supplies no ancient threshold elevation or digging origin.",
+        "sources": [
+          "Sion 2002 pp. 62–63, Plan 5; IV/17 assessment, 2 October 2026"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry25_iv17/README.md"
+      },
+      {
+        "id": "pillar",
+        "label": "Rock-cut dividing pillar",
+        "x": 415,
+        "y": 380,
+        "kind": "Reported remains",
+        "entryIds": [
+          "25"
+        ],
+        "description": "A rock-cut pillar divides the northern and southern spaces. Plan 5 shows an interior route around the pillar’s inner end.",
+        "limit": "Two-dimensional connectivity does not establish ancient passage clearance. A pillar resemblance is shared with comparison caves and supplies no unique identification.",
+        "sources": [
+          "Sion 2002 p. 63, Plan 5"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry25_iv17/README.md"
+      },
+      {
+        "id": "south-mouth",
+        "label": "Southern opening · partial masonry block",
+        "x": 231,
+        "y": 442,
+        "kind": "Reported remains",
+        "entryIds": [
+          "25"
+        ],
+        "description": "The southern mouth is partly blocked by a masonry wall, reported as 2.4 m long and 0.4 m thick. The southern space is approximately 2.15 × 4.20 m.",
+        "limit": "Present gaps differ from the earlier full mouth. Wall foundation, threshold contacts and a sealed construction date require the L-656 field file.",
+        "sources": [
+          "Sion 2002 p. 63, Plan 5; IV/17 phase audit"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry25_iv17/README.md"
+      }
+    ],
+    "image": "dossiers/sion2002-plan5-iv17.webp",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  {
+    "id": "gerizim-swp-context",
+    "placeIds": [
+      "gerizim"
+    ],
+    "kind": "survey-map",
+    "label": "Historical survey · SWP Sheet XI",
+    "width": 2600,
+    "height": 2224,
+    "image": "dossiers/swp-sheet-xi.webp",
+    "source": "Conder & Kitchener, Map of Western Palestine (1880), Sheet XI; surveys 1872–1877",
+    "sourceUrl": "https://drive.google.com/file/d/1Y85eW04_sZkObCF2K_rUmFPYOP8kMVqt/view",
+    "credit": "Palestine Exploration Fund · 1:63,360 · public-domain cartography. Complete sheet, margins and source scale retained.",
+    "limit": "Unregistered historical survey; no geographic registration is inferred from the source grid. The broad Shechem-sector selection is context, not an excavation footprint or individual Gerizim stair/cistern. Symbols do not establish ancient chronology.",
+    "features": [
+      {
+        "id": "shechem-sector",
+        "label": "Shechem-region survey context",
+        "x": 2093,
+        "y": 1657,
+        "kind": "Historical survey context",
+        "entryIds": [
+          "57"
+        ],
+        "description": "Sheet XI places Shechem near its southeastern corner and depicts the surrounding terrain, routes and named sites as recorded by the nineteenth-century survey.",
+        "limit": "The broad selection marks the regional context only. Use the separate Magen plan for precinct and mansion architecture; this sheet does not identify entry 57’s step, upper pit or P5178.",
+        "sources": [
+          "SWP Sheet XI; PDF 11 in the supplied map set",
+          "SWP title and legend, PDF 27–28"
+        ],
+        "sourceUrl": "https://drive.google.com/file/d/1Y85eW04_sZkObCF2K_rUmFPYOP8kMVqt/view"
+      }
+    ]
   }
 ]

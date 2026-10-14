@@ -18,3 +18,5 @@
 }
 .site-sheet-handle{touch-action:none}
 @container(max-width:800px){.site-zoom-controls{top:12px;bottom:auto;right:12px}}
+
+.site-plan-annotations{fill:#526349;font:14px var(--sans);pointer-events:none}.site-plan-annotations path{stroke:#526349;fill:none;stroke-width:2}.site-plan-annotations text{paint-order:stroke;stroke:#e8dec2;stroke-width:4px;stroke-linejoin:round}

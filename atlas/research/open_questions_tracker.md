@@ -134,7 +134,7 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 - **Next test:** obtain JSP 8 and JSP 20 plans/locus concordances, basket elevations and deposit description; trace the remaining Festus specimens separately.
 - **Answer criterion:** establish P5178's architecture and stratigraphy and determine whether they date the proposed stair/pit or cistern relationship.
 - **Access / dependencies:** locus plans and deposit records remain unavailable in inspected material.
-- **Progress:** 2026-10-01 — earlier three-coin-group inference corrected in active records; feature-specific period use remains unverified.
+- **Progress:** 2026-10-01 — earlier three-coin-group inference corrected in active records; feature-specific period use remains unverified. 12 October: the stale atlas wording is corrected; the newly uploaded scan is identified as SWP maps, not the required architectural report.
 - **Analogues round (2026-10-09 UTC):** [Antiquities 18.85–89](https://github.com/quadrin/CopperScroll/blob/main/research/history/salvage_records/README.md#antiquities-188589-and-the-scrolls-gerizim-entry-entry-57) records a first-century belief in vessels buried on Gerizim (TRADITION). Pilate stopped the crowd before the climb, so it is not a search record and cannot decide entry 57. Next records: Bull and Wright, *HTR* 58 (1965) 234–237, and Bull, *BA* 31 (1968) 58–72, on the Tell er-Ras trench that Bull proposed as the scroll's pit (Lefkovits 2000 p. 412).
 - **Evidence / historical question:** [Gerizim follow-up](https://github.com/quadrin/CopperScroll/blob/main/research/sites/gerizim_locus5178_followup_2026-10-01.md); Q48.
 
