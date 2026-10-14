@@ -87,7 +87,7 @@ None of the sources read here ties a recorded deposit to the Temple (`temple_rel
 - **Grave goods.** The ʿAtiqot 112 abstract says the Nahal Shalva hoard lay near a female skeleton in the pit. Whether it is a grave good is not stated, so the precedent's coding is kept and the row is flagged.
 - **Weapons.** The En Gedi swords count as a metal cache (PLAN 4). Their Bar Kokhba date is the IAA's (CLAIM).
 - **Hendin's lead-token hoards.** Hendin says they "may have originated in Jordan". They are three rows of unknown context, as dealer attributions are treated in the precedent.
-- **Ḥorbat ʿEthri.** Known only from a publication title in Hendin's bibliography. One row, context unknown.
+- **Ḥorbat ʿEthri.** The `n_ethri` row still derives the unread Zissu–Hendin 2012 publication title, with the particular hoard identity unresolved. [Zissu–Ganor 2009 primary contexts](../../sources/new_batch_2026-10-13/synagogue_changes.md) now describe separately concealed village-corner denarii, a half-shekel in system XIV and a worn didrachm in a chamber-floor niche (pp. 96, 99 n. 39, 102 n. 46). Their identity with the 2012 hoard remains undetermined. Preserve the groups separately; single coins stay outside the frozen hoard comparison, and mint dates do not fix concealment phases.
 - **Third Wall tools.** Excluded: a tool kit not described as concealed, dated only "Second Temple period".
 - **Depths.** The Mandelbaum Gate depth is a minimum ("at least 50 cm" of overlying chips). The Ramat Raḥel depth is measured from the top of a shaft.
 - **Landmarks.** Cave walls count as wall faces (Te'omim C, "adjacent to the western wall of the hall"). "Entrance room" names a room, not a placement (Herodion 1969). The Masada casemate coins lay scattered on the floor; Meshorer only infers that they came from the wall, so no landmark is coded. The market hoard said to come from "outside St. Stephen's Gate" has an unknown context, so no landmark is coded (PLAN 10).
@@ -254,3 +254,7 @@ python3 -I -B -m unittest discover -s research/comparanda/hoards_full/tests -t r
   - The phase-4 ADAJ and ʿAtiqot hoard rows often give the number of coins in `n_features`.
   - ADAJ4_5ar-032 and ADAJ1-041 (Awarta) are one hoard, though their dates do not overlap (6th c. against 602–685).
 - This lane's `n_thirdwall_tools` row. The ʿAtiqot 88 reader's coding contradicts its exclusion. Whether to recode it is the lane owner's exploratory choice; it is not applied here.
+
+## Preliminary Qiryat Sefer report, 14 October 2026 UTC
+
+[The newly inspected native capture](../../sources/new_batch_2026-10-13/capture_evidence.md) gives primary descriptions of the hoards already represented as CHRE 8172/8173: coins in a natural crevice in Building III's central room, and a juglet deposit in Building V's eastern room (preliminary report pp. 27, 31). The central-room description and CHRE 8172's doorway-threshold description, derived from Bijovsky 2004, are distinct source formulations; the new report does not establish their exact spatial equivalence. Preserve both until the later original context is checked. This is added find-context provenance for existing groups, not an additional pair of hoards; no frozen catalogue/results regeneration follows.

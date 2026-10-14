@@ -1,8 +1,8 @@
 # Active test
 
-Updated 12 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 14 October 2026 UTC / 13 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **obtained** — [interactive 3D site models and browser observations](../atlas/INTERACTION_VALIDATION.md#interactive-3d-site-models): local map navigation, structure focus, camera restoration, cave cutaway, responsive details and terrain context. [Source dimensions and display assumptions](assets/plans/atlas-explorer/manifest.json) are recorded; mapped surroundings use archived elevation data, and IV/17’s unlocated rock setting is labelled illustrative.
+Last session (14 October UTC / 13 October Los Angeles): **partly obtained** — [new-source changes and page-specific coverage](sources/new_batch_2026-10-13/README.md): the proposed northern second entrance to 11Q is corrected, primary concealment contexts and hydraulic comparisons added, and incomplete/mislabeled copies documented.
 
 ## Active questions and the observation that decides each
 
