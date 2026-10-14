@@ -365,3 +365,11 @@ The following 11Q and CIIP pass records preserve source observations and inspect
 Current CIIP state: all 679 native targets, including contents 5–11, personal-name index 765–825 and location keys 831–834, have been inspected and integrated. Strict partials are 22/25/67/69/105/125/171/470/519/520/552/639/675/704. No unread native queue targets remain; complete supplied-native reading remains false.
 
 Raw files and source page/figure renders remain private. No candidate score or frozen test result is changed by this exploratory coverage lane.
+
+## Arak Hala figure recovery check, 14 October 2026
+
+The 24-leaf supplied offprint's text is already fully read; the separate volume figures printed 215–226/Figs. 1–19 remain outside it. The German National Library's authoritative contents PDF independently confirms that this suite begins at 215 and the next figure suite begins at 227: https://d-nb.info/1045578452/04. The Bar-Ilan author record confirms the main chapter is pp. 123–142, in *See, I will bring a scroll recounting what befell me*, JAJSup 12, Vandenhoeck & Ruprecht, 2014, print ISBN 9783525550625, electronic ISBN 9783647550626: https://cris.biu.ac.il/en/publications/aramaic-and-latin-graffiti-in-an-underground-complex-at-khirbet-a/.
+
+CIIP IV/2's already-inspected pp. 932–934/Figs. 3500.1–2 and 3501.1–2 include a drawing credited to original Arak Fig. 19 p. 226. That is an existing secondary reproduction of one figure, and does not constitute recovery of the missing suite or independent corroboration.
+
+The bounded current search checked primary publisher/author routes and alternate exact-title searches. ResearchGate author upload and publisher routes were blocked. The official author record links back to the same ResearchGate upload; it supplies no separate open figure PDF. No new Arak text or figure inspection is credited. The stable publisher book route is https://www.degruyterbrill.com/document/isbn/9783666550621/html?lang=de; retrieval failed with 405 in this session. Requesting the specific 12-page suite is the remaining copy-repair requirement; no email or purchase was made.

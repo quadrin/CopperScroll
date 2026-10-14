@@ -24,6 +24,15 @@
         "complete_physical_publication_read": false,
         "limitations": [
           {
+            "canonical_replacement": "Publisher522-leaf copy restores wrongpage/images/glyphs; original damaged copy remains unchanged"
+          },
+          {
+            "fine_legibility_limit": "Fig5.2 printed77 overlapping labels/smallest scale numerals remain source-limited"
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "historical_damaged_copy_limitations": [
+          {
             "blocked_scope": "Repaired source PDF lacks EOF/trailer and references missing resources. Available native inspection is finished; unavailable image/font resources and wrong viewer65 remain source-integrity gaps."
           },
           {
@@ -110,7 +119,10 @@
             }
           }
         ],
-        "exposure": "Exploratory source reading; no unused holdout claim"
+        "canonical_text_read_complete": true,
+        "canonical_native_targets_inspected": true,
+        "canonical_physical_copy_complete": true,
+        "recovery_record": "full_coverage_middle_maccabees.json#publisher_recovery_2026_10_14"
       }
     },
     {
@@ -1650,21 +1662,14 @@
         "record": "full_coverage_regional_books.json",
         "available_text_pass_complete": true,
         "available_native_target_pass_complete": true,
-        "complete_physical_publication_read": false,
+        "complete_physical_publication_read": true,
         "limitations": [
           {
-            "missing_printed_pages": [
-              [
-                31,
-                80
-              ]
-            ]
-          },
-          {
-            "missing_figure_scope": "Pottery figures 2.1–2.102 on absent printed47–65; entire chapter2 text and tables2.1–2.10, lamps opening/tables3.1–3.5 absent"
+            "historical_coordinate_limit": "Existing377-row viewer ledger describes original malformed-tree traversal; full427 mapping in orphan_page_recovery. Source catalog/date discrepancies remain, rather than absent leaves."
           }
         ],
-        "exposure": "Exploratory source reading; no unused holdout claim"
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "recovery_record": "full_coverage_regional_books.json#omrit2.orphan_page_recovery"
       }
     },
     {
@@ -1695,7 +1700,14 @@
             "native_blocker": "fetch(download_raw_file=true,include_base64=false) HTTP413,357918873 bytes >268435456. Complete readable-text response1,759,017chars; image/caption availability must be separated."
           }
         ],
-        "exposure": "Exploratory source reading; no unused holdout claim"
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "native_supplements_inspected": [
+          "chapter1",
+          "chapter4",
+          "chapter8",
+          "Appendices8.1–8.2"
+        ],
+        "remaining_native_scope": "chapters2–3,5–7,9–20; chapter18 referenced appendices18.1–18.3 unlocated"
       }
     },
     {
@@ -2127,7 +2139,10 @@
             ]
           }
         ],
-        "exposure": "Exploratory source reading; no unused holdout claim"
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "canonical_article_and_plates_inspected": true,
+        "canonical_article_legibility_complete": false,
+        "recovered_supplement": "full_coverage_synagogue_articles.json#source64.recovered_chapter_and_plates_2026_10_14"
       }
     },
     {

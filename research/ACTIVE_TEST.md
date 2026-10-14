@@ -2,7 +2,7 @@
 
 Updated 14 October 2026 UTC. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (14 October 2026 UTC): **partly** — completed the [available-source full-reading pass](sources/new_batch_2026-10-13/README.md), reconciled native figure/table archives and source/copy limits, and added the precise 1952 ÉBAF 3Q-plan retrieval lead to R02; missing originals and illegible details remain.
+Last session (14 October 2026 UTC): **partly** — recovered and read Omrit II orphan pages and a sound Middle Maccabees copy; restored Sumaqa plates and Wadi native chapter coverage; [source records](sources/new_batch_2026-10-13/README.md) preserve remaining access and legibility gaps.
 
 ## Active questions and the observation that decides each
 

@@ -37,7 +37,15 @@
       "supplied_copy_figures_complete": false,
       "reading_status": "all_accessible_supplied_content_read",
       "scope": "Available capture screens only; incomplete source joins",
-      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain."
+      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain.",
+      "replacement_copy_search_2026_10_14": {
+        "inventory_index": 31,
+        "stable_url": "https://www.jstor.org/stable/26749325",
+        "needed": "complete Qadmoniot151(2016)49–53",
+        "status": "not_recovered",
+        "error": "stable page tagmanager shell; nativePDF URL HTML; author/publisher search no replacement",
+        "original_gap": "capture joins omit text"
+      }
     },
     {
       "inventory_index": 53,
@@ -1344,7 +1352,184 @@
       "supplied_copy_figures_complete": true,
       "reading_status": "all_accessible_supplied_content_read",
       "scope": "Entire supplied PDF",
-      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain."
+      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain.",
+      "recovered_chapter_and_plates_2026_10_14": {
+        "inventory_index": 64,
+        "publication_identity": "Dar and Mintzker1995, Sumaqa, pp157–165, plates7a/b,8a/b,9a/b",
+        "body_text_read_printed_pages": [
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165
+        ],
+        "body_native_inspected_viewer_pages": [
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207
+        ],
+        "body_volume": 1,
+        "plate_volume": 2,
+        "plate_native_inspected_viewer_pages": [
+          403,
+          404,
+          405
+        ],
+        "plate_caption_list_printed_page": 672,
+        "plate_caption_list_viewer_page": 390,
+        "original_supplied_copy_remains_incomplete": true,
+        "linked_supplement_article_complete": true,
+        "containing_volume_fully_read": false,
+        "legibility_limits": [
+          "Figure11 tiny locus labels are source-resolution limited; complete plan preserved."
+        ],
+        "new_observations": [
+          "Plate8a bench crosses lower northern doorway; captionW20 differs narrativep161 benchW10; equivalence not established.",
+          "Plate8b shows mixed masonry with reused architectural fragments; captionW2/L291 and west-to-eastview preserved.",
+          "Plates9a/b distinguish medieval kitchenwareL2 and opposite building reuse from earlier synagogue."
+        ],
+        "source_manifest": {
+          "title": "Sumaqa 1995 recovered chapter and plates",
+          "source64": "Dar and Mintzker, The Synagogue of Horvat Sumaqa, 1983–1993",
+          "authors": [
+            "Shimon Dar",
+            "Yohanan Mintzker"
+          ],
+          "containing_publication": "Dan Urman and Paul V. M. Flesher (eds), Ancient Synagogues: Historical Analysis and Archaeological Discovery, vols 1–2, Brill, Leiden/New York/Köln, 1995",
+          "reuse_status": "Copyright1995 E.J.Brill; AWDL catalog names Koninklijke Brill NV as provider. Private research preservation only; no public image republication license established.",
+          "date": "2026-10-14",
+          "sources": [
+            {
+              "volume": 1,
+              "url": "https://mc.dlib.nyu.edu/files/books/brill_awdl000067/brill_awdl000067_lo.pdf",
+              "filename": "sumaqa_containing_volume_nyu.pdf",
+              "sha256": "1f1ecfa02110814baa4bd8dab47a83e039983be83733c0086e9be9f2682013a8",
+              "bytes": 51603903,
+              "pdf_pages": 344,
+              "read_scope": "Sumaqa chapter/plates and relevant title/copyright/caption leaves only; containing volume not fully read",
+              "viewer_pages_preserved": [
+                7,
+                8,
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207
+              ]
+            },
+            {
+              "volume": 2,
+              "url": "https://mc.dlib.nyu.edu/files/books/brill_awdl000068/brill_awdl000068_lo.pdf",
+              "filename": "sumaqa_plate_volume_nyu.pdf",
+              "sha256": "e5917291ac808d1ea559b720cd03fcaa94137a6fb99e8bfd6aafdfa0c008768d",
+              "bytes": 60934729,
+              "pdf_pages": 464,
+              "read_scope": "Sumaqa chapter/plates and relevant title/copyright/caption leaves only; containing volume not fully read",
+              "viewer_pages_preserved": [
+                7,
+                8,
+                390,
+                403,
+                404,
+                405
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "filename": "sumaqa_1995_volume1_native_extract.pdf",
+              "sha256": "138d506853e7b321e276a4ccc1628cad1600f3de8d86625c6a43277079c283dd",
+              "source_sha256": "1f1ecfa02110814baa4bd8dab47a83e039983be83733c0086e9be9f2682013a8",
+              "viewer_pages": [
+                7,
+                8,
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207
+              ],
+              "printed_pages": "title,copyright,157–165",
+              "extraction": "Native full PDF pages; no crop or redrawing; scales,northarrows,captions retained."
+            },
+            {
+              "filename": "sumaqa_1995_volume2_native_extract.pdf",
+              "sha256": "3e4413af5c49aa289c140e24369813d2c196c08f69483464ebb89d21cc001e42",
+              "source_sha256": "e5917291ac808d1ea559b720cd03fcaa94137a6fb99e8bfd6aafdfa0c008768d",
+              "viewer_pages": [
+                7,
+                8,
+                390,
+                403,
+                404,
+                405
+              ],
+              "printed_pages": "title,copyright,672,unnumbered plates7a/b,8a/b,9a/b",
+              "extraction": "Native full PDF pages; no crop or redrawing; scales,northarrows,captions retained."
+            },
+            {
+              "filename": "vol2_viewer390.png",
+              "sha256": "d37b606136db022a43e6b90b65daca803f8ffef31c88335e91e9426bf8187c63",
+              "source_sha256": "e5917291ac808d1ea559b720cd03fcaa94137a6fb99e8bfd6aafdfa0c008768d",
+              "source_volume": 2,
+              "viewer_page": 390,
+              "printed_page": 672,
+              "plate": null,
+              "extraction": "PyMuPDF native fullpage render at2x; no crop or redraw."
+            },
+            {
+              "filename": "vol2_viewer403.png",
+              "sha256": "e4200b9481da4ccebb8e8e906ba0476b47341d6c97ce684f78eaa788e24f9330",
+              "source_sha256": "e5917291ac808d1ea559b720cd03fcaa94137a6fb99e8bfd6aafdfa0c008768d",
+              "source_volume": 2,
+              "viewer_page": 403,
+              "printed_page": null,
+              "plate": "7a/b",
+              "extraction": "PyMuPDF native fullpage render at2x; no crop or redraw."
+            },
+            {
+              "filename": "vol2_viewer404.png",
+              "sha256": "5990275a75157c0022dbe8c9edda799b229174906ae645fdcf8a978c4ef5be9a",
+              "source_sha256": "e5917291ac808d1ea559b720cd03fcaa94137a6fb99e8bfd6aafdfa0c008768d",
+              "source_volume": 2,
+              "viewer_page": 404,
+              "printed_page": null,
+              "plate": "8a/b",
+              "extraction": "PyMuPDF native fullpage render at2x; no crop or redraw."
+            },
+            {
+              "filename": "vol2_viewer405.png",
+              "sha256": "f903dca27ec7ad7795a6380a461e91f503a851f1f943161c08e36391c19fbbef",
+              "source_sha256": "e5917291ac808d1ea559b720cd03fcaa94137a6fb99e8bfd6aafdfa0c008768d",
+              "source_volume": 2,
+              "viewer_page": 405,
+              "printed_page": null,
+              "plate": "9a/b",
+              "extraction": "PyMuPDF native fullpage render at2x; no crop or redraw."
+            }
+          ]
+        }
+      },
+      "canonical_article_and_plates_inspected": true,
+      "canonical_article_legibility_complete": false
     },
     {
       "inventory_index": 65,
@@ -1458,7 +1643,16 @@
       "supplied_copy_figures_complete": false,
       "reading_status": "all_accessible_supplied_content_read",
       "scope": "Available capture screens only; incomplete source joins",
-      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain."
+      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain.",
+      "replacement_copy_search_2026_10_14": {
+        "inventory_index": 66,
+        "stable_url": "https://www.jstor.org/stable/23681828",
+        "needed": "complete Qadmoniot117(1999)25–32",
+        "status": "not_recovered",
+        "error": "stable page tagmanager shell; nativePDF URL HTML; author/publisher search no replacement",
+        "original_gap": "capture joins at25,26,30,31,32",
+        "metadata_correction": "JSTOR issue i23681815 identifies1999"
+      }
     },
     {
       "inventory_index": 67,
@@ -1508,7 +1702,15 @@
       "supplied_copy_figures_complete": false,
       "reading_status": "all_accessible_supplied_content_read",
       "scope": "Available capture screens only; incomplete source joins",
-      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain."
+      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain.",
+      "replacement_copy_search_2026_10_14": {
+        "inventory_index": 67,
+        "stable_url": "https://www.jstor.org/stable/23682900",
+        "needed": "complete Qadmoniot130(2005)107–116",
+        "status": "not_recovered",
+        "error": "stable page inaccessible; nativePDF URL HTML; author/publisher search no replacement",
+        "original_gap": "capture joins at107,109,112,116"
+      }
     },
     {
       "inventory_index": 68,
@@ -1676,7 +1878,16 @@
       "supplied_copy_figures_complete": false,
       "reading_status": "all_accessible_supplied_content_read",
       "scope": "Available capture screens only; incomplete source joins",
-      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain."
+      "archive_scope": "Private fullpage original renders preserve figures and captions; copyright/reuse constraints remain.",
+      "replacement_copy_search_2026_10_14": {
+        "inventory_index": 69,
+        "stable_url": "https://www.jstor.org/stable/23677973",
+        "needed": "complete Qadmoniot91/92(1990)115–125",
+        "status": "not_recovered",
+        "error": "stable page inaccessible; nativePDF URL HTML; author/publisher search no replacement",
+        "original_gap": "capture joins115,116,117,122,123 and possible figure pixels",
+        "metadata_correction": "JSTOR primary issue i23677943 confirms endpoint125; secondary126 discrepancy resolved"
+      }
     },
     {
       "inventory_index": 70,
@@ -2043,5 +2254,9 @@
   ],
   "existing_archive_upload_receipts": "coverage-work/synagogue_articles/upload_receipts.json; parts01–04uploaded/verifiedbyroot.",
   "private_archive_register": "../../assets/plans/new-batch-2026-10-13/archives.json",
-  "private_asset_register": "../../assets/plans/new-batch-2026-10-13/all_source_figure_access_register.json"
+  "private_asset_register": "../../assets/plans/new-batch-2026-10-13/all_source_figure_access_register.json",
+  "continuation_archive_2026_10_14": {
+    "register": "../../assets/plans/new-batch-2026-10-13/archives.json",
+    "access": "Owner-private source bundles; access identifiers retained privately, public records contain source/asset hashes and member routes."
+  }
 }

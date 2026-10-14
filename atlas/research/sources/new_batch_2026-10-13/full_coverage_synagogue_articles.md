@@ -15,7 +15,7 @@ All17assignedsources and completeUNC Huqoqsupplement finished.354BetShearimleave
 | 61 | 1–354 | False | AnnexD lists separately attached excavation books (Mazar1971; Schwabe and Lifshitz1974; Avigad1976); books not embedded. Photo/video CDmedia referenced elsewhere are absent.; February2015 response viewer352–353 refers to Eyal Betzer declaration and maps2a–2c, absent from this354-page file. Supplied maps349–350 are dated15September2014 and belong to earlier response.; Tiny cadastral/map/sign labels partly illegible in source reproduction; viewer160 tinyArabic/Hebrew sign text not fully recoverable, despite enlargedEnglish sign reading. AnnexB maps288–289,293,298,305,307–308,310 include lowresolution labels/stamps.; Viewer306 English translation overlay occludes underlyingHebrew statutory text. All visible text read; occluded original cannot be certified.; Unofficial1989law translation contains original literalblankbrackets viewer268/272/274; verified on original images, not OCR omissions. |
 | 62 | 1–16 | True | None in suppliedpublication |
 | 63 | 1–19 | True | None in suppliedpublication |
-| 64 | 1–9 | False | Cited plates7a/b,8a/b,9a/b absent from supplied9-page excerpt. |
+| 64 | 1–9 plus NYU chapter/plate supplement | False for original excerpt | All cited plates7a/b–9a/b recovered and inspected; canonical article/plate coverage complete with Fig11 small-label limit. |
 | 65 | 1–24 | True | None in suppliedpublication |
 | 66 | 1–12 | False | Text clipped at capture joins1→2(p25),2→3(p26),8→9(p30),10→11(p31),11→12(p32). Original article not continuous. |
 | 67 | 1–14 | False | Text clipped at capture joins1→2(p107),3→4(p109),8→9(p112),13→14(p116). Original article not continuous. |
@@ -85,3 +85,37 @@ Parts01–04:372originalpageimages, uploadedandverifiedbyroot. Parts05onward:354
 - private_figures_synagogue_part05.zip: 162pages; SHA256 68844d53696b2c7f27f00439bae1dd318cf9fe5ca09b5517703c18672d741f33
 - private_figures_synagogue_part06.zip: 176pages; SHA256 5a7806ac0eaeba3715ab9a59c0cd7744f1a95a58e439b92fadc0e13ab9aa80ef
 - private_figures_synagogue_part07.zip: 16pages; SHA256 56e500b0c05a8d0b801c634bbe02cbcd56abad22b99c28d7304a717ccdbf56ba
+
+## Source recovery continuation, 14 October 2026
+
+Shimon Dar and Yohanan Mintzker, “The Synagogue of Ḥorvat Sumaqa, 1983–1993,” in Dan Urman and Paul V. M. Flesher (eds.), Ancient Synagogues: Historical Analysis and Archaeological Discovery, volume 1 (E. J. Brill, Leiden/New York/Köln, 1995), pp. 157–165. Plates occur in volume 2. The title/copyright leaves of both native volumes print 1995. This grounds the original scanned edition; later 1998 digital metadata should not silently replace it.
+
+Sources: https://mc.dlib.nyu.edu/files/books/brill_awdl000067/brill_awdl000067_lo.pdf and https://mc.dlib.nyu.edu/files/books/brill_awdl000068/brill_awdl000068_lo.pdf . The AWDL catalogue identifies Koninklijke Brill NV as provider: https://awdl.dlib.nyu.edu/subjects/751 . Legal primary digitization was accessible via direct download despite web-reader size limits. Native volume 1 has 344 viewer pages; volume 2 has 464. Only the named chapter, plates and associated title/caption leaves were read/inspected; neither containing volume is certified fully read.
+
+Read: volume 1 viewer 199–207 = printed 157–165, including all 12 notes, captions and figures 8–11. Native visual inspection covers every chapter page. Inspected: volume 2 viewer 403–405 = unnumbered plate leaves 7a/b, 8a/b, 9a/b, plus viewer 390 = printed 672 plate list. All six photographs and captions are present, complete within the scanned leaf and legible. Fig. 11's small locus numerals remain limited by source resolution; the complete plan, north arrow and scale are retained. Coverage of the Sumaqa article and its cited plates is now complete, with that small-label limit; the original nine-page supplied copy itself still lacks plates.
+
+Recovered observations, distinguished from dating/function inference:
+
+- Plate 7a (volume 2 viewer 403): a rock-cut burial entrance and decorated facade. The caption identifies two menorot. The image supplies no construction date or north bearing.
+- Plate 7b (same leaf): eastern synagogue facade and narthex, including surviving doorway/column arrangements. The date and phased reconstruction depend on the article's argument; they are not read directly from the photograph.
+- Plate 8a (viewer 404): a preserved northern doorway with a bench crossing/blocking its lower opening. Caption/plate-list locus is W20. Article p. 161 discusses the northern bench W10 and secondary wall W6, citing this plate. Keep W20 and W10 separate until their equivalence is demonstrated; do not silently normalize the labels.
+- Plate 8b (viewer 404): mixed-stone wall incorporating architectural fragments; the caption identifies W2/L291 and a west-to-east view. Article p. 160 also uses W2 for the northern wall and cites 8b in its discussion of cutting/filling to level the slope. The photograph establishes the visible reused material, while exact phase/structural correspondence remains the author's archaeological interpretation.
+- Plate 9a (viewer 405): pottery cluster photographed with scale and field marker; caption identifies early medieval kitchenware from L2. Article p. 163 associates kitchenware, bones and ovens with medieval reuse. This is a separate phase from the proposed earlier synagogue.
+- Plate 9b (viewer 405): masonry of the building opposite the facade. Caption and p. 163–164 assign its inhabitation to the Middle Ages; the photograph alone does not date it.
+
+These restored plates supply the missing visual evidence for blocking and reuse. They add no independent excavation campaign and must not duplicate the article's observations. They do not establish a Copper Scroll landmark. The paper itself remains a preliminary 1983–1993 excavation report: p. 159 says only half the synagogue had been excavated; p. 161 leaves earlier floor/stylobate relations and the standing grooved columns unresolved. Those limits survive full document coverage.
+
+Private native extracts, plate renders, exact captions and source/member hashes are retained in the [archive register](../../assets/plans/new-batch-2026-10-13/archives.json). Source image republication permission remains unestablished.
+
+## Clipped captures that remain open
+
+No replacement fulltext was obtained. Search results/catalogues only ground identities and access routes; they do not repair clipped text or certify an article read.
+
+- Source 31, Binyamin Har-Even, Qadmoniot 151 (2016), pp. 49–53: https://www.jstor.org/stable/26749325 . Stable page yielded only a tag-manager shell; https://www.jstor.org/stable/pdf/26749325.pdf yielded HTML rather than a PDF. A primary DigHippos offprint's issue contents confirms title/year but its actual body is only pp. 2–17, so it cannot repair Diab: https://www.dighippos.com/_files/ugd/2f636a_9a13a4d4ea244c679dc955d43fb64a91.pdf . Need complete printed 49–53, including each interrupted join. The 2013 Diab paper is a separate existing publication and cannot fill these specific missing lines.
+- Source 66, Yitzhak Magen, Yoav Tzionit and Erna Sirkis, Qadmoniot 117 (1999), pp. 25–32: https://www.jstor.org/stable/23681828 . Stable page yielded only a tag-manager shell; https://www.jstor.org/stable/pdf/23681828.pdf yielded HTML. Journal issue metadata https://www.jstor.org/stable/i23681815 grounds 1999, resolving the old note's 1998/1999 uncertainty. Need complete original pp. 25–32; known clipped joins affect pp. 25,26,30,31,32.
+- Source 67, Alexander Onn and Shlomit Weksler-Bdolah, Qadmoniot 130 (2005), pp. 107–116: https://www.jstor.org/stable/23682900 . Web reader said inaccessible; https://www.jstor.org/stable/pdf/23682900.pdf yielded HTML. Issue metadata https://www.jstor.org/stable/i23682368 gives 2005. Need complete original pp. 107–116; known clipped joins affect pp. 107,109,112,116. Later IAA reports have different publication identities and do not repair this copy.
+- Source 69, David Amit and Zvi Ilan, Qadmoniot 23(3/4), issues 91/92 (1990), pp. 115–125: https://www.jstor.org/stable/23677973 . Web reader said inaccessible; https://www.jstor.org/stable/pdf/23677973.pdf yielded HTML. Primary issue metadata https://www.jstor.org/stable/i23677943 confirms article ends at 125, clarifying the secondary Kinneret 126 endpoint. Need complete original pp. 115–125; known clipped joins affect pp. 115,116,117,122,123 and possibly photograph pixels.
+
+Initial Sumaqa publisher route https://brill.com/downloadpdf/edcollbook/title/2211.pdf returned 403; NYU primary digitization supersedes that access blocker for the needed plates.
+
+No emails, purchase requests, protected arrivals or reserved observations were opened.

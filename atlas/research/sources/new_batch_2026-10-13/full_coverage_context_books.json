@@ -639,10 +639,14 @@
       ],
       "publication_complete": false,
       "checkpoint": "Canonical end-to-end available English text and native queue complete; full scope and missing/corrupt content in full_coverage_middle_maccabees.json.",
-      "limits": [
+      "limits": "Historical original-copy limits are retained in standalone record: wrongviewer65, missing illustrations and Greek/Hebrew glyph resources. Publisher replacement closes those defects. Current canonical fine-legibility exception: Fig5.2 printed77 overlapping names and smallest scale numerals.",
+      "canonical_coverage_record": "full_coverage_middle_maccabees.json",
+      "canonical_publisher_recovery_record": "full_coverage_middle_maccabees.json#publisher_recovery_2026_10_14",
+      "canonical_union_text_and_native_targets_complete": true,
+      "canonical_fine_legibility_limit": "Fig5.2 printed77: overlapping names and smallest scale numerals remain source-limited.",
+      "historical_original_copy_limits": [
         "Canonical limitations in full_coverage_middle_maccabees.json: wrong source content at viewer 65, Greek/Hebrew glyph gaps, absent or incomplete embedded native illustrations and figure labels. Available English text and encountered native queue passes are finished; physical-publication completeness remains false."
-      ],
-      "canonical_coverage_record": "full_coverage_middle_maccabees.json"
+      ]
     },
     {
       "inventory_index": 10,

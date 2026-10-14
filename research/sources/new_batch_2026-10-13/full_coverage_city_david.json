@@ -20,7 +20,39 @@
       "title": "Reich and Shukron2021 CityofDavid finalreport",
       "complete_available_text_read": true,
       "reading_status": "complete available extracted text; native figures/table alignment unavailable",
-      "coverage_note": "full_coverage_city_david.md"
+      "coverage_note": "full_coverage_city_david.md",
+      "native_recovery_2026_10_14": {
+        "method": "Bounded publisher and public author chapter search; no sign-in or access-gate bypass; no outreach",
+        "result": "No native PDF obtained; existing extracted-text coverage unchanged",
+        "routes": [
+          {
+            "url": "https://www.jstor.org/stable/10.5325/j.ctv1w36prd",
+            "result": "Explicit institutional no-access notice; visible preface/Chapters3/5 download links redirect to notice"
+          },
+          {
+            "url": "https://www.degruyterbrill.com/document/doi/10.1515/9781646021765-fm/pdf",
+            "result": "Web HTTP405"
+          },
+          {
+            "url": "https://www.degruyterbrill.com/document/doi/10.1515/9781646021765/html",
+            "result": "Direct HTTP202 empty response"
+          },
+          {
+            "url": "https://www.researchgate.net/publication/355563282_CHAPTER_4_AREA_A_STRATIGRAPHY_AND_ARCHITECTURE",
+            "result": "Request PDF, no public full text"
+          },
+          {
+            "url": "https://antiquities.academia.edu/TehillahLieberman/Pottery%20Reports",
+            "result": "Author explicitly marks chapters shared upon request"
+          },
+          {
+            "url": "https://www.academia.edu/76335208/Winter_T_2021_The_Glass_Finds_In_R_Reich_and_E_Shukron_Excavations_in_the_City_of_David_Jerusalem_1995_2010_Areas_A_J_F_H_D_and_L_Final_Report_Ancient_Jerusalem_Publications_I_University_Park_Pa_Pp_647_655",
+            "result": "Public chapter text repeats previously read material; native PDF controls require sign-in"
+          }
+        ],
+        "stable_publication_route": "https://doi.org/10.5325/j.ctv1w36prd",
+        "new_native_pages_inspected": []
+      }
     }
   ],
   "private_archive_register": "../../assets/plans/new-batch-2026-10-13/archives.json",

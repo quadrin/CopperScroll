@@ -851,6 +851,64 @@
       "source_assets": 27,
       "verification": "Local ZIP CRC and each registered asset SHA256 verified; uploaded ID, name, size and parent read back. SHA256 is local, not remote.",
       "reuse": "Private authorized research preservation; no public republication licence established"
+    },
+    {
+      "number": "coverage-recovery-2026-10-14-part01",
+      "filename": "CopperScroll_coverage_recovery_2026-10-14_private_part01.zip",
+      "bytes": 71628725,
+      "sha256": "ddc392ab21fb53ab4d378af5117f079bf24a20cc912813f5ffb3a0d46551788d",
+      "verification": "Local ZIP CRC and nested member hashes verified; uploaded ID/name/byte-size/parent read back. Local hashes are not remote checksums.",
+      "reuse": "Private source derivatives; public image redistribution licence unestablished",
+      "nested_parts": [
+        {
+          "filename": "omrit_recovered_private.zip",
+          "bytes": 31716204,
+          "sha256": "195ab2985574518b1676a6510ef651fc93f462d52aeb3ef769e27469caa4cb9d",
+          "members": 65
+        },
+        {
+          "filename": "middle_maccabees_recovery_private.zip",
+          "bytes": 33476954,
+          "sha256": "c77000e358256931cb841946109452fddb5bb935bc30c2b6ae40b7b53d6fa0c1",
+          "members": 147
+        },
+        {
+          "filename": "private_synagogue_recovery_2026-10-14.zip",
+          "bytes": 6150526,
+          "sha256": "6bfc43f06ffcee7656650b408b6cb326ec2cb2f6f99b5ab29923f900a304359c",
+          "members": 7
+        }
+      ],
+      "access": "Private owner archive; access identifiers retained only in private continuation records."
+    },
+    {
+      "number": "coverage-recovery-2026-10-14-part02",
+      "filename": "CopperScroll_coverage_recovery_2026-10-14_private_part02.zip",
+      "bytes": 60081290,
+      "sha256": "1d56e4c7e484f75b182921262753d623efa6dfe7fbd3c9c71c6716a111ab0a52",
+      "verification": "Local ZIP CRC and nested member hashes verified; uploaded ID/name/byte-size/parent read back. Local hashes are not remote checksums.",
+      "reuse": "Private source derivatives; public image redistribution licence unestablished",
+      "nested_parts": [
+        {
+          "filename": "wadi_native_caves.zip",
+          "bytes": 17829834,
+          "sha256": "c1f026ccadbd24d431accfc24ba1f374aff9a5949815c169d529f231a91fbfd8",
+          "members": 23
+        },
+        {
+          "filename": "wadi_native_mosaics_a.zip",
+          "bytes": 22311482,
+          "sha256": "4387316d9f001f407a8391e4d280eb9078100d4c0382f15b409a1f99f01f930f",
+          "members": 25
+        },
+        {
+          "filename": "wadi_native_mosaics_b.zip",
+          "bytes": 19655001,
+          "sha256": "c85bb6fd446467dc7b87824b67530d568c3ff93739fcfdd53698d40d710a3518",
+          "members": 28
+        }
+      ],
+      "access": "Private owner archive; access identifiers retained only in private continuation records."
     }
   ],
   "notes": "Native extracts/fullpage renders preserve captions, scales and north arrows where source supplies them. Selected scope only; no whole-volume reading claim."
