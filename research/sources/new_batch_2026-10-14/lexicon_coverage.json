@@ -27,9 +27,9 @@
       ],
       "unread_text_viewer_ranges": [],
       "printed_page_mapping": "For inspected numbered spreads from viewer5 onward: left printed=2*viewer-8; right=2*viewer-7. Mapping not independently checked on every intermediate spread.",
-      "source_completeness": "Every supplied viewer spread inspected; erased/degraded strokes in viewer393/printed778–779 prevent character-complete reading.",
+      "source_completeness": "All supplied spreads inspected; remaining character-level limitation localized as specified in legibility_gaps.",
       "reserved_images_opened": false,
-      "next_reading": "Recover a readable replacement for viewer393/printed778–779; indexed source manuscripts remain uncollated.",
+      "next_reading": "Recover a clearer source for the damaged MoedQatan80c(46) index headword on printed778; underlying indexed manuscripts remain uncollated.",
       "evidence_classification": "new direct lexical-source scope controls; no archaeological corroboration",
       "available_readable_text_complete": true,
       "whole_publication_character_complete": false,
@@ -40,14 +40,16 @@
             778,
             779
           ],
-          "scope": "Degraded/erased index strokes, principally printed778; not complete readable text."
+          "scope": "After original embedded-image and column-crop inspection, most main index rows are readable. Local damage remains in the headword at MoedQatan80c(46), principally middle letters on printed778. No complete diplomatic recovery claimed.",
+          "updated_receipt": "continuation_visual_coverage.json"
         }
       ],
       "reading_contributors": [
         "Root viewer1–42 and414–415",
         "lexicon_a_coverage.json viewer43–220",
         "lexicon_b_coverage.json viewer221–413"
-      ]
+      ],
+      "additional_native_receipt": "continuation_visual_coverage.json"
     }
   ]
 }

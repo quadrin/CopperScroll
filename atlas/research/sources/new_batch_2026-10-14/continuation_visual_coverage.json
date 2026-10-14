@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-14",
+  "baseline_commit": "e207239ebcd0fc8561254d656925623cbcb203e8",
+  "purpose": "Additional native inspection only; overlapping rereads receive no new field-evidence or whole-volume completion credit.",
+  "records": [
+    {
+      "source_index": 3,
+      "source_sha256": "1a1fa647f48a5ff444370324c922962caca2afa8fb7ae2c2d359377f509fbb34",
+      "viewer": 287,
+      "printed": 257,
+      "plate": "IV",
+      "native_inspected": true,
+      "preflight_basis": "All six captioned subjects classified before viewing as archaeological photographs: dung fragment, linen in Cave12 jar, southernTomb1 textile/jewellery, Cave29 entrance, Feshkha coin-stack/textile, crevasse12 mat. No manuscript, inventory-card/letter facsimile or Tell es-Sultan target is captioned.",
+      "post_view_scope": "Six captioned archaeological subjects; no inventory-card or letter facsimiles.",
+      "lineage_limit": "Tomb1 panel shares PAM42.791 assemblage; Feshkha panel is the same1958 coin-stack observation. Other negative IDs unestablished. Native inspection does not establish excavation provenance.",
+      "asset_sha256": "4a3d7743ce738dcd2408ea62500e2d0cf0dc4e52941fe11687f9ab4dae12878c",
+      "reserved_target_clearance": "No clearance of any reserved image or previously unresolved source0 exposure is implied."
+    },
+    {
+      "source_index": 26,
+      "source_sha256": "92ea57e9e3a42ac26bf40bdf471c4736b23885b1bf7a00b405463dec5909667e",
+      "viewer": 393,
+      "printed": [
+        778,
+        779
+      ],
+      "native_inspected": true,
+      "method": "3x render, four two-column crops and original4252x2992 one-bit embedded scan, xref1568. No reconstructed strokes or OCR-derived diplomatic readings.",
+      "scope": "Most primary index rows readable; remaining uncertainty localized to the headword at MoedQatan80c(46), principally its middle letters on printed778.",
+      "underlying_witness_limit": "Reading index entries does not collate the indexed manuscripts.",
+      "asset_sha256": "dc1ab5fcd0cfe74c58e68db11cf51273ddcb828c3001d6f2ad66c1a38b9a74e9"
+    },
+    {
+      "source_index": 33,
+      "source_sha256": "b6e9ac9bdc1520474319b6eb4db28bbe11c60f690e47fe061590e7c7c07bce6d",
+      "viewer": 104,
+      "printed": 92,
+      "native_inspected": true,
+      "scope": "Individual native read includes final paragraph omitted by the extracted-text derivative, concerning redactional totals/disrupted list order. Earlier safe layout screening is preserved separately; substantive conjectural-list caution was already recorded.",
+      "whole_copy_audit_complete": false
+    }
+  ],
+  "private_proof_register": "../../assets/plans/new-batch-2026-10-14/continuation_proof_register.json"
+}

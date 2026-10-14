@@ -110,6 +110,7 @@
     268,
     282,
     286,
+    287,
     290,
     298,
     299,
@@ -224,7 +225,7 @@
         306
       ],
       "notes_bibliography": "All available body, catalogues, captions and225notes complete",
-      "encountered_figures_tables": "All nine numbered figures and five numbered tables inspected natively; all12 PlateIII photographs inspected. PlatesI/II/IV caption-only, photographs withheld pending identification.",
+      "encountered_figures_tables": "All nine numbered figures and five numbered tables inspected natively; all12 PlateIII photographs inspected. PlatesI/II caption-only, photographs withheld pending identification. PlateIV/viewer287 later inspected after caption preflight; see continuation_visual_coverage.json.",
       "full_native_page_audit_complete": false,
       "all_publication_content_read": false
     }
@@ -251,10 +252,9 @@
     {
       "viewer": [
         284,
-        285,
-        287
+        285
       ],
-      "reason": "PlatesI/II/IV captions read. Inventory-lot/archival-photo contents not independently established at panel level; native photographs not opened."
+      "reason": "PlatesI/II captions read; their native subjects remain insufficiently classified. PlateIV separately inspected under continuation_visual_coverage.json."
     }
   ],
   "body_notes_catalogues_captions_complete_viewer": [
@@ -279,6 +279,7 @@
       306
     ]
   ],
-  "coverage_method": "Sequential full available extracted-text reading, with native repair of dense/rotated tables and inspection of every numbered encountered figure; unknown image leaves and three inventory plates excluded from visual credit. No whole-native-page audit.",
-  "handoff": "Viewers307–320 assigned to finish_qumran; no reading or image credit from this middle receipt."
+  "coverage_method": "Sequential full available extracted-text reading, with native repair of dense/rotated tables and inspection of every numbered encountered figure; unknown image leaves and PlatesI/II excluded from visual credit. No whole-native-page audit.",
+  "handoff": "Viewers307–320 assigned to finish_qumran; no reading or image credit from this middle receipt.",
+  "additional_native_receipt": "continuation_visual_coverage.json"
 }

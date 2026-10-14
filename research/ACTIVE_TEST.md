@@ -2,7 +2,7 @@
 
 Updated 14 October 2026 UTC. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (14 October 2026 UTC): **partly** — integrated the new-source available-text reads, safe visual inventories, recovered supplements and evidence corrections; [coverage records](sources/new_batch_2026-10-14/README.md) retain missing copies, legibility limits, withheld images and the unresolved facsimile exposure audit.
+Last session (14 October 2026 UTC): **partly** — reconciled the concurrent sweep, corrected source-strength/citation/identifier/quantity errors, narrowed the dictionary legibility gap and validated completed archives after recovering two early partial ZIP snapshots; [source records](sources/new_batch_2026-10-14/README.md) retain the remaining copy, image and exposure limits.
 
 ## Active questions and the observation that decides each
 

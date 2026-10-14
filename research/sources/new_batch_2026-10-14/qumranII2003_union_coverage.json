@@ -209,7 +209,7 @@
     ],
     [
       286,
-      286
+      287
     ],
     [
       290,
@@ -416,7 +416,7 @@
       285
     ],
     [
-      287,
+      288,
       289
     ],
     [
@@ -475,7 +475,6 @@
     236,
     284,
     285,
-    287,
     319,
     320,
     368,
@@ -497,7 +496,7 @@
   "full_native_page_audit_complete": false,
   "whole_copy_reading_complete": false,
   "whole_copy_leaf_completeness": "Not established: unclassified scan boundary/image leaves have not been inspected. Empty extraction is not proof of blankness.",
-  "numbered_figures_in_completed_chapters": "Worker receipts record completion of encountered numbered figures/tables in the completed prose chapters. Belis PlatesI/II/IV and the other unclassified sheets remain explicit visual exceptions; no all-illustrations claim is made.",
+  "numbered_figures_in_completed_chapters": "Worker receipts record completion of encountered numbered figures/tables in the completed prose chapters. Belis PlatesI/II and the other unclassified sheets remain explicit visual exceptions; no all-illustrations claim is made.",
   "protected_images_opened_in_this_source3_union": false,
   "reserved_image_limit": "Unclassified sheets remain unviewed; no reserved full-scroll/target image was opened to classify them. Source0 viewers318–319 is a separate unresolved exposure and is not re-opened or cleared by this union.",
   "pages": [
@@ -3692,7 +3691,9 @@
       "text_read_receipts": [
         "qumran_middle_coverage.json"
       ],
-      "native_inspection_receipts": []
+      "native_inspection_receipts": [
+        "continuation_visual_coverage.json"
+      ]
     },
     {
       "viewer_page": 288,
@@ -6340,13 +6341,8 @@
       "printed_page": 255,
       "plate": "II",
       "scope": "Caption consumed; photographs unclassified and unviewed."
-    },
-    {
-      "viewer_page": 287,
-      "printed_page": 257,
-      "plate": "IV",
-      "scope": "Caption consumed; photographs unclassified and unviewed."
     }
   ],
-  "chapter_text_completion": "The six joined worker receipts now cover all identified substantive chapter prose, notes, appendices, catalogues, bibliography and publisher text; unclassified/undecodable sheets may still contain unconsumed information."
+  "chapter_text_completion": "The six joined worker receipts now cover all identified substantive chapter prose, notes, appendices, catalogues, bibliography and publisher text; unclassified/undecodable sheets may still contain unconsumed information.",
+  "additional_native_receipt": "continuation_visual_coverage.json"
 }

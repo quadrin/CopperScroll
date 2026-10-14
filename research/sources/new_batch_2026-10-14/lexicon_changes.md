@@ -16,3 +16,5 @@ These are new direct-source scope controls. The dictionary does not contribute a
 ## Completed continuation
 
 All supplied viewer spreads have now been inspected. The [first dictionary section](lexicon_a_changes.md) and [remaining entries and indexes](lexicon_b_changes.md) distinguish lexical alternatives and repeated underlying citations. Viewer393/printed778–779 retains erased or degraded index strokes; completion applies to available readable text. Reading an index does not establish inspection of its cited manuscripts.
+
+**Legibility refinement, printed778–779/viewer393:** inspection of the original4252×2992 one-bit embedded image, a3x render and separate column crops makes most primary index rows readable. The remaining uncertainty is localized to the damaged headword at MoʿedQatan80c(46), principally its middle letters on p778. No strokes were restored and no complete diplomatic recovery is claimed. The [additional receipt](continuation_visual_coverage.json) preserves this scope; a clearer source is still needed for that headword.
