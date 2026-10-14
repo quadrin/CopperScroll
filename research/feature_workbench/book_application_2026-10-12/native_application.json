@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "a29271112bcd4c84ae207d6f81e15976659932d9",
+  "analysis_kind": "exploratory_native_report_to_witness_application",
+  "required_sources": [
+    "mccown",
+    "pritchard",
+    "rahmani",
+    "arnona2008",
+    "arnona2024"
+  ],
+  "entrance_models": [
+    "reported-side-as-face",
+    "surveyed-bearing"
+  ],
+  "rules": {
+    "exposure": "All five reports were selected or exposed before this application. No independent holdout.",
+    "identity": "Exact T0226 and phase-3 origin-row joins; source-defined Gibeon and Nasbeh comparanda remain outside the scored regional roster.",
+    "phase": "Cutting, use, fill, repair, blocking and excavation reach remain distinct. An undated usable configuration stays UNKNOWN.",
+    "direction": "The reported-side-as-face model is an explicit inference. A side-position, west jamb or north label does not supply a surveyed entrance bearing.",
+    "count": "Counts apply to the exact listed group; the interrupted or selected coverage cannot disprove an unlocated other set. Two locus labels can name one cut.",
+    "proxy": "F2x retains the frozen broad porch/column proxy. It does not establish an under-pillar target, named tomb or joint cistern.",
+    "geometry": "Preserve the prior Arnona disabled coordinates and Mordot enclosing report-range uncertainty. No point from a schematic plan or deposit datum.",
+    "decision": "FAIL rejects only the specified witness/model. UNKNOWN remains a terminal not-identifiable result for the full comparison. No regional rescore or formal outcome count from this selected reading."
+  },
+  "tomb_witnesses": [
+    {
+      "witness_id": "jason@forecourt-south-step",
+      "parent_id": "T0226",
+      "entries": [
+        14,
+        51,
+        56
+      ],
+      "burial_chambers": 2,
+      "kokhim_in_A": 10,
+      "reported_entrance_side": "south",
+      "reported_side_as_face": "FAIL",
+      "supported_proxy_clauses": {
+        "F10": "MATCH",
+        "F11": "MATCH",
+        "F2x": "MATCH"
+      },
+      "configuration_in_window": "UNKNOWN",
+      "target_relation": "UNKNOWN",
+      "datum": "UNKNOWN",
+      "phase": "Southern forecourt step interpreted by Rahmani as the outer entrance; original step height unclear.",
+      "locator": "pp. 61–68 / PDF 2–13, Fig. 3 / PDF 8–11; plates 13–19 / PDF 46–52",
+      "evidence_kind": "observed plan features; entrance-side-to-facing conversion is inference",
+      "count_note": "Rahmani has two burial chambers and a porch/courts; niches and approximately 25 redeposited burials are separate counts. Parent F10 requires more than one chamber, not eight chambers.",
+      "proxy_note": "Columned porch meets the existing F2x keyword proxy only. No under-column deposit or cistern join follows.",
+      "date_note": "Late procurator coins qualify secondary burial/blocking; original cutting and exact usable access phase require separate evidence.",
+      "next_observation": "A source-plan or measured survey tying the selected entrance, niche/cistern threshold and column to one ancient usable phase, with original levels; named-tomb identity and deposit datum remain separate.",
+      "partly_built_kokhim": [
+        9,
+        10
+      ],
+      "first_cut_kokh_count": "UNKNOWN"
+    },
+    {
+      "witness_id": "jason@internal-north-door",
+      "parent_id": "T0226",
+      "entries": [
+        14,
+        51,
+        56
+      ],
+      "burial_chambers": 2,
+      "kokhim_in_A": 10,
+      "reported_entrance_side": "north",
+      "reported_side_as_face": "FAIL",
+      "supported_proxy_clauses": {
+        "F10": "MATCH",
+        "F11": "MATCH",
+        "F2x": "MATCH"
+      },
+      "configuration_in_window": "UNKNOWN",
+      "target_relation": "UNKNOWN",
+      "datum": "UNKNOWN",
+      "phase": "Doorway on northern side of the outer court; its western jamb carries bolt/socket evidence. The internal doorway is distinct from the outer approach.",
+      "locator": "pp. 66–68 / PDF 7–13, Fig. 3 / PDF 8–11; plates 16–19 / PDF 49–52",
+      "evidence_kind": "observed plan features; entrance-side-to-facing conversion is inference",
+      "count_note": "Rahmani has two burial chambers and a porch/courts; niches and approximately 25 redeposited burials are separate counts. Parent F10 requires more than one chamber, not eight chambers.",
+      "proxy_note": "Columned porch meets the existing F2x keyword proxy only. No under-column deposit or cistern join follows.",
+      "date_note": "Late procurator coins qualify secondary burial/blocking; original cutting and exact usable access phase require separate evidence.",
+      "next_observation": "A source-plan or measured survey tying the selected entrance, niche/cistern threshold and column to one ancient usable phase, with original levels; named-tomb identity and deposit datum remain separate.",
+      "partly_built_kokhim": [
+        9,
+        10
+      ],
+      "first_cut_kokh_count": "UNKNOWN"
+    },
+    {
+      "witness_id": "jason@unselected-entrance",
+      "parent_id": "T0226",
+      "entries": [
+        14,
+        51,
+        56
+      ],
+      "burial_chambers": 2,
+      "kokhim_in_A": 10,
+      "reported_entrance_side": "unknown",
+      "reported_side_as_face": "UNKNOWN",
+      "supported_proxy_clauses": {
+        "F10": "MATCH",
+        "F11": "MATCH",
+        "F2x": "MATCH"
+      },
+      "configuration_in_window": "UNKNOWN",
+      "target_relation": "UNKNOWN",
+      "datum": "UNKNOWN",
+      "phase": "Unresolved interpretation of which entrance or burial-niche/cistern threshold the entry describes; no observed western alternative invented.",
+      "locator": "pp. 61–68 / PDF 2–13; source plan Fig. 3 / PDF 8–11",
+      "evidence_kind": "observed plan features; entrance-side-to-facing conversion is inference",
+      "count_note": "Rahmani has two burial chambers and a porch/courts; niches and approximately 25 redeposited burials are separate counts. Parent F10 requires more than one chamber, not eight chambers.",
+      "proxy_note": "Columned porch meets the existing F2x keyword proxy only. No under-column deposit or cistern join follows.",
+      "date_note": "Late procurator coins qualify secondary burial/blocking; original cutting and exact usable access phase require separate evidence.",
+      "next_observation": "A source-plan or measured survey tying the selected entrance, niche/cistern threshold and column to one ancient usable phase, with original levels; named-tomb identity and deposit datum remain separate.",
+      "partly_built_kokhim": [
+        9,
+        10
+      ],
+      "first_cut_kokh_count": "UNKNOWN"
+    }
+  ],
+  "pit_witnesses": [
+    {
+      "witness_id": "mordot-arnona@bell-pit",
+      "origin_row": "phase3_2026-10-11/part_d_online/features.csv#881",
+      "source_id": "arnona2024",
+      "pit_count": 1,
+      "locus_labels": [
+        "L1"
+      ],
+      "dimensions": {
+        "depth_m": 5.3,
+        "base_diameter_m": 4,
+        "mouth_diameter_m": 1
+      },
+      "dimension_role": "published feature dimensions; no unit or deposit-target conversion",
+      "fill": "Approximately 3 m of deliberate fill; modern refuse and nondiagnostic sherds.",
+      "coverage": "Cut exposed; ancient entrance, target and use phase unestablished.",
+      "reported_window_after_native": "UNKNOWN",
+      "function": "UNKNOWN",
+      "configuration_in_window": "UNKNOWN",
+      "entrance": "UNKNOWN",
+      "same_phase": "UNKNOWN",
+      "locator": "PDF 1–3 text; Fig. 2 / PDF 5; Figs. 3–5 / PDF 5–7",
+      "next_observation": "Dated cutting/use contact plus the original contemporaneous entrance and left-side target; a complete same-phase set is required for the ten-small-pits alternative."
+    },
+    {
+      "witness_id": "arnona-A@eight-pits",
+      "origin_row": "phase3_2026-10-11/part_d_online/features.csv#1090",
+      "source_id": "arnona2008",
+      "pit_count": 8,
+      "locus_labels": [
+        "L101",
+        "L103A",
+        "L103B",
+        "L104A",
+        "L104B",
+        "L106",
+        "L107A",
+        "L107B"
+      ],
+      "dimensions": {},
+      "dimension_role": "published feature dimensions; no unit or deposit-target conversion",
+      "fill": "Area pottery and neighbouring quarry do not date each cutting.",
+      "coverage": "Selected Area A group; no complete entrance-relative regional set.",
+      "reported_window_after_native": "UNKNOWN",
+      "function": "UNKNOWN",
+      "configuration_in_window": "UNKNOWN",
+      "entrance": "UNKNOWN",
+      "same_phase": "UNKNOWN",
+      "locator": "PDF 1–3; Figs. 3–8 / PDF 5–8",
+      "next_observation": "Dated cutting/use contact plus the original contemporaneous entrance and left-side target; a complete same-phase set is required for the ten-small-pits alternative."
+    },
+    {
+      "witness_id": "arnona-A@L105-L112",
+      "origin_row": "phase3_2026-10-11/part_d_online/features.csv#1091",
+      "source_id": "arnona2008",
+      "pit_count": 1,
+      "locus_labels": [
+        "L105",
+        "L112"
+      ],
+      "dimensions": {
+        "length_m": 6.0,
+        "width_m": 6.8,
+        "depth_m": 2.5
+      },
+      "dimension_role": "published feature dimensions; no unit or deposit-target conversion",
+      "fill": "Intentional fill with minority Iron II and majority Early Roman pottery; not a sealed cutting date.",
+      "coverage": "Excavation interrupted; extent, reach and detection of a predicted ancient target unresolved.",
+      "reported_window_after_native": "UNKNOWN",
+      "function": "UNKNOWN",
+      "configuration_in_window": "UNKNOWN",
+      "entrance": "UNKNOWN",
+      "same_phase": "UNKNOWN",
+      "locator": "PDF 2; Figs. 3, 9–10 / PDF 5, 9",
+      "next_observation": "Dated cutting/use contact plus the original contemporaneous entrance and left-side target; a complete same-phase set is required for the ten-small-pits alternative."
+    },
+    {
+      "witness_id": "arnona-B@three-pits",
+      "origin_row": "phase3_2026-10-11/part_d_online/features.csv#1092",
+      "source_id": "arnona2008",
+      "pit_count": 3,
+      "locus_labels": [
+        "L109",
+        "L110",
+        "L111A"
+      ],
+      "dimensions": {},
+      "dimension_role": "published feature dimensions; no unit or deposit-target conversion",
+      "fill": "Tentative association with a previously exposed Second Temple building; no demonstrated cutting/use contact.",
+      "coverage": "Separate Area B group about 30 m from A; no common ancient entrance/phase documented.",
+      "reported_window_after_native": "UNKNOWN",
+      "function": "UNKNOWN",
+      "configuration_in_window": "UNKNOWN",
+      "entrance": "UNKNOWN",
+      "same_phase": "UNKNOWN",
+      "locator": "PDF 2; Fig. 12 / PDF 11",
+      "next_observation": "Dated cutting/use contact plus the original contemporaneous entrance and left-side target; a complete same-phase set is required for the ten-small-pits alternative."
+    }
+  ],
+  "source_comparanda": [
+    {
+      "witness_id": "nasbeh@Ci320-closed",
+      "source_id": "mccown",
+      "name": "Cistern 320 and Silos 317/321 beneath later colonnade",
+      "inventory_parent_id": null,
+      "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+      "geometry": null,
+      "locator": "p. 213 / PDF 237, Fig. 53A; plate 77 / PDF 435",
+      "facts": {
+        "closure": "before colonnade and associated walls",
+        "simultaneous_active_cistern_and_colonnade": "FAIL",
+        "later_reopening": "UNKNOWN",
+        "deposit_target": "UNKNOWN"
+      },
+      "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase."
+    },
+    {
+      "witness_id": "nasbeh@standing-stone-reset",
+      "source_id": "mccown",
+      "name": "Standing stone placed beside proposed early gate by excavators",
+      "inventory_parent_id": null,
+      "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+      "geometry": null,
+      "locator": "p. 244 / PDF 268; plate 73:2–3 / PDF 431",
+      "facts": {
+        "ancient_gate_stone_join_from_photo": "FAIL",
+        "original_stone_location": "UNKNOWN",
+        "placement": "modern expedition reset"
+      },
+      "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase."
+    },
+    {
+      "witness_id": "gibeon@NE-rectangular-reservoir",
+      "source_id": "pritchard",
+      "name": "Northeast rectangular reservoir",
+      "inventory_parent_id": null,
+      "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+      "geometry": null,
+      "locator": "pp. 67–68 / PDF 4–5",
+      "facts": {
+        "dimensions_m": [
+          11.3,
+          18.3
+        ],
+        "distance_from_village_spring_m": 36,
+        "plaster_coats": 4,
+        "jar_date": "tentatively first century BCE; jar function unresolved",
+        "cutting_date": "UNKNOWN",
+        "first_century_usable_configuration": "UNKNOWN",
+        "entrance_bearing": "UNKNOWN"
+      },
+      "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase."
+    },
+    {
+      "witness_id": "gibeon@west-stepped-pool",
+      "source_id": "pritchard",
+      "name": "Small stepped pool on west of mound",
+      "inventory_parent_id": null,
+      "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+      "geometry": null,
+      "locator": "pp. 68–69 / PDF 5–6, Fig. 3 / PDF 6",
+      "facts": {
+        "dimensions_m": [
+          2,
+          2
+        ],
+        "depth_m": ">2",
+        "dating_basis": "associated houses and Alexander Jannaeus coins; cutting date not independently fixed",
+        "supply": "UNKNOWN",
+        "first_century_usable_configuration": "UNKNOWN",
+        "entrance_bearing": "UNKNOWN"
+      },
+      "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase."
+    },
+    {
+      "witness_id": "gibeon@circular-cut",
+      "source_id": "pritchard",
+      "name": "Large circular stepped cut",
+      "inventory_parent_id": null,
+      "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+      "geometry": null,
+      "locator": "pp. 69–70 / PDF 6–7; Fig. 1 / PDF 3",
+      "facts": {
+        "diameter_m": 11.5,
+        "exposed_steps": 42,
+        "exposed_depth_m": 10.51,
+        "bottom_reached": false,
+        "plaster": "not observed",
+        "supply_function": "unresolved alternatives",
+        "fill_date_role": "Iron II pottery in deposited material; not direct cutting date",
+        "first_century_usable_configuration": "UNKNOWN",
+        "entrance_bearing": "UNKNOWN"
+      },
+      "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase."
+    },
+    {
+      "witness_id": "gibeon@tunnel-branches",
+      "source_id": "pritchard",
+      "name": "Tunnel northern mouth and separate spring/stepped branches",
+      "inventory_parent_id": null,
+      "inventory_crosswalk_status": "no exact row in the inspected cave/tomb/water inventories; source-defined comparandum only",
+      "geometry": null,
+      "locator": "pp. 71–75 / PDF 8–12, Figs. 4–5 / PDF 10–11",
+      "facts": {
+        "cleared_length_m": 51,
+        "steps": 93,
+        "north_mouth_width_m": "<3",
+        "branches": [
+          "southwestern spring branch",
+          "southern stepped branch"
+        ],
+        "dating_basis": "structural order; washed-in fill cannot date cutting",
+        "construction_proposal": "later Iron II, qualified",
+        "old_survey_bearings": "questioned",
+        "first_century_usable_configuration": "UNKNOWN",
+        "surveyed_entrance_bearing": "UNKNOWN"
+      },
+      "next_observation": "Exact feature registration and original construction/use/access contacts; any proposed entry must name this feature and its phase."
+    }
+  ],
+  "relation_checks": [
+    {
+      "id": "nasbeh-Ci320-colonnade",
+      "source_id": "mccown",
+      "claim": "Cistern 320 functioned as an open active cistern alongside the observed R389/390 colonnade.",
+      "status": "FAIL",
+      "terminal_claim": "rejected for this specification",
+      "scope": "Only this cistern/colonnade simultaneous-active-use specification; no entry assignment or site-wide exclusion.",
+      "locator": "p. 213 / PDF 237, Fig. 53A; plate 77 / PDF 435",
+      "next_observation": "A documented analytical error or contrary original contact/reopening record for these exact features."
+    },
+    {
+      "id": "nasbeh-stone-gate-photo",
+      "source_id": "mccown",
+      "claim": "The photographed standing stone proves its original ancient position beside the proposed early gate.",
+      "status": "FAIL",
+      "terminal_claim": "rejected for this specification",
+      "scope": "Only the inference from this reset photograph; original stone context is unresolved.",
+      "locator": "p. 244 / PDF 268; plate 73:2–3 / PDF 431",
+      "next_observation": "Original pre-reset find-position/context record."
+    },
+    {
+      "id": "atara-western-conduit",
+      "source_id": "mccown",
+      "claim": "McCown pp. 54–55 supplies the exact western bottom-conduit/wall/floor section needed by the existing Atara176 comparison.",
+      "status": "UNKNOWN",
+      "terminal_claim": "not identifiable from available evidence",
+      "scope": "McCown transmits SWP/Guérin/Dalman accounts; a generic pointed-arched outlet is not the requested dated western contact.",
+      "locator": "pp. 54–55 / PDF 78–79; cited SWP Memoirs III (1883), pp. 82–83",
+      "next_observation": "Locate an original Atara/Attara (Ms, SheetXVII, by Tell enNasbeh) plan or section identifying the78x37ft western pool, its9ft east wall, four buttresses, pointed-arched outlet and stone-section bottom-channel. Require channel invert/gradient, pool-floor and wall contacts, plus dated construction or use context. First establish the drawing shelfmark/existence; neither published entry supplies it.",
+      "original_campaign": "SWP, Guérin and Dalman inherited observations; not the Tell en-Nasbeh excavation campaign",
+      "followup": {
+        "record": "research/feature_workbench/book_application_2026-10-12/atara_source_trace.json",
+        "printed_source_read": "SWP1883pp82–83 / conduoftPDF98–99",
+        "result": "No Atara drawing in the published entry. SWP outlet and Benjamin supply labels cannot be joined to one exact opening; flow and joint-use phase UNKNOWN."
+      }
+    },
+    {
+      "id": "gibeon-feature-identity",
+      "source_id": "pritchard",
+      "claim": "The northeast rectangular reservoir, western stepped pool and circular cut constitute one physical installation with transferable dimensions, date and entrance.",
+      "status": "FAIL",
+      "terminal_claim": "rejected for this specification",
+      "scope": "Only the merged-feature specification; each named feature remains available for its own future comparison.",
+      "locator": "pp. 67–75 / PDF 4–12",
+      "next_observation": "Installation-specific plans, original use dates and measured bearings for the selected feature."
+    }
+  ]
+}

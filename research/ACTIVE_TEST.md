@@ -1,8 +1,8 @@
 # Active test
 
-Updated 12 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 13 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (12 October): **obtained** — [interactive 3D site models and browser observations](../atlas/INTERACTION_VALIDATION.md#interactive-3d-site-models): local map navigation, structure focus, camera restoration, cave cutaway, responsive details and terrain context. [Source dimensions and display assumptions](assets/plans/atlas-explorer/manifest.json) are recorded; mapped surroundings use archived elevation data, and IV/17’s unlocated rock setting is labelled illustrative.
+Last session (13 October UTC / 12 October Los Angeles): **partly** — sent the [Atara holdings enquiry](feature_workbench/book_application_2026-10-12/README.md#holdings-enquiry-sent--13-october-utc--12-october-los-angeles) to PEF's curator. Original drawing existence/shelfmark and hydraulic contacts await source evidence. Previous atlas and custody sessions are preserved in [history](logs/active_test_history_2026-10-07.md#session-records-preserved-when-the-atara-enquiry-was-sent).
 
 ## Active questions and the observation that decides each
 
@@ -26,6 +26,7 @@ All are **not identifiable from available evidence**; details in the history fil
 - Liverpool Special Collections and Archives (9 October): Jericho papers JG/8 and pre-camp records north of the tell; acknowledgement received, holdings not established.
 - CBRL (9 October; reply 12 October): preliminary list check found no early Jericho target; PEF considered likelier, regional archivists copied for custody confirmation.
 - Palestine Exploration Fund (8 October UTC / 7 October Los Angeles): Garstang Papers 1930–36 and pre-1948 Jericho photos.
+- Palestine Exploration Fund (13 October UTC / 12 October Los Angeles): existence, shelfmark and brief contents of original SWP Atara reservoir/outlet/bottom-channel sketches, plans, sections or notebook entries.
 - Lorenzo Nigro, Sapienza (8 October UTC / 7 October Los Angeles): records north of Tell es-Sultan; period attribution to be checked, meeting proposed for 18–24 October.
 - ÉBAF (8 October): EDF copy and X-rays of segments 21–22. On 11 October Jalabert referred access to the secretariat; he is away until 25 October. Replica/X-ray access needs separate confirmation.
 - J.-B. Humbert (11 October): postage quotation for his two offered Qumran volumes; the book offer supplies no replica appointment.

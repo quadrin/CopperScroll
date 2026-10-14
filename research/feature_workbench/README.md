@@ -20,6 +20,8 @@ The [case-study extensions](../shared_tools/README.md#case-study-methods) add ex
 
 The [book-to-feature application](book_application_2026-10-12/README.md) joins source facts to individual structures and phases: Atara’s western conduit stays separate from its eastern pool, and Absalom’s original southern access stays separate from the later western breach and compound Jehoshaphat chambers. Cave construction/accessibility dates remain unresolved. Every applied row identifies its source, inherited clause, phase, uncertainty and next observation.
 
+The [native source application](book_application_2026-10-12/README.md#native-source-application--13-october-2026-utc) applies the complete McCown, Pritchard, Rahmani and Arnona readings: exact source groups, separate access models and dated-use gaps determine the conditional comparisons.
+
 The [entry-46 alternatives](../text/entry46_alternatives_2026-10-12/README.md) evaluate pool/deep-pit, distance/depth and ten-small-pits branches equally across source records. Native Ramat Rahel and Naḥal En Kerem reports audit the feature identities and map-reference extents; a report-wide extent cannot supply a metre-precise installation point.
 
 The [measurement resolution audit](measurement_resolution_2026-10-12/README.md) preserves failed plan checks, quantifies conditional resolution requirements and corrects the same-document picking-only shortcut. The [inventory-role comparison](../comparanda/inventory_forms_2026-10-12/README.md) separates numbered places, objects/lots, counts, contents measures and retrieval instructions. Herodium’s roles remain tentative. Each report records the observation that would distinguish its alternatives; exposed records supply no independent identification.
