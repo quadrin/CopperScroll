@@ -1,6 +1,6 @@
 {
   "baseline_commit": "23e2b74bdc4ceac8b4418b79a5fa501db20e7b5e",
-  "assessment_type": "exploratory source change review; depth varies; source scope authoritative",
+  "assessment_type": "Exploratory full available-source reading; current_full_coverage is authoritative for current depth, reviews preserve historical targeted scopes. Text, native targets and physical-publication completeness are separate.",
   "sources": [
     {
       "inventory_index": 0,
@@ -15,7 +15,115 @@
           "what_changes": "Use its underlying surveys to define regional controls. It supplies no direct scroll identification. LIMIT: The 523-page volume received a bounded contents and chapter check. The Hyrcania keyword hit refers to the Iranian region. On p.66 the printed 127/148 = 93% is internally inconsistent; the arithmetic yields about 85.8%. Preserve the source value and discrepancy separately.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_middle_maccabees.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "canonical_replacement": "Publisher522-leaf copy restores wrongpage/images/glyphs; original damaged copy remains unchanged"
+          },
+          {
+            "fine_legibility_limit": "Fig5.2 printed77 overlapping labels/smallest scale numerals remain source-limited"
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "historical_damaged_copy_limitations": [
+          {
+            "blocked_scope": "Repaired source PDF lacks EOF/trailer and references missing resources. Available native inspection is finished; unavailable image/font resources and wrong viewer65 remain source-integrity gaps."
+          },
+          {
+            "actual_publication_text_unavailable": [
+              65
+            ]
+          },
+          {
+            "publication_text_glyph_gaps": "Greek/Hebrew and some transliteration strings corrupt throughout. Native verification confirmed missing/corrupt glyph resources; numerical/date rows are legible where recorded, unrecovered names remain unavailable."
+          },
+          {
+            "native_content_missing": {
+              "65": "Wrong unrelated page, Fig3.3 and publication prose unavailable",
+              "103": "Only top strip of Fig5.5 survives",
+              "104": "Fig5.6 image absent",
+              "106": "Fig5.7 image absent",
+              "107": "Fig5.8 image absent",
+              "115": "Referenced native figure image is absent; caption/text visible only",
+              "120": "Referenced native figure image is absent; caption/text visible only",
+              "121": "Referenced native figure image is absent; caption/text visible only",
+              "122": "Referenced native figure image is absent; caption/text visible only",
+              "124": "Referenced native figure image is absent; caption/text visible only",
+              "131": "Referenced native figure image is absent; caption/text visible only",
+              "134": "Referenced native figure image is absent; caption/text visible only",
+              "135": "Referenced native figure image is absent; caption/text visible only",
+              "136": "Referenced native figure image is absent; caption/text visible only",
+              "138": "Referenced native figure image is absent; caption/text visible only",
+              "139": "Referenced native figure image is absent; caption/text visible only",
+              "142": "Referenced native figure image is absent; caption/text visible only",
+              "152": "Referenced native figure image is absent; caption/text visible only",
+              "153": "Referenced native figure image is absent; caption/text visible only",
+              "154": "Referenced native figure image is absent; caption/text visible only",
+              "156": "Referenced native figure image is absent; caption/text visible only",
+              "157": "Referenced native figure image is absent; caption/text visible only",
+              "158": "Referenced native figure image is absent; caption/text visible only",
+              "161": "Referenced native figure image is absent; caption/text visible only",
+              "169": "Referenced native figure image is absent; caption/text visible only",
+              "172": "Referenced native figure image is absent; caption/text visible only",
+              "175": "Referenced native figure image is absent; caption/text visible only",
+              "176": "Referenced native figure image is absent; caption/text visible only",
+              "178": "Referenced native figure image is absent; caption/text visible only",
+              "180": "Referenced native figure image is absent; caption/text visible only",
+              "182": "Referenced native figure image is absent; caption/text visible only",
+              "190": "Referenced native figure image is absent; caption/text visible only",
+              "191": "Referenced native figure image is absent; caption/text visible only",
+              "193": "Referenced native figure image is absent; caption/text visible only",
+              "202": "Referenced native figure image is absent; caption/text visible only",
+              "203": "Referenced native figure image is absent; caption/text visible only",
+              "206": "Referenced figure image absent, caption/prose survives only",
+              "207": "Referenced figure image absent, caption/prose survives only",
+              "208": "Referenced figure image absent, caption/prose survives only",
+              "211": "Referenced figure image absent, caption/prose survives only",
+              "212": "Referenced figure image absent, caption/prose survives only",
+              "214": "Referenced figure image absent, caption/prose survives only",
+              "240": "Referenced figure image absent, caption/prose survives only",
+              "242": "Referenced figure image absent, caption/prose survives only",
+              "258": "Referenced figure image absent, caption/prose survives only",
+              "259": "Referenced figure image absent, caption/prose survives only",
+              "336": "Referenced figure image absent, caption/prose survives only",
+              "339": "Referenced figure image absent, caption/prose survives only",
+              "340": "Referenced figure image absent, caption/prose survives only",
+              "343": "Referenced figure image absent, caption/prose survives only",
+              "345": "Referenced figure image absent, caption/prose survives only"
+            }
+          },
+          {
+            "native_microtext_pending": {
+              "43": "Main place labels recovered by crop; full tiny legend not wholly recovered",
+              "100": "Main place labels recovered by crop; some marginal scale numerals unresolved",
+              "218": "Source font resources missing: graph axis values and legend names absent/corrupt, not recoverable by zoom",
+              "219": "Source font resources missing: graph axis values and legend names absent/corrupt, not recoverable by zoom",
+              "220": "Source font resources missing: graph axis values and legend names absent/corrupt, not recoverable by zoom",
+              "221": "Source font resources missing: graph axis values and legend names absent/corrupt, not recoverable by zoom",
+              "222": "Source font resources missing: graph axis values and legend names absent/corrupt, not recoverable by zoom",
+              "223": "Source font resources missing: graph axis values and legend names absent/corrupt, not recoverable by zoom",
+              "224": "Source font resources missing: graph axis values and legend names absent/corrupt, not recoverable by zoom",
+              "227": "Source font resources missing: graph axis values and legend names absent/corrupt, not recoverable by zoom",
+              "229": "Greek eponym names corrupt even in native rendering; numerical rows legible",
+              "235": "Greek eponym names corrupt even in native rendering; numerical rows legible",
+              "230": "Greek eponym names corrupt in native rendering; numerical/date rows legible",
+              "231": "Greek eponym names corrupt in native rendering; numerical/date rows legible",
+              "236": "Greek eponym names corrupt in native rendering; numerical/date rows legible",
+              "237": "Greek eponym names corrupt in native rendering; numerical/date rows legible"
+            }
+          }
+        ],
+        "canonical_text_read_complete": true,
+        "canonical_native_targets_inspected": true,
+        "canonical_physical_copy_complete": true,
+        "recovery_record": "full_coverage_middle_maccabees.json#publisher_recovery_2026_10_14"
+      }
     },
     {
       "inventory_index": 1,
@@ -30,7 +138,20 @@
           "what_changes": "publication scope correction; Area N not Area L contains Siloam pool campaign; requested junction not obtained",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_city_david.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": false,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "native_access": "Original475286091-byte PDF exceeds268435456-byte fetch limit; all available normalized text read, native figures not inspected."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 2,
@@ -45,7 +166,20 @@
           "what_changes": "Segment-specific chronology, observed contacts and uncertain joins",
           "complete_document_read_claim": true
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 3,
@@ -60,7 +194,16 @@
           "what_changes": "Use it as a reuse and naming control; a later tomb label cannot date the original cavity. LIMIT: Bounded chapter reading. The original floor remains covered; no dated Second Temple target was established.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 4,
@@ -75,7 +218,20 @@
           "what_changes": "Keep inscription date, structure phase, language and function as separate claims. LIMIT: Bounded article reading. No independent photograph-based letter reading or Copper Scroll correction.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_caves.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "missing_original_pages": "215–226, Figs1–19 separate volume plate section"
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 5,
@@ -90,7 +246,20 @@
           "what_changes": "Add bath and phase comparanda. The hoard observation already exists in project records; the volume adds context rather than independent corroboration. LIMIT: The 537-page book received bounded reading. Present shafts and floor sediments do not supply ancient deposit-depth datums.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 6,
@@ -105,7 +274,20 @@
           "what_changes": "Measured entrances and observed feed conduit; missing bridges/siphons reconstructed",
           "complete_document_read_claim": true
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 7,
@@ -120,7 +302,20 @@
           "what_changes": "Add a fortress hydraulic control with preserved side entrances; retain ambiguous function and later-join branches. LIMIT: Bounded article reading. Tur Shimon is the author's proposed identification; no unseen scroll prediction tested.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 8,
@@ -135,7 +330,16 @@
           "what_changes": "A fortified Hellenistic hill can have an estate phase that predates a Roman landmark. Apply phase gates before feature comparison. LIMIT: Main article text read; the forthcoming final publication was not read. No specific scroll candidate tested.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 9,
@@ -150,7 +354,16 @@
           "what_changes": "Prevent combining the apparent bath steps with the Roman settlement phase. LIMIT: Article text read; figure geometry was not measured. The assembly hall shares field observations with Aviam 2019.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 10,
@@ -165,7 +378,16 @@
           "what_changes": "Use it to locate primary field reports and define regional coverage. LIMIT: The 208-page book received a bounded contents and chapter check. A synthesis supplies no independent field corroboration.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_context_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 11,
@@ -180,7 +402,16 @@
           "what_changes": "Qana 2012 is already used by the project recovery benchmarks. Its individual opening descriptions remain a useful geometry control; this rereading is not independent new field evidence. LIMIT: Report text fully read. It gives no dates or threshold elevations. An opening's courtyard wall side need not equal its entrance bearing. Site 24 northing 746165 differs from neighboring 7472 xx values; retain it unrepaired.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 12,
@@ -195,7 +426,16 @@
           "what_changes": "Separate reconstructed thresholds from in situ thresholds and pit-fill dates from hewing dates. LIMIT: Target pages read; the main floor is missing and the full building length remains unknown.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 13,
@@ -210,7 +450,16 @@
           "what_changes": "Retain a first-century existence branch. Crawl-way morphology cannot date the complex uniquely to the Bar Kokhba revolt. LIMIT: Raster PDF. Full English OCR generated; selected original pages visually checked. Check OCR against originals before reusing measurements.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_caves.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 14,
@@ -225,7 +474,16 @@
           "what_changes": "This directly establishes later use of Roman-form hiding architecture as a chronology control. LIMIT: Target pages read. Construction date remains unresolved.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_caves.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 15,
@@ -240,7 +498,16 @@
           "what_changes": "Use the table as an index to original reports. Deduplicate Huqoq and Enot Shoim campaigns. LIMIT: Bounded synthesis reading. Historical attribution remains an interpretation.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_caves.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 16,
@@ -255,7 +522,16 @@
           "what_changes": "Add hoard context and intrusion controls while preserving broad ranges. LIMIT: Target pages read; plans were not measured. This shares observations with Shivtiel 2023.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_caves.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 17,
@@ -270,7 +546,16 @@
           "what_changes": "Add a fortress/control site and entrance geometry; keep the identification and shaft phase separate. LIMIT: Bounded 36-page article reading. The cistern was not excavated; the original floor lies deeper. The current 3 m shaft is not an ancient datum.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 18,
@@ -285,7 +570,16 @@
           "what_changes": "Add sequence controls and preserve unknown dates. LIMIT: Main report text fully read; figures indexed. No diagnostic date forSF 2.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 19,
@@ -300,7 +594,16 @@
           "what_changes": "A stepped industrial vat can mimic bath geometry. Mark inaccessible features as unknown. LIMIT: Main report text read; figures not measured.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 20,
@@ -315,7 +618,16 @@
           "what_changes": "Extend mapped settlement/feature coverage; no scroll measuring origin follows. LIMIT: Main report text fully read. Dam dates do not have independent sealed contexts here.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 21,
@@ -330,7 +642,16 @@
           "what_changes": "A later well comparandum with explicit datums. LIMIT: Report text fully read. It is chronologically ineligible as a lateSecond Temple landmark.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 22,
@@ -345,7 +666,16 @@
           "what_changes": "Use it as a documented identity/reuse control. LIMIT: Bounded report reading. The externally linked appendices were not separately accessed.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 23,
@@ -360,7 +690,16 @@
           "what_changes": "A later disturbance and reconstruction control. LIMIT: Bounded chapter reading; no Siloam L 103 main-basin section.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 24,
@@ -375,7 +714,20 @@
           "what_changes": "Dated plaster and observed reservoir structures; proposed siphon unobserved",
           "complete_document_read_claim": true
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 25,
@@ -390,7 +742,20 @@
           "what_changes": "observed connected group versus separate reservoirs and modern experiment versus ancient reconstructed capacity; no Atara contact",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 26,
@@ -405,7 +770,22 @@
           "what_changes": "Copy B has414 pages versusA415; all extracted page text matches as a multiset exceptA's additional blank first page. Same publication and excavation lineage; byte hashes differ.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "obstruction": "OmritI Fig555 black polygon obscures reconstructed geometry in both copies/renderers."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "canonical_inventory_index": 26,
+        "actual_full_read_copy_inventory_index": 27
+      }
     },
     {
       "inventory_index": 27,
@@ -420,7 +800,37 @@
           "what_changes": "regional comparative architecture; measured source with stated control points",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "source_detail_gap": {
+              "physical_page": 377,
+              "printed_page": 346,
+              "figure": 555,
+              "detail": "Top-view reconstruction partially obscured by solid black polygon; same in MuPDF, Poppler, PDFium and duplicateB physical376; covered detail uninspected"
+            }
+          },
+          {
+            "source_detail_gap": {
+              "physical_page": 377,
+              "printed_page": 346,
+              "figure": 555,
+              "detail": "Top-view reconstruction partially obscured by solid black polygon; same in MuPDF, Poppler, PDFium and duplicateB physical376; covered detail uninspected"
+            }
+          },
+          {
+            "obstruction": "OmritI Fig555 black polygon obscures reconstructed geometry in both copies/renderers."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "canonical_inventory_index": 26
+      }
     },
     {
       "inventory_index": 28,
@@ -435,7 +845,21 @@
           "what_changes": "Deferred duplicate/overlap; deduplicate by original field campaign.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "scope": "Complete introduction extract, not the full volume; its chapter is deduplicated against canonical50."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "canonical_inventory_index": 50
+      }
     },
     {
       "inventory_index": 29,
@@ -450,7 +874,23 @@
           "what_changes": "Comparative assembly halls and adjacent miqvaot; stage distinctions. No new candidate evidence from this partial scope.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_context_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "limits": [
+              "Inherited scan crops some margin letters. Examples: viewer 57,87,101,103,105,107,109,111,113,115,117,119,121,123,153,154,155,156,159,161,165,169,171,189,193,197. Every accessible remainder was read; missing edge glyphs cannot be certified. Damaged ancient inscriptions are not silently restored from the pictures.",
+              "Native illustrations include conjectural reconstructions as well as excavated plans and photos. These have not been converted into measured geometry or dated targets."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 30,
@@ -465,7 +905,21 @@
           "what_changes": "Same chapter start; excerpt limitation resolved by containing-volume access, no second field observation",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_context_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "scope": "Three-leaf excerpt read; remaining chapter503–548 read in canonical containing volume58. No second independent source."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "canonical_inventory_index": 58
+      }
     },
     {
       "inventory_index": 31,
@@ -480,7 +934,22 @@
           "what_changes": "Bibliographic correction2016 rather than2023. Same Diab fieldcampaign/report lineage; no independent corroboration. Preservedthreshold/hallbenches/nearbybath repeat2013, with ruralassembly synagogue interpretation.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "gaps": [
+              "Capture joins omit text; actual Qadmoniot151(2016)49–53, filename2023 is misleading."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 32,
@@ -495,7 +964,20 @@
           "what_changes": "Targeted comparative evidence; no candidate identification",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_caves.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "native_detail": "Figure2 printed167: fine topographic labels remain blurred after enlargement; see source notes."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 33,
@@ -510,7 +992,16 @@
           "what_changes": "Add depositional analysis; deduplicate the original 2009 observations. Absence of bones/caches does not decide departure mode. LIMIT: Target pages read. The raw PDF now verifies against its Drive byte size.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 34,
@@ -525,7 +1016,20 @@
           "what_changes": "Architecture comparandum. Contents locate the water-plaster chapter on p.63 for future reading. LIMIT: The 12-page excerpt is not the whole report. PDF 6–10 are raster pages not text-read; the water chapter is not in inspected content.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "copy_gap": "Only a selected 12-page monograph excerpt is supplied; the full monograph is not read."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 35,
@@ -540,7 +1044,16 @@
           "what_changes": "Surface finds do not date every hillside feature or establish complete coverage. LIMIT: Report text fully read.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 36,
@@ -555,7 +1068,23 @@
           "what_changes": "Adds a phase and elite-water-installation comparandum. Pool, courtyard, garden and hiding system must not be combined as one contemporaneous installation. This source cannot identify a scroll deposit or independently date a hidden passage. LIMIT: The supplied 18-page browser capture contains blank panels/loading spinners on PDF 7–10, corresponding to missing middle content after printed 454 and before the readable final discussion on 457. The full article therefore remains incomplete. Caption/plans are preserved without new measurements; no Hebrew OCR was available.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "copy_gap": "Capture viewer pages 7–10 are blank/loading; missing text and figures remain."
+          },
+          {
+            "fine_visual_copy_gap": "Viewer capture PDF pages 7–10 are loading/blank panels. Research figures 4 and 6–9 and intervening article content remain missing; exact printed-page extent cannot be confirmed from the damaged capture alone. Accessible figures 1–3, 5 and 10 inspected."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 37,
@@ -570,7 +1099,16 @@
           "what_changes": "Preserve function and abandonment alternatives. LIMIT: Report text fully read; a final-use interpretation does not date all walls.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 38,
@@ -585,7 +1123,20 @@
           "what_changes": "Supplies explicit controls for phase mixing and function attribution. Observed opening geometry does not establish drainage, storage or military purpose without context. Preserve Roman bastion, later bath, Byzantine gate visibility and unknown peripheral features separately. LIMIT: The chapter is substantively read. No figure measurement, regional rarity claim or unseen Copper Scroll prediction was performed. Artistic reconstructions on Figs 12/18/20 remain reconstructions; the field observations derive from the 2000–2011 and later Hippos campaign.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "fine_visual_copy_gap": "Figure 9 plan inset: inspected at enlarged crop, but fine numeric/metric labels remain blurred in supplied native raster. Main plan geometry and photo chamber numerals are legible."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 39,
@@ -600,7 +1151,16 @@
           "what_changes": "An early coin alone cannot date the cistern or fort. LIMIT: Bounded article reading. Chronological evidence derives mainly from Magen's 1982–1988 excavations; new images are not new stratigraphic observations.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 40,
@@ -615,7 +1175,16 @@
           "what_changes": "A reference and coverage chain for the Beth Horon question. LIMIT: The 447-page book received bounded reading. It supplies no inspected exact target-tomb plan or dated threshold.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 41,
@@ -630,7 +1199,19 @@
           "what_changes": "Targeted comparative evidence; no candidate identification",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_caves.json",
+        "scope": "26-leaf publisher sample of canonical full volume43; no independent observation",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "canonical_inventory_index": 43,
+        "limitations": [
+          "Sample is not a second publication; canonical volume43 retains its own fine-text legibility limits."
+        ]
+      }
     },
     {
       "inventory_index": 42,
@@ -645,7 +1226,20 @@
           "what_changes": "Observed dam/channel profiles; port outlet unlocated; conflicting archaeological and interpretive dating retained; see dray_evidence.md/json",
           "complete_document_read_claim": true
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 43,
@@ -660,7 +1254,254 @@
           "what_changes": "Specific northern second-mouth revision / disputed wall phase",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_caves.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "embedded_text_legibility_gaps": [
+              {
+                "viewer": 31,
+                "printed": 6,
+                "figure": "5",
+                "item": "5Q fieldnoteplan",
+                "status": "wholefigure + boundedcropread; faint handwritten words afterlotdefragments andbottomheightnote remain uncertain; source508x635px"
+              },
+              {
+                "viewer": 38,
+                "printed": 13,
+                "figure": "2–3",
+                "item": "Notebook facsimiles, four half-spreads",
+                "status": "Every half-spread inspected. Tomb list and Cave 11 dates/content distinguished; several cursive words, abbreviations and corrections remain uncertain at the supplied raster resolution. Published transcription is already read but does not independently resolve the native wording."
+              },
+              {
+                "viewer": 39,
+                "printed": 14,
+                "figure": "4–5",
+                "item": "Notebook facsimiles, four half-spreads",
+                "status": "Every half-spread inspected. Cave/site/cemetery contexts distinguished; some cursive words and crossed-out corrections remain uncertain at the supplied raster resolution."
+              },
+              {
+                "viewer": 40,
+                "printed": 15,
+                "figure": "6–7",
+                "item": "Diary continuation and 1 March field notes, four half-spreads",
+                "status": "Every half-spread inspected, including blank verso of field-note spread. Cave field-note dimensions and 54 cm separation readable; several diary words, abbreviations and corrections remain uncertain."
+              },
+              {
+                "viewer": 125,
+                "printed": 100,
+                "item": "Microscope image acquisition banner microtext",
+                "status": "Photograph, caption, substantive object labels and visible scale or measurement labels inspected; tiny acquisition ID/date/software metadata not fully resolved. Two native row crops at viewer125 read the 1.0/2.0 mm scales and DL0 0.692 mm / DL1 0.308 mm labels but retain faint banner wording. A bounded banner crop remains necessary for strict embedded-label completion."
+              },
+              {
+                "viewer": 126,
+                "printed": 101,
+                "item": "Microscope image acquisition banner microtext",
+                "status": "Photograph, caption, substantive object labels and visible scale or measurement labels inspected; tiny acquisition ID/date/software metadata not fully resolved. Two native row crops at viewer125 read the 1.0/2.0 mm scales and DL0 0.692 mm / DL1 0.308 mm labels but retain faint banner wording. A bounded banner crop remains necessary for strict embedded-label completion."
+              },
+              {
+                "viewer": 127,
+                "printed": 102,
+                "item": "Microscope image acquisition banner microtext",
+                "status": "Photograph, caption, substantive object labels and visible scale or measurement labels inspected; tiny acquisition ID/date/software metadata not fully resolved. Two native row crops at viewer125 read the 1.0/2.0 mm scales and DL0 0.692 mm / DL1 0.308 mm labels but retain faint banner wording. A bounded banner crop remains necessary for strict embedded-label completion."
+              },
+              {
+                "viewer": 128,
+                "printed": 103,
+                "item": "Microscope image acquisition banner microtext",
+                "status": "Photograph, caption, substantive object labels and visible scale or measurement labels inspected; tiny acquisition ID/date/software metadata not fully resolved. Two native row crops at viewer125 read the 1.0/2.0 mm scales and DL0 0.692 mm / DL1 0.308 mm labels but retain faint banner wording. A bounded banner crop remains necessary for strict embedded-label completion."
+              },
+              {
+                "viewer": 129,
+                "printed": 104,
+                "item": "Microscope image acquisition banner microtext",
+                "status": "Photograph, caption, substantive object labels and visible scale or measurement labels inspected; tiny acquisition ID/date/software metadata not fully resolved. Two native row crops at viewer125 read the 1.0/2.0 mm scales and DL0 0.692 mm / DL1 0.308 mm labels but retain faint banner wording. A bounded banner crop remains necessary for strict embedded-label completion."
+              },
+              {
+                "viewer": 139,
+                "printed": 114,
+                "item": "Microscope image acquisition banner microtext",
+                "status": "Photograph, caption, substantive object labels and visible scale or measurement labels inspected; tiny acquisition ID/date/software metadata not fully resolved. Two native row crops at viewer125 read the 1.0/2.0 mm scales and DL0 0.692 mm / DL1 0.308 mm labels but retain faint banner wording. A bounded banner crop remains necessary for strict embedded-label completion."
+              },
+              {
+                "viewer": 141,
+                "printed": 116,
+                "item": "Microscope image acquisition banner microtext",
+                "status": "Photograph, caption, substantive object labels and visible scale or measurement labels inspected; tiny acquisition ID/date/software metadata not fully resolved. Two native row crops at viewer125 read the 1.0/2.0 mm scales and DL0 0.692 mm / DL1 0.308 mm labels but retain faint banner wording. A bounded banner crop remains necessary for strict embedded-label completion."
+              },
+              {
+                "viewer": 145,
+                "printed": 120,
+                "item": "Microscope image acquisition banner microtext",
+                "status": "Photograph, caption, substantive object labels and visible scale or measurement labels inspected; tiny acquisition ID/date/software metadata not fully resolved. Two native row crops at viewer125 read the 1.0/2.0 mm scales and DL0 0.692 mm / DL1 0.308 mm labels but retain faint banner wording. A bounded banner crop remains necessary for strict embedded-label completion."
+              },
+              {
+                "viewer": 146,
+                "printed": 121,
+                "item": "Microscope image acquisition banner microtext",
+                "status": "Photograph, caption, substantive object labels and visible scale or measurement labels inspected; tiny acquisition ID/date/software metadata not fully resolved. Two native row crops at viewer125 read the 1.0/2.0 mm scales and DL0 0.692 mm / DL1 0.308 mm labels but retain faint banner wording. A bounded banner crop remains necessary for strict embedded-label completion."
+              },
+              {
+                "viewer": 147,
+                "printed": 122,
+                "figure": "8",
+                "item": "Reproduced DJD I plate I tiny scale/figure numerals",
+                "status": "Wrapper photograph and caption inspected. Tiny scale tick values and miniature original plate numerals remain unresolved at full-page view; bounded crop required."
+              },
+              {
+                "viewer": 152,
+                "printed": 127,
+                "figure": "3",
+                "item": "Comparison basket photograph clipped ruler/identifier",
+                "status": "Full photograph and caption inspected; bounded native crop shows a partly cut ruler and blurred photographic ID, provisionally 96-9108 but not forced. Supplied raster cannot securely resolve all characters."
+              },
+              {
+                "viewer": 156,
+                "printed": 131,
+                "item": "Table1 row11 basket photograph miniature ruler numerals",
+                "status": "All table cells, photograph and visible ID351300 inspected. Tiny ruler numerals remain uncertain at full-page view; bounded ruler crop remains necessary."
+              },
+              {
+                "viewer": 176,
+                "printed": 151,
+                "item": "Table1 sampling-photo miniature ruler numerals",
+                "status": "All11 rows, headers and cells read. Bounded photo-column crop reads embedded577250/577264 IDs; miniature photographic ruler numerals remain unresolved in supplied raster."
+              },
+              {
+                "viewer": 203,
+                "printed": 178,
+                "figure": "1",
+                "item": "Partly clipped archival photograph upper stamp",
+                "status": "Object, photograph identifier43.742 and caption inspected. Bounded top-edge crop shows an inverted stamp truncated by its image edge; complete wording remains unresolved."
+              },
+              {
+                "viewer": 210,
+                "printed": 185,
+                "figure": "14",
+                "item": "Small textile-attached photograph tag",
+                "status": "Whole photograph and caption inspected; P567-Fg010-R-D20052014-color is printed in caption. The tiny paper tag visible within the photograph cannot be completely read at this whole-page size."
+              },
+              {
+                "viewer": 212,
+                "printed": 187,
+                "figure": "16",
+                "item": "Reproduced DJD23 PlateXXXV miniature footer",
+                "status": "Whole virtual plate and photograph panels inspected; fragment identifiers and plate heading viewed. Tiny bottom PAM/museum-number footer requires bounded native reading for strict completion."
+              },
+              {
+                "viewer": 217,
+                "printed": 192,
+                "figure": "1",
+                "item": "Study-table tray and packaging microtext",
+                "status": "Whole historical photograph inspected; small printed packaging labels visible on reused trays are not all securely read at this size."
+              },
+              {
+                "viewer": 219,
+                "printed": 194,
+                "figure": "4–5",
+                "item": "Study-table tray/book/paper microtext",
+                "status": "Both photographs inspected; small packaging and paper wording remains uncertain in supplied whole-page view."
+              },
+              {
+                "viewer": 220,
+                "printed": 195,
+                "figure": "6–7",
+                "item": "Study-table paper and packaging microtext",
+                "status": "Both color photographs inspected; small tray/paper labels and packaging print remain uncertain at whole-page size."
+              },
+              {
+                "viewer": 221,
+                "printed": 196,
+                "figure": "8–9",
+                "item": "Study-table handwritten tray/paper identifiers",
+                "status": "Both photographs and headings inspected. Faint manuscript/tray tags and study-sheet writing are not fully legible in this view."
+              },
+              {
+                "viewer": 222,
+                "printed": 197,
+                "figure": "10–12",
+                "item": "Study-table handwritten paper/tray identifiers",
+                "status": "All three photographs and captions inspected; small paper/tray annotations remain partly illegible at whole-page size."
+              },
+              {
+                "viewer": 225,
+                "printed": 200,
+                "figure": "1",
+                "item": "Cigar-box handwritten annotations",
+                "status": "Entire photocopied box, red annotation rectangles and caption inspected; visible date4/3/1956 agrees with printed discussion. Full French cursive/Arabic box wording is not independently resolved."
+              },
+              {
+                "viewer": 227,
+                "printed": 202,
+                "figure": "5",
+                "item": "Box1032A numbered support microtext",
+                "status": "All arranged pieces and color target inspected; reversed ruler0–5 read. Faint pencilled individual support IDs cannot all be securely resolved at whole-page size."
+              },
+              {
+                "viewer": 229,
+                "printed": 204,
+                "figure": "P1344/P1345",
+                "item": "Miniature red fragment numbers",
+                "status": "Both complete plates and captions inspected. Most labels read, but several smallest red numerals near the lower row and over dark objects require bounded crop; do not infer labels merely from expected numbering."
+              },
+              {
+                "viewer": 258,
+                "printed": 233,
+                "figure": "2",
+                "item": "Plate 1032A/1 miniature red fragment numerals",
+                "status": "Complete plate, all fragment positions and caption inspected. Several tiny red numerals against dark fragments are not securely read at this whole-page size; do not fill them from expected numbering."
+              },
+              {
+                "viewer": 261,
+                "printed": 236,
+                "figure": "6",
+                "item": "Tilted fragment 8 photograph ruler microtext",
+                "status": "Complete tilted photograph and Oren Ableman credit inspected. The diagonal ruler is visible but its small values and wording are unresolved; bounded native crop needed."
+              }
+            ]
+          },
+          {
+            "visual_partial_pages": [
+              31,
+              38,
+              39,
+              40,
+              125,
+              126,
+              127,
+              128,
+              129,
+              139,
+              141,
+              145,
+              146,
+              147,
+              152,
+              156,
+              176,
+              203,
+              210,
+              212,
+              217,
+              219,
+              220,
+              221,
+              222,
+              225,
+              227,
+              229,
+              258,
+              261
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 44,
@@ -675,7 +1516,20 @@
           "what_changes": "A flow/phase control. The observed direction cannot be transferred to Atara's unobserved junction. LIMIT: Bounded chapter reading; deduplicate the 2005–2010 field campaign with Ramat RahelIV.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 45,
@@ -690,7 +1544,20 @@
           "what_changes": "Construction geometry and internal numeric discrepancies",
           "complete_document_read_claim": true
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 46,
@@ -705,7 +1572,20 @@
           "what_changes": "A dated correction to a formerly Roman-looking pressure-pipe attribution. LIMIT: Complete chapter text read; no independent proof of basalt origin in this chapter.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 47,
@@ -720,7 +1600,20 @@
           "what_changes": "Conduit dating and reuse comparandum. LIMIT: Bounded chapter reading; no exact candidate junction.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 48,
@@ -735,7 +1628,20 @@
           "what_changes": "A reference to Reich 2011 rather than evidence reopening entry 49. LIMIT: Bounded 22-page chapter reading; no phase-controlled main-sideL 103 section.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_water.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "scope": "Available text/native target pass complete; source microtext and measurement limitations remain in per-page records. No externally collated physical-edition completeness claim."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 49,
@@ -750,7 +1656,21 @@
           "what_changes": "regional stratigraphy/hydraulics comparanda; incomplete supplied copy",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [
+          {
+            "historical_coordinate_limit": "Existing377-row viewer ledger describes original malformed-tree traversal; full427 mapping in orphan_page_recovery. Source catalog/date discrepancies remain, rather than absent leaves."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "recovery_record": "full_coverage_regional_books.json#omrit2.orphan_page_recovery"
+      }
     },
     {
       "inventory_index": 50,
@@ -765,7 +1685,30 @@
           "what_changes": "regional sealed subterranean storage/hiding comparanda; local water-source observations",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": false,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "unavailable_text": "Chapter18 references Appendices18.1–18.3; bodies absent from readable response and table of contents. No native verification possible."
+          },
+          {
+            "native_blocker": "fetch(download_raw_file=true,include_base64=false) HTTP413,357918873 bytes >268435456. Complete readable-text response1,759,017chars; image/caption availability must be separated."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "native_supplements_inspected": [
+          "chapter1",
+          "chapter4",
+          "chapter8",
+          "Appendices8.1–8.2"
+        ],
+        "remaining_native_scope": "chapters2–3,5–7,9–20; chapter18 referenced appendices18.1–18.3 unlocated"
+      }
     },
     {
       "inventory_index": 51,
@@ -780,7 +1723,16 @@
           "what_changes": "Regional coverage and unknown-function record. LIMIT: Report text fully read.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 52,
@@ -795,7 +1747,16 @@
           "what_changes": "Keep the Second Temple chronology unknown. LIMIT: Report text fully read.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 53,
@@ -810,7 +1771,16 @@
           "what_changes": "excavator interpretation and archaeological detection-bias comparanda, partly derivative",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 54,
@@ -825,7 +1795,20 @@
           "what_changes": "Late underfloor coin group; rolled bronze amulet under later construction; tunnel function unverified. Late comparanda, not Copper Scroll identification.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [
+          {
+            "legibility_limits": "PlateB/F plan details lowcontrast; supplied platesA–F all inspected."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 55,
@@ -840,7 +1823,44 @@
           "what_changes": "regional pit/storage-room and dating comparanda",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_regional_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "visual_pending_zoom": [
+              {
+                "viewer": 45,
+                "reason": "Fig6 source raster/overlapping loci and spot heights",
+                "status": "Source legibility limit after bounded crops; not unread queue work"
+              },
+              {
+                "viewer": 81,
+                "reason": "SectionDrawing5 central/eastern overprinted loci",
+                "status": "Source legibility limit after bounded crops; not unread queue work"
+              },
+              {
+                "viewer": 136,
+                "reason": "Fig30 small plan levels/locus labels",
+                "status": "Source legibility limit after bounded crops; not unread queue work"
+              },
+              {
+                "viewer": 139,
+                "reason": "Fig31 tiny plan/section labels",
+                "status": "Source legibility limit after bounded crops; not unread queue work"
+              }
+            ]
+          },
+          {
+            "identity_anomaly": "Raw supplied viewer 1 is the Gush Halav Volume V cover. Viewer 2–5 title/frontmatter and subsequent body identify Nabratein Volume VI, 2009. Raw PDF text matches supplied extraction; do not use the wrong cover as source identity."
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 56,
@@ -855,7 +1875,16 @@
           "what_changes": "A possible early synagogue rests on architectural fragments reused/scattered, not excavated early building; small chamber treasury function remains interpretation.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 57,
@@ -870,7 +1899,43 @@
           "what_changes": "Copy incomplete; cannot use title as full 2011–2018 report coverage.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "related_source_copies": [
+        {
+          "role": "complete author copy; original incomplete file preserved",
+          "drive_id": "1YySZwhcAJKb2iFsbr9DMDW_Y8SiFdQaZ",
+          "source_url": "https://huqoq.web.unc.edu/wp-content/uploads/sites/14864/2023/07/07.pdf",
+          "drive_url": "https://drive.google.com/file/d/1YySZwhcAJKb2iFsbr9DMDW_Y8SiFdQaZ/view",
+          "bytes": 6846081,
+          "raw_sha256": "d0e70c54dd91b8d63994f791013c8e5f911a8286fb632595a1953223dede2014",
+          "viewer_pages": 26,
+          "article_printed_pages": "48–65",
+          "native_read_evidence": "full_coverage_synagogue_articles.json"
+        }
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "gaps": [
+              "Original Drive9-page file preserves onlyp48; recovered complete UNC26-page publication separately read and viewed."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "replacement": {
+          "record": "full_coverage_synagogue_articles.json#supplemental_sources",
+          "drive_id": "1YySZwhcAJKb2iFsbr9DMDW_Y8SiFdQaZ",
+          "sha256": "d0e70c54dd91b8d63994f791013c8e5f911a8286fb632595a1953223dede2014",
+          "available_text_pass_complete": true,
+          "available_native_target_pass_complete": true,
+          "publication_complete": true
+        }
+      }
     },
     {
       "inventory_index": 58,
@@ -885,7 +1950,22 @@
           "what_changes": "Expanded English treatment; separate source record from 2022 Hebrew article; regional underground-space/access/dating comparanda",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_context_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [
+          {
+            "limits": [
+              "Published dimension table on printed716 disagrees with chapter34 prose for Magdala1 width (55 vs57cm) and Kanaf width/height (60/42 vs66/24cm). Retain both readings pending original report; no silent harmonization. Native visual review covers encountered figures/table and covers, not every text-only leaf."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 59,
@@ -900,7 +1980,31 @@
           "what_changes": "Inscribed bronze concealments and interpretive alternatives can be catalogued separately from hoards; Stern Baram report depends on Aviam, not independent find.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_context_books.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": null,
+        "limitations": [
+          {
+            "limits": [
+              "Native viewer 313 has a printed header appearing as 12 rather than 312; main text and adjacent figures are readable. This joins the viewer 83 header anomaly and is recorded without treating a faulty page number as missing body text.",
+              "McCollough locates Qana’s public building in the northwest quadrant of the acropolis at printed 81 and in the southwest quadrant at printed 86. This internal discrepancy remains unresolved. Foundation mortar radiocarbon is 4–236 CE at printed 89, compared with 4–235 CE in Runesson/Cirafesi’s earlier citation; preserve source-specific endpoints.",
+              "Ben David gives Ilan’s inventory as 180 at printed 177/table 1 but 187 at printed 180, and early Roman synagogue totals as ten in the introduction/table/conclusion but twelve at printed 184. Table 1’s 1993 row gives 77 sites, 58 survey and 26 excavation (84 combined). The 2016 table lists eight Samaritan sites while printed 178 says seven; printed 178’s 10 early Roman + 58 later Jewish + 7 Samaritan breakdown totals 75 against 74 excavated. Preserve these source-specific counts until reconciled against the original inventory.",
+              "Magness printed 171 describes turning 360 degrees from the entrance to face Jerusalem. This angle is internally problematic as a direction reversal; it remains a printed statement, not a measured movement or datum.",
+              "Ottenheijm/Pater printed 259 refers to six other synagogues but lists five at that point; Horvat Kur follows separately at printed 260. Their Theodotos and Stobi corpus citations at printed 248–250 appear to mix CIJ/corpus numbering with CIIP volumes. Verify identifiers against the original epigraphic corpus before retrieval or reuse.",
+              "Spigel gives Qiryat Sepher’s interior as 67.24 m² at printed 293/295 but 63.24 m² at printed 305. Printed 300 gives Umm Rihan’s room as 41.54 m² with 6.7 × 6.5 m, whose product is 43.55 m². Sepphoris model capacity is 158–216 at printed 294/302 but the proportional calculation’s note 62 uses 170–216. Preserve the published variants until original methodology and plans resolve them.",
+              "Weiss printed 349 associates Jericho’s nonfigural mosaic with the rise of Islam, while Magness printed 162 says its nine-coin last-use group does not date construction or the origin of its nonfigural art. This is a disagreement in interpretation, not a new phase observation.",
+              "The index has erroneous or shifted ranges, including menorah 408–419 and Japhi’a 363–369; verify body pages directly. Full continuous available text ends at printed 419/viewer 420.",
+              "Every encountered native figure/table is inspected after the complete 420-leaf text read, including table continuations 190 and 192 omitted by the original heuristic queue. All embedded images decode and their pages are covered. The audit does not claim native visual inspection of all 420 text leaves or external physical-edition collation.",
+              "Rendered pagination anomalies occur at viewer 83 (8 versus 82), 313 (12 versus 312), 359 (58 versus 358), and 373 (72 versus 372). Their extracted page numbers and body/figure progression are coherent; no missing body text is inferred from these numeral anomalies."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 60,
@@ -915,7 +2019,16 @@
           "what_changes": "Early fifth-century mosaic/building date based on underfoundation coins per preliminary authors; no earlier stage reported. No candidate change.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 61,
@@ -930,7 +2043,26 @@
           "what_changes": "Courtyard/built-threshold cave plans useful morphological comparanda; main necropolis later than Scroll. Reuse/damage cautions matter to floor/datum tests.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "gaps": [
+              "AnnexD lists separately attached excavation books (Mazar1971; Schwabe and Lifshitz1974; Avigad1976); books not embedded. Photo/video CDmedia referenced elsewhere are absent.",
+              "February2015 response viewer352–353 refers to Eyal Betzer declaration and maps2a–2c, absent from this354-page file. Supplied maps349–350 are dated15September2014 and belong to earlier response.",
+              "Tiny cadastral/map/sign labels partly illegible in source reproduction; viewer160 tinyArabic/Hebrew sign text not fully recoverable, despite enlargedEnglish sign reading. AnnexB maps288–289,293,298,305,307–308,310 include lowresolution labels/stamps.",
+              "Viewer306 English translation overlay occludes underlyingHebrew statutory text. All visible text read; occluded original cannot be certified.",
+              "Unofficial1989law translation contains original literalblankbrackets viewer268/272/274; verified on original images, not OCR omissions."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 62,
@@ -945,7 +2077,16 @@
           "what_changes": "Benched room dimensions and northern entrance are observations; synagogue function and pre70 construction are author inference; connection to northern complex unexcavated.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 63,
@@ -960,7 +2101,16 @@
           "what_changes": "Drainage channel beneath benches/portico/northern presumed entrance is dated to late synagogue phases, not first-century ceramics; morphology does not establish contemporaneity.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 64,
@@ -975,7 +2125,25 @@
           "what_changes": "Six-coin Byzantine group under L286 slabs is reported with latest coin618/619; stageII function unresolved. Out-of-window deposit comparator.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "gaps": [
+              "Cited plates7a/b,8a/b,9a/b absent from supplied9-page excerpt."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim",
+        "canonical_article_and_plates_inspected": true,
+        "canonical_article_legibility_complete": false,
+        "recovered_supplement": "full_coverage_synagogue_articles.json#source64.recovered_chapter_and_plates_2026_10_14"
+      }
     },
     {
       "inventory_index": 65,
@@ -990,7 +2158,16 @@
           "what_changes": "Actual preserved northern threshold and nearbath plan supplies rural assembly comparator. Coins from sealing collapse date site activity, not precise construction of each wall/cave.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 66,
@@ -1005,7 +2182,22 @@
           "what_changes": "Two hoards correspond existingCHRE8172/8173: primary BuildingIII bedrockcrevice and BuildingV easternroom juglet descriptions. Earlier centralroom wording differs current threshold-provenance account; preserve source-specific descriptions, no duplicate row.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "gaps": [
+              "Text clipped at capture joins1→2(p25),2→3(p26),8→9(p30),10→11(p31),11→12(p32). Original article not continuous."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 67,
@@ -1020,7 +2212,22 @@
           "what_changes": "Separate Seleucid/Hasmonean/Herodian hall and bath phases, partially explored underlying rockcutrooms; reportedFirstRevolt coincontext versus proposed66CE event association requires locus-level dating verification. No eligible hoard reported.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "gaps": [
+              "Text clipped at capture joins1→2(p107),3→4(p109),8→9(p112),13→14(p116). Original article not continuous."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 68,
@@ -1035,7 +2242,16 @@
           "what_changes": "New primary descriptions replace generic lack of Ethri archaeological contexts, but do not establish identity of unread2012 title-hoard. Two wall-corner groups, floor-niche single coin, systemXIV half-shekel and reuse-controlled hiding units must remain separate.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 69,
@@ -1050,7 +2266,22 @@
           "what_changes": "Earlierbath and adjacentconcealedpassage provide measuredgeometry comparanda. Synagoguefirstphase secondhalf4thcentury,rebuildlate5th/early6th. EarlierbathSecondTempleorigin is conjectural; tunneldateunstated; no prioritysiteblocker resolved.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "gaps": [
+              "Text clipped at capture joins1→2(p115),2→3(p116),4→5(p117),10→11→12(p122),12→13(p123). Full figure pixels possibly missing at photo joins."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 70,
@@ -1065,7 +2296,22 @@
           "what_changes": "Excavation halted above original floors; cannot use absence of deposits as negative evidence at ancient target level.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": false,
+        "limitations": [
+          {
+            "gaps": [
+              "Figs9–10 linked pottery tables appendix absent from supplied mainarticle. Official https://hadashot.iaa.org.il/images//7614%20-%20tables%20for%20figs%209%2B10.pdf returned404; alias Hadashot403/other404. Suppliedfigures1–10 and article bibliography all read/inspected."
+            ]
+          }
+        ],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     },
     {
       "inventory_index": 71,
@@ -1080,7 +2326,17 @@
           "what_changes": "Plan-scaled dimensions and shape-based functional analogy are interpretations, not independent surveyed measurements. Original entrance/stage variation must be retained.",
           "complete_document_read_claim": false
         }
-      ]
+      ],
+      "current_full_coverage": {
+        "date_utc": "2026-10-14",
+        "record": "full_coverage_synagogue_articles.json",
+        "available_text_pass_complete": true,
+        "available_native_target_pass_complete": true,
+        "complete_physical_publication_read": true,
+        "limitations": [],
+        "exposure": "Exploratory source reading; no unused holdout claim"
+      }
     }
-  ]
+  ],
+  "updated_utc": "2026-10-14"
 }

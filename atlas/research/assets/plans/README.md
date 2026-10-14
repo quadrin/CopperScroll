@@ -69,3 +69,5 @@ On 2 October 2026, complete supplied-page archives replaced the selective covera
 
 
 [Netzer2001 complete AreaAC chapter and original plan-access context](netzer2001-area-ac/README.md): original pp.50–69, inline Plan13 p.52, title/rights, plan lists and rear folded-label/colour-plate context. The34-page extract preserves original content; all renders/texts match. Plans14/15/23 drawings remain unfolded-image access gaps.
+
+The [latest-batch full-coverage figure register](new-batch-2026-10-13/README.md) links the inspected native pages, tables and catalogues to verified private archives. Its current source coverage retains missing leaves and unreadable detail; the earlier missing-file and folded-plan queue above remains a separate retrieval record.

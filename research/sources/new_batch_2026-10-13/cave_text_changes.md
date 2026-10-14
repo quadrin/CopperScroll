@@ -66,3 +66,10 @@ Six complete raw PDFs materialized and hashed in `source_manifest.json`. Only Fr
 Batch scope is explicit in `coverage.csv`: the latest72 inventory's publisher sample11Q (index41) and full11Q (index43) belong to the same publication; `11q_sample_overlap.json` records page-text overlap. The sample is a partial duplicate, with no independent corroboration. Burgin, Midras, Frumkin and CIIPIV.2 were selected as additional earlier-timestamp sources and are not counted toward latest72 coverage. The other lane's Jackson-Tal2020 Abud glass source is from the same2009permit1178 survey campaign; its dating/fate discussion shares that ancestry.
 
 **Partly obtained:** the new11Q source narrows a specific proposed second-mouth model and documents unresolved wall/entrance interpretations; the required IV/17 and TwinCave ancient entrance datums remain absent.
+
+
+## Full-reading follow-up, 14 October2026
+
+The original targeted scope above is historical. The subsequent [full-reading record](full_coverage_caves.md) covers all available Cave11Q text and its native figure/table inventory, with unresolved handwriting and miniature-label gaps kept explicit. The volume introduction, printed p.5 / viewer30, names a1952 Henri de Contenson plan of3Q at ÉBAF that marks the Copper Scroll and other fragments not shown in the DJDIII plan. This is a concrete archival retrieval pointer; the original plan has not been opened, and the introduction cannot substitute for its geometry or find positions. The same introduction points to a centimetre-scale5Q plan and7Q–9Q diaries. These are separate dependencies, with no inference that the catalogue descriptions supply unused observations.
+
+Native radiocarbon table and graph inspection distinguishes GrA65505's repeat string test (240±30BP) from the all-three average (220±30BP), printed pp.144–151. The modern-deposition interpretation concerns tested strings and is the author's inference; it does not directly date every cave deposit. The unexcavated upper chamber, disturbed upper strata and competing ancient/1956 wall interpretations retain their separate limits.

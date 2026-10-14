@@ -1,8 +1,8 @@
 # Active test
 
-Updated 14 October 2026 UTC / 13 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 14 October 2026 UTC. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (14 October UTC / 13 October Los Angeles): **obtained** — reconciled the original-report applications, edition audit and [latest source sweep](sources/new_batch_2026-10-13/README.md) for publication; preserved session histories, corrected source requirements and validated source/atlas mirrors.
+Last session (14 October 2026 UTC): **partly** — recovered and read Omrit II orphan pages and a sound Middle Maccabees copy; restored Sumaqa plates and Wadi native chapter coverage; [source records](sources/new_batch_2026-10-13/README.md) preserve remaining access and legibility gaps.
 
 ## Active questions and the observation that decides each
 
