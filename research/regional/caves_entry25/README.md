@@ -235,3 +235,8 @@ The new phase-4 row adds a C1 match only. Among all IAA-method rows, only Naḥa
 ## 11Q source correction, 14 October 2026 UTC
 
 [Humbert–Fidanzio 2019 targeted review](../../sources/new_batch_2026-10-13/cave_text_changes.md) records March 2017 reinspection of the particular northern crevasse previously proposed as a second exterior entrance: Humbert says it could not have been a passage (p. 52/viewer 77). This is an exploratory correction of that named opening model. The natural pillar is internal, and the volume retains conflicting ancient-partition versus excavation-support interpretations of the masonry (pp. 63–64 and 82–85). No alternate two-mouth history is silently eliminated; the frozen regional codes/results are preserved pending a separately documented source amendment. The source supplies no IV/17 or Twin Cave ancient threshold/wall datum.
+
+
+## English Region X and book route — 14 October2026 UTC
+
+The [late Drive audit](../../sources/late_drive_2026-10-14/cave_routes.md) reads the newly supplied English Table1 p171: the Jones-excavated pair is X/48,19339/12949, agreeing with WBADB selected rows. The earlier Hebrew-based note above gives X/47. Preserve this edition/row correspondence conflict pending native Hebrew comparison; frozen inventory codes/results are not overwritten. Frumkin2015 preview contents provides printed212–215 as the next Twin-complex book target, with body plans absent from the received preview. The VJRI1995 northern-cave plan has separate identity/datum requirements.

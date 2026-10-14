@@ -91,6 +91,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 
 ## R02 — What cave arrangement does entry 25 describe?
 
+14 October2026 supplied-source result: Frumkin2015 contents locates the Twin complex at printed212–215, absent from the preview. WBADB supplies worksheet-level licence routes; VJRI’s separate northern-cave plan has unresolved Twin/ancient-threshold linkage. English RegionX X/48 versus the prior X/47 note needs edition comparison. [Exact evidence and next records](sources/late_drive_2026-10-14/cave_routes.md).
+
 12 October applied result: Applied book facts now distinguish cave form from dated usable architecture at IV/17, Twin and XII/53; all ancient threshold/configuration joins remain unknown. [Applied witnesses](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/feature_workbench/book_application_2026-10-12/README.md).
 
 - **Priority / status:** P1 / In progress.

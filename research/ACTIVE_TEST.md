@@ -2,7 +2,7 @@
 
 Updated 14 October 2026 UTC. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (14 October 2026 UTC): **partly** — swept the supplied Perlego reports and permitted captures, qualified route/date/context claims and refined archive leads; [source records](sources/perlego_captures_2026-10-14/README.md) retain original-book, datum and protected-image limits.
+Last session (14 October2026 UTC): **partly** — checked new Drive sources; added Atara partition/conduit observations, exact Frumkin Twin-complex book pages and a separate northern-cave survey reproduction, with source/identity/assay conflicts. [Evidence and inspection limits](sources/late_drive_2026-10-14/README.md).
 
 ## Active questions and the observation that decides each
 
