@@ -86,3 +86,7 @@ The2009 surface survey,2019 MHCS synthesis and2023 excavation chapter should rem
 ## Coverage and archive
 
 [Machine-readable regional coverage](regional_coverage.json) records each supplied viewer page, native figure/table, declared scope and limitation. Native source originals, full-page figure/table renders and their hashes remain in the private regional archive. The Cypros notice is fully read through its recovered original; its newly supplied browser capture remains defective. Hizmi2016 text is complete, while small source-plan labels6/12 remain poorly legible. [Zertal V coverage](zertal_v_coverage.json) and [its change note](zertal_v_changes.md) track that volume separately.
+
+## Wilson’s Arch2025 supplied captures — 14 October2026
+
+Captured index155 distinguishes L4559/Stratum7/A2 stone fill abutting the Western Wall (upper level719.24m, lower field blank) from Stratum6 stone heaps4557/4558/4561. The former row gives no deposit dimensions, subphase or measured pier offset. Captured Table13.3 gives separate feature age summaries and modeled68.2% sample intervals; its southern-pier35–70CE summary is not the same as individual35–103/36–107CE intervals. The report’s later reservoir and theater deposits require their own phases. These are later publication/analytical details of the campaign already represented in2019. [Exact scope, model-column distinction and datum limits](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/sources/perlego_captures_2026-10-14/wilson.md).

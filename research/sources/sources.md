@@ -599,3 +599,7 @@ Ehud Netzer, “ארמונות החורף ואחוזת המלך ביריחו,”
 ### Netzer 2001 — supplied original books
 
 Both PDFs accessible locally. Final report Vol. I printed pp. 74, 82, 84–85 directly image-inspected; illustrated book archaeological plan inspection pending. Earlier publisher-only access limit is superseded for these supplied copies. Complete plan/foldout coverage remains unverified. [Hashes, observations and scope](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/netzer2001-first-pass.md).
+
+## Supplied Perlego reports and captures — 14 October2026
+
+[Source-specific reconciliation](perlego_captures_2026-10-14/README.md) covers Cotton2022, Callegher2023, Dorsey1991, Wilson’s Arch2025, Southern Wall2023, Digging Up Jericho2020 and Magness2021. These are complete readings of supplied reports with scoped captured-page checks; unseen book text and omitted chapters remain unchecked. The source register distinguishes new editorial/context corrections from repeated excavation/document lineages, and records protected-image limits.

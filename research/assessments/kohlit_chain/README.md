@@ -119,6 +119,10 @@ The checker runs the relationships evaluator read-only and compares the stored r
 
 ## Proposed changes to shared files (for the integrator)
 
-- `research/ACTIVE_TEST.md`, "Key reports" line: append ` · [Koḥlit landmark chain](assessments/kohlit_chain/README.md) and [registration protocol](assessments/kohlit_chain/registration_protocol.md)`.
+- `research/ACTIVE_TEST.md`, "Key reports" line: append ` · [Koḥlit landmark chain](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/assessments/kohlit_chain/README.md) and [registration protocol](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/assessments/kohlit_chain/registration_protocol.md)`.
 - `research/ACTIVE_TEST.md`, question 2: append "Before any Garstang, PEF or Nigro record is opened, register chain link SULTAN-1 and follow the registration protocol; a located opening does not date it."
 - Optional, for the integrator to decide: add Kenyon III's plate volume (eastern section, Pl. 111b) and Kallai 1972 pp. 172–173 as library-scan targets. They are the records that could contradict the Tell es-Sultan quarry branch and decide the Marjama pool.
+
+## Digging Up Jericho2020 supplied report — 14 October2026
+
+Cobbing14–17 reportedly pairs PEF-P-JER-GAR photographs with PEF-DA-JER-GAR location sketches; Laidlaw39–45 supplies UCL notebook/negative locality, direction and date metadata. These refine a possible follow-up to the pending archive enquiries; no new enquiry was sent. Jennings260 cites absent Dalman1925p81Fig71, distinct from the captured Fig70 and the reserved Dalman1995plate25. Butler58–62 describes tomb excavation among camp dwellings without locating those episodes in the exact northern strip, so the coverage gap is a lack of demonstrated systematic search rather than proof that nobody ever dug there. The report supplies no dated pit-mouth/grave relation. All supplied Jericho PNGs remain unviewed. Its descriptions are exposed derivative text; the earlier extractor’s claimed visual viewing lacks an identity/registration receipt, leaving overlapping target exposure unresolved. [Archive routes, limits and exposure record](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/sources/perlego_captures_2026-10-14/jericho.md).
