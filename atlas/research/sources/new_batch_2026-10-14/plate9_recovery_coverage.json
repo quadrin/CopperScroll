@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-14",
+  "source_index": 9,
+  "target": "Eshel and Greenhut1993, Revue Biblique100/2 pp252–259; Pl.Aa and Pl.Ab cited printed254/viewer4",
+  "result": "not obtained",
+  "new_plate_images_obtained": [],
+  "new_plate_images_inspected": [],
+  "new_plate_captions_inspected": [],
+  "available_copy_read_complete": true,
+  "cited_plate_copy_gap_resolved": false,
+  "publication_complete": false,
+  "existing_copy": {
+    "viewer_pages": 9,
+    "printed_pages": "252–259, plus archive wrapper",
+    "bytes": 1059233,
+    "sha256": "aba389af7efd577e8c9a514f0226f5f8cf3eedfb80f23f0f2cd82e991b1877f5",
+    "existing_coverage_record": "qumran_coverage.json"
+  },
+  "corpus_check": {
+    "local_drive_index_and_manifest_checked": true,
+    "connected_drive_queries": ["Hiam", "Revue Biblique"],
+    "result": "same audited supplied article found; no fuller issue or separate plate copy identified"
+  },
+  "metadata_routes_read": [
+    "https://www.jstor.org/stable/i40170780",
+    "https://poj.peeters-leuven.be/content.php?journal_code=RBI&url=journal"
+  ],
+  "unavailable_content_routes": [
+    {"url":"https://www.jstor.org/stable/44089153","result":"one-line image shell"},
+    {"url":"https://www.jstor.org/stable/44089160","result":"one-line tag shell; contents not seen"},
+    {"url":"https://www.jstor.org/stable/pdf/44089160.pdf","result":"web reader inaccessible/empty-shell redirect; ordinary HTTP200 text/html3038bytes, not PDF"},
+    {"url":"https://www.jstor.org/stable/44089160?seq=1","result":"web reader inaccessible"},
+    {"url":"https://www.jstor.org/stable/44089160?seq=2","result":"web reader inaccessible"},
+    {"url":"https://www.jstor.org/stable/44089149","result":"one-line image shell"}
+  ],
+  "candidate_archive_route": {
+    "url": "https://www.jstor.org/stable/44089160",
+    "title": "Back Matter, Revue Biblique100/2, April1993",
+    "contains_target_plate": "unverified; no captions accessed"
+  },
+  "new_source_assets": [],
+  "holdout_exposure_added": false,
+  "reserved_imagery_opened": false,
+  "notes": "plate9_recovery_notes.md"
+}

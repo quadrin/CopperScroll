@@ -249,7 +249,8 @@ The hand-curated result is `tables/phase3_places.csv`. Each of its 37 rows names
   - Wolters 1994 has nothing on the Greek letters.
 - **Studies.** *Copper Scroll Studies*, all chapters; the relevant ones are Puech, Lefkovits, Bar-Ilan, Fidler, Goranson, Muchowski, Thiering, Lika Tov, Wise and Wolters. Also Høgenhaven 2020, pp. 28, 38, 50–62, 147–165, 185, 235.
 - **Josephus, Greek (Perseus, Niese; local, from Phase 2).** Used for the name base-rate test and for BJ 2.520, 5.474 and 6.387.
-- **Reported only at second hand** (see Q31): Ullendorff 1961; Pixner 1983; Stegemann 1993/1998; Weitzman; Richey 2012; Beyer 1994; Lehmann 1964; Lurie 1964; Zissu 2001; Bedman 2000; McCarter. Feather is mentioned only in passing (Fidler CSS p. 210 n. 1).
+- **Original-paper access updated, 14 October 2026:** Ullendorff1961, Pixner1983, Richey2012, Weitzman2015 and Lehmann1964 have been read directly, alongside the supplied Wolters1987–1990 papers, Silberman1960, Mandel1993 and Taylor2023. [Page-scoped source changes and visual limits](new_batch_2026-10-14/copper_changes.md). The directly read JiménezBedman1999 chapter is a distinct work from Bedman2000; [reference coverage](new_batch_2026-10-14/reference_changes.md) preserves that distinction.
+- **Other secondhand reports in the earlier assessment** (see Q31): Stegemann1993/1998; Beyer1994; Lurie1964; Zissu2001; Bedman2000; McCarter. Specific later direct reads must be matched by publication before changing those access labels. Feather is mentioned only in passing (Fidler CSS p.210 n.1).
 
 ## Phase 5 sources (session 2)
 

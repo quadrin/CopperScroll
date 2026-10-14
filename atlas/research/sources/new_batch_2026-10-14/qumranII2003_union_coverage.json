@@ -1,0 +1,6352 @@
+{
+  "source_index": 3,
+  "publication": "Humbert and Gunneweg, eds., Khirbet Qumran et Ain Feshkha II (2003)",
+  "source_sha256": "1a1fa647f48a5ff444370324c922962caca2afa8fb7ae2c2d359377f509fbb34",
+  "viewer_pages": 520,
+  "basis": "Union of exact worker receipts only; extraction/header inventory and prior targeted notes receive no full-reading credit. Overlapping and rotated copies are not additive evidence.",
+  "worker_ledgers": [
+    "qumran_ib_coverage.json",
+    "qumran_naa_coverage.json",
+    "qumran_petrography_coverage.json",
+    "qumran_continuation_coverage.json",
+    "qumran_middle_coverage.json",
+    "qumran_inscriptions_coverage.json"
+  ],
+  "text_read_viewer_ranges": [
+    [
+      1,
+      29
+    ],
+    [
+      33,
+      76
+    ],
+    [
+      85,
+      87
+    ],
+    [
+      89,
+      129
+    ],
+    [
+      131,
+      134
+    ],
+    [
+      137,
+      219
+    ],
+    [
+      221,
+      221
+    ],
+    [
+      223,
+      234
+    ],
+    [
+      237,
+      319
+    ],
+    [
+      321,
+      367
+    ],
+    [
+      369,
+      369
+    ],
+    [
+      371,
+      425
+    ],
+    [
+      427,
+      435
+    ],
+    [
+      439,
+      445
+    ],
+    [
+      447,
+      447
+    ],
+    [
+      449,
+      495
+    ],
+    [
+      497,
+      516
+    ]
+  ],
+  "native_inspected_viewer_ranges": [
+    [
+      7,
+      8
+    ],
+    [
+      25,
+      29
+    ],
+    [
+      39,
+      39
+    ],
+    [
+      41,
+      42
+    ],
+    [
+      44,
+      45
+    ],
+    [
+      47,
+      47
+    ],
+    [
+      49,
+      53
+    ],
+    [
+      58,
+      58
+    ],
+    [
+      61,
+      61
+    ],
+    [
+      65,
+      83
+    ],
+    [
+      85,
+      87
+    ],
+    [
+      89,
+      129
+    ],
+    [
+      132,
+      133
+    ],
+    [
+      138,
+      138
+    ],
+    [
+      140,
+      146
+    ],
+    [
+      149,
+      149
+    ],
+    [
+      153,
+      153
+    ],
+    [
+      158,
+      161
+    ],
+    [
+      163,
+      188
+    ],
+    [
+      190,
+      192
+    ],
+    [
+      200,
+      200
+    ],
+    [
+      202,
+      203
+    ],
+    [
+      208,
+      217
+    ],
+    [
+      224,
+      225
+    ],
+    [
+      228,
+      230
+    ],
+    [
+      232,
+      232
+    ],
+    [
+      242,
+      248
+    ],
+    [
+      250,
+      251
+    ],
+    [
+      262,
+      266
+    ],
+    [
+      268,
+      268
+    ],
+    [
+      282,
+      282
+    ],
+    [
+      286,
+      286
+    ],
+    [
+      290,
+      290
+    ],
+    [
+      298,
+      301
+    ],
+    [
+      307,
+      318
+    ],
+    [
+      321,
+      367
+    ],
+    [
+      371,
+      424
+    ],
+    [
+      427,
+      435
+    ],
+    [
+      439,
+      445
+    ],
+    [
+      447,
+      447
+    ],
+    [
+      469,
+      495
+    ],
+    [
+      502,
+      502
+    ]
+  ],
+  "native_only_viewer_ranges": [
+    [
+      77,
+      83
+    ]
+  ],
+  "pages_without_text_or_native_reading_receipt": [
+    30,
+    31,
+    32,
+    84,
+    88,
+    130,
+    135,
+    136,
+    220,
+    222,
+    235,
+    236,
+    320,
+    368,
+    370,
+    426,
+    436,
+    437,
+    438,
+    446,
+    448,
+    496,
+    517,
+    518,
+    519,
+    520
+  ],
+  "pages_without_any_native_inspection": [
+    [
+      1,
+      6
+    ],
+    [
+      9,
+      24
+    ],
+    [
+      30,
+      38
+    ],
+    [
+      40,
+      40
+    ],
+    [
+      43,
+      43
+    ],
+    [
+      46,
+      46
+    ],
+    [
+      48,
+      48
+    ],
+    [
+      54,
+      57
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      62,
+      64
+    ],
+    [
+      84,
+      84
+    ],
+    [
+      88,
+      88
+    ],
+    [
+      130,
+      131
+    ],
+    [
+      134,
+      137
+    ],
+    [
+      139,
+      139
+    ],
+    [
+      147,
+      148
+    ],
+    [
+      150,
+      152
+    ],
+    [
+      154,
+      157
+    ],
+    [
+      162,
+      162
+    ],
+    [
+      189,
+      189
+    ],
+    [
+      193,
+      199
+    ],
+    [
+      201,
+      201
+    ],
+    [
+      204,
+      207
+    ],
+    [
+      218,
+      223
+    ],
+    [
+      226,
+      227
+    ],
+    [
+      231,
+      231
+    ],
+    [
+      233,
+      241
+    ],
+    [
+      249,
+      249
+    ],
+    [
+      252,
+      261
+    ],
+    [
+      267,
+      267
+    ],
+    [
+      269,
+      281
+    ],
+    [
+      283,
+      285
+    ],
+    [
+      287,
+      289
+    ],
+    [
+      291,
+      297
+    ],
+    [
+      302,
+      306
+    ],
+    [
+      319,
+      320
+    ],
+    [
+      368,
+      370
+    ],
+    [
+      425,
+      426
+    ],
+    [
+      436,
+      438
+    ],
+    [
+      446,
+      446
+    ],
+    [
+      448,
+      468
+    ],
+    [
+      496,
+      501
+    ],
+    [
+      503,
+      520
+    ]
+  ],
+  "known_unclassified_visual_pages": [
+    30,
+    31,
+    32,
+    84,
+    88,
+    130,
+    135,
+    136,
+    220,
+    222,
+    235,
+    236,
+    284,
+    285,
+    287,
+    319,
+    320,
+    368,
+    369,
+    370,
+    425,
+    426,
+    436,
+    437,
+    438,
+    446,
+    448,
+    496,
+    517,
+    518,
+    519,
+    520
+  ],
+  "full_native_page_audit_complete": false,
+  "whole_copy_reading_complete": false,
+  "whole_copy_leaf_completeness": "Not established: unclassified scan boundary/image leaves have not been inspected. Empty extraction is not proof of blankness.",
+  "numbered_figures_in_completed_chapters": "Worker receipts record completion of encountered numbered figures/tables in the completed prose chapters. Belis PlatesI/II/IV and the other unclassified sheets remain explicit visual exceptions; no all-illustrations claim is made.",
+  "protected_images_opened_in_this_source3_union": false,
+  "reserved_image_limit": "Unclassified sheets remain unviewed; no reserved full-scroll/target image was opened to classify them. Source0 viewers318–319 is a separate unresolved exposure and is not re-opened or cleared by this union.",
+  "pages": [
+    {
+      "viewer_page": 1,
+      "printed_page": null,
+      "text_sha256": "e01912e81b3a8afe73da2b55d4589857531754557d6fbbcca825619cadfa7965",
+      "text_chars": 387,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 2,
+      "printed_page": null,
+      "text_sha256": "f50354309312073728a326a7e95d611131f25eb1fef1fa2516c6497399b1e900",
+      "text_chars": 125,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 3,
+      "printed_page": null,
+      "text_sha256": "3dacad5febbeaddcec70fb05d5a06fc79b05db48947e2c66b29840633c0e7eee",
+      "text_chars": 55,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 4,
+      "printed_page": null,
+      "text_sha256": "6304448969193ff56c0f4a2e56d25463cfb28c4e9dbe63d3fc18d96494bb42cb",
+      "text_chars": 23,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 5,
+      "printed_page": null,
+      "text_sha256": "df6a0b5cd0a47936e95617a4cb1496a2bb0af9ed505139443c3a20b0df3ac022",
+      "text_chars": 179,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 6,
+      "printed_page": null,
+      "text_sha256": "960e43d1e367488c496fe34643c0e5f3eb834737ecf18be0e3f66e6f5ae2d4bf",
+      "text_chars": 1074,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 7,
+      "printed_page": null,
+      "text_sha256": "615da5b0c0247879f2dfacd92ca6db7e8317453ad10e8d63d91c5f2cbed54f46",
+      "text_chars": 1125,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 8,
+      "printed_page": null,
+      "text_sha256": "2efa19ce34c8e5d33bfc40310d17d455e2c0d1a863daa0719632e18d15fb087e",
+      "text_chars": 781,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 9,
+      "printed_page": null,
+      "text_sha256": "7a0b5df2bbe160262b19436d3ea6bd6f234132614a3c0ffdc4df9f3d5edc2f38",
+      "text_chars": 125,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 10,
+      "printed_page": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 11,
+      "printed_page": null,
+      "text_sha256": "572c2c6a21db0b6fa65118a5404d208ce655c863a95e699ea89634ec50797318",
+      "text_chars": 2603,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 12,
+      "printed_page": null,
+      "text_sha256": "cad45004b9ce51bd7271dd9d818089f808d06d50524655766dc5a03f9f0608bd",
+      "text_chars": 1750,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 13,
+      "printed_page": null,
+      "text_sha256": "8146fd4331811f04d730c34b74410e4842cb1dfc88c0c65c041ce7849bef2b7e",
+      "text_chars": 57,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 14,
+      "printed_page": null,
+      "text_sha256": "c44ec00f2c69347f01b085e2e034f5c38ce46a57001dd74dc0d767f1c684a7c4",
+      "text_chars": 10,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 15,
+      "printed_page": null,
+      "text_sha256": "3fa9e6036fa89960385a8bdc7492faaf3aa8d5d4307e117aab65587425ef1384",
+      "text_chars": 5111,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 16,
+      "printed_page": null,
+      "text_sha256": "94de3569997e6007768692e47376422be91dc1565d138f767b66c7731607f024",
+      "text_chars": 7198,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 17,
+      "printed_page": null,
+      "text_sha256": "649334f4127d1b56d442e973e2df2d2625884ec718dab485a94f3edc11a671ea",
+      "text_chars": 7172,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 18,
+      "printed_page": null,
+      "text_sha256": "2f9d8aaa9f1607129d105a0822274156a1f86e61bbdbc2fd1bebdb301d453f55",
+      "text_chars": 1290,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 19,
+      "printed_page": null,
+      "text_sha256": "47909ad11c5fa88c3bc93482abc13d45e5395e89113731b68297fce2bbce5dee",
+      "text_chars": 5089,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 20,
+      "printed_page": null,
+      "text_sha256": "7d0fd9c562a43789d4e38f3e381676916e11a13ce704eaa2ee5307d6d907e4f2",
+      "text_chars": 7168,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 21,
+      "printed_page": null,
+      "text_sha256": "51f0f2de91a96be626f2c208ac4ccfec925e88ba01256c35892f1ce6c5e8d1ed",
+      "text_chars": 7237,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 22,
+      "printed_page": null,
+      "text_sha256": "442a4cbe089a99745a2b4f5d43d8cf405d643b2c0186f2d0e93ce7b2d9d5f616",
+      "text_chars": 7047,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 23,
+      "printed_page": null,
+      "text_sha256": "b77a99ae6622c2052658f722ce30868c8d90fe4d9ff642421f2836de5ce7df92",
+      "text_chars": 6836,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 24,
+      "printed_page": null,
+      "text_sha256": "1bb600c83bb1ad2747e2cb52e5d4698280c3095e34d9c2d5c0b58352dd40385f",
+      "text_chars": 6743,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 25,
+      "printed_page": null,
+      "text_sha256": "04651545cbee0e46c839eb3624a7a29e5a91b15d6a6a9f76f7d96f3a52b67752",
+      "text_chars": 132,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 26,
+      "printed_page": null,
+      "text_sha256": "060ec93cbcfb8afd13997f12dc868f0587bdb6f80699883a73f965412c8b445d",
+      "text_chars": 133,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 27,
+      "printed_page": null,
+      "text_sha256": "1f8eedd96bef42a43295cc11f7145427c67b45969907e3485a37b3e3936d4fe4",
+      "text_chars": 276,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 28,
+      "printed_page": null,
+      "text_sha256": "4ce3849d1ef48a39f96d73e85c84a910ea4fe9e6b76abfa34f006ece582fc44a",
+      "text_chars": 168,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 29,
+      "printed_page": null,
+      "text_sha256": "4f7e5ec387df19d5867800f1618257cbe454fb6fcff6e8dd61b4ec28ebc36682",
+      "text_chars": 56,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 30,
+      "printed_page": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 31,
+      "printed_page": null,
+      "text_sha256": "8277f22f83464e664eefe5ab022df54ae582ded2444ecd8f2056aa47065cd0d5",
+      "text_chars": 89,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 32,
+      "printed_page": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 33,
+      "printed_page": 3,
+      "text_sha256": "b7d65337ec0ecf235d1781cb3a9fc9392ea086b5ee32e2e06e4b9ada87c9c4ac",
+      "text_chars": 5031,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 34,
+      "printed_page": 4,
+      "text_sha256": "722ffa26f786790dc837c3f4d1b884b8864f1d9774e14725dd45539573fd4eea",
+      "text_chars": 6893,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 35,
+      "printed_page": 5,
+      "text_sha256": "e2f0841a838fe72b207fa2a53dc66fc36b660b3f3934627a274e350826c6d87e",
+      "text_chars": 6980,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 36,
+      "printed_page": 6,
+      "text_sha256": "1e9e8a5d2a0ab29772ecc51829633913ae5aba4feb766bb9975e2d61d81454d7",
+      "text_chars": 7029,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 37,
+      "printed_page": 7,
+      "text_sha256": "e175c8bb2eba5796a50ee39754f43b53c583f63dc5d0fef8342e1068b486b4c3",
+      "text_chars": 6289,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 38,
+      "printed_page": 8,
+      "text_sha256": "708592be88e1db0ed7f015003290618f7dd877f35a2378f38793d8382c4bc235",
+      "text_chars": 6905,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 39,
+      "printed_page": 9,
+      "text_sha256": "b6d3ae3bf517917b7afc22c6ff90972d13b7fa457a8388375e10503ad0c85ab6",
+      "text_chars": 4764,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 40,
+      "printed_page": 10,
+      "text_sha256": "7ce5d47697c2dda23a555a9e2345ba57e52bafecef09873c68134c24befb6de3",
+      "text_chars": 6198,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 41,
+      "printed_page": 11,
+      "text_sha256": "39bfae4089ffb8d008c8b853531318959da1f0f01c35fcb0d4b8db842e6a050a",
+      "text_chars": 4380,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 42,
+      "printed_page": 12,
+      "text_sha256": "930fd14f1e877f450aace26065dc86e840b1ef8b23e174242ea7cf55c91c07c1",
+      "text_chars": 302,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 43,
+      "printed_page": 13,
+      "text_sha256": "0fad9a4026d398d42b04850975f45dcf00edab7fa4d19e9ae1591588a60a29a7",
+      "text_chars": 6123,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 44,
+      "printed_page": 14,
+      "text_sha256": "d276af1a019be22baedfb02e75e2352fa81c40a6f116948fda76aada35011224",
+      "text_chars": 5523,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 45,
+      "printed_page": 15,
+      "text_sha256": "6d1117afaaede42df774a6da0e3fe798b726005bad11db2e021fe3b25049f01d",
+      "text_chars": 322,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 46,
+      "printed_page": 16,
+      "text_sha256": "836cebd3136238247223f64c42767aa3a0058811d29befc122637840c1a7c387",
+      "text_chars": 6370,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 47,
+      "printed_page": 17,
+      "text_sha256": "cfb861c4285f5f000069490ae335dea565bb126a0b3ceeccff61a427ba541ee9",
+      "text_chars": 489,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 48,
+      "printed_page": 18,
+      "text_sha256": "b9f0caea789fdc32e92928235a5aaa399f335c67626b1c5eb320b060f4980d90",
+      "text_chars": 5977,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 49,
+      "printed_page": 19,
+      "text_sha256": "96007d647087edffc5ff7cb358eb0519c8eddab9ca61bc0f9d70ae4dc2a69a8b",
+      "text_chars": 3329,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 50,
+      "printed_page": 20,
+      "text_sha256": "db0aa2e9cb1190ff2fdfe6da89534fe032ec070e8bd8e1a7559f6f95b49b174f",
+      "text_chars": 5552,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 51,
+      "printed_page": 21,
+      "text_sha256": "e1866541ae5a4177b6222f5d95176509ce0b6b5ffe45c44c07026b16b4effbf5",
+      "text_chars": 232,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 52,
+      "printed_page": 22,
+      "text_sha256": "9c2ca4977d7420925cd0fa4a26044ecb35b05d3e641418f76af5c3cfc44137c3",
+      "text_chars": 5102,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 53,
+      "printed_page": 23,
+      "text_sha256": "32fe0383a24d6e6d8ffc5acb37b0f67f8a66ee98f0a13cf8fe26dd139462cc4d",
+      "text_chars": 5934,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 54,
+      "printed_page": 24,
+      "text_sha256": "fe6d5064f1b232be998a8120fe4ca05958d68feaea4a2207966f8c990c3798d0",
+      "text_chars": 6313,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 55,
+      "printed_page": 25,
+      "text_sha256": "15d6327092d0fcf608fc26d1640d5d1b2f4225c0a699a20c776688f5d3045638",
+      "text_chars": 6949,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 56,
+      "printed_page": 26,
+      "text_sha256": "9db77642eb4d06f35856e04c31871c9c031d044388e66f02015a91c75fab3205",
+      "text_chars": 6879,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 57,
+      "printed_page": 27,
+      "text_sha256": "bf3d75f00f3c5784be53a4817938ffd692b4dcbea139da45b795b547515cd9a7",
+      "text_chars": 7352,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 58,
+      "printed_page": 28,
+      "text_sha256": "8c9b033e67675dcd5ceac5c87e132e2a7c06bae7279666af22097f95bd8073ce",
+      "text_chars": 5085,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 59,
+      "printed_page": 29,
+      "text_sha256": "078bd6fa5d54457634f28e6642f13e614cbdd9e2dfff84c8756160024a6e33c0",
+      "text_chars": 6821,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 60,
+      "printed_page": 30,
+      "text_sha256": "2dc9ddc61cdd617a2a34f548a164a64426f68dae7641b024fa262b14a7edb715",
+      "text_chars": 7096,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 61,
+      "printed_page": 31,
+      "text_sha256": "14791e2bbf72545a2962c49c03010b7527b7bede3ea79e3e17e2dd806edecd9f",
+      "text_chars": 680,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 62,
+      "printed_page": 32,
+      "text_sha256": "0a3ca06a78ea223d1f61830bdf57a5536d109511c1087400e873834fd8e30c35",
+      "text_chars": 6739,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 63,
+      "printed_page": 33,
+      "text_sha256": "421773101d93661f5c0c835cecf594784b189d1cf3d4801ee1ef077d3ee5d233",
+      "text_chars": 6913,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 64,
+      "printed_page": 34,
+      "text_sha256": "0102dd90a5eaca4a8f1cfb410714e9e5a30144acc2313e1333363b43739201c6",
+      "text_chars": 7727,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 65,
+      "printed_page": 35,
+      "text_sha256": "7b84c431fc886dbba9931813f5627812c31247b9feed3f0cba8d904a5f12b6d5",
+      "text_chars": 2822,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 66,
+      "printed_page": 36,
+      "text_sha256": "86b9e5c8eed34b39290db393cff6db5377be012c1d389aa33fab013705159177",
+      "text_chars": 2937,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 67,
+      "printed_page": 37,
+      "text_sha256": "217adf652ca3d66bd01fda3ebc40b1528e25a4a26ae039adb6fa3b7e77f47ca2",
+      "text_chars": 3052,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 68,
+      "printed_page": 38,
+      "text_sha256": "ff91376912b24742fb5494e61a7174f796eba58ff18fece5dbc0c5fd9e5472d7",
+      "text_chars": 2113,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 69,
+      "printed_page": 39,
+      "text_sha256": "1a3d19183c490deadc73a5dbf7b5644d88fd47ce2c719be8d2d32598adf96660",
+      "text_chars": 2059,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 70,
+      "printed_page": 40,
+      "text_sha256": "cf2f53ace0174ba1c88151e0aa780538509275ba64805d999a9ad5676f499163",
+      "text_chars": 2068,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 71,
+      "printed_page": 41,
+      "text_sha256": "8a88f5cf992588e536c05573f5038beee6e405b57b2b452d1db6ba62caa67006",
+      "text_chars": 2023,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 72,
+      "printed_page": 42,
+      "text_sha256": "0f54911c9aef1826e06234a8d4ed7e94b9b0065ca8d5184e20a4edb912f59685",
+      "text_chars": 690,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 73,
+      "printed_page": 43,
+      "text_sha256": "6faeb438b141ad1805b714ae48ce3b775b5b24c3e07471d0bd376636685a4642",
+      "text_chars": 2518,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 74,
+      "printed_page": 44,
+      "text_sha256": "23081c9c42af3f0c66fb7106164848c1a6b7cdaf28139154591bc99505522c00",
+      "text_chars": 2860,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 75,
+      "printed_page": 45,
+      "text_sha256": "df3dd350472a87c05f1659368fd65fa5b50fd917b7ad65965881546771bb4586",
+      "text_chars": 2768,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 76,
+      "printed_page": 46,
+      "text_sha256": "da3dd9a327d014f92c2e8f8224d0d4d5fee64c0afffec00851e773e1f3cac47e",
+      "text_chars": 702,
+      "text_read_receipts": [
+        "qumran_naa_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 77,
+      "printed_page": 47,
+      "text_sha256": "5eda8084bcb18189eb9c9ad920fec0f5a2885003917ab16d7a1d9a1fd98c2f1f",
+      "text_chars": 3589,
+      "text_read_receipts": [],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 78,
+      "printed_page": 48,
+      "text_sha256": "928fec54206cad294e4a03465311cee9f7651eb8928cd46ef164124ed5d2d350",
+      "text_chars": 3626,
+      "text_read_receipts": [],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 79,
+      "printed_page": 49,
+      "text_sha256": "684ca3a72827f426d66826615f18666c8607f38a9c0f1bd9e46ad3e86cef8ae5",
+      "text_chars": 3587,
+      "text_read_receipts": [],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 80,
+      "printed_page": 50,
+      "text_sha256": "03cdcc2db33472794daf221122ed9e22f4b5e5f2bdb17eff67c013316b47cdb5",
+      "text_chars": 3255,
+      "text_read_receipts": [],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 81,
+      "printed_page": 51,
+      "text_sha256": "8c8436e1135295c7d9fa0de898d05841f24ea1cccb8e074230f55ddaf34b0788",
+      "text_chars": 3280,
+      "text_read_receipts": [],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 82,
+      "printed_page": 52,
+      "text_sha256": "ce03db5e92ee03a76f56433f0c98e1103f4efeaad1ac3cbd2425068554b1160f",
+      "text_chars": 3790,
+      "text_read_receipts": [],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 83,
+      "printed_page": 53,
+      "text_sha256": "e60ff8db7b1842f45e1ed747d6702a74ada2d32474f7aa3b912efc8e98fa4507",
+      "text_chars": 3761,
+      "text_read_receipts": [],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 84,
+      "printed_page": 54,
+      "text_sha256": "2cbea8f0267db75f323c13129351383d8686400c3166328367d567f17ea416df",
+      "text_chars": 72,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 85,
+      "printed_page": 55,
+      "text_sha256": "5f335c36a74e53e0873f39ebd0ce11458bc85ca4583d115ff4739523bcd84802",
+      "text_chars": 3911,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 86,
+      "printed_page": 56,
+      "text_sha256": "59ce568e65cbe69cde1cb3f4f32c1d9587bf34606a82c5551dfe23d509c076aa",
+      "text_chars": 3544,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 87,
+      "printed_page": 57,
+      "text_sha256": "0df56f2db1e96f435882853907600846ad668a730c1ad826fbf0719983a810a4",
+      "text_chars": 1457,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_naa_coverage.json",
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 88,
+      "printed_page": 58,
+      "text_sha256": "acb16831c010a04402d36df0d4ba8dd15a63cd5c88cf913133c9c7c9c7f973bf",
+      "text_chars": 170,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 89,
+      "printed_page": 59,
+      "text_sha256": "54f11d013e9e603c9c549a480ce476f21ed1b0f88e17eaa0f1b59df315071cc5",
+      "text_chars": 4963,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 90,
+      "printed_page": 60,
+      "text_sha256": "faa91f92a7ae7757dad6049eaee94f22ba4b05475cc5d307b268871e715eaf18",
+      "text_chars": 6381,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 91,
+      "printed_page": 61,
+      "text_sha256": "a66a0f358907e6c2c3f8cebb971689332010d32c50669a0cbe2c724b1bf53b70",
+      "text_chars": 7020,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 92,
+      "printed_page": 62,
+      "text_sha256": "f706663b4b4a8024bfc1c002195af7dc5bd18c7ece946230710f41bbaf578c35",
+      "text_chars": 2406,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 93,
+      "printed_page": 63,
+      "text_sha256": "800c6857dff46a2dea2fbcd8217645a9e550633a41c0f7424f8e30a13122405d",
+      "text_chars": 4383,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 94,
+      "printed_page": 64,
+      "text_sha256": "d5262314cda946a33635e7d7f4afa508b6bdebfed70b695a7bf256a76930e3d2",
+      "text_chars": 1214,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 95,
+      "printed_page": 65,
+      "text_sha256": "cc7fec91825ade341800cc49c7adc5c6d848d96064c3263cb2d50fdcc427c423",
+      "text_chars": 3835,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 96,
+      "printed_page": 66,
+      "text_sha256": "7185828d9087963f731c5f96afde17304d231ca261f1416f171004a23538dba5",
+      "text_chars": 5882,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 97,
+      "printed_page": 67,
+      "text_sha256": "da6449bd0602268233db3dc686440f7cb4fd95fa381cf047092325eb54cabe4d",
+      "text_chars": 4032,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 98,
+      "printed_page": 68,
+      "text_sha256": "f6d69f6ebca6c26e373436fcecdaedddd08e742eb74e29107abee3c8ce7c4590",
+      "text_chars": 2054,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 99,
+      "printed_page": 69,
+      "text_sha256": "55bd2abb251429f8e50d89e66ab1ce6b9b71cecfcf33361f312378100aecdc01",
+      "text_chars": 2746,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 100,
+      "printed_page": 70,
+      "text_sha256": "4b74128bd78c51942b1865f88cab10ff7bbc4835d4d3f191c5f725ef9a51a9d3",
+      "text_chars": 7227,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 101,
+      "printed_page": 71,
+      "text_sha256": "13fa7df6e20722f292c99767b98027c665ba4939982a0708d0fc1e61ee11a55e",
+      "text_chars": 5571,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 102,
+      "printed_page": 72,
+      "text_sha256": "b6ef8213de97beb8cf37ec7d21d4c1364e8271e579daab648ee980ec44e607a0",
+      "text_chars": 4045,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 103,
+      "printed_page": 73,
+      "text_sha256": "caad726cb295a3e64691db48c1fdf111019bccbb1313da5945d8a58ab4094682",
+      "text_chars": 3036,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 104,
+      "printed_page": 74,
+      "text_sha256": "3429766450378ed0593df8a19fc748b725461c5b6497b9c5e7750c448bb2b75a",
+      "text_chars": 4922,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 105,
+      "printed_page": 75,
+      "text_sha256": "9fef72dcfd70641e71a12bb728f0253b4bb70a8e6bec1281f3d7b4d5cd463203",
+      "text_chars": 7119,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 106,
+      "printed_page": 76,
+      "text_sha256": "03aa90f2fcd22b75df136ea72e0933acee81650248c13346261916916d372d47",
+      "text_chars": 4082,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 107,
+      "printed_page": 77,
+      "text_sha256": "e6f412279c5d3a07aaf53ff0b6344d09bc156c73813624ac46642b936e5cc478",
+      "text_chars": 6328,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 108,
+      "printed_page": 78,
+      "text_sha256": "04ca6d7448f9c4e58785a8ef3596b9c60cfa6da5afb74012c30a81570546345a",
+      "text_chars": 277,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 109,
+      "printed_page": 79,
+      "text_sha256": "ceca0ca21eab36e06f8a5e1a64e50160fa58b6c4330c643201770ab96ed7133a",
+      "text_chars": 4419,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 110,
+      "printed_page": 80,
+      "text_sha256": "068ae5a5b2f3aa67a8f8c1e54e49e305aac6489100c0b67af9686dc32ef42c95",
+      "text_chars": 343,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 111,
+      "printed_page": 81,
+      "text_sha256": "5928004da0aeadb637e2be020fc2ca8ab4817d44b2ba1a27885825ceb859d898",
+      "text_chars": 3896,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 112,
+      "printed_page": 82,
+      "text_sha256": "ff9ef16fa888a35858822a4211f681b3b2f689bb570f53e0ffeb09363d29ac27",
+      "text_chars": 340,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 113,
+      "printed_page": 83,
+      "text_sha256": "2fdcd1b8e204fd6c02019a5f24a7654ed95c6014638d7536f365bbcc9261c665",
+      "text_chars": 4178,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 114,
+      "printed_page": 84,
+      "text_sha256": "4e318e07821915fd2ba73f6a5c2b8b78071ef3651e34b2116de04917f17e00aa",
+      "text_chars": 318,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 115,
+      "printed_page": 85,
+      "text_sha256": "47a5e0a0e3ef6f85f804a97e4691a81f1bf7cfbe86b4480a1a4f1d1559d7789a",
+      "text_chars": 3839,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 116,
+      "printed_page": 86,
+      "text_sha256": "78baea0bebe2436eab8bf7eb7dd818779c11061e7e87e084da39818c04551f40",
+      "text_chars": 463,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 117,
+      "printed_page": 87,
+      "text_sha256": "b400d2c2de6a799ba45e42b9247ea5783c99a0a434a40dff94a58be20a116eab",
+      "text_chars": 3947,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 118,
+      "printed_page": 88,
+      "text_sha256": "4fc9815b028818e65effa9b7111407a0ed92760652e91b8e118050d3bfeb744a",
+      "text_chars": 338,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 119,
+      "printed_page": 89,
+      "text_sha256": "a09ef51675b4b1965aef501120e12c0cad515b355dc828638c22f2eaf4b49b09",
+      "text_chars": 3987,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 120,
+      "printed_page": 90,
+      "text_sha256": "e97d2d6948d79ef9f078081ffff8a64ccae765b435c90fcac948d928b369409f",
+      "text_chars": 236,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 121,
+      "printed_page": 91,
+      "text_sha256": "8cf12ea821711306cd80fbab3e01c19d0588d1a1242709440334ab09330aad3a",
+      "text_chars": 4279,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 122,
+      "printed_page": 92,
+      "text_sha256": "5f393bbf17e6c2ffe6afdfa24bb521c1c8782fb353ae9a33457cf3815ffa0021",
+      "text_chars": 385,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 123,
+      "printed_page": 93,
+      "text_sha256": "0c088a8c5b0f8a945c61ea8dea4ef97c914434ac4faa9f313d62fca49cf35e99",
+      "text_chars": 4132,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 124,
+      "printed_page": 94,
+      "text_sha256": "1c42600b2251103ab76388aff723303e24b03f80c67e105be39a963242f4d810",
+      "text_chars": 459,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 125,
+      "printed_page": 95,
+      "text_sha256": "371f8af9732ef939d2f52913744914ceab42857233fe295ebd8a98fd384817d9",
+      "text_chars": 3849,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 126,
+      "printed_page": 96,
+      "text_sha256": "959da320ddf6f9def6cf652175bfe0aef0b9ffba2ce19c5151e588df6451b3e6",
+      "text_chars": 403,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 127,
+      "printed_page": 97,
+      "text_sha256": "7d1226f26ebebde4e6119bf59cc87a94887dea5241855003209ae3f006de5dd6",
+      "text_chars": 3894,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 128,
+      "printed_page": 98,
+      "text_sha256": "87857119b0fbe0c6e3568258f28214a68e695edf7c106b190394ac13b04911a1",
+      "text_chars": 599,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 129,
+      "printed_page": 99,
+      "text_sha256": "d1fbc2046b63cf991a5afd15b5432b4d7d532a93b1dc98df07b9cbad709e50de",
+      "text_chars": 3682,
+      "text_read_receipts": [
+        "qumran_petrography_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_petrography_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 130,
+      "printed_page": 100,
+      "text_sha256": "a66a0b0196e3da26e54750d98eb05b13377ef1b65b2c097ae25b9a92ba4ecec7",
+      "text_chars": 16,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 131,
+      "printed_page": 101,
+      "text_sha256": "4869bab92d35be1a37d85de724bdd9da89fdd7ef3c591f3c99271f007fbc0fc6",
+      "text_chars": 4173,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 132,
+      "printed_page": 102,
+      "text_sha256": "2a0310db996aabbacd362d5a1ce31037956f8f6561672de01da9c934ee8344f3",
+      "text_chars": 3006,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 133,
+      "printed_page": 103,
+      "text_sha256": "c9563bf8e3f62a909dd5161122b102b5b25f2c003919746c3aedea9510351066",
+      "text_chars": 3365,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 134,
+      "printed_page": 104,
+      "text_sha256": "40e94093420682d783d5732e3161ed28af604c90063feaac2454570d81f6b339",
+      "text_chars": 2354,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 135,
+      "printed_page": 105,
+      "text_sha256": "7e1096cd390b2e6c04875ba35fb0b635dfd42bfaa9dcb4e1e71a477c4c2b14ae",
+      "text_chars": 56,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 136,
+      "printed_page": 106,
+      "text_sha256": "e73d0464964368c8ff3ef2fc9f2a3bfb9c2b5297b10344f91956e3c056cce0b1",
+      "text_chars": 550,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 137,
+      "printed_page": 107,
+      "text_sha256": "2ad34fc730e377bbf9f9ab53d643002e8575d4133ee584cd30407e0ca4ac810b",
+      "text_chars": 4136,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 138,
+      "printed_page": 108,
+      "text_sha256": "f096cfd7502f7d1b155b038d288a7762ab45940e879d8c774b0f21cabf2c6e13",
+      "text_chars": 5087,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 139,
+      "printed_page": 109,
+      "text_sha256": "088d86ad649b77b4bab11ba2694fabad480b9c5db11219cf49ef382c05ce48f6",
+      "text_chars": 5924,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 140,
+      "printed_page": 110,
+      "text_sha256": "53f62360080c4ca5b978337daabfcc93ac5662f4f0f56417f63b1689e0a78330",
+      "text_chars": 3549,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 141,
+      "printed_page": 111,
+      "text_sha256": "84c6b48bbc022403c9e42baea45f656896ca86fdb2c2020e709aa024455b0f39",
+      "text_chars": 4269,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 142,
+      "printed_page": 112,
+      "text_sha256": "c1b52980ee419b1d78a372f555a44c127cc210b25f6542a9ddf4cfb282479a3c",
+      "text_chars": 4716,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 143,
+      "printed_page": 113,
+      "text_sha256": "6304c36660eadfa4ff293e8f8755d1635ca18283977378e3a9d170624addf0ea",
+      "text_chars": 4913,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 144,
+      "printed_page": 114,
+      "text_sha256": "de5b01f01f1fe75f24234ebc62fb03ade8319f3ca5ad5da17773a417ee5cc596",
+      "text_chars": 4542,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 145,
+      "printed_page": 115,
+      "text_sha256": "6cb29a968a741c827b03e0ec1ca9869e02d54089b970b0afa597aea988c90ecc",
+      "text_chars": 5762,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 146,
+      "printed_page": 116,
+      "text_sha256": "648d845bb78f98c5e0234c2563b3d9a79cf5debe386fa66022f86296c0f3505b",
+      "text_chars": 5735,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 147,
+      "printed_page": 117,
+      "text_sha256": "a8e42eb263893a4d042dbd32807d0fa6db9fdf3e01e88b37272a21fb19c28c0b",
+      "text_chars": 6218,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 148,
+      "printed_page": 118,
+      "text_sha256": "59f804470c06438297b950587e53155c2f86ffd309d1149855a2c1005c1692b0",
+      "text_chars": 6784,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 149,
+      "printed_page": 119,
+      "text_sha256": "924b46c085ed993eed76eec3d3532062fe3fec1769c3b329c1b08c6cbf14e67e",
+      "text_chars": 5007,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 150,
+      "printed_page": 120,
+      "text_sha256": "74cf96dafea88b07952dcb4b33e4de9abe63cdc908312717086994628c86cd14",
+      "text_chars": 6811,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 151,
+      "printed_page": 121,
+      "text_sha256": "07448143c535f55424e7c8e7831c43621ac1f8de7159fe7762a5347aaf1ef199",
+      "text_chars": 6979,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 152,
+      "printed_page": 122,
+      "text_sha256": "afa4abd69f1d89a8f12ad11dde23e8da1e718297b945f1a9e5f2244c05df88a4",
+      "text_chars": 6203,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 153,
+      "printed_page": 123,
+      "text_sha256": "7bdaaf6bee51bc2efdacb40e007eac2bfc4a3ac34f6815524e7c403dfa7a9644",
+      "text_chars": 6396,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 154,
+      "printed_page": 124,
+      "text_sha256": "af9f0f026b5a973fbfdbac89e4d037bfb77478088f29fb5c0613b3bc61bc0498",
+      "text_chars": 7671,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 155,
+      "printed_page": 125,
+      "text_sha256": "69ab252443fb80c3c801b71e05036a3e158aa8bd4d14ab37316ca0561dbaf5ed",
+      "text_chars": 10373,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 156,
+      "printed_page": 126,
+      "text_sha256": "83aba9c84cb5d081a47aa8a5fc32356d93387f9257c47a512efb3d957b52a849",
+      "text_chars": 9235,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 157,
+      "printed_page": 127,
+      "text_sha256": "a1db538cfe447f393ddca049e628c2fe00ff8364a72c297230cb823001bb70c6",
+      "text_chars": 6527,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 158,
+      "printed_page": 128,
+      "text_sha256": "560431d8974ba582ada768dafa8acc1ffa41d66e6c15bf932e4f7256c989a953",
+      "text_chars": 272,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 159,
+      "printed_page": 129,
+      "text_sha256": "87448cba63994530ef901aaedc3ec40c86fdf4885229ddbcbdf01790070e1582",
+      "text_chars": 3993,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 160,
+      "printed_page": 130,
+      "text_sha256": "4b1e4828a164f2deff67c896be57d66bdfa72c937edd5131daa984b8560f7a20",
+      "text_chars": 326,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 161,
+      "printed_page": 131,
+      "text_sha256": "9729b04f4675187785232b5da3f8797a5be98cce92c34b8bd52562961fb8aedc",
+      "text_chars": 103,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 162,
+      "printed_page": 132,
+      "text_sha256": "557481681e27e9b55e3283cd83dd1689f37a75c02df97e6076c2b04c45cec371",
+      "text_chars": 5913,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 163,
+      "printed_page": 133,
+      "text_sha256": "08afe177f3544aac811e39516e21848688ec0227f3f8a706a604db4ee13f75e3",
+      "text_chars": 4376,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 164,
+      "printed_page": 134,
+      "text_sha256": "25f22976ea2fd0055cb6abde42084b424316babab3498182fda4d2713320c25f",
+      "text_chars": 2736,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 165,
+      "printed_page": 135,
+      "text_sha256": "05f147ecb727c53dd1e4f0aeba7c03d19b5b6416e3cdfe82e07d2ac3fca8426b",
+      "text_chars": 3426,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 166,
+      "printed_page": 136,
+      "text_sha256": "8a6415a17c0ee6371d18f3e455732b1514836e32c05283537d1ab70df9201a1a",
+      "text_chars": 2188,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 167,
+      "printed_page": 137,
+      "text_sha256": "75b3f32f8f1c6edcbef778efdbfca0aed03758c3bebf3312872fcae601758849",
+      "text_chars": 5734,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 168,
+      "printed_page": 138,
+      "text_sha256": "c3aacbc30d8449c8d6e548ea089301fa2e29fe40a06ea45c25a3726a0ca7082f",
+      "text_chars": 223,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 169,
+      "printed_page": 139,
+      "text_sha256": "5f2f6e013009c9e54b95d97da9d7e4cfeb93f49f7f0a02c627af825e66a5da0c",
+      "text_chars": 109,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 170,
+      "printed_page": 140,
+      "text_sha256": "5cccc29056b3f768513633c701435a8eba92844a751a6d0369656fafafea2cf6",
+      "text_chars": 3812,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 171,
+      "printed_page": 141,
+      "text_sha256": "ebdfc722f2d965ec8f98a334eb554055cff559a474259fc3beb80de2e20854bb",
+      "text_chars": 4462,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 172,
+      "printed_page": 142,
+      "text_sha256": "b7cda8f0fb58dfc55a4eb1f3fb0f9bb3768dc851d1f0edebd63a00e6217090f3",
+      "text_chars": 4601,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 173,
+      "printed_page": 143,
+      "text_sha256": "e3e4f6373ca35ea1e63e4c079eb5ce7deae07dd732e596a820121f875ac93b98",
+      "text_chars": 5470,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 174,
+      "printed_page": 144,
+      "text_sha256": "ff05be7c5ab28d108c480f0263264a289dc19452377fede4100d07aa85e2515f",
+      "text_chars": 6766,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 175,
+      "printed_page": 145,
+      "text_sha256": "b9fb273b44c8488f4062227e33b349fe2381ff93d7531bc57e2e7ab0721947d0",
+      "text_chars": 6882,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 176,
+      "printed_page": 146,
+      "text_sha256": "7d45418b417b26c33f807732e428fba011f759fda5d52fa969c8da87b84cf631",
+      "text_chars": 4823,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 177,
+      "printed_page": 147,
+      "text_sha256": "1511112025f2b13a3d67c6234901277eea38874192067db2efe43ee4a98eb67e",
+      "text_chars": 2295,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 178,
+      "printed_page": 148,
+      "text_sha256": "779ba0e38cf3df3e5bded42f9b8155eb8376e4c017ae1cfe118aa5d4bc12d382",
+      "text_chars": 2087,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 179,
+      "printed_page": 149,
+      "text_sha256": "f118ee63c9e7af6e8cfb972ece63ac9708abb1ec7362c2925aa1920992fc61af",
+      "text_chars": 2385,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 180,
+      "printed_page": 150,
+      "text_sha256": "ba0c2a1b4224da84cac6a8a1f48b88cd664ddb90abd14beeb431412013f42196",
+      "text_chars": 6215,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 181,
+      "printed_page": 151,
+      "text_sha256": "5f41cf45caa5c106983bb3298b5a65d575c69deabc67a54db90ea27561c9cba7",
+      "text_chars": 4508,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 182,
+      "printed_page": 152,
+      "text_sha256": "1b55299defa91dfdc53d43276e41cd03917cbd7ededda01bd642052f7ec73241",
+      "text_chars": 3437,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 183,
+      "printed_page": 153,
+      "text_sha256": "1ea44aeb76ec18f55fdab14746c0cff26333b30f6a8755e07d881b42b50a757f",
+      "text_chars": 4534,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 184,
+      "printed_page": 154,
+      "text_sha256": "212361f660f181fc49d65f65c13186e53dd9b09d323613f96fcf899000500818",
+      "text_chars": 4694,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 185,
+      "printed_page": 155,
+      "text_sha256": "4c08b2ee6490979bff7b33e0155571c3e00384093c443c76b09f7d82b06f67fa",
+      "text_chars": 4299,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 186,
+      "printed_page": 156,
+      "text_sha256": "942125f71262bc55b62633d66024c7bf432ded2cfd68f77280cd37f1dec8ea63",
+      "text_chars": 3531,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 187,
+      "printed_page": 157,
+      "text_sha256": "c20228e757e0aaaedb96381ea5f831ddcefa857668684a9edccaa793743cecf8",
+      "text_chars": 2067,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 188,
+      "printed_page": 158,
+      "text_sha256": "c2fdcd8d892f14624de2d942c9d8e9d8419a463fdd024a13702091b2c00b0593",
+      "text_chars": 3046,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 189,
+      "printed_page": 159,
+      "text_sha256": "8c75a3da1c56bcc31aafc8a7bd51200172cbb594d80087391b2d5a937c4947a0",
+      "text_chars": 5784,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 190,
+      "printed_page": 160,
+      "text_sha256": "4f2e4eaceab9afb6e2684762961882c2bdc0c81d668e6793f5f6ef9b2e0176a8",
+      "text_chars": 5142,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 191,
+      "printed_page": 161,
+      "text_sha256": "13dc685a23d588dcbdca99d8f3087292a5c2758c111c7a3e322c6ec04b9548fb",
+      "text_chars": 5027,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 192,
+      "printed_page": 162,
+      "text_sha256": "7b88fd1a04b21632e930538f5ef58b212e08f9756798fa08d5bf04a33ddabe26",
+      "text_chars": 3353,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 193,
+      "printed_page": 163,
+      "text_sha256": "e5531fa29713285551d28d97319e3597b5f60c118ffac8906ac9e2e9ed543bbf",
+      "text_chars": 5536,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 194,
+      "printed_page": 164,
+      "text_sha256": "2446d0c39e275008934fca76556a16c393d37f9633fbe68e88f8157b6a4455a5",
+      "text_chars": 8961,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 195,
+      "printed_page": 165,
+      "text_sha256": "22db9ed33b9b28b3aa1c29be8ee5a628e62417c4c0913df56a6b26b7c21b7522",
+      "text_chars": 10925,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 196,
+      "printed_page": 166,
+      "text_sha256": "d406f6529fa449f99f441c1a46001cecaa19410d0444ae821a2fd33ae4f7e1ef",
+      "text_chars": 10090,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 197,
+      "printed_page": 167,
+      "text_sha256": "408d12eb02494213368ecec2b7bc20745a4bebf0800922ee3c3ab9ef53ed2832",
+      "text_chars": 10478,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 198,
+      "printed_page": 168,
+      "text_sha256": "58dbfb57547e549349c489b8f613f6a526e31aa923aa2d5a925e9f58680aa325",
+      "text_chars": 10218,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 199,
+      "printed_page": 169,
+      "text_sha256": "d3ec13b5a1d8ef3f87f11bbfbe818ac45e0aa1266185701536b3ba39a0e5f99f",
+      "text_chars": 5676,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 200,
+      "printed_page": 170,
+      "text_sha256": "6ab512ac28b6cbb2e23c7a8f04ba3d905979251c916c216826e32dcb76776992",
+      "text_chars": 153,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 201,
+      "printed_page": 171,
+      "text_sha256": "6911c9d95d109365a64f64c8592b02626e502b3e3ea6253205db3c9b980569e4",
+      "text_chars": 5250,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 202,
+      "printed_page": 172,
+      "text_sha256": "6d89ddcf4fc81abec00c950e00118d1f1bf8e379e59355077eaf2f4a7ff88e7d",
+      "text_chars": 4120,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 203,
+      "printed_page": 173,
+      "text_sha256": "141e41f2afe787704fbb0d691a1c3088859aa9c61f4e831d4b689f8063334d67",
+      "text_chars": 5327,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 204,
+      "printed_page": 174,
+      "text_sha256": "822b8277ec8af21ce4c8ad87e66399177dc1007ba9c32ca5c5e1afab66ab1bc5",
+      "text_chars": 6927,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 205,
+      "printed_page": 175,
+      "text_sha256": "42865448ac8f8dcb38302b6403e400e9b7fdf30924e5a6d4519596b3484e4ac6",
+      "text_chars": 7152,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 206,
+      "printed_page": 176,
+      "text_sha256": "2700a53f743dbb69de48887eb4b09c490cee4ee1a6835341d8c24cbf9f0651a2",
+      "text_chars": 7078,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 207,
+      "printed_page": 177,
+      "text_sha256": "65d60cc086bc290c294b59e55bcb05933e7056b970fd2820d1edd23cd01ad6cb",
+      "text_chars": 7871,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 208,
+      "printed_page": 178,
+      "text_sha256": "b02bab82870bb15173f76491fd5049ff61ed12843158203f53d84d73509b305b",
+      "text_chars": 5223,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 209,
+      "printed_page": 179,
+      "text_sha256": "f58de86e4f7aeaa5f366c290aff5c8090ffbca7c669fb0192d5c00b497fd0498",
+      "text_chars": 4378,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 210,
+      "printed_page": 180,
+      "text_sha256": "84591d0df2047e52993d076908bf3e4ce923b5b26d1716ae40b2b71ccce1c585",
+      "text_chars": 4061,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 211,
+      "printed_page": 181,
+      "text_sha256": "5eabca34980a9c3d1abc194a516e14f1f0fc31fbad2ba2ac34afeeba493fb4d0",
+      "text_chars": 3051,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 212,
+      "printed_page": 182,
+      "text_sha256": "0d43794ec9c133d3689d7f32c2a71c9230640cf2f371a4dda75f241bf5661fbb",
+      "text_chars": 328,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 213,
+      "printed_page": 183,
+      "text_sha256": "26b77d975701b468677f24cb8ebfdaef499aa60ac4c42edfa9b6edb173891a72",
+      "text_chars": 437,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 214,
+      "printed_page": 184,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 215,
+      "printed_page": 185,
+      "text_sha256": "404abf63a2c2d44d3123b81e9012591844fe4b977a4640853130abf172efe14a",
+      "text_chars": 3319,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 216,
+      "printed_page": 186,
+      "text_sha256": "c5a8b4030275bcaef6ccc97c5d03fee598db277a2f1409f4624f88b51e3f8e4a",
+      "text_chars": 3583,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 217,
+      "printed_page": 187,
+      "text_sha256": "4144d1bc817943259a3386b7e8473fc45a62687d0166c2dcd8a3dbef111bbc4c",
+      "text_chars": 3094,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 218,
+      "printed_page": 188,
+      "text_sha256": "b79990c45924b13c1ac9a14838bf490ede8adf585c35a2f135abf9677a3c772f",
+      "text_chars": 7310,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 219,
+      "printed_page": 189,
+      "text_sha256": "de9e79c74d46d7b25d759d0d13c3f9d6792a27bb430f6e48c46d432cc41dc4b2",
+      "text_chars": 3170,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 220,
+      "printed_page": 190,
+      "text_sha256": "234f32c52ead69fb4fbb763434f5dc38d454a9575658ff45e25e7a87bd96026f",
+      "text_chars": 641,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 221,
+      "printed_page": 191,
+      "text_sha256": "c205bff6162e14aa76c316e111406fb523e4b7a0b1e8e5701c931158afe3cc7e",
+      "text_chars": 126,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 222,
+      "printed_page": 192,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 223,
+      "printed_page": 193,
+      "text_sha256": "0c4c80371b6393b59bf75c7346fee6b499c4132cb9fc1a0a5b7375158177a33b",
+      "text_chars": 5074,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 224,
+      "printed_page": 194,
+      "text_sha256": "703ef2d11d478db7d115c65c4376bd2052ccf65a322ccdbe62ea0c9ef4b9a7b8",
+      "text_chars": 4618,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 225,
+      "printed_page": 195,
+      "text_sha256": "2211839624a7d85c6a92e83cb1672d58dfe5c4a09bc2c31a090da103869cf786",
+      "text_chars": 2971,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 226,
+      "printed_page": 196,
+      "text_sha256": "99011b2ccb3ec98f9c274551055edbc733d07972f5d8a5c432a83c9529f1edd3",
+      "text_chars": 3536,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 227,
+      "printed_page": 197,
+      "text_sha256": "5a258c7656d31d891ea02b6a248085793a9af6218abd3ccb96d87c6a3277a389",
+      "text_chars": 4432,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 228,
+      "printed_page": 198,
+      "text_sha256": "b4a70146a8de0ca791618dd69cfc2c7fccea540095e0b65b6b4535cbc43be264",
+      "text_chars": 4564,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 229,
+      "printed_page": 199,
+      "text_sha256": "057e01409f70979c6c298bd1151ebe3856d15f6cae2b2a69992f610f68e0ac9c",
+      "text_chars": 867,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 230,
+      "printed_page": 200,
+      "text_sha256": "5f84f37c4d9ff64a2712394e9db59331449f63e031d9c49d66dbd655296221cc",
+      "text_chars": 1018,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 231,
+      "printed_page": 201,
+      "text_sha256": "2c54d1aed2222a0c6692556dacc094eb8958e68e777027aa944592283f80d3cb",
+      "text_chars": 4846,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 232,
+      "printed_page": 202,
+      "text_sha256": "1dc149280668da1b39beac35af232feb0e6ab329f87f4a267bb7b4ba3ffc80ab",
+      "text_chars": 6931,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 233,
+      "printed_page": 203,
+      "text_sha256": "5b31cc2007931d860b4f918940b42796e76d8ce68faebe1dbbcb5fb8fc69ac7e",
+      "text_chars": 7341,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 234,
+      "printed_page": 204,
+      "text_sha256": "28f3db98578dae00fb56f6d1076df360409b4a2a1a82e61e4d91e40b6ee6c629",
+      "text_chars": 7652,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 235,
+      "printed_page": 205,
+      "text_sha256": "ef7f602e9b964498ff41cfaba5ed6e631696f89511a70f1aa7509f641e5e8c8a",
+      "text_chars": 58,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 236,
+      "printed_page": 206,
+      "text_sha256": "71eee34590318a72f2a78c9af90097d100e7c3dc916061d05c65fb336493daeb",
+      "text_chars": 76,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 237,
+      "printed_page": 207,
+      "text_sha256": "6b2d31aedda602cf5a0540eb9b32ba1347a6193b104c539a0452ac4c44e1ec27",
+      "text_chars": 4055,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 238,
+      "printed_page": 208,
+      "text_sha256": "386b79bbe16e4db2f6e48b70dca3bee6b429d17318d369b7bb72f3ffc248194b",
+      "text_chars": 6689,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 239,
+      "printed_page": 209,
+      "text_sha256": "58e6380df224dae24735c71868fe1ff88076344c5c3d04d4bb6b3c42126c3ee1",
+      "text_chars": 7137,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 240,
+      "printed_page": 210,
+      "text_sha256": "73df75a8542876730ed1f1977e44751df2f7481a9851f3c48594a03c52110c93",
+      "text_chars": 6100,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 241,
+      "printed_page": 211,
+      "text_sha256": "00a7ceb3e1c16b5e66e8a8c16f04a88723e539672b32cf9dbac31489b78eea8c",
+      "text_chars": 6573,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 242,
+      "printed_page": 212,
+      "text_sha256": "580475b9122815f53542dc76a9c0de045c8aee3a21cce71a48933f528c7dde88",
+      "text_chars": 4337,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 243,
+      "printed_page": 213,
+      "text_sha256": "2d29cdae5a3bc17549da3b31b782f3e37e0aa9f0a06429ec95c491853137e13c",
+      "text_chars": 3918,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 244,
+      "printed_page": 214,
+      "text_sha256": "5177d14f7c1e0f7026c4d92d53dd2cf7cd1bfda44d7c7218823da9f99b3212c4",
+      "text_chars": 4703,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 245,
+      "printed_page": 215,
+      "text_sha256": "b94d2b1c188082cd049a7ff30d5056144cbd2c8b56a41b21d0c3e01057212778",
+      "text_chars": 3654,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 246,
+      "printed_page": 216,
+      "text_sha256": "85fead12ba3bc3f7fb2ded59cd574115e49fe7a3816f08ac0d11b98350183343",
+      "text_chars": 3704,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 247,
+      "printed_page": 217,
+      "text_sha256": "27355e65f73c88fc9c5fa7c7b366efd5ec8f58a892da8268aee22fe9494d4528",
+      "text_chars": 2514,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 248,
+      "printed_page": 218,
+      "text_sha256": "96335f9022796b187d907bf2e3053370ac7d275bbf716bbf98fe210e3c5e0d3b",
+      "text_chars": 8223,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 249,
+      "printed_page": 219,
+      "text_sha256": "09e1620f7b091d8bc726edd3c4690b1764f0e188a2ab9f13fe641d5d0cadf878",
+      "text_chars": 6564,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 250,
+      "printed_page": 220,
+      "text_sha256": "7272f658ad82be3588e59bd76c1d0a0eb0640c2912ab3130c1fcb5c07e1ef5f4",
+      "text_chars": 3082,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 251,
+      "printed_page": 221,
+      "text_sha256": "65e3ca5e970645a1ea667eb5acff12f5fb01b6b78e3eab4e002f9099743cd8a6",
+      "text_chars": 3881,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 252,
+      "printed_page": 222,
+      "text_sha256": "52a4e3a444330ee1be69c46addcac463bd645d36c6775bdd02396a3052e153a9",
+      "text_chars": 3840,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 253,
+      "printed_page": 223,
+      "text_sha256": "d9b0fd01e1c2a57963434652be4a5af869b17ebf7334206a5e12b6560a11cbc6",
+      "text_chars": 5139,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 254,
+      "printed_page": 224,
+      "text_sha256": "471cfe662500af119301fe6164c85889c0a0212759edb3c2d6a2f3c348d1a25a",
+      "text_chars": 6909,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 255,
+      "printed_page": 225,
+      "text_sha256": "b38528be2aec6bb0c8b913b1e01ead6878987ca49fb5840c2beacfc8d21e5b89",
+      "text_chars": 7389,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 256,
+      "printed_page": 226,
+      "text_sha256": "6ee0114e0acedd2d4af3dd6df0af364786cb61e6c33b30132525e156e4a166ae",
+      "text_chars": 6877,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 257,
+      "printed_page": 227,
+      "text_sha256": "d7786e626991e5688c5dc62bedffe63256f62b3fd3792683853bee6caba0fcac",
+      "text_chars": 6134,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 258,
+      "printed_page": 228,
+      "text_sha256": "45e8a2a7c337b6c3662c3cdc10292f0c6c90ad6c09194a4b89893e55029859e1",
+      "text_chars": 5597,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 259,
+      "printed_page": 229,
+      "text_sha256": "2df08a4b637396e6e5b3bf3c09077d8126500ba8b36adc902ddf949d976ff65b",
+      "text_chars": 6490,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 260,
+      "printed_page": 230,
+      "text_sha256": "edfbfea6f8d840d84e789d4d152ef16b8665119291cacb720a4a766155cd0b1d",
+      "text_chars": 6787,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 261,
+      "printed_page": 231,
+      "text_sha256": "2820e3a09693fa5cb34a437975fbfb1ea1e46502566be72a3914bed530ec4691",
+      "text_chars": 6426,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 262,
+      "printed_page": 232,
+      "text_sha256": "f0233aa737e3815d337dd40c166760b931de2cdf3c8197661f0010cb6704fcaa",
+      "text_chars": 501,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 263,
+      "printed_page": 233,
+      "text_sha256": "729e8f42aa80430e8d416ae92ff2f5c0b653c4a5dc2d7d49f030a175c40df203",
+      "text_chars": 5904,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 264,
+      "printed_page": 234,
+      "text_sha256": "9f49dc81de40c6ef6fa0e5fe81b95893f21e2a874e7a2303711ebab29e716a0a",
+      "text_chars": 5609,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 265,
+      "printed_page": 235,
+      "text_sha256": "664a9f359532b0a8eced672608a57886aaf2f1039246e65faf2885e341af0bb0",
+      "text_chars": 323,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 266,
+      "printed_page": 236,
+      "text_sha256": "533f5b0bc4298ecddfad1ac33f6eb7fa78f65df67ef748f5f43971cf73067d07",
+      "text_chars": 5583,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 267,
+      "printed_page": 237,
+      "text_sha256": "eddbeed74b64dbc3f74ade8b1b692fd80c1d38188dace9748be551cbf1768ca4",
+      "text_chars": 6654,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 268,
+      "printed_page": 238,
+      "text_sha256": "f054f237ea4bb7872c614ad69497070071bb66727a6f579853f2ae096e2041b2",
+      "text_chars": 2354,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 269,
+      "printed_page": 239,
+      "text_sha256": "450403cbdaca646ed0deeb33fc45b1ee270667ee5cb7e4ea2607afa248149dc2",
+      "text_chars": 6407,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 270,
+      "printed_page": 240,
+      "text_sha256": "f9a291cdf23870bcded34b4d8f79c774c8c1a0c2d866fdc5f054fb894ddc3187",
+      "text_chars": 6719,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 271,
+      "printed_page": 241,
+      "text_sha256": "e7162aaaccc38abd3917f4f08ae3cf50156eaca7564c49d800f76644c2d85f82",
+      "text_chars": 6675,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 272,
+      "printed_page": 242,
+      "text_sha256": "41ee68ae24a3e8e14bc16a8d33055cd88c6c3de796d1307eb08f7d218912954e",
+      "text_chars": 6928,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 273,
+      "printed_page": 243,
+      "text_sha256": "b01e99131629a413d95285858d91173faeeebb7ce3187f6b293bcd8eb8d8b07d",
+      "text_chars": 7028,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 274,
+      "printed_page": 244,
+      "text_sha256": "edcde663714399e95446e6c1cd28aeb00b319ddb66a351cc6cf1c5f4574cc73d",
+      "text_chars": 6724,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 275,
+      "printed_page": 245,
+      "text_sha256": "37c2cfb51929cf16f66155302472ee50eafae7ea028623475abae4f608cb1f78",
+      "text_chars": 7758,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 276,
+      "printed_page": 246,
+      "text_sha256": "1173114c15469f830fa4949cd351861e67fda6f06788e435e2c4648d6b20ba7a",
+      "text_chars": 6990,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 277,
+      "printed_page": 247,
+      "text_sha256": "c9f42be131e1ebe4cc0d4e4992f69337c41d13f4698c5b4a52086af3720d7bfb",
+      "text_chars": 5929,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 278,
+      "printed_page": 248,
+      "text_sha256": "eec44e3389d1a228b9000b5ebe00af7d38086befa503a0d367e0f0cc368163ee",
+      "text_chars": 7108,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 279,
+      "printed_page": 249,
+      "text_sha256": "fb52f9150cfe92cb411439c9114dba191c71ad437b5c5264e48b651585bedd97",
+      "text_chars": 7249,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 280,
+      "printed_page": 250,
+      "text_sha256": "dc8b3bdbbda89744d38b26df2dec0cf6a2f34849c954cfabc5f4cba6bcc762b0",
+      "text_chars": 5595,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 281,
+      "printed_page": 251,
+      "text_sha256": "1b178e3762e41159c7dc8d1cddf1fd56387599aad8c31c7fc4bbc95204d33d63",
+      "text_chars": 4818,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 282,
+      "printed_page": 252,
+      "text_sha256": "4e09bd1be2e0864591eacec553fb55aad2edac4bf7c4f8825c349fa7edfb6cf7",
+      "text_chars": 3441,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 283,
+      "printed_page": 253,
+      "text_sha256": "fb2614c25cdfaf76f7f0647c4b0051919ce6b3a1bb1f4ab53930b4036a2ef094",
+      "text_chars": 6815,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 284,
+      "printed_page": 254,
+      "text_sha256": "a524266351cbadb2d33c6a51ce57e61a2bae8581e3a5adbffec2f3ab6ae7c862",
+      "text_chars": 474,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 285,
+      "printed_page": 255,
+      "text_sha256": "06dd9aaa67f0e6dea65f599988c268642c042212d66dcf0cb0857b0e49d83886",
+      "text_chars": 357,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 286,
+      "printed_page": 256,
+      "text_sha256": "185e2cd14cfb8314ad205571ddbddc53dcefd80f5dd18a14fe52d4f51ebb13b4",
+      "text_chars": 291,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 287,
+      "printed_page": 257,
+      "text_sha256": "f922d27c8c3cf64bc74afa9248ed7803d0feafe11d80186d23d7d8d53fca0604",
+      "text_chars": 401,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 288,
+      "printed_page": 258,
+      "text_sha256": "a50d1df6954a606cc8c23111f3c581c5cad175334e3e725da057c8b7eeb0cfd7",
+      "text_chars": 6967,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 289,
+      "printed_page": 259,
+      "text_sha256": "df9e3616f74bb13191c48cebe8b8cf3c97e8a019c29db0765d51b0cab58ad6e8",
+      "text_chars": 5830,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 290,
+      "printed_page": 260,
+      "text_sha256": "2198ad08fa5ee892b34d193e580900ae1234039dff3b83fb0be2bad9c9b1d4cd",
+      "text_chars": 3355,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 291,
+      "printed_page": 261,
+      "text_sha256": "49e276b8e082eba00d351eaea13816bc77846a2c81cd438d70018abda8ce86c8",
+      "text_chars": 6384,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 292,
+      "printed_page": 262,
+      "text_sha256": "dd539bd71869589454c6967ba48df263e7e3c8261e555ef20a9f9ed0b19a15f9",
+      "text_chars": 7056,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 293,
+      "printed_page": 263,
+      "text_sha256": "922341f0aa098b50f5cec6e07032ad1c5cf8cea8802836b200109842cee3a20d",
+      "text_chars": 7154,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 294,
+      "printed_page": 264,
+      "text_sha256": "0c84902535ed9ab4c3d2b8f0cfe0186b94064baf940522638b121c12eaaf6b4c",
+      "text_chars": 7065,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 295,
+      "printed_page": 265,
+      "text_sha256": "2971ece08220774980c951f2be624d38455810676b8b6f225602e4974f86ce17",
+      "text_chars": 5948,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 296,
+      "printed_page": 266,
+      "text_sha256": "b97206b7fb5713a4a8716038ed73839f64f6058b9ddf8329ffb3d72acbf2396c",
+      "text_chars": 6862,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 297,
+      "printed_page": 267,
+      "text_sha256": "6d0dd3b037115d2c7a58dc010637b4d9b45881ba47d0653b230bc422184c8cea",
+      "text_chars": 7249,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 298,
+      "printed_page": 268,
+      "text_sha256": "fac8de5615a3b58587dfcfb2fac9d93e1d3249d37a401a62de712d4b42b1cefe",
+      "text_chars": 4897,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 299,
+      "printed_page": 269,
+      "text_sha256": "113bbac84b6c9854e9e4ed847d74ea6e86751fa42059344f6cccdd4109411d78",
+      "text_chars": 4323,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 300,
+      "printed_page": 270,
+      "text_sha256": "f777ec89ba0d641c8b624d9a5b0d0635fe4e0dc09b149b66ab595e5fe10be095",
+      "text_chars": 3020,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 301,
+      "printed_page": 271,
+      "text_sha256": "b6f5ec51a70e9f6c17357d455192ca9b46cd2455ce094da92f91b706d3b4ed51",
+      "text_chars": 2705,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_middle_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 302,
+      "printed_page": 272,
+      "text_sha256": "49f0c5a43b0c49aca2d161a2b4169f59b5a0f7b200cb9d42ff20fd0f3f63e660",
+      "text_chars": 7666,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 303,
+      "printed_page": 273,
+      "text_sha256": "52753f75a7aa0001461539ae785a017305e98869eb931b9188b2928b19b61101",
+      "text_chars": 10927,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 304,
+      "printed_page": 274,
+      "text_sha256": "54435ee0dcd9e661e4cc8ec5f22bec4dc0dbbbaefc52e12894c5b23fb14ad856",
+      "text_chars": 10976,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 305,
+      "printed_page": 275,
+      "text_sha256": "ff64c53c0076ab2fa23dd023ef316935649553c368ad9a0f14c2573b7b073cf8",
+      "text_chars": 10777,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 306,
+      "printed_page": 276,
+      "text_sha256": "bcf1829b665b716e987240998f6a89aac246e0297effcc94661f147e9794f4ce",
+      "text_chars": 9392,
+      "text_read_receipts": [
+        "qumran_middle_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 307,
+      "printed_page": 277,
+      "text_sha256": "2500059e9886e5946f3f8461cc29d9e101175d1f4ce48f8d1e3f282cfc340db7",
+      "text_chars": 4291,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 308,
+      "printed_page": 278,
+      "text_sha256": "6767907fbb8597c04e65716b06d58e792d81d16df570d032a6c63e45eadf8376",
+      "text_chars": 454,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 309,
+      "printed_page": 279,
+      "text_sha256": "c09abf44e301bf9009540e65cd067f9fb8ca605392aea70efbcb52afb82e4673",
+      "text_chars": 725,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 310,
+      "printed_page": 280,
+      "text_sha256": "3cd4fc81e1911d79ac4f3322ee64f39f41c708d5ec64c16e8eae7e02796260a4",
+      "text_chars": 2653,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 311,
+      "printed_page": 281,
+      "text_sha256": "1cd051c4b5ea8fdef9b64565b63c57111f454b8c0e6422f0f4c6f92ab9ed5cb4",
+      "text_chars": 5323,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 312,
+      "printed_page": 282,
+      "text_sha256": "537e3a911763554ab387efee8636cbd8b857317011e916ab21f5cd6c12168fc1",
+      "text_chars": 2532,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 313,
+      "printed_page": 283,
+      "text_sha256": "4255c651ed537c69ed22273e793003d8c2bc8272710fda0882d036b91459bd4b",
+      "text_chars": 6683,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 314,
+      "printed_page": 284,
+      "text_sha256": "52e1fa599855ce9f6ea6a9082499e0bceeb0b9b1b88f4c5d7e3bfa4909253317",
+      "text_chars": 2978,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 315,
+      "printed_page": 285,
+      "text_sha256": "87b0899c63af186c340ee39a7e8bde6680dd19f4d823a8f46785217433620a2e",
+      "text_chars": 2813,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 316,
+      "printed_page": 286,
+      "text_sha256": "21ad994d789827bbd1ef19953772b2c8dc81f4ae3fe29ddf91344eb5cfef47cc",
+      "text_chars": 6478,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 317,
+      "printed_page": 287,
+      "text_sha256": "a4d98c105fc894fd7a90f130bc101290f0dd392d3a5ac3056f0749a7ad051d41",
+      "text_chars": 3556,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 318,
+      "printed_page": 288,
+      "text_sha256": "dc64bc5e9a5c60eb3135a32e5bdd3b296a10b3f86de57f4269749505c370a310",
+      "text_chars": 4674,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 319,
+      "printed_page": 289,
+      "text_sha256": "53ddf2f7738bb362205485b27caee9b5ab833f51b29573e249423afcc7fb8fb4",
+      "text_chars": 64,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 320,
+      "printed_page": 290,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 321,
+      "printed_page": 291,
+      "text_sha256": "924b5f2386cecf5e579113db8dfb727827a48a650061e6ba5750c303bdbed2f8",
+      "text_chars": 5207,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 322,
+      "printed_page": 292,
+      "text_sha256": "ebdfe906e767e3144c9fd51800008ffabccc027eeae50bc91d9b648b093c6d3a",
+      "text_chars": 5069,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 323,
+      "printed_page": 293,
+      "text_sha256": "cf0e97dda08e0227bfb85598d07e50fd02fc7e66c14c5048f7ab26dac650d1eb",
+      "text_chars": 1541,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 324,
+      "printed_page": 294,
+      "text_sha256": "964e4fe0e38aa5d25556cc80e5395a7d4201043b9461e98f49602e7d25473db9",
+      "text_chars": 3414,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 325,
+      "printed_page": 295,
+      "text_sha256": "7a86e830364f54ef39f5b951562035c9eb4a61ecad7ee08fcd7935acbc1a889d",
+      "text_chars": 1296,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 326,
+      "printed_page": 296,
+      "text_sha256": "2f6bfd8a04bca894cca673f55ea333acba543e3832e6db434dcad646a60d2627",
+      "text_chars": 2253,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 327,
+      "printed_page": 297,
+      "text_sha256": "a6e8f39a57096c7ac9e17c78570d3da49ad3b3bacdc2a63d1b844338754c5422",
+      "text_chars": 2965,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 328,
+      "printed_page": 298,
+      "text_sha256": "20c8ee65345e9ffe1b8fe5d2c3c3ba1f90709d7a4af1a01b42b0efface8e40d1",
+      "text_chars": 71,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 329,
+      "printed_page": 299,
+      "text_sha256": "7a586e529817b7e392878f2a03f8d1b6d083e401872038c20ab868f575c89e3d",
+      "text_chars": 146,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 330,
+      "printed_page": 300,
+      "text_sha256": "a866218babef8aac100af6ef00703d11389fedf905e80775fbfc92a29f2d67d4",
+      "text_chars": 184,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 331,
+      "printed_page": 301,
+      "text_sha256": "b4bd9dd04cd5287d74eeaea8d119fada4d31f34f982a6240623cec916a7c0d8b",
+      "text_chars": 4549,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 332,
+      "printed_page": 302,
+      "text_sha256": "4a9c1341df48fe74c689348241f0010c5e7668a50e6a8a8c5b74f55326b78d88",
+      "text_chars": 3660,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 333,
+      "printed_page": 303,
+      "text_sha256": "210f817f989dd5e4e1a4b366fd19f356814a2129277d27f61d38bb7179a00500",
+      "text_chars": 86,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 334,
+      "printed_page": 304,
+      "text_sha256": "02ece970d82f7386ecb3785692202a4560cc24ccaa3094548a437e5f2107e9a2",
+      "text_chars": 7267,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 335,
+      "printed_page": 305,
+      "text_sha256": "9e57e05e1660950a279d0c5b68bc63fcac2f6d88b5204b1c33a88f6c7c1d0685",
+      "text_chars": 1860,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 336,
+      "printed_page": 306,
+      "text_sha256": "7052403afbbe042aef8d519c1a44051d8df38328fc21f522f8e84fea0102c0e0",
+      "text_chars": 1757,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 337,
+      "printed_page": 307,
+      "text_sha256": "41cb44de8f987e98c87f07c500438b4845d4dd8186d53a796869fbd4e4e972c3",
+      "text_chars": 1811,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 338,
+      "printed_page": 308,
+      "text_sha256": "bfb8c9c5468ecd7a02398c306b6b6aa0294901a80365d34afdb70e971b03beff",
+      "text_chars": 3884,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 339,
+      "printed_page": 309,
+      "text_sha256": "de46f11e40c03d40a80eb8e9c64349b6845f92c6da76ba8e613b2e9b26567be9",
+      "text_chars": 274,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 340,
+      "printed_page": 310,
+      "text_sha256": "0a2654eb86c6f4cf205b434ea758506495121355719306813b9e98041b897741",
+      "text_chars": 6847,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 341,
+      "printed_page": 311,
+      "text_sha256": "dd8c374d1797597409beea0aafebec52da996d3bc7c6f5c34a6c1d58fe54ac61",
+      "text_chars": 213,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 342,
+      "printed_page": 312,
+      "text_sha256": "3a069245a08e4d6428b830d66bee0c9cde3ba5dbcb472debcf065bae789ae7e0",
+      "text_chars": 1657,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 343,
+      "printed_page": 313,
+      "text_sha256": "5db16b95a640cf44b82016a58bdfc995fb7458e1ec4d34429bcb1af9fb0ab124",
+      "text_chars": 2227,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 344,
+      "printed_page": 314,
+      "text_sha256": "cc11175627d936b22b85236abf1ce27aa02b24a804fc4a7ba4cdccd0a30a4a61",
+      "text_chars": 2675,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 345,
+      "printed_page": 315,
+      "text_sha256": "6bd901e282813351790a691bfc6a1ff39e06729c4ad4fbd4ea3fef470d1a0aea",
+      "text_chars": 109,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 346,
+      "printed_page": 316,
+      "text_sha256": "44cde29a77131429fb73de09e9a6146020d769200bd4c538afcbff0847ecd810",
+      "text_chars": 6080,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 347,
+      "printed_page": 317,
+      "text_sha256": "45989ec8f71bbb4371a4c8805aa149a2dd1e2f2cb22a2ccdc7fa3e63b414a4e8",
+      "text_chars": 6503,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 348,
+      "printed_page": 318,
+      "text_sha256": "3ede9397f07c82b411b16812bad931feab5ebbece2e2543885431f480e19ad39",
+      "text_chars": 12116,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 349,
+      "printed_page": 319,
+      "text_sha256": "926b08ca850a8de74ac5c249cba4055d5516221ed8fa4af25a07fb3593599f04",
+      "text_chars": 9683,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 350,
+      "printed_page": 320,
+      "text_sha256": "1a19509b57dc84b7cb58a1f0f864a2362f3d192a4707f70ac77ae4d6b9e378c8",
+      "text_chars": 3733,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 351,
+      "printed_page": 321,
+      "text_sha256": "af79a7722cda55671c9d198752cab014f6d7e35826a391df95fe4ab888177840",
+      "text_chars": 4755,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 352,
+      "printed_page": 322,
+      "text_sha256": "d25020049f31b4d5fa49f81658f0e224a52ffe7b285b5c427494ae502f0402b3",
+      "text_chars": 6629,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 353,
+      "printed_page": 323,
+      "text_sha256": "7608dbc703b2bc7f7d9a0c83092bf932b432207db237fa33f2509f054eb6d224",
+      "text_chars": 602,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 354,
+      "printed_page": 324,
+      "text_sha256": "a3f24dce736dca335ea34f71b48a0a86b82ef0303b83726ee1d0739b690d4a49",
+      "text_chars": 3900,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 355,
+      "printed_page": 325,
+      "text_sha256": "7060cef3e4b19c48d4d1bc226b90559fd78875e652e4d7246858399863f04de7",
+      "text_chars": 6512,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 356,
+      "printed_page": 326,
+      "text_sha256": "2e70163d839fde711be1210e7649c0a96a1750271d2cb06a47434469af26a5e8",
+      "text_chars": 4414,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 357,
+      "printed_page": 327,
+      "text_sha256": "b5b7fd1c7c0cd6ecccacffdd844738d54802296a1073c1a51de498be1a4db063",
+      "text_chars": 5073,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 358,
+      "printed_page": 328,
+      "text_sha256": "2502b3a314346db50b39926ae4595931c5a1e57f04b42e38732eec426ff2235b",
+      "text_chars": 233,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 359,
+      "printed_page": 329,
+      "text_sha256": "ae836a7e069949ce0fb44612fde29879eea24f041c6d96b3149254ac24549a47",
+      "text_chars": 5739,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 360,
+      "printed_page": 330,
+      "text_sha256": "4e1dbb0e936e0538257ebd97d1d1161c8362f1e7641697e747ce49f4d05bab55",
+      "text_chars": 818,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 361,
+      "printed_page": 331,
+      "text_sha256": "43acd8246449ed3d4a82b5178cd4559595955a53ee0249e0ab5f840ded2d71e6",
+      "text_chars": 5976,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 362,
+      "printed_page": 332,
+      "text_sha256": "85151ed00d006a70148b2f13275555248db58cf1941d92baec9bbd773a62d743",
+      "text_chars": 1863,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 363,
+      "printed_page": 333,
+      "text_sha256": "16332304f189687b3b4c0a45160a656e85a7bfd4cb85449ae6be9ee2c7a23fec",
+      "text_chars": 6508,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 364,
+      "printed_page": 334,
+      "text_sha256": "5f76e2c61c4833775be8731d26d4c6ca1adebcde9ac1c82b0cca82b5c3528f6f",
+      "text_chars": 6810,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 365,
+      "printed_page": 335,
+      "text_sha256": "12d39b87f2e388c07e94be81d960709ca90cc10955da1130231fcf57a5279f5b",
+      "text_chars": 6855,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 366,
+      "printed_page": 336,
+      "text_sha256": "b002ad05de7558f5b79625b5bcd1ab297510ccbf4ab7235f0ee53e23c9b8beeb",
+      "text_chars": 6751,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 367,
+      "printed_page": 337,
+      "text_sha256": "3e43e778e743e3c4d51cd431ff550f4013edea028bcf71970befea11e872e271",
+      "text_chars": 6485,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 368,
+      "printed_page": 338,
+      "text_sha256": "d83faba6cda1f44ca94b52ec3360fa9b10737dab2142c22db0be3f82e16cf13a",
+      "text_chars": 229,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 369,
+      "printed_page": 339,
+      "text_sha256": "d659e53bc5456f5f2b8602e1d2d36ef18732f1a8371f483b199fb4a697fba8d8",
+      "text_chars": 61,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 370,
+      "printed_page": 340,
+      "text_sha256": "7d74df8b224642974dcde223e9c690cacf5ddbd91520fbc24889bdadb6532b24",
+      "text_chars": 45,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 371,
+      "printed_page": 341,
+      "text_sha256": "4e1b8ae14c59024785ab481576c4864a8df0d62d51050b12908094dc41d1591d",
+      "text_chars": 2506,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 372,
+      "printed_page": 342,
+      "text_sha256": "f251183e8a07ce92cdde8603396a18d74e9e48f4f94ba42b6e8e22d4dcdf4426",
+      "text_chars": 4084,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 373,
+      "printed_page": 343,
+      "text_sha256": "49cdcbf4d8ff430e36cb9482077b6cf5d8806a56cad639cfacc7778d96f01113",
+      "text_chars": 2145,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 374,
+      "printed_page": 344,
+      "text_sha256": "debf7d7037875c7a8d64106c2d6a2ed0eeec16d557a41329e43d47d4eaa5acc9",
+      "text_chars": 2931,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 375,
+      "printed_page": 345,
+      "text_sha256": "6712614d2c636cddac6290c05895b72836d06c99675a10bf71e6968f43e310d4",
+      "text_chars": 2614,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 376,
+      "printed_page": 346,
+      "text_sha256": "25505ca8a067648cdde91c73634535e471c7c67dd821aefdeadc0d78d1252688",
+      "text_chars": 2308,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 377,
+      "printed_page": 347,
+      "text_sha256": "f628a20be7fc49031110626b0a7281353cfc00b68d343f2d25eea094dcc938ff",
+      "text_chars": 1697,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 378,
+      "printed_page": 348,
+      "text_sha256": "3dafe324a4a14bc88a2828c8d338cb68dcc367e41ee1d43e3a2a8823e50786be",
+      "text_chars": 2426,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 379,
+      "printed_page": 349,
+      "text_sha256": "43218a1444de1856384861773ec316c1e17a8ae57d931625310e9846451898f0",
+      "text_chars": 1686,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 380,
+      "printed_page": 350,
+      "text_sha256": "20cea5f99aff1f308d59de8603b03c7bf1c3e9a26181dee6c8b7e825a612352d",
+      "text_chars": 2155,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 381,
+      "printed_page": 351,
+      "text_sha256": "355e60010cb2f3011cc1f6f7a9be7bd54fd6f8fa521b0b7aa4c9cd0ff0528bcf",
+      "text_chars": 2679,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 382,
+      "printed_page": 352,
+      "text_sha256": "36c8f5f3b673dd68a3ef0b7fcff99d6c04ef0c0cf45041e6d4ca7f1fbdd91a0c",
+      "text_chars": 1687,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 383,
+      "printed_page": 353,
+      "text_sha256": "7f8d999dfb31af6bb6e2e55e6945e73ad405e4bed5939a2db22d77ded1e68f41",
+      "text_chars": 3463,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 384,
+      "printed_page": 354,
+      "text_sha256": "23bb8e56daf39f2b93acb6e5ee11687f0908e58beec5097de930a54c6d0ae1f8",
+      "text_chars": 3131,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 385,
+      "printed_page": 355,
+      "text_sha256": "90181b42f4360e34dbb9c3a2f191428713aa45d8d9c6686cf26144afd6c2eb48",
+      "text_chars": 1516,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 386,
+      "printed_page": 356,
+      "text_sha256": "7efa4c3c0d03f3dfcdfaa76fc0ec9e5baacadf26bd4564d09f330261759b6f6b",
+      "text_chars": 2563,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 387,
+      "printed_page": 357,
+      "text_sha256": "873a7a8ddf3983c3d05701af1f86f7cf86666d2c5cd4e6d0bdcf8e1ace99917a",
+      "text_chars": 2844,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 388,
+      "printed_page": 358,
+      "text_sha256": "1670bd4938e827d1b82caec56c7f689ee77464532052e563a989600375ff3b3e",
+      "text_chars": 2385,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 389,
+      "printed_page": 359,
+      "text_sha256": "e5dd922467c7e1953521b10b813358af4326bc5be5a40322af390440cfbb95ad",
+      "text_chars": 2167,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 390,
+      "printed_page": 360,
+      "text_sha256": "3f649d71fae6e1780dd67eb09850707e2451334539f4e363bb9fad9bde05cc63",
+      "text_chars": 3135,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 391,
+      "printed_page": 361,
+      "text_sha256": "156922c3c3cf9233abe4e424acaf323f7f9bc3308db53459c80ddc185d1c1739",
+      "text_chars": 2847,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 392,
+      "printed_page": 362,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 393,
+      "printed_page": 363,
+      "text_sha256": "838cf61f2492857981a47f90b51f05b0362b32048d865ef4d9c363bcf03fed58",
+      "text_chars": 2151,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 394,
+      "printed_page": 364,
+      "text_sha256": "e418fbc1c245a75f73d4fe2665b6d6baf434ed8723c693ebaadef153fb999390",
+      "text_chars": 3210,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 395,
+      "printed_page": 365,
+      "text_sha256": "b79481063b7f723d14fbd7ab98a55592caa4ea51ae2c2abfeedf3d130ff0f790",
+      "text_chars": 2553,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 396,
+      "printed_page": 366,
+      "text_sha256": "9fba206ac97f5ef52129fd4584054a9c88190ef23dbaf0911647596c77a3bb72",
+      "text_chars": 1659,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 397,
+      "printed_page": 367,
+      "text_sha256": "484023576d5f3b37f23b9baf16f5cca27d0613dfafa67acd0d833e98f72049ed",
+      "text_chars": 2917,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 398,
+      "printed_page": 368,
+      "text_sha256": "7c844b2a104e02fb29df721d9d9027961714a136a00b539c8ddca1c300fe05fe",
+      "text_chars": 3297,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 399,
+      "printed_page": 369,
+      "text_sha256": "7d479448ffc0dec537eaf583f566b65320cf087b9fdc408bbadf14cd5c9c9c0a",
+      "text_chars": 2376,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 400,
+      "printed_page": 370,
+      "text_sha256": "840d45640af0a27d807b387139049c04084d7dfce88961a182828f952a04ed75",
+      "text_chars": 1339,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 401,
+      "printed_page": 371,
+      "text_sha256": "38e4bb4ec74d75e5618e7eafeb5138669ae32c91d7f72ef65fbfcf424d84c1ae",
+      "text_chars": 1796,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 402,
+      "printed_page": 372,
+      "text_sha256": "9fc620eaf58812dc3d27f9757e12e6db2273ec10f82ca91b74e60e7088fd3933",
+      "text_chars": 2469,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 403,
+      "printed_page": 373,
+      "text_sha256": "f11b790516209a71b067d85b535f194eed77f7d0f119abe85c947883dffc35eb",
+      "text_chars": 2491,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 404,
+      "printed_page": 374,
+      "text_sha256": "d55a3ce5825012e1488bd46568e3c103fd133937a567dbfaea6af567be421fcf",
+      "text_chars": 2261,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 405,
+      "printed_page": 375,
+      "text_sha256": "bb5ab9e49c7cd724d9fe32a7c1f0bc318da786b4d320ed44c4997fe6a1d7793a",
+      "text_chars": 1712,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 406,
+      "printed_page": 376,
+      "text_sha256": "520113876be6581be4168f220251e9d41a9dd07902fb72ec2fd0bf3e6d5fbac2",
+      "text_chars": 2734,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 407,
+      "printed_page": 377,
+      "text_sha256": "e9f5c0de9a8e45f5dddf6d8c850b0f6a24effb75e3b935f53238f2fc7410be71",
+      "text_chars": 2056,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 408,
+      "printed_page": 378,
+      "text_sha256": "7c8f9f188675880d00532a4d2b3f0303a4db0ac80c975765ccfd9124beb58a38",
+      "text_chars": 3422,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 409,
+      "printed_page": 379,
+      "text_sha256": "6fc023c10d3f8387bca6bf6e9d5f47085dd28e725054a16a71eba7958fc57caf",
+      "text_chars": 2320,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 410,
+      "printed_page": 380,
+      "text_sha256": "01bc3c87153c5c9768abadd2086b833881be33b31c30d83f82908dfaa1bce6c2",
+      "text_chars": 1346,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 411,
+      "printed_page": 381,
+      "text_sha256": "38be3cc8e04eff72ebf596b5d353dfb9f6a5fafdfc1e204d62afecd911c177b4",
+      "text_chars": 5886,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 412,
+      "printed_page": 382,
+      "text_sha256": "f9ab14cf92afc1a5149529e3b9ce020c11d08891407d7a4ba113aa1c58dc9323",
+      "text_chars": 6484,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 413,
+      "printed_page": 383,
+      "text_sha256": "d2aae6e345a4d9e1ed54785cc6438a14482f4ff3f68422278b5b87fea4692234",
+      "text_chars": 6574,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 414,
+      "printed_page": 384,
+      "text_sha256": "74829bb159b79c7af4b30ef67965b1d28ee929236f562913391359d8470539cf",
+      "text_chars": 3195,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 415,
+      "printed_page": 385,
+      "text_sha256": "99a13e429ea169e53df07e5a9ca4dfef1ce02b50ac6ab590e125e50117f259e7",
+      "text_chars": 1422,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 416,
+      "printed_page": 386,
+      "text_sha256": "ee7a8acd0077cda99a77637652a11efe4b1a61c6cb5d9c47f20eeb380892d3a4",
+      "text_chars": 11167,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 417,
+      "printed_page": 387,
+      "text_sha256": "5dbea47a94d643bd9059b139e635e48a867c00b73723beb08fee3d083bad4e4d",
+      "text_chars": 11224,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 418,
+      "printed_page": 388,
+      "text_sha256": "ed47605caa0e72c3f4d394856a7e3f195dd114fcde993397233ce793b88ba59e",
+      "text_chars": 8852,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 419,
+      "printed_page": 389,
+      "text_sha256": "9e79db7240e95770fd37695640c0eb1cd1da69302229ab3f1a79570880a10a24",
+      "text_chars": 4444,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 420,
+      "printed_page": 390,
+      "text_sha256": "f8c3fce22f181ca9f087352a0d52be4b5192837693e0ede166d24d513e417262",
+      "text_chars": 3513,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 421,
+      "printed_page": 391,
+      "text_sha256": "2d425969092940c5f94c4a14093b83fd0aa5c63825da48db71ae2f43b8333f4d",
+      "text_chars": 5560,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 422,
+      "printed_page": 392,
+      "text_sha256": "7d30eca4757c47487f0e7dffa90a90c0945737ad6d856f3505081cb9397178d6",
+      "text_chars": 5362,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 423,
+      "printed_page": 393,
+      "text_sha256": "6c5154b26399aca45891f936ae80f515e1d007bfab2bac47dd4f21fc187858ae",
+      "text_chars": 6178,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 424,
+      "printed_page": 394,
+      "text_sha256": "577a8fc661f810545fb95438036361173c057fb1b742129421d5966d8ff888dc",
+      "text_chars": 6914,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 425,
+      "printed_page": 395,
+      "text_sha256": "95edefd3d11a7b5a00e3510c1a38dc1e156c8fd7b68dda0782c4cab5feaac6d1",
+      "text_chars": 75,
+      "text_read_receipts": [
+        "qumran_inscriptions_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 426,
+      "printed_page": 396,
+      "text_sha256": "381ff725dece5a2d10605e127fd510e8d648a7e2b7f3baa9382cdd206a392238",
+      "text_chars": 106,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 427,
+      "printed_page": 397,
+      "text_sha256": "5004255a666df205866822d0664346fd7247d838220bd293d8f7362318a5f729",
+      "text_chars": 3389,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 428,
+      "printed_page": 398,
+      "text_sha256": "109c73b77f4a78c3975e8e485b47e9ddd16aa402117152d1b634ca801f1b35f6",
+      "text_chars": 116,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 429,
+      "printed_page": 399,
+      "text_sha256": "874118e30cb69310c79be58052be40e5b8c45c4ceb9446e1d1a9af1fd41a2f1b",
+      "text_chars": 132,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 430,
+      "printed_page": 400,
+      "text_sha256": "06b3c951b4d6634232c30c796a47422d00c2097e31a04b8d903efa72965bcdfa",
+      "text_chars": 3357,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 431,
+      "printed_page": 401,
+      "text_sha256": "9cec9faf1527e92c7f9d1cb96338aebcb4af04f1881cb45cacedb600a742b1e2",
+      "text_chars": 984,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 432,
+      "printed_page": 402,
+      "text_sha256": "780273a699c30353b25c3f339cc3ac296aefb7d32027a6da14976c957e157fe4",
+      "text_chars": 3481,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 433,
+      "printed_page": 403,
+      "text_sha256": "55d54ed8efdf0ed8349cfeb65c1f3cc330be8f0b8a67c7cece79536c3985bcbf",
+      "text_chars": 3302,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 434,
+      "printed_page": 404,
+      "text_sha256": "777571be8c17bf541a774572de17671e455f414371f948f186bf8a897d9c78d0",
+      "text_chars": 4358,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 435,
+      "printed_page": 405,
+      "text_sha256": "8910108fbc9d051fbc777a2c4386f4fc6d965b58b2ac8cec2521437b42751acc",
+      "text_chars": 5609,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 436,
+      "printed_page": 406,
+      "text_sha256": "bcf07fd999eab0d49879d018a1374e951f6cfa05dd258714b6ecfcf0237ef990",
+      "text_chars": 1249,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 437,
+      "printed_page": 407,
+      "text_sha256": "14f0f6c95f44052692314c5963aac8643c22e57482a2777fc2b276a4f9d84b72",
+      "text_chars": 70,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 438,
+      "printed_page": 408,
+      "text_sha256": "a4519af8a50f46263107827229d5542e2fa03a5c9add753378457a1aec003bb3",
+      "text_chars": 51,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 439,
+      "printed_page": 409,
+      "text_sha256": "367a42cfc1c9378957a5a4c59964b4d346bb6965985b154a8fe0d9534386ec16",
+      "text_chars": 4670,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 440,
+      "printed_page": 410,
+      "text_sha256": "809f534c29e7cec744e9050f1547db19a32c2677d332e53d900aab15cb9d7252",
+      "text_chars": 6865,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 441,
+      "printed_page": 411,
+      "text_sha256": "1f8749b5dbdf2f44d412aa9ef27d24c73ed27fad214467f2289963bc01b0c2a5",
+      "text_chars": 8016,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 442,
+      "printed_page": 412,
+      "text_sha256": "2ea6480a991fd68817f260d9c6ed7d5cf70a01e84f9f0719621db87214307d15",
+      "text_chars": 8668,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 443,
+      "printed_page": 413,
+      "text_sha256": "9811210290863b0261faf426a7ccc3fe3419c0ff17ce59a8e709efeb999fb454",
+      "text_chars": 7077,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 444,
+      "printed_page": 414,
+      "text_sha256": "4717156684e6c102fdf0f6976cd1fc0760e03b465091331bb53c87dcd660e6e7",
+      "text_chars": 2436,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 445,
+      "printed_page": 415,
+      "text_sha256": "d810390739de821edd466de6620bb756986f373d06f859c701a1cf6668d21eeb",
+      "text_chars": 2581,
+      "text_read_receipts": [
+        "qumran_ib_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_ib_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 446,
+      "printed_page": 416,
+      "text_sha256": "5d6990e540ed05bbdb20ae6084bfa7e06608f13b13d805f49985444b0e5bea52",
+      "text_chars": 166,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 447,
+      "printed_page": 417,
+      "text_sha256": "e401c5d15d77d24733e5b6e1dca62b79fcd0f4ca0ae1036fbd47a797c1d5aa5f",
+      "text_chars": 153,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 448,
+      "printed_page": 418,
+      "text_sha256": "88dd63834e3d20f873922a17e3f247e1836d66730ce2ca392cddac9fba446b8b",
+      "text_chars": 75,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 449,
+      "printed_page": 419,
+      "text_sha256": "274892dbb7ddd5caca16005bef50c1fa1b692f44772992d4222e79111f482cac",
+      "text_chars": 5108,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 450,
+      "printed_page": 420,
+      "text_sha256": "fedb575a0965a2cd5b6fc7174b69cc2fb79b5cd2781738ec71f41bea1a634601",
+      "text_chars": 7363,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 451,
+      "printed_page": 421,
+      "text_sha256": "85439a96e081d7c57abe06c14aa276172cee15ac3d4d6e7b27c0274c20027325",
+      "text_chars": 7368,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 452,
+      "printed_page": 422,
+      "text_sha256": "59c56e4b66291feee4f02cef1ab5500d2d6f47e51cd4f4ac8d3269903b30fc76",
+      "text_chars": 7320,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 453,
+      "printed_page": 423,
+      "text_sha256": "515394aee0e792e5caec698cb98a948ca5123475d3d6a93381a99c92aac5d83c",
+      "text_chars": 7479,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 454,
+      "printed_page": 424,
+      "text_sha256": "0ec27e1ed3983b81e792c8f3191c4afbff0651a76673feac323c27d055d89ae9",
+      "text_chars": 7238,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 455,
+      "printed_page": 425,
+      "text_sha256": "afdae5b0e5601383ea459c994c682f3f32848b898323a2b75b42f6762c05dcca",
+      "text_chars": 6174,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 456,
+      "printed_page": 426,
+      "text_sha256": "590e0052fc07afa83111d252ff10a9bec3940dcda184e59885c2abeeb73debd8",
+      "text_chars": 7298,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 457,
+      "printed_page": 427,
+      "text_sha256": "263193f67e1dea4d90813482f608232999f6db445990c3464c69d533289361c7",
+      "text_chars": 6851,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 458,
+      "printed_page": 428,
+      "text_sha256": "d9ea8afc564c8d689d147e5556560cad0d31a814af2ed1246279c3289a05ab6e",
+      "text_chars": 7240,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 459,
+      "printed_page": 429,
+      "text_sha256": "e323c347fc05c2822077a4cf0afe30a7f7a370e32b84446a72d7d44ad51e37e2",
+      "text_chars": 7045,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 460,
+      "printed_page": 430,
+      "text_sha256": "692e9340d3e00e7a50442f156cce8b60f2ed2444bcaa022b3acf1056bbd94b35",
+      "text_chars": 7129,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 461,
+      "printed_page": 431,
+      "text_sha256": "1aed3d44c508740589dd4d5c914b14bd0cde59c486c462920ef3abd96f0f2463",
+      "text_chars": 7120,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 462,
+      "printed_page": 432,
+      "text_sha256": "1437ac0b9ce0b3b6e48bc85cc29055c22631777bac4ad71408d7f8b8f95e35b2",
+      "text_chars": 7116,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 463,
+      "printed_page": 433,
+      "text_sha256": "888a47a19afbbf48dc0931b05b11bacc847903812975a6790146b990bc09d82c",
+      "text_chars": 7239,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 464,
+      "printed_page": 434,
+      "text_sha256": "af2f0676aceca3179fa851126ad3823b9396266ba92cc613223a4e4c02de6040",
+      "text_chars": 7036,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 465,
+      "printed_page": 435,
+      "text_sha256": "229a4f255d5076ddf29fc24d0446cae5fadc9e6ff834fa25bdcac56fdd2faf71",
+      "text_chars": 7288,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 466,
+      "printed_page": 436,
+      "text_sha256": "3b82d098a14bd6809a316f2f6474f4d75463a42eed94d2d5d69243e796300c3f",
+      "text_chars": 7225,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 467,
+      "printed_page": 437,
+      "text_sha256": "38b3235ec34d757db5015568da0e0b4f3d4a695b45a134c61ecee81802728728",
+      "text_chars": 8195,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 468,
+      "printed_page": 438,
+      "text_sha256": "e4d36a354c9d95e7150b4d1a0dcce31845ba8110f53d6cc533581e9f30037985",
+      "text_chars": 3025,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 469,
+      "printed_page": 439,
+      "text_sha256": "f2812ded21e5f93519ce822ffca6b3d6a935b4fa63c36a5068cad45b6f74cdac",
+      "text_chars": 231,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 470,
+      "printed_page": 440,
+      "text_sha256": "c82bfa56e473dabc370e479ce1bcda00eb710d9be65d49b4abbdfe64331a8422",
+      "text_chars": 360,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 471,
+      "printed_page": 441,
+      "text_sha256": "2721122665938c7506dbeca0aa3a382819b461adfdb3d7ab9c8e8beb55785a73",
+      "text_chars": 507,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 472,
+      "printed_page": 442,
+      "text_sha256": "b2e6d4c39b0ad05588a7eda2ba4de2827a3344df11c0390f0718c468f683fb4b",
+      "text_chars": 254,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 473,
+      "printed_page": 443,
+      "text_sha256": "d98c4084ac66fe768e25fa1f336fc9c7495d103401efec0320d20331b454438c",
+      "text_chars": 125,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 474,
+      "printed_page": 444,
+      "text_sha256": "368c09ca9af5a09a37ee3e903d181fa44f745131aaa2fe744f3f207c30bc8857",
+      "text_chars": 1927,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 475,
+      "printed_page": 445,
+      "text_sha256": "554bb1781814e701cde75a91f6e3b1e0915e1df732773c0f4800bae0786e5b37",
+      "text_chars": 5102,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 476,
+      "printed_page": 446,
+      "text_sha256": "c385796de6e2bc779a3e422e63045a66778caed2c371e5da13468d1ed8752a05",
+      "text_chars": 5116,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 477,
+      "printed_page": 447,
+      "text_sha256": "0af97764877acfb1dc6e45d319322604eed2137795b1afeebc84e9e3e94e05fb",
+      "text_chars": 4856,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 478,
+      "printed_page": 448,
+      "text_sha256": "c2e61e5cf2ba8e2b7cb1df7c1f16bc835180de497570040da4f1b31e56182b1b",
+      "text_chars": 3635,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 479,
+      "printed_page": 449,
+      "text_sha256": "02e988fc894b8d3f438e03452b25a88ad4b7452c6a4fb0c744f19e12e7740009",
+      "text_chars": 538,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 480,
+      "printed_page": 450,
+      "text_sha256": "e207c125c22b75987586253add84e993088377580036489b233bd2cd99f661a7",
+      "text_chars": 235,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 481,
+      "printed_page": 451,
+      "text_sha256": "0b973e5917a42d0eb70f48a63428668a2ce254811351e9e6b0a4326de47303a4",
+      "text_chars": 253,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 482,
+      "printed_page": 452,
+      "text_sha256": "5adbf4ef2cdb97906ea460046ade7549435ae8e7ad9fde908cc10a001cd1a7c9",
+      "text_chars": 287,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 483,
+      "printed_page": 453,
+      "text_sha256": "d69ea53316289259ed403662c4a66f902f0206cf81a2be0b08b0b0efde752fa3",
+      "text_chars": 335,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 484,
+      "printed_page": 454,
+      "text_sha256": "c457f7bf524fd231bb36daa957316ff36cea4ab5afb9c311f9b7bd2d30f4e1a7",
+      "text_chars": 671,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 485,
+      "printed_page": 455,
+      "text_sha256": "81d05db596f4d5e8e05d951b679264465bf8348aa2c8a893af19b0e2ece30763",
+      "text_chars": 411,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 486,
+      "printed_page": 456,
+      "text_sha256": "2ddba2dc2ba57bb7332277a218c7b263e4221ad8d05d544150ca88f6775d031c",
+      "text_chars": 303,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 487,
+      "printed_page": 457,
+      "text_sha256": "c0387747c67a73c46d89b504c3c6c4e2b0bce4a2e2288c71e45889fbef1e3f00",
+      "text_chars": 173,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 488,
+      "printed_page": 458,
+      "text_sha256": "5a1136fbca3fb087000ce7eb19530c1571691a8dbc260a1fe32316f94f10650c",
+      "text_chars": 312,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 489,
+      "printed_page": 459,
+      "text_sha256": "6bfc5c9d68c979939128c00f7bba3045b76a5217b6169929fa87bd9c3eb30338",
+      "text_chars": 355,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 490,
+      "printed_page": 460,
+      "text_sha256": "6b08c6b32001f1d426222778029e5134c62962801f5ea889afc83fb1a3f04c7d",
+      "text_chars": 279,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 491,
+      "printed_page": 461,
+      "text_sha256": "d0ba9c7a6c5601ae820c4cadd96953d80e08867af30063e58438b58550f95b08",
+      "text_chars": 302,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 492,
+      "printed_page": 462,
+      "text_sha256": "5313c7aef466e2a69901a2be0a2ec815cb20f7b1a4c8ca0c3608d4f0eb8295cb",
+      "text_chars": 566,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 493,
+      "printed_page": 463,
+      "text_sha256": "2301c80c5da4ee6082a03cbad234be797f62674fdf041a2213f84eb884655769",
+      "text_chars": 469,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 494,
+      "printed_page": 464,
+      "text_sha256": "8cc7082cf84b6fce714f8c64017b203bc7976a00aeb9a40f2ff1c6c5d3b36d95",
+      "text_chars": 262,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 495,
+      "printed_page": 465,
+      "text_sha256": "cdc1323eb255ff55f874dd5403a1a3359c5b071f32557fb6f2110223d09e362a",
+      "text_chars": 552,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 496,
+      "printed_page": 466,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 497,
+      "printed_page": 467,
+      "text_sha256": "207efde2c80039831ca5fab41285a5bf552465e3836b54bfea230c7e1e5b83b6",
+      "text_chars": 5063,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 498,
+      "printed_page": 468,
+      "text_sha256": "7a1842447eb6828fc603b8bc965099e9a3dbe1fd56bc2bfb28a2e0799a6d6812",
+      "text_chars": 7100,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 499,
+      "printed_page": 469,
+      "text_sha256": "f36b1a534fe853563d58694433f8e8b3f4fe28226b756ad173ce59981a28c63a",
+      "text_chars": 6851,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 500,
+      "printed_page": 470,
+      "text_sha256": "921631859720a82763fda0568ea53fb4f02c493592b489b0e4b35642581949fd",
+      "text_chars": 7112,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 501,
+      "printed_page": 471,
+      "text_sha256": "1276e2c4afc08734a7f19eec7b6cdd844cae3abf8b26185449472a4a3a9e05c6",
+      "text_chars": 7274,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 502,
+      "printed_page": 472,
+      "text_sha256": "f144166d0cb4b9e44a1ab7e0593afdb8a9fca37dc53f12e5b82542e0750b8a9b",
+      "text_chars": 3962,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": [
+        "qumran_continuation_coverage.json"
+      ]
+    },
+    {
+      "viewer_page": 503,
+      "printed_page": 473,
+      "text_sha256": "7b0b7eb64a9399e1769a60f9ce649c08ed2701de500865cd7cd84bde4e5e2c9e",
+      "text_chars": 7039,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 504,
+      "printed_page": 474,
+      "text_sha256": "7491eb2822c4d43d882f8d430e532e54c914792fa056fe222b735cb721eeb968",
+      "text_chars": 7111,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 505,
+      "printed_page": 475,
+      "text_sha256": "18cc479daa2f25d4e1008d60ffab404fb08d0540b6307a5e21113395e221118d",
+      "text_chars": 7086,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 506,
+      "printed_page": 476,
+      "text_sha256": "7b842868730b31f5236617d10de0551a7c3ed400d4d9b31c8a8d1bafb9b97fc4",
+      "text_chars": 7200,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 507,
+      "printed_page": 477,
+      "text_sha256": "f35119ba745b4898c9af2ad06638f5a49fc022de73d5d2d3937f76d8c9bcd9a0",
+      "text_chars": 7200,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 508,
+      "printed_page": 478,
+      "text_sha256": "e85b5e70071575866e7cc27bf0b9539557af0eb1a715893d91660af4874be074",
+      "text_chars": 7239,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 509,
+      "printed_page": 479,
+      "text_sha256": "7ec816df0d769a8b68651d3993ff34e55ae8d698d06e779574bc040548130537",
+      "text_chars": 7090,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 510,
+      "printed_page": 480,
+      "text_sha256": "3bc5345ccc5c44adc89dd05bd58f6b8025c44be989e3fa8f446b20a248ea1e99",
+      "text_chars": 7111,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 511,
+      "printed_page": 481,
+      "text_sha256": "75270a8c373321319b34fb11c45fbd1083ce93dc7d173d2937a628f926f9fc2c",
+      "text_chars": 7670,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 512,
+      "printed_page": 482,
+      "text_sha256": "ae1fb12b284bcdc6f492305a10cf1545ab5dce546d90bc441997889531aa64e8",
+      "text_chars": 5292,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 513,
+      "printed_page": null,
+      "text_sha256": "9ca5cd8d45dca13665e91e65104e43046c530cb1669bf86610f58ae3311ccdbb",
+      "text_chars": 3690,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 514,
+      "printed_page": null,
+      "text_sha256": "a9ae9c37ce14280fc450123a9b1715825cc4384f0cb461550ff4f872d4e316dc",
+      "text_chars": 4092,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 515,
+      "printed_page": null,
+      "text_sha256": "d110f7796fbef9984a013d37ecf43d4c2a408f80c8d9975ebbd76cc6b7bd008f",
+      "text_chars": 897,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 516,
+      "printed_page": null,
+      "text_sha256": "92721e221929063cae4d2340d46edb3e9a5681b9f4135dc9068df557b411c61e",
+      "text_chars": 3292,
+      "text_read_receipts": [
+        "qumran_continuation_coverage.json"
+      ],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 517,
+      "printed_page": null,
+      "text_sha256": "d4af422736bde3da6102cec4bb73ddb178cfdf848d4f613ac431b38e952b1c5f",
+      "text_chars": 26,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 518,
+      "printed_page": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 519,
+      "printed_page": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text_chars": 0,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    },
+    {
+      "viewer_page": 520,
+      "printed_page": null,
+      "text_sha256": "cb16845077072b6825ca9a3041530c0b76a5a09d6475bc981cb93c26486a93dd",
+      "text_chars": 1785,
+      "text_read_receipts": [],
+      "native_inspection_receipts": []
+    }
+  ],
+  "verified_blank_viewer_pages": [
+    158,
+    200,
+    214
+  ],
+  "withheld_named_visual_material": [
+    {
+      "viewer_page": 284,
+      "printed_page": 254,
+      "plate": "I",
+      "scope": "Caption consumed; photographs unclassified and unviewed."
+    },
+    {
+      "viewer_page": 285,
+      "printed_page": 255,
+      "plate": "II",
+      "scope": "Caption consumed; photographs unclassified and unviewed."
+    },
+    {
+      "viewer_page": 287,
+      "printed_page": 257,
+      "plate": "IV",
+      "scope": "Caption consumed; photographs unclassified and unviewed."
+    }
+  ],
+  "chapter_text_completion": "The six joined worker receipts now cover all identified substantive chapter prose, notes, appendices, catalogues, bibliography and publisher text; unclassified/undecodable sheets may still contain unconsumed information."
+}
