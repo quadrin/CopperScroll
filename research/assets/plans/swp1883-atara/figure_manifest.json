@@ -1,0 +1,73 @@
+{
+  "title": "The Survey of Western Palestine, Memoirs III: Judaea",
+  "authors": [
+    "C. R. Conder",
+    "H. H. Kitchener"
+  ],
+  "editors": [
+    "E. H. Palmer",
+    "Walter Besant"
+  ],
+  "edition": "London, Palestine Exploration Fund, 1883",
+  "source_url": "https://archive.org/download/surveyofwesternp03conduoft/surveyofwesternp03conduoft.pdf",
+  "source_sha256": "97fdb65dbdad36ae2bab02bb3ec6b60c972801865b6f3c705ffe5d5c0273f159",
+  "source_pages": 510,
+  "provenance": "University of Toronto scan; independently downloaded copy and user-supplied attachment have identical SHA-256.",
+  "attribution": "Conder and Kitchener 1883, Palestine Exploration Fund; digitized by the University of Toronto / Internet Archive.",
+  "reuse_status": "Original 1883 publication is public domain; faithful page reproductions. No modern reconstruction or annotation added.",
+  "figure_identity": "The plan on printed p82 belongs to Anata, not Attara. It is retained in its full page context with scale and directional arrow; it supplies no Atara geometry. No Atara hydraulic drawing is printed in this entry or listed in the volume illustration list.",
+  "assets": [
+    {
+      "file": "swp1883-atara-source-pages.pdf",
+      "kind": "unmodified selected native PDF pages",
+      "source_pdf_pages": [
+        7,
+        11,
+        12,
+        13,
+        98,
+        99
+      ],
+      "printed_pages": [
+        "title",
+        "v",
+        "vi",
+        "vii",
+        "82",
+        "83"
+      ],
+      "crop": "none",
+      "sha256": "ce9103702179dd6d639a51e84793e4fcb44dc719216492476e3b4a8f2eacb37a",
+      "bytes": 276029
+    },
+    {
+      "file": "swp1883-p82.png",
+      "kind": "native full-page render",
+      "source_pdf_pages": [
+        98
+      ],
+      "printed_pages": [
+        82
+      ],
+      "crop": "none",
+      "render_scale": 1.7,
+      "sha256": "3b0bed7e90da474a8af5f972b91edcb7a2780d1ffc0cc7d86abeebac8388bf7e",
+      "bytes": 361722
+    },
+    {
+      "file": "swp1883-p83.png",
+      "kind": "native full-page render",
+      "source_pdf_pages": [
+        99
+      ],
+      "printed_pages": [
+        83
+      ],
+      "crop": "none",
+      "render_scale": 1.7,
+      "sha256": "7aed0089059d2bdfabfab492185c9477b6c1b414191e05ab88b6a2f61f880b2f",
+      "bytes": 397019
+    }
+  ],
+  "verification": "Native pages82–83 visually inspected. Extracted pages rendered at the same matrix as originals and compared pixel-for-pixel; all identical."
+}

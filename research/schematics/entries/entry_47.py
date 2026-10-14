@@ -141,4 +141,3 @@ S.footer(c, L["footer_y"], [
      "keeps Bir Ayyub for comparison only (Phase 3 site index)."),
 ])
 print(c.save(S.out_path("47")))
-

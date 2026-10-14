@@ -45,3 +45,7 @@ These are applied exploratory records. Previously read sources, alternative form
 All seven full-source byte lengths and SHA-256 hashes were checked. Final CSVs were parsed, page ranges checked for exact contiguous coverage, segment ranges checked for overlaps, observation IDs checked for duplicates and figure-access records checked against their declared source and page scope. Additional readers audited the completed book records. Fine-detail and missing-page statuses were retained during integration.
 
 **Last session: partly** — completed reading of the available text and ordinary imagery in the seven supplied scans; missing physical-edition leaves and Dalman plate 25’s reserved fine detail remain explicitly uninspected.
+
+## Remaining uncertain sources, 13 October 2026 UTC
+
+The [five-source reading record](five_remaining_2026-10-13/README.md) completes the supplied McCown 1947 vol. I, Pritchard 1956 Gibeon, Rahmani 1967 Jason's Tomb, Landes-Nagar 2008 Arnona and Novoselsky 2024 Mordot Arnona PDFs. It records sequential text reading, native illustration/plate inspection, exact source hashes and page/figure locators. Missing adjoining publications, damaged-glyph limits and the unopened external 3D model are explicit. Its observations qualify feature identity, construction/use/fill phases and modern reconstruction; they remain exploratory.

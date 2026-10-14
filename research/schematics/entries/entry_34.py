@@ -135,4 +135,3 @@ S.footer(c, L["footer_y"] - CUT, [
      "midpoint and universal vertical depth from the Puech/Lefkovits branches (Puech2015 pp69–72; Lefkovits pp253–258)."),
 ])
 print(c.save(S.out_path("34")))
-

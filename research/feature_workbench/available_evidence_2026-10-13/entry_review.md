@@ -35,4 +35,3 @@ entry_coverage.csv and entry_audit.json distinguish detailed audited entries, in
 The saved matrix pins the inspected source records. The adjacent evaluate.py reproduces the cave intersection and Koḥlit bottlenecks from canonical inputs.
 
 **Obtained** — all-entry evidence coverage, preserved branch outcomes, uncertainty bounds and native Benjamin source-scope correction. Exact-feature ancient-state/datum observations remain the limit.
-
