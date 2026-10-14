@@ -1,0 +1,271 @@
+{
+  "lane": "regional",
+  "date": "2026-10-14",
+  "new_evidence_target": "Original phase-controlled architecture, pits/chambers and hydraulic observations from newly available regional reports, with direct-candidate relevance separated from comparanda.",
+  "manifest_check": "manifest: ok (29 files)",
+  "test_status": "exploratory change review; no confirmatory identification",
+  "sources": [
+    {
+      "id": "nelson2015-omrit1",
+      "title": "Nelson 2015, The Temple Complex at Horvat Omrit I: The Architecture",
+      "url": "https://drive.google.com/file/d/1F75-VWsW-u_v9nckJVE_BSMOy7EO31XC/view",
+      "alternate_url": "https://drive.google.com/file/d/1bc-nk3YpW4Df20-eb9FhbBj4xEUEIYos/view",
+      "pdf_pages": 415,
+      "sha256": "caea43067fc8d6828907b4eff82992a6abb6de0cf45268e316430f61a8793b9e",
+      "inspection_scope": "Contents and whole-file searchable text generated; scoped text read pp. 1–5,14,18,28–30,69–70,372; visually viewed p.95 Fig.10. Other architectural/catalogue pages not read end to end.",
+      "copy_dedup": "Copy B has414 pages versusA415; all extracted page text matches as a multiset exceptA's additional blank first page. Same publication and excavation lineage; byte hashes differ.",
+      "classification": "regional comparative architecture; measured source with stated control points"
+    },
+    {
+      "id": "overman2021-omrit2",
+      "title": "Overman, Schowalter and Nelson eds. 2021, The Temple Complex at Horvat Omrit II",
+      "url": "https://drive.google.com/file/d/1DCFk1ul3DpbA0qzwm3xOE9B5zn9Kjku-/view",
+      "sha256": "500f965c1f8919438d9538be98ddf0a530e41cc7e09ec39e33bdbf7802b34be1",
+      "inspection_scope": "Contents; scoped stratigraphy text pp. 5–11,23,28–30; chapter7 pp. 211–222 read in full. Fig.7.8–7.9 p.219 visually viewed. Other finds chapters not read end to end.",
+      "pdf_limit": "Page tree declares427 leaves; pypdf reads377 actual leaves. Physical leaves51–52 jump printedp30→p81. Printedpp31–80 absent, including entire potterychapter31–65 and start of lampchapter66–80. PyMuPDF throws cannot-find-page errors379–427. Use pypdf physical-page numbering after omitted range; do not claim full monograph.",
+      "classification": "regional stratigraphy/hydraulics comparanda; incomplete supplied copy"
+    },
+    {
+      "id": "meyers2009-nabratein",
+      "title": "Meyers and Meyers 2009, Excavations at Ancient Nabratein: Synagogue and Environs",
+      "url": "https://drive.google.com/file/d/1moGsvtRbaPhZUYMsVk1l0MsgnF_OVuat/view",
+      "pdf_pages": 491,
+      "sha256": "5552e2d5992cb438f18e63d2775edd5eabd1a8b575ccc66b0e0a90d306f647d3",
+      "inspection_scope": "Contents and searchable text; scoped chronology pp. 26–30; FieldIV pp. 113,116–120; conclusionspp. 400–402. Visually viewed p.118 Fig.31. Remaining chapters, plates and locus lists not read end to end.",
+      "classification": "regional pit/storage-room and dating comparanda"
+    },
+    {
+      "id": "leibner2018-wadi-hamam",
+      "title": "Leibner 2018, Khirbet Wadi Hamam: A Roman-Period Village and Synagogue in the Lower Galilee",
+      "url": "https://drive.google.com/file/d/1CqSNKvEYJ34zyqdmOkfth9uDHdZo27Qt/view",
+      "inspection_scope": "Readable connector text obtained (~1.76million characters). Scoped text readpp. 1–2,14–16,29–30,91–92,223–227,238–242,246–253. Images/plates unavailable via raw path. Remaining book text not read end to end.",
+      "access_limit": "Raw download HTTP413; 357918873 bytes exceeds268435456-byte tool limit. Connector text succeeds. No visual measurement or image-based assertion made from this source.",
+      "classification": "regional sealed subterranean storage/hiding comparanda; local water-source observations"
+    },
+    {
+      "id": "leibner-arubas2022-invisible",
+      "title": "Leibner and Arubas 2022, The Invisible Synagogues of the Second Temple Period, Cathedra180, Hebrew pp.9–32",
+      "url": "https://drive.google.com/file/d/1yS4Lgzm--e8HsR_QJv4tCqiqS_eIzPqO/view",
+      "pdf_pages": 24,
+      "sha256": "fe097a995d1fc11059d7dd0fa4b3cd4d8694d5d47bbfca153fad9198351388d2",
+      "inspection_scope": "Identity/contents established; scoped text readpp. 10–11,14–24,30–32. Otherpp12–13,25–29 not fully read; no complete-article claim.",
+      "classification": "excavator interpretation and archaeological detection-bias comparanda, partly derivative"
+    },
+    {
+      "id": "arubas-leibner2024-invisible",
+      "title": "Arubas and Leibner 2024, The Invisible Synagogues of the Second Temple Period, in A Vision of the Days, pp. 502–548",
+      "url": "https://drive.google.com/file/d/1vPz4nYjPVYYmpz4qxY_TZUdoeWLSehCD/view",
+      "doi": "10.1163/9789004685567_028",
+      "pdf_pages_volume": 796,
+      "chapter_pdf_pages": [
+        521,
+        567
+      ],
+      "sha256": "2f0f267c0c8b6c3c0532bab551bcb93467b1bdba1bdc0d8dac7131f117e950e5",
+      "inspection_scope": "Volume contents and chapter headings screened. Chapter opening p. 502, Wadi Hamam dating pp. 508–509 and Merot section pp. 531–538 read. Merot Figs. 24.19 and 24.23 visually inspected. Remaining chapter and volume text not read end to end.",
+      "classification": "Expanded English treatment; separate source record from 2022 Hebrew article; regional underground-space/access/dating comparanda"
+    },
+    {
+      "id": "arubas-leibner2024-excerpt",
+      "title": "Arubas and Leibner 2024, Invisible Synagogues, first-page excerpt",
+      "url": "https://drive.google.com/file/d/1xoiqRdtRAmYZH0lqgPKhmURE1MjpXIRK/view",
+      "pdf_pages": 3,
+      "sha256": "2d020ccfa8bcd40d692837c8b99feda52f62037b2274108d03871b0df56a2721",
+      "inspection_scope": "Three leaves contain two cover/front pages and only printed p. 502, compared with volume chapter opening.",
+      "classification": "Same chapter start; excerpt limitation resolved by containing-volume access, no second field observation"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "OMRIT-ES-CHAMBERS",
+      "source_id": "nelson2015-omrit1",
+      "printed_pages": "14,18,29–30,70",
+      "pdf_pages": [
+        45,
+        49,
+        60,
+        61,
+        101
+      ],
+      "figures": [
+        "10 (p95/pdf126)"
+      ],
+      "observation": "Two chambers occupy the western Early Shrine podium, separated by an ashlar wall with a connecting passage. Widths are 1.30 m and 0.99 m. A square opening penetrates a 16 cm concrete floor over basalt slabs. Chamber floors remain under unexcavated earth; heights and original lengths are unmeasured. Detached cover block C24.3 has a tapered shaft and rebates matching floor thickness.",
+      "author_interpretation": "Chambers may have a funerary or cistern-like function. Mortar may resist seepage. Emplacement of the detached cover block in the floor opening is proposed.",
+      "project_inference": "Preserve unknown function. Hatch, mortar and detached cover do not establish a functioning cistern. Regional morphology and access comparandum.",
+      "phase_limit": "ES1 assignment is published; function remains unknown. Omrit II p. 5 states that excavation yielded no burial evidence, though a tomb remained possible."
+    },
+    {
+      "id": "OMRIT-SURVEY",
+      "source_id": "nelson2015-omrit1",
+      "printed_pages": "372",
+      "pdf_pages": [
+        403
+      ],
+      "figures": [
+        "138",
+        "Table12"
+      ],
+      "observation": "Sokkia Set4100 total station surveyed remains and topography relative to five fixed points. Trimble GPS with OmniSTAR established UTM Zone 36N coordinates, followed by a closed traverse. Table 12 lists coordinates and elevations. State drawings used taped baselines, offset measurements and surveyed endpoints. Finished dimensions were recorded to millimetres, broken surfaces to centimetres.",
+      "author_interpretation": "Measured state plans rest on surveyed control.",
+      "project_inference": "Useful model for measurable comparisons and provenance. UTM zone is stated; ellipsoid, datum and uncertainty should remain unspecified where omitted."
+    },
+    {
+      "id": "OMRIT-T1-RESET",
+      "source_id": "overman2021-omrit2",
+      "printed_pages": "5,10",
+      "pdf_pages_pypdf": [
+        26,
+        31
+      ],
+      "figures": [
+        "Table1.1"
+      ],
+      "observation": "T2 builders removed the original fill inside the T1 podium. Table 1.1 lists surviving T1 foundation trenches and fills with finds dated 50 BCE–50 CE.",
+      "author_interpretation": "Excavators state that removal disturbed evidence for the construction date of T1.",
+      "project_inference": "Original construction dates require independent stratigraphic support when replacement builders remove original fills."
+    },
+    {
+      "id": "OMRIT-NICHE-PIPES",
+      "source_id": "overman2021-omrit2",
+      "printed_pages": "218–222",
+      "pdf_pages_pypdf": [
+        189,
+        190,
+        191,
+        192,
+        193
+      ],
+      "figures": [
+        "7.9(p219)",
+        "7.10(p220)",
+        "7.11(p221)"
+      ],
+      "observation": "Two water pipes occur at the northern niche. One required a cut in the basal T2 molding. A channel continues through the niche backing block to the back of the third stair and along the stair towards the southern parastade wall. The southern niche is lost; a channel beginning remains where stair and wall meet.",
+      "author_interpretation": "North-to-south flow, two fountains and Echo statues are inferred. Footnote 34 on p. 218 retains possible reverse flow. Association of the pavement inscription with this installation is proposed.",
+      "project_inference": "Original observed contact and channel evidence supply a hydraulic comparandum. Direction and complete function remain interpretations. These pages contain no target junction for Atara, Siloam or Hyrcania.",
+      "date_limit": "Page 216 converts year 83 to 80/81 or 81/82 CE; p. 222 gives 81/82 or 82/83 CE. Table 1.1 on p. 10 selects 81/82 CE. Preserve this internal variation. Offering date and T2 completion remain separate; the proposed construction bound depends on the inscription-installation association."
+    },
+    {
+      "id": "NABRATEIN-OLDER-PIT",
+      "source_id": "meyers2009-nabratein",
+      "printed_pages": "113,116–120",
+      "pdf_pages": [
+        134,
+        137,
+        138,
+        139,
+        140,
+        141
+      ],
+      "figures": [
+        "31(p118)",
+        "Photo38(p116)"
+      ],
+      "observation": "A rock-cut room truncates pre-existing conical pit L1023. Pit diameter at the room floor is 1.4 m; it extends 45–50 cm into the northern bedrock wall. Its bottom is at 676.295 m, 45 cm below the room floor. Loose limestone rubble fills it. Shallow basin L1025 lies 50 cm south, measures 1.25 m east–west and at least 0.50 m wide, and is 5–10 cm deep; wall 1019 covers its southern edge.",
+      "author_interpretation": "Page 113 calls the older feature a conical cistern; p. 117 calls it a storage pit; p. 120 retains cistern or storage pit. Chamber construction/use is Early Roman with Early/Middle Roman transition ambiguity.",
+      "project_inference": "Keep pit function alternatives and pit construction date unknown. A dated room supplies a relative sequence. Figure 31 gives a plan and four sections for morphology comparisons.",
+      "phase_limit": "No sealed construction deposit dates the original pit cutting. Room date cannot be transferred to the pit."
+    },
+    {
+      "id": "NABRATEIN-SYNAGOGUE-TUNNELS",
+      "source_id": "meyers2009-nabratein",
+      "printed_pages": "27,29–30",
+      "pdf_pages": [
+        48,
+        50,
+        51
+      ],
+      "figures": [
+        "Chart2(p27)"
+      ],
+      "observation": "Chart 2 dates first synagogue to Period II, approximately 135–250 CE, following domestic Period I, 1–135 CE. Introduction records Aviam’s post-excavation recognition of tunnels beneath Field III.",
+      "author_interpretation": "Third-quarter first-century CE tunnel date is attributed to Aviam and remains conditional. Report excavations did not investigate these tunnels.",
+      "project_inference": "First-century occupation cannot date the first synagogue. Tunnel discovery and tentative dating must remain separate from excavated architectural phases."
+    },
+    {
+      "id": "WADI-WATER",
+      "source_id": "leibner2018-wadi-hamam",
+      "printed_pages": "1–2",
+      "observation": "Excavators report that intensive surveys and excavations identified no cisterns or reservoirs at the site.",
+      "author_interpretation": "The spring was the main and perhaps sole water source.",
+      "project_inference": "A limited local absence statement supplies no landscape-wide absence or Copper Scroll exclusion."
+    },
+    {
+      "id": "WADI-C9-SEALED",
+      "source_id": "leibner2018-wadi-hamam",
+      "printed_pages": "246–251,253note7",
+      "figures": [
+        "6.76–80",
+        "6.82",
+        "6.84"
+      ],
+      "observation": "C9 bell-shaped chamber measures 2.5 m deep and 2.5 m diameter. Two basalt beams on a ledge, covered by earth and small stones, sealed its shaft. Chamber L4C008 contained neither eroded soil nor finds. Four excavated subterranean chambers lack plaster. F3 chamber is 2.2 m diameter; total depth is unknown because excavation stopped 2.2 m below the shaft base. Its 0.6 m wide north tunnel is blocked after 2 m.",
+      "author_interpretation": "C9 apparently remained sealed since antiquity. Chambers may have served sealed or hidden storage, or emergency hideouts. Stratum 3 assignment is tentative. Lack of plaster supports the author’s exclusion of cistern function. Note 7 tentatively compares the installations with rabbinic dot, דות.",
+      "project_inference": "Physical non-water storage comparanda bear on the function audit and on the conditions needed to interpret negative excavation. They establish no Copper Scroll word equivalence, site association or predicted deposit. F3 partial excavation yields no complete-volume negative.",
+      "phase_limit": "C9 floor is Early Roman, with precise foundation date unresolved (pp. 248–250). Abandonment uses assemblage comparisons with other areas. Date of chamber construction remains separate."
+    },
+    {
+      "id": "WADI-EARLY-BUILDING",
+      "source_id": "leibner2018-wadi-hamam",
+      "printed_pages": "14,29,91–92",
+      "figures": [
+        "2.6",
+        "2.133"
+      ],
+      "observation": "An earlier terrace and four auxiliary rooms survive partly beneath the later Galilean-type synagogue. Two western rooms had benches. Architectural fragments were reused or found in fill.",
+      "author_interpretation": "Earlier building was public and probably a synagogue. Introduction p. 14 says mid-first century CE; chapter 2 pp. 29 and 91–92 says early first century CE. Destruction is placed in Hadrian’s reign.",
+      "project_inference": "Retain the published foundation-date variation. Surviving early annexes and later building footprint must remain separate."
+    },
+    {
+      "id": "INVISIBLE-COVERAGE",
+      "source_id": "leibner-arubas2022-invisible",
+      "printed_pages": "14–21,30–32",
+      "figures": [
+        "3–5(pp16)",
+        "7–8(p20)"
+      ],
+      "observation": "Authors discuss earlier structures beneath later Galilean synagogues. For Wadi Hamam, latest underfloor coins are Tiberius 17–24 CE and Agrippa I 37–43 CE. Arbel has Early Roman floors, broad elevated stone platforms and dating finds beneath later architecture.",
+      "author_interpretation": "Earlier Second Temple synagogues may be more common than visible inventories imply. Identification of partly preserved public buildings as synagogues remains a published interpretation.",
+      "project_inference": "Adds coverage and detection-bias comparanda. Wadi Hamam observations repeat the 2018 excavation campaign and must be deduplicated.",
+      "lineage_limit": "Wadi Hamam 2018 and 2022 share field observations; Arbel is a separate campaign. Other site discussions reappraise older records."
+    },
+    {
+      "id": "INVISIBLE2024-MEROT",
+      "source_id": "arubas-leibner2024-invisible",
+      "printed_pages": "531–538",
+      "pdf_pages": [
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557
+      ],
+      "figures": [
+        "24.19 (p. 532)",
+        "24.22 (p. 536)",
+        "24.23 (p. 537)"
+      ],
+      "observation": "Six interconnected hewn underground spaces occur beneath southern synagogue. One includes a ritual bath entered from stairs in front of the portico; another includes a cistern. Some entrances were sealed beneath synagogue floor; underground spaces remained accessible and in use into the Middle Ages. Soft-limestone ashlar wall descends 2.5 m below portico floor to bedrock. Figures 24.19 and 24.23 redraw IAA archival documentation.",
+      "author_interpretation": "Original underground complex assigned to Early Roman period; earlier public building and possible synagogue argued from architecture and finds. Authors state that lack of final publication makes phase reconstruction less secure.",
+      "project_inference": "Adds a phase/access warning and a documented comparative bath/cistern complex. A sealed entrance does not establish sealed target volume where rear access persists.",
+      "date_limit": "Page 535 footnote 56 states that pottery used to date the first synagogue stage to late fourth century came primarily from bath Locus 90, rather than sealed deposits beneath synagogue floor. Main bath entrance was blocked at some point but rear entry remained possible.",
+      "lineage_limit": "Based on 1980s Merot campaign, preliminary publications, excavator information and IAA archives; redraws and later reviews represent the same original observations."
+    }
+  ],
+  "scope_summary": "Seven selected publication families or excerpt records received scoped content screening. Complete books were not read end to end. Original regional comparanda and source-copy/coverage corrections were obtained; inspected passages supply no target-specific observation for the active Copper Scroll tests.",
+  "blocking_urls": [
+    {
+      "url": "https://drive.google.com/file/d/1CqSNKvEYJ34zyqdmOkfth9uDHdZo27Qt/view",
+      "error": "Raw download HTTP413; 357918873 bytes exceeds268435456-byte tool limit. Connector text succeeds. No visual measurement or image-based assertion made from this source."
+    },
+    {
+      "url": "https://drive.google.com/file/d/1DCFk1ul3DpbA0qzwm3xOE9B5zn9Kjku-/view",
+      "error": "Page tree declares427 leaves; pypdf reads377 actual leaves. Physical leaves51–52 jump printedp30→p81. Printedpp31–80 absent, including entire potterychapter31–65 and start of lampchapter66–80. PyMuPDF throws cannot-find-page errors379–427. Use pypdf physical-page numbering after omitted range; do not claim full monograph."
+    }
+  ],
+  "archive_policy": "All original PDFs and inspected page renders remain local/private intake; no reproduction permission established for public repository. Integrator should publish original analysis and source/figure provenance records, preserving original images only in authorized private archive."
+}

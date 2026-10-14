@@ -1,8 +1,8 @@
 # Active test
 
-Updated 13 October 2026 UTC / 12 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 14 October 2026 UTC / 13 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (13 October UTC / 12 October Los Angeles): **partly** — [original-edition audit](feature_workbench/edition_predicates_2026-10-13/README.md) corrected archaeological test requirements and the entry34/47 schematics; exact ancient landmark relations and target datums remain unresolved.
+Last session (14 October UTC / 13 October Los Angeles): **obtained** — reconciled the original-report applications, edition audit and [latest source sweep](sources/new_batch_2026-10-13/README.md) for publication; preserved session histories, corrected source requirements and validated source/atlas mirrors.
 
 ## Active questions and the observation that decides each
 

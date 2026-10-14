@@ -231,3 +231,7 @@ The new phase-4 row adds a C1 match only. Among all IAA-method rows, only Naḥa
 - **Twin Cave identity.** WBADB Excavations 707 'Cave of the Pillar' (193500/129600, no data) and Excavations 715 'Cave of the Twins' (193700/129300) are separate records c. 360 m apart; A41 X/47 lies c. 470 m from the Twin Cave locator. A crosswalk would settle whether the Twin Cave is in the 1993 survey.
 - **"Q3".** ESI 6 p. 68 calls the Copper Scroll cave (1952 no. 8) "Cave Q3"; ʿAtiqot 41 p. 180 says Patrich and Arubas's Cave 13 (X/35) "was called Q3". Worth a note wherever the repository cites either.
 - **Privacy note.** One Downloads listing in this lane used too broad a filter ("ESI" matched other file names). The extra names were not opened, copied or recorded anywhere.
+
+## 11Q source correction, 14 October 2026 UTC
+
+[Humbert–Fidanzio 2019 targeted review](../../sources/new_batch_2026-10-13/cave_text_changes.md) records March 2017 reinspection of the particular northern crevasse previously proposed as a second exterior entrance: Humbert says it could not have been a passage (p. 52/viewer 77). This is an exploratory correction of that named opening model. The natural pillar is internal, and the volume retains conflicting ancient-partition versus excavation-support interpretations of the masonry (pp. 63–64 and 82–85). No alternate two-mouth history is silently eliminated; the frozen regional codes/results are preserved pending a separately documented source amendment. The source supplies no IV/17 or Twin Cave ancient threshold/wall datum.

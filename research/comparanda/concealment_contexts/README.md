@@ -120,3 +120,7 @@ python3 -I -B -m unittest discover -s research/comparanda/concealment_contexts -
 ## Library source context — 12 October 2026
 
 [Raviv–Zissu 2022 access record](../../assets/plans/raviv-zissu2022/README.md) distinguishes earlier underground facilities from later concealment adaptations and purpose-hewn hiding complexes. The atlas IV/17 dossier links it as regional phase context. No new concealment row or numerical comparison is derived from the article.
+
+## New primary context, 14 October 2026 UTC
+
+[The new-source synagogue review](../../sources/new_batch_2026-10-13/synagogue_changes.md) adds Zissu–Ganor 2009's distinct ʿEthri concealment contexts and stratigraphic access changes. These source observations are exploratory additions; the single-coin examples do not meet the frozen hoard eligibility rule, and the unread 2012 hoard title has no verified crosswalk to the 2009 groups. The frozen comparison data and results are preserved.

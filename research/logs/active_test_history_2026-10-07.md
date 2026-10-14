@@ -271,6 +271,10 @@ Last session (12 October): **obtained** — [archaeology-first interface correct
 
 Last session (12 October): **obtained** — authenticated Drive access, identification of the new SWP map set, and [candidate-plan update](../atlas/PHOTO_INTEGRATION.md). Gerizim’s coin-context error is corrected; separate Gerizim, Doq, Hyrcania and IV/17 source plans and dossiers are available, with Sheet XI retained as historical context. IV/17 is carried from its existing provisional assessment with mouth coordinates unassigned.
 
+## Previous last-session line retained, 14 October 2026 UTC
+
+Last session (12 October): **obtained** — [interactive 3D site models and browser observations](../atlas/INTERACTION_VALIDATION.md#interactive-3d-site-models): local map navigation, structure focus, camera restoration, cave cutaway, responsive details and terrain context. [Source dimensions and display assumptions](assets/plans/atlas-explorer/manifest.json) are recorded; mapped surroundings use archived elevation data, and IV/17’s unlocated rock setting is labelled illustrative.
+
 ## Interactive 3D session preserved during research integration
 
 Last session (12 October): **obtained** — [interactive 3D site models and browser observations](../atlas/INTERACTION_VALIDATION.md#interactive-3d-site-models): local map navigation, structure focus, camera restoration, cave cutaway, responsive details and terrain context. [Source dimensions and display assumptions](assets/plans/atlas-explorer/manifest.json) are recorded; mapped surroundings use archived elevation data, and IV/17’s unlocated rock setting is labelled illustrative.
@@ -278,3 +282,11 @@ Last session (12 October): **obtained** — [interactive 3D site models and brow
 ## Atara enquiry session preserved during edition-audit integration
 
 Last session (13 October UTC / 12 October Los Angeles): **partly** — sent the [Atara holdings enquiry](feature_workbench/book_application_2026-10-12/README.md#holdings-enquiry-sent--13-october-utc--12-october-los-angeles) to PEF's curator. Original drawing existence/shelfmark and hydraulic contacts await source evidence. Previous atlas and custody sessions are preserved in [history](logs/active_test_history_2026-10-07.md#session-records-preserved-when-the-atara-enquiry-was-sent).
+
+## Edition-audit session preserved during new-source integration
+
+Last session (13 October UTC / 12 October Los Angeles): **partly** — [original-edition audit](feature_workbench/edition_predicates_2026-10-13/README.md) corrected archaeological test requirements and the entry34/47 schematics; exact ancient landmark relations and target datums remain unresolved.
+
+## New-source review preserved during publication integration
+
+Last session (14 October UTC / 13 October Los Angeles): **partly obtained** — [new-source changes and page-specific coverage](sources/new_batch_2026-10-13/README.md): the proposed northern second entrance to 11Q is corrected, primary concealment contexts and hydraulic comparisons added, and incomplete/mislabeled copies documented.
