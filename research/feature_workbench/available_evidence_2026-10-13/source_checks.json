@@ -1,0 +1,612 @@
+{
+  "inspection_date_utc": "2026-10-13",
+  "inspection_date_local": "2026-10-12",
+  "scope": "Targeted actual Drive holdings and native already-exposed published pages",
+  "hydraulic": {
+    "schema_version": 1,
+    "analysis_kind": "exploratory_hydraulic_dependency_audit",
+    "date_utc": "2026-10-13",
+    "repository": "quadrin/CopperScroll",
+    "current_tree_sha": "23e2b74bdc4ceac8b4418b79a5fa501db20e7b5e",
+    "target": "Atara: can exposed original survey ancestry establish hydraulic direction, a contemporaneous pool/channel configuration, or a discriminating entry29 relation?",
+    "outcome": "not identifiable from available evidence",
+    "source_read": {
+      "title": "C. C. McCown, Tell en-Nasbeh I: Archaeological and Historical Results (1947)",
+      "printed_pages": [
+        54,
+        55
+      ],
+      "viewer_pages": [
+        78,
+        79
+      ],
+      "sha256": "65334d98e81b27acff13e54695bedd875fdd4c9f69bec7424a319ed6ddb1e659",
+      "native_images_inspected": [
+        "mccown-pdf78.png",
+        "mccown-pdf79.png"
+      ],
+      "provenance": "Parent materialized exact manifest-listed Drive source after metadata resolution; native raster checked by hydraulic worker.",
+      "recovered_observation": "McCown attributes pointed arches at the outlet of one reservoir and some walls to SWP III82f; he infers at least part of the ruin is medieval.",
+      "limitations": [
+        "Does not name western/eastern pool for this outlet",
+        "No outlet/channel contact plan",
+        "No invert elevations or gradient",
+        "No contemporaneous pool-floor/channel/wall stratigraphy",
+        "Site/tomb dating does not date a particular pool phase"
+      ],
+      "field_campaign_identity": "Transmits SWP observation; not independent confirmation."
+    },
+    "swp_ocr": {
+      "title": "Conder and Kitchener, Survey of Western Palestine Memoirs III (1883)",
+      "printed_pages": [
+        82,
+        83
+      ],
+      "source_url": "https://archive.org/stream/surveyofwesternp03conduoft/surveyofwesternp03conduoft_djvu.txt",
+      "source_ref": "turn6view0",
+      "native_verified": false,
+      "observation": "Two tanks; principal reservoir78×37ft, east wall9ft with4internal buttresses; pointed-arch outlet. Second tank described northeast, ruined, with northwest steps and east wall.",
+      "uncertainty": "The principal/first/western synonym crosswalk and pointed arch/conduit feature identity remain unresolved; nativeMcCown confirms transmitted outlet label only."
+    },
+    "identities": {
+      "modern_western": "Benjamin1993printed162/viewer184 observationB93-0076:24×11.5m; bottom vaulted corridor with underlying water channel, source-labelled supply.",
+      "modern_eastern": "Same source:32×14.5m; no western-conduit transfer.",
+      "third_northern_pool": "Separate spring-fed pool about100m north; cannot become an alternate northern datum of western pool."
+    },
+    "decision_changes": [
+      {
+        "claim": "Flow direction must be resolved before every entry29 conduit branch can proceed",
+        "disposition": "documented analytical overstatement",
+        "reason": "Existing cycle15Jericho conduit audit establishes that noun-association reading allows inlet or outlet; only supply-specific branch requires feed direction. Applies to rule design, does not identify Atara."
+      },
+      {
+        "claim": "McCown is a direct pool-conduit field section or independent hydraulic corroboration",
+        "disposition": "contradicted by native source scope",
+        "reason": "It transmits earlier survey narrative; no requested section occurs on54–55."
+      },
+      {
+        "claim": "SWP outlet is definitively Benjamin western bottom channel",
+        "disposition": "unknown",
+        "reason": "Dimension proximity is insufficient exact-feature identity; McCown names one reservoir only."
+      }
+    ],
+    "legacy_proxy_sensitivity": {
+      "basis": "WaterPLAN§5 screen Great/Four definitions versus book-application physical-witness conservatism",
+      "western_rectangle_proxy_m2": 276,
+      "eastern_rectangle_proxy_m2": 464,
+      "ratio_east_to_west": 1.681159420289855,
+      "swp_conversion_m": [
+        23.7744,
+        11.277600000000001
+      ],
+      "swp_to_benjamin_dimension_differences_m": [
+        0.22560000000000002,
+        0.2223999999999986
+      ],
+      "hypothetical_legacy_codes": {
+        "western": {
+          "great": "FAIL",
+          "four": "MATCH"
+        },
+        "eastern": {
+          "great": "MATCH",
+          "four": "MATCH"
+        }
+      },
+      "implemented": false,
+      "caveat": "Only if old largest-by-stated-dimensions and two-axes-as-four-sides proxies are explicitly retained. These proxies do not prove the ancient Hebrew great means largest, rectangular walls or contemporaneous greatest capacity; stronger physical-witnessUNKNOWN may be intentional. No modern-source or historical-lane scores mutated."
+    },
+    "closed_lanes": [
+      {
+        "lane": "Hyrcaniaentry29",
+        "disposition": "do_not_reopen",
+        "reason": "Source-typed offset/sides models and unresolved origins remain separate; no new field record/error found. Measurement-resolution12Oct already preserves source-scale/datum limits."
+      },
+      {
+        "lane": "Jerichoentry29",
+        "disposition": "do_not_reopen",
+        "reason": "Flow-direction permissibility already handled6Oct. A(C)94 envelope-gap/sourceerror issue already handled12Oct; no new aperture/wall/floor observation."
+      },
+      {
+        "lane": "Siloamentry49",
+        "disposition": "do_not_reopen",
+        "reason": "Existing branch needs main-sideL103 same-phase section; quantity17cannot be treated as cubit measurement. No new section or numerical datum."
+      }
+    ],
+    "protected_observations": "No held arrivals, PEF archive records, Almit source content, frozen manuscript targets or Tell es-Sultan fine strip imagery opened.",
+    "source_records": [
+      {
+        "repo_path": "research/feature_workbench/book_application_2026-10-12/README.md",
+        "git_blob_sha": "273e1171faecc5c76bf88bb9ace0bb4515d4c47a",
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/feature_workbench/book_application_2026-10-12/README.md"
+      },
+      {
+        "repo_path": "research/feature_workbench/book_application_2026-10-12/applications.json",
+        "git_blob_sha": "8dd0f29062b725ddb701b4a452798832550bbe06",
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/feature_workbench/book_application_2026-10-12/applications.json"
+      },
+      {
+        "repo_path": "research/feature_workbench/book_application_2026-10-12/results.json",
+        "git_blob_sha": "bdb830f9b9e6925d8f03f43bada37af69b803689",
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/feature_workbench/book_application_2026-10-12/results.json"
+      },
+      {
+        "repo_path": "research/regional/water_systems/PLAN.md",
+        "git_blob_sha": "185dcb9131a37cb70226f816614017838aece85f",
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/regional/water_systems/PLAN.md"
+      },
+      {
+        "repo_path": "research/sources/full_reads_2026-10-12/feature_phase_audit/audit.json",
+        "git_blob_sha": "3c105de377ebf5dec3421eaca475ec84a94df8b2",
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/full_reads_2026-10-12/feature_phase_audit/audit.json"
+      },
+      {
+        "repo_path": "research/feature_workbench/measurement_resolution_2026-10-12/README.md",
+        "git_blob_sha": "5a5d4f5d4e6193c66acbacff461777206d0b9b38",
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/feature_workbench/measurement_resolution_2026-10-12/README.md"
+      },
+      {
+        "repo_path": "research/measurements/cycle15/jericho_conduit.md",
+        "git_blob_sha": "0d78d9edaf62dc22bdaeca9aae0de91322615243",
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/jericho_conduit.md"
+      },
+      {
+        "repo_path": "research/assessments/entry29_hyrcania/README.md",
+        "git_blob_sha": "48eb634efbf5156dffad2f31d6934839326501e7",
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_hyrcania/README.md"
+      },
+      {
+        "repo_path": "research/measurements/cycle15/siloam_bathing.md",
+        "git_blob_sha": "37123759c1238e33c81827496e6fdb97c7f60d58",
+        "url": "https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/siloam_bathing.md"
+      }
+    ],
+    "access_failures": [
+      {
+        "url": "https://www.psr.edu/wp-content/uploads/2020/10/McCown-1947_TEN-Vol-I_small.pdf",
+        "reason": "Web reader400 size34320371bytes; subsequently obtained from authorized exactDrive source by parent."
+      },
+      {
+        "url": "https://archive.org/download/surveyofwesternp03conduoft/surveyofwesternp03conduoft.pdf",
+        "reason": "Web500 redirect target inaccessible; nativeSWP not retrieved."
+      },
+      {
+        "url": "https://archive.org/details/surveyofwesternp03conduoft/page/82/mode/2up",
+        "reason": "Web reader inaccessible."
+      },
+      {
+        "url": "https://archive.org/download/surveyofwesternp03pale/surveyofwesternp03pale.pdf",
+        "reason": "Alternate public scan timed out; bounded access search stopped."
+      }
+    ],
+    "last_session": "partly — native McCown resolves the source lineage and reported outlet label; exact western-pool outlet identity, flow gradient and coeval configuration remain unresolved.",
+    "benjamin_native": {
+      "printed_page": 162,
+      "viewer_page": 184,
+      "native_verified": true,
+      "native_image": "benjamin-pdf184.png",
+      "observation": "Bottom of western pool has a vaulted corridor with water channel beneath; this conduit is described as leading to the pools (plural), built of stone sections.",
+      "interpretation": "Preserves source-level association to the pair, while exact observed bottom feature belongs only to western pool. Does not locate eastern inlet or establish feed gradient/phase.",
+      "sha256": "074a689271ad137526c8b040a5fed1b2c8ba39204f4dfd80082576d610929b08"
+    },
+    "map_native": {
+      "title": "Map of Western Palestine in26sheets",
+      "authors": "C.R.Conder andH.H.Kitchener;PalestineExplorationFund",
+      "year": 1880,
+      "survey_dates": "1872–1877",
+      "scale": "1:63360",
+      "printed_locator": "SheetXVII",
+      "pdf_page": 17,
+      "source_pdf": "research-work/sources/dedupmrg54258818.pdf",
+      "source_sha256": "5a9bc74683887ab4cac377a476a20b832a05aa7cc73b7d6e1d513fa672a61ba7",
+      "scope": "CompleteSheetXVIIcoarseinspection and Atara vicinity detail. No held-site feature extraction.",
+      "exposure": "New detailedsheet scope compared prioruploadmanifest;exploratory,neverholdout.",
+      "observed": "Kh.Attara south ofTellenNasbeh with nearby Bir/spring/tomb labels.",
+      "limitations": "At1:63360the map cannot separate exact poolwallcontacts or determine flowdirection/coevalphase.",
+      "asset": "swp1880-sheet17.webp",
+      "asset_extraction": "Fullpage proportional0.5render;2556×2216px;WebPquality92;all margins,scale,northconvention retained.",
+      "reuse": "1880cartographypublicdomain;no independent licence asserted for contemporary annotations/stamps; source pages originate authorized userDrive original.",
+      "asset_sha256": "fbe7d19d84b5cc23ec475bcd6f34245bf659faa47ef762dc2320ddaaf2f0b90e"
+    }
+  },
+  "kohlit_holdings": {
+    "checked_date_utc": "2026-10-13",
+    "scope": "User-authorized project Drive: exact Kenyon child folder and Dorrell original.",
+    "kenyon": {
+      "folder_url": "https://drive.google.com/drive/folders/14TGWWTHl2N4F6pGdwRS2xnAIhLF-s7s4",
+      "direct_children": [
+        {
+          "id": "1EoLOv_ff62vOK5sqyPmGwG7CbU_CIK09",
+          "title": "Kenyon 1965 – Jericho II, Tombs excavated in 1955-8.pdf",
+          "size_bytes": 47290708,
+          "verified_url": "https://drive.google.com/file/d/1EoLOv_ff62vOK5sqyPmGwG7CbU_CIK09/view?usp=drivesdk",
+          "mime_type": "application/pdf"
+        },
+        {
+          "id": "1-pM6w5fGM2-Ni4B9TdQpyF3q-aldbQfI",
+          "title": "Kenyon 1960 – Jericho I, Tombs excavated in 1952-4.pdf",
+          "size_bytes": 39016286,
+          "verified_url": "https://drive.google.com/file/d/1-pM6w5fGM2-Ni4B9TdQpyF3q-aldbQfI/view?usp=drivesdk",
+          "mime_type": "application/pdf"
+        },
+        {
+          "id": "1Lq43-lnBR_nWvH_UfoiuuymS_YiGSGRa",
+          "title": "Kenyon & Holland 1981 – Jericho III, Architecture and Stratigraphy of the Tell (text).pdf",
+          "size_bytes": 50969041,
+          "verified_url": "https://drive.google.com/file/d/1Lq43-lnBR_nWvH_UfoiuuymS_YiGSGRa/view?usp=drivesdk",
+          "mime_type": "application/pdf"
+        }
+      ],
+      "paginated_document_search_exhausted": true,
+      "III_separate_plate_volume_listed": false,
+      "inspection": "Metadata only. No newly reserved Kenyon image or section opened.",
+      "absence_limit": "No separately titled III plate volume among this folder's returned direct documents; not a claim about every project folder or pages inside text PDF."
+    },
+    "dorrell": {
+      "id": "1ZxW_URsztJxKivDKzDk9p7U5HvgSQ2NK",
+      "title": "Dorrell 1993 – The spring at Jericho from early photographs (PEQ 125).pdf",
+      "mime_type": "application/pdf",
+      "size": "9665827",
+      "url": "https://drive.google.com/file/d/1ZxW_URsztJxKivDKzDk9p7U5HvgSQ2NK/view?usp=drivesdk",
+      "display_url": "https://drive.google.com/file/d/1ZxW_URsztJxKivDKzDk9p7U5HvgSQ2NK/view?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": null,
+      "modified_time": "2026-10-09T16:56:30.370Z",
+      "parent_ids": null,
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": null,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified",
+      "file_size_bytes": 9665827,
+      "complete_materialization": true,
+      "sha256": "2ced12da53f4a6cc8f6f287234c058595595d2322ab873c074ea4f7254ec14e2",
+      "pdf_pages": 21,
+      "printed_112_pdf_page": 19,
+      "visual_page_checked": true,
+      "reinspection_scope": "Already-exposed printed pp. 110–112; visually checked 112. No separate archive/aerial target inspected.",
+      "findings": [
+        {
+          "claim": "Author reconstructs circular or semicircular spring basin against curved wall.",
+          "kind": "published reconstruction",
+          "page": 112
+        },
+        {
+          "claim": "Modern reservoir's back wall is about a metre east of older spring-house wall and follows the same curve.",
+          "kind": "published photograph-based rough spatial relation",
+          "page": 112
+        },
+        {
+          "claim": "Rough photographic level comparisons motivate tentative stability assumption since classical times.",
+          "kind": "author inference, uncalibrated",
+          "page": 112
+        },
+        {
+          "claim": "1898 extension of mill-pool forms present reservoir.",
+          "kind": "author chronology citing Sellin-Watzinger",
+          "page": 111
+        }
+      ],
+      "construction_date_or_sealed_context_on_p112": false,
+      "northern_corner_ancient_datum_on_p112": false,
+      "interpretation": "Source is available and inspected; missing ancient dating/contact evidence is not missing access to this article.",
+      "usable_constraint": "Keep historical basin/old spring-house wall/1898 reservoir distinct, use shared curved wall as historical tie when registered; ~1m is rough documentary relation and no calibrated national-frame point.",
+      "rights": "No reproduction licence verified. PDF and page render are local inspection intermediates only; no public source-image upload."
+    }
+  },
+  "beth_horon": {
+    "source_title": "Magen & Finkelstein (eds.), Archaeological Survey of the Hill Country of Benjamin (IAA, Hebrew,1993)",
+    "drive_id": "1evqJT-QX-3HMFqr-ON069yuLnyp1Te_8",
+    "verified_drive_url": "https://drive.google.com/file/d/1evqJT-QX-3HMFqr-ON069yuLnyp1Te_8/view?usp=drivesdk",
+    "bytes": 236490774,
+    "pdf_pages": 562,
+    "sha256": "074a689271ad137526c8b040a5fed1b2c8ba39204f4dfd80082576d610929b08",
+    "inspection_utc": "2026-10-13",
+    "kind": "native reinspection of already-exposed published pages",
+    "pages": [
+      {
+        "viewer": 71,
+        "printed": "49",
+        "scope": "Complete site28 UpperBethHoron description and Fig1 aerial",
+        "observations": [
+          "Village on elevated hill; description refers to later site143",
+          "Figure1 is a village-core aerial photograph, without registered tomb mouth identities"
+        ],
+        "unknown": [
+          "individual tomb entrances",
+          "entrance bearing",
+          "channel target"
+        ]
+      },
+      {
+        "viewer": 72,
+        "printed": "50",
+        "scope": "Complete site28 Fig2 ceramic drawings/caption",
+        "observations": [
+          "Pottery drawings labelled by mixed periods"
+        ],
+        "unknown": [
+          "particular tomb cutting/use date"
+        ],
+        "figure": "site28 Fig2"
+      },
+      {
+        "viewer": 163,
+        "printed": "141",
+        "scope": "Complete adjacent sites141–142",
+        "observations": [
+          "Adjacent catalogue page confirms section numbering/context"
+        ],
+        "unknown": [
+          "site143 tomb geometry"
+        ]
+      },
+      {
+        "viewer": 164,
+        "printed": "142",
+        "scope": "Complete site143 and start site144",
+        "observations": [
+          "Covered/plastered pool east of village core,16.5m long; width unclear; foundations called ancient",
+          "Four bench tombs cut west of village on slope; repository in one",
+          "Ten cisterns counted separately; no tomb–cistern complex stated",
+          "Site pottery percentages include Roman6%; context is mixed surface assemblage"
+        ],
+        "unknown": [
+          "tomb entrance orientation",
+          "individual tomb plan",
+          "channel",
+          "feature-specific chronology"
+        ]
+      },
+      {
+        "viewer": 165,
+        "printed": "143",
+        "scope": "Complete site145 and site144 continuation",
+        "observations": [
+          "Site145 bench tomb c200mSW of central ruin, printed grid16020/14325, stepped opening and rock-cut courtyard",
+          "Five tombs east of ruin at16055/14310 with kokhim/arcosolia",
+          "Site pottery Roman70%; individual tomb construction/use date remains unestablished"
+        ],
+        "unknown": [
+          "individual tomb entry azimuth",
+          "channel relation",
+          "deposit datum"
+        ]
+      }
+    ],
+    "source_correction": "The old Entry40 next-action to recover the printed Benjamin site143 record is superseded by actual held source access and native-page reinspection. Within the inspected descriptions and their first-part cross-reference, individual tomb entrance plans/bearings are undocumented.",
+    "scientific_limit": "This documents where the missing observation fails to appear; it adds no independent field campaign, new exclusion, or confirmation. West-of-village position does not establish west-facing entrance.",
+    "rights": "Original1993 IAA rights reserved; page renders remain private local working artifacts. No public scan redistribution license established.",
+    "encountered_figures": [
+      {
+        "viewer": 71,
+        "printed": "49",
+        "figure": "Site28 Fig1",
+        "kind": "village aerial",
+        "render": "benjamin-viewer71.png",
+        "scale": null,
+        "north": null,
+        "render_sha256": "99659a42fddc0a5017274d02a777b847b3fde537b8fa40124f135510f20fcf66",
+        "render_method": "PyMuPDF full-page raster, source crop none; kept local/private"
+      },
+      {
+        "viewer": 72,
+        "printed": "50",
+        "figure": "Site28 Fig2",
+        "kind": "pottery profiles",
+        "render": "benjamin-viewer72.png",
+        "scale": "Source bar 0–10; unit unstated on this page",
+        "north": "not applicable",
+        "render_sha256": "3006411dc372b3b5ff60357fbb7d96cd71e04016a03d57255070bf0ae3d92ed3",
+        "render_method": "PyMuPDF full-page raster, source crop none; kept local/private"
+      },
+      {
+        "viewer": 8,
+        "printed": "front plate",
+        "figure": "front landscape photograph",
+        "kind": "landscape photograph",
+        "render": "benjamin-viewer8.png",
+        "scope": "coarse visual view while locating contents; no feature identification",
+        "scale": null,
+        "north": null,
+        "render_sha256": "3649d4e195665fd2b12274171baf1167d1d560b92cee347c1436d8c33febad26",
+        "render_method": "PyMuPDF full-page raster, source crop none; kept local/private"
+      }
+    ]
+  },
+  "cave_originals": {
+    "as_of": "2026-10-13 UTC",
+    "objects": [
+      {
+        "id": "1-0iJI2kplWeR6xZPsilNMfjLI1htc3V5",
+        "title": "Atiqot 41-1 (2002) – zip part 1 of 6.zip",
+        "mime_type": "application/zip",
+        "size": "29500985",
+        "url": "https://drive.google.com/file/d/1-0iJI2kplWeR6xZPsilNMfjLI1htc3V5/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1-0iJI2kplWeR6xZPsilNMfjLI1htc3V5/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-09T16:56:44.455Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      },
+      {
+        "id": "1f_o43s0hZJd2CLOx9ELzxiz1KOt--JpX",
+        "title": "Atiqot 41-1 (2002) – zip part 2 of 6.zip",
+        "mime_type": "application/zip",
+        "size": "29500156",
+        "url": "https://drive.google.com/file/d/1f_o43s0hZJd2CLOx9ELzxiz1KOt--JpX/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1f_o43s0hZJd2CLOx9ELzxiz1KOt--JpX/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-09T16:56:44.460Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      },
+      {
+        "id": "1XPu8W7y29eQZgWbDe0JLaWLZJdsF5TnK",
+        "title": "Atiqot 41-1 (2002) – zip part 3 of 6.zip",
+        "mime_type": "application/zip",
+        "size": "29500156",
+        "url": "https://drive.google.com/file/d/1XPu8W7y29eQZgWbDe0JLaWLZJdsF5TnK/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1XPu8W7y29eQZgWbDe0JLaWLZJdsF5TnK/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-09T16:56:44.457Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      },
+      {
+        "id": "1xYAmbhvTJhrtWtNmoYQAxK_McKH4CQkU",
+        "title": "Atiqot 41-1 (2002) – zip part 4 of 6.zip",
+        "mime_type": "application/zip",
+        "size": "29500156",
+        "url": "https://drive.google.com/file/d/1xYAmbhvTJhrtWtNmoYQAxK_McKH4CQkU/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1xYAmbhvTJhrtWtNmoYQAxK_McKH4CQkU/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-09T16:56:44.456Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      },
+      {
+        "id": "16VPs5QqKNV2svmfFp_oHG0o_6sRw36A4",
+        "title": "Atiqot 41-1 (2002) – zip part 5 of 6.zip",
+        "mime_type": "application/zip",
+        "size": "29500156",
+        "url": "https://drive.google.com/file/d/16VPs5QqKNV2svmfFp_oHG0o_6sRw36A4/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/16VPs5QqKNV2svmfFp_oHG0o_6sRw36A4/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-09T16:56:44.460Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      },
+      {
+        "id": "16y-N0-HLAGS_gAGJuGiWbiS9NSQvYgAK",
+        "title": "Atiqot 41-1 (2002) – zip part 6 of 6.zip",
+        "mime_type": "application/zip",
+        "size": "22622293",
+        "url": "https://drive.google.com/file/d/16y-N0-HLAGS_gAGJuGiWbiS9NSQvYgAK/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/16y-N0-HLAGS_gAGJuGiWbiS9NSQvYgAK/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-09T16:56:44.447Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      },
+      {
+        "id": "1avRkndT45m6rAriKhGMQvCX8EGP4KNxz",
+        "title": "Bar-Adon 1989 – Excavations in the Judean Desert (Atiqot Heb 9) [JSTOR capture 2026-10-02].pdf",
+        "mime_type": "application/pdf",
+        "size": "73074606",
+        "url": "https://drive.google.com/file/d/1avRkndT45m6rAriKhGMQvCX8EGP4KNxz/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1avRkndT45m6rAriKhGMQvCX8EGP4KNxz/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-09T16:56:30.427Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    ],
+    "read_scope": [
+      {
+        "file": "native/cohen_israel_XII53.pdf",
+        "printed_pages": [
+          208,
+          209
+        ],
+        "pdf_pages": [
+          3,
+          4
+        ],
+        "figures": [
+          "Plan 3",
+          "Fig 4"
+        ],
+        "exposure": "already_exposed_published_report",
+        "sha256": "a1fb1862a909d066db6b6be62bb9e3ea3933ebde9572c61fe555bcc22c7edf62"
+      },
+      {
+        "file": "native/bar_adon_1989.pdf",
+        "printed_pages": [
+          "[15]",
+          16,
+          17
+        ],
+        "pdf_slices": [
+          20,
+          21
+        ],
+        "figures": [
+          "B1",
+          "B2"
+        ],
+        "exposure": "already_exposed_published_report_new_copy",
+        "sha256": "c4bfd44036c1fb98ad6fcb1f3e212ed02795e66604c87c04cba1a47964c032a4",
+        "locator_scans": [
+          16,
+          18,
+          19,
+          22,
+          24,
+          26
+        ],
+        "locator_scope": "visually scanned rendered slices to locate Chapter B; no auxiliary excavation claim derived"
+      }
+    ],
+    "reserved_material_opened": false,
+    "changes": [
+      {
+        "type": "citation_correction",
+        "target": "research/regional/caves_entry25/caves.csv REPO:TwinCave pillar_basis",
+        "old": "Bar-Adon p. 16 (via the repository)",
+        "new": "Bar-Adon p. [15] (original visually verified in 2 October capture PDF slice 20)",
+        "changes_result": false
+      }
+    ]
+  },
+  "citation_correction": {
+    "record": "REPO:TwinCave",
+    "field": "pillar_basis",
+    "historical_catalogue_page": "Bar-Adon1989 p16",
+    "verified_original_page": "Bar-Adon1989 printed p[15]",
+    "meaning": "East-facing mouths and thick rock pillar occur on printed p[15]; the existing frozen table is retained and this correction accompanies reuse."
+  }
+}

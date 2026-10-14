@@ -109,3 +109,7 @@ The scripts in `entries/` draw with the shared kit `lib/schematic.py`, which use
 | 60 | XII 10-13 | Koḥlit's pool (11) and the final pit (60): a qualifying site, plus all 12 variants | [entry_11_60_kohlit.svg](entry_11_60_kohlit.svg) · [png](png/entry_11_60_kohlit.png) |
 
 Drawn 8 October 2026. Eight parallel drafting agents worked from the repo's records using one brief and the shared kit. Every page was rendered and checked for layout. No new evidence was sought; the pages add no identification, outcome or confidence change.
+
+## Source corrections, 13 October 2026
+
+The [exact-page edition audit](../feature_workbench/edition_predicates_2026-10-13/README.md) corrects entry34’s combined inscription-midpoint/universal-depth diagram and entry47’s two-cubit stone length. Regenerated SVG/PNG versions label the conditional geometry and separate alternative readings.

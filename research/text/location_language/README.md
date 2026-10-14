@@ -116,3 +116,7 @@ Place names move whole groups of placements. יגר splits the preferred cairns 
 - `atlas/app/atlas-data.json`: in entry 6, say that its Tyropoeon place and the Temple place of entries 13–14 assume different referents for one word. In entry 32, say that the translation and C3 read "at the mouth" for the same words at XII 11.
 - Registry P46-A: Milik 1962 reads feet at X 6, not cubits. Registry P35-C: the Hyrcania branch rests on Eshel's dam.
 - `research/shared_tools/core.py` `entry_packets` could attach the matching occurrences from `occurrences.json` as the pending formal predicates.
+
+## E34 source correction, 13 October 2026
+
+Lefkovits2000 pp257–258 explicitly treats seventeen cubits as distance rather than depth; Puech2015 p72 gives lower down. This lower-distance branch leaves the axis/path unresolved and does not establish an explicitly horizontal line. The inscription clause supplies no midpoint. See the [exact-page branch audit](../../feature_workbench/edition_predicates_2026-10-13/entries33_34/README.md). The current generated report predates this correction. A pre-existing `atlas:32:description` quote mismatch prevents rebuilding the generator; generated files were preserved.

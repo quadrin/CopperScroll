@@ -274,3 +274,7 @@ Last session (12 October): **obtained** — authenticated Drive access, identifi
 ## Interactive 3D session preserved during research integration
 
 Last session (12 October): **obtained** — [interactive 3D site models and browser observations](../atlas/INTERACTION_VALIDATION.md#interactive-3d-site-models): local map navigation, structure focus, camera restoration, cave cutaway, responsive details and terrain context. [Source dimensions and display assumptions](assets/plans/atlas-explorer/manifest.json) are recorded; mapped surroundings use archived elevation data, and IV/17’s unlocated rock setting is labelled illustrative.
+
+## Atara enquiry session preserved during edition-audit integration
+
+Last session (13 October UTC / 12 October Los Angeles): **partly** — sent the [Atara holdings enquiry](feature_workbench/book_application_2026-10-12/README.md#holdings-enquiry-sent--13-october-utc--12-october-los-angeles) to PEF's curator. Original drawing existence/shelfmark and hydraulic contacts await source evidence. Previous atlas and custody sessions are preserved in [history](logs/active_test_history_2026-10-07.md#session-records-preserved-when-the-atara-enquiry-was-sent).

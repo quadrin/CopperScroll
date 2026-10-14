@@ -1,0 +1,86 @@
+{
+  "mode": "exploratory_existing_coded_records",
+  "decision": "not identifiable from available evidence",
+  "claim": "E47/E50 landmark identity within the held coded water inventory",
+  "regional_rarity_denominator": null,
+  "unseen_prediction": null,
+  "hashes": {
+    "research/regional/water_systems/water.csv": "8feee7e4be21443ca73279b8d1607bae96c0be74abf68132976c70e24f2d16aa",
+    "registry.json": "d542beb97b82d033df10c8e4b0bdc5b14577ef26e571a8cab9a1b07d410927a0"
+  },
+  "row_counts_are_coverage_not_outcomes": true,
+  "eligibility": {
+    "context_only": 577,
+    "main_pool_or_tank": 496,
+    "cistern_sensitivity": 970
+  },
+  "branches": {
+    "E47-L1": {
+      "context_only": 577,
+      "not_identifiable_from_available_evidence": 1466
+    },
+    "E47-L2": {
+      "context_only": 577,
+      "not_identifiable_from_available_evidence": 1466
+    },
+    "E47-P": {
+      "context_only": 577,
+      "not_identifiable_from_available_evidence": 1466
+    },
+    "E47-M": {
+      "context_only": 577,
+      "not_identifiable_from_available_evidence": 1466
+    },
+    "E47-W-reported": {
+      "context_only": 577,
+      "not_identifiable_from_available_evidence": 1466
+    },
+    "E50-P": {
+      "context_only": 577,
+      "courtyard_coverage_missing": 1466
+    },
+    "E50-L": {
+      "context_only": 577,
+      "courtyard_coverage_missing": 1466
+    },
+    "E50-U": {
+      "context_only": 577,
+      "not_identifiable_from_available_evidence": 1464,
+      "reported_form_contradiction_only": 2
+    },
+    "E50-M-reported": {
+      "context_only": 577,
+      "not_identifiable_from_available_evidence": 1464,
+      "reported_form_contradiction_only": 2
+    },
+    "E50-B-reported": {
+      "context_only": 577,
+      "not_identifiable_from_available_evidence": 1464,
+      "reported_form_contradiction_only": 2
+    },
+    "E50-M1960": {
+      "context_only": 577,
+      "not_identifiable_from_available_evidence": 1464,
+      "reported_form_contradiction_only": 2
+    }
+  },
+  "critical_unrecorded_fields": [
+    "black_stone",
+    "stone_at_entrance",
+    "stone_to_entrance_2c",
+    "stone_from_origin_2c",
+    "stone_two_clamps",
+    "stone_two_coins",
+    "court",
+    "inner_relation",
+    "zadok_tomb_association"
+  ],
+  "limits": [
+    "Coded rows omit nearly all original prose; quote fields mostly blank.",
+    "Scope excludes east-of-Jordan Zered and lacks courtyard inventory.",
+    "Inherited date codes are diagnostics only. No inherited date-out value generates an archaeological exclusion or a contemporaneous_phase contradiction.",
+    "Explicit circular/round descriptions concern reported form only; ancient geometry and reuse remain unknown.",
+    "No source-level absence or negative excavation observation.",
+    "A whole site remains open after one recorded feature fails."
+  ]
+}

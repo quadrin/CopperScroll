@@ -26,6 +26,10 @@ The [entry-46 alternatives](../text/entry46_alternatives_2026-10-12/README.md) e
 
 The [measurement resolution audit](measurement_resolution_2026-10-12/README.md) preserves failed plan checks, quantifies conditional resolution requirements and corrects the same-document picking-only shortcut. The [inventory-role comparison](../comparanda/inventory_forms_2026-10-12/README.md) separates numbered places, objects/lots, counts, contents measures and retrieval instructions. Herodium’s roles remain tentative. Each report records the observation that would distinguish its alternatives; exposed records supply no independent identification.
 
+## Available-evidence assessment — 13 October 2026 UTC
+
+The [parallel assessment](available_evidence_2026-10-13/README.md) computes the intersection of Entry25's separately scored form contradictions, preserves exact record IDs and witnesses, and verifies the original Drive sources behind the cave, Atara, Beth-Horon and Koḥlit comparisons. It distinguishes absent observations from available books, corrects Twin Cave's pillar-page citation and Atara's pair-level published channel association, and records the common Koḥlit phase/datum bottlenecks. The recorded-form result does not exclude whole physical caves or establish uniqueness.
+
 ## Inputs and register
 
 `features.json` holds stable physical-feature identities. A documentary notice is not automatically a physical feature, and an alias or interpretation is not silently merged. Each module's reviewed inputs remain in its own directory. The [contract](CONTRACT.md) defines the source, observation, historical-state and result records. Exact source pages/figures, inspection scope, original observation lineages, native frames, uncertainty and missing data travel with the result.
@@ -57,3 +61,5 @@ The tests check false contradictions, finite/context-bound datums, phase mismatc
 The [active test](../ACTIVE_TEST.md) remains authoritative. The L-656 field-file request was sent on 11 October; its holding/accession remains unverified. On 12 October Rachel Bar-Nathan reported holding unorganized Jericho field notes and requested a call; the wall-junction drawing and level register have not arrived. Manchester’s TPA/1/132 route supplies general material without cutting photographs or research notes, while the archivist continues the Allegro inquiry. The [access records](../agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026) and [A(C)94 custody update](../assessments/entry29_jericho_pools/netzer2001-first-pass.md#field-notes-holder-response--12-october-2026) distinguish these routes from supplied observations. A future claim needs its own finite specification, failure rule and exposure audit before genuinely unused evidence is revealed.
 
 The interface provides saved exploratory queries, native-state views, coverage gates, provenance and a planning-only outcome selector. It supplies no precise field location or detection probability. A registered world overlay, complete regional roster, phase-controlled contacts and unused observation remain evidence dependencies.
+
+[Original-edition corrections, 13 October](edition_predicates_2026-10-13/README.md) distinguish the retained archaeological branches for entries 2, 6, 26, 33, 34, 47 and 50 and link corrected entry34/47 schematics.
