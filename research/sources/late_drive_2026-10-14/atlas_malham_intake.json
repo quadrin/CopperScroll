@@ -155,7 +155,7 @@
     "jericho_pages": "jericho_page_ledger.json"
   },
   "classification": "exploratory; original observation/campaign lineages deduplicated; no confirmatory scoring",
-  "target_body_not_supplied": "Frumkin2015 Twin complex212–215, plans/profiles/sections/captions",
+  "target_body_not_supplied": null,
   "missing_physical_observations": "Ancient target thresholds, dated wall contacts and oriented hydraulic joint sections remain source-specific retrieval dependencies.",
   "whole_original_publication_completion": false,
   "copy_exceptions": [
@@ -163,5 +163,17 @@
     "Atlas introductory chapters omit target-specific Twin body.",
     "JPOSXI scan lacks printed83–84 and advertised membership253; terminal viewer261 is JPOSXII PlateI."
   ],
-  "manuscript_or_archive_arrival_scored": false
+  "manuscript_or_archive_arrival_scored": false,
+  "target_body_acquired_2026_10_15": {
+    "title": "Davidovich and Frumkin 2015, Twin Complex",
+    "printed_pages": "212–215",
+    "viewer_pages": "1–4 of 9",
+    "drive_id": "1myf103Yzzc7G4ukNzR2r6aRZRK8arOWC",
+    "sha256": "0e7ada078918f5212643ca19766c6241fb28a2d1c2ddbbceade304a562c0b6b1",
+    "source": "User-supplied Academia attachment 115749223.pdf",
+    "inspection": "All target text, captions, photographs and survey sheet; frontmatter checked separately",
+    "note": "twin_2015.md",
+    "next_evidence": "Individual-mouth/field-record crosswalk and ancient threshold/phase levels",
+    "exposure": "Exploratory; not a holdout"
+  }
 }

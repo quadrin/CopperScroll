@@ -505,3 +505,9 @@ The attachment matches the archived408-page source. Original Chapter2 pp.50–69
 
 - **5 October2026 — columnII transfer review:** acquired replica layout places Greek groups across the apparent seam from the cut5 loss chain, making cut6 the stronger exploratory target. Original Greek parent strokes plus neighboring Hebrew remain unauthenticated; all original Greek ROIs and timing remain null. Existing sources reused; one combined bounded check brings66/5/72, with no decisive test, confidence, identification or closure increment. Await original Figure4.6 component mapping/archival-resolution sources. [Evidence](https://github.com/quadrin/CopperScroll/blob/6a38348c9b3a3da9e610441e35b8221389ab205a/research/phases/phase4_summary.md#replica-to-original-target-transfer--5-october-2026).
 
+
+
+
+## Twin Complex original survey — 15 October 2026 UTC / Los Angeles
+
+The user-supplied Davidovich–Frumkin 2015 pp. 212–215 supplies the missing modern measured survey: Malham 2011 plan, profiles and sections on p. 215. Its East/West pair is explicitly linked to Bar-Adon's Twin Cave; a third cave is named North. Excavation removed most of approximately 8 m of West's sediment, so a present-floor measurement cannot establish an ancient depth. Next obtain the individual-mouth/field-record crosswalk and a dated ancient threshold/level relation. [Exact page findings, exposure and source provenance](sources/late_drive_2026-10-14/twin_2015.md).

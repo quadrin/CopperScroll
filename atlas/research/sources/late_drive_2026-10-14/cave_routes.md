@@ -38,3 +38,9 @@ Next sources are the Frumkin body entry, cave-specific original register/cover a
 The [complete original reading](atlas_review.md) obtains History42–47 and the methods' raster survey form. Methods8–11 separate entrance geolocation from relative traverse accuracy, developed profiles from true passage relations, and surface openings from convenient human access. The form's opening azimuth is inward toward the first survey leg; outward aspect requires its own convention. These are source conventions for a later plan, not new target measurements. The Twin-complex body212–215 remains the exact missing book extract.
 
 The [Malham originals](malham_complete_read.md) add aerial28A/caves83–91 and Niqrot Tsurim14(1988) as the upper-Makkuk Steps-complex routes. Their locator18085/14426 and nine-cavity description do not establish identity with the inventory's II/42 Steps Cave18095/14414. Preserve both until the source maps are crosswalked. Wadi Qelt Cave's cupmark and blocked natural passages do not establish entry32's aqueduct outlet/wall correspondence.
+
+
+
+## Twin body obtained — 15 October 2026 UTC / Los Angeles
+
+The later user-supplied original satisfies the pp. 212–215 retrieval target, including p. 215's Malham 2011 survey. [Inspection and implications](twin_2015.md). This supersedes the acquisition request above; those passages describe the earlier preview/introductory-copy scope. The next records are the individual-mouth crosswalk and ancient threshold/phase levels, with the VJRI northern-cave identity checked separately.

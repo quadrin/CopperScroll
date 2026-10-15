@@ -77,3 +77,9 @@ All **70 viewer pages** in these six files were accounted for; this is **44 subs
 Six raw PDFs and page renders are private working copies. Rights page (introduction viewer2; history viewer8) reserves rights to Magnes, Malham and authors; the cover photo is credited to Amos Frumkin and photography generally to the authors except where stated. No open reuse permission was established. `../../assets/plans/late-drive-2026-10-14/atlas_figure_manifest.json` retains page-level private assets with captions/scales/arrows intact and SHA256; it is a provenance/retrieval record, not permission to publish protected images or extracted complete chapters. Public integration should use these original notes and the manifest's factual provenance, with protected source/render files excluded.
 
 **Obtained:** the six introductory chapters are completely read and visually inspected; atlas measurement/projection/coordinate conventions now constrain subsequent plan use, the missing-history index can be corrected, and the required target body/field-record pages remain precisely specified.
+
+
+
+## Later Twin extract — 15 October 2026 UTC / Los Angeles
+
+The original target entry pp. 212–215 is now obtained from the user's supplied PDF, with its p. 215 scaled map, profiles and sections. [Complete target inspection](twin_2015.md) supersedes remaining-evidence item 1's acquisition step. The six introductory files still omit that body, as described above; the new extract provides it separately. The atlas associates East/West with Bar-Adon's Twin pair and distinguishes a third North cave, while documenting substantial excavation-induced floor change. Individual-mouth and ancient-threshold/phase crosswalks are the next evidence.

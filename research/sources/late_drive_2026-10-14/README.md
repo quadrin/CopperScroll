@@ -19,3 +19,9 @@ The newly supplied PDFs were read against their original pages and the preceding
 [Malham article reading](malham_complete_read.md) records cave morphology and exact survey routes, including aerial28A/caves83–91, while preserving a possible namesake conflict with inventory Steps Cave II/42. The supplied web-text copies omit maps and galleries. Their coordinates, modern floor cover and geological passage depths supply no ancient-threshold datum.
 
 [Jericho/Atara original reading](jericho_review.md) verifies Abel141–143, keeps its Shaʿfat well/birkeh separate from Atara, and distinguishes Kenyon1954's Neolithic contexts from its figure-only Byzantine pit. The JPOS scan omits advertised leaves and appends a JPOSXII plate; page-level coverage and original-script limits remain explicit. This pass records source observations and retrieval dependencies, with no new confirmatory scoring. [Source inventory and copy scopes](atlas_malham_intake.json) · [private figure provenance](../../assets/plans/late-drive-2026-10-14/atlas_figure_manifest.json).
+
+
+
+## Twin original entry — 15 October 2026 UTC / Los Angeles
+
+[Davidovich–Frumkin pp. 212–215](twin_2015.md) is now obtained, read and visually inspected from the user's native PDF. P. 215 supplies the Malham 2011 scaled plan, profiles and sections; p. 212 documents excavation-induced floor change. This closes the earlier body-entry retrieval dependency. The individual-mouth/field-record crosswalk and ancient threshold/phase remain required.

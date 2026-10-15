@@ -48,3 +48,11 @@ Access: [publisher/distributor PDF](https://www.emekshaveh.org/he/wp-content/upl
 The [late Drive source audit](../../sources/late_drive_2026-10-14/cave_routes.md) verifies WBADB Excavations row716/Index715 and License List row562 for Riklin/L-528/1992-0; these repeat the2009 sourcebook observation. The Frumkin2015 preview contents names the Twin complex at printed212; the next entry starts216. Obtain printed212–215 plus every associated plan/section/caption and prove correspondence to this cave before geometry reuse. The supplied preview omits that entry.
 
 The reproduced VJRI1995 metre-scale Qetorit Cave plan at2026p119 belongs to the separate northern spice-cave claim, with hypothetical communication to the twin openings. [Source comparison](../../sources/late_drive_2026-10-14/jones_reports.md) preserves the survey/ancient-mouth/phase gaps. A plan of the nearby northern cave does not satisfy the requested measured Twin mouths or northern-threshold record.
+
+
+
+## Original atlas survey obtained — 15 October 2026 UTC / Los Angeles
+
+The user-supplied Davidovich–Frumkin 2015 extract now supplies printed 212–215, including Malham's 2011 scaled plan, profiles and sections on p. 215. [Original-page findings and provenance](../../sources/late_drive_2026-10-14/twin_2015.md). The atlas explicitly associates its East/West pair with Bar-Adon's Twin Cave and separates a third cave called North. Individual old northern/southern units still require a crosswalk to the atlas mouths/stations; the atlas North label cannot supply it by itself.
+
+P. 212 documents removal of most of approximately 8 m of West's sediment and excavation enlargement of secondary passages. This gives a source-specific reason to recover original floor/threshold levels before applying an ancient-depth model. The modern measured-plan dependency is obtained; the next intake is an identified ancient threshold, wall phase and original survey/level-register tie. The source and all its target imagery are exposed exploratory evidence.

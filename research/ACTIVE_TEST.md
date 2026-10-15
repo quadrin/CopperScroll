@@ -1,8 +1,8 @@
 # Active test
 
-Updated 15 October 2026 UTC / 14 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 15 October 2026 UTC / Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (15 October UTC / 14 October Los Angeles): **partly** — read the new atlas, Malham and Jericho originals; established survey/projection conventions, a Steps Cave crosswalk issue and wrong-site/phase attributions; preserved omitted-copy and target-plan dependencies. [Evidence and page scopes](sources/late_drive_2026-10-14/README.md).
+Last session (15 October 2026 UTC / Los Angeles): **obtained** — the original Twin Complex pp. 212–215, including Malham’s 2011 measured survey; documented excavation-induced floor change and narrowed the next evidence to individual-mouth and ancient-threshold/phase crosswalks. [Evidence](sources/late_drive_2026-10-14/twin_2015.md).
 
 ## Active questions and the observation that decides each
 
@@ -56,4 +56,5 @@ An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or M
 ## Key reports
 
 [Entry schematics](schematics/README.md) · [Koḥlit rarity pre-registration](preregistration/kohlit_rarity_2026-10-08.md) and [result](rarity/kohlit/stage2/RESULTS.md) · [Feature workbench](feature_workbench/README.md) (8 October; evaluators and an atlas view for the Koḥlit relationships, entry 25 caves, IV/17 and Jericho states, coverage and decision planning) · [Agent review](agent_review_2026-10-07/README.md) · [goals](agent_review_2026-10-07/GOALS.md) · [follow-up](agent_review_2026-10-07/followup/README.md) · [entry 60 registry v2](agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json) · [Jericho pools](assessments/entry29_jericho_pools/README.md) · [outcome ledger](progress/outcome_ledger.json) · [backlog](OPEN_QUESTIONS.md) · [Analogues round](logs/analogues_round_2026-10-09.md) (9 October): [failed looks](models/search_effectiveness/README.md), [edition confusions](text/edition_confusions/README.md), [arrival register](preregistration/arrivals/README.md), [salvage records](history/salvage_records/README.md), [PEF finds](history/pef_qs_finds/README.md), [hiding places](comparanda/concealment_contexts/README.md), [staged objectives](plan/STAGED_OBJECTIVES.md) · [Regional round 2](logs/regional_round_2026-10-10.md) (10–11 October): [caves](regional/caves_entry25/README.md), [columbaria](regional/columbaria/README.md), [tombs](regional/tombs/README.md), [water](regional/water_systems/README.md), [hoards](comparanda/hoards_full/README.md), [IAA phase 2](regional/haesi_features/phase2_2026-10-10/README.md) · [Regional round](logs/regional_round_2026-10-09.md) (9 October): [IAA reports](regional/haesi_features/README.md), [1940s maps](regional/mandate_maps/README.md), [east of the Jordan](regional/peraea/README.md), [ASI Jerusalem](regional/asi_jerusalem/README.md) · [R3 pre-registration](preregistration/kohlit_rarity_r3_2026-10-09.md) (approved 9 October, not run)
+
 
