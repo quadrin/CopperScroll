@@ -511,3 +511,9 @@ The attachment matches the archived408-page source. Original Chapter2 pp.50–69
 ## Twin Complex original survey — 15 October 2026 UTC / Los Angeles
 
 The user-supplied Davidovich–Frumkin 2015 pp. 212–215 supplies the missing modern measured survey: Malham 2011 plan, profiles and sections on p. 215. Its East/West pair is explicitly linked to Bar-Adon's Twin Cave; a third cave is named North. Excavation removed most of approximately 8 m of West's sediment, so a present-floor measurement cannot establish an ancient depth. Next obtain the individual-mouth/field-record crosswalk and a dated ancient threshold/level relation. [Exact page findings, exposure and source provenance](sources/late_drive_2026-10-14/twin_2015.md).
+
+
+## Manchester cutting correspondence and Gnazim reply — 15 October 2026
+
+Selected TPA/1/132 scan leaves now identify Wright Baker’s opening-stage photographs (19 October 1955, reference15879/55) and a listed photographic enclosure to J. Waldron (6 March 1956, reference3709/56). The supplied scans omit those photographs; their nominal saw width does not measure cut21/22 damage. Gnazim’s Bar-Adon fonds remain under sorting, with the Twin enquiry passed to the sorter and no cave-specific record confirmed. [Source pages, custody limits and next enclosure checks](sources/archive_replies_2026-10-15.md).
+

@@ -56,3 +56,8 @@ The reproduced VJRI1995 metre-scale Qetorit Cave plan at2026p119 belongs to the 
 The user-supplied Davidovich–Frumkin 2015 extract now supplies printed 212–215, including Malham's 2011 scaled plan, profiles and sections on p. 215. [Original-page findings and provenance](../../sources/late_drive_2026-10-14/twin_2015.md). The atlas explicitly associates its East/West pair with Bar-Adon's Twin Cave and separates a third cave called North. Individual old northern/southern units still require a crosswalk to the atlas mouths/stations; the atlas North label cannot supply it by itself.
 
 P. 212 documents removal of most of approximately 8 m of West's sediment and excavation enlargement of secondary passages. This gives a source-specific reason to recover original floor/threshold levels before applying an ancient-depth model. The modern measured-plan dependency is obtained; the next intake is an identified ancient threshold, wall phase and original survey/level-register tie. The source and all its target imagery are exposed exploratory evidence.
+
+
+## Gnazim reply — 15 October 2026
+
+The owner supplied Amir's reply: Bar-Adon's fonds remain under sorting and are outside the searchable catalogue. The archivist cannot yet locate the requested records; sorting may take a few months. The person sorting the fonds has the query and will report relevant material if it surfaces. No cave-specific item or box is confirmed. Park repeated catalogue searches while that work proceeds; retain the separate licence/field-record routes. [Receipt and implications](../../sources/archive_replies_2026-10-15.md#gnazim-bar-adon-fonds-717).

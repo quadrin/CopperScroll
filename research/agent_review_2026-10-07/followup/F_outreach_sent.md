@@ -22,3 +22,10 @@ Manchester University Library archivist James Peters reports that TPA/1/132 cont
 CBRL Archives and Repository Manager Alice Lubbock considers PEF the likelier custodian of the requested Garstang photographs/negatives. Her preliminary PDF-list check found no pertinent early Jericho item; it is not a complete holdings search. She copied the Kenyon and Amman regional archivists for further confirmation. Shared historical archive ownership and dispersed custody do not establish an exact negative’s location. A terms document was linked but not read. No archive photo, negative register or pre-camp target-strip observation arrived.
 
 The arrival manifest check passed before this retrieval. These are custody/access responses, without XII10 frame data or a located ancient mouth; reserved originals retain their prescribed intake, masking and registration gates.
+
+
+## Further archive replies and selected scans — 15 October 2026
+
+The owner supplied Gnazim's reply and Peters's Manchester Library reply with six TPA/1/132 scan leaves. Gnazim's unsorted Bar-Adon fonds remain unsearchable at item level; the sorter has the Twin enquiry, with possible completion in months and no confirmed cave record. Peters's further Allegro check concerns mainly later work, with little correspondence and no Wright Baker relationship material found. His possible-loss assessment remains an inference.
+
+All six supplied leaves were read after the frozen-manifest check. Wright Baker's 19 October 1955 letter, reference15879/55, reports opening-stage photographs and a planned compound interior photograph. His 6 March 1956 Waldron letter, reference3709/56, lists an enclosed photograph of cutting, absent from this supplied PDF. The general0.006inch blade dimension supplies no target-specific kerf. [Page evidence, custody limits and exact next photograph enquiries](../../sources/archive_replies_2026-10-15.md). No follow-up was sent.
