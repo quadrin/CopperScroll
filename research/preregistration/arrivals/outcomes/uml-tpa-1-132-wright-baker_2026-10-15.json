@@ -1,0 +1,74 @@
+{
+  "item_id": "uml-tpa-1-132-wright-baker",
+  "register_commit": "6fee37615e960da2c68b326b8ed9f91601fab464",
+  "register_commit_time_utc": "2026-10-09T20:20:05Z",
+  "register_push_time_utc": null,
+  "register_pushed_before_arrival": null,
+  "test_status": "exploratory",
+  "arrived_utc": "2026-10-15",
+  "arrival_time_precision": "date only; pasted email timezone and exact receipt not established",
+  "opened_by": "Codex project integrator",
+  "compared_by": "Codex project integrator (same person; sequential locked extraction then comparison)",
+  "manifest_check": "pass",
+  "parts_received": [
+    "Six selected TPA/1/132 scan leaves",
+    "15 October 2026 archivist reply"
+  ],
+  "parts_pending": [
+    "Remaining TPA/1/132 content not supplied; complete-file inspection not demonstrated",
+    "Photograph listed as enclosure to 6 March 1956 Waldron letter, if extant",
+    "Opening-stage photographs and planned compound photograph mentioned 19 October 1955, if extant; no delivery promise"
+  ],
+  "intake": {
+    "files": [
+      {
+        "name": "deadseascrollsTPA_1_132.pdf",
+        "bytes": 4004201,
+        "sha256": "f77d1ed203db010894ce400780516ec8ca0cbb1582a3c5593a05da7e8f254d56",
+        "private_drive_id": "1QYCHkEFl7bzCdXFGrgkE7ZRG8Rk97TTv"
+      }
+    ],
+    "received_by": "Alex Kesin; supplied to integrator in this conversation",
+    "from": "James Peters, University of Manchester Library",
+    "notes": "No full private email text, addresses or source images published. Frozen local materialization initially added a terminal newline; it was corrected to match remote Git blobs before the manifest passed and before content was opened."
+  },
+  "scores": [
+    {
+      "outcome_id": "dec:reading-gate-fails",
+      "evidence": "Selected scan viewers 1–6 contain administrative correspondence/statements, with no target photograph or cut drawing; cannot run XII 10 reading protocol.",
+      "exposed": false
+    },
+    {
+      "outcome_id": "pred1:inconclusive",
+      "evidence": "Viewer 6, 6 March 1956: saw width 0.006 inch (0.1524 mm), general tool description; no cut-21/22 kerf or edge-loss measurement. General dimension agrees with previously read same-author published account.",
+      "exposed": true,
+      "criterion_note": "Frozen confirm and inconclusive criteria overlap for a small general blade width. Use the explicit general-saw-without-cut-21/22 inconclusive rule; record nominal agreement separately."
+    },
+    {
+      "outcome_id": "pred2:silent",
+      "evidence": "Viewers 1–6 provide no cut-position record or text-to-segment mapping.",
+      "exposed": false
+    },
+    {
+      "outcome_id": "closed1:not-triggered",
+      "evidence": "Viewers 1–6 supply no labelled column/cut-face correspondence or Figure 4.6 component-image placement map.",
+      "exposed": false
+    },
+    {
+      "outcome_id": "item:partial",
+      "evidence": "Peters calls the scan leaves examples from TPA/1/132; viewer 6 lists a photographic enclosure absent from this six-page PDF.",
+      "exposed": false
+    },
+    {
+      "outcome_id": "item:unregistered-observation",
+      "evidence": "Viewer 4, 19 October 1955, reference 15879/55; viewer 6, 6 March 1956, reference 3709/56: specific photograph and enclosure trails.",
+      "exposed": false
+    }
+  ],
+  "unregistered_observations": [
+    "Wright Baker reported many opening-stage photographs on 19 October 1955 and expected a compound photograph within two days.",
+    "The 6 March 1956 Waldron letter lists an enclosed photograph of cutting; that photograph is absent from the supplied scan."
+  ],
+  "excluded_decision_classes": [],
+  "notes": "Partial acquisition; silence/reading-gate failure excludes no reading or site model. Nominal blade width repeats the same-author observational lineage. Exact register push time unverified, so exploratory treatment. Original photograph leads are retrieval metadata, not a held-out reading or R11 reopening. One person performed extraction and comparison."
+}

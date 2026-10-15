@@ -22,3 +22,19 @@ Manchester University Library archivist James Peters reports that TPA/1/132 cont
 CBRL Archives and Repository Manager Alice Lubbock considers PEF the likelier custodian of the requested Garstang photographs/negatives. Her preliminary PDF-list check found no pertinent early Jericho item; it is not a complete holdings search. She copied the Kenyon and Amman regional archivists for further confirmation. Shared historical archive ownership and dispersed custody do not establish an exact negative’s location. A terms document was linked but not read. No archive photo, negative register or pre-camp target-strip observation arrived.
 
 The arrival manifest check passed before this retrieval. These are custody/access responses, without XII10 frame data or a located ancient mouth; reserved originals retain their prescribed intake, masking and registration gates.
+
+
+## Further archive replies and selected scans — 15 October 2026
+
+The owner supplied Gnazim's reply and Peters's Manchester Library reply with six TPA/1/132 scan leaves. Gnazim's unsorted Bar-Adon fonds remain unsearchable at item level; the sorter has the Twin enquiry, with possible completion in months and no confirmed cave record. Peters's further Allegro check concerns mainly later work, with little correspondence and no Wright Baker relationship material found. His possible-loss assessment remains an inference.
+
+All six supplied leaves were read after the frozen-manifest check. Wright Baker's 19 October 1955 letter, reference15879/55, reports opening-stage photographs and a planned compound interior photograph. His 6 March 1956 Waldron letter, reference3709/56, lists an enclosed photograph of cutting, absent from this supplied PDF. The general0.006inch blade dimension supplies no target-specific kerf. [Page evidence, custody limits and exact next photograph enquiries](../../sources/archive_replies_2026-10-15.md). No follow-up was sent.
+
+
+## Targeted follow-ups sent — 15 October 2026
+
+At the owner's instruction, replies were sent in the existing Gnazim and University of Manchester Library threads. Recipient, sender account, reply linkage, body and SENT status were read back after sending. This verifies Gmail submission, without implying delivery, a reply or access approval. Private addresses, message identifiers and quoted correspondence remain outside this record.
+
+Gnazim: offered to inspect unsorted Bar-Adon folders under staff guidance while preserving their order, focusing on Twin Cave notebooks, plans, sections, levels and photographs. Asked whether provisional box lists or sorter-identified folders could support access before cataloguing finishes, and requested advance-request, appointment, permission and fee requirements. No appointment or chargeable work was agreed.
+
+Peters: identified the 19 October 1955 letter to Harding, reference15879/55 (scan viewer4), and the 6 March 1956 letter to J. Waldron, reference3709/56 (viewer6). Asked whether the latter's listed photograph survives with the letter, among separate enclosures or in a linked photographic series; whether any removal/transfer record survives; and whether the opening-stage or compound photograph has catalogue or custodian pointers. Requested confirmation/identifiers first and advance notice of chargeable reproduction. The photographic originals remain subject to the arrival and masking protocols.

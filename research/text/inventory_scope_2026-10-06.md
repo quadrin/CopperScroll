@@ -153,3 +153,7 @@ The volumeII native plate index confirms physical segments, without independentl
 ## Numbered-label roles — 12 October 2026
 
 The [source-grounded inventory-role comparison](../comparanda/inventory_forms_2026-10-12/README.md) preserves Herodium’s tentative 40/35, hidden-place/hidden-object alternatives and contextual contents inference. Source-indexed Masada comparators distinguish explicit capacity units from ambiguous numeric labels. This finite comparison specifies discriminating observations for places, objects/lots, counts, contents and retrieval instructions; it reopens neither the closed ownership/unit/date assessment nor ordering/roundness tests.
+
+## Cotton2022 supplied documentary controls — 14 October2026
+
+The extraction reports aligned name/age columns in P.Se’elim4 (181–182,375–377), with no preserved exact date/place. Its persons/register totals require original-page verification: reported49 differs from component minima14+13+21=48. The127CE land declarations/tax comparison (369–374) is a modern comparative table, not proof of ancient tabular layout. Reported4Q348 and P.Mur29/30 date arguments preserve attributed alternatives and combined context; language alone cannot date the Scroll. [Document-specific controls, missing witnesses and source lineage](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/sources/perlego_captures_2026-10-14/cotton.md).

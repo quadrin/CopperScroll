@@ -4,6 +4,8 @@ Start with [the active test](ACTIVE_TEST.md) and the session workflow in [AGENTS
 
 Read the [current site review](sites/site_identification_review.md) for the latest site-level assessment, then use the reports below for the evidence, competing readings, and unresolved tests. A site's confidence does not identify a particular cave, cistern, pool, or deposit. The [findings log](logs/findings_log.md) preserves dated revisions; [open questions](logs/open_questions.md) preserves the remaining work.
 
+The [14October new-resource sweep](sources/new_batch_2026-10-14/README.md) records source changes against prior findings, exact reading checkpoints, copy repairs and the inventory-image exposure uncertainty.
+
 ## Foundation: five phases
 
 | Report | Question |

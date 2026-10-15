@@ -1,0 +1,62 @@
+{
+  "source": "work/jericho/raw/jpos.pdf",
+  "assigned_range": "PDF181–261 inclusive",
+  "total_pdf_pages_read": 81,
+  "mode": "Full extracted-text reading including footnotes, plus targeted original page inspection and every figure/plate in assigned range",
+  "limitations": [
+    "Arabic and Hebrew/Greek script not re-edited philologically; OCR snippets are not approved transcriptions",
+    "Petra photographs are grainy and have no survey scale; images do not independently establish discussed water connections or chronology",
+    "Nielsen installment explicitly continues beyond this volume section; this review covers the supplied installment only",
+    "PDF261 is marked J.P.O.S.XII, unlike main volume XI; binding/scanning anomaly unresolved"
+  ],
+  "articles": [
+    {
+      "author": "T. Canaan",
+      "title": "Unwritten Laws Affecting the Arab Woman of Palestine",
+      "printed_pages": "172–203",
+      "pdf_pages": "181–212",
+      "coverage": "Complete article text and footnotes read; scripts checked on PDF183,189,192,211; no figures present",
+      "read_status": "complete_with_transcription_limitations"
+    },
+    {
+      "author": "Albrecht Alt",
+      "title": "Beiträge zur historischen Geographie und Topographie des Negeb",
+      "printed_pages": "204–221",
+      "pdf_pages": "213–230",
+      "coverage": "Complete main article and appendix text and footnotes read; key Greek forms and footnotes visually checked PDF215,216,218,221,225; no figures present",
+      "read_status": "complete"
+    },
+    {
+      "author": "Ditlef Nielsen",
+      "title": "The Mountain Sanctuaries in Petra and Its Environs",
+      "printed_pages": "222–237",
+      "pdf_pages": "231–246",
+      "coverage": "Complete installment text and footnotes read; figures1–5 visually inspected PDF238,240,241,242,245; source says To be continued, continuation absent from assigned range",
+      "read_status": "complete_present_installment"
+    },
+    {
+      "author": "G. Dalman",
+      "title": "Note: Zu D. Nielsen, The Mountain Sanctuaries in Petra",
+      "printed_pages": "237–240",
+      "pdf_pages": "246–249",
+      "coverage": "Complete reply text read; PDF247–248 visually checked",
+      "read_status": "complete"
+    },
+    {
+      "author": "W. F. Albright",
+      "title": "The Site of Tirzah and the Topography of Western Manasseh",
+      "printed_pages": "241–251",
+      "pdf_pages": "250–260",
+      "coverage": "Complete text and footnotes read; key Hebrew/Greek and place-name forms visually checked PDF252,253,256,259; no illustrations in article",
+      "read_status": "complete"
+    },
+    {
+      "author": "not determined from standalone plate",
+      "title": "Tell Hamad aerial view; anomalous terminal plate",
+      "printed_pages": "Pl. I, marked J.P.O.S. XII",
+      "pdf_pages": "261",
+      "coverage": "Plate and caption visually inspected; provenance mismatch marked; not attributed to XI articles",
+      "read_status": "complete_caption_and_image"
+    }
+  ]
+}

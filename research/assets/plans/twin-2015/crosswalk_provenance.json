@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-15",
+  "purpose": "Metadata and retrieval record for privately preserved source figures used in crosswalk; no image publication or coordinate registration",
+  "sources": {
+    "bar_adon_1989_capture_2026_10_02": {
+      "title": "Pessah Bar-Adon, Excavations in the Judean Desert (Atiqot Hebrew 9, 1989), chapter B: Twin Cave",
+      "drive_id": "1avRkndT45m6rAriKhGMQvCX8EGP4KNxz",
+      "url": "https://drive.google.com/file/d/1avRkndT45m6rAriKhGMQvCX8EGP4KNxz/view",
+      "bytes": 73074606,
+      "sha256": "c4bfd44036c1fb98ad6fcb1f3e212ed02795e66604c87c04cba1a47964c032a4",
+      "pdf_pages": 102,
+      "target_mapping": [
+        {
+          "printed": "[15]",
+          "viewer": [
+            20
+          ],
+          "scope": "Complete target prose and B1 landscape photograph"
+        },
+        {
+          "printed": "16",
+          "viewer": [
+            20,
+            21
+          ],
+          "scope": "B2 pottery/glass drawings and discussion"
+        },
+        {
+          "printed": "17",
+          "viewer": [
+            21,
+            22
+          ],
+          "scope": "B2 descriptive table and discussion; no measured cave plan"
+        }
+      ],
+      "capture_distinction": "This is the 2026-10-02 capture. Preserve the existing 2026-10-01 receipt and viewers 24–26 for Drive 1OSq6pWIhxHAkbOAeLbbWUT1GvteP3e6t (194,165,136 bytes / 97 pages)."
+    },
+    "davidovich_frumkin_2015": {
+      "title": "Uri Davidovich and Amos Frumkin, מכלול התאומות (2015), pp. 212–215",
+      "url": "https://drive.google.com/file/d/1myf103Yzzc7G4ukNzR2r6aRZRK8arOWC/view",
+      "bytes": 850244,
+      "sha256": "0e7ada078918f5212643ca19766c6241fb28a2d1c2ddbbceade304a562c0b6b1",
+      "pdf_pages": 9,
+      "target_mapping": [
+        {
+          "printed": "212–215",
+          "viewer": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "scope": "Target prose, labelled landscape photograph, cave photographs, Malham 2011 survey with 5 m scale and N arrow; reread for crosswalk"
+        }
+      ]
+    },
+    "vjri_1995_reproduced_2026": {
+      "title": "Larry D. Banks and Noland S. Downing, Preliminary Report: April 1992 Excavations at Qumran; first published by VJRI in 1995, reproduced in The Ketoret (2026), Appendix D",
+      "url": "https://drive.google.com/file/d/1OLTsmNMaJwNNYsCcVRYuxrWFcNi4SrVe/view",
+      "bytes": 19701417,
+      "sha256": "c87ee3f592e9593901581d3db6a827a08d913b93040e11203d98f0772523cc3a",
+      "pdf_pages": 158,
+      "target_mapping": [
+        {
+          "printed": "114–116,119",
+          "viewer": [
+            114,
+            115,
+            116,
+            119
+          ],
+          "scope": "Author/header, North Cave entrance and interior photographs, geological/mouth account, Downing Qetorit plan with metre axes"
+        }
+      ],
+      "excluded": "AppendixF images and reserved manuscript images not opened."
+    }
+  },
+  "rights": "No open reuse permission established; source images and comparisons remain private. Complete original PDFs are preserved in the cited project Drive files.",
+  "assets": [
+    {
+      "file": "bar15_whole.png",
+      "sha256": "8def641222fa1316908888241b941fb4a15d1f1cbb50d12f2740eec750e3f8fe",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "Bar-Adon capture viewer 20,clip(270,35,540,370),4xfitz",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "bar16_B2_lower.png",
+      "sha256": "22e54b2dadb4c56e43c09b221e05a36a756eb0b511fc6c75a81637ff03fa3d39",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "bar16_B2_upper.png",
+      "sha256": "2c6ffa7ab6d2b217bc401b7eab5bc09d49cdf3e11b7b2507f06db93c028f36e9",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "bar_020.png",
+      "sha256": "95822a3059aca4c39eb40e9dba7bb0659cdf4d682e3182b80bd9907e1737a4f9",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "bar_021.png",
+      "sha256": "68c36f706f2e7cafce65a14b7ca80c7963ee1d534f9c2460ed83f463c3c2aa04",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "bar_022.png",
+      "sha256": "8b551172394ad205fea637d1cc0f140c371a078fc9da2661267a27ba03dc8431",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "north_photo_comparison.png",
+      "sha256": "5ff05692f8a8dd15b408ebd7fa96b36576bb9c988a42841c3d943728b279ce4e",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "VJRI p.116 crop (650,860,1080,1470)from 2x render;atlas p.214 crop (459,126,800,635)from existing render;side by side without registration",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "vjri_114.png",
+      "sha256": "1038a208b3b27aba6b9230d7eb37c78f667db9eb74706bc503fe9c129cd701a5",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "vjri_115.png",
+      "sha256": "7806c032197c1e54cf01bea09656e4ced1202450d24a72ac3c4d3be11434c15b",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "vjri_116.png",
+      "sha256": "51e5be330641c7ae5dfb83f53edb559db8f9abdc45d59d4f1b399731d154dcea",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "vjri_119.png",
+      "sha256": "1838e55fa51b43203f55542861f1d7d5bf6a2b1f77a3370ca34eedee1675baa0",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    },
+    {
+      "file": "vjri_121.png",
+      "sha256": "639f78f130e12121c93eade00c0768c373a5fa6ae8e009de9dab10186c2bbd25",
+      "kind": "Private inspection render or comparison; not georeferenced",
+      "source_recipe": "See source viewer in filename; original native PDF remains authoritative",
+      "preservation": "Retained within cited complete private original; working renders reproducible by stated crop/page recipe"
+    }
+  ],
+  "figure_scopes": [
+    {
+      "source": "bar_adon_1989_capture_2026_10_02",
+      "printed_pages": "[15]–17",
+      "viewers": "20–22",
+      "figures": "B1 southeast-view landscape photograph; B2 pottery/glass drawings and catalogue",
+      "scale_north": "B1 has no metric scale or N arrow; do not measure mouths from it"
+    },
+    {
+      "source": "vjri_1995_reproduced_2026",
+      "pages": "114–116,119,121",
+      "figures": "Entrance/interior photographs, Downing plan and context",
+      "scale_north": "P119 retains metre axes; north convention/coordinate header unresolved; original captions retained"
+    },
+    {
+      "source": "davidovich_frumkin_2015",
+      "pages": "212–215",
+      "figures": "Photographs and survey retained in original manifest.json",
+      "scale_north": "P215 5m bar and N arrow; north reference unspecified"
+    }
+  ],
+  "preview_legend": {
+    "title": "Frumkin(ed.)2015 Atlas, legend of cave spaces",
+    "printed_page": "ח",
+    "viewer_page": 4,
+    "source_url": "https://www.magnespress.co.il/api/magnes/book/5737/preview",
+    "private_drive_id": "16WIcsWUzgzJPchQiPAbz1JOzUfrzVPOz",
+    "sha256": "e88e3a8761b335d8cd6159c6895f8da9ac6e0cf21ff48c0918462e2f2ed91f50",
+    "bytes": 323682,
+    "verification": "Current publisher PDF and existing Drive native original match byte hash",
+    "observation": "Dashed curve is drip line; orange letters are passage sections",
+    "scale_north": "Schematic legend, no metric scale or geographic N"
+  }
+}

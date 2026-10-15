@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-14",
+  "group": "lexicon",
+  "status": "All supplied spreads inspected; all available readable text read, with a named legibility gap",
+  "sources": [
+    {
+      "source_index": 26,
+      "canonical_publication": "Michael Sokoloff, A Dictionary of Jewish Palestinian Aramaic of the Byzantine Period, 1990; second printing1992",
+      "raw_sha256": "92ea57e9e3a42ac26bf40bdf471c4736b23885b1bf7a00b405463dec5909667e",
+      "raw_bytes": 46968613,
+      "viewer_page_count": 415,
+      "viewer_unit": "two-page scan spread",
+      "embedded_text_pages": 0,
+      "text_read_viewer_ranges": [
+        [
+          1,
+          415
+        ]
+      ],
+      "selective_lexical_inspection_viewer_ranges": [],
+      "index_inspection_only_viewer_ranges": [],
+      "native_pages_viewed_ranges": [
+        [
+          1,
+          415
+        ]
+      ],
+      "unread_text_viewer_ranges": [],
+      "printed_page_mapping": "For inspected numbered spreads from viewer5 onward: left printed=2*viewer-8; right=2*viewer-7. Mapping not independently checked on every intermediate spread.",
+      "source_completeness": "All supplied spreads inspected; remaining character-level limitation localized as specified in legibility_gaps.",
+      "reserved_images_opened": false,
+      "next_reading": "Recover a clearer source for the damaged MoedQatan80c(46) index headword on printed778; underlying indexed manuscripts remain uncollated.",
+      "evidence_classification": "new direct lexical-source scope controls; no archaeological corroboration",
+      "available_readable_text_complete": true,
+      "whole_publication_character_complete": false,
+      "legibility_gaps": [
+        {
+          "viewer": 393,
+          "printed": [
+            778,
+            779
+          ],
+          "scope": "After original embedded-image and column-crop inspection, most main index rows are readable. Local damage remains in the headword at MoedQatan80c(46), principally middle letters on printed778. No complete diplomatic recovery claimed.",
+          "updated_receipt": "continuation_visual_coverage.json"
+        }
+      ],
+      "reading_contributors": [
+        "Root viewer1–42 and414–415",
+        "lexicon_a_coverage.json viewer43–220",
+        "lexicon_b_coverage.json viewer221–413"
+      ],
+      "additional_native_receipt": "continuation_visual_coverage.json"
+    }
+  ]
+}

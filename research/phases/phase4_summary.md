@@ -164,7 +164,7 @@ The full table, with sources and pages, is `tables/phase4_hypotheses.csv`.
 - **Photographs, not drawings,** of II 4 (Θ or Ξ), III 7 (a third letter?) and IV 2 (the first letter, and the cancelled Ι).
 - **3D surface data** for depth and tool marks. This would test H5 (later addition) and H6 (a different hand for the values) and Lika Tov's 2 mm.
 - **A list of personal names only,** fixed before testing, for example a lexicon of Jewish names of the period (BK: Ilan 2002). It would give a stricter name baseline than Josephus's proper nouns.
-- **The originals of the second-hand reports:** Ullendorff 1961, Pixner 1983, Stegemann, Weitzman, Richey 2012, Beyer 1994.
+- **Original-paper access updated, 14 October 2026:** Ullendorff1961 pp227–228, Pixner1983 pp323–365, Richey2012 pp177–197 and Weitzman2015 pp423–447 have now been read directly in the supplied papers. Their proposals, dependencies and exact text/native coverage are recorded in the [new source review](../sources/new_batch_2026-10-14/copper_changes.md). This corrects the earlier secondhand-access status for those papers. Stegemann and Beyer1994 remain separate source needs; reading Wolters's earlier articles does not establish access to his1996 *Overview, Text and Translation*. His1994 history paper was already read in an earlier session.
 
 ## 7. Files
 

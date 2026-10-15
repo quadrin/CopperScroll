@@ -67,3 +67,10 @@ So the saw cut can be set aside as an explanation for a missing yod. The he/ḥe
 - **Blocked during this check:**
   - Google Books (HTTP 429);
   - the BAS Library article "The Mysterious Copper Scroll" (paywall).
+
+
+## Contemporary correspondence supplied — 15 October 2026
+
+The six selected TPA/1/132 leaves are now directly read. Wright Baker's 6 March 1956 letter to J. Waldron, viewer6, specifies a1¼inch diameter and0.006inch width saw (31.75mm /0.1524mm). This repeats the same author's published nominal dimension. It gives no measured kerf or cut-21/22 edge loss. The frozen arrival comparison uses `pred1:inconclusive` because its explicit general-saw criterion lacks a target tie. No geometric or letter-reading inference is added from the institutional assurance on viewer1.
+
+The 19 October 1955 letter reports many opening-stage photographs and a planned compound photograph; the 6 March 1956 letter lists an enclosed photograph of cutting. Neither original photograph appears in the supplied six pages. These precise documentary trails guide the next enclosure/custody check. [Source pages, exposure and outcome](../../sources/archive_replies_2026-10-15.md).

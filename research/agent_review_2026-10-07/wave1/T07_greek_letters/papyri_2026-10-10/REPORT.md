@@ -63,3 +63,7 @@ INFERENCE: the papyri lane agrees with the IIP lane. There is no Greek abbreviat
 `corpus_inventory.csv` · `hgv_regional_records.csv` · `hits_graded.csv` (original columns plus series, document, line, editor expansion, window, candidate kind, TM) · `occurrences_in_window.csv` (every occurrence, including in-word, for audit) · `chance_expectation.json` · `system_assessment_papyri.csv` · `system_test_papyri_abbreviation_vocabulary.json` · `scripts/` (`hgv_provenance.py` is an exploratory scan of the 2010 metadata dump).
 
 Reproduce: `python3 -I scripts/hgv_epidoc_provenance.py <idp.data>/HGV_meta_EpiDoc hgv_regional_records.csv`; `python3 -I scripts/extract.py <idp.data> hgv_regional_records.csv <work>`; `python3 -I scripts/grade.py <work> . ../data`.
+
+## Cotton2022 supplied extraction — 14 October2026
+
+Cotton’s reported P.Yadin18 line76 title-abbreviation proposal (125n48) depends on a photograph absent from this intake and reportedly differs from its published plate. P.Se’elim4’s age numerals have an explicit column function, without a Scroll-group match. The2022 reprints repeat the same documents; they add no verification of the existing ΗΝ currency-abbreviation witness or engraving-order observation. [Exact retrieval lead and attribution limits](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/sources/perlego_captures_2026-10-14/cotton.md).

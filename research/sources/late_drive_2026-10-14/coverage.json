@@ -1,0 +1,133 @@
+{
+  "date_utc": "2026-10-14",
+  "reader": "Codex /root",
+  "analysis": "exploratory bounded intake",
+  "frozen_manifest_check": "pass (29 files)",
+  "raw_archive_arrival_scored": false,
+  "sources": [
+    {
+      "name": "WBADB_data.xlsx",
+      "bytes": 1972863,
+      "sha256": "3db734cdc1a705a6b40a5026fd98965e2e64f14313589cefae223e58bd9dea5b",
+      "kind": "owner-supplied research workbook",
+      "text_scope": "tab headers inspected; allrow text searched for named cave/site/licence aliases; selected matching rows read; unrelated hits excluded; no full site inventory reading or geospatial conversion",
+      "visual_pages": [],
+      "complete_original_publication": false
+    },
+    {
+      "name": "Browning1996-Strange_Search_for_Ashes_of_Red_Heifer-BA59-1996-mono.pdf",
+      "bytes": 8043980,
+      "sha256": "dc73c5417d5ff083336b7bfbd7d3e276ea39935ce523d28a5678014ce962293e",
+      "kind": "journal contents plus article",
+      "pages": 17,
+      "text_scope": "OCR acquired all17; close reading pp74–78,82–89; pp79–81 OCR navigation only",
+      "visual_pages": [
+        1,
+        13
+      ],
+      "complete_original_publication": false
+    },
+    {
+      "name": "The_Ketoret_2026_with_VJRI_1995_Reports.pdf",
+      "bytes": 19701417,
+      "sha256": "c87ee3f592e9593901581d3db6a827a08d913b93040e11203d98f0772523cc3a",
+      "kind": "2026 narrative with reproduced1995 reports",
+      "pages": 158,
+      "text_scope": "targeted text close-reading: narrative31–32,37–43,61–62,66–68,87–90; reproduced100–101,103–104,115–122,124–126,129;130–134 interview text; title/contents,98,114,158; other searchable text extracted only",
+      "visual_pages": [
+        115,
+        116,
+        119,
+        121,
+        122
+      ],
+      "withheld_visual_pages": [
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157
+      ],
+      "complete_original_publication": false
+    },
+    {
+      "name": "attara-evidence.html",
+      "bytes": 25150,
+      "sha256": "aa4673939c29a633ac47cbf34044284911231a62bf401b3f51c899f06eeb0889",
+      "kind": "owner-supplied derivative research dossier",
+      "text_scope": "complete dossier text read; original notebooks not obtained; only Grant1921, BL Q and Kamel f.5 citation independently checked here",
+      "visual_pages": [],
+      "complete_original_publication": false
+    },
+    {
+      "name": "attara-historic-excerpts.pdf",
+      "bytes": 525121,
+      "sha256": "90ba4426fbf4827e5123a19a7fa4d5314888228ae1cdabcdc33964249d4253fb",
+      "kind": "selected historical source-page packet",
+      "pages": 9,
+      "text_scope": "packet text/OCR pages1–9, selected native comparison; whole volumes not read",
+      "visual_pages": [
+        2,
+        5,
+        7,
+        8,
+        9
+      ],
+      "complete_original_publication": false
+    },
+    {
+      "name": "Itah_Kam_Ben-Haim_2002_Region_X.pdf",
+      "bytes": 3695103,
+      "sha256": "f331321711b242d1b273d49338286c0628b60a247025e4d5cf93f25a61a43988",
+      "kind": "English article plus portal cover",
+      "pages": 8,
+      "text_scope": "searchable text extracted allpages; close reading pp169–172,175 and coverage/conclusion passages; Hebrew maps/figures referenced but absent",
+      "visual_pages": [
+        4
+      ],
+      "complete_original_publication": false
+    },
+    {
+      "name": "Amar_1998_Ash_and_Red_Material.pdf",
+      "bytes": 907617,
+      "sha256": "366763539940779268a168fedb37158ef80c81df56ff1a78898b2fe26d6fa1ec",
+      "kind": "journal article plus JSTOR cover",
+      "pages": 16,
+      "text_scope": "pp1–9 and11–15 text read; p10 text extracted but reading unclaimed",
+      "visual_pages": [
+        2
+      ],
+      "complete_original_publication": false
+    },
+    {
+      "name": "Frumkin_2015_Atlas_publisher_preview.pdf",
+      "bytes": 323682,
+      "sha256": "e88e3a8761b335d8cd6159c6895f8da9ac6e0cf21ff48c0918462e2f2ed91f50",
+      "kind": "publisher preview",
+      "pages": 9,
+      "text_scope": "contents/legends and introduction screened; target body pages212–215 absent",
+      "visual_pages": [
+        2
+      ],
+      "complete_original_publication": false
+    }
+  ]
+}

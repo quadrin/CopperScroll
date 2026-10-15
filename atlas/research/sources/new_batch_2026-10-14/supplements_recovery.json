@@ -1,0 +1,47 @@
+{
+  "parent_source_index": 37,
+  "recovery_date_utc": "2026-10-14T20:07:07.192331+00:00",
+  "status": "partly",
+  "items": [
+    {
+      "identity": "Stroth et al.2023 Supplemental Table1",
+      "chapter_doi": "10.1007/978-3-031-27330-8_48",
+      "url": "https://media.springernature.com/original/springer-static/esm/chp%3A10.1007%2F978-3-031-27330-8_48/MediaObjects/518261_1_En_48_MOESM1_ESM.xlsx",
+      "private_file": "stroth_table1.xlsx",
+      "bytes": 154252,
+      "sha256": "548378e04f89c5bd8e64661eaed34020a3870ebf5ef93aafb6f2803d24392da0",
+      "scope": "All populated cells, formulas, cached values and notes rows in all4worksheets read; zero ranges distinct from blanks. No hidden sheets/rows/columns, comments, defined names, charts or embedded images. Source workbook unchanged.",
+      "quantitative_reuse": "Context alignment and count/weight anomalies require reconciliation."
+    },
+    {
+      "identity": "Ridder/Fall/Falconer2023 SupplementaryVideo1 publisherMP4transcode",
+      "chapter_doi": "10.1007/978-3-031-27330-8_68",
+      "url": "https://e.video-cdn.net/watch?video-id=7VXJ8V7ieAQsT-f6tR32vf&player-id=-qZL2aSgACrhe2fEUstC_v&channel-id=86512",
+      "private_file": "ridder_video1_720p.mp4",
+      "bytes": 7658879,
+      "sha256": "052fcf4beee66cdc4f3e05f34e6e6ae4f12240a544b342a7291ae5ded5ddb523",
+      "scope": "60native decoded samples at2fps throughout30.04-second visual stream; complete audio decoded and all samples zero; not all751frames inspected.",
+      "original_avi": "Not obtained or verified as byte-identical. Publisher labels original AVI161602kB."
+    },
+    {
+      "identity": "Gadot/Kleiman/Uziel2023 Figure1 map",
+      "chapter_doi": "10.1007/978-3-031-27330-8_33",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-27330-8_33",
+      "status": "not obtained",
+      "attempts": [
+        {
+          "url": "https://link.springer.com/content/pdf/10.1007/978-3-031-27330-8_33.pdf",
+          "web_reader_result": "Internal Error: URL not accessible via this tool",
+          "binary_reader_result": "HTTP200 text/html subscription preview,416669bytes,notPDF"
+        },
+        {
+          "url": "https://cris.tau.ac.il/en/publications/the-interconnections-between-jerusalem-and-samaria-in-the-ninth-t/",
+          "result": "Metadata only, DOI and Scopus links; no manuscript or figure attachment."
+        }
+      ],
+      "bounded_search": "Publisher chapter/PDF route, relevant DOI/title correction search and author-institution record; no relevant correction found; no outreach."
+    }
+  ],
+  "copyright": "Separate publisher-hosted supplements associated with modern copyrighted chapters. No public reproduction licence established; source files and imagery kept private. Public record contains original observations and provenance only.",
+  "protected_visuals": "No protected Copper Scroll or reserved fine Tell es-Sultan imagery opened."
+}

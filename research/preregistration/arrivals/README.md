@@ -128,3 +128,9 @@ python3 -I -B -m unittest discover -s research/preregistration/arrivals -t resea
 3. Fill the "Registration commit" line above with the commit that first adds MANIFEST.md.
 4. Before the L-656 file or the IAA records arrive, freeze two things. First, an Entry 25 mouth-aspect rule. Second, the IV/17 target declarations: zone outline, origin point, sector, depth band and radial tolerance. Without them neither item can separate the bearing classes or decide coverage.
 5. Optional: register the supplied but unread Tier 1 records in the same way before anyone reads them. These are the ʿAtiqot 41 cave entries, Zertal vol. 4 site 194, HA 28–29, Highlands pp. 700–702 and the IAA notices on Kh. ʿAlmit. They are the cheapest Pylos-type tests in the repository.
+
+
+## Selected Manchester arrival — 15 October 2026
+
+Selected TPA/1/132 scan leaves and the archivist’s reply are recorded in [the outcome](outcomes/uml-tpa-1-132-wright-baker_2026-10-15.json), with [source-page extraction and custody findings](../../sources/archive_replies_2026-10-15.md). The frozen register and ranking above describe the 9 October baseline. The new record is exploratory because the exact first push time was not established. Original photographs listed in the correspondence were not supplied. Predictions in `items/`, `register.json` and the frozen manifest remain preserved.
+
