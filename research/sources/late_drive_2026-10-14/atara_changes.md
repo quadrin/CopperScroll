@@ -18,3 +18,8 @@ Kamel2014, [Bologna publication](https://amsacta.unibo.it/3447/1/KAMEL.pdf), PDF
 
 [File hashes and inspection scopes](coverage.json). [Private figure preservation](../../assets/plans/late-drive-2026-10-14/README.md).
 
+
+
+## Abel1931 original now inspected — 15 October UTC
+
+JPOSXI printed141–143/viewers146–148 is now directly read, including footnotes. Its Atara argument concerns charter-name segmentation and1160 habitation. The well and birkeh on143 belong to Scopus/Shaʿfat's Montjoye establishment, citing Guérin JudéeI395; they must not be transferred to Atara's reservoirs. This replaces the preceding dossier-only access status for Abel's article. [Original-page comparison, copy and chronological limits](jericho_review.md).
