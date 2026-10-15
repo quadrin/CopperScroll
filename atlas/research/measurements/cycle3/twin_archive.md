@@ -66,3 +66,7 @@ The owner supplied Amir's reply: Bar-Adon's fonds remain under sorting and are o
 ## Unsorted-access follow-up sent — 15 October 2026
 
 The owner offered staff-guided consultation of unsorted Bar-Adon material before cataloguing finishes. The reply asks about provisional lists or folders identified by the sorter, access procedures, appointments, permissions and advance fee information. Gmail SENT status and reply linkage were verified; access and cave-specific holdings await Gnazim's response. [Sent record](../../agent_review_2026-10-07/followup/F_outreach_sent.md#targeted-follow-ups-sent--15-october-2026).
+
+## Historical mouth-name crosswalk — 15 October 2026
+
+The original Bar-Adon description and atlas pair association now support northern cavity → atlas East and southern cavity → atlas West at cavity level. Atlas North is the separate northern cave, probably the VJRI North/Qetorit cave. This narrows the relevant historical northern-threshold retrieval to the East member, subject to an original cave/season/mouth/level join. No historical survey station, ancient elevation or Cave A/B locus label transfers from the name match. [Source crosswalk and exact limits](../../sources/late_drive_2026-10-14/twin_2015.md#historical-name-crosswalk--15-october-2026).

@@ -32,3 +32,6 @@ The2026 compilation's pp.66–68 and87–90 supplies later participant testimony
 
 [Source hashes and precise inspection scope](coverage.json). [Private asset manifest](../../assets/plans/late-drive-2026-10-14/README.md).
 
+## VJRI–atlas cave comparison — 15 October 2026
+
+The VJRI North/Qetorit entrance/interior views and reproduced p. 119 plan probably correspond to atlas North, on the northeastern mouth, broad passage shape and photograph comparison. This remains a source-visual cave-level association; no VE/VW-to-Malham station or ancient-threshold join follows. Bar-Adon's northern member of the two-cavity Twin pair instead corresponds to atlas East. Keep the two uses of “north” separate. [Original-source crosswalk](twin_2015.md#historical-name-crosswalk--15-october-2026) · [source and page receipts](twin_crosswalk.json).

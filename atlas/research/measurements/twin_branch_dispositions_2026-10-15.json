@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "baseline": "b17bccff005430a0fa8360323849e39736cf65f5",
+  "date": "2026-10-15",
+  "scope": "Exploratory reconciliation of exposed published geometry; no frozen inventory rerun or formal-result mutation.",
+  "candidate_assignment": "Twin: atlas East+West aggregate, corresponding provisionally to Bar-Adon northern+southern units",
+  "bounded_claim": {
+    "claim": "The mapped East+West aggregate has exactly two exterior openings under frozen regional PLAN C3.",
+    "result": "rejected",
+    "basis": "At least three explicitly labelled exterior apertures: West front entrance, West roof opening, East front mouth.",
+    "state": "reported (Malham2011, published2015)",
+    "convention": "Frozen inventory coding/model convention; no editor-established all-aperture exactness claimed.",
+    "whole_site_identification": "not identifiable from available evidence"
+  },
+  "native_evidence": [
+    {
+      "printed_page": 212,
+      "viewer_page": 1,
+      "observation": "West front opening and an additional roof opening; East and West are the pair named by Bar-Adon; two separate caves."
+    },
+    {
+      "printed_page": 215,
+      "viewer_page": 4,
+      "observation": "Plan labels West front entrance, West roof opening and East mouth; internal West lower passage rejoins main passage at both ends."
+    }
+  ],
+  "branches": [
+    {
+      "id": "reported-exact-total",
+      "assignment": "East+West",
+      "state": "reported",
+      "count_rule": "C3 exactly2; roof counts when called entrance/opening",
+      "disposition": "contradicted",
+      "effect_scope": "Count clause for this aggregate and coding convention only; either pillar/terrace and cave/both-mouth attachment."
+    },
+    {
+      "id": "reported-minimum-total",
+      "assignment": "East+West",
+      "state": "reported",
+      "count_rule": "s_open_ge2",
+      "disposition": "compatible_on_count_only",
+      "effect_scope": "No full-form or orientation pass; selected mouths and roof role still need definition."
+    },
+    {
+      "id": "two-principal-front-entrances",
+      "assignment": "East+West front mouths",
+      "state": "reported",
+      "count_rule": "Principal human/front entrances",
+      "disposition": "front_pair_documented",
+      "effect_scope": "Needs explicit textual/feature-role argument to identify these two with text; roof remains an exterior aperture."
+    },
+    {
+      "id": "two-selected-apertures",
+      "assignment": "Any selected2 within East+West",
+      "state": "reported",
+      "count_rule": "Subset selection",
+      "disposition": "cannot_satisfy_exact_total_C3",
+      "effect_scope": "Explicitly register any changed assignment and its justification; retain complete exterior inventory."
+    },
+    {
+      "id": "ancient-exact-total",
+      "assignment": "East+West",
+      "state": "ancient",
+      "count_rule": "C3 exactly2",
+      "disposition": "unknown",
+      "missing": [
+        "Roof formation/access phase",
+        "Ancient aperture boundaries",
+        "Dated architectural coexistence"
+      ]
+    },
+    {
+      "id": "atlas-north-as-baradon-north",
+      "assignment": "AtlasNorth=BarAdonNorthernUnit",
+      "state": "source_identity",
+      "disposition": "contradicted",
+      "effect_scope": "Atlas212 assigns BarAdonPair to East+West; label correction only."
+    },
+    {
+      "id": "west-only-replacement",
+      "assignment": "AtlasWest front+roof",
+      "state": "reported/ancient",
+      "disposition": "outside_retained_assignment",
+      "effect_scope": "New feature assignment requires full independent requirement/phase assessment; no substitution into saved Twin result."
+    },
+    {
+      "id": "connection-required",
+      "assignment": "East+West",
+      "state": "reported/ancient",
+      "disposition": "not_a_retained_text_predicate",
+      "effect_scope": "No drawn connection is documented; this cannot reject an explicit connectivity requirement absent from retained models."
+    },
+    {
+      "id": "vertical-three-cubits",
+      "assignment": "BarAdonNorthernUnit~AtlasEast",
+      "state": "ancient",
+      "disposition": "unknown",
+      "missing": [
+        "Identified ancient threshold",
+        "Elevation/datum",
+        "Threshold phase",
+        "Bounded digging zone"
+      ]
+    },
+    {
+      "id": "horizontal-three-cubits",
+      "assignment": "BarAdonNorthernUnit~AtlasEast",
+      "state": "ancient",
+      "disposition": "unknown",
+      "missing": [
+        "Origin within mouth",
+        "Path/axis",
+        "Ancient surface/vertical extent",
+        "Phase and uncertainty"
+      ]
+    },
+    {
+      "id": "negative-deposit",
+      "assignment": "EarlierTwin excavations",
+      "disposition": "not_testable_from_atlas",
+      "missing": [
+        "Ancient target volume",
+        "Phase/datum",
+        "Excavation reach",
+        "Disturbance",
+        "Detection limits"
+      ]
+    },
+    {
+      "id": "iv17-or-xii53-effects",
+      "disposition": "no_new_observation_from_TwinAtlas",
+      "effect_scope": "Preserve IV17 L656 and XII53 W2/threshold dependencies; no whole-site exclusion."
+    }
+  ],
+  "sources": [
+    "research/regional/caves_entry25/PLAN.md §4.3C3 and§5",
+    "research/measurements/cycle4/puech_entry25.md: Puech2015pp59–60",
+    "research/sources/entry25_direction_review_2026-10-02.md: Milik1960p140",
+    "research/sources/late_drive_2026-10-14/twin_2015.md: atlas2015pp212–215",
+    "research/feature_workbench/available_evidence_2026-10-13/cave_native_check.md: BarAdonp[15]; Cohen–Israelpp208–209"
+  ],
+  "preservation": {
+    "frozen_files_mutated": false,
+    "reserved_evidence_opened": false,
+    "source_images_public": false,
+    "independent_holdout_claim": false
+  },
+  "next_decisive_observation": "Recognisable mouth-specific original section/diary/level join for BarAdon northern unit (~atlasEast), with dated threshold; roof-opening formation/access phase for ancient exact-aperture claim.",
+  "geometry_feasibility": {
+    "legend": "Atlas printed ח / publisher preview viewer4",
+    "curve_identity": "קו הנטף / drip line; authenticated by legend",
+    "numeric_proxy": "Drip-line/wall-intersection chord can be digitized reproducibly",
+    "frozen_A3_gate": "Projection of roof/drip edge is not keyed to threshold-level rock-cut jambs or an authenticated aperture plane; C-C section markers do not identify jambs",
+    "unspecified_north": "A2 allowance6degrees, sensitivities3/10degrees; not sole blocker",
+    "coordinates_or_angles_generated": false
+  }
+}

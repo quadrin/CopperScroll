@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-15",
+  "scope": "Exploratory crosswalk of already exposed publications; no new field observation or confirmatory test.",
+  "sources": {
+    "bar_adon_1989_capture_2026_10_02": {
+      "title": "Pessah Bar-Adon, Excavations in the Judean Desert (Atiqot Hebrew 9, 1989), chapter B: Twin Cave",
+      "drive_id": "1avRkndT45m6rAriKhGMQvCX8EGP4KNxz",
+      "url": "https://drive.google.com/file/d/1avRkndT45m6rAriKhGMQvCX8EGP4KNxz/view",
+      "bytes": 73074606,
+      "sha256": "c4bfd44036c1fb98ad6fcb1f3e212ed02795e66604c87c04cba1a47964c032a4",
+      "pdf_pages": 102,
+      "target_mapping": [
+        {
+          "printed": "[15]",
+          "viewer": [
+            20
+          ],
+          "scope": "Complete target prose and B1 landscape photograph"
+        },
+        {
+          "printed": "16",
+          "viewer": [
+            20,
+            21
+          ],
+          "scope": "B2 pottery/glass drawings and discussion"
+        },
+        {
+          "printed": "17",
+          "viewer": [
+            21,
+            22
+          ],
+          "scope": "B2 descriptive table and discussion; no measured cave plan"
+        }
+      ],
+      "capture_distinction": "This is the 2026-10-02 capture. Preserve the existing 2026-10-01 receipt and viewers 24–26 for Drive 1OSq6pWIhxHAkbOAeLbbWUT1GvteP3e6t (194,165,136 bytes / 97 pages)."
+    },
+    "davidovich_frumkin_2015": {
+      "title": "Uri Davidovich and Amos Frumkin, מכלול התאומות (2015), pp. 212–215",
+      "url": "https://drive.google.com/file/d/1myf103Yzzc7G4ukNzR2r6aRZRK8arOWC/view",
+      "bytes": 850244,
+      "sha256": "0e7ada078918f5212643ca19766c6241fb28a2d1c2ddbbceade304a562c0b6b1",
+      "pdf_pages": 9,
+      "target_mapping": [
+        {
+          "printed": "212–215",
+          "viewer": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "scope": "Target prose, labelled landscape photograph, cave photographs, Malham 2011 survey with 5 m scale and N arrow; reread for crosswalk"
+        }
+      ]
+    },
+    "vjri_1995_reproduced_2026": {
+      "title": "Larry D. Banks and Noland S. Downing, Preliminary Report: April 1992 Excavations at Qumran; first published by VJRI in 1995, reproduced in The Ketoret (2026), Appendix D",
+      "url": "https://drive.google.com/file/d/1OLTsmNMaJwNNYsCcVRYuxrWFcNi4SrVe/view",
+      "bytes": 19701417,
+      "sha256": "c87ee3f592e9593901581d3db6a827a08d913b93040e11203d98f0772523cc3a",
+      "pdf_pages": 158,
+      "target_mapping": [
+        {
+          "printed": "114–116,119",
+          "viewer": [
+            114,
+            115,
+            116,
+            119
+          ],
+          "scope": "Author/header, North Cave entrance and interior photographs, geological/mouth account, Downing Qetorit plan with metre axes"
+        }
+      ],
+      "excluded": "AppendixF images and reserved manuscript images not opened."
+    }
+  },
+  "relations": [
+    {
+      "id": "TWIN-XW-01",
+      "source_unit": "Bar-Adon Twin Cave aggregate",
+      "target_unit": "Frumkin East + West",
+      "assessment": "Explicit atlas author association",
+      "source_pages": [
+        "Bar-Adon [15]/B1 (viewer 20)",
+        "Frumkin 212–213 (viewers 1–2)"
+      ],
+      "basis": "Atlas explicitly identifies East/West as Bar-Adon’s Twin pair; landscape photographs show the paired-mouth outcrop.",
+      "limit": "Cave-complex identity; no registered historical mouth station or ancient threshold."
+    },
+    {
+      "id": "TWIN-XW-02",
+      "source_unit": "Bar-Adon northern cavity",
+      "target_unit": "Frumkin East",
+      "assessment": "Supported exploratory cavity-level crosswalk",
+      "source_pages": [
+        "Bar-Adon [15] (viewer 20)",
+        "Frumkin 212/215 (viewers 1/4)"
+      ],
+      "basis": "Bar-Adon describes a closed single-level passage, 35 m long and 4 m wide on average; atlas East is 35 m, with an unbranched narrowing passage. The atlas establishes identity of the aggregate pair.",
+      "limit": "Morphological inference without a labelled historical station tie. The 4 m average width was not independently remeasured."
+    },
+    {
+      "id": "TWIN-XW-03",
+      "source_unit": "Bar-Adon southern cavity",
+      "target_unit": "Frumkin West",
+      "assessment": "Supported exploratory cavity-level crosswalk",
+      "source_pages": [
+        "Bar-Adon [15] (viewer 20)",
+        "Frumkin 212/214–215 (viewers 1/3–4)"
+      ],
+      "basis": "Bar-Adon describes a multilevel cavity with the higher innermost part open to the sky and a tall narrow inward shaft. Atlas West is multilevel, with a front opening, roof opening and internally connected lower passage.",
+      "limit": "Internal topology supports identity. Current floors and total surveyed length do not establish ancient thresholds or a historical station datum."
+    },
+    {
+      "id": "TWIN-XW-04",
+      "source_unit": "VJRI North/Qetorit Cave (1992)",
+      "target_unit": "Frumkin North",
+      "assessment": "Probable source-visual cave-level crosswalk",
+      "source_pages": [
+        "VJRI reproduction 114–116/119 (same viewer numbers)",
+        "Frumkin 212/214–215 (viewers 1/3–4)"
+      ],
+      "basis": "Both describe a separate northeastern-facing northern cave extending southwest. Interior photographs show a corresponding tall jagged aperture and stepped roof outline; the broad plan shape agrees.",
+      "limit": "No explicit cross-publication name or station join. No VE/VW-to-Malham point, coordinate, elevation or ancient-mouth transfer."
+    }
+  ],
+  "non_equivalences": [
+    {
+      "a": "Bar-Adon northern cavity",
+      "b": "Frumkin North",
+      "reason": "Bar-Adon’s northern cavity belongs to the East/West pair; atlas North is a third cave."
+    },
+    {
+      "a": "VJRI northern cave floor or datum",
+      "b": "Bar-Adon northern threshold",
+      "reason": "Different cave and unregistered excavation/ancient levels."
+    }
+  ],
+  "opening_count": {
+    "unit": "Atlas East + West aggregate",
+    "state": "Malham 2011 survey, published in 2015; roof aperture date unknown",
+    "minimum_labelled_exterior_apertures": 3,
+    "front_mouths": 2,
+    "source": "davidovich_frumkin_2015",
+    "pages": "212,215",
+    "observations": [
+      "West front opening",
+      "West additional roof opening",
+      "East front mouth"
+    ],
+    "terminology": "P. 212 uses פתח קדמי ופתח נוסף בתקרה. P. 215 labels West front כניסה, West roof פתח בתקרה, and East front פתח.",
+    "internal_branch": "West lower passage joins the main passage at both ends; it does not establish an additional exterior aperture.",
+    "prior_exposure": "Bar-Adon [15] already describes the southern higher part as open to the sky. The 2015 labels clarify source/coding and do not supply independent field corroboration."
+  },
+  "registration_limits": [
+    "Bar-Adon’s locator 1937/1293 is not a surveyed mouth point.",
+    "Atlas rounded נצ״מ locators and reported −270 m retain unverified CRS, vertical datum and reference point.",
+    "VJRI coordinate header is degraded or typographically ambiguous; no normalized coordinate or elevation accepted.",
+    "Atlas p. 215 N arrow does not declare true/grid/magnetic north; VJRI p. 119 north/east axes have no stated north convention.",
+    "Developed profiles do not give true 3D spatial relations.",
+    "No published East/West interconnection is drawn; VJRI’s possible northern connection remains explicitly hypothetical.",
+    "Most of West’s approximately 8 m of sediment was removed by excavation; no ancient threshold, floor or wall phase established."
+  ],
+  "next_observation": "An original cave-labelled field survey or level sheet tying a named historical mouth/station to an ancient threshold and wall phase. For Qetorit, first obtain a VE/VW-to-Malham station registration."
+}
