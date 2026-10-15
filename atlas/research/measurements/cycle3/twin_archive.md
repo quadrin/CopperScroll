@@ -61,3 +61,8 @@ P. 212 documents removal of most of approximately 8 m of West's sediment and exc
 ## Gnazim reply — 15 October 2026
 
 The owner supplied Amir's reply: Bar-Adon's fonds remain under sorting and are outside the searchable catalogue. The archivist cannot yet locate the requested records; sorting may take a few months. The person sorting the fonds has the query and will report relevant material if it surfaces. No cave-specific item or box is confirmed. Park repeated catalogue searches while that work proceeds; retain the separate licence/field-record routes. [Receipt and implications](../../sources/archive_replies_2026-10-15.md#gnazim-bar-adon-fonds-717).
+
+
+## Unsorted-access follow-up sent — 15 October 2026
+
+The owner offered staff-guided consultation of unsorted Bar-Adon material before cataloguing finishes. The reply asks about provisional lists or folders identified by the sorter, access procedures, appointments, permissions and advance fee information. Gmail SENT status and reply linkage were verified; access and cave-specific holdings await Gnazim's response. [Sent record](../../agent_review_2026-10-07/followup/F_outreach_sent.md#targeted-follow-ups-sent--15-october-2026).

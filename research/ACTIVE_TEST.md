@@ -2,7 +2,7 @@
 
 Updated 15 October 2026 UTC / Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (15 October 2026 UTC / Los Angeles): **partly** — read selected TPA/1/132 originals, identified the 1955 photograph series and 1956 missing enclosure, and recorded Gnazim’s sorting delay. [Evidence](sources/archive_replies_2026-10-15.md).
+Last session (15 October 2026 UTC / Los Angeles): **partly** — sent and verified both follow-ups; unsorted Bar-Adon access and the dated photograph/enclosure locations await replies. [Record](agent_review_2026-10-07/followup/F_outreach_sent.md#targeted-follow-ups-sent--15-october-2026).
 
 ## Active questions and the observation that decides each
 
@@ -33,8 +33,8 @@ All are **not identifiable from available evidence**; details in the history fil
 - Carla Benelli, Mosaic Centre Jericho (7 October): Meinardus scan expected mid-October; 8 October welcome for an archive visit with notice, except Friday and Thursday afternoon.
 - Manchester Museum (5 and 7 October): C.10a.1/C.10.1 and Allegro strips C.21–23, cutting photos and 1955 film; 8 October estate check and Joan Taylor referral.
 - Joan Taylor, King's College London (8 October): Allegro C.21A.1–4, C.22A.1–10, C.22.1–2, C.21-23.1 and film of segments 21–22.
-- University of Manchester Library (reply/scans 15 October): selected TPA/1/132 letters identify opening-stage photos and the missing 6 March 1956 photographic enclosure; further Allegro check found later material, with no Wright Baker correspondence.
-- Gnazim (reply 15 October): Bar-Adon fonds717 remain under sorting, possibly for months; sorter has the Twin Cave enquiry, with no cave-specific item confirmed.
+- University of Manchester Library (follow-up 15 October): asked about the 19 October 1955 opening-stage/compound photographs and the 6 March 1956 Waldron letter’s listed photographic enclosure, including enclosure/transfer records and catalogue or custodian pointers.
+- Gnazim (follow-up 15 October): offered staff-guided consultation of unsorted Bar-Adon material; asked about provisional lists/folders, advance requests, appointments, permissions and fees. Access and cave-specific holdings remain unconfirmed.
 - IAA Archive (7 October): cave records for the Qumran cliffs, Jericho escarpment and Wadi Qelt.
 - Bruce Zuckerman, USC (5 October): original WSRP Figure 4.6 composite and component map.
 - Nahshon Szanton, Tel Aviv University (6 October): Siloam main-side L103 junction section.
@@ -57,4 +57,3 @@ An image of XII 10 at the 21/22 cut that the protocol can read: USC masters or M
 ## Key reports
 
 [Entry schematics](schematics/README.md) · [Koḥlit rarity pre-registration](preregistration/kohlit_rarity_2026-10-08.md) and [result](rarity/kohlit/stage2/RESULTS.md) · [Feature workbench](feature_workbench/README.md) (8 October; evaluators and an atlas view for the Koḥlit relationships, entry 25 caves, IV/17 and Jericho states, coverage and decision planning) · [Agent review](agent_review_2026-10-07/README.md) · [goals](agent_review_2026-10-07/GOALS.md) · [follow-up](agent_review_2026-10-07/followup/README.md) · [entry 60 registry v2](agent_review_2026-10-07/wave2/W2B_model_v1/registry_v2_entry60.json) · [Jericho pools](assessments/entry29_jericho_pools/README.md) · [outcome ledger](progress/outcome_ledger.json) · [backlog](OPEN_QUESTIONS.md) · [Analogues round](logs/analogues_round_2026-10-09.md) (9 October): [failed looks](models/search_effectiveness/README.md), [edition confusions](text/edition_confusions/README.md), [arrival register](preregistration/arrivals/README.md), [salvage records](history/salvage_records/README.md), [PEF finds](history/pef_qs_finds/README.md), [hiding places](comparanda/concealment_contexts/README.md), [staged objectives](plan/STAGED_OBJECTIVES.md) · [Regional round 2](logs/regional_round_2026-10-10.md) (10–11 October): [caves](regional/caves_entry25/README.md), [columbaria](regional/columbaria/README.md), [tombs](regional/tombs/README.md), [water](regional/water_systems/README.md), [hoards](comparanda/hoards_full/README.md), [IAA phase 2](regional/haesi_features/phase2_2026-10-10/README.md) · [Regional round](logs/regional_round_2026-10-09.md) (9 October): [IAA reports](regional/haesi_features/README.md), [1940s maps](regional/mandate_maps/README.md), [east of the Jordan](regional/peraea/README.md), [ASI Jerusalem](regional/asi_jerusalem/README.md) · [R3 pre-registration](preregistration/kohlit_rarity_r3_2026-10-09.md) (approved 9 October, not run)
-

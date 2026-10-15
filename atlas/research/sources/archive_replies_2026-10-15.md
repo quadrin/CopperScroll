@@ -35,3 +35,8 @@ The pre-reading intake records sender, supplied filename, size, SHA256 and parti
 One integrator performed extraction and later comparison, with that limitation explicit. A locked extraction separates the stages; it does not create independent readers. The selected scans leave the original photographic enclosure and wider file coverage unprovided, without implying that the archivist promised further delivery. The frozen prediction files, register and ranking are preserved. Any later original target photograph remains subject to masked lineage review and the two-reader XII 10 protocol.
 
 **Partly obtained:** archival correspondence and selected original leaves now identify precise photographic leads; the photographs, target-cut measurements and Twin Cave field records remain unobtained.
+
+
+## Later follow-ups — 15 October 2026
+
+After this source inspection, the owner requested follow-ups. Replies are now sent and verified in both existing threads: Gnazim was asked about staff-guided consultation of unsorted material, and Peters about the dated photograph references, absent enclosure and any photographic/enclosure-transfer records. [Exact request scope and sent verification](../agent_review_2026-10-07/followup/F_outreach_sent.md#targeted-follow-ups-sent--15-october-2026). No access approval or photographic original has arrived through these follow-ups.
