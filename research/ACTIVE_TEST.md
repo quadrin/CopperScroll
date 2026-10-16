@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — GitHub’s actual Pages builder reproduces the missing startup assets despite the parent inclusion. Child-glob exclusions retain the app and omit the archives. The generated output passes byte comparisons; desktop/phone homepage and failed-import recovery checks pass against that real output. Fresh startup URLs replace the cached 404 paths. GitHub’s Actions web page now provides deployment evidence despite blocked Pages HTTP/API access.
+Last session (16 October 2026 Los Angeles): **obtained** — GitHub’s actual Pages builder reproduces the missing child assets; child-glob exclusions fix them. The generated app passes byte comparisons and desktop/phone startup, recovery and walking checks. GitHub Actions run [38965918113](https://github.com/quadrin/CopperScroll/actions/runs/38965918113) successfully deployed 31dd1f8 with the complete artifact. Fresh startup filenames replace the cached 404 paths.
 
 ## Active questions and the observation that decides each
 
