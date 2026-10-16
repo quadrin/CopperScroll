@@ -1,13 +1,13 @@
 /* One navigation row, one context control, one selected-place panel. */
-.atlas-shell .atlas-site-nav{min-height:64px;padding:0 22px;gap:24px;flex-wrap:nowrap}
-.atlas-shell .atlas-site-nav .atlas-site-brand{font-size:23px;height:60px;min-width:0}
-.atlas-shell .atlas-site-nav .atlas-site-brand>svg{width:34px;height:34px;padding:7px}
-.atlas-shell .atlas-site-nav>nav{display:flex;order:0;width:auto;gap:24px;align-self:stretch;margin:0 0 0 auto;overflow:visible}
-.atlas-shell .atlas-site-nav>nav>a{font-size:13px;min-height:44px;padding:0 2px}
-.atlas-shell .atlas-site-nav>.atlas-section-directory{margin:0;font-size:13px}
-.atlas-shell .atlas-section-directory>summary{min-height:44px}
-.atlas-shell .atlas-section-directory>div{top:100%;right:12px;left:auto;width:260px;max-height:70dvh}
-.atlas-shell .atlas-section-directory>div>details{border-top:1px solid #d7cdbb;margin-top:5px;padding:4px 10px}
+.atlas-site-nav.atlas-site-nav{min-height:64px;padding:0 22px;gap:24px;flex-wrap:nowrap}
+.atlas-site-nav.atlas-site-nav .atlas-site-brand{font-size:23px;height:60px;min-width:0}
+.atlas-site-nav.atlas-site-nav .atlas-site-brand>svg{width:34px;height:34px;padding:7px}
+.atlas-site-nav.atlas-site-nav>nav{display:flex;order:0;width:auto;gap:24px;align-self:stretch;margin:0 0 0 auto;overflow:visible}
+.atlas-site-nav.atlas-site-nav>nav>a{font-size:13px;min-height:44px;padding:0 2px}
+.atlas-site-nav.atlas-site-nav>.atlas-section-directory{margin:0;font-size:13px}
+.atlas-site-nav .atlas-section-directory>summary{min-height:44px}
+.atlas-site-nav .atlas-section-directory>div{top:100%;right:12px;left:auto;width:260px;max-height:70dvh}
+.atlas-site-nav .atlas-section-directory>div>details{border-top:1px solid #d7cdbb;margin-top:5px;padding:4px 10px}
 .atlas-section-directory>div>details summary{cursor:pointer;min-height:44px;align-content:center}
 .atlas-section-directory>div>details a{display:block;padding:12px 4px}
 .atlas-shell.unified-atlas .atlas-explorer-bar{display:flex;flex-wrap:nowrap;min-height:56px;padding:5px 16px;gap:8px}
@@ -59,12 +59,12 @@
 .atlas-shell.unified-atlas .unified-surface .map-status button{min-height:44px}
 .map-options summary:focus-visible,.map-options button:focus-visible,.map-place-panel button:focus-visible{outline:2px solid #8b6642;outline-offset:2px}
 @media(max-width:700px){
- .atlas-shell .atlas-site-nav{min-height:54px;gap:12px;padding:0 12px}
- .atlas-shell .atlas-site-nav .atlas-site-brand{height:54px;font-size:18px}
- .atlas-shell .atlas-site-nav .atlas-site-brand>svg{display:none}
- .atlas-shell .atlas-site-nav>nav{gap:10px}
- .atlas-shell .atlas-site-nav>nav>a,.atlas-shell .atlas-site-nav>.atlas-section-directory{font-size:12px}
- .atlas-shell .atlas-section-directory>div{position:absolute;top:100%;left:auto;right:8px;max-height:calc(100dvh - 70px);width:min(270px,calc(100vw - 16px))}
+ .atlas-site-nav.atlas-site-nav{min-height:54px;gap:12px;padding:0 12px}
+ .atlas-site-nav.atlas-site-nav .atlas-site-brand{height:54px;font-size:18px}
+ .atlas-site-nav.atlas-site-nav .atlas-site-brand>svg{display:none}
+ .atlas-site-nav.atlas-site-nav>nav{gap:10px}
+ .atlas-site-nav.atlas-site-nav>nav>a,.atlas-site-nav.atlas-site-nav>.atlas-section-directory{font-size:12px}
+ .atlas-site-nav .atlas-section-directory>div{position:absolute;top:100%;left:auto;right:8px;max-height:calc(100dvh - 70px);width:min(270px,calc(100vw - 16px))}
  .atlas-shell.unified-atlas .atlas-explorer-bar{padding:4px 10px;min-height:54px;gap:5px}
  .atlas-shell.unified-atlas .atlas-context-panel[data-expanded=true]{grid-template-columns:1fr}
  .atlas-shell.unified-atlas .atlas-context-panel{left:0;right:0;max-height:calc(100dvh - 115px)}
@@ -74,4 +74,4 @@
  .map-place-toggle strong{font-size:18px}.map-place-toggle span{font-size:10px}.map-place-panel .map-primary-action{font-size:12px;padding:8px 10px}
  .atlas-shell.unified-atlas .unified-surface .map-status{max-width:none}
 }
-@media(max-width:380px){.atlas-shell .atlas-site-nav .atlas-site-brand{font-size:15px}.atlas-shell .atlas-site-nav{gap:8px}.atlas-shell .atlas-site-nav>nav{gap:8px}.atlas-shell .atlas-site-nav>nav>a,.atlas-shell .atlas-site-nav>.atlas-section-directory{font-size:11px}.atlas-shell .atlas-section-directory>summary{padding:0}}
+@media(max-width:380px){.atlas-site-nav.atlas-site-nav .atlas-site-brand{font-size:15px}.atlas-site-nav.atlas-site-nav{gap:8px}.atlas-site-nav.atlas-site-nav>nav{gap:8px}.atlas-site-nav.atlas-site-nav>nav>a,.atlas-site-nav.atlas-site-nav>.atlas-section-directory{font-size:11px}.atlas-site-nav .atlas-section-directory>summary{padding:0}}

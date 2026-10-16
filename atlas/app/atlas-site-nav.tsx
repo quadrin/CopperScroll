@@ -4,6 +4,7 @@ import {Layers,ChevronDown} from 'lucide-react';
 import {entryHash} from './atlas-navigation';
 import './atlas-site-nav.css';
 import './atlas-mobile.css';
+import './atlas-clean.css';
 export type AtlasSection='evidence'|'map'|'sites'|'scroll'|'sources'|'tools';
 export function sectionRoutes(entry:string,planId?:string|null){
  const kb=(view:string)=>'#kb?'+new URLSearchParams({entry,view,detail:'0'}).toString();
