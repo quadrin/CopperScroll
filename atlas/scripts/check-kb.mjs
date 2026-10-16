@@ -8,7 +8,7 @@ import ts from 'typescript';
 const require=createRequire(import.meta.url);
 function compile(path,extras='',deps={}){
  const file=new URL(path,import.meta.url);const module={exports:{}};
- const compiled=ts.transpileModule(readFileSync(file,'utf8')+extras,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
+ const compiled=ts.transpileModule(readFileSync(file,'utf8').replaceAll('import.meta.env?.BASE_URL',JSON.stringify('/CopperScroll/atlas-site/'))+extras,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
  const localRequire=id=>id in deps?deps[id]:id.endsWith('.css')?{}:require(id);
  new Function('require','module','exports',compiled)(localRequire,module,module.exports);return module.exports;
 }
@@ -83,7 +83,7 @@ assert.ok(edition.includes('מערת'));assert.ok(edition.includes('Milik 27'));
 assert.ok(edition.includes('Allegro 26'));assert.ok(edition.includes('CC BY-NC 4.0'));
 assert.ok(!render(fieldwork.PassageEdition,{entry:i.by.get('entry/11'),onSelect}).includes('{{east'));
 const plate=render(fieldwork.SourcePlate,{onSelect});
-for(const value of ['sion2002-plan5-iv17.webp','Plan 5 p. 63','CC BY-NC 4.0','north arrow','No geographic registration','Evidence record'])assert.ok(plate.includes(value),value);
+for(const value of ['/CopperScroll/atlas-site/dossiers/sion2002-plan5-iv17.webp','Plan 5 p. 63','CC BY-NC 4.0','north arrow','No geographic registration','Evidence record'])assert.ok(plate.includes(value),value);
 assert.equal((plate.match(/<img /g)||[]).length,1);assert.ok(!plate.split('kb-plate-image')[1].split('</a>')[0].includes('<svg'));
 for(const id of ['hypothesis/twin','hypothesis/A41:XII/53','hypothesis/iv11']){
  const dossier=render(fieldwork.CandidateFieldRecord,{candidate:i.by.get(id),onSelect});

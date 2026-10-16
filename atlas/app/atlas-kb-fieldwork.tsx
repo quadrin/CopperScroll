@@ -5,7 +5,7 @@ import {Segments,useScrollText} from './atlas-text';
 import {sitePlans} from './atlas-explorer-model';
 import type {KBRecord} from './atlas-kb-model';
 
-const base=process.env.NEXT_PUBLIC_BASE_PATH??'/';
+const base=import.meta.env?.BASE_URL??'/';
 const iv17=sitePlans.find(p=>p.id==='abu-saraj-iv17')!;
 
 // Display adapters only: the reader, plan catalogue and KB remain authoritative.
