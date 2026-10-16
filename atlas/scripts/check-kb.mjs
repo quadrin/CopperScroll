@@ -28,7 +28,7 @@ const janoah=model.impact(i,'reading/e60-janoah:4').filter(r=>r.record.kind==='e
 assert.equal(janoah.length,4);assert.ok(janoah.every(r=>r.record.payload.branch_key==='branch/RB-L'));
 const survey=model.impact(i,'observation/icrc2017-native-plan').filter(r=>r.record.kind==='evaluation');
 assert.equal(survey.length,16);assert.ok(survey.every(r=>r.record.payload.hypothesis_key==='hypothesis/A41:XII/53'));
-const components=compile('../app/atlas-kb.tsx','\nexport {Graph,Inspector,Requirements,Names,Impact,Sources};',{'./atlas-kb-model':model});
+const components=compile('../app/atlas-kb.tsx','\nexport {Graph,Inspector,Requirements,Names,Impact,Sources,CaseOverview,Comparison};',{'./atlas-kb-model':model});
 const render=(c,props)=>renderToStaticMarkup(createElement(c,props));
 const onSelect=()=>{};
 for(const entry of Object.keys(data.entries)){
@@ -47,4 +47,25 @@ for(const id of ['hypothesis/iv17','hypothesis/iv11','hypothesis/twin','hypothes
 assert.ok(requirements.includes('fixed')||requirements.includes('Fixed')||requirements.includes('FIXED'));
 const sources=render(components.Sources,{i,context:model.entryContext(i,'25'),onSelect});assert.ok(sources.includes('Uninspected:'));
 const changed=render(components.Impact,{i,selected:i.by.get('reading/e60-janoah:4'),onSelect});assert.ok(changed.includes('4 dependent candidate results'));assert.ok(changed.includes('RB-L')||changed.includes('Lefkovits'));
-console.log('KB checks passed: 61 entry graphs, separate readings, bounded impact, control options, exact source locators and five rendered views. Browser appearance remains a separate check.');
+// Compare the same branch and period across every candidate and control.
+for(const entry of ['25','11','60']){
+ const context=model.entryContext(i,entry),candidates=context.filter(r=>r.kind==='hypothesis');
+ for(const choice of model.comparisonChoices(i,candidates)){
+  const rows=model.comparisonRows(i,candidates,choice.key);
+  assert.equal(rows.length,candidates.length);
+  for(const {candidate,result} of rows)if(result){assert.equal(result.payload.hypothesis_key,candidate.key);assert.equal(model.comparisonKey(result),choice.key);}
+ }
+ const overview=render(components.CaseOverview,{i,entry:i.by.get('entry/'+entry),context,candidates,onSelect});
+ for(const heading of ['What does the passage say?','How do the candidates compare?','What evidence would help decide?'])assert.ok(overview.includes(heading));
+ for(const candidate of candidates)assert.ok(overview.includes(candidate.label.replaceAll('&','&amp;').replaceAll("'",'&#x27;')),candidate.key);
+ assert.ok(overview.includes('Comparison branch'));assert.ok(overview.includes('never identification confidence'));
+}
+const choices=model.comparisonChoices(i,candidates),choice=choices.find(c=>c.branch.includes('target-prerequisites'));
+assert.ok(choice);
+const controls=model.comparisonRows(i,candidates,choice.key);
+assert.equal(controls.find(r=>r.candidate.key==='hypothesis/A41:XII/53').result,undefined);
+const bad=structuredClone(data),original=bad.records.find(r=>r.kind==='evaluation');bad.records.push({...original,key:original.key+'-duplicate'});
+assert.throws(()=>model.comparisonRows(model.index(bad),[i.by.get(original.payload.hypothesis_key)],model.comparisonKey(original)),/Ambiguous/);
+const entryOnly=render(components.CaseOverview,{i,entry:i.by.get('entry/1'),context:model.entryContext(i,'1'),candidates:[],onSelect});
+assert.ok(entryOnly.includes('no populated candidate comparison'));
+console.log('KB checks passed: 61 entry graphs, guided passage flow, all exact branch/period comparisons, explicit missing controls, separate readings, bounded impact, source locators and rendered views.');

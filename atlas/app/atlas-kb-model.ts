@@ -62,3 +62,20 @@ export function graphRecords(i:KBIndex,id:string,selected:string,focus=false){
  return {records:chosen,edges:i.data.edges.filter(e=>keys.has(e.subject)&&keys.has(e.object)&&e.relation!=='in_entry'),total:pool.length};
 }
 export const isKBRoute=(hash:string)=>!hash||hash==='#'||hash==='#kb'||hash.startsWith('#kb?');
+
+// A comparison never substitutes a candidate's best result from another branch
+// or period. Missing cells remain missing, including for controls.
+export function comparisonKey(r:KBRecord){return JSON.stringify([r.payload.branch_key,r.payload.window_id||'']);}
+export function comparisonChoices(i:KBIndex,candidates:KBRecord[]){
+ const keys=new Set(candidates.map(r=>r.key)),seen=new Set<string>();
+ return i.data.records.filter(r=>r.kind==='evaluation'&&keys.has(r.payload.hypothesis_key)).filter(r=>{const key=comparisonKey(r);if(seen.has(key))return false;seen.add(key);return true;}).map(r=>({key:comparisonKey(r),branch:r.payload.branch_key as string,window:r.payload.window_id||''}));
+}
+export function comparisonRows(i:KBIndex,candidates:KBRecord[],choice:string){
+ return candidates.map(candidate=>{const matches=i.data.records.filter(r=>r.kind==='evaluation'&&r.payload.hypothesis_key===candidate.key&&comparisonKey(r)===choice);if(matches.length>1)throw new Error('Ambiguous saved comparison: '+candidate.key);return {candidate,result:matches[0]};});
+}
+export function branchLabel(r:KBRecord|undefined){
+ if(!r)return 'Unestablished branch';const p=r.payload.choices||r.payload;
+ if(!p.reading)return r.label;
+ const reading=String(p.reading).replace('B-PILLAR','Pillar').replace('B-TERRACE','Terrace');
+ return [reading,p.orientation==='both-mouths'?'both mouths face east':p.orientation==='cave'?'cave faces east':p.orientation,p.unit?`${p.unit} m cubit`:null,p.direction,p.phase,p.deposit?.replaceAll('-',' '),p.ruleset==='primary'?'primary rule':p.ruleset].filter(Boolean).join(' · ');
+}
