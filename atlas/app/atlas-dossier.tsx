@@ -8,6 +8,7 @@ import scenes from "./atlas-scenes.json";
 import evidence from "./atlas-evidence.json";
 import Interpretations, { ArgumentSources } from "./atlas-interpretations";
 import "./atlas-dossiers.css";
+import { componentsFor, EvidenceComponents } from "./atlas-components";
 
 export type AtlasDossierProps = { entry: Entry; place: Place | null; onEntry?: (id: string) => void; onLandscape?: () => void; onRead?: () => void };
 type Tab = "place" | "interpretations" | "sources";
@@ -26,13 +27,13 @@ function RoyalPoolGallery() {
 
 function ConfidenceAxes({ entry, place, comparison }: { entry: Entry; place: Place | null; comparison: boolean }) {
   const review = evidence.entries.find(item => item.entryId === entry.id && item.placeId === place?.id);
-  const candidate = entry.candidates.find(item => item.placeId === place?.id);
+  const components = componentsFor(entry.id, place?.id);
   const axes = comparison ? [
     { label: "Reading", value: "Branch-dependent" }, { label: "Site association", value: "Comparison only" }, { label: "Exact feature", value: "Unresolved" }, { label: "Position", value: "Not assigned" },
   ] : [
-    { label: "Reading", value: review?.reading ?? "Edition-based" }, { label: "Site association", value: review?.site ?? candidate?.confidence ?? "Unassigned" }, { label: "Exact feature", value: review?.feature ?? "Unresolved" }, { label: "Position", value: place?.precision ?? "Not assigned" },
+    { label: "Reading", value: review?.reading ?? "Edition-based" }, { label: "Site association", value: review?.site ?? (components ? `Place ${components.levels.P}/3 · weakest link ${components.label}` : "Unassigned") }, { label: "Exact feature", value: review?.feature ?? "Unresolved" }, { label: "Position", value: place?.precision ?? "Not assigned" },
   ];
-  return <section className="ds-confidence" aria-label="Separate assessment axes">{axes.map(axis => <div key={axis.label}><span>{axis.label}</span><strong>{axis.value}</strong></div>)}</section>;
+  return <><section className="ds-confidence" aria-label="Separate assessment axes">{axes.map(axis => <div key={axis.label}><span>{axis.label}</span><strong>{axis.value}</strong></div>)}</section>{!comparison && <EvidenceComponents entryId={entry.id} placeId={place?.id} />}</>;
 }
 
 function SourceGallery({ dossier }: { dossier?: PlaceDossier }) {

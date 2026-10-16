@@ -1,0 +1,32 @@
+/* Evidence components: compact strip, register label and full panel. Colours use currentColor so they sit on light and dark surfaces. */
+.ec-strip { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px; font-size: 11px; line-height: 1; }
+.ec-chip { display: inline-flex; align-items: center; gap: 3px; padding: 3px 5px; border: 1px solid color-mix(in srgb, currentColor 22%, transparent); border-radius: 3px; }
+.ec-chip b { font-weight: 600; letter-spacing: .02em; }
+.ec-chip.limit { border-color: #b4572e; color: #a14a24; }
+.ec-pips { display: inline-flex; gap: 2px; }
+.ec-pips i { width: 5px; height: 5px; border-radius: 50%; border: 1px solid currentColor; opacity: .55; }
+.ec-pips i.on { background: currentColor; opacity: 1; }
+.ec-label { font-size: 11px; text-transform: capitalize; padding: 3px 6px; border-radius: 3px; background: color-mix(in srgb, currentColor 10%, transparent); }
+.ec-none { color: #8a3b22; }
+.ec-weak { color: #8c5a1c; }
+.ec-partial { color: #4d6a3a; }
+.ec-strong { color: #2f5e3e; }
+.ec-missing { font-size: 11px; opacity: .7; }
+.unified-candidate .ec-strip { margin: 6px 0 2px; }
+.unified-candidate .ec-status { display: block; font-size: 11px; opacity: .75; margin-top: 2px; }
+
+.ec-panel { border: 1px solid #d9ddd2; background: #f4f5f0; border-radius: 7px; padding: 14px 16px; margin: 0 0 18px; color: #2e3a2f; }
+.ec-panel header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+.ec-panel header .ec-label { font-size: 12px; }
+.ec-panel dl { display: grid; gap: 8px; margin: 0; }
+.ec-panel dl > div { display: grid; grid-template-columns: 9.5em 1fr; gap: 12px; padding: 6px 0; border-top: 1px solid #e2e5dc; }
+.ec-panel dl > div.limit dt { color: #a14a24; }
+.ec-panel dt { font: 600 13px/1.4 var(--serif, serif); display: flex; flex-direction: column; gap: 3px; }
+.ec-panel dt span { font: 400 11px/1.2 system-ui, sans-serif; display: inline-flex; gap: 6px; align-items: center; opacity: .85; }
+.ec-panel dd { margin: 0; font: 13px/1.55 var(--serif, serif); }
+.ec-panel dd em { font-style: normal; opacity: .8; }
+.ec-next { font-size: 13px; line-height: 1.5; margin: 10px 0 6px; }
+.ec-method { font-size: 11px; line-height: 1.5; opacity: .8; margin: 6px 0 0; }
+.ec-method a { display: inline-flex; align-items: center; gap: 2px; }
+@media (max-width: 650px) { .ec-panel dl > div { grid-template-columns: 1fr; gap: 4px; } }
+.copper-reader .register-confidence.ec-none, .copper-reader .register-confidence.ec-weak, .copper-reader .register-confidence.ec-partial, .copper-reader .register-confidence.ec-strong { color: #ffe1b5; }

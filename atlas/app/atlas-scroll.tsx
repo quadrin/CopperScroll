@@ -9,6 +9,7 @@ import { isPhotographHash, mappedWordsForEntry, PHOTO_COLUMN, photoTarget } from
 import "./atlas-reader.css";
 import type { Entry, Place } from "./atlas-types";
 import { plain, ReadingCard, Segments, useScrollText, type Selection, type TrSeg, type Word } from "./atlas-text";
+import { EvidenceLabel } from "./atlas-components";
 
 // The whole scroll, column by column, in the map panel. The text runs right to
 // left, from column I on the right; each entry heading opens that entry's places.
@@ -125,7 +126,7 @@ export default function ScrollView({ entry, entries, places, onEntry, photograph
     return <button type="button" key={`h-${id}`} data-starts={continued ? undefined : id} className={`scroll-entry ${id === entry.id ? "selected" : ""}`} aria-current={id === entry.id ? "true" : undefined} onClick={() => pick(id)}>
       <span className="entry-number">{id.padStart(2, "0")}</span>
       <span className="entry-text"><strong>{e.title}</strong><small>{continued ? `Continued from ${e.lines.split("-")[0]}` : midLine ? "Begins in the middle of this line" : best ? best.shortName : "Location unresolved"}</small></span>
-      <span className={`register-confidence ${e.candidates[0]?.confidence ?? "unplaced"}`}>{e.candidates[0]?.confidence ?? "unplaced"}</span>
+      <EvidenceLabel entry={e} />
     </button>;
   }
 
