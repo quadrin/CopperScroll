@@ -1433,7 +1433,7 @@ The owner asked for the figures of Kowalewska, Regev and Cargill to be checked a
 
 - **Kowalewska.** Her distribution maps (Figs. 3.1–3.2) mark no bathhouse in Jerusalem, at Siloam or at Ramat Raḥel before the 2nd century CE, which agrees with her text. No plan of the Ramat Rahel bath is printed.
 - **Regev.** His map of Hasmonean ritual baths (Fig. 1.1) does not mark Ramat Rachel, so the date of the bath next to a tomb there stays open. The histogram (Fig. 3.2) agrees with "213 of 306" caves having six or fewer loculi. Figs. 6.2–6.5 and 7.3–7.4 are access graphs with no positions.
-- **Cargill.** Plates 6.2–6.3 say an overflow channel carries water from L110 to L118; the text says only that the channel "may have served as an overflow outlet". The plates are renders of his model and do not show the L117 joint as found. The chapter 8 plates were not reached: the reader showed a CAPTCHA, which was not solved.
+- **Cargill.** Plates 6.2–6.3 say an overflow channel carries water from L110 to L118; the text says only that the channel "may have served as an overflow outlet". The plates are renders of his model and do not show the L117 joint as found. After the owner cleared a CAPTCHA, the chapter 8–9 plates were checked: chapter 8 has only the cemetery, Caves 7–9 and Cave 4, and Pl. 9.1 maps the Hasmonean forts. Cargill prints no plate of the dam, aqueduct head, gorge or tunnel.
 
 ### Record conflicts flagged, not edited
 
