@@ -28,7 +28,11 @@ const janoah=model.impact(i,'reading/e60-janoah:4').filter(r=>r.record.kind==='e
 assert.equal(janoah.length,4);assert.ok(janoah.every(r=>r.record.payload.branch_key==='branch/RB-L'));
 const survey=model.impact(i,'observation/icrc2017-native-plan').filter(r=>r.record.kind==='evaluation');
 assert.equal(survey.length,16);assert.ok(survey.every(r=>r.record.payload.hypothesis_key==='hypothesis/A41:XII/53'));
-const components=compile('../app/atlas-kb.tsx','\nexport {Graph,Inspector,Requirements,Names,Impact,Sources,CaseOverview,Comparison};',{'./atlas-kb-model':model});
+const text=compile('../app/atlas-text.tsx');
+const textData=JSON.parse(readFileSync(new URL('../app/atlas-text.json',import.meta.url),'utf8'));
+const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
+const fieldwork=compile('../app/atlas-kb-fieldwork.tsx','',{'./atlas-text':{Segments:text.Segments,useScrollText:()=>({data:textData,failed:false})},'./atlas-explorer-model':{sitePlans:plans}});
+const components=compile('../app/atlas-kb.tsx','\nexport {Graph,Inspector,Requirements,Names,Impact,Sources,CaseOverview,Comparison};',{'./atlas-kb-model':model,'./atlas-kb-fieldwork':fieldwork});
 const render=(c,props)=>renderToStaticMarkup(createElement(c,props));
 const onSelect=()=>{};
 for(const entry of Object.keys(data.entries)){
@@ -71,3 +75,19 @@ assert.throws(()=>model.comparisonRows(model.index(bad),[i.by.get(original.paylo
 const entryOnly=render(components.CaseOverview,{i,entry:i.by.get('entry/1'),context:model.entryContext(i,'1'),candidates:[],onSelect});
 assert.ok(entryOnly.includes('no populated candidate comparison'));
 console.log('KB checks passed: 61 entry graphs, guided passage flow, all exact branch/period comparisons, explicit missing controls, separate readings, bounded impact, source locators and rendered views.');
+
+// Archaeological display adapters preserve the native plate and transcription signs.
+const edition=render(fieldwork.PassageEdition,{entry:i.by.get('entry/25'),onSelect});
+assert.ok(edition.includes('lang="he"'));assert.ok(edition.includes('dir="rtl"'));
+assert.ok(edition.includes('מערת'));assert.ok(edition.includes('Milik 27'));
+assert.ok(edition.includes('Allegro 26'));assert.ok(edition.includes('CC BY-NC 4.0'));
+assert.ok(!render(fieldwork.PassageEdition,{entry:i.by.get('entry/11'),onSelect}).includes('{{east'));
+const plate=render(fieldwork.SourcePlate,{onSelect});
+for(const value of ['sion2002-plan5-iv17.webp','Plan 5 p. 63','CC BY-NC 4.0','north arrow','No geographic registration','Evidence record'])assert.ok(plate.includes(value),value);
+assert.equal((plate.match(/<img /g)||[]).length,1);assert.ok(!plate.split('kb-plate-image')[1].split('</a>')[0].includes('<svg'));
+for(const id of ['hypothesis/twin','hypothesis/A41:XII/53','hypothesis/iv11']){
+ const dossier=render(fieldwork.CandidateFieldRecord,{candidate:i.by.get(id),onSelect});
+ assert.ok(dossier.includes('Figure coverage'));assert.ok(!dossier.includes('<img'));
+}
+const e60=render(fieldwork.PassageEdition,{entry:i.by.get('entry/60'),onSelect});assert.ok(e60.includes('{צח}'));
+console.log('Archaeological presentation checks passed: source plate, attribution, figure gaps, Hebrew sigla and edition concordance.');
