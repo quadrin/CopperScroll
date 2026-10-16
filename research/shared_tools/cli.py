@@ -51,8 +51,13 @@ def main():
     p = commands.add_parser('review'); p.add_argument('--output', type=Path, required=True)
     p = commands.add_parser('capture'); p.add_argument('--output', type=Path); p.add_argument('--validate', type=Path)
     p = commands.add_parser('serve'); p.add_argument('--port', type=int, default=8765)
+    p = commands.add_parser('kb', help='Bounded claim graph, evidence traversal and change impact')
+    p.add_argument('kb_args', nargs=argparse.REMAINDER)
     args = parser.parse_args()
-    if args.command == 'build':
+    if args.command == 'kb':
+        from claim_kb.cli import main as kb_main
+        result = kb_main(args.kb_args)
+    elif args.command == 'build':
         result = build(ocr=args.ocr)
     elif args.command == 'search':
         result = search(args.query, args.kind, args.limit)

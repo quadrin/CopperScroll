@@ -1,6 +1,10 @@
 # The Copper Scroll Atlas
 
-The [GitHub Pages homepage](https://quadrin.github.io/CopperScroll/) opens this atlas directly. Browse all 61 scroll entries and their candidate places in the register, inspect sites on the map, or switch to the full scroll text from the top navigation. Landscapes compares dated maps and archive photographs. Place dossiers connect the retained readings to individual features, archaeological phases and source figures. The selected entry has Sites, Text, and Evidence tabs. In the wide views, **Entry notes** restores the detail panel. On narrow screens, the bottom navigation moves between the register, map or scroll, and entry details.
+The [GitHub Pages homepage](https://quadrin.github.io/CopperScroll/) opens the claim-centred knowledge base. Select a passage, follow typed graph relationships, compare retained branches, inspect name chronology, or preview the consequences of a changed reading or observation. Places and Read the scroll preserve the spatial atlas and photographic reader, including existing deep links. A Knowledge base link returns from those views.
+
+The reviewed public snapshot contains evidence metadata and source pointers. It excludes protected dependency chains and source-image bytes. Each inspector links the underlying record and exact printed/PDF/figure locators. Graph positions are a reading layout; they carry no geographic or confidence meaning.
+
+The existing atlas remains available through its named routes. Browse all 61 scroll entries and their candidate places in the register, inspect sites on the map, or switch to the full scroll text from the top navigation. Landscapes compares dated maps and archive photographs. Place dossiers connect the retained readings to individual features, archaeological phases and source figures. The selected entry has Sites, Text, and Evidence tabs. In the wide views, **Entry notes** restores the detail panel. On narrow screens, the bottom navigation moves between the register, map or scroll, and entry details.
 
 ## Textual scenes
 
@@ -107,3 +111,22 @@ The Site uses the package manager, build scripts and hosting manifest supplied b
 Entries 21, 32, 49, 31 and 55 now have a “Compare features & evidence” dialog. It separates reading, site and exact-feature judgments, exposes source dependencies/access gaps, and states discriminating checks. Other candidates are explicitly marked as not yet assessed on separate axes. Site confidence and existing sorting remain unchanged.
 
 Edit `app/atlas-evidence.json` for the shared Site/Pages content. The narrative dossier is in `research/feature_investigation.md`; its repository-wide copy is `../research/sites/feature_investigation.md`. Keep both copies aligned. The constraint register is `research/feature_constraints.csv`, mirrored in `../tables/feature_constraints.csv`. Refine locality envelopes into feature outlines or modeled candidate areas as sources permit, recording the geometry method and positional uncertainty.
+
+
+## Knowledge-base landing page
+
+`app/atlas-home.tsx` routes the empty homepage and `#kb` links to the knowledge base, loading the spatial atlas separately for its existing routes. `app/atlas-kb.tsx` renders the graph, requirements, names, impact and source views; `atlas-kb-model.ts` holds pure traversal functions. The inspector exposes full typed relationships, source locations, assumptions, unknowns and the underlying reviewed record. The graph shows a bounded selection; search and the inspector retain access to every exported record. Mobile places the inspector below the graph, with horizontal graph panning and zoom controls.
+
+`app/atlas-kb.json` is a deterministic projection, never an evidence-editing surface. Refresh it from the repository root after reviewing canonical inputs:
+
+```sh
+PYTHONPATH=research/shared_tools python3 -m claim_kb.web_export
+PYTHONPATH=research/shared_tools python3 -m claim_kb.web_export --check
+cd atlas
+corepack pnpm run check:kb
+corepack pnpm run build:pages
+```
+
+The Pages build rejects a stale snapshot. The existing hosted Site uses the same checked-in snapshot; update evidence in the repository before synchronizing Site source. Public export calls the pilot's `public_view` filter before building entry indexes. Its version is a content hash of canonical records and input versions; explicit reviewed claim notices propagate reassessment flags to affected public results, while SQLite history stays in the local pilot. The public impact view computes dependency paths and preserves historical test outcomes. It does not simulate new archaeological evidence or revise a conclusion.
+
+Validation covers both edition-reading alternatives, all entry graph contexts, equal candidate options, exact source locators, name/date fields, dependency effects and five server-rendered views. Existing atlas navigation, site-plan and model checks remain available. Browser QA for this update could not run: the managed preview supervisor was unavailable. Responsive CSS and server rendering were checked; browser appearance and touch interactions remain unverified.

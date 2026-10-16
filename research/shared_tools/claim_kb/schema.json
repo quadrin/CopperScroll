@@ -1,0 +1,769 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:copperscroll:claim-kb:1",
+  "title": "Copper Scroll bounded claim graph",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "records",
+    "edges",
+    "inputs"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "subject",
+          "relation",
+          "object"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "subject": {
+            "type": "string"
+          },
+          "relation": {
+            "enum": [
+              "about",
+              "assigns",
+              "at_locus",
+              "catalogue_association",
+              "cites",
+              "conflicts",
+              "depends_on",
+              "derived_from",
+              "evaluates",
+              "found_at",
+              "in_entry",
+              "in_test",
+              "interprets",
+              "mentions",
+              "occurrence_of",
+              "on_segment",
+              "prerequisite",
+              "proposed_same_referent",
+              "proposed_spelling_variant",
+              "reports",
+              "requires",
+              "same_campaign",
+              "same_spelling",
+              "searched_for",
+              "state_of",
+              "supersedes",
+              "supports",
+              "transitions_from",
+              "transitions_to",
+              "under_branch",
+              "uses_frame",
+              "would_resolve"
+            ]
+          },
+          "object": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "locator": {
+      "type": "object",
+      "required": [
+        "repo_path",
+        "pointer",
+        "printed_page",
+        "pdf_page",
+        "figure",
+        "image_region",
+        "archival_identifier"
+      ],
+      "properties": {
+        "repo_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pointer": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "subject",
+        "relationship",
+        "value",
+        "analyst",
+        "evidence_kind",
+        "reading_confidence",
+        "site_association",
+        "feature_identity",
+        "positional_uncertainty",
+        "supersedes"
+      ],
+      "properties": {
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "ancient_arrangement_phase",
+            "ancient_threshold_elevation",
+            "ancient_traversable_connection",
+            "at_mouth_of",
+            "both_openings_east_aspect",
+            "burial_in_side_of_shaft",
+            "cave_east_aspect",
+            "chronology",
+            "coexisted_with",
+            "concealment_interpretation",
+            "constructed_same_phase_as",
+            "construction_work_year",
+            "dated_cutting_contact",
+            "east_of",
+            "exists_during",
+            "function",
+            "has_ancient_northern_corner",
+            "horizontal_path_direction",
+            "maximum_surviving_shaft_depth",
+            "north_of",
+            "northern_chord_normal_proxy",
+            "northern_horizontal_origin",
+            "northern_member",
+            "northern_opening_chord_width",
+            "northern_opening_width_reported",
+            "northern_threshold_elevation",
+            "opening_concealed",
+            "opening_date",
+            "opens_toward_north",
+            "pillar",
+            "proposed_feature_identity",
+            "published_cavity_characterization",
+            "published_dimensions",
+            "published_earlier_shaft_depth",
+            "published_section_locator",
+            "published_space_dimensions",
+            "published_use_reconstruction",
+            "published_width",
+            "reported_dimensions",
+            "reported_pit_count",
+            "sealed_construction_date",
+            "source_inspection_scope",
+            "terrace_association",
+            "true_individual_mouth_bearings",
+            "two_exterior_openings",
+            "within"
+          ]
+        },
+        "analyst": {
+          "type": "string"
+        },
+        "evidence_kind": {
+          "enum": [
+            "observed",
+            "published_reconstruction",
+            "excavator_label",
+            "textual_constraint",
+            "inference"
+          ]
+        },
+        "supersedes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "occurrence": {
+      "type": "object",
+      "required": [
+        "original_spelling",
+        "source_location",
+        "composition_date",
+        "object_date",
+        "period_described",
+        "findspot",
+        "place_mentioned"
+      ],
+      "properties": {
+        "original_spelling": {
+          "type": "string"
+        },
+        "source_location": {
+          "type": "string"
+        }
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "required": [
+        "branch_key",
+        "hypothesis_key",
+        "assignment",
+        "checks",
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "compatible",
+            "contradicted",
+            "unknown",
+            "mixed",
+            "info"
+          ]
+        },
+        "assignment": {
+          "type": "object"
+        },
+        "checks": {
+          "type": "array"
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "required": [
+        "proposer",
+        "evidence",
+        "merged"
+      ],
+      "properties": {
+        "merged": {
+          "const": false
+        }
+      }
+    },
+    "record": {
+      "type": "object",
+      "required": [
+        "key",
+        "kind",
+        "id",
+        "label",
+        "review_status",
+        "exposure",
+        "visibility",
+        "locators",
+        "payload"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "acquisition",
+            "branch",
+            "claim",
+            "copy",
+            "coverage",
+            "edition",
+            "entity",
+            "entry",
+            "evaluation",
+            "event",
+            "feature",
+            "frame",
+            "gap",
+            "hypothesis",
+            "identity",
+            "image",
+            "interpretation",
+            "lineage",
+            "locus",
+            "name",
+            "observation",
+            "occurrence",
+            "reading",
+            "reading_set",
+            "requirement",
+            "restoration",
+            "search",
+            "segment",
+            "source",
+            "state",
+            "test",
+            "translation",
+            "witness",
+            "work"
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "review_status": {
+          "const": "accepted"
+        },
+        "exposure": {
+          "type": "string"
+        },
+        "visibility": {
+          "enum": [
+            "public_metadata",
+            "local_only",
+            "restricted",
+            "reserved"
+          ]
+        },
+        "locators": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/locator"
+          }
+        },
+        "payload": {
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "claim"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/claim"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "occurrence"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/occurrence"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "evaluation"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/evaluation"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "identity"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/identity"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "source"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/source"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "observation"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/observation"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "hypothesis"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/hypothesis"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "gap"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/gap"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "reading"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/reading"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "search"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/search"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "acquisition"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/acquisition"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "state"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/state"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "image"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/image"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "title",
+        "citation",
+        "inspection"
+      ],
+      "properties": {
+        "inspection": {
+          "enum": [
+            "already_inspected",
+            "not_inspected",
+            "derived"
+          ]
+        },
+        "inspected_parts": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "uninspected_parts": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "required": [
+        "value",
+        "evidence_kind",
+        "lineage_key"
+      ],
+      "properties": {
+        "lineage_key": {
+          "type": "string"
+        }
+      }
+    },
+    "hypothesis": {
+      "type": "object",
+      "required": [
+        "assignment",
+        "coexistence_status",
+        "state_keys"
+      ],
+      "properties": {
+        "assignment": {
+          "type": "object"
+        },
+        "coexistence_status": {
+          "enum": [
+            "unknown",
+            "compatible",
+            "contradicted"
+          ]
+        },
+        "state_keys": {
+          "type": "array"
+        }
+      }
+    },
+    "gap": {
+      "type": "object",
+      "required": [
+        "reason",
+        "unknown",
+        "absence_asserted"
+      ],
+      "properties": {
+        "reason": {
+          "enum": [
+            "incomplete_coverage",
+            "insufficient_resolution",
+            "missing_reference_point",
+            "not_recorded",
+            "uncertain_phase",
+            "unestablished_geometry",
+            "uninspected_source",
+            "unregistered_image",
+            "unsegmented_editorial_layer",
+            "unverified_identity",
+            "unverified_independence"
+          ]
+        },
+        "unknown": {
+          "const": true
+        },
+        "absence_asserted": {
+          "const": false
+        }
+      }
+    },
+    "reading": {
+      "type": "object",
+      "required": [
+        "form",
+        "witness_basis",
+        "visible_letter_observation"
+      ],
+      "properties": {
+        "form": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "search": {
+      "type": "object",
+      "required": [
+        "queries",
+        "corpora",
+        "inspection_scope",
+        "limitations",
+        "result"
+      ],
+      "properties": {
+        "queries": {
+          "type": "array",
+          "minItems": 1
+        },
+        "corpora": {
+          "type": "array",
+          "minItems": 1
+        }
+      }
+    },
+    "acquisition": {
+      "type": "object",
+      "required": [
+        "record_needed",
+        "actual_observation",
+        "outcomes"
+      ],
+      "properties": {
+        "actual_observation": {
+          "const": false
+        },
+        "outcomes": {
+          "type": "array"
+        }
+      }
+    },
+    "state": {
+      "type": "object",
+      "required": [
+        "feature_id",
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "observed",
+            "reconstructed",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "required": [
+        "substrate",
+        "association_status",
+        "original_roi",
+        "export_policy"
+      ],
+      "properties": {
+        "substrate": {
+          "enum": [
+            "original",
+            "replica",
+            "reconstruction"
+          ]
+        }
+      }
+    },
+    "date": {
+      "type": "object",
+      "required": [
+        "range_ce",
+        "basis"
+      ],
+      "properties": {
+        "range_ce": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "basis": {
+          "type": "string"
+        }
+      }
+    },
+    "measurement": {
+      "type": "object",
+      "required": [
+        "value",
+        "unit",
+        "endpoints",
+        "reference_surfaces",
+        "direction_convention",
+        "frame_key",
+        "phase",
+        "uncertainty"
+      ],
+      "properties": {
+        "unit": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

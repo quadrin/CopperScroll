@@ -1,0 +1,2104 @@
+{
+  "schema_version": 1,
+  "scope": "Reviewed pilot annotations plus targeted exploratory source follow-up of15October2026; original migration and historical test results preserved",
+  "records": [
+    {
+      "kind": "source",
+      "id": "kb-xii53-native",
+      "label": "Reviewed Cohen–Israel XII/53 native-report check",
+      "payload": {
+        "title": "Cohen and Israel, Excavations of Rock Shelter XII-50 and Caves XII-52-53",
+        "citation": "ʿAtiqot 41 (2002), pp. 208–209; PDF pp. 3–4; Plan 3 and Fig. 4",
+        "repo_path": "research/feature_workbench/available_evidence_2026-10-13/cave_native_check.md",
+        "inspection": "already_inspected",
+        "inspection_scope": "Targeted native pp208–209, not a whole-volume read",
+        "printed_pages": [
+          208,
+          209
+        ],
+        "pdf_pages": [
+          3,
+          4
+        ],
+        "figure": [
+          "Plan 3",
+          "Fig. 4"
+        ],
+        "asset_sha256": "a1fb1862a909d066db6b6be62bb9e3ea3933ebde9572c61fe555bcc22c7edf62",
+        "rights": "Metadata only; original remains at established source location",
+        "original_campaign": "XII/53 excavation L-608"
+      }
+    },
+    {
+      "kind": "source",
+      "id": "kb-name-review",
+      "label": "Reviewed T05 period-text concordance",
+      "payload": {
+        "title": "T05 attestation concordance",
+        "citation": "T05-001, T05-002, T05-006, T05-062; REPORT.md and data/source_coverage.csv",
+        "repo_path": "research/agent_review_2026-10-07/wave1/T05_period_texts/data/attestation_concordance.json",
+        "inspection": "derived",
+        "inspection_scope": "Migration of already reviewed concordance only; no new edition or manuscript inspection",
+        "rights": "Metadata and existing short project excerpts"
+      }
+    },
+    {
+      "kind": "work",
+      "id": "Sion2002",
+      "label": "Ofer Sion, Regions IV and VI",
+      "payload": {
+        "title": "Ofer Sion, Regions IV and VI"
+      }
+    },
+    {
+      "kind": "edition",
+      "id": "Sion2002",
+      "label": "ʿAtiqot 41 part 1 (2002)",
+      "payload": {
+        "edition_statement": "ʿAtiqot 41 part 1 (2002)"
+      }
+    },
+    {
+      "kind": "work",
+      "id": "KenyonII",
+      "label": "Excavations at Jericho II",
+      "payload": {
+        "title": "Excavations at Jericho II"
+      }
+    },
+    {
+      "kind": "edition",
+      "id": "KenyonII",
+      "label": "1965",
+      "payload": {
+        "edition_statement": "1965"
+      }
+    },
+    {
+      "kind": "work",
+      "id": "KenyonIII",
+      "label": "Excavations at Jericho III",
+      "payload": {
+        "title": "Excavations at Jericho III"
+      }
+    },
+    {
+      "kind": "edition",
+      "id": "KenyonIII",
+      "label": "1981",
+      "payload": {
+        "edition_statement": "1981"
+      }
+    },
+    {
+      "kind": "work",
+      "id": "CohenIsrael2002",
+      "label": "Excavations of Rock Shelter XII-50 and Caves XII-52-53",
+      "payload": {
+        "title": "Excavations of Rock Shelter XII-50 and Caves XII-52-53"
+      }
+    },
+    {
+      "kind": "edition",
+      "id": "CohenIsrael2002",
+      "label": "ʿAtiqot 41 part 1 (2002)",
+      "payload": {
+        "edition_statement": "ʿAtiqot 41 part 1 (2002)"
+      }
+    },
+    {
+      "kind": "work",
+      "id": "BarAdon1989",
+      "label": "Excavations in the Judean Desert, Chapter B",
+      "payload": {
+        "title": "Excavations in the Judean Desert, Chapter B"
+      }
+    },
+    {
+      "kind": "edition",
+      "id": "BarAdon1989",
+      "label": "ʿAtiqot Hebrew Series 9 (1989)",
+      "payload": {
+        "edition_statement": "ʿAtiqot Hebrew Series 9 (1989)"
+      }
+    },
+    {
+      "kind": "copy",
+      "id": "cohen-israel-native",
+      "label": "Previously inspected Cohen–Israel digital report",
+      "payload": {
+        "source_member": "18 - The Excavations of Rock Shelter XII-50 and Caves XII-52-53.pdf",
+        "sha256": "a1fb1862a909d066db6b6be62bb9e3ea3933ebde9572c61fe555bcc22c7edf62",
+        "access": "Existing source location; bytes excluded",
+        "rights": "No reproduction authorized here"
+      }
+    },
+    {
+      "kind": "copy",
+      "id": "baradon-capture",
+      "label": "Previously inspected Bar-Adon screen capture",
+      "payload": {
+        "sha256": "c4bfd44036c1fb98ad6fcb1f3e212ed02795e66604c87c04cba1a47964c032a4",
+        "page_mapping": [
+          {
+            "printed_page": "[15]",
+            "pdf_page": 20
+          },
+          {
+            "printed_page": "16–17",
+            "pdf_page": 21
+          }
+        ],
+        "access": "Existing source location; bytes excluded",
+        "rights": "No reproduction authorized here"
+      }
+    },
+    {
+      "kind": "lineage",
+      "id": "sion-plan5",
+      "label": "Sion 2002 Plan 5 drawing",
+      "payload": {
+        "granularity": "original_observation",
+        "independence": "Single published drawing, repeatedly reused"
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "sion-plan5",
+      "label": "Published IV/17 aperture drawing",
+      "payload": {
+        "value": "Plan 5 published aperture arrangement",
+        "evidence_kind": "observed",
+        "lineage_key": "lineage/sion-plan5",
+        "printed_page": 63,
+        "figure": "Plan 5",
+        "phase": "survey arrangement; ancient date unknown",
+        "note": "Identity of reused drawing; endpoint annotations remain separate derived measurements."
+      }
+    },
+    {
+      "kind": "feature",
+      "id": "xii53-W2",
+      "label": "XII/53 W2 built pillar",
+      "payload": {
+        "kind": "catalogued_feature",
+        "geometry": null,
+        "identity_status": "separate record; proposed aliases require evidence"
+      }
+    },
+    {
+      "kind": "feature",
+      "id": "xii53-W1",
+      "label": "XII/53 W1",
+      "payload": {
+        "kind": "catalogued_feature",
+        "geometry": null,
+        "identity_status": "separate record; proposed aliases require evidence"
+      }
+    },
+    {
+      "kind": "feature",
+      "id": "DJD:32",
+      "label": "1952 survey site 32",
+      "payload": {
+        "kind": "catalogued_feature",
+        "geometry": null,
+        "identity_status": "separate record; proposed aliases require evidence"
+      }
+    },
+    {
+      "kind": "feature",
+      "id": "A41:X/47",
+      "label": "A41 X/47 cluster",
+      "payload": {
+        "kind": "catalogued_feature",
+        "geometry": null,
+        "identity_status": "separate record; proposed aliases require evidence"
+      }
+    },
+    {
+      "kind": "feature",
+      "id": "WB:E707",
+      "label": "WBADB Excavations 707",
+      "payload": {
+        "kind": "catalogued_feature",
+        "geometry": null,
+        "identity_status": "separate record; proposed aliases require evidence"
+      }
+    },
+    {
+      "kind": "state",
+      "id": "xii53-W2-reported",
+      "label": "XII/53 W2 in reported arrangement",
+      "payload": {
+        "feature_id": "xii53-W2",
+        "status": "observed",
+        "phase": {
+          "construction": null
+        },
+        "geometry": null,
+        "world_geometry": null,
+        "note": "Layer L10 abuts W1; W2 construction remains undated"
+      }
+    },
+    {
+      "kind": "gap",
+      "id": "xii53-phase-datum",
+      "label": "XII/53 W2 phase and northern threshold",
+      "payload": {
+        "reason": "uncertain_phase",
+        "unknown": true,
+        "absence_asserted": false,
+        "needed": [
+          "W2 construction contact",
+          "Northern-threshold datum and ancient surface"
+        ],
+        "consequence": "Could distinguish an ancient two-mouth arrangement from a later partition; existing form match remains exploratory"
+      }
+    },
+    {
+      "kind": "identity",
+      "id": "twin-x47",
+      "label": "Twin Cave = A41 X/47?",
+      "payload": {
+        "status": "unverified",
+        "merged": false,
+        "proposer": "reviewed regional inventory compiler",
+        "evidence": "Regional record names Jones but gives no Twin Cave / Bar-Adon crosswalk"
+      }
+    },
+    {
+      "kind": "identity",
+      "id": "xii53-djd32",
+      "label": "XII/53 = 1952 site 32?",
+      "payload": {
+        "status": "unverified",
+        "merged": false,
+        "proposer": "reviewed regional inventory compiler",
+        "evidence": "Regional catalogue records resemblance only; no stated identity"
+      }
+    },
+    {
+      "kind": "identity",
+      "id": "pillar-label",
+      "label": "WB:E707 = Twin Cave?",
+      "payload": {
+        "status": "unverified",
+        "merged": false,
+        "proposer": "reviewed regional inventory compiler",
+        "evidence": "Shared label is insufficient; separate catalogue locators and ambiguous crosswalk"
+      }
+    },
+    {
+      "kind": "restoration",
+      "id": "e25-direction-article",
+      "label": "Puech editorial direction article",
+      "payload": {
+        "layer": "editorial_correction",
+        "form": null,
+        "description": "Existing e25-direction audit says Puech supplies the direction article; exact glyph segmentation not migrated",
+        "author": "Puech 2015",
+        "visible_on_original": null
+      }
+    },
+    {
+      "kind": "acquisition",
+      "id": "xii53-state-datum",
+      "label": "XII/53 dated W2/threshold observation",
+      "payload": {
+        "record_needed": [
+          "Dated W2 foundation or construction contact",
+          "Northern threshold, ancient surface and benchmark under same phase"
+        ],
+        "actual_observation": false,
+        "freeze": {
+          "status": "not_frozen",
+          "unused_status": "unverified"
+        },
+        "outcomes": [
+          {
+            "id": "early-arrangement",
+            "recorded": false,
+            "condition": "Dated W2 and mouth state coexist in a retained early window",
+            "consequences": [
+              "Permit comparison of the same ancient assignment; other geometry and regional gaps remain"
+            ]
+          },
+          {
+            "id": "late-partition",
+            "recorded": false,
+            "condition": "W2 partition postdates the retained period and no early two-mouth arrangement is established",
+            "consequences": [
+              "Reassess only the fixed W2-based ancient-arrangement branch"
+            ]
+          },
+          {
+            "id": "inconclusive",
+            "recorded": false,
+            "condition": "No feature-controlled phase or datum",
+            "consequences": [
+              "Retain unknown"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "source",
+      "id": "followup-atlas-twin2015",
+      "label": "Davidovich and Frumkin 2015, Twin Complex",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "title": "Davidovich and Frumkin 2015, Twin Complex",
+        "citation": "Atlas of the Judean Desert Caves, pp.212–215; supplied PDF pp.1–4; Malham 2011 map p.215",
+        "repo_path": "research/feature_workbench/available_evidence_2026-10-13/cave_native_check.md",
+        "url": "https://drive.google.com/file/d/1myf103Yzzc7G4ukNzR2r6aRZRK8arOWC/view",
+        "asset_sha256": "0e7ada078918f5212643ca19766c6241fb28a2d1c2ddbbceade304a562c0b6b1",
+        "inspection": "already_inspected",
+        "inspection_scope": "Entry pp212–215 and appended title/rights/contents. Prior full inspection was already recorded by the project source index.",
+        "rights": "All rights reserved; source pointers only. No page image or full translation in export.",
+        "access_status": "existing owner-held copy",
+        "reviewed_by": "Codex, targeted source check 15 October 2026; exploratory"
+      }
+    },
+    {
+      "kind": "source",
+      "id": "followup-hamer2023",
+      "label": "Hamer et al. 2023, Neolithic cave occupation",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "title": "Hamer et al. 2023, Neolithic cave occupation",
+        "citation": "New Studies in the Archaeology of the Judean Desert, Table2 p134/PDF5; Fig5 p141/PDF12; Cave A4-011 p143/PDF14",
+        "repo_path": "research/feature_workbench/available_evidence_2026-10-13/cave_native_check.md",
+        "url": "https://www.jstor.org/stable/jj.10329820.9",
+        "asset_sha256": "6adbf609de02ee3239aa8f6943a7d6112be14c7bc987f85112299da6f52a3796",
+        "inspection": "already_inspected",
+        "inspection_scope": "Targeted frontmatter, pp134,138–143 and references; text search to locate passages, not a whole-article visual read.",
+        "rights": "CC BY-NC 4.0 stated on supplied PDF p1; source photographer/illustrator credits retained.",
+        "access_status": "existing owner-held copy",
+        "reviewed_by": "Codex, targeted source check 15 October 2026; exploratory"
+      }
+    },
+    {
+      "kind": "source",
+      "id": "followup-kallai1968",
+      "label": "Kallai 1968, Mount Ephraim and Benjamin central survey",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "title": "Kallai 1968, Mount Ephraim and Benjamin central survey",
+        "citation": "Hadashot Arkheologiyot 26 (April1968), pp19–23; supplied PDF22,24–28; printed p20 duplicated",
+        "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+        "url": "https://drive.google.com/file/d/1wk_ODSDF_aoJpRv7jmLJuXkJ5nnqYhbN/view",
+        "asset_sha256": "a0ef49e7027868070b54c343509d6350b5a88692c9b6da81f590a0629df0a2c2",
+        "inspection": "already_inspected",
+        "inspection_scope": "Complete five-page team5 report, printed pp19–23 visually checked; other issue pages were text-indexed only.",
+        "rights": "Reproduction grant unestablished; source pointers and short factual metadata only.",
+        "access_status": "existing owner-held copy",
+        "reviewed_by": "Codex, targeted source check 15 October 2026; exploratory"
+      }
+    },
+    {
+      "kind": "source",
+      "id": "followup-frumkin2023",
+      "label": "Frumkin 2023, Qumran cave geology",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "title": "Frumkin 2023, Qumran cave geology",
+        "citation": "New Studies in the Archaeology of the Judean Desert, p80/PDF7; Fig4",
+        "repo_path": "research/feature_workbench/available_evidence_2026-10-13/cave_native_check.md",
+        "url": "https://www.jstor.org/stable/jj.10329820.6",
+        "asset_sha256": "ce5cb66b087e9ea48e7bb8c026d7efddbff986a9bf4fe66aee12e0fa065bf77f",
+        "inspection": "already_inspected",
+        "inspection_scope": "Extracted-text search for Cave53/Twin/pillar/entrance; p80 directly inspected. Other native pages not visually reviewed.",
+        "rights": "CC BY-NC 4.0, supplied PDFp1; Fig4 is Cave11Q, credited to B.Langford.",
+        "access_status": "existing owner-held copy",
+        "reviewed_by": "Codex, targeted source check 15 October 2026; exploratory"
+      }
+    },
+    {
+      "kind": "source",
+      "id": "followup-freikman2020",
+      "label": "Freikman, Gutfeld and Ovadia 2020, Cave 53 seal",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "title": "Freikman, Gutfeld and Ovadia 2020, Cave 53 seal",
+        "citation": "Freikman, Gutfeld and Ovadia2020, JIPS50 pp93–103. Native pp93–96/Figs1–4 inspected in supplied capture slices1–6; remaining native pages uninspected; indexed article text also checked.",
+        "repo_path": "research/feature_workbench/available_evidence_2026-10-13/cave_native_check.md",
+        "url": "https://doi.org/10.61247/s486697",
+        "asset_sha256": "fded7ad0a6119c0b09886fbe6bc86fc356cebffb088da8b3734efdb257f071d1",
+        "inspection": "already_inspected",
+        "inspection_scope": "Native printed93–96 / capture PDF slices1–6: text, location mapFig1, entrance photoFig2, ICRC2017 map and sectionsFig3, hearthFig4. Native97–103 not inspected; indexed bibliography already checked.",
+        "rights": "Original image reuse rights unestablished; source pointers and short reviewed factual metadata only.",
+        "access_status": "Owner supplied a correct JSTOR27074897 screen-capture PDF; original attachment retained at supplied location. Prior public PDF-download failures are historical.",
+        "reviewed_by": "Codex, targeted source check 15 October 2026; exploratory",
+        "doi": "10.61247/s486697",
+        "jstor_id": "27074897",
+        "author_copy_url": "https://www.academia.edu/44659951/JOURNAL_OF_THE_ISRAEL_PREHISTORIC_SOCIETY",
+        "unrelated_attachment": {
+          "sha256": "c3a9ec779f8df66cf6a25af556dadb835f2f7f16875c2d0ad239451a4eddaf09",
+          "verified_work": "Yamada et al2020, scraper study, JIPS50 pp192–208, JSTOR27074901",
+          "status": "Different article; hash must not be attributed to Freikman or used as its native-figure provenance"
+        },
+        "uninspected_parts": [
+          "Native printed97–103 / remaining capture slices: outside the entrance/context target"
+        ],
+        "inspected_parts": [
+          "Native pp93–96, Figs1–4; source capture slices1–6",
+          "Previously recovered indexed article text and bibliography"
+        ],
+        "attachment": {
+          "filename": "screencapture-jstor-org-stable-27074897-2026-10-15-17_01_53.pdf",
+          "bytes": 29391840,
+          "sha256": "fded7ad0a6119c0b09886fbe6bc86fc356cebffb088da8b3734efdb257f071d1",
+          "pdf_slices": 17,
+          "capture_viewer_source_pages": 11,
+          "received_utc": "2026-10-16T00:04:31.509649+00:00",
+          "manifest_check": "pass (29 files)",
+          "reader_and_comparer": "Codex; exploratory; indexed text previously exposed",
+          "rights": "Receipt does not authorize public image redistribution"
+        }
+      }
+    },
+    {
+      "kind": "lineage",
+      "id": "atlas2011-twin",
+      "label": "Malham 2011 Twin Complex survey",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "granularity": "field_campaign",
+        "original_campaign": "Malham 2011 map credited p215",
+        "independence": "Survey observations remain separate from excavation finds and the repeated Bar-Adon/Jones synthesis."
+      }
+    },
+    {
+      "kind": "lineage",
+      "id": "hamer-cave53-photo",
+      "label": "Hamer Cave53 exterior photograph",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "granularity": "original_observation",
+        "original_campaign": "Photograph credited H.Hamer in 2023 Fig5; capture date unestablished",
+        "independence": "Later exterior view; cannot date W2 and is not a second observation of the 1993 excavation contact."
+      }
+    },
+    {
+      "kind": "lineage",
+      "id": "kallai1967-preliminary",
+      "label": "1967 survey summarized in 1968",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "granularity": "field_campaign",
+        "original_campaign": "Team5 regional survey, central Ephraim/Benjamin",
+        "independence": "Preliminary and final publications can derive from the same survey. No second independent pool observation."
+      }
+    },
+    {
+      "kind": "feature",
+      "id": "atlas2015-twin-west",
+      "label": "Atlas Twin West",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "source_label": "Twin West",
+        "source_grid_literal": "243600/629260",
+        "world_geometry": null,
+        "crs": null,
+        "registration": null,
+        "uncertainty": "Datum, point definition and positional uncertainty not established in inspected extract; do not plot as metre-precise location.",
+        "identity_status": "Source-defined member of Twin Complex, not merged with older units"
+      }
+    },
+    {
+      "kind": "feature",
+      "id": "atlas2015-twin-east",
+      "label": "Atlas Twin East",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "source_label": "Twin East",
+        "source_grid_literal": "243615/629268",
+        "world_geometry": null,
+        "crs": null,
+        "registration": null,
+        "uncertainty": "Datum, point definition and positional uncertainty not established in inspected extract; do not plot as metre-precise location.",
+        "identity_status": "Source-defined member of Twin Complex, not merged with older units"
+      }
+    },
+    {
+      "kind": "feature",
+      "id": "atlas2015-twin-north",
+      "label": "Atlas Twin North",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "source_label": "Twin North",
+        "source_grid_literal": "243600/629325",
+        "world_geometry": null,
+        "crs": null,
+        "registration": null,
+        "uncertainty": "Datum, point definition and positional uncertainty not established in inspected extract; do not plot as metre-precise location.",
+        "identity_status": "Source-defined member of Twin Complex, not merged with older units"
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "atlas-twin-three-members",
+      "label": "Atlas distinguishes West, East and North",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "members": [
+            "feature/atlas2015-twin-west",
+            "feature/atlas2015-twin-east",
+            "feature/atlas2015-twin-north"
+          ],
+          "baradon_named_pair": [
+            "west",
+            "east"
+          ],
+          "north_is_third_cave": true
+        },
+        "evidence_kind": "published_description",
+        "lineage_key": "lineage/atlas2011-twin",
+        "citation": "p212/PDF1; labelled photo p213/PDF2; plan p215/PDF4",
+        "review_status": "reviewed targeted extraction",
+        "historical_context": "reported state; ancient architectural phase unresolved"
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "atlas-west-excavated-floor",
+      "label": "Twin West excavation changed floor and volume",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "sediment_thickness_reported": {
+            "value": 8,
+            "unit": "m",
+            "qualifier": "approximately"
+          },
+          "removed": "largely",
+          "present_volume": "increased after excavation",
+          "ancient_threshold": null
+        },
+        "evidence_kind": "published_description",
+        "lineage_key": "lineage/atlas2011-twin",
+        "citation": "p212/PDF1",
+        "review_status": "reviewed targeted extraction",
+        "historical_context": "reported state; ancient architectural phase unresolved"
+      }
+    },
+    {
+      "kind": "state",
+      "id": "atlas-west-before-excavation",
+      "label": "Twin West before major excavation",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "phase": "before sediment removal, precise date unresolved",
+        "floor_elevation": null,
+        "world_geometry": null,
+        "uncertainty": "No registered absolute levels or ancient-threshold reconstruction",
+        "feature_id": "atlas2015-twin-west",
+        "status": "reconstructed"
+      }
+    },
+    {
+      "kind": "state",
+      "id": "atlas-west-2011-survey",
+      "label": "Twin West as surveyed in 2011",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "phase": "modern excavation/survey state",
+        "floor_elevation": null,
+        "world_geometry": null,
+        "uncertainty": "No registered absolute levels or ancient-threshold reconstruction",
+        "feature_id": "atlas2015-twin-west",
+        "status": "observed"
+      }
+    },
+    {
+      "kind": "event",
+      "id": "atlas-west-sediment-removal",
+      "label": "Reported sediment removal at Twin West",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "event_type": "excavation",
+        "date": null,
+        "date_basis": "Atlas research history names Jones excavations in 1980s–1990s; individual floor surfaces not dated",
+        "ancient_construction_date": null
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "hamer-A4-011-53",
+      "label": "Hamer explicitly pairs A4-011 and Cave53",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "catalogue_number": "A4-011",
+          "published_name": "Cave53",
+          "printed_elevation": {
+            "value": -293,
+            "unit": "m",
+            "reference": "mean sea level as published; measurement uncertainty unrecorded"
+          },
+          "W2_construction_date": null
+        },
+        "evidence_kind": "published_description",
+        "lineage_key": "lineage/hamer-cave53-synthesis",
+        "citation": "Table2 p134/PDF5; heading p143/PDF14",
+        "review_status": "reviewed targeted extraction",
+        "historical_context": "reported state; ancient architectural phase unresolved"
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "hamer-cave53-photo",
+      "label": "Cave53 exterior labelled in Fig5",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "view": "toward southwest, caption",
+          "A4-011": "Cave53, lower opening",
+          "A4-028": "Gaya, separate higher cave",
+          "figure6_subject": "Gaya, not Cave53",
+          "geographic_registration": null
+        },
+        "evidence_kind": "photograph_label",
+        "lineage_key": "lineage/hamer-cave53-photo",
+        "citation": "Fig5 p141/PDF12",
+        "review_status": "reviewed targeted extraction",
+        "historical_context": "reported state; ancient architectural phase unresolved"
+      }
+    },
+    {
+      "kind": "lineage",
+      "id": "hamer-cave53-synthesis",
+      "label": "Hamer summary of Cave53 publications",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "granularity": "publication_synthesis",
+        "original_campaign": "Cohen–Israel1993 report and Freikman–Gutfeld–Ovadia2020, as cited on p143",
+        "independence": "References and dimensions are transmitted observations, not new entrance construction evidence."
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "kallai1968-pool-silence",
+      "label": "Kallai1968 inspected report has no eastern-pool description",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "inspection_scope": "Complete team5 report pp19–23; PDF22,24–28",
+          "documentary_result": "no pool location or date reported in these pages",
+          "archaeological_absence": false,
+          "coverage_limit": "p19 says assigned region not entirely covered",
+          "not_received": "Kochavi1972 pp172–173"
+        },
+        "evidence_kind": "bounded_documentary_silence",
+        "lineage_key": "lineage/kallai1967-preliminary",
+        "citation": "pp19–23; scope limitation p19/PDF22",
+        "review_status": "reviewed targeted extraction",
+        "historical_context": "reported state; ancient architectural phase unresolved"
+      }
+    },
+    {
+      "kind": "claim",
+      "id": "twin-unit-assignment-review",
+      "label": "Keep Bar-Adon northern unit distinct from Atlas North",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "subject": "hypothesis/twin",
+        "relationship": "northern_member",
+        "value": {
+          "proposed_baradon_northern_unit": "Atlas Twin East",
+          "proposed_baradon_southern_unit": "Atlas Twin West",
+          "atlas_north": "third cave; Jones1992 pit identity unverified",
+          "silent_substitution_forbidden": true
+        },
+        "analyst": "Codex, targeted review 15 October2026",
+        "evidence_kind": "inference",
+        "reading_confidence": null,
+        "site_association": null,
+        "feature_identity": null,
+        "positional_uncertainty": null,
+        "supersedes": [],
+        "status": "unknown",
+        "historical_context": "Exploratory; not identification support",
+        "citation": "Atlas of the Judean Desert Caves, pp.212–215; supplied PDF pp.1–4; Malham 2011 map p.215",
+        "reassessment_required": true
+      }
+    },
+    {
+      "kind": "claim",
+      "id": "twin-modern-floor-not-datum",
+      "label": "Current excavated West floor is not an ancient threshold",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "subject": "feature/atlas2015-twin-west",
+        "relationship": "ancient_threshold_elevation",
+        "value": null,
+        "analyst": "Codex, targeted review 15 October2026",
+        "evidence_kind": "inference",
+        "reading_confidence": null,
+        "site_association": null,
+        "feature_identity": null,
+        "positional_uncertainty": null,
+        "supersedes": [],
+        "status": "unknown",
+        "historical_context": "Exploratory; not identification support",
+        "citation": "Atlas of the Judean Desert Caves, pp.212–215; supplied PDF pp.1–4; Malham 2011 map p.215"
+      }
+    },
+    {
+      "kind": "claim",
+      "id": "A4-011-crosswalk-review",
+      "label": "Proposed A4-011 / XII53 report crosswalk",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "subject": "feature/A41:XII/53",
+        "relationship": "proposed_feature_identity",
+        "value": {
+          "A4-011_to_Cave53": "explicit in Hamer p143",
+          "Cave53_to_XII53": "proposed from cited Cohen–Israel report and same hall dimensions; no merge",
+          "W2_phase": null
+        },
+        "analyst": "Codex, targeted review 15 October2026",
+        "evidence_kind": "inference",
+        "reading_confidence": null,
+        "site_association": null,
+        "feature_identity": "proposal only",
+        "positional_uncertainty": null,
+        "supersedes": [],
+        "status": "unknown",
+        "historical_context": "Exploratory; not identification support",
+        "citation": "New Studies in the Archaeology of the Judean Desert, Table2 p134/PDF5; Fig5 p141/PDF12; Cave A4-011 p143/PDF14"
+      }
+    },
+    {
+      "kind": "claim",
+      "id": "kallai1968-scope",
+      "label": "1968 preliminary report does not replace 1972 pool pages",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "subject": "hypothesis/samiya-kallai",
+        "relationship": "source_inspection_scope",
+        "value": {
+          "1968_report_read": true,
+          "pool_description_within_inspected_pages": null,
+          "1972_pages_received": false,
+          "archaeological_absence_asserted": false
+        },
+        "analyst": "Codex, targeted review 15 October2026",
+        "evidence_kind": "inference",
+        "reading_confidence": null,
+        "site_association": null,
+        "feature_identity": null,
+        "positional_uncertainty": null,
+        "supersedes": [],
+        "status": "unknown",
+        "historical_context": "Exploratory; not identification support",
+        "citation": "Hadashot Arkheologiyot 26 (April1968), pp19–23; supplied PDF22,24–28; printed p20 duplicated"
+      }
+    },
+    {
+      "kind": "identity",
+      "id": "atlas-baradon-units",
+      "label": "Bar-Adon units / Atlas West–East?",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "merged": false,
+        "proposer": "Codex, 15 October2026, exploratory crosswalk",
+        "evidence": "p212 explicit Bar-Adon naming; topology/dimensions suggest northern unit=East, southern unit=West; no locus concordance",
+        "relation": "proposed_same_referent",
+        "review_status": "requires original unit/plan concordance"
+      }
+    },
+    {
+      "kind": "identity",
+      "id": "atlas-jones-north",
+      "label": "Atlas North / Jones1992 North?",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "merged": false,
+        "proposer": "Codex, 15 October2026, exploratory crosswalk",
+        "evidence": "p212 photo labels Jones excavation at Atlas North, without identifying 1992 pit",
+        "relation": "proposed_same_referent",
+        "review_status": "requires original unit/plan concordance"
+      }
+    },
+    {
+      "kind": "identity",
+      "id": "A4-011-XII53",
+      "label": "A4-011 Cave53 / A41 XII53?",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "merged": false,
+        "proposer": "Codex, 15 October2026, exploratory crosswalk",
+        "evidence": "Hamer p143 cites Cohen–Israel2002 pp211–212 and matches central-hall dimensions; record association without physical merge",
+        "relation": "proposed_same_referent",
+        "review_status": "requires original unit/plan concordance"
+      }
+    },
+    {
+      "kind": "gap",
+      "id": "twin-unit-concordance",
+      "label": "Bar-Adon entrance / 2011 plan concordance missing",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "reason": "unverified_identity",
+        "unknown": true,
+        "absence_asserted": false,
+        "detail": "Assign the Bar-Adon northern opening to one original entrance before using its floor, facing or depth. Atlas North cannot silently replace Atlas East."
+      }
+    },
+    {
+      "kind": "acquisition",
+      "id": "twin-unit-concordance",
+      "label": "Obtain unit/entrance concordance and ancient threshold contact",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "actual_observation": false,
+        "record_needed": "Original Bar-Adon labelled units/entrances, excavation areas and Malham2011 survey stations; dated floor/threshold contact at the retained northern unit",
+        "freeze": "Existing retained readings/controls remain unchanged; a new assignment needs its own declared exploratory specification",
+        "outcomes": [
+          {
+            "id": "concordance_established",
+            "consequence": "Assign one entrance and retain that assignment across every requirement"
+          },
+          {
+            "id": "concordance_conflicts",
+            "consequence": "Revise the candidate as a new exploratory specification; preserve earlier result"
+          },
+          {
+            "id": "only_modern_floor_found",
+            "consequence": "Ancient three-cubit datum remains unresolved"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "source",
+      "id": "followup-gutfeld2020",
+      "label": "Gutfeld2020, Looters or monks? XII/53 report",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "title": "Looters or monks? The mystery of the missing scrolls from Cave XII/53 at Qumran",
+        "citation": "Desert Archaeology, Proceedings of the16th Southern Conference (2020), pp71–80; indexed Hebrew author-copy text; native figures uninspected",
+        "url": "https://www.academia.edu/42018631",
+        "repo_path": "research/feature_workbench/available_evidence_2026-10-13/cave_native_check.md",
+        "inspection": "already_inspected",
+        "inspection_scope": "Indexed pp71–80, especially entrance description p71, naming p72, coverage p74 and finds pp75–76; figure captions only. Native images not inspected.",
+        "access_status": "Publicly indexed author-posted text; native PDF not obtained",
+        "asset_sha256": null,
+        "rights": "No source-image reproduction grant established; source pointers only.",
+        "original_campaign": "Gutfeld/Ovadia renewed excavation2017; additional CaveB2018 and XII/52 work2019, kept separate from1993",
+        "uninspected_parts": [
+          "Native report pages71–80 and Figure2 plan p73; only indexed text/captions inspected"
+        ]
+      }
+    },
+    {
+      "kind": "source",
+      "id": "followup-freikman2020-fig3",
+      "label": "Freikman2020 Figure3: native ICRC2017 map/sections inspected",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "title": "Cave53 plan and section, Figure3",
+        "citation": "Freikman et al2020 p95, Fig3; supplied capture slices4–5; map and sections by U.Davidovich and M.Ullman, ICRC2017 Grade5C",
+        "url": "https://www.jstor.org/stable/27074897",
+        "repo_path": "research/feature_workbench/available_evidence_2026-10-13/cave_native_check.md",
+        "inspection": "already_inspected",
+        "inspection_scope": "Complete native Fig3 inspected across two capture slices; no digitization, geographic placement or W2 concordance asserted.",
+        "rights": "Source pointer only; image reuse unestablished",
+        "original_campaign": "ICRC Mapping2017, Grade5C, UriDavidovich and MickaUllman; specific survey observation, separate from excavation finds",
+        "asset_sha256": "fded7ad0a6119c0b09886fbe6bc86fc356cebffb088da8b3734efdb257f071d1"
+      }
+    },
+    {
+      "kind": "lineage",
+      "id": "gutfeld-expedition-cave53",
+      "label": "Renewed Cave53 expedition reported in2020",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "granularity": "field_campaign",
+        "original_campaign": "Gutfeld/Ovadia2017 excavation, named by Gutfeld p71; source-specific observations kept separate",
+        "independence": "Freikman and Gutfeld reports involve the same expedition. No independent corroboration count follows."
+      }
+    },
+    {
+      "kind": "lineage",
+      "id": "cohen-israel-xii53-1993",
+      "label": "Cohen–Israel1993 XII/53 investigation",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "granularity": "field_campaign",
+        "original_campaign": "Cohen–Israel1993, permitL608, report2002",
+        "independence": "The later report may repeat the older entrance description; independent re-observation of each feature is not established."
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "freikman-seal-context",
+      "label": "Seal context L65 / basket518",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "locus": "L65",
+          "basket": "518",
+          "room": "eastern room",
+          "recovery": "sieving lowest excavated level near bedrock",
+          "overlying_feature": "L54 hearth",
+          "W2_construction_date": null,
+          "northern_threshold": null,
+          "lower_layer_separation_limit": "Authors report difficulty maintaining strict separation of lower layers"
+        },
+        "citation": "pp93,96; Fig4 caption p96",
+        "lineage_key": "lineage/gutfeld-expedition-cave53",
+        "evidence_kind": "published_description",
+        "review_scope": "Indexed text checked against native pp93,96 and Fig4 / capture slices1–2,5–6; context does not date W2."
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "freikman-natural-characterization",
+      "label": "Published natural-cavity characterization",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "published_characterization": "Natural cave, no sign of human alteration",
+          "scope_uncertainty": "May characterize the cavity/bedrock; do not infer absence of added entrance masonry",
+          "physical_absence_asserted_by_project": false
+        },
+        "citation": "p93",
+        "lineage_key": "lineage/gutfeld-expedition-cave53",
+        "evidence_kind": "published_description",
+        "review_scope": "Text visually verified on printed93 / capture slice2; keep cavity-characterization scope separate from masonry existence."
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "gutfeld-entrance-2017-description",
+      "label": "Later report describes northeast entrance and built divider",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "direction_word": "northeast",
+          "azimuth": null,
+          "whole_entrance_width": {
+            "value": 4,
+            "unit": "m",
+            "qualifier": "approximately; endpoints/reference surface not supplied"
+          },
+          "central_divider": "built supporting wall",
+          "divides_opening_into": 2,
+          "individual_mouth_bearings": null,
+          "wall_construction_date": null,
+          "independent_reobservation": "not established for each published descriptive clause"
+        },
+        "citation": "p71",
+        "lineage_key": "lineage/gutfeld-expedition-cave53",
+        "evidence_kind": "published_description",
+        "review_scope": "Reviewed indexed text; image observations excluded unless explicitly identified"
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "cohen-israel-W2-description",
+      "label": "Cohen–Israel built entrance pillar W2",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "entrance_direction_word": "east",
+          "whole_entrance_width": {
+            "value": 4.5,
+            "unit": "m",
+            "endpoints": null
+          },
+          "divider_label": "W2",
+          "divider_material": "built masonry",
+          "function_as_published": "probably stabilization",
+          "construction_phase": null
+        },
+        "citation": "p208/PDF3; Plan3 p209/PDF4",
+        "lineage_key": "lineage/cohen-israel-xii53-1993",
+        "evidence_kind": "existing_reviewed_native_report",
+        "review_scope": "Reviewed indexed text; image observations excluded unless explicitly identified"
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "gutfeld-XII53-A-B-naming",
+      "label": "Original Cave53 becomes A; upper cave is B",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "original_cave": "XII/53A",
+          "new_upper_cavity": "XII/53B",
+          "new_upper_cavity_excavation_year": 2018,
+          "original_investigation": "Cohen and Israel1993"
+        },
+        "citation": "pp71–72",
+        "lineage_key": "lineage/gutfeld-expedition-cave53",
+        "evidence_kind": "published_description",
+        "review_scope": "Reviewed indexed text; image observations excluded unless explicitly identified"
+      }
+    },
+    {
+      "kind": "feature",
+      "id": "XII53B",
+      "label": "XII/53B, separate upper cave",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "kind": "cave",
+        "world_geometry": null,
+        "geometry": null,
+        "coordinate_literal": null,
+        "crs": null,
+        "registration": null,
+        "uncertainty": "Relative upper position from report; no mapped entrance registration",
+        "identity_status": "Distinct upper cavity named in2018; do not substitute its entrance/room for original XII/53A"
+      }
+    },
+    {
+      "kind": "identity",
+      "id": "XII53-original-A",
+      "label": "Published rename: original53 / XII53A",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "merged": false,
+        "proposer": "Oren Gutfeld2020 p72",
+        "evidence": "Report explicitly says original Cave53 was renamed XII/53A after discovery of separate upper CaveB; p71 identifies Cohen–Israel1993 investigation",
+        "relation": "source_asserted_alias",
+        "status": "Published naming crosswalk; physical IDs retained",
+        "source_labels": [
+          "Cave53",
+          "XII/53A"
+        ]
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "gutfeld-sieving-scope",
+      "label": "Published sieving statement has no target-volume registration",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "material_scope": "Material excavated in XII/52 and XII/53A/B and spoil in front of caves",
+          "method": "sieving",
+          "ancient_target_volume": null,
+          "ancient_northern_threshold": null,
+          "depth_below_target_datum": null,
+          "disturbance_detection_limits": null,
+          "negative_target_excavation_established": false
+        },
+        "citation": "p74",
+        "lineage_key": "lineage/gutfeld-expedition-cave53",
+        "evidence_kind": "published_description",
+        "review_scope": "Reviewed indexed text; image observations excluded unless explicitly identified"
+      }
+    },
+    {
+      "kind": "claim",
+      "id": "xii53-built-W2",
+      "label": "Built W2 remains an attributed entrance observation",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "subject": "feature/xii53-W2",
+        "relationship": "pillar",
+        "value": {
+          "built": true,
+          "construction_phase": null
+        },
+        "analyst": "Codex, continued15October2026 LosAngeles",
+        "evidence_kind": "observed",
+        "reading_confidence": null,
+        "site_association": null,
+        "feature_identity": null,
+        "positional_uncertainty": null,
+        "supersedes": [],
+        "status": "unknown",
+        "historical_context": "Published reported configuration; ancient construction/coexistence phase unknown"
+      }
+    },
+    {
+      "kind": "claim",
+      "id": "freikman-natural-scope",
+      "label": "Natural-cavity wording cannot establish masonry absence",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "subject": "feature/A41:XII/53",
+        "relationship": "published_cavity_characterization",
+        "value": {
+          "reported_natural": true,
+          "scope_against_added_wall": "unresolved",
+          "masonry_absence_proven": false
+        },
+        "analyst": "Codex, continued15October2026 LosAngeles",
+        "evidence_kind": "published_reconstruction",
+        "reading_confidence": null,
+        "site_association": null,
+        "feature_identity": null,
+        "positional_uncertainty": null,
+        "supersedes": [],
+        "status": "unknown",
+        "historical_context": "Published reported configuration; ancient construction/coexistence phase unknown"
+      }
+    },
+    {
+      "kind": "claim",
+      "id": "gutfeld-northeast-aspect",
+      "label": "Northeast description retained alongside earlier east",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "subject": "feature/A41:XII/53",
+        "relationship": "cave_east_aspect",
+        "value": {
+          "direction_word": "northeast",
+          "bearing_deg": null,
+          "earlier_word": "east",
+          "rule_result": "Not rescored in frozen comparison; preserve both descriptions"
+        },
+        "analyst": "Codex, continued15October2026 LosAngeles",
+        "evidence_kind": "observed",
+        "reading_confidence": null,
+        "site_association": null,
+        "feature_identity": null,
+        "positional_uncertainty": null,
+        "supersedes": [],
+        "status": "unknown",
+        "historical_context": "Published reported configuration; ancient construction/coexistence phase unknown",
+        "reassessment_required": true
+      }
+    },
+    {
+      "kind": "gap",
+      "id": "xii53-entrance-crosswalk",
+      "label": "Native entrance-plan and reference-frame comparison missing",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "reason": "uninspected_source",
+        "unknown": true,
+        "absence_asserted": false,
+        "detail": "FreikmanFig3 p95 is now inspected and labels ICRC2017, ITM, north and scale. Native GutfeldFig2 p73 remains uninspected. Neither inspected drawing labels W2 in the later survey nor supplies its construction date; crosswalk to Cohen–IsraelPlan3 p209 and north-reference convention remain unresolved."
+      }
+    },
+    {
+      "kind": "acquisition",
+      "id": "xii53-native-plan-crosswalk",
+      "label": "Inspect original entrance plans and dated contact",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "actual_observation": false,
+        "record_needed": "Obtain native GutfeldFig2 p73; cross-register it and inspected ICRC2017/FreikmanFig3 p95 to W2 on Cohen–IsraelPlan3 p209. Establish individual mouths, reference north, ancient threshold and wall-construction contact.",
+        "outcomes": [
+          {
+            "id": "same-divider",
+            "consequence": "Retain one divider and one feature assignment; its date still needs a construction contact"
+          },
+          {
+            "id": "changed-state",
+            "consequence": "Model separate reported states; do not combine their geometry"
+          },
+          {
+            "id": "insufficient",
+            "consequence": "Keep reference frame, phase and individual-mouth bearings unknown"
+          }
+        ],
+        "completed_part": "Native FreikmanFig2 p94 and Fig3 p95 inspected in owner capture; named survey, scale, north arrow and ITM recovered."
+      }
+    },
+    {
+      "kind": "source",
+      "id": "followup-elmakyes2024",
+      "label": "Elmakyes2024 thesis: bounded Atara/Marjameh search",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "title": "Water Management Strategies in the Central Mountain Region of Israel from the Iron Age to the Byzantine Period",
+        "citation": "Title PDF1; contents PDF5–7; study-site scope printed35–36/PDF36–37. Other pages uninspected beyond text-index search.",
+        "repo_path": "research/feature_workbench/available_evidence_2026-10-13/hydraulic_review.md",
+        "url": "https://drive.google.com/file/d/1HaY8C0F_PVSkb_nIlh3iIt68DfCy-RB6/view",
+        "asset_sha256": "8908dc0540b2e9958db10a2e9cefd0a2c8a1ce5356e97a5a4d86d6bb8ff8cff4",
+        "inspection": "already_inspected",
+        "inspection_scope": "233-page extracted-text index searched for specified Latin/Hebrew place variants; contents and study-site table checked. Not a whole-thesis read.",
+        "rights": "Reproduction rights unestablished; original retained in Drive; no source image exported.",
+        "uninspected_parts": [
+          "Pages outside title, contents and study-site scope; text-index search is not a full visual read"
+        ]
+      }
+    },
+    {
+      "kind": "copy",
+      "id": "freikman-owner-capture",
+      "label": "Owner-supplied Freikman article screen capture",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "sha256": "fded7ad0a6119c0b09886fbe6bc86fc356cebffb088da8b3734efdb257f071d1",
+        "bytes": 29391840,
+        "source_url": "https://www.jstor.org/stable/27074897",
+        "filename": "screencapture-jstor-org-stable-27074897-2026-10-15-17_01_53.pdf",
+        "provenance": "Owner attachment received16October2026 UTC /15OctoberLosAngeles; original retained at supplied location",
+        "rights": "Local inspection; no public source-image reproduction permission established",
+        "original_object_photo": false,
+        "media": "PDF screen capture of published article; figures are reproductions, not manuscript photographs"
+      }
+    },
+    {
+      "kind": "lineage",
+      "id": "icrc2017-cave53-survey",
+      "label": "ICRC2017 Cave53 survey, Davidovich/Ullman",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "granularity": "survey_drawing",
+        "source": "Freikman2020 Fig3 map label: ICRC Mapping2017 Grade5C, UriDavidovich and MickaUllman",
+        "independence": "Specific published survey; no count of independent corroboration inferred from its republication",
+        "field_campaign": "2017 Cave53 work; survey kept separate from seal/hearth observations"
+      }
+    },
+    {
+      "kind": "frame",
+      "id": "icrc2017-cave53-native",
+      "label": "Native ICRC2017 Cave53 plan/sections",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "units": "m",
+        "orientation_as_recorded": "N arrow points up in plan; reference north convention unspecified",
+        "coordinate_literal": "243182/627162 (ITM), 293m BSL",
+        "crs_as_recorded": "ITM in Figure3; NIG in printed93 prose",
+        "geographic_registration": null,
+        "reference_point": null,
+        "uncertainty": "Coordinate point, horizontal accuracy, vertical datum and north convention unspecified; no world geometry created",
+        "source_figure": "Freikman2020 printed95 Fig3 / capture slices4–5",
+        "survey_as_recorded": "ICRC Mapping2017, Grade5C; grading standard not assumed",
+        "plan_sections": [
+          "b–b′ entrance cross section",
+          "e–e′ seal recess section",
+          "c–c′",
+          "d–d′",
+          "a–a′ profile"
+        ],
+        "digital_copy_sha256": "fded7ad0a6119c0b09886fbe6bc86fc356cebffb088da8b3734efdb257f071d1",
+        "scale_bar": {
+          "from": 0,
+          "to": 4,
+          "unit": "m",
+          "source": "Printed scale; no pixel calibration or digitization"
+        }
+      }
+    },
+    {
+      "kind": "observation",
+      "id": "icrc2017-native-plan",
+      "label": "Survey frame, entrance section and seal marker verified",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "value": {
+          "entrance_section_label": "b–b′",
+          "entrance_depiction": "Two openings separated by a central pier/divider in cross section; no W2 identifier or construction contact is labelled",
+          "seal_marker": "Red star on plan and e–e′ section; caption identifies seal location",
+          "scale_bar": "0–4m",
+          "north_arrow": "N, up in plan; reference convention unspecified",
+          "coordinate_system_as_recorded": "ITM in map label; NIG in p93 prose",
+          "coordinate_literal": "243182/627162",
+          "elevation_literal": "293m BSL",
+          "W2_identity": null,
+          "divider_construction_phase": null,
+          "ancient_northern_threshold": null,
+          "individual_mouth_bearings": null
+        },
+        "evidence_kind": "observed",
+        "lineage_key": "lineage/icrc2017-cave53-survey",
+        "review_scope": "Native printed95 Fig3, supplied capture slices4–5, visually inspected; no pixel measurement or georegistration performed"
+      }
+    },
+    {
+      "kind": "source",
+      "id": "followup-gutfeld2020-fig2",
+      "label": "Gutfeld2020 XII/53A native plan remains uninspected",
+      "exposure": "exposed-exploratory",
+      "payload": {
+        "title": "XII/53A plan and sections, Figure2",
+        "citation": "Gutfeld2020 printed73 Fig2; native image uninspected. Fig3 p74 belongs to XII/52.",
+        "inspection": "not_inspected",
+        "inspection_scope": "Caption only in indexed author text; no native plan geometry checked",
+        "repo_path": "research/feature_workbench/available_evidence_2026-10-13/cave_native_check.md",
+        "url": "https://www.academia.edu/42018631",
+        "rights": "Source pointer only; native image and reproduction grant not obtained"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "subject": "edition/Sion2002",
+      "relation": "derived_from",
+      "object": "work/Sion2002"
+    },
+    {
+      "subject": "edition/KenyonII",
+      "relation": "derived_from",
+      "object": "work/KenyonII"
+    },
+    {
+      "subject": "edition/KenyonIII",
+      "relation": "derived_from",
+      "object": "work/KenyonIII"
+    },
+    {
+      "subject": "edition/CohenIsrael2002",
+      "relation": "derived_from",
+      "object": "work/CohenIsrael2002"
+    },
+    {
+      "subject": "edition/BarAdon1989",
+      "relation": "derived_from",
+      "object": "work/BarAdon1989"
+    },
+    {
+      "subject": "source/inventory-sion-iv17",
+      "relation": "derived_from",
+      "object": "edition/Sion2002"
+    },
+    {
+      "subject": "source/inventory-iv17-repeat",
+      "relation": "derived_from",
+      "object": "edition/Sion2002"
+    },
+    {
+      "subject": "source/states-sion-plan",
+      "relation": "derived_from",
+      "object": "edition/Sion2002"
+    },
+    {
+      "subject": "source/states-iv17-repeat",
+      "relation": "derived_from",
+      "object": "edition/Sion2002"
+    },
+    {
+      "subject": "source/relationships-kenyon-II",
+      "relation": "derived_from",
+      "object": "edition/KenyonII"
+    },
+    {
+      "subject": "source/relationships-kenyon-III",
+      "relation": "derived_from",
+      "object": "edition/KenyonIII"
+    },
+    {
+      "subject": "source/inventory-baradon-twin",
+      "relation": "derived_from",
+      "object": "edition/BarAdon1989"
+    },
+    {
+      "subject": "source/kb-xii53-native",
+      "relation": "derived_from",
+      "object": "edition/CohenIsrael2002"
+    },
+    {
+      "subject": "copy/cohen-israel-native",
+      "relation": "derived_from",
+      "object": "edition/CohenIsrael2002"
+    },
+    {
+      "subject": "source/kb-xii53-native",
+      "relation": "derived_from",
+      "object": "copy/cohen-israel-native"
+    },
+    {
+      "subject": "copy/baradon-capture",
+      "relation": "derived_from",
+      "object": "edition/BarAdon1989"
+    },
+    {
+      "subject": "observation/sion-plan5",
+      "relation": "cites",
+      "object": "source/inventory-sion-iv17"
+    },
+    {
+      "subject": "source/inventory-sion-iv17",
+      "relation": "reports",
+      "object": "observation/sion-plan5"
+    },
+    {
+      "subject": "source/inventory-iv17-repeat",
+      "relation": "reports",
+      "object": "observation/sion-plan5"
+    },
+    {
+      "subject": "source/states-sion-plan",
+      "relation": "reports",
+      "object": "observation/sion-plan5"
+    },
+    {
+      "subject": "source/states-iv17-repeat",
+      "relation": "reports",
+      "object": "observation/sion-plan5"
+    },
+    {
+      "subject": "state/xii53-W2-reported",
+      "relation": "state_of",
+      "object": "feature/xii53-W2"
+    },
+    {
+      "subject": "state/xii53-W2-reported",
+      "relation": "cites",
+      "object": "source/kb-xii53-native"
+    },
+    {
+      "subject": "hypothesis/A41:XII/53",
+      "relation": "prerequisite",
+      "object": "gap/xii53-phase-datum"
+    },
+    {
+      "subject": "identity/twin-x47",
+      "relation": "about",
+      "object": "feature/A41:X/47"
+    },
+    {
+      "subject": "identity/twin-x47",
+      "relation": "about",
+      "object": "feature/twin-cave"
+    },
+    {
+      "subject": "identity/xii53-djd32",
+      "relation": "about",
+      "object": "feature/DJD:32"
+    },
+    {
+      "subject": "identity/xii53-djd32",
+      "relation": "about",
+      "object": "feature/A41:XII/53"
+    },
+    {
+      "subject": "identity/pillar-label",
+      "relation": "about",
+      "object": "feature/WB:E707"
+    },
+    {
+      "subject": "identity/pillar-label",
+      "relation": "about",
+      "object": "feature/twin-cave"
+    },
+    {
+      "subject": "restoration/e25-direction-article",
+      "relation": "derived_from",
+      "object": "reading_set/e25-direction"
+    },
+    {
+      "subject": "restoration/e25-direction-article",
+      "relation": "prerequisite",
+      "object": "gap/editorial-segmentation"
+    },
+    {
+      "subject": "acquisition/xii53-state-datum",
+      "relation": "would_resolve",
+      "object": "gap/xii53-phase-datum"
+    },
+    {
+      "subject": "acquisition/xii53-state-datum",
+      "relation": "cites",
+      "object": "source/kb-xii53-native"
+    },
+    {
+      "subject": "feature/atlas2015-twin-west",
+      "relation": "cites",
+      "object": "source/followup-atlas-twin2015"
+    },
+    {
+      "subject": "feature/atlas2015-twin-east",
+      "relation": "cites",
+      "object": "source/followup-atlas-twin2015"
+    },
+    {
+      "subject": "feature/atlas2015-twin-north",
+      "relation": "cites",
+      "object": "source/followup-atlas-twin2015"
+    },
+    {
+      "subject": "observation/atlas-twin-three-members",
+      "relation": "cites",
+      "object": "source/followup-atlas-twin2015"
+    },
+    {
+      "subject": "observation/atlas-twin-three-members",
+      "relation": "same_campaign",
+      "object": "lineage/atlas2011-twin"
+    },
+    {
+      "subject": "observation/atlas-twin-three-members",
+      "relation": "about",
+      "object": "feature/atlas2015-twin-west"
+    },
+    {
+      "subject": "observation/atlas-twin-three-members",
+      "relation": "about",
+      "object": "feature/atlas2015-twin-east"
+    },
+    {
+      "subject": "observation/atlas-twin-three-members",
+      "relation": "about",
+      "object": "feature/atlas2015-twin-north"
+    },
+    {
+      "subject": "observation/atlas-west-excavated-floor",
+      "relation": "cites",
+      "object": "source/followup-atlas-twin2015"
+    },
+    {
+      "subject": "observation/atlas-west-excavated-floor",
+      "relation": "same_campaign",
+      "object": "lineage/atlas2011-twin"
+    },
+    {
+      "subject": "observation/atlas-west-excavated-floor",
+      "relation": "about",
+      "object": "feature/atlas2015-twin-west"
+    },
+    {
+      "subject": "state/atlas-west-before-excavation",
+      "relation": "state_of",
+      "object": "feature/atlas2015-twin-west"
+    },
+    {
+      "subject": "state/atlas-west-before-excavation",
+      "relation": "derived_from",
+      "object": "observation/atlas-west-excavated-floor"
+    },
+    {
+      "subject": "state/atlas-west-2011-survey",
+      "relation": "state_of",
+      "object": "feature/atlas2015-twin-west"
+    },
+    {
+      "subject": "state/atlas-west-2011-survey",
+      "relation": "derived_from",
+      "object": "observation/atlas-west-excavated-floor"
+    },
+    {
+      "subject": "event/atlas-west-sediment-removal",
+      "relation": "transitions_from",
+      "object": "state/atlas-west-before-excavation"
+    },
+    {
+      "subject": "event/atlas-west-sediment-removal",
+      "relation": "transitions_to",
+      "object": "state/atlas-west-2011-survey"
+    },
+    {
+      "subject": "event/atlas-west-sediment-removal",
+      "relation": "cites",
+      "object": "source/followup-atlas-twin2015"
+    },
+    {
+      "subject": "observation/hamer-A4-011-53",
+      "relation": "cites",
+      "object": "source/followup-hamer2023"
+    },
+    {
+      "subject": "observation/hamer-cave53-photo",
+      "relation": "cites",
+      "object": "source/followup-hamer2023"
+    },
+    {
+      "subject": "observation/hamer-cave53-photo",
+      "relation": "same_campaign",
+      "object": "lineage/hamer-cave53-photo"
+    },
+    {
+      "subject": "source/followup-hamer2023",
+      "relation": "reports",
+      "object": "observation/hamer-cave53-photo"
+    },
+    {
+      "subject": "observation/hamer-A4-011-53",
+      "relation": "same_campaign",
+      "object": "lineage/hamer-cave53-synthesis"
+    },
+    {
+      "subject": "observation/kallai1968-pool-silence",
+      "relation": "cites",
+      "object": "source/followup-kallai1968"
+    },
+    {
+      "subject": "observation/kallai1968-pool-silence",
+      "relation": "same_campaign",
+      "object": "lineage/kallai1967-preliminary"
+    },
+    {
+      "subject": "claim/twin-unit-assignment-review",
+      "relation": "cites",
+      "object": "source/followup-atlas-twin2015"
+    },
+    {
+      "subject": "claim/twin-unit-assignment-review",
+      "relation": "derived_from",
+      "object": "observation/atlas-twin-three-members"
+    },
+    {
+      "subject": "claim/twin-unit-assignment-review",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "hypothesis/twin",
+      "relation": "prerequisite",
+      "object": "claim/twin-unit-assignment-review"
+    },
+    {
+      "subject": "claim/twin-modern-floor-not-datum",
+      "relation": "cites",
+      "object": "source/followup-atlas-twin2015"
+    },
+    {
+      "subject": "claim/twin-modern-floor-not-datum",
+      "relation": "derived_from",
+      "object": "observation/atlas-west-excavated-floor"
+    },
+    {
+      "subject": "claim/twin-modern-floor-not-datum",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "claim/A4-011-crosswalk-review",
+      "relation": "cites",
+      "object": "source/followup-hamer2023"
+    },
+    {
+      "subject": "claim/A4-011-crosswalk-review",
+      "relation": "derived_from",
+      "object": "observation/hamer-A4-011-53"
+    },
+    {
+      "subject": "claim/A4-011-crosswalk-review",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "claim/kallai1968-scope",
+      "relation": "cites",
+      "object": "source/followup-kallai1968"
+    },
+    {
+      "subject": "claim/kallai1968-scope",
+      "relation": "derived_from",
+      "object": "observation/kallai1968-pool-silence"
+    },
+    {
+      "subject": "claim/kallai1968-scope",
+      "relation": "in_entry",
+      "object": "entry/11"
+    },
+    {
+      "subject": "claim/kallai1968-scope",
+      "relation": "in_entry",
+      "object": "entry/60"
+    },
+    {
+      "subject": "identity/atlas-baradon-units",
+      "relation": "about",
+      "object": "feature/twin-cave"
+    },
+    {
+      "subject": "identity/atlas-baradon-units",
+      "relation": "about",
+      "object": "feature/atlas2015-twin-east"
+    },
+    {
+      "subject": "identity/atlas-baradon-units",
+      "relation": "derived_from",
+      "object": "claim/twin-unit-assignment-review"
+    },
+    {
+      "subject": "identity/atlas-baradon-units",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "identity/atlas-jones-north",
+      "relation": "about",
+      "object": "feature/REPO:JonesNorth"
+    },
+    {
+      "subject": "identity/atlas-jones-north",
+      "relation": "about",
+      "object": "feature/atlas2015-twin-north"
+    },
+    {
+      "subject": "identity/atlas-jones-north",
+      "relation": "derived_from",
+      "object": "claim/twin-unit-assignment-review"
+    },
+    {
+      "subject": "identity/atlas-jones-north",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "identity/A4-011-XII53",
+      "relation": "about",
+      "object": "feature/A41:XII/53"
+    },
+    {
+      "subject": "identity/A4-011-XII53",
+      "relation": "derived_from",
+      "object": "claim/A4-011-crosswalk-review"
+    },
+    {
+      "subject": "identity/A4-011-XII53",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "claim/twin-unit-assignment-review",
+      "relation": "prerequisite",
+      "object": "gap/twin-unit-concordance"
+    },
+    {
+      "subject": "acquisition/twin-unit-concordance",
+      "relation": "would_resolve",
+      "object": "gap/twin-unit-concordance"
+    },
+    {
+      "subject": "acquisition/twin-unit-concordance",
+      "relation": "cites",
+      "object": "source/followup-atlas-twin2015"
+    },
+    {
+      "subject": "acquisition/twin-unit-concordance",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "identity/atlas-baradon-units",
+      "relation": "about",
+      "object": "feature/atlas2015-twin-west"
+    },
+    {
+      "subject": "observation/freikman-seal-context",
+      "relation": "cites",
+      "object": "source/followup-freikman2020"
+    },
+    {
+      "subject": "observation/freikman-seal-context",
+      "relation": "same_campaign",
+      "object": "lineage/gutfeld-expedition-cave53"
+    },
+    {
+      "subject": "observation/freikman-natural-characterization",
+      "relation": "cites",
+      "object": "source/followup-freikman2020"
+    },
+    {
+      "subject": "observation/freikman-natural-characterization",
+      "relation": "same_campaign",
+      "object": "lineage/gutfeld-expedition-cave53"
+    },
+    {
+      "subject": "observation/gutfeld-entrance-2017-description",
+      "relation": "cites",
+      "object": "source/followup-gutfeld2020"
+    },
+    {
+      "subject": "observation/gutfeld-entrance-2017-description",
+      "relation": "same_campaign",
+      "object": "lineage/gutfeld-expedition-cave53"
+    },
+    {
+      "subject": "observation/cohen-israel-W2-description",
+      "relation": "cites",
+      "object": "source/kb-xii53-native"
+    },
+    {
+      "subject": "observation/cohen-israel-W2-description",
+      "relation": "same_campaign",
+      "object": "lineage/cohen-israel-xii53-1993"
+    },
+    {
+      "subject": "observation/cohen-israel-W2-description",
+      "relation": "about",
+      "object": "feature/xii53-W2"
+    },
+    {
+      "subject": "observation/gutfeld-entrance-2017-description",
+      "relation": "about",
+      "object": "feature/A41:XII/53"
+    },
+    {
+      "subject": "observation/gutfeld-XII53-A-B-naming",
+      "relation": "cites",
+      "object": "source/followup-gutfeld2020"
+    },
+    {
+      "subject": "observation/gutfeld-XII53-A-B-naming",
+      "relation": "same_campaign",
+      "object": "lineage/gutfeld-expedition-cave53"
+    },
+    {
+      "subject": "feature/XII53B",
+      "relation": "cites",
+      "object": "source/followup-gutfeld2020"
+    },
+    {
+      "subject": "observation/gutfeld-XII53-A-B-naming",
+      "relation": "about",
+      "object": "feature/XII53B"
+    },
+    {
+      "subject": "identity/XII53-original-A",
+      "relation": "about",
+      "object": "feature/A41:XII/53"
+    },
+    {
+      "subject": "identity/XII53-original-A",
+      "relation": "derived_from",
+      "object": "observation/gutfeld-XII53-A-B-naming"
+    },
+    {
+      "subject": "identity/XII53-original-A",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "observation/gutfeld-sieving-scope",
+      "relation": "cites",
+      "object": "source/followup-gutfeld2020"
+    },
+    {
+      "subject": "observation/gutfeld-sieving-scope",
+      "relation": "same_campaign",
+      "object": "lineage/gutfeld-expedition-cave53"
+    },
+    {
+      "subject": "claim/xii53-built-W2",
+      "relation": "derived_from",
+      "object": "observation/cohen-israel-W2-description"
+    },
+    {
+      "subject": "claim/xii53-built-W2",
+      "relation": "cites",
+      "object": "source/kb-xii53-native"
+    },
+    {
+      "subject": "claim/xii53-built-W2",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "claim/freikman-natural-scope",
+      "relation": "derived_from",
+      "object": "observation/freikman-natural-characterization"
+    },
+    {
+      "subject": "claim/freikman-natural-scope",
+      "relation": "cites",
+      "object": "source/followup-freikman2020"
+    },
+    {
+      "subject": "claim/freikman-natural-scope",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "claim/gutfeld-northeast-aspect",
+      "relation": "derived_from",
+      "object": "observation/gutfeld-entrance-2017-description"
+    },
+    {
+      "subject": "claim/gutfeld-northeast-aspect",
+      "relation": "cites",
+      "object": "source/followup-gutfeld2020"
+    },
+    {
+      "subject": "claim/gutfeld-northeast-aspect",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "claim/freikman-natural-scope",
+      "relation": "conflicts",
+      "object": "claim/xii53-built-W2"
+    },
+    {
+      "subject": "claim/freikman-natural-scope",
+      "relation": "conflicts",
+      "object": "claim/gutfeld-northeast-aspect"
+    },
+    {
+      "subject": "claim/freikman-natural-scope",
+      "relation": "derived_from",
+      "object": "observation/gutfeld-entrance-2017-description"
+    },
+    {
+      "subject": "gap/xii53-entrance-crosswalk",
+      "relation": "prerequisite",
+      "object": "source/followup-freikman2020-fig3"
+    },
+    {
+      "subject": "claim/freikman-natural-scope",
+      "relation": "prerequisite",
+      "object": "gap/xii53-entrance-crosswalk"
+    },
+    {
+      "subject": "claim/gutfeld-northeast-aspect",
+      "relation": "prerequisite",
+      "object": "gap/xii53-entrance-crosswalk"
+    },
+    {
+      "subject": "hypothesis/A41:XII/53",
+      "relation": "prerequisite",
+      "object": "gap/xii53-entrance-crosswalk"
+    },
+    {
+      "subject": "hypothesis/A41:XII/53",
+      "relation": "prerequisite",
+      "object": "claim/gutfeld-northeast-aspect"
+    },
+    {
+      "subject": "acquisition/xii53-native-plan-crosswalk",
+      "relation": "would_resolve",
+      "object": "gap/xii53-entrance-crosswalk"
+    },
+    {
+      "subject": "acquisition/xii53-native-plan-crosswalk",
+      "relation": "cites",
+      "object": "source/followup-freikman2020"
+    },
+    {
+      "subject": "acquisition/xii53-native-plan-crosswalk",
+      "relation": "cites",
+      "object": "source/followup-gutfeld2020"
+    },
+    {
+      "subject": "acquisition/xii53-native-plan-crosswalk",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "source/followup-freikman2020",
+      "relation": "derived_from",
+      "object": "copy/freikman-owner-capture"
+    },
+    {
+      "subject": "source/followup-freikman2020-fig3",
+      "relation": "derived_from",
+      "object": "copy/freikman-owner-capture"
+    },
+    {
+      "subject": "frame/icrc2017-cave53-native",
+      "relation": "cites",
+      "object": "source/followup-freikman2020-fig3"
+    },
+    {
+      "subject": "observation/icrc2017-native-plan",
+      "relation": "cites",
+      "object": "source/followup-freikman2020-fig3"
+    },
+    {
+      "subject": "observation/icrc2017-native-plan",
+      "relation": "same_campaign",
+      "object": "lineage/icrc2017-cave53-survey"
+    },
+    {
+      "subject": "observation/icrc2017-native-plan",
+      "relation": "uses_frame",
+      "object": "frame/icrc2017-cave53-native"
+    },
+    {
+      "subject": "observation/icrc2017-native-plan",
+      "relation": "about",
+      "object": "feature/A41:XII/53"
+    },
+    {
+      "subject": "observation/icrc2017-native-plan",
+      "relation": "in_entry",
+      "object": "entry/25"
+    },
+    {
+      "subject": "gap/xii53-entrance-crosswalk",
+      "relation": "derived_from",
+      "object": "observation/icrc2017-native-plan"
+    },
+    {
+      "subject": "gap/xii53-entrance-crosswalk",
+      "relation": "prerequisite",
+      "object": "source/followup-gutfeld2020-fig2"
+    }
+  ],
+  "source_locators": {
+    "inventory-baradon-twin": {
+      "printed_page": "[15]–17",
+      "pdf_page": null,
+      "figure": "B1–B2",
+      "note": "Corrected thick-pillar locus [15]; 102-slice native capture mapping belongs to copy/baradon-capture, not the earlier supplied-capture pagination"
+    },
+    "inventory-sion-iv17": {
+      "printed_page": "61–64",
+      "pdf_page": null,
+      "figure": "Plan 5 (p63), Fig.12 (p61)"
+    },
+    "relationships-kenyon-III": {
+      "printed_page": "173–174",
+      "pdf_page": "207–208",
+      "figure": null,
+      "note": "Separate E section and Plate111b uninspected"
+    },
+    "relationships-kallai": {
+      "printed_page": "172–173",
+      "pdf_page": null,
+      "figure": null
+    },
+    "kb-xii53-native": {
+      "printed_page": "208–209",
+      "pdf_page": "3–4",
+      "figure": "Plan 3 / Fig.4"
+    },
+    "kb-name-review": {
+      "printed_page": null,
+      "pdf_page": null,
+      "figure": null,
+      "structured_record": "T05-001/002/006/062"
+    },
+    "followup-atlas-twin2015": {
+      "printed_page": "212–215",
+      "pdf_page": "1–4",
+      "figure": "Malham 2011 plan, profiles and sections p215"
+    },
+    "followup-hamer2023": {
+      "printed_page": "134;138–143",
+      "pdf_page": "5;9–14",
+      "figure": "Table2; Figs3–7 (Fig6 is Gaya, not Cave53)"
+    },
+    "followup-kallai1968": {
+      "printed_page": "19–23",
+      "pdf_page": "22;24–28",
+      "figure": null
+    },
+    "followup-frumkin2023": {
+      "printed_page": "80",
+      "pdf_page": "7",
+      "figure": "Fig4, Cave11Q entrance"
+    },
+    "followup-freikman2020": {
+      "printed_page": "93–96 visually inspected; 93–103 indexed text",
+      "pdf_page": "Capture slices1–6; no constant printed/PDF offset",
+      "figure": "Figs1–4; Fig3 p95 spans capture slices4–5"
+    },
+    "followup-gutfeld2020": {
+      "printed_page": "71–80",
+      "pdf_page": null,
+      "figure": "Fig2 p73 is XII/53A plan; Fig3 p74 is XII/52 entrance, not XII/53"
+    },
+    "followup-freikman2020-fig3": {
+      "printed_page": 95,
+      "pdf_page": "4–5 (capture slices)",
+      "figure": "Fig3: native plan, entrance section b–b′, profiles and seal marker"
+    },
+    "followup-elmakyes2024": {
+      "printed_page": "35–36; contents",
+      "pdf_page": "1;5–7;36–37",
+      "figure": "Table2 p36 checked for study-site scope; no pool observation extracted"
+    },
+    "followup-gutfeld2020-fig2": {
+      "printed_page": 73,
+      "pdf_page": null,
+      "figure": "Fig2, XII/53A plan/sections; native image uninspected"
+    }
+  }
+}

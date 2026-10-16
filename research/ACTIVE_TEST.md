@@ -1,8 +1,8 @@
 # Active test
 
-Updated 14 October 2026 UTC / 13 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 16 October 2026 UTC / 15 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (14 October UTC / 13 October Los Angeles): **obtained** — reconciled the original-report applications, edition audit and [latest source sweep](sources/new_batch_2026-10-13/README.md) for publication; preserved session histories, corrected source requirements and validated source/atlas mirrors.
+Last session (15 October 2026 Los Angeles): **obtained** — the [KB atlas homepage](../atlas/README.md#knowledge-base-landing-page) connects reviewed records through a selectable evidence graph, branch requirements, names, source inspection and change-impact paths. The update concerns software presentation and public metadata export.
 
 ## Active questions and the observation that decides each
 

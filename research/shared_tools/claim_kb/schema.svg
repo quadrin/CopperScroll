@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1170" viewBox="0 0 1440 1170">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10" fill="#526761"/></marker></defs>
+<rect width="1440" height="1170" fill="#faf9f5"/>
+<style>text{font-family:Arial,sans-serif;fill:#253333}.title{font-size:25px;font-weight:bold}.head{font-size:16px;font-weight:bold}.body{font-size:14px}.edge{font-size:14px;fill:#345c53}.id{font:13px monospace;fill:#53645d}</style>
+<text x="40" y="44" class="title">Copper Scroll · Claim-centred pilot</text>
+<text x="40" y="74" class="body">Typed IDs preserve original record IDs. Arrows carry named relations; they do not measure confidence.</text>
+<path d="M870 105 V1090" stroke="#c9d3cf"/>
+<text x="45" y="125" class="head">Abstract schema</text>
+<text x="910" y="125" class="head">Populated chain · Entry 11 / Entry 60</text>
+<rect x="45" y="160" width="355" height="160" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="61" y="188" class="head">1 · Text, witnesses, readings</text>
+<text x="61" y="216" class="body">Entry ↔ edition numbering ↔ locus</text>
+<text x="61" y="239" class="body">Segment / original / replica / reconstruction</text>
+<text x="61" y="262" class="body">Letters, restorations, lexical sense, syntax</text>
+<text x="61" y="285" class="body">Interpretation → derived requirement</text>
+<rect x="455" y="160" width="355" height="160" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="471" y="188" class="head">4 · Sources and observations</text>
+<text x="471" y="216" class="body">Work → edition → digital copy → locator</text>
+<text x="471" y="239" class="body">Archive / campaign / original observation</text>
+<text x="471" y="262" class="body">Inspection, rights, hashes, exact pages</text>
+<text x="471" y="285" class="body">Observed / reconstruction / inference</text>
+<rect x="45" y="430" width="355" height="140" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="61" y="458" class="head">2 · Names and attestations</text>
+<text x="61" y="486" class="body">Written occurrence ≠ proposed referent</text>
+<text x="61" y="509" class="body">Document findspot ≠ mentioned place</text>
+<text x="61" y="532" class="body">Composition / object / described dates</text>
+<rect x="455" y="430" width="355" height="140" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="471" y="458" class="head">3 · Places and feature states</text>
+<text x="471" y="486" class="body">Feature identity → state → event</text>
+<text x="471" y="509" class="body">Measurement endpoints, phase and frame</text>
+<text x="471" y="532" class="body">Local plan; registration needed for world</text>
+<rect x="240" y="680" width="390" height="150" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="256" y="708" class="head">5 · Claims and hypotheses</text>
+<text x="256" y="736" class="body">Subject + relationship + object / value</text>
+<text x="256" y="759" class="body">Supporting / conflicting / prerequisite claims</text>
+<text x="256" y="782" class="body">Fixed feature assignment under each branch</text>
+<text x="256" y="805" class="body">Separate uncertainty dimensions; revisions</text>
+<rect x="240" y="930" width="390" height="140" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="256" y="958" class="head">6 · Tests, coverage, dependencies</text>
+<text x="256" y="986" class="body">Frozen specification + controls + decision rule</text>
+<text x="256" y="1009" class="body">Requirement result ≠ inspection ≠ test outcome</text>
+<text x="256" y="1032" class="body">Explicit gap → acquisition → conditional effect</text>
+<path d="M400 225 L455 225" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="409" y="208" class="edge">cites</text>
+<path d="M220 430 L220 320" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="128" y="383" class="edge">at_locus</text>
+<path d="M635 320 L635 430" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="648" y="382" class="edge">about</text>
+<path d="M220 570 L330 680" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="52" y="638" class="edge">proposed_same_referent</text>
+<path d="M540 680 L635 570" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="637" y="640" class="edge">assigns / about</text>
+<path d="M455 680 L400 285" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="350" y="356" class="edge">under_branch</text>
+<path d="M415 680 L455 285" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="260" y="610" class="edge">supports / conflicts</text>
+<path d="M435 830 L435 930" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="447" y="886" class="edge">evaluates / depends_on</text>
+<rect x="910" y="160" width="480" height="125" rx="7" fill="#f7ece4" stroke="#8fa79c"/>
+<text x="926" y="188" class="head">Exploratory result: contradicted</text>
+<text x="926" y="216" class="body">RB-M · early window (50 BCE–70 CE)</text>
+<text x="926" y="239" class="body">Fixed pool = 1898 reservoir; pit = NS1</text>
+<text x="926" y="270" class="id">relationships-jericho-modern-ns1-RB-M-early</text>
+<path d="M1150 285 L1150 335" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="920" y="315" class="edge">depends_on · requirement check</text>
+<rect x="910" y="335" width="480" height="125" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="926" y="363" class="head">Pool-period requirement check</text>
+<text x="926" y="391" class="body">Pool must be accessible in the selected window.</text>
+<text x="926" y="414" class="body">The assigned reservoir postdates this window.</text>
+<text x="926" y="445" class="id">…-jericho-modern-ns1-RB-M-early-pool-period</text>
+<path d="M1150 460 L1150 510" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="920" y="492" class="edge">conflicts · chronology claim</text>
+<rect x="910" y="510" width="480" height="145" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="926" y="538" class="head">Chronology claim</text>
+<text x="926" y="566" class="body">Construction year recorded as 1898</text>
+<text x="926" y="589" class="body">Evidence kind: published reconstruction</text>
+<text x="926" y="612" class="body">Other pool identities retain separate results.</text>
+<text x="926" y="640" class="id">claim/relationships-modern-reservoir-chronology</text>
+<path d="M1150 655 L1150 705" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="920" y="687" class="edge">derived_from · original observation record</text>
+<rect x="910" y="705" width="480" height="145" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="926" y="733" class="head">Underlying observation</text>
+<text x="926" y="761" class="body">Dorrell’s historical reservoir reconstruction</text>
+<text x="926" y="784" class="body">Historical irregular basin remains distinct.</text>
+<text x="926" y="807" class="body">Earlier construction / accessible use unresolved.</text>
+<text x="926" y="835" class="id">observation/relationships-modern-reservoir-chronology</text>
+<path d="M1150 850 L1150 900" fill="none" stroke="#526761" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="930" y="881" class="edge">cites · exact source locator</text>
+<rect x="910" y="900" width="480" height="140" rx="7" fill="#edf3ed" stroke="#8fa79c"/>
+<text x="926" y="928" class="head">Underlying source and revision dependency</text>
+<text x="926" y="956" class="body">Dorrell 1993 pp. 95–97, 110–112; Figs. 1–4, 20–21</text>
+<text x="926" y="979" class="body">Changed date → reassess dependent branches.</text>
+<text x="926" y="1002" class="body">Preserve earlier result and its input hashes.</text>
+<text x="926" y="1025" class="id">source/relationships-dorrell</text>
+<text x="45" y="1120" class="body">Legend: pale green = record groups; pale tan = conditional result. Null = unestablished. Geometry stays null when unestablished.</text>
+<text x="45" y="1146" class="body">Source-plan frames stay local. Repeated reports retain one original-observation lineage. Compatibility supplies no identification confidence.</text>
+</svg>

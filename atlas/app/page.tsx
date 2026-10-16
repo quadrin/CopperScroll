@@ -1,5 +1,5 @@
-import Atlas from "./atlas";
+import AtlasHome from "./atlas-home";
 
 export default function Page() {
-  return <Atlas />;
+  return <AtlasHome />;
 }

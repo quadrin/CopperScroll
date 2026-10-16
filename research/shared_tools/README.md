@@ -13,6 +13,8 @@ python research/shared_tools/cli.py serve
 
 Open `http://127.0.0.1:8765`. The read-only interface has sources, photographs, entry packets, controls and benchmark views. It makes no external requests. Original source links open on demand.
 
+The [bounded claim pilot](claim_kb/README.md) adds evidence chains, branch-specific candidate requirements, name chronology and change impact at `/kb`. Run `python research/shared_tools/cli.py kb build` to extend the same local SQLite cache. Canonical reviewed records stay in the workbench and source tables; the pilot stores versioned projections and preserves earlier results.
+
 The CLI exposes the same records:
 
 ```sh

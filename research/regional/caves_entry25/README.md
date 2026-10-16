@@ -6,6 +6,8 @@
 
 **What stays unknown.** Most rows: 412 of 635 give no usable opening count, 607 no cave-level facing and 618 no statement about a pillar. Several recorded cave populations are not in the inventory or are only partly in it (see Coverage gaps). The counts therefore cannot support a claim that a feature is rare in the landscape. A match is compatibility only: it says nothing about the jar, the scroll or the 42 talents, and XII/53's key features are now exposed, so it cannot serve as an unseen holdout.
 
+15 October 2026 source follow-up: the atlas distinguishes Twin West, East and North, and documents substantial modern sediment removal in West. The Bar-Adon unit / atlas entrance crosswalk requires review before reusing the Twin compatibility result; Atlas North must not silently replace the earlier northern unit. Hamer2023 supplies an explicit A4-011 / Cave53 label, while the proposed XII/53 crosswalk and W2 phase remain separate questions. [Exact pages, lineage, states and acquisition target](../../feature_workbench/available_evidence_2026-10-13/cave_native_check.md#15-october-2026-intake-atlas-follow-up). The frozen results above are retained historically.
+
 ## Freeze record
 
 | Item | Value |
@@ -204,7 +206,7 @@ The new phase-4 row adds a C1 match only. Among all IAA-method rows, only Naḥa
 
 - Israel Exploration Journal 11 (1961) and 12 (1962), the Judean Desert expedition reports (Naḥal David, Naḥal Ḥever, Cave of Letters, Cave of Horror): no open copy found. Routes: Israel Exploration Society offprints https://www.israelexplorationsociety.com/product-page/judean-desert-caves-i and https://www.israelexplorationsociety.com/product-page/copy-of-judean-desert-caves-ii (for sale); JSTOR (subscription).
 - Porat and Eshel refuge-cave reports: bibliographic entries only, e.g. https://orion-bibliography.huji.ac.il/node/56426 and https://orion-bibliography.huji.ac.il/node/56864 (not opened; no full text found).
-- Frumkin, karst-cave surveys (Niqrot Zurim): https://digitalcommons.usf.edu/kip_articles/3155 found, not opened.
+- Frumkin, karst-cave surveys (Niqrot Zurim): https://digitalcommons.usf.edu/kip_articles/3155 opened 15 October2026: Langford–Frumkin2013, *The longest limestone caves of Israel*, not a Cave53 catalogue.
 - ESI 4 (1985) p. 21 (second season of Patrich's survey): not in the owner's library; not sought online.
 - ʿAtiqot 41 Part 2 and the English edition; DJD I, II and VI; Yadin 1963; Patrich 1994b; ESI 13 (1995) p. 64; Porat et al. 2004, 2006, 2007; Sion and Riklin 1993: not read.
 - Not sought, by instruction: the L-656 field file and IAA Archive cave records.
@@ -235,3 +237,8 @@ The new phase-4 row adds a C1 match only. Among all IAA-method rows, only Naḥa
 ## 11Q source correction, 14 October 2026 UTC
 
 [Humbert–Fidanzio 2019 targeted review](../../sources/new_batch_2026-10-13/cave_text_changes.md) records March 2017 reinspection of the particular northern crevasse previously proposed as a second exterior entrance: Humbert says it could not have been a passage (p. 52/viewer 77). This is an exploratory correction of that named opening model. The natural pillar is internal, and the volume retains conflicting ancient-partition versus excavation-support interpretations of the masonry (pp. 63–64 and 82–85). No alternate two-mouth history is silently eliminated; the frozen regional codes/results are preserved pending a separately documented source amendment. The source supplies no IV/17 or Twin Cave ancient threshold/wall datum.
+
+
+### 15 October 2026: later XII/53 source review
+
+The [source note](../../feature_workbench/available_evidence_2026-10-13/cave_native_check.md#correct-attachment-native-freikman-figures-inspected) now verifies Freikman2020 Figure3 as the ICRC2017 survey, and records Gutfeld2020’s later northeast entrance description and original53 / XII53A naming history. Upper XII53B is a distinct cavity. Earlier east and later northeast descriptions require a reference-frame/feature crosswalk before reusing orientation results; the inspected survey does not date W2 or the ancient threshold. The historical table above preserves its original inputs. The KB exposes the later descriptions as separate observations and flags dependent XII53 evaluations for reassessment.

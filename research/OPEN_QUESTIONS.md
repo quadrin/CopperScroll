@@ -91,6 +91,10 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 
 ## R02 — What cave arrangement does entry 25 describe?
 
+15 October 2026 continued: Freikman2020 native Fig3 verifies ICRC2017 plan/sections, scale, north arrow and an ITM coordinate label. Gutfeld2020 indexed text distinguishes original XII/53A from upper XII/53B and describes a northeast entrance with a built divider; retain Cohen–Israel’s earlier east description. Gutfeld’s native plan and W2/threshold phase remain missing. [Exact source scopes and unresolved crosswalk](feature_workbench/available_evidence_2026-10-13/cave_native_check.md#correct-attachment-native-freikman-figures-inspected).
+
+15 October 2026: the inspected 2015 atlas distinguishes Twin West, East and North and records excavation-altered floors in West. Establish Bar-Adon’s unit/entrance concordance before assigning the northern datum; Atlas North is a separate cave. Hamer2023 explicitly names A4-011 as Cave53. [Source observations, proposed crosswalks and remaining phase/identity gaps](feature_workbench/available_evidence_2026-10-13/cave_native_check.md#15-october-2026-intake-atlas-follow-up).
+
 12 October applied result: Applied book facts now distinguish cave form from dated usable architecture at IV/17, Twin and XII/53; all ancient threshold/configuration joins remain unknown. [Applied witnesses](feature_workbench/book_application_2026-10-12/README.md).
 
 - **Priority / status:** P1 / In progress.
@@ -154,6 +158,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 
 
 ## R07 — Where were Koḥlit, Achor and Sekakah?
+
+15 October 2026: Kallai’s preliminary report in HA26 pp19–23 is inspected and mentions Kh.Marjameh, but supplies no pool location/date. Its incomplete regional coverage prevents an absence claim. The requested Kallai1972 pp172–173 remain a distinct missing source. [Exact inspection scope](agent_review_2026-10-07/followup/B_kh_el_marjama.md#15-october-2026-intake-newly-held-preliminary-survey).
 
 12 October applied result: The 12 October Manchester/CBRL replies narrow custody routes without a diagnostic XII10 frame or north-strip observation. [Access evidence](agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026).
 

@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "The Copper Scroll Atlas",
-  description: "Explore the ancient places of the Copper Scroll and their candidate sites in two dimensions and three-dimensional terrain.",
+  description: "Trace Copper Scroll claims through manuscript readings, candidate features, observations and exact sources.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

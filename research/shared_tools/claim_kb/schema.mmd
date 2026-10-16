@@ -1,0 +1,28 @@
+flowchart TB
+  subgraph records["Abstract schema"]
+    T["Text · witness · reading · interpretation · requirement"]
+    S["Work · edition · copy · locator · observation"]
+    N["Written occurrence · proposed referent · search"]
+    F["Feature · historical state · event · frame"]
+    C["Claim · fixed candidate assignment"]
+    X["Test · coverage · gap · acquisition"]
+    T -->|cites| S
+    N -->|at_locus| T
+    S -->|observes| F
+    C -->|under_branch / requires| T
+    C -->|assigns / about| F
+    C -->|supports / conflicts / prerequisite| S
+    N -->|proposed_same_referent| F
+    X -->|evaluates / depends_on| C
+  end
+  subgraph populated["Populated Entry 11 / 60 chain"]
+    B["RB-M · early window −50 to 70"]
+    H["jericho-modern-ns1 · fixed 1898 reservoir"]
+    O["relationships-modern-reservoir-chronology · 1898"]
+    P["Dorrell 1993 pp95–97, 110–112"]
+    R["Early pool-period branch: contradicted"]
+    B -->|under_branch| R
+    H -->|evaluated_assignment| R
+    R -->|conflicts| O
+    O -->|cites| P
+  end

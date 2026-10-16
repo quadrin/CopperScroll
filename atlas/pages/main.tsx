@@ -2,6 +2,6 @@
 // without the Next.js/vinext server shell used by the ChatGPT-hosted Site.
 import "../app/globals.css";
 import { createRoot } from "react-dom/client";
-import Atlas from "../app/atlas";
+import AtlasHome from "../app/atlas-home";
 
-createRoot(document.getElementById("root")!).render(<Atlas />);
+createRoot(document.getElementById("root")!).render(<AtlasHome />);

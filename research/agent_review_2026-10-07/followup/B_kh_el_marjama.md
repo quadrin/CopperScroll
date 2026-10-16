@@ -114,3 +114,13 @@ No exact Kallai/Kochavi 1972 original was authenticated in this refreshed invent
 
 
 
+
+## 15 October 2026 intake: newly held preliminary survey
+
+Before contents were inspected, the frozen arrival-register check passed (`manifest: ok`, 29 files). Codex retrieved `Kallai-1968-preliminary-survey-full-issue.pdf` from the project’s existing Drive holdings, ID `1wk_ODSDF_aoJpRv7jmLJuXkJ5nnqYhbN`, 2,023,234 bytes, SHA-256 `a0ef49e7027868070b54c343509d6350b5a88692c9b6da81f590a0629df0a2c2`, on 15 October 2026 UTC. Metadata says the copy was added at 14:19:05.965Z. This is not receipt of the requested Kochavi 1972 pp. 172–173. The same analyst extracts and compares; all use is exploratory. No new rarity scoring is authorized by this intake. Original bytes remain in Drive and an ignored local inspection cache; public reproduction rights are unestablished.
+
+**Extracted result:** the copy is *Hadashot Arkheologiyot* 26 (April 1968), not the 1972 Kochavi volume. The regional report headed “Mount Ephraim and Benjamin — centre (team 5)” begins on printed p. 19 / PDF p. 22 and ends on printed p. 23 / PDF p. 28. The author/team attribution on p. 19 names Z. Kallai. Printed p. 20 occurs twice (PDF pp. 24–25); PDF p. 23 is a plate. The printed numerals 21 and 23 are misread by extraction as 21 and 25 in places; page images were checked.
+
+The report mentions Kh. Marjameh near ʿEin Samiya in the Early Bronze discussion (p. 19), includes the site in subsequent settlement discussion (pp. 20 and 22), and says the survey did not cover the entire assigned area (p. 19). The complete five-page report supplies no pool location, pool construction context, ancient pool date or northern-pit/grave relation. This is a bounded documentary silence result for those pages; the survey’s incomplete coverage and its broad preliminary purpose prohibit an archaeological absence claim. No source-plan pool is available to register.
+
+Kallai 1972 pp. 172–173, sites 65–66 and any plan/key remain the precise acquisition target. The new 1968 copy does not satisfy that request or trigger a Kochavi-1972 arrival score. An eastern pool there would establish location only until independently dated; a report silent about a pool would not establish absence. No repeated open-web hunt was run.

@@ -189,6 +189,10 @@ def build_index(root=ROOT, destination=CACHE, ocr=False):
                 con.execute('INSERT INTO records VALUES(?,?,?,?,?,?,?,?)',
                             [item[k] for k in ('id', 'kind', 'path', 'line', 'title', 'body')] + [json.dumps(item['locator'], ensure_ascii=False), item['url']])
                 con.execute('INSERT INTO search VALUES(?,?,?)', (item['id'], search_text(item['title']), search_text(item['body'])))
+        # Keep the claim pilot's content-addressed historical results when the
+        # source-search tables are rebuilt. Both use this same local database.
+        from claim_kb.store import preserve_history
+        preserve_history(db, staged)
         staged.replace(db)
     finally:
         staged.unlink(missing_ok=True)
