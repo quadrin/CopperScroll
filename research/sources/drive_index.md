@@ -3,6 +3,8 @@
 Generated with `tools/drive_navtree.py`’s navigation builder from the connected-Drive inventory and verified new-file receipts for **My Drive/Copper Scroll** ([114qehR0C8LouGds9UwZ5-hpStbv2GMQb](https://drive.google.com/drive/folders/114qehR0C8LouGds9UwZ5-hpStbv2GMQb)).
 1429 files in 51 folders, 136.6 GB. Last built 14 October 2026 UTC / 13 October Los Angeles.
 
+> **16 October 2026 (Los Angeles): Drive re-sorted; this index is stale until rebuilt.** 158 files and folders that sat loose in the Drive root or in the unnumbered folders "IAA portal volumes", "Copper Scroll page captures" and "Research reading archives" were moved into the numbered folders, with house-style names where the old name was a download name. Drive IDs are unchanged. Every move (ID, old path, new path, bytes) is in [drive_reorg_log_2026-10-16.tsv](drive_reorg_log_2026-10-16.tsv). Rebuild on the Mac with `--log research/sources/drive_reorg_log_2026-10-16.tsv` so former names are kept.
+
 ## How to use this index
 
 - **Find a file:** search this page, or `drive_manifest.csv`, by author, year, journal or site.
