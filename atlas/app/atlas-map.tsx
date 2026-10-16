@@ -1,11 +1,18 @@
 "use client";
 
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { Map, Minus, Mountain, Plus } from "lucide-react";
+import { Map, Minus, Mountain, Plus, PersonStanding, X, ArrowLeft } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { Map as LibreMap, Marker, StyleSpecification, GeoJSONSource } from "maplibre-gl";
 import type { Entry, Place } from "./atlas-types";
-import { candidateAreas, candidateBounds } from "./atlas-geography";
+import { allSiteBounds, candidateAreas, candidateBounds } from "./atlas-geography";
+import { imagerySource } from "./atlas-imagery";
+import { plansForPlace, sitePlans } from "./atlas-explorer-model";
+import SiteReference from "./atlas-site-reference";
+import { MapVideoReferences, MapSourceReferences, type MapPanel } from "./atlas-map-references";
+import type { MapSiteRuntime } from "./atlas-map-site-layer";
+import type { WalkController } from "./atlas-map-walk";
+import "./atlas-map-unified.css";
 import { terrainOnlyStyle, terrainFallback } from "./atlas-terrain-style";
 import type { Camera as MapCamera } from "./atlas-explorer-model";
 import "./atlas-explore.css";
@@ -14,15 +21,18 @@ import GroundView from "./atlas-ground";
 import ScrollView from "./atlas-scroll";
 import SceneView from "./atlas-scene";
 const LandscapeView=lazy(()=>import("./atlas-landscape"));
-const DossierView=lazy(()=>import("./atlas-dossier"));
 
-type Props = { entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void; onExploreSite?: () => void; onDetails?: () => void; onCamera?: (camera: MapCamera) => void; restoreCamera?: MapCamera; restoreNonce?: number; onRecord?: (id: string) => void; recordId?: string | null; scrollPhoto?: boolean; scrollColumn?: number; onScrollColumn?: (column: number) => void; onScrollPhoto?: (show: boolean, id?: string) => void };
+
+type Props = { representation?: "model"|"source"|"walk"; planId?: string|null; featureId?: string|null; onFeature?: (id:string|null)=>void; onPlan?: (id:string)=>void; entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void; onExploreSite?: () => void; onDetails?: () => void; onCamera?: (camera: MapCamera) => void; restoreCamera?: MapCamera; restoreNonce?: number; onRecord?: (id: string) => void; recordId?: string | null; scrollPhoto?: boolean; scrollColumn?: number; onScrollColumn?: (column: number) => void; onScrollPhoto?: (show: boolean, id?: string) => void };
 const INITIAL = { center: [35.367, 31.82] as [number,number], zoom: 10.3 };
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
 export default function AtlasMap(props:Props) {
   const {entry,places,entries,focusId,focusNonce,visibleIds,mode,onMode,onPlace,onEntry,mobileView,onText}=props;
-  const offMap=mode==="site"||mode==="ground"||mode==="scroll"||mode==="scene"||mode==="landscape"||mode==="dossier";
-  const immersive=mode==="landscape"||mode==="dossier";
+  const offMap=mode==="scroll"||mode==="scene";
+  const selectedPlace=places.find(p=>p.id===focusId)??null;
+  const plan=sitePlans.find(p=>p.id===props.planId)??plansForPlace(focusId)[0];
+  const modelAvailable=!!plan&&plan.kind!=="survey-map"&&selectedPlace?.lat!=null;
+  const siteRepresentation=mode==="site"?props.representation:undefined;
   const container=useRef<HTMLDivElement>(null);
   const mapRef=useRef<LibreMap|null>(null);
   const markers=useRef<{marker:Marker;button:HTMLButtonElement;place:Place}[]>([]);
@@ -34,28 +44,55 @@ export default function AtlasMap(props:Props) {
   const [exaggeration,setExaggeration]=useState(1.5);
   const [terrainState,setTerrainState]=useState("loading");
   const [mapZoom,setMapZoom]=useState(10.3);
-  const [pilotEnabled,setPilotEnabled]=useState(false);
+  const [basemap,setBasemap]=useState<"map"|"satellite">("map");
+  const basemapRef=useRef(basemap);basemapRef.current=basemap;
+  const [backgroundUnavailable,setBackgroundUnavailable]=useState(false);
+  const [imageryState,setImageryState]=useState("idle");
+  const [siteQuery,setSiteQuery]=useState("");
+  const sitesRef=useRef<HTMLDetailsElement>(null);
   const [placeExpanded,setPlaceExpanded]=useState(false);
   const optionsRef=useRef<HTMLDetailsElement>(null);
   const placeToggle=useRef<HTMLButtonElement>(null);
-  const [pilotState,setPilotState]=useState("loading");
-  const pilotPlace=focusId==="kh_qumran"||focusId==="wadi_qumran";
-  const pilotActive=pilotPlace&&mode==="3d"&&pilotEnabled;
+  const [panel,setPanel]=useState<MapPanel>(mode==="site"?"plan":null);
+  const [siteState,setSiteState]=useState("loading");
+  const siteRuntime=useRef<MapSiteRuntime|null>(null);
+  const walker=useRef<WalkController|null>(null);
+  const [walking,setWalking]=useState(false);
+  const [walkPosition,setWalkPosition]=useState<[number,number,number]>([0,1.7,0]);
+  const [placing,setPlacing]=useState(false);
+  const [dragPoint,setDragPoint]=useState<{x:number;y:number}|null>(null);
+  const [dropMessage,setDropMessage]=useState("");
+  const walkerGesture=useRef<{x:number;y:number;moved:boolean}|null>(null);
+  const pointerDropped=useRef(false);
+  const [localFeature,setLocalFeature]=useState<string|null>(props.featureId??null);
+  const [planViewport,setPlanViewport]=useState<{x:number;y:number;zoom:number}>({x:0,y:0,zoom:1});
   const restoring=useRef(false);
   const [coordinates,setCoordinates]=useState("31.820° N · 35.367° E");
   const reduced=useRef(false);
   useEffect(()=>{setPlaceExpanded(false);optionsRef.current?.removeAttribute("open");},[focusId,mode]);
-  useEffect(()=>{setPilotEnabled(false);},[focusId]);
+  useEffect(()=>{setLocalFeature(props.featureId??null);},[props.featureId,focusId]);
+  useEffect(()=>{setPlanViewport({x:0,y:0,zoom:1});},[plan?.id]);
   useEffect(()=>{
-    const close=(e:PointerEvent)=>{if(!optionsRef.current?.contains(e.target as Node))optionsRef.current?.removeAttribute("open");};
-    const escape=(e:KeyboardEvent)=>{if(e.key!=="Escape")return;if(optionsRef.current?.open){optionsRef.current.removeAttribute("open");optionsRef.current.querySelector("summary")?.focus();}setPlaceExpanded(false);};
+    if(mode==="site")setPanel(plan&&!modelAvailable?"plan":siteRepresentation==="model"||siteRepresentation==="walk"?null:"plan");
+    else if(mode==="ground")setPanel("photos");else if(mode==="dossier")setPanel("sources");else if(mode==="landscape")setPanel("history");
+    else if(mode==="2d"||mode==="3d")setPanel(plan&&!modelAvailable?"plan":null);
+  },[mode,siteRepresentation,props.restoreNonce]);
+  useEffect(()=>{
+    if(mode==="site")setPanel(plan&&!modelAvailable?"plan":props.representation==="model"||props.representation==="walk"?null:"plan");
+    else if(plan&&!modelAvailable&&(mode==="2d"||mode==="3d"))setPanel("plan");
+  },[plan?.id,modelAvailable]);
+  useEffect(()=>{walker.current?.stop();walker.current=null;setWalking(false);},[focusId,plan?.id]);
+  useEffect(()=>()=>{walker.current?.stop();walker.current=null;},[]);
+  useEffect(()=>{
+    const close=(e:PointerEvent)=>{for(const panel of [optionsRef.current,sitesRef.current])if(!panel?.contains(e.target as Node))panel?.removeAttribute("open");};
+    const escape=(e:KeyboardEvent)=>{if(e.key!=="Escape")return;for(const panel of [optionsRef.current,sitesRef.current])if(panel?.open){panel.removeAttribute("open");panel.querySelector("summary")?.focus();}setPlaceExpanded(false);};
     document.addEventListener("pointerdown",close);document.addEventListener("keydown",escape);
     return()=>{document.removeEventListener("pointerdown",close);document.removeEventListener("keydown",escape);};
   },[]);
 
   useEffect(()=>{
     let gone=false;let observer:ResizeObserver;let timeout:ReturnType<typeof setTimeout>;
-    setReady(false);setError("");
+    setReady(false);setError("");setBackgroundUnavailable(false);setImageryState("idle");
     reduced.current=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const abort=new AbortController();
     async function start(){
@@ -72,22 +109,36 @@ export default function AtlasMap(props:Props) {
         }catch(e){
           if(abort.signal.aborted)return;
           style=structuredClone(terrainFallback);
+          setBackgroundUnavailable(true);
         }
         if(gone||!container.current)return;
         const map=new lib.Map({container:container.current,style,...INITIAL,maxZoom:22,minZoom:6,maxPitch:85,attributionControl:false,renderWorldCopies:false});
         mapRef.current=map;
         map.addControl(new lib.AttributionControl({compact:true}),"bottom-right");
         map.addControl(new lib.ScaleControl({maxWidth:80,unit:"metric"}),"bottom-right");
-        map.on("moveend",()=>{const p=map.getCenter();setCoordinates(`${p.lat.toFixed(3)}° N · ${p.lng.toFixed(3)}° E`);setMapZoom(map.getZoom());latest.current.onCamera?.({center:[p.lng,p.lat],zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()});});
+        map.on("moveend",event=>{const p=map.getCenter();setCoordinates(`${p.lat.toFixed(3)}° N · ${p.lng.toFixed(3)}° E`);setMapZoom(map.getZoom());latest.current.onCamera?.({center:[p.lng,p.lat],zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()});
+          // Camera restoration and panel padding must not undo an explicit site choice.
+          if(event.originalEvent&&map.getZoom()>=16&&!walker.current){
+            const distance=(place:Place)=>place.lat==null||place.lon==null?Infinity:Math.hypot((place.lon-p.lng)*Math.cos(p.lat*Math.PI/180),place.lat-p.lat)*111320;
+            const focused=places.find(place=>place.id===latest.current.focusId);
+            if(!focused||distance(focused)>250){const nearby=places.filter(place=>plansForPlace(place.id).some(plan=>plan.kind!=="survey-map")).sort((a,b)=>distance(a)-distance(b))[0];if(nearby&&distance(nearby)<150&&nearby.id!==latest.current.focusId)latest.current.onPlace(nearby.id);}
+          }
+        });
         map.on("error",e=>{
           if(gone)return;
           const source=(e as unknown as {sourceId?:string}).sourceId;
           if(source==="terrain" || source==="hillshade")setTerrainState("unavailable");
+          if(source==="satellite")setImageryState("unavailable");
+          if(source&&source!=="terrain"&&source!=="hillshade"&&source!=="satellite"&&source!=="precision")setBackgroundUnavailable(true);
         });
         timeout=setTimeout(()=>{if(!gone&&!map.loaded())setError("Map tiles are taking longer than expected. The place register remains available.")},20000);
-        map.on("load",()=>{
+        // Source failures must not prevent the gazetteer and zoom controls loading.
+        map.on("style.load",()=>{
           if(gone)return;
           clearTimeout(timeout);setError("");
+          const firstLayer=map.getStyle().layers.find(l=>l.type!=="background")?.id;
+          map.addSource("satellite",imagerySource);
+          map.addLayer({id:"satellite-imagery",type:"raster",source:"satellite",layout:{visibility:basemapRef.current==="satellite"?"visible":"none"},paint:{"raster-fade-duration":200}},firstLayer);
           map.addSource("terrain",{type:"raster-dem",url:"https://tiles.mapterhorn.com/tilejson.json"});
           map.addSource("hillshade",{type:"raster-dem",url:"https://tiles.mapterhorn.com/tilejson.json"});
           const firstSymbol=map.getStyle().layers.find(l=>l.type==="symbol")?.id;
@@ -105,16 +156,17 @@ export default function AtlasMap(props:Props) {
             // Keep interactive styling on a child so selection cannot erase them.
             const anchor=document.createElement("div");anchor.className="site-marker";
             const button=document.createElement("button");button.type="button";
-            button.className="site-pin";button.setAttribute("aria-label",`Explore ${place.shortName}`);
+            button.className="site-pin";button.setAttribute("aria-label",`Explore ${place.shortName}`);button.dataset.placeId=place.id;
             const head=document.createElement("span");head.className="pin-head";
             const label=document.createElement("span");label.className="pin-label";label.textContent=place.shortName;
-            button.appendChild(head);button.appendChild(label);button.addEventListener("click",()=>latest.current.onPlace(place.id));
+            button.appendChild(head);button.appendChild(label);button.addEventListener("click",event=>{event.stopPropagation();latest.current.onPlace(place.id)});
             anchor.appendChild(button);
             const marker=new lib.Marker({element:anchor,anchor:"center"}).setLngLat([place.lon,place.lat]).addTo(map);
             markers.current.push({marker,button,place});
           }
-          map.on("sourcedata",e=>{if(e.sourceId==="terrain"&&e.isSourceLoaded)setTerrainState("ready")});
+          map.on("sourcedata",e=>{if(e.sourceId==="terrain"&&e.isSourceLoaded)setTerrainState("ready");if(e.sourceId==="satellite"&&e.isSourceLoaded&&e.sourceDataType==="content")setImageryState("ready")});
           if(latest.current.restoreCamera)map.jumpTo(latest.current.restoreCamera);
+          else {const bounds=allSiteBounds(places);if(bounds)map.fitBounds(bounds,{padding:mapPadding(map),maxZoom:12,duration:0});}
           setModernLayerCount(map.getStyle().layers.filter(layer=>layer.type==="fill-extrusion"||/building|transportation|landuse|poi/i.test(("source-layer" in layer?layer["source-layer"]??"":"")+" "+layer.id)).length);
           setReady(true);
         });
@@ -122,22 +174,32 @@ export default function AtlasMap(props:Props) {
       }catch{if(!gone)setError("This browser could not open the interactive map. You can still explore every entry and candidate in the register.")}
     }
     void start();
-    return()=>{gone=true;abort.abort();clearTimeout(timeout);observer?.disconnect();markers.current.forEach(m=>m.marker.remove());markers.current=[];mapRef.current?.remove();mapRef.current=null;};
+    return()=>{gone=true;walker.current?.stop();walker.current=null;abort.abort();clearTimeout(timeout);observer?.disconnect();markers.current.forEach(m=>m.marker.remove());markers.current=[];mapRef.current?.remove();mapRef.current=null;};
   },[retry,places]);
 
   useEffect(()=>{
     if(!ready)return;
-    const relevant=new Set(entry.candidates.map(c=>c.placeId));
-    const visible=new Set(visibleIds);
     for(const m of markers.current){
       const candidate=entry.candidates.find(c=>c.placeId===m.place.id);
       const preferred=entries.some(e=>e.candidates.some(c=>c.placeId===m.place.id&&c.status==="preferred"));
-      m.button.className=`site-pin ${candidate?.status||(preferred?"preferred":"possible")} ${focusId===m.place.id?"selected":""} ${relevant.has(m.place.id)?"":"dim"}`;
-      m.button.style.display=visible.has(m.place.id)||relevant.has(m.place.id)?"flex":"none";
+      m.button.className=`site-pin ${candidate?.status||(preferred?"preferred":"possible")} ${focusId===m.place.id?"selected":""}`;
+      // Searching entries must not silently remove other sites from the map.
+      m.button.style.display="flex";
       m.button.setAttribute("aria-pressed",String(focusId===m.place.id));
+      m.marker.getElement().hidden=walking||(siteState==="ready"&&mapZoom>=15.5&&focusId===m.place.id);
     }
     (mapRef.current?.getSource("precision") as GeoJSONSource|undefined)?.setData(candidateAreas(entry,places,focusId));
-  },[ready,entry,focusId,visibleIds,places,entries]);
+  },[ready,entry,focusId,visibleIds,places,entries,walking,siteState,mapZoom]);
+
+  useEffect(()=>{
+    const map=mapRef.current;if(!ready||!map)return;
+    map.setLayoutProperty("satellite-imagery","visibility",basemap==="satellite"?"visible":"none");
+    for(const layer of map.getStyle().layers){
+      if(["satellite-imagery","precision-fill","precision-halo","precision-line","source-site-detail"].includes(layer.id)||layer.type==="background")continue;
+      map.setLayoutProperty(layer.id,"visibility",basemap==="satellite"?"none":"visible");
+    }
+    if(basemap==="satellite")setImageryState(value=>value==="idle"?"loading":value);
+  },[basemap,ready]);
 
   useEffect(()=>{
     const map=mapRef.current;if(!ready||!map)return;
@@ -157,87 +219,117 @@ export default function AtlasMap(props:Props) {
     const p=places.find(p=>p.id===focusId);
     const bounds=p?candidateBounds(p):null;
     if(bounds){
-      map.fitBounds(bounds,{padding:{top:125,bottom:150,left:50,right:60},maxZoom:16.7,pitch:mode==="3d"?60:0,bearing:mode==="3d"?-18:0,duration:reduced.current?0:1100,essential:false});
+      map.fitBounds(bounds,{padding:mapPadding(map),maxZoom:16.7,pitch:mode==="3d"?60:0,bearing:mode==="3d"?-18:0,duration:reduced.current?0:1100,essential:false});
     }
   },[focusNonce,ready,focusId,places]);
   useEffect(()=>{const map=mapRef.current;if(ready&&map&&props.restoreCamera){restoring.current=true;map.stop();map.jumpTo(props.restoreCamera);requestAnimationFrame(()=>{restoring.current=false})}},[ready,props.restoreNonce]);
   useEffect(()=>{if(mobileView==="map")requestAnimationFrame(()=>mapRef.current?.resize())},[mobileView]);
 
   useEffect(()=>{
-    const map=mapRef.current;if(!ready||!map)return;let cancelled=false;
-    const layerId="qumran-source-pilot";
-    if(!pilotActive){if(map.getLayer(layerId))map.removeLayer(layerId);return;}
-    setPilotState("loading");
-    void import("./atlas-qumran-pilot").then(({createQumranLayer})=>{
+    const map=mapRef.current;if(!ready||!map)return;let cancelled=false;siteRuntime.current=null;
+    if(map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");
+    if(!modelAvailable||offMap){setSiteState("unavailable");return;}
+    setSiteState("loading");
+    void import("./atlas-map-site-layer").then(({createMapSiteLayer})=>{
       if(cancelled||mapRef.current!==map)return;
-      if(!map.getLayer(layerId))map.addLayer(createQumranLayer(map,message=>setPilotState(message)));
-      setPilotState(previous=>previous==="loading"?"ready":previous);
-    }).catch(()=>{if(!cancelled)setPilotState("Site detail could not load. Open the source plan instead.")});
-    return()=>{cancelled=true;if(mapRef.current===map&&map.getLayer(layerId))map.removeLayer(layerId);};
-  },[ready,pilotActive]);
+      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{siteRuntime.current=runtime;setSiteState("ready");if(latest.current.representation==="walk")void enterWalk();else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message)));
+    }).catch(()=>{if(!cancelled)setSiteState("Source model could not load.");});
+    return()=>{cancelled=true;walker.current?.stop();walker.current=null;siteRuntime.current=null;if(mapRef.current===map&&map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");};
+  },[ready,plan?.id,focusId,modelAvailable,offMap]);
+  useEffect(()=>{siteRuntime.current?.setFeature(localFeature);},[localFeature,siteState]);
 
-  async function visitPilot(stop:"overview"|"intake"|"branch"|"tunnel"){
-    const map=mapRef.current;if(!map||!ready)return;
-    try{const {pilotStops,pilotLocation}=await import("./atlas-qumran-pilot");
-      if(mapRef.current!==map)return;
-      if(latest.current.focusId!==focusId)return;
-      setPilotEnabled(true);setExaggeration(1);if(mode!=="3d")onMode("3d");
-      // Apply the transition after React's map-mode effect, so it cannot reset the low pitch.
-      requestAnimationFrame(()=>requestAnimationFrame(()=>{const s=pilotStops[stop];if(mapRef.current===map){map.setTerrain({source:"terrain",exaggeration:1});map.flyTo({center:pilotLocation(s.x,s.z),zoom:s.zoom,pitch:s.pitch,bearing:0,duration:reduced.current?0:1400});}}));
-    }catch{setPilotState("Site detail could not load. Open the source plan instead.")}
+  useEffect(()=>{
+    const map=mapRef.current;if(!ready||!map||walking)return;
+    const padding=mapPadding(map),width=map.getContainer().clientWidth,height=map.getContainer().clientHeight;
+    if(panel){if(width>700)padding.right=Math.min(520,width*.5+20);else padding.bottom=Math.min(height*.56,height-180);}
+    map.easeTo({padding,duration:reduced.current?0:220});
+  },[panel,ready,walking]);
+  useEffect(()=>{const close=(event:KeyboardEvent)=>{if(event.key!=="Escape")return;if(walker.current)stopWalk();else setPanel(null);};const reset=()=>overview();window.addEventListener("keydown",close);window.addEventListener("atlas:overview",reset);return()=>{window.removeEventListener("keydown",close);window.removeEventListener("atlas:overview",reset);};},[ready]);
+  function selectFeature(id:string|null){setLocalFeature(id);props.onFeature?.(id);if(!walking)siteRuntime.current?.focus(id??undefined);}
+  function stopWalk(){walker.current?.stop();walker.current=null;setWalking(false);}
+  async function enterWalk(at?:[number,number]){
+    const map=mapRef.current,site=siteRuntime.current;if(!map||!site){setDropMessage("This site has no source-based 3D coverage yet. Explore its photos and references here.");return;}
+    if(walker.current)stopWalk();
+    const {startMapWalk}=await import("./atlas-map-walk");if(mapRef.current!==map||siteRuntime.current!==site)return;
+    setPanel(null);setDropMessage("");setWalking(true);walker.current=startMapWalk(map,site,setWalkPosition,at);
+  }
+  function dropWalker(e:React.PointerEvent<HTMLButtonElement>){
+    const gesture=walkerGesture.current;walkerGesture.current=null;setPlacing(false);setDragPoint(null);if(!gesture)return;
+    pointerDropped.current=gesture.moved;
+    if(!gesture.moved)return;
+    const map=mapRef.current,site=siteRuntime.current,rect=container.current?.getBoundingClientRect();if(!map||!site||!rect)return;
+    if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)return;
+    const at=map.unproject([e.clientX-rect.left,e.clientY-rect.top]),local=site.local(at.lng,at.lat);
+    if(Math.hypot(...local)>Math.max(site.span*1.5,50)){setDropMessage("Drop the person on the selected site’s model, or tap the person to enter at its edge.");return;}
+    void enterWalk([at.lng,at.lat]);
   }
 
+  function mapPadding(map:LibreMap){
+    const {clientWidth,clientHeight}=map.getContainer();
+    return {top:Math.min(clientWidth<=700?140:85,clientHeight*.27),bottom:Math.min(160,clientHeight*.27),left:Math.min(55,clientWidth*.12),right:Math.min(65,clientWidth*.15)};
+  }
   function inspectSite(){
     const place=places.find(p=>p.id===focusId);
     if(place?.lat==null||place.lon==null)return;
-    mapRef.current?.flyTo({center:[place.lon,place.lat],zoom:17.5,pitch:mode==="3d"?65:0,duration:reduced.current?0:1000});
+    stopWalk();if(siteRuntime.current){siteRuntime.current.focus();return;}
+    mapRef.current?.flyTo({center:[place.lon,place.lat],zoom:18,pitch:mode==="3d"?65:0,duration:reduced.current?0:1000});
   }
-  function overview(){mapRef.current?.flyTo({...INITIAL,pitch:mode==="3d"?55:0,bearing:mode==="3d"?-18:0,duration:reduced.current?0:900})}
+  function overview(){stopWalk();setPanel(null);const map=mapRef.current,bounds=allSiteBounds(places);if(map&&bounds)map.fitBounds(bounds,{padding:mapPadding(map),pitch:0,bearing:0,maxZoom:12,duration:reduced.current?0:900})}
   function fitEntry(){
     const bounds=entry.candidates.flatMap(c=>{const p=places.find(p=>p.id===c.placeId);const b=p?candidateBounds(p):null;return b?[b]:[]});
     if(!bounds.length)return;
-    mapRef.current?.fitBounds([[Math.min(...bounds.map(b=>b[0][0])),Math.min(...bounds.map(b=>b[0][1]))],[Math.max(...bounds.map(b=>b[1][0])),Math.max(...bounds.map(b=>b[1][1]))]],{padding:{top:110,bottom:150,left:50,right:60},maxZoom:16.7,pitch:mode==="3d"?55:0,duration:reduced.current?0:800});
+    const map=mapRef.current;if(map)map.fitBounds([[Math.min(...bounds.map(b=>b[0][0])),Math.min(...bounds.map(b=>b[0][1]))],[Math.max(...bounds.map(b=>b[1][0])),Math.max(...bounds.map(b=>b[1][1]))]],{padding:mapPadding(map),maxZoom:16.7,pitch:mode==="3d"?55:0,duration:reduced.current?0:800});
   }
-  const selectedPlace=places.find(p=>p.id===focusId)??null;
-  return <section className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""} ${immersive?"immersive-mode":""}`} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":"Interactive candidate map"}>
-    <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} data-modern-layer-count={modernLayerCount??"loading"} data-map-zoom={mapZoom.toFixed(3)} data-map-center={coordinates} aria-label="Geographic map of the Copper Scroll candidate sites" />
+  const mappedPlaces=places.filter(p=>p.lat!==null&&p.lon!==null);
+  const matchingSites=places.filter(p=>!siteQuery||`${p.name} ${p.shortName}`.toLocaleLowerCase().includes(siteQuery.toLocaleLowerCase()));
+  const hasPlan=plansForPlace(focusId).length>0;
+  return <section data-walking={walking} data-site-state={siteState} data-site-plan={plan?.id??""} className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""}`} onDragOver={e=>e.preventDefault()} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":"Interactive candidate map"}>
+    <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} data-basemap={basemap} data-site-labels={mapZoom>=15} data-modern-layer-count={modernLayerCount??"loading"} data-map-zoom={mapZoom.toFixed(3)} data-map-center={coordinates} aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
+    {!offMap&&modelAvailable&&mapZoom>=15.5&&<div className="map-site-caption"><strong>{walking?"Eye-level model":"Source-based 3D site"}</strong><span>{plan?.label} · approximate alignment</span><button onClick={()=>setPanel("sources")}>Sources &amp; assumptions</button></div>}
     {!offMap&&<div className="map-toolbar">
-      <Tabs value={mode} onValueChange={onMode} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger></TabsList></Tabs>
+      <Tabs value={mode==="3d"?"3d":basemap==="satellite"?"satellite":"2d"} onValueChange={value=>{stopWalk();if(value!=="3d")setBasemap(value==="satellite"?"satellite":"map");onMode(value==="3d"?"3d":"2d")}} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="satellite">Satellite</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger></TabsList></Tabs>
+      <div className="map-toolbar-menus">
+      <details ref={sitesRef} className="map-options map-sites"><summary aria-label="Browse all sites">Sites · {mappedPlaces.length}</summary><div>
+        <label className="map-site-search">Find a site<input aria-label="Search map sites" type="search" placeholder="Qumran, Siloam…" value={siteQuery} onChange={e=>setSiteQuery(e.target.value)}/></label>
+        <button disabled={!ready} onClick={()=>{overview();sitesRef.current?.removeAttribute("open")}}>Show all {mappedPlaces.length} mapped sites</button>
+        <nav aria-label="Map sites">{matchingSites.map(p=><button key={p.id} aria-current={p.id===focusId?"location":undefined} onClick={()=>{setPanel(null);onPlace(p.id);sitesRef.current?.removeAttribute("open");if(p.id===focusId)inspectSite();}}><strong>{p.shortName}</strong><small>{p.lat===null?"Location unresolved":plansForPlace(p.id).length?"Mapped · detailed plan available":"Mapped · imagery & evidence"}</small></button>)}</nav>
+        {matchingSites.length===0&&<p>No matching site.</p>}
+        <p className="map-sites-note">{places.length-mappedPlaces.length} sites have no established coordinate and appear in the list only.</p>
+      </div></details>
       <details ref={optionsRef} className="map-options"><summary>Options</summary><div>
         <button disabled={!ready} onClick={()=>{fitEntry();optionsRef.current?.removeAttribute("open")}}>Fit candidate area</button>
         <button disabled={!ready} onClick={()=>{mapRef.current?.easeTo({bearing:0,duration:reduced.current?0:500});optionsRef.current?.removeAttribute("open")}}>Reset north</button>
-        <button disabled={!ready} onClick={()=>{overview();optionsRef.current?.removeAttribute("open")}}>Regional overview</button>
+        <button disabled={!ready} onClick={()=>{overview();optionsRef.current?.removeAttribute("open")}}>Show all sites</button>
         <button onClick={()=>onMode("landscape")}>Historical maps</button>
         {mode==="3d"&&<label className="relief-option">Relief <span>{exaggeration.toFixed(1)}×</span><input aria-label="Terrain vertical exaggeration" type="range" min="1" max="3" step=".25" value={exaggeration} onChange={e=>setExaggeration(+e.target.value)}/></label>}
         {mode==="3d"&&terrainState==="unavailable"&&<p role="status">Elevation tiles are unavailable. Switch to Map or retry.</p>}
-        {pilotPlace&&<label className="pilot-option"><input type="checkbox" disabled={!ready} checked={pilotEnabled} onChange={e=>{setPilotEnabled(e.target.checked);if(e.target.checked)void visitPilot("overview")}}/>Experimental site model<small>Approximate placement · unfinished geometry</small></label>}
-      </div></details>
+      </div></details></div>
     </div>}
-    {!offMap&&<div className="zoom-controls"><button disabled={!ready} className="tool-button" aria-label="Zoom in" onClick={()=>mapRef.current?.zoomIn()}><Plus size={18}/></button><button disabled={!ready} className="tool-button" aria-label="Zoom out" onClick={()=>mapRef.current?.zoomOut()}><Minus size={18}/></button></div>}
-    {!offMap&&<aside className="map-place-panel" aria-label="Selected site" data-expanded={placeExpanded}>
-      <div className="map-place-summary"><button ref={placeToggle} className="map-place-toggle" aria-label="Show selected site details" aria-expanded={placeExpanded} aria-controls="map-place-details" onClick={()=>setPlaceExpanded(v=>!v)}><strong>{selectedPlace?.shortName??"Location unresolved"}</strong><span>{pilotActive?"Experimental model · approximate placement":selectedPlace?.lat==null?"No mapped coordinate":`Approximate position · ${selectedPlace.precision}`} · {placeExpanded?"Less":"Details"}</span></button><button className="map-primary-action" onClick={props.onExploreSite??inspectSite}>Site plan</button></div>
-      <div id="map-place-details" hidden={!placeExpanded}><p>{selectedPlace?.lat==null?"This location remains unplaced. The source plan can still be explored.":"Candidate area, not a surveyed boundary."}</p><nav aria-label="Selected site information"><button onClick={props.onDetails??onText}>Entry details</button><button onClick={()=>onMode("ground")}>Photos</button><button onClick={()=>onMode("dossier")}>Evidence</button></nav>
-      {pilotActive&&<div className="qumran-pilot" aria-label="Qumran terrain detail pilot">
-      <div className="qumran-pilot-title"><strong>Qumran site detail</strong><span>Approximate placement</span></div>
-      <nav aria-label="Fly to Qumran site features">
-        <button disabled={!ready} onClick={()=>void visitPilot("overview")}>Zoom to site</button>
-        {pilotActive&&<><button disabled={!ready} onClick={()=>void visitPilot("intake")}>Intake</button><button disabled={!ready} onClick={()=>void visitPilot("branch")}>Branch</button><button disabled={!ready} onClick={()=>void visitPilot("tunnel")}>Tunnel · low view</button></>}
-      </nav>
-      <details><summary>Sources &amp; display limits</summary><p>Ilan–Amit 1989, p. 283, Fig. 1 supplies selected channel and branch relationships. Davey CJD979 (1974), Reeder–Jol Fig. 2 and Magen–Peleg Fig. 87 supply tunnel-mouth references. Limestone, rubble, masonry courses, cross-sections, heights and the rock setting are illustrative rendering detail.</p><p>The Wadi Qumran anchor has approximately 500 m uncertainty. Position, bearing and display scale are unregistered. The raised outcrop exposes the model above the modern terrain; it does not reproduce surveyed gorge relief. This pilot is not a photogrammetric reconstruction.</p><a href="https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry21_feature_comparison.md" target="_blank" rel="noreferrer">Reference and feature record</a><label><input type="checkbox" checked={pilotEnabled} onChange={e=>setPilotEnabled(e.target.checked)}/> Show illustrative site geometry</label></details>
-      {ready&&!error&&pilotActive&&pilotState!=="ready"&&<small role="status">{pilotState==="loading"?"Loading site detail…":pilotState}</small>}
-      {pilotActive&&pilotState==="ready"&&<small>Same map camera · pinch or scroll closer · two fingers to tilt</small>}
-      </div>}
+    {!offMap&&!walking&&<div className="zoom-controls"><button disabled={!ready} className="tool-button" aria-label="Zoom in" onClick={()=>mapRef.current?.zoomIn()}><Plus size={18}/></button><button disabled={!ready} className="tool-button" aria-label="Zoom out" onClick={()=>mapRef.current?.zoomOut()}><Minus size={18}/></button></div>}
+    {!offMap&&<button className={`map-person ${walking?"active":""}`} aria-label={walking?"Exit eye-level view":"Walk around this site"} aria-pressed={walking} title="Drag onto the site, or tap to enter eye level" disabled={!ready} onPointerDown={e=>{walkerGesture.current={x:e.clientX,y:e.clientY,moved:false};pointerDropped.current=false;e.currentTarget.setPointerCapture(e.pointerId);}} onPointerMove={e=>{const g=walkerGesture.current;if(g&&Math.hypot(e.clientX-g.x,e.clientY-g.y)>8){g.moved=true;setPlacing(true);const r=container.current?.getBoundingClientRect();if(r)setDragPoint({x:e.clientX-r.left,y:e.clientY-r.top});}}} onPointerUp={dropWalker} onPointerCancel={()=>{walkerGesture.current=null;setPlacing(false);setDragPoint(null)}} onClick={()=>{if(pointerDropped.current){pointerDropped.current=false;return;}if(walking)stopWalk();else void enterWalk();}}><PersonStanding size={28}/></button>}
+    {placing&&dragPoint&&<div className="map-person-ghost" aria-hidden="true" style={{left:dragPoint.x,top:dragPoint.y}}><PersonStanding size={34}/></div>}
+    {placing&&<div className="map-drop-hint" role="status">Drop on the selected site to look around</div>}
+    {dropMessage&&!offMap&&<div className="map-drop-hint" role="status">{dropMessage}<button aria-label="Dismiss walking message" onClick={()=>setDropMessage("")}><X size={14}/></button></div>}
+    {walking&&<div className="map-walk-controls" aria-label="Walk controls"><button onClick={stopWalk}><ArrowLeft size={16}/>Back to map</button><span>Drag to look · WASD / arrows to move</span><div>{[["w","Forward"],["a","Left"],["s","Back"],["d","Right"]].map(([key,label])=><button key={key} onPointerDown={e=>{e.currentTarget.setPointerCapture(e.pointerId);walker.current?.keys.add(key)}} onPointerUp={()=>walker.current?.keys.delete(key)} onPointerCancel={()=>walker.current?.keys.delete(key)} onLostPointerCapture={()=>walker.current?.keys.delete(key)}>{label}</button>)}</div><small>Eye height 1.7 m · source-based geometry · route not surveyed</small><output aria-label="Walk camera position">{walkPosition.map(n=>n.toFixed(1)).join(", ")}</output></div>}
+    {!offMap&&!walking&&<aside className="map-place-panel" aria-label="Selected site" data-expanded={placeExpanded}>
+      <div className="map-place-summary"><button ref={placeToggle} className="map-place-toggle" aria-label="Show selected site details" aria-expanded={placeExpanded} aria-controls="map-place-details" onClick={()=>setPlaceExpanded(v=>!v)}><strong>{selectedPlace?.shortName??"Location unresolved"}</strong><span>{selectedPlace?.lat==null?"No mapped coordinate":`Approximate position · ${selectedPlace.precision}`} · {placeExpanded?"Less":"Details"}</span></button></div>
+      <nav className="map-place-actions" aria-label="Explore selected site"><button disabled={!ready||selectedPlace?.lat==null} onClick={inspectSite}>Zoom to site</button><button className="map-primary-action" onClick={()=>{setPanel(panel==="plan"?null:hasPlan?"plan":"sources")}}>{hasPlan?"Plan & details":"References"}</button><button onClick={()=>setPanel(panel==="photos"?null:"photos")}>Photos</button></nav>
+      {basemap==="satellite"&&<p className="map-imagery-note">Modern satellite imagery · resolution varies{mapZoom>19?" · enlarged beyond native tile detail":""}. Site pins show approximate locations.</p>}
+      <div id="map-place-details" hidden={!placeExpanded}><p>{selectedPlace?.lat==null?"This location remains unplaced. The source plan can still be explored.":"Candidate area, not a surveyed boundary."}</p><nav aria-label="Selected site information"><button onClick={props.onDetails??onText}>Entry details</button><button onClick={()=>setPanel(panel==="photos"?null:"photos")}>Photos</button><button onClick={()=>setPanel("sources")}>Sources</button><button onClick={()=>setPanel("video")}>Videos</button></nav>
       </div>
     </aside>}
     {!offMap&&!ready&&!error&&<div className="map-status" role="status">Unfolding the map…</div>}
+    {!offMap&&ready&&((basemap==="satellite"&&imageryState==="unavailable")||(basemap==="map"&&backgroundUnavailable))&&<div className="map-status" role="status">{basemap==="satellite"?"Satellite imagery could not load. Try Map, or open the site plan and photos.":"The map background could not load. Site pins and plans remain available."}</div>}
     {!offMap&&error&&<div className="map-status" role="status">{error}<button onClick={()=>setRetry(v=>v+1)}>Retry map</button></div>}
-    {mode==="ground"&&<GroundView key={`${focusId}-${entry.id}`} place={selectedPlace} entry={entry} places={places} onPlace={onPlace}/>}
+    {!offMap&&panel&&<aside className={`map-inline-panel map-panel-${panel}`} aria-label="Site reference panel"><header><nav aria-label="Site reference views">{([['plan','Plan'],['photos','Photos'],['video','Videos'],['sources','Sources'],['history','History']] as const).map(([id,label])=><button key={id} aria-pressed={panel===id} onClick={()=>setPanel(id)} disabled={id==='plan'&&!plan}>{label}</button>)}</nav><button aria-label="Close site reference panel" onClick={()=>setPanel(null)}><X size={19}/></button></header><div className="map-inline-body">
+      {panel==="plan"&&plan&&<SiteReference place={selectedPlace} plan={plan} featureId={localFeature} restoreNonce={props.restoreNonce??0} viewport={planViewport} onViewport={setPlanViewport} onFeature={selectFeature} onPlan={id=>props.onPlan?.(id)} onRead={id=>{onEntry(id);onMode("scroll");}}/>}
+      {panel==="photos"&&<GroundView key={focusId} place={selectedPlace} entry={entry} places={places} onPlace={onPlace}/>}
+      {panel==="video"&&<MapVideoReferences key={focusId} placeId={focusId}/>}
+      {panel==="sources"&&<MapSourceReferences key={plan?.id??focusId} plan={plan} placeId={focusId} assumptions={siteRuntime.current?.model.assumptions??[]} entry={entry} place={selectedPlace} onEntry={onEntry} onHistory={()=>setPanel("history")} onRead={onText}/>}
+      {panel==="history"&&<Suspense fallback={<p>Opening historical imagery…</p>}><LandscapeView entry={entry} place={selectedPlace} onDossier={()=>setPanel("sources")}/></Suspense>}
+    </div></aside>}
     {mode==="scene"&&<SceneView key={entry.id} entry={entry} onEntry={onEntry} onText={onText}/>}
     {mode==="scroll"&&<ScrollView entry={entry} entries={entries} places={Object.fromEntries(places.map(p=>[p.id,p]))} onEntry={onEntry} photograph={props.scrollPhoto} onPhotograph={props.onScrollPhoto} column={props.scrollColumn} onColumn={props.onScrollColumn}/>}
-    {immersive&&<Suspense fallback={<div className="atlas-module-loading" role="status">Opening {mode==="landscape"?"historical landscapes":"the place dossier"}…</div>}>
-      {mode==="landscape"&&<LandscapeView entry={entry} place={selectedPlace} onDossier={()=>onMode("dossier")}/>}
-      {mode==="dossier"&&<DossierView entry={entry} place={selectedPlace} onEntry={onEntry} onLandscape={()=>onMode("landscape")} onRead={()=>onMode("scroll")}/>}
-    </Suspense>}
   </section>;
 }

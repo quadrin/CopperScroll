@@ -1,0 +1,162 @@
+{
+  "libraryUrl": "https://drive.google.com/drive/folders/114qehR0C8LouGds9UwZ5-hpStbv2GMQb",
+  "cataloguePath": "research/sources/drive_manifest.csv",
+  "catalogueSha256": "eb11ac03ba0556f7802678e6ba18956c2c33c89354c48a7b7135ab6fa33e8e60",
+  "accessScope": "Matched to the repository Drive catalogue and existing source/asset records; live Drive access and new inspection of original files are not claimed.",
+  "sources": {
+    "aqueducts1989": {
+      "driveId": "1-6s-nqSD-PP_FpZ788Tc0dvH_z7eziZg",
+      "title": "Amit, Hirschfeld & Patrich eds 1989 – The Aqueducts of Ancient Palestine (Hebrew)",
+      "cataloguePath": "03 Surveys, gazetteers and reference/Amit, Hirschfeld & Patrich eds 1989 – The Aqueducts of Ancient Palestine (Hebrew).pdf"
+    },
+    "trumper2018": {
+      "driveId": "116Vv0zZ1z2qEY4__p8dOuNpxEDX-Wdly",
+      "title": "Trümper 2018 – Swimming pools and water management, 4th-1st c BC (BSA 53)",
+      "cataloguePath": "04 Articles and chapters/Trümper 2018 – Swimming pools and water management, 4th-1st c BC (BSA 53).pdf"
+    },
+    "siloam2020": {
+      "driveId": "18xiUESkfAq6akpv2zdcYmcNhg-izv6Ck",
+      "title": "Greenhut et al. 2020 - The City of David (‘Ir David), Siloam Road- A Plastered Pool adjacent to the Siloam Pool (Hebrew, pp. 71*–86*; English summary, pp. 137–138) (Atiqot 101)",
+      "cataloguePath": "IAA portal volumes/phase4/Greenhut et al. 2020 - The City of David (‘Ir David), Siloam Road- A Plastered Pool adjacent to the Siloam Pool (Hebrew, pp. 71*–86*; English summary, pp. 137–138) (Atiqot 101).pdf"
+    },
+    "neaehl5": {
+      "driveId": "18YqCybcpOP-gWPyKVKemTKcB_LK-1lGH",
+      "title": "Stern ed. 1993-2008 – New Encyclopedia of Archaeological Excavations in the Holy Land",
+      "cataloguePath": "03 Surveys, gazetteers and reference/Stern ed. 1993-2008 – New Encyclopedia of Archaeological Excavations in the Holy Land.pdf"
+    },
+    "sion2002": {
+      "driveId": "1hG1MemWj07AYqLYtBVzFhyj_AVP5Z2ki",
+      "title": "Sion 2002 – Regions IV and VI, caves along the Jebel Abu Saraj cliffs (Atiqot 41)",
+      "cataloguePath": "03 Surveys, gazetteers and reference/Atiqot 41 (2002) – Northern Judean Desert caves/Sion 2002 – Regions IV and VI, caves along the Jebel Abu Saraj cliffs (Atiqot 41).pdf"
+    },
+    "swp1880": {
+      "driveId": "1Y85eW04_sZkObCF2K_rUmFPYOP8kMVqt",
+      "title": "Conder and Kitchener 1880 - Map of Western Palestine in 26 Sheets (PEF) - combined 28-page scan",
+      "cataloguePath": "07 Maps and GIS/SWP 1-63360 (1880)/Conder and Kitchener 1880 - Map of Western Palestine in 26 Sheets (PEF) - combined 28-page scan.pdf"
+    },
+    "zertal2008": {
+      "driveId": "1vg0-kQa_nika0QjJSgTILH8P9FzYGpUF",
+      "title": "Zertal 2008 – MHCS II, Eastern Valleys and the Fringes of the Desert",
+      "cataloguePath": "03 Surveys, gazetteers and reference/Zertal – Manasseh Hill Country Survey/Zertal 2008 – MHCS II, Eastern Valleys and the Fringes of the Desert.pdf"
+    }
+  },
+  "planReferences": {
+    "qumran-ilan": [
+      {
+        "sourceId": "aqueducts1989",
+        "locator": "Ilan–Amit 1989, p. 283 Fig. 1; pp. 283–288."
+      }
+    ],
+    "jericho-ac": [
+      {
+        "sourceId": "trumper2018",
+        "locator": "Fig. 19, p. 282, after Netzer 2001a plan 13."
+      }
+    ],
+    "jericho-early": [
+      {
+        "sourceId": "trumper2018",
+        "locator": "Fig. 20, p. 284; figure credit Netzer 2001b."
+      }
+    ],
+    "jericho-late": [
+      {
+        "sourceId": "trumper2018",
+        "locator": "Fig. 22, p. 286; figure credit Netzer 2001b."
+      }
+    ],
+    "siloam-receiver": [
+      {
+        "sourceId": "siloam2020",
+        "locator": "Plan 1, printed p. 74*; retain starred Hebrew pagination."
+      }
+    ],
+    "gerizim-precinct": [
+      {
+        "sourceId": "neaehl5",
+        "locator": "Magen 2008, supplementary vol. 5, p. 1743 site plan; pp. 1745–1747. The catalogued PDF is vol. 5, despite its broader filename."
+      }
+    ],
+    "doq-waterworks": [
+      {
+        "sourceId": "aqueducts1989",
+        "locator": "Amit 1989, pp. 223–224, Fig. 2 p. 224."
+      }
+    ],
+    "hyrcania-waterworks": [
+      {
+        "sourceId": "aqueducts1989",
+        "locator": "Patrich 1989, p. 255 and Fig. 22 p. 256; Figs. 26–27 p. 258."
+      }
+    ],
+    "abu-saraj-iv17": [
+      {
+        "sourceId": "sion2002",
+        "locator": "Regions IV and VI, pp. 61–64; IV/17, Plan 5 p. 63."
+      }
+    ],
+    "gerizim-swp-context": [
+      {
+        "sourceId": "swp1880",
+        "locator": "Sheet XI; PDF page 11 of the combined scan; title and legend, PDF pp. 27–28."
+      }
+    ]
+  },
+  "placeReferences": {
+    "buqeia": [
+      {
+        "sourceId": "swp1880",
+        "locator": "Sheet XVIII (1880); see the existing map-anchor georeferencing record."
+      }
+    ],
+    "nuweimeh": [
+      {
+        "sourceId": "swp1880",
+        "locator": "Sheet XVIII (1880); see the existing map-anchor georeferencing record."
+      }
+    ],
+    "ain_duk": [
+      {
+        "sourceId": "swp1880",
+        "locator": "Sheet XVIII (1880); see the existing map-anchor georeferencing record."
+      }
+    ],
+    "tell_el_qos": [
+      {
+        "sourceId": "swp1880",
+        "locator": "Sheet XVIII (1880); see the existing map-anchor georeferencing record."
+      }
+    ],
+    "kuteif": [
+      {
+        "sourceId": "swp1880",
+        "locator": "Sheet XVIII (1880); see the existing map-anchor georeferencing record."
+      }
+    ],
+    "asla": [
+      {
+        "sourceId": "swp1880",
+        "locator": "Sheet XVIII (1880); see the existing map-anchor georeferencing record."
+      }
+    ],
+    "kh_salhab": [
+      {
+        "sourceId": "zertal2008",
+        "locator": "Site 23; Israel grid 1853/1957. Coordinate conversion is documented in the map-anchor record."
+      }
+    ]
+  },
+  "missingPlanReferences": {
+    "qumran-reeder": "The Reeder–Jol 2006 source for this plan has not been located in the indexed Drive library. Its existing evidence record remains the reference."
+  },
+  "collections": [
+    {
+      "title": "Historical maps and GIS",
+      "url": "https://drive.google.com/drive/folders/1XBkgWD7bCgdhd_NHu7-yWYoWZsaHfl9e"
+    },
+    {
+      "title": "Photographs and aerial imagery",
+      "url": "https://drive.google.com/drive/folders/1Pr1z9-Z32FmNYsPysizdSOABVG83Ymh5"
+    }
+  ]
+}

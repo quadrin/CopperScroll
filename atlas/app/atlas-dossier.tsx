@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import LibraryReferences from "./atlas-library-references";
+import { plansForPlace } from "./atlas-explorer-model";
 import { BookOpen, Camera, ExternalLink, FileImage, Layers, MapPin } from "lucide-react";
 import type { Entry, Place } from "./atlas-types";
 import { dossierSources, placeDossiers, type PlaceDossier } from "./atlas-dossiers-data";
@@ -63,7 +65,7 @@ function DossierBody({ entry, place, onEntry, onLandscape, onRead }: AtlasDossie
     {(baseDossier?.comparisonIds?.length || comparison) && <div className="ds-comparison-switch" aria-label="Alternative locality dossiers"><span>Compare locality</span><button aria-pressed={!comparison} onClick={() => setComparisonId(null)}>{baseDossier?.name ?? place?.shortName}</button>{baseDossier?.comparisonIds?.map(id => <button key={id} aria-pressed={comparisonId === id} onClick={() => setComparisonId(id)}>{placeDossiers.find(item => item.id === id)?.name}</button>)}</div>}
     <nav className="ds-tabs" aria-label="Dossier sections">{tabs.map(item => <button key={item.id} aria-current={tab === item.id ? "page" : undefined} onClick={() => setTab(item.id)}>{item.label}</button>)}</nav>
     {tab === "place" && <div className="ds-place-body">
-      <section className="ds-introduction"><p>{dossier?.summary ?? place?.note ?? entry.evidence}</p>{scene && <figure className="ds-context-photo"><div><img src={scene.src} alt={scene.alt} loading="lazy" /><span><Camera size={13} aria-hidden="true" />Modern landscape context</span></div><figcaption>{scene.caption}<span>Photo: <a href={scene.sourceUrl} target="_blank" rel="noreferrer">{scene.author}</a> · <a href={scene.licenseUrl} target="_blank" rel="noreferrer">{scene.license}</a>. Atlas framing crops the source image.</span></figcaption></figure>}</section>
+      <section className="ds-introduction"><p>{dossier?.summary ?? place?.note ?? entry.evidence}</p>{scene && <figure className="ds-context-photo"><div><img src={/^https?:/.test(scene.src)?scene.src:`${assetBase}${scene.src}`} alt={scene.alt} loading="lazy" /><span><Camera size={13} aria-hidden="true" />Modern landscape context</span></div><figcaption>{scene.caption}<span>Photo: <a href={scene.sourceUrl} target="_blank" rel="noreferrer">{scene.author}</a> · <a href={scene.licenseUrl} target="_blank" rel="noreferrer">{scene.license}</a>. Atlas framing crops the source image.</span></figcaption></figure>}</section>
       {dossier ? <>
         <section className="ds-feature-section"><div className="ds-section-title"><h3>Which physical feature?</h3></div><div className="ds-features">{dossier.features.map((feature, index) => <article key={feature.name} className={`ds-feature ds-feature-${feature.kind.toLowerCase().replaceAll(" ", "-")}`}><header><span className="ds-feature-number">{String(index + 1).padStart(2, "0")}</span><div><span className="ds-feature-kind">{feature.kind}</span><h4>{feature.name}</h4></div></header><p>{feature.observation}</p><p className="ds-feature-limit"><strong>Limit:</strong> {feature.limit}</p><ArgumentSources ids={feature.sourceIds} /></article>)}</div></section>
         <section className="ds-phases"><h3>Archaeological and documented phases</h3><ol>{dossier.phases.map(phase => <li key={phase.label}><h4>{phase.label}</h4><p>{phase.detail}</p><ArgumentSources ids={phase.sourceIds} /></li>)}</ol></section>
@@ -72,7 +74,7 @@ function DossierBody({ entry, place, onEntry, onLandscape, onRead }: AtlasDossie
       </> : <section className="ds-generic-place"><h3>Entry {entry.id} · {entry.title}</h3><dl><div><dt>Required feature</dt><dd>{entry.landmark || entry.description}</dd></div><div><dt>Published evidence</dt><dd>{entry.evidence}</dd></div><div><dt>Dating</dt><dd>{entry.period}</dd></div><div><dt>Open issue</dt><dd>{entry.caution}</dd></div></dl><button className="ds-action" onClick={() => setTab("interpretations")}>Inspect the entry’s argument</button></section>}
     </div>}
     {tab === "interpretations" && <Interpretations entry={entry} place={comparison ? null : place} onRead={onRead} />}
-    {tab === "sources" && <><SourceGallery dossier={dossier} /><section className="ds-register-sources"><h3>Entry register references</h3><p>{entry.sources}</p>{place && !comparison && <p><strong>Map-anchor source:</strong> {place.source}</p>}</section></>}
+    {tab === "sources" && <><LibraryReferences planIds={plansForPlace(comparison?dossier?.id??null:place?.id??null).map(plan=>plan.id)} placeId={comparison?dossier?.id:place?.id}/><SourceGallery dossier={dossier} /><section className="ds-register-sources"><h3>Entry register references</h3><p>{entry.sources}</p>{place && !comparison && <p><strong>Map-anchor source:</strong> {place.source}</p>}</section></>}
   </div>;
 }
 

@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — eleven Perlego book reads are in `registration/` (seven from 14 October, four read today: Kowalewska, Cargill, Regev, Allegro 1959). D rises 1→2 for 51/53 at the south wall and 51 at the SE corner, from a stratified Herodian record; no label changes. Entry 1's period now records Early Roman remains in Wadi Nuʿeima. New leads: Ilan–Amit 2002 p. 385 is cited for both an Iron Age and an Archelaus date; Allegro's plates 143–147 photograph the gorge basin and tunnel; Adler 2009 pp. 57–60 lists a miqveh beside a tomb at Ramat Raḥel.
+Last session (16 October 2026 Los Angeles): **obtained** — production Chromium shows the IV/17 source figure, feature descriptions, citations and Hebrew/English passage inside the persistent geographic atlas on desktop and phone. The standalone explorer is removed. Close zoom, detailed site materials and eye-level movement share the map canvas; site switching preserves explicit choices. The GitHub Pages build and browser checks pass. Live publication checks are blocked by proxy 403 responses.
 
 ## Active questions and the observation that decides each
 

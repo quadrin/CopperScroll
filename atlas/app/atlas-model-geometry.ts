@@ -2,50 +2,69 @@ import * as T from "three";
 import { landscapeGround, type LandscapeGround } from "./atlas-model-landscape";
 import { SVGLoader } from "three/addons/loaders/SVGLoader.js";
 import type { SitePlan } from "./atlas-explorer-model";
+import { createSiteMaterials, cloneSiteMaterial, chippedBlock } from './atlas-site-materials';
 
 export type { ModelCamera } from "./atlas-explorer-model";
-export type ModelGeometry = { root: T.Group; markers: Map<string, T.Vector3>; selectable: T.Object3D[]; roof: T.Group; note: string; assumptions: string[]; units: "metres" | "relative"; framing:T.Box3; landscape:{context:string;credit:string;mapped:boolean} };
+export type ModelGeometry = { root: T.Group; markers: Map<string, T.Vector3>; selectable: T.Object3D[]; roof: T.Group; note: string; assumptions: string[]; units: "metres" | "relative"; framing:T.Box3; landscape:{context:string;credit:string;mapped:boolean};walkStart?:{position:[number,number];bearing:number;pitch:number} };
 type Point = [number, number];
 
-function texture() {
- const n=128, data=new Uint8Array(n*n*4);let seed=1457;
- for(let y=0;y<n;y++)for(let x=0;x<n;x++){
-  seed=(seed*1664525+1013904223)>>>0;const noise=(seed/4294967296-.5)*18;
-  const mortar=y%32<2||(x+(Math.floor(y/32)%2)*32)%64<2;
-  const c=(mortar?202:238)+noise,i=(y*n+x)*4;
-  data[i]=c;data[i+1]=c-8;data[i+2]=c-23;data[i+3]=255;
- }
- const tex=new T.DataTexture(data,n,n);tex.wrapS=tex.wrapT=T.RepeatWrapping;tex.colorSpace=T.SRGBColorSpace;tex.needsUpdate=true;return tex;
-}
 function polygon(points:Point[]) {const s=new T.Shape();points.forEach(([x,z],i)=>i?s.lineTo(x,-z):s.moveTo(x,-z));s.closePath();return s;}
 function material(color:string,map?:T.Texture){return new T.MeshStandardMaterial({color,map:map??null,roughness:.94,metalness:0});}
 export function buildModel(plan:SitePlan):ModelGeometry {
  const root=new T.Group(), roof=new T.Group(),markers=new Map<string,T.Vector3>(),selectable:T.Object3D[]=[];
- const stone=material("#ede2cc",texture()),rock=material("#b5a283"),earth=material("#c5b89b"),plaster=material("#b8c9bf"),copper=material("#b56b42");
- const wellHoles:Point[][]=[];let ground:LandscapeGround={w:40,d:40,holes:[],pads:[]};
+ const surfaces=createSiteMaterials(plan.id),{stone,rock,earth,plaster}=surfaces,copper=material("#b56b42");
+ const wellHoles:Point[][]=[],courtFloors:{x:number;z:number;w:number;d:number;mesh:T.Mesh}[]=[];let ground:LandscapeGround={w:40,d:40,holes:[],pads:[]};
  const circlePoints=(x:number,z:number,r:number):Point[]=>Array.from({length:36},(_,i)=>[x+Math.cos(i*Math.PI/18)*r,z+Math.sin(i*Math.PI/18)*r]);
  const assumptions:string[]=[];let note="Plan relations in 3D · heights illustrative",units:ModelGeometry["units"]="relative";
  const tag=(mesh:T.Object3D,id?:string)=>{if(id){mesh.userData.featureId=id;selectable.push(mesh)}return mesh};
- function mesh(geometry:T.BufferGeometry,mat:T.Material,id?:string,parent=root){const m=new T.Mesh(geometry,mat.clone());m.castShadow=true;m.receiveShadow=true;parent.add(tag(m,id));return m;}
- function box(x:number,z:number,w:number,d:number,h:number,y=0,id?:string,mat:T.Material=stone,parent=root){const m=mesh(new T.BoxGeometry(w,h,d),mat,id,parent);m.position.set(x,y+h/2,z);return m;}
- function slab(points:Point[],depth:number,y=0,mat:T.Material=stone,id?:string,parent=root,holes:Point[][]=[]){const s=polygon(points);for(const hole of holes)s.holes.push(polygon(hole));const g=new T.ExtrudeGeometry(s,{depth,bevelEnabled:false,curveSegments:12});g.rotateX(-Math.PI/2);const m=mesh(g,mat,id,parent);m.position.y=y;return m;}
- function tube(points:T.Vector3[],radius:number,mat:T.Material=stone,id?:string,parent=root){const curve=new T.CatmullRomCurve3(points,false,"centripetal");return mesh(new T.TubeGeometry(curve,Math.max(16,points.length*6),radius,8,false),mat,id,parent);}
+ function mesh(geometry:T.BufferGeometry,mat:T.Material,id?:string,parent=root){const m=new T.Mesh(geometry,cloneSiteMaterial(mat));m.castShadow=mat!==earth;m.receiveShadow=true;parent.add(tag(m,id));return m;}
+ function box(x:number,z:number,w:number,d:number,h:number,y=0,id?:string,mat:T.Material=stone,parent=root){const m=mesh(chippedBlock(w,h,d),mat,id,parent);m.position.set(x,y+h/2,z);return m;}
+ function slab(points:Point[],depth:number,y=0,mat:T.Material=stone,id?:string,parent=root,holes:Point[][]=[]){const s=polygon(points);for(const hole of holes)s.holes.push(polygon(hole));const g=new T.ExtrudeGeometry(s,{depth,bevelEnabled:false,curveSegments:12});g.rotateX(-Math.PI/2);const m=mesh(g,mat,id,parent);m.position.y=y;m.userData.walkSurface=true;return m;}
+ function trough(points:T.Vector3[],width:number,id?:string,lining:T.Material=plaster){for(let i=1;i<points.length;i++){
+  const a=points[i-1],b=points[i],length=Math.hypot(b.x-a.x,b.z-a.z);if(length<.01)continue;
+  const yaw=-Math.atan2(b.z-a.z,b.x-a.x),g=new T.Group();g.position.copy(a.clone().add(b).multiplyScalar(.5));g.rotation.y=yaw;root.add(g);
+  box(0,0,length,width,.09,0,id,lining,g);
+  for(const side of [-1,1]){const count=Math.ceil(length/.65),blocks=new T.InstancedMesh(chippedBlock(1,1,1,23),cloneSiteMaterial(surfaces.block),count),o=new T.Object3D();
+   for(let k=0;k<count;k++){o.position.set(-length/2+(k+.5)*length/count,.23,side*(width/2+.065));o.scale.set(length/count-.015,.38,.14);o.rotation.set(0,0,Math.sin(k*7)*.009);o.updateMatrix();blocks.setMatrixAt(k,o.matrix);}blocks.castShadow=blocks.receiveShadow=true;g.add(tag(blocks,id));}
+ }}
+ function coveredPassage(points:T.Vector3[],id?:string){for(let i=1;i<points.length;i++){
+  const a=points[i-1],b=points[i],length=Math.hypot(b.x-a.x,b.z-a.z);if(length<.01)continue;
+  const g=new T.Group();g.position.copy(a.clone().add(b).multiplyScalar(.5));g.rotation.y=-Math.atan2(b.z-a.z,b.x-a.x);root.add(g);
+  box(0,0,length+.02,.95,.09,0,id,plaster,g);
+  for(const side of [-1,1])box(0,side*.64,length+.02,.34,1.35,0,id,rock,g);
+  box(0,0,length+.12,1.66,.38,1.35,id,rock,g);
+ }}
  function walls(points:Point[],height:number,thickness:number,y=0,id?:string,closed=true,mat:T.Material=stone){
   for(let i=0;i<points.length-(closed?0:1);i++){
    const a=points[i],b=points[(i+1)%points.length],length=Math.hypot(b[0]-a[0],b[1]-a[1]);
-   const m=box((a[0]+b[0])/2,(a[1]+b[1])/2,length,thickness,height,y,id,mat);m.rotation.y=-Math.atan2(b[1]-a[1],b[0]-a[0]);
-   // Horizontal courses make the volumes legible at a distance; no masonry survey is implied.
-   for(let k=1;mat===stone&&k<Math.min(5,height/.45);k++){const seam=box((a[0]+b[0])/2,(a[1]+b[1])/2,length+.01,thickness+.014,.024,y+height*k/Math.ceil(Math.min(5,height/.45)),id,rock);seam.rotation.y=m.rotation.y;}
+   const yaw=-Math.atan2(b[1]-a[1],b[0]-a[0]);
+   if(mat===stone&&length>.8){
+    const rows=Math.max(1,Math.ceil(height/surfaces.style.courses)),columns=Math.max(1,Math.ceil(length/(surfaces.style.id==='gerizim'?1.05:.68))),h=height/rows;
+    const blocks=new T.InstancedMesh(chippedBlock(1,1,1,17),cloneSiteMaterial(surfaces.block),rows*(columns+1)),o=new T.Object3D();let index=0;
+    for(let row=0;row<rows;row++)for(let col=0;col<=columns;col++){
+     const step=length/columns,offset=(row%2)*step*.5,left=Math.max(0,col*step-offset),right=Math.min(length,(col+1)*step-offset);if(right-left<.025)continue;
+     const t=(left+right)/(2*length),tone=.81+((col*11+row*7)%23)/80;
+     o.position.set(a[0]+(b[0]-a[0])*t,y+(row+.5)*h,a[1]+(b[1]-a[1])*t);o.rotation.set(0,yaw,Math.sin(col*13+row*7)*.004);o.scale.set(right-left-.014,h-.012,thickness);o.updateMatrix();blocks.setMatrixAt(index,o.matrix);blocks.setColorAt(index++,new T.Color().setScalar(tone));
+    }blocks.count=index;blocks.castShadow=blocks.receiveShadow=true;root.add(tag(blocks,id));
+   }else {const m=box((a[0]+b[0])/2,(a[1]+b[1])/2,length,thickness,height,y,id,mat);m.rotation.y=yaw;}
+   // Individually chipped coping stones give the ruin a broken silhouette.
+   // Their positions and wear are surface art, not a stone-by-stone survey.
+   if(mat===stone&&length>.8){const count=Math.ceil(length/.72),caps=new T.InstancedMesh(chippedBlock(1,.20,1),cloneSiteMaterial(surfaces.block),count),o=new T.Object3D();caps.castShadow=caps.receiveShadow=true;
+    for(let k=0;k<count;k++){const t=(k+.5)/count,w=length/count-.025;o.position.set(a[0]+(b[0]-a[0])*t,y+height-.04+Math.sin(k*7.1)*.035,a[1]+(b[1]-a[1])*t);o.rotation.y=yaw;o.scale.set(w,1,thickness+.04);o.updateMatrix();caps.setMatrixAt(k,o.matrix);caps.setColorAt(k,new T.Color().setScalar(.82+((k*13)%17)/65));}root.add(tag(caps,id));}
   }
  }
- function court(x:number,z:number,w:number,d:number,h:number,id?:string,holes:Point[][]=[]){const p:Point[]=[[x-w/2,z-d/2],[x+w/2,z-d/2],[x+w/2,z+d/2],[x-w/2,z+d/2]];slab(p,.25,0,earth,id,root,holes);walls(p,h,Math.max(.28,w*.025),0,id);}
+ function court(x:number,z:number,w:number,d:number,h:number,id?:string,holes:Point[][]=[]){const p:Point[]=[[x-w/2,z-d/2],[x+w/2,z-d/2],[x+w/2,z+d/2],[x-w/2,z+d/2]];
+  // Nested rooms share their courtyard floor. Coplanar duplicate floors flicker
+  // and cast false shadows when the camera reaches eye level.
+  if(!courtFloors.some(f=>Math.abs(f.mesh.position.y)<.001&&Math.abs(x-f.x)+w/2<=f.w/2&&Math.abs(z-f.z)+d/2<=f.d/2))courtFloors.push({x,z,w,d,mesh:slab(p,.25,0,earth,id,root,holes)});
+  walls(p,h,Math.max(.28,w*.025),0,id);}
  function basin(points:Point[],depth:number,id:string){
   slab(points,.3,-depth-.3,plaster,id);walls(points,depth,.35,-depth,id);
-  points.forEach((a,i)=>{const b=points[(i+1)%points.length];tube([new T.Vector3(a[0],.035,a[1]),new T.Vector3(b[0],.035,b[1])],.10,stone,id)});
+  points.forEach((a,i)=>{const b=points[(i+1)%points.length],cap=box((a[0]+b[0])/2,(a[1]+b[1])/2,Math.hypot(b[0]-a[0],b[1]-a[1]),.39,.12,.015,id,surfaces.block);cap.rotation.y=-Math.atan2(b[1]-a[1],b[0]-a[0]);});
  }
  function shaft(x:number,z:number,r:number,depth:number,id:string){
   wellHoles.push(circlePoints(x,z,r+.02));
-  const g=new T.CylinderGeometry(r,r*.78,depth,32,1,true);const m=mesh(g,stone,id);m.position.set(x,-depth/2,z);m.material=(stone.clone());(m.material as T.MeshStandardMaterial).side=T.DoubleSide;
+  const g=new T.CylinderGeometry(r,r*.78,depth,32,1,true);const m=mesh(g,stone,id);m.position.set(x,-depth/2,z);(m.material as T.MeshStandardMaterial).side=T.DoubleSide;
   const rim=mesh(new T.TorusGeometry(r,.17,6,48),stone,id);rim.rotation.x=Math.PI/2;rim.position.set(x,.12,z);
   const floor=mesh(new T.CircleGeometry(r*.8,32),plaster,id);floor.rotation.x=-Math.PI/2;floor.position.set(x,-depth+.02,z);
  }
@@ -73,7 +92,7 @@ export function buildModel(plan:SitePlan):ModelGeometry {
   slab([[-23,-30],[4,-30],[4,11],[-23,11]],.8,-5.8,rock,undefined,root,[n,s]);
   const bridge=box(-9,17,32,2.4,3.1,-3.2,"bridge");bridge.rotation.y=.35;
   for(let i=0;i<8;i++)box(-24+i*4,17,1,2.5,2.6,-3.2,"bridge",rock);
-  tube([new T.Vector3(-30,.2,4),new T.Vector3(-14,.2,18),new T.Vector3(4,.2,24)],.26,stone,"bridge");marker("bridge",-9,17,1);
+  trough([new T.Vector3(-30,.2,4),new T.Vector3(-14,.2,18),new T.Vector3(4,.2,24)],.52,"bridge");marker("bridge",-9,17,1);
   basin([[-27,20],[-15,20],[-15,31],[-27,31]],1.8,"separate-pool");marker("separate-pool",-21,25,.6);
   court(20,12,28,37,2.1);court(20,12,11,15,1.9);box(32,-3,6,7,3.2);
   for(const [x,z] of [[16,35],[24,38],[39,4],[42,-7]])shaft(x,z,2,3,"cisterns");marker("cisterns",20,36,.7);
@@ -101,10 +120,10 @@ export function buildModel(plan:SitePlan):ModelGeometry {
   note="Aqueduct, cisterns and ridge · source-relative model";
   const conv=([x,z]:Point):Point=>[(x-270)*.09,(z-300)*.09];
   const pts:Point[]=[[347,222],[311,248],[285,262],[317,277],[323,323],[327,380],[351,431],[302,452],[228,438]];
-  tube(pts.map(p=>{const [x,z]=conv(p);return new T.Vector3(x,.65,z)}),.32,stone,"intake");
+  trough(pts.map(p=>{const [x,z]=conv(p);return new T.Vector3(x,.35,z)}),.64,"intake");
   for(const p of [[145,357],[155,365],[168,373],[178,381],[191,388],[202,398],[215,408],[246,421],[289,424],[306,375]] as Point[]){const [x,z]=conv(p);shaft(x,z,1.15,3.2,"cisterns");}
   court(-2,6,8,4,1.1);box(-2,6,2,1.6,.4,0,undefined,rock);
-  tube([[119,285],[195,264],[266,279]].map(p=>{const [x,z]=conv(p as Point);return new T.Vector3(x,.2,z)}),.6,rock,"ditch");
+  trough([[119,285],[195,264],[266,279]].map(p=>{const [x,z]=conv(p as Point);return new T.Vector3(x,-.04,z)}),1.2,"ditch",rock);
   for(const f of plan.features){const [x,z]=conv([f.x,f.y]);marker(f.id,x,z,1.5)}
   plinth(39,38,3.8);
   assumptions.push("The aqueduct and ten cistern positions follow selected relationships in Amit Fig. 2. The frame is normalized for display, without geographic registration.","Cistern diameters/depths, channel cross-section, defensive wall heights and ridge relief are illustrative. The source does not identify a guard-post or drying-room corner.");
@@ -126,18 +145,24 @@ export function buildModel(plan:SitePlan):ModelGeometry {
    for(const path of parsed.paths)for(const sub of path.subPaths){const pts=sub.getPoints(36).map(p=>conv(p.x,p.y));if(pts.length<2)continue;
     if(piece.kind==="basin"){basinHoles.push(pts);slab(pts,.2,-1.1,plaster,id);walls(pts,1.1,.25,-1.1,id);}
     else if(piece.kind==="wall"||piece.kind==="rock"){walls(pts,piece.kind==="rock"?2.8:1.7,.55,0,id,sub.autoClose);}
-    else tube(pts.map(([x,z])=>new T.Vector3(x,piece.kind==="tunnel"?.55:.18,z)),piece.kind==="tunnel"?.6:.2,piece.kind==="reconstruction"?copper:stone,id);
+    else if(piece.kind==='tunnel')coveredPassage(pts.map(([x,z])=>new T.Vector3(x,.12,z)),id);
+    else trough(pts.map(([x,z])=>new T.Vector3(x,.12,z)),.4,id,piece.kind==='reconstruction'?copper:plaster);
    }
   }
   for(const f of plan.features){const [x,z]=conv(f.x,f.y);marker(f.id,x,z,1.2);}
   if(!pieces?.length)for(const f of plan.features){const [x,z]=conv(f.x,f.y);court(x,z,5,4,1.7,f.id);}
   plinth(40*plan.width/Math.max(plan.width,plan.height)+7,40*plan.height/Math.max(plan.width,plan.height)+7,2,basinHoles);
   assumptions.push("Selected source-plan outlines and feature envelopes are normalized into a relative scene. They are not new measured footprints.","Wall heights, pool depths, terrain/platform relief and conduit cross-sections are illustrative. Source phasing, restorations and feature interpretations remain those of the accompanying record.");
+  if(pieces?.some(piece=>piece.kind==='reconstruction'))assumptions.push('Copper-coloured channel lining marks the proposed course shown in the source. Its display does not establish surviving masonry. Covered passages have illustrative rectangular sections; the source plan does not measure their roof form.');
  }
  roof.visible=false;
  const bounds=new T.Box3().setFromObject(root);bounds.expandByPoint(new T.Vector3(-ground.w/2,-1,-ground.d/2));bounds.expandByPoint(new T.Vector3(ground.w/2,1,ground.d/2));const center=bounds.getCenter(new T.Vector3());
  root.position.set(-center.x,0,-center.z);markers.forEach(p=>{p.x-=center.x;p.z-=center.z});
- const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z]);context.mesh.position.set(center.x,0,center.z);root.add(context.mesh);
+ const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;root.add(context.mesh);context.details.position.set(center.x,0,center.z);root.add(context.details);
+ assumptions.push(`Surface art uses a ${surfaces.style.id} material palette, metre-scaled stone joints, chipped edges, plaster wear and soil relief. These are illustrative visual treatments, not recorded individual stones or weathering.`);
  assumptions.push(context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");
- return {root,roof,markers,selectable,note,assumptions,units,framing:bounds.translate(new T.Vector3(-center.x,0,-center.z)),landscape:{context:context.context,credit:context.credit,mapped:!!context.patch}};
+ const starts:Record<string,[string,number,number,number,number]>={'gerizim-precinct':['east-stair',28,22,308,100],'hyrcania-waterworks':['north-pool',0,-12,180,76],'jericho-early':['complex',0,6,0,76],'jericho-late':['complex',0,12,0,76],'siloam-receiver':['L103',0,6,0,80],'doq-waterworks':['intake',4,5,-35,83],'jericho-ac':['AC94',0,7,0,80]};
+ const start=starts[plan.id],point=start?markers.get(start[0]):undefined;
+ const walkStart=point&&start?{position:[point.x+start[1],point.z+start[2]] as Point,bearing:start[3],pitch:start[4]}:undefined;
+ return {root,roof,markers,selectable,note,assumptions,units,walkStart,framing:bounds.translate(new T.Vector3(-center.x,0,-center.z)),landscape:{context:context.context,credit:context.credit,mapped:!!context.patch}};
 }

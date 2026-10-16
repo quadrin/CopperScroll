@@ -10,6 +10,18 @@ export function candidateBounds(place: Place): [[number, number], [number, numbe
   const dy = radius / 111320, dx = dy / Math.cos(place.lat * Math.PI / 180);
   return [[place.lon - dx, place.lat - dy], [place.lon + dx, place.lat + dy]];
 }
+// Include the full gazetteer, including the northern sites outside the Jericho view.
+export function allSiteBounds(places: Place[]): [[number, number], [number, number]] | null {
+  const bounds = places.flatMap(place => {
+    const area = candidateBounds(place);
+    return area ? [area] : [];
+  });
+  if (!bounds.length) return null;
+  return [
+    [Math.min(...bounds.map(b => b[0][0])), Math.min(...bounds.map(b => b[0][1]))],
+    [Math.max(...bounds.map(b => b[1][0])), Math.max(...bounds.map(b => b[1][1]))],
+  ];
+}
 // The gazetteer supplies anchors and precision estimates, not surveyed site outlines.
 export function candidateAreas(entry: Entry, places: Place[], focusId: string | null) {
   return { type: "FeatureCollection" as const, features: entry.candidates.flatMap(candidate => {

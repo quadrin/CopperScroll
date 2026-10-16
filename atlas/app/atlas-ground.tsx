@@ -13,6 +13,7 @@ const clamp=(n:number,low:number,high:number)=>Math.min(high,Math.max(low,n));
 
 export default function GroundView({place,entry,places,onPlace}:Props){
   const scene=scenes.find(s=>s.placeId===place?.id);
+  const base=import.meta.env?.BASE_URL??"/";
   const viewport=useRef<HTMLDivElement>(null);
   const [size,setSize]=useState({width:600,height:350});
   const [zoom,setZoom]=useState(1);
@@ -52,7 +53,7 @@ export default function GroundView({place,entry,places,onPlace}:Props){
         onKeyDown={event=>{const moves:Record<string,[number,number]>={ArrowLeft:[60,0],ArrowRight:[-60,0],ArrowUp:[0,60],ArrowDown:[0,-60]};if(moves[event.key]){event.preventDefault();setOffset({x:clamp(panX+moves[event.key][0],-maxX,maxX),y:clamp(panY+moves[event.key][1],-maxY,maxY)})}else if(event.key==="+"||event.key==="="){event.preventDefault();changeZoom(zoom*1.25)}else if(event.key==="-"){event.preventDefault();changeZoom(zoom/1.25)}}}
         onWheel={event=>{changeZoom(zoom*(event.deltaY<0?1.08:.92))}}>
         <div className="photo-sheet" style={{width:imageWidth,height:imageHeight,left:(size.width-imageWidth)/2+panX,top:(size.height-imageHeight)/2+panY}}>
-          <img src={scene.src} alt={scene.alt} draggable={false} onLoad={()=>setImageState("ready")} onError={()=>setImageState("error")}/>
+          <img src={/^https?:/.test(scene.src)?scene.src:`${base}${scene.src}`} alt={scene.alt} draggable={false} onLoad={()=>setImageState("ready")} onError={()=>setImageState("error")}/>
           {showHighlights&&imageState==="ready"&&<><svg className="photo-regions" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">{scene.highlights.map(h=><polygon key={h.id} points={h.points} className={active===h.id?"active":""} vectorEffect="non-scaling-stroke"/>)}</svg>{scene.highlights.map((h,index)=><button className={`photo-hotspot ${active===h.id?"active":""}`} key={h.id} style={{left:`${h.x}%`,top:`${h.y}%`}} onClick={()=>selectFeature(h)} aria-label={h.label} aria-pressed={active===h.id}><span>{index+1}</span><strong>{h.label}</strong></button>)}</>}
         </div>
         <div className="photo-view-label"><Camera size={13}/>Photographic view · limited field of view</div>

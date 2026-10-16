@@ -1,5 +1,6 @@
 import * as T from "three";
-import { MercatorCoordinate, type Map, type CustomLayerInterface } from "maplibre-gl";
+import { MercatorCoordinate } from "maplibre-gl";
+import { createSiteMaterials, chippedBlock } from "./atlas-site-materials";
 
 // Display alignment only. Neither this anchor nor page-up orientation is a surveyed fit.
 export const PILOT_ANCHOR = [35.45056,31.74111] as [number,number];
@@ -25,55 +26,70 @@ const local=([x,z]:number[])=>new T.Vector3((x-381)*.2,0,(z-1240)*.2);
 function random(seed:number){let n=seed>>>0;return ()=>{n=(n*1664525+1013904223)>>>0;return n/4294967296;};}
 
 export function buildQumranPilot(){
- const root=new T.Group(),rand=random(979);
- const stone=new T.MeshStandardMaterial({color:"#c9b797",roughness:1,vertexColors:true});
- const plaster=new T.MeshStandardMaterial({color:"#c7bfa5",roughness:1});
- const dark=new T.MeshStandardMaterial({color:"#514b3f",roughness:1,side:T.DoubleSide});
- const dirt=new T.MeshStandardMaterial({color:"#b6a383",roughness:1,vertexColors:true});
- // Weathering is deterministic rendering detail, never a record of individual stones.
- function weather(g:T.BufferGeometry,base:T.Color,amount=.12){const p=g.getAttribute("position"),c=[];
-  for(let i=0;i<p.count;i++){const x=p.getX(i),y=p.getY(i),z=p.getZ(i);const n=Math.sin(x*7.3+y*13.7+z*9.1)*Math.sin(z*16.1+x*3.7);const band=Math.sin(y*15+Math.sin(x*.7)*.5);const b=1+amount*n+band*.035;c.push(base.r*b,base.g*b,base.b*b);}
-  g.setAttribute("color",new T.Float32BufferAttribute(c,3));return g;}
- function mesh(g:T.BufferGeometry,m:T.Material){const o=new T.Mesh(g,m);root.add(o);return o;}
- function block(x:number,y:number,z:number,w:number,h:number,d:number,m:T.Material){const g=new T.BoxGeometry(w,h,d,2,2,2);if(m===stone)weather(g,new T.Color("#ffffff"));const o=mesh(g,m);o.position.set(x,y+h/2,z);return o;}
- // A raised, source-relative rock outcrop keeps the open channel visible above contextual DEM.
+ const root=new T.Group(),rand=random(979),surfaces=createSiteMaterials('qumran-ilan');
+ const {block:stone,plaster,rock}=surfaces;
+ const dirt=surfaces.earth;
+ const dark=new T.MeshStandardMaterial({color:'#191913',roughness:1,side:T.DoubleSide});
+ const blockGeometry=chippedBlock(1,1,1,19);
+ function mesh(g:T.BufferGeometry,m:T.Material){const o=new T.Mesh(g,m);o.castShadow=o.receiveShadow=true;root.add(o);return o;}
+ function block(x:number,y:number,z:number,w:number,h:number,d:number,m:T.Material){const o=mesh(blockGeometry,m);o.scale.set(w,h,d);o.position.set(x,y+h/2,z);o.userData.siteBlock=true;return o;}
+ // Display relief only. The source-plan channel route below is preserved.
  const height=(x:number,z:number)=>.3+Math.max(0,1-Math.abs(z-2)/23)*1.7+.35*Math.sin(x*.13)*Math.cos(z*.21);
- const ground=new T.PlaneGeometry(128,78,128,78);ground.rotateX(-Math.PI/2);
- const gp=ground.getAttribute("position");for(let i=0;i<gp.count;i++){const x=gp.getX(i),z=gp.getZ(i),edge=Math.min((64-Math.abs(x))/10,(39-Math.abs(z))/10,1);gp.setY(i,Math.max(0,edge)*height(x,z));}ground.computeVertexNormals();mesh(weather(ground,new T.Color("#ffffff")),dirt);
- // Layered limestone bank. Interior mouth is left open at the long-tunnel position.
- const rocks=new T.InstancedMesh(weather(new T.IcosahedronGeometry(1,1),new T.Color("#ffffff")),stone,1250);
- const transform=new T.Object3D(),tint=new T.Color();
- for(let i=0;i<1250;i++){const x=(rand()-.5)*116,z=-10-rand()*14,y=height(x,z)+rand()*7.5;
-  transform.position.set(x,y,z);transform.rotation.set(rand()*.5,rand()*6.28,rand()*.4);transform.scale.set(.5+rand()*2.5,.25+rand()*.65,.45+rand()*1.4);transform.updateMatrix();rocks.setMatrixAt(i,transform.matrix);tint.setRGB(.82+rand()*.15,.81+rand()*.14,.76+rand()*.13);rocks.setColorAt(i,tint);}
- root.add(rocks);
- const rubble=new T.InstancedMesh(weather(new T.DodecahedronGeometry(1,0),new T.Color("#ffffff")),stone,850);
- for(let i=0;i<850;i++){const x=(rand()-.5)*119,z=(rand()-.5)*70;transform.position.set(x,height(x,z)+.04,z);transform.rotation.set(rand()*3,rand()*6,rand()*3);const s=.025+rand()*.21;transform.scale.set(s*1.7,s,s);transform.updateMatrix();rubble.setMatrixAt(i,transform.matrix);}root.add(rubble);
- function channel(points:number[][]){for(let i=1;i<points.length;i++){const a=local(points[i-1]),b=local(points[i]),length=a.distanceTo(b),yaw=-Math.atan2(b.z-a.z,b.x-a.x),group=new T.Group();group.position.set((a.x+b.x)/2,height((a.x+b.x)/2,(a.z+b.z)/2)+.15,(a.z+b.z)/2);group.rotation.y=yaw;root.add(group);
-   const floor=block(0,0,0,length,.12,.65,plaster);root.remove(floor);group.add(floor);floor.position.set(0,.06,0);
-   for(const side of [-1,1]){const count=Math.ceil(length/.55);for(let k=0;k<count;k++){const x=-length/2+(k+.5)*length/count;const o=block(0,0,0,length/count-.025,.38+rand()*.14,.24,stone);root.remove(o);group.add(o);o.position.set(x,.18,side*.43);o.rotation.y=(rand()-.5)*.06;}}
-  }}channel(route);channel(branch);
- // Photo-referenced mouth form, with an actual dark interior and irregular stone surround.
+ const ground=new T.PlaneGeometry(180,140,180,140);ground.rotateX(-Math.PI/2);
+ const gp=ground.getAttribute('position');for(let i=0;i<gp.count;i++){const x=gp.getX(i),z=gp.getZ(i),edge=Math.min((90-Math.abs(x))/15,(70-Math.abs(z))/15,1);gp.setY(i,Math.max(0,edge)*height(x,z));}ground.computeVertexNormals();mesh(ground,dirt).userData.walkSurface=true;
  const mouth=local([401,1268]),my=height(mouth.x,mouth.z)+.2;
- const shell=new T.CylinderGeometry(1.15,1.2,5.8,24,1,true,0,Math.PI);shell.rotateZ(Math.PI/2);shell.rotateY(Math.PI/2);
- const cover=mesh(weather(shell,new T.Color("#ffffff")),stone);cover.position.set(mouth.x,my+.3,mouth.z-1.8);cover.material=stone.clone();(cover.material as T.Material).side=T.DoubleSide;
- const recess=mesh(new T.PlaneGeometry(1.6,1.45),dark);recess.position.set(mouth.x,my+.7,mouth.z-2.2);
- for(let i=0;i<11;i++){const angle=i*Math.PI/10;const b=block(mouth.x+Math.cos(angle)*1.1,my+Math.sin(angle)*1.1,mouth.z,.4,.3,.65,stone);b.rotation.z=angle-.5*Math.PI;}
- block(mouth.x,my-.05,mouth.z-1,.9,.12,2.4,plaster);
+ // Connected beds of fractured limestone, rather than a cloud of smooth rocks.
+ // The projecting spur and every bed/joint here are illustrative scenery.
+ const front=(x:number)=>-9+14*Math.exp(-(((x-mouth.x)/7)**2))+1.1*Math.sin(x*.23);
+ for(let row=0;row<11;row++){
+  const positions:number[]=[],uv:number[]=[];const base=row*.72;
+  function vertex(x:number,y:number,z:number){positions.push(x,y,z);uv.push(x/5,y/5);}
+  function tri(a:number[],b:number[],c:number[]){vertex(a[0],a[1],a[2]);vertex(b[0],b[1],b[2]);vertex(c[0],c[1],c[2]);}
+  function quad(a:number[],b:number[],c:number[],d:number[]){tri(a,b,d);tri(b,c,d);}
+  for(let i=0;i<120;i++){
+   const x=-60+i,x2=x+1;
+   // A real opening in the display mesh leaves the tunnel recess visible.
+   if(row<2&&Math.abs(x+.5-mouth.x)<1.1)continue;
+   const edge=(t:number)=>front(t)-row*.62+.20*Math.sin(t*2.7+row*1.3)+.12*Math.cos(t*5.3+row);
+   const y=(t:number)=>height(t,front(t))+base-.35+.06*Math.sin(t*.8+row*.9);
+   const a=[x,y(x),edge(x)],b=[x2,y(x2),edge(x2)],c=[x2,y(x2)+.90,edge(x2)-.12],d=[x,y(x)+.90,edge(x)-.12];
+   quad(a,b,c,d);quad(d,c,[x2,c[1]-.03,-31],[x,d[1]-.03,-31]);
+   // Darker undersides between strata create coherent, grounded ledges.
+   quad(a,[x,a[1],-31],[x2,b[1],-31],b);
+  }
+  const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(positions,3));g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));g.computeVertexNormals();
+  const face=mesh(g,rock);face.name='connected-limestone-bed';face.userData.stratum=row;
+ }
+ // Angular scree sits on the ground, with a few large fallen slabs at the bank.
+ const rubble=new T.InstancedMesh(chippedBlock(1,.65,1,41),stone,1350),o=new T.Object3D();
+ for(let i=0;i<1350;i++){
+  const x=(rand()-.5)*145,z=(rand()-.5)*105,s=i<160?.25+rand()*.7:.035+rand()*.2;
+  o.position.set(x,height(x,z)+s*.2,z);o.rotation.set((rand()-.5)*.5,rand()*6.28,(rand()-.5)*.4);o.scale.set(s*(1+rand()),s,s*(.6+rand()));o.updateMatrix();rubble.setMatrixAt(i,o.matrix);rubble.setColorAt(i,new T.Color().setScalar(.72+rand()*.4));
+ }rubble.castShadow=rubble.receiveShadow=true;root.add(rubble);
+ function channel(points:number[][]){for(let i=1;i<points.length;i++){
+  const a=local(points[i-1]),b=local(points[i]),length=a.distanceTo(b),yaw=-Math.atan2(b.z-a.z,b.x-a.x),group=new T.Group();group.position.set((a.x+b.x)/2,height((a.x+b.x)/2,(a.z+b.z)/2)+.15,(a.z+b.z)/2);group.rotation.y=yaw;root.add(group);
+  const floor=block(0,0,0,length,.12,.65,plaster);root.remove(floor);group.add(floor);floor.position.set(0,.06,0);
+  for(const side of [-1,1]){const count=Math.ceil(length/.55);for(let k=0;k<count;k++){
+   const x=-length/2+(k+.5)*length/count,h=.38+rand()*.14;
+   const b=block(0,0,0,length/count-.025,h,.24,stone);root.remove(b);group.add(b);b.position.set(x,.18,side*.43);b.rotation.y=(rand()-.5)*.06;
+   // Pale lining and small missing patches distinguish the water face.
+   if(k%4!==0){const lining=block(0,0,0,length/count-.06,h*.62,.018,plaster);root.remove(lining);group.add(lining);lining.position.set(x,.19,side*.303);}
+  }}
+ }}channel(route);channel(branch);
+ // A shaded, angular opening with worn jambs and a fractured lintel. Shape and
+ // dimensions are interpretive, informed by the archived outlet photograph.
+ for(const side of [-1,1]){
+  block(mouth.x+side*.91,my-.08,mouth.z-1,.47,1.25,3.1,stone);
+  block(mouth.x+side*1.34,my-.15,mouth.z-.35,.65,1.5,1.4,rock);
+ }
+ const lintel=block(mouth.x,my+1.16,mouth.z-.2,2.5,.42,1.4,rock);lintel.rotation.z=-.08;
+ block(mouth.x,my+1.3,mouth.z-2,2.1,.55,3.1,rock);
+ const recess=mesh(new T.PlaneGeometry(1.45,1.3),dark);recess.position.set(mouth.x,my+.58,mouth.z-2.6);recess.castShadow=false;
+ block(mouth.x,my-.05,mouth.z-1,.9,.12,3,plaster);
+ // Batch hundreds of channel stones by material. Detail remains in geometry
+ // while phone GPUs submit only a handful of draws for the masonry.
+ root.updateMatrixWorld(true);const batches=new Map<T.Material,T.Mesh[]>();
+ root.traverse(o=>{if(o instanceof T.Mesh&&o.userData.siteBlock){const material=o.material as T.Material;const batch=batches.get(material)??[];batch.push(o);batches.set(material,batch);}});
+ for(const [material,blocks] of batches){const batch=new T.InstancedMesh(blockGeometry,material,blocks.length);batch.castShadow=batch.receiveShadow=true;blocks.forEach((block,i)=>{batch.setMatrixAt(i,block.matrixWorld);batch.setColorAt(i,new T.Color().setScalar(.88+(i*17%31)/130));block.removeFromParent();});root.add(batch);}
  return root;
-}
-
-export function createQumranLayer(map:Map,onFailure:(message:string)=>void):CustomLayerInterface {
- let renderer:T.WebGLRenderer|undefined,root:T.Group|undefined;
- const scene=new T.Scene(),camera=new T.Camera();
- return {id:PILOT_ID,type:"custom",renderingMode:"3d",
-  onAdd(_map,gl){try{root=buildQumranPilot();scene.add(root);scene.add(new T.HemisphereLight(0xfff5df,0x736955,2.4));const sun=new T.DirectionalLight(0xffedd2,2.5);sun.position.set(-50,90,35);scene.add(sun);renderer=new T.WebGLRenderer({canvas:map.getCanvas(),context:gl});renderer.autoClear=false;}catch{onFailure("Site detail could not load. Source plans and photographs remain available.");}},
-  render(_gl,args){if(!renderer||!root||map.getZoom()<16)return;
-   const elevation=map.queryTerrainElevation(PILOT_ANCHOR);if(elevation===null)return;
-   const origin=MercatorCoordinate.fromLngLat(PILOT_ANCHOR,elevation+.15),s=origin.meterInMercatorCoordinateUnits();
-   const localMatrix=new T.Matrix4().makeTranslation(origin.x,origin.y,origin.z).scale(new T.Vector3(s,-s,s)).multiply(new T.Matrix4().makeRotationX(Math.PI/2));
-   camera.projectionMatrix.fromArray(args.defaultProjectionData.mainMatrix).multiply(localMatrix);
-   renderer.resetState();renderer.render(scene,camera);renderer.resetState();
-  },
-  onRemove(){scene.traverse(o=>{if(o instanceof T.Mesh){o.geometry.dispose();const mats=Array.isArray(o.material)?o.material:[o.material];mats.forEach(m=>m.dispose());if(o instanceof T.InstancedMesh)o.dispose();}});renderer?.dispose();}
- };
 }

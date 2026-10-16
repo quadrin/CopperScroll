@@ -191,8 +191,8 @@
   "drive_access": "Authenticated Google Drive access verified 12 October 2026. Folder index and newly uploaded SWP map set and Raviv–Zissu 2022 article retrieved; modern excavation scans already archived in the repository were reinspected. The SWP upload is a survey map set, not a Gerizim architectural report.",
   "model_rendering": {
     "asset": "atlas/app/atlas-model-geometry.ts",
-    "sha256": "57c86fca67a6d6ee26d86521dc2b31f57d1b90fca427ed7eacef6c13c905d022",
-    "renderer": "Three.js 0.186.1; orthographic interactive local site model",
+    "sha256": "726d672c37305e5376b0b84c23b5504ca4ac446ac5f8641f7228bcea83d5f5db",
+    "renderer": "Three.js models in a shared MapLibre geographic WebGL layer; eye-level inspection uses the same map camera. Source plans use the inline SVG canvas.",
     "selection": "Source feature IDs retained. Model camera focus is a display operation. Source image/tracing remains independently available.",
     "dimensions": {
       "abu-saraj-iv17": "Plan 5 scale, 3 m / 178 sampled pixels. Uniform height 1.55 m within reported 1.4–1.7 m. Roof cap, rock thickness, masonry height and scan sampling illustrative.",
@@ -210,6 +210,79 @@
       "elevation_data": "atlas/app/atlas-model-terrain.json",
       "provenance": "research/assets/plans/atlas-explorer/terrain/manifest.json",
       "method": "Modern elevation sampled around existing site anchors, with a feathered display bench and source-qualified architectural volumes. Terrain is contextual; footprint placement and compass bearing are illustrative. IV/17 uses an illustrative setting without coordinates."
+    },
+    "surface_art": {
+      "updated": "2026-10-16",
+      "method": "Original deterministic 512-pixel colour and relief/roughness tiles, projected in world metres. Separate masonry, limestone, stratified bedrock, soil and plaster treatments. Physical chipped stone courses, coping, open channel troughs, grounded rubble and sparse vegetation; no publication or photograph pixels are used as texture maps. Dominant-axis projection uses one texture sample per map and avoids blending away sharp material detail.",
+      "profiles": {
+        "Qumran": "Warm fractured limestone and dusty ground; connected rock beds and a shaded angular recess replace floating rounded rocks.",
+        "Doq": "Ochre limestone and rough desert masonry around the plan-derived cistern/channel relations.",
+        "Hyrcania": "Cream limestone and muted plaster distinguish the paired basins.",
+        "Jericho": "Warm stone, reddish soil and pale worn plaster; source states remain separate.",
+        "Gerizim": "Cooler ashlar palette and sparse sage vegetation around the precinct/stair relationships.",
+        "Siloam": "Grey-gold limestone and muted plaster around the small receiving-basin tracing."
+      },
+      "inspected_material_references": [
+        {
+          "file": "research/assets/plans/atlas-ground-photographs/qumran-reference.jpg",
+          "scope": "Visible fractured stone, granular soil and outlet recess; illustrative material and opening-form comparison only, without camera registration or inferred hidden architecture."
+        },
+        {
+          "file": "research/assets/plans/atlas-ground-photographs/siloam-reference.jpg",
+          "scope": "Limestone grain and surface wear only. Photograph is the larger southern stepped pool; its steps, walls and dimensions are not transferred to the small receiving-basin model."
+        },
+        {
+          "file": "research/assets/plans/atlas-ground-photographs/doq-reference.jpg",
+          "scope": "Escarpment colour and exposed relief character; regional visual context, not a measured local cliff model."
+        },
+        {
+          "file": "research/assets/plans/atlas-ground-photographs/choziba-reference.jpg",
+          "scope": "Layered canyon relief as regional visual context; no new source-plan footprint or geographic registration."
+        }
+      ],
+      "evidence_limit": "Palette, chipping, individual stone joints, cliff bedding, plaster wear, rubble, vegetation, light and sky are illustrative surface art. These additions supply no new archaeological observations, dimensions, phase assignments or identification evidence.",
+      "rendering": "Directional sun, hemisphere fill, ACES tone mapping, static shadow map, eye-level sky; 2048-pixel desktop / 1024-pixel phone shadow atlas. Repeated masonry and scree use GPU instancing. Thin soil floors receive shadows without casting self-shadow artifacts. Regional source layers pause at eye level and regain their individual visibility on exit; the site and sky continue rendering in the same geographic canvas.",
+      "camera": "Initial eye-level positions frame a source feature such as the eastern stair, pool rim or channel. These are display viewpoints, not surveyed camera positions or walking routes. Eye-level look can pass above the horizon to inspect cliff faces and tall structures; exiting restores the normal geographic camera limits.",
+      "covered_passages": "The normalized Reeder–Jol scene uses angular rock-cut display sections in place of smooth tubes. Their rectangular roof section is illustrative. A copper-coloured lining retains the proposed-course distinction in the source."
+    }
+  },
+  "drive_reference_links": {
+    "catalogue": "research/sources/drive_manifest.csv",
+    "catalogue_sha256": "eb11ac03ba0556f7802678e6ba18956c2c33c89354c48a7b7135ab6fa33e8e60",
+    "mapping": "atlas/app/atlas-library-references.json",
+    "access_scope": "Matched to the repository Drive catalogue and existing source/asset records; live Drive access and new inspection of original files are not claimed.",
+    "locators": "Existing plan captions, source notes and asset manifests; printed and PDF pagination remain separate.",
+    "missing_primary_copy": "Reeder–Jol 2006 not located in the indexed Drive catalogue."
+  },
+  "unified_map": {
+    "renderer": "MapLibre shared geographic WebGL canvas with a Three.js custom layer. Source-based 3D appears on close zoom; eye-level inspection uses the same camera and canvas.",
+    "code": {
+      "atlas/app/atlas-map-site-layer.ts": "4ce261d17069d0dbf3a1630b31e735f37cf5c994a112dae67ae0c1a18b976748",
+      "atlas/app/atlas-map-walk.ts": "d00b232c6e08d5dc7cb596440a312cac0f640727f427dc7d2020c9683924acda",
+      "atlas/app/atlas-map-references.tsx": "5b250a774bd8b5ccdba7759a125acf5416d31a43776dca1caa168deadaf05d34",
+      "atlas/app/atlas-site-materials.ts": "c78e3929e1cede50a996c2485d3a3bf4f19aab790917ae851e2ec88063ba536e",
+      "atlas/app/atlas-site-sky.ts": "c94c4c4272c224728ae7c65f337a91f89baf3585c36cc40aa9da97177533465d",
+      "atlas/app/atlas-model-geometry.ts": "726d672c37305e5376b0b84c23b5504ca4ac446ac5f8641f7228bcea83d5f5db",
+      "atlas/app/atlas-model-landscape.ts": "680e0d2c83c3ed004a89904be4744bdaddd7e9c9d9218047be7b3a8bb6cf637c",
+      "atlas/app/atlas-qumran-pilot.ts": "c2a92a223808e5e36851576c5f9b3572372f76f92e4830d24462740cc16dc938",
+      "atlas/app/atlas-map.tsx": "6db8b5147bd4f71b619663d90d9321960d76b863ec124d497eb3392562873e0b",
+      "atlas/app/atlas-map-unified.css": "a6e39690e925431f5a5b4890f69c54c6634b25436cd340e98645eb4285b5771b",
+      "atlas/app/atlas-site-reference.tsx": "109423f2e1d8919a36e7e945b5d7eeafb476bad7bbd827428aeccd85f4265023",
+      "atlas/app/atlas-site-reference.css": "a89d3f2e01a12b32fa4b29ef4960ae1af8ba3cc3b9e59e7d82b625e997f29a81"
+    },
+    "placement": "Existing site anchors only. Architectural bearing, local origin, relative display scale and alignment remain illustrative; this interface does not register the source plans to the earth.",
+    "qumran": "Detailed aqueduct segment reuses the existing Ilan–Amit 1989 p. 283 Fig. 1 relationships and existing Davey CJD979 comparison. Rock faces, masonry weathering, cross-sections and heights are illustrative; the whole settlement is not reconstructed.",
+    "walking": "Eye-level free inspection camera, 1.7 m above modeled ground; ground follows the display surface. Wall collisions, a surveyed navigation mesh and a verified ancient walking route are not supplied.",
+    "photos": "Original licensed source JPEGs are archived with provenance at research/assets/plans/atlas-ground-photographs; matching atlas mirror and public copies retain identical bytes, authors and license links.",
+    "videos": "The two existing Qumran YouTube leads are labeled unreviewed. They are inline reference players, not inspected geometry input or registered camera tracks. User-entered links store video IDs locally in the browser.",
+    "access": "No fresh private Google Drive file retrieval or live YouTube playback verification is claimed. Inline Drive preview uses the viewer account permissions; provider domains are saved in the environment draft.",
+    "validation": "Production GitHub Pages build served locally to Chromium with software WebGL. Desktop and phone checks cover all mapped sites, rendered source geometry, one persistent geographic canvas, inline plan/photo/Drive/video references, eye-level movement, looking above the horizon and return to map. Switching sites with references open preserves the explicit selection and closes the panel. IV/17 checks cover the original figure, visible feature list, pillar evidence and citations, inline Hebrew/English passage, close/reopen and legacy source/model/walk aliases without an invented map pin. External services were deliberately blocked in these tests; live provider coverage, private Drive access, hardware frame rates and GitHub Pages deployment are not established. Public-site and Pages API requests returned proxy 403 Forbidden; no tool to control the user’s Mac Chrome was available.",
+    "reference_panel": {
+      "updated": "2026-10-16",
+      "content": "The original source figure or project tracing, numbered feature list, feature description, interpretation limits, citations and expandable Hebrew/English entry text are native atlas panel content. The former standalone explorer and its duplicated view switch/mobile drawer are removed.",
+      "interaction": "Plan selection, feature focus, zoom and reading preserve the geographic map canvas. Map menus stay accessible above the reference panel; selecting a different site closes the panel. Automatic nearby-site selection applies to direct map gestures only, so camera restoration and panel padding cannot undo an explicit site choice.",
+      "iv17": "The Sion 2002 Plan 5 figure (p. 63), openings, pillar and related entry 25 text are accessible inside the atlas. Legacy source/model/walk URLs open the plan because this candidate has no established geographic location. No invented map position or map-based walking route is assigned.",
+      "provenance": "Reuses the existing plan, feature and text records, including attribution, original caption/scale/north arrow, source limits and the indexed Copper Scroll Drive reference. This interface integration supplies no new archaeological observations."
     }
   }
 }
