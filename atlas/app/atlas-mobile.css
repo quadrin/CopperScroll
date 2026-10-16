@@ -1,5 +1,5 @@
 .atlas-mobile-label{display:none!important}
-.atlas-context-toggle,.atlas-mobile-find,.atlas-context-panel-head{display:none}
+.atlas-explorer-bar>.atlas-context-toggle,.atlas-explorer-bar>.atlas-mobile-find,.atlas-context-panel-head{display:none}
 .atlas-context-panel{display:contents}
 
 @media(max-width:900px){
@@ -71,9 +71,9 @@
  .unified-atlas .site-explorer .site-explorer-head{display:block;padding:10px 12px 0}
  .unified-atlas .site-explorer .site-explorer-head .small-caps{display:none}
  .unified-atlas .site-explorer .site-explorer-head h2{font-size:20px;margin:0 0 8px}
- .unified-atlas .site-explorer .site-view-switch{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));max-width:none;gap:4px;padding-bottom:8px}
- .unified-atlas .site-explorer .site-view-switch button{justify-content:center;min-width:0;min-height:44px;font-size:11px;padding:6px 3px;white-space:nowrap}
- .unified-atlas .site-explorer .site-view-switch svg{display:none}
+ .unified-atlas .site-explorer .site-explorer-head .site-view-switch{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));max-width:none;gap:4px;padding-bottom:8px}
+ .unified-atlas .site-explorer .site-explorer-head .site-view-switch button{justify-content:center;min-width:0;min-height:44px;font-size:11px;padding:6px 3px;white-space:nowrap}
+ .unified-atlas .site-explorer .site-explorer-head .site-view-switch svg{display:none}
  .unified-atlas .site-explorer .site-plan-selector{display:none}
  .unified-atlas .site-explorer .site-canvas-column{padding-bottom:56px}
  .unified-atlas .site-explorer .site-inspector[data-expanded=false]{height:56px;padding:0 16px}
