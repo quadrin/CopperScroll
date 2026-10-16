@@ -1,10 +1,8 @@
-# Serve the prebuilt atlas without publishing the multi-gigabyte research archive.
-# These directories remain available in the GitHub repository.
-# Jekyll matches paths by prefix: excluding atlas also excludes atlas-site.
-# Explicit inclusion wins and keeps the complete prebuilt application.
-include:
-  - atlas-site
+# Publish the static app; omit the large source and research archives.
+# Use child globs: Jekyll's literal atlas prefix also matches atlas-site.
 exclude:
-  - atlas
-  - research
-  - images
+  - atlas/**
+  - research/**
+  - images/**
+# The app is already built and needs no generated documentation theme.
+theme: null

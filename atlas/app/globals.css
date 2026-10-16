@@ -6,6 +6,8 @@
    and collapsed the map to zero height. */
 @import "maplibre-gl/dist/maplibre-gl.css" layer(maplibre);
 @import "./atlas-interface.css";
+.atlas-startup{display:grid;place-content:center;gap:12px;min-height:100dvh;margin:0;padding:24px;background:#faf7ee;color:#453a2a;font:16px/1.5 Arial,sans-serif;text-align:center}
+.atlas-startup button{min-height:44px;padding:8px 18px;border:1px solid #9a8261;border-radius:4px;background:#fffdf6;color:inherit;cursor:pointer}
 @layer atlas-legacy {
 :root{--background:#f1e8d5;--foreground:#322c23;--card:#f8f1df;--card-foreground:#322c23;--popover:#f8f1df;--popover-foreground:#322c23;--primary:#344c43;--primary-foreground:#fff5db;--secondary:#e9ddc4;--secondary-foreground:#483f31;--muted:#e6dcc6;--muted-foreground:#776b57;--accent:#e4d3b3;--accent-foreground:#342e25;--destructive:#944d38;--border:#bca886;--input:#cdbd9b;--ring:#8d633b;--radius:.3rem;--serif:Georgia,'Times New Roman',serif;--sans:'Trebuchet MS',Arial,sans-serif}
 @theme inline{--color-background:var(--background);--color-foreground:var(--foreground);--color-card:var(--card);--color-card-foreground:var(--card-foreground);--color-popover:var(--popover);--color-popover-foreground:var(--popover-foreground);--color-primary:var(--primary);--color-primary-foreground:var(--primary-foreground);--color-secondary:var(--secondary);--color-secondary-foreground:var(--secondary-foreground);--color-muted:var(--muted);--color-muted-foreground:var(--muted-foreground);--color-accent:var(--accent);--color-accent-foreground:var(--accent-foreground);--color-destructive:var(--destructive);--color-border:var(--border);--color-input:var(--input);--color-ring:var(--ring);--font-sans:var(--sans);--radius-lg:.4rem;--radius-md:.3rem;--radius-sm:.2rem}

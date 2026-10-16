@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — the Pages blank-screen cause is reproduced: Jekyll’s atlas exclusion also excluded atlas-site and its startup assets. Explicitly including atlas-site fixes the filtered payload. Production Chromium loads its bare homepage and source-plan routes on desktop and phone without missing local assets. Live deployment remains unverified because the public site returns proxy 403 Forbidden.
+Last session (16 October 2026 Los Angeles): **obtained** — GitHub’s actual Pages builder reproduces the missing startup assets despite the parent inclusion. Child-glob exclusions retain the app and omit the archives. The generated output passes byte comparisons; desktop/phone homepage and failed-import recovery checks pass against that real output. Fresh startup URLs replace the cached 404 paths. GitHub’s Actions web page now provides deployment evidence despite blocked Pages HTTP/API access.
 
 ## Active questions and the observation that decides each
 
