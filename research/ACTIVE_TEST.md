@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 15 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (15 October 2026 Los Angeles): **obtained** — the [KB atlas homepage](../atlas/README.md#knowledge-base-landing-page) now follows passage → same-branch candidate comparison → deciding observations, with source evidence in an on-demand dialog. This is a software presentation result.
+Last session (15 October 2026 Los Angeles): **not obtained** (no new source was sought) — every atlas candidate is now rated on reading, place, feature and date (0–3 each) plus uniqueness, under a rubric frozen before rating ([evidence components](assessments/evidence_components/README.md)). Of 91 candidates, 45 are weak and 46 none; none is partial or strong. The atlas shows these parts in place of its single low/medium label. 79 record conflicts found while rating are listed, uncorrected.
 
 ## Active questions and the observation that decides each
 

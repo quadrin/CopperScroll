@@ -35,7 +35,7 @@ export function EvidenceComponents({ entryId, placeId }: { entryId: string; plac
   const row = componentsFor(entryId, placeId);
   if (!row) return <p className="unreviewed-note">This candidate has no evidence-component rating.</p>;
   return <section className="ec-panel" aria-label="Evidence components">
-    <header><span className="small-caps">Evidence components</span><strong className={`ec-label ec-${row.label}`}>Weakest link: {row.label}</strong></header>
+    <header><span className="small-caps">Evidence components</span><strong className={`ec-label ec-${row.label}`}>Weakest link: {row.label}{row.limitedBy.length ? ` (${row.limitedBy.map(k => names[k as keyof typeof names].toLowerCase()).join(", ")})` : ""}</strong></header>
     <dl>
       {keys.map(k => <div key={k} className={row.limitedBy.includes(k) ? "limit" : ""}><dt>{names[k]}<span>{row.levels[k]}/3<Pips level={row.levels[k]} /></span></dt><dd>{row.basis[k]}{k === "R" && row.limitingWord && <em> Limiting word: <span lang="he">{row.limitingWord}</span>.</em>}</dd></div>)}
       <div><dt>Uniqueness<span>{row.u}</span></dt><dd>{row.basis.U}</dd></div>
@@ -43,4 +43,9 @@ export function EvidenceComponents({ entryId, placeId }: { entryId: string; plac
     {row.next && <p className="ec-next"><strong>Would change it:</strong> {row.next}</p>}
     <p className="ec-method">Each part is rated 0–3 from the repository's records; the weakest part sets the label. None counts as an identification without all four at 3 and a test against controls. <a href={componentLinks.rubric} target="_blank" rel="noreferrer">Rubric<ExternalLink size={12} aria-hidden="true" /></a> · <a href={componentLinks.table} target="_blank" rel="noreferrer">All ratings<ExternalLink size={12} aria-hidden="true" /></a></p>
   </section>;
+}
+
+/** One-line key for the chip strips. */
+export function EvidenceLegend() {
+  return <p className="ec-legend">R reading · P place · F feature · D date, each 0–3 dots. Red marks the weakest part, which sets the label. <a href={componentLinks.rubric} target="_blank" rel="noreferrer">How it is rated</a></p>;
 }

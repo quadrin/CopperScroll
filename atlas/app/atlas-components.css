@@ -17,7 +17,7 @@
 
 .ec-panel { border: 1px solid #d9ddd2; background: #f4f5f0; border-radius: 7px; padding: 14px 16px; margin: 0 0 18px; color: #2e3a2f; }
 .ec-panel header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 10px; }
-.ec-panel header .ec-label { font-size: 12px; }
+.ec-panel header .ec-label { font-size: 12px; text-transform: none; }
 .ec-panel dl { display: grid; gap: 8px; margin: 0; }
 .ec-panel dl > div { display: grid; grid-template-columns: 9.5em 1fr; gap: 12px; padding: 6px 0; border-top: 1px solid #e2e5dc; }
 .ec-panel dl > div.limit dt { color: #a14a24; }
@@ -29,4 +29,9 @@
 .ec-method { font-size: 11px; line-height: 1.5; opacity: .8; margin: 6px 0 0; }
 .ec-method a { display: inline-flex; align-items: center; gap: 2px; }
 @media (max-width: 650px) { .ec-panel dl > div { grid-template-columns: 1fr; gap: 4px; } }
+.unified-entry-note .ec-panel { padding: 12px; }
+.unified-entry-note .ec-panel dl > div { grid-template-columns: 1fr; gap: 4px; }
+.unified-entry-note .ec-panel dd, .unified-entry-note .ec-panel p { font-size: 13px; margin-bottom: 0; }
+.ec-legend { font: 11px/1.5 system-ui, sans-serif; opacity: .75; margin: -6px 0 12px !important; }
+.ec-legend a { text-decoration: underline; }
 .copper-reader .register-confidence.ec-none, .copper-reader .register-confidence.ec-weak, .copper-reader .register-confidence.ec-partial, .copper-reader .register-confidence.ec-strong { color: #ffe1b5; }
