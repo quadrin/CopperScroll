@@ -6,7 +6,10 @@ const {chromium}=require(process.env.ATLAS_PLAYWRIGHT_MODULE||'playwright-core')
 const origin=process.env.ATLAS_TEST_ORIGIN||'http://127.0.0.1:5173/CopperScroll/atlas-site/';
 const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 try{for(const mobile of [false,true]){
- const page=await browser.newPage({viewport:mobile?{width:390,height:844}:{width:1440,height:950},isMobile:mobile,hasTouch:mobile,reducedMotion:'reduce'});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route(/^https:\/\//,r=>r.abort());
+ const page=await browser.newPage({viewport:mobile?{width:390,height:844}:{width:1440,height:950},isMobile:mobile,hasTouch:mobile,reducedMotion:'reduce'});const errors=[],missingAssets=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.url().startsWith(new URL(origin).origin)&&r.status()>=400)missingAssets.push(r.status()+' '+r.url());});await page.route(/^https:\/\//,r=>r.abort());
+ // Test the bare published homepage as well as the deep links. A working raw
+ // build does not prove that Jekyll retained its module scripts and styles.
+ await page.goto(origin);await page.getByRole('heading',{name:'How do the candidates compare?',exact:true}).waitFor();await page.screenshot({path:`/tmp/copperscroll-pages-home-${mobile?'phone':'desktop'}.png`});
  await page.goto(origin+'#entry-25/site/abu-saraj-iv17/source');
  const panel=page.getByRole('complementary',{name:'Site reference panel'});await panel.locator('.site-reference').waitFor();await page.locator('.maplibregl-canvas').waitFor();await page.evaluate(()=>window.iv17Canvas=document.querySelector('.maplibregl-canvas'));
  const nav=page.getByRole('navigation',{name:'Atlas sections',exact:true});
@@ -38,5 +41,5 @@ try{for(const mobile of [false,true]){
  await nav.getByRole('link',{name:'Evidence',exact:true}).click();await page.getByRole('heading',{name:'How do the candidates compare?',exact:true}).waitFor();assert((await page.evaluate(()=>location.hash)).includes('entry=25'));
  await page.getByRole('button',{name:'Sources & gaps',exact:true}).click();await page.getByRole('heading',{name:'Publication, page and observation.',exact:true}).waitFor();assert(await page.locator('.kb-source-list-item').count()>0);assert.equal(await nav.getByRole('link',{name:'Evidence',exact:true}).getAttribute('aria-current'),'page');
  assert.equal(await page.locator('.atlas-site-nav summary').count(),0);
- assert.deepEqual(errors,[]);console.log((mobile?'Phone':'Desktop')+' passed: three-section navigation, inline source/feature/passage, historical maps through Options, Scroll and Evidence source access retain entry context.');await page.close();
+ assert.deepEqual(errors,[]);assert.deepEqual(missingAssets,[]);console.log((mobile?'Phone':'Desktop')+' passed: bare homepage startup, no missing local assets, three-section navigation, inline source/feature/passage, historical maps through Options, Scroll and Evidence source access retain entry context.');await page.close();
 }}finally{await browser.close();}
