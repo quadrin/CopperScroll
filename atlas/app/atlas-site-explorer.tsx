@@ -1,15 +1,16 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, BookOpen, Box, Camera, ExternalLink, Map, Minus, Plus, RotateCcw, X } from "lucide-react";
+import { ArrowLeft, BookOpen, Box, Camera, Footprints, ExternalLink, Map, Minus, Plus, RotateCcw, X } from "lucide-react";
 import scenes from "./atlas-scenes.json";
 import type { Entry, Place } from "./atlas-types";
 import { plansForPlace, type SiteFeature, type SitePlan, type Viewport, type ModelCamera } from "./atlas-explorer-model";
 import "./atlas-site-explorer.css";
+import PerspectiveInspection from "./atlas-perspective";
 import ArchitecturalModel from "./atlas-model";
 
 const clamp = (n: number, low: number, high: number) => Math.min(high, Math.max(low, n));
 const base = import.meta.env?.BASE_URL ?? "/";
-type Props = { entry: Entry; place: Place | null; plan: SitePlan; featureId: string | null; highlightId?: string | null; onHighlight: (id: string) => void; view: "plan" | "photo"; representation?: "model" | "source"; modelCamera?: ModelCamera; onModelCamera: (v: ModelCamera) => void; onRepresentation: (v: "model" | "source") => void; viewport?: Viewport; photoViewport?: Viewport; restoreNonce: number; onViewport: (v: Viewport, photo: boolean) => void; onFeature: (id: string | null) => void; onPlan: (id: string) => void; onView: (view: "plan" | "photo") => void; onTerrain: () => void; onRead: (id: string) => void; onEnlarge: () => void; enlarged: boolean; onCloseEnlarged: () => void };
+type Props = { entry: Entry; place: Place | null; plan: SitePlan; featureId: string | null; highlightId?: string | null; onHighlight: (id: string) => void; view: "plan" | "photo"; representation?: "model" | "source" | "walk"; modelCamera?: ModelCamera; onModelCamera: (v: ModelCamera) => void; onRepresentation: (v: "model" | "source" | "walk") => void; viewport?: Viewport; photoViewport?: Viewport; restoreNonce: number; onViewport: (v: Viewport, photo: boolean) => void; onFeature: (id: string | null) => void; onPlan: (id: string) => void; onView: (view: "plan" | "photo") => void; onTerrain: () => void; onRead: (id: string) => void; onEnlarge: () => void; enlarged: boolean; onCloseEnlarged: () => void };
 export function FeatureNote({ feature, onRead }: { feature: SiteFeature; onRead: (id: string) => void }) {
  return <div className="feature-note"><span className="site-kind">{feature.kind}</span><h3>{feature.label}</h3><p>{feature.description}</p><details><summary>Interpretation &amp; sources</summary><p>{feature.limit}</p><ul>{feature.sources.map(s => <li key={s}>{s}</li>)}</ul><a href={feature.sourceUrl} target="_blank" rel="noreferrer">Open evidence record <ExternalLink size={12}/></a></details><div className="feature-entry-links">{feature.entryIds.map(id => <button key={id} onClick={() => onRead(id)}><BookOpen size={14}/>Read entry {id}</button>)}</div></div>;
 }
@@ -19,7 +20,8 @@ export default function SiteExplorer(p: Props) {
  const feature = plan.features.find(f => f.id === featureId);
  const highlight = scene?.highlights.find(h=>h.id===p.highlightId);
  const photo = view === "photo";
- const model = !photo && plan.kind !== "survey-map" && (p.representation ?? "model") === "model";
+ const walking=p.representation==="walk";
+ const model = !photo && plan.kind !== "survey-map" && (p.representation ?? "model") !== "source";
  const stage = useRef<HTMLDivElement>(null);
  const svg = useRef<SVGSVGElement>(null);
  const drag = useRef<{ pointers: globalThis.Map<number,{x:number;y:number}>; origin: Viewport; start: {x:number;y:number}; distance: number } | null>(null);
@@ -38,7 +40,7 @@ export default function SiteExplorer(p: Props) {
  const current = useRef(camera); current.current = camera;
  const lastFeature = useRef(featureId);
  const lastHighlight = useRef(p.highlightId);
- function update(v: Viewport) { const next = {...v,zoom:clamp(v.zoom,1,12)}; current.current=next;setCamera(next);p.onViewport(next,photo); }
+ function update(v: Viewport) { const next = {...v,zoom:clamp(v.zoom,1,32)}; current.current=next;setCamera(next);p.onViewport(next,photo); }
  useEffect(() => { const next = (photo ? p.photoViewport : p.viewport) ?? fit;current.current=next;setCamera(next);lastFeature.current=featureId;setImageError(false); }, [plan.id,view,p.restoreNonce]); // History owns restored camera; drag changes only this surface.
  useEffect(() => {
   if(featureId === lastFeature.current) return; lastFeature.current=featureId;
@@ -50,11 +52,11 @@ export default function SiteExplorer(p: Props) {
  function local(clientX:number,clientY:number){const rect=svg.current?.getBoundingClientRect();if(!rect)return {x:0,y:0};const scale=Math.min(rect.width/width,rect.height/height);return {x:clientX/scale,y:clientY/scale};}
  function release(event: React.PointerEvent<HTMLDivElement>){drag.current?.pointers.delete(event.pointerId); if(drag.current?.pointers.size===0)drag.current=null;else if(drag.current){const point=[...drag.current.pointers.values()][0];drag.current={...drag.current,origin:current.current,start:point,distance:0};}}
  return <section className={`site-explorer ${p.enlarged?"site-media-enlarged":""}`} aria-label={`Explore ${place?.shortName ?? "candidate"} structures`}>
-  <header className="site-explorer-head"><div><span className="small-caps">Explore candidate · entry {p.entry.id}</span><h2>{place?.shortName}</h2></div><div className="site-view-switch" role="group" aria-label="Site view">{plan.kind!=="survey-map"&&<button className="model-view-button" aria-pressed={model} onClick={()=>{p.onRepresentation("model")}}><Box size={14}/>3D model</button>}<button aria-pressed={!photo&&!model} onClick={()=>{p.onRepresentation("source")}}><Map size={14}/>Source plan</button><button aria-pressed={photo} onClick={()=>p.onView("photo")}><Camera size={14}/>Photos</button><button onClick={p.onTerrain}>Regional terrain</button></div></header>
+  <header className="site-explorer-head"><div><span className="small-caps">Explore candidate · entry {p.entry.id}</span><h2>{place?.shortName}</h2></div><div className="site-view-switch" role="group" aria-label="Site view">{plan.kind!=="survey-map"&&<button className="model-view-button" aria-pressed={model&&!walking} onClick={()=>{p.onRepresentation("model")}}><Box size={14}/>3D model</button>}{plan.kind!=="survey-map"&&<button aria-pressed={walking&&!photo} onClick={()=>p.onRepresentation("walk")}><Footprints size={14}/>Eye level</button>}<button aria-pressed={!photo&&!model} onClick={()=>{p.onRepresentation("source")}}><Map size={14}/>Source plan</button><button aria-pressed={photo} onClick={()=>p.onView("photo")}><Camera size={14}/>Photos</button><button onClick={p.onTerrain}>Regional terrain</button></div></header>
   <div className="site-explorer-body">
    <div className="site-canvas-column">
-    {!photo && <div className="site-plan-selector"><label>Source plan <select aria-label="Source plan" value={plan.id} onChange={e=>p.onPlan(e.target.value)}>{plansForPlace(place?.id??null).map(item=><option key={item.id} value={item.id}>{item.label}</option>)}</select></label><span>{model?"Local site map · pan, zoom & inspect structures":"Drag to pan · scroll or pinch to zoom · select a feature"}</span></div>}
-    {model ? <ArchitecturalModel plan={plan} featureId={featureId} onFeature={p.onFeature} camera={p.modelCamera} onCamera={p.onModelCamera} restoreNonce={p.restoreNonce} onSource={()=>p.onRepresentation("source")}/> : <div ref={stage} className="site-stage" tabIndex={0} role="region" aria-label={`${photo ? "Photograph" : "Interactive site plan"}: drag to pan, plus or minus to zoom`} data-zoom={camera.zoom.toFixed(3)} data-pan={`${camera.x.toFixed(2)},${camera.y.toFixed(2)}`}
+    {!photo && <div className="site-plan-selector"><label>Source plan <select aria-label="Source plan" value={plan.id} onChange={e=>p.onPlan(e.target.value)}>{plansForPlace(place?.id??null).map(item=><option key={item.id} value={item.id}>{item.label}</option>)}</select></label><span>{model?"Local model · up to 32× zoom · display assumptions below":"Drag to pan · up to 32× zoom · source resolution limits detail"}</span></div>}
+    {model ? walking ? <PerspectiveInspection restoreNonce={p.restoreNonce} plan={plan} featureId={featureId} camera={p.modelCamera?.projection==="perspective"?p.modelCamera:undefined} onCamera={p.onModelCamera} onFeature={p.onFeature} onSource={()=>p.onRepresentation("source")}/> : <ArchitecturalModel plan={plan} featureId={featureId} onFeature={p.onFeature} camera={p.modelCamera?.projection==="perspective"?undefined:p.modelCamera} onCamera={p.onModelCamera} restoreNonce={p.restoreNonce} onSource={()=>p.onRepresentation("source")}/> : <div ref={stage} className="site-stage" tabIndex={0} role="region" aria-label={`${photo ? "Photograph" : "Interactive site plan"}: drag to pan, plus or minus to zoom`} data-zoom={camera.zoom.toFixed(3)} data-pan={`${camera.x.toFixed(2)},${camera.y.toFixed(2)}`}
      onKeyDown={e=>{if(e.target!==e.currentTarget)return;const moves:Record<string,[number,number]>={ArrowLeft:[30,0],ArrowRight:[-30,0],ArrowUp:[0,30],ArrowDown:[0,-30]};if(moves[e.key]){e.preventDefault();update({...camera,x:camera.x+moves[e.key][0]/camera.zoom,y:camera.y+moves[e.key][1]/camera.zoom})}else if(["+","="].includes(e.key)){e.preventDefault();zoom(1.25)}else if(e.key==="-"){e.preventDefault();zoom(.8)}}}
      onWheel={e=>zoom(e.deltaY<0?1.1:.9)}
      onPointerDown={e=>{if((e.target as Element).closest("button,[role=button]"))return;e.currentTarget.setPointerCapture(e.pointerId);const pt=local(e.clientX,e.clientY);if(!drag.current)drag.current={pointers:new globalThis.Map(),origin:camera,start:pt,distance:0};drag.current.pointers.set(e.pointerId,pt);if(drag.current.pointers.size===2){const [a,b]=[...drag.current.pointers.values()];drag.current.distance=Math.hypot(a.x-b.x,a.y-b.y);drag.current.origin=camera;}}}

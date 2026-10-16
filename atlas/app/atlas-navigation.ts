@@ -6,12 +6,12 @@ const modeAliases: Record<string, AtlasMode | undefined> = {
   scroll: "scroll", landscape: "landscape", dossier: "dossier", history: "2d",
 };
 export function entryHash(id: string, mode: string) {
-  const suffix = mode === "2d" ? "" : mode === "ground" ? "/photo" : `/${mode}`;
+  const suffix = mode === "2d" ? "/2d" : mode === "ground" ? "/photo" : `/${mode}`;
   return `#entry-${id}${suffix}`;
 }
 export function parseAtlasHash(hash: string) {
-  const workbench = hash.match(/^#workbench(?:\/(relationships|inventory|states|coverage|decisions))?$/);
-  if (workbench) return {workbench: workbench[1] ?? "relationships", entryId: null, mode: null};
+  const workbench = hash.match(/^#workbench(?:\/(relationships|inventory|states|coverage|decisions))?(?:\?entry=([\da-z]+))?$/);
+  if (workbench) {if(workbench[2]&&!validEntryId.test(workbench[2]))return null;return {workbench: workbench[1] ?? "relationships", entryId: workbench[2] ?? null, mode: null};}
   if (!hash.startsWith("#") || hash.length < 2) return null;
   const parts = hash.slice(1).split("/");
   let entryId: string | null = null;

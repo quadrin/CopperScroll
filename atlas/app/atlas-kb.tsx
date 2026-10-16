@@ -6,6 +6,7 @@ import './atlas-kb.css';
 import {PassageEdition,SourcePlate,CandidateFieldRecord} from './atlas-kb-fieldwork';
 import './atlas-kb-fieldwork.css';
 import EntryFinder from './atlas-kb-filters';
+import AtlasSiteNav from './atlas-site-nav';
 import {filterCandidateRows,type CandidateFilter} from './atlas-kb-filters-model';
 type View='case'|'graph'|'requirements'|'names'|'impact'|'sources';
 type Selection={entry:string;record:string;view:View;detail:string};
@@ -33,18 +34,19 @@ export default function KnowledgeBase(){
  const title=cases.find(c=>c.id===s.entry)?.title||entry?.label||'Copper Scroll';
  return <main className="kb-app kb-guided">
   <a className="kb-skip" href="#kb-workspace" onClick={e=>{e.preventDefault();document.getElementById('kb-workspace')?.focus();}}>Skip to evidence</a>
-  <header className="kb-header"><a className="kb-brand" href="#kb" aria-label="Copper Scroll knowledge base"><span className="kb-mark"><Layers size={22}/></span><span>Copper Scroll<small>RESEARCH ATLAS · 3Q15</small></span></a><nav aria-label="Atlas navigation"><a className="active" href="#kb">Research</a><a href={'#entry-'+s.entry+'/site'}>Map & places</a><a href={'#entry-'+s.entry+'/scroll'}>Read the scroll</a></nav><a className="kb-repo" href="https://github.com/quadrin/CopperScroll" target="_blank" rel="noreferrer">Project sources<ArrowUpRight size={15}/></a></header>
+  <AtlasSiteNav entry={s.entry} active={s.view==='sources'?'sources':'evidence'}/>
   <div className="kb-page"><section className="kb-start"><div><p className="kb-eyebrow">3Q15 · TEXTS, PLACES & MATERIAL EVIDENCE</p><h1>The Copper Scroll<br/><em>Research Atlas</em></h1><p>Read the passage. Examine the remains. Trace the evidence.</p></div><label>Browse all 61 entries<select aria-label="Browse all entries" value={s.entry} onChange={e=>chooseEntry(e.target.value)}>{data?.records.filter(r=>r.kind==='entry').sort((a,b)=>parseFloat(a.id)-parseFloat(b.id)||a.id.localeCompare(b.id)).map(r=><option key={r.key} value={r.id}>Entry {r.id} · {r.payload.canonical_lines}</option>)}</select></label></section>
   <EntryFinder data={data} current={s.entry} onChoose={chooseEntry}/>
   <nav className="kb-case-tabs" aria-label="Pilot cases">{cases.map(c=><button key={c.id} aria-current={s.entry===c.id?'page':undefined} onClick={()=>chooseEntry(c.id)}><span className="kb-case-number">{c.id}</span><span><strong>{c.title}</strong><small>{c.sub}</small></span><ChevronRight size={16}/></button>)}</nav>
   {error?<p role="alert" className="kb-error">{error}</p>:!i?<div className="kb-loading" role="status">Opening the reviewed evidence register…</div>:<>
    <section className="kb-workspace" id="kb-workspace" tabIndex={-1}><div className="kb-contextbar"><div><p className="kb-eyebrow">ENTRY {s.entry} · {entry?.payload.canonical_lines}</p><h2>{title}</h2></div><div className="kb-searchbar"><Search size={18}/><input aria-label="Search evidence records" placeholder="Search records…" value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button aria-label="Clear search" onClick={()=>setQuery('')}><X size={16}/></button>}{query&&<div className="kb-search-results" role="region" aria-label="Search results"><p>Across the reviewed pilot</p>{matches.map(r=><RecordButton key={r.key} record={r} onSelect={select}/>)}{!matches.length&&<p>No matching record.</p>}</div>}</div></div>
    <nav className="kb-viewbar" aria-label="Knowledge base views">{(['case','names','sources','graph','requirements','impact'] as View[]).map(v=><button key={v} aria-current={s.view===v?'page':undefined} onClick={()=>navigate({view:v,detail:'0'})}>{viewNames[v]}</button>)}</nav>
-   {s.view==='case'&&<CaseOverview key={s.entry} i={i} entry={entry!} context={context} candidates={candidates} onSelect={select}/>}
+   {!entry&&<div className="atlas-route-error"><h2>Entry unavailable</h2><p>This entry is outside the register. Choose a passage above or <a href="#kb?entry=25">open Entry 25</a>.</p></div>}
+   {s.view==='case'&&entry&&<CaseOverview key={s.entry} i={i} entry={entry!} context={context} candidates={candidates} onSelect={select}/>}
    {s.view==='graph'&&<><p className="kb-view-help">Explore stored connections. Select a record to open its evidence; use “Focus connections” to narrow the graph.</p><Graph i={i} entry={s.entry} selected={current?.key||''} onSelect={select}/></>}
    {s.view==='requirements'&&<Requirements key={s.entry} i={i} candidates={candidates} onSelect={select}/>}
    {s.view==='names'&&<Names i={i} onSelect={select}/>}
-   {s.view==='impact'&&<Impact i={i} selected={current!} onSelect={select}/>}
+   {s.view==='impact'&&current&&<Impact i={i} selected={current!} onSelect={select}/>}
    {s.view==='sources'&&<Sources key={s.entry} i={i} context={context} onSelect={select}/>}
    </section><footer className="kb-footer"><p>Reviewed pilot · Compatibility does not establish an identification. Unknown means the evidence does not settle the requirement.</p><span title={data!.version}>Snapshot {data!.version.slice(0,10)}</span></footer>
    <dialog ref={dialog} className="kb-evidence-dialog" aria-label="Evidence details" onCancel={e=>{e.preventDefault();close();}} onClick={e=>{if(e.target===e.currentTarget)close();}}><div className="kb-dialog-toolbar">{trail.length?<button onClick={()=>{const previous=trail[trail.length-1];setTrail(trail.slice(0,-1));navigate({record:previous});}}><ArrowRight className="kb-back-arrow" size={16}/>Back to previous record</button>:<span>Evidence for your selected record</span>}<button autoFocus onClick={close} aria-label="Close evidence details">Close<X size={20}/></button></div>{current&&<Inspector key={current.key} i={i} record={current} onSelect={select} onImpact={()=>navigate({view:'impact',detail:'0'})}/>}</dialog>

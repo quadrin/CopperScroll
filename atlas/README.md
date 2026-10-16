@@ -134,3 +134,20 @@ corepack pnpm run build:pages
 The Pages build rejects a stale snapshot. The existing hosted Site uses the same checked-in snapshot; update evidence in the repository before synchronizing Site source. Public export calls the pilot's `public_view` filter before building entry indexes. Its version is a content hash of canonical records and input versions; explicit reviewed claim notices propagate reassessment flags to affected public results, while SQLite history stays in the local pilot. The public impact view computes dependency paths and preserves historical test outcomes. It does not simulate new archaeological evidence or revise a conclusion.
 
 Validation covers all entry graphs, guided passage sections, every retained branch/window comparison, explicit missing controls, duplicate-cell rejection, source locators, name dates and dependency effects. Live desktop browser checks covered candidate expansion, source drill-down, Back and Escape with the expanded candidate preserved. Mobile layout remains CSS-checked; automated rendering checks alone do not verify touch interaction.
+
+
+## Navigation and close inspection
+
+The shared header opens Evidence, Map, Sites & 3D, Scroll, Sources and Tools while retaining the selected entry. All sections exposes regional terrain, photographs, candidate dossiers, historical imagery, passage schematics and each research tool. The site-plan selector opens every available source plan. Invalid routes show a recovery view. Geographic routes use an explicit `/2d` suffix; legacy bare entry links retain their historical site view.
+
+Source plans and orbit models support up to 32× zoom. Geographic overzoom reaches level 22 and enlarges the available imagery; it adds no survey detail. A source plan can be linked directly with `#entry-25/site/abu-saraj-iv17/source`, and its perspective inspection with `#entry-25/site/abu-saraj-iv17/walk`.
+
+Eye level is a free camera over the existing illustrative geometry. Drag to look, use W/A/S/D or arrows to move, R/F to change height, or hold the on-screen movement buttons. There is no floor constraint, collision mesh or surveyed walking route. Sources and assumptions remain available beside the model. Camera snapshots distinguish perspective and orthographic views and restore on browser navigation.
+
+### Building measured 3D sites
+
+A measured site asset needs a local coordinate frame, plan scale, sections or spot heights, and a phase assignment. Trace walls, floors, openings and roofs only where the source constrains them. Fit photographs to known control points; overlapping photographs or a scan can supply a present-day surface, with scale bars and independent check measurements. A single photograph cannot establish hidden rooms or an absent roof. Register the local model to the map only after independent control points support that transformation; source-relative assets remain in their own frame.
+
+Keep surviving remains, proposed ancient reconstruction and illustrative context as separate layers. Each modeled component should carry its feature ID, source locator, date/phase, measurement basis, uncertainty and whether it is observed, reconstructed or illustrative. Export local site meshes as GLB/glTF for the existing Three.js viewer. Dense regional scans could use streamed 3D Tiles later. A grounded walkthrough requires measured floor topology, passage and ceiling clearances, a collision mesh and a navigation mesh. These are additional evidence and asset requirements, rather than a consequence of higher zoom.
+
+The IV/17 model is a suitable bounded pilot: its plan scale and reported height constrain part of the geometry, while its roof profile, thresholds and geographic registration require further evidence. Preserve those gaps in any new asset.

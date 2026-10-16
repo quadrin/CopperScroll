@@ -36,3 +36,18 @@ assert.equal(generic?.mode,'site');assert.equal(generic?.placeId,'jericho_area')
 assert.equal(model.explorerFromHash('#entry-27',primary)?.mode,'site');
 assert.equal(model.explorerHash(generic),'#entry-27/site');
 console.log(`Explorer data and routes passed: ${plans.length} source plans, ${roundtrips} feature/view roundtrips, bounded source coordinates, provenance and invalid routes.`);
+
+for(const {id} of entries){
+ assert.equal(model.explorerFromHash(nav.entryHash(id,'2d'),primary)?.mode,'2d');
+ for(const tool of ['relationships','inventory','states','coverage','decisions']){
+  const state={...model.initialExplorer,entryId:id,workbench:tool};
+  const restored=model.explorerFromHash(model.explorerHash(state),primary);
+  assert.equal(restored.entryId,id);assert.equal(restored.workbench,tool);
+ }
+}
+for(const plan of plans)for(const representation of ['source','model','walk']){
+ const state={...model.initialExplorer,entryId:plan.features[0].entryIds[0],mode:'site',planId:plan.id,featureId:plan.features[0].id,representation};
+ const restored=model.explorerFromHash(model.explorerHash(state),primary);assert.equal(restored.representation,representation);assert.equal(restored.featureId,state.featureId);
+}
+for(const hash of ['#workbench/relationships?entry=61','#entry-25/site/abu-saraj-iv17/source/photo'])assert.equal(model.explorerFromHash(hash,primary),null);
+console.log('Map, source/model and entry-specific workbench deep links pass.');

@@ -35,7 +35,9 @@ const fieldwork=compile('../app/atlas-kb-fieldwork.tsx','',{'./atlas-text':{Segm
 const filters=compile('../app/atlas-kb-filters-model.ts');
 const catalogue=JSON.parse(readFileSync(new URL('../app/atlas-data.json',import.meta.url),'utf8'));
 const finder=compile('../app/atlas-kb-filters.tsx','',{'./atlas-data.json':catalogue,'./atlas-kb-filters-model':filters});
-const components=compile('../app/atlas-kb.tsx','\nexport {Graph,Inspector,Requirements,Names,Impact,Sources,CaseOverview,Comparison};',{'./atlas-kb-model':model,'./atlas-kb-fieldwork':fieldwork,'./atlas-kb-filters':finder,'./atlas-kb-filters-model':filters});
+const nav=compile('../app/atlas-navigation.ts');
+const siteNav=compile('../app/atlas-site-nav.tsx','',{'./atlas-navigation':nav});
+const components=compile('../app/atlas-kb.tsx','\nexport {Graph,Inspector,Requirements,Names,Impact,Sources,CaseOverview,Comparison};',{'./atlas-kb-model':model,'./atlas-kb-fieldwork':fieldwork,'./atlas-kb-filters':finder,'./atlas-kb-filters-model':filters,'./atlas-site-nav':siteNav});
 const render=(c,props)=>renderToStaticMarkup(createElement(c,props));
 const onSelect=()=>{};
 for(const entry of Object.keys(data.entries)){
@@ -111,3 +113,12 @@ const missing=controls.find(r=>r.candidate.key==='hypothesis/A41:XII/53');assert
 const iv17=filters.filterCandidateRows(compared,'IV17','all');assert.equal(iv17.length,1);assert.equal(iv17[0],compared.find(r=>r.candidate.id==='iv17'));
 assert.ok(render(finder.default,{data,current:'25',onChoose(){}}).includes('Filter entries'));
 console.log('Filter checks passed: 61-entry coverage, combined region/feature search, diacritics, exact-branch candidate subsets, explicit missing results and reset.');
+
+// A shared section bar exposes every surface and links to the geographic map.
+const routes=siteNav.sectionRoutes('25','abu-saraj-iv17');assert.equal(routes.map,'#entry-25/2d');assert.equal(routes.sites,'#entry-25/site/abu-saraj-iv17');
+for(const active of ['evidence','map','sites','scroll','sources','tools']){
+ const html=render(siteNav.default,{entry:'25',active,planId:'abu-saraj-iv17'});
+ for(const label of ['Atlas sections','All sections','Historical maps','Candidate dossier','Site photographs','Cave comparisons'])assert.ok(html.includes(label));
+ assert.equal((html.match(/aria-current="page"/g)||[]).length,1);
+}
+console.log('Shared navigation checks passed: geographic map route, selected-entry context, direct section access and one active section.');
