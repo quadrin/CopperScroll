@@ -2,12 +2,13 @@
 import copy
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from core import ROOT
 from claim_kb.adapters import build_graph
 from claim_kb.model import canonical
-from claim_kb.web_export import project
+from claim_kb.web_export import project, build
 
 
 class PublicAtlasSnapshot(unittest.TestCase):
@@ -56,3 +57,10 @@ class PublicAtlasSnapshot(unittest.TestCase):
         self.assertEqual(len(notices),132)
         # A projection must not mutate the accepted graph supplied by its caller.
         self.assertEqual(original,{r['key']:r['payload'] for r in self.graph['records']})
+
+    def test_sparse_checkout_cannot_publish_tracked_inputs_as_missing(self):
+        data=copy.deepcopy(self.graph)
+        data['inputs']['research/ACTIVE_TEST.md']='missing'
+        with patch('claim_kb.web_export.build_graph',return_value=data):
+            with self.assertRaisesRegex(ValueError,'not materialized'):
+                build(ROOT)

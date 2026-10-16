@@ -1,6 +1,7 @@
 """Deterministic, metadata-only atlas snapshot from reviewed canonical inputs."""
 from pathlib import Path
 import json
+import subprocess
 from copy import deepcopy
 from .adapters import build_graph
 from .model import canonical, public_view, sha, validate
@@ -34,7 +35,15 @@ def project(data):
 
 
 def build(root):
-    return project(build_graph(root))
+    data = build_graph(root)
+    for path, digest in data['inputs'].items():
+        if digest != 'missing':
+            continue
+        tracked = subprocess.run(['git', 'ls-files', '--error-unmatch', '--', path],
+                                 cwd=root, capture_output=True)
+        if tracked.returncode == 0:
+            raise ValueError('Tracked KB provenance input is not materialized: '+path)
+    return project(data)
 
 
 def write(root, destination):
