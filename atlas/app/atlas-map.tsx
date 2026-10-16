@@ -11,6 +11,7 @@ import { terrainOnlyStyle, terrainFallback } from "./atlas-terrain-style";
 import type { Camera as MapCamera } from "./atlas-explorer-model";
 import sceneData from "./atlas-scenes.json";
 import "./atlas-explore.css";
+import "./atlas-qumran-pilot.css";
 import GroundView from "./atlas-ground";
 import ScrollView from "./atlas-scroll";
 import SceneView from "./atlas-scene";
@@ -36,6 +37,10 @@ export default function AtlasMap(props:Props) {
   const [exaggeration,setExaggeration]=useState(1.5);
   const [terrainState,setTerrainState]=useState("loading");
   const [mapZoom,setMapZoom]=useState(10.3);
+  const [pilotEnabled,setPilotEnabled]=useState(true);
+  const [pilotState,setPilotState]=useState("loading");
+  const pilotPlace=focusId==="kh_qumran"||focusId==="wadi_qumran";
+  const pilotActive=pilotPlace&&mode==="3d"&&pilotEnabled;
   const restoring=useRef(false);
   const [coordinates,setCoordinates]=useState("31.820° N · 35.367° E");
   const reduced=useRef(false);
@@ -61,7 +66,7 @@ export default function AtlasMap(props:Props) {
           style=structuredClone(terrainFallback);
         }
         if(gone||!container.current)return;
-        const map=new lib.Map({container:container.current,style,...INITIAL,maxZoom:22,minZoom:6,maxPitch:75,attributionControl:false,renderWorldCopies:false});
+        const map=new lib.Map({container:container.current,style,...INITIAL,maxZoom:22,minZoom:6,maxPitch:85,attributionControl:false,renderWorldCopies:false});
         mapRef.current=map;
         map.addControl(new lib.AttributionControl({compact:true}),"bottom-right");
         map.addControl(new lib.ScaleControl({maxWidth:80,unit:"metric"}),"bottom-right");
@@ -151,6 +156,29 @@ export default function AtlasMap(props:Props) {
   useEffect(()=>{const map=mapRef.current;if(ready&&map&&props.restoreCamera){restoring.current=true;map.stop();map.jumpTo(props.restoreCamera);requestAnimationFrame(()=>{restoring.current=false})}},[ready,props.restoreNonce]);
   useEffect(()=>{if(mobileView==="map")requestAnimationFrame(()=>mapRef.current?.resize())},[mobileView]);
 
+  useEffect(()=>{
+    const map=mapRef.current;if(!ready||!map)return;let cancelled=false;
+    const layerId="qumran-source-pilot";
+    if(!pilotActive){if(map.getLayer(layerId))map.removeLayer(layerId);return;}
+    setPilotState("loading");
+    void import("./atlas-qumran-pilot").then(({createQumranLayer})=>{
+      if(cancelled||mapRef.current!==map)return;
+      if(!map.getLayer(layerId))map.addLayer(createQumranLayer(map,message=>setPilotState(message)));
+      setPilotState(previous=>previous==="loading"?"ready":previous);
+    }).catch(()=>{if(!cancelled)setPilotState("Site detail could not load. Open the source plan instead.")});
+    return()=>{cancelled=true;if(mapRef.current===map&&map.getLayer(layerId))map.removeLayer(layerId);};
+  },[ready,pilotActive]);
+
+  async function visitPilot(stop:"overview"|"intake"|"branch"|"tunnel"){
+    const map=mapRef.current;if(!map||!ready)return;
+    try{const {pilotStops,pilotLocation}=await import("./atlas-qumran-pilot");
+      if(mapRef.current!==map)return;
+      setPilotEnabled(true);setExaggeration(1);if(mode!=="3d")onMode("3d");
+      // Apply the transition after React's map-mode effect, so it cannot reset the low pitch.
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{const s=pilotStops[stop];if(mapRef.current===map){map.setTerrain({source:"terrain",exaggeration:1});map.flyTo({center:pilotLocation(s.x,s.z),zoom:s.zoom,pitch:s.pitch,bearing:0,duration:reduced.current?0:1400});}}));
+    }catch{setPilotState("Site detail could not load. Open the source plan instead.")}
+  }
+
   function inspectSite(){
     const place=places.find(p=>p.id===focusId);
     if(place?.lat==null||place.lon==null)return;
@@ -178,6 +206,16 @@ export default function AtlasMap(props:Props) {
     <div className="map-selection-note" aria-live="polite">{selectedPlace?<><strong>{selectedPlace.shortName}</strong><span>{selectedPlace.lat===null?"No coordinate assigned":`Shaded candidate area · ${selectedPlace.precision}`}</span><small>{selectedPlace.lat===null?"This location remains unplaced.":"Approximate extent, not a surveyed boundary."}</small>{mapZoom>=18&&<small>Close map zoom enlarges the available imagery. Open 3D / plan for source-based structure detail.</small>}<div className="site-inspection-actions"><button type="button" onClick={props.onExploreSite??inspectSite} disabled={!props.onExploreSite&&(selectedPlace.lat==null||selectedPlace.lon==null||!ready)}><span className="atlas-desktop-label">Explore candidate</span><span className="atlas-mobile-label">Open site</span></button><button type="button" onClick={()=>onMode("dossier")}><span className="atlas-desktop-label">Structures &amp; evidence</span><span className="atlas-mobile-label">Evidence</span></button></div>{scene&&<button type="button" className="site-photo-preview" onClick={()=>onMode("ground")}><img src={scene.src} alt="" loading="lazy" onError={event=>{event.currentTarget.hidden=true}}/><span>{scene.title} · {scene.highlights.length} details</span></button>}</>:<span>No mapped candidate for this entry.</span>}</div>
     <div className="map-legend"><span><i className="legend-area"/>Selected area</span><span><i className="legend-area alternate"/>Other candidates</span></div>
     <div className="map-loaded-note">{coordinates}</div>
+    {!offMap&&pilotPlace&&<div className="qumran-pilot" aria-label="Qumran terrain detail pilot">
+      <div className="qumran-pilot-title"><strong>Qumran site detail</strong><span>Approximate placement</span></div>
+      <nav aria-label="Fly to Qumran site features">
+        <button disabled={!ready} onClick={()=>void visitPilot("overview")}>Zoom to site</button>
+        {pilotActive&&<><button disabled={!ready} onClick={()=>void visitPilot("intake")}>Intake</button><button disabled={!ready} onClick={()=>void visitPilot("branch")}>Branch</button><button disabled={!ready} onClick={()=>void visitPilot("tunnel")}>Tunnel · low view</button></>}
+      </nav>
+      <details><summary>Sources &amp; display limits</summary><p>Ilan–Amit 1989, p. 283, Fig. 1 supplies selected channel and branch relationships. Davey CJD979 (1974), Reeder–Jol Fig. 2 and Magen–Peleg Fig. 87 supply tunnel-mouth references. Limestone, rubble, masonry courses, cross-sections, heights and the rock setting are illustrative rendering detail.</p><p>The Wadi Qumran anchor has approximately 500 m uncertainty. Position, bearing and display scale are unregistered. The raised outcrop exposes the model above the modern terrain; it does not reproduce surveyed gorge relief. This pilot is not a photogrammetric reconstruction.</p><a href="https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry21_feature_comparison.md" target="_blank" rel="noreferrer">Reference and feature record</a><label><input type="checkbox" checked={pilotEnabled} onChange={e=>setPilotEnabled(e.target.checked)}/> Show illustrative site geometry</label></details>
+      {pilotActive&&pilotState!=="ready"&&<small role="status">{pilotState==="loading"?"Loading site detail…":pilotState}</small>}
+      {pilotActive&&pilotState==="ready"&&<small>Same map camera · pinch or scroll closer · two fingers to tilt</small>}
+    </div>}
     {!offMap&&!ready&&!error&&<div className="map-status" role="status">Unfolding the map…</div>}
     {!offMap&&error&&<div className="map-status" role="status">{error}<button onClick={()=>setRetry(v=>v+1)}>Retry map</button></div>}
     {mode==="ground"&&<GroundView key={`${focusId}-${entry.id}`} place={selectedPlace} entry={entry} places={places} onPlace={onPlace}/>}

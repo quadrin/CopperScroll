@@ -156,3 +156,10 @@ The IV/17 model is a suitable bounded pilot: its plan scale and reported height 
 ### Phone navigation
 
 At widths up to 900px, all six primary sections fit in a single row. The passage, candidate and site-plan selectors live in the expandable passage/place panel; the current selection and search stay visible. Native selectors use 16px text and controls use 44px targets. Escape, outside taps and navigation close the panel. The map keeps mode/north controls in its first row and details/layers/zoom in a second row, above a bounded selected-site card. The site viewer uses a compact view switch and a 56px collapsed feature drawer. Safe-area spacing follows the dynamic viewport.
+# Qumran terrain pilot
+
+Select Khirbet Qumran or Wadi Qumran on the map and choose **Zoom to site**. Intake, Branch and Tunnel low-view controls move the same geographic map camera. Terrain mode loads an illustrative site mesh directly into MapLibre’s shared 3D render pipeline; source/limits disclosure includes a geometry visibility toggle.
+
+Ilan–Amit 1989 p. 283 Fig. 1 supplies sampled channel/branch relationships; the existing Davey CJD979, Reeder–Jol Fig. 2 and Magen–Peleg Fig. 87 comparison supplies tunnel-mouth references. Weathering, rubble, masonry, vertical geometry, display scale, bearing and the raised outcrop are illustrative. The existing Wadi Qumran anchor has approximately 500 m uncertainty. The model is neither surveyed placement nor photogrammetry. No reference photographs or publication-page pixels are redistributed as textures.
+
+`node scripts/check-qumran-pilot.mjs` checks geometry, anchor directions and camera stops without a GPU. GPU visual verification and photo-level fidelity remain unverified in this environment.

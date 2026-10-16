@@ -1,0 +1,10 @@
+.qumran-pilot{position:absolute;z-index:8;top:128px;left:24px;width:min(370px,calc(100% - 48px));padding:12px 14px;border:1px solid #b6ac92;border-radius:8px;background:#fffcf3f5;color:#443c2d;box-shadow:0 3px 15px #30291418;font:12px/1.45 Arial,sans-serif;max-height:calc(100% - 320px);overflow:auto}
+.qumran-pilot-title{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.qumran-pilot-title strong{font-size:14px}.qumran-pilot-title span{font-size:10px;color:#80572e}
+.qumran-pilot nav{display:flex;gap:5px;flex-wrap:wrap;margin:9px 0}
+.qumran-pilot nav button{min-height:44px;padding:8px 10px;border:1px solid #c4b99e;border-radius:5px;background:#f5f0e3;color:#31594b;font-size:12px;cursor:pointer}
+.qumran-pilot nav button:first-child{background:#31594b;color:white;border-color:#31594b}
+.qumran-pilot nav button:disabled{opacity:.5;cursor:default}
+.qumran-pilot summary{cursor:pointer;min-height:30px;display:list-item;align-content:center}
+.qumran-pilot p{margin:7px 0}.qumran-pilot a{color:#31594b;text-decoration:underline}.qumran-pilot label{display:flex;gap:8px;align-items:center;min-height:44px}.qumran-pilot input{width:18px;height:18px}.qumran-pilot small{display:block;font-size:10px;color:#6f6655}
+@media(max-width:900px){.unified-atlas .qumran-pilot{top:124px;left:12px;width:calc(100% - 24px);padding:8px 10px;max-height:calc(62% - 136px)}.qumran-pilot-title strong{font-size:12px}.qumran-pilot nav{margin:5px 0;gap:4px}.qumran-pilot nav button{flex:1;min-width:0;font-size:11px;padding:6px}.qumran-pilot small{display:none}.unified-atlas .map-surface:has(.qumran-pilot) .terrain-controls{left:auto;right:12px;top:12px;transform:translateY(44px);display:none}}
