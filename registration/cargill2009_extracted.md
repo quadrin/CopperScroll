@@ -1,4 +1,4 @@
-Robert R. Cargill, *Qumran through (Real) Time: A Virtual Reconstruction of Qumran and the Dead Sea Scrolls* (Piscataway, NJ: Gorgias Press, 2009; ISBN 9781463216795), https://www.perlego.com/book/1162770; accessed 16 October 2026 in the signed-in Perlego reader (PDF with a text layer). Printed pages are taken from the running heads. The colour plates sit between reader pages c. 147 and 183, so reader and printed numbers do not keep one offset (printed p. 125 = reader 184; printed 163 ≈ reader 216). Read: ch. 6 §§6 intro–6.6 (pp. 125–131); §8.3.3 (pp. 162–164); ch. 10 §§10.1.5 (in part) and 10.2–10.2.4 (pp. 205–213). "Find in book" was used to locate "Copper Scroll" (11 hits) and "dam". No page images were captured. The plate block (reader pp. c. 147–183) was checked by caption only: plates 3.1–5.27 are mainly Cargill's virtual-reality reconstructions, not field photographs. The chapter 6 plates were not located or inspected.
+Robert R. Cargill, *Qumran through (Real) Time: A Virtual Reconstruction of Qumran and the Dead Sea Scrolls* (Piscataway, NJ: Gorgias Press, 2009; ISBN 9781463216795), https://www.perlego.com/book/1162770; accessed 16 October 2026 in the signed-in Perlego reader (PDF with a text layer). Printed pages are taken from the running heads. The colour plates sit between reader pages c. 147 and 183, so reader and printed numbers do not keep one offset (printed p. 125 = reader 184; printed 163 ≈ reader 216). Read: ch. 6 §§6 intro–6.6 (pp. 125–131); §8.3.3 (pp. 162–164); ch. 10 §§10.1.5 (in part) and 10.2–10.2.4 (pp. 205–213). "Find in book" was used to locate "Copper Scroll" (11 hits) and "dam". No page images were captured. Plates come in two blocks: reader pp. c. 147–183 (plates 3.1–5.27) and c. 281–300 (chapter 6 onwards). Plates 6.1–6.4 and 6.6 were viewed on 16 October, and the captions of 6.1–6.11 were read. After that the reader showed a CAPTCHA, which was not solved; the chapter 8 plates (dam, aqueduct, outlying areas) were therefore not reached.
 
 # Cargill 2009: Qumran water-system phases for entries 20–23 (R01)
 
@@ -32,6 +32,14 @@ Robert R. Cargill, *Qumran through (Real) Time: A Virtual Reconstruction of Qumr
 ## Chronology (§10.2, pp. 209–213)
 
 - **Evidence.** Phase 1, Iron II: a small fort and L110. Phase 2: a Hasmonean fortress, 140–130 BCE (de Vaux Ia), whose location was chosen "only because of a preexisting water system". Phase 3: sectarian reoccupation around 110–100 BCE (Ib). Phase 4: 31 BCE to 68 CE (Period II).
+
+## Chapter 6 plates (viewed)
+
+- **Evidence — Pl. 6.1.** Two photographs of the remains of the L138 miqveh show two flights of steps descending into it, beside a reconstruction.
+- **Evidence — Pl. 6.2 caption.** L110 "was fed by a backflow channel from the south, which branched west from the main channel to the east. An overflow channel (red arrow) connects Locus 110 to the Locus 118 pool to the north."
+- **Evidence — Pl. 6.3 caption.** L118 "was fed by a backflow channel branching from the main channel, as well as from an overflow channel leading from the round Locus 110 cistern."
+- **Inference.** The captions make the small channel carry water from L110 to L118. The text (p. 129) only says it "may have served as an overflow outlet". Neither gives a level or a contact, so the direction is Cargill's model, not an observation.
+- **Pls. 6.2–6.4, 6.6.** These are renders of Cargill's virtual model (L110 with its channels, L118 and L117 with their steps and partitions, L69). They are reconstructions. They do not record the L117 outlet, rim or step joint as found.
 
 ## What the book does not say (in the parts read)
 

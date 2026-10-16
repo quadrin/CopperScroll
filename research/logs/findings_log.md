@@ -1427,6 +1427,14 @@ Read in the signed-in Perlego reader: [Jericho extraction](../../registration/di
 - **Gorge works.** Plates 143–147 show the natural basin "halfway down the cliff face at the head of the great gorge", the conduit, and the rock-cut tunnel. Seen in the images: the basin is a rocky hollow with no visible masonry, dam or cut channel (pl. 143); the conduit enters the rock at one bedding level (pl. 144); the tunnel has a squared side opening cut through its left wall that the caption does not mention (pl. 145). Inference: that opening may be one of the long-tunnel openings already recorded (Schulz's A or B); this frame cannot say which. No plate shows a stone north of the intake.
 - **Coins.** The model legend says "three juglets"; plate 173 says one juglet with "two other deposits", and plate 174 "well over five hundred". Allegro's own text is the source of the three-juglet account. Callegher's catalogue (p. 59) describes two pots and a narrow-necked vessel, with 561 coins.
 
+### Figures checked, 16 October 2026 (later the same day)
+
+The owner asked for the figures of Kowalewska, Regev and Cargill to be checked as well; they are now noted in each extraction file.
+
+- **Kowalewska.** Her distribution maps (Figs. 3.1–3.2) mark no bathhouse in Jerusalem, at Siloam or at Ramat Raḥel before the 2nd century CE, which agrees with her text. No plan of the Ramat Rahel bath is printed.
+- **Regev.** His map of Hasmonean ritual baths (Fig. 1.1) does not mark Ramat Rachel, so the date of the bath next to a tomb there stays open. The histogram (Fig. 3.2) agrees with "213 of 306" caves having six or fewer loculi. Figs. 6.2–6.5 and 7.3–7.4 are access graphs with no positions.
+- **Cargill.** Plates 6.2–6.3 say an overflow channel carries water from L110 to L118; the text says only that the channel "may have served as an overflow outlet". The plates are renders of his model and do not show the L117 joint as found. The chapter 8 plates were not reached: the reader showed a CAPTCHA, which was not solved.
+
 ### Record conflicts flagged, not edited
 
 - The frozen hoard tables code L120 hoard C as "threshold" ([hoards_full](../comparanda/hoards_full/hoards.csv) row 159; concealment comparanda row 159). Callegher p. 59 puts only the two pots by the door.

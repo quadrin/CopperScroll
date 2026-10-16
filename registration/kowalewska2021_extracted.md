@@ -1,4 +1,4 @@
-Arleta Kowalewska, *Bathhouses in Iudaea, Syria-Palaestina and Provincia Arabia from Herod the Great to the Umayyads* (Oxford: Oxbow Books, 2021; ISBN 9781789256581), https://www.perlego.com/book/2697548; accessed 16 October 2026 in the signed-in Perlego reader (reflowed ePub text). The reader states "Page numbers were not provided for this title", so citations give the section and the bathhouse database number in square brackets. Read: §1.8, §2.5 (Judea and Samaria, all site paragraphs listed below), §3.1 (Chronology, with Tables 3.1–3.2). Searched in the loaded chapters 1–3: "Siloam", "Shiloah", "Copper Scroll" (no hits). No page images were captured, and the book's figures were not inspected.
+Arleta Kowalewska, *Bathhouses in Iudaea, Syria-Palaestina and Provincia Arabia from Herod the Great to the Umayyads* (Oxford: Oxbow Books, 2021; ISBN 9781789256581), https://www.perlego.com/book/2697548; accessed 16 October 2026 in the signed-in Perlego reader (reflowed ePub text). The reader states "Page numbers were not provided for this title", so citations give the section and the bathhouse database number in square brackets. Read: §1.8, §2.5 (Judea and Samaria, all site paragraphs listed below), §3.1 (Chronology, with Tables 3.1–3.2). Searched in the loaded chapters 1–3: "Siloam", "Shiloah", "Copper Scroll" (no hits). Figures viewed and zoomed in the reader on 16 October: Figs. 2.30, 2.42, 3.1, 3.2, 3.11 (part), 3.12 and 3.13; the list of figures was checked for every other Judean item. No image is in Git.
 
 # Kowalewska 2021: bathhouses for entries 46 and 49
 
@@ -34,6 +34,15 @@ Entry 49 depends partly on Milik's reading of a "bathhouse" (בית חמים) at
 - **Evidence.** Shuafat, north of Jerusalem: Jewish bathhouse(s) [119] with a brick hypocaust and plastered pools, in a neighbourhood abandoned about the Bar Kokhba Revolt (Sklar-Parnes 2005; 2006).
 - **Evidence (§1.8).** In the 1st centuries BCE–CE some affluent houses in Iudaea had what Netzer calls Judeo-Hellenistic bathrooms: a miqveh room beside a room with a bathtub, usually heated from the other side of its wall (Netzer 1999, 48–9; 2006, 255).
 - **Evidence.** Qalandia, once published as a bathhouse, was later shown to be a winepress (Kloner 2006, 861).
+
+## Figures (viewed)
+
+- **Fig. 2.30, map of Judaea and Samaria with database numbers.** Jerusalem/Aelia Capitolina carries [29, 41, 48, 49, 54, 110, 111, 131]; Givat haArbaa [72] and Ramat Rahel [65] lie just south; Jericho carries [157, 169–172, 176]; [157] is the Umayyad bath at Kh. al-Mafjar.
+- **Fig. 3.1, the earliest bathhouses (1st c. BCE).** Herodian sites only near Jerusalem: Cypros, Jericho, Herodion, Masada and Machaerus, plus Kh. el-Muraq [166], Tel Hashash and Ramat haNadiv as "other". Jerusalem is shown as a city only, with no bathhouse number.
+- **Fig. 3.2, bathhouses of the later 1st–early 2nd c. CE.** Near Jerusalem only Shuafat [119], Shoham [181] and Kh. Umm el-Umdan [116]; Ein Gedi [8]. Again no Jerusalem number and no Ramat Rahel.
+- **Inference (entries 46, 49).** The two maps agree with the text: no bathhouse in Jerusalem, at Siloam or at Ramat Raḥel before the 2nd century CE. No plan of the Ramat Rahel bathhouse is printed; this fits the text's "never fully recorded".
+- **Fig. 2.42 (photograph) and Fig. 3.13 (plans).** At Jericho's Third Winter Palace a deep plastered collecting pool lies beside a stepped pool, with opus reticulatum walls behind. The plans show stepped pools inside the bath suites at Jericho (Third Winter Palace), Herodion (Large Bathhouse), Cypros (both) and Masada.
+- **Fig. 3.11.** The plan of the Bathhouse West of the Temple Mount is phase I (2nd c. CE), after Mazar 2011.
 
 ## What the book does not say (in the parts read)
 

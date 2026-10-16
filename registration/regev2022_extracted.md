@@ -1,4 +1,4 @@
-Eyal Regev, *The Social Archaeology of Late Second Temple Judaea: From Purity, Burial, and Art, to Qumran, Herod, and Masada* (London/New York: Routledge, 2022), https://www.perlego.com/book/3535764; accessed 16 October 2026 in the signed-in Perlego reader (PDF with a text layer). Pages are the reader's `page_number` for each "Find in book" hit; the rendered text has no printed folios to confirm them. Read: the passages around each hit listed below (ch. 2 p. 36; ch. 3 pp. 62, 66, 69). Searched: "Copper Scroll", "Absalom", "Helena", "Siloam", "Bethesda" (no hits); "Zadok", "Kidron", "Silwan", "nefesh" (hits not relevant to the scroll's places; see below). No page images were captured, and the book's figures were not inspected.
+Eyal Regev, *The Social Archaeology of Late Second Temple Judaea: From Purity, Burial, and Art, to Qumran, Herod, and Masada* (London/New York: Routledge, 2022), https://www.perlego.com/book/3535764; accessed 16 October 2026 in the signed-in Perlego reader (PDF with a text layer). Pages are the reader's `page_number` for each "Find in book" hit; the rendered text has no printed folios to confirm them. Read: the passages around each hit listed below (ch. 2 p. 36; ch. 3 pp. 62, 66, 69). Searched: "Copper Scroll", "Absalom", "Helena", "Siloam", "Bethesda" (no hits); "Zadok", "Kidron", "Silwan", "nefesh" (hits not relevant to the scroll's places; see below). Figures viewed in the reader on 16 October: Figs. 1.1, 3.1, 3.2, 4.1–4.4, 6.2–6.5, 7.1, 7.3 and 7.4. No image is in Git.
 
 # Regev 2022: miqvaʾot beside tombs, and Jerusalem burial caves
 
@@ -21,6 +21,15 @@ Eyal Regev, *The Social Archaeology of Late Second Temple Judaea: From Purity, B
 ## Other hits (no bearing on entries)
 
 - "Kidron": an ossuary deposit and bibliography only. "Silwan": ossuary inscriptions from a cave on Har Hamashhit. "Zadok": 1QS on the Sons of Zadok. "nefesh": a decoration motif on ossuaries.
+
+## Figures (viewed)
+
+- **Fig. 1.1 (p. 17), ritual baths in the Hasmonean period.** The largest symbols (7–12 baths) are Jerusalem, Jericho, Qumran and Gezer; Qalandia has 3; Cypros, Kh. Ashun, Kh. al-Mukhayyat, Machaerus and Gamla have 1. Ramat Rachel is not marked. Inference: the Ramat Rachel bath next to a tomb (p. 36) is not shown as Hasmonean on this map; its date stays open.
+- **Fig. 3.2 (p. 63), burial caves by number of loculi.** The bars read about 113 caves with 2–4 loculi, 100 with 5–6, 37 with 7–8, 21 with 9–10, 15 with 11–12, 8 with 13–14, 4 with 15–16, then single figures up to 36–40. This agrees with "213 (70%)" of 306 having no more than six.
+- **Fig. 3.1 (p. 56).** The Gilo pit-bench cave: one chamber with a central pit and a blocked entrance, scale 2 m.
+- **Fig. 4.1 (p. 86).** The French Hill cave: a central chamber with a standing pit, loculi A–F, and ossuaries numbered 1–14. Figs. 4.2–4.4 are charts of sex and age per loculus and ossuary, not plans.
+- **Fig. 7.1 (p. 160).** A deep, plastered, stepped ritual bath in Herod's second palace at Jericho.
+- **Figs. 6.2–6.5, 7.3 and 7.4.** These are access graphs (nodes and links), not plans. They carry no positions or measurements; Fig. 7.3 labels four ritual baths in the First Palace at Jericho.
 
 ## What the book does not say (in the parts read)
 
