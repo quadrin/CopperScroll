@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import vm from 'node:vm';
+import ts from 'typescript';
+import React from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+const require=createRequire(import.meta.url);
+function compile(file,deps={}){const exports={};const code=ts.transpileModule(readFileSync(new URL(file,import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;vm.runInNewContext(code,{exports,URLSearchParams,require:n=>n.endsWith('.css')?{}:deps[n]??require(n)});return exports;}
+const routing=compile('../app/atlas-navigation.ts');
+const nav=compile('../app/atlas-site-nav.tsx',{'./atlas-navigation':routing});
+const html=renderToStaticMarkup(React.createElement(nav.default,{entry:'21',active:'map',planId:'qumran-ilan'}));
+const primary=html.match(/<nav aria-label="Atlas sections">(.*?)<\/nav>/)?.[1];
+assert(primary);assert.equal((primary.match(/<a /g)??[]).length,3);assert(primary.includes('Evidence')&&primary.includes('Map')&&primary.includes('Sources'));
+assert(html.includes('More sections'));assert(html.includes('#entry-21/site/qumran-ilan/source'));assert(!html.includes('Eye-level simulation'));
+assert.equal(nav.sectionRoutes('25','abu-saraj-iv17').map,'#entry-25/2d');
+assert.equal(nav.sectionRoutes('25','abu-saraj-iv17').sites,'#entry-25/site/abu-saraj-iv17/source');
+const map=readFileSync(new URL('../app/atlas-map.tsx',import.meta.url),'utf8');
+assert(map.includes('[pilotEnabled,setPilotEnabled]=useState(false)'));
+assert(map.includes('hidden={!placeExpanded}'));assert(map.includes('document.addEventListener("pointerdown",close)'));assert(map.includes('document.addEventListener("keydown",escape)'));
+assert(!map.includes('className="map-selection-note"'));assert(!map.includes('className="terrain-controls"'));assert(!map.includes('className="map-legend"'));
+assert(map.includes('ready&&!error&&pilotActive'));assert.equal((map.match(/className="map-place-panel"/g)??[]).length,1);
+console.log('Interface checks passed: three primary routes, source-plan defaults, one place panel, opt-in experimental model, dismissal handlers and no legacy floating cards.');

@@ -21,7 +21,7 @@ export default function SiteExplorer(p: Props) {
  const highlight = scene?.highlights.find(h=>h.id===p.highlightId);
  const photo = view === "photo";
  const walking=p.representation==="walk";
- const model = !photo && plan.kind !== "survey-map" && (p.representation ?? "model") !== "source";
+ const model = !photo && plan.kind !== "survey-map" && (p.representation ?? "source") !== "source";
  const stage = useRef<HTMLDivElement>(null);
  const svg = useRef<SVGSVGElement>(null);
  const drag = useRef<{ pointers: globalThis.Map<number,{x:number;y:number}>; origin: Viewport; start: {x:number;y:number}; distance: number } | null>(null);

@@ -1,15 +1,13 @@
 "use client";
 
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { Box, Camera, Compass, LocateFixed, Map, Minus, Mountain, Plus, RotateCcw } from "lucide-react";
+import { Map, Minus, Mountain, Plus } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Slider } from "@/components/ui/slider";
 import type { Map as LibreMap, Marker, StyleSpecification, GeoJSONSource } from "maplibre-gl";
 import type { Entry, Place } from "./atlas-types";
 import { candidateAreas, candidateBounds } from "./atlas-geography";
 import { terrainOnlyStyle, terrainFallback } from "./atlas-terrain-style";
 import type { Camera as MapCamera } from "./atlas-explorer-model";
-import sceneData from "./atlas-scenes.json";
 import "./atlas-explore.css";
 import "./atlas-qumran-pilot.css";
 import GroundView from "./atlas-ground";
@@ -18,7 +16,7 @@ import SceneView from "./atlas-scene";
 const LandscapeView=lazy(()=>import("./atlas-landscape"));
 const DossierView=lazy(()=>import("./atlas-dossier"));
 
-type Props = { entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void; onExploreSite?: () => void; onCamera?: (camera: MapCamera) => void; restoreCamera?: MapCamera; restoreNonce?: number; onRecord?: (id: string) => void; recordId?: string | null; scrollPhoto?: boolean; scrollColumn?: number; onScrollColumn?: (column: number) => void; onScrollPhoto?: (show: boolean, id?: string) => void };
+type Props = { entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void; onExploreSite?: () => void; onDetails?: () => void; onCamera?: (camera: MapCamera) => void; restoreCamera?: MapCamera; restoreNonce?: number; onRecord?: (id: string) => void; recordId?: string | null; scrollPhoto?: boolean; scrollColumn?: number; onScrollColumn?: (column: number) => void; onScrollPhoto?: (show: boolean, id?: string) => void };
 const INITIAL = { center: [35.367, 31.82] as [number,number], zoom: 10.3 };
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
 export default function AtlasMap(props:Props) {
@@ -32,18 +30,28 @@ export default function AtlasMap(props:Props) {
   const [ready,setReady]=useState(false);
   const [error,setError]=useState("");
   const [retry,setRetry]=useState(0);
-  const [bearing,setBearing]=useState(0);
   const [modernLayerCount,setModernLayerCount]=useState<number|null>(null);
   const [exaggeration,setExaggeration]=useState(1.5);
   const [terrainState,setTerrainState]=useState("loading");
   const [mapZoom,setMapZoom]=useState(10.3);
-  const [pilotEnabled,setPilotEnabled]=useState(true);
+  const [pilotEnabled,setPilotEnabled]=useState(false);
+  const [placeExpanded,setPlaceExpanded]=useState(false);
+  const optionsRef=useRef<HTMLDetailsElement>(null);
+  const placeToggle=useRef<HTMLButtonElement>(null);
   const [pilotState,setPilotState]=useState("loading");
   const pilotPlace=focusId==="kh_qumran"||focusId==="wadi_qumran";
   const pilotActive=pilotPlace&&mode==="3d"&&pilotEnabled;
   const restoring=useRef(false);
   const [coordinates,setCoordinates]=useState("31.820° N · 35.367° E");
   const reduced=useRef(false);
+  useEffect(()=>{setPlaceExpanded(false);optionsRef.current?.removeAttribute("open");},[focusId,mode]);
+  useEffect(()=>{setPilotEnabled(false);},[focusId]);
+  useEffect(()=>{
+    const close=(e:PointerEvent)=>{if(!optionsRef.current?.contains(e.target as Node))optionsRef.current?.removeAttribute("open");};
+    const escape=(e:KeyboardEvent)=>{if(e.key!=="Escape")return;if(optionsRef.current?.open){optionsRef.current.removeAttribute("open");optionsRef.current.querySelector("summary")?.focus();}setPlaceExpanded(false);};
+    document.addEventListener("pointerdown",close);document.addEventListener("keydown",escape);
+    return()=>{document.removeEventListener("pointerdown",close);document.removeEventListener("keydown",escape);};
+  },[]);
 
   useEffect(()=>{
     let gone=false;let observer:ResizeObserver;let timeout:ReturnType<typeof setTimeout>;
@@ -70,7 +78,6 @@ export default function AtlasMap(props:Props) {
         mapRef.current=map;
         map.addControl(new lib.AttributionControl({compact:true}),"bottom-right");
         map.addControl(new lib.ScaleControl({maxWidth:80,unit:"metric"}),"bottom-right");
-        map.on("rotate",()=>setBearing(map.getBearing()));
         map.on("moveend",()=>{const p=map.getCenter();setCoordinates(`${p.lat.toFixed(3)}° N · ${p.lng.toFixed(3)}° E`);setMapZoom(map.getZoom());latest.current.onCamera?.({center:[p.lng,p.lat],zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()});});
         map.on("error",e=>{
           if(gone)return;
@@ -173,6 +180,7 @@ export default function AtlasMap(props:Props) {
     const map=mapRef.current;if(!map||!ready)return;
     try{const {pilotStops,pilotLocation}=await import("./atlas-qumran-pilot");
       if(mapRef.current!==map)return;
+      if(latest.current.focusId!==focusId)return;
       setPilotEnabled(true);setExaggeration(1);if(mode!=="3d")onMode("3d");
       // Apply the transition after React's map-mode effect, so it cannot reset the low pitch.
       requestAnimationFrame(()=>requestAnimationFrame(()=>{const s=pilotStops[stop];if(mapRef.current===map){map.setTerrain({source:"terrain",exaggeration:1});map.flyTo({center:pilotLocation(s.x,s.z),zoom:s.zoom,pitch:s.pitch,bearing:0,duration:reduced.current?0:1400});}}));
@@ -191,31 +199,37 @@ export default function AtlasMap(props:Props) {
     mapRef.current?.fitBounds([[Math.min(...bounds.map(b=>b[0][0])),Math.min(...bounds.map(b=>b[0][1]))],[Math.max(...bounds.map(b=>b[1][0])),Math.max(...bounds.map(b=>b[1][1]))]],{padding:{top:110,bottom:150,left:50,right:60},maxZoom:16.7,pitch:mode==="3d"?55:0,duration:reduced.current?0:800});
   }
   const selectedPlace=places.find(p=>p.id===focusId)??null;
-  const scene=sceneData.find(s=>s.placeId===selectedPlace?.id);
   return <section className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""} ${immersive?"immersive-mode":""}`} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":"Interactive candidate map"}>
     <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} data-modern-layer-count={modernLayerCount??"loading"} data-map-zoom={mapZoom.toFixed(3)} data-map-center={coordinates} aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
     {!offMap&&<div className="map-toolbar">
       <Tabs value={mode} onValueChange={onMode} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger></TabsList></Tabs>
-      {!offMap&&<button className="tool-button" aria-label="Fit this entry’s candidates" title="Fit this entry’s candidates" onClick={fitEntry}><LocateFixed size={17}/></button>}
+      <details ref={optionsRef} className="map-options"><summary>Options</summary><div>
+        <button disabled={!ready} onClick={()=>{fitEntry();optionsRef.current?.removeAttribute("open")}}>Fit candidate area</button>
+        <button disabled={!ready} onClick={()=>{mapRef.current?.easeTo({bearing:0,duration:reduced.current?0:500});optionsRef.current?.removeAttribute("open")}}>Reset north</button>
+        <button disabled={!ready} onClick={()=>{overview();optionsRef.current?.removeAttribute("open")}}>Regional overview</button>
+        <button onClick={()=>onMode("landscape")}>Historical maps</button>
+        {mode==="3d"&&<label className="relief-option">Relief <span>{exaggeration.toFixed(1)}×</span><input aria-label="Terrain vertical exaggeration" type="range" min="1" max="3" step=".25" value={exaggeration} onChange={e=>setExaggeration(+e.target.value)}/></label>}
+        {mode==="3d"&&terrainState==="unavailable"&&<p role="status">Elevation tiles are unavailable. Switch to Map or retry.</p>}
+        {pilotPlace&&<label className="pilot-option"><input type="checkbox" disabled={!ready} checked={pilotEnabled} onChange={e=>{setPilotEnabled(e.target.checked);if(e.target.checked)void visitPilot("overview")}}/>Experimental site model<small>Approximate placement · unfinished geometry</small></label>}
+      </div></details>
     </div>}
-    <div className="map-caption">The Judean hills & the Jordan valley</div>
-    <button className="compass-control" aria-label="Reset map north" onClick={()=>mapRef.current?.easeTo({bearing:0,duration:500})}><span>N</span><Compass strokeWidth={1.1} style={{transform:`rotate(${-bearing}deg)`}}/></button>
-    {mode==="3d"&&<details className="terrain-controls"><summary>Terrain settings</summary><label>Terrain relief <span>{exaggeration.toFixed(1)}×</span></label><Slider aria-label="Terrain vertical exaggeration" value={[exaggeration]} min={1} max={3} step={.25} onValueChange={v=>setExaggeration(v[0])}/><span className="terrain-hint">Drag with the right mouse button to orbit. On touch, use two fingers.</span>{terrainState==="unavailable"&&<span className="terrain-hint">Elevation tiles are unavailable. Try 2D or reload.</span>}</details>}
-    <div className="zoom-controls"><button className="tool-button" aria-label="Zoom in" onClick={()=>mapRef.current?.zoomIn()}><Plus size={18}/></button><button className="tool-button" aria-label="Zoom out" onClick={()=>mapRef.current?.zoomOut()}><Minus size={18}/></button><button className="tool-button" aria-label="Regional overview" onClick={overview}><RotateCcw size={15}/></button></div>
-    <div className="map-selection-note" aria-live="polite">{selectedPlace?<><strong>{selectedPlace.shortName}</strong><span>{selectedPlace.lat===null?"No coordinate assigned":`Shaded candidate area · ${selectedPlace.precision}`}</span><small>{selectedPlace.lat===null?"This location remains unplaced.":"Approximate extent, not a surveyed boundary."}</small>{mapZoom>=18&&<small>Close map zoom enlarges the available imagery. Open 3D / plan for source-based structure detail.</small>}<div className="site-inspection-actions"><button type="button" onClick={props.onExploreSite??inspectSite} disabled={!props.onExploreSite&&(selectedPlace.lat==null||selectedPlace.lon==null||!ready)}><span className="atlas-desktop-label">Explore candidate</span><span className="atlas-mobile-label">Open site</span></button><button type="button" onClick={()=>onMode("dossier")}><span className="atlas-desktop-label">Structures &amp; evidence</span><span className="atlas-mobile-label">Evidence</span></button></div>{scene&&<button type="button" className="site-photo-preview" onClick={()=>onMode("ground")}><img src={scene.src} alt="" loading="lazy" onError={event=>{event.currentTarget.hidden=true}}/><span>{scene.title} · {scene.highlights.length} details</span></button>}</>:<span>No mapped candidate for this entry.</span>}</div>
-    <div className="map-legend"><span><i className="legend-area"/>Selected area</span><span><i className="legend-area alternate"/>Other candidates</span></div>
-    <div className="map-loaded-note">{coordinates}</div>
-    {!offMap&&pilotPlace&&<div className="qumran-pilot" aria-label="Qumran terrain detail pilot">
+    {!offMap&&<div className="zoom-controls"><button disabled={!ready} className="tool-button" aria-label="Zoom in" onClick={()=>mapRef.current?.zoomIn()}><Plus size={18}/></button><button disabled={!ready} className="tool-button" aria-label="Zoom out" onClick={()=>mapRef.current?.zoomOut()}><Minus size={18}/></button></div>}
+    {!offMap&&<aside className="map-place-panel" aria-label="Selected site" data-expanded={placeExpanded}>
+      <div className="map-place-summary"><button ref={placeToggle} className="map-place-toggle" aria-label="Show selected site details" aria-expanded={placeExpanded} aria-controls="map-place-details" onClick={()=>setPlaceExpanded(v=>!v)}><strong>{selectedPlace?.shortName??"Location unresolved"}</strong><span>{pilotActive?"Experimental model · approximate placement":selectedPlace?.lat==null?"No mapped coordinate":`Approximate position · ${selectedPlace.precision}`} · {placeExpanded?"Less":"Details"}</span></button><button className="map-primary-action" onClick={props.onExploreSite??inspectSite}>Site plan</button></div>
+      <div id="map-place-details" hidden={!placeExpanded}><p>{selectedPlace?.lat==null?"This location remains unplaced. The source plan can still be explored.":"Candidate area, not a surveyed boundary."}</p><nav aria-label="Selected site information"><button onClick={props.onDetails??onText}>Entry details</button><button onClick={()=>onMode("ground")}>Photos</button><button onClick={()=>onMode("dossier")}>Evidence</button></nav>
+      {pilotActive&&<div className="qumran-pilot" aria-label="Qumran terrain detail pilot">
       <div className="qumran-pilot-title"><strong>Qumran site detail</strong><span>Approximate placement</span></div>
       <nav aria-label="Fly to Qumran site features">
         <button disabled={!ready} onClick={()=>void visitPilot("overview")}>Zoom to site</button>
         {pilotActive&&<><button disabled={!ready} onClick={()=>void visitPilot("intake")}>Intake</button><button disabled={!ready} onClick={()=>void visitPilot("branch")}>Branch</button><button disabled={!ready} onClick={()=>void visitPilot("tunnel")}>Tunnel · low view</button></>}
       </nav>
       <details><summary>Sources &amp; display limits</summary><p>Ilan–Amit 1989, p. 283, Fig. 1 supplies selected channel and branch relationships. Davey CJD979 (1974), Reeder–Jol Fig. 2 and Magen–Peleg Fig. 87 supply tunnel-mouth references. Limestone, rubble, masonry courses, cross-sections, heights and the rock setting are illustrative rendering detail.</p><p>The Wadi Qumran anchor has approximately 500 m uncertainty. Position, bearing and display scale are unregistered. The raised outcrop exposes the model above the modern terrain; it does not reproduce surveyed gorge relief. This pilot is not a photogrammetric reconstruction.</p><a href="https://github.com/quadrin/CopperScroll/blob/main/research/sites/entry21_feature_comparison.md" target="_blank" rel="noreferrer">Reference and feature record</a><label><input type="checkbox" checked={pilotEnabled} onChange={e=>setPilotEnabled(e.target.checked)}/> Show illustrative site geometry</label></details>
-      {pilotActive&&pilotState!=="ready"&&<small role="status">{pilotState==="loading"?"Loading site detail…":pilotState}</small>}
+      {ready&&!error&&pilotActive&&pilotState!=="ready"&&<small role="status">{pilotState==="loading"?"Loading site detail…":pilotState}</small>}
       {pilotActive&&pilotState==="ready"&&<small>Same map camera · pinch or scroll closer · two fingers to tilt</small>}
-    </div>}
+      </div>}
+      </div>
+    </aside>}
     {!offMap&&!ready&&!error&&<div className="map-status" role="status">Unfolding the map…</div>}
     {!offMap&&error&&<div className="map-status" role="status">{error}<button onClick={()=>setRetry(v=>v+1)}>Retry map</button></div>}
     {mode==="ground"&&<GroundView key={`${focusId}-${entry.id}`} place={selectedPlace} entry={entry} places={places} onPlace={onPlace}/>}

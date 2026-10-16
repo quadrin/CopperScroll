@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **partly** — implemented the owner-approved approximate Qumran terrain pilot: shared map camera, source-relative channels, tunnel-mouth detail, instanced limestone/rubble and close-up feature stops. Placement, bearing, scale and vertical detail remain illustrative; the source disclosure records those limits. Geometry/type/build checks run; GPU visual verification unavailable. Photo-level fidelity remains unverified.
+Last session (16 October 2026 Los Angeles): **obtained** — simplified the screenshot’s overlapping map UI to one site card and one Options menu; collapsed passage selectors at all widths, reduced primary navigation and made source plans the default. The unfinished terrain model now requires explicit opt-in. Interface, route, geometry and build checks passed; GPU rendering remains unverified.
 
 ## Active questions and the observation that decides each
 

@@ -163,3 +163,7 @@ Select Khirbet Qumran or Wadi Qumran on the map and choose **Zoom to site**. Int
 Ilan–Amit 1989 p. 283 Fig. 1 supplies sampled channel/branch relationships; the existing Davey CJD979, Reeder–Jol Fig. 2 and Magen–Peleg Fig. 87 comparison supplies tunnel-mouth references. Weathering, rubble, masonry, vertical geometry, display scale, bearing and the raised outcrop are illustrative. The existing Wadi Qumran anchor has approximately 500 m uncertainty. The model is neither surveyed placement nor photogrammetry. No reference photographs or publication-page pixels are redistributed as textures.
 
 `node scripts/check-qumran-pilot.mjs` checks geometry, anchor directions and camera stops without a GPU. GPU visual verification and photo-level fidelity remain unverified in this environment.
+
+## Interface simplification
+
+Current navigation exposes Evidence, Map and Sources; More retains secondary sections. The passage/place selector collapses at every width. Maps render one compact site card and one Options menu, with source plans as the default destination. The unfinished Qumran terrain model requires explicit opt-in through Options. Separate pilot/selection cards, compass, terrain-settings panel and map-layer toolbar no longer render. Options dismisses on outside click, Escape and view changes. `node scripts/check-interface.mjs` checks navigation/defaults alongside existing route and geometry tests.
