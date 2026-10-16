@@ -78,7 +78,7 @@ The Phase 3 name test (Elitzur) is unaffected: Bezek (Elitzur no. 62) = Ibziq.
 
 ## The 1971 excavation (*HA* 40, p. 22)
 
-*Hadashot Arkheologiyot* 40 (1971), p. 22, entry "ח' אבזיק", read on 29 September 2026. The PDF is at <https://publications.iaa.org.il/cgi/viewcontent.cgi?article=1016&context=ha_hebrew_series>; the item page at `/ha_hebrew_series/1016` returns 403. The text was extracted through an automated reader and checked twice for wording. A direct look at the page image remains desirable.
+*Hadashot Arkheologiyot* 40 (1971), p. 22, entry "ח' אבזיק", read on 29 September 2026. The PDF is at <https://publications.iaa.org.il/cgi/viewcontent.cgi?article=1016&context=ha_hebrew_series>; the item page at `/ha_hebrew_series/1016` returns 403. The volume’s item page is <https://publications.iaa.org.il/ha_hebrew_series/17> (the URL in tables/phase5_reports.csv); on 15 October 2026 its metadata gave this same PDF (article=1016). The text was extracted through an automated reader and checked twice for wording. A direct look at the page image remains desirable.
 
 What the report says:
 

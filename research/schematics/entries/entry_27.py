@@ -79,7 +79,7 @@ ph = (sh - 10) / 2
 
 ax, ay, aw, ah = S.panel(c, sx, sy, sw, ph, "Variant: a dwelling or enclosure",
                          ["The files also allow משכן as a dwelling or enclosure",
-                          "(no editor named); the atlas calls it the queen's residence."],
+                          "(no editor named); the atlas title leaves both senses open."],
                          "Alternative sense · research files", "neutral")
 qcx, qcy, qr = ax + 130, ay + ah / 2, min(ah / 2 - 6, 92)
 S.quarters(c, qcx, qcy, qr, highlight={"W": "ochre"})

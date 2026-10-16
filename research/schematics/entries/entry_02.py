@@ -2,7 +2,8 @@
 
 Sources: text/translation_en.json I 5–6; text/readings.json e2-*; tables/landmark_lexicon_index.csv
 (nefesh, nidbakh); atlas/app/atlas-data.json; tables/phase3_site_index.csv;
-research/text/deeper_analysis_2026-09-30.md §9 (reported Gibson reading, unread).
+research/feature_workbench/edition_predicates_2026-10-13/entries2_26/README.md (Milik 1960 pp. 139, 144;
+Puech 2015 p. 29; Lefkovits 2000 p. 50); research/text/deeper_analysis_2026-09-30.md §9 (Gibson report, unread).
 """
 import sys
 from pathlib import Path
@@ -73,17 +74,17 @@ c.text(ex - 60, eg + 74, "Counted up from the ground: an assumption; the text do
 sx, sy, sw, sh = L["side"]
 ph = (sh - 10) / 2
 
-ax, ay, aw, ah = S.panel(c, sx, sy, sw, ph, "Reported reading: a personal name",
-                         ["News reports quote Gibson 2025/26 for this line; the files",
-                          "have not read the article (deeper_analysis §9)."],
-                         "Unverified; not adopted", "warn")
-c.text(ax + 14, ay + 22, "“Ben Rabbah, of Beit Shalisha:", 12.5, P["ink"], 600, italic=True)
+ax, ay, aw, ah = S.panel(c, sx, sy, sw, ph, "Milik 1960: a personal name",
+                         ["Milik 1960 pp. 139, 144, marked very uncertain; Puech 2015",
+                          "p. 29 rejects it. Gibson 2025/26 is reported, unread."],
+                         "Alternative; not adopted", "warn")
+c.text(ax + 14, ay + 22, "“Ben Rabbah of (Bet) Shalishah:", 12.5, P["ink"], 600, italic=True)
 c.text(ax + 14, ay + 40, "100 ingots of gold”", 12.5, P["ink"], 600, italic=True)
 gx, gy = ax + 60, ay + 120
 elevation(c, gx - 40, gy + 30, 80, 3, 16)
 c.line(gx - 52, gy - 30, gx + 52, gy + 36, P["red"], 1.6)
 c.line(gx + 52, gy - 30, gx - 52, gy + 36, P["red"], 1.6)
-S.label(c, ax + 140, gy - 16, ["A name where the editions read", "בנפש בנדבך השלשי: no monument,",
+S.label(c, ax + 140, gy - 16, ["A name where Puech and Lefkovits read", "בנפש בנדבך השלשי: no monument,",
                                "no course, so no plan at all."], P["sub"], 11.5)
 
 bx, by, bw, bh = S.panel(c, sx, sy + ph + 10, sw, ph, "Readings that leave the plan unchanged",
@@ -92,7 +93,7 @@ yy = by + 12
 for head, body in (
         ("Monument:", "נפש, funerary monument; meaning rated high in the lexicon."),
         ("Course:", "נדבך, a course of masonry (rated medium; Ezra 6:4, m. Middot 3:7). "
-                    "No editor in the files reads it differently."),
+                    "Lefkovits reads a third gravestone (p. 50), a separate branch not drawn."),
         ("Setting:", "Puech groups the entry with entry 1 in the Valley of Achor; the files also keep "
                      "the Kidron monuments. Placement only.")):
     c.text(bx + 8, yy, head, 11.5, P["ink"], 700)
@@ -107,6 +108,7 @@ S.footer(c, L["footer_y"], [
     ("Project placement", "Atlas: possible only, low. Wadi Nuweiʿimeh (Valley of Achor) and the Kidron "
      "monuments in Jerusalem (Absalom, Bene Ḥezir, Zechariah), both possible (low)."),
     ("What the records show", "No phase-5 assessment or feature constraint is recorded for entry 2. The site "
-     "index keeps both places for comparison only; no monument is identified (atlas-data.json)."),
+     "index keeps both places for comparison only; no monument is identified. Zechariah’s monolithic body "
+     "cannot supply a built course (edition audit, 13 October 2026)."),
 ])
 print(c.save(S.out_path("2")))

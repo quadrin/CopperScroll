@@ -25,7 +25,7 @@ This is a description of the evidence. It identifies nothing and excludes nothin
 
 - [ratings.json](ratings.json) — one row per candidate, with the anchor words, a basis and repository sources for each part, the observation that would most change the weakest part (`decisive_next`), and the raters' flags.
 - [ratings.csv](ratings.csv) — the same, flat.
-- [record_conflicts.md](record_conflicts.md) — 79 places where the atlas text or a table disagrees with a newer or more specific record (uncorrected).
+- [record_conflicts.md](record_conflicts.md) — 79 places where the atlas text or a table disagreed with a newer or more specific record, each resolved on 15 October: 51 corrected, 1 clarified, 15 not a conflict or needing no change, 12 left for owner decisions (candidate lists, statuses, confidence labels, one ledger question).
 - `atlas/app/atlas-components.json` — the compact copy the atlas reads.
 
 Rebuild after editing `ratings.json`: `python3 tools/build_evidence_components.py` (`--check` fails if an output is stale or a row is missing).

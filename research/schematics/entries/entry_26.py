@@ -80,7 +80,7 @@ ph = (sh - 10) / 2
 
 ax, ay, aw, ah = S.panel(c, sx, sy, sw, ph, "Variant: the boulder · הרגב",
                          ["Puech 2006 reads הרגב, “the boulder”, the word of entry 23:",
-                          "one great stone, the cave at its corner."],
+                          "one great stone, the cave at its base; he rejects the corner."],
                          "Alternative reading · Puech", "neutral")
 bxc, byc = ax + 150, ay + ah / 2 - 2
 c.path(f"M{bxc - 70},{byc - 30} C{bxc - 60},{byc - 62} {bxc + 30},{byc - 64} {bxc + 62},{byc - 34} "
@@ -90,7 +90,7 @@ c.path(f"M{bxc - 70},{byc - 30} C{bxc - 60},{byc - 62} {bxc + 30},{byc - 64} {bx
 c.text(bxc - 30, byc + 4, "boulder", 11.5, P["ink"], 700)
 S.cave(c, bxc + 82, byc + 40, size=16, opening=90)
 S.deposit(c, bxc + 94, byc + 40)
-c.text(bxc + 130, byc + 36, "cave at its corner", 11.5, P["ink"], 700)
+c.text(bxc + 130, byc + 36, "cave at its base", 11.5, P["ink"], 700)
 c.text(bxc + 130, byc + 52, "dig 9 cubits", 11, P["red_d"], 600)
 
 bx, by, bw, bh = S.panel(c, sx, sy + ph + 10, sw, ph, "Variant: a mound or clod",

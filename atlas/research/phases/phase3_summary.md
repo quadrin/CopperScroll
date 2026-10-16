@@ -145,7 +145,7 @@ There are three placements:
 ### 4.4 Verdicts that depend on a reading
 
 - **55, Bethesda.** The name "Bethesda" exists only in Milik's emended reading. Puech's own reading, "the house of the two reservoirs", still describes a double pool. The double pool is a known 1st-century installation (John 5:2; Eusebius, Onomasticon; excavations reported by Høgenhaven p. 84). The reviewer applied rule 6 explicitly and kept "best-supported" at medium. Puech calls the location "not completely certain" (2015 p. 103).
-- **37, Valley of Shaveh.** The place name is secure. Only the landmark words ("irrigated land"; Puech's emended "underground chamber") depend on readings, so the valley-level verdict stands at low confidence.
+- **37, Valley of Shaveh.** The reading of the place name is secure, though which valley it names is unresolved (Q22). Only the landmark words ("irrigated land"; Puech's emended "underground chamber") depend on readings, so the valley-level verdict stands at low confidence.
 
 ### 4.5 Absalom's monument (48) and the King's Valley (36–37)
 
@@ -202,7 +202,7 @@ Milik's Masada and Kephar Nebo remain on record in the tables.
 
 | File | In git? | Contents |
 |---|---|---|
-| `tables/phase3_site_index.csv` | yes | Per entry: status, best-supported place, confidence, possible places, candidate counts by verdict. No edition text |
+| `tables/phase3_site_index.csv` | yes | Per entry: status, best-supported place, confidence, possible places (curated place IDs only, so n_possible can exceed them), candidate counts by verdict. No edition text |
 | `tables/phase3_places.csv` | yes | The 37 curated places: coordinates, source, precision, kind, and the entries placed there by verdict |
 | `phase3_candidates.csv` | **no** | All 292 candidates with the full scoring (name test, feature, sequence, reading, period), reasons with pages, and short quotes |
 | `phase3_entries.csv` | **no** | Per entry: requirements, reading notes, best-supported, why not the others, open questions, and the text's own relative description in each edition (Puech 2006 and 2015, Lefkovits, Milik 1962), quoted, not converted |
