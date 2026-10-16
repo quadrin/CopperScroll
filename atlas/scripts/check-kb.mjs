@@ -39,7 +39,7 @@ for(const entry of Object.keys(data.entries)){
  assert.ok(render(components.Graph,{i,entry,selected:chosen,onSelect}).includes('stored relationship types'));
 }
 const inspected=render(components.Inspector,{i,record:i.by.get('observation/icrc2017-native-plan'),onSelect,onImpact(){}});
-assert.ok(inspected.includes('4–5'));assert.ok(inspected.includes('p. 95'));assert.ok(inspected.includes('W2_identity'));assert.ok(inspected.includes('null'));
+assert.ok(inspected.includes('4–5'));assert.ok(inspected.includes('p. 95'));assert.ok(inspected.includes('W2_identity'));assert.ok(inspected.includes('null'));assert.ok(inspected.includes('Follow the evidence chain'));
 const names=render(components.Names,{i,onSelect});assert.ok(names.includes('כוחלית'));assert.ok(names.includes('T05-062'));assert.ok(names.includes('Object / manuscript'));
 const candidates=model.entryContext(i,'25').filter(r=>r.kind==='hypothesis');
 const requirements=render(components.Requirements,{i,candidates,onSelect});
@@ -61,6 +61,7 @@ for(const entry of ['25','11','60']){
  assert.ok(overview.includes(entry==='25'?'permit L-656':'Kallai pp.172'));
  assert.ok(overview.includes('Comparison branch'));assert.ok(overview.includes('never identification confidence'));
 }
+const defaultComparison=render(components.Comparison,{i,candidates,onSelect});assert.ok(defaultComparison.includes('Show all registered depth'));assert.equal((defaultComparison.match(/<option /g)||[]).length,4);
 const choices=model.comparisonChoices(i,candidates),choice=choices.find(c=>c.branch.includes('target-prerequisites'));
 assert.ok(choice);
 const controls=model.comparisonRows(i,candidates,choice.key);
