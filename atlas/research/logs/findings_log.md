@@ -1421,10 +1421,10 @@ Read in the signed-in Perlego reader: [Jericho extraction](../../registration/di
 
 ### Allegro 1959, *The People of the Dead Sea Scrolls* (Cave 3, cutting, waterworks)
 
-[Extraction](../../registration/allegro1959_people_extracted.md). Captions read; the reader refused screenshots, so no plate was viewed as an image.
+[Extraction](../../registration/allegro1959_people_extracted.md). Captions read in full. Plates 71–73, 80, 101, 143–149 and 173 were then viewed and zoomed in the reader (a first screenshot attempt had failed on a permission error and was not retried until the owner queried it). The reader serves book-resolution images only (plate 143 is 336 × 366 px).
 
 - **Cutting.** Saw lines were chosen to avoid visible letters, and one cut changed direction "halfway along its length" (pl. 80). The cut is not named (R11 lead).
-- **Gorge works.** Plates 143–147 show the natural basin "halfway down the cliff face at the head of the great gorge", the conduit, and the rock-cut tunnel. A 1950s photo set of the entry 21–22 features, to be obtained at full resolution.
+- **Gorge works.** Plates 143–147 show the natural basin "halfway down the cliff face at the head of the great gorge", the conduit, and the rock-cut tunnel. Seen in the images: the basin is a rocky hollow with no visible masonry, dam or cut channel (pl. 143); the conduit enters the rock at one bedding level (pl. 144); the tunnel has a squared side opening cut through its left wall that the caption does not mention (pl. 145). Inference: that opening may be one of the long-tunnel openings already recorded (Schulz's A or B); this frame cannot say which. No plate shows a stone north of the intake.
 - **Coins.** The model legend says "three juglets"; plate 173 says one juglet with "two other deposits", and plate 174 "well over five hundred". Allegro's own text is the source of the three-juglet account. Callegher's catalogue (p. 59) describes two pots and a narrow-necked vessel, with 561 coins.
 
 ### Record conflicts flagged, not edited
