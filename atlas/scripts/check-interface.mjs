@@ -9,12 +9,12 @@ const require=createRequire(import.meta.url);
 function compile(file,deps={}){const exports={};const code=ts.transpileModule(readFileSync(new URL(file,import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;vm.runInNewContext(code,{exports,URLSearchParams,require:n=>n.endsWith('.css')?{}:deps[n]??require(n)});return exports;}
 const routing=compile('../app/atlas-navigation.ts');
 const nav=compile('../app/atlas-site-nav.tsx',{'./atlas-navigation':routing});
-const html=renderToStaticMarkup(React.createElement(nav.default,{entry:'21',active:'map',planId:'qumran-ilan'}));
+const html=renderToStaticMarkup(React.createElement(nav.default,{entry:'21',active:'map'}));
 const primary=html.match(/<nav aria-label="Atlas sections">(.*?)<\/nav>/)?.[1];
-assert(primary);assert.equal((primary.match(/<a /g)??[]).length,3);assert(primary.includes('Evidence')&&primary.includes('Map')&&primary.includes('Sources'));
-assert(html.includes('More sections'));assert(!html.includes('Sites &amp; 3D'));assert(!html.includes('Eye-level simulation'));
-assert.equal(nav.sectionRoutes('25','abu-saraj-iv17').map,'#entry-25/2d');
-assert.equal(nav.sectionRoutes('25','abu-saraj-iv17').sites,'#entry-25/site/abu-saraj-iv17/source');
+assert(primary);assert.equal((primary.match(/<a /g)??[]).length,3);assert(primary.includes('Evidence')&&primary.includes('Map')&&primary.includes('Scroll'));
+assert(!html.includes('More sections'));assert(!html.includes('<details'));assert(!html.includes('Sites &amp; 3D'));assert(!html.includes('Eye-level simulation'));
+assert.equal(nav.sectionRoutes('25').map,'#entry-25/2d');
+assert.equal(nav.sectionRoutes('25').scroll,'#entry-25/scroll');
 const map=readFileSync(new URL('../app/atlas-map.tsx',import.meta.url),'utf8');
 assert(map.includes('aria-label="Site reference panel"'));
 assert(map.includes('hidden={!placeExpanded}'));assert(map.includes('document.addEventListener("pointerdown",close)'));assert(map.includes('document.addEventListener("keydown",escape)'));

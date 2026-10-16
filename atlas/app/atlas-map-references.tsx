@@ -4,7 +4,7 @@ import references from './atlas-library-references.json';
 import type {SitePlan} from './atlas-explorer-model';
 import type {Entry,Place} from './atlas-types';
 const EvidenceDossier=lazy(()=>import('./atlas-dossier'));
-export type MapPanel='plan'|'photos'|'sources'|'video'|'history'|null;
+export type MapPanel='plan'|'photos'|'sources'|'history'|null;
 const qumranVideos=[{id:'muN-EJR631Y',title:'Qumran aqueduct · Mattiolli',note:'Existing creator-linked reference; footage has not been visually reviewed.'},{id:'vLn1ltBqeSI',title:'Qumran · Sergio & Rhoda',note:'Existing video lead; footage has not been visually reviewed.'}];
 export function MapVideoReferences({placeId}:{placeId:string|null}){
  const builtIn=placeId==='kh_qumran'||placeId==='wadi_qumran'?qumranVideos:[];

@@ -34,7 +34,7 @@ export default function KnowledgeBase(){
  const title=cases.find(c=>c.id===s.entry)?.title||entry?.label||'Copper Scroll';
  return <main className="kb-app kb-guided">
   <a className="kb-skip" href="#kb-workspace" onClick={e=>{e.preventDefault();document.getElementById('kb-workspace')?.focus();}}>Skip to evidence</a>
-  <AtlasSiteNav entry={s.entry} active={s.view==='sources'?'sources':'evidence'}/>
+  <AtlasSiteNav entry={s.entry} active="evidence"/>
   <div className="kb-page"><section className="kb-start"><div><p className="kb-eyebrow">3Q15 · TEXTS, PLACES & MATERIAL EVIDENCE</p><h1>The Copper Scroll<br/><em>Research Atlas</em></h1><p>Read the passage. Examine the remains. Trace the evidence.</p></div><label>Browse all 61 entries<select aria-label="Browse all entries" value={s.entry} onChange={e=>chooseEntry(e.target.value)}>{data?.records.filter(r=>r.kind==='entry').sort((a,b)=>parseFloat(a.id)-parseFloat(b.id)||a.id.localeCompare(b.id)).map(r=><option key={r.key} value={r.id}>Entry {r.id} · {r.payload.canonical_lines}</option>)}</select></label></section>
   <EntryFinder data={data} current={s.entry} onChoose={chooseEntry}/>
   <nav className="kb-case-tabs" aria-label="Pilot cases">{cases.map(c=><button key={c.id} aria-current={s.entry===c.id?'page':undefined} onClick={()=>chooseEntry(c.id)}><span className="kb-case-number">{c.id}</span><span><strong>{c.title}</strong><small>{c.sub}</small></span><ChevronRight size={16}/></button>)}</nav>

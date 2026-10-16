@@ -1,13 +1,13 @@
 "use client";
 import { lazy, Suspense, useCallback, useEffect, useRef, useState } from "react";
-import { ArrowLeft, BookOpen, ChevronDown, ExternalLink, FlaskConical, Layers, Map, Search, ScrollText, X } from "lucide-react";
+import { ArrowLeft, BookOpen, ChevronDown, Search, X } from "lucide-react";
 import AtlasMap from "./atlas-map";
 import AtlasSiteNav from "./atlas-site-nav";
 import EntryText from "./atlas-text";
 import EvidenceReview from "./atlas-evidence";
 import { EvidenceChips, EvidenceComponents, EvidenceLegend, strongestCandidate } from "./atlas-components";
 import data from "./atlas-data.json";
-import { explorerFromHash, explorerHash, initialExplorer, archaeologyForPlace, plansForPlace, sitePlans, type ExplorerState, type Camera, type Viewport } from "./atlas-explorer-model";
+import { explorerFromHash, explorerHash, initialExplorer, archaeologyForPlace, plansForPlace, sitePlans, type ExplorerState, type Camera } from "./atlas-explorer-model";
 import type { Entry, Place } from "./atlas-types";
 import "./atlas-revamp.css";
 import "./atlas-unified.css";
@@ -17,14 +17,12 @@ const places = data.places as Place[];
 const byPlace = Object.fromEntries(places.map(p=>[p.id,p]));
 const primaryPlace = (id:string)=>entries.find(e=>e.id===id)?.candidates[0]?.placeId??null;
 const Workbench = lazy(()=>import("./atlas-workbench"));
-const repo = "https://github.com/quadrin/CopperScroll/blob/main";
 type HistoryState = ExplorerState & { enlarged?: boolean };
 
 export default function Atlas(){
  const [state,setState] = useState<HistoryState>(()=>{if(typeof window==="undefined")return initialExplorer;const saved=window.history.state?.atlas;if(saved&&window.history.state.atlasVersion!==2&&["2d","3d"].includes(saved.mode))return archaeologyForPlace(saved.entryId,saved.placeId);return saved&&explorerHash(saved)===location.hash?saved:explorerFromHash(location.hash,primaryPlace)??initialExplorer});
  const current=useRef(state);
  const [depth,setDepth]=useState(0);
- const [restoreNonce,setRestoreNonce]=useState(0);
  const [mapRestore,setMapRestore]=useState<{camera?:Camera;nonce:number}>({nonce:0});
  const [focusNonce,setFocusNonce]=useState(0);
  const [browse,setBrowse]=useState(false);
@@ -34,10 +32,7 @@ export default function Atlas(){
  const [query,setQuery]=useState("");
  const [region,setRegion]=useState("all");
  const [notes,setNotes]=useState(false);
- const [more,setMore]=useState(false);
- const [layers,setLayers]=useState(false);
- const [about,setAbout]=useState(false);
- useEffect(()=>{function escape(event:KeyboardEvent){if(event.key!=="Escape")return;setBrowse(false);setNotes(false);setMore(false);setLayers(false);setContextOpen(false);setAbout(false);setContextOpen(false);}window.addEventListener("keydown",escape);return()=>window.removeEventListener("keydown",escape)},[]);
+ useEffect(()=>{function escape(event:KeyboardEvent){if(event.key!=="Escape")return;setBrowse(false);setNotes(false);setContextOpen(false);}window.addEventListener("keydown",escape);return()=>window.removeEventListener("keydown",escape)},[]);
  const entry=entries.find(e=>e.id===state.entryId)??entries[0];
  const place=state.placeId?byPlace[state.placeId]??null:null;
  const plan=sitePlans.find(p=>p.id===state.planId)??plansForPlace(state.placeId)[0];
@@ -58,7 +53,7 @@ export default function Atlas(){
   window.history.replaceState({...h,atlas:prev,atlasDepth:h?.atlasDepth??0,atlasVersion:2},"",location.href);
   const nextDepth=replace?h?.atlasDepth??0:(h?.atlasDepth??0)+1;
   window.history[replace?"replaceState":"pushState"]({atlas:next,atlasDepth:nextDepth,atlasVersion:2},"",explorerHash(next));
-  current.current=next;setState(next);setDepth(nextDepth);setBrowse(false);setMore(false);setLayers(false);setContextOpen(false);
+  current.current=next;setState(next);setDepth(nextDepth);setBrowse(false);setContextOpen(false);
   if(next.entryId!==prev.entryId||next.placeId!==prev.placeId)setFocusNonce(n=>n+1);
   if(next.mode!==prev.mode||next.scrollPhoto!==prev.scrollPhoto)window.dispatchEvent(new Event("atlas:modechange"));
  },[]);
@@ -71,7 +66,7 @@ export default function Atlas(){
    const restored=h?.atlas&&explorerHash(h.atlas)===location.hash?h.atlas:explorerFromHash(location.hash,primaryPlace);
    if(!restored)return;
    if(!h?.atlas)window.history.replaceState({atlas:restored,atlasDepth:0,atlasVersion:2},"",location.href);
-   current.current=restored;setState(restored);setDepth(h?.atlasDepth??0);setRestoreNonce(n=>n+1);setMapRestore(old=>({camera:restored.camera,nonce:old.nonce+1}));setBrowse(false);setNotes(false);setMore(false);setLayers(false);setContextOpen(false);
+   current.current=restored;setState(restored);setDepth(h?.atlasDepth??0);setMapRestore(old=>({camera:restored.camera,nonce:old.nonce+1}));setBrowse(false);setNotes(false);setContextOpen(false);
   }
   window.addEventListener("popstate",restore);window.addEventListener("hashchange",restore);
   return()=>{window.removeEventListener("popstate",restore);window.removeEventListener("hashchange",restore)};
@@ -101,7 +96,7 @@ export default function Atlas(){
  const canBack=depth>0||!["2d","3d"].includes(state.mode)||!!state.featureId||!!state.workbench;
  return <main className="atlas-shell unified-atlas" data-mode={state.mode}>
   <a className="skip-link" href="#explore-surface">Skip to exploration</a>
-  <AtlasSiteNav entry={entry.id} planId={plan?.id} active={state.workbench?'tools':state.mode==='scroll'?'scroll':['2d','3d','site','ground','landscape','dossier'].includes(state.mode)?'map':'sites'}/>
+  <AtlasSiteNav entry={entry.id} active={state.workbench?'evidence':['scroll','scene'].includes(state.mode)?'scroll':'map'}/>
   <div className="atlas-explorer-bar" aria-label="Current passage and place">
    <button className="atlas-back" aria-label="Back within atlas" disabled={!canBack} onClick={back}><ArrowLeft size={16}/><span>Back</span></button>
    <button ref={contextToggle} className="atlas-context-toggle" aria-label="Change passage, candidate or site plan" aria-expanded={contextOpen} aria-controls="atlas-context-panel" onClick={()=>setContextOpen(v=>!v)}><span><strong>{entry.id} · {entry.title}</strong><small>{plan?.label??place?.shortName??'Location unresolved'}</small></span><ChevronDown size={18}/></button>
@@ -126,6 +121,5 @@ export default function Atlas(){
    {browse&&<aside className="unified-browser" aria-label="Find entries"><header><h2>Find an entry or place</h2><button aria-label="Close search" onClick={()=>setBrowse(false)}><X size={18}/></button></header><input autoFocus aria-label="Search entries and places" placeholder="Qumran, Siloam, 29…" value={query} onChange={e=>setQuery(e.target.value)}/><select aria-label="Filter region" value={region} onChange={e=>setRegion(e.target.value)}><option value="all">All regions</option><option value="jericho">Jericho &amp; Qumran</option><option value="jerusalem">Jerusalem</option><option value="region">Judean hills &amp; north</option><option value="unplaced">Unplaced</option></select><nav aria-label="Entry results">{matches.map(e=><button key={e.id} aria-current={e.id===entry.id?"true":undefined} onClick={()=>chooseEntry(e.id)}><span>{e.id}</span><div><strong>{e.title}</strong><small>{e.candidates[0]?byPlace[e.candidates[0].placeId].shortName:"Location unresolved"}</small></div></button>)}{matches.length===0&&<p>No matching entry. Try another place name.</p>}</nav></aside>}
    {notes&&<aside className="unified-entry-note" aria-label="Entry details"><header><span>Entry {entry.id} · {entry.lines}</span><button aria-label="Close entry details" onClick={()=>setNotes(false)}><X size={18}/></button></header><h2>{entry.title}</h2><p>{entry.description}</p><h3>Candidate sites</h3>{entry.candidates.length>0&&<EvidenceLegend/>}{entry.candidates.map(c=><div className="unified-candidate" key={c.placeId}><strong>{byPlace[c.placeId].shortName}</strong><EvidenceChips entryId={entry.id} placeId={c.placeId}/><small className="ec-status">{c.status}</small><button onClick={()=>{exploreCandidate(c.placeId);setNotes(false)}}>Explore candidate</button></div>)}{!entry.candidates.length&&<p>No mapped candidate.</p>}<button className="unified-read-link" onClick={()=>read()}><BookOpen size={16}/>Read this passage</button><details><summary>Evidence &amp; interpretation</summary><EvidenceComponents entryId={entry.id} placeId={state.placeId&&entry.candidates.some(c=>c.placeId===state.placeId)?state.placeId:strongestCandidate(entry)?.placeId}/><EvidenceReview entryId={entry.id} placeId={state.placeId}/><p>{entry.evidence}</p><p>{entry.caution}</p><button onClick={()=>{changeMode("dossier");setNotes(false)}}>Full source dossier</button></details><details><summary>Passage translation</summary><EntryText entryId={entry.id} onOpenScroll={()=>read()}/></details></aside>}
   </div>
-  {about&&<div className="unified-modal" role="dialog" aria-modal="true" aria-label="About the atlas"><div><button aria-label="Close about" onClick={()=>setAbout(false)}><X/></button><h2>Places, structures &amp; the scroll</h2><p>Select a candidate, explore its source plan, and inspect a feature’s evidence. Regional relief provides geographical context. Excavated structures are explored through their source plans. Source-relative plans retain their own coordinates until registration is established.</p><p>All current site identifications remain conditional. A feature comparison identifies neither a deposit nor surviving treasure.</p><p>Hebrew: Abegg’s transcription, ETCBC CC BY-NC 4.0. Translation: this project. Plans and photographs retain their source credits and licences.</p><a href={`${repo}/atlas/README.md`} target="_blank" rel="noreferrer">Atlas guide &amp; sources</a></div></div>}
  </main>;
 }

@@ -114,11 +114,12 @@ const iv17=filters.filterCandidateRows(compared,'IV17','all');assert.equal(iv17.
 assert.ok(render(finder.default,{data,current:'25',onChoose(){}}).includes('Filter entries'));
 console.log('Filter checks passed: 61-entry coverage, combined region/feature search, diacritics, exact-branch candidate subsets, explicit missing results and reset.');
 
-// A shared section bar exposes every surface and links to the geographic map.
-const routes=siteNav.sectionRoutes('25','abu-saraj-iv17');assert.equal(routes.map,'#entry-25/2d');assert.equal(routes.sites,'#entry-25/site/abu-saraj-iv17');
-for(const active of ['evidence','map','sites','scroll','sources','tools']){
- const html=render(siteNav.default,{entry:'25',active,planId:'abu-saraj-iv17'});
- for(const label of ['Atlas sections','All sections','Historical maps','Candidate dossier','Site photographs','Cave comparisons'])assert.ok(html.includes(label));
+// The shared section bar exposes three destinations; sources belong to Evidence.
+const routes=siteNav.sectionRoutes('25');assert.equal(routes.map,'#entry-25/2d');assert.equal(routes.scroll,'#entry-25/scroll');
+for(const active of ['evidence','map','scroll']){
+ const html=render(siteNav.default,{entry:'25',active});
+ for(const label of ['Atlas sections','Evidence','Map','Scroll'])assert.ok(html.includes(label));
+ assert(!html.includes('<details'));assert(!html.includes('More sections'));
  assert.equal((html.match(/aria-current="page"/g)||[]).length,1);
 }
 console.log('Shared navigation checks passed: geographic map route, selected-entry context, direct section access and one active section.');

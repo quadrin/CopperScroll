@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — production Chromium shows the IV/17 source figure, feature descriptions, citations and Hebrew/English passage inside the persistent geographic atlas on desktop and phone. The standalone explorer is removed. Close zoom, detailed site materials and eye-level movement share the map canvas; site switching preserves explicit choices. The GitHub Pages build and browser checks pass. Live publication checks are blocked by proxy 403 responses.
+Last session (16 October 2026 Los Angeles): **obtained** — production Chromium on desktop and phone reaches the passage, map, comparisons and source catalogue through Evidence, Map and Scroll. The More menu and duplicate section links are removed; videos share Photos and historical maps open from map Options. The site panel is reduced to Plan, Photos and Sources. Entry context and the geographic canvas persist through the checked map/reference flow.
 
 ## Active questions and the observation that decides each
 

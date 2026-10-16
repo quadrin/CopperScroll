@@ -42,12 +42,12 @@ try {
   const evidence=panel.locator('.map-evidence-accordion');await evidence.locator('summary').first().click();await evidence.locator('.dossier-surface').waitFor();await sameCanvas();await evidence.locator('summary').first().click();
   await panel.getByRole('button',{name:'View library scan here',exact:true}).click();
   assert.match(await panel.getByTitle('Google Drive source scan').getAttribute('src'),/^https:\/\/drive\.google\.com\/file\/d\/.+\/preview$/);
-  await panel.getByRole('button',{name:'Videos',exact:true}).click();
+  await panel.getByRole('button',{name:'Photos',exact:true}).click();
   await panel.getByLabel('YouTube site video URL').fill('https://example.com/not-a-video');await panel.getByRole('button',{name:'Show video here',exact:true}).click();await panel.getByRole('alert').waitFor();
   await panel.getByLabel('YouTube site video URL').fill('https://www.youtube.com/watch?v=muN-EJR631Y');await panel.getByRole('button',{name:'Show video here',exact:true}).click();
   assert.equal(await panel.getByTitle('Site reference video').getAttribute('src'),'https://www.youtube-nocookie.com/embed/muN-EJR631Y');
   await sameCanvas();await page.getByRole('button',{name:'Close site reference panel'}).click();
-  await page.getByRole('link',{name:'Sources',exact:true}).click();await page.getByRole('complementary',{name:'Site reference panel'}).waitFor();await sameCanvas();await page.getByRole('button',{name:'Close site reference panel'}).click();
+  await page.locator('.map-site-caption').getByRole('button',{name:'Sources & assumptions',exact:true}).click();await page.getByRole('complementary',{name:'Site reference panel'}).waitFor();await sameCanvas();await page.getByRole('button',{name:'Close site reference panel'}).click();
   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition);
   const before=await page.locator('.maplibregl-canvas').getAttribute('data-walk-position');

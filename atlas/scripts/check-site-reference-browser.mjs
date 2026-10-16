@@ -9,6 +9,10 @@ try{for(const mobile of [false,true]){
  const page=await browser.newPage({viewport:mobile?{width:390,height:844}:{width:1440,height:950},isMobile:mobile,hasTouch:mobile,reducedMotion:'reduce'});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route(/^https:\/\//,r=>r.abort());
  await page.goto(origin+'#entry-25/site/abu-saraj-iv17/source');
  const panel=page.getByRole('complementary',{name:'Site reference panel'});await panel.locator('.site-reference').waitFor();await page.locator('.maplibregl-canvas').waitFor();await page.evaluate(()=>window.iv17Canvas=document.querySelector('.maplibregl-canvas'));
+ const nav=page.getByRole('navigation',{name:'Atlas sections',exact:true});
+ assert.deepEqual(await nav.getByRole('link').allTextContents(),['Evidence','Map','Scroll']);assert.equal(await page.locator('.atlas-site-nav summary').count(),0);
+ for(const link of await nav.getByRole('link').all()){const box=await link.boundingBox();assert(box.x>=0&&box.x+box.width<=page.viewportSize().width&&box.height>=44,'Primary links fit the viewport with usable targets');}
+ assert.deepEqual(await panel.getByRole('navigation',{name:'Site reference views'}).getByRole('button').allTextContents(),['Plan','Photos','Sources']);
  const sameCanvas=async()=>assert(await page.evaluate(()=>window.iv17Canvas===document.querySelector('.maplibregl-canvas')));
  assert.equal(await panel.getByLabel('Site structures').getByRole('button').count(),3);
  assert(await panel.getByLabel('Site structures').getByRole('button',{name:/Rock-cut dividing pillar/}).isVisible());
@@ -25,5 +29,10 @@ try{for(const mobile of [false,true]){
  await page.getByRole('button',{name:'Close site reference panel',exact:true}).click();await sameCanvas();
  await page.getByRole('button',{name:'Plan & details',exact:true}).click();await panel.getByLabel('Site structures').waitFor();await sameCanvas();
  for(const route of ['model','walk']){await page.evaluate(route=>{location.hash='#entry-25/site/abu-saraj-iv17/'+route;},route);await panel.locator('.site-reference').waitFor();await sameCanvas();}
- assert.deepEqual(errors,[]);console.log((mobile?'Phone':'Desktop')+' IV/17 passed: same atlas canvas, source figure, visible feature list, feature evidence and passage inline, unplaced site aliases.');await page.close();
+ await page.locator('.map-toolbar-menus').getByText('Options',{exact:true}).click();await page.getByRole('button',{name:'Historical maps',exact:true}).click();await panel.getByText('Historical maps',{exact:true}).waitFor();await sameCanvas();await page.getByRole('button',{name:'Close site reference panel',exact:true}).click();
+ await nav.getByRole('link',{name:'Scroll',exact:true}).click();await page.getByRole('button',{name:'English translation',exact:true}).waitFor();await sameCanvas();assert.equal(await nav.getByRole('link',{name:'Scroll',exact:true}).getAttribute('aria-current'),'page');
+ await nav.getByRole('link',{name:'Evidence',exact:true}).click();await page.getByRole('heading',{name:'How do the candidates compare?',exact:true}).waitFor();assert((await page.evaluate(()=>location.hash)).includes('entry=25'));
+ await page.getByRole('button',{name:'Sources & gaps',exact:true}).click();await page.getByRole('heading',{name:'Publication, page and observation.',exact:true}).waitFor();assert(await page.locator('.kb-source-list-item').count()>0);assert.equal(await nav.getByRole('link',{name:'Evidence',exact:true}).getAttribute('aria-current'),'page');
+ assert.equal(await page.locator('.atlas-site-nav summary').count(),0);
+ assert.deepEqual(errors,[]);console.log((mobile?'Phone':'Desktop')+' passed: three-section navigation, inline source/feature/passage, historical maps through Options, Scroll and Evidence source access retain entry context.');await page.close();
 }}finally{await browser.close();}
