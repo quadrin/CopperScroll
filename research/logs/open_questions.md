@@ -220,6 +220,7 @@ See [source_extractions_2026-09-29.md](../sources/source_extractions_2026-09-29.
   - Jeremias's *RB* 1960 alternative was already read (F8.1): the Horite tombs near Beit Guvrin.
   - A pointer to an IAA online version of part of the Benjamin survey (map 73), from Zertal & Bar vol. 9 p. 484, is not yet opened.
 - Q46 update: Zertal's Salhab entry, now seen on the page images, reports 30 cisterns and no channel (F11.5). Gophna and Porath 1972 (no. 65) is still unread. The "Site 43" snippet is el-Quleh, not Upper Ibziq.
+- Q46 update (Perlego read, 14 October 2026): Dorsey 1991 p. 173 runs his Iron Age road S12 through Kh. Salhab (Iron I and scattered Iron II sherds) and Kh. Ibziq (Iron II), and calls Ibziq "possibly not biblical Bezek". He puts the main Roman Neapolis–Beth-shean road farther south, through Tayasir and Qaʿun (S13), citing Roll 1976 and Avi-Yonah 1965. Zertal records Roman road remains at both sites (B7). The accounts conflict on the road only; neither reports a conduit. [Extraction](https://github.com/quadrin/CopperScroll/blob/main/registration/dorsey1991_extracted.md).
 - Q40 update: no reply from Høgenhaven at 03:50 UTC on 30 September.
 
 ## Kotar book intake — 30 September 2026

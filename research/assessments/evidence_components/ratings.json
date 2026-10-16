@@ -34,21 +34,26 @@
   },
   "F": {
    "level": 1,
-   "basis": "Ruins of several periods are reported in the valley (Iron Age sites near Kh. el-Mefjer; a Christian village with a chapel; sugar mills) and undated irrigation channels. No report describes steps, or a ruin that can be named Ḥorebbeh.",
+   "basis": "Ruins of several periods are reported in the valley: Iron Age sites near Kh. el-Mefjer, a Christian village with a chapel, Crusader–Mamluk sugar mills, and Early Roman houses on the south bank at Jisr Abu Ghabush and Suwwanet eth-Thiniya; irrigation channels are undated. One specific feature with steps is reported: the Early Roman cistern at Jisr Abu Ghabush, 2.88 × 2.70 m, with three steps going down 1.42 m (Taha in Sparks et al. 2020 p. 277). It is a water installation inside a ruin; whether its steps are the entry's steps, or go east, is unknown. Between 1 and 2, so 1. No ruin that can be named Ḥorebbeh is reported.",
    "sources": [
     "tables/phase5_assessments.csv line 2 (entry 1, nuweimeh)",
     "tables/phase5_reports.csv lines 2-11 (Milik DJD pp. 262-263; SWP III pp. 171, 179, 205, 226; Aronshtam ʿAtiqot 41 pp. 91, 99)",
-    "tables/phase5_archaeology_index.csv line 2 ('not reported (ruins of other periods only)')"
+    "tables/phase5_archaeology_index.csv line 2 ('not reported (ruins of other periods only)')",
+    "registration/digging_up_jericho2020_extracted.md §(b) and §(c) (Taha in Sparks et al. 2020 pp. 277–278)",
+    "research/agent_review_2026-10-07/wave2/W2C_kohlit_archaeology/REPORT.txt lines 67, 77 (Taha in Nigro 2011)",
+    "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.csv J22 (ROSAPAT2011 pp. 154–155)"
    ]
   },
   "D": {
    "level": 1,
-   "basis": "F is 1, so D rates the site. Ruins reported in the valley are Iron Age, Christian or Crusader–Mamluk; the entry-1 index gives 'earlier or later only'. Window-period use is shown only in the district: Hasmonean and Early Roman caves in the Jebel Abu Saraj cliffs that border the valley, and the ʿAujah aqueduct, dated Hasmonean–Herodian, whose crossing of this valley is an SWP-based inference.",
+   "basis": "F is 1, so D rates the site. The valley itself has window-period occupation: Early Roman strata at Jisr Abu Ghabush and Suwwanet eth-Thiniya on the south bank, and a late Hellenistic tomb on the north bank (Taha in Sparks et al. 2020 pp. 277–278; no absolute dates). The candidate is the valley and no ruin with steps is selected, so this is district-level occupation, as for the Jericho district in entry 30. Hasmonean and Early Roman caves in the bordering Jebel Abu Saraj cliffs and the ʿAujah aqueduct, dated Hasmonean–Herodian, are also in the district.",
    "sources": [
     "tables/phase5_archaeology_index.csv line 2 (period 'earlier or later only')",
     "tables/phase5_reports.csv line 4 (Sion, ʿAtiqot 41 pp. 46, 80-81)",
     "tables/phase5_reports.csv line 7 (Aharonovich et al. 2025, abstract only)",
-    "tables/phase5_assessments.csv line 3 (entry 17: valley caves in use 1st c. BCE-70 CE)"
+    "tables/phase5_assessments.csv line 3 (entry 17: valley caves in use 1st c. BCE-70 CE)",
+    "registration/digging_up_jericho2020_extracted.md §(b) table rows Jisr Abu Ghabush, Suwwanet eth-Thiniya, Wadi Nueima rock-cut tomb (Taha pp. 277–278)",
+    "research/agent_review_2026-10-07/wave2/W2C_kohlit_archaeology/REPORT.txt lines 67, 77"
    ]
   },
   "U": {
@@ -69,6 +74,10 @@
   "flags": [
    "Atlas period 'earlier or later only' for the valley conflicts with phase5_assessments line 3 (entry 17, same valley): caves in use 1st c. BCE-70 CE (Aronshtam, Eisenberg, Sion).",
    "Atlas evidence calls Nuweiʿimeh one valley from the NW springs to the NE lower course; F3.2 was qualified on 1 Oct 2026 (findings_log line 161)."
+  ],
+  "review": [
+   "16 Oct 2026: F basis corrected after Perlego read (level kept)",
+   "16 Oct 2026: D basis corrected after Perlego read (level kept)"
   ]
  },
  {
@@ -5043,10 +5052,11 @@
    ]
   },
   "D": {
-   "level": 1,
-   "basis": "F is 1, so D rates the site. At the corner and slope, window-period evidence is refuse layers (HA-ESI 136), not tombs. Second Temple tombs are dated only at district level, from the Akeldama abstract (volume not read).",
+   "level": 2,
+   "basis": "F is 1, so D rates the site: the corner itself or the Kidron slope just below it (tables/phase3_places.csv line 4). At the corner, Area B lies against the Southern Wall beside the Ophel Wall, within a few tens of metres of the angle (inference from the gate-relative positions, pp. 48, 65). It is Stratum III Herodian (late 1st c. BCE–early 1st c. CE), with the Herodian foundation trench L6127 and compartment fills of the first half of the 1st c. CE. The slope below has 1st-c. CE refuse (HA-ESI 136). No tomb is reported, so the feature's own date is unknown.",
    "sources": [
-    "tables/phase5_reports.csv lines 188-189"
+    "tables/phase5_reports.csv lines 188-189",
+    "registration/southern_wall_2023_extracted.md (Baruch & Reich 2023, Ch. 4 'Location' p. 65, Table 4.2 p. 80, pp. 82–84; Ch. 15 p. 203; Ch. 3 p. 48)"
    ]
   },
   "U": {
@@ -5060,13 +5070,15 @@
   "label": "weak",
   "limited_by": [
    "P",
-   "F",
-   "D"
+   "F"
   ],
   "decisive_next": "A recorded rock-cut tomb with a pillared vestibule on the Kidron's west slope below the south-east corner. Warren 1871 pp. 135-141 has none, and the ASI has no record inside the walls.",
   "flags": [
    "Phase 5 infers that the reported monumental pillared tombs stand on the east bank and fit Jeremias's variant better than Milik's west bank (phase5_summary line 115; phase5_assessments line 28). Yet the atlas makes the west-bank SE corner 'preferred, medium' and the Kidron monuments only 'possible, low'.",
    "Atlas evidence text 'Partly (period rock-cut tombs in the kidron).' is copied raw from the phase-5 index field."
+  ],
+  "review": [
+   "16 Oct 2026: D 1→2 after Perlego read"
   ]
  },
  {
@@ -5180,11 +5192,12 @@
    ]
   },
   "D": {
-   "level": 1,
-   "basis": "F is 0, so D rates the site. The repo has no dated record for the south wall itself. Early Roman use is shown only in the district: a stepped street rising from the pool to the Temple Mount (HA-ESI 134).",
+   "level": 2,
+   "basis": "F is 0, so D rates the site and cannot exceed 2. The south wall itself now has stratified use in the window. Areas A–B, between the Triple Gate and the SE corner, are Stratum III, 'Herodian to sack of Jerusalem', with the ramp and stair system; compartment fills date to the first half of the 1st c. CE, and fill L6118 holds a coin of 31/2 CE. At the SW corner the support fills are 1st c. CE. No tomb is reported, so the feature's own date is unknown.",
    "sources": [
     "tables/phase5_reports.csv line 180",
-    "research/regional/asi_jerusalem/README.md line 85"
+    "research/regional/asi_jerusalem/README.md line 85",
+    "registration/southern_wall_2023_extracted.md (Baruch & Reich 2023, Ch. 4 Table 4.1 p. 68, Table 4.2 p. 80; Ch. 15 p. 203; Ch. 11 cat. 7 p. 177; Ch. 25 pp. 356–357; Ch. 38 p. 602)"
    ]
   },
   "U": {
@@ -5202,6 +5215,9 @@
   "decisive_next": "Any recorded tomb with a pillared vestibule within reach of the southern wall. None is in the tomb lane, and the walled city is outside ASI coverage.",
   "flags": [
    "The files read name no proposer or basis for the south-wall candidate (phase3_places line 5 lists it only as 51(low) 53(low))."
+  ],
+  "review": [
+   "16 Oct 2026: D 1→2 after Perlego read"
   ]
  },
  {
@@ -5310,11 +5326,12 @@
    ]
   },
   "D": {
-   "level": 1,
-   "basis": "F is 0, so D rates the site. There is no dated record at the south wall; only the district shows Early Roman use (HA-ESI 134).",
+   "level": 2,
+   "basis": "F is 0, so D rates the site and cannot exceed 2. The south wall itself now has stratified use in the window: Areas A–B Stratum III, 'Herodian to sack of Jerusalem', with compartment fills of the first half of the 1st c. CE (coin of 31/2 CE in L6118); SW-corner support fills of the 1st c. CE. No tomb under colonnades and no rock 'knife' is reported, so the feature's own date is unknown.",
    "sources": [
     "tables/phase5_reports.csv line 180",
-    "research/regional/asi_jerusalem/README.md line 85"
+    "research/regional/asi_jerusalem/README.md line 85",
+    "registration/southern_wall_2023_extracted.md (Baruch & Reich 2023, Ch. 4 Tables 4.1–4.2 pp. 68, 80; Ch. 15 p. 203; Ch. 11 cat. 7 p. 177; Ch. 25 pp. 356–357; negative for a knife-shaped rock, p. 421 and 'Rock knife' section)"
    ]
   },
   "U": {
@@ -5333,6 +5350,9 @@
   "decisive_next": "A plate reading of XI 8 for bet against kaf (not in the plate check). It decides whether any colonnade is named at all; F stays 0 without a recorded tomb under a portico.",
   "flags": [
    "Atlas title and Hebrew סבין follow Puech while the Text tab shows הסכין (noted in the caution). The only tomb-lane hit near this point (102/408) is a coordinate artefact (tombs README lines 124-127)."
+  ],
+  "review": [
+   "16 Oct 2026: D 1→2 after Perlego read"
   ]
  },
  {

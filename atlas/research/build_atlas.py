@@ -154,6 +154,7 @@ corrected_text={
 '2':("The editions disagree on the third datum: a third masonry course (Puech 2015 p. 29), a third gravestone (Lefkovits 2000 p. 50) or a personal name (Milik 1960 pp. 139, 144). The entry names no place; Puech groups it with entry 1, and the Kidron monuments are kept as funerary monuments.","Zechariah’s monument is monolithic and Absalom’s lower body is rock-cut, so neither supplies a built third course (Kloner–Zissu 2003 pp. 142, 146). This excludes that branch only; the gravestone and name branches are untested. No monument is identified."),
 '1':("Late-antique tradition puts Achor north of Jericho, beside Galgala (Onomasticon). On PEF Sheet XVIII Wadi Nuweiʿimeh rises at springs NW of Jericho and runs to a lower course NE of it. Whether TIR’s “Achor Vallis” label means this valley is unverified; its gazetteer page is unread.","The Iron Age Achor tradition points toward the Buqeia. No reported ruin-and-steps combination decides between them."),}
 corrected_period={
+'1':"No feature dated. Valley only: Early Roman houses and a stepped cistern on the south bank, a late Hellenistic tomb on the north bank (Taha 2020 pp. 277–278)",
 '60':"North-slope graves 1st c. CE by grave-type comparison only; quarry pits undated; the tell itself EB only in WBADB",
 '56':"No feature dated. Sites only: Bethesda pools in 1st-c. use (John 5:2, via editors); Silwan kokhim “apparently Herodian” (ASI 102/420)",}
 specific.update(corrected_text)
