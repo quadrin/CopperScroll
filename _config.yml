@@ -1,0 +1,6 @@
+# Serve the prebuilt atlas without publishing the multi-gigabyte research archive.
+# These directories remain available in the GitHub repository.
+exclude:
+  - atlas
+  - research
+  - images

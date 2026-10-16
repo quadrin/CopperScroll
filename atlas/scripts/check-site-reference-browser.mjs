@@ -13,6 +13,10 @@ try{for(const mobile of [false,true]){
  assert.deepEqual(await nav.getByRole('link').allTextContents(),['Evidence','Map','Scroll']);assert.equal(await page.locator('.atlas-site-nav summary').count(),0);
  for(const link of await nav.getByRole('link').all()){const box=await link.boundingBox();assert(box.x>=0&&box.x+box.width<=page.viewportSize().width&&box.height>=44,'Primary links fit the viewport with usable targets');}
  assert.deepEqual(await panel.getByRole('navigation',{name:'Site reference views'}).getByRole('button').allTextContents(),['Plan','Photos','Sources']);
+ const person=page.getByRole('button',{name:'Walk around this site',exact:true});
+ await page.waitForFunction(()=>{const b=document.querySelector('.map-person');return b&&!b.disabled;});await person.click({trial:true});
+ if(mobile){await page.setViewportSize({width:390,height:650});await person.click({trial:true});await page.setViewportSize({width:390,height:844});}
+ assert.equal(await person.locator('span').textContent(),'Walk');await person.click();await page.getByRole('status').filter({hasText:'This site has no established map location'}).waitFor();await page.getByRole('button',{name:'Dismiss walking message',exact:true}).click();
  const sameCanvas=async()=>assert(await page.evaluate(()=>window.iv17Canvas===document.querySelector('.maplibregl-canvas')));
  assert.equal(await panel.getByLabel('Site structures').getByRole('button').count(),3);
  assert(await panel.getByLabel('Site structures').getByRole('button',{name:/Rock-cut dividing pillar/}).isVisible());

@@ -1,7 +1,7 @@
 "use client";
 
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { Map, Minus, Mountain, Plus, PersonStanding, X, ArrowLeft } from "lucide-react";
+import { Map, Minus, Mountain, Plus, X, ArrowLeft } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { Map as LibreMap, Marker, StyleSpecification, GeoJSONSource } from "maplibre-gl";
 import type { Entry, Place } from "./atlas-types";
@@ -26,6 +26,9 @@ const LandscapeView=lazy(()=>import("./atlas-landscape"));
 type Props = { representation?: "model"|"source"|"walk"; planId?: string|null; featureId?: string|null; onFeature?: (id:string|null)=>void; onPlan?: (id:string)=>void; entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void; onExploreSite?: () => void; onDetails?: () => void; onCamera?: (camera: MapCamera) => void; restoreCamera?: MapCamera; restoreNonce?: number; onRecord?: (id: string) => void; recordId?: string | null; scrollPhoto?: boolean; scrollColumn?: number; onScrollColumn?: (column: number) => void; onScrollPhoto?: (show: boolean, id?: string) => void };
 const INITIAL = { center: [35.367, 31.82] as [number,number], zoom: 10.3 };
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
+function WalkingPerson({size=32}:{size?:number}){
+  return <svg width={size} height={size} viewBox="0 0 28 36" aria-hidden="true" fill="#f5be24" stroke="#855512" strokeWidth="1.4" strokeLinejoin="round"><circle cx="14" cy="5" r="4"/><path d="M9 11h10l4 10-4 1-2-6v18h-4V23h-2v11H7V16l-2 6-4-1 5-10z"/></svg>;
+}
 export default function AtlasMap(props:Props) {
   const {entry,places,entries,focusId,focusNonce,visibleIds,mode,onMode,onPlace,onEntry,mobileView,onText}=props;
   const offMap=mode==="scroll"||mode==="scene";
@@ -248,7 +251,7 @@ export default function AtlasMap(props:Props) {
   function selectFeature(id:string|null){setLocalFeature(id);props.onFeature?.(id);if(!walking)siteRuntime.current?.focus(id??undefined);}
   function stopWalk(){walker.current?.stop();walker.current=null;setWalking(false);}
   async function enterWalk(at?:[number,number]){
-    const map=mapRef.current,site=siteRuntime.current;if(!map||!site){setDropMessage("This site has no source-based 3D coverage yet. Explore its photos and references here.");return;}
+    const map=mapRef.current,site=siteRuntime.current;if(!map||!site){setDropMessage(selectedPlace?.lat==null?"This site has no established map location. Explore its source plan here, or select a mapped site such as Qumran to walk around.":"This site has no source-based 3D coverage yet. Explore its photos and references here.");return;}
     if(walker.current)stopWalk();
     const {startMapWalk}=await import("./atlas-map-walk");if(mapRef.current!==map||siteRuntime.current!==site)return;
     setPanel(null);setDropMessage("");setWalking(true);walker.current=startMapWalk(map,site,setWalkPosition,at);
@@ -307,8 +310,8 @@ export default function AtlasMap(props:Props) {
       </div></details></div>
     </div>}
     {!offMap&&!walking&&<div className="zoom-controls"><button disabled={!ready} className="tool-button" aria-label="Zoom in" onClick={()=>mapRef.current?.zoomIn()}><Plus size={18}/></button><button disabled={!ready} className="tool-button" aria-label="Zoom out" onClick={()=>mapRef.current?.zoomOut()}><Minus size={18}/></button></div>}
-    {!offMap&&<button className={`map-person ${walking?"active":""}`} aria-label={walking?"Exit eye-level view":"Walk around this site"} aria-pressed={walking} title="Drag onto the site, or tap to enter eye level" disabled={!ready} onPointerDown={e=>{walkerGesture.current={x:e.clientX,y:e.clientY,moved:false};pointerDropped.current=false;e.currentTarget.setPointerCapture(e.pointerId);}} onPointerMove={e=>{const g=walkerGesture.current;if(g&&Math.hypot(e.clientX-g.x,e.clientY-g.y)>8){g.moved=true;setPlacing(true);const r=container.current?.getBoundingClientRect();if(r)setDragPoint({x:e.clientX-r.left,y:e.clientY-r.top});}}} onPointerUp={dropWalker} onPointerCancel={()=>{walkerGesture.current=null;setPlacing(false);setDragPoint(null)}} onClick={()=>{if(pointerDropped.current){pointerDropped.current=false;return;}if(walking)stopWalk();else void enterWalk();}}><PersonStanding size={28}/></button>}
-    {placing&&dragPoint&&<div className="map-person-ghost" aria-hidden="true" style={{left:dragPoint.x,top:dragPoint.y}}><PersonStanding size={34}/></div>}
+    {!offMap&&<button className={`map-person ${walking?"active":""}`} aria-label={walking?"Exit eye-level view":"Walk around this site"} aria-pressed={walking} title="Drag onto the site, or tap to enter eye level" disabled={!ready} onPointerDown={e=>{walkerGesture.current={x:e.clientX,y:e.clientY,moved:false};pointerDropped.current=false;e.currentTarget.setPointerCapture(e.pointerId);}} onPointerMove={e=>{const g=walkerGesture.current;if(g&&Math.hypot(e.clientX-g.x,e.clientY-g.y)>8){g.moved=true;setPlacing(true);const r=container.current?.getBoundingClientRect();if(r)setDragPoint({x:e.clientX-r.left,y:e.clientY-r.top});}}} onPointerUp={dropWalker} onPointerCancel={()=>{walkerGesture.current=null;setPlacing(false);setDragPoint(null)}} onClick={()=>{if(pointerDropped.current){pointerDropped.current=false;return;}if(walking)stopWalk();else void enterWalk();}}><WalkingPerson/><span>{walking?"Exit":"Walk"}</span></button>}
+    {placing&&dragPoint&&<div className="map-person-ghost" aria-hidden="true" style={{left:dragPoint.x,top:dragPoint.y}}><WalkingPerson size={38}/></div>}
     {placing&&<div className="map-drop-hint" role="status">Drop on the selected site to look around</div>}
     {dropMessage&&!offMap&&<div className="map-drop-hint" role="status">{dropMessage}<button aria-label="Dismiss walking message" onClick={()=>setDropMessage("")}><X size={14}/></button></div>}
     {walking&&<div className="map-walk-controls" aria-label="Walk controls"><button onClick={stopWalk}><ArrowLeft size={16}/>Back to map</button><span>Drag to look · WASD / arrows to move</span><div>{[["w","Forward"],["a","Left"],["s","Back"],["d","Right"]].map(([key,label])=><button key={key} onPointerDown={e=>{e.currentTarget.setPointerCapture(e.pointerId);walker.current?.keys.add(key)}} onPointerUp={()=>walker.current?.keys.delete(key)} onPointerCancel={()=>walker.current?.keys.delete(key)} onLostPointerCapture={()=>walker.current?.keys.delete(key)}>{label}</button>)}</div><small>Eye height 1.7 m · source-based geometry · route not surveyed</small><output aria-label="Walk camera position">{walkPosition.map(n=>n.toFixed(1)).join(", ")}</output></div>}

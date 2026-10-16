@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — production Chromium on desktop and phone reaches the passage, map, comparisons and source catalogue through Evidence, Map and Scroll. The More menu and duplicate section links are removed; videos share Photos and historical maps open from map Options. The site panel is reduced to Plan, Photos and Sources. Entry context and the geographic canvas persist through the checked map/reference flow.
+Last session (16 October 2026 Los Angeles): **obtained** — production desktop/phone checks click the filled yellow Walk figure with the reference panel open; the shorter phone layout also keeps it reachable. IV/17 explains its missing map location. Pages archive exclusions and removal of the bypass marker reduce the website payload; the repository retains the research archive. Hosted deployment remains unverified because the Pages API returned Forbidden.
 
 ## Active questions and the observation that decides each
 

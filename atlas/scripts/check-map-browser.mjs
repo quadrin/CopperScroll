@@ -47,9 +47,10 @@ try {
   await panel.getByLabel('YouTube site video URL').fill('https://www.youtube.com/watch?v=muN-EJR631Y');await panel.getByRole('button',{name:'Show video here',exact:true}).click();
   assert.equal(await panel.getByTitle('Site reference video').getAttribute('src'),'https://www.youtube-nocookie.com/embed/muN-EJR631Y');
   await sameCanvas();await page.getByRole('button',{name:'Close site reference panel'}).click();
-  await page.locator('.map-site-caption').getByRole('button',{name:'Sources & assumptions',exact:true}).click();await page.getByRole('complementary',{name:'Site reference panel'}).waitFor();await sameCanvas();await page.getByRole('button',{name:'Close site reference panel'}).click();
+  await page.locator('.map-site-caption').getByRole('button',{name:'Sources & assumptions',exact:true}).click();await page.getByRole('complementary',{name:'Site reference panel'}).waitFor();await sameCanvas();
   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition);
+  assert.equal(await panel.isVisible(),false,'Walking remains accessible with a reference panel open and closes it');
   const before=await page.locator('.maplibregl-canvas').getAttribute('data-walk-position');
   if(mobile){const forward=page.getByRole('button',{name:'Forward',exact:true});const r=await forward.boundingBox();await page.mouse.move(r.x+r.width/2,r.y+r.height/2);await page.mouse.down();try{await page.waitForFunction(before=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition!==before,before,{timeout:10000});}finally{await page.mouse.up();}}
   else{await page.locator('.maplibregl-canvas').focus();await page.keyboard.down('w');try{await page.waitForFunction(before=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition!==before,before,{timeout:10000});}finally{await page.keyboard.up('w');}}
