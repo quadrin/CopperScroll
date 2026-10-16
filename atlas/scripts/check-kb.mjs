@@ -58,6 +58,7 @@ for(const entry of ['25','11','60']){
  const overview=render(components.CaseOverview,{i,entry:i.by.get('entry/'+entry),context,candidates,onSelect});
  for(const heading of ['What does the passage say?','How do the candidates compare?','What evidence would help decide?'])assert.ok(overview.includes(heading));
  for(const candidate of candidates)assert.ok(overview.includes(candidate.label.replaceAll('&','&amp;').replaceAll("'",'&#x27;')),candidate.key);
+ assert.ok(overview.includes(entry==='25'?'permit L-656':'Kallai pp.172'));
  assert.ok(overview.includes('Comparison branch'));assert.ok(overview.includes('never identification confidence'));
 }
 const choices=model.comparisonChoices(i,candidates),choice=choices.find(c=>c.branch.includes('target-prerequisites'));
