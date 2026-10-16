@@ -116,6 +116,12 @@ specific={
 '58':('Perennial springs and period water installations fit the regional setting at Beth Shean.','The scroll’s final mem differs from the usual nun in Beth Shean. No evidence selects the particular spring.'),
 '59':('Zertal identifies Eusebius’s two villages called Bezek, 17 miles from Neapolis, with the two Ibziq sites. A kokhim tomb excavated at Kh. Ibziq in 1971 held pottery of the 1st–2nd centuries CE, which fits Puech’s alternative “burial chamber” reading in type. Zertal places the older Bezeq at nearby Kh. Salhab.','Zertal’s survey reports cisterns and burial caves but no conduit at either Ibziq site, and few Early Roman sherds on the surface. No conduit is reported at Kh. Salhab either. The place name depends on Puech’s reading הבזך, which Allegro and Lefkovits share; the Text tab shows הבור, “the cistern”, the reading of Wilmot and Wise.'),
 }
+# 15 October 2026: record-conflict corrections (research/assessments/evidence_components/record_conflicts.md).
+# Each override replaces stale or overstated atlas text with what the more specific record says; no candidate,
+# status or confidence changes. corrected_text: eid -> (evidence, caution); corrected_period: eid -> period text.
+corrected_text={}
+corrected_period={}
+specific.update(corrected_text)
 # 8 October 2026: where a title follows an edition reading that differs from the text shown in the
 # Text tab, the caution says so (text/readings.json records the readings).
 reading_notes={
@@ -164,6 +170,8 @@ for r in rows('phase3_site_index.csv'):
     candidates+=revised_candidates.get(eid,[])
     entries.append({'id':eid,'title':title,'hebrew':hebrew,'description':description,'lines':r['col_line'],'status':r['status'],'confidence':confidence,'region':places[ids[0]]['region'] if ids else 'unplaced','candidates':candidates,'evidence':evidence,'caution':caution,'landmark':primary['landmark_types_required'] if primary else '', 'period':primary['period'] if primary else 'Not established in the public archaeology index','sources':primary['main_sources'] if primary else 'Phase 3 site index; Phase 2 landmark lexicon','featured':eid in ['21','31','32','49']})
 for entry in entries:
+    if entry['id'] in corrected_period:
+        entry['period']=corrected_period[entry['id']]
     if entry['id'] in ['20','21','22','23','24']:
         entry['sources'] += '; Puech 2006 pp. 187–189; Qumran reference review (28 September 2026)'
     if entry['id']=='21':
