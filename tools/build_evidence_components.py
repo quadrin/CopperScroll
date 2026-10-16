@@ -67,13 +67,13 @@ def validate(rows, atlas):
         errors.append(f"missing row {k}")
     for k in sorted(set(seen) - expected):
         errors.append(f"row not in atlas {k}")
-    # R is per entry: every candidate of an entry must carry the same R level.
+    # R may differ between candidates of one entry only when they rely on different anchor words.
     by_entry = {}
     for r in rows:
-        by_entry.setdefault(r["entry"], set()).add(r["R"]["level"])
-    for e, lv in by_entry.items():
-        if len(lv) > 1:
-            errors.append(f"entry {e}: R differs between candidates {sorted(lv)}")
+        by_entry.setdefault(r["entry"], []).append(r)
+    for e, rs in by_entry.items():
+        if len({r["R"]["level"] for r in rs}) > 1 and len({tuple(r.get("anchor_words") or []) for r in rs}) == 1:
+            errors.append(f"entry {e}: R differs between candidates with the same anchor words")
     return errors
 
 
