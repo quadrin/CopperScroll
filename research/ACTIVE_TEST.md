@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 15 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (15 October 2026 Los Angeles): **not obtained** (no new source was sought) — the 79 [record conflicts](assessments/evidence_components/record_conflicts.md) found while rating were checked: 51 corrected (atlas text, periods, two titles, table cells, reading notes, three schematics), 15 not conflicts, 12 left as owner decisions. Before that: every atlas candidate rated on reading, place, feature and date plus uniqueness ([evidence components](assessments/evidence_components/README.md)); 45 weak, 46 none.
+Last session (16 October 2026 Los Angeles): **obtained** — the atlas has entry filters for text, region, feature mentions and comparison coverage, plus candidate filters for name and branch-specific requirement status. Filtered views retain hidden-result counts and a reset to all candidates and controls. Software presentation update.
 
 ## Active questions and the observation that decides each
 

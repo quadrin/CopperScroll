@@ -32,7 +32,10 @@ const text=compile('../app/atlas-text.tsx');
 const textData=JSON.parse(readFileSync(new URL('../app/atlas-text.json',import.meta.url),'utf8'));
 const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
 const fieldwork=compile('../app/atlas-kb-fieldwork.tsx','',{'./atlas-text':{Segments:text.Segments,useScrollText:()=>({data:textData,failed:false})},'./atlas-explorer-model':{sitePlans:plans}});
-const components=compile('../app/atlas-kb.tsx','\nexport {Graph,Inspector,Requirements,Names,Impact,Sources,CaseOverview,Comparison};',{'./atlas-kb-model':model,'./atlas-kb-fieldwork':fieldwork});
+const filters=compile('../app/atlas-kb-filters-model.ts');
+const catalogue=JSON.parse(readFileSync(new URL('../app/atlas-data.json',import.meta.url),'utf8'));
+const finder=compile('../app/atlas-kb-filters.tsx','',{'./atlas-data.json':catalogue,'./atlas-kb-filters-model':filters});
+const components=compile('../app/atlas-kb.tsx','\nexport {Graph,Inspector,Requirements,Names,Impact,Sources,CaseOverview,Comparison};',{'./atlas-kb-model':model,'./atlas-kb-fieldwork':fieldwork,'./atlas-kb-filters':finder,'./atlas-kb-filters-model':filters});
 const render=(c,props)=>renderToStaticMarkup(createElement(c,props));
 const onSelect=()=>{};
 for(const entry of Object.keys(data.entries)){
@@ -65,7 +68,7 @@ for(const entry of ['25','11','60']){
  assert.ok(overview.includes(entry==='25'?'permit L-656':'Kallai pp.172'));
  assert.ok(overview.includes('Comparison branch'));assert.ok(overview.includes('never identification confidence'));
 }
-const defaultComparison=render(components.Comparison,{i,candidates,onSelect});assert.ok(defaultComparison.includes('Show all registered depth'));assert.equal((defaultComparison.match(/<option /g)||[]).length,4);
+const defaultComparison=render(components.Comparison,{i,candidates,onSelect});assert.ok(defaultComparison.includes('Show all registered depth'));assert.equal((defaultComparison.split('aria-label="Comparison branch"')[1].split('</select>')[0].match(/<option /g)||[]).length,4);
 const choices=model.comparisonChoices(i,candidates),choice=choices.find(c=>c.branch.includes('target-prerequisites'));
 assert.ok(choice);
 const controls=model.comparisonRows(i,candidates,choice.key);
@@ -91,3 +94,20 @@ for(const id of ['hypothesis/twin','hypothesis/A41:XII/53','hypothesis/iv11']){
 }
 const e60=render(fieldwork.PassageEdition,{entry:i.by.get('entry/60'),onSelect});assert.ok(e60.includes('{צח}'));
 console.log('Archaeological presentation checks passed: source plate, attribution, figure gaps, Hebrew sigla and edition concordance.');
+
+// Filters subset display rows without changing branch, period, assignment or unknowns.
+const entryRows=filters.entryFilterRows(catalogue,data);
+assert.equal(entryRows.length,61);assert.equal(filters.filterEntries(entryRows,filters.emptyEntryFilters).length,61);
+const pilot=filters.filterEntries(entryRows,{...filters.emptyEntryFilters,coverage:'comparisons'});
+assert.deepEqual(pilot.map(r=>r.id).sort(),['11','25','60']);
+for(const row of filters.filterEntries(entryRows,{...filters.emptyEntryFilters,region:'jericho',feature:'cave'})){assert.equal(row.region,'jericho');assert.ok(row.features.includes('cave'));}
+assert.ok(filters.filterEntries(entryRows,{...filters.emptyEntryFilters,text:'Kohlit'}).length>0);
+assert.equal(filters.filterEntries(entryRows,{...filters.emptyEntryFilters,text:'a-place-that-is-not-recorded'}).length,0);
+const compared=model.comparisonRows(i,candidates,model.comparisonChoices(i,candidates)[0].key);
+assert.deepEqual(filters.filterCandidateRows(compared,'','all'),compared);
+const conflicts=filters.filterCandidateRows(compared,'','conflict');assert.ok(conflicts.some(r=>r.candidate.id==='iv11'));
+for(const row of filters.filterCandidateRows(compared,'','fits'))assert.ok(row.result.payload.checks.every(c=>c.status==='compatible'));
+const missing=controls.find(r=>r.candidate.key==='hypothesis/A41:XII/53');assert.ok(filters.filterCandidateRows([missing],'','unknown').includes(missing));assert.equal(filters.filterCandidateRows([missing],'','fits').length,0);
+const iv17=filters.filterCandidateRows(compared,'IV17','all');assert.equal(iv17.length,1);assert.equal(iv17[0],compared.find(r=>r.candidate.id==='iv17'));
+assert.ok(render(finder.default,{data,current:'25',onChoose(){}}).includes('Filter entries'));
+console.log('Filter checks passed: 61-entry coverage, combined region/feature search, diacritics, exact-branch candidate subsets, explicit missing results and reset.');
