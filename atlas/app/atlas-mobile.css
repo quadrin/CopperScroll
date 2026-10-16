@@ -36,9 +36,9 @@
  .unified-atlas .atlas-context-panel>nav>button{min-height:44px;justify-content:center;padding:9px 6px;font-size:13px}
  .unified-atlas .atlas-context-panel .atlas-desktop-find{display:none}
 
- .unified-atlas .unified-surface .map-toolbar{left:12px;top:12px;gap:6px}
- .unified-atlas .unified-surface .map-mode [role=tablist]{height:44px;padding:3px}
- .unified-atlas .unified-surface .map-mode [role=tab]{font-size:12px;min-height:38px;padding:6px 10px;gap:5px}
+ .unified-atlas .unified-surface .map-toolbar{left:12px;right:auto;top:12px;gap:6px}
+ .unified-atlas .unified-surface .map-mode [role=tablist]{height:50px;padding:3px}
+ .unified-atlas .unified-surface .map-mode [role=tab]{font-size:12px;min-height:44px;padding:6px 10px;gap:5px}
  .unified-atlas .unified-surface .map-toolbar>.tool-button{height:44px;width:44px;padding:0}
  .unified-atlas .unified-surface .compass-control{top:12px;right:12px;width:44px;height:44px;padding:5px}
  .unified-atlas .unified-surface .compass-control>span{display:none}
@@ -56,7 +56,7 @@
  .unified-atlas .unified-surface .map-selection-note>span{font-size:12px;line-height:1.4}
  .unified-atlas .unified-surface .map-selection-note>small{font-size:11px;line-height:1.4;margin-top:3px}
  .unified-atlas .unified-surface .site-inspection-actions{display:flex;gap:8px;margin-top:9px;flex-wrap:nowrap}
- .unified-atlas .unified-surface .site-inspection-actions>button{flex:1;justify-content:center;min-height:44px;font-size:13px;padding:8px 10px}
+ .unified-atlas .unified-surface .site-inspection-actions>button{display:flex!important;flex:1;justify-content:center;min-height:44px;font-size:13px;padding:8px 10px}
  .unified-atlas .unified-surface .site-photo-preview,.unified-atlas .unified-surface .map-legend,.unified-atlas .unified-surface .map-loaded-note{display:none}
  .unified-atlas .unified-surface .map-status{top:124px;bottom:auto;left:12px;right:12px;transform:none;width:auto;max-width:none;max-height:calc(62% - 132px);overflow:auto;font-size:12px;padding:10px;pointer-events:auto}
  .unified-atlas .unified-surface .map-status button{min-height:44px}
@@ -68,24 +68,26 @@
 }
 
 @container(max-width:800px){
- .unified-atlas .site-explorer-head{display:block;padding:10px 12px 0}
- .unified-atlas .site-explorer-head .small-caps{display:none}
- .unified-atlas .site-explorer-head h2{font-size:20px;margin:0 0 8px}
- .unified-atlas .site-view-switch{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));max-width:none;gap:4px;padding-bottom:8px}
- .unified-atlas .site-view-switch button{justify-content:center;min-width:0;min-height:44px;font-size:11px;padding:6px 3px;white-space:nowrap}
- .unified-atlas .site-view-switch svg{display:none}
- .unified-atlas .site-plan-selector{display:none}
- .unified-atlas .site-canvas-column{padding-bottom:56px}
- .unified-atlas .site-inspector[data-expanded=false]{height:56px;padding:0 16px}
- .unified-atlas .site-inspector .site-sheet-handle{min-height:44px;padding:10px 0;font-size:12px}
- .unified-atlas .site-inspector[data-expanded=true]{max-height:70%;padding:10px 16px calc(16px + env(safe-area-inset-bottom))}
- .unified-atlas .site-source-caption{padding:7px 12px;font-size:10px;max-height:78px}
- .unified-atlas .site-source-caption details{display:block}
- .unified-atlas .site-zoom-controls button{width:44px;height:44px}
- .unified-atlas .site-feature-list{grid-template-columns:1fr}
- .unified-atlas .site-feature-list button{min-height:48px}
- .unified-atlas .site-feature-list strong{font-size:14px}
- .unified-atlas .site-feature-list small{font-size:11px}
+ .unified-atlas .site-explorer .site-explorer-head{display:block;padding:10px 12px 0}
+ .unified-atlas .site-explorer .site-explorer-head .small-caps{display:none}
+ .unified-atlas .site-explorer .site-explorer-head h2{font-size:20px;margin:0 0 8px}
+ .unified-atlas .site-explorer .site-view-switch{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));max-width:none;gap:4px;padding-bottom:8px}
+ .unified-atlas .site-explorer .site-view-switch button{justify-content:center;min-width:0;min-height:44px;font-size:11px;padding:6px 3px;white-space:nowrap}
+ .unified-atlas .site-explorer .site-view-switch svg{display:none}
+ .unified-atlas .site-explorer .site-plan-selector{display:none}
+ .unified-atlas .site-explorer .site-canvas-column{padding-bottom:56px}
+ .unified-atlas .site-explorer .site-inspector[data-expanded=false]{height:56px;padding:0 16px}
+ .unified-atlas .site-explorer .site-inspector .site-sheet-handle{min-height:44px;padding:10px 0;font-size:12px}
+ .unified-atlas .site-explorer .site-inspector[data-expanded=true]{max-height:70%;padding:10px 16px calc(16px + env(safe-area-inset-bottom))}
+ .unified-atlas .site-explorer .site-source-caption{padding:7px 12px;font-size:10px;max-height:78px}
+ .unified-atlas .site-explorer .site-source-caption details{display:block}
+ .unified-atlas .site-explorer .site-zoom-controls{flex-direction:row}
+ .unified-atlas .site-explorer .site-zoom-controls button{width:44px;height:44px;border-bottom:0;border-right:1px solid #d7e0ce}
+ .unified-atlas .site-explorer .site-zoom-controls button:last-child{border-right:0}
+ .unified-atlas .site-explorer .site-feature-list{grid-template-columns:1fr}
+ .unified-atlas .site-explorer .site-feature-list button{min-height:48px}
+ .unified-atlas .site-explorer .site-feature-list strong{font-size:14px}
+ .unified-atlas .site-explorer .site-feature-list small{font-size:11px}
  .unified-atlas .site-media-enlarged .site-canvas-column{padding-bottom:0}
 }
 
