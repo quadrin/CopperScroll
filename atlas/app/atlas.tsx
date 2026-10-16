@@ -29,13 +29,16 @@ export default function Atlas(){
  const [mapRestore,setMapRestore]=useState<{camera?:Camera;nonce:number}>({nonce:0});
  const [focusNonce,setFocusNonce]=useState(0);
  const [browse,setBrowse]=useState(false);
+ const [contextOpen,setContextOpen]=useState(false);
+ const contextToggle=useRef<HTMLButtonElement>(null);
+ useEffect(()=>{if(!contextOpen)return;const close=(e:PointerEvent)=>{if(!contextToggle.current?.closest(".atlas-explorer-bar")?.contains(e.target as Node))setContextOpen(false)};document.addEventListener("pointerdown",close);return()=>document.removeEventListener("pointerdown",close)},[contextOpen]);
  const [query,setQuery]=useState("");
  const [region,setRegion]=useState("all");
  const [notes,setNotes]=useState(false);
  const [more,setMore]=useState(false);
  const [layers,setLayers]=useState(false);
  const [about,setAbout]=useState(false);
- useEffect(()=>{function escape(event:KeyboardEvent){if(event.key!=="Escape")return;setBrowse(false);setNotes(false);setMore(false);setLayers(false);setAbout(false);}window.addEventListener("keydown",escape);return()=>window.removeEventListener("keydown",escape)},[]);
+ useEffect(()=>{function escape(event:KeyboardEvent){if(event.key!=="Escape")return;setBrowse(false);setNotes(false);setMore(false);setLayers(false);setContextOpen(false);setAbout(false);setContextOpen(false);}window.addEventListener("keydown",escape);return()=>window.removeEventListener("keydown",escape)},[]);
  const entry=entries.find(e=>e.id===state.entryId)??entries[0];
  const place=state.placeId?byPlace[state.placeId]??null:null;
  const plan=sitePlans.find(p=>p.id===state.planId)??plansForPlace(state.placeId)[0];
@@ -56,7 +59,7 @@ export default function Atlas(){
   window.history.replaceState({...h,atlas:prev,atlasDepth:h?.atlasDepth??0,atlasVersion:2},"",location.href);
   const nextDepth=replace?h?.atlasDepth??0:(h?.atlasDepth??0)+1;
   window.history[replace?"replaceState":"pushState"]({atlas:next,atlasDepth:nextDepth,atlasVersion:2},"",explorerHash(next));
-  current.current=next;setState(next);setDepth(nextDepth);setBrowse(false);setMore(false);setLayers(false);
+  current.current=next;setState(next);setDepth(nextDepth);setBrowse(false);setMore(false);setLayers(false);setContextOpen(false);
   if(next.entryId!==prev.entryId||next.placeId!==prev.placeId)setFocusNonce(n=>n+1);
   if(next.mode!==prev.mode||next.scrollPhoto!==prev.scrollPhoto)window.dispatchEvent(new Event("atlas:modechange"));
  },[]);
@@ -69,7 +72,7 @@ export default function Atlas(){
    const restored=h?.atlas&&explorerHash(h.atlas)===location.hash?h.atlas:explorerFromHash(location.hash,primaryPlace);
    if(!restored)return;
    if(!h?.atlas)window.history.replaceState({atlas:restored,atlasDepth:0,atlasVersion:2},"",location.href);
-   current.current=restored;setState(restored);setDepth(h?.atlasDepth??0);setRestoreNonce(n=>n+1);setMapRestore(old=>({camera:restored.camera,nonce:old.nonce+1}));setBrowse(false);setNotes(false);setMore(false);setLayers(false);
+   current.current=restored;setState(restored);setDepth(h?.atlasDepth??0);setRestoreNonce(n=>n+1);setMapRestore(old=>({camera:restored.camera,nonce:old.nonce+1}));setBrowse(false);setNotes(false);setMore(false);setLayers(false);setContextOpen(false);
   }
   window.addEventListener("popstate",restore);window.addEventListener("hashchange",restore);
   return()=>{window.removeEventListener("popstate",restore);window.removeEventListener("hashchange",restore)};
@@ -102,10 +105,15 @@ export default function Atlas(){
   <AtlasSiteNav entry={entry.id} planId={plan?.id} active={state.workbench?'tools':state.mode==='scroll'?'scroll':['2d','3d','landscape'].includes(state.mode)?'map':'sites'}/>
   <div className="atlas-explorer-bar" aria-label="Current passage and place">
    <button className="atlas-back" aria-label="Back within atlas" disabled={!canBack} onClick={back}><ArrowLeft size={16}/><span>Back</span></button>
+   <button ref={contextToggle} className="atlas-context-toggle" aria-label="Change passage, candidate or site plan" aria-expanded={contextOpen} aria-controls="atlas-context-panel" onClick={()=>setContextOpen(v=>!v)}><span><strong>{entry.id} · {entry.title}</strong><small>{plan?.label??place?.shortName??'Location unresolved'}</small></span><ChevronDown size={18}/></button>
+   <button className="atlas-mobile-find" aria-label="Find an entry or place" aria-expanded={browse} onClick={()=>{setContextOpen(false);setBrowse(v=>!v)}}><Search size={18}/></button>
+   <div id="atlas-context-panel" className="atlas-context-panel" data-expanded={contextOpen}>
+    <div className="atlas-context-panel-head"><strong>Passage and place</strong><button aria-label="Close passage and place" onClick={()=>{setContextOpen(false);contextToggle.current?.focus()}}><X size={18}/></button></div>
    <label className="atlas-entry-picker">Passage<select aria-label="Selected passage" value={entry.id} onChange={e=>chooseEntry(e.target.value)}>{entries.map(e=><option key={e.id} value={e.id}>{e.id} · {e.title}</option>)}</select></label>
    <label>Candidate<select aria-label="Selected candidate" value={state.placeId??''} disabled={!entry.candidates.length} onChange={e=>chooseEntry(entry.id,e.target.value)}>{!entry.candidates.length&&<option value="">Location unresolved</option>}{place&&!entry.candidates.some(c=>c.placeId===place.id)&&<option value={place.id}>Context · {place.shortName}</option>}{entry.candidates.map(c=><option key={c.placeId} value={c.placeId}>{byPlace[c.placeId].shortName}</option>)}</select></label>
    <label className="atlas-plan-picker">Site plans<select aria-label="Browse all site plans" value={plan?.id??''} onChange={e=>{const chosen=sitePlans.find(p=>p.id===e.target.value);if(!chosen)return;const id=chosen.placeIds[0],linked=entry.candidates.some(c=>c.placeId===id)?entry:entries.find(e=>e.candidates.some(c=>c.placeId===id));if(linked)navigate({...archaeologyForPlace(linked.id,id),planId:chosen.id,representation:'model',modelCamera:undefined,viewport:undefined,photoViewport:undefined});}}><option value="">Choose a source plan…</option>{sitePlans.map(p=><option key={p.id} value={p.id}>{p.label}</option>)}</select></label>
-   <nav aria-label="Selected place views"><button onClick={()=>exploreCandidate()}>3D / plan</button><button onClick={()=>changeMode('ground')}>Photos</button><button onClick={()=>changeMode('dossier')}>Dossier</button><button aria-label="Find an entry or place" aria-expanded={browse} onClick={()=>setBrowse(v=>!v)}><Search size={14}/>Find</button></nav>
+   <nav aria-label="Selected place views"><button onClick={()=>exploreCandidate()}>3D / plan</button><button onClick={()=>changeMode('ground')}>Photos</button><button onClick={()=>changeMode('dossier')}>Dossier</button><button className="atlas-desktop-find" aria-label="Find an entry or place" aria-expanded={browse} onClick={()=>setBrowse(v=>!v)}><Search size={14}/>Find</button></nav>
+   </div>
   </div>
   <div id="explore-surface" className="unified-surface">
    {state.workbench?<Suspense fallback={<p>Opening research tools…</p>}><Workbench moduleId={state.workbench} onModule={id=>navigate({workbench:id})} onClose={back}/></Suspense>:<>
@@ -117,7 +125,7 @@ export default function Atlas(){
     {state.mode==="site"&&plan&&<SiteExplorer entry={entry} place={place} plan={plan} featureId={state.featureId} highlightId={state.highlightId} onHighlight={id=>navigate({highlightId:id})} view={state.siteView} representation={state.representation} modelCamera={state.modelCamera} onModelCamera={modelCamera=>saveSnapshot({modelCamera})} onRepresentation={representation=>navigate({representation,siteView:"plan"})} viewport={state.viewport} photoViewport={state.photoViewport} restoreNonce={restoreNonce} onViewport={(v:Viewport,photo:boolean)=>saveSnapshot(photo?{photoViewport:v}:{viewport:v})} onFeature={id=>navigate({featureId:id,enlarged:false})} onPlan={id=>navigate({planId:id,featureId:null,highlightId:null,viewport:undefined,modelCamera:undefined,representation:"model",siteView:"plan"})} onView={view=>navigate({siteView:view,enlarged:false})} onTerrain={()=>{changeMode("3d");setFocusNonce(n=>n+1)}} onRead={read} enlarged={!!state.enlarged} onEnlarge={()=>navigate({enlarged:true})} onCloseEnlarged={back}/>}
 
     {["2d","3d"].includes(state.mode)&&<>
-     <div className="explore-context"><span>Entry {entry.id} · {entry.title}</span><button onClick={()=>setNotes(v=>!v)} aria-expanded={notes}>{notes?"Close details":"Entry details"}</button><div className="unified-menu-wrap"><button onClick={()=>setLayers(v=>!v)} aria-expanded={layers}><Layers size={14}/>Map layers</button>{layers&&<div className="unified-menu"><p>Historical context for this place</p><button onClick={()=>changeMode("landscape")}>Historical maps &amp; archive</button><small>Source dates and alignment limits accompany each layer.</small></div>}</div></div>
+     <div className="explore-context"><span>Entry {entry.id} · {entry.title}</span><button onClick={()=>setNotes(v=>!v)} aria-expanded={notes}><span className="atlas-desktop-label">{notes?"Close details":"Entry details"}</span><span className="atlas-mobile-label">{notes?"Close":"Details"}</span></button><div className="unified-menu-wrap"><button onClick={()=>setLayers(v=>!v)} aria-expanded={layers}><Layers size={14}/><span className="atlas-desktop-label">Map layers</span><span className="atlas-mobile-label">Layers</span></button>{layers&&<div className="unified-menu"><p>Historical context for this place</p><button onClick={()=>changeMode("landscape")}>Historical maps &amp; archive</button><small>Source dates and alignment limits accompany each layer.</small></div>}</div></div>
      {feature&&state.planId&&!notes&&<aside className="terrain-feature-note"><button onClick={()=>navigate({mode:"site",siteView:"plan"})}>View selected structure in plan</button><FeatureNote feature={feature} onRead={read}/><p className="terrain-registration-note">This feature has source-plan coordinates; its exact terrain position is unresolved.</p></aside>}
 
     </>}

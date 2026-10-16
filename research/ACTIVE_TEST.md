@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — shared atlas navigation, explicit geographic map links, direct access to source plans and research tools, closer plan/model inspection and a labelled eye-level free-camera simulation over existing illustrative geometry. Software update.
+Last session (16 October 2026 Los Angeles): **obtained** — compact phone navigation, a collapsible passage/place selector, separated map controls and a smaller site-view details drawer. Software presentation update.
 
 ## Active questions and the observation that decides each
 

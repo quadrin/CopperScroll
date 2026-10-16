@@ -151,3 +151,8 @@ A measured site asset needs a local coordinate frame, plan scale, sections or sp
 Keep surviving remains, proposed ancient reconstruction and illustrative context as separate layers. Each modeled component should carry its feature ID, source locator, date/phase, measurement basis, uncertainty and whether it is observed, reconstructed or illustrative. Export local site meshes as GLB/glTF for the existing Three.js viewer. Dense regional scans could use streamed 3D Tiles later. A grounded walkthrough requires measured floor topology, passage and ceiling clearances, a collision mesh and a navigation mesh. These are additional evidence and asset requirements, rather than a consequence of higher zoom.
 
 The IV/17 model is a suitable bounded pilot: its plan scale and reported height constrain part of the geometry, while its roof profile, thresholds and geographic registration require further evidence. Preserve those gaps in any new asset.
+
+
+### Phone navigation
+
+At widths up to 900px, all six primary sections fit in a single row. The passage, candidate and site-plan selectors live in the expandable passage/place panel; the current selection and search stay visible. Native selectors use 16px text and controls use 44px targets. Escape, outside taps and navigation close the panel. The map keeps mode/north controls in its first row and details/layers/zoom in a second row, above a bounded selected-site card. The site viewer uses a compact view switch and a 56px collapsed feature drawer. Safe-area spacing follows the dynamic viewport.
