@@ -36,7 +36,7 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
     const root=buildQumranPilot(),markers=new globalThis.Map<string,T.Vector3>();
     for(const feature of plan.features)markers.set(feature.id,new T.Vector3((feature.x+120-381)*.2,2,(feature.y+1080-1240)*.2));
     model={root,markers,selectable:[],roof:new T.Group(),note:'Qumran aqueduct segment · published plan relationships',units:'relative',framing:new T.Box3(new T.Vector3(-48,0,-15),new T.Vector3(48,10,24)),landscape:{context:'Source-relative rock setting',credit:'Ilan–Amit 1989 p. 283 Fig. 1; Davey CJD979 (1974); geometry and placement illustrative',mapped:false},assumptions:['Channel and branch relationships follow Ilan–Amit 1989 p. 283 Fig. 1. The local frame is an approximate display alignment at the gazetteer anchor, not a registered survey.','Rock faces, masonry courses, tunnel cross-section and elevations are illustrative. This partial aqueduct model does not reconstruct the whole Qumran settlement.','The basin and dam remain source-plan references; they are not complete surveyed volumes in the detailed aqueduct model.']};
-   }else model=buildModel(plan);scene.add(model.root);scene.add(sky.mesh);scene.add(avatar.root);
+   }else model=buildModel(plan);scene.add(model.root);scene.add(sky.mesh);
    const span=Math.max(model.framing.getSize(new T.Vector3()).x,model.framing.getSize(new T.Vector3()).z);
    scene.add(new T.HemisphereLight('#dbe7ef','#756a52',1.15));
    const sun=new T.DirectionalLight('#fff1d8',3.1);sun.position.set(-span*.8,span*1.3,span*.65);sun.castShadow=true;
@@ -71,10 +71,10 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    const walking=map.getCanvas().dataset.walkPosition?.split(',').map(Number),eye=new T.Vector3();
    if(walking)eye.set(walking[0],walking[1],walking[2]);
    sky.update(camera.projectionMatrix,eye,!!walking);
-   renderer.resetState();renderer.clearDepth();renderer.render(scene,camera);renderer.resetState();runtime.renderedFrames++;
+   renderer.resetState();renderer.clearDepth();renderer.render(scene,camera);avatar.render(renderer,map.getCanvas().clientWidth/map.getCanvas().clientHeight);renderer.resetState();runtime.renderedFrames++;
    const canvas=map.getCanvas();canvas.dataset.siteFrames=String(runtime.renderedFrames);canvas.dataset.siteMeshes=String(runtime.meshCount);canvas.dataset.siteVertices=String(runtime.vertexCount);
    canvas.dataset.siteElevation=base.toFixed(2);canvas.dataset.siteAnchor=new T.Vector3().applyMatrix4(camera.projectionMatrix).toArray().map(n=>n.toFixed(4)).join(',');
   },
-  onRemove(){map.off('terrain',terrainChanged);map.off('sourcedata',terrainLoaded);disposeSiteScene(scene);scene.traverse(o=>{if(o instanceof T.DirectionalLight)o.shadow.dispose();});renderer?.dispose();for(const key of ['siteFrames','siteMeshes','siteVertices','siteElevation','siteAnchor'])delete map.getCanvas().dataset[key];}
+  onRemove(){map.off('terrain',terrainChanged);map.off('sourcedata',terrainLoaded);disposeSiteScene(scene);avatar.dispose();scene.traverse(o=>{if(o instanceof T.DirectionalLight)o.shadow.dispose();});renderer?.dispose();for(const key of ['siteFrames','siteMeshes','siteVertices','siteElevation','siteAnchor'])delete map.getCanvas().dataset[key];}
  };
 }
