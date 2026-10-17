@@ -1,0 +1,290 @@
+{
+ "P31": [
+  {
+   "q": "P31-locate",
+   "answer": "I did not read a word בית in Stage 1. Right end of line (pos1-5, A x~1000-1175) is cracked; I read ב ם ל ו ? there. Taking the next group (my pos6-9, A x~750-1000) as the word asked about.",
+   "grade": "possible",
+   "evidence": "A only; C strip3 covers the right end but is ambiguous."
+  },
+  {
+   "q": "P31(a)",
+   "answer": "ה - roof with right vertical, left leg starts below the roof with a visible gap (free), no foot to the left",
+   "grade": "probable",
+   "evidence": "A x~950-1000 at 4x: left leg descends from about 1/3 height, not joined to roof; no leftward foot. C strip2 shows a two-legged letter, too faint to judge the join."
+  },
+  {
+   "q": "P31(b)",
+   "answer": "מ - closed box: left vertical present, bottom bar, and a short upstroke/tick at top-left",
+   "grade": "possible",
+   "evidence": "A x~874-927: left vertical clearly present (excludes ב which is open at the left); C strip2 shows a rounded closed form. Alternatives ט/ס (rounded) not excluded."
+  },
+  {
+   "q": "P31(c)",
+   "answer": "Cannot tell ד vs ר. The letter at A x~834-870 shows two verticals joined at the top (looks ח-like), and the top-right corner looks rounded rather than square with a projecting roof. If it must be ד or ר: ר.",
+   "grade": "cannot tell",
+   "evidence": "A at 5x; the extra left vertical may be shading or a crack. Stage 1 graded this position as מ possible (A vs C disagreement); I now see it as two-legged rather than a box - change made because the 5x crop shows no base bar."
+  },
+  {
+   "q": "P31(d)",
+   "answer": "ה - roof, right vertical, left leg free of the roof; no foot. Small tick rising above the roof at right corner.",
+   "grade": "possible",
+   "evidence": "A x~752-807 at 5x: gap between roof (y~139 orig) and top of left leg (y~151). In Stage 1 I read it as ח possible; on closer view the left leg appears free, so ה."
+  }
+ ],
+ "P35": [
+  {
+   "q": "P35-locate",
+   "answer": "No clear word beginning ב-נ found. Sequence from right: ב (pos1), then ק כ ל, then a נ/ב-like letter (pos5, A x~925-966: top stub, right vertical, base to the left). The letters following pos5 are taken as the word asked about.",
+   "grade": "possible",
+   "evidence": "A 3.5x crop."
+  },
+  {
+   "q": "P35-word1",
+   "answer": "Following letters: ט/closed box (pos6), ו (pos7), ו (pos8), ע (pos9)",
+   "grade": "possible",
+   "evidence": "A x~776-912"
+  },
+  {
+   "q": "P35-word1-last",
+   "answer": "The closed letter (my pos6) is a closed box with a flat base and a rounded loop curling inward at the top-left: this loop is the ט feature; ם less likely. If the word ends at pos6, its last letter = ט.",
+   "grade": "possible",
+   "evidence": "A x~852-912 at 3.5x: left side forms a small closed loop at top; right vertical and flat base square. C strip2 indistinct here. Stage 1 had ס possible (alts ט, ם)."
+  },
+  {
+   "q": "P35-word2",
+   "answer": "Group pos11-16 (A x~392-660): small closed loop (pos11, ס/ט/מ), two-legged ח/ה (pos12), ו (pos13), ר/ד-like with roof and a short mark on its left (pos14, possibly ה), ח/ת (pos15), ו/ד (pos16).",
+   "grade": "possible",
+   "evidence": "A 3.3x crop; B strips show ח-type forms here."
+  },
+  {
+   "q": "P35-word2-first",
+   "answer": "If the word begins at pos11: a small closed loop - nearer ט than י or ה. If it begins at pos12: a two-legged letter, ה/ח (left leg appears joined, so ח slightly preferred). Not י in either case.",
+   "grade": "possible",
+   "evidence": "A x~552-660"
+  },
+  {
+   "q": "P35-word2-second",
+   "answer": "If word starts at pos11: second = two-legged ה/ח. If word starts at pos12: second = single vertical with rounded head, ו or ר (ר possible).",
+   "grade": "possible",
+   "evidence": "A x~512-598"
+  },
+  {
+   "q": "P35-word2-waw",
+   "answer": "Yes: a ו (single vertical) at pos13 (A x~512-540) and another ו/ד at pos16 (A x~392-420) at the left end.",
+   "grade": "probable",
+   "evidence": "A"
+  }
+ ],
+ "P49": [
+  {
+   "q": "P49-locate",
+   "answer": "First word as read (pos1-4, A x~900-1140): ב, illegible (blister), illegible, ל/ר. pos2 lies under a blister and could not be confirmed as ק.",
+   "grade": "possible",
+   "evidence": "A; B/C too faint."
+  },
+  {
+   "q": "P49-word2",
+   "answer": "My pos4 (A x~895-932) on closer view: horizontal roof with vertical descending at its right end, and a faint mark above it (possible ל ascender) - so ר/ד or ל. Second word (pos5-9): ע (two obliques meeting), ב (box with tick), ב/כ (peaked top, long base), ו? (coincides with strip seam), ? (short vertical).",
+   "grade": "possible",
+   "evidence": "A 3x crops x~540-1000."
+  },
+  {
+   "q": "P49(a)",
+   "answer": "Neither: the letter after my possible ל is ע-shaped (two oblique strokes meeting low), not ה or ח.",
+   "grade": "possible",
+   "evidence": "A x~800-860; no roof stroke visible."
+  },
+  {
+   "q": "P49(b)",
+   "answer": "Cannot tell; no closed box seen directly after it. Later at pos10-11 there are two box letters (ב-type, open left).",
+   "grade": "cannot tell",
+   "evidence": "A; B/C show only faint box outlines."
+  },
+  {
+   "q": "P49(c)",
+   "answer": "No cancellation marks seen.",
+   "grade": "possible",
+   "evidence": "A, B, C"
+  }
+ ],
+ "P53": [
+  {
+   "q": "P53-word1",
+   "answer": "ב (pos1), ק? (pos2), ו (pos3), ז/ו (pos4), closed box ם/מ (pos5), ע (pos6), ה (pos7)",
+   "grade": "possible",
+   "evidence": "A 3.5x crops x~800-1150, C strips 1/2 for pos5-7"
+  },
+  {
+   "q": "P53(a)",
+   "answer": "Possibly ק: the letter at A x~1055-1080 has a head hooking to the left and a long stroke continuing down to/below the base line; a separate left leg is not clearly visible, so ר/ו remain possible. Stage 1 had ו possible here.",
+   "grade": "possible",
+   "evidence": "A 3.5x; region damaged and crossed by cracks."
+  },
+  {
+   "q": "P53(b)",
+   "answer": "Yes, a ו (single vertical) follows at A x~1028-1048, then another vertical with knob (ז/ו) at x~992-1020.",
+   "grade": "probable",
+   "evidence": "A; C strips show verticals here"
+  },
+  {
+   "q": "P53(c)",
+   "answer": "After the verticals: closed box (מ/ם; pos5, probable box), then ע (V-shape with vertical; probable), then ה (T-roof with legs). No ב in this word.",
+   "grade": "probable",
+   "evidence": "A x~836-988; C strips show closed box, clear V, and T-roofed letter"
+  },
+  {
+   "q": "P53(d)",
+   "answer": "ה (alternatives ח/ת); followed by a visible space",
+   "grade": "probable",
+   "evidence": "A x~836-884: roof with right leg and short left leg; C similar"
+  }
+ ],
+ "P61": [
+  {
+   "q": "P61-locate",
+   "answer": "First word read as starting at A x~1210 (pos2 ב, pos3 vertical); the start may be ב-ח if pos3 is a damaged ח. A blister/patch then covers A x~760-1080; X-rays B/C have black (missing metal) areas here.",
+   "grade": "possible",
+   "evidence": "A, C strips 2-3"
+  },
+  {
+   "q": "P61-spaces",
+   "answer": "About 7-9 letter widths (A x~780-1080, average letter width ~38-45 px).",
+   "grade": "possible",
+   "evidence": "A"
+  },
+  {
+   "q": "P61-letters",
+   "answer": "pos A x~1080-1130: one or two faint verticals at the right edge of the patch (ו/י/נ), possible. Inside the patch: no traces (smooth surface in A, black in X-rays). At the left edge of the patch, A x~725-775: a letter with curled head and base (ב or ל), possible.",
+   "grade": "possible",
+   "evidence": "A 2.8x crops; C strip 2/3 black at this level"
+  },
+  {
+   "q": "P61-traces",
+   "answer": "Possible traces of ב (left edge) and of a vertical (י/נ/ו) at the right edge; ל possible as alternative for the left-edge letter. No traces of ש, ד, א, ט seen within the gap.",
+   "grade": "possible",
+   "evidence": "A"
+  },
+  {
+   "q": "P61-last",
+   "answer": "The last letter before the next legible group (ח ו ה ...) is the curled letter at A x~725-775: ב (alt ל).",
+   "grade": "possible",
+   "evidence": "A"
+  }
+ ],
+ "P67": [
+  {
+   "q": "P67-locate",
+   "answer": "Middle column: a two-legged letter (A x~660-690) followed by a rounded letter with V/curl and base (A x~615-650, ט possible; Stage 1 read ש) gives a ה-ט-like start. Preceding word: A x~734-910.",
+   "grade": "possible",
+   "evidence": "A 3.2x crops. Stage 1 read pos13 as ש; at 3.2x the curl and base suggest ט; reason: closer crop."
+  },
+  {
+   "q": "P67-word",
+   "answer": "Preceding word: rounded box-like letter (ב/מ, A x~868-910), ק? (A x~821-857), ו (x~795), ח (x~734-771), possibly ו (x~690-710)",
+   "grade": "possible",
+   "evidence": "A; B strip2 shows verticals and ח-type letters here"
+  },
+  {
+   "q": "P67(a)",
+   "answer": "One letter: a single rounded letter with a curved right side and base running left; I see no separate small י. Whether its left is closed (מ) is unclear: it looks rounded rather than a flat-based square box.",
+   "grade": "possible",
+   "evidence": "A x~868-910 at 4.5x"
+  },
+  {
+   "q": "P67(b)",
+   "answer": "After the ק(?): a ו (single vertical), then a two-legged ח",
+   "grade": "possible",
+   "evidence": "A x~734-811"
+  },
+  {
+   "q": "P67(c)",
+   "answer": "Ends with ח, or with ח + ו if the vertical at x~690-710 belongs to this word (it lies close to the next letter).",
+   "grade": "possible",
+   "evidence": "A"
+  }
+ ],
+ "P72": [
+  {
+   "q": "P72-locate",
+   "answer": "First word from right: ב (certain), crossing-oblique letter (Stage 1 א; could be ש), ק, ת, then ע, ב, ו - no visible space, so the word boundary is not seen. The ל: my pos8 hook-shaped sign (A x~695-726) is, at 3.2x, a hook with a stroke rising above it, i.e. most likely the lower hook of ל (Stage 1 called it a hook-shaped sign).",
+   "grade": "possible",
+   "evidence": "A 3.2x crop"
+  },
+  {
+   "q": "P72-word2",
+   "answer": "... ל (hook, A x~695-726), ה/ח (A x~620-676), [two parallel horizontals = possible closed box ם, A x~540-600]",
+   "grade": "possible",
+   "evidence": "A; B strip2 right end"
+  },
+  {
+   "q": "P72(a)",
+   "answer": "ה - the left leg starts below the roof with a small gap (free); vertical strip seam just to the left",
+   "grade": "possible",
+   "evidence": "A x~620-676 at 3.2x"
+  },
+  {
+   "q": "P72(b)",
+   "answer": "Yes, probably a further letter: two parallel horizontal strokes (top and base) at A x~540-600 that could be the roof and base of a closed box (ם), with the verticals lost or hidden by the seam. B strip2 shows the same two horizontals with a vertical at the right. Then the next word ב ק פ ש.",
+   "grade": "possible",
+   "evidence": "A and B strip2; Stage 1 recorded this as '=' sign"
+  },
+  {
+   "q": "P72(c)",
+   "answer": "No cancellation marks seen.",
+   "grade": "possible",
+   "evidence": "A, B"
+  }
+ ],
+ "P84": [
+  {
+   "q": "P84(a)-word",
+   "answer": "Right-hand column group (A x~1130-1335): ל (hook with ascender), ה, נ/כ (vertical with base to the left and top stub), vertical with head (ר/ו), curled ר. If 'first word' instead means the start of the main (left) column: ? ח ו ר ...",
+   "grade": "possible",
+   "evidence": "A 3.4x crop"
+  },
+  {
+   "q": "P84(a)-second",
+   "answer": "In the right-column group, second letter is ה (left leg present, free of roof), not ר/ד. If the main column is meant, second letter = ח (two legs). Neither reading yields ר/ד clearly.",
+   "grade": "possible",
+   "evidence": "A x~1243-1290"
+  },
+  {
+   "q": "P84(a)-third",
+   "answer": "Right column: a letter with base (נ/כ), not ו/י/ר. Main column: ו (vertical).",
+   "grade": "possible",
+   "evidence": "A"
+  },
+  {
+   "q": "P84(a)-last",
+   "answer": "Right column ends in a curled ר (alt ו) at A x~1130-1150 next to a raised vertical strip; main column cannot be divided into words.",
+   "grade": "possible",
+   "evidence": "A"
+  },
+  {
+   "q": "P84(b)",
+   "answer": "Cannot locate a ב-צ word. The only ב in the main column (A x~532-612) is preceded on the right by a צ/ע-like oblique letter and followed by ר/ו (A x~510-530) and ו (x~495). If that is the word, third letter after ב... = ו (possible). Nothing written above the line seen near it.",
+   "grade": "cannot tell",
+   "evidence": "A; B/C X-rays too faint to align (would need a clearer X-ray of the left column)"
+  }
+ ],
+ "P87": [
+  {
+   "q": "P87-locate",
+   "answer": "Word A x~493-720: first letter at A x~673-720 (roof extending left with short left leg; the vertical strip seam at x~700 may serve as its right leg) - ה possible (Stage 1 read ו; reconsidered because the 3x crop shows a roof and a free left leg). Then ס (closed rounded-triangular form, A x~612-662), then ב/כ (A x~540-590), then ן (A x~493-512).",
+   "grade": "possible",
+   "evidence": "A 3x; C strip1 shows dot then a vertical with roof"
+  },
+  {
+   "q": "P87(a)",
+   "answer": "כ (or נ): the base ends at the right vertical and does not project beyond it to the right; the base extends long to the left. Corner is fairly square, not rounded.",
+   "grade": "possible",
+   "evidence": "A x~540-590 at 3x. Stage 1 had ב probable; on close view the base does not project to the right, so revised to כ/נ."
+  },
+  {
+   "q": "P87(b)",
+   "answer": "ן - a long vertical descending clearly below the base line of neighbouring letters",
+   "grade": "probable",
+   "evidence": "A x~493-512 at 3x"
+  }
+ ]
+}

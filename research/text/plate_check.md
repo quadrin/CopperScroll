@@ -198,3 +198,24 @@ Two initial local JPEG copies, UC15246874 andUC15246041, were only16384bytes and
 Close all three unchanged-preview reading passes. Reopen only with a legible original VII11, IX7 orX15–16 image and neighboring Hebrew plus labeled cut/component placement, or a documented correction that secures that registration on an existing source. Then inspect the registered paired-light target windows. No current photograph supplies a new vote on the disputed strokes. Original TIFFs and their placement metadata remain specific source dependencies; the durable catalog links for the selected cuts are in the structured source records.
 
 Activity adds three scoped source groups: expanded1988 originals, expandedDJD VII/IX (X reused), and2013 IX/X replica layouts; three completed entry-level registration checks bring totals to69 source scopes /5 cartographic intakes /75 bounded checks. View counts, downloads and reviewer repeats add no additional scopes. No decisive candidate test, question closure, identification, confidence, coordinate, independent archaeological campaign or outcome-ledger change. No new source images are republished.
+
+## Round 2 — 16 October 2026
+
+Nine lines named in the ratings' `decisive_next` fields: I 12, II 3, III 1, III 8, III 11, VIII 14, IX 10, XI 8 and XI 9. The questions and decision rule were [frozen and committed](../../registration/plate_check/round2/PREREGISTRATION.md) (8d9d2cd) before any image was captured.
+
+**Images.** Puech 2006 vol. II, the owner's Drive copy A. The PDF is too large for the Drive connector, so each plate was captured from the Drive viewer's 3200-px page render, in tiles at half scale (about 1,350–1,550 px across a column, close to the round-1 extraction), and stitched. The copy photograph (A) and the column's two radiograph plates (B, C) were used; the facsimile was not shown. A non-blind locator session placed each line and recorded per-strip offsets ([key](../../registration/plate_check/round2/key.json)); the radiograph bands are 1.6 line-spacings high to absorb the offsets. Crops: [`tools/plate_check_round2_items.py`](../../tools/plate_check_round2_items.py). No image is committed.
+
+**Readers.** Two fresh sessions, R3 and R4, each with only its own crops, the round-1 instructions and, after Stage 1 was saved, the round-2 questions ([outputs](../../registration/plate_check/round2/readers)). Both found every target line. Both said they recognised the object as the Copper Scroll and did not use remembered readings.
+
+| Line (entry) | Dispute | Readers | Verdict |
+|---|---|---|---|
+| IX 10 (41) | קומעה / Qobʿeh / Qovaʿ | Both: ב, ק (possible), ו, a second vertical (ו/ז), a closed box (R3 probable, R4 possible), ע, ה (probable / certain) | **Leans to מ (Puech) against ב.** Final ה supported. My non-blind check sees the same sequence; the extra vertical is unresolved. |
+| II 3 (7) | המדה / המרה / חמדה / המדח | 4th letter ה (R3 possible, R4 probable); 1st ה (R3 probable) vs ח (R4 possible); 3rd ר (R4 possible), R3 cannot tell | **Leans to ה at the 4th letter** (against Wolters's ח). 1st and 3rd: cannot decide. |
+| III 1 (12, 12a) | the court's name | Smooth patch on the copy, missing metal on the radiographs, 6–9 letter-spaces, no traces | **Cannot decide**: every edition's name is a restoration. |
+| I 12 (4) | ניקרת / מקרת | One letter before ק (R3) vs נ + י (R4), both possible | **Cannot decide.** |
+| III 8, III 11 (13, 14) | שבמלה / שבמלח(ם) | Split on ה/ח and on a final ם; III 11 is under a blister | **Cannot decide.** |
+| VIII 14 (37) | ברוי / בדין / בדור; בצויח | Both see ו after בצ (possible) | **Cannot decide**; the ו fits the engraved בצויח. |
+| XI 8 (53) | הסבין / הסכין | ב (R4, weak) vs כ/נ (R3); last letter ן vs ק | **Cannot decide.** |
+| XI 9 (54) | העמ / העבט; ירחו / טהור | Both: the owner word ends in a small closed loop, ט possible | **Cannot decide**; both lean ט, only at "possible". |
+
+**Effect.** No R level changes. Entry 41's basis now records the lean to Puech's letters; entries 4, 7, 12, 12a, 13, 14, 37, 53 and 54 record the round-2 result and their `decisive_next` now asks for original-photograph readings of the undecided letters. As in round 1, these are printed reproductions; whole-line transcriptions by the readers were poor, and the method is good only for the targeted shape questions.

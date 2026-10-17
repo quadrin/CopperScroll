@@ -1506,3 +1506,13 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Entry 57, Tell er-Ras.** BASOR 190: no area of the 1966 season reached the fosse; the only pre-Roman deposit is the chalk and red earth south of Building B, "predominantly Hellenistic ... (second and third centuries B.C.)" (p. 13). Albright's note: "[The translation 'fosse' is very doubtful.—W. F. A.]" (p. 7 n. 12). No level change.
 - **Pixner 1983 (*RevQ* 11), first direct read.** [Extraction](../../registration/pixner1983_extracted.md). Pixner reads the list as a real Essene deposit of 68 CE in five regions: Mount Zion and an "Essene Quarter" by the Gate of the Essenes (his 1–18), Qumran/Sekakah and Jericho (19–34), the Yarmuk as the "Land of Damascus" (35–47), Jerusalem south and the Kidron to Bethesda (48–60), and the north (61–64). Of his items, 20 match a repo candidate and 32 are locations the repo does not have. Recorded features he gives for new locations include a ritual-bath group about 40 m north-west of the Essene Gate reached by "36 rockhewn steps" (entry 5, p. 344) and a cistern with a rock pillar in the Dormition garden (entry 15, "in the pillar on its northern side", p. 347). Evidence. Inference: leads only; no candidate is added without the owner's decision.
 - **Corrections from Pixner.** Entry 51: he reads *bqbr ṣdwq*, "the tomb of Zadok", without emendation (p. 355); James "the Just" is a question he raises, so the R basis that said "Pixner's 'the Just' needs an emendation" is corrected (level kept). Entry 4: he printed ΧΑΓ = ΧΑΓΕΙΡΑΣ (*B.J.* 5.474) in 1983 (p. 335 n. 32), before Stegemann; added to `readings.json`.
+
+## 16 October 2026 — Plate check, round 2
+
+[Method and results](../text/plate_check.md#round-2--16-october-2026); questions frozen in 8d9d2cd before capture. Nine lines, two blind readers (R3, R4) on Puech 2006 plates captured from the owner's Drive copy; no images in Git.
+
+- **IX 10 (entry 41): leans to מ.** Both readers see ב, ק, ו, a second vertical, a closed box, ע, ה. This fits Puech's קומעה against Milik's emended Qobʿeh and Lefkovits's Qovaʿ (ב). Evidence; the extra vertical is unresolved. Entry 41 stays unplaced.
+- **II 3 (entry 7): the fourth letter leans to ה**, against Wolters's המדח. The first (ה/ח) and third (ד/ר) letters are undecided, so R stays 1.
+- **III 1 (entries 12, 12a): no traces** in a gap of 6–9 letter-spaces; the court's name is a restoration in every edition.
+- **Cannot decide:** I 12 (4), III 8 and III 11 (13, 14), VIII 14 (37), XI 8 (53), XI 9 (54). At XI 9 both readers lean, only at "possible", to ט for the owner word's last letter (Milik's העב֯ט).
+- **No rating level changes.** Bases and `decisive_next` updated for entries 4, 7, 12, 12a, 13, 14, 37, 41, 53, 54.

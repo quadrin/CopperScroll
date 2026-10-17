@@ -501,13 +501,14 @@
   "R": {
    "level": 1,
    "limiting_word": "ניקרת / מקרת",
-   "basis": "Koḥlit and 'mound' are read alike. The immersion word is not: Milik (with Wolters, Eshel) reads ניקרת 'cleft', Puech מקרת 'cold room' of a bath, and Lefkovits 2010 hesitates between mqdt and mqrt. The kind of landmark (rock cleft or built bath) depends on which reading is taken. Puech 2015 also restores a ה in a lacuna on this line, and Milik's מפי גל adds a heap.",
+   "basis": "Koḥlit and 'mound' are read alike. The immersion word is not: Milik (with Wolters, Eshel) reads ניקרת 'cleft', Puech מקרת 'cold room' of a bath, and Lefkovits 2010 hesitates between mqdt and mqrt. The kind of landmark (rock cleft or built bath) depends on which reading is taken. Puech 2015 also restores a ה in a lacuna on this line, and Milik's מפי גל adds a heap. Plate check round 2 (I 12, P67) cannot decide: one reader saw one letter before ק, the other a short נ + י.",
    "sources": [
     "text/readings.json e4-immersion (line 618; Puech 2015 p. 36 n. 131)",
     "text/readings.json e4-tel (line 484)",
     "text/readings.json e4-disqualified (line 591)",
     "research/text/edition_confusions/variants.csv V0056-V0061 (I 12)",
-    "tables/landmark_lexicon_index.csv lines 17 (miqveh_tevilah, medium), 25 (tel, medium), 80 (kohlit, high)"
+    "tables/landmark_lexicon_index.csv lines 17 (miqveh_tevilah, medium), 25 (tel, medium), 80 (kohlit, high)",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -553,9 +554,12 @@
    "F",
    "D"
   ],
-  "decisive_next": "A plate check of the I 12 immersion word (ניקרת/מקרת) on Puech 2006 pl. CCCLIX (copy) and the column I radiographs; Puech says the X-ray contradicts nyqrt.",
+  "decisive_next": "A legible original-photograph reading of I 12 before the ק (one letter, מ, or two, נ-י); the round-2 plate check on Puech 2006 pl. CCCLIX and radiographs CCCXXXIII-CCCXXXIV split (tables/plate_check.csv, round 2).",
   "flags": [
    "Atlas evidence for entry 4 cites 'a mound and a nearby cemetery'; a cemetery is not among entry 4's landmarks, and the immersion installation the entry needs is not reported at the tell (phase5_assessments line 15)."
+  ],
+  "review": [
+   "16 Oct 2026: plate check round 2 (levels kept)"
   ]
  },
  {
@@ -707,14 +711,15 @@
   "R": {
    "level": 1,
    "limiting_word": "המדח",
-   "basis": "The house word is read four ways: המדה (Puech, 'tribute'), המרה (Milik), המדח (Wolters; text shown, 'Washing(?)'), חמדה (Lefkovits, 'Old Beth Ḥemdah', p. 106). Lefkovits states that each of its four letters can be read two or three ways (p. 110). The editions disagree on the letters. 'Cave' and רובד are not disputed.",
+   "basis": "The house word is read four ways: המדה (Puech, 'tribute'), המרה (Milik), המדח (Wolters; text shown, 'Washing(?)'), חמדה (Lefkovits, 'Old Beth Ḥemdah', p. 106). Lefkovits states that each of its four letters can be read two or three ways (p. 110). The editions disagree on the letters. 'Cave' and רובד are not disputed. Plate check round 2 (II 3, P31): the fourth letter leans to ה, against Wolters's ח; ה/ח at the first letter and ד/ר at the third stay undecided.",
    "sources": [
     "text/readings.json e7-house (line 909; Puech 2015 pp. 38, 40)",
     "text/readings.json e7-course (line 959)",
     "research/text/edition_confusions/variants.csv V0093-V0103 (II 3)",
     "tables/landmark_lexicon_index.csv lines 41 (mearah, high), 48 (ravad, medium), 82 (bet_hamidda, low)",
     "text/readings.json e7-house (Lefkovits 2000 pp. 106, 110)",
-    "registration/lefkovits2000_items3_5_7_extracted.md"
+    "registration/lefkovits2000_items3_5_7_extracted.md",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -755,12 +760,13 @@
    "P",
    "F"
   ],
-  "decisive_next": "A plate check of the house word's four letters on Puech 2006 pl. CCCLXI (radiographs CCCXXXV-CCCXXXVI); Lefkovits treats every letter as ambiguous (p. 110).",
+  "decisive_next": "An original-photograph reading of II 3's first and third letters (ה/ח, ד/ר); round 2 on pl. CCCLXI and radiographs CCCXXXV-CCCXXXVI settled only the fourth (ה).",
   "flags": [
    "Atlas title 'House of Measures' takes המדה in the sense Puech rejects (2015 p. 40); noted in the caution."
   ],
   "review": [
-   "16 Oct 2026: R basis updated after Lefkovits 2000 pp. 106-110 was read (level kept)"
+   "16 Oct 2026: R basis updated after Lefkovits 2000 pp. 106-110 was read (level kept)",
+   "16 Oct 2026: plate check round 2 (levels kept)"
   ]
  },
  {
@@ -1048,11 +1054,12 @@
   "R": {
    "level": 1,
    "limiting_word": "the court's name (III 1, lost)",
-   "basis": "The name of the court is lost; Puech restores δίαιτα(?), Lefkovits נבט, Milik takes it as the peribolos, and the text shown leaves three letters unread. 'Corner' is read alike. The placement rests on the lost name or on context, not on preserved letters. Review: the court name is lost but restored by each edition; the rubric puts a restoration-dependent word at 1, and 0 only for words lost with no reading.",
+   "basis": "The name of the court is lost; Puech restores δίαιτα(?), Lefkovits נבט, Milik takes it as the peribolos, and the text shown leaves three letters unread. 'Corner' is read alike. The placement rests on the lost name or on context, not on preserved letters. Review: the court name is lost but restored by each edition; the rubric puts a restoration-dependent word at 1, and 0 only for words lost with no reading. Plate check round 2 (III 1, P61): the court's name lies in a smooth patch on the copy and missing metal on the radiographs, 6-9 letter-spaces, with no traces; every edition's name is a restoration.",
    "sources": [
     "text/readings.json e12-court (line 1504)",
     "research/text/edition_confusions/variants.csv V0147-V0148 (III 1)",
-    "tables/landmark_lexicon_index.csv lines 46 (hatser, partly restored), 54 (pinnah, high)"
+    "tables/landmark_lexicon_index.csv lines 46 (hatser, partly restored), 54 (pinnah, high)",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -1092,11 +1099,12 @@
   "limited_by": [
    "P"
   ],
-  "decisive_next": "A plate check of the court's name at III 1 on Puech 2006 pl. CCCLXIII (copy) and radiographs CCCXXXVII-CCCXXXVIII.",
+  "decisive_next": "No reproduction can supply the court's name: round 2 found no traces in the gap (III 1). Only an independent source naming the court could change R.",
   "flags": [],
   "review": [
    "P 1→0: Review: the entry names no place here, so P is 0 under the rubric (a location taken from entry order alone counts as no place evidence).",
-   "R 0→1: Review: the court name is lost but restored by each edition; the rubric puts a restoration-dependent word at 1, and 0 only for words lost with no reading."
+   "R 0→1: Review: the court name is lost but restored by each edition; the rubric puts a restoration-dependent word at 1, and 0 only for words lost with no reading.",
+   "16 Oct 2026: plate check round 2 (levels kept)"
   ]
  },
  {
@@ -1244,11 +1252,12 @@
   "R": {
    "level": 1,
    "limiting_word": "שבמלה / שבמלח",
-   "basis": "The place word is disputed in letters and sense: Milik's Esplanade, Puech 2006 Millo, Puech 2002 'salt', Puech 2015 'embankment' (שבמלה), a place Melaḥ (מלח). The lexicon rates the meaning low. 'Pit' (שית) is rated medium.",
+   "basis": "The place word is disputed in letters and sense: Milik's Esplanade, Puech 2006 Millo, Puech 2002 'salt', Puech 2015 'embankment' (שבמלה), a place Melaḥ (מלח). The lexicon rates the meaning low. 'Pit' (שית) is rated medium. Plate check round 2 (III 8, P72) cannot decide ה/ח or the final ם; the readers split.",
    "sources": [
     "text/readings.json e13-millo (Milik DJD pp. 272–274; Puech 2015 pp. 44, 46)",
     "text/readings.json e13-pit",
-    "tables/landmark_lexicon_index.csv lines 3 (shit), 76 (millo)"
+    "tables/landmark_lexicon_index.csv lines 3 (shit), 76 (millo)",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -1289,9 +1298,12 @@
    "P",
    "F"
   ],
-  "decisive_next": "An independent reading of the III 8 place word (מלה vs מלח, and the extra final מ in the text shown) from the plate images (pl. CCCLXIII / radiographs).",
+  "decisive_next": "An original-photograph reading of III 8's ה/ח and final ם; the round-2 plate check on pl. CCCLXIII split.",
   "flags": [
    "The Text tab form שבמלחמ ends in a מ that no edition reports (readings.json e13-millo note)."
+  ],
+  "review": [
+   "16 Oct 2026: plate check round 2 (levels kept)"
   ]
  },
  {
@@ -1309,10 +1321,11 @@
   "R": {
    "level": 1,
    "limiting_word": "שבמלה / מדף",
-   "basis": "The same disputed Millo/Melaḥ word as in III 8. The cover word is also disputed: מדף 'slab' (Milik DJD, Puech; lexicon low) against המת 'the dead' (Milik 1960, Lefkovits; the text shown).",
+   "basis": "The same disputed Millo/Melaḥ word as in III 8. The cover word is also disputed: מדף 'slab' (Milik DJD, Puech; lexicon low) against המת 'the dead' (Milik 1960, Lefkovits; the text shown). Plate check round 2 (III 11, P49) cannot decide; the word lies under a blister and the radiographs are faint.",
    "sources": [
     "text/readings.json e14-tomb, e14-slab (Milik DJD C82; Puech 2015 p. 44; Lefkovits via p. 152)",
-    "tables/landmark_lexicon_index.csv lines 73 (madaf, low), 76 (millo, low)"
+    "tables/landmark_lexicon_index.csv lines 73 (madaf, low), 76 (millo, low)",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -1353,8 +1366,11 @@
    "P",
    "F"
   ],
-  "decisive_next": "An independent reading of III 8 / III 11 מלה vs מלח from the plates; then a dated tomb record inside or against the enclosure fill.",
-  "flags": []
+  "decisive_next": "An original-photograph reading of III 11 (round 2 could not read it); then a dated tomb record inside or against the enclosure fill.",
+  "flags": [],
+  "review": [
+   "16 Oct 2026: plate check round 2 (levels kept)"
+  ]
  },
  {
   "entry": "15",
@@ -3914,11 +3930,12 @@
   "R": {
    "level": 1,
    "limiting_word": "בצריח (emended from בצויח)",
-   "basis": "The chamber word is Puech's correction of the engraved בצויח, and Milik reads a cippus. The irrigated-land word is ברוי (Milik, Puech) against Lefkovits בדין and Beyer / the text shown בדור. The lexicon rates רוי low-medium.",
+   "basis": "The chamber word is Puech's correction of the engraved בצויח, and Milik reads a cippus. The irrigated-land word is ברוי (Milik, Puech) against Lefkovits בדין and Beyer / the text shown בדור. The lexicon rates רוי low-medium. Plate check round 2 (VIII 14, P84) cannot decide; both readers see ו (possible) after בצ, which fits the engraved בצויח rather than ר.",
    "sources": [
     "text/readings.json e37-irrigated, e37-chamber (Puech 2015 p. 74; Lefkovits pp. 268-269; Milik p. 274)",
     "tables/phase5_assessments.csv line 24",
-    "tables/landmark_lexicon_index.csv rewi (low-medium)"
+    "tables/landmark_lexicon_index.csv rewi (low-medium)",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -3960,9 +3977,12 @@
    "F",
    "D"
   ],
-  "decisive_next": "A plate check of VIII 14 for ברוי / בדור / בדין and for the engraved בצויח. Then a source that fixes the Shaveh (Q22).",
+  "decisive_next": "An original-photograph reading of VIII 14's first word and of the letter after בצ (round 2: ו, possible, by both readers). Then a source that fixes the Shaveh (Q22).",
   "flags": [
    "Phase 3 summary §3/§4.4 calls the entry-37 place name 'secure' while the location is unresolved (Q22); the security is of the reading only."
+  ],
+  "review": [
+   "16 Oct 2026: plate check round 2 (levels kept)"
   ]
  },
  {
@@ -3980,11 +4000,12 @@
   "R": {
    "level": 1,
    "limiting_word": "בצריח (emended from בצויח)",
-   "basis": "The chamber word is Puech's correction of the engraved בצויח, and Milik reads a cippus. The irrigated-land word is ברוי (Milik, Puech) against Lefkovits בדין and Beyer / the text shown בדור. The lexicon rates רוי low-medium.",
+   "basis": "The chamber word is Puech's correction of the engraved בצויח, and Milik reads a cippus. The irrigated-land word is ברוי (Milik, Puech) against Lefkovits בדין and Beyer / the text shown בדור. The lexicon rates רוי low-medium. Plate check round 2 (VIII 14, P84) cannot decide; both readers see ו (possible) after בצ, which fits the engraved בצויח rather than ר.",
    "sources": [
     "text/readings.json e37-irrigated, e37-chamber (Puech 2015 p. 74; Lefkovits pp. 268-269; Milik p. 274)",
     "tables/phase5_assessments.csv line 24",
-    "tables/landmark_lexicon_index.csv rewi (low-medium)"
+    "tables/landmark_lexicon_index.csv rewi (low-medium)",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -4022,8 +4043,11 @@
   "limited_by": [
    "F"
   ],
-  "decisive_next": "A record of an ancient water source or irrigated tract in the Baqʿa plain.",
-  "flags": []
+  "decisive_next": "An original-photograph reading of VIII 14's first word and of the letter after בצ (round 2: ו, possible, by both readers). Then a source that fixes the Shaveh (Q22).",
+  "flags": [],
+  "review": [
+   "16 Oct 2026: plate check round 2 (levels kept)"
+  ]
  },
  {
   "entry": "38",
@@ -4325,12 +4349,13 @@
   "R": {
    "level": 1,
    "limiting_word": "קומעה",
-   "basis": "קומעה is uncertain (lexicon marks it '(?)', meaning low). Puech and Høgenhaven read 'hole'; Lefkovits a place name Qovaʿ (his letters not recorded); Milik a place name Qobʿeh by emendation. Editors also disagree on where the entry begins and ends (Luria, Beyer, Lefkovits).",
+   "basis": "קומעה is uncertain (lexicon marks it '(?)', meaning low). Puech and Høgenhaven read 'hole'; Lefkovits a place name Qovaʿ (his letters not recorded); Milik a place name Qobʿeh by emendation. Editors also disagree on where the entry begins and ends (Luria, Beyer, Lefkovits). Plate check round 2 (IX 10, P53) leans to מ against ב: both readers see a closed box before ע-ה, which fits Puech's קומעה and works against Milik's Qobʿeh and Lefkovits's Qovaʿ. An extra vertical between ו and מ is unresolved.",
    "sources": [
     "text/readings.json e41-qomaah (Puech 2015 pp. 81-82; Høgenhaven p. 76; Lef. pp. 293-296)",
     "tables/landmark_lexicon_index.csv qomaah (low)",
     "atlas/app/atlas-kb.json records[601] division_notes",
-    "research/phases/phase3_summary.md §4.7"
+    "research/phases/phase3_summary.md §4.7",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": null,
@@ -4340,9 +4365,12 @@
   "weakest": null,
   "label": "unplaced",
   "limited_by": [],
-  "decisive_next": "A plate check of IX 10 (not in plate_check.csv) to settle Puech's קומעה against Milik's emended Qobʿeh and Lefkovits's Qovaʿ.",
+  "decisive_next": "A reading that explains the extra vertical in IX 10 (round 2: ב-ק-ו-[ו/ז]-מ-ע-ה) and a lexical parallel for קומעה; the plate check leans to Puech's letters.",
   "flags": [
    "tables/phase3_site_index.csv row 41 has n_possible=1 but status 'unknown' and an empty possible_place_ids field."
+  ],
+  "review": [
+   "16 Oct 2026: plate check round 2 (levels kept)"
   ]
  },
  {
@@ -5392,11 +5420,12 @@
   "R": {
    "level": 1,
    "limiting_word": "סבין / הסכין (colonnades or knife)",
-   "basis": "Puech reads סבין 'colonnades'; the text shown has הסכין with kaf, 'rock knife'; Milik compares the altar ledge. Bet against kaf changes the landmark. The lexicon rates the meaning low. No plate check of XI 8.",
+   "basis": "Puech reads סבין 'colonnades'; the text shown has הסכין with kaf, 'rock knife'; Milik compares the altar ledge. Bet against kaf changes the landmark. The lexicon rates the meaning low. No plate check of XI 8. Plate check round 2 (XI 8, P87) cannot decide ב/כ; the readers split.",
    "sources": [
     "text/readings.json e53-galleries",
     "tables/landmark_lexicon_index.csv line 70 (sabbin: low)",
-    "tables/plate_check.csv (no row for XI 8)"
+    "tables/plate_check.csv (no row for XI 8)",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -5436,12 +5465,13 @@
    "P",
    "F"
   ],
-  "decisive_next": "A plate reading of XI 8 for bet against kaf (not in the plate check). It decides whether any colonnade is named at all; F stays 0 without a recorded tomb under a portico.",
+  "decisive_next": "An original-photograph reading of XI 8 for ב against כ (round 2 split). F stays 0 without a recorded tomb under a portico.",
   "flags": [
    "Atlas title and Hebrew סבין follow Puech while the Text tab shows הסכין (noted in the caution). The only tomb-lane hit near this point (102/408) is a coordinate artefact (tombs README lines 124-127)."
   ],
   "review": [
-   "16 Oct 2026: D 1→2 after Perlego read"
+   "16 Oct 2026: D 1→2 after Perlego read",
+   "16 Oct 2026: plate check round 2 (levels kept)"
   ]
  },
  {
@@ -5458,11 +5488,12 @@
   "R": {
    "level": 1,
    "limiting_word": "סבין / הסכין (colonnades or knife)",
-   "basis": "Puech reads סבין 'colonnades'; the text shown has הסכין with kaf, 'rock knife'; Milik compares the altar ledge. Bet against kaf changes the landmark. The lexicon rates the meaning low. No plate check of XI 8.",
+   "basis": "Puech reads סבין 'colonnades'; the text shown has הסכין with kaf, 'rock knife'; Milik compares the altar ledge. Bet against kaf changes the landmark. The lexicon rates the meaning low. No plate check of XI 8. Plate check round 2 (XI 8, P87) cannot decide ב/כ; the readers split.",
    "sources": [
     "text/readings.json e53-galleries",
     "tables/landmark_lexicon_index.csv line 70 (sabbin: low)",
-    "tables/plate_check.csv (no row for XI 8)"
+    "tables/plate_check.csv (no row for XI 8)",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -5500,8 +5531,11 @@
   "limited_by": [
    "P"
   ],
-  "decisive_next": "A plate reading of XI 8 for bet against kaf; under 'knife', any record of a rock so named in the Kidron.",
-  "flags": []
+  "decisive_next": "An original-photograph reading of XI 8 for ב against כ (round 2 split). F stays 0 without a recorded tomb under a portico.",
+  "flags": [],
+  "review": [
+   "16 Oct 2026: plate check round 2 (levels kept)"
+  ]
  },
  {
   "entry": "54",
@@ -5518,11 +5552,12 @@
   "R": {
    "level": 1,
    "limiting_word": "בני העם (owner) and ירחו / טהור",
-   "basis": "Whose tomb is disputed on the letters: 'the common people' (Puech), 'sons of Obed' (Lefkovits), or a partly read name (Milik). The lexicon rates it low. Milik, Puech and Lefkovits read Jericho/Jerichoite, but Wolters, reading from the metal, found 'my pure things are in it', and the text shown follows him with טהור. No plate check of XI 9.",
+   "basis": "Whose tomb is disputed on the letters: 'the common people' (Puech), 'sons of Obed' (Lefkovits), or a partly read name (Milik). The lexicon rates it low. Milik, Puech and Lefkovits read Jericho/Jerichoite, but Wolters, reading from the metal, found 'my pure things are in it', and the text shown follows him with טהור. No plate check of XI 9. Plate check round 2 (XI 9, P35) cannot decide; both readers lean, only at 'possible', to ט for the owner word's last letter (Milik's העב֯ט rather than Puech's העמ), and neither reads ירחו clearly.",
    "sources": [
     "text/readings.json e54-whose-tomb, e54-jericho-or-pure",
     "tables/landmark_lexicon_index.csv lines 87, 106 (jericho_people: low)",
-    "research/phases/phase1_summary.md §3(b) row 54"
+    "research/phases/phase1_summary.md §3(b) row 54",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -5560,10 +5595,13 @@
   "limited_by": [
    "P"
   ],
-  "decisive_next": "A plate reading of XI 9 for ירחו against טהור and for the owner phrase. If Jericho holds, the tomb lane points the entry toward the Jericho cemeteries rather than Jerusalem.",
+  "decisive_next": "An original-photograph reading of XI 9 for the owner word's last letter (round 2: ט possible) and for ירחו against טהור.",
   "flags": [
    "Atlas evidence cites Puech's Bene Ḥezîr suggestion (2015 p. 101), but Bene Ḥezîr is at jer_kidron_mon, which is not a candidate for entry 54.",
    "The Jericho reading that names the title would place the tomb at Jericho; the tomb lane scored 54-P in Region B (Jericho), not at either Jerusalem candidate."
+  ],
+  "review": [
+   "16 Oct 2026: plate check round 2 (levels kept)"
   ]
  },
  {
@@ -5581,11 +5619,12 @@
   "R": {
    "level": 1,
    "limiting_word": "בני העם (owner) and ירחו / טהור",
-   "basis": "Whose tomb is disputed on the letters: 'the common people' (Puech), 'sons of Obed' (Lefkovits), or a partly read name (Milik). The lexicon rates it low. Milik, Puech and Lefkovits read Jericho/Jerichoite, but Wolters, reading from the metal, found 'my pure things are in it', and the text shown follows him with טהור. No plate check of XI 9.",
+   "basis": "Whose tomb is disputed on the letters: 'the common people' (Puech), 'sons of Obed' (Lefkovits), or a partly read name (Milik). The lexicon rates it low. Milik, Puech and Lefkovits read Jericho/Jerichoite, but Wolters, reading from the metal, found 'my pure things are in it', and the text shown follows him with טהור. No plate check of XI 9. Plate check round 2 (XI 9, P35) cannot decide; both readers lean, only at 'possible', to ט for the owner word's last letter (Milik's העב֯ט rather than Puech's העמ), and neither reads ירחו clearly.",
    "sources": [
     "text/readings.json e54-whose-tomb, e54-jericho-or-pure",
     "tables/landmark_lexicon_index.csv lines 87, 106 (jericho_people: low)",
-    "research/phases/phase1_summary.md §3(b) row 54"
+    "research/phases/phase1_summary.md §3(b) row 54",
+    "tables/plate_check.csv (round 2, registration/plate_check/round2)"
    ]
   },
   "P": {
@@ -5622,9 +5661,12 @@
   "limited_by": [
    "P"
   ],
-  "decisive_next": "A plate reading of XI 9 for ירחו against טהור and for the owner phrase.",
+  "decisive_next": "An original-photograph reading of XI 9 for the owner word's last letter (round 2: ט possible) and for ירחו against טהור.",
   "flags": [
    "The files read give no basis for the Gethsemane candidate beyond the phase-3 index (phase3_places line 8: 54(low)); Allegro's Gethsemane proposals concern other items (allegro1960_treasure_extracted lines 70, 75)."
+  ],
+  "review": [
+   "16 Oct 2026: plate check round 2 (levels kept)"
   ]
  },
  {

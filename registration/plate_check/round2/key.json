@@ -1,0 +1,168 @@
+{
+ "description": "Round 2 blind plate-check key: code to line, and crop centres in the stitched Drive-viewer captures of Puech 2006 copy A (pages rendered 3200 px wide, captured at half scale). Plate images are not in Git.",
+ "source": "Drive ID 1o8hts5BL-9PG2HejcN-AilEvbHdTkOhi; PDF page = plate page in the viewer (radiographs pp. 654-675, copy photographs pp. 682-702)",
+ "items": {
+  "P67": {
+   "line": "I 12",
+   "column": 1,
+   "copy_plate": "pl. CCCLIX",
+   "radiograph_plates": "pl. CCCXXXIII–CCCXXXIV",
+   "copy_centre_y": 1455,
+   "copy_line_spacing": 110,
+   "radio1_centre_y": 1465,
+   "radio2_centre_y": 1470,
+   "radio_line_spacing": 115,
+   "radio_band_factor": 1.6,
+   "strips": {
+    "radio1": "3G ~1460, 3D ~1460, 2G ~1485 (4C = far-left ΧΑΓ end, not checked)",
+    "radio2": "2D ~1472 (1C not used)"
+   },
+   "locator_confidence": "high",
+   "locator_notes": "Calibration confirmed. Copy: 'ניקרת הטבילה' centre ~1450 in the middle, 'אמות שש' at right ~1435-1455 (line slopes a little); line 11 ('שני מפוגל...') ~1360, line 13 ('בשיא המעבא...') ~1540. Edge matching of 3G and 3D to the copy gives radio ≈ copy+5 (so ~1460). 2D: 'אמות שש' at 1448-1498, centre ~1472, with line 11 above at ~1385. 2G sits ~15 px below 2D (line 12 ~1485, line 11 ~1400). Every strip is within 25 px of 1465."
+  },
+  "P31": {
+   "line": "II 3",
+   "column": 2,
+   "copy_plate": "pl. CCCLXI",
+   "radiograph_plates": "pl. CCCXXXV–CCCXXXVI",
+   "copy_centre_y": 418,
+   "copy_line_spacing": 117,
+   "radio1_centre_y": 405,
+   "radio2_centre_y": 410,
+   "radio_line_spacing": 118,
+   "radio_band_factor": 1.6,
+   "strips": {
+    "radio1": "6G ~407, 6D ~400",
+    "radio2": "5G ~410, 5C ~410, 5D ~383"
+   },
+   "locator_confidence": "high",
+   "locator_notes": "Copy: line 1 'בבור המלח שתחת המעלות' ~170; line 2 'ככרין [numerals] ΗΝ' ~290 (ΗΝ at the left at ~295, ככרין right of centre); line 3 at 386-461 (left part ~415, right part ~420); line 4 'השלישי ... ΘΕ' ~535 (ΘΕ at the left). Radiographs: 5C/5G show the distinctive 'ככרין' of line 2 at ~265-270, with line 3 below at ~410 and line 4 at ~545. 6G/6D (left half of the line, 'הישן ברובד'): line 3 at 370-430, with marks that look like ΗΝ above it at ~280 on 6D and line 4 at ~525. 5D (far right, start of the line, 'במע[רת]' readable) has line 3 at ~383, about 25 px higher than 5C; 5D lines sit at ~215, 383, 480, 590."
+  },
+  "P61": {
+   "line": "III 1",
+   "column": 3,
+   "copy_plate": "pl. CCCLXIII",
+   "radiograph_plates": "pl. CCCXXXVII–CCCXXXVIII",
+   "copy_centre_y": 145,
+   "copy_line_spacing": 112,
+   "radio1_centre_y": 138,
+   "radio2_centre_y": 170,
+   "radio_line_spacing": 112,
+   "radio_band_factor": 1.6,
+   "strips": {
+    "radio1": "8G ~140, 8D ~132 (left third of the line: '...הפנא הדרו')",
+    "radio2": "7G ~175 (the strip's first text line, just under its damaged top edge), 7C only a fragment at its left edge ~165 (V-shaped loss in the middle, as on the copy), 7D ~135 (right end, 'בחצר')"
+   },
+   "locator_confidence": "medium",
+   "locator_notes": "First line of the column, so identification is certain. The copy is damaged in the middle (V-shaped loss). Copy centre: left ~140, right ('בחצר' at x~1060-1150) ~150. Strip 8 lines up with the copy (edge match radio ≈ copy ±8; lines 2/3/4 at 232/343/450). The strip-7 exposures are offset from one another: 7G ≈ copy+45..57 (lines 2/3 at ~280/~415), 7C ≈ 7G−11, and 7D sits about 40 px above 7G. Because these differ by more than 25 px, use the per-strip values. Confidence is medium only because of the strip-7 y offsets; which line it is is not in doubt."
+  },
+  "P72": {
+   "line": "III 8",
+   "column": 3,
+   "copy_plate": "pl. CCCLXIII",
+   "radiograph_plates": "pl. CCCXXXVII–CCCXXXVIII",
+   "copy_centre_y": 950,
+   "copy_line_spacing": 115,
+   "radio1_centre_y": 937,
+   "radio2_centre_y": 995,
+   "radio_line_spacing": 115,
+   "radio_band_factor": 1.6,
+   "strips": {
+    "radio1": "8G ~935, 8D ~935 (left part 'בצפונו', large boxy letters)",
+    "radio2": "7G ~1000, 7C ~995, 7D ~965 (strip-7 exposures are noisy)"
+   },
+   "locator_confidence": "medium",
+   "locator_notes": "Copy: line 7 'ככ ΤΡ' is short (ככ at x~900-1060, y~815), and line 8 comes right after it at 900-990 (left ~935, right 'בשית' ~962). Line 9 'כלי דמע לבושין ביאתא' ~1065, line 10 'תחת הפנא המערבית' ~1180. Strip 8: line 8 at 905-965, line 9 ~1065, line 10 ~1178, line 11 ~1305, all matching the copy within ~5 px. Strip 7 is weak and offset downward: on 7C, line 6 sits at ~775 (copy 720) and line 8 at ~990-1010. 7D (the line start) reads about 30 px higher than 7C. The copy and strip 8 are high confidence; the radio2 value is medium."
+  },
+  "P49": {
+   "line": "III 11",
+   "column": 3,
+   "copy_plate": "pl. CCCLXIII",
+   "radiograph_plates": "pl. CCCXXXVII–CCCXXXVIII",
+   "copy_centre_y": 1320,
+   "copy_line_spacing": 115,
+   "radio1_centre_y": 1305,
+   "radio2_centre_y": 1368,
+   "radio_line_spacing": 115,
+   "radio_band_factor": 1.6,
+   "strips": {
+    "radio1": "8G ~1305, 8D ~1305 (left part 'ממזרחו')",
+    "radio2": "7G ~1380, 7C ~1365, 7D ~1335"
+   },
+   "locator_confidence": "medium",
+   "locator_notes": "Line 11 'בקבר שבמלחמ ממזרחו' (repeats 'שבמלחמ' from line 8). Copy: left ~1300, right ('בקבר', x~1000-1100) ~1335, so the centre is ~1320. Above it is line 10 'תחת הפנא המערבית' (~1180); below it are line 12 'בצפנו אמות תחת המ' (~1450) and line 13 'ת חפר שלוש ככ' (~1550, last line). Strip 8 matches the copy (edge match radio ≈ copy −2..−8). Strip 7 uses the same offsets as for III 8 (7G ≈ copy+57, 7C ≈ 7G−11, 7D ≈ 7C−31). Its letters here are hard to read directly, so the radio2 values are inferred from the strip-wide offset. Medium confidence for radio2."
+  },
+  "P84": {
+   "line": "VIII 14",
+   "column": 8,
+   "copy_plate": "pl. CCCLXXIII",
+   "radiograph_plates": "pl. CCCXLVII–CCCXLVIII",
+   "copy_centre_y": 1410,
+   "copy_line_spacing": 83,
+   "radio1_centre_y": 1462,
+   "radio2_centre_y": 1492,
+   "radio_line_spacing": 85,
+   "radio_band_factor": 1.6,
+   "strips": {
+    "radio1": "15G ~1462",
+    "radio2": "15C ~1488, 15D ~1496 (15D ≈ 15C+8 by direct matching)"
+   },
+   "locator_confidence": "medium-high",
+   "locator_notes": "Copy, bottom of the column: line 13 'עשרין וארבע ככ' ~1335; line 14 is the long line running the full width at 1388-1435 (centre ~1410); line 15 'אמות אחת עסרה' is short, right half only, ~1495; line 16 'כסף ככ' is short, ~1578, just above the damaged lower edge. Lines here are tightly spaced (~83 px). 15C/15D: the clearest line, at ~1570-1580, has the same extent as copy line 15, and the short line below it at ~1650 matches 'כסף'. That puts line 14 at ~1490 on 15C/15D (offset ≈ +78; edge matching gives +66..+94). 15G: curved ככ/numeral shapes of line 13 at ~1375 and vertical strokes of the end of line 14 at ~1462 (offset ≈ +50; edge match +48..52). These offsets are large, so the line was checked by content (short lines 15/16 below), not by offset alone."
+  },
+  "P53": {
+   "line": "IX 10",
+   "column": 9,
+   "copy_plate": "pl. CCCLXXV",
+   "radiograph_plates": "pl. CCCXLIX–CCCL",
+   "copy_centre_y": 890,
+   "copy_line_spacing": 92,
+   "radio1_centre_y": 935,
+   "radio2_centre_y": 912,
+   "radio_line_spacing": 92,
+   "radio_band_factor": 1.6,
+   "strips": {
+    "radio1": "16 ~935, 16D ~938 (17C reaches only the far-left end of the line, if at all)",
+    "radio2": "16C ~912, 16G ~910"
+   },
+   "locator_confidence": "high",
+   "locator_notes": "Copy: line 8 'בזרב חפור אמות שש עסרה' ~718; line 9 'ככ' with numerals (short, ~805); line 10 'בקומעה כסף מנה חרמ' body 860-925 (centre ~890); line 11 'בקול המים הקרובין לכפת ביב' ~985. Plate 349 strips sit ≈ copy+44 (edge match on 17C, 16 and 16D agrees). Plate 350 strips sit ≈ copy+22 (16C/16G). Checked by overlaying the shifted 16C: the 'כסף' and 'ככ' shapes line up. The short line 9 above is a good landmark."
+  },
+  "P87": {
+   "line": "XI 8",
+   "column": 11,
+   "copy_plate": "pl. CCCLXXIX",
+   "radiograph_plates": "pl. CCCLIII–CCCLIV",
+   "copy_centre_y": 760,
+   "copy_line_spacing": 118,
+   "radio1_centre_y": 738,
+   "radio2_centre_y": 795,
+   "radio_line_spacing": 120,
+   "radio_band_factor": 1.6,
+   "strips": {
+    "radio1": "20G ~738, 20C ~735, 20D ~740 (left part 'הסכין ככ [num]')",
+    "radio2": "19G ~790, 19C ~795, 19D ~802 (right part 'בקבר שתחת')"
+   },
+   "locator_confidence": "high",
+   "locator_notes": "Counted lines on the copy: 3 'בקבר צדוק', 5 'בהכסה', 6 'נגד גנת צדוק', 7 'גדולא שבשוליה...' (~670-720), 8 'בקבר שתחת הסכין ככ' (left 'ככ' + numerals ~735-745, right 'בקבר' ~785, centre ~760), 9 'בקבר בני העמ טהור הו' ~885. The line slopes, so the two plates differ: plate 353 (strip 20) covers the left part and sits ≈ copy−12..0; plate 354 (strip 19) covers the right part and sits ≈ copy+0..+19. 'בקבר שתחת' can be read on 19C/19D at 772-830."
+  },
+  "P35": {
+   "line": "XI 9",
+   "column": 11,
+   "copy_plate": "pl. CCCLXXIX",
+   "radiograph_plates": "pl. CCCLIII–CCCLIV",
+   "copy_centre_y": 885,
+   "copy_line_spacing": 118,
+   "radio1_centre_y": 880,
+   "radio2_centre_y": 925,
+   "radio_line_spacing": 120,
+   "radio_band_factor": 1.6,
+   "strips": {
+    "radio1": "20G ~880, 20C ~880, 20D ~880 (left part 'טהור הו')",
+    "radio2": "19G ~928, 19C ~918, 19D ~930 (right part 'בקבר בני')"
+   },
+   "locator_confidence": "high",
+   "locator_notes": "Copy line 9 at 850-930 (left 'טהור הו' ~880, right 'בקבר' ~895). Line 10 'בו כלי דמע אררבע עסרה' ~985 and line 11 'כתבן אצלן' (short) ~1075 come below it. On 20C, 'הו' (vertical strokes) is at 845-913. On 19C/19D, 'בקבב/בקבר בנ' is at 888-956. Same plate offsets as XI 8."
+  }
+ }
+}
