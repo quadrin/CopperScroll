@@ -7,14 +7,21 @@ const {chromium}=require(process.env.ATLAS_PLAYWRIGHT_MODULE||'playwright-core')
 const origin=process.env.ATLAS_TEST_ORIGIN||'http://127.0.0.1:5173/CopperScroll/atlas-site/';
 const {places}=JSON.parse(readFileSync(new URL('../app/atlas-data.json',import.meta.url),'utf8'));
 const mapped=places.filter(p=>p.lat!==null&&p.lon!==null);
+// Controlled Terrarium DEM at -183 m catches sea-level camera/placement errors.
+const negativeTerrain=readFileSync(new URL('./fixtures/negative-terrain.png',import.meta.url));
 const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 try {
  for(const mobile of process.env.ATLAS_TEST_VIEWPORT==='phone'?[true]:process.env.ATLAS_TEST_VIEWPORT==='desktop'?[false]:[false,true]){
   const page=await browser.newPage({viewport:mobile?{width:390,height:844}:{width:1440,height:950},isMobile:mobile,hasTouch:mobile,reducedMotion:'reduce'});
   try {
   const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',message=>{if(message.type()==='error'&&/THREE|Shader Error|VALIDATE_STATUS|WebGL.*INVALID/i.test(message.text()))errors.push(message.text());});
-  // External failures are deliberate here: the local source geometry must still render.
-  await page.route(/^https:\/\//,route=>route.abort('failed'));
+  // Provider failures are deliberate; the controlled DEM tests terrain without
+  // making the result depend on a live tile service.
+  await page.route(/^https:\/\//,route=>{
+   if(route.request().url().includes('tilejson.json'))return route.fulfill({json:{tilejson:'3.0.0',tiles:['https://atlas-test.invalid/terrain/{z}/{x}/{y}.png'],minzoom:0,maxzoom:12,encoding:'terrarium',tileSize:256}});
+   if(route.request().url().startsWith('https://atlas-test.invalid/terrain/'))return route.fulfill({contentType:'image/png',body:negativeTerrain});
+   return route.abort('failed');
+  });
   await page.goto(origin+'#entry-21/2d');
   await page.evaluate(()=>{window.atlasTestEvents=[];const push=history.pushState;history.pushState=function(...args){window.atlasTestEvents.push(['navigate',String(args[2])]);return push.apply(this,args);};document.addEventListener('click',event=>{const label=event.target.closest('button,summary')?.textContent;if(label)window.atlasTestEvents.push(['click',label.slice(0,80)]);},true);});
   await page.waitForFunction(count=>document.querySelectorAll('.site-pin').length===count,mapped.length);
@@ -29,6 +36,11 @@ try {
   assert(Number(await page.locator('.maplibregl-canvas').getAttribute('data-site-vertices'))>10000,'Detailed source geometry must actually render, including instanced stones');
   await page.getByRole('button',{name:'Zoom in',exact:true}).click();
   await page.getByRole('button',{name:'Zoom out',exact:true}).click();
+  await page.getByRole('tab',{name:'Terrain',exact:true}).click();
+  await page.waitForFunction(()=>{const d=document.querySelector('.maplibregl-canvas')?.dataset,a=d?.siteAnchor?.split(',').map(Number);return Number(d?.siteElevation)<-100&&a&&Math.abs(a[0])<.95&&Math.abs(a[1])<.95&&a[2]<1;},{},{timeout:45000});
+  await page.screenshot({path:`/tmp/copperscroll-terrain-overview-${mobile?'phone':'desktop'}.png`});
+  await page.getByRole('tab',{name:'Map',exact:true}).click();
+  await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.siteElevation)===0);
   await page.getByRole('button',{name:'Plan & details',exact:true}).click();
   await page.locator('.map-inline-panel .site-stage').waitFor();
   assert.equal(await page.locator('.site-explorer-head:visible').count(),0,'The inline plan must not repeat the old viewer navigation');
@@ -75,6 +87,7 @@ try {
   await page.waitForFunction(()=>document.querySelector('[data-site-plan]')?.dataset.sitePlan==='jericho-ac'&&document.querySelector('[data-site-state]')?.dataset.siteState==='ready');
   assert.equal(await panel.isVisible(),false,'Choosing another mapped site closes its reference panel');
   await page.getByRole('button',{name:'Zoom to site',exact:true}).click();await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.siteFrames)>0);await sameCanvas();
+  await page.screenshot({path:`/tmp/copperscroll-jericho-overview-${mobile?'phone':'desktop'}.png`});
   await page.getByLabel('Browse all sites',{exact:true}).click();await page.getByRole('searchbox',{name:'Search map sites'}).fill('Beth Shean');await page.getByRole('button',{name:/^Beth Shean/}).click();
   await page.waitForFunction(()=>document.querySelector('[data-site-state]')?.dataset.siteState==='unavailable');
   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();await page.getByRole('status').filter({hasText:'no source-based 3D coverage'}).waitFor();
@@ -83,6 +96,6 @@ try {
   assert.deepEqual(errors,[]);
   console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, rendered 3D geometry, persistent map canvas, inline plan/photo/Drive/video panels, working eye-level movement, coverage gaps and satellite failure handling.`);
   await page.close();
-  }catch(error){console.error(await page.evaluate(()=>({viewport:innerWidth,route:location.hash,plan:document.querySelector('[data-site-plan]')?.dataset.sitePlan,state:document.querySelector('[data-site-state]')?.dataset.siteState,walking:document.querySelector('[data-walking]')?.dataset.walking,events:window.atlasTestEvents})));await page.screenshot({path:`/tmp/copperscroll-map-failure-${mobile?'phone':'desktop'}.png`});throw error;}
+  }catch(error){console.error(await page.evaluate(()=>({viewport:innerWidth,route:location.hash,plan:document.querySelector('[data-site-plan]')?.dataset.sitePlan,state:document.querySelector('[data-site-state]')?.dataset.siteState,walking:document.querySelector('[data-walking]')?.dataset.walking,canvas:{...document.querySelector('.maplibregl-canvas')?.dataset},events:window.atlasTestEvents})));await page.screenshot({path:`/tmp/copperscroll-map-failure-${mobile?'phone':'desktop'}.png`});throw error;}
  }
 }finally{await browser.close();}

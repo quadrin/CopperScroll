@@ -14,7 +14,7 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
  const keys=new Set<string>(),canvas=map.getCanvas();let x=0,z=site.span*.58,height=1.7,bearing=0,pitch=86,drag:{x:number;y:number;id:number}|null=null,frame=0,previous=performance.now();
  function apply(){const from=site.location(x,z),ahead=site.location(x+Math.sin(bearing*Math.PI/180)*20,z-Math.cos(bearing*Math.PI/180)*20);const base=site.baseElevation()+.2+site.groundHeight(x,z);
   const options=map.calculateCameraOptionsFromTo(new LngLat(...from),base+height,new LngLat(...ahead),base+height-Math.tan((90-pitch)*Math.PI/180)*20);
-  map.jumpTo({...options,padding:{top:0,bottom:0,left:0,right:0}});canvas.dataset.walkPosition=[x,height,z].map(n=>n.toFixed(3)).join(',');canvas.dataset.walkPitch=map.getPitch().toFixed(2);onChange([x,height,z]);
+  canvas.dataset.walkPosition=[x,height,z].map(n=>n.toFixed(3)).join(',');map.jumpTo({...options,padding:{top:0,bottom:0,left:0,right:0}});canvas.dataset.walkPitch=map.getPitch().toFixed(2);onChange([x,height,z]);
  }
  function reset(){height=1.7;bearing=0;pitch=86;
   if(start){[x,z]=site.local(...start);bearing=before.bearing;}

@@ -17,6 +17,7 @@ const hash=(x:number,y:number,seed:number)=>fract(Math.sin(x*127.1+y*311.7+seed*
 function noise(x:number,y:number,seed:number,periodX=256,periodY=256){const i=Math.floor(x)%periodX,j=Math.floor(y)%periodY,a=fract(x),b=fract(y),u=a*a*(3-2*a),v=b*b*(3-2*b),nextX=(i+1)%periodX,nextY=(j+1)%periodY;return T.MathUtils.lerp(T.MathUtils.lerp(hash(i,j,seed),hash(nextX,j,seed),u),T.MathUtils.lerp(hash(i,nextY,seed),hash(nextX,nextY,seed),u),v);}
 function surfaces(kind:Surface,style:Style){
  const n=512,colour=new Uint8Array(n*n*4),relief=new Uint8Array(n*n*4);
+ const fractures=Array.from({length:72},(_,i)=>[.15+hash(i,0,31)*.7,.15+hash(i,0,32)*.7]);
  const base=new T.Color(kind==='soil'?style.soil:kind==='plaster'?style.plaster:kind==='bedrock'?style.rock:style.stone).convertLinearToSRGB();
  const metres=kind==='masonry'?style.courses*8:kind==='soil'?3:kind==='bedrock'?5:2;
  const clamp=(v:number)=>T.MathUtils.clamp(v,0,1);
@@ -31,9 +32,15 @@ function surfaces(kind:Surface,style:Style){
    // Recessed, irregular joints and granular chisel marks survive close zoom.
    tone-=Math.max(0,.12-micro)*.45;moss=style.lichen*noise(u*12,v*12,87,12,12)*(1-bevel*.6);
   }else if(kind==='bedrock'){
-   const line=fract(v*13+noise(u*6,0,14,6,1)*.7+noise(u*28,0,15,28,1)*.12),joint=Math.min(line,1-line);
-   const strata=clamp(joint*29),fracture=fract(u*9+noise(0,v*8,8,1,8)*1.4),crack=Math.min(fracture,1-fracture);
-   tone*=.64+strata*.37+noise(u*9,v*21,4,9,21)*.12;tone*=crack<.014?.63:1;
+   const line=fract(v*13+noise(u*6,v*3,14,6,3)*1.1+noise(u*28,v*11,15,28,11)*.35),joint=Math.min(line,1-line);
+   const strata=clamp(joint*29),gx=u*9,gy=v*8,ix=Math.floor(gx),iy=Math.floor(gy);let first=10,second=10;
+   // Angular fracture boundaries avoid a regular masonry grid or looping lines.
+   for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){
+    const [a,b]=fractures[((iy+dy+8)%8)*9+(ix+dx+9)%9],distance=(ix+dx+a-gx)**2+(iy+dy+b-gy)**2;
+    if(distance<first){second=first;first=distance;}else if(distance<second)second=distance;
+   }
+   const crack=second-first;
+   tone*=.73+strata*.28+noise(u*9,v*21,4,9,21)*.12;tone*=crack<.018?.80:1;
    h=.2+strata*.38+coarse*.25;r=.97;
   }else if(kind==='limestone'){
    const vein=Math.abs(noise(u*20,v*20,6,20,20)-.5),pit=medium<.22?.88:1;
@@ -57,7 +64,7 @@ function surfaces(kind:Surface,style:Style){
 
 // World-space projection keeps a stone the same size on a 200 m enclosure,
 // a short wall, an instanced block and an irregular cliff. No stretched box UVs.
-function projectedSurface(material:T.MeshStandardMaterial,metres:number){
+function projectedSurface(material:T.MeshStandardMaterial,metres:number,organic=false){
  material.onBeforeCompile=shader=>{
   shader.uniforms.siteMetres={value:metres};
   shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vSitePosition; varying vec3 vSiteNormal;');
@@ -72,20 +79,20 @@ function projectedSurface(material:T.MeshStandardMaterial,metres:number){
    vec4 siteSample(sampler2D surfaceMap){
     vec3 n=abs(normalize(vSiteNormal)),p=vSitePosition/siteMetres;
     vec2 uv=n.y>max(n.x,n.z)?p.xz:(n.x>n.z?p.zy:p.xy);
-    return texture2D(surfaceMap,uv);
+    return ${organic?'texture2D(surfaceMap,uv)*.62+texture2D(surfaceMap,mat2(.74,-.67,.67,.74)*uv*1.71+vec2(.31,.73))*.38':'texture2D(surfaceMap,uv)'};
    }`);
   shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>','diffuseColor *= siteSample(map);');
   shader.fragmentShader=shader.fragmentShader.replace('#include <roughnessmap_fragment>','float roughnessFactor = roughness * siteSample(roughnessMap).g;');
   shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>',`float siteRelief=siteSample(bumpMap).r;
    normal=perturbNormalArb(-vViewPosition,normal,vec2(dFdx(siteRelief),dFdy(siteRelief))*bumpScale,faceDirection);`);
  };
- material.customProgramCacheKey=()=>`site-surface-v1-${metres}`;
+ material.customProgramCacheKey=()=>`site-surface-v2-${metres}-${organic}`;
  return material;
 }
 export function cloneSiteMaterial<M extends T.Material>(material:M):M {const clone=material.clone();clone.onBeforeCompile=material.onBeforeCompile;clone.customProgramCacheKey=material.customProgramCacheKey;return clone;}
 export function createSiteMaterials(id:string){
  const style=siteStyle(id);
- const make=(kind:Surface)=>{const t=surfaces(kind,style),m=new T.MeshStandardMaterial({map:t.map,bumpMap:t.relief,roughnessMap:t.relief,bumpScale:kind==='bedrock'?.07:kind==='soil'?.025:kind==='plaster'?.012:.032,roughness:1});m.name=`${style.id}-${kind}`;m.userData.siteSurface=kind;m.userData.siteStyle=style.id;return projectedSurface(m,t.metres);};
+ const make=(kind:Surface)=>{const t=surfaces(kind,style),m=new T.MeshStandardMaterial({map:t.map,bumpMap:t.relief,roughnessMap:t.relief,bumpScale:kind==='bedrock'?.07:kind==='soil'?.025:kind==='plaster'?.012:.032,roughness:1});m.name=`${style.id}-${kind}`;m.userData.siteSurface=kind;m.userData.siteStyle=style.id;return projectedSurface(m,t.metres,kind==='soil');};
  return {style,stone:make('masonry'),block:make('limestone'),rock:make('bedrock'),earth:make('soil'),plaster:make('plaster')};
 }
 

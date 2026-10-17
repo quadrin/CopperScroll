@@ -1,6 +1,6 @@
 import * as T from "three";
 import { MercatorCoordinate } from "maplibre-gl";
-import { createSiteMaterials, chippedBlock } from "./atlas-site-materials";
+import { createSiteMaterials, chippedBlock, cloneSiteMaterial } from "./atlas-site-materials";
 
 // Display alignment only. Neither this anchor nor page-up orientation is a surveyed fit.
 export const PILOT_ANCHOR = [35.45056,31.74111] as [number,number];
@@ -24,46 +24,98 @@ const route=[[253,1200],[272,1209],[295,1212],[305,1220],[343,1230],[355,1238],[
 const branch=[[305,1220],[318,1247],[335,1262],[350,1256],[361,1245]];
 const local=([x,z]:number[])=>new T.Vector3((x-381)*.2,0,(z-1240)*.2);
 function random(seed:number){let n=seed>>>0;return ()=>{n=(n*1664525+1013904223)>>>0;return n/4294967296;};}
+const smooth=(a:number,b:number,v:number)=>T.MathUtils.smoothstep(v,a,b);
+// An irregular, feathered apron replaces the rectangular display tile. Map
+// elevation offsets the whole model consistently, preserving source-plan X/Z.
+const apronRadius=(x:number,z:number)=>Math.hypot(x/118,z/94)/(1+.055*Math.sin(Math.atan2(z,x)*5)+.035*Math.cos(Math.atan2(z,x)*9));
+export function fitQumranGround(root:T.Group,sample:(x:number,z:number)=>number){
+ // A small elevation grid avoids thousands of map queries on phone GPUs.
+ const n=8,extent=130,values:number[]=[];
+ for(let j=0;j<=n;j++)for(let i=0;i<=n;i++)values.push(sample((i/n*2-1)*extent,(j/n*2-1)*extent));
+ const elevation=(x:number,z:number)=>{
+  const u=T.MathUtils.clamp((x/extent+1)*n/2,0,n),v=T.MathUtils.clamp((z/extent+1)*n/2,0,n),i=Math.min(n-1,Math.floor(u)),j=Math.min(n-1,Math.floor(v));
+  const at=(x:number,z:number)=>values[z*(n+1)+x];
+  return T.MathUtils.lerp(T.MathUtils.lerp(at(i,j),at(i+1,j),u-i),T.MathUtils.lerp(at(i,j+1),at(i+1,j+1),u-i),v-j);
+ };
+ root.traverse(object=>{
+  if(!(object instanceof T.Mesh))return;
+  if(object instanceof T.InstancedMesh){
+   const source=object.userData.sourceMatrices as Float32Array;
+   object.instanceMatrix.array.set(source);
+   for(let i=0;i<object.count;i++){
+    const k=i*16,x=source[k+12],z=source[k+14],dx=(elevation(x+.25,z)-elevation(x-.25,z))/.5,dz=(elevation(x,z+.25)-elevation(x,z-.25))/.5;
+    object.instanceMatrix.array[k+13]+=elevation(x,z);
+    // Tilt long channel floors with the same local slope as their ground;
+    // translating only their centres would leave the ends suspended in air.
+    for(const column of [0,4,8])object.instanceMatrix.array[k+column+1]+=dx*source[k+column]+dz*source[k+column+2];
+   }
+   object.instanceMatrix.needsUpdate=true;object.computeBoundingSphere();return;
+  }
+  const p=object.geometry.getAttribute('position'),base=object.geometry.getAttribute('sourceHeight');
+  for(let k=0;k<p.count;k++)p.setY(k,base.getX(k)+elevation(p.getX(k)+object.position.x,p.getZ(k)+object.position.z));
+  p.needsUpdate=true;object.geometry.computeVertexNormals();object.geometry.computeBoundingSphere();
+ });
+}
 
 export function buildQumranPilot(){
  const root=new T.Group(),rand=random(979),surfaces=createSiteMaterials('qumran-ilan');
  const {block:stone,plaster,rock}=surfaces;
- const dirt=surfaces.earth;
+ const dirt=cloneSiteMaterial(surfaces.earth);dirt.vertexColors=true;dirt.transparent=true;dirt.depthWrite=false;
  const dark=new T.MeshStandardMaterial({color:'#191913',roughness:1,side:T.DoubleSide});
  const blockGeometry=chippedBlock(1,1,1,19);
  function mesh(g:T.BufferGeometry,m:T.Material){const o=new T.Mesh(g,m);o.castShadow=o.receiveShadow=true;root.add(o);return o;}
  function block(x:number,y:number,z:number,w:number,h:number,d:number,m:T.Material){const o=mesh(blockGeometry,m);o.scale.set(w,h,d);o.position.set(x,y+h/2,z);o.userData.siteBlock=true;return o;}
  // Display relief only. The source-plan channel route below is preserved.
  const height=(x:number,z:number)=>.3+Math.max(0,1-Math.abs(z-2)/23)*1.7+.35*Math.sin(x*.13)*Math.cos(z*.21);
- const ground=new T.PlaneGeometry(180,140,180,140);ground.rotateX(-Math.PI/2);
- const gp=ground.getAttribute('position');for(let i=0;i<gp.count;i++){const x=gp.getX(i),z=gp.getZ(i),edge=Math.min((90-Math.abs(x))/15,(70-Math.abs(z))/15,1);gp.setY(i,Math.max(0,edge)*height(x,z));}ground.computeVertexNormals();mesh(ground,dirt).userData.walkSurface=true;
+ const ground=new T.PlaneGeometry(260,220,130,110);ground.rotateX(-Math.PI/2);
+ const gp=ground.getAttribute('position'),colours:number[]=[],sourceHeight:number[]=[],indices:number[]=[];
+ for(let i=0;i<gp.count;i++){
+  const x=gp.getX(i),z=gp.getZ(i),r=apronRadius(x,z),fade=1-smooth(.57,1,r),y=height(x,z)*(1-smooth(.55,.98,r));
+  gp.setY(i,y);sourceHeight.push(y);colours.push(1,1,1,fade);
+ }
+ const oldIndex=ground.getIndex()!;
+ for(let i=0;i<oldIndex.count;i+=3){const a=oldIndex.getX(i),b=oldIndex.getX(i+1),c=oldIndex.getX(i+2);if(colours[a*4+3]+colours[b*4+3]+colours[c*4+3]>.001)indices.push(a,b,c);}
+ ground.setIndex(indices);ground.setAttribute('color',new T.Float32BufferAttribute(colours,4));ground.setAttribute('sourceHeight',new T.Float32BufferAttribute(sourceHeight,1));ground.computeVertexNormals();
+ const apron=mesh(ground,dirt);apron.name='qumran-ground';apron.castShadow=false;apron.renderOrder=-3;apron.userData.walkSurface=true;
  const mouth=local([401,1268]),my=height(mouth.x,mouth.z)+.2;
  // Connected beds of fractured limestone, rather than a cloud of smooth rocks.
  // The projecting spur and every bed/joint here are illustrative scenery.
  const front=(x:number)=>-9+14*Math.exp(-(((x-mouth.x)/7)**2))+1.1*Math.sin(x*.23);
+ const ridge=(x:number)=>Math.max(0,1-(Math.abs(x)/85)**4)**2*(6.8+1.3*Math.sin(x*.061)+.65*Math.sin(x*.23));
+ const edge=(x:number,row:number)=>front(x)-row*.40*ridge(x)/7+.48*Math.sin(x*.63)+.28*Math.sin(x*1.7+row*1.3)+.13*Math.cos(x*4.3+row);
+ const level=(x:number,row:number)=>height(x,front(x))-.22+ridge(x)*(row+.24*Math.sin(x*.11+row*2.1)*Math.sin(row*Math.PI/11))/11;
+ const cliffRock=cloneSiteMaterial(rock);cliffRock.vertexColors=true;cliffRock.transparent=true;cliffRock.alphaTest=.01;
  for(let row=0;row<11;row++){
-  const positions:number[]=[],uv:number[]=[];const base=row*.72;
-  function vertex(x:number,y:number,z:number){positions.push(x,y,z);uv.push(x/5,y/5);}
+  const positions:number[]=[],uv:number[]=[],colours:number[]=[];
+  function vertex(x:number,y:number,z:number){positions.push(x,y,z);uv.push(x/5,y/5);colours.push(1,1,1,smooth(.05,.9,ridge(x)));}
   function tri(a:number[],b:number[],c:number[]){vertex(a[0],a[1],a[2]);vertex(b[0],b[1],b[2]);vertex(c[0],c[1],c[2]);}
   function quad(a:number[],b:number[],c:number[],d:number[]){tri(a,b,d);tri(b,c,d);}
-  for(let i=0;i<120;i++){
-   const x=-60+i,x2=x+1;
+  for(let i=0;i<170;i++){
+   const x=-85+i,x2=x+1;
    // A real opening in the display mesh leaves the tunnel recess visible.
    if(row<2&&Math.abs(x+.5-mouth.x)<1.1)continue;
-   const edge=(t:number)=>front(t)-row*.62+.20*Math.sin(t*2.7+row*1.3)+.12*Math.cos(t*5.3+row);
-   const y=(t:number)=>height(t,front(t))+base-.35+.06*Math.sin(t*.8+row*.9);
-   const a=[x,y(x),edge(x)],b=[x2,y(x2),edge(x2)],c=[x2,y(x2)+.90,edge(x2)-.12],d=[x,y(x)+.90,edge(x)-.12];
-   quad(a,b,c,d);quad(d,c,[x2,c[1]-.03,-31],[x,d[1]-.03,-31]);
-   // Darker undersides between strata create coherent, grounded ledges.
-   quad(a,[x,a[1],-31],[x2,b[1],-31],b);
+   const a=[x,level(x,row),edge(x,row)],b=[x2,level(x2,row),edge(x2,row)],c=[x2,level(x2,row+1)+.08,edge(x2,row)-.12],d=[x,level(x,row+1)+.08,edge(x,row)-.12];
+   quad(a,b,c,d);
+   // Short weathered shelves join successive beds, rather than full-depth slabs.
+   quad(d,c,[x2,level(x2,row+1),edge(x2,row+1)],[x,level(x,row+1),edge(x,row+1)]);
   }
-  const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(positions,3));g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));g.computeVertexNormals();
-  const face=mesh(g,rock);face.name='connected-limestone-bed';face.userData.stratum=row;
+  const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(positions,3));g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));g.setAttribute('color',new T.Float32BufferAttribute(colours,4));g.computeVertexNormals();
+  const face=mesh(g,cliffRock);face.name='connected-limestone-bed';face.renderOrder=-1;face.userData.stratum=row;
  }
+ // The uneven crest rolls back into the apron. No rectangular lid or cut ends.
+ const backPositions:number[]=[],backColours:number[]=[],backIndices:number[]=[],steps=28;
+ for(let i=0;i<=170;i++)for(let j=0;j<=steps;j++){
+  const x=-85+i,t=j/steps,start=edge(x,11),z=T.MathUtils.lerp(start,-64+4*Math.sin(x*.09),t),rise=ridge(x)*(1-smooth(0,1,t));
+  backPositions.push(x,T.MathUtils.lerp(height(x,front(x)),height(x,z),smooth(0,1,t))+rise-.22*(1-t),z);backColours.push(1,1,1,(1-smooth(.4,1,t))*(1-smooth(48,85,Math.abs(x))));
+ }
+ for(let i=0;i<170;i++)for(let j=0;j<steps;j++){const a=i*(steps+1)+j,b=a+steps+1;backIndices.push(a,b,a+1,b,b+1,a+1);}
+ const back=new T.BufferGeometry();back.setAttribute('position',new T.Float32BufferAttribute(backPositions,3));back.setAttribute('color',new T.Float32BufferAttribute(backColours,4));back.setIndex(backIndices);back.computeVertexNormals();
+ const backSoil=cloneSiteMaterial(dirt);backSoil.vertexColors=true;backSoil.transparent=true;
+ const slope=mesh(back,backSoil);slope.name='qumran-ridge-back';slope.castShadow=false;slope.renderOrder=-2;slope.userData.walkSurface=true;
  // Angular scree sits on the ground, with a few large fallen slabs at the bank.
  const rubble=new T.InstancedMesh(chippedBlock(1,.65,1,41),stone,1350),o=new T.Object3D();
  for(let i=0;i<1350;i++){
-  const x=(rand()-.5)*145,z=(rand()-.5)*105,s=i<160?.25+rand()*.7:.035+rand()*.2;
+  const x=(rand()-.5)*156,z=i<160?front(x)+rand()*9:(rand()-.5)*118,r=apronRadius(x,z),s=(i<160?.25+rand()*.7:.035+rand()*.2)*(1-smooth(.55,.8,r));
   o.position.set(x,height(x,z)+s*.2,z);o.rotation.set((rand()-.5)*.5,rand()*6.28,(rand()-.5)*.4);o.scale.set(s*(1+rand()),s,s*(.6+rand()));o.updateMatrix();rubble.setMatrixAt(i,o.matrix);rubble.setColorAt(i,new T.Color().setScalar(.72+rand()*.4));
  }rubble.castShadow=rubble.receiveShadow=true;root.add(rubble);
  function channel(points:number[][]){for(let i=1;i<points.length;i++){
@@ -91,5 +143,15 @@ export function buildQumranPilot(){
  root.updateMatrixWorld(true);const batches=new Map<T.Material,T.Mesh[]>();
  root.traverse(o=>{if(o instanceof T.Mesh&&o.userData.siteBlock){const material=o.material as T.Material;const batch=batches.get(material)??[];batch.push(o);batches.set(material,batch);}});
  for(const [material,blocks] of batches){const batch=new T.InstancedMesh(blockGeometry,material,blocks.length);batch.castShadow=batch.receiveShadow=true;blocks.forEach((block,i)=>{batch.setMatrixAt(i,block.matrixWorld);batch.setColorAt(i,new T.Color().setScalar(.88+(i*17%31)/130));block.removeFromParent();});root.add(batch);}
+ // Rock, scree and channels follow the same surface as the soil. Source-plan
+ // horizontal relationships stay fixed; elevations and the DEM fit are illustrative.
+ root.traverse(object=>{
+  if(!(object instanceof T.Mesh))return;
+  if(object instanceof T.InstancedMesh){object.userData.sourceMatrices=Float32Array.from(object.instanceMatrix.array);return;}
+  if(object.geometry.hasAttribute('sourceHeight'))return;
+  const p=object.geometry.getAttribute('position'),base:number[]=[];
+  for(let i=0;i<p.count;i++)base.push(p.getY(i));
+  object.geometry.setAttribute('sourceHeight',new T.Float32BufferAttribute(base,1));
+ });
  return root;
 }

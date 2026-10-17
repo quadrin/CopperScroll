@@ -1,6 +1,6 @@
 import * as T from 'three';
 import {MercatorCoordinate,type Map,type CustomLayerInterface} from 'maplibre-gl';
-import {buildQumranPilot} from './atlas-qumran-pilot';
+import {buildQumranPilot,fitQumranGround} from './atlas-qumran-pilot';
 import {buildModel,type ModelGeometry} from './atlas-model-geometry';
 import type {SitePlan} from './atlas-explorer-model';
 import type {Place} from './atlas-types';
@@ -12,9 +12,21 @@ export type MapSiteRuntime={model:ModelGeometry;span:number;anchor:[number,numbe
 export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(runtime:MapSiteRuntime)=>void,onFailure:(message:string)=>void):CustomLayerInterface {
  const anchor:[number,number]=[place.lon!,place.lat!],origin=MercatorCoordinate.fromLngLat(anchor),scale=origin.meterInMercatorCoordinateUnits();
  const scene=new T.Scene(),camera=new T.Camera(),sky=createSiteSky();let renderer:T.WebGLRenderer|undefined,model:ModelGeometry|undefined,runtime:MapSiteRuntime|undefined;
+ let terrainDirty=true,lastBase=NaN,lastCameraElevation=NaN;
+ const terrainChanged=()=>{terrainDirty=true;map.triggerRepaint();};
+ const terrainLoaded=(e:{sourceId?:string;isSourceLoaded?:boolean})=>{if(e.sourceId==='terrain'&&e.isSourceLoaded){baseElevation();terrainChanged();}};
  const location=(x:number,z:number):[number,number]=>{const p=new MercatorCoordinate(origin.x+x*scale,origin.y+z*scale).toLngLat();return[p.lng,p.lat];};
  const local=(lng:number,lat:number):[number,number]=>{const p=MercatorCoordinate.fromLngLat([lng,lat]);return[(p.x-origin.x)/scale,(p.y-origin.y)/scale];};
- const baseElevation=()=>map.getTerrain()?(map.queryTerrainElevation(anchor)??0):0;
+ const knownElevations=new globalThis.Map<string,number>();
+ const terrainElevation=(at:[number,number],fallback=0)=>{
+  const terrain=map.getTerrain();if(!terrain)return 0;
+  const factor=terrain.exaggeration??1,key=at.join(','),value=map.queryTerrainElevation(at);
+  // MapLibre returns zero for missing DEM coverage during a tile refresh. Keep
+  // an already loaded sample rather than moving this fixed site to sea level.
+  if(value!=null&&value!==0)knownElevations.set(key,value/factor);
+  return knownElevations.has(key)?knownElevations.get(key)!*factor:fallback;
+ };
+ const baseElevation=()=>terrainElevation(anchor);
  return {id:SITE_LAYER_ID,type:'custom',renderingMode:'3d',
   onAdd(_map,gl){try{
    if(plan.id==='qumran-ilan'){
@@ -35,12 +47,21 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    let meshCount=0,vertexCount=0;model.root.traverse(o=>{if(o instanceof T.Mesh){meshCount++;vertexCount+=o.geometry.getAttribute('position').count*(o instanceof T.InstancedMesh?o.count:1);}});
    runtime={model,span,anchor,baseElevation,location,local,meshCount,vertexCount,renderedFrames:0,
     groundHeight(x,z){const ray=new T.Raycaster(new T.Vector3(x,1000,z),new T.Vector3(0,-1,0));return ray.intersectObjects(walkSurfaces,false)[0]?.point.y??0;},
-    focus(featureId){const point=featureId?model?.markers.get(featureId):undefined;const center=point?location(point.x,point.z):anchor;const zoom=featureId?22:Math.max(17,Math.min(21.2,21-Math.log2(Math.max(span,20)/40)));map.flyTo({center,zoom,pitch:55,bearing:map.getBearing(),padding:{top:80,bottom:140,left:30,right:30},duration:window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:1000});},
+    focus(featureId){const point=featureId?model?.markers.get(featureId):undefined;const center=point?location(point.x,point.z):anchor;const zoom=featureId?22:Math.max(17,Math.min(21.2,21-Math.log2(Math.max(span,20)/40)));const view={center,zoom,pitch:55,bearing:map.getBearing(),padding:{top:80,bottom:140,left:30,right:30}};if(map.getTerrain()){map.stop();map.jumpTo({...view,elevation:baseElevation()});}else map.flyTo({...view,duration:window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:1000});},
     setFeature(id){model?.root.traverse(o=>{const mesh=o as T.Mesh;if(!mesh.material)return;for(const m of Array.isArray(mesh.material)?mesh.material:[mesh.material]){const mat=m as T.MeshStandardMaterial;if(mat.emissive){mat.emissive.set(mesh.userData.featureId===id?'#aa6c31':'#000000');mat.emissiveIntensity=.2;}}});map.triggerRepaint();}
-   };onReady(runtime);map.triggerRepaint();
+   };map.on('terrain',terrainChanged);map.on('sourcedata',terrainLoaded);onReady(runtime);map.triggerRepaint();
   }catch(e){onFailure(e instanceof Error?e.message:'Site geometry could not load.');}},
   render(_gl,args){if(!renderer||!model||!runtime||map.getZoom()<15.5)return;
-   const o=MercatorCoordinate.fromLngLat(anchor,baseElevation()+.2);
+   const base=baseElevation(),o=MercatorCoordinate.fromLngLat(anchor,base+.2);
+   // Terrain loading can update the camera after the current frame's matrix was
+   // prepared. Draw a follow-up frame so the model and map use the same height.
+   const cameraElevation=map.getCenterElevation();
+   const baseChanged=!Number.isFinite(lastBase)||Math.abs(base-lastBase)>.02;
+   if(baseChanged||!Number.isFinite(lastCameraElevation)||Math.abs(cameraElevation-lastCameraElevation)>.02){terrainDirty||=baseChanged;lastBase=base;lastCameraElevation=cameraElevation;map.triggerRepaint();}
+   if(terrainDirty&&plan.id==='qumran-ilan'){
+    fitQumranGround(model.root,(x,z)=>map.getTerrain()?terrainElevation(location(x,z),base)-base:0);
+    renderer.shadowMap.needsUpdate=true;terrainDirty=false;
+   }
    const matrix=new T.Matrix4().makeTranslation(o.x,o.y,o.z).scale(new T.Vector3(scale,-scale,scale)).multiply(new T.Matrix4().makeRotationX(Math.PI/2));
    camera.projectionMatrix.fromArray(args.defaultProjectionData.mainMatrix).multiply(matrix);
    const walking=map.getCanvas().dataset.walkPosition?.split(',').map(Number),eye=new T.Vector3();
@@ -48,7 +69,8 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    sky.update(camera.projectionMatrix,eye,!!walking);
    renderer.resetState();renderer.clearDepth();renderer.render(scene,camera);renderer.resetState();runtime.renderedFrames++;
    const canvas=map.getCanvas();canvas.dataset.siteFrames=String(runtime.renderedFrames);canvas.dataset.siteMeshes=String(runtime.meshCount);canvas.dataset.siteVertices=String(runtime.vertexCount);
+   canvas.dataset.siteElevation=base.toFixed(2);canvas.dataset.siteAnchor=new T.Vector3().applyMatrix4(camera.projectionMatrix).toArray().map(n=>n.toFixed(4)).join(',');
   },
-  onRemove(){disposeSiteScene(scene);scene.traverse(o=>{if(o instanceof T.DirectionalLight)o.shadow.dispose();});renderer?.dispose();delete map.getCanvas().dataset.siteFrames;delete map.getCanvas().dataset.siteMeshes;delete map.getCanvas().dataset.siteVertices;}
+  onRemove(){map.off('terrain',terrainChanged);map.off('sourcedata',terrainLoaded);disposeSiteScene(scene);scene.traverse(o=>{if(o instanceof T.DirectionalLight)o.shadow.dispose();});renderer?.dispose();for(const key of ['siteFrames','siteMeshes','siteVertices','siteElevation','siteAnchor'])delete map.getCanvas().dataset[key];}
  };
 }

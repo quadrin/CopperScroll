@@ -45,6 +45,7 @@ export default function AtlasMap(props:Props) {
   const [retry,setRetry]=useState(0);
   const [modernLayerCount,setModernLayerCount]=useState<number|null>(null);
   const [exaggeration,setExaggeration]=useState(1.5);
+  const terrainCameraElevation=useRef<number|null>(null);
   const [terrainState,setTerrainState]=useState("loading");
   const [mapZoom,setMapZoom]=useState(10.3);
   const [basemap,setBasemap]=useState<"map"|"satellite">("map");
@@ -72,6 +73,14 @@ export default function AtlasMap(props:Props) {
   const restoring=useRef(false);
   const [coordinates,setCoordinates]=useState("31.820° N · 35.367° E");
   const reduced=useRef(false);
+  function syncTerrainCamera(map:LibreMap){
+    const terrain=map.getTerrain();if(!terrain||map.getCanvas().dataset.walkPosition)return;
+    const factor=terrain.exaggeration??1,sample=map.queryTerrainElevation(map.getCenter());
+    if(sample!=null&&sample!==0)terrainCameraElevation.current=sample/factor;
+    if(terrainCameraElevation.current==null)return;
+    const elevation=terrainCameraElevation.current*factor;
+    if(Math.abs(map.getCenterElevation()-elevation)>.02)map.setCenterElevation(elevation);
+  }
   useEffect(()=>{setPlaceExpanded(false);optionsRef.current?.removeAttribute("open");},[focusId,mode]);
   useEffect(()=>{setLocalFeature(props.featureId??null);},[props.featureId,focusId]);
   useEffect(()=>{setPlanViewport({x:0,y:0,zoom:1});},[plan?.id]);
@@ -119,7 +128,7 @@ export default function AtlasMap(props:Props) {
         mapRef.current=map;
         map.addControl(new lib.AttributionControl({compact:true}),"bottom-right");
         map.addControl(new lib.ScaleControl({maxWidth:80,unit:"metric"}),"bottom-right");
-        map.on("moveend",event=>{const p=map.getCenter();setCoordinates(`${p.lat.toFixed(3)}° N · ${p.lng.toFixed(3)}° E`);setMapZoom(map.getZoom());latest.current.onCamera?.({center:[p.lng,p.lat],zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()});
+        map.on("moveend",event=>{syncTerrainCamera(map);const p=map.getCenter();setCoordinates(`${p.lat.toFixed(3)}° N · ${p.lng.toFixed(3)}° E`);setMapZoom(map.getZoom());latest.current.onCamera?.({center:[p.lng,p.lat],zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()});
           // Camera restoration and panel padding must not undo an explicit site choice.
           if(event.originalEvent&&map.getZoom()>=16&&!walker.current){
             const distance=(place:Place)=>place.lat==null||place.lon==null?Infinity:Math.hypot((place.lon-p.lng)*Math.cos(p.lat*Math.PI/180),place.lat-p.lat)*111320;
@@ -167,7 +176,7 @@ export default function AtlasMap(props:Props) {
             const marker=new lib.Marker({element:anchor,anchor:"center"}).setLngLat([place.lon,place.lat]).addTo(map);
             markers.current.push({marker,button,place});
           }
-          map.on("sourcedata",e=>{if(e.sourceId==="terrain"&&e.isSourceLoaded)setTerrainState("ready");if(e.sourceId==="satellite"&&e.isSourceLoaded&&e.sourceDataType==="content")setImageryState("ready")});
+          map.on("sourcedata",e=>{if(e.sourceId==="terrain"&&e.isSourceLoaded){setTerrainState("ready");requestAnimationFrame(()=>{if(mapRef.current===map)syncTerrainCamera(map);});}if(e.sourceId==="satellite"&&e.isSourceLoaded&&e.sourceDataType==="content")setImageryState("ready")});
           if(latest.current.restoreCamera)map.jumpTo(latest.current.restoreCamera);
           else {const bounds=allSiteBounds(places);if(bounds)map.fitBounds(bounds,{padding:mapPadding(map),maxZoom:12,duration:0});}
           setModernLayerCount(map.getStyle().layers.filter(layer=>layer.type==="fill-extrusion"||/building|transportation|landuse|poi/i.test(("source-layer" in layer?layer["source-layer"]??"":"")+" "+layer.id)).length);
@@ -210,13 +219,19 @@ export default function AtlasMap(props:Props) {
     if(restoring.current){restoring.current=false;return;}
     requestAnimationFrame(()=>map.resize());
     if(mode==="3d"){
+      map.stop();
       map.setTerrain({source:"terrain",exaggeration});
-      map.easeTo({pitch:60,bearing:map.getBearing()||-18,duration:reduced.current?0:900});
+      map.setCenterClampedToGround(false);
+      // Keep the selected scale while terrain below sea level loads. An eased
+      // elevation transition can recalculate the zoom back to a regional view.
+      map.jumpTo({pitch:60,bearing:map.getBearing()||-18,elevation:map.queryTerrainElevation(map.getCenter())??0});
+      syncTerrainCamera(map);
     }else{
+      map.setCenterClampedToGround(true);
       map.setTerrain(null);map.easeTo({pitch:0,bearing:0,duration:reduced.current?0:700});
     }
   },[mode,ready,offMap]);
-  useEffect(()=>{if(ready&&mode==="3d")mapRef.current?.setTerrain({source:"terrain",exaggeration})},[exaggeration,ready,mode]);
+  useEffect(()=>{const map=mapRef.current;if(ready&&mode==="3d"&&map){map.setTerrain({source:"terrain",exaggeration});syncTerrainCamera(map);}},[exaggeration,ready,mode]);
   useEffect(()=>{
     const map=mapRef.current;if(!ready||!map||focusNonce===0||offMap)return;
     const p=places.find(p=>p.id===focusId);

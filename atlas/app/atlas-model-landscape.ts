@@ -30,8 +30,8 @@ export function landscapeGround(ground:LandscapeGround,placeId:string,offset:Poi
  function triangle(a:number,b:number,c:number){const x=(positions[a*3]+positions[b*3]+positions[c*3])/3,z=(positions[a*3+2]+positions[b*3+2]+positions[c*3+2])/3;if((x/radius)**2+(z/radius)**2>1||holes.some(h=>inside(x,z,h)))return;indices.push(a,b,c);}
  for(let j=0;j<n;j++)for(let i=0;i<n;i++){const a=j*(n+1)+i,b=a+1,c=a+n+1,d=c+1;triangle(a,c,b);triangle(b,c,d);}
  const geometry=new T.BufferGeometry();geometry.setAttribute("position",new T.Float32BufferAttribute(positions,3));geometry.setAttribute("color",new T.Float32BufferAttribute(colours,4));geometry.setIndex(indices);geometry.computeVertexNormals();
- const mat=surface?cloneSiteMaterial(surface):new T.MeshStandardMaterial({color:'#b5a384',roughness:1});mat.vertexColors=true;mat.side=T.DoubleSide;mat.transparent=true;mat.depthWrite=true;
- const mesh=new T.Mesh(geometry,mat);mesh.receiveShadow=true;mesh.castShadow=false;
+ const mat=surface?cloneSiteMaterial(surface):new T.MeshStandardMaterial({color:'#b5a384',roughness:1});mat.vertexColors=true;mat.side=T.DoubleSide;mat.transparent=true;mat.depthWrite=false;
+ const mesh=new T.Mesh(geometry,mat);mesh.receiveShadow=true;mesh.castShadow=false;mesh.renderOrder=-3;
  const details=new T.Group();let seed=7841;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
  const rubble=new T.InstancedMesh(chippedBlock(1,.65,1,61),stone??new T.MeshStandardMaterial({color:'#a6997d',roughness:1}),650),o=new T.Object3D();
  for(let i=0;i<650;i++){
