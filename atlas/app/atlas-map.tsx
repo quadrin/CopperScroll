@@ -10,6 +10,7 @@ import { imagerySource } from "./atlas-imagery";
 import { plansForPlace, sitePlans } from "./atlas-explorer-model";
 import SiteReference from "./atlas-site-reference";
 import { MapVideoReferences, MapSourceReferences, type MapPanel } from "./atlas-map-references";
+import WalkReferences from "./atlas-walk-references";
 import type { MapSiteRuntime } from "./atlas-map-site-layer";
 import type { WalkController } from "./atlas-map-walk";
 import "./atlas-map-unified.css";
@@ -329,6 +330,7 @@ export default function AtlasMap(props:Props) {
     {placing&&dragPoint&&<div className="map-person-ghost" aria-hidden="true" style={{left:dragPoint.x,top:dragPoint.y}}><WalkingPerson size={38}/></div>}
     {placing&&<div className="map-drop-hint" role="status">Drop on the selected site to look around</div>}
     {dropMessage&&!offMap&&<div className="map-drop-hint" role="status">{dropMessage}<button aria-label="Dismiss walking message" onClick={()=>setDropMessage("")}><X size={14}/></button></div>}
+    {walking&&<WalkReferences key={focusId??"none"} placeId={focusId}/>}
     {walking&&<div className="map-walk-controls" aria-label="Walk controls">
       <span>Drag to look · WASD / arrows to move</span>
       <small className="walk-keyboard-help">Space jump (hold to repeat) · Ctrl / double-tap W/S sprint · Shift crouch<br/>Double-click for mouse look · Esc releases · R resets position</small>
