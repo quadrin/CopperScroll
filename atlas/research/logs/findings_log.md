@@ -1564,3 +1564,16 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 
 - **All four: cannot decide.** VII 14: the letter after ה has a square base with no projecting stroke, so it fits neither form cleanly. VIII 9: the sum region is too damaged to count. VIII 13: about four unit strokes are visible, with damage that could hide more. X 11: the number word is cut by the strip edge. Evidence.
 - **No rating changes.** Entry 32's next step is now the WSRP 1988 masters. Inference: these four questions cannot be settled on the published reproductions.
+
+## 17 October 2026 — New Drive sources read under frozen tests
+
+[Tests](../../registration/new_sources_2026-10-17_tests.md) (frozen in 4f81b3d) and [results](../../registration/new_sources_2026-10-17_results.md). Another session had added these files to the owner's Drive. Six reader agents extracted them, and I checked the decisive passages.
+
+- **Entry 35, Hyrcania: F 1→0 (label none).** Patrich 1989 p. 244 (Hebrew, page image): no diversion dam or intake works at the southern aqueduct's start on the Kidron. The repo's "Kidron dam at station 1" was a second-hand error. [Extraction](../../registration/patrich1989_hyrcania_extracted.md).
+- **Entry 57, Gerizim: D 1→0 (label none).** *Mount Gerizim Excavations III: The Coins* (2021): every coin of 50 BCE–70 CE is a chance loss, and the site was not resettled until the late 3rd c. CE (pp. 59, 106, 129). Lead: Magen p. 45 has a fortress at Tell er-Ras in use into the Roman period, with no evidence cited. [Extraction](../../registration/magen2021_gerizim_coins_extracted.md).
+- **Entry 49, Siloam: F 1→2 under Milik's "pipe" sense (label stays weak).** Channel IV, cut in the Second Temple period, fed the stepped pool from the tunnel outlet (Grossberg 2011 p. 76 n. 4; Reich and Shukron 2010 p. 30). No trough appears in any of the seven reports. [Extraction](../../registration/siloam_city_of_david_2010_2022_extracted.md).
+- **No change:**
+  - 16 and 29 Hyrcania;
+  - 38 ʿAin en-Naṭuf: no dovecote in Hirschfeld's survey ([extraction](../../registration/hirschfeld1985_herodium_natuf_extracted.md));
+  - 30 Tell el-Qos: Byzantine only ([extraction](../../registration/padis2011_tell_el_qos_extracted.md));
+  - 3, 5, 8, 9, 10 Temple Mount and East Gate: nothing in Warren 1884 or the Gibson and Jacobson reproductions meets the tests ([extraction](../../registration/warren1884_temple_mount_cisterns_extracted.md)).

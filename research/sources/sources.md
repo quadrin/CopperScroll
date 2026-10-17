@@ -652,3 +652,13 @@ Borrowed with the owner's Internet Archive account, at the owner's request. Text
 
 - **Amit 1989**, "The water system of the Doq (Dagon) fortress" (Hebrew), in D. Amit, Y. Hirschfeld and J. Patrich (eds.), *The Aqueducts of Ancient Palestine* (Jerusalem: Yad Izhak Ben-Zvi, 1989), pp. 223–228; owner's Drive copy, read 17 October 2026. Extraction: [registration/amit1989_doq_extracted.md](../../registration/amit1989_doq_extracted.md).
 - **Avigad 1962**, "A Depository of Inscribed Ossuaries in the Kidron Valley", *IEJ* 12.1, pp. 1–12, https://www.jstor.org/stable/27924877; JSTOR viewer pages in the owner's Drive. Extraction: [registration/avigad1962_kidron_ossuaries_extracted.md](../../registration/avigad1962_kidron_ossuaries_extracted.md).
+- **Added to Drive by another session, 17 October 2026, and read the same day:**
+  - Patrich 1989, "The Aqueducts of Hyrcania" (Hebrew), in *The Aqueducts of Ancient Palestine*, pp. 243–260;
+  - Hirschfeld, *Map of Herodium (108/2)*, IAA online edition (EN, HE);
+  - D'Andrea and Sala 2011, Tell el-Qos (PADIS pp. 139, 206, 227);
+  - Magen, Bijovsky and Tzionit 2021, *Mount Gerizim Excavations III: The Coins* (JSP 19);
+  - Warren and Conder 1884, *SWP Jerusalem*, and a lecture reproducing parts of Gibson and Jacobson 1996;
+  - Reich and Shukron 2010, 2011; Shukron and Reich 2011; Grossberg 2011 (*City of David Studies* 5–6);
+  - Weksler-Bdolah et al., HA-ESI 125, 126, 134.
+
+  Results: [registration/new_sources_2026-10-17_results.md](../../registration/new_sources_2026-10-17_results.md).
