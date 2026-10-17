@@ -16,7 +16,7 @@ This is a description of the evidence. It identifies nothing and excludes nothin
 | none | 46 |
 
 - **No candidate has every part at 2 or better.** No feature is rated 3 (all described elements present) and no date is rated 3 (the feature itself dated in the window). 15 candidates have a specific recorded feature (F 2).
-- **Place and feature are the commonest weak links**: P limits 62 rows and F 57 (alone or with others), against D 25 and R 24. 32 candidates rest on no place evidence at all, only entry order or landscape.
+- **Place and feature are the commonest weak links**: P limits 62 rows and F 57 (alone or with others), against D 25 and R 23. 32 candidates rest on no place evidence at all, only entry order or landscape.
 - **U:** 72 untested, 18 not unique (a documented rival meets the same tested subset), 1 conditionally excluded (Siloam, entry 49: the ledger's two L103 exclusions).
 - **Former "medium" ratings:** 14 are weak and 5 are none — 9 East Gate (F 0: no cistern within 18 m), 17 Buqeia (D 0), 18 ʿAṣla (F 0), 35 Mar Saba (F 0), 59 Kh. Ibziq (F 0: no conduit).
 - **Highest sums** (each still weak): 16 Hyrcania and 29 Jericho palaces (R1 P3 F2 D2: only the restored word is weak), 57 Gerizim (R3 P3 F1 D1), 58 Beth Shean (R3 P2 F1 D2).
@@ -24,6 +24,7 @@ This is a description of the evidence. It identifies nothing and excludes nothin
 ## Later changes
 
 - **16 October 2026** (Perlego reads, [findings log](../../logs/findings_log.md#16-october-2026--perlego-reads-folded-in-eleven-books)): D rises from 1 to 2 for 51 and 53 at the south wall and for 51 at the SE corner. *The Southern Wall* (Baruch & Reich 2023) records a stratified Herodian stratum in Areas A–B (Tables 4.1–4.2 pp. 68, 80). No label changes; D now limits 25 rows, not 26. Entry 1's F and D basis now records the Early Roman houses and stepped cistern in Wadi Nuʿeima (Taha 2020 pp. 277–278); its levels do not change. Each changed row has a `review` note.
+- **16 October 2026, later** (Lefkovits 2000 read from the owner's copy, [extraction](../../../registration/lefkovits2000_items3_5_7_extracted.md)): R rises from 2 to 3 for entry 3 (both candidates; all three editions read the court of the peristyle, the cistern and the upper entrance, p. 64) and from 1 to 2 for entry 5 (Puech and Lefkovits read samekh, the staircase; Milik dissents, pp. 90–93). Entry 7 keeps R 1; Lefkovits reads חמדה but calls every letter ambiguous (p. 110). No label changes; R now limits 23 rows, not 24. Entry 29's `decisive_next` now points to Plan 14, after Netzer 2001 pp. 74–84 were read ([extraction](../../../registration/netzer2001_pp74-84_extracted.md)).
 
 ## Files
 

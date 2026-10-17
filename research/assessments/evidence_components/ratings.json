@@ -356,15 +356,16 @@
    "פתח העליון"
   ],
   "R": {
-   "level": 2,
+   "level": 3,
    "limiting_word": "פרסטלון",
-   "basis": "Milik and Puech read the peristyle word, differing only in a mater (-lyn / -lwn), and both read a court and a great cistern. The files do not record Lefkovits's reading of I 7, so agreement of all three editions is unknown. The sense of סתום בחליא is unclear.",
+   "basis": "Milik, Puech and Lefkovits read the same letters for the court of the peristyle, the great cistern and the upper entrance; Puech and Lefkovits spell the loanword with -lwn, Milik with -lyn, a spelling variant. No plate check is against them. The sense of סתום בחליא (Lefkovits: 'concealed in the circular-wall') is unclear but is not an anchor word.",
    "sources": [
     "text/readings.json e3-court (line 421; Milik DJD pp. 272-274; Puech 2006 p. 175)",
     "text/readings.json e3-sediment (line 461)",
     "research/text/edition_confusions/variants.csv V0028-V0032 (I 7)",
     "tables/landmark_lexicon_index.csv lines 2 (bor), 46 (hatser), 47 (peristylon, high)",
-    "research/phases/phase1_summary.md line 147 (Lefkovits differs from Puech on 70 lines; I 6 only a notation artefact)"
+    "text/readings.json e3-court, e3-sediment (Lefkovits 2000 p. 64)",
+    "registration/lefkovits2000_items3_5_7_extracted.md"
    ]
   },
   "P": {
@@ -412,7 +413,8 @@
    "Leads report F12.5 proposes cistern No. 8 for entry 3 (possible/low); the atlas does not carry it."
   ],
   "review": [
-   "P 1→0: Review: the entry names no place here, so P is 0 under the rubric (a location taken from entry order alone counts as no place evidence)."
+   "P 1→0: Review: the entry names no place here, so P is 0 under the rubric (a location taken from entry order alone counts as no place evidence).",
+   "16 Oct 2026: R 2→3 after Lefkovits 2000 p. 64 was read (all three editions agree on the anchor words)"
   ]
  },
  {
@@ -428,15 +430,16 @@
    "פתח העליון"
   ],
   "R": {
-   "level": 2,
+   "level": 3,
    "limiting_word": "פרסטלון",
-   "basis": "Milik and Puech read the peristyle word, differing only in a mater (-lyn / -lwn), and both read a court and a great cistern. The files do not record Lefkovits's reading of I 7, so agreement of all three editions is unknown. The sense of סתום בחליא is unclear.",
+   "basis": "Milik, Puech and Lefkovits read the same letters for the court of the peristyle, the great cistern and the upper entrance; Puech and Lefkovits spell the loanword with -lwn, Milik with -lyn, a spelling variant. No plate check is against them. The sense of סתום בחליא (Lefkovits: 'concealed in the circular-wall') is unclear but is not an anchor word.",
    "sources": [
     "text/readings.json e3-court (line 421; Milik DJD pp. 272-274; Puech 2006 p. 175)",
     "text/readings.json e3-sediment (line 461)",
     "research/text/edition_confusions/variants.csv V0028-V0032 (I 7)",
     "tables/landmark_lexicon_index.csv lines 2 (bor), 46 (hatser), 47 (peristylon, high)",
-    "research/phases/phase1_summary.md line 147 (Lefkovits differs from Puech on 70 lines; I 6 only a notation artefact)"
+    "text/readings.json e3-court, e3-sediment (Lefkovits 2000 p. 64)",
+    "registration/lefkovits2000_items3_5_7_extracted.md"
    ]
   },
   "P": {
@@ -478,7 +481,8 @@
   "decisive_next": "A report of a colonnaded court with a cistern in the Nuweiʿimeh valley (none in the repo).",
   "flags": [],
   "review": [
-   "P 1→0: Review: the entry names no place here, so P is 0 under the rubric (a location taken from entry order alone counts as no place evidence)."
+   "P 1→0: Review: the entry names no place here, so P is 0 under the rubric (a location taken from entry order alone counts as no place evidence).",
+   "16 Oct 2026: R 2→3 after Lefkovits 2000 p. 64 was read (all three editions agree on the anchor words)"
   ]
  },
  {
@@ -566,13 +570,15 @@
    "מנס"
   ],
   "R": {
-   "level": 1,
+   "level": 2,
    "limiting_word": "המסבא / המעבא",
-   "basis": "Puech reads samekh, a spiral staircase ('assured' from new photographs); Milik reads ayin, a mine (1960) or foundry (1962). The letters and the kind of landmark differ between two editions; Lefkovits's reading of this word is not recorded. The pit word also varies (בשוא / בשיא).",
+   "basis": "Puech (samekh, 'assured' from new photographs) and Lefkovits (המסבא, 'staircase', p. 90) read a staircase; Milik reads ayin, a mine (1960) or foundry (1962). Lefkovits reports that Baker's drawing is ambiguous between ayin and samekh, Milik's has ayin and Allegro's samekh (p. 91). One edition dissents; no plate check covers the word. The pit word also varies (בשוא / בשיא).",
    "sources": [
     "text/readings.json e5-stair (line 722; Puech 2006 pp. 182-183, 2015 pp. 26, 36)",
     "research/text/edition_confusions/variants.csv V0070-V0081 (I 13)",
-    "tables/landmark_lexicon_index.csv lines 50 (mesibbah, medium), 81 (manos, low)"
+    "tables/landmark_lexicon_index.csv lines 50 (mesibbah, medium), 81 (manos, low)",
+    "text/readings.json e5-stair (Lefkovits 2000 pp. 90-93)",
+    "registration/lefkovits2000_items3_5_7_extracted.md"
    ]
   },
   "P": {
@@ -610,13 +616,15 @@
   "weakest": 1,
   "label": "weak",
   "limited_by": [
-   "R",
    "P",
    "F"
   ],
-  "decisive_next": "Lefkovits 2000's reading of the I 13 stair/foundry word, not recorded in readings.json; it would decide whether two of three editions read samekh.",
+  "decisive_next": "A recorded staircase (spiral or tower) with a pit or chamber at its head under the Temple Mount, with a date (Gibson and Jacobson 1996 is the record to check); P stays limited by the unplaced name Manos.",
   "flags": [
    "Atlas title 'The winding stair' follows Puech; the text and translation shown follow Milik's 'foundry' (noted in the caution)."
+  ],
+  "review": [
+   "16 Oct 2026: R 1→2 after Lefkovits 2000 pp. 90-93 was read (two of three editions read samekh)"
   ]
  },
  {
@@ -699,12 +707,14 @@
   "R": {
    "level": 1,
    "limiting_word": "המדח",
-   "basis": "The house word is read four ways: המדה (Puech, 'tribute'), המרה (Milik), המדח (Wolters; text shown, 'Washing(?)'), חמדה. The editions disagree on the letters. 'Cave' and רובד are not disputed.",
+   "basis": "The house word is read four ways: המדה (Puech, 'tribute'), המרה (Milik), המדח (Wolters; text shown, 'Washing(?)'), חמדה (Lefkovits, 'Old Beth Ḥemdah', p. 106). Lefkovits states that each of its four letters can be read two or three ways (p. 110). The editions disagree on the letters. 'Cave' and רובד are not disputed.",
    "sources": [
     "text/readings.json e7-house (line 909; Puech 2015 pp. 38, 40)",
     "text/readings.json e7-course (line 959)",
     "research/text/edition_confusions/variants.csv V0093-V0103 (II 3)",
-    "tables/landmark_lexicon_index.csv lines 41 (mearah, high), 48 (ravad, medium), 82 (bet_hamidda, low)"
+    "tables/landmark_lexicon_index.csv lines 41 (mearah, high), 48 (ravad, medium), 82 (bet_hamidda, low)",
+    "text/readings.json e7-house (Lefkovits 2000 pp. 106, 110)",
+    "registration/lefkovits2000_items3_5_7_extracted.md"
    ]
   },
   "P": {
@@ -745,9 +755,12 @@
    "P",
    "F"
   ],
-  "decisive_next": "Lefkovits's letters for the II 3 house word and a plate check of its fifth letter on Puech 2006 pl. CCCLXI (radiographs CCCXXXV-CCCXXXVI).",
+  "decisive_next": "A plate check of the house word's four letters on Puech 2006 pl. CCCLXI (radiographs CCCXXXV-CCCXXXVI); Lefkovits treats every letter as ambiguous (p. 110).",
   "flags": [
    "Atlas title 'House of Measures' takes המדה in the sense Puech rejects (2015 p. 40); noted in the caution."
+  ],
+  "review": [
+   "16 Oct 2026: R basis updated after Lefkovits 2000 pp. 106-110 was read (level kept)"
   ]
  },
  {
@@ -2677,12 +2690,13 @@
   "limited_by": [
    "R"
   ],
-  "decisive_next": "A preserved, phase-dated inlet or wall aperture on the northern early pool (Netzer 2001 final report pp. 74-84, plans 14, 17-21, still unread), which would fix the conduit link and datum. The reading limit (restored Jericho) cannot be raised from the archaeology.",
+  "decisive_next": "Plan 14 of Netzer 2001 (pocket sheet, not in the scan) or a section at the end of the northern supply channel: a preserved, phase-dated inlet or aperture on the northern early pool. Netzer 2001 pp. 74-84 (read) record the channel (Stage 4, replaced in Stage 6, preserved 'along almost their entire lengths') but no inlet at the pool wall. The reading limit (restored Jericho) cannot be raised from the archaeology.",
   "flags": [
    "Atlas evidence/period for entry 29 say 'no uniquely identified landmark' and 'Not established in the public archaeology index'; the repo holds two completed conditional assessments (A-E29-JERICHO, A-E29-HYRCANIA, both inconclusive) that the atlas text does not mention."
   ],
   "review": [
-   "P 1→3: Review: under the restored reading the name is located independently; the restoration itself is rated under R, as for Beth-Horon in entry 40. P is 3 for this district."
+   "P 1→3: Review: under the restored reading the name is located independently; the restoration itself is rated under R, as for Beth-Horon in entry 40. P is 3 for this district.",
+   "16 Oct 2026: decisive_next updated after Netzer 2001 pp. 74-84 was read (levels kept)"
   ]
  },
  {
