@@ -43,3 +43,11 @@ Titles and links only. Each may show the strip. Open one only through the protoc
 - Sketchfab "Tel Sultan Tower Jericho" (middleasset, CC BY): its extent was not checked.
 
 The atlas embeds none of these. Its Jericho-plain places (Tell es-Sultan, the Jericho oasis, ʿAin Duk, the palaces) have no curated video.
+
+## Saved to Drive, unopened (17 October, later)
+
+At the owner's request the downloadable items above were saved to Google Drive without being opened: **06 Imagery / SULTAN-1 reserved – do not open** (221 files, 1.34 GB). The downloads ran on the owner's Mac straight into that folder; no file passed through the cloud session and none was displayed.
+- Contents: the 8 exposed Commons files; 7 named reserved Commons files; every file in the Commons categories Aerial photographs of Jericho, Views from Tell es-Sultan, Views from Monastery of the Temptation, Monastery of the Temptation Téléphérique and each Tell es-Sultan subcategory (including Elisha Spring Fountain, which may show RP-SPRING); one Cypros file in a "Views of Jericho" category; the 10 Matson TIFF masters listed above.
+- Hashes and sources: [online_sources_2026-10-17_drive_manifest.csv](online_sources_2026-10-17_drive_manifest.csv) (group, title, source page, download URL, bytes, SHA-256, Commons SHA-1 check; all 211 Commons files matched). A README in the Drive folder repeats the rule.
+- The videos, web pages, the Survey of Israel Jericho sheet and the Sketchfab tower remain links only.
+- Before opening any of these files, follow sections 2 and 3 of the [registration protocol](registration_protocol.md). Saving the files changes no exposure state: the 8 stay exposed, the rest stay unexposed.

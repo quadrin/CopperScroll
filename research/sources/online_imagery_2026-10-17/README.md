@@ -69,6 +69,12 @@ Exploratory. Photographs and videos show what a place looks like and where a fea
 - Tyropoeon and el-Baqʿa: the Commons search was cut off by rate limits; the gallery has one historical photo for the Tyropoeon and none for el-Baqʿa.
 - Commons serves only standard thumbnail widths, so modern photos are 1920 px (or 1280/960 px) on the long side. Matson images were taken from the TIFF masters and reduced to 2000 px.
 
+## Copies in Google Drive
+
+- 06 Imagery / Atlas site photos 2026-10-17: the 160 archive JPEGs, the manifest and the README (SHA-256 checked against the repository copy).
+- 06 Imagery / SULTAN-1 reserved – do not open: 221 reserved files saved unopened ([record](../../assessments/kohlit_chain/online_sources_2026-10-17.md)).
+- The Drive index (`../drive_index.md`, `../drive_manifest.csv`) was rebuilt with `tools/drive_navtree.py` on the owner's Mac. It also picks up the 16 October reorganization of the IAA portal volumes, which the previous index did not show.
+
 ## Source leads found (not read)
 
 - *Kardom* (Ariel), "סיורים ב'כתף יריחו'", map of the Dok fortress (Kotar book 95087647): cisterns of about 1,800 m³, an aqueduct of about 1,000 m, a rock-cut moat to the west (entry 31). A trip summary gives the aqueduct as 500 m, citing Amit & Mashal.
