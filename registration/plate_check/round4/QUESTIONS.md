@@ -1,0 +1,8 @@
+# Stage 2 questions, round 4 (open only after writing your Stage 1 file)
+
+Answer only for your assigned items. Positions count words or letters from the right unless stated. "Cannot tell" is a valid answer; say what would be needed. Grade every letter, sign or count you give: certain, probable, possible, illegible. Answer for each image (A, B, C, D) separately where they differ.
+
+P41. Find a word near the left end of the marked line that begins with ה. (a) Is its second letter a כ (kaf: rounded at the lower right, no base stroke projecting to the right) or a ב (bet: a flat base stroke that projects beyond the right vertical)? Describe the base and the top. (b) Is its third letter ו or י? (c) Give its remaining letters. Is there a ז in it? What is its last visible letter, and does the word run to the edge?
+P56. At the end of the marked line, find a pair of letters like ככ, and the numeral signs after it. (a) Are there any signs other than vertical unit strokes? (b) Count the vertical unit strokes. Are they in one group or in groups (for example 3 + 4)? (c) Is there damage that could hide strokes, and where?
+P63. In the marked line, find a pair of letters like ככ, and the numeral signs after it. (a) Describe each sign in order: large hook-shaped or curled signs (how many, and are any doubled?), other signs, vertical unit strokes (how many, in what groups)? (b) Is there damage that could hide a stroke?
+P92. In the marked line, find a word beginning כ-פ (or similar), and the word after it. (a) Give each letter of the word after it. (b) Does it end in ין or ים, or does it end in ר or another letter? (c) How many letters does it have? (d) Are there numeral signs instead of, or as well as, a number word?
