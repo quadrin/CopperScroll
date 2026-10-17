@@ -36,6 +36,7 @@ All are **not identifiable from available evidence**; details in the history fil
 - University of Manchester Library (7 October; reply 12 October): TPA/1/132 has general material without cutting photos/research notes; archivist continues Allegro inquiry.
 - IAA Archive (7 October): cave records for the Qumran cliffs, Jericho escarpment and Wadi Qelt.
 - Bruce Zuckerman, USC (5 October): original WSRP Figure 4.6 composite and component map.
+- Bruce Zuckerman, USC (17 October, sent by the owner from his University of Michigan address): study access to full-resolution 1988 WSRP masters for I 12, II 3–4, III 1/8/11, V 1–9, VIII 14, IX 7/10, X 15–16, XI 8/9/12 and XII 10. Any XII 8–12 frame is a reserved item under the arrival procedure (no agent opens it).
 - Nahshon Szanton, Tel Aviv University (6 October): Siloam main-side L103 junction section.
 - Rachel Bar-Nathan and Roi Porat (6 October; Rachel reply 12 October): Rachel holds unorganized field notes and requests owner call; A(C)94 junction/level records not supplied, Roi reply pending.
 - Staff Officer for Archaeology archive (6 October): Wadi Nuʿeima inspection file from ESI 5 pp. 110–111.
