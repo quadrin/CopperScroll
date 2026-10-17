@@ -2,7 +2,7 @@
 
 Updated 17 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — desktop/phone browser checks of embodied first-person walking: the character stops at Qumran masonry, jumps and lands under gravity, crouches and sprints through keyboard/phone controls. Physics checks cover thin walls, ceilings, steps, steep slopes and the real Qumran model before/after terrain fitting. Actual Pages output (88.8 MiB) passes byte-for-byte app and startup-asset checks; [rendering/provenance record](assets/plans/atlas-explorer/manifest.json).
+Last session (16 October 2026 Los Angeles): **obtained** — desktop/phone browser checks of embodied first-person walking: the character stops at Qumran masonry, jumps and lands under gravity, crouches and sprints through keyboard/phone controls. Physics checks cover thin walls, ceilings, steps, steep slopes and the real Qumran model before/after terrain fitting. Actual Pages output (88.8 MiB) passes byte-for-byte app and startup-asset checks; [rendering/provenance record](assets/plans/atlas-explorer/manifest.json). Deployed 5c5994d; [Pages run 39001907509](https://github.com/quadrin/CopperScroll/actions/runs/39001907509) succeeded.
 
 ## Active questions and the observation that decides each
 
