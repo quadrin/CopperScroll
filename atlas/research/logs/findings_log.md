@@ -1545,3 +1545,15 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Headline unchanged:** main set, branch A, survey level k = 0, f = 20, m = 313 of 333. All six main-set entries record cisterns. Evidence (coder sheets); Inference: rarity is still not measurable.
 - **Pre-70 set:** f 31 → 32. S798 el-Qul'ah becomes a C2 FAIL on "Cisterns: none" (Site 280, p. 543). S144 and S780 do the same under the dated-only variant.
 - **Arrival scores:** pred1 confirm; pred2 confirm (every new FAIL rests on a site-record "Cisterns: none" with no search radius); pred3 contradict (0 main-set FAILs against an expected 1–3; calibration only). Unregistered: S103 C3s UNKNOWN → MATCH, with no count change.
+
+## 17 October 2026 — Amit 1989 (Doq) and Avigad 1962 (Kidron ossuary tomb)
+
+- **Entry 31, Doq: D 1 → 2.** [Extraction](../../registration/amit1989_doq_extracted.md).
+  - Amit, *The Aqueducts of Ancient Palestine* (1989), pp. 223–228, is the owner's Hebrew copy. A reader agent read it from the page images; I checked pp. 225 and 227 on the images.
+  - The aqueduct is dated Hasmonean by its plaster (Porat's typology). The nine cisterns are dated only as part of that system. The summit buildings are not dated. No coins or pottery are cited.
+  - Netzer's test excavation of December 1982 found rooms and a corridor on the fortress's north-east spur, "attributed to the Herodian period" (nn. 5, 8; no basis given). Amit sees no Herodian phase in the water system and judges that it stayed in use (p. 227). Evidence.
+  - Amit says the two small pools by the aqueduct served the nearby buildings and the "guard soldiers stationed in this sector" (p. 225). That is his reading of the pools, not a guard post at a corner. Inference: F stays 2.
+  - The label stays weak; R 1 is now the only limit.
+- **Avigad 1962, *IEJ* 12, pp. 1–12** (JSTOR viewer pages; [extraction](../../registration/avigad1962_kidron_ossuaries_extracted.md)).
+  - The intact Karm esh-Sheikh tomb, south of Silwan on the south-western slope of the Kidron: one chamber with a standing pit and three shelves, no kokhim, entrance in the north wall (Fig. 1). Its pottery is 1st c. CE, before 70. Nine of its eleven ossuaries are inscribed, among them "Alexander (son) of Simon". Evidence.
+  - Inference: it fills the unknown attributes of the tomb register's ASI 106/38 record. It fails all three parts of entry 56's triad (west-facing, several rooms, kokhim). No rating changes.

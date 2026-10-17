@@ -646,3 +646,9 @@ Downloaded with the owner's JSTOR login at the owner's request and placed in Dri
 Borrowed with the owner's Internet Archive account, at the owner's request. Text layers and page images are in the owner's Drive; none is in Git.
 
 - **Duprez 1970**, *Jésus et les dieux guérisseurs. À propos de Jean, V* (Cahiers de la Revue Biblique 12), Paris: Gabalda, https://archive.org/details/jesusetlesdieuxg0000vari. Pools pp. 33–38; pre-70 installation pp. 38–43, Pl. II, VIII–XI. Extraction: [registration/duprez1970_extracted.md](../../registration/duprez1970_extracted.md).
+- **Zertal 2004** (= Zertal 1992 in English), *The Manasseh Hill Country Survey*, Vol. 1, *The Shechem Syncline* (Leiden: Brill), https://archive.org/details/manassehhillcoun0001zert. OCR text layer for the 14 Stage 2 rarity units. Intake and results: [addendum_s2/vol1](../rarity/kohlit/stage2/addendum_s2/vol1/README.md).
+
+## Owner's copies and JSTOR viewer — 17 October 2026
+
+- **Amit 1989**, "The water system of the Doq (Dagon) fortress" (Hebrew), in D. Amit, Y. Hirschfeld and J. Patrich (eds.), *The Aqueducts of Ancient Palestine* (Jerusalem: Yad Izhak Ben-Zvi, 1989), pp. 223–228; owner's Drive copy, read 17 October 2026. Extraction: [registration/amit1989_doq_extracted.md](../../registration/amit1989_doq_extracted.md).
+- **Avigad 1962**, "A Depository of Inscribed Ossuaries in the Kidron Valley", *IEJ* 12.1, pp. 1–12, https://www.jstor.org/stable/27924877; JSTOR viewer pages in the owner's Drive. Extraction: [registration/avigad1962_kidron_ossuaries_extracted.md](../../registration/avigad1962_kidron_ossuaries_extracted.md).

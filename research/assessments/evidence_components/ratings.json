@@ -3162,21 +3162,22 @@
   },
   "F": {
    "level": 2,
-   "basis": "Under the guard-post reading, a Hasmonean fortress with its water system (weir, 500 m channel, nine cisterns) is reported on the summit. Its corners and an eastern corner are not documented, and Amit's Fig. 2 plan does not identify a guard post or drying room. Nothing like a drying place is reported.",
+   "basis": "Under the guard-post reading, a Hasmonean fortress with its water system (weir, 500 m channel, nine cisterns) is reported on the summit. Its corners and an eastern corner are not documented, and Amit's Fig. 2 plan does not identify a guard post or drying room. Nothing like a drying place is reported. Amit 1989 (p. 225) says the two small pools by the aqueduct served the nearby buildings and the 'guard soldiers stationed in this sector'. That is his reading of what the pools were for, not a recorded guard post at a corner, so F stays 2.",
    "sources": [
     "tables/phase5_assessments.csv line 13",
     "tables/phase5_reports.csv lines 68, 71, 262",
     "research/sites/dok_achor_feature_tests.md line 54 (Amit 1989 pp. 223-224, Fig. 2)",
-    "RUBRIC.md calibration 31"
+    "RUBRIC.md calibration 31",
+    "registration/amit1989_doq_extracted.md (p. 225)"
    ]
   },
   "D": {
-   "level": 1,
-   "basis": "The fortress is Hasmonean and apparently not rebuilt by Herod (Garbrecht & Peleg p. 164). First-century use of the summit is not shown. Caves on the mountain were used from the 1st c. BCE to the Revolt, but that dates the mountain, not the fortress.",
+   "level": 2,
+   "basis": "Amit 1989 reports Herodian-period remains on the fortress's own north-east spur: a complex of rooms and a corridor found in Netzer's test excavation of December 1982 (pp. 225, 227, nn. 5, 8). He also judges that the Hasmonean water system stayed in use, with no separate Herodian phase (p. 227). So the complex was occupied in the window. The Herodian attribution is second-hand and gives no basis (no pottery or coins), and the summit buildings themselves are not dated, so D stays below 3.",
    "sources": [
+    "registration/amit1989_doq_extracted.md (pp. 225, 227, nn. 5, 8)",
     "tables/phase5_reports.csv lines 262, 74 (Eisenberg p. 120)",
-    "research/measurements/cycle3/doq_anchor.md 'Phase and plan limits'",
-    "RUBRIC.md calibration 31"
+    "research/measurements/cycle3/doq_anchor.md 'Phase and plan limits'"
    ]
   },
   "U": {
@@ -3190,12 +3191,14 @@
   "weakest": 1,
   "label": "weak",
   "limited_by": [
-   "R",
-   "D"
+   "R"
   ],
-  "decisive_next": "A specialist review of the VII 11 crack on pls. CCCXLV/CCCLXXI: a narrow ר there would restore hmšmrh and raise R. For D, Amit 1989 pp. 225-228 (uninspected) for the phase of the summit buildings.",
+  "decisive_next": "A specialist review of the VII 11 crack on pls. CCCXLV/CCCLXXI: a narrow ר there would restore hmšmrh and raise R. For D 3, a dated phase of a specific summit or corner structure: Meshel 1978 (Jericho, pp. 35-57) or Netzer's 1982 excavation records.",
   "flags": [
    "Atlas period 'in use 1st c. BCE-70 CE (fortress reading)' contradicts its own caution and doq_anchor.md, which says the inspected evidence does not support that feature-phase claim and asked for the field to be corrected; phase5_archaeology_index.csv row 31 keeps the same period."
+  ],
+  "review": [
+   "17 Oct 2026: D 1→2 after Amit 1989 pp. 223-228 was read (Herodian rooms on the NE spur, Netzer 1982; continued use of the Hasmonean system). Calibration example 31 in RUBRIC.md records the 15 October value."
   ]
  },
  {
