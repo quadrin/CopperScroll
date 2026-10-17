@@ -640,3 +640,9 @@ Downloaded with the owner's JSTOR login at the owner's request and placed in Dri
 - **von Wahlde 2009**, *RB* 116.1, pp. 111–136, https://www.jstor.org/stable/44090924; **Masterman 1905**, *The Biblical World* 25.2, pp. 88–102, https://www.jstor.org/stable/3141150. Extraction: [registration/bethesda_jstor_2026-10-16_extracted.md](../../registration/bethesda_jstor_2026-10-16_extracted.md).
 - **Pixner 1983**, "Unravelling the Copper Scroll Code: A Study on the Topography of 3Q15", *RevQ* 11.3 (43), pp. 323–365, https://www.jstor.org/stable/24607018. First direct read; earlier Pixner citations came through Puech and Lefkovits. Extraction: [registration/pixner1983_extracted.md](../../registration/pixner1983_extracted.md).
 - **Not on JSTOR:** Gibson 2005, *Proche-Orient Chrétien* 55, pp. 270–293 (Bethesda); Reich and Shukron's Hebrew channel reports (*City of David Studies* 3, 2008; 6, 2010); Weksler-Bdolah 2013, *New Studies in the Archaeology of Jerusalem* 7, pp. 171–194 (Siloam dam).
+
+## Internet Archive loans — 17 October 2026
+
+Borrowed with the owner's Internet Archive account, at the owner's request. Text layers and page images are in the owner's Drive; none is in Git.
+
+- **Duprez 1970**, *Jésus et les dieux guérisseurs. À propos de Jean, V* (Cahiers de la Revue Biblique 12), Paris: Gabalda, https://archive.org/details/jesusetlesdieuxg0000vari. Pools pp. 33–38; pre-70 installation pp. 38–43, Pl. II, VIII–XI. Extraction: [registration/duprez1970_extracted.md](../../registration/duprez1970_extracted.md).

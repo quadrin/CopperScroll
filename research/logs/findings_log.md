@@ -1524,3 +1524,11 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **All nine: cannot decide.** No discriminating letter rose above "possible"; VIII 14 is unreadable on the photo. Evidence.
 - **Combined:** IX 10 still leans to מ and II 3's fourth letter to ה, each on one source only; III 1's gap shows no traces on both sources. Inference: no rating changes.
 - **Next:** the WSRP 1988 full-resolution masters (request to B. Zuckerman drafted, not sent).
+
+## 17 October 2026 — Duprez 1970 (Internet Archive loan): the Bethesda eastern baths
+
+[Extraction](../../registration/duprez1970_extracted.md). Borrowed from the Internet Archive with the owner's account; text layer and plates in Drive.
+
+- **Entry 56, Bethesda: a threshold, but not the cistern's.** Duprez (p. 41, page image): "entre cette grotte 6 et la grande citerne 1 quelques traces de construction notamment un seuil et quelques éléments du pied-droit de la porte (pl. IX, 1)", still in place, in a building "trop détruit[e]" to reconstruct. Cistern 1 is a natural grotto 8.50 m deep and 6 m across; its three side openings were blocked in the pre-70 period (p. 39). On Pl. II, grotto 5 has its steps on its west side (plan reading). Evidence. The pre-stated test (a cistern or chamber with a threshold, entered from the west) is not met. Inference: F stays 1; the record now rests on a first-hand report.
+- **Entry 55, Bethesda.** Both pools built "vraisemblablement ... au IIe siècle av. J.-C." (p. 37, page image; the text layer reads "1°"); made useless by Agrippa I's wall (p. 36). The southern pool's steps were not for descent (pp. 34–35), against von Wahlde's miqveh reading. Evidence. No level change.
+- **Next:** Pierre and Rousée, *POC* 31 (1981), for the threshold's orientation and whether it opened into cistern 1.

@@ -5723,11 +5723,12 @@
   },
   "D": {
    "level": 2,
-   "basis": "The complex's 1st-c. use rests on John 5:2 and on the editors' summaries of excavations not read in the repo. No stratified date for the smaller basin is recorded.",
+   "basis": "The complex's 1st-c. use rests on John 5:2, and now on a first-hand report: Duprez 1970 dates both pools to the 2nd c. BCE (p. 37, page image) and has them made useless when Agrippa I's wall stopped their winter filling (he died in 44 CE; p. 36). No stratified date for the smaller basin is recorded.",
    "sources": [
     "tables/phase5_assessments.csv line 30",
     "tables/phase5_reports.csv lines 197-198",
-    "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 pp. 120-123: northern pool fed until 41-44 CE; Gibson: both pools c. 25 BCE)"
+    "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 pp. 120-123: northern pool fed until 41-44 CE; Gibson: both pools c. 25 BCE)",
+    "registration/duprez1970_extracted.md (pp. 35-37)"
    ]
   },
   "U": {
@@ -5746,7 +5747,10 @@
   ],
   "decisive_next": "A legible original-photograph reading of the fifth letter of XI 12 (copy plate CCCLXXIX; radiographs CCCLIII-CCCLIV). A ת would restore Milik's name; a clear ח leaves Bethesda an emendation.",
   "flags": [
-   "F and D rest on editors' summaries; the St Anne's excavation reports (Vincent and Abel 1926; Jeremias 1949/1966) are not read in the repo (phase5_assessments line 30)."
+   "F rests on editors' summaries; Duprez 1970 (read 17 Oct 2026) reports the dam, the southern pool and its settling basin first-hand, but 'le bassin nord n'a pas fait l'objet de recherches nouvelles' (p. 35). Vincent and Abel 1926 and Jeremias 1949/1966 are not read."
+  ],
+  "review": [
+   "17 Oct 2026: D basis and flag updated from Duprez 1970; levels unchanged"
   ]
  },
  {
@@ -5785,17 +5789,19 @@
   },
   "F": {
    "level": 1,
-   "basis": "Only generic features of the kind are reported. Von Wahlde, summarising Duprez 1970 and Pierre and Rousée 1981, records pre-70 remains east of the twin pools 'situated around a central cistern', with 'six small grottoes with steps leading down into them' and more grottoes under St Anne's church (RB 116, 2009, p. 128). No threshold, chamber, burial niche or entrance from the west is described, so nothing matches the entry's relations.",
+   "basis": "Only generic features of the kind are reported. Duprez 1970 (first-hand, pp. 39-41, Pl. II) records the pre-70 installation east of the twin pools around a central cistern 1 (a natural grotto 8.50 m deep, 6 m across, its three side openings blocked in this period), with grottoes and small baths around it, and 'un seuil et quelques éléments du pied-droit de la porte' in place 'entre cette grotte 6 et la grande citerne 1' (p. 41, Pl. IX, 1), in a building whose plan cannot be reconstructed. He does not say the doorway led into the cistern, so the relation 'threshold of the cistern' (XII 2-3) is not recorded. Grotto 5, a small chamber of unknown use, has its steps on the west side on Pl. II (a plan reading; no threshold). No burial niche is recorded.",
    "sources": [
+    "registration/duprez1970_extracted.md (pp. 39-41, Pl. II, Pl. IX)",
     "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 p. 128)",
     "research/regional/tombs/README.md line 120 (56-M: 0 matches)"
    ]
   },
   "D": {
    "level": 2,
-   "basis": "F is 1, so D rates the site and cannot exceed 2. The pool complex is reported in use in the 1st c. (John 5:2, via editors), and the eastern cistern-and-grotto remains are dated by plaster, coins from Alexander Jannaeus to 68 CE, and 1st c. BCE-1st c. CE pottery (von Wahlde 2009 p. 128, after Duprez and Pierre/Rousée).",
+   "basis": "F is 1, so D rates the site and cannot exceed 2. The pre-70 installation is dated by its grey plaster, by coins from Alexander Jannaeus to 68 CE and by 1st c. BCE-1st c. CE pottery (Duprez 1970 pp. 39, 42; also von Wahlde 2009 p. 128). The threshold is dated only by its context.",
    "sources": [
     "tables/phase5_assessments.csv line 30",
+    "registration/duprez1970_extracted.md (pp. 39, 42)",
     "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 p. 128)"
    ]
   },
@@ -5811,12 +5817,13 @@
   "limited_by": [
    "P"
   ],
-  "decisive_next": "A plan of the eastern complex (Duprez 1970 pp. 38-54; Pierre and Rousée, POC 31, 1981, pp. 26-28) showing the central cistern and grottoes with their entrances: a cistern or chamber with a threshold (XII 2-3), entered from the west, would raise F. Von Wahlde 2009 (read) reports the cistern and grottoes but no threshold.",
+  "decisive_next": "Pierre and Rousée, POC 31 (1981), pp. 23-42, or the White Fathers' field records: the position and orientation of the threshold found between grotto 6 and cistern 1 (Duprez 1970 p. 41, Pl. IX, 1), and whether its doorway opened into cistern 1. A threshold of the cistern itself would raise F to 2.",
   "flags": [
    "Atlas period for 56 is 'not established', yet both candidates' sites carry window-period records elsewhere in the repo; the entry text is boilerplate."
   ],
   "review": [
-   "16 Oct 2026: F 0→1 after von Wahlde 2009 (JSTOR) was read"
+   "16 Oct 2026: F 0→1 after von Wahlde 2009 (JSTOR) was read",
+   "17 Oct 2026: Duprez 1970 read first-hand (IA loan); threshold near cistern 1 recorded, relation to the cistern not; F stays 1"
   ]
  },
  {
