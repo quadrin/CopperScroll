@@ -3,16 +3,23 @@
 import { useEffect, useRef, useState } from "react";
 import { Camera, ExternalLink, Eye, EyeOff, Minus, Move, Plus, RotateCcw } from "lucide-react";
 import sceneData from "./atlas-scenes.json";
+import galleryData from "./atlas-site-gallery.json";
 import type { Entry, Place } from "./atlas-types";
 
 type Highlight = {id:string;label:string;points:string;x:number;y:number;note:string;entryIds:string[]};
-type Scene = {placeId:string;src:string;sourceUrl:string;title:string;author:string;license:string;licenseUrl:string;width:number;height:number;alt:string;caption:string;highlights:Highlight[]};
-const scenes=sceneData as Scene[];
+type Scene = {placeId:string;src:string;sourceUrl:string;title:string;author:string;license:string;licenseUrl:string;width:number;height:number;alt:string;caption:string;highlights:Highlight[];credit?:string;date?:string;kind?:string;relevance?:string};
+type GalleryItem = {id:string;placeId:string;kind:string;web:string;webWidth:number;webHeight:number;title:string;author:string;credit:string;license:string;licenseUrl:string;sourceUrl:string;date:string;alt:string;caption:string;relevance:string};
+const annotated=sceneData as Scene[];
+const gallery=(galleryData as GalleryItem[]).map(g=>({placeId:g.placeId,src:`dossiers/site-photos/gallery/${g.web}`,sourceUrl:g.sourceUrl,title:g.title,author:g.author,credit:g.credit,license:g.license,licenseUrl:g.licenseUrl,width:g.webWidth,height:g.webHeight,alt:g.alt,caption:g.caption,highlights:[],date:g.date,kind:g.kind,relevance:g.relevance}) as Scene);
+const scenes=[...annotated,...gallery];
+const photographedPlaces=[...new Set(scenes.map(s=>s.placeId))];
 type Props={place:Place|null;entry:Entry;places:Place[];onPlace:(id:string)=>void};
 const clamp=(n:number,low:number,high:number)=>Math.min(high,Math.max(low,n));
 
 export default function GroundView({place,entry,places,onPlace}:Props){
-  const scene=scenes.find(s=>s.placeId===place?.id);
+  const placeScenes=scenes.filter(s=>s.placeId===place?.id);
+  const [photoIndex,setPhotoIndex]=useState(0);
+  const scene=placeScenes[photoIndex]??placeScenes[0];
   const base=import.meta.env?.BASE_URL??"/";
   const viewport=useRef<HTMLDivElement>(null);
   const [size,setSize]=useState({width:600,height:350});
@@ -36,6 +43,7 @@ export default function GroundView({place,entry,places,onPlace}:Props){
     const observer=new ResizeObserver(([r])=>setSize({width:r.contentRect.width,height:r.contentRect.height}));
     observer.observe(element);return()=>observer.disconnect();
   },[scene]);
+  function choosePhoto(index:number){setPhotoIndex(index);setZoom(1);setOffset({x:0,y:0});setActive(placeScenes[index]?.highlights[0]?.id??"");setImageState("loading")}
   function changeZoom(value:number){setZoom(clamp(value,minimumZoom,4));setOffset({x:panX,y:panY})}
   function reset(){setZoom(1);setOffset({x:0,y:0})}
   function selectFeature(h:Highlight){
@@ -43,7 +51,7 @@ export default function GroundView({place,entry,places,onPlace}:Props){
     setOffset({x:clamp((50-h.x)/100*imageWidth,-maxX,maxX),y:clamp((50-h.y)/100*imageHeight,-maxY,maxY)});
   }
   return <div className="ground-view">
-    <header className="ground-heading"><span className="small-caps">At ground level</span><h2>{place?.shortName??"Location unresolved"}</h2><p>{scene?"Pan & zoom a real photograph. Select a highlight to read the landscape.":"This candidate has no annotated photograph in the atlas yet."}</p></header>
+    <header className="ground-heading"><span className="small-caps">At ground level</span><h2>{place?.shortName??"Location unresolved"}</h2><p>{scene?(scene.highlights.length?"Pan & zoom a real photograph. Select a highlight to read the landscape.":"Pan & zoom a real photograph."):"This candidate has no photograph in the atlas yet."}</p></header>
     {scene?<>
       <div ref={viewport} className="photo-viewport" tabIndex={0} role="region" aria-label={`${scene.title}. Drag to pan; arrow keys to move; plus or minus to zoom.`}
         onPointerDown={event=>{if((event.target as Element).closest("button,[role=button]"))return;event.currentTarget.setPointerCapture(event.pointerId);drag.current={x:event.clientX,y:event.clientY,originX:panX,originY:panY};event.currentTarget.classList.add("dragging")}}
@@ -62,14 +70,17 @@ export default function GroundView({place,entry,places,onPlace}:Props){
         {imageState==="error"&&<div className="photo-status" role="status">The photograph could not load.<a href={scene.sourceUrl} target="_blank" rel="noreferrer">View it at the source <ExternalLink size={12}/></a></div>}
         <div className="photo-drag-hint"><Move size={13}/>Drag to look around · scroll to zoom</div>
       </div>
+      {placeScenes.length>1&&<div className="photo-gallery-strip" role="listbox" aria-label={`${placeScenes.length} photographs of this place`}>{placeScenes.map((s,index)=><button key={s.src} role="option" aria-selected={s===scene} aria-label={`${index+1}. ${s.title}${s.date?`, ${s.date}`:""}`} onClick={()=>choosePhoto(index)}><img src={/^https?:/.test(s.src)?s.src:`${base}${s.src}`} alt="" loading="lazy" draggable={false}/></button>)}</div>}
       <div className="ground-notes">
         <div className="scroll-comparison"><span className="small-caps">Entry {entry.id} · {entry.title}</span><p>{entry.description}</p></div>
         <div className="feature-tabs" aria-label="Photograph highlights">{scene.highlights.map((h,index)=><button key={h.id} aria-pressed={active===h.id} onClick={()=>selectFeature(h)}><span>{index+1}</span>{h.label}</button>)}</div>
         {feature&&<div className="feature-reading" aria-live="polite"><span className="small-caps">{feature.entryIds.includes(entry.id)?`Compare with entry ${entry.id}`:"Visible landscape context"}</span><p>{feature.note}</p></div>}
+        {!scene.highlights.length&&<h3 className="gallery-title">{scene.title}{scene.date&&<span>{scene.kind?`${scene.kind}, `:""}{scene.date}</span>}</h3>}
         <p className="scene-caption">{scene.caption}</p>
-        <div className="photo-credit">Photo: <a href={scene.sourceUrl} target="_blank" rel="noreferrer">{scene.author}</a> · <a href={scene.licenseUrl} target="_blank" rel="noreferrer">{scene.license}</a>. Atlas overlays added; framing changes as you pan.</div>
+        {scene.relevance&&<p className="scene-relevance">{scene.relevance}</p>}
+        <div className="photo-credit">{scene.credit?<>Photo: <a href={scene.sourceUrl} target="_blank" rel="noreferrer">{scene.credit}</a> · <a href={scene.licenseUrl} target="_blank" rel="noreferrer">{scene.license}</a>. Shown resized; framing changes as you pan.</>:<>Photo: <a href={scene.sourceUrl} target="_blank" rel="noreferrer">{scene.author}</a> · <a href={scene.licenseUrl} target="_blank" rel="noreferrer">{scene.license}</a>. Atlas overlays added; framing changes as you pan.</>}</div>
       </div>
-    </>:<div className="ground-empty"><Camera size={34} strokeWidth={1}/><h3>Explore another viewpoint</h3><p>{place?.lat==null?"This proposal has no defensible coordinate for a Street View search.":"Try nearby Google Street View imagery, or open one of the photographed candidates below. Coverage may be absent or some distance from the site."}</p><div className="scene-shortcuts">{scenes.map(s=><button key={s.placeId} onClick={()=>onPlace(s.placeId)}><Camera size={14}/>{places.find(p=>p.id===s.placeId)?.shortName}</button>)}</div></div>}
+    </>:<div className="ground-empty"><Camera size={34} strokeWidth={1}/><h3>Explore another viewpoint</h3><p>{place?.lat==null?"This proposal has no defensible coordinate for a Street View search.":"Try nearby Google Street View imagery, or open one of the photographed candidates below. Coverage may be absent or some distance from the site."}</p><div className="scene-shortcuts">{photographedPlaces.filter(id=>places.some(p=>p.id===id)).map(id=><button key={id} onClick={()=>onPlace(id)}><Camera size={14}/>{places.find(p=>p.id===id)?.shortName}</button>)}</div></div>}
     {streetUrl&&<div className="street-view-link"><a href={streetUrl} target="_blank" rel="noreferrer">Open nearby Google Street View <ExternalLink size={13}/></a><span>Opens separately; imagery coverage varies. Atlas highlights stay in this view.</span></div>}
   </div>;
 }
