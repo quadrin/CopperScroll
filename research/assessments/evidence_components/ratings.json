@@ -5013,10 +5013,13 @@
    "R",
    "F"
   ],
-  "decisive_next": "A surveyed, phase-dated trough or conduit junction at the Siloam pools that is not L103 (for example L103's main-basin junction, asked of N. Szanton on 6 Oct 2026). It would raise F; the reading weakness (supplied של) needs Milik DJD III p. 295 and Lefkovits pp. 352-357 checked against a native-quality image of X 15.",
+  "decisive_next": "A surveyed, phase-dated trough or conduit junction at the Siloam pools that is not L103 (for example L103's main-basin junction, asked of N. Szanton on 6 Oct 2026). Two junctions are now named but unsurveyed: the sluice branch near the dam (Reich and Shukron 2011 p. 247) and the esplanade branch where the outlet line splits south and east to feed the stone-lined pool at its eastern edge (Reich, Shukron and Lernau, IEJ 57, 2007, p. 166). Either, surveyed and phase-dated, would raise F; the reading weakness (supplied של) needs Milik DJD III p. 295 and Lefkovits pp. 352-357 checked against a native-quality image of X 15.",
   "flags": [
    "Atlas caution and period ('in use 1st c. BCE-70 CE') omit the two ledger conditional exclusions for entry 49 (X-L103-*) and the 69/70 CE terminus for the small-pool floor (cycle 10).",
    "Atlas confidence 'medium' is the entry label inherited by the preferred candidate; the repo itself rates the reading 'conditional' and the trough unestablished (feature_constraints line 19)."
+  ],
+  "review": [
+   "16 Oct 2026: decisive_next updated after the JSTOR Siloam reads (levels kept)"
   ]
  },
  {
@@ -5103,12 +5106,13 @@
   "R": {
    "level": 2,
    "limiting_word": "האסטאן (stoa or ossuary)",
-   "basis": "The letters are agreed. Milik and Puech read 'stoa'; Lefkovits reads 'ossuary' (p. 366), which removes the outside landmark. Zadok, exedra and pillar are read by all; Pixner's 'the Just' needs an emendation. No plate check of XI 2-3.",
+   "basis": "The letters are agreed. Milik and Puech read 'stoa'; Lefkovits reads 'ossuary' (p. 366), which removes the outside landmark. Zadok, exedra and pillar are read by all; Pixner 1983 reads bqbr ṣdwq, 'the tomb of Zadok', without emendation (p. 355); his link to James 'the Just' is a question, not a reading. No plate check of XI 2-3.",
    "sources": [
     "text/readings.json e51-stoa, e51-zadok-tomb",
     "tables/phase5_assessments.csv line 28 (landmark_disputed)",
     "tables/landmark_lexicon_index.csv lines 68-69 (stoa medium; exedra high)",
-    "tables/plate_check.csv (no row for XI 2-4)"
+    "tables/plate_check.csv (no row for XI 2-4)",
+    "registration/pixner1983_extracted.md (p. 355)"
    ]
   },
   "P": {
@@ -5156,7 +5160,8 @@
    "Atlas evidence text 'Partly (period rock-cut tombs in the kidron).' is copied raw from the phase-5 index field."
   ],
   "review": [
-   "16 Oct 2026: D 1→2 after Perlego read"
+   "16 Oct 2026: D 1→2 after Perlego read",
+   "16 Oct 2026: Pixner attribution corrected after the direct read (level kept)"
   ]
  },
  {
@@ -5175,12 +5180,13 @@
   "R": {
    "level": 2,
    "limiting_word": "האסטאן (stoa or ossuary)",
-   "basis": "The letters are agreed. Milik and Puech read 'stoa'; Lefkovits reads 'ossuary' (p. 366), which removes the outside landmark. Zadok, exedra and pillar are read by all; Pixner's 'the Just' needs an emendation. No plate check of XI 2-3.",
+   "basis": "The letters are agreed. Milik and Puech read 'stoa'; Lefkovits reads 'ossuary' (p. 366), which removes the outside landmark. Zadok, exedra and pillar are read by all; Pixner 1983 reads bqbr ṣdwq, 'the tomb of Zadok', without emendation (p. 355); his link to James 'the Just' is a question, not a reading. No plate check of XI 2-3.",
    "sources": [
     "text/readings.json e51-stoa, e51-zadok-tomb",
     "tables/phase5_assessments.csv line 28 (landmark_disputed)",
     "tables/landmark_lexicon_index.csv lines 68-69 (stoa medium; exedra high)",
-    "tables/plate_check.csv (no row for XI 2-4)"
+    "tables/plate_check.csv (no row for XI 2-4)",
+    "registration/pixner1983_extracted.md (p. 355)"
    ]
   },
   "P": {
@@ -5226,6 +5232,9 @@
   "decisive_next": "A transcription of the Bene Ḥezir façade inscription's personal names from Avigad's original edition (KZ p. 144 Fig. 131 is not legible enough). A Zadok would raise F and P; their absence would leave the name clause unmet.",
   "flags": [
    "The candidate with the only observed pillared-porch tomb (Bene Ḥezir) is rated lower than the west-bank corner, where no tomb is reported."
+  ],
+  "review": [
+   "16 Oct 2026: Pixner attribution corrected after the direct read (level kept)"
   ]
  },
  {
@@ -5244,12 +5253,13 @@
   "R": {
    "level": 2,
    "limiting_word": "האסטאן (stoa or ossuary)",
-   "basis": "The letters are agreed. Milik and Puech read 'stoa'; Lefkovits reads 'ossuary' (p. 366), which removes the outside landmark. Zadok, exedra and pillar are read by all; Pixner's 'the Just' needs an emendation. No plate check of XI 2-3.",
+   "basis": "The letters are agreed. Milik and Puech read 'stoa'; Lefkovits reads 'ossuary' (p. 366), which removes the outside landmark. Zadok, exedra and pillar are read by all; Pixner 1983 reads bqbr ṣdwq, 'the tomb of Zadok', without emendation (p. 355); his link to James 'the Just' is a question, not a reading. No plate check of XI 2-3.",
    "sources": [
     "text/readings.json e51-stoa, e51-zadok-tomb",
     "tables/phase5_assessments.csv line 28 (landmark_disputed)",
     "tables/landmark_lexicon_index.csv lines 68-69 (stoa medium; exedra high)",
-    "tables/plate_check.csv (no row for XI 2-4)"
+    "tables/plate_check.csv (no row for XI 2-4)",
+    "registration/pixner1983_extracted.md (p. 355)"
    ]
   },
   "P": {
@@ -5295,7 +5305,8 @@
    "The files read name no proposer or basis for the south-wall candidate (phase3_places line 5 lists it only as 51(low) 53(low))."
   ],
   "review": [
-   "16 Oct 2026: D 1→2 after Perlego read"
+   "16 Oct 2026: D 1→2 after Perlego read",
+   "16 Oct 2026: Pixner attribution corrected after the direct read (level kept)"
   ]
  },
  {
@@ -5661,7 +5672,8 @@
    "basis": "The complex's 1st-c. use rests on John 5:2 and on the editors' summaries of excavations not read in the repo. No stratified date for the smaller basin is recorded.",
    "sources": [
     "tables/phase5_assessments.csv line 30",
-    "tables/phase5_reports.csv lines 197-198"
+    "tables/phase5_reports.csv lines 197-198",
+    "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 pp. 120-123: northern pool fed until 41-44 CE; Gibson: both pools c. 25 BCE)"
    ]
   },
   "U": {
@@ -5718,18 +5730,19 @@
    ]
   },
   "F": {
-   "level": 0,
-   "basis": "No burial chamber, cave, platform or cistern tied to this entry is reported at the Bethesda pools.",
+   "level": 1,
+   "basis": "Only generic features of the kind are reported. Von Wahlde, summarising Duprez 1970 and Pierre and Rousée 1981, records pre-70 remains east of the twin pools 'situated around a central cistern', with 'six small grottoes with steps leading down into them' and more grottoes under St Anne's church (RB 116, 2009, p. 128). No threshold, chamber, burial niche or entrance from the west is described, so nothing matches the entry's relations.",
    "sources": [
-    "atlas/app/atlas-data.json entry 56 (landmark '', evidence boilerplate)",
+    "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 p. 128)",
     "research/regional/tombs/README.md line 120 (56-M: 0 matches)"
    ]
   },
   "D": {
    "level": 2,
-   "basis": "F is 0, so D rates the site and cannot exceed 2. The pool complex is reported in use in the 1st c. (John 5:2, via editors).",
+   "basis": "F is 1, so D rates the site and cannot exceed 2. The pool complex is reported in use in the 1st c. (John 5:2, via editors), and the eastern cistern-and-grotto remains are dated by plaster, coins from Alexander Jannaeus to 68 CE, and 1st c. BCE-1st c. CE pottery (von Wahlde 2009 p. 128, after Duprez and Pierre/Rousée).",
    "sources": [
-    "tables/phase5_assessments.csv line 30"
+    "tables/phase5_assessments.csv line 30",
+    "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 p. 128)"
    ]
   },
   "U": {
@@ -5742,12 +5755,14 @@
   "weakest": 0,
   "label": "none",
   "limited_by": [
-   "P",
-   "F"
+   "P"
   ],
-  "decisive_next": "A recorded cistern or chamber with a threshold (XII 2-3) inside the St Anne's complex. Without one, nothing ties the entry to Bethesda beyond adjacency in the list.",
+  "decisive_next": "A plan of the eastern complex (Duprez 1970 pp. 38-54; Pierre and Rousée, POC 31, 1981, pp. 26-28) showing the central cistern and grottoes with their entrances: a cistern or chamber with a threshold (XII 2-3), entered from the west, would raise F. Von Wahlde 2009 (read) reports the cistern and grottoes but no threshold.",
   "flags": [
    "Atlas period for 56 is 'not established', yet both candidates' sites carry window-period records elsewhere in the repo; the entry text is boilerplate."
+  ],
+  "review": [
+   "16 Oct 2026: F 0→1 after von Wahlde 2009 (JSTOR) was read"
   ]
  },
  {
@@ -5878,10 +5893,11 @@
    "F",
    "D"
   ],
-  "decisive_next": "A section or dated deposit of the Tell er-Ras fosse that Bull proposed as the scroll's upper pit, or of the 2 m path that starts at it (Bull 1965 p. 236, 1968 p. 59, AJA 1967 pp. 390-391, all read: the fosse is undated and no step is recorded at it); for the summit candidate, JSP 8/20 locus records for P5178 would bear on D.",
+  "decisive_next": "A section or dated deposit of the Tell er-Ras fosse that Bull proposed as the scroll's upper pit, or of the 2 m path that starts at it (Bull 1965 p. 236, 1968 p. 59, AJA 1967 pp. 390-391, and BASOR 190 pp. 4-19, all read: the fosse is undated and no step is recorded at it); for the summit candidate, JSP 8/20 locus records for P5178 would bear on D.",
   "flags": [],
   "review": [
-   "16 Oct 2026: decisive_next updated after Bull and Wright 1965, Bull 1967 and Bull 1968 were read (levels kept)"
+   "16 Oct 2026: decisive_next updated after Bull and Wright 1965, Bull 1967 and Bull 1968 were read (levels kept)",
+   "16 Oct 2026: BASOR 190 read (levels kept)"
   ]
  },
  {
