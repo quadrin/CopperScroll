@@ -257,15 +257,15 @@
   "unified_map": {
     "renderer": "MapLibre shared geographic WebGL canvas with a Three.js custom layer. Source-based 3D appears on close zoom; eye-level inspection uses the same camera and canvas.",
     "code": {
-      "atlas/app/atlas-map-site-layer.ts": "9e1368008d5a84861aced81e8aa3ae2d41be16f94b5579def630d8e33a4782e3",
-      "atlas/app/atlas-map-walk.ts": "163e82f88e905caef878adbba6d038185d99add306120baba0ce144b1b0adf3a",
+      "atlas/app/atlas-map-site-layer.ts": "d7f6f9d680a9826f42a12aa3a4244cd68c1c21d704c4da2b9ae701bec1d163ba",
+      "atlas/app/atlas-map-walk.ts": "e6af61bc0914cb581b5eb4c5f96db33e119d859dd0ebeb810b779f7a8f9b5468",
       "atlas/app/atlas-map-references.tsx": "a649378703d18cc097813b50017defe299dccc5d81d4a662b5f63ab7dd07c847",
       "atlas/app/atlas-site-materials.ts": "8c4189c29d695298cc58033fabed1b4a4e5a0cda3c24b75dc327906a9834a6f9",
       "atlas/app/atlas-site-sky.ts": "c94c4c4272c224728ae7c65f337a91f89baf3585c36cc40aa9da97177533465d",
       "atlas/app/atlas-model-geometry.ts": "726d672c37305e5376b0b84c23b5504ca4ac446ac5f8641f7228bcea83d5f5db",
       "atlas/app/atlas-model-landscape.ts": "434f76c448f212b32e0efd315eb957f28d51ed192059e559be92b6d7882e3771",
       "atlas/app/atlas-qumran-pilot.ts": "6e9c24e0dcf01d1cdb76dbc05a08cc9e04e332c1c0194a7c728506c7ed4e4125",
-      "atlas/app/atlas-map.tsx": "373912e4bf1b10f249a3238b89fdf39810254ecbff150ab1ec54167a758912ca",
+      "atlas/app/atlas-map.tsx": "ddbf8cc7c192e8fd9655572245e1806a242ab2c07df312893067935e80a18394",
       "atlas/app/atlas-map-unified.css": "fa3a05c79e8f3acef53bc221e64f420efb972b42d9ec941cdc37b8fbf3e761a4",
       "atlas/app/atlas-site-reference.tsx": "109423f2e1d8919a36e7e945b5d7eeafb476bad7bbd827428aeccd85f4265023",
       "atlas/app/atlas-site-reference.css": "a89d3f2e01a12b32fa4b29ef4960ae1af8ba3cc3b9e59e7d82b625e997f29a81",
@@ -280,12 +280,13 @@
       "atlas/pages/index.html": "68d7c11b0dbbfe123534086fa69c1bfc0132225aa69917b47fd499a0da52c96b",
       "atlas/app/globals.css": "c7860bccc6ab77dbc22b5050e3012bdedec7cdac0f1ef113eebb45217ba33097",
       "atlas/scripts/check-pages-build.sh": "9b328fdfe055c5ba4d88657c0a3fba458ab35f2d44c97ad3fd7d4bffc3f84151",
-      "atlas/scripts/check-map-browser.mjs": "be4701b361a444b0b10e0a4bb2268e9c4d568b067bb29f3fefb5b1d3ec25edeb",
+      "atlas/scripts/check-map-browser.mjs": "60a5f15776fdceea1307b30c2a4612d0fcc0cd81586917eb67e34e27fcf397cc",
       "atlas/scripts/check-qumran-pilot.mjs": "fed9fdbf015936a2225a614b0bbbe1ba741ba262805035b44d26e2063aa5bd70",
       "atlas/app/atlas-walk-physics.ts": "e166accd6b2975e0075b5ca8511ebf68b01290c0b7a0743bbdd55ea0beb1d562",
       "atlas/app/atlas-walk-avatar.ts": "03f60a6cdb3d087d153ef53edba4224259f408a49502ff5135a6466ca9cd5ae2",
       "atlas/scripts/check-walk-physics.mjs": "5a3c17e77ddb52eeadc1ea7b694e73405bf4b08cb30f79d7d99b6edce2012d3b",
-      "atlas/README.md": "926384eb2901204b1479648d3bc448f1e2a3afaf3a2d95e4733d4ad6241d34b8"
+      "atlas/README.md": "891efca65bfa959f7c0c89396024feceea29aeec12034e875a0d9c507725f074",
+      "atlas/scripts/check-walk-camera-browser.mjs": "42d6af1deba6d37dff0702e2212875c4f2d925ce22824bd0d60200c6a6116f5c"
     },
     "placement": "Existing site anchors only. Architectural bearing, local origin, relative display scale and alignment remain illustrative; this interface does not register the source plans to the earth.",
     "qumran": "Detailed aqueduct segment reuses the existing Ilan–Amit 1989 p. 283 Fig. 1 relationships and existing Davey CJD979 comparison. Rock faces, masonry weathering, cross-sections and heights are illustrative; the whole settlement is not reconstructed.",
@@ -337,6 +338,13 @@
       "measurement_scope": "Level synthetic ground after acceleration, using foot-position distance. Jump contact is interpolated by collision substeps and lands during the twelfth 20 Hz tick. These engine measurements are not archaeological measurements or hardware frame-rate benchmarks.",
       "validation": "Numerical speed/diagonal-speed, jump apex/flight/range, repeated held jumps, retained air momentum, stopping distance, half-metre slabs, sneaking at ledges, long-fall landing, ceilings, thin/rotated walls, climbable/steep slopes and Qumran before/after terrain fitting pass. Simulated 30, 60 and 144 Hz rendering preserves walking distance and jump height. Final desktop normal-motion and phone reduced-motion Chromium checks on actual Pages output (105.2 MiB) pass, including a held keyboard/pointer jump through landing and a second takeoff, sustained masonry collision, sprint FOV transition and restoration, crouch, blur and map return.",
       "deployment": "75be16d deployed successfully in GitHub Pages run https://github.com/quadrin/CopperScroll/actions/runs/39004914643 (build 52s, deploy 11s, total 1m 12s); github-pages artifact 37.1 MB, sha256:604eaf8a83c301bef5939f8337f7bcb0350171e8790e2dae5b457ea689a8529b."
+    },
+    "walking_camera": {
+      "updated": "2026-10-17",
+      "reproduction": "At the existing Qumran anchor with the archived Mapterhorn terrain fixture, replacing MapLibre’s camera terrain sample with its missing-coverage value (zero) changes the camera from approximately -269 m altitude and 86 degrees pitch to sea level and 4.22 degrees pitch. The physical character remains on ground and crouching; its HUD/view model therefore hide the camera displacement. This reproduces the reported tiny-site overhead view.",
+      "fix": "The physical walking controller supplies the final camera transform using MapLibre’s public transformCameraUpdate hook, after the independent map terrain safety correction. Capsule collision against displayed terrain/architecture remains responsible for walking clearance. The hook is removed on exit. Camera framing also follows viewport and delayed model-base elevation changes. Walking does not overwrite the saved overhead map view.",
+      "regression": "check-walk-camera-browser.mjs runs the actual controller and MapLibre camera with a controlled -183 m DEM. The old controller fails when the DEM camera sample becomes zero; the fixed controller passes on desktop and phone through crouch, sprint/FOV, jumping, looking, delayed elevation, resize, competing map commands and exit. Actual rendered-frame projection matrices must place the camera within 6 cm of the physical eye, including up to 2.5 cm head bob. check-map-browser.mjs also checks terrain walking and rendered camera alignment during the existing full-app movement checks.",
+      "validation": "TypeScript, production build and numerical/collision movement checks pass. The previous controller fails the missing-DEM rendered-eye assertion; the fixed controller passes the isolated real-MapLibre camera regression on desktop and phone. Final desktop normal-motion and phone reduced-motion checks against actual actions/jekyll-build-pages output (114.4 MiB) pass: terrain walking/crouch, sustained masonry collision, tap/held jumps, sprint/FOV, looking, inline references, site switching and provider failures. Sampled world-frame projection matrices keep the rendered eye within 6 cm of the physical character. All app files retain their bytes through Jekyll and startup assets resolve. The recorded Mapterhorn/Qumran reproduction was visually checked after the fix; the character remains at eye level during the forced missing sample. These are controlled software-rendered Chromium checks, not a hardware performance benchmark."
     }
   }
 }

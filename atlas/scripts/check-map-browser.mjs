@@ -40,6 +40,16 @@ try {
   await page.getByRole('tab',{name:'Terrain',exact:true}).click();
   await page.waitForFunction(()=>{const d=document.querySelector('.maplibregl-canvas')?.dataset,a=d?.siteAnchor?.split(',').map(Number);return Number(d?.siteElevation)<-100&&a&&Math.abs(a[0])<.95&&Math.abs(a[1])<.95&&a[2]<1;},{},{timeout:45000});
   await page.screenshot({path:`/tmp/copperscroll-terrain-overview-${mobile?'phone':'desktop'}.png`});
+  // Exercise walking while terrain is still enabled, not just the overview.
+  await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkCameraError!==undefined);
+  if(mobile)await page.getByRole('button',{name:'Crouch',exact:true}).click();else{await page.locator('.maplibregl-canvas').focus();await page.keyboard.down('Shift');}
+  await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkCrouch==='true');
+  await page.waitForFunction(()=>{const d=document.querySelector('.maplibregl-canvas')?.dataset;return Math.abs(Number(d?.walkCameraPosition?.split(',')[1])-Number(d?.walkPosition?.split(',')[1]))<.06;});
+  assert(Number(await page.locator('.maplibregl-canvas').getAttribute('data-walk-camera-error'))<.06,'Terrain walking must render at the physical eye, including crouch');
+  await page.screenshot({path:`/tmp/copperscroll-terrain-walking-${mobile?'phone':'desktop'}.png`});
+  if(!mobile)await page.keyboard.up('Shift');
+  await page.getByRole('button',{name:'Back to map',exact:true}).click();
   await page.getByRole('tab',{name:'Map',exact:true}).click();
   await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.siteElevation)===0);
   await page.getByRole('button',{name:'Plan & details',exact:true}).click();
@@ -63,6 +73,7 @@ try {
   await page.locator('.map-site-caption').getByRole('button',{name:'Sources & assumptions',exact:true}).click();await page.getByRole('complementary',{name:'Site reference panel'}).waitFor();await sameCanvas();
   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition);
+  await page.evaluate(()=>{window.atlasCameraErrors=[];const probe=()=>{const d=document.querySelector('.maplibregl-canvas')?.dataset;if(d?.walkCameraError!==undefined)window.atlasCameraErrors.push(Number(d.walkCameraError));if(d?.walkPosition)requestAnimationFrame(probe);};requestAnimationFrame(probe);});
   assert.equal(await panel.isVisible(),false,'Walking remains accessible with a reference panel open and closes it');
   const before=await page.locator('.maplibregl-canvas').getAttribute('data-walk-position');
   if(mobile){const forward=page.getByRole('button',{name:'Forward',exact:true});const r=await forward.boundingBox();await page.mouse.move(r.x+r.width/2,r.y+r.height/2);await page.mouse.down();try{await page.waitForFunction(before=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition!==before,before,{timeout:10000});}finally{await page.mouse.up();}}
@@ -121,6 +132,8 @@ try {
   await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkPitch)>90);
   await page.getByRole('button',{name:'Back to map',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='false');
+  const cameraErrors=await page.evaluate(()=>window.atlasCameraErrors);
+  assert(cameraErrors.length>5&&cameraErrors.every(error=>Number.isFinite(error)&&error<.06),'Every sampled walking frame must keep the rendered camera within 6 cm of the character eye');
   if(!mobile){
    const person=await page.getByRole('button',{name:'Walk around this site',exact:true}).boundingBox(),map=await page.locator('.map-canvas').boundingBox();
    await page.mouse.move(person.x+person.width/2,person.y+person.height/2);await page.mouse.down();await page.mouse.move(map.x+map.width/2,map.y+map.height/2,{steps:12});await page.mouse.up();

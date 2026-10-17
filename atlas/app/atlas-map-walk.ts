@@ -15,15 +15,22 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
   const entrance=site.model.markers.get('D')??site.model.markers.get('north-mouth');return [entrance?.x??0,entrance?entrance.z+10:site.span*.35];
  }
  const at=initial(),body=new WalkCharacter(()=>site.collisionWorld(),new Vector3(at[0],0,at[1]));
+ let walkingView:{center:LngLat;zoom:number;pitch:number;bearing:number;elevation:number}|undefined,lastBase=NaN;
  // Only enter the walking state after a full body fits on modeled ground.
  canvas.dataset.walkPosition=body.eye.toArray().join(',');
  const regionalLayers=map.getStyle().layers.filter(layer=>'source' in layer).map(layer=>({id:layer.id,visibility:map.getLayoutProperty(layer.id,'visibility')??'visible'}));
  for(const layer of regionalLayers)map.setLayoutProperty(layer.id,'visibility','none');
  const handlers=[map.dragPan,map.dragRotate,map.scrollZoom,map.doubleClickZoom,map.touchZoomRotate,map.keyboard],enabled=handlers.map(h=>h.isEnabled());handlers.forEach(h=>h.disable());
  map.stop();map.setMaxZoom(25);map.setMaxPitch(145);map.setCenterClampedToGround(false);map.setVerticalFieldOfView(viewFov);
+ // MapLibre's terrain safety correction also runs with center clamping off.
+ // A missing DEM sample is zero: below-sea-level sites can jump hundreds of
+ // metres upwards. The physical character already resolves ground/ceilings;
+ // its camera must be the final authority after that map correction.
+ map.setTransformCameraUpdate(()=>walkingView??{});
  function apply(force=false){
   const eye=body.eye,foot=body.feet,from=site.location(eye.x,eye.z),angle=bearing*Math.PI/180,ahead=site.location(eye.x+Math.sin(angle)*20,eye.z-Math.cos(angle)*20),headBob=Math.sin(phase*2)*.025*bobWeight*(body.crouched?.3:1),altitude=site.baseElevation()+.2+eye.y+headBob;
   const options=map.calculateCameraOptionsFromTo(new LngLat(...from),altitude,new LngLat(...ahead),altitude-Math.tan((90-pitch)*Math.PI/180)*20);
+  lastBase=site.baseElevation();walkingView={center:LngLat.convert(options.center!),zoom:options.zoom!,pitch:options.pitch!,bearing:options.bearing!,elevation:options.elevation!};
   canvas.dataset.walkPosition=eye.toArray().map(n=>n.toFixed(3)).join(',');canvas.dataset.walkFeet=foot.toArray().map(n=>n.toFixed(3)).join(',');
   canvas.dataset.walkGrounded=String(body.grounded);canvas.dataset.walkSprint=String(body.sprinting);canvas.dataset.walkCrouch=String(body.crouched);canvas.dataset.walkBlocked=String(body.blocked);canvas.dataset.walkBlockedFrames=String(blockedFrames);canvas.dataset.walkSpeed=Math.hypot(body.velocity.x,body.velocity.z).toFixed(3);canvas.dataset.walkTriangles=String(site.collisionWorld().triangles);
   map.jumpTo({...options,padding:{top:0,bottom:0,left:0,right:0}});canvas.dataset.walkPitch=map.getPitch().toFixed(2);canvas.dataset.walkFov=viewFov.toFixed(2);
@@ -44,6 +51,7 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
   const key=e.key.toLowerCase();if(controls.includes(key)){e.preventDefault();if(!e.repeat)input.press(key);}else if(key==='r'){e.preventDefault();reset();}
  };
  const keyup=(e:KeyboardEvent)=>input.release(e.key.toLowerCase()),blur=()=>{input.clear();body.velocity.set(0,0,0);apply(true);};
+ const resize=()=>apply(true);map.on('resize',resize);
  canvas.addEventListener('pointerdown',down);canvas.addEventListener('pointermove',move);canvas.addEventListener('pointerup',up);canvas.addEventListener('pointercancel',up);canvas.addEventListener('dblclick',lock);document.addEventListener('mousemove',lockedLook);document.addEventListener('keydown',keydown);window.addEventListener('keyup',keyup);window.addEventListener('blur',blur);
  function tick(now:number){
   const dt=Math.min((now-previous)/1000,.1);previous=now;const old=body.eye,oldStance=`${body.grounded}/${body.crouched}/${body.sprinting}`,intent=input.read(bearing*Math.PI/180);
@@ -54,12 +62,13 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
   viewFov=Math.abs(nextFov-targetFov)<.01?targetFov:nextFov;bobWeight=nextBob<.001?0:nextBob;
   if(viewChanged)map.setVerticalFieldOfView(viewFov);
   const stanceChanged=oldStance!==`${body.grounded}/${body.crouched}/${body.sprinting}`;
-  if(body.eye.distanceToSquared(old)>1e-10||stanceChanged||intent.forward||intent.right||intent.jump||viewChanged)apply(stanceChanged);
+  if(body.eye.distanceToSquared(old)>1e-10||stanceChanged||intent.forward||intent.right||intent.jump||viewChanged||Math.abs(site.baseElevation()-lastBase)>.001)apply(stanceChanged);
   frame=requestAnimationFrame(tick);
  }
  apply(true);frame=requestAnimationFrame(tick);canvas.focus();
  return {keys:input.keys,press:key=>input.press(key),release:key=>input.release(key),toggleSprint:()=>{input.toggleSprint();apply(true);},toggleCrouch:()=>input.toggleCrouch(),reset,position:()=>body.eye.toArray() as [number,number,number],stance:()=>({sprinting:body.sprinting,sprintEnabled:input.sprintEnabled,crouched:body.crouched,grounded:body.grounded}),stop(){
   cancelAnimationFrame(frame);input.clear();if(document.pointerLockElement===canvas)document.exitPointerLock();site.setWalker(null);
+  map.off('resize',resize);map.setTransformCameraUpdate(null);
   canvas.removeEventListener('pointerdown',down);canvas.removeEventListener('pointermove',move);canvas.removeEventListener('pointerup',up);canvas.removeEventListener('pointercancel',up);canvas.removeEventListener('dblclick',lock);document.removeEventListener('mousemove',lockedLook);document.removeEventListener('keydown',keydown);window.removeEventListener('keyup',keyup);window.removeEventListener('blur',blur);
   handlers.forEach((h,i)=>{if(enabled[i])h.enable();});map.setCenterClampedToGround(clamped);map.setMaxZoom(maxZoom);map.setMaxPitch(maxPitch);map.setVerticalFieldOfView(fov);map.jumpTo(before);
   for(const layer of regionalLayers)if(map.getLayer(layer.id))map.setLayoutProperty(layer.id,'visibility',layer.visibility);

@@ -128,7 +128,7 @@ export default function AtlasMap(props:Props) {
         mapRef.current=map;
         map.addControl(new lib.AttributionControl({compact:true}),"bottom-right");
         map.addControl(new lib.ScaleControl({maxWidth:80,unit:"metric"}),"bottom-right");
-        map.on("moveend",event=>{syncTerrainCamera(map);const p=map.getCenter();setCoordinates(`${p.lat.toFixed(3)}° N · ${p.lng.toFixed(3)}° E`);setMapZoom(map.getZoom());latest.current.onCamera?.({center:[p.lng,p.lat],zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()});
+        map.on("moveend",event=>{syncTerrainCamera(map);const p=map.getCenter();setCoordinates(`${p.lat.toFixed(3)}° N · ${p.lng.toFixed(3)}° E`);setMapZoom(map.getZoom());if(!map.getCanvas().dataset.walkPosition)latest.current.onCamera?.({center:[p.lng,p.lat],zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()});
           // Camera restoration and panel padding must not undo an explicit site choice.
           if(event.originalEvent&&map.getZoom()>=16&&!walker.current){
             const distance=(place:Place)=>place.lat==null||place.lon==null?Infinity:Math.hypot((place.lon-p.lng)*Math.cos(p.lat*Math.PI/180),place.lat-p.lat)*111320;

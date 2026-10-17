@@ -69,7 +69,13 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    const matrix=new T.Matrix4().makeTranslation(o.x,o.y,o.z).scale(new T.Vector3(scale,-scale,scale)).multiply(new T.Matrix4().makeRotationX(Math.PI/2));
    camera.projectionMatrix.fromArray(args.defaultProjectionData.mainMatrix).multiply(matrix);
    const walking=map.getCanvas().dataset.walkPosition?.split(',').map(Number),eye=new T.Vector3();
-   if(walking)eye.set(walking[0],walking[1],walking[2]);
+   if(walking){
+    // Recover the camera origin from the matrix actually drawing this frame.
+    // The character/HUD state alone cannot detect a displaced map camera.
+    const origin=new T.Vector4(0,0,1,0).applyMatrix4(camera.projectionMatrix.clone().invert());
+    eye.set(origin.x/origin.w,origin.y/origin.w,origin.z/origin.w);
+    const canvas=map.getCanvas();canvas.dataset.walkCameraPosition=eye.toArray().map(n=>n.toFixed(3)).join(',');canvas.dataset.walkCameraError=eye.distanceTo(new T.Vector3(...walking)).toFixed(3);
+   }
    sky.update(camera.projectionMatrix,eye,!!walking);
    renderer.resetState();renderer.clearDepth();renderer.render(scene,camera);avatar.render(renderer,map.getCanvas().clientWidth/map.getCanvas().clientHeight);renderer.resetState();runtime.renderedFrames++;
    const canvas=map.getCanvas();canvas.dataset.siteFrames=String(runtime.renderedFrames);canvas.dataset.siteMeshes=String(runtime.meshCount);canvas.dataset.siteVertices=String(runtime.vertexCount);
