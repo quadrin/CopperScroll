@@ -12,13 +12,13 @@ This is a description of the evidence. It identifies nothing and excludes nothin
 |---|---|
 | strong | 0 |
 | partial | 0 |
-| weak | 43 |
-| none | 49 |
+| weak | 46 |
+| none | 46 |
 
 - **No candidate has every part at 2 or better.** No feature is rated 3 (all described elements present) and no date is rated 3 (the feature itself dated in the window). 16 candidates have a specific recorded feature (F 2).
-- **Place and feature are the commonest weak links**: P limits 63 rows and F 54 (alone or with others), against D 24 and R 22. 32 candidates rest on no place evidence at all, only entry order or landscape.
+- **Place and feature are the commonest weak links**: P limits 65 rows and F 56 (alone or with others), against D 25 and R 23. 32 candidates rest on no place evidence at all, only entry order or landscape.
 - **U:** 72 untested, 18 not unique (a documented rival meets the same tested subset), 1 conditionally excluded (Siloam, entry 49: the ledger's two L103 exclusions).
-- **Former "medium" ratings:** 14 are weak and 5 are none — 9 East Gate (F 0: no cistern within 18 m), 17 Buqeia (D 0), 18 ʿAṣla (F 0), 35 Mar Saba (F 0), 59 Kh. Ibziq (F 0: no conduit).
+- **Former "medium" ratings:** 16 are weak and 3 are none — 9 East Gate (F 0: no cistern within 18 m), 18 ʿAṣla (F 0), 59 Kh. Ibziq (F 0: no conduit). 17 Buqeia and 35 Mar Saba rose to weak on 17 October.
 - **Highest sums** (each still weak): 16 Hyrcania, 29 Jericho palaces, 31 Doq and 49 Siloam (R1 P3 F2 D2: only the disputed word is weak), 58 Beth Shean (R3 P2 F1 D2). 57 Gerizim fell to none on 17 October (D 0).
 
 ## Later changes
@@ -29,6 +29,7 @@ This is a description of the evidence. It identifies nothing and excludes nothin
 - **16 October 2026, JSTOR reads** ([Bethesda extraction](../../../registration/bethesda_jstor_2026-10-16_extracted.md); [Siloam extraction](../../../registration/siloam_jstor_2026-10-16_extracted.md); [Guil 2017](../../../registration/guil2017_siloam_extracted.md); [Bull, BASOR 190](../../../registration/bull_tell_er_ras_1965_1968_extracted.md)): F rises from 0 to 1 for entry 56 at Bethesda. Von Wahlde 2009 p. 128 reports a central cistern and grottoes with steps east of the twin pools, dated by coins to 68 CE, but no threshold or west entrance. The label stays none (P 0); F now limits 56 rows, not 57. Entry 55's D basis adds the pools' dates. Entries 49 and 57 keep their levels; their `decisive_next` now names the two Siloam channel junctions and BASOR 190.
 - **17 October 2026** (Amit 1989 read from the owner's copy, [extraction](../../../registration/amit1989_doq_extracted.md)): D rises from 1 to 2 for 31 Doq. Herodian rooms were excavated on the fortress's north-east spur (Netzer 1982, reported by Amit), and the Hasmonean water system stayed in use. The label stays weak (R 1). Calibration example 31 in RUBRIC.md records the earlier value. Also: Duprez 1970 read for 55 and 56 (no level change).
 - **17 October 2026, new Drive sources** ([frozen tests](../../../registration/new_sources_2026-10-17_tests.md), committed before reading): 35 Hyrcania F 1→0 (Patrich 1989 p. 244: no diversion dam at the southern intake; label none); 57 Gerizim D 1→0 (the 2021 coin volume treats every coin of 50 BCE–70 CE as a chance loss and has the site unsettled until the late 3rd c.; label none); 49 Siloam F 1→2 under Milik's 'pipe' sense (Channel IV, the Second Temple feed channel of the stepped pool; label stays weak). No level change for 3, 5, 8, 9, 10, 16, 29, 30 or 38.
+- **17 October 2026, round-2 sources** ([frozen tests](../../../registration/new_sources_round2_2026-10-17_tests.md), committed before reading; [results](../../../registration/new_sources_round2_2026-10-17_results.md)): Patrich's *Map of Deir Mar Saba* raises 35 Mar Saba F 0→1 (three undated cairns on the Kidron gorge below the monastery) and 1 and 17 Buqeia D 0→1 (Hellenistic and undivided Roman survey sherds at Kh. Abu Ṭabaq and two other valley fortresses). All three go from none to weak. Yadin, Gibson 2005/2011, Gibson and Jacobson 1994, Arie 2023, Bar-Adon 1989 and HA 85 change no level.
 
 ## Files
 

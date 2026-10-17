@@ -123,10 +123,11 @@
    ]
   },
   "D": {
-   "level": 0,
-   "basis": "F is 1, so D rates the site. The ruins reported on the plateau are Iron Age. The only Second Temple installation named (Hyrcania's northern aqueduct) runs west of the plateau, not in it.",
+   "level": 1,
+   "basis": "F is 1, so D rates the site. The ruins reported on the plateau are Iron Age. The only Second Temple installation named (Hyrcania's northern aqueduct) runs west of the plateau, not in it. Revised 17 Oct (U4): Patrich's Mar Saba map puts the Iron II fortress Kh. Abu Ṭabaq (Site 35) in the Buqeia, with steps descending into its reservoir cave and 'Hellenistic, Roman' survey sherds (EN p. 57); Sites 91 and 101 have the same. 'Roman' is not subdivided, so this is thin evidence for the window: D 1.",
    "sources": [
-    "tables/phase5_assessments.csv line 4 (period_fit 'earlier only'; Eshel p. 103)"
+    "tables/phase5_assessments.csv line 4 (period_fit 'earlier only'; Eshel p. 103)",
+    "registration/patrich_mar_saba_map_extracted.md"
    ]
   },
   "U": {
@@ -136,12 +137,14 @@
     "research/progress/outcome_ledger.json outcome_counts, candidate_assessments, nonunique_comparator_results (no entry 1-12a record)"
    ]
   },
-  "weakest": 0,
-  "label": "none",
+  "weakest": 1,
+  "label": "weak",
   "limited_by": [
+   "P",
+   "F",
    "D"
   ],
-  "decisive_next": "A dated Second Temple ruin with steps on the plateau in a survey report (none is in the repo).",
+  "decisive_next": "A dated record of Kh. Abu Ṭabaq (Mar Saba map Site 35), a ruin in the Buqeia with steps into its reservoir: a phase or stratified finds of the window, and the steps' relation to the ruin (a future frozen F test).",
   "flags": []
  },
  {
@@ -380,13 +383,14 @@
   },
   "F": {
    "level": 1,
-   "basis": "Undated rock-cut cisterns lie under the platform. The largest, No. 8 (the 'Great Sea', many manholes), lies under the southern outer court, but linking that court to the peristyle is inference; Milik's peristyle is the inner court. No cistern is reported in relation to a peristyle court. Warren and Conder 1884 (read 17 Oct): W8 (the Great Sea) is not related to any court or colonnade. W5's north-west manhole lies 'just outside the Water Gate of the Priest's Court' only on Conder's reconstructed Temple plan (p. 219), so the relation is a reconstruction. No level change (T9).",
+   "basis": "Undated rock-cut cisterns lie under the platform. The largest, No. 8 (the 'Great Sea', many manholes), lies under the southern outer court, but linking that court to the peristyle is inference; Milik's peristyle is the inner court. No cistern is reported in relation to a peristyle court. Warren and Conder 1884 (read 17 Oct): W8 (the Great Sea) is not related to any court or colonnade. W5's north-west manhole lies 'just outside the Water Gate of the Priest's Court' only on Conder's reconstructed Temple plan (p. 219), so the relation is a reconstruction. No level change (T9). Gibson and Jacobson 1994 (read 17 Oct): cistern Schick 29 (W/W 34), a twin chamber with a roof shaft over each chamber, lies just inside the east wall of the inner platform and is tied by the authors to the pre-Herodian sacred precinct, but no colonnaded court is related to it. No level change (U9).",
    "sources": [
     "research/sites/leads_on_old_plans_2026-09-30.md §4.2 (SWP Jerusalem pp. 219-220; m. Eruvin 10:14)",
     "research/logs/findings_log.md line 670 (F12.5, possible/low, not in atlas)",
     "tables/phase5_assessments.csv line 31 (peristyle court known only from texts)",
     "tables/phase5_reports.csv line 203 (Warren 1871 pp. 204 ff.)",
-    "registration/warren1884_temple_mount_cisterns_extracted.md"
+    "registration/warren1884_temple_mount_cisterns_extracted.md",
+    "registration/gibson_jacobson1994_arie2023_extracted.md"
    ]
   },
   "D": {
@@ -600,11 +604,12 @@
   },
   "F": {
    "level": 1,
-   "basis": "Only generic rock-cut cisterns and chambers are reported under the platform. The spiral stair is known only from texts (11QTemple, m. Middot 4:5); Puech's parallels are outside the enclosure. No foundry is reported. Warren and Conder 1884 (read 17 Oct): no spiral or tower stair; the steep stair by the NE corner tower has a light shaft at its doorway and an unreached head (p. 125). No level change (T9).",
+   "basis": "Only generic rock-cut cisterns and chambers are reported under the platform. The spiral stair is known only from texts (11QTemple, m. Middot 4:5); Puech's parallels are outside the enclosure. No foundry is reported. Warren and Conder 1884 (read 17 Oct): no spiral or tower stair; the steep stair by the NE corner tower has a light shaft at its doorway and an unreached head (p. 125). No level change (T9). Gibson and Jacobson 1994 p. 154 (read 17 Oct): in cistern Schick 15 (W/W 22, NW of the Haram) narrow steps run anti-clockwise down the curved wall from a rectangular surface opening; the chamber is at the stair's foot and nothing is recorded at its head. The closest recorded stair of the kind; no level change (U9).",
    "sources": [
     "tables/phase5_assessments.csv line 31",
     "tables/phase5_reports.csv lines 203, 206-207 (Warren pp. 204 ff.; Puech 2006 pp. 182-183; Høgenhaven p. 56 n. 22)",
-    "registration/warren1884_temple_mount_cisterns_extracted.md"
+    "registration/warren1884_temple_mount_cisterns_extracted.md",
+    "registration/gibson_jacobson1994_arie2023_extracted.md"
    ]
   },
   "D": {
@@ -809,11 +814,12 @@
   },
   "F": {
    "level": 1,
-   "basis": "Only generic undated rock-cut chambers and cisterns are reported under the platform. The wood-store court is known only from texts. Warren and Conder 1884 (read 17 Oct): no underground chamber with a cistern opening in its floor is recorded. No level change (T9).",
+   "basis": "Only generic undated rock-cut chambers and cisterns are reported under the platform. The wood-store court is known only from texts. Warren and Conder 1884 (read 17 Oct): no underground chamber with a cistern opening in its floor is recorded. No level change (T9). Gibson and Jacobson 1994 (read 17 Oct): no chamber with a cistern opening in its floor; cisterns 15 and 29 have shafts in their roofs. No level change (U9).",
    "sources": [
     "tables/phase5_assessments.csv line 31",
     "tables/phase5_reports.csv line 203 (Warren pp. 204 ff.)",
-    "registration/warren1884_temple_mount_cisterns_extracted.md"
+    "registration/warren1884_temple_mount_cisterns_extracted.md",
+    "registration/gibson_jacobson1994_arie2023_extracted.md"
    ]
   },
   "D": {
@@ -878,12 +884,13 @@
   },
   "F": {
    "level": 0,
-   "basis": "The recorded cisterns contradict the stated distance. On Warren's Plate VI the nearest cistern (No. 15) is 30.0 m from the Golden Gate and Nos. 12-14 are 42-57 m away; 19 cubits is 8.5-10 m (15 cubits less). Outside the gate a 'tank or rock-cut tomb' lies about 38 m out. Only open mouths were recorded and 30-40 ft of debris lie in front of the gate, so an unrecorded cistern is unknown, not excluded. Warren and Conder 1884 and the Gibson and Jacobson reproductions (read 17 Oct): the nearest cistern inside is W15 (G&J S23), about 25-30 m west of the gate; nothing within 7-10 m. No level change (T7).",
+   "basis": "The recorded cisterns contradict the stated distance. On Warren's Plate VI the nearest cistern (No. 15) is 30.0 m from the Golden Gate and Nos. 12-14 are 42-57 m away; 19 cubits is 8.5-10 m (15 cubits less). Outside the gate a 'tank or rock-cut tomb' lies about 38 m out. Only open mouths were recorded and 30-40 ft of debris lie in front of the gate, so an unrecorded cistern is unknown, not excluded. Warren and Conder 1884 and the Gibson and Jacobson reproductions (read 17 Oct): the nearest cistern inside is W15 (G&J S23), about 25-30 m west of the gate; nothing within 7-10 m. No level change (T7). Gibson and Jacobson 1994 (read 17 Oct) do not mention the Golden Gate; on their p. 152 plan the dated cistern 29 is about 90 m west of it (measured here). No level change (U9).",
    "sources": [
     "tables/feature_constraints.csv line 26 (Warren 1884 Pl. VI; SWP Jerusalem p. 221; Warren 1871 pp. 154-156)",
     "research/logs/findings_log.md line 669 (F12.4)",
     "research/sites/leads_on_old_plans_2026-09-30.md §4.1",
-    "registration/warren1884_temple_mount_cisterns_extracted.md"
+    "registration/warren1884_temple_mount_cisterns_extracted.md",
+    "registration/gibson_jacobson1994_arie2023_extracted.md"
    ]
   },
   "D": {
@@ -951,12 +958,13 @@
   },
   "F": {
    "level": 1,
-   "basis": "Rock scarps, a north-south wall of drafted blocks outside the Golden Gate, and undated cisterns under the platform are reported. No cistern under the east wall with a threshold is described. Warren and Conder 1884 (read 17 Oct): no cistern cut under the Haram's east wall and no sill above any cistern entrance on the east side; W37 runs under the inner platform's east wall instead (p. 225). No level change (T8).",
+   "basis": "Rock scarps, a north-south wall of drafted blocks outside the Golden Gate, and undated cisterns under the platform are reported. No cistern under the east wall with a threshold is described. Warren and Conder 1884 (read 17 Oct): no cistern cut under the Haram's east wall and no sill above any cistern entrance on the east side; W37 runs under the inner platform's east wall instead (p. 225). No level change (T8). Gibson and Jacobson 1994 (read 17 Oct): no cistern under the Haram's east wall and no sill. No level change (U9).",
    "sources": [
     "tables/phase5_assessments.csv line 22",
     "tables/phase5_reports.csv lines 150-152 (Warren 1871 pp. 135-141, 153-158, 204 ff.)",
     "research/sites/leads_on_old_plans_2026-09-30.md §4.3",
-    "registration/warren1884_temple_mount_cisterns_extracted.md"
+    "registration/warren1884_temple_mount_cisterns_extracted.md",
+    "registration/gibson_jacobson1994_arie2023_extracted.md"
    ]
   },
   "D": {
@@ -1548,11 +1556,12 @@
   },
   "F": {
    "level": 2,
-   "basis": "A specific recorded feature exists: Hyrcania's northern aqueduct, which leads to the fortress (Patrich 1989 Fig. 1, stations 43–45). Eshel's origin, where the trail meets the northern aqueduct, is not identified. The only documented crossing (station 48) is on the shared course downstream of the junction. Patrich 1989 (read first-hand 17 Oct): junction 43 is not visible in the field, and upstream of it the only trail sign is a black trail-marking on the rock about 50 m from dam 44, with no stated relation to the channel (p. 251). F stays 2 (T3).",
+   "basis": "A specific recorded feature exists: Hyrcania's northern aqueduct, which leads to the fortress (Patrich 1989 Fig. 1, stations 43–45). Eshel's origin, where the trail meets the northern aqueduct, is not identified. The only documented crossing (station 48) is on the shared course downstream of the junction. Patrich 1989 (read first-hand 17 Oct): junction 43 is not visible in the field, and upstream of it the only trail sign is a black trail-marking on the rock about 50 m from dam 44, with no stated relation to the channel (p. 251). F stays 2 (T3). The Mar Saba map (read 17 Oct) records a path crossing only on the southern aqueduct (Site 82, at 18142 12448), not on the northern one. No level change (U3).",
    "sources": [
     "research/measurements/cycle6/entry16_intersection.md (Patrich 1989 pp. 243, 251–252)",
     "tables/phase5_archaeology_index.csv line 30",
-    "registration/patrich1989_hyrcania_extracted.md (p. 251)"
+    "registration/patrich1989_hyrcania_extracted.md (p. 251)",
+    "registration/patrich_mar_saba_map_extracted.md"
    ]
   },
   "D": {
@@ -1692,11 +1701,12 @@
    ]
   },
   "D": {
-   "level": 0,
-   "basis": "Phase 5 gives the period fit as 'earlier only'. The only Second Temple installation named, Hyrcania's northern aqueduct, runs west of the plateau, not in it. ASI shows no feature dated in the window within 1 km.",
+   "level": 1,
+   "basis": "Phase 5 gives the period fit as 'earlier only'. The only Second Temple installation named, Hyrcania's northern aqueduct, runs west of the plateau, not in it. ASI shows no feature dated in the window within 1 km. Revised 17 Oct (U4): the Mar Saba map records Hellenistic and undivided Roman survey sherds at three ruins in the Buqeia (Sites 35, 91, 101; EN pp. 57, 117, 186-187). That is thin district evidence for the window: D 1. No pair of standing ruins is recorded.",
    "sources": [
     "tables/phase5_assessments.csv line 4 (period_fit: earlier only)",
-    "research/regional/asi_jerusalem/README.md 'buqeia'"
+    "research/regional/asi_jerusalem/README.md 'buqeia'",
+    "registration/patrich_mar_saba_map_extracted.md"
    ]
   },
   "U": {
@@ -1706,9 +1716,12 @@
     "tables/phase5_assessments.csv line 4"
    ]
   },
-  "weakest": 0,
-  "label": "none",
+  "weakest": 1,
+  "label": "weak",
   "limited_by": [
+   "R",
+   "P",
+   "F",
    "D"
   ],
   "decisive_next": "The IV 6 reading (if 'buildings', a pair of standing ruins in the Buqeia with evidence of 1st-c. use); currently no dated feature in the plateau.",
@@ -2262,10 +2275,11 @@
   },
   "D": {
    "level": 0,
-   "basis": "The chamber is undated. The only dated tombs recorded in the wadi (WBADB E508) are Early Islamic, outside the window.",
+   "basis": "The chamber is undated. The only dated tombs recorded in the wadi (WBADB E508) are Early Islamic, outside the window. Wadi Kuteif lies outside Patrich's Mar Saba map (E 180-190 / N 120-130), which does not name it (read 17 Oct). No level change (U4).",
    "sources": [
     "research/regional/tombs/README.md 'Entry 24' (E508)",
-    "tables/phase5_archaeology_index.csv line 9 (period not stated)"
+    "tables/phase5_archaeology_index.csv line 9 (period not stated)",
+    "registration/patrich_mar_saba_map_extracted.md"
    ]
   },
   "U": {
@@ -2379,18 +2393,20 @@
   },
   "F": {
    "level": 2,
-   "basis": "The atlas assigns no cave to this candidate. Near Qumran, Twin Cave (Bar-Adon 1989 pp. [15]–17; about 1 km N of the settlement, south of 11Q) has a thick rock pillar between northern and southern units, each with an opening, both facing east. The Bar-Adon unit / atlas entrance crosswalk is under review (15 Oct), so this is taken one below full.",
+   "basis": "The atlas assigns no cave to this candidate. Near Qumran, Twin Cave (Bar-Adon 1989 pp. [15]–17; about 1 km N of the settlement, south of 11Q) has a thick rock pillar between northern and southern units, each with an opening, both facing east. The Bar-Adon unit / atlas entrance crosswalk is under review (15 Oct), so this is taken one below full. Bar-Adon 1989 read on the page images (17 Oct; ch. 2, pp. [15]-17): a thick rock pillar divides northern and southern units, each with one opening, both facing east; no threshold or step, and no plan, section or mouth positions are printed, so the crosswalk discount stays. No level change (U5).",
    "sources": [
     "research/sources/baradon1989_capture_direct_review_2026-10-01.md line 21",
     "research/sites/entry25_twin_cave_followup_2026-10-01.md line 23",
-    "research/regional/caves_entry25/README.md lines 9, 86"
+    "research/regional/caves_entry25/README.md lines 9, 86",
+    "registration/baradon1989_twin_cave_mizzi2017_extracted.md"
    ]
   },
   "D": {
    "level": 2,
-   "basis": "Twin Cave finds include 1st-c. BCE/CE typological parallels. There is no sealed threshold or pillar date. Qumran was occupied in the window.",
+   "basis": "Twin Cave finds include 1st-c. BCE/CE typological parallels. There is no sealed threshold or pillar date. Qumran was occupied in the window. The window-period vessels (pp. 16-17: juglet no. 6, base no. 7, jars nos. 11-12) are typological parallels, located only as 'Cave A' or 'Cave B' with no north/south key; nothing is stratified (U5).",
    "sources": [
-    "research/sources/baradon1989_capture_direct_review_2026-10-01.md lines 35–37"
+    "research/sources/baradon1989_capture_direct_review_2026-10-01.md lines 35–37",
+    "registration/baradon1989_twin_cave_mizzi2017_extracted.md"
    ]
   },
   "U": {
@@ -2406,7 +2422,7 @@
   "limited_by": [
    "P"
   ],
-  "decisive_next": "Bar-Adon's measured survey or sections of Twin Cave with the northern-unit threshold, plus the Bar-Adon unit / atlas entrance crosswalk named in the 15 Oct caves note.",
+  "decisive_next": "Bar-Adon's field diaries or a measured plan of Twin Cave (the printed chapter, pp. [15]-17, has none): which of his 'Cave A' and 'Cave B' is the northern unit, the mouth positions for the atlas crosswalk named in the 15 Oct caves note, and any threshold at the northern opening.",
   "flags": [
    "The atlas kh_qumran candidate for entry 25 has no assigned feature, while Twin Cave near Qumran meets more clauses than IV/17 (both-mouths all-match). The atlas lists Twin Cave only as a control."
   ],
@@ -2972,22 +2988,24 @@
   },
   "F": {
    "level": 2,
-   "basis": "The northern member of the rock-cut double pool west of the summit is a specific surveyed basin (Patrich 1989 p. 255, Fig. 22): kind and 'northern', about 5 m deep. Its feeder or inlet is unidentified, and 'great' and 'conduit' stay unknown in the regional scoring. Patrich 1989 (read first-hand 17 Oct): only the northern pool is measured (19/15/18.2/16 m, up to 5 m deep), called 'more complete and deeper' than the southern (p. 255); no inlet is described or drawn for either pool (Fig. 22). F stays 2 (T2).",
+   "basis": "The northern member of the rock-cut double pool west of the summit is a specific surveyed basin (Patrich 1989 p. 255, Fig. 22): kind and 'northern', about 5 m deep. Its feeder or inlet is unidentified, and 'great' and 'conduit' stay unknown in the regional scoring. Patrich 1989 (read first-hand 17 Oct): only the northern pool is measured (19/15/18.2/16 m, up to 5 m deep), called 'more complete and deeper' than the southern (p. 255); no inlet is described or drawn for either pool (Fig. 22). F stays 2 (T2). The Mar Saba map, Site 69 (read 17 Oct): the north pool is 'deep, elaborate', the south shallower; which is larger is not stated, and no inlet is described. No level change (U3).",
    "sources": [
     "research/assessments/entry29_hyrcania/README.md 'Reading and candidate' (Patrich 1989 p. 255, Fig. 22 p. 256)",
     "research/sites/christmas_hyrcania_primary_followup_2026-09-30.md line 43",
     "research/regional/water_systems/README.md line 93",
     "research/assessments/entry29_hyrcania/README.md 'Cycle7 supply-datum audit'",
-    "registration/patrich1989_hyrcania_extracted.md (p. 255, Fig. 22)"
+    "registration/patrich1989_hyrcania_extracted.md (p. 255, Fig. 22)",
+    "registration/patrich_mar_saba_map_extracted.md"
    ]
   },
   "D": {
    "level": 2,
-   "basis": "Patrich assigns the northern system to the Hasmoneans and the southern to Herod, and reports a Herodian coin in cistern C. The pool edge has no sealed date. Patrich argues the site was abandoned after Herod, so window use is shown for the early decades only.",
+   "basis": "Patrich assigns the northern system to the Hasmoneans and the southern to Herod, and reports a Herodian coin in cistern C. The pool edge has no sealed date. Patrich argues the site was abandoned after Herod, so window use is shown for the early decades only. Feldman's probes in the north pool found lime-and-gravel plaster called Second Temple (HE) or Roman hydraulic (EN) (Site 69); this dates the plaster by type, not by a stratified context or phase, so D stays 2 (U3).",
    "sources": [
     "research/sites/christmas_hyrcania_primary_followup_2026-09-30.md line 49 (Patrich pp. 244, 251-252, 259)",
     "research/logs/findings_log.md line 651 (F11.3, Patrich 2002 p. 336)",
-    "research/assessments/entry29_hyrcania/README.md 'Reading and candidate' (no sealed pool-edge date)"
+    "research/assessments/entry29_hyrcania/README.md 'Reading and candidate' (no sealed pool-edge date)",
+    "registration/patrich_mar_saba_map_extracted.md"
    ]
   },
   "U": {
@@ -3657,20 +3675,22 @@
    ]
   },
   "F": {
-   "level": 0,
-   "basis": "No cairn or burial mound is reported at the Mar Saba stretch or elsewhere in the gorge. SWP shows only the gorge, the road and wells.",
+   "level": 1,
+   "basis": "No cairn or burial mound is reported at the Mar Saba stretch or elsewhere in the gorge. SWP shows only the gorge, the road and wells. Revised 17 Oct (U2): Patrich's Map of Deir Mar Saba (109/7) records three undated cairns on the Kidron gorge below the monastery (Sites 99, 100, 108; the nearest about 0.9 km downstream), none at a gorge mouth, and none between the map's western edge and Mar Saba (EN p. 9). Generic features of the kind in the district: F 1.",
    "sources": [
     "tables/phase5_assessments.csv line 32",
     "tables/phase5_archaeology_index.csv row 35 ('no cairn reported')",
-    "tables/phase5_reports.csv lines 208-212"
+    "tables/phase5_reports.csv lines 208-212",
+    "registration/patrich_mar_saba_map_extracted.md"
    ]
   },
   "D": {
    "level": 1,
-   "basis": "F is 0, so D rates the site. Mar Saba remains are Byzantine or later (ASI; monastery c. 480). Hyrcania's Herodian southern aqueduct runs through this stretch (Eshel p. 95), which is district-level use in the window.",
+   "basis": "F is 0, so D rates the site. Mar Saba remains are Byzantine or later (ASI; monastery c. 480). Hyrcania's Herodian southern aqueduct runs through this stretch (Eshel p. 95), which is district-level use in the window. The Mar Saba map's cairns have no finds; the Herodian southern aqueduct on the Qidron cliffs (Site 83) keeps district use. No level change (U2).",
    "sources": [
     "research/regional/asi_jerusalem/README.md line 102",
-    "tables/phase5_reports.csv lines 209, 213"
+    "tables/phase5_reports.csv lines 209, 213",
+    "registration/patrich_mar_saba_map_extracted.md"
    ]
   },
   "U": {
@@ -3682,12 +3702,13 @@
     "research/logs/findings_log.md line 696 (F14.3)"
    ]
   },
-  "weakest": 0,
-  "label": "none",
+  "weakest": 1,
+  "label": "weak",
   "limited_by": [
-   "F"
+   "F",
+   "D"
   ],
-  "decisive_next": "A survey record of a stone heap or burial mound at a gorge entrance on the Jerusalem-Mar Saba path (the Israel Guide 13 canyon-entrance grids 1808.1259 / 1819.1227 are the places to look).",
+  "decisive_next": "A dated stone heap or burial mound at a gorge entrance on the Jerusalem-Mar Saba path. The Mar Saba map records none between its western edge and the monastery; the Israel Guide 13 canyon-entrance grids 1808.1259 / 1819.1227 and the Herodium map's eastern edge remain the places to look.",
   "flags": [
    "Atlas period 'not stated', but phase5_reports.csv line 213 (Eshel p. 95) puts Hyrcania's Herodian southern aqueduct through the Mar Saba stretch."
   ]
@@ -3724,11 +3745,12 @@
   },
   "F": {
    "level": 0,
-   "basis": "Under the dam reading no dam is recorded on the Kidron. Patrich 1989, the excavator's own survey, says that at the southern aqueduct's starting point on the Kidron 'we found no remains at all of a diversion dam or other regulating installations' (p. 244, checked on the page image). Point 1 is only a test pit exposing the channel's plastered east wall. The repo's earlier basis ('a Kidron dam' at station 1) was second-hand and is contradicted. The only dam in the chapter is dam 44, on the northern aqueduct in Wadi Abu Shu'ala, which is not the Kidron (p. 251).",
+   "basis": "Under the dam reading no dam is recorded on the Kidron. Patrich 1989, the excavator's own survey, says that at the southern aqueduct's starting point on the Kidron 'we found no remains at all of a diversion dam or other regulating installations' (p. 244, checked on the page image). Point 1 is only a test pit exposing the channel's plastered east wall. The repo's earlier basis ('a Kidron dam' at station 1) was second-hand and is contradicted. The only dam in the chapter is dam 44, on the northern aqueduct in Wadi Abu Shu'ala, which is not the Kidron (p. 251). Patrich's Mar Saba map (read 17 Oct) also records no intake structure or dam at the head of the southern aqueduct, whose first stretch is drawn as conjectured (EN p. 8, HE p. 8 figure); the only dam is on Naḥal Sekhakha (Site 48). No level change (U3).",
    "sources": [
     "registration/patrich1989_hyrcania_extracted.md (pp. 244, 251)",
     "registration/new_sources_2026-10-17_tests.md (T1)",
-    "tables/phase5_reports.csv line 213 (Eshel p. 95 mentions a dam only for the northern aqueduct)"
+    "tables/phase5_reports.csv line 213 (Eshel p. 95 mentions a dam only for the northern aqueduct)",
+    "registration/patrich_mar_saba_map_extracted.md"
    ]
   },
   "D": {
@@ -3785,11 +3807,12 @@
   },
   "P": {
    "level": 1,
-   "basis": "Shaveh is biblical (Gen 14:17, = King's Valley), but no source fixes which valley. Puech puts it toward Beth ha-Kerem / the Kidron, while Milik equates it with Josephus's Bethso at Baqʿah. Live alternatives of similar weight (Q22).",
+   "basis": "Shaveh is biblical (Gen 14:17, = King's Valley), but no source fixes which valley. Puech puts it toward Beth ha-Kerem / the Kidron, while Milik equates it with Josephus's Bethso at Baqʿah. Live alternatives of similar weight (Q22). Yadin, Temple Scroll I p. 303 (read 17 Oct): השוא is 'almost certain[ly]' the עמק השוא, the vale of the king in the Beth ha-Kerem plain (1QapGen xxii 13-14), which rules out Bethso; he does not locate the plain. Puech's Beth ha-Kerem is the same name chain, so no located valley is fixed. No level change (U1).",
    "sources": [
     "text/readings.json e36-shaveh (Puech 2006 p. 194 n. 304; Milik p. 274; Høgenhaven p. 77)",
     "research/logs/open_questions.md line 47 (Q22)",
-    "atlas/app/atlas-data.json places jer_shaveh (source 'none: no source fixes the valley')"
+    "atlas/app/atlas-data.json places jer_shaveh (source 'none: no source fixes the valley')",
+    "registration/yadin1983_temple_scroll_p302_303_extracted.md"
    ]
   },
   "F": {
@@ -3821,7 +3844,7 @@
    "F",
    "D"
   ],
-  "decisive_next": "A source that fixes which valley the Shaveh is (Q22): for example, Yadin, Temple Scroll I pp. 302-303, cited by Puech 2006 n. 304.",
+  "decisive_next": "A source that locates the Genesis Apocryphon's Beth ha-Kerem plain (Yadin, Temple Scroll I p. 303, and Puech both identify the Shaveh with it, but neither locates it), argued independently of the Copper Scroll (Q22).",
   "flags": [
    "Atlas period 'in use 1st c. BCE-70 CE (tombs)' is attached to a candidate with no location; the tomb dates belong to the Kidron generally (Avni & Greenhut abstract only)."
   ]
@@ -3851,10 +3874,11 @@
   },
   "P": {
    "level": 1,
-   "basis": "This rests on Milik's chain (Shaveh = Bethso = Baqʿah), which Puech rejects. It is one editorial identification among live alternatives.",
+   "basis": "This rests on Milik's chain (Shaveh = Bethso = Baqʿah), which Puech rejects. It is one editorial identification among live alternatives. Yadin, Temple Scroll I pp. 302-303 (read 17 Oct) rejects Milik's Shaveh = Bethso step and places Bethso in the city's north-west; his own identification (the vale of the king in the Beth ha-Kerem plain) is unlocated, so it neither supports nor excludes the Baqʿa. No level change (U1).",
    "sources": [
     "tables/phase5_reports.csv lines 156-157",
-    "research/phases/phase3_summary.md §4.5"
+    "research/phases/phase3_summary.md §4.5",
+    "registration/yadin1983_temple_scroll_p302_303_extracted.md"
    ]
   },
   "F": {
@@ -3914,11 +3938,12 @@
   },
   "P": {
    "level": 1,
-   "basis": "The Kidron = King's Valley link rests on 2 Sam 18:18 (Absalom's monument) and Clermont-Ganneau's 19th-c. gloss of Wady Fer'aun as 'valley of the king'. The equation with the Shaveh stays unresolved (Q22), with Baqʿah as a live alternative.",
+   "basis": "The Kidron = King's Valley link rests on 2 Sam 18:18 (Absalom's monument) and Clermont-Ganneau's 19th-c. gloss of Wady Fer'aun as 'valley of the king'. The equation with the Shaveh stays unresolved (Q22), with Baqʿah as a live alternative. Yadin, Temple Scroll I p. 303 (read 17 Oct) puts the Shaveh in the Beth ha-Kerem plain (1QapGen xxii 13-14) without locating it, and does not mention the Kidron. No level change (U1).",
    "sources": [
     "tables/phase5_reports.csv line 158 (SWP III pp. 53-54)",
     "research/phases/phase3_summary.md §4.5",
-    "research/logs/open_questions.md line 47"
+    "research/logs/open_questions.md line 47",
+    "registration/yadin1983_temple_scroll_p302_303_extracted.md"
    ]
   },
   "F": {
@@ -3977,11 +4002,12 @@
   },
   "P": {
    "level": 1,
-   "basis": "Shaveh is biblical (Gen 14:17, = King's Valley), but no source fixes which valley. Puech puts it toward Beth ha-Kerem / the Kidron, while Milik equates it with Josephus's Bethso at Baqʿah. Live alternatives of similar weight (Q22).",
+   "basis": "Shaveh is biblical (Gen 14:17, = King's Valley), but no source fixes which valley. Puech puts it toward Beth ha-Kerem / the Kidron, while Milik equates it with Josephus's Bethso at Baqʿah. Live alternatives of similar weight (Q22). Yadin, Temple Scroll I p. 303 (read 17 Oct): the Shaveh is the vale of the king in the Beth ha-Kerem plain, not Bethso; the plain is not located. No level change (U1).",
    "sources": [
     "text/readings.json e36-shaveh (Puech 2006 p. 194 n. 304; Milik p. 274; Høgenhaven p. 77)",
     "research/logs/open_questions.md line 47 (Q22)",
-    "atlas/app/atlas-data.json places jer_shaveh (source 'none: no source fixes the valley')"
+    "atlas/app/atlas-data.json places jer_shaveh (source 'none: no source fixes the valley')",
+    "registration/yadin1983_temple_scroll_p302_303_extracted.md"
    ]
   },
   "F": {
@@ -4048,10 +4074,11 @@
   },
   "P": {
    "level": 1,
-   "basis": "This rests on Milik's chain (Shaveh = Bethso = Baqʿah, the irrigated part placed in his SW necropolis), which Puech rejects.",
+   "basis": "This rests on Milik's chain (Shaveh = Bethso = Baqʿah, the irrigated part placed in his SW necropolis), which Puech rejects. Yadin, Temple Scroll I pp. 302-303 (read 17 Oct) rejects the Shaveh = Bethso step on which this rests; his Beth ha-Kerem plain is unlocated. No level change (U1).",
    "sources": [
     "tables/phase5_reports.csv line 162 (Milik D67 p. 274)",
-    "research/phases/phase3_summary.md §4.5"
+    "research/phases/phase3_summary.md §4.5",
+    "registration/yadin1983_temple_scroll_p302_303_extracted.md"
    ]
   },
   "F": {
@@ -4342,11 +4369,12 @@
   },
   "F": {
    "level": 1,
-   "basis": "Only generic tombs: four undated bench tombs on the upper village's west slope (IAA Benjamin survey site 143, printed p. 142), kokhim tombs at Kh. ez-Zeit, and a robbed kokhim tomb at the lower village whose exterior entrance faces south (Peleg 2004 Fig. 1). No chamber facing west, no channel, no 16-cubit depth. No tomb plan or bearing at site 143.",
+   "basis": "Only generic tombs: four undated bench tombs on the upper village's west slope (IAA Benjamin survey site 143, printed p. 142), kokhim tombs at Kh. ez-Zeit, and a robbed kokhim tomb at the lower village whose exterior entrance faces south (Peleg 2004 Fig. 1). No chamber facing west, no channel, no 16-cubit depth. No tomb plan or bearing at site 143. HA 85 (1984) pp. 30-31 (read 17 Oct) is only Eitam's preliminary notice of the Land of Benjamin survey (109 sites in 1984, totals by type and period); it records no tomb at Beth-Horon. The owner reports HA 31/32 (1969) p. 13 is a stone dyeing installation with no tomb. No level change (U6).",
    "sources": [
     "research/sites/entry40_bethhoron_review.md table; 'Tomb-plan check'; 'Native Benjamin survey check'",
     "research/logs/findings_log.md F8.3, F19.2, F19.3",
-    "research/OPEN_QUESTIONS.md R04"
+    "research/OPEN_QUESTIONS.md R04",
+    "registration/new_sources_round2_2026-10-17_results.md (U6)"
    ]
   },
   "D": {
@@ -4373,7 +4401,7 @@
    "F",
    "D"
   ],
-  "decisive_next": "An Upper Beth-Horon tomb field drawing with entrance bearing, channel relation and chronology: HA 85 (1984) p. 31 or HA 31/32 (1969) p. 13 (OPEN_QUESTIONS R04).",
+  "decisive_next": "An Upper Beth-Horon tomb field drawing with entrance bearing, channel relation and chronology. The two HA locators previously named are not it: HA 85 p. 31 is the general Benjamin survey notice, and HA 31/32 p. 13 is reported to be a dyeing installation; the source of those citations needs checking (OPEN_QUESTIONS R04).",
   "flags": [
    "The Lower Beth-Horon tomb fails a west-facing exterior-entrance model (F19.3); this conditional result is not in the outcome ledger's conditional_model_exclusions.",
    "R stays 1 even if the IX 7 specialist reading confirms ים, because the article-for-'Beth' rule and Milik's waw remain."
@@ -5750,21 +5778,23 @@
   },
   "F": {
    "level": 2,
-   "basis": "The editors report a double reservoir at St Anne's with a smaller northern basin: the kind plus one attribute. The basin 'one can enter' is not established, and Puech notes other small basins easier to enter. The original excavation reports (Vincent and Abel 1926; Jeremias) were not read.",
+   "basis": "The editors report a double reservoir at St Anne's with a smaller northern basin: the kind plus one attribute. The basin 'one can enter' is not established, and Puech notes other small basins easier to enter. The original excavation reports (Vincent and Abel 1926; Jeremias) were not read. Gibson 2005 and 2011 (read 17 Oct): two separate trapezoidal pools, the northern 53 x 40 m (the smaller in area, by inference), the southern with steps and landings along its west side; no steps or other entry into the northern pool are recorded. No level change (U8).",
    "sources": [
     "tables/phase5_assessments.csv line 30 (reason)",
     "tables/feature_constraints.csv line 23 (small accessible basin: not established)",
-    "tables/phase5_reports.csv lines 197-199"
+    "tables/phase5_reports.csv lines 197-199",
+    "registration/gibson2005_2011_bethesda_extracted.md"
    ]
   },
   "D": {
    "level": 2,
-   "basis": "The complex's 1st-c. use rests on John 5:2, and now on a first-hand report: Duprez 1970 dates both pools to the 2nd c. BCE (p. 37, page image) and has them made useless when Agrippa I's wall stopped their winter filling (he died in 44 CE; p. 36). No stratified date for the smaller basin is recorded.",
+   "basis": "The complex's 1st-c. use rests on John 5:2, and now on a first-hand report: Duprez 1970 dates both pools to the 2nd c. BCE (p. 37, page image) and has them made useless when Agrippa I's wall stopped their winter filling (he died in 44 CE; p. 36). No stratified date for the smaller basin is recorded. Gibson dates both pools Herodian (31-22 BCE; 2005 p. 286, 2011 pp. 24-25, 41) from masonry and building order, with no stratified finds, against Duprez's 2nd c. BCE; both views have the pools standing in the window. No level change (U8).",
    "sources": [
     "tables/phase5_assessments.csv line 30",
     "tables/phase5_reports.csv lines 197-198",
     "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 pp. 120-123: northern pool fed until 41-44 CE; Gibson: both pools c. 25 BCE)",
-    "registration/duprez1970_extracted.md (pp. 35-37)"
+    "registration/duprez1970_extracted.md (pp. 35-37)",
+    "registration/gibson2005_2011_bethesda_extracted.md"
    ]
   },
   "U": {
@@ -5825,20 +5855,22 @@
   },
   "F": {
    "level": 1,
-   "basis": "Only generic features of the kind are reported. Duprez 1970 (first-hand, pp. 39-41, Pl. II) records the pre-70 installation east of the twin pools around a central cistern 1 (a natural grotto 8.50 m deep, 6 m across, its three side openings blocked in this period), with grottoes and small baths around it, and 'un seuil et quelques éléments du pied-droit de la porte' in place 'entre cette grotte 6 et la grande citerne 1' (p. 41, Pl. IX, 1), in a building whose plan cannot be reconstructed. He does not say the doorway led into the cistern, so the relation 'threshold of the cistern' (XII 2-3) is not recorded. Grotto 5, a small chamber of unknown use, has its steps on the west side on Pl. II (a plan reading; no threshold). No burial niche is recorded.",
+   "basis": "Only generic features of the kind are reported. Duprez 1970 (first-hand, pp. 39-41, Pl. II) records the pre-70 installation east of the twin pools around a central cistern 1 (a natural grotto 8.50 m deep, 6 m across, its three side openings blocked in this period), with grottoes and small baths around it, and 'un seuil et quelques éléments du pied-droit de la porte' in place 'entre cette grotte 6 et la grande citerne 1' (p. 41, Pl. IX, 1), in a building whose plan cannot be reconstructed. He does not say the doorway led into the cistern, so the relation 'threshold of the cistern' (XII 2-3) is not recorded. Grotto 5, a small chamber of unknown use, has its steps on the west side on Pl. II (a plan reading; no threshold). No burial niche is recorded. Gibson 2005 n. 30 and 2011 p. 28 (read 17 Oct) re-read the complex as a first-century dwelling (rooms, basements, two miqwaot, plastered basins, cistern F190, eleven troughs read as mangers); they record no threshold, doorway or entrance direction for any of its rooms or cisterns. No level change (U7).",
    "sources": [
     "registration/duprez1970_extracted.md (pp. 39-41, Pl. II, Pl. IX)",
     "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 p. 128)",
-    "research/regional/tombs/README.md line 120 (56-M: 0 matches)"
+    "research/regional/tombs/README.md line 120 (56-M: 0 matches)",
+    "registration/gibson2005_2011_bethesda_extracted.md"
    ]
   },
   "D": {
    "level": 2,
-   "basis": "F is 1, so D rates the site and cannot exceed 2. The pre-70 installation is dated by its grey plaster, by coins from Alexander Jannaeus to 68 CE and by 1st c. BCE-1st c. CE pottery (Duprez 1970 pp. 39, 42; also von Wahlde 2009 p. 128). The threshold is dated only by its context.",
+   "basis": "F is 1, so D rates the site and cannot exceed 2. The pre-70 installation is dated by its grey plaster, by coins from Alexander Jannaeus to 68 CE and by 1st c. BCE-1st c. CE pottery (Duprez 1970 pp. 39, 42; also von Wahlde 2009 p. 128). The threshold is dated only by its context. Gibson dates the complex to the first century CE (pottery and coins of the old excavations; the Bezetha quarter 'not before') and calls Duprez's Hasmonean start incorrect; still in the window, no feature-level date. No level change (U7).",
    "sources": [
     "tables/phase5_assessments.csv line 30",
     "registration/duprez1970_extracted.md (pp. 39, 42)",
-    "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 p. 128)"
+    "registration/bethesda_jstor_2026-10-16_extracted.md (von Wahlde 2009 p. 128)",
+    "registration/gibson2005_2011_bethesda_extracted.md"
    ]
   },
   "U": {
@@ -5970,11 +6002,12 @@
   },
   "D": {
    "level": 0,
-   "basis": "The evidence puts the summit site outside the window. Magen, Bijovsky and Tzionit 2021 (read first-hand): the six or seven coins of 50 BCE-70 CE (Augustus, Ambibulus, three of Festus, Nero 68 CE, perhaps one of Ascalon) 'are not related to historic events occurring at the site, but came there by chance' (Magen, p. 59); they 'are most likely random finds', and 'the site was not resettled until the end of the third century CE' (Bijovsky, pp. 106, 129). The volume gives no context for locus P5178. There are no Herodian or First Revolt coins.",
+   "basis": "The evidence puts the summit site outside the window. Magen, Bijovsky and Tzionit 2021 (read first-hand): the six or seven coins of 50 BCE-70 CE (Augustus, Ambibulus, three of Festus, Nero 68 CE, perhaps one of Ascalon) 'are not related to historic events occurring at the site, but came there by chance' (Magen, p. 59); they 'are most likely random finds', and 'the site was not resettled until the end of the third century CE' (Bijovsky, pp. 106, 129). The volume gives no context for locus P5178. There are no Herodian or First Revolt coins. Arie 2023 (read 17 Oct) re-dates the precinct's founding to the 7th c. BCE, with use to the early 2nd c. BCE, and reports nothing from the window. No level change (U10).",
    "sources": [
     "registration/magen2021_gerizim_coins_extracted.md (pp. 59, 106, 129, 159)",
     "registration/new_sources_2026-10-17_tests.md (T6)",
-    "research/logs/findings_log.md lines 605, 610, 640 (F10.1, F10.2, F11.1)"
+    "research/logs/findings_log.md lines 605, 610, 640 (F10.1, F10.2, F11.1)",
+    "registration/gibson_jacobson1994_arie2023_extracted.md"
    ]
   },
   "U": {

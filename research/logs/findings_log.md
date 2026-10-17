@@ -1577,3 +1577,18 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
   - 38 ʿAin en-Naṭuf: no dovecote in Hirschfeld's survey ([extraction](../../registration/hirschfeld1985_herodium_natuf_extracted.md));
   - 30 Tell el-Qos: Byzantine only ([extraction](../../registration/padis2011_tell_el_qos_extracted.md));
   - 3, 5, 8, 9, 10 Temple Mount and East Gate: nothing in Warren 1884 or the Gibson and Jacobson reproductions meets the tests ([extraction](../../registration/warren1884_temple_mount_cisterns_extracted.md)).
+
+## 17 October 2026 — Round-2 owner sources read under frozen tests
+
+[Tests](../../registration/new_sources_round2_2026-10-17_tests.md) (frozen in ab4f994) and [results](../../registration/new_sources_round2_2026-10-17_results.md). Four reader agents extracted the sources blind. I read Yadin p. 303 and HA 85 myself; both had already been summarised by the owner, so those two are not blind.
+
+- **Entry 35, Mar Saba: F 0→1 (label none → weak).** Patrich's *Map of Deir Mar Saba* records three undated cairns on the Kidron gorge below the monastery (Sites 99, 100, 108). None is at a gorge mouth, and none lies between the map's western edge and Mar Saba. [Extraction](../../registration/patrich_mar_saba_map_extracted.md).
+- **Entries 1 and 17, Buqeia: D 0→1 (labels none → weak).** The same map records Hellenistic and undivided "Roman" survey sherds at Kh. Abu Ṭabaq (Site 35, a ruin with steps into its reservoir) and at two other Iron II fortresses in the valley (Sites 91, 101). The rubric caps undivided survey sherds at D 1.
+- **No change:**
+  - 36–37 Shaveh: Yadin, *Temple Scroll* I p. 303, puts the Shaveh in the "Beth ha-Kerem plain" of 1QapGen and rejects Bethso, but does not locate the plain ([extraction](../../registration/yadin1983_temple_scroll_p302_303_extracted.md)). The Drive upload was vol. III, not vol. I;
+  - 55, 56 Bethesda: Gibson 2005/2011 date the pools Herodian on masonry alone and the eastern complex to the 1st c. CE as a dwelling, with no threshold or doorway recorded ([extraction](../../registration/gibson2005_2011_bethesda_extracted.md));
+  - 3, 5, 8, 9, 10 Temple Mount: Gibson and Jacobson 1994's two Hellenistic cisterns (Schick 15 and 29) meet no test ([extraction](../../registration/gibson_jacobson1994_arie2023_extracted.md));
+  - 57 Gerizim: Arie 2023 has nothing from the window;
+  - 25 Twin Cave: Bar-Adon's original pages confirm the summary; no plan or threshold ([extraction](../../registration/baradon1989_twin_cave_mizzi2017_extracted.md));
+  - 40 Beth-Horon: HA 85 p. 31 is only the general Benjamin survey notice;
+  - 16, 29, 35 Hyrcania: no Kidron dam, no northern-aqueduct crossing, no inlet.

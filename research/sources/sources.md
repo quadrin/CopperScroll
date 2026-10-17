@@ -662,3 +662,15 @@ Borrowed with the owner's Internet Archive account, at the owner's request. Text
   - Weksler-Bdolah et al., HA-ESI 125, 126, 134.
 
   Results: [registration/new_sources_2026-10-17_results.md](../../registration/new_sources_2026-10-17_results.md).
+
+## Round-2 owner sources — 17 October 2026 (afternoon)
+
+Tests frozen first: [registration/new_sources_round2_2026-10-17_tests.md](../../registration/new_sources_round2_2026-10-17_tests.md). Results: [registration/new_sources_round2_2026-10-17_results.md](../../registration/new_sources_round2_2026-10-17_results.md). Files are in the owner's Drive; none is in Git.
+
+- **Patrich, *Map of Deir Mar Saba (109/7)***, IAA online edition (2013), English and Hebrew web exports (new pagination, not the 1994 book). Extraction: [registration/patrich_mar_saba_map_extracted.md](../../registration/patrich_mar_saba_map_extracted.md).
+- **Yadin, *The Temple Scroll* I** (English ed., Jerusalem: IES, 1983), pp. 302–303; Internet Archive `templescrollmegi0001unse`, the owner's loan. The Drive upload of the same day is vol. III. Extraction: [registration/yadin1983_temple_scroll_p302_303_extracted.md](../../registration/yadin1983_temple_scroll_p302_303_extracted.md).
+- **Gibson 2005**, "The Pool of Bethesda in Jerusalem and Jewish Purification Practices of the Second Temple Period", *POC* 55, pp. 270–293; and **Gibson 2011**, "The Excavations at the Bethesda Pool in Jerusalem: Preliminary Report … (1999–2009)", pp. 17–44 (journal not named in the file). Academia downloads. Extraction: [registration/gibson2005_2011_bethesda_extracted.md](../../registration/gibson2005_2011_bethesda_extracted.md).
+- **Gibson and Jacobson 1994**, "The Oldest Datable Chambers on the Temple Mount in Jerusalem", *BA* 57.3, pp. 150–160; **Arie 2023**, "When was the Sacred Precinct on Mount Gerizim Really Constructed?", *Semitica* 65, pp. 141–164. Academia downloads. Extraction: [registration/gibson_jacobson1994_arie2023_extracted.md](../../registration/gibson_jacobson1994_arie2023_extracted.md).
+- **Bar-Adon 1989**, *ʿAtiqot* (Hebrew Series) 9, ch. 2, Twin Cave, pp. [15]–17 (owner's JSTOR capture of 2 Oct, read on the images); **Mizzi 2017**, review of *KhQ* IIIA, *Strata* 35. Extraction: [registration/baradon1989_twin_cave_mizzi2017_extracted.md](../../registration/baradon1989_twin_cave_mizzi2017_extracted.md).
+- **HA 85 (1984)**, pp. 30–31, Eitam, "Land of Benjamin survey" (owner's Drive). Recorded in the results file (U6).
+- **Not available:** the Kenyon *Jericho* III plates volume is not on archive.org (the item labelled "plates" is the text volume). Augustinović 1951 is *Gerico e dintorni* (owner's correction of the title).
