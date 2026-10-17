@@ -3,7 +3,7 @@
 
 Input:  research/assets/plans/site-photos-2026-10-17/manifest.json and its JPEGs.
 Output: atlas/research/assets/plans/site-photos-2026-10-17/ (byte-identical mirror),
-        atlas/public/dossiers/site-photos/gallery/<id>.webp (long side <= 1600 px, quality 80),
+        atlas/public/dossiers/site-photos/gallery/<id>.webp (long side <= 1600 px, quality 80) and <id>-thumb.webp (240 px),
         atlas/app/atlas-site-gallery.json (display fields only).
 
 Run from the repository root:  python3 -I tools/build_site_gallery.py
@@ -22,7 +22,7 @@ SRC = ROOT / "research/assets/plans" / SET
 MIRROR = ROOT / "atlas/research/assets/plans" / SET
 WEB = ROOT / "atlas/public/dossiers/site-photos/gallery"
 OUT = ROOT / "atlas/app/atlas-site-gallery.json"
-DISPLAY = ["id", "placeId", "kind", "web", "webWidth", "webHeight", "title", "author", "credit",
+DISPLAY = ["id", "placeId", "kind", "web", "thumb", "webWidth", "webHeight", "title", "author", "credit",
            "license", "licenseUrl", "sourceUrl", "date", "alt", "caption", "relevance", "entryIds"]
 ALLOWED = ("CC BY", "CC0", "Public domain", "No known restrictions")
 
@@ -50,10 +50,15 @@ def main() -> int:
             im.thumbnail((1600, 1600), Image.LANCZOS)
             im.save(web, "WEBP", quality=80, method=6)
             w, h = im.size
-        item.update(web=web.name, webWidth=w, webHeight=h, webSha256=sha(web))
+        thumb = WEB / f"{item['id']}-thumb.webp"
+        with Image.open(jpg) as im:
+            im = im.convert("RGB")
+            im.thumbnail((240, 240), Image.LANCZOS)
+            im.save(thumb, "WEBP", quality=72, method=6)
+        item.update(web=web.name, webWidth=w, webHeight=h, webSha256=sha(web), thumb=thumb.name)
         gallery.append({k: item[k] for k in DISPLAY})
     (SRC / "manifest.json").write_text(json.dumps(items, ensure_ascii=False, indent=1) + "\n")
-    stale = {p.name for p in WEB.glob("*.webp")} - {g["web"] for g in gallery}
+    stale = {p.name for p in WEB.glob("*.webp")} - {g["web"] for g in gallery} - {g["thumb"] for g in gallery}
     for name in stale:
         (WEB / name).unlink()
     if MIRROR.exists():

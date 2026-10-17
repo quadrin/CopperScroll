@@ -20,7 +20,7 @@ Source-plan geometry is not geographic geometry. These figures have no establish
 
 ## Next asset additions
 
-Extend `app/atlas-site-plans.json` and the existing `app/atlas-scenes.json` with image/feature IDs, source references, exact captions, dates, photographer/author, licence, dimensions and frame-relative polygons. Multiple photographs per candidate should form a thumbnail gallery; a single scene is available per currently photographed place. Additional photographs of the same mapped structure can share a feature ID only after correspondence is documented.
+Extend `app/atlas-site-plans.json` and the existing `app/atlas-scenes.json` with image/feature IDs, source references, exact captions, dates, photographer/author, licence, dimensions and frame-relative polygons. Since 17 October 2026 each place can carry a thumbnail gallery: the annotated scenes come first, then the photographs in `app/atlas-site-gallery.json` (160 photographs at 31 places, built by `../tools/build_site_gallery.py` from the archived set in `research/assets/plans/site-photos-2026-10-17/`). Gallery photographs have captions and credits but no highlights; a highlight needs its own feature record. Additional photographs of the same mapped structure can share a feature ID only after correspondence is documented.
 
 Registered plans can add geographical footprints, channel paths and camera locations. Excavation phases should retain their own dated geometry. Measured 3D dimensions need published support. Display heights and simplified volumes are explicitly qualified in each model; they cannot serve as surveyed remains.
 

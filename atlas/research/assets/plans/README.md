@@ -4,6 +4,8 @@ Source figures, project reconstructions and diagnostics retain separate labels. 
 
 ## Archived sets
 
+- [Site photographs, 17 October 2026](site-photos-2026-10-17/README.md): 160 photographs of 31 atlas places for the atlas gallery, 113 from Wikimedia Commons (PD, CC0, CC BY, CC BY-SA) and 47 from the Library of Congress Matson collection (no known restrictions; 13 air views of 1931/1937). Captions written after viewing; manifest with licences, hashes and transformations.
+
 - [Full-resolution South](tir-michigan/south/README.md) and [Eretz Israel/Sinai](tir-michigan/eretz-sinai/README.md): complete-sheet views, reconstructable native-resolution JPEGs, regional crops and lossless legends; recovered copies match the earlier source hashes.
 
 - [Full-resolution general North follow-up](tir-michigan/north/README.md): complete-sheet viewing image, full native-resolution JPEG derivative in checksum-verified parts, and nine lossless detail crops. Source TIFF recovered; same source as earlier intake.

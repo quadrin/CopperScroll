@@ -40,6 +40,7 @@ Each folder records where its data came from (links, archive IDs or Drive IDs, a
 | Ancient salvage accounts and earlier searches | [history/salvage_records](../history/salvage_records/README.md) | `sources.csv`, `source_files.csv` | Public-domain translations and open reports | Allegro's books and several excavation reports (copyright) |
 | Second Temple sites east of the Jordan | [regional/peraea](../regional/peraea/README.md) | `sources.csv`, `doa_search_log.csv`, `access_requests.md` | Jordan Department of Antiquities publication archive (ADAJ) | MEGA-Jordan and EAMENA (accounts: EAMENA registered 9 October, level pending; MEGA-Jordan request drafted for the owner) |
 | Concealment comparanda (hoards, caches) | [comparanda/concealment_contexts](../comparanda/concealment_contexts/README.md) | `sources_read.csv` | CHRE (Oxford), the T02 hoard list | Chance and market finds rarely give a context |
+| Online photographs, videos and 3D models of the atlas places (17 October 2026) | [sources/online_imagery_2026-10-17](online_imagery_2026-10-17/README.md) | `sources_list.md`, `hebrew_arabic_search.md`, archive [site-photos-2026-10-17](../assets/plans/site-photos-2026-10-17/manifest.json) | Wikimedia Commons API, Library of Congress (Matson), YouTube oEmbed, Sketchfab API | Sketchfab downloads (sign-in); NLI 1894 Solomon's Stables (browser check); Tyropoeon and el-Baqʿa (rate limit) |
 
 ## Puech 2006 (primary reading)
 
