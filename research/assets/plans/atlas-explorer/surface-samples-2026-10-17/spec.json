@@ -1,0 +1,510 @@
+{
+ "method": "Each box is a fraction of the full photograph (x0, y0, x1, y1; x right, y down), placed by eye on a 10 x 10 grid inside one patch of a single material and checked on the swatch sheet. The tool drops clipped pixels (any channel 250 or more) and keeps the pixels between the 70th and 95th percentile of the box's luminance, i.e. the sunlit faces of stones rather than joints, crevices and self-shadow (a renderer adds its own shading, so the base colour should be the lit face; a first pass at the 15th–85th and then 40th–90th percentiles gave colours darker than the stones' lit faces because rubble walls are mostly crevice), and records their per-channel median sRGB. A surface colour is the median of its sample medians. Boxes that were blown out or lit by low evening sun were dropped after the first pass (kh-qumran-l12-13 ground, kh-qumran-l110 channel, qumran-reference lip). Photographs differ in exposure, white balance and lighting, so the result is a photo-guided base colour for procedural surface art, not a measured ancient surface colour. A dusk photograph (wadi-qumran-pw28412) gave bluish greys and was dropped from the colour samples. Calibration: photographs are exposed automatically while the renderer's lighting is fixed, so raw medians render darker or brighter than the site looks. The atlas therefore uses each sampled colour's hue and chroma (CIELAB a*, b*) and its lightness relative to the other surfaces at the same site, and shifts the site's lightness so that its mean L* equals the mean L* of the earlier hand-tuned palette for the same surfaces. Raw medians are kept as photoMedian with the shift applied (lightnessShift).",
+ "sites": {
+  "qumran": {
+   "masonry": "rubble",
+   "masonryEvidence": [
+    "kh-qumran-excavations-looking-west-1947-1961",
+    "kh-qumran-l110",
+    "kh-qumran-l12-13",
+    "kh-qumran-l48",
+    "wadi-qumran-kq2"
+   ],
+   "masonryNote": "Walls of irregular fieldstones of mixed size laid in rough courses; dressed stones only at door jambs (kh-qumran-l12-13).",
+   "samples": [
+    {
+     "photo": "kh-qumran-l12-13",
+     "surface": "masonry",
+     "box": [
+      0.45,
+      0.42,
+      0.68,
+      0.7
+     ],
+     "note": "rubble wall face, sunlit"
+    },
+    {
+     "photo": "kh-qumran-l12-13",
+     "surface": "masonry",
+     "box": [
+      0.76,
+      0.34,
+      0.97,
+      0.68
+     ],
+     "note": "rubble wall face, sunlit"
+    },
+    {
+     "photo": "kh-qumran-l110",
+     "surface": "masonry",
+     "box": [
+      0.0,
+      0.25,
+      0.3,
+      0.38
+     ],
+     "note": "rubble wall beyond the cistern"
+    },
+    {
+     "photo": "kh-qumran-pool-crack",
+     "surface": "plaster",
+     "box": [
+      0.12,
+      0.62,
+      0.45,
+      0.95
+     ],
+     "note": "plastered steps of the stepped pool"
+    },
+    {
+     "photo": "kh-qumran-l48",
+     "surface": "plaster",
+     "box": [
+      0.46,
+      0.43,
+      0.62,
+      0.6
+     ],
+     "note": "worn plastered steps of L48"
+    },
+    {
+     "photo": "wadi-qumran-caves-4-10",
+     "surface": "bedrock",
+     "box": [
+      0.3,
+      0.3,
+      0.45,
+      0.42
+     ],
+     "note": "sunlit marl of the Cave 4 spur"
+    },
+    {
+     "photo": "wadi-qumran-caves-4-10",
+     "surface": "bedrock",
+     "box": [
+      0.5,
+      0.42,
+      0.62,
+      0.55
+     ],
+     "note": "sunlit marl slope below the caves"
+    },
+    {
+     "photo": "wadi-qumran-kq2",
+     "surface": "soil",
+     "box": [
+      0.55,
+      0.82,
+      0.85,
+      0.95
+     ],
+     "note": "ground beside the tower, overcast light"
+    },
+    {
+     "photo": "wadi-qumran-kq2",
+     "surface": "masonry",
+     "box": [
+      0.05,
+      0.55,
+      0.4,
+      0.72
+     ],
+     "note": "rubble of the tower, overcast light"
+    }
+   ]
+  },
+  "siloam": {
+   "masonry": "ashlar",
+   "masonryEvidence": [
+    "jer_siloam-steps-2017",
+    "siloam-reference"
+   ],
+   "masonryNote": "Large squared limestone slabs in the excavated steps; joints filled with rubble where blocks are broken (jer_siloam-steps-2017).",
+   "samples": [
+    {
+     "photo": "jer_siloam-steps-2017",
+     "surface": "masonry",
+     "box": [
+      0.15,
+      0.62,
+      0.55,
+      0.85
+     ],
+     "note": "step slab, diffuse light"
+    },
+    {
+     "photo": "jer_siloam-steps-2017",
+     "surface": "masonry",
+     "box": [
+      0.76,
+      0.36,
+      0.98,
+      0.52
+     ],
+     "note": "step slab, diffuse light"
+    },
+    {
+     "photo": "jer_siloam-steps-2017",
+     "surface": "masonry",
+     "box": [
+      0.33,
+      0.03,
+      0.52,
+      0.13
+     ],
+     "note": "upper step block"
+    },
+    {
+     "photo": "siloam-reference",
+     "surface": "masonry",
+     "box": [
+      0.72,
+      0.4,
+      0.86,
+      0.52
+     ],
+     "note": "sunlit paving beside the steps"
+    },
+    {
+     "photo": "siloam-reference",
+     "surface": "bedrock",
+     "box": [
+      0.22,
+      0.0,
+      0.38,
+      0.08
+     ],
+     "note": "bedrock scarp above the steps"
+    },
+    {
+     "photo": "jer_siloam-steps-2017",
+     "surface": "soil",
+     "box": [
+      0.4,
+      0.53,
+      0.6,
+      0.58
+     ],
+     "note": "earth in the joints between step rows"
+    }
+   ]
+  },
+  "gerizim": {
+   "masonry": "ashlar",
+   "masonryEvidence": [
+    "gerizim-ovedc-c24",
+    "gerizim-yonger-2018",
+    "gerizim-fallaner-p305"
+   ],
+   "masonryNote": "Massive squared ashlar in long courses with fine joints; precinct floors paved (gerizim-ovedc-c24, gerizim-yonger-2018).",
+   "samples": [
+    {
+     "photo": "gerizim-ovedc-c24",
+     "surface": "masonry",
+     "box": [
+      0.05,
+      0.7,
+      0.68,
+      0.88
+     ],
+     "note": "sunlit ashlar wall face"
+    },
+    {
+     "photo": "gerizim-yonger-2018",
+     "surface": "masonry",
+     "box": [
+      0.34,
+      0.6,
+      0.46,
+      0.78
+     ],
+     "note": "ashlar wall face"
+    },
+    {
+     "photo": "gerizim-yonger-2018",
+     "surface": "masonry",
+     "box": [
+      0.62,
+      0.56,
+      0.88,
+      0.72
+     ],
+     "note": "ashlar wall face"
+    },
+    {
+     "photo": "gerizim-meronim-009",
+     "surface": "bedrock",
+     "box": [
+      0.66,
+      0.55,
+      0.8,
+      0.68
+     ],
+     "note": "bedrock outcrop on the summit"
+    },
+    {
+     "photo": "gerizim-meronim-009",
+     "surface": "bedrock",
+     "box": [
+      0.33,
+      0.4,
+      0.45,
+      0.52
+     ],
+     "note": "exposed rock floor"
+    },
+    {
+     "photo": "gerizim-meronim-009",
+     "surface": "soil",
+     "box": [
+      0.2,
+      0.62,
+      0.55,
+      0.78
+     ],
+     "note": "earth with dry grass in an excavated room"
+    }
+   ],
+   "lichen": 0.08,
+   "lichenNote": "Reference photographs show clean pale ashlar with only small orange lichen spots (gerizim-ovedc-c24, gerizim-yonger-2018); the earlier dark weathering weight of 0.28 was reduced."
+  },
+  "hyrcania": {
+   "masonry": "rubble",
+   "masonryEvidence": [
+    "hyrcania-c-hurkaniatop",
+    "hyrcania-c-hurkania-5011"
+   ],
+   "masonryNote": "Summit walls survive as tumbled rubble of rough blocks beside stone paving; the reservoirs are cut into pale chalky rock (hyrcania-c-hurkaniatop, hyrcania-c-hurkania-5011).",
+   "samples": [
+    {
+     "photo": "hyrcania-c-hurkaniatop",
+     "surface": "masonry",
+     "box": [
+      0.12,
+      0.4,
+      0.3,
+      0.5
+     ],
+     "note": "rubble wall remains"
+    },
+    {
+     "photo": "hyrcania-c-hurkaniatop",
+     "surface": "masonry",
+     "box": [
+      0.3,
+      0.33,
+      0.55,
+      0.4
+     ],
+     "note": "rubble wall remains"
+    },
+    {
+     "photo": "hyrcania-c-hurkania-5011",
+     "surface": "bedrock",
+     "box": [
+      0.05,
+      0.62,
+      0.2,
+      0.72
+     ],
+     "note": "sunlit edge of a rock-cut reservoir"
+    },
+    {
+     "photo": "hyrcania-c-hurkaniatop",
+     "surface": "soil",
+     "box": [
+      0.05,
+      0.62,
+      0.28,
+      0.88
+     ],
+     "note": "summit ground"
+    },
+    {
+     "photo": "hyrcania-c-hurkania-5011",
+     "surface": "soil",
+     "box": [
+      0.05,
+      0.2,
+      0.4,
+      0.3
+     ],
+     "note": "hillside beyond the reservoirs"
+    },
+    {
+     "photo": "hyrcania-c-hurkania-5011",
+     "surface": "masonry",
+     "box": [
+      0.2,
+      0.55,
+      0.35,
+      0.65
+     ],
+     "note": "built lining wall of small coursed stones above a reservoir"
+    }
+   ]
+  },
+  "jericho": {
+   "masonry": "coursed",
+   "masonryEvidence": [
+    "jericho-palaces-hasmonean-palace-2013",
+    "jericho-palaces-mikveh"
+   ],
+   "masonryNote": "Palace walls of rough fieldstone in rough courses, larger roughly squared stones at a corner (jericho-palaces-hasmonean-palace-2013); a mud-brick wall stands beside a plastered stepped pool (jericho-palaces-mikveh). Mud brick is noted but not sampled as stone.",
+   "samples": [
+    {
+     "photo": "jericho-palaces-hasmonean-palace-2013",
+     "surface": "masonry",
+     "box": [
+      0.52,
+      0.34,
+      0.6,
+      0.44
+     ],
+     "note": "sunlit corner block, roughly squared stones in courses"
+    },
+    {
+     "photo": "jericho-palaces-hasmonean-palace-2013",
+     "surface": "masonry",
+     "box": [
+      0.4,
+      0.42,
+      0.48,
+      0.48
+     ],
+     "note": "sunlit long wall, rough stones in rough courses"
+    },
+    {
+     "photo": "jericho-palaces-hasmonean-palace-2013",
+     "surface": "masonry",
+     "box": [
+      0.24,
+      0.44,
+      0.34,
+      0.5
+     ],
+     "note": "sunlit lower course of the long wall"
+    },
+    {
+     "photo": "jericho-palaces-hasmonean-palace-2013",
+     "surface": "bedrock",
+     "box": [
+      0.05,
+      0.33,
+      0.11,
+      0.35
+     ],
+     "note": "sunlit marl/limestone outcrop (small patch)"
+    },
+    {
+     "photo": "jericho-palaces-hasmonean-palace-2013",
+     "surface": "soil",
+     "box": [
+      0.3,
+      0.82,
+      0.5,
+      0.95
+     ],
+     "note": "sunlit gravelly ground"
+    },
+    {
+     "photo": "jericho-palaces-hasmonean-palace-2013",
+     "surface": "soil",
+     "box": [
+      0.62,
+      0.84,
+      0.85,
+      0.96
+     ],
+     "note": "sunlit ground"
+    },
+    {
+     "photo": "jericho-palaces-mikveh",
+     "surface": "plaster",
+     "box": [
+      0.8,
+      0.82,
+      0.92,
+      0.88
+     ],
+     "note": "sunlit plastered floor"
+    },
+    {
+     "photo": "jericho-palaces-mikveh",
+     "surface": "plaster",
+     "box": [
+      0.44,
+      0.73,
+      0.56,
+      0.77
+     ],
+     "note": "sunlit plastered step"
+    },
+    {
+     "photo": "jericho-palaces-mikveh",
+     "surface": "soil",
+     "box": [
+      0.32,
+      0.65,
+      0.44,
+      0.72
+     ],
+     "note": "earth with pebbles in the basin floor"
+    }
+   ]
+  },
+  "doq": {
+   "masonry": "coursed",
+   "masonryEvidence": [
+    "doq-ihm-fortress-2"
+   ],
+   "masonryNote": "The summit enclosure wall is coursed squared stone close to rough ashlar (doq-ihm-fortress-2, at sunset, used for type only). No ancient masonry was sampled for colour; the stone and plaster colours keep the earlier palette.",
+   "samples": [
+    {
+     "photo": "doq-deror-1190713",
+     "surface": "bedrock",
+     "box": [
+      0.42,
+      0.05,
+      0.5,
+      0.12
+     ],
+     "note": "diffuse-lit limestone cliff, upper slope"
+    },
+    {
+     "photo": "doq-deror-1190713",
+     "surface": "bedrock",
+     "box": [
+      0.3,
+      0.62,
+      0.38,
+      0.69
+     ],
+     "note": "cliff ledge below the monastery"
+    },
+    {
+     "photo": "doq-deror-1190713",
+     "surface": "bedrock",
+     "box": [
+      0.41,
+      0.77,
+      0.55,
+      0.88
+     ],
+     "note": "lower cliff face clear of the caves"
+    },
+    {
+     "photo": "doq-deror-1190713",
+     "surface": "soil",
+     "box": [
+      0.7,
+      0.9,
+      0.86,
+      0.97
+     ],
+     "note": "marl scree slope"
+    }
+   ]
+  }
+ }
+}

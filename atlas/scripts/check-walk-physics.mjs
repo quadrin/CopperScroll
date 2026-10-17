@@ -55,7 +55,8 @@ for(const hz of [30,60,144]){
 // Exercise the same irregular rock and instanced masonry used by the atlas,
 // both on flat Map ground and after the DEM fit moves and tilts the geometry.
 async function module(file,deps){const value={};new Function('exports','require',ts.transpileModule(await readFile(new URL(file,import.meta.url),'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS}}).outputText)(value,name=>{assert(name in deps,`Missing dependency ${name}`);return deps[name];});return value;}
-const surfaces=await module('../app/atlas-site-materials.ts',{'three':T});
+const siteSurfaces=JSON.parse((await import('node:fs')).readFileSync(new URL('../app/atlas-site-surfaces.json',import.meta.url),'utf8'));
+const surfaces=await module('../app/atlas-site-materials.ts',{'three':T,'./atlas-site-surfaces.json':{__esModule:true,default:siteSurfaces,...siteSurfaces}});
 const pilot=await module('../app/atlas-qumran-pilot.ts',{'three':T,'maplibre-gl':maplibre,'./atlas-site-materials':surfaces});
 root=pilot.buildQumranPilot();
 for(const sloped of [false,true]){

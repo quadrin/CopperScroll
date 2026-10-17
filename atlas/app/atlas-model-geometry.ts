@@ -39,13 +39,23 @@ export function buildModel(plan:SitePlan):ModelGeometry {
    const a=points[i],b=points[(i+1)%points.length],length=Math.hypot(b[0]-a[0],b[1]-a[1]);
    const yaw=-Math.atan2(b[1]-a[1],b[0]-a[0]);
    if(mat===stone&&length>.8){
-    const rows=Math.max(1,Math.ceil(height/surfaces.style.courses)),columns=Math.max(1,Math.ceil(length/(surfaces.style.id==='gerizim'?1.05:.68))),h=height/rows;
-    const blocks=new T.InstancedMesh(chippedBlock(1,1,1,17),cloneSiteMaterial(surfaces.block),rows*(columns+1)),o=new T.Object3D();let index=0;
-    for(let row=0;row<rows;row++)for(let col=0;col<=columns;col++){
-     const step=length/columns,offset=(row%2)*step*.5,left=Math.max(0,col*step-offset),right=Math.min(length,(col+1)*step-offset);if(right-left<.025)continue;
-     const t=(left+right)/(2*length),tone=.81+((col*11+row*7)%23)/80;
-     o.position.set(a[0]+(b[0]-a[0])*t,y+(row+.5)*h,a[1]+(b[1]-a[1])*t);o.rotation.set(0,yaw,Math.sin(col*13+row*7)*.004);o.scale.set(right-left-.014,h-.012,thickness);o.updateMatrix();blocks.setMatrixAt(index,o.matrix);blocks.setColorAt(index++,new T.Color().setScalar(tone));
-    }blocks.count=index;blocks.castShadow=blocks.receiveShadow=true;root.add(tag(blocks,id));
+    const kind=surfaces.style.masonry,rubble=kind==='rubble',unit=kind==='ashlar'?1.05:rubble?.46:.68;
+    const rows=Math.max(1,Math.ceil(height/surfaces.style.courses)),columns=Math.max(1,Math.ceil(length/unit)),h=height/rows;
+    const blocks=new T.InstancedMesh(chippedBlock(1,1,1,17),cloneSiteMaterial(surfaces.block),rows*(columns*2+2)),o=new T.Object3D();let index=0;
+    const jitter=(k:number,seed:number)=>Math.sin(k*12.9898+seed*78.233)*.5;
+    for(let row=0;row<rows;row++){
+     // Rubble (Qumran, Hyrcania, from their reference photos) uses unequal
+     // stone lengths, heights and set-backs; coursed and ashlar keep regular joints.
+     const cuts=[0];if(rubble){let x=0,k=0;while(x<length){x=Math.min(length,x+unit*(.62+(jitter(row*41+k++,i+3)+.5)*.85));cuts.push(x);}}
+     else{const step=length/columns,offset=(row%2)*step*.5;for(let col=0;col<=columns;col++)cuts.push(Math.min(length,Math.max(0,(col+1)*step-offset)));}
+     for(let c=1;c<cuts.length;c++){
+      const left=cuts[c-1],right=cuts[c];if(right-left<.025)continue;
+      const t=(left+right)/(2*length),tone=rubble?.72+(jitter(row*7+c,11)+.5)*.42:.81+((c*11+row*7)%23)/80;
+      const hh=rubble?h*(.78+(jitter(row*5+c,7)+.5)*.2):h,dz=rubble?jitter(row*3+c,5)*.07:0;
+      o.position.set(a[0]+(b[0]-a[0])*t+Math.sin(yaw)*dz,y+(row+.5)*h+(rubble?jitter(c,row)*.03:0),a[1]+(b[1]-a[1])*t+Math.cos(yaw)*dz);
+      o.rotation.set(rubble?jitter(c,row+2)*.05:0,yaw+(rubble?jitter(c+row,4)*.06:0),rubble?jitter(c*13,row)*.08:Math.sin(c*13+row*7)*.004);
+      o.scale.set(right-left-(rubble?.035:.014),hh-.012,thickness*(rubble?.92+(jitter(c,row+9)+.5)*.12:1));o.updateMatrix();blocks.setMatrixAt(index,o.matrix);blocks.setColorAt(index++,new T.Color().setScalar(tone));
+     }}blocks.count=index;blocks.castShadow=blocks.receiveShadow=true;root.add(tag(blocks,id));
    }else {const m=box((a[0]+b[0])/2,(a[1]+b[1])/2,length,thickness,height,y,id,mat);m.rotation.y=yaw;}
    // Individually chipped coping stones give the ruin a broken silhouette.
    // Their positions and wear are surface art, not a stone-by-stone survey.
@@ -159,7 +169,7 @@ export function buildModel(plan:SitePlan):ModelGeometry {
  const bounds=new T.Box3().setFromObject(root);bounds.expandByPoint(new T.Vector3(-ground.w/2,-1,-ground.d/2));bounds.expandByPoint(new T.Vector3(ground.w/2,1,ground.d/2));const center=bounds.getCenter(new T.Vector3());
  root.position.set(-center.x,0,-center.z);markers.forEach(p=>{p.x-=center.x;p.z-=center.z});
  const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;root.add(context.mesh);context.details.position.set(center.x,0,center.z);root.add(context.details);
- assumptions.push(`Surface art uses a ${surfaces.style.id} material palette, metre-scaled stone joints, chipped edges, plaster wear and soil relief. These are illustrative visual treatments, not recorded individual stones or weathering.`);
+ assumptions.push(surfaces.style.photos.length?`Base colours and the ${surfaces.style.masonry} masonry pattern are taken from reference photographs (${surfaces.style.photos.join(', ')}): sunlit-face medians of sample boxes, recorded in research/assets/plans/atlas-explorer/surface-samples-2026-10-17. ${surfaces.style.masonryNote??''} Individual stones, joints, chipped edges, plaster wear and soil relief remain illustrative, not recorded stones or weathering; photographs vary in exposure and white balance.`:`Surface art uses a ${surfaces.style.id} material palette, metre-scaled stone joints, chipped edges, plaster wear and soil relief. These are illustrative visual treatments, not recorded individual stones or weathering.`);
  assumptions.push(context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");
  const starts:Record<string,[string,number,number,number,number]>={'gerizim-precinct':['east-stair',28,22,308,100],'hyrcania-waterworks':['north-pool',0,-12,180,76],'jericho-early':['complex',0,6,0,76],'jericho-late':['complex',0,12,0,76],'siloam-receiver':['L103',0,6,0,80],'doq-waterworks':['intake',4,5,-35,83],'jericho-ac':['AC94',0,7,0,80]};
  const start=starts[plan.id],point=start?markers.get(start[0]):undefined;

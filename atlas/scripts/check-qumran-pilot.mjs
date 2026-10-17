@@ -5,7 +5,8 @@ import * as Three from 'three';
 import * as maplibre from 'maplibre-gl';
 // Compile in memory so this geometry check needs neither a GPU nor a preview server.
 async function module(path,deps){const exports={};const code=ts.transpileModule(await readFile(new URL(path,import.meta.url),'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,esModuleInterop:true}}).outputText;new Function('exports','require',code)(exports,name=>{assert(name in deps,`Missing test dependency: ${name}`);return deps[name]});return exports;}
-const surfaces=await module('../app/atlas-site-materials.ts',{'three':Three});
+const siteSurfaces=JSON.parse((await import('node:fs')).readFileSync(new URL('../app/atlas-site-surfaces.json',import.meta.url),'utf8'));
+const surfaces=await module('../app/atlas-site-materials.ts',{'three':Three,'./atlas-site-surfaces.json':{__esModule:true,default:siteSurfaces,...siteSurfaces}});
 const pilot=await module('../app/atlas-qumran-pilot.ts',{'three':Three,'maplibre-gl':maplibre,'./atlas-site-materials':surfaces});
 assert(pilot.pilotAvailable("kh_qumran"));assert(pilot.pilotAvailable("wadi_qumran"));assert(!pilot.pilotAvailable("abu_saraj"));
 assert.deepEqual(pilot.pilotLocation(0,0).map(n=>+n.toFixed(5)),pilot.PILOT_ANCHOR);

@@ -1,16 +1,27 @@
 import * as T from 'three';
 
-// Original procedural surface art. Photos guide the material character, not a
-// claim about individual blocks, cracks, weathering or ancient surface colours.
+// Original procedural surface art. Base colours and masonry types come from
+// reference photographs (atlas-site-surfaces.json, built by
+// tools/build_site_surfaces.py); the photos guide the material character, not
+// a claim about individual blocks, cracks, weathering or ancient surface colours.
+import surfaceData from './atlas-site-surfaces.json';
 type Surface = 'masonry' | 'limestone' | 'bedrock' | 'soil' | 'plaster';
-type Style = {id:string;stone:string;rock:string;soil:string;plaster:string;lichen:number;courses:number};
-export const siteStyle = (id:string):Style => {
+export type Masonry = 'rubble' | 'coursed' | 'ashlar' | 'mudbrick';
+type Style = {id:string;stone:string;rock:string;soil:string;plaster:string;lichen:number;courses:number;masonry:Masonry;photos:string[];masonryNote?:string};
+type PhotoSurface = {stone?:string;rock?:string;soil?:string;plaster?:string;masonry:Masonry;masonryNote:string;photos:string[];lichen?:number};
+const photoSurfaces = surfaceData.sites as Record<string,PhotoSurface>;
+const fallback = (id:string) => {
  if(id.includes('gerizim'))return {id:'gerizim',stone:'#aaa99b',rock:'#97978a',soil:'#827a61',plaster:'#c3ba9f',lichen:.28,courses:.38};
  if(id.includes('siloam'))return {id:'siloam',stone:'#b7ad92',rock:'#a9a087',soil:'#8f8269',plaster:'#b1b09c',lichen:.23,courses:.33};
  if(id.includes('jericho'))return {id:'jericho',stone:'#ceb998',rock:'#b7a387',soil:'#ae8d67',plaster:'#dbbba0',lichen:.015,courses:.31};
  if(id.includes('doq'))return {id:'doq',stone:'#baab8a',rock:'#ac926e',soil:'#9e825f',plaster:'#c2b79b',lichen:.035,courses:.33};
  if(id.includes('hyrcania'))return {id:'hyrcania',stone:'#c9bea1',rock:'#b8ab8d',soil:'#a39170',plaster:'#b4b5a0',lichen:.045,courses:.35};
  return {id:'qumran',stone:'#c6b896',rock:'#b7a47e',soil:'#b29a72',plaster:'#d1c5a6',lichen:.015,courses:.29};
+};
+export const siteStyle = (id:string):Style => {
+ const base=fallback(id),photo=photoSurfaces[base.id];
+ if(!photo)return {...base,masonry:'coursed',photos:[]};
+ return {...base,stone:photo.stone??base.stone,rock:photo.rock??base.rock,soil:photo.soil??base.soil,plaster:photo.plaster??base.plaster,lichen:photo.lichen??base.lichen,masonry:photo.masonry,photos:photo.photos,masonryNote:photo.masonryNote};
 };
 const fract=(v:number)=>v-Math.floor(v);
 const hash=(x:number,y:number,seed:number)=>fract(Math.sin(x*127.1+y*311.7+seed*74.7)*43758.5453);
@@ -19,16 +30,25 @@ function surfaces(kind:Surface,style:Style){
  const n=512,colour=new Uint8Array(n*n*4),relief=new Uint8Array(n*n*4);
  const fractures=Array.from({length:72},(_,i)=>[.15+hash(i,0,31)*.7,.15+hash(i,0,32)*.7]);
  const base=new T.Color(kind==='soil'?style.soil:kind==='plaster'?style.plaster:kind==='bedrock'?style.rock:style.stone).convertLinearToSRGB();
- const metres=kind==='masonry'?style.courses*8:kind==='soil'?3:kind==='bedrock'?5:2;
+ const metres=kind==='masonry'?style.courses*(style.masonry==='rubble'?12:8):kind==='soil'?3:kind==='bedrock'?5:2;
  const clamp=(v:number)=>T.MathUtils.clamp(v,0,1);
  for(let y=0;y<n;y++)for(let x=0;x<n;x++){
   const u=x/n,v=y/n,coarse=noise(u*16,v*16,5,16,16),medium=noise(u*57,v*57,12,57,57),fine=hash(x,y,7),micro=noise(u*145,v*145,9,145,145);
   let tone=.80+coarse*.25+(medium-.5)*.12+(fine-.5)*.12,h=.4+medium*.09+(micro-.5)*.04,r=.9,moss=0;
-  if(kind==='masonry'){
-   const row=Math.floor(v*8),yy=fract(v*8),shift=hash(row,0,10),px=u*4+shift,cell=Math.floor(px),xx=fract(px);
-   const edge=Math.min(xx,1-xx,yy*.55,(1-yy)*.55),broken=.008+noise(u*180,v*180,3,180,180)*.012;
-   const bevel=clamp((edge-broken)*25),block=hash(cell,row,22);
-   tone*=.74+block*.46;tone*=.51+.49*bevel;h=.12+bevel*.55+coarse*.10;
+  if(kind==='masonry'&&style.masonry==='rubble'){
+   // Irregular fieldstones: nearest jittered seed defines a stone, the gap to
+   // the second-nearest seed defines a wide, uneven mortar joint.
+   const gx=u*9,gy=v*12,ix=Math.floor(gx),iy=Math.floor(gy);let first=10,second=10,owner=0;
+   for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){const cx=(ix+dx+9)%9,cy=(iy+dy+12)%12,sx=ix+dx+.15+hash(cx,cy,41)*.7,sy=iy+dy+.15+hash(cx,cy,42)*.7,d=Math.hypot((gx-sx)*1.25,gy-sy);if(d<first){second=first;first=d;owner=cx*31+cy;}else if(d<second)second=d;}
+   const gap=second-first,bevel=clamp((gap-.06-noise(u*90,v*90,3,90,90)*.07)*7),block=hash(owner,1,23);
+   tone*=.72+block*.52;tone*=.42+.58*bevel;h=.08+bevel*.62+coarse*.12;
+  }else if(kind==='masonry'){
+   const rows=style.masonry==='ashlar'?6:style.masonry==='mudbrick'?11:8,per=style.masonry==='ashlar'?2:style.masonry==='mudbrick'?3:4;
+   const row=Math.floor(v*rows),yy=fract(v*rows),shift=hash(row,0,10),px=u*per+shift,cell=Math.floor(px),xx=fract(px);
+   const joint=style.masonry==='ashlar'?.45:style.masonry==='mudbrick'?.8:.55,broken=(style.masonry==='ashlar'?.004:.008)+noise(u*180,v*180,3,180,180)*(style.masonry==='ashlar'?.006:.012);
+   const edge=Math.min(xx,1-xx,yy*joint,(1-yy)*joint);
+   const bevel=clamp((edge-broken)*(style.masonry==='ashlar'?40:25)),block=hash(cell,row,22);
+   tone*=(style.masonry==='ashlar'?.86:.74)+block*(style.masonry==='ashlar'?.24:.46);tone*=.51+.49*bevel;h=.12+bevel*.55+coarse*.10;
    // Recessed, irregular joints and granular chisel marks survive close zoom.
    tone-=Math.max(0,.12-micro)*.45;moss=style.lichen*noise(u*12,v*12,87,12,12)*(1-bevel*.6);
   }else if(kind==='bedrock'){
@@ -58,6 +78,11 @@ function surfaces(kind:Surface,style:Style){
   const i=(y*n+x)*4;colour[i]=255*clamp(base.r*tone-moss*.15);colour[i+1]=255*clamp(base.g*tone-moss*.09);colour[i+2]=255*clamp(base.b*tone-moss*.17);colour[i+3]=255;
   relief[i]=255*clamp(h);relief[i+1]=255*clamp(r+(fine-.5)*.08);relief[i+2]=0;relief[i+3]=255;
  }
+ // Renormalise so the texture's mean colour equals the photo-derived base;
+ // joints and tone variation then add contrast without darkening the surface.
+ {let sr=0,sg=0,sb=0;const count=n*n;for(let i=0;i<count*4;i+=4){sr+=colour[i];sg+=colour[i+1];sb+=colour[i+2];}
+  const fr=base.r*255*count/Math.max(1,sr),fg=base.g*255*count/Math.max(1,sg),fb=base.b*255*count/Math.max(1,sb);
+  for(let i=0;i<count*4;i+=4){colour[i]=Math.min(255,colour[i]*fr);colour[i+1]=Math.min(255,colour[i+1]*fg);colour[i+2]=Math.min(255,colour[i+2]*fb);}}
  const texture=(data:Uint8Array,srgb=false)=>{const t=new T.DataTexture(data,n,n);t.wrapS=t.wrapT=T.RepeatWrapping;t.magFilter=T.LinearFilter;t.minFilter=T.LinearMipmapLinearFilter;t.generateMipmaps=true;t.anisotropy=8;if(srgb)t.colorSpace=T.SRGBColorSpace;t.needsUpdate=true;return t;};
  return {map:texture(colour,true),relief:texture(relief),metres};
 }
@@ -86,7 +111,7 @@ function projectedSurface(material:T.MeshStandardMaterial,metres:number,organic=
   shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>',`float siteRelief=siteSample(bumpMap).r;
    normal=perturbNormalArb(-vViewPosition,normal,vec2(dFdx(siteRelief),dFdy(siteRelief))*bumpScale,faceDirection);`);
  };
- material.customProgramCacheKey=()=>`site-surface-v2-${metres}-${organic}`;
+ material.customProgramCacheKey=()=>`site-surface-v3-${metres}-${organic}`;
  return material;
 }
 export function cloneSiteMaterial<M extends T.Material>(material:M):M {const clone=material.clone();clone.onBeforeCompile=material.onBeforeCompile;clone.customProgramCacheKey=material.customProgramCacheKey;return clone;}
