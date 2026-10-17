@@ -68,8 +68,8 @@ export function buildModel(plan:SitePlan):ModelGeometry {
   // and cast false shadows when the camera reaches eye level.
   if(!courtFloors.some(f=>Math.abs(f.mesh.position.y)<.001&&Math.abs(x-f.x)+w/2<=f.w/2&&Math.abs(z-f.z)+d/2<=f.d/2))courtFloors.push({x,z,w,d,mesh:slab(p,.25,0,earth,id,root,holes)});
   walls(p,h,Math.max(.28,w*.025),0,id);}
- function basin(points:Point[],depth:number,id:string){
-  slab(points,.3,-depth-.3,plaster,id);walls(points,depth,.35,-depth,id);
+ function basin(points:Point[],depth:number,id:string,lining:T.Material=stone){
+  slab(points,.3,-depth-.3,plaster,id);walls(points,depth,.35,-depth,id,true,lining);
   points.forEach((a,i)=>{const b=points[(i+1)%points.length],cap=box((a[0]+b[0])/2,(a[1]+b[1])/2,Math.hypot(b[0]-a[0],b[1]-a[1]),.39,.12,.015,id,surfaces.block);cap.rotation.y=-Math.atan2(b[1]-a[1],b[0]-a[0]);});
  }
  function shaft(x:number,z:number,r:number,depth:number,id:string){
@@ -98,7 +98,7 @@ export function buildModel(plan:SitePlan):ModelGeometry {
  } else if(plan.id==="hyrcania-waterworks"){
   units="metres";note="Double pool · published depths 5 m and 2.6 m";
   const n:Point[]=[[-19,-27],[-.8,-27],[0,-11],[-19,-12]],s:Point[]=[[-19,-6.9],[-1,-6.9],[-1,7.5],[-19,7.5]];
-  basin(n,5,"north-pool");basin(s,2.6,"south-member");marker("north-pool",-10,-19,.55);marker("south-member",-10,.1,.55);
+  basin(n,5,"north-pool",plaster);basin(s,2.6,"south-member",plaster);marker("north-pool",-10,-19,.55);marker("south-member",-10,.1,.55);
   slab([[-23,-30],[4,-30],[4,11],[-23,11]],.8,-5.8,rock,undefined,root,[n,s]);
   const bridge=box(-9,17,32,2.4,3.1,-3.2,"bridge");bridge.rotation.y=.35;
   for(let i=0;i<8;i++)box(-24+i*4,17,1,2.5,2.6,-3.2,"bridge",rock);
@@ -107,7 +107,7 @@ export function buildModel(plan:SitePlan):ModelGeometry {
   court(20,12,28,37,2.1);court(20,12,11,15,1.9);box(32,-3,6,7,3.2);
   for(const [x,z] of [[16,35],[24,38],[39,4],[42,-7]])shaft(x,z,2,3,"cisterns");marker("cisterns",20,36,.7);
   plinth(88,86,6.3,[n,s,[[-27,20],[-15,20],[-15,31],[-27,31]]]);
-  assumptions.push("Northern pool sides approximate the published 19 / 15 / 18.2 / 16 m quadrilateral. Published maximum depths are shown: about 5 m north, 2.6 m south.","Rock separation uses 5.1 m, the midpoint of the reported 4.8–5.4 m range. Southern outline, bridge dimensions in this view, summit walls, other cistern depths and surrounding relief are illustrative.","No north bearing is assigned to the source frame. Floors are tinted to distinguish basins; the tint is not a reconstructed water level. Centre/rim origins and construction phases remain unresolved.");
+  assumptions.push("Northern pool sides approximate the published 19 / 15 / 18.2 / 16 m quadrilateral. Published maximum depths are shown: about 5 m north, 2.6 m south.","Rock separation uses 5.1 m, the midpoint of the reported 4.8–5.4 m range. Southern outline, bridge dimensions in this view, summit walls, other cistern depths and surrounding relief are illustrative.","The double pool is drawn rock-cut with plastered faces (Patrich 1989 p. 255, \"rock-cut double pool\"; reference photograph hyrcania-c-hurkania-5011 shows plastered rock walls), not as laid masonry; the coping course is illustrative.","No north bearing is assigned to the source frame. Floors are tinted to distinguish basins; the tint is not a reconstructed water level. Centre/rim origins and construction phases remain unresolved.");
  } else if(plan.id==="gerizim-precinct"){
   units="metres";note="Hellenistic precinct · selected architectural relationships";
   const start=root.children.length;
