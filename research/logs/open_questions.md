@@ -86,6 +86,7 @@ Updated each session. Newest additions at the bottom of each group. "Needs" says
 
 - Q35. **Does entry 49 actually name Siloam?** Puech's interpretation depends on supplying של (he reads the disputed letter as a cursive waw, 2006 p. 200; the earlier wording here, "reading the engraved ר as ו", misstated this); Lefkovits reads no Siloam name (pp. 352–354). *Needs:* a documented comparison of X 15–16 in the published photographs/radiographs and the competing editions, independent of the archaeological fit.
 - Q36. **Which installation could entry 49 describe if Q35 favors Siloam?** *Needs:* compare the competing pool identifications and published outlet/channel plans. A period trough corresponding to the entry has not been established. Keep the candidate at complex level until both the reading and feature evidence permit more precision.
+  - *16 Oct 2026:* Reich and Shukron 2011 p. 247 report a sluice-grooved branch from the feeding channel into the stone-lined pool, built with the pool. It is a junction, not a trough, with no printed plan or levels; the primary record is the next source ([extraction](../../registration/galor_avni2011_unearthing_extracted.md)).
 - Q37. **Solomon's Pool (entry 22, V 6) and Milik's dating argument.**
   - The scroll puts a "reservoir of Solomon" in Sokokah.
   - Milik argues that such a name could arise at Qumran only as legend, about a generation after 68 CE (DJD D10–D11 pp. 263–264; C201 p. 257). He also cites Josephus's Solomon's Pool in Jerusalem (BJ 5.145).
