@@ -27,6 +27,9 @@
 .map-walk-controls button{min-height:44px;min-width:44px;background:#f3f5e9;border:1px solid #bcc9af;border-radius:5px;color:#34543d;padding:9px 12px;touch-action:none;cursor:pointer}
 .map-walk-controls>button{display:flex;align-items:center;gap:7px;background:#315e49;color:#fff;border-color:#315e49}
 .map-walk-controls>div{display:flex;gap:6px}.map-walk-controls small{font-size:10px;line-height:1.5;text-align:center}.map-walk-controls output{position:absolute;clip-path:inset(100%);width:1px;height:1px;overflow:hidden}
+.map-walk-controls button[aria-pressed=true]{background:#315e49;color:#fff;border-color:#315e49}
+@media(hover:hover) and (pointer:fine){.map-walk-controls>.walk-movement,.map-walk-controls>.walk-actions{display:none}}
+@media(hover:none){.map-walk-controls .walk-keyboard-help{display:none}}
 .map-surface[data-walking=true]>.map-toolbar,.map-surface[data-walking=true]>.map-paper-overlay{display:none}
 .map-surface[data-walking=true] .site-marker{display:none}.map-surface[data-walking=true] .map-site-caption{top:14px}
 .map-surface[data-site-state=ready] .map-canvas[data-site-labels=true] .site-marker:has(.selected){opacity:0;pointer-events:none}

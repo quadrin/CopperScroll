@@ -117,7 +117,7 @@ export function buildQumranPilot(){
  for(let i=0;i<1350;i++){
   const x=(rand()-.5)*156,z=i<160?front(x)+rand()*9:(rand()-.5)*118,r=apronRadius(x,z),s=(i<160?.25+rand()*.7:.035+rand()*.2)*(1-smooth(.55,.8,r));
   o.position.set(x,height(x,z)+s*.2,z);o.rotation.set((rand()-.5)*.5,rand()*6.28,(rand()-.5)*.4);o.scale.set(s*(1+rand()),s,s*(.6+rand()));o.updateMatrix();rubble.setMatrixAt(i,o.matrix);rubble.setColorAt(i,new T.Color().setScalar(.72+rand()*.4));
- }rubble.castShadow=rubble.receiveShadow=true;root.add(rubble);
+ }rubble.castShadow=rubble.receiveShadow=true;rubble.userData.walkDetail=true;root.add(rubble);
  function channel(points:number[][]){for(let i=1;i<points.length;i++){
   const a=local(points[i-1]),b=local(points[i]),length=a.distanceTo(b),yaw=-Math.atan2(b.z-a.z,b.x-a.x),group=new T.Group();group.position.set((a.x+b.x)/2,height((a.x+b.x)/2,(a.z+b.z)/2)+.15,(a.z+b.z)/2);group.rotation.y=yaw;root.add(group);
   const floor=block(0,0,0,length,.12,.65,plaster);root.remove(floor);group.add(floor);floor.position.set(0,.06,0);

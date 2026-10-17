@@ -37,10 +37,10 @@ export function landscapeGround(ground:LandscapeGround,placeId:string,offset:Poi
  for(let i=0;i<650;i++){
   let x=0,z=0;for(let attempt=0;attempt<12;attempt++){x=(random()-.5)*radius*1.3;z=(random()-.5)*radius*1.3;if(!holes.some(h=>inside(x,z,h)))break;}
   const size=.06+random()*.31;o.position.set(x,height(x,z)+size*.2,z);o.scale.set(size*(1+random()),size,size);o.rotation.set((random()-.5)*.4,random()*6.28,(random()-.5)*.4);o.updateMatrix();rubble.setMatrixAt(i,o.matrix);rubble.setColorAt(i,new T.Color().setScalar(.78+random()*.35));
- }rubble.castShadow=rubble.receiveShadow=true;details.add(rubble);
+ }rubble.castShadow=rubble.receiveShadow=true;rubble.userData.walkDetail=true;details.add(rubble);
  // Sparse dry plants are scenery, with no surveyed vegetation distribution.
  const blades:number[]=[];for(let k=0;k<7;k++){const a=k*2.399,h=.22+(k%3)*.06,r=.12;blades.push(0,0,0,Math.cos(a)*r,h,Math.sin(a)*r,Math.cos(a+.3)*.025,0,Math.sin(a+.3)*.025);}
  const tuft=new T.BufferGeometry();tuft.setAttribute('position',new T.Float32BufferAttribute(blades,3));tuft.computeVertexNormals();const plants=new T.InstancedMesh(tuft,new T.MeshStandardMaterial({color:placeId.includes('gerizim')?'#737756':'#93815a',roughness:1,side:T.DoubleSide}),placeId.includes('gerizim')?100:35);
- for(let i=0;i<plants.count;i++){const x=(random()-.5)*radius*1.4,z=(random()-.5)*radius*1.4;o.position.set(x,height(x,z),z);o.rotation.set(0,random()*6.28,0);o.scale.setScalar(.7+random()*1.2);o.updateMatrix();plants.setMatrixAt(i,o.matrix);}details.add(plants);
+ for(let i=0;i<plants.count;i++){const x=(random()-.5)*radius*1.4,z=(random()-.5)*radius*1.4;o.position.set(x,height(x,z),z);o.rotation.set(0,random()*6.28,0);o.scale.setScalar(.7+random()*1.2);o.updateMatrix();plants.setMatrixAt(i,o.matrix);}plants.userData.walkCollision=false;details.add(plants);
  return {mesh,details,context:patch?`Terrain around the site anchor · ${patch.anchorPrecision}`:"Unlocated cave · illustrative rock setting",credit:patch?"Mapterhorn elevation · local bench and model placement illustrative":"Cave landscape illustrative · location unassigned",patch};
 }

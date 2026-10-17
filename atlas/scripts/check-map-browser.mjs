@@ -67,6 +67,43 @@ try {
   if(mobile){const forward=page.getByRole('button',{name:'Forward',exact:true});const r=await forward.boundingBox();await page.mouse.move(r.x+r.width/2,r.y+r.height/2);await page.mouse.down();try{await page.waitForFunction(before=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition!==before,before,{timeout:10000});}finally{await page.mouse.up();}}
   else{await page.locator('.maplibregl-canvas').focus();await page.keyboard.down('w');try{await page.waitForFunction(before=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition!==before,before,{timeout:10000});}finally{await page.keyboard.up('w');}}
   assert.notEqual(await page.locator('.maplibregl-canvas').getAttribute('data-walk-position'),before,'Eye-level movement must change the camera position');
+  // A physical character must reach the actual Qumran masonry and stop there,
+  // rather than pass through it or snap onto the cliff above the tunnel.
+  const canvas=page.locator('.maplibregl-canvas');await canvas.focus();
+  await page.keyboard.press('r');
+  const startFeet=(await canvas.getAttribute('data-walk-feet')).split(',').map(Number);
+  await page.keyboard.down('w');
+  try{
+   await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkBlockedFrames)>0,{},{timeout:60000});
+   const frames=Number(await canvas.getAttribute('data-site-frames'));
+   await page.waitForFunction(frames=>Number(document.querySelector('.maplibregl-canvas')?.dataset.siteFrames)>frames+5,frames,{timeout:45000});
+  }finally{await page.keyboard.up('w');}
+  const stoppedFeet=(await canvas.getAttribute('data-walk-feet')).split(',').map(Number);
+  assert(startFeet[2]-stoppedFeet[2]>3,'The character must reach the obstacle');
+  assert(stoppedFeet[2]>6&&stoppedFeet[1]<startFeet[1]+2,'The body must remain in front of the tunnel masonry, below the cliff crest');
+  await page.keyboard.press('r');
+  if(mobile){
+   await page.getByRole('button',{name:'Crouch',exact:true}).click();
+   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkCrouch==='true');
+   await page.getByRole('button',{name:'Crouch',exact:true}).click();
+   await page.getByRole('button',{name:'Sprint',exact:true}).click();await page.getByRole('button',{name:'Sprint',exact:true,pressed:true}).waitFor();
+   const back=page.getByRole('button',{name:'Back',exact:true}),r=await back.boundingBox();
+   await page.mouse.move(r.x+r.width/2,r.y+r.height/2);await page.mouse.down();
+   try{await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkSprint==='true');}finally{await page.mouse.up();}
+   await page.getByRole('button',{name:'Sprint',exact:true}).click();
+  }else{
+   await page.keyboard.down('Shift');await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkCrouch==='true');await page.keyboard.up('Shift');
+   await page.keyboard.press('s');await page.keyboard.down('s');
+   try{await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkSprint==='true');}finally{await page.keyboard.up('s');}
+   await page.keyboard.down('s');
+   try{await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkSpeed)>1);await page.evaluate(()=>window.dispatchEvent(new Event('blur')));await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkSpeed)<.01);}finally{await page.keyboard.up('s');}
+  }
+  await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkCrouch==='false'&&document.querySelector('.maplibregl-canvas')?.dataset.walkSprint==='false');
+  await canvas.focus();await page.keyboard.press('r');
+  const jumpY=Number((await canvas.getAttribute('data-walk-feet')).split(',')[1]);
+  if(mobile)await page.getByRole('button',{name:'Jump',exact:true}).click();else await page.keyboard.press('Space');
+  await page.waitForFunction(y=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkFeet?.split(',')[1])>y+.15,jumpY);
+  await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true');
   await sameCanvas();await page.screenshot({path:`/tmp/copperscroll-unified-walk-${mobile?'phone':'desktop'}.png`});
   const look=await page.locator('.maplibregl-canvas').boundingBox(),lookX=look.x+look.width*.65,lookY=look.y+look.height*.35;
   await page.mouse.move(lookX,lookY);await page.mouse.down();await page.mouse.move(lookX,lookY+100,{steps:5});await page.mouse.up();
@@ -94,7 +131,7 @@ try {
   await page.getByRole('button',{name:'Dismiss walking message'}).click();
   await page.getByRole('tab',{name:'Satellite',exact:true}).click();await page.getByRole('status').filter({hasText:'Satellite imagery could not load'}).waitFor();await page.getByRole('tab',{name:'Map',exact:true}).click();
   assert.deepEqual(errors,[]);
-  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, rendered 3D geometry, persistent map canvas, inline plan/photo/Drive/video panels, working eye-level movement, coverage gaps and satellite failure handling.`);
+  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, rendered 3D geometry, persistent canvas, inline references, physical masonry collision, jumping/gravity, crouching, sprint controls, coverage gaps and provider failure handling.`);
   await page.close();
   }catch(error){console.error(await page.evaluate(()=>({viewport:innerWidth,route:location.hash,plan:document.querySelector('[data-site-plan]')?.dataset.sitePlan,state:document.querySelector('[data-site-state]')?.dataset.siteState,walking:document.querySelector('[data-walking]')?.dataset.walking,canvas:{...document.querySelector('.maplibregl-canvas')?.dataset},events:window.atlasTestEvents})));await page.screenshot({path:`/tmp/copperscroll-map-failure-${mobile?'phone':'desktop'}.png`});throw error;}
  }
