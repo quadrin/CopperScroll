@@ -74,7 +74,7 @@ S577 and S1295 match no other condition, so they do not change any count.
   - Tell Mukehaz 2 (S241): the entry's grid is about 1.2 km north of the WBADB point.
   - Tell el-Mazar (S1080): Zertal calls his Site 82 Tell esh-Sheikh Mazar, and he says that the British Survey used the WBADB name for his Site 84, which is Tell eṣ-Ṣimadi (S1116).
 - **Edition.** Vol. 4 (2017) is a revised English edition of the 2005 Hebrew volume and adds later material. The coders could not tell which sentences are new, so the whole English entry counts as source 2. PROCEDURE.md gives Vol. 4 as 2019; its copyright page says 2017.
-- **Not read.** Vol. I (Zertal 1992) was not supplied, so 14 Stage 2 units are still "not accessed".
+- **Not read.** Vol. I (Zertal 1992) was not supplied, so 14 Stage 2 units are still "not accessed". **Read 17 October 2026** (Internet Archive loan): [vol1/README.md](vol1/README.md). The main set is unchanged; the pre-70 set gains one C2 FAIL (S798).
 - **Process notes.**
   - The merge renamed every new feature id with the prefix `s2z_`.
   - One coder-A quote had 13 words (S1072). It was cut to 10 words before the merge. No coded value changed.

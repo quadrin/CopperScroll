@@ -1,0 +1,43 @@
+{
+ "unit_id": "S178",
+ "coder": "B",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 1992 (Eng. Vol. 1) Site 59, p. 174",
+   "quote": "Cisterns: 20",
+   "type": "pit",
+   "subtype": "cisterns (header count)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site pottery list does not date the component)"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 1992 (Eng. Vol. 1) Site 59, p. 175",
+   "quote": "Large, hewn, and plastered cisterns are located on the southern side",
+   "type": "pit",
+   "subtype": "hewn plastered cisterns",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site pottery list does not date the component)"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "Entry is Zertal 1992 English ed. Vol. 1 (2004), read from the packet (Internet Archive loan, OCR text); PROCEDURE.md says Vol. 1 was not supplied, so the caller should check this unit belongs in the addendum. f1 and f2 may overlap (header count vs. cisterns on the southern side). The entry calls the plastered features cisterns, not pools (WBADB says 'carved plastered pools'; coded only from the entry, so no pool). Quarries with agricultural installations not coded. No plan."
+}

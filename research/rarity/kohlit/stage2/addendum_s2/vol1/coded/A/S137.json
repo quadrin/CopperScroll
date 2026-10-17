@@ -1,0 +1,46 @@
+{
+ "unit_id": "S137",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 1992 (Eng. Vol. 1, 2004) Site 53, pp. 164-165",
+   "quote": "Cisterns: 11 ... On the western slope cisterns, caves and installations",
+   "type": "pit",
+   "subtype": "cisterns (11)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry; site pottery list does not date the component"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 1992 (Eng. Vol. 1, 2004) Site 53, p. 165",
+   "quote": "On the western slope cisterns, caves and installations are scattered",
+   "type": "pit",
+   "subtype": "caves",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "W",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry; site pottery list does not date the component"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "Entry found (Vol. 1, OCR text; grid 1812 2046 matches). Data field 'Cisterns: 11' and the text's cisterns on the western slope coded as one feature (the text places cisterns only there). Caves not called burial caves, so pit with is_tomb false. 'Installations' not coded (not pool/pit/grave). No grave and no pool in the entry; WBADB 'burial caves' not mentioned by Zertal. Nearest spring 4 km, outside 2 km. No plan."
+}

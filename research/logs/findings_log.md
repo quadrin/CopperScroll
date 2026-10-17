@@ -1537,3 +1537,11 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 
 - **Kenyon and Holland 1981 (Jericho III).** The only Internet Archive copy (`excavationsatjer0003keny_pt01`) is the text volume. Its PDF size matches the Drive copy already read, so nothing new arrived. The plate volume (arrival item `kenyon-iii-plates`) is still not obtained, so no outcome record is written.
 - **Zertal 1992 = English ed. Vol. 1 (2004).** Borrowed on the owner's account; the OCR text layer is in Drive ([intake](../rarity/kohlit/stage2/addendum_s2/vol1_intake_2026-10-17.md)). A blind reader extracted all 14 Stage 2 entries; 13 match name and grid, and S203's grid is only partly legible ([extraction](../rarity/kohlit/stage2/addendum_s2/vol1/README.md)). Coding and `match.py` wait for packet v5, which needs the Highlands and Nigro PDFs moved from Drive (92 MB and 79 MB; this session can move only 10 MB). Nothing is scored yet.
+
+## 17 October 2026 — Zertal Vol. I coded: the rarity count after 14 more units
+
+[Result](../rarity/kohlit/stage2/addendum_s2/vol1/README.md); [arrival record](../preregistration/arrivals/outcomes/zertal-vol-1_2026-10-17.json). The owner linked his Mac, so the packet inputs (Highlands, Nigro 2011, WBADB, SWP) came from his synced Drive at their frozen hashes. Re-running Addendum 2 on the rebuilt packets reproduced it byte for byte.
+
+- **Headline unchanged:** main set, branch A, survey level k = 0, f = 20, m = 313 of 333. All six main-set entries record cisterns. Evidence (coder sheets); Inference: rarity is still not measurable.
+- **Pre-70 set:** f 31 → 32. S798 el-Qul'ah becomes a C2 FAIL on "Cisterns: none" (Site 280, p. 543). S144 and S780 do the same under the dated-only variant.
+- **Arrival scores:** pred1 confirm; pred2 confirm (every new FAIL rests on a site-record "Cisterns: none" with no search radius); pred3 contradict (0 main-set FAILs against an expected 1–3; calibration only). Unregistered: S103 C3s UNKNOWN → MATCH, with no count change.

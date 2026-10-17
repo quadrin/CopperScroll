@@ -1,0 +1,46 @@
+{
+ "unit_id": "S203",
+ "coder": "A",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 1992 (Eng. Vol. 1, 2004) Site 62, p. 180",
+   "quote": "A large cave is discernible in the south of the site",
+   "type": "pit",
+   "subtype": "large cave",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry; site pottery list does not date the component"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 1992 (Eng. Vol. 1, 2004) Site 62, p. 180",
+   "quote": "Cisterns: 2 ... with two cisterns nearby",
+   "type": "pit",
+   "subtype": "cisterns (2)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "S",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry; site pottery list does not date the component"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "Entry found (Vol. 1, OCR text; grid OCR-damaged but name/number match per packet). Data field 'Cisterns: 2' and the two cisterns 'nearby' the cave are one feature. JUDGEMENT CALL: the cisterns' direction is not stated directly; the sentence puts the cave in the south of the site 'with two cisterns nearby', so I gave them S (from unit). A stricter reading would give position none. Cave not called burial, so pit is_tomb false. No pool or grave. No plan."
+}

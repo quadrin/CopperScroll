@@ -1,0 +1,27 @@
+{
+ "item_id": "zertal-vol-1",
+ "register_commit": "e233bdf247db9eca7b8ea055a883ef713c4d8be7",
+ "register_commit_note": "Earliest commit that adds MANIFEST.md in this clone's history (the clone is shallow; the item file says registered 2026-10-09). Pushed before the arrival.",
+ "register_pushed_before_arrival": true,
+ "arrived_utc": "2026-10-17T13:04:00Z",
+ "opened_by": "reader agent (blind to this item file and to every coder sheet); coders A (two agents) and B (one agent), each blind to the others",
+ "compared_by": "integrator (Claude), who had read this item file before the arrival and therefore neither extracted nor coded",
+ "manifest_check": "pass",
+ "parts_received": ["Zertal 1992 = English ed. Vol. 1 (2004), all 14 registered site entries (Sites 26, 50, 52, 53, 54, 55, 56, 59, 62, 261, 277, 279, 280, 281)"],
+ "parts_pending": [],
+ "intake": {
+  "files": [{"name": "Zertal2004_vol1_djvu_text_n0-625.txt", "sha256": "6e62a7ba2f63210286855abdd299013a1b115216ed94d249ec443a9dd710b746", "bytes": 718889}],
+  "notes": "Internet Archive loan manassehhillcoun0001zert on the owner's account; OCR text layer only, plus one plan page (fig. 468, p. 545). Intake: research/rarity/kohlit/stage2/addendum_s2/vol1_intake_2026-10-17.md. Extraction hashes: addendum_s2/vol1/s2x_manifest.csv. Packet v5 built with the frozen builder; inputs matched every frozen hash. The source-4 excerpts and the Vols. 2-4 excerpts of packet v4 were not available, so 114 packets differ from v4 in text only. Re-running Addendum 2 on these packets reproduced its three result files byte for byte."
+ },
+ "scores": [
+  {"outcome_id": "pred1:confirm", "evidence": "addendum_s2/vol1/results/summary.json headline R1_main|A_survey: k = 0, f = 20, m = 313 of 333 (unchanged). m >> k holds.", "exposed": false},
+  {"outcome_id": "pred2:confirm", "evidence": "The only new C2 FAILs are S798 (Site 280, p. 543; primary rules) and S144 (Site 52, p. 164) and S780 (Site 277, p. 538) under the dated_only variant. Each rests on the data-block field 'Cisterns: none', a site-record statement with no search radius (coded_A sheets).", "exposed": false},
+  {"outcome_id": "pred3:contradict", "evidence": "0 of the 6 main-set units became C2 FAIL (all six entries record cisterns). The registered range was 1-3. Calibration only; no model is affected.", "exposed": false},
+  {"outcome_id": "item:unregistered-observation", "evidence": "results/unit_results.csv S103 primary: C3s UNKNOWN -> MATCH", "exposed": false}
+ ],
+ "unregistered_observations": [
+  "S103 Kh. Bal'ame (Site 26, pp. 123-125): C3s (tombs at the mouth, survey level) changes UNKNOWN -> MATCH under the primary rules. Both coders coded the Sheikh Mansur tomb on the north side, a water-tunnel opening at the east foot and the cisterns. C1 and C2 stay UNKNOWN, so no branch changes and no count changes. Coder agreement on C3s: kappa 0.853 -> 0.861."
+ ],
+ "test_status": "test",
+ "notes": "Pre-70 set (R1, branch A, survey level): f 31 -> 32, m 468 -> 467 (S798). The main set, R2 and every branch-A k are unchanged. No identification follows (item file: exploratory)."
+}

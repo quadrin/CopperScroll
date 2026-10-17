@@ -1,0 +1,63 @@
+{
+ "unit_id": "S103",
+ "coder": "B",
+ "features": [
+  {
+   "id": "f1",
+   "source": "2",
+   "cite": "Zertal 1992 (Eng. Vol. 1) Site 26, p. 123",
+   "quote": "Cisterns: 24",
+   "type": "pit",
+   "subtype": "cisterns (header count)",
+   "is_tomb": false,
+   "position": {
+    "kind": "none"
+   },
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site pottery list does not date the component)"
+   }
+  },
+  {
+   "id": "f2",
+   "source": "2",
+   "cite": "Zertal 1992 (Eng. Vol. 1) Site 26, p. 125",
+   "quote": "At the eastern foot the opening into the Iron Age water tunnel",
+   "type": "pit",
+   "subtype": "water tunnel (opening)",
+   "is_tomb": false,
+   "position": {
+    "kind": "words",
+    "direction": "E",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "date": {
+    "code": "D",
+    "basis": "entry calls it the Iron Age water tunnel"
+   }
+  },
+  {
+   "id": "f3",
+   "source": "2",
+   "cite": "Zertal 1992 (Eng. Vol. 1) Site 26, p. 124-125",
+   "quote": "The tomb of Sheikh Mansur crowns the northern side of the mound",
+   "type": "grave",
+   "subtype": "sheikh's tomb",
+   "cavity_with_opening": false,
+   "position": {
+    "kind": "words",
+    "direction": "N",
+    "distance_m": null,
+    "relative_to": "unit"
+   },
+   "mouth": {},
+   "date": {
+    "code": "U",
+    "basis": "not dated by the entry (site pottery list does not date the component)"
+   }
+  }
+ ],
+ "explicit_absence": [],
+ "notes": "Entry is Zertal 1992 English ed. Vol. 1 (2004), read from the packet (Internet Archive loan, OCR text); PROCEDURE.md says Vol. 1 was not supplied, so the caller should check this unit belongs in the addendum. f3: sheikh's tomb on the northern side of the mound itself; the entry gives no form, coded cavity_with_opening false (not a shaft, rock-cut or kokhim tomb). Springs (Bir Sinjil 'on the site'; site 'surrounded by springs') are springs, not pools; no pool, reservoir or tank in the entry. Moat-like depression on the west not a pit. Guerin's mention of the eastern tunnel opening is the same feature as f2. No plan (fig. 62 is a photo)."
+}
