@@ -1,0 +1,218 @@
+{
+ "P38": [
+  {
+   "q": "P38-word",
+   "answer": "I could not identify a בית with confidence. The best fit for a following four-letter word is my Stage 1 pos 8-11 (strip 3 middle to strip 2 right edge): ה, מ/ב, ?, ח. My Stage 1 pos 5-7 (ב, ה, ר in strip 4/3) could hold a בית-like word if the 'ה' at pos 6 is really י+ת; unverified.",
+   "grade": "possible",
+   "evidence": "Image A, high-pass crops of strips 2-3 (work_R5/P38_hp23.png, P38_hp_join.png)"
+  },
+  {
+   "q": "P38(a)",
+   "answer": "ה",
+   "grade": "possible",
+   "evidence": "Strip 3 middle letter: roof about 55 px wide (3.6x crop) with a clear right vertical. The left leg is a bright groove that starts noticeably below the roof (a small gap), so it is free, not joined. No foot to the left, so not ת. Alternative ח if the gap is only corrosion."
+  },
+  {
+   "q": "P38(b)",
+   "answer": "מ",
+   "grade": "possible",
+   "evidence": "Strip 3 left part: a right vertical with a bright base. On the left there is a second vertical along the strip edge, which makes a closed box like מ. If that edge vertical is only the strip-edge shadow, the letter is ב, with the base running a little to the left and no projection to the right. Alternative ב."
+  },
+  {
+   "q": "P38(c)",
+   "answer": "cannot tell",
+   "grade": "cannot tell",
+   "evidence": "This position falls on the strip 3/strip 2 gap. Only a vertical at the left edge of strip 3 and a small bright trace above the roof line at the right edge of strip 2 are visible. The corner is not preserved, so ד and ר cannot be told apart. Seeing the corner would need the gap area or a different photograph."
+  },
+  {
+   "q": "P38(d)",
+   "answer": "ח",
+   "grade": "possible",
+   "evidence": "Strip 2 rightmost letter: a dark roof with two bright legs. The left leg rises to roof level (it looks joined), and there is no left foot. Alternative ה."
+  }
+ ],
+ "P68": [
+  {
+   "q": "P68-word",
+   "answer": "First word: strip 5 ב plus a long diagonal (my Stage 1 'ל', which could instead be part of ש). Candidate second word (strip 4): ? (box-like, ב/ר), ל? (short slanted bright stroke with a trace above it), then a letter with a long flat base and a curled top on the left.",
+   "grade": "possible",
+   "evidence": "Image A, work_R5/P68_hp45.png and P68_hp4.png"
+  },
+  {
+   "q": "P68(a)",
+   "answer": "cannot tell: no ה or ח is clearly seen after the candidate ל. The next shape has a long flat base, which would rather suggest ב/ם/ס.",
+   "grade": "cannot tell",
+   "evidence": "Strip 4, left of the slanted stroke: no roof with two free or joined legs is visible. There is a long base groove about 120 px wide (original) with a hooked top at its left end. A sharper image of strip 4 would be needed."
+  },
+  {
+   "q": "P68(b)",
+   "answer": "possibly: the wide shape with a long base and a curled top at its left end could be a closed box (ם/ס). Its right side is not visible.",
+   "grade": "possible",
+   "evidence": "Strip 4 left half, long base groove at the target line's base level"
+  },
+  {
+   "q": "P68(c)",
+   "answer": "no cancellation marks seen",
+   "grade": "probable",
+   "evidence": "No strokes through letters and no dots or lines above letters on strips 4-5 at this line"
+  }
+ ],
+ "P71": [
+  {
+   "q": "P71(a)",
+   "answer": "cannot tell: the first word's letters cannot be resolved. Second letter (ר vs ד): cannot tell. Third letter: cannot tell. Last letter: cannot tell.",
+   "grade": "cannot tell",
+   "evidence": "Image A of the right strip is too soft and low-contrast; enlargement and high-pass filtering show only shapeless grooves. A sharper photograph or a raking-light image would be needed."
+  },
+  {
+   "q": "P71(b)",
+   "answer": "cannot tell: no ב-צ sequence can be located. Nothing identifiable is written above the line.",
+   "grade": "cannot tell",
+   "evidence": "Image A, all three strips; same limitation"
+  }
+ ],
+ "P79": [
+  {
+   "q": "P79-word",
+   "answer": "No ה-ט word could be located with certainty. The best candidate word with a ק is in strip 2: ר?, ב, ?(lower box), closed box, then a vertical at the strip's left edge that descends below the line (possible ק).",
+   "grade": "possible",
+   "evidence": "Image A, high-pass crop work_R5/P79_hpM.png"
+  },
+  {
+   "q": "P79(a)",
+   "answer": "one letter: a closed box with a flat base (מ-like)",
+   "grade": "possible",
+   "evidence": "Strip 2: a box with a dark interior and a flat, wide base groove (Stage 1 pos 8). I see no separate short נ plus small י. Immediately left of it is a vertical that reaches lower than the base (the possible ק)."
+  },
+  {
+   "q": "P79(b)",
+   "answer": "cannot tell. The next readable trace, in strip 1, is a roof with a vertical (ר/ד/ו).",
+   "grade": "cannot tell",
+   "evidence": "Strip 1 is smooth and faint. A large curved feature there looks like a crease or damage."
+  },
+  {
+   "q": "P79(c)",
+   "answer": "cannot tell",
+   "grade": "cannot tell",
+   "evidence": "Strip 1 letters are not resolvable"
+  }
+ ],
+ "P80": [
+  {
+   "q": "P80-word",
+   "answer": "Candidate in strip 5 (right end of the line): ה? (roof and right vertical; the dark band below may be the next line's roof shadow rather than a base), ס (closed rounded/triangular shape), then a vertical stroke that may be part of ס, then ב, then ן.",
+   "grade": "possible",
+   "evidence": "Image A, high-pass 3.4x crop work_R5/P80_hp5.png. In Stage 1 I read the first letter as ב and the second as א; the closer view shows a closed rounded shape. Changed because of the higher-magnification filtered crop."
+  },
+  {
+   "q": "P80(a)",
+   "answer": "ב",
+   "grade": "possible",
+   "evidence": "Strip 5: the letter after the ס has a roof, a right vertical and a base groove that runs to the right vertical or slightly past it, with a square corner, not rounded. Alternative כ."
+  },
+  {
+   "q": "P80(b)",
+   "answer": "ן",
+   "grade": "possible",
+   "evidence": "Strip 5 left: a long thin vertical that runs well below the base of the neighbouring letters (to about y 365 in the original against a base near 340). No base stroke."
+  }
+ ],
+ "P82": [
+  {
+   "q": "P82-word1",
+   "answer": "I could not locate a ב-נ word with confidence. Candidate: the word following it starts at the right of strip 5 with a curved letter (ט/ש), continues with a long vertical (ן/ו), and ends with a box at the left of strip 5 (roof, right vertical, base).",
+   "grade": "possible",
+   "evidence": "Image A, work_R5/P82_hp5.png"
+  },
+  {
+   "q": "P82-lastletter",
+   "answer": "a box with roof, right vertical and base: ב, or closed ם if the left side is the dark strip edge",
+   "grade": "possible",
+   "evidence": "Strip 5 left, box about 55 px wide (original). The left side coincides with the strip-edge shadow, so open versus closed is unclear."
+  },
+  {
+   "q": "P82-word2",
+   "answer": "Candidate four/five-letter word in strip 4: ו/ן, ב/ם, ר, ב, ו?, ?, ם/ה. Its first letter: cannot tell between י, ט and ה (the visible letter is a vertical). Its second letter: closed box (ב/ם), not ה or ר. A ו is possible at Stage 1 pos 10 (a thin vertical with a small head between two ב-like letters).",
+   "grade": "cannot tell",
+   "evidence": "Image A, work_R5/P82_hp4.png. No ח is identifiable; the ה candidates are box shapes at the strip ends."
+  }
+ ],
+ "P85": [
+  {
+   "q": "P85-word",
+   "answer": "First word in strip 5: ב (wide box with a long right vertical), then diagonal strokes and a curve. A ב-ק reading is not confirmed. Candidate ל: in strip 3 right, a short vertical that rises above the roof line joins a horizontal (ascender plus cap). An alternative candidate ל is a long diagonal with a vertical in strip 4.",
+   "grade": "possible",
+   "evidence": "Image A, work_R5/P85_hpR.png, P85_hpM.png"
+  },
+  {
+   "q": "P85(a)",
+   "answer": "cannot tell",
+   "grade": "cannot tell",
+   "evidence": "After the strip 3 candidate ל there is only a wide roof with a base (box-like). No separate left leg can be seen, whether free or joined. If the rising vertical is itself the left leg of a ח joined to the roof, the letter would be ח (possible)."
+  },
+  {
+   "q": "P85(b)",
+   "answer": "possibly: a wide box with a flat base follows (strip 3, Stage 1 pos 6), which could be a closed ם/מ or a ב",
+   "grade": "possible",
+   "evidence": "Strip 3: roof about 80 px and base about 85 px wide (original), sides unclear"
+  },
+  {
+   "q": "P85(c)",
+   "answer": "no cancellation marks seen",
+   "grade": "probable",
+   "evidence": "No strike-through strokes visible; the lens-shaped feature in strip 2 looks like a blister, not a cancellation"
+  }
+ ],
+ "P96": [
+  {
+   "q": "P96-1",
+   "answer": "First word: strip 5 ב (probable) followed by a dark oval (ח? / damage). After it: strip 4 is broken away at this height (no traces). Strip 3 then has about 5-6 letter-spaces: (3) vertical with a foot to the right, ב/ו, possible; (4) vertical with a small top serif, ו/ר/י, possible; (5) vertical with a crossbar at the top and a base below it, T-shaped, possible ט/ת or a numeral/Greek-like sign; (6) vertical, ו/ן, possible; (7) vertical with a roof, ו/ה/ד, possible; (8) vertical at the strip edge, illegible. Strip 2: a ב-like base and top (possible), then scratches, about 2-3 spaces illegible.",
+   "grade": "possible",
+   "evidence": "Image A, high-pass 3x crop of strip 3 (work_R5/P96_s3hp.png) and strip 5 (P96_s5hp.png)"
+  },
+  {
+   "q": "P96-count",
+   "answer": "about 6 letter-spaces in strip 3, plus about 3 in strip 2 before nothing more is legible. The lost part of strip 4 may have held 3-5 more.",
+   "grade": "possible",
+   "evidence": "Count of upright strokes and spacing in strip 3"
+  },
+  {
+   "q": "P96-traces",
+   "answer": "י/ו-like uprights: yes (several). ד: possible (an upright with a roof, pos 7). ט: possible only if the T-shape is a damaged ט (it is not rounded). ב: possible (pos 3 has a foot, and strip 2 has a base-and-top shape). נ: possible only if the pos 3 foot belongs to a נ, though the foot points right rather than left. ש, ל, א: not seen.",
+   "grade": "possible",
+   "evidence": "Strip 3 stroke shapes as above"
+  },
+  {
+   "q": "P96-last",
+   "answer": "cannot tell: no clearly legible next word is visible on strips 1-2",
+   "grade": "cannot tell",
+   "evidence": "Strip 2 is crossed by scratches. Strip 1 shows only a long top bar with a curl at its left end."
+  }
+ ],
+ "P99": [
+  {
+   "q": "P99(a)",
+   "answer": "no ק seen. The second letter-space shows V-shaped dark grooves (ש/ע-like). A ק could hide there only if one of the diagonals is its left leg.",
+   "grade": "possible",
+   "evidence": "Image A, high-pass 3.6x crop work_R5/P99_hpR2.png, right end of piece 3: two converging diagonal grooves and no roof-with-curve"
+  },
+  {
+   "q": "P99(b)",
+   "answer": "cannot tell. The next clear letter is a roof with a right vertical, which is ר or ד (the corner looks fairly square, so ד possible).",
+   "grade": "possible",
+   "evidence": "Piece 3: roof about 30 px wide (original) with a bright right vertical"
+  },
+  {
+   "q": "P99(c)",
+   "answer": "Following letters, as I see them in order: ר/ד; ה/ח/ב (a bright roof over a box); an inverted-V shape (א? Λ?); a diagonal. No clear מ or ע. ב or ה are possible for the box letter.",
+   "grade": "possible",
+   "evidence": "Piece 3, work_R5/P99_hpR.png"
+  },
+  {
+   "q": "P99(d)",
+   "answer": "cannot tell",
+   "grade": "cannot tell",
+   "evidence": "The word boundary is not visible. The left end of piece 3 is corroded."
+  }
+ ]
+}

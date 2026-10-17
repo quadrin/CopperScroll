@@ -219,3 +219,20 @@ Nine lines named in the ratings' `decisive_next` fields: I 12, II 3, III 1, III 
 | XI 9 (54) | העמ / העבט; ירחו / טהור | Both: the owner word ends in a small closed loop, ט possible | **Cannot decide**; both lean ט, only at "possible". |
 
 **Effect.** No R level changes. Entry 41's basis now records the lean to Puech's letters; entries 4, 7, 12, 12a, 13, 14, 37, 53 and 54 record the round-2 result and their `decisive_next` now asks for original-photograph readings of the undecided letters. As in round 1, these are printed reproductions; whole-line transcriptions by the readers were poor, and the method is good only for the targeted shape questions.
+
+## Round 3 — 17 October 2026: the same nine lines on the DJD III photographs
+
+[Frozen](../../registration/plate_check/round3/PREREGISTRATION.md) in 13a52a8 before any crop was made. Images: the DJD III (1962) photographs of the cut segments (pls. XLIX, LI, LIII, LXIII, LXV, LXIX), saved from an Internet Archive loan on the owner's account at about 2,660 × 3,670 px per plate (owner's Drive; not in Git). These photographs predate the EDF conservation and are independent of Puech's plates. Milik's hand copies were not shown. A non-blind locator placed each line by matching strip edges against Puech's copy ([key](../../registration/plate_check/round3/key.json)); two fresh readers, R5 and R6, read one crop per line ([outputs](../../registration/plate_check/round3/readers)).
+
+**Result: cannot decide on all nine lines.** The halftones are faint. Neither reader graded any discriminating letter above "possible", several anchor words could not be located, VIII 14 was unreadable, and IX 10's letter tops are lost at a break between the rows of strips. Where both answered, they often split (II 3 first letter ה vs ח; XI 8 ב vs cannot tell).
+
+**Combined with round 2** (rule fixed in the round-3 pre-registration):
+
+| Line (entry) | Round 2 (Puech plates) | Round 3 (DJD photos) | Combined |
+|---|---|---|---|
+| IX 10 (41) | leans to מ | cannot decide | **leans to מ** (one source) |
+| II 3 (7), 4th letter | leans to ה | cannot decide (R5 ח, possible) | **leans to ה** (one source) |
+| III 1 (12, 12a) | no traces | metal missing, no traces | gap confirmed on both sources |
+| the other six | cannot decide | cannot decide | cannot decide |
+
+**Effect.** No rating changes. The DJD photographs at this resolution do not settle letter-level questions; the remaining independent source is the full-resolution West Semitic Research Project masters of 1988 (request drafted for the owner).

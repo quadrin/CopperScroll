@@ -1,0 +1,327 @@
+{
+ "description": "Round 3 blind plate-check key: code to line, and line positions on the DJD III (1962) photograph plates as saved from the Internet Archive loan (about 2662 x 3669 px). Plate images are not in Git.",
+ "items": {
+  "P79": {
+   "line": "I 12",
+   "plate": "DJD3_pl49_XLIX.jpg",
+   "plate_confirmed": "Running head 'PLANCHE XLIX' top right; caption '3Q15 I' under the photographs. It is a photograph plate of the cut segments, not Milik's drawing (the drawing only shows through faintly from the back of the page).",
+   "centre_y": 2280,
+   "line_spacing": 135,
+   "x0": 140,
+   "x1": 1950,
+   "segments": [
+    {
+     "x0": 134,
+     "x1": 466,
+     "centre_y": 2270
+    },
+    {
+     "x0": 503,
+     "x1": 830,
+     "centre_y": 2272
+    },
+    {
+     "x0": 854,
+     "x1": 1199,
+     "centre_y": 2270
+    },
+    {
+     "x0": 1249,
+     "x1": 1597,
+     "centre_y": 2284
+    },
+    {
+     "x0": 1627,
+     "x1": 1960,
+     "centre_y": 2289
+    }
+   ],
+   "confidence": "medium",
+   "notes": "The plate shows the column in two rows of segments: an upper row (y~480-1724: six inscribed strips plus an uninscribed right-margin strip at x 2002-2392, which is not part of the text) and a lower row (y~1742-2620: five inscribed strips plus the blank margin strip). The rows are the upper and lower parts of the same strips, broken across, with a white gap at ~1724-1742. Upper row: lines 1-8 (~620 ... ~1690, spacing ~153). Lower row: lines 9-14 (~1870, 2010, 2150, ~2280, 2440, 2570); line 15 'ככר' is not visible above the damaged bottom edge. Line 12 is the 4th line of the lower row. The letters can't be read reliably at this photo quality, so the line was identified from three things that agree: (a) counting lines from line 1; (b) template matching of each lower-row strip against Puech's copy (round-2 page 01_galvA), which gives DJD 1990 = copy ~1210-1250 at a scale of ~1.3 DJD px per copy px with a single clear peak, so copy line 12 (copy y~1440-1465) maps to 2270-2290; (c) the bottom-edge losses (copy losses starting at y~1560/1640 match the DJD bites at ~2480/2590). The line is nearly level. The far-left end 'ΧΑΓ' should sit on the left strip (x~150-460), where the photo surface is worn. Strip 4 (x 1249-1597) matched poorly, so its value is interpolated. Some letters are lost in the cut gaps between strips. Expect error of about ±25 px."
+  },
+  "P38": {
+   "line": "II 3",
+   "plate": "DJD3_pl51_LI.jpg",
+   "plate_confirmed": "Running head 'PLANCHE LI' top right; caption '3Q15 II' under the photographs. It is a photograph plate.",
+   "centre_y": 975,
+   "line_spacing": 155,
+   "x0": 450,
+   "x1": 2000,
+   "segments": [
+    {
+     "x0": 448,
+     "x1": 830,
+     "centre_y": 983
+    },
+    {
+     "x0": 863,
+     "x1": 1112,
+     "centre_y": 972
+    },
+    {
+     "x0": 1154,
+     "x1": 1392,
+     "centre_y": 971
+    },
+    {
+     "x0": 1420,
+     "x1": 1717,
+     "centre_y": 975
+    },
+    {
+     "x0": 1750,
+     "x1": 2001,
+     "centre_y": 968
+    }
+   ],
+   "confidence": "high",
+   "notes": "Two rows of five strips (upper row y~507-1640, lower row y~1667-2659). Line 3 is the 3rd line of the upper row: line 1 'בבור המלח...' ~630, line 2 'ככרין ... ΗΝ' ~800-820 (sparse: letters only in parts, including the big final-nun shape at x~1870-1950), line 3 at ~945-1040 across all five strips (centre ~975), and line 4 'השלישי ... ΘΕ' ~1120. Template matching against Puech's copy is strong and consistent on every strip (copy 76 = DJD 530, scale 1.29; copy line 3 at 415-420 maps to 971-983). The whole line falls within the plate. The start of the line is at the right on strip 5 (around x~1850-1990) and the end 'ברובד' is at the left on strip 1 (x~470-600). Letters at the four cut gaps are lost or damaged."
+  },
+  "P96": {
+   "line": "III 1",
+   "plate": "DJD3_pl53_LIII.jpg",
+   "plate_confirmed": "Running head 'PLANCHE LIII' top right; caption '3Q15 III' under the photographs. It is a photograph plate.",
+   "centre_y": 650,
+   "line_spacing": 147,
+   "x0": 300,
+   "x1": 1990,
+   "segments": [
+    {
+     "x0": 307,
+     "x1": 654,
+     "centre_y": 650
+    },
+    {
+     "x0": 686,
+     "x1": 1030,
+     "centre_y": 643
+    },
+    {
+     "x0": 1070,
+     "x1": 1230,
+     "centre_y": 648
+    },
+    {
+     "x0": 1820,
+     "x1": 1987,
+     "centre_y": 660
+    }
+   ],
+   "confidence": "high",
+   "notes": "This is the first line of the column, just below the top edge, so which line it is is certain. Template matching gives top row DJD = 520 + (copy_y-45)*1.31, consistent across strips: copy left part ~140 maps to ~645 and copy right part ~150 maps to ~660. The middle of the line is lost in the V-shaped loss at the top of the column (as on Puech's copy). On the plate the loss covers roughly x 1150-1800: strip 3 (x 1070-1336) has its top edge at ~590-640, and letters of line 1 are visible on it only at x~1070-1230, just under that edge; strip 4 (x 1353-1710, top edge 720-830) has nothing of line 1; strip 5 (x 1735-1987) has its top edge sloping from ~720 at its left to ~530 at its right, so the right end 'בחצר' is present only for x > ~1820-1880. The surviving parts are strips 1-2 (x 307-1030: '...תחת הפנא הדרו') and the right end of strip 5. The segments list only these."
+  },
+  "P68": {
+   "line": "III 8",
+   "plate": "DJD3_pl53_LIII.jpg",
+   "plate_confirmed": "Running head 'PLANCHE LIII'; caption '3Q15 III'. It is a photograph plate.",
+   "centre_y": 1717,
+   "line_spacing": 150,
+   "x0": 300,
+   "x1": 1990,
+   "segments": [
+    {
+     "x0": 295,
+     "x1": 642,
+     "centre_y": 1714
+    },
+    {
+     "x0": 674,
+     "x1": 1027,
+     "centre_y": 1699
+    },
+    {
+     "x0": 1057,
+     "x1": 1328,
+     "centre_y": 1722
+    },
+    {
+     "x0": 1360,
+     "x1": 1706,
+     "centre_y": 1712
+    },
+    {
+     "x0": 1782,
+     "x1": 1987,
+     "centre_y": 1741
+    }
+   ],
+   "confidence": "high",
+   "notes": "The upper row of segments (to y~1460) holds lines 1-6. The short line 7 'ככ ΤΡ' falls at the break between the rows (~1500-1540). Line 8 is the first full line of the lower row, ~1700-1740. Template matching of all five lower-row strips is consistent (DJD 1520 = copy 789-810, scale 1.30). Copy line 8 slopes from ~935 at the left to ~962 at the right ('בשית'), which gives ~1700-1715 at the left and ~1740 at the right (strip 5). Line 9 'כלי דמע לבושין ביאתא' is at ~1865 and line 10 at ~2015. The line is fully on the plate apart from losses at the cut gaps."
+  },
+  "P85": {
+   "line": "III 11",
+   "plate": "DJD3_pl53_LIII.jpg",
+   "plate_confirmed": "Running head 'PLANCHE LIII'; caption '3Q15 III'. It is a photograph plate.",
+   "centre_y": 2197,
+   "line_spacing": 150,
+   "x0": 300,
+   "x1": 1990,
+   "segments": [
+    {
+     "x0": 295,
+     "x1": 642,
+     "centre_y": 2190
+    },
+    {
+     "x0": 674,
+     "x1": 1027,
+     "centre_y": 2177
+    },
+    {
+     "x0": 1057,
+     "x1": 1328,
+     "centre_y": 2201
+    },
+    {
+     "x0": 1360,
+     "x1": 1706,
+     "centre_y": 2191
+    },
+    {
+     "x0": 1782,
+     "x1": 1987,
+     "centre_y": 2225
+    }
+   ],
+   "confidence": "high",
+   "notes": "Lower row, 4th full line (line 8 ~1717, 9 ~1865, 10 ~2015, 11 ~2197, 12 ~2365, 13 ~2495, with blank copper below line 13 down to ~2600+, matching the blank space under the last line on Puech's copy). Same lower-row mapping as III 8. Copy line 11 runs from ~1300 at the left to ~1335 at the right ('בקבר'), which gives ~2180-2190 at the left and ~2225 at the right (strip 5). The line is fully on the plate apart from losses at the cut gaps."
+  },
+  "P71": {
+   "line": "VIII 14",
+   "plate": "DJD3_pl63_LXIII.jpg",
+   "plate_confirmed": "Running head 'PLANCHE LXIII' top right; caption '3Q15 VIII' under the photographs. It is a photograph plate.",
+   "centre_y": 2237,
+   "line_spacing": 106,
+   "x0": 470,
+   "x1": 2040,
+   "segments": [
+    {
+     "x0": 455,
+     "x1": 944,
+     "centre_y": 2239
+    },
+    {
+     "x0": 973,
+     "x1": 1364,
+     "centre_y": 2230
+    },
+    {
+     "x0": 1400,
+     "x1": 2050,
+     "centre_y": 2241
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Two rows of three strips (upper row y~474-1527, lower row y~1559-2522). Template matching of all three lower-row strips agrees (DJD 1950 = copy 1184-1191, scale 1.28, a single clear peak). Copy line 14 (centre ~1410, full width) maps to ~2230-2241. Lines here are close together (~106 px on the plate): line 13 'עשרין וארבע ככ' ~2135, line 15 'אמות אחת עסרה' (short) ~2345, and line 16 'כסף ככ' (short) ~2450, just above the damaged bottom edge (~2480-2520). The photo shows many faint horizontal bands about 60-90 px apart (letter tops and bottoms), so do not count lines visually here. Use the mapping. Medium rather than high because the lines are tightly spaced (an error of half a line is only ~50 px) and the letters can't be read. The line runs the full width; its left end is near the left edge of strip 1 (x~520-560); x 470-520 is margin."
+  },
+  "P99": {
+   "line": "IX 10",
+   "plate": "DJD3_pl65_LXV.jpg",
+   "plate_confirmed": "Running head 'PLANCHE LXV' top right; caption '3Q15 IX' under the photographs. It is a photograph plate.",
+   "centre_y": 1522,
+   "line_spacing": 118,
+   "x0": 580,
+   "x1": 1850,
+   "segments": [
+    {
+     "x0": 571,
+     "x1": 1011,
+     "centre_y": 1531
+    },
+    {
+     "x0": 1037,
+     "x1": 1364,
+     "centre_y": 1508
+    },
+    {
+     "x0": 1399,
+     "x1": 1850,
+     "centre_y": 1517
+    },
+    {
+     "x0": 284,
+     "x1": 528,
+     "centre_y": 1545
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Main strips: upper row y~456-1482 (x 579-1013, 1034-1366, 1384-2063) and lower row y~1487-2525 (x 571-1011, 1037-1364, 1399-2076). There is also a separate narrow, unbroken strip at the far left (x 284-528, y 435-2200). Line 10 sits right at the break between the rows. The upper row ends at ~1462-1482 (copy ~836-855) and the lower row's top edge is at ~1487 (strips 3-4) or ~1506 (strip 2). Line 10's body (copy 860-925) therefore sits at the very top of the lower row: centre ~1505-1530, letters ~1485-1565. The tops of its letters are clipped or lost at the break, together with roughly 20-35 copy px of material. Short line 9 ('ככ' with numerals) is at the bottom of the upper row (~1420-1435). Line 11 'בקול המים...' is at ~1640-1660. On the CLAHE preview, the brightest bars of line 10 (the lower edges of the letters) are at ~1540-1600, so for a crop of the whole line use about 1470-1610. The right end of the line (copy x~1035) falls in the left half of the wide right strip, roughly at x~1700-1800; the rest of that strip (to ~2060) is the column's blank right margin. The 4th segment (narrow left strip, x 284-528) is LOW confidence: it shows letter-like marks at ~1530-1650, which could be the final letters of lines 10/11 (copy x~240-340, left of where strip 2 begins). It is a separate piece, so its vertical alignment is uncertain."
+  },
+  "P80": {
+   "line": "XI 8",
+   "plate": "DJD3_pl69_LXIX.jpg",
+   "plate_confirmed": "Running head 'PLANCHE LXIX' top right; caption '3Q15 XI' under the photographs. It is a photograph plate.",
+   "centre_y": 1443,
+   "line_spacing": 153,
+   "x0": 341,
+   "x1": 2209,
+   "segments": [
+    {
+     "x0": 341,
+     "x1": 711,
+     "centre_y": 1380
+    },
+    {
+     "x0": 732,
+     "x1": 1054,
+     "centre_y": 1416
+    },
+    {
+     "x0": 1110,
+     "x1": 1350,
+     "centre_y": 1462
+    },
+    {
+     "x0": 1409,
+     "x1": 1787,
+     "centre_y": 1474
+    },
+    {
+     "x0": 1845,
+     "x1": 2209,
+     "centre_y": 1490
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Two rows of five strips (upper row y~542-1791, lower row y~1821-2485). Lines 8-9 are in the lower part of the upper row. Template matching with a window over lines 7-11 is consistent: at DJD 1300 the matching copy y is s1 ~683, s2 ~665, s3 ~637, s4 ~641, s5 ~636. The left strips sit higher relative to the copy, and the copy line also slopes (left 'ככ'+numerals ~745, right 'בקבר' ~790). So the line slopes a lot on the plate, from ~1380 at the left strip to ~1495 at the right strip, about 0.75 of a line. Use per-segment y values, not one band. The start 'בקבר שתחת' is on strip 5 (x~1900-2150) and strip 4. The end 'הסכין ככ' + numerals is on strips 2-1 (x~500-1000). The upper band (lines 3-6) gave inconsistent matches, and strip 3's horizontal placement was uncertain, so strip 3's y is interpolated. Medium because of the strong slope and because the letters can't be read."
+  },
+  "P82": {
+   "line": "XI 9",
+   "plate": "DJD3_pl69_LXIX.jpg",
+   "plate_confirmed": "Running head 'PLANCHE LXIX'; caption '3Q15 XI'. It is a photograph plate.",
+   "centre_y": 1600,
+   "line_spacing": 153,
+   "x0": 600,
+   "x1": 2209,
+   "segments": [
+    {
+     "x0": 600,
+     "x1": 711,
+     "centre_y": 1539
+    },
+    {
+     "x0": 732,
+     "x1": 1054,
+     "centre_y": 1573
+    },
+    {
+     "x0": 1110,
+     "x1": 1350,
+     "centre_y": 1618
+    },
+    {
+     "x0": 1409,
+     "x1": 1787,
+     "centre_y": 1626
+    },
+    {
+     "x0": 1845,
+     "x1": 2209,
+     "centre_y": 1647
+    }
+   ],
+   "confidence": "medium",
+   "notes": "This is the line below XI 8, with the same mapping and slope: ~1540 at the left to ~1647 at the right. On Puech's copy, line 9 runs only from x~360 to ~1180, so on the plate its left end barely reaches the right edge of strip 1. Strip 1 is otherwise blank copper at ~1540-1700, consistent with the copy's empty left part of lines 9-11. The strip-1 segment therefore covers only x~600-711 and may hold just the final 'ו' of 'הו', or nothing. Line 10 'בו כלי דמע...' is at ~1720-1760 (bottom of the upper row). Short line 11 'כתבן אצלן' is at the top of the lower row (~1870)."
+  }
+ }
+}

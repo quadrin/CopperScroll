@@ -1516,3 +1516,11 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **III 1 (entries 12, 12a): no traces** in a gap of 6–9 letter-spaces; the court's name is a restoration in every edition.
 - **Cannot decide:** I 12 (4), III 8 and III 11 (13, 14), VIII 14 (37), XI 8 (53), XI 9 (54). At XI 9 both readers lean, only at "possible", to ט for the owner word's last letter (Milik's העב֯ט).
 - **No rating level changes.** Bases and `decisive_next` updated for entries 4, 7, 12, 12a, 13, 14, 37, 41, 53, 54.
+
+## 17 October 2026 — Plate check, round 3 (DJD III photographs)
+
+[Results](../text/plate_check.md#round-3--17-october-2026-the-same-nine-lines-on-the-djd-iii-photographs); frozen in 13a52a8. The DJD III plates XLIII–LXXI were borrowed from the Internet Archive on the owner's account and saved to Drive at about 2,660 × 3,670 px (the repo's plates PDF is about 120 ppi). Two blind readers re-read the nine round-2 lines on the 1962 photographs.
+
+- **All nine: cannot decide.** No discriminating letter rose above "possible"; VIII 14 is unreadable on the photo. Evidence.
+- **Combined:** IX 10 still leans to מ and II 3's fourth letter to ה, each on one source only; III 1's gap shows no traces on both sources. Inference: no rating changes.
+- **Next:** the WSRP 1988 full-resolution masters (request to B. Zuckerman drafted, not sent).
