@@ -316,7 +316,8 @@
     "first_person_view": {
       "updated": "2026-10-17",
       "method": "One connected cuboid forearm and sleeve, with an original deterministic 16 by 16 skin texture using nearest-neighbour filtering. A separate Three.js camera renders the view model after the world on the existing MapLibre canvas. It stays at the lower-right viewport edge while looking, crouching and moving. The sleeve continues off the viewport; no detached left arm or body meshes are drawn. The view model is separate from the physical collision capsule.",
-      "validation": "TypeScript and production build pass. Actual actions/jekyll-build-pages output (101.1 MiB) passes byte-for-byte checks for every app file and startup asset. Desktop and phone Chromium renders from that actual output were visually inspected at rest and while looking/crouching: one connected arm enters from the right/bottom edge, with no left arm or floating sleeve edge. Entering, looking, crouching and returning to the map pass without shader/runtime errors."
+      "validation": "TypeScript and production build pass. Actual actions/jekyll-build-pages output (101.1 MiB) passes byte-for-byte checks for every app file and startup asset. Desktop and phone Chromium renders from that actual output were visually inspected at rest and while looking/crouching: one connected arm enters from the right/bottom edge, with no left arm or floating sleeve edge. Entering, looking, crouching and returning to the map pass without shader/runtime errors.",
+      "deployment": "c372044 deployed successfully in GitHub Pages run https://github.com/quadrin/CopperScroll/actions/runs/39003906044 (build 48s, deploy 7s, total 1m 2s); github-pages artifact 35.9 MB, sha256:15ff612016eda968193bcbf5887a5b462cd6186c2174a146b0e3b7edae000286."
     }
   }
 }

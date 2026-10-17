@@ -2,7 +2,7 @@
 
 Updated 17 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — desktop/phone renders of one connected blocky right forearm at the lower-right edge of the walking view, including looking and crouching. The former two world-space arms and visible body meshes are replaced by a camera-relative view model. TypeScript, production build, actual Pages payload (101.1 MiB), startup assets and browser enter/look/crouch/exit checks pass; [rendering/provenance record](assets/plans/atlas-explorer/manifest.json).
+Last session (16 October 2026 Los Angeles): **obtained** — desktop/phone renders of one connected blocky right forearm at the lower-right edge of the walking view, including looking and crouching. The former two world-space arms and visible body meshes are replaced by a camera-relative view model. TypeScript, production build, actual Pages payload (101.1 MiB), startup assets and browser enter/look/crouch/exit checks pass; [rendering/provenance record](assets/plans/atlas-explorer/manifest.json). Deployed c372044; [Pages run 39003906044](https://github.com/quadrin/CopperScroll/actions/runs/39003906044) succeeded.
 
 ## Active questions and the observation that decides each
 
