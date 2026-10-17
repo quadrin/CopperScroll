@@ -5,6 +5,7 @@ import {createRequire} from 'node:module';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.ATLAS_PLAYWRIGHT_MODULE||'playwright-core');
 const origin=process.env.ATLAS_TEST_ORIGIN||'http://127.0.0.1:5173/CopperScroll/atlas-site/';
+const normalMotion=process.env.ATLAS_TEST_MOTION==='normal';
 const {places}=JSON.parse(readFileSync(new URL('../app/atlas-data.json',import.meta.url),'utf8'));
 const mapped=places.filter(p=>p.lat!==null&&p.lon!==null);
 // Controlled Terrarium DEM at -183 m catches sea-level camera/placement errors.
@@ -12,7 +13,7 @@ const negativeTerrain=readFileSync(new URL('./fixtures/negative-terrain.png',imp
 const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 try {
  for(const mobile of process.env.ATLAS_TEST_VIEWPORT==='phone'?[true]:process.env.ATLAS_TEST_VIEWPORT==='desktop'?[false]:[false,true]){
-  const page=await browser.newPage({viewport:mobile?{width:390,height:844}:{width:1440,height:950},isMobile:mobile,hasTouch:mobile,reducedMotion:'reduce'});
+  const page=await browser.newPage({viewport:mobile?{width:390,height:844}:{width:1440,height:950},isMobile:mobile,hasTouch:mobile,reducedMotion:normalMotion?'no-preference':'reduce'});
   try {
   const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',message=>{if(message.type()==='error'&&/THREE|Shader Error|VALIDATE_STATUS|WebGL.*INVALID/i.test(message.text()))errors.push(message.text());});
   // Provider failures are deliberate; the controlled DEM tests terrain without
@@ -94,15 +95,25 @@ try {
   }else{
    await page.keyboard.down('Shift');await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkCrouch==='true');await page.keyboard.up('Shift');
    await page.keyboard.press('s');await page.keyboard.down('s');
-   try{await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkSprint==='true');}finally{await page.keyboard.up('s');}
+   try{await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkSprint==='true');if(normalMotion)await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkFov)>74);}finally{await page.keyboard.up('s');}
    await page.keyboard.down('s');
    try{await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkSpeed)>1);await page.evaluate(()=>window.dispatchEvent(new Event('blur')));await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkSpeed)<.01);}finally{await page.keyboard.up('s');}
   }
   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkCrouch==='false'&&document.querySelector('.maplibregl-canvas')?.dataset.walkSprint==='false');
+  await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkFov)<71);
   await canvas.focus();await page.keyboard.press('r');
   const jumpY=Number((await canvas.getAttribute('data-walk-feet')).split(',')[1]);
   if(mobile)await page.getByRole('button',{name:'Jump',exact:true}).click();else await page.keyboard.press('Space');
   await page.waitForFunction(y=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkFeet?.split(',')[1])>y+.15,jumpY);
+  await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true');
+  // Holding jump must repeat after landing without a second press, including
+  // a held pointer on the phone button. Observe the arc rather than a counter.
+  if(mobile){const jump=await page.getByRole('button',{name:'Jump',exact:true}).boundingBox();await page.mouse.move(jump.x+jump.width/2,jump.y+jump.height/2);await page.mouse.down();}else await page.keyboard.down('Space');
+  try{
+   await page.waitForFunction(y=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkFeet?.split(',')[1])>y+.8,jumpY);
+   await page.waitForFunction(y=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkFeet?.split(',')[1])<y+.2,jumpY);
+   await page.waitForFunction(y=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkFeet?.split(',')[1])>y+.8,jumpY);
+  }finally{if(mobile)await page.mouse.up();else await page.keyboard.up('Space');}
   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true');
   await sameCanvas();await page.screenshot({path:`/tmp/copperscroll-unified-walk-${mobile?'phone':'desktop'}.png`});
   const look=await page.locator('.maplibregl-canvas').boundingBox(),lookX=look.x+look.width*.65,lookY=look.y+look.height*.35;
@@ -131,7 +142,7 @@ try {
   await page.getByRole('button',{name:'Dismiss walking message'}).click();
   await page.getByRole('tab',{name:'Satellite',exact:true}).click();await page.getByRole('status').filter({hasText:'Satellite imagery could not load'}).waitFor();await page.getByRole('tab',{name:'Map',exact:true}).click();
   assert.deepEqual(errors,[]);
-  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, rendered 3D geometry, persistent canvas, inline references, physical masonry collision, jumping/gravity, crouching, sprint controls, coverage gaps and provider failure handling.`);
+  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, 3D geometry, persistent canvas, inline references, masonry collision, tap/held jumping, crouching, sprint controls/FOV, coverage gaps and provider failures (${normalMotion?'normal':'reduced'} motion).`);
   await page.close();
   }catch(error){console.error(await page.evaluate(()=>({viewport:innerWidth,route:location.hash,plan:document.querySelector('[data-site-plan]')?.dataset.sitePlan,state:document.querySelector('[data-site-state]')?.dataset.siteState,walking:document.querySelector('[data-walking]')?.dataset.walking,canvas:{...document.querySelector('.maplibregl-canvas')?.dataset},events:window.atlasTestEvents})));await page.screenshot({path:`/tmp/copperscroll-map-failure-${mobile?'phone':'desktop'}.png`});throw error;}
  }

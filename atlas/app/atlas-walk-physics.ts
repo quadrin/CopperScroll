@@ -2,7 +2,12 @@ import * as T from 'three';
 import {Octree} from 'three/addons/math/Octree.js';
 import {Capsule} from 'three/addons/math/Capsule.js';
 
-export const WALK_BODY={radius:.28,height:1.8,eye:1.65,crouchHeight:1.2,crouchEye:1.05,step:.35,slope:Math.cos(50*Math.PI/180),speed:3.4,sprintSpeed:5.6};
+export const WALK_BODY={radius:.30,height:1.8,eye:1.62,crouchHeight:1.5,crouchEye:1.27,step:.6,slope:Math.cos(50*Math.PI/180),speed:4.317,sprintSpeed:5.612};
+// Minecraft Java-style ground motion: 20 Hz impulses/drag, with collision and
+// camera positions advanced at 120 Hz so movement stays smooth on the map.
+// Coefficient reference: PrismarineJS/prismarine-physics (normal movement).
+const GAME_TICK=1/20,SUBSTEP=1/120,GROUND_DRAG=.6*.91,AIR_DRAG=.91,VERTICAL_DRAG=.98;
+export type WalkIntent={forward:number;right:number;bearing:number;sprint:boolean;crouch:boolean;jump:boolean;jumpHeld?:boolean};
 const UP=new T.Vector3(0,1,0),DOWN=new T.Vector3(0,-1,0),SKIN=.004;
 type Contact={normal:T.Vector3;depth:number};
 export type WalkWorld={tree:Octree;triangles:number;floor:(x:number,z:number,top:number,bottom:number)=>{height:number;normal:T.Vector3}|null;resolve:(body:Capsule,steep?:boolean)=>Contact[];clear:(body:Capsule)=>boolean};
@@ -58,7 +63,7 @@ export function createWalkWorld(root:T.Object3D):WalkWorld {
 
 export class WalkCharacter {
  readonly capsule=new Capsule();readonly velocity=new T.Vector3();grounded=false;blocked=false;crouched=false;sprinting=false;
- private safe=new T.Vector3();private accumulator=0;private jumpQueued=false;
+ private safe=new T.Vector3();private accumulator=0;private jumpBuffer=0;private jumpCooldown=0;private substep=0;private horizontalDrag=GROUND_DRAG;
  constructor(private world:()=>WalkWorld,start:T.Vector3){this.spawn(start);}
  get feet(){return this.capsule.start.clone().addScaledVector(UP,-WALK_BODY.radius);}
  get eye(){return this.feet.addScaledVector(UP,this.crouched?WALK_BODY.crouchEye:WALK_BODY.eye);}
@@ -69,22 +74,38 @@ export class WalkCharacter {
    const x=at.x+Math.cos(i*Math.PI/8)*ring*.4,z=at.z+Math.sin(i*Math.PI/8)*ring*.4,floor=world.floor(x,z,1000,-1000);if(!floor)continue;
    const foot=new T.Vector3(x,floor.height+SKIN,z),body=this.shape(foot,false);world.resolve(body);
    if(body.start.distanceTo(foot.clone().addScaledVector(UP,WALK_BODY.radius))>.15||!world.clear(body))continue;
-   this.capsule.copy(body);this.velocity.set(0,0,0);this.grounded=true;this.crouched=false;this.safe.copy(this.feet);return;
+   this.capsule.copy(body);this.velocity.set(0,0,0);this.grounded=true;this.crouched=false;this.sprinting=false;this.blocked=false;this.jumpBuffer=0;this.jumpCooldown=0;this.substep=0;this.horizontalDrag=GROUND_DRAG;this.safe.copy(this.feet);return;
   }throw Error('There is no clear standing space here. Drop the person on open ground.');
  }
- advance(elapsed:number,input:{forward:number;right:number;bearing:number;sprint:boolean;crouch:boolean;jump:boolean}){
-  this.accumulator+=Math.min(elapsed,.1);this.jumpQueued||=input.jump;
-  while(this.accumulator>=1/120){this.step(1/120,{...input,jump:this.jumpQueued});this.jumpQueued=false;this.accumulator-=1/120;}
+ advance(elapsed:number,input:WalkIntent){
+  this.accumulator+=Math.min(elapsed,.1);if(input.jump)this.jumpBuffer=.1;
+  while(this.accumulator>=SUBSTEP){this.step(SUBSTEP,input);this.accumulator-=SUBSTEP;}
  }
- private step(dt:number,input:{forward:number;right:number;bearing:number;sprint:boolean;crouch:boolean;jump:boolean}){
+ private step(dt:number,input:WalkIntent){
   const world=this.world(),old=this.feet,height=input.crouch?WALK_BODY.crouchHeight:WALK_BODY.height;
   if(input.crouch||!this.crouched||world.clear(this.shape(old,false))){this.crouched=input.crouch;this.capsule.end.y=this.capsule.start.y+height-2*WALK_BODY.radius;}
   const direction=new T.Vector3(Math.sin(input.bearing)*input.forward+Math.cos(input.bearing)*input.right,0,-Math.cos(input.bearing)*input.forward+Math.sin(input.bearing)*input.right);if(direction.lengthSq()>1)direction.normalize();
   this.sprinting=input.sprint&&!this.crouched&&direction.lengthSq()>0;
-  const speed=this.crouched?1.5:this.sprinting?WALK_BODY.sprintSpeed:WALK_BODY.speed,acceleration=(this.grounded?32:9)*dt;
-  for(const axis of ['x','z'] as const)this.velocity[axis]+=T.MathUtils.clamp(direction[axis]*speed-this.velocity[axis],-acceleration,acceleration);
-  if(input.jump&&this.grounded){this.velocity.y=6.2;this.grounded=false;}
+  if(this.substep===0){
+   this.velocity.x*=this.horizontalDrag;this.velocity.z*=this.horizontalDrag;
+   for(const axis of ['x','z'] as const)if(Math.abs(this.velocity[axis])<.06)this.velocity[axis]=0;
+   this.horizontalDrag=this.grounded?GROUND_DRAG:AIR_DRAG;
+   const acceleration=(this.grounded?.1:.02)*.98/GAME_TICK*(this.sprinting?1.3:1)*(this.crouched?.3:1);
+   this.velocity.addScaledVector(direction,acceleration);
+   const wantsJump=this.jumpBuffer>0||input.jumpHeld;
+   if(!wantsJump)this.jumpCooldown=0;else this.jumpCooldown=Math.max(0,this.jumpCooldown-GAME_TICK);
+   if(wantsJump&&this.grounded&&this.jumpCooldown<=1e-6){this.velocity.y=.42/GAME_TICK;if(this.sprinting)this.velocity.addScaledVector(direction.clone().normalize(),.2/GAME_TICK);this.grounded=false;this.jumpBuffer=0;this.jumpCooldown=.5;}
+  }
+  this.jumpBuffer=Math.max(0,this.jumpBuffer-dt);
   const horizontal=new T.Vector3(this.velocity.x*dt,0,this.velocity.z*dt),before=this.capsule.clone();
+  if(this.grounded&&this.crouched){
+   const support=(x:number,z:number)=>!!world.floor(x,z,old.y+.05,old.y-WALK_BODY.step);
+   if(!support(old.x+horizontal.x,old.z+horizontal.z)){
+    const xSafe=support(old.x+horizontal.x,old.z),zSafe=support(old.x,old.z+horizontal.z);
+    if(!xSafe||zSafe){horizontal.x=0;this.velocity.x=0;}
+    if(!zSafe||xSafe){horizontal.z=0;this.velocity.z=0;}
+   }
+  }
   // Probe just ahead of the feet for small steps. A tall wall cannot be selected
   // because this ray starts only one step above the current floor, not overhead.
   if(this.grounded&&horizontal.lengthSq()>1e-10){
@@ -95,13 +116,20 @@ export class WalkCharacter {
   const wallContacts=world.resolve(this.capsule,true);
   this.blocked=wallContacts.some(c=>Math.abs(c.normal.y)<WALK_BODY.slope&&horizontal.dot(c.normal)<-1e-7);
   for(const {normal} of wallContacts)if(Math.abs(normal.y)<WALK_BODY.slope){const n=normal.clone().setY(0).normalize(),inward=this.velocity.dot(n);if(inward<0)this.velocity.addScaledVector(n,-inward);}
-  this.velocity.y=Math.max(-25,this.velocity.y-20*dt);this.capsule.translate(new T.Vector3(0,this.velocity.y*dt,0));
+  this.capsule.translate(new T.Vector3(0,this.velocity.y*dt,0));
   const contacts=world.resolve(this.capsule);this.grounded=contacts.some(c=>c.normal.y>=WALK_BODY.slope&&this.velocity.y<=0);
-  for(const {normal} of contacts){const inward=this.velocity.dot(normal);if(inward<0)this.velocity.addScaledVector(normal,-inward);}
+  for(const {normal} of contacts){
+   // A supporting slope absorbs gravity without turning it into downhill
+   // horizontal velocity. Air/ceiling/wall contacts still clip their normal.
+   if(normal.y>=WALK_BODY.slope&&this.velocity.y<=0){this.velocity.y=0;continue;}
+   const inward=this.velocity.dot(normal);if(inward<0)this.velocity.addScaledVector(normal,-inward);
+  }
   const foot=this.feet,floor=world.floor(foot.x,foot.z,foot.y+.025,foot.y-.10);
   if(this.velocity.y<=.1&&floor&&foot.y-floor.height<=.08){this.capsule.translate(new T.Vector3(0,floor.height+SKIN-foot.y,0));world.resolve(this.capsule);this.velocity.y=0;this.grounded=true;}
   if(this.grounded)this.safe.copy(this.feet);
-  if(this.feet.y<this.safe.y-25||this.feet.y<-1000)this.spawn(this.safe);
+  this.substep=(this.substep+1)%6;
+  if(this.substep===0)this.velocity.y=(this.velocity.y-.08/GAME_TICK)*VERTICAL_DRAG;
+  if(this.feet.y<(world.tree.box?.min.y??-1000)-8||this.feet.y<-1000)this.spawn(this.safe);
  }
 }
 
@@ -116,5 +144,5 @@ export class WalkInput {
  get sprintEnabled(){return this.sprintToggle;}
  toggleSprint(){this.sprintToggle=!this.sprintToggle;}toggleCrouch(){this.crouchToggle=!this.crouchToggle;}
  clear(){this.keys.clear();this.taps.clear();this.sprintKey='';this.sprintToggle=false;this.crouchToggle=false;this.jump=false;}
- read(bearing:number){const down=(...keys:string[])=>keys.some(k=>this.keys.has(k));const value={forward:Number(down('w','arrowup'))-Number(down('s','arrowdown')),right:Number(down('d','arrowright'))-Number(down('a','arrowleft')),bearing,sprint:!!this.sprintKey||this.sprintToggle||down('control'),crouch:this.crouchToggle||down('shift'),jump:this.jump};this.jump=false;return value;}
+ read(bearing:number){const down=(...keys:string[])=>keys.some(k=>this.keys.has(k));const value={forward:Number(down('w','arrowup'))-Number(down('s','arrowdown')),right:Number(down('d','arrowright'))-Number(down('a','arrowleft')),bearing,sprint:!!this.sprintKey||this.sprintToggle||down('control'),crouch:this.crouchToggle||down('shift'),jump:this.jump,jumpHeld:down(' ')};this.jump=false;return value;}
 }

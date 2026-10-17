@@ -6,7 +6,8 @@ export type WalkController={keys:Set<string>;press:(key:string)=>void;release:(k
 export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[number,number,number])=>void,start?:[number,number]):WalkController {
  const before={center:map.getCenter(),zoom:map.getZoom(),pitch:map.getPitch(),bearing:map.getBearing(),padding:map.getPadding(),elevation:map.getCenterElevation()};
  const maxZoom=map.getMaxZoom(),maxPitch=map.getMaxPitch(),fov=map.getVerticalFieldOfView(),clamped=map.getCenterClampedToGround(),canvas=map.getCanvas();
- const input=new WalkInput();let bearing=0,pitch=86,phase=0,frame=0,previous=performance.now(),drag:{x:number;y:number;id:number}|null=null,blockedFrames=0,lastReport=0;
+ const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const input=new WalkInput();let bearing=0,pitch=86,phase=0,viewFov=70,bobWeight=0,frame=0,previous=performance.now(),drag:{x:number;y:number;id:number}|null=null,blockedFrames=0,lastReport=0;
  function initial(){
   bearing=0;pitch=86;
   if(start){bearing=before.bearing;return site.local(...start);}
@@ -19,17 +20,17 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
  const regionalLayers=map.getStyle().layers.filter(layer=>'source' in layer).map(layer=>({id:layer.id,visibility:map.getLayoutProperty(layer.id,'visibility')??'visible'}));
  for(const layer of regionalLayers)map.setLayoutProperty(layer.id,'visibility','none');
  const handlers=[map.dragPan,map.dragRotate,map.scrollZoom,map.doubleClickZoom,map.touchZoomRotate,map.keyboard],enabled=handlers.map(h=>h.isEnabled());handlers.forEach(h=>h.disable());
- map.stop();map.setMaxZoom(25);map.setMaxPitch(145);map.setCenterClampedToGround(false);map.setVerticalFieldOfView(65);
+ map.stop();map.setMaxZoom(25);map.setMaxPitch(145);map.setCenterClampedToGround(false);map.setVerticalFieldOfView(viewFov);
  function apply(force=false){
-  const eye=body.eye,foot=body.feet,from=site.location(eye.x,eye.z),angle=bearing*Math.PI/180,ahead=site.location(eye.x+Math.sin(angle)*20,eye.z-Math.cos(angle)*20),altitude=site.baseElevation()+.2+eye.y;
+  const eye=body.eye,foot=body.feet,from=site.location(eye.x,eye.z),angle=bearing*Math.PI/180,ahead=site.location(eye.x+Math.sin(angle)*20,eye.z-Math.cos(angle)*20),headBob=Math.sin(phase*2)*.025*bobWeight*(body.crouched?.3:1),altitude=site.baseElevation()+.2+eye.y+headBob;
   const options=map.calculateCameraOptionsFromTo(new LngLat(...from),altitude,new LngLat(...ahead),altitude-Math.tan((90-pitch)*Math.PI/180)*20);
   canvas.dataset.walkPosition=eye.toArray().map(n=>n.toFixed(3)).join(',');canvas.dataset.walkFeet=foot.toArray().map(n=>n.toFixed(3)).join(',');
   canvas.dataset.walkGrounded=String(body.grounded);canvas.dataset.walkSprint=String(body.sprinting);canvas.dataset.walkCrouch=String(body.crouched);canvas.dataset.walkBlocked=String(body.blocked);canvas.dataset.walkBlockedFrames=String(blockedFrames);canvas.dataset.walkSpeed=Math.hypot(body.velocity.x,body.velocity.z).toFixed(3);canvas.dataset.walkTriangles=String(site.collisionWorld().triangles);
-  map.jumpTo({...options,padding:{top:0,bottom:0,left:0,right:0}});canvas.dataset.walkPitch=map.getPitch().toFixed(2);
-  site.setWalker({feet:foot.toArray() as [number,number,number],bearing:angle,crouched:body.crouched,phase,moving:Math.hypot(body.velocity.x,body.velocity.z)>.1});
+  map.jumpTo({...options,padding:{top:0,bottom:0,left:0,right:0}});canvas.dataset.walkPitch=map.getPitch().toFixed(2);canvas.dataset.walkFov=viewFov.toFixed(2);
+  site.setWalker({feet:foot.toArray() as [number,number,number],bearing:angle,crouched:body.crouched,phase,moving:!reducedMotion&&body.grounded&&Math.hypot(body.velocity.x,body.velocity.z)>.1});
   if(force||performance.now()-lastReport>100){onChange(eye.toArray() as [number,number,number]);lastReport=performance.now();}
  }
- function reset(){input.clear();const at=initial();body.spawn(new Vector3(at[0],0,at[1]));phase=0;apply(true);}
+ function reset(){input.clear();const at=initial();body.spawn(new Vector3(at[0],0,at[1]));phase=0;bobWeight=0;viewFov=70;map.setVerticalFieldOfView(viewFov);apply(true);}
  const look=(dx:number,dy:number)=>{bearing+=dx*.23;pitch=Math.max(25,Math.min(145,pitch+dy*.16));apply(true);};
  const down=(e:PointerEvent)=>{if(e.button!==0||document.pointerLockElement===canvas)return;canvas.focus();canvas.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,id:e.pointerId};};
  const move=(e:PointerEvent)=>{if(!drag||drag.id!==e.pointerId)return;look(e.clientX-drag.x,e.clientY-drag.y);drag={x:e.clientX,y:e.clientY,id:e.pointerId};};
@@ -46,9 +47,14 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
  canvas.addEventListener('pointerdown',down);canvas.addEventListener('pointermove',move);canvas.addEventListener('pointerup',up);canvas.addEventListener('pointercancel',up);canvas.addEventListener('dblclick',lock);document.addEventListener('mousemove',lockedLook);document.addEventListener('keydown',keydown);window.addEventListener('keyup',keyup);window.addEventListener('blur',blur);
  function tick(now:number){
   const dt=Math.min((now-previous)/1000,.1);previous=now;const old=body.eye,oldStance=`${body.grounded}/${body.crouched}/${body.sprinting}`,intent=input.read(bearing*Math.PI/180);
-  body.advance(dt,intent);if(body.blocked)blockedFrames++;phase+=Math.hypot(body.velocity.x,body.velocity.z)*dt*3;
+  body.advance(dt,intent);if(body.blocked)blockedFrames++;const eye=body.eye,speed=Math.hypot(body.velocity.x,body.velocity.z);phase+=Math.hypot(eye.x-old.x,eye.z-old.z)*3;
+  const blend=1-Math.exp(-12*dt),targetFov=!reducedMotion&&body.sprinting&&speed>.5&&!body.blocked?81:70;
+  const nextFov=viewFov+(targetFov-viewFov)*blend,nextBob=bobWeight+((!reducedMotion&&body.grounded?Math.min(speed/4.317,1):0)-bobWeight)*blend;
+  const viewChanged=Math.abs(nextFov-viewFov)>.001||Math.abs(nextBob-bobWeight)>.0001;
+  viewFov=Math.abs(nextFov-targetFov)<.01?targetFov:nextFov;bobWeight=nextBob<.001?0:nextBob;
+  if(viewChanged)map.setVerticalFieldOfView(viewFov);
   const stanceChanged=oldStance!==`${body.grounded}/${body.crouched}/${body.sprinting}`;
-  if(body.eye.distanceToSquared(old)>1e-10||stanceChanged||intent.forward||intent.right||intent.jump)apply(stanceChanged);
+  if(body.eye.distanceToSquared(old)>1e-10||stanceChanged||intent.forward||intent.right||intent.jump||viewChanged)apply(stanceChanged);
   frame=requestAnimationFrame(tick);
  }
  apply(true);frame=requestAnimationFrame(tick);canvas.focus();
