@@ -1442,3 +1442,15 @@ The owner asked for the figures of Kowalewska, Regev and Cargill to be checked a
 - T02 hoards.csv rows 2–3 give de Vaux's preliminary lots (223, 185); Seyrig's revised lots are 222 and 186 (Callegher p. 61). The total is still 561.
 - Salhab and Ibziq: the atlas and the entry 59 review follow Zertal's Roman road B7; Dorsey p. 173 puts the main Roman road on S13 through Tayasir.
 - Some extraction files link images that are not in the repo or give a local Downloads path; the images are in Drive. *Wilson's Arch* lines 370–377 carry stray "+" prefixes; its "T19" is not the repository's T19.
+
+## 16 October 2026 — Patrich 1990, the Choziba cells (owner's scan)
+
+[Extraction](../../registration/patrich1990_choziba_extracted.md). J. Patrich, "The Cells (ta Kellia) of Choziba, Wadi el-Qilt", in Bottini, Di Segni and Alliata (eds), *Christian Archaeology in the Holy Land* (SBF Collectio Maior 36, 1990), pp. 205–225, read from page images. The volume identification is the owner's; the scan has no title page, and p. 226 is not in it. This was the long-parked "Patrich 1990 p. 208 n. 24" target for R03/Q39 (entry 32).
+
+- **Note 24 is not about the wall.** Its marker is on p. 208; its text (p. 224) says sherds and finds show "a Roman phase of use in some of the caves". The finds are from cave 20 (a round Roman lamp, a jug, a basin with hydraulic plaster) and one iron arrowhead from the path to Jericho. No wall, culvert, outlet or stratified deposit is named. This agrees with ESI 7–8 p. 92. Evidence.
+- **Cave 2 (p. 208).** A closing wall and an oval water basin "might have been" built before the Byzantine period; "the Hasmonean aqueduct runs some 15 m. below". The period is Patrich's statement without stated evidence. Evidence; inference: no dated feature.
+- **Cell 18 cistern (p. 220, Figs. 20–21).** About 5 × 2.5–3 × 3 m behind a barrier wall 0.8–0.9 m thick and an outer wall 0.55 m, fed by a channel from the cliff, with a relief cross on the plaster. It "could have been drained" by a ceramic pipe at the wall foot, which the sections do not show. Undated. Inference: a wall with a possible outlet, but Patrich's suggestion counts one level lower under the rubric, so entry 32's F stays 1.
+- **Map (Fig. 1, p. 207).** Scale 0–500 m, north at top. No aqueduct is drawn or listed. The bridge (no. 4) and the collapsed retaining wall below the path are about 1.5 km east of the monastery. Evidence.
+- **Dates.** Monks from about 420–430, the coenobium about 480, abandonment in 614; the cells were not resettled. Other Roman indications are "Roman and Byzantine sherds" in cave 14 (p. 216). No feature is dated to 50 BCE–135 CE. Burials are Byzantine (213 inscriptions in cave 1, n. 23) or modern.
+- **No rating change.** Entry 32 / Choziba stays R1 P2 F1 D2; entry 29 row J20 gets no dated cistern from note 24; the St George burials (entry 24 context) are Byzantine or modern.
+- **Source checks.** The text cites Fig. 12 for cell 11; the caption says cell 12. Fig. 1 nos. 20–21 are not explained. Glare crosses several photographs; Fig. 4's scale label is illegible.

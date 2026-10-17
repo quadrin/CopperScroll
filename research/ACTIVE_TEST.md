@@ -2,7 +2,7 @@
 
 Updated 16 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — GitHub’s actual Pages builder reproduces the missing child assets; child-glob exclusions fix them. The generated app passes byte comparisons and desktop/phone startup, recovery and walking checks. GitHub Actions run [38965918113](https://github.com/quadrin/CopperScroll/actions/runs/38965918113) successfully deployed 31dd1f8 with the complete artifact. Fresh startup filenames replace the cached 404 paths.
+Last session (16 October 2026 Los Angeles): **obtained** — Patrich 1990, the Choziba cells chapter (pp. 205–225), supplied by the owner and read: note 24 names Roman finds in cave 20 and on the path, not the R03 wall; no feature is dated and no rating changes. Earlier the same day: the Pages deployment was fixed and verified (run [38965918113](https://github.com/quadrin/CopperScroll/actions/runs/38965918113)).
 
 ## Active questions and the observation that decides each
 

@@ -61,7 +61,7 @@ A deposit location confirmed, or a negative excavation verified at a predicted t
 - **PROPOSED: parking.** A parked lane resumes only when its named observation arrives. Parking is not a test result.
 - **PROPOSED (Wood): spending follows results.** Spend a new message, a library item or money on a lane only for its first observation, or after its last result met its continue-if condition. Money always needs the owner's approval.
 - **PROPOSED (Greyfriars): requests name their stage.** Each new request names the stage and rating it serves. A request that serves only a C or D stage needs the owner's explicit approval.
-- Parked elsewhere and not restarted: Peleg's map, the JSP 18 pocket sheet and the Feldman search (owner); Patrich 1990 p. 208 n. 24 (R03); Augustinović and Gerico (R10); trip planning (owner).
+- Parked elsewhere and not restarted: Peleg's map, the JSP 18 pocket sheet and the Feldman search (owner); Augustinović and Gerico (R10); trip planning (owner).
 
 ## Lanes by stage
 
@@ -87,7 +87,7 @@ Cost: sessions (s), new or follow-up messages that need the owner's approval (ms
 |---|---|---|---|---|---|---|
 | R01 | S3 | park | A section or context record naming the L117 joint with a dated contact; Reeder and Jol's records are requested | 1 s | A dated contact at the joint | PROPOSED: park now; stays parked if Reeder and Jol send nothing by 31 Dec 2026 |
 | R02 | S3 | waiting | Dadon's IV/17 L-656 file: threshold section and levels, baskets 656.17 and 656.20 | 2 s, 1 msg | A dated wall or mouth contact, or a levelled threshold section | PROPOSED: park IV/17 if the file lacks these or nothing arrives by 31 Mar 2027; park Twin Cave now |
-| R03 | S3 | park | An exact PEF item or a measured wall record with a phase-linked section | 0 s | A measured outlet-to-wall relation with a phase | PROPOSED: keep parked; Patrich stays parked |
+| R03 | S3 | park | An exact PEF item or a measured wall record with a phase-linked section | 0 s | A measured outlet-to-wall relation with a phase | PROPOSED: keep parked; Patrich 1990 read 16 Oct 2026 (note 24 is not about the wall) |
 | R04 | S3 | park | Site 143 p. 142/28*, HA 85 p. 31, HA 31/32 p. 13, Jeremias 1958 p. 86 (none in Drive) | 1 s, 4 lib | A tomb plan with entrance direction and a dated water feature | PROPOSED: park until one item is in hand |
 | R05 | S3 | park | JSP 8 and JSP 20 plans, locus concordance and basket elevations (not in Drive) | 1 s, 2 lib | P5178 tied to stair, pit or cistern with a stratigraphic date | PROPOSED: park until JSP 8 or 20 is in hand |
 | R06 | S3 | waiting | Szanton's main-side L103 junction section (asked 6 October) | 1 s, 1 msg | Aperture, basin edge and floor in one phase | PROPOSED: after one follow-up, park if no reply by 31 Dec 2026 |

@@ -320,6 +320,7 @@ See the [book and plan intake](../sources/roman_byzantine_books_siloam_2026-09-3
 
 - Q13 / R07: TIR p. 197 remains unread; obtain Noorath, Achor Vallis and their expanded source references. HathiTrust is search-only; Google Books supplied no readable entry; the Qedem 5 PDF is a sales description. Map access is complete.
 - Q39 / R03: De Marco 2026's inspected article has no target-wall section; close that paper as a retrieval lead to this scope. Obtain Patrich 1990 p. 208 n. 24 and original ESI 6 cave-survey pages to identify the cited Roman context. IAA's scan download returned 403; verify pagination. The PEF item IDs, lower outlet, surface and phase remain unresolved.
+- Q39 update (16 October 2026): Patrich 1990 pp. 205–225 now read from the owner's scan. Note 24 (p. 224) concerns Roman finds in cave 20 and on the path, not the target wall; the chapter dates no wall, outlet or aqueduct segment. [Extraction](../../registration/patrich1990_choziba_extracted.md).
 - KPI correction: the previous SWP p. 228 identity count repeated the already inspected 30 September result. Its increment is 2/2, not 3/3; adding the new De Marco target/coverage check brings cumulative counts to 3 primary targets / 3 bounded checks, with 5 map intakes and no decisive candidate test or closure. [Full record](../sources/tir_gazetteer_choziba_followup_2026-10-01.md).
 
 
