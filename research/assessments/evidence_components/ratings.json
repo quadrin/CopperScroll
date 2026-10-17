@@ -3283,12 +3283,13 @@
   "R": {
    "level": 1,
    "limiting_word": "הכוזבא",
-   "basis": "Most editors read Koziba, but Lefkovits reads הבוזבא 'of Buz'. The plate check split (R1 leans כ, R2 leans ב) and is unresolved, so the R2 condition (plate check agrees) is not met. הטור is also disputed in letters (Eshel הסור) and meaning (wall, parapet, mountain, rock). Between 1 and 2, so 1.",
+   "basis": "Most editors read Koziba, but Lefkovits reads הבוזבא 'of Buz'. The plate check split (R1 leans כ, R2 leans ב) and is unresolved, so the R2 condition (plate check agrees) is not met. הטור is also disputed in letters (Eshel הסור) and meaning (wall, parapet, mountain, rock). Between 1 and 2, so 1. Plate-check round 4 (17 Oct 2026: VII 14 re-cropped on Puech's facsimile, two fresh blind readers, DJD photo added) cannot decide כ/ב: both readers see a square lower-right corner with no projecting base, which fits neither description cleanly (R8 a slight lean to כ, R7 כ/ב possible).",
    "sources": [
     "text/readings.json e32-koziba (Lefkovits 2000 p. 236), e32-tur, e32-outlet",
     "tables/plate_check.csv lines 15-16 (P07, P02: not resolved)",
     "tables/feature_constraints.csv lines 13, 15",
-    "tables/landmark_lexicon_index.csv kozeba (medium), tur (medium), yetsiat_mayim (medium)"
+    "tables/landmark_lexicon_index.csv kozeba (medium), tur (medium), yetsiat_mayim (medium)",
+    "research/text/plate_check.md §'Round 4'"
    ]
   },
   "P": {
@@ -3333,9 +3334,12 @@
    "R",
    "F"
   ],
-  "decisive_next": "A re-crop of VII 14 with the line fixed on Puech's facsimile and fresh blind readers (plate_check.md line 165), to settle כ/ב. For F, the PEF regional aqueduct plans (Cobbing p. 10) showing the monastery-opposite wall with its culvert mouth and phase.",
+  "decisive_next": "Higher-resolution images of VII 14 (the WSRP 1988 masters, requested from USC), since rounds 1 and 4 cannot decide כ/ב on Puech's plates or the DJD photo. For F, the PEF regional aqueduct plans (Cobbing p. 10) showing the monastery-opposite wall with its culvert mouth and phase.",
   "flags": [
    "Atlas evidence ('waterworks fit the outlet-and-wall description in the relevant period') and phase5_archaeology_index.csv row 32 ('yes', 'kept (landmark confirmed)') overstate the record. feature_constraints.csv has the outlet's function unresolved and the wall's period not established, and the regional water inventory records no Qelt outlet with a wall at its mouth."
+  ],
+  "review": [
+   "17 Oct 2026: plate-check round 4 cannot decide; decisive_next updated"
   ]
  },
  {

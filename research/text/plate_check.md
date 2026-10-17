@@ -236,3 +236,23 @@ Nine lines named in the ratings' `decisive_next` fields: I 12, II 3, III 1, III 
 | the other six | cannot decide | cannot decide | cannot decide |
 
 **Effect.** No rating changes. The DJD photographs at this resolution do not settle letter-level questions; the remaining independent source is the full-resolution West Semitic Research Project masters of 1988 (request drafted for the owner).
+
+## Round 4 — 17 October 2026: the four lines round 1 could not locate
+
+[Frozen](../../registration/plate_check/round4/PREREGISTRATION.md) in 57ffb1b before any crop was made ([questions](../../registration/plate_check/round4/QUESTIONS.md)).
+- **Images.** Puech 2006 vol. II copy A, read from the PDF in the owner's synced Drive folder (embedded images at 150 dpi), plus the DJD III photographs.
+- **Locating.** A non-blind locator fixed each line on Puech's facsimile, then placed it on each image by counting lines and matching word shapes ([key](../../registration/plate_check/round4/key.json)). It found that VII 14 ends with הכוז on the facsimile; בא opens VII 15. Images it could not place at "probable" or better were withheld, as the protocol requires: the second radiograph for VIII 9, VIII 13 and X 11, and the DJD photo for VIII 9 and X 11.
+- **Readers.** Two fresh readers, R7 and R8 ([outputs](../../registration/plate_check/round4/readers)). Both found the target line in every item.
+
+**Result: cannot decide on all four lines.** Round 1's answers on these lines are set aside, as fixed in the pre-registration.
+
+| Line (entry) | Question | R7 | R8 | Verdict |
+|---|---|---|---|---|
+| VII 14 (32) | כ vs ב after ה | square base, no projecting stroke; neither form fits; כ/ב possible | square base, no projecting stroke; slight lean to כ, not decided | **cannot decide** |
+| VIII 9 (35) | 7 vs 4 unit strokes | no ככ found; cannot count | no ככ found; cannot count | **cannot decide** |
+| VIII 13 (36) | 66 vs 67 | two or three arch signs; about 4 units | curled sign, two arch signs; units: 3 clear + 2 doubtful | **cannot decide** |
+| X 11 (47) | the number word after the vessel word | כ-פ possible; ending cannot tell | no כ-פ found; ending possibly ין | **cannot decide** |
+
+- **Evidence.** Both readers describe the VII 14 letter the same way: a flat base flush with the right vertical, with a square corner. The question's criterion (whether the base projects) does not separate כ from ב in this hand. Neither reader sees a ז in the word; the word runs into a crack.
+- **Evidence.** For VIII 13, both readers count about four unit strokes, not six or seven, and both report damage that could hide strokes. Under the frozen count rule this decides nothing.
+- **Effect.** No rating changes. Entry 32's `decisive_next` now points to higher-resolution images (the WSRP 1988 masters). Rounds 1, 3 and 4 show that these plates do not settle VII 14, the sums or the cups.

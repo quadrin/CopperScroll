@@ -1,0 +1,326 @@
+{
+ "_meta": {
+  "round": 4,
+  "made": "2026-10-17",
+  "locator": "non-blind locator subagent",
+  "page_mapping_check": "Copy photos and facsimiles: PDF page = plate + 323 holds (694/695 VII, 696/697 VIII, 700/701 X; facsimiles are line drawings). Radiographs do NOT follow the given mapping: by printed captions, pl. CCCXLV-CCCXLVI (col. VII) = PDF 666-667, CCCXLVII-CCCXLVIII (VIII) = 668-669, CCCLI-CCCLII (X) = 672-673. PDF 668-671 hold cols VIII-IX and 674-675 col. XI, so pages 666-669 and 672-673 were used.",
+  "strip_labels": "PDF 666: 14G (img 000), 14D (img 001); 667: 13C, 13, 13B; 668: 15G; 669: 15C (000), 15D (001); 672: 18 (000), 18G (001), 18C (002); 673: 18D (000), 17C (001). Labels from the plate captions, in printed order.",
+  "DJD_plates": "LXI shows col. VII, LXIII col. VIII, LXVII col. X (contents match the columns). DJD photos are the 1950s segment photographs, much poorer than the copy photo; placed by local template matching to the Puech copy photo (scale about 0.8) checked visually.",
+  "extraction": "pdfimages -png (embedded 150 dpi images); crops not sharpened or contrast-altered; 2x LANCZOS except where stated."
+ },
+ "P41": {
+  "line": "VII 14",
+  "words_on_facsimile": "על פי יציאת המים של הכוז (Puech's line ends הכוז at the left; בא opens VII 15, which reads בא חפור ...). VII 13 above is the short sum ככ 22 sitting over the middle of the column; the line slopes upward toward the left so its left end (הכוז) is level with VII 13's sum.",
+  "facsimile": "PDF 695 (pl. CCCLXXII); line 14 left end at fac x 150-390, y 1420-1500; right part (המים) y 1490-1540. loc/P41_facsimile.png = fac box [40,1330,660,1640] at 2x.",
+  "items": {
+   "A": {
+    "file": "items/P41_A.png",
+    "source": "out/p694-000.png (PDF 694, pl. CCCLXXI copy photo)",
+    "pdf_page": 694,
+    "plate": "CCCLXXI",
+    "strip": null,
+    "crop_box_source_px": [
+     45,
+     1300,
+     640,
+     1610
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 1430,
+     "right_edge": 1490
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 260,
+     "right_triangle": 380
+    },
+    "confidence": "certain",
+    "notes": "Facsimile ink registered to the photo (local match, offset about +34,-15). הכוז letters at photo x 230-345, y 1405-1480; VII 15 'בא חפור' directly below; VII 12 left end above; VII 13's ככ at upper right."
+   },
+   "B": {
+    "file": "items/P41_B.png",
+    "source": "out/p666-000.png (PDF 666, pl. CCCXLV)",
+    "pdf_page": 666,
+    "plate": "CCCXLV",
+    "strip": "14G",
+    "crop_box_source_px": [
+     60,
+     1340,
+     620,
+     1670
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 1510,
+     "right_edge": 1550
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 340,
+     "right_triangle": 420
+    },
+    "confidence": "probable",
+    "notes": "Same letter sequence as A at the left end (ה-box, ו, ז), with 'בא חפ' on the row below and VII 12 above; left column edge and cracks visible."
+   },
+   "C": {
+    "file": "items/P41_C.png",
+    "source": "out/p666-001.png (PDF 666, pl. CCCXLV)",
+    "pdf_page": 666,
+    "plate": "CCCXLV",
+    "strip": "14D",
+    "crop_box_source_px": [
+     60,
+     1360,
+     600,
+     1690
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 1530,
+     "right_edge": 1560
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 340,
+     "right_triangle": 400
+    },
+    "confidence": "probable",
+    "notes": "Second exposure of the same segment; same row pattern as B (target row between VII 12 left end and VII 15 'בא'), shifted about +20 px."
+   },
+   "D": {
+    "file": "items/P41_D.png",
+    "source": "src/DJD3_pl61_LXI.jpg (DJD III pl. LXI)",
+    "pdf_page": null,
+    "plate": "LXI",
+    "strip": "bottom-left panel",
+    "crop_box_source_px": [
+     370,
+     2170,
+     980,
+     2560
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 2355,
+     "right_edge": 2415
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 370,
+     "right_triangle": 490
+    },
+    "confidence": "probable",
+    "notes": "Mapped by template match photo=(136,1194)+0.8*(DJD-(420,2050)); stacked comparison shows the same box letters of הכוז, the left-edge crack and the pale lower-left notch, and VII 15 below."
+   }
+  },
+  "missing": []
+ },
+ "P56": {
+  "line": "VIII 9",
+  "words_on_facsimile": "חפור אמות שלוש ככ + unit strokes; the ככ and strokes are at the far left (fac x 60-170, y 925-1000), next to the flake/loss drawn at fac x 140-225, y 935-1020; rivet holes drawn at the left margin above (y 877) and below (y 1037). VIII 8 above ends ...קדרון; VIII 10 below starts בשלף. Line slopes down to the right (fac y ~957 at left, ~990 at x 600).",
+  "facsimile": "PDF 697 (pl. CCCLXXIV); loc/P56_facsimile.png = fac box [0,847,620,1117] at 2x.",
+  "items": {
+   "A": {
+    "file": "items/P56_A.png",
+    "source": "out/p696-000.png (PDF 696, pl. CCCLXXIII copy photo)",
+    "pdf_page": 696,
+    "plate": "CCCLXXIII",
+    "strip": null,
+    "crop_box_source_px": [
+     40,
+     830,
+     660,
+     1100
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 945,
+     "right_edge": 972
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 230,
+     "right_triangle": 284
+    },
+    "confidence": "certain",
+    "notes": "Flake/loss at photo x 215-290, y 925-990 and the two left-margin rivet holes match the facsimile exactly; target row runs between the holes through the flake to שלוש at right."
+   },
+   "B": {
+    "file": "items/P56_B.png",
+    "source": "out/p668-000.png (PDF 668, pl. CCCXLVII)",
+    "pdf_page": 668,
+    "plate": "CCCXLVII",
+    "strip": "15G",
+    "crop_box_source_px": [
+     30,
+     840,
+     650,
+     1120
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 985,
+     "right_edge": 1018
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 290,
+     "right_triangle": 356
+    },
+    "confidence": "probable",
+    "notes": "Rivet holes show as white spots (y 904, 1065) = facsimile holes +28 px; the flake shows as a dark hole at x 165-250, y 965-1030 (fac +25,+30). Target row between the holes at the hole's level. Strokes faint."
+   }
+  },
+  "missing": {
+   "C": "15C (PDF 669 img 000) and 15D (669 img 001) cover the middle/right of col. VIII (photo x >= ~260 / ~290 after the overexposed edge); the ככ group and strokes (photo x 60-200) are not on them.",
+   "D": "DJD LXIII: by registration the line falls at the very top of the bottom-left panel (DJD y ~1590-1670, just under the panel gap), but no word shapes could be matched there; possible only."
+  }
+ },
+ "P63": {
+  "line": "VIII 13",
+  "words_on_facsimile": "עשרין וארבע ככ ררר //// : עשרין at fac x 800-940, וארבע 560-760, ככ 430-540, three round numeral signs 200-420, unit strokes 80-200; centre y ~1385-1390, nearly level. VIII 12 above (הצופא צפון חפור אמות) with a rivet hole at its left end; VIII 14 below (בדור של השוא ...).",
+  "facsimile": "PDF 697 (pl. CCCLXXIV); loc/P63_facsimile.png = fac box [0,1270,660,1500] at 2x.",
+  "items": {
+   "A": {
+    "file": "items/P63_A.png",
+    "source": "out/p696-000.png (PDF 696)",
+    "pdf_page": 696,
+    "plate": "CCCLXXIII",
+    "strip": null,
+    "crop_box_source_px": [
+     40,
+     1240,
+     700,
+     1460
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 1352,
+     "right_edge": 1348
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 224,
+     "right_triangle": 216
+    },
+    "confidence": "certain",
+    "notes": "Direct overlay of facsimile and photo: unit strokes, the round numeral signs, ככ and the ע of וארבע all on the arrowed row; rivet hole above-left on VIII 12. Crop covers x up to the ע of וארבע."
+   },
+   "B": {
+    "file": "items/P63_B.png",
+    "source": "out/p668-000.png (PDF 668)",
+    "pdf_page": 668,
+    "plate": "CCCXLVII",
+    "strip": "15G",
+    "crop_box_source_px": [
+     20,
+     1300,
+     640,
+     1530
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 1420,
+     "right_edge": 1416
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 240,
+     "right_triangle": 232
+    },
+    "confidence": "probable",
+    "notes": "Rivet hole (white spot at y 1353) above-left as in A; the row of round numeral signs visible at x 160-340 on the arrowed row; VIII 14 letters below."
+   },
+   "D": {
+    "file": "items/P63_D.png",
+    "source": "src/DJD3_pl63_LXIII.jpg (DJD III pl. LXIII)",
+    "pdf_page": null,
+    "plate": "LXIII",
+    "strip": "bottom-left + bottom-middle panels",
+    "crop_box_source_px": [
+     430,
+     2020,
+     1300,
+     2250
+    ],
+    "upscale": 1.5,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 2134,
+     "right_edge": 2111
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 171,
+     "right_triangle": 136
+    },
+    "confidence": "probable",
+    "notes": "Left panel: mapping photo=(90,917)+0.8*(DJD-(460,1580)) (template match checked at two heights); the round numeral signs appear as rounded bumps at DJD x 620-870, y ~2110-2170, matching the photo, with the VIII 12 box letters above. Right panel (ככ region) placed by its own template match (photo=(358,1301)+0.8*(DJD-(1000,2050)), NCC 0.5) only; the two panel registrations overlap by ~130 photo px, so treat the right half as less secure. Arrow: left 2134, right 2111."
+   }
+  },
+  "missing": {
+   "C": "15C/15D do not reach the numerals at the left end (see P56)."
+  }
+ },
+ "P92": {
+  "line": "X 11",
+  "words_on_facsimile": "Counted 11th line from top of col. X: זהב וכלין כפורין עסרין. On the facsimile the vessel word (drawn טפרין/כפורין) is at fac x ~390-560 and the number word at x ~206-390, y ~1014-1076; X 10 above (הי הפתח ככרין שלש מאות, ending ת at x 225-290) and X 12 below (תחת יד אבשלום ...).",
+  "facsimile": "PDF 701 (pl. CCCLXXVIII); loc/P92_facsimile.png = fac box [160,940,710,1150] at 2x.",
+  "items": {
+   "A": {
+    "file": "items/P92_A.png",
+    "source": "out/p700-000.png (PDF 700, pl. CCCLXXVII copy photo)",
+    "pdf_page": 700,
+    "plate": "CCCLXXVII",
+    "strip": null,
+    "crop_box_source_px": [
+     170,
+     930,
+     720,
+     1140
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 1045,
+     "right_edge": 1058
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 230,
+     "right_triangle": 256
+    },
+    "confidence": "certain",
+    "notes": "Facsimile ink matches photo with offset (+10,-8), NCC 0.55; stacked check shows the same letters. Crop covers the vessel word and the number word to the left column edge; X 10 above, X 12 below."
+   },
+   "B": {
+    "file": "items/P92_B.png",
+    "source": "out/p672-001.png (PDF 672, pl. CCCLI)",
+    "pdf_page": 672,
+    "plate": "CCCLI",
+    "strip": "18G",
+    "crop_box_source_px": [
+     0,
+     987,
+     500,
+     1197
+    ],
+    "upscale": 2,
+    "margin_px_each_side": 36,
+    "target_row_y_source": {
+     "left_edge": 1102,
+     "right_edge": 1115
+    },
+    "target_row_y_in_item": {
+     "left_triangle": 230,
+     "right_triangle": 256
+    },
+    "confidence": "probable",
+    "notes": "Local match 18G = photo + (-226,+57), NCC 0.40; the vessel-word letters are on the arrowed row with שלש of X 10 above. The strip's left edge (bright, overexposed) cuts through the number word: only its right-hand (first) letters fall on the strip."
+   }
+  },
+  "missing": {
+   "C": "18C (PDF 672 img 002, narrow strip) covers the far left (the end of the number word), but I could not fix which of its rows is X 10 vs X 11 (two candidate offsets ~50 px apart); possible only. Strip 18 (672 img 000) shows the vessel word but not the number word; 17C/18D hold other parts of the column.",
+   "D": "DJD LXVII: template matches to the bottom panels were weak and the stacked check did not show matching word shapes; possible only."
+  }
+ }
+}

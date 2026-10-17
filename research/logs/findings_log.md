@@ -1557,3 +1557,10 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Avigad 1962, *IEJ* 12, pp. 1–12** (JSTOR viewer pages; [extraction](../../registration/avigad1962_kidron_ossuaries_extracted.md)).
   - The intact Karm esh-Sheikh tomb, south of Silwan on the south-western slope of the Kidron: one chamber with a standing pit and three shelves, no kokhim, entrance in the north wall (Fig. 1). Its pottery is 1st c. CE, before 70. Nine of its eleven ossuaries are inscribed, among them "Alexander (son) of Simon". Evidence.
   - Inference: it fills the unknown attributes of the tomb register's ASI 106/38 record. It fails all three parts of entry 56's triad (west-facing, several rooms, kokhim). No rating changes.
+
+## 17 October 2026 — Plate check, round 4 (re-crops of VII 14, VIII 9, VIII 13, X 11)
+
+[Results](../text/plate_check.md#round-4--17-october-2026-the-four-lines-round-1-could-not-locate); frozen in 57ffb1b. Each line was fixed first on Puech's facsimile. The crops came from Puech's PDF in the owner's synced Drive and the DJD photographs. Two fresh blind readers (R7, R8) read them.
+
+- **All four: cannot decide.** VII 14: the letter after ה has a square base with no projecting stroke, so it fits neither form cleanly. VIII 9: the sum region is too damaged to count. VIII 13: about four unit strokes are visible, with damage that could hide more. X 11: the number word is cut by the strip edge. Evidence.
+- **No rating changes.** Entry 32's next step is now the WSRP 1988 masters. Inference: these four questions cannot be settled on the published reproductions.
