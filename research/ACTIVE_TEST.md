@@ -2,7 +2,7 @@
 
 Updated 17 October 2026 UTC / 16 October Los Angeles. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (16 October 2026 Los Angeles): **obtained** — measured Minecraft-style motion: 4.317 m/s walking, 5.612 m/s sprinting and a 1.252 m jump. Added held jumps, sprint-jump momentum, half-block stepping, sneak ledge protection and sprint FOV/footstep motion. Numerical/collision checks and desktop/phone controls pass on actual Pages output (105.2 MiB, startup assets and app bytes verified); [movement/provenance record](assets/plans/atlas-explorer/manifest.json).
+Last session (16 October 2026 Los Angeles): **obtained** — measured Minecraft-style motion: 4.317 m/s walking, 5.612 m/s sprinting and a 1.252 m jump. Added held jumps, sprint-jump momentum, half-block stepping, sneak ledge protection and sprint FOV/footstep motion. Numerical/collision checks and desktop/phone controls pass on actual Pages output (105.2 MiB, startup assets and app bytes verified); [movement/provenance record](assets/plans/atlas-explorer/manifest.json). Deployed 75be16d; [Pages run 39004914643](https://github.com/quadrin/CopperScroll/actions/runs/39004914643) succeeded.
 
 ## Active questions and the observation that decides each
 

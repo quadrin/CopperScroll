@@ -285,7 +285,7 @@
       "atlas/app/atlas-walk-physics.ts": "e166accd6b2975e0075b5ca8511ebf68b01290c0b7a0743bbdd55ea0beb1d562",
       "atlas/app/atlas-walk-avatar.ts": "03f60a6cdb3d087d153ef53edba4224259f408a49502ff5135a6466ca9cd5ae2",
       "atlas/scripts/check-walk-physics.mjs": "5a3c17e77ddb52eeadc1ea7b694e73405bf4b08cb30f79d7d99b6edce2012d3b",
-      "atlas/README.md": "79ec3f1be9f029bcfa2c15b2fcfa18f42a1014bd44311b1b8fb1d71d0845a1b6"
+      "atlas/README.md": "926384eb2901204b1479648d3bc448f1e2a3afaf3a2d95e4733d4ad6241d34b8"
     },
     "placement": "Existing site anchors only. Architectural bearing, local origin, relative display scale and alignment remain illustrative; this interface does not register the source plans to the earth.",
     "qumran": "Detailed aqueduct segment reuses the existing Ilan–Amit 1989 p. 283 Fig. 1 relationships and existing Davey CJD979 comparison. Rock faces, masonry weathering, cross-sections and heights are illustrative; the whole settlement is not reconstructed.",
@@ -324,7 +324,7 @@
       "reference": "https://raw.githubusercontent.com/PrismarineJS/prismarine-physics/master/index.js",
       "reference_sha256": "91091243170671de512753c87593d6e72de548f2cfa11368679e4791c6cdcc20",
       "reference_scope": "Coefficient comparison of normal, unmodified movement only. The atlas implementation uses its own capsule collision against continuous illustrative site meshes, rather than a voxel world.",
-      "simulation": "20 Hz horizontal impulses and drag, 0.42 blocks/tick jump impulse, 0.08 blocks/tick^2 gravity, 0.98 vertical drag, 0.546 ground drag, 0.91 air drag, 0.30 sneak input factor, 0.20 blocks/tick directional sprint-jump impulse, 0.50 s held-jump cooldown. Six collision substeps per game tick preserve smooth motion and resolve thin obstacles.",
+      "simulation": "20 Hz horizontal impulses and drag, 0.42 blocks/tick jump impulse, 0.08 blocks/tick^2 gravity, 0.98 vertical drag, 0.546 ground drag, 0.91 air drag, 0.30 sneak input factor, 0.20 blocks/tick directional sprint-jump impulse, 0.50 s held-jump cooldown. Six collision substeps per game tick preserve smooth motion and resolve thin obstacles. A 0.10 s press buffer bridges rendered frames.",
       "measured": {
         "walking_metres_per_second": 4.317,
         "sprinting_metres_per_second": 5.612,
@@ -335,7 +335,8 @@
         "sprint_jump_metres": 3.392
       },
       "measurement_scope": "Level synthetic ground after acceleration, using foot-position distance. Jump contact is interpolated by collision substeps and lands during the twelfth 20 Hz tick. These engine measurements are not archaeological measurements or hardware frame-rate benchmarks.",
-      "validation": "Numerical speed/diagonal-speed, jump apex/flight/range, repeated held jumps, retained air momentum, stopping distance, half-metre slabs, sneaking at ledges, long-fall landing, ceilings, thin/rotated walls, climbable/steep slopes and Qumran before/after terrain fitting pass. Simulated 30, 60 and 144 Hz rendering preserves walking distance and jump height. Final desktop normal-motion and phone reduced-motion Chromium checks on actual Pages output (105.2 MiB) pass, including a held keyboard/pointer jump through landing and a second takeoff, sustained masonry collision, sprint FOV transition and restoration, crouch, blur and map return."
+      "validation": "Numerical speed/diagonal-speed, jump apex/flight/range, repeated held jumps, retained air momentum, stopping distance, half-metre slabs, sneaking at ledges, long-fall landing, ceilings, thin/rotated walls, climbable/steep slopes and Qumran before/after terrain fitting pass. Simulated 30, 60 and 144 Hz rendering preserves walking distance and jump height. Final desktop normal-motion and phone reduced-motion Chromium checks on actual Pages output (105.2 MiB) pass, including a held keyboard/pointer jump through landing and a second takeoff, sustained masonry collision, sprint FOV transition and restoration, crouch, blur and map return.",
+      "deployment": "75be16d deployed successfully in GitHub Pages run https://github.com/quadrin/CopperScroll/actions/runs/39004914643 (build 52s, deploy 11s, total 1m 12s); github-pages artifact 37.1 MB, sha256:604eaf8a83c301bef5939f8337f7bcb0350171e8790e2dae5b457ea689a8529b."
     }
   }
 }
