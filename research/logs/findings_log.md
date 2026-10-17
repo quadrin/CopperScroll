@@ -1591,4 +1591,5 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
   - 57 Gerizim: Arie 2023 has nothing from the window;
   - 25 Twin Cave: Bar-Adon's original pages confirm the summary; no plan or threshold ([extraction](../../registration/baradon1989_twin_cave_mizzi2017_extracted.md));
   - 40 Beth-Horon: HA 85 p. 31 is only the general Benjamin survey notice;
-  - 16, 29, 35 Hyrcania: no Kidron dam, no northern-aqueduct crossing, no inlet.
+  - 16, 29, 35 Hyrcania: no Kidron dam, no northern-aqueduct crossing, no inlet;
+  - 20–23 Qumran: Mizzi 2017 gives pointers only. Humbert 2016 pp. 425–432 was not unread, as I first wrote: it was read on 10 October ([check](../../research/sources/humbert2016_pp425-432_check.md)). Its aqueduct dates (rebuilt after 68, an earlier lower form before) contradict no date basis.

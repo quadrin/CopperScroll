@@ -14,10 +14,10 @@ Tests: [new_sources_round2_2026-10-17_tests.md](new_sources_round2_2026-10-17_te
 | U8 | Gibson 2005, 2011 | Northern pool separate and the smaller; no entry into it recorded; Herodian date on masonry and building order only, against Duprez's 2nd c. BCE. | none (55 F 2, D 2) |
 | U9 | Gibson & Jacobson 1994 | Cisterns 15 and 29, dated 3rd–2nd c. BCE by typology. No. 29 lies about 90 m from the Golden Gate; no. 15 has a curved stair whose head is a surface opening. | none (3, 5, 8, 9, 10) |
 | U10 | Arie 2023 | Precinct founded in the 7th c. BCE, used to the early 2nd c. BCE; nothing from the window. | none (57) |
-| U11 | Mizzi 2017 | Pointers only; no rated basis contradicted. Humbert 2016 pp. 425–432 not read this round. | none |
+| U11 | Mizzi 2017; Humbert 2016 pp. 425–432 | Mizzi: pointers only; no rated basis contradicted. Humbert: already read on 10 October, before these tests ([check](../research/sources/humbert2016_pp425-432_check.md)). Aqueduct 500's final form was rebuilt after 68, over a lower earlier form, and the hydraulic system starts in Niv. 3B (about 30 BCE; fig. 50, p. 114). It was in use in the window either way, so it contradicts none of the 20–23 date bases. Not a confirmatory reading, because it came before the freeze. | none |
 
 **Drive housekeeping.** The four Academia PDFs were filed and renamed: Gibson 2005 and Gibson & Jacobson 1994 and Arie 2023 in *04 Articles and chapters*, Gibson 2011 in *02 Excavation reports*. The Temple Scroll upload (vol. III) went to *01*. The duplicate Arie 2021 download was deleted from the owner's Downloads folder at his request.
 
 **Counts after this round.** 92 candidates: 46 weak, 46 none (were 43 and 49). Weakest-link components: P 65, F 56, D 25, R 23.
 
-**Leads, not scored.** Kh. Abu Ṭabaq's stepped reservoir is a specific "ruin with steps" for entry 1; an F test for it was not frozen this round. The Mar Saba map's stepped tunnel at Site 66 (50 steps, "apparently" Second Temple) lies just outside the Buqeia. Gibson & Jacobson's cistern 15 has the only recorded curved stair under the Haram (entry 5). Humbert 2016 pp. 425–432 (Perlego) is still unread.
+**Leads, not scored.** Kh. Abu Ṭabaq's stepped reservoir is a specific "ruin with steps" for entry 1; an F test for it was not frozen this round. The Mar Saba map's stepped tunnel at Site 66 (50 steps, "apparently" Second Temple) lies just outside the Buqeia. Gibson & Jacobson's cistern 15 has the only recorded curved stair under the Haram (entry 5).
