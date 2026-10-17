@@ -2567,6 +2567,68 @@
   ]
  },
  {
+  "entry": "27",
+  "lines": "VI 11-13",
+  "candidate": "jer_givati",
+  "candidate_name": "Givati parking lot: late Second Temple monumental building",
+  "atlas_status": "possible",
+  "atlas_confidence": "low",
+  "anchor_words": [
+   "משכן",
+   "המלכא"
+  ],
+  "R": {
+   "level": 2,
+   "limiting_word": "משכן",
+   "basis": "The letters משכן המלכא are agreed. The meaning of משכן is disputed in a way that changes the target: tomb/mausoleum (Puech 2015 p. 60) or dwelling/enclosure (the atlas title). 'The queen' is rated medium.",
+   "sources": [
+    "text/readings.json e27-queen (Puech 2015 pp. 60, 111 n. 501)",
+    "tables/landmark_lexicon_index.csv lines 40, 88"
+   ]
+  },
+  "P": {
+   "level": 0,
+   "basis": "No place is named in the entry. Josephus places Helena's 'palace' and other Adiabene buildings in the Lower City (J.W. 4.9.10; 5.6.1; 6.6.3), but the scroll's queen is unidentified and the entry sits in the Jericho/Qumran sequence. Under the rubric, a location taken from outside the entry with no place word scores 0.",
+   "sources": [
+    "registration/galor_avni2011_unearthing_extracted.md (ch. 13)",
+    "tables/landmark_lexicon_index.csv line 88"
+   ]
+  },
+  "F": {
+   "level": 1,
+   "basis": "Under the reading משכן = dwelling: a specific monumental residence of the right kind (vaulted basement, at least two storeys, frescoes, a miqveh wing). The 'queen' attribute is not shown: the excavators' link to the Adiabene buildings rests on size and location and is offered with caution; no find names an owner. The west side is not tested. Between 1 and 2, so 1.",
+   "sources": [
+    "registration/galor_avni2011_unearthing_extracted.md (ch. 13) pp. 231–239"
+   ]
+  },
+  "D": {
+   "level": 2,
+   "basis": "F is 1, so D rates the site and cannot exceed 2. The building itself is dated by pottery and coins to the 1st century BCE–1st century CE and was destroyed in 70 CE (pp. 231, 235).",
+   "sources": [
+    "registration/galor_avni2011_unearthing_extracted.md (ch. 13) pp. 231, 235"
+   ]
+  },
+  "U": {
+   "value": "untested",
+   "basis": "No registered comparison against controls covers this candidate.",
+   "sources": [
+    "research/progress/outcome_ledger.json (no record)"
+   ]
+  },
+  "decisive_next": "A find or inscription naming the building's owner, or a reading argument that משכן means a dwelling here; then the west-side relation.",
+  "flags": [
+   "Added 16 October 2026 at the owner's request as the dwelling-reading candidate; the tomb reading is scored at jer_tombs_kings."
+  ],
+  "review": [
+   "16 Oct 2026: new candidate (owner decision), rated from Unearthing Jerusalem ch. 13"
+  ],
+  "weakest": 0,
+  "label": "none",
+  "limited_by": [
+   "P"
+  ]
+ },
+ {
   "entry": "28",
   "lines": "VI 14-VII 2",
   "candidate": "jordan_ford",

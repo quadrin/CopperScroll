@@ -1491,3 +1491,7 @@ The owner asked for the figures of Kowalewska, Regev and Cargill to be checked a
 
 - **Entry 27, tomb branch.** Ben-Ami and Tchekhanovets p. 238: a sarcophagus from the Tombs of the Kings has an Aramaic inscription with מלכתא, "the queen". F basis for jer_tombs_kings updated; F stays 2.
 - **Entry 27, dwelling branch (lead).** A monumental building in the Givati lot, dated 1st century BCE–70 CE by pottery and coins, with a vaulted basement, frescoes and a miqveh wing, destroyed in 70 CE; the excavators link it "not without basis" to the Adiabene palaces in the Lower City (*J.W.* 4.9.10; 5.6.1; 6.6.3), with caution (pp. 231–239). No find names an owner. Not added as a candidate (owner decision).
+
+## 16 October 2026 — New entry 27 candidate: the Givati building (owner decision)
+
+The owner approved adding the Givati monumental building as entry 27's candidate under the reading משכן = dwelling ([extraction, ch. 13](../../registration/galor_avni2011_unearthing_extracted.md)). Atlas place `jer_givati` (31.773056, 35.236389, excavation area ~100 m; Wikipedia, Givati Parking Lot dig), status possible, confidence low. Ratings: R 2 (as for the other entry 27 candidates), P 0 (no place word), F 1 (a residence of the kind; no queen attribute; west side untested), D 2 (F ≤ 1 caps D; the building is dated 1st c. BCE–70 CE). Label none.

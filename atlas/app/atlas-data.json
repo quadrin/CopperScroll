@@ -692,6 +692,11 @@
           "placeId": "jer_tombs_kings",
           "status": "possible",
           "confidence": "low"
+        },
+        {
+          "placeId": "jer_givati",
+          "status": "possible",
+          "confidence": "low"
         }
       ],
       "evidence": "The public site index retains these candidates for comparison. It supplies no uniquely identified landmark for this entry.",
@@ -2035,6 +2040,18 @@
       "region": "jericho",
       "note": "Two-opening pillar cave retained provisionally in the existing entry-25 assessment. Sion’s shared cave-group grid does not locate its individual mouths; no exact WGS84 coordinate is assigned.",
       "source": "Sion 2002, ʿAtiqot 41 pp. 61–64, Plan 5 p. 63; entry25_iv17 assessment (2 October 2026)"
+    },
+    {
+      "id": "jer_givati",
+      "name": "Givati parking lot: late Second Temple monumental building",
+      "shortName": "Givati building · City of David",
+      "lat": 31.773056,
+      "lon": 35.236389,
+      "precision": "~100 m (excavation area, not the building)",
+      "kind": "point",
+      "region": "jerusalem",
+      "note": "A monumental building of the 1st century BCE–70 CE (pottery and coins) with a vaulted basement, frescoes and a miqveh wing, destroyed in 70 CE. The excavators link it “not without basis”, with caution, to the Adiabene royal buildings that Josephus places in the Lower City. No find names an owner. Candidate only under the reading משכן = dwelling.",
+      "source": "Ben-Ami and Tchekhanovets in Galor and Avni 2011 pp. 231–239; coordinate of the excavation from Wikipedia, Givati Parking Lot dig"
     }
   ]
 }
