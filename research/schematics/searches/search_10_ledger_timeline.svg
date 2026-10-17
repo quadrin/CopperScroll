@@ -12,10 +12,10 @@
 </defs>
 <rect width="1400" height="1000" fill="#fbfaf7"/>
 <text x="40.0" y="48.0" font-size="24" fill="#2a2420" font-weight="700">Past searches 10 — the search ledger on one time axis, 1952–2023</text>
-<text x="40.0" y="74.0" font-size="14.5" fill="#5a524a">All 33 rows of the search ledger (salvage_records/searches.csv), one row per search. Year axis linear and to scale; not a map.</text>
+<text x="40.0" y="74.0" font-size="14.5" fill="#5a524a">All 36 rows of the search ledger (salvage_records/searches.csv), one row per search. Year axis linear and to scale; not a map.</text>
 <defs><pattern id="ghatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="4" height="4" fill="#f3f1ed"/><line x1="0" y1="0" x2="0" y2="4" stroke="#8d8780" stroke-width="1"/></pattern></defs>
 <rect x="40.0" y="100.0" width="900.0" height="710.0" fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" rx="6"/>
-<text x="54.0" y="124.0" font-size="14" fill="#2a2420" font-weight="700">33 searches, sorted by start date</text>
+<text x="54.0" y="124.0" font-size="14" fill="#2a2420" font-weight="700">36 searches, sorted by start date</text>
 <rect x="54.0" y="145.0" width="24.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
 <text x="84.0" y="154.0" font-size="11" fill="#2a2420">scroll-related purpose</text>
 <rect x="221.0" y="145.0" width="24.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
@@ -40,64 +40,65 @@
 <rect x="433.5" y="164.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
 <text x="452.5" y="174.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
 <text x="478.5" y="175.0" font-size="11" fill="#2a2420">CLAIM-grade documentation; untagged rows are EVIDENCE</text>
-<rect x="50.0" y="203.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="237.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="271.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="305.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="339.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="373.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="407.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="441.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="475.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="509.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="543.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="577.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="611.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="645.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="679.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="713.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<rect x="50.0" y="747.5" width="880.0" height="17.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<line x1="394.0" y1="202.0" x2="394.0" y2="770.5" stroke="#e6e0d6" stroke-width="1"/>
+<rect x="50.0" y="204.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="234.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="264.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="294.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="324.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="354.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="384.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="414.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="444.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="474.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="504.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="534.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="564.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="594.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="624.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="654.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="684.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<rect x="50.0" y="714.5" width="880.0" height="15.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<line x1="394.0" y1="202.0" x2="394.0" y2="750.5" stroke="#e6e0d6" stroke-width="1"/>
 <text x="394.0" y="196.0" font-size="10.5" fill="#5a524a" text-anchor="middle">1950</text>
-<text x="394.0" y="785.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1950</text>
-<line x1="461.2" y1="202.0" x2="461.2" y2="770.5" stroke="#e6e0d6" stroke-width="1"/>
+<text x="394.0" y="765.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1950</text>
+<line x1="461.2" y1="202.0" x2="461.2" y2="750.5" stroke="#e6e0d6" stroke-width="1"/>
 <text x="461.2" y="196.0" font-size="10.5" fill="#5a524a" text-anchor="middle">1960</text>
-<text x="461.2" y="785.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1960</text>
-<line x1="528.4" y1="202.0" x2="528.4" y2="770.5" stroke="#e6e0d6" stroke-width="1"/>
+<text x="461.2" y="765.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1960</text>
+<line x1="528.4" y1="202.0" x2="528.4" y2="750.5" stroke="#e6e0d6" stroke-width="1"/>
 <text x="528.4" y="196.0" font-size="10.5" fill="#5a524a" text-anchor="middle">1970</text>
-<text x="528.4" y="785.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1970</text>
-<line x1="595.6" y1="202.0" x2="595.6" y2="770.5" stroke="#e6e0d6" stroke-width="1"/>
+<text x="528.4" y="765.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1970</text>
+<line x1="595.6" y1="202.0" x2="595.6" y2="750.5" stroke="#e6e0d6" stroke-width="1"/>
 <text x="595.6" y="196.0" font-size="10.5" fill="#5a524a" text-anchor="middle">1980</text>
-<text x="595.6" y="785.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1980</text>
-<line x1="662.8" y1="202.0" x2="662.8" y2="770.5" stroke="#e6e0d6" stroke-width="1"/>
+<text x="595.6" y="765.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1980</text>
+<line x1="662.8" y1="202.0" x2="662.8" y2="750.5" stroke="#e6e0d6" stroke-width="1"/>
 <text x="662.8" y="196.0" font-size="10.5" fill="#5a524a" text-anchor="middle">1990</text>
-<text x="662.8" y="785.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1990</text>
-<line x1="730.0" y1="202.0" x2="730.0" y2="770.5" stroke="#e6e0d6" stroke-width="1"/>
+<text x="662.8" y="765.5" font-size="10.5" fill="#5a524a" text-anchor="middle">1990</text>
+<line x1="730.0" y1="202.0" x2="730.0" y2="750.5" stroke="#e6e0d6" stroke-width="1"/>
 <text x="730.0" y="196.0" font-size="10.5" fill="#5a524a" text-anchor="middle">2000</text>
-<text x="730.0" y="785.5" font-size="10.5" fill="#5a524a" text-anchor="middle">2000</text>
-<line x1="797.2" y1="202.0" x2="797.2" y2="770.5" stroke="#e6e0d6" stroke-width="1"/>
+<text x="730.0" y="765.5" font-size="10.5" fill="#5a524a" text-anchor="middle">2000</text>
+<line x1="797.2" y1="202.0" x2="797.2" y2="750.5" stroke="#e6e0d6" stroke-width="1"/>
 <text x="797.2" y="196.0" font-size="10.5" fill="#5a524a" text-anchor="middle">2010</text>
-<text x="797.2" y="785.5" font-size="10.5" fill="#5a524a" text-anchor="middle">2010</text>
-<line x1="864.4" y1="202.0" x2="864.4" y2="770.5" stroke="#e6e0d6" stroke-width="1"/>
+<text x="797.2" y="765.5" font-size="10.5" fill="#5a524a" text-anchor="middle">2010</text>
+<line x1="864.4" y1="202.0" x2="864.4" y2="750.5" stroke="#e6e0d6" stroke-width="1"/>
 <text x="864.4" y="196.0" font-size="10.5" fill="#5a524a" text-anchor="middle">2020</text>
-<text x="864.4" y="785.5" font-size="10.5" fill="#5a524a" text-anchor="middle">2020</text>
-<line x1="394.0" y1="770.5" x2="898.0" y2="770.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="394.0" y1="770.5" x2="394.0" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="427.6" y1="770.5" x2="427.6" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="461.2" y1="770.5" x2="461.2" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="494.8" y1="770.5" x2="494.8" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="528.4" y1="770.5" x2="528.4" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="562.0" y1="770.5" x2="562.0" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="595.6" y1="770.5" x2="595.6" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="629.2" y1="770.5" x2="629.2" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="662.8" y1="770.5" x2="662.8" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="696.4" y1="770.5" x2="696.4" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="730.0" y1="770.5" x2="730.0" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="763.6" y1="770.5" x2="763.6" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="797.2" y1="770.5" x2="797.2" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="830.8" y1="770.5" x2="830.8" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="864.4" y1="770.5" x2="864.4" y2="774.5" stroke="#2a2420" stroke-width="1"/>
-<line x1="898.0" y1="770.5" x2="898.0" y2="774.5" stroke="#2a2420" stroke-width="1"/>
+<text x="864.4" y="765.5" font-size="10.5" fill="#5a524a" text-anchor="middle">2020</text>
+<line x1="394.0" y1="750.5" x2="898.0" y2="750.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="394.0" y1="750.5" x2="394.0" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="427.6" y1="750.5" x2="427.6" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="461.2" y1="750.5" x2="461.2" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="494.8" y1="750.5" x2="494.8" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="528.4" y1="750.5" x2="528.4" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="562.0" y1="750.5" x2="562.0" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="595.6" y1="750.5" x2="595.6" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="629.2" y1="750.5" x2="629.2" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="662.8" y1="750.5" x2="662.8" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="696.4" y1="750.5" x2="696.4" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="730.0" y1="750.5" x2="730.0" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="763.6" y1="750.5" x2="763.6" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="797.2" y1="750.5" x2="797.2" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="830.8" y1="750.5" x2="830.8" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="864.4" y1="750.5" x2="864.4" y2="754.5" stroke="#2a2420" stroke-width="1"/>
+<line x1="898.0" y1="750.5" x2="898.0" y2="754.5" stroke="#2a2420" stroke-width="1"/>
 <text x="54.0" y="196.0" font-size="10.5" fill="#2a2420" font-weight="700">Row</text>
 <text x="82.0" y="196.0" font-size="10.5" fill="#2a2420" font-weight="700">Place</text>
 <text x="248.0" y="196.0" font-size="10.5" fill="#2a2420" font-weight="700">Purpose</text>
@@ -112,307 +113,336 @@
 <text x="431.4" y="216.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">de Vaux, Reed</tspan></text>
 </g>
 <g><title>S02: 1953 to 1956; excavation_of_named_place; other_finds; EVIDENCE</title>
-<text x="54.0" y="233.0" font-size="11" fill="#2a2420" font-weight="700">S02</text>
-<text x="82.0" y="233.0" font-size="11" fill="#2a2420">Kh. Qumran</text>
-<text x="248.0" y="233.0" font-size="10.5" fill="#5a524a">place excavation</text>
-<rect x="414.2" y="224.5" width="26.9" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M450.0,224.0 L455.0,229.0 L450.0,234.0 L445.0,229.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="458.0" y="222.5" width="45.2" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="460.0" y="233.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">de Vaux</tspan></text>
+<text x="54.0" y="231.0" font-size="11" fill="#2a2420" font-weight="700">S02</text>
+<text x="82.0" y="231.0" font-size="11" fill="#2a2420">Kh. Qumran</text>
+<text x="248.0" y="231.0" font-size="10.5" fill="#5a524a">place excavation</text>
+<rect x="414.2" y="222.5" width="26.9" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M450.0,222.0 L455.0,227.0 L450.0,232.0 L445.0,227.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="458.0" y="220.5" width="45.2" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="460.0" y="231.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">de Vaux</tspan></text>
 </g>
 <g><title>S03: 1959 to 1960; scroll_deposit_search; negative; EVIDENCE</title>
-<text x="54.0" y="250.0" font-size="11" fill="#2a2420" font-weight="700">S03</text>
-<text x="82.0" y="250.0" font-size="11" fill="#2a2420">Kh. Qumran; Kh. Mird</text>
-<text x="248.0" y="250.0" font-size="10.5" fill="#5a524a">deposit search</text>
-<rect x="454.5" y="241.5" width="13.4" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<circle cx="476.9" cy="246.0" r="4.2" fill="#ffffff" stroke="#2a2420" stroke-width="1.7"/>
-<rect x="484.9" y="239.5" width="109.8" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="486.9" y="250.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">negative</tspan><tspan fill="#5a524a"> · Allegro</tspan></text>
+<text x="54.0" y="246.0" font-size="11" fill="#2a2420" font-weight="700">S03</text>
+<text x="82.0" y="246.0" font-size="11" fill="#2a2420">Kh. Qumran; Kh. Mird</text>
+<text x="248.0" y="246.0" font-size="10.5" fill="#5a524a">deposit search</text>
+<rect x="454.5" y="237.5" width="13.4" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<circle cx="476.9" cy="242.0" r="4.2" fill="#ffffff" stroke="#2a2420" stroke-width="1.7"/>
+<rect x="484.9" y="235.5" width="109.8" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="486.9" y="246.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">negative</tspan><tspan fill="#5a524a"> · Allegro</tspan></text>
 </g>
 <g><title>S28: 1959 to 1960; scroll_deposit_search; other_finds; EVIDENCE</title>
-<text x="54.0" y="267.0" font-size="11" fill="#2a2420" font-weight="700">S28</text>
-<text x="82.0" y="267.0" font-size="11" fill="#2a2420">Kh. Qumran</text>
-<text x="248.0" y="267.0" font-size="10.5" fill="#5a524a">deposit search</text>
-<rect x="454.5" y="258.5" width="13.4" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<path d="M476.9,258.0 L481.9,263.0 L476.9,268.0 L471.9,263.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="484.9" y="256.5" width="256.8" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="486.9" y="267.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Allegro</tspan><tspan fill="#5a524a"> · reported only in his 1964 edition</tspan></text>
+<text x="54.0" y="261.0" font-size="11" fill="#2a2420" font-weight="700">S28</text>
+<text x="82.0" y="261.0" font-size="11" fill="#2a2420">Kh. Qumran</text>
+<text x="248.0" y="261.0" font-size="10.5" fill="#5a524a">deposit search</text>
+<rect x="454.5" y="252.5" width="13.4" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<path d="M476.9,252.0 L481.9,257.0 L476.9,262.0 L471.9,257.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="484.9" y="250.5" width="256.8" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="486.9" y="261.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Allegro</tspan><tspan fill="#5a524a"> · reported only in his 1964 edition</tspan></text>
 </g>
 <g><title>S29: 1959 to 1963; scroll_deposit_search; unknown; EVIDENCE</title>
-<text x="54.0" y="284.0" font-size="11" fill="#2a2420" font-weight="700">S29</text>
-<text x="82.0" y="284.0" font-size="11" fill="#2a2420">Cypros, near Jericho</text>
-<text x="248.0" y="284.0" font-size="10.5" fill="#5a524a">deposit search</text>
-<rect x="454.5" y="275.5" width="33.6" height="9.0" fill="#1f6fae" stroke="#1f6fae" stroke-width="1.3" rx="2" stroke-dasharray="4 3" fill-opacity="0.14"/>
-<text x="497.1" y="284.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
-<rect x="505.1" y="273.5" width="398.0" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="507.1" y="284.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Allegro</tspan><tspan fill="#5a524a"> · dated only “our expedition” (1964 p. 75)</tspan></text>
+<text x="54.0" y="276.0" font-size="11" fill="#2a2420" font-weight="700">S29</text>
+<text x="82.0" y="276.0" font-size="11" fill="#2a2420">Cypros, near Jericho</text>
+<text x="248.0" y="276.0" font-size="10.5" fill="#5a524a">deposit search</text>
+<rect x="454.5" y="267.5" width="33.6" height="9.0" fill="#1f6fae" stroke="#1f6fae" stroke-width="1.3" rx="2" stroke-dasharray="4 3" fill-opacity="0.14"/>
+<text x="497.1" y="276.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
+<rect x="505.1" y="265.5" width="398.0" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="507.1" y="276.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Allegro</tspan><tspan fill="#5a524a"> · dated only “our expedition” (1964 p. 75)</tspan></text>
 </g>
 <g><title>S30: 1959 to 1963; scroll_deposit_search; other_finds; EVIDENCE</title>
-<text x="54.0" y="301.0" font-size="11" fill="#2a2420" font-weight="700">S30</text>
-<text x="82.0" y="301.0" font-size="11" fill="#2a2420">Zechariah monument, Kidron</text>
-<text x="248.0" y="301.0" font-size="10.5" fill="#5a524a">deposit search</text>
-<rect x="454.5" y="292.5" width="33.6" height="9.0" fill="#1f6fae" stroke="#1f6fae" stroke-width="1.3" rx="2" stroke-dasharray="4 3" fill-opacity="0.14"/>
-<path d="M497.1,292.0 L502.1,297.0 L497.1,302.0 L492.1,297.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="505.1" y="290.5" width="303.9" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="507.1" y="301.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Allegro</tspan><tspan fill="#5a524a"> · dated only “our expedition” (1964 p. 105)</tspan></text>
+<text x="54.0" y="291.0" font-size="11" fill="#2a2420" font-weight="700">S30</text>
+<text x="82.0" y="291.0" font-size="11" fill="#2a2420">Zechariah monument, Kidron</text>
+<text x="248.0" y="291.0" font-size="10.5" fill="#5a524a">deposit search</text>
+<rect x="454.5" y="282.5" width="33.6" height="9.0" fill="#1f6fae" stroke="#1f6fae" stroke-width="1.3" rx="2" stroke-dasharray="4 3" fill-opacity="0.14"/>
+<path d="M497.1,282.0 L502.1,287.0 L497.1,292.0 L492.1,287.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="505.1" y="280.5" width="303.9" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="507.1" y="291.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Allegro</tspan><tspan fill="#5a524a"> · dated only “our expedition” (1964 p. 105)</tspan></text>
 </g>
 <g><title>S04: 1960-12 to (no end); unknown; unknown; EVIDENCE</title>
-<text x="54.0" y="318.0" font-size="11" fill="#2a2420" font-weight="700">S04</text>
-<text x="82.0" y="318.0" font-size="11" fill="#2a2420">Mazin</text>
-<text x="248.0" y="318.0" font-size="10.5" fill="#5a524a">purpose unknown</text>
-<rect x="464.1" y="309.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<line x1="472.1" y1="314.0" x2="487.1" y2="314.0" stroke="#5a524a" stroke-width="1.3" stroke-dasharray="3 2"/>
-<text x="496.1" y="318.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
-<rect x="504.1" y="307.5" width="327.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="506.1" y="318.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Allegro</tspan><tspan fill="#5a524a"> · year 1960 or 1961, kept open</tspan></text>
+<text x="54.0" y="306.0" font-size="11" fill="#2a2420" font-weight="700">S04</text>
+<text x="82.0" y="306.0" font-size="11" fill="#2a2420">Mazin</text>
+<text x="248.0" y="306.0" font-size="10.5" fill="#5a524a">purpose unknown</text>
+<rect x="464.1" y="297.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<line x1="472.1" y1="302.0" x2="487.1" y2="302.0" stroke="#5a524a" stroke-width="1.3" stroke-dasharray="3 2"/>
+<text x="496.1" y="306.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
+<rect x="504.1" y="295.5" width="327.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="506.1" y="306.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Allegro</tspan><tspan fill="#5a524a"> · year 1960 or 1961, kept open</tspan></text>
 </g>
 <g><title>S05: 1960-12-25 to 1963-01; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="335.0" font-size="11" fill="#2a2420" font-weight="700">S05</text>
-<text x="82.0" y="335.0" font-size="11" fill="#2a2420">Christmas Cave</text>
-<text x="248.0" y="335.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="467.8" y="326.5" width="14.1" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M490.9,326.0 L495.9,331.0 L490.9,336.0 L485.9,331.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="498.9" y="324.5" width="245.1" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="500.9" y="335.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Allegro</tspan><tspan fill="#5a524a"> · end year inferred in the ledger</tspan></text>
+<text x="54.0" y="321.0" font-size="11" fill="#2a2420" font-weight="700">S05</text>
+<text x="82.0" y="321.0" font-size="11" fill="#2a2420">Christmas Cave</text>
+<text x="248.0" y="321.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="467.8" y="312.5" width="14.1" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M490.9,312.0 L495.9,317.0 L490.9,322.0 L485.9,317.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="498.9" y="310.5" width="245.1" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="500.9" y="321.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Allegro</tspan><tspan fill="#5a524a"> · end year inferred in the ledger</tspan></text>
 </g>
 <g><title>S33: 1962-11 to 1963-01; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="352.0" font-size="11" fill="#2a2420" font-weight="700">S33</text>
-<text x="82.0" y="352.0" font-size="11" fill="#2a2420">Mazin; Feshkha; Cave 11; Mird</text>
-<text x="248.0" y="352.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="477.6" y="343.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M493.6,343.0 L498.6,348.0 L493.6,353.0 L488.6,348.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="501.6" y="341.5" width="356.8" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="503.6" y="352.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Allegro, Dead Sea Scrolls Fund</tspan><tspan fill="#5a524a"> · year inferred in the ledger</tspan></text>
+<text x="54.0" y="336.0" font-size="11" fill="#2a2420" font-weight="700">S33</text>
+<text x="82.0" y="336.0" font-size="11" fill="#2a2420">Mazin; Feshkha; Cave 11; Mird</text>
+<text x="248.0" y="336.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="477.6" y="327.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M493.6,327.0 L498.6,332.0 L493.6,337.0 L488.6,332.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="501.6" y="325.5" width="356.8" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="503.6" y="336.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Allegro, Dead Sea Scrolls Fund</tspan><tspan fill="#5a524a"> · year inferred in the ledger</tspan></text>
 </g>
 <g><title>S07: 1964 to 1966; excavation_of_named_place; other_finds; EVIDENCE</title>
-<text x="54.0" y="369.0" font-size="11" fill="#2a2420" font-weight="700">S07</text>
-<text x="82.0" y="369.0" font-size="11" fill="#2a2420">Tell er-Ras, Gerizim</text>
-<text x="248.0" y="369.0" font-size="10.5" fill="#5a524a">place excavation</text>
-<rect x="488.1" y="360.5" width="20.2" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M517.2,360.0 L522.2,365.0 L517.2,370.0 L512.2,365.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="525.2" y="358.5" width="27.5" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="527.2" y="369.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Bull</tspan></text>
+<text x="54.0" y="351.0" font-size="11" fill="#2a2420" font-weight="700">S07</text>
+<text x="82.0" y="351.0" font-size="11" fill="#2a2420">Tell er-Ras, Gerizim</text>
+<text x="248.0" y="351.0" font-size="10.5" fill="#5a524a">place excavation</text>
+<rect x="488.1" y="342.5" width="20.2" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M517.2,342.0 L522.2,347.0 L517.2,352.0 L512.2,347.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="525.2" y="340.5" width="27.5" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="527.2" y="351.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Bull</tspan></text>
 </g>
 <g><title>S15: 1967 to 1992; scroll_deposit_search; unknown; CLAIM</title>
-<text x="54.0" y="386.0" font-size="11" fill="#2a2420" font-weight="700">S15</text>
-<text x="82.0" y="386.0" font-size="11" fill="#2a2420">Qumran area</text>
-<text x="248.0" y="386.0" font-size="10.5" fill="#5a524a">deposit search</text>
-<rect x="344.0" y="375.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
-<text x="363.0" y="385.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
-<rect x="508.2" y="377.5" width="174.7" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<text x="692.0" y="386.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
-<rect x="700.0" y="375.5" width="133.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="702.0" y="386.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Jones</tspan></text>
+<text x="54.0" y="366.0" font-size="11" fill="#2a2420" font-weight="700">S15</text>
+<text x="82.0" y="366.0" font-size="11" fill="#2a2420">Qumran area</text>
+<text x="248.0" y="366.0" font-size="10.5" fill="#5a524a">deposit search</text>
+<rect x="344.0" y="355.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
+<text x="363.0" y="365.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
+<rect x="508.2" y="357.5" width="174.7" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<text x="692.0" y="366.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
+<rect x="700.0" y="355.5" width="133.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="702.0" y="366.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Jones</tspan></text>
 </g>
 <g><title>S09: 1971 to 1982; scroll_motivated; other_finds; EVIDENCE</title>
-<text x="54.0" y="403.0" font-size="11" fill="#2a2420" font-weight="700">S09</text>
-<text x="82.0" y="403.0" font-size="11" fill="#2a2420">Twin Cave</text>
-<text x="248.0" y="403.0" font-size="10.5" fill="#5a524a">scroll-motivated</text>
-<rect x="535.1" y="394.5" width="80.6" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<path d="M624.8,394.0 L629.8,399.0 L624.8,404.0 L619.8,399.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="632.8" y="392.5" width="51.0" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="634.8" y="403.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Bar-Adon</tspan></text>
+<text x="54.0" y="381.0" font-size="11" fill="#2a2420" font-weight="700">S09</text>
+<text x="82.0" y="381.0" font-size="11" fill="#2a2420">Twin Cave</text>
+<text x="248.0" y="381.0" font-size="10.5" fill="#5a524a">scroll-motivated</text>
+<rect x="535.1" y="372.5" width="80.6" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<path d="M624.8,372.0 L629.8,377.0 L624.8,382.0 L619.8,377.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="632.8" y="370.5" width="51.0" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="634.8" y="381.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Bar-Adon</tspan></text>
 </g>
 <g><title>S12: 1983 to 1988; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="420.0" font-size="11" fill="#2a2420" font-weight="700">S12</text>
-<text x="82.0" y="420.0" font-size="11" fill="#2a2420">N. Judean Desert cliffs</text>
-<text x="248.0" y="420.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="615.8" y="411.5" width="40.3" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M665.1,411.0 L670.1,416.0 L665.1,421.0 L660.1,416.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="673.1" y="409.5" width="45.2" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="675.1" y="420.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Patrich</tspan></text>
+<text x="54.0" y="396.0" font-size="11" fill="#2a2420" font-weight="700">S12</text>
+<text x="82.0" y="396.0" font-size="11" fill="#2a2420">N. Judean Desert cliffs</text>
+<text x="248.0" y="396.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="615.8" y="387.5" width="40.3" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M665.1,387.0 L670.1,392.0 L665.1,397.0 L660.1,392.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="673.1" y="385.5" width="45.2" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="675.1" y="396.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Patrich</tspan></text>
 </g>
 <g><title>S08: 1983 to 2006; excavation_of_named_place; other_finds; EVIDENCE</title>
-<text x="54.0" y="437.0" font-size="11" fill="#2a2420" font-weight="700">S08</text>
-<text x="82.0" y="437.0" font-size="11" fill="#2a2420">Mount Gerizim summit</text>
-<text x="248.0" y="437.0" font-size="10.5" fill="#5a524a">place excavation</text>
-<rect x="615.8" y="428.5" width="161.3" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M786.0,428.0 L791.0,433.0 L786.0,438.0 L781.0,433.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="794.0" y="426.5" width="33.4" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="796.0" y="437.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Magen</tspan></text>
+<text x="54.0" y="411.0" font-size="11" fill="#2a2420" font-weight="700">S08</text>
+<text x="82.0" y="411.0" font-size="11" fill="#2a2420">Mount Gerizim summit</text>
+<text x="248.0" y="411.0" font-size="10.5" fill="#5a524a">place excavation</text>
+<rect x="615.8" y="402.5" width="161.3" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M786.0,402.0 L791.0,407.0 L786.0,412.0 L781.0,407.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="794.0" y="400.5" width="33.4" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="796.0" y="411.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Magen</tspan></text>
 </g>
 <g><title>S10: 1986-04 to 1986-04; scroll_motivated; negative; EVIDENCE</title>
-<text x="54.0" y="454.0" font-size="11" fill="#2a2420" font-weight="700">S10</text>
-<text x="82.0" y="454.0" font-size="11" fill="#2a2420">Twin Cave</text>
-<text x="248.0" y="454.0" font-size="10.5" fill="#5a524a">scroll-motivated</text>
-<rect x="634.4" y="445.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<circle cx="650.4" cy="450.0" r="4.2" fill="#ffffff" stroke="#2a2420" stroke-width="1.7"/>
-<rect x="658.4" y="443.5" width="180.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="660.4" y="454.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">negative</tspan><tspan fill="#5a524a"> · reported by Patrich</tspan></text>
+<text x="54.0" y="426.0" font-size="11" fill="#2a2420" font-weight="700">S10</text>
+<text x="82.0" y="426.0" font-size="11" fill="#2a2420">Twin Cave</text>
+<text x="248.0" y="426.0" font-size="10.5" fill="#5a524a">scroll-motivated</text>
+<rect x="634.4" y="417.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<circle cx="650.4" cy="422.0" r="4.2" fill="#ffffff" stroke="#2a2420" stroke-width="1.7"/>
+<rect x="658.4" y="415.5" width="180.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="660.4" y="426.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">negative</tspan><tspan fill="#5a524a"> · reported by Patrich</tspan></text>
 </g>
 <g><title>S11: 1986-04 to 1986-04; scroll_find_site; other_finds; EVIDENCE</title>
-<text x="54.0" y="471.0" font-size="11" fill="#2a2420" font-weight="700">S11</text>
-<text x="82.0" y="471.0" font-size="11" fill="#2a2420">Cave 3Q</text>
-<text x="248.0" y="471.0" font-size="10.5" fill="#5a524a">scroll find site</text>
-<rect x="634.4" y="462.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<path d="M650.4,462.0 L655.4,467.0 L650.4,472.0 L645.4,467.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="658.4" y="460.5" width="115.7" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="660.4" y="471.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">reported by Patrich</tspan></text>
+<text x="54.0" y="441.0" font-size="11" fill="#2a2420" font-weight="700">S11</text>
+<text x="82.0" y="441.0" font-size="11" fill="#2a2420">Cave 3Q</text>
+<text x="248.0" y="441.0" font-size="10.5" fill="#5a524a">scroll find site</text>
+<rect x="634.4" y="432.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<path d="M650.4,432.0 L655.4,437.0 L650.4,442.0 L645.4,437.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="658.4" y="430.5" width="115.7" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="660.4" y="441.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">reported by Patrich</tspan></text>
 </g>
 <g><title>S13: 1988-02 to 1988-04; scroll_motivated; claimed_find; CLAIM</title>
-<text x="54.0" y="488.0" font-size="11" fill="#2a2420" font-weight="700">S13</text>
-<text x="82.0" y="488.0" font-size="11" fill="#2a2420">cave near Qumran</text>
-<text x="248.0" y="488.0" font-size="10.5" fill="#5a524a">scroll-motivated</text>
-<rect x="344.0" y="477.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
-<text x="363.0" y="487.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
-<rect x="647.3" y="479.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<path d="M663.3,478.5 L668.5,488.0 L658.1,488.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="671.3" y="477.5" width="180.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="673.3" y="488.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">claimed find</tspan><tspan fill="#5a524a"> · Patrich, Arubas</tspan></text>
+<text x="54.0" y="456.0" font-size="11" fill="#2a2420" font-weight="700">S13</text>
+<text x="82.0" y="456.0" font-size="11" fill="#2a2420">cave near Qumran</text>
+<text x="248.0" y="456.0" font-size="10.5" fill="#5a524a">scroll-motivated</text>
+<rect x="344.0" y="445.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
+<text x="363.0" y="455.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
+<rect x="647.3" y="447.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<path d="M663.3,446.5 L668.5,456.0 L658.1,456.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="671.3" y="445.5" width="180.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="673.3" y="456.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">claimed find</tspan><tspan fill="#5a524a"> · Patrich, Arubas</tspan></text>
 </g>
 <g><title>S14: 1992-03 to 1992-05-18; scroll_deposit_search; claimed_find; CLAIM</title>
-<text x="54.0" y="505.0" font-size="11" fill="#2a2420" font-weight="700">S14</text>
-<text x="82.0" y="505.0" font-size="11" fill="#2a2420">cave north of Qumran</text>
-<text x="248.0" y="505.0" font-size="10.5" fill="#5a524a">deposit search</text>
-<rect x="344.0" y="494.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
-<text x="363.0" y="504.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
-<rect x="674.6" y="496.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<path d="M690.6,495.5 L695.8,505.0 L685.4,505.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="698.6" y="494.5" width="121.6" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="700.6" y="505.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">claimed find</tspan><tspan fill="#5a524a"> · Jones</tspan></text>
+<text x="54.0" y="471.0" font-size="11" fill="#2a2420" font-weight="700">S14</text>
+<text x="82.0" y="471.0" font-size="11" fill="#2a2420">cave north of Qumran</text>
+<text x="248.0" y="471.0" font-size="10.5" fill="#5a524a">deposit search</text>
+<rect x="344.0" y="460.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
+<text x="363.0" y="470.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
+<rect x="674.6" y="462.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<path d="M690.6,461.5 L695.8,471.0 L685.4,471.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="698.6" y="460.5" width="121.6" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="700.6" y="471.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">claimed find</tspan><tspan fill="#5a524a"> · Jones</tspan></text>
 </g>
 <g><title>S19: 1993 to 1993; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="522.0" font-size="11" fill="#2a2420" font-weight="700">S19</text>
-<text x="82.0" y="522.0" font-size="11" fill="#2a2420">northern Judean Desert</text>
-<text x="248.0" y="522.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="682.8" y="513.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M698.8,513.0 L703.8,518.0 L698.8,523.0 L693.8,518.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="706.8" y="511.5" width="168.6" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="708.8" y="522.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Israel Antiquities Authority</tspan></text>
+<text x="54.0" y="486.0" font-size="11" fill="#2a2420" font-weight="700">S19</text>
+<text x="82.0" y="486.0" font-size="11" fill="#2a2420">northern Judean Desert</text>
+<text x="248.0" y="486.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="682.8" y="477.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M698.8,477.0 L703.8,482.0 L698.8,487.0 L693.8,482.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="706.8" y="475.5" width="168.6" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="708.8" y="486.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Israel Antiquities Authority</tspan></text>
 </g>
 <g><title>S20: 1993 to 1993; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="539.0" font-size="11" fill="#2a2420" font-weight="700">S20</text>
-<text x="82.0" y="539.0" font-size="11" fill="#2a2420">Jebel Abu Saraj cliffs</text>
-<text x="248.0" y="539.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="682.8" y="530.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M698.8,530.0 L703.8,535.0 L698.8,540.0 L693.8,535.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="706.8" y="528.5" width="62.8" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="708.8" y="539.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Sion; Feig</tspan></text>
+<text x="54.0" y="501.0" font-size="11" fill="#2a2420" font-weight="700">S20</text>
+<text x="82.0" y="501.0" font-size="11" fill="#2a2420">Jebel Abu Saraj cliffs</text>
+<text x="248.0" y="501.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="682.8" y="492.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M698.8,492.0 L703.8,497.0 L698.8,502.0 L693.8,497.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="706.8" y="490.5" width="62.8" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="708.8" y="501.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Sion; Feig</tspan></text>
 </g>
 <g><title>S22: 1993 to 1993; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="556.0" font-size="11" fill="#2a2420" font-weight="700">S22</text>
-<text x="82.0" y="556.0" font-size="11" fill="#2a2420">Jebel Quruntul east cliff</text>
-<text x="248.0" y="556.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="682.8" y="547.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M698.8,547.0 L703.8,552.0 L698.8,557.0 L693.8,552.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="706.8" y="545.5" width="39.3" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="708.8" y="556.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Abeles</tspan></text>
+<text x="54.0" y="516.0" font-size="11" fill="#2a2420" font-weight="700">S22</text>
+<text x="82.0" y="516.0" font-size="11" fill="#2a2420">Jebel Quruntul east cliff</text>
+<text x="248.0" y="516.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="682.8" y="507.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M698.8,507.0 L703.8,512.0 L698.8,517.0 L693.8,512.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="706.8" y="505.5" width="39.3" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="708.8" y="516.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Abeles</tspan></text>
 </g>
 <g><title>S23: 1993 to 1993; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="573.0" font-size="11" fill="#2a2420" font-weight="700">S23</text>
-<text x="82.0" y="573.0" font-size="11" fill="#2a2420">escarpment above Qumran</text>
-<text x="248.0" y="573.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="682.8" y="564.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M698.8,564.0 L703.8,569.0 L698.8,574.0 L693.8,569.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="706.8" y="562.5" width="139.2" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="708.8" y="573.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Baruch, Mazor, Sandhaus</tspan></text>
+<text x="54.0" y="531.0" font-size="11" fill="#2a2420" font-weight="700">S23</text>
+<text x="82.0" y="531.0" font-size="11" fill="#2a2420">escarpment above Qumran</text>
+<text x="248.0" y="531.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="682.8" y="522.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M698.8,522.0 L703.8,527.0 L698.8,532.0 L693.8,527.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="706.8" y="520.5" width="139.2" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="708.8" y="531.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Baruch, Mazor, Sandhaus</tspan></text>
 </g>
 <g><title>S25: 1993 to 1993; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="590.0" font-size="11" fill="#2a2420" font-weight="700">S25</text>
-<text x="82.0" y="590.0" font-size="11" fill="#2a2420">Ketef Jericho</text>
-<text x="248.0" y="590.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="682.8" y="581.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M698.8,581.0 L703.8,586.0 L698.8,591.0 L693.8,586.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="706.8" y="579.5" width="74.6" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="708.8" y="590.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Eshel, Zissu</tspan></text>
+<text x="54.0" y="546.0" font-size="11" fill="#2a2420" font-weight="700">S25</text>
+<text x="82.0" y="546.0" font-size="11" fill="#2a2420">Ketef Jericho</text>
+<text x="248.0" y="546.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="682.8" y="537.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M698.8,537.0 L703.8,542.0 L698.8,547.0 L693.8,542.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="706.8" y="535.5" width="74.6" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="708.8" y="546.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Eshel, Zissu</tspan></text>
 </g>
 <g><title>S18: 1993 to 2004; excavation_of_named_place; other_finds; EVIDENCE</title>
-<text x="54.0" y="607.0" font-size="11" fill="#2a2420" font-weight="700">S18</text>
-<text x="82.0" y="607.0" font-size="11" fill="#2a2420">Kh. Qumran</text>
-<text x="248.0" y="607.0" font-size="10.5" fill="#5a524a">place excavation</text>
-<rect x="683.0" y="598.5" width="80.6" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M772.6,598.0 L777.6,603.0 L772.6,608.0 L767.6,603.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="780.6" y="596.5" width="74.6" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="782.6" y="607.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Magen, Peleg</tspan></text>
+<text x="54.0" y="561.0" font-size="11" fill="#2a2420" font-weight="700">S18</text>
+<text x="82.0" y="561.0" font-size="11" fill="#2a2420">Kh. Qumran</text>
+<text x="248.0" y="561.0" font-size="10.5" fill="#5a524a">place excavation</text>
+<rect x="683.0" y="552.5" width="80.6" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M772.6,552.0 L777.6,557.0 L772.6,562.0 L767.6,557.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="780.6" y="550.5" width="74.6" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="782.6" y="561.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Magen, Peleg</tspan></text>
 </g>
 <g><title>S24: 1993-11 to 1993-11; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="624.0" font-size="11" fill="#2a2420" font-weight="700">S24</text>
-<text x="82.0" y="624.0" font-size="11" fill="#2a2420">Kidron to Nahal Deragot</text>
-<text x="248.0" y="624.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="685.3" y="615.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M701.3,615.0 L706.3,620.0 L701.3,625.0 L696.3,620.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="709.3" y="613.5" width="39.3" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="711.3" y="624.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Dahari</tspan></text>
+<text x="54.0" y="576.0" font-size="11" fill="#2a2420" font-weight="700">S24</text>
+<text x="82.0" y="576.0" font-size="11" fill="#2a2420">Kidron to Nahal Deragot</text>
+<text x="248.0" y="576.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="685.3" y="567.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M701.3,567.0 L706.3,572.0 L701.3,577.0 L696.3,572.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="709.3" y="565.5" width="39.3" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="711.3" y="576.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Dahari</tspan></text>
 </g>
 <g><title>S21: 1993-11 to 1993-12; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="641.0" font-size="11" fill="#2a2420" font-weight="700">S21</text>
-<text x="82.0" y="641.0" font-size="11" fill="#2a2420">Jebel Quruntul cliff</text>
-<text x="248.0" y="641.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="685.6" y="632.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M701.6,632.0 L706.6,637.0 L701.6,642.0 L696.6,637.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="709.6" y="630.5" width="121.6" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="711.6" y="641.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Aronshtam; Eisenberg</tspan></text>
+<text x="54.0" y="591.0" font-size="11" fill="#2a2420" font-weight="700">S21</text>
+<text x="82.0" y="591.0" font-size="11" fill="#2a2420">Jebel Quruntul cliff</text>
+<text x="248.0" y="591.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="685.6" y="582.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M701.6,582.0 L706.6,587.0 L701.6,592.0 L696.6,587.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="709.6" y="580.5" width="121.6" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="711.6" y="591.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Aronshtam; Eisenberg</tspan></text>
 </g>
 <g><title>S16: 1995 to 1995; claim_only; unknown; CLAIM</title>
-<text x="54.0" y="658.0" font-size="11" fill="#2a2420" font-weight="700">S16</text>
-<text x="82.0" y="658.0" font-size="11" fill="#2a2420">north of Qumran</text>
-<text x="248.0" y="658.0" font-size="10.5" fill="#5a524a">claim only</text>
-<rect x="344.0" y="647.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
-<text x="363.0" y="657.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
-<rect x="696.3" y="649.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<text x="712.3" y="658.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
-<rect x="720.3" y="647.5" width="133.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="722.3" y="658.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Jones</tspan></text>
+<text x="54.0" y="606.0" font-size="11" fill="#2a2420" font-weight="700">S16</text>
+<text x="82.0" y="606.0" font-size="11" fill="#2a2420">north of Qumran</text>
+<text x="248.0" y="606.0" font-size="10.5" fill="#5a524a">claim only</text>
+<rect x="344.0" y="595.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
+<text x="363.0" y="605.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
+<rect x="696.3" y="597.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<text x="712.3" y="606.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
+<rect x="720.3" y="595.5" width="133.4" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="722.3" y="606.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Jones</tspan></text>
+</g>
+<g><title>S34: 1999 to 2001; manuscript_survey; unknown; EVIDENCE</title>
+<text x="54.0" y="621.0" font-size="11" fill="#2a2420" font-weight="700">S34</text>
+<text x="82.0" y="621.0" font-size="11" fill="#2a2420">Qumran caves; cemetery</text>
+<text x="248.0" y="621.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="723.3" y="612.5" width="20.2" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<text x="752.4" y="621.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
+<rect x="532.0" y="610.5" width="186.3" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="716.3" y="621.0" font-size="10.5" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Bauman, Freund</tspan></text>
+</g>
+<g><title>S35: 1999 to 2001; excavation_of_named_place; unknown; EVIDENCE</title>
+<text x="54.0" y="636.0" font-size="11" fill="#2a2420" font-weight="700">S35</text>
+<text x="82.0" y="636.0" font-size="11" fill="#2a2420">Cave of Letters</text>
+<text x="248.0" y="636.0" font-size="10.5" fill="#5a524a">place excavation</text>
+<rect x="723.3" y="627.5" width="20.2" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<text x="752.4" y="636.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
+<rect x="532.0" y="625.5" width="186.3" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="716.3" y="636.0" font-size="10.5" text-anchor="end" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Bauman, Freund</tspan></text>
+</g>
+<g><title>S36: 2000 to 2000; excavation_of_named_place; unknown; CLAIM</title>
+<text x="54.0" y="651.0" font-size="11" fill="#2a2420" font-weight="700">S36</text>
+<text x="82.0" y="651.0" font-size="11" fill="#2a2420">Kh. Qumran</text>
+<text x="248.0" y="651.0" font-size="10.5" fill="#5a524a">place excavation</text>
+<rect x="344.0" y="640.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
+<text x="363.0" y="650.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
+<rect x="729.9" y="642.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<text x="745.9" y="651.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
+<rect x="421.0" y="640.5" width="303.9" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="722.9" y="651.0" font-size="10.5" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Baigent, Eisenman</tspan><tspan fill="#5a524a"> · year uncertain</tspan></text>
 </g>
 <g><title>S31: 2000-04 to 2004; scroll_motivated; unknown; EVIDENCE</title>
-<text x="54.0" y="675.0" font-size="11" fill="#2a2420" font-weight="700">S31</text>
-<text x="82.0" y="675.0" font-size="11" fill="#2a2420">Hyrcania, stepped tunnel</text>
-<text x="248.0" y="675.0" font-size="10.5" fill="#5a524a">scroll-motivated</text>
-<rect x="731.7" y="666.5" width="31.9" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<text x="772.6" y="675.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
-<rect x="780.6" y="664.5" width="145.1" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="782.6" y="675.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Gutfeld</tspan></text>
+<text x="54.0" y="666.0" font-size="11" fill="#2a2420" font-weight="700">S31</text>
+<text x="82.0" y="666.0" font-size="11" fill="#2a2420">Hyrcania, stepped tunnel</text>
+<text x="248.0" y="666.0" font-size="10.5" fill="#5a524a">scroll-motivated</text>
+<rect x="731.7" y="657.5" width="31.9" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<text x="772.6" y="666.5" font-size="13" fill="#2a2420" font-weight="700" text-anchor="middle">?</text>
+<rect x="780.6" y="655.5" width="145.1" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="782.6" y="666.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">result unknown</tspan><tspan fill="#5a524a"> · Gutfeld</tspan></text>
 </g>
 <g><title>S06: 2007 to 2007; excavation_of_named_place; other_finds; EVIDENCE</title>
-<text x="54.0" y="692.0" font-size="11" fill="#2a2420" font-weight="700">S06</text>
-<text x="82.0" y="692.0" font-size="11" fill="#2a2420">Christmas Cave</text>
-<text x="248.0" y="692.0" font-size="10.5" fill="#5a524a">place excavation</text>
-<rect x="776.9" y="683.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M792.9,683.0 L797.9,688.0 L792.9,693.0 L787.9,688.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="609.1" y="681.5" width="162.8" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="769.9" y="692.0" font-size="10.5" text-anchor="end" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Israel Cave Research Center</tspan></text>
+<text x="54.0" y="681.0" font-size="11" fill="#2a2420" font-weight="700">S06</text>
+<text x="82.0" y="681.0" font-size="11" fill="#2a2420">Christmas Cave</text>
+<text x="248.0" y="681.0" font-size="10.5" fill="#5a524a">place excavation</text>
+<rect x="776.9" y="672.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M792.9,672.0 L797.9,677.0 L792.9,682.0 L787.9,677.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="609.1" y="670.5" width="162.8" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="769.9" y="681.0" font-size="10.5" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Israel Cave Research Center</tspan></text>
 </g>
 <g><title>S17: 2009 to 2009; scroll_deposit_search; negative; CLAIM</title>
-<text x="54.0" y="709.0" font-size="11" fill="#2a2420" font-weight="700">S17</text>
-<text x="82.0" y="709.0" font-size="11" fill="#2a2420">Kh. Qumran, near L138</text>
-<text x="248.0" y="709.0" font-size="10.5" fill="#5a524a">deposit search</text>
-<rect x="344.0" y="698.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
-<text x="363.0" y="708.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
-<rect x="790.3" y="700.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
-<circle cx="806.3" cy="705.0" r="4.2" fill="#ffffff" stroke="#2a2420" stroke-width="1.7"/>
-<rect x="814.3" y="698.5" width="98.1" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="816.3" y="709.0" font-size="10.5" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">negative</tspan><tspan fill="#5a524a"> · Peleg</tspan></text>
+<text x="54.0" y="696.0" font-size="11" fill="#2a2420" font-weight="700">S17</text>
+<text x="82.0" y="696.0" font-size="11" fill="#2a2420">Kh. Qumran, near L138</text>
+<text x="248.0" y="696.0" font-size="10.5" fill="#5a524a">deposit search</text>
+<rect x="344.0" y="685.5" width="38.0" height="13.0" fill="#ffffff" stroke="#2a2420" stroke-width="1" rx="2"/>
+<text x="363.0" y="695.6" font-size="10" fill="#2a2420" font-weight="700" text-anchor="middle">CLAIM</text>
+<rect x="790.3" y="687.5" width="7.0" height="9.0" fill="#1f6fae" stroke="none" stroke-width="1.0" rx="2"/>
+<circle cx="806.3" cy="692.0" r="4.2" fill="#ffffff" stroke="#2a2420" stroke-width="1.7"/>
+<rect x="814.3" y="685.5" width="98.1" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="816.3" y="696.0" font-size="10.5" text-anchor="start" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#2a2420" font-weight="600">negative</tspan><tspan fill="#5a524a"> · Peleg</tspan></text>
 </g>
 <g><title>S27: 2017 to 2017; manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="726.0" font-size="11" fill="#2a2420" font-weight="700">S27</text>
-<text x="82.0" y="726.0" font-size="11" fill="#2a2420">Qumran cliffs</text>
-<text x="248.0" y="726.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="844.1" y="717.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M860.1,717.0 L865.1,722.0 L860.1,727.0 L855.1,722.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="746.9" y="715.5" width="92.2" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="837.1" y="726.0" font-size="10.5" text-anchor="end" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Gutfeld, Ovadia</tspan></text>
+<text x="54.0" y="711.0" font-size="11" fill="#2a2420" font-weight="700">S27</text>
+<text x="82.0" y="711.0" font-size="11" fill="#2a2420">Qumran cliffs</text>
+<text x="248.0" y="711.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="844.1" y="702.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M860.1,702.0 L865.1,707.0 L860.1,712.0 L855.1,707.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="746.9" y="700.5" width="92.2" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="837.1" y="711.0" font-size="10.5" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Gutfeld, Ovadia</tspan></text>
 </g>
 <g><title>S26: 2017-10 to (no end); manuscript_survey; other_finds; EVIDENCE</title>
-<text x="54.0" y="743.0" font-size="11" fill="#2a2420" font-weight="700">S26</text>
-<text x="82.0" y="743.0" font-size="11" fill="#2a2420">Judean Desert</text>
-<text x="248.0" y="743.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
-<rect x="846.1" y="734.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<line x1="854.1" y1="739.0" x2="869.1" y2="739.0" stroke="#5a524a" stroke-width="1.3" stroke-dasharray="3 2"/>
-<path d="M878.1,734.0 L883.1,739.0 L878.1,744.0 L873.1,739.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="695.9" y="732.5" width="145.1" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
-<text x="839.1" y="743.0" font-size="10.5" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">IAA</tspan><tspan fill="#5a524a"> · continuing in 2021</tspan></text>
+<text x="54.0" y="726.0" font-size="11" fill="#2a2420" font-weight="700">S26</text>
+<text x="82.0" y="726.0" font-size="11" fill="#2a2420">Judean Desert</text>
+<text x="248.0" y="726.0" font-size="10.5" fill="#5a524a">manuscript survey</text>
+<rect x="846.1" y="717.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<line x1="854.1" y1="722.0" x2="869.1" y2="722.0" stroke="#5a524a" stroke-width="1.3" stroke-dasharray="3 2"/>
+<path d="M878.1,717.0 L883.1,722.0 L878.1,727.0 L873.1,722.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="695.9" y="715.5" width="145.1" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
+<text x="839.1" y="726.0" font-size="10.5" text-anchor="end" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">IAA</tspan><tspan fill="#5a524a"> · continuing in 2021</tspan></text>
 </g>
 <g><title>S32: 2023-05 to 2023-06; excavation_of_named_place; other_finds; EVIDENCE</title>
-<text x="54.0" y="760.0" font-size="11" fill="#2a2420" font-weight="700">S32</text>
-<text x="82.0" y="760.0" font-size="11" fill="#2a2420">Hyrcania summit</text>
-<text x="248.0" y="760.0" font-size="10.5" fill="#5a524a">place excavation</text>
-<rect x="883.8" y="751.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
-<path d="M899.8,751.0 L904.8,756.0 L899.8,761.0 L894.8,756.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
-<rect x="792.5" y="749.5" width="86.3" height="13.0" fill="#f5f2ed" stroke="none" stroke-width="1.0"/>
-<text x="876.8" y="760.0" font-size="10.5" text-anchor="end" stroke="#f5f2ed" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Haber, Gutfeld</tspan></text>
+<text x="54.0" y="741.0" font-size="11" fill="#2a2420" font-weight="700">S32</text>
+<text x="82.0" y="741.0" font-size="11" fill="#2a2420">Hyrcania summit</text>
+<text x="248.0" y="741.0" font-size="10.5" fill="#5a524a">place excavation</text>
+<rect x="883.8" y="732.5" width="7.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
+<path d="M899.8,732.0 L904.8,737.0 L899.8,742.0 L894.8,737.0 Z" fill="#2a2420" stroke="none" stroke-width="1.0" stroke-linejoin="round"/>
+<rect x="792.5" y="730.5" width="86.3" height="13.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<text x="876.8" y="741.0" font-size="10.5" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><tspan fill="#5a524a">Haber, Gutfeld</tspan></text>
 </g>
-<text x="906.0" y="785.5" font-size="10.5" fill="#5a524a">year</text>
-<text x="54.0" y="800.5" font-size="10.5" fill="#5a524a">Colour marks the purpose coded in the ledger, not whether a place was dug. Bars ignore gaps between seasons.</text>
+<text x="906.0" y="765.5" font-size="10.5" fill="#5a524a">year</text>
+<text x="54.0" y="780.5" font-size="10.5" fill="#5a524a">Colour marks the purpose coded in the ledger, not whether a place was dug. Bars ignore gaps between seasons.</text>
 <rect x="960.0" y="100.0" width="400.0" height="710.0" fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" rx="6"/>
 <text x="974.0" y="124.0" font-size="14" fill="#2a2420" font-weight="700">Counts from the ledger</text>
 <text x="974.0" y="144.0" font-size="11.5" fill="#5a524a">Computed from searches.csv; totals equal summary.json.</text>
@@ -464,15 +494,15 @@
 <text x="1118.0" y="374.6" font-size="11" fill="#5a524a" text-anchor="middle">0</text>
 <text x="1168.0" y="374.6" font-size="11" fill="#5a524a" text-anchor="middle">0</text>
 <text x="1218.0" y="374.6" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">13</text>
-<text x="1268.0" y="374.6" font-size="11" fill="#5a524a" text-anchor="middle">0</text>
-<text x="1318.0" y="374.6" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">13</text>
+<text x="1268.0" y="374.6" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">1</text>
+<text x="1318.0" y="374.6" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">14</text>
 <rect x="976.0" y="381.6" width="12.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
 <text x="994.0" y="390.1" font-size="11" fill="#2a2420">place excavation</text>
 <text x="1118.0" y="390.1" font-size="11" fill="#5a524a" text-anchor="middle">0</text>
 <text x="1168.0" y="390.1" font-size="11" fill="#5a524a" text-anchor="middle">0</text>
 <text x="1218.0" y="390.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">6</text>
-<text x="1268.0" y="390.1" font-size="11" fill="#5a524a" text-anchor="middle">0</text>
-<text x="1318.0" y="390.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">6</text>
+<text x="1268.0" y="390.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">2</text>
+<text x="1318.0" y="390.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">8</text>
 <rect x="976.0" y="397.1" width="12.0" height="9.0" fill="url(#ghatch)" stroke="#8d8780" stroke-width="1.1" rx="2"/>
 <text x="994.0" y="405.6" font-size="11" fill="#2a2420">claim only</text>
 <text x="1118.0" y="405.6" font-size="11" fill="#5a524a" text-anchor="middle">0</text>
@@ -491,29 +521,29 @@
 <text x="1118.0" y="436.6" font-size="11" fill="#5a524a" font-weight="700" text-anchor="middle">0</text>
 <text x="1168.0" y="436.6" font-size="11" fill="#5a524a" font-weight="700" text-anchor="middle">0</text>
 <text x="1218.0" y="436.6" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">19</text>
-<text x="1268.0" y="436.6" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">2</text>
-<text x="1318.0" y="436.6" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">21</text>
+<text x="1268.0" y="436.6" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">5</text>
+<text x="1318.0" y="436.6" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">24</text>
 <line x1="976.0" y1="443.1" x2="1340.0" y2="443.1" stroke="#d6cfc4" stroke-width="1"/>
 <text x="976.0" y="457.1" font-size="11" fill="#2a2420" font-weight="700">all rows</text>
 <text x="1118.0" y="457.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">3</text>
 <text x="1168.0" y="457.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">2</text>
 <text x="1218.0" y="457.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">23</text>
-<text x="1268.0" y="457.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">5</text>
-<text x="1318.0" y="457.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">33</text>
+<text x="1268.0" y="457.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">8</text>
+<text x="1318.0" y="457.1" font-size="11" fill="#2a2420" font-weight="700" text-anchor="middle">36</text>
 <text x="976.0" y="478.6" font-size="12.5" fill="#2a2420" font-weight="700">Depth in extent_depth</text>
 <text x="976.0" y="495.6" font-size="11" fill="#5a524a">•</text>
-<text x="988.0" y="495.6" font-size="11" fill="#5a524a">18 of 33 rows (55%) have an entry: the field does not open</text>
+<text x="988.0" y="495.6" font-size="11" fill="#5a524a">18 of 36 rows (50%) have an entry: the field does not open</text>
 <text x="988.0" y="510.1" font-size="11" fill="#5a524a">with “no depth”, and its first clause does not say “not</text>
 <text x="988.0" y="524.6" font-size="11" fill="#5a524a">given”, “not reported” or “not compiled”.</text>
 <text x="976.0" y="543.2" font-size="11" fill="#5a524a">•</text>
-<text x="988.0" y="543.2" font-size="11" fill="#5a524a">9 of 33 (27%) give a depth in m, cm or feet, or say</text>
+<text x="988.0" y="543.2" font-size="11" fill="#5a524a">9 of 36 (25%) give a depth in m, cm or feet, or say</text>
 <text x="988.0" y="557.7" font-size="11" fill="#5a524a">bedrock was reached: S07, S11, S13, S14, S17, S20, S21,</text>
 <text x="988.0" y="572.2" font-size="11" fill="#5a524a">S29 and S32. Not counted: distances, heights above sea</text>
 <text x="988.0" y="586.7" font-size="11" fill="#5a524a">level, detector reach (S28), and depth in words only (S05,</text>
 <text x="988.0" y="601.2" font-size="11" fill="#5a524a">S09).</text>
 <text x="976.0" y="621.8" font-size="12.5" fill="#2a2420" font-weight="700">What the counts say</text>
 <text x="976.0" y="638.8" font-size="11" fill="#5a524a">•</text>
-<text x="988.0" y="638.8" font-size="11" fill="#5a524a">12 of 33 searches had a scroll-related purpose; 7 were</text>
+<text x="988.0" y="638.8" font-size="11" fill="#5a524a">12 of 36 searches had a scroll-related purpose; 7 were</text>
 <text x="988.0" y="653.3" font-size="11" fill="#5a524a">aimed at the scroll's deposits: 2 negative, 1 claimed</text>
 <text x="988.0" y="667.8" font-size="11" fill="#5a524a">find, 2 other finds, 2 unknown.</text>
 <text x="976.0" y="686.3" font-size="11" fill="#5a524a">•</text>
@@ -522,10 +552,10 @@
 <text x="988.0" y="715.4" font-size="11" fill="#5a524a">is CLAIM-grade, from blog reports only.</text>
 <text x="976.0" y="733.9" font-size="11" fill="#5a524a">•</text>
 <text x="988.0" y="733.9" font-size="11" fill="#5a524a">Both claimed finds (S13 and S14) are CLAIM-grade rows. Of</text>
-<text x="988.0" y="748.4" font-size="11" fill="#5a524a">the 5 CLAIM rows, 4 are scroll-related.</text>
+<text x="988.0" y="748.4" font-size="11" fill="#5a524a">the 6 CLAIM rows, 4 are scroll-related.</text>
 <text x="976.0" y="766.9" font-size="11" fill="#5a524a">•</text>
-<text x="988.0" y="766.9" font-size="11" fill="#5a524a">All 19 manuscript surveys and place excavations report</text>
-<text x="988.0" y="781.4" font-size="11" fill="#5a524a">other finds.</text>
+<text x="988.0" y="766.9" font-size="11" fill="#5a524a">19 of the 22 manuscript surveys and place excavations</text>
+<text x="988.0" y="781.4" font-size="11" fill="#5a524a">report other finds; S34, S35 and S36 report no result.</text>
 <rect x="40.0" y="830.0" width="1320.0" height="154.0" fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" rx="6"/>
 <text x="60.0" y="856.0" font-size="13" fill="#2a2420" font-weight="700">Sources</text>
 <text x="60.0" y="873.0" font-size="11.5" fill="#5a524a">research/history/salvage_records: searches.csv, README.md (search ledger section), summary.json. Rows</text>

@@ -85,6 +85,7 @@ PLACE = {
     "S25": "Ketef Jericho", "S26": "Judean Desert", "S27": "Qumran cliffs", "S28": "Kh. Qumran",
     "S29": "Cypros, near Jericho", "S30": "Zechariah monument, Kidron", "S31": "Hyrcania, stepped tunnel",
     "S32": "Hyrcania summit", "S33": "Mazin; Feshkha; Cave 11; Mird",
+    "S34": "Qumran caves; cemetery", "S35": "Cave of Letters", "S36": "Kh. Qumran",
 }
 # Who, shortened from the who column. Every capitalised word must occur in who.
 WHO = {
@@ -96,6 +97,7 @@ WHO = {
     "S22": "Abeles", "S23": "Baruch, Mazor, Sandhaus", "S24": "Dahari", "S25": "Eshel, Zissu",
     "S26": "IAA", "S27": "Gutfeld, Ovadia", "S28": "Allegro", "S29": "Allegro", "S30": "Allegro",
     "S31": "Gutfeld", "S32": "Haber, Gutfeld", "S33": "Allegro, Dead Sea Scrolls Fund",
+    "S34": "Bauman, Freund", "S35": "Bauman, Freund", "S36": "Baigent, Eisenman",
 }
 # Row notes: (text on the sheet, column, phrase that must stand in that column).
 ROW_NOTE = {
@@ -106,6 +108,7 @@ ROW_NOTE = {
     "S29": ("dated only “our expedition” (1964 p. 75)", "when_text", "dated only 'our expedition' (1964 p. 75)"),
     "S30": ("dated only “our expedition” (1964 p. 105)", "when_text", "dated only 'our expedition' (1964 p. 105)"),
     "S33": ("year inferred in the ledger", "when_text", "(inference"),
+    "S36": ("year uncertain", "when_text", "survey year not known"),
 }
 assert set(PLACE) == set(WHO) == set(BY_ID), sorted(set(BY_ID) ^ set(PLACE) | set(BY_ID) ^ set(WHO))
 for sid, short in PLACE.items():
@@ -208,7 +211,9 @@ assert all(i in blue_ids for i in neg_ids)
 assert all(BY_ID[i]["kind"] == "CLAIM" for i in claimed_ids) and len(claimed_ids) == 2
 assert neg_depth == ["S17"] and BY_ID["S17"]["kind"] == "CLAIM"
 assert BY_ID["S17"]["documentation"].startswith("blog reports only")
-assert all(r["result"] == "other_finds" for r in survey_exc)
+survey_other = [r for r in survey_exc if r["result"] == "other_finds"]
+assert all(r["result"] in ("other_finds", "unknown") for r in survey_exc)
+survey_unk = sorted(r["search_id"] for r in survey_exc if r["result"] == "unknown")
 blue_years = sorted(int(BY_ID[i]["when_start"][:4]) for i in blue_ids)
 claim_scroll = [i for i in claim_kind if i in blue_ids]
 dep_res = {res: TAB[("scroll_deposit_search", res)] for res in RESULTS}
@@ -241,7 +246,7 @@ HEAD_Y = my + 58
 ROW0 = HEAD_Y + 16
 NOTE_H = 30                               # axis labels and the note under the axis
 RH = min(20, int((BOTTOM - 8 - NOTE_H - 6 - ROW0) / (N - 0.5)))   # largest row height that fits
-assert RH >= 16, f"{N} rows need a taller panel (row height {RH})"
+assert RH >= 15, f"{N} rows need a taller panel (row height {RH})"
 MH = 9 if RH < 19 else 10                 # mark height
 AXIS_Y = ROW0 + N * RH - RH / 2 + 6
 INK = P["ink"]
@@ -444,7 +449,9 @@ y = bullets(c, x0, y + 17, [
     "gives a depth (bedrock); its row is CLAIM-grade, from blog reports only.",
     f"Both claimed finds ({words(claimed_ids)}) are CLAIM-grade rows. Of the {len(claim_kind)} CLAIM rows, "
     f"{len(claim_scroll)} are scroll-related.",
-    f"All {len(survey_exc)} manuscript surveys and place excavations report other finds.",
+    (f"All {len(survey_exc)} manuscript surveys and place excavations report other finds." if not survey_unk else
+     f"{len(survey_other)} of the {len(survey_exc)} manuscript surveys and place excavations report other "
+     f"finds; {words(survey_unk)} report no result."),
 ], 58, 11, 4)
 assert y <= BOTTOM - 6, y
 

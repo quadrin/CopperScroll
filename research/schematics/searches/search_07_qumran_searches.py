@@ -12,7 +12,8 @@ Sources (all repo paths are relative to the repository root):
   fieldwork reported in that book).
 - research/history/salvage_records/searches.csv and README.md: rows S02 (de Vaux), S03 (Allegro; the hall
   trench), S17 (2009 probe near L138), S18 (Magen and Peleg), S28 (Allegro's crawl, courtyard trench and
-  wall deposit, from the 1964 book only). Read and checked below.
+  wall deposit, from the 1964 book only), S36 (Baigent and Eisenman GPR, bibliographic record only). Read and
+  checked below.
 - tables/entry_concordance.csv: item_allegro and allegro_match (Allegro 1960 item numbers matched to the
   project's entries by line and checked against his text, 10 Oct 2026). Read below.
 - research/sources/humbert2016_pp425-432_check.md: Humbert and Chambon 2016 p. 375 (the large pools L91,
@@ -62,7 +63,9 @@ assert ROWS["S18"]["when_start"] == "1993" and ROWS["S18"]["when_end"] == "2004"
 assert ROWS["S18"]["extent_depth"] == "not compiled"
 # every ledger row whose where_name is the site itself is drawn here
 AT_SITE = sorted(k for k, r in ROWS.items() if r["where_name"].startswith("Kh. Qumran"))
-assert AT_SITE == ["S02", "S03", "S17", "S18", "S28"], AT_SITE
+assert AT_SITE == ["S02", "S03", "S17", "S18", "S28", "S36"], AT_SITE
+assert ROWS["S36"]["when_start"] == "2000" and "survey year not known" in ROWS["S36"]["when_text"]
+assert ROWS["S36"]["kind"] == "CLAIM" and "bibliographic record only" in ROWS["S36"]["record"]
 
 atlas = json.loads((REPO / "atlas" / "app" / "atlas-data.json").read_text(encoding="utf-8"))
 CAND = {}
@@ -360,7 +363,7 @@ assert yend - 14.5 < sy + sh, yend
 # ---------------- footer ----------------
 S.footer(c, 830, [
     ("Sources", "Allegro, Treasure of the Copper Scroll (1960) pp. 70–74, Figs. 2, 4; 2nd ed. (1964) pp. 63–70, "
-     "160; Search in the Desert (1966) pp. 92–94. Ledger rows S02, S03, S17, S18, S28. Humbert and Chambon 2016 pp. "
+     "160; Search in the Desert (1966) pp. 92–94. Ledger rows S02, S03, S17, S18, S28, S36. Humbert and Chambon 2016 pp. "
      "425–427; Magen and Peleg 2007 pp. 7–8, 2018 pp. 77–82, 212; PEF QS 1874, 1902, 1903, 1913 (repo table); Reeder and Jol 2006; tables/entry_concordance.csv."),
     ("How it was drawn", "Schematic, after the plans of de Vaux (Strobel 1972 Fig. 1) and Magen and Peleg 2018 "
      "Fig. 9; rough positions only. The hall is drawn as the long room S of the main building (inference)."),
@@ -368,6 +371,7 @@ S.footer(c, 830, [
      "position. The only other dig for a deposit, the 2009 probe near L138, is known only from blogs. De Vaux's "
      "and Magen and Peleg's excavations are not compiled by area or depth."),
     ("What it does not show", "Whether any deposit is or is not here: no search has a stated target volume and "
-     "depth. The caves near the site (sheet 01) and the gorge intake are not drawn."),
+     "depth. The caves near the site (sheet 01) and the gorge intake are not drawn. Baigent and Eisenman's "
+     "GPR survey for earthquake damage (S36, published 2000) is known only from a bibliographic record."),
 ])
 print(c.save(out_path("search_07_qumran_searches")))
