@@ -1057,5 +1057,423 @@
         "sourceUrl": "https://drive.google.com/file/d/1Y85eW04_sZkObCF2K_rUmFPYOP8kMVqt/view"
       }
     ]
+  },
+  {
+    "id": "bethesda-pools",
+    "placeIds": [
+      "jer_bethesda"
+    ],
+    "label": "Bethesda · pools & eastern complex",
+    "width": 700,
+    "height": 600,
+    "source": "Duprez 1970 pp. 33–41 and Pl. II; Gibson 2005 pp. 286–287 and 2011 pp. 22–28",
+    "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md",
+    "credit": "Original project diagram of selected published dimensions and relations. Simplified outlines; omitted walls are not absent remains.",
+    "limit": "No geographic registration. The pools use published dimensions with an assumed angle; the eastern complex follows the relative arrangement of Duprez Pl. II, and its distance and bearing from the pools are schematic. Byzantine and Crusader structures are omitted.",
+    "north": {
+      "x": 660,
+      "y": 110,
+      "dx": 0,
+      "dy": -55
+    },
+    "shapes": [
+      {
+        "d": "M60.0 58.2 L335.6 58.2 L335.6 266.2 L60.0 266.2Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M60.0 300.0 L294.0 300.0 L397.9 538.3 L60.0 544.4Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M60.0 266.2 L335.6 266.2 L335.6 300.0 L60.0 300.0Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M65.2 305.2 L91.2 305.2 L91.2 331.2 L65.2 331.2Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M538.4 404.0 a15.600000000000001 15.600000000000001 0 1 0 31.200000000000003 0 a15.600000000000001 15.600000000000001 0 1 0 -31.200000000000003 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M546.2 352.0 L561.8 352.0 L561.8 367.6 L546.2 367.6Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M585.2 357.2 L600.8 357.2 L600.8 372.8 L585.2 372.8Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M582.6 398.8 L593.0 398.8 L593.0 409.2 L582.6 409.2Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M611.2 398.8 L619.0 398.8 L619.0 409.2 L611.2 409.2Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M580.0 435.2 L598.2 435.2 L598.2 453.4 L580.0 453.4Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M546.2 440.4 L561.8 440.4 L561.8 456.0 L546.2 456.0Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M570.6 427.9 L576.9 431.0",
+        "kind": "wall"
+      }
+    ],
+    "annotations": [
+      {
+        "x": 120,
+        "y": 45,
+        "text": "Northern pool"
+      },
+      {
+        "x": 120,
+        "y": 575,
+        "text": "Southern pool"
+      },
+      {
+        "x": 520,
+        "y": 330,
+        "text": "Eastern complex (schematic)"
+      }
+    ],
+    "features": [
+      {
+        "id": "north-pool",
+        "label": "Northern pool",
+        "x": 197.8,
+        "y": 162.2,
+        "kind": "Reported remains",
+        "entryIds": [
+          "55"
+        ],
+        "description": "Gibson gives the northern pool as about 53 × 40 m, a reservoir of about 21,200 m³. Duprez reports no new work on it.",
+        "limit": "Its depth is not recorded in the sources read; the model's 10 m is that volume divided by its area, an inference. Which side is 53 m is not stated; it is drawn east–west.",
+        "sources": [
+          "Gibson 2005 p. 286; Gibson 2011 p. 23",
+          "Duprez 1970 p. 35"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/gibson2005_2011_bethesda_extracted.md"
+      },
+      {
+        "id": "dam",
+        "label": "Central dam and chimney",
+        "x": 197.8,
+        "y": 283.1,
+        "kind": "Reported remains",
+        "entryIds": [
+          "55"
+        ],
+        "description": "Duprez: the central dam is built above and rock below, 6.50 m wide at the top, with ashlar faces in courses of about 60 cm. A square chimney about 1 × 1 m and about 15 m deep runs behind its north face, with small openings to the northern pool. Gibson gives the barrier wall F295 as about 6–6.5 m thick, with a shaft F296 and a tunnel with a sluice.",
+        "limit": "Von Wahlde gives the chimney as 12 m deep; the model uses Duprez's 15 m and draws the chimney round. The dam's length is drawn as the northern pool's 53 m.",
+        "sources": [
+          "Duprez 1970 pp. 33–34",
+          "Gibson 2005 p. 287 Fig. 2; Gibson 2011 pp. 23, 26"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+      },
+      {
+        "id": "south-pool",
+        "label": "Southern pool and its western steps",
+        "x": 164.0,
+        "y": 414.4,
+        "kind": "Reported remains",
+        "entryIds": [
+          "55"
+        ],
+        "description": "Duprez: sides of about 45 m (north), 50 m (east), 65 m (south) and 47 m (west), up to 14 m deep; its rock steps broke the current of incoming water. Gibson: hewn and built steps with landings along the whole western side (F306–309).",
+        "limit": "The four sides fix the outline only with an assumed angle: the north side is drawn east–west and the west side north–south. Step count, width and landings are illustrative. Duprez dates the pools to the 2nd century BCE; Gibson to Herod, 31–22 BCE.",
+        "sources": [
+          "Duprez 1970 pp. 34–37",
+          "Gibson 2005 pp. 286–287; Gibson 2011 p. 25"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+      },
+      {
+        "id": "settling-basin",
+        "label": "Settling basin at the north-west corner",
+        "x": 78.2,
+        "y": 318.2,
+        "kind": "Reported remains",
+        "entryIds": [
+          "55"
+        ],
+        "description": "Duprez reports a settling basin at the southern pool's north-west corner, with an east wall 2.60 m high (Pl. VII, 1).",
+        "limit": "Its size and exact position are not given; the 5 × 5 m box in the corner is illustrative, and the model starts the western steps south of it.",
+        "sources": [
+          "Duprez 1970 p. 34, Pl. VII, 1"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+      },
+      {
+        "id": "cistern-1",
+        "label": "Cistern 1 (first installation)",
+        "x": 554.0,
+        "y": 404.0,
+        "kind": "Reported remains",
+        "entryIds": [
+          "56"
+        ],
+        "description": "A natural grotto about 8.50 m deep and 6 m across, roofed by rock, with three side openings that were blocked; the whole first installation is organised around it (Duprez). Coins of the complex run to 68 CE.",
+        "limit": "The eastern complex's distance and bearing from the pools are schematic; Duprez's Pl. II gives relative positions only, and its scale is not recorded.",
+        "sources": [
+          "Duprez 1970 p. 39, Pls. II, VIII"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+      },
+      {
+        "id": "threshold",
+        "label": "Threshold and jamb between grotto 6 and cistern 1",
+        "x": 573.8,
+        "y": 429.5,
+        "kind": "Reported remains",
+        "entryIds": [
+          "56"
+        ],
+        "description": "Duprez found a threshold and parts of a door jamb in place between grotto 6 and cistern 1 (Pl. IX, 1), of good work, in a building too destroyed to reconstruct.",
+        "limit": "Duprez does not say that the doorway opened into cistern 1. The slab's size and orientation are illustrative.",
+        "sources": [
+          "Duprez 1970 p. 41, Pl. IX, 1"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+      },
+      {
+        "id": "grotto-6",
+        "label": "Grotto 6 with its bath",
+        "x": 589.1,
+        "y": 444.3,
+        "kind": "Reported remains",
+        "entryIds": [
+          "56"
+        ],
+        "description": "A grotto reached by a stair from the north, with a small bath in its north-west corner at the back (Pl. XI).",
+        "limit": "No dimensions are given; the size and depth are illustrative.",
+        "sources": [
+          "Duprez 1970 pp. 40–41, Pl. XI"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+      },
+      {
+        "id": "grotto-5",
+        "label": "Grotto 5",
+        "x": 615.1,
+        "y": 404.0,
+        "kind": "Reported remains",
+        "entryIds": [
+          "56"
+        ],
+        "description": "1.50 m wide, 2 m long and 1.50 m high, entered by four steps roughly cut in the rock (Pl. IX, 2); on Pl. II its steps are on its west side.",
+        "limit": "The steps' side is read from the plan (inference). Its use is unknown.",
+        "sources": [
+          "Duprez 1970 p. 40, Pls. II, IX, 2"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+      },
+      {
+        "id": "first-installation",
+        "label": "Grottoes 2 and 3, basin 4 and bath 7",
+        "x": 554.0,
+        "y": 359.8,
+        "kind": "Reported remains",
+        "entryIds": [
+          "56"
+        ],
+        "description": "Grotto 2 lies north of cistern 1 with a small basin 2.50 m below its entrance; grotto 3 to the north-east with a rectangular basin; basin 4, about 30 cm deep, 3 m east of the cistern; bath 7 to the south.",
+        "limit": "Sizes other than basin 4's depth and grotto 2's basin level are illustrative; positions follow Pl. II's arrangement only.",
+        "sources": [
+          "Duprez 1970 pp. 39–41, Pl. II"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+      }
+    ]
+  },
+  {
+    "id": "east-gate-warren",
+    "placeIds": [
+      "jer_east_gate"
+    ],
+    "label": "Golden Gate · Warren 1867–70",
+    "width": 680,
+    "height": 460,
+    "source": "Warren 1884 Pl. VI (measured with its scale bar); SWP Jerusalem (Warren & Conder 1884) pp. 141–145, 221",
+    "sourceUrl": "https://archive.org/details/planselevationss00warr",
+    "credit": "Original project diagram of measurements from a public-domain plate and its text. Simplified outlines; omitted structures are not absent remains.",
+    "limit": "No geographic registration; the frame is the plate's, rotated about 9° from north. Levels are from Warren's recorded feet; the ground between them is interpolated. The gallery is shown in a display cutaway.",
+    "north": {
+      "x": 640,
+      "y": 80,
+      "dx": 9,
+      "dy": -54
+    },
+    "shapes": [
+      {
+        "d": "M273.0 190.2 L387.0 190.2 L387.0 269.8 L273.0 269.8Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M382.9 23.0 L382.9 190.2",
+        "kind": "wall"
+      },
+      {
+        "d": "M382.9 269.8 L382.9 437.0",
+        "kind": "wall"
+      },
+      {
+        "d": "M122.4 172.8 a12.6 12.6 0 1 0 25.2 0 a12.6 12.6 0 1 0 -25.2 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M430.1 194.7 L440.2 205.5 L448.6 218.6 L452.8 233.6 L454.0 248.5 L456.0 271.9 L457.4 291.6",
+        "kind": "wall"
+      },
+      {
+        "d": "M576.0 271.9 L456.0 271.9",
+        "kind": "tunnel"
+      },
+      {
+        "d": "M572.3 271.9 a3.7 3.7 0 1 0 7.4 0 a3.7 3.7 0 1 0 -7.4 0",
+        "kind": "basin"
+      }
+    ],
+    "annotations": [
+      {
+        "x": 120,
+        "y": 40,
+        "text": "Haram (inside)"
+      },
+      {
+        "x": 430,
+        "y": 40,
+        "text": "Outside the east wall"
+      }
+    ],
+    "features": [
+      {
+        "id": "gatehouse",
+        "label": "Golden Gate building",
+        "x": 330.0,
+        "y": 230.0,
+        "kind": "Reported remains",
+        "entryIds": [
+          "9",
+          "10"
+        ],
+        "description": "Plate VI draws the Golden Gate as a dashed outline about 24.8 × 17.3 m (81 × 57 ft), its east side on the Haram wall line. SWP: probably a later reconstruction standing on the ancient foundations of a gateway; sill level 2,396 ft.",
+        "limit": "The outline is the plate's, measured with its scale bar. The building's height, roof and twin passages are not drawn from a published source and are illustrative. The Herodian east gate may not lie exactly under it (record F12.4).",
+        "sources": [
+          "Warren 1884 Pl. VI",
+          "SWP Jerusalem (Warren & Conder 1884) p. 141"
+        ],
+        "sourceUrl": "https://archive.org/details/planselevationss00warr"
+      },
+      {
+        "id": "east-wall",
+        "label": "Haram east wall",
+        "x": 382.9,
+        "y": 115.0,
+        "kind": "Reported remains",
+        "entryIds": [
+          "10"
+        ],
+        "description": "Warren: at the Golden Gate the Sanctuary wall extends 30–40 ft below the present surface outside. From the gate south to the postern (51 ft) three courses of large stones with marginal drafts and rough projecting faces are visible.",
+        "limit": "The model draws the wall straight along the gate outline's axis; the plate's line runs about 2.4° off it (up to 1.9 m at the model's ends). Thickness and height above the Haram surface are illustrative.",
+        "sources": [
+          "SWP Jerusalem pp. 144–145",
+          "Warren 1884 Pl. VI"
+        ],
+        "sourceUrl": "https://archive.org/details/surveyofwesternp00warruoft"
+      },
+      {
+        "id": "cistern-xv",
+        "label": "Cistern XV (Bir al-Tawba)",
+        "x": 135.0,
+        "y": 172.8,
+        "kind": "Reported remains",
+        "entryIds": [
+          "9"
+        ],
+        "description": "About 18 ft across and 35 ft deep, rock-cut with a rock roof (SWP p. 221); Gibson and Jacobson: one chamber about 5.5–5.8 m across, floor 10.7–11 m below the Haram, one square shaft entrance. Its centre is 30.0 m west of the gatehouse's west face on Plate VI. No recorded cistern lies within about 18 m of the gatehouse; entry 9's nineteen cubits is 8.5–10 m (record F12.4).",
+        "limit": "The shaft entrance's size and position over the chamber are illustrative.",
+        "sources": [
+          "SWP Jerusalem p. 221",
+          "Warren 1884 Pl. VI",
+          "Gibson & Jacobson 1996 (via the registration record)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/warren1884_temple_mount_cisterns_extracted.md"
+      },
+      {
+        "id": "massive-wall",
+        "label": "Massive wall in front of the gate",
+        "x": 448.7,
+        "y": 218.5,
+        "kind": "Reported remains",
+        "entryIds": [
+          "9",
+          "10"
+        ],
+        "description": "Met by Warren's gallery about 46 ft in front of the Golden Gate, running north and south and then turning west: large quarry-dressed blocks with rough drafts, courses 2 ft 6 in high and over 5 ft long, joints packed with small stones in a cement like that used for cisterns. A 5 ft 6 in hole did not reach its back. Large drafted stones lie on the same line at the surface.",
+        "limit": "Plate VI draws its northern part; the model extends it 4.3 m south of the gallery, as the text reports, along the plate's line. Its base and thickness are unknown; the top is drawn at the present surface because SWP thinks it probably reaches it. It is not identified as a cistern.",
+        "sources": [
+          "SWP Jerusalem pp. 144–145",
+          "Warren 1884 Pl. VI (level 2338.5)"
+        ],
+        "sourceUrl": "https://archive.org/details/surveyofwesternp00warruoft"
+      },
+      {
+        "id": "gallery",
+        "label": "Warren's 1869 shaft and gallery",
+        "x": 514.0,
+        "y": 271.9,
+        "kind": "Reported remains",
+        "entryIds": [
+          "9"
+        ],
+        "description": "A shaft sunk 55 ft 6 in below the ground outside the gate, 143 ft from it on the perpendicular from its south end, then 25 ft 6 in deeper; a gallery driven west, rising with the rock, through two rough masonry walls, to the massive wall at 97 ft. The square marked 2308 on Plate VI is, by inference, the shaft bottom.",
+        "limit": "The gallery is drawn in a display cutaway trench, not an excavation. Its section, steps and the shaft's shape are illustrative; its rise follows the reported 8 ft at 37 ft and 25 ft 6 in at 85 ft. On the plate the massive wall lies about 54 ft from the Haram wall on this line; the text gives 46 ft. The model follows the plate.",
+        "sources": [
+          "SWP Jerusalem pp. 142–144",
+          "Warren 1884 Pl. VI"
+        ],
+        "sourceUrl": "https://archive.org/details/surveyofwesternp00warruoft"
+      },
+      {
+        "id": "tank-tomb",
+        "label": "Tank or rock-cut tomb",
+        "x": 550.1,
+        "y": 271.9,
+        "kind": "Reported remains",
+        "entryIds": [
+          "9"
+        ],
+        "description": "Crossed by the gallery 18 ft 6 in from the shaft, about 38 m east of the gate; 'the examination of this was reserved'.",
+        "limit": "Its size and form are not recorded; only its position on the gallery line is shown.",
+        "sources": [
+          "SWP Jerusalem p. 142"
+        ],
+        "sourceUrl": "https://archive.org/details/surveyofwesternp00warruoft"
+      },
+      {
+        "id": "column",
+        "label": "Column shaft standing in the debris",
+        "x": 480.6,
+        "y": 271.9,
+        "kind": "Reported remains",
+        "entryIds": [
+          "10"
+        ],
+        "description": "At 68 ft from the shaft, part of a column shaft 3 ft in diameter stood erect in the debris about 3 ft above the rock, with what appear to be masons' marks on its base.",
+        "limit": "Drawn beside the gallery so that it can be seen; its length is illustrative.",
+        "sources": [
+          "SWP Jerusalem p. 143"
+        ],
+        "sourceUrl": "https://archive.org/details/surveyofwesternp00warruoft"
+      }
+    ]
   }
 ]

@@ -64,6 +64,8 @@ def hexcolour(rgb):
 PALETTE = {
     "gerizim": {"stone": "#aaa99b", "rock": "#97978a", "soil": "#827a61", "plaster": "#c3ba9f"},
     "siloam": {"stone": "#b7ad92", "rock": "#a9a087", "soil": "#8f8269", "plaster": "#b1b09c"},
+    "bethesda": {"stone": "#b7ad92", "rock": "#a9a087", "soil": "#8f8269", "plaster": "#b1b09c"},
+    "eastgate": {"stone": "#b7ad92", "rock": "#a9a087", "soil": "#8f8269", "plaster": "#b1b09c"},
     "jericho": {"stone": "#ceb998", "rock": "#b7a387", "soil": "#ae8d67", "plaster": "#dbbba0"},
     "doq": {"stone": "#baab8a", "rock": "#ac926e", "soil": "#9e825f", "plaster": "#c2b79b"},
     "hyrcania": {"stone": "#c9bea1", "rock": "#b8ab8d", "soil": "#a39170", "plaster": "#b4b5a0"},

@@ -44,3 +44,21 @@ Applied to every model: base colours, masonry type and weathering derived from t
 ## Abu Saraj IV/17 (abu-saraj-iv17)
 
 - Not compared. Photographs of IV/17 fall under the frozen Entry 25 rules and were not collected.
+
+## New walkable models, 17 October 2026
+
+Two places with reference photographs and published plans now have walkable models. Plan, model and photographs were compared after the build.
+
+### Bethesda (bethesda-pools)
+
+- Sources: Duprez 1970 pp. 33–41 and Pl. II; Gibson 2005 pp. 286–287 and 2011 pp. 22–28 (registration records `duprez1970_extracted.md`, `gibson2005_2011_bethesda_extracted.md`).
+- Photographs: jer_bethesda-north-pool-2021, jer_bethesda-pools-dam-2021 (masonry colour and ashlar type), jer_bethesda-bw4-2010, jer_bethesda-site-2019, jer_bethesda-dzca-1101-2021; historical jer-bethesda-pool-1898-1914 and 1898-1946.
+- Matches: squared ashlar faces; a long stair down into an excavated pool (north-pool-2021) agrees in kind with Gibson's steps along the southern pool's west side.
+- Differences, not changed: the photographs show later walls, arches and vaults standing over and inside the pools (pools-dam-2021, bw4-2010, the historical views); the model omits Byzantine and Crusader structures. The photographs do not show the pools' full depth, the chimney or the eastern grottoes, so those parts follow the text only. Duprez reports rock in the lower parts of the faces; the model draws masonry throughout.
+
+### Golden Gate (east-gate-warren)
+
+- Sources: Warren 1884 Pl. VI, measured with its scale bar ([warren1884-plate-vi](../warren1884-plate-vi/README.md)); SWP Jerusalem pp. 141–145, 221.
+- Photographs: jer_east_gate-exterior-2025-722 and jer_east_gate-exterior-cemetery-2014 (masonry colour and ashlar type); the other eight East Gate photographs were not used for geometry.
+- Matches: very large squared blocks low on the outer face; a steep cemetery slope east of the wall; jer_east_gate-inside-2018-1 shows a sunken court in front of the gate's west facade, which agrees with the sill (2,396 ft) lying below the Haram surface (2,408 ft at cistern XV).
+- Differences, not changed: the photographs show twin arched doorways, a crenellated top and a domed hall; the model draws the gatehouse as a closed block of illustrative height, because no published elevation was read. None of the photographs shows anything below the present surface, so the shaft, gallery, massive wall and cistern follow Warren only.

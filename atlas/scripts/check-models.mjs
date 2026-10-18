@@ -13,7 +13,7 @@ const exports=module('../app/atlas-model-geometry.ts',{'three':Three,'three/addo
 for(const patch of Object.values(terrain)){assert.equal(patch.elevations.length,patch.size**2);assert.ok(patch.elevations.every(Number.isFinite));assert.ok(Math.abs(landscape.elevationAt(patch,0,0))<.02);}
 const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
 const models=new Map();
-for(const id of ['abu-saraj-iv17','hyrcania-waterworks','gerizim-precinct','doq-waterworks','jericho-early','jericho-late']){
+for(const id of ['abu-saraj-iv17','hyrcania-waterworks','gerizim-precinct','doq-waterworks','jericho-early','jericho-late','bethesda-pools','east-gate-warren']){
  const plan=plans.find(p=>p.id===id),model=exports.buildModel(plan);
  assert.deepEqual([...model.markers.keys()].sort(),plan.features.map(f=>f.id).sort(),`${id}: all source features must remain selectable`);
  for(const marker of model.markers.values())assert.ok(marker.toArray().every(Number.isFinite));

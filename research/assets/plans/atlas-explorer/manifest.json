@@ -153,6 +153,32 @@
       "selection_method": "Complete public-domain historical sheet; one broad approximate source-image sector selector, not a feature outline.",
       "limit": "Unregistered historical survey; no geographic registration is inferred from the source grid. The broad Shechem-sector selection is context, not an excavation footprint or individual Gerizim stair/cistern. Symbols do not establish ancient chronology.",
       "source_url": "https://drive.google.com/file/d/1Y85eW04_sZkObCF2K_rUmFPYOP8kMVqt/view"
+    },
+    {
+      "plan_id": "bethesda-pools",
+      "source": "Duprez 1970 pp. 33–41, Pl. II; Gibson 2005 pp. 286–287; Gibson 2011 pp. 22–28",
+      "credit": "Original project diagram of selected published dimensions and relations (17 October 2026).",
+      "frame": [
+        700,
+        600
+      ],
+      "registration": "none",
+      "selection_method": "Published dimensions converted at 5.2 px per metre, north up. Pools from reported side lengths with an assumed angle; eastern complex after the relative arrangement of Duprez Pl. II (scale unrecorded).",
+      "limit": "Southern pool angle assumed; northern pool depth inferred from volume ÷ area; eastern complex distance and bearing schematic. Byzantine and Crusader structures omitted.",
+      "source_url": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+    },
+    {
+      "plan_id": "east-gate-warren",
+      "source": "Warren 1884 Pl. VI; SWP Jerusalem (Warren & Conder 1884) pp. 141–145, 221",
+      "credit": "Original project diagram of measurements from a public-domain plate (17 October 2026). Archive: research/assets/plans/warren1884-plate-vi.",
+      "frame": [
+        680,
+        460
+      ],
+      "registration": "none",
+      "selection_method": "Pixel coordinates measured on the 601 ppi line-art layer of Plate VI and converted with the plate's own scale bar (2.344 px per ft), then to metres at 4.6 px per metre around the gate outline's centre.",
+      "limit": "Plate frame, about 9° from north. Levels from Warren's recorded feet; the level 2389 outside the gate and the shaft's identification with the 2308 square are inferences. The gallery is shown in a display cutaway.",
+      "source_url": "https://archive.org/details/planselevationss00warr"
     }
   ],
   "images": [
@@ -191,7 +217,7 @@
   "drive_access": "Authenticated Google Drive access verified 12 October 2026. Folder index and newly uploaded SWP map set and Raviv–Zissu 2022 article retrieved; modern excavation scans already archived in the repository were reinspected. The SWP upload is a survey map set, not a Gerizim architectural report.",
   "model_rendering": {
     "asset": "atlas/app/atlas-model-geometry.ts",
-    "sha256": "726d672c37305e5376b0b84c23b5504ca4ac446ac5f8641f7228bcea83d5f5db",
+    "sha256": "e99265f3762eadc8087d147d851629820ce27d38cc989ff1e23732490dd207d5",
     "renderer": "Three.js models in a shared MapLibre geographic WebGL layer; eye-level inspection uses the same map camera. Source plans use the inline SVG canvas.",
     "selection": "Source feature IDs retained. Model camera focus is a display operation. Source image/tracing remains independently available.",
     "dimensions": {
@@ -200,7 +226,9 @@
       "gerizim-precinct": "Reported 212 × 136 m enclosure, 40 × 40 m mansion, 20 × 14 m building IV, 25 × 24 m citadel. East stair uses maximum 23 m width, 34 m run, 15.5 m rise and approximately 57 steps. Western landing distinct from southern seven-step and E1 flights. Other heights, divisions, cistern and platform relief illustrative.",
       "jericho-early": "Approximate 18 × 13 m pool envelopes; 2.5 m depth, columns and platform illustrative.",
       "jericho-late": "Approximate 32 × 18 m joined envelope; 2.5 m depth, columns and platform illustrative.",
-      "relative_models": "Doq, Qumran, Siloam and Area AC are normalized relative frames. Heights/depths and channel cross-sections illustrative; selection envelopes are not measured footprints."
+      "relative_models": "Doq, Qumran, Siloam and Area AC are normalized relative frames. Heights/depths and channel cross-sections illustrative; selection envelopes are not measured footprints.",
+      "bethesda-pools": "Northern pool 53 × 40 m (Gibson), depth 10 m inferred from about 21,200 m³; southern pool sides about 45/50/65/47 m, 14 m deep (Duprez); dam 6.5 m; chimney 15 m (Duprez; von Wahlde 12 m); settling-basin wall 2.6 m; cistern 1 8.5 m deep, 6 m across; grotto 5 1.5 × 2 × 1.5 m with four steps; basin 4 0.3 m. Step count, other grotto sizes and eastern-complex placement illustrative.",
+      "east-gate-warren": "Plate VI measurements: gate outline 24.8 × 17.3 m; cistern XV 18 ft across, 30.0 m west of the gatehouse, 10.67 m deep (35 ft); massive wall after the plate. Levels relative to the Haram surface 2,408 ft: sill 2,396, ground outside about 2,389, shaft 2,333.5–2,308, gallery rise 8 ft at 37 ft and 25 ft 6 in at 85 ft. Gatehouse height and roof, wall parapet and thickness, gallery section and the interpolated slope illustrative."
     },
     "historical_context": "gerizim-swp-context remains a flat survey map.",
     "orientation": "Source frame relationships retained or simplified as documented; no geographic registration or additional compass bearing inferred.",

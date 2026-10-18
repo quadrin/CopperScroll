@@ -1,0 +1,180 @@
+{
+  "files": {
+    "golden-gate-area.png": {
+      "box_full_res_px": [
+        4150,
+        2950,
+        5150,
+        3750
+      ],
+      "sha256": "eefe82afd07b3c1dc1a5fb05a1b2b3b3f429b803bae94bfcf930c1d770184259"
+    },
+    "scale-bar.png": {
+      "box_full_res_px": [
+        2100,
+        4130,
+        3800,
+        4280
+      ],
+      "sha256": "1d132da36888bf5462a4c4fd5d8db3db6f29147eb8ac1e481487b8ca6cf4a706"
+    },
+    "north-arrow.png": {
+      "box_full_res_px": [
+        4800,
+        1050,
+        5400,
+        1650
+      ],
+      "sha256": "f73c1b933106a6e53e1b780fe563db06a9ec8383aa471e3d40078af4d31fd23b"
+    }
+  },
+  "source": "Warren, Plans, Elevations, Sections, &c. (PEF 1884), Pl. VI 'Rock contours of the Noble Sanctuary'. Internet Archive planselevationss00warr (BYU Library scan), PDF page 5, line-art mask image 5973 × 4821 px (601 ppi).",
+  "sourceUrl": "https://archive.org/details/planselevationss00warr",
+  "pdfSha256": "9b8d282479518a98b9895eb0ea187421235502e985741d0bf95da1181b7c7bcf",
+  "licence": "Public domain (published 1884).",
+  "scale": {
+    "ticks_px": {
+      "0 ft": 2563,
+      "500 ft": 3735
+    },
+    "px_per_ft": 2.344,
+    "m_per_px": 0.13003,
+    "note": "Plate reduced from its printed 1:1000; its own scale bar is used."
+  },
+  "frame": "Model metres: origin at the centre of the dashed Golden Gate outline; x to plate right, z to plate down. Plate north (north arrow) points about 9.4° clockwise from plate up; the model is not geographically registered.",
+  "northArrow_px": {
+    "top": [
+      5118,
+      1180
+    ],
+    "bottom": [
+      5085,
+      1380
+    ]
+  },
+  "features_px": {
+    "golden_gate_outline": {
+      "x": [
+        4582.5,
+        4773.0
+      ],
+      "y": [
+        3222.5,
+        3355.5
+      ],
+      "metres": "24.8 × 17.3 (plate x × plate y)"
+    },
+    "east_wall_line": {
+      "points": [
+        [
+          4780.5,
+          2950
+        ],
+        [
+          4775.5,
+          3050
+        ],
+        [
+          4769.5,
+          3200
+        ],
+        [
+          4761.5,
+          3400
+        ],
+        [
+          4755,
+          3550
+        ],
+        [
+          4747,
+          3740
+        ]
+      ],
+      "metres_at_gate_centre_row": 11.49
+    },
+    "cistern_XV": {
+      "centre": [
+        4351.7,
+        3193.3
+      ],
+      "diameter_px": 43,
+      "diameter_ft": 18.3,
+      "metres": [
+        -42.4,
+        -12.44
+      ],
+      "distance_to_gate_west_face_m": 30.0
+    },
+    "massive_wall_hatched": {
+      "points": [
+        [
+          4845,
+          3230
+        ],
+        [
+          4862,
+          3248
+        ],
+        [
+          4876,
+          3270
+        ],
+        [
+          4883,
+          3295
+        ],
+        [
+          4885,
+          3320
+        ]
+      ],
+      "metres": [
+        [
+          21.75,
+          -7.67
+        ],
+        [
+          23.96,
+          -5.33
+        ],
+        [
+          25.78,
+          -2.47
+        ],
+        [
+          26.69,
+          0.78
+        ],
+        [
+          26.95,
+          4.03
+        ]
+      ],
+      "level_label": "2338.5 (at its north end)"
+    },
+    "level_2308_square": {
+      "centre": [
+        5089,
+        3359
+      ],
+      "metres": [
+        53.48,
+        9.1
+      ],
+      "identification": "Inference: the bottom of Warren's 1869 shaft. The square lies 139 ft (plate) east of the wall line on the perpendicular from the gate's south end, where SWP Jerusalem p. 142 puts the shaft (143 ft). If so, the ground outside the gate is about 2308 + 81 = 2389 ft and the shaft top about 2333.5 ft. The gallery's reported rise (25 ft 6 in at 85 ft, about 30 ft at 97 ft) then reaches about 2338 at the Massive Wall, which matches the plate's 2338.5 label there."
+    }
+  },
+  "derivedLevels_ft": {
+    "Haram surface at cistern XV": "2408 (rock 2393 + 15 ft of soil, SWP p. 221)",
+    "Golden Gate sill": "2396 (SWP p. 141)",
+    "ground outside the gate": "about 2389 (inference, above)",
+    "shaft top": "about 2333.5 (ground outside − 55 ft 6 in, SWP p. 142)",
+    "shaft bottom": "2308 (plate; ground outside − 81 ft)",
+    "gallery at the Massive Wall": "about 2338 (plate label 2338.5)"
+  },
+  "textVsPlate": [
+    "Shaft distance: plate 139 ft from the wall line; text 143 ft from the gate front (3%).",
+    "Massive Wall on the gallery line: plate about 51–54 ft from the wall line (extrapolated south of the hatched segment); text 46 ft from the Sanctuary wall and 97 ft from the shaft. The plate draws the segment met by the north branch gallery; the model follows the plate."
+  ]
+}

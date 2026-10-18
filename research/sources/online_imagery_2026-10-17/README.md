@@ -45,6 +45,13 @@ Exploratory. Photographs and videos show what a place looks like and where a fea
 | beth_horon | 3 | 2 | 0 | 0 |
 | ibziq, kh_salhab | 0 | 1 (regional air view) | 0 | 1 (comparison tomb near Nablus) |
 
+## Photographs as references for the walkable models
+
+- Every walkable model now takes its base colours and masonry type from sample boxes on these photographs (`tools/build_site_surfaces.py`, [surface samples](../../assets/plans/atlas-explorer/surface-samples-2026-10-17/spec.json)), and walk mode has a "Reference photos" strip for the place. The model is not aligned to any photograph's camera.
+- Each model was compared with its photographs ([photo–model check](../../assets/plans/atlas-explorer/photo_model_check_2026-10-17.md)). Geometry changed only where a published source supports it: Hyrcania's double pool is now rock-cut and plastered (Patrich 1989 p. 255).
+- New walkable models for photographed places with published plans: Bethesda (`bethesda-pools`; Duprez 1970, Gibson 2005/2011) and the Golden Gate (`east-gate-warren`; Warren 1884 Pl. VI measured with its scale bar, [archive](../../assets/plans/warren1884-plate-vi/README.md); SWP Jerusalem pp. 141–145, 221).
+- Not built: Lower Herodium (its model position needs an owner decision on coordinates); the Tombs of the Kings and the Kidron monuments (their plans are in private Drive files not yet measured).
+
 ## Searches
 
 - English-language search of image, video, 3D and platform sources, with licences: [sources_list.md](sources_list.md).

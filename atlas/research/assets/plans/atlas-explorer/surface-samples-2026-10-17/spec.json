@@ -505,6 +505,114 @@
      "note": "marl scree slope"
     }
    ]
+  },
+  "bethesda": {
+   "masonry": "ashlar",
+   "masonryEvidence": [
+    "jer_bethesda-north-pool-2021",
+    "jer_bethesda-pools-dam-2021"
+   ],
+   "masonryNote": "Pale limestone walls in regular courses with squared faces (jer_bethesda-north-pool-2021, jer_bethesda-pools-dam-2021); Duprez 1970 p. 33 gives the central dam ashlar faces in courses of about 60 cm. Much of the standing masonry is Byzantine and Crusader. Bedrock, soil and plaster keep the Siloam (Jerusalem limestone) palette.",
+   "samples": [
+    {
+     "photo": "jer_bethesda-north-pool-2021",
+     "surface": "masonry",
+     "box": [
+      0.33,
+      0.3,
+      0.43,
+      0.4
+     ],
+     "note": "coursed limestone wall, overcast light"
+    },
+    {
+     "photo": "jer_bethesda-north-pool-2021",
+     "surface": "masonry",
+     "box": [
+      0.88,
+      0.35,
+      0.97,
+      0.55
+     ],
+     "note": "coursed retaining wall, overcast light"
+    },
+    {
+     "photo": "jer_bethesda-pools-dam-2021",
+     "surface": "masonry",
+     "box": [
+      0.4,
+      0.62,
+      0.48,
+      0.7
+     ],
+     "note": "standing wall in the excavation"
+    },
+    {
+     "photo": "jer_bethesda-pools-dam-2021",
+     "surface": "masonry",
+     "box": [
+      0.82,
+      0.73,
+      0.9,
+      0.85
+     ],
+     "note": "coursed retaining wall"
+    }
+   ]
+  },
+  "eastgate": {
+   "masonry": "ashlar",
+   "masonryEvidence": [
+    "jer_east_gate-exterior-2025-722",
+    "jer_east_gate-exterior-cemetery-2014"
+   ],
+   "masonryNote": "Very large squared blocks with fine joints in the lowest visible courses of the gate's outer face (jer_east_gate-exterior-2025-722); smaller squared blocks in regular courses higher on the gate and wall (jer_east_gate-exterior-cemetery-2014). Course height 0.76 m is Warren's 2 ft 6 in for the massive wall (SWP Jerusalem p. 145). No bedrock or plaster is visible, and the only ground sampled was modern gravel in blue sky light, so rock, soil and plaster keep the Jerusalem palette.",
+   "samples": [
+    {
+     "photo": "jer_east_gate-exterior-2025-722",
+     "surface": "masonry",
+     "box": [
+      0.3,
+      0.15,
+      0.45,
+      0.32
+     ],
+     "note": "sunlit block, gate outer face"
+    },
+    {
+     "photo": "jer_east_gate-exterior-2025-722",
+     "surface": "masonry",
+     "box": [
+      0.52,
+      0.32,
+      0.75,
+      0.45
+     ],
+     "note": "sunlit blocks, gate outer face"
+    },
+    {
+     "photo": "jer_east_gate-exterior-2025-722",
+     "surface": "masonry",
+     "box": [
+      0.47,
+      0.47,
+      0.62,
+      0.58
+     ],
+     "note": "sunlit block, gate outer face"
+    },
+    {
+     "photo": "jer_east_gate-exterior-cemetery-2014",
+     "surface": "masonry",
+     "box": [
+      0.62,
+      0.38,
+      0.78,
+      0.5
+     ],
+     "note": "sunlit gate face; this photograph is strongly saturated"
+    }
+   ]
   }
  }
 }
