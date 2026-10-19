@@ -1,17 +1,22 @@
-# Wolters 1996, cols VII, X, XI: firsthand check of the secondhand readings
+# Wolters 1996, cols V, VII, X, XI: firsthand check of the secondhand readings
 
-**Source.** A. Wolters, *The Copper Scroll: Overview, Text and Translation* (Sheffield Academic Press, 1996), "Text and Translation in Parallel": col. VII pp. 44–45, col. X pp. 50–51, col. XI pp. 52–53. The owner photographed a library copy on 19 Oct 2026 (19:50 Asia/Jerusalem, 16:50 UTC). The photos are copyright and are not committed:
+**Source.** A. Wolters, *The Copper Scroll: Overview, Text and Translation* (Sheffield Academic Press, 1996), "Text and Translation in Parallel": col. V pp. 40–41, col. VII pp. 44–45, col. X pp. 50–51, col. XI pp. 52–53. The owner photographed a library copy on 19 Oct 2026 (19:50 Asia/Jerusalem, 16:50 UTC). The photos are copyright and are not committed:
 
 | File | Pages | Bytes | SHA-256 |
 |---|---|---|---|
+| 3feb59ea-image.jpg | 40–41 (V; sent 19:52) | 518679 | 424364a2247ba237546a2407ffdabcde616e40423f3e3b9b26cfc2d5f0c3c415 |
 | 6dca1294-image.jpg | 44–45 (VII) | 542891 | 46b63957a485b7ee4830a1dc34d0e792a993e5c13a3ef83e5d403da1b97e3746 |
 | 21def59f-image.jpg | 50–51 (X) | 560554 | 54c1ceeb776319548d69c8f0ebd60deca9106b85a7da47bb22b8bd756a37b643 |
 | 55973d9c-image.jpg | 52–53 (XI) | 559614 | b06be3f871dde7986eb2a9cddee39dae9f2a18ebc1b6bf670d272efe0c31ead1 |
 
-**Why.** Until now the project had Wolters only secondhand, through Puech 2015's notes (tag PN) and Lefkovits (RJ) ([sources.md](../../sources/sources.md)). `variants.csv` has 23 Wolters rows in these three columns. Each was checked against the printed Hebrew text. The reader was the integrator (not blind). This is an edition check, not a manuscript reading.
+**Why.** Until now the project had Wolters only secondhand, through Puech 2015's notes (tag PN) and Lefkovits (RJ) ([sources.md](../../sources/sources.md)). `variants.csv` has 27 Wolters rows in these four columns. Each was checked against the printed Hebrew text. The reader was the integrator (not blind). This is an edition check, not a manuscript reading.
 
 | Row | Line | Secondhand (edition, via) | Wolters 1996 printed | Result |
 |---|---|---|---|---|
+| V0231 | V 6 | ʾšyḥ (1992, via Puech) | אשיח | agrees |
+| V0239 | V 7 | wktbn (1996, via Puech) | וכתבן | agrees |
+| V0248 | V 9 | hrgm (1992, via Puech) | הרגם | agrees |
+| V0250 | V 13 | bbyʾh (1996, via Puech) | בביאה | agrees |
 | V0276 | VII 4 | hʾšyḥ (1996, via Puech) | האשיח | agrees |
 | V0279 | VII 6 | ʿsrn (1992, via Puech) | עסרן | agrees |
 | V0288 | VII 8 | wl (1992, via Puech) | [מ]ול | agrees; 1996 restores מ |
@@ -36,6 +41,6 @@
 - **X 11** (the number after the vessel word): Wolters prints וכלין כופרין עסרין, "twenty expiatory vessels".
 - **X 13:** חפו[ו]ר גמות שתין עסרה, "dig twelve notches".
 
-**Effect.** 22 of the 23 secondhand rows are confirmed firsthand for Wolters 1996. One row (V0315, VII 14) conflicts on ה versus ח and is flagged. `variants.csv` is not edited; the flag is recorded here. No rating changes.
+**Effect.** 26 of the 27 secondhand rows are confirmed firsthand for Wolters 1996. One row (V0315, VII 14) conflicts on ה versus ח and is flagged. `variants.csv` is not edited; the flag is recorded here. No rating changes.
 
-**Not photographed:** cols I–VI, VIII–IX and XII, and the "Overview" chapters. Cols VIII–IX (pp. 46–49) carry the VIII 9 and VIII 13 sums. Wolters's text of XII is an edition transcription, not an image, so it falls outside the XII 8–12 image reservation; it is still not needed for any open test.
+**Not photographed:** cols I–IV, VI, VIII–IX and XII, and the "Overview" chapters. Cols VIII–IX (pp. 46–49) carry the VIII 9 and VIII 13 sums. Wolters's text of XII is an edition transcription, not an image, so it falls outside the XII 8–12 image reservation; it is still not needed for any open test.
