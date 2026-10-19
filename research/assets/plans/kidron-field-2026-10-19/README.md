@@ -9,6 +9,13 @@
 - **No scale object** is in any frame.
 - 8 of the 59 uploads were byte-identical duplicates and are not kept.
 
+## Videos (added 20 Oct 2026)
+
+Two iPhone 15 videos from the same visit (HEVC, 1920 × 1080), kept in Drive only; 11 frames are archived here as `IMG_984x_tNNN.jpg`. Records: `videos` in [manifest.json](manifest.json).
+- **IMG_9843** (16:17, 58 s), starting at 31.7771 N, 35.2390 E (±12.5 m): Absalom's monument, the graffitied wall and scarp behind it, the barred breach, the ground at the foot of the face with the breach.
+- **IMG_9844** (16:22, 160 s), starting at 31.7766 N, 35.2389 E (±12.5 m), about 55 m south: Zechariah's monument and its court. Several lines of engraved letters on a pilaster are clearer in these frames than in the camera photos (t = 48–72 s). A metal stair rises to a barred doorway in the scarp (t = 80 s); INFERENCE: the access to the Bene Ḥezir tomb from Zechariah's side. The Bene Ḥezir façade inscription is not filmed.
+- These are the only position records of the visit (start positions only; no heading).
+
 ## Against the shot list
 
 | Item | Covered | Photos |

@@ -1025,5 +1025,96 @@
    "heading": null,
    "scale_object": null
   }
- ]
+ ],
+ "videos": [
+  {
+   "id": "IMG_9843",
+   "file_in_drive": "IMG_9843.MOV",
+   "drive_id": "1zNuCOVaZd-NdspFIqVW7DFHlTulduzMA",
+   "bytes": 87348358,
+   "sha256": "13b92f0a78e17c8d0b6262cd74f47ee032bb4b60f1b4845e56e3e7acf2ab1cd7",
+   "camera": "iPhone 15",
+   "start_local": "2026-10-19T16:17:55+03:00",
+   "duration_s": 57.51,
+   "video": "HEVC 1920x1080 portrait, 30 fps",
+   "gps_start": {
+    "lat": 31.7771,
+    "lon": 35.239,
+    "alt_m": 684.6,
+    "horizontal_accuracy_m": 12.5,
+    "source": "QuickTime ISO6709 tag (position at recording start only)"
+   },
+   "heading": null,
+   "content": "Absalom monument: column and frieze, the graffitied wall and the rock scarp behind the monument (0-20 s), a corner of the cube with the barred breach (25 s), the entrance plaza and toilets (35-50 s), the face with the breach above the columns and the ground at its foot (55 s)",
+   "frames": [
+    {
+     "file": "IMG_9843_t005.jpg",
+     "sha256": "7267948b02773e35e14961099e413c41c51de24e15e248f3c2dc900a2dfc664a"
+    },
+    {
+     "file": "IMG_9843_t010.jpg",
+     "sha256": "f0e680f092c8b5ca75229a64a0bd4aed52fa7400a75cf65376ba5a077943e0c5"
+    },
+    {
+     "file": "IMG_9843_t020.jpg",
+     "sha256": "65b3ce469fa1d8f5ee4ff66334d9362c28e64f28f5e4200e654ecaf5015f44b2"
+    },
+    {
+     "file": "IMG_9843_t025.jpg",
+     "sha256": "86e63c9cbcb931f9facece9eb3e7bd3ac7a8183ea467ccd188ca762f8310e545"
+    },
+    {
+     "file": "IMG_9843_t055.jpg",
+     "sha256": "c998d4e5a2eefc73d125fb4522382a5fa26f436130aa3a443d6c48d95552a72f"
+    }
+   ]
+  },
+  {
+   "id": "IMG_9844",
+   "file_in_drive": "IMG_9844.MOV",
+   "drive_id": "1iO5fon4CV8yia64fkIfJ0yTqqjlbUSPu",
+   "bytes": 176697779,
+   "sha256": "35a3499126a5d9b4dd2457dbc8e8c64991704377946f71ff40ec4a1f07fae40e",
+   "camera": "iPhone 15",
+   "start_local": "2026-10-19T16:22:41+03:00",
+   "duration_s": 159.63,
+   "video": "HEVC 1920x1080 landscape, 30 fps",
+   "gps_start": {
+    "lat": 31.7766,
+    "lon": 35.2389,
+    "alt_m": 685.1,
+    "horizontal_accuracy_m": 12.5,
+    "source": "QuickTime ISO6709 tag (position at recording start only)"
+   },
+   "heading": null,
+   "content": "Zechariah monument and its rock-cut court: rock surfaces, a metal walkway (24 s), a rubble wall (32 s), pilasters and engaged columns with several lines of engraved letters (48-72 s), a metal stair rising to a barred doorway in the scarp (80 s; INFERENCE: the access to the Bene Hezir tomb from Zechariah's side), the passage round the monolith (96-144 s), black painted modern graffiti (152 s)",
+   "frames": [
+    {
+     "file": "IMG_9844_t008.jpg",
+     "sha256": "9865c1d61fa97c0c33766738cf049ba3e94a4cde46130635eba4ae642a2546b2"
+    },
+    {
+     "file": "IMG_9844_t024.jpg",
+     "sha256": "6a6285006d538cffd1431dddf1d78519d47d48b137c4f2256d79a33b2efa7031"
+    },
+    {
+     "file": "IMG_9844_t050.jpg",
+     "sha256": "31ab0ced9a0cf2d4b2a115a82c9f3beeef98bd32a59dbfb002defb3466be9d92"
+    },
+    {
+     "file": "IMG_9844_t064.jpg",
+     "sha256": "46e433ab495d6c2cf0db0b3b34ef1e60d896fc421c0aae06d3a09841dd097a22"
+    },
+    {
+     "file": "IMG_9844_t080.jpg",
+     "sha256": "98379f746a0da4c137afa1e17675bc05c6a19ac9f8a5ed3cc0516b016e32b64c"
+    },
+    {
+     "file": "IMG_9844_t144.jpg",
+     "sha256": "4eea0cfba2995783fb72557401159f906e5d20bd38a73714725f7518298cf665"
+    }
+   ]
+  }
+ ],
+ "videos_note": "Videos are kept in Drive only (one exceeds GitHub's 100 MB file limit). Selected frames are archived here as JPEG (ffmpeg, q 3). GPS is the start position only, about 12.5 m accuracy; the two starts are about 55 m apart, IMG_9844 to the south."
 }
