@@ -136,3 +136,34 @@ The drawing includes entrance cross section b–b′ with two apertures separate
 Rights for source-image redistribution are unestablished. The original remains at the owner's supplied attachment location; local inspection renders are ignored cache files. Figure pointers, captions, provenance and the file hash are retained in the reviewed KB. No article page or image is added to a public-facing export. The map/plan/photo archival obligation remains a rights-dependent pointer entry rather than an inferred reproduction licence.
 
 [Figure-pointer manifest](../../assets/plans/entry25_followup_2026-10-15/freikman_manifest.json) retains the encountered location map, entrance photo, survey and hearth image with their separate credits, scales, page/slice locators and rights limitation; the atlas mirror is byte-identical.
+
+### Gutfeld 2020 in print: Figure 2 seen in the original (19 October 2026)
+
+Intake before reading: on 19 Oct 2026, 18:11 Asia/Jerusalem (15:11 UTC), the owner sent 15 phone photos of a library copy of Y. Abadi-Reiss, D. Varga and G. Lehmann (eds.), *Desert Archaeology: The Annual 16th Southern Conference* (Ben-Gurion University of the Negev and Israel Antiquities Authority): the cover and O. Gutfeld, "Looters or monks? The mystery of the missing scrolls from Cave XII/53 at Qumran", printed pp. 71–80. Gutfeld's report is not an arrival item or a held record; XII/53 is already exposed and serves only as a named control. This is an exploratory reading by the same analyst. The photos are copyright and are not committed. File names, bytes and SHA-256:
+
+| File | Bytes | SHA-256 |
+|---|---|---|
+| e332a878-image.jpg (cover) | 2172786 | f7a6f5f0c238f6360aaf77233c22733f972e2c33e1fe67f1241169ec3a8d8312 |
+| f2503f55-image.jpg (pp. 70–71, blurred) | 1076062 | cb7efea9ece8dc71968ce5745953d771223e6635f2a52363d0966b8c046a3af5 |
+| 42b7da5f-image.jpg (pp. 70–71) | 1285999 | 044445d96f047e328168798f26746c09d1ddf7f424c925caf122bc8699241597 |
+| 5a49d296-image.jpg (p. 71) | 929255 | e46180c50da188c7744cd27f18a778f2d0d4317ae8e7a2ddab01604c47ffafac |
+| 877247f9-image.jpg (pp. 72–73, p. 72 partly covered) | 1247002 | 6e5dc4312e64738e86603574760793dc6c56526d3f0529471320f8a46dd50393 |
+| f399d2d2-image.jpg (p. 73, Fig. 2) | 830420 | 5ac5dc9c189bdcfc3f0a3ee9901af04bf28ace3829ee4b7682cdb915c5a71ef1 |
+| 8939f1c3-image.jpg (p. 74) | 1074525 | 3bb5ae41f65cc1ff4e3a4fbd973e4a6f84c0622c080341766b984cb5374fcddc |
+| 2515c4a7-image.jpg (pp. 74–75) | 1174990 | fda453d9e2d1c760b1f67e9b984d73b41adc443848fb3539b3a195e6c95288ae |
+| b4f15d2b-image.jpg (p. 75) | 1113907 | 62a585710f426abf20060f336343158950d56bbf32a567a9a2bf40bfb6d1e1f2 |
+| 286d253d-image.jpg (p. 76) | 1151019 | 54ba0dad59109c2e5c92aae8db8274d387fffc1e33a3d67f650b8a101ebf5228 |
+| 4899c720-image.jpg (p. 76) | 1080573 | a1eeb7142e27ee968c76364bc185418113a5de20fb2d05f16bc3fa88c1372280 |
+| 1ca1139d-image.jpg (p. 77) | 993204 | 7ea556eac362a2e357ab75b2d50190026fe63c6d0f6c4f6eac7491cc39207fda |
+| 70746b21-image.jpg (p. 78) | 1132378 | 306f8a247d789144a6495eeeb1f138d98107699700e36221ba058786c4026d25 |
+| 2168bd52-image.jpg (p. 79) | 1272238 | 4199b71f69f06083e27444b794af441afbfe7c991426ea23699e59175d8379d2 |
+| 537daa2a-image.jpg (p. 80) | 1218532 | f1653baf688f9087303b058aae3725ed470f7cacfb12f67d506af3026f1349e7 |
+
+Gap: the text of p. 72 is mostly covered by a hand and the edge of the frame; only line ends show.
+
+- **EVIDENCE, p. 71 in print.** The printed text matches the indexed Academia text above: the opening faces north-east, is about 4 m wide, and a built wall in its centre divides it in two. Central chamber about 3.5 × 5.0 m, about 2.5 m high. Grid 243182/627162 (the text says ITM, "נ"צ"), 293 m below sea level, on the middle rock terrace south of Naḥal Qumran, about 1 km south of the Qumran park.
+- **EVIDENCE, Figure 2, p. 73 (first look at the native figure).** Caption: "Cave XII/53a, plan and sections". Title block: "Qumran Cave 53, 243182/627162 (ITM), 293 m BSL, ICRC Mapping 2017, Grade 5C, Uri Davidovich & Micka Ullman". The figure has a north arrow and a 0–4 m scale bar. The legend has two entries only, conglomerate and dolomite; no element is labelled as built masonry. A dashed "Drip line" crosses the mouth on the north-east side, with two hatched patches just inside it (one carries the benchmark "BM"). Section a–a′ runs from the mouth (a) to the south-west end of the cave (a′), with "Profile a–a′" drawn below the plan.
+- **INFERENCE.** On the plan, the mouth opens to the north-east along the drip line, which agrees with the p. 71 text and not with Cohen–Israel's "faces east". I made no measurement. A bearing would need the frozen A3–A6 plan rules ([coded/plan_measurements.json](../../regional/caves_entry25/coded/plan_measurements.json) has the Cohen–Israel Plan 3 measurement), and a result chosen after seeing both figures stays exploratory.
+- **EVIDENCE, Figure 3, p. 74.** The photo is of XII/52, looking west, as already recorded. It cannot stand for XII/53A's mouth.
+- **Not found in pp. 71, 73–80:** a construction date for the central entrance wall, a foundation contact or a threshold section. The finds account (pp. 75–76) and the Timothy discussion (pp. 78–80) add nothing on the entrance.
+- **Consequence.** The "next observation" above (cross-register Figure 2 against Cohen–Israel Plan 3) is now possible from the owner's photo of Figure 2. It was not done in this pass. No regional row or rating changes.

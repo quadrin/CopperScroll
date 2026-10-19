@@ -1,0 +1,87 @@
+{
+ "item_id": "kochavi-1972",
+ "register_commit": "6fee37615e960da2c68b326b8ed9f91601fab464",
+ "register_commit_note": "First commit that adds MANIFEST.md in the full history (committed 2026-10-09T13:20:05-07:00). Pushed before the arrival: later commits on the remote build on it.",
+ "register_pushed_before_arrival": true,
+ "test_status": "test",
+ "arrived_utc": "2026-10-19T15:00:00Z",
+ "opened_by": "reader agent (blind to this item file, register.json, chain.json, plans.json and every prediction); extraction research/feature_workbench/decisions/kallai_172-173_extraction_2026-10-19.md",
+ "compared_by": "integrator (Claude), who had read this item file before the arrival and therefore did not extract",
+ "manifest_check": "pass",
+ "parts_received": [
+  "Kallai pp. 172–173 (sites 58–72), library copy, two phone photos by the owner"
+ ],
+ "parts_pending": [
+  "Stage 2 rarity coding of S1658 (Kallai site 65) and S1667 (site 66) from these pages: needs the packet builder inputs on the owner's Mac (offline at intake); pred1 and pred2 wait for it",
+  "Kallai Introduction (site 65 refers to it for the identification) and p. 171 (site 57)",
+  "Kallai sites 28, 38, 100, 115, 119 (chain links S1032-2, S1502-2, S2096-2, S2376-1, E357-1)",
+  "Gophna and Porat sites 169, 170, 190 and the S1137-2 record (chain links S845-1, S845-2, S843-2, S1137-1, S1137-2)",
+  "Bar-Adon chapter: sites 13, 61, 83, 98c and Qarn Sartaba (chain links SARTABA-1, S6040-1, S2430-1, S3961-1; registry P60-T9, P60-T2)"
+ ],
+ "intake": {
+  "files": [
+   {
+    "name": "IMG_9952.jpeg",
+    "page": "p. 172",
+    "sha256": "0eda74a48b285e66fb9566a05dad0c683c8407816940f749ab48bcb10456d2a3",
+    "bytes": 1123590
+   },
+   {
+    "name": "IMG_9953.jpeg",
+    "page": "p. 173",
+    "sha256": "91d752ab82794c7e3a6a72a82e5a019b6f7b4b7e66bd62f0b7663daca485fa17",
+    "bytes": 1190910
+   }
+  ],
+  "notes": "Sent by the owner in chat on 19 Oct 2026 18:00 Asia/Jerusalem (15:00 UTC), photographed from a library copy during the Israel trip. 1512 x 2016 px, no EXIF. Both pages fully legible (reader: no [?]). The strip at the right edge of IMG_9953 is the facing p. 172, not p. 174. Photos and the Hebrew transcription are copyright and are not committed. Asked for: pp. 172–173 and the chapters' entries for the chain models and rarity units; only pp. 172–173 came."
+ },
+ "scores": [
+  {
+   "outcome_id": "dec:bearing-or-phase-miss:not-east+undated",
+   "evidence": "Kallai p. 173 R, site 65: a water pool and remains of the roofing vault adjoin the church on its east (צמוד לכנסיה, ממזרח). p. 172 L: the Byzantine church (14 x 10.5 m) stands at the foot of the tell on its west side (לרגלי התל, בצדו המערבי). So the only pool on the pages is at the western foot of the tell, between church and tell: not east of the tell, and not in its eastern part (either sense of D-E11-EAST-SENSE). No date attaches to the pool; the periods are a site-wide sherd list. Excludes c06, c07, c09, c10.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:MARJAMA-1-kallai-pool:contradict",
+   "evidence": "Same as the decision row: Kallai places the pool W of the tell (adjoining the church at the tell's western foot), which meets the two-sided contradiction criterion 'W, S or N of the tell'. Held by the decision classes; not counted again in the chain metric.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:MARJAMA-3-pit-north:inconclusive",
+   "evidence": "Kallai p. 172 L, site 65 covers the tell and its north side: the tell is cut off from the ridge on the north by a rock-cut moat (חפיר חצוב). No cistern, pit, shaft or tomb is described in the north sector, and there is no statement that none exists. The Lapp 1966 Dhahr Mirzbaneh footnote (p. 173 R) gives no position.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S1667-1-pool-east:inconclusive",
+   "evidence": "Kallai p. 173 R, site 66 (Kh. Samiyye, 1817 1550, 400 m S of site 65) names no pool or basin. It gives remains of a water mill 300 m to the NE, with no stated reference point. No statement that there is no pool east, so the two-sided contradiction is not met; nothing registers an open basin, so confirmation is not met.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S1667-2-mouth:inconclusive",
+   "evidence": "Kallai pp. 172 L–173 R, site 65 describes the tell (buildings, the rock-cut-stepped 'bama' on the summit, retaining walls) but no pit and no tomb on it.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "reg:P60-T3:not-as-predicted",
+   "evidence": "P60-T3 follows the Kallai decision rows; the row scored is dec:bearing-or-phase-miss:not-east+undated (Kallai p. 173 R, p. 172 L). No pit or shaft north of the tell with tombs at its mouth is described (p. 172 L).",
+   "exposed": false
+  },
+  {
+   "outcome_id": "item:partial",
+   "evidence": "Only pp. 172–173 received; see parts_pending.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "item:unregistered-observation",
+   "evidence": "See unregistered_observations (Kallai pp. 172–173).",
+   "exposed": false
+  }
+ ],
+ "unregistered_observations": [
+  "Kallai does not call the site 65 pool rock-cut. The text has 'a water pool and remains of the roofing vault' (בריכת מים ושרידי קמרון הקירוי), most naturally a covered (vaulted) pool. The project's label 'Kallai's rock-cut pool' did not come from these pages; its origin should be traced. The only rock-cut features at site 65 are the summit 'bama' steps and the northern moat (p. 172 L).",
+  "Kallai pp. 172 L–173 R (site 65) does not mention a crypt or a basin inside the church. Whether his pool east of the church and Zohar's church-crypt basin at the spring (IEJ 30 p. 219, SW of the tell) are the same feature is not settled by these pages.",
+  "Kallai p. 173 R, site 65: a built aqueduct crosses Wadi Siʿ about 300 m east of an undefined 'road', standing about 3 m above the bed, and many water mills lie along the stream. Site 66: water-mill remains 300 m NE. None is dated or placed relative to the tell. The site-66 mill lies about at the 45° edge of the S1667 east sector; it is not a pool.",
+  "Kallai p. 173 R: site 65 refers to the Introduction for the identification (not received)."
+ ],
+ "notes": "The church's position at the tell's western foot was already exposed (Highlands p. 733, citing Kallai); the pool's position east of the church was not repeated in Highlands or HA 76, so the decisive fact is new. A contradiction removes only the classes this row names (c06, c07, c09, c10: the samiya-kallai and yanun-marjama assignments). The Jericho assignments (c01–c05, c08) are untouched. No identification follows (item file: exploratory)."
+}
