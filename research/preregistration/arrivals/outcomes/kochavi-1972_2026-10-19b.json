@@ -1,0 +1,190 @@
+{
+ "item_id": "kochavi-1972",
+ "register_commit": "6fee37615e960da2c68b326b8ed9f91601fab464",
+ "register_commit_note": "Same register as outcomes/kochavi-1972_2026-10-19.json. This is the second part of the arrival (partial-arrival rule, ARRIVAL_PROCEDURE §4).",
+ "register_pushed_before_arrival": true,
+ "test_status": "test",
+ "arrived_utc": "2026-10-19T15:16:00Z",
+ "opened_by": "reader agent (blind to this item file and every prediction); extraction research/feature_workbench/decisions/kallai_sites_28_38_100_115_119_extraction_2026-10-19.md; Tier-1 site 152 extracted alone to research/feature_workbench/decisions/tier1_kh_almit_kallai1972_extraction.md (commit 34a5e9a)",
+ "compared_by": "integrator (Claude), who had read this item file before the arrival and therefore did not extract",
+ "manifest_check": "pass",
+ "parts_received": [
+  "Kallai pp. 158–193 (identification list p. 158, plates pp. 159–162, gazetteer pp. 163–188, period table pp. 189–190, site lists pp. 191–193)",
+  "Gophna & Porat title page and pp. 196–197 (Introduction only)"
+ ],
+ "parts_pending": [
+  "Stage 2 rarity coding of the 18 Kallai units (S825, S1488, S1525, S1658, S1667, S1963, S2253, S2376, S2411, S2431, S2565, S2686, S2698, S2759, S2990, S798, S827, S1623): excerpts extracted (outside the repo); packets need the Highlands and Nigro inputs on the owner's Mac. pred1 and pred2 wait for it",
+  "Kallai Introduction pp. 153–157",
+  "Gophna and Porat site entries 169, 170, 190 and the S1137-2 record (chain links S845-1, S845-2, S843-2, S1137-1, S1137-2)",
+  "Bar-Adon chapter: sites 13, 61, 83, 98c and Qarn Sartaba (chain links SARTABA-1, S6040-1, S2430-1, S3961-1; registry P60-T9, P60-T2)"
+ ],
+ "intake": {
+  "files": [
+   {
+    "name": "9baca496-image.jpg",
+    "page": "Gophna & Porat pp. 196–197",
+    "sha256": "745e7b23aaab161f27791180d685a6e5ce38c9bdeff811328841a2b5148e16cb",
+    "bytes": 1368176
+   },
+   {
+    "name": "efe312fb-image.jpg",
+    "page": "Gophna & Porat title page",
+    "sha256": "71e79e6227e8959c1c91ee2dac408c63439c1e6f14a030b0c48ba9d435ca89e7",
+    "bytes": 894788
+   },
+   {
+    "name": "1b22ca8a-image.jpg",
+    "page": "pp. 192–193",
+    "sha256": "0b83b3a5f888fd63e05d0532f7064f7d030f475806699784feb680e835811059",
+    "bytes": 1093379
+   },
+   {
+    "name": "9eb9f949-image.jpg",
+    "page": "pp. 190–191",
+    "sha256": "587f536d485787696fea649ffad22c4d6e8cc3f5ed560f3269c1980071cb04ff",
+    "bytes": 1102392
+   },
+   {
+    "name": "7c559c0e-image.jpg",
+    "page": "pp. 188–189",
+    "sha256": "704a38071d02e2e18dcba05d16635b3a9fa796647dc6ebed313e540b42062359",
+    "bytes": 1065740
+   },
+   {
+    "name": "7bfab9f7-image.jpg",
+    "page": "pp. 186–187",
+    "sha256": "befb5f28784b300bbfa2cb94fe1b0341c5388f091c30465effe01504473a7def",
+    "bytes": 1319688
+   },
+   {
+    "name": "24f53260-image.jpg",
+    "page": "pp. 184–185",
+    "sha256": "62ef0a0f939f9aefd13777f3ad65044cec7834132d88cbdf4551cd8c9f69cee3",
+    "bytes": 1310769
+   },
+   {
+    "name": "325fbe0f-image.jpg",
+    "page": "pp. 182–183",
+    "sha256": "2b9c4904a34693963bcb742f5e176af7eb5395796822be3de2e2743b86d37c9f",
+    "bytes": 1247386
+   },
+   {
+    "name": "4836177b-image.jpg",
+    "page": "pp. 180–181",
+    "sha256": "14f5c046777d2358ce45c793d6f6dd5d68ebd8414f1bc5f0f9d14ac6bd6543dc",
+    "bytes": 1235756
+   },
+   {
+    "name": "516896c3-image.jpg",
+    "page": "pp. 178–179",
+    "sha256": "9e5ebe8ab47e43be6278ac75e94de63b1b7d3ce0149ebdf997ad728d9f946f73",
+    "bytes": 1339036
+   },
+   {
+    "name": "f50d0922-image.jpg",
+    "page": "pp. 174–175",
+    "sha256": "0286af108b02e66448d596a727b23f2eeb2f8e7c137b4326c4eac29510765348",
+    "bytes": 1252397
+   },
+   {
+    "name": "1877dac4-image.jpg",
+    "page": "pp. 172–173 (second copy of IMG_9952/9953)",
+    "sha256": "c93b178c20451de2b0571d91b7c1f37d6f760e1c9e48cc9e489bcfebbee81716",
+    "bytes": 1267499
+   },
+   {
+    "name": "ae86f3b6-image.jpg",
+    "page": "pp. 176–177",
+    "sha256": "121122d0cd65d16332d1c01cdc7cf4c0c48e82e2e2d60ee72ac8061ecaca93be",
+    "bytes": 1217088
+   },
+   {
+    "name": "3ef660a8-image.jpg",
+    "page": "pp. 170–171",
+    "sha256": "d66f176ca3616c367cf865813330c108fd55f94310dd4ed5811d413e0cc9bffd",
+    "bytes": 1232827
+   },
+   {
+    "name": "f1961803-image.jpg",
+    "page": "pp. 168–169",
+    "sha256": "4f2d6cbbdb9f679844e75f46b11626b8279fac944adde4bfde29878483cedaef",
+    "bytes": 1159773
+   },
+   {
+    "name": "2f94812e-image.jpg",
+    "page": "pp. 166–167",
+    "sha256": "79bd3297842846b95e9b3147f11f299ae2db0022f93992e83e3e251b6014cc3a",
+    "bytes": 1267609
+   },
+   {
+    "name": "ad0ec298-image.jpg",
+    "page": "pp. 164–165",
+    "sha256": "5acb6ee80aca114d356c9afc214e0be23ef51e52c0ed07be40851f71cca878a4",
+    "bytes": 1176453
+   },
+   {
+    "name": "3abd3d06-image.jpg",
+    "page": "pp. 162–163",
+    "sha256": "9834353b5ec96c171523bcb4b91e6770786178443165c8e94b19509ea7f1555a",
+    "bytes": 958057
+   },
+   {
+    "name": "20bfa6a5-image.jpg",
+    "page": "pp. 160–161 (plates)",
+    "sha256": "11e95becfdaa72ce6a3379a21b026816afbee8c8ce45e3984d6146052c9c2dcd",
+    "bytes": 1021038
+   },
+   {
+    "name": "11271ac7-image.jpg",
+    "page": "pp. 158–159",
+    "sha256": "a78861d39130047420492451b8ce7056a30d638fedf93ff27edb16431c48e014",
+    "bytes": 1148409
+   }
+  ],
+  "notes": "Sent by the owner in chat on 19 Oct 2026 18:16 Asia/Jerusalem (15:16 UTC), photographed from the same library copy. Copyright; not committed. The reader confirmed every unit's name and map reference against its Kallai site number (S798: about 300 m off, accepted). Verbatim excerpts are outside the repo."
+ },
+ "scores": [
+  {
+   "outcome_id": "chain:S1032-2-mouth:inconclusive",
+   "evidence": "Kallai pp. 167–168, site 28 (Tell er-Ras): bell cisterns, rock-cut caves, a rock-cut loculus tomb on the hill's east slope (photo: burial cave on the east slope) and two blocked cisterns, none placed relative to another. No phrase puts a tomb at a cistern or cave mouth; no plan.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S1502-2-mouth:inconclusive",
+   "evidence": "Kallai p. 169, site 38 (Kh. Sara): one rock-cut cistern in the ruin; no tomb or burial cave named; no plan, no absence statement.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S2376-1-pool-east:inconclusive",
+   "evidence": "Kallai p. 182, site 115 (Tell Maryam): a pool 15 x 7 m at the foot of the hill on the north slope (outside 45°–135°), and an elliptical rock-cut cistern 10 x 6 m in the centre of the 26 x 26 m fortress. No pool in the east sector and no statement that there is none, so the absence-statement contradiction is not met. No feature is dated.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:E357-1-graves-north:inconclusive",
+   "evidence": "Kallai p. 182, site 119 (Kh. ed-Duweir, 1771 1412 = 850 m due north of E357, inside 315°–45°): the tomb of Sheikh Dweir lies in the north of the ruin, built of stones taken from the ruin. It is placed in the sector, but the predicted grave must be 'not securely later than 135 CE'. Kallai gives it no date; the spolia make it later than the ruin, whose surface sherds begin in the Byzantine period. That is probable, not secure, so neither the confirm nor the contradict criterion is met with security. A natural cave used for water storage is unplaced.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S2096-2-mouth:inconclusive",
+   "evidence": "Kallai p. 179, site 100 (Kh. Kafr Nate): cisterns and caves 'in the ruin', unplaced; the tomb of Sheikh ʿAmar lies 300 m SW of the ruin, so not at a mouth. Kallai gives the tomb no date (sherds Medieval and Ottoman only), so the two-sided contradiction (record dates the only tomb as a later shrine) is not met.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "item:partial",
+   "evidence": "See parts_pending.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "item:unregistered-observation",
+   "evidence": "See unregistered_observations (Kallai pp. 158, 189–190).",
+   "exposed": false
+  }
+ ],
+ "unregistered_observations": [
+  "Kallai's period table (pp. 189–190) lists site 66 (Kh. Samiyye) under 'Roman II' and Byzantine. Site 65 (Kh. Marjame) is under the undivided 'Roman' row. The table has no legend for Roman I/II/III on these pages; the Introduction was not received.",
+  "p. 158, identifications: site 65 Kh. Marjame = Baal-shalishah (2 Kgs 4:42), rejecting the city of Ephraim; site 115 Tell Maryam = Beth-aven, 'confirmed by the survey finds'.",
+  "The period table and the entries disagree for site 42 (entry MB I, table MB II) and site 157 (entry Roman II, table Roman III).",
+  "Gophna and Porat p. 196: their team examined about 250 of about 450 mapped sites (55 per cent) in their area. This is a coverage figure for their chapter, not Kallai's."
+ ],
+ "notes": "Exposures and deviations: (1) The integrator saw the photo of pp. 186–187, which holds Tier-1 site 152 (Kh. ʿAlmit), when the owner sent it; the entry was not read, and its extraction was committed alone before this record. (2) Deviation D2: the reader excerpted sites 137, 147 and 157 in full for the rarity packets. Their caves lie at ʿEin Farʿa and Wadi er-Rawabi; ʿEin Farʿa is the head of the held Wadi Qelt gorge (phase-2 AMENDMENTS D1). The excerpts are outside the repo and the integrator has not read them. Until the owner decides whether these caves fall in the held area, their cave sentences should be withheld from any packet. (3) The reader listed the file names in research/feature_workbench/decisions/ once and opened none of them. No identification follows."
+}

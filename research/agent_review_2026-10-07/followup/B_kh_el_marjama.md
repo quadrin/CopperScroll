@@ -124,3 +124,14 @@ Before contents were inspected, the frozen arrival-register check passed (`manif
 The report mentions Kh. Marjameh near ʿEin Samiya in the Early Bronze discussion (p. 19), includes the site in subsequent settlement discussion (pp. 20 and 22), and says the survey did not cover the entire assigned area (p. 19). The complete five-page report supplies no pool location, pool construction context, ancient pool date or northern-pit/grave relation. This is a bounded documentary silence result for those pages; the survey’s incomplete coverage and its broad preliminary purpose prohibit an archaeological absence claim. No source-plan pool is available to register.
 
 Kallai 1972 pp. 172–173, sites 65–66 and any plan/key remain the precise acquisition target. The new 1968 copy does not satisfy that request or trigger a Kochavi-1972 arrival score. An eastern pool there would establish location only until independently dated; a report silent about a pool would not establish absence. No repeated open-web hunt was run.
+
+## 19 October 2026: Kallai 1972 pp. 172–173 read
+
+The owner photographed the pages in a library. A blind reader extracted them ([extraction](../../feature_workbench/decisions/kallai_172-173_extraction_2026-10-19.md)). The integrator scored them under the arrival register ([outcome](../../preregistration/arrivals/outcomes/kochavi-1972_2026-10-19.json); pp. 158–193 in [part 2](../../preregistration/arrivals/outcomes/kochavi-1972_2026-10-19b.json)).
+
+- **EVIDENCE (p. 172):** the spring ʿEin Samiyye lies south of the tell. A Byzantine church (14 × 10.5 m, mosaic floor) stands at the foot of the tell on its west side, repaired in the Crusader period. The tell is cut off from the ridge on the north by a rock-cut moat.
+- **EVIDENCE (p. 173):** a water pool, with remains of its roofing vault, adjoins the church on the east ("צמוד לכנסיה, ממזרח"; checked on the photo by the integrator). No size, construction or date is given. Kallai does not call it rock-cut and mentions no crypt.
+- **EVIDENCE (p. 173):** a built aqueduct crosses Wadi Siʿ about 300 m east of an undefined "road", about 3 m high; many water mills line the stream. At site 66, Kh. Samiyye (400 m S), there are remains of a water mill 300 m NE. Kallai's period table (p. 190) puts site 66 in "Roman II" and Byzantine.
+- **EVIDENCE (p. 158):** Kallai identifies site 65 with Baal-shalishah.
+- **INFERENCE:** Kallai's pool lies between the church and the tell, at the tell's western foot. It is west of the tell, not east. Whether it is the same basin as Zohar's church-crypt basin at the spring (IEJ 30 p. 219) is not settled.
+- **Result:** registered row `dec:bearing-or-phase-miss:not-east+undated`. It excludes classes c06, c07, c09 and c10 (the samiya-kallai and yanun-marjama assignments) for "a pool east of Koḥlit". Nothing else is excluded. North of the tell, Kallai describes no pit, shaft or tomb; that link stays inconclusive.
