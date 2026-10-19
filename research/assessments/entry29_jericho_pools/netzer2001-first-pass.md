@@ -221,3 +221,34 @@ The user authorized a targeted Fig6/Fig10 follow-up after the identity audit. No
 Rachel Bar-Nathan replied in the existing A(C)94 inquiry that she holds records, that the field notes are unorganized, and that she is willing to help; she requests a telephone call. This is a firsthand current custody lead, without a verified accession or guarantee that the requested pipe-junction drawing/level register survives. Her number is in the private reply. No file, keyed section, level definition or new measurement was attached.
 
 Ruhama Bonfil separately confirms that she has no Jericho excavation material, including publications, for the folded-plan request. Her earlier excavation-team referral remains the route to the field records. Neither response supplies the pipe’s ancient datum or changes the closed A(C)94 assessment. The next action is the owner’s call to identify and obtain the wall-junction/level records under the existing source and exposure gates; no call, message or order was made by this session.
+
+## Library copy photographed — 19 October 2026
+
+On 19 Oct 2026, 18:55 Asia/Jerusalem (15:55 UTC), the owner sent 19 phone photos of a library copy of Netzer 2001, Vol. I. They show printed pp. 102, 104 (Ill. 137 twice), 105–114, 116, 117, the inline Plan 24 (Ritual Bath A(B)64, phases I–IV; north arrow, 0–5 m scale), and Notes pp. 347–348 (Chapters 2–6). The photos are copyright and are not committed.
+
+| File | Bytes | SHA-256 |
+|---|---|---|
+| 9253ede6-image.jpg | 1033502 | 7fb2697707e1110502d970b3bd00b67a9fd5414fd1b0da5179457cea59600d08 |
+| 2dc51042-image.jpg | 1179499 | 576da18a654bd825acd348f31a9370df7ec9180ec06f20984634546a22bdaf62 |
+| 2bb52076-image.jpg | 990348 | 826fe5ba3a488c300f5780570e45f5c2f7b11fe7ececcdc2508b479447d2bbcb |
+| ca9ad7e3-image.jpg | 1099295 | ff326d0cb7b033a7bd3b97801b0db21225205c5d8a28483f08da88c97989cce6 |
+| ab00e151-image.jpg | 1134998 | ab0416454bd56bdae0f3dd94fbda04dd468e9be4411c5aa86a62ae27086b450f |
+| baf3f1f1-image.jpg | 1200551 | 41d2ec3bae5a4383ac23811c88fba555e8738b26b703ee13014fabbdf5fcbdb0 |
+| 270ab845-image.jpg | 1111631 | f422b58105d47960a5120aad0d13d0332817c5dc5569241ebb4a9b8fcf0ba1cf |
+| 349396a1-image.jpg | 1128750 | 5c479c863c8a026692b17384e32b6f4971d7f9bc747054b2ecd12f22e8955f86 |
+| 3e72e9c3-image.jpg | 1124996 | 4102d3805d0db3dae268883e8e71f18c0841c42b02f0b4ca9e38325685af9524 |
+| 80ec2bf9-image.jpg | 1127857 | a674105a59fce28d79ed17af83533d9ea8ba67cfdb2a9a7061a7575958717c8f |
+| e245808e-image.jpg | 1355294 | b81471e927069c325e1037789554c3d0941d39055a603325ce0da705545f526a |
+| 0adf52b4-image.jpg | 1452537 | 32c33ada405a4b75ed5b64491fee40f2a02bb7b4cb08c959df434f812c5ded26 |
+| 84f68902-image.jpg | 1290171 | 4f92f28f956bcd1cb6d7541f1622c33298da3a5f421348e82aeee0fecf9da6d2 |
+| c0e270c5-image.jpg | 1357826 | 282395ab2f2ed0ffbc15a97aa47d8ddb98ad77c49a108c8e0023ac16ac77d6cf |
+| b53fe0ec-image.jpg | 1295045 | 7b06390d3e146cf7033239bb07b01173a453244d432a085c4b80aac27f7d1a15 |
+| 0aa86cbf-image.jpg | 1496664 | 0cf9434c6d92fe4faf0ee16fb99af1eb40008f1c6f22f370f6957032440ee916 |
+| 14b9cfd4-image.jpg | 1066391 | d7d7206e73a4a58bb8d232ea9df5a39a610e6c832922bf1c64c059489f8550e0 |
+| 6e64a6a8-image.jpg | 1117952 | 160d9e066ac8edb41db8223cde82149e675cbd4abf13509359d85921233d735d |
+| af598786-image.jpg | 1383314 | 8ddc3730e1c7fd7cff1ff3de4f8463660311fc511f918a97efce58c5d7258fd2 |
+
+- **Same lineage.** Every photographed page is also in the supplied PDF. The photos are a second copy and add no observation. They are clearer than the scan for small labels, such as the elevations on Ill. 137 and Plan 24.
+- **Content.** The pages cover the Hasmonean Bathhouse (A(B)9, A(B)86, A(B)93, A(B)43), Pool A(B)125 (Stage 6) and Ritual Bath A(B)64. They also cover the Settling Tank A(B)217 channels. p. 116 restates that the eastern channel fed the pair of pools A(B)101 through Settling Tank A(B)99. Ch. 3 note 2 (p. 347) restates the two early pools of about 18 × 13 m. Ch. 3 note 9 records Netzer's disagreement with Garbrecht on the water supply to the two pools.
+- **Not found** on these pages: an A(B)101 east-wall aperture, a contact with A(B)171, a drain invert or a collector. No entry 29 status changes.
+- **Still missing.** The folded Plans 14, 15 and 23 are not among the photos. A library copy whose back pocket is intact is the route this record names.
