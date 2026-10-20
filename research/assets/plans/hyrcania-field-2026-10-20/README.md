@@ -67,6 +67,14 @@ The owner relayed this by message at 22:33 local time. Achia Kohn-Tavor's view, 
   - Findspot: the wadi bed (owner, 23:01). INFERENCE: floods can carry a sherd there from anywhere upstream, including the fortress slopes. So even a dated sherd from this spot would not date the tunnels.
   - The HEIC files carry the phone's location at the time of the photo, which was not the site. They are not kept in the repo.
 
+## The guide's other remarks (relayed 23:06)
+
+- **Looted tombs:** Achia identified holes visible in the landscape as Second Temple burial caves looted by Bedouin. This is an oral opinion. It agrees with the "looted necropolis at the east foot" in Haber & Gutfeld 2024, as summarised in the field list. Which holes he meant is not recorded.
+- **Cistern:** the large dark opening on the slope just below the summit in DSC08978 (right of centre) is, per Achia, one of the fortress cisterns. It is not identified with any numbered cistern in a published plan.
+- **Iron Age ruins:** Achia says unexcavated First Temple (Iron Age) ruins stand in the surrounding area. Which ruins he meant is not recorded.
+  - INFERENCE: these may be the Iron Age forts of the Buqeiʿa. BK, not checked here: Cross & Milik sounded Kh. Abu Ṭabaq, Kh. es-Samra and Kh. el-Maqari in the 1950s, and Stager surveyed the valley in the 1970s. If so, they are surveyed and sounded, not wholly unexcavated.
+  - Kh. Abu Ṭabaq (the ruin with steps into its reservoir) is already a lead for entry 1 in `claude/wanted_sources_2026-10-17.md`.
+
 ## Still needed from this visit
 
 - The camera originals.
