@@ -69,6 +69,9 @@ export default function AtlasMap(props:Props) {
   const [modelStyle,setModelStyle]=useState<"minecraft"|"smooth">(()=>{try{return typeof window!=="undefined"&&localStorage.getItem("atlas-model-style")==="smooth"?"smooth":"minecraft";}catch{return "minecraft";}});
   const [siteStyle,setSiteStyle]=useState<"minecraft"|"smooth"|null>(null);
   const rejoinWalk=useRef(false);
+  // Remains or a published reconstruction phase, chosen per traced plan.
+  const [layerChoice,setLayerChoice]=useState<Record<string,string>>({});
+  const planLayer=(plan&&layerChoice[plan.id])??plan?.layers?.[0]?.id??"remains",layerInfo=plan?.layers?.find(l=>l.id===planLayer);
   const [localFeature,setLocalFeature]=useState<string|null>(props.featureId??null);
   const [planViewport,setPlanViewport]=useState<{x:number;y:number;zoom:number}>({x:0,y:0,zoom:1});
   const restoring=useRef(false);
@@ -249,13 +252,18 @@ export default function AtlasMap(props:Props) {
     if(map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");
     if(!modelAvailable||offMap){setSiteState("unavailable");return;}
     setSiteState("loading");setSiteStyle(null);
-    const blocks=modelStyle==="minecraft"?import("./atlas-minecraft").then(m=>m.loadMinecraftBuild(plan.id,selectedPlace!.id)).catch(()=>null):Promise.resolve(null);
-    void Promise.all([import("./atlas-map-site-layer"),blocks]).then(([{createMapSiteLayer},build])=>{
+    const blocks=modelStyle==="minecraft"?import("./atlas-minecraft").then(m=>m.loadMinecraftBuild(plan.id,selectedPlace!.id,planLayer)).catch(()=>null):Promise.resolve(null);
+    const terrain=plan.terrain==="wide"?import("./atlas-minecraft").then(m=>m.loadTerrainPatch(selectedPlace!.id)).catch(()=>null):Promise.resolve(null);
+    void Promise.all([import("./atlas-map-site-layer"),blocks,terrain]).then(([{createMapSiteLayer},build,patch])=>{
       if(cancelled||mapRef.current!==map)return;
-      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build));
+      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build,{layer:planLayer,terrain:patch??undefined}));
     }).catch(()=>{if(!cancelled)setSiteState("Source model could not load.");});
     return()=>{cancelled=true;walker.current?.stop();walker.current=null;siteRuntime.current=null;if(mapRef.current===map&&map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");};
-  },[ready,plan?.id,focusId,modelAvailable,offMap,modelStyle]);
+  },[ready,plan?.id,focusId,modelAvailable,offMap,modelStyle,planLayer]);
+  function chooseLayer(id:string){
+    if(!plan||id===planLayer)return;
+    rejoinWalk.current=!!walker.current;setWalking(false);setLayerChoice(choice=>({...choice,[plan.id]:id}));
+  }
   function chooseStyle(style:"minecraft"|"smooth"){
     if(style===modelStyle)return;
     // Rebuilding the layer ends a walk; come back to eye level in the other style.
@@ -302,7 +310,7 @@ export default function AtlasMap(props:Props) {
   return <section data-walking={walking} data-site-state={siteState} data-site-plan={plan?.id??""} className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""}`} onDragOver={e=>e.preventDefault()} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":"Interactive candidate map"}>
     <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} data-basemap={basemap} data-site-labels={mapZoom>=15} data-modern-layer-count={modernLayerCount??"loading"} data-map-zoom={mapZoom.toFixed(3)} data-map-center={coordinates} aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
-    {!offMap&&modelAvailable&&(mapZoom>=15.5||walking)&&<div className="map-site-caption"><strong>{walking?"Eye-level model":"Source-based 3D site"}</strong><span>{plan?.label} · approximate alignment{siteStyle==="minecraft"?" · built in Minecraft":modelStyle==="minecraft"&&siteState==="ready"?" · no block build here":""}</span><div className="map-model-style" role="group" aria-label="Model style"><button aria-pressed={modelStyle==="minecraft"} onClick={()=>chooseStyle("minecraft")} title="The source model built block by block in a Minecraft server">Blocks</button><button aria-pressed={modelStyle==="smooth"} onClick={()=>chooseStyle("smooth")} title="The source model with smooth geometry">Smooth</button></div><button onClick={()=>setPanel("sources")}>Sources &amp; assumptions</button></div>}
+    {!offMap&&modelAvailable&&(mapZoom>=15.5||walking)&&<div className="map-site-caption"><strong>{walking?"Eye-level model":"Source-based 3D site"}</strong><span>{plan?.label} · approximate alignment{siteStyle==="minecraft"?" · built in Minecraft":modelStyle==="minecraft"&&siteState==="ready"?" · no block build here":""}</span><div className="map-model-style" role="group" aria-label="Model style"><button aria-pressed={modelStyle==="minecraft"} onClick={()=>chooseStyle("minecraft")} title="The source model built block by block in a Minecraft server">Blocks</button><button aria-pressed={modelStyle==="smooth"} onClick={()=>chooseStyle("smooth")} title="The source model with smooth geometry">Smooth</button></div>{plan?.layers&&plan.layers.length>1&&<div className="map-model-style map-model-layer" role="group" aria-label="Remains or reconstruction">{plan.layers.map(l=><button key={l.id} aria-pressed={planLayer===l.id} onClick={()=>chooseLayer(l.id)} title={l.label}>{l.kind==="observed"?"Remains":l.label.replace(/\s*\(.*$/,"").replace(/,.*$/,"")}</button>)}</div>}{layerInfo?.kind==="published-reconstruction"&&<small className="map-layer-note">{layerInfo.label}. Pale blocks with a dashed grid: drawn only by this reconstruction. Heights illustrative.</small>}<button onClick={()=>setPanel("sources")}>Sources &amp; assumptions</button></div>}
     {!offMap&&<div className="map-toolbar">
       <Tabs value={mode==="3d"?"3d":basemap==="satellite"?"satellite":"2d"} onValueChange={value=>{stopWalk();if(value!=="3d")setBasemap(value==="satellite"?"satellite":"map");onMode(value==="3d"?"3d":"2d")}} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="satellite">Satellite</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger></TabsList></Tabs>
       <div className="map-toolbar-menus">

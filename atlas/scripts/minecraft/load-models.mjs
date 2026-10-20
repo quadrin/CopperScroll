@@ -36,8 +36,9 @@ export function loadModels(){
  const terrain=json('atlas-model-terrain.json'),siteSurfaces=json('atlas-site-surfaces.json');
  const surfaces=module('atlas-site-materials.ts',{'three':Three,'./atlas-site-surfaces.json':asModule(siteSurfaces)});
  const landscape=module('atlas-model-landscape.ts',{'three':Three,'./atlas-model-terrain.json':terrain,'./atlas-site-materials':surfaces});
- const geometry=module('atlas-model-geometry.ts',{'three':Three,'three/addons/loaders/SVGLoader.js':{SVGLoader},'./atlas-model-landscape':landscape,'./atlas-site-materials':surfaces});
+ const tracedHelpers=module('atlas-traced.ts',{}),tracedPlans=json('atlas-traced-plans.json');
+ const geometry=module('atlas-model-geometry.ts',{'three':Three,'three/addons/loaders/SVGLoader.js':{SVGLoader},'./atlas-model-landscape':landscape,'./atlas-site-materials':surfaces,'./atlas-traced':tracedHelpers,'./atlas-traced-plans.json':asModule(tracedPlans)});
  // The pilot only needs MercatorCoordinate for map placement helpers, not for its geometry.
  const pilot=module('atlas-qumran-pilot.ts',{'three':Three,'maplibre-gl':{MercatorCoordinate:class{}},'./atlas-site-materials':surfaces});
- return {Three,terrain,plans:json('atlas-site-plans.json'),places:json('atlas-data.json').places,surfaces,landscape,geometry,pilot};
+ return {Three,terrain,tracedPlans,plans:json('atlas-site-plans.json'),places:json('atlas-data.json').places,surfaces,landscape,geometry,pilot};
 }

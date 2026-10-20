@@ -5,7 +5,7 @@ import * as T from 'three';
 // tools/build_site_surfaces.py); the photos guide the material character, not
 // a claim about individual blocks, cracks, weathering or ancient surface colours.
 import surfaceData from './atlas-site-surfaces.json';
-type Surface = 'masonry' | 'limestone' | 'bedrock' | 'soil' | 'plaster';
+type Surface = 'masonry' | 'limestone' | 'bedrock' | 'soil' | 'plaster' | 'restored';
 export type Masonry = 'rubble' | 'coursed' | 'ashlar' | 'mudbrick';
 type Style = {id:string;stone:string;rock:string;soil:string;plaster:string;lichen:number;courses:number;masonry:Masonry;photos:string[];masonryNote?:string};
 type PhotoSurface = {stone?:string;rock?:string;soil?:string;plaster?:string;masonry:Masonry;masonryNote:string;photos:string[];lichen?:number};
@@ -31,7 +31,8 @@ function noise(x:number,y:number,seed:number,periodX=256,periodY=256){const i=Ma
 function surfaces(kind:Surface,style:Style){
  const n=512,colour=new Uint8Array(n*n*4),relief=new Uint8Array(n*n*4);
  const fractures=Array.from({length:72},(_,i)=>[.15+hash(i,0,31)*.7,.15+hash(i,0,32)*.7]);
- const base=new T.Color(kind==='soil'?style.soil:kind==='plaster'?style.plaster:kind==='bedrock'?style.rock:style.stone).convertLinearToSRGB();
+ // Restored parts (drawn only by a published reconstruction) are a pale version of the site stone.
+ const base=(kind==='restored'?new T.Color(style.stone).lerp(new T.Color('#f4efe3'),.62):new T.Color(kind==='soil'?style.soil:kind==='plaster'?style.plaster:kind==='bedrock'?style.rock:style.stone)).convertLinearToSRGB();
  const metres=kind==='masonry'?style.courses*(style.masonry==='rubble'?12:8):kind==='soil'?3:kind==='bedrock'?5:2;
  const clamp=(v:number)=>T.MathUtils.clamp(v,0,1);
  for(let y=0;y<n;y++)for(let x=0;x<n;x++){
@@ -64,6 +65,10 @@ function surfaces(kind:Surface,style:Style){
    const crack=second-first;
    tone*=.73+strata*.28+noise(u*9,v*21,4,9,21)*.12;tone*=crack<.018?.80:1;
    h=.2+strata*.38+coarse*.25;r=.97;
+  }else if(kind==='restored'){
+   // A dashed one-metre grid reads as a drawn restoration, not as recorded masonry.
+   const gx=fract(u*2),gy=fract(v*2),line=(gx<.012||gy<.012)&&fract((gx<.012?v:u)*16)<.55;
+   tone=.97+(medium-.5)*.05;if(line)tone*=.8;h=.45+medium*.04;r=.9;
   }else if(kind==='limestone'){
    const vein=Math.abs(noise(u*20,v*20,6,20,20)-.5),pit=medium<.22?.88:1;
    tone*=pit*(vein<.012?.91:1);h=.35+coarse*.20+medium*.09;
@@ -120,7 +125,7 @@ export function cloneSiteMaterial<M extends T.Material>(material:M):M {const clo
 export function createSiteMaterials(id:string){
  const style=siteStyle(id);
  const make=(kind:Surface)=>{const t=surfaces(kind,style),m=new T.MeshStandardMaterial({map:t.map,bumpMap:t.relief,roughnessMap:t.relief,bumpScale:kind==='bedrock'?.07:kind==='soil'?.025:kind==='plaster'?.012:.032,roughness:1});m.name=`${style.id}-${kind}`;m.userData.siteSurface=kind;m.userData.siteStyle=style.id;return projectedSurface(m,t.metres,kind==='soil');};
- return {style,stone:make('masonry'),block:make('limestone'),rock:make('bedrock'),earth:make('soil'),plaster:make('plaster')};
+ return {style,stone:make('masonry'),block:make('limestone'),rock:make('bedrock'),earth:make('soil'),plaster:make('plaster'),restored:make('restored')};
 }
 
 export function chippedBlock(w:number,h:number,d:number,seed=1){
