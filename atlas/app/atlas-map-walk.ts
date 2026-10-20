@@ -7,7 +7,7 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
  const before={center:map.getCenter(),zoom:map.getZoom(),pitch:map.getPitch(),bearing:map.getBearing(),padding:map.getPadding(),elevation:map.getCenterElevation()};
  const maxZoom=map.getMaxZoom(),maxPitch=map.getMaxPitch(),fov=map.getVerticalFieldOfView(),clamped=map.getCenterClampedToGround(),canvas=map.getCanvas();
  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- const input=new WalkInput();let bearing=0,pitch=86,phase=0,viewFov=70,bobWeight=0,frame=0,previous=performance.now(),drag:{x:number;y:number;id:number}|null=null,blockedFrames=0,lastReport=0;
+ const input=new WalkInput();let bearing=0,pitch=86,phase=0,viewFov=70,bobWeight=0,frame=0,previous=performance.now(),drag:{x:number;y:number;id:number}|null=null,press:{x:number;y:number;t:number}|null=null,swings=0,blockedFrames=0,lastReport=0;
  function initial(){
   bearing=0;pitch=86;
   if(start){bearing=before.bearing;return site.local(...start);}
@@ -34,14 +34,15 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
   canvas.dataset.walkPosition=eye.toArray().map(n=>n.toFixed(3)).join(',');canvas.dataset.walkFeet=foot.toArray().map(n=>n.toFixed(3)).join(',');
   canvas.dataset.walkGrounded=String(body.grounded);canvas.dataset.walkSprint=String(body.sprinting);canvas.dataset.walkCrouch=String(body.crouched);canvas.dataset.walkBlocked=String(body.blocked);canvas.dataset.walkBlockedFrames=String(blockedFrames);canvas.dataset.walkSpeed=Math.hypot(body.velocity.x,body.velocity.z).toFixed(3);canvas.dataset.walkTriangles=String(site.collisionWorld().triangles);
   map.jumpTo({...options,padding:{top:0,bottom:0,left:0,right:0}});canvas.dataset.walkPitch=map.getPitch().toFixed(2);canvas.dataset.walkFov=viewFov.toFixed(2);
-  site.setWalker({feet:foot.toArray() as [number,number,number],bearing:angle,crouched:body.crouched,phase,moving:!reducedMotion&&body.grounded&&Math.hypot(body.velocity.x,body.velocity.z)>.1});
+  site.setWalker({feet:foot.toArray() as [number,number,number],bearing:angle,crouched:body.crouched,phase,moving:!reducedMotion&&body.grounded&&Math.hypot(body.velocity.x,body.velocity.z)>.1,swings});
   if(force||performance.now()-lastReport>100){onChange(eye.toArray() as [number,number,number]);lastReport=performance.now();}
  }
  function reset(){input.clear();const at=initial();body.spawn(new Vector3(at[0],0,at[1]));phase=0;bobWeight=0;viewFov=70;map.setVerticalFieldOfView(viewFov);apply(true);}
  const look=(dx:number,dy:number)=>{bearing+=dx*.23;pitch=Math.max(25,Math.min(145,pitch+dy*.16));apply(true);};
- const down=(e:PointerEvent)=>{if(e.button!==0||document.pointerLockElement===canvas)return;canvas.focus();canvas.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,id:e.pointerId};};
+ // A left click with the mouse captured, or a press without a drag, swings the arm.
+ const down=(e:PointerEvent)=>{if(e.button!==0)return;if(document.pointerLockElement===canvas){swings++;apply();return;}canvas.focus();canvas.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,id:e.pointerId};press={x:e.clientX,y:e.clientY,t:performance.now()};};
  const move=(e:PointerEvent)=>{if(!drag||drag.id!==e.pointerId)return;look(e.clientX-drag.x,e.clientY-drag.y);drag={x:e.clientX,y:e.clientY,id:e.pointerId};};
- const up=(e:PointerEvent)=>{drag=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);};
+ const up=(e:PointerEvent)=>{if(press&&e.type==='pointerup'&&Math.hypot(e.clientX-press.x,e.clientY-press.y)<5&&performance.now()-press.t<400){swings++;apply();}press=null;drag=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);};
  const lockedLook=(e:MouseEvent)=>{if(document.pointerLockElement===canvas)look(e.movementX,e.movementY);};
  const lock=(e:MouseEvent)=>{if(!window.matchMedia('(hover: hover)').matches||!canvas.requestPointerLock)return;e.preventDefault();void Promise.resolve(canvas.requestPointerLock()).catch(()=>{});};
  const controls=['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright','shift','control',' '];
