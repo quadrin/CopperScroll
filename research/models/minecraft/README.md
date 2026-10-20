@@ -38,7 +38,7 @@ Rounding to the block size can move an edge or a height by up to half a block. T
 | abu-saraj-iv17 | 0.25 m | 48 × 16 × 36 | 12288, -60, 0 | 401 | 11,687 | 0 | 1,379 | none: no map location; built with its roof |
 | bethesda-pools | 0.5 m | 256 × 36 × 216 | 13312, -60, 0 | 858 | 1,348,927 | 0 | 1,099 | bethesda-pools.bin.gz (6 KB) |
 | east-gate-warren | 0.5 m | 260 × 85 × 200 | 14336, -60, 0 | 1,216 | 2,759,472 | 0 | 2,042 | east-gate-warren.bin.gz (11 KB) |
-| qumran-settlement | 0.5 m | 248 × 17 × 408 | 15360, -60, 0 | 3,201 | 1,422,842 | 0 | 11,235 | qumran-settlement.bin.gz (56 KB) |
+| qumran-settlement | 0.5 m | 248 × 17 × 408 | 15360, -60, 0 | 3,174 | 1,422,484 | 0 | 11,222 | qumran-settlement.bin.gz (56 KB) |
 | qumran-settlement~ring1 | 2 m | 400 × 58 × 400 | 16384, -60, 0 | 25,754 | 3,546,029 | 0 | 37,949 | qumran-settlement~ring1.bin.gz (228 KB) |
 | qumran-settlement~ring2 | 8 m | 288 × 42 × 288 | 17408, -60, 0 | 11,110 | 754,106 | 0 | 32,757 | qumran-settlement~ring2.bin.gz (189 KB) |
 
@@ -56,7 +56,7 @@ Qumran (qumran-ilan): basin 2 and the dam proposed at point 4 are now drawn, in 
 
 ## The world save
 
-[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (12.5 MB) is the saved world, SHA-256 `4f023c1e9c5377654b1a5a90ba108b34b9281a7c1f7cfd5d2ba17cf808f9e5d2`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
+[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (12.6 MB) is the saved world, SHA-256 `adf15d085c95c8a3943f4dcf9f3ce973e00d8e313096a2a1efb7a91744cd03e9`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
 
 ## Rebuild
 
