@@ -64,7 +64,7 @@ The owner relayed this by message at 22:33 local time. Achia Kohn-Tavor's view, 
 - **Pottery:** the owner says pottery was seen at the site. He photographed one sherd that he has with him (IMG_0415–0421, iPhone, photographed after the visit).
   - It is a small wheel-made body sherd in a red-orange fabric, with grey edges and a white crust. One surface has a faint horizontal ridge.
   - It has no rim, handle, base or decoration, so it is **not datable** from photos. A plain body sherd in this fabric can belong anywhere from Hellenistic to Early Islamic times.
-  - Its findspot (tunnel fill, spoil heap or wadi bed) isn't recorded.
+  - Findspot: the wadi bed (owner, 23:01). INFERENCE: floods can carry a sherd there from anywhere upstream, including the fortress slopes. So even a dated sherd from this spot would not date the tunnels.
   - The HEIC files carry the phone's location at the time of the photo, which was not the site. They are not kept in the repo.
 
 ## Still needed from this visit
