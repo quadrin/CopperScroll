@@ -64,11 +64,11 @@ export default function AtlasMap(props:Props) {
   const walker=useRef<WalkController|null>(null);
   const [walking,setWalking]=useState(false);
   const [walkPosition,setWalkPosition]=useState<[number,number,number]>([0,1.7,0]);
-  const [placing,setPlacing]=useState(false);
-  const [dragPoint,setDragPoint]=useState<{x:number;y:number}|null>(null);
   const [dropMessage,setDropMessage]=useState("");
-  const walkerGesture=useRef<{x:number;y:number;moved:boolean}|null>(null);
-  const pointerDropped=useRef(false);
+  // "minecraft" shows the site built in a Minecraft server and read back from its save.
+  const [modelStyle,setModelStyle]=useState<"minecraft"|"smooth">(()=>{try{return typeof window!=="undefined"&&localStorage.getItem("atlas-model-style")==="smooth"?"smooth":"minecraft";}catch{return "minecraft";}});
+  const [siteStyle,setSiteStyle]=useState<"minecraft"|"smooth"|null>(null);
+  const rejoinWalk=useRef(false);
   const [localFeature,setLocalFeature]=useState<string|null>(props.featureId??null);
   const [planViewport,setPlanViewport]=useState<{x:number;y:number;zoom:number}>({x:0,y:0,zoom:1});
   const restoring=useRef(false);
@@ -248,13 +248,20 @@ export default function AtlasMap(props:Props) {
     const map=mapRef.current;if(!ready||!map)return;let cancelled=false;siteRuntime.current=null;
     if(map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");
     if(!modelAvailable||offMap){setSiteState("unavailable");return;}
-    setSiteState("loading");
-    void import("./atlas-map-site-layer").then(({createMapSiteLayer})=>{
+    setSiteState("loading");setSiteStyle(null);
+    const blocks=modelStyle==="minecraft"?import("./atlas-minecraft").then(m=>m.loadMinecraftBuild(plan.id,selectedPlace!.id)).catch(()=>null):Promise.resolve(null);
+    void Promise.all([import("./atlas-map-site-layer"),blocks]).then(([{createMapSiteLayer},build])=>{
       if(cancelled||mapRef.current!==map)return;
-      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{siteRuntime.current=runtime;setSiteState("ready");if(latest.current.representation==="walk")void enterWalk();else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message)));
+      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build));
     }).catch(()=>{if(!cancelled)setSiteState("Source model could not load.");});
     return()=>{cancelled=true;walker.current?.stop();walker.current=null;siteRuntime.current=null;if(mapRef.current===map&&map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");};
-  },[ready,plan?.id,focusId,modelAvailable,offMap]);
+  },[ready,plan?.id,focusId,modelAvailable,offMap,modelStyle]);
+  function chooseStyle(style:"minecraft"|"smooth"){
+    if(style===modelStyle)return;
+    // Rebuilding the layer ends a walk; come back to eye level in the other style.
+    rejoinWalk.current=!!walker.current;setWalking(false);setModelStyle(style);
+    try{localStorage.setItem("atlas-model-style",style);}catch{}
+  }
   useEffect(()=>{siteRuntime.current?.setFeature(localFeature);},[localFeature,siteState]);
 
   useEffect(()=>{
@@ -271,16 +278,6 @@ export default function AtlasMap(props:Props) {
     if(walker.current)stopWalk();
     const {startMapWalk}=await import("./atlas-map-walk");if(mapRef.current!==map||siteRuntime.current!==site)return;
     setPanel(null);setDropMessage("");setWalking(true);try{walker.current=startMapWalk(map,site,setWalkPosition,at);}catch(error){setWalking(false);setDropMessage(error instanceof Error?error.message:"This spot has no clear standing space.");}
-  }
-  function dropWalker(e:React.PointerEvent<HTMLButtonElement>){
-    const gesture=walkerGesture.current;walkerGesture.current=null;setPlacing(false);setDragPoint(null);if(!gesture)return;
-    pointerDropped.current=gesture.moved;
-    if(!gesture.moved)return;
-    const map=mapRef.current,site=siteRuntime.current,rect=container.current?.getBoundingClientRect();if(!map||!site||!rect)return;
-    if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)return;
-    const at=map.unproject([e.clientX-rect.left,e.clientY-rect.top]),local=site.local(at.lng,at.lat);
-    if(Math.hypot(...local)>Math.max(site.span*1.5,50)){setDropMessage("Drop the person on the selected site’s model, or tap the person to enter at its edge.");return;}
-    void enterWalk([at.lng,at.lat]);
   }
 
   function mapPadding(map:LibreMap){
@@ -305,7 +302,7 @@ export default function AtlasMap(props:Props) {
   return <section data-walking={walking} data-site-state={siteState} data-site-plan={plan?.id??""} className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""}`} onDragOver={e=>e.preventDefault()} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":"Interactive candidate map"}>
     <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} data-basemap={basemap} data-site-labels={mapZoom>=15} data-modern-layer-count={modernLayerCount??"loading"} data-map-zoom={mapZoom.toFixed(3)} data-map-center={coordinates} aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
-    {!offMap&&modelAvailable&&mapZoom>=15.5&&<div className="map-site-caption"><strong>{walking?"Eye-level model":"Source-based 3D site"}</strong><span>{plan?.label} · approximate alignment</span><button onClick={()=>setPanel("sources")}>Sources &amp; assumptions</button></div>}
+    {!offMap&&modelAvailable&&(mapZoom>=15.5||walking)&&<div className="map-site-caption"><strong>{walking?"Eye-level model":"Source-based 3D site"}</strong><span>{plan?.label} · approximate alignment{siteStyle==="minecraft"?" · built in Minecraft":modelStyle==="minecraft"&&siteState==="ready"?" · no block build here":""}</span><div className="map-model-style" role="group" aria-label="Model style"><button aria-pressed={modelStyle==="minecraft"} onClick={()=>chooseStyle("minecraft")} title="The source model built block by block in a Minecraft server">Blocks</button><button aria-pressed={modelStyle==="smooth"} onClick={()=>chooseStyle("smooth")} title="The source model with smooth geometry">Smooth</button></div><button onClick={()=>setPanel("sources")}>Sources &amp; assumptions</button></div>}
     {!offMap&&<div className="map-toolbar">
       <Tabs value={mode==="3d"?"3d":basemap==="satellite"?"satellite":"2d"} onValueChange={value=>{stopWalk();if(value!=="3d")setBasemap(value==="satellite"?"satellite":"map");onMode(value==="3d"?"3d":"2d")}} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="satellite">Satellite</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger></TabsList></Tabs>
       <div className="map-toolbar-menus">
@@ -326,9 +323,7 @@ export default function AtlasMap(props:Props) {
       </div></details></div>
     </div>}
     {!offMap&&!walking&&<div className="zoom-controls"><button disabled={!ready} className="tool-button" aria-label="Zoom in" onClick={()=>mapRef.current?.zoomIn()}><Plus size={18}/></button><button disabled={!ready} className="tool-button" aria-label="Zoom out" onClick={()=>mapRef.current?.zoomOut()}><Minus size={18}/></button></div>}
-    {!offMap&&<button className={`map-person ${walking?"active":""}`} aria-label={walking?"Back to map":"Walk around this site"} aria-pressed={walking} title={walking?"Return to the map":"Drag onto the site, or tap to enter eye level"} disabled={!ready} onPointerDown={e=>{walkerGesture.current={x:e.clientX,y:e.clientY,moved:false};pointerDropped.current=false;e.currentTarget.setPointerCapture(e.pointerId);}} onPointerMove={e=>{const g=walkerGesture.current;if(g&&Math.hypot(e.clientX-g.x,e.clientY-g.y)>8){g.moved=true;setPlacing(true);const r=container.current?.getBoundingClientRect();if(r)setDragPoint({x:e.clientX-r.left,y:e.clientY-r.top});}}} onPointerUp={dropWalker} onPointerCancel={()=>{walkerGesture.current=null;setPlacing(false);setDragPoint(null)}} onClick={()=>{if(pointerDropped.current){pointerDropped.current=false;return;}if(walking)stopWalk();else void enterWalk();}}><WalkingPerson/><span>{walking?"Exit":"Walk"}</span></button>}
-    {placing&&dragPoint&&<div className="map-person-ghost" aria-hidden="true" style={{left:dragPoint.x,top:dragPoint.y}}><WalkingPerson size={38}/></div>}
-    {placing&&<div className="map-drop-hint" role="status">Drop on the selected site to look around</div>}
+    {!offMap&&<button className={`map-person ${walking?"active":""}`} aria-label={walking?"Back to map":"Walk around this site"} aria-pressed={walking} title={walking?"Click to return to the map":"Click to enter the 3D site at eye level"} disabled={!ready} onClick={()=>{if(walking)stopWalk();else void enterWalk();}}><WalkingPerson/><span>{walking?"Exit":"Walk"}</span></button>}
     {dropMessage&&!offMap&&<div className="map-drop-hint" role="status">{dropMessage}<button aria-label="Dismiss walking message" onClick={()=>setDropMessage("")}><X size={14}/></button></div>}
     {walking&&<WalkReferences key={focusId??"none"} placeId={focusId}/>}
     {walking&&<div className="map-walk-controls" aria-label="Walk controls">
