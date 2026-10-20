@@ -37,6 +37,7 @@ Kh. el-Marjama meets only one condition (graves to the north), but the brief nam
 The relationships workbench has 40 retained combinations. All 40 are mapped:
 - 28 unknown combinations belong to six surviving assignments, held by the Tell es-Sultan, Kh. el-Marjama and Janoaḥ models.
 - 12 contradicted combinations belong to the 1898 reservoir and the church-crypt basin. They are kept as contradicted branches.
+- 19 October 2026: Kallai 1972 pp. 172–173 put Kallai's pool west of the Marjama tell. The eight combinations of `samiya-kallai` (Kh. el-Marjama model) and `yanun-marjama-anchor` (Janoaḥ model) are now contradicted too. 20 unknown combinations remain, in four assignments (three Tell es-Sultan, one Janoaḥ). The Kh. el-Marjama model keeps its other next links (MARJAMA-2, MARJAMA-3).
 
 ### The four named chains
 
@@ -92,7 +93,7 @@ Results:
 
 - **Construction dates and accessible-use dates** for every assigned pool, pit and grave group. The sources give typology, relative order or first photographs, not dated use.
 - **The strip just north of Tell es-Sultan.** It was never searched and is built over. Photographs can show where openings were, not when they were open.
-- **Kallai's pool at ʿEin Samiya.** Its pages are unread, so the pool has no position and no date.
+- **Kallai's pool at ʿEin Samiya.** Until 19 October 2026 its pages were unread. Kallai pp. 172–173 now put it against the east side of the church at the tell's western foot, so west of the tell. It still has no date.
 - **The regional denominator.** The rarity count left m ≫ k, so a chain for one model gives no discrimination against the others.
 - **Unseen tests.** None exists yet. A next link becomes one only if its prediction is registered before its record is opened. Links on records already inspected are exploratory; the checker warns on them.
 

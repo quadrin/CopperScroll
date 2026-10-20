@@ -84,9 +84,23 @@
       "inspection": "not_inspected"
     },
     {
+      "id": "decisions-kallai-pages",
+      "title": "Kallai 1972 pp. 172–173, blind extraction",
+      "citation": "Kallai, in Kochavi (ed.) 1972, p. 172 (site 65: spring south of the tell; Byzantine church at the foot of the tell on its west side; rock-cut moat on the north) and p. 173 (water pool with remains of its roofing vault, adjoining the church on the east; site 66). Extracted 19 October 2026 from the owner’s photographs of a library copy; the photographs are not in the repository.",
+      "repo_path": "research/feature_workbench/decisions/kallai_172-173_extraction_2026-10-19.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "decisions-kallai-outcome",
+      "title": "Arrival outcome record, Kochavi 1972",
+      "citation": "Scored row dec:bearing-or-phase-miss:not-east+undated; register commit 6fee37615e960da2c68b326b8ed9f91601fab464; arrived 19 October 2026; part 2 (pp. 158–193) in kochavi-1972_2026-10-19b.json",
+      "repo_path": "research/preregistration/arrivals/outcomes/kochavi-1972_2026-10-19.json",
+      "inspection": "derived"
+    },
+    {
       "id": "decisions-kallai-unread",
-      "title": "Uninspected Kallai pool pages",
-      "citation": "Kallai, Survey of the Land of Benjamin and Mt. Ephraim, in Kochavi (ed.) 1972, pp.153–196; target pp.172–173, sites 65–66, title leaf and relevant plans/captions",
+      "title": "Kallai chapter: parts still unread",
+      "citation": "Kallai, Survey of the Land of Benjamin and Mt. Ephraim, in Kochavi (ed.) 1972: the Introduction, pp. 153–157 (site 65 refers to it for the identification), was not received. Pages 158–193, with pp. 172–173 and sites 65–66, were read on 19 October 2026 (decisions-kallai-pages).",
       "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
       "inspection": "not_inspected",
       "url": "https://www.nli.org.il/he/books/NNL_ALEPH990019622650205171/NLI"
@@ -94,7 +108,7 @@
     {
       "id": "decisions-marjama-review",
       "title": "Kh. el-Marjama source and access review",
-      "citation": "B follow-up: supplied HA 76 (1981) p.19 inspected; no pool/bearing/date; Kallai 1972 pp.172–173 remain unread after the 115-document audit",
+      "citation": "B follow-up: supplied HA 76 (1981) p.19 inspected; no pool/bearing/date; Kallai 1972 pp.172–173 were unread after the 115-document audit (8 October) and were read on 19 October 2026 (last section of the note)",
       "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
       "inspection": "derived"
     },
@@ -452,47 +466,48 @@
         "samiya-crypt-basin"
       ],
       "source_ids": [
+        "decisions-kallai-pages",
+        "decisions-kallai-outcome",
         "decisions-kallai-unread",
         "decisions-marjama-review",
         "decisions-active"
       ],
       "current_evidence": {
-        "status": "unknown",
-        "detail": "Kallai1972 pp.172–173 remain unread. The inspected HA76 p.19 describes settlement work and no pool/bearing/date; the separate church-crypt basin is southwest of the tell and does not locate Kallai's feature.",
+        "status": "contradicted",
+        "detail": "Outcome recorded 19 October 2026: bearing-or-phase-miss, row not-east+undated. EVIDENCE: Kallai 1972 p. 172 puts the Byzantine church at the foot of the tell on its west side; p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. Kallai gives no size, construction or date for the pool, does not call it rock-cut and mentions no crypt. INFERENCE: the pool is at the western foot of the tell, not east of it. This excludes only the assignments that use Kallai’s pool (Koḥlit classes c06, c07, c09 and c10). It does not exclude the Marjama area, other pools or the Jericho classes. Whether this pool and Zohar’s church-crypt basin (IEJ 30 p. 219) are one feature is not settled.",
         "exposure": "already_inspected"
       },
       "request": {
         "status": "not_requested",
-        "scope": "No targeted Kallai original-page request is recorded in the reviewed follow-up; the bounded public access pass is closed.",
+        "scope": "No request was sent for these pages. The owner photographed Kallai pp. 158–193 in a library on 19 October 2026.",
         "delivery": null,
         "reply": null,
         "source_ids": [
-          "decisions-marjama-review"
+          "decisions-kallai-outcome"
         ]
       },
       "record_needed": [
-        "Kallai1972 pp.172–173, title leaf and sites65–66 context",
-        "Relevant plan/caption identifying the rock-cut pool independently of the crypt basin",
-        "Location/bearing relative to the tell in the source's reference frame",
-        "Pool construction/use evidence, with the basis and uncertainty of any date"
+        "None for this claim: the bearing miss is recorded (19 October 2026).",
+        "Outside this claim: a plan or survey that puts Kallai’s pool and Zohar’s church-crypt basin in one frame. Their identity is not settled.",
+        "Outside this claim: a feature-specific date for the pool. Kallai gives none."
       ],
       "access": {
-        "status": "original_not_obtained",
-        "route": "Exact volume through a supplied copy or library scan",
-        "detail": "Known NLI/CMHL routes have an access blocker recorded; no renewed broad hunt, purchase or request is scheduled.",
+        "status": "pages_obtained",
+        "route": "Owner’s photographs of a library copy, 19 October 2026",
+        "detail": "Pages 158–193 were photographed and read blind; pp. 172–173 are two photographs. The photographs are copyright and are not in the repository. The Introduction (pp. 153–157) was not received.",
         "custody_verified": false
       },
       "effort": {
         "level": "bounded_original_review",
         "detail": "Authenticate a finite original-page set and its plans/captions; dating may still require a later feature-specific field record."
       },
-      "next_action": "Keep a pool identity/bearing/date extraction record ready for the exact original pages; retain the unlocated feature as unknown.",
+      "next_action": "None for the bearing. A new plan, survey or dated context for this pool would be a new observation; it does not reopen this recorded row.",
       "freeze": {
-        "status": "not_frozen",
-        "commit": null,
-        "spec_path": null,
+        "status": "frozen_in_arrival_register",
+        "commit": "6fee37615e960da2c68b326b8ed9f91601fab464",
+        "spec_path": "research/preregistration/arrivals/items/kochavi-1972.md",
         "unused_status": "unverified",
-        "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+        "detail": "The arrival register froze the Kallai rows on 9 October 2026 (commit 6fee376), before the pages arrived, and the outcome record scores them as a test. This queue does not certify an unused observation: the church position was already exposed (Highlands p. 733), but the pool position east of the church was new."
       },
       "outcomes": [
         {
@@ -525,7 +540,7 @@
             "All broader geographic claims"
           ],
           "claim_scope": "Kallai's particular rock-cut pool assigned to the fixed east-of-Koḥlit branch; not the whole Marjama hypothesis.",
-          "recorded": false
+          "recorded": true
         },
         {
           "id": "identity-only",
@@ -559,7 +574,77 @@
           "recorded": false
         }
       ],
-      "result_id": "decisions-kallai-pool-plan"
+      "result_id": "decisions-kallai-pool-plan",
+      "recorded_outcome": {
+        "outcome_id": "bearing-or-phase-miss",
+        "row_id": "bearing-or-phase-miss:not-east+undated",
+        "register_row_id": "dec:bearing-or-phase-miss:not-east+undated",
+        "label": "Pool not east of the tell; no feature-specific date",
+        "recorded_utc": "2026-10-19",
+        "records": [
+          "research/preregistration/arrivals/outcomes/kochavi-1972_2026-10-19.json",
+          "research/feature_workbench/decisions/kallai_172-173_extraction_2026-10-19.md",
+          "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md"
+        ],
+        "observation_ids": [
+          "relationships-kallai-location"
+        ],
+        "excluded_classes": {
+          "kohlit": [
+            "kohlit-c06",
+            "kohlit-c07",
+            "kohlit-c09",
+            "kohlit-c10"
+          ]
+        },
+        "claim_scope": "A pool east of Koḥlit, in the assignments that use Kallai’s pool (samiya-kallai and yanun-marjama-anchor) only. Not the Marjama area, not other pools, not the Jericho assignments.",
+        "note": "The planning outcomes of 8 October call this feature “Kallai’s rock-cut pool”. Kallai’s pages do not call it rock-cut; the planning text is kept as written."
+      },
+      "history": [
+        {
+          "as_of_utc": "2026-10-12",
+          "note": "State before Kallai 1972 pp. 172–173 were read, kept verbatim.",
+          "source_ids": [
+            "decisions-kallai-unread",
+            "decisions-marjama-review",
+            "decisions-active"
+          ],
+          "current_evidence": {
+            "status": "unknown",
+            "detail": "Kallai1972 pp.172–173 remain unread. The inspected HA76 p.19 describes settlement work and no pool/bearing/date; the separate church-crypt basin is southwest of the tell and does not locate Kallai's feature.",
+            "exposure": "already_inspected"
+          },
+          "request": {
+            "status": "not_requested",
+            "scope": "No targeted Kallai original-page request is recorded in the reviewed follow-up; the bounded public access pass is closed.",
+            "delivery": null,
+            "reply": null,
+            "source_ids": [
+              "decisions-marjama-review"
+            ]
+          },
+          "record_needed": [
+            "Kallai1972 pp.172–173, title leaf and sites65–66 context",
+            "Relevant plan/caption identifying the rock-cut pool independently of the crypt basin",
+            "Location/bearing relative to the tell in the source's reference frame",
+            "Pool construction/use evidence, with the basis and uncertainty of any date"
+          ],
+          "access": {
+            "status": "original_not_obtained",
+            "route": "Exact volume through a supplied copy or library scan",
+            "detail": "Known NLI/CMHL routes have an access blocker recorded; no renewed broad hunt, purchase or request is scheduled.",
+            "custody_verified": false
+          },
+          "next_action": "Keep a pool identity/bearing/date extraction record ready for the exact original pages; retain the unlocated feature as unknown.",
+          "freeze": {
+            "status": "not_frozen",
+            "commit": null,
+            "spec_path": null,
+            "unused_status": "unverified",
+            "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+          }
+        }
+      ]
     },
     {
       "id": "decisions-kenyon-section",

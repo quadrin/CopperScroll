@@ -113,6 +113,26 @@ class RealQueueTests(unittest.TestCase):
         for item in kohlit["excluded_models"]:
             self.assertTrue(item["contradicted_predicates"])
 
+    def test_recorded_outcome_keeps_planned_class_names(self):
+        # Kallai pp. 172-173 (19 October 2026): the recorded row excludes the
+        # four classes that use Kallai's pool. The other classes keep their names.
+        kohlit = self.families["kohlit"]
+        self.assertEqual([c["id"] for c in kohlit["classes"]],
+                         ["kohlit-c01", "kohlit-c02", "kohlit-c03", "kohlit-c04", "kohlit-c05", "kohlit-c08"])
+        gone = {item["class_id"]: item for item in kohlit["recorded_exclusions"]}
+        self.assertEqual(sorted(gone), ["kohlit-c06", "kohlit-c07", "kohlit-c09", "kohlit-c10"])
+        excluded = {item["id"] for item in kohlit["excluded_models"]}
+        for item in gone.values():
+            self.assertEqual(item["row_ids"], ["bearing-or-phase-miss:not-east+undated"])
+            self.assertTrue(set(item["members"]) <= excluded)
+        kallai = next(item for item in self.result["queue_rank"] if item["task_id"] == "decisions-kallai-pool")
+        self.assertEqual(kallai["rank_key"]["all_separated_pairs"], 0)
+        rows = {row["id"]: row for row in self.table["decisions-kallai-pool"]["outcomes"]}
+        self.assertIs(rows["bearing-or-phase-miss:not-east+undated"]["recorded"], True)
+        self.assertEqual(sum(1 for row in rows.values() if row.get("recorded")), 1)
+        self.assertEqual(self.result["recorded_outcomes"][0]["excluded_classes"],
+                         {"kohlit": ["kohlit-c06", "kohlit-c07", "kohlit-c09", "kohlit-c10"]})
+
     def test_distinct_classes_have_distinct_predictions(self):
         for fid, per in self.search.items():
             self.assertEqual(per["class_pairs_no_record_separates"], [], fid)
@@ -236,12 +256,35 @@ class DeterminismAndLimitsTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "map onto exactly"):
             disc.analyse(REPO, copy.deepcopy(PLANS), spec)
 
+    def test_recorded_outcome_must_agree_with_current_evidence(self):
+        plans = copy.deepcopy(PLANS)
+        kallai = next(t for t in plans["tasks"] if t["id"] == "decisions-kallai-pool")
+        kallai["recorded_outcome"]["excluded_classes"] = {"kohlit": ["kohlit-c06"]}
+        with self.assertRaisesRegex(ValueError, "declares excluded classes"):
+            disc.analyse(REPO, plans, copy.deepcopy(SPEC))
+        plans = copy.deepcopy(PLANS)
+        kallai = next(t for t in plans["tasks"] if t["id"] == "decisions-kallai-pool")
+        kallai["recorded_outcome"]["row_id"] = "identity-only:east+undated"
+        with self.assertRaisesRegex(ValueError, "names no refined row"):
+            disc.analyse(REPO, plans, copy.deepcopy(SPEC))
+        plans = copy.deepcopy(PLANS)
+        kallai = next(t for t in plans["tasks"] if t["id"] == "decisions-kallai-pool")
+        kallai["recorded_outcome"]["observation_ids"] = []
+        with self.assertRaisesRegex(ValueError, "matches no model check"):
+            disc.analyse(REPO, plans, copy.deepcopy(SPEC))
+
     def test_build_includes_discrimination_without_changing_task_evidence(self):
         snapshot = evaluator.build(REPO)
         self.assertIn("discrimination", snapshot["data"])
         self.assertEqual(snapshot["data"]["discrimination"]["mode"], "planning_only")
         self.assertEqual(snapshot["data"]["tasks"], PLANS["tasks"])
-        self.assertTrue(all(result["status"] == "unknown" for result in snapshot["results"]))
+        # Each result carries its task's recorded evidence; the search changes none.
+        tasks = {task["result_id"]: task for task in PLANS["tasks"]}
+        for result in snapshot["results"]:
+            task = tasks[result["id"]]
+            self.assertEqual(result["status"], task["current_evidence"]["status"])
+            if "recorded_outcome" not in task:
+                self.assertEqual(result["status"], "unknown")
         source_ids = [source["id"] for source in snapshot["sources"]]
         self.assertEqual(len(source_ids), len(set(source_ids)))
         self.assertTrue(all(source_id.startswith("decisions-") for source_id in source_ids))

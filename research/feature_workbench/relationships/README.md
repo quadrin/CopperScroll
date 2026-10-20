@@ -17,14 +17,25 @@ established by the Scroll or by this implementation. A date is tested only when
 construction or accessible use is actually constrained; an undated older feature
 does not receive an invented survival date.
 
-Eight explicit assignments produce 40 permitted combinations. Twelve fail a
+Eight explicit assignments produce 40 permitted combinations. Twenty fail a
 specific assigned-feature requirement: the present reservoir was built in 1898,
-or the named crypt-basin/spring crosswalk is west/southwest of the Marjama tell.
-The other 28 remain unknown. These failures do not exclude every pool at either
-site. The historical irregular basin and modern reservoir remain distinct;
-Kallai’s unlocated pool remains unknown. NS1, D9 and the north-slope quarry pits
-retain separate identities. A burial at D9’s shaft base does not establish tombs
-at a pit mouth.
+the named crypt-basin/spring crosswalk is west/southwest of the Marjama tell, or
+Kallai’s pool is west of the Marjama tell. The other 20 remain unknown. These
+failures do not exclude every pool at either site. The historical irregular
+basin and modern reservoir remain distinct.
+
+Kallai’s pool (19 October 2026). Until then Kallai 1972 pp. 172–173 were
+unread and the pool was unlocated. Its eight branches were unknown, and the
+pilot had 12 contradicted and 28 unknown combinations. EVIDENCE: p. 173 puts a water pool, with remains of
+its roofing vault, against the church on its east side; p. 172 puts the
+Byzantine church at the foot of the tell on its west side. INFERENCE: the pool
+is at the western foot of the tell, not east of it. The east-of-anchor check
+now fails only for `samiya-kallai` and `yanun-marjama-anchor`. The pool stays
+undated, Kallai does not call it rock-cut, and its identity with Zohar’s
+church-crypt basin (IEJ 30 p. 219) is not settled.
+
+NS1, D9 and the north-slope quarry pits retain separate identities. A burial at
+D9’s shaft base does not establish tombs at a pit mouth.
 
 The quarry/grave diagnostic separately rejects same-phase construction: Kenyon’s
 later pits truncate earlier graves. That relative order does not by itself reject

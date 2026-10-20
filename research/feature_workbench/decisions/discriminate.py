@@ -5,11 +5,18 @@ consequence of that outcome contradicts one of its required predicates. The
 search is exact over the seven record dependencies. It computes no probability,
 likelihood, prior, expected value or information gain. Effort and access are the
 categories recorded in plans.json; they are listed, never weighted or summed.
+
+A task can carry a recorded outcome (plans.json ``recorded_outcome``): an outcome
+row that an obtained record actually showed. Classes are formed before recorded
+outcomes are applied, so class names stay the names used when the rows were
+planned and registered. The classes that a recorded row excludes then leave the
+search. Current evidence and the recorded row must agree on those classes.
 """
 
 from __future__ import annotations
 
 import argparse
+import copy
 import importlib.util
 import itertools
 import json
@@ -131,9 +138,14 @@ def reachable_survivor_sets(class_ids: list[str], row_survivors: dict[str, list[
 # Model families
 # ---------------------------------------------------------------------------
 
-def _kohlit_models(snapshot: dict) -> tuple[list[dict], list[dict]]:
+def _kohlit_models(snapshot: dict) -> tuple[list[dict], list[dict], list[dict]]:
+    """Return surviving models, excluded-model summaries and the full excluded models.
+
+    The full excluded models keep their checks, so a recorded outcome can be
+    matched to the contradiction it caused.
+    """
     results = {result["id"]: result for result in snapshot["results"]}
-    models, excluded = [], []
+    models, excluded, excluded_full = [], [], []
     for branch in snapshot["data"]["branches"]:
         result = results[branch["result_id"]]
         checks = [
@@ -143,6 +155,7 @@ def _kohlit_models(snapshot: dict) -> tuple[list[dict], list[dict]]:
                 "object": check["value"]["resolved_object"],
                 "required": check["value"]["required"],
                 "status": check["status"],
+                "observation_ids": list(check["value"].get("observation_ids", [])),
             }
             for check in result["checks"]
         ]
@@ -160,9 +173,10 @@ def _kohlit_models(snapshot: dict) -> tuple[list[dict], list[dict]]:
                 "dims": model["dims"],
                 "contradicted_predicates": sorted(c["predicate"] for c in checks if c["status"] == "contradicted"),
             })
+            excluded_full.append(model)
         else:
             models.append(model)
-    return models, excluded
+    return models, excluded, excluded_full
 
 
 def _entry25_models(snapshot: dict, query_id: str) -> tuple[list[dict], list[dict]]:
@@ -231,6 +245,64 @@ def survives(model: dict, effects: list[dict]) -> bool:
         if status == "contradicted":
             return False
     return True
+
+
+# ---------------------------------------------------------------------------
+# Recorded outcomes
+# ---------------------------------------------------------------------------
+
+def _recorded_rows(tasks: dict, rows: dict[str, list[dict]]) -> dict[str, dict]:
+    """The refined row that each task's recorded outcome names."""
+    out = {}
+    for task_id in sorted(tasks):
+        record = tasks[task_id].get("recorded_outcome")
+        if record is None:
+            continue
+        row = next((item for item in rows[task_id] if item["id"] == record["row_id"]), None)
+        if row is None or row["plans_outcome_id"] != record["outcome_id"]:
+            raise ValueError(f"Recorded outcome of {task_id} names no refined row of outcome {record['outcome_id']}")
+        out[task_id] = {"task_id": task_id, "row": row, "record": record}
+    return out
+
+
+def _conjunction(statuses: list[str]) -> str:
+    if "contradicted" in statuses:
+        return "contradicted"
+    if "mixed" in statuses:
+        return "mixed"
+    return "unknown" if not statuses or "unknown" in statuses else "compatible"
+
+
+def _recorded_exclusions(families: dict[str, dict], recorded: dict[str, dict]) -> dict[str, list[dict]]:
+    """Excluded models whose every contradiction comes from a recorded outcome.
+
+    Each returned model has those checks set back to unknown, their state before
+    the record. Classes are formed with these models, so recorded outcomes keep
+    the planned class names. A model with any other contradiction stays outside.
+    """
+    effects = [(item["task_id"], effect) for item in recorded.values()
+               for effect in item["row"]["effects"] if effect.get("status") == "contradicted"]
+    observations = {item["task_id"]: set(item["record"].get("observation_ids", [])) for item in recorded.values()}
+    out: dict[str, list[dict]] = {fid: [] for fid in families}
+    for fid, family in families.items():
+        for model in family.get("excluded_full", []):
+            restored, by_tasks, explained = copy.deepcopy(model), set(), True
+            for check in restored["checks"]:
+                if not check["required"] or check["status"] != "contradicted":
+                    continue
+                cause = set(check.get("observation_ids", []))
+                hits = {task_id for task_id, effect in effects
+                        if _effect_matches(effect, model, check) and cause and cause <= observations[task_id]}
+                if not hits:
+                    explained = False
+                    break
+                check["status"] = "unknown"
+                by_tasks |= hits
+            if explained and by_tasks:
+                restored["status"] = _conjunction([c["status"] for c in restored["checks"] if c["required"]])
+                restored["recorded_by"] = sorted(by_tasks)
+                out[fid].append(restored)
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -351,7 +423,11 @@ def _letter_rows(spec: dict, observation: dict) -> list[dict]:
 # Validation
 # ---------------------------------------------------------------------------
 
-def validate(spec: dict, plans: dict, repo_root: Path, families: dict[str, dict], rows: dict[str, list[dict]]) -> None:
+def validate(spec: dict, plans: dict, repo_root: Path, families: dict[str, dict], rows: dict[str, list[dict]],
+             restored: dict[str, list[dict]] | None = None) -> None:
+    # The planned roster: surviving models plus models excluded only by a recorded outcome.
+    restored = restored or {}
+    roster = {fid: family["models"] + restored.get(fid, []) for fid, family in families.items()}
     if spec.get("mode") != "planning_only":
         raise ValueError("Discrimination must be planning_only")
     plan_sources = {source["id"] for source in plans["sources"]}
@@ -403,7 +479,7 @@ def validate(spec: dict, plans: dict, repo_root: Path, families: dict[str, dict]
 
     strings = {string["id"] for string in spec["letter_strings"]["strings"]}
     for dependency in spec["letter_strings"]["string_dependencies"]:
-        readings = {model["dims"].get("reading") for model in families[dependency["family"]]["models"]}
+        readings = {model["dims"].get("reading") for model in roster[dependency["family"]]}
         if dependency["reading"] not in readings or not set(dependency["requires_any_of"]) <= strings:
             raise ValueError(f"String dependency refers to an unknown reading or string: {dependency['reading']}")
 
@@ -412,7 +488,7 @@ def validate(spec: dict, plans: dict, repo_root: Path, families: dict[str, dict]
         declared = [effect for component in observation.get("components", []) for value in component["values"] for effect in value["effects"]]
         declared += [effect for row in observation.get("rows", {}).values() for effect in row["effects"]]
         for effect in declared:
-            models = families[effect["family"]]["models"]
+            models = roster[effect["family"]]
             if not any(_effect_matches(effect, model, check) for model in models for check in model["checks"]):
                 raise ValueError(f"Effect in {observation['task_id']} matches no model check: {effect}")
 
@@ -458,8 +534,9 @@ def analyse(repo_root: Path = DEFAULT_REPO, plans: dict | None = None, spec: dic
 
     families: dict[str, dict] = {}
     for family in spec["families"]:
+        excluded_full: list[dict] = []
         if family["kind"] == "relationships":
-            models, excluded = _kohlit_models(relationships)
+            models, excluded, excluded_full = _kohlit_models(relationships)
         elif family["kind"] == "inventory":
             models, excluded = _entry25_models(inventory, family["query_id"])
         elif family["kind"] == "letter_strings":
@@ -468,7 +545,8 @@ def analyse(repo_root: Path = DEFAULT_REPO, plans: dict | None = None, spec: dic
             models, excluded = [_single_branch_model(family)], []
         else:
             raise ValueError(f"Unknown family kind {family['kind']}")
-        families[family["id"]] = {**family, "models": sorted(models, key=lambda m: m["id"]), "excluded": sorted(excluded, key=lambda m: m["id"])}
+        families[family["id"]] = {**family, "models": sorted(models, key=lambda m: m["id"]), "excluded": sorted(excluded, key=lambda m: m["id"]),
+                                  "excluded_full": sorted(excluded_full, key=lambda m: m["id"])}
     family_ids = [family["id"] for family in spec["families"]]
 
     rows: dict[str, list[dict]] = {}
@@ -485,7 +563,11 @@ def analyse(repo_root: Path = DEFAULT_REPO, plans: dict | None = None, spec: dic
             rows[task_id] = _plans_rows(tasks[task_id], observation)
         else:
             raise ValueError(f"Unknown observation kind {observation['kind']}")
-    validate(spec, plans, repo_root, families, rows)
+    recorded = _recorded_rows(tasks, rows)
+    restored = _recorded_exclusions(families, recorded)
+    validate(spec, plans, repo_root, families, rows, restored)
+    # The planned roster: surviving models plus models that only a recorded outcome excludes.
+    roster = {fid: sorted(families[fid]["models"] + restored[fid], key=lambda m: m["id"]) for fid in family_ids}
 
     # Model-level survival for every outcome row.
     model_survivors: dict[str, dict[str, dict[str, frozenset]]] = {fid: {} for fid in family_ids}
@@ -495,19 +577,34 @@ def analyse(repo_root: Path = DEFAULT_REPO, plans: dict | None = None, spec: dic
             per_row = {}
             for row in rows[task_id]:
                 if family["kind"] == "letter_strings":
-                    alive = frozenset(row["string_survivors"]) if task_id == family["task_id"] else frozenset(m["id"] for m in family["models"])
+                    alive = frozenset(row["string_survivors"]) if task_id == family["task_id"] else frozenset(m["id"] for m in roster[fid])
                 else:
-                    alive = frozenset(m["id"] for m in family["models"] if survives(m, row["effects"]))
+                    alive = frozenset(m["id"] for m in roster[fid] if survives(m, row["effects"]))
                 per_row[row["id"]] = alive
             model_survivors[fid][task_id] = per_row
 
-    # 1. Equivalence classes.
+    # 1. Equivalence classes. They are formed on the planned roster, so recorded
+    # outcomes keep the class names used when the rows were planned.
     family_out, class_pred, class_ids, class_rows = {}, {}, {}, {}
+    recorded_out: dict[str, dict] = {task_id: {"task_id": task_id, "outcome_id": item["record"]["outcome_id"],
+                                               "row_id": item["row"]["id"], "recorded_utc": item["record"]["recorded_utc"],
+                                               "excluded_classes": {}} for task_id, item in recorded.items()}
     for fid in family_ids:
         family = families[fid]
-        by_id = {model["id"]: model for model in family["models"]}
+        by_id = {model["id"]: model for model in roster[fid]}
         groups = collapse(by_id, model_survivors[fid])
-        classes = {f"{fid}-c{index:02d}": members for index, members in enumerate(groups, start=1)}
+        planned = {f"{fid}-c{index:02d}": members for index, members in enumerate(groups, start=1)}
+        gone_by: dict[str, list[str]] = {}
+        for task_id, item in recorded.items():
+            alive = model_survivors[fid][task_id][item["row"]["id"]]
+            for cid, members in planned.items():
+                if members[0] not in alive:
+                    gone_by.setdefault(cid, []).append(task_id)
+                    recorded_out[task_id]["excluded_classes"].setdefault(fid, []).append(cid)
+        restored_ids = {model["id"] for model in restored[fid]}
+        if {m for cid in gone_by for m in planned[cid]} != restored_ids:
+            raise ValueError(f"Recorded outcomes and current evidence disagree on the excluded {fid} models")
+        classes = {cid: members for cid, members in planned.items() if cid not in gone_by}
         class_ids[fid] = sorted(classes)
         class_pred[fid] = predictions(classes, model_survivors[fid])
         class_rows[fid] = {
@@ -521,6 +618,15 @@ def analyse(repo_root: Path = DEFAULT_REPO, plans: dict | None = None, spec: dic
             "claim": family["claim"], "source_ids": family["source_ids"], "roster_note": family["roster_note"],
             "surviving_models": len(family["models"]), "excluded_models": family["excluded"],
             "class_count": len(classes),
+            "recorded_exclusions": [
+                {
+                    "class_id": cid, "label": _class_label([by_id[m] for m in planned[cid]], dims),
+                    "member_count": len(planned[cid]), "members": planned[cid],
+                    "task_ids": sorted(gone_by[cid]),
+                    "row_ids": sorted(recorded[t]["row"]["id"] for t in gone_by[cid]),
+                }
+                for cid in sorted(gone_by)
+            ],
             "classes": [
                 {
                     "id": cid, "label": _class_label([by_id[m] for m in members], dims),
@@ -533,6 +639,12 @@ def analyse(repo_root: Path = DEFAULT_REPO, plans: dict | None = None, spec: dic
             ],
             "model_pairs_no_record_separates": within_pairs,
         }
+
+    for task_id, item in recorded.items():
+        computed = {fid: sorted(cids) for fid, cids in recorded_out[task_id]["excluded_classes"].items()}
+        recorded_out[task_id]["excluded_classes"] = computed
+        if item["record"].get("excluded_classes", {}) != computed:
+            raise ValueError(f"Recorded outcome of {task_id} declares excluded classes {item['record'].get('excluded_classes')}; the search finds {computed}")
 
     # 2. Observation table at class level.
     derivations: dict[str, str] = {}
@@ -560,6 +672,9 @@ def analyse(repo_root: Path = DEFAULT_REPO, plans: dict | None = None, spec: dic
                 "derivation_ids": [derivation_id for derivation_id, _ in row["derivations"]],
                 "components": row["components"], "surviving_classes": surviving, "excluded_classes": excluded,
                 "every_class_survives": not excluded,
+                **({"recorded": True, "recorded_utc": recorded[task_id]["record"]["recorded_utc"],
+                    "excluded_before_search": recorded_out[task_id]["excluded_classes"]}
+                   if task_id in recorded and recorded[task_id]["row"]["id"] == row["id"] else {}),
             })
         table.append({
             "task_id": task_id, "title": task["title"], "question_types": observation["question_types"],
@@ -568,6 +683,7 @@ def analyse(repo_root: Path = DEFAULT_REPO, plans: dict | None = None, spec: dic
             "request_status": task["request"]["status"], "access_status": task["access"]["status"],
             "effort_level": task["effort"]["level"], "freeze_status": task["freeze"]["status"],
             "historical_priority": task["priority"],
+            "recorded_outcome": recorded_out[task_id]["row_id"] if task_id in recorded_out else None,
             "families_affected": affected,
             "outcomes": out_rows,
         })
@@ -689,6 +805,7 @@ def analyse(repo_root: Path = DEFAULT_REPO, plans: dict | None = None, spec: dic
         "question_types": spec["question_types"],
         "display_order": spec["display_order"],
         "families": [family_out[f] for f in family_ids],
+        "recorded_outcomes": [recorded_out[t] for t in sorted(recorded_out)],
         "observation_table": table,
         "derivations": dict(sorted(derivations.items())),
         "supplementary_observations": supplementary,
@@ -778,6 +895,10 @@ def _findings(result: dict, families: dict) -> list[str]:
     """Plain sentences generated from the computed result."""
     search = result["search"]
     out = []
+    for item in result["recorded_outcomes"]:
+        gone = "; ".join(f"{fid}: {', '.join(cids)}" for fid, cids in sorted(item["excluded_classes"].items())) or "no class"
+        out.append(f"Recorded outcome ({item['recorded_utc']}): {item['task_id']} row {item['row_id']} excluded {gone}. "
+                   "These classes left the search; the other classes keep their planned names.")
     if search["every_record_has_an_outcome_leaving_every_class"]:
         out.append("Every record has an inconclusive, partial or not-obtained outcome under which every class survives. No set of records guarantees any separation in the worst case.")
     for family in result["families"]:
@@ -809,11 +930,18 @@ DEFINITIONS = {
     "best_case": "Classes that some combination of outcomes can leave as the only survivor.",
     "frontier": "For each number of records, the record sets that separate the most class pairs in principle. The unit is one record dependency; access and effort categories are listed, not weighted.",
     "rank": "Lexicographic: necessary for active-test families, necessary for any family, class pairs separated in active-test families, class pairs separated in all families. Equal keys share a rank.",
+    "recorded_outcome": "An outcome row that an obtained record actually showed (plans.json recorded_outcome). Classes are formed before it is applied, so class names stay as planned and registered; the classes it excludes leave the search.",
 }
 
 
 def _reasons(item: dict, task: dict, families: dict) -> list[str]:
     reasons = []
+    record = task.get("recorded_outcome")
+    if record:
+        gone = "; ".join(f"{fid}: {', '.join(cids)}" for fid, cids in sorted(record.get("excluded_classes", {}).items())) or "no class"
+        reasons.append(f"Outcome recorded {record['recorded_utc']}: row {record['row_id']}. It excluded {gone} before the search.")
+        if not any(m["separated_pairs"] or m["classes_it_can_exclude"] for m in item["per_family"].values()):
+            reasons.append("It now separates no remaining class.")
     for fid, metrics in sorted(item["per_family"].items()):
         label = families[fid]["label"]
         if metrics["necessary"]:

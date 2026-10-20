@@ -23,7 +23,7 @@ Shared feature IDs (definitions are in `features.json`):
 - `jericho-tell`, `jericho-historical-basin`, `jericho-reservoir-1898`, `jericho-springhouse-wall`, `jericho-shaft-d9`, `jericho-cistern-ns1`, `jericho-north-graves`, `jericho-later-quarry-pits`.
 - `marjama-tell`, `marjama-kallai-pool`, `samiya-crypt-basin`, `samiya-hydraulic-system`, `yanun-site`.
 
-Relations: pilot Koḥlit; optional Sekakah only when a bounded source-grounded implementation is feasible. Keep textual interpretations separate from candidate assignments. The modern 1898 reservoir cannot supply an early feature. Kallai's unlocated pool must remain unknown, not a fit or miss.
+Relations: pilot Koḥlit; optional Sekakah only when a bounded source-grounded implementation is feasible. Keep textual interpretations separate from candidate assignments. The modern 1898 reservoir cannot supply an early feature. Kallai's pool stayed unknown, not a fit or miss, while it was unlocated. Kallai 1972 pp. 172–173 (read 19 October 2026) place it west of the tell, so it is a miss only for the assignments that use it; it stays undated.
 
 Inventory: pilot Entry 25 on IV/17, IV/11 and Twin Cave with equal branches. Two mouths, pillar, opening size, orientation and phase are separate predicates. Connectivity is not a mandatory textual criterion. Existing 2D connectivity is no traversal observation. No regional rarity or completeness claim.
 

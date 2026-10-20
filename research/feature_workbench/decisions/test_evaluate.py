@@ -36,17 +36,63 @@ class DecisionQueueTests(unittest.TestCase):
         originals = copy.deepcopy(self.snapshot)
         source_bytes = (REPO / evaluator.QUEUE_PATH).read_bytes()
         for task in self.tasks.values():
+            recorded = task.get("recorded_outcome")
             for outcome in task["outcomes"]:
                 preview = evaluator.preview(task["id"], outcome["id"], REPO)
                 self.assertEqual(preview["mode"], "planning_only")
-                self.assertEqual(preview["current_evidence"]["status"], "unknown")
-                self.assertIs(preview["possible_outcome"]["recorded"], False)
+                # A preview never changes current evidence. Only a task with a
+                # recorded outcome carries a status other than unknown.
+                self.assertEqual(preview["current_evidence"]["status"],
+                                 "unknown" if recorded is None else task["current_evidence"]["status"])
+                is_recorded = recorded is not None and recorded["outcome_id"] == outcome["id"]
+                self.assertIs(preview["possible_outcome"]["recorded"], is_recorded)
+                self.assertEqual(preview["label"], "Recorded outcome — observed" if is_recorded else "Possible outcome — not observed")
                 self.assertIs(preview["research_state_changed"], False)
                 self.assertEqual(preview["request_action"], "none")
                 preview["current_evidence"]["status"] = "compatible"
         self.assertEqual(evaluator.build(REPO), originals)
         self.assertEqual((REPO / evaluator.QUEUE_PATH).read_bytes(), source_bytes)
-        self.assertTrue(all(result["status"] == "unknown" for result in originals["results"]))
+        statuses = {result["id"]: result["status"] for result in originals["results"]}
+        self.assertEqual(statuses.pop("decisions-kallai-pool-plan"), "contradicted")
+        self.assertTrue(all(status == "unknown" for status in statuses.values()))
+
+    def test_kallai_outcome_is_recorded_with_its_scope(self):
+        task = self.tasks["decisions-kallai-pool"]
+        recorded = task["recorded_outcome"]
+        self.assertEqual(recorded["outcome_id"], "bearing-or-phase-miss")
+        self.assertEqual(recorded["row_id"], "bearing-or-phase-miss:not-east+undated")
+        self.assertEqual(recorded["excluded_classes"], {"kohlit": ["kohlit-c06", "kohlit-c07", "kohlit-c09", "kohlit-c10"]})
+        self.assertEqual(task["current_evidence"]["status"], "contradicted")
+        self.assertEqual([o["id"] for o in task["outcomes"] if o["recorded"]], ["bearing-or-phase-miss"])
+        for path in recorded["records"]:
+            self.assertTrue((REPO / path).is_file(), path)
+        # The state before the pages were read is kept verbatim.
+        self.assertEqual(task["history"][0]["current_evidence"]["status"], "unknown")
+        self.assertIn("remain unread", task["history"][0]["current_evidence"]["detail"])
+        sources = {s["id"]: s for s in self.snapshot["sources"]}
+        self.assertEqual(sources["decisions-kallai-pages"]["inspection"], "already_inspected")
+
+    def test_validation_rejects_an_unbacked_or_inconsistent_recorded_outcome(self):
+        plans = json.loads((HERE / "plans.json").read_text())
+        kallai = next(t for t in plans["tasks"] if t["id"] == "decisions-kallai-pool")
+        next(o for o in kallai["outcomes"] if o["id"] == "identity-only")["recorded"] = True
+        with self.assertRaisesRegex(ValueError, "unrecorded planning branches"):
+            evaluator._validate(plans, REPO)
+        plans = json.loads((HERE / "plans.json").read_text())
+        kallai = next(t for t in plans["tasks"] if t["id"] == "decisions-kallai-pool")
+        kallai["current_evidence"]["status"] = "unknown"
+        with self.assertRaisesRegex(ValueError, "recorded outcome's status"):
+            evaluator._validate(plans, REPO)
+        plans = json.loads((HERE / "plans.json").read_text())
+        kallai = next(t for t in plans["tasks"] if t["id"] == "decisions-kallai-pool")
+        kallai["recorded_outcome"]["records"] = ["research/missing-outcome-record.json"]
+        with self.assertRaisesRegex(ValueError, "Missing outcome record"):
+            evaluator._validate(plans, REPO)
+        plans = json.loads((HERE / "plans.json").read_text())
+        kallai = next(t for t in plans["tasks"] if t["id"] == "decisions-kallai-pool")
+        del kallai["recorded_outcome"]
+        with self.assertRaisesRegex(ValueError, "unrecorded planning branches"):
+            evaluator._validate(plans, REPO)
 
     def test_each_task_retains_inconclusive_and_claim_scoped_outcomes(self):
         self.assertEqual(len(self.tasks), 7)

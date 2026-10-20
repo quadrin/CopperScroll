@@ -133,7 +133,7 @@
       },
       {
         "id": "marjama-kallai-pool",
-        "name": "Kallai's unlocated rock-cut pool",
+        "name": "Kallai's vaulted pool east of the church (site 65)",
         "kind": "pool_report",
         "site": "Kh. el-Marjama",
         "geometry": null
@@ -251,11 +251,12 @@
       },
       {
         "id": "relationships-kallai",
-        "title": "Kallai rock-cut-pool source dependency",
-        "citation": "Kallai chapter in Kochavi (ed.), Judaea, Samaria and the Golan: Archaeological Survey 1967–1968 (1972), pp. 172–173; sites 65–66 context remains unread",
-        "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+        "title": "Kallai 1972, site 65 (Kh. Marjame): church, pool and tell",
+        "citation": "Z. Kallai, survey of Benjamin and Mount Ephraim, in M. Kochavi (ed.), Judaea, Samaria and the Golan: Archaeological Survey 1967–1968 (1972), p. 172 (spring south of the tell; Byzantine church at the foot of the tell on its west side; rock-cut moat on the north) and p. 173 (water pool with remains of its roofing vault, adjoining the church on the east). Library copy photographed by the owner and read blind on 19 October 2026; the Introduction (pp. 153–157) was not received.",
+        "repo_path": "research/feature_workbench/decisions/kallai_172-173_extraction_2026-10-19.md",
         "url": "https://www.nli.org.il/he/books/NNL_ALEPH990019622650205171/NLI",
-        "inspection": "not_inspected"
+        "inspection": "already_inspected",
+        "original_campaign": "Kallai survey of Benjamin and Mount Ephraim, 1967–1968 (Highlands p. 733 cites this survey for the church)"
       },
       {
         "id": "inventory-puech-entry25",
@@ -1805,9 +1806,23 @@
         "inspection": "not_inspected"
       },
       {
+        "id": "decisions-kallai-pages",
+        "title": "Kallai 1972 pp. 172–173, blind extraction",
+        "citation": "Kallai, in Kochavi (ed.) 1972, p. 172 (site 65: spring south of the tell; Byzantine church at the foot of the tell on its west side; rock-cut moat on the north) and p. 173 (water pool with remains of its roofing vault, adjoining the church on the east; site 66). Extracted 19 October 2026 from the owner’s photographs of a library copy; the photographs are not in the repository.",
+        "repo_path": "research/feature_workbench/decisions/kallai_172-173_extraction_2026-10-19.md",
+        "inspection": "already_inspected"
+      },
+      {
+        "id": "decisions-kallai-outcome",
+        "title": "Arrival outcome record, Kochavi 1972",
+        "citation": "Scored row dec:bearing-or-phase-miss:not-east+undated; register commit 6fee37615e960da2c68b326b8ed9f91601fab464; arrived 19 October 2026; part 2 (pp. 158–193) in kochavi-1972_2026-10-19b.json",
+        "repo_path": "research/preregistration/arrivals/outcomes/kochavi-1972_2026-10-19.json",
+        "inspection": "derived"
+      },
+      {
         "id": "decisions-kallai-unread",
-        "title": "Uninspected Kallai pool pages",
-        "citation": "Kallai, Survey of the Land of Benjamin and Mt. Ephraim, in Kochavi (ed.) 1972, pp.153–196; target pp.172–173, sites 65–66, title leaf and relevant plans/captions",
+        "title": "Kallai chapter: parts still unread",
+        "citation": "Kallai, Survey of the Land of Benjamin and Mt. Ephraim, in Kochavi (ed.) 1972: the Introduction, pp. 153–157 (site 65 refers to it for the identification), was not received. Pages 158–193, with pp. 172–173 and sites 65–66, were read on 19 October 2026 (decisions-kallai-pages).",
         "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
         "inspection": "not_inspected",
         "url": "https://www.nli.org.il/he/books/NNL_ALEPH990019622650205171/NLI"
@@ -1815,7 +1830,7 @@
       {
         "id": "decisions-marjama-review",
         "title": "Kh. el-Marjama source and access review",
-        "citation": "B follow-up: supplied HA 76 (1981) p.19 inspected; no pool/bearing/date; Kallai 1972 pp.172–173 remain unread after the 115-document audit",
+        "citation": "B follow-up: supplied HA 76 (1981) p.19 inspected; no pool/bearing/date; Kallai 1972 pp.172–173 were unread after the 115-document audit (8 October) and were read on 19 October 2026 (last section of the note)",
         "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
         "inspection": "derived"
       },
@@ -2218,14 +2233,34 @@
         "property": "east_of",
         "value": {
           "reference_feature_id": "marjama-tell",
-          "asserted": null
+          "asserted": false
         },
         "evidence_kind": "inference",
         "source_ids": [
           "relationships-kallai"
         ],
         "exposure": "derived",
-        "note": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing."
+        "note": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
+        "reference_frame": "Kallai’s qualitative relations pool–church (p. 173) and church–tell (p. 172); no plan, surveyed bearing, distance or coordinate",
+        "uncertainty": "Qualitative position only. Kallai gives no plan, size or distance for the pool."
+      },
+      {
+        "id": "relationships-kallai-form",
+        "feature_id": "marjama-kallai-pool",
+        "property": "reported_form",
+        "value": {
+          "reference_feature_id": null,
+          "description": "water pool with remains of its roofing vault",
+          "rock_cut_stated": false,
+          "crypt_mentioned": false,
+          "dimensions": null
+        },
+        "evidence_kind": "observed",
+        "source_ids": [
+          "relationships-kallai"
+        ],
+        "exposure": "already_inspected",
+        "note": "EVIDENCE: Kallai p. 173 describes a water pool with remains of its roofing vault. He gives no size, does not call it rock-cut and mentions no crypt. The earlier project label “rock-cut pool” did not come from these pages."
       },
       {
         "id": "relationships-kallai-chronology",
@@ -2239,11 +2274,26 @@
         },
         "evidence_kind": "inference",
         "source_ids": [
+          "relationships-kallai"
+        ],
+        "exposure": "derived",
+        "note": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread."
+      },
+      {
+        "id": "relationships-kallai-crypt-identity",
+        "feature_id": "marjama-kallai-pool",
+        "property": "proposed_feature_identity",
+        "value": {
+          "reference_feature_id": "samiya-crypt-basin",
+          "asserted": null
+        },
+        "evidence_kind": "inference",
+        "source_ids": [
           "relationships-kallai",
           "relationships-zohar"
         ],
         "exposure": "derived",
-        "note": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread."
+        "note": "Not settled. EVIDENCE: Kallai pp. 172–173 put the pool against the east side of the church and mention no crypt. EVIDENCE: Zohar (IEJ 30 p. 219) reports that water was once collected in a basin beneath the crypt of the Byzantine church, at the spring. INFERENCE: the two reports can describe one basin or two. This model keeps them as separate features."
       },
       {
         "id": "relationships-samiya-bronze-north",
@@ -8506,15 +8556,15 @@
         },
         {
           "id": "relationships-samiya-kallai-RB-M-early",
-          "title": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–70 CE",
+          "title": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–70 CE",
           "claim": "The selected physical features satisfy this exploratory Entry 11 / Entry 60 relationship branch within the selected use window.",
-          "status": "unknown",
+          "status": "contradicted",
           "checks": [
             {
               "id": "relationships-samiya-kallai-RB-M-early-pool-east",
               "label": "Pool east of the Koḥlit anchor",
-              "status": "unknown",
-              "detail": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
+              "status": "contradicted",
+              "detail": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-kallai"
@@ -8540,12 +8590,11 @@
               "id": "relationships-samiya-kallai-RB-M-early-pool-period",
               "label": "Pool accessible in the selected early window",
               "status": "unknown",
-              "detail": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+              "detail": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-text-e60",
-                "relationships-kallai",
-                "relationships-zohar"
+                "relationships-kallai"
               ],
               "feature_ids": [
                 "marjama-kallai-pool"
@@ -8693,8 +8742,7 @@
             }
           ],
           "unknowns": [
-            "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
-            "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+            "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
             "Historical basin descriptions and modern walls do not define a dated ancient northern-corner datum.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No source-controlled observation of this relation is available.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No defined side opening and source-controlled facing direction are supplied; a vertical shaft is not assigned an azimuth.",
@@ -8704,8 +8752,7 @@
           "source_ids": [
             "relationships-text-core",
             "relationships-kallai",
-            "relationships-text-e60",
-            "relationships-zohar"
+            "relationships-text-e60"
           ],
           "feature_ids": [
             "marjama-kallai-pool",
@@ -8715,15 +8762,15 @@
         },
         {
           "id": "relationships-samiya-kallai-RB-M-extended",
-          "title": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–135 CE",
+          "title": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–135 CE",
           "claim": "The selected physical features satisfy this exploratory Entry 11 / Entry 60 relationship branch within the selected use window.",
-          "status": "unknown",
+          "status": "contradicted",
           "checks": [
             {
               "id": "relationships-samiya-kallai-RB-M-extended-pool-east",
               "label": "Pool east of the Koḥlit anchor",
-              "status": "unknown",
-              "detail": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
+              "status": "contradicted",
+              "detail": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-kallai"
@@ -8749,12 +8796,11 @@
               "id": "relationships-samiya-kallai-RB-M-extended-pool-period",
               "label": "Pool accessible in the selected early window",
               "status": "unknown",
-              "detail": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+              "detail": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-text-e60",
-                "relationships-kallai",
-                "relationships-zohar"
+                "relationships-kallai"
               ],
               "feature_ids": [
                 "marjama-kallai-pool"
@@ -8902,8 +8948,7 @@
             }
           ],
           "unknowns": [
-            "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
-            "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+            "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
             "Historical basin descriptions and modern walls do not define a dated ancient northern-corner datum.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No source-controlled observation of this relation is available.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No defined side opening and source-controlled facing direction are supplied; a vertical shaft is not assigned an azimuth.",
@@ -8913,8 +8958,7 @@
           "source_ids": [
             "relationships-text-core",
             "relationships-kallai",
-            "relationships-text-e60",
-            "relationships-zohar"
+            "relationships-text-e60"
           ],
           "feature_ids": [
             "marjama-kallai-pool",
@@ -8924,15 +8968,15 @@
         },
         {
           "id": "relationships-samiya-kallai-RB-P-early",
-          "title": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–70 CE",
+          "title": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–70 CE",
           "claim": "The selected physical features satisfy this exploratory Entry 11 / Entry 60 relationship branch within the selected use window.",
-          "status": "unknown",
+          "status": "contradicted",
           "checks": [
             {
               "id": "relationships-samiya-kallai-RB-P-early-pool-east",
               "label": "Pool east of the Koḥlit anchor",
-              "status": "unknown",
-              "detail": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
+              "status": "contradicted",
+              "detail": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-kallai"
@@ -8958,12 +9002,11 @@
               "id": "relationships-samiya-kallai-RB-P-early-pool-period",
               "label": "Pool accessible in the selected early window",
               "status": "unknown",
-              "detail": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+              "detail": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-text-e60",
-                "relationships-kallai",
-                "relationships-zohar"
+                "relationships-kallai"
               ],
               "feature_ids": [
                 "marjama-kallai-pool"
@@ -9111,8 +9154,7 @@
             }
           ],
           "unknowns": [
-            "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
-            "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+            "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
             "Historical basin descriptions and modern walls do not define a dated ancient northern-corner datum.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No source-controlled observation of this relation is available.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No phase-controlled cover, blocking or concealment observation is supplied; later rubble is not automatically the ancient concealed opening.",
@@ -9122,8 +9164,7 @@
           "source_ids": [
             "relationships-text-core",
             "relationships-kallai",
-            "relationships-text-e60",
-            "relationships-zohar"
+            "relationships-text-e60"
           ],
           "feature_ids": [
             "marjama-kallai-pool",
@@ -9133,15 +9174,15 @@
         },
         {
           "id": "relationships-samiya-kallai-RB-P-extended",
-          "title": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–135 CE",
+          "title": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–135 CE",
           "claim": "The selected physical features satisfy this exploratory Entry 11 / Entry 60 relationship branch within the selected use window.",
-          "status": "unknown",
+          "status": "contradicted",
           "checks": [
             {
               "id": "relationships-samiya-kallai-RB-P-extended-pool-east",
               "label": "Pool east of the Koḥlit anchor",
-              "status": "unknown",
-              "detail": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
+              "status": "contradicted",
+              "detail": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-kallai"
@@ -9167,12 +9208,11 @@
               "id": "relationships-samiya-kallai-RB-P-extended-pool-period",
               "label": "Pool accessible in the selected early window",
               "status": "unknown",
-              "detail": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+              "detail": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-text-e60",
-                "relationships-kallai",
-                "relationships-zohar"
+                "relationships-kallai"
               ],
               "feature_ids": [
                 "marjama-kallai-pool"
@@ -9320,8 +9360,7 @@
             }
           ],
           "unknowns": [
-            "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
-            "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+            "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
             "Historical basin descriptions and modern walls do not define a dated ancient northern-corner datum.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No source-controlled observation of this relation is available.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No phase-controlled cover, blocking or concealment observation is supplied; later rubble is not automatically the ancient concealed opening.",
@@ -9331,8 +9370,7 @@
           "source_ids": [
             "relationships-text-core",
             "relationships-kallai",
-            "relationships-text-e60",
-            "relationships-zohar"
+            "relationships-text-e60"
           ],
           "feature_ids": [
             "marjama-kallai-pool",
@@ -9342,15 +9380,15 @@
         },
         {
           "id": "relationships-samiya-kallai-RB-B-early",
-          "title": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–70 CE",
+          "title": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–70 CE",
           "claim": "The selected physical features satisfy this exploratory Entry 11 / Entry 60 relationship branch within the selected use window.",
-          "status": "unknown",
+          "status": "contradicted",
           "checks": [
             {
               "id": "relationships-samiya-kallai-RB-B-early-pool-east",
               "label": "Pool east of the Koḥlit anchor",
-              "status": "unknown",
-              "detail": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
+              "status": "contradicted",
+              "detail": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-kallai"
@@ -9376,12 +9414,11 @@
               "id": "relationships-samiya-kallai-RB-B-early-pool-period",
               "label": "Pool accessible in the selected early window",
               "status": "unknown",
-              "detail": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+              "detail": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-text-e60",
-                "relationships-kallai",
-                "relationships-zohar"
+                "relationships-kallai"
               ],
               "feature_ids": [
                 "marjama-kallai-pool"
@@ -9465,16 +9502,14 @@
             }
           ],
           "unknowns": [
-            "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
-            "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+            "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
             "Historical basin descriptions and modern walls do not define a dated ancient northern-corner datum.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No source-controlled observation of this relation is available."
           ],
           "source_ids": [
             "relationships-text-core",
             "relationships-kallai",
-            "relationships-text-e60",
-            "relationships-zohar"
+            "relationships-text-e60"
           ],
           "feature_ids": [
             "marjama-kallai-pool",
@@ -9483,15 +9518,15 @@
         },
         {
           "id": "relationships-samiya-kallai-RB-B-extended",
-          "title": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–135 CE",
+          "title": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–135 CE",
           "claim": "The selected physical features satisfy this exploratory Entry 11 / Entry 60 relationship branch within the selected use window.",
-          "status": "unknown",
+          "status": "contradicted",
           "checks": [
             {
               "id": "relationships-samiya-kallai-RB-B-extended-pool-east",
               "label": "Pool east of the Koḥlit anchor",
-              "status": "unknown",
-              "detail": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
+              "status": "contradicted",
+              "detail": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-kallai"
@@ -9517,12 +9552,11 @@
               "id": "relationships-samiya-kallai-RB-B-extended-pool-period",
               "label": "Pool accessible in the selected early window",
               "status": "unknown",
-              "detail": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+              "detail": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-text-e60",
-                "relationships-kallai",
-                "relationships-zohar"
+                "relationships-kallai"
               ],
               "feature_ids": [
                 "marjama-kallai-pool"
@@ -9606,16 +9640,14 @@
             }
           ],
           "unknowns": [
-            "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
-            "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+            "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
             "Historical basin descriptions and modern walls do not define a dated ancient northern-corner datum.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No source-controlled observation of this relation is available."
           ],
           "source_ids": [
             "relationships-text-core",
             "relationships-kallai",
-            "relationships-text-e60",
-            "relationships-zohar"
+            "relationships-text-e60"
           ],
           "feature_ids": [
             "marjama-kallai-pool",
@@ -11168,13 +11200,13 @@
           "id": "relationships-yanun-marjama-anchor-RB-L-early",
           "title": "Janoaḥ / Yanun pit unassigned; Marjama Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–70 CE",
           "claim": "The selected physical features satisfy this exploratory Entry 11 / Entry 60 relationship branch within the selected use window.",
-          "status": "unknown",
+          "status": "contradicted",
           "checks": [
             {
               "id": "relationships-yanun-marjama-anchor-RB-L-early-pool-east",
               "label": "Pool east of the Koḥlit anchor",
-              "status": "unknown",
-              "detail": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
+              "status": "contradicted",
+              "detail": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-kallai"
@@ -11200,12 +11232,11 @@
               "id": "relationships-yanun-marjama-anchor-RB-L-early-pool-period",
               "label": "Pool accessible in the selected early window",
               "status": "unknown",
-              "detail": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+              "detail": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-text-e60",
-                "relationships-kallai",
-                "relationships-zohar"
+                "relationships-kallai"
               ],
               "feature_ids": [
                 "marjama-kallai-pool"
@@ -11352,8 +11383,7 @@
             }
           ],
           "unknowns": [
-            "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
-            "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+            "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
             "Historical basin descriptions and modern walls do not define a dated ancient northern-corner datum.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No source-controlled observation of this relation is available.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No named Yanun pit, its outline, date or mouth is documented. Kh. Yanun and Yanun village are retained distinct site alternatives.",
@@ -11364,7 +11394,6 @@
             "relationships-text-core",
             "relationships-kallai",
             "relationships-text-e60",
-            "relationships-zohar",
             "relationships-yanun"
           ],
           "feature_ids": [
@@ -11377,13 +11406,13 @@
           "id": "relationships-yanun-marjama-anchor-RB-L-extended",
           "title": "Janoaḥ / Yanun pit unassigned; Marjama Koḥlit anchor · Lefkovits: pit at Janoaḥ · 50 BCE–135 CE",
           "claim": "The selected physical features satisfy this exploratory Entry 11 / Entry 60 relationship branch within the selected use window.",
-          "status": "unknown",
+          "status": "contradicted",
           "checks": [
             {
               "id": "relationships-yanun-marjama-anchor-RB-L-extended-pool-east",
               "label": "Pool east of the Koḥlit anchor",
-              "status": "unknown",
-              "detail": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
+              "status": "contradicted",
+              "detail": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-kallai"
@@ -11409,12 +11438,11 @@
               "id": "relationships-yanun-marjama-anchor-RB-L-extended-pool-period",
               "label": "Pool accessible in the selected early window",
               "status": "unknown",
-              "detail": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+              "detail": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
               "source_ids": [
                 "relationships-text-core",
                 "relationships-text-e60",
-                "relationships-kallai",
-                "relationships-zohar"
+                "relationships-kallai"
               ],
               "feature_ids": [
                 "marjama-kallai-pool"
@@ -11561,8 +11589,7 @@
             }
           ],
           "unknowns": [
-            "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing.",
-            "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread.",
+            "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread.",
             "Historical basin descriptions and modern walls do not define a dated ancient northern-corner datum.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No source-controlled observation of this relation is available.",
             "A required feature role is unassigned; report silence cannot supply or exclude a feature. No named Yanun pit, its outline, date or mouth is documented. Kh. Yanun and Yanun village are retained distinct site alternatives.",
@@ -11573,7 +11600,6 @@
             "relationships-text-core",
             "relationships-kallai",
             "relationships-text-e60",
-            "relationships-zohar",
             "relationships-yanun"
           ],
           "feature_ids": [
@@ -11815,7 +11841,7 @@
           },
           {
             "id": "samiya-kallai",
-            "label": "Marjama unlocated Kallai pool + northern shaft-tomb sector",
+            "label": "Marjama Kallai pool west of the tell + northern shaft-tomb sector",
             "roles": {
               "anchor": "marjama-tell",
               "pool": "marjama-kallai-pool",
@@ -12493,7 +12519,7 @@
           },
           {
             "id": "relationships-samiya-kallai-RB-M-early",
-            "label": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–70 CE",
+            "label": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–70 CE",
             "reading_id": "RB-M",
             "assignment_id": "samiya-kallai",
             "window_id": "early",
@@ -12511,7 +12537,7 @@
           },
           {
             "id": "relationships-samiya-kallai-RB-M-extended",
-            "label": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–135 CE",
+            "label": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Milik: north-facing opening · 50 BCE–135 CE",
             "reading_id": "RB-M",
             "assignment_id": "samiya-kallai",
             "window_id": "extended",
@@ -12529,7 +12555,7 @@
           },
           {
             "id": "relationships-samiya-kallai-RB-P-early",
-            "label": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–70 CE",
+            "label": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–70 CE",
             "reading_id": "RB-P",
             "assignment_id": "samiya-kallai",
             "window_id": "early",
@@ -12547,7 +12573,7 @@
           },
           {
             "id": "relationships-samiya-kallai-RB-P-extended",
-            "label": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–135 CE",
+            "label": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Puech: concealed opening · 50 BCE–135 CE",
             "reading_id": "RB-P",
             "assignment_id": "samiya-kallai",
             "window_id": "extended",
@@ -12565,7 +12591,7 @@
           },
           {
             "id": "relationships-samiya-kallai-RB-B-early",
-            "label": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–70 CE",
+            "label": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–70 CE",
             "reading_id": "RB-B",
             "assignment_id": "samiya-kallai",
             "window_id": "early",
@@ -12580,7 +12606,7 @@
           },
           {
             "id": "relationships-samiya-kallai-RB-B-extended",
-            "label": "Marjama unlocated Kallai pool + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–135 CE",
+            "label": "Marjama Kallai pool west of the tell + northern shaft-tomb sector · Buried: no required tombs · 50 BCE–135 CE",
             "reading_id": "RB-B",
             "assignment_id": "samiya-kallai",
             "window_id": "extended",
@@ -12887,7 +12913,9 @@
         "relationships-crypt-west",
         "relationships-crypt-chronology",
         "relationships-kallai-location",
+        "relationships-kallai-form",
         "relationships-kallai-chronology",
+        "relationships-kallai-crypt-identity",
         "relationships-samiya-bronze-north",
         "relationships-samiya-bronze-chronology",
         "relationships-hydraulics-location",
@@ -55902,7 +55930,7 @@
       "number": 6,
       "title": "Decision queue",
       "summary": "Seven bounded record dependencies with finite possible outcomes, their branch consequences and an exact search for the records that separate the surviving models.",
-      "scope": "Planning from the reviewed records as of 8 October 2026; six historical tracks remain as recorded. No outcome selection constitutes an observation or a research result. Discrimination is logical only: no probability or information gain.",
+      "scope": "Planning from the reviewed records as of 8 October 2026; six historical tracks remain as recorded. No outcome selection constitutes an observation or a research result. Discrimination is logical only: no probability or information gain. One outcome is recorded from an obtained record: Kallai pp. 172–173 (19 October 2026).",
       "results": [
         {
           "id": "decisions-xii10-plan",
@@ -56062,14 +56090,16 @@
           "id": "decisions-kallai-pool-plan",
           "title": "Kallai pp.172–173: locate and date the pool",
           "claim": "Does Kallai's particular pool satisfy a fixed east-of-tell and instruction-relevant phase branch at Kh. el-Marjama?",
-          "status": "unknown",
+          "status": "contradicted",
           "checks": [
             {
               "id": "decisions-kallai-pool-current-evidence",
               "label": "Recorded evidence",
-              "status": "unknown",
-              "detail": "Kallai1972 pp.172–173 remain unread. The inspected HA76 p.19 describes settlement work and no pool/bearing/date; the separate church-crypt basin is southwest of the tell and does not locate Kallai's feature.",
+              "status": "contradicted",
+              "detail": "Outcome recorded 19 October 2026: bearing-or-phase-miss, row not-east+undated. EVIDENCE: Kallai 1972 p. 172 puts the Byzantine church at the foot of the tell on its west side; p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. Kallai gives no size, construction or date for the pool, does not call it rock-cut and mentions no crypt. INFERENCE: the pool is at the western foot of the tell, not east of it. This excludes only the assignments that use Kallai’s pool (Koḥlit classes c06, c07, c09 and c10). It does not exclude the Marjama area, other pools or the Jericho classes. Whether this pool and Zohar’s church-crypt basin (IEJ 30 p. 219) are one feature is not settled.",
               "source_ids": [
+                "decisions-kallai-pages",
+                "decisions-kallai-outcome",
                 "decisions-kallai-unread",
                 "decisions-marjama-review",
                 "decisions-active"
@@ -56078,15 +56108,19 @@
                 "marjama-tell",
                 "marjama-kallai-pool",
                 "samiya-crypt-basin"
-              ]
+              ],
+              "value": {
+                "recorded_outcome": "bearing-or-phase-miss:not-east+undated",
+                "recorded_utc": "2026-10-19"
+              }
             },
             {
               "id": "decisions-kallai-pool-request",
               "label": "Record access",
               "status": "unknown",
-              "detail": "No targeted Kallai original-page request is recorded in the reviewed follow-up; the bounded public access pass is closed.",
+              "detail": "No request was sent for these pages. The owner photographed Kallai pp. 158–193 in a library on 19 October 2026.",
               "source_ids": [
-                "decisions-marjama-review"
+                "decisions-kallai-outcome"
               ],
               "feature_ids": [
                 "marjama-tell",
@@ -56103,8 +56137,10 @@
               "id": "decisions-kallai-pool-specification",
               "label": "Test specification and exposure",
               "status": "info",
-              "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure.",
+              "detail": "The arrival register froze the Kallai rows on 9 October 2026 (commit 6fee376), before the pages arrived, and the outcome record scores them as a test. This queue does not certify an unused observation: the church position was already exposed (Highlands p. 733), but the pool position east of the church was new.",
               "source_ids": [
+                "decisions-kallai-pages",
+                "decisions-kallai-outcome",
                 "decisions-kallai-unread",
                 "decisions-marjama-review",
                 "decisions-active"
@@ -56115,18 +56151,19 @@
                 "samiya-crypt-basin"
               ],
               "value": {
-                "freeze": "not_frozen",
+                "freeze": "frozen_in_arrival_register",
                 "unused_status": "unverified"
               }
             }
           ],
           "unknowns": [
-            "Kallai1972 pp.172–173, title leaf and sites65–66 context",
-            "Relevant plan/caption identifying the rock-cut pool independently of the crypt basin",
-            "Location/bearing relative to the tell in the source's reference frame",
-            "Pool construction/use evidence, with the basis and uncertainty of any date"
+            "None for this claim: the bearing miss is recorded (19 October 2026).",
+            "Outside this claim: a plan or survey that puts Kallai’s pool and Zohar’s church-crypt basin in one frame. Their identity is not settled.",
+            "Outside this claim: a feature-specific date for the pool. Kallai gives none."
           ],
           "source_ids": [
+            "decisions-kallai-pages",
+            "decisions-kallai-outcome",
             "decisions-kallai-unread",
             "decisions-marjama-review",
             "decisions-active"
@@ -56934,47 +56971,48 @@
               "samiya-crypt-basin"
             ],
             "source_ids": [
+              "decisions-kallai-pages",
+              "decisions-kallai-outcome",
               "decisions-kallai-unread",
               "decisions-marjama-review",
               "decisions-active"
             ],
             "current_evidence": {
-              "status": "unknown",
-              "detail": "Kallai1972 pp.172–173 remain unread. The inspected HA76 p.19 describes settlement work and no pool/bearing/date; the separate church-crypt basin is southwest of the tell and does not locate Kallai's feature.",
+              "status": "contradicted",
+              "detail": "Outcome recorded 19 October 2026: bearing-or-phase-miss, row not-east+undated. EVIDENCE: Kallai 1972 p. 172 puts the Byzantine church at the foot of the tell on its west side; p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. Kallai gives no size, construction or date for the pool, does not call it rock-cut and mentions no crypt. INFERENCE: the pool is at the western foot of the tell, not east of it. This excludes only the assignments that use Kallai’s pool (Koḥlit classes c06, c07, c09 and c10). It does not exclude the Marjama area, other pools or the Jericho classes. Whether this pool and Zohar’s church-crypt basin (IEJ 30 p. 219) are one feature is not settled.",
               "exposure": "already_inspected"
             },
             "request": {
               "status": "not_requested",
-              "scope": "No targeted Kallai original-page request is recorded in the reviewed follow-up; the bounded public access pass is closed.",
+              "scope": "No request was sent for these pages. The owner photographed Kallai pp. 158–193 in a library on 19 October 2026.",
               "delivery": null,
               "reply": null,
               "source_ids": [
-                "decisions-marjama-review"
+                "decisions-kallai-outcome"
               ]
             },
             "record_needed": [
-              "Kallai1972 pp.172–173, title leaf and sites65–66 context",
-              "Relevant plan/caption identifying the rock-cut pool independently of the crypt basin",
-              "Location/bearing relative to the tell in the source's reference frame",
-              "Pool construction/use evidence, with the basis and uncertainty of any date"
+              "None for this claim: the bearing miss is recorded (19 October 2026).",
+              "Outside this claim: a plan or survey that puts Kallai’s pool and Zohar’s church-crypt basin in one frame. Their identity is not settled.",
+              "Outside this claim: a feature-specific date for the pool. Kallai gives none."
             ],
             "access": {
-              "status": "original_not_obtained",
-              "route": "Exact volume through a supplied copy or library scan",
-              "detail": "Known NLI/CMHL routes have an access blocker recorded; no renewed broad hunt, purchase or request is scheduled.",
+              "status": "pages_obtained",
+              "route": "Owner’s photographs of a library copy, 19 October 2026",
+              "detail": "Pages 158–193 were photographed and read blind; pp. 172–173 are two photographs. The photographs are copyright and are not in the repository. The Introduction (pp. 153–157) was not received.",
               "custody_verified": false
             },
             "effort": {
               "level": "bounded_original_review",
               "detail": "Authenticate a finite original-page set and its plans/captions; dating may still require a later feature-specific field record."
             },
-            "next_action": "Keep a pool identity/bearing/date extraction record ready for the exact original pages; retain the unlocated feature as unknown.",
+            "next_action": "None for the bearing. A new plan, survey or dated context for this pool would be a new observation; it does not reopen this recorded row.",
             "freeze": {
-              "status": "not_frozen",
-              "commit": null,
-              "spec_path": null,
+              "status": "frozen_in_arrival_register",
+              "commit": "6fee37615e960da2c68b326b8ed9f91601fab464",
+              "spec_path": "research/preregistration/arrivals/items/kochavi-1972.md",
               "unused_status": "unverified",
-              "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+              "detail": "The arrival register froze the Kallai rows on 9 October 2026 (commit 6fee376), before the pages arrived, and the outcome record scores them as a test. This queue does not certify an unused observation: the church position was already exposed (Highlands p. 733), but the pool position east of the church was new."
             },
             "outcomes": [
               {
@@ -57007,7 +57045,7 @@
                   "All broader geographic claims"
                 ],
                 "claim_scope": "Kallai's particular rock-cut pool assigned to the fixed east-of-Koḥlit branch; not the whole Marjama hypothesis.",
-                "recorded": false
+                "recorded": true
               },
               {
                 "id": "identity-only",
@@ -57041,7 +57079,77 @@
                 "recorded": false
               }
             ],
-            "result_id": "decisions-kallai-pool-plan"
+            "result_id": "decisions-kallai-pool-plan",
+            "recorded_outcome": {
+              "outcome_id": "bearing-or-phase-miss",
+              "row_id": "bearing-or-phase-miss:not-east+undated",
+              "register_row_id": "dec:bearing-or-phase-miss:not-east+undated",
+              "label": "Pool not east of the tell; no feature-specific date",
+              "recorded_utc": "2026-10-19",
+              "records": [
+                "research/preregistration/arrivals/outcomes/kochavi-1972_2026-10-19.json",
+                "research/feature_workbench/decisions/kallai_172-173_extraction_2026-10-19.md",
+                "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md"
+              ],
+              "observation_ids": [
+                "relationships-kallai-location"
+              ],
+              "excluded_classes": {
+                "kohlit": [
+                  "kohlit-c06",
+                  "kohlit-c07",
+                  "kohlit-c09",
+                  "kohlit-c10"
+                ]
+              },
+              "claim_scope": "A pool east of Koḥlit, in the assignments that use Kallai’s pool (samiya-kallai and yanun-marjama-anchor) only. Not the Marjama area, not other pools, not the Jericho assignments.",
+              "note": "The planning outcomes of 8 October call this feature “Kallai’s rock-cut pool”. Kallai’s pages do not call it rock-cut; the planning text is kept as written."
+            },
+            "history": [
+              {
+                "as_of_utc": "2026-10-12",
+                "note": "State before Kallai 1972 pp. 172–173 were read, kept verbatim.",
+                "source_ids": [
+                  "decisions-kallai-unread",
+                  "decisions-marjama-review",
+                  "decisions-active"
+                ],
+                "current_evidence": {
+                  "status": "unknown",
+                  "detail": "Kallai1972 pp.172–173 remain unread. The inspected HA76 p.19 describes settlement work and no pool/bearing/date; the separate church-crypt basin is southwest of the tell and does not locate Kallai's feature.",
+                  "exposure": "already_inspected"
+                },
+                "request": {
+                  "status": "not_requested",
+                  "scope": "No targeted Kallai original-page request is recorded in the reviewed follow-up; the bounded public access pass is closed.",
+                  "delivery": null,
+                  "reply": null,
+                  "source_ids": [
+                    "decisions-marjama-review"
+                  ]
+                },
+                "record_needed": [
+                  "Kallai1972 pp.172–173, title leaf and sites65–66 context",
+                  "Relevant plan/caption identifying the rock-cut pool independently of the crypt basin",
+                  "Location/bearing relative to the tell in the source's reference frame",
+                  "Pool construction/use evidence, with the basis and uncertainty of any date"
+                ],
+                "access": {
+                  "status": "original_not_obtained",
+                  "route": "Exact volume through a supplied copy or library scan",
+                  "detail": "Known NLI/CMHL routes have an access blocker recorded; no renewed broad hunt, purchase or request is scheduled.",
+                  "custody_verified": false
+                },
+                "next_action": "Keep a pool identity/bearing/date extraction record ready for the exact original pages; retain the unlocated feature as unknown.",
+                "freeze": {
+                  "status": "not_frozen",
+                  "commit": null,
+                  "spec_path": null,
+                  "unused_status": "unverified",
+                  "detail": "These are possible consequences, not a frozen archaeological test. Before reserved evidence is inspected, fix the finite reading/feature/phase/datum/axis/unit/tolerance branches and the decision rule; audit prior exposure."
+                }
+              }
+            ]
           },
           {
             "id": "decisions-kenyon-section",
@@ -57575,7 +57683,8 @@
             "worst_case_decisive_outcomes": "The same guarantee, counting only decisive outcomes: the record is obtained and every component it tests is resolved.",
             "best_case": "Classes that some combination of outcomes can leave as the only survivor.",
             "frontier": "For each number of records, the record sets that separate the most class pairs in principle. The unit is one record dependency; access and effort categories are listed, not weighted.",
-            "rank": "Lexicographic: necessary for active-test families, necessary for any family, class pairs separated in active-test families, class pairs separated in all families. Equal keys share a rank."
+            "rank": "Lexicographic: necessary for active-test families, necessary for any family, class pairs separated in active-test families, class pairs separated in all families. Equal keys share a rank.",
+            "recorded_outcome": "An outcome row that an obtained record actually showed (plans.json recorded_outcome). Classes are formed before it is applied, so class names stay as planned and registered; the classes it excludes leave the search."
           },
           "limits": [
             "No probabilities, likelihoods, priors, expected values or information-gain numbers are computed. Every count is a count of logically distinguished classes, pairs or records.",
@@ -57632,7 +57741,7 @@
                 "decisions-active"
               ],
               "roster_note": "The relationships roster is a selected pilot. It does not list every Koḥlit proposal; registry v2 keeps further sites outside it. Separation here is relative to these registered branches only.",
-              "surviving_models": 28,
+              "surviving_models": 20,
               "excluded_models": [
                 {
                   "id": "relationships-jericho-modern-ns1-RB-B-early",
@@ -57765,9 +57874,159 @@
                   "contradicted_predicates": [
                     "pool-east"
                   ]
+                },
+                {
+                  "id": "relationships-samiya-kallai-RB-B-early",
+                  "dims": {
+                    "assignment": "samiya-kallai",
+                    "reading": "RB-B",
+                    "window": "early"
+                  },
+                  "contradicted_predicates": [
+                    "pool-east"
+                  ]
+                },
+                {
+                  "id": "relationships-samiya-kallai-RB-B-extended",
+                  "dims": {
+                    "assignment": "samiya-kallai",
+                    "reading": "RB-B",
+                    "window": "extended"
+                  },
+                  "contradicted_predicates": [
+                    "pool-east"
+                  ]
+                },
+                {
+                  "id": "relationships-samiya-kallai-RB-M-early",
+                  "dims": {
+                    "assignment": "samiya-kallai",
+                    "reading": "RB-M",
+                    "window": "early"
+                  },
+                  "contradicted_predicates": [
+                    "pool-east"
+                  ]
+                },
+                {
+                  "id": "relationships-samiya-kallai-RB-M-extended",
+                  "dims": {
+                    "assignment": "samiya-kallai",
+                    "reading": "RB-M",
+                    "window": "extended"
+                  },
+                  "contradicted_predicates": [
+                    "pool-east"
+                  ]
+                },
+                {
+                  "id": "relationships-samiya-kallai-RB-P-early",
+                  "dims": {
+                    "assignment": "samiya-kallai",
+                    "reading": "RB-P",
+                    "window": "early"
+                  },
+                  "contradicted_predicates": [
+                    "pool-east"
+                  ]
+                },
+                {
+                  "id": "relationships-samiya-kallai-RB-P-extended",
+                  "dims": {
+                    "assignment": "samiya-kallai",
+                    "reading": "RB-P",
+                    "window": "extended"
+                  },
+                  "contradicted_predicates": [
+                    "pool-east"
+                  ]
+                },
+                {
+                  "id": "relationships-yanun-marjama-anchor-RB-L-early",
+                  "dims": {
+                    "assignment": "yanun-marjama-anchor",
+                    "reading": "RB-L",
+                    "window": "early"
+                  },
+                  "contradicted_predicates": [
+                    "pool-east"
+                  ]
+                },
+                {
+                  "id": "relationships-yanun-marjama-anchor-RB-L-extended",
+                  "dims": {
+                    "assignment": "yanun-marjama-anchor",
+                    "reading": "RB-L",
+                    "window": "extended"
+                  },
+                  "contradicted_predicates": [
+                    "pool-east"
+                  ]
                 }
               ],
-              "class_count": 10,
+              "class_count": 6,
+              "recorded_exclusions": [
+                {
+                  "class_id": "kohlit-c06",
+                  "label": "assignment: samiya-kallai; reading: RB-B / RB-M / RB-P; window: early",
+                  "member_count": 3,
+                  "members": [
+                    "relationships-samiya-kallai-RB-B-early",
+                    "relationships-samiya-kallai-RB-M-early",
+                    "relationships-samiya-kallai-RB-P-early"
+                  ],
+                  "task_ids": [
+                    "decisions-kallai-pool"
+                  ],
+                  "row_ids": [
+                    "bearing-or-phase-miss:not-east+undated"
+                  ]
+                },
+                {
+                  "class_id": "kohlit-c07",
+                  "label": "assignment: samiya-kallai; reading: RB-B / RB-M / RB-P; window: extended",
+                  "member_count": 3,
+                  "members": [
+                    "relationships-samiya-kallai-RB-B-extended",
+                    "relationships-samiya-kallai-RB-M-extended",
+                    "relationships-samiya-kallai-RB-P-extended"
+                  ],
+                  "task_ids": [
+                    "decisions-kallai-pool"
+                  ],
+                  "row_ids": [
+                    "bearing-or-phase-miss:not-east+undated"
+                  ]
+                },
+                {
+                  "class_id": "kohlit-c09",
+                  "label": "assignment: yanun-marjama-anchor; reading: RB-L; window: early",
+                  "member_count": 1,
+                  "members": [
+                    "relationships-yanun-marjama-anchor-RB-L-early"
+                  ],
+                  "task_ids": [
+                    "decisions-kallai-pool"
+                  ],
+                  "row_ids": [
+                    "bearing-or-phase-miss:not-east+undated"
+                  ]
+                },
+                {
+                  "class_id": "kohlit-c10",
+                  "label": "assignment: yanun-marjama-anchor; reading: RB-L; window: extended",
+                  "member_count": 1,
+                  "members": [
+                    "relationships-yanun-marjama-anchor-RB-L-extended"
+                  ],
+                  "task_ids": [
+                    "decisions-kallai-pool"
+                  ],
+                  "row_ids": [
+                    "bearing-or-phase-miss:not-east+undated"
+                  ]
+                }
+              ],
               "classes": [
                 {
                   "id": "kohlit-c01",
@@ -57867,46 +58126,6 @@
                   ]
                 },
                 {
-                  "id": "kohlit-c06",
-                  "label": "assignment: samiya-kallai; reading: RB-B / RB-M / RB-P; window: early",
-                  "member_count": 3,
-                  "composition": [
-                    "assignment=samiya-kallai; reading=RB-B|RB-M|RB-P; window=early"
-                  ],
-                  "identical_on": {
-                    "reading": [
-                      "RB-B",
-                      "RB-M",
-                      "RB-P"
-                    ]
-                  },
-                  "members": [
-                    "relationships-samiya-kallai-RB-B-early",
-                    "relationships-samiya-kallai-RB-M-early",
-                    "relationships-samiya-kallai-RB-P-early"
-                  ]
-                },
-                {
-                  "id": "kohlit-c07",
-                  "label": "assignment: samiya-kallai; reading: RB-B / RB-M / RB-P; window: extended",
-                  "member_count": 3,
-                  "composition": [
-                    "assignment=samiya-kallai; reading=RB-B|RB-M|RB-P; window=extended"
-                  ],
-                  "identical_on": {
-                    "reading": [
-                      "RB-B",
-                      "RB-M",
-                      "RB-P"
-                    ]
-                  },
-                  "members": [
-                    "relationships-samiya-kallai-RB-B-extended",
-                    "relationships-samiya-kallai-RB-M-extended",
-                    "relationships-samiya-kallai-RB-P-extended"
-                  ]
-                },
-                {
                   "id": "kohlit-c08",
                   "label": "assignment: yanun-jericho-anchor; reading: RB-L; window: early / extended",
                   "member_count": 2,
@@ -57923,33 +58142,9 @@
                     "relationships-yanun-jericho-anchor-RB-L-early",
                     "relationships-yanun-jericho-anchor-RB-L-extended"
                   ]
-                },
-                {
-                  "id": "kohlit-c09",
-                  "label": "assignment: yanun-marjama-anchor; reading: RB-L; window: early",
-                  "member_count": 1,
-                  "composition": [
-                    "assignment=yanun-marjama-anchor; reading=RB-L; window=early"
-                  ],
-                  "identical_on": {},
-                  "members": [
-                    "relationships-yanun-marjama-anchor-RB-L-early"
-                  ]
-                },
-                {
-                  "id": "kohlit-c10",
-                  "label": "assignment: yanun-marjama-anchor; reading: RB-L; window: extended",
-                  "member_count": 1,
-                  "composition": [
-                    "assignment=yanun-marjama-anchor; reading=RB-L; window=extended"
-                  ],
-                  "identical_on": {},
-                  "members": [
-                    "relationships-yanun-marjama-anchor-RB-L-extended"
-                  ]
                 }
               ],
-              "model_pairs_no_record_separates": 75
+              "model_pairs_no_record_separates": 69
             },
             {
               "id": "xii10",
@@ -57965,6 +58160,7 @@
               "surviving_models": 7,
               "excluded_models": [],
               "class_count": 7,
+              "recorded_exclusions": [],
               "classes": [
                 {
                   "id": "xii10-c01",
@@ -58067,6 +58263,7 @@
               "surviving_models": 288,
               "excluded_models": [],
               "class_count": 6,
+              "recorded_exclusions": [],
               "classes": [
                 {
                   "id": "entry25-c01",
@@ -58328,6 +58525,7 @@
               "surviving_models": 1,
               "excluded_models": [],
               "class_count": 1,
+              "recorded_exclusions": [],
               "classes": [
                 {
                   "id": "entry29-ac94-c01",
@@ -58358,6 +58556,7 @@
               "surviving_models": 1,
               "excluded_models": [],
               "class_count": 1,
+              "recorded_exclusions": [],
               "classes": [
                 {
                   "id": "entry29-wadi-c01",
@@ -58387,6 +58586,7 @@
               "surviving_models": 1,
               "excluded_models": [],
               "class_count": 1,
+              "recorded_exclusions": [],
               "classes": [
                 {
                   "id": "entry49-siloam-c01",
@@ -58402,6 +58602,22 @@
                 }
               ],
               "model_pairs_no_record_separates": 0
+            }
+          ],
+          "recorded_outcomes": [
+            {
+              "task_id": "decisions-kallai-pool",
+              "outcome_id": "bearing-or-phase-miss",
+              "row_id": "bearing-or-phase-miss:not-east+undated",
+              "recorded_utc": "2026-10-19",
+              "excluded_classes": {
+                "kohlit": [
+                  "kohlit-c06",
+                  "kohlit-c07",
+                  "kohlit-c09",
+                  "kohlit-c10"
+                ]
+              }
             }
           ],
           "observation_table": [
@@ -58427,6 +58643,7 @@
               "effort_level": "field_record_audit",
               "freeze_status": "partly_frozen",
               "historical_priority": "high",
+              "recorded_outcome": null,
               "families_affected": [
                 "entry25"
               ],
@@ -58799,6 +59016,7 @@
               "effort_level": "field_record_audit",
               "freeze_status": "not_frozen",
               "historical_priority": "high",
+              "recorded_outcome": null,
               "families_affected": [
                 "entry29-ac94"
               ],
@@ -58881,13 +59099,12 @@
               "scope_note": null,
               "non_discriminating_components": [],
               "request_status": "not_requested",
-              "access_status": "original_not_obtained",
+              "access_status": "pages_obtained",
               "effort_level": "bounded_original_review",
-              "freeze_status": "not_frozen",
+              "freeze_status": "frozen_in_arrival_register",
               "historical_priority": "high",
-              "families_affected": [
-                "kohlit"
-              ],
+              "recorded_outcome": "bearing-or-phase-miss:not-east+undated",
+              "families_affected": [],
               "outcomes": [
                 {
                   "id": "east-period:east+overlaps-early",
@@ -58900,20 +59117,7 @@
                     "bearing": "east",
                     "date": "overlaps-early"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
+                  "surviving_classes": {},
                   "excluded_classes": {},
                   "every_class_survives": true
                 },
@@ -58930,25 +59134,9 @@
                     "bearing": "east",
                     "date": "built-71-135"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c10"
-                    ]
-                  },
-                  "excluded_classes": {
-                    "kohlit": [
-                      "kohlit-c06",
-                      "kohlit-c09"
-                    ]
-                  },
-                  "every_class_survives": false
+                  "surviving_classes": {},
+                  "excluded_classes": {},
+                  "every_class_survives": true
                 },
                 {
                   "id": "bearing-or-phase-miss:east+outside-both",
@@ -58961,25 +59149,9 @@
                     "bearing": "east",
                     "date": "outside-both"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c08"
-                    ]
-                  },
-                  "excluded_classes": {
-                    "kohlit": [
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
-                  "every_class_survives": false
+                  "surviving_classes": {},
+                  "excluded_classes": {},
+                  "every_class_survives": true
                 },
                 {
                   "id": "identity-only:east+undated",
@@ -58992,20 +59164,7 @@
                     "bearing": "east",
                     "date": "undated"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
+                  "surviving_classes": {},
                   "excluded_classes": {},
                   "every_class_survives": true
                 },
@@ -59020,25 +59179,9 @@
                     "bearing": "not-east",
                     "date": "overlaps-early"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c08"
-                    ]
-                  },
-                  "excluded_classes": {
-                    "kohlit": [
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
-                  "every_class_survives": false
+                  "surviving_classes": {},
+                  "excluded_classes": {},
+                  "every_class_survives": true
                 },
                 {
                   "id": "bearing-or-phase-miss:not-east+built-71-135",
@@ -59053,25 +59196,9 @@
                     "bearing": "not-east",
                     "date": "built-71-135"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c08"
-                    ]
-                  },
-                  "excluded_classes": {
-                    "kohlit": [
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
-                  "every_class_survives": false
+                  "surviving_classes": {},
+                  "excluded_classes": {},
+                  "every_class_survives": true
                 },
                 {
                   "id": "bearing-or-phase-miss:not-east+outside-both",
@@ -59084,25 +59211,9 @@
                     "bearing": "not-east",
                     "date": "outside-both"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c08"
-                    ]
-                  },
-                  "excluded_classes": {
-                    "kohlit": [
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
-                  "every_class_survives": false
+                  "surviving_classes": {},
+                  "excluded_classes": {},
+                  "every_class_survives": true
                 },
                 {
                   "id": "bearing-or-phase-miss:not-east+undated",
@@ -59115,25 +59226,19 @@
                     "bearing": "not-east",
                     "date": "undated"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c08"
-                    ]
-                  },
-                  "excluded_classes": {
+                  "surviving_classes": {},
+                  "excluded_classes": {},
+                  "every_class_survives": true,
+                  "recorded": true,
+                  "recorded_utc": "2026-10-19",
+                  "excluded_before_search": {
                     "kohlit": [
                       "kohlit-c06",
                       "kohlit-c07",
                       "kohlit-c09",
                       "kohlit-c10"
                     ]
-                  },
-                  "every_class_survives": false
+                  }
                 },
                 {
                   "id": "identity-only:undetermined+overlaps-early",
@@ -59146,20 +59251,7 @@
                     "bearing": "undetermined",
                     "date": "overlaps-early"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
+                  "surviving_classes": {},
                   "excluded_classes": {},
                   "every_class_survives": true
                 },
@@ -59176,25 +59268,9 @@
                     "bearing": "undetermined",
                     "date": "built-71-135"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c10"
-                    ]
-                  },
-                  "excluded_classes": {
-                    "kohlit": [
-                      "kohlit-c06",
-                      "kohlit-c09"
-                    ]
-                  },
-                  "every_class_survives": false
+                  "surviving_classes": {},
+                  "excluded_classes": {},
+                  "every_class_survives": true
                 },
                 {
                   "id": "bearing-or-phase-miss:undetermined+outside-both",
@@ -59207,25 +59283,9 @@
                     "bearing": "undetermined",
                     "date": "outside-both"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c08"
-                    ]
-                  },
-                  "excluded_classes": {
-                    "kohlit": [
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
-                  "every_class_survives": false
+                  "surviving_classes": {},
+                  "excluded_classes": {},
+                  "every_class_survives": true
                 },
                 {
                   "id": "identity-only:undetermined+undated",
@@ -59238,20 +59298,7 @@
                     "bearing": "undetermined",
                     "date": "undated"
                   },
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
+                  "surviving_classes": {},
                   "excluded_classes": {},
                   "every_class_survives": true
                 },
@@ -59263,20 +59310,7 @@
                   "basis": "recorded",
                   "derivation_ids": [],
                   "components": null,
-                  "surviving_classes": {
-                    "kohlit": [
-                      "kohlit-c01",
-                      "kohlit-c02",
-                      "kohlit-c03",
-                      "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ]
-                  },
+                  "surviving_classes": {},
                   "excluded_classes": {},
                   "every_class_survives": true
                 }
@@ -59295,6 +59329,7 @@
               "effort_level": "bounded_original_review",
               "freeze_status": "not_frozen",
               "historical_priority": "medium",
+              "recorded_outcome": null,
               "families_affected": [
                 "kohlit"
               ],
@@ -59317,11 +59352,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {},
@@ -59346,11 +59377,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {
@@ -59376,11 +59403,7 @@
                       "kohlit-c01",
                       "kohlit-c02",
                       "kohlit-c03",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {
@@ -59411,11 +59434,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {},
@@ -59440,11 +59459,7 @@
                       "kohlit-c01",
                       "kohlit-c03",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {
@@ -59472,11 +59487,7 @@
                     "kohlit": [
                       "kohlit-c01",
                       "kohlit-c03",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {
@@ -59507,11 +59518,7 @@
                       "kohlit-c01",
                       "kohlit-c03",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {
@@ -59536,11 +59543,7 @@
                   "surviving_classes": {
                     "kohlit": [
                       "kohlit-c01",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {
@@ -59567,11 +59570,7 @@
                   "surviving_classes": {
                     "kohlit": [
                       "kohlit-c01",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {
@@ -59600,11 +59599,7 @@
                       "kohlit-c01",
                       "kohlit-c02",
                       "kohlit-c03",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {
@@ -59633,11 +59628,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {},
@@ -59658,11 +59649,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ]
                   },
                   "excluded_classes": {},
@@ -59683,6 +59670,7 @@
               "effort_level": "field_record_audit",
               "freeze_status": "not_frozen",
               "historical_priority": "high",
+              "recorded_outcome": null,
               "families_affected": [
                 "entry49-siloam"
               ],
@@ -59768,6 +59756,7 @@
               "effort_level": "field_record_audit",
               "freeze_status": "not_frozen",
               "historical_priority": "medium",
+              "recorded_outcome": null,
               "families_affected": [
                 "entry29-wadi"
               ],
@@ -59853,6 +59842,7 @@
               "effort_level": "specialist_reading",
               "freeze_status": "frozen",
               "historical_priority": "high",
+              "recorded_outcome": null,
               "families_affected": [
                 "kohlit",
                 "xii10"
@@ -59908,17 +59898,13 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": []
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60058,17 +60044,13 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": []
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60104,9 +60086,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c01"
@@ -60114,9 +60094,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c02",
@@ -60151,9 +60129,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c02"
@@ -60161,9 +60137,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60198,9 +60172,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c03"
@@ -60208,9 +60180,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60245,11 +60215,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c04"
@@ -60289,9 +60255,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c05"
@@ -60299,9 +60263,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60336,9 +60298,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c06"
@@ -60346,9 +60306,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60383,9 +60341,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c07"
@@ -60393,9 +60349,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60431,9 +60385,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c01"
@@ -60441,9 +60393,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c02",
@@ -60478,9 +60428,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60489,9 +60437,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c03",
@@ -60525,11 +60471,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60569,11 +60511,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60610,9 +60548,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60623,9 +60559,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c03",
@@ -60657,9 +60591,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60671,9 +60603,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c03",
@@ -60704,9 +60634,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60716,9 +60644,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c02",
@@ -60753,9 +60679,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c02"
@@ -60763,9 +60687,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60800,11 +60722,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c02",
@@ -60844,11 +60762,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c02",
@@ -60888,9 +60802,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c02",
@@ -60899,9 +60811,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60938,9 +60848,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c03"
@@ -60948,9 +60856,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -60985,11 +60891,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c03",
@@ -61029,9 +60931,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c03",
@@ -61040,9 +60940,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -61078,11 +60976,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c04"
@@ -61122,11 +61016,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c04",
@@ -61168,9 +61058,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c05"
@@ -61178,9 +61066,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -61217,9 +61103,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c06"
@@ -61227,9 +61111,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -61269,9 +61151,7 @@
                       "kohlit-c02",
                       "kohlit-c03",
                       "kohlit-c04",
-                      "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07"
+                      "kohlit-c05"
                     ],
                     "xii10": [
                       "xii10-c07"
@@ -61279,9 +61159,7 @@
                   },
                   "excluded_classes": {
                     "kohlit": [
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -61309,11 +61187,7 @@
                       "kohlit-c03",
                       "kohlit-c04",
                       "kohlit-c05",
-                      "kohlit-c06",
-                      "kohlit-c07",
-                      "kohlit-c08",
-                      "kohlit-c09",
-                      "kohlit-c10"
+                      "kohlit-c08"
                     ],
                     "xii10": [
                       "xii10-c01",
@@ -61402,7 +61276,7 @@
             "every_record_has_an_outcome_leaving_every_class": true,
             "per_family": {
               "kohlit": {
-                "class_pair_count": 45,
+                "class_pair_count": 15,
                 "worst_case_all_outcomes": {
                   "guaranteed_pairs_with_all_records": 0,
                   "minimal_sets": []
@@ -61412,16 +61286,14 @@
                   "minimal_sets": []
                 },
                 "in_principle": {
-                  "separated_pairs_with_all_records": 45,
+                  "separated_pairs_with_all_records": 15,
                   "minimal_sets": [
                     [
-                      "decisions-kallai-pool",
                       "decisions-kenyon-section",
                       "decisions-xii10"
                     ]
                   ],
                   "necessary_records": [
-                    "decisions-kallai-pool",
                     "decisions-kenyon-section",
                     "decisions-xii10"
                   ]
@@ -61433,7 +61305,6 @@
                   "minimal_sets_to_leave_each_alone": {
                     "kohlit-c01": [
                       [
-                        "decisions-kallai-pool",
                         "decisions-kenyon-section",
                         "decisions-xii10"
                       ]
@@ -61484,47 +61355,9 @@
                   {
                     "pair": [
                       "kohlit-c01",
-                      "kohlit-c06"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c01",
-                      "kohlit-c07"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c01",
                       "kohlit-c08"
                     ],
                     "separating_records": [
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c01",
-                      "kohlit-c09"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c01",
-                      "kohlit-c10"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
                       "decisions-xii10"
                     ]
                   },
@@ -61558,51 +61391,9 @@
                   {
                     "pair": [
                       "kohlit-c02",
-                      "kohlit-c06"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c02",
-                      "kohlit-c07"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c02",
                       "kohlit-c08"
                     ],
                     "separating_records": [
-                      "decisions-kenyon-section",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c02",
-                      "kohlit-c09"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c02",
-                      "kohlit-c10"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
                       "decisions-kenyon-section",
                       "decisions-xii10"
                     ]
@@ -61628,51 +61419,9 @@
                   {
                     "pair": [
                       "kohlit-c03",
-                      "kohlit-c06"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c03",
-                      "kohlit-c07"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c03",
                       "kohlit-c08"
                     ],
                     "separating_records": [
-                      "decisions-kenyon-section",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c03",
-                      "kohlit-c09"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c03",
-                      "kohlit-c10"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
                       "decisions-kenyon-section",
                       "decisions-xii10"
                     ]
@@ -61689,78 +61438,6 @@
                   {
                     "pair": [
                       "kohlit-c04",
-                      "kohlit-c06"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c04",
-                      "kohlit-c07"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c04",
-                      "kohlit-c08"
-                    ],
-                    "separating_records": [
-                      "decisions-kenyon-section",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c04",
-                      "kohlit-c09"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c04",
-                      "kohlit-c10"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c05",
-                      "kohlit-c06"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c05",
-                      "kohlit-c07"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c05",
                       "kohlit-c08"
                     ],
                     "separating_records": [
@@ -61771,117 +61448,11 @@
                   {
                     "pair": [
                       "kohlit-c05",
-                      "kohlit-c09"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c05",
-                      "kohlit-c10"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-kenyon-section",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c06",
-                      "kohlit-c07"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c06",
                       "kohlit-c08"
                     ],
                     "separating_records": [
-                      "decisions-kallai-pool",
+                      "decisions-kenyon-section",
                       "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c06",
-                      "kohlit-c09"
-                    ],
-                    "separating_records": [
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c06",
-                      "kohlit-c10"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c07",
-                      "kohlit-c08"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c07",
-                      "kohlit-c09"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool",
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c07",
-                      "kohlit-c10"
-                    ],
-                    "separating_records": [
-                      "decisions-xii10"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c08",
-                      "kohlit-c09"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c08",
-                      "kohlit-c10"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool"
-                    ]
-                  },
-                  {
-                    "pair": [
-                      "kohlit-c09",
-                      "kohlit-c10"
-                    ],
-                    "separating_records": [
-                      "decisions-kallai-pool"
                     ]
                   }
                 ],
@@ -61901,14 +61472,6 @@
                   [
                     "kohlit-c01",
                     "kohlit-c05"
-                  ],
-                  [
-                    "kohlit-c01",
-                    "kohlit-c06"
-                  ],
-                  [
-                    "kohlit-c01",
-                    "kohlit-c07"
                   ],
                   [
                     "kohlit-c01",
@@ -61937,30 +61500,6 @@
                   [
                     "kohlit-c04",
                     "kohlit-c05"
-                  ],
-                  [
-                    "kohlit-c06",
-                    "kohlit-c07"
-                  ],
-                  [
-                    "kohlit-c06",
-                    "kohlit-c09"
-                  ],
-                  [
-                    "kohlit-c07",
-                    "kohlit-c10"
-                  ],
-                  [
-                    "kohlit-c08",
-                    "kohlit-c09"
-                  ],
-                  [
-                    "kohlit-c08",
-                    "kohlit-c10"
-                  ],
-                  [
-                    "kohlit-c09",
-                    "kohlit-c10"
                   ]
                 ],
                 "class_pairs_no_record_separates": []
@@ -62672,7 +62211,6 @@
             "minimal_in_principle_sets_all_families": [
               [
                 "decisions-iv17-l656",
-                "decisions-kallai-pool",
                 "decisions-kenyon-section",
                 "decisions-xii10"
               ]
@@ -62681,8 +62219,8 @@
               "active_families": [
                 {
                   "records": 1,
-                  "max_separated_pairs": 42,
-                  "class_pairs": 66,
+                  "max_separated_pairs": 26,
+                  "class_pairs": 36,
                   "sets": [
                     {
                       "tasks": [
@@ -62707,8 +62245,8 @@
                 },
                 {
                   "records": 2,
-                  "max_separated_pairs": 60,
-                  "class_pairs": 66,
+                  "max_separated_pairs": 36,
+                  "class_pairs": 36,
                   "sets": [
                     {
                       "tasks": [
@@ -62727,37 +62265,6 @@
                         },
                         "effort_level": {
                           "bounded_original_review": 1,
-                          "specialist_reading": 1
-                        }
-                      }
-                    }
-                  ],
-                  "best_pairs_per_record": false,
-                  "separates_every_pair": false
-                },
-                {
-                  "records": 3,
-                  "max_separated_pairs": 66,
-                  "class_pairs": 66,
-                  "sets": [
-                    {
-                      "tasks": [
-                        "decisions-kallai-pool",
-                        "decisions-kenyon-section",
-                        "decisions-xii10"
-                      ],
-                      "profile": {
-                        "records": 3,
-                        "request_status": {
-                          "not_requested": 2,
-                          "sent_pending": 1
-                        },
-                        "access_status": {
-                          "original_not_obtained": 2,
-                          "pending_record": 1
-                        },
-                        "effort_level": {
-                          "bounded_original_review": 2,
                           "specialist_reading": 1
                         }
                       }
@@ -62770,8 +62277,8 @@
               "all_families": [
                 {
                   "records": 1,
-                  "max_separated_pairs": 42,
-                  "class_pairs": 81,
+                  "max_separated_pairs": 26,
+                  "class_pairs": 51,
                   "sets": [
                     {
                       "tasks": [
@@ -62796,26 +62303,24 @@
                 },
                 {
                   "records": 2,
-                  "max_separated_pairs": 60,
-                  "class_pairs": 81,
+                  "max_separated_pairs": 41,
+                  "class_pairs": 51,
                   "sets": [
                     {
                       "tasks": [
-                        "decisions-kenyon-section",
+                        "decisions-iv17-l656",
                         "decisions-xii10"
                       ],
                       "profile": {
                         "records": 2,
                         "request_status": {
-                          "not_requested": 1,
-                          "sent_pending": 1
+                          "sent_pending": 2
                         },
                         "access_status": {
-                          "original_not_obtained": 1,
-                          "pending_record": 1
+                          "pending_record": 2
                         },
                         "effort_level": {
-                          "bounded_original_review": 1,
+                          "field_record_audit": 1,
                           "specialist_reading": 1
                         }
                       }
@@ -62826,8 +62331,8 @@
                 },
                 {
                   "records": 3,
-                  "max_separated_pairs": 75,
-                  "class_pairs": 81,
+                  "max_separated_pairs": 51,
+                  "class_pairs": 51,
                   "sets": [
                     {
                       "tasks": [
@@ -62847,39 +62352,6 @@
                         },
                         "effort_level": {
                           "bounded_original_review": 1,
-                          "field_record_audit": 1,
-                          "specialist_reading": 1
-                        }
-                      }
-                    }
-                  ],
-                  "best_pairs_per_record": false,
-                  "separates_every_pair": false
-                },
-                {
-                  "records": 4,
-                  "max_separated_pairs": 81,
-                  "class_pairs": 81,
-                  "sets": [
-                    {
-                      "tasks": [
-                        "decisions-iv17-l656",
-                        "decisions-kallai-pool",
-                        "decisions-kenyon-section",
-                        "decisions-xii10"
-                      ],
-                      "profile": {
-                        "records": 4,
-                        "request_status": {
-                          "not_requested": 2,
-                          "sent_pending": 2
-                        },
-                        "access_status": {
-                          "original_not_obtained": 2,
-                          "pending_record": 2
-                        },
-                        "effort_level": {
-                          "bounded_original_review": 2,
                           "field_record_audit": 1,
                           "specialist_reading": 1
                         }
@@ -62899,12 +62371,12 @@
               "rank_key": {
                 "necessary_for_active_families": 2,
                 "necessary_for_families": 2,
-                "active_separated_pairs": 42,
-                "all_separated_pairs": 42
+                "active_separated_pairs": 26,
+                "all_separated_pairs": 26
               },
               "reasons": [
                 "Necessary: every smallest record set that separates the Koḥlit relationship branches (entries 11 and 60) classes includes it.",
-                "Separates 21 class pairs in Koḥlit relationship branches (entries 11 and 60) in principle; it can exclude 3 classes.",
+                "Separates 5 class pairs in Koḥlit relationship branches (entries 11 and 60) in principle; it can exclude 1 classes.",
                 "Necessary: every smallest record set that separates the XII 10 second-word letter strings R1–R7 classes includes it.",
                 "Separates 21 class pairs in XII 10 second-word letter strings R1–R7 in principle; it can exclude 7 classes.",
                 "If its outcome is decisive, it is guaranteed to separate 21 class pairs in XII 10 second-word letter strings R1–R7.",
@@ -62913,12 +62385,10 @@
               ],
               "per_family": {
                 "kohlit": {
-                  "separated_pairs": 21,
+                  "separated_pairs": 5,
                   "blocks": 2,
                   "classes_it_can_exclude": [
-                    "kohlit-c08",
-                    "kohlit-c09",
-                    "kohlit-c10"
+                    "kohlit-c08"
                   ],
                   "guaranteed_pairs_all_outcomes": 0,
                   "guaranteed_pairs_decisive_outcomes": 0,
@@ -62972,18 +62442,18 @@
               "rank_key": {
                 "necessary_for_active_families": 1,
                 "necessary_for_families": 1,
-                "active_separated_pairs": 30,
-                "all_separated_pairs": 30
+                "active_separated_pairs": 14,
+                "all_separated_pairs": 14
               },
               "reasons": [
                 "Necessary: every smallest record set that separates the Koḥlit relationship branches (entries 11 and 60) classes includes it.",
-                "Separates 30 class pairs in Koḥlit relationship branches (entries 11 and 60) in principle; it can exclude 4 classes.",
+                "Separates 14 class pairs in Koḥlit relationship branches (entries 11 and 60) in principle; it can exclude 4 classes.",
                 "4 of its outcomes leave every class alive, so it guarantees nothing in the worst case.",
                 "Recorded access: request not_requested, access original_not_obtained, effort bounded_original_review, freeze not_frozen."
               ],
               "per_family": {
                 "kohlit": {
-                  "separated_pairs": 30,
+                  "separated_pairs": 14,
                   "blocks": 5,
                   "classes_it_can_exclude": [
                     "kohlit-c02",
@@ -63033,72 +62503,6 @@
             },
             {
               "rank": 3,
-              "task_id": "decisions-kallai-pool",
-              "rank_key": {
-                "necessary_for_active_families": 1,
-                "necessary_for_families": 1,
-                "active_separated_pairs": 28,
-                "all_separated_pairs": 28
-              },
-              "reasons": [
-                "Necessary: every smallest record set that separates the Koḥlit relationship branches (entries 11 and 60) classes includes it.",
-                "Separates 28 class pairs in Koḥlit relationship branches (entries 11 and 60) in principle; it can exclude 4 classes.",
-                "5 of its outcomes leave every class alive, so it guarantees nothing in the worst case.",
-                "Recorded access: request not_requested, access original_not_obtained, effort bounded_original_review, freeze not_frozen."
-              ],
-              "per_family": {
-                "kohlit": {
-                  "separated_pairs": 28,
-                  "blocks": 3,
-                  "classes_it_can_exclude": [
-                    "kohlit-c06",
-                    "kohlit-c07",
-                    "kohlit-c09",
-                    "kohlit-c10"
-                  ],
-                  "guaranteed_pairs_all_outcomes": 0,
-                  "guaranteed_pairs_decisive_outcomes": 0,
-                  "necessary": true
-                },
-                "xii10": {
-                  "separated_pairs": 0,
-                  "blocks": 1,
-                  "classes_it_can_exclude": [],
-                  "guaranteed_pairs_all_outcomes": 0,
-                  "guaranteed_pairs_decisive_outcomes": 0,
-                  "necessary": false
-                },
-                "entry25": {
-                  "separated_pairs": 0,
-                  "blocks": 1,
-                  "classes_it_can_exclude": [],
-                  "guaranteed_pairs_all_outcomes": 0,
-                  "guaranteed_pairs_decisive_outcomes": 0,
-                  "necessary": false
-                }
-              },
-              "outcomes_where_every_class_survives": [
-                "east-period:east+overlaps-early",
-                "identity-only:east+undated",
-                "identity-only:undetermined+overlaps-early",
-                "identity-only:undetermined+undated",
-                "pages-inconclusive"
-              ],
-              "profile": {
-                "records": 1,
-                "request_status": {
-                  "not_requested": 1
-                },
-                "access_status": {
-                  "original_not_obtained": 1
-                },
-                "effort_level": {
-                  "bounded_original_review": 1
-                }
-              }
-            },
-            {
-              "rank": 4,
               "task_id": "decisions-iv17-l656",
               "rank_key": {
                 "necessary_for_active_families": 0,
@@ -63165,7 +62569,7 @@
               }
             },
             {
-              "rank": 5,
+              "rank": 4,
               "task_id": "decisions-jericho-contacts",
               "rank_key": {
                 "necessary_for_active_families": 0,
@@ -63233,7 +62637,76 @@
               }
             },
             {
-              "rank": 5,
+              "rank": 4,
+              "task_id": "decisions-kallai-pool",
+              "rank_key": {
+                "necessary_for_active_families": 0,
+                "necessary_for_families": 0,
+                "active_separated_pairs": 0,
+                "all_separated_pairs": 0
+              },
+              "reasons": [
+                "Outcome recorded 2026-10-19: row bearing-or-phase-miss:not-east+undated. It excluded kohlit: kohlit-c06, kohlit-c07, kohlit-c09, kohlit-c10 before the search.",
+                "It now separates no remaining class.",
+                "13 of its outcomes leave every class alive, so it guarantees nothing in the worst case.",
+                "Recorded access: request not_requested, access pages_obtained, effort bounded_original_review, freeze frozen_in_arrival_register."
+              ],
+              "per_family": {
+                "kohlit": {
+                  "separated_pairs": 0,
+                  "blocks": 1,
+                  "classes_it_can_exclude": [],
+                  "guaranteed_pairs_all_outcomes": 0,
+                  "guaranteed_pairs_decisive_outcomes": 0,
+                  "necessary": false
+                },
+                "xii10": {
+                  "separated_pairs": 0,
+                  "blocks": 1,
+                  "classes_it_can_exclude": [],
+                  "guaranteed_pairs_all_outcomes": 0,
+                  "guaranteed_pairs_decisive_outcomes": 0,
+                  "necessary": false
+                },
+                "entry25": {
+                  "separated_pairs": 0,
+                  "blocks": 1,
+                  "classes_it_can_exclude": [],
+                  "guaranteed_pairs_all_outcomes": 0,
+                  "guaranteed_pairs_decisive_outcomes": 0,
+                  "necessary": false
+                }
+              },
+              "outcomes_where_every_class_survives": [
+                "east-period:east+overlaps-early",
+                "east-period:east+built-71-135",
+                "bearing-or-phase-miss:east+outside-both",
+                "identity-only:east+undated",
+                "bearing-or-phase-miss:not-east+overlaps-early",
+                "bearing-or-phase-miss:not-east+built-71-135",
+                "bearing-or-phase-miss:not-east+outside-both",
+                "bearing-or-phase-miss:not-east+undated",
+                "identity-only:undetermined+overlaps-early",
+                "identity-only:undetermined+built-71-135",
+                "bearing-or-phase-miss:undetermined+outside-both",
+                "identity-only:undetermined+undated",
+                "pages-inconclusive"
+              ],
+              "profile": {
+                "records": 1,
+                "request_status": {
+                  "not_requested": 1
+                },
+                "access_status": {
+                  "pages_obtained": 1
+                },
+                "effort_level": {
+                  "bounded_original_review": 1
+                }
+              }
+            },
+            {
+              "rank": 4,
               "task_id": "decisions-siloam-main-side",
               "rank_key": {
                 "necessary_for_active_families": 0,
@@ -63301,7 +62774,7 @@
               }
             },
             {
-              "rank": 5,
+              "rank": 4,
               "task_id": "decisions-wadi-bath-contact",
               "rank_key": {
                 "necessary_for_active_families": 0,
@@ -63378,13 +62851,8 @@
               },
               {
                 "predicate": "graves-at-mouth",
-                "subject": "samiya-north-bronze-tombs",
-                "models": 4
-              },
-              {
-                "predicate": "graves-at-mouth",
                 "subject": "unassigned role",
-                "models": 4
+                "models": 2
               },
               {
                 "predicate": "joint-accessibility",
@@ -63399,7 +62867,7 @@
               {
                 "predicate": "joint-accessibility",
                 "subject": "unassigned role",
-                "models": 8
+                "models": 2
               },
               {
                 "predicate": "opening-concealed",
@@ -63417,11 +62885,6 @@
                 "models": 2
               },
               {
-                "predicate": "opening-concealed",
-                "subject": "unassigned role",
-                "models": 2
-              },
-              {
                 "predicate": "opening-north",
                 "subject": "jericho-cistern-ns1",
                 "models": 2
@@ -63434,22 +62897,17 @@
               {
                 "predicate": "opening-north",
                 "subject": "jericho-shaft-d9",
-                "models": 2
-              },
-              {
-                "predicate": "opening-north",
-                "subject": "unassigned role",
                 "models": 2
               },
               {
                 "predicate": "pit-at-yanun",
                 "subject": "unassigned role",
-                "models": 4
+                "models": 2
               },
               {
                 "predicate": "pit-north",
                 "subject": "unassigned role",
-                "models": 10
+                "models": 2
               },
               {
                 "predicate": "pit-period",
@@ -63464,17 +62922,12 @@
               {
                 "predicate": "pit-period",
                 "subject": "unassigned role",
-                "models": 10
+                "models": 2
               },
               {
                 "predicate": "pool-north-corner",
                 "subject": "jericho-historical-basin",
                 "models": 20
-              },
-              {
-                "predicate": "pool-north-corner",
-                "subject": "marjama-kallai-pool",
-                "models": 8
               },
               {
                 "predicate": "pool-period",
@@ -63579,9 +63032,7 @@
               "in_queue": true,
               "can_exclude": {
                 "kohlit": [
-                  "kohlit-c08",
-                  "kohlit-c09",
-                  "kohlit-c10"
+                  "kohlit-c08"
                 ],
                 "xii10": [
                   "xii10-c01",
@@ -63594,7 +63045,7 @@
                 ]
               },
               "separated_pairs": {
-                "kohlit": 21,
+                "kohlit": 5,
                 "xii10": 21
               },
               "components": [
@@ -63643,17 +63094,8 @@
               "component": "date",
               "label": "Pool construction or accessible-use date",
               "in_queue": true,
-              "can_exclude": {
-                "kohlit": [
-                  "kohlit-c06",
-                  "kohlit-c07",
-                  "kohlit-c09",
-                  "kohlit-c10"
-                ]
-              },
-              "separated_pairs": {
-                "kohlit": 28
-              }
+              "can_exclude": {},
+              "separated_pairs": {}
             },
             {
               "question_type": "construction_contact",
@@ -63668,7 +63110,7 @@
                 ]
               },
               "separated_pairs": {
-                "kohlit": 16
+                "kohlit": 8
               }
             },
             {
@@ -63686,7 +63128,7 @@
                 ]
               },
               "separated_pairs": {
-                "kohlit": 28
+                "kohlit": 12
               }
             },
             {
@@ -63782,23 +63224,15 @@
               "component": "bearing",
               "label": "Pool bearing from the Marjama tell",
               "in_queue": true,
-              "can_exclude": {
-                "kohlit": [
-                  "kohlit-c06",
-                  "kohlit-c07",
-                  "kohlit-c09",
-                  "kohlit-c10"
-                ]
-              },
-              "separated_pairs": {
-                "kohlit": 24
-              }
+              "can_exclude": {},
+              "separated_pairs": {}
             }
           ],
           "findings": [
+            "Recorded outcome (2026-10-19): decisions-kallai-pool row bearing-or-phase-miss:not-east+undated excluded kohlit: kohlit-c06, kohlit-c07, kohlit-c09, kohlit-c10. These classes left the search; the other classes keep their planned names.",
             "Every record has an inconclusive, partial or not-obtained outcome under which every class survives. No set of records guarantees any separation in the worst case.",
-            "Koḥlit relationship branches (entries 11 and 60): 28 surviving models collapse into 10 classes.",
-            "Koḥlit relationship branches (entries 11 and 60): the smallest record set that can separate every class is {decisions-kallai-pool, decisions-kenyon-section, decisions-xii10}; necessary records: decisions-kallai-pool, decisions-kenyon-section, decisions-xii10.",
+            "Koḥlit relationship branches (entries 11 and 60): 20 surviving models collapse into 6 classes.",
+            "Koḥlit relationship branches (entries 11 and 60): the smallest record set that can separate every class is {decisions-kenyon-section, decisions-xii10}; necessary records: decisions-kenyon-section, decisions-xii10.",
             "Koḥlit relationship branches (entries 11 and 60): even decisive outcomes guarantee no separation, because a compatible verdict never excludes another branch.",
             "Koḥlit relationship branches (entries 11 and 60): no queued record can exclude kohlit-c01; at best the queue narrows the roster to it.",
             "XII 10 second-word letter strings R1–R7: 7 surviving models collapse into 7 classes.",
@@ -63820,6 +63254,8 @@
         "decisions-outreach",
         "decisions-iv17-phase",
         "decisions-iv17-unread-file",
+        "decisions-kallai-pages",
+        "decisions-kallai-outcome",
         "decisions-kallai-unread",
         "decisions-marjama-review",
         "decisions-kenyon-text",

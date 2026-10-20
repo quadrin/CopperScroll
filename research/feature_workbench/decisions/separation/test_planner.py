@@ -167,18 +167,22 @@ class RealDataTests(unittest.TestCase):
         self.assertEqual(len(survivors(self.letters,"xii10-tail","unresolved")),7)
 
     def test_existing_contradictions_are_limited_to_named_assignments(self):
+        # The saved 12 October results had 12 exclusions (1898 reservoir, crypt
+        # basin). Kallai 1972 pp. 172-173 (19 October 2026) add the eight
+        # branches that use Kallai's pool; no other assignment is excluded.
         excluded=self.relationships["excluded_by_existing_evidence"]
-        self.assertEqual(len(excluded),12)
-        self.assertEqual({b["assignment_id"] for b in excluded},{"jericho-modern-ns1","samiya-crypt"})
-        self.assertEqual(len(self.relationships["hypotheses"]),28)
-        self.assertEqual(len({h["family_id"] for h in self.relationships["hypotheses"]}),14)
+        self.assertEqual(len(excluded),20)
+        self.assertEqual({b["assignment_id"] for b in excluded},
+                         {"jericho-modern-ns1","samiya-crypt","samiya-kallai","yanun-marjama-anchor"})
+        self.assertEqual(len(self.relationships["hypotheses"]),20)
+        self.assertEqual(len({h["family_id"] for h in self.relationships["hypotheses"]}),10)
 
     def test_archaeology_never_predicts_absence_at_alternative_site(self):
         for h in self.relationships["hypotheses"]:
             if h["assignment_id"].startswith("jericho-"):
                 self.assertIsNone(h["predictions"]["kallai-pool-east"])
         result=analyze(self.relationships,self.dependencies,"all_planning")
-        self.assertEqual(result["class_count"],5)
+        self.assertEqual(result["class_count"],4)  # 5 in the saved 12 October results
         self.assertEqual(result["attainable_pair_count"],0)
         self.assertFalse(result["perfect_separation_conditional_on_decisive_results"])
 
@@ -203,7 +207,10 @@ class RealDataTests(unittest.TestCase):
 
     def test_all_queue_outcomes_and_source_pointers_preserved(self):
         self.assertEqual(len(self.inputs["imported_queue"]),7)
-        self.assertTrue(all(not o["recorded"] for task in self.inputs["imported_queue"] for o in task["outcomes"]))
+        recorded=[(task["task_id"],o["id"]) for task in self.inputs["imported_queue"] for o in task["outcomes"] if o["recorded"]]
+        self.assertEqual(recorded,[("decisions-kallai-pool","bearing-or-phase-miss")])
+        kallai=next(task for task in self.inputs["imported_queue"] if task["task_id"]=="decisions-kallai-pool")
+        self.assertEqual(kallai["current_evidence"]["status"],"contradicted")
         self.assertTrue(all((REPO_ROOT / source["repo_path"]).is_file() for source in self.inputs["input_sources"]))
         for d in self.inputs["domains"]:
             self.assertTrue(all(o["source_ids"] for o in d["observations"]))
