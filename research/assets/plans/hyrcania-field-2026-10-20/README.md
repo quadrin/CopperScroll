@@ -54,6 +54,19 @@ The owner relayed this by message at 22:33 local time. Achia Kohn-Tavor's view, 
   - Neither source puts a royal tomb in the tunnels.
 - **Bearing:** the tunnel purpose remains unknown. The self-sealing idea (flood silt fills the tunnels) agrees with the rubble fill in 08937. It agrees equally with ordinary post-use silting, so it can't tell the readings apart. No reading, identification or confidence level changed.
 
+## Owner's follow-up (20 Oct 2026, 22:57 local)
+
+- **Lamp niches with soot:** present, per the owner. They are not in the photos above. Soot can come from any later visitor (Bedouin before 1960, the 1960 expedition, 2000–04), so niches alone don't date the cutting.
+- **End walls:** the owner photographed a face that he says is the end. There are two phone selfies and one low-resolution frame (chat attachments, not in Drive).
+  - The face behind him has the same coarse diagonal pick scars as the side walls. There is no dressing, no plaster and no blocking masonry.
+  - INFERENCE: this is a working face where the cutting stopped, which fits an unfinished or abandoned project.
+  - Caveat: from these frames it isn't certain that the face is the tunnel's end.
+- **Pottery:** the owner says pottery was seen at the site. He photographed one sherd that he has with him (IMG_0415–0421, iPhone, photographed after the visit).
+  - It is a small wheel-made body sherd in a red-orange fabric, with grey edges and a white crust. One surface has a faint horizontal ridge.
+  - It has no rim, handle, base or decoration, so it is **not datable** from photos. A plain body sherd in this fabric can belong anywhere from Hellenistic to Early Islamic times.
+  - Its findspot (tunnel fill, spoil heap or wadi bed) isn't recorded.
+  - The HEIC files carry the phone's location at the time of the photo, which was not the site. They are not kept in the repo.
+
 ## Still needed from this visit
 
 - The camera originals.
