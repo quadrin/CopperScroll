@@ -49,8 +49,38 @@ class RelationshipTests(unittest.TestCase):
         self.assertEqual("unknown", self.check("jericho-historical-ns1", "pool-north-corner")["status"])
 
     def test_unlocated_pool_is_unknown_not_miss(self):
+        # Before 19 October 2026 the Kallai pool had no position. An unlocated
+        # pool must stay unknown; restore that state in a copy of the model.
+        model = json.loads(json.dumps(self.model))
+        location = next(o for o in model["observations"] if o["id"] == "relationships-kallai-location")
+        location["value"]["asserted"] = None
         for predicate in ("pool-east", "pool-period"):
-            self.assertEqual("unknown", self.check("samiya-kallai", predicate)["status"])
+            check = EVAL.evaluate_predicate(self.predicate(predicate), self.assignment("samiya-kallai"), model["windows"][0], model)
+            self.assertEqual("unknown", check["status"])
+
+    def test_kallai_pool_west_of_tell_is_a_miss_for_its_assignments_only(self):
+        # Kallai 1972 pp. 172-173: the pool adjoins the church on the east and the
+        # church is at the western foot of the tell, so the pool is not east of it.
+        for assignment in ("samiya-kallai", "yanun-marjama-anchor"):
+            for window in (0, 1):
+                check = self.check(assignment, "pool-east", window)
+                self.assertEqual("contradicted", check["status"])
+                self.assertEqual(["relationships-kallai-location"], check["value"]["observation_ids"])
+                self.assertIn("west of the tell", check["detail"])
+                self.assertIn("p. 173", check["detail"])
+                # The pool stays undated: no phase miss is added.
+                self.assertEqual("unknown", self.check(assignment, "pool-period", window)["status"])
+        contradicted = {b["assignment_id"] for b in self.module["data"]["branches"]
+                        if self.results[b["result_id"]]["status"] == "contradicted"}
+        self.assertEqual(contradicted, {"jericho-modern-ns1", "samiya-crypt", "samiya-kallai", "yanun-marjama-anchor"})
+        for assignment in ("jericho-historical-ns1", "jericho-d9", "jericho-quarry", "yanun-jericho-anchor"):
+            self.assertNotEqual("contradicted", self.check(assignment, "pool-east")["status"])
+        sources = {s["id"]: s for s in self.model["sources"]}
+        self.assertEqual("already_inspected", sources["relationships-kallai"]["inspection"])
+        identity = next(o for o in self.model["observations"] if o["id"] == "relationships-kallai-crypt-identity")
+        self.assertIsNone(identity["value"]["asserted"])
+        form = next(o for o in self.model["observations"] if o["id"] == "relationships-kallai-form")
+        self.assertIs(form["value"]["rock_cut_stated"], False)
 
     def test_southwest_crypt_assignment_is_retained_as_miss(self):
         check = self.check("samiya-crypt", "pool-east")
@@ -88,8 +118,10 @@ class RelationshipTests(unittest.TestCase):
 
     def test_no_complete_branch_claims_a_match(self):
         statuses = [self.results[b["result_id"]]["status"] for b in self.module["data"]["branches"]]
-        self.assertEqual(12, statuses.count("contradicted"))
-        self.assertEqual(28, statuses.count("unknown"))
+        # 12 contradicted before 19 October 2026; Kallai pp. 172-173 add the
+        # eight branches whose pool is Kallai's pool.
+        self.assertEqual(20, statuses.count("contradicted"))
+        self.assertEqual(20, statuses.count("unknown"))
         self.assertNotIn("compatible", statuses)
         self.assertIsNone(self.module["data"]["regional_denominator"])
         self.assertIsNone(self.module["data"]["unused_prediction"])

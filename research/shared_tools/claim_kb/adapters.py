@@ -169,7 +169,9 @@ def build_graph(root: Path):
         if t['id'] not in {'decisions-xii10','decisions-iv17-l656','decisions-kallai-pool','decisions-kenyon-section'}:
             continue
         payload = {k:t[k] for k in ('claim','record_needed','freeze','outcomes','current_evidence')}
-        for field in ('registered_readings','cut_letter_candidates'):
+        # A recorded outcome travels with its target and record files; the
+        # acquisition record itself stays a target, not an observation.
+        for field in ('registered_readings','cut_letter_candidates','recorded_outcome','history'):
             if field in t:payload[field]=t[field]
         payload['actual_observation'] = False
         sources = [s for s in t['source_ids'] if s in used_sources]

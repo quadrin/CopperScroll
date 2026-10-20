@@ -1134,11 +1134,10 @@
     "B": "UNKNOWN"
    },
    "workbench": {
-    "surviving_assignments": [
-     "samiya-kallai"
-    ],
+    "surviving_assignments": [],
     "contradicted_assignments": [
-     "samiya-crypt"
+     "samiya-crypt",
+     "samiya-kallai"
     ]
    },
    "screens": [
@@ -1712,10 +1711,11 @@
    "rarity": null,
    "workbench": {
     "surviving_assignments": [
-     "yanun-jericho-anchor",
-     "yanun-marjama-anchor"
+     "yanun-jericho-anchor"
     ],
-    "contradicted_assignments": []
+    "contradicted_assignments": [
+     "yanun-marjama-anchor"
+    ]
    },
    "screens": [],
    "selection_relations": [

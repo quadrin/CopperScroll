@@ -122,7 +122,7 @@
     },
     {
       "id": "marjama-kallai-pool",
-      "name": "Kallai's unlocated rock-cut pool",
+      "name": "Kallai's vaulted pool east of the church (site 65)",
       "kind": "pool_report",
       "site": "Kh. el-Marjama",
       "geometry": null
@@ -240,11 +240,12 @@
     },
     {
       "id": "relationships-kallai",
-      "title": "Kallai rock-cut-pool source dependency",
-      "citation": "Kallai chapter in Kochavi (ed.), Judaea, Samaria and the Golan: Archaeological Survey 1967–1968 (1972), pp. 172–173; sites 65–66 context remains unread",
-      "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+      "title": "Kallai 1972, site 65 (Kh. Marjame): church, pool and tell",
+      "citation": "Z. Kallai, survey of Benjamin and Mount Ephraim, in M. Kochavi (ed.), Judaea, Samaria and the Golan: Archaeological Survey 1967–1968 (1972), p. 172 (spring south of the tell; Byzantine church at the foot of the tell on its west side; rock-cut moat on the north) and p. 173 (water pool with remains of its roofing vault, adjoining the church on the east). Library copy photographed by the owner and read blind on 19 October 2026; the Introduction (pp. 153–157) was not received.",
+      "repo_path": "research/feature_workbench/decisions/kallai_172-173_extraction_2026-10-19.md",
       "url": "https://www.nli.org.il/he/books/NNL_ALEPH990019622650205171/NLI",
-      "inspection": "not_inspected"
+      "inspection": "already_inspected",
+      "original_campaign": "Kallai survey of Benjamin and Mount Ephraim, 1967–1968 (Highlands p. 733 cites this survey for the church)"
     },
     {
       "id": "inventory-puech-entry25",
@@ -1794,9 +1795,23 @@
       "inspection": "not_inspected"
     },
     {
+      "id": "decisions-kallai-pages",
+      "title": "Kallai 1972 pp. 172–173, blind extraction",
+      "citation": "Kallai, in Kochavi (ed.) 1972, p. 172 (site 65: spring south of the tell; Byzantine church at the foot of the tell on its west side; rock-cut moat on the north) and p. 173 (water pool with remains of its roofing vault, adjoining the church on the east; site 66). Extracted 19 October 2026 from the owner’s photographs of a library copy; the photographs are not in the repository.",
+      "repo_path": "research/feature_workbench/decisions/kallai_172-173_extraction_2026-10-19.md",
+      "inspection": "already_inspected"
+    },
+    {
+      "id": "decisions-kallai-outcome",
+      "title": "Arrival outcome record, Kochavi 1972",
+      "citation": "Scored row dec:bearing-or-phase-miss:not-east+undated; register commit 6fee37615e960da2c68b326b8ed9f91601fab464; arrived 19 October 2026; part 2 (pp. 158–193) in kochavi-1972_2026-10-19b.json",
+      "repo_path": "research/preregistration/arrivals/outcomes/kochavi-1972_2026-10-19.json",
+      "inspection": "derived"
+    },
+    {
       "id": "decisions-kallai-unread",
-      "title": "Uninspected Kallai pool pages",
-      "citation": "Kallai, Survey of the Land of Benjamin and Mt. Ephraim, in Kochavi (ed.) 1972, pp.153–196; target pp.172–173, sites 65–66, title leaf and relevant plans/captions",
+      "title": "Kallai chapter: parts still unread",
+      "citation": "Kallai, Survey of the Land of Benjamin and Mt. Ephraim, in Kochavi (ed.) 1972: the Introduction, pp. 153–157 (site 65 refers to it for the identification), was not received. Pages 158–193, with pp. 172–173 and sites 65–66, were read on 19 October 2026 (decisions-kallai-pages).",
       "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
       "inspection": "not_inspected",
       "url": "https://www.nli.org.il/he/books/NNL_ALEPH990019622650205171/NLI"
@@ -1804,7 +1819,7 @@
     {
       "id": "decisions-marjama-review",
       "title": "Kh. el-Marjama source and access review",
-      "citation": "B follow-up: supplied HA 76 (1981) p.19 inspected; no pool/bearing/date; Kallai 1972 pp.172–173 remain unread after the 115-document audit",
+      "citation": "B follow-up: supplied HA 76 (1981) p.19 inspected; no pool/bearing/date; Kallai 1972 pp.172–173 were unread after the 115-document audit (8 October) and were read on 19 October 2026 (last section of the note)",
       "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
       "inspection": "derived"
     },
@@ -2207,14 +2222,34 @@
       "property": "east_of",
       "value": {
         "reference_feature_id": "marjama-tell",
-        "asserted": null
+        "asserted": false
       },
       "evidence_kind": "inference",
       "source_ids": [
         "relationships-kallai"
       ],
       "exposure": "derived",
-      "note": "Kallai’s original pp. 172–173 remain unread and the reported rock-cut pool remains unlocated. HA 76 p. 19 describes settlement excavation and supplies no pool or bearing."
+      "note": "EVIDENCE: Kallai p. 173 puts a water pool, with remains of its roofing vault, against the church on its east side. EVIDENCE: Kallai p. 172 puts the Byzantine church (14 × 10.5 m, mosaic floor) at the foot of the tell on its west side. INFERENCE: the pool is between the church and the tell, at the western foot of the tell. It is west of the tell, not east. This contradicts east-of-anchor only for the assignments that use this pool; it does not exclude other pools or features in the Marjama area. Until 19 October 2026 these pages were unread and this relation was unknown.",
+      "reference_frame": "Kallai’s qualitative relations pool–church (p. 173) and church–tell (p. 172); no plan, surveyed bearing, distance or coordinate",
+      "uncertainty": "Qualitative position only. Kallai gives no plan, size or distance for the pool."
+    },
+    {
+      "id": "relationships-kallai-form",
+      "feature_id": "marjama-kallai-pool",
+      "property": "reported_form",
+      "value": {
+        "reference_feature_id": null,
+        "description": "water pool with remains of its roofing vault",
+        "rock_cut_stated": false,
+        "crypt_mentioned": false,
+        "dimensions": null
+      },
+      "evidence_kind": "observed",
+      "source_ids": [
+        "relationships-kallai"
+      ],
+      "exposure": "already_inspected",
+      "note": "EVIDENCE: Kallai p. 173 describes a water pool with remains of its roofing vault. He gives no size, does not call it rock-cut and mentions no crypt. The earlier project label “rock-cut pool” did not come from these pages."
     },
     {
       "id": "relationships-kallai-chronology",
@@ -2228,11 +2263,26 @@
       },
       "evidence_kind": "inference",
       "source_ids": [
+        "relationships-kallai"
+      ],
+      "exposure": "derived",
+      "note": "EVIDENCE: Kallai pp. 172–173 give no size, construction method or date for the pool. The period list for site 65 is for the whole site and dates no single feature. The pool stays undated. Until 19 October 2026 these pages were unread."
+    },
+    {
+      "id": "relationships-kallai-crypt-identity",
+      "feature_id": "marjama-kallai-pool",
+      "property": "proposed_feature_identity",
+      "value": {
+        "reference_feature_id": "samiya-crypt-basin",
+        "asserted": null
+      },
+      "evidence_kind": "inference",
+      "source_ids": [
         "relationships-kallai",
         "relationships-zohar"
       ],
       "exposure": "derived",
-      "note": "No dated pool phase or physical crosswalk to the crypt basin is established; Kallai’s native pool pages remain unread."
+      "note": "Not settled. EVIDENCE: Kallai pp. 172–173 put the pool against the east side of the church and mention no crypt. EVIDENCE: Zohar (IEJ 30 p. 219) reports that water was once collected in a basin beneath the crypt of the Byzantine church, at the spring. INFERENCE: the two reports can describe one basin or two. This model keeps them as separate features."
     },
     {
       "id": "relationships-samiya-bronze-north",

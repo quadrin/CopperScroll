@@ -60,7 +60,14 @@ class SharedRegisterTests(unittest.TestCase):
         decisions = next(module for module in self.payload["modules"] if module["id"] == "decisions")
         queue = json.loads((build.ROOT / "research/measurements/queue.json").read_text())
         self.assertEqual(decisions["data"]["historical_queue"]["tracks"], queue["tracks"])
-        self.assertTrue(all(outcome["recorded"] is False for task in decisions["data"]["tasks"] for outcome in task["outcomes"]))
+        # Outcomes stay hypothetical unless an obtained record is named in the
+        # task's recorded_outcome. Only Kallai pp. 172-173 (19 October 2026) is.
+        recorded = [(task["id"], outcome["id"]) for task in decisions["data"]["tasks"]
+                    for outcome in task["outcomes"] if outcome["recorded"] is not False]
+        self.assertEqual(recorded, [("decisions-kallai-pool", "bearing-or-phase-miss")])
+        for task in decisions["data"]["tasks"]:
+            if "recorded_outcome" not in task:
+                self.assertTrue(all(outcome["recorded"] is False for outcome in task["outcomes"]))
 
     def test_native_geometry_is_not_promoted_to_world_coordinates(self):
         self.assertTrue(all(feature["geometry"] is None for feature in self.payload["register"]["features"]))

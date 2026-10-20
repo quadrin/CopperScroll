@@ -4,7 +4,7 @@ The [separating-observation planner](separation/RESULTS.md) extends this queue w
 
 `plans.json` specifies seven exact record dependencies and four possible outcomes for each. The evaluator imports all six tracks from `research/measurements/queue.json` unchanged, with the source hash and original dates. Historical execution states and counters remain historical.
 
-The atlas can select `data.tasks[].id`, then an item in `outcomes[]`. `preview()` returns **Possible outcome — not observed**, the conditional consequence and the unchanged current evidence. It never records the selected outcome, sends a request or reopens a closed test. The generated `results` use only each task's recorded evidence status; all seven currently remain unknown.
+The atlas can select `data.tasks[].id`, then an item in `outcomes[]`. `preview()` returns **Possible outcome — not observed**, the conditional consequence and the unchanged current evidence. It never records the selected outcome, sends a request or reopens a closed test. A task can name one outcome that an obtained record showed (`recorded_outcome`, with its record files); that outcome alone has `recorded: true`, and `preview()` labels it **Recorded outcome — observed**. The generated `results` use only each task's recorded evidence status. Six remain unknown. The Kallai task is contradicted: its outcome `bearing-or-phase-miss` was recorded on 19 October 2026.
 
 Run from the repository root:
 
@@ -16,11 +16,29 @@ python -m unittest discover -s research/feature_workbench/decisions -p 'test_*.p
 
 The record dependencies are Manchester XII10; IV/17 permit L-656 and baskets656.17/656.20; Kallai1972 pp.172–173; Kenyon's separate eastern section and Plate111b; and phase-controlled Jericho, Siloam and Wadi hydraulic contacts. Priorities are qualitative, with reasons and access/effort fields. They contain no numerical information-gain or confidence estimates.
 
-The IAA inquiry already sent concerns the regional cave inventory. It is a related pending request, not a verified L-656 request or file holding. Manchester, Jericho, Siloam and Wadi sent-request records retain unverified delivery/replies. Kallai originals and Kenyon's referenced drawings remain uninspected; Kenyon III's text and the Wadi report are already inspected.
+The IAA inquiry already sent concerns the regional cave inventory. It is a related pending request, not a verified L-656 request or file holding. Manchester, Jericho, Siloam and Wadi sent-request records retain unverified delivery/replies. Kenyon's referenced drawings remain uninspected; Kenyon III's text and the Wadi report are already inspected. Kallai pp. 158–193 were read on 19 October 2026; his Introduction (pp. 153–157) was not received.
 
-XII10's letter protocol is frozen at `fd3f334ea2a40c0f8e99921ef663f8b126112fe1`; its unused-observation status remains unverified. Other archaeological decisions here are planning branches. Before a reserved observation is used, the finite feature/reading/phase/datum/axis/unit/tolerance choices and decision rule need an actual freeze and exposure audit. Compatibility alone supplies no identification.
+XII10's letter protocol is frozen at `fd3f334ea2a40c0f8e99921ef663f8b126112fe1`; its unused-observation status remains unverified. The Kallai rows were frozen in the arrival register (commit `6fee37615e960da2c68b326b8ed9f91601fab464`, 9 October 2026) before the pages arrived. Other archaeological decisions here are planning branches. Before a reserved observation is used, the finite feature/reading/phase/datum/axis/unit/tolerance choices and decision rule need an actual freeze and exposure audit. Compatibility alone supplies no identification.
 
 No original source is newly inspected, no activity count changes, and no correspondence, purchase, delivery check or parked acquisition is performed. A future record may resolve only part of a dependency; missing documentation and unexposed contacts remain unknown. A negative deposit conclusion still requires an ancient target volume, phase/datum, excavation reach, disturbance and detection limits.
+
+## Kallai outcome recorded (19 October 2026)
+
+The owner photographed Kallai 1972 pp. 158–193 in a library; a blind reader extracted pp. 172–173 ([extraction](kallai_172-173_extraction_2026-10-19.md), [outcome record](../../preregistration/arrivals/outcomes/kochavi-1972_2026-10-19.json)).
+
+- EVIDENCE (p. 172): the Byzantine church stands at the foot of the tell on its west side. EVIDENCE (p. 173): a water pool, with remains of its roofing vault, adjoins the church on the east. Kallai gives no size, construction or date for the pool, does not call it rock-cut and mentions no crypt.
+- INFERENCE: the pool is at the western foot of the tell, not east of it. The recorded row is `bearing-or-phase-miss:not-east+undated`.
+- In the relationships module, east-of-anchor now fails for `samiya-kallai` and `yanun-marjama-anchor` only. Other Marjama pools and the Jericho assignments are not excluded. Identity with Zohar's church-crypt basin is not settled.
+- `plans.json` keeps the earlier state of this task verbatim in `history`. The planning outcomes keep their 8 October text, including the label "rock-cut pool".
+
+How the search applies a recorded outcome: classes are formed before recorded outcomes are applied, so class names stay as planned and registered. The recorded row then removes its classes from the search. The search checks that current evidence and the recorded row exclude the same models, and that the classes named in `plans.json` are the classes it computes.
+
+Results after the record (the section below is the 8 October state):
+
+- Koḥlit: 20 surviving models in 6 classes, `kohlit-c01` to `-c05` and `kohlit-c08`. The recorded row excluded `kohlit-c06`, `-c07`, `-c09` and `-c10`.
+- The smallest record set that can separate all six Koḥlit classes is XII 10 and the Kenyon section; both are necessary. With IV/17 L-656, these three records separate every class pair in every family.
+- Rank: 1 XII 10 (26 active-family pairs: 5 Koḥlit, 21 string); 2 Kenyon section (14 Koḥlit pairs); 3 IV/17 L-656 (15 Entry 25 pairs). Kallai, the Jericho contacts, Siloam and Wadi share rank 4. Kallai now separates no remaining class.
+- No queued record can exclude `kohlit-c01` (Jericho historical basin with NS1 or D9).
 
 ## Which records separate the surviving models (8 October 2026)
 

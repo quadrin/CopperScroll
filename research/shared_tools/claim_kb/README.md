@@ -39,8 +39,8 @@ python3 research/shared_tools/cli.py kb names
 4. No imported candidate arrangement establishes instruction-period coexistence. Kenyon's later quarrying contradicts same-phase construction; it leaves later joint accessibility unresolved. State-query results preserve this distinction.
 5. `T05-062` records no external ʿAṣla match within its stated search. Queries, corpus descriptions, inspection scope, homograph cautions and incomplete name-specific coverage accompany it.
 6. Changing the quarry/grave dating claim reaches the dependent chronology/accessibility assessments and the original phase diagnostic. Input-file changes also cause query refusal until rebuilding, with persistent reassessment flags for affected evidence-derived results.
-7. Exact image, pool, section, threshold and phase targets retain their possible consequences. The saved minimum-separation planner stays historical: its named Koḥlit dependencies do not fully distinguish its surviving model classes. No possible outcome becomes an observation.
-8. Uninspected Kallai pages, Kenyon drawings and field files remain separate from already inspected reports that lack the needed observation. Partial-inspection qualifications and exact locators travel with the answers.
+7. Exact image, pool, section, threshold and phase targets retain their possible consequences. The saved minimum-separation planner stays historical: its named Koḥlit dependencies do not fully distinguish its surviving model classes. No possible outcome becomes an observation by selection. One outcome is recorded from an obtained record: Kallai pp. 172–173, bearing miss (19 October 2026).
+8. Uninspected sources (Kallai's Introduction, Kenyon drawings, field files) remain separate from already inspected reports that lack the needed observation. Partial-inspection qualifications and exact locators travel with the answers.
 
 `Queries` in `queries.py` exposes these operations as pure Python functions over an exported graph. Outputs retain typed record IDs, locators, branch/window conditions and unknowns. [MCP.md](MCP.md) describes a later read-only wrapper.
 

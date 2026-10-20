@@ -175,6 +175,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 
 ## R07 — Where were Koḥlit, Achor and Sekakah?
 
+19 October 2026: Kallai 1972 pp. 172–173 are read from the owner's library photos. The only pool adjoins the church on its east, and the church is at the tell's western foot, so the pool is west of Kh. el-Marjama and undated; Kallai does not call it rock-cut. The registered row not-east+undated excludes classes c06, c07, c09, c10 (the samiya-kallai and yanun-marjama assignments) for a pool east of Koḥlit; no other class changes. [Result](agent_review_2026-10-07/followup/B_kh_el_marjama.md#19-october-2026-kallai-1972-pp-172173-read).
+
 15 October 2026: Kallai’s preliminary report in HA26 pp19–23 is inspected and mentions Kh.Marjameh, but supplies no pool location/date. Its incomplete regional coverage prevents an absence claim. The requested Kallai1972 pp172–173 remain a distinct missing source. [Exact inspection scope](agent_review_2026-10-07/followup/B_kh_el_marjama.md#15-october-2026-intake-newly-held-preliminary-survey).
 
 12 October applied result: The 12 October Manchester/CBRL replies narrow custody routes without a diagnostic XII10 frame or north-strip observation. [Access evidence](agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026).

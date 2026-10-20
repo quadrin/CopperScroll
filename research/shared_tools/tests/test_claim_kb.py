@@ -90,9 +90,16 @@ class EvidenceInvariants(unittest.TestCase):
         silence=self.by['observation/kallai1968-pool-silence']['payload']['value']
         self.assertFalse(silence['archaeological_absence'])
         self.assertIn('19–23',silence['inspection_scope'])
-        self.assertEqual(self.by['source/relationships-kallai']['payload']['inspection'],'not_inspected')
-        self.assertIn('source/followup-gutfeld2020-fig2',{
-            r['key'] for r in Queries(self.d).uninspected()['uninspected_sources']})
+        # The 1968 silence never stood in for the 1972 pages. Those pages were
+        # read on 19 October 2026 and are a separate source record.
+        kallai1972=self.by['source/relationships-kallai']['payload']
+        self.assertEqual(kallai1972['inspection'],'already_inspected')
+        self.assertIn('p. 173',kallai1972['citation'])
+        self.assertNotEqual(kallai1972['repo_path'],self.by['source/followup-kallai1968']['payload']['repo_path'])
+        uninspected={r['key'] for r in Queries(self.d).uninspected()['uninspected_sources']}
+        self.assertIn('source/followup-gutfeld2020-fig2',uninspected)
+        # Kallai's Introduction (pp. 153-157) was not received and stays uninspected.
+        self.assertIn('source/decisions-kallai-unread',uninspected)
 
     def test_native_plan_inspection_preserves_copy_and_slice_provenance(self):
         source=self.by['source/followup-freikman2020']['payload']
@@ -251,8 +258,17 @@ class EvidenceInvariants(unittest.TestCase):
     def test_kohlit_outcomes_match_current_assessment(self):
         rows=[r for r in self.d['records'] if r['kind']=='evaluation' and r['id'].startswith('relationships-')]
         self.assertEqual(len(rows),40)
-        self.assertEqual(sum(r['payload']['status']=='contradicted' for r in rows),12)
-        self.assertEqual(sum(r['payload']['status']=='unknown' for r in rows),28)
+        # 12/28 until 19 October 2026; Kallai pp. 172-173 add the eight branches
+        # that use Kallai's pool (samiya-kallai, yanun-marjama-anchor).
+        self.assertEqual(sum(r['payload']['status']=='contradicted' for r in rows),20)
+        self.assertEqual(sum(r['payload']['status']=='unknown' for r in rows),20)
+        contradicted={r['payload']['hypothesis_key'] for r in rows if r['payload']['status']=='contradicted'}
+        self.assertEqual(contradicted,{'hypothesis/jericho-modern-ns1','hypothesis/samiya-crypt',
+                                       'hypothesis/samiya-kallai','hypothesis/yanun-marjama-anchor'})
+        kallai=self.by['acquisition/decisions-kallai-pool']['payload']
+        self.assertFalse(kallai['actual_observation'])
+        self.assertEqual(kallai['recorded_outcome']['row_id'],'bearing-or-phase-miss:not-east+undated')
+        self.assertEqual([o['id'] for o in kallai['outcomes'] if o['recorded']],['bearing-or-phase-miss'])
 
     def test_all_eight_queries_return_located_records(self):
         answers=Queries(self.d).demonstrate();self.assertEqual(len(answers),8)

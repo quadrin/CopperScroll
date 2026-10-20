@@ -19,3 +19,5 @@ Prediction `None` means unknown and permits all decisive outcomes; an explicit l
 See [RESULTS.md](RESULTS.md) for the run, acquisition limits and consequences.
 
 12 October integration: acquisition statuses are refreshed from the canonical queue (Manchester’s limited TPA file, the sent L-656 request and Rachel Bar-Nathan’s reported records). Input links now address exact Git blobs, with SHA-256 content pins and the historical baseline retained separately, so refreshed records cannot be mislabelled as bytes from the old baseline. No predicted observation or separation rule changed.
+
+19 October 2026: Kallai 1972 pp. 172–173 put Kallai's pool west of the Marjama tell ([decision record](../README.md#kallai-outcome-recorded-19-october-2026)). The saved `prediction_sets.json` and `results.json` stay the 12 October run; they were not rerun. On the current inputs the relationship evaluator excludes 20 branches (adding `samiya-kallai` and `yanun-marjama-anchor`), and 20 hypotheses in 10 families form 4 classes under this observation menu. The tests check the current inputs.

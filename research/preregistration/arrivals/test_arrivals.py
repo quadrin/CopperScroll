@@ -79,15 +79,25 @@ class BuiltRegister(unittest.TestCase):
             self.assertEqual(expected, got, spec["id"])
 
     def test_xii10_mapping_rule(self):
-        rows = self.items["usc-wsrp-masters-cuts-21-22"]["decision_rows"]
-        self.assertEqual(len(rows), 29)
-        janoah = {"kohlit-c08", "kohlit-c09", "kohlit-c10"}
-        for r in rows:
-            excluded = set(r["excluded"].get("kohlit", []))
-            if "xii10-c04" in r["surviving"]["xii10"]:
-                self.assertEqual(excluded, set(), r["id"])
-            else:
-                self.assertEqual(excluded, janoah, r["id"])
+        # The frozen register: rejecting R4 excludes the three Janoaḥ classes.
+        # A rebuild applies outcomes recorded since registration (Kallai
+        # pp. 172-173, 19 October 2026, removed c09 and c10 from the search),
+        # so its Janoaḥ classes come from its own class labels.
+        for name, register in (("committed", self.committed), ("rebuilt", self.register)):
+            items = {i["id"]: i for i in register["items"]}
+            rows = items["usc-wsrp-masters-cuts-21-22"]["decision_rows"]
+            self.assertEqual(len(rows), 29, name)
+            janoah = {c["id"] for c in register["class_universe"]["decision_classes"]["kohlit"]
+                      if "reading: RB-L" in c["label"]}
+            self.assertTrue(janoah, name)
+            if name == "committed":
+                self.assertEqual(janoah, {"kohlit-c08", "kohlit-c09", "kohlit-c10"})
+            for r in rows:
+                excluded = set(r["excluded"].get("kohlit", []))
+                if "xii10-c04" in r["surviving"]["xii10"]:
+                    self.assertEqual(excluded, set(), f"{name} {r['id']}")
+                else:
+                    self.assertEqual(excluded, janoah, f"{name} {r['id']}")
 
     def test_no_letter_predictions_in_reserved_items(self):
         for iid in XII10_ITEMS:

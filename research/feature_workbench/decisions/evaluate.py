@@ -2,6 +2,9 @@
 
 This module is a planning aid. Selecting an outcome never records a finding,
 changes a request's status, reopens a test, or updates the historical queue.
+An outcome is marked recorded only when its task names it in
+``recorded_outcome`` with the record files, and the task's current evidence
+carries that outcome's status.
 """
 
 from __future__ import annotations
@@ -20,6 +23,7 @@ QUEUE_PATH = "research/measurements/queue.json"
 DISCRIMINATE_PATH = MODULE_DIR / "discriminate.py"
 STATUSES = {"compatible", "contradicted", "unknown", "mixed", "info"}
 REQUEST_STATES = {"sent_pending", "related_request_pending", "not_requested"}
+RECORDED_FIELDS = ("outcome_id", "row_id", "recorded_utc", "records", "claim_scope")
 
 
 def _read_json(path: Path) -> dict:
@@ -77,13 +81,18 @@ def _validate(plans: dict, repo_root: Path) -> None:
             raise ValueError(f"Unknown feature in {task_id}")
         if not set(task["request"]["source_ids"]) <= source_set:
             raise ValueError(f"Unknown request source in {task_id}")
+        recorded = task.get("recorded_outcome")
+        if recorded is not None:
+            _validate_recorded(task, recorded, repo_root)
         outcome_ids: set[str] = set()
         has_inconclusive = False
         for outcome in task["outcomes"]:
             if outcome["id"] in outcome_ids:
                 raise ValueError(f"Duplicate outcome in {task_id}")
             outcome_ids.add(outcome["id"])
-            if outcome["status"] not in STATUSES or outcome["recorded"] is not False:
+            # Only the outcome named by the task's recorded_outcome may be recorded.
+            named = recorded is not None and recorded["outcome_id"] == outcome["id"]
+            if outcome["status"] not in STATUSES or outcome["recorded"] is not named:
                 raise ValueError("Possible outcomes are unrecorded planning branches")
             if not outcome["condition"] or not outcome["claim_scope"]:
                 raise ValueError("Outcome must name its condition and claim scope")
@@ -92,6 +101,22 @@ def _validate(plans: dict, repo_root: Path) -> None:
             has_inconclusive |= outcome["status"] == "unknown"
         if not has_inconclusive:
             raise ValueError(f"Task {task_id} needs an inconclusive outcome")
+
+
+def _validate_recorded(task: dict, recorded: dict, repo_root: Path) -> None:
+    """A recorded outcome needs its record files and must match current evidence."""
+    if any(not recorded.get(field) for field in RECORDED_FIELDS):
+        raise ValueError(f"Recorded outcome of {task['id']} needs {', '.join(RECORDED_FIELDS)}")
+    outcome = next((item for item in task["outcomes"] if item["id"] == recorded["outcome_id"]), None)
+    if outcome is None:
+        raise ValueError(f"Recorded outcome of {task['id']} names no planned outcome")
+    if not (recorded["row_id"] == outcome["id"] or recorded["row_id"].startswith(outcome["id"] + ":")):
+        raise ValueError(f"Recorded row of {task['id']} does not refine its outcome")
+    if task["current_evidence"]["status"] != outcome["status"]:
+        raise ValueError(f"Current evidence of {task['id']} must carry the recorded outcome's status")
+    for path in recorded["records"]:
+        if not (repo_root / path).is_file():
+            raise ValueError(f"Missing outcome record: {path}")
 
 
 def build(repo_root: Path) -> dict:
@@ -134,6 +159,9 @@ def build(repo_root: Path) -> dict:
                     "detail": task["current_evidence"]["detail"],
                     "source_ids": task["source_ids"],
                     "feature_ids": task["feature_ids"],
+                    **({"value": {"recorded_outcome": task["recorded_outcome"]["row_id"],
+                                  "recorded_utc": task["recorded_outcome"]["recorded_utc"]}}
+                       if task.get("recorded_outcome") else {}),
                 },
                 {
                     "id": task["id"] + "-request",
@@ -164,7 +192,7 @@ def build(repo_root: Path) -> dict:
         "number": 6,
         "title": "Decision queue",
         "summary": "Seven bounded record dependencies with finite possible outcomes, their branch consequences and an exact search for the records that separate the surviving models.",
-        "scope": "Planning from the reviewed records as of 8 October 2026; six historical tracks remain as recorded. No outcome selection constitutes an observation or a research result. Discrimination is logical only: no probability or information gain.",
+        "scope": "Planning from the reviewed records as of 8 October 2026; six historical tracks remain as recorded. No outcome selection constitutes an observation or a research result. Discrimination is logical only: no probability or information gain. One outcome is recorded from an obtained record: Kallai pp. 172–173 (19 October 2026).",
         "sources": plans["sources"] + discrimination_spec["sources"],
         "features": [],
         "observations": [],
@@ -184,7 +212,10 @@ def build(repo_root: Path) -> dict:
 
 
 def preview(task_id: str, outcome_id: str, repo_root: Path = DEFAULT_REPO) -> dict:
-    """Return a labelled counterfactual without changing the evidence snapshot."""
+    """Return a labelled counterfactual without changing the evidence snapshot.
+
+    A recorded outcome is labelled as recorded; the preview still changes nothing.
+    """
     snapshot = build(repo_root)
     task = next((item for item in snapshot["data"]["tasks"] if item["id"] == task_id), None)
     if task is None:
@@ -196,7 +227,7 @@ def preview(task_id: str, outcome_id: str, repo_root: Path = DEFAULT_REPO) -> di
         "mode": "planning_only",
         "task_id": task_id,
         "result_id": task["result_id"],
-        "label": "Possible outcome — not observed",
+        "label": "Recorded outcome — observed" if outcome["recorded"] else "Possible outcome — not observed",
         "current_evidence": copy.deepcopy(task["current_evidence"]),
         "possible_outcome": copy.deepcopy(outcome),
         "source_ids": task["source_ids"],
