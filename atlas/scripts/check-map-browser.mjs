@@ -35,6 +35,23 @@ try {
   await page.getByRole('button',{name:'Zoom to site',exact:true}).click();
   await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.siteFrames)>1);
   assert(Number(await page.locator('.maplibregl-canvas').getAttribute('data-site-vertices'))>10000,'Detailed source geometry must actually render, including instanced stones');
+  // The default model is the Minecraft block build read back from the saved world.
+  const caption=page.locator('.map-site-caption');await caption.waitFor();
+  assert.match(await caption.innerText(),/built in Minecraft/,'The default site model is the Minecraft block build');
+  assert.equal(await caption.getByRole('button',{name:'Blocks',exact:true}).getAttribute('aria-pressed'),'true');
+  // One click on the figure enters the block world at eye level; one click leaves it.
+  await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true');
+  const blockStart=await page.locator('.maplibregl-canvas').getAttribute('data-walk-position');
+  if(mobile){const forward=page.getByRole('button',{name:'Forward',exact:true}),r=await forward.boundingBox();await page.mouse.move(r.x+r.width/2,r.y+r.height/2);await page.mouse.down();try{await page.waitForFunction(p=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition!==p,blockStart,{timeout:10000});}finally{await page.mouse.up();}}
+  else{await page.locator('.maplibregl-canvas').focus();await page.keyboard.down('w');try{await page.waitForFunction(p=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition!==p,blockStart,{timeout:10000});}finally{await page.keyboard.up('w');}}
+  await page.getByRole('button',{name:'Back to map',exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='false');
+  // The detailed geometry checks below use the smooth source model.
+  const blockVertices=await page.locator('.maplibregl-canvas').getAttribute('data-site-vertices');
+  await caption.getByRole('button',{name:'Smooth',exact:true}).click();
+  await page.waitForFunction(()=>!/built in Minecraft/.test(document.querySelector('.map-site-caption')?.textContent??'')&&document.querySelector('[data-site-state]')?.dataset.siteState==='ready');
+  await page.waitForFunction(v=>document.querySelector('.maplibregl-canvas')?.dataset.siteVertices!==v,blockVertices);
   await page.getByRole('button',{name:'Zoom in',exact:true}).click();
   await page.getByRole('button',{name:'Zoom out',exact:true}).click();
   await page.getByRole('tab',{name:'Terrain',exact:true}).click();
@@ -135,8 +152,13 @@ try {
   const cameraErrors=await page.evaluate(()=>window.atlasCameraErrors);
   assert(cameraErrors.length>5&&cameraErrors.every(error=>Number.isFinite(error)&&error<.06),'Every sampled walking frame must keep the rendered camera within 6 cm of the character eye');
   if(!mobile){
+   // The figure is a click toggle: dragging it onto the map does not enter eye level.
    const person=await page.getByRole('button',{name:'Walk around this site',exact:true}).boundingBox(),map=await page.locator('.map-canvas').boundingBox();
    await page.mouse.move(person.x+person.width/2,person.y+person.height/2);await page.mouse.down();await page.mouse.move(map.x+map.width/2,map.y+map.height/2,{steps:12});await page.mouse.up();
+   await page.waitForTimeout(400);
+   assert.equal(await page.locator('[data-walking]').getAttribute('data-walking'),'false','Dragging the figure must not enter walking');
+   assert.equal(await page.locator('.map-person-ghost').count(),0,'The figure has no drag ghost');
+   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
    await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='true');await page.getByRole('button',{name:'Back to map',exact:true}).click();
   }
   // The site picker remains usable even while reference material is open.

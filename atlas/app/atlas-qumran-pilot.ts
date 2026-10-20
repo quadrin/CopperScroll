@@ -67,6 +67,10 @@ export function buildQumranPilot(){
  function block(x:number,y:number,z:number,w:number,h:number,d:number,m:T.Material){const o=mesh(blockGeometry,m);o.scale.set(w,h,d);o.position.set(x,y+h/2,z);o.userData.siteBlock=true;return o;}
  // Display relief only. The source-plan channel route below is preserved.
  const height=(x:number,z:number)=>.3+Math.max(0,1-Math.abs(z-2)/23)*1.7+.35*Math.sin(x*.13)*Math.cos(z*.21);
+ // Basin 2 (Ilan–Amit 1989 Fig. 1), sampled from the same plan as the route.
+ const bend=(a:number[],c:number[],b:number[],n=6)=>Array.from({length:n},(_,i)=>{const t=(i+1)/n;return [(1-t)**2*a[0]+2*(1-t)*t*c[0]+t*t*b[0],(1-t)**2*a[1]+2*(1-t)*t*c[1]+t*t*b[1]];});
+ const basinOutline=[[160,1220],...bend([160,1220],[140,1245],[169,1280]),[215,1285],[241,1258],[234,1214]].map(local);
+ const inBasin=(x:number,z:number)=>{let hit=false;for(let i=0,j=basinOutline.length-1;i<basinOutline.length;j=i++){const a=basinOutline[i],b=basinOutline[j];if((a.z>z)!==(b.z>z)&&x<(b.x-a.x)*(z-a.z)/(b.z-a.z)+a.x)hit=!hit;}return hit;};
  const ground=new T.PlaneGeometry(260,220,130,110);ground.rotateX(-Math.PI/2);
  const gp=ground.getAttribute('position'),colours:number[]=[],sourceHeight:number[]=[],indices:number[]=[];
  for(let i=0;i<gp.count;i++){
@@ -74,9 +78,9 @@ export function buildQumranPilot(){
   gp.setY(i,y);sourceHeight.push(y);colours.push(1,1,1,fade);
  }
  const oldIndex=ground.getIndex()!;
- for(let i=0;i<oldIndex.count;i+=3){const a=oldIndex.getX(i),b=oldIndex.getX(i+1),c=oldIndex.getX(i+2);if(colours[a*4+3]+colours[b*4+3]+colours[c*4+3]>.001)indices.push(a,b,c);}
+ for(let i=0;i<oldIndex.count;i+=3){const a=oldIndex.getX(i),b=oldIndex.getX(i+1),c=oldIndex.getX(i+2);if(colours[a*4+3]+colours[b*4+3]+colours[c*4+3]>.001&&!inBasin((gp.getX(a)+gp.getX(b)+gp.getX(c))/3,(gp.getZ(a)+gp.getZ(b)+gp.getZ(c))/3))indices.push(a,b,c);}
  ground.setIndex(indices);ground.setAttribute('color',new T.Float32BufferAttribute(colours,4));ground.setAttribute('sourceHeight',new T.Float32BufferAttribute(sourceHeight,1));ground.computeVertexNormals();
- const apron=mesh(ground,dirt);apron.name='qumran-ground';apron.castShadow=false;apron.renderOrder=-3;apron.userData.walkSurface=true;
+ const apron=mesh(ground,dirt);apron.name='qumran-ground';apron.userData.holes=[basinOutline.map(p=>[p.x,p.z])];apron.castShadow=false;apron.renderOrder=-3;apron.userData.walkSurface=true;
  const mouth=local([401,1268]),my=height(mouth.x,mouth.z)+.2;
  // Connected beds of fractured limestone, rather than a cloud of smooth rocks.
  // The projecting spur and every bed/joint here are illustrative scenery.
@@ -128,6 +132,20 @@ export function buildQumranPilot(){
    if(k%4!==0){const lining=block(0,0,0,length/count-.06,h*.62,.018,plaster);root.remove(lining);group.add(lining);lining.position.set(x,.19,side*.303);}
   }}
  }}channel(route);channel(branch);
+ // Basin 2 as a rock-floored hollow, and the dam proposed at point 4. Ilan–Amit 2002
+ // Fig. 1 (p. 380) draws a heavy dashed line from point 3 to point 4 across the basin's
+ // east side; the authors report no surviving dam. Copper marks the reconstruction.
+ // The basin depth and the dam's height and width are illustrative.
+ const basinFloor=Math.min(...basinOutline.map(p=>height(p.x,p.z)))-1.4,floorShape=new T.Shape();
+ basinOutline.forEach((p,i)=>i?floorShape.lineTo(p.x,-p.z):floorShape.moveTo(p.x,-p.z));
+ const floorGeometry=new T.ExtrudeGeometry(floorShape,{depth:.3,bevelEnabled:false});floorGeometry.rotateX(-Math.PI/2);
+ const basinBed=mesh(floorGeometry,rock);basinBed.position.y=basinFloor-.3;basinBed.name='basin-2';basinBed.userData.featureId='basin2';basinBed.userData.walkSurface=true;
+ for(let i=0;i<basinOutline.length;i++){
+  const a=basinOutline[i],b=basinOutline[(i+1)%basinOutline.length],top=Math.max(height(a.x,a.z),height(b.x,b.z));
+  const side=block((a.x+b.x)/2,basinFloor,(a.z+b.z)/2,a.distanceTo(b)+.5,top-basinFloor,.5,rock);side.rotation.y=-Math.atan2(b.z-a.z,b.x-a.x);
+ }
+ const copper=new T.MeshStandardMaterial({color:'#b56b42',roughness:.94,metalness:0}),d0=local([234,1214]),d1=local([250,1268]),damX=(d0.x+d1.x)/2,damZ=(d0.z+d1.z)/2;
+ const dam=block(damX,basinFloor,damZ,d0.distanceTo(d1),height(damX,damZ)+.6-basinFloor,1.2,copper);dam.rotation.y=-Math.atan2(d1.z-d0.z,d1.x-d0.x);
  // A shaded, angular opening with worn jambs and a fractured lintel. Shape and
  // dimensions are interpretive, informed by the archived outlet photograph.
  for(const side of [-1,1]){

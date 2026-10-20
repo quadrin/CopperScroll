@@ -1,0 +1,183 @@
+// Builds the atlas's source-based site models in a Minecraft Java server, saves the
+// world, reads every block and its sky light back from the region files, and writes
+// the block meshes that the atlas map renders (public/minecraft/).
+//
+//   node scripts/minecraft/build-world.mjs --jar server.jar --java /path/to/java --work <dir> [--sites a,b]
+//   node scripts/minecraft/build-world.mjs --work <dir> --skip-server   (re-read an existing save)
+//
+// The server jar is Mojang's official download; running it requires accepting the
+// Minecraft EULA (https://aka.ms/MinecraftEULA). Nothing from the game (code, textures)
+// is copied into the atlas: only block positions and light values read from the save.
+import {parseArgs} from 'node:util';
+import {spawn} from 'node:child_process';
+import {mkdirSync,writeFileSync,readFileSync,existsSync,rmSync,readdirSync} from 'node:fs';
+import {createHash,randomBytes} from 'node:crypto';
+import {setTimeout as sleep} from 'node:timers/promises';
+import * as T from 'three';
+import {loadModels} from './load-models.mjs';
+import {createGrid,rasterGround,rasterSolids,carve,underfill,toBlocks,fillBoxes,blockTable,MATERIALS} from './voxelize.mjs';
+import {World} from './anvil.mjs';
+import {connectRcon} from './rcon.mjs';
+import {greedyQuads,encodeBuild} from './mesh.mjs';
+
+// Block size in the model's units (metres, or the relative units of the source-plan
+// scenes). Half a block is the vertical step, through slabs.
+export const SITES=[
+ {id:'qumran-ilan',size:.5,pilot:true,place:'kh_qumran',domain:{minX:-90,maxX:90,minZ:-66,maxZ:54}},
+ {id:'qumran-reeder',size:.25},
+ {id:'jericho-ac',size:.25},
+ {id:'jericho-early',size:.25},
+ {id:'jericho-late',size:.25},
+ {id:'siloam-receiver',size:.25},
+ {id:'gerizim-precinct',size:.5},
+ {id:'doq-waterworks',size:.25},
+ {id:'hyrcania-waterworks',size:.25},
+ {id:'abu-saraj-iv17',size:.25,roof:true,mapped:false},
+ {id:'bethesda-pools',size:.5},
+ {id:'east-gate-warren',size:.5},
+];
+const PILOT_GROUND=new Set(['qumran-ground','qumran-ridge-back','connected-limestone-bed']);
+
+export function voxelizeSite(models,spec){
+ const plan=models.plans.find(p=>p.id===spec.id);let root,ground=[],domain=spec.domain,carves=[];
+ if(spec.pilot){
+  root=models.pilot.buildQumranPilot();const patch=models.terrain[spec.place];
+  // The same Mapterhorn patch the atlas uses around the anchor, fitted once.
+  models.pilot.fitQumranGround(root,(x,z)=>models.landscape.elevationAt(patch,x,z));
+  root.updateMatrixWorld(true);
+  root.traverse(o=>{if(o.isMesh&&PILOT_GROUND.has(o.name))ground.push(o);});
+  // The tunnel recess behind the dark display plane becomes a real opening.
+  root.traverse(o=>{if(o.isMesh&&o.material?.color?.getHexString?.()==='191913'){const b=new T.Box3().setFromObject(o),c=b.getCenter(new T.Vector3());carves.push({minX:c.x-.66,maxX:c.x+.66,minY:b.min.y+.14,maxY:b.max.y-.07,minZ:b.min.z-.05,maxZ:b.min.z+3.2});}});
+ }else{
+  const model=models.geometry.buildModel(plan);root=model.root;if(spec.roof)model.roof.visible=true;
+  root.updateMatrixWorld(true);
+  root.traverse(o=>{if(o.isMesh&&o.userData.siteContext==='ground')ground.push(o);});
+  domain??={minX:model.framing.min.x,maxX:model.framing.max.x,minZ:model.framing.min.z,maxZ:model.framing.max.z};
+ }
+ const solids=[];root.traverseVisible(o=>{if(o.isMesh&&!ground.includes(o)&&o.userData.walkCollision!==false)solids.push(o);});
+ // Vertical extent: everything inside the domain, with a margin below for the ground.
+ let minY=Infinity,maxY=-Infinity;const p=new T.Vector3();
+ for(const mesh of ground){const pos=mesh.geometry.getAttribute('position');for(let i=0;i<pos.count;i++){p.fromBufferAttribute(pos,i).applyMatrix4(mesh.matrixWorld);if(p.x>=domain.minX&&p.x<=domain.maxX&&p.z>=domain.minZ&&p.z<=domain.maxZ){minY=Math.min(minY,p.y);maxY=Math.max(maxY,p.y);}}}
+ // Scattered rubble spans the whole terrain disc; it lies on the ground, so it adds no extent.
+ for(const mesh of solids){if(mesh.userData.walkDetail)continue;const b=new T.Box3().setFromObject(mesh);if(b.max.x<domain.minX||b.min.x>domain.maxX||b.max.z<domain.minZ||b.min.z>domain.maxZ)continue;minY=Math.min(minY,b.min.y);maxY=Math.max(maxY,b.max.y);}
+ const grid=createGrid({...domain,minY:minY-1,maxY:maxY+.5,size:spec.size});
+ rasterGround(grid,ground);
+ rasterSolids(grid,solids,{minDetail:spec.size*.8});
+ for(const box of carves)carve(grid,box);
+ underfill(grid);
+ const masonry=models.surfaces.siteStyle(spec.id).masonry,blocks=toBlocks(grid,masonry);
+ return {spec,plan,grid,blocks,masonry,features:grid.features};
+}
+
+function properties(password){
+ return Object.entries({
+  'server-ip':'127.0.0.1','server-port':'25565','enable-rcon':'true','rcon.port':'25575','rcon.password':password,'broadcast-rcon-to-ops':'false',
+  'online-mode':'false','level-name':'world','level-type':'minecraft:flat',
+  // A void superflat world: nothing but the builds.
+  'generator-settings':JSON.stringify({layers:[{block:'minecraft:air',height:1}],biome:'minecraft:the_void'}),
+  'generate-structures':'false','difficulty':'peaceful','spawn-protection':'0','view-distance':'4','simulation-distance':'4','sync-chunk-writes':'true','region-file-compression':'deflate','max-players':'1',
+  // An empty server pauses after a minute by default, which would stop chunk loading and lighting.
+  'pause-when-empty-seconds':'86400',
+ }).map(([k,v])=>`${k}=${v}`).join('\n')+'\n';
+}
+
+async function runServer({jar,java,work,builds,log}){
+ rmSync(`${work}/world`,{recursive:true,force:true});mkdirSync(work,{recursive:true});
+ const password=randomBytes(12).toString('hex');
+ writeFileSync(`${work}/server.properties`,properties(password));
+ // Accepting the Minecraft EULA is required to run the official server.
+ writeFileSync(`${work}/eula.txt`,'eula=true\n');
+ const server=spawn(java,['-Xms2G','-Xmx8G','-jar',jar,'--nogui'],{cwd:work,stdio:['pipe','pipe','pipe']});
+ let output='';const ready=new Promise((resolve,reject)=>{
+  server.stdout.on('data',d=>{const text=d.toString();output+=text;log(text.trimEnd());if(/RCON running on/.test(output)&&/Done \(/.test(output))resolve();});
+  server.stderr.on('data',d=>log(d.toString().trimEnd()));server.on('exit',code=>reject(Error(`Server exited (${code})`)));
+ });
+ await ready;
+ const rcon=await connectRcon({port:25575,password}),run=async(command)=>rcon.command(command);
+ const version=output.match(/Starting minecraft server version (\S+)/)?.[1]??null;
+ const report={};
+ for(const build of builds){
+  const {nx,ny,nz}=build.blocks,{x0,z0,y0}=build.world;
+  for(let cx=Math.floor(x0/16);cx<=Math.floor((x0+nx-1)/16);cx+=16)for(let cz=Math.floor(z0/16);cz<=Math.floor((z0+nz-1)/16);cz+=16){
+   const r=await run(`forceload add ${cx*16} ${cz*16} ${Math.min(cx+15,Math.floor((x0+nx-1)/16))*16} ${Math.min(cz+15,Math.floor((z0+nz-1)/16))*16}`);
+   if(!/Marked|already/i.test(r))throw Error(`forceload: ${r}`);
+  }
+  const boxes=fillBoxes(build.blocks),commands=boxes.map(([i,Y,k,i1,Y1,k1,state])=>`fill ${x0+i} ${y0+Y} ${z0+k} ${x0+i1} ${y0+Y1} ${z0+k1} minecraft:${build.blocks.palette[state]}`);
+  let pending=commands,filled=0,attempts=0;
+  while(pending.length&&attempts++<40){
+   const retry=[];
+   // One command at a time: the vanilla RCON listener reads a single packet per socket read.
+   for(const command of pending){
+    const reply=await run(command),m=reply.match(/(?:Successfully filled|filled) (\d+)/i);
+    if(m)filled+=+m[1];else if(/not loaded/i.test(reply))retry.push(command);else throw Error(`${command} → ${reply}`);
+   }
+   pending=retry;if(pending.length){log(`${build.spec.id}: ${pending.length} fills wait for chunk loading`);await sleep(2000);}
+  }
+  if(pending.length)throw Error(`${build.spec.id}: ${pending.length} fills never found loaded chunks`);
+  report[build.spec.id]={commands:commands.length,filled};log(`${build.spec.id}: ${commands.length} fill commands, ${filled} blocks`);
+ }
+ // Let the light engine settle before saving.
+ await sleep(8000);
+ log(await run('save-all flush'));await sleep(3000);
+ await run('stop').catch(()=>{});await new Promise(resolve=>server.once('exit',resolve));rcon.close();
+ return {version,report};
+}
+
+// Requested and read-back states compare without the default waterlogged flag. Since
+// 26.x a block's default state is saved as its bare name; for a slab that is the bottom half.
+const normal=state=>state.replace(/,?waterlogged=false/,'').replace(/\[\]$/,'').replace(/\[,/,'[').replace(/_slab$/,'_slab[type=bottom]');
+
+export function readBack(world,build){
+ const {nx,ny,nz,blocks,palette,feature}=build.blocks,{x0,y0,z0}=build.world,table=blockTable(build.masonry);
+ const decode=new Map();
+ for(const [code,[full,slab]] of Object.entries(table)){decode.set(full,[+code,3]);if(slab){decode.set(`${slab}[type=bottom]`,[+code,1]);decode.set(`${slab}[type=top]`,[+code,2]);decode.set(`${slab}[type=double]`,[+code,3]);}}
+ const cells=new Uint8Array(nx*ny*2*nz),cellFeature=new Uint8Array(cells.length),light=new Uint8Array(cells.length),counts={};
+ let mismatches=0,missingLight=0;const examples=[];
+ for(let i=0;i<nx;i++)for(let k=0;k<nz;k++)for(let Y=0;Y<ny;Y++){
+  const n=(i*nz+k)*ny+Y,state=normal(world.block(x0+i,y0+Y,z0+k)),wanted=palette[blocks[n]];
+  if(state!==wanted){mismatches++;if(examples.length<8)examples.push({at:[x0+i,y0+Y,z0+k],wanted,found:state});}
+  counts[state]=(counts[state]??0)+1;
+  const c=(i*nz+k)*ny*2+2*Y,[code,shape]=state==='air'?[0,0]:decode.get(state)??[0,0];
+  if(shape&1)cells[c]=code;if(shape&2)cells[c+1]=code;cellFeature[c]=cellFeature[c+1]=feature[n];
+  let sky=world.skyLight(x0+i,y0+Y,z0+k);if(sky===null){missingLight++;sky=15;}light[c]=light[c+1]=sky;
+ }
+ return {cells,feature:cellFeature,light,counts,mismatches,examples,missingLight,dims:{nx,ny:ny*2,nz}};
+}
+
+async function main(){
+ const {values}=parseArgs({options:{jar:{type:'string'},java:{type:'string',default:'java'},work:{type:'string'},sites:{type:'string'},'skip-server':{type:'boolean',default:false},out:{type:'string',default:new URL('../../public/minecraft/',import.meta.url).pathname}}});
+ if((!values.jar&&!values['skip-server'])||!values.work)throw Error('Usage: build-world.mjs --jar server.jar --work <dir> [--java java] [--sites a,b] [--skip-server]');
+ const log=text=>process.stdout.write(`${text}\n`),models=loadModels(),wanted=values.sites?.split(',');
+ const jarSha1=values.jar?createHash('sha1').update(readFileSync(values.jar)).digest('hex'):null;
+ const builds=[];
+ SITES.forEach((spec,index)=>{
+  if(wanted&&!wanted.includes(spec.id))return;
+  const started=Date.now(),build=voxelizeSite(models,spec);
+  // Each site has its own 1,024-block-wide strip of the world; the grid floor sits at y = -60.
+  build.world={x0:index*1024,z0:0,y0:-60};
+  if(build.blocks.ny>370)throw Error(`${spec.id}: ${build.blocks.ny} blocks high does not fit the world`);
+  builds.push(build);log(`${spec.id}: ${build.blocks.nx}×${build.blocks.ny}×${build.blocks.nz} blocks at ${spec.size} per block (${Date.now()-started} ms)`);
+ });
+ const server=values['skip-server']?{version:null,report:{}}:await runServer({jar:values.jar,java:values.java,work:values.work,builds,log});
+ const regionDir=[`${values.work}/world/region`,`${values.work}/world/dimensions/minecraft/overworld/region`].find(existsSync);
+ if(!regionDir)throw Error('No region folder in the saved world');
+ const world=new World(regionDir);mkdirSync(values.out,{recursive:true});
+ const indexPath=`${values.out}/index.json`,index=existsSync(indexPath)?JSON.parse(readFileSync(indexPath,'utf8')):{sites:{}};
+ if(!values['skip-server']){index.minecraft={edition:'Java Edition',version:server.version,serverJarSha1:jarSha1,dataVersion:null};index.built=new Date().toISOString().slice(0,10);}
+ index.minecraft??={edition:'Java Edition',version:null,serverJarSha1:null,dataVersion:null};
+ for(const build of builds){
+  const back=readBack(world,build),{grid,spec}=build;
+  index.minecraft.dataVersion??=world.chunk(Math.floor(build.world.x0/16),0)?.dataVersion??null;
+  const groups=greedyQuads({...back.dims,cells:back.cells,feature:back.feature,light:back.light});
+  const header={version:1,id:spec.id,size:grid.s,half:grid.h,origin:[grid.x0,grid.y0,grid.z0],dims:[back.dims.nx,back.dims.ny,back.dims.nz],materials:MATERIALS,masonry:build.masonry,features:build.features};
+  const file=encodeBuild(header,groups),quads=[...groups.values()].reduce((sum,q)=>sum+q.length/6,0);
+  if(spec.mapped!==false)writeFileSync(`${values.out}/${spec.id}.bin.gz`,file);
+  // The Qumran build's ground was fitted to one place's terrain patch; it fits only there.
+  index.sites[spec.id]={file:spec.mapped===false?null:`${spec.id}.bin.gz`,terrainPlace:spec.pilot?spec.place:null,bytes:file.length,blockSize:grid.s,origin:header.origin,blocks:[build.blocks.nx,build.blocks.ny,build.blocks.nz],world:build.world,masonry:build.masonry,
+   fills:server.report[spec.id]??index.sites[spec.id]?.fills,readback:{blocks:build.blocks.nx*build.blocks.ny*build.blocks.nz,mismatches:back.mismatches,examples:back.examples,missingSkyLight:back.missingLight},counts:Object.fromEntries(Object.entries(back.counts).filter(([k])=>k!=='air').sort()),quads};
+  log(`${spec.id}: read back, ${back.mismatches} mismatches, ${back.missingLight} blocks without saved sky light, ${quads} quads, ${(file.length/1024).toFixed(0)} KiB`);
+ }
+ writeFileSync(indexPath,JSON.stringify(index,null,1)+'\n');
+ log(`Region files: ${readdirSync(regionDir).join(', ')}`);
+}
+if(import.meta.url===`file://${process.argv[1]}`)main().catch(e=>{console.error(e);process.exit(1);});

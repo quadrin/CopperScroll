@@ -208,6 +208,8 @@ export function buildModel(plan:SitePlan):ModelGeometry {
     if(piece.kind==="basin"){basinHoles.push(pts);slab(pts,.2,-1.1,plaster,id);walls(pts,1.1,.25,-1.1,id);}
     else if(piece.kind==="wall"||piece.kind==="rock"){walls(pts,piece.kind==="rock"?2.8:1.7,.55,0,id,sub.autoClose);}
     else if(piece.kind==='tunnel')coveredPassage(pts.map(([x,z])=>new T.Vector3(x,.12,z)),id);
+    // A reconstructed dam line: copper marks the source's proposal, not surviving masonry.
+    else if(piece.kind==='dam')walls(pts,1.2,.9,0,id,false,copper);
     else trough(pts.map(([x,z])=>new T.Vector3(x,.12,z)),.4,id,piece.kind==='reconstruction'?copper:plaster);
    }
   }
@@ -215,12 +217,13 @@ export function buildModel(plan:SitePlan):ModelGeometry {
   if(!pieces?.length)for(const f of plan.features){const [x,z]=conv(f.x,f.y);court(x,z,5,4,1.7,f.id);}
   plinth(40*plan.width/Math.max(plan.width,plan.height)+7,40*plan.height/Math.max(plan.width,plan.height)+7,2,basinHoles);
   assumptions.push("Selected source-plan outlines and feature envelopes are normalized into a relative scene. They are not new measured footprints.","Wall heights, pool depths, terrain/platform relief and conduit cross-sections are illustrative. Source phasing, restorations and feature interpretations remain those of the accompanying record.");
+  if(pieces?.some(piece=>piece.kind==='dam'))assumptions.push('The copper-coloured wall marks a dam that the source draws as a reconstruction. Its height and width are illustrative; no surviving remains are reported.');
   if(pieces?.some(piece=>piece.kind==='reconstruction'))assumptions.push('Copper-coloured channel lining marks the proposed course shown in the source. Its display does not establish surviving masonry. Covered passages have illustrative rectangular sections; the source plan does not measure their roof form.');
  }
  roof.visible=false;
  const bounds=new T.Box3().setFromObject(root);bounds.expandByPoint(new T.Vector3(-ground.w/2,-1,-ground.d/2));bounds.expandByPoint(new T.Vector3(ground.w/2,1,ground.d/2));const center=bounds.getCenter(new T.Vector3());
  root.position.set(-center.x,0,-center.z);markers.forEach(p=>{p.x-=center.x;p.z-=center.z});
- const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;root.add(context.mesh);context.details.position.set(center.x,0,center.z);root.add(context.details);
+ const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;context.mesh.userData.siteContext='ground';root.add(context.mesh);context.details.position.set(center.x,0,center.z);context.details.userData.siteContext='details';root.add(context.details);
  assumptions.push(surfaces.style.photos.length?`Base colours and the ${surfaces.style.masonry} masonry pattern are taken from reference photographs (${surfaces.style.photos.join(', ')}): sunlit-face medians of sample boxes, recorded in research/assets/plans/atlas-explorer/surface-samples-2026-10-17. ${surfaces.style.masonryNote??''} Individual stones, joints, chipped edges, plaster wear and soil relief remain illustrative, not recorded stones or weathering; photographs vary in exposure and white balance.`:`Surface art uses a ${surfaces.style.id} material palette, metre-scaled stone joints, chipped edges, plaster wear and soil relief. These are illustrative visual treatments, not recorded individual stones or weathering.`);
  assumptions.push(context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");
  const starts:Record<string,[string,number,number,number,number]>={'gerizim-precinct':['east-stair',28,22,308,100],'hyrcania-waterworks':['north-pool',0,-12,180,76],'jericho-early':['complex',0,6,0,76],'jericho-late':['complex',0,12,0,76],'siloam-receiver':['L103',0,6,0,80],'doq-waterworks':['intake',4,5,-35,83],'jericho-ac':['AC94',0,7,0,80],'bethesda-pools':['dam',-12,0,160,84],'east-gate-warren':['massive-wall',8,-12,270,90]};

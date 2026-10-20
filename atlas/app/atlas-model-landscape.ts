@@ -32,6 +32,8 @@ export function landscapeGround(ground:LandscapeGround,placeId:string,offset:Poi
  const geometry=new T.BufferGeometry();geometry.setAttribute("position",new T.Float32BufferAttribute(positions,3));geometry.setAttribute("color",new T.Float32BufferAttribute(colours,4));geometry.setIndex(indices);geometry.computeVertexNormals();
  const mat=surface?cloneSiteMaterial(surface):new T.MeshStandardMaterial({color:'#b5a384',roughness:1});mat.vertexColors=true;mat.side=T.DoubleSide;mat.transparent=true;mat.depthWrite=false;
  const mesh=new T.Mesh(geometry,mat);mesh.receiveShadow=true;mesh.castShadow=false;mesh.renderOrder=-3;
+ // The block export fills the ground column by column from these, not from triangles that cross a pool edge.
+ mesh.userData.heightAt=height;mesh.userData.holes=holes;mesh.userData.radius=radius;
  const details=new T.Group();let seed=7841;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
  const rubble=new T.InstancedMesh(chippedBlock(1,.65,1,61),stone??new T.MeshStandardMaterial({color:'#a6997d',roughness:1}),650),o=new T.Object3D();
  for(let i=0;i<650;i++){

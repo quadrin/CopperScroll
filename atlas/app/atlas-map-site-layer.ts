@@ -8,10 +8,13 @@ import {disposeSiteScene} from './atlas-site-materials';
 import {createSiteSky} from './atlas-site-sky';
 import {createWalkWorld,type WalkWorld} from './atlas-walk-physics';
 import {createWalkAvatar,type WalkPose} from './atlas-walk-avatar';
+import {applyMinecraftBuild,type MinecraftBuild} from './atlas-minecraft';
+import {elevationAt} from './atlas-model-landscape';
+import terrainPatches from './atlas-model-terrain.json';
 
 export const SITE_LAYER_ID='source-site-detail';
-export type MapSiteRuntime={model:ModelGeometry;span:number;anchor:[number,number];baseElevation:()=>number;collisionWorld:()=>WalkWorld;setWalker:(pose:WalkPose|null)=>void;location:(x:number,z:number)=>[number,number];local:(lng:number,lat:number)=>[number,number];focus:(featureId?:string)=>void;setFeature:(id:string|null)=>void;renderedFrames:number;meshCount:number;vertexCount:number};
-export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(runtime:MapSiteRuntime)=>void,onFailure:(message:string)=>void):CustomLayerInterface {
+export type MapSiteRuntime={model:ModelGeometry;style:'minecraft'|'smooth';span:number;anchor:[number,number];baseElevation:()=>number;collisionWorld:()=>WalkWorld;setWalker:(pose:WalkPose|null)=>void;location:(x:number,z:number)=>[number,number];local:(lng:number,lat:number)=>[number,number];focus:(featureId?:string)=>void;setFeature:(id:string|null)=>void;renderedFrames:number;meshCount:number;vertexCount:number};
+export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(runtime:MapSiteRuntime)=>void,onFailure:(message:string)=>void,build:MinecraftBuild|null=null):CustomLayerInterface {
  const anchor:[number,number]=[place.lon!,place.lat!],origin=MercatorCoordinate.fromLngLat(anchor),scale=origin.meterInMercatorCoordinateUnits();
  const scene=new T.Scene(),camera=new T.Camera(),sky=createSiteSky(),avatar=createWalkAvatar();let renderer:T.WebGLRenderer|undefined,model:ModelGeometry|undefined,runtime:MapSiteRuntime|undefined,world:WalkWorld|undefined;
  let collisionDirty=true;
@@ -35,8 +38,15 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    if(plan.id==='qumran-ilan'){
     const root=buildQumranPilot(),markers=new globalThis.Map<string,T.Vector3>();
     for(const feature of plan.features)markers.set(feature.id,new T.Vector3((feature.x+120-381)*.2,2,(feature.y+1080-1240)*.2));
-    model={root,markers,selectable:[],roof:new T.Group(),note:'Qumran aqueduct segment · published plan relationships',units:'relative',framing:new T.Box3(new T.Vector3(-48,0,-15),new T.Vector3(48,10,24)),landscape:{context:'Source-relative rock setting',credit:'Ilan–Amit 1989 p. 283 Fig. 1; Davey CJD979 (1974); geometry and placement illustrative',mapped:false},assumptions:['Channel and branch relationships follow Ilan–Amit 1989 p. 283 Fig. 1. The local frame is an approximate display alignment at the gazetteer anchor, not a registered survey.','Rock faces, masonry courses, tunnel cross-section and elevations are illustrative. This partial aqueduct model does not reconstruct the whole Qumran settlement.','The basin and dam remain source-plan references; they are not complete surveyed volumes in the detailed aqueduct model.']};
-   }else model=buildModel(plan);scene.add(model.root);scene.add(sky.mesh);
+    model={root,markers,selectable:[],roof:new T.Group(),note:'Qumran aqueduct segment · published plan relationships',units:'relative',framing:new T.Box3(new T.Vector3(-48,0,-15),new T.Vector3(48,10,24)),landscape:{context:'Source-relative rock setting',credit:'Ilan–Amit 1989 p. 283 Fig. 1; Davey CJD979 (1974); geometry and placement illustrative',mapped:false},assumptions:['Channel and branch relationships follow Ilan–Amit 1989 p. 283 Fig. 1. The local frame is an approximate display alignment at the gazetteer anchor, not a registered survey.','Rock faces, masonry courses, tunnel cross-section and elevations are illustrative. This partial aqueduct model does not reconstruct the whole Qumran settlement.','Basin 2 and the dam proposed at point 4 follow Ilan–Amit 1989 Fig. 1. Ilan–Amit 2002 Fig. 1 (p. 380) draws a heavy dashed line from point 3 to point 4 across the basin’s east side, read here as probably the dam (drawing only). No surviving dam remains are reported: copper marks a published reconstruction. Basin depth and dam height and width are illustrative.']};
+   }else model=buildModel(plan);
+   if(build){
+    // The block build's ground was fitted once to this terrain patch when it was exported.
+    const patch=(terrainPatches as Record<string,Parameters<typeof elevationAt>[0]>)[place.id];
+    if(plan.id==='qumran-ilan')fitQumranGround(model.root,(x,z)=>patch?elevationAt(patch,x,z):0);
+    applyMinecraftBuild(model,build,plan.id);
+   }
+   scene.add(model.root);scene.add(sky.mesh);
    const span=Math.max(model.framing.getSize(new T.Vector3()).x,model.framing.getSize(new T.Vector3()).z);
    scene.add(new T.HemisphereLight('#dbe7ef','#756a52',1.15));
    const sun=new T.DirectionalLight('#fff1d8',3.1);sun.position.set(-span*.8,span*1.3,span*.65);sun.castShadow=true;
@@ -47,7 +57,7 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;renderer.shadowMap.autoUpdate=false;renderer.shadowMap.needsUpdate=true;
    model.root.updateMatrixWorld(true);
    let meshCount=0,vertexCount=0;model.root.traverse(o=>{if(o instanceof T.Mesh){meshCount++;vertexCount+=o.geometry.getAttribute('position').count*(o instanceof T.InstancedMesh?o.count:1);}});
-   runtime={model,span,anchor,baseElevation,location,local,meshCount,vertexCount,renderedFrames:0,
+   runtime={model,style:build?'minecraft':'smooth',span,anchor,baseElevation,location,local,meshCount,vertexCount,renderedFrames:0,
     collisionWorld(){if(collisionDirty||!world){world=createWalkWorld(model!.root);collisionDirty=false;}return world;},
     setWalker(pose){avatar.update(pose);map.triggerRepaint();},
     focus(featureId){const point=featureId?model?.markers.get(featureId):undefined;const center=point?location(point.x,point.z):anchor;const zoom=featureId?22:Math.max(17,Math.min(21.2,21-Math.log2(Math.max(span,20)/40)));const view={center,zoom,pitch:55,bearing:map.getBearing(),padding:{top:80,bottom:140,left:30,right:30}};if(map.getTerrain()){map.stop();map.jumpTo({...view,elevation:baseElevation()});}else map.flyTo({...view,duration:window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:1000});},
@@ -61,7 +71,7 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    const cameraElevation=map.getCenterElevation();
    const baseChanged=!Number.isFinite(lastBase)||Math.abs(base-lastBase)>.02;
    if(baseChanged||!Number.isFinite(lastCameraElevation)||Math.abs(cameraElevation-lastCameraElevation)>.02){terrainDirty||=baseChanged;lastBase=base;lastCameraElevation=cameraElevation;map.triggerRepaint();}
-   if(terrainDirty&&plan.id==='qumran-ilan'){
+   if(terrainDirty&&plan.id==='qumran-ilan'&&!build){
     fitQumranGround(model.root,(x,z)=>map.getTerrain()?terrainElevation(location(x,z),base)-base:0);
     collisionDirty=true;
     renderer.shadowMap.needsUpdate=true;terrainDirty=false;
