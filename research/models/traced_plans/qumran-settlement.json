@@ -2019,7 +2019,7 @@
    },
    "source": "mp2018-fig9",
    "locator": "Magen & Peleg 2018, Fig. 9, printed p. 12; inner faces of the drawn walls",
-   "note": "Galor p. 260: stepped pool; a wide staircase of eight steps leads down towards the basin (2.2 x 0.9 m). Fig. 9 hatches the south-east half, so the steps go down towards the north-west (not a cardinal direction). No depth or level published in the inspected pages: any depth used by a builder is illustrative."
+   "note": "Galor p. 260: stepped pool; a wide staircase of eight steps leads down towards the basin (2.2 x 0.9 m). Fig. 9 hatches the south-east half, so the steps go down towards the north-west (not a cardinal direction). No depth or level published in the inspected pages: any depth used by a builder is illustrative. Magen & Peleg 2018 p. 84: 4.80 × 3.40 m, two staircases (east and west) in the upper part, internal retaining walls on both sides. Traced outline 5.32–5.40 × 3.64–4.09 m, about 0.5 m larger."
   },
   {
    "id": "L48-L49",
@@ -2275,7 +2275,7 @@
     "source": "Fig. 57 (p. 53) prints -328.48 inside L91; outside spot levels nearby are -324.71 and -324.67 (SW) and -325.67 (L88). Surface not stated; not used as a level."
    },
    "height": {
-    "value": 4.0,
+    "value": 5.25,
     "basis": "published"
    },
    "steps": {
@@ -2284,7 +2284,7 @@
    },
    "source": "mp2018-fig9",
    "locator": "Magen & Peleg 2018, Fig. 9, printed p. 12; inner faces of the drawn walls",
-   "note": "Galor p. 262: large rectangular stepless pool, 12.6 x 4.6 m; steps L85 lead into it from the north. M&P p. 88 mentions fine clay found in pools L91 and L71. height.value is the published depth below the rim (Galor p. 262: '4 meters deep pool 91'); no absolute rim or floor level is published in the inspected pages."
+   "note": "Galor p. 262: large rectangular stepless pool, 12.6 x 4.6 m; steps L85 lead into it from the north. M&P p. 88 mentions fine clay found in pools L91 and L71. height.value is the published depth below the rim (Galor p. 262: '4 meters deep pool 91'); no absolute rim or floor level is published in the inspected pages. Depth 5.25 m and size 15.60 × 4.40 m for the whole pool, L85 included (Magen & Peleg 2018 p. 86; the 2014 renewed excavation). Galor p. 262 gives 12.6 × 4.6 m and 4 m. Traced: L91 12.26–12.37 × 4.02–4.45 m; with L85 the pool spans about 16 m north–south."
   },
   {
    "id": "L68",
@@ -2890,11 +2890,12 @@
    },
    "steps": {
     "count": 4,
-    "down": "s"
+    "down": "s",
+    "pool": "L91"
    },
    "source": "mp2018-fig9",
    "locator": "Magen & Peleg 2018, Fig. 9, printed p. 12; the small hatched chamber at the north end of L91 to which the L85 label leader points",
-   "note": "Galor p. 262: four steps lead from north to south to a basin (1.7 x 1.7 m) that opens on pool L91; Magness 2021 p. 182 (project extract): 'L85 is not a pool but rather steps' into L91. Interior traced 1.8 x 2.8 m."
+   "note": "Galor p. 262: four steps lead from north to south to a basin (1.7 x 1.7 m) that opens on pool L91; Magness 2021 p. 182 (project extract): 'L85 is not a pool but rather steps' into L91. Interior traced 1.8 x 2.8 m. L85 and L91 are one pool (Magen & Peleg 2018 p. 86); its staircase, narrow at the top, descends to the pool's bottom. steps.pool names the pool whose floor the flight reaches."
   },
   {
    "id": "CE1",
@@ -3342,8 +3343,8 @@
     -13.68,
     -32.45
    ],
-   "description": "Stepped pool at the north-west of the complex; eight steps lead down to a basin 2.2 x 0.9 m.",
-   "locator": "Galor, Qumran's Plastered Pools, p. 260"
+   "description": "Stepped pool 4.80 × 3.40 m near the aqueduct's entry to the site, with two staircases (east and west) in its upper part and internal retaining walls on both sides. De Vaux found three plaster phases; the authors date it to their phase B. Wall W740 to its north-west dammed runoff.",
+   "locator": "Magen & Peleg 2018 p. 84; Galor p. 260"
   },
   {
    "id": "L116",
@@ -3372,8 +3373,8 @@
     4.02,
     -7.09
    ],
-   "description": "Stepped pool: eight preserved steps lead from south to north down to a basin 2.4 x 1.9 m.",
-   "locator": "Galor p. 260"
+   "description": "Stepped pool: eight preserved steps lead from south to north down to a basin 2.4 x 1.9 m. In phase B it was fed from sedimentation pool L119 bis (Magen & Peleg 2018 p. 83; photograph Fig. 96, captioned \"L18\").",
+   "locator": "Galor p. 260; Magen & Peleg 2018 p. 83"
   },
   {
    "id": "L121",
@@ -3392,8 +3393,8 @@
     0.26,
     -0.31
    ],
-   "description": "Round cistern; its original wall was 0.95 m thick.",
-   "locator": "Magen & Peleg 2018 pp. 52, 56"
+   "description": "Round cistern; its original wall was 0.95 m thick. In the authors' phase A it stood about 1 m lower and was fed through sedimentation pool L119 to its north (2.10 × 1.20 m, 0.80 m deep). In phase B it was raised by 1 m and fed, with pools L117 and L118, from a new sedimentation pool, L119 bis.",
+   "locator": "Magen & Peleg 2018 pp. 52, 56, 82–83"
   },
   {
    "id": "L117",
@@ -3402,8 +3403,8 @@
     12.81,
     2.96
    ],
-   "description": "Stepped pool entered from the north; 13 steps descend towards the south to a basin 2.4 x 1.8 m.",
-   "locator": "Galor p. 261"
+   "description": "Stepped pool entered from the north; 13 steps descend towards the south to a basin 2.4 x 1.8 m. In phase B it was fed from sedimentation pool L119 bis (Magen & Peleg 2018 p. 83; photograph Fig. 95, captioned \"L17\").",
+   "locator": "Galor p. 261; Magen & Peleg 2018 p. 83"
   },
   {
    "id": "L85",
@@ -3412,8 +3413,8 @@
     3.39,
     19.78
    ],
-   "description": "Four steps lead north to south to a basin 1.7 x 1.7 m that opens on pool L91.",
-   "locator": "Galor p. 262"
+   "description": "Part of pool L91: the renewed excavations showed that de Vaux's L85 and L91 are one pool. Its staircase descends to the pool's bottom.",
+   "locator": "Magen & Peleg 2018 p. 86; Galor p. 262"
   },
   {
    "id": "L83",
@@ -3422,8 +3423,8 @@
     14.07,
     20.28
    ],
-   "description": "'Sedimentation pool' (authors' term) from which a channel ran east to pool L56; accessed by three steps (Galor p. 262). Its outline is not separable on Fig. 9.",
-   "locator": "Magen & Peleg 2018 pp. 43-44"
+   "description": "'Sedimentation pool' (authors' term), 2.60 × 1.70 m, three steps in its north-west corner where it meets the central channel. A wide channel runs east to pool L56; a channel through wall W658 (0.35 × 0.32 m, 0.80 m long) joins it to L91. Its outline is not separable on Fig. 9.",
+   "locator": "Magen & Peleg 2018 pp. 84–86"
   },
   {
    "id": "L44",
@@ -3642,8 +3643,8 @@
     5.65,
     31.96
    ],
-   "description": "Large rectangular pool without steps, 12.6 x 4.6 m, '4 meters deep'.",
-   "locator": "Galor p. 262"
+   "description": "Pool 15.60 × 4.40 m and 5.25 m deep, L85 included; a staircase, narrow at the top, descends to the bottom. The long walls lean outward; four plastered gutters at the top of the east wall; a 16 m surplus channel runs south across the paved courtyard. The 2014 excavation found a 5 cm layer of yellowish potters' clay on the floor.",
+   "locator": "Magen & Peleg 2018 p. 86"
   },
   {
    "id": "L88",

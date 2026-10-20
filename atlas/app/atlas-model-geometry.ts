@@ -238,8 +238,8 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
    }
    else if(e.kind==='steps'&&g.type==='polygon'){
     const xs=pts.map(p=>p[0]),zs=pts.map(p=>p[1]),x0=Math.min(...xs),x1=Math.max(...xs),z0=Math.min(...zs),z1=Math.max(...zs),down=e.steps?.down??'n',alongX=down==='e'||down==='w';
-    // Steps drawn inside a pool go down from its rim to its floor.
-    const pool=pools.find(p=>inside([(x0+x1)/2,(z0+z1)/2],(p.geometry as {points:Point[]}).points.map(c))),poolTop=pool&&level(pool.levels?.rim??pool.levels?.top);
+    // Steps drawn inside a pool, or naming one, go down from its rim to its floor.
+    const pool=pools.find(p=>p.id===e.steps?.pool)??pools.find(p=>inside([(x0+x1)/2,(z0+z1)/2],(p.geometry as {points:Point[]}).points.map(c))),poolTop=pool&&level(pool.levels?.rim??pool.levels?.top);
     const top=pool?poolTop!:level(e.levels?.top??e.levels?.rim),bottom=pool?poolTop!-poolDepth(pool):level(e.levels?.bottom??e.levels?.floor,top-1),count=e.steps?.count??Math.max(2,Math.round((top-bottom)/.25));
     // steps() rises toward its local +x; turn it so that it goes down toward `down`.
     const flight=steps((x0+x1)/2,(z0+z1)/2,alongX?z1-z0:x1-x0,alongX?x1-x0:z1-z0,top-bottom,count,e.id,pick(e,stone));flight.position.y=bottom;flight.rotation.y={e:Math.PI,w:0,s:Math.PI/2,n:-Math.PI/2}[down];

@@ -56,7 +56,7 @@ Plan pixels map to the frame by the figure's own scale bar and north arrow. Reco
   "geometry": {"type": "polyline", "points": [[x, z], ...], "closed": false, "width": 0.9},
   "levels": {"top": null, "bottom": null, "floor": 99.08, "rim": null, "source": "Plan 17 spot level 99.08 at A(B)209"},
   "height": {"value": null, "basis": "unknown | published | illustrative"},
-  "steps": {"count": null, "down": "n | s | e | w"},
+  "steps": {"count": null, "down": "n | s | e | w", "pool": "id of the pool whose floor the flight reaches, when it is not drawn inside it"},
   "source": "netzer2001-plan17", "locator": "Plan 17 p. 93",
   "note": "anything the builder or a reader must know"
 }

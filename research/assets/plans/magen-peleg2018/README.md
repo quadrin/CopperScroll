@@ -45,3 +45,25 @@ Reattached 91-page chapter MAGEN-SITEDESCRIPTION-2018(1).pdf, SHA256 16311aa83e9
 - [Fig. 114, p. 98: T7 plan and sections](fig114-p98.png).
 
 Full-page renderings at 1.5×; PDF extract retains source page contents. Previously archived Figs. 9–100 are not re-counted. Grave illustrations are future comparison material and do not identify a Copper Scroll tomb. The separate folded pocket sheet and reported Peleg 2009 aqueduct map remain unrecovered. No new measurements, phase assessment or research KPI increment. [Additional manifest](additional-intake-2026-10-02.json).
+
+## Site Description chapter upload, printed pp. 58–87 — 20 October 2026
+
+The owner uploaded the JSTOR Site Description chapter in five parts (hashes in [manifest.json](manifest.json); CC BY-NC 4.0, attribute Yitzhak Magen and Yuval Peleg; https://www.jstor.org/stable/j.ctv1t8cdq.6). Printed pp. 58–87 were read in full. The pages below hold the figures in that range that were not yet archived. Each is a full-page rendering at 144 dpi, cropped above the JSTOR download footer, which names the downloader's IP address. Captions, page numbers, scales and north arrows are kept. Figs. 63–67 (pottery, burned dates and millstones from the southern dump, pp. 59–62) are finds photographs and are not archived; Fig. 67 is visible on the p. 63 page. Figs. 71, 76–77, 84–85, 88–90, 93–94, 98 and 100 were archived before.
+
+- [Fig. 62, p. 58: Southern dump (Hasmonean) beside hall L77, under the Herodian stone flooring](fig62-p58.jpg).
+- [Fig. 68, p. 63: Eastern dump, view from the south (Fig. 67, burned dates, on the same page)](fig68-p63.jpg).
+- [Figs. 69–70, p. 64: Eastern dump, views from the northeast and the east](fig69-70-p64.jpg).
+- [Figs. 72–73, p. 66: Eastern dump, north–south cracks, views from the south and the north](fig72-73-p66.jpg).
+- [Fig. 74, p. 67: Eastern dump, finds and conflagration remains in the crack](fig74-p67.jpg).
+- [Fig. 75, p. 68: Eastern dump, excavation at the foot of the eastern wall W649](fig75-p68.jpg).
+- [Fig. 78, p. 70: Southern plateau against Naḥal Qumran, view from the east](fig78-p70.jpg).
+- [Figs. 79–80, p. 71: Southern plateau: test squares in the centre; built granaries](fig79-80-p71.jpg).
+- [Fig. 81, p. 72: Southern plateau, built granary](fig81-p72.jpg).
+- [Fig. 82, p. 73: Water system: flow basin of the runoff water at Qumran (map, 0–100 m bar)](fig82-p73.png).
+- [Figs. 86–87, p. 76: Water system: exit from and entrance to the long tunnel receiving water from Naḥal Qumran](fig86-87-p76.jpg).
+- [Figs. 91–92, p. 80: Water system: runoff in the plateau channel; entry of runoff from the plateau channel to the inner plastered channel](fig91-92-p80.jpg).
+- [Figs. 95–96, p. 83: Water system: pools L117 and L118 (captions print "L17" and "L18")](fig95-96-p83.jpg).
+- [Fig. 97, p. 84: Water system: pool L138, view from the west](fig97-p84.jpg).
+- [Fig. 99, p. 86: Water system: pools L56 and L58, view from the west](fig99-p86.jpg).
+
+Fig. 82 is an annotated aerial photograph of the flow basin (A), Naḥal Qumran (B), the western (C) and northern (D) streambeds, the narrow passage (E) and the aqueduct, with a 0–100 m bar; its north arrow points to the right. Figs. 95–96 print "L17" and "L18"; the text (p. 83) and their position show pools L117 and L118.
