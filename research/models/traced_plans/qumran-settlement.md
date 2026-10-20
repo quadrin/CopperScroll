@@ -7,7 +7,7 @@ Traced 20 October 2026. Data: [qumran-settlement.json](qumran-settlement.json). 
 - Yitzhak Magen and Yuval Peleg, *Back to Qumran: Final Report (1993–2004)*, Site Description (2018), Fig. 9 "Qumran, general plan", printed p. 12 (full-report PDF p. 35).
 - Asset: [fig09-p12.png](../../assets/plans/magen-peleg2018/fig09-p12.png), 1361 × 1741 px, 2 px per PDF point, SHA-256 `1ece39a2…e4bce390ea`.
 - Licence: CC BY-NC 4.0. The JSTOR cover of the Site Description chapter states it ([folder README](../../assets/plans/magen-peleg2018/README.md); https://www.jstor.org/stable/j.ctv1t8cdq.6). Printed p. 12 is inside that chapter (pp. 11–100). The page-image manifest asserts no open licence. Attribute Magen and Peleg. Use only for noncommercial purposes. The overlay is a derivative of the figure and carries this attribution.
-- Text used for sizes and depths: the same report, pp. 11–57 (Drive text of the full report; the text after p. 57 was cut off) and pp. 88–94 ([water-cemetery-pp88-100.pdf](../../assets/plans/magen-peleg2018/water-cemetery-pp88-100.pdf)). Also K. Galor, *Qumran's Plastered Pools* ([author copy](../../assets/plans/galor-plastered-pools/README.md)), pp. 259–268. Magness 2021 comes only from the project extract [registration/magness2021_extracted.md](../../../registration/magness2021_extracted.md).
+- Text used for sizes and depths: the same report, pp. 11–57 (Drive text of the full report; the text after p. 57 was cut off) and pp. 88–94 ([water-cemetery-pp88-100.pdf](../../assets/plans/magen-peleg2018/water-cemetery-pp88-100.pdf)). Pp. 58–87 were read on 20 October 2026, later, from the owner's upload of the JSTOR chapter ([hashes and figure pages](../../assets/plans/magen-peleg2018/README.md)). Also K. Galor, *Qumran's Plastered Pools* ([author copy](../../assets/plans/galor-plastered-pools/README.md)), pp. 259–268. Magness 2021 comes only from the project extract [registration/magness2021_extracted.md](../../../registration/magness2021_extracted.md).
 - Not used for the tracing: Ritmeyer's reconstruction (Ilan and Amit 1989, Fig. 7, p. 287). It is a reconstruction, not a plan of remains.
 
 ## Scale bar
@@ -58,12 +58,14 @@ Each depth is the published depth below the rim. It is in `height.value` with ba
 
 - L71: 5.40 m (M&P p. 90)
 - L58: 4.40 m (M&P p. 43)
-- L91: 4 m (Galor p. 262)
+- L91: 5.25 m (M&P p. 86, for the whole pool with L85, 15.60 × 4.40 m; Galor p. 262 gives 4 m and 12.6 × 4.6 m)
 - L48–L49: approx. 3.50 m (M&P p. 35)
 - L56: maximum 2.75 m (M&P p. 43)
 - L69: 2.30 m (M&P p. 90)
 - L68: 1.66 m (M&P p. 88)
 - L50: 1.50 m (M&P p. 38)
+
+L85 is the staircase of L91 (M&P p. 86): its element names `steps.pool: "L91"`, so the flight reaches the pool's floor.
 
 Fig. 57 (p. 53) prints spot levels inside some pools: −330.19 in L110, −328.48 in L91 and −328.23 in L117. The surface that each spot marks is not stated, so these levels are recorded in `levels.source` only. L110, L117, L118, L138 and L75 have no published depth.
 
@@ -77,4 +79,16 @@ Fig. 57 (p. 53) prints spot levels inside some pools: −330.19 in L110, −328.
 - Channel lines under the label boxes of L116, L115 and L118 and at the dense junctions near L138 and L110 were read by hand (± 0.25 m).
 - L83 cannot be separated from L85 at this scale. L83 is a label only.
 - Functions are the words of the sources (for example, "sedimentation pool" is the term of Magen and Peleg). The tracing adds no function.
-- The atlas builder at this date reads pool depth only from `levels.floor`. It draws `height.value` depths only if the builder is changed. It also builds dashed walls like solid walls.
+- The atlas builder reads a pool's depth from `levels.floor`, else from `height.value`; lines drawn dashed are built as low strips (changed on 20 October 2026).
+
+## Pages 58–87 — 20 October 2026, later
+
+Read in full from the uploaded chapter. Applied to the tracing and the atlas:
+
+- L91: 15.60 × 4.40 m and 5.25 m deep, L85 included; the staircase reaches the bottom; four plastered gutters at the top of the east wall; a 5 cm layer of potters' clay on the floor (2014 excavation) (p. 86). Check: traced L91 is 12.26–12.37 × 4.02–4.45 m, and L91 with L85 spans about 16 m north–south.
+- L138: 4.80 × 3.40 m, staircases on the east and west, internal retaining walls (p. 84). Check: the traced outline is 5.32–5.40 × 3.64–4.09 m, about 0.5 m larger.
+- L83: 2.60 × 1.70 m, three steps in its north-west corner; channels to L56 and, through W658, to L91 (pp. 84–86).
+- L110 and the sedimentation pools: L119 (2.10 × 1.20 m, 0.80 m deep) fed L110 in phase A; L110 was raised by 1 m in phase B and fed with L117 and L118 from L119 bis (pp. 82–83). L119 and L119 bis are not drawn separately on Fig. 9 and are not traced.
+- L67: a further sedimentation pool, 2.05 × 1.75 m and 1.43 m deep, on the channel to L71 (p. 86). Fig. 9 does not label it; it is not traced.
+
+These pages give no depth for L110, L117, L118 or L138, so those stay illustrative.

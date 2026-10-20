@@ -10,7 +10,7 @@ export type TracedElement = {
  id: string; label?: string; kind: string; layers: string[]; status: "observed" | "published-reconstruction" | "project-inference";
  lineStyle?: string; geometry: TracedGeometry;
  levels?: { top?: number | null; bottom?: number | null; floor?: number | null; rim?: number | null };
- height?: { value: number | null; basis: string }; steps?: { count?: number | null; down?: "n" | "s" | "e" | "w" };
+ height?: { value: number | null; basis: string }; steps?: { count?: number | null; down?: "n" | "s" | "e" | "w"; pool?: string };
  source?: string; locator?: string; note?: string;
 };
 export type TracedPlan = {
