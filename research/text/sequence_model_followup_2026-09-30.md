@@ -88,6 +88,7 @@ Legs within the Jericho block, by walking time:
 - a Hasmonean palace with an open central courtyard;
 - a "courtyard with perimeter columns and a central pool";
 - two pairs of swimming pools (18 × 13 m, 3.5 m deep);
+  - *Note, 20 October 2026:* the 3.5 m depth comes from the web summaries. Netzer 2001 gives the pool tops at ca. +100.40 (p. 79), and Plan 17 (p. 93) prints floors of 97.00 (southern pool) and 96.26 (northern pool). That is 3.40 m and 4.14 m ([tracing record](../models/traced_plans/jericho-pools-complex.md)).
 - a Herodian pool of 32 × 18 m and a Third Palace pool of 90 × 42 m;
 - a Third Palace court of 29 × 19 m with Corinthian columns;
 - "many ritual baths", including one with 800 bowls;

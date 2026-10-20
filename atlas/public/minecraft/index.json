@@ -2,8 +2,12 @@
  "sites": {
   "qumran-ilan": {
    "file": "qumran-ilan.bin.gz",
+   "plan": "qumran-ilan",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": "kh_qumran",
-   "bytes": 150243,
+   "bytes": 150272,
    "blockSize": 0.5,
    "origin": [
     -90,
@@ -50,8 +54,12 @@
   },
   "qumran-reeder": {
    "file": "qumran-reeder.bin.gz",
+   "plan": "qumran-reeder",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 16585,
+   "bytes": 16609,
    "blockSize": 0.25,
    "origin": [
     -23.5,
@@ -98,8 +106,12 @@
   },
   "jericho-ac": {
    "file": "jericho-ac.bin.gz",
+   "plan": "jericho-ac",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 8831,
+   "bytes": 8855,
    "blockSize": 0.25,
    "origin": [
     -17.75,
@@ -142,60 +154,22 @@
   },
   "jericho-early": {
    "file": "jericho-early.bin.gz",
+   "plan": "jericho-early",
+   "layer": "remains",
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 4187,
+   "bytes": 8486,
    "blockSize": 0.25,
    "origin": [
-    -21.5,
-    -4,
-    -23.5
+    -48.5,
+    -5.75,
+    -33.75
    ],
    "blocks": [
-    172,
-    30,
-    188
-   ],
-   "world": {
-    "x0": 3072,
-    "z0": 0,
-    "y0": -60
-   },
-   "masonry": "coursed",
-   "fills": {
-    "commands": 440,
-    "filled": 424437
-   },
-   "readback": {
-    "blocks": 970080,
-    "mismatches": 0,
-    "examples": [],
-    "missingSkyLight": 0
-   },
-   "counts": {
-    "coarse_dirt": 194708,
-    "smooth_quartz": 7488,
-    "smooth_stone": 9954,
-    "smooth_stone_slab[type=bottom]": 1119,
-    "stone": 210880,
-    "stone_brick_slab[type=bottom]": 24,
-    "stone_bricks": 264
-   },
-   "quads": 768
-  },
-  "jericho-late": {
-   "file": "jericho-late.bin.gz",
-   "terrainPlace": null,
-   "bytes": 3195,
-   "blockSize": 0.25,
-   "origin": [
-    -24,
-    -4,
-    -17.75
-   ],
-   "blocks": [
-    192,
-    30,
-    142
+    388,
+    29,
+    270
    ],
    "world": {
     "x0": 4096,
@@ -204,30 +178,84 @@
    },
    "masonry": "coursed",
    "fills": {
-    "commands": 303,
-    "filled": 330080
+    "commands": 746,
+    "filled": 2178413
    },
    "readback": {
-    "blocks": 817920,
+    "blocks": 3038040,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 1024
+    "missingSkyLight": 1536
    },
    "counts": {
-    "coarse_dirt": 142109,
-    "smooth_quartz": 9216,
-    "smooth_stone": 5535,
-    "smooth_stone_slab[type=bottom]": 646,
-    "stone": 172142,
-    "stone_brick_slab[type=bottom]": 36,
-    "stone_bricks": 396
+    "coarse_dirt": 751500,
+    "smooth_quartz": 21497,
+    "smooth_quartz_slab[type=bottom]": 6,
+    "smooth_quartz_slab[type=top]": 153,
+    "smooth_stone": 25285,
+    "smooth_stone_slab[type=bottom]": 894,
+    "smooth_stone_slab[type=top]": 173,
+    "stone": 1373370,
+    "stone_bricks": 5535
    },
-   "quads": 584
+   "quads": 1438
+  },
+  "jericho-late": {
+   "file": "jericho-late.bin.gz",
+   "plan": "jericho-late",
+   "layer": "remains",
+   "ring": null,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 8486,
+   "blockSize": 0.25,
+   "origin": [
+    -48.5,
+    -5.75,
+    -33.75
+   ],
+   "blocks": [
+    388,
+    29,
+    270
+   ],
+   "world": {
+    "x0": 7168,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "coursed",
+   "fills": {
+    "commands": 746,
+    "filled": 2178413
+   },
+   "readback": {
+    "blocks": 3038040,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 1536
+   },
+   "counts": {
+    "coarse_dirt": 751500,
+    "smooth_quartz": 21497,
+    "smooth_quartz_slab[type=bottom]": 6,
+    "smooth_quartz_slab[type=top]": 153,
+    "smooth_stone": 25285,
+    "smooth_stone_slab[type=bottom]": 894,
+    "smooth_stone_slab[type=top]": 173,
+    "stone": 1373370,
+    "stone_bricks": 5535
+   },
+   "quads": 1438
   },
   "siloam-receiver": {
    "file": "siloam-receiver.bin.gz",
+   "plan": "siloam-receiver",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 8517,
+   "bytes": 8543,
    "blockSize": 0.25,
    "origin": [
     -23.5,
@@ -240,7 +268,7 @@
     112
    ],
    "world": {
-    "x0": 5120,
+    "x0": 8192,
     "z0": 0,
     "y0": -60
    },
@@ -270,8 +298,12 @@
   },
   "gerizim-precinct": {
    "file": "gerizim-precinct.bin.gz",
+   "plan": "gerizim-precinct",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 17093,
+   "bytes": 17120,
    "blockSize": 0.5,
    "origin": [
     -127.5,
@@ -284,7 +316,7 @@
     580
    ],
    "world": {
-    "x0": 6144,
+    "x0": 9216,
     "z0": 0,
     "y0": -60
    },
@@ -313,8 +345,12 @@
   },
   "doq-waterworks": {
    "file": "doq-waterworks.bin.gz",
+   "plan": "doq-waterworks",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 23873,
+   "bytes": 23895,
    "blockSize": 0.25,
    "origin": [
     -19.5,
@@ -327,7 +363,7 @@
     152
    ],
    "world": {
-    "x0": 7168,
+    "x0": 10240,
     "z0": 0,
     "y0": -60
    },
@@ -360,8 +396,12 @@
   },
   "hyrcania-waterworks": {
    "file": "hyrcania-waterworks.bin.gz",
+   "plan": "hyrcania-waterworks",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 58732,
+   "bytes": 58761,
    "blockSize": 0.25,
    "origin": [
     -44.25,
@@ -374,7 +414,7 @@
     344
    ],
    "world": {
-    "x0": 8192,
+    "x0": 11264,
     "z0": 0,
     "y0": -60
    },
@@ -406,8 +446,12 @@
   },
   "abu-saraj-iv17": {
    "file": null,
+   "plan": "abu-saraj-iv17",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 6907,
+   "bytes": 6934,
    "blockSize": 0.25,
    "origin": [
     -6,
@@ -420,7 +464,7 @@
     36
    ],
    "world": {
-    "x0": 9216,
+    "x0": 12288,
     "z0": 0,
     "y0": -60
    },
@@ -447,8 +491,12 @@
   },
   "bethesda-pools": {
    "file": "bethesda-pools.bin.gz",
+   "plan": "bethesda-pools",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 6416,
+   "bytes": 6443,
    "blockSize": 0.5,
    "origin": [
     -64,
@@ -461,7 +509,7 @@
     216
    ],
    "world": {
-    "x0": 10240,
+    "x0": 13312,
     "z0": 0,
     "y0": -60
    },
@@ -490,8 +538,12 @@
   },
   "east-gate-warren": {
    "file": "east-gate-warren.bin.gz",
+   "plan": "east-gate-warren",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
    "terrainPlace": null,
-   "bytes": 11642,
+   "bytes": 11666,
    "blockSize": 0.5,
    "origin": [
     -65,
@@ -504,7 +556,7 @@
     200
    ],
    "world": {
-    "x0": 11264,
+    "x0": 14336,
     "z0": 0,
     "y0": -60
    },
@@ -535,6 +587,288 @@
     "stone_slab[type=top]": 118
    },
    "quads": 2042
+  },
+  "qumran-settlement": {
+   "file": "qumran-settlement.bin.gz",
+   "plan": "qumran-settlement",
+   "layer": "remains",
+   "ring": null,
+   "surroundings": [
+    "qumran-settlement~ring1",
+    "qumran-settlement~ring2"
+   ],
+   "terrainPlace": null,
+   "bytes": 57659,
+   "blockSize": 0.5,
+   "origin": [
+    -62,
+    -7,
+    -102
+   ],
+   "blocks": [
+    248,
+    17,
+    408
+   ],
+   "world": {
+    "x0": 15360,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "rubble",
+   "fills": {
+    "commands": 3201,
+    "filled": 1422842
+   },
+   "readback": {
+    "blocks": 1720128,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 0
+   },
+   "counts": {
+    "coarse_dirt": 398158,
+    "cobblestone": 13964,
+    "cobblestone_slab[type=bottom]": 273,
+    "smooth_quartz": 4631,
+    "smooth_quartz_slab[type=bottom]": 392,
+    "smooth_stone": 5,
+    "smooth_stone_slab[type=bottom]": 478,
+    "smooth_stone_slab[type=top]": 541,
+    "stone": 1004400
+   },
+   "quads": 11235
+  },
+  "qumran-settlement~ring1": {
+   "file": "qumran-settlement~ring1.bin.gz",
+   "plan": "qumran-settlement",
+   "layer": null,
+   "ring": 0,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 233242,
+   "blockSize": 2,
+   "origin": [
+    -400,
+    -58,
+    -400
+   ],
+   "blocks": [
+    400,
+    58,
+    400
+   ],
+   "world": {
+    "x0": 16384,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "rubble",
+   "fills": {
+    "commands": 25754,
+    "filled": 3546029
+   },
+   "readback": {
+    "blocks": 9280000,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 1420800
+   },
+   "counts": {
+    "coarse_dirt": 153676,
+    "stone": 3392353
+   },
+   "quads": 37949
+  },
+  "qumran-settlement~ring2": {
+   "file": "qumran-settlement~ring2.bin.gz",
+   "plan": "qumran-settlement",
+   "layer": null,
+   "ring": 1,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 193287,
+   "blockSize": 8,
+   "origin": [
+    -1152,
+    -72,
+    -1152
+   ],
+   "blocks": [
+    288,
+    42,
+    288
+   ],
+   "world": {
+    "x0": 17408,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "rubble",
+   "fills": {
+    "commands": 11110,
+    "filled": 754106
+   },
+   "readback": {
+    "blocks": 3483648,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 870912
+   },
+   "counts": {
+    "coarse_dirt": 13472,
+    "stone": 726471,
+    "stone_slab[type=bottom]": 14163
+   },
+   "quads": 32757
+  },
+  "jericho-early@stage3": {
+   "file": "jericho-early@stage3.bin.gz",
+   "plan": "jericho-early",
+   "layer": "stage3",
+   "ring": null,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 24748,
+   "blockSize": 0.25,
+   "origin": [
+    -63.25,
+    -5.75,
+    -42.75
+   ],
+   "blocks": [
+    506,
+    40,
+    342
+   ],
+   "world": {
+    "x0": 3072,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "coursed",
+   "fills": {
+    "commands": 1050,
+    "filled": 3755009
+   },
+   "readback": {
+    "blocks": 6922080,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 0
+   },
+   "counts": {
+    "coarse_dirt": 1294828,
+    "smooth_quartz": 20682,
+    "smooth_quartz_slab[type=top]": 31,
+    "smooth_sandstone": 49399,
+    "smooth_sandstone_slab[type=bottom]": 1110,
+    "smooth_sandstone_slab[type=top]": 2669,
+    "smooth_stone": 38009,
+    "smooth_stone_slab[type=bottom]": 1032,
+    "smooth_stone_slab[type=top]": 39,
+    "stone": 2347210
+   },
+   "quads": 4433
+  },
+  "jericho-late@stage6": {
+   "file": "jericho-late@stage6.bin.gz",
+   "plan": "jericho-late",
+   "layer": "stage6",
+   "ring": null,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 52090,
+   "blockSize": 0.25,
+   "origin": [
+    -63,
+    -5.75,
+    -42
+   ],
+   "blocks": [
+    504,
+    40,
+    336
+   ],
+   "world": {
+    "x0": 5120,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "coursed",
+   "fills": {
+    "commands": 1422,
+    "filled": 3679386
+   },
+   "readback": {
+    "blocks": 6773760,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 0
+   },
+   "counts": {
+    "coarse_dirt": 1262184,
+    "smooth_quartz": 19923,
+    "smooth_quartz_slab[type=bottom]": 6,
+    "smooth_quartz_slab[type=top]": 141,
+    "smooth_sandstone": 67975,
+    "smooth_sandstone_slab[type=bottom]": 2369,
+    "smooth_sandstone_slab[type=top]": 4752,
+    "smooth_stone": 26042,
+    "smooth_stone_slab[type=bottom]": 1006,
+    "smooth_stone_slab[type=top]": 158,
+    "stone": 2294830
+   },
+   "quads": 9277
+  },
+  "jericho-late@herodian": {
+   "file": "jericho-late@herodian.bin.gz",
+   "plan": "jericho-late",
+   "layer": "herodian",
+   "ring": null,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 17416,
+   "blockSize": 0.25,
+   "origin": [
+    -62.75,
+    -5.75,
+    -40.25
+   ],
+   "blocks": [
+    502,
+    39,
+    322
+   ],
+   "world": {
+    "x0": 6144,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "coursed",
+   "fills": {
+    "commands": 863,
+    "filled": 3442683
+   },
+   "readback": {
+    "blocks": 6304116,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 11264
+   },
+   "counts": {
+    "coarse_dirt": 1197130,
+    "smooth_quartz": 20610,
+    "smooth_sandstone": 24469,
+    "smooth_sandstone_slab[type=bottom]": 106,
+    "smooth_sandstone_slab[type=top]": 326,
+    "smooth_stone": 27448,
+    "smooth_stone_slab[type=bottom]": 779,
+    "smooth_stone_slab[type=top]": 28,
+    "stone": 2166252,
+    "stone_bricks": 5535
+   },
+   "quads": 3206
   }
  },
  "minecraft": {

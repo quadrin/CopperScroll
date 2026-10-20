@@ -4,12 +4,14 @@
 // their resolution changes. The material decides the Minecraft block.
 import * as T from 'three';
 
-export const MATERIALS=['air','soil','rock','limestone','masonry','plaster','copper'];
-const CODE={soil:1,bedrock:2,limestone:3,masonry:4,plaster:5,copper:6};
-// Higher codes win where two solids share a cell. Ground fill always yields to architecture.
+export const MATERIALS=['air','soil','rock','limestone','masonry','plaster','copper','restored'];
+const CODE={soil:1,bedrock:2,limestone:3,masonry:4,plaster:5,copper:6,restored:7};
+// Where two solids share a cell the higher priority wins; a restored part never hides an
+// observed one. Ground fill always yields to architecture.
+const PRIORITY=[0,1,2,3,4,5,6,.5];
 const MASONRY={rubble:['cobblestone','cobblestone_slab'],coursed:['stone_bricks','stone_brick_slab'],ashlar:['cut_sandstone','cut_sandstone_slab'],mudbrick:['mud_bricks','mud_brick_slab']};
 export function blockTable(masonry){
- return {1:['coarse_dirt',null],2:['stone','stone_slab'],3:['smooth_stone','smooth_stone_slab'],4:MASONRY[masonry]??MASONRY.coursed,5:['smooth_quartz','smooth_quartz_slab'],6:['waxed_cut_copper','waxed_cut_copper_slab']};
+ return {1:['coarse_dirt',null],2:['stone','stone_slab'],3:['smooth_stone','smooth_stone_slab'],4:MASONRY[masonry]??MASONRY.coursed,5:['smooth_quartz','smooth_quartz_slab'],6:['waxed_cut_copper','waxed_cut_copper_slab'],7:['smooth_sandstone','smooth_sandstone_slab']};
 }
 
 export function materialCode(material){
@@ -31,7 +33,7 @@ function featureIndex(g,id){if(!id)return 0;let n=g.features.indexOf(id);if(n<0)
 function setCell(g,i,j,k,code,feature){
  if(i<0||j<0||k<0||i>=g.nx||j>=g.ny||k>=g.nz)return;
  const n=cellIndex(g,i,j,k);
- if(g.solid[n]&&g.cells[n]>code)return;
+ if(g.solid[n]&&PRIORITY[g.cells[n]]>PRIORITY[code])return;
  g.cells[n]=code;g.solid[n]=1;if(feature||!g.feature[n])g.feature[n]=feature;
 }
 
@@ -60,21 +62,22 @@ function insidePolygon(x,z,points){let hit=false;for(let i=0,j=points.length-1;i
 // Ground: the top surface of each column, filled down to the grid floor. Columns inside
 // the ground's holes (pools, shafts) stay open: the display mesh drops only triangles whose
 // centre is inside a hole, and filling the rest would wall in the pool edges.
-export function rasterGround(g,meshes,{soilDepth=2}={}){
+export function rasterGround(g,meshes,{soilDepth=2,exclude=null}={}){
  const n=g.nx*g.nz,top=new Float64Array(n).fill(-Infinity),kind=new Uint8Array(n);
+ const excluded=(i,k)=>{if(!exclude)return false;const x=g.x0+(i+.5)*g.s,z=g.z0+(k+.5)*g.s;return x>exclude.minX&&x<exclude.maxX&&z>exclude.minZ&&z<exclude.maxZ;};
  for(const mesh of meshes){
   const code=materialCode(mesh.material)||CODE.soil,holes=mesh.userData.holes??[],inverse=mesh.matrixWorld.clone().invert(),p=new T.Vector3();
   const open=(x,z)=>{p.set(x,0,z).applyMatrix4(inverse);return holes.some(h=>insidePolygon(p.x,p.z,h));};
   if(mesh.userData.heightAt){
    const lift=new T.Vector3().setFromMatrixPosition(mesh.matrixWorld).y;
    for(let i=0;i<g.nx;i++)for(let k=0;k<g.nz;k++){
-    const x=g.x0+(i+.5)*g.s,z=g.z0+(k+.5)*g.s;if(open(x,z))continue;
+    const x=g.x0+(i+.5)*g.s,z=g.z0+(k+.5)*g.s;if(excluded(i,k)||open(x,z))continue;
     p.set(x,0,z).applyMatrix4(inverse);if(Math.hypot(p.x,p.z)>mesh.userData.radius)continue;
     const y=mesh.userData.heightAt(p.x,p.z)+lift,col=i*g.nz+k;if(y>top[col]){top[col]=y;kind[col]=code;}
    }
    continue;
   }
-  triangles(mesh,(a,b,c)=>columns(g,a,b,c,(i,k,y)=>{const col=i*g.nz+k;if(y>top[col]&&!open(g.x0+(i+.5)*g.s,g.z0+(k+.5)*g.s)){top[col]=y;kind[col]=code;}}));
+  triangles(mesh,(a,b,c)=>columns(g,a,b,c,(i,k,y)=>{const col=i*g.nz+k;if(y>top[col]&&!excluded(i,k)&&!open(g.x0+(i+.5)*g.s,g.z0+(k+.5)*g.s)){top[col]=y;kind[col]=code;}}));
  }
  for(let i=0;i<g.nx;i++)for(let k=0;k<g.nz;k++){
   const col=i*g.nz+k;if(top[col]===-Infinity)continue;
@@ -182,9 +185,9 @@ export function toBlocks(g,masonry){
  for(let i=0;i<g.nx;i++)for(let k=0;k<g.nz;k++)for(let Y=0;Y<ny;Y++){
   const lo=cellIndex(g,i,2*Y,k),up=lo+1,a=g.cells[lo],b=g.cells[up],out=(i*g.nz+k)*ny+Y;if(!a&&!b)continue;
   let state;
-  if(a&&b)state=table[Math.max(a,b)][0];
+  if(a&&b)state=table[PRIORITY[a]>=PRIORITY[b]?a:b][0];
   else{const code=a||b,[full,slab]=table[code];state=slab?`${slab}[type=${a?'bottom':'top'}]`:full;}
-  blocks[out]=id(state);feature[out]=g.feature[a>=b?lo:up]||g.feature[a>=b?up:lo];
+  const first=PRIORITY[a]>=PRIORITY[b];blocks[out]=id(state);feature[out]=g.feature[first?lo:up]||g.feature[first?up:lo];
  }
  return {nx:g.nx,ny,nz:g.nz,blocks,palette,feature};
 }

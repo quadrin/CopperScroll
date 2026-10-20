@@ -217,18 +217,19 @@
   "drive_access": "Authenticated Google Drive access verified 12 October 2026. Folder index and newly uploaded SWP map set and Raviv–Zissu 2022 article retrieved; modern excavation scans already archived in the repository were reinspected. The SWP upload is a survey map set, not a Gerizim architectural report.",
   "model_rendering": {
     "asset": "atlas/app/atlas-model-geometry.ts",
-    "sha256": "e99265f3762eadc8087d147d851629820ce27d38cc989ff1e23732490dd207d5",
+    "sha256": "d51956e84f0005e7ae5ff910ab79053064594d0d830ff708737fc2c109f50a77",
     "renderer": "Three.js models in a shared MapLibre geographic WebGL layer; eye-level inspection uses the same map camera. Source plans use the inline SVG canvas.",
     "selection": "Source feature IDs retained. Model camera focus is a display operation. Source image/tracing remains independently available.",
     "dimensions": {
       "abu-saraj-iv17": "Plan 5 scale, 3 m / 178 sampled pixels. Uniform height 1.55 m within reported 1.4–1.7 m. Roof cap, rock thickness, masonry height and scan sampling illustrative.",
       "hyrcania-waterworks": "Northern pool floor at -5 m, southern member at -2.6 m; approximate published northern sides. Rock separation 5.1 m within reported 4.8–5.4 m. Southern footprint, bridge, summit and other cistern dimensions illustrative.",
       "gerizim-precinct": "Reported 212 × 136 m enclosure, 40 × 40 m mansion, 20 × 14 m building IV, 25 × 24 m citadel. East stair uses maximum 23 m width, 34 m run, 15.5 m rise and approximately 57 steps. Western landing distinct from southern seven-step and E1 flights. Other heights, divisions, cistern and platform relief illustrative.",
-      "jericho-early": "Approximate 18 × 13 m pool envelopes; 2.5 m depth, columns and platform illustrative.",
-      "jericho-late": "Approximate 32 × 18 m joined envelope; 2.5 m depth, columns and platform illustrative.",
+      "jericho-early": "Traced plan (research/models/traced_plans/jericho-pools-complex.json). Views: Stage 3 (Netzer Plan 17) and Remains. Pool depths from published levels: rim +100.40 (p. 79), floors 97.00 and 96.26 (Plan 17), so 3.40 and 4.14 m. Wall and column heights illustrative (3.2 and 3.6 m in reconstructions; 0.9 m in Remains); the central podium 1 m on the pool floor, illustrative.",
+      "jericho-late": "Traced plan as for jericho-early. Views: Stage 6 (Netzer Plan 20, the figure shown: two separate pools), Herodian (Plan 22 and text: the joined basin) and Remains. The earlier pairing of Fig. 22 with the joined basin is corrected. Same depth and height basis.",
       "relative_models": "Doq, Qumran, Siloam and Area AC are normalized relative frames. Heights/depths and channel cross-sections illustrative; selection envelopes are not measured footprints.",
       "bethesda-pools": "Northern pool 53 × 40 m (Gibson), depth 10 m inferred from about 21,200 m³; southern pool sides about 45/50/65/47 m, 14 m deep (Duprez); dam 6.5 m; chimney 15 m (Duprez; von Wahlde 12 m); settling-basin wall 2.6 m; cistern 1 8.5 m deep, 6 m across; grotto 5 1.5 × 2 × 1.5 m with four steps; basin 4 0.3 m. Step count, other grotto sizes and eastern-complex placement illustrative.",
-      "east-gate-warren": "Plate VI measurements: gate outline 24.8 × 17.3 m; cistern XV 18 ft across, 30.0 m west of the gatehouse, 10.67 m deep (35 ft); massive wall after the plate. Levels relative to the Haram surface 2,408 ft: sill 2,396, ground outside about 2,389, shaft 2,333.5–2,308, gallery rise 8 ft at 37 ft and 25 ft 6 in at 85 ft. Gatehouse height and roof, wall parapet and thickness, gallery section and the interpolated slope illustrative."
+      "east-gate-warren": "Plate VI measurements: gate outline 24.8 × 17.3 m; cistern XV 18 ft across, 30.0 m west of the gatehouse, 10.67 m deep (35 ft); massive wall after the plate. Levels relative to the Haram surface 2,408 ft: sill 2,396, ground outside about 2,389, shaft 2,333.5–2,308, gallery rise 8 ft at 37 ft and 25 ft 6 in at 85 ft. Gatehouse height and roof, wall parapet and thickness, gallery section and the interpolated slope illustrative.",
+      "qumran-settlement": "Traced from Magen & Peleg 2018 Fig. 9 (research/models/traced_plans/qumran-settlement.json): walls as a 0.25 m raster at the figure's scale bar, drawn 0.9 m high (preserved heights not traced); pool depths published (L71 5.40 m, L58 4.40 m, L91 4 m, L48–L49 3.50 m, L56 2.75 m, L69 2.30 m, L68 1.66 m, L50 1.50 m), others 2 m illustrative; lines drawn dashed without a stated meaning are 0.12 m strips. No levels; one level surface. Not registered: centred on the Kh. Qumran anchor."
     },
     "historical_context": "gerizim-swp-context remains a flat survey map.",
     "orientation": "Source frame relationships retained or simplified as documented; no geographic registration or additional compass bearing inferred.",
@@ -272,6 +273,12 @@
       "rendering": "Directional sun, hemisphere fill, ACES tone mapping, static shadow map, eye-level sky; 2048-pixel desktop / 1024-pixel phone shadow atlas. Repeated masonry and scree use GPU instancing. Thin soil floors receive shadows without casting self-shadow artifacts. Regional source layers pause at eye level and regain their individual visibility on exit; the site and sky continue rendering in the same geographic canvas.",
       "camera": "Initial eye-level positions frame a source feature such as the eastern stair, pool rim or channel. These are display viewpoints, not surveyed camera positions or walking routes. Eye-level look can pass above the horizon to inspect cliff faces and tall structures; exiting restores the normal geographic camera limits. The first-person camera now follows a physical capsule body, with gravity and clearance against the displayed geometry; the 70-degree world view has one camera-relative blocky right forearm in its lower-right corner.",
       "covered_passages": "The normalized Reeder–Jol scene uses angular rock-cut display sections in place of smooth tubes. Their rectangular roof section is illustrative. A copper-coloured lining retains the proposed-course distinction in the source."
+    },
+    "wide_terrain": {
+      "date": "2026-10-20",
+      "manifest": "research/assets/plans/atlas-explorer/terrain-wide/manifest.json",
+      "asset": "atlas/public/terrain/kh_qumran.json",
+      "use": "Plans with terrain 'wide' (qumran-settlement): ground of the smooth model and of the Minecraft terrain rings (2 m to 400 m, 8 m to 1,152 m)."
     }
   },
   "drive_reference_links": {

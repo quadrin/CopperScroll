@@ -7,23 +7,40 @@ import type {ModelGeometry} from './atlas-model-geometry';
 // light Minecraft computed for them; nothing else from the game is used. Block
 // textures below are original pixel art in each site's photo-derived colours.
 type Header={version:number;id:string;size:number;half:number;origin:[number,number,number];dims:[number,number,number];materials:string[];masonry:string;features:string[];groups:{material:number;feature:number;quads:number}[]};
-export type MinecraftBuild={header:Header;groups:{material:number;feature:number;quads:Uint16Array}[];edition:string;version:string|null;mismatches:number|null};
-type Index={minecraft:{edition:string;version:string|null};sites:Record<string,{file:string|null;terrainPlace?:string|null;readback?:{mismatches:number}}>};
+export type MinecraftBuild={header:Header;groups:{material:number;feature:number;quads:Uint16Array}[];edition:string;version:string|null;mismatches:number|null;rings?:MinecraftBuild[]};
+type Index={minecraft:{edition:string;version:string|null};sites:Record<string,{file:string|null;terrainPlace?:string|null;readback?:{mismatches:number};surroundings?:string[]|null}>};
 
 const base=()=>(import.meta as ImportMeta&{env?:{BASE_URL?:string}}).env?.BASE_URL??'/';
 let index:Promise<Index|null>|undefined;
 export function minecraftIndex(){return index??=fetch(`${base()}minecraft/index.json`).then(r=>r.ok?r.json() as Promise<Index>:null).catch(()=>null);}
 
-export async function loadMinecraftBuild(planId:string,placeId:string):Promise<MinecraftBuild|null>{
- const list=await minecraftIndex(),site=list?.sites[planId];if(!site?.file||(site.terrainPlace&&site.terrainPlace!==placeId))return null;
- const response=await fetch(`${base()}minecraft/${site.file}`);if(!response.ok)return null;
+// A traced plan's reconstruction layers are separate builds, keyed `<plan>@<layer>`.
+export const buildKey=(planId:string,layer?:string)=>layer&&layer!=='remains'?`${planId}@${layer}`:planId;
+export async function loadMinecraftBuild(planId:string,placeId:string,layer?:string):Promise<MinecraftBuild|null>{
+ const list=await minecraftIndex(),site=list?.sites[buildKey(planId,layer)];if(!site?.file||(site.terrainPlace&&site.terrainPlace!==placeId))return null;
+ const build=await loadBuildFile(site.file,list!,site.readback?.mismatches??null);
+ // Coarser terrain rings around a plan with the wide terrain patch.
+ if(build&&site.surroundings?.length)build.rings=(await Promise.all(site.surroundings.map(key=>{const ring=list!.sites[key];return ring?.file?loadBuildFile(ring.file,list!,ring.readback?.mismatches??null):null;}))).filter((b):b is MinecraftBuild=>!!b);
+ return build;
+}
+async function loadBuildFile(file:string,list:Index,mismatches:number|null):Promise<MinecraftBuild|null>{
+ const response=await fetch(`${base()}minecraft/${file}`);if(!response.ok)return null;
  let bytes=new Uint8Array(await response.arrayBuffer());
  // A host may already have removed the gzip layer through Content-Encoding.
  if(bytes[0]===0x1f&&bytes[1]===0x8b)bytes=new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
  const buffer=bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),length=new DataView(buffer).getUint32(0,true);
  const header=JSON.parse(new TextDecoder().decode(new Uint8Array(buffer,4,length))) as Header;let offset=4+length;
  const groups=header.groups.map(g=>{const quads=new Uint16Array(buffer,offset,g.quads*6);offset+=g.quads*12;return {material:g.material,feature:g.feature,quads};});
- return {header,groups,edition:list!.minecraft.edition,version:list!.minecraft.version,mismatches:site.readback?.mismatches??null};
+ return {header,groups,edition:list.minecraft.edition,version:list.minecraft.version,mismatches};
+}
+
+// Wider modern terrain for a place (atlas/public/terrain), decoded to the landscape patch shape.
+type WideTerrain={lat:number;lon:number;extent:number;size:number;centreElevation:number;data:string};
+export async function loadTerrainPatch(placeId:string){
+ const response=await fetch(`${base()}terrain/${placeId}.json`);if(!response.ok)return null;
+ const t=await response.json() as WideTerrain,bytes=Uint8Array.from(atob(t.data),c=>c.charCodeAt(0)),view=new DataView(bytes.buffer),elevations=new Array<number>(t.size*t.size);
+ for(let i=0;i<elevations.length;i++)elevations[i]=t.centreElevation+view.getInt16(i*2,true)/10;
+ return {lat:t.lat,lon:t.lon,anchorPrecision:'wide patch',extent:t.extent,size:t.size,elevations,centreElevation:t.centreElevation};
 }
 
 // Minecraft-style brightness for sky light 0–15, with a floor so dark tunnels stay readable.
@@ -33,12 +50,14 @@ function random(seed:number){let n=seed>>>0;return ()=>{n=(Math.imul(n,1664525)+
 // One 16 × 16 tile per block face. The mean colour is the site's photo-derived base.
 function pixelTexture(material:number,planId:string,masonry:string){
  const style=siteStyle(planId),n=16,tone=new Float32Array(n*n),rand=random(material*977+planId.length*31);
- const colour=new T.Color(material===1?style.soil:material===2?style.rock:material===5?style.plaster:material===6?'#b56b42':style.stone);
- for(let i=0;i<n*n;i++)tone[i]=1+(rand()-.5)*(material===5?.05:material===3?.07:.16);
+ const colour=material===7?new T.Color(style.stone).lerp(new T.Color('#f4efe3'),.62):new T.Color(material===1?style.soil:material===2?style.rock:material===5?style.plaster:material===6?'#b56b42':style.stone);
+ for(let i=0;i<n*n;i++)tone[i]=1+(rand()-.5)*(material===5||material===7?.05:material===3?.07:.16);
  const set=(x:number,y:number,f:number)=>{tone[((y+n)%n)*n+(x+n)%n]*=f;};
  if(material===1){for(let k=0;k<9;k++){const x=Math.floor(rand()*n),y=Math.floor(rand()*n),f=rand()<.5?.78:1.18;set(x,y,f);set(x+1,y,f);}}
  else if(material===2){for(let y=0;y<n;y+=5+Math.floor(rand()*2))for(let x=0;x<n;x++)if(rand()<.8)set(x,y+Math.round(Math.sin(x*.7)*.6),.86);}
  else if(material===3){for(let k=0;k<n;k++){set(k,0,.93);set(0,k,.93);set(k,n-1,.9);set(n-1,k,.9);}}
+ // Restored (drawn only by a published reconstruction): pale, with a dashed outline.
+ else if(material===7){for(let k=0;k<n;k++)if(k%4<2){set(k,0,.78);set(0,k,.78);}}
  else if(material===6){for(let y=0;y<n;y++)for(let x=0;x<n;x++){const a=x%8,b=y%8;if(a===0||b===0)set(x,y,1.12);if(a===7||b===7)set(x,y,.82);}}
  else if(material===4){
   if(masonry==='rubble'){
@@ -96,7 +115,11 @@ const PILOT_GROUND=new Set(['qumran-ground','qumran-ridge-back','connected-limes
 // Replace the model's architecture with the blocks. Outside the block area the smooth
 // terrain and its scattered stones stay, so the view keeps its landscape context.
 export function applyMinecraftBuild(model:ModelGeometry,build:MinecraftBuild,planId:string){
- const {group,domain}=minecraftMeshes(build,planId),root=model.root,inside=(x:number,z:number)=>x>domain.minX&&x<domain.maxX&&z>domain.minZ&&z<domain.maxZ;
+ const near=minecraftMeshes(build,planId),rings=(build.rings??[]).map(ring=>minecraftMeshes(ring,planId)),group=near.group;
+ for(const ring of rings){ring.group.children.forEach(m=>m.userData.minecraftRing=true);group.add(...ring.group.children);}
+ // The smooth terrain stays only outside the outermost block area.
+ const domain=[near,...rings].reduce((a,b)=>({minX:Math.min(a.minX,b.domain.minX),maxX:Math.max(a.maxX,b.domain.maxX),minZ:Math.min(a.minZ,b.domain.minZ),maxZ:Math.max(a.maxZ,b.domain.maxZ)}),near.domain);
+ const root=model.root,inside=(x:number,z:number)=>x>domain.minX&&x<domain.maxX&&z>domain.minZ&&z<domain.maxZ;
  root.updateMatrixWorld(true);const p=new T.Vector3(),m=new T.Matrix4(),hidden=new T.Matrix4().makeScale(0,0,0),remove:T.Object3D[]=[];
  for(const child of root.children){
   const ground=child.userData.siteContext==='ground'||PILOT_GROUND.has(child.name);
@@ -117,6 +140,6 @@ export function applyMinecraftBuild(model:ModelGeometry,build:MinecraftBuild,pla
  group.position.copy(root.position).negate();group.name='minecraft-build';root.add(group);
  model.selectable.length=0;group.children.forEach(mesh=>{if(mesh.userData.featureId)model.selectable.push(mesh);});
  model.note=`Minecraft build · ${model.note}`;
- model.assumptions.unshift(`Minecraft build: this source model was converted to blocks of ${build.header.size} ${model.units==='metres'?'m':'model units'} (half blocks ${build.header.half}), placed by a Minecraft ${build.edition} ${build.version??''} server, saved, and read back from the world’s region files${build.mismatches===0?' with every block as placed':''}. Each face is shaded by the sky light Minecraft computed for it, so covered tunnels, cisterns and caves are darker. Rounding to the block size can move an edge or a height by up to half a block; the blocks add no detail to the source model. Block textures are original pixel art in the site’s photo-derived colours, not the game’s textures. Outside the block area the smooth terrain is shown.`);
+ model.assumptions.unshift(`Minecraft build: this source model was converted to blocks of ${build.header.size} ${model.units==='metres'?'m':'model units'} (half blocks ${build.header.half}), placed by a Minecraft ${build.edition} ${build.version??''} server, saved, and read back from the world’s region files${build.mismatches===0?' with every block as placed':''}. Each face is shaded by the sky light Minecraft computed for it, so covered tunnels, cisterns and caves are darker. Rounding to the block size can move an edge or a height by up to half a block; the blocks add no detail to the source model. Block textures are original pixel art in the site’s photo-derived colours, not the game’s textures. Outside the block area the smooth terrain is shown.${build.rings?.length?` Around the site, modern terrain is built in coarser blocks (${build.rings.map(r=>`${r.header.size} m`).join(', then ')}) out to the edge of the wider elevation patch; it is today's ground, not the ancient surface.`:''}`);
  return model;
 }

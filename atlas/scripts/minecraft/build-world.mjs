@@ -37,9 +37,31 @@ export const SITES=[
  {id:'east-gate-warren',size:.5},
 ];
 const PILOT_GROUND=new Set(['qumran-ground','qumran-ridge-back','connected-limestone-bed']);
+// Plans with the wide terrain patch get coarser block rings around them, each with a
+// hole exactly the size of the build inside it.
+export const RINGS=[{size:2,half:400},{size:8,half:1152}];
+export const buildKey=(planId,layer)=>layer&&layer!=='remains'?`${planId}@${layer}`:planId;
+
+// One build per site; traced plans give one per layer (remains, each published phase).
+export function buildSpecs(models){
+ const specs=[],traced=plan=>plan?.traced&&models.tracedPlans[plan.traced];
+ const planSpecs=(plan,base)=>traced(plan)?(plan.layers??[{id:'remains'}]).map(l=>({...base,id:buildKey(plan.id,l.id),plan:plan.id,layer:l.id})):[{...base,plan:plan.id}];
+ for(const spec of SITES)specs.push(...planSpecs(models.plans.find(p=>p.id===spec.id),spec));
+ for(const plan of models.plans)if(traced(plan)&&!SITES.some(s=>s.id===plan.id))specs.push(...planSpecs(plan,{id:plan.id,size:plan.blockSize??.5}));
+ for(const plan of models.plans)if(plan.terrain==='wide'&&specs.some(s=>s.plan===plan.id))RINGS.forEach((r,i)=>specs.push({id:`${plan.id}~ring${i+1}`,plan:plan.id,ring:i,size:r.size,half:r.half}));
+ return specs;
+}
+// Wider terrain (atlas/public/terrain), decoded to the landscape patch shape.
+export function wideTerrain(placeId){
+ const path=new URL(`../../public/terrain/${placeId}.json`,import.meta.url);if(!existsSync(path))return undefined;
+ const t=JSON.parse(readFileSync(path,'utf8')),bytes=Buffer.from(t.data,'base64'),elevations=new Array(t.size*t.size);
+ for(let i=0;i<elevations.length;i++)elevations[i]=t.centreElevation+bytes.readInt16LE(i*2)/10;
+ return {lat:t.lat,lon:t.lon,anchorPrecision:'wide patch',extent:t.extent,size:t.size,elevations,centreElevation:t.centreElevation};
+}
 
 export function voxelizeSite(models,spec){
- const plan=models.plans.find(p=>p.id===spec.id);let root,ground=[],domain=spec.domain,carves=[];
+ const plan=models.plans.find(p=>p.id===(spec.plan??spec.id));let root,ground=[],domain=spec.domain,carves=[],exclude=null;
+ const options={layer:spec.layer,terrain:plan?.terrain==='wide'?wideTerrain(plan.placeIds[0]):undefined},snap=(v,s,up)=>(up?Math.ceil(v/s):Math.floor(v/s))*s;
  if(spec.pilot){
   root=models.pilot.buildQumranPilot();const patch=models.terrain[spec.place];
   // The same Mapterhorn patch the atlas uses around the anchor, fitted once.
@@ -49,23 +71,34 @@ export function voxelizeSite(models,spec){
   // The tunnel recess behind the dark display plane becomes a real opening.
   root.traverse(o=>{if(o.isMesh&&o.material?.color?.getHexString?.()==='191913'){const b=new T.Box3().setFromObject(o),c=b.getCenter(new T.Vector3());carves.push({minX:c.x-.66,maxX:c.x+.66,minY:b.min.y+.14,maxY:b.max.y-.07,minZ:b.min.z-.05,maxZ:b.min.z+3.2});}});
  }else{
-  const model=models.geometry.buildModel(plan);root=model.root;if(spec.roof)model.roof.visible=true;
+  const model=models.geometry.buildModel(plan,options);root=model.root;if(spec.roof)model.roof.visible=true;
   root.updateMatrixWorld(true);
   root.traverse(o=>{if(o.isMesh&&o.userData.siteContext==='ground')ground.push(o);});
-  domain??={minX:model.framing.min.x,maxX:model.framing.max.x,minZ:model.framing.min.z,maxZ:model.framing.max.z};
+  // With terrain rings, the build's edges fall on the inner ring's cells; otherwise they are the model's frame.
+  const f=model.framing,edge=(v,up)=>options.terrain?snap(v,RINGS[0].size,up):v;
+  domain??={minX:edge(f.min.x,false),maxX:edge(f.max.x,true),minZ:edge(f.min.z,false),maxZ:edge(f.max.z,true)};
+  if(spec.ring!==undefined){
+   // A ring holds only terrain; its hole is the build inside it, cell for cell.
+   const inner=spec.ring?RINGS[spec.ring-1].half:null;
+   exclude=inner?{minX:-inner,maxX:inner,minZ:-inner,maxZ:inner}:domain;
+   domain={minX:-spec.half,maxX:spec.half,minZ:-spec.half,maxZ:spec.half};
+  }
  }
- const solids=[];root.traverseVisible(o=>{if(o.isMesh&&!ground.includes(o)&&o.userData.walkCollision!==false)solids.push(o);});
+ const solids=[];if(spec.ring===undefined)root.traverseVisible(o=>{if(o.isMesh&&!ground.includes(o)&&o.userData.walkCollision!==false)solids.push(o);});
  // Vertical extent: everything inside the domain, with a margin below for the ground.
  let minY=Infinity,maxY=-Infinity;const p=new T.Vector3();
- for(const mesh of ground){const pos=mesh.geometry.getAttribute('position');for(let i=0;i<pos.count;i++){p.fromBufferAttribute(pos,i).applyMatrix4(mesh.matrixWorld);if(p.x>=domain.minX&&p.x<=domain.maxX&&p.z>=domain.minZ&&p.z<=domain.maxZ){minY=Math.min(minY,p.y);maxY=Math.max(maxY,p.y);}}}
+ for(const mesh of ground){
+  if(mesh.userData.heightAt){for(let x=domain.minX;x<=domain.maxX;x+=Math.max(spec.size,1))for(let z=domain.minZ;z<=domain.maxZ;z+=Math.max(spec.size,1)){if(Math.hypot(x,z)>mesh.userData.radius)continue;const y=mesh.userData.heightAt(x,z);minY=Math.min(minY,y);maxY=Math.max(maxY,y);}continue;}
+  const pos=mesh.geometry.getAttribute('position');for(let i=0;i<pos.count;i++){p.fromBufferAttribute(pos,i).applyMatrix4(mesh.matrixWorld);if(p.x>=domain.minX&&p.x<=domain.maxX&&p.z>=domain.minZ&&p.z<=domain.maxZ){minY=Math.min(minY,p.y);maxY=Math.max(maxY,p.y);}}
+ }
  // Scattered rubble spans the whole terrain disc; it lies on the ground, so it adds no extent.
  for(const mesh of solids){if(mesh.userData.walkDetail)continue;const b=new T.Box3().setFromObject(mesh);if(b.max.x<domain.minX||b.min.x>domain.maxX||b.max.z<domain.minZ||b.min.z>domain.maxZ)continue;minY=Math.min(minY,b.min.y);maxY=Math.max(maxY,b.max.y);}
  const grid=createGrid({...domain,minY:minY-1,maxY:maxY+.5,size:spec.size});
- rasterGround(grid,ground);
+ rasterGround(grid,ground,{exclude});
  rasterSolids(grid,solids,{minDetail:spec.size*.8});
  for(const box of carves)carve(grid,box);
  underfill(grid);
- const masonry=models.surfaces.siteStyle(spec.id).masonry,blocks=toBlocks(grid,masonry);
+ const masonry=models.surfaces.siteStyle(plan.id).masonry,blocks=toBlocks(grid,masonry);
  return {spec,plan,grid,blocks,masonry,features:grid.features};
 }
 
@@ -150,8 +183,8 @@ async function main(){
  const log=text=>process.stdout.write(`${text}\n`),models=loadModels(),wanted=values.sites?.split(',');
  const jarSha1=values.jar?createHash('sha1').update(readFileSync(values.jar)).digest('hex'):null;
  const builds=[];
- SITES.forEach((spec,index)=>{
-  if(wanted&&!wanted.includes(spec.id))return;
+ buildSpecs(models).forEach((spec,index)=>{
+  if(wanted&&!wanted.includes(spec.id)&&!wanted.includes(spec.plan))return;
   const started=Date.now(),build=voxelizeSite(models,spec);
   // Each site has its own 1,024-block-wide strip of the world; the grid floor sits at y = -60.
   build.world={x0:index*1024,z0:0,y0:-60};
@@ -169,11 +202,12 @@ async function main(){
   const back=readBack(world,build),{grid,spec}=build;
   index.minecraft.dataVersion??=world.chunk(Math.floor(build.world.x0/16),0)?.dataVersion??null;
   const groups=greedyQuads({...back.dims,cells:back.cells,feature:back.feature,light:back.light});
-  const header={version:1,id:spec.id,size:grid.s,half:grid.h,origin:[grid.x0,grid.y0,grid.z0],dims:[back.dims.nx,back.dims.ny,back.dims.nz],materials:MATERIALS,masonry:build.masonry,features:build.features};
+  const header={version:1,id:spec.id,plan:spec.plan,layer:spec.layer??null,ring:spec.ring??null,size:grid.s,half:grid.h,origin:[grid.x0,grid.y0,grid.z0],dims:[back.dims.nx,back.dims.ny,back.dims.nz],materials:MATERIALS,masonry:build.masonry,features:build.features};
   const file=encodeBuild(header,groups),quads=[...groups.values()].reduce((sum,q)=>sum+q.length/6,0);
   if(spec.mapped!==false)writeFileSync(`${values.out}/${spec.id}.bin.gz`,file);
   // The Qumran build's ground was fitted to one place's terrain patch; it fits only there.
-  index.sites[spec.id]={file:spec.mapped===false?null:`${spec.id}.bin.gz`,terrainPlace:spec.pilot?spec.place:null,bytes:file.length,blockSize:grid.s,origin:header.origin,blocks:[build.blocks.nx,build.blocks.ny,build.blocks.nz],world:build.world,masonry:build.masonry,
+  const rings=spec.ring===undefined?builds.filter(b=>b.spec.plan===spec.plan&&b.spec.ring!==undefined).map(b=>b.spec.id):[];
+  index.sites[spec.id]={file:spec.mapped===false?null:`${spec.id}.bin.gz`,plan:spec.plan,layer:spec.layer??null,ring:spec.ring??null,surroundings:rings.length?rings:null,terrainPlace:spec.pilot?spec.place:null,bytes:file.length,blockSize:grid.s,origin:header.origin,blocks:[build.blocks.nx,build.blocks.ny,build.blocks.nz],world:build.world,masonry:build.masonry,
    fills:server.report[spec.id]??index.sites[spec.id]?.fills,readback:{blocks:build.blocks.nx*build.blocks.ny*build.blocks.nz,mismatches:back.mismatches,examples:back.examples,missingSkyLight:back.missingLight},counts:Object.fromEntries(Object.entries(back.counts).filter(([k])=>k!=='air').sort()),quads};
   log(`${spec.id}: read back, ${back.mismatches} mismatches, ${back.missingLight} blocks without saved sky light, ${quads} quads, ${(file.length/1024).toFixed(0)} KiB`);
  }

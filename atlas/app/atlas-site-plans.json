@@ -231,6 +231,602 @@
     "limit": "Source-relative geometry. Geographic registration is pending; highlight sizes do not represent positional accuracy."
   },
   {
+    "id": "qumran-settlement",
+    "placeIds": [
+      "kh_qumran"
+    ],
+    "label": "Settlement · Magen & Peleg 2018 Fig. 9",
+    "width": 1361,
+    "height": 1741,
+    "image": "dossiers/magen-peleg2018-fig09-p12.png",
+    "source": "Magen & Peleg 2018, Site Description, Fig. 9, p. 12",
+    "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md",
+    "credit": "Yitzhak Magen and Yuval Peleg, Back to Qumran: Final Report (1993–2004), Site Description (2018), Fig. 9 · CC BY-NC 4.0; original caption and scale retained.",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "limit": "Excavated remains as drawn on the general plan (all phases together; no legend). Traced at the figure's scale bar; not registered to geographic coordinates, so the 3D model sits at the site anchor (about ±100 m). No levels are used; wall heights are not traced; walls drawn only as outlines are left out.",
+    "features": [
+      {
+        "id": "L138",
+        "label": "Locus L138",
+        "x": 455.0,
+        "y": 400.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Stepped pool at the north-west of the complex; eight steps lead down to a basin 2.2 x 0.9 m.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Galor, Qumran's Plastered Pools, p. 260",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L116",
+        "label": "Locus L116",
+        "x": 571.0,
+        "y": 576.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Room 2.65 x 2.40 m, cut on its east by the central channel; a round plastered mud-brick silo fills most of it.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 56",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L115",
+        "label": "Locus L115",
+        "x": 563.0,
+        "y": 602.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Room 2.96 x 2.40 m south of L116, also cut by the central water channel on its east.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 57",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L118",
+        "label": "Locus L118",
+        "x": 596.0,
+        "y": 602.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Stepped pool: eight preserved steps lead from south to north down to a basin 2.4 x 1.9 m.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Galor p. 260",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L121",
+        "label": "Locus L121",
+        "x": 474.0,
+        "y": 636.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Western hall, 13.00 x 4.10 m, plastered floor; three pools with plastered brick walls in its west.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 pp. 54-55",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L110",
+        "label": "Locus L110",
+        "x": 566.0,
+        "y": 656.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Round cistern; its original wall was 0.95 m thick.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 pp. 52, 56",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L117",
+        "label": "Locus L117",
+        "x": 666.0,
+        "y": 682.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Stepped pool entered from the north; 13 steps descend towards the south to a basin 2.4 x 1.8 m.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Galor p. 261",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L85",
+        "label": "Locus L85",
+        "x": 591.0,
+        "y": 816.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Four steps lead north to south to a basin 1.7 x 1.7 m that opens on pool L91.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Galor p. 262",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L83",
+        "label": "Locus L83",
+        "x": 676.0,
+        "y": 820.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "'Sedimentation pool' (authors' term) from which a channel ran east to pool L56; accessed by three steps (Galor p. 262). Its outline is not separable on Fig. 9.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 pp. 43-44",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L72",
+        "label": "Locus L72",
+        "x": 877.0,
+        "y": 955.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Listed among the small pools without steps (Table 1, volume c. 2 m3). Fig. 9 draws no separate basin at the label.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Galor p. 259",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L68",
+        "label": "Locus L68",
+        "x": 885.0,
+        "y": 986.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Pool 2.93 x 2.39 m, 1.66 m deep; staircases of five steps (east) and four steps (west).",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 88",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L69",
+        "label": "Locus L69",
+        "x": 918.0,
+        "y": 1013.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "'Sedimentation pool' (authors' term) 2.55 x 2.20 m, 2.30 m deep, stairs on its east; the last before L71.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 90",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L41",
+        "label": "Locus L41",
+        "x": 855.0,
+        "y": 687.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Part of the large hall L38-L41, 9.85 x 4.30 m, west of the small north-east tower.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 31",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L38",
+        "label": "Locus L38",
+        "x": 905.0,
+        "y": 694.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Part of the large hall L38-L41, 9.85 x 4.30 m, west of the small north-east tower.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 31",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L37",
+        "label": "Locus L37",
+        "x": 881.0,
+        "y": 746.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Area east of L24-L25, entered from it.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 49",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L48",
+        "label": "Locus L48",
+        "x": 904.0,
+        "y": 815.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Part of the central pool L48-L49 of the eastern wing (de Vaux's two loci): 8.70 x 2.90 m, approx. 3.50 m deep, fifteen steps.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 35",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L49",
+        "label": "Locus L49",
+        "x": 904.0,
+        "y": 829.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Part of the central pool L48-L49 of the eastern wing (de Vaux's two loci): 8.70 x 2.90 m, approx. 3.50 m deep, fifteen steps.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 35",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L58",
+        "label": "Locus L58",
+        "x": 829.0,
+        "y": 885.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Pool 7.40 x 3.55 m, 4.40 m deep, without steps.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 43",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L39",
+        "label": "Locus L39",
+        "x": 933.0,
+        "y": 716.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Cell of the small north-east tower, 4.45 x 4.20 m.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 29",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L24",
+        "label": "Locus L24",
+        "x": 822.0,
+        "y": 750.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Part of L24-L25, a large area in the north-west of the courtyard that apparently served as a courtyard in the later phase.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 49",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L51",
+        "label": "Locus L51",
+        "x": 919.0,
+        "y": 757.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Room 8.30 x 4.40 m north of pool L50.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 38",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L30",
+        "label": "Locus L30",
+        "x": 770.0,
+        "y": 780.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Hall 13.20 x 4.15 m that de Vaux called the 'scriptorium'; built in phase B inside the courtyard.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 pp. 27-28",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L50",
+        "label": "Locus L50",
+        "x": 909.0,
+        "y": 783.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Small plastered pool of trapezoidal outline, 3.36 x 2.36 m, 1.50 m deep; three steps by its eastern wall.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 38",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L52",
+        "label": "Locus L52",
+        "x": 940.0,
+        "y": 815.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Part of the irregular transverse room L52-L53, 11.20 x 4.00 m, with a clay-working installation (authors' reading) in its south.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 39",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L34",
+        "label": "Locus L34",
+        "x": 840.0,
+        "y": 834.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Narrow room; with L32 a long space 6.35 x 2.00 m; two plastered installations by its southern wall.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 49",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L53",
+        "label": "Locus L53",
+        "x": 940.0,
+        "y": 830.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Part of the irregular transverse room L52-L53, 11.20 x 4.00 m.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 39",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L56",
+        "label": "Locus L56",
+        "x": 761.0,
+        "y": 860.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Pool 9.30 x 3.55 m, up to 2.75 m deep, 13 plastered steps; wall W609 separates it from L58.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 43",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L91",
+        "label": "Locus L91",
+        "x": 609.0,
+        "y": 913.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Large rectangular pool without steps, 12.6 x 4.6 m, '4 meters deep'.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Galor p. 262",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L86",
+        "label": "Locus L86",
+        "x": 694.0,
+        "y": 934.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Part of room L86-L87-L89, 8.20 x 5.00 m, plastered, divided into three cells.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 pp. 45-46",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L89",
+        "label": "Locus L89",
+        "x": 669.0,
+        "y": 966.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Southern cell of room L86-L87-L89; pottery vessels arranged by type were found in it.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 pp. 45-46",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L77",
+        "label": "Locus L77",
+        "x": 762.0,
+        "y": 920.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Hall 22.20 x 4.70 m with plastered walls and floor; four plastered brick piers in a line.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 pp. 44-45",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L74",
+        "label": "Locus L74",
+        "x": 902.0,
+        "y": 927.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Room 5.60 x 3.60 m with a stone platform 2.35 x 2.00 m in its north-west corner.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 pp. 42-43",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L75",
+        "label": "Locus L75",
+        "x": 881.0,
+        "y": 1047.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "Pool composed of a round basin and a square plastered platform, each connected to a branch of the central channel.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 90",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "L71",
+        "label": "Locus L71",
+        "x": 920.0,
+        "y": 1121.0,
+        "kind": "Excavated locus",
+        "entryIds": [],
+        "description": "The largest pool at the site, 19.10 x 4.90 m, 5.40 m deep; a staircase runs its whole length.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 90",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "label-aqueduct",
+        "label": "Aqueduct",
+        "x": 272.0,
+        "y": 245.0,
+        "kind": "Area on the general plan",
+        "entryIds": [],
+        "description": "Phase A: a narrow built and plastered aqueduct brought water from Nahal Qumran to cistern L110; phase B: a wide aqueduct (authors' phasing).",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 pp. 90, 94",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "label-western-structure",
+        "label": "Western Structure",
+        "x": 338.0,
+        "y": 651.0,
+        "kind": "Area on the general plan",
+        "entryIds": [],
+        "description": "At the edge of the site above the wadi on its west; an addition to the central structure, separated from it by a courtyard that included the water system.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 51",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "label-main-building",
+        "label": "Main Building",
+        "x": 839.0,
+        "y": 784.0,
+        "kind": "Area on the general plan",
+        "entryIds": [],
+        "description": "Square structure on the north of the plateau with rooms and halls round a central courtyard; two towers on the north.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 11",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      },
+      {
+        "id": "label-paved-square",
+        "label": "Paved Square",
+        "x": 774.0,
+        "y": 1024.0,
+        "kind": "Area on the general plan",
+        "entryIds": [],
+        "description": "Pebble-paved square L98-L3064, 35.50 x 18.20 m, south of hall L77.",
+        "limit": "Position from the printed label on Fig. 9, traced at its scale bar. Function words are the source's. No identification with a scroll entry is made here.",
+        "sources": [
+          "Magen & Peleg 2018 p. 46",
+          "Magen & Peleg 2018 Fig. 9, p. 12 (position)"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md"
+      }
+    ],
+    "traced": "qumran-settlement",
+    "layers": [
+      {
+        "id": "remains",
+        "label": "Remains",
+        "kind": "observed"
+      }
+    ],
+    "terrain": "wide"
+  },
+  {
     "id": "jericho-ac",
     "placeIds": [
       "jericho_palaces"
@@ -336,14 +932,14 @@
     "placeIds": [
       "jericho_palaces"
     ],
-    "label": "Pools Complex · early phase",
+    "label": "Pools Complex · Stage 3 (Netzer Plan 17)",
     "width": 1039,
     "height": 899,
     "image": "dossiers/trumper2018-fig20-p284.jpg",
-    "source": "Trümper 2018 Fig. 20, p. 284",
+    "source": "Trümper 2018 Fig. 20, p. 284 (= Netzer 2001 Plan 17, Stage 3)",
     "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
-    "limit": "Published reconstruction; source-image frame, unregistered to the terrain.",
+    "limit": "Netzer's partly reconstructed plan of Stage 3 (Trümper phase 3, 103–76 BCE): two separate pools. The 3D views are traced at the plans' scale bars (Netzer Plans 17, 20 and 22 with Trümper Fig. 18) and are not registered to geographic coordinates. Pool depths follow the published rim and floor levels; other heights are illustrative.",
     "features": [
       {
         "id": "complex",
@@ -355,12 +951,26 @@
         "entryIds": [
           "29"
         ],
-        "description": "The published reconstructed complex can be compared across early and later phases.",
-        "limit": "A reconstruction does not supply the missing ancient conduit junction or floor datum.",
+        "description": "Netzer's Stage 3 reconstruction of the two pools, the Na'aran conduit, the platform and the Western Garden; compare with Stage 6 and the joined Herodian basin.",
+        "limit": "Reconstruction drawings: Netzer calls the plans partly reconstructed and schematic. The published floors give depths of 3.40 m (south) and 4.14 m (north) below the rim; the missing ancient conduit junction is not supplied.",
         "sources": [
-          "Trümper 2018 Fig. 20, p. 284"
+          "Trümper 2018 Fig. 20, p. 284 (= Netzer 2001 Plan 17, Stage 3)",
+          "Netzer 2001 pp. 74–100; tracing record research/models/traced_plans/jericho-pools-complex.md"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      }
+    ],
+    "traced": "jericho-pools-complex",
+    "layers": [
+      {
+        "id": "stage3",
+        "label": "Stage 3",
+        "kind": "published-reconstruction"
+      },
+      {
+        "id": "remains",
+        "label": "Remains",
+        "kind": "observed"
       }
     ]
   },
@@ -369,14 +979,14 @@
     "placeIds": [
       "jericho_palaces"
     ],
-    "label": "Pools Complex · later phase",
+    "label": "Pools Complex · Stage 6 (Netzer Plan 20)",
     "width": 1039,
     "height": 896,
     "image": "dossiers/trumper2018-fig22-p286.jpg",
-    "source": "Trümper 2018 Fig. 22, p. 286",
+    "source": "Trümper 2018 Fig. 22, p. 286 (= Netzer 2001 Plan 20, Stage 6)",
     "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
-    "limit": "Published reconstruction; source-image frame, unregistered to the terrain.",
+    "limit": "Fig. 22 is Netzer's Stage 6 (Trümper phase 6, 67–63 BCE): the two pools are still separate. They were joined into one basin in the Herodian period (Netzer 2001 pp. 74, 85, 100; Plan 22, not reproduced here): choose Herodian under View. The 3D views are traced, not registered to geographic coordinates; pool depths follow the published rim and floor levels, other heights are illustrative.",
     "features": [
       {
         "id": "complex",
@@ -388,12 +998,31 @@
         "entryIds": [
           "29"
         ],
-        "description": "The published reconstructed complex can be compared across early and later phases.",
-        "limit": "A reconstruction does not supply the missing ancient conduit junction or floor datum.",
+        "description": "Netzer's Stage 6 reconstruction: the two pools still separate, fed by two channels from settling tank A(B)99 (p. 84). The joined basin, about 32 × 18 m, is Herodian (pp. 74, 85, 100).",
+        "limit": "Reconstruction drawings: Netzer calls the plans partly reconstructed and schematic. The published floors give depths of 3.40 m (south) and 4.14 m (north) below the rim; the missing ancient conduit junction is not supplied.",
         "sources": [
-          "Trümper 2018 Fig. 22, p. 286"
+          "Trümper 2018 Fig. 22, p. 286 (= Netzer 2001 Plan 20, Stage 6)",
+          "Netzer 2001 pp. 74–100; tracing record research/models/traced_plans/jericho-pools-complex.md"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      }
+    ],
+    "traced": "jericho-pools-complex",
+    "layers": [
+      {
+        "id": "stage6",
+        "label": "Stage 6",
+        "kind": "published-reconstruction"
+      },
+      {
+        "id": "herodian",
+        "label": "Herodian",
+        "kind": "published-reconstruction"
+      },
+      {
+        "id": "remains",
+        "label": "Remains",
+        "kind": "observed"
       }
     ]
   },

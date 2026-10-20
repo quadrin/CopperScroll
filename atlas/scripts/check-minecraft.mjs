@@ -4,15 +4,15 @@ import {readFileSync,existsSync} from 'node:fs';
 import {gunzipSync} from 'node:zlib';
 import * as Three from 'three';
 import {loadModels} from './minecraft/load-models.mjs';
-import {SITES} from './minecraft/build-world.mjs';
+import {buildSpecs,RINGS} from './minecraft/build-world.mjs';
 
 const dir=new URL('../public/minecraft/',import.meta.url),index=JSON.parse(readFileSync(new URL('index.json',dir),'utf8'));
 assert.equal(index.minecraft.edition,'Java Edition');
 assert.match(index.minecraft.version??'',/^\d/,'the server version must be recorded');
 assert.match(index.minecraft.serverJarSha1??'',/^[0-9a-f]{40}$/,'the server jar hash must be recorded');
-const models=loadModels(),mapped=new Set(models.places.filter(p=>p.lat!==null&&p.lon!==null).map(p=>p.id));
-for(const spec of SITES){
- const plan=models.plans.find(p=>p.id===spec.id),site=index.sites[spec.id];
+const models=loadModels(),mapped=new Set(models.places.filter(p=>p.lat!==null&&p.lon!==null).map(p=>p.id)),specs=buildSpecs(models);
+for(const spec of specs){
+ const plan=models.plans.find(p=>p.id===spec.plan),site=index.sites[spec.id];
  assert.ok(plan&&plan.kind!=='survey-map',`${spec.id}: a source model plan`);
  assert.ok(site,`${spec.id}: built in the world`);
  assert.equal(site.readback.mismatches,0,`${spec.id}: every block read back as placed`);
@@ -22,7 +22,14 @@ for(const spec of SITES){
  assert.ok(site.file&&existsSync(new URL(site.file,dir)),`${spec.id}: map file present`);
  const bytes=gunzipSync(readFileSync(new URL(site.file,dir))),length=bytes.readUInt32LE(0),header=JSON.parse(bytes.toString('utf8',4,4+length));
  assert.equal(header.id,spec.id);assert.equal(header.size,spec.size);assert.equal(header.half,spec.size/2);
- const features=new Set(plan.features.map(f=>f.id));for(const f of header.features)assert.ok(features.has(f),`${spec.id}: feature ${f} is a plan feature`);
+ if(spec.ring!==undefined){
+  // A ring spans its square and leaves out exactly the build inside it.
+  assert.deepEqual([header.origin[0],header.origin[2],header.dims[0]*spec.size,header.dims[2]*spec.size],[-spec.half,-spec.half,2*spec.half,2*spec.half],`${spec.id}: ring extent`);
+  continue;
+ }
+ if(plan.terrain==='wide')assert.ok(site.surroundings?.length===RINGS.length,`${spec.id}: lists its terrain rings`);
+ // Blocks carry plan feature ids; a traced plan's blocks may also carry its element ids.
+ const features=new Set([...plan.features.map(f=>f.id),...(models.tracedPlans[plan.traced]?.elements.map(e=>e.id)??[])]);for(const f of header.features)assert.ok(features.has(f),`${spec.id}: feature ${f} is a plan feature or traced element`);
  // Ilan–Amit's basin 2 and the dam proposed at point 4 (copper marks the reconstruction).
  if(spec.pilot){assert.ok(header.features.includes('basin2'),'qumran-ilan: basin 2 is built');assert.ok(Object.keys(site.counts).some(k=>k.startsWith('waxed_cut_copper')),'qumran-ilan: the reconstructed dam is built in copper');}
  const [nx,ny,nz]=header.dims;let offset=4+length,quads=0;
@@ -38,7 +45,7 @@ for(const spec of SITES){
  assert.equal(offset,bytes.length,`${spec.id}: no trailing data`);assert.equal(quads,site.quads);
  // The block grid must sit on the source model's frame: its markers fall inside it.
  const box=new Three.Box3(new Three.Vector3(header.origin[0],header.origin[1],header.origin[2]),new Three.Vector3(header.origin[0]+nx*header.size,header.origin[1]+ny*header.half,header.origin[2]+nz*header.size));
- const markers=spec.pilot?plan.features.map(f=>new Three.Vector3((f.x+120-381)*.2,0,(f.y+1080-1240)*.2)):[...models.geometry.buildModel(plan).markers.values()];
- for(const m of markers)assert.ok(m.x>=box.min.x&&m.x<=box.max.x&&m.z>=box.min.z&&m.z<=box.max.z,`${spec.id}: marker inside the block grid`);
+ const markers=spec.pilot?plan.features.map(f=>new Three.Vector3((f.x+120-381)*.2,0,(f.y+1080-1240)*.2)):[...models.geometry.buildModel(plan,{layer:spec.layer}).markers.values()];
+ if(!spec.layer||spec.layer==='remains')for(const m of markers)assert.ok(m.x>=box.min.x&&m.x<=box.max.x&&m.z>=box.min.z&&m.z<=box.max.z,`${spec.id}: marker inside the block grid`);
 }
-console.log(`Minecraft build checks passed: ${SITES.length} sites built in ${index.minecraft.edition} ${index.minecraft.version}, every block read back as placed, map files decode within their grids and on their source frames.`);
+console.log(`Minecraft build checks passed: ${specs.length} builds in ${index.minecraft.edition} ${index.minecraft.version}, every block read back as placed, map files decode within their grids and on their source frames.`);

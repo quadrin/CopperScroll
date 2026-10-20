@@ -1,7 +1,7 @@
 import * as T from 'three';
 import {MercatorCoordinate,type Map,type CustomLayerInterface} from 'maplibre-gl';
 import {buildQumranPilot,fitQumranGround} from './atlas-qumran-pilot';
-import {buildModel,type ModelGeometry} from './atlas-model-geometry';
+import {buildModel,type BuildOptions,type ModelGeometry} from './atlas-model-geometry';
 import type {SitePlan} from './atlas-explorer-model';
 import type {Place} from './atlas-types';
 import {disposeSiteScene} from './atlas-site-materials';
@@ -14,7 +14,7 @@ import terrainPatches from './atlas-model-terrain.json';
 
 export const SITE_LAYER_ID='source-site-detail';
 export type MapSiteRuntime={model:ModelGeometry;style:'minecraft'|'smooth';span:number;anchor:[number,number];baseElevation:()=>number;collisionWorld:()=>WalkWorld;setWalker:(pose:WalkPose|null)=>void;location:(x:number,z:number)=>[number,number];local:(lng:number,lat:number)=>[number,number];focus:(featureId?:string)=>void;setFeature:(id:string|null)=>void;renderedFrames:number;meshCount:number;vertexCount:number};
-export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(runtime:MapSiteRuntime)=>void,onFailure:(message:string)=>void,build:MinecraftBuild|null=null):CustomLayerInterface {
+export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(runtime:MapSiteRuntime)=>void,onFailure:(message:string)=>void,build:MinecraftBuild|null=null,options:BuildOptions={}):CustomLayerInterface {
  const anchor:[number,number]=[place.lon!,place.lat!],origin=MercatorCoordinate.fromLngLat(anchor),scale=origin.meterInMercatorCoordinateUnits();
  const scene=new T.Scene(),camera=new T.Camera(),sky=createSiteSky(),avatar=createWalkAvatar();let renderer:T.WebGLRenderer|undefined,model:ModelGeometry|undefined,runtime:MapSiteRuntime|undefined,world:WalkWorld|undefined;
  let collisionDirty=true;
@@ -39,7 +39,7 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
     const root=buildQumranPilot(),markers=new globalThis.Map<string,T.Vector3>();
     for(const feature of plan.features)markers.set(feature.id,new T.Vector3((feature.x+120-381)*.2,2,(feature.y+1080-1240)*.2));
     model={root,markers,selectable:[],roof:new T.Group(),note:'Qumran aqueduct segment · published plan relationships',units:'relative',framing:new T.Box3(new T.Vector3(-48,0,-15),new T.Vector3(48,10,24)),landscape:{context:'Source-relative rock setting',credit:'Ilan–Amit 1989 p. 283 Fig. 1; Davey CJD979 (1974); geometry and placement illustrative',mapped:false},assumptions:['Channel and branch relationships follow Ilan–Amit 1989 p. 283 Fig. 1. The local frame is an approximate display alignment at the gazetteer anchor, not a registered survey.','Rock faces, masonry courses, tunnel cross-section and elevations are illustrative. This partial aqueduct model does not reconstruct the whole Qumran settlement.','Basin 2 and the dam proposed at point 4 follow Ilan–Amit 1989 Fig. 1. Ilan–Amit 2002 Fig. 1 (p. 380) draws a heavy dashed line from point 3 to point 4 across the basin’s east side, read here as probably the dam (drawing only). No surviving dam remains are reported: copper marks a published reconstruction. Basin depth and dam height and width are illustrative.']};
-   }else model=buildModel(plan);
+   }else model=buildModel(plan,options);
    if(build){
     // The block build's ground was fitted once to this terrain patch when it was exported.
     const patch=(terrainPatches as Record<string,Parameters<typeof elevationAt>[0]>)[place.id];

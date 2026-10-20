@@ -5,6 +5,7 @@ type Point=[number,number];
 export type LandscapePad={x:number;z:number;w:number;d:number;height:number;feather:number};
 export type LandscapeGround={w:number;d:number;holes:Point[][];pads:LandscapePad[]};
 type Patch={lat:number;lon:number;anchorPrecision:string;extent:number;size:number;elevations:number[];centreElevation:number};
+export type TerrainPatch=Patch;
 const terrain=patches as Record<string,Patch>;
 const smooth=(t:number)=>{const v=T.MathUtils.clamp(t,0,1);return v*v*(3-2*v)};
 function inside(x:number,z:number,points:Point[]){let hit=false;for(let i=0,j=points.length-1;i<points.length;j=i++){const [a,b]=points[i],[c,d]=points[j];if((b>z)!==(d>z)&&x<(c-a)*(z-b)/(d-b)+a)hit=!hit;}return hit;}
@@ -13,8 +14,9 @@ export function elevationAt(patch:Patch,x:number,z:number){
  const value=(x:number,y:number)=>patch.elevations[Math.min(y,patch.size-1)*patch.size+Math.min(x,patch.size-1)];
  return T.MathUtils.lerp(T.MathUtils.lerp(value(i,j),value(i+1,j),a),T.MathUtils.lerp(value(i,j+1),value(i+1,j+1),a),b)-patch.centreElevation;
 }
-export function landscapeGround(ground:LandscapeGround,placeId:string,offset:Point,surface?:T.MeshStandardMaterial,stone?:T.MeshStandardMaterial){
- const patch=terrain[placeId],radius=Math.min(380,Math.max(ground.w,ground.d)*1.7),n=128,positions:number[]=[],colours:number[]=[],indices:number[]=[],holes=ground.holes.map(h=>h.map(([x,z]):Point=>[x-offset[0],z-offset[1]]));
+// A wider terrain patch, when one is loaded for the place, replaces the 800 m default.
+export function landscapeGround(ground:LandscapeGround,placeId:string,offset:Point,surface?:T.MeshStandardMaterial,stone?:T.MeshStandardMaterial,wide?:Patch){
+ const patch=wide??terrain[placeId],radius=wide?wide.extent/2*.96:Math.min(380,Math.max(ground.w,ground.d)*1.7),n=128,positions:number[]=[],colours:number[]=[],indices:number[]=[],holes=ground.holes.map(h=>h.map(([x,z]):Point=>[x-offset[0],z-offset[1]]));
  const coordinate=(i:number)=>{const t=i/n*2-1;return Math.sign(t)*Math.pow(Math.abs(t),1.6)*radius};
  const height=(x:number,z:number)=>{
   const source=patch?elevationAt(patch,x,z):Math.max(0,-z*.48)+1.5*Math.sin(x*.25)*Math.sin(z*.18);
