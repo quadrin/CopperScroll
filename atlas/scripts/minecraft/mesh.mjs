@@ -2,11 +2,13 @@
 // Faces carry Minecraft's saved sky light (0–15) of the open block in front of them.
 import {gzipSync} from 'node:zlib';
 
-// Faces on the grid's sides and floor are not drawn: the smooth terrain continues there.
+// The grid's sides and floor are closed too. Outside the block area the smooth terrain
+// covers them; without them a walker who leaves the area could see or walk into its
+// hollow inside.
 export function greedyQuads({nx,ny,nz,cells,feature,light}){
- const at=(i,j,k)=>(i*nz+k)*ny+j;
- const solid=(i,j,k)=>{if(j>=ny)return false;if(i<0||k<0||i>=nx||k>=nz||j<0)return true;return cells[at(i,j,k)]!==0;};
- const lightAt=(i,j,k)=>j>=ny?15:light[at(i,Math.min(ny-1,j),k)];
+ const at=(i,j,k)=>(i*nz+k)*ny+j,outside=(i,j,k)=>i<0||k<0||j<0||i>=nx||k>=nz||j>=ny;
+ const solid=(i,j,k)=>!outside(i,j,k)&&cells[at(i,j,k)]!==0;
+ const lightAt=(i,j,k)=>outside(i,j,k)?15:light[at(i,j,k)];
  const dims=[nx,ny,nz],groups=new Map();
  for(let dir=0;dir<6;dir++){
   const axis=dir>>1,sign=dir&1?-1:1,[ua,va]=axis===0?[2,1]:axis===1?[0,2]:[0,1],nu=dims[ua],nv=dims[va],mask=new Int32Array(nu*nv);

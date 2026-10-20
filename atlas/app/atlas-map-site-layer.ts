@@ -6,7 +6,7 @@ import type {SitePlan} from './atlas-explorer-model';
 import type {Place} from './atlas-types';
 import {disposeSiteScene} from './atlas-site-materials';
 import {createSiteSky} from './atlas-site-sky';
-import {createWalkWorld,type WalkWorld} from './atlas-walk-physics';
+import {createWalkWorld,pullNearPlane,type WalkWorld} from './atlas-walk-physics';
 import {createWalkAvatar,type WalkPose} from './atlas-walk-avatar';
 import {applyMinecraftBuild,type MinecraftBuild} from './atlas-minecraft';
 import {elevationAt} from './atlas-model-landscape';
@@ -79,6 +79,8 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    const matrix=new T.Matrix4().makeTranslation(o.x,o.y,o.z).scale(new T.Vector3(scale,-scale,scale)).multiply(new T.Matrix4().makeRotationX(Math.PI/2));
    camera.projectionMatrix.fromArray(args.defaultProjectionData.mainMatrix).multiply(matrix);
    const walking=map.getCanvas().dataset.walkPosition?.split(',').map(Number),eye=new T.Vector3();
+   // About 5 cm at eye level: closer than the 0.3 m body radius and the head's ceiling margin.
+   if(walking)pullNearPlane(camera.projectionMatrix,10);
    if(walking){
     // Recover the camera origin from the matrix actually drawing this frame.
     // The character/HUD state alone cannot detect a displaced map camera.

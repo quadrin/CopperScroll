@@ -7,7 +7,7 @@ import {Octree} from 'three/addons/math/Octree.js';
 import {Capsule} from 'three/addons/math/Capsule.js';
 const exports={};const source=await readFile(new URL('../app/atlas-walk-physics.ts',import.meta.url),'utf8');
 new Function('exports','require',ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS}}).outputText)(exports,name=>({'three':T,'three/addons/math/Octree.js':{Octree},'three/addons/math/Capsule.js':{Capsule}}[name]));
-const {createWalkWorld,WalkCharacter,WalkInput}=exports;
+const {createWalkWorld,WalkCharacter,WalkInput,pullNearPlane}=exports;
 const material=new T.MeshBasicMaterial();
 function scene(){const root=new T.Group();const floor=new T.Mesh(new T.BoxGeometry(40,.2,40),material);floor.position.y=-.1;root.add(floor);return root;}
 function block(root,x,y,z,w,h,d){const m=new T.Mesh(new T.BoxGeometry(w,h,d),material);m.position.set(x,y+h/2,z);root.add(m);return m;}
@@ -66,5 +66,15 @@ for(const sloped of [false,true]){
  assert(blocked>10,'The real Qumran architecture must stop sprinting');assert(body.feet.z>6&&body.feet.z<8,'The body must reach and remain outside the modeled tunnel masonry');
 }
 surfaces.disposeSiteScene(root);
+// Walking draws the site with a nearer plane, so a wall beside the eye is not cut away
+// (block builds would otherwise look hollow). Only the depth row may change.
+{
+ const camera=new T.PerspectiveCamera(70,1.6,.5,900);camera.position.set(3,1.6,-2);camera.lookAt(10,1.2,8);camera.updateMatrixWorld();
+ const model=new T.Matrix4().makeTranslation(-4,2,7).scale(new T.Vector3(.3,-.3,.3)),matrix=camera.projectionMatrix.clone().multiply(camera.matrixWorldInverse).multiply(model),before=[...matrix.elements];
+ pullNearPlane(matrix,10);
+ for(const r of [0,1,3])for(let c=0;c<4;c++)assert.ok(Math.abs(matrix.elements[c*4+r]-before[c*4+r])<1e-12,'near-plane change keeps x, y and w');
+ const planes=m=>{const e=m.elements,z=[e[2],e[6],e[10],e[14]],w=[e[3],e[7],e[11],e[15]],A=-z[0]/w[0],B=z[3]+A*w[3];return [B/(A-1),B/(A+1)];};
+ const [near,far]=planes(matrix);assert.ok(Math.abs(near-.05)<1e-6&&Math.abs(far-900)<1e-3,`near plane .05 and far 900, got ${near} and ${far}`);
+}
 console.log('Minecraft-style movement measurements:',JSON.stringify(measurements));
-console.log('Character physics passed: speeds, jump arc/range, held jumps, air momentum, friction, half-metre steps, sneak ledges, long falls, frame rates, thin walls, ceilings, slopes, W/S gestures and real Qumran terrain/architecture.');
+console.log('Character physics passed: speeds, jump arc/range, held jumps, air momentum, friction, half-metre steps, sneak ledges, long falls, frame rates, thin walls, ceilings, slopes, W/S gestures, the walking near plane and real Qumran terrain/architecture.');
