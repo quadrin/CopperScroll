@@ -61,6 +61,19 @@ export function createWalkWorld(root:T.Object3D):WalkWorld {
  };return world;
 }
 
+// MapLibre's near plane is height/50 pixels, about half a metre at eye level. It would
+// cut away a wall or overhang beside the walker; a block build, which has faces only on
+// its outside, would then look hollow (Minecraft's "x-ray"). The site scene clears and
+// uses its own depth, so it can draw with a nearer plane without changing the map.
+export function pullNearPlane(projection:T.Matrix4,factor:number){
+ const e=projection.elements,z=[e[2],e[6],e[10],e[14]],w=[e[3],e[7],e[11],e[15]];
+ // With a standard perspective, row z = -A·(row w) + B·(0,0,0,1); recover A and B.
+ const k=[0,1,2].reduce((a,b)=>Math.abs(w[b])>Math.abs(w[a])?b:a,0);if(Math.abs(w[k])<1e-12)return;
+ const A=-z[k]/w[k],B=z[3]+A*w[3],near=B/(A-1),far=B/(A+1);if(!(near>0&&far>near))return;
+ const n=near/factor,A2=-(far+n)/(far-n),B2=-2*far*n/(far-n);
+ for(let c=0;c<4;c++)e[c*4+2]=-A2*w[c]+(c===3?B2:0);
+}
+
 export class WalkCharacter {
  readonly capsule=new Capsule();readonly velocity=new T.Vector3();grounded=false;blocked=false;crouched=false;sprinting=false;
  private safe=new T.Vector3();private accumulator=0;private jumpBuffer=0;private jumpCooldown=0;private substep=0;private horizontalDrag=GROUND_DRAG;
