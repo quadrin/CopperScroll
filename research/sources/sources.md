@@ -677,3 +677,8 @@ Tests frozen first: [registration/new_sources_round2_2026-10-17_tests.md](../../
 - **Bar-Adon 1989**, *ʿAtiqot* (Hebrew Series) 9, ch. 2, Twin Cave, pp. [15]–17 (owner's JSTOR capture of 2 Oct, read on the images); **Mizzi 2017**, review of *KhQ* IIIA, *Strata* 35. Extraction: [registration/baradon1989_twin_cave_mizzi2017_extracted.md](../../registration/baradon1989_twin_cave_mizzi2017_extracted.md).
 - **HA 85 (1984)**, pp. 30–31, Eitam, "Land of Benjamin survey" (owner's Drive). Recorded in the results file (U6).
 - **Not available:** the Kenyon *Jericho* III plates volume is not on archive.org (the item labelled "plates" is the text volume). Augustinović 1951 is *Gerico e dintorni* (owner's correction of the title).
+
+## Owner's full-resolution library photos — 20 October 2026
+
+- ***The Aqueducts of Israel*** (JRA Suppl. 46, 2002), NLI open shelf, photographed 19 Oct (IMG_0019–0056, HEIC originals). Now read firsthand by a screened reader: Meshel & Amit, Cypros, pp. 313–329 (complete); Netzer & Garbrecht pp. 378–379; Ilan & Amit p. 380 (Fig. 1 only; the earlier label "p. 382" was wrong). Still missing: Ilan & Amit pp. 381–386, Netzer & Garbrecht to p. 377, Patrich pp. 336–352. Record: [aqueducts2002_firsthand_2026-10-20/README.md](aqueducts2002_firsthand_2026-10-20/README.md).
+- **Netzer 2001**, colour Plates I–XVI and front matter pp. VII–XIII (IMG_0057–0079): identified only. Plan 1 (p. XI) and Plate I are quarantined pending registration (same record).
