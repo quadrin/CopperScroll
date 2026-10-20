@@ -9,7 +9,7 @@ import type { TerrainPatch } from './atlas-model-landscape';
 
 const traced=tracedData as unknown as Record<string,TracedPlan>;
 // Illustrative heights for traced plans, used only where no height is published.
-export const TRACED_HEIGHTS={ruin:.9,wall:3.2,column:3.6,columnBase:.4,depth:2,dashed:.12};
+export const TRACED_HEIGHTS={ruin:.9,wall:3.2,column:3.6,columnBase:.4,depth:2,dashed:.12,podium:1};
 export type BuildOptions={layer?:string;terrain?:TerrainPatch};
 
 export type { ModelCamera } from "./atlas-explorer-model";
@@ -205,17 +205,22 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   // Escarpment lines are left to the terrain; they do not size the display bench.
   const shown=source.elements.filter(e=>e.layers.includes(view.id)),datum=source.frame.ground??0,all=shown.filter(e=>e.kind!=='cliff-edge').flatMap(elementPoints);
   // Centre the traced frame so the display bench, markers and camera sit on the drawn site.
+  // A traced plan may name a focus; the extent is then widened so that the focus is its centre.
+  if(source.focus){const xs=all.map(p=>p[0]),zs=all.map(p=>p[1]),[fx,fz]=source.focus;all.push([2*fx-Math.min(...xs),2*fz-Math.min(...zs)],[2*fx-Math.max(...xs),2*fz-Math.max(...zs)]);}
   const minX=Math.min(...all.map(p=>p[0])),maxX=Math.max(...all.map(p=>p[0])),minZ=Math.min(...all.map(p=>p[1])),maxZ=Math.max(...all.map(p=>p[1])),cx=(minX+maxX)/2,cz=(minZ+maxZ)/2;
   const c=([x,z]:Point):Point=>[x-cx,z-cz],level=(v:number|null|undefined,fallback=0)=>v==null?fallback:v-datum;
   // In a reconstruction view, parts drawn only by the reconstruction use the pale restored surface.
   const rebuiltPart=(e:TracedElement)=>rebuilt&&e.status!=='observed',pick=(e:TracedElement,base:T.MeshStandardMaterial)=>rebuiltPart(e)?restored:base;
   const wallHeight=(e:TracedElement)=>e.height?.value??(rebuilt?TRACED_HEIGHTS.wall:TRACED_HEIGHTS.ruin);
+  // A wall's base and height: from its published top and bottom levels where given, else from the ground.
+  const wallSpan=(e:TracedElement):[number,number]=>{const t=e.levels?.top,b=e.levels?.bottom,h=e.lineStyle==='dashed'&&e.height?.value==null?TRACED_HEIGHTS.dashed:wallHeight(e);return t!=null&&b!=null?[level(b),t-b]:t!=null?[level(t)-h,h]:[level(b),h];};
   const lifted=(y:number,build:()=>void)=>{const start=root.children.length;build();root.children.slice(start).forEach(o=>o.position.y+=y);};
   const holes:Point[][]=[];let guessedDepth=false;
   // A pool's depth: its published floor level, else its published depth, else illustrative.
   const poolDepth=(e:TracedElement)=>{const floor=e.levels?.floor??e.levels?.bottom;return floor!=null?level(e.levels?.rim??e.levels?.top)-level(floor):e.height?.value??TRACED_HEIGHTS.depth;};
   const inside=([x,z]:Point,poly:Point[])=>poly.reduce((hit,a,i)=>{const b=poly[(i+1)%poly.length];return (a[1]>z)!==(b[1]>z)&&x<a[0]+(z-a[1])*(b[0]-a[0])/(b[1]-a[1])?!hit:hit;},false);
-  const pools=shown.filter(e=>(e.kind==='pool'||e.kind==='cistern')&&e.geometry.type==='polygon');
+  const pools=shown.filter(e=>(e.kind==='pool'||e.kind==='cistern')&&e.geometry.type==='polygon'),inPool:string[]=[];
+  const centroid=(pts:Point[]):Point=>[pts.reduce((a,p)=>a+p[0],0)/pts.length,pts.reduce((a,p)=>a+p[1],0)/pts.length];
   for(const e of shown){
    const g=e.geometry;
    if(g.type==='raster'){
@@ -225,7 +230,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
    }
    const pts=g.type==='point'?[c(g.at)]:g.points.map(c);
    // A wall the figure draws dashed (meaning not stated) is a low strip on the ground, not a standing wall.
-   if(e.kind==='wall')walls(pts,e.lineStyle==='dashed'&&e.height?.value==null?TRACED_HEIGHTS.dashed:wallHeight(e),g.type==='polyline'?g.width??.6:.6,level(e.levels?.bottom),e.id,g.type==='polygon'||!!(g.type==='polyline'&&g.closed),pick(e,stone));
+   if(e.kind==='wall'){const [base,h]=wallSpan(e);walls(pts,h,g.type==='polyline'?g.width??.6:.6,base,e.id,g.type==='polygon'||!!(g.type==='polyline'&&g.closed),pick(e,stone));}
    else if(e.kind==='pool'||e.kind==='cistern'){
     const rim=level(e.levels?.rim??e.levels?.top),depth=poolDepth(e);guessedDepth||=(e.levels?.floor??e.levels?.bottom)==null&&e.height?.value==null;
     if(g.type==='point')lifted(rim,()=>shaft(pts[0][0],pts[0][1],g.radius??1,depth,e.id,pick(e,stone)));
@@ -241,25 +246,22 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
    }
    else if(e.kind==='column'&&g.type==='point'){const r=g.radius??.3,h=e.height?.value??(rebuilt?TRACED_HEIGHTS.column:TRACED_HEIGHTS.columnBase),m=mesh(new T.CylinderGeometry(r,r*1.04,h,16),pick(e,surfaces.block),e.id);m.position.set(pts[0][0],level(e.levels?.floor)+h/2,pts[0][1]);}
    else if(e.kind==='channel'&&g.type==='polyline')trough(pts.map(([x,z])=>new T.Vector3(x,level(e.levels?.top)+.12,z)),g.width??.4,e.id,rebuiltPart(e)?restored:plaster);
-   else if((e.kind==='room'||e.kind==='platform'||e.kind==='garden'||e.kind==='path')&&g.type==='polygon')slab(pts,.2,level(e.levels?.floor)-.2,e.kind==='garden'?earth:pick(e,plaster),e.id);
+   else if((e.kind==='room'||e.kind==='platform'||e.kind==='garden'||e.kind==='path')&&g.type==='polygon'){
+    // A platform with no level drawn inside a pool stands on the pool's floor (illustrative height).
+    const pool=e.kind==='platform'&&e.levels?.floor==null?pools.find(p=>inside(centroid(pts),(p.geometry as {points:Point[]}).points.map(c))):undefined;
+    if(pool){const floor=level(pool.levels?.rim??pool.levels?.top)-poolDepth(pool),h=e.height?.value??TRACED_HEIGHTS.podium;slab(pts,h,floor,pick(e,stone),e.id);inPool.push(e.label??e.id);}
+    else slab(pts,.2,level(e.levels?.floor)-.2,pick(e,e.kind==='garden'?earth:plaster),e.id);
+   }
   }
-  const centroid=(pts:Point[]):Point=>[pts.reduce((a,p)=>a+p[0],0)/pts.length,pts.reduce((a,p)=>a+p[1],0)/pts.length];
   for(const f of plan.features){const e=source.elements.find(e=>e.id===f.id),at=source.features?.find(x=>x.id===f.id)?.at,[x,z]=e?centroid(elementPoints(e).map(c)):at?c(at):[0,0];marker(f.id,x,z,1.2);}
   plinth(maxX-minX+24,maxZ-minZ+24,2,holes);
   tracedStart=source.walkStart?{position:c(source.walkStart.at),bearing:source.walkStart.bearing,pitch:84}:{position:[0,(maxZ-minZ)/2+4],bearing:0,pitch:84};
   assumptions.push(`Traced from ${source.sources.map(s=>s.citation).join('; ')} at each figure's own scale bar; north from ${source.frame.north}. The frame is not registered to geographic coordinates: the model sits at the site anchor. Record: research/models/traced_plans/${source.id}.md.`);
   assumptions.push(rebuilt?`${view.label} is a published reconstruction. Pale parts with a dashed grid are drawn only by that reconstruction; parts also recorded as found keep their normal surfaces. The plans give no heights: walls (${TRACED_HEIGHTS.wall} m) and columns (${TRACED_HEIGHTS.column} m) are illustrative.`:`Only elements recorded as found are shown. Walls are drawn ${TRACED_HEIGHTS.ruin} m high: preserved heights are not traced.`);
+  if(inPool.length)assumptions.push(`${inPool.join(', ')}: drawn on the pool floor, ${TRACED_HEIGHTS.podium} m high (illustrative); no level is published.`);
   if(shown.some(e=>e.kind==='wall'&&e.lineStyle==='dashed'))assumptions.push(`Lines that the figure draws dashed, without a stated meaning, are low strips (${TRACED_HEIGHTS.dashed} m), not walls.`);
   const guessed=guessedDepth?` Where neither is published, the depth is an illustrative ${TRACED_HEIGHTS.depth} m.`:'';
   assumptions.push(source.frame.datum?`Pool rims and floors and room floors follow the published spot levels (${source.frame.datum}); the general ground is level ${datum}.${guessed}`:`No levels are used: the site is drawn on one level surface. Pool depths are the published depths.${guessed}`);
- } else if(plan.id==="jericho-early"||plan.id==="jericho-late"){
-  units="metres";note=plan.id==="jericho-early"?"Early paired pools · published approximate dimensions":"Joined basin · a separate architectural state";
-  if(plan.id==="jericho-early"){
-   const a:Point[]=[[-16,-9],[2,-9],[2,4],[-16,4]],b:Point[]=[[-16,9],[2,9],[2,22],[-16,22]];basin(a,2.5,"complex");basin(b,2.5,"complex");plinth(43,47,3.5,[a,b]);
-  }else{const a:Point[]=[[-16,-9],[16,-9],[16,9],[-16,9]];basin(a,2.5,"complex");plinth(48,34,3.5,[a]);}
-  for(let i=0;i<6;i++){box(7,-12+i*6,.5,.5,2.8,0,"complex");}
-  marker("complex",-7,0,1);
-  assumptions.push("The early state uses the reported approximate 18 × 13 m pool envelopes; the joined state uses approximately 32 × 18 m. They remain separate selectable models.","Depth 2.5 m, surrounding platform, columns and wall heights are illustrative. The reconstructed source figures do not establish a conduit origin, floor datum or deposit point.");
  } else {
   const scale=36/Math.max(plan.width,plan.height),conv=(x:number,z:number):Point=>[(x-plan.width/2)*scale,(z-plan.height/2)*scale];
   const loader=new SVGLoader(),basinHoles:Point[][]=[];
@@ -289,7 +291,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
  const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block,options.terrain);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;context.mesh.userData.siteContext='ground';root.add(context.mesh);context.details.position.set(center.x,0,center.z);context.details.userData.siteContext='details';root.add(context.details);
  assumptions.push(surfaces.style.photos.length?`Base colours and the ${surfaces.style.masonry} masonry pattern are taken from reference photographs (${surfaces.style.photos.join(', ')}): sunlit-face medians of sample boxes, recorded in research/assets/plans/atlas-explorer/surface-samples-2026-10-17. ${surfaces.style.masonryNote??''} Individual stones, joints, chipped edges, plaster wear and soil relief remain illustrative, not recorded stones or weathering; photographs vary in exposure and white balance.`:`Surface art uses a ${surfaces.style.id} material palette, metre-scaled stone joints, chipped edges, plaster wear and soil relief. These are illustrative visual treatments, not recorded individual stones or weathering.`);
  assumptions.push(context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");
- const starts:Record<string,[string,number,number,number,number]>={'gerizim-precinct':['east-stair',28,22,308,100],'hyrcania-waterworks':['north-pool',0,-12,180,76],'jericho-early':['complex',0,6,0,76],'jericho-late':['complex',0,12,0,76],'siloam-receiver':['L103',0,6,0,80],'doq-waterworks':['intake',4,5,-35,83],'jericho-ac':['AC94',0,7,0,80],'bethesda-pools':['dam',-12,0,160,84],'east-gate-warren':['massive-wall',8,-12,270,90]};
+ const starts:Record<string,[string,number,number,number,number]>={'gerizim-precinct':['east-stair',28,22,308,100],'hyrcania-waterworks':['north-pool',0,-12,180,76],'jericho-early':['complex',-14.5,0,90,80],'jericho-late':['complex',-14.5,0,90,80],'siloam-receiver':['L103',0,6,0,80],'doq-waterworks':['intake',4,5,-35,83],'jericho-ac':['AC94',0,7,0,80],'bethesda-pools':['dam',-12,0,160,84],'east-gate-warren':['massive-wall',8,-12,270,90]};
  const start=starts[plan.id],point=start?markers.get(start[0]):undefined;
  const walkStart=point&&start?{position:[point.x+start[1],point.z+start[2]] as Point,bearing:start[3],pitch:start[4]}:tracedStart&&{...tracedStart,position:[tracedStart.position[0]-center.x,tracedStart.position[1]-center.z] as Point};
  return {root,roof,markers,selectable,note,assumptions,units,walkStart,framing:bounds.translate(new T.Vector3(-center.x,0,-center.z)),landscape:{context:context.context,credit:context.credit,mapped:!!context.patch}};

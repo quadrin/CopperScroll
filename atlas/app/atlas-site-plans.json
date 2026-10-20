@@ -932,14 +932,14 @@
     "placeIds": [
       "jericho_palaces"
     ],
-    "label": "Pools Complex · early phase",
+    "label": "Pools Complex · Stage 3 (Netzer Plan 17)",
     "width": 1039,
     "height": 899,
     "image": "dossiers/trumper2018-fig20-p284.jpg",
-    "source": "Trümper 2018 Fig. 20, p. 284",
+    "source": "Trümper 2018 Fig. 20, p. 284 (= Netzer 2001 Plan 17, Stage 3)",
     "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
-    "limit": "Published reconstruction; source-image frame, unregistered to the terrain.",
+    "limit": "Netzer's partly reconstructed plan of Stage 3 (Trümper phase 3, 103–76 BCE): two separate pools. The 3D views are traced at the plans' scale bars (Netzer Plans 17, 20 and 22 with Trümper Fig. 18) and are not registered to geographic coordinates. Pool depths follow the published rim and floor levels; other heights are illustrative.",
     "features": [
       {
         "id": "complex",
@@ -951,12 +951,26 @@
         "entryIds": [
           "29"
         ],
-        "description": "The published reconstructed complex can be compared across early and later phases.",
-        "limit": "A reconstruction does not supply the missing ancient conduit junction or floor datum.",
+        "description": "Netzer's Stage 3 reconstruction of the two pools, the Na'aran conduit, the platform and the Western Garden; compare with Stage 6 and the joined Herodian basin.",
+        "limit": "Reconstruction drawings: Netzer calls the plans partly reconstructed and schematic. The published floors give depths of 3.40 m (south) and 4.14 m (north) below the rim; the missing ancient conduit junction is not supplied.",
         "sources": [
-          "Trümper 2018 Fig. 20, p. 284"
+          "Trümper 2018 Fig. 20, p. 284 (= Netzer 2001 Plan 17, Stage 3)",
+          "Netzer 2001 pp. 74–100; tracing record research/models/traced_plans/jericho-pools-complex.md"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      }
+    ],
+    "traced": "jericho-pools-complex",
+    "layers": [
+      {
+        "id": "stage3",
+        "label": "Stage 3",
+        "kind": "published-reconstruction"
+      },
+      {
+        "id": "remains",
+        "label": "Remains",
+        "kind": "observed"
       }
     ]
   },
@@ -965,14 +979,14 @@
     "placeIds": [
       "jericho_palaces"
     ],
-    "label": "Pools Complex · later phase",
+    "label": "Pools Complex · Stage 6 (Netzer Plan 20)",
     "width": 1039,
     "height": 896,
     "image": "dossiers/trumper2018-fig22-p286.jpg",
-    "source": "Trümper 2018 Fig. 22, p. 286",
+    "source": "Trümper 2018 Fig. 22, p. 286 (= Netzer 2001 Plan 20, Stage 6)",
     "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
-    "limit": "Published reconstruction; source-image frame, unregistered to the terrain.",
+    "limit": "Fig. 22 is Netzer's Stage 6 (Trümper phase 6, 67–63 BCE): the two pools are still separate. They were joined into one basin in the Herodian period (Netzer 2001 pp. 74, 85, 100; Plan 22, not reproduced here): choose Herodian under View. The 3D views are traced, not registered to geographic coordinates; pool depths follow the published rim and floor levels, other heights are illustrative.",
     "features": [
       {
         "id": "complex",
@@ -984,12 +998,31 @@
         "entryIds": [
           "29"
         ],
-        "description": "The published reconstructed complex can be compared across early and later phases.",
-        "limit": "A reconstruction does not supply the missing ancient conduit junction or floor datum.",
+        "description": "Netzer's Stage 6 reconstruction: the two pools still separate, fed by two channels from settling tank A(B)99 (p. 84). The joined basin, about 32 × 18 m, is Herodian (pp. 74, 85, 100).",
+        "limit": "Reconstruction drawings: Netzer calls the plans partly reconstructed and schematic. The published floors give depths of 3.40 m (south) and 4.14 m (north) below the rim; the missing ancient conduit junction is not supplied.",
         "sources": [
-          "Trümper 2018 Fig. 22, p. 286"
+          "Trümper 2018 Fig. 22, p. 286 (= Netzer 2001 Plan 20, Stage 6)",
+          "Netzer 2001 pp. 74–100; tracing record research/models/traced_plans/jericho-pools-complex.md"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
+      }
+    ],
+    "traced": "jericho-pools-complex",
+    "layers": [
+      {
+        "id": "stage6",
+        "label": "Stage 6",
+        "kind": "published-reconstruction"
+      },
+      {
+        "id": "herodian",
+        "label": "Herodian",
+        "kind": "published-reconstruction"
+      },
+      {
+        "id": "remains",
+        "label": "Remains",
+        "kind": "observed"
       }
     ]
   },

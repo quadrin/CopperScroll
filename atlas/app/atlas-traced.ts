@@ -21,6 +21,7 @@ export type TracedPlan = {
  elements: TracedElement[];
  features?: { id: string; at: TracedPoint }[];
  walkStart?: { at: TracedPoint; bearing: number };
+  focus?: TracedPoint;
 };
 
 export function decodeRaster(g: Extract<TracedGeometry, { type: "raster" }>) {

@@ -20,7 +20,8 @@ for(const name of readdirSync(dir).filter(f=>f.endsWith('.json')).sort()){
   const at=`${where} ${e.id}`;assert.ok(e.id&&!ids.has(e.id),`${at}: element ids must be unique`);ids.add(e.id);
   assert.ok(e.layers?.length&&e.layers.every(l=>layers.has(l)),`${at}: unknown layer`);
   assert.ok(['observed','published-reconstruction','project-inference'].includes(e.status),`${at}: status`);
-  if(e.source)assert.ok(sources.has(e.source),`${at}: unknown source ${e.source}`);
+  // An element drawn from several figures names them joined by "+".
+  for(const s of e.source?String(e.source).split(/\s*\+\s*/):[])assert.ok(sources.has(s),`${at}: unknown source ${s}`);
   const g=e.geometry;
   if(g.type==='raster'){
    point(g.origin,at);finite(g.cell,at);const runs=typeof g.rle==='string'?g.rle.split(/[\s,]+/).filter(Boolean).map(Number):g.rle;
@@ -33,7 +34,7 @@ for(const name of readdirSync(dir).filter(f=>f.endsWith('.json')).sort()){
  result[t.id]={id:t.id,title:t.title,frame:{origin:t.frame.origin,north:t.frame.north,datum:t.frame.datum??null,ground:t.frame.ground??null},
   sources:t.sources.map(s=>({id:s.id,citation:s.citation})),layers:t.layers.map(l=>({id:l.id,label:l.label,kind:l.kind})),
   elements:t.elements.map(e=>{const g=e.geometry.type==='point'&&!e.geometry.at?{...e.geometry,at:e.geometry.points[0],points:undefined}:e.geometry;return {id:e.id,label:e.label,kind:e.kind,layers:e.layers,status:e.status,lineStyle:e.lineStyle,geometry:g,levels:e.levels,height:e.height,steps:e.steps,source:e.source,locator:e.locator};}),
-  features:t.features?.filter(f=>f.at).map(f=>({id:f.id,at:f.at})),walkStart:t.walkStart};
+  features:t.features?.filter(f=>f.at).map(f=>({id:f.id,at:f.at})),walkStart:t.walkStart,focus:t.focus?.at};
 }
 // Plans that name a traced plan must name its layers in the same order.
 for(const plan of plans.filter(p=>p.traced)){

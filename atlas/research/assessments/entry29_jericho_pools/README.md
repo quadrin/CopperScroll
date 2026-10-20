@@ -84,6 +84,15 @@ The supplied 2001 final report now provides an image-checked channel distinction
 The specific Herodian A(B)101 eastern-outlet branch has now been checked against original report pp. 87/100/131–133. Supply remains unknown and no outlet-wall tie is established. Approximately32×18m merged dimensions change the long-side reference; both 24/27-cubit counterfactuals fit an assumed 18 m width, without any observed channel point measured. This revises the existing assessment, leaving it inconclusive and low-confidence. [Assessment and numeric inputs](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle14/jericho_merged.md). [New source-page archive](../../assets/plans/netzer2001-cycle14/README.md). Specific folded Plans14/15/23 remain unlocated in the supplied PDF; the main text is available. Earlier access statements in this historical record are superseded to these stated inspection scopes.
 
 
+## Metric tracing of the phase plans — 20 October 2026 UTC
+
+Netzer Plans 17, 20 and 22 and Trümper Fig. 18 are now traced into one metric frame ([tracing record](https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/jericho-pools-complex.md); registration residuals at most 0.08 m, Fig. 18 0.28 m). The tracing gives two corrections:
+
+- Trümper Fig. 22 is Netzer Plan 20 (Stage 6). It draws the two pools still separate. The joined basin is Herodian (pp. 74, 85, 100; Plan 22). The atlas no longer pairs Fig. 22 with the joined basin.
+- The published levels give depths of 3.40 m (southern pool) and 4.14 m (northern pool). The pool tops are at ca. +100.40 (p. 79), and Plan 17 prints floors of 97.00 and 96.26.
+
+Traced sizes: each early pool measures 17.6–17.9 × 12.8–13.0 m at the wall base, and the joined basin is 31.89 m north–south. The frame is not registered geographically. It adds no new observation of a wall face or of the conduit junction. No test result or confidence changes.
+
 ## Hydraulic-direction follow-up — 3 October 2026 UTC
 
 The defended original wording does not establish inflow direction. Puech’s proposed collection-installation continuation is conjectural; Milik1960 sourceentry31 preserves a damaged Qe-form and reservoir relation. A(B)171’s observed drainage survives the narrow direction test without a positive textual identification. The fuller collecting-installation branch needs that associated structure, and the outlet still lacks a pool-wall contact/datum. All earlier numeric bands remain counterfactual; no coordinate or confidence change follows. [Original-edition comparison](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle15/jericho_conduit.md).
