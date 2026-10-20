@@ -74,8 +74,9 @@ export function voxelizeSite(models,spec){
   const model=models.geometry.buildModel(plan,options);root=model.root;if(spec.roof)model.roof.visible=true;
   root.updateMatrixWorld(true);
   root.traverse(o=>{if(o.isMesh&&o.userData.siteContext==='ground')ground.push(o);});
-  const f=model.framing,s=options.terrain?RINGS[0].size:1e-9;
-  domain??={minX:snap(f.min.x,s,false),maxX:snap(f.max.x,s,true),minZ:snap(f.min.z,s,false),maxZ:snap(f.max.z,s,true)};
+  // With terrain rings, the build's edges fall on the inner ring's cells; otherwise they are the model's frame.
+  const f=model.framing,edge=(v,up)=>options.terrain?snap(v,RINGS[0].size,up):v;
+  domain??={minX:edge(f.min.x,false),maxX:edge(f.max.x,true),minZ:edge(f.min.z,false),maxZ:edge(f.max.z,true)};
   if(spec.ring!==undefined){
    // A ring holds only terrain; its hole is the build inside it, cell for cell.
    const inner=spec.ring?RINGS[spec.ring-1].half:null;
