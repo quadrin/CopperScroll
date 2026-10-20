@@ -28,7 +28,8 @@ for(const spec of specs){
   continue;
  }
  if(plan.terrain==='wide')assert.ok(site.surroundings?.length===RINGS.length,`${spec.id}: lists its terrain rings`);
- const features=new Set(plan.features.map(f=>f.id));for(const f of header.features)assert.ok(features.has(f),`${spec.id}: feature ${f} is a plan feature`);
+ // Blocks carry plan feature ids; a traced plan's blocks may also carry its element ids.
+ const features=new Set([...plan.features.map(f=>f.id),...(models.tracedPlans[plan.traced]?.elements.map(e=>e.id)??[])]);for(const f of header.features)assert.ok(features.has(f),`${spec.id}: feature ${f} is a plan feature or traced element`);
  // Ilan–Amit's basin 2 and the dam proposed at point 4 (copper marks the reconstruction).
  if(spec.pilot){assert.ok(header.features.includes('basin2'),'qumran-ilan: basin 2 is built');assert.ok(Object.keys(site.counts).some(k=>k.startsWith('waxed_cut_copper')),'qumran-ilan: the reconstructed dam is built in copper');}
  const [nx,ny,nz]=header.dims;let offset=4+length,quads=0;

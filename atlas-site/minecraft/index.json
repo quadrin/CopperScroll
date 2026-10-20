@@ -535,6 +535,140 @@
     "stone_slab[type=top]": 118
    },
    "quads": 2042
+  },
+  "qumran-settlement": {
+   "file": "qumran-settlement.bin.gz",
+   "plan": "qumran-settlement",
+   "layer": "remains",
+   "ring": null,
+   "surroundings": [
+    "qumran-settlement~ring1",
+    "qumran-settlement~ring2"
+   ],
+   "terrainPlace": null,
+   "bytes": 57659,
+   "blockSize": 0.5,
+   "origin": [
+    -62,
+    -7,
+    -102
+   ],
+   "blocks": [
+    248,
+    17,
+    408
+   ],
+   "world": {
+    "x0": 12288,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "rubble",
+   "fills": {
+    "commands": 3201,
+    "filled": 1422842
+   },
+   "readback": {
+    "blocks": 1720128,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 0
+   },
+   "counts": {
+    "coarse_dirt": 398158,
+    "cobblestone": 13964,
+    "cobblestone_slab[type=bottom]": 273,
+    "smooth_quartz": 4631,
+    "smooth_quartz_slab[type=bottom]": 392,
+    "smooth_stone": 5,
+    "smooth_stone_slab[type=bottom]": 478,
+    "smooth_stone_slab[type=top]": 541,
+    "stone": 1004400
+   },
+   "quads": 11235
+  },
+  "qumran-settlement~ring1": {
+   "file": "qumran-settlement~ring1.bin.gz",
+   "plan": "qumran-settlement",
+   "layer": null,
+   "ring": 0,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 233242,
+   "blockSize": 2,
+   "origin": [
+    -400,
+    -58,
+    -400
+   ],
+   "blocks": [
+    400,
+    58,
+    400
+   ],
+   "world": {
+    "x0": 13312,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "rubble",
+   "fills": {
+    "commands": 25754,
+    "filled": 3546029
+   },
+   "readback": {
+    "blocks": 9280000,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 1420800
+   },
+   "counts": {
+    "coarse_dirt": 153676,
+    "stone": 3392353
+   },
+   "quads": 37949
+  },
+  "qumran-settlement~ring2": {
+   "file": "qumran-settlement~ring2.bin.gz",
+   "plan": "qumran-settlement",
+   "layer": null,
+   "ring": 1,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 193287,
+   "blockSize": 8,
+   "origin": [
+    -1152,
+    -72,
+    -1152
+   ],
+   "blocks": [
+    288,
+    42,
+    288
+   ],
+   "world": {
+    "x0": 14336,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "rubble",
+   "fills": {
+    "commands": 11110,
+    "filled": 754106
+   },
+   "readback": {
+    "blocks": 3483648,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 870912
+   },
+   "counts": {
+    "coarse_dirt": 13472,
+    "stone": 726471,
+    "stone_slab[type=bottom]": 14163
+   },
+   "quads": 32757
   }
  },
  "minecraft": {

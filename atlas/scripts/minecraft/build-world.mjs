@@ -39,7 +39,7 @@ export const SITES=[
 const PILOT_GROUND=new Set(['qumran-ground','qumran-ridge-back','connected-limestone-bed']);
 // Plans with the wide terrain patch get coarser block rings around them, each with a
 // hole exactly the size of the build inside it.
-export const RINGS=[{size:2,half:400},{size:8,half:1150}];
+export const RINGS=[{size:2,half:400},{size:8,half:1152}];
 export const buildKey=(planId,layer)=>layer&&layer!=='remains'?`${planId}@${layer}`:planId;
 
 // One build per site; traced plans give one per layer (remains, each published phase).
