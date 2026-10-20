@@ -5,8 +5,9 @@ import { Camera, X } from "lucide-react";
 import galleryData from "./atlas-site-gallery.json";
 import sceneData from "./atlas-scenes.json";
 
-type Photo = { key: string; src: string; thumb: string; title: string; credit: string; license: string; licenseUrl: string; sourceUrl: string; date?: string; caption: string };
-const gallery = galleryData as { id: string; placeId: string; web: string; thumb: string; title: string; credit: string; license: string; licenseUrl: string; sourceUrl: string; date: string; caption: string }[];
+// licenseUrl is null for the project owner's own photographs: shown with his permission, no open licence.
+type Photo = { key: string; src: string; thumb: string; title: string; credit: string; license: string; licenseUrl: string | null; sourceUrl: string; date?: string; caption: string };
+const gallery = galleryData as { id: string; placeId: string; web: string; thumb: string; title: string; credit: string; license: string; licenseUrl: string | null; sourceUrl: string; date: string; caption: string }[];
 const scenes = sceneData as { placeId: string; src: string; title: string; author: string; license: string; licenseUrl: string; sourceUrl: string; date?: string; caption: string }[];
 
 function photosFor(placeId: string | null): Photo[] {
@@ -32,7 +33,7 @@ export default function WalkReferences({ placeId }: { placeId: string | null }) 
   return <aside className="walk-references" aria-label="Reference photographs">
     <header><strong>Reference photos</strong><button onMouseDown={e => e.preventDefault()} onClick={() => { setOpen(false); release(); }} aria-label="Hide reference photographs"><X size={15} /></button></header>
     <a className="walk-reference-photo" href={photo.sourceUrl} target="_blank" rel="noreferrer" title="Open the photograph at its source"><img src={`${base}${photo.src}`} alt={photo.caption} /></a>
-    <p className="walk-reference-credit">{photo.date && <span>{photo.date} · </span>}<a href={photo.sourceUrl} target="_blank" rel="noreferrer">{photo.credit}</a> · <a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a></p>
+    <p className="walk-reference-credit">{photo.date && <span>{photo.date} · </span>}<a href={photo.sourceUrl} target="_blank" rel="noreferrer">{photo.credit}</a> · {photo.licenseUrl ? <a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a> : <span>{photo.license}</span>}</p>
     <div className="walk-reference-strip" role="listbox" aria-label="Choose a reference photograph">{photos.map((p, i) => <button key={p.key} role="option" aria-selected={i === index} aria-label={`${i + 1}. ${p.title}`} onMouseDown={e => e.preventDefault()} onClick={() => { setIndex(i); release(); }}><img src={`${base}${p.thumb}`} alt="" loading="lazy" /></button>)}</div>
     <p className="walk-reference-limit">For comparison only: the model is not aligned to these cameras.</p>
   </aside>;

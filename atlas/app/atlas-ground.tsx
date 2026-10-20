@@ -7,14 +7,16 @@ import galleryData from "./atlas-site-gallery.json";
 import type { Entry, Place } from "./atlas-types";
 
 type Highlight = {id:string;label:string;points:string;x:number;y:number;note:string;entryIds:string[]};
-type Scene = {placeId:string;src:string;sourceUrl:string;title:string;author:string;license:string;licenseUrl:string;width:number;height:number;alt:string;caption:string;highlights:Highlight[];thumb?:string;credit?:string;date?:string;kind?:string;relevance?:string};
-type GalleryItem = {id:string;placeId:string;kind:string;web:string;thumb:string;webWidth:number;webHeight:number;title:string;author:string;credit:string;license:string;licenseUrl:string;sourceUrl:string;date:string;alt:string;caption:string;relevance:string};
+type Scene = {placeId:string;src:string;sourceUrl:string;title:string;author:string;license:string;licenseUrl:string|null;width:number;height:number;alt:string;caption:string;highlights:Highlight[];thumb?:string;credit?:string;date?:string;kind?:string;relevance?:string};
+// licenseUrl is null for the project owner's own photographs: shown with his permission, no open licence.
+type GalleryItem = {id:string;placeId:string;kind:string;web:string;thumb:string;webWidth:number;webHeight:number;title:string;author:string;credit:string;license:string;licenseUrl:string|null;sourceUrl:string;date:string;alt:string;caption:string;relevance:string};
 const annotated=sceneData as Scene[];
 const gallery=(galleryData as GalleryItem[]).map(g=>({placeId:g.placeId,src:`dossiers/site-photos/gallery/${g.web}`,thumb:`dossiers/site-photos/gallery/${g.thumb}`,sourceUrl:g.sourceUrl,title:g.title,author:g.author,credit:g.credit,license:g.license,licenseUrl:g.licenseUrl,width:g.webWidth,height:g.webHeight,alt:g.alt,caption:g.caption,highlights:[],date:g.date,kind:g.kind,relevance:g.relevance}) as Scene);
 const scenes=[...annotated,...gallery];
 const photographedPlaces=[...new Set(scenes.map(s=>s.placeId))];
 type Props={place:Place|null;entry:Entry;places:Place[];onPlace:(id:string)=>void};
 const clamp=(n:number,low:number,high:number)=>Math.min(high,Math.max(low,n));
+const licence=(s:Scene)=>s.licenseUrl?<a href={s.licenseUrl} target="_blank" rel="noreferrer">{s.license}</a>:<span>{s.license}</span>;
 
 export default function GroundView({place,entry,places,onPlace}:Props){
   const placeScenes=scenes.filter(s=>s.placeId===place?.id);
@@ -78,7 +80,7 @@ export default function GroundView({place,entry,places,onPlace}:Props){
         {!scene.highlights.length&&(scene.kind||scene.date)&&<p className="gallery-title"><span>{[scene.kind,scene.date].filter(Boolean).join(", ")}</span></p>}
         <p className="scene-caption">{scene.caption}</p>
         {scene.relevance&&<p className="scene-relevance">{scene.relevance}</p>}
-        <div className="photo-credit">{scene.credit?<>Photo: <a href={scene.sourceUrl} target="_blank" rel="noreferrer" title={scene.title}>{scene.credit.replace(/,?\s*(CC[\w .-]*|Public domain|No known restrictions[^,]*)$/i,"")}</a> · <a href={scene.licenseUrl} target="_blank" rel="noreferrer">{scene.license}</a>. Shown resized; framing changes as you pan.</>:<>Photo: <a href={scene.sourceUrl} target="_blank" rel="noreferrer">{scene.author}</a> · <a href={scene.licenseUrl} target="_blank" rel="noreferrer">{scene.license}</a>. Atlas overlays added; framing changes as you pan.</>}</div>
+        <div className="photo-credit">{scene.credit?<>Photo: <a href={scene.sourceUrl} target="_blank" rel="noreferrer" title={scene.title}>{scene.credit.replace(/,?\s*(CC[\w .-]*|Public domain|No known restrictions[^,]*)$/i,"")}</a> · {licence(scene)}. Shown resized; framing changes as you pan.</>:<>Photo: <a href={scene.sourceUrl} target="_blank" rel="noreferrer">{scene.author}</a> · {licence(scene)}. Atlas overlays added; framing changes as you pan.</>}</div>
       </div>
     </>:<div className="ground-empty"><Camera size={34} strokeWidth={1}/><h3>Explore another viewpoint</h3><p>{place?.lat==null?"This proposal has no defensible coordinate for a Street View search.":"Try nearby Google Street View imagery, or open one of the photographed candidates below. Coverage may be absent or some distance from the site."}</p><div className="scene-shortcuts">{photographedPlaces.filter(id=>places.some(p=>p.id===id)).map(id=><button key={id} onClick={()=>onPlace(id)}><Camera size={14}/>{places.find(p=>p.id===id)?.shortName}</button>)}</div></div>}
     {streetUrl&&<div className="street-view-link"><a href={streetUrl} target="_blank" rel="noreferrer">Open nearby Google Street View <ExternalLink size={13}/></a><span>Opens separately; imagery coverage varies. Atlas highlights stay in this view.</span></div>}

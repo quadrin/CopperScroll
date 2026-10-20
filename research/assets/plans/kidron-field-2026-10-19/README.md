@@ -33,6 +33,10 @@ Two iPhone 15 videos from the same visit (HEVC, 1920 × 1080), kept in Drive onl
 - 08804, 08805, 08810: engraved letters on a pilaster of Zechariah's monument. Not legible at this resolution. The full-resolution originals may allow a reading; this is an edition and dating question for the published inscriptions, not a test in this project.
 - 08776–08777: a built, graffitied wall at ground level beside the scarp near Absalom. Its position relative to the monument is not established from these frames.
 
+## Shown in the atlas gallery (20 October 2026)
+
+Ten items are in the atlas photo gallery of the Kidron monuments (`jer_kidron_mon`), first in its strip: DSC08767, 08770, 08773, 08781, 08791, 08800, 08812, 08813, 08818 and the video frame IMG_9844_t050. Credit: "Alex Kesin (project owner), 19 Oct 2026 · Used with permission (no open licence)"; no open licence is shown or implied. Captions, alt text and entry links are in each item's `atlasGallery` object in [manifest.json](manifest.json); `tools/build_site_gallery.py` makes the 1600 px WebP and 240 px thumbnail. Captions keep the INFERENCE labels above, add one for 08818 (camera looks about west, toward the Old City wall), and say that no GPS, heading or scale is recorded. 08781 is captioned as face not established. Left out: views that repeat a kept one (08766, 08769, 08803), a blurred frame (08795) and the openings whose identity is not established (08774, 08782).
+
 ## Limits
 
 Photos record shape and facing; they date nothing. No rating changes from this set. For any use that needs position or facing, the originals with a phone-paired GPS log, or a compass note per shot, are needed.
