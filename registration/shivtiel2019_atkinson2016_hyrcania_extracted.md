@@ -35,6 +35,14 @@ Perlego https://www.perlego.com/book/804371. The in-book search for "Hyrcania" g
   - The 31 BCE siege, with a camp and siege works, raises a further reading: tunnels cut during the siege, either by attackers or by defenders. The tunnels lie in the wadi cliffs north of the fortress, so their direction relative to the summit would test this.
   - Antipater's burial at Hyrcania (4 BCE; *Ant.* 17.187) is BK and falls outside Atkinson's period.
 
-## Not read
+## 3. J. Magness, *Masada: From Jewish Revolt to Modern Myth* (Princeton 2019)
 
-- Magness, *Masada* (2019; Perlego 840048). The reader showed a reCAPTCHA when opened, so the session stopped there.
+Read on 21 Oct 2026 from a PDF the owner put in Drive (file 1Fd1UCB00jETG48Bd0vXzs3mTlJedBOjO; not in Git). The Drive text extraction stops after about ch. 4, so the later Masada chapters were not searched.
+
+- EVIDENCE (ch. 4, section "Hyrcania (Khirbet el-Mird)"; printed page not shown in the extract):
+  - Hyrcania "has never been excavated", though it has been surveyed. This was written before the 2023–2025 seasons.
+  - The summit structure stands on underground vaults used as cisterns. Numerous cisterns are cut into the slopes and the top of the hill.
+  - Two large open reservoirs lie at the foot of the western slope, beside a bridge carrying an aqueduct that gave access to the summit.
+  - Byzantine monks reused the building (the monastery of Castellion).
+- EVIDENCE: the tunnels are not mentioned.
+- INFERENCE: Magness adds nothing on the tunnels' purpose.
