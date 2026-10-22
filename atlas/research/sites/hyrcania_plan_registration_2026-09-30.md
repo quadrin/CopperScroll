@@ -48,3 +48,7 @@ Obtain the excavation team's georeferenced plan or control coordinates for bridg
 ## Model-scope clarification — 2 October 2026
 
 [Conditional Hyrcania assessment](../assessments/entry29_hyrcania/README.md) separates Eshel’s entry-29 northward offset from earlier pool-side/perimeter tests. His entry-16 trail–northern-aqueduct origin differs from the passage-49 proxy used here. Those numerical results remain valid only for their stated proxy/model. New northern-pool loci retain competing centre/rim datums and a page-up orientation proxy; no geographic fit or deposit point is accepted. [Reading provenance](../assessments/entry29_hyrcania/reading.md).
+
+## Source of the withheld guide point — 22 October 2026
+
+EVIDENCE: Feldman (Ilan vol. p. 332; [record](../sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)) prints the northern-aqueduct dam at "נ.צ. 1837 1261". INFERENCE: the guide's `1837.1261` copies Feldman's reference for Patrich's station 44. It is still a four-digit (100 m) reference with unknown rounding, so the 244 m miss and the withheld-check status are unchanged. The guide's 1.2 km is probably Feldman's 1.2 km² catchment, not the line length; Feldman gives c. 1,951 m and Patrich 1,950 m.

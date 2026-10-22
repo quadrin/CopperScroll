@@ -85,3 +85,7 @@ The supplied folder's complete115-document metadata audit and focused public sea
 The atlas entry-57 text now carries the existing catalogue-methodology correction: K35264 has the published P5178 / basket 51777 findspot; three remains a type total. The atlas separates the eastern monumental staircase, southern seven-step flight, E1’s 15-step flight and Area P courtyard cistern. A simplified precinct/mansion diagram uses the checked p. 1743 overview and descriptions on pp. 1745–1747. Its mansion envelope supplies no precise cistern or P5178 position.
 
 Authenticated Drive access recovered the newly uploaded file `dedupmrg54258818_IE199398504.pdf`. Its checked title identifies the 1880 SWP map set, not JSP 8 or JSP 20. [Source identity and inspected sheet archive](../assets/plans/swp1880-upload/README.md). That historical map cannot resolve the architectural concordance or coin-deposition context.
+
+## Gerizim vol. I checked — 22 October 2026
+
+*Mount Gerizim Excavations I* (JSP 2, 2004) was read in part from the owner's NLI photos ([record](../sources/nli_photos_2026-10-21/gerizim_I_2004.md)). EVIDENCE: P5178 is not in its Area P locus concordance (p. 271: loci 4004–4498 and four surface groups) or on Map 1. Vol. I's concordance covers inscription findspots only. The only cistern named is L.196 in Area S (pp. 54, 57). INFERENCE: consistent with this note's expectation that the architectural concordance is in vol. II (JSP 8) or JSP 20; the request stands.

@@ -215,3 +215,7 @@ Current routing now awaits Rachel/Roi's named file or custodian response rather 
 ## Exact2002 access route update — 6 October 2026 UTC
 
 The user authorized a targeted Fig6/Fig10 follow-up after the identity audit. No2002 chapter/figure was recovered. The current JRA supplier route and J24’s exact pp369–370/Fig10 locator are recorded once in the [canonical access supplement](README.md#exact-source-access-follow-up--6-october-2026-utc), alongside the unrelated monastery-source thread. Preserve the2002/1989 figure distinction, pagination discrepancy and historical access results. No email/order/fee, original archaeological inspection or activity increment occurred; exact public retries stop pending a supplied copy or identified holding/accession.
+
+## Portfolio sheets photographed — 22 October 2026
+
+The folded plans were photographed at the NLI on 21 Oct: Plans 1–4, 11, 12, 14, 15, 23, 25, 26, 29, 35 and 36 ([sheets 11–36](../../sources/nli_photos_2026-10-21/netzer2001_plan_sheets.md); [Plans 1–4](../../sources/nli_photos_2026-10-21/netzer2001_sheets1-4.md)). EVIDENCE: no sheet has phase colours or a phase key; Plans 15 and 23 separate stages by sheet. Plan 22 was not found. Plan 12 confirms the 102.87/102.80 labels at A(C)94's NW pipe junction without defining them. The [README note of the same date](README.md#nli-photo-reads--22-october-2026) records that the closed result's reopen criterion is not met.

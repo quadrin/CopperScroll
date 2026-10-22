@@ -109,3 +109,9 @@ The [book and excavation intake](../sources/roman_byzantine_books_siloam_2026-09
 Entry 49 remains medium, conditional on the Siloam reading. Bliss–Dickie's small cement tank and grooved outlet channel belong to the southern drain-exit sector by gate d2, southwest of the Old Pool; they are spatially separate from the tunnel-mouth pool. The 1898 report withdraws the 1895 catch-pit interpretation and places the tank after drainage disuse, without a calendar date. The separate tower reservoir has later Second Temple phase evidence in the 2014 report; that dating does not establish the small tank's date. Retain the latter as an undated comparison feature, with no modern locus or registered footprint.
 
 The books add competing Achor geography, road-phase cautions, and later tomb/cistern comparisons. Guthe's original pool plate, the failed Kotar pages and a dated correspondence for the small tank remain open.
+
+## NLI photo reads — 22 October 2026
+
+- **Entry 21 (Qumran): medium, unchanged.** Ilan & Amit 2002 p. 385 is now read. The Archelaus date is the authors' ("about the time of"); the run-off wall is at no. 19, not no. 16; dam no. 4 is reconstructed only (pp. 381–382). The 2002 and 1989 numbering agree ([record](../sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)).
+- **Hyrcania (16, 29, 35): possible, low, unchanged.** Patrich 2002 repeats the 1989 measurements; Feldman's separate survey adds the dam grid (1837 1261), a 1.2 km² catchment and 8,000 m³ for the western open pools.
+- **Temple Mount (3, 9): unchanged.** Gibson & Jacobson 1996 read in part: no date for their No. 3 (the Great Sea, W8); no cistern within 19 cubits of the Golden Gate on their plans ([record](../sources/nli_photos_2026-10-21/gibson_jacobson1996.md)).

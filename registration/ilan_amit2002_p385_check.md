@@ -48,3 +48,12 @@ Inference: p. 385 discusses dating (Hasmonean / Herodian / Herod Archelaus, with
 - Whether "point 16" (Stacey) appears as "Point 16", "pt. 16" or only on a figure. The phrase has no hits in the chapter.
 - Figure titles other than Fig. 1; whether any figure has a scale or north arrow.
 - **Next step:** a library scan of p. 385 alone (interlibrary loan / document delivery) would settle both points.
+
+## Page read — 22 October 2026
+
+p. 385 was read from the owner's NLI photo ([record](../research/sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)). The open points above are now answered:
+
+- **Archelaus (EVIDENCE).** The authors' own date for the visible aqueduct: "about the time of Herod Archelaus, 4 B.C.-A.D. 6", possibly a reconstruction of a Hasmonean aqueduct (n. 7: agreeing with Magness, *DSD* 2.1, 1995).
+- **Low dam (EVIDENCE).** "At its last turn, a wall serving as a kind of low dam was built attached to the aqueduct, evidently in order to catch run-off which descended from the slopes of the scarp and divert it into the aqueduct." It is at no. 19, by the settlement. It is not tied to an "earlier channel" or to no. 16.
+- **Iron Age (EVIDENCE).** "The first system may belong to the Iron Age fortress (8th-7th c. B.C.)": a possibility for a first system, not a date for the aqueduct seen today.
+- The chapter's last page is 386 and its figures are Figs. 1–8, as inferred above.

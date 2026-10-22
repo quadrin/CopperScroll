@@ -69,3 +69,13 @@ The 2002 chapter (*The Aqueducts of Israel*, JRA Suppl. 46, pp. 380–386) is ne
 - to read the full text of p. 385.
 
 Reeder and Jol's 2002 survey records (requested 29 September 2026) would allow points 16 and 19 to be located on the ground.
+
+## Ilan & Amit 2002 pp. 381–386 read — 22 October 2026
+
+The chapter text was read from the owner's NLI photos ([record](../sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)). It checks Stacey's two citations of p. 385 and the numbering assumption above.
+
+- **Numbering (EVIDENCE).** The 2002 text describes nos. 2, 3, 4, 8–13, 15, 16 and 19 as the 1989 review does. INFERENCE: the 2002 and 1989 numbers agree; the mapping in "Comparison with the Ilan–Amit 1989 plan" holds.
+- **The run-off wall (EVIDENCE, p. 385).** Stacey's quotation is exact, but the sentence begins "At its last turn": the wall is at no. 19, by the settlement, and the sentence goes on "…which descended from the slopes of the scarp and divert it into the aqueduct". The authors tie it to no earlier channel and do not mention no. 16 there. Correction (22 Oct): the table row above and `source_leads_2026-09-29.md` read as if the low wall belonged to the stage-1 line from no. 16; that link is Stacey's phasing, not the authors'. The rows are kept as written.
+- **The date (EVIDENCE, p. 385).** "the aqueduct seen today dates to the final period (about the time of Herod Archelaus, 4 B.C.-A.D. 6)", possibly a reconstruction of a Hasmonean aqueduct (n. 7, after Magness 1995). Stacey's "without discussion" is fair: no stratigraphic argument is given. Cargill's "Iron Age" is only partly supported: "The first system may belong to the Iron Age fortress".
+- **The dam (EVIDENCE, pp. 381–382).** "No remains of an installation survive"; "It seems that a dam was built (fig. 1 no. 4)". The dam stays a published reconstruction.
+- **Effect.** Entry 21's two "heads" are unchanged as alternatives: points 3/4 (intake, dam reconstructed) and point 16 (head of Stacey's stage 1, his phasing). Stacey's stage-1 line is still his hypothesis; p. 385 neither supports nor contradicts it. No confidence change.

@@ -44,3 +44,13 @@ Duprez reports the White Fathers' excavations from 1956 (P. Blondeel, with PP. P
 - **Inference.** The candidate is now rated on a first-hand report, not on von Wahlde's summary. D stays 2: the complex is dated by coins to 68 CE, but the threshold is dated only by its context.
 - **Next record for entry 56.** Pierre and Rousée, *POC* 31 (1981), pp. 23–42, or the White Fathers' field records: the threshold's position, its orientation, and whether its doorway led into cistern 1 or another room.
 - **Entry 55, jer_bethesda: no level change.** D gains a first-hand date (2nd century BCE to Agrippa I).
+
+## Pierre & Rousée 1981 read — 22 October 2026
+
+*POC* 31 pp. 23–25, 28–42 (pp. 26–27 not photographed) were read from the owner's NLI photos ([record](../research/sources/nli_photos_2026-10-21/probatique_poc31_1981.md)).
+
+- **Phasing (EVIDENCE, pp. 24–25, 33, 42).** The two basins were not built together: "Nous avons cru longtemps que les deux bassins étaient contemporains. Nous nous trompions." The central dam and the north basin are "à l'*époque royale* de Juda" (Pl. 1a caption: "Digue de l'époque d'Achaz"); the south basin and the vault over the canal are Hellenistic, about Simon son of Onias (220–195). Dated by building technique and texts, no sealed finds. This disagrees with Duprez's single 2nd-c. BCE date for both (above) and with Gibson's Herodian date; all three put both basins standing in the window.
+- **Dam (EVIDENCE, p. 24).** About 40 m long, 6 m wide at the top and more than 7 m at the base, at most 13 m high; 20 courses of about 50 cm on cut rock; a 1 × 1 m shaft with 20 × 15 cm openings every 2 m into the north basin; outlet corridor and canal (Fig. 3).
+- **Basins (EVIDENCE, p. 25).** North basin extent unknown ("Seul son angle sud-est est assuré"). South basin: NE and SE corners known, plaster ≥10 cm, rock-cut steps on the west side, "irregular and sometimes too high". No dimensions for either basin.
+- **Entry 56 (EVIDENCE).** No threshold, burial chamber, kokh or platform in the pages read; natural caves, "la grande citerne", a medieval cistern and the "citerne probatique" are reported. The threshold question goes to pp. 26–27 or the field records.
+- **Numbering.** The brief for that reading called the twin-pool entry "56"; in `tables/entry_concordance.csv` and the atlas it is **55** (XI 12–15). Allegro's "Item 56" (1960, 1964) is his own item numbering for the same text.

@@ -169,3 +169,15 @@
    - The vaulting of W1 and W3, and "several of the tanks": Justinian, 6th century (pp. 245–246). The basis is narrow-keystone voussoirs.
    - W20: modern (p. 193).
    - Neither source dates W8, W15 or W37.
+
+## Gibson & Jacobson 1996 read first-hand — 22 October 2026
+
+The book itself was read from the owner's NLI photos of 21 Oct ([record](../research/sources/nli_photos_2026-10-21/gibson_jacobson1996.md)). It confirms the concordance above from G&J p. 5.
+
+- **EVIDENCE (pp. 5, 33–39, 54–55).** G&J **No. 3 = W8**, Bīr Buhāyr, "commonly" the "Great Sea" (al-Baḥr al-Kabīr). G&J **Cistern 8 = W9**, Bīr al-Waraqa, the Well of the Leaf, under the Aqṣā. These are two cisterns. Their Figs. 25, 87 and 88 show Cistern 8 (W9), not the Great Sea. In this file "Cistern No. 8" in the §2 heading is Wilson's number (W8); read every unprefixed "No. 8" in the repo as Wilson's unless it says G&J.
+- **EVIDENCE (table p. 33; pp. 36, 39).** No. 3 is entirely rock-cut and plastered; rock level 734.9 m, 1.5 m below the surface (Warren); stair 44 (Barclay) or 50 (Schick) steps from the S/SE; Pierotti's notches by the small circular NW chamber. The source says north-west for that chamber; W&C p. 220 above says north-east. No date is given for the cutting; the Fig. 18 four-step stair beyond one shaft "may possibly have been a relic of the Herodian Temple complex" (p. 39).
+- **EVIDENCE (Fig. 104, p. 230).** The authors' 2nd-c. BCE map marks Cisterns 29 and 15 only, not No. 3.
+- **EVIDENCE (Fig. 10, p. 26; Fig. 86, p. 192).** The cistern drawn nearest the Golden Gate is No. 23 (W15); no cistern is drawn in, under or against the gate building. Conduit 23 runs from No. 23's mouth east to the gate outline.
+- **INFERENCE (Fig. 10, ±5 m).** No. 23's centre is about 25–27 m west of the gate's west face, consistent with the 25–30 m above and Warren Plate VI's 30.0 m.
+- **EVIDENCE (p. 2).** Theoderich (Crusader period) puts "an ancient and ruined cistern" between the Golden Gate and the fifteen steps of the platform; no distance. INFERENCE: this fits No. 23's position; it is a medieval tradition.
+- **Still unread:** Ch. 6 (pp. 225–234, the dating argument), catalogue Nos. 20–48 (including No. 23 and No. 28 = W5), and Conduit 23's text.

@@ -478,3 +478,7 @@ All 20 tests pass with the worker's cache (11 October). Without the cache, the t
 ## Targeted Hebrew catalogue reading, 12 October 2026
 
 The owner-supplied [Kloner–Zissu 2003 original](../../sources/kloner_zissu2003_targeted_2026-10-12/README.md) is now read for selected exposed monument leads and layout controls. It reports an ancient queen title separately from Helena’s attribution and documents several west-facing multi-chamber kokhim layouts. Traditional monument names and republished excavation plans retain their naming and observation-ancestry limits. This targeted supplement resolves access to the selected 2003 pages; the English 2007 edition and original Avigad volume are separate dependencies. Its observations are recorded beside the earlier corpus, not substituted into the frozen inventory.
+
+## Avigad 1954 — 22 October 2026
+
+The Bene Ḥezir names that the Kloner–Zissu record could not give are now read from Avigad 1954 p. 61 ([record](../../sources/nli_photos_2026-10-21/avigad1954.md)): six sons of Joseph son of ʿObed and two sons of Ḥaniah, priests of the Bene Ḥezir. No Zadok, Absalom, queen or Jericho. Avigad gives the façade as south-west-facing (p. 37). INFERENCE: no branch count changes. 54-L/54-M need ʿObed *and* a Jerichoite; the Jerichoite clause is unmet, so Bene Ḥezir stays a non-match. 51-S/51-J need Zadok or "the Just"; unmet. 56-P's west-entrance clause is coded from the KZ wording; Avigad's south-west would need the frozen rule to decide, which this note does not change.

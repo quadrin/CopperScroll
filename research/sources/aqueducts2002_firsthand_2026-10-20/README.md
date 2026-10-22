@@ -98,3 +98,7 @@ Three are quarantined:
 These are in the Drive folder "PROTECTED – arrival-register pages – do not open". Their SHA-256 values are in the CSV. A Plan 1 record must be registered under `assessments/kohlit_chain/registration_protocol.md` before anyone views it.
 
 IMG_0080–0185 in the same Drive folder are byte-size-identical to the JPEGs sorted on 19 Oct. The extra HEIC and Live Photo files add nothing. The originals of the Wolters scroll photographs (IMG_0159, 0160, 0172–0174: HEIC, JPEG and MOV) were moved unopened to "PROTECTED – scroll photographs".
+
+## Later read — 21–22 October 2026
+
+The three chapters listed under "Still missing" were photographed on the second NLI visit: Ilan & Amit pp. 381–386 and Patrich pp. 336–352 ([record](../nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)); Netzer & Garbrecht pp. 366–377 ([record](../nli_photos_2026-10-21/netzer_garbrecht2002_pp366-377.md)). Stacey's p. 385 claims are now checked: the Archelaus date is the authors'; the low run-off wall is at no. 19, not no. 16. The 1989/2002 numbering is confirmed by the text. p. 378 and Porath pp. 29–36 are still unread.

@@ -78,3 +78,14 @@ The site-association ratings and deposit coordinates remain unchanged. Source ac
 ## Model-scope clarification — 2 October 2026
 
 [Conditional Hyrcania assessment](../assessments/entry29_hyrcania/README.md) separates Eshel’s entry-29 northward offset from earlier pool-side/perimeter tests. His entry-16 trail–northern-aqueduct origin differs from the passage-49 proxy used here. Those numerical results remain valid only for their stated proxy/model. New northern-pool loci retain competing centre/rim datums and a page-up orientation proxy; no geographic fit or deposit point is accepted. [Reading provenance](../assessments/entry29_hyrcania/reading.md).
+
+## Patrich 2002 and Feldman read — 22 October 2026
+
+Next discriminating work item 3 is done: Feldman's study is pp. 326–335 of the Ilan volume (Patrich's "316-35" is a misprint), read with Patrich 2002 pp. 336–352 from the owner's NLI photos ([record](../sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)).
+
+- **Passage 49 (EVIDENCE, Patrich 2002 p. 350).** "c.11.5 m in length, height 1.25 m, width 0.75 m", barrel-vaulted, S end "blocked by débris" (Figs. 25a–b). Same as 1989; the entry-16 conditional result above is unchanged.
+- **Station 1 (EVIDENCE, Patrich 2002 p. 338).** "No diversion dam, regulator or bridge was found at the start." The table row above calling station 1 a "Kidron dam" was already corrected on 17 Oct from the 1989 page ([extraction](../../registration/patrich1989_hyrcania_extracted.md)); the row is kept as written.
+- **Dam 44 (EVIDENCE).** Patrich 2002 p. 343: 17.5 m long, 4–5 m wide. Feldman p. 332: grid 1837 1261, 17.50 m long, 1.7–4.00 m wide, curved. INFERENCE: item 1's "guide `1837.1261` dam" is Feldman's station-44 dam; the guide's "1.2-km line" is probably his 1.2 km² catchment, while both authors give c. 1,950 m for the line.
+- **Counts (EVIDENCE).** Feldman: 24 installations = 3 open pools + 21 cisterns, grouped 6 summit / 8 upper S / 4 lower S / 3 E, but the total prints "12" (INFERENCE: misprint for 21). Patrich 2002 p. 351, citing Feldman: 20 cisterns + 2 built pools, 5 on the summit; cave K ("Feldman's 'cistern no.21'") is a chapel. This explains the 20/21 discrepancy noted above: the counts differ in scope (K, summit cisterns, open pools), not in the field.
+- **Pools (EVIDENCE).** Patrich 2002 p. 348 repeats the 1989 northern-pool measurements. Feldman (a separate campaign) gives the western open pools about 8,000 m³ (p. 328) and found plaster in trial digs.
+- **First-century use.** Feldman supposes destruction in the war against Rome, "יש לשער", with no evidence (p. 328); his finds in cistern C are "רובם מן התקופה ההרודיאנית" with no later sherds (p. 334). Patrich's abandonment after Herod stands.

@@ -96,3 +96,13 @@ Checks: source byte size and SHA-256; PDF page count; multiple printed/viewer pa
 ### Later sequential reading
 
 The later [whole-scan reading record](../full_reads_2026-10-12/kloner_zissu2003/README.md) documents the remaining available book pages, all ordinary figures and explicit physical-edition gaps. This earlier targeted record retains its original question, exposure and inference scope.
+
+## Avigad 1954 read — 22 October 2026
+
+Avigad's original edition (the ancestry of Figs. 124–131) was read from the owner's NLI photos ([record](../nli_photos_2026-10-21/avigad1954.md)). It answers next step 1 above.
+
+- **Facing (EVIDENCE, p. 37).** "החזית פונה לרוח דרומית-מערבית": the façade faces **south-west**. From p. 39 Avigad says he will give only the main cardinal directions, so his "west" is this south-west face. INFERENCE: the "explicitly west-facing" wording above (KZ pp. 143–146) is a rounded convention. The coarse 56-P triad, which takes any west-facing opening, is still met; a surveyed-bearing model should use south-west. The earlier text is kept as written.
+- **Names (EVIDENCE, p. 61, crop-checked).** "זה קבר והנפש שלאלעזר חניה יועזר יהודה שמעון יוחנן / בני יוספ בן עובד יוספ ואלעזר בני חניה / כהנים מבני חזיר". Avigad reads עובד ("certainly" short for Obadiah) and weighs and rejects עודד. Eight people: six sons of Joseph son of ʿObed, and Joseph and Eleazar sons of Ḥaniah. **No Zadok.** Nothing links the family to Jericho.
+- **Dates (EVIDENCE).** Tomb and Doric façade about the middle of the 2nd c. BCE (pp. 47, 58–59, 66; the English summary says the latter half of that century); the inscription first half of the 1st c. BCE, about two generations after burials began (pp. 65–66). Avigad rejects Albright's 20–10 BCE (p. 64). Architecture and palaeography only, no sealed deposit.
+- **Unexplored parts (EVIDENCE).** Corridor steps under earth (pp. 39, 49–50); burial cells in the scarp below the façade and toward Absalom, probably earlier (p. 38 n. 1; Fig. 48, not photographed); an "unfinished tomb" south of Zechariah (Fig. 25); Zechariah's buried base and possible tombs "hidden in the rock to the East" (p. 79; summary); the nefesh base under tombstones (p. 76). A cistern mouth is drawn in the valley bed west of Absalom (Fig. 25).
+- **Constraint consequence (INFERENCE).** Entry 51: the porch is still the observed pillared porch, but the inscription names no Zadok, so the name clause is unmet at Bene Ḥezir, not merely unknown. Entry 54: an ʿObed is now verified in a priestly family tomb in Jerusalem, without a Jericho link; the scroll's owner word remains an edition question. The 51, 52, 54 and 56 interpretations stay separate.

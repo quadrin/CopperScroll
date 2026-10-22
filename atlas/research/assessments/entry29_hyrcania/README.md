@@ -43,3 +43,12 @@ All supplied sources opened. [Joseph Patrich, “The Aqueducts of Hyrcania–Kas
 
 
 Cycle7 [supply-datum audit](../../measurements/cycle7/hyrcania_supply.md): the northern summit branch feeds eastern cisterns; the northern basin’s feeder/inlet remains independently unidentified. Filling-order synthesis supplies no observed overflow junction. Candidate and deposit geometry remain unchanged.
+
+## Patrich 2002 and Feldman read — 22 October 2026
+
+Patrich 2002 pp. 336–352 (listed above as unread) and Feldman's separate survey (Ilan vol. pp. 326–335) were read from the owner's NLI photos ([record](../../sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)).
+
+- EVIDENCE: Patrich 2002 p. 348 repeats the 1989 measurements (N basin 19 (S) × 15 (W) × 18.2 (N) × 16 m (E), up to 5 m deep; S basin up to 2.6 m; partition 4.8–5.4 m). It is the same author's survey, not an independent measurement. n. 9: "Perhaps the pools at Hyrcania also date to the Hasmonean period."
+- EVIDENCE: Feldman, an independent field campaign, gives the western open pools about 8,000 m³ (p. 328) and says the surviving aqueduct west of the fortress could feed only the open pools and the lower S cistern row (p. 332). This is his level argument, not an observed inlet.
+- EVIDENCE: Feldman's map p. 330 (Survey Department, February 1971) is the base drawing behind Patrich's Fig. 22 (INFERENCE). It has a scale (10–0–50 m) and grid N 125 000–125 200; whether it carries a north arrow was not recorded.
+- Neither source gives an inlet for the northern basin, a measuring origin or a dated pool-edge surface. **This conditional assessment is unchanged (inconclusive).** It is not a closed ACTIVE_TEST result.

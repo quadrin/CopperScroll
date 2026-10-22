@@ -228,3 +228,11 @@ None is placed firmly on the west side (the Upper City). If this is real, the de
 - [Sefaria: Mishnah Eruvin 10:14](https://www.sefaria.org/Mishnah_Eruvin.10.14) · [Taanit 27a](https://www.sefaria.org/Taanit.27a)
 - [Wikipedia: Qumran cemetery](https://en.wikipedia.org/wiki/Qumran_cemetery) · [Ain el-Ghuweir](https://en.wikipedia.org/wiki/Ain_el-Ghuweir)
 - [Israel Hayom (2021), via the Jewish Ledger](https://www.jewishledger.com/2021/08/49-cisterns-tell-the-story-of-the-destruction-of-the-temple-and-much-more/) · [templemountlocation.com (Wilson's tank list)](http://templemountlocation.com/warrenmap.html)
+
+## Gibson & Jacobson 1996 read — 22 October 2026
+
+Next check 3 above was done from the owner's NLI photos ([record](../sources/nli_photos_2026-10-21/gibson_jacobson1996.md)). Numbering: "No. 8" in §4.2 and F12.5 is Wilson's (W8). In G&J's own numbering the Great Sea is **No. 3**, and their **Cistern 8** is W9, the Well of the Leaf (pp. 5, 33, 54–55). The §4.2 text is kept as written.
+
+- **§4.2 (entry 3).** EVIDENCE: No. 3 (W8) is rock-cut and plastered, with a 44/50-step stair from the S/SE and several shafts (table p. 33, pp. 36, 39). G&J give no date for its cutting in the pages read; Fig. 104 (p. 230) does not mark it among the 2nd-c. BCE cisterns. The "date of No. 8" question stays open; it now waits on their Ch. 6 (pp. 225–234). Status unchanged: possible, low.
+- **§4.1 (entry 9).** EVIDENCE: on G&J Fig. 10 (p. 26) the nearest cistern to the Golden Gate is No. 23 (W15). INFERENCE (scaled, ±5 m): about 25–27 m west of the gate outline, agreeing with the 30.0 m measured here on Plate VI. No cistern is drawn in, under or against the gate. Theoderich (G&J p. 2) has a ruined cistern between the gate and the platform stair, with no distance. The negative result stands.
+- **§4.3 (entry 10).** EVIDENCE: no cistern under the Ḥaram's east wall or under a threshold in the pages read.

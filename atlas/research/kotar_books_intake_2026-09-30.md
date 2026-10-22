@@ -195,3 +195,11 @@ The trough/gutter and the deposit beneath it provide the feature-level constrain
 The repository's recorded readings supply no defensible Pool 338 entry identification. This is an insufficiency finding, not a claim that an eastern-shore location is impossible. Keep the archaeological pool as an unassigned source-plan feature lead. Reading confidence varies by entry; the pool's reported archaeological identity has direct source support; its Scroll association and geographic registration remain unresolved.
 
 For entry 49, inspect the 1997 pool sections and inlet/outlet details for a separately identified trough and its construction phase. A named-site link would still be necessary. For entry 55, require a second contemporaneous basin rather than treating building count as pool count. No candidate geometry, atlas placement or confidence rating changes.
+
+## Feldman's Hyrcania article read — 22 October 2026
+
+Y. Feldman, "מערכת המים במצודת הורקניה", in Z. Ilan (ed.), *מדבר יהודה וים המלח*, pp. 326–335, was read from the owner's NLI photos ([record](nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)).
+
+- **EVIDENCE (p. 332).** The northern aqueduct starts at "נ.צ. 1837 1261", at a curved dam 17.50 m long and 1.7–4.00 m wide. INFERENCE: the guide's `1837.1261` (§1 above) is Feldman's printed reference for this dam, i.e. Patrich's station 44.
+- **EVIDENCE (pp. 332–333).** The line is "כ-1951 מ'" long (Patrich: 1,950 m). The catchment is "כ-1.2 קמ"ר", about 1.2 km².
+- **INFERENCE.** The guide's "1.2 km" probably comes from Feldman's 1.2 km² catchment, not from a length. The length difference flagged above (1.2 km against 1.95 km) is then not a field disagreement. The earlier paragraph is kept as written.

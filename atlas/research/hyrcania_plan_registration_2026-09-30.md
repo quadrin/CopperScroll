@@ -43,3 +43,7 @@ These conditional failures reduce the usefulness of a simple dimensional match; 
 ## Best next source
 
 Obtain the excavation team's georeferenced plan or control coordinates for bridge 48 and both pools, plus phase/context records. Excavation is current enough to warrant asking for these: a [2023 university partner report](https://www.cn.edu/historic-archeological-dig-connects-judean-desert-to-east-tennessee/) describes the new project, and a [March 2026 firsthand account](https://www.cn.edu/beneath-the-collapse/) records fieldwork on 26 February 2026. Neither reviewed account supplies a surveyed pool plan or proves use of this water system around CE 70. The 1996 book's excavation-status statement is historical.
+
+## Source of the withheld guide point — 22 October 2026
+
+EVIDENCE: Feldman (Ilan vol. p. 332; [record](../sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)) prints the northern-aqueduct dam at "נ.צ. 1837 1261". INFERENCE: the guide's `1837.1261` copies Feldman's reference for Patrich's station 44. It is still a four-digit (100 m) reference with unknown rounding, so the 244 m miss and the withheld-check status are unchanged. The guide's 1.2 km is probably Feldman's 1.2 km² catchment, not the line length; Feldman gives c. 1,951 m and Patrich 1,950 m.

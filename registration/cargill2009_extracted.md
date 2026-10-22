@@ -52,3 +52,7 @@ Robert R. Cargill, *Qumran through (Real) Time: A Virtual Reconstruction of Qumr
 - Nothing on the gorge features above the site: the natural basin, the rock-cut tunnel, fissures, a cairn or a basin named for Solomon.
 - No stratified date for the dam, the intake or any channel segment.
 - No link between any Copper Scroll entry and a Qumran locus.
+
+## p. 385 read — 22 October 2026
+
+Ilan & Amit 2002 p. 385 was read ([record](../research/sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)). It says "The first system may belong to the Iron Age fortress (8th-7th c. B.C.)" and dates "the aqueduct seen today" to "about the time of Herod Archelaus". INFERENCE: Cargill's citation (n. 339) is partly supported: the Iron Age is offered for a possible first system only. Stacey's Archelaus citation is supported. The dam itself is a reconstruction ("No remains of an installation survive", pp. 381–382).

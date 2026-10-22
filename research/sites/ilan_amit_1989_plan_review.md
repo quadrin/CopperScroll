@@ -82,3 +82,12 @@ HathiTrust's full-text search of *The Aqueducts of Israel* (search-only copy) wa
 ## Original figures archived — 2 October 2026
 
 Recovered the earlier supplied attachment from its recorded file ID. [Fig. 1, p. 283, and Fig. 7, p. 287](https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/ilan-amit1989/README.md) are archived with captions, scale/orientation, source hash and crop bounds. Fig. 7 is L. Ritmeyer’s settlement reconstruction. This recovery does not add a new original-source target or test.
+
+## Ilan & Amit 2002 text read — 22 October 2026
+
+The 2002 chapter (pp. 381–386) was read from the owner's NLI photos ([record](../sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)).
+
+- EVIDENCE: the 2002 text describes nos. 2, 3, 4, 8–13, 15, 16 and 19 as this review does; the 1989 and 2002 numbers agree (INFERENCE). "The phrase 'point 16' does not occur in the chapter" (above) remains true of the wording; the text does use "fig. 1 no. 16" for the right-angle turn.
+- EVIDENCE (pp. 381–382): dam no. 4 is reconstructed only ("It seems that a dam was built"; "No remains of an installation survive").
+- EVIDENCE (p. 385): the "low dam" that catches run-off is "At its last turn" — point 19, as in this review's table — not at point 16. The earlier sentence above, "a low dam catching run-off for the earlier channel", reports Stacey's reading; corrected 22 Oct: the authors link the wall to no earlier channel.
+- EVIDENCE (p. 385): the visible aqueduct dates to "about the time of Herod Archelaus, 4 B.C.-A.D. 6", possibly rebuilding a Hasmonean aqueduct; "The first system may belong to the Iron Age fortress".
