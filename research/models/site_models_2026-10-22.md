@@ -60,3 +60,19 @@ Later on 22 October the two new models were placed in their real setting, so tha
 - ILLUSTRATIVE: the ground pads that level the Kidron valley floor in front of the tombs and raise the slope behind them to the rock surface (the terrain model is too coarse to show the scarp); grave rows inside the mapped cemetery areas (about 1 × 2 m, long axes east–west, or across the qibla in the Muslim cemetery; none where the ground under a grave falls more than 1.2 m); default path, wall and building sizes where OSM maps none (paths 2.4 m, city walls 12 m, gate buildings 9 m, buildings 6.5 m).
 - Second pass (the setting still looked bare): mapped roads (asphalt, 3.5–8 m wide by class), 142 + 154 mapped single trees, trees about 7 m apart in mapped woods (pines) and orchards (olives), and green ground in mapped woods, orchards and grass, smooth and in blocks. At the Kidron the rock pad behind the façades now runs 14 m south past Zechariah, and a shoulder further back covers the north side, where the scarp bends east towards Absalom; paths are not draped where the ground is steeper than 45°. ILLUSTRATIVE: tree sizes and the planted trees' places.
 - Display: both models now keep the place frame (no recentring). The Minecraft builds get rings: 1 m blocks to ±304 m with the mapped surroundings in blocks (paths and stairs as paved ground, graves, walls, buildings) and 8 m blocks of terrain to ±1,152 m.
+
+## Mapped surroundings for six more sites
+
+Later still on 22 October the same treatment was given to the other models drawn in metres, so that they stand in modern terrain among today's mapped features instead of on an isolated bench. Data: five more OpenStreetMap extracts (ODbL; [record](../assets/plans/osm-context-2026-10-22/README.md)) and five more Mapterhorn patches (manifests in `../assets/plans/atlas-explorer/terrain-wide/`). No reading, identification, coordinate of a Copper Scroll candidate, rating or outcome count changes.
+
+| Model | Placement (INFERENCE) | Uncertainty |
+|---|---|---|
+| Qumran settlement (`qumran-settlement`) | traced frame centred on the mapped settlement outline (99.7 × 142.8 m), unturned | some tens of metres; bearing the source's |
+| Bethesda (`bethesda-pools`) | the dam on the mapped excavation area (82.6 × 51.6 m), unturned | about 25 m; bearing assumed, as before |
+| Golden Gate (`east-gate-warren`) | gatehouse on the mapped Golden Gate building, turned 5.5° to its long sides | a few metres: Warren's gatehouse 24.8 × 17.3 m, mapped building 27 × 17 m |
+| Jericho pools (`jericho-early`, `jericho-late`) | not registered: at the site anchor | about ±300 m |
+| Gerizim (`gerizim-precinct`) | not registered: at the anchor on the summit, the summit platform on the modern summit | the anchor's |
+| Hyrcania (`hyrcania-waterworks`) | not registered: at the anchor, unturned (no north arrow in the source) | about ±200 m, bearing unknown |
+
+- ILLUSTRATIVE: each model's levelled ground where its display bench meets the modern terrain (at Hyrcania a flat area on the hill); the confined pads that keep Warren's Haram surface and the ground at the wall's foot at the Golden Gate.
+- Not done, and why: the relative-unit models (Qumran aqueduct and Reeder plan, Jericho Area AC, Siloam receiver, Doq) are not drawn at a known scale, so mapped surroundings in metres would mislead; Abu Saraj IV/17 has no position.
