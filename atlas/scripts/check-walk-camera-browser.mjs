@@ -13,11 +13,13 @@ const files=new Map([
  ['/three.core.js',readFileSync(new URL('../node_modules/three/build/three.core.js',import.meta.url))],
  ...['Octree','Capsule'].map(name=>[`/math/${name}.js`,readFileSync(new URL(`../node_modules/three/examples/jsm/math/${name}.js`,import.meta.url))]),
 ]);
-for(const name of ['atlas-map-walk','atlas-walk-physics'])files.set('/'+name,ts.transpileModule(readFileSync(name==='atlas-map-walk'&&process.env.ATLAS_WALK_SOURCE?process.env.ATLAS_WALK_SOURCE:new URL(`../app/${name}.ts`,import.meta.url),'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText);
-const html=`<!doctype html><style>html,body,#map{margin:0;width:100%;height:100%}canvas{outline:0}</style><div id="map"></div>
+for(const name of ['atlas-map-walk','atlas-walk-physics','atlas-walk-signs'])files.set('/'+name,ts.transpileModule(readFileSync(name==='atlas-map-walk'&&process.env.ATLAS_WALK_SOURCE?process.env.ATLAS_WALK_SOURCE:new URL(`../app/${name}.ts`,import.meta.url),'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText);
+// The sign styles from the app, so that card sizes and overlap are as in the atlas.
+const signStyle=readFileSync(new URL('../app/atlas-map-unified.css',import.meta.url),'utf8').split('\n').filter(line=>line.includes('.walk-sign')).join('\n');
+const html=`<!doctype html><style>html,body,#map{margin:0;width:100%;height:100%}canvas{outline:0}${signStyle}</style><div id="map"></div>
 <script type="importmap">{"imports":{"three":"/three.js","three/addons/math/Octree.js":"/math/Octree.js","three/addons/math/Capsule.js":"/math/Capsule.js","maplibre-gl":"/maplibre-gl.mjs"}}</script>
 <script type="module">
-import * as T from 'three';import * as maplibregl from 'maplibre-gl';import {startMapWalk} from '/atlas-map-walk';import {createWalkWorld} from '/atlas-walk-physics';
+import * as T from 'three';import * as maplibregl from 'maplibre-gl';import {startMapWalk} from '/atlas-map-walk';import {createWalkWorld} from '/atlas-walk-physics';import {createWalkSigns} from '/atlas-walk-signs';
 const {Map,MercatorCoordinate}=maplibregl,anchor=[35.45,31.74],origin=MercatorCoordinate.fromLngLat(anchor),scale=origin.meterInMercatorCoordinateUnits();
 const map=new Map({container:'map',style:{version:8,sources:{dem:{type:'raster-dem',tiles:['http://walk.test/dem/{z}/{x}/{y}.png'],tileSize:256,encoding:'terrarium',maxzoom:12}},layers:[{id:'bg',type:'background',paint:{'background-color':'#dccbaa'}}]},center:anchor,zoom:18,pitch:60,maxZoom:22,maxPitch:85,attributionControl:false});
 await new Promise(resolve=>map.once('load',resolve));map.setTerrain({source:'dem',exaggeration:1});
@@ -26,10 +28,15 @@ const root=new T.Group(),ground=new T.Mesh(new T.BoxGeometry(400,.2,400),new T.M
 const world=createWalkWorld(root);let base=-183;
 const site={model:{walkStart:{position:[0,15],bearing:0,pitch:86}},span:100,collisionWorld:()=>world,baseElevation:()=>base,setWalker:()=>map.triggerRepaint(),location:(x,z)=>{const p=new MercatorCoordinate(origin.x+x*scale,origin.y+z*scale).toLngLat();return [p.lng,p.lat];},local:(lng,lat)=>{const p=MercatorCoordinate.fromLngLat([lng,lat]);return [(p.x-origin.x)/scale,(p.y-origin.y)/scale];}};
 window.testMap=map;window.cameraSamples=[];
+// Feature signs 10 m ahead of the start, 32 m ahead and to the right, and 55 m ahead (beyond range).
+const sign=(id,x,z)=>({id,name:id,source:'Source p. 1',status:'Observed',statusKey:'observed',drawing:null,at:new T.Vector3(x,1.6,z)});
+const signs=createWalkSigns(map.getContainer(),[sign('near',0,5),sign('mid',12,-15),sign('far',0,-40)]);window.signProbe=[];
 map.addLayer({id:'camera-probe',type:'custom',renderingMode:'3d',render(gl,args){
- const d=map.getCanvas().dataset;if(!d.walkPosition)return;
+ const d=map.getCanvas().dataset;if(!d.walkPosition){signs.update(null);return;}
  const o=MercatorCoordinate.fromLngLat(anchor,base+.2),frame=new T.Matrix4().makeTranslation(o.x,o.y,o.z).scale(new T.Vector3(scale,-scale,scale)).multiply(new T.Matrix4().makeRotationX(Math.PI/2));
  const projection=new T.Matrix4().fromArray(args.defaultProjectionData.mainMatrix).multiply(frame),camera=new T.Vector4(0,0,1,0).applyMatrix4(projection.invert()),actual=new T.Vector3(camera.x/camera.w,camera.y/camera.w,camera.z/camera.w),eye=new T.Vector3(...d.walkPosition.split(',').map(Number));
+ signs.update(projection.clone().invert(),actual);const near=new T.Vector4(0,1.6,5,1).applyMatrix4(projection.clone().invert()),c=map.getCanvas();
+ window.signProbe.push({x:(near.x/near.w+1)/2*c.clientWidth,y:(1-near.y/near.w)/2*c.clientHeight});
  window.cameraSamples.push({error:actual.distanceTo(eye),pitch:map.getPitch(),zoom:map.getZoom(),feet:d.walkFeet,crouched:d.walkCrouch,sprint:d.walkSprint,fov:d.walkFov});
 }});
 window.begin=()=>{window.walk=startMapWalk(map,site,()=>{});};
@@ -50,6 +57,12 @@ try{
   const before=await page.evaluate(()=>({zoom:testMap.getZoom(),pitch:testMap.getPitch(),center:testMap.getCenter().toArray(),fov:testMap.getVerticalFieldOfView()}));
   await page.evaluate(()=>{begin();});
   await page.waitForFunction(()=>cameraSamples.length>2);
+  // Signs sit where the rendered matrix puts their anchors: shown at 10 m, fading at 32 m, absent beyond 40 m.
+  const signState=await page.evaluate(()=>{const get=id=>{const e=document.querySelector(`.walk-sign[data-feature="${id}"]`),m=e.style.transform.match(/translate3d\(([-\d.]+)px, ?([-\d.]+)px/);return {hidden:e.hidden,opacity:Number(e.style.opacity),x:m?+m[1]:null,y:m?+m[2]:null,events:getComputedStyle(e).pointerEvents};};return {near:get('near'),mid:get('mid'),far:get('far'),probe:signProbe.at(-1),shown:document.querySelector('.walk-signs').dataset.shown};});
+  assert.ok(!signState.near.hidden&&signState.near.opacity===1&&Math.hypot(signState.near.x-signState.probe.x,signState.near.y-signState.probe.y)<1,`A sign must sit on its anchor: ${JSON.stringify(signState)}`);
+  assert.ok(!signState.mid.hidden&&signState.mid.opacity>0&&signState.mid.opacity<1,`A sign 32 m away fades: ${JSON.stringify(signState.mid)}`);
+  assert.ok(signState.far.hidden&&signState.shown==='near,mid','A sign beyond 40 m is not shown');
+  assert.equal(signState.near.events,'none','Signs take no pointer events');
   // Reproduce a missing DEM tile while the physical body remains grounded.
   await page.evaluate(()=>{window.originalTerrainSample=testMap.terrain.getElevationForLngLatZoom;testMap.terrain.getElevationForLngLatZoom=()=>0;walk.press('shift');});
   await page.waitForFunction(()=>cameraSamples.at(-1)?.crouched==='true');
@@ -74,8 +87,9 @@ try{
   await page.evaluate(()=>{testMap.terrain.getElevationForLngLatZoom=originalTerrainSample;walk.stop();});
   const after=await page.evaluate(()=>({zoom:testMap.getZoom(),pitch:testMap.getPitch(),center:testMap.getCenter().toArray(),fov:testMap.getVerticalFieldOfView()}));
   assert.deepEqual(after,before,'Exit must restore the overhead view and original FOV');
+  await page.waitForFunction(()=>document.querySelector('.walk-signs')?.hidden===true);
   await page.evaluate(()=>testMap.jumpTo({zoom:17,pitch:40}));
   assert.equal(await page.evaluate(()=>testMap.getPitch()),40,'Map camera ownership must be released on exit');
-  assert.deepEqual(errors,[]);console.log(`${mobile?'Phone':'Desktop'} rendered camera passed: missing DEM, crouch, sprint/FOV, jump, look, delayed elevation, resize, competing camera command and exit (${samples.length} frames).`);await page.close();
+  assert.deepEqual(errors,[]);console.log(`${mobile?'Phone':'Desktop'} rendered camera passed: missing DEM, crouch, sprint/FOV, jump, look, delayed elevation, resize, competing camera command, feature signs and exit (${samples.length} frames).`);await page.close();
  }
 }finally{await browser.close();}

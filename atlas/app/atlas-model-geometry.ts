@@ -6,13 +6,14 @@ import type { SitePlan } from "./atlas-explorer-model";
 import { createSiteMaterials, cloneSiteMaterial, chippedBlock } from './atlas-site-materials';
 import { decodeRaster, elementPoints, rasterRectangles, type TracedElement, type TracedPlan } from './atlas-traced';
 import tracedData from './atlas-traced-plans.json';
-import type { TerrainPatch } from './atlas-model-landscape';
+import type { TerrainPatch, LandscapePad } from './atlas-model-landscape';
 
 const traced=tracedData as unknown as Record<string,TracedPlan>;
 // Illustrative heights for traced plans, used only where no height is published.
 export const TRACED_HEIGHTS={ruin:.9,wall:3.2,column:3.6,columnBase:.4,depth:2,dashed:.12,podium:1};
 // `context`: the mapped surroundings of a plan placed in its setting (atlas/public/context), when loaded.
-export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFeature[]};
+// `pads`: extra ground pads in the model's frame for one view only (the Ancient ground view's published levels, atlas-ancient-ground.ts).
+export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFeature[];pads?:LandscapePad[]};
 // How a plan that has no registration of its own meets its mapped setting: the model point (or marker)
 // that goes onto the mapped target or the place anchor, the model point (or marker) where model height
 // `datumY` meets the modern terrain, and whether its display bench is kept around it.
@@ -633,6 +634,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
  roof.visible=false;
  const [gx,gz]=placeFrame??[0,0],bounds=new T.Box3().setFromObject(root);bounds.expandByPoint(new T.Vector3(gx-ground.w/2,-1,gz-ground.d/2));bounds.expandByPoint(new T.Vector3(gx+ground.w/2,1,gz+ground.d/2));const center=placeFrame?new T.Vector3():bounds.getCenter(new T.Vector3());
  root.position.set(-center.x,0,-center.z);markers.forEach(p=>{p.x-=center.x;p.z-=center.z});
+ if(options.pads)ground.pads.push(...options.pads);
  const osm=placeFrame?siteContext(plan.id):undefined,features=osm?options.context:undefined;if(features){ground.paved=pavedIndex(features);ground.green=greenIndex(features);}
  const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block,options.terrain);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;context.mesh.userData.siteContext='ground';root.add(context.mesh);context.details.position.set(center.x,0,center.z);context.details.userData.siteContext='details';root.add(context.details);
  if(osm&&features){

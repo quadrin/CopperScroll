@@ -8,6 +8,24 @@ const origin=process.env.ATLAS_TEST_ORIGIN||'http://127.0.0.1:5173/CopperScroll/
 const normalMotion=process.env.ATLAS_TEST_MOTION==='normal';
 const {places}=JSON.parse(readFileSync(new URL('../app/atlas-data.json',import.meta.url),'utf8'));
 const mapped=places.filter(p=>p.lat!==null&&p.lon!==null);
+const sitePlans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
+const signTag={'Reported remains':'Observed','Excavated locus':'Observed','Area on the general plan':'Observed','Published reconstruction':'Reconstruction','Proposed scroll association':'Proposed association','Historical survey context':'Survey context'};
+// A sign at eye level shows the feature's name, its first source and its status tag; it takes no clicks,
+// and the Signs button in the walk controls turns the signs off and on.
+async function checkSigns(page,planId){
+ await page.waitForFunction(()=>document.querySelector('.walk-signs')?.dataset.shown,{},{timeout:30000});
+ const shown=(await page.locator('.walk-signs').getAttribute('data-shown')).split(','),plan=sitePlans.find(p=>p.id===planId);
+ for(const id of shown){
+  const feature=plan.features.find(f=>f.id===id),text=await page.locator(`.walk-sign[data-feature="${id}"]`).innerText();
+  assert.ok(feature,`${planId}: sign for unknown feature ${id}`);
+  for(const part of [feature.label,feature.sources[0],signTag[feature.kind]])assert.ok(text.includes(part),`${planId}/${id}: the sign must show "${part}"`);
+ }
+ assert.ok(await page.locator(`.walk-sign[data-feature="${shown[0]}"]`).evaluate(e=>{const r=e.querySelector('.walk-sign-card').getBoundingClientRect(),hit=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return getComputedStyle(e).pointerEvents==='none'&&!e.contains(hit);}),'Signs must not take pointer events');
+ const toggle=page.getByRole('button',{name:'Signs',exact:true});assert.equal(await toggle.getAttribute('aria-pressed'),'true','Signs are on by default');
+ await toggle.click();await page.waitForFunction(()=>document.querySelector('.walk-signs')?.hidden===true);
+ await toggle.click();await page.waitForFunction(()=>!document.querySelector('.walk-signs')?.hidden&&document.querySelector('.walk-signs').dataset.shown,{},{timeout:30000});
+ return shown;
+}
 // Controlled Terrarium DEM at -183 m catches sea-level camera/placement errors.
 const negativeTerrain=readFileSync(new URL('./fixtures/negative-terrain.png',import.meta.url));
 const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
@@ -42,11 +60,13 @@ try {
   // One click on the figure enters the block world at eye level; one click leaves it.
   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true');
+  await checkSigns(page,'qumran-ilan');
   const blockStart=await page.locator('.maplibregl-canvas').getAttribute('data-walk-position');
   if(mobile){const forward=page.getByRole('button',{name:'Forward',exact:true}),r=await forward.boundingBox();await page.mouse.move(r.x+r.width/2,r.y+r.height/2);await page.mouse.down();try{await page.waitForFunction(p=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition!==p,blockStart,{timeout:10000});}finally{await page.mouse.up();}}
   else{await page.locator('.maplibregl-canvas').focus();await page.keyboard.down('w');try{await page.waitForFunction(p=>document.querySelector('.maplibregl-canvas')?.dataset.walkPosition!==p,blockStart,{timeout:10000});}finally{await page.keyboard.up('w');}}
   await page.getByRole('button',{name:'Back to map',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='false');
+  await page.waitForFunction(()=>document.querySelector('.walk-signs')?.hidden!==false,{},{timeout:10000});
   // The detailed geometry checks below use the smooth source model.
   const blockVertices=await page.locator('.maplibregl-canvas').getAttribute('data-site-vertices');
   await caption.getByRole('button',{name:'Smooth',exact:true}).click();
@@ -176,8 +196,43 @@ try {
   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();await page.getByRole('status').filter({hasText:'no source-based 3D coverage'}).waitFor();
   await page.getByRole('button',{name:'Dismiss walking message'}).click();
   await page.getByRole('tab',{name:'Satellite',exact:true}).click();await page.getByRole('status').filter({hasText:'Satellite imagery could not load'}).waitFor();await page.getByRole('tab',{name:'Map',exact:true}).click();
+  if(!mobile){
+   // Ancient ground at the Kidron monuments: today's mapped features are not drawn and the caption says the
+   // ground is today's terrain. The block builds include those features, so Blocks is drawn smooth there.
+   const caption=page.locator('.map-site-caption'),ground=caption.getByRole('group',{name:'Ground',exact:true}),dataset=()=>page.evaluate(()=>({...document.querySelector('.maplibregl-canvas')?.dataset}));
+   const rebuilt=async(action,drawn=true)=>{await page.evaluate(()=>{const s=document.querySelector('[data-site-state]');window.siteStates=[];window.siteStateWatch?.disconnect();window.siteStateWatch=new MutationObserver(()=>window.siteStates.push(s.dataset.siteState));window.siteStateWatch.observe(s,{attributes:true,attributeFilter:['data-site-state']});});await action();await page.waitForFunction(drawn=>window.siteStates.includes('loading')&&document.querySelector('[data-site-state]')?.dataset.siteState==='ready'&&(!drawn||Number(document.querySelector('.maplibregl-canvas')?.dataset.siteFrames)>1),drawn,{timeout:120000});};
+   const todayNote=/The ground is today’s terrain, shown without modern features; it is not an ancient surface\./;
+   await page.getByLabel('Browse all sites',{exact:true}).click();await page.getByRole('searchbox',{name:'Search map sites'}).fill('Kidron');
+   await rebuilt(()=>page.getByRole('button',{name:/^Kidron monuments/}).click(),false);
+   assert.equal(await page.locator('[data-site-plan]').getAttribute('data-site-plan'),'kidron-bene-hezir');
+   await page.getByRole('button',{name:'Zoom to site',exact:true}).click();await caption.waitFor();
+   await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.siteFrames)>1,{},{timeout:60000});
+   assert.equal(await ground.getByRole('button',{name:'Today',exact:true}).getAttribute('aria-pressed'),'true','Today is the default ground view');
+   assert.doesNotMatch(await caption.innerText(),todayNote);
+   const today=Number((await dataset()).siteVertices);
+   await rebuilt(()=>ground.getByRole('button',{name:'Ancient ground',exact:true}).click());
+   assert.match(await caption.innerText(),todayNote,'The Ancient ground caption says the ground is today’s terrain');
+   const bare=Number((await dataset()).siteVertices);
+   assert.ok(bare<today*.8,`Ancient ground must leave out the mapped graves, walls, buildings and trees (${bare} vs ${today} vertices)`);
+   await page.screenshot({path:'/tmp/copperscroll-kidron-ancient-ground-desktop.png'});
+   await caption.getByRole('button',{name:'Sources & assumptions',exact:true}).click();
+   const sources=page.getByRole('complementary',{name:'Site reference panel'});await sources.getByText('Model sources and assumptions').click();
+   assert.match(await sources.innerText(),/Ancient ground view: today’s mapped features[\s\S]*it is not an ancient surface/);
+   await page.getByRole('button',{name:'Close site reference panel'}).click();
+   await rebuilt(()=>caption.getByRole('button',{name:'Blocks',exact:true}).click());
+   assert.match(await caption.innerText(),/drawn smooth/);assert.doesNotMatch(await caption.innerText(),/built in Minecraft/,'Blocks include today’s features, so Ancient ground is drawn smooth');
+   assert.equal(Number((await dataset()).siteVertices),bare,'Ancient ground in Blocks is the same smooth model');
+   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
+   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true',{},{timeout:120000});
+   const kidronSigns=await checkSigns(page,'kidron-bene-hezir');
+   if(kidronSigns.includes('zechariah'))assert.match(await page.locator('.walk-sign[data-feature="zechariah"]').innerText(),/Height in the model is illustrative\./);
+   await page.screenshot({path:'/tmp/copperscroll-kidron-ancient-signs-desktop.png'});
+   await page.getByRole('button',{name:'Back to map',exact:true}).click();await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='false');
+   await rebuilt(()=>ground.getByRole('button',{name:'Today',exact:true}).click());
+   assert.match(await caption.innerText(),/built in Minecraft/,'Today returns to the block build');assert.doesNotMatch(await caption.innerText(),todayNote);
+  }
   assert.deepEqual(errors,[]);
-  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, 3D geometry, persistent canvas, inline references, masonry collision, tap/held jumping, crouching, sprint controls/FOV, coverage gaps and provider failures (${normalMotion?'normal':'reduced'} motion).`);
+  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, 3D geometry, persistent canvas, inline references, masonry collision, tap/held jumping, crouching, sprint controls/FOV, coverage gaps, provider failures, walk signs${mobile?'':' and the Kidron Ancient ground view'} (${normalMotion?'normal':'reduced'} motion).`);
   await page.close();
   }catch(error){console.error(await page.evaluate(()=>({viewport:innerWidth,route:location.hash,plan:document.querySelector('[data-site-plan]')?.dataset.sitePlan,state:document.querySelector('[data-site-state]')?.dataset.siteState,walking:document.querySelector('[data-walking]')?.dataset.walking,canvas:{...document.querySelector('.maplibregl-canvas')?.dataset},events:window.atlasTestEvents})));await page.screenshot({path:`/tmp/copperscroll-map-failure-${mobile?'phone':'desktop'}.png`});throw error;}
  }
