@@ -49,7 +49,7 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    scene.add(model.root);scene.add(sky.mesh);
    const span=Math.max(model.framing.getSize(new T.Vector3()).x,model.framing.getSize(new T.Vector3()).z);
    scene.add(new T.HemisphereLight('#dbe7ef','#756a52',1.15));
-   const sun=new T.DirectionalLight('#fff1d8',3.1);sun.position.set(-span*.8,span*1.3,span*.65);sun.castShadow=true;
+   const sun=new T.DirectionalLight('#fff1d8',3.1),middle=model.framing.getCenter(new T.Vector3());sun.position.set(middle.x-span*.8,span*1.3,middle.z+span*.65);sun.target.position.set(middle.x,0,middle.z);scene.add(sun.target);sun.castShadow=true;
    const reach=Math.max(35,span*.75);Object.assign(sun.shadow.camera,{left:-reach,right:reach,top:reach,bottom:-reach,near:.5,far:span*5});sun.shadow.camera.updateProjectionMatrix();
    sun.shadow.mapSize.setScalar(window.matchMedia('(max-width: 700px)').matches?1024:2048);sun.shadow.bias=-.00015;sun.shadow.normalBias=Math.max(.025,span/2500);sun.shadow.radius=2;scene.add(sun);
    renderer=new T.WebGLRenderer({canvas:map.getCanvas(),context:gl});renderer.autoClear=false;
@@ -60,7 +60,7 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    runtime={model,style:build?'minecraft':'smooth',span,anchor,baseElevation,location,local,meshCount,vertexCount,renderedFrames:0,
     collisionWorld(){if(collisionDirty||!world){world=createWalkWorld(model!.root);collisionDirty=false;}return world;},
     setWalker(pose){avatar.update(pose);map.triggerRepaint();},
-    focus(featureId){const point=featureId?model?.markers.get(featureId):undefined;const center=point?location(point.x,point.z):anchor;const zoom=featureId?22:Math.max(17,Math.min(21.2,21-Math.log2(Math.max(span,20)/40)));const view={center,zoom,pitch:55,bearing:map.getBearing(),padding:{top:80,bottom:140,left:30,right:30}};if(map.getTerrain()){map.stop();map.jumpTo({...view,elevation:baseElevation()});}else map.flyTo({...view,duration:window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:1000});},
+    focus(featureId){const point=featureId?model?.markers.get(featureId):undefined,frame=model?.framing.getCenter(new T.Vector3());const center=point?location(point.x,point.z):frame?location(frame.x,frame.z):anchor;const zoom=featureId?22:Math.max(17,Math.min(21.2,21-Math.log2(Math.max(span,20)/40)));const view={center,zoom,pitch:55,bearing:map.getBearing(),padding:{top:80,bottom:140,left:30,right:30}};if(map.getTerrain()){map.stop();map.jumpTo({...view,elevation:baseElevation()});}else map.flyTo({...view,duration:window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:1000});},
     setFeature(id){model?.root.traverse(o=>{const mesh=o as T.Mesh;if(!mesh.material)return;for(const m of Array.isArray(mesh.material)?mesh.material:[mesh.material]){const mat=m as T.MeshStandardMaterial;if(mat.emissive){mat.emissive.set(mesh.userData.featureId===id?'#aa6c31':'#000000');mat.emissiveIntensity=.2;}}});map.triggerRepaint();}
    };map.on('terrain',terrainChanged);map.on('sourcedata',terrainLoaded);onReady(runtime);map.triggerRepaint();
   }catch(e){onFailure(e instanceof Error?e.message:'Site geometry could not load.');}},

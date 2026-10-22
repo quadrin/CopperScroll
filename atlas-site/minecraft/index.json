@@ -1025,19 +1025,22 @@
    "plan": "kidron-bene-hezir",
    "layer": "remains",
    "ring": null,
-   "surroundings": null,
+   "surroundings": [
+    "kidron-bene-hezir~ring1",
+    "kidron-bene-hezir~ring2"
+   ],
    "terrainPlace": null,
-   "bytes": 69366,
+   "bytes": 322355,
    "blockSize": 0.25,
    "origin": [
-    -48,
-    -2.25,
-    -60
+    -67,
+    -19.75,
+    -48
    ],
    "blocks": [
-    384,
-    92,
-    480
+    284,
+    112,
+    444
    ],
    "world": {
     "x0": 18432,
@@ -1046,45 +1049,49 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 4387,
-    "filled": 2262611
+    "commands": 38522,
+    "filled": 7424587
    },
    "readback": {
-    "blocks": 16957440,
+    "blocks": 14122752,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 9420800
+    "missingSkyLight": 2366528
    },
    "counts": {
-    "coarse_dirt": 1434976,
-    "cut_sandstone": 8084,
-    "cut_sandstone_slab[type=bottom]": 180,
-    "smooth_stone": 138,
-    "smooth_stone_slab[type=bottom]": 143,
-    "stone": 816685,
-    "stone_slab[type=bottom]": 1099,
-    "stone_slab[type=top]": 1306
+    "coarse_dirt": 841453,
+    "cut_sandstone": 33665,
+    "cut_sandstone_slab[type=bottom]": 4488,
+    "smooth_stone": 63952,
+    "smooth_stone_slab[type=bottom]": 9331,
+    "smooth_stone_slab[type=top]": 2,
+    "stone": 6469778,
+    "stone_slab[type=bottom]": 846,
+    "stone_slab[type=top]": 1072
    },
-   "quads": 12807
+   "quads": 54886
   },
   "kidron-bene-hezir@avigad": {
    "file": "kidron-bene-hezir@avigad.bin.gz",
    "plan": "kidron-bene-hezir",
    "layer": "avigad",
    "ring": null,
-   "surroundings": null,
+   "surroundings": [
+    "kidron-bene-hezir~ring1",
+    "kidron-bene-hezir~ring2"
+   ],
    "terrainPlace": null,
-   "bytes": 77055,
+   "bytes": 328495,
    "blockSize": 0.25,
    "origin": [
-    -48,
-    -2.25,
-    -60
+    -67,
+    -19.75,
+    -48
    ],
    "blocks": [
-    384,
-    92,
-    480
+    284,
+    112,
+    444
    ],
    "world": {
     "x0": 19456,
@@ -1093,48 +1100,52 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 5000,
-    "filled": 2262641
+    "commands": 38892,
+    "filled": 7424471
    },
    "readback": {
-    "blocks": 16957440,
+    "blocks": 14122752,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 9420800
+    "missingSkyLight": 2354240
    },
    "counts": {
-    "coarse_dirt": 1434937,
-    "cut_sandstone": 8084,
-    "cut_sandstone_slab[type=bottom]": 180,
-    "smooth_sandstone": 2073,
-    "smooth_sandstone_slab[type=bottom]": 140,
-    "smooth_sandstone_slab[type=top]": 23,
-    "smooth_stone": 138,
-    "smooth_stone_slab[type=bottom]": 143,
-    "stone": 814315,
-    "stone_slab[type=bottom]": 1180,
-    "stone_slab[type=top]": 1428
+    "coarse_dirt": 841417,
+    "cut_sandstone": 33665,
+    "cut_sandstone_slab[type=bottom]": 4488,
+    "smooth_sandstone": 2152,
+    "smooth_sandstone_slab[type=bottom]": 138,
+    "smooth_sandstone_slab[type=top]": 17,
+    "smooth_stone": 63952,
+    "smooth_stone_slab[type=bottom]": 9331,
+    "smooth_stone_slab[type=top]": 2,
+    "stone": 6467332,
+    "stone_slab[type=bottom]": 838,
+    "stone_slab[type=top]": 1139
    },
-   "quads": 14294
+   "quads": 55959
   },
   "temple-great-sea": {
    "file": "temple-great-sea.bin.gz",
    "plan": "temple-great-sea",
    "layer": null,
    "ring": null,
-   "surroundings": null,
+   "surroundings": [
+    "temple-great-sea~ring1",
+    "temple-great-sea~ring2"
+   ],
    "terrainPlace": null,
-   "bytes": 18536,
+   "bytes": 19948,
    "blockSize": 0.5,
    "origin": [
-    -35,
-    -15.5,
-    -42
+    18,
+    -25.5,
+    121
    ],
    "blocks": [
-    140,
-    32,
-    168
+    142,
+    46,
+    170
    ],
    "world": {
     "x0": 20480,
@@ -1143,26 +1154,209 @@
    },
    "masonry": "coursed",
    "fills": {
-    "commands": 920,
-    "filled": 609147
+    "commands": 1134,
+    "filled": 782101
    },
    "readback": {
-    "blocks": 752640,
+    "blocks": 1110440,
     "mismatches": 0,
     "examples": [],
     "missingSkyLight": 0
    },
    "counts": {
-    "coarse_dirt": 81199,
-    "smooth_quartz": 13804,
-    "smooth_quartz_slab[type=bottom]": 303,
-    "smooth_stone": 24,
-    "smooth_stone_slab[type=bottom]": 1,
-    "stone": 513561,
-    "stone_slab[type=bottom]": 224,
-    "stone_slab[type=top]": 31
+    "coarse_dirt": 78349,
+    "smooth_quartz": 8710,
+    "smooth_quartz_slab[type=bottom]": 5238,
+    "stone": 677842,
+    "stone_brick_slab[type=bottom]": 2374,
+    "stone_bricks": 6029,
+    "stone_slab[type=bottom]": 72,
+    "stone_slab[type=top]": 3487
    },
-   "quads": 3645
+   "quads": 3834
+  },
+  "kidron-bene-hezir~ring1": {
+   "file": "kidron-bene-hezir~ring1.bin.gz",
+   "plan": "kidron-bene-hezir",
+   "layer": null,
+   "ring": 0,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 1172821,
+   "blockSize": 1,
+   "origin": [
+    -304,
+    -46,
+    -304
+   ],
+   "blocks": [
+    608,
+    130,
+    608
+   ],
+   "world": {
+    "x0": 24576,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "ashlar",
+   "fills": {
+    "commands": 126560,
+    "filled": 23242210
+   },
+   "readback": {
+    "blocks": 48056320,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 13104128
+   },
+   "counts": {
+    "coarse_dirt": 645336,
+    "cut_sandstone": 63797,
+    "cut_sandstone_slab[type=bottom]": 13722,
+    "cut_sandstone_slab[type=top]": 3003,
+    "smooth_stone": 63843,
+    "smooth_stone_slab[type=bottom]": 26741,
+    "stone": 22425768
+   },
+   "quads": 194874
+  },
+  "kidron-bene-hezir~ring2": {
+   "file": "kidron-bene-hezir~ring2.bin.gz",
+   "plan": "kidron-bene-hezir",
+   "layer": null,
+   "ring": 1,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 242657,
+   "blockSize": 8,
+   "origin": [
+    -1152,
+    -104,
+    -1152
+   ],
+   "blocks": [
+    288,
+    27,
+    288
+   ],
+   "world": {
+    "x0": 25600,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "ashlar",
+   "fills": {
+    "commands": 13574,
+    "filled": 1027149
+   },
+   "readback": {
+    "blocks": 2239488,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 110592
+   },
+   "counts": {
+    "coarse_dirt": 14423,
+    "cut_sandstone": 27,
+    "cut_sandstone_slab[type=bottom]": 17,
+    "smooth_stone": 3,
+    "stone": 997791,
+    "stone_slab[type=bottom]": 14888
+   },
+   "quads": 40988
+  },
+  "temple-great-sea~ring1": {
+   "file": "temple-great-sea~ring1.bin.gz",
+   "plan": "temple-great-sea",
+   "layer": null,
+   "ring": 0,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 692156,
+   "blockSize": 1,
+   "origin": [
+    -304,
+    -80,
+    -304
+   ],
+   "blocks": [
+    608,
+    114,
+    608
+   ],
+   "world": {
+    "x0": 26624,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "coursed",
+   "fills": {
+    "commands": 71013,
+    "filled": 24905205
+   },
+   "readback": {
+    "blocks": 42141696,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 5024768
+   },
+   "counts": {
+    "coarse_dirt": 657266,
+    "smooth_stone": 11875,
+    "smooth_stone_slab[type=bottom]": 4717,
+    "stone": 23951281,
+    "stone_brick_slab[type=bottom]": 33417,
+    "stone_brick_slab[type=top]": 17557,
+    "stone_bricks": 229092
+   },
+   "quads": 109734
+  },
+  "temple-great-sea~ring2": {
+   "file": "temple-great-sea~ring2.bin.gz",
+   "plan": "temple-great-sea",
+   "layer": null,
+   "ring": 1,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 207214,
+   "blockSize": 8,
+   "origin": [
+    -1152,
+    -144,
+    -1152
+   ],
+   "blocks": [
+    288,
+    27,
+    288
+   ],
+   "world": {
+    "x0": 27648,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "coursed",
+   "fills": {
+    "commands": 12149,
+    "filled": 1074872
+   },
+   "readback": {
+    "blocks": 2239488,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 110592
+   },
+   "counts": {
+    "coarse_dirt": 15233,
+    "smooth_stone": 1,
+    "smooth_stone_slab[type=bottom]": 2,
+    "stone": 1044614,
+    "stone_brick_slab[type=bottom]": 16,
+    "stone_bricks": 11,
+    "stone_slab[type=bottom]": 14995
+   },
+   "quads": 35062
   }
  },
  "minecraft": {

@@ -2,8 +2,12 @@ import * as T from "three";
 import patches from "./atlas-model-terrain.json";
 import { cloneSiteMaterial, chippedBlock } from './atlas-site-materials';
 type Point=[number,number];
-export type LandscapePad={x:number;z:number;w:number;d:number;height:number;feather:number};
-export type LandscapeGround={w:number;d:number;holes:Point[][];pads:LandscapePad[]};
+// A pad sets the ground to a height inside a rectangle and feathers it out; `angle` turns the
+// rectangle as three.js rotation.y turns an object. A ground without a bench keeps the measured terrain.
+export type LandscapePad={x:number;z:number;w:number;d:number;height:number;feather:number;angle?:number};
+// `paved` names the block a column's top takes (a mapped path or stair) in the block export.
+// `focus` (model frame) centres the mesh's finest cells on the model when it is not at the anchor.
+export type LandscapeGround={w:number;d:number;holes:Point[][];pads:LandscapePad[];bench?:boolean;paved?:(x:number,z:number)=>string|null;focus?:Point};
 type Patch={lat:number;lon:number;anchorPrecision:string;extent:number;size:number;elevations:number[];centreElevation:number};
 export type TerrainPatch=Patch;
 const terrain=patches as Record<string,Patch>;
@@ -14,28 +18,42 @@ export function elevationAt(patch:Patch,x:number,z:number){
  const value=(x:number,y:number)=>patch.elevations[Math.min(y,patch.size-1)*patch.size+Math.min(x,patch.size-1)];
  return T.MathUtils.lerp(T.MathUtils.lerp(value(i,j),value(i+1,j),a),T.MathUtils.lerp(value(i,j+1),value(i+1,j+1),a),b)-patch.centreElevation;
 }
+// The terrain a model at this place is built on: a wider patch when one is loaded, else the 800 m default.
+export const placeTerrain=(placeId:string,wide?:Patch)=>wide??terrain[placeId];
 // A wider terrain patch, when one is loaded for the place, replaces the 800 m default.
 export function landscapeGround(ground:LandscapeGround,placeId:string,offset:Point,surface?:T.MeshStandardMaterial,stone?:T.MeshStandardMaterial,wide?:Patch){
- const patch=wide??terrain[placeId],radius=wide?wide.extent/2*.96:Math.min(380,Math.max(ground.w,ground.d)*1.7),n=128,positions:number[]=[],colours:number[]=[],indices:number[]=[],holes=ground.holes.map(h=>h.map(([x,z]):Point=>[x-offset[0],z-offset[1]]));
- const coordinate=(i:number)=>{const t=i/n*2-1;return Math.sign(t)*Math.pow(Math.abs(t),1.6)*radius};
+ const patch=wide??terrain[placeId],radius=wide?wide.extent/2*.96:Math.min(380,Math.max(ground.w,ground.d)*1.7),n=wide?224:128,positions:number[]=[],colours:number[]=[],indices:number[]=[],holes=ground.holes.map(h=>h.map(([x,z]):Point=>[x-offset[0],z-offset[1]]));
+ const [fx,fz]=ground.focus?[ground.focus[0]-offset[0],ground.focus[1]-offset[1]]:[0,0],power=ground.focus?2:1.6;
+ const coordinate=(i:number)=>{const t=i/n*2-1;return Math.sign(t)*Math.pow(Math.abs(t),power)*radius};
  const height=(x:number,z:number)=>{
   const source=patch?elevationAt(patch,x,z):Math.max(0,-z*.48)+1.5*Math.sin(x*.25)*Math.sin(z*.18);
-  const bench=1-smooth((Math.max(Math.abs(x)/(ground.w*.5),Math.abs(z)/(ground.d*.5))-1)/.6);
+  const bench=ground.bench===false?0:1-smooth((Math.max(Math.abs(x)/(ground.w*.5),Math.abs(z)/(ground.d*.5))-1)/.6);
   let y=T.MathUtils.lerp(source,-.28,bench);
-  for(const p of ground.pads){const distance=Math.max(Math.abs(x-(p.x-offset[0]))-p.w/2,Math.abs(z-(p.z-offset[1]))-p.d/2,0);y=T.MathUtils.lerp(y,p.height,1-smooth(distance/p.feather));}
+  for(const p of ground.pads){const dx=x-(p.x-offset[0]),dz=z-(p.z-offset[1]),c=Math.cos(p.angle??0),s=Math.sin(p.angle??0),distance=Math.max(Math.abs(dx*c-dz*s)-p.w/2,Math.abs(dx*s+dz*c)-p.d/2,0);y=T.MathUtils.lerp(y,p.height,1-smooth(distance/p.feather));}
   return y;
  };
  for(let j=0;j<=n;j++)for(let i=0;i<=n;i++){
-  const x=coordinate(i),z=coordinate(j),y=height(x,z);positions.push(x,y,z);
+  const x=fx+coordinate(i),z=fz+coordinate(j),y=height(x,z);positions.push(x,y,z);
   const ripple=Math.sin(x*.11)*Math.cos(z*.08)*.05,tone=T.MathUtils.clamp(.83+y/(radius*3)+ripple,.65,1.05);colours.push(tone,tone,tone,1-smooth((Math.hypot(x,z)/radius-.72)/.27));
  }
  function triangle(a:number,b:number,c:number){const x=(positions[a*3]+positions[b*3]+positions[c*3])/3,z=(positions[a*3+2]+positions[b*3+2]+positions[c*3+2])/3;if((x/radius)**2+(z/radius)**2>1||holes.some(h=>inside(x,z,h)))return;indices.push(a,b,c);}
  for(let j=0;j<n;j++)for(let i=0;i<n;i++){const a=j*(n+1)+i,b=a+1,c=a+n+1,d=c+1;triangle(a,c,b);triangle(b,c,d);}
  const geometry=new T.BufferGeometry();geometry.setAttribute("position",new T.Float32BufferAttribute(positions,3));geometry.setAttribute("color",new T.Float32BufferAttribute(colours,4));geometry.setIndex(indices);geometry.computeVertexNormals();
- const mat=surface?cloneSiteMaterial(surface):new T.MeshStandardMaterial({color:'#b5a384',roughness:1});mat.vertexColors=true;mat.side=T.DoubleSide;mat.transparent=true;mat.depthWrite=false;
+ const mat=surface?cloneSiteMaterial(surface):new T.MeshStandardMaterial({color:'#b5a384',roughness:1});mat.vertexColors=true;mat.side=T.DoubleSide;mat.transparent=true;
+ // A wide patch has hills that must hide what lies behind them; the small disc is only a bench.
+ mat.depthWrite=!!wide;
  const mesh=new T.Mesh(geometry,mat);mesh.receiveShadow=true;mesh.castShadow=false;mesh.renderOrder=-3;
  // The block export fills the ground column by column from these, not from triangles that cross a pool edge.
  mesh.userData.heightAt=height;mesh.userData.holes=holes;mesh.userData.radius=radius;
+ if(ground.paved){const paved=ground.paved;mesh.userData.pavedAt=(x:number,z:number)=>paved(x+offset[0],z+offset[1]);}
+ // The drawn surface itself (its triangles, not the sampled function), so draped context sits on it.
+ const cell=(x:number)=>{const t=Math.sign(x)*Math.pow(Math.min(1,Math.abs(x)/radius),1/power);return Math.floor(T.MathUtils.clamp((t+1)/2*n,0,n-1e-6));};
+ const vertex=(i:number,j:number)=>positions[(j*(n+1)+i)*3+1];
+ mesh.userData.surfaceAt=(x:number,z:number)=>{
+  const i=cell(x-fx),j=cell(z-fz),x0=fx+coordinate(i),x1=fx+coordinate(i+1),z0=fz+coordinate(j),z1=fz+coordinate(j+1),a=(x-x0)/(x1-x0||1),b=(z-z0)/(z1-z0||1);
+  const ya=vertex(i,j),yb=vertex(i+1,j),yc=vertex(i,j+1),yd=vertex(i+1,j+1);
+  return a+b<=1?ya+a*(yb-ya)+b*(yc-ya):yd+(1-a)*(yc-yd)+(1-b)*(yb-yd);
+ };
  const details=new T.Group();let seed=7841;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
  const rubble=new T.InstancedMesh(chippedBlock(1,.65,1,61),stone??new T.MeshStandardMaterial({color:'#a6997d',roughness:1}),650),o=new T.Object3D();
  for(let i=0;i<650;i++){

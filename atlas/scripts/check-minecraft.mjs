@@ -4,7 +4,7 @@ import {readFileSync,existsSync} from 'node:fs';
 import {gunzipSync} from 'node:zlib';
 import * as Three from 'three';
 import {loadModels} from './minecraft/load-models.mjs';
-import {buildSpecs,RINGS} from './minecraft/build-world.mjs';
+import {buildSpecs,ringsFor} from './minecraft/build-world.mjs';
 
 const dir=new URL('../public/minecraft/',import.meta.url),index=JSON.parse(readFileSync(new URL('index.json',dir),'utf8'));
 assert.equal(index.minecraft.edition,'Java Edition');
@@ -27,7 +27,7 @@ for(const spec of specs){
   assert.deepEqual([header.origin[0],header.origin[2],header.dims[0]*spec.size,header.dims[2]*spec.size],[-spec.half,-spec.half,2*spec.half,2*spec.half],`${spec.id}: ring extent`);
   continue;
  }
- if(plan.terrain==='wide')assert.ok(site.surroundings?.length===RINGS.length,`${spec.id}: lists its terrain rings`);
+ if(plan.terrain==='wide')assert.ok(site.surroundings?.length===ringsFor(plan.id).length,`${spec.id}: lists its terrain rings`);
  // Blocks carry plan feature ids; a traced plan's blocks may also carry its element ids.
  const features=new Set([...plan.features.map(f=>f.id),...(models.tracedPlans[plan.traced]?.elements.map(e=>e.id)??[])]);for(const f of header.features)assert.ok(features.has(f),`${spec.id}: feature ${f} is a plan feature or traced element`);
  // Ilan–Amit's basin 2 and the dam proposed at point 4 (copper marks the reconstruction).

@@ -40,6 +40,24 @@
       ],
       "sha256": "cce92a319e02ba50199a4701316aea68667cd278c268776ae172f8fc5da4929a",
       "kind": "project tracing over the source crop"
+    },
+    "haram-sw-corner.png": {
+      "box_full_res_px": [
+        2320,
+        2010,
+        2620,
+        2310
+      ],
+      "sha256": "6a287cb5b186d59eae048f1df5054f57d40665800c5665c4a2872ef41fed8729"
+    },
+    "haram-se-corner.png": {
+      "box_full_res_px": [
+        4466,
+        1995,
+        4766,
+        2295
+      ],
+      "sha256": "a2d9702f1c4c1d675fa791a66028a9b20e3e643cb49208a2e338932e648656e7"
     }
   },
   "scale": {
@@ -305,5 +323,18 @@
     ],
     "method": "extent of the plate's hatching (box blur radius 14 px, threshold 40/255), cistern VI and the tail toward IX cut off by fixed boxes; rows sampled every 12 px; Douglas-Peucker 5 px",
     "limits": "Warren draws the cavern as hatching without a firm edge, piers or the stair. The hatching may include rock around the chamber and the small chamber to the north-east; the edge is uncertain by about ±2 m."
+  },
+  "registration": {
+    "sw_corner_px": [
+      2471.1,
+      2161.2
+    ],
+    "se_corner_px": [
+      4616.5,
+      2145.5
+    ],
+    "what": "The Haram enclosure's south-west and south-east corners as drawn on the plate (the solid enclosure outline).",
+    "method": "Least-squares lines through the dark-pixel centres of the west, south and east enclosure lines next to each corner (rows or columns with 1–8 dark pixels), intersected. Line fits use 141–196 samples each.",
+    "used_by": "tools/build_osm_context.py great-sea: registers the temple-great-sea model to the OpenStreetMap corners (relation 5862584)."
   }
 }

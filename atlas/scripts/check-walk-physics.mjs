@@ -47,6 +47,21 @@ body=new WalkCharacter(()=>world,new T.Vector3());run(body,1);const stopAt=body.
 root=scene();block(root,0,0,-1,4,.5,2);world=createWalkWorld(root);body=new WalkCharacter(()=>world,new T.Vector3(0,0,2));run(body,.7);assert(body.feet.y>.49,'A half-metre slab must be stepped over');
 root=new T.Group();block(root,0,0,0,8,1,4);world=createWalkWorld(root);body=new WalkCharacter(()=>world,new T.Vector3(0,0,1));run(body,4,{...input,crouch:true});assert(body.feet.z>-2&&body.grounded,'Sneaking must stop at an unsupported ledge');
 root=scene();block(root,0,30,0,4,.2,4);world=createWalkWorld(root);body=new WalkCharacter(()=>world,new T.Vector3());run(body,1);run(body,3,{...input,forward:0});assert(body.feet.y<.03&&body.grounded,'A long fall must land on the ground rather than phase through it or reset above it');
+// Creative-mode flight (Minecraft Java): double-tap Space within 7 ticks toggles it; Space and
+// Shift climb and descend at 7.5 m/s; flying 10.89 m/s, sprint-flying 21.78 m/s; landing ends it.
+{
+ const keys=new WalkInput();keys.press(' ',0);keys.release(' ');keys.press(' ',200);assert(keys.read(0).fly,'Double-tap Space must toggle flight');assert(!keys.read(0).fly,'A flight toggle is read once');
+ keys.release(' ');keys.press(' ',1000);keys.release(' ');keys.press(' ',1500);assert(!keys.read(0).fly,'Two slow presses must not toggle flight');
+ keys.release(' ');keys.press('shift');assert(keys.read(0).descend,'Shift descends while flying');
+ root=scene();world=createWalkWorld(root);const still={...input,forward:0};
+ body=new WalkCharacter(()=>world,new T.Vector3());body.advance(1/120,{...still,fly:true});assert(body.flying,'Flight starts on the toggle');
+ run(body,1,{...still,jumpHeld:true});let y=body.feet.y;run(body,1,{...still,jumpHeld:true});const climb=body.feet.y-y;assert(Math.abs(climb-7.5)<.05,`Flying climb must be 7.5 m/s, got ${climb}`);measurements.flyClimb=+climb.toFixed(3);
+ run(body,1,still);y=body.feet.y;run(body,1,still);assert(Math.abs(body.feet.y-y)<.01&&body.flying,'Flight must hover without gravity');
+ run(body,1,{...still,crouch:true,descend:false});assert(Math.abs(body.feet.y-y)<.01,'A crouch toggle must not pull a flyer down; only held Shift descends');
+ for(const [name,intent,target] of [['fly',input,10.889],['sprintFly',{...input,sprint:true},21.778]]){run(body,3,intent);const at=body.feet;run(body,1,intent);const d=Math.hypot(body.feet.x-at.x,body.feet.z-at.z);assert(Math.abs(d-target)<.05,`${name}: expected ${target} m in one second, got ${d}`);measurements[name]=+d.toFixed(3);}
+ run(body,.5,still);y=body.feet.y;run(body,.5,{...still,descend:true});assert(y-body.feet.y>2.5,'Shift must descend');run(body,3,{...still,descend:true});assert(!body.flying&&body.grounded&&body.feet.y<.03,'Flying down onto the ground must land and end the flight');
+ body.advance(1/120,{...still,fly:true});run(body,1,{...still,jumpHeld:true});assert(body.flying&&body.feet.y>5);body.advance(1/120,{...still,fly:true});assert(!body.flying,'A second toggle must end the flight');run(body,3,still);assert(body.grounded&&body.feet.y<.03,'After flight ends the body must fall back to the ground');
+}
 // Rendering at 30/60/144 Hz must not change jump height or travelled distance.
 for(const hz of [30,60,144]){
  root=scene();world=createWalkWorld(root);body=new WalkCharacter(()=>world,new T.Vector3());for(let i=0;i<hz*2;i++)body.advance(1/hz,input);assert(Math.abs(body.feet.z+8.374)<.04,`${hz} Hz must preserve the same movement distance`);
@@ -77,4 +92,4 @@ surfaces.disposeSiteScene(root);
  const [near,far]=planes(matrix);assert.ok(Math.abs(near-.05)<1e-6&&Math.abs(far-900)<1e-3,`near plane .05 and far 900, got ${near} and ${far}`);
 }
 console.log('Minecraft-style movement measurements:',JSON.stringify(measurements));
-console.log('Character physics passed: speeds, jump arc/range, held jumps, air momentum, friction, half-metre steps, sneak ledges, long falls, frame rates, thin walls, ceilings, slopes, W/S gestures, the walking near plane and real Qumran terrain/architecture.');
+console.log('Character physics passed: speeds, creative flight (toggle, climb, fly, landing), jump arc/range, held jumps, air momentum, friction, half-metre steps, sneak ledges, long falls, frame rates, thin walls, ceilings, slopes, W/S gestures, the walking near plane and real Qumran terrain/architecture.');

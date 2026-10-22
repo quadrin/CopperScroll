@@ -61,19 +61,20 @@ function columns(g,a,b,c,fn){
 function insidePolygon(x,z,points){let hit=false;for(let i=0,j=points.length-1;i<points.length;j=i++){const [a,b]=points[i],[c,d]=points[j];if((b>z)!==(d>z)&&x<(c-a)*(z-b)/(d-b)+a)hit=!hit;}return hit;}
 // Ground: the top surface of each column, filled down to the grid floor. Columns inside
 // the ground's holes (pools, shafts) stay open: the display mesh drops only triangles whose
-// centre is inside a hole, and filling the rest would wall in the pool edges.
+// centre is inside a hole, and filling the rest would wall in the pool edges. Under a mapped
+// path or stair (the mesh's pavedAt) the top half metre takes that block.
 export function rasterGround(g,meshes,{soilDepth=2,exclude=null}={}){
- const n=g.nx*g.nz,top=new Float64Array(n).fill(-Infinity),kind=new Uint8Array(n);
+ const n=g.nx*g.nz,top=new Float64Array(n).fill(-Infinity),kind=new Uint8Array(n),pave=new Uint8Array(n);
  const excluded=(i,k)=>{if(!exclude)return false;const x=g.x0+(i+.5)*g.s,z=g.z0+(k+.5)*g.s;return x>exclude.minX&&x<exclude.maxX&&z>exclude.minZ&&z<exclude.maxZ;};
  for(const mesh of meshes){
   const code=materialCode(mesh.material)||CODE.soil,holes=mesh.userData.holes??[],inverse=mesh.matrixWorld.clone().invert(),p=new T.Vector3();
   const open=(x,z)=>{p.set(x,0,z).applyMatrix4(inverse);return holes.some(h=>insidePolygon(p.x,p.z,h));};
   if(mesh.userData.heightAt){
-   const lift=new T.Vector3().setFromMatrixPosition(mesh.matrixWorld).y;
+   const lift=new T.Vector3().setFromMatrixPosition(mesh.matrixWorld).y,paved=mesh.userData.pavedAt;
    for(let i=0;i<g.nx;i++)for(let k=0;k<g.nz;k++){
     const x=g.x0+(i+.5)*g.s,z=g.z0+(k+.5)*g.s;if(excluded(i,k)||open(x,z))continue;
     p.set(x,0,z).applyMatrix4(inverse);if(Math.hypot(p.x,p.z)>mesh.userData.radius)continue;
-    const y=mesh.userData.heightAt(p.x,p.z)+lift,col=i*g.nz+k;if(y>top[col]){top[col]=y;kind[col]=code;}
+    const y=mesh.userData.heightAt(p.x,p.z)+lift,col=i*g.nz+k;if(y>top[col]){top[col]=y;kind[col]=code;pave[col]=paved?CODE[paved(p.x,p.z)]??0:0;}
    }
    continue;
   }
@@ -81,7 +82,7 @@ export function rasterGround(g,meshes,{soilDepth=2,exclude=null}={}){
  }
  for(let i=0;i<g.nx;i++)for(let k=0;k<g.nz;k++){
   const col=i*g.nz+k;if(top[col]===-Infinity)continue;
-  for(let j=0;j<g.ny;j++){const y=g.y0+(j+.5)*g.h;if(y>=top[col])break;const n=cellIndex(g,i,j,k);g.cells[n]=kind[col]===CODE.soil&&top[col]-y>soilDepth?CODE.bedrock:kind[col];}
+  for(let j=0;j<g.ny;j++){const y=g.y0+(j+.5)*g.h;if(y>=top[col])break;const n=cellIndex(g,i,j,k);g.cells[n]=pave[col]&&top[col]-y<=.5?pave[col]:kind[col]===CODE.soil&&top[col]-y>soilDepth?CODE.bedrock:kind[col];}
  }
  return top;
 }

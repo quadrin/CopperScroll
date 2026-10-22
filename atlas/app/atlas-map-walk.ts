@@ -2,7 +2,7 @@ import {LngLat,type Map} from 'maplibre-gl';
 import {Vector3} from 'three';
 import {WalkCharacter,WalkInput} from './atlas-walk-physics';
 import type {MapSiteRuntime} from './atlas-map-site-layer';
-export type WalkController={keys:Set<string>;press:(key:string)=>void;release:(key:string)=>void;toggleSprint:()=>void;toggleCrouch:()=>void;reset:()=>void;stop:()=>void;position:()=>[number,number,number];stance:()=>{sprinting:boolean;sprintEnabled:boolean;crouched:boolean;grounded:boolean}};
+export type WalkController={keys:Set<string>;press:(key:string)=>void;release:(key:string)=>void;toggleSprint:()=>void;toggleCrouch:()=>void;toggleFly:()=>void;reset:()=>void;stop:()=>void;position:()=>[number,number,number];stance:()=>{sprinting:boolean;sprintEnabled:boolean;crouched:boolean;grounded:boolean;flying:boolean}};
 export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[number,number,number])=>void,start?:[number,number]):WalkController {
  const before={center:map.getCenter(),zoom:map.getZoom(),pitch:map.getPitch(),bearing:map.getBearing(),padding:map.getPadding(),elevation:map.getCenterElevation()};
  const maxZoom=map.getMaxZoom(),maxPitch=map.getMaxPitch(),fov=map.getVerticalFieldOfView(),clamped=map.getCenterClampedToGround(),canvas=map.getCanvas();
@@ -32,7 +32,7 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
   const options=map.calculateCameraOptionsFromTo(new LngLat(...from),altitude,new LngLat(...ahead),altitude-Math.tan((90-pitch)*Math.PI/180)*20);
   lastBase=site.baseElevation();walkingView={center:LngLat.convert(options.center!),zoom:options.zoom!,pitch:options.pitch!,bearing:options.bearing!,elevation:options.elevation!};
   canvas.dataset.walkPosition=eye.toArray().map(n=>n.toFixed(3)).join(',');canvas.dataset.walkFeet=foot.toArray().map(n=>n.toFixed(3)).join(',');
-  canvas.dataset.walkGrounded=String(body.grounded);canvas.dataset.walkSprint=String(body.sprinting);canvas.dataset.walkCrouch=String(body.crouched);canvas.dataset.walkBlocked=String(body.blocked);canvas.dataset.walkBlockedFrames=String(blockedFrames);canvas.dataset.walkSpeed=Math.hypot(body.velocity.x,body.velocity.z).toFixed(3);canvas.dataset.walkTriangles=String(site.collisionWorld().triangles);
+  canvas.dataset.walkGrounded=String(body.grounded);canvas.dataset.walkFlying=String(body.flying);canvas.dataset.walkSprint=String(body.sprinting);canvas.dataset.walkCrouch=String(body.crouched);canvas.dataset.walkBlocked=String(body.blocked);canvas.dataset.walkBlockedFrames=String(blockedFrames);canvas.dataset.walkSpeed=Math.hypot(body.velocity.x,body.velocity.z).toFixed(3);canvas.dataset.walkTriangles=String(site.collisionWorld().triangles);
   map.jumpTo({...options,padding:{top:0,bottom:0,left:0,right:0}});canvas.dataset.walkPitch=map.getPitch().toFixed(2);canvas.dataset.walkFov=viewFov.toFixed(2);
   site.setWalker({feet:foot.toArray() as [number,number,number],bearing:angle,crouched:body.crouched,phase,moving:!reducedMotion&&body.grounded&&Math.hypot(body.velocity.x,body.velocity.z)>.1,swings});
   if(force||performance.now()-lastReport>100){onChange(eye.toArray() as [number,number,number]);lastReport=performance.now();}
@@ -55,19 +55,20 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
  const resize=()=>apply(true);map.on('resize',resize);
  canvas.addEventListener('pointerdown',down);canvas.addEventListener('pointermove',move);canvas.addEventListener('pointerup',up);canvas.addEventListener('pointercancel',up);canvas.addEventListener('dblclick',lock);document.addEventListener('mousemove',lockedLook);document.addEventListener('keydown',keydown);window.addEventListener('keyup',keyup);window.addEventListener('blur',blur);
  function tick(now:number){
-  const dt=Math.min((now-previous)/1000,.1);previous=now;const old=body.eye,oldStance=`${body.grounded}/${body.crouched}/${body.sprinting}`,intent=input.read(bearing*Math.PI/180);
+  const dt=Math.min((now-previous)/1000,.1);previous=now;const old=body.eye,oldStance=`${body.grounded}/${body.crouched}/${body.sprinting}/${body.flying}`,intent=input.read(bearing*Math.PI/180);
   body.advance(dt,intent);if(body.blocked)blockedFrames++;const eye=body.eye,speed=Math.hypot(body.velocity.x,body.velocity.z);phase+=Math.hypot(eye.x-old.x,eye.z-old.z)*3;
-  const blend=1-Math.exp(-12*dt),targetFov=!reducedMotion&&body.sprinting&&speed>.5&&!body.blocked?81:70;
+  // Minecraft widens the view by a tenth while flying, and more while sprinting.
+  const blend=1-Math.exp(-12*dt),targetFov=reducedMotion?70:(body.sprinting&&speed>.5&&!body.blocked?81:70)*(body.flying?1.1:1);
   const nextFov=viewFov+(targetFov-viewFov)*blend,nextBob=bobWeight+((!reducedMotion&&body.grounded?Math.min(speed/4.317,1):0)-bobWeight)*blend;
   const viewChanged=Math.abs(nextFov-viewFov)>.001||Math.abs(nextBob-bobWeight)>.0001;
   viewFov=Math.abs(nextFov-targetFov)<.01?targetFov:nextFov;bobWeight=nextBob<.001?0:nextBob;
   if(viewChanged)map.setVerticalFieldOfView(viewFov);
-  const stanceChanged=oldStance!==`${body.grounded}/${body.crouched}/${body.sprinting}`;
-  if(body.eye.distanceToSquared(old)>1e-10||stanceChanged||intent.forward||intent.right||intent.jump||viewChanged||Math.abs(site.baseElevation()-lastBase)>.001)apply(stanceChanged);
+  const stanceChanged=oldStance!==`${body.grounded}/${body.crouched}/${body.sprinting}/${body.flying}`;
+  if(body.eye.distanceToSquared(old)>1e-10||stanceChanged||intent.forward||intent.right||intent.jump||intent.fly||viewChanged||Math.abs(site.baseElevation()-lastBase)>.001)apply(stanceChanged);
   frame=requestAnimationFrame(tick);
  }
  apply(true);frame=requestAnimationFrame(tick);canvas.focus();
- return {keys:input.keys,press:key=>input.press(key),release:key=>input.release(key),toggleSprint:()=>{input.toggleSprint();apply(true);},toggleCrouch:()=>input.toggleCrouch(),reset,position:()=>body.eye.toArray() as [number,number,number],stance:()=>({sprinting:body.sprinting,sprintEnabled:input.sprintEnabled,crouched:body.crouched,grounded:body.grounded}),stop(){
+ return {keys:input.keys,press:key=>input.press(key),release:key=>input.release(key),toggleSprint:()=>{input.toggleSprint();apply(true);},toggleCrouch:()=>input.toggleCrouch(),toggleFly:()=>{input.toggleFly();canvas.focus();},reset,position:()=>body.eye.toArray() as [number,number,number],stance:()=>({sprinting:body.sprinting,sprintEnabled:input.sprintEnabled,crouched:body.crouched,grounded:body.grounded,flying:body.flying}),stop(){
   cancelAnimationFrame(frame);input.clear();if(document.pointerLockElement===canvas)document.exitPointerLock();site.setWalker(null);
   map.off('resize',resize);map.setTransformCameraUpdate(null);
   canvas.removeEventListener('pointerdown',down);canvas.removeEventListener('pointermove',move);canvas.removeEventListener('pointerup',up);canvas.removeEventListener('pointercancel',up);canvas.removeEventListener('dblclick',lock);document.removeEventListener('mousemove',lockedLook);document.removeEventListener('keydown',keydown);window.removeEventListener('keyup',keyup);window.removeEventListener('blur',blur);
