@@ -6,16 +6,17 @@ Source: one OSM API 0.6 map call, bbox 35.2330,31.7715,35.2460,31.7825 (lon/lat,
 
 Files:
 
-- `kidron.json`: 496 elements for `kidron-bene-hezir` (place `jer_kidron_mon`): every way classified as context with a vertex within 450 m of (−35, 5) m, plus the outlines of Bene Ḥezir (w288284732), Zechariah (w288284733) and Absalom (w137729556). Context kinds: 216 buildings, 54 cemetery areas, 6 gate buildings, 152 paths, 17 retaining walls, 41 stairs, 7 city walls.
-- `great-sea.json`: 695 elements for `temple-great-sea` (place `jer_temple`): context within 400 m of (30, 60) m, plus the Haram's south-west (node 29979854) and south-east (node 2915691228) corners from relation 5862584 (Temple Mount). Context kinds: 400 buildings, 6 cemetery areas, 15 gate buildings, 193 paths, 17 retaining walls, 54 stairs, 8 city walls.
+- `kidron.json`: 758 elements for `kidron-bene-hezir` (place `jer_kidron_mon`): every way classified as context, and every mapped single tree, within 450 m of (−35, 5) m, plus the outlines of Bene Ḥezir (w288284732), Zechariah (w288284733) and Absalom (w137729556). Context kinds: 216 buildings, 54 cemetery areas, 55 green areas (woods, orchards, grass), 6 gate buildings, 152 paths, 65 roads, 17 retaining walls, 41 stairs, 142 trees, 7 city walls.
+- `great-sea.json`: 945 elements for `temple-great-sea` (place `jer_temple`): context within 400 m of (30, 60) m, plus the Haram's south-west (node 29979854) and south-east (node 2915691228) corners from relation 5862584 (Temple Mount). Context kinds: 400 buildings, 6 cemetery areas, 66 green areas, 15 gate buildings, 193 paths, 30 roads, 17 retaining walls, 54 stairs, 154 trees, 8 city walls.
+- Roads, trees and green areas were added later the same day from the same download.
 
 Each element keeps its OSM id, version, timestamp, tags and lat/lon. Each record also holds the registration below. The atlas copy with the coordinates projected to the place frame (metres, x east, z south, the MapLibre Mercator frame at the place anchor) is `atlas/app/atlas-site-context.json`.
 
 What the data are and are not:
 
-- They are today's mapped streets, stairs, cemetery areas, walls and buildings. The atlas draws them as the modern setting of the two models. They are not evidence for any ancient feature, level or route.
+- They are today's mapped streets, roads, stairs, cemetery areas, walls, buildings, trees, woods, orchards and grass. The atlas draws them as the modern setting of the two models. They are not evidence for any ancient feature, level or route.
 - Tunnels, bridges, indoor and below-ground ways are left out, because the atlas drapes context on the terrain surface.
-- Graves are not mapped one by one. The atlas fills the mapped cemetery areas with an illustrative grid of graves.
+- Graves are not mapped one by one. The atlas fills the mapped cemetery areas with an illustrative grid of graves. Woods and orchards are filled the same way with trees about 7 m apart; only the single trees are mapped trees.
 
 ## Registration (INFERENCE)
 

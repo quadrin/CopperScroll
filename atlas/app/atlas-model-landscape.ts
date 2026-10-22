@@ -7,7 +7,8 @@ type Point=[number,number];
 export type LandscapePad={x:number;z:number;w:number;d:number;height:number;feather:number;angle?:number};
 // `paved` names the block a column's top takes (a mapped path or stair) in the block export.
 // `focus` (model frame) centres the mesh's finest cells on the model when it is not at the anchor.
-export type LandscapeGround={w:number;d:number;holes:Point[][];pads:LandscapePad[];bench?:boolean;paved?:(x:number,z:number)=>string|null;focus?:Point};
+// `green` (0 to 1) tints mapped woods, orchards and grass.
+export type LandscapeGround={w:number;d:number;holes:Point[][];pads:LandscapePad[];bench?:boolean;paved?:(x:number,z:number)=>string|null;focus?:Point;green?:(x:number,z:number)=>number};
 type Patch={lat:number;lon:number;anchorPrecision:string;extent:number;size:number;elevations:number[];centreElevation:number};
 export type TerrainPatch=Patch;
 const terrain=patches as Record<string,Patch>;
@@ -34,7 +35,8 @@ export function landscapeGround(ground:LandscapeGround,placeId:string,offset:Poi
  };
  for(let j=0;j<=n;j++)for(let i=0;i<=n;i++){
   const x=fx+coordinate(i),z=fz+coordinate(j),y=height(x,z);positions.push(x,y,z);
-  const ripple=Math.sin(x*.11)*Math.cos(z*.08)*.05,tone=T.MathUtils.clamp(.83+y/(radius*3)+ripple,.65,1.05);colours.push(tone,tone,tone,1-smooth((Math.hypot(x,z)/radius-.72)/.27));
+  const ripple=Math.sin(x*.11)*Math.cos(z*.08)*.05,tone=T.MathUtils.clamp(.83+y/(radius*3)+ripple,.65,1.05),g=ground.green?.(x+offset[0],z+offset[1])??0;
+  colours.push(tone*(1-.3*g),tone*(1-.08*g),tone*(1-.42*g),1-smooth((Math.hypot(x,z)/radius-.72)/.27));
  }
  function triangle(a:number,b:number,c:number){const x=(positions[a*3]+positions[b*3]+positions[c*3])/3,z=(positions[a*3+2]+positions[b*3+2]+positions[c*3+2])/3;if((x/radius)**2+(z/radius)**2>1||holes.some(h=>inside(x,z,h)))return;indices.push(a,b,c);}
  for(let j=0;j<n;j++)for(let i=0;i<n;i++){const a=j*(n+1)+i,b=a+1,c=a+n+1,d=c+1;triangle(a,c,b);triangle(b,c,d);}

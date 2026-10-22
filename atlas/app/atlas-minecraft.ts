@@ -50,10 +50,13 @@ function random(seed:number){let n=seed>>>0;return ()=>{n=(Math.imul(n,1664525)+
 // One 16 × 16 tile per block face. The mean colour is the site's photo-derived base.
 function pixelTexture(material:number,planId:string,masonry:string){
  const style=siteStyle(planId),n=16,tone=new Float32Array(n*n),rand=random(material*977+planId.length*31);
- const colour=material===7?new T.Color(style.stone).lerp(new T.Color('#f4efe3'),.62):new T.Color(material===1?style.soil:material===2?style.rock:material===5?style.plaster:material===6?'#b56b42':style.stone);
- for(let i=0;i<n*n;i++)tone[i]=1+(rand()-.5)*(material===5||material===7?.05:material===3?.07:.16);
+ // Codes 8–11 are the modern setting of a registered site: leaves, wood, green ground and asphalt.
+ const setting:Record<number,string>={8:'#6f7a4c',9:'#6b5a43',10:'#8a8a5c',11:'#5d5b56'};
+ const colour=material===7?new T.Color(style.stone).lerp(new T.Color('#f4efe3'),.62):new T.Color(setting[material]??(material===1?style.soil:material===2?style.rock:material===5?style.plaster:material===6?'#b56b42':style.stone));
+ for(let i=0;i<n*n;i++)tone[i]=1+(rand()-.5)*(material===5||material===7?.05:material===3?.07:material===8?.34:material===11?.06:.16);
  const set=(x:number,y:number,f:number)=>{tone[((y+n)%n)*n+(x+n)%n]*=f;};
  if(material===1){for(let k=0;k<9;k++){const x=Math.floor(rand()*n),y=Math.floor(rand()*n),f=rand()<.5?.78:1.18;set(x,y,f);set(x+1,y,f);}}
+ else if(material===9){for(let x=0;x<n;x+=3)for(let y=0;y<n;y++)set(x,y,.82);}
  else if(material===2){for(let y=0;y<n;y+=5+Math.floor(rand()*2))for(let x=0;x<n;x++)if(rand()<.8)set(x,y+Math.round(Math.sin(x*.7)*.6),.86);}
  else if(material===3){for(let k=0;k<n;k++){set(k,0,.93);set(0,k,.93);set(k,n-1,.9);set(n-1,k,.9);}}
  // Restored (drawn only by a published reconstruction): pale, with a dashed outline.

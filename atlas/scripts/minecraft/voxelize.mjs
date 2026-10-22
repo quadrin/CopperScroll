@@ -4,14 +4,17 @@
 // their resolution changes. The material decides the Minecraft block.
 import * as T from 'three';
 
-export const MATERIALS=['air','soil','rock','limestone','masonry','plaster','copper','restored'];
-const CODE={soil:1,bedrock:2,limestone:3,masonry:4,plaster:5,copper:6,restored:7};
+// Codes 8–11 are the modern setting around a registered site: tree crowns and trunks, green
+// ground and roads.
+export const MATERIALS=['air','soil','rock','limestone','masonry','plaster','copper','restored','leaves','wood','grass','asphalt'];
+const CODE={soil:1,bedrock:2,limestone:3,masonry:4,plaster:5,copper:6,restored:7,leaves:8,wood:9,grass:10,asphalt:11};
 // Where two solids share a cell the higher priority wins; a restored part never hides an
-// observed one. Ground fill always yields to architecture.
-const PRIORITY=[0,1,2,3,4,5,6,.5];
+// observed one. Ground fill always yields to architecture, and the setting to the site.
+const PRIORITY=[0,1,2,3,4,5,6,.5,.3,.4,1.1,1.2];
 const MASONRY={rubble:['cobblestone','cobblestone_slab'],coursed:['stone_bricks','stone_brick_slab'],ashlar:['cut_sandstone','cut_sandstone_slab'],mudbrick:['mud_bricks','mud_brick_slab']};
 export function blockTable(masonry){
- return {1:['coarse_dirt',null],2:['stone','stone_slab'],3:['smooth_stone','smooth_stone_slab'],4:MASONRY[masonry]??MASONRY.coursed,5:['smooth_quartz','smooth_quartz_slab'],6:['waxed_cut_copper','waxed_cut_copper_slab'],7:['smooth_sandstone','smooth_sandstone_slab']};
+ return {1:['coarse_dirt',null],2:['stone','stone_slab'],3:['smooth_stone','smooth_stone_slab'],4:MASONRY[masonry]??MASONRY.coursed,5:['smooth_quartz','smooth_quartz_slab'],6:['waxed_cut_copper','waxed_cut_copper_slab'],7:['smooth_sandstone','smooth_sandstone_slab'],
+  8:['oak_leaves[persistent=true]',null],9:['oak_log',null],10:['moss_block',null],11:['gray_concrete',null]};
 }
 
 export function materialCode(material){
