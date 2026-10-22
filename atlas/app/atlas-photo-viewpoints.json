@@ -1,0 +1,8 @@
+{
+ "about": [
+  "Photo viewpoints for the eye-level model, keyed by gallery photo id (atlas-site-gallery.json) or a scene's src (atlas-scenes.json). Format: atlas-photo-viewpoints.ts.",
+  "position is [x, z] in metres from the place anchor in the plan's model frame (x east, z south, as model.markers); eyeHeight is metres above the ground under that point (default 1.6), or y gives an absolute model height; bearing is degrees clockwise from north; pitch is degrees above the horizon; roll turns the photo clockwise; hfov is the photo's horizontal field of view.",
+  "Status 'aligned by eye' means the camera was moved until the model's outlines sat on the photo's. It is an inference, not a measurement, and it carries the model's own errors."
+ ],
+ "viewpoints": {}
+}

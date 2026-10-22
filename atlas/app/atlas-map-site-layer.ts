@@ -11,13 +11,18 @@ import {createWalkAvatar,type WalkPose} from './atlas-walk-avatar';
 import {applyMinecraftBuild,type MinecraftBuild} from './atlas-minecraft';
 import {elevationAt} from './atlas-model-landscape';
 import {createWalkSigns,walkSignItems,type WalkSigns} from './atlas-walk-signs';
+import {createWalkMeasure,pickSurface,type WalkMeasure} from './atlas-walk-measure-overlay';
+import type {MeasurePoint} from './atlas-walk-measure';
 import terrainPatches from './atlas-model-terrain.json';
 
 export const SITE_LAYER_ID='source-site-detail';
-export type MapSiteRuntime={model:ModelGeometry;style:'minecraft'|'smooth';span:number;anchor:[number,number];baseElevation:()=>number;collisionWorld:()=>WalkWorld;setWalker:(pose:WalkPose|null)=>void;setSigns:(on:boolean)=>void;location:(x:number,z:number)=>[number,number];local:(lng:number,lat:number)=>[number,number];focus:(featureId?:string)=>void;setFeature:(id:string|null)=>void;renderedFrames:number;meshCount:number;vertexCount:number};
+export type MapSiteRuntime={model:ModelGeometry;style:'minecraft'|'smooth';span:number;anchor:[number,number];baseElevation:()=>number;collisionWorld:()=>WalkWorld;setWalker:(pose:WalkPose|null)=>void;setSigns:(on:boolean)=>void;location:(x:number,z:number)=>[number,number];local:(lng:number,lat:number)=>[number,number];focus:(featureId?:string)=>void;setFeature:(id:string|null)=>void;renderedFrames:number;meshCount:number;vertexCount:number;
+ // The measuring tool and photo viewpoints at eye level: the drawn surface under a canvas point (from the last
+ // frame drawn while walking), the measurement to draw, and the walkable ground under a point.
+ pick:(clientX:number,clientY:number)=>MeasurePoint|null;setMeasure:(points:MeasurePoint[])=>void;groundAt:(x:number,z:number)=>number|null};
 export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(runtime:MapSiteRuntime)=>void,onFailure:(message:string)=>void,build:MinecraftBuild|null=null,options:BuildOptions={}):CustomLayerInterface {
  const anchor:[number,number]=[place.lon!,place.lat!],origin=MercatorCoordinate.fromLngLat(anchor),scale=origin.meterInMercatorCoordinateUnits();
- const scene=new T.Scene(),camera=new T.Camera(),sky=createSiteSky(),avatar=createWalkAvatar(),lantern=new T.PointLight('#ffd9a0',22,16,1.6);let renderer:T.WebGLRenderer|undefined,model:ModelGeometry|undefined,runtime:MapSiteRuntime|undefined,world:WalkWorld|undefined,signs:WalkSigns|undefined;
+ const scene=new T.Scene(),camera=new T.Camera(),sky=createSiteSky(),avatar=createWalkAvatar(),lantern=new T.PointLight('#ffd9a0',22,16,1.6);let renderer:T.WebGLRenderer|undefined,model:ModelGeometry|undefined,runtime:MapSiteRuntime|undefined,world:WalkWorld|undefined,signs:WalkSigns|undefined,measure:WalkMeasure|undefined,lastProjection:T.Matrix4|null=null;
  let collisionDirty=true;
  let terrainDirty=true,lastBase=NaN,lastCameraElevation=NaN;
  const terrainChanged=()=>{terrainDirty=true;map.triggerRepaint();};
@@ -48,7 +53,7 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
     applyMinecraftBuild(model,build,plan.id);
    }
    // Feature signs over the canvas while walking (atlas-walk-signs.ts).
-   signs=createWalkSigns(map.getContainer(),walkSignItems(plan,model.markers,model.assumptions));
+   signs=createWalkSigns(map.getContainer(),walkSignItems(plan,model.markers,model.assumptions));measure=createWalkMeasure(map.getContainer());
    scene.add(model.root);scene.add(sky.mesh);
    // A walker carries a warm lantern, so that cave walls the sun cannot reach still show their shape.
    lantern.visible=false;scene.add(lantern);
@@ -65,12 +70,15 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    runtime={model,style:build?'minecraft':'smooth',span,anchor,baseElevation,location,local,meshCount,vertexCount,renderedFrames:0,
     collisionWorld(){if(collisionDirty||!world){world=createWalkWorld(model!.root);collisionDirty=false;}return world;},
     setSigns(on){signs?.setEnabled(on);map.triggerRepaint();},
+    pick(clientX,clientY){if(!lastProjection||!model)return null;const r=map.getCanvas().getBoundingClientRect();if(!r.width||!r.height)return null;const p=pickSurface(model.root,lastProjection,(clientX-r.left)/r.width*2-1,1-(clientY-r.top)/r.height*2);return p?[p.x,p.y,p.z]:null;},
+    setMeasure(points){measure?.set(points);map.triggerRepaint();},
+    groundAt(x,z){return runtime!.collisionWorld().floor(x,z,1000,-1000)?.height??null;},
     setWalker(pose){avatar.update(pose);lantern.visible=!!pose;if(pose)lantern.position.set(pose.feet[0],pose.feet[1]+1.5,pose.feet[2]);map.triggerRepaint();},
     focus(featureId){const point=featureId?model?.markers.get(featureId):undefined,frame=model?.framing.getCenter(new T.Vector3());const center=point?location(point.x,point.z):frame?location(frame.x,frame.z):anchor;const zoom=featureId?22:Math.max(17,Math.min(21.2,21-Math.log2(Math.max(span,20)/40)));const view={center,zoom,pitch:55,bearing:map.getBearing(),padding:{top:80,bottom:140,left:30,right:30}};if(map.getTerrain()){map.stop();map.jumpTo({...view,elevation:baseElevation()});}else map.flyTo({...view,duration:window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:1000});},
     setFeature(id){model?.root.traverse(o=>{const mesh=o as T.Mesh;if(!mesh.material)return;for(const m of Array.isArray(mesh.material)?mesh.material:[mesh.material]){const mat=m as T.MeshStandardMaterial;if(mat.emissive){mat.emissive.set(mesh.userData.featureId===id?'#aa6c31':'#000000');mat.emissiveIntensity=.2;}}});map.triggerRepaint();}
    };map.on('terrain',terrainChanged);map.on('sourcedata',terrainLoaded);onReady(runtime);map.triggerRepaint();
   }catch(e){onFailure(e instanceof Error?e.message:'Site geometry could not load.');}},
-  render(_gl,args){if(!map.getCanvas().dataset.walkPosition)signs?.update(null);if(!renderer||!model||!runtime||map.getZoom()<15.5)return;
+  render(_gl,args){if(!map.getCanvas().dataset.walkPosition){signs?.update(null);measure?.update(null);lastProjection=null;}if(!renderer||!model||!runtime||map.getZoom()<15.5)return;
    const base=baseElevation(),o=MercatorCoordinate.fromLngLat(anchor,base+.2);
    // Terrain loading can update the camera after the current frame's matrix was
    // prepared. Draw a follow-up frame so the model and map use the same height.
@@ -93,13 +101,13 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
     const origin=new T.Vector4(0,0,1,0).applyMatrix4(camera.projectionMatrix.clone().invert());
     eye.set(origin.x/origin.w,origin.y/origin.w,origin.z/origin.w);
     const canvas=map.getCanvas();canvas.dataset.walkCameraPosition=eye.toArray().map(n=>n.toFixed(3)).join(',');canvas.dataset.walkCameraError=eye.distanceTo(new T.Vector3(...walking)).toFixed(3);
-    signs?.update(camera.projectionMatrix,eye);
+    signs?.update(camera.projectionMatrix,eye);lastProjection=camera.projectionMatrix.clone();measure?.update(lastProjection);
    }
    sky.update(camera.projectionMatrix,eye,!!walking);
    renderer.resetState();renderer.clearDepth();renderer.render(scene,camera);avatar.render(renderer,map.getCanvas().clientWidth/map.getCanvas().clientHeight);renderer.resetState();runtime.renderedFrames++;
    const canvas=map.getCanvas();canvas.dataset.siteFrames=String(runtime.renderedFrames);canvas.dataset.siteMeshes=String(runtime.meshCount);canvas.dataset.siteVertices=String(runtime.vertexCount);
    canvas.dataset.siteElevation=base.toFixed(2);canvas.dataset.siteAnchor=new T.Vector3().applyMatrix4(camera.projectionMatrix).toArray().map(n=>n.toFixed(4)).join(',');
   },
-  onRemove(){signs?.dispose();map.off('terrain',terrainChanged);map.off('sourcedata',terrainLoaded);disposeSiteScene(scene);avatar.dispose();scene.traverse(o=>{if(o instanceof T.DirectionalLight)o.shadow.dispose();});renderer?.dispose();for(const key of ['siteFrames','siteMeshes','siteVertices','siteElevation','siteAnchor'])delete map.getCanvas().dataset[key];}
+  onRemove(){signs?.dispose();measure?.dispose();map.off('terrain',terrainChanged);map.off('sourcedata',terrainLoaded);disposeSiteScene(scene);avatar.dispose();scene.traverse(o=>{if(o instanceof T.DirectionalLight)o.shadow.dispose();});renderer?.dispose();for(const key of ['siteFrames','siteMeshes','siteVertices','siteElevation','siteAnchor'])delete map.getCanvas().dataset[key];}
  };
 }

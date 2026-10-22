@@ -1,6 +1,6 @@
 "use client";
 
-import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Map, Minus, Mountain, Plus, X, ArrowLeft } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { Map as LibreMap, Marker, StyleSpecification, GeoJSONSource } from "maplibre-gl";
@@ -11,6 +11,8 @@ import { plansForPlace, sitePlans } from "./atlas-explorer-model";
 import SiteReference from "./atlas-site-reference";
 import { MapVideoReferences, MapSourceReferences, type MapPanel } from "./atlas-map-references";
 import WalkReferences from "./atlas-walk-references";
+import WalkMeasureCard from "./atlas-walk-measure-card";
+import type { MeasurePoint } from "./atlas-walk-measure";
 import { ancientGround, ancientGroundAssumption, ancientGroundCaption, ancientGroundPads, hasAncientGround } from "./atlas-ancient-ground";
 import type { MapSiteRuntime } from "./atlas-map-site-layer";
 import type { WalkController } from "./atlas-map-walk";
@@ -72,6 +74,11 @@ export default function AtlasMap(props:Props) {
   const rejoinWalk=useRef(false);
   // Feature signs at eye level, on by default.
   const [signsOn,setSignsOn]=useState(true);
+  // The measuring tool at eye level (atlas-walk-measure.ts), off by default. Points belong to the plan they were picked on.
+  const [measureOn,setMeasureOn]=useState(false),[measurement,setMeasurement]=useState<{plan:string|null;points:MeasurePoint[]}>({plan:null,points:[]}),[siteUnits,setSiteUnits]=useState<"metres"|"relative"|null>(null);
+  const measureState=useRef({on:false,plan:null as string|null,points:[] as MeasurePoint[]});
+  // Stable getters for the photo viewpoints in the reference panel (atlas-photo-view.tsx).
+  const [walkTools]=useState(()=>({walker:()=>walker.current,site:()=>siteRuntime.current,container:()=>mapRef.current?.getContainer()??null}));
   // "ancient" draws a plan in its mapped setting without today's mapped features (atlas-ancient-ground.ts).
   const [groundView,setGroundView]=useState<"today"|"ancient">("today"),[ancientApplied,setAncientApplied]=useState(false);
   const groundChoice=hasAncientGround(plan?.id),ancient=groundChoice&&groundView==="ancient";
@@ -265,7 +272,7 @@ export default function AtlasMap(props:Props) {
     void Promise.all([import("./atlas-map-site-layer"),blocks,terrain,setting]).then(([{createMapSiteLayer},build,patch,context])=>{
       if(cancelled||mapRef.current!==map)return;
       const ground=ancient?ancientGround(plan.id):null,pads=ground?ancientGroundPads(ground,patch?.centreElevation):null;
-      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{if(ground){runtime.model.assumptions.unshift(ancientGroundAssumption(ground,!!pads));setAncientApplied(!!pads);}siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);setSiteRegistered(runtime.model.landscape.registered?(runtime.model.landscape.registeredBy??"outlines"):false);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build,{layer:planLayer,terrain:patch??undefined,context:context??undefined,pads:pads??undefined}));
+      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{if(ground){runtime.model.assumptions.unshift(ancientGroundAssumption(ground,!!pads));setAncientApplied(!!pads);}siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);setSiteUnits(runtime.model.units);setSiteRegistered(runtime.model.landscape.registered?(runtime.model.landscape.registeredBy??"outlines"):false);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build,{layer:planLayer,terrain:patch??undefined,context:context??undefined,pads:pads??undefined}));
     }).catch(()=>{if(!cancelled)setSiteState("Source model could not load.");});
     return()=>{cancelled=true;walker.current?.stop();walker.current=null;siteRuntime.current=null;if(mapRef.current===map&&map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");};
   },[ready,plan?.id,focusId,modelAvailable,offMap,modelStyle,planLayer,ancient]);
@@ -285,6 +292,16 @@ export default function AtlasMap(props:Props) {
   }
   useEffect(()=>{siteRuntime.current?.setFeature(localFeature);},[localFeature,siteState]);
   useEffect(()=>{siteRuntime.current?.setSigns(signsOn);},[signsOn,siteState]);
+  const measurePoints=useMemo(()=>measurement.plan!==null&&measurement.plan===(plan?.id??null)?measurement.points:[],[measurement,plan?.id]);
+  useEffect(()=>{measureState.current={on:measureOn,plan:plan?.id??null,points:measurePoints};siteRuntime.current?.setMeasure(walking&&measureOn?measurePoints:[]);},[measureOn,measurePoints,walking,siteState,plan?.id]);
+  // Esc clears a measurement before it leaves a photo view or the walk; with the mouse captured it releases the mouse.
+  useEffect(()=>{const escape=(e:KeyboardEvent)=>{const s=measureState.current;if(e.key!=="Escape"||document.pointerLockElement||!s.on||!s.points.length)return;e.stopPropagation();e.preventDefault();measureState.current={...s,points:[]};setMeasurement({plan:s.plan,points:[]});};window.addEventListener("keydown",escape,true);return()=>window.removeEventListener("keydown",escape,true);},[]);
+  // A click or tap at eye level picks a point on what is drawn; a third one starts again.
+  function pickPoint(x:number,y:number){
+    const s=measureState.current;if(!s.on)return false;
+    const p=siteRuntime.current?.pick(x,y);if(!p)return true;
+    const points=s.points.length>=2?[p]:[...s.points,p];measureState.current={...s,points};setMeasurement({plan:s.plan,points});return true;
+  }
 
   useEffect(()=>{
     const map=mapRef.current;if(!ready||!map||walking)return;
@@ -299,7 +316,7 @@ export default function AtlasMap(props:Props) {
     const map=mapRef.current,site=siteRuntime.current;if(!map||!site){setDropMessage(selectedPlace?.lat==null?"This site has no established map location. Explore its source plan here, or select a mapped site such as Qumran to walk around.":"This site has no source-based 3D coverage yet. Explore its photos and references here.");return;}
     if(walker.current)stopWalk();
     const {startMapWalk}=await import("./atlas-map-walk");if(mapRef.current!==map||siteRuntime.current!==site)return;
-    setPanel(null);setDropMessage("");setWalking(true);try{walker.current=startMapWalk(map,site,setWalkPosition,at);}catch(error){setWalking(false);setDropMessage(error instanceof Error?error.message:"This spot has no clear standing space.");}
+    setPanel(null);setDropMessage("");setWalking(true);try{walker.current=startMapWalk(map,site,setWalkPosition,at,{onPick:pickPoint});}catch(error){setWalking(false);setDropMessage(error instanceof Error?error.message:"This spot has no clear standing space.");}
   }
 
   function mapPadding(map:LibreMap){
@@ -347,13 +364,14 @@ export default function AtlasMap(props:Props) {
     {!offMap&&!walking&&<div className="zoom-controls"><button disabled={!ready} className="tool-button" aria-label="Zoom in" onClick={()=>mapRef.current?.zoomIn()}><Plus size={18}/></button><button disabled={!ready} className="tool-button" aria-label="Zoom out" onClick={()=>mapRef.current?.zoomOut()}><Minus size={18}/></button></div>}
     {!offMap&&<button className={`map-person ${walking?"active":""}`} aria-label={walking?"Back to map":"Walk around this site"} aria-pressed={walking} title={walking?"Click to return to the map":"Click to enter the 3D site at eye level"} disabled={!ready} onClick={()=>{if(walking)stopWalk();else void enterWalk();}}><WalkingPerson/><span>{walking?"Exit":"Walk"}</span></button>}
     {dropMessage&&!offMap&&<div className="map-drop-hint" role="status">{dropMessage}<button aria-label="Dismiss walking message" onClick={()=>setDropMessage("")}><X size={14}/></button></div>}
-    {walking&&<WalkReferences key={focusId??"none"} placeId={focusId}/>}
+    {walking&&<WalkReferences key={focusId??"none"} placeId={focusId} planId={plan?.id} {...walkTools}/>}
+    {walking&&measureOn&&<WalkMeasureCard points={measurePoints} style={siteStyle} units={siteUnits} onClear={()=>setMeasurement({plan:null,points:[]})}/>}
     {walking&&<div className="map-walk-controls" aria-label="Walk controls">
       <span>Drag to look · WASD / arrows to move</span>
       <small className="walk-keyboard-help">Space jump (hold to repeat) · Ctrl / double-tap W/S sprint · Shift crouch<br/>Double-tap Space to fly: Space up · Shift down · double-tap again to drop<br/>Double-click for mouse look · Esc releases · R resets position</small>
       <div className="walk-movement">{[["w","Forward"],["a","Left"],["s","Back"],["d","Right"]].map(([key,label])=><button key={key} onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);mapRef.current?.getCanvas().focus();walker.current?.press(key)}} onPointerUp={()=>walker.current?.release(key)} onPointerCancel={()=>walker.current?.release(key)} onLostPointerCapture={()=>walker.current?.release(key)}>{label}</button>)}</div>
       <div className="walk-actions"><button onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);walker.current?.press(" ")}} onPointerUp={()=>walker.current?.release(" ")} onPointerCancel={()=>walker.current?.release(" ")} onLostPointerCapture={()=>walker.current?.release(" ")} onKeyDown={e=>{if(e.key===" "||e.key==="Enter"){e.preventDefault();walker.current?.press(" ")}}} onKeyUp={()=>walker.current?.release(" ")}>{walker.current?.stance().flying?"Up":"Jump"}</button><button aria-pressed={walker.current?.stance().sprintEnabled??false} onClick={()=>{walker.current?.toggleSprint();mapRef.current?.getCanvas().focus()}}>Sprint</button>{walker.current?.stance().flying?<button onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);walker.current?.press("shift")}} onPointerUp={()=>walker.current?.release("shift")} onPointerCancel={()=>walker.current?.release("shift")} onLostPointerCapture={()=>walker.current?.release("shift")}>Down</button>:<button aria-pressed={walker.current?.stance().crouched??false} onClick={()=>{walker.current?.toggleCrouch();mapRef.current?.getCanvas().focus()}}>Crouch</button>}<button aria-pressed={walker.current?.stance().flying??false} title="Creative-mode flight (or double-tap Space)" onClick={()=>walker.current?.toggleFly()}>Fly</button></div>
-      <div className="walk-options"><button aria-pressed={signsOn} title="Show or hide the feature signs" onClick={()=>{setSignsOn(on=>!on);mapRef.current?.getCanvas().focus();}}>Signs</button></div>
+      <div className="walk-options"><button aria-pressed={signsOn} title="Show or hide the feature signs" onClick={()=>{setSignsOn(on=>!on);mapRef.current?.getCanvas().focus();}}>Signs</button><button aria-pressed={measureOn} title="Measure between two points on the display model (exploratory, not a test)" onClick={()=>{const on=!measureOn;setMeasureOn(on);if(!on)setMeasurement({plan:null,points:[]});mapRef.current?.getCanvas().focus();}}>Measure</button></div>
       <small>{walker.current?.stance().flying?"Flying":walker.current?.stance().grounded?"On ground":"Airborne"}{walker.current?.stance().sprinting?" · Sprinting":""}{walker.current?.stance().crouched?" · Crouching":""}</small><output aria-label="Walk camera position">{walkPosition.map(n=>n.toFixed(1)).join(", ")}</output>
     </div>}
     {!offMap&&!walking&&<aside className="map-place-panel" aria-label="Selected site" data-expanded={placeExpanded}>
