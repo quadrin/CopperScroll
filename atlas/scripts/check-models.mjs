@@ -15,9 +15,11 @@ const context=module('../app/atlas-model-context.ts',{'three':Three,'./atlas-sit
 const exports=module('../app/atlas-model-geometry.ts',{'three':Three,'three/addons/loaders/SVGLoader.js':{SVGLoader},'./atlas-model-landscape':landscape,'./atlas-model-context':context,'./atlas-site-materials':surfaces,'./atlas-traced':module('../app/atlas-traced.ts',{}),'./atlas-traced-plans.json':{__esModule:true,default:tracedPlans,...tracedPlans}});
 for(const patch of Object.values(terrain)){assert.equal(patch.elevations.length,patch.size**2);assert.ok(patch.elevations.every(Number.isFinite));assert.ok(Math.abs(landscape.elevationAt(patch,0,0))<.02);}
 const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
+const settings=JSON.parse(readFileSync(new URL('../app/atlas-site-context.json',import.meta.url),'utf8')).plans;
+const surroundings=id=>settings[id]&&JSON.parse(readFileSync(new URL(`../public/${settings[id].features}`,import.meta.url),'utf8')).features;
 const models=new Map();
 for(const id of ['abu-saraj-iv17','hyrcania-waterworks','gerizim-precinct','doq-waterworks','jericho-early','jericho-late','bethesda-pools','east-gate-warren','kidron-bene-hezir','temple-great-sea']){
- const plan=plans.find(p=>p.id===id),model=exports.buildModel(plan);
+ const plan=plans.find(p=>p.id===id),model=exports.buildModel(plan,{context:surroundings(id)});
  assert.deepEqual([...model.markers.keys()].sort(),plan.features.map(f=>f.id).sort(),`${id}: all source features must remain selectable`);
  for(const marker of model.markers.values())assert.ok(marker.toArray().every(Number.isFinite));
  const box=new Three.Box3().setFromObject(model.root);
@@ -83,7 +85,7 @@ const sea=models.get('temple-great-sea');
 assert.ok(sea.assumptions.some(t=>t.includes('Pl. VII')),'Great Sea: the plate outline is disclosed');
 // Registered models keep the place frame: their mapped monuments and corners stay where OpenStreetMap puts them,
 // and the mapped surroundings are drawn and credited.
-const placed=JSON.parse(readFileSync(new URL('../app/atlas-site-context.json',import.meta.url),'utf8')).plans;
+const placed=settings;
 {const r=placed['kidron-bene-hezir'].registration,a=kidron.markers.get('absalom'),p=kidron.markers.get('porch');
  assert.ok(Math.hypot(a.x-r.absalomCentre[0],a.z-r.absalomCentre[1])<.01,'Absalom stands at its mapped centre');
  assert.ok(Math.hypot(p.x-r.porchCentre[0],p.z-r.porchCentre[1])<.01,'the Bene Ḥezir porch sits on the mapped porch');
@@ -92,9 +94,11 @@ const placed=JSON.parse(readFileSync(new URL('../app/atlas-site-context.json',im
 {const r=placed['temple-great-sea'].registration,c=sea.markers.get('great-sea');
  assert.ok(r.residuals_m.every(v=>v<2),'Pl. VII fits the mapped Haram corners within 2 m');
  assert.ok(Math.hypot(c.x-r.origin[0],c.z-r.origin[1])<3,'the cistern sits at its registered place');}
+// Plans placed on a mapped outline: the chosen model point lands on the mapped target.
+for(const [id,point] of [['east-gate-warren','gatehouse'],['bethesda-pools','dam']]){const r=placed[id].registration,m=models.get(id).markers.get(point);assert.ok(Math.hypot(m.x-r.target[0],m.z-r.target[1])<.5,`${id}: ${point} sits on its mapped target`);}
 for(const model of [kidron,sea]){
  const group=model.root.children.find(c=>c.userData.siteContext==='osm');
  assert.ok(group&&model.landscape.credit.includes('OpenStreetMap')&&model.assumptions.some(t=>t.includes('Open Database License')),'mapped surroundings are drawn and credited');
 }
 assert.ok(kidron.root.children.find(c=>c.userData.siteContext==='osm').userData.counts.graves>1000,'Kidron: the Mount of Olives graves are drawn');
-console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction, two models registered to mapped outlines with their surroundings, ${tracedViews} traced-plan views and ${builtViews} views of hand-built plans.`);
+console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction, models placed on mapped outlines with their surroundings, ${tracedViews} traced-plan views and ${builtViews} views of hand-built plans.`);

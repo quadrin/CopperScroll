@@ -7,7 +7,8 @@ import { cloneSiteMaterial } from './atlas-site-materials';
 // (metres, x east, z south). They give the model its setting and are never archaeological evidence.
 type Point=[number,number];
 export type ContextFeature={id:string;kind:'steps'|'path'|'road'|'wall'|'retaining-wall'|'cemetery'|'gate'|'building'|'green'|'tree';pts:Point[];road?:string;cover?:'wood'|'orchard'|'grass';leafType?:string;name?:string;width?:number;height?:number;incline?:string;religion?:string;area?:boolean;minHeight?:number;roofShape?:'dome'|'pyramidal';roofHeight?:number;roofColour?:string;part?:boolean};
-export type SiteContext={place:string;retrieved:string;record:string;registration:Record<string,unknown>|null;features:ContextFeature[]};
+// The bundled entry: the features themselves are in atlas/public/<features>, loaded with the terrain.
+export type SiteContext={place:string;retrieved:string;record:string;registration:Record<string,unknown>|null;features:string;counts:Record<string,number>};
 const data=contextData as unknown as {licence:string;plans:Record<string,SiteContext>};
 export const siteContext=(planId:string):SiteContext|undefined=>data.plans[planId];
 export const CONTEXT_LICENCE=data.licence;

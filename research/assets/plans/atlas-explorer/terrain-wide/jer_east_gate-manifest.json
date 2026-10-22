@@ -1,0 +1,458 @@
+{
+  "date": "2026-10-22",
+  "place": "jer_east_gate",
+  "anchor": {
+    "lat": 31.77889,
+    "lon": 35.23694,
+    "precision": "~50 m",
+    "gazetteer_source": "Wikidata Q1367167 (Golden Gate)",
+    "record": "atlas/app/atlas-data.json places[id=jer_east_gate]"
+  },
+  "source": "Mapterhorn terrain tiles",
+  "tilejson": "https://tiles.mapterhorn.com/tilejson.json",
+  "tilejson_maxzoom": "not stated",
+  "attribution_url": "https://mapterhorn.com/attribution/",
+  "attribution_json": "https://download.mapterhorn.com/attribution.json",
+  "credit": "© Mapterhorn; COPERNICUS GLO-30 (glo30): DLR e.V. 2010-2014, Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA. All rights reserved. Accessed via OpenTopography and AWS Open Data. — COPERNICUS full, free and open license; 10 meter Digital Elevation Model (DEM) of Israel (isr10): ASTER GDEM courtesy of METI and NASA processed by 4cast LTD using VTbuilder — ASTER GDEM Public Domain",
+  "encoding": "Terrarium: R*256 + G + B/256 - 32768 metres",
+  "zoom_selection": {
+    "target_pixel_m": 5.0,
+    "first_zoom_meeting_target": 14,
+    "pixel_m_at_zoom": 8.12,
+    "zoom_used": 13,
+    "high_resolution_archives_covering_anchor": [
+      {
+        "name": "planet.pmtiles",
+        "url": "https://download.mapterhorn.com/planet.pmtiles",
+        "min_zoom": 0,
+        "max_zoom": 12,
+        "md5sum": "4bf586b043f7619d9a9442b43c163f36",
+        "size": 355579263191
+      },
+      {
+        "name": "6-38-26.pmtiles",
+        "url": "https://download.mapterhorn.com/6-38-26.pmtiles",
+        "min_zoom": 13,
+        "max_zoom": 13,
+        "md5sum": "b2bdcf33f6c9953a3488c76ecd399835",
+        "size": 287320015
+      }
+    ],
+    "probes": [
+      {
+        "zoom": 14,
+        "url": "https://tiles.mapterhorn.com/14/9795/6665.webp",
+        "http": "404",
+        "pixel_m": 4.06
+      },
+      {
+        "zoom": 13,
+        "url": "https://tiles.mapterhorn.com/13/4897/3332.webp",
+        "http": "200",
+        "pixel_m": 8.12
+      }
+    ],
+    "note": "tilejson states no maxzoom; Mapterhorn download index lists the z13+ archive covering the anchor and its max_zoom. The finest served zoom is used; 5 m sampling interpolates it and adds no terrain detail."
+  },
+  "tiles_archived": true,
+  "tiles_total_bytes": 211338,
+  "tiles": [
+    {
+      "url": "https://tiles.mapterhorn.com/13/4897/3332.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain-wide/13-4897-3332.webp",
+      "bytes": 101772,
+      "sha256": "7c107ea9be46ae1b3ff2b6106cdd8557e65496f42681675cfdce2b17ff743fe1"
+    },
+    {
+      "url": "https://tiles.mapterhorn.com/13/4898/3332.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain-wide/13-4898-3332.webp",
+      "bytes": 109566,
+      "sha256": "9e279dfb492b8a1c45cf2f4277ab0fc44c6fff34c0f2b261ad4e2d08673715a8"
+    }
+  ],
+  "coverage_check": {
+    "tileset": "https://single-archive-tiles.mapterhorn.com/coverage.json",
+    "zoom": 12,
+    "tiles": [
+      {
+        "url": "https://single-archive-tiles.mapterhorn.com/coverage/12/2448/1666.mvt",
+        "file": "research/assets/plans/atlas-explorer/terrain-wide/coverage-12-2448-1666.mvt",
+        "bytes": 95,
+        "sha256": "b1b00c2033a916f4d53e4cd8535ca2baa35ffbfe9746e1edc6992b2d6007841a"
+      },
+      {
+        "url": "https://single-archive-tiles.mapterhorn.com/coverage/12/2449/1666.mvt",
+        "file": "research/assets/plans/atlas-explorer/terrain-wide/coverage-12-2449-1666.mvt",
+        "bytes": 95,
+        "sha256": "b1b00c2033a916f4d53e4cd8535ca2baa35ffbfe9746e1edc6992b2d6007841a"
+      }
+    ],
+    "method": "5 x 5 points across the patch (corners, quarter points, anchor) tested against the coverage polygons; Mapterhorn uses the finest covering source.",
+    "points": [
+      {
+        "x": -1200.0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -1200.0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -1200.0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -1200.0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -1200.0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      }
+    ],
+    "finest_source_over_patch": [
+      "isr10"
+    ]
+  },
+  "sources": [
+    {
+      "source": "glo30",
+      "name": "COPERNICUS GLO-30",
+      "website": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "license": "COPERNICUS full, free and open license",
+      "producer": "DLR e.V. 2010-2014, Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA. All rights reserved. Accessed via OpenTopography and AWS Open Data.",
+      "license_pdf": "https://github.com/mapterhorn/mapterhorn/blob/main/source-catalog/glo30/LICENSE.pdf",
+      "resolution": 30.0,
+      "access_year": 2025,
+      "tarball_size": 306375178240,
+      "tarball_md5sum": "133453b85b63c4a04538d77956c314d3",
+      "tarball_url": "https://download.mapterhorn.com/sources/glo30.tar"
+    },
+    {
+      "source": "isr10",
+      "name": "10 meter Digital Elevation Model (DEM) of Israel",
+      "website": "https://www.jspacesystems.or.jp/ersdac/GDEM/E/",
+      "license": "ASTER GDEM Public Domain",
+      "producer": "ASTER GDEM courtesy of METI and NASA processed by 4cast LTD using VTbuilder",
+      "license_pdf": "https://github.com/mapterhorn/mapterhorn/blob/main/source-catalog/isr10/LICENSE.pdf",
+      "resolution": 10.0,
+      "access_year": 2026,
+      "tarball_size": 1449093120,
+      "tarball_md5sum": "80a845ff3f99877fcd5b4a123dbc3eca",
+      "tarball_url": "https://download.mapterhorn.com/sources/isr10.tar"
+    }
+  ],
+  "source_note": "Mapterhorn source-catalog/isr10/metadata.json gives producer \"ASTER GDEM courtesy of METI and NASA processed by 4cast LTD using VTbuilder\": a 10 m posting resampled from ASTER GDEM, so effective detail is coarser than 10 m.",
+  "frame": "x east, z south, metres; MercatorCoordinate(origin.x + x*scale, origin.y + z*scale), scale = meterInMercatorCoordinateUnits() at the anchor (MapLibre earth radius 6371008.8 m), as in atlas/app/atlas-map-site-layer.ts.",
+  "sampling": "Bilinear decoded elevation from a seamless z13 mosaic (pixel centres +0.5); 481 x 481 samples at 5 m over a 2400 m square centred on the anchor; row-major from north-west (z=-1200) to south-east. Stored as int16 decimetres relative to centreElevation 732.53 m (quantisation 0.1 m).",
+  "asset": "atlas/public/terrain/jer_east_gate.json",
+  "asset_bytes": 617393,
+  "asset_sha256": "efe61d4b12fd03ccbddbd873a36741a1882c49d2865d90a62943a87b6b0879cc",
+  "elevation_range_m": [
+    600.1,
+    817.2
+  ],
+  "centre_elevation_m": 732.53,
+  "hillshade": {
+    "file": "research/assets/plans/atlas-explorer/terrain-wide/jer_east_gate-hillshade.png",
+    "pixels": [
+      962,
+      996
+    ],
+    "sha256": "e5cec4a0b72c3c04c0292f1bb4f70df62494059b0a6f5ebbef189c5d4e503a99",
+    "kind": "project-generated derivative (hillshade, hypsometric tint, 20/100 m contours) of the sampled grid; not a source image",
+    "markers": [
+      {
+        "x": 0,
+        "z": 0,
+        "radius_m": 50,
+        "label": "Eastern gate & wall anchor (~50 m)"
+      },
+      {
+        "x": -151.2,
+        "z": 71.2,
+        "radius_m": 30,
+        "label": "jer_temple gazetteer pt (~150 m)",
+        "id": "jer_temple"
+      },
+      {
+        "x": 0.0,
+        "z": 278.0,
+        "radius_m": 30,
+        "label": "jer_se_corner gazetteer pt (~80 m)",
+        "id": "jer_se_corner"
+      },
+      {
+        "x": -31.2,
+        "z": 328.0,
+        "radius_m": 30,
+        "label": "jer_south_wall gazetteer pt (~80 m)",
+        "id": "jer_south_wall"
+      },
+      {
+        "x": 221.2,
+        "z": 209.0,
+        "radius_m": 30,
+        "label": "jer_kidron_mon gazetteer pt (~100 m)",
+        "id": "jer_kidron_mon"
+      },
+      {
+        "x": 109.6,
+        "z": 521.5,
+        "radius_m": 30,
+        "label": "jer_kidron_east gazetteer pt (~300 m)",
+        "id": "jer_kidron_east"
+      },
+      {
+        "x": 235.4,
+        "z": -58.9,
+        "radius_m": 30,
+        "label": "jer_gethsemane gazetteer pt (~100 m)",
+        "id": "jer_gethsemane"
+      },
+      {
+        "x": -73.7,
+        "z": 979.6,
+        "radius_m": 30,
+        "label": "jer_siloam gazetteer pt (~300 m)",
+        "id": "jer_siloam"
+      },
+      {
+        "x": -104.9,
+        "z": -278.0,
+        "radius_m": 30,
+        "label": "jer_bethesda gazetteer pt (~50 m)",
+        "id": "jer_bethesda"
+      },
+      {
+        "x": -255.2,
+        "z": 215.7,
+        "radius_m": 30,
+        "label": "jer_tyropoeon gazetteer pt (~200 m)",
+        "id": "jer_tyropoeon"
+      },
+      {
+        "x": -732.6,
+        "z": -1070.9,
+        "radius_m": 30,
+        "label": "jer_tombs_kings gazetteer pt (~50 m)",
+        "id": "jer_tombs_kings"
+      },
+      {
+        "x": -52.1,
+        "z": 648.7,
+        "radius_m": 30,
+        "label": "jer_givati gazetteer pt (~100 m (excavation area, not the building))",
+        "id": "jer_givati"
+      }
+    ],
+    "overlays": "dashed box = existing 800 m atlas patch; north arrow; 500 m scale bar"
+  },
+  "overlap_check": null,
+  "limit": "Modern terrain (Mapterhorn compilation), not ancient ground surface. Anchor is a gazetteer point (precision as recorded); the patch does not register any plan or identify a feature. Modern road cuts, spoil, wadi beds and the receding Dead Sea shoreline are present-day surfaces. Source DEM effective resolution is coarser than the 5 m grid; interpolation adds no detail, and steep cliff faces are smoothed. Vertical datum as delivered by Mapterhorn from the source DEM (not independently checked)."
+}

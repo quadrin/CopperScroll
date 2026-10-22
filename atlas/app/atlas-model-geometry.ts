@@ -1,6 +1,6 @@
 import * as T from "three";
 import { landscapeGround, elevationAt, placeTerrain, type LandscapeGround } from "./atlas-model-landscape";
-import { siteContext, pavedIndex, greenIndex, buildSiteContext, CONTEXT_LICENCE } from "./atlas-model-context";
+import { siteContext, pavedIndex, greenIndex, buildSiteContext, CONTEXT_LICENCE, type ContextFeature } from "./atlas-model-context";
 import { SVGLoader } from "three/addons/loaders/SVGLoader.js";
 import type { SitePlan } from "./atlas-explorer-model";
 import { createSiteMaterials, cloneSiteMaterial, chippedBlock } from './atlas-site-materials';
@@ -11,7 +11,21 @@ import type { TerrainPatch } from './atlas-model-landscape';
 const traced=tracedData as unknown as Record<string,TracedPlan>;
 // Illustrative heights for traced plans, used only where no height is published.
 export const TRACED_HEIGHTS={ruin:.9,wall:3.2,column:3.6,columnBase:.4,depth:2,dashed:.12,podium:1};
-export type BuildOptions={layer?:string;terrain?:TerrainPatch};
+// `context`: the mapped surroundings of a plan placed in its setting (atlas/public/context), when loaded.
+export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFeature[]};
+// How a plan that has no registration of its own meets its mapped setting: the model point (or marker)
+// that goes onto the mapped target or the place anchor, the model point (or marker) where model height
+// `datumY` meets the modern terrain, and whether its display bench is kept around it.
+const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:number;bench?:boolean}>={
+ 'qumran-settlement':{},
+ 'bethesda-pools':{point:'dam'},
+ // The gatehouse is the frame's origin; y = 0 is the Haram surface at cistern XV.
+ 'east-gate-warren':{datum:'cistern-xv'},
+ 'jericho-early':{},'jericho-late':{},
+ // The precinct stands on the summit platform, 15.5 m above the model's base.
+ 'gerizim-precinct':{datumY:15.5,bench:false},
+ 'hyrcania-waterworks':{},
+};
 
 export type { ModelCamera } from "./atlas-explorer-model";
 export type ModelGeometry = { root: T.Group; markers: Map<string, T.Vector3>; selectable: T.Object3D[]; roof: T.Group; note: string; assumptions: string[]; units: "metres" | "relative"; framing:T.Box3; landscape:{context:string;credit:string;mapped:boolean;registered?:boolean};walkStart?:{position:[number,number];bearing:number;pitch:number} };
@@ -258,8 +272,13 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   // Plate VI frame in metres: origin at the gate outline's centre, x to plate right (≈ east), z to plate down.
   // Levels: y = 0 at the Haram surface by cistern XV (2,408 ft); Warren's feet × 0.3048 below it.
   const ft=(level:number)=>(level-2408)*.3048,wallX=11.5,outside=ft(2389),shaftTop=ft(2333.5),gz=9.1,sx=53.48;
-  ground.pads.push({x:wallX+150,z:0,w:300,d:600,height:shaftTop,feather:.5},{x:wallX+.5,z:0,w:1,d:600,height:outside,feather:42},{x:wallX-150,z:0,w:300,d:600,height:0,feather:.5});
-  const surface=(x:number,z:number)=>{let y=-.28;for(const p of ground.pads){const d=Math.max(Math.abs(x-p.x)-p.w/2,Math.abs(z-p.z)-p.d/2,0),t=T.MathUtils.clamp(d/p.feather,0,1);y=T.MathUtils.lerp(y,p.height,1-t*t*(3-2*t));}return y;};
+  // Warren's levels as a stylised step: the outside ground at the gallery shaft, the ground at the wall's
+  // foot, and the Haram surface. The model's parts are placed on it. In the mapped setting the same pads
+  // are confined to the model's neighbourhood and feathered into the modern terrain.
+  const warrenPads=[{x:wallX+150,z:0,w:300,d:600,height:shaftTop,feather:.5},{x:wallX+.5,z:0,w:1,d:600,height:outside,feather:42},{x:wallX-150,z:0,w:300,d:600,height:0,feather:.5}];
+  if(siteContext(plan.id))ground.pads.push({x:wallX+35,z:0,w:70,d:140,height:shaftTop,feather:12},{x:wallX+.5,z:0,w:1,d:140,height:outside,feather:42},{x:wallX-80,z:0,w:160,d:180,height:0,feather:4});
+  else ground.pads.push(...warrenPads);
+  const surface=(x:number,z:number)=>{let y=-.28;for(const p of warrenPads){const d=Math.max(Math.abs(x-p.x)-p.w/2,Math.abs(z-p.z)-p.d/2,0),t=T.MathUtils.clamp(d/p.feather,0,1);y=T.MathUtils.lerp(y,p.height,1-t*t*(3-2*t));}return y;};
   const gate:Point[]=[[-12.39,-8.65],[12.39,-8.65],[12.39,8.65],[-12.39,8.65]],sill=ft(2396);
   slab(gate,.3,sill-.3,stone,"gatehouse");walls(gate,12,2.2,sill,"gatehouse");slab(gate,.6,sill+12,stone,"gatehouse");
   // Haram wall from just below the outside ground to an illustrative parapet. Its buried
@@ -566,24 +585,50 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   if(pieces?.some(piece=>piece.kind==='dam'))assumptions.push('The copper-coloured wall marks a dam that the source draws as a reconstruction. Its height and width are illustrative; no surviving remains are reported.');
   if(pieces?.some(piece=>piece.kind==='reconstruction'))assumptions.push('Copper-coloured channel lining marks the proposed course shown in the source. Its display does not establish surviving masonry. Covered passages have illustrative rectangular sections; the source plan does not measure their roof form.');
  }
+ // A plan placed in its mapped setting by the OpenStreetMap tool (tools/build_osm_context.py) moves from its
+ // own frame into the place frame: the chosen model point onto the mapped target (the place anchor when the
+ // plan is not registered), turned as registered, with model height datumY on the modern terrain.
+ const setting=placeFrame?undefined:siteContext(plan.id),fit=SETTINGS[plan.id];let anchored=false;
+ if(setting&&fit){
+  const reg=(setting.registration??{}) as {target?:Point;rotationDeg?:number;placement?:string};anchored=reg.placement==='anchor';
+  const pick=(p:Point|string|undefined,fallback:Point):Point=>{if(typeof p!=='string')return p??fallback;const m=markers.get(p);return m?[m.x,m.z]:fallback;};
+  const from=pick(fit.point,[0,0]),datum=pick(fit.datum,from),to=reg.target??[0,0],turn=T.MathUtils.degToRad(reg.rotationDeg??0);
+  const frame=new T.Group(),f=new T.Vector3(from[0],0,from[1]).applyAxisAngle(new T.Vector3(0,1,0),turn);frame.rotation.y=turn;frame.position.set(to[0]-f.x,0,to[1]-f.z);frame.updateMatrix();
+  const move=(p:Point):Point=>{const v=new T.Vector3(p[0],0,p[1]).applyMatrix4(frame.matrix);return [v.x,v.z];};
+  const patch=placeTerrain(plan.placeIds[0],options.terrain),at=move(datum),base=(patch?elevationAt(patch,at[0],at[1]):0)-(fit.datumY??0);
+  frame.position.y=base;frame.updateMatrix();
+  for(const child of [...root.children])frame.add(child);root.add(frame);
+  markers.forEach(v=>v.applyMatrix4(frame.matrix));
+  const centre=move([0,0]);
+  ground.holes=ground.holes.map(h=>h.map(move));
+  ground.pads=ground.pads.map(p=>{const [x,z]=move([p.x,p.z]);return {...p,x,z,height:p.height+base,angle:(p.angle??0)+turn};});
+  // The display bench becomes a pad around the model, at its own ground.
+  if(fit.bench!==false&&ground.bench!==false)ground.pads.unshift({x:centre[0],z:centre[1],w:ground.w,d:ground.d,height:base-.28,feather:Math.max(ground.w,ground.d)*.3,angle:turn});
+  ground.bench=false;placeFrame=centre;ground.focus=centre;
+  if(tracedStart)tracedStart={...tracedStart,position:move(tracedStart.position)};
+ }
  roof.visible=false;
  const [gx,gz]=placeFrame??[0,0],bounds=new T.Box3().setFromObject(root);bounds.expandByPoint(new T.Vector3(gx-ground.w/2,-1,gz-ground.d/2));bounds.expandByPoint(new T.Vector3(gx+ground.w/2,1,gz+ground.d/2));const center=placeFrame?new T.Vector3():bounds.getCenter(new T.Vector3());
  root.position.set(-center.x,0,-center.z);markers.forEach(p=>{p.x-=center.x;p.z-=center.z});
- const osm=placeFrame?siteContext(plan.id):undefined;if(osm){ground.paved=pavedIndex(osm.features);ground.green=greenIndex(osm.features);}
+ const osm=placeFrame?siteContext(plan.id):undefined,features=osm?options.context:undefined;if(features){ground.paved=pavedIndex(features);ground.green=greenIndex(features);}
  const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block,options.terrain);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;context.mesh.userData.siteContext='ground';root.add(context.mesh);context.details.position.set(center.x,0,center.z);context.details.userData.siteContext='details';root.add(context.details);
- if(osm){
+ if(osm&&features){
   // Mapped surroundings, added after the framing box so that they do not widen the model's own build.
+  // Around a plan that is not registered, none are drawn inside its own ground.
   const surface=context.mesh.userData.surfaceAt as (x:number,z:number)=>number,holes=ground.holes,reach=context.mesh.userData.radius*.4;
   const open=(x:number,z:number)=>holes.some(h=>{let hit=false;for(let i=0,j=h.length-1;i<h.length;j=i++){const [a,b]=h[i],[c,d]=h[j];if((b>z)!==(d>z)&&x<(c-a)*(z-b)/(d-b)+a)hit=!hit;}return hit;});
-  const keepOut=(x:number,z:number)=>open(x,z)||[...markers.values()].some(m=>Math.hypot(m.x-x,m.z-z)<6);
-  const group=buildSiteContext(osm.features,surface,{paving:stone,stair:surfaces.block,wall:stone,grave:surfaces.block},{keepOut,open,within:(x,z)=>Math.hypot(x-gx,z-gz)<reach});
+  const turn=(siteContext(plan.id)?.registration as {rotationDeg?:number}|null)?.rotationDeg??0,c=Math.cos(T.MathUtils.degToRad(turn)),s=Math.sin(T.MathUtils.degToRad(turn));
+  const ownGround=(x:number,z:number)=>{const dx=x-gx,dz=z-gz;return Math.abs(dx*c-dz*s)<ground.w/2&&Math.abs(dx*s+dz*c)<ground.d/2;};
+  const keepOut=(x:number,z:number)=>open(x,z)||[...markers.values()].some(m=>Math.hypot(m.x-x,m.z-z)<6)||(anchored&&ownGround(x,z));
+  const group=buildSiteContext(features,surface,{paving:stone,stair:surfaces.block,wall:stone,grave:surfaces.block},{keepOut,open,within:(x,z)=>Math.hypot(x-gx,z-gz)<reach});
   root.add(group);
+  if(anchored)assumptions.push(`The model is not registered to these surroundings: it stays at the site anchor (${plan.placeIds[0]}), so where it sits among them is uncertain by the anchor's precision. No mapped feature is drawn inside the model's own ground.`);
   assumptions.push(`Surroundings are today's, from OpenStreetMap (${CONTEXT_LICENCE}; retrieved ${osm.retrieved}; record ${osm.record}): ${group.userData.counts.graves.toLocaleString('en')} graves set in rows inside the mapped cemetery areas (about 1 × 2 m, 1.45 m apart; long axes east–west, or across the qibla in the Muslim cemetery; illustrative, not mapped graves), mapped footpaths (2.4 m where no width is mapped), roads (3.5–8 m by class) and stairs (0.4 m treads on the terrain), ${group.userData.counts.trees.toLocaleString('en')} trees (mapped single trees, and trees about 7 m apart in mapped woods and orchards; sizes illustrative), green ground in mapped woods, orchards and grass, city walls (2.6 m thick, 12 m above the lower ground where no height is mapped), retaining walls, gate buildings (9 m above the ground where no height is mapped) and ${group.userData.counts.buildings} buildings (mapped heights, else 6.5 m; flat roofs, with domes and pyramids where mapped). They show the modern setting and are not evidence for the ancient one.`);
  }
  assumptions.push(surfaces.style.photos.length?`Base colours and the ${surfaces.style.masonry} masonry pattern are taken from reference photographs (${surfaces.style.photos.join(', ')}): sunlit-face medians of sample boxes, recorded in research/assets/plans/atlas-explorer/surface-samples-2026-10-17. ${surfaces.style.masonryNote??''} Individual stones, joints, chipped edges, plaster wear and soil relief remain illustrative, not recorded stones or weathering; photographs vary in exposure and white balance.`:`Surface art uses a ${surfaces.style.id} material palette, metre-scaled stone joints, chipped edges, plaster wear and soil relief. These are illustrative visual treatments, not recorded individual stones or weathering.`);
- assumptions.push(context.patch&&osm?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles in the place’s own frame; the model is placed and turned by mapped outlines, as stated above. The terrain is not ancient ground level.":context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");
+ assumptions.push(context.patch&&osm&&!anchored?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles in the place’s own frame; the model is placed and turned by mapped outlines, as stated above. The terrain is not ancient ground level.":context.patch&&osm?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles in the place’s own frame, with the model’s ground levelled into it at the site anchor. Its position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");
  const starts:Record<string,[string,number,number,number,number]>={'temple-great-sea':['great-sea',0,-34,180,84],'gerizim-precinct':['east-stair',28,22,308,100],'hyrcania-waterworks':['north-pool',0,-12,180,76],'jericho-early':['complex',-14.5,0,90,80],'jericho-late':['complex',-14.5,0,90,80],'siloam-receiver':['L103',0,6,0,80],'doq-waterworks':['intake',4,5,-35,83],'jericho-ac':['AC94',0,7,0,80],'bethesda-pools':['dam',-12,0,160,84],'east-gate-warren':['massive-wall',8,-12,270,90]};
  const start=starts[plan.id],point=start?markers.get(start[0]):undefined;
  const walkStart=point&&start?{position:[point.x+start[1],point.z+start[2]] as Point,bearing:start[3],pitch:start[4]}:tracedStart&&{...tracedStart,position:[tracedStart.position[0]-center.x,tracedStart.position[1]-center.z] as Point};
- return {root,roof,markers,selectable,note,assumptions,units,walkStart,framing:bounds.translate(new T.Vector3(-center.x,0,-center.z)),landscape:{context:osm?'Terrain and mapped surroundings · model registered to OpenStreetMap outlines':context.context,credit:osm?`${context.credit} · surroundings © OpenStreetMap contributors (ODbL)`:context.credit,mapped:!!context.patch,registered:!!osm}};
+ return {root,roof,markers,selectable,note,assumptions,units,walkStart,framing:bounds.translate(new T.Vector3(-center.x,0,-center.z)),landscape:{context:osm?(anchored?'Terrain and mapped surroundings · model at the site anchor, not registered':'Terrain and mapped surroundings · model registered to OpenStreetMap outlines'):context.context,credit:osm?`${context.credit} · surroundings © OpenStreetMap contributors (ODbL)`:context.credit,mapped:!!context.patch,registered:!!osm&&!anchored}};
 }

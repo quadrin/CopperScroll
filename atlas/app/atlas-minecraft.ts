@@ -43,6 +43,13 @@ export async function loadTerrainPatch(placeId:string){
  return {lat:t.lat,lon:t.lon,anchorPrecision:'wide patch',extent:t.extent,size:t.size,elevations,centreElevation:t.centreElevation};
 }
 
+// The mapped surroundings of a plan placed in its setting (atlas/public/context), or null.
+export async function loadSiteContext(planId:string){
+ const {siteContext}=await import('./atlas-model-context'),entry=siteContext(planId);if(!entry)return null;
+ const response=await fetch(`${base()}${entry.features}`);if(!response.ok)return null;
+ return (await response.json() as {features:import('./atlas-model-context').ContextFeature[]}).features;
+}
+
 // Minecraft-style brightness for sky light 0–15, with a floor of 40 % so the walls of caves,
 // chambers and tunnels keep their detail; the light still falls off into them.
 export const skyBrightness=(level:number)=>{const f=level/15;return .4+.6*f/(4-3*f);};

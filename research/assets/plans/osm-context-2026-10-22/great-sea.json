@@ -6,7 +6,9 @@
  "generator": "openstreetmap-cgimap 2.1.0 (1284 spike-08.openstreetmap.org)",
  "licence": "Open Database License (ODbL) 1.0; © OpenStreetMap contributors, https://www.openstreetmap.org/copyright",
  "place": "jer_temple",
- "plan": "temple-great-sea",
+ "plans": [
+  "temple-great-sea"
+ ],
  "frame": "x east, z south, metres from the place anchor in the MapLibre Mercator frame",
  "selection": "ways classified as context (steps, paths, roads, city walls, retaining walls, cemeteries, gate buildings, buildings and building parts, woods, orchards and grass) and mapped single trees with any vertex within 400 m of (30, 60); plus the monument outlines or corner nodes used for registration",
  "counts": {
