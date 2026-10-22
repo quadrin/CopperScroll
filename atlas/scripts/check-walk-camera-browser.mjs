@@ -88,7 +88,8 @@ try{
   assert(samples.every(s=>s.pitch>75&&s.zoom>19),'Walking must remain at eye level through terrain failure, resize and camera commands');
   // A fixed view (a photo's viewpoint): the drawn camera takes its eye, bearing, pitch and field of view; walking
   // and looking are frozen; releasing it leaves the walker standing at the viewpoint with the walking FOV.
-  if(await page.evaluate(()=>typeof walk.setView==='function')){
+  const fixedView=await page.evaluate(()=>typeof walk.setView==='function');
+  if(fixedView){
    const area=await page.locator('canvas').boundingBox(),d=()=>page.evaluate(()=>({...testMap.getCanvas().dataset}));
    await page.evaluate(()=>{cameraSamples.length=0;walk.setView({eye:[4,2.3,-6],bearing:30,pitch:12,fov:48});});
    // A fixed view draws only when something changes: ask for frames while waiting.
@@ -133,6 +134,6 @@ try{
   await page.waitForFunction(()=>document.querySelector('.walk-signs')?.hidden===true);
   await page.evaluate(()=>testMap.jumpTo({zoom:17,pitch:40}));
   assert.equal(await page.evaluate(()=>testMap.getPitch()),40,'Map camera ownership must be released on exit');
-  assert.deepEqual(errors,[]);console.log(`${mobile?'Phone':'Desktop'} rendered camera passed: missing DEM, crouch, sprint/FOV, jump, look, delayed elevation, resize, competing camera command, feature signs, fixed photo view, picking and exit (${samples.length} frames).`);await page.close();
+  assert.deepEqual(errors,[]);console.log(`${mobile?'Phone':'Desktop'} rendered camera passed: missing DEM, crouch, sprint/FOV, jump, look, delayed elevation, resize, competing camera command, feature signs${fixedView?', fixed photo view, picking':''} and exit (${samples.length} frames).`);await page.close();
  }
 }finally{await browser.close();}
