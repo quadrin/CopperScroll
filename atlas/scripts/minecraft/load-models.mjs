@@ -46,5 +46,7 @@ export function loadModels(){
  const geometry=module('atlas-model-geometry.ts',{'three':Three,'three/addons/loaders/SVGLoader.js':{SVGLoader},'./atlas-model-landscape':landscape,'./atlas-model-context':context,'./atlas-site-materials':surfaces,'./atlas-traced':tracedHelpers,'./atlas-traced-plans.json':asModule(tracedPlans)});
  // The pilot only needs MercatorCoordinate for map placement helpers, not for its geometry.
  const pilot=module('atlas-qumran-pilot.ts',{'three':Three,'maplibre-gl':{MercatorCoordinate:class{}},'./atlas-site-materials':surfaces});
- return {Three,terrain,tracedPlans,plans:json('atlas-site-plans.json'),places:json('atlas-data.json').places,surfaces,landscape,geometry,pilot};
+ // The Ancient ground view's entries and published pads, for the bare builds.
+ const ancient=module('atlas-ancient-ground.ts',{'./atlas-site-context.json':asModule(json('atlas-site-context.json'))});
+ return {Three,terrain,tracedPlans,plans:json('atlas-site-plans.json'),places:json('atlas-data.json').places,surfaces,landscape,geometry,pilot,ancient};
 }

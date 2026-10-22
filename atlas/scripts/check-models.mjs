@@ -121,10 +121,14 @@ for(const id of Object.keys(settings)){
  assert.ok(!bare.root.children.some(c=>c.userData.siteContext==='osm'),`${id}: the Ancient ground view draws no mapped feature`);
  assert.ok(!ground.userData.pavedAt&&tint(ground)===0,`${id}: the Ancient ground view has no paving or green tint`);
  assert.deepEqual([...bare.markers.keys()].sort(),plan.features.map(f=>f.id).sort(),`${id}: all features remain in the Ancient ground view`);
+ // The Ancient ground view in blocks is a bare build on the same block grid as Today's, so its rings leave the same holes.
+ const today=models.get(id)??exports.buildModel(plan,{context:surroundings(id)});
+ assert.ok(bare.framing.equals(today.framing),`${id}: the Ancient ground view keeps Today's frame`);
 }
 {const today=kidron.root.children.find(c=>c.userData.siteContext==='ground');assert.ok(today.userData.pavedAt&&tint(today)>0,'Kidron today: paving and green ground are drawn');
  const plan=plans.find(p=>p.id==='kidron-bene-hezir'),a=kidron.markers.get('absalom'),pad={x:a.x+30,z:a.z,w:8,d:8,height:-50,feather:2},padded=exports.buildModel(plan,{pads:[pad]}),g=padded.root.children.find(c=>c.userData.siteContext==='ground');
  assert.ok(Math.abs(g.userData.heightAt(pad.x-g.position.x,pad.z-g.position.z)+50)<1e-6,'a pad for one view sets the ground under it');
+ assert.ok(padded.framing.equals(kidron.framing),'a pad does not move the frame, so a bare build with pads keeps the block grid');
  assert.deepEqual(ancient.ancientGroundPads({plan:'test',ground:'published',note:'',sources:['x'],pads:[{x:1,z:2,w:3,d:4,level:700,feather:5,turnDeg:90,locator:'x'}]},650).map(p=>[p.height,+p.angle.toFixed(4)]),[[50,1.5708]],'a level above sea level becomes a height in the model frame');}
 // Walk signs: a tag for every kind of record, one sign per feature, and a model line only while the
 // sentence it restates is still in the record.
@@ -143,4 +147,4 @@ for(const [id,model] of models){const plan=plans.find(p=>p.id===id),items=signs.
  for(const wide of signs.MODEL_WIDE)assert.ok(sources.includes(wide.evidence),`model-wide sign line must restate a model statement: ${wide.evidence}`);}
 assert.equal(signs.walkSignItems(plans.find(p=>p.id==='kidron-bene-hezir'),kidron.markers,kidron.assumptions).find(s=>s.id==='porch').drawing,null,'no model line is invented');
 assert.ok(signs.signOpacity(10)===1&&signs.signOpacity(signs.SIGN_RANGE)===0&&signs.signOpacity(32)>0&&signs.signOpacity(32)<1,'signs fade out by 40 m');
-console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction, models placed on mapped outlines with their surroundings, ${tracedViews} traced-plan views, ${builtViews} views of hand-built plans, Ancient ground views of ${Object.keys(settings).length} mapped plans and walk signs (${Object.keys(signs.MODEL_DRAWING).length} feature lines on the model's drawing).`);
+console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction, models placed on mapped outlines with their surroundings, ${tracedViews} traced-plan views, ${builtViews} views of hand-built plans, Ancient ground views of ${Object.keys(settings).length} mapped plans on Today’s frames and walk signs (${Object.keys(signs.MODEL_DRAWING).length} feature lines on the model's drawing).`);

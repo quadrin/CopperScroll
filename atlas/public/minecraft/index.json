@@ -2013,6 +2013,146 @@
     "stone_slab[type=bottom]": 15087
    },
    "quads": 35241
+  },
+  "temple-great-sea.bare": {
+   "file": "temple-great-sea.bare.bin.gz",
+   "plan": "temple-great-sea",
+   "layer": null,
+   "ring": null,
+   "bare": true,
+   "normalBuild": "temple-great-sea",
+   "pads": null,
+   "surroundings": [
+    "temple-great-sea~ring1.bare",
+    "temple-great-sea~ring2.bare"
+   ],
+   "terrainPlace": null,
+   "bytes": 16633,
+   "blockSize": 0.5,
+   "origin": [
+    18,
+    -22.5,
+    121
+   ],
+   "blocks": [
+    142,
+    32,
+    170
+   ],
+   "world": {
+    "x0": 55296,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "coursed",
+   "fills": {
+    "commands": 703,
+    "filled": 633610
+   },
+   "readback": {
+    "blocks": 772480,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 0
+   },
+   "counts": {
+    "coarse_dirt": 80102,
+    "smooth_quartz": 8692,
+    "smooth_quartz_slab[type=bottom]": 5256,
+    "stone": 536001,
+    "stone_slab[type=bottom]": 72,
+    "stone_slab[type=top]": 3487
+   },
+   "quads": 3301
+  },
+  "temple-great-sea~ring1.bare": {
+   "file": "temple-great-sea~ring1.bare.bin.gz",
+   "plan": "temple-great-sea",
+   "layer": null,
+   "ring": 0,
+   "bare": true,
+   "normalBuild": "temple-great-sea~ring1",
+   "pads": null,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 326436,
+   "blockSize": 1,
+   "origin": [
+    -304,
+    -80,
+    -304
+   ],
+   "blocks": [
+    608,
+    97,
+    608
+   ],
+   "world": {
+    "x0": 73728,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "coursed",
+   "fills": {
+    "commands": 37284,
+    "filled": 24696409
+   },
+   "readback": {
+    "blocks": 35857408,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 2433536
+   },
+   "counts": {
+    "coarse_dirt": 727258,
+    "stone": 23969151
+   },
+   "quads": 50486
+  },
+  "temple-great-sea~ring2.bare": {
+   "file": "temple-great-sea~ring2.bare.bin.gz",
+   "plan": "temple-great-sea",
+   "layer": null,
+   "ring": 1,
+   "bare": true,
+   "normalBuild": "temple-great-sea~ring2",
+   "pads": null,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 206615,
+   "blockSize": 8,
+   "origin": [
+    -1152,
+    -144,
+    -1152
+   ],
+   "blocks": [
+    288,
+    27,
+    288
+   ],
+   "world": {
+    "x0": 74752,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "coursed",
+   "fills": {
+    "commands": 12117,
+    "filled": 1074872
+   },
+   "readback": {
+    "blocks": 2239488,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 110592
+   },
+   "counts": {
+    "coarse_dirt": 15251,
+    "stone": 1044626,
+    "stone_slab[type=bottom]": 14995
+   },
+   "quads": 34972
   }
  },
  "minecraft": {
