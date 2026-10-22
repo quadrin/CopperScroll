@@ -32,7 +32,9 @@ const hyrcania=models.get('hyrcania-waterworks');
 for(const [id,depth] of [['north-pool',5],['south-member',2.6]]){
  const floor=hyrcania.selectable.find(o=>o.userData.featureId===id&&o.geometry.type==='ExtrudeGeometry');
  const box=new Three.Box3().setFromObject(floor);
- assert.ok(Math.abs(box.max.y+depth)<1e-6,`${id}: basin floor must follow its own published depth`);
+ // The pool stands on the terrain at its own place: its rim is its marker's height less 0.55 m.
+ const rim=hyrcania.markers.get(id).y-.55;
+ assert.ok(Math.abs(box.max.y-(rim-depth))<1e-6,`${id}: basin floor must follow its own published depth`);
 }
 const cave=models.get('abu-saraj-iv17');
 const pillar=cave.selectable.find(o=>o.userData.featureId==='pillar');
@@ -41,7 +43,9 @@ assert.ok(height>=1.4&&height<=1.7,'cave height must remain within the reported 
 assert.equal(cave.units,'metres');
 assert.equal(cave.landscape.mapped,false,'unlocated cave must not acquire geographic terrain');
 assert.equal(models.get('gerizim-precinct').landscape.mapped,true);
-assert.ok(models.get('gerizim-precinct').assumptions.some(s=>s.includes('not surveyed or registered')));
+for(const id of ['gerizim-precinct','jericho-early','jericho-late','hyrcania-waterworks']){const m=models.get(id);assert.equal(m.landscape.registeredBy,'imagery',`${id}: registered to satellite imagery`);assert.ok(m.assumptions.some(s=>s.includes('satellite imagery')),`${id}: the imagery registration is stated`);}
+{const g=models.get('gerizim-precinct').markers.get('persian-precinct');assert.ok(Math.hypot(g.x-12.7,g.z+42)<.5,'Gerizim: the precinct core stands where the registered plans put it');}
+{const h=models.get('hyrcania-waterworks').markers.get('north-pool');assert.ok(Math.hypot(h.x+101.3,h.z+76.6)<3,'Hyrcania: the north pool stands where the registered figure puts it');}
 assert.equal(models.get('doq-waterworks').units,'relative');
 assert.ok(models.get('gerizim-precinct').assumptions.some(s=>s.includes('not equated with the southern seven-step')));
 // Traced plans: each view builds; the remains view shows only what was found, and a

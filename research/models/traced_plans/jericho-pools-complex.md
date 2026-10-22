@@ -20,7 +20,7 @@ I did not open the Netzer front matter, Drive "PROTECTED" folders, or any record
 ## Frame and transforms
 
 - Units are metres, with x east and z south. The origin is the outer north-west corner of the northern pool as Plan 20 draws it. At that point the outer face of the shared west wall meets the outer face of the north wall.
-- North comes from the Netzer plans. Their north arrows point to the right. The frame north is the normal to the drawn outer west face of the pools, which is 0.14° from the image axis in Plan 20. No source says whether this is grid north or true north. No geographic coordinates are given.
+- North comes from the Netzer plans. Their north arrows point to the right. The frame north is the normal to the drawn outer west face of the pools, which is 0.14° from the image axis in Plan 20. No source says whether this is grid north or true north. No geographic coordinates are given. *(22 October 2026: registered to imagery through Fig. 18, the frame north lies about 10.6° anticlockwise of true north; the frame's origin is at (−183.2, −239.1) m from the `jericho_palaces` anchor; [record](../../assets/plans/imagery-registration-2026-10-22/jericho.json).)*
 - Levels use the Netzer site datum (for example, the pool tops are ca. +100.40, p. 79). The inspected pages do not give the benchmark. `ground` = 100.47 is the median of ten printed Plaza floor levels (100.27–100.87).
 - Plan 20 is scaled by its own bar: 0 m at px 352.6 and 10 m at px 551.3, which gives 19.87 px/m.
 - Each other figure is registered with a similarity fit (scale, rotation and shift) to pool corners that it shares with Plan 20. The full coefficients are in `sources[].transform`.

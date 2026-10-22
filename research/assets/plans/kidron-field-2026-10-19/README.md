@@ -40,3 +40,7 @@ Ten items are in the atlas photo gallery of the Kidron monuments (`jer_kidron_mo
 ## Limits
 
 Photos record shape and facing; they date nothing. No rating changes from this set. For any use that needs position or facing, the originals with a phone-paired GPS log, or a compass note per shot, are needed.
+
+## Photogrammetry test (22 October 2026)
+
+To get a better ground surface at the monuments' feet than the 5 m terrain model, a structure-from-motion run (pycolmap 4.2.1, SIFT, exhaustive matching; one camera model per device) was tried on all 51 photographs and the 11 archived video frames. Only 3 images joined one model (2,372 points, mean reprojection error 0.79 px). Result: these reduced copies, taken from few standpoints with little overlap, cannot give a surface. A usable capture would be one walk round each monument and along the scarp foot with a photo every 1–2 m (60–80 % overlap), at full resolution, ideally from the iPhone with location on; or the two original videos, whose frames overlap densely (they stay in Drive: IMG_9844 is 177 MB and the Drive connector refuses files that large).
