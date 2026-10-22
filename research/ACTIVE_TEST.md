@@ -1,8 +1,8 @@
 # Active test
 
-Updated 20 October 2026 UTC. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
+Updated 22 October 2026 UTC. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (20 October 2026 Jerusalem, evening): **obtained** — Magen & Peleg 2018, Site Description, printed pp. 58–87, from the owner's upload of the JSTOR chapter (CC BY-NC 4.0). Pool L91 (with L85, one pool) is 15.60 × 4.40 m and 5.25 m deep (p. 86), against Galor's 4 m; L138 is 4.80 × 3.40 m (p. 84); L83, L119/L119 bis and L67 are described (pp. 82–86). Applied to the Qumran settlement tracing and atlas model ([record](models/traced_plans/qumran-settlement.md)); 15 figure pages archived with the download footer cropped ([folder](assets/plans/magen-peleg2018/README.md)).
+Last session (21–22 October 2026 Jerusalem): **obtained** — the owner's 326 NLI photos of 21 Oct, sorted and read under the screening rules ([records](sources/nli_photos_2026-10-21/)): Patrich, Hyrcania pp. 336–352; Ilan & Amit pp. 381–386; Gibson & Jacobson 1996; Avigad 1954; Pierre & Rousée 1981; Magen et al. 2004 (Gerizim vol. I); Yericho 1978; Netzer 2001 plan sheets; Netzer & Garbrecht pp. 366–377 and the Mafjar chapter under the Sultan screen. Changed: the p. 385 run-off wall is at no. 19, not no. 16 (entry 21); Gibson & Jacobson's Great Sea is their No. 3, and their Cistern 8 is the Well of the Leaf; the Bene Ḥezir façade faces south-west (Avigad p. 37); P5178 is not in Gerizim vol. I; no 21 Oct record shows the SULTAN-1 strip at a registrable scale (Aqueducts Fig. 1b ≈11 m/px, p. 366 Fig. 2 ≈18 m/px; [screen](sources/nli_photos_2026-10-21/sultan_screen_2026-10-22.md)). Pages still needed: project doc nli_round3_pages_2026-10-22.
 
 ## Active questions and the observation that decides each
 
