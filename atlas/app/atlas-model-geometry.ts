@@ -18,9 +18,12 @@ export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFe
 // that goes onto the mapped target or the place anchor, the model point (or marker) where model height
 // `datumY` meets the modern terrain, and whether its display bench is kept around it.
 // `centre` is the model point that the model's ground (and its block build) is centred on, if not its origin.
-const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:number;bench?:boolean;centre?:Point}>={
+// `level` (metres above sea level) puts model height 0 at a published level instead of on the modern terrain.
+const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:number;bench?:boolean;centre?:Point;level?:number;levelNote?:string}>={
  // The traced frame's origin (the centre of cistern L110) is the registered point.
- 'qumran-settlement':{point:'traced-origin'},
+ // Its ground is the median of the 31 published room and court levels on Magen & Peleg Fig. 57 (−324.54 m),
+ // 0.28 m below the model's floors as on every bench.
+ 'qumran-settlement':{point:'traced-origin',level:-324.26,levelNote:'Heights: the model’s ground is set to −324.54 m, the median of the 31 room and court spot levels printed on Magen & Peleg 2018 Fig. 57 (−323.41 to −326.02 m; pools and channels left out), not to the modern terrain. Single rooms differ from it by up to 1.5 m; the traced walls keep one ground.'},
  'bethesda-pools':{point:'dam'},
  // The gatehouse is the frame's origin; y = 0 is the Haram surface at cistern XV.
  'east-gate-warren':{datum:'cistern-xv'},
@@ -680,8 +683,8 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   const from=pick(fit.point,[0,0]),datum=pick(fit.datum,from),to=reg.target??[0,0],turn=T.MathUtils.degToRad(reg.rotationDeg??0);
   const frame=new T.Group(),f=new T.Vector3(from[0],0,from[1]).applyAxisAngle(new T.Vector3(0,1,0),turn);frame.rotation.y=turn;frame.position.set(to[0]-f.x,0,to[1]-f.z);frame.updateMatrix();
   const move=(p:Point):Point=>{const v=new T.Vector3(p[0],0,p[1]).applyMatrix4(frame.matrix);return [v.x,v.z];};
-  const patch=placeTerrain(plan.placeIds[0],options.terrain),at=move(datum),base=(patch?elevationAt(patch,at[0],at[1]):0)-(fit.datumY??0);
-  frame.position.y=base;frame.updateMatrix();
+  const patch=placeTerrain(plan.placeIds[0],options.terrain),at=move(datum),base=fit.level!==undefined&&patch?fit.level-patch.centreElevation:(patch?elevationAt(patch,at[0],at[1]):0)-(fit.datumY??0);
+  frame.position.y=base;frame.updateMatrix();if(fit.levelNote)assumptions.push(fit.levelNote);
   for(const child of [...root.children])frame.add(child);root.add(frame);
   markers.forEach(v=>v.applyMatrix4(frame.matrix));
   const centre=move(fit.centre??[0,0]);

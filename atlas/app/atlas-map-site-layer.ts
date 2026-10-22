@@ -105,9 +105,9 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    }
    sky.update(camera.projectionMatrix,eye,!!walking);
    renderer.resetState();renderer.clearDepth();renderer.render(scene,camera);avatar.render(renderer,map.getCanvas().clientWidth/map.getCanvas().clientHeight);renderer.resetState();runtime.renderedFrames++;
-   const canvas=map.getCanvas();canvas.dataset.siteFrames=String(runtime.renderedFrames);canvas.dataset.siteMeshes=String(runtime.meshCount);canvas.dataset.siteVertices=String(runtime.vertexCount);
+   const canvas=map.getCanvas();canvas.dataset.siteFrames=String(runtime.renderedFrames);canvas.dataset.siteMeshes=String(runtime.meshCount);canvas.dataset.siteVertices=String(runtime.vertexCount);canvas.dataset.siteBuild=build?.header.id??'smooth';
    canvas.dataset.siteElevation=base.toFixed(2);canvas.dataset.siteAnchor=new T.Vector3().applyMatrix4(camera.projectionMatrix).toArray().map(n=>n.toFixed(4)).join(',');
   },
-  onRemove(){signs?.dispose();measure?.dispose();map.off('terrain',terrainChanged);map.off('sourcedata',terrainLoaded);disposeSiteScene(scene);avatar.dispose();scene.traverse(o=>{if(o instanceof T.DirectionalLight)o.shadow.dispose();});renderer?.dispose();for(const key of ['siteFrames','siteMeshes','siteVertices','siteElevation','siteAnchor'])delete map.getCanvas().dataset[key];}
+  onRemove(){signs?.dispose();measure?.dispose();map.off('terrain',terrainChanged);map.off('sourcedata',terrainLoaded);disposeSiteScene(scene);avatar.dispose();scene.traverse(o=>{if(o instanceof T.DirectionalLight)o.shadow.dispose();});renderer?.dispose();for(const key of ['siteFrames','siteMeshes','siteVertices','siteBuild','siteElevation','siteAnchor'])delete map.getCanvas().dataset[key];}
  };
 }

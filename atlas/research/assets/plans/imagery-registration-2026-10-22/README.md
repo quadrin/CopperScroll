@@ -22,7 +22,7 @@ Three atlas models had no mapped outline to tie them to, so they stood at their 
 
 ## Limits
 
-- **Bethesda is not refined.** In this imagery (Vantor Legion, 3 January 2025, 0.34 m, stated accuracy 8.5 m) the pools lie in deep shade under trees, and the model is a diagram of published sizes with an assumed angle: no figure in the repository ties the pools to St Anne's church or another mapped building. It stays on the centroid of the mapped excavation outline (about ±25 m). A plan that draws the pools with the church (Gibson 2005, *POC* 55, in the owner's Drive; or Pierre & Rousée 1981 Figs. 2–3) would allow a fit on the church's mapped outline.
+- **Bethesda is not refined.** In this imagery (Vantor Legion, 3 January 2025, 0.34 m, stated accuracy 8.5 m) the pools lie in deep shade under trees, and the model is a diagram of published sizes with an assumed angle: no figure in the repository ties the pools to St Anne's church or another mapped building. It stays on the centroid of the mapped excavation outline (about ±25 m). A plan that draws the pools with the church (Gibson 2005, *POC* 55, in the owner's Drive; or Pierre & Rousée 1981 Figs. 2–3) would allow a fit on the church's mapped outline. *(Later the same night: Schick's 1888 plan was registered to the church and city wall, but it ties only his small pool, not the dam; [record](../bethesda-early-plans-2026-10-22/README.md).)*
 
 - The imagery's own stated accuracy is 5 m. The plan-to-imagery fits agree within about 2–3 m.
 - These placements are for display. They change no reading, test, identification or rating. Hyrcania's pool and tunnel positions in any entry test still need surveyed controls (see [the 30 September record](../../../sites/hyrcania_plan_registration_2026-09-30.md)).

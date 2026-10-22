@@ -92,3 +92,15 @@ Read in full from the uploaded chapter. Applied to the tracing and the atlas:
 - L67: a further sedimentation pool, 2.05 × 1.75 m and 1.43 m deep, on the channel to L71 (p. 86). Fig. 9 does not label it; it is not traced.
 
 These pages give no depth for L110, L117, L118 or L138, so those stay illustrative.
+
+## Published levels used for the model's ground (22 October 2026)
+
+EVIDENCE (Magen & Peleg 2018 Fig. 57, p. 53, western building, detailed plan; spot levels in metres below sea level, read on the figure): rooms and courts, by area —
+- north (L132, L134, L133, L138): −323.68, −324.53, −324.55, −324.85, −324.63;
+- western building (L115, L116, L120, L111, L121, L122–L124, L4008, L4010): −324.2, −324.23, −324.23, −325.14, −325.12, −326.02, −324.7, −325.17, −324.55;
+- south-west (L100–L104, L4005, W666): −323.67, −324.28, −325.14, −323.65, −323.80, −323.41, −324.54, −324.39;
+- east (L88, L92, L99, L105–L107, L125–L128): −324.36, −325.44, −324.32, −324.41, −324.66, −324.54, −325.67, −324.71, −324.67.
+
+Left out: pool and stepped-pool levels (L110 −330.19, L117 −328.23, L91 −328.48 and its steps, L118) and levels on the channels M5, M6 and M12. The surface each spot marks is not stated on the figure (as noted above).
+
+INFERENCE: 31 levels, median −324.54 m (mean −324.56; range −323.41 to −326.02). Today's terrain model gives −324.7 to −324.9 m round L110. The atlas model's ground is now set to the median (0.28 m below its floors, as on every bench) in both views, and the Ancient ground view uses one pad at that level over the settlement. One level stands for rooms that differ by up to 1.5 m; per-room levels are not traced.

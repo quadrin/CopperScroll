@@ -41,6 +41,13 @@ try {
    if(route.request().url().startsWith('https://atlas-test.invalid/terrain/'))return route.fulfill({contentType:'image/png',body:negativeTerrain});
    return route.abort('failed');
   });
+  // The Kidron monuments are checked without their bare builds, so that the Smooth fallback of the
+  // Ancient ground view stays tested once every plan has them.
+  await page.route(/\/minecraft\/index\.json$/,async route=>{
+   const response=await route.fetch(),index=await response.json();
+   for(const [key,site] of Object.entries(index.sites))if(site.bare&&site.plan==='kidron-bene-hezir')delete index.sites[key];
+   return route.fulfill({response,json:index});
+  });
   await page.goto(origin+'#entry-21/2d');
   await page.evaluate(()=>{window.atlasTestEvents=[];const push=history.pushState;history.pushState=function(...args){window.atlasTestEvents.push(['navigate',String(args[2])]);return push.apply(this,args);};document.addEventListener('click',event=>{const label=event.target.closest('button,summary')?.textContent;if(label)window.atlasTestEvents.push(['click',label.slice(0,80)]);},true);});
   await page.waitForFunction(count=>document.querySelectorAll('.site-pin').length===count,mapped.length);
@@ -198,7 +205,7 @@ try {
   await page.getByRole('tab',{name:'Satellite',exact:true}).click();await page.getByRole('status').filter({hasText:'Satellite imagery could not load'}).waitFor();await page.getByRole('tab',{name:'Map',exact:true}).click();
   if(!mobile){
    // Ancient ground at the Kidron monuments: today's mapped features are not drawn and the caption says the
-   // ground is today's terrain. The block builds include those features, so Blocks is drawn smooth there.
+   // ground is today's terrain. Without a bare build (left out of the index above), Blocks is drawn smooth there.
    const caption=page.locator('.map-site-caption'),ground=caption.getByRole('group',{name:'Ground',exact:true}),dataset=()=>page.evaluate(()=>({...document.querySelector('.maplibregl-canvas')?.dataset}));
    const rebuilt=async(action,drawn=true)=>{await page.evaluate(()=>{const s=document.querySelector('[data-site-state]');window.siteStates=[];window.siteStateWatch?.disconnect();window.siteStateWatch=new MutationObserver(()=>window.siteStates.push(s.dataset.siteState));window.siteStateWatch.observe(s,{attributes:true,attributeFilter:['data-site-state']});});await action();await page.waitForFunction(drawn=>window.siteStates.includes('loading')&&document.querySelector('[data-site-state]')?.dataset.siteState==='ready'&&(!drawn||Number(document.querySelector('.maplibregl-canvas')?.dataset.siteFrames)>1),drawn,{timeout:120000});};
    const todayNote=/The ground is today’s terrain, shown without modern features; it is not an ancient surface\./;
@@ -220,7 +227,8 @@ try {
    assert.match(await sources.innerText(),/Ancient ground view: today’s mapped features[\s\S]*it is not an ancient surface/);
    await page.getByRole('button',{name:'Close site reference panel'}).click();
    await rebuilt(()=>caption.getByRole('button',{name:'Blocks',exact:true}).click());
-   assert.match(await caption.innerText(),/drawn smooth/);assert.doesNotMatch(await caption.innerText(),/built in Minecraft/,'Blocks include today’s features, so Ancient ground is drawn smooth');
+   assert.match(await caption.innerText(),/drawn smooth/);assert.doesNotMatch(await caption.innerText(),/built in Minecraft/,'Without a bare build, Ancient ground is drawn smooth');
+   assert.equal((await dataset()).siteBuild,'smooth','Ancient ground in Blocks falls back to the smooth model');
    assert.equal(Number((await dataset()).siteVertices),bare,'Ancient ground in Blocks is the same smooth model');
    await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
    await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true',{},{timeout:120000});
@@ -230,9 +238,31 @@ try {
    await page.getByRole('button',{name:'Back to map',exact:true}).click();await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='false');
    await rebuilt(()=>ground.getByRole('button',{name:'Today',exact:true}).click());
    assert.match(await caption.innerText(),/built in Minecraft/,'Today returns to the block build');assert.doesNotMatch(await caption.innerText(),todayNote);
+   assert.equal((await dataset()).siteBuild,'kidron-bene-hezir','Today draws the normal block build');
+   // The Great Sea has bare builds: Ancient ground in Blocks draws them (near build and rings), without
+   // today's mapped features, and keeps the caption about today's terrain.
+   await page.getByLabel('Browse all sites',{exact:true}).click();await page.getByRole('searchbox',{name:'Search map sites'}).fill('Temple enclosure');
+   await rebuilt(()=>page.getByRole('button',{name:/^Temple enclosure/}).click(),false);
+   assert.equal(await page.locator('[data-site-plan]').getAttribute('data-site-plan'),'temple-great-sea');
+   await page.getByRole('button',{name:'Zoom to site',exact:true}).click();await caption.waitFor();
+   await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.siteFrames)>1,{},{timeout:60000});
+   assert.equal((await dataset()).siteBuild,'temple-great-sea','Today in Blocks draws the normal build');
+   const seaToday=Number((await dataset()).siteVertices);
+   await rebuilt(()=>ground.getByRole('button',{name:'Ancient ground',exact:true}).click());
+   assert.equal((await dataset()).siteBuild,'temple-great-sea.bare','Ancient ground in Blocks draws the bare build');
+   const seaCaption=await caption.innerText();
+   assert.match(seaCaption,/built in Minecraft/);assert.match(seaCaption,todayNote,'The caption still says the ground is today’s terrain');assert.doesNotMatch(seaCaption,/drawn smooth/);
+   const seaBare=Number((await dataset()).siteVertices);
+   assert.ok(seaBare<seaToday,`The bare build leaves out today's mapped features (${seaBare} vs ${seaToday} vertices)`);
+   await page.screenshot({path:'/tmp/copperscroll-great-sea-ancient-blocks-desktop.png'});
+   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
+   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true',{},{timeout:120000});
+   await page.getByRole('button',{name:'Back to map',exact:true}).click();await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='false');
+   await rebuilt(()=>ground.getByRole('button',{name:'Today',exact:true}).click());
+   assert.equal((await dataset()).siteBuild,'temple-great-sea','Today returns to the normal build');assert.doesNotMatch(await caption.innerText(),todayNote);
   }
   assert.deepEqual(errors,[]);
-  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, 3D geometry, persistent canvas, inline references, masonry collision, tap/held jumping, crouching, sprint controls/FOV, coverage gaps, provider failures, walk signs${mobile?'':' and the Kidron Ancient ground view'} (${normalMotion?'normal':'reduced'} motion).`);
+  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, 3D geometry, persistent canvas, inline references, masonry collision, tap/held jumping, crouching, sprint controls/FOV, coverage gaps, provider failures, walk signs${mobile?'':', the Kidron Ancient ground view (Smooth fallback) and the Great Sea Ancient ground view in blocks'} (${normalMotion?'normal':'reduced'} motion).`);
   await page.close();
   }catch(error){console.error(await page.evaluate(()=>({viewport:innerWidth,route:location.hash,plan:document.querySelector('[data-site-plan]')?.dataset.sitePlan,state:document.querySelector('[data-site-state]')?.dataset.siteState,walking:document.querySelector('[data-walking]')?.dataset.walking,canvas:{...document.querySelector('.maplibregl-canvas')?.dataset},events:window.atlasTestEvents})));await page.screenshot({path:`/tmp/copperscroll-map-failure-${mobile?'phone':'desktop'}.png`});throw error;}
  }
