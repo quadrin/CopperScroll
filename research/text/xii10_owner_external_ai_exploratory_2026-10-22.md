@@ -32,4 +32,6 @@ Fixed and committed before the owner or any reader opens a segment 21–23 frame
 - The owner's own reading is reported as given, with no score.
 
 ## Log
-- 22 Oct 2026: rules fixed and committed (this file).
+- 22 Oct 2026: rules fixed and committed (this file, a0245b3).
+- 22 Oct 2026 ~09:15–09:32 UTC: package prepared without this session opening any frame. Drive folder "Reading package (exploratory, 22 Oct)" holds 12 unchanged copies; 5 copies were refused by the session's permission checker and are left for the owner to copy (img_01, img_12, img_13, img_15, img_16). Key SHA-256 `db95cd0df403c76a95d1b9c4afe2f4980b35c130795e1905c046d618ddee293a` (kept in the project as `claude/xii10_external_ai_package_key_2026-10-22.json`; committed here after both outputs are in). Prompt SHA-256 `045d8f5a3af5f3b936b6c198ea1a2caf4192818f89de513f21e8bb51a4544d30`.
+- 22 Oct 2026 ~10:20 UTC: the owner began his own reading (local file with the 17 frames built in; start time recorded in the file). **Exposure:** in chat he sent a screenshot of that file showing part of one segment 21–23 frame (a strip held upright, about 900 × 600 px on screen). This Claude session saw it. It did not try to read any letter, locate any line or say anything about legibility. It is not a reader and not the administrator for this item.
