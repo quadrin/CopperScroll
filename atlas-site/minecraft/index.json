@@ -1030,7 +1030,7 @@
     "kidron-bene-hezir~ring2"
    ],
    "terrainPlace": null,
-   "bytes": 321520,
+   "bytes": 296210,
    "blockSize": 0.25,
    "origin": [
     -67,
@@ -1039,7 +1039,7 @@
    ],
    "blocks": [
     284,
-    112,
+    113,
     444
    ],
    "world": {
@@ -1049,28 +1049,29 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 40731,
-    "filled": 7495384
+    "commands": 38736,
+    "filled": 7569919
    },
    "readback": {
-    "blocks": 14122752,
+    "blocks": 14248848,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 2327872
+    "missingSkyLight": 2455696
    },
    "counts": {
-    "coarse_dirt": 763075,
-    "cut_sandstone": 33665,
-    "cut_sandstone_slab[type=bottom]": 4486,
-    "moss_block": 80072,
-    "smooth_stone": 61472,
-    "smooth_stone_slab[type=bottom]": 9421,
-    "smooth_stone_slab[type=top]": 4,
-    "stone": 6541271,
-    "stone_slab[type=bottom]": 846,
-    "stone_slab[type=top]": 1072
+    "coarse_dirt": 707110,
+    "cut_sandstone": 32997,
+    "cut_sandstone_slab[type=bottom]": 5939,
+    "cut_sandstone_slab[type=top]": 152,
+    "moss_block": 82033,
+    "smooth_stone": 54657,
+    "smooth_stone_slab[type=bottom]": 9296,
+    "smooth_stone_slab[type=top]": 68,
+    "stone": 6674944,
+    "stone_slab[type=bottom]": 1064,
+    "stone_slab[type=top]": 1659
    },
-   "quads": 54535
+   "quads": 50328
   },
   "kidron-bene-hezir@avigad": {
    "file": "kidron-bene-hezir@avigad.bin.gz",
@@ -1082,7 +1083,7 @@
     "kidron-bene-hezir~ring2"
    ],
    "terrainPlace": null,
-   "bytes": 327782,
+   "bytes": 302046,
    "blockSize": 0.25,
    "origin": [
     -67,
@@ -1091,7 +1092,7 @@
    ],
    "blocks": [
     284,
-    112,
+    113,
     444
    ],
    "world": {
@@ -1101,31 +1102,32 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 41101,
-    "filled": 7495268
+    "commands": 39097,
+    "filled": 7569788
    },
    "readback": {
-    "blocks": 14122752,
+    "blocks": 14248848,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 2317632
+    "missingSkyLight": 2442896
    },
    "counts": {
-    "coarse_dirt": 763039,
-    "cut_sandstone": 33665,
-    "cut_sandstone_slab[type=bottom]": 4486,
-    "moss_block": 80072,
+    "coarse_dirt": 707074,
+    "cut_sandstone": 32997,
+    "cut_sandstone_slab[type=bottom]": 5939,
+    "cut_sandstone_slab[type=top]": 152,
+    "moss_block": 82033,
     "smooth_sandstone": 2152,
     "smooth_sandstone_slab[type=bottom]": 138,
     "smooth_sandstone_slab[type=top]": 17,
-    "smooth_stone": 61472,
-    "smooth_stone_slab[type=bottom]": 9421,
-    "smooth_stone_slab[type=top]": 4,
-    "stone": 6538825,
-    "stone_slab[type=bottom]": 838,
-    "stone_slab[type=top]": 1139
+    "smooth_stone": 54657,
+    "smooth_stone_slab[type=bottom]": 9296,
+    "smooth_stone_slab[type=top]": 68,
+    "stone": 6672498,
+    "stone_slab[type=bottom]": 1056,
+    "stone_slab[type=top]": 1711
    },
-   "quads": 55608
+   "quads": 51336
   },
   "temple-great-sea": {
    "file": "temple-great-sea.bin.gz",
@@ -1186,7 +1188,7 @@
    "ring": 0,
    "surroundings": null,
    "terrainPlace": null,
-   "bytes": 1502161,
+   "bytes": 1499860,
    "blockSize": 1,
    "origin": [
     -304,
@@ -1195,7 +1197,7 @@
    ],
    "blocks": [
     608,
-    130,
+    132,
     608
    ],
    "world": {
@@ -1205,29 +1207,30 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 157336,
-    "filled": 23346370
+    "commands": 157232,
+    "filled": 23345822
    },
    "readback": {
-    "blocks": 48056320,
+    "blocks": 48795648,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 12381184
+    "missingSkyLight": 13051904
    },
    "counts": {
-    "coarse_dirt": 484450,
-    "cut_sandstone": 63697,
-    "cut_sandstone_slab[type=bottom]": 13632,
-    "cut_sandstone_slab[type=top]": 2996,
+    "coarse_dirt": 484315,
+    "cut_sandstone": 63709,
+    "cut_sandstone_slab[type=bottom]": 13631,
+    "cut_sandstone_slab[type=top]": 2985,
     "gray_concrete": 13626,
-    "moss_block": 148887,
-    "oak_leaves[persistent=true]": 102237,
-    "oak_log": 3710,
-    "smooth_stone": 61756,
-    "smooth_stone_slab[type=bottom]": 25610,
-    "stone": 22425769
+    "moss_block": 148858,
+    "oak_leaves[persistent=true]": 101440,
+    "oak_log": 3735,
+    "smooth_stone": 62010,
+    "smooth_stone_slab[type=bottom]": 25426,
+    "smooth_stone_slab[type=top]": 2,
+    "stone": 22426085
    },
-   "quads": 248619
+   "quads": 248139
   },
   "kidron-bene-hezir~ring2": {
    "file": "kidron-bene-hezir~ring2.bin.gz",
