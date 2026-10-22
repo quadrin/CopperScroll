@@ -16,7 +16,8 @@ export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFe
 // How a plan that has no registration of its own meets its mapped setting: the model point (or marker)
 // that goes onto the mapped target or the place anchor, the model point (or marker) where model height
 // `datumY` meets the modern terrain, and whether its display bench is kept around it.
-const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:number;bench?:boolean}>={
+// `centre` is the model point that the model's ground (and its block build) is centred on, if not its origin.
+const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:number;bench?:boolean;centre?:Point}>={
  // The traced frame's origin (the centre of cistern L110) is the registered point.
  'qumran-settlement':{point:'traced-origin'},
  'bethesda-pools':{point:'dam'},
@@ -27,7 +28,7 @@ const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:nu
  // The precinct stands on the summit platform, 15.5 m above the model's base.
  'gerizim-precinct':{datum:'persian-precinct',datumY:15.5,bench:false},
  // The parts spread round the hill on their own ground: no display bench.
- 'hyrcania-waterworks':{bench:false},
+ 'hyrcania-waterworks':{bench:false,centre:[-92,-5]},
 };
 // Hyrcania, metres from the place anchor (x east, z south), from Patrich 1989 Fig. 22 registered to imagery
 // (research/assets/plans/imagery-registration-2026-10-22/hyrcania.json).
@@ -221,7 +222,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
    for(const side of [-1,1])box(side*r,0,.4,len,.875,0,"tunnel-49",stone,g);
    const vault=new T.CylinderGeometry(r,r,len,16,1,true,-Math.PI/2,Math.PI);vault.rotateX(-Math.PI/2);const v=mesh(vault,stone,"tunnel-49",g);v.position.set(0,.875,0);(v.material as T.MeshStandardMaterial).side=T.DoubleSide;
    box(0,len/2-.6,1.55,1.2,1.25,0,"tunnel-49",earth,g);marker("tunnel-49",tx,tz-len/2+3,y+1.6);}
-  plinth(240,240,6.3,[n,s,south]);ground.focus=H.doublePool;
+  plinth(190,190,6.3,[n,s,south]);ground.focus=H.doublePool;
   assumptions.push("Positions come from Patrich 1989 Fig. 22 (p. 256; 0–50 m bar in five segments, 4.61 px/m on the scan), registered to Vantor WorldView-2 imagery of 21 October 2023 (Esri World Imagery, 0.5 m pixels, stated accuracy 5 m) by matching its walls to the imagery: the figure's page-up lies 4.75° ± 0.6° west of north, at 4.633 px/m (0.5 % from the bar). The figure's contours then follow the 10 m elevation model's contours round the hill, and its bridge, double pool, round cistern and southern cisterns fall on the features visible in the imagery. Record: research/assets/plans/imagery-registration-2026-10-22/hyrcania.json.","Northern pool sides approximate the published 19 / 15 / 18.2 / 16 m quadrilateral. Published maximum depths are shown: about 5 m north, 2.6 m south (Patrich 1989 p. 255; repeated in Patrich 2002 p. 348). Patrich's compass words for the sides are rounded: on the registered figure the pools' long sides run at about 122°.","Rock separation uses 5.1 m, the midpoint of the reported 4.8–5.4 m range. The southern pool's outline, the summit walls and buildings, the cisterns' sizes and depths and the tunnel's course are illustrative; each part stands on the 10 m modern elevation model at its own place, which is not the ancient ground.","The double pool is drawn rock-cut with plastered faces (Patrich 1989 p. 255, \"rock-cut double pool\"; reference photograph hyrcania-c-hurkania-5011 shows plastered rock walls), not as laid masonry; the coping course is illustrative.","East bridge (no. 48): 112 m long, 2.5 m wide at the base and 1.45 m at the top, about 6 m high at most today (Patrich 2002 pp. 346–348). Fig. 22 draws it across the saddle north-west of the summit; it is drawn along that line, from the summit track. Its foot follows the modern terrain and its top is level, 6 m above the saddle's lowest point; its varying preserved height and its Hasmonean lower courses are not drawn. Feldman (1973 or later, p. 334) gives the eastern saddle wall as 170 m long and 16.78 m high.","The round pit (3.05 m across, 4.3 m deep) and the point 49 tunnel (11.5 × 1.25 × 0.75 m, barrel-vaulted) use Patrich 2002's dimensions. The pit is set at the round cistern that Fig. 22 draws north-east of the double pool; the tunnel at the figure's (49). The tunnel's vault is drawn as a half-cylinder; its south end is drawn blocked by débris.","Floors are tinted to distinguish basins; the tint is not a reconstructed water level. Centre/rim origins and construction phases remain unresolved. The placement is for display: it changes no reading, test or rating.");
   if(herodian)assumptions.push("Herodian view: Patrich 2002 p. 348 puts the Herodian channel about 12.5 m above the bridge's base, 1.20 m above its present west end. The pale upper wall (1.45 m wide, from 6 to 12.5 m) and the 0.5 m channel on it are drawn only by this reconstruction; Patrich also offers upper arches or a siphon, and Ritmeyer's drawing (Fig. 17) was not traced. The channel's onward course to the upper cisterns on the south and east slopes is not drawn.");
  } else if(plan.id==="gerizim-precinct"){
@@ -682,7 +683,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   frame.position.y=base;frame.updateMatrix();
   for(const child of [...root.children])frame.add(child);root.add(frame);
   markers.forEach(v=>v.applyMatrix4(frame.matrix));
-  const centre=move([0,0]);
+  const centre=move(fit.centre??[0,0]);
   ground.holes=ground.holes.map(h=>h.map(move));
   ground.pads=ground.pads.map(p=>{const [x,z]=move([p.x,p.z]);return {...p,x,z,height:p.height+base,angle:(p.angle??0)+turn};});
   // The display bench becomes a pad around the model, at its own ground.

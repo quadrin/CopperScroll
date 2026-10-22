@@ -34,7 +34,8 @@ export const SITES=[
  {id:'siloam-receiver',size:.25},
  {id:'gerizim-precinct',size:.5,rings:CONTEXT_RINGS},
  {id:'doq-waterworks',size:.25},
- {id:'hyrcania-waterworks',size:.25,rings:CONTEXT_RINGS},
+ // Spread round its hill (about 110 m of relief), so 0.5 m blocks keep it within one strip and the height limit.
+ {id:'hyrcania-waterworks',size:.5,rings:CONTEXT_RINGS},
  {id:'abu-saraj-iv17',size:.25,roof:true,mapped:false},
  {id:'bethesda-pools',size:.5,rings:CONTEXT_RINGS},
  {id:'east-gate-warren',size:.5,rings:CONTEXT_RINGS},
