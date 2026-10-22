@@ -1,6 +1,6 @@
 import * as T from "three";
 import { landscapeGround, elevationAt, placeTerrain, type LandscapeGround } from "./atlas-model-landscape";
-import { siteContext, pavedIndex, buildSiteContext, CONTEXT_LICENCE } from "./atlas-model-context";
+import { siteContext, pavedIndex, greenIndex, buildSiteContext, CONTEXT_LICENCE } from "./atlas-model-context";
 import { SVGLoader } from "three/addons/loaders/SVGLoader.js";
 import type { SitePlan } from "./atlas-explorer-model";
 import { createSiteMaterials, cloneSiteMaterial, chippedBlock } from './atlas-site-materials';
@@ -371,9 +371,11 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   const west=along.y<0?new T.Vector2(along.y,-along.x):new T.Vector2(-along.y,along.x),valley=[(front[0]+foot[0])/2+west.x*11,(front[1]+foot[1])/2+west.y*11];
   ground.pads.push({x:valley[0],z:valley[1],w:26,d:length+20,height:base,feather:18,angle:Math.atan2(along.x,along.y)});
   // The rock pad starts 4.5 m behind the façade line: the terrain cells (about 4 m) would otherwise
-  // slope up across the façade.
-  const behind=flat(28,5),scarp=flat(11.5,6.5);
-  ground.pads.push({x:behind[0],z:behind[1],w:24,d:58,height:base+TOP-.3,feather:20,angle:turn},{x:scarp[0],z:scarp[1],w:17,d:37,height:base+TOP-.3,feather:2.5,angle:turn});
+  // slope up across the façade. It runs on 14 m south of the rock mass, past Zechariah, as the scarp
+  // does. To the north the scarp bends east towards Absalom (the mapped path at its foot runs there),
+  // so a shoulder further back covers the north side. The rock mass is then no free block.
+  const behind=flat(28,5),shoulder=flat(15,-17),scarp=flat(11.5,14);
+  ground.pads.push({x:behind[0],z:behind[1],w:24,d:58,height:base+TOP-.3,feather:20,angle:turn},{x:shoulder[0],z:shoulder[1],w:12,d:14,height:base+TOP-.3,feather:4,angle:turn},{x:scarp[0],z:scarp[1],w:17,d:52,height:base+TOP-.3,feather:2.5,angle:turn});
   plinth(70,110,2,[rockHole]);ground.bench=false;
   placeFrame=[(reg.absalomCentre[0]+reg.zechariahCentre[0])/2,(reg.absalomCentre[1]+reg.zechariahCentre[1])/2];ground.focus=flat(0,8);
   // Start on the valley floor, far enough out to see the façade 8.5 m up.
@@ -507,7 +509,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
  roof.visible=false;
  const [gx,gz]=placeFrame??[0,0],bounds=new T.Box3().setFromObject(root);bounds.expandByPoint(new T.Vector3(gx-ground.w/2,-1,gz-ground.d/2));bounds.expandByPoint(new T.Vector3(gx+ground.w/2,1,gz+ground.d/2));const center=placeFrame?new T.Vector3():bounds.getCenter(new T.Vector3());
  root.position.set(-center.x,0,-center.z);markers.forEach(p=>{p.x-=center.x;p.z-=center.z});
- const osm=placeFrame?siteContext(plan.id):undefined;if(osm)ground.paved=pavedIndex(osm.features);
+ const osm=placeFrame?siteContext(plan.id):undefined;if(osm){ground.paved=pavedIndex(osm.features);ground.green=greenIndex(osm.features);}
  const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block,options.terrain);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;context.mesh.userData.siteContext='ground';root.add(context.mesh);context.details.position.set(center.x,0,center.z);context.details.userData.siteContext='details';root.add(context.details);
  if(osm){
   // Mapped surroundings, added after the framing box so that they do not widen the model's own build.
@@ -516,7 +518,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   const keepOut=(x:number,z:number)=>open(x,z)||[...markers.values()].some(m=>Math.hypot(m.x-x,m.z-z)<6);
   const group=buildSiteContext(osm.features,surface,{paving:stone,stair:surfaces.block,wall:stone,grave:surfaces.block},{keepOut,open,within:(x,z)=>Math.hypot(x-gx,z-gz)<reach});
   root.add(group);
-  assumptions.push(`Surroundings are today's, from OpenStreetMap (${CONTEXT_LICENCE}; retrieved ${osm.retrieved}; record ${osm.record}): ${group.userData.counts.graves.toLocaleString('en')} graves set in rows inside the mapped cemetery areas (about 1 × 2 m, 1.45 m apart; long axes east–west, or across the qibla in the Muslim cemetery; illustrative, not mapped graves), mapped footpaths (2.4 m where no width is mapped) and stairs (0.4 m treads on the terrain), city walls (2.6 m thick, 12 m above the lower ground where no height is mapped), retaining walls, gate buildings (9 m above the ground where no height is mapped) and ${group.userData.counts.buildings} buildings (mapped heights, else 6.5 m; flat roofs, with domes and pyramids where mapped). They show the modern setting and are not evidence for the ancient one.`);
+  assumptions.push(`Surroundings are today's, from OpenStreetMap (${CONTEXT_LICENCE}; retrieved ${osm.retrieved}; record ${osm.record}): ${group.userData.counts.graves.toLocaleString('en')} graves set in rows inside the mapped cemetery areas (about 1 × 2 m, 1.45 m apart; long axes east–west, or across the qibla in the Muslim cemetery; illustrative, not mapped graves), mapped footpaths (2.4 m where no width is mapped), roads (3.5–8 m by class) and stairs (0.4 m treads on the terrain), ${group.userData.counts.trees.toLocaleString('en')} trees (mapped single trees, and trees about 7 m apart in mapped woods and orchards; sizes illustrative), green ground in mapped woods, orchards and grass, city walls (2.6 m thick, 12 m above the lower ground where no height is mapped), retaining walls, gate buildings (9 m above the ground where no height is mapped) and ${group.userData.counts.buildings} buildings (mapped heights, else 6.5 m; flat roofs, with domes and pyramids where mapped). They show the modern setting and are not evidence for the ancient one.`);
  }
  assumptions.push(surfaces.style.photos.length?`Base colours and the ${surfaces.style.masonry} masonry pattern are taken from reference photographs (${surfaces.style.photos.join(', ')}): sunlit-face medians of sample boxes, recorded in research/assets/plans/atlas-explorer/surface-samples-2026-10-17. ${surfaces.style.masonryNote??''} Individual stones, joints, chipped edges, plaster wear and soil relief remain illustrative, not recorded stones or weathering; photographs vary in exposure and white balance.`:`Surface art uses a ${surfaces.style.id} material palette, metre-scaled stone joints, chipped edges, plaster wear and soil relief. These are illustrative visual treatments, not recorded individual stones or weathering.`);
  assumptions.push(context.patch&&osm?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles in the place’s own frame; the model is placed and turned by mapped outlines, as stated above. The terrain is not ancient ground level.":context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");

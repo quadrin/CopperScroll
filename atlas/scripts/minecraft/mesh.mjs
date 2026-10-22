@@ -17,14 +17,14 @@ export function greedyQuads({nx,ny,nz,cells,feature,light}){
    for(let u=0;u<nu;u++)for(let v=0;v<nv;v++){
     const c=[0,0,0];c[axis]=t;c[ua]=u;c[va]=v;const n=at(c[0],c[1],c[2]),code=cells[n];if(!code)continue;
     const o=[...c];o[axis]+=sign;if(solid(o[0],o[1],o[2]))continue;
-    mask[u*nv+v]=1+code+(feature[n]<<3)+(lightAt(o[0],o[1],o[2])<<11);
+    mask[u*nv+v]=1+code+(feature[n]<<4)+(lightAt(o[0],o[1],o[2])<<12);
    }
    for(let u=0;u<nu;u++)for(let v=0;v<nv;){
     const key=mask[u*nv+v];if(!key){v++;continue;}
     let v1=v+1;while(v1<nv&&mask[u*nv+v1]===key)v1++;
     let u1=u+1;grow:while(u1<nu){for(let w=v;w<v1;w++)if(mask[u1*nv+w]!==key)break grow;u1++;}
     for(let uu=u;uu<u1;uu++)mask.fill(0,uu*nv+v,uu*nv+v1);
-    const value=key-1,code=value&7,feat=(value>>3)&255,lit=value>>11,group=`${code}:${feat}`;
+    const value=key-1,code=value&15,feat=(value>>4)&255,lit=value>>12,group=`${code}:${feat}`;
     let list=groups.get(group);if(!list)groups.set(group,list=[]);
     list.push(dir|lit<<3,sign>0?t+1:t,u,v,u1,v1);
     v=v1;

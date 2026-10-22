@@ -61,11 +61,25 @@ def classify(tags):
     hw, barrier, historic = tags.get('highway'), tags.get('barrier'), tags.get('historic')
     if hw == 'steps': return 'steps'
     if hw in ('footway', 'path', 'pedestrian', 'track'): return 'path'
+    if hw in ROAD_CLASSES or (hw or '').endswith('_link'): return 'road'
     if barrier == 'city_wall' or historic == 'citywalls': return 'wall'
     if barrier == 'retaining_wall': return 'retaining-wall'
     if tags.get('landuse') == 'cemetery' or tags.get('amenity') == 'grave_yard': return 'cemetery'
     if historic == 'city_gate' and 'building' in tags: return 'gate'
     if tags.get('building', 'no') not in ('no', 'roof', 'wall', 'construction', 'ruins') or tags.get('building:part', 'no') != 'no': return 'building'
+    if cover(tags): return 'green'
+    return None
+
+
+ROAD_CLASSES = ('motorway', 'trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'living_street', 'service')
+
+
+def cover(tags):
+    """Planted or green ground: 'wood' (forest, wood, tree groups), 'orchard', or 'grass'."""
+    landuse, natural, leisure = tags.get('landuse'), tags.get('natural'), tags.get('leisure')
+    if landuse == 'forest' or natural in ('wood', 'tree_group'): return 'wood'
+    if landuse == 'orchard': return 'orchard'
+    if landuse in ('grass', 'meadow', 'village_green') or natural in ('scrub', 'grassland', 'heath') or leisure in ('park', 'garden'): return 'grass'
     return None
 
 
@@ -186,7 +200,7 @@ def main():
             name = next(k for k, v in target['outlines'].items() if v == wid)
             outlines[name] = {'xz': xz[:-1] if refs[0] == refs[-1] else xz}
         elif not (kind and near): continue
-        elif kind == 'building' and (refs[0] != refs[-1] or len(refs) < 4): continue
+        elif kind in ('building', 'green') and (refs[0] != refs[-1] or len(refs) < 4): continue
         record = {'id': wid, 'version': int(w.get('version')), 'timestamp': w.get('timestamp'), 'tags': t,
                   'lat_lon': [[round(float(nodes[r].get('lat')), 7), round(float(nodes[r].get('lon')), 7)] for r in refs]}
         selected.append(record)
@@ -203,6 +217,8 @@ def main():
         if kind == 'steps' and 'incline' in t: feature['incline'] = t['incline']
         if kind == 'cemetery' and 'religion' in t: feature['religion'] = t['religion']
         if kind == 'path' and t.get('area') == 'yes' and refs[0] == refs[-1]: feature['area'] = True
+        if kind == 'road': feature['road'] = t['highway'].removesuffix('_link')
+        if kind == 'green': feature['cover'] = cover(t)
         if kind == 'building':
             levels = number(t.get('building:levels', ''))
             if feature.get('height') is None and levels: feature['height'] = round(levels * 3.2 + (number(t.get('roof:height', '')) or 0), 1)
@@ -211,6 +227,17 @@ def main():
             if t.get('roof:shape') in ('dome', 'pyramidal'): feature['roofShape'] = t['roof:shape']
             if t.get('roof:colour', '').startswith('#'): feature['roofColour'] = t['roof:colour']
             if t.get('building:part', 'no') != 'no': feature['part'] = True
+        projected.append(feature)
+    # Mapped single trees (nodes).
+    for n in root.iter('node'):
+        t = tags(n)
+        if t.get('natural') != 'tree': continue
+        x, z = pos[n.get('id')]
+        if math.hypot(x - cx, z - cz) > args.radius: continue
+        selected.append({'id': 'n' + n.get('id'), 'version': int(n.get('version')), 'timestamp': n.get('timestamp'), 'tags': t,
+                         'lat_lon': [[round(float(n.get('lat')), 7), round(float(n.get('lon')), 7)]]})
+        feature = {'id': 'n' + n.get('id'), 'kind': 'tree', 'pts': [[round(x, 2), round(z, 2)]]}
+        if t.get('leaf_type') in ('needleleaved', 'broadleaved'): feature['leafType'] = t['leaf_type']
         projected.append(feature)
     missing = set(target['outlines']) - set(outlines)
     if missing: sys.exit(f'outlines not in the extract: {sorted(missing)}')
@@ -227,7 +254,7 @@ def main():
               'osm_file_sha256': sha256(args.osm), 'generator': root.get('generator'),
               'licence': LICENCE, 'place': target['place'], 'plan': target['plan'],
               'frame': 'x east, z south, metres from the place anchor in the MapLibre Mercator frame',
-              'selection': f'ways classified as context (steps, paths, city walls, retaining walls, cemeteries, gate buildings, buildings and building parts) with any vertex within {args.radius:g} m of ({cx:g}, {cz:g}); plus the monument outlines or corner nodes used for registration',
+              'selection': f'ways classified as context (steps, paths, roads, city walls, retaining walls, cemeteries, gate buildings, buildings and building parts, woods, orchards and grass) and mapped single trees with any vertex within {args.radius:g} m of ({cx:g}, {cz:g}); plus the monument outlines or corner nodes used for registration',
               'counts': {k: sum(1 for f in projected if f['kind'] == k) for k in sorted({f['kind'] for f in projected})},
               'registration': registration, 'elements': selected}
     (ARCHIVE / f'{args.name}.json').write_text(json.dumps(record, ensure_ascii=False, indent=1) + '\n')

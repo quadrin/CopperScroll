@@ -91,7 +91,7 @@ export function voxelizeSite(models,spec){
  }
  // A ring holds terrain, and in a context ring the mapped surroundings except fine detail (stair treads).
  const solids=[],mapped=new Set();root.traverse(o=>{if(o.userData.siteContext==='osm')o.traverse(c=>mapped.add(c));});
- root.traverseVisible(o=>{if(!o.isMesh||ground.includes(o)||o.userData.walkCollision===false)return;if(spec.ring===undefined||(spec.context&&mapped.has(o)&&!o.userData.contextFine))solids.push(o);});
+ root.traverseVisible(o=>{if(!o.isMesh||ground.includes(o)||(o.userData.walkCollision===false&&!o.userData.blockSolid))return;if(spec.ring===undefined||(spec.context&&mapped.has(o)&&!o.userData.contextFine))solids.push(o);});
  // Vertical extent: everything inside the domain, with a margin below for the ground.
  let minY=Infinity,maxY=-Infinity;const p=new T.Vector3();
  for(const mesh of ground){
@@ -175,7 +175,8 @@ async function runServer({jar,java,work,builds,log}){
 
 // Requested and read-back states compare without the default waterlogged flag. Since
 // 26.x a block's default state is saved as its bare name; for a slab that is the bottom half.
-const normal=state=>state.replace(/,?waterlogged=false/,'').replace(/\[\]$/,'').replace(/\[,/,'[').replace(/_slab$/,'_slab[type=bottom]');
+// Leaves also save their distance to the nearest log, which the build does not set.
+const normal=state=>state.replace(/,?waterlogged=false/,'').replace(/distance=\d+,?/,'').replace(/\[\]$/,'').replace(/\[,/,'[').replace(/_slab$/,'_slab[type=bottom]');
 
 export function readBack(world,build){
  const {nx,ny,nz,blocks,palette,feature}=build.blocks,{x0,y0,z0}=build.world,table=blockTable(build.masonry);
@@ -219,7 +220,9 @@ async function main(){
   const back=readBack(world,build),{grid,spec}=build;
   index.minecraft.dataVersion??=world.chunk(Math.floor(build.world.x0/16),0)?.dataVersion??null;
   const groups=greedyQuads({...back.dims,cells:back.cells,feature:back.feature,light:back.light});
-  const header={version:1,id:spec.id,plan:spec.plan,layer:spec.layer??null,ring:spec.ring??null,size:grid.s,half:grid.h,origin:[grid.x0,grid.y0,grid.z0],dims:[back.dims.nx,back.dims.ny,back.dims.nz],materials:MATERIALS,masonry:build.masonry,features:build.features};
+  // The header lists materials up to the highest code used (at least the eight site materials).
+  const used=Math.max(7,...[...groups.keys()].map(k=>+k.split(':')[0]));
+  const header={version:1,id:spec.id,plan:spec.plan,layer:spec.layer??null,ring:spec.ring??null,size:grid.s,half:grid.h,origin:[grid.x0,grid.y0,grid.z0],dims:[back.dims.nx,back.dims.ny,back.dims.nz],materials:MATERIALS.slice(0,used+1),masonry:build.masonry,features:build.features};
   const file=encodeBuild(header,groups),quads=[...groups.values()].reduce((sum,q)=>sum+q.length/6,0);
   if(spec.mapped!==false)writeFileSync(`${values.out}/${spec.id}.bin.gz`,file);
   // The Qumran build's ground was fitted to one place's terrain patch; it fits only there.
