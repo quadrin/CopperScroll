@@ -23,11 +23,11 @@ All are **not identifiable from available evidence**; details in the history fil
 ## Pending requests
 
 - USC Libraries Special Collections (8 October UTC / 7 October Los Angeles): 1200-ppi WSRP masters of cuts 21–22.
-- Liverpool Special Collections and Archives (9 October): Jericho papers JG/8 and pre-camp records north of the tell; acknowledgement received, holdings not established.
+- Liverpool Special Collections and Archives (9 October; reply 21 October): they hold the Garstang Jericho material (JG/8 is an old reference): mainly photo prints and pottery sketches from the 1932–33 tombs, with no photo catalogue. A draft handlist is offered on condition it is not shared further; reading-room visit or copies (£1 per image plus £5). They name the PEF as holder of Garstang's Jericho site records.
 - CBRL (9 October; reply 12 October): preliminary list check found no early Jericho target; PEF considered likelier, regional archivists copied for custody confirmation.
-- Palestine Exploration Fund (8 October UTC / 7 October Los Angeles): Garstang Papers 1930–36 and pre-1948 Jericho photos.
+- Palestine Exploration Fund (8 October UTC / 7 October Los Angeles; reply 19 October): Garstang Papers 1930–36 and pre-1948 Jericho photos. Before any search the owner must accept the ethical policy and return the collections access form; research £10 per hour, £10 per digital image, possible reproduction fee. Holdings not yet confirmed.
 - Palestine Exploration Fund (13 October UTC / 12 October Los Angeles): existence, shelfmark and brief contents of original SWP Atara reservoir/outlet/bottom-channel sketches, plans, sections or notebook entries.
-- Lorenzo Nigro, Sapienza (8 October UTC / 7 October Los Angeles): records north of Tell es-Sultan; period attribution to be checked, meeting proposed for 18–24 October.
+- Lorenzo Nigro, Sapienza (8 October UTC / 7 October Los Angeles): records north of Tell es-Sultan. 8 October: he will check whether anything is datable to the scroll's period (still open). 21 October: on-site meeting offered for 22 October, declined by the owner for this trip. No record sent.
 - ÉBAF (8 October): EDF copy and X-rays of segments 21–22. On 11 October Jalabert referred access to the secretariat; he is away until 25 October. Replica/X-ray access needs separate confirmation.
 - J.-B. Humbert (11 October): postage quotation for his two offered Qumran volumes; the book offer supplies no replica appointment.
 - Carla Benelli, Mosaic Centre Jericho (7 October): Meinardus scan expected mid-October; 8 October welcome for an archive visit with notice, except Friday and Thursday afternoon.
@@ -38,7 +38,7 @@ All are **not identifiable from available evidence**; details in the history fil
 - Bruce Zuckerman, USC (5 October): original WSRP Figure 4.6 composite and component map.
 - Bruce Zuckerman, USC (17 October, sent by the owner from his University of Michigan address): study access to full-resolution 1988 WSRP masters for I 12, II 3–4, III 1/8/11, V 1–9, VIII 14, IX 7/10, X 15–16, XI 8/9/12 and XII 10. Any XII 8–12 frame is a reserved item under the arrival procedure (no agent opens it).
 - Nahshon Szanton, Tel Aviv University (6 October): Siloam main-side L103 junction section.
-- Rachel Bar-Nathan and Roi Porat (6 October; Rachel reply 12 October): Rachel holds unorganized field notes and requests owner call; A(C)94 junction/level records not supplied, Roi reply pending.
+- Rachel Bar-Nathan and Roi Porat (6 October; Rachel replies 12, 21 and 22 October): Rachel holds unorganized field notes; no meeting was possible this week and she proposes talking next week. A(C)94 junction section and level records not supplied; Roi reply pending.
 - Staff Officer for Archaeology archive (6 October): Wadi Nuʿeima inspection file from ESI 5 pp. 110–111.
 - Staff Officer for Archaeology archive (11 October UTC / 10 October Los Angeles): IV/17, Dadon, permit L-656; plans, threshold/wall sections, level and basket registers.
 - Hebrew University aerial archive (11 October UTC / 10 October Los Angeles): RAF PS30 5107/5137 and PS32 5069/5070 scans; resolution, coverage, quote and reuse terms.
