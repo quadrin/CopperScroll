@@ -17,7 +17,8 @@ export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFe
 // that goes onto the mapped target or the place anchor, the model point (or marker) where model height
 // `datumY` meets the modern terrain, and whether its display bench is kept around it.
 const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:number;bench?:boolean}>={
- 'qumran-settlement':{},
+ // The traced frame's origin (the centre of cistern L110) is the registered point.
+ 'qumran-settlement':{point:'traced-origin'},
  'bethesda-pools':{point:'dam'},
  // The gatehouse is the frame's origin; y = 0 is the Haram surface at cistern XV.
  'east-gate-warren':{datum:'cistern-xv'},

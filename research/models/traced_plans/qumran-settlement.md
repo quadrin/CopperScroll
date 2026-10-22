@@ -71,7 +71,7 @@ Fig. 57 (p. 53) prints spot levels inside some pools: −330.19 in L110, −328.
 
 ## Limits
 
-- The frame is not registered to geographic coordinates.
+- The frame is not registered to geographic coordinates. *(22 October 2026: registered to satellite imagery; the frame's origin, the centre of L110, lies at (−67.5, 63.0) m from the `kh_qumran` anchor and the frame is turned 0.6° anticlockwise; [record](../../assets/plans/imagery-registration-2026-10-22/qumran.json).)*
 - Preserved wall heights are not known.
 - Fig. 9 shows all remains of the 1993–2004 report together. It does not separate the authors' phases A and B or de Vaux's periods. It has no legend.
 - Walls drawn only as unfilled outlines are not traced. Most of them are in the central courtyard (around L24, L37 and L34), west of L30 and at L41/L39. Fig. 41 (p. 39) draws the courtyard ones as stone walls.

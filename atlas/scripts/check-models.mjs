@@ -45,6 +45,7 @@ assert.equal(cave.landscape.mapped,false,'unlocated cave must not acquire geogra
 assert.equal(models.get('gerizim-precinct').landscape.mapped,true);
 for(const id of ['gerizim-precinct','jericho-early','jericho-late','hyrcania-waterworks']){const m=models.get(id);assert.equal(m.landscape.registeredBy,'imagery',`${id}: registered to satellite imagery`);assert.ok(m.assumptions.some(s=>s.includes('satellite imagery')),`${id}: the imagery registration is stated`);}
 {const g=models.get('gerizim-precinct').markers.get('persian-precinct');assert.ok(Math.hypot(g.x-12.7,g.z+42)<.5,'Gerizim: the precinct core stands where the registered plans put it');}
+{const plan=plans.find(p=>p.id==='qumran-settlement'),q=exports.buildModel(plan,{context:surroundings(plan.id)}),c=q.markers.get('L110');assert.equal(q.landscape.registeredBy,'imagery','qumran-settlement: registered to satellite imagery');assert.ok(Math.hypot(c.x+67.5,c.z-63)<1.5,'Qumran: cistern L110 stands where the registered figure puts it');}
 {const h=models.get('hyrcania-waterworks').markers.get('north-pool');assert.ok(Math.hypot(h.x+101.3,h.z+76.6)<3,'Hyrcania: the north pool stands where the registered figure puts it');}
 assert.equal(models.get('doq-waterworks').units,'relative');
 assert.ok(models.get('gerizim-precinct').assumptions.some(s=>s.includes('not equated with the southern seven-step')));

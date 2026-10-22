@@ -1,0 +1,94 @@
+{
+ "title": "Imagery registration: qumran",
+ "date": "2026-10-22",
+ "frame": "place frame: metres from the place anchor in atlas/app/atlas-data.json, x east, z south, MapLibre Mercator scaled at the anchor (tools/build_osm_context.py Frame)",
+ "turnConvention": "turnDegClockwise: the plan's page axes are turned clockwise on the map by this angle (east towards south); pxPerM: plan pixels per metre; planPoint (pixels) lands on placePoint (place frame)",
+ "imagery": {
+  "service": "Esri World Imagery (World_Imagery MapServer), zoom-18 tiles; metadata from its identify query at the place anchor",
+  "source": "Vantor",
+  "sensor": "WV02 (WorldView-2)",
+  "date": "2023-10-21",
+  "resolution_m": 0.5,
+  "accuracy_m": 5,
+  "block": "Vivid_Standard_JO01_25Q3",
+  "release": "Raster Basemaps 2026.R01",
+  "use": "measurement only; tiles and resampled images are not archived (Esri terms of use)"
+ },
+ "method": "The plan is matched to Vantor WorldView-2 imagery (Esri World Imagery, 21 October 2023, 0.5 m, stated accuracy 5 m) by searching the turn, scale and shift that put its dark pixels on the imagery's edges (tools/imagery_registration.py fit), then checked by overlay and an independent part or source.",
+ "plans": [
+  "qumran-settlement"
+ ],
+ "place": "kh_qumran",
+ "anchor": [
+  31.74183,
+  35.45941
+ ],
+ "figures": [
+  {
+   "id": "mp2018-fig9",
+   "citation": "Magen & Peleg 2018, Site Description, Fig. 9 p. 12, 'Qumran, general plan' (0–20 bar, north arrow); CC BY-NC 4.0",
+   "file": "research/assets/plans/magen-peleg2018/fig09-p12.png",
+   "bar_pxPerM": 7.965,
+   "fit": {
+    "turnDegClockwise": -0.6,
+    "pxPerM": 7.846,
+    "planPoint": [
+     563.96,
+     658.45
+    ],
+    "placePoint": [
+     -67.5,
+     63.0
+    ],
+    "score": 40.954,
+    "baseline": 31.456
+   },
+   "excluded": "page margins, north arrow, labels, caption and bar: [0,0,1361,180], [0,1490,1361,1761], [0,0,230,1761], [1120,0,1361,1761], [1020,200,1080,330], [820,300,960,360], [380,230,520,280], [240,630,420,670], [700,1370,800,1400], [720,1150,860,1200], [960,1090,1100,1135], [220,1500,500,1540]",
+   "checks": {
+    "buildingsOnly": {
+     "turnDegClockwise": -1.6,
+     "pxPerM": 7.768,
+     "L110": [
+      -68.0,
+      63.5
+     ]
+    },
+    "plateauWallsOnly": {
+     "turnDegClockwise": -4.35,
+     "pxPerM": 8.122,
+     "L110": [
+      -67.0,
+      55.0
+     ],
+     "note": "long straight walls and dump edges only; weak"
+    },
+    "overlay": "the main building, the western structure and the L138 tower fall on the excavated walls",
+    "scale": "fitted 7.846 px/m is 1.5 % below the bar"
+   }
+  }
+ ],
+ "positions": {
+  "tracedOrigin_L110centre": [
+   -67.5,
+   63.0
+  ]
+ },
+ "previousPlacement": {
+  "method": "traced frame centre on the centroid of OSM way 611895589",
+  "L110": [
+   -52.2,
+   58.1
+  ],
+  "moveTo_m": 15.7
+ },
+ "placement": {
+  "target": [
+   -67.5,
+   63.0
+  ],
+  "rotationDeg": 0.6,
+  "modelPoint": "traced-origin",
+  "note": "the traced frame's origin (the centre of cistern L110) is put on the target and the frame turned 0.6° anticlockwise; the frame keeps the figure's bar scale"
+ },
+ "uncertainty_m": "about 2 at the buildings; the imagery's own stated accuracy is 5"
+}

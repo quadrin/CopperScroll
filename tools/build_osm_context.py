@@ -289,6 +289,11 @@ def main():
     elif placement == 'site': registration = site_registration(outlines['site']['xz'])
     elif placement == 'gate': registration = gate_registration(outlines['gate']['xz'])
     else: registration = {'target': [0, 0], 'rotationDeg': 0, 'placement': 'anchor', 'method': "Not registered: no mapped outline can be tied to a model point, so the model stays at the place anchor with the anchor's precision."}
+    # A placement registered to satellite imagery (tools/imagery_registration.py apply) is kept: it is
+    # finer than an outline centroid or the anchor.
+    if OUT.exists():
+        previous = json.loads(OUT.read_text())['plans'].get(target['plans'][0], {}).get('registration') or {}
+        if previous.get('placement') == 'imagery': registration = previous
 
     ARCHIVE.mkdir(parents=True, exist_ok=True); MIRROR.mkdir(parents=True, exist_ok=True)
     today = datetime.date.today().isoformat()
