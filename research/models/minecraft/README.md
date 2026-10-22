@@ -41,12 +41,16 @@ Rounding to the block size can move an edge or a height by up to half a block. T
 | bethesda-pools | 0.5 m | 256 × 37 × 256 | 15360, -60, 0 | 884 | 1,742,009 | 0 | 1,102 | bethesda-pools.bin.gz (6 KB) |
 | bethesda-pools@royal | 0.5 m | 256 × 31 × 256 | 16384, -60, 0 | 325 | 1,490,278 | 0 | 427 | bethesda-pools@royal.bin.gz (3 KB) |
 | east-gate-warren | 0.5 m | 260 × 85 × 200 | 17408, -60, 0 | 1,216 | 2,759,472 | 0 | 2,042 | east-gate-warren.bin.gz (11 KB) |
-| kidron-bene-hezir | 0.25 m | 384 × 92 × 480 | 18432, -60, 0 | 4,387 | 2,262,611 | 0 | 12,807 | kidron-bene-hezir.bin.gz (68 KB) |
-| kidron-bene-hezir@avigad | 0.25 m | 384 × 92 × 480 | 19456, -60, 0 | 5,000 | 2,262,641 | 0 | 14,294 | kidron-bene-hezir@avigad.bin.gz (75 KB) |
-| temple-great-sea | 0.5 m | 140 × 32 × 168 | 20480, -60, 0 | 920 | 609,147 | 0 | 3,645 | temple-great-sea.bin.gz (18 KB) |
+| kidron-bene-hezir | 0.25 m | 284 × 112 × 444 | 18432, -60, 0 | 38,522 | 7,424,587 | 0 | 54,886 | kidron-bene-hezir.bin.gz (315 KB) |
+| kidron-bene-hezir@avigad | 0.25 m | 284 × 112 × 444 | 19456, -60, 0 | 38,892 | 7,424,471 | 0 | 55,959 | kidron-bene-hezir@avigad.bin.gz (321 KB) |
+| temple-great-sea | 0.5 m | 142 × 46 × 170 | 20480, -60, 0 | 1,134 | 782,101 | 0 | 3,834 | temple-great-sea.bin.gz (19 KB) |
 | qumran-settlement | 0.5 m | 248 × 17 × 408 | 21504, -60, 0 | 3,174 | 1,422,484 | 0 | 11,222 | qumran-settlement.bin.gz (56 KB) |
 | qumran-settlement~ring1 | 2 m | 400 × 58 × 400 | 22528, -60, 0 | 25,754 | 3,546,029 | 0 | 37,949 | qumran-settlement~ring1.bin.gz (228 KB) |
 | qumran-settlement~ring2 | 8 m | 288 × 42 × 288 | 23552, -60, 0 | 11,110 | 754,106 | 0 | 32,757 | qumran-settlement~ring2.bin.gz (189 KB) |
+| kidron-bene-hezir~ring1 | 1 m | 608 × 130 × 608 | 24576, -60, 0 | 126,560 | 23,242,210 | 0 | 194,874 | kidron-bene-hezir~ring1.bin.gz (1145 KB) |
+| kidron-bene-hezir~ring2 | 8 m | 288 × 27 × 288 | 25600, -60, 0 | 13,574 | 1,027,149 | 0 | 40,988 | kidron-bene-hezir~ring2.bin.gz (237 KB) |
+| temple-great-sea~ring1 | 1 m | 608 × 114 × 608 | 26624, -60, 0 | 71,013 | 24,905,205 | 0 | 109,734 | temple-great-sea~ring1.bin.gz (676 KB) |
+| temple-great-sea~ring2 | 8 m | 288 × 27 × 288 | 27648, -60, 0 | 12,149 | 1,074,872 | 0 | 35,062 | temple-great-sea~ring2.bin.gz (202 KB) |
 
 A name with `@` is a reconstruction view of that plan (the plain name is its **Remains** view); `~ring1` and `~ring2` are the terrain rings. "Units" are the source-relative units of those scenes. Every air block next to a drawn face has saved sky light; sections without saved light are open sky or solid rock. The Qumran build is fitted to the Kh. Qumran terrain patch; at Wadi Qumran the atlas keeps the smooth model.
 
@@ -75,11 +79,11 @@ Two new site models and four new views of existing models, built the same way, w
 - `kidron-bene-hezir` and `temple-great-sea` are now registered to OpenStreetMap and keep the place frame ([record](../site_models_2026-10-22.md#surroundings-and-registration)). Both have wide terrain (Mapterhorn patches for `jer_kidron_mon` and `jer_temple`), so each gets two rings.
 - Rings are now set per site (`SITES[].rings` in `build-world.mjs`; Qumran keeps 2 m to 400 m and 8 m to 1,152 m). For these two: 1 m blocks to ±304 m, with the mapped surroundings built in, then 8 m blocks of terrain to ±1,152 m.
 - Surroundings in blocks: graves, city and retaining walls, gate buildings and buildings as solids; mapped paths and stairs as paved ground (the top half metre of the column takes the site's masonry block under a path and `smooth_stone` under a stair). Stair treads are built only in the fine builds, which include the surroundings inside their own area at their own block size.
-- The other builds are unchanged.
+- The other 21 builds read back with the same fill counts and blocks as before. All 28 read back with no mismatches.
 
 ## The world save
 
-[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (18.3 MB, rebuilt 22 October 2026 with all 24 builds) is the saved world, SHA-256 `0fe50dd51596e43f09d2f904cfc68f6986c891a6ad2a75a4bb1df0637fa3368a`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
+[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (22.9 MB, rebuilt on the evening of 22 October 2026 with all 28 builds) is the saved world, SHA-256 `84c732529b7f2859957c9a837233c17459458a94e4db49115041468a8e47fc0d`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
 
 ## Rebuild
 
