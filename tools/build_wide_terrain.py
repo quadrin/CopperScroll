@@ -276,6 +276,8 @@ def main():
     archive = REPO / 'research/assets/plans/atlas-explorer/terrain-wide'; archive.mkdir(parents=True, exist_ok=True)
     mirror = REPO / 'atlas/research/assets/plans/atlas-explorer/terrain-wide'
     out_path = REPO / f'atlas/public/terrain/{place_id}.json'; out_path.parent.mkdir(parents=True, exist_ok=True)
+    # One provenance manifest per place; Qumran's, the first, keeps its original name.
+    manifest_path = archive / ('manifest.json' if place_id == 'kh_qumran' else f'{place_id}-manifest.json')
     scratch = archive / '.fetch'; scratch.mkdir(exist_ok=True)
 
     # 1. Zoom: finest served zoom whose pixel is <= spacing, else the finest served zoom.
@@ -384,7 +386,7 @@ def main():
              'encoding': f'int16 little-endian, decimetres relative to centreElevation, row-major from north-west '
                          f'(z=-{extent / 2:g}) to south-east, base64',
              'zoom': zoom, 'source': 'Mapterhorn terrain tiles (' + ', '.join(finest) + ')',
-             'manifest': str((archive / 'manifest.json').relative_to(REPO)),
+             'manifest': str(manifest_path.relative_to(REPO)),
              'data': base64.b64encode(struct.pack(f'<{len(dm)}h', *dm)).decode('ascii')}
     out_path.write_text(json.dumps(asset, separators=(',', ':')) + '\n')
 
@@ -450,7 +452,7 @@ def main():
                  'shoreline are present-day surfaces. Source DEM effective resolution is coarser than the 5 m grid; interpolation adds no detail, '
                  'and steep cliff faces are smoothed. Vertical datum as delivered by Mapterhorn from the source DEM (not independently checked).',
     }
-    (archive / 'manifest.json').write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + '\n')
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + '\n')
     shutil.rmtree(scratch, ignore_errors=True)
     mirror.mkdir(parents=True, exist_ok=True)
     for f in mirror.iterdir():

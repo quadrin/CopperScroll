@@ -7,7 +7,11 @@ export const WALK_BODY={radius:.30,height:1.8,eye:1.62,crouchHeight:1.5,crouchEy
 // camera positions advanced at 120 Hz so movement stays smooth on the map.
 // Coefficient reference: PrismarineJS/prismarine-physics (normal movement).
 const GAME_TICK=1/20,SUBSTEP=1/120,GROUND_DRAG=.6*.91,AIR_DRAG=.91,VERTICAL_DRAG=.98;
-export type WalkIntent={forward:number;right:number;bearing:number;sprint:boolean;crouch:boolean;jump:boolean;jumpHeld?:boolean};
+export type WalkIntent={forward:number;right:number;bearing:number;sprint:boolean;crouch:boolean;jump:boolean;jumpHeld?:boolean;fly?:boolean;descend?:boolean};
+// Creative-mode flight, as Minecraft Java: abilities.flySpeed 0.05 blocks/tick (doubled when
+// sprinting), air drag 0.91; Space/Shift add ±3 × flySpeed per tick and vertical speed keeps 0.6
+// of itself each tick, so climbing and descending settle at 7.5 m/s. One block is one metre here.
+const FLY_SPEED=.05,FLY_CEILING=400;
 const UP=new T.Vector3(0,1,0),DOWN=new T.Vector3(0,-1,0),SKIN=.004;
 type Contact={normal:T.Vector3;depth:number};
 export type WalkWorld={tree:Octree;triangles:number;floor:(x:number,z:number,top:number,bottom:number)=>{height:number;normal:T.Vector3}|null;resolve:(body:Capsule,steep?:boolean)=>Contact[];clear:(body:Capsule)=>boolean};
@@ -75,7 +79,7 @@ export function pullNearPlane(projection:T.Matrix4,factor:number){
 }
 
 export class WalkCharacter {
- readonly capsule=new Capsule();readonly velocity=new T.Vector3();grounded=false;blocked=false;crouched=false;sprinting=false;
+ readonly capsule=new Capsule();readonly velocity=new T.Vector3();grounded=false;blocked=false;crouched=false;sprinting=false;flying=false;
  private safe=new T.Vector3();private accumulator=0;private jumpBuffer=0;private jumpCooldown=0;private substep=0;private horizontalDrag=GROUND_DRAG;
  constructor(private world:()=>WalkWorld,start:T.Vector3){this.spawn(start);}
  get feet(){return this.capsule.start.clone().addScaledVector(UP,-WALK_BODY.radius);}
@@ -87,27 +91,31 @@ export class WalkCharacter {
    const x=at.x+Math.cos(i*Math.PI/8)*ring*.4,z=at.z+Math.sin(i*Math.PI/8)*ring*.4,floor=world.floor(x,z,1000,-1000);if(!floor)continue;
    const foot=new T.Vector3(x,floor.height+SKIN,z),body=this.shape(foot,false);world.resolve(body);
    if(body.start.distanceTo(foot.clone().addScaledVector(UP,WALK_BODY.radius))>.15||!world.clear(body))continue;
-   this.capsule.copy(body);this.velocity.set(0,0,0);this.grounded=true;this.crouched=false;this.sprinting=false;this.blocked=false;this.jumpBuffer=0;this.jumpCooldown=0;this.substep=0;this.horizontalDrag=GROUND_DRAG;this.safe.copy(this.feet);return;
+   this.capsule.copy(body);this.velocity.set(0,0,0);this.grounded=true;this.crouched=false;this.sprinting=false;this.blocked=false;this.flying=false;this.jumpBuffer=0;this.jumpCooldown=0;this.substep=0;this.horizontalDrag=GROUND_DRAG;this.safe.copy(this.feet);return;
   }throw Error('There is no clear standing space here. Drop the person on open ground.');
  }
  advance(elapsed:number,input:WalkIntent){
-  this.accumulator+=Math.min(elapsed,.1);if(input.jump)this.jumpBuffer=.1;
+  // A double tap of Space starts or ends flight; it never queues a jump of its own.
+  if(input.fly){this.flying=!this.flying;this.jumpBuffer=0;if(this.flying){this.grounded=false;this.velocity.y=Math.max(this.velocity.y,0);}}
+  this.accumulator+=Math.min(elapsed,.1);if(input.jump&&!input.fly)this.jumpBuffer=.1;
   while(this.accumulator>=SUBSTEP){this.step(SUBSTEP,input);this.accumulator-=SUBSTEP;}
  }
  private step(dt:number,input:WalkIntent){
-  const world=this.world(),old=this.feet,height=input.crouch?WALK_BODY.crouchHeight:WALK_BODY.height;
-  if(input.crouch||!this.crouched||world.clear(this.shape(old,false))){this.crouched=input.crouch;this.capsule.end.y=this.capsule.start.y+height-2*WALK_BODY.radius;}
+  // While flying, Shift descends instead of crouching.
+  const world=this.world(),old=this.feet,crouch=input.crouch&&!this.flying,height=crouch?WALK_BODY.crouchHeight:WALK_BODY.height;
+  if(crouch||!this.crouched||world.clear(this.shape(old,false))){this.crouched=crouch;this.capsule.end.y=this.capsule.start.y+height-2*WALK_BODY.radius;}
   const direction=new T.Vector3(Math.sin(input.bearing)*input.forward+Math.cos(input.bearing)*input.right,0,-Math.cos(input.bearing)*input.forward+Math.sin(input.bearing)*input.right);if(direction.lengthSq()>1)direction.normalize();
   this.sprinting=input.sprint&&!this.crouched&&direction.lengthSq()>0;
   if(this.substep===0){
    this.velocity.x*=this.horizontalDrag;this.velocity.z*=this.horizontalDrag;
    for(const axis of ['x','z'] as const)if(Math.abs(this.velocity[axis])<.06)this.velocity[axis]=0;
-   this.horizontalDrag=this.grounded?GROUND_DRAG:AIR_DRAG;
-   const acceleration=(this.grounded?.1:.02)*.98/GAME_TICK*(this.sprinting?1.3:1)*(this.crouched?.3:1);
+   this.horizontalDrag=this.grounded&&!this.flying?GROUND_DRAG:AIR_DRAG;
+   const acceleration=this.flying?FLY_SPEED*.98/GAME_TICK*(this.sprinting?2:1):(this.grounded?.1:.02)*.98/GAME_TICK*(this.sprinting?1.3:1)*(this.crouched?.3:1);
    this.velocity.addScaledVector(direction,acceleration);
+   if(this.flying){const lift=Number(!!input.jumpHeld||this.jumpBuffer>0)-Number(input.descend??input.crouch);this.velocity.y+=lift*FLY_SPEED*3/GAME_TICK;this.jumpBuffer=0;}
    const wantsJump=this.jumpBuffer>0||input.jumpHeld;
    if(!wantsJump)this.jumpCooldown=0;else this.jumpCooldown=Math.max(0,this.jumpCooldown-GAME_TICK);
-   if(wantsJump&&this.grounded&&this.jumpCooldown<=1e-6){this.velocity.y=.42/GAME_TICK;if(this.sprinting)this.velocity.addScaledVector(direction.clone().normalize(),.2/GAME_TICK);this.grounded=false;this.jumpBuffer=0;this.jumpCooldown=.5;}
+   if(wantsJump&&this.grounded&&!this.flying&&this.jumpCooldown<=1e-6){this.velocity.y=.42/GAME_TICK;if(this.sprinting)this.velocity.addScaledVector(direction.clone().normalize(),.2/GAME_TICK);this.grounded=false;this.jumpBuffer=0;this.jumpCooldown=.5;}
   }
   this.jumpBuffer=Math.max(0,this.jumpBuffer-dt);
   const horizontal=new T.Vector3(this.velocity.x*dt,0,this.velocity.z*dt),before=this.capsule.clone();
@@ -130,7 +138,9 @@ export class WalkCharacter {
   this.blocked=wallContacts.some(c=>Math.abs(c.normal.y)<WALK_BODY.slope&&horizontal.dot(c.normal)<-1e-7);
   for(const {normal} of wallContacts)if(Math.abs(normal.y)<WALK_BODY.slope){const n=normal.clone().setY(0).normalize(),inward=this.velocity.dot(n);if(inward<0)this.velocity.addScaledVector(n,-inward);}
   this.capsule.translate(new T.Vector3(0,this.velocity.y*dt,0));
-  const contacts=world.resolve(this.capsule);this.grounded=contacts.some(c=>c.normal.y>=WALK_BODY.slope&&this.velocity.y<=0);
+  const falling=this.velocity.y<0,contacts=world.resolve(this.capsule);this.grounded=contacts.some(c=>c.normal.y>=WALK_BODY.slope&&this.velocity.y<=0)&&(!this.flying||falling);
+  // As in Minecraft, flying down onto the ground ends the flight.
+  if(this.flying&&this.grounded)this.flying=false;
   for(const {normal} of contacts){
    // A supporting slope absorbs gravity without turning it into downhill
    // horizontal velocity. Air/ceiling/wall contacts still clip their normal.
@@ -138,24 +148,28 @@ export class WalkCharacter {
    const inward=this.velocity.dot(normal);if(inward<0)this.velocity.addScaledVector(normal,-inward);
   }
   const foot=this.feet,floor=world.floor(foot.x,foot.z,foot.y+.025,foot.y-.10);
-  if(this.velocity.y<=.1&&floor&&foot.y-floor.height<=.08){this.capsule.translate(new T.Vector3(0,floor.height+SKIN-foot.y,0));world.resolve(this.capsule);this.velocity.y=0;this.grounded=true;}
+  if(!this.flying&&this.velocity.y<=.1&&floor&&foot.y-floor.height<=.08){this.capsule.translate(new T.Vector3(0,floor.height+SKIN-foot.y,0));world.resolve(this.capsule);this.velocity.y=0;this.grounded=true;}
   if(this.grounded)this.safe.copy(this.feet);
   this.substep=(this.substep+1)%6;
-  if(this.substep===0)this.velocity.y=(this.velocity.y-.08/GAME_TICK)*VERTICAL_DRAG;
+  if(this.substep===0)this.velocity.y=this.flying?this.velocity.y*.6:(this.velocity.y-.08/GAME_TICK)*VERTICAL_DRAG;
+  // Flight has a ceiling well above the site so that the map camera stays meaningful.
+  const ceiling=(world.tree.box?.max.y??0)+FLY_CEILING;if(this.flying&&this.feet.y>ceiling){this.capsule.translate(new T.Vector3(0,ceiling-this.feet.y,0));this.velocity.y=Math.min(0,this.velocity.y);}
   if(this.feet.y<(world.tree.box?.min.y??-1000)-8||this.feet.y<-1000)this.spawn(this.safe);
  }
 }
 
 export class WalkInput {
- readonly keys=new Set<string>();private taps=new Map<string,number>();private sprintKey='';private sprintToggle=false;private crouchToggle=false;jump=false;
+ readonly keys=new Set<string>();private taps=new Map<string,number>();private sprintKey='';private sprintToggle=false;private crouchToggle=false;jump=false;fly=false;
  press(key:string,now=performance.now()){
   if(this.keys.has(key))return;
   if(key==='w'||key==='s'){if(now-(this.taps.get(key)??-Infinity)<300)this.sprintKey=key;this.taps.set(key,now);}
-  if(key===' ')this.jump=true;this.keys.add(key);
+  // Two presses of Space within 7 game ticks (0.35 s) toggle flight, as in Minecraft.
+  if(key===' '){this.jump=true;if(now-(this.taps.get(key)??-Infinity)<350){this.fly=true;this.taps.delete(key);}else this.taps.set(key,now);}
+  this.keys.add(key);
  }
  release(key:string){this.keys.delete(key);if(key===this.sprintKey)this.sprintKey='';}
  get sprintEnabled(){return this.sprintToggle;}
- toggleSprint(){this.sprintToggle=!this.sprintToggle;}toggleCrouch(){this.crouchToggle=!this.crouchToggle;}
- clear(){this.keys.clear();this.taps.clear();this.sprintKey='';this.sprintToggle=false;this.crouchToggle=false;this.jump=false;}
- read(bearing:number){const down=(...keys:string[])=>keys.some(k=>this.keys.has(k));const value={forward:Number(down('w','arrowup'))-Number(down('s','arrowdown')),right:Number(down('d','arrowright'))-Number(down('a','arrowleft')),bearing,sprint:!!this.sprintKey||this.sprintToggle||down('control'),crouch:this.crouchToggle||down('shift'),jump:this.jump,jumpHeld:down(' ')};this.jump=false;return value;}
+ toggleSprint(){this.sprintToggle=!this.sprintToggle;}toggleCrouch(){this.crouchToggle=!this.crouchToggle;}toggleFly(){this.fly=true;}
+ clear(){this.keys.clear();this.taps.clear();this.sprintKey='';this.sprintToggle=false;this.crouchToggle=false;this.jump=false;this.fly=false;}
+ read(bearing:number){const down=(...keys:string[])=>keys.some(k=>this.keys.has(k));const value={forward:Number(down('w','arrowup'))-Number(down('s','arrowdown')),right:Number(down('d','arrowright'))-Number(down('a','arrowleft')),bearing,sprint:!!this.sprintKey||this.sprintToggle||down('control'),crouch:this.crouchToggle||down('shift'),jump:this.jump,jumpHeld:down(' '),fly:this.fly,descend:down('shift')};this.jump=false;this.fly=false;return value;}
 }

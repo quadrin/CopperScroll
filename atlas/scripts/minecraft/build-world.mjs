@@ -21,7 +21,8 @@ import {connectRcon} from './rcon.mjs';
 import {greedyQuads,encodeBuild} from './mesh.mjs';
 
 // Block size in the model's units (metres, or the relative units of the source-plan
-// scenes). Half a block is the vertical step, through slabs.
+// scenes). Half a block is the vertical step, through slabs. A site may set its own
+// terrain rings; a ring with `context` also builds the mapped surroundings in it.
 export const SITES=[
  {id:'qumran-ilan',size:.5,pilot:true,place:'kh_qumran',domain:{minX:-90,maxX:90,minZ:-66,maxZ:54}},
  {id:'qumran-reeder',size:.25},
@@ -35,13 +36,14 @@ export const SITES=[
  {id:'abu-saraj-iv17',size:.25,roof:true,mapped:false},
  {id:'bethesda-pools',size:.5},
  {id:'east-gate-warren',size:.5},
- {id:'kidron-bene-hezir',size:.25},
- {id:'temple-great-sea',size:.5},
+ {id:'kidron-bene-hezir',size:.25,rings:[{size:1,half:304,context:true},{size:8,half:1152}]},
+ {id:'temple-great-sea',size:.5,rings:[{size:1,half:304,context:true},{size:8,half:1152}]},
 ];
 const PILOT_GROUND=new Set(['qumran-ground','qumran-ridge-back','connected-limestone-bed']);
 // Plans with the wide terrain patch get coarser block rings around them, each with a
 // hole exactly the size of the build inside it.
 export const RINGS=[{size:2,half:400},{size:8,half:1152}];
+export const ringsFor=planId=>SITES.find(s=>s.id===planId)?.rings??RINGS;
 export const buildKey=(planId,layer)=>layer&&layer!=='remains'?`${planId}@${layer}`:planId;
 
 // One build per site; a traced plan, or a hand-built plan with views, gives one per layer
@@ -51,7 +53,7 @@ export function buildSpecs(models){
  const planSpecs=(plan,base)=>traced(plan)||plan?.layers?.length?(plan.layers??[{id:'remains'}]).map(l=>({...base,id:buildKey(plan.id,l.id),plan:plan.id,layer:l.id})):[{...base,plan:plan.id}];
  for(const spec of SITES)specs.push(...planSpecs(models.plans.find(p=>p.id===spec.id),spec));
  for(const plan of models.plans)if(traced(plan)&&!SITES.some(s=>s.id===plan.id))specs.push(...planSpecs(plan,{id:plan.id,size:plan.blockSize??.5}));
- for(const plan of models.plans)if(plan.terrain==='wide'&&specs.some(s=>s.plan===plan.id))RINGS.forEach((r,i)=>specs.push({id:`${plan.id}~ring${i+1}`,plan:plan.id,ring:i,size:r.size,half:r.half}));
+ for(const plan of models.plans)if(plan.terrain==='wide'&&specs.some(s=>s.plan===plan.id))ringsFor(plan.id).forEach((r,i)=>specs.push({id:`${plan.id}~ring${i+1}`,plan:plan.id,ring:i,size:r.size,half:r.half,context:!!r.context}));
  return specs;
 }
 // Wider terrain (atlas/public/terrain), decoded to the landscape patch shape.
@@ -78,16 +80,18 @@ export function voxelizeSite(models,spec){
   root.updateMatrixWorld(true);
   root.traverse(o=>{if(o.isMesh&&o.userData.siteContext==='ground')ground.push(o);});
   // With terrain rings, the build's edges fall on the inner ring's cells; otherwise they are the model's frame.
-  const f=model.framing,edge=(v,up)=>options.terrain?snap(v,RINGS[0].size,up):v;
+  const rings=ringsFor(plan.id),f=model.framing,edge=(v,up)=>options.terrain?snap(v,rings[0].size,up):v;
   domain??={minX:edge(f.min.x,false),maxX:edge(f.max.x,true),minZ:edge(f.min.z,false),maxZ:edge(f.max.z,true)};
   if(spec.ring!==undefined){
    // A ring holds only terrain; its hole is the build inside it, cell for cell.
-   const inner=spec.ring?RINGS[spec.ring-1].half:null;
+   const inner=spec.ring?rings[spec.ring-1].half:null;
    exclude=inner?{minX:-inner,maxX:inner,minZ:-inner,maxZ:inner}:domain;
    domain={minX:-spec.half,maxX:spec.half,minZ:-spec.half,maxZ:spec.half};
   }
  }
- const solids=[];if(spec.ring===undefined)root.traverseVisible(o=>{if(o.isMesh&&!ground.includes(o)&&o.userData.walkCollision!==false)solids.push(o);});
+ // A ring holds terrain, and in a context ring the mapped surroundings except fine detail (stair treads).
+ const solids=[],mapped=new Set();root.traverse(o=>{if(o.userData.siteContext==='osm')o.traverse(c=>mapped.add(c));});
+ root.traverseVisible(o=>{if(!o.isMesh||ground.includes(o)||o.userData.walkCollision===false)return;if(spec.ring===undefined||(spec.context&&mapped.has(o)&&!o.userData.contextFine))solids.push(o);});
  // Vertical extent: everything inside the domain, with a margin below for the ground.
  let minY=Infinity,maxY=-Infinity;const p=new T.Vector3();
  for(const mesh of ground){
@@ -95,11 +99,19 @@ export function voxelizeSite(models,spec){
   const pos=mesh.geometry.getAttribute('position');for(let i=0;i<pos.count;i++){p.fromBufferAttribute(pos,i).applyMatrix4(mesh.matrixWorld);if(p.x>=domain.minX&&p.x<=domain.maxX&&p.z>=domain.minZ&&p.z<=domain.maxZ){minY=Math.min(minY,p.y);maxY=Math.max(maxY,p.y);}}
  }
  // Scattered rubble spans the whole terrain disc; it lies on the ground, so it adds no extent.
- for(const mesh of solids){if(mesh.userData.walkDetail)continue;const b=new T.Box3().setFromObject(mesh);if(b.max.x<domain.minX||b.min.x>domain.maxX||b.max.z<domain.minZ||b.min.z>domain.maxZ)continue;minY=Math.min(minY,b.min.y);maxY=Math.max(maxY,b.max.y);}
+ const extend=b=>{if(b.max.x<domain.minX||b.min.x>domain.maxX||b.max.z<domain.minZ||b.min.z>domain.maxZ)return;minY=Math.min(minY,b.min.y);maxY=Math.max(maxY,b.max.y);};
+ for(const mesh of solids){
+  if(mesh.userData.walkDetail)continue;
+  // Instances spread over the whole surroundings (graves, wall stretches) count one by one.
+  if(mesh.isInstancedMesh&&mapped.has(mesh)){mesh.geometry.computeBoundingBox();const m=new T.Matrix4();for(let n=0;n<mesh.count;n++){mesh.getMatrixAt(n,m);extend(mesh.geometry.boundingBox.clone().applyMatrix4(m.premultiply(mesh.matrixWorld)));}continue;}
+  if(mapped.has(mesh)){const pos=mesh.geometry.getAttribute('position');for(let i=0;i<pos.count;i++){p.fromBufferAttribute(pos,i).applyMatrix4(mesh.matrixWorld);extend(new T.Box3(p,p));}continue;}
+  extend(new T.Box3().setFromObject(mesh));
+ }
  const grid=createGrid({...domain,minY:minY-1,maxY:maxY+.5,size:spec.size});
  rasterGround(grid,ground,{exclude});
  rasterSolids(grid,solids,{minDetail:spec.size*.8});
  for(const box of carves)carve(grid,box);
+ if(exclude&&spec.context)carve(grid,{...exclude,minY:-Infinity,maxY:Infinity});
  underfill(grid);
  const masonry=models.surfaces.siteStyle(plan.id).masonry,blocks=toBlocks(grid,masonry);
  return {spec,plan,grid,blocks,masonry,features:grid.features};

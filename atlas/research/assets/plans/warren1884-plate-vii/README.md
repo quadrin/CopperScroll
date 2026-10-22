@@ -10,6 +10,7 @@ Files:
 - `great-sea-tracing.png` (project tracing over the source crop): the traced outline of VIII in red and the small circle beside its second label "Cistern" in blue.
 - `scale-bar.png`: the plate's "SCALE OF FEET 1/1000". Ticks at 300 ft (x 3193) and 500 ft (x 3662) give 2.345 px per ft (0.130 m per px), the same as Plate VI.
 - `north-arrow.png`: plate north is 8.8° clockwise from plate up (least-squares line through the arrow shaft; Plate VI gave 9.4°).
+- `haram-sw-corner.png`, `haram-se-corner.png` (source crops, 300 × 300 px): the south-west and south-east corners of the Haram enclosure as the plate draws them (solid lines). Line fits through the enclosure lines next to each corner put the corners at (2471.1, 2161.2) and (4616.5, 2145.5) px on the 600 ppi mask (`measurements.json`, `registration`). They are 278.9 m apart at the plate's scale; the mapped corners are 281.0 m apart. Added 22 October 2026 to register the atlas model to OpenStreetMap ([record](../osm-context-2026-10-22/README.md)).
 
 Measured results (EVIDENCE = drawn on the plate; INFERENCE = the project's):
 

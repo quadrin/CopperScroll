@@ -10,7 +10,9 @@ const siteSurfaces=JSON.parse(readFileSync(new URL('../app/atlas-site-surfaces.j
 const surfaces=module('../app/atlas-site-materials.ts',{'three':Three,'./atlas-site-surfaces.json':{__esModule:true,default:siteSurfaces,...siteSurfaces}});
 const landscape=module('../app/atlas-model-landscape.ts',{'three':Three,'./atlas-model-terrain.json':terrain,'./atlas-site-materials':surfaces});
 const tracedPlans=JSON.parse(readFileSync(new URL('../app/atlas-traced-plans.json',import.meta.url),'utf8'));
-const exports=module('../app/atlas-model-geometry.ts',{'three':Three,'three/addons/loaders/SVGLoader.js':{SVGLoader},'./atlas-model-landscape':landscape,'./atlas-site-materials':surfaces,'./atlas-traced':module('../app/atlas-traced.ts',{}),'./atlas-traced-plans.json':{__esModule:true,default:tracedPlans,...tracedPlans}});
+const contextData=JSON.parse(readFileSync(new URL('../app/atlas-site-context.json',import.meta.url),'utf8'));
+const context=module('../app/atlas-model-context.ts',{'three':Three,'./atlas-site-context.json':{__esModule:true,default:contextData,...contextData},'./atlas-site-materials':surfaces});
+const exports=module('../app/atlas-model-geometry.ts',{'three':Three,'three/addons/loaders/SVGLoader.js':{SVGLoader},'./atlas-model-landscape':landscape,'./atlas-model-context':context,'./atlas-site-materials':surfaces,'./atlas-traced':module('../app/atlas-traced.ts',{}),'./atlas-traced-plans.json':{__esModule:true,default:tracedPlans,...tracedPlans}});
 for(const patch of Object.values(terrain)){assert.equal(patch.elevations.length,patch.size**2);assert.ok(patch.elevations.every(Number.isFinite));assert.ok(Math.abs(landscape.elevationAt(patch,0,0))<.02);}
 const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
 const models=new Map();
@@ -78,5 +80,21 @@ for(const plan of plans.filter(p=>!p.traced&&p.layers?.length)){
 const kidron=models.get('kidron-bene-hezir');
 assert.ok(kidron.assumptions.some(t=>t.includes('south-west')),'Bene Ḥezir: the façade faces south-west (Avigad p. 37)');
 const sea=models.get('temple-great-sea');
-assert.ok(sea.assumptions.some(t=>t.includes('Pl. VII'))&&sea.assumptions.some(t=>t.includes('not its true position')),'Great Sea: the plate outline and the anchor offset are disclosed');
-console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction, ${tracedViews} traced-plan views and ${builtViews} views of hand-built plans.`);
+assert.ok(sea.assumptions.some(t=>t.includes('Pl. VII')),'Great Sea: the plate outline is disclosed');
+// Registered models keep the place frame: their mapped monuments and corners stay where OpenStreetMap puts them,
+// and the mapped surroundings are drawn and credited.
+const placed=JSON.parse(readFileSync(new URL('../app/atlas-site-context.json',import.meta.url),'utf8')).plans;
+{const r=placed['kidron-bene-hezir'].registration,a=kidron.markers.get('absalom'),p=kidron.markers.get('porch');
+ assert.ok(Math.hypot(a.x-r.absalomCentre[0],a.z-r.absalomCentre[1])<.01,'Absalom stands at its mapped centre');
+ assert.ok(Math.hypot(p.x-r.porchCentre[0],p.z-r.porchCentre[1])<.01,'the Bene Ḥezir porch sits on the mapped porch');
+ assert.ok(Math.abs(Math.hypot(a.x-p.x,a.z-p.z)-50)<5,'Absalom is about 50 m from Bene Ḥezir (Avigad p. 37)');
+ assert.ok(Math.abs(r.facadeNormalBearing-225)<45,'the mapped façade faces Avigad’s south-west');}
+{const r=placed['temple-great-sea'].registration,c=sea.markers.get('great-sea');
+ assert.ok(r.residuals_m.every(v=>v<2),'Pl. VII fits the mapped Haram corners within 2 m');
+ assert.ok(Math.hypot(c.x-r.origin[0],c.z-r.origin[1])<3,'the cistern sits at its registered place');}
+for(const model of [kidron,sea]){
+ const group=model.root.children.find(c=>c.userData.siteContext==='osm');
+ assert.ok(group&&model.landscape.credit.includes('OpenStreetMap')&&model.assumptions.some(t=>t.includes('Open Database License')),'mapped surroundings are drawn and credited');
+}
+assert.ok(kidron.root.children.find(c=>c.userData.siteContext==='osm').userData.counts.graves>1000,'Kidron: the Mount of Olives graves are drawn');
+console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction, two models registered to mapped outlines with their surroundings, ${tracedViews} traced-plan views and ${builtViews} views of hand-built plans.`);

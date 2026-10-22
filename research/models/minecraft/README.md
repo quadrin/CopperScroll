@@ -70,6 +70,13 @@ Two new site models and four new views of existing models, built the same way, w
 - Rock-cut spaces (the tomb chambers, kokhim, stair and corridor at Bene Ḥezir, the stair into the Great Sea, the dam's shaft and corridor at Bethesda) are drawn as rock boxes band by band between floor and ceiling levels, so they stay open in the blocks and can be walked.
 - The build script now sets the saved world's default game mode (creative) and spawn (188, −23, 163) itself, as the world save below describes.
 
+## Later on 22 October 2026: surroundings
+
+- `kidron-bene-hezir` and `temple-great-sea` are now registered to OpenStreetMap and keep the place frame ([record](../site_models_2026-10-22.md#surroundings-and-registration)). Both have wide terrain (Mapterhorn patches for `jer_kidron_mon` and `jer_temple`), so each gets two rings.
+- Rings are now set per site (`SITES[].rings` in `build-world.mjs`; Qumran keeps 2 m to 400 m and 8 m to 1,152 m). For these two: 1 m blocks to ±304 m, with the mapped surroundings built in, then 8 m blocks of terrain to ±1,152 m.
+- Surroundings in blocks: graves, city and retaining walls, gate buildings and buildings as solids; mapped paths and stairs as paved ground (the top half metre of the column takes the site's masonry block under a path and `smooth_stone` under a stair). Stair treads are built only in the fine builds, which include the surroundings inside their own area at their own block size.
+- The other builds are unchanged.
+
 ## The world save
 
 [`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (18.3 MB, rebuilt 22 October 2026 with all 24 builds) is the saved world, SHA-256 `0fe50dd51596e43f09d2f904cfc68f6986c891a6ad2a75a4bb1df0637fa3368a`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.

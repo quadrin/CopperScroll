@@ -18,7 +18,7 @@ EVIDENCE = stated or drawn in the source. INFERENCE = the project's. ILLUSTRATIV
 Source: Avigad 1954 ch. 4 and p. 79 ([record](../sources/nli_photos_2026-10-21/avigad1954.md)).
 
 - EVIDENCE used: façade 5.75 + 4.13 = 9.88 m, faces south-west (p. 37), floor 8.50 m above the rock path (p. 42); porch 5.55–5.83 × 3.04–3.23 × 3.20–3.50 m; Doric columns 3.00 m, lower diameter 0.53–0.55 m; entablature 0.95 m; original porch opening about 0.80 m on the column axis; north stair 1.60 m wide, 13 steps from 1.78 to 4.68 m above the floor; chambers A–E with their pits, kokhim, cells and arcosolia (pp. 40–41); south corridor 8.30 m, 2.30 m wide, opening 1.35 m wide and 3.08 m from Zechariah's north-west corner; added façade with its 1.93 m recess and 0.78 × 1.65 × 1.30 m niche and the cell below (pp. 37–38, 46); Zechariah 5.50–5.60 m square with passages of 2.75–3.08, 2.95 and 2.68 m and a north rock wall of 15.30 m (p. 79); Absalom 20 m high, about 50 m from Bene Ḥezir (summary; p. 37).
-- INFERENCE: Avigad's rounded cardinal frame is turned 45° so that his "west" is the façade's true south-west. Which wall carries which chamber dimension follows from the kokhim on each wall. Absalom is placed due north from Fig. 25's north-to-south order.
+- INFERENCE: Avigad's rounded cardinal frame is turned 45° so that his "west" is the façade's true south-west. Which wall carries which chamber dimension follows from the kokhim on each wall. Absalom is placed due north from Fig. 25's north-to-south order. *(Replaced later the same day by the registration to OpenStreetMap; see [Surroundings](#surroundings-and-registration).)*
 - ILLUSTRATIVE: wall thicknesses (0.8 m), level chamber floors, kokh heights (0.9 m), the stair above its visible top, the Zechariah court ground (2 m below the tomb floor, from Slouschz's "about 2 m"), Zechariah's heights and Absalom's massing.
 - Views: **Remains**; **Original state and nefesh (Avigad 1954)**: pale parts restore the 0.80 m porch doorway, the north doorway of A, D's 50 cm pit and the cleared corridor, and add Avigad's nefesh pyramid (Fig. 42, 1) over the added façade (base and height illustrative). The pyramid overlaps the north stair, as Avigad notes for any square base (p. 76).
 - Surface colours: rock from the owner's 19 October photos of Zechariah, the Bene Ḥezir scarp and Absalom ([samples](../assets/plans/atlas-explorer/surface-samples-2026-10-17/spec.json)).
@@ -29,7 +29,7 @@ Sources: Warren Pl. VII (above); G&J 1996 pp. 33–39 ([record](../sources/nli_p
 
 - EVIDENCE used: the plate outline; floor 14 m below the surface and a rock roof about 2.5 m thick (Schick); rock 1.5 m below the surface (Warren); rock-cut and plastered; five piers (Schick); a stair from the south of 44 (Barclay) or 50 (Schick) steps with a well-like mouth (Whitty); three mouths in use (Wilson).
 - ILLUSTRATIVE: pier places and size, two of the three mouths, the stair's line and width, and a display cutaway of the roof west of x = −4 m.
-- The model sits at the Temple enclosure's anchor (Pleiades, about 150 m), not at the cistern's position under the southern court. This is stated in its limit.
+- The model sits at the Temple enclosure's anchor (Pleiades, about 150 m), not at the cistern's position under the southern court. This is stated in its limit. *(Replaced later the same day: the plate is registered to the mapped Haram corners; see [Surroundings](#surroundings-and-registration).)*
 
 ## New views of existing models
 
@@ -49,3 +49,13 @@ Not drawn, and why:
 Also updated: the A(C)94 feature in `jericho-ac` now quotes Netzer's Plan 12 levels (floor 99.45–99.85, rim 102.67–102.75, the 102.87 / 102.80 pipe junction) from the 21 October [plan-sheet record](../sources/nli_photos_2026-10-21/netzer2001_plan_sheets.md). The pipe-level definition is still unknown.
 
 New terrain patches (Mapterhorn, the existing tool) for `jer_kidron_mon` and `jer_temple` let both new models sit on modern relief ([manifest](../assets/plans/atlas-explorer/terrain/manifest.json)).
+
+## Surroundings and registration
+
+Later on 22 October the two new models were placed in their real setting, so that they no longer stand on an isolated bench. Data: one OpenStreetMap extract (ODbL; [record](../assets/plans/osm-context-2026-10-22/README.md)) and two Mapterhorn terrain patches, 2.4 km square at 5 m spacing ([Kidron](../assets/plans/atlas-explorer/terrain-wide/jer_kidron_mon-manifest.json), [Temple](../assets/plans/atlas-explorer/terrain-wide/jer_temple-manifest.json)). Code: `tools/build_osm_context.py`, `atlas/app/atlas-model-context.ts`. No reading, identification, coordinate of a Copper Scroll candidate, rating or outcome count changes.
+
+- New evidence: the OSM outlines of Bene Ḥezir, Zechariah and Absalom, the Haram's two south corners, and the mapped paths, stairs, cemetery areas, walls and buildings around both models. Also measured: the Haram's south corners on Warren Pl. VII ([plate record](../assets/plans/warren1884-plate-vii/README.md)).
+- INFERENCE (Kidron): Avigad's frame is placed on the mapped porch and turned so that his "west" faces 244.8° (outline 244.3°, Zechariah's position 245.3°). Absalom stands at its mapped centre, 52.1 m from the porch (Avigad about 50 m). The model's rock path is the modern terrain at Absalom.
+- INFERENCE (Great Sea): the plate's south wall is fitted to the mapped one (1.07 m at each corner, turn 0.17°). The cistern then lies under the court between the Dome platform and the north front of al-Aqsa. Its surface is the modern terrain there.
+- ILLUSTRATIVE: the ground pads that level the Kidron valley floor in front of the tombs and raise the slope behind them to the rock surface (the terrain model is too coarse to show the scarp); grave rows inside the mapped cemetery areas (about 1 × 2 m, long axes east–west, or across the qibla in the Muslim cemetery; none where the ground under a grave falls more than 1.2 m); default path, wall and building sizes where OSM maps none (paths 2.4 m, city walls 12 m, gate buildings 9 m, buildings 6.5 m).
+- Display: both models now keep the place frame (no recentring). The Minecraft builds get rings: 1 m blocks to ±304 m with the mapped surroundings in blocks (paths and stairs as paved ground, graves, walls, buildings) and 8 m blocks of terrain to ±1,152 m.
