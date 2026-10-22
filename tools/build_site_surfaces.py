@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SET = ROOT / "research/assets/plans/atlas-explorer/surface-samples-2026-10-17"
 MIRROR = ROOT / "atlas/research/assets/plans/atlas-explorer/surface-samples-2026-10-17"
 PHOTOS = ROOT / "research/assets/plans/site-photos-2026-10-17"
+KIDRON = ROOT / "research/assets/plans/kidron-field-2026-10-19"  # owner's photographs, 19 Oct 2026
 SCENES = ROOT / "atlas/public/dossiers/site-photos"
 OUT = ROOT / "atlas/app/atlas-site-surfaces.json"
 KEYS = {"masonry": "stone", "bedrock": "rock", "soil": "soil", "plaster": "plaster"}
@@ -33,6 +34,9 @@ MASONRY = {"rubble", "coursed", "ashlar", "mudbrick"}
 
 def photo_path(photo: str) -> Path:
     p = PHOTOS / f"{photo}.jpg"
+    if p.exists():
+        return p
+    p = KIDRON / f"{photo}.JPG"
     if p.exists():
         return p
     p = SCENES / f"{photo}.jpg"
@@ -66,6 +70,7 @@ PALETTE = {
     "siloam": {"stone": "#b7ad92", "rock": "#a9a087", "soil": "#8f8269", "plaster": "#b1b09c"},
     "bethesda": {"stone": "#b7ad92", "rock": "#a9a087", "soil": "#8f8269", "plaster": "#b1b09c"},
     "eastgate": {"stone": "#b7ad92", "rock": "#a9a087", "soil": "#8f8269", "plaster": "#b1b09c"},
+    "kidron": {"stone": "#b7ad92", "rock": "#a9a087", "soil": "#8f8269", "plaster": "#b1b09c"},
     "jericho": {"stone": "#ceb998", "rock": "#b7a387", "soil": "#ae8d67", "plaster": "#dbbba0"},
     "doq": {"stone": "#baab8a", "rock": "#ac926e", "soil": "#9e825f", "plaster": "#c2b79b"},
     "hyrcania": {"stone": "#c9bea1", "rock": "#b8ab8d", "soil": "#a39170", "plaster": "#b4b5a0"},

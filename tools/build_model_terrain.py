@@ -5,7 +5,7 @@ Run from any directory. Reuses the archived source tiles and licence metadata.
 import json, math, pathlib, hashlib, concurrent.futures, subprocess
 from PIL import Image
 repo=pathlib.Path(__file__).resolve().parents[1]; archive=repo/'research/assets/plans/atlas-explorer/terrain';archive.mkdir(exist_ok=True)
-places=json.loads((repo/'atlas/app/atlas-data.json').read_text())['places']; ids={'kh_qumran','wadi_qumran','jericho_palaces','jer_siloam','gerizim','doq','hyrcania'}
+places=json.loads((repo/'atlas/app/atlas-data.json').read_text())['places']; ids={'kh_qumran','wadi_qumran','jericho_palaces','jer_siloam','gerizim','doq','hyrcania','jer_kidron_mon','jer_temple'}
 z=12;n=2**z;size=65;extent=800
 world=lambda lat,lon:((lon+180)/360*n,(1-math.asinh(math.tan(math.radians(lat)))/math.pi)/2*n)
 sites=[p for p in places if p['id'] in ids]; needed=set()

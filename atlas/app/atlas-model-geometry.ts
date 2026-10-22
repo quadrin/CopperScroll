@@ -15,6 +15,7 @@ export type BuildOptions={layer?:string;terrain?:TerrainPatch};
 export type { ModelCamera } from "./atlas-explorer-model";
 export type ModelGeometry = { root: T.Group; markers: Map<string, T.Vector3>; selectable: T.Object3D[]; roof: T.Group; note: string; assumptions: string[]; units: "metres" | "relative"; framing:T.Box3; landscape:{context:string;credit:string;mapped:boolean};walkStart?:{position:[number,number];bearing:number;pitch:number} };
 type Point = [number, number];
+type Space = [number, number, number, number, number, number];
 
 function polygon(points:Point[]) {const s=new T.Shape();points.forEach(([x,z],i)=>i?s.lineTo(x,-z):s.moveTo(x,-z));s.closePath();return s;}
 function material(color:string,map?:T.Texture){return new T.MeshStandardMaterial({color,map:map??null,roughness:.94,metalness:0});}
@@ -91,6 +92,33 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
  function steps(x:number,z:number,width:number,run:number,rise:number,count:number,id:string,mat:T.Material=stone){const g=new T.Group();root.add(g);g.position.set(x,0,z);for(let i=0;i<count;i++)box(-run/2+(i+.5)*run/count,0,run/count+.01,width,(i+1)*rise/count,0,id,mat,g);return g;}
  function marker(id:string,x:number,z:number,y=1){markers.set(id,new T.Vector3(x,y,z));}
  function plinth(w:number,d:number,_depth=1.2,holes:Point[][]=[]){ground={w,d,holes:[...holes,...wellHoles],pads:ground.pads};}
+ // Rock with rock-cut spaces: the rock is drawn as boxes, band by band between the spaces'
+ // floor and ceiling levels, so chambers, doorways and stairs stay open in the smooth model
+ // and in the block build. A space is [x0, x1, z0, z1, y0, y1] in the parent's frame.
+ function rockMass(bounds:Space,spaces:Space[],parent:T.Group=root,id?:string,mat:T.Material=rock){
+  const cuts=(lo:number,hi:number,a:number,b:number)=>[...new Set([lo,hi,...spaces.flatMap(s=>[s[a],s[b]]).filter(v=>v>lo&&v<hi)])].sort((p,q)=>p-q);
+  const xs=cuts(bounds[0],bounds[1],0,1),zs=cuts(bounds[2],bounds[3],2,3),ys=cuts(bounds[4],bounds[5],4,5),nx=xs.length-1,nz=zs.length-1;
+  const emit=(key:string,y0:number,y1:number)=>{const [i0,i1,k0,k1]=key.split(',').map(Number),w=xs[i1+1]-xs[i0],d=zs[k1+1]-zs[k0],m=mesh(new T.BoxGeometry(w,y1-y0,d),mat,id,parent);m.position.set(xs[i0]+w/2,(y0+y1)/2,zs[k0]+d/2);};
+  let open=new Map<string,number>();
+  for(let j=0;j<ys.length-1;j++){
+   const yc=(ys[j]+ys[j+1])/2,solid=(i:number,k:number)=>{const xc=(xs[i]+xs[i+1])/2,zc=(zs[k]+zs[k+1])/2;return !spaces.some(s=>xc>s[0]&&xc<s[1]&&zc>s[2]&&zc<s[3]&&yc>s[4]&&yc<s[5]);};
+   const used=new Uint8Array(nx*nz),next=new Map<string,number>();
+   for(let k=0;k<nz;k++)for(let i=0;i<nx;i++){
+    if(used[k*nx+i]||!solid(i,k))continue;
+    let i1=i;while(i1+1<nx&&!used[k*nx+i1+1]&&solid(i1+1,k))i1++;
+    let k1=k;grow:while(k1+1<nz){for(let ii=i;ii<=i1;ii++)if(used[(k1+1)*nx+ii]||!solid(ii,k1+1))break grow;k1++;}
+    for(let kk=k;kk<=k1;kk++)for(let ii=i;ii<=i1;ii++)used[kk*nx+ii]=1;
+    const key=`${i},${i1},${k},${k1}`;next.set(key,open.get(key)??ys[j]);
+   }
+   for(const [key,y0] of open)if(!next.has(key))emit(key,y0,ys[j]);
+   open=next;
+  }
+  for(const [key,y0] of open)emit(key,y0,ys[ys.length-1]);
+ }
+ // A square-based pyramid (closed, so the block export fills it), its base edges on the frame's axes.
+ function pyramid(x:number,z:number,side:number,height:number,y:number,mat:T.Material,id?:string,parent:T.Group=root){const m=mesh(new T.CylinderGeometry(.02,side/Math.SQRT2,height,4),mat,id,parent);m.rotation.y=Math.PI/4;m.position.set(x,y+height/2,z);return m;}
+ // The part of a polygon on the far side of x = c (Sutherland–Hodgman against one line).
+ const clipX=(poly:Point[],c:number,keepAbove=true)=>{const out:Point[]=[],inside=(p:Point)=>keepAbove?p[0]>=c:p[0]<=c;poly.forEach((p,i)=>{const q=poly[(i+1)%poly.length];if(inside(p))out.push(p);if(inside(p)!==inside(q)){const t=(c-p[0])/(q[0]-p[0]);out.push([c,p[1]+t*(q[1]-p[1])]);}});return out;};
 
  if(plan.id==="abu-saraj-iv17"){
   units="metres";note="Cave cutaway · published 1.4–1.7 m height range";
@@ -106,18 +134,54 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   plinth(12,9,.55);
   assumptions.push("Outline sampled from Sion’s Plan 5. Scale follows its 3 m bar; sampling and scanned line widths limit precision.","Wall height 1.55 m is the midpoint of the published 1.4–1.7 m range, applied uniformly for display. Roof thickness and shape, wall thickness and masonry height are illustrative.","The two present openings, pillar and southern blocking wall remain distinct. No threshold elevation, ancient roof profile or deposit point is inferred.");
  } else if(plan.id==="hyrcania-waterworks"){
-  units="metres";note="Double pool · published depths 5 m and 2.6 m";
-  const n:Point[]=[[-19,-27],[-.8,-27],[0,-11],[-19,-12]],s:Point[]=[[-19,-6.9],[-1,-6.9],[-1,7.5],[-19,7.5]];
+  units="metres";const herodian=options.layer==="herodian";
+  note=herodian?"Herodian east bridge raised to its channel · Patrich 2002 (reconstruction)":"Double pool and east bridge · published depths and dimensions";
+  const n:Point[]=[[-19,-27],[-.8,-27],[0,-11],[-19,-12]],s:Point[]=[[-19,-6.9],[-1,-6.9],[-1,7.5],[-19,7.5]],south:Point[]=[[-27,20],[-15,20],[-15,31],[-27,31]];
   basin(n,5,"north-pool",plaster);basin(s,2.6,"south-member",plaster);marker("north-pool",-10,-19,.55);marker("south-member",-10,.1,.55);
   slab([[-23,-30],[4,-30],[4,11],[-23,11]],.8,-5.8,rock,undefined,root,[n,s]);
-  const bridge=box(-9,17,32,2.4,3.1,-3.2,"bridge");bridge.rotation.y=.35;
-  for(let i=0;i<8;i++)box(-24+i*4,17,1,2.5,2.6,-3.2,"bridge",rock);
-  trough([new T.Vector3(-30,.2,4),new T.Vector3(-14,.2,18),new T.Vector3(4,.2,24)],.52,"bridge");marker("bridge",-9,17,1);
-  basin([[-27,20],[-15,20],[-15,31],[-27,31]],1.8,"separate-pool");marker("separate-pool",-21,25,.6);
+  // East bridge, no. 48 (Patrich 2002): 112 m long (p. 346); preserved up to about 6 m high,
+  // 2.5 m wide at the base and 1.45 m at the top (p. 348). Drawn straight along x, south of the double pool.
+  const bx0=-106,bx1=6,bz=17,section=new T.Shape([new T.Vector2(-1.25,0),new T.Vector2(1.25,0),new T.Vector2(.725,6),new T.Vector2(-.725,6)]);
+  const bridge=new T.ExtrudeGeometry(section,{depth:bx1-bx0,bevelEnabled:false});bridge.rotateY(Math.PI/2);mesh(bridge,stone,"bridge").position.set(bx0,0,bz);
+  if(herodian){
+   // The Herodian channel ran about 12.5 m above the saddle (p. 348): the upper part and the
+   // channel are drawn only by this reconstruction.
+   box((bx0+bx1)/2,bz,bx1-bx0,1.45,6.5,6,"bridge",restored);
+   trough([new T.Vector3(bx0,12.5,bz),new T.Vector3(bx1,12.5,bz)],.5,"bridge",restored);
+  }
+  marker("bridge",-50,bz,herodian?13.5:7);
+  // Southern pool: a quarried depression with a vertical rock-cut west side and no visible plaster (pp. 348, 351).
+  basin(south,1.8,"separate-pool",rock);marker("separate-pool",-21,25,.6);
+  // Round pit north-east of the north pool: 3.05 m across, 4.3 m deep (p. 348, Fig. 23); its position is illustrative.
+  shaft(4.5,-30,1.525,4.3,"pit",rock);marker("pit",4.5,-30,.6);
   court(20,12,28,37,2.1);court(20,12,11,15,1.9);box(32,-3,6,7,3.2);
   for(const [x,z] of [[16,35],[24,38],[39,4],[42,-7]])shaft(x,z,2,3,"cisterns");marker("cisterns",20,36,.7);
-  plinth(88,86,6.3,[n,s,[[-27,20],[-15,20],[-15,31],[-27,31]]]);
-  assumptions.push("Northern pool sides approximate the published 19 / 15 / 18.2 / 16 m quadrilateral. Published maximum depths are shown: about 5 m north, 2.6 m south.","Rock separation uses 5.1 m, the midpoint of the reported 4.8–5.4 m range. Southern outline, bridge dimensions in this view, summit walls, other cistern depths and surrounding relief are illustrative.","The double pool is drawn rock-cut with plastered faces (Patrich 1989 p. 255, \"rock-cut double pool\"; reference photograph hyrcania-c-hurkania-5011 shows plastered rock walls), not as laid masonry; the coping course is illustrative.","No north bearing is assigned to the source frame. Floors are tinted to distinguish basins; the tint is not a reconstructed water level. Centre/rim origins and construction phases remain unresolved.");
+  // Point 49: a built, barrel-vaulted tunnel between cisterns A and N; free part 11.5 m long,
+  // 1.25 m high and 0.75 m wide, with a square opening at the north end and débris at the south (p. 351).
+  {const x=8,z0=29,z1=40.5,r=.575,len=z1-z0;box(x,(z0+z1)/2,.75,len,.08,0,"tunnel-49",plaster);
+   for(const side of [-1,1])box(x+side*r,(z0+z1)/2,.4,len,.875,0,"tunnel-49");
+   const vault=new T.CylinderGeometry(r,r,len,16,1,true,-Math.PI/2,Math.PI);vault.rotateX(-Math.PI/2);const v=mesh(vault,stone,"tunnel-49");v.position.set(x,.875,(z0+z1)/2);(v.material as T.MeshStandardMaterial).side=T.DoubleSide;
+   box(x,z1-.6,1.55,1.2,1.25,0,"tunnel-49",earth);marker("tunnel-49",x,z0+3,1.6);}
+  plinth(150,92,6.3,[n,s,south]);
+  assumptions.push("Northern pool sides approximate the published 19 / 15 / 18.2 / 16 m quadrilateral. Published maximum depths are shown: about 5 m north, 2.6 m south (Patrich 1989 p. 255; repeated in Patrich 2002 p. 348).","Rock separation uses 5.1 m, the midpoint of the reported 4.8–5.4 m range. Southern outline, summit walls, other cistern depths and surrounding relief are illustrative.","The double pool is drawn rock-cut with plastered faces (Patrich 1989 p. 255, \"rock-cut double pool\"; reference photograph hyrcania-c-hurkania-5011 shows plastered rock walls), not as laid masonry; the coping course is illustrative.","East bridge (no. 48): 112 m long, 2.5 m wide at the base and 1.45 m at the top, about 6 m high at most today (Patrich 2002 pp. 346–348). It is drawn straight and 6 m high along its whole length on level ground; the saddle's profile, the bridge's varying preserved height and its Hasmonean lower courses are not drawn. Feldman (1973 or later, p. 334) gives the eastern saddle wall as 170 m long and 16.78 m high.","The round pit (3.05 m across, 4.3 m deep) and the point 49 tunnel (11.5 × 1.25 × 0.75 m, barrel-vaulted) use Patrich 2002's dimensions; their positions are illustrative (\"north-east of the north pool\"; \"between cisterns A and N\"). The tunnel's vault is drawn as a half-cylinder; its south end is drawn blocked by débris.","No north bearing is assigned to the source frame. Floors are tinted to distinguish basins; the tint is not a reconstructed water level. Centre/rim origins and construction phases remain unresolved.");
+  if(herodian)assumptions.push("Herodian view: Patrich 2002 p. 348 puts the Herodian channel about 12.5 m above the bridge's base, 1.20 m above its present west end. The pale upper wall (1.45 m wide, from 6 to 12.5 m) and the 0.5 m channel on it are drawn only by this reconstruction; Patrich also offers upper arches or a siphon, and Ritmeyer's drawing (Fig. 17) was not traced. The channel's onward course to the upper cisterns on the south and east slopes is not drawn.");
+ } else if(plan.id==="gerizim-precinct"&&options.layer==="persian"){
+  units="metres";note="Persian-period precinct · Magen, Misgav & Tsfania 2004 (reconstruction)";
+  // Magen et al. 2004 p. 3*: the Persian precinct measured 96 × 98 m including its gates; three gates,
+  // north (six-chambered, fully exposed), south and east; no west gate. Drawn on the same frame and
+  // platform as the Hellenistic view, where the 98 × 96 m court stands for it.
+  const start=root.children.length,precinct:Point[]=[[-49,-78],[49,-78],[49,18],[-49,18]];slab(precinct,.25,-.25,earth,"persian-precinct");
+  // Precinct walls with openings for the three gates.
+  for(const run of [[[-2,-78],[-49,-78],[-49,18],[-1.5,18]],[[1.5,18],[49,18],[49,-11.5]],[[49,-14.5],[49,-78],[2,-78]]] as Point[][])walls(run,3.2,2.45,0,"persian-precinct",false);
+  // North gate: three chambers each side of a central passage. The layout follows the type; its sizes are illustrative.
+  for(const side of [-1,1]){for(let k=0;k<4;k++)box(side*4.5,-78+k*4,5,1,3.2,0,"persian-precinct");box(side*6.75,-72,.5,13,3.2,0,"persian-precinct");}
+  // South and east gates: their Persian-period form is not described; the gatehouses are drawn only by this view.
+  for(const [x,z,w,d] of [[0,18,9,7],[49,-13,7,9]] as [number,number,number,number][]){const g=root.children.length;court(x,z,w,d,3.4,"persian-precinct");root.children.slice(g).forEach(m=>{if(m instanceof T.Mesh){(m.material as T.Material).dispose();m.material=cloneSiteMaterial(restored);}});}
+  root.children.slice(start).forEach(m=>m.position.y+=15.5);
+  ground.pads.push({x:0,z:0,w:136,d:212,height:15.5,feather:12});
+  for(const [id,x,z,y] of [["persian-precinct",0,-30,18],["citadel",43,66,17],["west-entrance",-38,102,17],["mansion",-94,28,9],["east-stair",84,-13,11]] as [string,number,number,number][])marker(id,x,z,y);
+  plinth(255,290,7);
+  assumptions.push("Persian view: the precinct is drawn 98 × 96 m (Magen et al. 2004 p. 3*: 96 × 98 m including the gates, about 200 × 200 cubits) on the frame of the Hellenistic view, with gates on the north, south and east and none on the west. The north gate is drawn as a six-chambered gate (fully exposed, p. 3*); its pier and chamber sizes are illustrative. The pale south and east gatehouses are drawn only by this view: their Persian-period form and size are not described in the pages read.","The Hellenistic enclosure, citadel, western entrance, Area P mansion and eastern stair are not drawn; their markers stay for comparison with the Hellenistic view. Remains of a Persian stair to the east gate lie under the later stair (p. 3*); they are not drawn. Wall heights, the platform level and positions within the frame are illustrative.");
  } else if(plan.id==="gerizim-precinct"){
   units="metres";note="Hellenistic precinct · selected architectural relationships";
   const start=root.children.length;
@@ -126,7 +190,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   court(-38,102,13,12,1.2,"west-entrance");
   for(const z of [-75,66]){court(-40,z,22,16,2.2);court(-9,z,22,16,2.2);}
   root.children.slice(start).forEach(m=>m.position.y+=15.5);
-  ground.pads.push({x:0,z:0,w:136,d:212,height:15.5,feather:12});marker("citadel",43,66,20);marker("west-entrance",-38,102,17);
+  ground.pads.push({x:0,z:0,w:136,d:212,height:15.5,feather:12});marker("citadel",43,66,20);marker("west-entrance",-38,102,17);marker("persian-precinct",0,-30,18);
   const mansionStart=root.children.length,cisternHole=circlePoints(-103,28,1.65);
   court(-94,28,40,40,2.8,"mansion",[cisternHole]);court(-103,28,20,14,2.1,"mansion",[cisternHole]);
   for(let i=0;i<3;i++)court(-83,16+i*12,10,9,2.2,"mansion");shaft(-103,28,1.6,2.6,"mansion");
@@ -148,23 +212,44 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   plinth(39,38,3.8);
   assumptions.push("The aqueduct and ten cistern positions follow selected relationships in Amit Fig. 2. The frame is normalized for display, without geographic registration.","Cistern diameters/depths, channel cross-section, defensive wall heights and ridge relief are illustrative. The source does not identify a guard-post or drying-room corner.");
  } else if(plan.id==="bethesda-pools"){
-  units="metres";note="Two pools and dam · published dimensions; eastern complex schematic";
+  units="metres";const royal=options.layer==="royal";
+  note=royal?"Royal-period dam, upper pool and open canal · Pierre & Rousée 1981 (reconstruction)":"Two pools and dam · published dimensions; eastern complex schematic";
   // Plan metres: x east, z south, origin at the southern pool's north-west corner. Shifted to centre the scene.
   const c=([x,z]:Point):Point=>[x-54,z],r=(x0:number,z0:number,x1:number,z1:number):Point[]=>[[x0,z0],[x1,z0],[x1,z1],[x0,z1]].map(p=>c(p as Point));
-  const north=r(0,-46.5,53,-6.5),south=([[0,0],[45,0],[64.99,45.83],[0,47]] as Point[]).map(c);
-  basin(north,10,"north-pool");basin(south,14,"south-pool");
-  const [cx,cz]=c([26.5,-5.6]);shaft(cx,cz,.55,15,"dam");
-  // Steps down the whole western side, south of the settling basin; count and run are illustrative.
-  const [sx,sz]=c([7,27]);const flight=steps(sx,sz,40,14,14,40,"south-pool");flight.position.y=-14;flight.rotation.y=Math.PI;
-  walls(r(1,1,6,6),2.6,.5,-14,"settling-basin");
-  const [kx,kz]=c([95,20]);shaft(kx,kz,3,8.5,"cistern-1");
+  const D=(x0:number,x1:number,z0:number,z1:number,y0:number,y1:number):Space=>{const [a,b]=c([x0,z0]),[e,f]=c([x1,z1]);return [a,e,b,f,y0,y1];};
+  // The dam is about 40 m long (Pierre & Rousée 1981 p. 24) and forms the north pool's south side, so the
+  // pool's 40 m side is drawn east–west and Gibson's 53 m north–south (inference).
+  const north=r(0,-59.5,40,-6.5),south=([[0,0],[45,0],[64.99,45.83],[0,47]] as Point[]).map(c),canal=r(19.625,0,20.375,46);
+  basin(north,10,"north-pool");
   const grottoes:[number,number,number,number,number,string][]=[[93.5,10,96.5,13,2.5,"first-installation"],[101,11,104,14,2.2,"first-installation"],[100.5,19,102.5,21,.3,"first-installation"],[93.5,27,96.5,30,1.5,"first-installation"],[106,19,107.5,21,1.5,"grotto-5"],[100,26,103.5,29.5,3,"grotto-6"]];
-  for(const [x0,z0,x1,z1,depth,id] of grottoes)basin(r(x0,z0,x1,z1),depth,id,rock);
-  const [gx,gz]=c([106.3,20]);const g5=steps(gx,gz,1.5,.6,1.5,4,"grotto-5");g5.position.y=-1.5;g5.rotation.y=Math.PI;
-  const [tx,tz]=c([98.8,24.9]);const sill=box(tx,tz,1.3,.55,.16,0,"threshold");sill.rotation.y=-.46;box(tx-.75,tz-.3,.4,.4,1.2,0,"threshold");
-  for(const [id,x,z,y] of [["north-pool",26.5,-26.5,.6],["dam",26.5,-3.25,1],["south-pool",20,22,.6],["settling-basin",3.5,3.5,-12.8],["cistern-1",95,20,.6],["threshold",98.8,24.9,.6],["grotto-6",101.75,27.75,.6],["grotto-5",106.75,20,.6],["first-installation",95,11.5,.6]] as [string,number,number,number][]){const [x2,z2]=c([x,z]);marker(id,x2,z2,y);}
-  plinth(128,108,14,[north,south,...grottoes.map(([x0,z0,x1,z1])=>r(x0,z0,x1,z1))]);
-  assumptions.push("Northern pool 53 × 40 m (Gibson). Its depth is not given in the sources read; 10 m is about 21,200 m³ divided by its area, an inference. The 53 m side is drawn east–west.","Southern pool sides about 45 m north, 50 m east, 65 m south and 47 m west, up to 14 m deep (Duprez); the outline assumes a straight east–west north side and a north–south west side. The dam is 6.5 m wide (Duprez 6.50 m at the top; Gibson 6–6.5 m) and drawn as long as the northern pool.","The chimney is drawn round, 1.1 m across and 15 m deep after Duprez; von Wahlde gives 12 m. Its small openings to the northern pool are not drawn.","The western steps follow Gibson's report of steps along the whole western side; their count, run, width and the absence of landings are illustrative. The settling basin's 2.6 m east wall is Duprez's; its size and place in the corner are illustrative.","Pool and dam faces are drawn as laid ashlar in courses of about 60 cm (Duprez p. 34); Duprez reports rock in the lower parts, which the model does not separate.","Eastern complex: cistern 1 (about 8.5 m deep, 6 m across), grotto 5 (1.5 × 2 × 1.5 m, four steps) and basin 4 (about 30 cm deep) use Duprez's dimensions. Other sizes and all positions follow the arrangement of Duprez Pl. II, whose scale is not recorded; the distance and bearing from the pools are schematic. The grottoes are roofed caves, drawn open.","Byzantine and Crusader churches and later structures are omitted. The model makes no claim about a deposit point.");
+  if(royal){
+   // Pierre & Rousée 1981 pp. 24–25, Fig. 3: before the south basin, a slab-covered corridor about 2 m high
+   // ran south from the foot of the dam's square shaft, and the water fell about 3 m into an open rock-cut
+   // canal about 1 m deep and 0.75 m wide, known for about 50 m. The dam: a rock base and 20 courses of about 50 cm.
+   rockMass(D(0,40,-6.5,0,-12,-10),[],root,"dam",rock);
+   rockMass(D(0,40,-6.5,0,-10,0),[D(19.5,20.5,-6,-5,-10,.5),D(19.6,20.4,-5,.01,-10,-8)],root,"dam",stone);
+   // The valley in front of the dam, drawn inside the later south basin's outline: drawn only by this view.
+   walls(([[40,0],[45,0],[64.99,45.83],[0,47],[0,0]] as Point[]).map(c),12,.35,-12,"south-pool",false,restored);
+   slab(south,.3,-12.3,restored,"south-pool",root,[canal]);
+   const [ax,az]=c([20,23]);slab(canal,.3,-13.3,rock,"canal");for(const side of [-1,1])box(ax+side*.525,az,.3,46,1,-13,"canal",rock);
+   plinth(128,128,14,[north,south,r(0,-6.5,40,0),canal]);
+  }else{
+   basin(south,14,"south-pool");
+   // Square shaft about 1 × 1 m behind the dam's north face (Duprez; Pierre & Rousée p. 24), 15 m deep after Duprez.
+   const [cx,cz]=c([20,-5.5]),sq:Point[]=[[cx-.6,cz-.6],[cx+.6,cz-.6],[cx+.6,cz+.6],[cx-.6,cz+.6]];wellHoles.push(sq);walls(sq,15,.2,-15,"dam",true,stone);slab(sq,.2,-15.2,plaster,"dam");
+   // Steps down the whole western side, south of the settling basin; count and run are illustrative.
+   const [sx,sz]=c([7,27]);const flight=steps(sx,sz,40,14,14,40,"south-pool");flight.position.y=-14;flight.rotation.y=Math.PI;
+   walls(r(1,1,6,6),2.6,.5,-14,"settling-basin");
+   const [kx,kz]=c([95,20]);shaft(kx,kz,3,8.5,"cistern-1");
+   for(const [x0,z0,x1,z1,depth,id] of grottoes)basin(r(x0,z0,x1,z1),depth,id,rock);
+   const [gx,gz]=c([106.3,20]);const g5=steps(gx,gz,1.5,.6,1.5,4,"grotto-5");g5.position.y=-1.5;g5.rotation.y=Math.PI;
+   const [tx,tz]=c([98.8,24.9]);const sill=box(tx,tz,1.3,.55,.16,0,"threshold");sill.rotation.y=-.46;box(tx-.75,tz-.3,.4,.4,1.2,0,"threshold");
+   plinth(128,128,14,[north,south,...grottoes.map(([x0,z0,x1,z1])=>r(x0,z0,x1,z1))]);
+  }
+  for(const [id,x,z,y] of [["north-pool",20,-33,.6],["dam",20,-3.25,1],["canal",20,10,royal?-11:.6],["south-pool",20,22,.6],["settling-basin",3.5,3.5,-12.8],["cistern-1",95,20,.6],["threshold",98.8,24.9,.6],["grotto-6",101.75,27.75,.6],["grotto-5",106.75,20,.6],["first-installation",95,11.5,.6]] as [string,number,number,number][]){const [x2,z2]=c([x,z]);marker(id,x2,z2,y);}
+  assumptions.push("Northern pool 53 × 40 m (Gibson). Pierre & Rousée 1981 (p. 24) give the dam as about 40 m long; because the dam forms the pool's south side, the 40 m side is drawn east–west and the 53 m side north–south (inference). The north pool's extent is otherwise unknown: only its south-east corner is assured (p. 25). Its depth is not given in the sources read; 10 m is about 21,200 m³ divided by its area, an inference.","Southern pool sides about 45 m north, 50 m east, 65 m south and 47 m west, up to 14 m deep (Duprez); the outline assumes a straight east–west north side and a north–south west side. The dam is 6.5 m wide (Duprez 6.50 m at the top; Gibson 6–6.5 m; Pierre & Rousée 6 m at the top and more than 7 m at the base).","The shaft is drawn square, about 1 × 1 m (Duprez; Pierre & Rousée p. 24), 15 m deep after Duprez; von Wahlde gives 12 m. Its small openings to the northern pool (20 × 15 cm every 2 m) are not drawn.","Pool and dam faces are drawn as laid ashlar in courses of about 60 cm (Duprez p. 34); Pierre & Rousée give about 50 cm. The dam's rock base is drawn separately only in the royal-period view.","Byzantine and Crusader churches and later structures are omitted. The model makes no claim about a deposit point.");
+  if(royal)assumptions.push("Royal-period view after Pierre & Rousée 1981 (pp. 24–25, Fig. 3, Pl. 1): they date the dam, the north pool and the open canal to the Judahite monarchy and the south basin to the Hellenistic period (Simon II, 220–195 BCE). The south basin, its steps and settling basin and the eastern complex are left out. The valley in front of the dam is drawn only by this view (pale), inside the later basin's outline: its natural shape is not known.","Levels are relative and partly inferred: dam top 0; the corridor (2 m high, 0.8 m wide drawn) leaves the shaft foot at the north pool's floor (10 m down); the canal floor is 3 m below the corridor (\"drops about 3 m\"), so the valley floor is drawn 12 m below the dam top, within the dam's reported maximum height of 13 m. The rock base is drawn 2 m high and the 20 courses as one 10 m mass; the courses' set-backs are not drawn. The canal is drawn straight south from the corridor for 46 m, to the later basin's edge (about 50 m known).");
+  else assumptions.push("The western steps follow Gibson's report of steps along the whole western side; their count, run, width and the absence of landings are illustrative. The settling basin's 2.6 m east wall is Duprez's; its size and place in the corner are illustrative.","Eastern complex: cistern 1 (about 8.5 m deep, 6 m across), grotto 5 (1.5 × 2 × 1.5 m, four steps) and basin 4 (about 30 cm deep) use Duprez's dimensions. Other sizes and all positions follow the arrangement of Duprez Pl. II, whose scale is not recorded; the distance and bearing from the pools are schematic. The grottoes are roofed caves, drawn open.","Pierre & Rousée 1981 describe the Hellenistic rebuilding: the corridor at the shaft foot was deepened about 2 m so that the water passed under the dam, and the canal was vaulted (three voussoirs) under the south basin with about 2 m of fill over the vault (p. 25). These are not drawn: with Duprez's 14 m basin depth the canal's level cannot be placed from the reported figures.");
  } else if(plan.id==="east-gate-warren"){
   units="metres";note="Golden Gate · Warren’s levels and gallery, Plate VI frame";
   // Plate VI frame in metres: origin at the gate outline's centre, x to plate right (≈ east), z to plate down.
@@ -199,6 +284,102 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   for(const [id,x,z,y] of [["gatehouse",0,0,sill+13],["east-wall",wallX,-25,3],["cistern-xv",xv[0],xv[1],.6],["massive-wall",25.8,-2.5,surface(25.8,-2.5)+1],["gallery",40,gz,floor(40)+1],["tank-tomb",47.84,gz,floor(47.84)+1],["column",32.75,gz-1.6,floor(32.75)+2.6]] as [string,number,number,number][])marker(id,x,z,y);
   plinth(130,100,2,[gate,cut]);
   assumptions.push("Plan positions are measured on Warren's Plate VI with its own scale bar (2.344 px per ft); the outline of the Golden Gate (24.8 × 17.3 m), cistern XV (18 ft across, 30.0 m west of the gatehouse) and the massive wall follow the plate. The frame is the plate's, about 9° from north, without geographic registration. Archive: research/assets/plans/warren1884-plate-vi.","Levels follow Warren's feet: Haram surface 2,408 at cistern XV (rock 2,393 plus 15 ft), sill 2,396, ground outside the gate about 2,389, shaft top about 2,333.5 and bottom 2,308. The level 2,389 and the shaft's identification with the plate's 2308 square are inferences. The ground between these levels is a smooth interpolation, not surveyed relief.","The gatehouse's height, roof, wall thickness and twin passages are illustrative; it is drawn as a closed block. The Haram wall is drawn straight, 2.5 m thick, from the outside ground to an illustrative parapet; its foundation, which Warren found to extend 30–40 ft below the outside surface, is not drawn.","Warren's gallery is drawn in a display cutaway trench. Its section, the shaft's round form and the steps of its floor are illustrative; the floor rise follows the reported 8 ft at 37 ft and 25 ft 6 in at 85 ft. The tank or tomb is marked only. The column is drawn beside the gallery so that it can be seen.","The massive wall is drawn 2 m thick from about 5 ft below its plate level of 2,338.5 up to the present surface, as SWP thinks probable; its base and thickness are unknown, and the plate places it about 8 ft further from the Haram wall than the text's 46 ft.");
+ } else if(plan.id==="kidron-bene-hezir"){
+  units="metres";const original=options.layer==="avigad";
+  note=original?"Bene Ḥezir before its later breaches, with Avigad’s nefesh pyramid (reconstruction)":"Bene Ḥezir and Zechariah · Avigad 1954 measurements";
+  // Avigad's frame: x his east, z his south, origin at the centre of the Doric façade. He states only
+  // main directions; his 'west' is the façade's true south-west (p. 37), so the frame is turned 45°.
+  // y = 0 is the rock path at the foot of the cliff; the tomb floor F is 8.50 m above it (p. 42).
+  const tomb=new T.Group();tomb.rotation.y=Math.PI/4;root.add(tomb);tomb.updateMatrix();
+  const F=8.5,TOP=F+7,at=(x:number,y:number,z:number)=>new T.Vector3(x,y,z).applyMatrix4(tomb.matrix);
+  const S=(x0:number,x1:number,z0:number,z1:number,y0:number,y1:number):Space=>[x0,x1,z0,z1,y0,y1];
+  const kokh=(axis:'x'|'z',from:number,dir:1|-1,centre:number,mouth:number,width:number,length:number):Space[]=>{
+   const m=Math.min(.3,length*.15),a=[from,from+dir*m].sort((p,q)=>p-q),b=[from+dir*m,from+dir*length].sort((p,q)=>p-q);
+   return axis==='x'?[S(a[0],a[1],centre-mouth/2,centre+mouth/2,F,F+.9),S(b[0],b[1],centre-width/2,centre+width/2,F,F+.9)]:[S(centre-mouth/2,centre+mouth/2,a[0],a[1],F,F+.9),S(centre-width/2,centre+width/2,b[0],b[1],F,F+.9)];
+  };
+  const spaces:Space[]=[
+   S(-1.6,0,-7.005,2.875,F,TOP+1),                  // platform in front of both façades (0.90–2.09 m deep)
+   S(0,.55,-2.575,2.575,F,F+3),                     // between the antae, under the architrave
+   S(.55,3.7,-2.85,2.85,F,F+3.35),                  // porch, 5.55–5.83 × 3.04–3.23 m, 3.20–3.50 m high
+   S(3.7,4.5,-1.2,1.2,F,F+2.2),                     // the present wide opening into A (not original)
+   S(4.5,8,-2.4,2.4,F,F+2.2),                       // chamber A, 4.20–5.40 × 3.17–3.85 m, 2.20 m high
+   S(5.2,7.3,-3.2,-2.4,F,F+1.5),                    // later breach that took the north doorway
+   S(4.575,7.925,-6.7,-3.2,F,F+1.5),S(5.4,7.1,-5.74,-3.2,F-.5,F),   // B, 3.35 × 3.50 × 1.50 m, pit 1.70 × 2.54 m
+   ...kokh('z',-6.7,-1,5.3,.55,1.25,2.1),...kokh('z',-6.7,-1,7.15,.6,1.2,2.1),...kokh('x',7.925,1,-6.2,.5,.8,2.2),
+   S(5.915,6.585,2.4,3.2,F,F+1.56),                 // doorway to C, 0.67 × 1.56 m
+   S(4.45,8.05,3.2,7.2,F,F+1.1),S(5.5,7,3.2,6,F-.86,F),           // C, 4.00 × 3.60 m, pit 1.50 × 2.80 m
+   ...[3.85,5.2,6.55].flatMap(z=>kokh('x',8.05,1,z,.58,1.1,2.1)),...kokh('z',7.2,1,6.25,.58,1.1,2.1),
+   S(8,8.85,-.335,.335,F,F+1.5),                    // doorway to D
+   S(8.85,12.37,-1.9,1.9,F,F+1.95),S(9.585,11.635,-1.025,1.025,F-.77,F),  // D, pit 2.05 m square, 77 cm deep
+   S(10.3,11,1.9,2.6,F,F+.9),                       // unfinished kokh, south wall
+   S(10.335,10.885,-2.2,-1.9,F,F+.85),S(9.935,11.285,-4.2,-2.2,F,F+1),   // north-wall cell, opening 0.55 × 0.85 m
+   ...kokh('x',12.37,1,-1.285,.5,1.23,2.34),        // east-wall cell 1.23 × 2.34 m
+   S(12.37,13.17,1.3,1.91,F,F+1.2),                 // opening 0.61 × 1.20 m into E
+   S(13.17,15.37,.6,2.63,F,F+1.75),                 // E, 2.03 × 2.20 m, 1.75 m high
+   S(13.3,15.25,0,.6,F+.65,F+1.72),S(15.37,15.97,.64,2.59,F+.65,F+1.72),S(13.3,15.25,2.63,3.23,F+.65,F+1.72),  // arcosolia
+   S(0,.25,-5.905,-3.975,F,F+3.6),S(.25,1.55,-5.33,-4.55,F+.6,F+2.25),     // nefesh: recess 1.93 m, niche 0.78 × 1.65 × 1.30 m
+   S(.85,1.2,-5.115,-4.765,F-.2,F+.6),S(.4,2.4,-5.44,-4.44,F-1.4,F-.2),    // hole in the niche floor; cell 1.00 × 2.00 m below
+   S(1.3,2.9,-2.85,-1.85,F+3.35,TOP+1),             // the stair shaft breaks into the porch ceiling
+   ...Array.from({length:22},(_,k)=>S(1.3,2.9,-3.13-k*.28,-2.85-k*.28,F+1.78+k*.2417,TOP+1)),  // north stair, 1.60 m wide
+   S(1.545,2.705,2.85,3.35,F,F+3),                  // south corridor: jamb opening 1.16 m
+   ...([[3.35,4.85,.21],[4.85,5.15,.42],[5.15,9.85,.63],[9.85,10.15,.84],[10.15,10.45,1.05],[10.45,10.75,1.26],[10.75,11.05,1.51],[11.05,11.15,1.75]] as [number,number,number][]).map(([z0,z1,d])=>S(.975,3.275,z0,z1,F-d,F-d+3.5)),
+   S(1.45,2.8,11.15,11.48,F-2,F+.5),                // opening into the Zechariah court, 1.35 m wide
+   S(-1.6,10.625,11.48,22.46,F-2.25,TOP+1),         // Zechariah court, open to the west
+  ];
+  if(original)spaces.push(S(0,4.13,-7.005,-2.875,F+4,TOP+1));  // rock cleared above the nefesh façade for the pyramid
+  rockMass(S(-1.5,20,-13,26,-1,TOP),spaces,tomb);
+  box(-3.09,10.98,3.17,1,TOP+1,-1,"zechariah",rock,tomb);  // the court's north rock wall runs on to 15.30 m
+  // Doric columns in antis: lower diameter 0.53–0.55 m, upper 0.48 m, shaft 2.82 m, capital 0.18 m, abacus about 0.90 m.
+  for(const z of [1.03,-.86]){const c=mesh(new T.CylinderGeometry(.24,.27,2.82,20),rock,"porch",tomb);c.position.set(.275,F+1.41,z);box(.275,z,.9,.9,.18,F+2.82,"porch",rock,tomb);}
+  box(4.5625,16.97,12.125,10.98,.25,F-2.25,undefined,earth,tomb);   // present fill in the court (modern graves)
+  // Zechariah: a monolith 5.50–5.60 m square; 2.75–3.08 m from the north rock wall, 2.95 m from the east, 2.68 m from the south (p. 79).
+  box(4.9,17.005,5.55,5.55,6,F-3,"zechariah",rock,tomb);box(4.9,17.005,5.95,5.95,.6,F+3,"zechariah",rock,tomb);pyramid(4.9,17.005,5.55,3.8,F+3.6,rock,"zechariah",tomb);
+  if(original){
+   // Avigad's original state: the porch doorway about 0.80 m wide on the column axis (p. 38); the north
+   // doorway of A (lost in a breach); the pit in D 50 cm deep before it was deepened (p. 41); the corridor
+   // cleared to the steps that Slouschz saw; and the nefesh completed by a pyramid (Fig. 42, 1; pp. 73–78).
+   for(const [x0,x1,z0,z1,y0,y1] of [[3.7,4.5,-1.2,-.4,F,F+2.2],[3.7,4.5,.4,1.2,F,F+2.2],[3.7,4.5,-.4,.4,F+1.7,F+2.2],[5.2,5.925,-3.2,-2.4,F,F+1.5],[6.575,7.3,-3.2,-2.4,F,F+1.5],[5.925,6.575,-3.2,-2.4,F+1.4,F+1.5],[9.585,11.635,-1.025,1.025,F-.77,F-.5]] as Space[])box((x0+x1)/2,(z0+z1)/2,x1-x0,z1-z0,y1-y0,y0,"chambers",restored,tomb);
+   pyramid(2.065,-4.94,4.13,5,F+4,restored,"nefesh",tomb);
+  }else{
+   // The last corridor steps lie under earth (p. 39).
+   for(const [x0,x1,z0,z1,y0] of [[.975,3.275,10.75,11.05,F-1.51],[.975,3.275,11.05,11.15,F-1.75],[1.45,2.8,11.15,11.48,F-2]] as [number,number,number,number,number][])box((x0+x1)/2,(z0+z1)/2,x1-x0,z1-z0,F-1.26-y0,y0,"corridor",earth,tomb);
+  }
+  // Absalom, about 50 m from Bene Ḥezir (p. 37), north of it on Fig. 25. Avigad's summary gives only its
+  // 20 m height and its parts: a rock-cut square substructure, a course of dressed stone, a round drum and a concave cone.
+  const ab=(x:number,z:number)=>[x,z-50] as Point;
+  {const [x,z]=ab(0,0);box(x,z,6,6,6.8,-.3,"absalom",rock);box(x,z,6.2,6.2,1,6.5,"absalom");
+   for(const [y0,y1,r0,r1] of [[7.5,9.5,2.6,2.6],[9.5,12,2.6,1.5],[12,15,1.5,.8],[15,18,.8,.4],[18,19.7,.4,.18]]){const m=mesh(new T.CylinderGeometry(r1,r0,y1-y0,28),stone,"absalom");m.position.set(x,(y0+y1)/2,z);}
+   box(x,z,.3,.3,.3,19.7,"absalom");}
+  const put=(id:string,v:T.Vector3)=>marker(id,v.x,v.z,v.y);
+  put("bene-hezir-facade",at(-.4,F+4.4,0));put("porch",at(2.1,F+1.6,0));put("chambers",at(6.25,F+1.2,0));put("corridor",at(2.1,F+.8,7));put("nefesh",at(.2,F+(original?6.5:2.4),-4.94));put("zechariah",at(4.9,F+4.5,17));marker("absalom",0,-50,21);
+  plinth(96,120,2);
+  assumptions.push("Plan, chamber and façade sizes are Avigad's (1954 pp. 37–49, 79): façade 5.75 + 4.13 = 9.88 m, porch 5.7 × 3.15 m and 3.35 m high, columns 3.00 m with 0.53 m lower diameter, entablature 0.95 m; chambers A–E, their pits, kokhim and arcosolia, the 1.60 m north stair (13 steps from 1.78 to 4.68 m above the floor) and the south corridor (8.30 m, 2.30 m wide, steps of 20–22 cm). Ranges are drawn at their means; trapezoidal chambers are drawn as rectangles.","Avigad gives no wall thicknesses, chamber floor levels or kokh heights: walls between chambers are drawn 0.8 m, all chamber floors at the porch floor with benches at that level, kokhim 0.9 m high, and the stair continued above its visible top to the rock surface. Which side of each chamber carries which dimension is inferred from the kokhim on each wall.","The façade's two parts meet at an obtuse angle (p. 37); they are drawn in one plane. The frame is Avigad's, turned 45° so that his 'west' faces south-west; his directions are rounded (p. 39). Levels: tomb floor 8.50 m above the rock path (p. 42); rock surface drawn 7 m above the floor (up to 8.00 m at the stair, p. 39); Zechariah court ground drawn 2 m below the tomb floor (Slouschz's steps about 2 m below it). The burial cells in the scarp below the façade (p. 38 n. 1, Fig. 48) are not drawn.","Zechariah: the 5.55 m square monolith and its passages (2.9 m north, 2.95 m east, 2.68 m south; court 11.45 × 10.98 m drawn, 11.20 × 11.45 m published) follow p. 79; the corridor opening is set 3.08 m from its north-west corner. Its heights (body, cornice, pyramid) are illustrative: its base is buried and the pages read give no height.","Absalom is placed 50 m north of the Bene Ḥezir façade from Fig. 25's north-to-south order; its bearing is not measured. Only its 20 m height and its parts are published in the pages read: the 6 m square substructure, the drum and the profile of the cone are illustrative massing. The Jehoshaphat cave is not drawn.");
+  if(original)assumptions.push("Original-state view (pale parts are drawn only by it): the porch doorway narrowed to Avigad's original 0.80 m (p. 38), the north doorway of A restored in its breach, the pit in D at its original 50 cm (p. 41), and the corridor cleared of earth. The nefesh pyramid follows Avigad's reconstruction (Fig. 42, 1; pp. 73–78), which publishes no dimensions: its 4.13 m base (the added façade's width) and 5 m height are illustrative. Avigad notes that the rock leaves no room for a square base without reaching over the steps behind the nefesh (p. 76); the model shows that overlap with the north stair rather than resolving it.");
+ } else if(plan.id==="temple-great-sea"){
+  units="metres";note="The Great Sea (cistern VIII) · Warren Pl. VII outline, published depths";
+  // Warren 1884 Pl. VII traced at its own scale bar and turned by its north arrow (8.8°): x east, z south,
+  // origin at the outline's vertex mean (research/assets/plans/warren1884-plate-vii). y = 0 is the Haram surface.
+  const outline:Point[]=[[-2.11,-25.89],[-2.92,-22.6],[-9.36,-20.03],[-9.15,-15.32],[-19.96,-12.07],[-18.76,-4.36],[-16.23,-1.6],[-15.13,2.97],[-13.86,4.35],[-14.79,7.65],[-12.94,13.68],[-11.54,15.04],[-12.49,19.92],[-14.45,23.38],[-12.93,24.73],[-1.76,22.99],[15.73,18.69],[21.78,16.18],[22.31,14.51],[20,3.83],[18.62,.88],[16.2,-.32],[14.69,-3.24],[18.1,-10.09],[15.56,-12.85],[15.34,-15.97],[5.89,-19.24],[4.16,-25.28]];
+  const floor=-14,ceiling=-4,surface=-.28,cut=-4;
+  // Floor 14 m and rock roof about 2.5 m thick (Schick); rock 1.5 m below the surface (Warren); rock-cut and plastered.
+  slab(outline,.3,floor-.3,plaster,"great-sea");
+  // The walls run up to the surface, with a gap where the stair enters on the south.
+  const g0:Point=[13.3,19.29],g1:Point=[14.7,18.94],i=outline.findIndex(p=>p[0]===15.73);
+  walls([g1,...outline.slice(i),...outline.slice(0,i-1),outline[i-1],g0],surface-floor,.35,floor,"great-sea",false,plaster);
+  // Five free-standing rock piers (Schick); Warren draws none, so their places and size are illustrative.
+  for(const [x,z] of [[-3,-14],[8,-8],[-6,2],[8,8],[0,15]])box(x,z,3,3,ceiling-floor,floor,"piers",rock);
+  // Shaft mouths: the one Warren draws, and two more of the three Wilson found in use (places illustrative).
+  const mouths=[[2.37,13.14],[8,-15],[13,3]].map(([x,z]):Point[]=>[[x-.5,z-.5],[x+.5,z-.5],[x+.5,z+.5],[x-.5,z+.5]]);
+  // Display cutaway: the roof is drawn only east of x = -4 m, so the chamber can be seen from above.
+  const roofed=clipX(outline,cut);slab(roofed,2.5,ceiling,rock,"great-sea",root,mouths);slab(roofed,surface-(-1.5),-1.5,earth,"great-sea",root,mouths);
+  // Stair from the south: 44 steps (Barclay) or 50 (Schick), narrow, entered from a well-like opening (Whitty).
+  const N=50,rise=(surface-floor)/N,run=.28,top=19.1+N*run,stairs:Space[]=[[12.6,15.4,18,19.3,floor,ceiling]];
+  for(let k=0;k<N;k++){const z1=top-k*run,y=surface-(k+1)*rise;stairs.push([13.4,14.6,z1-run,z1,y,k<6?1:y+2.2]);}
+  rockMass([12.6,15.4,18,top+.5,floor-.3,surface],stairs,root,"stair");
+  const stairHole:Point[]=[[12.6,18],[15.4,18],[15.4,top+.5],[12.6,top+.5]];
+  for(const [id,x,z,y] of [["great-sea",2,0,-6],["mouth",2.37,13.14,.6],["piers",-6,2,-9],["stair",14,26,-5]] as [string,number,number,number][])marker(id,x,z,y);
+  plinth(70,84,2,[outline,stairHole]);
+  assumptions.push("Outline: the hatched extent of cistern VIII on Warren 1884 Pl. VII, traced at the plate's own scale (0.130 m per pixel) and turned by its north arrow; 37.7 × 48.4 m and about 1,360 m² on the plate's axes, uncertain by about ±2 m. Gibson & Jacobson 1996 (p. 33) tabulate about 40 × 30 m (Schick) and 44 × 45 m (Pierotti). The plate draws no piers, stair or roof openings other than one mouth; its hatching may include the small chamber to the north-east.","Levels: floor 14 m below the Haram surface and a rock roof about 2.5 m thick (Schick), rock 1.5 m below the surface (Warren), so 10 m from floor to roof (Pierotti 10 m; Schick also gives 11.5 m). Wilson and Warren give the floor 12.85–13.3 m down. Walls and floor are drawn plastered (\"entirely rock-cut and plastered\").","The five piers follow Schick's count (Wilson's plan has four piers and two rock partitions); their places and 3 × 3 m size are illustrative. Of the shaft mouths, only the one Warren draws is placed from the plate; two more stand for the three Wilson found in use, at illustrative places, 1 m square.","The stair is drawn with Schick's 50 steps from the south, 1.2 m wide, with a well-like opening at the top (Whitty, via G&J p. 33); its line, width and the opening's depth are illustrative. The roof is cut away west of x = −4 m for display only: the cistern is roofed throughout, partly in rock and partly with flat stones (W&C p. 220). The small circular chamber, the conduits and Pierotti's passages east and south are not drawn.","The model sits at the Temple enclosure's gazetteer anchor (Pleiades, about 150 m); cistern VIII lies south of the inner platform in front of the Aqṣā, so its drawn position is not its true position. No date is given for the cutting of the cistern in the pages read.");
  } else if(plan.traced&&traced[plan.traced]){
   const source=traced[plan.traced],view=source.layers.find(l=>l.id===options.layer)??source.layers.find(l=>l.id==='remains')??source.layers[0],rebuilt=view.kind!=='observed';
   units="metres";note=`${view.label} · ${rebuilt?'published reconstruction':'traced plan'}`;
@@ -291,7 +472,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
  const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block,options.terrain);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;context.mesh.userData.siteContext='ground';root.add(context.mesh);context.details.position.set(center.x,0,center.z);context.details.userData.siteContext='details';root.add(context.details);
  assumptions.push(surfaces.style.photos.length?`Base colours and the ${surfaces.style.masonry} masonry pattern are taken from reference photographs (${surfaces.style.photos.join(', ')}): sunlit-face medians of sample boxes, recorded in research/assets/plans/atlas-explorer/surface-samples-2026-10-17. ${surfaces.style.masonryNote??''} Individual stones, joints, chipped edges, plaster wear and soil relief remain illustrative, not recorded stones or weathering; photographs vary in exposure and white balance.`:`Surface art uses a ${surfaces.style.id} material palette, metre-scaled stone joints, chipped edges, plaster wear and soil relief. These are illustrative visual treatments, not recorded individual stones or weathering.`);
  assumptions.push(context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");
- const starts:Record<string,[string,number,number,number,number]>={'gerizim-precinct':['east-stair',28,22,308,100],'hyrcania-waterworks':['north-pool',0,-12,180,76],'jericho-early':['complex',-14.5,0,90,80],'jericho-late':['complex',-14.5,0,90,80],'siloam-receiver':['L103',0,6,0,80],'doq-waterworks':['intake',4,5,-35,83],'jericho-ac':['AC94',0,7,0,80],'bethesda-pools':['dam',-12,0,160,84],'east-gate-warren':['massive-wall',8,-12,270,90]};
+ const starts:Record<string,[string,number,number,number,number]>={'kidron-bene-hezir':['bene-hezir-facade',-.28,.28,45,84],'temple-great-sea':['stair',0,8,0,84],'gerizim-precinct':['east-stair',28,22,308,100],'hyrcania-waterworks':['north-pool',0,-12,180,76],'jericho-early':['complex',-14.5,0,90,80],'jericho-late':['complex',-14.5,0,90,80],'siloam-receiver':['L103',0,6,0,80],'doq-waterworks':['intake',4,5,-35,83],'jericho-ac':['AC94',0,7,0,80],'bethesda-pools':['dam',-12,0,160,84],'east-gate-warren':['massive-wall',8,-12,270,90]};
  const start=starts[plan.id],point=start?markers.get(start[0]):undefined;
  const walkStart=point&&start?{position:[point.x+start[1],point.z+start[2]] as Point,bearing:start[3],pitch:start[4]}:tracedStart&&{...tracedStart,position:[tracedStart.position[0]-center.x,tracedStart.position[1]-center.z] as Point};
  return {root,roof,markers,selectable,note,assumptions,units,walkStart,framing:bounds.translate(new T.Vector3(-center.x,0,-center.z)),landscape:{context:context.context,credit:context.credit,mapped:!!context.patch}};

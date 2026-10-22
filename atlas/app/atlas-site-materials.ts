@@ -14,6 +14,9 @@ const fallback = (id:string) => {
  if(id.includes('gerizim'))return {id:'gerizim',stone:'#aaa99b',rock:'#97978a',soil:'#827a61',plaster:'#c3ba9f',lichen:.28,courses:.38};
  if(id.includes('bethesda'))return {id:'bethesda',stone:'#b7ad92',rock:'#a9a087',soil:'#8f8269',plaster:'#b1b09c',lichen:.12,courses:.6};
  if(id.includes('east-gate'))return {id:'eastgate',stone:'#b7ad92',rock:'#a9a087',soil:'#8f8269',plaster:'#b1b09c',lichen:.12,courses:.76};
+ if(id.includes('kidron'))return {id:'kidron',stone:'#b7ad92',rock:'#a9a087',soil:'#8f8269',plaster:'#b1b09c',lichen:.1,courses:.6};
+ // No photograph of the Great Sea's interior is in the library: the Jerusalem palette without photo colours.
+ if(id.includes('temple'))return {id:'haram',stone:'#b7ad92',rock:'#a9a087',soil:'#8f8269',plaster:'#c9c3b0',lichen:.04,courses:.5};
  if(id.includes('siloam'))return {id:'siloam',stone:'#b7ad92',rock:'#a9a087',soil:'#8f8269',plaster:'#b1b09c',lichen:.23,courses:.33};
  if(id.includes('jericho'))return {id:'jericho',stone:'#ceb998',rock:'#b7a387',soil:'#ae8d67',plaster:'#dbbba0',lichen:.015,courses:.31};
  if(id.includes('doq'))return {id:'doq',stone:'#baab8a',rock:'#ac926e',soil:'#9e825f',plaster:'#c2b79b',lichen:.035,courses:.33};

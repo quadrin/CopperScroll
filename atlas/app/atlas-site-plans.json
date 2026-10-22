@@ -867,10 +867,11 @@
         "entryIds": [
           "29"
         ],
-        "description": "A(C)94 and its adjacent supply/drain lines are explicitly labelled in Area AC.",
-        "limit": "The current feature test is not identifiable; a phase-controlled aperture-to-wall and floor section remains missing.",
+        "description": "A(C)94 and its adjacent supply/drain lines are explicitly labelled in Area AC. On Netzer's Plan 12 sheet (library photo, 21 Oct 2026) A(C)94 is a square stepped pool: floor levels 99.45–99.85, steps on the west from 100.07 to 102.24, rim 102.67–102.75 (about 3 m deep); a diagonal pipe meets its north-west corner at 102.87 / 102.80.",
+        "limit": "The current feature test is not identifiable; a phase-controlled aperture-to-wall and floor section remains missing. The sheet does not say whether 102.87 / 102.80 are invert, centre or crown levels, and gives no benchmark or section.",
         "sources": [
-          "Trümper 2018 Fig. 19, p. 282, after Netzer 2001a plan 13"
+          "Trümper 2018 Fig. 19, p. 282, after Netzer 2001a plan 13",
+          "Netzer 2001 plans portfolio, Plan 12 (NLI photo)"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/ac94_pipe_test.md"
       },
@@ -1142,7 +1143,7 @@
     "source": "Magen 2008, NEAEHL 5 p. 1743 site plan; pp. 1745–1747",
     "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/neaehl-vol5/gerizim-extract.pdf",
     "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
-    "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. Selected Hellenistic precinct and Area P envelopes only; the source also includes Persian, Byzantine and later remains. Staircases elsewhere and the courtyard cistern are described separately. The cistern and P5178 are not located by this overview.",
+    "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. Selected Hellenistic precinct and Area P envelopes only; the source also includes Persian, Byzantine and later remains. Staircases elsewhere and the courtyard cistern are described separately. The cistern and P5178 are not located by this overview. The Persian view follows the description in Magen et al. 2004 p. 3*.",
     "shapes": [
       {
         "d": "M225 85 L445 120 L453 283 L420 465 L195 421Z",
@@ -1277,6 +1278,34 @@
           "Magen 2008 p. 1743 no. 7; p. 1747"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sites/gerizim_locus5178_followup_2026-10-01.md"
+      },
+      {
+        "id": "persian-precinct",
+        "label": "Persian-period precinct and gates",
+        "x": 325,
+        "y": 250,
+        "kind": "Reported remains",
+        "entryIds": [
+          "57"
+        ],
+        "description": "Magen, Misgav & Tsfania 2004: the temple was built in the 5th century BCE; the Persian precinct measured 96 × 98 m including its gates (about 200 × 200 cubits), with gates on the north (six-chambered, fully exposed), south and east and none on the west, because of its nearness to the back of the temple. Remains of a stair to the east gate lie under the second-phase stair. In the Hellenistic phase the south side was doubled and a fortress added in the south-east corner.",
+        "limit": "The diagram mark and the model's placement on the Hellenistic frame are approximate. The pages read give no plan scale for the gates; their sizes in the model are illustrative.",
+        "sources": [
+          "Magen, Misgav & Tsfania 2004 pp. 1, 3*, 8, 12–14; Fig. 5 key"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/gerizim_I_2004.md"
+      }
+    ],
+    "layers": [
+      {
+        "id": "remains",
+        "label": "Hellenistic",
+        "kind": "observed"
+      },
+      {
+        "id": "persian",
+        "label": "Persian precinct (Magen et al. 2004)",
+        "kind": "published-reconstruction"
       }
     ]
   },
@@ -1428,10 +1457,10 @@
     "label": "Hyrcania · pools, bridge & cisterns",
     "width": 700,
     "height": 650,
-    "source": "Patrich 1989 Fig. 22, p. 256; double-pool description p. 255",
+    "source": "Patrich 1989 Fig. 22, p. 256; double-pool description p. 255; Patrich 2002 pp. 336–352; Feldman (Ilan ed.) pp. 326–335",
     "sourceUrl": "https://drive.google.com/file/d/1-6s-nqSD-PP_FpZ788Tc0dvH_z7eziZg/view",
     "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
-    "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. The source figure has no visible north arrow; no compass is inferred from page-up. Selected water installations only. The basin-centre and rim distance origins remain separate, unresolved hypotheses.",
+    "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. The source figure has no visible north arrow; no compass is inferred from page-up. Selected water installations only. The basin-centre and rim distance origins remain separate, unresolved hypotheses. The east bridge, pit and point 49 tunnel follow Patrich 2002's dimensions; the Herodian view is a reconstruction of the bridge to its 12.5 m channel.",
     "shapes": [
       {
         "d": "M163 94 L201 52 L254 92 L216 133Z",
@@ -1480,6 +1509,14 @@
       {
         "d": "M535 248 L548 242 L554 253 L542 263Z",
         "kind": "basin"
+      },
+      {
+        "d": "M252 62 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0",
+        "kind": "basin"
+      },
+      {
+        "d": "M352 452 L352 488",
+        "kind": "tunnel"
       }
     ],
     "annotations": [
@@ -1539,7 +1576,7 @@
       },
       {
         "id": "bridge",
-        "label": "Aqueduct bridge · source no. 48",
+        "label": "East aqueduct bridge · source no. 48",
         "x": 207,
         "y": 173,
         "kind": "Reported remains",
@@ -1547,12 +1584,14 @@
           "16",
           "29"
         ],
-        "description": "The double pool lies north of the bridge in Patrich’s description. The bridge carries the water approach across the saddle.",
-        "limit": "The selected bridge envelope is approximate. Two masonry phases reported elsewhere do not date each pool edge or select an entry-29 datum.",
+        "description": "The east bridge crosses the saddle between the double pool (north) and the southern pool. Patrich 2002: 112 m long; preserved up to about 6 m high, 2.5 m wide at the base and 1.45 m at the top; a few lower courses Hasmonean, the rest Herodian; the Herodian channel ran about 12.5 m above the base and is not preserved. Feldman gives the eastern saddle wall as 170 m long and 16.78 m high.",
+        "limit": "The bridge is drawn straight on level ground, 6 m high along its whole length; its preserved height varies. The Herodian view's upper wall and channel are a reconstruction; Patrich also offers upper arches or a siphon. Neither phase dates a pool edge or selects an entry-29 datum.",
         "sources": [
-          "Patrich 1989 pp. 255–256, Fig. 22; Garbrecht & Peleg 1994 pp. 167–168"
+          "Patrich 2002 pp. 337–338, 343–348, Fig. 17",
+          "Feldman (Ilan ed.) p. 334",
+          "Patrich 1989 pp. 255–256, Fig. 22"
         ],
-        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_hyrcania/geometry.md"
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md"
       },
       {
         "id": "separate-pool",
@@ -1563,10 +1602,11 @@
         "entryIds": [
           "29"
         ],
-        "description": "A distinct filled pool south of the bridge has no exposed lining at the published depth; a moat function is proposed.",
+        "description": "A distinct quarried pool south of the bridge: a depression with a vertical rock-cut west side and no visible plaster (Patrich 2002). Patrich takes the area with the north pools as a kind of moat cutting the fortress off from the western ridge.",
         "limit": "Keep it separate from the double pool. Its function and phase remain uncertain.",
         "sources": [
-          "Patrich 1989 pp. 255–256, Fig. 22"
+          "Patrich 1989 pp. 255–256, Fig. 22",
+          "Patrich 2002 pp. 348, 351"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_hyrcania/geometry.md"
       },
@@ -1586,6 +1626,50 @@
           "Patrich 1989 Fig. 22 p. 256; Figs. 26–27 p. 258"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_hyrcania/geometry.md"
+      },
+      {
+        "id": "pit",
+        "label": "Round pit north-east of the north pool",
+        "x": 262,
+        "y": 62,
+        "kind": "Reported remains",
+        "entryIds": [
+          "29"
+        ],
+        "description": "A round pit 3.05 m in diameter and 4.3 m deep north-east of the north pool; its purpose is unknown (Patrich 2002 p. 348, Fig. 23).",
+        "limit": "Its place in the model and on this diagram is illustrative ('north-east of the north pool'). It is not a pool rim or conduit junction.",
+        "sources": [
+          "Patrich 2002 p. 348, Fig. 23"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md"
+      },
+      {
+        "id": "tunnel-49",
+        "label": "Built tunnel · point 49",
+        "x": 352,
+        "y": 470,
+        "kind": "Reported remains",
+        "entryIds": [
+          "16"
+        ],
+        "description": "Between cisterns A and N the aqueduct passes through a built, barrel-vaulted tunnel: free part about 11.5 m long, 1.25 m high and 0.75 m wide, with a square opening at the north end; the south end is blocked by débris (Patrich 2002 p. 351, Figs. 25a–b; the 1989 dimensions repeated).",
+        "limit": "Its place in the model is illustrative. The free length is what can be entered today; the tunnel's full length under the débris is not known. The 14/40/41-cubit test is unchanged by this record.",
+        "sources": [
+          "Patrich 2002 p. 351, Figs. 25a–b"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md"
+      }
+    ],
+    "layers": [
+      {
+        "id": "remains",
+        "label": "Remains",
+        "kind": "observed"
+      },
+      {
+        "id": "herodian",
+        "label": "Herodian bridge (Patrich 2002)",
+        "kind": "published-reconstruction"
       }
     ]
   },
@@ -1695,81 +1779,89 @@
     ],
     "label": "Bethesda · pools & eastern complex",
     "width": 700,
-    "height": 600,
-    "source": "Duprez 1970 pp. 33–41 and Pl. II; Gibson 2005 pp. 286–287 and 2011 pp. 22–28",
+    "height": 640,
+    "source": "Duprez 1970 pp. 33–41 and Pl. II; Gibson 2005 pp. 286–287 and 2011 pp. 22–28; Pierre & Rousée 1981 pp. 23–25, Figs. 2–3",
     "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md",
     "credit": "Original project diagram of selected published dimensions and relations. Simplified outlines; omitted walls are not absent remains.",
-    "limit": "No geographic registration. The pools use published dimensions with an assumed angle; the eastern complex follows the relative arrangement of Duprez Pl. II, and its distance and bearing from the pools are schematic. Byzantine and Crusader structures are omitted.",
+    "limit": "No geographic registration. The pools use published dimensions with an assumed angle; the eastern complex follows the relative arrangement of Duprez Pl. II, and its distance and bearing from the pools are schematic. Byzantine and Crusader structures are omitted. The royal-period view follows Pierre & Rousée 1981: the dam, the north pool and an open canal before the south basin.",
     "north": {
       "x": 660,
-      "y": 110,
+      "y": 150,
       "dx": 0,
       "dy": -55
     },
     "shapes": [
       {
-        "d": "M60.0 58.2 L335.6 58.2 L335.6 266.2 L60.0 266.2Z",
+        "d": "M60.0 30.6 L268.0 30.6 L268.0 306.2 L60.0 306.2Z",
         "kind": "basin"
       },
       {
-        "d": "M60.0 300.0 L294.0 300.0 L397.9 538.3 L60.0 544.4Z",
+        "d": "M60.0 340.0 L294.0 340.0 L397.9 578.3 L60.0 584.4Z",
         "kind": "basin"
       },
       {
-        "d": "M60.0 266.2 L335.6 266.2 L335.6 300.0 L60.0 300.0Z",
+        "d": "M60.0 306.2 L268.0 306.2 L268.0 340.0 L60.0 340.0Z",
         "kind": "wall"
       },
       {
-        "d": "M65.2 305.2 L91.2 305.2 L91.2 331.2 L65.2 331.2Z",
+        "d": "M65.2 345.2 L91.2 345.2 L91.2 371.2 L65.2 371.2Z",
         "kind": "basin"
       },
       {
-        "d": "M538.4 404.0 a15.600000000000001 15.600000000000001 0 1 0 31.200000000000003 0 a15.600000000000001 15.600000000000001 0 1 0 -31.200000000000003 0",
+        "d": "M161.4 308.8 L166.6 308.8 L166.6 314.0 L161.4 314.0Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M164.0 340.0 L164.0 579.2",
+        "kind": "reconstruction"
+      },
+      {
+        "d": "M538.4 444.0 a15.600000000000001 15.600000000000001 0 1 0 31.200000000000003 0 a15.600000000000001 15.600000000000001 0 1 0 -31.200000000000003 0",
         "kind": "basin"
       },
       {
-        "d": "M546.2 352.0 L561.8 352.0 L561.8 367.6 L546.2 367.6Z",
+        "d": "M546.2 392.0 L561.8 392.0 L561.8 407.6 L546.2 407.6Z",
         "kind": "basin"
       },
       {
-        "d": "M585.2 357.2 L600.8 357.2 L600.8 372.8 L585.2 372.8Z",
+        "d": "M585.2 397.2 L600.8 397.2 L600.8 412.8 L585.2 412.8Z",
         "kind": "basin"
       },
       {
-        "d": "M582.6 398.8 L593.0 398.8 L593.0 409.2 L582.6 409.2Z",
+        "d": "M582.6 438.8 L593.0 438.8 L593.0 449.2 L582.6 449.2Z",
         "kind": "basin"
       },
       {
-        "d": "M611.2 398.8 L619.0 398.8 L619.0 409.2 L611.2 409.2Z",
+        "d": "M611.2 438.8 L619.0 438.8 L619.0 449.2 L611.2 449.2Z",
         "kind": "basin"
       },
       {
-        "d": "M580.0 435.2 L598.2 435.2 L598.2 453.4 L580.0 453.4Z",
+        "d": "M580.0 475.2 L598.2 475.2 L598.2 493.4 L580.0 493.4Z",
         "kind": "basin"
       },
       {
-        "d": "M546.2 440.4 L561.8 440.4 L561.8 456.0 L546.2 456.0Z",
+        "d": "M546.2 480.4 L561.8 480.4 L561.8 496.0 L546.2 496.0Z",
         "kind": "basin"
       },
       {
-        "d": "M570.6 427.9 L576.9 431.0",
+        "d": "M570.6 467.9 L576.9 471.0",
         "kind": "wall"
       }
     ],
     "annotations": [
       {
         "x": 120,
-        "y": 45,
+        "y": 22.6,
         "text": "Northern pool"
       },
       {
         "x": 120,
-        "y": 575,
+        "y": 615,
         "text": "Southern pool"
       },
       {
         "x": 520,
-        "y": 330,
+        "y": 370,
         "text": "Eastern complex (schematic)"
       }
     ],
@@ -1777,51 +1869,54 @@
       {
         "id": "north-pool",
         "label": "Northern pool",
-        "x": 197.8,
-        "y": 162.2,
+        "x": 164.0,
+        "y": 168.4,
         "kind": "Reported remains",
         "entryIds": [
           "55"
         ],
-        "description": "Gibson gives the northern pool as about 53 × 40 m, a reservoir of about 21,200 m³. Duprez reports no new work on it.",
-        "limit": "Its depth is not recorded in the sources read; the model's 10 m is that volume divided by its area, an inference. Which side is 53 m is not stated; it is drawn east–west.",
+        "description": "Gibson gives the northern pool as about 53 × 40 m, a reservoir of about 21,200 m³. Pierre & Rousée (1981) take it as the earlier basin, created by the dam, with only its south-east corner assured.",
+        "limit": "Its depth is not recorded in the sources read; the model's 10 m is that volume divided by its area, an inference. The 40 m side is drawn east–west because the dam that forms its south side is about 40 m long (inference).",
         "sources": [
           "Gibson 2005 p. 286; Gibson 2011 p. 23",
-          "Duprez 1970 p. 35"
+          "Duprez 1970 p. 35",
+          "Pierre & Rousée 1981 pp. 24–25"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/gibson2005_2011_bethesda_extracted.md"
       },
       {
         "id": "dam",
         "label": "Central dam and chimney",
-        "x": 197.8,
-        "y": 283.1,
+        "x": 164.0,
+        "y": 323.1,
         "kind": "Reported remains",
         "entryIds": [
           "55"
         ],
-        "description": "Duprez: the central dam is built above and rock below, 6.50 m wide at the top, with ashlar faces in courses of about 60 cm. A square chimney about 1 × 1 m and about 15 m deep runs behind its north face, with small openings to the northern pool. Gibson gives the barrier wall F295 as about 6–6.5 m thick, with a shaft F296 and a tunnel with a sluice.",
-        "limit": "Von Wahlde gives the chimney as 12 m deep; the model uses Duprez's 15 m and draws the chimney round. The dam's length is drawn as the northern pool's 53 m.",
+        "description": "Duprez: the central dam is built above and rock below, 6.50 m wide at the top, with ashlar faces in courses of about 60 cm and a square chimney about 1 × 1 m and about 15 m deep behind its north face. Pierre & Rousée 1981: about 40 m long, 6 m wide at the top and more than 7 m at the base, at most 13 m high, on a rock base with 20 courses of about 50 cm; small openings every 2 m link the shaft to the north basin, and a slab-covered corridor about 2 m high left its foot.",
+        "limit": "Von Wahlde gives the chimney as 12 m deep; the model uses Duprez's 15 m. Pierre & Rousée date the dam to the Judahite monarchy on building technique and textual association, without sealed finds.",
         "sources": [
           "Duprez 1970 pp. 33–34",
-          "Gibson 2005 p. 287 Fig. 2; Gibson 2011 pp. 23, 26"
+          "Gibson 2005 p. 287 Fig. 2; Gibson 2011 pp. 23, 26",
+          "Pierre & Rousée 1981 pp. 24–25, Fig. 3, Pls. 1–2"
         ],
-        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/probatique_poc31_1981.md"
       },
       {
         "id": "south-pool",
         "label": "Southern pool and its western steps",
         "x": 164.0,
-        "y": 414.4,
+        "y": 454.4,
         "kind": "Reported remains",
         "entryIds": [
           "55"
         ],
-        "description": "Duprez: sides of about 45 m (north), 50 m (east), 65 m (south) and 47 m (west), up to 14 m deep; its rock steps broke the current of incoming water. Gibson: hewn and built steps with landings along the whole western side (F306–309).",
+        "description": "Duprez: sides of about 45 m (north), 50 m (east), 65 m (south) and 47 m (west), up to 14 m deep; its rock steps broke the current of incoming water. Gibson: hewn and built steps with landings along the whole western side (F306–309). Pierre & Rousée 1981 date it Hellenistic (Simon II, 220–195 BCE), later than and independent of the north basin.",
         "limit": "The four sides fix the outline only with an assumed angle: the north side is drawn east–west and the west side north–south. Step count, width and landings are illustrative. Duprez dates the pools to the 2nd century BCE; Gibson to Herod, 31–22 BCE.",
         "sources": [
           "Duprez 1970 pp. 34–37",
-          "Gibson 2005 pp. 286–287; Gibson 2011 p. 25"
+          "Gibson 2005 pp. 286–287; Gibson 2011 p. 25",
+          "Pierre & Rousée 1981 pp. 25, 33, 42"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
       },
@@ -1829,7 +1924,7 @@
         "id": "settling-basin",
         "label": "Settling basin at the north-west corner",
         "x": 78.2,
-        "y": 318.2,
+        "y": 358.2,
         "kind": "Reported remains",
         "entryIds": [
           "55"
@@ -1845,7 +1940,7 @@
         "id": "cistern-1",
         "label": "Cistern 1 (first installation)",
         "x": 554.0,
-        "y": 404.0,
+        "y": 444.0,
         "kind": "Reported remains",
         "entryIds": [
           "56"
@@ -1861,7 +1956,7 @@
         "id": "threshold",
         "label": "Threshold and jamb between grotto 6 and cistern 1",
         "x": 573.8,
-        "y": 429.5,
+        "y": 469.5,
         "kind": "Reported remains",
         "entryIds": [
           "56"
@@ -1877,7 +1972,7 @@
         "id": "grotto-6",
         "label": "Grotto 6 with its bath",
         "x": 589.1,
-        "y": 444.3,
+        "y": 484.3,
         "kind": "Reported remains",
         "entryIds": [
           "56"
@@ -1893,7 +1988,7 @@
         "id": "grotto-5",
         "label": "Grotto 5",
         "x": 615.1,
-        "y": 404.0,
+        "y": 444.0,
         "kind": "Reported remains",
         "entryIds": [
           "56"
@@ -1909,7 +2004,7 @@
         "id": "first-installation",
         "label": "Grottoes 2 and 3, basin 4 and bath 7",
         "x": 554.0,
-        "y": 359.8,
+        "y": 399.8,
         "kind": "Reported remains",
         "entryIds": [
           "56"
@@ -1920,6 +2015,34 @@
           "Duprez 1970 pp. 39–41, Pl. II"
         ],
         "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md"
+      },
+      {
+        "id": "canal",
+        "label": "Rock-cut canal south of the dam",
+        "x": 164.0,
+        "y": 392.0,
+        "kind": "Reported remains",
+        "entryIds": [
+          "55"
+        ],
+        "description": "Pierre & Rousée 1981: from the foot of the dam's shaft the water ran south through a slab-covered corridor and dropped about 3 m into an open rock-cut canal at the valley bottom, about 1 m deep and 75 cm wide, straight and known for about 50 m. When the south basin was built the corridor was deepened about 2 m and the canal was vaulted under the basin.",
+        "limit": "Only the royal-period view draws the canal, straight south from the corridor; its line under the south basin and its level against Duprez's 14 m basin depth cannot be placed from the reported figures. The authors' reading of the canal as feeding the Temple is an inference from its direction.",
+        "sources": [
+          "Pierre & Rousée 1981 pp. 24–25, Fig. 3, Pl. 2"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/probatique_poc31_1981.md"
+      }
+    ],
+    "layers": [
+      {
+        "id": "remains",
+        "label": "Remains",
+        "kind": "observed"
+      },
+      {
+        "id": "royal",
+        "label": "Royal period (Pierre & Rousée 1981)",
+        "kind": "published-reconstruction"
       }
     ]
   },
@@ -2103,6 +2226,350 @@
           "SWP Jerusalem p. 143"
         ],
         "sourceUrl": "https://archive.org/details/surveyofwesternp00warruoft"
+      }
+    ]
+  },
+  {
+    "id": "kidron-bene-hezir",
+    "placeIds": [
+      "jer_kidron_mon"
+    ],
+    "label": "Bene Ḥezir & Zechariah · Avigad 1954",
+    "width": 425,
+    "height": 708,
+    "source": "Avigad 1954, Ancient Monuments in the Kidron Valley, ch. 4 (pp. 37–73, 76–78), p. 79, Figs. 22–25, 42; English summary",
+    "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/avigad1954.md",
+    "credit": "Original project diagram from Avigad's published measurements. Avigad's figures are not reproduced.",
+    "limit": "No geographic registration: the model sits at the Kidron monuments' gazetteer anchor (about 100 m). Avigad's cardinal frame is turned 45° so that the façade faces south-west (p. 37). Chambers are drawn as rectangles at mean dimensions; wall thicknesses, floor levels and the heights of Zechariah and Absalom are illustrative.",
+    "north": {
+      "x": 385,
+      "y": 70,
+      "dx": 0,
+      "dy": -50
+    },
+    "shapes": [
+      {
+        "d": "M20.2 435.3 L157.0 298.5 L405.2 546.7 L268.4 683.5Z",
+        "kind": "rock"
+      },
+      {
+        "d": "M58.4 473.5 L67.9 463.9 L130.8 526.8 L121.3 536.3Z",
+        "kind": "room"
+      },
+      {
+        "d": "M97.9 486.9 L117.9 466.8 L154.2 503.1 L134.1 523.1Z",
+        "kind": "room"
+      },
+      {
+        "d": "M125.9 464.6 L148.1 442.3 L178.7 472.9 L156.4 495.1Z",
+        "kind": "room"
+      },
+      {
+        "d": "M99.0 436.7 L120.3 415.4 L142.6 437.7 L121.3 459.0Z",
+        "kind": "room"
+      },
+      {
+        "d": "M161.2 500.5 L184.1 477.6 L209.6 503.1 L186.6 526.0Z",
+        "kind": "room"
+      },
+      {
+        "d": "M156.7 440.1 L179.1 417.7 L203.3 441.9 L180.9 464.3Z",
+        "kind": "room"
+      },
+      {
+        "d": "M200.1 428.5 L214.1 414.5 L227.1 427.4 L213.1 441.4Z",
+        "kind": "room"
+      },
+      {
+        "d": "M140.0 523.6 L154.7 509.0 L204.3 558.6 L189.7 573.3Z",
+        "kind": "room"
+      },
+      {
+        "d": "M63.4 442.9 L73.6 432.7 L112.8 471.9 L102.6 482.1Z",
+        "kind": "room"
+      },
+      {
+        "d": "M149.0 418.5 L157.6 410.0 L170.3 422.7 L161.7 431.3Z",
+        "kind": "room"
+      },
+      {
+        "d": "M181.0 415.8 L194.0 402.8 L201.9 410.6 L188.9 423.6Z",
+        "kind": "room"
+      },
+      {
+        "d": "M80.2 473.0 L88.4 464.7 L93.4 469.7 L85.1 478.0Z",
+        "kind": "room"
+      },
+      {
+        "d": "M86.2 422.7 L94.2 414.8 L105.7 426.2 L97.7 434.2Z",
+        "kind": "room"
+      },
+      {
+        "d": "M98.2 410.8 L105.8 403.2 L117.3 414.6 L109.6 422.3Z",
+        "kind": "room"
+      },
+      {
+        "d": "M122.8 414.2 L134.9 402.1 L140.0 407.2 L127.9 419.2Z",
+        "kind": "room"
+      },
+      {
+        "d": "M186.6 476.4 L198.1 464.9 L205.1 471.9 L193.6 483.4Z",
+        "kind": "room"
+      },
+      {
+        "d": "M195.2 485.0 L206.7 473.5 L213.7 480.5 L202.2 492.0Z",
+        "kind": "room"
+      },
+      {
+        "d": "M203.8 493.5 L215.3 482.1 L222.3 489.1 L210.8 500.5Z",
+        "kind": "room"
+      },
+      {
+        "d": "M196.5 520.0 L203.5 513.0 L215.0 524.4 L208.0 531.4Z",
+        "kind": "room"
+      },
+      {
+        "d": "M176.0 591.1 L253.2 513.9 L323.1 583.8 L245.9 661.0Z",
+        "kind": "room"
+      },
+      {
+        "d": "M216.6 585.5 L251.9 550.2 L287.2 585.5 L251.9 620.9Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M85.5 31.5 L139.5 31.5 L139.5 85.5 L85.5 85.5Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M89.1 58.5 a23.400000000000002 23.400000000000002 0 1 0 46.800000000000004 0 a23.400000000000002 23.400000000000002 0 1 0 -46.800000000000004 0",
+        "kind": "rock"
+      }
+    ],
+    "annotations": [
+      {
+        "x": 152,
+        "y": 58,
+        "text": "Absalom (massing)"
+      },
+      {
+        "x": 20,
+        "y": 694,
+        "text": "Avigad's frame turned 45° · façade faces south-west"
+      }
+    ],
+    "features": [
+      {
+        "id": "bene-hezir-facade",
+        "label": "Bene Ḥezir façade and inscription",
+        "x": 110.0,
+        "y": 511.0,
+        "kind": "Reported remains",
+        "entryIds": [
+          "51",
+          "54"
+        ],
+        "description": "A Doric distylos in antis, 5.75 m long and 3.95 m high to the cornice, cut in a rock wall about 15 m high; its floor is about 8.50 m above the rock path. The façade faces south-west. The three-line architrave inscription names Eleazar, Ḥaniah, Yoʿezer, Judah, Simeon and Yoḥanan, sons of Joseph son of ʿObed, and Joseph and Eleazar sons of Ḥaniah, 'priests of the sons of Ḥezir' (Avigad's reading; ʿObed preferred to ʿOded).",
+        "limit": "The façade's two parts meet at an obtuse angle; the model draws them in one plane and turns Avigad's 'west' to south-west. Avigad dates the façade to about the middle of the 2nd century BCE and the inscription to the first half of the 1st century BCE; nothing on these pages links the family or ʿObed with Jericho.",
+        "sources": [
+          "Avigad 1954 pp. 37–38, 42–46, 59–66, Figs. 22–23, 25"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/avigad1954.md"
+      },
+      {
+        "id": "porch",
+        "label": "Porch, columns and north stair",
+        "x": 125.9,
+        "y": 495.1,
+        "kind": "Reported remains",
+        "entryIds": [
+          "51"
+        ],
+        "description": "Porch 5.55–5.83 × 3.04–3.23 m and 3.20–3.50 m high behind two baseless Doric columns (3.00 m, lower diameter 0.53–0.55 m). The present wide opening into the cave is not original: the first opening was about 80 cm wide, on the column axis. A stair 1.60 m wide comes down from the rock top through a breach in the north wall: 13 steps are visible, from 4.68 to 1.78 m above the floor, and its shaft breaks 0.80–1.20 m into the porch ceiling.",
+        "limit": "Avigad explains the stair shaft as a surveying error by cutters working from above (pp. 48–49). Its upper part is under modern graves; the model continues it to the rock surface.",
+        "sources": [
+          "Avigad 1954 pp. 38–39, 42–43, 48–49"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/avigad1954.md"
+      },
+      {
+        "id": "chambers",
+        "label": "Chamber A and burial chambers B–E",
+        "x": 152.3,
+        "y": 468.7,
+        "kind": "Reported remains",
+        "entryIds": [
+          "56"
+        ],
+        "description": "A central chamber (A, 4.20–5.40 × 3.17–3.85 m, 2.20 m high) opens on three burial chambers: B (north, 3.35 × 3.50 m, two kokhim and a corner kokh), C (south, 4.00 × 3.60 m, four kokhim), D (east, 1.95 m high, a pit later deepened from 50 to 77 cm, two cells), and E beyond D (2.03 × 2.20 m, three arcosolia), the most carefully cut. In all nine kokhim, a tenth unfinished, and three arcosolia.",
+        "limit": "Avigad gives no wall thicknesses or floor levels; the model draws 0.8 m walls and level floors. The north doorway of A and the porch doorway are lost in later breaches; the original-state view restores them.",
+        "sources": [
+          "Avigad 1954 pp. 37, 40–41, 46–49, Fig. 22"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/avigad1954.md"
+      },
+      {
+        "id": "corridor",
+        "label": "South corridor to the Zechariah court",
+        "x": 170.4,
+        "y": 539.7,
+        "kind": "Reported remains",
+        "entryIds": [
+          "51"
+        ],
+        "description": "A corridor 8.30 m long and about 2.30 m wide continues the porch axis to the Zechariah court; six steps of 20–22 cm are visible and more lie under earth (Slouschz saw them). Its plain opening, 1.35 m wide, faces the north-west corner of Zechariah 3.08 m away.",
+        "limit": "Avigad thinks the corridor is not contemporary with the tomb and defers the question to the Zechariah chapter, which was not photographed.",
+        "sources": [
+          "Avigad 1954 pp. 39–41, 49–50"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/avigad1954.md"
+      },
+      {
+        "id": "nefesh",
+        "label": "Added façade (the nefesh) and niche",
+        "x": 82.3,
+        "y": 475.8,
+        "kind": "Reported remains",
+        "entryIds": [
+          "2",
+          "54"
+        ],
+        "description": "North of the Doric façade a plain façade about 4 m high, divided into three strips, has a central recess 1.93 m wide with an opening 0.78 × 1.65 m into a niche 1.30 m deep. A hole in the niche floor leads to a small cell below. Avigad takes this façade, completed by a pyramid, as the inscription's 'nefesh' (Fig. 42, 1), not Zechariah.",
+        "limit": "The pyramid is Avigad's reconstruction; he publishes no dimensions in the pages read and notes that the rock leaves no room for a square base without reaching over the stair behind (p. 76). Pp. 74–75 were not photographed.",
+        "sources": [
+          "Avigad 1954 pp. 37–38, 46, 73–78, Fig. 42; English summary"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/avigad1954.md"
+      },
+      {
+        "id": "zechariah",
+        "label": "Zechariah monument and court",
+        "x": 251.9,
+        "y": 585.5,
+        "kind": "Reported remains",
+        "entryIds": [
+          "2"
+        ],
+        "description": "A rock-cut monolith 5.50–5.60 m square, a cube with a pyramid, standing in a court of 11.20 × 11.45 m enclosed by rock walls on three sides (the north wall runs to 15.30 m); about 12 m south-east of the Bene Ḥezir façade. Avigad: apparently solid, a sepulchral monument rather than a tomb; its tombs may lie hidden in the rock to the east.",
+        "limit": "Its base is buried and its height is not given in the pages read; the model's heights are illustrative. An unfinished tomb south of it (Fig. 25) is not drawn.",
+        "sources": [
+          "Avigad 1954 p. 79; English summary; Fig. 25"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/avigad1954.md"
+      },
+      {
+        "id": "absalom",
+        "label": "Absalom's monument",
+        "x": 112.5,
+        "y": 58.5,
+        "kind": "Reported remains",
+        "entryIds": [
+          "48",
+          "2"
+        ],
+        "description": "About 50 m from the Bene Ḥezir façade. Avigad's summary: 20 m high; a square rock-cut substructure with Ionic columns, a Doric frieze and an Egyptian cornice, a course of dressed stone, and a built round superstructure ending in a concave cone; a burial chamber with two arcosolia; the superstructure is the nefesh of the tomb beneath. Dated to the beginning of the 1st century CE.",
+        "limit": "Only the height and the parts come from the pages read: the footprint, drum and cone in the model are illustrative massing. Its bearing from Bene Ḥezir is not measured. Chapter 6 (pp. 91–133) was not photographed.",
+        "sources": [
+          "Avigad 1954, English summary; Fig. 25"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/avigad1954.md"
+      }
+    ],
+    "layers": [
+      {
+        "id": "remains",
+        "label": "Remains",
+        "kind": "observed"
+      },
+      {
+        "id": "avigad",
+        "label": "Original state and nefesh (Avigad 1954)",
+        "kind": "published-reconstruction"
+      }
+    ]
+  },
+  {
+    "id": "temple-great-sea",
+    "placeIds": [
+      "jer_temple"
+    ],
+    "label": "The Great Sea (cistern VIII) · Warren Pl. VII",
+    "width": 750,
+    "height": 750,
+    "image": "dossiers/warren1884-pl7-great-sea.png",
+    "source": "Warren 1884 Pl. VII (cistern VIII, 'The Great Sea'); Gibson & Jacobson 1996 pp. 33–39 (No. 3 = W8)",
+    "sourceUrl": "https://archive.org/details/planselevationss00warr",
+    "credit": "C. Warren, Plans, Elevations, Sections, &c. (PEF 1884), Pl. VII, crop of the 600 ppi line art · public domain (BYU Library scan, Internet Archive).",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "limit": "No geographic registration: the model sits at the Temple enclosure's gazetteer anchor (about 150 m), not at the cistern under the southern court. The outline is the plate's hatching, traced at its scale bar and turned by its north arrow (±2 m). Piers, stair, two of the three mouths and the roof cutaway are illustrative or for display.",
+    "features": [
+      {
+        "id": "great-sea",
+        "label": "Cistern VIII, 'The Great Sea'",
+        "x": 302.7,
+        "y": 317.7,
+        "kind": "Reported remains",
+        "entryIds": [
+          "3"
+        ],
+        "description": "The largest cavity under the Ḥaram, south of the inner platform in front of the Aqṣā: rock-cut and plastered, about 40 × 30 m (Schick) or 44 × 45 m (Pierotti), 10–11.5 m high, its floor 13.3–14 m below the surface, with a rock roof about 2.5 m thick and a capacity of 9,100–12,000 m³. Warren's plate draws its hatched extent as about 37.7 × 48.4 m.",
+        "limit": "Gibson & Jacobson give no date for its cutting in the pages read, and their 2nd-century BCE map marks other cisterns, not this one. A plastered cistern with one stair and several mouths does not by itself identify the scroll's 'great cistern'.",
+        "sources": [
+          "Warren 1884 Pl. VII",
+          "Gibson & Jacobson 1996 pp. 33–39 (No. 3 = W8), Fig. 104",
+          "Warren & Conder 1884 pp. 219–220"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/gibson_jacobson1996.md"
+      },
+      {
+        "id": "mouth",
+        "label": "Shaft mouth drawn by Warren",
+        "x": 290.0,
+        "y": 418.0,
+        "kind": "Reported remains",
+        "entryIds": [
+          "3"
+        ],
+        "description": "Warren draws one small circle beside the label 'Cistern' inside VIII, read here as a mouth. Barclay counted 8 shafts with one open, Wilson 'a great many mouths, but only three are now in use', Schick four shafts 2.5 m deep.",
+        "limit": "Reading the circle as a mouth is an inference. The other mouths are not placed by any source read; two in the model stand for Wilson's three in use.",
+        "sources": [
+          "Warren 1884 Pl. VII",
+          "Gibson & Jacobson 1996 pp. 33, 36"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/warren1884-plate-vii/README.md"
+      },
+      {
+        "id": "piers",
+        "label": "Rock piers",
+        "x": 239.5,
+        "y": 323.4,
+        "kind": "Reported remains",
+        "entryIds": [
+          "3"
+        ],
+        "description": "Five free-standing rock piers (Schick); four piers and two rock partitions on Wilson's plan; 'a fine cavern with rocky piers' (W&C). The roof is partly rock and partly flat stones, with some vaulting.",
+        "limit": "Warren's plate draws no piers. Their places and size in the model are illustrative.",
+        "sources": [
+          "Gibson & Jacobson 1996 p. 33",
+          "Warren & Conder 1884 p. 219"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/gibson_jacobson1996.md"
+      },
+      {
+        "id": "stair",
+        "label": "Rock-cut stair from the south",
+        "x": 365.6,
+        "y": 514.3,
+        "kind": "Reported remains",
+        "entryIds": [
+          "3",
+          "5"
+        ],
+        "description": "A narrow rock-cut stair from the south or south-east: 44 steps (Barclay) or 50 (Schick), reached from 'a hole on the northern side of the workshops east of al-Aksa' (Wilson); Whitty saw a well-like mouth several feet deep with a ruined flight below. Barclay says the steps were partly re-cut 'only a few centuries ago'. Beyond one shaft a broad four-step stair, gone by 1887, 'may possibly have been a relic of the Herodian Temple complex' (Fig. 18 caption).",
+        "limit": "The plate does not draw the stair; its line, width and top opening in the model are illustrative. No spiral stair is described on the Ḥaram in the pages read.",
+        "sources": [
+          "Gibson & Jacobson 1996 pp. 33, 36, 39, Fig. 18"
+        ],
+        "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/sources/nli_photos_2026-10-21/gibson_jacobson1996.md"
       }
     ]
   }

@@ -66,7 +66,7 @@
   ],
   "sampling": "Bilinear decoded elevation; 65 × 65 samples over an 800 m square around the existing gazetteer anchor; x east, z south. Modern elevation is contextual, not ancient ground level. Local rendered plateau is feathered to expose the unregistered architectural model.",
   "asset": "atlas/app/atlas-model-terrain.json",
-  "asset_sha256": "2ee460c8edafa6dc9af19f959bfb20484b333a47f36a9b3581998c6bd8facfb0",
+  "asset_sha256": "32db34a1de8d5f8346c237c4e04d24d6ba74c6493a1e7750ac2f42900d162da5",
   "limit": "Site-anchor precision retained. Model position, compass bearing, bench and architectural thresholds are illustrative; the terrain does not register the plan or identify a feature. IV/17 has no coordinates and receives no measured terrain patch.",
   "access_limit": "Zoom 14 tiles returned 404 for the requested sites. Zoom 12 global tiles were retrieved successfully; interpolation does not improve native terrain accuracy."
 }
