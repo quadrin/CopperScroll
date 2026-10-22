@@ -15,6 +15,7 @@ The atlas's source-based site models were built block by block in a Minecraft Ja
 - Architecture: stones and walls become oriented boxes; closed solids are filled by an inside test per column; thin or open surfaces are sampled. Dimensions thinner than a cell are widened to one cell, and each stone claims 2 cm beyond its faces so that the drawn joints (1.4–3.5 cm) leave no holes. A cell centre on a face counts on one side only. Each block area is a closed solid: its sides and floor have faces too, so a walker who leaves it cannot see or walk into its inside.
 - Materials: soil → `coarse_dirt`; rock → `stone`; limestone blocks → `smooth_stone`; masonry by the site's photo-derived type (rubble → `cobblestone`, coursed → `stone_bricks`, ashlar → `cut_sandstone`); plaster → `smooth_quartz`; the copper colour that marks a source's proposed course or reconstruction → `waxed_cut_copper`. Each has its slab.
 - Qumran's tunnel recess, a dark plane in the smooth model, is carved as a real opening.
+- A plan in a mapped setting also gets bare builds for its **Ancient ground** view: the same model and terrain without today's mapped features ([below](#bare-builds-for-the-ancient-ground-view--night-of-22-october-2026)).
 - In the atlas each face is shaded by the sky light Minecraft saved for the open block in front of it, so covered parts (the Qumran recess, cisterns, the IV/17 cave, Warren's gallery) are darker. While walking, the site is drawn with a near plane of about 5 cm instead of the map's half a metre, so a wall or overhang beside the eye is not cut away (the cause of an "x-ray" view into the blocks, reported 20 October). Block textures are original 16-pixel tiles in each site's photo-derived colours. No Minecraft code, textures or other assets are in the repository or the atlas.
 
 Rounding to the block size can move an edge or a height by up to half a block. The blocks keep every simplification and illustrative dimension of the source model (listed in each model's **Sources & assumptions**); they add none of their own.
@@ -63,8 +64,11 @@ Rounding to the block size can move an edge or a height by up to half a block. T
 | kidron-bene-hezir~ring2 | 8 m | 288 × 27 × 288 | 37888, -60, 0 | 13,716 | 1,027,149 | 0 | 41,327 | kidron-bene-hezir~ring2.bin.gz (239 KB) |
 | temple-great-sea~ring1 | 1 m | 608 × 114 × 608 | 38912, -60, 0 | 85,324 | 24,987,255 | 0 | 147,768 | temple-great-sea~ring1.bin.gz (886 KB) |
 | temple-great-sea~ring2 | 8 m | 288 × 27 × 288 | 39936, -60, 0 | 12,204 | 1,074,872 | 0 | 35,190 | temple-great-sea~ring2.bin.gz (203 KB) |
+| temple-great-sea.bare | 0.5 m | 142 × 32 × 170 | 55296, -60, 0 | 703 | 633,610 | 0 | 3,301 | temple-great-sea.bare.bin.gz (16 KB) |
+| temple-great-sea~ring1.bare | 1 m | 608 × 97 × 608 | 73728, -60, 0 | 37,284 | 24,696,409 | 0 | 50,486 | temple-great-sea~ring1.bare.bin.gz (319 KB) |
+| temple-great-sea~ring2.bare | 8 m | 288 × 27 × 288 | 74752, -60, 0 | 12,117 | 1,074,872 | 0 | 34,972 | temple-great-sea~ring2.bare.bin.gz (202 KB) |
 
-A name with `@` is a reconstruction view of that plan (the plain name is its **Remains** view); `~ring1` and `~ring2` are the terrain rings. "Units" are the source-relative units of those scenes. Every air block next to a drawn face has saved sky light; sections without saved light are open sky or solid rock. The Qumran build is fitted to the Kh. Qumran terrain patch; at Wadi Qumran the atlas keeps the smooth model.
+A name with `@` is a reconstruction view of that plan (the plain name is its **Remains** view); `~ring1` and `~ring2` are the terrain rings; `.bare` is the Ancient ground view of the build it follows. "Units" are the source-relative units of those scenes. Every air block next to a drawn face has saved sky light; sections without saved light are open sky or solid rock. The Qumran build is fitted to the Kh. Qumran terrain patch; at Wadi Qumran the atlas keeps the smooth model.
 
 ## Source change built into this round
 
@@ -107,9 +111,20 @@ Two new site models and four new views of existing models, built the same way, w
 - Hyrcania now spreads round its hill (about 110 m of relief) and is built in 0.5 m blocks: at 0.25 m it would need 1,172 × 450 × 960 blocks, beyond one strip and the height limit.
 - All 40 builds read back with no mismatches.
 
+## Bare builds for the Ancient ground view — night of 22 October 2026
+
+- The atlas's **Ancient ground** view draws a plan in its mapped setting without today's mapped features. The block builds hold those features, so until now that view was drawn smooth.
+- Each plan in a mapped setting now has bare builds: every view and both rings built again from the model without the mapped surroundings. They have no graves, walls, buildings, trees, roads, paving or green ground. Their ground is today's terrain.
+- When the plan's Ancient ground entry gives published levels (`ground: 'published'` in `atlas/app/atlas-ancient-ground.ts`), its pads are built in too. No entry does yet. A bare build records the pads it was built with. The atlas uses it only while they match the view's, and the check fails when they differ.
+- Names add `.bare` to the build they stand for: `kidron-bene-hezir.bare`, `kidron-bene-hezir@avigad.bare`, `kidron-bene-hezir~ring1.bare`. In `index.json` each has `bare: true`, `normalBuild` and `pads`, and a bare near build lists its bare rings. The rings leave the same holes as the normal rings.
+- The bare builds take the world strips after all the others, from strip 40 (x = 40,960), in the same order as the normal builds. No other build moves. There are 34: 16 views and 18 rings of the nine plans.
+- In the atlas, **Ancient ground** with **Blocks** draws the bare build of the current view and its rings. Where a view has no bare build, it is drawn smooth, as before, and the caption says so. **Today** keeps the normal builds.
+- Built so far: the three Great Sea builds (table above), in a test run of that plan alone. Its three normal builds came out byte-identical to the files already in the atlas. The other 31 bare builds are not built yet.
+- Check: `check-minecraft.mjs` decodes every bare build and finds no block of today's setting (codes 8–11). Outside the model's own footprint (its parts seen from above, one block wider), a bare build may show only soil and rock; the normal build shows today's features there. For the Great Sea, 73 % of the block area is outside the footprint; there the normal build has 10,468 faces of today's features and the bare build none. Each ring's hole is checked against the build inside it. Bare builds not built yet are listed; `--require-bare` makes them a failure.
+
 ## The world save
 
-[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (41.9 MB, rebuilt on the night of 22 October 2026 with all 40 builds, including the models placed by imagery) is the saved world, SHA-256 `6826c120594a75725284f2f4f1a64c2866516ccfab067afb2808906d1fc7ae0a`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
+[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (41.9 MB, rebuilt on the night of 22 October 2026 with all 40 builds, including the models placed by imagery; it does not hold the bare builds) is the saved world, SHA-256 `6826c120594a75725284f2f4f1a64c2866516ccfab067afb2808906d1fc7ae0a`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
 
 ## Rebuild
 
@@ -119,4 +134,11 @@ node scripts/minecraft/build-world.mjs --jar <server.jar> --java <Java 25> --wor
 node scripts/check-minecraft.mjs
 ```
 
-`--skip-server` re-reads an existing save. A rebuild from unchanged models gives the same blocks; the same save gives byte-identical atlas files.
+The bare builds alone:
+
+```sh
+node scripts/minecraft/build-world.mjs --jar <server.jar> --java <Java 25> --work <empty folder> --bare-only
+node scripts/check-minecraft.mjs --require-bare
+```
+
+`--sites` takes build names or plan ids; a plan id selects its normal and bare builds, and `--bare-only` keeps only the bare ones. A partial run saves a fresh world with only its own strips. Strip n is region files x = 2n and 2n + 1; copy those into the full save, not the neighbouring region files that the server touches. `--skip-server` re-reads an existing save. A rebuild from unchanged models gives the same blocks; the same save gives byte-identical atlas files.
