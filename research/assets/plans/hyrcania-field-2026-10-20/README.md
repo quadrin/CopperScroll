@@ -75,9 +75,34 @@ The owner relayed this by message at 22:33 local time. Achia Kohn-Tavor's view, 
   - INFERENCE: these may be the Iron Age forts of the Buqeiʿa. BK, not checked here: Cross & Milik sounded Kh. Abu Ṭabaq, Kh. es-Samra and Kh. el-Maqari in the 1950s, and Stager surveyed the valley in the 1970s. If so, they are surveyed and sounded, not wholly unexcavated.
   - Kh. Abu Ṭabaq (the ruin with steps into its reservoir) is already a lead for entry 1 in `claude/wanted_sources_2026-10-17.md`.
 
+## The guide's answers to the owner's questions (WhatsApp, 22 Oct 2026)
+
+The owner sent Achia three questions at 07:45 local time. Achia answered at 16:25. The owner relayed a screenshot (not kept in the repo, because it shows a phone number). These are oral answers, not published findings. The owner's numbering is not the field-list numbering.
+
+| Owner's question | Achia's answer, as written |
+|---|---|
+| 1. Were the sherds and coins on the tunnel floor or up in the silt? Any oil lamps, or soot in the lamp niches? | "in the silt washed in. the soot in the niches is not really datable." |
+| 2. The eastern tunnel widens in the bitumen layer. Are there pick marks in the wide parts, or did it collapse? Was the bitumen tested? | "i'd prefer a technical explanation- the bitumen is crumbling, so the tunnel widened." |
+| 3. Has anyone done OSL dating on the silt? Is there undug fill left (eastern tunnel, or the two tunnels further south)? | "no OSL samples. it was not common than. I can ask if it actually works in washed silt." |
+| (no question in this message; his item 5) | "the GPR results were negative..." |
+
+Not answered: pick marks in the wide sections, a test of the bitumen, oil lamps, and whether undug fill is left.
+
+**Bearing on the tunnels** (INFERENCE unless marked):
+
+- **Finds:** the sherds and coins washed in with the silt. So they date flood deposits, not the cutting or the use. This also applies to Gutfeld's Iron II and early Roman sherds and Hasmonean coins, if those are the same finds.
+- **The ibex** (radiocarbon about 590 BCE, as published) is now the only find that can give a minimum age for the cutting. This is true only if the animal died in the tunnel and lay in the lowest silt. If its bones washed in, they say no more than the sherds. Its articulation and position are not published.
+- **Soot:** this agrees with the owner's note of 20 Oct (soot can come from any later visitor).
+- **Widening:** Achia reads the wide bitumen stretches as collapse. If this is correct, the widening is not evidence for bitumen mining. The tunnels still lie in the Hatrurim bitumen zone, so the mining reading stays open. Tool marks on the walls and ceiling of the wide stretches, or breakdown blocks in the fill below them, would decide between cutting and collapse.
+- **OSL:** no samples exist. BK, not checked here: OSL on flash-flood silt often gives ages that are too old, because the grains are not fully exposed to light before burial; single-grain and minimum-age methods reduce this. Samples must come from intact fill, taken in the dark. Excavated fill can't be used. The two southern tunnels (7–10 km south) are the likely place for intact fill, if they are not excavated.
+- **GPR negative:** this disagrees with the Qumran Cave group's report of a large space beyond the bedrock in the second tunnel (their update pages did not load, 22 Oct). It is not recorded which GPR survey Achia means.
+
+No reading, identification, rating, ledger row (S31) or outcome count changed.
+
 ## Still needed from this visit
 
 - The camera originals.
 - A note that says which tunnel the group D photos show.
 - The mouth position (GPS) and bearing, the length and the step count.
-- Achia's answers to the field-list questions, especially Q1 (any dated activity 4 BCE–135 CE) and Q5 (tunnel date, purpose and finds).
+- Achia's answers to the field-list questions, especially Q1 (any dated activity 4 BCE–135 CE) and Q5 (tunnel date, purpose and finds). Part of Q5 is answered above (finds in washed-in silt).
+- From Achia: is undug fill left in any tunnel? Do the tool marks continue into the wide bitumen stretches? Was the ibex articulated, where did it lie in the fill, and are the bones stored? Which GPR survey gave the negative result? Does he have Gutfeld, *Qadmoniot* 125 (2003), pp. 43–46? He offered to ask if OSL works in washed silt.
