@@ -6,13 +6,14 @@ import type { SitePlan } from "./atlas-explorer-model";
 import { createSiteMaterials, cloneSiteMaterial, chippedBlock } from './atlas-site-materials';
 import { decodeRaster, elementPoints, rasterRectangles, type TracedElement, type TracedPlan } from './atlas-traced';
 import tracedData from './atlas-traced-plans.json';
-import type { TerrainPatch } from './atlas-model-landscape';
+import type { TerrainPatch, LandscapePad } from './atlas-model-landscape';
 
 const traced=tracedData as unknown as Record<string,TracedPlan>;
 // Illustrative heights for traced plans, used only where no height is published.
 export const TRACED_HEIGHTS={ruin:.9,wall:3.2,column:3.6,columnBase:.4,depth:2,dashed:.12,podium:1};
 // `context`: the mapped surroundings of a plan placed in its setting (atlas/public/context), when loaded.
-export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFeature[]};
+// `pads`: extra ground pads in the model's frame for one view only (the Ancient ground view's published levels, atlas-ancient-ground.ts).
+export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFeature[];pads?:LandscapePad[]};
 // How a plan that has no registration of its own meets its mapped setting: the model point (or marker)
 // that goes onto the mapped target or the place anchor, the model point (or marker) where model height
 // `datumY` meets the modern terrain, and whether its display bench is kept around it.
@@ -274,7 +275,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   plinth(255,290,7);
   assumptions.push("Positions come from Magen 2008's site plan (p. 1743, 0–50 m bar) and plan of the sacred precinct (p. 1746, 0–25 m bar). Each plan was registered to Vantor WorldView-2 imagery of 21 October 2023 (Esri World Imagery, 0.5 m pixels, stated accuracy 5 m) by matching its walls to the imagery: the site plan is turned 4.35° and the precinct plan 92.85° from their drawn north arrows, at their bar scales within 1.5 %. The two plans then agree within 1–2 m. Record: research/assets/plans/imagery-registration-2026-10-22/gerizim.json.");
   if(persian)assumptions.push("Persian view: the precinct is the drawn outline of the core walls (west wall 83 m on the plan; Magen 2008 p. 1746: 84 m), which kept the Persian compound's size (96 × 98 m including the gates, Magen et al. 2004 p. 3*; about 200 × 200 cubits). Gates stand on the north, south and east and none on the west. The north gate is drawn as a six-chambered gate (fully exposed, p. 3*); its pier and chamber sizes are illustrative. The pale south and east gatehouses are drawn only by this view: their Persian-period form and size are not described in the pages read.","The Hellenistic enclosure, citadel, western entrance, Area P mansion and eastern stair are not drawn; their markers stay for comparison with the Hellenistic view. Remains of a Persian stair to the east gate lie under the later stair (p. 3*); they are not drawn. Wall heights and the platform level are illustrative.");
-  else assumptions.push("The core walls follow the precinct plan's outline, with the north and east gates as openings; their 2.2 m height follows the west wall's preserved 2 m (Magen 2008 p. 1746). The outer west wall runs on to the fortified enclosure. Reported envelopes are drawn at their places on the plans: the 212 × 136 m enclosure (as the summit platform, without walls), the 39 × 38 m fortified enclosure, the 40 × 40 m mansion with its 20 × 14 m building IV, and the 25 × 24 m citadel.","The eastern stair uses the reported maximum 23 m width, 34 m run, 15.5 m rise and approximately 57 steps, centred where both plans draw it. The western entrance is shown as a separate schematic landing; it is not equated with the southern seven-step flight or the 15-step flight at E1.");
+  else assumptions.push("The core walls follow the precinct plan's outline, with the north and east gates as openings; their 2.2 m height follows the west wall's preserved 2 m (Magen 2008 p. 1746). The outer west wall runs on to the fortified enclosure. Reported envelopes are drawn at their places on the plans: the 212 × 136 m enclosure (as the summit platform, without walls), the 39 × 38 m fortified enclosure, the 40 × 40 m mansion with its 20 × 14 m building IV, and the 25 × 24 m citadel.","The eastern stair uses the reported maximum 23 m width, 34 m run, 15.5 m rise and approximately 57 steps, centred where both plans draw it. The western entrance is shown as a separate schematic landing; it is not equated with the southern seven-step flight or the 15-step flight at E1.","Most wall heights, room divisions, the mansion’s 8 m display level and the cistern’s display location/depth are illustrative. The precinct platform expresses the east stair’s relative rise; its block shape is not surveyed terrain. No temple superstructure, P5178 coordinate or contemporary use horizon is asserted.");
  } else if(plan.id==="doq-waterworks"){
   note="Aqueduct, cisterns and ridge · source-relative model";
   const conv=([x,z]:Point):Point=>[(x-270)*.09,(z-300)*.09];
@@ -694,6 +695,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
  roof.visible=false;
  const [gx,gz]=placeFrame??[0,0],bounds=new T.Box3().setFromObject(root);bounds.expandByPoint(new T.Vector3(gx-ground.w/2,-1,gz-ground.d/2));bounds.expandByPoint(new T.Vector3(gx+ground.w/2,1,gz+ground.d/2));const center=placeFrame?new T.Vector3():bounds.getCenter(new T.Vector3());
  root.position.set(-center.x,0,-center.z);markers.forEach(p=>{p.x-=center.x;p.z-=center.z});
+ if(options.pads)ground.pads.push(...options.pads);
  const osm=placeFrame?siteContext(plan.id):undefined,features=osm?options.context:undefined;if(features){ground.paved=pavedIndex(features);ground.green=greenIndex(features);}
  const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block,options.terrain);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;context.mesh.userData.siteContext='ground';root.add(context.mesh);context.details.position.set(center.x,0,center.z);context.details.userData.siteContext='details';root.add(context.details);
  if(osm&&features){

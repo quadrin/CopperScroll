@@ -106,4 +106,41 @@ for(const model of [kidron,sea]){
  assert.ok(group&&model.landscape.credit.includes('OpenStreetMap')&&model.assumptions.some(t=>t.includes('Open Database License')),'mapped surroundings are drawn and credited');
 }
 assert.ok(kidron.root.children.find(c=>c.userData.siteContext==='osm').userData.counts.graves>1000,'Kidron: the Mount of Olives graves are drawn');
-console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction, models placed on mapped outlines with their surroundings, ${tracedViews} traced-plan views and ${builtViews} views of hand-built plans.`);
+// Ancient ground: one entry per plan placed in a mapped setting. Without the mapped features a plan draws
+// no OpenStreetMap feature, paving or green tint; a pad given for that view alone sets the ground under it.
+const ancient=module('../app/atlas-ancient-ground.ts',{'./atlas-site-context.json':{__esModule:true,default:contextData,...contextData}});
+assert.deepEqual(ancient.ANCIENT_GROUND.map(e=>e.plan).sort(),Object.keys(settings).sort(),'every plan in a mapped setting has one Ancient ground entry');
+for(const entry of ancient.ANCIENT_GROUND){
+ assert.ok(['illustrative','published'].includes(entry.ground)&&entry.note.length>0,`${entry.plan}: Ancient ground entry`);
+ if(entry.ground==='published')assert.ok(entry.sources.length&&entry.pads?.length&&entry.pads.every(p=>p.locator&&[p.x,p.z,p.w,p.d,p.feather].every(Number.isFinite)&&(Number.isFinite(p.level)||Number.isFinite(p.y))),`${entry.plan}: published levels need sources and located pads`);
+ else{assert.equal(ancient.ancientGroundPads(entry,0),null);assert.match(ancient.ancientGroundCaption(entry,true),/today’s terrain, shown without modern features; it is not an ancient surface/);}
+}
+const tint=mesh=>{const c=mesh.geometry.getAttribute('color');let n=0;for(let i=0;i<c.count;i++)if(Math.abs(c.getX(i)-c.getZ(i))>1e-6)n++;return n;};
+for(const id of Object.keys(settings)){
+ const plan=plans.find(p=>p.id===id),bare=exports.buildModel(plan,{}),ground=bare.root.children.find(c=>c.userData.siteContext==='ground');
+ assert.ok(!bare.root.children.some(c=>c.userData.siteContext==='osm'),`${id}: the Ancient ground view draws no mapped feature`);
+ assert.ok(!ground.userData.pavedAt&&tint(ground)===0,`${id}: the Ancient ground view has no paving or green tint`);
+ assert.deepEqual([...bare.markers.keys()].sort(),plan.features.map(f=>f.id).sort(),`${id}: all features remain in the Ancient ground view`);
+}
+{const today=kidron.root.children.find(c=>c.userData.siteContext==='ground');assert.ok(today.userData.pavedAt&&tint(today)>0,'Kidron today: paving and green ground are drawn');
+ const plan=plans.find(p=>p.id==='kidron-bene-hezir'),a=kidron.markers.get('absalom'),pad={x:a.x+30,z:a.z,w:8,d:8,height:-50,feather:2},padded=exports.buildModel(plan,{pads:[pad]}),g=padded.root.children.find(c=>c.userData.siteContext==='ground');
+ assert.ok(Math.abs(g.userData.heightAt(pad.x-g.position.x,pad.z-g.position.z)+50)<1e-6,'a pad for one view sets the ground under it');
+ assert.deepEqual(ancient.ancientGroundPads({plan:'test',ground:'published',note:'',sources:['x'],pads:[{x:1,z:2,w:3,d:4,level:700,feather:5,turnDeg:90,locator:'x'}]},650).map(p=>[p.height,+p.angle.toFixed(4)]),[[50,1.5708]],'a level above sea level becomes a height in the model frame');}
+// Walk signs: a tag for every kind of record, one sign per feature, and a model line only while the
+// sentence it restates is still in the record.
+const signs=module('../app/atlas-walk-signs.ts',{'three':Three});
+for(const [kind,tag] of [['Reported remains','Observed'],['Excavated locus','Observed'],['Area on the general plan','Observed'],['Published reconstruction','Reconstruction'],['Proposed scroll association','Proposed association'],['Historical survey context','Survey context']])assert.equal(signs.signStatus(kind),tag);
+assert.ok(plans.every(p=>p.features.every(f=>signs.signStatus(f.kind))),'every feature kind has a sign tag');
+for(const [key,note] of Object.entries(signs.MODEL_DRAWING)){
+ const [planId,featureId]=key.split('/'),plan=plans.find(p=>p.id===planId),feature=plan?.features.find(f=>f.id===featureId);
+ assert.ok(feature,`${key}: sign line for a missing feature`);
+ const assumptions=note.in==='model'?exports.buildModel(plan,{context:surroundings(planId)}).assumptions:[];
+ assert.equal(signs.drawingNote(plan,feature,assumptions),note.line,`${key}: the sign's model line must restate its record`);
+}
+for(const [id,model] of models){const plan=plans.find(p=>p.id===id),items=signs.walkSignItems(plan,model.markers,model.assumptions);assert.equal(items.length,plan.features.length,`${id}: one sign per feature`);assert.ok(items.every(s=>s.name&&s.source&&s.status),`${id}: every sign has a name, a source and a tag`);}
+{const doq=models.get('doq-waterworks');assert.ok(signs.walkSignItems(plans.find(p=>p.id==='doq-waterworks'),doq.markers,doq.assumptions).every(s=>s.drawing==='Sizes and heights in the model are illustrative.'),'a model whose heights are all illustrative says so on every sign');
+ const sources=['../app/atlas-model-geometry.ts','../app/atlas-map-site-layer.ts'].map(path=>readFileSync(new URL(path,import.meta.url),'utf8')).join('\n');
+ for(const wide of signs.MODEL_WIDE)assert.ok(sources.includes(wide.evidence),`model-wide sign line must restate a model statement: ${wide.evidence}`);}
+assert.equal(signs.walkSignItems(plans.find(p=>p.id==='kidron-bene-hezir'),kidron.markers,kidron.assumptions).find(s=>s.id==='porch').drawing,null,'no model line is invented');
+assert.ok(signs.signOpacity(10)===1&&signs.signOpacity(signs.SIGN_RANGE)===0&&signs.signOpacity(32)>0&&signs.signOpacity(32)<1,'signs fade out by 40 m');
+console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction, models placed on mapped outlines with their surroundings, ${tracedViews} traced-plan views, ${builtViews} views of hand-built plans, Ancient ground views of ${Object.keys(settings).length} mapped plans and walk signs (${Object.keys(signs.MODEL_DRAWING).length} feature lines on the model's drawing).`);

@@ -14,12 +14,28 @@ export type WalkIntent={forward:number;right:number;bearing:number;sprint:boolea
 const FLY_SPEED=.05,FLY_CEILING=400;
 const UP=new T.Vector3(0,1,0),DOWN=new T.Vector3(0,-1,0),SKIN=.004;
 type Contact={normal:T.Vector3;depth:number};
+// Leaves of up to 32 triangles. With three.js's default of 8, every terrain vertex (six triangles,
+// twelve with the double-sided copies) is split down to the deepest level: on the 2.3 km terrain patch
+// at Kidron that took about a minute and over 2 GB, and the tab hung on entering eye level. Queries
+// find the same triangles; a leaf only holds more of them. (three.js's split makes plain subtrees, so
+// it is repeated here to keep the leaf size at every level.)
+class WalkOctree extends Octree{
+ constructor(box?:T.Box3){super(box);this.trianglesPerLeaf=32;}
+ split(level:number){
+  if(!this.box)return this;
+  const half=this.box.max.clone().sub(this.box.min).multiplyScalar(.5),subTrees:WalkOctree[]=[];
+  for(let x=0;x<2;x++)for(let y=0;y<2;y++)for(let z=0;z<2;z++){const min=this.box.min.clone().add(new T.Vector3(x,y,z).multiply(half));subTrees.push(new WalkOctree(new T.Box3(min,min.clone().add(half))));}
+  let triangle:T.Triangle|undefined;while((triangle=this.triangles.pop()))for(const tree of subTrees)if(tree.box!.intersectsTriangle(triangle))tree.triangles.push(triangle);
+  for(const tree of subTrees){const count=tree.triangles.length;if(count>this.trianglesPerLeaf&&level<this.maxLevel)tree.split(level+1);if(count)this.subTrees.push(tree);}
+  return this;
+ }
+}
 export type WalkWorld={tree:Octree;triangles:number;floor:(x:number,z:number,top:number,bottom:number)=>{height:number;normal:T.Vector3}|null;resolve:(body:Capsule,steep?:boolean)=>Contact[];clear:(body:Capsule)=>boolean};
 
 // Use the displayed terrain/architecture. Repeated chipped blocks get oriented
 // box colliders; their bevels and small pebbles do not need thousands of extra faces.
 export function createWalkWorld(root:T.Object3D):WalkWorld {
- const tree=new Octree(),a=new T.Vector3(),b=new T.Vector3(),c=new T.Vector3(),matrix=new T.Matrix4();let triangles=0;
+ const tree=new WalkOctree(),a=new T.Vector3(),b=new T.Vector3(),c=new T.Vector3(),matrix=new T.Matrix4();let triangles=0;
  const add=(p:T.BufferAttribute|T.InterleavedBufferAttribute,i:number,j:number,k:number,m:T.Matrix4)=>{
   a.fromBufferAttribute(p,i).applyMatrix4(m);b.fromBufferAttribute(p,j).applyMatrix4(m);c.fromBufferAttribute(p,k).applyMatrix4(m);
   if(new T.Vector3().subVectors(b,a).cross(new T.Vector3().subVectors(c,a)).lengthSq()<1e-12)return;
