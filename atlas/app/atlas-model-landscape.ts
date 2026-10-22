@@ -3,8 +3,9 @@ import patches from "./atlas-model-terrain.json";
 import { cloneSiteMaterial, chippedBlock } from './atlas-site-materials';
 type Point=[number,number];
 // A pad sets the ground to a height inside a rectangle and feathers it out; `angle` turns the
-// rectangle as three.js rotation.y turns an object. A ground without a bench keeps the measured terrain.
-export type LandscapePad={x:number;z:number;w:number;d:number;height:number;feather:number;angle?:number};
+// rectangle as three.js rotation.y turns an object, and `rise` makes it a ramp that climbs by that
+// much from its local −z edge to its +z edge. A ground without a bench keeps the measured terrain.
+export type LandscapePad={x:number;z:number;w:number;d:number;height:number;feather:number;angle?:number;rise?:number};
 // `paved` names the block a column's top takes (a mapped path or stair) in the block export.
 // `focus` (model frame) centres the mesh's finest cells on the model when it is not at the anchor.
 // `green` (0 to 1) tints mapped woods, orchards and grass.
@@ -30,7 +31,8 @@ export function landscapeGround(ground:LandscapeGround,placeId:string,offset:Poi
   const source=patch?elevationAt(patch,x,z):Math.max(0,-z*.48)+1.5*Math.sin(x*.25)*Math.sin(z*.18);
   const bench=ground.bench===false?0:1-smooth((Math.max(Math.abs(x)/(ground.w*.5),Math.abs(z)/(ground.d*.5))-1)/.6);
   let y=T.MathUtils.lerp(source,-.28,bench);
-  for(const p of ground.pads){const dx=x-(p.x-offset[0]),dz=z-(p.z-offset[1]),c=Math.cos(p.angle??0),s=Math.sin(p.angle??0),distance=Math.max(Math.abs(dx*c-dz*s)-p.w/2,Math.abs(dx*s+dz*c)-p.d/2,0);y=T.MathUtils.lerp(y,p.height,1-smooth(distance/p.feather));}
+  for(const p of ground.pads){const dx=x-(p.x-offset[0]),dz=z-(p.z-offset[1]),c=Math.cos(p.angle??0),s=Math.sin(p.angle??0),u=dx*c-dz*s,v=dx*s+dz*c,distance=Math.max(Math.abs(u)-p.w/2,Math.abs(v)-p.d/2,0);
+   y=T.MathUtils.lerp(y,p.height+(p.rise??0)*T.MathUtils.clamp(v/p.d+.5,0,1),1-smooth(distance/p.feather));}
   return y;
  };
  for(let j=0;j<=n;j++)for(let i=0;i<=n;i++){
