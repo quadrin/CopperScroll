@@ -52,3 +52,7 @@ Obtain the excavation team's georeferenced plan or control coordinates for bridg
 ## Source of the withheld guide point — 22 October 2026
 
 EVIDENCE: Feldman (Ilan vol. p. 332; [record](../sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)) prints the northern-aqueduct dam at "נ.צ. 1837 1261". INFERENCE: the guide's `1837.1261` copies Feldman's reference for Patrich's station 44. It is still a four-digit (100 m) reference with unknown rounding, so the 244 m miss and the withheld-check status are unchanged. The guide's 1.2 km is probably Feldman's 1.2 km² catchment, not the line length; Feldman gives c. 1,951 m and Patrich 1,950 m.
+
+## Fig. 22 registered to imagery — 22 October 2026
+
+INFERENCE: Fig. 22 is now registered to 2023 WorldView-2 imagery (Esri World Imagery, stated accuracy 5 m): its page-up lies 4.75° ± 0.6° west of north, at its bar scale (+0.5 %). With that fit its contours follow the 10 m elevation model round the hill, and its bridge, double pool, round cistern and southern cisterns fall on features visible in the imagery ([record](../assets/plans/imagery-registration-2026-10-22/hyrcania.json)). This replaces the failed monastery-corner attempt above for display. It is not a surveyed control: the pool and tunnel positions for entry tests still need the excavation team's coordinates, and no entry result or rating changes.

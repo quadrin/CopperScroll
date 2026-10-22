@@ -96,15 +96,22 @@
    },
    "registration": {
     "target": [
-     -43.88,
-     89.76
+     -67.5,
+     63.0
     ],
-    "rotationDeg": 0,
-    "outlineSize_m": [
-     99.7,
-     142.8
-    ],
-    "method": "A chosen model point is placed on the area centroid of the mapped outline; the model keeps its own orientation."
+    "rotationDeg": 0.6,
+    "placement": "imagery",
+    "modelPoint": "traced-origin",
+    "method": "The plan is matched to Vantor WorldView-2 imagery (Esri World Imagery, 21 October 2023, 0.5 m, stated accuracy 5 m) by searching the turn, scale and shift that put its dark pixels on the imagery's edges (tools/imagery_registration.py fit), then checked by overlay and an independent part or source.",
+    "imagery": {
+     "source": "Vantor",
+     "sensor": "WV02 (WorldView-2)",
+     "date": "2023-10-21",
+     "resolution_m": 0.5,
+     "accuracy_m": 5
+    },
+    "uncertainty_m": "about 2 at the buildings; the imagery's own stated accuracy is 5",
+    "record": "research/assets/plans/imagery-registration-2026-10-22/qumran.json"
    }
   },
   "bethesda-pools": {
@@ -177,12 +184,22 @@
    },
    "registration": {
     "target": [
-     0,
-     0
+     -183.2,
+     -239.1
     ],
-    "rotationDeg": 0,
-    "placement": "anchor",
-    "method": "Not registered: no mapped outline can be tied to a model point, so the model stays at the place anchor with the anchor's precision."
+    "rotationDeg": -10.58,
+    "placement": "imagery",
+    "modelPoint": "traced-origin",
+    "method": "The plan is matched to Vantor WorldView-2 imagery (Esri World Imagery, 21 October 2023, 0.5 m, stated accuracy 5 m) by searching the turn, scale and shift that put its dark pixels on the imagery's edges (tools/imagery_registration.py fit), then checked by overlay and an independent part or source.",
+    "imagery": {
+     "source": "Vantor",
+     "sensor": "WV02 (WorldView-2)",
+     "date": "2023-10-21",
+     "resolution_m": 0.5,
+     "accuracy_m": 5
+    },
+    "uncertainty_m": "about 3 at the pools; the imagery's own stated accuracy is 5",
+    "record": "research/assets/plans/imagery-registration-2026-10-22/jericho.json"
    }
   },
   "jericho-late": {
@@ -198,12 +215,22 @@
    },
    "registration": {
     "target": [
-     0,
-     0
+     -183.2,
+     -239.1
     ],
-    "rotationDeg": 0,
-    "placement": "anchor",
-    "method": "Not registered: no mapped outline can be tied to a model point, so the model stays at the place anchor with the anchor's precision."
+    "rotationDeg": -10.58,
+    "placement": "imagery",
+    "modelPoint": "traced-origin",
+    "method": "The plan is matched to Vantor WorldView-2 imagery (Esri World Imagery, 21 October 2023, 0.5 m, stated accuracy 5 m) by searching the turn, scale and shift that put its dark pixels on the imagery's edges (tools/imagery_registration.py fit), then checked by overlay and an independent part or source.",
+    "imagery": {
+     "source": "Vantor",
+     "sensor": "WV02 (WorldView-2)",
+     "date": "2023-10-21",
+     "resolution_m": 0.5,
+     "accuracy_m": 5
+    },
+    "uncertainty_m": "about 3 at the pools; the imagery's own stated accuracy is 5",
+    "record": "research/assets/plans/imagery-registration-2026-10-22/jericho.json"
    }
   },
   "gerizim-precinct": {
@@ -224,8 +251,21 @@
      0
     ],
     "rotationDeg": 0,
-    "placement": "anchor",
-    "method": "Not registered: no mapped outline can be tied to a model point, so the model stays at the place anchor with the anchor's precision."
+    "placement": "imagery",
+    "modelPoint": [
+     0,
+     0
+    ],
+    "method": "The plan is matched to Vantor WorldView-2 imagery (Esri World Imagery, 21 October 2023, 0.5 m, stated accuracy 5 m) by searching the turn, scale and shift that put its dark pixels on the imagery's edges (tools/imagery_registration.py fit), then checked by overlay and an independent part or source.",
+    "imagery": {
+     "source": "Vantor",
+     "sensor": "WV02 (WorldView-2)",
+     "date": "2023-10-21",
+     "resolution_m": 0.5,
+     "accuracy_m": 5
+    },
+    "uncertainty_m": "about 2 between plan and imagery; the imagery's own stated accuracy is 5",
+    "record": "research/assets/plans/imagery-registration-2026-10-22/gerizim.json"
    }
   },
   "hyrcania-waterworks": {
@@ -243,8 +283,21 @@
      0
     ],
     "rotationDeg": 0,
-    "placement": "anchor",
-    "method": "Not registered: no mapped outline can be tied to a model point, so the model stays at the place anchor with the anchor's precision."
+    "placement": "imagery",
+    "modelPoint": [
+     0,
+     0
+    ],
+    "method": "The plan is matched to Vantor WorldView-2 imagery (Esri World Imagery, 21 October 2023, 0.5 m, stated accuracy 5 m) by searching the turn, scale and shift that put its dark pixels on the imagery's edges (tools/imagery_registration.py fit), then checked by overlay and an independent part or source.",
+    "imagery": {
+     "source": "Vantor",
+     "sensor": "WV02 (WorldView-2)",
+     "date": "2023-10-21",
+     "resolution_m": 0.5,
+     "accuracy_m": 5
+    },
+    "uncertainty_m": "about 3 between figure and imagery; the imagery's own stated accuracy is 5",
+    "record": "research/assets/plans/imagery-registration-2026-10-22/hyrcania.json"
    }
   }
  }

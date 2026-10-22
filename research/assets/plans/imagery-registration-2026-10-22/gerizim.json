@@ -1,0 +1,173 @@
+{
+ "title": "Imagery registration: gerizim",
+ "date": "2026-10-22",
+ "frame": "place frame: metres from the place anchor in atlas/app/atlas-data.json, x east, z south, MapLibre Mercator scaled at the anchor (tools/build_osm_context.py Frame)",
+ "turnConvention": "turnDegClockwise: the plan's page axes are turned clockwise on the map by this angle (east towards south); pxPerM: plan pixels per metre; planPoint (pixels) lands on placePoint (place frame)",
+ "imagery": {
+  "service": "Esri World Imagery (World_Imagery MapServer), zoom-18 tiles; metadata from its identify query at the place anchor",
+  "source": "Vantor",
+  "sensor": "WV02 (WorldView-2)",
+  "date": "2023-10-21",
+  "resolution_m": 0.5,
+  "accuracy_m": 5,
+  "block": "Vivid_Standard_JO01_25Q3",
+  "release": "Raster Basemaps 2026.R01",
+  "use": "measurement only; tiles and resampled images are not archived (Esri terms of use)"
+ },
+ "method": "The plan is matched to Vantor WorldView-2 imagery (Esri World Imagery, 21 October 2023, 0.5 m, stated accuracy 5 m) by searching the turn, scale and shift that put its dark pixels on the imagery's edges (tools/imagery_registration.py fit), then checked by overlay and an independent part or source.",
+ "plans": [
+  "gerizim-precinct"
+ ],
+ "place": "gerizim",
+ "anchor": [
+  32.20082,
+  35.27326
+ ],
+ "figures": [
+  {
+   "id": "magen2008-p1743",
+   "citation": "Magen 2008, NEAEHL 5 p. 1743, 'Mount Gerizim: plan of the site' (0–50 m bar, north arrow)",
+   "file": "research/assets/plans/neaehl-vol5/gerizim-extract.pdf",
+   "page": 2,
+   "render": "pdftoppm 300 dpi",
+   "bar_pxPerM": 5.13,
+   "fit": {
+    "turnDegClockwise": 4.35,
+    "pxPerM": 5.13,
+    "planPoint": [
+     2148,
+     1258.5
+    ],
+    "placePoint": [
+     18.6,
+     -42.2
+    ],
+    "score": 51.495,
+    "baseline": 43.769
+   },
+   "excluded": "legend, labels and caption boxes: [300,950,1300,3300], [0,3300,2868,3755], [0,0,2868,200]",
+   "checks": {
+    "splitPrecinctOnly": {
+     "turnDegClockwise": "3.55–3.7",
+     "shift_m": "within 1.5"
+    },
+    "splitOuterQuartersOnly": {
+     "turnDegClockwise": "4.2–4.35",
+     "pxPerM": 5.104,
+     "shift_m": "within 1.5"
+    },
+    "enclosureOnImagery": "the Byzantine cloister enclosure measures about 71 × 57 m on the imagery and 70 × 60 m on the plan"
+   }
+  },
+  {
+   "id": "magen2008-p1746",
+   "citation": "Magen 2008, NEAEHL 5 p. 1746, 'Plan of the Persian and Hellenistic period sacred precinct' (0–25 m bar; north arrow points left)",
+   "file": "research/assets/plans/neaehl-vol5/gerizim-extract.pdf",
+   "page": 5,
+   "render": "pdftoppm 300 dpi",
+   "bar_pxPerM": 7.76,
+   "fit": {
+    "turnDegClockwise": 92.85,
+    "pxPerM": 7.88,
+    "planPoint": [
+     1845,
+     1380
+    ],
+    "placePoint": [
+     -31.0,
+     12.8
+    ],
+    "score": 49.317,
+    "baseline": 36.178
+   },
+   "excluded": "text column, legend, header and bar: [0,0,950,3755], [0,1580,2868,3755], [0,0,2868,250], [2250,1400,2600,1580]",
+   "checks": {
+    "agreementWithSitePlan": "walls of both plans coincide within 1–2 m over the precinct (overlay)",
+    "westWall": "core west wall 83.1 m on the registered plan; Magen 2008 p. 1746: 84 m",
+    "scale": "fitted 7.88 px/m is 1.5 % above the bar (7.76)"
+   }
+  }
+ ],
+ "positions": {
+  "coreCorners_NW_NE_SE_SW": [
+   [
+    -20.2,
+    -88.3
+   ],
+   [
+    60.2,
+    -71.0
+   ],
+   [
+    49.8,
+    -1.6
+   ],
+   [
+    -38.9,
+    -7.3
+   ]
+  ],
+  "coreCentre": [
+   12.7,
+   -42.0
+  ],
+  "northGate": [
+   20.0,
+   -79.7
+  ],
+  "eastGate22": [
+   57.0,
+   -38.0
+  ],
+  "southGateMidWall": [
+   5.4,
+   -4.5
+  ],
+  "eastStairCentre": [
+   78,
+   -42
+  ],
+  "lowerGatehouse": [
+   100,
+   -25
+  ],
+  "citadel": [
+   41.5,
+   28.5
+  ],
+  "fortifiedEnclosureCentre": [
+   -29,
+   14.5
+  ],
+  "fortifiedEnclosureSW": [
+   -51,
+   33.6
+  ],
+  "westEntrance": [
+   -12.5,
+   43.5
+  ],
+  "mansionAreaP": [
+   -73.3,
+   1.9
+  ],
+  "platformCentre212x136": [
+   17,
+   9
+  ]
+ },
+ "positionsNote": "Read on the registered plans (precinct plan for the precinct, site plan for the mansion), about ±2 m; the summit platform stands for the reported 212 × 136 m enclosure.",
+ "placement": {
+  "target": [
+   0,
+   0
+  ],
+  "rotationDeg": 0,
+  "modelPoint": [
+   0,
+   0
+  ],
+  "note": "the model is built in the place frame from these positions"
+ },
+ "uncertainty_m": "about 2 between plan and imagery; the imagery's own stated accuracy is 5"
+}

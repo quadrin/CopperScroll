@@ -1,0 +1,201 @@
+{
+ "title": "Imagery registration: hyrcania",
+ "date": "2026-10-22",
+ "frame": "place frame: metres from the place anchor in atlas/app/atlas-data.json, x east, z south, MapLibre Mercator scaled at the anchor (tools/build_osm_context.py Frame)",
+ "turnConvention": "turnDegClockwise: the plan's page axes are turned clockwise on the map by this angle (east towards south); pxPerM: plan pixels per metre; planPoint (pixels) lands on placePoint (place frame)",
+ "imagery": {
+  "service": "Esri World Imagery (World_Imagery MapServer), zoom-18 tiles; metadata from its identify query at the place anchor",
+  "source": "Vantor",
+  "sensor": "WV02 (WorldView-2)",
+  "date": "2023-10-21",
+  "resolution_m": 0.5,
+  "accuracy_m": 5,
+  "block": "Vivid_Standard_JO01_25Q3",
+  "release": "Raster Basemaps 2026.R01",
+  "use": "measurement only; tiles and resampled images are not archived (Esri terms of use)"
+ },
+ "method": "The plan is matched to Vantor WorldView-2 imagery (Esri World Imagery, 21 October 2023, 0.5 m, stated accuracy 5 m) by searching the turn, scale and shift that put its dark pixels on the imagery's edges (tools/imagery_registration.py fit), then checked by overlay and an independent part or source.",
+ "plans": [
+  "hyrcania-waterworks"
+ ],
+ "place": "hyrcania",
+ "anchor": [
+  31.719,
+  35.366
+ ],
+ "figures": [
+  {
+   "id": "patrich1989-fig22",
+   "citation": "Patrich 1989 Fig. 22, p. 256: cisterns and pools of Hyrcania; 0–50 m bar in five segments; no north arrow",
+   "file": "research/assets/plans/aqueducts1989/patrich-fig22-p256.png",
+   "bar_pxPerM": 4.61,
+   "fit": {
+    "turnDegClockwise": -4.75,
+    "pxPerM": 4.633,
+    "planPoint": [
+     590,
+     700
+    ],
+    "placePoint": [
+     -59.25,
+     9.5
+    ],
+    "runs": [
+     {
+      "pixels": "thick lines only (walls, pools, bridge)",
+      "turnDegClockwise": -5.35,
+      "pxPerM": 4.633,
+      "placePoint": [
+       -59.5,
+       9.5
+      ],
+      "score": 26.688,
+      "baseline": 23.001
+     },
+     {
+      "pixels": "all dark pixels",
+      "turnDegClockwise": -4.15,
+      "pxPerM": 4.633,
+      "placePoint": [
+       -59.0,
+       9.5
+      ],
+      "score": 24.644,
+      "baseline": 20.989
+     }
+    ]
+   },
+   "excluded": "outside the figure frame, legend and bar: [0,0,1488,170], [0,1330,1488,2033], [0,0,70,2033], [1300,0,1488,2033], [950,1050,1300,1330]",
+   "checks": {
+    "elevation": "with the fit, the figure's contours follow the 10 m elevation model's contours round the hill (the model was not used in the fit)",
+    "features": "the bridge's double line lies on the dark north-west to south-east line in the imagery; the double pool, the round cistern and the southern cisterns fall on dark pits",
+    "bar": "the bar's five 10 m segments span 1027.5–1257.5 px: 4.61 px/m; the fit's 4.633 is 0.5 % above",
+    "earlierAttempt": "a full-circle search on the walls alone (30 September and again here) gave no clear turn; the figure's page-up is about north, as its bridge and the imagery's line first showed"
+   }
+  }
+ ],
+ "positions": {
+  "doublePoolCentre": [
+   -106.6,
+   -69.75
+  ],
+  "northMemberCentre": [
+   -101.3,
+   -76.6
+  ],
+  "southMemberCentre": [
+   -111.9,
+   -62.9
+  ],
+  "poolLongSideBearingDeg": 122,
+  "bridgeSEend": [
+   -87.2,
+   -14.2
+  ],
+  "bridgeNWend112m": [
+   -172.0,
+   -87.4
+  ],
+  "bridgeBearingDeg": 310.8,
+  "separatePool": [
+   -158.4,
+   1.9
+  ],
+  "roundCistern": [
+   -72.1,
+   -82.0
+  ],
+  "cisternsDFEG": [
+   [
+    -31.2,
+    50.1
+   ],
+   [
+    -24.7,
+    62.7
+   ],
+   [
+    -24.2,
+    77.0
+   ],
+   [
+    -12.0,
+    69.5
+   ]
+  ],
+  "tunnel49": [
+   -104.0,
+   65.2
+  ],
+  "summitBuildings": [
+   -37.7,
+   7.7
+  ],
+  "fortressArc": [
+   [
+    -39.8,
+    -30.7
+   ],
+   [
+    -50.8,
+    -19.4
+   ],
+   [
+    -60.7,
+    -7.7
+   ],
+   [
+    -72.7,
+    4.1
+   ],
+   [
+    -84.7,
+    15.9
+   ],
+   [
+    -92.4,
+    27.4
+   ],
+   [
+    -96.9,
+    38.6
+   ],
+   [
+    -98.0,
+    44.1
+   ]
+  ],
+  "fortressEast": [
+   [
+    -39.5,
+    -31.1
+   ],
+   [
+    -33.9,
+    -30.1
+   ],
+   [
+    -18.9,
+    -5.8
+   ],
+   [
+    -24.1,
+    46.6
+   ]
+  ]
+ },
+ "positionsNote": "Read on the registered figure, about ±2 m; the bridge is drawn 112 m (Patrich 2002) from its south-east end at the summit track.",
+ "placement": {
+  "target": [
+   0,
+   0
+  ],
+  "rotationDeg": 0,
+  "modelPoint": [
+   0,
+   0
+  ],
+  "note": "the model is built in the place frame from these positions; each part stands on the modern terrain at its own place"
+ },
+ "uncertainty_m": "about 3 between figure and imagery; the imagery's own stated accuracy is 5"
+}

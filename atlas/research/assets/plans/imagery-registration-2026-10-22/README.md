@@ -1,0 +1,29 @@
+# Plans registered to satellite imagery — 22 October 2026
+
+Three atlas models had no mapped outline to tie them to, so they stood at their place anchors (±200–500 m), and the Qumran settlement stood on the centre of a large mapped outline. Their source plans are now registered to satellite imagery, and the models stand where the plans put them. Mirror: `atlas/research/assets/plans/imagery-registration-2026-10-22/`.
+
+**Imagery.** Esri World Imagery, zoom 18 (about 0.5 m per pixel). At all four places it is Vantor WorldView-2 imagery of 21 October 2023, 0.5 m resolution, with a stated accuracy of 5 m (block `Vivid_Standard_JO01_25Q3`, release `Raster Basemaps 2026.R01`; from the service's identify query at each anchor). The imagery was used for measurement only. No tile or resampled image is archived (Esri terms of use).
+
+**Method.** [`tools/imagery_registration.py`](../../../../tools/imagery_registration.py) resamples the imagery into the place frame (metres from the place anchor, x east, z south: the atlas's frame). Its `fit` searches the turn, scale and shift that put a plan's dark pixels (walls and lines) on the imagery's edges, coarse then fine. Each fit was checked by an overlay and by a part or source the fit did not use. The records give every number.
+
+| Record | Plan(s) | Figure | Turn (clockwise) | Scale vs bar | Checks | Placement |
+|---|---|---|---|---|---|---|
+| [gerizim.json](gerizim.json) | `gerizim-precinct` | Magen 2008 p. 1743 site plan; p. 1746 precinct plan | 4.35°; 92.85° (north arrow left) | bar; +1.5 % | precinct-only and outer-only fits agree within 0.8° and 1.5 m; both plans coincide within 1–2 m; core west wall 83 m (published 84 m) | model built in the place frame from the plans' positions |
+| [jericho.json](jericho.json) | `jericho-early`, `jericho-late` | Trümper 2018 Fig. 18 (after Netzer 2001) | 13.15°; Netzer frame north at 10.58° east of north | +0.5 % | the pools fall on two pits 3 m apart; the pools' wall shadows tilt 12–16° on the imagery | traced origin (north pool's outer north-west corner) at (−183.2, −239.1), frame turned 10.58° clockwise |
+| [hyrcania.json](hyrcania.json) | `hyrcania-waterworks` | Patrich 1989 Fig. 22 (no north arrow) | −4.75° ± 0.6° | +0.5 % | contours follow the 10 m elevation model; bridge, double pool, round cistern and southern cisterns fall on visible features | model built in the place frame from the figure's positions |
+| [qumran.json](qumran.json) | `qumran-settlement` | Magen & Peleg 2018 Fig. 9 | −0.6° | −1.5 % | a buildings-only fit agrees within 1° and 0.7 m; the main building, western structure and L138 tower fall on the excavated walls | traced origin (cistern L110) at (−67.5, 63.0), 15.7 m from its outline-centroid place |
+
+## What changed in the models (INFERENCE)
+
+- **Gerizim.** The earlier diagram's distances were about 30 % too long, and its parts lay 12–32 m from their plan positions even after the best fit. The model now draws the precinct core along the precinct plan's walls (a quadrilateral, not a square), with the reported envelopes (citadel, fortified enclosure, mansion, stair, west entrance, the 212 × 136 m platform) at their drawn places. Four 22 × 16 m courts without a stated source are left out.
+- **Jericho.** The traced plan is unchanged; it is placed and turned. Netzer's plan north points about 10.6° east (clockwise) of true north; the traced record had left grid or true north open.
+- **Qumran.** The traced plan is unchanged; it moves 15.7 m (west and south) from the centroid of the mapped site outline to the excavated walls and turns 0.6°.
+- **Hyrcania.** The earlier diagram packed the installations within ±50 m (distances about 2.4 times too short). The model now spreads them round the hill where Fig. 22 draws them. Each part stands on the modern terrain at its own place. Fig. 22 draws bridge 48 across the saddle north-west of the summit.
+
+## Limits
+
+- **Bethesda is not refined.** In this imagery (Vantor Legion, 3 January 2025, 0.34 m, stated accuracy 8.5 m) the pools lie in deep shade under trees, and the model is a diagram of published sizes with an assumed angle: no figure in the repository ties the pools to St Anne's church or another mapped building. It stays on the centroid of the mapped excavation outline (about ±25 m). A plan that draws the pools with the church (Gibson 2005, *POC* 55, in the owner's Drive; or Pierre & Rousée 1981 Figs. 2–3) would allow a fit on the church's mapped outline.
+
+- The imagery's own stated accuracy is 5 m. The plan-to-imagery fits agree within about 2–3 m.
+- These placements are for display. They change no reading, test, identification or rating. Hyrcania's pool and tunnel positions in any entry test still need surveyed controls (see [the 30 September record](../../../sites/hyrcania_plan_registration_2026-09-30.md)).
+- No imagery was fetched over Tell es-Sultan or its northern strip (reserved observations).

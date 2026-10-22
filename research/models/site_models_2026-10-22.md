@@ -77,3 +77,14 @@ Later still on 22 October the same treatment was given to the other models drawn
 
 - ILLUSTRATIVE: each model's levelled ground where its display bench meets the modern terrain (at Hyrcania a flat area on the hill); the confined pads that keep Warren's Haram surface and the ground at the wall's foot at the Golden Gate.
 - Not done, and why: the relative-unit models (Qumran aqueduct and Reeder plan, Jericho Area AC, Siloam receiver, Doq) are not drawn at a known scale, so mapped surroundings in metres would mislead; Abu Saraj IV/17 has no position.
+
+## Placed by satellite imagery (night of 22 October)
+
+The models of Gerizim, Jericho (both) and Hyrcania stood at their place anchors, and the Qumran settlement on the centre of a large mapped outline. Their source plans are now registered to Vantor WorldView-2 imagery of 21 October 2023 (Esri World Imagery, stated accuracy 5 m), and the models stand where the plans put them ([records](../assets/plans/imagery-registration-2026-10-22/README.md); tool `tools/imagery_registration.py`).
+
+- New evidence: none from the sources. The imagery is a modern observation of the visible ruins, used for measurement only and not archived.
+- INFERENCE (placement): Gerizim from Magen 2008's site and precinct plans (the two agree within 1–2 m); Jericho from Trümper Fig. 18 (Netzer's plan north points about 10.6° east of true north); Hyrcania from Patrich 1989 Fig. 22 (page-up about 4.75° west of north; its contours then follow the elevation model); Qumran from Magen & Peleg Fig. 9 (moved 15.7 m). Fits agree with the imagery within about 2–3 m.
+- Changed geometry: Gerizim is rebuilt in the place frame from the plans (core walls as drawn; reported envelopes at their drawn places; the four unsourced 22 × 16 m courts are dropped). Hyrcania's installations now spread round the hill where Fig. 22 draws them, each on its own modern ground, and its blocks are 0.5 m. Jericho and Qumran are moved and turned, unchanged in shape.
+- Bethesda is not refined: the pools lie in shade under trees in the imagery, and no figure ties the model to a mapped building.
+- Photogrammetry of the Kidron photos (to improve the ground at the monuments' feet) failed: 3 of 62 images registered ([note](../assets/plans/kidron-field-2026-10-19/README.md#photogrammetry-test-22-october-2026)).
+- No reading, identification, rating or outcome count changed.

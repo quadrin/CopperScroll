@@ -11,6 +11,7 @@ import { plansForPlace, sitePlans } from "./atlas-explorer-model";
 import SiteReference from "./atlas-site-reference";
 import { MapVideoReferences, MapSourceReferences, type MapPanel } from "./atlas-map-references";
 import WalkReferences from "./atlas-walk-references";
+import { ancientGround, ancientGroundAssumption, ancientGroundCaption, ancientGroundPads, hasAncientGround } from "./atlas-ancient-ground";
 import type { MapSiteRuntime } from "./atlas-map-site-layer";
 import type { WalkController } from "./atlas-map-walk";
 import "./atlas-map-unified.css";
@@ -67,8 +68,13 @@ export default function AtlasMap(props:Props) {
   const [dropMessage,setDropMessage]=useState("");
   // "minecraft" shows the site built in a Minecraft server and read back from its save.
   const [modelStyle,setModelStyle]=useState<"minecraft"|"smooth">(()=>{try{return typeof window!=="undefined"&&localStorage.getItem("atlas-model-style")==="smooth"?"smooth":"minecraft";}catch{return "minecraft";}});
-  const [siteStyle,setSiteStyle]=useState<"minecraft"|"smooth"|null>(null),[siteRegistered,setSiteRegistered]=useState(false);
+  const [siteStyle,setSiteStyle]=useState<"minecraft"|"smooth"|null>(null),[siteRegistered,setSiteRegistered]=useState<false|"outlines"|"imagery">(false);
   const rejoinWalk=useRef(false);
+  // Feature signs at eye level, on by default.
+  const [signsOn,setSignsOn]=useState(true);
+  // "ancient" draws a plan in its mapped setting without today's mapped features (atlas-ancient-ground.ts).
+  const [groundView,setGroundView]=useState<"today"|"ancient">("today"),[ancientApplied,setAncientApplied]=useState(false);
+  const groundChoice=hasAncientGround(plan?.id),ancient=groundChoice&&groundView==="ancient";
   // Remains or a published reconstruction phase, chosen per traced plan.
   const [layerChoice,setLayerChoice]=useState<Record<string,string>>({});
   const planLayer=(plan&&layerChoice[plan.id])??plan?.layers?.[0]?.id??"remains",layerInfo=plan?.layers?.find(l=>l.id===planLayer);
@@ -252,15 +258,17 @@ export default function AtlasMap(props:Props) {
     if(map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");
     if(!modelAvailable||offMap){setSiteState("unavailable");return;}
     setSiteState("loading");setSiteStyle(null);setSiteRegistered(false);
-    const blocks=modelStyle==="minecraft"?import("./atlas-minecraft").then(m=>m.loadMinecraftBuild(plan.id,selectedPlace!.id,planLayer)).catch(()=>null):Promise.resolve(null);
+    // The block builds contain today's mapped features, so the Ancient ground view is drawn smooth.
+    const blocks=modelStyle==="minecraft"&&!ancient?import("./atlas-minecraft").then(m=>m.loadMinecraftBuild(plan.id,selectedPlace!.id,planLayer)).catch(()=>null):Promise.resolve(null);
     const terrain=plan.terrain==="wide"?import("./atlas-minecraft").then(m=>m.loadTerrainPatch(selectedPlace!.id)).catch(()=>null):Promise.resolve(null);
-    const setting=plan.terrain==="wide"?import("./atlas-minecraft").then(m=>m.loadSiteContext(plan.id)).catch(()=>null):Promise.resolve(null);
+    const setting=plan.terrain==="wide"&&!ancient?import("./atlas-minecraft").then(m=>m.loadSiteContext(plan.id)).catch(()=>null):Promise.resolve(null);
     void Promise.all([import("./atlas-map-site-layer"),blocks,terrain,setting]).then(([{createMapSiteLayer},build,patch,context])=>{
       if(cancelled||mapRef.current!==map)return;
-      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);setSiteRegistered(!!runtime.model.landscape.registered);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build,{layer:planLayer,terrain:patch??undefined,context:context??undefined}));
+      const ground=ancient?ancientGround(plan.id):null,pads=ground?ancientGroundPads(ground,patch?.centreElevation):null;
+      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{if(ground){runtime.model.assumptions.unshift(ancientGroundAssumption(ground,!!pads));setAncientApplied(!!pads);}siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);setSiteRegistered(runtime.model.landscape.registered?(runtime.model.landscape.registeredBy??"outlines"):false);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build,{layer:planLayer,terrain:patch??undefined,context:context??undefined,pads:pads??undefined}));
     }).catch(()=>{if(!cancelled)setSiteState("Source model could not load.");});
     return()=>{cancelled=true;walker.current?.stop();walker.current=null;siteRuntime.current=null;if(mapRef.current===map&&map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");};
-  },[ready,plan?.id,focusId,modelAvailable,offMap,modelStyle,planLayer]);
+  },[ready,plan?.id,focusId,modelAvailable,offMap,modelStyle,planLayer,ancient]);
   function chooseLayer(id:string){
     if(!plan||id===planLayer)return;
     rejoinWalk.current=!!walker.current;setWalking(false);setLayerChoice(choice=>({...choice,[plan.id]:id}));
@@ -271,7 +279,12 @@ export default function AtlasMap(props:Props) {
     rejoinWalk.current=!!walker.current;setWalking(false);setModelStyle(style);
     try{localStorage.setItem("atlas-model-style",style);}catch{}
   }
+  function chooseGround(view:"today"|"ancient"){
+    if(view===groundView)return;
+    rejoinWalk.current=!!walker.current;setWalking(false);setGroundView(view);
+  }
   useEffect(()=>{siteRuntime.current?.setFeature(localFeature);},[localFeature,siteState]);
+  useEffect(()=>{siteRuntime.current?.setSigns(signsOn);},[signsOn,siteState]);
 
   useEffect(()=>{
     const map=mapRef.current;if(!ready||!map||walking)return;
@@ -311,7 +324,7 @@ export default function AtlasMap(props:Props) {
   return <section data-walking={walking} data-site-state={siteState} data-site-plan={plan?.id??""} className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""}`} onDragOver={e=>e.preventDefault()} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":"Interactive candidate map"}>
     <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} data-basemap={basemap} data-site-labels={mapZoom>=15} data-modern-layer-count={modernLayerCount??"loading"} data-map-zoom={mapZoom.toFixed(3)} data-map-center={coordinates} aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
-    {!offMap&&modelAvailable&&(mapZoom>=15.5||walking)&&<div className="map-site-caption"><strong>{walking?"Eye-level model":"Source-based 3D site"}</strong><span>{plan?.label} · {siteRegistered?"registered to mapped outlines":"approximate alignment"}{siteStyle==="minecraft"?" · built in Minecraft":modelStyle==="minecraft"&&siteState==="ready"?" · no block build here":""}</span><div className="map-model-style" role="group" aria-label="Model style"><button aria-pressed={modelStyle==="minecraft"} onClick={()=>chooseStyle("minecraft")} title="The source model built block by block in a Minecraft server">Blocks</button><button aria-pressed={modelStyle==="smooth"} onClick={()=>chooseStyle("smooth")} title="The source model with smooth geometry">Smooth</button></div>{plan?.layers&&plan.layers.length>1&&<div className="map-model-style map-model-layer" role="group" aria-label="Remains or reconstruction">{plan.layers.map(l=><button key={l.id} aria-pressed={planLayer===l.id} onClick={()=>chooseLayer(l.id)} title={l.label}>{l.kind==="observed"?"Remains":l.label.replace(/\s*\(.*$/,"").replace(/,.*$/,"")}</button>)}</div>}{layerInfo?.kind==="published-reconstruction"&&<small className="map-layer-note">{layerInfo.label}: a published reconstruction. Pale parts with a dashed grid are drawn only by it; heights that no source gives are illustrative.</small>}<button onClick={()=>setPanel("sources")}>Sources &amp; assumptions</button></div>}
+    {!offMap&&modelAvailable&&(mapZoom>=15.5||walking)&&<div className="map-site-caption"><strong>{walking?"Eye-level model":"Source-based 3D site"}</strong><span>{plan?.label} · {siteRegistered==="imagery"?"registered to satellite imagery":siteRegistered?"registered to mapped outlines":"approximate alignment"}{siteStyle==="minecraft"?" · built in Minecraft":modelStyle==="minecraft"&&siteState==="ready"&&!ancient?" · no block build here":""}</span><div className="map-model-style" role="group" aria-label="Model style"><button aria-pressed={modelStyle==="minecraft"} onClick={()=>chooseStyle("minecraft")} title="The source model built block by block in a Minecraft server">Blocks</button><button aria-pressed={modelStyle==="smooth"} onClick={()=>chooseStyle("smooth")} title="The source model with smooth geometry">Smooth</button></div>{plan?.layers&&plan.layers.length>1&&<div className="map-model-style map-model-layer" role="group" aria-label="Remains or reconstruction">{plan.layers.map(l=><button key={l.id} aria-pressed={planLayer===l.id} onClick={()=>chooseLayer(l.id)} title={l.label}>{l.kind==="observed"?"Remains":l.label.replace(/\s*\(.*$/,"").replace(/,.*$/,"")}</button>)}</div>}{groundChoice&&<div className="map-model-style map-model-ground" role="group" aria-label="Ground"><button aria-pressed={!ancient} onClick={()=>chooseGround("today")} title="Today's terrain with today's mapped features (OpenStreetMap)">Today</button><button aria-pressed={ancient} onClick={()=>chooseGround("ancient")} title="Today's terrain without the modern mapped features">Ancient ground</button></div>}{ancient&&plan&&<small className="map-layer-note map-ground-note">{ancientGroundCaption(ancientGround(plan.id),ancientApplied)}{modelStyle==="minecraft"?" Blocks include today’s features, so this view is drawn smooth.":""}</small>}{layerInfo?.kind==="published-reconstruction"&&<small className="map-layer-note">{layerInfo.label}: a published reconstruction. Pale parts with a dashed grid are drawn only by it; heights that no source gives are illustrative.</small>}<button onClick={()=>setPanel("sources")}>Sources &amp; assumptions</button></div>}
     {!offMap&&<div className="map-toolbar">
       <Tabs value={mode==="3d"?"3d":basemap==="satellite"?"satellite":"2d"} onValueChange={value=>{stopWalk();if(value!=="3d")setBasemap(value==="satellite"?"satellite":"map");onMode(value==="3d"?"3d":"2d")}} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="satellite">Satellite</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger></TabsList></Tabs>
       <div className="map-toolbar-menus">
@@ -340,6 +353,7 @@ export default function AtlasMap(props:Props) {
       <small className="walk-keyboard-help">Space jump (hold to repeat) · Ctrl / double-tap W/S sprint · Shift crouch<br/>Double-tap Space to fly: Space up · Shift down · double-tap again to drop<br/>Double-click for mouse look · Esc releases · R resets position</small>
       <div className="walk-movement">{[["w","Forward"],["a","Left"],["s","Back"],["d","Right"]].map(([key,label])=><button key={key} onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);mapRef.current?.getCanvas().focus();walker.current?.press(key)}} onPointerUp={()=>walker.current?.release(key)} onPointerCancel={()=>walker.current?.release(key)} onLostPointerCapture={()=>walker.current?.release(key)}>{label}</button>)}</div>
       <div className="walk-actions"><button onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);walker.current?.press(" ")}} onPointerUp={()=>walker.current?.release(" ")} onPointerCancel={()=>walker.current?.release(" ")} onLostPointerCapture={()=>walker.current?.release(" ")} onKeyDown={e=>{if(e.key===" "||e.key==="Enter"){e.preventDefault();walker.current?.press(" ")}}} onKeyUp={()=>walker.current?.release(" ")}>{walker.current?.stance().flying?"Up":"Jump"}</button><button aria-pressed={walker.current?.stance().sprintEnabled??false} onClick={()=>{walker.current?.toggleSprint();mapRef.current?.getCanvas().focus()}}>Sprint</button>{walker.current?.stance().flying?<button onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);walker.current?.press("shift")}} onPointerUp={()=>walker.current?.release("shift")} onPointerCancel={()=>walker.current?.release("shift")} onLostPointerCapture={()=>walker.current?.release("shift")}>Down</button>:<button aria-pressed={walker.current?.stance().crouched??false} onClick={()=>{walker.current?.toggleCrouch();mapRef.current?.getCanvas().focus()}}>Crouch</button>}<button aria-pressed={walker.current?.stance().flying??false} title="Creative-mode flight (or double-tap Space)" onClick={()=>walker.current?.toggleFly()}>Fly</button></div>
+      <div className="walk-options"><button aria-pressed={signsOn} title="Show or hide the feature signs" onClick={()=>{setSignsOn(on=>!on);mapRef.current?.getCanvas().focus();}}>Signs</button></div>
       <small>{walker.current?.stance().flying?"Flying":walker.current?.stance().grounded?"On ground":"Airborne"}{walker.current?.stance().sprinting?" · Sprinting":""}{walker.current?.stance().crouched?" · Crouching":""}</small><output aria-label="Walk camera position">{walkPosition.map(n=>n.toFixed(1)).join(", ")}</output>
     </div>}
     {!offMap&&!walking&&<aside className="map-place-panel" aria-label="Selected site" data-expanded={placeExpanded}>

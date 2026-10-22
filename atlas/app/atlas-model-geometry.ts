@@ -6,29 +6,43 @@ import type { SitePlan } from "./atlas-explorer-model";
 import { createSiteMaterials, cloneSiteMaterial, chippedBlock } from './atlas-site-materials';
 import { decodeRaster, elementPoints, rasterRectangles, type TracedElement, type TracedPlan } from './atlas-traced';
 import tracedData from './atlas-traced-plans.json';
-import type { TerrainPatch } from './atlas-model-landscape';
+import type { TerrainPatch, LandscapePad } from './atlas-model-landscape';
 
 const traced=tracedData as unknown as Record<string,TracedPlan>;
 // Illustrative heights for traced plans, used only where no height is published.
 export const TRACED_HEIGHTS={ruin:.9,wall:3.2,column:3.6,columnBase:.4,depth:2,dashed:.12,podium:1};
 // `context`: the mapped surroundings of a plan placed in its setting (atlas/public/context), when loaded.
-export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFeature[]};
+// `pads`: extra ground pads in the model's frame for one view only (the Ancient ground view's published levels, atlas-ancient-ground.ts).
+export type BuildOptions={layer?:string;terrain?:TerrainPatch;context?:ContextFeature[];pads?:LandscapePad[]};
 // How a plan that has no registration of its own meets its mapped setting: the model point (or marker)
 // that goes onto the mapped target or the place anchor, the model point (or marker) where model height
 // `datumY` meets the modern terrain, and whether its display bench is kept around it.
-const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:number;bench?:boolean}>={
- 'qumran-settlement':{},
+// `centre` is the model point that the model's ground (and its block build) is centred on, if not its origin.
+const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:number;bench?:boolean;centre?:Point}>={
+ // The traced frame's origin (the centre of cistern L110) is the registered point.
+ 'qumran-settlement':{point:'traced-origin'},
  'bethesda-pools':{point:'dam'},
  // The gatehouse is the frame's origin; y = 0 is the Haram surface at cistern XV.
  'east-gate-warren':{datum:'cistern-xv'},
- 'jericho-early':{},'jericho-late':{},
+ // The traced frame's origin (the outer north-west corner of the northern pool) is the registered point.
+ 'jericho-early':{point:'traced-origin'},'jericho-late':{point:'traced-origin'},
  // The precinct stands on the summit platform, 15.5 m above the model's base.
- 'gerizim-precinct':{datumY:15.5,bench:false},
- 'hyrcania-waterworks':{},
+ 'gerizim-precinct':{datum:'persian-precinct',datumY:15.5,bench:false},
+ // The parts spread round the hill on their own ground: no display bench.
+ 'hyrcania-waterworks':{bench:false,centre:[-92,-5]},
 };
+// Hyrcania, metres from the place anchor (x east, z south), from Patrich 1989 Fig. 22 registered to imagery
+// (research/assets/plans/imagery-registration-2026-10-22/hyrcania.json).
+const HYRCANIA={doublePool:[-106.6,-69.75] as Point,separatePool:[-158.4,1.9] as Point,pit:[-72.1,-82] as Point,summit:[-37.7,7.7] as Point,tunnel:[-104,65.2] as Point,
+ bridge:[[-87.2,-14.2],[-172,-87.4]] as [Point,Point],cisterns:[[-31.2,50.1],[-24.7,62.7],[-24.2,77],[-12,69.5]] as Point[],
+ arc:[[-39.8,-30.7],[-50.8,-19.4],[-60.7,-7.7],[-72.7,4.1],[-84.7,15.9],[-92.4,27.4],[-96.9,38.6],[-98,44.1]] as Point[],east:[[-39.5,-31.1],[-33.9,-30.1],[-18.9,-5.8],[-24.1,46.6]] as Point[]};
+// Gerizim, metres from the place anchor (x east, z south), from Magen 2008's plans registered to imagery
+// (research/assets/plans/imagery-registration-2026-10-22/gerizim.json).
+const GERIZIM={core:[[-20.2,-88.3],[60.2,-71],[49.8,-1.6],[-38.9,-7.3]] as Point[],centre:[12.7,-42] as Point,northGate:[20,-79.7] as Point,eastGate:[57,-38] as Point,southGate:[5.4,-4.5] as Point,
+ stair:[78,-42] as Point,lowerGate:[100,-25] as Point,citadel:[41.5,28.5] as Point,fortified:{c:[-29,14.5] as Point,sw:[-51,33.6] as Point},westEntrance:[-12.5,43.5] as Point,mansion:[-73.3,1.9] as Point,platform:[17,9] as Point};
 
 export type { ModelCamera } from "./atlas-explorer-model";
-export type ModelGeometry = { root: T.Group; markers: Map<string, T.Vector3>; selectable: T.Object3D[]; roof: T.Group; note: string; assumptions: string[]; units: "metres" | "relative"; framing:T.Box3; landscape:{context:string;credit:string;mapped:boolean;registered?:boolean};walkStart?:{position:[number,number];bearing:number;pitch:number} };
+export type ModelGeometry = { root: T.Group; markers: Map<string, T.Vector3>; selectable: T.Object3D[]; roof: T.Group; note: string; assumptions: string[]; units: "metres" | "relative"; framing:T.Box3; landscape:{context:string;credit:string;mapped:boolean;registered?:boolean;registeredBy?:'outlines'|'imagery'};walkStart?:{position:[number,number];bearing:number;pitch:number} };
 type Point = [number, number];
 type Space = [number, number, number, number, number, number];
 
@@ -36,7 +50,7 @@ function polygon(points:Point[]) {const s=new T.Shape();points.forEach(([x,z],i)
 function material(color:string,map?:T.Texture){return new T.MeshStandardMaterial({color,map:map??null,roughness:.94,metalness:0});}
 export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry {
  const root=new T.Group(), roof=new T.Group(),markers=new Map<string,T.Vector3>(),selectable:T.Object3D[]=[];
- const surfaces=createSiteMaterials(plan.id),{stone,rock,earth,plaster,restored}=surfaces,copper=material("#b56b42");let tracedStart:ModelGeometry["walkStart"];
+ const surfaces=createSiteMaterials(plan.id),{stone,rock,earth,plaster,restored}=surfaces,copper=material("#b56b42");let tracedStart:ModelGeometry["walkStart"],tracedOrigin:Point|undefined;
  const wellHoles:Point[][]=[],courtFloors:{x:number;z:number;w:number;d:number;mesh:T.Mesh}[]=[];let ground:LandscapeGround={w:40,d:40,holes:[],pads:[]};
  // A model registered to the place frame keeps it: no recentring, and its ground rectangle sits here.
  let placeFrame:Point|null=null;
@@ -151,72 +165,117 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   plinth(12,9,.55);
   assumptions.push("Outline sampled from Sion’s Plan 5. Scale follows its 3 m bar; sampling and scanned line widths limit precision.","Wall height 1.55 m is the midpoint of the published 1.4–1.7 m range, applied uniformly for display. Roof thickness and shape, wall thickness and masonry height are illustrative.","The two present openings, pillar and southern blocking wall remain distinct. No threshold elevation, ancient roof profile or deposit point is inferred.");
  } else if(plan.id==="hyrcania-waterworks"){
-  units="metres";const herodian=options.layer==="herodian";
-  note=herodian?"Herodian east bridge raised to its channel · Patrich 2002 (reconstruction)":"Double pool and east bridge · published depths and dimensions";
-  const n:Point[]=[[-19,-27],[-.8,-27],[0,-11],[-19,-12]],s:Point[]=[[-19,-6.9],[-1,-6.9],[-1,7.5],[-19,7.5]],south:Point[]=[[-27,20],[-15,20],[-15,31],[-27,31]];
-  basin(n,5,"north-pool",plaster);basin(s,2.6,"south-member",plaster);marker("north-pool",-10,-19,.55);marker("south-member",-10,.1,.55);
-  slab([[-23,-30],[4,-30],[4,11],[-23,11]],.8,-5.8,rock,undefined,root,[n,s]);
-  // East bridge, no. 48 (Patrich 2002): 112 m long (p. 346); preserved up to about 6 m high,
-  // 2.5 m wide at the base and 1.45 m at the top (p. 348). Drawn straight along x, south of the double pool.
-  const bx0=-106,bx1=6,bz=17,section=new T.Shape([new T.Vector2(-1.25,0),new T.Vector2(1.25,0),new T.Vector2(.725,6),new T.Vector2(-.725,6)]);
-  const bridge=new T.ExtrudeGeometry(section,{depth:bx1-bx0,bevelEnabled:false});bridge.rotateY(Math.PI/2);mesh(bridge,stone,"bridge").position.set(bx0,0,bz);
+  units="metres";const herodian=options.layer==="herodian",H=HYRCANIA;
+  note=herodian?"Herodian east bridge raised to its channel · Patrich 2002 (reconstruction)":"Double pool and east bridge · Patrich 1989 Fig. 22 registered to imagery";
+  // Positions are metres from the place anchor (x east, z south): Patrich 1989 Fig. 22 (p. 256), registered to
+  // satellite imagery (research/assets/plans/imagery-registration-2026-10-22/hyrcania.json). The parts spread
+  // round the hill, so each stands on the modern terrain at its own place; y = 0 is the terrain at the anchor.
+  const patch=placeTerrain(plan.placeIds[0],options.terrain),g0=patch?elevationAt(patch,0,0):0,groundAt=(x:number,z:number)=>(patch?elevationAt(patch,x,z):0)-g0;
+  // A turn on the map, clockwise by deg about the old frame's point c0, then a move to C.
+  const turn=(p:Point,c0:Point,C:Point,deg:number):Point=>{const t=T.MathUtils.degToRad(deg),x=p[0]-c0[0],z=p[1]-c0[1];return [C[0]+x*Math.cos(t)-z*Math.sin(t),C[1]+x*Math.sin(t)+z*Math.cos(t)];};
+  const lift=(y:number,build:()=>void)=>{const start=root.children.length;build();root.children.slice(start).forEach(o=>o.position.y+=y);};
+  // Double pool: the published sizes (old frame below), turned 35° clockwise so that its members lie as
+  // Fig. 22 draws them (north-east and south-west, long sides on 122°), centred where the figure puts them.
+  const dp=(p:Point)=>turn(p,[-10,-9.45],H.doublePool,35);
+  const n=([[-19,-27],[-.8,-27],[0,-11],[-19,-12]] as Point[]).map(dp),s=([[-19,-6.9],[-1,-6.9],[-1,7.5],[-19,7.5]] as Point[]).map(dp);
+  const sp=(p:Point)=>turn(p,[-21,25.5],H.separatePool,-4.75),south=([[-27,20],[-15,20],[-15,31],[-27,31]] as Point[]).map(sp);
+  const yPool=groundAt(...H.doublePool),ySouth=groundAt(...H.separatePool);
+  lift(yPool,()=>{basin(n,5,"north-pool",plaster);basin(s,2.6,"south-member",plaster);slab(([[-23,-30],[4,-30],[4,11],[-23,11]] as Point[]).map(dp),.8,-5.8,rock,undefined,root,[n,s]);});
+  const mid=(ps:Point[]):Point=>[ps.reduce((a,p)=>a+p[0],0)/ps.length,ps.reduce((a,p)=>a+p[1],0)/ps.length];
+  {const [x,z]=mid(n);marker("north-pool",x,z,yPool+.55);}{const [x,z]=mid(s);marker("south-member",x,z,yPool+.55);}
+  ground.pads.push({x:H.doublePool[0],z:H.doublePool[1],w:34,d:34,height:yPool,feather:8,angle:-T.MathUtils.degToRad(35)});
+  // East bridge, no. 48 (Patrich 2002): 112 m long (p. 346); preserved up to about 6 m high, 2.5 m wide at the
+  // base and 1.45 m at the top (p. 348). Fig. 22 draws it across the saddle north-west of the summit (גשר),
+  // from the summit track north-westwards; it is drawn along that line. Its foot follows the modern terrain;
+  // its top is level, 6 m above the saddle's lowest point.
+  const [ex,ez]=H.bridge[0],[wx,wz]=H.bridge[1],length=Math.hypot(wx-ex,wz-ez),yaw=-Math.atan2(wz-ez,wx-ex);
+  const along=(f:number):Point=>[ex+(wx-ex)*f,ez+(wz-ez)*f],samples=Array.from({length:15},(_,k)=>groundAt(...along(k/14))),low=Math.min(...samples);
+  const bridge=new T.Group();bridge.position.set(ex,0,ez);bridge.rotation.y=yaw;root.add(bridge);
+  for(let k=0;k<14;k++){const f=(k+.5)/14,foot=Math.min(samples[k],samples[k+1])-.4,top=Math.max(low+6,foot+.5);
+   const section=new T.Shape([new T.Vector2(-1.25,0),new T.Vector2(1.25,0),new T.Vector2(.725,top-foot),new T.Vector2(-.725,top-foot)]);
+   const g=new T.ExtrudeGeometry(section,{depth:length/14+.02,bevelEnabled:false});g.rotateY(Math.PI/2);const m=mesh(g,stone,"bridge",bridge);m.position.set(f*length-length/28,foot,0);}
   if(herodian){
    // The Herodian channel ran about 12.5 m above the saddle (p. 348): the upper part and the
    // channel are drawn only by this reconstruction.
-   box((bx0+bx1)/2,bz,bx1-bx0,1.45,6.5,6,"bridge",restored);
-   trough([new T.Vector3(bx0,12.5,bz),new T.Vector3(bx1,12.5,bz)],.5,"bridge",restored);
+   box(length/2,0,length,1.45,6.5,low+6,"bridge",restored,bridge);
+   const ch=mesh(new T.BoxGeometry(length,.5,.5),restored,"bridge",bridge);ch.position.set(length/2,low+12.75,0);
   }
-  marker("bridge",-50,bz,herodian?13.5:7);
-  // Southern pool: a quarried depression with a vertical rock-cut west side and no visible plaster (pp. 348, 351).
-  basin(south,1.8,"separate-pool",rock);marker("separate-pool",-21,25,.6);
-  // Round pit north-east of the north pool: 3.05 m across, 4.3 m deep (p. 348, Fig. 23); its position is illustrative.
-  shaft(4.5,-30,1.525,4.3,"pit",rock);marker("pit",4.5,-30,.6);
-  court(20,12,28,37,2.1);court(20,12,11,15,1.9);box(32,-3,6,7,3.2);
-  for(const [x,z] of [[16,35],[24,38],[39,4],[42,-7]])shaft(x,z,2,3,"cisterns");marker("cisterns",20,36,.7);
-  // Point 49: a built, barrel-vaulted tunnel between cisterns A and N; free part 11.5 m long,
-  // 1.25 m high and 0.75 m wide, with a square opening at the north end and débris at the south (p. 351).
-  {const x=8,z0=29,z1=40.5,r=.575,len=z1-z0;box(x,(z0+z1)/2,.75,len,.08,0,"tunnel-49",plaster);
-   for(const side of [-1,1])box(x+side*r,(z0+z1)/2,.4,len,.875,0,"tunnel-49");
-   const vault=new T.CylinderGeometry(r,r,len,16,1,true,-Math.PI/2,Math.PI);vault.rotateX(-Math.PI/2);const v=mesh(vault,stone,"tunnel-49");v.position.set(x,.875,(z0+z1)/2);(v.material as T.MeshStandardMaterial).side=T.DoubleSide;
-   box(x,z1-.6,1.55,1.2,1.25,0,"tunnel-49",earth);marker("tunnel-49",x,z0+3,1.6);}
-  plinth(150,92,6.3,[n,s,south]);
-  assumptions.push("Northern pool sides approximate the published 19 / 15 / 18.2 / 16 m quadrilateral. Published maximum depths are shown: about 5 m north, 2.6 m south (Patrich 1989 p. 255; repeated in Patrich 2002 p. 348).","Rock separation uses 5.1 m, the midpoint of the reported 4.8–5.4 m range. Southern outline, summit walls, other cistern depths and surrounding relief are illustrative.","The double pool is drawn rock-cut with plastered faces (Patrich 1989 p. 255, \"rock-cut double pool\"; reference photograph hyrcania-c-hurkania-5011 shows plastered rock walls), not as laid masonry; the coping course is illustrative.","East bridge (no. 48): 112 m long, 2.5 m wide at the base and 1.45 m at the top, about 6 m high at most today (Patrich 2002 pp. 346–348). It is drawn straight and 6 m high along its whole length on level ground; the saddle's profile, the bridge's varying preserved height and its Hasmonean lower courses are not drawn. Feldman (1973 or later, p. 334) gives the eastern saddle wall as 170 m long and 16.78 m high.","The round pit (3.05 m across, 4.3 m deep) and the point 49 tunnel (11.5 × 1.25 × 0.75 m, barrel-vaulted) use Patrich 2002's dimensions; their positions are illustrative (\"north-east of the north pool\"; \"between cisterns A and N\"). The tunnel's vault is drawn as a half-cylinder; its south end is drawn blocked by débris.","No north bearing is assigned to the source frame. Floors are tinted to distinguish basins; the tint is not a reconstructed water level. Centre/rim origins and construction phases remain unresolved.");
+  {const [x,z]=along(.5);marker("bridge",x,z,(herodian?low+13.5:low+7));}
+  // Southern pool ("the southern pool" on Fig. 22): a quarried depression with a vertical rock-cut west side and
+  // no visible plaster (pp. 348, 351); its size is illustrative.
+  lift(ySouth,()=>basin(south,1.8,"separate-pool",rock));marker("separate-pool",H.separatePool[0],H.separatePool[1],ySouth+.6);
+  ground.pads.push({x:H.separatePool[0],z:H.separatePool[1],w:18,d:17,height:ySouth,feather:6});
+  // Round pit north-east of the north pool: 3.05 m across, 4.3 m deep (p. 348, Fig. 23), at the round
+  // cistern Fig. 22 draws there.
+  {const y=groundAt(...H.pit);lift(y,()=>shaft(H.pit[0],H.pit[1],1.525,4.3,"pit",rock));marker("pit",H.pit[0],H.pit[1],y+.6);}
+  // The summit fortress wall where Fig. 22 draws it (the north-west arc and the east side; the south is open
+  // on the figure), and the summit buildings as one court. Wall heights are illustrative.
+  for(const line of [H.arc,H.east])for(let k=0;k+1<line.length;k++){const seg=[line[k],line[k+1]],y=Math.min(...seg.map(p=>groundAt(...p)));lift(y-.3,()=>walls(seg,2.7,1.6,0,undefined,false));}
+  {const y=groundAt(...H.summit);lift(y,()=>{court(H.summit[0],H.summit[1],22,28,2.1);court(H.summit[0],H.summit[1],9,12,1.9);});ground.pads.push({x:H.summit[0],z:H.summit[1],w:26,d:32,height:y,feather:6});}
+  // Southern cisterns D, E, F and G where Fig. 22 draws them; their sizes and depths are illustrative.
+  for(const c of H.cisterns){const y=groundAt(...c);lift(y,()=>shaft(c[0],c[1],2,3,"cisterns"));}
+  {const [x,z]=mid(H.cisterns.slice(0,2));marker("cisterns",x,z,groundAt(x,z)+.7);}
+  // Point 49: a built, barrel-vaulted tunnel between cisterns A and N; free part 11.5 m long, 1.25 m high and
+  // 0.75 m wide, with a square opening at the north end and débris at the south (p. 351). It is set at the
+  // figure's (49), running north–south on the figure; its exact course is not drawn there.
+  {const [tx,tz]=H.tunnel,y=groundAt(tx,tz),g=new T.Group();g.position.set(tx,y,tz);g.rotation.y=T.MathUtils.degToRad(4.75);root.add(g);
+   const r=.575,len=11.5;box(0,0,.75,len,.08,0,"tunnel-49",plaster,g);
+   for(const side of [-1,1])box(side*r,0,.4,len,.875,0,"tunnel-49",stone,g);
+   const vault=new T.CylinderGeometry(r,r,len,16,1,true,-Math.PI/2,Math.PI);vault.rotateX(-Math.PI/2);const v=mesh(vault,stone,"tunnel-49",g);v.position.set(0,.875,0);(v.material as T.MeshStandardMaterial).side=T.DoubleSide;
+   box(0,len/2-.6,1.55,1.2,1.25,0,"tunnel-49",earth,g);marker("tunnel-49",tx,tz-len/2+3,y+1.6);}
+  plinth(190,190,6.3,[n,s,south]);ground.focus=H.doublePool;
+  assumptions.push("Positions come from Patrich 1989 Fig. 22 (p. 256; 0–50 m bar in five segments, 4.61 px/m on the scan), registered to Vantor WorldView-2 imagery of 21 October 2023 (Esri World Imagery, 0.5 m pixels, stated accuracy 5 m) by matching its walls to the imagery: the figure's page-up lies 4.75° ± 0.6° west of north, at 4.633 px/m (0.5 % from the bar). The figure's contours then follow the 10 m elevation model's contours round the hill, and its bridge, double pool, round cistern and southern cisterns fall on the features visible in the imagery. Record: research/assets/plans/imagery-registration-2026-10-22/hyrcania.json.","Northern pool sides approximate the published 19 / 15 / 18.2 / 16 m quadrilateral. Published maximum depths are shown: about 5 m north, 2.6 m south (Patrich 1989 p. 255; repeated in Patrich 2002 p. 348). Patrich's compass words for the sides are rounded: on the registered figure the pools' long sides run at about 122°.","Rock separation uses 5.1 m, the midpoint of the reported 4.8–5.4 m range. The southern pool's outline, the summit walls and buildings, the cisterns' sizes and depths and the tunnel's course are illustrative; each part stands on the 10 m modern elevation model at its own place, which is not the ancient ground.","The double pool is drawn rock-cut with plastered faces (Patrich 1989 p. 255, \"rock-cut double pool\"; reference photograph hyrcania-c-hurkania-5011 shows plastered rock walls), not as laid masonry; the coping course is illustrative.","East bridge (no. 48): 112 m long, 2.5 m wide at the base and 1.45 m at the top, about 6 m high at most today (Patrich 2002 pp. 346–348). Fig. 22 draws it across the saddle north-west of the summit; it is drawn along that line, from the summit track. Its foot follows the modern terrain and its top is level, 6 m above the saddle's lowest point; its varying preserved height and its Hasmonean lower courses are not drawn. Feldman (1973 or later, p. 334) gives the eastern saddle wall as 170 m long and 16.78 m high.","The round pit (3.05 m across, 4.3 m deep) and the point 49 tunnel (11.5 × 1.25 × 0.75 m, barrel-vaulted) use Patrich 2002's dimensions. The pit is set at the round cistern that Fig. 22 draws north-east of the double pool; the tunnel at the figure's (49). The tunnel's vault is drawn as a half-cylinder; its south end is drawn blocked by débris.","Floors are tinted to distinguish basins; the tint is not a reconstructed water level. Centre/rim origins and construction phases remain unresolved. The placement is for display: it changes no reading, test or rating.");
   if(herodian)assumptions.push("Herodian view: Patrich 2002 p. 348 puts the Herodian channel about 12.5 m above the bridge's base, 1.20 m above its present west end. The pale upper wall (1.45 m wide, from 6 to 12.5 m) and the 0.5 m channel on it are drawn only by this reconstruction; Patrich also offers upper arches or a siphon, and Ritmeyer's drawing (Fig. 17) was not traced. The channel's onward course to the upper cisterns on the south and east slopes is not drawn.");
- } else if(plan.id==="gerizim-precinct"&&options.layer==="persian"){
-  units="metres";note="Persian-period precinct · Magen, Misgav & Tsfania 2004 (reconstruction)";
-  // Magen et al. 2004 p. 3*: the Persian precinct measured 96 × 98 m including its gates; three gates,
-  // north (six-chambered, fully exposed), south and east; no west gate. Drawn on the same frame and
-  // platform as the Hellenistic view, where the 98 × 96 m court stands for it.
-  const start=root.children.length,precinct:Point[]=[[-49,-78],[49,-78],[49,18],[-49,18]];slab(precinct,.25,-.25,earth,"persian-precinct");
-  // Precinct walls with openings for the three gates.
-  for(const run of [[[-2,-78],[-49,-78],[-49,18],[-1.5,18]],[[1.5,18],[49,18],[49,-11.5]],[[49,-14.5],[49,-78],[2,-78]]] as Point[][])walls(run,3.2,2.45,0,"persian-precinct",false);
-  // North gate: three chambers each side of a central passage. The layout follows the type; its sizes are illustrative.
-  for(const side of [-1,1]){for(let k=0;k<4;k++)box(side*4.5,-78+k*4,5,1,3.2,0,"persian-precinct");box(side*6.75,-72,.5,13,3.2,0,"persian-precinct");}
-  // South and east gates: their Persian-period form is not described; the gatehouses are drawn only by this view.
-  for(const [x,z,w,d] of [[0,18,9,7],[49,-13,7,9]] as [number,number,number,number][]){const g=root.children.length;court(x,z,w,d,3.4,"persian-precinct");root.children.slice(g).forEach(m=>{if(m instanceof T.Mesh){(m.material as T.Material).dispose();m.material=cloneSiteMaterial(restored);}});}
-  root.children.slice(start).forEach(m=>m.position.y+=15.5);
-  ground.pads.push({x:0,z:0,w:136,d:212,height:15.5,feather:12});
-  for(const [id,x,z,y] of [["persian-precinct",0,-30,18],["citadel",43,66,17],["west-entrance",-38,102,17],["mansion",-94,28,9],["east-stair",84,-13,11]] as [string,number,number,number][])marker(id,x,z,y);
-  plinth(255,290,7);
-  assumptions.push("Persian view: the precinct is drawn 98 × 96 m (Magen et al. 2004 p. 3*: 96 × 98 m including the gates, about 200 × 200 cubits) on the frame of the Hellenistic view, with gates on the north, south and east and none on the west. The north gate is drawn as a six-chambered gate (fully exposed, p. 3*); its pier and chamber sizes are illustrative. The pale south and east gatehouses are drawn only by this view: their Persian-period form and size are not described in the pages read.","The Hellenistic enclosure, citadel, western entrance, Area P mansion and eastern stair are not drawn; their markers stay for comparison with the Hellenistic view. Remains of a Persian stair to the east gate lie under the later stair (p. 3*); they are not drawn. Wall heights, the platform level and positions within the frame are illustrative.");
  } else if(plan.id==="gerizim-precinct"){
-  units="metres";note="Hellenistic precinct · selected architectural relationships";
-  const start=root.children.length;
-  court(0,0,136,212,3.2);court(0,-30,98,96,1.8);court(43,66,25,24,3.8,"citadel");
-  // The platform expresses the published stair's relative rise, not an independently surveyed terrain model.
-  court(-38,102,13,12,1.2,"west-entrance");
-  for(const z of [-75,66]){court(-40,z,22,16,2.2);court(-9,z,22,16,2.2);}
-  root.children.slice(start).forEach(m=>m.position.y+=15.5);
-  ground.pads.push({x:0,z:0,w:136,d:212,height:15.5,feather:12});marker("citadel",43,66,20);marker("west-entrance",-38,102,17);marker("persian-precinct",0,-30,18);
-  const mansionStart=root.children.length,cisternHole=circlePoints(-103,28,1.65);
-  court(-94,28,40,40,2.8,"mansion",[cisternHole]);court(-103,28,20,14,2.1,"mansion",[cisternHole]);
-  for(let i=0;i<3;i++)court(-83,16+i*12,10,9,2.2,"mansion");shaft(-103,28,1.6,2.6,"mansion");
-  root.children.slice(mansionStart).forEach(m=>m.position.y+=8);
-  ground.pads.push({x:-94,z:28,w:42,d:42,height:8,feather:10});marker("mansion",-94,28,11.6);
-  const stair=steps(84,-13,23,34,15.5,57,"east-stair");stair.rotation.y=Math.PI;
-  court(107,-13,9,13,2.8,"east-stair");marker("east-stair",84,-13,11);
+  units="metres";const persian=options.layer==="persian",G=GERIZIM;
+  note=persian?"Persian-period precinct · Magen, Misgav & Tsfania 2004 (reconstruction)":"Hellenistic precinct · Magen's plans registered to imagery";
+  // Positions are metres from the place anchor (x east, z south), read from Magen 2008's site plan (p. 1743)
+  // and precinct plan (p. 1746), each registered to satellite imagery (record:
+  // research/assets/plans/imagery-registration-2026-10-22/gerizim.json). The precinct core keeps the
+  // drawn outline of its walls; the other parts are the reported envelopes at their drawn places.
+  const start=root.children.length,[nw,ne,se,sw]=G.core;
+  // Each wall of the core, broken at its gates (3 m openings).
+  const runs=(gates:Point[]):Point[][]=>{const out:Point[][]=[];for(const [a,b] of [[nw,ne],[ne,se],[se,sw],[sw,nw]] as [Point,Point][]){
+   const len=Math.hypot(b[0]-a[0],b[1]-a[1]),ux=(b[0]-a[0])/len,uz=(b[1]-a[1])/len,at=(t:number):Point=>[a[0]+ux*t,a[1]+uz*t];
+   const cuts=gates.filter(g=>Math.abs((g[0]-a[0])*uz-(g[1]-a[1])*ux)<4).map(g=>(g[0]-a[0])*ux+(g[1]-a[1])*uz).filter(t=>t>0&&t<len).sort((x,y)=>x-y);
+   let from=0;for(const t of cuts){out.push([at(from),at(t-1.5)]);from=t+1.5;}out.push([at(from),at(len)]);}return out;};
+  if(persian){
+   // Magen et al. 2004 p. 3*: the Persian precinct measured 96 × 98 m including its gates; three gates,
+   // north (six-chambered, fully exposed), south and east; no west gate. The Hellenistic core kept its size
+   // (Magen 2008 p. 1746), so the core outline stands for it; the gates are set at the middles of the
+   // north and south walls and at the later east gate, over the Persian altar (precinct plan no. 23).
+   slab(G.core,.25,-.25,earth,"persian-precinct");
+   for(const run of runs([G.northGate,G.eastGate,G.southGate]))walls(run,3.2,1.3,0,"persian-precinct",false);
+   // North gate: three chambers each side of a central passage, along the north wall. The layout follows
+   // the type; its sizes are illustrative.
+   const gate=new T.Group();gate.position.set(G.northGate[0],0,G.northGate[1]);gate.rotation.y=-Math.atan2(ne[1]-nw[1],ne[0]-nw[0]);root.add(gate);
+   for(const side of [-1,1]){for(let k=0;k<4;k++)box(side*4.5,k*4,5,1,3.2,0,"persian-precinct",stone,gate);box(side*6.75,6,.5,13,3.2,0,"persian-precinct",stone,gate);}
+   // South and east gates: their Persian-period form is not described; the gatehouses are drawn only by this view.
+   for(const [x,z] of [G.southGate,G.eastGate]){const g=root.children.length;court(x,z,9,7,3.4,"persian-precinct");root.children.slice(g).forEach(m=>{if(m instanceof T.Mesh){(m.material as T.Material).dispose();m.material=cloneSiteMaterial(restored);}});}
+   root.children.slice(start).forEach(m=>m.position.y+=15.5);
+  }else{
+   // The summit platform stands for the reported 212 × 136 m enclosure (Magen 2008 p. 1746) round the core,
+   // the courtyards, the citadel and the fortified enclosure; its walls are not drawn.
+   const [px,pz]=G.platform;slab([[px-68,pz-106],[px+68,pz-106],[px+68,pz+106],[px-68,pz+106]],.25,-.25,earth);
+   for(const run of runs([G.northGate,G.eastGate]))walls(run,2.2,1.3,0,"persian-precinct",false);
+   walls([sw,G.fortified.sw],2.2,1.3,0,undefined,false);
+   court(G.citadel[0],G.citadel[1],25,24,3.8,"citadel");court(G.fortified.c[0],G.fortified.c[1],39,38,3);
+   court(G.westEntrance[0],G.westEntrance[1],13,12,1.2,"west-entrance");
+   root.children.slice(start).forEach(m=>m.position.y+=15.5);
+   const [mx,mz]=G.mansion,mansionStart=root.children.length,cisternHole=circlePoints(mx-9,mz,1.65);
+   court(mx,mz,40,40,2.8,"mansion",[cisternHole]);court(mx-9,mz,20,14,2.1,"mansion",[cisternHole]);
+   for(let i=0;i<3;i++)court(mx+11,mz-12+i*12,10,9,2.2,"mansion");shaft(mx-9,mz,1.6,2.6,"mansion");
+   root.children.slice(mansionStart).forEach(m=>m.position.y+=8);
+   ground.pads.push({x:mx,z:mz,w:42,d:42,height:8,feather:10});
+   const stair=steps(G.stair[0],G.stair[1],23,34,15.5,57,"east-stair");stair.rotation.y=Math.PI;
+   court(G.lowerGate[0],G.lowerGate[1],9,13,2.8,"east-stair");
+  }
+  ground.pads.push({x:G.platform[0],z:G.platform[1],w:136,d:212,height:15.5,feather:12});
+  for(const [id,[x,z],y] of [["persian-precinct",G.centre,18],["citadel",G.citadel,persian?17:20],["west-entrance",G.westEntrance,17],["mansion",G.mansion,persian?9:11.6],["east-stair",G.stair,11]] as [string,Point,number][])marker(id,x,z,y);
   plinth(255,290,7);
-  assumptions.push("Reported envelopes are used for the 212 × 136 m Hellenistic enclosure, 40 × 40 m mansion, 20 × 14 m building IV and 25 × 24 m citadel.","The eastern stair uses the reported maximum 23 m width, 34 m run, 15.5 m rise and approximately 57 steps. The western entrance is shown as a separate schematic landing; it is not equated with the southern seven-step flight or the 15-step flight at E1.","Most wall heights, room divisions, the mansion’s 8 m display level and the cistern’s display location/depth are illustrative. The precinct platform expresses the east stair’s relative rise; its block shape is not surveyed terrain. Relative building placement is simplified; no temple superstructure, P5178 coordinate or contemporary use horizon is asserted.");
+  assumptions.push("Positions come from Magen 2008's site plan (p. 1743, 0–50 m bar) and plan of the sacred precinct (p. 1746, 0–25 m bar). Each plan was registered to Vantor WorldView-2 imagery of 21 October 2023 (Esri World Imagery, 0.5 m pixels, stated accuracy 5 m) by matching its walls to the imagery: the site plan is turned 4.35° and the precinct plan 92.85° from their drawn north arrows, at their bar scales within 1.5 %. The two plans then agree within 1–2 m. Record: research/assets/plans/imagery-registration-2026-10-22/gerizim.json.");
+  if(persian)assumptions.push("Persian view: the precinct is the drawn outline of the core walls (west wall 83 m on the plan; Magen 2008 p. 1746: 84 m), which kept the Persian compound's size (96 × 98 m including the gates, Magen et al. 2004 p. 3*; about 200 × 200 cubits). Gates stand on the north, south and east and none on the west. The north gate is drawn as a six-chambered gate (fully exposed, p. 3*); its pier and chamber sizes are illustrative. The pale south and east gatehouses are drawn only by this view: their Persian-period form and size are not described in the pages read.","The Hellenistic enclosure, citadel, western entrance, Area P mansion and eastern stair are not drawn; their markers stay for comparison with the Hellenistic view. Remains of a Persian stair to the east gate lie under the later stair (p. 3*); they are not drawn. Wall heights and the platform level are illustrative.");
+  else assumptions.push("The core walls follow the precinct plan's outline, with the north and east gates as openings; their 2.2 m height follows the west wall's preserved 2 m (Magen 2008 p. 1746). The outer west wall runs on to the fortified enclosure. Reported envelopes are drawn at their places on the plans: the 212 × 136 m enclosure (as the summit platform, without walls), the 39 × 38 m fortified enclosure, the 40 × 40 m mansion with its 20 × 14 m building IV, and the 25 × 24 m citadel.","The eastern stair uses the reported maximum 23 m width, 34 m run, 15.5 m rise and approximately 57 steps, centred where both plans draw it. The western entrance is shown as a separate schematic landing; it is not equated with the southern seven-step flight or the 15-step flight at E1.","Most wall heights, room divisions, the mansion’s 8 m display level and the cistern’s display location/depth are illustrative. The precinct platform expresses the east stair’s relative rise; its block shape is not surveyed terrain. No temple superstructure, P5178 coordinate or contemporary use horizon is asserted.");
  } else if(plan.id==="doq-waterworks"){
   note="Aqueduct, cisterns and ridge · source-relative model";
   const conv=([x,z]:Point):Point=>[(x-270)*.09,(z-300)*.09];
@@ -531,6 +590,9 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   // A traced plan may name a focus; the extent is then widened so that the focus is its centre.
   if(source.focus){const xs=all.map(p=>p[0]),zs=all.map(p=>p[1]),[fx,fz]=source.focus;all.push([2*fx-Math.min(...xs),2*fz-Math.min(...zs)],[2*fx-Math.max(...xs),2*fz-Math.max(...zs)]);}
   const minX=Math.min(...all.map(p=>p[0])),maxX=Math.max(...all.map(p=>p[0])),minZ=Math.min(...all.map(p=>p[1])),maxZ=Math.max(...all.map(p=>p[1])),cx=(minX+maxX)/2,cz=(minZ+maxZ)/2;
+  // The traced frame's origin in model coordinates: a placement ties this point, not the view's centre,
+  // so every view of the plan lands in the same place.
+  tracedOrigin=[-cx,-cz];
   const c=([x,z]:Point):Point=>[x-cx,z-cz],level=(v:number|null|undefined,fallback=0)=>v==null?fallback:v-datum;
   // In a reconstruction view, parts drawn only by the reconstruction use the pale restored surface.
   const rebuiltPart=(e:TracedElement)=>rebuilt&&e.status!=='observed',pick=(e:TracedElement,base:T.MeshStandardMaterial)=>rebuiltPart(e)?restored:base;
@@ -579,7 +641,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   for(const f of plan.features){const e=source.elements.find(e=>e.id===f.id),at=source.features?.find(x=>x.id===f.id)?.at,[x,z]=e?centroid(elementPoints(e).map(c)):at?c(at):[0,0];marker(f.id,x,z,1.2);}
   plinth(maxX-minX+24,maxZ-minZ+24,2,holes);
   tracedStart=source.walkStart?{position:c(source.walkStart.at),bearing:source.walkStart.bearing,pitch:84}:{position:[0,(maxZ-minZ)/2+4],bearing:0,pitch:84};
-  assumptions.push(`Traced from ${source.sources.map(s=>s.citation).join('; ')} at each figure's own scale bar; north from ${source.frame.north}. The frame is not registered to geographic coordinates: the model sits at the site anchor. Record: research/models/traced_plans/${source.id}.md.`);
+  assumptions.push(`Traced from ${source.sources.map(s=>s.citation).join('; ')} at each figure's own scale bar; north from ${source.frame.north}. ${(siteContext(plan.id)?.registration as {placement?:string}|undefined)?.placement==='imagery'?'The frame is registered to satellite imagery, as the placement note states.':'The frame is not registered to geographic coordinates: the model sits at the site anchor.'} Record: research/models/traced_plans/${source.id}.md.`);
   assumptions.push(rebuilt?`${view.label} is a published reconstruction. Pale parts with a dashed grid are drawn only by that reconstruction; parts also recorded as found keep their normal surfaces. The plans give no heights: walls (${TRACED_HEIGHTS.wall} m) and columns (${TRACED_HEIGHTS.column} m) are illustrative.`:`Only elements recorded as found are shown. Walls are drawn ${TRACED_HEIGHTS.ruin} m high: preserved heights are not traced.`);
   if(inPool.length)assumptions.push(`${inPool.join(', ')}: drawn on the pool floor, ${TRACED_HEIGHTS.podium} m high (illustrative); no level is published.`);
   if(shown.some(e=>e.kind==='wall'&&e.lineStyle==='dashed'))assumptions.push(`Lines that the figure draws dashed, without a stated meaning, are low strips (${TRACED_HEIGHTS.dashed} m), not walls.`);
@@ -611,10 +673,10 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
  // A plan placed in its mapped setting by the OpenStreetMap tool (tools/build_osm_context.py) moves from its
  // own frame into the place frame: the chosen model point onto the mapped target (the place anchor when the
  // plan is not registered), turned as registered, with model height datumY on the modern terrain.
- const setting=placeFrame?undefined:siteContext(plan.id),fit=SETTINGS[plan.id];let anchored=false;
+ const setting=placeFrame?undefined:siteContext(plan.id),fit=SETTINGS[plan.id];let anchored=false,byImagery=false;
  if(setting&&fit){
-  const reg=(setting.registration??{}) as {target?:Point;rotationDeg?:number;placement?:string};anchored=reg.placement==='anchor';
-  const pick=(p:Point|string|undefined,fallback:Point):Point=>{if(typeof p!=='string')return p??fallback;const m=markers.get(p);return m?[m.x,m.z]:fallback;};
+  const reg=(setting.registration??{}) as {target?:Point;rotationDeg?:number;placement?:string};anchored=reg.placement==='anchor';byImagery=reg.placement==='imagery';
+  const pick=(p:Point|string|undefined,fallback:Point):Point=>{if(typeof p!=='string')return p??fallback;if(p==='traced-origin')return tracedOrigin??fallback;const m=markers.get(p);return m?[m.x,m.z]:fallback;};
   const from=pick(fit.point,[0,0]),datum=pick(fit.datum,from),to=reg.target??[0,0],turn=T.MathUtils.degToRad(reg.rotationDeg??0);
   const frame=new T.Group(),f=new T.Vector3(from[0],0,from[1]).applyAxisAngle(new T.Vector3(0,1,0),turn);frame.rotation.y=turn;frame.position.set(to[0]-f.x,0,to[1]-f.z);frame.updateMatrix();
   const move=(p:Point):Point=>{const v=new T.Vector3(p[0],0,p[1]).applyMatrix4(frame.matrix);return [v.x,v.z];};
@@ -622,17 +684,18 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   frame.position.y=base;frame.updateMatrix();
   for(const child of [...root.children])frame.add(child);root.add(frame);
   markers.forEach(v=>v.applyMatrix4(frame.matrix));
-  const centre=move([0,0]);
+  const centre=move(fit.centre??[0,0]);
   ground.holes=ground.holes.map(h=>h.map(move));
   ground.pads=ground.pads.map(p=>{const [x,z]=move([p.x,p.z]);return {...p,x,z,height:p.height+base,angle:(p.angle??0)+turn};});
   // The display bench becomes a pad around the model, at its own ground.
   if(fit.bench!==false&&ground.bench!==false)ground.pads.unshift({x:centre[0],z:centre[1],w:ground.w,d:ground.d,height:base-.28,feather:Math.max(ground.w,ground.d)*.3,angle:turn});
-  ground.bench=false;placeFrame=centre;ground.focus=centre;
+  ground.bench=false;placeFrame=centre;ground.focus=ground.focus?move(ground.focus):centre;
   if(tracedStart)tracedStart={...tracedStart,position:move(tracedStart.position)};
  }
  roof.visible=false;
  const [gx,gz]=placeFrame??[0,0],bounds=new T.Box3().setFromObject(root);bounds.expandByPoint(new T.Vector3(gx-ground.w/2,-1,gz-ground.d/2));bounds.expandByPoint(new T.Vector3(gx+ground.w/2,1,gz+ground.d/2));const center=placeFrame?new T.Vector3():bounds.getCenter(new T.Vector3());
  root.position.set(-center.x,0,-center.z);markers.forEach(p=>{p.x-=center.x;p.z-=center.z});
+ if(options.pads)ground.pads.push(...options.pads);
  const osm=placeFrame?siteContext(plan.id):undefined,features=osm?options.context:undefined;if(features){ground.paved=pavedIndex(features);ground.green=greenIndex(features);}
  const context=landscapeGround(ground,plan.placeIds[0],[center.x,center.z],earth,surfaces.block,options.terrain);context.mesh.position.set(center.x,0,center.z);context.mesh.userData.walkSurface=true;context.mesh.userData.siteContext='ground';root.add(context.mesh);context.details.position.set(center.x,0,center.z);context.details.userData.siteContext='details';root.add(context.details);
  if(osm&&features){
@@ -649,9 +712,9 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   assumptions.push(`Surroundings are today's, from OpenStreetMap (${CONTEXT_LICENCE}; retrieved ${osm.retrieved}; record ${osm.record}): ${group.userData.counts.graves.toLocaleString('en')} graves set in rows inside the mapped cemetery areas (about 1 × 2 m, 1.45 m apart; long axes east–west, or across the qibla in the Muslim cemetery; illustrative, not mapped graves), mapped footpaths (2.4 m where no width is mapped), roads (3.5–8 m by class) and stairs (0.4 m treads on the terrain), ${group.userData.counts.trees.toLocaleString('en')} trees (mapped single trees, and trees about 7 m apart in mapped woods and orchards; sizes illustrative), green ground in mapped woods, orchards and grass, city walls (2.6 m thick, 12 m above the lower ground where no height is mapped), retaining walls, gate buildings (9 m above the ground where no height is mapped) and ${group.userData.counts.buildings} buildings (mapped heights, else 6.5 m; flat roofs, with domes and pyramids where mapped). They show the modern setting and are not evidence for the ancient one.`);
  }
  assumptions.push(surfaces.style.photos.length?`Base colours and the ${surfaces.style.masonry} masonry pattern are taken from reference photographs (${surfaces.style.photos.join(', ')}): sunlit-face medians of sample boxes, recorded in research/assets/plans/atlas-explorer/surface-samples-2026-10-17. ${surfaces.style.masonryNote??''} Individual stones, joints, chipped edges, plaster wear and soil relief remain illustrative, not recorded stones or weathering; photographs vary in exposure and white balance.`:`Surface art uses a ${surfaces.style.id} material palette, metre-scaled stone joints, chipped edges, plaster wear and soil relief. These are illustrative visual treatments, not recorded individual stones or weathering.`);
- assumptions.push(context.patch&&osm&&!anchored?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles in the place’s own frame; the model is placed and turned by mapped outlines, as stated above. The terrain is not ancient ground level.":context.patch&&osm?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles in the place’s own frame, with the model’s ground levelled into it at the site anchor. Its position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");
+ assumptions.push(context.patch&&osm&&!anchored?`Surrounding relief is sampled from Mapterhorn’s modern elevation tiles in the place’s own frame; the model is placed and turned by ${byImagery?'satellite imagery':'mapped outlines'}, as stated above. The terrain is not ancient ground level.`:context.patch&&osm?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles in the place’s own frame, with the model’s ground levelled into it at the site anchor. Its position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":context.patch?"Surrounding relief is sampled from Mapterhorn’s modern elevation tiles around the existing site anchor. The local bench is feathered to expose the model. Architectural position and bearing are schematic, not surveyed or registered; the terrain is not ancient ground level.":"The rock setting is illustrative because this cave has no established geographic coordinates.");
  const starts:Record<string,[string,number,number,number,number]>={'temple-great-sea':['great-sea',0,-34,180,84],'gerizim-precinct':['east-stair',28,22,308,100],'hyrcania-waterworks':['north-pool',0,-12,180,76],'jericho-early':['complex',-14.5,0,90,80],'jericho-late':['complex',-14.5,0,90,80],'siloam-receiver':['L103',0,6,0,80],'doq-waterworks':['intake',4,5,-35,83],'jericho-ac':['AC94',0,7,0,80],'bethesda-pools':['dam',-12,0,160,84],'east-gate-warren':['massive-wall',8,-12,270,90]};
  const start=starts[plan.id],point=start?markers.get(start[0]):undefined;
  const walkStart=point&&start?{position:[point.x+start[1],point.z+start[2]] as Point,bearing:start[3],pitch:start[4]}:tracedStart&&{...tracedStart,position:[tracedStart.position[0]-center.x,tracedStart.position[1]-center.z] as Point};
- return {root,roof,markers,selectable,note,assumptions,units,walkStart,framing:bounds.translate(new T.Vector3(-center.x,0,-center.z)),landscape:{context:osm?(anchored?'Terrain and mapped surroundings · model at the site anchor, not registered':'Terrain and mapped surroundings · model registered to OpenStreetMap outlines'):context.context,credit:osm?`${context.credit} · surroundings © OpenStreetMap contributors (ODbL)`:context.credit,mapped:!!context.patch,registered:!!osm&&!anchored}};
+ return {root,roof,markers,selectable,note,assumptions,units,walkStart,framing:bounds.translate(new T.Vector3(-center.x,0,-center.z)),landscape:{context:osm?(anchored?'Terrain and mapped surroundings · model at the site anchor, not registered':(byImagery?'Terrain and mapped surroundings · model registered to satellite imagery':'Terrain and mapped surroundings · model registered to OpenStreetMap outlines')):context.context,credit:osm?`${context.credit} · surroundings © OpenStreetMap contributors (ODbL)`:context.credit,mapped:!!context.patch,registered:!!osm&&!anchored,registeredBy:osm&&!anchored?(byImagery?'imagery':'outlines'):undefined}};
 }
