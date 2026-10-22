@@ -35,6 +35,8 @@ export const SITES=[
  {id:'abu-saraj-iv17',size:.25,roof:true,mapped:false},
  {id:'bethesda-pools',size:.5},
  {id:'east-gate-warren',size:.5},
+ {id:'kidron-bene-hezir',size:.25},
+ {id:'temple-great-sea',size:.5},
 ];
 const PILOT_GROUND=new Set(['qumran-ground','qumran-ridge-back','connected-limestone-bed']);
 // Plans with the wide terrain patch get coarser block rings around them, each with a
@@ -42,10 +44,11 @@ const PILOT_GROUND=new Set(['qumran-ground','qumran-ridge-back','connected-limes
 export const RINGS=[{size:2,half:400},{size:8,half:1152}];
 export const buildKey=(planId,layer)=>layer&&layer!=='remains'?`${planId}@${layer}`:planId;
 
-// One build per site; traced plans give one per layer (remains, each published phase).
+// One build per site; a traced plan, or a hand-built plan with views, gives one per layer
+// (remains, each published phase).
 export function buildSpecs(models){
  const specs=[],traced=plan=>plan?.traced&&models.tracedPlans[plan.traced];
- const planSpecs=(plan,base)=>traced(plan)?(plan.layers??[{id:'remains'}]).map(l=>({...base,id:buildKey(plan.id,l.id),plan:plan.id,layer:l.id})):[{...base,plan:plan.id}];
+ const planSpecs=(plan,base)=>traced(plan)||plan?.layers?.length?(plan.layers??[{id:'remains'}]).map(l=>({...base,id:buildKey(plan.id,l.id),plan:plan.id,layer:l.id})):[{...base,plan:plan.id}];
  for(const spec of SITES)specs.push(...planSpecs(models.plans.find(p=>p.id===spec.id),spec));
  for(const plan of models.plans)if(traced(plan)&&!SITES.some(s=>s.id===plan.id))specs.push(...planSpecs(plan,{id:plan.id,size:plan.blockSize??.5}));
  for(const plan of models.plans)if(plan.terrain==='wide'&&specs.some(s=>s.plan===plan.id))RINGS.forEach((r,i)=>specs.push({id:`${plan.id}~ring${i+1}`,plan:plan.id,ring:i,size:r.size,half:r.half}));
@@ -149,6 +152,8 @@ async function runServer({jar,java,work,builds,log}){
   if(pending.length)throw Error(`${build.spec.id}: ${pending.length} fills never found loaded chunks`);
   report[build.spec.id]={commands:commands.length,filled};log(`${build.spec.id}: ${commands.length} fill commands, ${filled} blocks`);
  }
+ // The saved world opens in creative mode in front of the Qumran tunnel mouth.
+ await run('defaultgamemode creative');await run('setworldspawn 188 -23 163');
  // Let the light engine settle before saving.
  await sleep(8000);
  log(await run('save-all flush'));await sleep(3000);

@@ -5,6 +5,7 @@ Source figures, project reconstructions and diagnostics retain separate labels. 
 ## Archived sets
 
 - [Warren 1884 Plate VI, Golden Gate area](warren1884-plate-vi/README.md): 1-bit crops of the public-domain plate (Golden Gate outline, cistern XV, massive wall, level 2308), its scale bar and north arrow, with pixel measurements and derived levels for the atlas model `east-gate-warren` (17 October 2026).
+- [Warren 1884 Plate VII, Great Sea area](warren1884-plate-vii/README.md): 1-bit crop of the public-domain southern sheet (cisterns VI–XI, XXXIII and VIII "The Great Sea"), its scale bar and north arrow, and a project tracing of VIII's hatched outline (37.7 × 48.4 m) for the atlas model `temple-great-sea` (22 October 2026).
 - [Site photographs, 17 October 2026](site-photos-2026-10-17/README.md): 160 photographs of 31 atlas places for the atlas gallery, 113 from Wikimedia Commons (PD, CC0, CC BY, CC BY-SA) and 47 from the Library of Congress Matson collection (no known restrictions; 13 air views of 1931/1937). Captions written after viewing; manifest with licences, hashes and transformations.
 
 - [Full-resolution South](tir-michigan/south/README.md) and [Eretz Israel/Sinai](tir-michigan/eretz-sinai/README.md): complete-sheet views, reconstructable native-resolution JPEGs, regional crops and lossless legends; recovered copies match the earlier source hashes.

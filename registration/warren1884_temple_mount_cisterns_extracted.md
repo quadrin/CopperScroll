@@ -46,6 +46,7 @@
 
 ### W8: the Great Sea
 
+- **Evidence (Warren 1884 Pl. VII, read 22 Oct 2026):** the southern sheet of "Rock contours of the Noble Sanctuary" labels the cistern "VIII / Cistern / The Great Sea" and draws it as rock hatching, with one small circle beside a second label "Cistern" and no piers or stair. **Inference:** at the plate's own scale (2.345 px per ft) the hatched outline is 37.7 × 48.4 m and about 1,360 m², ±2 m at the edge; the circle is read as a mouth. Crop, tracing and measurements: [warren1884-plate-vii](../research/assets/plans/warren1884-plate-vii/README.md). The plate gives no date. For Pl. VII only, this replaces the statement under "Sources and method" that the plates were not available.
 - **Evidence (W&C p. 219–220):** W8 is "Usually known as the 'Great Sea,' is called by the natives Bir el Aswad, or 'The Black Well.'" It is "a fine cavern with rocky piers, reached from the south by a narrow staircase". Depth 43 ft, "partly roofed in rock and partly with flat stones".
 - **Evidence (W&C p. 220):** It is "the largest of all the Sanctuary tanks, and has numerous manholes from the surface, three of which are in use". The rock surface is at 2,411, 5 ft below the surface. "A conduit enters this tank from the east. On the north-east there is a small circular chamber." Capacity is "at least two million gallons".
 - **Evidence (W&C p. 225):** W32 is "A small tank in the Aksa Mosque, apparently connected with No. 8."

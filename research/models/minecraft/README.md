@@ -33,14 +33,20 @@ Rounding to the block size can move an edge or a height by up to half a block. T
 | jericho-late | 0.25 m | 388 × 29 × 270 | 7168, -60, 0 | 746 | 2,178,413 | 0 | 1,438 | jericho-late.bin.gz (8 KB) |
 | siloam-receiver | 0.25 units | 188 × 19 × 112 | 8192, -60, 0 | 662 | 168,774 | 0 | 1,546 | siloam-receiver.bin.gz (8 KB) |
 | gerizim-precinct | 0.5 m | 510 × 43 × 580 | 9216, -60, 0 | 1,882 | 5,369,218 | 0 | 3,028 | gerizim-precinct.bin.gz (17 KB) |
-| doq-waterworks | 0.25 units | 156 × 24 × 152 | 10240, -60, 0 | 1,931 | 380,264 | 0 | 4,633 | doq-waterworks.bin.gz (23 KB) |
-| hyrcania-waterworks | 0.25 m | 354 × 43 × 344 | 11264, -60, 0 | 4,283 | 3,196,563 | 0 | 11,415 | hyrcania-waterworks.bin.gz (57 KB) |
-| abu-saraj-iv17 | 0.25 m | 48 × 16 × 36 | 12288, -60, 0 | 401 | 11,687 | 0 | 1,379 | none: no map location; built with its roof |
-| bethesda-pools | 0.5 m | 256 × 36 × 216 | 13312, -60, 0 | 858 | 1,348,927 | 0 | 1,099 | bethesda-pools.bin.gz (6 KB) |
-| east-gate-warren | 0.5 m | 260 × 85 × 200 | 14336, -60, 0 | 1,216 | 2,759,472 | 0 | 2,042 | east-gate-warren.bin.gz (11 KB) |
-| qumran-settlement | 0.5 m | 248 × 17 × 408 | 15360, -60, 0 | 3,174 | 1,422,484 | 0 | 11,222 | qumran-settlement.bin.gz (56 KB) |
-| qumran-settlement~ring1 | 2 m | 400 × 58 × 400 | 16384, -60, 0 | 25,754 | 3,546,029 | 0 | 37,949 | qumran-settlement~ring1.bin.gz (228 KB) |
-| qumran-settlement~ring2 | 8 m | 288 × 42 × 288 | 17408, -60, 0 | 11,110 | 754,106 | 0 | 32,757 | qumran-settlement~ring2.bin.gz (189 KB) |
+| gerizim-precinct@persian | 0.5 m | 510 × 42 × 580 | 10240, -60, 0 | 524 | 5,033,957 | 0 | 750 | gerizim-precinct@persian.bin.gz (5 KB) |
+| doq-waterworks | 0.25 units | 156 × 24 × 152 | 11264, -60, 0 | 1,931 | 380,264 | 0 | 4,633 | doq-waterworks.bin.gz (23 KB) |
+| hyrcania-waterworks | 0.25 m | 724 × 101 × 368 | 12288, -60, 0 | 7,375 | 19,237,413 | 0 | 13,662 | hyrcania-waterworks.bin.gz (73 KB) |
+| hyrcania-waterworks@herodian | 0.25 m | 726 × 129 × 368 | 13312, -60, 0 | 7,441 | 19,341,407 | 0 | 13,684 | hyrcania-waterworks@herodian.bin.gz (73 KB) |
+| abu-saraj-iv17 | 0.25 m | 48 × 16 × 36 | 14336, -60, 0 | 401 | 11,687 | 0 | 1,379 | none: no map location; built with its roof |
+| bethesda-pools | 0.5 m | 256 × 37 × 256 | 15360, -60, 0 | 884 | 1,742,009 | 0 | 1,102 | bethesda-pools.bin.gz (6 KB) |
+| bethesda-pools@royal | 0.5 m | 256 × 31 × 256 | 16384, -60, 0 | 325 | 1,490,278 | 0 | 427 | bethesda-pools@royal.bin.gz (3 KB) |
+| east-gate-warren | 0.5 m | 260 × 85 × 200 | 17408, -60, 0 | 1,216 | 2,759,472 | 0 | 2,042 | east-gate-warren.bin.gz (11 KB) |
+| kidron-bene-hezir | 0.25 m | 384 × 92 × 480 | 18432, -60, 0 | 4,387 | 2,262,611 | 0 | 12,807 | kidron-bene-hezir.bin.gz (68 KB) |
+| kidron-bene-hezir@avigad | 0.25 m | 384 × 92 × 480 | 19456, -60, 0 | 5,000 | 2,262,641 | 0 | 14,294 | kidron-bene-hezir@avigad.bin.gz (75 KB) |
+| temple-great-sea | 0.5 m | 140 × 32 × 168 | 20480, -60, 0 | 920 | 609,147 | 0 | 3,645 | temple-great-sea.bin.gz (18 KB) |
+| qumran-settlement | 0.5 m | 248 × 17 × 408 | 21504, -60, 0 | 3,174 | 1,422,484 | 0 | 11,222 | qumran-settlement.bin.gz (56 KB) |
+| qumran-settlement~ring1 | 2 m | 400 × 58 × 400 | 22528, -60, 0 | 25,754 | 3,546,029 | 0 | 37,949 | qumran-settlement~ring1.bin.gz (228 KB) |
+| qumran-settlement~ring2 | 8 m | 288 × 42 × 288 | 23552, -60, 0 | 11,110 | 754,106 | 0 | 32,757 | qumran-settlement~ring2.bin.gz (189 KB) |
 
 A name with `@` is a reconstruction view of that plan (the plain name is its **Remains** view); `~ring1` and `~ring2` are the terrain rings. "Units" are the source-relative units of those scenes. Every air block next to a drawn face has saved sky light; sections without saved light are open sky or solid rock. The Qumran build is fitted to the Kh. Qumran terrain patch; at Wadi Qumran the atlas keeps the smooth model.
 
@@ -54,9 +60,19 @@ Qumran (qumran-ilan): basin 2 and the dam proposed at point 4 are now drawn, in 
 - Kh. Qumran settlement ([tracing](../traced_plans/qumran-settlement.md), Magen & Peleg 2018 Fig. 9): 0.5 m blocks over the traced plan and a level display bench. Lines that the figure draws dashed, without a stated meaning, are one-slab strips.
 - Surroundings: a plan with wide terrain gets two more builds, each a square ring with a hole exactly the size of the build inside it: 2 m blocks to 400 m from the centre and 8 m blocks to 1,152 m. Their ground is the wider Kh. Qumran terrain patch (Mapterhorn z13, about 8 m per pixel; [manifest](../../assets/plans/atlas-explorer/terrain-wide/manifest.json)), so the cliffs, the marl terrace and the slope to the Dead Sea are blocks too. A block in a ring is one terrain sample; the rings add no survey detail.
 
+## Round of 22 October 2026
+
+Two new site models and four new views of existing models, built the same way, with the same server (26.3, jar SHA-1 `33680f5f…`, run on Temurin 25.0.5). Sources and what is evidence or illustrative: [site models record](../site_models_2026-10-22.md).
+
+- New: `kidron-bene-hezir` (Bene Ḥezir, Zechariah and Absalom after Avigad 1954; 0.25 m blocks) with the view `@avigad` (original state and Avigad's nefesh pyramid), and `temple-great-sea` (cistern VIII after Warren Pl. VII and Gibson & Jacobson 1996; 0.5 m blocks).
+- New views: `hyrcania-waterworks@herodian`, `bethesda-pools@royal`, `gerizim-precinct@persian`. Hand-built models can now have views like the traced plans: `buildSpecs` gives one build per entry in a plan's `layers`, whether or not the plan is traced.
+- Changed remains builds: Hyrcania (the 112 m east bridge, the round pit and the point 49 tunnel, after Patrich 2002) and Bethesda (the 40 m dam, the north pool turned to 40 × 53 m, the square shaft, after Pierre & Rousée 1981). All other builds read back with the same fill counts and blocks as on 20 October.
+- Rock-cut spaces (the tomb chambers, kokhim, stair and corridor at Bene Ḥezir, the stair into the Great Sea, the dam's shaft and corridor at Bethesda) are drawn as rock boxes band by band between floor and ceiling levels, so they stay open in the blocks and can be walked.
+- The build script now sets the saved world's default game mode (creative) and spawn (188, −23, 163) itself, as the world save below describes.
+
 ## The world save
 
-[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (12.6 MB) is the saved world, SHA-256 `adf15d085c95c8a3943f4dcf9f3ce973e00d8e313096a2a1efb7a91744cd03e9`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
+[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (18.3 MB, rebuilt 22 October 2026 with all 24 builds) is the saved world, SHA-256 `0fe50dd51596e43f09d2f904cfc68f6986c891a6ad2a75a4bb1df0637fa3368a`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
 
 ## Rebuild
 

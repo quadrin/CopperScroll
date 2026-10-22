@@ -14,7 +14,7 @@ const exports=module('../app/atlas-model-geometry.ts',{'three':Three,'three/addo
 for(const patch of Object.values(terrain)){assert.equal(patch.elevations.length,patch.size**2);assert.ok(patch.elevations.every(Number.isFinite));assert.ok(Math.abs(landscape.elevationAt(patch,0,0))<.02);}
 const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
 const models=new Map();
-for(const id of ['abu-saraj-iv17','hyrcania-waterworks','gerizim-precinct','doq-waterworks','jericho-early','jericho-late','bethesda-pools','east-gate-warren']){
+for(const id of ['abu-saraj-iv17','hyrcania-waterworks','gerizim-precinct','doq-waterworks','jericho-early','jericho-late','bethesda-pools','east-gate-warren','kidron-bene-hezir','temple-great-sea']){
  const plan=plans.find(p=>p.id===id),model=exports.buildModel(plan);
  assert.deepEqual([...model.markers.keys()].sort(),plan.features.map(f=>f.id).sort(),`${id}: all source features must remain selectable`);
  for(const marker of model.markers.values())assert.ok(marker.toArray().every(Number.isFinite));
@@ -62,4 +62,21 @@ for(const plan of plans.filter(p=>p.traced)){
   tracedViews++;
  }
 }
-console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction and ${tracedViews} traced-plan views.`);
+// Hand-built plans with views: the remains view uses no restored surface; each reconstruction
+// view draws its reconstruction-only parts in the restored surface and says so.
+let builtViews=0;
+for(const plan of plans.filter(p=>!p.traced&&p.layers?.length)){
+ for(const layer of plan.layers){
+  const model=exports.buildModel(plan,{layer:layer.id}),pale=[];model.root.traverse(o=>{if(o.isMesh)pale.push(...surfaceOf(o).map(s=>s==='restored'));});
+  assert.deepEqual([...model.markers.keys()].sort(),plan.features.map(f=>f.id).sort(),`${plan.id}@${layer.id}: all source features must remain selectable`);
+  assert.ok(new Three.Box3().setFromObject(model.root).min.toArray().every(Number.isFinite),`${plan.id}@${layer.id}: finite geometry`);
+  if(layer.kind==='observed')assert.ok(!pale.some(Boolean),`${plan.id}: the remains view uses no restored surface`);
+  else{assert.ok(pale.some(Boolean),`${plan.id}@${layer.id}: reconstruction-only parts use the restored surface`);assert.ok(model.assumptions.some(t=>/drawn only by/.test(t)),`${plan.id}@${layer.id}: the reconstruction is disclosed`);}
+  builtViews++;
+ }
+}
+const kidron=models.get('kidron-bene-hezir');
+assert.ok(kidron.assumptions.some(t=>t.includes('south-west')),'Bene Ḥezir: the façade faces south-west (Avigad p. 37)');
+const sea=models.get('temple-great-sea');
+assert.ok(sea.assumptions.some(t=>t.includes('Pl. VII'))&&sea.assumptions.some(t=>t.includes('not its true position')),'Great Sea: the plate outline and the anchor offset are disclosed');
+console.log(`3D model checks passed: complete feature coverage, finite geometry, disclosed assumptions, separate published pool depths, bounded cave height, Gerizim stair distinction, ${tracedViews} traced-plan views and ${builtViews} views of hand-built plans.`);
