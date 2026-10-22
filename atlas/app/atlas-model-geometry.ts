@@ -318,7 +318,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   const patch=placeTerrain(plan.placeIds[0],options.terrain),base=patch?elevationAt(patch,...reg.absalomCentre):0,turn=T.MathUtils.degToRad(reg.frameRotationDeg);
   const porchOffset=new T.Vector3(2.1,0,0).applyAxisAngle(new T.Vector3(0,1,0),turn);
   const tomb=new T.Group();tomb.rotation.y=turn;tomb.position.set(reg.porchCentre[0]-porchOffset.x,base,reg.porchCentre[1]-porchOffset.z);root.add(tomb);tomb.updateMatrix();
-  const F=8.5,TOP=F+7,at=(x:number,y:number,z:number)=>new T.Vector3(x,y,z).applyMatrix4(tomb.matrix);
+  const F=8.5,TOP=F+7,CW=F+8.4,at=(x:number,y:number,z:number)=>new T.Vector3(x,y,z).applyMatrix4(tomb.matrix);
   const S=(x0:number,x1:number,z0:number,z1:number,y0:number,y1:number):Space=>[x0,x1,z0,z1,y0,y1];
   // A rock-cut cube of side `side` from y0, `h` high, with corner pilasters and `n` engaged Ionic columns
   // (base, shaft and a cushion capital) on each face.
@@ -343,6 +343,7 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   };
   const spaces:Space[]=[
    S(-1.6,0,-7.005,2.875,F,TOP+1),                  // platform in front of both façades (0.90–2.09 m deep)
+   S(-1.5,-.7,-5.6,-4.8,F-3.6,F-2.4),S(-1.5,-.7,1.2,2,F-3.6,F-2.4),  // two openings in the scarp below the façade (Fig. 25)
    S(0,.55,-2.575,2.575,F,F+3),                     // between the antae, under the architrave
    S(.55,3.7,-2.85,2.85,F,F+3.35),                  // porch, 5.55–5.83 × 3.04–3.23 m, 3.20–3.50 m high
    S(3.7,4.5,-1.2,1.2,F,F+2.2),                     // the present wide opening into A (not original)
@@ -368,11 +369,14 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
    S(1.545,2.705,2.85,3.35,F,F+3),                  // south corridor: jamb opening 1.16 m
    ...([[3.35,4.85,.21],[4.85,5.15,.42],[5.15,9.85,.63],[9.85,10.15,.84],[10.15,10.45,1.05],[10.45,10.75,1.26],[10.75,11.05,1.51],[11.05,11.15,1.75]] as [number,number,number][]).map(([z0,z1,d])=>S(.975,3.275,z0,z1,F-d,F-d+3.5)),
    S(1.45,2.8,11.15,11.48,F-2,F+.5),                // opening into the Zechariah court, 1.35 m wide
-   S(-1.6,10.625,11.48,22.46,F-2.25,TOP+1),         // Zechariah court, open to the west
+   S(-1.6,10.625,11.48,22.46,F-2.6,TOP+1),          // Zechariah court, open to the west
   ];
   if(original)spaces.push(S(0,4.13,-7.005,-2.875,F+4,TOP+1));  // rock cleared above the nefesh façade for the pyramid
   rockMass(S(-1.5,20,-13,26,-1,TOP),spaces,tomb);
-  box(-3.09,10.98,3.17,1,TOP+1,-1,"zechariah",rock,tomb);  // the court's north rock wall runs on to 15.30 m
+  // The court walls are "as high as the monument" (p. 79): on Fig. 25 they rise to about 16–17.5 m above
+  // the path, so the rock round the court is carried up to CW.
+  rockMass(S(-1.5,20,9.5,26,TOP,CW),[S(-1.6,10.625,11.48,22.46,TOP-1,CW+1)],tomb);
+  box(-3.09,10.98,3.17,1,CW+1,-1,"zechariah",rock,tomb);  // the court's north rock wall runs on to 15.30 m
   // Doric columns in antis: lower diameter 0.53–0.55 m, upper 0.48 m, shaft 2.82 m, capital 0.18 m, abacus about 0.90 m.
   for(const z of [1.03,-.86]){const c=mesh(new T.CylinderGeometry(.24,.27,2.82,20),rock,"porch",tomb);c.position.set(.275,F+1.41,z);box(.275,z,.9,.9,.18,F+2.82,"porch",rock,tomb);}
   // Doric entablature over the columns (p. 44): architrave 0.39 m, frieze 0.23 m with triglyphs, cornice
@@ -380,15 +384,19 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   box(-.04,0,.08,5.75,.39,F+3,"bene-hezir-facade",rock,tomb);box(-.02,0,.04,5.75,.23,F+3.39,"bene-hezir-facade",rock,tomb);
   for(let k=0;k<7;k++)box(-.06,-2.55+k*.85,.12,.3,.23,F+3.39,"bene-hezir-facade",rock,tomb);
   box(-.17,0,.34,6.1,.335,F+3.62,"bene-hezir-facade",rock,tomb);
-  box(4.5625,16.97,12.125,10.98,.25,F-2.25,undefined,earth,tomb);   // present fill in the court (modern graves)
+  // Present fill in the court (modern graves). On Fig. 25 the graves reach Zechariah's visible foot about
+  // 7.7 m above the path (F − 0.8); the fill is drawn in terraces from the court mouth up to that level.
+  for(const [x0,x1,top] of [[-1.6,-.3,F-2.5],[-.3,1,F-1.65],[1,10.625,F-.8]])box((x0+x1)/2,16.97,x1-x0,10.98,top-(F-2.6),F-2.6,undefined,earth,tomb);
   // Zechariah: a monolith 5.50–5.60 m square; 2.75–3.08 m from the north rock wall, 2.95 m from the east, 2.68 m from the south (p. 79).
   // Its parts as seen today (owner's photographs): a stepped base, two engaged Ionic columns between corner
-  // pilasters on each face, an architrave, an Egyptian (cavetto) cornice and the pyramid. Heights and the
-  // members' sizes are illustrative; its base is buried (p. 79).
+  // pilasters on each face, an architrave, an Egyptian (cavetto) cornice and the pyramid. Heights follow
+  // Fig. 25 above its visible foot (F − 0.8): capitals to 3.6 m, architrave to 4.3 m, cornice to 5.05 m,
+  // pyramid 4.05 m high on a 5.1 m base. The buried base steps and the cornice's projection are illustrative.
   {const zc=new T.Group();zc.position.set(4.9,0,17.005);tomb.add(zc);
-   box(0,0,5.55,5.55,4.4,F-3,"zechariah",rock,zc);box(0,0,6.25,6.25,.3,F-2,"zechariah",rock,zc);box(0,0,5.9,5.9,.3,F-1.7,"zechariah",rock,zc);
-   classicalCube(zc,5.55,F-1.4,3.65,2,.27,"zechariah",rock);
-   cavetto(zc,5.75,6.5,F+2.25,.7,"zechariah",rock);box(0,0,6.5,6.5,.15,F+2.95,"zechariah",rock,zc);pyramid(0,0,5.9,4.1,F+3.1,rock,"zechariah",zc);}
+   box(0,0,5.55,5.55,5.79,F-3,"zechariah",rock,zc);box(0,0,6.25,6.25,.3,F-1.6,"zechariah",rock,zc);box(0,0,5.9,5.9,.3,F-1.3,"zechariah",rock,zc);
+   classicalCube(zc,5.55,F-1,3.79,2,.27,"zechariah",rock);
+   box(0,0,5.7,5.7,.72,F+2.79,"zechariah",rock,zc);
+   cavetto(zc,5.7,6.1,F+3.51,.5,"zechariah",rock);box(0,0,6.1,6.1,.25,F+4.01,"zechariah",rock,zc);pyramid(0,0,5.1,4.05,F+4.26,rock,"zechariah",zc);}
   if(original){
    // Avigad's original state: the porch doorway about 0.80 m wide on the column axis (p. 38); the north
    // doorway of A (lost in a breach); the pit in D 50 cm deep before it was deepened (p. 41); the corridor
@@ -400,66 +408,81 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
    for(const [x0,x1,z0,z1,y0] of [[.975,3.275,10.75,11.05,F-1.51],[.975,3.275,11.05,11.15,F-1.75],[1.45,2.8,11.15,11.48,F-2]] as [number,number,number,number,number][])box((x0+x1)/2,(z0+z1)/2,x1-x0,z1-z0,F-1.26-y0,y0,"corridor",earth,tomb);
   }
   // Absalom, about 50 m from Bene Ḥezir (p. 37), north of it on Fig. 25, stands at its mapped centre with its
-  // sides on the mapped outline. Avigad's summary gives only its 20 m height and its parts: a rock-cut square
-  // substructure, a course of dressed stone, a round drum and a concave cone.
-  // Its parts follow the summary and the owner's photographs; their sizes are illustrative within the 20 m.
+  // sides on the mapped outline. Avigad's summary gives its 20 m height and its parts: a rock-cut square
+  // substructure, a course of dressed stone, a round drum and a concave cone. The heights of the parts are
+  // read from the Fig. 25 elevation, scaled to the 20 m (the record has the measurements); the members'
+  // detail follows the owner's photographs.
   const absalom=new T.Group();absalom.position.set(reg.absalomCentre[0],base,reg.absalomCentre[1]);absalom.rotation.y=-T.MathUtils.degToRad(reg.absalomSideBearing);root.add(absalom);absalom.updateMatrix();
-  {// Rock-cut: a stepped base (the mapped outline is 9.5 m square), the cube with two engaged Ionic columns
-   // between corner pilasters on each face, architrave, Doric frieze with triglyphs and an Egyptian cornice.
-   box(0,0,9.2,9.2,.5,-.3,"absalom",rock,absalom);box(0,0,7.8,7.8,.5,.2,"absalom",rock,absalom);
-   classicalCube(absalom,6.8,.7,4.9,2,.3,"absalom",rock);
-   box(0,0,7.05,7.05,.45,5.6,"absalom",rock,absalom);box(0,0,6.95,6.95,.6,6.05,"absalom",rock,absalom);
-   for(const [dx,dz] of [[1,0],[-1,0],[0,1],[0,-1]])for(let k=-4;k<=4;k++)box(dx*3.5+dz*k*.75,dz*3.5+dx*k*.75,dx?.1:.32,dx?.32:.1,.6,6.05,"absalom",rock,absalom);
-   cavetto(absalom,6.95,7.9,6.65,.75,"absalom",rock);box(0,0,7.9,7.9,.15,7.4,"absalom",rock,absalom);
-   // Built: the square course of dressed stone (in two steps), the round drum with a rope moulding, and
-   // the concave cone with its finial.
-   box(0,0,6.6,6.6,.8,7.55,"absalom",stone,absalom);box(0,0,6,6,.65,8.35,"absalom",stone,absalom);
-   const drum=mesh(new T.CylinderGeometry(2.75,2.75,1.9,32),stone,"absalom",absalom);drum.position.set(0,9.95,0);
-   const rope=mesh(new T.TorusGeometry(2.75,.17,8,40),stone,"absalom",absalom);rope.rotation.x=Math.PI/2;rope.position.set(0,10.9,0);
-   const profile=Array.from({length:17},(_,k)=>{const t=k/16;return new T.Vector2(.3+2.25*(1-t)**2,11+7.9*t);});
+  {// Rock-cut: a podium from the path to 2.1 m with a base moulding to 2.4 m, the cube with two engaged
+   // Ionic columns between corner pilasters on each face (to 7.0 m), architrave, Doric frieze with
+   // triglyphs (7.3–7.9 m) and an Egyptian cornice to 8.8 m.
+   box(0,0,7,7,2.4,-.3,"absalom",rock,absalom);box(0,0,7.2,7.2,.32,2.07,"absalom",rock,absalom);
+   classicalCube(absalom,6.8,2.39,4.6,2,.3,"absalom",rock);
+   box(0,0,7.05,7.05,.3,6.99,"absalom",rock,absalom);box(0,0,6.95,6.95,.62,7.29,"absalom",rock,absalom);
+   for(const [dx,dz] of [[1,0],[-1,0],[0,1],[0,-1]])for(let k=-4;k<=4;k++)box(dx*3.5+dz*k*.75,dz*3.5+dx*k*.75,dx?.1:.32,dx?.32:.1,.62,7.29,"absalom",rock,absalom);
+   cavetto(absalom,6.95,7.5,7.91,.71,"absalom",rock);box(0,0,7.5,7.5,.18,8.62,"absalom",rock,absalom);
+   // Built: the square course of dressed stone (8.8–10.2 m) with its crowning moulding (to 10.9 m), the
+   // round drum with a band and a rope moulding (to 13.3 m), and the concave cone with its finial (to 20 m).
+   box(0,0,6.25,6.25,1.42,8.8,"absalom",stone,absalom);box(0,0,6.35,6.35,.38,10.22,"absalom",stone,absalom);box(0,0,6.45,6.45,.32,10.6,"absalom",stone,absalom);
+   const drum=mesh(new T.CylinderGeometry(3.05,3.05,2.03,32),stone,"absalom",absalom);drum.position.set(0,11.935,0);
+   const band=mesh(new T.CylinderGeometry(3.12,3.12,.31,32),stone,"absalom",absalom);band.position.set(0,12.345,0);
+   const rope=mesh(new T.TorusGeometry(3.05,.18,8,40),stone,"absalom",absalom);rope.rotation.x=Math.PI/2;rope.position.set(0,13.12,0);
+   const profile=Array.from({length:17},(_,k)=>{const t=k/16;return new T.Vector2(.42+2.67*(1-t)**2.1,13.3+5.75*t);});
    mesh(new T.LatheGeometry(profile,32),stone,"absalom",absalom);
-   mesh(new T.LatheGeometry([[.3,18.9],[.22,19.2],[.44,19.45],[.32,19.75],[.12,20],[0,20.05]].map(([r,y])=>new T.Vector2(r,y)),20),stone,"absalom",absalom);}
-  {// The rock-cut court around Absalom, open to the west, with a passage 2.4 m wide on three sides; in the
-   // east wall, north of the axis, the pedimented entrance of the Jehoshaphat tomb (summary: "a large
-   // entrance carrying a pediment", reached by steps beside Absalom). Sizes and depths are illustrative.
-   rockMass([-4.6,14,-12,12,-4,7.2],[[-4.6,7,-7,7,0,7.3],[7,8.4,-6.3,-4.5,0,2.6],[8.4,12,-7.4,-3.4,0,2.5]],absalom,"absalom");
+   mesh(new T.LatheGeometry([[.45,19.05],[.5,19.1],[.5,19.3],[.3,19.36],[.38,19.6],[.36,19.85],[.18,19.98],[0,20]].map(([r,y])=>new T.Vector2(r,y)),20),stone,"absalom",absalom);}
+  {// The rock-cut court around Absalom, open to the west, with a passage 2.4 m wide on three sides; its
+   // walls are drawn to 9 m (on Fig. 25 the rock and the walls on it rise to 8–10.5 m). In the east
+   // wall, north of the axis, the pedimented entrance of the Jehoshaphat tomb (summary: "a large entrance
+   // carrying a pediment", reached by "a flight of steps touching 'Absalom's Tomb'"). On Fig. 25 its sill
+   // is level with Absalom's base moulding (1.9 m), its opening about 2.5 m wide and 3 m high, its
+   // pediment to 5.9 m; the steps rise east beside the podium. The cave behind is not drawn.
+   rockMass([-4.6,14,-12,12,-4,9],[[-4.6,7,-7,7,0,9.1],[7,8.6,-5.9,-3.6,1.9,4.9],[8.6,12,-6.6,-2.9,1.9,4.6]],absalom,"absalom");
    box(1.2,0,11.6,14,.25,-.23,undefined,earth,absalom);
-   for(const z of [-6.45,-4.35])box(6.92,z,.16,.3,2.75,-.1,"absalom",rock,absalom);
-   box(6.9,-5.4,.2,2.4,.3,2.65,"absalom",rock,absalom);
-   const pediment=new T.Shape();pediment.moveTo(-1.3,0);pediment.lineTo(1.3,0);pediment.lineTo(0,.9);pediment.closePath();
-   const tympanum=mesh(new T.ExtrudeGeometry(pediment,{depth:.25,bevelEnabled:false}),rock,"absalom",absalom);tympanum.rotation.y=Math.PI/2;tympanum.position.set(6.8,2.95,-5.4);}
+   for(let k=0;k<9;k++)box(4.28+k*.32,-5.15,.32,2.9,.211*(k+1),0,"absalom",rock,absalom);
+   for(const z of [-6.05,-3.45])box(6.92,z,.16,.3,3,1.9,"absalom",rock,absalom);
+   box(6.9,-4.75,.2,3.1,.3,4.9,"absalom",rock,absalom);
+   const pediment=new T.Shape();pediment.moveTo(-1.55,0);pediment.lineTo(1.55,0);pediment.lineTo(0,.65);pediment.closePath();
+   const tympanum=mesh(new T.ExtrudeGeometry(pediment,{depth:.25,bevelEnabled:false}),rock,"absalom",absalom);tympanum.rotation.y=Math.PI/2;tympanum.position.set(6.8,5.2,-4.75);}
   const put=(id:string,v:T.Vector3)=>marker(id,v.x,v.z,v.y);
-  put("bene-hezir-facade",at(-.4,F+4.4,0));put("porch",at(2.1,F+1.6,0));put("chambers",at(6.25,F+1.2,0));put("corridor",at(2.1,F+.8,7));put("nefesh",at(.2,F+(original?6.5:2.4),-4.94));put("zechariah",at(4.9,F+4.5,17));marker("absalom",reg.absalomCentre[0],reg.absalomCentre[1],base+21);
+  put("bene-hezir-facade",at(-.4,F+4.4,0));put("porch",at(2.1,F+1.6,0));put("chambers",at(6.25,F+1.2,0));put("corridor",at(2.1,F+.8,7));put("nefesh",at(.2,F+(original?6.5:2.4),-4.94));put("zechariah",at(4.9,F+5.5,17));marker("absalom",reg.absalomCentre[0],reg.absalomCentre[1],base+21);
   // Ground: the terrain is hidden under the rock mass. Pads, applied in order, level the valley floor
   // in front (from Zechariah's court to Absalom), raise the slope behind the scarp to the rock surface,
   // and meet the rock mass itself. The modern terrain model is too coarse to show the scarp, so the
   // pads are illustrative.
   const flat=(x:number,z:number):Point=>{const v=at(x,0,z);return [v.x,v.z];};
-  const rockHole=[flat(-1.5,-13),flat(20,-13),flat(20,26),flat(-1.5,26)];
+  // The terrain holes stop 0.8 m inside the rock's sides and back, where the ground stands at the rock top:
+  // the cut follows whole terrain cells, and a cut outside the rock would open a gap beside it.
+  const rockHole=[flat(-1.5,-12.2),flat(19.2,-12.2),flat(19.2,25.2),flat(-1.5,25.2)];
   const front=flat(-2,17),foot:Point=[reg.absalomCentre[0]-4,reg.absalomCentre[1]],along=new T.Vector2(foot[0]-front[0],foot[1]-front[1]),length=along.length();along.normalize();
   const west=along.y<0?new T.Vector2(along.y,-along.x):new T.Vector2(-along.y,along.x),valley=[(front[0]+foot[0])/2+west.x*11,(front[1]+foot[1])/2+west.y*11];
   ground.pads.push({x:valley[0],z:valley[1],w:26,d:length+20,height:base,feather:18,angle:Math.atan2(along.x,along.y)});
   // "Here the path climbs to the southern entrance of the Bene Ḥezir cave and the Zechariah court" (p. 42),
-  // over a slope built up by modern graves: a ramp in front of the façades rises to a terrace level with
-  // the court, so Zechariah stands at the ground in front of it. Extent and slope are illustrative.
-  const ramp=flat(-6.8,5.5),terrace=flat(-6.8,20);
-  ground.pads.push({x:ramp[0],z:ramp[1],w:10.4,d:13,height:base,rise:F-2.3,feather:5,angle:turn},{x:terrace[0],z:terrace[1],w:10.4,d:16,height:base+F-2.3,feather:10,angle:turn});
+  // over a slope built up by modern graves. On Fig. 25 the ground in front of the scarp leaves the path
+  // about 5 m north of the façade's north end and is 4.6 m up at the end of the court's north wall; it rises on to
+  // about 6.7 m at the court's south wall, and the graves in the court reach Zechariah's foot (F − 0.8).
+  // The ramps follow those levels; their width is illustrative.
+  const ramp=flat(-6.8,-.35),approach=flat(-6.8,17),terrace=flat(-6.8,28);
+  ground.pads.push({x:ramp[0],z:ramp[1],w:10.4,d:22.7,height:base,rise:4.6,feather:5,angle:turn},{x:approach[0],z:approach[1],w:10.4,d:12,height:base+4.6,rise:2.1,feather:6,angle:turn},{x:terrace[0],z:terrace[1],w:10.4,d:10,height:base+6.7,feather:10,angle:turn});
   // The rock pad starts 4.5 m behind the façade line: the terrain cells (about 4 m) would otherwise
   // slope up across the façade. It runs on 14 m south of the rock mass, past Zechariah, as the scarp
   // does. To the north the scarp bends east towards Absalom (the mapped path at its foot runs there),
   // so a shoulder further back covers the north side. The rock mass is then no free block.
   const behind=flat(28,5),shoulder=flat(15,-17),scarp=flat(11.5,14);
   ground.pads.push({x:behind[0],z:behind[1],w:24,d:58,height:base+TOP-.3,feather:20,angle:turn},{x:shoulder[0],z:shoulder[1],w:12,d:14,height:base+TOP-.3,feather:4,angle:turn},{x:scarp[0],z:scarp[1],w:17,d:52,height:base+TOP-.3,feather:2.5,angle:turn});
+  // The higher rock round Zechariah's court. The pad stays 5.5 m behind the court mouth, and 3 m south of
+  // the step from the lower rock, so no ground rises above the rock top at a hole edge.
+  const courtTop=flat(17.5,20.75);
+  ground.pads.push({x:courtTop[0],z:courtTop[1],w:27,d:16.5,height:base+CW-.3,feather:3,angle:turn});
   // Absalom: level ground (the path) in front, no terrain inside its rock-cut court, and the ground
   // behind the court at the rock top.
   const local=(x:number,z:number):Point=>{const v=new T.Vector3(x,0,z).applyMatrix4(absalom.matrix);return [v.x,v.z];},spin=absalom.rotation.y;
-  const absalomHole=[local(-4.6,-12),local(14,-12),local(14,12),local(-4.6,12)],aroundAbsalom=local(11.7,0),plaza=local(-11.3,0);
-  ground.pads.push({x:aroundAbsalom[0],z:aroundAbsalom[1],w:32.6,d:36,height:base+6.9,feather:8,angle:spin},{x:plaza[0],z:plaza[1],w:13.4,d:26,height:base,feather:4,angle:spin});
+  const absalomHole=[local(-4.6,-11.2),local(13.2,-11.2),local(13.2,11.2),local(-4.6,11.2)],aroundAbsalom=local(11.7,0),plaza=local(-11.3,0);
+  ground.pads.push({x:aroundAbsalom[0],z:aroundAbsalom[1],w:32.6,d:36,height:base+8.7,feather:8,angle:spin},{x:plaza[0],z:plaza[1],w:13.4,d:26,height:base,feather:4,angle:spin});
   plinth(70,110,2,[rockHole,absalomHole]);ground.bench=false;
   placeFrame=[(reg.absalomCentre[0]+reg.zechariahCentre[0])/2,(reg.absalomCentre[1]+reg.zechariahCentre[1])/2];ground.focus=flat(0,8);
   // Start on the valley floor, far enough out to see the façade 8.5 m up.
   {const [x,z]=flat(-20,1);tracedStart={position:[x,z],bearing:(reg.facadeNormalBearing+180)%360,pitch:94};}
-  assumptions.push("Plan, chamber and façade sizes are Avigad's (1954 pp. 37–49, 79): façade 5.75 + 4.13 = 9.88 m, porch 5.7 × 3.15 m and 3.35 m high, columns 3.00 m with 0.53 m lower diameter, entablature 0.95 m; chambers A–E, their pits, kokhim and arcosolia, the 1.60 m north stair (13 steps from 1.78 to 4.68 m above the floor) and the south corridor (8.30 m, 2.30 m wide, steps of 20–22 cm). Ranges are drawn at their means; trapezoidal chambers are drawn as rectangles.","Avigad gives no wall thicknesses, chamber floor levels or kokh heights: walls between chambers are drawn 0.8 m, all chamber floors at the porch floor with benches at that level, kokhim 0.9 m high, and the stair continued above its visible top to the rock surface. Which side of each chamber carries which dimension is inferred from the kokhim on each wall.","The façade's two parts meet at an obtuse angle (p. 37); they are drawn in one plane. The frame is Avigad's (his directions are rounded, p. 39), placed and turned by the OpenStreetMap outlines of the three monuments: his 'west' faces the mapped façade normal (about 245°, his 'south-west', p. 37), from the mapped outline and from the bearing that puts Zechariah where his plan does (the two agree within 1°). The rock path (y = 0 of the frame) is set to the modern terrain at Absalom's mapped centre. Levels: tomb floor 8.50 m above the rock path (p. 42); rock surface drawn 7 m above the floor (up to 8.00 m at the stair, p. 39); Zechariah court ground drawn 2 m below the tomb floor (Slouschz's steps about 2 m below it). The burial cells in the scarp below the façade (p. 38 n. 1, Fig. 48) are not drawn.","Zechariah: the 5.55 m square monolith and its passages (2.9 m north, 2.95 m east, 2.68 m south; court 11.45 × 10.98 m drawn, 11.20 × 11.45 m published) follow p. 79; the corridor opening is set 3.08 m from its north-west corner. Its parts follow the owner's photographs (a stepped base, two engaged Ionic columns between corner pilasters on each face, an Egyptian cornice, the pyramid); their heights and sizes are illustrative: its base is buried and the pages read give no height. The court walls are 'as high as the monument' (p. 79), so the court floor is drawn about 6 m above the rock path, and the ground in front climbs to it as the path does (p. 42); that ramp and terrace are illustrative.","Absalom stands at the centre of its mapped outline, 52 m from the mapped Bene Ḥezir porch (Avigad: about 50 m), its sides turned with the outline, on the path level. Only its 20 m height and its parts are published in the pages read (a rock-cut substructure with Ionic columns, a Doric frieze and an Egyptian cornice, a course of dressed stone, a round drum and a concave cone): their sizes, the stepped base (in the 9.5 m mapped outline), the rope moulding and the finial follow the owner's photographs and are illustrative. Its rock-cut court (a 2.4 m passage on three sides, open to the west) and the pedimented Jehoshaphat entrance in its east wall are illustrative in size and depth. The Jehoshaphat cave behind its entrance is not drawn.");
+  assumptions.push("Plan, chamber and façade sizes are Avigad's (1954 pp. 37–49, 79): façade 5.75 + 4.13 = 9.88 m, porch 5.7 × 3.15 m and 3.35 m high, columns 3.00 m with 0.53 m lower diameter, entablature 0.95 m; chambers A–E, their pits, kokhim and arcosolia, the 1.60 m north stair (13 steps from 1.78 to 4.68 m above the floor) and the south corridor (8.30 m, 2.30 m wide, steps of 20–22 cm). Ranges are drawn at their means; trapezoidal chambers are drawn as rectangles.","Avigad gives no wall thicknesses, chamber floor levels or kokh heights: walls between chambers are drawn 0.8 m, all chamber floors at the porch floor with benches at that level, kokhim 0.9 m high, and the stair continued above its visible top to the rock surface. Which side of each chamber carries which dimension is inferred from the kokhim on each wall.","The façade's two parts meet at an obtuse angle (p. 37); they are drawn in one plane. The frame is Avigad's (his directions are rounded, p. 39), placed and turned by the OpenStreetMap outlines of the three monuments: his 'west' faces the mapped façade normal (about 245°, his 'south-west', p. 37), from the mapped outline and from the bearing that puts Zechariah where his plan does (the two agree within 1°). The rock path (y = 0 of the frame) is set to the modern terrain at Absalom's mapped centre. Levels: tomb floor 8.50 m above the rock path (p. 42; the Fig. 25 elevation, measured on the owner's photograph, gives 8.5 m); rock surface drawn 7 m above the floor (up to 8.00 m at the stair, p. 39; a wall 'about 15 m high', p. 42). The other levels are read from the Fig. 25 west elevation, whose ground line is that rock path: Zechariah's court walls to about 16.9 m, the ground climbing in front of the scarp to 4.6 m at the court's north wall and 6.7 m at its south wall, the court fill at Zechariah's foot 7.7 m. The two openings drawn in the scarp below the façade (4.9–6.1 m up; the burial cells of p. 38 n. 1 and Fig. 48) are cut 0.8 m deep; their depth is illustrative.","Zechariah: the 5.55 m square monolith and its passages (2.9 m north, 2.95 m east, 2.68 m south; court 11.45 × 10.98 m drawn, 11.20 × 11.45 m published) follow p. 79; the corridor opening is set 3.08 m from its north-west corner. Its parts follow the owner's photographs (a stepped base, two engaged Ionic columns between corner pilasters on each face, an architrave, an Egyptian cornice, the pyramid). Their heights are read from Fig. 25 (about ±0.3 m): visible from 7.7 m above the path, capitals to 3.6 m above that, architrave to 4.3 m, cornice to 5.05 m, pyramid 4.05 m high on a 5.1 m base, apex about 16.8 m above the path. Its base is buried (p. 79): the base steps under the fill and the cornice's projection are illustrative. The court walls are 'as high as the monument' (p. 79) and are drawn to 16.9 m. The fill in the court is drawn in terraces from the court mouth to Zechariah's foot; the ramps in front follow Fig. 25's ground line, and their width is illustrative.","Absalom stands at the centre of its mapped outline, 52 m from the mapped Bene Ḥezir porch (Avigad: about 50 m), its sides turned with the outline, on the path level. Its 20 m height and its parts are published in the pages read (a rock-cut substructure with Ionic columns, a Doric frieze and an Egyptian cornice, a course of dressed stone, a round drum and a concave cone). The heights of the parts and the widths of drum and cone are read from the Fig. 25 elevation, scaled to the 20 m: a podium to 2.1 m and a base moulding to 2.4 m, columns and capitals to 7.0 m, architrave and frieze to 7.9 m, cornice to 8.8 m, the stone course to 10.2 m with its moulding to 10.9 m, the drum (6.1 m across) to 13.0 m, the rope moulding to 13.3 m, the cone to 19.05 m and the finial to 20 m. The members' detail follows the owner's photographs and is illustrative. Its rock-cut court (a 2.4 m passage on three sides, open to the west) is illustrative in plan; its walls are drawn to 9 m (Fig. 25: 8–10.5 m with walls on top). The Jehoshaphat entrance in its east wall follows Fig. 25 in height: sill 1.9 m, level with Absalom's base moulding, opening about 2.3 m wide and 3 m high, pediment to 5.85 m, and nine steps beside the podium. The Jehoshaphat cave behind its entrance is not drawn.");
   if(original)assumptions.push("Original-state view (pale parts are drawn only by it): the porch doorway narrowed to Avigad's original 0.80 m (p. 38), the north doorway of A restored in its breach, the pit in D at its original 50 cm (p. 41), and the corridor cleared of earth. The nefesh pyramid follows Avigad's reconstruction (Fig. 42, 1; pp. 73–78), which publishes no dimensions: its 4.13 m base (the added façade's width) and 5 m height are illustrative. Avigad notes that the rock leaves no room for a square base without reaching over the steps behind the nefesh (p. 76); the model shows that overlap with the north stair rather than resolving it.");
  } else if(plan.id==="temple-great-sea"){
   units="metres";note="The Great Sea (cistern VIII) · Warren Pl. VII outline, published depths";
