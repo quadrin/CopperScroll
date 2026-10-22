@@ -44,3 +44,26 @@ Photos record shape and facing; they date nothing. No rating changes from this s
 ## Photogrammetry test (22 October 2026)
 
 To get a better ground surface at the monuments' feet than the 5 m terrain model, a structure-from-motion run (pycolmap 4.2.1, SIFT, exhaustive matching; one camera model per device) was tried on all 51 photographs and the 11 archived video frames. Only 3 images joined one model (2,372 points, mean reprojection error 0.79 px). Result: these reduced copies, taken from few standpoints with little overlap, cannot give a surface. A usable capture would be one walk round each monument and along the scarp foot with a photo every 1–2 m (60–80 % overlap), at full resolution, ideally from the iPhone with location on; or the two original videos, whose frames overlap densely (they stay in Drive: IMG_9844 is 177 MB and the Drive connector refuses files that large).
+
+## Viewpoints aligned by eye (22 October 2026)
+
+Four photographs have viewpoints in the Kidron model's frame, in `atlas/app/atlas-photo-viewpoints.json`; the atlas shows them from there with **View from here** (eye-level walk, Reference photos). All four are INFERENCE: camera positions fitted to the display model, not measured.
+
+- Method: features were picked by eye on each photo (corner edges, cornice and attic corners, capitals, Absalom's finial, Zechariah's pyramid apex) and the camera was fitted by least squares to the same features in the model (pinhole camera, principal point at the centre), then checked by laying the model's outlines over the photo. Field of view 72.6° from the EXIF focal length (16 mm on the ZV-E10's APS-C sensor, 24 mm equivalent); 68–75° moves the Absalom cameras by about 1.5 m. Heights are absolute model heights.
+
+| Photo | Fitted to | Residual | Stated uncertainty (relative to the model) | Eye above the model's ground |
+|---|---|---|---|---|
+| DSC08767 | Absalom from the west-north-west, about 19 m out | 5 px rms | position ±1.5 m, height ±0.7 m, bearing ±1.5° | 3.2 m |
+| DSC08770 | Absalom's north-west corner from below | 6 px rms | ±1 m, ±0.5 m, ±2° | 2.3 m |
+| DSC08773 | Absalom's west face, about 3 m out | 4 px rms | ±1 m, ±0.5 m, ±4° (bearing trades against roll on a square-on face) | 2.5 m |
+| DSC08812 | Zechariah's front, about 17 m out | 3 px rms | ±1 m, ±0.5 m, ±2° | 0.25 m |
+
+- The uncertainties leave out the model's own placement (the OpenStreetMap outlines). Coarse check against the video start points (±12.5 m): IMG_9844's start is 10.6 m from DSC08812's camera; IMG_9843's start is 24–39 m from the three Absalom cameras, but that video need not have started where those photos were taken, so the check is weak.
+- Not aligned: DSC08818 (only the round drum and cone match, so the camera's direction round Absalom is not fixed; its drum also looks taller than the model's, which could not be resolved from this frame), DSC08791 (the façade is too oblique and small), DSC08781 (face not established); the rest were not attempted.
+- What the fits suggest about the model (INFERENCE; the model was not changed):
+  - West of Absalom the fitted eyes are 2.3–3.2 m above the model's ground, which is level with Absalom's foot there; a standing eye is about 1.6 m. Either the ground rises westward from the monument by roughly 0.7–1.6 m, or the model's Absalom levels (Fig. 25 scaled to 20 m) are off. Not resolved.
+  - The north court wall beside Absalom, at its west end, is drawn to 9 m; in DSC08767 the rock with the wall on it stops about 2–3 m lower.
+  - In front of Zechariah the model's grave fill reaches 7.7 m above the path (Fig. 25, 1954), up to the column bases; DSC08812 shows the stepped base exposed about 1.5–2 m lower, and its fitted eye is only 0.25 m above the model's ground.
+  - The rock on the south side of Zechariah's court is carried to 16.9 m right to the court mouth; in DSC08812 the rock beside the monument ends about 3–4 m lower, near the pyramid's base.
+  - Smaller, not clear: the fits leave Absalom's square course (attic) about 0.2–0.4 m shorter in the model than in the photos.
+- No reading, identification or rating changes.

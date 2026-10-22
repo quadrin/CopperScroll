@@ -25,7 +25,7 @@ export type PhotoViewpoint={
 };
 export const DEFAULT_EYE_HEIGHT=1.6;
 
-const viewpoints=(data as {viewpoints:Record<string,PhotoViewpoint>}).viewpoints;
+const viewpoints=(data as unknown as {viewpoints:Record<string,PhotoViewpoint>}).viewpoints;
 export const viewpointFor=(photoId:string,planId?:string|null)=>{const v=viewpoints[photoId];return v&&(!planId||v.plan===planId)?v:null;};
 export const allViewpoints=()=>viewpoints;
 

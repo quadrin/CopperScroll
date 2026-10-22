@@ -39,7 +39,9 @@ map.addLayer({id:'camera-probe',type:'custom',renderingMode:'3d',render(gl,args)
  window.signProbe.push({x:(near.x/near.w+1)/2*c.clientWidth,y:(1-near.y/near.w)/2*c.clientHeight});
  window.cameraSamples.push({error:actual.distanceTo(eye),pitch:map.getPitch(),zoom:map.getZoom(),feet:d.walkFeet,crouched:d.walkCrouch,sprint:d.walkSprint,fov:d.walkFov});
 }});
-window.begin=()=>{window.walk=startMapWalk(map,site,()=>{});};
+// A pick handler stands in for the measuring tool: it records clicks and takes them while pickOn is set.
+window.picks=[];window.pickOn=false;
+window.begin=()=>{window.walk=startMapWalk(map,site,()=>{},undefined,{onPick:(x,y)=>{window.picks.push([x,y]);return window.pickOn;}});};
 window.changeBase=value=>{base=value;map.triggerRepaint();};window.ready=true;
 </script>`;
 const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
@@ -84,12 +86,53 @@ try{
   assert(samples.length>8,'Must observe actual rendered camera frames across the tested states');
   assert(Math.max(...samples.map(s=>s.error))<.06,`Rendered eye must stay within 6 cm of the body: ${JSON.stringify(samples.filter(s=>s.error>=.06).slice(0,3))}`);
   assert(samples.every(s=>s.pitch>75&&s.zoom>19),'Walking must remain at eye level through terrain failure, resize and camera commands');
+  // A fixed view (a photo's viewpoint): the drawn camera takes its eye, bearing, pitch and field of view; walking
+  // and looking are frozen; releasing it leaves the walker standing at the viewpoint with the walking FOV.
+  if(await page.evaluate(()=>typeof walk.setView==='function')){
+   const area=await page.locator('canvas').boundingBox(),d=()=>page.evaluate(()=>({...testMap.getCanvas().dataset}));
+   await page.evaluate(()=>{cameraSamples.length=0;walk.setView({eye:[4,2.3,-6],bearing:30,pitch:12,fov:48});});
+   // A fixed view draws only when something changes: ask for frames while waiting.
+   await page.waitForFunction(()=>{testMap.triggerRepaint();return cameraSamples.length>2&&testMap.getCanvas().dataset.walkView==='fixed';});
+   const fixed=await page.evaluate(()=>({fov:testMap.getVerticalFieldOfView(),bearing:testMap.getBearing(),pitch:testMap.getPitch(),camera:walk.camera(),error:cameraSamples.at(-1).error}));
+   assert.equal((await d()).walkPosition,'4.000,2.300,-6.000','A fixed view puts the eye at the viewpoint');
+   assert.ok(fixed.error<.06&&Math.abs(fixed.fov-48)<1e-6&&Math.abs(fixed.bearing-30)<.2&&Math.abs(fixed.pitch-102)<.2,`The drawn camera must be the fixed view: ${JSON.stringify(fixed)}`);
+   assert.deepEqual(fixed.camera,{eye:[4,2.3,-6],bearing:30,pitch:12,fov:48});
+   await page.evaluate(()=>walk.press('w'));await page.waitForTimeout(300);await page.evaluate(()=>walk.release('w'));
+   await page.mouse.move(area.width*.5,area.height*.5);await page.mouse.down();await page.mouse.move(area.width*.5+80,area.height*.5+40,{steps:4});await page.mouse.up();
+   assert.equal((await d()).walkPosition,'4.000,2.300,-6.000','Walking is frozen in a fixed view');
+   assert.ok(Math.abs(await page.evaluate(()=>testMap.getBearing())-30)<.2,'Looking is frozen in a fixed view');
+   await page.evaluate(()=>walk.setView(null));
+   await page.waitForFunction(()=>testMap.getCanvas().dataset.walkView==='walking'&&testMap.getCanvas().dataset.walkGrounded==='true');
+   const feet=(await d()).walkFeet.split(',').map(Number);
+   assert.ok(Math.hypot(feet[0]-4,feet[2]+6)<.05&&Math.abs(await page.evaluate(()=>testMap.getVerticalFieldOfView())-70)<1e-6,`Leaving the view, the walker stands at the viewpoint with the walking FOV: ${feet}`);
+   // A click picks a point (and does not swing the arm into a move); a drag still looks; neither moves the walker.
+   await page.evaluate(()=>{window.pickOn=true;picks.length=0;});
+   const stand=(await d()).walkPosition,bearing=await page.evaluate(()=>testMap.getBearing());
+   await page.mouse.click(area.width*.3,area.height*.6);
+   await page.mouse.move(area.width*.5,area.height*.5);await page.mouse.down();await page.mouse.move(area.width*.5+60,area.height*.5,{steps:4});await page.mouse.up();
+   const picks=await page.evaluate(()=>picks);
+   assert.equal(picks.length,1,'Only the click picks a point, not the drag');
+   assert.ok(Math.hypot(picks[0][0]-area.width*.3,picks[0][1]-area.height*.6)<1,`The pick is at the click: ${picks[0]}`);
+   assert.equal((await d()).walkPosition,stand,'Picking does not move the walker');
+   assert.ok(Math.abs(await page.evaluate(()=>testMap.getBearing())-bearing)>1,'A drag still turns the view while picking is on');
+   // With the mouse captured, a click picks at the centre of the canvas (when this browser grants pointer lock).
+   if(!mobile){
+    await page.mouse.dblclick(area.width*.5,area.height*.5);await page.waitForTimeout(200);
+    if(await page.evaluate(()=>document.pointerLockElement===testMap.getCanvas())){
+     await page.evaluate(()=>picks.length=0);await page.mouse.down();await page.mouse.up();
+     const locked=await page.evaluate(()=>picks),r=await page.evaluate(()=>testMap.getCanvas().getBoundingClientRect().toJSON());
+     assert.ok(locked.length===1&&Math.hypot(locked[0][0]-(r.left+r.width/2),locked[0][1]-(r.top+r.height/2))<1,`A captured click picks at the centre: ${JSON.stringify({locked,r})}`);
+     await page.keyboard.press('Escape');
+    }else console.log('Pointer lock was not granted in this browser: the captured-mouse pick was not exercised.');
+   }
+   await page.evaluate(()=>{window.pickOn=false;});
+  }
   await page.evaluate(()=>{testMap.terrain.getElevationForLngLatZoom=originalTerrainSample;walk.stop();});
   const after=await page.evaluate(()=>({zoom:testMap.getZoom(),pitch:testMap.getPitch(),center:testMap.getCenter().toArray(),fov:testMap.getVerticalFieldOfView()}));
   assert.deepEqual(after,before,'Exit must restore the overhead view and original FOV');
   await page.waitForFunction(()=>document.querySelector('.walk-signs')?.hidden===true);
   await page.evaluate(()=>testMap.jumpTo({zoom:17,pitch:40}));
   assert.equal(await page.evaluate(()=>testMap.getPitch()),40,'Map camera ownership must be released on exit');
-  assert.deepEqual(errors,[]);console.log(`${mobile?'Phone':'Desktop'} rendered camera passed: missing DEM, crouch, sprint/FOV, jump, look, delayed elevation, resize, competing camera command, feature signs and exit (${samples.length} frames).`);await page.close();
+  assert.deepEqual(errors,[]);console.log(`${mobile?'Phone':'Desktop'} rendered camera passed: missing DEM, crouch, sprint/FOV, jump, look, delayed elevation, resize, competing camera command, feature signs, fixed photo view, picking and exit (${samples.length} frames).`);await page.close();
  }
 }finally{await browser.close();}

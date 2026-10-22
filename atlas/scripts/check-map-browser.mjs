@@ -26,6 +26,112 @@ async function checkSigns(page,planId){
  await toggle.click();await page.waitForFunction(()=>!document.querySelector('.walk-signs')?.hidden&&document.querySelector('.walk-signs').dataset.shown,{},{timeout:30000});
  return shown;
 }
+// Screenshots of the eye-level tools go here (the other checks keep writing to /tmp).
+const shots=process.env.ATLAS_SCREENSHOT_DIR||'/tmp';
+const viewpoints=JSON.parse(readFileSync(new URL('../app/atlas-photo-viewpoints.json',import.meta.url),'utf8')).viewpoints;
+const gallery=JSON.parse(readFileSync(new URL('../app/atlas-site-gallery.json',import.meta.url),'utf8'));
+const canvasData=page=>page.evaluate(()=>({...document.querySelector('.maplibregl-canvas')?.dataset}));
+// The measuring tool (atlas-walk-measure.ts): labelled as exploratory and not a test; two clicks or taps on what is
+// drawn give numbers that agree with each other and a line whose ends sit on the clicked points; the cubit can be
+// changed; a third click starts again; Esc (or Clear) empties it; the walker does not move and the walk goes on.
+async function checkMeasure(page,mobile,shot,first=false){
+ const toggle=page.getByRole('button',{name:'Measure',exact:true});
+ if(first)assert.equal(await toggle.getAttribute('aria-pressed'),'false','Measure is off by default');
+ if(await toggle.getAttribute('aria-pressed')!=='true')await toggle.click();
+ const card=page.getByRole('complementary',{name:'Measurement',exact:true});await card.waitFor();
+ if(await card.getByRole('button',{name:'Clear',exact:true}).count())await card.getByRole('button',{name:'Clear',exact:true}).click();
+ const text=await card.innerText();
+ assert.match(text,/Exploratory measurement on the display model — not a test/);
+ assert.match(text,/Frozen tests fix their readings, cubit lengths and tolerances before looking at evidence; this tool cannot confirm an identification\./);
+ const cubit=card.getByRole('combobox');
+ if(first)assert.equal(await cubit.inputValue(),'0.5','The default cubit is 0.500 m, the middle of the project’s 0.40–0.60 m range');
+ assert.deepEqual(await cubit.locator('option').evaluateAll(o=>o.map(e=>Number(e.value))),[.4,.445,.5,.525,.6],'Only the cubit lengths the project uses are offered');
+ const canvas=page.locator('.maplibregl-canvas'),box=await canvas.boundingBox(),host=await page.locator('.map-canvas').boundingBox();
+ await page.waitForTimeout(400);const feet=(await canvasData(page)).walkFeet;
+ // On open ground: below the card (at the top on phones) and above the walk controls.
+ const clicks=(mobile?[[.4,.58],[.62,.64]]:[[.42,.72],[.6,.6]]).map(([x,y])=>[box.x+box.width*x,box.y+box.height*y]);
+ const click=([x,y])=>mobile?page.touchscreen.tap(x,y):page.mouse.click(x,y);
+ for(const at of clicks)await click(at);
+ await card.locator('[data-measure="slope"]').waitFor();
+ await page.waitForFunction(()=>document.querySelector('.walk-measure')?.dataset.points?.split(' ').length===2);
+ const ends=(await page.locator('.walk-measure').getAttribute('data-points')).split(' ').map(p=>p.split(',').map(Number));
+ ends.forEach(([x,y],i)=>assert.ok(Math.hypot(host.x+x-clicks[i][0],host.y+y-clicks[i][1])<2,`${shot}: measurement end ${'AB'[i]} must sit on its click (${x},${y})`));
+ const value=async key=>{const t=await card.locator(`[data-measure="${key}"] dd`).innerText(),m=t.match(/([+−-]?)(\d+\.\d+) m[\s\S]*?(\d+\.\d) cubits/);assert.ok(m,`${key}: ${t}`);return {m:(m[1]==='−'||m[1]==='-'?-1:1)*Number(m[2]),c:Number(m[3])};};
+ const h=await value('horizontal'),r=await value('rise'),sl=await value('slope');
+ assert.ok(h.m>0&&Math.abs(sl.m-Math.hypot(h.m,r.m))<.02,`${shot}: slope distance must follow from the horizontal and height differences (${h.m}, ${r.m}, ${sl.m})`);
+ assert.ok(Math.abs(sl.c-sl.m/.5)<.06,`${shot}: cubits at 0.500 m (${sl.m} m, ${sl.c} cubits)`);
+ await cubit.selectOption('0.445');assert.ok(Math.abs((await value('slope')).c-sl.m/.445)<.06,`${shot}: cubits follow the chosen cubit`);await cubit.selectOption('0.5');
+ // A body that has just been placed may still settle by a millimetre; a pick that moved it would move it far more.
+ const moved=Math.hypot(...(await canvasData(page)).walkFeet.split(',').map((v,i)=>Number(v)-Number(feet.split(',')[i])));
+ assert.ok(moved<.02,`${shot}: measuring must not move the walker (${moved.toFixed(3)} m)`);
+ await page.screenshot({path:`${shots}/copperscroll-${shot}.png`});
+ await click([box.x+box.width*.5,box.y+box.height*(mobile?.6:.7)]);
+ await page.waitForFunction(()=>document.querySelector('.walk-measure')?.dataset.points?.split(' ').length===1);
+ assert.match(await card.innerText(),/Click a second point \(B\)\./,'A third click starts a new measurement');
+ if(mobile)await card.getByRole('button',{name:'Clear',exact:true}).click();else{await canvas.focus();await page.keyboard.press('Escape');}
+ await page.waitForFunction(()=>!document.querySelector('.walk-measure')?.dataset.points);
+ assert.equal(await page.locator('[data-walking]').getAttribute('data-walking'),'true',`${shot}: ${mobile?'Clear':'Esc'} empties the measurement and keeps walking`);
+}
+// Photo viewpoints (atlas-photo-view.tsx): every seeded photo of the plan is shown from its viewpoint. The camera
+// stands at the recorded eye, its field of view is the one that makes the drawn photo span the photo's own field
+// of view, walking is frozen, the status names how the viewpoint was set and its uncertainty, the opacity slider
+// runs from model to photo, and Esc leaves the photo but not the walk.
+const viewpointStatus=v=>{const u=v.uncertainty??{},parts=[u.position!=null&&`position about ±${u.position} m`,u.height!=null&&`height about ±${u.height} m`,u.bearing!=null&&`bearing about ±${u.bearing}°`].filter(Boolean);return `${v.status==='aligned by eye'?'Viewpoint aligned by eye':'Viewpoint from the photo’s EXIF/GPS record'}${parts.length?`; ${parts.join(', ')}`:'; uncertainty not stated'}.`;};
+async function openReferences(page){
+ const toggle=page.getByRole('button',{name:/^Show \d+ reference photographs$/});if(await toggle.count())await toggle.click();
+ const refs=page.getByRole('complementary',{name:'Reference photographs',exact:true});await refs.waitFor();return refs;
+}
+async function checkViewpoints(page,planId){
+ const seeded=Object.entries(viewpoints).filter(([,v])=>v.plan===planId);
+ assert.ok(seeded.length>=4,`${planId}: at least four seeded viewpoints`);
+ for(const [id,v] of seeded){
+  const photo=gallery.find(g=>g.id===id),refs=await openReferences(page);
+  await refs.locator(`[role=option][aria-label$="${photo.title} (viewpoint)"]`).click();
+  await refs.getByRole('button',{name:'View from here',exact:true}).click();
+  const panel=page.getByRole('complementary',{name:'Photo viewpoint',exact:true});await panel.waitFor();
+  assert.equal(await panel.locator('.photo-view-status').innerText(),viewpointStatus(v),`${id}: the status says how the viewpoint was set`);
+  assert.match(await panel.innerText(),/placed by eye, not measured/);
+  const eye=`${v.position[0].toFixed(3)},${v.y.toFixed(3)},${v.position[1].toFixed(3)}`;
+  await page.waitForFunction(eye=>{const d=document.querySelector('.maplibregl-canvas')?.dataset;return d?.walkView==='fixed'&&d.walkPosition===eye&&d.walkCameraPosition&&Number(d.walkCameraError)<.06;},eye,{timeout:30000});
+  await page.waitForFunction(()=>document.querySelector('.photo-view-overlay img')?.complete);
+  const g=await page.evaluate(()=>{const img=document.querySelector('.photo-view-overlay img'),host=document.querySelector('.map-canvas');return {l:img.offsetLeft,t:img.offsetTop,w:img.offsetWidth,h:img.offsetHeight,W:host.clientWidth,H:host.clientHeight,aspect:img.naturalWidth/img.naturalHeight,fov:Number(document.querySelector('.maplibregl-canvas').dataset.walkFov)};});
+  // The camera's horizontal field of view, from the map's vertical one, against the photo's width on the canvas.
+  const cameraHalf=Math.tan(g.fov*Math.PI/360)*g.W/g.H,photoHalf=Math.tan(v.hfov*Math.PI/360),width=g.W*photoHalf/cameraHalf;
+  assert.ok(Math.abs(g.w-width)<3&&Math.abs(g.h-g.w/g.aspect)<2&&Math.abs(g.l-(g.W-g.w)/2)<2&&Math.abs(g.t-(g.H-g.h)/2)<2&&(g.w>=g.W-2||g.h>=g.H-2),`${id}: the photo must be drawn at the camera's field of view: ${JSON.stringify({g,width})}`);
+  const short=id.replace(/^.*-(dsc\d+|img_\w+)$/,'$1');
+  for(const o of [0,.5,1]){
+   await panel.getByRole('slider').evaluate((el,o)=>{Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(el,String(o));el.dispatchEvent(new Event('input',{bubbles:true}));},o);
+   await page.waitForFunction(o=>Number(getComputedStyle(document.querySelector('.photo-view-overlay img')).opacity)===o,o);
+   await page.waitForTimeout(250);await page.screenshot({path:`${shots}/copperscroll-viewpoint-${short}-opacity-${o}.png`});
+  }
+  await page.locator('.maplibregl-canvas').focus();await page.keyboard.down('w');await page.waitForTimeout(400);await page.keyboard.up('w');
+  assert.equal((await canvasData(page)).walkPosition,eye,`${id}: walking is frozen while comparing`);
+  await page.keyboard.press('Escape');await panel.waitFor({state:'detached'});
+  await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkView==='walking');
+  assert.equal(await page.locator('[data-walking]').getAttribute('data-walking'),'true',`${id}: Esc leaves the photo, not the walk`);
+ }
+}
+// The alignment helper for editors: a photo without a viewpoint opens the editor from the walker's camera; edits move
+// the fixed camera; "Copy viewpoint JSON" gives the viewpoint keyed by the photo id (to the clipboard where allowed).
+async function checkViewpointEditor(page,planId,photoId){
+ const photo=gallery.find(g=>g.id===photoId),refs=await openReferences(page);
+ await page.context().grantPermissions(['clipboard-read','clipboard-write']).catch(()=>{});
+ await refs.locator(`[role=option][aria-label$="${photo.title}"]`).click();
+ assert.equal(await refs.getByRole('button',{name:'View from here',exact:true}).count(),0,'A photo without a viewpoint has no View from here');
+ await refs.getByRole('button',{name:'Align (editors)',exact:true}).click();
+ const panel=page.getByRole('complementary',{name:'Photo viewpoint',exact:true});await panel.waitFor();
+ assert.match(await panel.locator('.photo-view-status').innerText(),/No viewpoint is recorded for this photo/);
+ const field=label=>panel.getByLabel(label,{exact:true}),bearing=(Number(await field('Bearing').inputValue())+10)%360;
+ await field('Bearing').fill(bearing.toFixed(1));await field('x (east)').fill('-40');await field('z (south)').fill('-20');
+ await page.waitForFunction(()=>{const d=document.querySelector('.maplibregl-canvas')?.dataset,p=d?.walkPosition?.split(',');return p&&p[0]==='-40.000'&&p[2]==='-20.000'&&d.walkView==='fixed';});
+ await panel.getByRole('button',{name:'Copy viewpoint JSON',exact:true}).click();
+ const text=await panel.getByLabel('Viewpoint JSON',{exact:true}).inputValue(),entry=JSON.parse(text)[photoId];
+ assert.ok(entry&&entry.plan===planId&&entry.status==='aligned by eye'&&Math.abs(entry.bearing-Number(bearing.toFixed(1)))<.01&&entry.position[0]===-40&&entry.position[1]===-20&&entry.hfov>0,`The copied viewpoint must be the edited camera: ${text}`);
+ const copied=await page.evaluate(()=>navigator.clipboard.readText()).catch(()=>null);
+ assert.ok(copied===text||/did not allow copying/.test(await panel.innerText()),'The JSON is on the clipboard, or the editor says to copy it by hand');
+ await page.screenshot({path:`${shots}/copperscroll-viewpoint-editor.png`});
+ await page.keyboard.press('Escape');await panel.waitFor({state:'detached'});
+}
 // Controlled Terrarium DEM at -183 m catches sea-level camera/placement errors.
 const negativeTerrain=readFileSync(new URL('./fixtures/negative-terrain.png',import.meta.url));
 const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
@@ -174,6 +280,10 @@ try {
   const look=await page.locator('.maplibregl-canvas').boundingBox(),lookX=look.x+look.width*.65,lookY=look.y+look.height*.35;
   await page.mouse.move(lookX,lookY);await page.mouse.down();await page.mouse.move(lookX,lookY+100,{steps:5});await page.mouse.up();
   await page.waitForFunction(()=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkPitch)>90);
+  // Measuring comes after the movement checks, from the start position (R), so that it does not shift their timing.
+  await page.locator('.maplibregl-canvas').focus();await page.keyboard.press('r');
+  await checkMeasure(page,mobile,`measure-qumran-smooth-${mobile?'phone':'desktop'}`,true);
+  await page.getByRole('button',{name:'Measure',exact:true}).click();await page.getByRole('complementary',{name:'Measurement',exact:true}).waitFor({state:'detached'});
   await page.getByRole('button',{name:'Back to map',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='false');
   const cameraErrors=await page.evaluate(()=>window.atlasCameraErrors);
@@ -239,6 +349,19 @@ try {
    await rebuilt(()=>ground.getByRole('button',{name:'Today',exact:true}).click());
    assert.match(await caption.innerText(),/built in Minecraft/,'Today returns to the block build');assert.doesNotMatch(await caption.innerText(),todayNote);
    assert.equal((await dataset()).siteBuild,'kidron-bene-hezir','Today draws the normal block build');
+   // At eye level: measuring on the block build and on the smooth model, the seeded photo viewpoints and the editor.
+   await page.getByRole('button',{name:'Walk around this site',exact:true}).click();
+   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true',{},{timeout:120000});
+   await checkMeasure(page,false,'measure-kidron-blocks');
+   await rebuilt(()=>caption.getByRole('button',{name:'Smooth',exact:true}).click());
+   await page.waitForFunction(()=>{const d=document.querySelector('.maplibregl-canvas')?.dataset;return d?.siteBuild==='smooth'&&d.walkGrounded==='true';},{},{timeout:120000});
+   await checkMeasure(page,false,'measure-kidron-smooth');
+   await page.getByRole('button',{name:'Measure',exact:true}).click();
+   await checkViewpoints(page,'kidron-bene-hezir');
+   await checkViewpointEditor(page,'kidron-bene-hezir','jer_kidron_mon-field-2026-10-19-dsc08791');
+   await page.getByRole('button',{name:'Back to map',exact:true}).click();await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='false');
+   await rebuilt(()=>caption.getByRole('button',{name:'Blocks',exact:true}).click());
+   assert.equal((await dataset()).siteBuild,'kidron-bene-hezir','Back to the block build');
    // The Great Sea has bare builds: Ancient ground in Blocks draws them (near build and rings), without
    // today's mapped features, and keeps the caption about today's terrain.
    await page.getByLabel('Browse all sites',{exact:true}).click();await page.getByRole('searchbox',{name:'Search map sites'}).fill('Temple enclosure');
@@ -262,7 +385,7 @@ try {
    assert.equal((await dataset()).siteBuild,'temple-great-sea','Today returns to the normal build');assert.doesNotMatch(await caption.innerText(),todayNote);
   }
   assert.deepEqual(errors,[]);
-  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, 3D geometry, persistent canvas, inline references, masonry collision, tap/held jumping, crouching, sprint controls/FOV, coverage gaps, provider failures, walk signs${mobile?'':', the Kidron Ancient ground view (Smooth fallback) and the Great Sea Ancient ground view in blocks'} (${normalMotion?'normal':'reduced'} motion).`);
+  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, 3D geometry, persistent canvas, inline references, masonry collision, tap/held jumping, crouching, sprint controls/FOV, coverage gaps, provider failures, walk signs, measuring${mobile?'':', the Kidron Ancient ground view (Smooth fallback), Kidron measuring in Blocks and Smooth, photo viewpoints, the viewpoint editor and the Great Sea Ancient ground view in blocks'} (${normalMotion?'normal':'reduced'} motion).`);
   await page.close();
   }catch(error){console.error(await page.evaluate(()=>({viewport:innerWidth,route:location.hash,plan:document.querySelector('[data-site-plan]')?.dataset.sitePlan,state:document.querySelector('[data-site-state]')?.dataset.siteState,walking:document.querySelector('[data-walking]')?.dataset.walking,canvas:{...document.querySelector('.maplibregl-canvas')?.dataset},events:window.atlasTestEvents})));await page.screenshot({path:`/tmp/copperscroll-map-failure-${mobile?'phone':'desktop'}.png`});throw error;}
  }

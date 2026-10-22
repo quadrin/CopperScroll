@@ -17,10 +17,21 @@
 .walk-measure-card dt{color:#55624f}.walk-measure-card dd{margin:0;display:flex;flex-direction:column;align-items:flex-end;font-variant-numeric:tabular-nums}
 .walk-measure-card dd span:first-child{font-weight:700;color:#1f3527}.walk-measure-card dd span+span{color:#5c5a48;font-size:11px}
 .walk-measure-cubit{display:flex;align-items:center;gap:7px}.walk-measure-cubit select{flex:1;min-width:0;min-height:32px;font:12px Arial,sans-serif}
-.walk-measure-source,.walk-measure-caveat,.walk-measure-hint{color:#6a5f49;font-size:10.5px}
+.walk-measure-source,.walk-measure-caveat,.walk-measure-hint,.walk-measure-help{color:#6a5f49;font-size:10.5px}
 .walk-measure-limit{margin:0;color:#5b3c16;font-size:11px;font-style:italic}
-.walk-measure-hint{margin:0}
-@media(max-width:700px){.walk-measure-card{left:8px;top:96px;bottom:auto;width:calc(100% - 16px);max-height:40%;font-size:11px;padding:8px 10px;gap:3px}.walk-measure-source,.walk-measure-caveat{font-size:10px}}
+.walk-measure-hint,.walk-measure-help{margin:0}
+/* Phones: a compact card at the top, where the sky usually is, so that taps reach the ground below it. The site
+   caption steps aside while measuring (turn Measure off to change Blocks/Smooth); the source and the general caveats
+   are left out, the relative-units caveat and the "not a test" lines stay. */
+@media(max-width:700px){
+ .walk-measure-card{left:8px;right:68px;top:8px;bottom:auto;width:auto;max-height:42%;font-size:11px;padding:7px 9px;gap:3px}
+ .map-surface:has(.walk-measure-card) .map-site-caption{display:none}
+ .walk-measure-source,.walk-measure-caveat:not(.walk-measure-units),.walk-measure-help{display:none}
+ .walk-measure-warning{padding:2px 6px}
+ .walk-measure-card dl{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+ .walk-measure-card dl>div{flex-direction:column;gap:0}.walk-measure-card dd{align-items:flex-start}
+ .walk-measure-limit{font-size:10px}
+}
 
 /* A photo shown from its viewpoint: drawn over the canvas at the camera's scale. */
 .photo-view-overlay{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}

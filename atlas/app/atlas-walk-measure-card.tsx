@@ -30,12 +30,12 @@ export default function WalkMeasureCard({ points, style, units, onClear }: { poi
       <label className="walk-measure-cubit">Cubit<select value={cubit} onChange={e => { const v = Number(e.currentTarget.value); setCubit(v); try { localStorage.setItem(STORE, String(v)); } catch { /* per-viewer convenience only */ } e.currentTarget.blur(); }}>
         {CUBITS.map(c => <option key={c.metres} value={c.metres}>{c.metres.toFixed(3)} m · {c.name}{c.metres === DEFAULT_CUBIT ? " (default)" : ""}</option>)}
       </select></label>
-      <small className="walk-measure-source">{chosen.source}.{chosen.metres === DEFAULT_CUBIT ? " Default: the middle of the project’s 0.40–0.60 m range." : ""}</small>
-      {units === "relative" && <small className="walk-measure-caveat">This model is drawn in relative units: these numbers are not metres on the ground.</small>}
+      <small className="walk-measure-source">{chosen.source}{chosen.metres === DEFAULT_CUBIT ? " (the default)" : ""}.</small>
+      {units === "relative" && <small className="walk-measure-caveat walk-measure-units">This model is drawn in relative units: these numbers are not metres on the ground.</small>}
       {style === "minecraft" && <small className="walk-measure-caveat">Blocks: an edge or a height can be off by up to half a block.</small>}
       <small className="walk-measure-caveat">Many heights and sizes in the display model are illustrative (Sources &amp; assumptions).</small>
       <p className="walk-measure-limit">{MEASURE_LIMIT}</p>
-      <small className="walk-measure-hint">A third click starts a new measurement · Esc clears.</small>
+      <small className="walk-measure-help">A third click starts a new measurement · Esc clears.</small>
     </aside>
   </>;
 }
