@@ -1,0 +1,426 @@
+{
+  "date": "2026-10-22",
+  "place": "hyrcania",
+  "anchor": {
+    "lat": 31.719,
+    "lon": 35.366,
+    "precision": "~200 m",
+    "gazetteer_source": "Wikidata Q1510248 (fits PEF XVIII 'Kh. Mird'; Pleiades 687923 is 1.7 km E)",
+    "record": "atlas/app/atlas-data.json places[id=hyrcania]"
+  },
+  "source": "Mapterhorn terrain tiles",
+  "tilejson": "https://tiles.mapterhorn.com/tilejson.json",
+  "tilejson_maxzoom": "not stated",
+  "attribution_url": "https://mapterhorn.com/attribution/",
+  "attribution_json": "https://download.mapterhorn.com/attribution.json",
+  "credit": "© Mapterhorn; COPERNICUS GLO-30 (glo30): DLR e.V. 2010-2014, Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA. All rights reserved. Accessed via OpenTopography and AWS Open Data. — COPERNICUS full, free and open license; 10 meter Digital Elevation Model (DEM) of Israel (isr10): ASTER GDEM courtesy of METI and NASA processed by 4cast LTD using VTbuilder — ASTER GDEM Public Domain",
+  "encoding": "Terrarium: R*256 + G + B/256 - 32768 metres",
+  "zoom_selection": {
+    "target_pixel_m": 5.0,
+    "first_zoom_meeting_target": 14,
+    "pixel_m_at_zoom": 8.13,
+    "zoom_used": 13,
+    "high_resolution_archives_covering_anchor": [
+      {
+        "name": "planet.pmtiles",
+        "url": "https://download.mapterhorn.com/planet.pmtiles",
+        "min_zoom": 0,
+        "max_zoom": 12,
+        "md5sum": "4bf586b043f7619d9a9442b43c163f36",
+        "size": 355579263191
+      },
+      {
+        "name": "6-38-26.pmtiles",
+        "url": "https://download.mapterhorn.com/6-38-26.pmtiles",
+        "min_zoom": 13,
+        "max_zoom": 13,
+        "md5sum": "b2bdcf33f6c9953a3488c76ecd399835",
+        "size": 287320015
+      }
+    ],
+    "probes": [
+      {
+        "zoom": 14,
+        "url": "https://tiles.mapterhorn.com/14/9801/6668.webp",
+        "http": "404",
+        "pixel_m": 4.06
+      },
+      {
+        "zoom": 13,
+        "url": "https://tiles.mapterhorn.com/13/4900/3334.webp",
+        "http": "200",
+        "pixel_m": 8.13
+      }
+    ],
+    "note": "tilejson states no maxzoom; Mapterhorn download index lists the z13+ archive covering the anchor and its max_zoom. The finest served zoom is used; 5 m sampling interpolates it and adds no terrain detail."
+  },
+  "tiles_archived": true,
+  "tiles_total_bytes": 463658,
+  "tiles": [
+    {
+      "url": "https://tiles.mapterhorn.com/13/4900/3333.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain-wide/13-4900-3333.webp",
+      "bytes": 117866,
+      "sha256": "a62c9d8be000c21dda97afca195915e47a039b5629c9a0eed5a119a33370faf2"
+    },
+    {
+      "url": "https://tiles.mapterhorn.com/13/4901/3333.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain-wide/13-4901-3333.webp",
+      "bytes": 111732,
+      "sha256": "6830fc3abc7690a9c740d6c0d910e2b134a1645d52bcfcdeb84f805f83ebad8a"
+    },
+    {
+      "url": "https://tiles.mapterhorn.com/13/4900/3334.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain-wide/13-4900-3334.webp",
+      "bytes": 119666,
+      "sha256": "5c44449bfdc6a383b672c32f80938e37977271d847e026e50e923d330902b51e"
+    },
+    {
+      "url": "https://tiles.mapterhorn.com/13/4901/3334.webp",
+      "file": "research/assets/plans/atlas-explorer/terrain-wide/13-4901-3334.webp",
+      "bytes": 114394,
+      "sha256": "422a9383bc30bb3889b4f70abf7156d658282d12b1906134c4b8431bd86d4143"
+    }
+  ],
+  "coverage_check": {
+    "tileset": "https://single-archive-tiles.mapterhorn.com/coverage.json",
+    "zoom": 12,
+    "tiles": [
+      {
+        "url": "https://single-archive-tiles.mapterhorn.com/coverage/12/2450/1666.mvt",
+        "file": "research/assets/plans/atlas-explorer/terrain-wide/coverage-12-2450-1666.mvt",
+        "bytes": 95,
+        "sha256": "b1b00c2033a916f4d53e4cd8535ca2baa35ffbfe9746e1edc6992b2d6007841a"
+      },
+      {
+        "url": "https://single-archive-tiles.mapterhorn.com/coverage/12/2450/1667.mvt",
+        "file": "research/assets/plans/atlas-explorer/terrain-wide/coverage-12-2450-1667.mvt",
+        "bytes": 95,
+        "sha256": "b1b00c2033a916f4d53e4cd8535ca2baa35ffbfe9746e1edc6992b2d6007841a"
+      }
+    ],
+    "method": "5 x 5 points across the patch (corners, quarter points, anchor) tested against the coverage polygons; Mapterhorn uses the finest covering source.",
+    "points": [
+      {
+        "x": -1200.0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": -1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -1200.0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": -600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -1200.0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": 0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -1200.0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": 600.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -1200.0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": -600.0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 600.0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      },
+      {
+        "x": 1200.0,
+        "z": 1200.0,
+        "sources": [
+          "glo30",
+          "isr10"
+        ],
+        "finest": "isr10"
+      }
+    ],
+    "finest_source_over_patch": [
+      "isr10"
+    ]
+  },
+  "sources": [
+    {
+      "source": "glo30",
+      "name": "COPERNICUS GLO-30",
+      "website": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "license": "COPERNICUS full, free and open license",
+      "producer": "DLR e.V. 2010-2014, Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA. All rights reserved. Accessed via OpenTopography and AWS Open Data.",
+      "license_pdf": "https://github.com/mapterhorn/mapterhorn/blob/main/source-catalog/glo30/LICENSE.pdf",
+      "resolution": 30.0,
+      "access_year": 2025,
+      "tarball_size": 306375178240,
+      "tarball_md5sum": "133453b85b63c4a04538d77956c314d3",
+      "tarball_url": "https://download.mapterhorn.com/sources/glo30.tar"
+    },
+    {
+      "source": "isr10",
+      "name": "10 meter Digital Elevation Model (DEM) of Israel",
+      "website": "https://www.jspacesystems.or.jp/ersdac/GDEM/E/",
+      "license": "ASTER GDEM Public Domain",
+      "producer": "ASTER GDEM courtesy of METI and NASA processed by 4cast LTD using VTbuilder",
+      "license_pdf": "https://github.com/mapterhorn/mapterhorn/blob/main/source-catalog/isr10/LICENSE.pdf",
+      "resolution": 10.0,
+      "access_year": 2026,
+      "tarball_size": 1449093120,
+      "tarball_md5sum": "80a845ff3f99877fcd5b4a123dbc3eca",
+      "tarball_url": "https://download.mapterhorn.com/sources/isr10.tar"
+    }
+  ],
+  "source_note": "Mapterhorn source-catalog/isr10/metadata.json gives producer \"ASTER GDEM courtesy of METI and NASA processed by 4cast LTD using VTbuilder\": a 10 m posting resampled from ASTER GDEM, so effective detail is coarser than 10 m.",
+  "frame": "x east, z south, metres; MercatorCoordinate(origin.x + x*scale, origin.y + z*scale), scale = meterInMercatorCoordinateUnits() at the anchor (MapLibre earth radius 6371008.8 m), as in atlas/app/atlas-map-site-layer.ts.",
+  "sampling": "Bilinear decoded elevation from a seamless z13 mosaic (pixel centres +0.5); 481 x 481 samples at 5 m over a 2400 m square centred on the anchor; row-major from north-west (z=-1200) to south-east. Stored as int16 decimetres relative to centreElevation 230.39 m (quantisation 0.1 m).",
+  "asset": "atlas/public/terrain/hyrcania.json",
+  "asset_bytes": 617378,
+  "asset_sha256": "1b50f817b420563b433b4e89139bdfe8810529fba1e8bddaf231bc1ebf124a22",
+  "elevation_range_m": [
+    34.0,
+    386.8
+  ],
+  "centre_elevation_m": 230.39,
+  "hillshade": {
+    "file": "research/assets/plans/atlas-explorer/terrain-wide/hyrcania-hillshade.png",
+    "pixels": [
+      962,
+      996
+    ],
+    "sha256": "ad1989c9ff0d61f4381d1e747979f4cb6784580dd6752c47ec2070631ea8afc9",
+    "kind": "project-generated derivative (hillshade, hypsometric tint, 20/100 m contours) of the sampled grid; not a source image",
+    "markers": [
+      {
+        "x": 0,
+        "z": 0,
+        "radius_m": 50,
+        "label": "Hyrcania / Khirbet el-Mird anchor (~200 m)"
+      }
+    ],
+    "overlays": "dashed box = existing 800 m atlas patch; north arrow; 500 m scale bar"
+  },
+  "overlap_check": {
+    "compared": "65 x 65 samples of the existing 800 m patch in atlas/app/atlas-model-terrain.json vs this patch bilinearly read at the same atlas-frame x,z",
+    "zero_shift": {
+      "mean_old_minus_new_m": 0.02,
+      "mean_abs_m": 0.28,
+      "rms_m": 0.38,
+      "max_abs_m": 2.12,
+      "max_at_xz_m": [
+        -375.0,
+        -350.0
+      ]
+    },
+    "best_shift_search": {
+      "grid": "-40..40 m in 5 m steps, x and z",
+      "best_shift_xz_m": [
+        0,
+        0
+      ],
+      "rms_at_best_m": 0.38
+    },
+    "centre_elevation_old_m": 229.96,
+    "centre_elevation_new_m": 230.39,
+    "z12_same_tiles_mercator_frame": {
+      "mean_old_minus_new_m": 0.02,
+      "mean_abs_m": 0.09,
+      "rms_m": 0.1,
+      "max_abs_m": 0.38,
+      "max_at_xz_m": [
+        -362.5,
+        -337.5
+      ],
+      "note": "Old patch vs the same archived z12 tiles re-read here in the atlas Mercator frame with a seamless mosaic: isolates frame convention (111320 m/deg local approximation vs MapLibre metres) and tile-edge clamping from the z12-to-z13 resolution change."
+    }
+  },
+  "limit": "Modern terrain (Mapterhorn compilation), not ancient ground surface. Anchor is a gazetteer point (precision as recorded); the patch does not register any plan or identify a feature. Modern road cuts, spoil, wadi beds and the receding Dead Sea shoreline are present-day surfaces. Source DEM effective resolution is coarser than the 5 m grid; interpolation adds no detail, and steep cliff faces are smoothed. Vertical datum as delivered by Mapterhorn from the source DEM (not independently checked)."
+}

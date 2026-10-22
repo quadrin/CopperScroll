@@ -26,31 +26,43 @@ Rounding to the block size can move an edge or a height by up to half a block. T
 | qumran-ilan | 0.5 units | 360 × 56 × 240 | 0, -60, 0 | 15,080 | 2,940,292 | 0 | 25,170 | qumran-ilan.bin.gz (147 KB) |
 | qumran-reeder | 0.25 units | 188 × 23 × 110 | 1024, -60, 0 | 1,052 | 167,871 | 0 | 3,245 | qumran-reeder.bin.gz (16 KB) |
 | jericho-ac | 0.25 units | 142 × 14 × 188 | 2048, -60, 0 | 772 | 212,688 | 0 | 1,600 | jericho-ac.bin.gz (9 KB) |
-| jericho-early@stage3 | 0.25 m | 506 × 40 × 342 | 3072, -60, 0 | 1,050 | 3,755,009 | 0 | 4,433 | jericho-early@stage3.bin.gz (24 KB) |
-| jericho-early | 0.25 m | 388 × 29 × 270 | 4096, -60, 0 | 746 | 2,178,413 | 0 | 1,438 | jericho-early.bin.gz (8 KB) |
-| jericho-late@stage6 | 0.25 m | 504 × 40 × 336 | 5120, -60, 0 | 1,422 | 3,679,386 | 0 | 9,277 | jericho-late@stage6.bin.gz (51 KB) |
-| jericho-late@herodian | 0.25 m | 502 × 39 × 322 | 6144, -60, 0 | 863 | 3,442,683 | 0 | 3,206 | jericho-late@herodian.bin.gz (17 KB) |
-| jericho-late | 0.25 m | 388 × 29 × 270 | 7168, -60, 0 | 746 | 2,178,413 | 0 | 1,438 | jericho-late.bin.gz (8 KB) |
+| jericho-early@stage3 | 0.25 m | 512 × 40 × 344 | 3072, -60, 0 | 1,181 | 3,822,578 | 0 | 4,329 | jericho-early@stage3.bin.gz (24 KB) |
+| jericho-early | 0.25 m | 392 × 29 × 272 | 4096, -60, 0 | 641 | 2,219,299 | 0 | 1,072 | jericho-early.bin.gz (6 KB) |
+| jericho-late@stage6 | 0.25 m | 504 × 40 × 336 | 5120, -60, 0 | 1,549 | 3,679,275 | 0 | 9,102 | jericho-late@stage6.bin.gz (50 KB) |
+| jericho-late@herodian | 0.25 m | 504 × 39 × 328 | 6144, -60, 0 | 1,029 | 3,523,287 | 0 | 3,143 | jericho-late@herodian.bin.gz (17 KB) |
+| jericho-late | 0.25 m | 392 × 29 × 272 | 7168, -60, 0 | 641 | 2,219,299 | 0 | 1,072 | jericho-late.bin.gz (6 KB) |
 | siloam-receiver | 0.25 units | 188 × 19 × 112 | 8192, -60, 0 | 662 | 168,774 | 0 | 1,546 | siloam-receiver.bin.gz (8 KB) |
-| gerizim-precinct | 0.5 m | 510 × 43 × 580 | 9216, -60, 0 | 1,882 | 5,369,218 | 0 | 3,028 | gerizim-precinct.bin.gz (17 KB) |
-| gerizim-precinct@persian | 0.5 m | 510 × 42 × 580 | 10240, -60, 0 | 524 | 5,033,957 | 0 | 750 | gerizim-precinct@persian.bin.gz (5 KB) |
+| gerizim-precinct | 0.5 m | 512 × 115 × 580 | 9216, -60, 0 | 36,785 | 25,542,401 | 0 | 42,682 | gerizim-precinct.bin.gz (274 KB) |
+| gerizim-precinct@persian | 0.5 m | 512 × 115 × 580 | 10240, -60, 0 | 36,075 | 25,344,796 | 0 | 40,855 | gerizim-precinct@persian.bin.gz (263 KB) |
 | doq-waterworks | 0.25 units | 156 × 24 × 152 | 11264, -60, 0 | 1,931 | 380,264 | 0 | 4,633 | doq-waterworks.bin.gz (23 KB) |
-| hyrcania-waterworks | 0.25 m | 724 × 101 × 368 | 12288, -60, 0 | 7,375 | 19,237,413 | 0 | 13,662 | hyrcania-waterworks.bin.gz (73 KB) |
-| hyrcania-waterworks@herodian | 0.25 m | 726 × 129 × 368 | 13312, -60, 0 | 7,441 | 19,341,407 | 0 | 13,684 | hyrcania-waterworks@herodian.bin.gz (73 KB) |
+| hyrcania-waterworks | 0.25 m | 724 × 73 × 368 | 12288, -60, 0 | 15,992 | 12,239,108 | 0 | 25,569 | hyrcania-waterworks.bin.gz (142 KB) |
+| hyrcania-waterworks@herodian | 0.25 m | 728 × 103 × 368 | 13312, -60, 0 | 16,712 | 12,897,521 | 0 | 26,524 | hyrcania-waterworks@herodian.bin.gz (148 KB) |
 | abu-saraj-iv17 | 0.25 m | 48 × 16 × 36 | 14336, -60, 0 | 401 | 11,687 | 0 | 1,379 | none: no map location; built with its roof |
-| bethesda-pools | 0.5 m | 256 × 37 × 256 | 15360, -60, 0 | 884 | 1,742,009 | 0 | 1,102 | bethesda-pools.bin.gz (6 KB) |
-| bethesda-pools@royal | 0.5 m | 256 × 31 × 256 | 16384, -60, 0 | 325 | 1,490,278 | 0 | 427 | bethesda-pools@royal.bin.gz (3 KB) |
-| east-gate-warren | 0.5 m | 260 × 85 × 200 | 17408, -60, 0 | 1,216 | 2,759,472 | 0 | 2,042 | east-gate-warren.bin.gz (11 KB) |
-| kidron-bene-hezir | 0.25 m | 284 × 112 × 444 | 18432, -60, 0 | 40,731 | 7,495,384 | 0 | 54,535 | kidron-bene-hezir.bin.gz (314 KB) |
-| kidron-bene-hezir@avigad | 0.25 m | 284 × 112 × 444 | 19456, -60, 0 | 41,101 | 7,495,268 | 0 | 55,608 | kidron-bene-hezir@avigad.bin.gz (320 KB) |
+| bethesda-pools | 0.5 m | 258 × 57 × 258 | 15360, -60, 0 | 3,630 | 1,813,937 | 0 | 9,555 | bethesda-pools.bin.gz (53 KB) |
+| bethesda-pools@royal | 0.5 m | 258 × 54 × 258 | 16384, -60, 0 | 3,161 | 1,622,956 | 0 | 8,434 | bethesda-pools@royal.bin.gz (47 KB) |
+| east-gate-warren | 0.5 m | 262 × 98 × 202 | 17408, -60, 0 | 11,302 | 2,967,635 | 0 | 31,027 | east-gate-warren.bin.gz (169 KB) |
+| kidron-bene-hezir | 0.25 m | 284 × 112 × 444 | 18432, -60, 0 | 39,906 | 7,835,222 | 0 | 50,353 | kidron-bene-hezir.bin.gz (292 KB) |
+| kidron-bene-hezir@avigad | 0.25 m | 284 × 112 × 444 | 19456, -60, 0 | 40,265 | 7,835,097 | 0 | 51,403 | kidron-bene-hezir@avigad.bin.gz (298 KB) |
 | temple-great-sea | 0.5 m | 142 × 61 × 170 | 20480, -60, 0 | 1,163 | 782,685 | 0 | 3,920 | temple-great-sea.bin.gz (20 KB) |
-| qumran-settlement | 0.5 m | 248 × 17 × 408 | 21504, -60, 0 | 3,174 | 1,422,484 | 0 | 11,222 | qumran-settlement.bin.gz (56 KB) |
-| qumran-settlement~ring1 | 2 m | 400 × 58 × 400 | 22528, -60, 0 | 25,754 | 3,546,029 | 0 | 37,949 | qumran-settlement~ring1.bin.gz (228 KB) |
-| qumran-settlement~ring2 | 8 m | 288 × 42 × 288 | 23552, -60, 0 | 11,110 | 754,106 | 0 | 32,757 | qumran-settlement~ring2.bin.gz (189 KB) |
-| kidron-bene-hezir~ring1 | 1 m | 608 × 130 × 608 | 24576, -60, 0 | 157,336 | 23,346,370 | 0 | 248,619 | kidron-bene-hezir~ring1.bin.gz (1467 KB) |
-| kidron-bene-hezir~ring2 | 8 m | 288 × 27 × 288 | 25600, -60, 0 | 13,716 | 1,027,149 | 0 | 41,327 | kidron-bene-hezir~ring2.bin.gz (239 KB) |
-| temple-great-sea~ring1 | 1 m | 608 × 114 × 608 | 26624, -60, 0 | 85,324 | 24,987,255 | 0 | 147,768 | temple-great-sea~ring1.bin.gz (886 KB) |
-| temple-great-sea~ring2 | 8 m | 288 × 27 × 288 | 27648, -60, 0 | 12,204 | 1,074,872 | 0 | 35,190 | temple-great-sea~ring2.bin.gz (203 KB) |
+| qumran-settlement | 0.5 m | 250 × 27 × 404 | 21504, -60, 0 | 5,682 | 1,423,916 | 0 | 11,477 | qumran-settlement.bin.gz (59 KB) |
+| qumran-settlement~ring1 | 1 m | 608 × 111 × 608 | 22528, -60, 0 | 70,379 | 14,576,907 | 0 | 102,335 | qumran-settlement~ring1.bin.gz (630 KB) |
+| qumran-settlement~ring2 | 8 m | 288 × 42 × 288 | 23552, -60, 0 | 11,972 | 785,951 | 0 | 35,385 | qumran-settlement~ring2.bin.gz (204 KB) |
+| jericho-early~ring1 | 1 m | 608 × 47 × 608 | 24576, -60, 0 | 36,192 | 8,090,458 | 0 | 57,309 | jericho-early~ring1.bin.gz (356 KB) |
+| jericho-early~ring2 | 8 m | 288 × 30 × 288 | 25600, -60, 0 | 10,589 | 463,069 | 0 | 31,784 | jericho-early~ring2.bin.gz (176 KB) |
+| jericho-late~ring1 | 1 m | 608 × 47 × 608 | 26624, -60, 0 | 36,192 | 8,090,458 | 0 | 57,309 | jericho-late~ring1.bin.gz (356 KB) |
+| jericho-late~ring2 | 8 m | 288 × 30 × 288 | 27648, -60, 0 | 10,589 | 463,069 | 0 | 31,784 | jericho-late~ring2.bin.gz (176 KB) |
+| gerizim-precinct~ring1 | 1 m | 608 × 154 × 608 | 28672, -60, 0 | 76,807 | 27,469,351 | 0 | 118,919 | gerizim-precinct~ring1.bin.gz (762 KB) |
+| gerizim-precinct~ring2 | 8 m | 288 × 48 × 288 | 29696, -60, 0 | 18,887 | 1,641,944 | 0 | 57,183 | gerizim-precinct~ring2.bin.gz (340 KB) |
+| hyrcania-waterworks~ring1 | 1 m | 608 × 165 × 608 | 30720, -60, 0 | 108,452 | 28,181,209 | 0 | 160,001 | hyrcania-waterworks~ring1.bin.gz (1023 KB) |
+| hyrcania-waterworks~ring2 | 8 m | 288 × 38 × 288 | 31744, -60, 0 | 18,695 | 806,779 | 0 | 56,768 | hyrcania-waterworks~ring2.bin.gz (322 KB) |
+| bethesda-pools~ring1 | 1 m | 608 × 98 × 608 | 32768, -60, 0 | 111,127 | 20,772,115 | 0 | 186,926 | bethesda-pools~ring1.bin.gz (1129 KB) |
+| bethesda-pools~ring2 | 8 m | 288 × 24 × 288 | 33792, -60, 0 | 11,432 | 940,697 | 0 | 32,277 | bethesda-pools~ring2.bin.gz (183 KB) |
+| east-gate-warren~ring1 | 1 m | 608 × 106 × 608 | 34816, -60, 0 | 100,886 | 18,291,641 | 0 | 182,229 | east-gate-warren~ring1.bin.gz (1092 KB) |
+| east-gate-warren~ring2 | 8 m | 288 × 26 × 288 | 35840, -60, 0 | 12,049 | 1,048,633 | 0 | 35,241 | east-gate-warren~ring2.bin.gz (203 KB) |
+| kidron-bene-hezir~ring1 | 1 m | 608 × 132 × 608 | 36864, -60, 0 | 157,308 | 23,346,172 | 0 | 248,541 | kidron-bene-hezir~ring1.bin.gz (1467 KB) |
+| kidron-bene-hezir~ring2 | 8 m | 288 × 27 × 288 | 37888, -60, 0 | 13,716 | 1,027,149 | 0 | 41,327 | kidron-bene-hezir~ring2.bin.gz (239 KB) |
+| temple-great-sea~ring1 | 1 m | 608 × 114 × 608 | 38912, -60, 0 | 85,324 | 24,987,255 | 0 | 147,768 | temple-great-sea~ring1.bin.gz (886 KB) |
+| temple-great-sea~ring2 | 8 m | 288 × 27 × 288 | 39936, -60, 0 | 12,204 | 1,074,872 | 0 | 35,190 | temple-great-sea~ring2.bin.gz (203 KB) |
 
 A name with `@` is a reconstruction view of that plan (the plain name is its **Remains** view); `~ring1` and `~ring2` are the terrain rings. "Units" are the source-relative units of those scenes. Every air block next to a drawn face has saved sky light; sections without saved light are open sky or solid rock. The Qumran build is fitted to the Kh. Qumran terrain patch; at Wadi Qumran the atlas keeps the smooth model.
 
@@ -81,10 +93,17 @@ Two new site models and four new views of existing models, built the same way, w
 - Surroundings in blocks: graves, city and retaining walls, gate buildings and buildings as solids; mapped paths and stairs as paved ground (the top half metre of the column takes the site's masonry block under a path and `smooth_stone` under a stair). Stair treads are built only in the fine builds, which include the surroundings inside their own area at their own block size.
 - The other 21 builds read back with the same fill counts and blocks as before. All 28 read back with no mismatches.
 - Second pass: four more materials for the setting only, codes 8–11: tree crowns as `oak_leaves[persistent=true]`, trunks as `oak_log`, green ground (the top half metre in mapped woods, orchards and grass) as `moss_block`, and roads as `gray_concrete`. Read-back ignores the leaves' saved distance to a log. The atlas draws them in its own colours. A build's header lists materials only up to the highest code it uses, so builds without the setting keep their bytes.
+- Third pass: the three Kidron builds that hold the monuments (the fine build, its original-state view and the inner ring) carry their new detail and the corrected ground at their feet. The other 25 builds read back unchanged.
+
+## Later still on 22 October 2026: six more settings, Kidron levels from Fig. 25
+
+- The other models drawn in metres now stand in their mapped surroundings ([record](../site_models_2026-10-22.md#mapped-surroundings-for-six-more-sites)). `jericho-early`, `jericho-late`, `gerizim-precinct`, `hyrcania-waterworks`, `bethesda-pools`, `east-gate-warren` and the traced `qumran-settlement` get the same rings as the Kidron and the Great Sea: 1 m blocks to ±304 m with the mapped surroundings, then 8 m blocks of terrain to ±1,152 m. Qumran's rings were 2 m and 8 m before. Their own builds now sit in the wide terrain, so they are larger than before. 40 builds in all.
+- The Kidron builds carry the levels read from Avigad's Fig. 25 elevation ([record](../site_models_2026-10-22.md#surroundings-and-registration)): Absalom's podium and parts, the Jehoshaphat sill and steps, Zechariah's visible foot and heights, the higher court walls, the ground climbing in front of the scarp and two scarp openings. The four Kidron builds were rebuilt alone after the full run, and their region files (x 18,432–19,967 and 36,864–38,399) were copied into the full run's save. A re-read of the merged save gives byte-identical atlas files for the Kidron builds and for their neighbours (the Golden Gate and the Great Sea). The outer Kidron ring did not change.
+- All 40 builds read back with no mismatches.
 
 ## The world save
 
-[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (23.6 MB, rebuilt on the evening of 22 October 2026 with all 28 builds, including the trees and roads) is the saved world, SHA-256 `c016872ff68126b36ca811ee54e054b591ebf9adc33eb61988e5aee99dc6ff86`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
+[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (42.6 MB, rebuilt late on 22 October 2026 with all 40 builds, including the Kidron levels from Fig. 25) is the saved world, SHA-256 `a3affc9738621ff14276b61b551802f18936e0ec6870625cf30521ff4519e646`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
 
 ## Rebuild
 

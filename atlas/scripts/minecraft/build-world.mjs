@@ -14,7 +14,7 @@ import {mkdirSync,writeFileSync,readFileSync,existsSync,rmSync,readdirSync} from
 import {createHash,randomBytes} from 'node:crypto';
 import {setTimeout as sleep} from 'node:timers/promises';
 import * as T from 'three';
-import {loadModels} from './load-models.mjs';
+import {loadModels,siteContextFeatures} from './load-models.mjs';
 import {createGrid,rasterGround,rasterSolids,carve,underfill,toBlocks,fillBoxes,blockTable,MATERIALS} from './voxelize.mjs';
 import {World} from './anvil.mjs';
 import {connectRcon} from './rcon.mjs';
@@ -23,27 +23,31 @@ import {greedyQuads,encodeBuild} from './mesh.mjs';
 // Block size in the model's units (metres, or the relative units of the source-plan
 // scenes). Half a block is the vertical step, through slabs. A site may set its own
 // terrain rings; a ring with `context` also builds the mapped surroundings in it.
+// The plans placed in a mapped setting get 1 m rings with the mapped surroundings in them.
+const CONTEXT_RINGS=[{size:1,half:304,context:true},{size:8,half:1152}];
 export const SITES=[
  {id:'qumran-ilan',size:.5,pilot:true,place:'kh_qumran',domain:{minX:-90,maxX:90,minZ:-66,maxZ:54}},
  {id:'qumran-reeder',size:.25},
  {id:'jericho-ac',size:.25},
- {id:'jericho-early',size:.25},
- {id:'jericho-late',size:.25},
+ {id:'jericho-early',size:.25,rings:CONTEXT_RINGS},
+ {id:'jericho-late',size:.25,rings:CONTEXT_RINGS},
  {id:'siloam-receiver',size:.25},
- {id:'gerizim-precinct',size:.5},
+ {id:'gerizim-precinct',size:.5,rings:CONTEXT_RINGS},
  {id:'doq-waterworks',size:.25},
- {id:'hyrcania-waterworks',size:.25},
+ {id:'hyrcania-waterworks',size:.25,rings:CONTEXT_RINGS},
  {id:'abu-saraj-iv17',size:.25,roof:true,mapped:false},
- {id:'bethesda-pools',size:.5},
- {id:'east-gate-warren',size:.5},
- {id:'kidron-bene-hezir',size:.25,rings:[{size:1,half:304,context:true},{size:8,half:1152}]},
- {id:'temple-great-sea',size:.5,rings:[{size:1,half:304,context:true},{size:8,half:1152}]},
+ {id:'bethesda-pools',size:.5,rings:CONTEXT_RINGS},
+ {id:'east-gate-warren',size:.5,rings:CONTEXT_RINGS},
+ {id:'kidron-bene-hezir',size:.25,rings:CONTEXT_RINGS},
+ {id:'temple-great-sea',size:.5,rings:CONTEXT_RINGS},
 ];
 const PILOT_GROUND=new Set(['qumran-ground','qumran-ridge-back','connected-limestone-bed']);
 // Plans with the wide terrain patch get coarser block rings around them, each with a
 // hole exactly the size of the build inside it.
 export const RINGS=[{size:2,half:400},{size:8,half:1152}];
-export const ringsFor=planId=>SITES.find(s=>s.id===planId)?.rings??RINGS;
+// A traced plan outside SITES takes the context rings when it is placed in a mapped setting.
+const PLACED_TRACED=new Set(['qumran-settlement']);
+export const ringsFor=planId=>SITES.find(s=>s.id===planId)?.rings??(PLACED_TRACED.has(planId)?CONTEXT_RINGS:RINGS);
 export const buildKey=(planId,layer)=>layer&&layer!=='remains'?`${planId}@${layer}`:planId;
 
 // One build per site; a traced plan, or a hand-built plan with views, gives one per layer
@@ -66,7 +70,7 @@ export function wideTerrain(placeId){
 
 export function voxelizeSite(models,spec){
  const plan=models.plans.find(p=>p.id===(spec.plan??spec.id));let root,ground=[],domain=spec.domain,carves=[],exclude=null;
- const options={layer:spec.layer,terrain:plan?.terrain==='wide'?wideTerrain(plan.placeIds[0]):undefined},snap=(v,s,up)=>(up?Math.ceil(v/s):Math.floor(v/s))*s;
+ const options={layer:spec.layer,terrain:plan?.terrain==='wide'?wideTerrain(plan.placeIds[0]):undefined,context:plan?.terrain==='wide'?siteContextFeatures(plan.id):undefined},snap=(v,s,up)=>(up?Math.ceil(v/s):Math.floor(v/s))*s;
  if(spec.pilot){
   root=models.pilot.buildQumranPilot();const patch=models.terrain[spec.place];
   // The same Mapterhorn patch the atlas uses around the anchor, fitted once.

@@ -6,6 +6,11 @@ import * as Three from 'three';
 import {SVGLoader} from 'three/addons/loaders/SVGLoader.js';
 
 const app=path=>new URL(`../../app/${path}`,import.meta.url);
+// The mapped surroundings of a plan placed in its setting (atlas/public/context), as the atlas loads them.
+export function siteContextFeatures(planId){
+ const entry=JSON.parse(readFileSync(app('atlas-site-context.json'),'utf8')).plans[planId];
+ return entry?JSON.parse(readFileSync(new URL(`../../public/${entry.features}`,import.meta.url),'utf8')).features:undefined;
+}
 const json=path=>JSON.parse(readFileSync(app(path),'utf8'));
 function module(path,deps){const exports={};const code=ts.transpileModule(readFileSync(app(path),'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,esModuleInterop:true}}).outputText;new Function('exports','require',code)(exports,name=>{assert(name in deps,`Missing dependency: ${name}`);return deps[name]});return exports;}
 const asModule=value=>({__esModule:true,default:value,...value});

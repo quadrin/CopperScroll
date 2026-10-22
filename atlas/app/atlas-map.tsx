@@ -254,9 +254,10 @@ export default function AtlasMap(props:Props) {
     setSiteState("loading");setSiteStyle(null);setSiteRegistered(false);
     const blocks=modelStyle==="minecraft"?import("./atlas-minecraft").then(m=>m.loadMinecraftBuild(plan.id,selectedPlace!.id,planLayer)).catch(()=>null):Promise.resolve(null);
     const terrain=plan.terrain==="wide"?import("./atlas-minecraft").then(m=>m.loadTerrainPatch(selectedPlace!.id)).catch(()=>null):Promise.resolve(null);
-    void Promise.all([import("./atlas-map-site-layer"),blocks,terrain]).then(([{createMapSiteLayer},build,patch])=>{
+    const setting=plan.terrain==="wide"?import("./atlas-minecraft").then(m=>m.loadSiteContext(plan.id)).catch(()=>null):Promise.resolve(null);
+    void Promise.all([import("./atlas-map-site-layer"),blocks,terrain,setting]).then(([{createMapSiteLayer},build,patch,context])=>{
       if(cancelled||mapRef.current!==map)return;
-      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);setSiteRegistered(!!runtime.model.landscape.registered);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build,{layer:planLayer,terrain:patch??undefined}));
+      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);setSiteRegistered(!!runtime.model.landscape.registered);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build,{layer:planLayer,terrain:patch??undefined,context:context??undefined}));
     }).catch(()=>{if(!cancelled)setSiteState("Source model could not load.");});
     return()=>{cancelled=true;walker.current?.stop();walker.current=null;siteRuntime.current=null;if(mapRef.current===map&&map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");};
   },[ready,plan?.id,focusId,modelAvailable,offMap,modelStyle,planLayer]);

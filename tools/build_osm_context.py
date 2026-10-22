@@ -9,9 +9,11 @@
 Writes:
 - research/assets/plans/osm-context-2026-10-22/<name>.json: the selected OSM elements (ids,
   versions, timestamps, tags, lat/lon), under the ODbL, with an identical atlas/research mirror;
-- atlas/app/atlas-site-context.json: per plan, the same features projected to the plan's frame
-  (metres, x east, z south, MapLibre Mercator frame at the place anchor, as
-  tools/build_wide_terrain.py and atlas/app/atlas-map-site-layer.ts), and any registration.
+- atlas/public/context/<name>.json: the same features projected to the place frame (metres, x east,
+  z south, MapLibre Mercator frame at the place anchor, as tools/build_wide_terrain.py and
+  atlas/app/atlas-map-site-layer.ts); the atlas loads it with the terrain;
+- atlas/app/atlas-site-context.json: per plan, the place, the record, the features file and the
+  placement (registration) the model builder needs.
 
 Context is modern: today's stairs, paths, cemeteries and standing walls. It locates and
 orients a model where the mapped monuments allow it; it is never archaeological evidence.
@@ -29,12 +31,23 @@ LICENCE = 'Open Database License (ODbL) 1.0; © OpenStreetMap contributors, http
 # Which elements each target keeps. Monument outlines or corner nodes register the model; the rest is
 # drawn as context.
 TARGETS = {
-    'kidron': {'plan': 'kidron-bene-hezir', 'place': 'jer_kidron_mon',
+    'kidron': {'plans': ['kidron-bene-hezir'], 'place': 'jer_kidron_mon',
                'outlines': {'bene-hezir': 'w288284732', 'zechariah': 'w288284733', 'absalom': 'w137729556'}},
     # The south-west and south-east corners of the Haram enclosure (relation 5862584, Temple Mount).
-    'great-sea': {'plan': 'temple-great-sea', 'place': 'jer_temple', 'outlines': {},
+    'great-sea': {'plans': ['temple-great-sea'], 'place': 'jer_temple', 'outlines': {},
                   'corners': {'sw': '29979854', 'se': '2915691228'}},
+    # The mapped outline of the excavated settlement (way 611895589, 'Qumran').
+    'qumran': {'plans': ['qumran-settlement'], 'place': 'kh_qumran', 'outlines': {'site': 'w611895589'}, 'placement': 'site'},
+    # The mapped excavation area of the pools (way 126864878, 'Pool of Bethesda').
+    'bethesda': {'plans': ['bethesda-pools'], 'place': 'jer_bethesda', 'outlines': {'site': 'w126864878'}, 'placement': 'site'},
+    # The mapped Golden Gate building (way 291836693): its centre and the bearing of its long sides.
+    'golden-gate': {'plans': ['east-gate-warren'], 'place': 'jer_east_gate', 'outlines': {'gate': 'w291836693'}, 'placement': 'gate'},
+    # No mapped outline that a model point can be tied to: the models stay at the place anchor.
+    'jericho': {'plans': ['jericho-early', 'jericho-late'], 'place': 'jericho_palaces', 'outlines': {}, 'placement': 'anchor'},
+    'gerizim': {'plans': ['gerizim-precinct'], 'place': 'gerizim', 'outlines': {}, 'placement': 'anchor'},
+    'hyrcania': {'plans': ['hyrcania-waterworks'], 'place': 'hyrcania', 'outlines': {}, 'placement': 'anchor'},
 }
+FEATURES = REPO / 'atlas/public/context'
 WARREN = REPO / 'research/assets/plans/warren1884-plate-vii/measurements.json'
 
 
@@ -132,6 +145,30 @@ def great_sea_registration(corners):
                    'taken from OpenStreetMap (relation 5862584), fix the model: its frame (the plate at its own scale bar, turned by '
                    'its north arrow) is turned so that the two south walls agree and moved so that their midpoints coincide.'),
     }
+
+
+def area_centroid(pts):
+    a = cx = cz = 0.0
+    for (x0, z0), (x1, z1) in zip(pts, pts[1:] + pts[:1]):
+        k = x0 * z1 - x1 * z0; a += k; cx += (x0 + x1) * k; cz += (z0 + z1) * k
+    return (cx / (3 * a), cz / (3 * a)) if abs(a) > 1e-9 else (sum(p[0] for p in pts) / len(pts), sum(p[1] for p in pts) / len(pts))
+
+
+def site_registration(outline):
+    """A model point is placed on the area centroid of a mapped outline; the model is not turned."""
+    c = area_centroid(outline); xs = [p[0] for p in outline]; zs = [p[1] for p in outline]
+    return {'target': [round(c[0], 2), round(c[1], 2)], 'rotationDeg': 0, 'outlineSize_m': [round(max(xs) - min(xs), 1), round(max(zs) - min(zs), 1)],
+            'method': 'A chosen model point is placed on the area centroid of the mapped outline; the model keeps its own orientation.'}
+
+
+def gate_registration(outline):
+    """The gatehouse centre on the mapped building's centroid, turned so that its long axis (the model's x
+    axis) runs along the mapped building's long sides."""
+    c = area_centroid(outline); sides = [(outline[i], outline[(i + 1) % len(outline)]) for i in range(len(outline))]
+    longest = max(sides, key=lambda s: math.dist(*s)); b = bearing(*longest) % 180
+    turn = (90 - b + 90) % 180 - 90
+    return {'target': [round(c[0], 2), round(c[1], 2)], 'rotationDeg': round(turn, 1), 'longSideBearing': round(b, 1),
+            'method': "The model's gatehouse centre is placed on the mapped Golden Gate building's centroid and the model is turned so that its gatehouse runs along the building's longest side."}
 
 
 def kidron_registration(outlines, at):
@@ -246,23 +283,31 @@ def main():
     if set(corners) != set(target.get('corners', {})): sys.exit('corner nodes not in the extract')
     for k, v in target.get('corners', {}).items():
         n = nodes[v]; selected.append({'id': 'n' + v, 'version': int(n.get('version')), 'timestamp': n.get('timestamp'), 'tags': {}, 'role': f'{k} corner', 'lat_lon': [[float(n.get('lat')), float(n.get('lon'))]]})
-    registration = kidron_registration(outlines, at) if args.name == 'kidron' else great_sea_registration(corners) if corners else None
+    placement = target.get('placement')
+    if args.name == 'kidron': registration = kidron_registration(outlines, at)
+    elif corners: registration = great_sea_registration(corners)
+    elif placement == 'site': registration = site_registration(outlines['site']['xz'])
+    elif placement == 'gate': registration = gate_registration(outlines['gate']['xz'])
+    else: registration = {'target': [0, 0], 'rotationDeg': 0, 'placement': 'anchor', 'method': "Not registered: no mapped outline can be tied to a model point, so the model stays at the place anchor with the anchor's precision."}
 
     ARCHIVE.mkdir(parents=True, exist_ok=True); MIRROR.mkdir(parents=True, exist_ok=True)
     today = datetime.date.today().isoformat()
     record = {'source': 'OpenStreetMap API 0.6 map call', 'bbox': args.bbox, 'retrieved': today,
               'osm_file_sha256': sha256(args.osm), 'generator': root.get('generator'),
-              'licence': LICENCE, 'place': target['place'], 'plan': target['plan'],
+              'licence': LICENCE, 'place': target['place'], 'plans': target['plans'],
               'frame': 'x east, z south, metres from the place anchor in the MapLibre Mercator frame',
               'selection': f'ways classified as context (steps, paths, roads, city walls, retaining walls, cemeteries, gate buildings, buildings and building parts, woods, orchards and grass) and mapped single trees with any vertex within {args.radius:g} m of ({cx:g}, {cz:g}); plus the monument outlines or corner nodes used for registration',
               'counts': {k: sum(1 for f in projected if f['kind'] == k) for k in sorted({f['kind'] for f in projected})},
               'registration': registration, 'elements': selected}
     (ARCHIVE / f'{args.name}.json').write_text(json.dumps(record, ensure_ascii=False, indent=1) + '\n')
     (MIRROR / f'{args.name}.json').write_bytes((ARCHIVE / f'{args.name}.json').read_bytes())
+    FEATURES.mkdir(parents=True, exist_ok=True)
+    (FEATURES / f'{args.name}.json').write_text(json.dumps({'licence': LICENCE, 'retrieved': today, 'place': target['place'], 'features': projected}, ensure_ascii=False, separators=(',', ':')) + '\n')
     out = json.loads(OUT.read_text()) if OUT.exists() else {'licence': LICENCE, 'plans': {}}
-    out['plans'][target['plan']] = {'place': target['place'], 'retrieved': today, 'record': f'research/assets/plans/osm-context-2026-10-22/{args.name}.json',
-                                    'registration': registration, 'features': projected}
-    OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')) + '\n')
+    for plan in target['plans']:
+        out['plans'][plan] = {'place': target['place'], 'retrieved': today, 'record': f'research/assets/plans/osm-context-2026-10-22/{args.name}.json',
+                              'features': f'context/{args.name}.json', 'counts': record['counts'], 'registration': registration}
+    OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1) + '\n')
     print(json.dumps({'features': record['counts'], 'registration': registration}, indent=1, ensure_ascii=False))
 
 

@@ -243,7 +243,7 @@
     "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/models/traced_plans/qumran-settlement.md",
     "credit": "Yitzhak Magen and Yuval Peleg, Back to Qumran: Final Report (1993–2004), Site Description (2018), Fig. 9 · CC BY-NC 4.0; original caption and scale retained.",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "limit": "Excavated remains as drawn on the general plan (all phases together; no legend). Traced at the figure's scale bar; not registered to geographic coordinates, so the 3D model sits at the site anchor (about ±100 m). No levels are used; wall heights are not traced; walls drawn only as outlines are left out.",
+    "limit": "Placed in its mapped setting: the traced frame's centre is put on the centroid of OpenStreetMap's outline of the excavated settlement (99.7 × 142.8 m), unturned; uncertain by some tens of metres. Excavated remains as drawn on the general plan (all phases together; no legend). Traced at the figure's scale bar; not registered to geographic coordinates, so the 3D model sits at the site anchor (about ±100 m). No levels are used; wall heights are not traced; walls drawn only as outlines are left out.",
     "features": [
       {
         "id": "L138",
@@ -940,7 +940,7 @@
     "source": "Trümper 2018 Fig. 20, p. 284 (= Netzer 2001 Plan 17, Stage 3)",
     "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
-    "limit": "Netzer's partly reconstructed plan of Stage 3 (Trümper phase 3, 103–76 BCE): two separate pools. The 3D views are traced at the plans' scale bars (Netzer Plans 17, 20 and 22 with Trümper Fig. 18) and are not registered to geographic coordinates. Pool depths follow the published rim and floor levels; other heights are illustrative.",
+    "limit": "Shown in its mapped setting but not registered: it stays at the site anchor (about ±300 m), so its place among the mapped features is uncertain. Netzer's partly reconstructed plan of Stage 3 (Trümper phase 3, 103–76 BCE): two separate pools. The 3D views are traced at the plans' scale bars (Netzer Plans 17, 20 and 22 with Trümper Fig. 18) and are not registered to geographic coordinates. Pool depths follow the published rim and floor levels; other heights are illustrative.",
     "features": [
       {
         "id": "complex",
@@ -973,7 +973,8 @@
         "label": "Remains",
         "kind": "observed"
       }
-    ]
+    ],
+    "terrain": "wide"
   },
   {
     "id": "jericho-late",
@@ -987,7 +988,7 @@
     "source": "Trümper 2018 Fig. 22, p. 286 (= Netzer 2001 Plan 20, Stage 6)",
     "credit": "Trümper 2018, figure credit Netzer 2001b · CC BY-NC 3.0; original caption and scale retained.",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
-    "limit": "Fig. 22 is Netzer's Stage 6 (Trümper phase 6, 67–63 BCE): the two pools are still separate. They were joined into one basin in the Herodian period (Netzer 2001 pp. 74, 85, 100; Plan 22, not reproduced here): choose Herodian under View. The 3D views are traced, not registered to geographic coordinates; pool depths follow the published rim and floor levels, other heights are illustrative.",
+    "limit": "Shown in its mapped setting but not registered: it stays at the site anchor (about ±300 m), so its place among the mapped features is uncertain. Fig. 22 is Netzer's Stage 6 (Trümper phase 6, 67–63 BCE): the two pools are still separate. They were joined into one basin in the Herodian period (Netzer 2001 pp. 74, 85, 100; Plan 22, not reproduced here): choose Herodian under View. The 3D views are traced, not registered to geographic coordinates; pool depths follow the published rim and floor levels, other heights are illustrative.",
     "features": [
       {
         "id": "complex",
@@ -1025,7 +1026,8 @@
         "label": "Remains",
         "kind": "observed"
       }
-    ]
+    ],
+    "terrain": "wide"
   },
   {
     "id": "siloam-receiver",
@@ -1143,7 +1145,7 @@
     "source": "Magen 2008, NEAEHL 5 p. 1743 site plan; pp. 1745–1747",
     "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/research/assets/plans/neaehl-vol5/gerizim-extract.pdf",
     "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
-    "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. Selected Hellenistic precinct and Area P envelopes only; the source also includes Persian, Byzantine and later remains. Staircases elsewhere and the courtyard cistern are described separately. The cistern and P5178 are not located by this overview. The Persian view follows the description in Magen et al. 2004 p. 3*.",
+    "limit": "Shown in its mapped setting but not registered: it stays at the site anchor on the summit, with its summit platform on the modern summit; its place among the mapped features is uncertain. No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. Selected Hellenistic precinct and Area P envelopes only; the source also includes Persian, Byzantine and later remains. Staircases elsewhere and the courtyard cistern are described separately. The cistern and P5178 are not located by this overview. The Persian view follows the description in Magen et al. 2004 p. 3*.",
     "shapes": [
       {
         "d": "M225 85 L445 120 L453 283 L420 465 L195 421Z",
@@ -1307,7 +1309,8 @@
         "label": "Persian precinct (Magen et al. 2004)",
         "kind": "published-reconstruction"
       }
-    ]
+    ],
+    "terrain": "wide"
   },
   {
     "id": "doq-waterworks",
@@ -1460,7 +1463,7 @@
     "source": "Patrich 1989 Fig. 22, p. 256; double-pool description p. 255; Patrich 2002 pp. 336–352; Feldman (Ilan ed.) pp. 326–335",
     "sourceUrl": "https://drive.google.com/file/d/1-6s-nqSD-PP_FpZ788Tc0dvH_z7eziZg/view",
     "credit": "Original project diagram of selected published structural relations. Simplified outlines; omitted walls are not absent remains.",
-    "limit": "No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. The source figure has no visible north arrow; no compass is inferred from page-up. Selected water installations only. The basin-centre and rim distance origins remain separate, unresolved hypotheses. The east bridge, pit and point 49 tunnel follow Patrich 2002's dimensions; the Herodian view is a reconstruction of the bridge to its 12.5 m channel.",
+    "limit": "Shown in its mapped setting but not registered: it stays at the site anchor (about ±200 m) and keeps the source's unturned frame, so its place and bearing among the mapped features are uncertain. No geographic registration. Source-relative selection marks are approximate; their size is not positional uncertainty. The source figure has no visible north arrow; no compass is inferred from page-up. Selected water installations only. The basin-centre and rim distance origins remain separate, unresolved hypotheses. The east bridge, pit and point 49 tunnel follow Patrich 2002's dimensions; the Herodian view is a reconstruction of the bridge to its 12.5 m channel.",
     "shapes": [
       {
         "d": "M163 94 L201 52 L254 92 L216 133Z",
@@ -1671,7 +1674,8 @@
         "label": "Herodian bridge (Patrich 2002)",
         "kind": "published-reconstruction"
       }
-    ]
+    ],
+    "terrain": "wide"
   },
   {
     "id": "abu-saraj-iv17",
@@ -1783,7 +1787,7 @@
     "source": "Duprez 1970 pp. 33–41 and Pl. II; Gibson 2005 pp. 286–287 and 2011 pp. 22–28; Pierre & Rousée 1981 pp. 23–25, Figs. 2–3",
     "sourceUrl": "https://github.com/quadrin/CopperScroll/blob/main/registration/duprez1970_extracted.md",
     "credit": "Original project diagram of selected published dimensions and relations. Simplified outlines; omitted walls are not absent remains.",
-    "limit": "No geographic registration. The pools use published dimensions with an assumed angle; the eastern complex follows the relative arrangement of Duprez Pl. II, and its distance and bearing from the pools are schematic. Byzantine and Crusader structures are omitted. The royal-period view follows Pierre & Rousée 1981: the dam, the north pool and an open canal before the south basin.",
+    "limit": "Placed in its mapped setting: the dam is put on the centroid of OpenStreetMap's outline of the excavated pool area (82.6 × 51.6 m), unturned; uncertain by about 25 m. No geographic registration. The pools use published dimensions with an assumed angle; the eastern complex follows the relative arrangement of Duprez Pl. II, and its distance and bearing from the pools are schematic. Byzantine and Crusader structures are omitted. The royal-period view follows Pierre & Rousée 1981: the dam, the north pool and an open canal before the south basin.",
     "north": {
       "x": 660,
       "y": 150,
@@ -2044,7 +2048,8 @@
         "label": "Royal period (Pierre & Rousée 1981)",
         "kind": "published-reconstruction"
       }
-    ]
+    ],
+    "terrain": "wide"
   },
   {
     "id": "east-gate-warren",
@@ -2057,7 +2062,7 @@
     "source": "Warren 1884 Pl. VI (measured with its scale bar); SWP Jerusalem (Warren & Conder 1884) pp. 141–145, 221",
     "sourceUrl": "https://archive.org/details/planselevationss00warr",
     "credit": "Original project diagram of measurements from a public-domain plate and its text. Simplified outlines; omitted structures are not absent remains.",
-    "limit": "No geographic registration; the frame is the plate's, rotated about 9° from north. Levels are from Warren's recorded feet; the ground between them is interpolated. The gallery is shown in a display cutaway.",
+    "limit": "Placed in its mapped setting: the gatehouse centre is put on OpenStreetMap's Golden Gate building and the plate frame is turned 5.5° so the gatehouse runs along the building's long sides (84.5°); Warren's 24.8 × 17.3 m gatehouse matches the mapped 27 × 17 m building. No geographic registration; the frame is the plate's, rotated about 9° from north. Levels are from Warren's recorded feet; the ground between them is interpolated. The gallery is shown in a display cutaway.",
     "north": {
       "x": 640,
       "y": 80,
@@ -2227,7 +2232,8 @@
         ],
         "sourceUrl": "https://archive.org/details/surveyofwesternp00warruoft"
       }
-    ]
+    ],
+    "terrain": "wide"
   },
   {
     "id": "kidron-bene-hezir",
