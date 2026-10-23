@@ -39,8 +39,8 @@ Rounding to the block size can move an edge or a height by up to half a block. T
 | hyrcania-waterworks | 0.5 m | 380 × 123 × 380 | 12288, -60, 0 | 60,337 | 9,418,334 | 0 | 91,583 | hyrcania-waterworks.bin.gz (553 KB) |
 | hyrcania-waterworks@herodian | 0.5 m | 380 × 123 × 380 | 13312, -60, 0 | 60,665 | 9,426,151 | 0 | 92,518 | hyrcania-waterworks@herodian.bin.gz (559 KB) |
 | abu-saraj-iv17 | 0.25 m | 48 × 16 × 36 | 14336, -60, 0 | 401 | 11,687 | 0 | 1,379 | none: no map location; built with its roof |
-| bethesda-pools | 0.5 m | 258 × 57 × 258 | 15360, -60, 0 | 3,630 | 1,813,937 | 0 | 9,555 | bethesda-pools.bin.gz (53 KB) |
-| bethesda-pools@royal | 0.5 m | 258 × 54 × 258 | 16384, -60, 0 | 3,161 | 1,622,956 | 0 | 8,434 | bethesda-pools@royal.bin.gz (47 KB) |
+| bethesda-pools | 0.5 m | 258 × 49 × 258 | 15360, -60, 0 | 6,201 | 1,792,172 | 0 | 14,619 | bethesda-pools.bin.gz (82 KB) |
+| bethesda-pools@royal | 0.5 m | 258 × 45 × 258 | 16384, -60, 0 | 4,913 | 1,532,399 | 0 | 11,235 | bethesda-pools@royal.bin.gz (62 KB) |
 | east-gate-warren | 0.5 m | 262 × 98 × 202 | 17408, -60, 0 | 11,302 | 2,967,635 | 0 | 31,027 | east-gate-warren.bin.gz (169 KB) |
 | kidron-bene-hezir | 0.25 m | 284 × 112 × 444 | 18432, -60, 0 | 39,906 | 7,835,222 | 0 | 50,353 | kidron-bene-hezir.bin.gz (292 KB) |
 | kidron-bene-hezir@avigad | 0.25 m | 284 × 112 × 444 | 19456, -60, 0 | 40,265 | 7,835,097 | 0 | 51,403 | kidron-bene-hezir@avigad.bin.gz (298 KB) |
@@ -56,7 +56,7 @@ Rounding to the block size can move an edge or a height by up to half a block. T
 | gerizim-precinct~ring2 | 8 m | 288 × 48 × 288 | 29696, -60, 0 | 18,887 | 1,641,944 | 0 | 57,183 | gerizim-precinct~ring2.bin.gz (340 KB) |
 | hyrcania-waterworks~ring1 | 1 m | 608 × 166 × 608 | 30720, -60, 0 | 103,510 | 25,149,700 | 0 | 149,770 | hyrcania-waterworks~ring1.bin.gz (955 KB) |
 | hyrcania-waterworks~ring2 | 8 m | 288 × 38 × 288 | 31744, -60, 0 | 18,695 | 806,779 | 0 | 56,768 | hyrcania-waterworks~ring2.bin.gz (322 KB) |
-| bethesda-pools~ring1 | 1 m | 608 × 98 × 608 | 32768, -60, 0 | 111,127 | 20,772,115 | 0 | 186,926 | bethesda-pools~ring1.bin.gz (1129 KB) |
+| bethesda-pools~ring1 | 1 m | 608 × 98 × 608 | 32768, -60, 0 | 111,602 | 20,757,010 | 0 | 187,306 | bethesda-pools~ring1.bin.gz (1135 KB) |
 | bethesda-pools~ring2 | 8 m | 288 × 24 × 288 | 33792, -60, 0 | 11,432 | 940,697 | 0 | 32,277 | bethesda-pools~ring2.bin.gz (183 KB) |
 | east-gate-warren~ring1 | 1 m | 608 × 106 × 608 | 34816, -60, 0 | 100,886 | 18,291,641 | 0 | 182,229 | east-gate-warren~ring1.bin.gz (1092 KB) |
 | east-gate-warren~ring2 | 8 m | 288 × 26 × 288 | 35840, -60, 0 | 12,049 | 1,048,633 | 0 | 35,241 | east-gate-warren~ring2.bin.gz (203 KB) |
@@ -73,8 +73,8 @@ Rounding to the block size can move an edge or a height by up to half a block. T
 | gerizim-precinct@persian.bare | 0.5 m | 512 × 115 × 580 | 47104, -60, 0 | 26,364 | 25,177,458 | 0 | 39,176 | gerizim-precinct@persian.bare.bin.gz (253 KB) |
 | hyrcania-waterworks.bare | 0.5 m | 380 × 123 × 380 | 48128, -60, 0 | 52,826 | 9,418,092 | 0 | 82,477 | hyrcania-waterworks.bare.bin.gz (496 KB) |
 | hyrcania-waterworks@herodian.bare | 0.5 m | 380 × 123 × 380 | 49152, -60, 0 | 53,166 | 9,425,909 | 0 | 83,432 | hyrcania-waterworks@herodian.bare.bin.gz (501 KB) |
-| bethesda-pools.bare | 0.5 m | 258 × 36 × 258 | 50176, -60, 0 | 776 | 1,732,122 | 0 | 1,120 | bethesda-pools.bare.bin.gz (7 KB) |
-| bethesda-pools@royal.bare | 0.5 m | 258 × 31 × 258 | 51200, -60, 0 | 405 | 1,541,871 | 0 | 515 | bethesda-pools@royal.bare.bin.gz (3 KB) |
+| bethesda-pools.bare | 0.5 m | 258 × 40 × 258 | 50176, -60, 0 | 2,794 | 1,737,407 | 0 | 5,003 | bethesda-pools.bare.bin.gz (29 KB) |
+| bethesda-pools@royal.bare | 0.5 m | 258 × 36 × 258 | 51200, -60, 0 | 1,733 | 1,481,157 | 0 | 2,471 | bethesda-pools@royal.bare.bin.gz (14 KB) |
 | east-gate-warren.bare | 0.5 m | 262 × 86 × 202 | 52224, -60, 0 | 3,688 | 2,856,431 | 0 | 5,249 | east-gate-warren.bare.bin.gz (31 KB) |
 | kidron-bene-hezir.bare | 0.25 m | 284 × 112 × 444 | 53248, -60, 0 | 23,407 | 7,792,586 | 0 | 40,468 | kidron-bene-hezir.bare.bin.gz (236 KB) |
 | kidron-bene-hezir@avigad.bare | 0.25 m | 284 × 112 × 444 | 54272, -60, 0 | 23,767 | 7,792,461 | 0 | 41,515 | kidron-bene-hezir@avigad.bare.bin.gz (242 KB) |
@@ -90,7 +90,7 @@ Rounding to the block size can move an edge or a height by up to half a block. T
 | gerizim-precinct~ring2.bare | 8 m | 288 × 48 × 288 | 64512, -60, 0 | 18,682 | 1,641,944 | 0 | 56,750 | gerizim-precinct~ring2.bare.bin.gz (337 KB) |
 | hyrcania-waterworks~ring1.bare | 1 m | 608 × 166 × 608 | 65536, -60, 0 | 97,329 | 25,149,700 | 0 | 145,485 | hyrcania-waterworks~ring1.bare.bin.gz (926 KB) |
 | hyrcania-waterworks~ring2.bare | 8 m | 288 × 38 × 288 | 66560, -60, 0 | 18,670 | 806,779 | 0 | 56,687 | hyrcania-waterworks~ring2.bare.bin.gz (322 KB) |
-| bethesda-pools~ring1.bare | 1 m | 608 × 91 × 608 | 67584, -60, 0 | 40,736 | 20,439,786 | 0 | 56,314 | bethesda-pools~ring1.bare.bin.gz (359 KB) |
+| bethesda-pools~ring1.bare | 1 m | 608 × 91 × 608 | 67584, -60, 0 | 41,891 | 20,422,890 | 0 | 58,420 | bethesda-pools~ring1.bare.bin.gz (372 KB) |
 | bethesda-pools~ring2.bare | 8 m | 288 × 24 × 288 | 68608, -60, 0 | 11,278 | 940,697 | 0 | 31,940 | bethesda-pools~ring2.bare.bin.gz (181 KB) |
 | east-gate-warren~ring1.bare | 1 m | 608 × 90 × 608 | 69632, -60, 0 | 41,162 | 18,025,397 | 0 | 56,008 | east-gate-warren~ring1.bare.bin.gz (350 KB) |
 | east-gate-warren~ring2.bare | 8 m | 288 × 26 × 288 | 70656, -60, 0 | 11,882 | 1,048,633 | 0 | 34,840 | east-gate-warren~ring2.bare.bin.gz (200 KB) |
@@ -153,9 +153,14 @@ Two new site models and four new views of existing models, built the same way, w
 - All 34 are built (table above). The Great Sea's three were first built in a test run of that plan alone, whose normal builds came out byte-identical to the files already in the atlas; then all 34 were built together with the Qumran settlement's three normal builds, rebuilt because its ground is now the published level. Their world strips were copied into the full save, and a re-read of the whole save gives byte-identical files for all 74 builds, with no mismatches.
 - Check: `check-minecraft.mjs` decodes every bare build and finds no block of today's setting (codes 8–11). Outside the model's own footprint (its parts seen from above, one block wider), a bare build may show only soil and rock; the normal build shows today's features there. For the Great Sea, 73 % of the block area is outside the footprint; there the normal build has 10,468 faces of today's features and the bare build none. Each ring's hole is checked against the build inside it. Bare builds not built yet are listed; `--require-bare` makes them a failure.
 
+## Bethesda placed by Pierre & Rousée Fig. 2 — 23 October 2026
+
+- The Bethesda model moved about 21 m west and 4 m north and turned 10.4°, to where Pierre & Rousée 1981 Fig. 2 puts the dam; its eastern complex moved as one block to Fig. 2's grottoes area ([record](../site_models_2026-10-22.md#bethesda-placed-by-pierre--rousée-fig-2-23-october)).
+- Its eight builds (both views and both rings, normal and bare) were built again in their own strips and read back with no mismatches. Merged into the full save, they read back byte-identical. No other build changed.
+
 ## The world save
 
-[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (41.7 MB, rebuilt on the night of 22 October 2026 with the 40 normal builds, including the Qumran settlement on its published level; it does not hold the bare builds, whose region files r.80–r.147 are left out) is the saved world, SHA-256 `25d6d7a31fd09f36b71a7acc17ae1a1494432f66fe7635a718f29ac593e35f2f`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
+[`copper-scroll-sites-26.3.zip`](copper-scroll-sites-26.3.zip) (41.3 MB, rebuilt on 23 October 2026 with the 40 normal builds, including the Qumran settlement on its published level and the Bethesda pools where Pierre & Rousée's Fig. 2 puts them; it does not hold the bare builds, whose region files r.80–r.147 are left out) is the saved world, SHA-256 `33650b87945c4fdb9db70cf3a3c67491710358e8f030da3202dfb3cc0082341a`. Unzip the `world` folder into a Minecraft Java 26.3 `saves` folder (or a server folder) to walk the builds. The world is a void with creative mode as the default; the spawn is in front of the Qumran tunnel mouth (188, -23, 163). Each build starts at its origin in the table; a plan's views stand side by side, 1,024 blocks apart. In Minecraft's own scale the player is two to four times life size, because one block is 0.5 or 0.25.
 
 ## Rebuild
 

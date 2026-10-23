@@ -133,15 +133,22 @@
    },
    "registration": {
     "target": [
-     11.72,
-     -11.57
+     -9.57,
+     -15.47
     ],
-    "rotationDeg": 0,
-    "outlineSize_m": [
-     82.6,
-     51.6
-    ],
-    "method": "A chosen model point is placed on the area centroid of the mapped outline; the model keeps its own orientation."
+    "rotationDeg": 10.4,
+    "placement": "imagery",
+    "modelPoint": "dam",
+    "method": "Pierre & Rousée 1981 Fig. 2 (detail plan; no scale bar) is matched to Vantor Legion imagery (Esri World Imagery, 3 January 2025, 0.34 m, stated accuracy 8.5 m) by searching the turn, scale and shift that put its drawn structures on the imagery's edges (tools/imagery_registration.py fit), then checked against Schick's 1888 plan registered to the mapped church, city wall and Lions' Gate, and against the published dam dimensions.",
+    "imagery": {
+     "source": "Vantor",
+     "sensor": "LG02 (Legion)",
+     "date": "2025-01-03",
+     "resolution_m": 0.34,
+     "accuracy_m": 8.47
+    },
+    "uncertainty_m": "about 3 at the dam (two fits agree within 0.7 m at its centre); turn about ±4°; the imagery's own stated accuracy is 8.5",
+    "record": "research/assets/plans/imagery-registration-2026-10-22/bethesda.json"
    }
   },
   "east-gate-warren": {

@@ -20,4 +20,6 @@ Sources: [PEFQS 1888-07 on archive.org](https://archive.org/details/palestine-ex
 
 ## What this does not settle
 
-No source read here says which part of the two large pools Schick's pool is, or where the dam lies relative to St Anne's. The model is not moved. Gibson 2005 (*POC* 55, Fig. 1; in the owner's Drive) or Pierre & Rousée 1981 Figs. 2–3 would give that tie. The 1888 levels are of the pool's floor and the 1888 surface, not of an ancient ground; they are not used as ancient ground.
+No source read here says which part of the two large pools Schick's pool is, or where the dam lies relative to St Anne's. The model is not moved.
+
+*Follow-up, 23 October 2026:* Pierre & Rousée 1981 Fig. 2 (the owner's photo IMG_0506) answers this. Schick's two pools are its "citerne médiévale" and the cistern under the Moustier, which lie in one line against the dam's north face (INFERENCE). Fig. 2, fitted through this registration and to satellite imagery, puts the dam's centre at about (−9.6, −15.5) m, about 21 m west of the model's earlier place. The model is now moved there ([record](../imagery-registration-2026-10-22/bethesda.json); [reading](../../../sources/nli_photos_2026-10-21/probatique_poc31_1981.md#fig-2-measured-and-registered-23-oct-2026)). Gibson 2005 (*POC* 55, Fig. 1; in the owner's Drive) or Pierre & Rousée 1981 Figs. 2–3 would give that tie. The 1888 levels are of the pool's floor and the 1888 surface, not of an ancient ground; they are not used as ancient ground.

@@ -518,16 +518,16 @@
     "bethesda-pools~ring2"
    ],
    "terrainPlace": null,
-   "bytes": 54307,
+   "bytes": 83597,
    "blockSize": 0.5,
    "origin": [
-    -19,
+    -40,
     -15,
-    -73
+    -83
    ],
    "blocks": [
     258,
-    57,
+    49,
     258
    ],
    "world": {
@@ -537,31 +537,31 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 3630,
-    "filled": 1813937
+    "commands": 6201,
+    "filled": 1792172
    },
    "readback": {
-    "blocks": 3794148,
+    "blocks": 3261636,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 59648
+    "missingSkyLight": 22528
    },
    "counts": {
-    "coarse_dirt": 163529,
-    "cut_sandstone": 106757,
-    "cut_sandstone_slab[type=bottom]": 747,
-    "cut_sandstone_slab[type=top]": 10611,
-    "moss_block": 13292,
-    "oak_leaves[persistent=true]": 8167,
-    "oak_log": 45,
-    "smooth_quartz": 2939,
-    "smooth_quartz_slab[type=bottom]": 16133,
-    "smooth_stone": 17654,
-    "smooth_stone_slab[type=bottom]": 389,
-    "smooth_stone_slab[type=top]": 1,
-    "stone": 1473673
+    "coarse_dirt": 166106,
+    "cut_sandstone": 75737,
+    "cut_sandstone_slab[type=bottom]": 14751,
+    "cut_sandstone_slab[type=top]": 292,
+    "moss_block": 12644,
+    "oak_leaves[persistent=true]": 7124,
+    "oak_log": 46,
+    "smooth_quartz": 2820,
+    "smooth_quartz_slab[type=bottom]": 16218,
+    "smooth_stone": 17439,
+    "smooth_stone_slab[type=bottom]": 58,
+    "smooth_stone_slab[type=top]": 21,
+    "stone": 1478916
    },
-   "quads": 9555
+   "quads": 14619
   },
   "east-gate-warren": {
    "file": "east-gate-warren.bin.gz",
@@ -1048,16 +1048,16 @@
     "bethesda-pools~ring2"
    ],
    "terrainPlace": null,
-   "bytes": 47781,
+   "bytes": 63848,
    "blockSize": 0.5,
    "origin": [
-    -19,
-    -13.5,
-    -73
+    -40,
+    -13,
+    -83
    ],
    "blocks": [
     258,
-    54,
+    45,
     258
    ],
    "world": {
@@ -1067,33 +1067,34 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 3161,
-    "filled": 1622956
+    "commands": 4913,
+    "filled": 1532399
    },
    "readback": {
-    "blocks": 3594456,
+    "blocks": 2995380,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 86528
+    "missingSkyLight": 43552
    },
    "counts": {
-    "coarse_dirt": 161604,
-    "cut_sandstone": 93731,
-    "cut_sandstone_slab[type=bottom]": 978,
-    "cut_sandstone_slab[type=top]": 10539,
-    "moss_block": 13292,
-    "oak_leaves[persistent=true]": 8167,
-    "oak_log": 45,
-    "smooth_quartz": 185,
-    "smooth_quartz_slab[type=bottom]": 8295,
-    "smooth_sandstone": 7687,
-    "smooth_sandstone_slab[type=bottom]": 10141,
-    "smooth_stone": 6188,
-    "smooth_stone_slab[type=bottom]": 274,
-    "stone": 1301540,
-    "stone_slab[type=bottom]": 290
+    "coarse_dirt": 164244,
+    "cut_sandstone": 60486,
+    "cut_sandstone_slab[type=bottom]": 14241,
+    "cut_sandstone_slab[type=top]": 273,
+    "moss_block": 12571,
+    "oak_leaves[persistent=true]": 7124,
+    "oak_log": 46,
+    "smooth_quartz": 180,
+    "smooth_quartz_slab[type=bottom]": 8299,
+    "smooth_sandstone": 7320,
+    "smooth_sandstone_slab[type=bottom]": 10092,
+    "smooth_stone": 6650,
+    "smooth_stone_slab[type=bottom]": 69,
+    "smooth_stone_slab[type=top]": 13,
+    "stone": 1240499,
+    "stone_slab[type=bottom]": 292
    },
-   "quads": 8434
+   "quads": 11235
   },
   "kidron-bene-hezir": {
    "file": "kidron-bene-hezir.bin.gz",
@@ -1825,7 +1826,7 @@
    "ring": 0,
    "surroundings": null,
    "terrainPlace": null,
-   "bytes": 1156172,
+   "bytes": 1162008,
    "blockSize": 1,
    "origin": [
     -304,
@@ -1844,29 +1845,29 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 111127,
-    "filled": 20772115
+    "commands": 111602,
+    "filled": 20757010
    },
    "readback": {
     "blocks": 36227072,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 4532736
+    "missingSkyLight": 4584448
    },
    "counts": {
-    "coarse_dirt": 516302,
-    "cut_sandstone": 277190,
-    "cut_sandstone_slab[type=bottom]": 48595,
-    "cut_sandstone_slab[type=top]": 20031,
+    "coarse_dirt": 517009,
+    "cut_sandstone": 278965,
+    "cut_sandstone_slab[type=bottom]": 46455,
+    "cut_sandstone_slab[type=top]": 21871,
     "gray_concrete": 21734,
-    "moss_block": 73799,
-    "oak_leaves[persistent=true]": 70244,
-    "oak_log": 3025,
-    "smooth_stone": 20943,
-    "smooth_stone_slab[type=bottom]": 9695,
-    "stone": 19710557
+    "moss_block": 74027,
+    "oak_leaves[persistent=true]": 71232,
+    "oak_log": 2976,
+    "smooth_stone": 20238,
+    "smooth_stone_slab[type=bottom]": 9687,
+    "stone": 19692816
    },
-   "quads": 186926
+   "quads": 187306
   },
   "bethesda-pools~ring2": {
    "file": "bethesda-pools~ring2.bin.gz",
@@ -2665,16 +2666,16 @@
     "bethesda-pools~ring2.bare"
    ],
    "terrainPlace": null,
-   "bytes": 6750,
+   "bytes": 29210,
    "blockSize": 0.5,
    "origin": [
-    -19,
+    -40,
     -15,
-    -73
+    -83
    ],
    "blocks": [
     258,
-    36,
+    40,
     258
    ],
    "world": {
@@ -2684,28 +2685,27 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 776,
-    "filled": 1732122
+    "commands": 2794,
+    "filled": 1737407
    },
    "readback": {
-    "blocks": 2396304,
+    "blocks": 2662560,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 8192
+    "missingSkyLight": 12288
    },
    "counts": {
-    "coarse_dirt": 188377,
-    "cut_sandstone": 32925,
-    "cut_sandstone_slab[type=bottom]": 710,
-    "cut_sandstone_slab[type=top]": 16,
-    "smooth_quartz": 2939,
-    "smooth_quartz_slab[type=bottom]": 16133,
-    "smooth_stone": 17335,
-    "smooth_stone_slab[type=bottom]": 10,
-    "smooth_stone_slab[type=top]": 1,
-    "stone": 1473676
+    "coarse_dirt": 188369,
+    "cut_sandstone": 32427,
+    "cut_sandstone_slab[type=bottom]": 1159,
+    "cut_sandstone_slab[type=top]": 29,
+    "smooth_quartz": 2820,
+    "smooth_quartz_slab[type=bottom]": 16218,
+    "smooth_stone": 17455,
+    "smooth_stone_slab[type=top]": 8,
+    "stone": 1478922
    },
-   "quads": 1120
+   "quads": 5003
   },
   "bethesda-pools@royal.bare": {
    "file": "bethesda-pools@royal.bare.bin.gz",
@@ -2720,16 +2720,16 @@
     "bethesda-pools~ring2.bare"
    ],
    "terrainPlace": null,
-   "bytes": 3137,
+   "bytes": 14553,
    "blockSize": 0.5,
    "origin": [
-    -19,
-    -13.5,
-    -73
+    -40,
+    -13,
+    -83
    ],
    "blocks": [
     258,
-    31,
+    36,
     258
    ],
    "world": {
@@ -2739,30 +2739,29 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 405,
-    "filled": 1541871
+    "commands": 1733,
+    "filled": 1481157
    },
    "readback": {
-    "blocks": 2063484,
+    "blocks": 2396304,
     "mismatches": 0,
     "examples": [],
-    "missingSkyLight": 10752
+    "missingSkyLight": 26624
    },
    "counts": {
-    "coarse_dirt": 186056,
-    "cut_sandstone": 20758,
-    "cut_sandstone_slab[type=bottom]": 956,
-    "cut_sandstone_slab[type=top]": 12,
-    "smooth_quartz": 185,
-    "smooth_quartz_slab[type=bottom]": 8295,
-    "smooth_sandstone": 7704,
-    "smooth_sandstone_slab[type=bottom]": 10148,
-    "smooth_stone": 5926,
-    "smooth_stone_slab[type=bottom]": 1,
-    "stone": 1301540,
-    "stone_slab[type=bottom]": 290
+    "coarse_dirt": 186048,
+    "cut_sandstone": 20768,
+    "cut_sandstone_slab[type=bottom]": 997,
+    "cut_sandstone_slab[type=top]": 7,
+    "smooth_quartz": 180,
+    "smooth_quartz_slab[type=bottom]": 8299,
+    "smooth_sandstone": 7333,
+    "smooth_sandstone_slab[type=bottom]": 10104,
+    "smooth_stone": 6624,
+    "stone": 1240505,
+    "stone_slab[type=bottom]": 292
    },
-   "quads": 515
+   "quads": 2471
   },
   "east-gate-warren.bare": {
    "file": "east-gate-warren.bare.bin.gz",
@@ -3299,7 +3298,7 @@
    "pads": null,
    "surroundings": null,
    "terrainPlace": null,
-   "bytes": 367248,
+   "bytes": 381116,
    "blockSize": 1,
    "origin": [
     -304,
@@ -3318,8 +3317,8 @@
    },
    "masonry": "ashlar",
    "fills": {
-    "commands": 40736,
-    "filled": 20439786
+    "commands": 41891,
+    "filled": 20422890
    },
    "readback": {
     "blocks": 33639424,
@@ -3329,9 +3328,9 @@
    },
    "counts": {
     "coarse_dirt": 706046,
-    "stone": 19733740
+    "stone": 19716844
    },
-   "quads": 56314
+   "quads": 58420
   },
   "bethesda-pools~ring2.bare": {
    "file": "bethesda-pools~ring2.bare.bin.gz",
@@ -3736,5 +3735,5 @@
   "serverJarSha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
   "dataVersion": 5023
  },
- "built": "2026-10-22"
+ "built": "2026-10-23"
 }
