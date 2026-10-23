@@ -276,6 +276,27 @@ try {
    await page.waitForFunction(y=>Number(document.querySelector('.maplibregl-canvas')?.dataset.walkFeet?.split(',')[1])>y+.8,jumpY);
   }finally{if(mobile)await page.mouse.up();else await page.keyboard.up('Space');}
   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true');
+  if(mobile){
+   // Touch controls after Minecraft Pocket Edition (atlas-walk-touch.tsx): the walk fills the screen, the caption folds,
+   // a finger slides from Forward into a diagonal that appears only while moving forward, two taps on jump start flight.
+   assert.equal(await page.evaluate(()=>getComputedStyle(document.querySelector('.atlas-site-nav')).display),'none','Walking on a touch screen fills the screen');
+   const folded=page.locator('.map-site-caption');assert.equal(await folded.getByRole('button',{name:'Blocks',exact:true}).isVisible(),false,'The caption folds while walking on a touch screen');
+   await folded.getByRole('button',{name:'Show model options',exact:true}).click();await folded.getByRole('button',{name:'Blocks',exact:true}).waitFor();
+   await folded.getByRole('button',{name:'Hide model options',exact:true}).click();await folded.getByRole('button',{name:'Blocks',exact:true}).waitFor({state:'hidden'});
+   const ahead=await page.getByRole('button',{name:'Forward',exact:true}).boundingBox();await page.mouse.move(ahead.x+ahead.width/2,ahead.y+ahead.height/2);await page.mouse.down();
+   try{const diagonal=page.getByRole('button',{name:'Forward right',exact:true});await diagonal.waitFor();const d=await diagonal.boundingBox();await page.mouse.move(d.x+d.width/2,d.y+d.height/2,{steps:3});
+    await page.waitForFunction(()=>document.querySelector('.walk-touch-forward-right')?.dataset.held==='true'&&document.querySelector('.walk-touch-forward')?.dataset.held==='false');}
+   finally{await page.mouse.up();}
+   await page.getByRole('button',{name:'Forward right',exact:true}).waitFor({state:'hidden'});
+   await canvas.focus();await page.keyboard.press('r');
+   // Dispatched in the page: this browser's input arrives slower than a thumb's two taps (0.35 s at most).
+   await page.evaluate(()=>{const b=document.querySelector('.walk-touch-jump'),r=b.getBoundingClientRect(),at={clientX:r.x+r.width/2,clientY:r.y+r.height/2,bubbles:true,pointerType:'touch',isPrimary:true};for(const pointerId of [71,72]){b.dispatchEvent(new PointerEvent('pointerdown',{...at,pointerId}));b.dispatchEvent(new PointerEvent('pointerup',{...at,pointerId}));}});
+   await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkFlying==='true');
+   await page.getByRole('button',{name:'Up',exact:true}).waitFor();await page.getByRole('button',{name:'Down',exact:true}).waitFor();
+   await page.getByRole('button',{name:'Fly',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkFlying==='false');
+   await page.getByRole('button',{name:'Jump',exact:true}).waitFor();await page.waitForFunction(()=>document.querySelector('.maplibregl-canvas')?.dataset.walkGrounded==='true');
+   await canvas.focus();await page.keyboard.press('r');
+  }
   await sameCanvas();await page.screenshot({path:`/tmp/copperscroll-unified-walk-${mobile?'phone':'desktop'}.png`});
   const look=await page.locator('.maplibregl-canvas').boundingBox(),lookX=look.x+look.width*.65,lookY=look.y+look.height*.35;
   await page.mouse.move(lookX,lookY);await page.mouse.down();await page.mouse.move(lookX,lookY+100,{steps:5});await page.mouse.up();
@@ -286,6 +307,7 @@ try {
   await page.getByRole('button',{name:'Measure',exact:true}).click();await page.getByRole('complementary',{name:'Measurement',exact:true}).waitFor({state:'detached'});
   await page.getByRole('button',{name:'Back to map',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('[data-walking]')?.dataset.walking==='false');
+  if(mobile)assert.notEqual(await page.evaluate(()=>getComputedStyle(document.querySelector('.atlas-site-nav')).display),'none','The atlas header returns after walking');
   const cameraErrors=await page.evaluate(()=>window.atlasCameraErrors);
   assert(cameraErrors.length>5&&cameraErrors.every(error=>Number.isFinite(error)&&error<.06),'Every sampled walking frame must keep the rendered camera within 6 cm of the character eye');
   if(!mobile){
@@ -385,7 +407,7 @@ try {
    assert.equal((await dataset()).siteBuild,'temple-great-sea','Today returns to the normal build');assert.doesNotMatch(await caption.innerText(),todayNote);
   }
   assert.deepEqual(errors,[]);
-  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, 3D geometry, persistent canvas, inline references, masonry collision, tap/held jumping, crouching, sprint controls/FOV, coverage gaps, provider failures, walk signs, measuring${mobile?'':', the Kidron Ancient ground view (Smooth fallback), Kidron measuring in Blocks and Smooth, photo viewpoints, the viewpoint editor and the Great Sea Ancient ground view in blocks'} (${normalMotion?'normal':'reduced'} motion).`);
+  console.log(`${mobile?'Phone':'Desktop'} unified map passed: all sites, 3D geometry, persistent canvas, inline references, masonry collision, tap/held jumping, crouching, sprint controls/FOV, coverage gaps, provider failures, walk signs, measuring${mobile?', touch controls (full screen, folded caption, D-pad diagonals, double-tap flight)':', the Kidron Ancient ground view (Smooth fallback), Kidron measuring in Blocks and Smooth, photo viewpoints, the viewpoint editor and the Great Sea Ancient ground view in blocks'} (${normalMotion?'normal':'reduced'} motion).`);
   await page.close();
   }catch(error){console.error(await page.evaluate(()=>({viewport:innerWidth,route:location.hash,plan:document.querySelector('[data-site-plan]')?.dataset.sitePlan,state:document.querySelector('[data-site-state]')?.dataset.siteState,walking:document.querySelector('[data-walking]')?.dataset.walking,canvas:{...document.querySelector('.maplibregl-canvas')?.dataset},events:window.atlasTestEvents})));await page.screenshot({path:`/tmp/copperscroll-map-failure-${mobile?'phone':'desktop'}.png`});throw error;}
  }
