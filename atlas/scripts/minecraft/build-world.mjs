@@ -2,8 +2,11 @@
 // world, reads every block and its sky light back from the region files, and writes
 // the block meshes that the atlas map renders (public/minecraft/).
 //
-//   node scripts/minecraft/build-world.mjs --jar server.jar --java /path/to/java --work <dir> [--sites a,b]
+//   node scripts/minecraft/build-world.mjs --jar server.jar --java /path/to/java --work <dir> [--sites a,b] [--bare-only]
 //   node scripts/minecraft/build-world.mjs --work <dir> --skip-server   (re-read an existing save)
+//
+// --sites takes build keys or plan ids (a plan id selects all its builds, normal and bare);
+// --bare-only keeps only the bare builds of the selection.
 //
 // The server jar is Mojang's official download; running it requires accepting the
 // Minecraft EULA (https://aka.ms/MinecraftEULA). Nothing from the game (code, textures)
@@ -50,6 +53,14 @@ export const RINGS=[{size:2,half:400},{size:8,half:1152}];
 const PLACED_TRACED=new Set(['qumran-settlement']);
 export const ringsFor=planId=>SITES.find(s=>s.id===planId)?.rings??(PLACED_TRACED.has(planId)?CONTEXT_RINGS:RINGS);
 export const buildKey=(planId,layer)=>layer&&layer!=='remains'?`${planId}@${layer}`:planId;
+// Bare builds draw the Ancient ground view (app/atlas-ancient-ground.ts) of a plan in a mapped
+// setting: each near build and ring again, without today's mapped features, paving or green
+// ground, and with the view's published pads when the plan's entry gives them.
+export const bareKey=key=>`${key}.bare`;
+export function barePads(models,plan){
+ const entry=models.ancient.ancientGround(plan.id);
+ return models.ancient.ancientGroundPads(entry,entry.ground==='published'&&plan.terrain==='wide'?terrainFile(plan.placeIds[0])?.centreElevation:undefined);
+}
 
 // One build per site; a traced plan, or a hand-built plan with views, gives one per layer
 // (remains, each published phase).
@@ -59,19 +70,34 @@ export function buildSpecs(models){
  for(const spec of SITES)specs.push(...planSpecs(models.plans.find(p=>p.id===spec.id),spec));
  for(const plan of models.plans)if(traced(plan)&&!SITES.some(s=>s.id===plan.id))specs.push(...planSpecs(plan,{id:plan.id,size:plan.blockSize??.5}));
  for(const plan of models.plans)if(plan.terrain==='wide'&&specs.some(s=>s.plan===plan.id))ringsFor(plan.id).forEach((r,i)=>specs.push({id:`${plan.id}~ring${i+1}`,plan:plan.id,ring:i,size:r.size,half:r.half,context:!!r.context}));
+ // The bare builds come after all others, in the same order, so every other build keeps its world strip.
+ const pads=new Map();
+ for(const spec of [...specs])if(models.ancient.hasAncientGround(spec.plan)){
+  if(!pads.has(spec.plan))pads.set(spec.plan,barePads(models,models.plans.find(p=>p.id===spec.plan)));
+  specs.push({...spec,id:bareKey(spec.id),bare:true,normal:spec.id,context:false,pads:pads.get(spec.plan)});
+ }
  return specs;
 }
 // Wider terrain (atlas/public/terrain), decoded to the landscape patch shape.
+function terrainFile(placeId){const path=new URL(`../../public/terrain/${placeId}.json`,import.meta.url);return existsSync(path)?JSON.parse(readFileSync(path,'utf8')):undefined;}
 export function wideTerrain(placeId){
- const path=new URL(`../../public/terrain/${placeId}.json`,import.meta.url);if(!existsSync(path))return undefined;
- const t=JSON.parse(readFileSync(path,'utf8')),bytes=Buffer.from(t.data,'base64'),elevations=new Array(t.size*t.size);
+ const t=terrainFile(placeId);if(!t)return undefined;
+ const bytes=Buffer.from(t.data,'base64'),elevations=new Array(t.size*t.size);
  for(let i=0;i<elevations.length;i++)elevations[i]=t.centreElevation+bytes.readInt16LE(i*2)/10;
  return {lat:t.lat,lon:t.lon,anchorPrecision:'wide patch',extent:t.extent,size:t.size,elevations,centreElevation:t.centreElevation};
 }
 
+// The model a build is made from. A bare build has no mapped surroundings (so no paving or green
+// ground either) and takes the Ancient ground view's published pads.
+export function modelOptions(plan,spec){
+ const terrain=plan?.terrain==='wide'?wideTerrain(plan.placeIds[0]):undefined;
+ if(spec.bare)return {layer:spec.layer,terrain,pads:spec.pads??undefined};
+ return {layer:spec.layer,terrain,context:plan?.terrain==='wide'?siteContextFeatures(plan.id):undefined};
+}
+
 export function voxelizeSite(models,spec){
  const plan=models.plans.find(p=>p.id===(spec.plan??spec.id));let root,ground=[],domain=spec.domain,carves=[],exclude=null;
- const options={layer:spec.layer,terrain:plan?.terrain==='wide'?wideTerrain(plan.placeIds[0]):undefined,context:plan?.terrain==='wide'?siteContextFeatures(plan.id):undefined},snap=(v,s,up)=>(up?Math.ceil(v/s):Math.floor(v/s))*s;
+ const options=modelOptions(plan,spec),snap=(v,s,up)=>(up?Math.ceil(v/s):Math.floor(v/s))*s;
  if(spec.pilot){
   root=models.pilot.buildQumranPilot();const patch=models.terrain[spec.place];
   // The same Mapterhorn patch the atlas uses around the anchor, fitted once.
@@ -201,13 +227,15 @@ export function readBack(world,build){
 }
 
 async function main(){
- const {values}=parseArgs({options:{jar:{type:'string'},java:{type:'string',default:'java'},work:{type:'string'},sites:{type:'string'},'skip-server':{type:'boolean',default:false},out:{type:'string',default:new URL('../../public/minecraft/',import.meta.url).pathname}}});
- if((!values.jar&&!values['skip-server'])||!values.work)throw Error('Usage: build-world.mjs --jar server.jar --work <dir> [--java java] [--sites a,b] [--skip-server]');
+ const {values}=parseArgs({options:{jar:{type:'string'},java:{type:'string',default:'java'},work:{type:'string'},sites:{type:'string'},'bare-only':{type:'boolean',default:false},'skip-server':{type:'boolean',default:false},out:{type:'string',default:new URL('../../public/minecraft/',import.meta.url).pathname}}});
+ if((!values.jar&&!values['skip-server'])||!values.work)throw Error('Usage: build-world.mjs --jar server.jar --work <dir> [--java java] [--sites a,b] [--bare-only] [--skip-server]');
  const log=text=>process.stdout.write(`${text}\n`),models=loadModels(),wanted=values.sites?.split(',');
  const jarSha1=values.jar?createHash('sha1').update(readFileSync(values.jar)).digest('hex'):null;
- const builds=[];
- buildSpecs(models).forEach((spec,index)=>{
-  if(wanted&&!wanted.includes(spec.id)&&!wanted.includes(spec.plan))return;
+ const builds=[],specs=buildSpecs(models);
+ specs.forEach((spec,index)=>{
+  // A plan id selects all its builds; a build key also selects its bare build.
+  if(wanted&&!wanted.includes(spec.id)&&!wanted.includes(spec.plan)&&!(spec.bare&&wanted.includes(spec.normal)))return;
+  if(values['bare-only']&&!spec.bare)return;
   const started=Date.now(),build=voxelizeSite(models,spec);
   // Each site has its own 1,024-block-wide strip of the world; the grid floor sits at y = -60.
   build.world={x0:index*1024,z0:0,y0:-60};
@@ -227,12 +255,15 @@ async function main(){
   const groups=greedyQuads({...back.dims,cells:back.cells,feature:back.feature,light:back.light});
   // The header lists materials up to the highest code used (at least the eight site materials).
   const used=Math.max(7,...[...groups.keys()].map(k=>+k.split(':')[0]));
-  const header={version:1,id:spec.id,plan:spec.plan,layer:spec.layer??null,ring:spec.ring??null,size:grid.s,half:grid.h,origin:[grid.x0,grid.y0,grid.z0],dims:[back.dims.nx,back.dims.ny,back.dims.nz],materials:MATERIALS.slice(0,used+1),masonry:build.masonry,features:build.features};
+  const header={version:1,id:spec.id,plan:spec.plan,layer:spec.layer??null,ring:spec.ring??null,size:grid.s,half:grid.h,origin:[grid.x0,grid.y0,grid.z0],dims:[back.dims.nx,back.dims.ny,back.dims.nz],materials:MATERIALS.slice(0,used+1),masonry:build.masonry,features:build.features,...(spec.bare?{bare:true}:{})};
   const file=encodeBuild(header,groups),quads=[...groups.values()].reduce((sum,q)=>sum+q.length/6,0);
   if(spec.mapped!==false)writeFileSync(`${values.out}/${spec.id}.bin.gz`,file);
+  // A near build lists its rings (a bare build its bare rings), whether or not they are rebuilt in this run.
+  const rings=spec.ring===undefined?specs.filter(s=>s.plan===spec.plan&&s.ring!==undefined&&!s.bare===!spec.bare).map(s=>s.id):[];
+  // A bare build records the normal build it stands for and the pads it was built with.
+  const bare=spec.bare?{bare:true,normalBuild:spec.normal,pads:spec.pads??null}:{};
   // The Qumran build's ground was fitted to one place's terrain patch; it fits only there.
-  const rings=spec.ring===undefined?builds.filter(b=>b.spec.plan===spec.plan&&b.spec.ring!==undefined).map(b=>b.spec.id):[];
-  index.sites[spec.id]={file:spec.mapped===false?null:`${spec.id}.bin.gz`,plan:spec.plan,layer:spec.layer??null,ring:spec.ring??null,surroundings:rings.length?rings:null,terrainPlace:spec.pilot?spec.place:null,bytes:file.length,blockSize:grid.s,origin:header.origin,blocks:[build.blocks.nx,build.blocks.ny,build.blocks.nz],world:build.world,masonry:build.masonry,
+  index.sites[spec.id]={file:spec.mapped===false?null:`${spec.id}.bin.gz`,plan:spec.plan,layer:spec.layer??null,ring:spec.ring??null,...bare,surroundings:rings.length?rings:null,terrainPlace:spec.pilot?spec.place:null,bytes:file.length,blockSize:grid.s,origin:header.origin,blocks:[build.blocks.nx,build.blocks.ny,build.blocks.nz],world:build.world,masonry:build.masonry,
    fills:server.report[spec.id]??index.sites[spec.id]?.fills,readback:{blocks:build.blocks.nx*build.blocks.ny*build.blocks.nz,mismatches:back.mismatches,examples:back.examples,missingSkyLight:back.missingLight},counts:Object.fromEntries(Object.entries(back.counts).filter(([k])=>k!=='air').sort()),quads};
   log(`${spec.id}: read back, ${back.mismatches} mismatches, ${back.missingLight} blocks without saved sky light, ${quads} quads, ${(file.length/1024).toFixed(0)} KiB`);
  }

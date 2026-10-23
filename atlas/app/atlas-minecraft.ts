@@ -1,14 +1,15 @@
 import * as T from 'three';
 import {siteStyle} from './atlas-site-materials';
 import type {ModelGeometry} from './atlas-model-geometry';
+import type {LandscapePad} from './atlas-model-landscape';
 
 // Site models built in a Minecraft Java Edition server and read back from its saved
 // world (scripts/minecraft/build-world.mjs). The files hold block faces and the sky
 // light Minecraft computed for them; nothing else from the game is used. Block
 // textures below are original pixel art in each site's photo-derived colours.
-type Header={version:number;id:string;size:number;half:number;origin:[number,number,number];dims:[number,number,number];materials:string[];masonry:string;features:string[];groups:{material:number;feature:number;quads:number}[]};
-export type MinecraftBuild={header:Header;groups:{material:number;feature:number;quads:Uint16Array}[];edition:string;version:string|null;mismatches:number|null;rings?:MinecraftBuild[]};
-type Index={minecraft:{edition:string;version:string|null};sites:Record<string,{file:string|null;terrainPlace?:string|null;readback?:{mismatches:number};surroundings?:string[]|null}>};
+type Header={version:number;id:string;size:number;half:number;origin:[number,number,number];dims:[number,number,number];materials:string[];masonry:string;features:string[];groups:{material:number;feature:number;quads:number}[];bare?:boolean};
+export type MinecraftBuild={header:Header;groups:{material:number;feature:number;quads:Uint16Array}[];edition:string;version:string|null;mismatches:number|null;rings?:MinecraftBuild[];pads?:LandscapePad[]|null};
+type Index={minecraft:{edition:string;version:string|null};sites:Record<string,{file:string|null;terrainPlace?:string|null;readback?:{mismatches:number};surroundings?:string[]|null;bare?:boolean;pads?:LandscapePad[]|null}>};
 
 const base=()=>(import.meta as ImportMeta&{env?:{BASE_URL?:string}}).env?.BASE_URL??'/';
 let index:Promise<Index|null>|undefined;
@@ -16,9 +17,14 @@ export function minecraftIndex(){return index??=fetch(`${base()}minecraft/index.
 
 // A traced plan's reconstruction layers are separate builds, keyed `<plan>@<layer>`.
 export const buildKey=(planId:string,layer?:string)=>layer&&layer!=='remains'?`${planId}@${layer}`:planId;
-export async function loadMinecraftBuild(planId:string,placeId:string,layer?:string):Promise<MinecraftBuild|null>{
- const list=await minecraftIndex(),site=list?.sites[buildKey(planId,layer)];if(!site?.file||(site.terrainPlace&&site.terrainPlace!==placeId))return null;
+// The Ancient ground view has its own builds, keyed `<build>.bare`: the same blocks without today's
+// mapped features, paving or green ground, and with the view's published pads (atlas-ancient-ground.ts).
+export const bareKey=(key:string)=>`${key}.bare`;
+// A bare build carries the pads it was built with (null for none).
+export async function loadMinecraftBuild(planId:string,placeId:string,layer?:string,bare=false):Promise<MinecraftBuild|null>{
+ const list=await minecraftIndex(),key=buildKey(planId,layer),site=list?.sites[bare?bareKey(key):key];if(!site?.file||(site.terrainPlace&&site.terrainPlace!==placeId))return null;
  const build=await loadBuildFile(site.file,list!,site.readback?.mismatches??null);
+ if(build&&bare)build.pads=site.pads??null;
  // Coarser terrain rings around a plan with the wide terrain patch.
  if(build&&site.surroundings?.length)build.rings=(await Promise.all(site.surroundings.map(key=>{const ring=list!.sites[key];return ring?.file?loadBuildFile(ring.file,list!,ring.readback?.mismatches??null):null;}))).filter((b):b is MinecraftBuild=>!!b);
  return build;
@@ -151,6 +157,6 @@ export function applyMinecraftBuild(model:ModelGeometry,build:MinecraftBuild,pla
  group.position.copy(root.position).negate();group.name='minecraft-build';root.add(group);
  model.selectable.length=0;group.children.forEach(mesh=>{if(mesh.userData.featureId)model.selectable.push(mesh);});
  model.note=`Minecraft build · ${model.note}`;
- model.assumptions.unshift(`Minecraft build: this source model was converted to blocks of ${build.header.size} ${model.units==='metres'?'m':'model units'} (half blocks ${build.header.half}), placed by a Minecraft ${build.edition} ${build.version??''} server, saved, and read back from the world’s region files${build.mismatches===0?' with every block as placed':''}. Each face is shaded by the sky light Minecraft computed for it, so covered tunnels, cisterns and caves are darker. Rounding to the block size can move an edge or a height by up to half a block; the blocks add no detail to the source model. Block textures are original pixel art in the site’s photo-derived colours, not the game’s textures. Outside the block area the smooth terrain is shown.${build.rings?.length?` Around the site, modern terrain is built in coarser blocks (${build.rings.map(r=>`${r.header.size} m`).join(', then ')}) out to the edge of the wider elevation patch; it is today's ground, not the ancient surface.`:''}`);
+ model.assumptions.unshift(`Minecraft build: this source model was converted to blocks of ${build.header.size} ${model.units==='metres'?'m':'model units'} (half blocks ${build.header.half}), placed by a Minecraft ${build.edition} ${build.version??''} server, saved, and read back from the world’s region files${build.mismatches===0?' with every block as placed':''}. Each face is shaded by the sky light Minecraft computed for it, so covered tunnels, cisterns and caves are darker. Rounding to the block size can move an edge or a height by up to half a block; the blocks add no detail to the source model. Block textures are original pixel art in the site’s photo-derived colours, not the game’s textures. Outside the block area the smooth terrain is shown.${build.header.bare?' These blocks were built for the Ancient ground view, without today’s mapped features.':''}${build.rings?.length?` Around the site, modern terrain is built in coarser blocks (${build.rings.map(r=>`${r.header.size} m`).join(', then ')}) out to the edge of the wider elevation patch; it is today's ground, not the ancient surface.`:''}`);
  return model;
 }

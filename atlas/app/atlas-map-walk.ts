@@ -2,12 +2,16 @@ import {LngLat,type Map} from 'maplibre-gl';
 import {Vector3} from 'three';
 import {WalkCharacter,WalkInput} from './atlas-walk-physics';
 import type {MapSiteRuntime} from './atlas-map-site-layer';
-export type WalkController={keys:Set<string>;press:(key:string)=>void;release:(key:string)=>void;toggleSprint:()=>void;toggleCrouch:()=>void;toggleFly:()=>void;reset:()=>void;stop:()=>void;position:()=>[number,number,number];stance:()=>{sprinting:boolean;sprintEnabled:boolean;crouched:boolean;grounded:boolean;flying:boolean}};
-export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[number,number,number])=>void,start?:[number,number]):WalkController {
+// A fixed camera, e.g. a photo's viewpoint: eye in the site frame, bearing clockwise from north, pitch above
+// the horizon, vertical field of view. While one is set, walking and looking are frozen.
+export type WalkCamera={eye:[number,number,number];bearing:number;pitch:number;fov:number};
+export type WalkOptions={onPick?:(clientX:number,clientY:number)=>boolean};
+export type WalkController={keys:Set<string>;press:(key:string)=>void;release:(key:string)=>void;toggleSprint:()=>void;toggleCrouch:()=>void;toggleFly:()=>void;reset:()=>void;stop:()=>void;position:()=>[number,number,number];stance:()=>{sprinting:boolean;sprintEnabled:boolean;crouched:boolean;grounded:boolean;flying:boolean};setView:(view:WalkCamera|null)=>void;camera:()=>WalkCamera};
+export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[number,number,number])=>void,start?:[number,number],options:WalkOptions={}):WalkController {
  const before={center:map.getCenter(),zoom:map.getZoom(),pitch:map.getPitch(),bearing:map.getBearing(),padding:map.getPadding(),elevation:map.getCenterElevation()};
  const maxZoom=map.getMaxZoom(),maxPitch=map.getMaxPitch(),fov=map.getVerticalFieldOfView(),clamped=map.getCenterClampedToGround(),canvas=map.getCanvas();
  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- const input=new WalkInput();let bearing=0,pitch=86,phase=0,viewFov=70,bobWeight=0,frame=0,previous=performance.now(),drag:{x:number;y:number;id:number}|null=null,press:{x:number;y:number;t:number}|null=null,swings=0,blockedFrames=0,lastReport=0;
+ const input=new WalkInput();let bearing=0,pitch=86,phase=0,viewFov=70,bobWeight=0,frame=0,previous=performance.now(),drag:{x:number;y:number;id:number}|null=null,press:{x:number;y:number;t:number}|null=null,swings=0,blockedFrames=0,lastReport=0,view:WalkCamera|null=null,viewSpawn='';
  function initial(){
   bearing=0;pitch=86;
   if(start){bearing=before.bearing;return site.local(...start);}
@@ -28,34 +32,39 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
  // its camera must be the final authority after that map correction.
  map.setTransformCameraUpdate(()=>walkingView??{});
  function apply(force=false){
-  const eye=body.eye,foot=body.feet,from=site.location(eye.x,eye.z),angle=bearing*Math.PI/180,ahead=site.location(eye.x+Math.sin(angle)*20,eye.z-Math.cos(angle)*20),headBob=Math.sin(phase*2)*.025*bobWeight*(body.crouched?.3:1),altitude=site.baseElevation()+.2+eye.y+headBob;
-  const options=map.calculateCameraOptionsFromTo(new LngLat(...from),altitude,new LngLat(...ahead),altitude-Math.tan((90-pitch)*Math.PI/180)*20);
+  // A fixed view (a photo's viewpoint) replaces the body's eye, bearing and pitch, without head bob.
+  const eye=view?new Vector3(...view.eye):body.eye,foot=body.feet,look=view?view.bearing:bearing,tilt=view?90+view.pitch:pitch,from=site.location(eye.x,eye.z),angle=look*Math.PI/180,ahead=site.location(eye.x+Math.sin(angle)*20,eye.z-Math.cos(angle)*20),headBob=view?0:Math.sin(phase*2)*.025*bobWeight*(body.crouched?.3:1),altitude=site.baseElevation()+.2+eye.y+headBob;
+  const options=map.calculateCameraOptionsFromTo(new LngLat(...from),altitude,new LngLat(...ahead),altitude-Math.tan((90-tilt)*Math.PI/180)*20);
   lastBase=site.baseElevation();walkingView={center:LngLat.convert(options.center!),zoom:options.zoom!,pitch:options.pitch!,bearing:options.bearing!,elevation:options.elevation!};
   canvas.dataset.walkPosition=eye.toArray().map(n=>n.toFixed(3)).join(',');canvas.dataset.walkFeet=foot.toArray().map(n=>n.toFixed(3)).join(',');
-  canvas.dataset.walkGrounded=String(body.grounded);canvas.dataset.walkFlying=String(body.flying);canvas.dataset.walkSprint=String(body.sprinting);canvas.dataset.walkCrouch=String(body.crouched);canvas.dataset.walkBlocked=String(body.blocked);canvas.dataset.walkBlockedFrames=String(blockedFrames);canvas.dataset.walkSpeed=Math.hypot(body.velocity.x,body.velocity.z).toFixed(3);canvas.dataset.walkTriangles=String(site.collisionWorld().triangles);
-  map.jumpTo({...options,padding:{top:0,bottom:0,left:0,right:0}});canvas.dataset.walkPitch=map.getPitch().toFixed(2);canvas.dataset.walkFov=viewFov.toFixed(2);
-  site.setWalker({feet:foot.toArray() as [number,number,number],bearing:angle,crouched:body.crouched,phase,moving:!reducedMotion&&body.grounded&&Math.hypot(body.velocity.x,body.velocity.z)>.1,swings});
+  canvas.dataset.walkView=view?'fixed':'walking';canvas.dataset.walkGrounded=String(body.grounded);canvas.dataset.walkFlying=String(body.flying);canvas.dataset.walkSprint=String(body.sprinting);canvas.dataset.walkCrouch=String(body.crouched);canvas.dataset.walkBlocked=String(body.blocked);canvas.dataset.walkBlockedFrames=String(blockedFrames);canvas.dataset.walkSpeed=Math.hypot(body.velocity.x,body.velocity.z).toFixed(3);canvas.dataset.walkTriangles=String(site.collisionWorld().triangles);
+  map.jumpTo({...options,padding:{top:0,bottom:0,left:0,right:0}});canvas.dataset.walkPitch=map.getPitch().toFixed(2);canvas.dataset.walkFov=(view?view.fov:viewFov).toFixed(2);
+  site.setWalker(view?null:{feet:foot.toArray() as [number,number,number],bearing:angle,crouched:body.crouched,phase,moving:!reducedMotion&&body.grounded&&Math.hypot(body.velocity.x,body.velocity.z)>.1,swings});
   if(force||performance.now()-lastReport>100){onChange(eye.toArray() as [number,number,number]);lastReport=performance.now();}
  }
  function reset(){input.clear();const at=initial();body.spawn(new Vector3(at[0],0,at[1]));phase=0;bobWeight=0;viewFov=70;map.setVerticalFieldOfView(viewFov);apply(true);}
- const look=(dx:number,dy:number)=>{bearing+=dx*.23;pitch=Math.max(25,Math.min(145,pitch+dy*.16));apply(true);};
+ const look=(dx:number,dy:number)=>{if(view)return;bearing+=dx*.23;pitch=Math.max(25,Math.min(145,pitch+dy*.16));apply(true);};
  // A left click with the mouse captured, or a press without a drag, swings the arm.
- const down=(e:PointerEvent)=>{if(e.button!==0)return;if(document.pointerLockElement===canvas){swings++;apply();return;}canvas.focus();canvas.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,id:e.pointerId};press={x:e.clientX,y:e.clientY,t:performance.now()};};
+ // With a pick handler (the measuring tool), a click picks a point instead: at the centre while the mouse is captured.
+ const pick=(x:number,y:number)=>!!options.onPick?.(x,y);
+ const down=(e:PointerEvent)=>{if(e.button!==0)return;if(document.pointerLockElement===canvas){const r=canvas.getBoundingClientRect();if(!pick(r.left+r.width/2,r.top+r.height/2))swings++;apply();return;}canvas.focus();canvas.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,id:e.pointerId};press={x:e.clientX,y:e.clientY,t:performance.now()};};
  const move=(e:PointerEvent)=>{if(!drag||drag.id!==e.pointerId)return;look(e.clientX-drag.x,e.clientY-drag.y);drag={x:e.clientX,y:e.clientY,id:e.pointerId};};
- const up=(e:PointerEvent)=>{if(press&&e.type==='pointerup'&&Math.hypot(e.clientX-press.x,e.clientY-press.y)<5&&performance.now()-press.t<400){swings++;apply();}press=null;drag=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);};
+ const up=(e:PointerEvent)=>{if(press&&e.type==='pointerup'&&Math.hypot(e.clientX-press.x,e.clientY-press.y)<5&&performance.now()-press.t<400){if(!pick(e.clientX,e.clientY))swings++;apply();}press=null;drag=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);};
  const lockedLook=(e:MouseEvent)=>{if(document.pointerLockElement===canvas)look(e.movementX,e.movementY);};
  const lock=(e:MouseEvent)=>{if(!window.matchMedia('(hover: hover)').matches||!canvas.requestPointerLock)return;e.preventDefault();void Promise.resolve(canvas.requestPointerLock()).catch(()=>{});};
  const controls=['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright','shift','control',' '];
  const keydown=(e:KeyboardEvent)=>{
   if(e.key==='Escape'&&document.pointerLockElement===canvas){e.stopPropagation();document.exitPointerLock();return;}
-  if((e.target as HTMLElement).closest('input,select,textarea,button'))return;
+  if(view||(e.target as HTMLElement).closest('input,select,textarea,button'))return;
   const key=e.key.toLowerCase();if(controls.includes(key)){e.preventDefault();if(!e.repeat)input.press(key);}else if(key==='r'){e.preventDefault();reset();}
  };
  const keyup=(e:KeyboardEvent)=>input.release(e.key.toLowerCase()),blur=()=>{input.clear();body.velocity.set(0,0,0);apply(true);};
  const resize=()=>apply(true);map.on('resize',resize);
  canvas.addEventListener('pointerdown',down);canvas.addEventListener('pointermove',move);canvas.addEventListener('pointerup',up);canvas.addEventListener('pointercancel',up);canvas.addEventListener('dblclick',lock);document.addEventListener('mousemove',lockedLook);document.addEventListener('keydown',keydown);window.addEventListener('keyup',keyup);window.addEventListener('blur',blur);
  function tick(now:number){
-  const dt=Math.min((now-previous)/1000,.1);previous=now;const old=body.eye,oldStance=`${body.grounded}/${body.crouched}/${body.sprinting}/${body.flying}`,intent=input.read(bearing*Math.PI/180);
+  const dt=Math.min((now-previous)/1000,.1);previous=now;
+  if(view){if(Math.abs(site.baseElevation()-lastBase)>.001)apply();frame=requestAnimationFrame(tick);return;}
+  const old=body.eye,oldStance=`${body.grounded}/${body.crouched}/${body.sprinting}/${body.flying}`,intent=input.read(bearing*Math.PI/180);
   body.advance(dt,intent);if(body.blocked)blockedFrames++;const eye=body.eye,speed=Math.hypot(body.velocity.x,body.velocity.z);phase+=Math.hypot(eye.x-old.x,eye.z-old.z)*3;
   // Minecraft widens the view by a tenth while flying, and more while sprinting.
   const blend=1-Math.exp(-12*dt),targetFov=reducedMotion?70:(body.sprinting&&speed>.5&&!body.blocked?81:70)*(body.flying?1.1:1);
@@ -68,7 +77,19 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
   frame=requestAnimationFrame(tick);
  }
  apply(true);frame=requestAnimationFrame(tick);canvas.focus();
- return {keys:input.keys,press:key=>input.press(key),release:key=>input.release(key),toggleSprint:()=>{input.toggleSprint();apply(true);},toggleCrouch:()=>input.toggleCrouch(),toggleFly:()=>{input.toggleFly();canvas.focus();},reset,position:()=>body.eye.toArray() as [number,number,number],stance:()=>({sprinting:body.sprinting,sprintEnabled:input.sprintEnabled,crouched:body.crouched,grounded:body.grounded,flying:body.flying}),stop(){
+ return {keys:input.keys,press:key=>input.press(key),release:key=>input.release(key),toggleSprint:()=>{input.toggleSprint();apply(true);},toggleCrouch:()=>input.toggleCrouch(),toggleFly:()=>{input.toggleFly();canvas.focus();},reset,position:()=>body.eye.toArray() as [number,number,number],stance:()=>({sprinting:body.sprinting,sprintEnabled:input.sprintEnabled,crouched:body.crouched,grounded:body.grounded,flying:body.flying}),
+  setView(next){
+   if(next){
+    input.clear();body.velocity.set(0,0,0);if(document.pointerLockElement===canvas)document.exitPointerLock();
+    view={eye:[...next.eye],bearing:next.bearing,pitch:Math.max(-65,Math.min(55,next.pitch)),fov:Math.max(1,Math.min(150,next.fov))};
+    // The walker stands at the viewpoint, so leaving the view continues from there.
+    const spot=`${next.eye[0].toFixed(2)},${next.eye[2].toFixed(2)}`;if(spot!==viewSpawn){viewSpawn=spot;try{body.spawn(new Vector3(next.eye[0],0,next.eye[2]));}catch{/* no standing space: the walker stays */}}
+    map.setVerticalFieldOfView(view.fov);
+   }else if(view){bearing=view.bearing;pitch=90+view.pitch;view=null;viewSpawn='';bobWeight=0;viewFov=70;map.setVerticalFieldOfView(viewFov);}
+   apply(true);
+  },
+  camera:()=>view?{eye:[...view.eye],bearing:view.bearing,pitch:view.pitch,fov:view.fov}:{eye:body.eye.toArray() as [number,number,number],bearing:((bearing%360)+360)%360,pitch:pitch-90,fov:viewFov},
+  stop(){
   cancelAnimationFrame(frame);input.clear();if(document.pointerLockElement===canvas)document.exitPointerLock();site.setWalker(null);
   map.off('resize',resize);map.setTransformCameraUpdate(null);
   canvas.removeEventListener('pointerdown',down);canvas.removeEventListener('pointermove',move);canvas.removeEventListener('pointerup',up);canvas.removeEventListener('pointercancel',up);canvas.removeEventListener('dblclick',lock);document.removeEventListener('mousemove',lockedLook);document.removeEventListener('keydown',keydown);window.removeEventListener('keyup',keyup);window.removeEventListener('blur',blur);

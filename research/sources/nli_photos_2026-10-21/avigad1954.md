@@ -241,3 +241,4 @@ Nothing under rule 1 (no Copper Scroll image or reading appears). Nothing under 
 - Ch. 1–3 (pp. 1–36), including the research history.
 - Avigad's earlier inscription article (p. 61 n. 4).
 - The book's shelf mark (verso or spine not photographed).
+- Open-copy search, 22 October 2026: none found. archive.org (Hebrew and English titles, author) has no copy; the NLI catalogue search (https://www.nli.org.il/en/search?q=מצבות%20קדומות%20בנחל%20קדרון) and HebrewBooks search (https://www.hebrewbooks.org/search.aspx?sdesc=מצבות%20קדומות) returned HTTP 403 from this environment; web search gives only catalogue entries. Route: a second photo session of the same NLI copy, pp. 74–75 and 80–139 (with Figs. 26–74 where they fall in those pages).

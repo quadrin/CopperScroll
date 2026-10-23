@@ -1,0 +1,57 @@
+{
+ "title": "Schick 1888 Plate No. 1 registered to OpenStreetMap",
+ "date": "2026-10-22",
+ "frame": "place frame of jer_bethesda (31.78139 N, 35.23583 E): metres, x east, z south, MapLibre Mercator scaled at the anchor",
+ "figure": "schick1888-p6.jpg rendered at 360 dpi from the source PDF (2729 x 2783 px, PDF page 6)",
+ "bar": {
+  "px": [
+   1055,
+   1925
+  ],
+  "feet": 200,
+  "pxPerM": 14.27
+ },
+ "targets": "OSM ways w126864879 (Saint Anne Church outline), w137726904 (city wall), w288395731 (Lions' Gate building), drawn as lines; plan pixels kept only in the church box [1300,700]-[2000,1200] and the city-wall strip x 2330-2470",
+ "fit": {
+  "tool": "tools/imagery_registration.py fit (OSM line raster in place of imagery, 0.25 m per pixel)",
+  "turnDegClockwise": -4.8,
+  "pxPerM": 14.556,
+  "planPoint": [
+   1640,
+   980
+  ],
+  "placePoint": [
+   56.38,
+   3.32
+  ],
+  "score": 40.03,
+  "baseline": 24.777
+ },
+ "checks": {
+  "overlay": "the church, the city wall and Lions' Gate (St Stephen's Gate) fall on their mapped outlines; Birket Israel falls on today's car park, which lies on the filled pool",
+  "scale": "2.0 % above the printed bar (paper shrinkage or reproduction; the 360 dpi scan of 1:1000 gives 14.17 px/m)"
+ },
+ "positions": {
+  "schickPoolWestEnd": [
+   -31.1,
+   -20.7
+  ],
+  "schickPoolEasternPartWestEnd": [
+   -10.6,
+   -22.4
+  ],
+  "schickPoolStepsEastEnd": [
+   9.3,
+   -24.1
+  ],
+  "apseOfChurchOverEasternPool": [
+   11.1,
+   -22.9
+  ],
+  "court8": [
+   7.2,
+   -16.0
+  ]
+ },
+ "positionsNote": "read on the registered plan, about +-2 m; the pool runs west-east about 40 m in all on the plan"
+}

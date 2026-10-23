@@ -1,0 +1,70 @@
+{
+ "about": [
+  "Photo viewpoints for the eye-level model, keyed by gallery photo id (atlas-site-gallery.json) or a scene's src (atlas-scenes.json). Format: atlas-photo-viewpoints.ts.",
+  "position is [x, z] in metres from the place anchor in the plan's model frame (x east, z south, as model.markers); eyeHeight is metres above the ground under that point (default 1.6), or y gives an absolute model height; bearing is degrees clockwise from north; pitch is degrees above the horizon; roll turns the photo clockwise; hfov is the photo's horizontal field of view.",
+  "Status 'aligned by eye' means the camera was moved until the model's outlines sat on the photo's. It is an inference, not a measurement, and it carries the model's own errors.",
+  "The Kidron viewpoints (22 Oct 2026): features were picked by eye on the photo and the camera fitted to the model's versions of them by least squares (pinhole, principal point at the centre), then checked by overlaying the model's outlines on the photo. The field of view, 72.6°, is from the EXIF focal length (16 mm on the ZV-E10's APS-C sensor, 24 mm equivalent); no GPS or heading was recorded. Heights are absolute model y because the fitted eyes do not sit 1.6 m above the model's ground (see each note). Record: research/assets/plans/kidron-field-2026-10-19/README.md."
+ ],
+ "viewpoints": {
+  "jer_kidron_mon-field-2026-10-19-dsc08767": {
+   "plan": "kidron-bene-hezir",
+   "position": [-54.7, -36.5],
+   "y": -9.14,
+   "bearing": 118.96,
+   "pitch": 13.53,
+   "roll": 3.7,
+   "hfov": 72.6,
+   "status": "aligned by eye",
+   "uncertainty": {"position": 1.5, "bearing": 1.5, "height": 0.7},
+   "note": "Fitted to Absalom: finial, drum, attic and cornice corners and three corner edges (rms 5 px). The fitted eye is 3.2 m above the model's ground here; a standing eye would be about 1.6 m, so the ground west of Absalom may be higher than the model draws it.",
+   "alignedBy": "Claude (AI agent) for the project",
+   "date": "2026-10-22",
+   "alignedIn": "smooth"
+  },
+  "jer_kidron_mon-field-2026-10-19-dsc08770": {
+   "plan": "kidron-bene-hezir",
+   "position": [-44.34, -33.8],
+   "y": -9.93,
+   "bearing": 133.2,
+   "pitch": 38.3,
+   "roll": 6.5,
+   "hfov": 72.6,
+   "status": "aligned by eye",
+   "uncertainty": {"position": 1, "bearing": 2, "height": 0.5},
+   "note": "Fitted to Absalom's north-west corner: finial, attic and cornice corners, the attic edge and the south-west edge (rms 6 px). The fitted eye is 2.3 m above the model's ground here.",
+   "alignedBy": "Claude (AI agent) for the project",
+   "date": "2026-10-22",
+   "alignedIn": "smooth"
+  },
+  "jer_kidron_mon-field-2026-10-19-dsc08773": {
+   "plan": "kidron-bene-hezir",
+   "position": [-43.06, -26.98],
+   "y": -9.74,
+   "bearing": 91.92,
+   "pitch": 48.52,
+   "roll": -3.74,
+   "hfov": 72.6,
+   "status": "aligned by eye",
+   "uncertainty": {"position": 1, "bearing": 4, "height": 0.5},
+   "note": "Fitted to Absalom's west face: three capitals, the cornice and the attic top (rms 4 px). Seen almost square-on, the bearing trades against the roll, so the bearing is loose. The fitted eye is 2.5 m above the model's ground here.",
+   "alignedBy": "Claude (AI agent) for the project",
+   "date": "2026-10-22",
+   "alignedIn": "smooth"
+  },
+  "jer_kidron_mon-field-2026-10-19-dsc08812": {
+   "plan": "kidron-bene-hezir",
+   "position": [-46.15, 42.6],
+   "y": -7.13,
+   "bearing": 81.5,
+   "pitch": 20.24,
+   "roll": 6.34,
+   "hfov": 72.6,
+   "status": "aligned by eye",
+   "uncertainty": {"position": 1, "bearing": 2, "height": 0.5},
+   "note": "Fitted to Zechariah: the pyramid apex, the cornice corners, both front edges and the architrave (rms 3 px). The fitted eye is only 0.25 m above the model's ground here, so the model's ground and grave fill in front of the court are higher than the photo shows.",
+   "alignedBy": "Claude (AI agent) for the project",
+   "date": "2026-10-22",
+   "alignedIn": "smooth"
+  }
+ }
+}

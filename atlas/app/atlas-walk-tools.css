@@ -1,0 +1,64 @@
+/* Eye-level tools: the measuring tool (atlas-walk-measure.ts, atlas-walk-measure-card.tsx) and photo
+   viewpoints (atlas-photo-view.tsx). The measurement and the photo are drawn over the map canvas, inside
+   its container; their cards sit beside the walk controls. */
+.walk-measure{position:absolute;left:0;top:0;z-index:4;overflow:visible;pointer-events:none}
+.walk-measure-line{stroke:#ffd23f;stroke-width:3;stroke-linecap:round}
+.walk-measure-halo{stroke:#1d1a12;stroke-opacity:.75;stroke-width:6;stroke-linecap:round}
+.walk-measure-leg{stroke:#fffbe8;stroke-width:1.6;stroke-dasharray:6 5;stroke-opacity:.9}
+.walk-measure-dot{fill:#ffd23f;stroke:#1d1a12;stroke-width:2}
+.walk-measure-label{fill:#fffbe8;stroke:#1d1a12;stroke-width:3;paint-order:stroke;font:bold 13px Arial,sans-serif}
+.walk-measure-crosshair{position:absolute;z-index:22;left:50%;top:50%;width:22px;height:22px;margin:-11px 0 0 -11px;pointer-events:none;
+ background:linear-gradient(#ffd23f,#ffd23f) center/2px 100% no-repeat,linear-gradient(#ffd23f,#ffd23f) center/100% 2px no-repeat;filter:drop-shadow(0 0 1px #000)}
+.walk-measure-card{position:absolute;z-index:22;left:14px;bottom:18px;width:min(300px,calc(100% - 28px));max-height:calc(100% - 150px);overflow:auto;display:flex;flex-direction:column;gap:5px;padding:10px 12px;background:#fffdf5f4;border:1px solid #c8b98f;border-radius:7px;box-shadow:0 4px 18px #192a2030;color:#2f4636;font:12px/1.4 Arial,sans-serif}
+.walk-measure-card header{display:flex;justify-content:space-between;align-items:center}.walk-measure-card header strong{font-size:13px}
+.walk-measure-card header button{min-height:30px;padding:4px 10px;background:#f3f5e9;border:1px solid #bcc9af;border-radius:5px;color:#34543d;cursor:pointer}
+.walk-measure-warning{margin:0;padding:4px 7px;border:1px dashed #9a7a3a;border-radius:5px;background:#fff6dc;color:#6b4a14;font-weight:600}
+.walk-measure-card dl{margin:2px 0;display:grid;gap:3px}.walk-measure-card dl>div{display:flex;justify-content:space-between;gap:10px}
+.walk-measure-card dt{color:#55624f}.walk-measure-card dd{margin:0;display:flex;flex-direction:column;align-items:flex-end;font-variant-numeric:tabular-nums}
+.walk-measure-card dd span:first-child{font-weight:700;color:#1f3527}.walk-measure-card dd span+span{color:#5c5a48;font-size:11px}
+.walk-measure-cubit{display:flex;align-items:center;gap:7px}.walk-measure-cubit select{flex:1;min-width:0;min-height:32px;font:12px Arial,sans-serif}
+.walk-measure-source,.walk-measure-caveat,.walk-measure-hint,.walk-measure-help{color:#6a5f49;font-size:10.5px}
+.walk-measure-limit{margin:0;color:#5b3c16;font-size:11px;font-style:italic}
+.walk-measure-hint,.walk-measure-help{margin:0}
+/* Phones: a compact card at the top, where the sky usually is, so that taps reach the ground below it. The site
+   caption steps aside while measuring (turn Measure off to change Blocks/Smooth); the source and the general caveats
+   are left out, the relative-units caveat and the "not a test" lines stay. */
+@media(max-width:700px){
+ .walk-measure-card{left:8px;right:68px;top:8px;bottom:auto;width:auto;max-height:42%;font-size:11px;padding:7px 9px;gap:3px}
+ .map-surface:has(.walk-measure-card) .map-site-caption{display:none}
+ .walk-measure-source,.walk-measure-caveat:not(.walk-measure-units),.walk-measure-help{display:none}
+ .walk-measure-warning{padding:2px 6px}
+ .walk-measure-card dl{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+ .walk-measure-card dl>div{flex-direction:column;gap:0}.walk-measure-card dd{align-items:flex-start}
+ .walk-measure-limit{font-size:10px}
+}
+
+/* A photo shown from its viewpoint: drawn over the canvas at the camera's scale. */
+.photo-view-overlay{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}
+.photo-view-overlay[data-editing=true]{pointer-events:auto;cursor:grab;touch-action:none}
+.photo-view-overlay img{position:absolute;display:block;max-width:none;transform-origin:50% 50%;user-select:none;-webkit-user-select:none}
+.photo-view-panel{position:absolute;z-index:21;top:14px;right:14px;width:min(340px,calc(100% - 28px));max-height:calc(100% - 28px);overflow:auto;display:flex;flex-direction:column;gap:6px;padding:10px;background:#fffdf5f4;border:1px solid #c8d1be;border-radius:7px;box-shadow:0 4px 18px #192a2030;color:#34543d;font:12px/1.4 Arial,sans-serif}
+.photo-view-panel header{display:flex;justify-content:space-between;align-items:center}
+.photo-view-panel header button{width:32px;height:32px;display:grid;place-items:center;background:none;border:0;color:#315e49;cursor:pointer}
+.photo-view-panel p{margin:0}.photo-view-title{font-weight:600;color:#24392b}
+.photo-view-status{padding:4px 7px;border-radius:5px;background:#e9efe2;color:#254c37}
+.photo-view-note,.photo-view-limit{color:#6a5f49;font-size:11px}.photo-view-limit{font-style:italic}
+.photo-view-credit{font-size:11px}.photo-view-credit a{text-decoration:underline}
+.photo-view-opacity{display:flex;align-items:center;gap:8px;font-size:11px}.photo-view-opacity input{flex:1;min-height:30px}
+.photo-view-edit-toggle,.photo-view-actions button{min-height:32px;padding:5px 10px;background:#f3f5e9;border:1px solid #bcc9af;border-radius:5px;color:#34543d;cursor:pointer;font:11px Arial,sans-serif;align-self:flex-start}
+.photo-view-edit-toggle[aria-pressed=true]{background:#315e49;color:#fff}
+.photo-view-editor{display:flex;flex-direction:column;gap:6px;padding-top:4px;border-top:1px solid #d8dccb}
+.photo-view-editor small{color:#6a5f49;font-size:10.5px}
+.photo-view-fields{display:grid;grid-template-columns:1fr 1fr;gap:4px 8px}
+.photo-view-fields label,.photo-view-wide{display:flex;align-items:center;gap:4px;font-size:11px}
+.photo-view-fields label{justify-content:space-between}.photo-view-fields input{width:74px;min-height:26px;font:12px Arial,sans-serif}
+.photo-view-wide{flex-direction:column;align-items:stretch}.photo-view-wide textarea,.photo-view-wide input,.photo-view-wide select{font:12px Arial,sans-serif}
+.photo-view-actions{display:flex;gap:6px}
+.photo-view-json{width:100%;font:11px/1.35 ui-monospace,Menlo,monospace}
+.walk-reference-viewpoint{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.walk-reference-viewpoint button{min-height:32px;padding:5px 10px;border:1px solid #315e49;border-radius:5px;background:#315e49;color:#fff;cursor:pointer;font:12px Arial,sans-serif}
+.walk-reference-viewpoint button.walk-reference-align{background:#f3f5e9;color:#34543d;border-color:#bcc9af;font-size:11px}
+.walk-reference-viewpoint small{color:#6a5f49;font-size:10.5px}
+/* Walking is paused in a photo view: the walk controls keep only their options (Signs, Measure). */
+.map-surface:has(.photo-view-panel) .map-walk-controls>:not(.walk-options){display:none}
+@media(max-width:600px){.photo-view-panel{top:auto;bottom:210px;right:8px;width:calc(100% - 16px);max-height:40%}}
