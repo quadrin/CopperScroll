@@ -1,0 +1,237 @@
+{
+ "title": "Imagery registration: bethesda",
+ "date": "2026-10-23",
+ "frame": "place frame: metres from the place anchor in atlas/app/atlas-data.json, x east, z south, MapLibre Mercator scaled at the anchor (tools/build_osm_context.py Frame)",
+ "turnConvention": "turnDegClockwise: the plan's page axes are turned clockwise on the map by this angle (east towards south); pxPerM: plan pixels per metre; planPoint (pixels) lands on placePoint (place frame). rotationDeg in the atlas is anticlockwise-positive (three.js about the up axis).",
+ "imagery": {
+  "service": "Esri World Imagery (World_Imagery MapServer), zoom-18 tiles; metadata from its identify query at the place anchor",
+  "source": "Vantor",
+  "sensor": "LG02 (Legion)",
+  "date": "2025-01-03",
+  "resolution_m": 0.34,
+  "accuracy_m": 8.47,
+  "block": "DYNAMIC_ESRI_Jerusalem_25Q2",
+  "release": "Raster Basemaps 2025.R08",
+  "use": "measurement only; tiles and resampled images are not archived (Esri terms of use)"
+ },
+ "method": "Pierre & Rousée 1981 Fig. 2 (detail plan; no scale bar) is matched to Vantor Legion imagery (Esri World Imagery, 3 January 2025, 0.34 m, stated accuracy 8.5 m) by searching the turn, scale and shift that put its drawn structures on the imagery's edges (tools/imagery_registration.py fit), then checked against Schick's 1888 plan registered to the mapped church, city wall and Lions' Gate, and against the published dam dimensions.",
+ "plans": [
+  "bethesda-pools"
+ ],
+ "place": "jer_bethesda",
+ "anchor": [
+  31.78139,
+  35.23583
+ ],
+ "figures": [
+  {
+   "id": "pr1981-fig2",
+   "citation": "M.-J. Pierre and J.-M. Rousée, 'Sainte-Marie de la Probatique, état et orientation des recherches', Proche-Orient Chrétien 31 (1981), Fig. 2 (facing pp. 24–25), right-hand panel (detail plan of the dam, the two basins, the Moustier and the grottoes; north arrow, no scale bar)",
+   "photo": "IMG_0506.HEIC (the owner's NLI photo, 21 Oct 2026 16:22:56; SHA-256 05f0b66903ce60ca60b80b58ea474d5d380d7cdd9f099f8753793a710bd532a8; Drive ID in research/sources/nli_photos_2026-10-21/probatique_poc31_1981_originals.csv). Not archived: the figure is in copyright and the NLI photos stay out of the repository. IMG_0507 (same figure, turned, stronger perspective) and IMG_0508 (Fig. 3) were not used for measurement.",
+   "flattening": "The panel's four printed borders were traced on the 4284 × 5712 photo (top border bowed by about 100 px by the page's curve) and the panel was flattened between them by a Coons patch to 1675 × 2390 px; corners (photo px) TL (2160.1, 261.5), TR (3814.1, 185.2), BL (2177.8, 2630.7), BR (3872.5, 2595.9). After flattening the dam's faces are straight and parallel. Panel pixels below are in this flattened panel (x to page right = south, y down = west; page-up is east).",
+   "picks": {
+    "damCentre": [
+     719,
+     1660
+    ],
+    "damNorthFaceEastEnd": [
+     608,
+     1020
+    ],
+    "damNorthFaceWestEnd": [
+     608,
+     2340
+    ],
+    "damSouthFaceEastEnd": [
+     830,
+     925
+    ],
+    "damSouthFaceWestEnd": [
+     830,
+     2340
+    ],
+    "moustierApseInnerApex": [
+     520,
+     920
+    ],
+    "cisternWallBetween": [
+     520,
+     1580
+    ],
+    "medievalCisternWestEnd": [
+     522,
+     2265
+    ],
+    "grottesAreaCentre": [
+     660,
+     560
+    ],
+    "steAnneDrawnCornerInner": [
+     1340,
+     215
+    ],
+    "steAnneDrawnCornerOuter": [
+     1300,
+     292
+    ]
+   },
+   "fit": {
+    "turnDegClockwise": -10.4,
+    "pxPerM": 35.152,
+    "planPoint": [
+     729,
+     719
+    ],
+    "placePoint": [
+     -9.57,
+     -15.47
+    ],
+    "score": 21.038,
+    "baseline": 17.061,
+    "planImage": "the flattened panel turned 90° clockwise (east to the right); planPoint is the dam centre, panel px (719, 1660)",
+    "masked": "only the drawn structures were kept: the Moustier and its cistern, the dam's two faces, the medieval cistern, the Byzantine church foundations and grottoes, St Anne's drawn corner, and the south basin's steps and wall; hatching, labels and the section line were masked",
+    "turnProfile": "best score for each turn at 33.79 px/m: 19.5 at 0°, 20.3–20.7 from −4° to −12°, 20.1 at −14°, 19.4 at −16°; the turn is weakly fixed between about −5° and −12°"
+   },
+   "checks": {
+    "schickChain": {
+     "what": "five points matched to Schick 1888 Plate No. 1 (registered to the mapped church, city wall and Lions' Gate: research/assets/plans/bethesda-early-plans-2026-10-22/registration.json): the west end of the western cistern, the wall between the two cisterns, the inner apse apex, and two points on the cisterns' south wall",
+     "identification": "INFERENCE: Schick's 'two pools' (a western pool with mouths and an eastern pool under a small church with an apse) are Fig. 2's 'citerne médiévale' and 'Moustier et citerne probatique', both against the dam's north face",
+     "pxPerM": 33.79,
+     "pageUpBearingDeg": 84.7,
+     "turnDegClockwise": -5.3,
+     "rmsResidual_m": 0.76,
+     "damCentre": [
+      -10.07,
+      -14.97
+     ],
+     "agreement": "dam centre within 0.7 m of the imagery fit; dam ends and cisterns within 0.4–2.5 m; the Moustier's apse within 2.3 m of Schick's registered apse"
+    },
+    "publishedDimensions": {
+     "what": "drawn dam against Pierre & Rousée p. 24 (6 m wide at the top, more than 7 m at the base, about 40 m long) and Duprez (6.50 m at the top)",
+     "width_m": "6.3 at the imagery fit's scale, 6.6 at the Schick chain's",
+     "length_m": "37.6–40.3 (north and south faces) at the imagery fit's scale; 39.1–41.9 at the Schick chain's"
+    },
+    "orientation": {
+     "imageryEdges": "dominant rectilinear edge direction in the ruins north of the south basin about 12° north of east (weak: coherence 0.31; peaks 3°, 12°, 21°); control: St Anne's roof gives 20.8° against 22.1° for its mapped outline",
+     "mappedRuins": "untagged OpenStreetMap building outlines inside the excavation (ways 288395721–288395733, mapped 2014–2019) run 12.8–16.3° north of east (coherence 0.62–0.97) (their position is about 9 m south of the imagery's ruins; see imageryAgainstMap)",
+     "schickChain": "5.3° north of east",
+     "adopted": "10.4° north of east (the imagery fit), about ±4°"
+    },
+    "steAnne": "Fig. 2's corner of St Anne's falls 4.7–4.9 m (imagery fit) from the mapped church's north-west corner (37.5, 2.4), and its walls are drawn about 15° off the mapped church; a partial sketch at the panel's edge, not used",
+    "overlay": "the Moustier falls on a roofless rectangular ruin visible in the imagery north of the deep, shaded south basin; St Anne's drawn corner falls on the church's pale roof",
+    "imageryAgainstMap": "Translation-only fits of mapped outlines to the same imagery's edges (240 × 200 m around the anchor): the mapped buildings around the site fit best shifted (−0.5, +1.0) m, and St Anne's church alone the same, so the imagery and the mapped surroundings agree within about 1 m. The untagged ruin outlines inside the excavation (ways 288395721–288395733) fit best moved about 9 m north: they are offset from the visible ruins, so they give orientation only and are not used as a check of position. The atlas still draws them as today's mapped features."
+   }
+  }
+ ],
+ "positions": {
+  "damCentre": [
+   -9.57,
+   -15.47
+  ],
+  "damNorthFaceEastEnd": [
+   7.77,
+   -21.86
+  ],
+  "damNorthFaceWestEnd": [
+   -29.17,
+   -15.08
+  ],
+  "damSouthFaceEastEnd": [
+   11.57,
+   -16.14
+  ],
+  "damSouthFaceWestEnd": [
+   -28.03,
+   -8.87
+  ],
+  "moustierApseInnerApex": [
+   10.11,
+   -24.84
+  ],
+  "cisternWallBetween": [
+   -8.35,
+   -21.45
+  ],
+  "medievalCisternWestEnd": [
+   -27.51,
+   -17.88
+  ],
+  "grottesAreaCentre": [
+   20.91,
+   -22.77
+  ],
+  "steAnneDrawnCornerInner": [
+   34.05,
+   -5.51
+  ],
+  "steAnneDrawnCornerOuter": [
+   31.69,
+   -6.24
+  ]
+ },
+ "positionsViaSchick": {
+  "damCentre": [
+   -10.07,
+   -14.97
+  ],
+  "damNorthFaceEastEnd": [
+   8.49,
+   -19.99
+  ],
+  "damNorthFaceWestEnd": [
+   -30.41,
+   -16.38
+  ],
+  "damSouthFaceEastEnd": [
+   11.9,
+   -13.71
+  ],
+  "damSouthFaceWestEnd": [
+   -29.8,
+   -9.84
+  ],
+  "moustierApseInnerApex": [
+   11.2,
+   -22.86
+  ],
+  "cisternWallBetween": [
+   -8.25,
+   -21.05
+  ],
+  "medievalCisternWestEnd": [
+   -28.44,
+   -19.12
+  ],
+  "grottesAreaCentre": [
+   22.19,
+   -19.72
+  ],
+  "steAnneDrawnCornerInner": [
+   34.22,
+   -0.62
+  ],
+  "steAnneDrawnCornerOuter": [
+   31.84,
+   -1.59
+  ]
+ },
+ "placement": {
+  "target": [
+   -9.57,
+   -15.47
+  ],
+  "rotationDeg": 10.4,
+  "modelPoint": "dam",
+  "note": "the model's dam centre lands on the fitted dam centre and its east–west axis is turned 10.4° anticlockwise, to 10.4° north of east"
+ },
+ "uncertainty_m": "about 3 at the dam (two fits agree within 0.7 m at its centre); turn about ±4°; the imagery's own stated accuracy is 8.5",
+ "previousPlacement": {
+  "method": "dam centre on the area centroid of OSM way 126864878 (Pool of Bethesda, 82.6 × 51.6 m), unturned",
+  "dam": [
+   11.72,
+   -11.57
+  ],
+  "shift_m": "21.3 west and 3.9 north to the new centre; turned 10.4°"
+ },
+ "easternComplex": "The model's eastern complex (Duprez Pl. II arrangement, scale not recorded) is moved as a block to the 'Grottes' area that Fig. 2 draws 2–18 m east of the dam's east end, across the dam's line (centre at panel px (660, 560), place (20.9, −22.8)); the block's centre is put 3.2 m east of that centre to clear the south pool's drawn north-east corner. That Fig. 2's grottoes are Duprez's complex is an inference."
+}

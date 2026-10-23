@@ -95,6 +95,26 @@ EVIDENCE = stated in the source. INFERENCE = the project's. BK = the reader's ba
     - Bassin sud, canal, "coupe fig. 3", citerne médiévale, Bassin nord, Digue, marches, mur.
   - The dam runs east–west between the north and south basins. The canal runs along the section line under the south basin.
 
+#### Fig. 2 measured and registered (23 Oct 2026)
+
+The owner uploaded IMG_0506–0508 to the session; their SHA-256 values match the originals CSV. IMG_0506 was measured. IMG_0507 shows the same figure turned, with stronger perspective, and was not used for measurement. IMG_0508 is Fig. 3. The page's curve bows the panel's top border by about 100 px, so the right-hand panel was flattened between its four traced borders before any measurement. Record with every number: [bethesda.json](../../assets/plans/imagery-registration-2026-10-22/bethesda.json).
+
+- EVIDENCE (right-hand panel): the north arrow points to page left, so page-up is east.
+  - The dam ("Digue") is a band between "Bassin nord" and "Bassin sud".
+  - "Moustier et citerne probatique" (a chapel with an apse at its east end and a long cistern inside) and the "citerne médiévale" west of it lie in one line along the dam's north face.
+  - "Marches" and a "mur" close the south basin's west end.
+  - The "Grottes" lie east of the dam's east end, inside the dashed "Fondations de l'église byzantine". A corner of "Ste Anne" is at the panel's top right (south-east).
+  - The drawn dam is about 6.1 times as long as it is wide. P. 24 and Duprez give about 40 m by 6–6.5 m at the top (6.2–6.7).
+- EVIDENCE (left-hand panel): a pictorial sketch. The pools and St Anne's are drawn in an oblique view among schematic streets. It was not used for measurement.
+- INFERENCE (identification): Schick's 1888 "two pools" (a western pool with mouths, and an eastern pool under a small church with an apse) are Fig. 2's "citerne médiévale" and the cistern under the Moustier. On both plans they lie in one line about 40 m long, and their south wall is the dam's north face.
+- INFERENCE (registration, for display only):
+  - Fitted to the imagery (Vantor Legion, 3 January 2025), the dam's centre is at (−9.6, −15.5) m from the `jer_bethesda` anchor. Its axis runs 10.4° north of east, and the imagery fixes the turn only between about 5° and 12°.
+  - Fitted through Schick's registered plate (five points, root-mean-square residual 0.76 m), the centre is within 0.7 m of that, with a turn of 5.3°.
+  - At either fit's scale the drawn dam is 6.3–6.6 m wide and 38–42 m long, as published.
+  - The ruins mapped in OpenStreetMap inside the excavation run 13–16° north of east, but lie about 9 m south of the ruins visible in the imagery. The mapped buildings around the site agree with the imagery within about 1 m.
+  - The atlas model's dam now stands there. Before, it stood about 21 m further east, on the centroid of the mapped site outline.
+- Not settled: the north basin's extent (only its south-east corner is assured, p. 25); the south basin's outline (the model keeps Duprez's side lengths); the dates. Fig. 2's corner of St Anne's falls about 5 m from the mapped church and is drawn about 15° off it: a partial sketch at the panel's edge.
+
 ### Later phases (p. 28; pp. 36–41)
 
 - EVIDENCE, p. 28, the Byzantine basilica:
@@ -137,7 +157,7 @@ EVIDENCE = stated in the source. INFERENCE = the project's. BK = the reader's ba
 ## What these pages do NOT say
 
 - No dimensions for either basin's length or width; only the dam's (40 m long, 13 m high) and the 13 m depth.
-- No plan scale on Fig. 2, and no coordinates.
+- No plan scale on Fig. 2, and no coordinates. (The scale used on 23 Oct 2026 comes from Schick's plate and from the imagery, and the drawn dam's size then agrees with the published dimensions.)
 - No dating evidence such as coins, pottery or sealed deposits on these pages. The dates rest on construction technique and textual association (Sirach, Isaiah).
 - No mention of porticoes as excavated remains. The five porticoes appear only in texts (Bordeaux Pilgrim, John 5). n. 35 says "du point de vue archéologique, nous n'en avons aucune trace" of a healing sanctuary of the type John describes.
 - No Strouthion pool or other twin-pool control is discussed.

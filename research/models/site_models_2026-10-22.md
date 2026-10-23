@@ -88,3 +88,13 @@ The models of Gerizim, Jericho (both) and Hyrcania stood at their place anchors,
 - Bethesda is not refined: the pools lie in shade under trees in the imagery, and no figure ties the model to a mapped building.
 - Photogrammetry of the Kidron photos (to improve the ground at the monuments' feet) failed: 3 of 62 images registered ([note](../assets/plans/kidron-field-2026-10-19/README.md#photogrammetry-test-22-october-2026)).
 - No reading, identification, rating or outcome count changed.
+
+## Bethesda placed by Pierre & Rousée Fig. 2 (23 October)
+
+The owner uploaded the photos of Pierre & Rousée 1981 Fig. 2 (IMG_0506–0508). Fig. 2's detail plan draws the dam with the Moustier, the two cisterns along the dam's north face, the grottoes and a corner of St Anne's ([reading](../sources/nli_photos_2026-10-21/probatique_poc31_1981.md#fig-2-measured-and-registered-23-oct-2026); [record](../assets/plans/imagery-registration-2026-10-22/bethesda.json)).
+
+- New evidence: Fig. 2 measured on the flattened photo (not archived; in copyright).
+- INFERENCE (placement): the dam's centre is at (−9.6, −15.5) m from the `jer_bethesda` anchor, about 21 m west and 4 m north of its earlier place on the centroid of the mapped site outline. Its axis runs 10.4° north of east (about ±4°). Two fits agree within 0.7 m at the centre: Fig. 2 fitted to the imagery, and Fig. 2 fitted through Schick's 1888 plate.
+- Changed geometry: the model is moved and turned, with the pools' shapes unchanged. The eastern complex keeps Duprez Pl. II's arrangement, as one block in Fig. 2's "Grottes" area east of the dam's east end, instead of about 55 m east and 20 m south of the dam.
+- No reading, identification, rating or outcome count changed.
+

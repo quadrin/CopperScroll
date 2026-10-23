@@ -43,7 +43,13 @@ assert.ok(height>=1.4&&height<=1.7,'cave height must remain within the reported 
 assert.equal(cave.units,'metres');
 assert.equal(cave.landscape.mapped,false,'unlocated cave must not acquire geographic terrain');
 assert.equal(models.get('gerizim-precinct').landscape.mapped,true);
-for(const id of ['gerizim-precinct','jericho-early','jericho-late','hyrcania-waterworks']){const m=models.get(id);assert.equal(m.landscape.registeredBy,'imagery',`${id}: registered to satellite imagery`);assert.ok(m.assumptions.some(s=>s.includes('satellite imagery')),`${id}: the imagery registration is stated`);}
+for(const id of ['gerizim-precinct','jericho-early','jericho-late','hyrcania-waterworks','bethesda-pools']){const m=models.get(id);assert.equal(m.landscape.registeredBy,'imagery',`${id}: registered to satellite imagery`);assert.ok(m.assumptions.some(s=>s.includes('satellite imagery')),`${id}: the imagery registration is stated`);}
+// Bethesda: the dam stands where Pierre & Rousée's Fig. 2 puts it, turned to its axis, and the eastern complex lies
+// in the plan's 'Grottes' area, east of the dam's east end (research/assets/plans/imagery-registration-2026-10-22/bethesda.json).
+{const m=models.get('bethesda-pools'),d=m.markers.get('dam'),n=m.markers.get('north-pool'),k=m.markers.get('cistern-1'),a=Math.atan2(-(d.z-n.z),d.x-n.x)*180/Math.PI;
+ assert.ok(Math.hypot(d.x+9.57,d.z+15.47)<.5,'Bethesda: the dam sits on its registered centre');
+ assert.ok(Math.abs(a+90-10.4)<1,'Bethesda: the north pool lies north of the dam, across an axis turned 10.4° north of east');
+ assert.ok(Math.hypot(k.x-20.9,k.z+22.8)<12&&k.x>12,'Bethesda: cistern 1 lies in Fig. 2’s Grottes area, east of the dam’s east end');}
 {const g=models.get('gerizim-precinct').markers.get('persian-precinct');assert.ok(Math.hypot(g.x-12.7,g.z+42)<.5,'Gerizim: the precinct core stands where the registered plans put it');}
 {const plan=plans.find(p=>p.id==='qumran-settlement'),q=exports.buildModel(plan,{context:surroundings(plan.id)}),c=q.markers.get('L110');assert.equal(q.landscape.registeredBy,'imagery','qumran-settlement: registered to satellite imagery');assert.ok(Math.hypot(c.x+67.5,c.z-63)<1.5,'Qumran: cistern L110 stands where the registered figure puts it');}
 {const h=models.get('hyrcania-waterworks').markers.get('north-pool');assert.ok(Math.hypot(h.x+101.3,h.z+76.6)<3,'Hyrcania: the north pool stands where the registered figure puts it');}
