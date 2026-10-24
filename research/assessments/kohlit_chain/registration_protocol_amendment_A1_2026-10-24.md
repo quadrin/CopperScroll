@@ -1,6 +1,6 @@
-# Registration protocol, amendment A1 (DRAFT): blind scoring instead of sealed records
+# Registration protocol, amendment A1: blind scoring instead of sealed records
 
-Drafted 24 October 2026 by Claude at the owner's request. **Status: DRAFT, not adopted.** It takes effect only when the owner adopts it in writing (chat or commit message) and the integrator commits it with that note. Until then [registration_protocol.md](registration_protocol.md) applies unchanged.
+Drafted 24 October 2026 by Claude at the owner's request. **Status: ADOPTED** by the owner, Alex Kesin, in chat on 24 October 2026 at about 18:33 UTC ("yes"). Decisions: (1) adopt A1: yes; (2) discrimination rule: the default in point 4 is kept (no change requested); (3) the already-exposed items stay exploratory even if blind-scored. [registration_protocol.md](registration_protocol.md) applies as amended here to every record opened after adoption.
 
 ## Why
 
@@ -18,11 +18,11 @@ The prediction (`SULTAN-1-precamp-mouth`, registered in [chain.json](chain.json)
 
 ## What does not change
 
-- Already-exposed items stay exploratory: the SULTAN-1 Drive folder (seal lifted 24 Oct), the Wagemakers 2014 chapter 6 (read 24 Oct), the PEF *Quarterly Statement* items, and the eight Commons files of 17 Oct. Blind scoring could still be run on them, but the result is labelled exploratory unless the owner decides otherwise in writing.
+- Already-exposed items stay exploratory: the SULTAN-1 Drive folder (seal lifted 24 Oct), the Wagemakers 2014 chapter 6 (read 24 Oct), the PEF *Quarterly Statement* items, and the eight Commons files of 17 Oct. Blind scoring may be run on them, but the result is labelled exploratory (owner decision 3).
 - Reserved items under other protocols (XII 10 images; the arrival register's frozen procedure for other items) are untouched.
 - AGENTS.md's "Require an unseen prediction" rule is met by the frozen prediction plus a blind scorer. Adopting A1 needs one line added to ACTIVE_TEST question 2 replacing "follow the registration protocol" with "follow the registration protocol as amended by A1".
 
-## Owner decisions needed to adopt
-1. Adopt A1 (yes/no).
-2. The discrimination rule in point 4: keep the default ("fewer than half the controls positive") or set another.
-3. Whether the exposed items listed above may be blind-scored as confirmatory (default: no, exploratory only).
+## Owner decisions (24 October 2026)
+1. Adopt A1: **yes**.
+2. Discrimination rule: **default kept** (fewer than half the control strips positive).
+3. Already-exposed items: **exploratory only**, even if blind-scored.
