@@ -1,0 +1,56 @@
+{
+ "points": {
+  "C1 western block, NW outer corner": {
+   "plan_m": [
+    -14.6,
+    -16.0
+   ],
+   "image_px": [
+    29322.5,
+    19980.5
+   ]
+  },
+  "C3 tower block, NW outer corner": {
+   "plan_m": [
+    21.3,
+    -9.3
+   ],
+   "image_px": [
+    29367.7,
+    19979.8
+   ]
+  },
+  "C4 east wing, east end of north wall": {
+   "plan_m": [
+    61.0,
+    -2.55
+   ],
+   "image_px": [
+    29414.7,
+    19983.6
+   ]
+  },
+  "C7 south wall, west end": {
+   "plan_m": [
+    0.0,
+    40.4
+   ],
+   "image_px": [
+    29352.7,
+    20047.3
+   ]
+  }
+ },
+ "m_per_px": 0.8207352565565479,
+ "theta_deg": 9.43871431739082,
+ "L110_px": [
+  29343.430523323445,
+  19997.410776568897
+ ],
+ "residual_px": {
+  "C1 western block, NW outer corner": 0.63,
+  "C3 tower block, NW outer corner": 2.24,
+  "C4 east wing, east end of north wall": 2.11,
+  "C7 south wall, west end": 1.79
+ }
+}

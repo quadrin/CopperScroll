@@ -1,0 +1,31 @@
+{
+ "primary": {
+  "L71": true,
+  "L56/58": true,
+  "L91": true,
+  "L110": true,
+  "L48/49": true,
+  "L117": true,
+  "L118": true,
+  "L138": false
+ },
+ "primary_count": 7,
+ "secondary": {
+  "A+B conf>=1": {
+   "pools": "7/8",
+   "controls": "15/16"
+  },
+  "A+B conf>=2": {
+   "pools": "7/8",
+   "controls": "15/16"
+  },
+  "B conf>=1": {
+   "pools": "5/8",
+   "controls": "3/16"
+  },
+  "B conf>=2": {
+   "pools": "5/8",
+   "controls": "3/16"
+  }
+ }
+}

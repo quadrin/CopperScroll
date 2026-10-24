@@ -1,0 +1,90 @@
+{
+ "frame": "D3C1214-200439F007, tile c (KH-9 HEXAGON panoramic, mission 1214, 5 May 1978), USGS EROS declassified; owner copy in Drive \"06 Imagery/HEXAGON 1978-05-05\", unzipped to the Mac",
+ "tile_sha_note": "tile read in place on the Mac through memmap; crop saved as F007_c_ruin_29180_19840.png (340x340 px, origin x=29180, y=19840 in tile c)",
+ "crop_sha256": "14f0c9e4ef5434b525de3ad0971a231f25853f61a061afc57618feeac031ca4f",
+ "plan": "Magen & Peleg 2018, Back to Qumran, Fig. 9, as traced in research/models/traced_plans/qumran-settlement.json (frame metres, origin L110 centre, x east, z south). CC BY-NC 4.0, attribute Magen and Peleg.",
+ "rule": "Fit the plan to the frame on at least four points outside the pools. A pool shows if a person can mark a distinct shadow or tone edge at its place. If fewer than four of the eight show, the method stops. (Results doc, Method 2, fixed before any better frame was opened.)",
+ "fit": {
+  "kind": "similarity, least squares on 4 wall corners",
+  "points": {
+   "C1 western block, NW outer corner": {
+    "plan_m": [
+     -14.6,
+     -16.0
+    ],
+    "image_px": [
+     29322.5,
+     19980.5
+    ]
+   },
+   "C3 tower block, NW outer corner": {
+    "plan_m": [
+     21.3,
+     -9.3
+    ],
+    "image_px": [
+     29367.7,
+     19979.8
+    ]
+   },
+   "C4 east wing, east end of north wall": {
+    "plan_m": [
+     61.0,
+     -2.55
+    ],
+    "image_px": [
+     29414.7,
+     19983.6
+    ]
+   },
+   "C7 south wall, west end": {
+    "plan_m": [
+     0.0,
+     40.4
+    ],
+    "image_px": [
+     29352.7,
+     20047.3
+    ]
+   }
+  },
+  "m_per_px": 0.8207352565565479,
+  "theta_deg": 9.43871431739082,
+  "L110_px": [
+   29343.430523323445,
+   19997.410776568897
+  ],
+  "residual_px": {
+   "C1 western block, NW outer corner": 0.63,
+   "C3 tower block, NW outer corner": 2.24,
+   "C4 east wing, east end of north wall": 2.11,
+   "C7 south wall, west end": 1.79
+  },
+  "rms_m": 1.48,
+  "leave_one_out_m": [
+   1.05,
+   2.57,
+   4.69,
+   3.44
+  ],
+  "cross_check": "independent automatic fit of all walls outside the pools (pools and L110 masked) to image darkness: 0.82 m/px, 8 deg, L110 at (29345,19997); differs from the 4-point fit by 1.7-3.5 px at the control points"
+ },
+ "judgements": {
+  "L71": "shows: dark shadow fills the east side and south end inside the outline, same length and slant",
+  "L56/58": "shows: dark shadows inside the L58 outline; L56 part bright with a tone edge",
+  "L91": "shows: dark rectangle inside the outline (south part), sharp edges",
+  "L110": "shows: dark round spot about 5-6 m across, overlapping the circle, centre about 2 m SE of the fitted centre",
+  "L48/49": "possible: dark elongated shadow overlapping the NE half of the outline, centre offset about 3 m NE",
+  "L117": "possible: dark shadow of the same shape and slant along the SE edge of the outline, offset about 2 m",
+  "L118": "possible: dark shadow of the same size just east of the outline, offset about 2.5-3 m",
+  "L138": "does not show: no distinct shadow or edge; texture like the surrounding ground"
+ },
+ "count": {
+  "shows": 4,
+  "possible": 3,
+  "not_shown": 1
+ },
+ "verdict": "4 of 8 show (up to 7 with the possibles): at least four, so the method does not stop for this film",
+ "exposure": "The judge (Claude) had seen the 4-point and automatic overlays before marking; the clean crop with ticks (judge_clean.png) is kept for an independent marking by a person who has not seen the overlay.",
+ "ground_px_m": "0.82 m per pixel from the fit (plan scale); up is about 9 deg from the Fig. 9 north arrow"
+}
