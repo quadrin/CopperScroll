@@ -10,6 +10,8 @@ Exploratory readings made in one session (Claude, for the owner). Each file says
 | [leo_boer_1953_reading_2026-10-24.md](leo_boer_1953_reading_2026-10-24.md) | PEF Leo Boer photos, 1953–54 | The aqueduct was unexcavated in Dec 1953; L48/49 cleared by then; L91 dug March 1954. |
 | [yechezkel2024_spring_tunnels_2026-10-24.md](yechezkel2024_spring_tunnels_2026-10-24.md) | Yechezkel et al. 2024 and Apps. 1–5 | 132 mapped tunnels; U–Th minimum ages; Zur tunnel as a Herodian control for Method 6. |
 | [gutfeld_marsaba_reading_2026-10-24.md](gutfeld_marsaba_reading_2026-10-24.md) | Gutfeld 2020 previews; Bavarian aerial BS Pal. 0923 (1918) | Drive copies of Gutfeld are previews only (the chapter is read in research/history/); the 1918 frame's scale and what an entry-35 search would need. |
+| [bonnie2025_miqveh_plasters_2026-10-24.md](bonnie2025_miqveh_plasters_2026-10-24.md) | Bonnie et al. 2025, npj Heritage Science 13:78 | 54 miqveh plaster samples (Galilee, Golan): lime lumps and charcoal common in limestone-region plasters; no dates run; layered recipes mean a coin "in the plaster" dates only its layer. Method 6 first test somewhat more likely to pass. |
+| [wagemakers2014_boer_qumran_2026-10-24.md](wagemakers2014_boer_qumran_2026-10-24.md) | Wagemakers (ed.) 2014 | Confirms the PEF dates of Boer's Qumran frames; corrects two points of the Boer reading (L117/L118 visible in 1951; the L48–49 crack is post-Period III). Tell es-Sultan chapter (pp. 116–147) not read. |
 
 ## Integrator flags (not done here)
 - Concealment comparanda row chre8122 (T02 H07): date and context per de Vaux 1959 p. 252 (Agrippa II, after 70 CE; on a retaining wall, in a sack). Method 10 is unaffected (bronze; not in the silver/gold match).

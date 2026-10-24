@@ -1,5 +1,11 @@
 # Leo Boer 1953–54 Qumran photographs: reading for the water system (24 Oct 2026)
 
+> **Corrections after Wagemakers 2014 (read 24 Oct, [wagemakers2014_boer_qumran_2026-10-24.md](wagemakers2014_boer_qumran_2026-10-24.md)):**
+> - Finding "the north-west area was still an unexcavated mound in March 1954" stands, but the cisterns there were not hidden: L117 and L118 were visible on the surface in 1951 and L71 plainly so (Taylor in Wagemakers 2014 p. 153, citing de Vaux 1953a; Isaacs 1857 saw two small reservoirs west of the tower).
+> - P08 earthquake caption: the crack through L48–49 also cracks the channel to L71, which was in use in Period III, so the crack is later than Period III, not 31 BCE (Taylor p. 162, citing Humbert 2003 p. 437).
+> - Dates of the March 1954 frames confirmed by the book's catalogue (p. 248); P16's date (31 Dec 1953 vs March 1954) is unresolved; the P06 east-facing inference cannot be checked from the book.
+
+
 Source: PEF Flickr set "Leo Boer Qumran photos (1953, with 2009 comparisons)", 49 files in the owner's Drive (06 Imagery). © Palestine Exploration Fund, all rights reserved; private research only; not committed or published. Captions are the PEF's (written by B. Wagemakers), from the repo manifest `research/sources/photo_archives/photo_manifest.csv`. The PEF "Plan of Qumran with position marks" (de Vaux's Period Ib plan with numbered arrows) gives each frame's standpoint and direction.
 
 Atlas entries in scope: 20 Valley of Sekakah, 21 Sekakah, 22 Solomon's reservoir, 23 Solomon or Shallum's channel. Frames viewed: P01–P03, P05–P09, P17–P19, P26, P27, P33, P39–P41, P45, P46 and the plan. The others (P10–P16, P20–P25, P28–P32, P34–P38, P42–P44, P47, P48) show caves 1Q and 4Q, the "pantry" L86–89, L54–55, trenches A–B, camp scenes and people, by caption; they do not bear on the water system and were not opened.
