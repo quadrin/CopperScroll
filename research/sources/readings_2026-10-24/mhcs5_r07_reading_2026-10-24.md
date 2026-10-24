@@ -1,0 +1,33 @@
+# MHCS vol. 5, pp. 314–324 and 545–557, for lane R07 (Achor / Sekakah): reading, 24 October 2026
+
+**Source.** A. Zertal and S. Bar, *The Manasseh Hill Country Survey, Volume 5: The Middle Jordan Valley, from Wadi Fasael to Wadi ʿAujah* (Brill, CHANE, 2019), ISBN 9789004136397. Owner's Drive PDF (23,896,348 bytes, 603 PDF pages; printed page = PDF page − 10). Copyright; not committed. Read by text extraction plus OCR of 300 dpi page images (parts of the PDF text layer use a broken font encoding).
+
+**Why.** Lane R07 (research/plan/stages.json; STAGED_OBJECTIVES.md) was parked "until Manasseh V is in hand", naming pp. 314–324 and 547–555 as "the ʿAuja supply alternative". The volume had been in Drive since 14 Oct; the lane record still said "not in the Drive index". MHCS 5 is not an arrival-register item, so no frozen predictions apply. Exploratory; reader only; no rating or outcome count changes.
+
+**Exposure.** Nothing about the strip just north of Tell es-Sultan was read. Appendix D continues past p. 557 along the Qanat Musa toward Jericho; pp. 558–575 were not read. Only isolated search-hit lines were seen from p. 573 ("follows it up to Diuk and Na'aran Springs… finally reaching Jericho"); the page itself was not read.
+
+## Pages 314–324: Site 111, Kh. Beiyudhat (Archelais) (EVIDENCE unless marked)
+- Site 111 (19-15/42/1), a city of about 355 dunams (35.5 ha), 810 × 430 m. It lies on the Jordan Valley plain north of the modern village of ʿAujah et-Tahtah, **11 km north of Jericho** and about 2 km north of the Wadi ʿAujah bed, crossed by the Beit Sheʾan–Jericho road (pp. 314–315). Grid references are in the private CSV.
+- Identified as Archelais by Hizmi, who excavated it in 1986–1991; "this identification has been accepted" (p. 317). Earlier proposals: Magdalsenna (Glueck; Avi-Yonah).
+- Josephus, *Ant.* 17.340, quoted p. 317 (also pp. 68, 79): Archelaus "diverted half the water that served to irrigate the village of Neara" into a palm plain and founded Archelais.
+- **Herodian date evidence (from Hizmi, as summarised, p. 319):** a "road station" enclosure of 40 dunams with a two-pool miqveh joined by a shallow duct, another stepped pool outside its north-west corner, all plastered; finds "typical of the Herodian period", including an Agrippa I coin of year 6 (41/2 CE). The tower (17 × 14.3 m) yielded coins of Valerius Gratus, Pontius Pilate, Antonius Felix and Agrippa I (p. 320).
+- **Water supply (p. 324):** by aqueduct from ʿEin ʿAujah, "about 8.5 km away". Hizmi's excavation followed its branches for 1.2 km: rock-cut in the west, stone-built in the east, 1.5 m wide, duct 60 cm deep, "several layers of plaster". The survey recorded at least five aqueducts at different levels along the foot of the western cliff (et-Tulul), field branches up to 2 km east, and a 20 × 20 m enclosure (Site 108) possibly tied to them.
+- **Occupation (p. 324):** Iron II, Hellenistic, a city from the Herodian period, peak in the Late Roman and Byzantine periods, then Early Islamic and Mamluk. Survey pottery: Iron II 3 %, Hellenistic 4 %, Early Roman 10 %, Late Roman 48 %, Byzantine 21 %, Early Islamic 10 %, Mamluk 4 %. Looted, with the south-east part destroyed, by 2017.
+
+## Appendix D, §2 (pp. 546–557): the water systems of Nahal Yitav (Wadi ʿAujah)
+- Two systems leave the ʿAujah springs: one north-east to Archelais, one south-east to Jericho; the cities lie 10–20 km away (p. 547).
+- SWP (Conder and Kitchener 1882: 390–391), quoted pp. 546–547: Kanat el-Manil runs east about 5 miles from ʿAin el-ʿAujeh, and the Kanat Musa "branches off from it", dated "not earlier than medieval times, or repaired at least at that period" and tied to Crusader irrigation. Other sources: Porath 1985 pp. 45–57; Garbrecht and Netzer 1991.
+- **Archelais system (§2.2, pp. 547–555).** Only its head and its end survive; the connecting sections "if they existed at all — have not been found" (p. 547). Two stone-built aqueducts, A (about 220 m) and B, run east of the ʿAujah Fortress (Site 140) (p. 549). Near the city a western system of four aqueducts, about 400–650 m long, runs along et-Tulul, with paired and linked ducts (pp. 552–554). The ducts are 1–1.2 m wide overall, about 70 cm net, 50–60 cm deep, "covered with several layers of plaster" (p. 551). An eastern irrigation system of about 1,500 m plus 600 m has a 7 × 6 m pressure pool below el-Masqara (pp. 554–555). An irrigated area of at least 100 ha is estimated (INFERENCE by the authors). Babatha-archive water rights are cited as analogy (p. 555).
+- **Jericho system (§2.3, from p. 555):** Qanat Faraʿun from the spring (p. 555), the ʿAujah water mill, "presumably an Ottoman flour mill" (Site 142, p. 557), a division structure, and the Qanat Musa branch south-east toward Wadi Abiyad. Eastward the aqueducts "vanish after several hundred metres" (p. 555). Read only to p. 557.
+- **No dated section or sealed construction context** is given for any aqueduct in pp. 545–557. The only dates are historical (Josephus for Archelais), Hizmi's finds at the city, and Conder's "medieval" for the Kanat Musa.
+
+## Bearing on R07 (INFERENCE)
+- Taken with *Ant.* 17.340, MHCS 5 ties the Archelais aqueducts to the ʿAujah springs: half of "Neara's" water was diverted to the Archelais plain. These pages do not say which spring watered Neara (TIR p. 197 puts Noorath/Neara/Naʿaran at ʿEin Duyuk). They do not mention Achor or Sekakah, and they date none of the ʿAujah or Qanat Musa aqueduct sections.
+- **R07 rule:** "continue if a source narrows or excludes a named Achor or Sekakah alternative with evidence independent of the Scroll." Not met. Nothing here narrows Nuʿeima, the Buqeiʿa or an ʿAujah-supplied alternative. The Achor and Sekakah parts stay **not identifiable**, and the lane stays parked.
+- The lane's dependency is now satisfied, so its "next observation" should drop Manasseh V and keep only "dated sections for the Achor candidates". The record's "Volume V is not in the Drive index" is out of date (an integrator edit; not done here).
+
+## Outside this lane (one line each)
+- pp. 77, 399–400: MHCS 5 places Josh 16:6–7's Janohah at Kh. Yanun north of ʿAqrabeh or neighbouring Neby Nun, and discusses ʿAtaroth between Yanoah and Naʿaran. Relevant to the Janoaḥ reading at XII 10 (AQ1), which is not this lane's question.
+- pp. 557–575 (the Qanat Musa down to Duyuk/Naʿaran and Jericho) were not read because of the SULTAN-1 caution. They would need a designated worker under that protocol if anyone wants them.
+
+Private file: /home/claude/cs_save/mhcs5_r07_coords_private_2026-10-24.csv (grid references as printed).
