@@ -1,6 +1,6 @@
 # Figure harvest: four smaller Reich–Shukron publications (25 Oct 2026)
 
-Companion to [figs_reich_shukron2021_2026-10-25.md](figs_reich_shukron2021_2026-10-25.md). Born-digital PDFs from the owner's Drive (`04 Articles and chapters/`); whole figure pages rendered at 200 dpi JPEG (quality 85). Copyright the publishers; images only in the owner's private Drive, `06 Imagery/Figure harvest 2026-10-25/Reich-Shukron small papers/<paper>/`. Not for git. **Upload status (25 Oct, about 22:10 CST):** rendered and staged; not yet copied to Drive because the owner's Mac went offline. Hebrew captions are given in short English translation (by Claude).
+Companion to [figs_reich_shukron2021_2026-10-25.md](figs_reich_shukron2021_2026-10-25.md). Born-digital PDFs from the owner's Drive (`04 Articles and chapters/`); whole figure pages rendered at 200 dpi JPEG (quality 85). Copyright the publishers; images only in the owner's private Drive, `06 Imagery/Figure harvest 2026-10-25/Reich-Shukron small papers/<paper>/`. Not for git. **Upload status (25 Oct, about 19:50 CST):** rendered and staged; not yet copied to Drive because the owner's Mac went offline. Hebrew captions are given in short English translation (by Claude).
 
 | Paper | Drive file | SHA-256 | Printed page |
 |---|---|---|---|
