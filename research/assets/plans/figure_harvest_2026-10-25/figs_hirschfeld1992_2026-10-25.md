@@ -12,7 +12,7 @@
 
 **Exposure (amendment A1):** no figure in this book shows the strip north of Tell es-Sultan. Fig. 34 (Douka, Jebel Quruntul) looks **west**, away from the tell. Map 1 shows the Jericho area only at gazetteer scale. Nothing here is flagged exposed or exploratory for SULTAN-1.
 
-**FLAG, held area:** Figs 1, 2, 56 and 57 show the laura of **Pharan at ʿEin Farʿa** (Wadi Fara, the head of Wadi Qelt; Map 1 grid 170/130). The owner has not yet decided on the held Wadi Qelt area (Kallai sites 137/147/157). These figures are rendered and recorded, but they must not be used until that decision is made.
+**Owner decision, 25 Oct 2026 (~06:59 UTC, chat): Pharan figures may be saved and used if they carry measurements.** Figs 2 (sketch plan) and 57 (cave-church plan and cross-section) have a scale bar and north arrow: **cleared for use**. Figs 1 and 56 are photos without scale: **saved, not used**. Pharan at ʿEin Farʿa lies in the held Wadi Qelt gorge area (HA-ESI phase 2 plan §7; Kallai sites 137/147/157), so Figs 2 and 57 are now **exposed**: anything taken from them is exploratory and cannot serve as unseen evidence for the arrival items. The separate question of the Kallai cave sentences in the Kochavi rarity packets (arrival record 19b, deviation D2) is not decided by this.
 
 **Key to the scale-bar and north-arrow columns:**
 - ✓ = read on a 110 dpi view (EVIDENCE).
@@ -33,8 +33,8 @@ Maps 2 (location of the Judean desert, PDF 31) and 4 (places of origin of monks,
 
 | PDF | Printed | Fig. | Caption (short) | Type | Scale bar | North | Features | Site → entries | Measurable | File |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 45 | 21 | 1 | The laura of Pharan, between the cliffs (looking east) | photo | no | no | cave/burial | Pharan / ʿEin Farʿa → Wadi Qelt held area – FLAG (Kallai 137/147/157 pending owner decision) | no | p21_fig1.png |
-| 46 | 22 | 2 | Sketch plan of the laura of Pharan | plan | yes† | yes† | architecture | Pharan / ʿEin Farʿa → Wadi Qelt held area – FLAG (Kallai 137/147/157 pending owner decision) | yes | p22_fig2.png |
+| 45 | 21 | 1 | The laura of Pharan, between the cliffs (looking east) | photo | no | no | cave/burial | Pharan / ʿEin Farʿa (held area; photo without scale: saved, not used) | no | p21_fig1.png |
+| 46 | 22 | 2 | Sketch plan of the laura of Pharan | plan | yes† | yes† | architecture | Pharan / ʿEin Farʿa (held area; owner cleared 25 Oct, measured figure; EXPOSED) | yes | p22_fig2.png |
 | 47 | 23 | 3 | Aerial view of the monastery of Chariton (looking west) | photo (aerial) | no | no | — | Chariton / Wadi Khureitun → water + cliff-cave comparanda | no | — |
 | 48 | 24 | 4 | Reconstruction of the monastery of Chariton | reconstruction | no | no | — | Chariton / Wadi Khureitun → water + cliff-cave comparanda | no | — |
 | 49 | 25 | 5 | Present-day Mar Saba, alongside the Great Laura (looking west) | photo | no | no | — | Great Laura / Mar Saba (Kidron) → 35 | no | p25_fig5.png |
@@ -88,8 +88,8 @@ Maps 2 (location of the Judean desert, PDF 31) and 4 (places of origin of monks,
 | 140 | 116 | 53 | Church at monastery of Marda, on Masada (looking east) | photo | no | no | — | Marda (Masada) | no | — |
 | 142 | 118 | 54 | Plan and cross-section of church complex, laura of Firminus | plan+section | yes† | yes† | architecture | Firminus (Wadi Suweinit) → cave-hideout comparanda | yes | p118_fig54.png |
 | 143 | 119 | 55 | St. Nicholas's church at the Great Laura | photo | no | no | — | Great Laura / Mar Saba (Kidron) → 35 | no | — |
-| 144 | 120 | 56 | Cave church of the laura of Pharan | photo | no | no | cave/burial | Pharan / ʿEin Farʿa → Wadi Qelt held area – FLAG (Kallai 137/147/157 pending owner decision) | no | p120_fig56.png |
-| 146 | 122 | 57 | Plan and cross-section of the cave church, laura of Pharan | plan+section | yes† | yes† | cave/burial, architecture | Pharan / ʿEin Farʿa → Wadi Qelt held area – FLAG (Kallai 137/147/157 pending owner decision) | yes | p122_fig57.png |
+| 144 | 120 | 56 | Cave church of the laura of Pharan | photo | no | no | cave/burial | Pharan / ʿEin Farʿa (held area; photo without scale: saved, not used) | no | p120_fig56.png |
+| 146 | 122 | 57 | Plan and cross-section of the cave church, laura of Pharan | plan+section | yes† | yes† | cave/burial, architecture | Pharan / ʿEin Farʿa (held area; owner cleared 25 Oct, measured figure; EXPOSED) | yes | p122_fig57.png |
 | 147 | 123 | 58 | Cave church at the monastery of Theoctistus | photo | no | no | cave/burial | Theoctistus → cliff-cave comparanda (7, 25/26) | no | p123_fig58.png |
 | 148 | 124 | 59 | Interior of the cave church at Khirbet ed-Deir | photo | no | no | cave/burial | Kh. ed-Deir | no | — |
 | 150 | 126 | 60 | Plan of the cave church at Khirbet ed-Deir | plan | yes† | yes† | cave/burial, architecture | Kh. ed-Deir | yes | p126_fig60.png |
