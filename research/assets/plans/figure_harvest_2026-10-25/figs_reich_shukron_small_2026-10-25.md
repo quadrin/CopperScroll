@@ -1,6 +1,6 @@
 # Figure harvest: four smaller Reich–Shukron publications (25 Oct 2026)
 
-Companion to [figs_reich_shukron2021_2026-10-25.md](figs_reich_shukron2021_2026-10-25.md). Born-digital PDFs from the owner's Drive (`04 Articles and chapters/`); whole figure pages rendered at 200 dpi JPEG (quality 85). Copyright the publishers; images only in the owner's private Drive, `06 Imagery/Figure harvest 2026-10-25/Reich-Shukron small papers/<paper>/`. Not for git. Hebrew captions are given in short English translation (by Claude).
+Companion to [figs_reich_shukron2021_2026-10-25.md](figs_reich_shukron2021_2026-10-25.md). Born-digital PDFs from the owner's Drive (`04 Articles and chapters/`); whole figure pages rendered at 200 dpi JPEG (quality 85). Copyright the publishers; images only in the owner's private Drive, `06 Imagery/Figure harvest 2026-10-25/Reich-Shukron small papers/<paper>/`. Not for git. **Upload status (25 Oct, about 22:10 CST):** rendered and staged; not yet copied to Drive because the owner's Mac went offline. Hebrew captions are given in short English translation (by Claude).
 
 | Paper | Drive file | SHA-256 | Printed page |
 |---|---|---|---|
@@ -35,26 +35,26 @@ These change no rating, test or outcome.
 
 | Printed p. | Fig. | Caption (short) | Type | File |
 |---|---|---|---|---|
-| 159 | 1 | Warren's excavations: map of the southern Temple Mount | map | `p159_fig1_warrens-excavations:-map-of-the.jpg` |
-| 160 | 2 | Warren: section along the paved street west of the Temple Mount and the drainage channel | section | `p160_fig2_warren:-section-along-the-paved.jpg` |
-| 161 | 3 | Warren: section across Robinson's Arch and the paved street | section | `p161_fig3_warren:-section-across-robinsons-arch.jpg` |
-| 162 | 4 | Warren: detailed plan of the rock-cut drainage channel under the paved street | plan | `p162_fig4_warren:-detailed-plan-of-the.jpg` |
+| 159 | 1 | Warren's excavations: map of the southern Temple Mount | map | `p159_fig1_warrens-excavations-map-of-the.jpg` |
+| 160 | 2 | Warren: section along the paved street west of the Temple Mount and the drainage channel | section | `p160_fig2_warren-section-along-the-paved.jpg` |
+| 161 | 3 | Warren: section across Robinson's Arch and the paved street | section | `p161_fig3_warren-section-across-robinsons-arch.jpg` |
+| 162 | 4 | Warren: detailed plan of the rock-cut drainage channel under the paved street | plan | `p162_fig4_warren-detailed-plan-of-the.jpg` |
 | 163 | 5 | Warren's finds from the channel | drawing | `p163_fig5_warrens-finds-from-the-channel.jpg` |
-| 164 | 6–8 | H. Birtles (Warren's assistant); the great drain as exposed by Warren; the drain with a fallen stone | photo/drawing | `p164_fig6-8_h.-birtles-warrens-assistant;-the.jpg` |
-| 166 | 9 | Bliss and Dickie: plan of remains in the Tyropoeon, southern part | plan | `p166_fig9_bliss-and-dickie:-plan-of.jpg` |
-| 167 | 10 | Warren: plan of remains in the Tyropoeon, northern part | plan | `p167_fig10_warren:-plan-of-remains-in.jpg` |
-| 168 | 11–12 | Bliss and Dickie: line of shafts across the Tyropoeon; drain with inspection chamber | drawing | `p168_fig11-12_bliss-and-dickie:-line-of.jpg` |
-| 169 | 13a–c | Jones's excavations in the Tyropoeon; street paving removed over the channel; section across street and channel | photo/section | `p169_fig13a-c_joness-excavations-in-the-tyropoeon;.jpg` |
-| 171 | 14–16 | Mazar and Ben-Dov: section across Robinson's Arch; view into the drain; Reich and Shukron: the channel | section/photo | `p171_fig14-16_mazar-and-ben-dov:-section-across.jpg` |
-| 174 | 17 | Reich and Shukron: the great drain with flat roofing | photo | `p174_fig17_reich-and-shukron:-the-great.jpg` |
-| 175 | 18 | Reich and Shukron: the great drain with roofing | photo | `p175_fig18_reich-and-shukron:-the-great.jpg` |
-| 176 | 19–20 | Reich and Shukron: the great drain with vaulted/stone roofing; compare Fig. 8 | photo | `p176_fig19-20_reich-and-shukron:-the-great.jpg` |
+| 164 | 6–8 | H. Birtles (Warren's assistant); the great drain as exposed by Warren; the drain with a fallen stone | photo/drawing | `p164_fig6-8_h-birtles-warrens-assistant-the.jpg` |
+| 166 | 9 | Bliss and Dickie: plan of remains in the Tyropoeon, southern part | plan | `p166_fig9_bliss-and-dickie-plan-of.jpg` |
+| 167 | 10 | Warren: plan of remains in the Tyropoeon, northern part | plan | `p167_fig10_warren-plan-of-remains-in.jpg` |
+| 168 | 11–12 | Bliss and Dickie: line of shafts across the Tyropoeon; drain with inspection chamber | drawing | `p168_fig11-12_bliss-and-dickie-line-of.jpg` |
+| 169 | 13a–c | Jones's excavations in the Tyropoeon; street paving removed over the channel; section across street and channel | photo/section | `p169_fig13a-c_joness-excavations-in-the-tyropoeon.jpg` |
+| 171 | 14–16 | Mazar and Ben-Dov: section across Robinson's Arch; view into the drain; Reich and Shukron: the channel | section/photo | `p171_fig14-16_mazar-and-ben-dov-section-across.jpg` |
+| 174 | 17 | Reich and Shukron: the great drain with flat roofing | photo | `p174_fig17_reich-and-shukron-the-great.jpg` |
+| 175 | 18 | Reich and Shukron: the great drain with roofing | photo | `p175_fig18_reich-and-shukron-the-great.jpg` |
+| 176 | 19–20 | Reich and Shukron: the great drain with vaulted/stone roofing; compare Fig. 8 | photo | `p176_fig19-20_reich-and-shukron-the-great.jpg` |
 
 ### Reich, Shukron & Lernau 2007, IEJ 57 (folder `RSL2007_iej/`)
 
 | Printed p. | Fig. | Caption (short) | Type | File |
 |---|---|---|---|---|
-| 155 | 1 | Rock-cut "pool" near the spring; boulders and debris left in the fill | photo | `p155_fig1_rock-cut-pool-near-the-spring;.jpg` |
+| 155 | 1 | Rock-cut "pool" near the spring; boulders and debris left in the fill | photo | `p155_fig1_rock-cut-pool-near-the-spring.jpg` |
 | 157 | 2–8 | Clay bullae | photo | `p157_fig2-8_clay-bullae.jpg` |
 | 158 | 9 | Fish bones | photo | `p158_fig9_fish-bones.jpg` |
 | 161 | 10 | Ivory pomegranate | photo | `p161_fig10_ivory-pomegranate.jpg` |
