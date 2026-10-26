@@ -1,0 +1,101 @@
+# Per-entry quantities (amounts, depths, distances), hand-built from
+# text/translation_en.json (displayed text), T08 scroll_amounts.csv
+# (research/agent_review_2026-10-07/wave1/T08_real_or_legend/data/scroll_amounts.csv,
+# sha256 f19960d4...) and the edition variants recorded in text/readings.json.
+# Units: 'tk' = talent/karsh-type unit (ככ, ככרין, ככר) -> 1:300 conversion allowed;
+# 'cnt' = count (ingots, jars, vessels, staters, minas, cups) -> equality only;
+# 'cub' = cubits (depth or distance) -> equality only.
+# Ordinals ("third course", "second storey") and "four corners/sides", "two domes"
+# are not amounts, depths or distances and are excluded.
+
+ENTRIES = ['1','2','3','4','5','6','7','8','9','10','11','12','12a','13','14','15','16',
+ '17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34',
+ '35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52',
+ '53','54','55','56','57','58','59','60']
+
+# displayed reading: entry -> list of (value, unit, source note)
+D = {
+ '1': [(40,'cub','I 3 forty cubits'),(17,'tk','I 4 ככרין 17')],
+ '2': [(100,'cnt','I 6 gold ingots 100')],
+ '3': [(900,'tk','I 8 ככרין 900')],
+ '4': [(6,'cub','I 12 six cubits')],
+ '5': [(3,'cub','I 14 three cubits'),(40,'tk','I 15 ככר 40')],
+ '6': [(41,'tk','II 2 41 (signs as displayed)')],
+ '7': [(65,'cnt','II 4 sixty-five gold ingots')],
+ '8': [(70,'tk','II 6 ככרין 70')],
+ '9': [(19,'cub','II 8 nineteen cubits'),(10,'tk','II 9 ככרין 10')],
+ '10': [(6,'cnt','II 11 six jars')],
+ '11': [(4,'cub','II 14 four cubits'),(22,'tk','II 15 22')],
+ '12': [(9,'cub','III 2 nine cubits'),(609,'cnt','III 4 609 vessels')],
+ '12a': [(16,'cub','III 6 sixteen cubits'),(40,'tk','III 7 ככ 40')],
+ '13': [],
+ '14': [(3,'cub','III 13 dig three'),(13,'tk','III 13 13')],
+ '15': [(14,'tk','IV 2 14 (part lost)')],
+ '16': [(41,'cub','IV 4 forty-one cubits (restored)'),(55,'tk','IV 5 55')],
+ '17': [(3,'cub','IV 7 three cubits'),(2,'cnt','IV 8 two pots')],
+ '18': [(200,'tk','IV 10 200')],
+ '19': [(70,'tk','IV 12 70')],
+ '20': [(1,'cub','IV 14 a cubit'),(12,'tk','IV 14 12')],
+ '21': [(3,'cub','V 3 [three] cubits'),(7,'tk','V 4 7')],
+ '22': [],
+ '23': [(60,'cub','V 10 sixty cubits'),(3,'cub','V 11 three cubits'),(23,'tk','V 11 23')],
+ '24': [(7,'cub','V 14 seven cubits'),(32,'tk','V 14 32')],
+ '25': [(3,'cub','VI 4 three cubits'),(1,'cnt','VI 5 one scroll'),(42,'tk','VI 6 42')],
+ '26': [(9,'cub','VI 10 nine cubits'),(21,'tk','VI 10 21')],
+ '27': [(12,'cub','VI 13 twelve cubits'),(27,'tk','VI 13 27')],
+ '28': [(9,'cub','VII 2 nine'),(22,'tk','VII 2 22')],
+ '29': [(24,'cub','VII 6 twenty-four cubits'),(400,'tk','VII 7 ככרין 400')],
+ '30': [(6,'cub','VII 9 six cubits'),(6,'cnt','VII 10 six jars')],
+ '31': [(7,'cub','VII 12 seven cubits'),(22,'tk','VII 13 22')],
+ '32': [(3,'cub','VII 15 three cubits'),(80,'tk','VII 16 80'),(2,'tk','VII 16 gold ככרין 2')],
+ '33': [(10,'cnt','VIII 3 10 (T08 doubtful)')],
+ '34': [(17,'cub','VIII 5-6 seventeen cubits'),(17,'tk','VIII 7 17')],
+ '35': [(3,'cub','VIII 9 three cubits'),(7,'tk','VIII 9 7')],
+ '36': [(24,'cub','VIII 13 twenty-four cubits'),(65,'tk','VIII 13 65')],
+ '37': [(11,'cub','VIII 15 eleven cubits'),(70,'tk','VIII 16 70')],
+ '38': [(13,'cub','IX 2 thirteen cubits'),(7,'cub','IX 2 seven cubits'),(4,'cnt','IX 3 four staters (doubtful)')],
+ '39': [(8.5,'cub','IX 5-6 eight and a half cubits'),(23.5,'tk','IX 6 23½')],
+ '40': [(16,'cub','IX 8 sixteen cubits'),(22,'tk','IX 9 22')],
+ '41': [(1,'cnt','IX 10 a mina (doubtful)')],
+ '42': [(7,'cub','IX 13 seven cubits'),(9,'tk','IX 13 9')],
+ '43': [],
+ '44': [(9,'tk','X 2 9')],
+ '45': [(11,'tk','X 4 11')],
+ '46': [(10,'cub','X 6 ten cubits'),(62,'tk','X 7 ככרין 62')],
+ '47': [(2,'cub','X 9 two cubits'),(300,'tk','X 10 ככרין 300 gold'),(20,'cnt','X 11 twenty cups')],
+ '48': [(12,'cub','X 13 twelve cubits'),(80,'tk','X 14 80')],
+ '49': [(17,'tk','X 16 17')],
+ '50': [],
+ '51': [(10,'cnt','XI 4 10 (doubtful)')],
+ '52': [],
+ '53': [(41,'tk','XI 8 41')],
+ '54': [(14,'cnt','XI 10 fourteen vessels')],
+ '55': [(11,'cnt','XI 14 eleven(?) vessels')],
+ '56': [(900,'cnt','XI 17 nine hundred'),(5,'tk','XII 1 gold ככ 5'),(60,'tk','XII 1 ככרין 60'),(42,'tk','XII 3 ככרין 42')],
+ '57': [(1,'cnt','XII 5 one chest'),(61,'tk','XII 5 61')],
+ '58': [(600,'tk','XII 7 ככרין 600')],
+ '59': [(71,'tk','XII 9 71 talents'),(71+1/3,'tk','XII 9 71 talents 20 minas'),(20,'cnt','XII 9 twenty minas')],
+ '60': [],
+}
+
+# edition variants (added on top of D in the "editions" branch)
+E = {
+ '1': [(41,'cub','Lefkovits: 41 cubits (e1-distance)')],
+ '6': [(42,'tk','Puech, Lefkovits, Milik: 42 (e6-sum)')],
+ '9': [(15,'cub','Puech: 15 cubits (e9-distance)')],
+ '10': [(600,'cnt','Milik 1956-57: six hundred (e10-six)')],
+ '14': [(14,'tk','Puech: 14 (e14-sum)')],
+ # '15': Puech [20+20+(?)]+14 >= 54: value unknown, not enumerable
+ '16': [(40,'cub','Lefkovits: 40 cubits'),(14,'cub','Puech: 14 cubits (e16-distance)')],
+ '21': [(5,'cub','Lefkovits: five cubits'),(6,'cub','Lefkovits: six cubits (e21-depth)')],
+ '28': [(62,'tk','Puech: 22+40'),(82,'tk','Puech: 22+60 (e28-sum)')],
+ '32': [(60,'tk','Milik, Lefkovits: 60 (e32-sum)')],
+ '35': [(4,'tk','Milik: 4 (e35-sum)')],
+ '36': [(66,'tk','Puech, Milik: 66'),(67,'tk','Lefkovits: 67 (e36-sum)')],
+ '38': [(2,'cub','Milik 1960: dig two (cubits)'),(7,'cnt','Puech 2015: seven bars'),(4,'tk','Wilmot, Muchowski: [כ]כרין (e38-bars)')],
+ '39': [(24,'tk','Allegro: 24; Lefkovits ½-sign maybe 1'),(25,'tk','Lefkovits ½-sign maybe 2 (e39-half)')],
+ '46': [(12,'cub','Milik 1960: twelve feet (unit not convertible; kept as printed number)')],
+ '47': [(10,'cnt','Lefkovits: 10 cups (e47-cups)')],
+ '52': [(10,'tk','Lefkovits: ככ 10 karsh'),(11,'tk','Lefkovits: 11'),(1,'tk','Lefkovits: 1 (e52-last-phrase)')],
+ '55': [(3,'cub','Lefkovits: the basin, three cubits (e55-smallest-basin)')],
+}
