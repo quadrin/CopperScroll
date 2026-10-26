@@ -28,6 +28,6 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | purity_rule_2026-10-27 | Consecrated items never go in tombs (Num. 19) | all entries | **done 27 Oct: not supported** ([RESULT](purity_rule_2026-10-27/RESULT.md)) |
 | already_found_2026-10-27 | Some caches are already catalogued as hoards (karsh reading) | all entries with sums | **done 27 Oct: no lead** ([RESULT](already_found_2026-10-27/RESULT.md)) |
 | kohlit_south_of_yanun_2026-10-27 | If the pit is in Janoaḥ, Koḥlit is a mound just south of Yanun | Koḥlit (entries 4, 11, 19, 60) | **done 27 Oct: not supported; records too coarse** ([RESULT](kohlit_south_of_yanun_2026-10-27/RESULT.md)) |
-| onomasticon_names_2026-10-27 | Lost names survive, located, in Eusebius and the Madaba Map | 40 scroll names | rule fixed 27 Oct |
+| onomasticon_names_2026-10-27 | Lost names survive, located, in Eusebius and the Madaba Map | 40 scroll names | **done 27 Oct: no new lead** ([RESULT](onomasticon_names_2026-10-27/RESULT.md)) |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
