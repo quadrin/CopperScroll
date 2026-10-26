@@ -1,0 +1,92 @@
+{
+ "source": "research/agent_review_2026-10-07/wave1/T01_place_names/data/scroll_names.json",
+ "note": "Place names that occur in two or more entries. Entry 15 Koḥlit is Puech restoration only; entry 23 Shlomo links to Sekakah only under the Solomon reading.",
+ "clusters": [
+  {
+   "id": "kohlit",
+   "name": "Koḥlit",
+   "entries": [
+    "4",
+    "11",
+    "15",
+    "19",
+    "60"
+   ],
+   "lines": "I 9; II 13; IV 1; IV 11; XII 10",
+   "proposals": "Tell es-Sultan (Puech hypothesis); Carmel spring (Milik); Transjordan (Goranson); Samarian desert (Zissu); unidentified (Eshel). No Arabic survival claimed [e4-kohlit, e60-kohlit]"
+  },
+  {
+   "id": "sekakah",
+   "name": "Sekakah (Secacah)",
+   "entries": [
+    "20",
+    "21",
+    "22",
+    "24"
+   ],
+   "lines": "IV 13; V 2; V 5; V 13",
+   "proposals": "Kh. Qumran (Puech) / Wadi Qumran (Milik 1960) / Kh. es-Samra for the biblical town (Milik 1962). No Arabic survival claimed [e20-valley, e21-sekakah]"
+  },
+  {
+   "id": "melah",
+   "name": "ha-Melaḥ (Millo? salt?)",
+   "entries": [
+    "6",
+    "13",
+    "14"
+   ],
+   "lines": "II 1; III 8; III 11",
+   "proposals": "Temple Esplanade / Millo (Milik, Puech); 'salt' (Puech 2002). Note: Josh 15:62 ʿIr ha-Melaḥ is often placed at Kh. Qumran in scholarship (to verify; not in shared files)"
+  },
+  {
+   "id": "achor",
+   "name": "Achor (ʿEmeq ʿAkor)",
+   "entries": [
+    "1",
+    "17"
+   ],
+   "lines": "I 1; IV 6",
+   "proposals": "No Arabic survival claimed; located by tradition at Wadi Nuweiʿimeh (Milik, Puech) or el-Buqeiʿa (Allegro, Eshel) [readings.json e1-achor, e17-achor]"
+  },
+  {
+   "id": "solomon",
+   "name": "Shlomo / Shallum (reservoir, trench of)",
+   "entries": [
+    "22",
+    "23"
+   ],
+   "lines": "V 6; V 8",
+   "proposals": "Qumran installations (Milik 1960)"
+  },
+  {
+   "id": "shaveh",
+   "name": "ha-Shaveh",
+   "entries": [
+    "36",
+    "37"
+   ],
+   "lines": "VIII 10; VIII 14",
+   "proposals": "King's Valley (Puech); Bethso/Baqʿa (Milik)"
+  },
+  {
+   "id": "zadok",
+   "name": "Zadok (tomb, garden of)",
+   "entries": [
+    "51",
+    "52"
+   ],
+   "lines": "XI 3; XI 6",
+   "proposals": "Kidron west bank (Milik)"
+  },
+  {
+   "id": "jericho",
+   "name": "Jericho",
+   "entries": [
+    "24",
+    "54"
+   ],
+   "lines": "V 13; XI 9",
+   "proposals": "er-Riha — KNOWN"
+  }
+ ]
+}
