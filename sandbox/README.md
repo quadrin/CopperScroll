@@ -26,7 +26,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | linearb_sekakah_2026-10-26 | Linear B: one place must fit every entry that names it | Sekakah, Shlomo (entries 20–24) | **done 27 Oct: not discriminating** ([RESULT](linearb_sekakah_2026-10-26/RESULT.md)) |
 | greek_letters_2026-10-27 | The 7 Greek letter groups are numerals or initials of their own entry | entries 1–15 | rule fixed 27 Oct |
 | purity_rule_2026-10-27 | Consecrated items never go in tombs (Num. 19) | all entries | **done 27 Oct: not supported** ([RESULT](purity_rule_2026-10-27/RESULT.md)) |
-| already_found_2026-10-27 | Some caches are already catalogued as hoards (karsh reading) | all entries with sums | rule fixed 27 Oct |
+| already_found_2026-10-27 | Some caches are already catalogued as hoards (karsh reading) | all entries with sums | **done 27 Oct: no lead** ([RESULT](already_found_2026-10-27/RESULT.md)) |
 | kohlit_south_of_yanun_2026-10-27 | If the pit is in Janoaḥ, Koḥlit is a mound just south of Yanun | Koḥlit (entries 4, 11, 19, 60) | rule fixed 27 Oct |
 | onomasticon_names_2026-10-27 | Lost names survive, located, in Eusebius and the Madaba Map | 40 scroll names | rule fixed 27 Oct |
 
