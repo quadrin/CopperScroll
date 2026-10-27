@@ -35,7 +35,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | cave_entries_2026-10-27 | Cave entries match caves already excavated | cave entries (7, 22, 25, 26, 30) | **done 27 Oct: not supported** ([RESULT](cave_entries_2026-10-27/RESULT.md)) |
 | linearb_achor_2026-10-27 | Linear B joint fit for the Valley of Achor | entries 1, 17 | **done 27 Oct: not discriminating** ([RESULT](linearb_achor_2026-10-27/RESULT.md)) |
 | earthquake_fissure_2026-10-27 | Entry 22's "fissure" is the 31 BCE earthquake crack at Qumran | entry 22 | rule fixed 27 Oct |
-| text_blocks_2026-10-27 | Formula seams show the regional lists the scroll was compiled from | all entries | rule fixed 27 Oct |
+| text_blocks_2026-10-27 | Formula seams show the regional lists the scroll was compiled from | all entries | **done 27 Oct: seams real (p = 0.0004) but not regional** ([RESULT](text_blocks_2026-10-27/RESULT.md)) |
 | imagery_gaps_2026-10-27 | Modern high-resolution imagery fills the survey gaps (calibrated blind first) | runs 1, 5, 11 gaps | rule fixed 27 Oct |
 | hoard_contexts_2026-10-27 | Original reports recover the near-miss hoards' contexts | run 4 near misses | rule fixed 27 Oct |
 | stepped_tunnels_2026-10-27 | Entry 24's tomb in the Wadi of the Vault is a rock-cut stepped tunnel | entry 24 | rule fixed 27 Oct |
