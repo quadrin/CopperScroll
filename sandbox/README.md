@@ -30,7 +30,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | kohlit_south_of_yanun_2026-10-27 | If the pit is in Janoaḥ, Koḥlit is a mound just south of Yanun | Koḥlit (entries 4, 11, 19, 60) | **done 27 Oct: not supported; records too coarse** ([RESULT](kohlit_south_of_yanun_2026-10-27/RESULT.md)) |
 | onomasticon_names_2026-10-27 | Lost names survive, located, in Eusebius and the Madaba Map | 40 scroll names | **done 27 Oct: no new lead** ([RESULT](onomasticon_names_2026-10-27/RESULT.md)) |
 | samra_hyrcania_valley_2026-10-27 | Valley of Secacah = Naḥal Sekhakha; Sekakah = Kh. es-Samra; conduit head = Hyrcania's intake (from run 1) | entries 20–24 | rule fixed 27 Oct |
-| route_travel_time_2026-10-27 | The entry order is a walking route (least-cost, Tobler) | anchored entries | rule fixed 27 Oct |
+| route_travel_time_2026-10-27 | The entry order is a walking route (least-cost, Tobler) | anchored entries | **done 27 Oct: not supported (order short, but walking time adds nothing)** ([RESULT](route_travel_time_2026-10-27/RESULT.md)) |
 | greek_architecture_2026-10-27 | Greek architectural loanwords point to Herodian-style buildings | loanword entries (3, 51, …) | rule fixed 27 Oct |
 | cave_entries_2026-10-27 | Cave entries match caves already excavated | cave entries (7, 22, 25, 26, 30) | rule fixed 27 Oct |
 | linearb_achor_2026-10-27 | Linear B joint fit for the Valley of Achor | entries 1, 17 | rule fixed 27 Oct |
