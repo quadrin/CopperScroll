@@ -1,0 +1,169 @@
+entry,role,unit,unit_name,region,scores,result,result_text_as_unknown,n_pass,n_rel,note
+3,loanword,J1,"Jericho: Hasmonean pools complex, peristyle garden and stoa",in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,peristyle garden 63x52 m (p. 24); 'We have no data concerning the garden proper' (p. 24)
+51,loanword,J1,"Jericho: Hasmonean pools complex, peristyle garden and stoa",in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,stoa (p. 36); Jericho/fortress tomb positions not given in sources read (tomb lane: IAA Reports 7 gives no positions)
+12P,loanword (Puech-only branch),J1,"Jericho: Hasmonean pools complex, peristyle garden and stoa",in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,J1,"Jericho: Hasmonean pools complex, peristyle garden and stoa",in,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,J1,"Jericho: Hasmonean pools complex, peristyle garden and stoa",in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),J1,"Jericho: Hasmonean pools complex, peristyle garden and stoa",in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,J2,Jericho: Fortified Palace of Jannaeus (northern tell),in,R1=P R2=F R3=U R4=U R5=U,fail,fail,1,5,Netzer infers a peristyle court (p. 27); 'to date no installation such as a pool or water cistern has been revealed on top of the tell' (p. 29) -> fail (a)
+51,loanword,J2,Jericho: Fortified Palace of Jannaeus (northern tell),in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,inferred peristyle colonnades; Jericho/fortress tomb positions not given in sources read (tomb lane: IAA Reports 7 gives no positions)
+12P,loanword (Puech-only branch),J2,Jericho: Fortified Palace of Jannaeus (northern tell),in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,J2,Jericho: Fortified Palace of Jannaeus (northern tell),in,R1=P R2=U R3=F,fail,fail,1,3,no cistern on top of the tell (p. 29) -> R3 fail (a)
+15,control C2,J2,Jericho: Fortified Palace of Jannaeus (northern tell),in,R1=F R2=U R3=U,fail,fail,0,3,no cistern on top of the tell (p. 29)
+50,control C2-alt (deviation),J2,Jericho: Fortified Palace of Jannaeus (northern tell),in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,J3,Jericho: Twin Palaces of Salome Alexandra,in,R1=F R2=U R3=U R4=U R5=U,fail,fail,0,5,"courtyards 'could have been flanked by colonnades, but it seems more reasonable to assume that such was not the case. Similar courtyards existed ... in the Twin Palaces' (p. 16) -> R1 fail (a)"
+51,loanword,J3,Jericho: Twin Palaces of Salome Alexandra,in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,two-storey colonnade at N end of garden (p. 35); Jericho/fortress tomb positions not given in sources read (tomb lane: IAA Reports 7 gives no positions)
+12P,loanword (Puech-only branch),J3,Jericho: Twin Palaces of Salome Alexandra,in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,J3,Jericho: Twin Palaces of Salome Alexandra,in,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,J3,Jericho: Twin Palaces of Salome Alexandra,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),J3,Jericho: Twin Palaces of Salome Alexandra,in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,J4,Jericho: Herod's First Palace ('gymnasium'),in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,central peristyle courtyard 42x35 m (p. 40); no cistern mentioned
+51,loanword,J4,Jericho: Herod's First Palace ('gymnasium'),in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,peristyle colonnades; Jericho/fortress tomb positions not given in sources read (tomb lane: IAA Reports 7 gives no positions)
+12P,loanword (Puech-only branch),J4,Jericho: Herod's First Palace ('gymnasium'),in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,J4,Jericho: Herod's First Palace ('gymnasium'),in,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,J4,Jericho: Herod's First Palace ('gymnasium'),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),J4,Jericho: Herod's First Palace ('gymnasium'),in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,J5,Jericho: Herod's Second Palace,in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,"peristyle courtyard 34x28 m, garden raised 80-90 cm (p. 45); no cistern mentioned"
+51,loanword,J5,Jericho: Herod's Second Palace,in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,colonnades round the pool (p. 45); Jericho/fortress tomb positions not given in sources read (tomb lane: IAA Reports 7 gives no positions)
+12P,loanword (Puech-only branch),J5,Jericho: Herod's Second Palace,in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,J5,Jericho: Herod's Second Palace,in,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,J5,Jericho: Herod's Second Palace,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),J5,Jericho: Herod's Second Palace,in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,J6,Jericho: Herod's Third Palace,in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,"peristyle courts B55, B64 (pp. 50-52); only cistern named is under a bathhouse room on the southern tell (pp. 58-59)"
+51,loanword,J6,Jericho: Herod's Third Palace,in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,colonnade fronting the N wing (p. 50); Jericho/fortress tomb positions not given in sources read (tomb lane: IAA Reports 7 gives no positions)
+12P,loanword (Puech-only branch),J6,Jericho: Herod's Third Palace,in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,J6,Jericho: Herod's Third Palace,in,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,J6,Jericho: Herod's Third Palace,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),J6,Jericho: Herod's Third Palace,in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,J7,Jericho: Tel es-Samarat complex,in,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,'probably peristyle' (p. 65)
+51,loanword,J7,Jericho: Tel es-Samarat complex,in,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,probable peristyle; Jericho/fortress tomb positions not given in sources read (tomb lane: IAA Reports 7 gives no positions)
+12P,loanword (Puech-only branch),J7,Jericho: Tel es-Samarat complex,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,J7,Jericho: Tel es-Samarat complex,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,J7,Jericho: Tel es-Samarat complex,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),J7,Jericho: Tel es-Samarat complex,in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,A1,Alexandrium (Sartaba),in,R1=U R2=F R3=U R4=U R5=U,fail,fail,0,5,"'a peristyle courtyard, or alternatively a hall'; 'remains of a small vaulted cistern, predating the construction of the courtyard, were also revealed beneath it' (p. 70) -> only cistern under the court is small: fail (c)"
+51,loanword,A1,Alexandrium (Sartaba),in,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,court or hall; Jericho/fortress tomb positions not given in sources read (tomb lane: IAA Reports 7 gives no positions)
+12P,loanword (Puech-only branch),A1,Alexandrium (Sartaba),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,A1,Alexandrium (Sartaba),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,A1,Alexandrium (Sartaba),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),A1,Alexandrium (Sartaba),in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,C1,Cypros,in,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,"'hall or courtyard' with Corinthian columns, lower level (p. 75); 2-3 cisterns below the summit building's floor (p. 74), not tied to that court"
+51,loanword,C1,Cypros,in,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,hall or court; Jericho/fortress tomb positions not given in sources read (tomb lane: IAA Reports 7 gives no positions)
+12P,loanword (Puech-only branch),C1,Cypros,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,C1,Cypros,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,C1,Cypros,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),C1,Cypros,in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,H1,Upper Herodium (mountain palace-fortress),in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,"peristyle court cleared 1968-69 (Netzer 1981 ch. II); 'a medium-sized cistern at the SE corner of the courtyard', pre-palace (Netzer et al. 2010 p. 103): not 'great', not small -> U"
+51,loanword,H1,Upper Herodium (mountain palace-fortress),in,R1=P R2=F R3=P R4=U R5=F,fail,fail,2,5,"'no sign of a tomb found within that structure' (2010 p. 84); recorded tombs: mausoleum on the NE slope (pp. 84-90) and a possible burial cave E of the eastern tower (p. 103): none below a southern corner -> R2 fail (c); the mausoleum's columns are a tholos portico, not an exedra -> R5 fail (c)"
+12P,loanword (Puech-only branch),H1,Upper Herodium (mountain palace-fortress),in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,H1,Upper Herodium (mountain palace-fortress),in,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,H1,Upper Herodium (mountain palace-fortress),in,R1=P R2=U R3=U,no-fail,no-fail,1,3,'the three large cisterns' on the NE slope (2010 p. 102)
+50,control C2-alt (deviation),H1,Upper Herodium (mountain palace-fortress),in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,H2,Lower Herodium: 'tomb estate' portico building,in,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,"portico building, no peristyle court reported; 'no evidence of colonnades' at the pool complex (Netzer 1981 ch. III)"
+51,loanword,H2,Lower Herodium: 'tomb estate' portico building,in,R1=P R2=U R3=F R4=U R5=F,fail,fail,1,5,portico entrance to a future burial site (2010 p. 107); tomb searched for in the 'tomb estate' 'but again we failed' (p. 84) -> R3 fail (a)
+12P,loanword (Puech-only branch),H2,Lower Herodium: 'tomb estate' portico building,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,H2,Lower Herodium: 'tomb estate' portico building,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,H2,Lower Herodium: 'tomb estate' portico building,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),H2,Lower Herodium: 'tomb estate' portico building,in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,T1,Jerusalem: Temple Mount (Herodian enclosure),in,R1=PT R2=P R3=U R4=U R5=P,no-fail,no-fail,3,5,"outer court ringed by double stoai, open court paved (BJ 5.190-192); No. 8 'Great Sea' 'largest of all the Sanctuary tanks', under the southern outer court, 'numerous manholes' (SWP pp. 219-220); date of No. 8 not established (fed by Hasmonean low-level aqueduct, Patrich p. 211 n. 19)"
+51,loanword,T1,Jerusalem: Temple Mount (Herodian enclosure),in,R1=PT R2=P R3=P R4=U R5=P,no-fail,no-fail,4,5,"Solomon's Portico (AJ 20.221) / Royal Stoa (AJ 15.411); Bene Hezir tomb 0.23 km from the tomb lane's south-wall point, below in the Kidron (L_south_corner yes); distyle porch (tomb lane F2x yes; Allegro pl. 7 'exedra'); its inscription names the Hezir family, no Zadok -> R4 U"
+12P,loanword (Puech-only branch),T1,Jerusalem: Temple Mount (Herodian enclosure),in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,T1,Jerusalem: Temple Mount (Herodian enclosure),in,R1=P R2=P R3=U,no-fail,no-fail,2,3,c. 45 subterranean chambers under the platform (G&J 1994 pp. 150-153); 'no underground chamber with a cistern opening in its floor is recorded' (repo ratings row 13)
+15,control C2,T1,Jerusalem: Temple Mount (Herodian enclosure),in,R1=P R2=U R3=U,no-fail,no-fail,1,3,"No. 8 the largest tank, 'a fine cavern with rocky piers' (SWP pp. 219-220); side of the piers not stated"
+50,control C2-alt (deviation),T1,Jerusalem: Temple Mount (Herodian enclosure),in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,JP,"Jerusalem: Herod's palace, Upper City",in,R1=PT R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,"'peristoa ... in a circle'; in the open parts groves, channels and dexamenai 'everywhere' (BJ 5.180-181): basins, size and position unstated"
+51,loanword,JP,"Jerusalem: Herod's palace, Upper City",in,R1=PT R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,no tomb recorded with it
+12P,loanword (Puech-only branch),JP,"Jerusalem: Herod's palace, Upper City",in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,JP,"Jerusalem: Herod's palace, Upper City",in,R1=PT R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,JP,"Jerusalem: Herod's palace, Upper City",in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),JP,"Jerusalem: Herod's palace, Upper City",in,R1=PT R2=P,lead,no-fail,2,2,a reported court has corners
+3,loanword,AN,Jerusalem: Antonia,in,R1=PT R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,peristoa and baths (BJ 5.241)
+51,loanword,AN,Jerusalem: Antonia,in,R1=PT R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,
+12P,loanword (Puech-only branch),AN,Jerusalem: Antonia,in,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,AN,Jerusalem: Antonia,in,R1=PT R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,AN,Jerusalem: Antonia,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),AN,Jerusalem: Antonia,in,R1=PT R2=P,lead,no-fail,2,2,a reported court has corners
+3,loanword,BE,Jerusalem: Bethesda pools,in,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,"porticoed pools (John 5:2), not a court"
+51,loanword,BE,Jerusalem: Bethesda pools,in,R1=PT R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,
+12P,loanword (Puech-only branch),BE,Jerusalem: Bethesda pools,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,BE,Jerusalem: Bethesda pools,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,BE,Jerusalem: Bethesda pools,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),BE,Jerusalem: Bethesda pools,in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,SI,Jerusalem: Siloam pool esplanade,in,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,colonnaded esplanade north of the pool (p. 245); no court/cistern
+51,loanword,SI,Jerusalem: Siloam pool esplanade,in,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,colonnade on the esplanade
+12P,loanword (Puech-only branch),SI,Jerusalem: Siloam pool esplanade,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,SI,Jerusalem: Siloam pool esplanade,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,SI,Jerusalem: Siloam pool esplanade,in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),SI,Jerusalem: Siloam pool esplanade,in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,K1,Kidron: Bene Hezir tomb (ASI 102/411),in,R1=F R2=U R3=U R4=U R5=U,fail,fail,0,5,"the only colonnade recorded is a porch facade (in antis), not a peristyle -> fail (c)"
+51,loanword,K1,Kidron: Bene Hezir tomb (ASI 102/411),in,R1=P R2=P R3=P R4=U R5=P,no-fail,no-fail,4,5,"tomb lane 51-S: L_south_corner yes, name_zadok unknown, F2x yes (T0248)"
+12P,loanword (Puech-only branch),K1,Kidron: Bene Hezir tomb (ASI 102/411),in,R1=F R2=U R3=U,fail,fail,0,3,a tomb is not a residential suite (definitional)
+8,control C1,K1,Kidron: Bene Hezir tomb (ASI 102/411),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,K1,Kidron: Bene Hezir tomb (ASI 102/411),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),K1,Kidron: Bene Hezir tomb (ASI 102/411),in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,K2,Tombs of the Kings (ASI 102/320),in,R1=F R2=U R3=U R4=U R5=U,fail,fail,0,5,"the only colonnade recorded is a porch facade (in antis), not a peristyle -> fail (c)"
+51,loanword,K2,Tombs of the Kings (ASI 102/320),in,R1=F R2=F R3=P R4=U R5=P,fail,fail,2,5,"tomb lane 51-S: L_south_corner no (>0.5 km from the south wall), F2x yes (T0183)"
+12P,loanword (Puech-only branch),K2,Tombs of the Kings (ASI 102/320),in,R1=F R2=U R3=U,fail,fail,0,3,a tomb is not a residential suite (definitional)
+8,control C1,K2,Tombs of the Kings (ASI 102/320),in,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,K2,Tombs of the Kings (ASI 102/320),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),K2,Tombs of the Kings (ASI 102/320),in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,K3,Sanhedriyya tomb (ASI 102/221),in,R1=F R2=U R3=U R4=U R5=U,fail,fail,0,5,"the only colonnade recorded is a porch facade (in antis), not a peristyle -> fail (c)"
+51,loanword,K3,Sanhedriyya tomb (ASI 102/221),in,R1=F R2=F R3=P R4=U R5=P,fail,fail,2,5,"tomb lane 51-S: L_south_corner no (>0.5 km from the south wall), F2x yes (T0103)"
+12P,loanword (Puech-only branch),K3,Sanhedriyya tomb (ASI 102/221),in,R1=F R2=U R3=U,fail,fail,0,3,a tomb is not a residential suite (definitional)
+8,control C1,K3,Sanhedriyya tomb (ASI 102/221),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,K3,Sanhedriyya tomb (ASI 102/221),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),K3,Sanhedriyya tomb (ASI 102/221),in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,K4,Sanhedriyya tomb (ASI 102/231),in,R1=F R2=U R3=U R4=U R5=U,fail,fail,0,5,"the only colonnade recorded is a porch facade (in antis), not a peristyle -> fail (c)"
+51,loanword,K4,Sanhedriyya tomb (ASI 102/231),in,R1=F R2=F R3=P R4=U R5=P,fail,fail,2,5,"tomb lane 51-S: L_south_corner no (>0.5 km from the south wall), F2x yes (T0112)"
+12P,loanword (Puech-only branch),K4,Sanhedriyya tomb (ASI 102/231),in,R1=F R2=U R3=U,fail,fail,0,3,a tomb is not a residential suite (definitional)
+8,control C1,K4,Sanhedriyya tomb (ASI 102/231),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,K4,Sanhedriyya tomb (ASI 102/231),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),K4,Sanhedriyya tomb (ASI 102/231),in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,K5,Mount Scopus tomb (ASI 102/293),in,R1=F R2=U R3=U R4=U R5=U,fail,fail,0,5,"the only colonnade recorded is a porch facade (in antis), not a peristyle -> fail (c)"
+51,loanword,K5,Mount Scopus tomb (ASI 102/293),in,R1=F R2=F R3=P R4=U R5=P,fail,fail,2,5,"tomb lane 51-S: L_south_corner no (>0.5 km from the south wall), F2x yes (T0163)"
+12P,loanword (Puech-only branch),K5,Mount Scopus tomb (ASI 102/293),in,R1=F R2=U R3=U,fail,fail,0,3,a tomb is not a residential suite (definitional)
+8,control C1,K5,Mount Scopus tomb (ASI 102/293),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,K5,Mount Scopus tomb (ASI 102/293),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),K5,Mount Scopus tomb (ASI 102/293),in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,K6,Umm el-Amed tomb (ASI 102/162),in,R1=F R2=U R3=U R4=U R5=U,fail,fail,0,5,"the only colonnade recorded is a porch facade (in antis), not a peristyle -> fail (c)"
+51,loanword,K6,Umm el-Amed tomb (ASI 102/162),in,R1=F R2=F R3=P R4=U R5=P,fail,fail,2,5,"tomb lane 51-S: L_south_corner no (>0.5 km from the south wall), F2x yes (T0063)"
+12P,loanword (Puech-only branch),K6,Umm el-Amed tomb (ASI 102/162),in,R1=F R2=U R3=U,fail,fail,0,3,a tomb is not a residential suite (definitional)
+8,control C1,K6,Umm el-Amed tomb (ASI 102/162),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,K6,Umm el-Amed tomb (ASI 102/162),in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),K6,Umm el-Amed tomb (ASI 102/162),in,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,K7,"Jason's Tomb, Rehavia",in,R1=F R2=U R3=U R4=U R5=U,fail,fail,0,5,"the only colonnade recorded is a porch facade (in antis), not a peristyle -> fail (c)"
+51,loanword,K7,"Jason's Tomb, Rehavia",in,R1=F R2=F R3=P R4=U R5=P,fail,fail,2,5,c. 2 km W of the Temple Mount: no stoa within 0.5 km (tomb-lane rule); monostyle in antis porch (Rahmani p. 64)
+12P,loanword (Puech-only branch),K7,"Jason's Tomb, Rehavia",in,R1=F R2=U R3=U,fail,fail,0,3,a tomb is not a residential suite (definitional)
+8,control C1,K7,"Jason's Tomb, Rehavia",in,R1=P R2=U R3=U,no-fail,no-fail,1,3,"fore-court, outer and inner court (Rahmani p. 61)"
+15,control C2,K7,"Jason's Tomb, Rehavia",in,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),K7,"Jason's Tomb, Rehavia",in,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,HY,Hyrcania summit,sens,R1=U R2=P R3=U R4=U R5=U,no-fail,no-fail,1,5,'The spacious courtyard lies above four water cisterns—two finely vaulted ... and two immense rock-hewn' (Haber & Gutfeld 2024 p. 121*); no peristyle reported
+51,loanword,HY,Hyrcania summit,sens,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,
+12P,loanword (Puech-only branch),HY,Hyrcania summit,sens,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,HY,Hyrcania summit,sens,R1=P R2=U R3=U,no-fail,no-fail,1,3,courtyard above vaulted cisterns (Haber & Gutfeld p. 121*)
+15,control C2,HY,Hyrcania summit,sens,R1=P R2=U R3=U,no-fail,no-fail,1,3,two immense rock-hewn cisterns (p. 121*)
+50,control C2-alt (deviation),HY,Hyrcania summit,sens,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,SE,"Samaria-Sebaste (Augusteum forecourt, stadium)",sens,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,
+51,loanword,SE,"Samaria-Sebaste (Augusteum forecourt, stadium)",sens,R1=U R2=U R3=U R4=U R5=U,no-fail,no-fail,0,5,"mausoleums 'in the area of the modern village' (EJ), undated"
+12P,loanword (Puech-only branch),SE,"Samaria-Sebaste (Augusteum forecourt, stadium)",sens,R1=U R2=U R3=U,no-fail,no-fail,0,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,SE,"Samaria-Sebaste (Augusteum forecourt, stadium)",sens,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+15,control C2,SE,"Samaria-Sebaste (Augusteum forecourt, stadium)",sens,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),SE,"Samaria-Sebaste (Augusteum forecourt, stadium)",sens,R1=U R2=U,no-fail,no-fail,0,2,a reported court has corners
+3,loanword,MA,Masada palaces,out,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,"columned halls/peristyle (Netzer 2001 chs. 10-11, partly read); large cisterns on NW slope (p. 88, pdf 92)"
+51,loanword,MA,Masada palaces,out,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,
+12P,loanword (Puech-only branch),MA,Masada palaces,out,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,MA,Masada palaces,out,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,MA,Masada palaces,out,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),MA,Masada palaces,out,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,MC,Machaerus,out,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,peristyle courtyard (p. 76)
+51,loanword,MC,Machaerus,out,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,
+12P,loanword (Puech-only branch),MC,Machaerus,out,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,MC,Machaerus,out,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,MC,Machaerus,out,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),MC,Machaerus,out,R1=P R2=P,lead,lead,2,2,a reported court has corners
+3,loanword,MU,Kh. el-Muraq (Hilkiya palace),out,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,peristyle courtyard; 'three cisterns' (position unstated)
+51,loanword,MU,Kh. el-Muraq (Hilkiya palace),out,R1=P R2=U R3=U R4=U R5=U,no-fail,no-fail,1,5,
+12P,loanword (Puech-only branch),MU,Kh. el-Muraq (Hilkiya palace),out,R1=U R2=P R3=U,no-fail,no-fail,1,3,"no building in the region is called a diaita in any source read (Josephus uses diaita only for 'way of life', e.g. BJ 2.137-160)"
+8,control C1,MU,Kh. el-Muraq (Hilkiya palace),out,R1=P R2=U R3=U,no-fail,no-fail,1,3,
+15,control C2,MU,Kh. el-Muraq (Hilkiya palace),out,R1=U R2=U R3=U,no-fail,no-fail,0,3,
+50,control C2-alt (deviation),MU,Kh. el-Muraq (Hilkiya palace),out,R1=P R2=P,lead,lead,2,2,a reported court has corners
