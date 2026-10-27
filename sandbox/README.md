@@ -40,7 +40,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | hoard_contexts_2026-10-27 | Original reports recover the near-miss hoards' contexts | run 4 near misses | **done 27 Oct: no lead; ADAJ 1953 Feshkha report found** ([RESULT](hoard_contexts_2026-10-27/RESULT.md)) |
 | stepped_tunnels_2026-10-27 | Entry 24's tomb in the Wadi of the Vault is a rock-cut stepped tunnel | entry 24 | **done 27 Oct: no lead (strict); weak Hyrcania lead (lenient)** ([RESULT](stepped_tunnels_2026-10-27/RESULT.md)) |
 | mac_unblock_2026-10-27 | Read the large Drive PDFs on the owner's Mac (connector limit 10 MB) | runs 1, 9–12 | waiting: Mac not connected ([PLAN](mac_unblock_2026-10-27/PLAN.md)) |
-| chain_l5658_2026-10-27 | Follow the chain from L56/58 to entries 21, 23 (Ephesus method) | entries 20–23 | rule fixed 27 Oct |
+| chain_l5658_2026-10-27 | Follow the chain from L56/58 to entries 21, 23 (Ephesus method) | entries 20–23 | **done 27 Oct: holds weakly; breaks on the strict C1 reading** ([RESULT](chain_l5658_2026-10-27/RESULT.md)) |
 | copy_search_2026-10-27 | The scroll's "copy" survives among small Qumran fragments (formula signature) | entry 60 | rule fixed 27 Oct |
 | field_names_2026-10-27 | Lost names survive as 1940s Arabic field names | 40 names + landmark words | rule fixed 27 Oct |
 | middot_temple_2026-10-27 | Temple-area entries fit Mishnah Middot's layout | entries 3–14 | rule fixed 27 Oct |
