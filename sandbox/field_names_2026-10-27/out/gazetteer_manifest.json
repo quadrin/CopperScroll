@@ -1,0 +1,74 @@
+{
+ "region": [
+  31.4,
+  32.55,
+  35.0,
+  35.6
+ ],
+ "sources": {
+  "S1a": {
+   "file": "gaz_S1a.csv",
+   "raw": "dl/pom_localities.json",
+   "raw_sha256": "ebe9bfb68a124d71d615068debdab8f8be11b85786580a625437121019682555",
+   "url": "https://palopenmaps.org/api/localities",
+   "n_names": 559,
+   "n_features": 559,
+   "sha256": "7d766ab4193d930bda5a319b881e3155644cbc84aa7353ecb26492f6b1cb285b",
+   "built_utc": "2026-10-27T06:52:04+00:00"
+  },
+  "S2": {
+   "file": "gaz_S2.csv",
+   "raw": "research/regional/mandate_maps/names.csv",
+   "raw_sha256": "0ebb11fa5a452708196104d0de02f6994220870a97535781df7463c0f3508479",
+   "n_names": 229,
+   "n_items": 182,
+   "sha256": "95130ceda475ca2223052747f66a18eafd2cc87189223035e13b8ab050255f8d",
+   "built_utc": "2026-10-27T06:45:27+00:00"
+  },
+  "S3": {
+   "file": "gaz_S3.csv",
+   "raw": {
+    "West%20Bank/West Bank.txt": "1aa760d669e9d46ceb1b04d6ab1c3eff3138e538e9977e8f5f064fa45218c2ef",
+    "Israel/Israel.txt": "d63d5427193e5b8abc971af81fe94825c59092029964a213a6ac6a9872ad604b",
+    "Jordan/Jordan.txt": "10b4fde877185478c5a9720ee8cc20c080bf5dedbbc876fb267e7531a93ed0a4"
+   },
+   "url": "https://geonames.nga.mil/geonames/GNSData/{West Bank,Israel,Jordan}.zip (files dated 2026-10-21)",
+   "n_names": 13064,
+   "n_features": 5504,
+   "n_region_rows": 17172,
+   "excluded": {
+    "hebrew/english/conventional": 2006,
+    "unlabelled romanization on a Hebrew-named feature": 434,
+    "Hebrew romanization markers": 119,
+    "English words": 984,
+    "Israeli settlement (STLMT)": 238
+   },
+   "sha256": "6ad4a5d075cd6441201ab6aff6c8d9580037631a794ad188a198f5061e949ccf",
+   "built_utc": "2026-10-27T06:45:27+00:00"
+  },
+  "S1b": {
+   "file": "gaz_S1b.csv",
+   "raw": "dl/pomtiles (1827 z14 tiles)",
+   "raw_sha256_tiles_concat": "9596ac78acee414b601f780bbfcf627fe96e4eca260394a762c11d97a589dc8c",
+   "url": "https://tiler.palopenmaps.org/maps/osm/14/{x}/{y}.pbf",
+   "n_names": 2584,
+   "by_layer": {
+    "landuse_areas": 195,
+    "landuse_lines": 199,
+    "transport_lines": 7,
+    "land_osm": 378,
+    "place_points": 1267,
+    "landuse_points": 60,
+    "other_points": 366,
+    "water_areas": 1,
+    "amenity_points": 57,
+    "buildings": 5,
+    "water_lines": 40,
+    "amenity_areas": 2,
+    "place_areas": 7
+   },
+   "sha256": "a7ded9d59b816307d0384157e386d0a807e3662c0da060e58d2f80c33d16067b",
+   "built_utc": "2026-10-27T06:52:04+00:00"
+  }
+ }
+}

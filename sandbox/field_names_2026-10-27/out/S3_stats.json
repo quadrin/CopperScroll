@@ -1,0 +1,21 @@
+{
+ "gazetteer": "out/gaz_S3.csv",
+ "ext": false,
+ "n_gaz_rows": 13064,
+ "names_matched": 36,
+ "c1_expected": 30.3,
+ "c1_mean": 0.758,
+ "p_c1": 0.0022,
+ "c2_matched": 32,
+ "fisher_scroll_vs_c2": 0.3482,
+ "unplaced_matched": "21/24",
+ "unplaced_c1_expected": 19.64,
+ "p_c1_unplaced": 0.2417,
+ "placed_matched": "15/16",
+ "placed_c1_expected": 10.66,
+ "p_c1_placed": 0.0015,
+ "landmarks_matched": 5,
+ "landmark_c1_expected": 4.94,
+ "leads": [],
+ "leads_literal_priority_only": []
+}
