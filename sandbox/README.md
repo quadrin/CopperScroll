@@ -32,7 +32,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | samra_hyrcania_valley_2026-10-27 | Valley of Secacah = Naḥal Sekhakha; Sekakah = Kh. es-Samra; conduit head = Hyrcania's intake (from run 1) | entries 20–24 | **done 27 Oct: survives, not preferred over Qumran** ([RESULT](samra_hyrcania_valley_2026-10-27/RESULT.md)) |
 | route_travel_time_2026-10-27 | The entry order is a walking route (least-cost, Tobler) | anchored entries | **done 27 Oct: not supported (order short, but walking time adds nothing)** ([RESULT](route_travel_time_2026-10-27/RESULT.md)) |
 | greek_architecture_2026-10-27 | Greek architectural loanwords point to Herodian-style buildings | loanword entries (3, 51, …) | **done 27 Oct: not useful, no lead** ([RESULT](greek_architecture_2026-10-27/RESULT.md)) |
-| cave_entries_2026-10-27 | Cave entries match caves already excavated | cave entries (7, 22, 25, 26, 30) | rule fixed 27 Oct |
+| cave_entries_2026-10-27 | Cave entries match caves already excavated | cave entries (7, 22, 25, 26, 30) | **done 27 Oct: not supported** ([RESULT](cave_entries_2026-10-27/RESULT.md)) |
 | linearb_achor_2026-10-27 | Linear B joint fit for the Valley of Achor | entries 1, 17 | rule fixed 27 Oct |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
