@@ -1,0 +1,22 @@
+{
+  "_note": "Operationalisation of RULE.md (commit ebabf7e) written before any corpus search. Forms are consonants after removing non-letters and folding final letters (ך>כ ם>מ ן>נ ף>פ ץ>צ). Matching is on morphological parts (prefixes ו ב ל ה ש מ כ are separate parts in both ETCBC corpora); the 4 direction nouns are also matched with up to 3 unsplit prefix letters. Forms are those listed in the rule plus extra spellings of the same lexemes attested in ETCBC 3Q15; the homograph אמת (also 'truth') is left out of the main run and tried as a variant.",
+  "classes": {
+    "CUBIT": ["אמות", "אמינ", "אמשות", "אמוות"],
+    "DIG": ["חפור", "חפר", "חפורר"],
+    "TALENT": ["ככ", "ככרינ", "ככר"],
+    "SILVER": ["כספ"],
+    "GOLD": ["זהב"],
+    "VESSEL": ["כלי", "כלינ"],
+    "DIRECTION": ["צפונ", "צפונו", "מזרח", "מזרחו", "דרומ", "מערב"]
+  },
+  "measures": ["CUBIT", "TALENT"],
+  "direction_prefix_regex": "^[ובלהשמ]{0,3}(צפונ|צפונו|מזרח|מזרחו|דרומ|מערב)$",
+  "number_word": "next morphological part after the measure part (same graphical word or first part of next graphical word) is a numeral sign (DSS sign type numr or Hebrew cantillation-marked numeral letters), or is tagged numeral (DSS sp=numr; BHSA ls=card), or its consonants match the cardinal list regex",
+  "cardinal_regex": "^(אחד|אחת|שנימ|שני|שתימ|שתי|שנינ|תרינ|תרתינ|שלש|שלוש|שלשה|שלושה|שלשת|שלושת|תלת|תלתה|ארבע|ארבעה|ארבעת|חמש|חמשה|חמשת|שש|ששה|ששת|שבע|שבעה|שבעת|שמונה|שמנה|שמונא|שמנא|תשע|תשעה|תשעת|עשר|עשרה|עשרת|עסר|עשרימ|עשרינ|עסרינ|שלשימ|שלושימ|תלתינ|ארבעימ|ארבעינ|חמשימ|חמשינ|ששימ|ששינ|שתינ|שבעימ|שבעינ|שמונימ|שמנימ|תשעימ|מאה|מאת|מאות|מאתימ|מאתינ|אלפ|אלפימ|רבוא|רבבה|שבעשרה|שבעעשרה)$",
+  "window_words": 12,
+  "main_reading": "hit = window of 12 consecutive graphical words with >=3 distinct classes among CUBIT, DIG, TALENT, SILVER, GOLD, VESSEL, DIRECTION, NUM (NUM = a number directly after a measure), and at least one measure in the window directly followed by a number. The 4 directions are one class (slash notation in the rule = alternant spellings).",
+  "strict_variant": "as main but NUM does not count toward the 3 distinct classes (3 lexical classes needed, one of them a measure followed by a number)",
+  "other_variants": ["V_amt: add אמת to CUBIT", "V_rec: ignore parts with half or more of their letters inside modern reconstruction brackets (DSS only)", "V_dir4: directions as four separate classes"],
+  "shuffle": "1000 permutations of the fragment's graphical words (random.Random(20261027 + unit index)); p = (k+1)/1001 where k = permutations in which the signature appears",
+  "hit_counting": "hit loci = maximal runs of overlapping qualifying windows; base rate = loci per 10,000 graphical words"
+}
