@@ -1,0 +1,104 @@
+{
+ "strict": {
+  "members": {
+   "A": {
+    "n": 6,
+    "pass": 14,
+    "fail": 2,
+    "unknown": 20,
+    "pass_per": 2.33,
+    "fail_per": 0.33
+   },
+   "ctrl": {
+    "n": 3,
+    "pass": 5,
+    "fail": 6,
+    "unknown": 7,
+    "pass_per": 1.67,
+    "fail_per": 2.0
+   }
+  },
+  "leads": [],
+  "class_scores_better": true,
+  "lead": false,
+  "class_supported": false
+ },
+ "strict+B": {
+  "members": {
+   "A": {
+    "n": 7,
+    "pass": 15,
+    "fail": 3,
+    "unknown": 24,
+    "pass_per": 2.14,
+    "fail_per": 0.43
+   },
+   "ctrl": {
+    "n": 3,
+    "pass": 5,
+    "fail": 6,
+    "unknown": 7,
+    "pass_per": 1.67,
+    "fail_per": 2.0
+   }
+  },
+  "leads": [],
+  "class_scores_better": true,
+  "lead": false,
+  "class_supported": false
+ },
+ "lenient": {
+  "members": {
+   "A": {
+    "n": 6,
+    "pass": 19,
+    "fail": 2,
+    "unknown": 15,
+    "pass_per": 3.17,
+    "fail_per": 0.33
+   },
+   "ctrl": {
+    "n": 3,
+    "pass": 5,
+    "fail": 5,
+    "unknown": 8,
+    "pass_per": 1.67,
+    "fail_per": 1.67
+   }
+  },
+  "leads": [
+   "ST1",
+   "ST2"
+  ],
+  "class_scores_better": true,
+  "lead": true,
+  "class_supported": true
+ },
+ "lenient+B": {
+  "members": {
+   "A": {
+    "n": 7,
+    "pass": 22,
+    "fail": 3,
+    "unknown": 17,
+    "pass_per": 3.14,
+    "fail_per": 0.43
+   },
+   "ctrl": {
+    "n": 3,
+    "pass": 5,
+    "fail": 5,
+    "unknown": 8,
+    "pass_per": 1.67,
+    "fail_per": 1.67
+   }
+  },
+  "leads": [
+   "ST1",
+   "ST2"
+  ],
+  "class_scores_better": true,
+  "lead": true,
+  "class_supported": true
+ }
+}
