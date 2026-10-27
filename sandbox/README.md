@@ -44,7 +44,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | copy_search_2026-10-27 | The scroll's "copy" survives among small Qumran fragments (formula signature) | entry 60 | rule fixed 27 Oct |
 | field_names_2026-10-27 | Lost names survive as 1940s Arabic field names | 40 names + landmark words | rule fixed 27 Oct |
 | middot_temple_2026-10-27 | Temple-area entries fit Mishnah Middot's layout | entries 3–14 | rule fixed 27 Oct |
-| amount_gravity_2026-10-27 | Bigger caches lie nearer Jerusalem | entries with sums | rule fixed 27 Oct |
+| amount_gravity_2026-10-27 | Bigger caches lie nearer Jerusalem | entries with sums | **done 27 Oct: underpowered; sign reversed** ([RESULT](amount_gravity_2026-10-27/RESULT.md)) |
 | reverse_lookup_2026-10-27 | Well-documented sites, looked up against all entries | all entries | rule fixed 27 Oct |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
