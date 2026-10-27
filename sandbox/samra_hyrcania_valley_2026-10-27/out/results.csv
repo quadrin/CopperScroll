@@ -1,0 +1,18 @@
+place,role,relation,strict_200m,lenient_500m,feature_used,distance_to_network_m,J7_basis,source
+Kh. es-Samra,model,J1,pass,pass,"N-S track Jericho-Bethlehem through the Buqeia (road D); ravines Wadi Khashna, Nahal Qumran between",n/a,n/a,"Cross & Milik 1956 BASOR 142 pp. 7, 9 (n. 9); Patrich 1994 EN p. 6 (road D); Dorsey 1991 pp. 149-150 (A2)"
+Kh. es-Samra,model,J2,pass,pass,Nahal Sekhakha channel,66 (Patrich pt) / 29 (C&M pt),n/a,DEM z14 D8 >=0.25 km2
+Kh. es-Samra,model,J3-dam,unknown,pass,"dam 44 (Site 48), 17.5 m, head of N aqueduct; alt. D4 Kurum el-Ajaz 57.5 m",8 / 41,"lenient only: Hasmonean phasing + Second Temple-type plaster 300 m from dam; D4 Iron II by association","Patrich 1994 Site 48 (EN pp. 65-66); Patrich 1989 p. 251; C&M p. 12"
+Kh. es-Samra,model,J3-cairn,unknown,pass,"Wright 1961 Herodian mini-tumulus (position scaled, approx.)",~259,"lenient: Herodian surface pottery; strict fails on distance (>200 m)","Wright 1961 p. 16, Fig. 1"
+Kh. es-Samra,model,J4 (flow and side),unknown,pass,"N aqueduct of Hyrcania, head = dam 44, runs S from head",8,"lenient only (phasing/typology)","Patrich 1994 Site 48; Patrich 1989 pp. 244, 251"
+Kh. es-Samra,model,J5,unknown,unknown,"open cistern 18x22 m in SW quarter; no fissure recorded east; undated",66,none,"C&M p. 11; Patrich Site 91"
+Kh. es-Samra,model,J6 (Solomon),unknown,unknown,no measured trench/channel-heap pair at 24-35 m in network,,,Patrich 1994 Sites 48-92 inventory
+Kh. es-Samra,model,J8,pass,pass,"dam44<->Samra 4.96 km D8 / 4.48 km smoothed (Patrich pt); 5.15/4.65 (C&M pt); max incl. offsets 5.19 km; tumulus<->Samra 2.66-2.86; D4<->dam44 3.85",,,out/j8_distances.json
+Kh. es-Samra,model,J9,pass (weak; unknown if queried graves do not count),same,"Patrich Site 19: 8 stone-capped mounds (graves?) at end of dam across tributary of Wadi Khashna, dam remains observed along the Hyrcania Valley road; undated",on route,no date required,"Patrich 1994 Site 19; WBADB S3792; C&M p. 9 n. 9 (north entrance from Wadi Dabr, BC3 189.3:129.1, ~200 m N of Site 19)"
+Kh. Qumran,control,J1,pass (re-scored; run 1 unknown),pass,"Jericho N-S track to Abu Tabaq + road west from Qumran (and road down Wadi Qumran); ravines between",n/a,n/a,"C&M p. 7 and n. 4 (de Vaux RB 60, 1953, p. 41); Patrich EN p. 6 latitudinal C1"
+Kh. Qumran,control,J2,pass,pass,Wadi Qumran,204 (DEM) / 190 (OSM),n/a,
+Kh. Qumran,control,J3-cairn,pass,pass,"main cemetery stone heaps (OSM polygon 1569742687)",178 (DEM) / 125 (OSM),"strict: grave fills with Period Ib/II pottery, Herodian lamp","de Vaux 1973 pp. 46-47; Magen & Peleg 2018 p. 99 (run 1)"
+Kh. Qumran,control,J4,pass (flow: caveat),pass,Qumran aqueduct start (Ilan & Amit pt 3),24,"Period Ib; Archelaus-era or earlier","run 1: Ilan & Amit 2002 pp. 381-385; de Vaux 1973 p. 8"
+Kh. Qumran,control,J5,unknown,unknown,"L71; crack east in dump, date disputed",187,,"run 1: Magen & Peleg 2018 pp. 38, 51, 67"
+Kh. Qumran,control,J6 (Solomon),unknown,unknown,no great heap at 24-35 m,,,run 1
+Kh. Qumran,control,J8,pass,pass,"aqueduct start<->cemetery 0.30 km, <->L71 0.27 km (D8); max incl. offsets 0.57 km",,,out/j8_distances_qumran.json
+Kh. Qumran,control,J9,pass (weak) via Buqeia route / unknown via direct plain route,same,"Patrich Site 19 on Jericho->Abu Tabaq->Qumran route; direct route: no documented ancient road with a recorded ravine tomb",,,"C&M p. 7; tombs lane B2 (Region B) for direct route"

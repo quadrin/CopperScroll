@@ -29,7 +29,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | already_found_2026-10-27 | Some caches are already catalogued as hoards (karsh reading) | all entries with sums | **done 27 Oct: no lead** ([RESULT](already_found_2026-10-27/RESULT.md)) |
 | kohlit_south_of_yanun_2026-10-27 | If the pit is in Janoaḥ, Koḥlit is a mound just south of Yanun | Koḥlit (entries 4, 11, 19, 60) | **done 27 Oct: not supported; records too coarse** ([RESULT](kohlit_south_of_yanun_2026-10-27/RESULT.md)) |
 | onomasticon_names_2026-10-27 | Lost names survive, located, in Eusebius and the Madaba Map | 40 scroll names | **done 27 Oct: no new lead** ([RESULT](onomasticon_names_2026-10-27/RESULT.md)) |
-| samra_hyrcania_valley_2026-10-27 | Valley of Secacah = Naḥal Sekhakha; Sekakah = Kh. es-Samra; conduit head = Hyrcania's intake (from run 1) | entries 20–24 | rule fixed 27 Oct |
+| samra_hyrcania_valley_2026-10-27 | Valley of Secacah = Naḥal Sekhakha; Sekakah = Kh. es-Samra; conduit head = Hyrcania's intake (from run 1) | entries 20–24 | **done 27 Oct: survives, not preferred over Qumran** ([RESULT](samra_hyrcania_valley_2026-10-27/RESULT.md)) |
 | route_travel_time_2026-10-27 | The entry order is a walking route (least-cost, Tobler) | anchored entries | **done 27 Oct: not supported (order short, but walking time adds nothing)** ([RESULT](route_travel_time_2026-10-27/RESULT.md)) |
 | greek_architecture_2026-10-27 | Greek architectural loanwords point to Herodian-style buildings | loanword entries (3, 51, …) | **done 27 Oct: not useful, no lead** ([RESULT](greek_architecture_2026-10-27/RESULT.md)) |
 | cave_entries_2026-10-27 | Cave entries match caves already excavated | cave entries (7, 22, 25, 26, 30) | rule fixed 27 Oct |

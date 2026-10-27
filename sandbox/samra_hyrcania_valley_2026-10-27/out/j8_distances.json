@@ -1,0 +1,1364 @@
+{
+ "model": {
+  "offsets": {
+   "dam44_S48": {
+    "offset_m": 8
+   },
+   "Samra_S91": {
+    "offset_m": 66
+   },
+   "Samra_CM": {
+    "offset_m": 29
+   },
+   "D4_KurumAjaz": {
+    "offset_m": 41
+   },
+   "D3": {
+    "offset_m": 57
+   },
+   "D2": {
+    "offset_m": 89
+   },
+   "S52_conduit_W": {
+    "offset_m": 8
+   },
+   "S54_rect_cairn": {
+    "offset_m": 55
+   },
+   "Wright_tumulus_approx": {
+    "offset_m": 259
+   },
+   "Hyrcania_summit": {
+    "offset_m": 361
+   },
+   "S72_pools": {
+    "offset_m": 177
+   },
+   "S63_reservoir_crevice": {
+    "offset_m": 34
+   },
+   "S19_Khashna_graves": {
+    "offset_m": 2466
+   },
+   "Qumran_S": {
+    "offset_m": 4230
+   },
+   "Wright_monument": {
+    "offset_m": 582
+   }
+  },
+  "pairs": {
+   "dam44_S48|Samra_S91": {
+    "d8_m": 4958,
+    "smoothed_m": 4482,
+    "plus_offsets_d8_m": 5032,
+    "straight_m": 3662
+   },
+   "dam44_S48|Samra_CM": {
+    "d8_m": 5152,
+    "smoothed_m": 4651,
+    "plus_offsets_d8_m": 5189,
+    "straight_m": 3714
+   },
+   "dam44_S48|D4_KurumAjaz": {
+    "d8_m": 3846,
+    "smoothed_m": 3521,
+    "plus_offsets_d8_m": 3895,
+    "straight_m": 2975
+   },
+   "dam44_S48|D3": {
+    "d8_m": 4723,
+    "smoothed_m": 4268,
+    "plus_offsets_d8_m": 4788,
+    "straight_m": 3396
+   },
+   "dam44_S48|D2": {
+    "d8_m": 8911,
+    "smoothed_m": 8003,
+    "plus_offsets_d8_m": 9008,
+    "straight_m": 3581
+   },
+   "dam44_S48|S52_conduit_W": {
+    "d8_m": 7979,
+    "smoothed_m": 7137,
+    "plus_offsets_d8_m": 7996,
+    "straight_m": 3083
+   },
+   "dam44_S48|S54_rect_cairn": {
+    "d8_m": 8691,
+    "smoothed_m": 7908,
+    "plus_offsets_d8_m": 8754,
+    "straight_m": 4844
+   },
+   "dam44_S48|Wright_tumulus_approx": {
+    "d8_m": 2297,
+    "smoothed_m": 2133,
+    "plus_offsets_d8_m": 2563,
+    "straight_m": 1808
+   },
+   "dam44_S48|Hyrcania_summit": {
+    "d8_m": 1478,
+    "smoothed_m": 1372,
+    "plus_offsets_d8_m": 1847,
+    "straight_m": 1359
+   },
+   "dam44_S48|S72_pools": {
+    "d8_m": 5777,
+    "smoothed_m": 5217,
+    "plus_offsets_d8_m": 5963,
+    "straight_m": 3515
+   },
+   "dam44_S48|S63_reservoir_crevice": {
+    "d8_m": 602,
+    "smoothed_m": 552,
+    "plus_offsets_d8_m": 643,
+    "straight_m": 561
+   },
+   "dam44_S48|S19_Khashna_graves": {
+    "d8_m": 8587,
+    "smoothed_m": 7809,
+    "plus_offsets_d8_m": 11061,
+    "straight_m": 6259
+   },
+   "dam44_S48|Qumran_S": {
+    "d8_m": 9590,
+    "smoothed_m": 8684,
+    "plus_offsets_d8_m": 13828,
+    "straight_m": 9980
+   },
+   "dam44_S48|Wright_monument": {
+    "d8_m": 1459,
+    "smoothed_m": 1353,
+    "plus_offsets_d8_m": 2048,
+    "straight_m": 1340
+   },
+   "Samra_S91|Samra_CM": {
+    "d8_m": 193,
+    "smoothed_m": 155,
+    "plus_offsets_d8_m": 288,
+    "straight_m": 198
+   },
+   "Samra_S91|D4_KurumAjaz": {
+    "d8_m": 1113,
+    "smoothed_m": 948,
+    "plus_offsets_d8_m": 1219,
+    "straight_m": 804
+   },
+   "Samra_S91|D3": {
+    "d8_m": 571,
+    "smoothed_m": 474,
+    "plus_offsets_d8_m": 694,
+    "straight_m": 296
+   },
+   "Samra_S91|D2": {
+    "d8_m": 3953,
+    "smoothed_m": 3507,
+    "plus_offsets_d8_m": 4107,
+    "straight_m": 1175
+   },
+   "Samra_S91|S52_conduit_W": {
+    "d8_m": 3021,
+    "smoothed_m": 2641,
+    "plus_offsets_d8_m": 3095,
+    "straight_m": 1140
+   },
+   "Samra_S91|S54_rect_cairn": {
+    "d8_m": 3733,
+    "smoothed_m": 3412,
+    "plus_offsets_d8_m": 3853,
+    "straight_m": 2044
+   },
+   "Samra_S91|Wright_tumulus_approx": {
+    "d8_m": 2662,
+    "smoothed_m": 2336,
+    "plus_offsets_d8_m": 2986,
+    "straight_m": 2054
+   },
+   "Samra_S91|Hyrcania_summit": {
+    "d8_m": 3480,
+    "smoothed_m": 3097,
+    "plus_offsets_d8_m": 3906,
+    "straight_m": 2505
+   },
+   "Samra_S91|S72_pools": {
+    "d8_m": 819,
+    "smoothed_m": 722,
+    "plus_offsets_d8_m": 1062,
+    "straight_m": 669
+   },
+   "Samra_S91|S63_reservoir_crevice": {
+    "d8_m": 4357,
+    "smoothed_m": 3916,
+    "plus_offsets_d8_m": 4456,
+    "straight_m": 3125
+   },
+   "Samra_S91|S19_Khashna_graves": {
+    "d8_m": 3628,
+    "smoothed_m": 3313,
+    "plus_offsets_d8_m": 6160,
+    "straight_m": 4504
+   },
+   "Samra_S91|Qumran_S": {
+    "d8_m": 4632,
+    "smoothed_m": 4188,
+    "plus_offsets_d8_m": 8927,
+    "straight_m": 6934
+   },
+   "Samra_S91|Wright_monument": {
+    "d8_m": 3500,
+    "smoothed_m": 3113,
+    "plus_offsets_d8_m": 4147,
+    "straight_m": 2691
+   },
+   "Samra_CM|D4_KurumAjaz": {
+    "d8_m": 1306,
+    "smoothed_m": 1117,
+    "plus_offsets_d8_m": 1376,
+    "straight_m": 948
+   },
+   "Samra_CM|D3": {
+    "d8_m": 765,
+    "smoothed_m": 643,
+    "plus_offsets_d8_m": 851,
+    "straight_m": 447
+   },
+   "Samra_CM|D2": {
+    "d8_m": 3759,
+    "smoothed_m": 3332,
+    "plus_offsets_d8_m": 3878,
+    "straight_m": 1003
+   },
+   "Samra_CM|S52_conduit_W": {
+    "d8_m": 2828,
+    "smoothed_m": 2466,
+    "plus_offsets_d8_m": 2865,
+    "straight_m": 1031
+   },
+   "Samra_CM|S54_rect_cairn": {
+    "d8_m": 3539,
+    "smoothed_m": 3237,
+    "plus_offsets_d8_m": 3623,
+    "straight_m": 1849
+   },
+   "Samra_CM|Wright_tumulus_approx": {
+    "d8_m": 2855,
+    "smoothed_m": 2505,
+    "plus_offsets_d8_m": 3143,
+    "straight_m": 2163
+   },
+   "Samra_CM|Hyrcania_summit": {
+    "d8_m": 3673,
+    "smoothed_m": 3265,
+    "plus_offsets_d8_m": 4063,
+    "straight_m": 2602
+   },
+   "Samra_CM|S72_pools": {
+    "d8_m": 625,
+    "smoothed_m": 547,
+    "plus_offsets_d8_m": 832,
+    "straight_m": 511
+   },
+   "Samra_CM|S63_reservoir_crevice": {
+    "d8_m": 4550,
+    "smoothed_m": 4085,
+    "plus_offsets_d8_m": 4613,
+    "straight_m": 3187
+   },
+   "Samra_CM|S19_Khashna_graves": {
+    "d8_m": 3435,
+    "smoothed_m": 3138,
+    "plus_offsets_d8_m": 5931,
+    "straight_m": 4307
+   },
+   "Samra_CM|Qumran_S": {
+    "d8_m": 4438,
+    "smoothed_m": 4013,
+    "plus_offsets_d8_m": 8698,
+    "straight_m": 6772
+   },
+   "Samra_CM|Wright_monument": {
+    "d8_m": 3693,
+    "smoothed_m": 3282,
+    "plus_offsets_d8_m": 4304,
+    "straight_m": 2798
+   },
+   "D4_KurumAjaz|D3": {
+    "d8_m": 877,
+    "smoothed_m": 734,
+    "plus_offsets_d8_m": 975,
+    "straight_m": 509
+   },
+   "D4_KurumAjaz|D2": {
+    "d8_m": 5065,
+    "smoothed_m": 4468,
+    "plus_offsets_d8_m": 5195,
+    "straight_m": 1583
+   },
+   "D4_KurumAjaz|S52_conduit_W": {
+    "d8_m": 4134,
+    "smoothed_m": 3603,
+    "plus_offsets_d8_m": 4182,
+    "straight_m": 1268
+   },
+   "D4_KurumAjaz|S54_rect_cairn": {
+    "d8_m": 4845,
+    "smoothed_m": 4374,
+    "plus_offsets_d8_m": 4940,
+    "straight_m": 2717
+   },
+   "D4_KurumAjaz|Wright_tumulus_approx": {
+    "d8_m": 1549,
+    "smoothed_m": 1375,
+    "plus_offsets_d8_m": 1849,
+    "straight_m": 1271
+   },
+   "D4_KurumAjaz|Hyrcania_summit": {
+    "d8_m": 2368,
+    "smoothed_m": 2135,
+    "plus_offsets_d8_m": 2769,
+    "straight_m": 1738
+   },
+   "D4_KurumAjaz|S72_pools": {
+    "d8_m": 1931,
+    "smoothed_m": 1683,
+    "plus_offsets_d8_m": 2149,
+    "straight_m": 1132
+   },
+   "D4_KurumAjaz|S63_reservoir_crevice": {
+    "d8_m": 3244,
+    "smoothed_m": 2955,
+    "plus_offsets_d8_m": 3318,
+    "straight_m": 2421
+   },
+   "D4_KurumAjaz|S19_Khashna_graves": {
+    "d8_m": 4741,
+    "smoothed_m": 4274,
+    "plus_offsets_d8_m": 7248,
+    "straight_m": 5034
+   },
+   "D4_KurumAjaz|Qumran_S": {
+    "d8_m": 5744,
+    "smoothed_m": 5150,
+    "plus_offsets_d8_m": 10015,
+    "straight_m": 7719
+   },
+   "D4_KurumAjaz|Wright_monument": {
+    "d8_m": 2387,
+    "smoothed_m": 2152,
+    "plus_offsets_d8_m": 3009,
+    "straight_m": 1908
+   },
+   "D3|D2": {
+    "d8_m": 4524,
+    "smoothed_m": 3994,
+    "plus_offsets_d8_m": 4671,
+    "straight_m": 1268
+   },
+   "D3|S52_conduit_W": {
+    "d8_m": 3592,
+    "smoothed_m": 3129,
+    "plus_offsets_d8_m": 3658,
+    "straight_m": 1108
+   },
+   "D3|S54_rect_cairn": {
+    "d8_m": 4304,
+    "smoothed_m": 3900,
+    "plus_offsets_d8_m": 4416,
+    "straight_m": 2272
+   },
+   "D3|Wright_tumulus_approx": {
+    "d8_m": 2426,
+    "smoothed_m": 2122,
+    "plus_offsets_d8_m": 2742,
+    "straight_m": 1761
+   },
+   "D3|Hyrcania_summit": {
+    "d8_m": 3244,
+    "smoothed_m": 2882,
+    "plus_offsets_d8_m": 3663,
+    "straight_m": 2216
+   },
+   "D3|S72_pools": {
+    "d8_m": 1390,
+    "smoothed_m": 1209,
+    "plus_offsets_d8_m": 1625,
+    "straight_m": 763
+   },
+   "D3|S63_reservoir_crevice": {
+    "d8_m": 4121,
+    "smoothed_m": 3702,
+    "plus_offsets_d8_m": 4212,
+    "straight_m": 2853
+   },
+   "D3|S19_Khashna_graves": {
+    "d8_m": 4200,
+    "smoothed_m": 3800,
+    "plus_offsets_d8_m": 6723,
+    "straight_m": 4678
+   },
+   "D3|Qumran_S": {
+    "d8_m": 5203,
+    "smoothed_m": 4676,
+    "plus_offsets_d8_m": 9490,
+    "straight_m": 7218
+   },
+   "D3|Wright_monument": {
+    "d8_m": 3264,
+    "smoothed_m": 2899,
+    "plus_offsets_d8_m": 3903,
+    "straight_m": 2399
+   },
+   "D2|S52_conduit_W": {
+    "d8_m": 3700,
+    "smoothed_m": 3234,
+    "plus_offsets_d8_m": 3798,
+    "straight_m": 509
+   },
+   "D2|S54_rect_cairn": {
+    "d8_m": 3177,
+    "smoothed_m": 2873,
+    "plus_offsets_d8_m": 3321,
+    "straight_m": 1300
+   },
+   "D2|Wright_tumulus_approx": {
+    "d8_m": 6614,
+    "smoothed_m": 5857,
+    "plus_offsets_d8_m": 6962,
+    "straight_m": 2438
+   },
+   "D2|Hyrcania_summit": {
+    "d8_m": 7433,
+    "smoothed_m": 6617,
+    "plus_offsets_d8_m": 7883,
+    "straight_m": 2774
+   },
+   "D2|S72_pools": {
+    "d8_m": 3902,
+    "smoothed_m": 3449,
+    "plus_offsets_d8_m": 4169,
+    "straight_m": 511
+   },
+   "D2|S63_reservoir_crevice": {
+    "d8_m": 8309,
+    "smoothed_m": 7437,
+    "plus_offsets_d8_m": 8432,
+    "straight_m": 3133
+   },
+   "D2|S19_Khashna_graves": {
+    "d8_m": 3073,
+    "smoothed_m": 2773,
+    "plus_offsets_d8_m": 5628,
+    "straight_m": 3451
+   },
+   "D2|Qumran_S": {
+    "d8_m": 4076,
+    "smoothed_m": 3648,
+    "plus_offsets_d8_m": 8395,
+    "straight_m": 6463
+   },
+   "D2|Wright_monument": {
+    "d8_m": 7452,
+    "smoothed_m": 6634,
+    "plus_offsets_d8_m": 8123,
+    "straight_m": 3006
+   },
+   "S52_conduit_W|S54_rect_cairn": {
+    "d8_m": 3480,
+    "smoothed_m": 3140,
+    "plus_offsets_d8_m": 3543,
+    "straight_m": 1808
+   },
+   "S52_conduit_W|Wright_tumulus_approx": {
+    "d8_m": 5683,
+    "smoothed_m": 4991,
+    "plus_offsets_d8_m": 5950,
+    "straight_m": 1955
+   },
+   "S52_conduit_W|Hyrcania_summit": {
+    "d8_m": 6501,
+    "smoothed_m": 5751,
+    "plus_offsets_d8_m": 6870,
+    "straight_m": 2272
+   },
+   "S52_conduit_W|S72_pools": {
+    "d8_m": 2970,
+    "smoothed_m": 2583,
+    "plus_offsets_d8_m": 3156,
+    "straight_m": 566
+   },
+   "S52_conduit_W|S63_reservoir_crevice": {
+    "d8_m": 7378,
+    "smoothed_m": 6571,
+    "plus_offsets_d8_m": 7419,
+    "straight_m": 2627
+   },
+   "S52_conduit_W|S19_Khashna_graves": {
+    "d8_m": 3376,
+    "smoothed_m": 3040,
+    "plus_offsets_d8_m": 5850,
+    "straight_m": 3838
+   },
+   "S52_conduit_W|Qumran_S": {
+    "d8_m": 4379,
+    "smoothed_m": 3916,
+    "plus_offsets_d8_m": 8617,
+    "straight_m": 6972
+   },
+   "S52_conduit_W|Wright_monument": {
+    "d8_m": 6521,
+    "smoothed_m": 5768,
+    "plus_offsets_d8_m": 7111,
+    "straight_m": 2506
+   },
+   "S54_rect_cairn|Wright_tumulus_approx": {
+    "d8_m": 6394,
+    "smoothed_m": 5762,
+    "plus_offsets_d8_m": 6708,
+    "straight_m": 3720
+   },
+   "S54_rect_cairn|Hyrcania_summit": {
+    "d8_m": 7213,
+    "smoothed_m": 6522,
+    "plus_offsets_d8_m": 7628,
+    "straight_m": 4071
+   },
+   "S54_rect_cairn|S72_pools": {
+    "d8_m": 3682,
+    "smoothed_m": 3355,
+    "plus_offsets_d8_m": 3914,
+    "straight_m": 1600
+   },
+   "S54_rect_cairn|S63_reservoir_crevice": {
+    "d8_m": 8089,
+    "smoothed_m": 7342,
+    "plus_offsets_d8_m": 8177,
+    "straight_m": 4419
+   },
+   "S54_rect_cairn|S19_Khashna_graves": {
+    "d8_m": 104,
+    "smoothed_m": 86,
+    "plus_offsets_d8_m": 2625,
+    "straight_m": 2563
+   },
+   "S54_rect_cairn|Qumran_S": {
+    "d8_m": 2434,
+    "smoothed_m": 2178,
+    "plus_offsets_d8_m": 6718,
+    "straight_m": 5165
+   },
+   "S54_rect_cairn|Wright_monument": {
+    "d8_m": 7232,
+    "smoothed_m": 6539,
+    "plus_offsets_d8_m": 7868,
+    "straight_m": 4301
+   },
+   "Wright_tumulus_approx|Hyrcania_summit": {
+    "d8_m": 818,
+    "smoothed_m": 747,
+    "plus_offsets_d8_m": 1438,
+    "straight_m": 476
+   },
+   "Wright_tumulus_approx|S72_pools": {
+    "d8_m": 3480,
+    "smoothed_m": 3071,
+    "plus_offsets_d8_m": 3917,
+    "straight_m": 2154
+   },
+   "Wright_tumulus_approx|S63_reservoir_crevice": {
+    "d8_m": 1695,
+    "smoothed_m": 1567,
+    "plus_offsets_d8_m": 1987,
+    "straight_m": 1249
+   },
+   "Wright_tumulus_approx|S19_Khashna_graves": {
+    "d8_m": 6290,
+    "smoothed_m": 5662,
+    "plus_offsets_d8_m": 9015,
+    "straight_m": 5733
+   },
+   "Wright_tumulus_approx|Qumran_S": {
+    "d8_m": 7293,
+    "smoothed_m": 6538,
+    "plus_offsets_d8_m": 11782,
+    "straight_m": 8849
+   },
+   "Wright_tumulus_approx|Wright_monument": {
+    "d8_m": 838,
+    "smoothed_m": 764,
+    "plus_offsets_d8_m": 1678,
+    "straight_m": 638
+   },
+   "Hyrcania_summit|S72_pools": {
+    "d8_m": 4299,
+    "smoothed_m": 3832,
+    "plus_offsets_d8_m": 4837,
+    "straight_m": 2544
+   },
+   "Hyrcania_summit|S63_reservoir_crevice": {
+    "d8_m": 876,
+    "smoothed_m": 806,
+    "plus_offsets_d8_m": 1271,
+    "straight_m": 812
+   },
+   "Hyrcania_summit|S19_Khashna_graves": {
+    "d8_m": 7109,
+    "smoothed_m": 6423,
+    "plus_offsets_d8_m": 9935,
+    "straight_m": 5951
+   },
+   "Hyrcania_summit|Qumran_S": {
+    "d8_m": 8112,
+    "smoothed_m": 7298,
+    "plus_offsets_d8_m": 12703,
+    "straight_m": 9224
+   },
+   "Hyrcania_summit|Wright_monument": {
+    "d8_m": 20,
+    "smoothed_m": 20,
+    "plus_offsets_d8_m": 962,
+    "straight_m": 241
+   },
+   "S72_pools|S63_reservoir_crevice": {
+    "d8_m": 5175,
+    "smoothed_m": 4651,
+    "plus_offsets_d8_m": 5386,
+    "straight_m": 3021
+   },
+   "S72_pools|S19_Khashna_graves": {
+    "d8_m": 3578,
+    "smoothed_m": 3255,
+    "plus_offsets_d8_m": 6221,
+    "straight_m": 3923
+   },
+   "S72_pools|Qumran_S": {
+    "d8_m": 4581,
+    "smoothed_m": 4130,
+    "plus_offsets_d8_m": 8988,
+    "straight_m": 6696
+   },
+   "S72_pools|Wright_monument": {
+    "d8_m": 4319,
+    "smoothed_m": 3849,
+    "plus_offsets_d8_m": 5078,
+    "straight_m": 2763
+   },
+   "S63_reservoir_crevice|S19_Khashna_graves": {
+    "d8_m": 7985,
+    "smoothed_m": 7242,
+    "plus_offsets_d8_m": 10485,
+    "straight_m": 6006
+   },
+   "S63_reservoir_crevice|Qumran_S": {
+    "d8_m": 8988,
+    "smoothed_m": 8118,
+    "plus_offsets_d8_m": 13252,
+    "straight_m": 9577
+   },
+   "S63_reservoir_crevice|Wright_monument": {
+    "d8_m": 857,
+    "smoothed_m": 787,
+    "plus_offsets_d8_m": 1472,
+    "straight_m": 836
+   },
+   "S19_Khashna_graves|Qumran_S": {
+    "d8_m": 2330,
+    "smoothed_m": 2078,
+    "plus_offsets_d8_m": 9026,
+    "straight_m": 4459
+   },
+   "S19_Khashna_graves|Wright_monument": {
+    "d8_m": 7128,
+    "smoothed_m": 6440,
+    "plus_offsets_d8_m": 10176,
+    "straight_m": 6192
+   },
+   "Qumran_S|Wright_monument": {
+    "d8_m": 8131,
+    "smoothed_m": 7315,
+    "plus_offsets_d8_m": 12943,
+    "straight_m": 9450
+   }
+  }
+ },
+ "controlQ": {
+  "offsets": {
+   "dam44_S48": {
+    "offset_m": 8
+   },
+   "Samra_S91": {
+    "offset_m": 66
+   },
+   "Samra_CM": {
+    "offset_m": 29
+   },
+   "D4_KurumAjaz": {
+    "offset_m": 41
+   },
+   "D3": {
+    "offset_m": 57
+   },
+   "D2": {
+    "offset_m": 89
+   },
+   "S52_conduit_W": {
+    "offset_m": 8
+   },
+   "S54_rect_cairn": {
+    "offset_m": 55
+   },
+   "Wright_tumulus_approx": {
+    "offset_m": 259
+   },
+   "Hyrcania_summit": {
+    "offset_m": 361
+   },
+   "S72_pools": {
+    "offset_m": 177
+   },
+   "S63_reservoir_crevice": {
+    "offset_m": 34
+   },
+   "S19_Khashna_graves": {
+    "offset_m": 41
+   },
+   "Qumran_S": {
+    "offset_m": 207
+   },
+   "Wright_monument": {
+    "offset_m": 582
+   }
+  },
+  "pairs": {
+   "dam44_S48|Samra_S91": {
+    "d8_m": 4958,
+    "smoothed_m": 4482,
+    "plus_offsets_d8_m": 5032,
+    "straight_m": 3662
+   },
+   "dam44_S48|Samra_CM": {
+    "d8_m": 5152,
+    "smoothed_m": 4651,
+    "plus_offsets_d8_m": 5189,
+    "straight_m": 3714
+   },
+   "dam44_S48|D4_KurumAjaz": {
+    "d8_m": 3846,
+    "smoothed_m": 3521,
+    "plus_offsets_d8_m": 3895,
+    "straight_m": 2975
+   },
+   "dam44_S48|D3": {
+    "d8_m": 4723,
+    "smoothed_m": 4268,
+    "plus_offsets_d8_m": 4788,
+    "straight_m": 3396
+   },
+   "dam44_S48|D2": {
+    "d8_m": 8911,
+    "smoothed_m": 8003,
+    "plus_offsets_d8_m": 9008,
+    "straight_m": 3581
+   },
+   "dam44_S48|S52_conduit_W": {
+    "d8_m": 7979,
+    "smoothed_m": 7137,
+    "plus_offsets_d8_m": 7996,
+    "straight_m": 3083
+   },
+   "dam44_S48|S54_rect_cairn": {
+    "d8_m": 8691,
+    "smoothed_m": 7908,
+    "plus_offsets_d8_m": 8754,
+    "straight_m": 4844
+   },
+   "dam44_S48|Wright_tumulus_approx": {
+    "d8_m": 2297,
+    "smoothed_m": 2133,
+    "plus_offsets_d8_m": 2563,
+    "straight_m": 1808
+   },
+   "dam44_S48|Hyrcania_summit": {
+    "d8_m": 1478,
+    "smoothed_m": 1372,
+    "plus_offsets_d8_m": 1847,
+    "straight_m": 1359
+   },
+   "dam44_S48|S72_pools": {
+    "d8_m": 5777,
+    "smoothed_m": 5217,
+    "plus_offsets_d8_m": 5963,
+    "straight_m": 3515
+   },
+   "dam44_S48|S63_reservoir_crevice": {
+    "d8_m": 602,
+    "smoothed_m": 552,
+    "plus_offsets_d8_m": 643,
+    "straight_m": 561
+   },
+   "dam44_S48|S19_Khashna_graves": {
+    "d8_m": 14468,
+    "smoothed_m": 13286,
+    "plus_offsets_d8_m": 14518,
+    "straight_m": 6259
+   },
+   "dam44_S48|Qumran_S": {
+    "d8_m": 14240,
+    "smoothed_m": 13124,
+    "plus_offsets_d8_m": 14455,
+    "straight_m": 9980
+   },
+   "dam44_S48|Wright_monument": {
+    "d8_m": 1459,
+    "smoothed_m": 1353,
+    "plus_offsets_d8_m": 2048,
+    "straight_m": 1340
+   },
+   "Samra_S91|Samra_CM": {
+    "d8_m": 193,
+    "smoothed_m": 155,
+    "plus_offsets_d8_m": 288,
+    "straight_m": 198
+   },
+   "Samra_S91|D4_KurumAjaz": {
+    "d8_m": 1113,
+    "smoothed_m": 948,
+    "plus_offsets_d8_m": 1219,
+    "straight_m": 804
+   },
+   "Samra_S91|D3": {
+    "d8_m": 571,
+    "smoothed_m": 474,
+    "plus_offsets_d8_m": 694,
+    "straight_m": 296
+   },
+   "Samra_S91|D2": {
+    "d8_m": 3953,
+    "smoothed_m": 3507,
+    "plus_offsets_d8_m": 4107,
+    "straight_m": 1175
+   },
+   "Samra_S91|S52_conduit_W": {
+    "d8_m": 3021,
+    "smoothed_m": 2641,
+    "plus_offsets_d8_m": 3095,
+    "straight_m": 1140
+   },
+   "Samra_S91|S54_rect_cairn": {
+    "d8_m": 3733,
+    "smoothed_m": 3412,
+    "plus_offsets_d8_m": 3853,
+    "straight_m": 2044
+   },
+   "Samra_S91|Wright_tumulus_approx": {
+    "d8_m": 2662,
+    "smoothed_m": 2336,
+    "plus_offsets_d8_m": 2986,
+    "straight_m": 2054
+   },
+   "Samra_S91|Hyrcania_summit": {
+    "d8_m": 3480,
+    "smoothed_m": 3097,
+    "plus_offsets_d8_m": 3906,
+    "straight_m": 2505
+   },
+   "Samra_S91|S72_pools": {
+    "d8_m": 819,
+    "smoothed_m": 722,
+    "plus_offsets_d8_m": 1062,
+    "straight_m": 669
+   },
+   "Samra_S91|S63_reservoir_crevice": {
+    "d8_m": 4357,
+    "smoothed_m": 3916,
+    "plus_offsets_d8_m": 4456,
+    "straight_m": 3125
+   },
+   "Samra_S91|S19_Khashna_graves": {
+    "d8_m": 9510,
+    "smoothed_m": 8791,
+    "plus_offsets_d8_m": 9617,
+    "straight_m": 4504
+   },
+   "Samra_S91|Qumran_S": {
+    "d8_m": 9282,
+    "smoothed_m": 8629,
+    "plus_offsets_d8_m": 9554,
+    "straight_m": 6934
+   },
+   "Samra_S91|Wright_monument": {
+    "d8_m": 3500,
+    "smoothed_m": 3113,
+    "plus_offsets_d8_m": 4147,
+    "straight_m": 2691
+   },
+   "Samra_CM|D4_KurumAjaz": {
+    "d8_m": 1306,
+    "smoothed_m": 1117,
+    "plus_offsets_d8_m": 1376,
+    "straight_m": 948
+   },
+   "Samra_CM|D3": {
+    "d8_m": 765,
+    "smoothed_m": 643,
+    "plus_offsets_d8_m": 851,
+    "straight_m": 447
+   },
+   "Samra_CM|D2": {
+    "d8_m": 3759,
+    "smoothed_m": 3332,
+    "plus_offsets_d8_m": 3878,
+    "straight_m": 1003
+   },
+   "Samra_CM|S52_conduit_W": {
+    "d8_m": 2828,
+    "smoothed_m": 2466,
+    "plus_offsets_d8_m": 2865,
+    "straight_m": 1031
+   },
+   "Samra_CM|S54_rect_cairn": {
+    "d8_m": 3539,
+    "smoothed_m": 3237,
+    "plus_offsets_d8_m": 3623,
+    "straight_m": 1849
+   },
+   "Samra_CM|Wright_tumulus_approx": {
+    "d8_m": 2855,
+    "smoothed_m": 2505,
+    "plus_offsets_d8_m": 3143,
+    "straight_m": 2163
+   },
+   "Samra_CM|Hyrcania_summit": {
+    "d8_m": 3673,
+    "smoothed_m": 3265,
+    "plus_offsets_d8_m": 4063,
+    "straight_m": 2602
+   },
+   "Samra_CM|S72_pools": {
+    "d8_m": 625,
+    "smoothed_m": 547,
+    "plus_offsets_d8_m": 832,
+    "straight_m": 511
+   },
+   "Samra_CM|S63_reservoir_crevice": {
+    "d8_m": 4550,
+    "smoothed_m": 4085,
+    "plus_offsets_d8_m": 4613,
+    "straight_m": 3187
+   },
+   "Samra_CM|S19_Khashna_graves": {
+    "d8_m": 9316,
+    "smoothed_m": 8616,
+    "plus_offsets_d8_m": 9387,
+    "straight_m": 4307
+   },
+   "Samra_CM|Qumran_S": {
+    "d8_m": 9089,
+    "smoothed_m": 8454,
+    "plus_offsets_d8_m": 9325,
+    "straight_m": 6772
+   },
+   "Samra_CM|Wright_monument": {
+    "d8_m": 3693,
+    "smoothed_m": 3282,
+    "plus_offsets_d8_m": 4304,
+    "straight_m": 2798
+   },
+   "D4_KurumAjaz|D3": {
+    "d8_m": 877,
+    "smoothed_m": 734,
+    "plus_offsets_d8_m": 975,
+    "straight_m": 509
+   },
+   "D4_KurumAjaz|D2": {
+    "d8_m": 5065,
+    "smoothed_m": 4468,
+    "plus_offsets_d8_m": 5195,
+    "straight_m": 1583
+   },
+   "D4_KurumAjaz|S52_conduit_W": {
+    "d8_m": 4134,
+    "smoothed_m": 3603,
+    "plus_offsets_d8_m": 4182,
+    "straight_m": 1268
+   },
+   "D4_KurumAjaz|S54_rect_cairn": {
+    "d8_m": 4845,
+    "smoothed_m": 4374,
+    "plus_offsets_d8_m": 4940,
+    "straight_m": 2717
+   },
+   "D4_KurumAjaz|Wright_tumulus_approx": {
+    "d8_m": 1549,
+    "smoothed_m": 1375,
+    "plus_offsets_d8_m": 1849,
+    "straight_m": 1271
+   },
+   "D4_KurumAjaz|Hyrcania_summit": {
+    "d8_m": 2368,
+    "smoothed_m": 2135,
+    "plus_offsets_d8_m": 2769,
+    "straight_m": 1738
+   },
+   "D4_KurumAjaz|S72_pools": {
+    "d8_m": 1931,
+    "smoothed_m": 1683,
+    "plus_offsets_d8_m": 2149,
+    "straight_m": 1132
+   },
+   "D4_KurumAjaz|S63_reservoir_crevice": {
+    "d8_m": 3244,
+    "smoothed_m": 2955,
+    "plus_offsets_d8_m": 3318,
+    "straight_m": 2421
+   },
+   "D4_KurumAjaz|S19_Khashna_graves": {
+    "d8_m": 10622,
+    "smoothed_m": 9752,
+    "plus_offsets_d8_m": 10704,
+    "straight_m": 5034
+   },
+   "D4_KurumAjaz|Qumran_S": {
+    "d8_m": 10395,
+    "smoothed_m": 9590,
+    "plus_offsets_d8_m": 10642,
+    "straight_m": 7719
+   },
+   "D4_KurumAjaz|Wright_monument": {
+    "d8_m": 2387,
+    "smoothed_m": 2152,
+    "plus_offsets_d8_m": 3009,
+    "straight_m": 1908
+   },
+   "D3|D2": {
+    "d8_m": 4524,
+    "smoothed_m": 3994,
+    "plus_offsets_d8_m": 4671,
+    "straight_m": 1268
+   },
+   "D3|S52_conduit_W": {
+    "d8_m": 3592,
+    "smoothed_m": 3129,
+    "plus_offsets_d8_m": 3658,
+    "straight_m": 1108
+   },
+   "D3|S54_rect_cairn": {
+    "d8_m": 4304,
+    "smoothed_m": 3900,
+    "plus_offsets_d8_m": 4416,
+    "straight_m": 2272
+   },
+   "D3|Wright_tumulus_approx": {
+    "d8_m": 2426,
+    "smoothed_m": 2122,
+    "plus_offsets_d8_m": 2742,
+    "straight_m": 1761
+   },
+   "D3|Hyrcania_summit": {
+    "d8_m": 3244,
+    "smoothed_m": 2882,
+    "plus_offsets_d8_m": 3663,
+    "straight_m": 2216
+   },
+   "D3|S72_pools": {
+    "d8_m": 1390,
+    "smoothed_m": 1209,
+    "plus_offsets_d8_m": 1625,
+    "straight_m": 763
+   },
+   "D3|S63_reservoir_crevice": {
+    "d8_m": 4121,
+    "smoothed_m": 3702,
+    "plus_offsets_d8_m": 4212,
+    "straight_m": 2853
+   },
+   "D3|S19_Khashna_graves": {
+    "d8_m": 10081,
+    "smoothed_m": 9278,
+    "plus_offsets_d8_m": 10180,
+    "straight_m": 4678
+   },
+   "D3|Qumran_S": {
+    "d8_m": 9853,
+    "smoothed_m": 9116,
+    "plus_offsets_d8_m": 10118,
+    "straight_m": 7218
+   },
+   "D3|Wright_monument": {
+    "d8_m": 3264,
+    "smoothed_m": 2899,
+    "plus_offsets_d8_m": 3903,
+    "straight_m": 2399
+   },
+   "D2|S52_conduit_W": {
+    "d8_m": 3700,
+    "smoothed_m": 3234,
+    "plus_offsets_d8_m": 3798,
+    "straight_m": 509
+   },
+   "D2|S54_rect_cairn": {
+    "d8_m": 3177,
+    "smoothed_m": 2873,
+    "plus_offsets_d8_m": 3321,
+    "straight_m": 1300
+   },
+   "D2|Wright_tumulus_approx": {
+    "d8_m": 6614,
+    "smoothed_m": 5857,
+    "plus_offsets_d8_m": 6962,
+    "straight_m": 2438
+   },
+   "D2|Hyrcania_summit": {
+    "d8_m": 7433,
+    "smoothed_m": 6617,
+    "plus_offsets_d8_m": 7883,
+    "straight_m": 2774
+   },
+   "D2|S72_pools": {
+    "d8_m": 3902,
+    "smoothed_m": 3449,
+    "plus_offsets_d8_m": 4169,
+    "straight_m": 511
+   },
+   "D2|S63_reservoir_crevice": {
+    "d8_m": 8309,
+    "smoothed_m": 7437,
+    "plus_offsets_d8_m": 8432,
+    "straight_m": 3133
+   },
+   "D2|S19_Khashna_graves": {
+    "d8_m": 8954,
+    "smoothed_m": 8251,
+    "plus_offsets_d8_m": 9085,
+    "straight_m": 3451
+   },
+   "D2|Qumran_S": {
+    "d8_m": 8726,
+    "smoothed_m": 8089,
+    "plus_offsets_d8_m": 9023,
+    "straight_m": 6463
+   },
+   "D2|Wright_monument": {
+    "d8_m": 7452,
+    "smoothed_m": 6634,
+    "plus_offsets_d8_m": 8123,
+    "straight_m": 3006
+   },
+   "S52_conduit_W|S54_rect_cairn": {
+    "d8_m": 3480,
+    "smoothed_m": 3140,
+    "plus_offsets_d8_m": 3543,
+    "straight_m": 1808
+   },
+   "S52_conduit_W|Wright_tumulus_approx": {
+    "d8_m": 5683,
+    "smoothed_m": 4991,
+    "plus_offsets_d8_m": 5950,
+    "straight_m": 1955
+   },
+   "S52_conduit_W|Hyrcania_summit": {
+    "d8_m": 6501,
+    "smoothed_m": 5751,
+    "plus_offsets_d8_m": 6870,
+    "straight_m": 2272
+   },
+   "S52_conduit_W|S72_pools": {
+    "d8_m": 2970,
+    "smoothed_m": 2583,
+    "plus_offsets_d8_m": 3156,
+    "straight_m": 566
+   },
+   "S52_conduit_W|S63_reservoir_crevice": {
+    "d8_m": 7378,
+    "smoothed_m": 6571,
+    "plus_offsets_d8_m": 7419,
+    "straight_m": 2627
+   },
+   "S52_conduit_W|S19_Khashna_graves": {
+    "d8_m": 9257,
+    "smoothed_m": 8518,
+    "plus_offsets_d8_m": 9307,
+    "straight_m": 3838
+   },
+   "S52_conduit_W|Qumran_S": {
+    "d8_m": 9030,
+    "smoothed_m": 8356,
+    "plus_offsets_d8_m": 9245,
+    "straight_m": 6972
+   },
+   "S52_conduit_W|Wright_monument": {
+    "d8_m": 6521,
+    "smoothed_m": 5768,
+    "plus_offsets_d8_m": 7111,
+    "straight_m": 2506
+   },
+   "S54_rect_cairn|Wright_tumulus_approx": {
+    "d8_m": 6394,
+    "smoothed_m": 5762,
+    "plus_offsets_d8_m": 6708,
+    "straight_m": 3720
+   },
+   "S54_rect_cairn|Hyrcania_summit": {
+    "d8_m": 7213,
+    "smoothed_m": 6522,
+    "plus_offsets_d8_m": 7628,
+    "straight_m": 4071
+   },
+   "S54_rect_cairn|S72_pools": {
+    "d8_m": 3682,
+    "smoothed_m": 3355,
+    "plus_offsets_d8_m": 3914,
+    "straight_m": 1600
+   },
+   "S54_rect_cairn|S63_reservoir_crevice": {
+    "d8_m": 8089,
+    "smoothed_m": 7342,
+    "plus_offsets_d8_m": 8177,
+    "straight_m": 4419
+   },
+   "S54_rect_cairn|S19_Khashna_graves": {
+    "d8_m": 7312,
+    "smoothed_m": 6780,
+    "plus_offsets_d8_m": 7408,
+    "straight_m": 2563
+   },
+   "S54_rect_cairn|Qumran_S": {
+    "d8_m": 7084,
+    "smoothed_m": 6618,
+    "plus_offsets_d8_m": 7346,
+    "straight_m": 5165
+   },
+   "S54_rect_cairn|Wright_monument": {
+    "d8_m": 7232,
+    "smoothed_m": 6539,
+    "plus_offsets_d8_m": 7868,
+    "straight_m": 4301
+   },
+   "Wright_tumulus_approx|Hyrcania_summit": {
+    "d8_m": 818,
+    "smoothed_m": 747,
+    "plus_offsets_d8_m": 1438,
+    "straight_m": 476
+   },
+   "Wright_tumulus_approx|S72_pools": {
+    "d8_m": 3480,
+    "smoothed_m": 3071,
+    "plus_offsets_d8_m": 3917,
+    "straight_m": 2154
+   },
+   "Wright_tumulus_approx|S63_reservoir_crevice": {
+    "d8_m": 1695,
+    "smoothed_m": 1567,
+    "plus_offsets_d8_m": 1987,
+    "straight_m": 1249
+   },
+   "Wright_tumulus_approx|S19_Khashna_graves": {
+    "d8_m": 12172,
+    "smoothed_m": 11140,
+    "plus_offsets_d8_m": 12472,
+    "straight_m": 5733
+   },
+   "Wright_tumulus_approx|Qumran_S": {
+    "d8_m": 11944,
+    "smoothed_m": 10978,
+    "plus_offsets_d8_m": 12409,
+    "straight_m": 8849
+   },
+   "Wright_tumulus_approx|Wright_monument": {
+    "d8_m": 838,
+    "smoothed_m": 764,
+    "plus_offsets_d8_m": 1678,
+    "straight_m": 638
+   },
+   "Hyrcania_summit|S72_pools": {
+    "d8_m": 4299,
+    "smoothed_m": 3832,
+    "plus_offsets_d8_m": 4837,
+    "straight_m": 2544
+   },
+   "Hyrcania_summit|S63_reservoir_crevice": {
+    "d8_m": 876,
+    "smoothed_m": 806,
+    "plus_offsets_d8_m": 1271,
+    "straight_m": 812
+   },
+   "Hyrcania_summit|S19_Khashna_graves": {
+    "d8_m": 12990,
+    "smoothed_m": 11901,
+    "plus_offsets_d8_m": 13392,
+    "straight_m": 5951
+   },
+   "Hyrcania_summit|Qumran_S": {
+    "d8_m": 12762,
+    "smoothed_m": 11739,
+    "plus_offsets_d8_m": 13330,
+    "straight_m": 9224
+   },
+   "Hyrcania_summit|Wright_monument": {
+    "d8_m": 20,
+    "smoothed_m": 20,
+    "plus_offsets_d8_m": 962,
+    "straight_m": 241
+   },
+   "S72_pools|S63_reservoir_crevice": {
+    "d8_m": 5175,
+    "smoothed_m": 4651,
+    "plus_offsets_d8_m": 5386,
+    "straight_m": 3021
+   },
+   "S72_pools|S19_Khashna_graves": {
+    "d8_m": 9459,
+    "smoothed_m": 8733,
+    "plus_offsets_d8_m": 9678,
+    "straight_m": 3923
+   },
+   "S72_pools|Qumran_S": {
+    "d8_m": 9231,
+    "smoothed_m": 8571,
+    "plus_offsets_d8_m": 9616,
+    "straight_m": 6696
+   },
+   "S72_pools|Wright_monument": {
+    "d8_m": 4319,
+    "smoothed_m": 3849,
+    "plus_offsets_d8_m": 5078,
+    "straight_m": 2763
+   },
+   "S63_reservoir_crevice|S19_Khashna_graves": {
+    "d8_m": 13866,
+    "smoothed_m": 12720,
+    "plus_offsets_d8_m": 13941,
+    "straight_m": 6006
+   },
+   "S63_reservoir_crevice|Qumran_S": {
+    "d8_m": 13639,
+    "smoothed_m": 12558,
+    "plus_offsets_d8_m": 13879,
+    "straight_m": 9577
+   },
+   "S63_reservoir_crevice|Wright_monument": {
+    "d8_m": 857,
+    "smoothed_m": 787,
+    "plus_offsets_d8_m": 1472,
+    "straight_m": 836
+   },
+   "S19_Khashna_graves|Qumran_S": {
+    "d8_m": 6058,
+    "smoothed_m": 5662,
+    "plus_offsets_d8_m": 6306,
+    "straight_m": 4459
+   },
+   "S19_Khashna_graves|Wright_monument": {
+    "d8_m": 13010,
+    "smoothed_m": 11917,
+    "plus_offsets_d8_m": 13633,
+    "straight_m": 6192
+   },
+   "Qumran_S|Wright_monument": {
+    "d8_m": 12782,
+    "smoothed_m": 11756,
+    "plus_offsets_d8_m": 13570,
+    "straight_m": 9450
+   }
+  }
+ }
+}

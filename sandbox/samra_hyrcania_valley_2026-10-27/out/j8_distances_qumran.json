@@ -1,0 +1,164 @@
+{
+ "model": {
+  "offsets": {
+   "Qumran_aqueduct_start": {
+    "offset_m": 3933
+   },
+   "Qumran_cemetery_W_polygon": {
+    "offset_m": 4283
+   },
+   "L71": {
+    "offset_m": 4220
+   },
+   "S19_Khashna_graves": {
+    "offset_m": 2466
+   },
+   "Qumran_S": {
+    "offset_m": 4230
+   }
+  },
+  "pairs": {
+   "Qumran_aqueduct_start|Qumran_cemetery_W_polygon": {
+    "d8_m": 0,
+    "smoothed_m": 0,
+    "plus_offsets_d8_m": 8216,
+    "straight_m": 442
+   },
+   "Qumran_aqueduct_start|L71": {
+    "d8_m": 0,
+    "smoothed_m": 0,
+    "plus_offsets_d8_m": 8153,
+    "straight_m": 372
+   },
+   "Qumran_aqueduct_start|S19_Khashna_graves": {
+    "d8_m": 2330,
+    "smoothed_m": 2078,
+    "plus_offsets_d8_m": 8729,
+    "straight_m": 4129
+   },
+   "Qumran_aqueduct_start|Qumran_S": {
+    "d8_m": 0,
+    "smoothed_m": 0,
+    "plus_offsets_d8_m": 8163,
+    "straight_m": 347
+   },
+   "Qumran_cemetery_W_polygon|L71": {
+    "d8_m": 0,
+    "smoothed_m": 0,
+    "plus_offsets_d8_m": 8503,
+    "straight_m": 71
+   },
+   "Qumran_cemetery_W_polygon|S19_Khashna_graves": {
+    "d8_m": 2330,
+    "smoothed_m": 2078,
+    "plus_offsets_d8_m": 9079,
+    "straight_m": 4562
+   },
+   "Qumran_cemetery_W_polygon|Qumran_S": {
+    "d8_m": 0,
+    "smoothed_m": 0,
+    "plus_offsets_d8_m": 8513,
+    "straight_m": 104
+   },
+   "L71|S19_Khashna_graves": {
+    "d8_m": 2330,
+    "smoothed_m": 2078,
+    "plus_offsets_d8_m": 9015,
+    "straight_m": 4494
+   },
+   "L71|Qumran_S": {
+    "d8_m": 0,
+    "smoothed_m": 0,
+    "plus_offsets_d8_m": 8450,
+    "straight_m": 52
+   },
+   "S19_Khashna_graves|Qumran_S": {
+    "d8_m": 2330,
+    "smoothed_m": 2078,
+    "plus_offsets_d8_m": 9026,
+    "straight_m": 4459
+   }
+  }
+ },
+ "controlQ": {
+  "offsets": {
+   "Qumran_aqueduct_start": {
+    "offset_m": 24
+   },
+   "Qumran_cemetery_W_polygon": {
+    "offset_m": 248
+   },
+   "L71": {
+    "offset_m": 187
+   },
+   "S19_Khashna_graves": {
+    "offset_m": 41
+   },
+   "Qumran_S": {
+    "offset_m": 207
+   }
+  },
+  "pairs": {
+   "Qumran_aqueduct_start|Qumran_cemetery_W_polygon": {
+    "d8_m": 296,
+    "smoothed_m": 267,
+    "plus_offsets_d8_m": 569,
+    "straight_m": 442
+   },
+   "Qumran_aqueduct_start|L71": {
+    "d8_m": 265,
+    "smoothed_m": 237,
+    "plus_offsets_d8_m": 476,
+    "straight_m": 372
+   },
+   "Qumran_aqueduct_start|S19_Khashna_graves": {
+    "d8_m": 5805,
+    "smoothed_m": 5423,
+    "plus_offsets_d8_m": 5870,
+    "straight_m": 4129
+   },
+   "Qumran_aqueduct_start|Qumran_S": {
+    "d8_m": 253,
+    "smoothed_m": 226,
+    "plus_offsets_d8_m": 485,
+    "straight_m": 347
+   },
+   "Qumran_cemetery_W_polygon|L71": {
+    "d8_m": 31,
+    "smoothed_m": 31,
+    "plus_offsets_d8_m": 466,
+    "straight_m": 71
+   },
+   "Qumran_cemetery_W_polygon|S19_Khashna_graves": {
+    "d8_m": 6101,
+    "smoothed_m": 5704,
+    "plus_offsets_d8_m": 6390,
+    "straight_m": 4562
+   },
+   "Qumran_cemetery_W_polygon|Qumran_S": {
+    "d8_m": 43,
+    "smoothed_m": 43,
+    "plus_offsets_d8_m": 498,
+    "straight_m": 104
+   },
+   "L71|S19_Khashna_graves": {
+    "d8_m": 6070,
+    "smoothed_m": 5674,
+    "plus_offsets_d8_m": 6298,
+    "straight_m": 4494
+   },
+   "L71|Qumran_S": {
+    "d8_m": 11,
+    "smoothed_m": 11,
+    "plus_offsets_d8_m": 405,
+    "straight_m": 52
+   },
+   "S19_Khashna_graves|Qumran_S": {
+    "d8_m": 6058,
+    "smoothed_m": 5662,
+    "plus_offsets_d8_m": 6306,
+    "straight_m": 4459
+   }
+  }
+ }
+}
