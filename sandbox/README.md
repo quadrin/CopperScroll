@@ -43,7 +43,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | chain_l5658_2026-10-27 | Follow the chain from L56/58 to entries 21, 23 (Ephesus method) | entries 20–23 | **done 27 Oct: holds weakly; breaks on the strict C1 reading** ([RESULT](chain_l5658_2026-10-27/RESULT.md)) |
 | copy_search_2026-10-27 | The scroll's "copy" survives among small Qumran fragments (formula signature) | entry 60 | rule fixed 27 Oct |
 | field_names_2026-10-27 | Lost names survive as 1940s Arabic field names | 40 names + landmark words | rule fixed 27 Oct |
-| middot_temple_2026-10-27 | Temple-area entries fit Mishnah Middot's layout | entries 3–14 | rule fixed 27 Oct |
+| middot_temple_2026-10-27 | Temple-area entries fit Mishnah Middot's layout | entries 3–14 | **done 27 Oct: not supported (strict); lenient fit repeats Allegro** ([RESULT](middot_temple_2026-10-27/RESULT.md)) |
 | amount_gravity_2026-10-27 | Bigger caches lie nearer Jerusalem | entries with sums | **done 27 Oct: underpowered; sign reversed** ([RESULT](amount_gravity_2026-10-27/RESULT.md)) |
 | reverse_lookup_2026-10-27 | Well-documented sites, looked up against all entries | all entries | rule fixed 27 Oct |
 

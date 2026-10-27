@@ -1,0 +1,1504 @@
+{
+ "best_any_edition": {
+  "readings": {
+   "r5_stair_noun": true,
+   "r6_salt": true,
+   "r7_wash": true,
+   "r13_salt": true,
+   "r29_kidron": true,
+   "r3_struct": false
+  },
+  "per_entry": {
+   "3": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 10,
+    "n_fail": 70
+   },
+   "5": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M06",
+     "M32",
+     "M39",
+     "M43",
+     "M48",
+     "M53",
+     "M59",
+     "M68"
+    ],
+    "n_unknown": 0,
+    "n_fail": 72
+   },
+   "6": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 10,
+    "n_fail": 69
+   },
+   "7": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M67"
+    ],
+    "n_unknown": 28,
+    "n_fail": 51
+   },
+   "8": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M36"
+    ],
+    "n_unknown": 9,
+    "n_fail": 70
+   },
+   "9": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M14",
+     "M25"
+    ],
+    "n_unknown": 4,
+    "n_fail": 74
+   },
+   "10": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M33"
+    ],
+    "n_unknown": 5,
+    "n_fail": 74
+   },
+   "12": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "12a": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "13": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 1,
+    "n_fail": 78
+   },
+   "14": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 0,
+    "n_fail": 79
+   },
+   "20": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "21": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 4,
+    "n_fail": 76
+   },
+   "22": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "23": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "24": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "25": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "26": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "27": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "28": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "29": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M46"
+    ],
+    "n_unknown": 1,
+    "n_fail": 78
+   },
+   "30": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   }
+  },
+  "temple_strict_pass": 0,
+  "control_strict_pass": 0,
+  "temple_lenient_pass": 8,
+  "control_lenient_pass": 1,
+  "fisher_one_sided_p_lenient": 0.0058,
+  "temple_joint_literal": [
+   6,
+   {
+    "5": "M06",
+    "6": "M65",
+    "7": "M67",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "temple_joint_shared": [
+   7,
+   {
+    "5": "M06",
+    "7": "M67",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33",
+    "13": "M65",
+    "14": "M65"
+   }
+  ],
+  "control_joint_literal": [
+   1,
+   {
+    "29": "M46"
+   }
+  ]
+ },
+ "text_shown": {
+  "readings": {
+   "r5_stair_noun": false,
+   "r6_salt": true,
+   "r7_wash": true,
+   "r13_salt": true,
+   "r29_kidron": false,
+   "r3_struct": false
+  },
+  "per_entry": {
+   "3": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 10,
+    "n_fail": 70
+   },
+   "5": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 8,
+    "n_fail": 72
+   },
+   "6": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 10,
+    "n_fail": 69
+   },
+   "7": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M67"
+    ],
+    "n_unknown": 28,
+    "n_fail": 51
+   },
+   "8": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M36"
+    ],
+    "n_unknown": 9,
+    "n_fail": 70
+   },
+   "9": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M14",
+     "M25"
+    ],
+    "n_unknown": 4,
+    "n_fail": 74
+   },
+   "10": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M33"
+    ],
+    "n_unknown": 5,
+    "n_fail": 74
+   },
+   "12": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "12a": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "13": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 1,
+    "n_fail": 78
+   },
+   "14": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 0,
+    "n_fail": 79
+   },
+   "20": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "21": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 4,
+    "n_fail": 76
+   },
+   "22": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "23": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "24": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "25": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "26": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "27": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "28": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "29": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "30": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   }
+  },
+  "temple_strict_pass": 0,
+  "control_strict_pass": 0,
+  "temple_lenient_pass": 7,
+  "control_lenient_pass": 0,
+  "fisher_one_sided_p_lenient": 0.00284,
+  "temple_joint_literal": [
+   5,
+   {
+    "6": "M65",
+    "7": "M67",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "temple_joint_shared": [
+   6,
+   {
+    "7": "M67",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33",
+    "13": "M65",
+    "14": "M65"
+   }
+  ],
+  "control_joint_literal": [
+   0,
+   null
+  ]
+ },
+ "puech_2006_2015": {
+  "readings": {
+   "r5_stair_noun": true,
+   "r6_salt": true,
+   "r7_wash": false,
+   "r13_salt": false,
+   "r29_kidron": false,
+   "r3_struct": false
+  },
+  "per_entry": {
+   "3": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 10,
+    "n_fail": 70
+   },
+   "5": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M06",
+     "M32",
+     "M39",
+     "M43",
+     "M48",
+     "M53",
+     "M59",
+     "M68"
+    ],
+    "n_unknown": 0,
+    "n_fail": 72
+   },
+   "6": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 10,
+    "n_fail": 69
+   },
+   "7": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "8": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M36"
+    ],
+    "n_unknown": 9,
+    "n_fail": 70
+   },
+   "9": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M14",
+     "M25"
+    ],
+    "n_unknown": 4,
+    "n_fail": 74
+   },
+   "10": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M33"
+    ],
+    "n_unknown": 5,
+    "n_fail": 74
+   },
+   "12": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "12a": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "13": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "14": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "20": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "21": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 4,
+    "n_fail": 76
+   },
+   "22": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "23": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "24": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "25": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "26": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "27": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "28": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "29": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "30": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   }
+  },
+  "temple_strict_pass": 0,
+  "control_strict_pass": 0,
+  "temple_lenient_pass": 5,
+  "control_lenient_pass": 0,
+  "fisher_one_sided_p_lenient": 0.0227,
+  "temple_joint_literal": [
+   5,
+   {
+    "5": "M06",
+    "6": "M65",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "temple_joint_shared": [
+   5,
+   {
+    "5": "M06",
+    "6": "M65",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "control_joint_literal": [
+   0,
+   null
+  ]
+ },
+ "milik_1962": {
+  "readings": {
+   "r5_stair_noun": false,
+   "r6_salt": false,
+   "r7_wash": false,
+   "r13_salt": false,
+   "r29_kidron": false,
+   "r3_struct": false
+  },
+  "per_entry": {
+   "3": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 10,
+    "n_fail": 70
+   },
+   "5": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 8,
+    "n_fail": 72
+   },
+   "6": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "7": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "8": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M36"
+    ],
+    "n_unknown": 9,
+    "n_fail": 70
+   },
+   "9": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M14",
+     "M25"
+    ],
+    "n_unknown": 4,
+    "n_fail": 74
+   },
+   "10": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M33"
+    ],
+    "n_unknown": 5,
+    "n_fail": 74
+   },
+   "12": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "12a": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "13": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "14": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "20": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "21": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 4,
+    "n_fail": 76
+   },
+   "22": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "23": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "24": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "25": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "26": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "27": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "28": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "29": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "30": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   }
+  },
+  "temple_strict_pass": 0,
+  "control_strict_pass": 0,
+  "temple_lenient_pass": 3,
+  "control_lenient_pass": 0,
+  "fisher_one_sided_p_lenient": 0.12406,
+  "temple_joint_literal": [
+   3,
+   {
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "temple_joint_shared": [
+   3,
+   {
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "control_joint_literal": [
+   0,
+   null
+  ]
+ },
+ "lefkovits_2000": {
+  "readings": {
+   "r5_stair_noun": false,
+   "r6_salt": true,
+   "r7_wash": false,
+   "r13_salt": false,
+   "r29_kidron": false,
+   "r3_struct": false
+  },
+  "per_entry": {
+   "3": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 10,
+    "n_fail": 70
+   },
+   "5": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 8,
+    "n_fail": 72
+   },
+   "6": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 10,
+    "n_fail": 69
+   },
+   "7": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "8": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M36"
+    ],
+    "n_unknown": 9,
+    "n_fail": 70
+   },
+   "9": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M14",
+     "M25"
+    ],
+    "n_unknown": 4,
+    "n_fail": 74
+   },
+   "10": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M33"
+    ],
+    "n_unknown": 5,
+    "n_fail": 74
+   },
+   "12": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "12a": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "13": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "14": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "20": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "21": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 4,
+    "n_fail": 76
+   },
+   "22": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "23": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "24": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "25": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "26": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "27": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "28": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "29": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "30": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   }
+  },
+  "temple_strict_pass": 0,
+  "control_strict_pass": 0,
+  "temple_lenient_pass": 4,
+  "control_lenient_pass": 0,
+  "fisher_one_sided_p_lenient": 0.05514,
+  "temple_joint_literal": [
+   4,
+   {
+    "6": "M65",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "temple_joint_shared": [
+   4,
+   {
+    "6": "M65",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "control_joint_literal": [
+   0,
+   null
+  ]
+ },
+ "best+struct_dev": {
+  "readings": {
+   "r5_stair_noun": true,
+   "r6_salt": true,
+   "r7_wash": true,
+   "r13_salt": true,
+   "r29_kidron": true,
+   "r3_struct": true
+  },
+  "per_entry": {
+   "3": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M44"
+    ],
+    "n_unknown": 9,
+    "n_fail": 70
+   },
+   "5": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M06",
+     "M32",
+     "M39",
+     "M43",
+     "M48",
+     "M53",
+     "M59",
+     "M68"
+    ],
+    "n_unknown": 0,
+    "n_fail": 72
+   },
+   "6": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 10,
+    "n_fail": 69
+   },
+   "7": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M67"
+    ],
+    "n_unknown": 28,
+    "n_fail": 51
+   },
+   "8": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M36"
+    ],
+    "n_unknown": 9,
+    "n_fail": 70
+   },
+   "9": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M14",
+     "M25"
+    ],
+    "n_unknown": 4,
+    "n_fail": 74
+   },
+   "10": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M33"
+    ],
+    "n_unknown": 5,
+    "n_fail": 74
+   },
+   "12": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "12a": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "13": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 1,
+    "n_fail": 78
+   },
+   "14": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 0,
+    "n_fail": 79
+   },
+   "20": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "21": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 4,
+    "n_fail": 76
+   },
+   "22": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "23": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "24": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "25": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "26": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "27": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "28": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "29": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M46"
+    ],
+    "n_unknown": 1,
+    "n_fail": 78
+   },
+   "30": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   }
+  },
+  "temple_strict_pass": 0,
+  "control_strict_pass": 0,
+  "temple_lenient_pass": 9,
+  "control_lenient_pass": 1,
+  "fisher_one_sided_p_lenient": 0.00159,
+  "temple_joint_literal": [
+   7,
+   {
+    "3": "M44",
+    "5": "M06",
+    "6": "M65",
+    "7": "M67",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "temple_joint_shared": [
+   8,
+   {
+    "3": "M44",
+    "5": "M06",
+    "7": "M67",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33",
+    "13": "M65",
+    "14": "M65"
+   }
+  ],
+  "control_joint_literal": [
+   1,
+   {
+    "29": "M46"
+   }
+  ]
+ },
+ "best_no_eshel": {
+  "readings": {
+   "r5_stair_noun": true,
+   "r6_salt": true,
+   "r7_wash": true,
+   "r13_salt": true,
+   "r29_kidron": false,
+   "r3_struct": false
+  },
+  "per_entry": {
+   "3": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 10,
+    "n_fail": 70
+   },
+   "5": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M06",
+     "M32",
+     "M39",
+     "M43",
+     "M48",
+     "M53",
+     "M59",
+     "M68"
+    ],
+    "n_unknown": 0,
+    "n_fail": 72
+   },
+   "6": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 10,
+    "n_fail": 69
+   },
+   "7": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M67"
+    ],
+    "n_unknown": 28,
+    "n_fail": 51
+   },
+   "8": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M36"
+    ],
+    "n_unknown": 9,
+    "n_fail": 70
+   },
+   "9": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M14",
+     "M25"
+    ],
+    "n_unknown": 4,
+    "n_fail": 74
+   },
+   "10": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M33"
+    ],
+    "n_unknown": 5,
+    "n_fail": 74
+   },
+   "12": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "12a": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 11,
+    "n_fail": 69
+   },
+   "13": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 1,
+    "n_fail": 78
+   },
+   "14": {
+    "strict": "unknown",
+    "lenient": "pass",
+    "lenient_pass_features": [
+     "M65"
+    ],
+    "n_unknown": 0,
+    "n_fail": 79
+   },
+   "20": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "21": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 4,
+    "n_fail": 76
+   },
+   "22": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 1,
+    "n_fail": 79
+   },
+   "23": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "24": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "25": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "26": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "27": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   },
+   "28": {
+    "strict": "fail",
+    "lenient": "fail",
+    "lenient_pass_features": [],
+    "n_unknown": 0,
+    "n_fail": 80
+   },
+   "29": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 2,
+    "n_fail": 78
+   },
+   "30": {
+    "strict": "unknown",
+    "lenient": "unknown",
+    "lenient_pass_features": [],
+    "n_unknown": 29,
+    "n_fail": 51
+   }
+  },
+  "temple_strict_pass": 0,
+  "control_strict_pass": 0,
+  "temple_lenient_pass": 8,
+  "control_lenient_pass": 0,
+  "fisher_one_sided_p_lenient": 0.00081,
+  "temple_joint_literal": [
+   6,
+   {
+    "5": "M06",
+    "6": "M65",
+    "7": "M67",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33"
+   }
+  ],
+  "temple_joint_shared": [
+   7,
+   {
+    "5": "M06",
+    "7": "M67",
+    "8": "M36",
+    "9": "M14",
+    "10": "M33",
+    "13": "M65",
+    "14": "M65"
+   }
+  ],
+  "control_joint_literal": [
+   0,
+   null
+  ]
+ }
+}

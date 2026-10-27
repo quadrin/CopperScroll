@@ -1,0 +1,174 @@
+{
+  "run": "middot_temple_2026-10-27",
+  "step": 1,
+  "written_before": "step 2 (Middot gazetteer). No Middot/Tamid/Shekalim text fetched or opened in this run before this file was hashed.",
+  "exposure_note": "The agent knows the general content of m. Middot from training, and text/readings.json already cites Middot parallels (Hoegenhaven, Milik). This is not a blind test.",
+  "sources": "Hebrew: data/scroll-text.js (ETCBC dss 2.0.1). English: text/translation_en.json. Variants: text/readings.json (all edition readings recorded there).",
+  "unit_list": {
+    "temple_candidates": ["3", "5", "6", "7", "8", "9", "10", "12", "12a", "13", "14"],
+    "temple_candidates_note": "RULE.md list: places.csv jer_temple 3,5,7,8,12,12a,13,14; jer_east_gate 9,10; plus 6,13,14 (ha-Melah = Millo). Union = 11 entries. Entries 4 and 11 (Kohlit) are inside 'entries 3-14' of the README row but are not in the rule's list; they are excluded (literal reading of RULE.md).",
+    "control_primary": ["20", "21", "22", "23", "24", "25", "26", "27", "28", "29"],
+    "control_extra": ["30"],
+    "control_note": "Rule: '10 entries from the Jericho/desert block (entries 20-30)'. 20-30 is 11 entries; the primary control is the first ten (20-29); entry 30 is scored and reported separately (deviation)."
+  },
+  "scoring_rule_fixed_now": {
+    "anchor_and_object": "Each entry has an OBJECT (the hiding place: cistern, pit, cave, chamber, tomb, court-corner) and usually an ANCHOR (the named landmark: court of X, East Gate, wall, ha-Melah, house of X). A Middot feature is scored as the anchor if the entry has one, else as the object.",
+    "type_agree": "The Middot feature is of the same kind as the entry's anchor (or object) word: court ~ hatser/azarah; cistern ~ bor; chamber ~ lishkah/tsariah-like room; gate ~ shaar/pishpesh; wall ~ homah/kotel; stair ~ mesibbah/maalot; tomb ~ qever. If the anchor is NAMED (peristyle, Mattiyah/wood, MDH, Manos, Melah, the lost court name), type_agree additionally needs the Middot name to share the root/word, or an alias attested in a source; a different name with no attested alias = unknown (not fail).",
+    "relation_values": "Each positional relation of the entry is: AGREE (Middot/Tamid/Shekalim states the same relation for that feature), SILENT (the text gives nothing on it) or CONTRADICT (the text gives a position or structure that excludes it).",
+    "strict_pass": "type agrees AND every positional relation AGREEs.",
+    "lenient_pass": "type agrees AND no relation CONTRADICTs (SILENT allowed).",
+    "fail": "type incompatible (feature is of a kind the entry's anchor/object word cannot denote), or any relation CONTRADICTs.",
+    "unknown": "everything else (e.g. type agrees on kind but the anchor name has no attested correspondence; or the type cannot be judged because the entry's key word is unread/unresolved).",
+    "joint_fit": "An assignment of entries to Middot features, each entry passing (strict and lenient reported separately), with all inter-entry relations satisfied (same-anchor pairs on the same feature; stated directions between entries consistent with Middot's layout). Literal: features distinct. Deviation branch: entries whose text forces the same anchor (12/12a same court; 13/14 the same ha-Melah) may share that feature.",
+    "decision": "Supported if a joint fit exists for >=5 Temple entries with no fail AND control entries achieve clearly fewer passes (reported as counts; 'clearly' taken as at least 3 fewer passing entries out of 10, and a one-sided Fisher exact p reported)."
+  },
+  "entries": {
+    "3": {
+      "lines": "I 6-8",
+      "hebrew": "בבור הגדול שבחצר הפרסטלין בור בקרקעו סתום בחליא נגד הפתח העליון",
+      "object": "great cistern (בור הגדול); a cistern/pit in its floor (בור בקרקעו)",
+      "anchor": "court of the peristyle (חצר הפרסטלין; Puech/Lefkovits הפרסטלון)",
+      "relations": [
+        "R3.1 great cistern IS IN the court of the peristyle",
+        "R3.2 cache in the cistern's floor",
+        "R3.3 closed/sealed with חליא (sense unclear: sand/sediment, Puech 2002; 'circular wall', Lefkovits p. 64) - not positional relative to Middot",
+        "R3.4 opposite (נגד) the upper opening (הפתח העליון): the cistern has an upper opening (and by implication another, lower one)"
+      ],
+      "variants": "Milik 1962: Temple area, 'little peristyle' = popular name of the inner court's wall (DJD pp. 272-274); Puech 2006 p. 175: perhaps Valley of Achor (queried).",
+      "unresolved_words": ["חליא"]
+    },
+    "5": {
+      "lines": "I 13-15",
+      "hebrew": "בשיא המעבא של מנס בירד אל סמל גבה מן הקרקע אמות שלוש",
+      "object": "שיא: pit (translation) or tower (Lefkovits 2000 'In the tower')",
+      "anchor": "המעבא 'foundry' (Milik 1962) / 'mine' (Milik 1960) OR המסבא 'spiral staircase' (Puech 2006, 2015; Lefkovits 2000; Hoegenhaven 2020 cites m. Middot 4:5) of מנס (Manos: personal name, or 'refuge')",
+      "relations": [
+        "R5.1 the pit/tower belongs to the foundry/staircase of Manos",
+        "R5.2 'going down (בירד) to the left (אל סמל)': a descent, turning or lying to the left",
+        "R5.3 three cubits up from the floor"
+      ],
+      "variants": "samekh (staircase) vs ayin (foundry/mine); Manos name vs noun.",
+      "unresolved_words": ["שיא", "מנס"]
+    },
+    "6": {
+      "lines": "II 1-2",
+      "hebrew": "בבור המלח שתחת המעלות",
+      "object": "cistern (בור)",
+      "anchor": "המלח: salt (Puech 2015; Lefkovits), or ha-Melah = Millo/Esplanade (atlas branch); 'the steps' (המעלות)",
+      "relations": [
+        "R6.1 the cistern is 'of ha-Melah' (belongs to/named after it)",
+        "R6.2 the cistern is UNDER the steps (תחת המעלות)"
+      ],
+      "variants": "salt pit (Puech 2015 pp. 38-39; Lefkovits pp. 103-104) vs Millo; Lefkovits apparatus: furnace, burial niche, named pit.",
+      "unresolved_words": ["המלח"]
+    },
+    "7": {
+      "lines": "II 3-4",
+      "hebrew": "במערת בית המדח הישן ברובד השלישי",
+      "object": "cave (מערה)",
+      "anchor": "the OLD house of MDH: המדח (text shown), המדה 'tribute' (Puech 2006, 2015), המרה (Milik 1962), Mareh (Milik 1960), חמדה 'Hemdah' (Lefkovits 2000), 'washer's house' (Hoegenhaven 2020 p. 57)",
+      "relations": [
+        "R7.1 the cave belongs to / is in the old House of MDH",
+        "R7.2 cache on the third רובד (course/ledge/terrace/pavement; Schiffman: stepped courses)"
+      ],
+      "variants": "four letter-sets, 36 combinations (Lefkovits p. 110).",
+      "unresolved_words": ["המדח", "רובד (sense)"],
+      "rule_text_check": "RULE.md describes entry 7 as 'the old house of tribute (?), the chain'. No word for 'chain' occurs in entry 7 in the Hebrew shown or in any reading in readings.json; recorded as an unresolved discrepancy in the rule's gloss, not as a relation."
+    },
+    "8": {
+      "lines": "II 5-6",
+      "hebrew": "בצריח שבחצר מתיה עצין וכתבן בור בו",
+      "object": "underground chamber (צריח; atlas: chamber or tower) with a cistern in it",
+      "anchor": "court of מתיה עצין: Mattiyah (personal name; Puech 2002) + 'wood', or emended 'court of the wood stores' (Puech 2006 text; Milik 1962 cites m. Middot; Hoegenhaven 2020 cites m. Middot 2:6)",
+      "relations": [
+        "R8.1 the chamber IS IN the court",
+        "R8.2 the court is associated with wood (עצין)",
+        "R8.3 a cistern IS IN the chamber"
+      ],
+      "unresolved_words": ["מתיה"]
+    },
+    "9": {
+      "lines": "II 7-9",
+      "hebrew": "בבור שנגד השער המזרחי רחוק אמות תשע עסרא ... ובמזקא שבו",
+      "object": "cistern; its channel (מזקא)",
+      "anchor": "the East Gate (השער המזרחי)",
+      "relations": [
+        "R9.1 the cistern is opposite (נגד) the East Gate",
+        "R9.2 at 19 cubits (text, Lefkovits) or 15 cubits (Puech) from it",
+        "R9.3 the cistern has a channel (or the channel is a separate place: Milik)"
+      ],
+      "unresolved_words": ["מזקא (Allegro/Luria במוקא)"]
+    },
+    "10": {
+      "lines": "II 10-12",
+      "hebrew": "בבור שתחת החומא מן המזרח בשן הסלע ... ביאתו תחת הסף הגדול",
+      "object": "cistern",
+      "anchor": "the wall/rampart (החומא): city wall (Lefkovits p. 130; Milik east rampart) or Temple enclosure wall",
+      "relations": [
+        "R10.1 the cistern is UNDER the wall",
+        "R10.2 on/from the east (מן המזרח)",
+        "R10.3 in the spur of the rock (שן הסלע)",
+        "R10.4 its entrance is under the great threshold (הסף הגדול): a gate/doorway with a great threshold in or by the wall"
+      ],
+      "unresolved_words": ["ביאתו (entrance vs entering)"]
+    },
+    "12": {
+      "lines": "III 1-4",
+      "hebrew": "בחצר ◦◦◦ תחת הפנא הדרומית חפר אמות תשע",
+      "object": "under a corner of a court",
+      "anchor": "court of ◦◦◦ (name lost: Puech δίαιτα 'tribunal(?)'; Lefkovits 'Nebat'; Milik: the peribolos)",
+      "relations": [
+        "R12.1 under the SOUTH corner (הפנא הדרומית) of the court",
+        "R12.2 dig nine cubits"
+      ],
+      "unresolved_words": ["court name ◦◦◦"]
+    },
+    "12a": {
+      "lines": "III 5-7",
+      "hebrew": "תחת הפנא האחרת המזרחית חפר אמות שש עסרה",
+      "object": "under a corner of the same court as 12",
+      "anchor": "same court as entry 12",
+      "relations": [
+        "R12a.1 under the OTHER corner, the EASTERN one, of the same court",
+        "R12a.2 dig sixteen cubits",
+        "J12-12a: the court has a corner called 'south' and another called 'east' (wording implies, INFERENCE, a court whose corners point to cardinal directions, or corners named by the side they lie on)"
+      ]
+    },
+    "13": {
+      "lines": "III 8-10",
+      "hebrew": "בשית שבמלחמ בצפונו ... ביאתא תחת הפנא המערבית",
+      "object": "pit (שית)",
+      "anchor": "ha-Melah (שבמלחמ / שבמלה / שבמלח): Millo/Esplanade (Milik 1962; Puech 2006), 'embankment' (Puech 2015 pp. 44, 46), salt (Puech 2002), a place Melah",
+      "relations": [
+        "R13.1 the pit IS IN ha-Melah",
+        "R13.2 on its north side (בצפונו)",
+        "R13.3 its entrance is under the WESTERN corner (הפנא המערבית)"
+      ],
+      "unresolved_words": ["מלחמ/מלה/מלח"]
+    },
+    "14": {
+      "lines": "III 11-13",
+      "hebrew": "בקבר שבמלחמ ממזרחו בצפנו אמות תחת המת חפר שלוש",
+      "object": "tomb (קבר)",
+      "anchor": "ha-Melah (same word as 13)",
+      "relations": [
+        "R14.1 the tomb IS IN ha-Melah",
+        "R14.2 on its east side, on its north side (NE)",
+        "R14.3 under the slab (Milik DJD; Puech 2006) / the dead (text; Lefkovits) / the trap (Puech 2015); dig three"
+      ],
+      "joint": "J13-14: 13 and 14 name the same ha-Melah; 14 requires a TOMB inside it.",
+      "unresolved_words": ["המת/מדף"]
+    },
+    "20": {"lines": "IV 13-14", "hebrew": "ביגר של גי הסככא", "object": "cairn/tumulus (Milik, Puech) or dam (Lurie, Eshel)", "anchor": "valley of Secacah", "relations": ["R20.1 cairn/dam IS IN the valley of Secacah", "R20.2 dig a cubit"]},
+    "21": {"lines": "V 1-4", "hebrew": "ברוש אמת המים של גי הסככא מן הצפון תחת האבן הגדולא", "object": "head of the water conduit", "anchor": "(valley of) Secacah", "relations": ["R21.1 at the head of the water conduit of/leading to/west of Secacah", "R21.2 from/on the north", "R21.3 under the great [stone]", "R21.4 dig [three] cubits"]},
+    "22": {"lines": "V 5-7", "hebrew": "בסדק שבסככא מזרח אשיח שלומו", "object": "fissure (סדק)", "anchor": "Secacah; Solomon's reservoir (אשיח/אשוח שלומו)", "relations": ["R22.1 the fissure IS IN Secacah", "R22.2 EAST of Solomon's reservoir"]},
+    "23": {"lines": "V 8-11", "hebrew": "מעל החריץ של שלומו עד הרגם הגדול אמות ששין", "object": "a stretch from a trench to a great heap/boulder", "anchor": "trench (חריץ) of Solomon/Shallum; great heap (הרגם; Puech הרגב boulder)", "relations": ["R23.1 from the trench as far as the great heap: 60 cubits", "R23.2 dig three cubits"]},
+    "24": {"lines": "V 12-14", "hebrew": "בקבר שבנחל הכפא בביאה מירחו לסככא", "object": "tomb", "anchor": "wadi of the Kippa (vault/rock/cavern)", "relations": ["R24.1 the tomb IS IN the wadi of the Kippa", "R24.2 on the way from Jericho to Secacah", "R24.3 dig seven cubits"]},
+    "25": {"lines": "VI 1-6", "hebrew": "במערת העמוד של שני הפתחין הצופא מזרח בפתח הצפוני", "object": "cave of the pillar with two entrances", "anchor": "none named", "relations": ["R25.1 the cave has a pillar and two entrances", "R25.2 facing east (cave or entrances)", "R25.3 at the northern entrance; dig three cubits"]},
+    "26": {"lines": "VI 7-10", "hebrew": "במערא של הפנא של הרגם הצופא למזרח חפר בפתח", "object": "cave", "anchor": "the corner (הפנא) of the heap of stones / boulder (הרגם/הרגב)", "relations": ["R26.1 cave of the corner of the heap", "R26.2 facing east", "R26.3 dig at the entrance nine cubits"]},
+    "27": {"lines": "VI 11-13", "hebrew": "במשכן המלכא בצד המערבי", "object": "the Queen's mishkan (tomb/mausoleum or dwelling)", "anchor": "the Queen", "relations": ["R27.1 on the west side", "R27.2 dig twelve cubits"]},
+    "28": {"lines": "VI 14 - VII 2", "hebrew": "ביגר שבמגזת הכוהן הגדול", "object": "cairn (or dam)", "anchor": "ford (Milik, Puech) or bridge (Allegro, Lefkovits) of the High Priest", "relations": ["R28.1 the cairn IS AT the ford/bridge of the High Priest", "R28.2 dig [... ] nine cubits"]},
+    "29": {"lines": "VII 3-7", "hebrew": "באמא של קי◦ ... האשיח הצפוני הגדול בארבע רוחות", "object": "conduit", "anchor": "Qi◦ (collection of waters / Kidron / Kypros); the great northern reservoir", "relations": ["R29.1 in the conduit of Qi◦", "R29.2 [...] the great northern reservoir", "R29.3 on its four sides, measure 24 cubits"]},
+    "30": {"lines": "VII 8-10", "hebrew": "במערא שאצל המקרא של בית הקץ", "object": "cave", "anchor": "the cool room (המקרא; Puech) / vicinity (Milik) of the House of Haqqots (priestly family; or 'summer house')", "relations": ["R30.1 the cave is NEXT TO the cool room of the House of Haqqots", "R30.2 dig six cubits"]}
+  }
+}

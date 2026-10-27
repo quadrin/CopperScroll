@@ -1,0 +1,826 @@
+{
+ "features": [
+  {
+   "id": "M01",
+   "he": "בית אבטינס",
+   "en": "Bet Avtinas (priests' watch)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:1; Tam 1:1",
+   "position": "not stated (upper storey, Tam 1:1)"
+  },
+  {
+   "id": "M02",
+   "he": "בית הניצוץ / שער הניצוץ",
+   "en": "Chamber/Gate of the Spark",
+   "kinds": [
+    "gate",
+    "chamber"
+   ],
+   "refs": "Mid 1:1, 1:5; Tam 1:1",
+   "position": "north side of the Azarah, first of 3 northern gates; exedra-like, upper chamber, door to the Hel"
+  },
+  {
+   "id": "M03",
+   "he": "בית המוקד",
+   "en": "Bet ha-Moqed (Fire chamber)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:1, 1:5-1:9; Tam 1:1-1:3",
+   "position": "north side of the Azarah (third northern gate); vaulted (כפה), large house surrounded by stone ledges (מוקף רובדין של אבן); half holy, half profane; gates to Hel and Azarah"
+  },
+  {
+   "id": "M04a",
+   "he": "לשכת טלאי קרבן",
+   "en": "Chamber of sacrificial lambs (in Bet ha-Moqed)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:6",
+   "position": "SW of Bet ha-Moqed (Tam 3:3: NW corner)"
+  },
+  {
+   "id": "M04b",
+   "he": "לשכת עושי לחם הפנים",
+   "en": "Chamber of the showbread makers (Bet ha-Moqed)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:6",
+   "position": "SE of Bet ha-Moqed"
+  },
+  {
+   "id": "M04c",
+   "he": "(גנזו בני חשמונאי את אבני המזבח)",
+   "en": "Chamber where the Hasmoneans stored (גנזו) the defiled altar stones",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:6",
+   "position": "NE of Bet ha-Moqed"
+  },
+  {
+   "id": "M04d",
+   "he": "(בה יורדים לבית הטבילה)",
+   "en": "Chamber from which one goes down to the immersion house",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:6",
+   "position": "NW of Bet ha-Moqed"
+  },
+  {
+   "id": "T01",
+   "he": "לשכת החותמות",
+   "en": "Chamber of the Seals",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Tam 3:3",
+   "position": "in the Bet ha-Moqed complex (Tam 3:3 gives the lambs' chamber at the NW corner; Seals' corner not stated in the Hebrew)"
+  },
+  {
+   "id": "M05",
+   "he": "מקום אמה על אמה, טבלא של שיש, טבעת, שלשלת",
+   "en": "Place 1x1 cubit with marble slab, ring and chain (keys)",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 1:9; Tam 1:3",
+   "position": "in Bet ha-Moqed floor"
+  },
+  {
+   "id": "M06",
+   "he": "המסבה ההולכת תחת הבירה",
+   "en": "Winding passage under the Birah (R. Eliezer b. Jacob: under the Hel, exit by Tadi)",
+   "kinds": [
+    "stair"
+   ],
+   "refs": "Mid 1:9 (1:6 יורדים); Tam 1:1",
+   "position": "from Bet ha-Moqed going down to Bet ha-Tevilah; lamps both sides"
+  },
+  {
+   "id": "M07",
+   "he": "בית הטבילה",
+   "en": "Immersion house",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:6, 1:9; Tam 1:1",
+   "position": "reached by descent from Bet ha-Moqed (NW chamber)"
+  },
+  {
+   "id": "M08",
+   "he": "לשכת הקרבן",
+   "en": "Chamber of the offering",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:1",
+   "position": "not stated"
+  },
+  {
+   "id": "M09",
+   "he": "לשכת הפרכת",
+   "en": "Chamber of the curtain",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:1",
+   "position": "not stated"
+  },
+  {
+   "id": "M10",
+   "he": "אחורי בית הכפרת",
+   "en": "Behind the kapporet",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 1:1, 5:1",
+   "position": "west end, 11 cubits behind"
+  },
+  {
+   "id": "M11",
+   "he": "שני שערי חלדה",
+   "en": "Two Huldah gates",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 1:3",
+   "position": "south"
+  },
+  {
+   "id": "M12",
+   "he": "קיפונוס",
+   "en": "Kiponos gate",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 1:3",
+   "position": "west"
+  },
+  {
+   "id": "M13",
+   "he": "טדי",
+   "en": "Tadi gate",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 1:3, 1:9, 2:3",
+   "position": "north; unused; two inclined stones"
+  },
+  {
+   "id": "M14",
+   "he": "שער המזרחי",
+   "en": "Eastern gate of the Temple Mount (Shushan picture)",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 1:3",
+   "position": "east; red-heifer priest goes out to the Mount of Olives"
+  },
+  {
+   "id": "M15",
+   "he": "ארבע פנותיו (הר הבית) מתוכו",
+   "en": "Four inner corners of the Temple Mount",
+   "kinds": [
+    "corner"
+   ],
+   "refs": "Mid 1:1",
+   "position": "corners"
+  },
+  {
+   "id": "M16",
+   "he": "ארבע פנותיה (העזרה) מבחוץ",
+   "en": "Four outer corners of the Azarah",
+   "kinds": [
+    "corner"
+   ],
+   "refs": "Mid 1:1",
+   "position": "corners"
+  },
+  {
+   "id": "M17",
+   "he": "שער הדלק",
+   "en": "Gate of Kindling",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 1:4; 2:6",
+   "position": "south"
+  },
+  {
+   "id": "M18",
+   "he": "שער הבכורות",
+   "en": "Gate of the Firstborn",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 1:4; 2:6",
+   "position": "south"
+  },
+  {
+   "id": "M19",
+   "he": "שער המים",
+   "en": "Water Gate (water wells up; future flow from under the threshold of the House)",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 1:4; 2:6",
+   "position": "south"
+  },
+  {
+   "id": "M20",
+   "he": "שער העליון",
+   "en": "Upper Gate",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 2:6",
+   "position": "south, westmost"
+  },
+  {
+   "id": "M21",
+   "he": "שער הקרבן",
+   "en": "Gate of the Offering",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 1:5; 2:6",
+   "position": "north"
+  },
+  {
+   "id": "M22",
+   "he": "שער יכניה",
+   "en": "Gate of Jeconiah",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 2:6",
+   "position": "north, westmost"
+  },
+  {
+   "id": "M23",
+   "he": "שער הנשים",
+   "en": "Women's Gate",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 2:6",
+   "position": "north"
+  },
+  {
+   "id": "M24",
+   "he": "שער השיר",
+   "en": "Gate of Song",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 2:6",
+   "position": "north"
+  },
+  {
+   "id": "M25",
+   "he": "שער נקנור (= שער המזרח, Tam 5:6)",
+   "en": "Nicanor Gate, east gate of the Azarah",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 1:4, 2:3, 2:6; Tam 5:6",
+   "position": "east; two chambers right and left (1:4), two wickets (2:6)"
+  },
+  {
+   "id": "M26",
+   "he": "לשכת פנחס המלביש",
+   "en": "Chamber of Pinhas the dresser",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:4",
+   "position": "beside Nicanor gate"
+  },
+  {
+   "id": "M27",
+   "he": "לשכת עושי חבתין",
+   "en": "Chamber of the griddle-cake makers",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 1:4; Tam 1:3",
+   "position": "beside Nicanor gate"
+  },
+  {
+   "id": "M28",
+   "he": "שנים במערב",
+   "en": "Two unnamed western gates",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 2:6",
+   "position": "west"
+  },
+  {
+   "id": "M29",
+   "he": "הר הבית",
+   "en": "Temple Mount (500x500; largest part south)",
+   "kinds": [
+    "court"
+   ],
+   "refs": "Mid 2:1",
+   "position": "whole enclosure"
+  },
+  {
+   "id": "M30",
+   "he": "סורג",
+   "en": "Soreg (10 handbreadths, 13 breaches)",
+   "kinds": [
+    "wall"
+   ],
+   "refs": "Mid 2:3",
+   "position": "inside the Mount"
+  },
+  {
+   "id": "M31",
+   "he": "חיל",
+   "en": "Hel (10 cubits)",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 2:3",
+   "position": "inside the Soreg"
+  },
+  {
+   "id": "M32",
+   "he": "שתים עשרה מעלות (חיל)",
+   "en": "Twelve steps of the Hel",
+   "kinds": [
+    "stair"
+   ],
+   "refs": "Mid 2:3",
+   "position": ""
+  },
+  {
+   "id": "M33",
+   "he": "כותל המזרחי",
+   "en": "Eastern wall (low)",
+   "kinds": [
+    "wall"
+   ],
+   "refs": "Mid 2:4",
+   "position": "east"
+  },
+  {
+   "id": "M34",
+   "he": "עזרת הנשים",
+   "en": "Court of Women (135x135)",
+   "kinds": [
+    "court"
+   ],
+   "refs": "Mid 2:5",
+   "position": "east of the Court of Israel"
+  },
+  {
+   "id": "M35",
+   "he": "לשכת הנזירים",
+   "en": "Nazirites' chamber ('court in the corner', Ezek 46:21-22)",
+   "kinds": [
+    "chamber",
+    "court"
+   ],
+   "refs": "Mid 2:5",
+   "position": "SE corner of the Court of Women, 40x40, unroofed"
+  },
+  {
+   "id": "M36",
+   "he": "לשכת העצים",
+   "en": "Wood chamber ('court in the corner')",
+   "kinds": [
+    "chamber",
+    "court"
+   ],
+   "refs": "Mid 2:5",
+   "position": "NE corner of the Court of Women, 40x40, unroofed"
+  },
+  {
+   "id": "M37",
+   "he": "לשכת מצרעים",
+   "en": "Lepers' chamber ('court in the corner')",
+   "kinds": [
+    "chamber",
+    "court"
+   ],
+   "refs": "Mid 2:5",
+   "position": "NW corner of the Court of Women"
+  },
+  {
+   "id": "M38",
+   "he": "לשכת בית שמניה",
+   "en": "Oil chamber ('court in the corner')",
+   "kinds": [
+    "chamber",
+    "court"
+   ],
+   "refs": "Mid 2:5",
+   "position": "SW corner of the Court of Women"
+  },
+  {
+   "id": "M39",
+   "he": "חמש עשרה מעלות",
+   "en": "Fifteen semicircular steps up to the Court of Israel",
+   "kinds": [
+    "stair"
+   ],
+   "refs": "Mid 2:5",
+   "position": "west side of the Court of Women"
+  },
+  {
+   "id": "M40",
+   "he": "לשכות תחת עזרת ישראל",
+   "en": "Chambers under the Court of Israel opening to the Court of Women (instruments)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 2:6",
+   "position": "under the Court of Israel, opening east"
+  },
+  {
+   "id": "M41",
+   "he": "עזרת ישראל",
+   "en": "Court of Israel (135x11)",
+   "kinds": [
+    "court"
+   ],
+   "refs": "Mid 2:6, 5:1",
+   "position": ""
+  },
+  {
+   "id": "M42",
+   "he": "עזרת כהנים",
+   "en": "Court of the Priests (135x11)",
+   "kinds": [
+    "court"
+   ],
+   "refs": "Mid 2:6, 5:1",
+   "position": ""
+  },
+  {
+   "id": "M43",
+   "he": "דוכן (מעלה ושלש מעלות)",
+   "en": "Platform with 1-cubit step and three half-cubit steps",
+   "kinds": [
+    "stair"
+   ],
+   "refs": "Mid 2:6",
+   "position": "between Courts of Israel and Priests"
+  },
+  {
+   "id": "M44",
+   "he": "העזרה",
+   "en": "Azarah, whole court (187x135); exedra around it (Tam 1:3)",
+   "kinds": [
+    "court"
+   ],
+   "refs": "Mid 2:6, 5:1-2; Tam 1:3",
+   "position": ""
+  },
+  {
+   "id": "M45",
+   "he": "המזבח",
+   "en": "Altar (32x32)",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 3:1",
+   "position": ""
+  },
+  {
+   "id": "M46",
+   "he": "שני נקבים ... האמה ... לנחל קדרון",
+   "en": "Two holes at the SW horn; the channel (אמה) out to the Kidron",
+   "kinds": [
+    "channel"
+   ],
+   "refs": "Mid 3:2",
+   "position": "SW corner of the altar"
+  },
+  {
+   "id": "M47",
+   "he": "השית (טבלא של שיש וטבעת)",
+   "en": "The pit (שית), entered by a 1x1-cubit marble slab with a ring in the floor",
+   "kinds": [
+    "pit"
+   ],
+   "refs": "Mid 3:3",
+   "position": "below, in the pavement at the SW corner of the altar"
+  },
+  {
+   "id": "M48",
+   "he": "כבש",
+   "en": "Ramp (32x16), window (רבובה) on its west",
+   "kinds": [
+    "stair"
+   ],
+   "refs": "Mid 3:3",
+   "position": "south of the altar"
+  },
+  {
+   "id": "M49",
+   "he": "בקעת בית כרם",
+   "en": "Valley of Bet Kerem (altar stones)",
+   "kinds": [
+    "valley"
+   ],
+   "refs": "Mid 3:4",
+   "position": "outside"
+  },
+  {
+   "id": "M50",
+   "he": "טבעות",
+   "en": "Rings",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 3:5; 5:2",
+   "position": "north of the altar"
+  },
+  {
+   "id": "M51",
+   "he": "בית המטבחים, עמודים ננסין, שלחנות של שיש",
+   "en": "Slaughterhouse, dwarf pillars, marble tables",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 3:5; Shek 6:4",
+   "position": "north of the altar"
+  },
+  {
+   "id": "M52",
+   "he": "כיור",
+   "en": "Laver",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 3:6",
+   "position": "between porch and altar, toward the south"
+  },
+  {
+   "id": "M53",
+   "he": "שתים עשרה מעלות ... ורבד",
+   "en": "Twelve steps between porch and altar, with three landings (רבד)",
+   "kinds": [
+    "stair"
+   ],
+   "refs": "Mid 3:6",
+   "position": "between porch and altar"
+  },
+  {
+   "id": "M54",
+   "he": "פתחו של אולם",
+   "en": "Porch doorway (40x20), ash beams, stone courses",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 3:7",
+   "position": ""
+  },
+  {
+   "id": "M55",
+   "he": "שרשרות של זהב, גפן של זהב",
+   "en": "Gold chains in the porch roof; golden vine",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 3:8",
+   "position": ""
+  },
+  {
+   "id": "M56",
+   "he": "פתחו של היכל",
+   "en": "Hekhal doorway (20x10), four doors",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 4:1",
+   "position": ""
+  },
+  {
+   "id": "M57",
+   "he": "שני פשפשין לשער הגדול",
+   "en": "Great gate's two wickets (north used, south never)",
+   "kinds": [
+    "gate"
+   ],
+   "refs": "Mid 4:2; Tam 3:7",
+   "position": "north and south of the great gate"
+  },
+  {
+   "id": "M58",
+   "he": "שלשים ושמונה תאים",
+   "en": "38 cells (15 N, 15 S, 8 W, three storeys)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 4:3-4:4",
+   "position": "around the Hekhal"
+  },
+  {
+   "id": "M59",
+   "he": "מסבה (בהיכל)",
+   "en": "Winding stair of the Hekhal, NE to NW corner, up to the cell roofs",
+   "kinds": [
+    "stair"
+   ],
+   "refs": "Mid 4:3, 4:5",
+   "position": "north side, NE to NW"
+  },
+  {
+   "id": "M60",
+   "he": "עליה",
+   "en": "Upper chamber (door to the south; trapdoors)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 4:5",
+   "position": ""
+  },
+  {
+   "id": "M61",
+   "he": "היכל",
+   "en": "Hekhal (100x100x100)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 4:6-4:7",
+   "position": ""
+  },
+  {
+   "id": "M62",
+   "he": "בית החליפות",
+   "en": "House of the knives (porch wings)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 4:7",
+   "position": "15 cubits N and S of the Hekhal"
+  },
+  {
+   "id": "M63",
+   "he": "בית הורדת המים",
+   "en": "Place of the water descent (3 cubits)",
+   "kinds": [
+    "channel"
+   ],
+   "refs": "Mid 4:7",
+   "position": "south side of the Hekhal"
+  },
+  {
+   "id": "M64",
+   "he": "בית קדש הקדשים",
+   "en": "Holy of Holies",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 4:7",
+   "position": "west"
+  },
+  {
+   "id": "M65",
+   "he": "לשכת המלח",
+   "en": "Salt chamber",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 5:3",
+   "position": "north side of the Azarah"
+  },
+  {
+   "id": "M66",
+   "he": "לשכת הפרוה (בית הפרוה)",
+   "en": "Parvah chamber; high priest's immersion house on its roof",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 5:3",
+   "position": "north side of the Azarah"
+  },
+  {
+   "id": "M67",
+   "he": "לשכת המדיחין",
+   "en": "Rinsers' (washers') chamber",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 5:3",
+   "position": "north side of the Azarah"
+  },
+  {
+   "id": "M68",
+   "he": "מסבה (מלשכת המדיחין לגג בית הפרוה)",
+   "en": "Winding stair from the Rinsers' chamber up to the Parvah roof",
+   "kinds": [
+    "stair"
+   ],
+   "refs": "Mid 5:3",
+   "position": "north side"
+  },
+  {
+   "id": "M69",
+   "he": "לשכת העץ",
+   "en": "Wood chamber (Abba Shaul: high priest's chamber), roofed with the other two",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 5:4",
+   "position": "south side of the Azarah, behind the other two"
+  },
+  {
+   "id": "M70",
+   "he": "לשכת הגולה",
+   "en": "Chamber of the Golah",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 5:4",
+   "position": "south side of the Azarah"
+  },
+  {
+   "id": "M71",
+   "he": "בור קבוע (בלשכת הגולה) והגלגל",
+   "en": "Fixed cistern with wheel, supplying the whole Azarah",
+   "kinds": [
+    "cistern"
+   ],
+   "refs": "Mid 5:4",
+   "position": "in the Golah chamber, south side"
+  },
+  {
+   "id": "M72",
+   "he": "לשכת הגזית",
+   "en": "Chamber of hewn stone (Great Sanhedrin)",
+   "kinds": [
+    "chamber"
+   ],
+   "refs": "Mid 5:4",
+   "position": "south side of the Azarah"
+  },
+  {
+   "id": "M73",
+   "he": "הר המשחה",
+   "en": "Mount of Olives",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 1:3, 2:4",
+   "position": "outside, east"
+  },
+  {
+   "id": "M74",
+   "he": "נחל קדרון",
+   "en": "Kidron wadi",
+   "kinds": [
+    "valley"
+   ],
+   "refs": "Mid 3:2",
+   "position": "outside"
+  },
+  {
+   "id": "M75",
+   "he": "בירה",
+   "en": "Birah",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Mid 1:9",
+   "position": "the mesibbah passes under it"
+  },
+  {
+   "id": "S01",
+   "he": "שלחנות (שיש וכסף) במערב הכבש; (שיש וזהב) באולם",
+   "en": "Tables west of the ramp; tables in the porch",
+   "kinds": [
+    "other"
+   ],
+   "refs": "Shek 6:4",
+   "position": "west of the ramp; in the porch"
+  }
+ ],
+ "excluded": [
+  {
+   "ref": "Shek 5:6",
+   "he": "לשכת חשאים / לשכת הכלים",
+   "why": "no position stated"
+  },
+  {
+   "ref": "Shek 6:1-2",
+   "he": "דיר העצים (Ark hidden under a flagstone)",
+   "why": "no position stated in Shekalim (only 'facing the wood store')"
+  },
+  {
+   "ref": "Mid 1:3",
+   "he": "שושן הבירה",
+   "why": "a picture on the eastern gate, not a place (attribute of M14)"
+  }
+ ]
+}
