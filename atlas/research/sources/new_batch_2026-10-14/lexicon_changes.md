@@ -1,0 +1,20 @@
+# Sokoloff dictionary: scope and reading checkpoint
+
+14 October 2026. Michael Sokoloff, *A Dictionary of Jewish Palestinian Aramaic of the Byzantine Period*, first published 1990, second printing 1992 (copyright leaf, viewer2). The supplied file contains415 two-page spreads, ending at printed823. It has no text layer. Viewer-page and printed-page units must remain separate. The first and last inspected leaves establish the endpoints, not uninterrupted physical-publication completeness.
+
+All 415 supplied spreads have now received native reading of available readable text, including the dictionary, indexes and addenda. Viewer393/printed778–779 retains erased or degraded strokes; character-complete coverage is false. The continuation receipts below replace the initial partial checkpoint. Rendering alone receives no reading credit.
+
+## What this adds to the existing lexicon
+
+- **Source-scope qualification.** Printed3–4/viewer5–6 defines a principally Byzantine Jewish Palestinian Aramaic corpus, with later materials. Its sources include inscriptions, literary texts and documentary materials with different dates. A gloss cannot by itself establish the Copper Scroll's first-century usage, a construction date or a place identification. This qualifies the broad recommendation to use Aramaic in the [existing landmark summary](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/phases/phase2_summary.md#21-the-vocabulary-is-post-biblical); it does not replace the edition-specific readings.
+- **Exclusion is a lexicographic rule.** Printed5–6/viewer6–7 excludes Aramaic loanwords embedded in Hebrew texts and excludes personal/geographical names. Therefore an absent headword or place-name search cannot establish ancient absence. Printed4 separately warns that earlier dictionaries' missing references can reflect their collection practices. No absence test or name-location claim was run here.
+- **Trace a sense to its witness.** Printed6–7/viewer7 distinguishes normalized headwords, manuscript spellings, attested vocalizations, glosses and the semantic section's contextual citations. Printed19–28/viewer13–18 supplies source abbreviations and manuscript routes. These allow future lexical comparisons to cite a particular witness and context instead of treating several dictionaries as independent attestations.
+- **Comparative example, not a new landmark reading.** Printed34/viewer21 lists a Greek-derived aqueduct/watercourse/canal term with contextual citations. Its existence illustrates why a Greek loanword alone cannot locate a document in one city. No Copper Scroll lemma is equated with this headword in this pass.
+
+These are new direct-source scope controls. The dictionary does not contribute an independently observed archaeological installation. The [coverage record](lexicon_coverage.json) preserves the image-only access limit and exact reading and legibility limits. Source images and provenance are retained privately; source copyright remains with its holders.
+
+## Completed continuation
+
+All supplied viewer spreads have now been inspected. The [first dictionary section](lexicon_a_changes.md) and [remaining entries and indexes](lexicon_b_changes.md) distinguish lexical alternatives and repeated underlying citations. Viewer393/printed778–779 retains erased or degraded index strokes; completion applies to available readable text. Reading an index does not establish inspection of its cited manuscripts.
+
+**Legibility refinement, printed778–779/viewer393:** inspection of the original4252×2992 one-bit embedded image, a3x render and separate column crops makes most primary index rows readable. The remaining uncertainty is localized to the damaged headword at MoʿedQatan80c(46), principally its middle letters on p778. No strokes were restored and no complete diplomatic recovery is claimed. The [additional receipt](continuation_visual_coverage.json) preserves this scope; a clearer source is still needed for that headword.

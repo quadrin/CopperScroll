@@ -1,0 +1,11 @@
+# Abel II safe native visual inventory
+
+The remaining safe layouts were inspected in sixteen-leaf contact sheets, with each page rendered at 250px width after independent text/context preflight. Each supplied viewer leaf is accounted for in `reference_visual_33_coverage.json` as a new safe layout audit, an inherited native inspection, or an exact withheld exception. Contact sheets establish layout inventory only; they do not credit detailed prose or figure reading.
+
+No map, plan, archaeological photograph or manuscript facsimile was found in the inspected safe sequence. The preliminary chronology table at viewer11, **Tableau des ages archeologiques**, was then inspected separately at the PDF foreground image resolution and retained privately. It presents Abel's historical periodization, not a new archaeological observation or a current dating framework. Institutional graphics at viewers2–3 are library/digitization paratext.
+
+Map explanations at printed491–492/viewers503–504 and the table at viewer551 describe regional historical maps I–X. No corresponding sheet was found among the audited safe layouts or inherited native checks. Terminal viewers552–556 have inherited native checks establishing blank/library leaves. The maps remain absent/unlocated in this supplied copy. Strict whole-PDF visual absence is not certified because viewers348–349/printed336–337 (Gilgal by old Jericho and Ain es-Sultan) and viewers370–372/printed358–360 (Jericho, including Tell es-Sultan excavations) remain withheld: no independent retained layout classification excludes an unknown fine local plan. The earlier bounded text review349–351 is retained; it does not itself establish349's native layout or absence of prior exposure.
+
+Printed74–75 remain physically missing. Viewer86/88 repeat printed76, and viewer87/89 repeat printed77; these established copy defects are preserved. No source0 inventory facsimile, protected Copper Scroll image or fine Tell es-Sultan north-strip image was opened by this pass. Native source images and full modern text remain private.
+
+**Partly** — completed the safe native layout inventory and inspected the newly encountered chronology table; five precise visual exceptions and the absent/unlocated regional map sheets remain.

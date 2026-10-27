@@ -292,3 +292,15 @@ Last session (13 October UTC / 12 October Los Angeles): **partly** — [original
 Last session (14 October UTC / 13 October Los Angeles): **partly obtained** — [new-source changes and page-specific coverage](sources/new_batch_2026-10-13/README.md): the proposed northern second entrance to 11Q is corrected, primary concealment contexts and hydraulic comparisons added, and incomplete/mislabeled copies documented.
 
 Last session (14 October 2026 UTC): **partly** — completed the [available-source full-reading pass](sources/new_batch_2026-10-13/README.md), reconciled native figure/table archives and source/copy limits, and added the precise 1952 ÉBAF 3Q-plan retrieval lead to R02; missing originals and illegible details remain.
+
+
+
+## Last-session line superseded on15October2026UTC
+
+The following line retains its original ACTIVE_TEST-relative link as historical text.
+
+```text
+Last session (14 October2026 UTC): **partly** — checked new Drive sources; added Atara partition/conduit observations, exact Frumkin Twin-complex book pages and a separate northern-cave survey reproduction, with source/identity/assay conflicts. [Evidence and inspection limits](sources/late_drive_2026-10-14/README.md).
+```
+
+[Source evidence at its current location](../sources/late_drive_2026-10-14/README.md).

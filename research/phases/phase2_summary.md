@@ -56,6 +56,8 @@ Non-place terms, by where the meaning is attested (as checked; see the lexicon f
 
 (Inference, high confidence) The scroll's technical vocabulary for installations and tombs is that of the Mishnah and of Aramaic, not of the Bible. So Mishnaic and Aramaic usage is the right guide to what a word describes. Biblical usage is a guide mainly for the place names. (Milik's DJD section B, on the language, was not read in this session.)
 
+**Source-scope qualification, 14 October 2026.** Sokoloff's *Dictionary of Jewish Palestinian Aramaic of the Byzantine Period* defines a principally third-century-CE-and-later corpus and excludes personal/geographical names and Aramaic loanwords embedded in Hebrew texts (introduction pp3–7). Its contextual citations can supply comparative senses, but a gloss alone cannot establish the scroll's earlier usage or date. Missing headwords are constrained by the dictionary's inclusion rules. [Direct source scope and exact partial reading](../sources/new_batch_2026-10-14/lexicon_changes.md).
+
 ### 2.2 How secure the meanings are
 
 - **High confidence: 47 terms.** Examples: cistern, wadi, tomb, steps, corner, cubit.

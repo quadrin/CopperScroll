@@ -41,3 +41,32 @@ This materially narrows the search beyond Gnazim fonds717: **Riklin / 1992 / L-5
 Next intake: an original licence/file index confirming the cave, then a measured survey with labelled mouths, scale, north convention, ancient northern-threshold section/level, wall contacts and stratigraphic dates. The sourcebook cites Bar-Adon1989:5*;15–17 and lists pottery/glass, but contains none of that missing geometry or stratigraphy. Fig.B1 stays unscaled; TC-01–TC-08 and candidate confidence remain unchanged.
 
 Access: [publisher/distributor PDF](https://www.emekshaveh.org/he/wp-content/uploads/2013/09/WBADB_sourcebook.pdf) downloaded and printed110/PDF114 was visually checked, including entry707's shared-licence warning. SHA-256 `449b419f6acbcc105b85d90fad8462a41a17e5617821fa51c99902ed7cec2204`. The supplied [Drive copy](https://drive.google.com/file/d/1BxReg6GjJ4gtRoub0aQQb3YoHR-4Bzxu/view) raw download returned403 and the failure was shared immediately; readable text remained available. The inspected page contains no plan, section or figure. Reuse permission remains unestablished, so the source stays link-only. Zero new archaeological targets, candidate checks, map intakes, decisive tests or closures. No new correspondence, document-delivery request, order or fee.
+
+
+## New supplied routes — 14 October2026 UTC
+
+The [late Drive source audit](../../sources/late_drive_2026-10-14/cave_routes.md) verifies WBADB Excavations row716/Index715 and License List row562 for Riklin/L-528/1992-0; these repeat the2009 sourcebook observation. The Frumkin2015 preview contents names the Twin complex at printed212; the next entry starts216. Obtain printed212–215 plus every associated plan/section/caption and prove correspondence to this cave before geometry reuse. The supplied preview omits that entry.
+
+The reproduced VJRI1995 metre-scale Qetorit Cave plan at2026p119 belongs to the separate northern spice-cave claim, with hypothetical communication to the twin openings. [Source comparison](../../sources/late_drive_2026-10-14/jones_reports.md) preserves the survey/ancient-mouth/phase gaps. A plan of the nearby northern cave does not satisfy the requested measured Twin mouths or northern-threshold record.
+
+
+
+## Original atlas survey obtained — 15 October 2026 UTC / Los Angeles
+
+The user-supplied Davidovich–Frumkin 2015 extract now supplies printed 212–215, including Malham's 2011 scaled plan, profiles and sections on p. 215. [Original-page findings and provenance](../../sources/late_drive_2026-10-14/twin_2015.md). The atlas explicitly associates its East/West pair with Bar-Adon's Twin Cave and separates a third cave called North. Individual old northern/southern units still require a crosswalk to the atlas mouths/stations; the atlas North label cannot supply it by itself.
+
+P. 212 documents removal of most of approximately 8 m of West's sediment and excavation enlargement of secondary passages. This gives a source-specific reason to recover original floor/threshold levels before applying an ancient-depth model. The modern measured-plan dependency is obtained; the next intake is an identified ancient threshold, wall phase and original survey/level-register tie. The source and all its target imagery are exposed exploratory evidence.
+
+
+## Gnazim reply — 15 October 2026
+
+The owner supplied Amir's reply: Bar-Adon's fonds remain under sorting and are outside the searchable catalogue. The archivist cannot yet locate the requested records; sorting may take a few months. The person sorting the fonds has the query and will report relevant material if it surfaces. No cave-specific item or box is confirmed. Park repeated catalogue searches while that work proceeds; retain the separate licence/field-record routes. [Receipt and implications](../../sources/archive_replies_2026-10-15.md#gnazim-bar-adon-fonds-717).
+
+
+## Unsorted-access follow-up sent — 15 October 2026
+
+The owner offered staff-guided consultation of unsorted Bar-Adon material before cataloguing finishes. The reply asks about provisional lists or folders identified by the sorter, access procedures, appointments, permissions and advance fee information. Gmail SENT status and reply linkage were verified; access and cave-specific holdings await Gnazim's response. [Sent record](../../agent_review_2026-10-07/followup/F_outreach_sent.md#targeted-follow-ups-sent--15-october-2026).
+
+## Historical mouth-name crosswalk — 15 October 2026
+
+The original Bar-Adon description and atlas pair association now support northern cavity → atlas East and southern cavity → atlas West at cavity level. Atlas North is the separate northern cave, probably the VJRI North/Qetorit cave. This narrows the relevant historical northern-threshold retrieval to the East member, subject to an original cave/season/mouth/level join. No historical survey station, ancient elevation or Cave A/B locus label transfers from the name match. [Source crosswalk and exact limits](../../sources/late_drive_2026-10-14/twin_2015.md#historical-name-crosswalk--15-october-2026).

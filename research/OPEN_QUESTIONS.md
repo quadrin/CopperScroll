@@ -91,7 +91,11 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 
 ## R02 — What cave arrangement does entry 25 describe?
 
-12 October applied result: Applied book facts now distinguish cave form from dated usable architecture at IV/17, Twin and XII/53; all ancient threshold/configuration joins remain unknown. [Applied witnesses](feature_workbench/book_application_2026-10-12/README.md).
+15 October UTC / 14 October Los Angeles: the atlas methods now supply the inward-azimuth, coordinate-accuracy and developed-profile conventions needed before reusing a plan. The introductory files add no target-specific threshold; XII/53's period notice inherits Cohen–Israel2002. [Native source and scope](sources/late_drive_2026-10-14/atlas_review.md).
+
+14 October2026 supplied-source result: Frumkin2015 contents locates the Twin complex at printed212–215, absent from the preview. WBADB supplies worksheet-level licence routes; VJRI’s separate northern-cave plan has unresolved Twin/ancient-threshold linkage. English RegionX X/48 versus the prior X/47 note needs edition comparison. [Exact evidence and next records](sources/late_drive_2026-10-14/cave_routes.md).
+
+12 October applied result: Applied book facts now distinguish cave form from dated usable architecture at IV/17, Twin and XII/53; all ancient threshold/configuration joins remain unknown. [Applied witnesses](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/feature_workbench/book_application_2026-10-12/README.md).
 
 - **Priority / status:** P1 / In progress.
 - **Baseline:** Twin Cave near 11Q, Abu Saraj IV/11, Abu Saraj IV/17 and manuscript cave 3Q are separate records. The wording permits a cave-level eastward aspect; requiring both openings to face east is a stricter model. Existing edition comparison and Milik p. 140 recheck apply; original apparatus/manuscript verification remains pending.
@@ -105,6 +109,8 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 - **Regional cave inventory (2026-10-11, exploratory):** 635 recorded caves from Jericho to Naḥal Ḥever were scored against entry 25. At cave level one matches every clause: ʿAtiqot 41 cave XII/53 in Naḥal Qumran, whose east-facing opening is split in two by a built, undated pillar. At the both-mouths level only the Twin Cave matches. 436 caves are unknown on at least one clause. XII/53 was already exposed, so it is a named control for any future test, not a holdout ([cave inventory](https://github.com/quadrin/CopperScroll/blob/main/research/regional/caves_entry25/README.md)).
 
 ## R03 — Which Wadi Qelt wall and outlet could entry 32 describe?
+
+15 October UTC: the newly read Malham Wadi Qelt Cave account describes a natural cave and cupmark without a wall/outlet correspondence. [Exact cave observations and source limits](sources/late_drive_2026-10-14/malham_complete_read.md).
 
 - **Priority / status:** P2 / In progress.
 - **Baseline:** ESI 7–8 printed pp. 92–95 / Figs. 79–80 now directly inspected from the supplied scan. PEF Sheet XVIII supports a west/southwest bridge sector near the monastery. Schneider's inspected illustrations supply nearby context; they leave the target culvert unresolved.
@@ -156,7 +162,9 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 
 ## R07 — Where were Koḥlit, Achor and Sekakah?
 
-12 October applied result: The 12 October Manchester/CBRL replies narrow custody routes without a diagnostic XII10 frame or north-strip observation. [Access evidence](agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026).
+14 October source refinement: the supplied Jericho report specifies PEF photograph/location-sketch collections and UCL negative notebooks, and distinguishes Dalman1925Fig71 from the existing imagery. Northern-ground descriptions are exposed derivative text; PNGs remain withheld pending registration and upstream-exposure audit. [Exact leads and limits](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/sources/perlego_captures_2026-10-14/jericho.md).
+
+12 October applied result: The 12 October Manchester/CBRL replies narrow custody routes without a diagnostic XII10 frame or north-strip observation. [Access evidence](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/agent_review_2026-10-07/followup/F_outreach_sent.md#archive-replies--12-october-2026).
 
 - **Priority / status:** P3 / In progress.
 - **Baseline:** All five map components and the selected gazetteer originals are now readable. TIR p56 adopts AchorVallis/Wadi enNuʿeima; p197 groups Noorath/Neara/Naʿaran atEinDuyuk. These scholarly equations remain distinct from an independently discriminated Scroll landmark. Competing geography and period-specific feature uncertainties remain.
@@ -171,13 +179,15 @@ Peleg's prepared map and the separate JSP 18 pocket sheet remain parked at the u
 - **Evidence / historical questions:** [Michigan map intake](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_umich_map_intake_2026-10-01.md); [Achor/Noorath source trace](https://github.com/quadrin/CopperScroll/blob/main/research/sources/tir_achor_noorath_aqueduct_trace_2026-10-01.md); [Current site assessment](https://github.com/quadrin/CopperScroll/blob/main/research/sites/site_identification_review.md); Q13, Q17, Q42.
 ## R08 — How should directions and measurements be applied?
 
-13 October UTC / 12 October Los Angeles Atara source trace: SWPpp82–83 explicitly labels an outlet; the later Hebrew survey describes a channel leading to the pools. No exact opening crosswalk or dated joint-use section exists in either published entry. The p82 plan belongs to Anata. [Original Atara source trace](feature_workbench/book_application_2026-10-12/README.md#atara-original-source-trace--13-october-utc--12-october-los-angeles).
+15 October UTC: Abel1931's original Atara article is now checked; its p143 well/birkeh is at Shaʿfat, preventing an Atara hydraulic attribution. [Source correction](sources/late_drive_2026-10-14/atara_changes.md#abel1931-original-now-inspected--15-october-utc).
 
-Atara custody follow-up (13 October UTC / 12 October Los Angeles): PEF confirms collection-level SWP custody and its curator access route. Checked uploaded SheetXVII: Attara and Tk. are mapped beside Tell enNasbeh. Exact Atara drawing/shelfmark remain unconfirmed; published map records supply no hydraulic section. The holdings enquiry was sent13OctoberUTC/12OctoberLosAngeles; drawing existence/shelfmark await a reply. [Custody result and enquiry](feature_workbench/book_application_2026-10-12/README.md#atara-drawing-custody--13-october-utc--12-october-los-angeles).
+13 October UTC / 12 October Los Angeles Atara source trace: SWPpp82–83 explicitly labels an outlet; the later Hebrew survey describes a channel leading to the pools. No exact opening crosswalk or dated joint-use section exists in either published entry. The p82 plan belongs to Anata. [Original Atara source trace](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/feature_workbench/book_application_2026-10-12/README.md#atara-original-source-trace--13-october-utc--12-october-los-angeles).
+
+Atara custody follow-up (13 October UTC / 12 October Los Angeles): PEF confirms collection-level SWP custody and its curator access route. Checked uploaded SheetXVII: Attara and Tk. are mapped beside Tell enNasbeh. Exact Atara drawing/shelfmark remain unconfirmed; published map records supply no hydraulic section. The holdings enquiry was sent13OctoberUTC/12OctoberLosAngeles; drawing existence/shelfmark await a reply. [Custody result and enquiry](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/feature_workbench/book_application_2026-10-12/README.md#atara-drawing-custody--13-october-utc--12-october-los-angeles).
 
 13 October native application: Arnona's locus counts apply to exact source groups, while feature depths remain distinct from retrieval depths. Entrance-side and surveyed-bearing models stay separate at Jason's Tomb. The applied records and retained alternatives are under [R09](#r09--which-candidate-layouts-existed-when-the-instructions-were-usable).
 
-12 October applied result: The same-document uncertainty shortcut was corrected: common translation cancels, while scale/differential distortion remain. Entry29’s free-unit 24/27 bands overlap, and unresolved ancient datums block depth comparisons. [Resolution result](feature_workbench/measurement_resolution_2026-10-12/README.md). Rachel Bar-Nathan now reports holding Jericho field notes and requests an owner call; no junction/level record supplied.
+12 October applied result: The same-document uncertainty shortcut was corrected: common translation cancels, while scale/differential distortion remain. Entry29’s free-unit 24/27 bands overlap, and unresolved ancient datums block depth comparisons. [Resolution result](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/feature_workbench/measurement_resolution_2026-10-12/README.md). Rachel Bar-Nathan now reports holding Jericho field notes and requests an owner call; no junction/level record supplied.
 
 - **Priority / status:** P2 / In progress.
 - **Baseline:** bare cubit quantities may denote depth, travel or offset. Hyrcania's tested pool-side model conflicts with the reported dimensions; that check does not test Eshel’s northward-offset model; its regional registration missed the withheld check by about 244 m.
@@ -189,9 +199,9 @@ Atara custody follow-up (13 October UTC / 12 October Los Angeles): PEF confirms 
 
 ## R09 — Which candidate layouts existed when the instructions were usable?
 
-13 October native application: McCown's Ci320 closure precedes the R389/390 colonnade; the reset standing stone cannot establish an ancient gate join. Rahmani separates ten total kokhim, two partly built niches, two burial chambers and distinct court entrances. Arnona's named groups qualify count/phase branches, with interrupted coverage and disabled positions retained. Gibeon's three water installations have distinct source witness IDs; exact lane crosswalks and original use/entrance records remain dependencies. [Native applied witnesses and conditional results](feature_workbench/book_application_2026-10-12/README.md#native-source-application--13-october-2026-utc).
+13 October native application: McCown's Ci320 closure precedes the R389/390 colonnade; the reset standing stone cannot establish an ancient gate join. Rahmani separates ten total kokhim, two partly built niches, two burial chambers and distinct court entrances. Arnona's named groups qualify count/phase branches, with interrupted coverage and disabled positions retained. Gibeon's three water installations have distinct source witness IDs; exact lane crosswalks and original use/entrance records remain dependencies. [Native applied witnesses and conditional results](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/feature_workbench/book_application_2026-10-12/README.md#native-source-application--13-october-2026-utc).
 
-12 October applied result: Atara’s west/east pools and Absalom’s original south/later west accesses are scored as separate physical/phase witnesses. Entry46 now retains pit/pool and distance/depth/ten-small-pits models, with native source map-reference extents distinguished from metre-precise points. [Phase applications](feature_workbench/book_application_2026-10-12/README.md) and [entry46 audit](text/entry46_alternatives_2026-10-12/README.md).
+12 October applied result: Atara’s west/east pools and Absalom’s original south/later west accesses are scored as separate physical/phase witnesses. Entry46 now retains pit/pool and distance/depth/ten-small-pits models, with native source map-reference extents distinguished from metre-precise points. [Phase applications](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/feature_workbench/book_application_2026-10-12/README.md) and [entry46 audit](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/text/entry46_alternatives_2026-10-12/README.md).
 
 - **Priority / status:** P3 / In progress.
 - **Baseline:** the inspected TIR synagogue legend separates Second Temple, Mishnah/Talmud and Samaritan categories. Its Herodion/Jericho/Naʿaran symbol assignments are reference leads requiring original dating evidence. Tombs and waterworks often combine construction and reuse phases. Maresha numbering chains support I.92 = Tomb 515 and I.90 = Tomb 513; I.89 and I.91 remain unresolved.
@@ -215,7 +225,7 @@ Atara custody follow-up (13 October UTC / 12 October Los Angeles): PEF confirms 
 
 ## R11 — What do the Greek letters represent?
 
-12 October applied result: The completed 10 October DDbDP papyri screen remains closed. CIIPII, Jatt’s Porath/Kasher pp47*–51* and untranscribed primary originals remain unread; a bounded coauthor-catalogue check supplied no native inscription pages. [Coverage audit](text/entry46_alternatives_2026-10-12/greek_coverage_audit.json).
+12 October applied result: The completed 10 October DDbDP papyri screen remains closed. CIIPII, Jatt’s Porath/Kasher pp47*–51* and untranscribed primary originals remain unread; a bounded coauthor-catalogue check supplied no native inscription pages. [Coverage audit](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/text/entry46_alternatives_2026-10-12/greek_coverage_audit.json).
 
 - **Priority / status:** P3 / In progress.
 - **Baseline:** several hypotheses have been tested; letter function and their stopping point remain unexplained.
@@ -229,7 +239,7 @@ Atara custody follow-up (13 October UTC / 12 October Los Angeles): PEF confirms 
 
 ## R12 — What kind of inventory was this, and when was it compiled?
 
-12 October applied result: The numbered-label comparison specifies observations distinguishing places, objects/lots, counts, contents measures and retrieval instructions. Herodium’s number roles remain not identifiable, with restorations/dots and hidden-place/hidden-object alternatives preserved; Masada’s explicit log-unit comparator supplies a different discriminator. [Role comparison](comparanda/inventory_forms_2026-10-12/README.md).
+12 October applied result: The numbered-label comparison specifies observations distinguishing places, objects/lots, counts, contents measures and retrieval instructions. Herodium’s number roles remain not identifiable, with restorations/dots and hidden-place/hidden-object alternatives preserved; Masada’s explicit log-unit comparator supplies a different discriminator. [Role comparison](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/comparanda/inventory_forms_2026-10-12/README.md).
 
 - **Priority / status:** P3 / In progress.
 - **Baseline:** edition disagreements over the weight unit materially alter the claimed quantities. Institutional vocabulary and landmark chronology provide possible tests; origin and compilation date remain interpretations.
@@ -494,3 +504,21 @@ The reattached full volume matches the previously archived source hash. The earl
 The attachment matches the archived408-page source. Original Chapter2 pp.50–69 is now visually inspected; Plan13 is present inline at p.52, correcting its earlier missing classification. A(C)94 has a found northern-wall pipe; its upstream tie, AC44 supply/overflow and A(C)90 phase/coverage retain gaps. Four additional basin notices bring the provisional roster to28 records, with eligibility denominator unknown. Plans14/15/23 remain unrecovered as unfolded drawings; rear407 captures Plan11/15 labels. One new chapter scope/check brings activity to54/5/61. Broad thumbnail exposure remains exploratory; outcome ledger, question states, confidence and coordinates unchanged. [Original findings and exact access scope](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/netzer2001-first-pass.md#reattached-volume-i-and-inline-plan-13--3-october-2026-utc).
 
 - **5 October2026 — columnII transfer review:** acquired replica layout places Greek groups across the apparent seam from the cut5 loss chain, making cut6 the stronger exploratory target. Original Greek parent strokes plus neighboring Hebrew remain unauthenticated; all original Greek ROIs and timing remain null. Existing sources reused; one combined bounded check brings66/5/72, with no decisive test, confidence, identification or closure increment. Await original Figure4.6 component mapping/archival-resolution sources. [Evidence](https://github.com/quadrin/CopperScroll/blob/6a38348c9b3a3da9e610441e35b8221389ab205a/research/phases/phase4_summary.md#replica-to-original-target-transfer--5-october-2026).
+
+
+
+
+## Twin Complex original survey — 15 October 2026 UTC / Los Angeles
+
+The user-supplied Davidovich–Frumkin 2015 pp. 212–215 supplies the missing modern measured survey: Malham 2011 plan, profiles and sections on p. 215. Its East/West pair is explicitly linked to Bar-Adon's Twin Cave; a third cave is named North. Excavation removed most of approximately 8 m of West's sediment, so a present-floor measurement cannot establish an ancient depth. Next obtain the individual-mouth/field-record crosswalk and a dated ancient threshold/level relation. [Exact page findings, exposure and source provenance](sources/late_drive_2026-10-14/twin_2015.md).
+
+
+## Manchester cutting correspondence and Gnazim reply — 15 October 2026
+
+Selected TPA/1/132 scan leaves now identify Wright Baker’s opening-stage photographs (19 October 1955, reference15879/55) and a listed photographic enclosure to J. Waldron (6 March 1956, reference3709/56). The supplied scans omit those photographs; their nominal saw width does not measure cut21/22 damage. Gnazim’s Bar-Adon fonds remain under sorting, with the Twin enquiry passed to the sorter and no cave-specific record confirmed. [Source pages, custody limits and next enclosure checks](sources/archive_replies_2026-10-15.md).
+
+## Twin crosswalk and pool-source reconciliation — 15 October 2026
+
+Bar-Adon's northern/southern cavities now map at cavity level to atlas East/West; atlas North is the separate third cave, probably VJRI North/Qetorit. East+West has at least three reported exterior apertures, contradicting the strict exact-total-two inventory convention while leaving principal-front-mouth and ancient-state assignments conditional. The relevant historical northern-threshold retrieval now points to the East member, with a mouth/level/phase tie still required. [Source crosswalk](sources/late_drive_2026-10-14/twin_2015.md#historical-name-crosswalk--15-october-2026) · [bounded branch dispositions](measurements/twin_packet.md#2015-survey-opening-identity-and-entry-25-branch-disposition--15-october-2026).
+
+The pool audit distinguishes available Dorrell pages from missing basin-phase observations, and unlocated Kallai pages from their possible dating content. It corrects the claim that one Kallai scan must date the pool and the unsupported expectation of surviving sealed contexts behind the1898wall. [Exact assignments, source limits and access result](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/feature_workbench/available_evidence_2026-10-13/kohlit_review.md#pool-source-reconciliation--15-october-2026).

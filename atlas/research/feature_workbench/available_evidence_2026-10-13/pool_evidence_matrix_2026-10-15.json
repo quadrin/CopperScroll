@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-15",
+  "repository": "quadrin/CopperScroll",
+  "ref": "b17bccff005430a0fa8360323849e39736cf65f5",
+  "scope": "Reconcile exposed entry11 pool assignments; no newly revealed archaeological observation or confirmatory scoring.",
+  "claim_result": "not_identifiable_from_available_evidence",
+  "text": {
+    "entry": 11,
+    "lines": "II 13–15",
+    "inspection": "edition-based repository records only; no new manuscript or modern edition-page inspection",
+    "east_senses": [
+      "east of Koḥlit",
+      "in the east of Koḥlit"
+    ],
+    "east_sense_source": "Lefkovits2000 p135 via chain.reading_dependencies.D-E11-EAST-SENSE",
+    "north_corner": "ancient basin datum required",
+    "four_cubits": "digging depth, not settlement-to-pool distance",
+    "project_conventions": {
+      "east_sector_degrees": [
+        45,
+        135
+      ],
+      "search_radius_m": 1000,
+      "windows": [
+        "50 BCE–70 CE",
+        "50 BCE–135 CE"
+      ]
+    }
+  },
+  "assignments": [
+    {
+      "id": "jericho-historical-basin",
+      "site": "Tell es-Sultan",
+      "identity": "historical spring basin at eastern foot; conditional Koḥlit anchor",
+      "east_relation": "qualitatively supported",
+      "early_period": "unknown",
+      "ancient_northern_corner": "unknown",
+      "source_pages": [
+        "Dorrell1993 95,97,110–112"
+      ],
+      "lineage": "Dorrell historical photograph compilation"
+    },
+    {
+      "id": "jericho-reservoir-1898",
+      "site": "Tell es-Sultan",
+      "identity": "present reservoir extended from mill-pool1898",
+      "east_relation": "qualitatively supported",
+      "early_period": "contradicted for this specific constructed state",
+      "ancient_northern_corner": "modern curved north end cannot supply ancient datum",
+      "source_pages": [
+        "Dorrell1993 107 Figs20–21;111"
+      ],
+      "lineage": "Sellin–Watzinger1913 plan republished in Dorrell"
+    },
+    {
+      "id": "jericho-springhouse-wall",
+      "site": "Tell es-Sultan",
+      "identity": "curved wall beside historical basin; basin contact not dated",
+      "east_relation": "spring-side structure",
+      "early_period": "unknown; lateRoman/Byzantine architectural opinion is not secure terminus",
+      "source_pages": [
+        "Dorrell1993 97,112"
+      ],
+      "lineage": "Dorrell photographic synthesis and architectural analogy"
+    },
+    {
+      "id": "samiya-crypt-basin",
+      "site": "Kh.el-Marjama",
+      "identity": "basin beneath destroyed church crypt; source-based spring/church crosswalk",
+      "east_relation": "contradicted for named west/SW assignment",
+      "early_period": "unknown; Byzantine church association does not date basin",
+      "ancient_northern_corner": "unknown",
+      "source_pages": [
+        "Zohar IEJ30(1980)219",
+        "Highlands733",
+        "Mazar1995 87,95"
+      ],
+      "inspection": "retained original-inspection records in B, not newly opened"
+    },
+    {
+      "id": "marjama-kallai-pool",
+      "site": "Kh.el-Marjama",
+      "identity": "reported separate rock-cut pool not authenticated on native pages",
+      "east_relation": "unknown",
+      "early_period": "unknown",
+      "ancient_northern_corner": "unknown",
+      "source_pages": [
+        "Kallai1972 172–173 still uninspected"
+      ],
+      "inspection": "metadata/access check only"
+    }
+  ],
+  "next_observation": {
+    "marjama": "Native Kallai1972 pp172–173 plus sites65–66 context,title leaf,relevant plan/caption. Classify feature identity,location and chronology independently under existing arrival outcome IDs.",
+    "jericho": "Dated physical basin/wall/rim/floor contact with construction/use evidence and period-specific northern boundary; historical photographs alone cannot establish this.",
+    "limitation": "Kallai may locate the pool without dating it; absence of later date is not positive early dating."
+  },
+  "protected": {
+    "opened": false,
+    "items": [
+      "reserved northern Tell es-Sultan archival/aerial detail",
+      "XII10 originals",
+      "parked searches"
+    ]
+  },
+  "existing_sources": [
+    "research/agent_review_2026-10-07/followup/A_jericho_spring_reservoir.md",
+    "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
+    "research/agent_review_2026-10-07/followup/C_kenyon_jericho_II_and_kh_yanun.md",
+    "research/feature_workbench/available_evidence_2026-10-13/kohlit_review.md",
+    "research/assessments/kohlit_chain/README.md",
+    "research/assessments/kohlit_chain/chain.json",
+    "research/assessments/kohlit_chain/registration_protocol.md",
+    "research/preregistration/arrivals/items/kochavi-1972.md",
+    "research/measurements/cycle7/kohlit_pool.md",
+    "research/feature_workbench/relationships/model.json",
+    "text/readings.json",
+    "research/sources/drive_manifest.csv"
+  ],
+  "access_receipts": {
+    "kallai": {
+      "native_pages_authenticated": false,
+      "checked": [
+        "pinned repository Drive manifest",
+        "current workspace rg filename audit",
+        "Drive document metadata two Latin/Hebrew filename-filter searches"
+      ],
+      "matches_rejected_as_source": [
+        "missing-sources Google Sheet1dFBOHUX0awcFq10Vi5uJXX70YxOnwHIyUvrDMYi0UE0",
+        "Kochavi Beck Yadin2001 Aphek monograph1Cr4NbiPYuPZAbJ9MzsMtyEz74w8ze4bs"
+      ],
+      "limits": "Filename and catalogue search; no exhaustive absence claim; historical failed public routes not retried"
+    },
+    "dorrell": {
+      "drive_id": "1ZxW_URsztJxKivDKzDk9p7U5HvgSQ2NK",
+      "url": "https://drive.google.com/file/d/1ZxW_URsztJxKivDKzDk9p7U5HvgSQ2NK/view",
+      "sha256": "2ced12da53f4a6cc8f6f287234c058595595d2322ab873c074ea4f7254ec14e2",
+      "bytes": 9665827,
+      "pdf_pages": 21,
+      "printed_pages_visually_rechecked": [
+        95,
+        97,
+        107,
+        110,
+        111,
+        112
+      ],
+      "pdf_pages_visually_rechecked": [
+        2,
+        4,
+        14,
+        17,
+        18,
+        19
+      ],
+      "reuse": "no verified reuse licence; source and full-page renders private working files"
+    }
+  }
+}

@@ -1,0 +1,610 @@
+# Copper Scroll (3Q15): source inventory
+
+## Late Drive intake — 14 October2026 UTC
+
+[Eight new source files and targeted inspection scopes](late_drive_2026-10-14/README.md): Atara historical excerpts, Frumkin contents/body retrieval, WBADB worksheet/licence crosswalks, RegionX English correspondence and VJRI northern-cave/assay/custody records. Original field-file and protected-image dependencies remain explicit.
+
+## Supplied-copy unit-source reinspection — 6 October 2026 UTC
+
+The user supplies the full CSS361-page volume, Puech2015's171-page edition, Lefkovits's full book and two combined French2006 volumes again. Their earlier use and source lineages remain as recorded below. [Current native-page scope, copy-specific mappings, hashes, rights and retained alternatives](../text/inventory_scope_2026-10-06.md#supplied-original-unit-arguments--6-october-2026-utc) supersede current target-page access dependencies, while preserving earlier failed-endpoint history. The French706-page attachment exactly matches the existing PUECH_REPORT/EDF_2006_PHOTOGRAPHS hash; the704-page attachment is a different copy of the same edition. French plate-index metadata adds no photograph/Greek inspection. No source PDFs, pages, figures or tables are redistributed. Reinspection adds zero scopes/checks/campaigns.
+
+Checked 2026-09-27 against branch `main` (commit 637a7a9, "Add files via upload").
+
+## Summary
+
+| Source you listed | In the repo? | Readable? | How it is used |
+|---|---|---|---|
+| Puech 2006, *Le Rouleau de cuivre de la grotte 3 de Qumrân (3Q15)* | Yes, 11 PDF parts, 706 pages | Yes. Born-digital text layer. The Hebrew is in a legacy font and needs decoding (see below). | Primary reading |
+| Lefkovits 2000, *The Copper Scroll – 3Q15: A Reevaluation* | Yes, 11 PDF parts, 624 pages | Partly. Scanned library copy with OCR. The English OCR is usable; **the Hebrew OCR is useless**, so every Hebrew word was read from the page images. | Variant readings; secondhand Milik, Allegro, Luria and Wolters readings |
+| Milik, DJD III (1962) | Not in the repo. **Uploaded in session 2** as a zip (Internet Archive scan). | Yes, as images. The French OCR can be used; the Hebrew OCR cannot, so Hebrew is read from the page images. The plates are **not** in the scan. | **Firsthand** Milik 1962: Hebrew text, French translation, reading notes, word list (section C) and site list (section D). The secondhand Milik columns stay in the table as a cross-check. |
+| Milik 1960, ADAJ 4–5 (uploaded in session 1) | Not in the repo (upload only) | Yes, an image scan with no text layer; read visually | **Firsthand** Milik: his complete English translation with his 1–64 numbering, and his commentary on the place names |
+| Wolters (you listed his readings as a variant column) | **No.** Wolters 1996, *The Copper Scroll: Overview, Text and Translation*, is not in the repo. | — | Taken **secondhand** from Lefkovits (who cites "Wolters 1996" throughout) and Puech. |
+| TIR Iudaea-Palaestina, North sheet | **Only crops**, not the sheet | Yes (see below) | Not used in Phase 1 |
+| Wolters 1994, "History and the Copper Scroll" (uploaded in session 2) | Not in the repo (upload only) | Yes. A scan with an OCR layer; the OCR has noise, and transliterations were checked on the page images | **Firsthand** Wolters: five of his own readings, a history of interpretation, and the 1988 juglet argument |
+| Brooke and Davies (eds.), *Copper Scroll Studies* (preview, then the **full volume**, both uploaded in session 2) | Not in the repo (upload only) | Yes. The full volume (361 PDF pages) has an OCR text layer; the Hebrew in the OCR is often garbled. **Printed page = PDF page − 17** | All 22 chapters (see below) |
+| Puech 2015, *The Copper Scroll Revisited* (STDJ 112; English translation by D. E. Orton) (uploaded in session 2) | Not in the repo (upload only) | Yes. Born digital, **Unicode Hebrew**. **Printed page = PDF page − 11** | An independent check of the decoded Puech 2006 text; Puech's own English translation; his **corrigenda to the 2006 edition** (pp. 151–152) |
+| Høgenhaven 2020, *The Cave 3 Copper Scroll: A Symbolic Journey* (STDJ 132) (uploaded in session 2) | Not in the repo (upload only) | Yes. Born digital, Unicode Hebrew. **Printed page = PDF page − 11** | Structure, symbolic reading, Greek letters (pp. 149–153), language, numerals; a translation (pp. 239–244) |
+| DJD III, **plates volume** (uploaded in session 2) | Not in the repo (upload only) | Yes, but heavily compressed (88 PDF pages) | 3Q15 pl. XLIII–LXXI: the two rolls, the sawing, and **a drawing and a photograph of every column** |
+| "Copper_Scroll_Geographical_Resources" archive, 12 parts (uploaded in session 2) | Not in the repo (upload only) | **Complete.** All 12 parts rejoined; the SHA-256 of the whole archive matches the README, and all 15 files match `manifest.json` | See the next section |
+| Elitzur 2004, *Ancient Place Names in the Holy Land: Preservation and History* (uploaded in session 2) | Not in the repo (upload only) | A photocopy scan (237 two-page spreads) with **no text layer**. I made a local OCR text with Tesseract (English only; the Hebrew and Arabic in it are garbled) | Method for judging whether a modern name preserves an ancient one; a few direct remarks (Dok, Kohlith, Beth ha-Kerem) |
+| *ʿAtiqot* 41 (2002), Hebrew issue: *Surveys and Excavations of Caves in the Northern Judean Desert (CNJD) — 1993*, 6 parts (uploaded in session 2) | Not in the repo (upload only) | **Complete.** The six parts rejoined; SHA-256 matches; 25 PDF files, 295 pages, born digital, Hebrew in Unicode | The IAA cave survey from Wadi el-Makkuk to Naḥal Kidron, with maps. Main use: Phase 5 |
+| DJD VII, Baillet, *Qumrân grotte 4. III (4Q482–4Q520)* (uploaded in session 2) | Not in the repo (upload only) | Yes. The complete volume (444 pages) with plates | **Almost nothing on 3Q15**: one spelling parallel (p. 222) |
+
+## Regional and historical datasets — 9–10 October 2026
+
+Each folder records where its data came from (links, archive IDs or Drive IDs, and SHA-256 of what was read) and what is still closed. No PDF, scan, tile or long extract is in Git.
+
+| Dataset | Folder | Where-from record | Access route | Still closed or unread |
+|---|---|---|---|---|
+| Archaeological Survey of Israel (ASI) records near the Jerusalem places | [regional/asi_jerusalem](../regional/asi_jerusalem/README.md) | `access.md`, `sources_manifest.csv` | Public JSON services behind survey.iaa.org.il | Printed page numbers; the Jericho and Qumran–Feshkha sheets are not online |
+| IAA excavation reports (*Hadashot Arkheologiyot*, ESI, HA-ESI) | [regional/haesi_features](../regional/haesi_features/README.md) | `reports.csv`, `data/corpus.csv`, `data/unread_online_candidates.csv` | Owner's Drive copies; the open 2026 volume at publications.iaa.org.il | Online reports 2004–2025 (closed to robots); portal PDFs (browser check) |
+| Survey of Palestine 1:20,000 sheets, 1940s | [regional/mandate_maps](../regional/mandate_maps/README.md) | `README.md`, `plan.json`, registrations `POM-pal20k-*` | Palestine Open Maps tiles (public domain; credit National Library of Israel) | Sheet margins and legends (Dropbox links barred by robots.txt) |
+| RAF aerial layer, 1940s | [regional/raf_1940s](../regional/raf_1940s/README.md) | `source_record.json`, `tile_manifest.txt`, registrations `POM-aerial1940s-*` | Palestine Open Maps layer (georeferenced by S. Holtzman) | Too coarse for the strip test; the Hebrew University scans need an order |
+| PEF *Quarterly Statement* 1869–1914 | [history/pef_qs_finds](../history/pef_qs_finds/README.md) | `volumes.csv` (138 files) | archive.org OCR text | OCR misses are listed in the README |
+| Ancient salvage accounts and earlier searches | [history/salvage_records](../history/salvage_records/README.md) | `sources.csv`, `source_files.csv` | Public-domain translations and open reports | Allegro's books and several excavation reports (copyright) |
+| Second Temple sites east of the Jordan | [regional/peraea](../regional/peraea/README.md) | `sources.csv`, `doa_search_log.csv`, `access_requests.md` | Jordan Department of Antiquities publication archive (ADAJ) | MEGA-Jordan and EAMENA (accounts: EAMENA registered 9 October, level pending; MEGA-Jordan request drafted for the owner) |
+| Concealment comparanda (hoards, caches) | [comparanda/concealment_contexts](../comparanda/concealment_contexts/README.md) | `sources_read.csv` | CHRE (Oxford), the T02 hoard list | Chance and market finds rarely give a context |
+
+## Puech 2006 (primary reading)
+
+- Files: `Le Rouleau de Cuivre de la Grotte 3 de Qumrân (3q15) (2 - Daniel Brizemeure, Noël Lacoudre, Emile Puech-1.pdf` … `-11.pdf`. These are the two volumes of STDJ 55 (Brill / EBAF 2006) split into 70-page parts; part 11 has 6 pages. The PDF says it is a multi-volume eBook.
+- **Page mapping in the Puech volume I section: printed page = global PDF page − 26.** "Global" counts pages through parts 1–11 in order.
+- Puech's revised edition is "Livre second", vol. I pp. 169–223:
+  - Introduction: pp. 171–178
+  - Text, translation and commentary, by column: pp. 179–206
+  - **Text with French and English translation: pp. 207–216.** This is the text used for the master table.
+  - Index: pp. 217–220 (Hebrew concordance p. 217ff; numerals and Greek letters p. 219)
+  - Bibliography: p. 223
+- Plates (photographs, radiographs, facsimile, galvanoplasty): vol. II, pl. CCCXXXIII–CCCLXXXIII.
+- Encoding: the Hebrew is set in "SuperHebrew" (plus "HebraicaII" for some final forms), stored in visual left-to-right order. Numeral signs are partly font glyphs (unit stroke "|" in Symbol; the 20-sign as a "3" glyph) and partly **vector drawings** (the 10-sign, the 100-sign). They do not survive text extraction. `tools/puech_heb.py` decodes the text layer. **Every one of the 181 lines was then checked by eye** against page renders, and all numerals were set by hand from the images and from Puech's own totals (p. 173 nn. 27–34). The line table (`puech_lines.csv`) contains Puech's edited text and was delivered separately in the original session (see "Where the table lives" in `phase1_summary.md`). This records its delivery status; follow [Text and publication](../../AGENTS.md#text-and-publication) when preparing new outputs.
+- **Internal inconsistencies in Puech's own book:** his English translation (pp. 208–216) disagrees with his Hebrew and French in several places. See the findings log. The master table follows his Hebrew and French.
+
+## Lefkovits 2000
+
+- Files: `The Copper Scroll - 3Q15_ A Reevaluation _ A New Reading, - Lefkovits, Judah-1.pdf` … `-11.pdf` (STDJ 25). The copy is from the Claremont School of Theology library; there are library stamps on the front pages.
+- **Printed page = global PDF page − 24.** Parts 1–10 have 60 pages each, part 11 has 24.
+- Items 1–60: pp. 29–442. Discussion: p. 443ff. Appendix A (ככ vs ככרין): p. 471. Appendix B (numerals): p. 489. Appendix C (Greek letters): pp. 498–504. Appendix D: p. 505.
+- Lefkovits p. 17 n. 69: "Milik divides the text into 64 items, Allegro into 61, Lurie into 60, and Wise into 65 … This author divides the Copper Scroll into 60 items, three of which (#9, #12, #56) can be further subdivided into two or three sub-items."
+- His commentary quotes the Hebrew readings and translations of Allegro, Milik, Lurie (Luria), Pixner, Wolters (1996), García Martínez, Vermes, Wise, Beyer and Wacholder, phrase by phrase. It is the richest source in the repo for the Milik and Wolters variants.
+
+## Milik 1960 (uploaded in session 1)
+
+- J. T. Milik, "The Copper Document from Cave III of Qumran: Translation and Commentary", *Annual of the Department of Antiquities of Jordan* 4–5 (1960), pp. 137–155. File: `ADAJ_1960_4_5-137-155.pdf` (19 pages, a scan from the DoA Publication Archive, no text layer). **PDF page n = printed page 136 + n.**
+- Contents:
+  - Introduction, pp. 137–138. Milik says the DJD III edition "is now ready and it will be in press when this article appears". He gives the translation "of the entire document" by permission of the Clarendon Press.
+  - Translation, items 1–64, pp. 139–142. Italics mark uncertain translation; `< >` marks an omission; `°°` marks letters not deciphered.
+  - Commentary on the place names, by column and line, pp. 143–155.
+- What it provides: **Milik's own item numbering, and his translation of every item**, which settles open question Q4. It does *not* give his Hebrew transcription. His readings appear in the commentary only in Latin transliteration, without diacritics (p. 138 N.B.).
+- Caveat: this is Milik in 1960. DJD III (1962) is now available (next section). Its numbering is the same, item for item, but some wording differs; the differences are listed in the findings log.
+
+## Milik, DJD III (1962) (uploaded in session 2)
+
+- M. Baillet, J. T. Milik, R. de Vaux, *Les 'Petites Grottes' de Qumrân* (DJD III; Oxford 1962). Milik's chapter: "Le rouleau de cuivre provenant de la grotte 3Q (3Q15)", pp. 199–302. The file is an Internet Archive scan (344 PDF pages) with an OCR layer. **PDF page = printed page + 20.**
+- Sections used:
+
+  | Section | Printed pages | Use |
+  |---|---|---|
+  | Note liminaire, with the full French translation of items 1–64 | 211–215 | Milik's 1962 translation and numbering |
+  | A. Script and numerals | 215 ff. | Numeral signs (Phase 4 context) |
+  | C. *Mots et objets* (word list, 122 numbered entries) | 236–259 | Phase 2 meanings |
+  | D. *Sites et monuments* (site list) | 259–274 | Phase 2 and Phase 3 identifications |
+  | F. *Transcription et traduction annotées* | 284–299 | Firsthand Hebrew text, line by line |
+  | Addenda | 299–302 | Later corrections |
+
+- **Missing from the scan:** the plates (DJD III pl. XLIII–LXXI, BK: plate range from memory, check). Milik's drawings can therefore not be checked here.
+- Milik marks a doubtful letter with a dot above (probable) or a small circle above (possible). The transcripts use U+05C4 and U+05AF for these.
+- The item numbering is the same as in Milik 1960 (1–64), item for item. The wording of some translations changed between 1960 and 1962 (see the findings log, F2.x).
+
+## Uploaded in session 2 (after Phase 2)
+
+### Wolters 1994
+
+- A. Wolters, "History and the Copper Scroll", in *Methods of Investigation of the Dead Sea Scrolls and the Khirbet Qumran Site* (Annals of the New York Academy of Sciences 722; 1994), pp. 285–298. It includes the discussion after the paper, pp. 295–298.
+- It gives some of Wolters's **own readings**, made from the copper segments in Amman in June 1991 (p. 292):
+  - III 9 *lbwšy*
+  - VIII 3 *wspry wʾlt ks[p]*
+  - XI 9 *thwrty*
+  - XII 1–2 *kwzyn* (p. 294)
+
+  These are now in the master table as `readings_wolters1994_firsthand`. His full edition, with "more than seventy places" where he differs from Milik, is not in the repo (Q2).
+- It has nothing on the Greek letters.
+
+### *Copper Scroll Studies* (first upload: a preview)
+
+- **Superseded:** the full volume was uploaded later (see *Copper Scroll Studies* (full volume) below). The table below records only what the preview lacked.
+
+- G. J. Brooke and P. R. Davies (eds.), *Copper Scroll Studies* (JSPSup 40; Sheffield 2002; T&T Clark paperback 2004). The file is a publisher's preview of 37 PDF pages: pp. i–xvi, the Introduction (pp. 1–9), and pp. 12–20 of chapter 1 (the conservation report).
+- **Not in the preview:**
+
+  | Ch. | Author and title | Pages | Needed for |
+  |---|---|---|---|
+  | 5 | Puech, "Some Results of a New Examination" | 58–91 | Readings |
+  | 6 | Eshel, "Aqueducts in the Copper Scroll" (maps of the Cypros and Doq aqueducts) | 92–107 | Phase 3 |
+  | 7 | Elwolde, linguistic affiliation | 108–121 | Phase 2 |
+  | 12 | Schiffman, architectural vocabulary | 180–197 | Phase 2 |
+  | 14 | Fidler, "Inclusio and Symbolic Geography" (cited by Puech p. 179 n. 76) | 210–225 | Phase 3 |
+  | 20 | Lika Tov, palaeography | 288–290 | Phase 4 |
+  | 22 | Wolters, "Palaeography and Literary Structure as Guides to Reading the Copper Scroll" | 311–333 | **Probably the main source for Phase 4** (BK: Wolters links the Greek letters to the structure of the list; check) |
+
+### Puech 2015, *The Copper Scroll Revisited*
+
+- É. Puech, *The Copper Scroll Revisited* (STDJ 112; Leiden: Brill 2015), English translation by D. E. Orton. Foreword dated 22 March 2015. It is "the English translation of my updated edition" (the 2006 French edition), with typographical errors corrected and recent studies added (p. vii).
+- Its Hebrew text is **Unicode**. I compared it with the Puech 2006 text decoded from the legacy font. **172 of 181 lines agree letter for letter.** Of the other 9 lines, 7 differ only because of PDF layout (right-to-left order, numeral signs). Two are real changes:
+  - I 12: Puech 2015 restores ה in the lacuna.
+  - VIII 3: Puech 2015 drops the alternative ר (it reads תבקע).
+- This is an independent check of the decoding tool.
+- **Corrigenda to the French edition 2006** (pp. 151–152):
+  - One correction changes the Hebrew: VII 6 [ואר]בע, where the 2006 print omits the opening bracket. It is now applied in the table.
+  - Others correct the 2006 English translation at entries 15, 18, 27, 32 and 37, and the entry numbers on 2006 p. 211. These are the errors listed in Q10.
+- Puech's 2015 English translation is now a column of the master table (`translation_puech2015_en`).
+
+### *Copper Scroll Studies* (full volume)
+
+- The chapter list is given above; all chapters are present. The chapters most useful for later phases:
+  - Wolters ch. 22 (pp. 311–333): palaeography, literary structure and **the Greek letters** (Phase 4).
+  - Lika Tov ch. 20 (pp. 288–290): palaeography (Phase 4).
+  - Eshel ch. 6 (pp. 92–107): aqueducts, with maps (Phase 3).
+  - Fidler ch. 14 (pp. 210–225): Achor and Gerizim as an inclusio (Phase 3).
+  - Bar-Ilan ch. 13 (pp. 198–209): order of hiding (Phase 3).
+- The language chapters (7–12) and Puech ch. 5 are being read for a Phase 2 addendum.
+
+### Høgenhaven 2020, *The Cave 3 Copper Scroll: A Symbolic Journey*
+
+- J. Høgenhaven, *The Cave 3 Copper Scroll: A Symbolic Journey* (STDJ 132; Leiden: Brill 2020).
+- **6 October 2026 re-supply/reinspection:** the 278-page PDF resolves printed157–158/PDF168–169 after the publisher403. Native title/rights and target pages checked; prior session2/F2.20 source continuity retained. Both talent/karsh arguments remain; no new scope/check/campaign or independent manuscript observation. [Hashes, precise observations, correction and accompanying illustration provenance](../text/inventory_scope_2026-10-06.md#supplied-source-reinspection--6-october-2026-utc). Full PDF/page images are not redistributed.
+- Chapter 2 reads the list as a route through four "main sections" (Achor–Koḥlit; Secacah; the Kidron and Jerusalem; Gerizim–Beth-Shan–Bezek, then back to Koḥlit).
+- Chapter 4 covers the object: palaeography, **the Greek letters (§4, pp. 149–153)**, language, numerals, abbreviations, and the arguments for and against the treasure being real.
+- Chapter 5 covers the traditional contexts (Massekhet Kelim, the Lindian Chronicle, and others).
+- Main use: Phases 3 and 4. Its ch. 3–4 sections on landscape, installations and language are being read for the Phase 2 addendum.
+
+### DJD III, plates volume
+
+- The Internet Archive scan "Texte. Planches" (88 PDF pages): pl. I–XLII show the small caves and their manuscripts; **pl. XLIII–LXXI are 3Q15**:
+  - XLIII: the two rolls before opening;
+  - XLIV: the sawing;
+  - XLV–XLVII: montages of the segments;
+  - then, for each column, a drawing (facsimile) and a photograph of the segments.
+- The images are strongly compressed. The drawings can be read at about 150 dpi; the photographs are poor.
+- The drawings are an editor's copy, not the metal. They can show what Milik's team saw, which is the evidence Lefkovits calls "Milik's drawing". They cannot settle a reading by themselves.
+
+### DJD VII (Baillet 1982)
+
+- An Internet Archive scan with an OCR text layer (444 pages, plates included).
+- A search of the whole OCR layer finds **one** reference to 3Q15: in the commentary on 4Q511 (*Cantiques du Sage*, p. 222), Baillet cites 3Q15 V 1 for the spelling רוש for ראש.
+- The volume has no treatment of the Copper Scroll, its sites or its Greek letters. (Question to you: was a different volume meant? For example, DJD II (Murabbaʿat), whose Mur 42–43 Milik uses for Kaphar Baricha and ha-Baruk (DJD III p. 269), or a copy of DJD III that includes the plates?) *Later in session 2 you uploaded the DJD III plates volume (below).*
+
+### "Copper_Scroll_Geographical_Resources" archive (12 parts)
+
+- Rejoined from your 12 uploads. The checksums of the whole archive and of each file match.
+- Contents, as checked:
+
+  | File | What it is | Checked | Licence (as stated in the archive's README) |
+  |---|---|---|---|
+  | `PEF_Sheet_XVIII_full_resolution.jpg` / `.jp2` | Survey of Western Palestine, Sheet XVIII (surveyed under Conder and Kitchener; the sheet is dated May 1878), 11,108 × 9,050 px, from the David Rumsey Map Collection | **Small labels are legible.** Examples: Wady Nueiameh, Kh. el Mefjir, Jebel Kuruntul and Tahunet el Hawa, Tell es Sultan, Tell el Kôs, Eriha, Wady el Kelt with its aqueducts, el Bukeia, Kh. Mird, Kh. Kumrân, Wady Kumran, ʿAin Feshkha, Râs Feshkhah | CC BY-NC-SA 3.0 (David Rumsey). **Not committed** |
+  | `PEF_Judaea_Memoirs_Vol_III.pdf` + OCR | *SWP Memoirs* III, Judaea (1883), 510 PDF pages, sheets XVII–XXVI | Text layer on most pages | Public domain (1883) |
+  | `PEF_Palmer_Name_Lists_1881.pdf` + OCR | E. H. Palmer, *Arabic and English Name Lists* (1881), 452 PDF pages, keyed to the PEF sheets | Text layer on most pages | Public domain (1881) |
+  | `Jastrow_Dictionary_Vol_1.pdf`, `_Vol_2.pdf` | Jastrow, *Dictionary* (714 + 1,066 PDF pages) | Text layer on almost all pages | Public domain |
+  | `eusebius_onomasticon_01/02/03*.htm` | Wolf's Onomasticon translation, introduction and notes | Byte-identical to the copies already used in Phase 2 | tertullian.org |
+  | `Copper_Scroll_Studies_PUBLISHER_PREVIEW.pdf` | The same 37-page preview uploaded earlier | Duplicate | — |
+  | `README.md`, `START_HERE.html`, `manifest.json` | The archive's own notes and access routes | Read | — |
+
+- The archive's README lists sources that it could **not** download:
+  - Elitzur, *Ancient Place Names in the Holy Land*;
+  - the IAA *ʿAtiqot* 41 cave-survey reports (HTTP 403);
+  - the Hebrew University database of churches and monasteries;
+  - the Comprehensive Aramaic Lexicon.
+
+  These are still missing. Eshel's chapter, which the README also lists as missing, is in the full *Copper Scroll Studies* uploaded earlier.
+
+  **Correction 2026-09-29:** both were in fact uploaded at the end of session 2 and are described below (Elitzur: F2.21–F2.22; *ʿAtiqot* 41: F2.23); this list reflects the archive's own README. The 2026-09-28 reviews that reported *ʿAtiqot* 41 as inaccessible (HTTP 403) overlooked that upload. The user re-supplied both on 2026-09-29. *ʿAtiqot* 41 has now been read in detail for entry 17 ([extraction](../../registration/atiqot41_region_v_extracted.md)).
+- Main use: Phase 3. Sheet XVIII covers the Jericho plain, Wadi Qelt, the Buqeia, Hyrcania (Kh. Mird) and the NW Dead Sea shore to Râs Feshkhah. This is the area missing from the TIR crops (Q3). It is a 19th-century survey, not TIR: names are the Arabic names of 1870s, and ancient identifications must come from other sources.
+
+### Elitzur 2004 (uploaded in session 2)
+
+- Y. Elitzur, *Ancient Place Names in the Holy Land: Preservation and History* (Jerusalem: Magnes; Winona Lake: Eisenbrauns 2004). The scan is a photocopy without a text layer. **I made a local OCR text** (Tesseract, English); page numbers in it come from the running heads.
+- **Method** (pp. 8–14). He warns that "scholars are sometimes able to justify almost any historical theory on the basis of place names" (p. 9). An identification is **"almost positive"** only if (p. 12–13):
+  - (i) the terrain and distances in the historical sources point to a well-defined location; and
+  - (ii) an Arabic name matches the historical name in all or almost all letters, at or reasonably near that location.
+
+  Remarks (p. 13): an inexact location can be accepted if the name is rare; a badly preserved name can be accepted if the sources fix the place. Pottery supports but does not prove. Inscriptions are the best proof. Names can "wander" a short distance.
+- **Direct remarks on Copper Scroll places:**
+  - Dok (1 Macc 16:15, Δωκ) is "known to the Arabs as dūk or dyūk ('chickens')", a popular etymology, and "the two forms have remained in living use" (p. 139 n. 2, the note to entry 27, ʿId el-Miyye = Adullam; *corrected 2026-09-29* from "entry 28, Hadid"; index "Dok … 139, 288, 351, 358").
+  - "Kohlith" is cited among names with the suffix -it, a type that became frequent in the Second Temple period (pp. 230, 334). This is a remark on the name's form, not on its location.
+  - Beth ha-Kerem is identified following Aharoni, with Genesis Apocryphon 22:14 and "the Copper Scroll 10,5" added to the sources (p. 185 n. 2, in entry 46, Bethlehem; checked 2026-09-29).
+  - The steep cliffs of the Quruntul range "as they descend to Wadi Nweiʿmeh" (in the discussion of Benjamin's border).
+- Entry 17, Ragaba / רגב, is the village of Rageb in Transjordan. It has nothing to do with the scroll's word הרגב.
+- **Corpus list (pp. 15–18), checked 2026-09-29.** His 177 "positive or almost positive" identifications include Beth-Horon = [bēt ʿūr] (no. 51), Bezek = [bzīq] (no. 62) and Beth-shean = [bēsān] (no. 63), all on p. 16. The book's index does not cover this list. Siloam, Dok, Achor, Secacah and Kozeba are not in the corpus. See [entry40_bethhoron_review.md](../sites/entry40_bethhoron_review.md#elitzur-2004-the-name-test-re-checked).
+
+### *ʿAtiqot* 41 (2002), Hebrew issue (uploaded in session 2)
+
+- *ʿAtiqot* 41, part 1 (Hebrew): the reports of the 1993 IAA cave survey (CNJD), Regions I–XV, from Wadi el-Makkuk and Jebel Abu Saraj, along Jebel Quruntul, to the fault escarpment above Ḥorbat Qumran, south of Qumran, and from Naḥal Kidron to Naḥal Deragot. It includes an index and a map of the 1993 survey. The English issue (part 2) was not uploaded.
+- A search of all 25 files finds **no discussion of the Copper Scroll**. The only hit is a bibliography entry, Luria 1964, in the Preface.
+- One cave has a name that echoes the scroll: **Cave IV/11, "Cave of the Pillar"** (N. Feig), in the Jebel Abu Saraj cliff. It is named for a 2.5 m pillar (natural below, rock-cut above) at the SW end of its hall. The report does not link it to the scroll's "Cave of the Column" (VI 1). (Inference, low weight: the shared name is a modern descriptive label and is not evidence of identity. Logged only for the Phase 5 check.)
+
+## Phase 2 reference corpora (downloaded in session 2; local only, not committed)
+
+| Corpus | Source | Licence / note | Use |
+|---|---|---|---|
+| Hebrew Bible (WLC) with Strong's lemmas | `openscriptures/morphhb` (OSIS XML) | CC BY 4.0 (morphology); WLC text public domain | Biblical attestations |
+| Mishnah (Hebrew) | Sefaria export (`storage.googleapis.com/sefaria-export`), "merged" version | Per-text licence on Sefaria; mostly public domain or CC | Mishnaic attestations |
+| Josephus, AJ, BJ, Vita, CAp (Greek and English) | PerseusDL `canonical-greekLit` (tlg0526) | CC BY-SA | Place names in Josephus. **The English is Whiston's numbering and the Greek is Niese's**, so section numbers can differ |
+| Eusebius, *Onomasticon* | Wolf 1971 English translation (tertullian.org); Klostermann, GCS 11.1 (1904), Greek and Jerome's Latin (Internet Archive, OCR text) | Wolf: free online; Klostermann: public domain | Place names; Klostermann page.line references |
+| BDB (Augmented Strong) and Jastrow | Sefaria words API | Sefaria terms | Dictionary meanings |
+
+## Phase 3 place data and map layers (session 2; local only, not committed except the curated table)
+
+| Source | Use | Licence and notes |
+|---|---|---|
+| Pleiades CSV dumps (places, names, locations) | Ancient-place coordinates; a 573-place regional extract | CC BY. Errors found: see F3.6 |
+| Wikidata, regional extract by SPARQL box query (18,417 items) | Coordinates of modern-named sites and monuments | CC0. Some items are wrong or merged: see F3.6 |
+| OpenStreetMap via Nominatim | The outline of the Old City walls (relation 5862586), for orientation on map 3; a check of some Jerusalem points | © OpenStreetMap contributors, ODbL. The Nominatim "Haram" polygon (relation 3875817) is only the inner Dome of the Rock platform and was not used. Overpass was not reachable |
+| AWS Terrain Tiles (terrarium; Mapzen; SRTM and other sources) | Relief shading; the Dead Sea shoreline (SRTM, c. 2000, about −415 m) | Open data, with attribution |
+| Natural Earth 10 m | The Jordan river line | Public domain |
+| PEF Survey Sheet XVIII | The base of map 2; label positions for places not in the gazetteers (ʿAin Duk, Wady Nueiameh, Tell el-Kos, Wady Ekteif, Jofet el Asla, Kh. es-Sumrah) | CC BY-NC-SA 3.0 (David Rumsey Map Collection). Affine georeference with 4 control points, residuals 15–106 m (F3.7) |
+
+The hand-curated result is `tables/phase3_places.csv`. Each of its 37 rows names its coordinate source.
+
+## Phase 4 sources (session 2)
+
+- **Editions.**
+  - Puech 2006 (pp. 174–175, 180–187, 219) and Puech 2015 (pp. 12–13, 28–50; facsimiles pp. 120–126).
+  - Lefkovits 2000 (Appendix C, pp. 498–504; item commentaries). The Greek was read from the page images, because the text layer garbles it.
+  - Milik 1960 (pp. 139–144) and DJD III (pp. 216, 221, 284–288, 300; plates XLVIII–LIV from the plates volume).
+  - Wolters 1994 has nothing on the Greek letters.
+- **Studies.** *Copper Scroll Studies*, all chapters; the relevant ones are Puech, Lefkovits, Bar-Ilan, Fidler, Goranson, Muchowski, Thiering, Lika Tov, Wise and Wolters. Also Høgenhaven 2020, pp. 28, 38, 50–62, 147–165, 185, 235.
+- **Josephus, Greek (Perseus, Niese; local, from Phase 2).** Used for the name base-rate test and for BJ 2.520, 5.474 and 6.387.
+- **Original-paper access updated, 14 October 2026:** Ullendorff1961, Pixner1983, Richey2012, Weitzman2015 and Lehmann1964 have been read directly, alongside the supplied Wolters1987–1990 papers, Silberman1960, Mandel1993 and Taylor2023. [Page-scoped source changes and visual limits](new_batch_2026-10-14/copper_changes.md). The directly read JiménezBedman1999 chapter is a distinct work from Bedman2000; [reference coverage](new_batch_2026-10-14/reference_changes.md) preserves that distinction.
+- **Other secondhand reports in the earlier assessment** (see Q31): Stegemann1993/1998; Beyer1994; Lurie1964; Zissu2001; Bedman2000; McCarter. Specific later direct reads must be matched by publication before changing those access labels. Feather is mentioned only in passing (Fidler CSS p.210 n.1).
+
+## Phase 5 sources (session 2)
+
+- **Local.**
+  - *ʿAtiqot* 41 (1993 IAA cave survey, Hebrew): regions V, VII, IX (Jebel Quruntul), X–XIII (by Qumran), XIV (Kidron), and the preface.
+  - Eshel, CSS ch. 6.
+  - SWP *Memoirs* II and III.
+  - The editions' archaeological notes: Milik DJD D; Puech 2015; Lefkovits; Høgenhaven.
+- **Online, open access (URLs in `tables/phase5_reports.csv`).**
+  - *Hadashot Arkheologiyot* (hadashot.iaa.org.il), volumes 132–137.
+  - *ʿAtiqot* 113 (Szanton **2023**, full text accessed in the 2026-09-28 review) and *ʿAtiqot* 119 (Aharonovich et al. 2025, abstract).
+  - The IAA publications portal for *ʿAtiqot* 41.
+  - The Tel Aviv University Ramat Raḥel reports (2006–07; the INJ 17 hoard paper).
+  - Avni & Greenhut 1996 (abstract).
+  - Sala 2014 (author's copy).
+  - Zias 2023 (*ANE Today*).
+  - Warren and Wilson, *The Recovery of Jerusalem* (1871; Internet Archive).
+- **Blocked or unavailable:** see Q32.
+
+## Sources checked for the 2026-09-28 site review
+
+- Nahshon Szanton, “Ritual Purification and Bathing: The Location and Function of Siloam Pool and Solomon’s Pool in Second Temple Period Jerusalem,” *ʿAtiqot* **113 (2023), 29–44**. [Full article](https://jamestabor.com/wp-content/uploads/2024/01/Szanton-Antiquot-2023-Siloam-and-Solomons-Pools.pdf). The hosting path's 2024 date is not the publication year. The IAA portal's "Recommended Citation" also gives 2024 (the article went online there in November 2024), but the printed header reads "ʿAtiqot 113, 2023"; this project cites 2023. See pp. 35–42 for the two-pool discussion. Primary research article, read in full; earlier Phase 5 records had only the abstract.
+- Tel Aviv–Heidelberg Ramat Raḥel expedition, [2006–2007 preliminary results](https://www.tau.ac.il/~rmtrachl/joint_project_results.html), Area C1 (corresponding to the Phase 5 report citation, pp. 15–18). Primary excavation report; the relevant pool, reuse and burial sequence was checked directly.
+- Judah K. Lefkovits, *The Copper Scroll: 3Q15: A Reevaluation: A New Reading, Translation, and Commentary* (2000), entry 49, pp. 352–354. Read directly in the repository scan for the translation and competing readings.
+- The review used the public summaries and indices at commit `05a233b178d27112dcceebe97d5e5e25657ddd49`. It did not have the then-uncommitted `phase5_assessments.csv` or `phase5_reports.csv` (both committed later, as `tables/phase5_assessments.csv` and `tables/phase5_reports.csv`); their 254 source records were not independently re-audited.
+
+## TIR (Tabula Imperii Romani, Iudaea–Palaestina, 1994)
+
+`README.md` on `main` documents the search: no full North sheet was found in public digital form. What is in the repo:
+
+| File | Size (px) | What it shows |
+|---|---|---|
+| `north_samaria_jerusalem.jpeg` | 3508 × 2544 | North sheet crop: Neapolis/Gerizim south to Jerusalem–Jericho. **Legible.** Shows "Achor Vallis" NW of Jericho (near Noorath / Wadi Makukh), Dok, Chozeba, Hierico, Beth ha-Kerem, Gerizim. **Stops short of Qumran, the Buqeia and the Dead Sea shore south of Jericho.** |
+| `north_caesarea_samaria.jpeg` | 3508 × 2544 | North sheet crop: Caesarea and Samaria |
+| `north_galilee_ptolemais.jpeg` | 2544 × 3508 | North sheet crop: Galilee and Ptolemais |
+| `north_carmel_caesarea_patrich_annotated.jpeg` | 1887 × 2943 | TIR-based map with Patrich's boundary overlay (not an unaltered sheet) |
+| `overview_jerusalem_caesarea.jpeg` | 723 × 648 | Overview map excerpt, low resolution |
+| `overview_jerusalem_gaza.jpeg` | 760 × 1160 | Overview map excerpt, low resolution |
+| `roads_map_credited_to_TIR_Findlater.jpeg` | 1611 × 2300 | Roman roads map credited to TIR (Findlater 2004 thesis) |
+| `Roman_Imperial_Roads*.zip` | — | Road shapefiles (Kraków GIS project); source field names TIR TIFFs that are not included |
+
+For Phase 3 the most relevant gap is the **Qumran–Buqeia–Hyrcania–Dead Sea shore area**, which none of the crops covers. That area holds many candidate sites (Secacah, Achor-in-the-Buqeia, Kidron outlet).
+
+## Uploaded dossier: "Extracted site data — Jerusalem, Jericho & the Dead Sea" (added 2026-09-27)
+
+A 5-page PDF you uploaded in session 1: `TIR_Copper_Scroll_Research_Summary.pdf`. It is not in the repo. It is a **secondary, web-derived** compilation, and its own heading says it paraphrases scholarly and institutional web pages dated 27 Sept 2026. Its sources are Encyclopaedia Judaica entries hosted on Encyclopedia.com, the Hebrew University's *Virtual Qumran*, the Heidelberg/Trier biblical place-name database, the Barrington Atlas Map 70 directory, the LacusCurtius Strabo, and Bible Gateway.
+
+- Contents: site notes on Jericho (with Old Palestine Grid coordinates), Jerusalem/Aelia, Doq, Kypros, Wadi Qilt, Hyrcania and the Wadi Secaca tunnels, the Kidron, Mar Saba, Khirbet Qumran, Cave 3, Ein Feshkha and the Buqeia, Ein Gedi, and Achor.
+- It also gives TIR page citations recovered secondhand: Kidron 102; Kypros/Threx? 106, 249; Doq 112–113; Ein Gedi 121; Jericho 143–144; Jerusalem 145–146; Hyrcania 149.
+- **Use:** Phases 3 and 5 (site candidates, archaeology). It contains no readings or translations of 3Q15 and adds nothing to the Phase 1 table.
+- Cross-check done in Phase 1: its Jericho entry cites 3Q15 "V 13 and XI 9". Both lines have ירחו in Puech's preserved text (V 13 מירחו, entry 24; XI 9 ירחו, entry 54). A third mention, VII 4 "[של ירחו(?)]", is only a restoration by Puech.
+- Caveat: it states that no readable TIR map of Jerusalem–Jericho–Dead Sea was obtained. The repo crop `north_samaria_jerusalem.jpeg` does cover Jerusalem–Jericho legibly. What is missing is the Qumran/Dead Sea shore part.
+- Its claims are secondhand and have not been checked against the underlying publications. Treat them as leads until checked.
+
+## Source leads and uploads, 2026-09-29
+
+See [source_leads_2026-09-29.md](source_leads_2026-09-29.md) for the full notes.
+
+- **Uploaded (not in the repository):**
+  - Stacey, "Some Archaeological Observations on the Aqueducts of Qumran," *DSD* 14.2 (2007), pp. 222–243. Read in full.
+  - Zertal, *Manasseh Hill Country Survey* Vol. 2 (Brill 2008), 9 parts. Ibziq sites 42–44 (pp. 191–198), site 23 (pp. 151–153) and the name history (pp. 104–107) read, with page images checked.
+  - Zertal & Mirkam, Vol. 3, 7 parts, and Zertal & Bar, Vol. 4 (2019), 8 parts. Searched; Ibziq is in neither.
+- **Located, not yet read:**
+  - Patrich, "The Aqueducts of Hyrcania": Yad Ben-Zvi 1989, pp. 243–260 (Hebrew; the Ilan–Amit volume) and JRA Suppl. 46 (2002), pp. 336–352.
+  - Feldman 1974 (Hebrew); Garbrecht & Peleg, *BA* 57 (1994) 161–170.
+  - Magen, "Gerizim, Mount," NEAEHL Supplement (2008), pp. 1742–1748, free on the BAS Library. Its staircases and cistern are summarised in the notes.
+  - *HA* 40 (1971) p. 22 on the Ibziq excavation (IAA portal; 403 from the cloud sandbox). *Read later the same day*; see the next section.
+- **Print only or for sale:** Hirschfeld 1985 and Patrich 1994 survey maps; JRA Suppl. 46 (by email from J. & L. Humphrey).
+
+## Sources checked 2026-09-29 (second batch)
+
+These add to the [source leads and uploads](#source-leads-and-uploads-2026-09-29) above.
+
+- **Zertal, Vol. 2 (2008).** Besides the Ibziq pages, Kh. Salhab (pp. 151–153) and the name history (pp. 104–107), the roads (pp. 25–28) were read. The pagination matches the Wikipedia citation "Zertal 2007, vol. 2, pp. 191–197". Review: [entry59_bezek_review.md](../sites/entry59_bezek_review.md).
+- **Stacey 2007.** Review: [qumran_stacey2007_review.md](../sites/qumran_stacey2007_review.md).
+- ***HA* 40 (1971), p. 22 (Kh. Ibziq excavation, L-52/1971).** **Read.** The item page returns 403, but the PDF opens at <https://publications.iaa.org.il/cgi/viewcontent.cgi?article=1016&context=ha_hebrew_series> (45 pp.). It reports a kokhim tomb of the 1st–2nd centuries CE (F9.9). See [entry59_bezek_review.md](../sites/entry59_bezek_review.md).
+- **Magen, "Gerizim, Mount," NEAEHL Supplement (2008), pp. 1742–1748.**
+  - An automated summary of the BAS Library page reports the Hellenistic staircases and the courtyard cistern listed in the source leads.
+  - A direct browser check shows only the History section without a login. That section dates the destruction of the temple and city to about 110 BCE by the coins (F9.11). The rest is paywalled, and the dates of use have not been checked (see Q47). *Read in full later the same day from a PDF extract; see the second run below.*
+- **Browser checks, 29 September 2026.**
+  - *Christians and Christianity* IV (JSP 16) covers sites in the Hebron hills and southern Judea. It has no chapter on Mar Saba, Castellion, Choziba or Chariton. Vol. II (JSP 14) is a site corpus, pp. 165–364, not yet searched.
+  - Boaz Zissu, "Kings, Hermits and Refugees in the Judean Desert in the Late Second Temple Period and During the Bar Kokhba Revolt," in *New Studies in the Archaeology of the Judean Desert* (IAA 2023), pp. 185–216, is open access on JSTOR. Read in the second run (below).
+  - Garbrecht and Peleg 1994 is on JSTOR, "read online" with a free account. Read in the second run (below).
+  - *The Aqueducts of Israel* on Google Books (ID GWhoAAAAMAAJ) is snippet-only; see F9.10 and F10.8.
+  - WorldCat holdings could not be checked (a human-verification page).
+
+## Source extractions, 2026-09-29 (second run)
+
+See [source_extractions_2026-09-29.md](source_extractions_2026-09-29.md). Each extraction file in `registration/` gives its citation, access route and reading mode on its first line.
+
+- **Uploaded by the user (not in the repository):**
+  - Magen, "Gerizim, Mount," NEAEHL 5 (2008), pp. 1742–1748: an 11-page PDF extract (printed pp. 1742–1752). Text layer; the site plan (p. 1743) was checked on the page image. ISBN 978-965-221-068-5.
+  - Garbrecht & Peleg, *BA* 57.3 (1994), pp. 161–170: the JSTOR PDF (stable URL 3210411), 11 pages. Printed page = PDF page + 159. The table on p. 169 was transcribed from the page image.
+- **Open access, read in full:**
+  - Magen, Bijovsky & Tzionit, *Mount Gerizim Excavations* III: *The Coins* (JSP 19, IAA 2021), JSTOR `j.ctv2bwvt5v`, CC BY-NC 4.0. In Section One, printed page = PDF page − 1.
+  - Zissu, "Kings, Hermits and Refugees…," in *New Studies in the Archaeology of the Judean Desert* (IAA 2023), pp. 185–215, JSTOR `jj.10329820.11`, CC BY-NC 4.0. Printed page = PDF page + 181.
+  - SWP *Memoirs* II (1882), Internet Archive `surveyofwesternp02conduoft`: Bezek p. 231, Kh. Ibzik p. 237, Kh. es Selhab p. 240.
+  - Guérin, *Samarie* I (1874), Internet Archive `descriptionsam01gu`: Kharbet Salhab p. 355.
+  - *Hadashot Arkheologiyot* 40 (Oct. 1971), IAA publications portal: Kh. Ibziq p. 22 (PDF p. 23).
+  - Gaß, "Besek," *WiBiLex* (2011), Augsburg OPUS 94703.
+- **Search-only or snippets:**
+  - *The Aqueducts of Israel* (JRA Suppl. 46, 2002): HathiTrust `mdp.39015051834664`, page-level word hits (HathiTrust seq = printed page + 4); Google Books `GWhoAAAAMAAJ` snippet images. Used for Ilan & Amit pp. 380–386 and Patrich pp. 336–352.
+  - Jeremias, *Heiligengräber in Jesu Umwelt* (1958), Internet Archive `heiligengraberin0000joac` (lending copy): search-inside paragraphs. Leaf = printed page + 2.
+  - DJD III (1962), Internet Archive `lespetitesgrotte0000unse` (lending copy): search-inside paragraphs. Leaf = printed page + 20.
+- **Blocked:**
+  - Patrich 1989 (Hebrew) on Kotar: kotar.cet.ac.il returned a server error; en.kotar.co.il shows guests only a paywalled p. 243.
+  - The BAS Library needs a login; the NEAEHL entry was supplied instead as a PDF.
+  - The old *Hadashot* site search (hadashot.iaa.org.il) returns nothing even for a control query during its move to the IAA portal.
+- **Not found online:** *Mount Gerizim Excavations* II (JSP 8); JRA Suppl. 46 on Internet Archive.
+
+## Source extractions, 2026-09-29 (third run)
+
+The same eight prompts, run again in another browser session. Files: `registration/extractions_run3/`; comparison in [source_extractions_2026-09-29.md](source_extractions_2026-09-29.md#third-run-the-same-eight-prompts-run-again). Each file gives its citation, access route and reading mode on its first line.
+
+- **Read in full:**
+  - Magen, Bijovsky & Tzionit, *Mount Gerizim Excavations* III (JSP 19, 2021), JSTOR `j.ctv2bwvt5v`: Sections One (pp. 1–78) and Two (pp. 79–129), text layer. The catalogue (pp. 130–204) was not searched.
+  - Garbrecht & Peleg, *BA* 57.3 (1994), JSTOR 3210411, with every number checked on the page images.
+  - Zissu 2023, JSTOR `jj.10329820.11`.
+- **Page images or full OCR:** Zertal, *Manasseh Hill Country Survey* 2, Google Books `LwawCQAAQBAJ`, pp. 151–153 (preview pages; other pages snippets only); SWP *Memoirs* II, Internet Archive `surveyofwesternp02conduoft`.
+- **Snippets or search only:** *The Aqueducts of Israel* (JRA Suppl. 46), Google Books `GWhoAAAAMAAJ`; Jeremias 1958, Internet Archive `heiligengrberinj0000jere`; DJD III (Texte), Internet Archive `discoveriesinjud0000mbai`. These are different Internet Archive copies from the second run's.
+- **Blocked this time:** the BAS Library (login), HathiTrust search (a bot check), Kotar (server errors), the IAA survey records for the Benjamin survey, and the *Hadashot* search page.
+- **Outreach:** the Gmail check was repeated at about 03:50 UTC on 30 September; still no replies.
+
+## Additional Kotar books received — 30 September 2026
+
+Three user-supplied JPEG collections were inspected in targeted sections: *Perach bar ba-midbar* (*Ariel* 186, 2009), *Israel Guide* vol. 13 (2001), and *Dead Sea and Judean Desert 1900–1967* (1990). The [intake report](kotar_books_intake_2026-09-30.md) records exact printed/scanned page correspondences, observations, inherited claims, competing interpretations and next tests. The structured accession/feature records are in [`registration/kotar_book_leads_2026-09-30.json`](https://github.com/quadrin/CopperScroll/blob/main/registration/kotar_book_leads_2026-09-30.json). No full-book OCR or exhaustive review was performed.
+
+The separate user-supplied *Ancient Aqueducts in the Land of Israel* ZIP is available locally. This intake does not mark its previously blocked chapters as read.
+
+## Text provenance and reuse
+
+Use the available editions as research sources. Keep ancient wording, an editor's restoration, a modern translation and the project's own interpretation distinguishable, with page and line citations. Existing files and historical delivery notes do not establish a blanket permission or prohibition for new publication. Follow [Text and publication](../../AGENTS.md#text-and-publication); a replacement-transcription search is not a prerequisite for the research.
+
+For the distinction between preexisting material and new contributions in an edition, see [17 U.S.C. § 103(b)](https://www.copyright.gov/title17/92chap1.html#103). For the PEF map, see the [CC BY-NC-SA 3.0 terms](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+
+## Plates used for the 2026-09-29 plate check
+
+Puech 2006, vol. II, in the local PDF parts 9–11:
+
+- **Radiographs of the original segments:** pls. CCCXXXIII–CCCLVI (part 10, PDF pages 23–46), two per column.
+- **Colour photograph of the galvanoplastic copy:** pls. CCCLIX–CCCLXXXI, odd numbers (part 10 pp. 51–69; part 11 pp. 1–3).
+- **Puech's facsimile drawings:** the even numbers CCCLX–CCCLXXXII.
+- **A second copy photograph:** pls. CCXCVI–CCCVII (part 9 pp. 50–61). It proved to be the same image.
+
+The plate captions were checked by `tools/plate_extract.py` before extraction. See [plate_check.md](../text/plate_check.md).
+
+## Primary-source access and Derech Eretz — 30 September 2026
+
+- **Patrich 1989 Hyrcania chapter: directly read in full**, printed pp. 243–260 = user-supplied aqueduct ZIP scans 256–273. Earlier blocked-access entries above are historical. Full English 2002 chapter remains separately unreviewed.
+- **Derech Eretz: Stone, Pottery and Man (1996)**, edited by Irit Zaharoni, Kotar 96658741; user supplied `derech-eretz.zip` (408 numbered JPEGs). Hyrcania pp. 322–329 visually read in full; Mar Saba pp. 306–307 and 312 sampled. Inspected scan numbers equal printed numbers. Same author Patrich: dependent synthesis, not independent corroboration.
+- **Porat, Eshel and Frumkin 2009 Christmas Cave chapter**, printed pp. 31–52: Cave Research Center PDF, 24 pages including two cover pages. Plan/contexts checked alongside chapter text.
+- **Rasmussen et al. 2022, Heritage Science 10:18**, DOI `10.1186/s40494-022-00652-2`: 22-page publisher PDF. Location, provenance, sampling, dating and archaeological discussion checked; Tables 2 and 9 visually checked; chemical methods not independently audited.
+
+Source URLs, precise feature locators, limitations and effects on candidates are in the [primary-source follow-up](../sites/christmas_hyrcania_primary_followup_2026-09-30.md). Source scans remain outside Git; original analysis and factual records are published.
+
+## Plan, collection and Salvadora follow-up - 30 September 2026
+
+- **Patrich 1989 Figs. 1 and 22, pp. 243, 256; pool dimensions p. 255:** source scans used for the regional registration trial and detailed source-image locators. **Israel Guide 13 pp. 176-177** supplies the withheld dam grid check. Source images remain outside Git. [Registration audit](../sites/hyrcania_plan_registration_2026-09-30.md).
+- **Esri World Imagery reference export:** georeferenced EPSG:3857 raster inspected for the fort summit and possible feature controls. Image absolute accuracy and acquisition date unknown; raster kept outside Git. Exact request, extent and anchor picks are in the registration JSON. It supplies geography, not archaeological dating.
+- **Porat, Eshel and Frumkin 2009, Salvadora chapter, pp. 137-143:** entire chapter visually read, including Fig. 4 plan p. 140. [CRC PDF](https://www.malham.info/_files/ugd/2121fb_1dd5ef95cf9e4204babd56420c2e856f.pdf), nine PDF pages; printed page = PDF page + 134 after covers. Authors' Bar-Adon diary summary inspected; original diaries not inspected. [Context review](../sites/salvadora_cave_review_2026-09-30.md).
+- **Shamir and Sukenik 2010, Archaeological Textiles Newsletter 51, pp. 26-30:** [publisher article](https://tidsskrift.dk/atn/article/view/159284). Five-page PDF text read; p. 28 visually checked for counts and the printed identifier 58544. Retains unresolved arithmetic and identifier conflicts.
+- **Murphy et al. 2011, JAS, DOI 10.1016/j.jas.2011.05.004:** [UC author proof](https://escholarship.org/content/qt5fz665f7/qt5fz665f7.pdf), 13 PDF pages. Collection history proof p. 2/PDF p. 5; methods proof p. 4/PDF p. 7; Table 1 proof p. 8/PDF p. 11. Web-extracted text inspected; local download blocked and table layout not independently rendered. Final typeset corrections not checked.
+- **Porat, Davidovich and Frumkin 2012, Environmental setting of the Christmas Cave:** [HU institutional PDF](https://openscholar.huji.ac.il/sites/default/files/dr.jan-gunneweg/files/4.pdf), nine locally numbered pages; text read and Fig. 3 plan/profile PDF p. 7 visually checked. Morphology plan is not a trench/locus map.
+- **DQCAAS Allegro image archive and A2 slide captions:** [collection description](https://dqcaas.com/2019/10/10/the-allegro-image-archive/) and [A2 captions](https://dqcaas.com/a2-slide-collection-judith-brown/) inspected. Collection/caption leads only; original Christmas excavation records not recovered. [Manchester collection page](https://www.library.manchester.ac.uk/rylands/special-collections/subject-areas/classics-ancient-history/) is an institutional lead, without an exact recovered cave-folder shelfmark.
+- **Carson-Newman excavation accounts, 2023 and 2026:** [2023 partner announcement](https://www.cn.edu/historic-archeological-dig-connects-judean-desert-to-east-tennessee/) and [16 March 2026 firsthand account](https://www.cn.edu/beneath-the-collapse/), the latter reporting 26 February fieldwork. Establish newer excavation activity; not surveyed water-system plans or first-century usage evidence.
+
+The [collection crosswalk](christmas_cave_provenance_2026-09-30.md) traces published identities across the 2011 and 2022 tables. Repeated measurements, source-dependent descriptions and changing calibration curves are not new find contexts.
+
+
+## Twin Cave plan retrieval — 1 October 2026
+
+- **Bar-Adon 1989, Hebrew pp. 15–17 / English p. 5*:** original pages remain unread; JSTOR PDF requests returned HTML. The narrower summary locator comes from the inspected catalogue.
+- **Feig 2002, Hebrew report / English summary; Sion 2002 English survey:** publisher catalogues inspected; advertised download endpoints returned 403. No original page or figure counted as inspected.
+- **Greenberg–Keinan 2009 excavation catalogue:** public PDF read at printed pp. 16, 20, 65, 110, 158 to stated coordinate/cave/bibliography coverage. Compiled source; one bounded coordinate-precision check, no additional primary field target. [Exact attempts, checksum and cave/licence locators](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_plan_access_2026-10-01.md).
+
+
+## Supplied ʿAtiqot 41 correction — later 1 October 2026
+
+The source register already records the user's complete Hebrew issue of *ʿAtiqot* 41 (2002): 25 PDF files, 295 pages, supplied in session 2 and re-supplied on 29 September. Its Feig IV/11 report is included. The register also preserves a descriptive observation about the cave's 2.5 m pillar; calling that report wholly unread or never supplied was incorrect. The [Region V extraction](https://github.com/quadrin/CopperScroll/blob/main/registration/atiqot41_region_v_extracted.md) documents prior original-page inspection and the reassembled archive checksum, `576e957af0c1cfeac7a9c2a2425b42ef10fd97c99a460b7d7bfb6f0527378f67`.
+
+The current handoff preserves notes and provenance, but not the original 25 PDFs. The supplied Hebrew issue must therefore be recovered or reattached for a fresh, page-and-figure-specific IV/11 entrance/phase test. Publisher HTTP 403 responses describe that retrieval route; they do not establish that the user never supplied the report. The English issue was not uploaded. Sion's supplied Hebrew Regions IV/VI report is an alternative to the unavailable English p. 52 and needs its own page locator. Bar-Adon's *ʿAtiqot*, Hebrew Series 9 (1989), is a separate volume and remains an unread original-plan target.
+
+This is a continuity/access correction, with no new original-page inspection, measured candidate test or closure. Cumulative KPI counts remain 4 primary targets / 5 map intakes / 6 bounded checks / 0 decisive candidate tests / 0 closures. R02 remains Blocked on the currently missing original drawings, with an explicit recovery route; rankings, confidence assessments and geometry are unchanged.
+
+
+## Supplied ʿAtiqot 41 originals inspected — later 1 October 2026
+
+All six archive parts reassembled with the recorded SHA-256; 25 PDFs / 295 PDF pages are intact. Feig's Hebrew pp. 85–90 / Plan 1 and Figs. 1–6 are now inspected. IV/11 has an internal southwest pillar; the report does not document a pair of exterior mouths. Its upper-fill coins cannot date the entrance arrangement. Sion's Hebrew pp. 61–64 / Fig. 12 / Plan 5 are inspected to the stated cave/context coverage. They identify a separate IV/17 comparison: two openings in the eastern cliff, northern and southern spaces separated by a rock-cut pillar, and a partly walled southern mouth. The published Hellenistic-use interpretation does not establish the relevant first-century threshold or pillar-cutting date. Preserve reading alternatives and separate confidence for reading, site, feature, phase and position.
+
+R02 returns to In progress, with IV/17 threshold/phase records and the directional apparatus as next tests. The shared group coordinate is not an entrance point; source-plan observations are recorded without new WGS84 mouth or deposit geometry. Bar-Adon 1989 pp. 15–17 / English p. 5* remain unread Twin Cave targets. Two newly completed scoped primary targets and two bounded checks bring totals to 6 primary targets / 5 map intakes / 8 bounded checks / 0 decisive candidate tests / 0 closures. Status totals: 7 In progress / 5 Queued / 0 Blocked. Prior recovery/403 dependencies for the supplied Hebrew issue are superseded. [Pages, evidence labels and limits](https://github.com/quadrin/CopperScroll/blob/main/research/sources/atiqot41_iv11_iv17_review_2026-10-01.md).
+
+
+## Bar-Adon 1989 detailed summary supplied — later 1 October 2026
+
+The supplied twelve-page analytical summary identifies the correct 1989 report. Its p. 4 reports two eastern Twin Cave entrances divided by a pillar, a northern single-level unit about 35 m long / 4 m average width, a southern unit with two levels, mixed-period deposits and inadequately recorded locus boundaries. Treat these as reported source claims pending original-page inspection; the assistant-authored summary adds no independent excavation observation. Its 1982 negative-season claim must remain separate from ESI 6's inspected 1986 account. Obtain original printed pp. 15–17, Fig. B1, captions and notes; the summary's ten-leaf viewer offset gives pages 25–27, subject to verification. Figure type/scale, cavity connectivity, entrance bearings and the period northern threshold remain unresolved. R02 remains In progress. KPI counts remain 6 primary targets / 5 map intakes / 8 bounded checks / 0 decisive candidate tests / 0 closures; no ranking or geometry change. [Intake, exact claims and source limits](https://github.com/quadrin/CopperScroll/blob/main/research/sources/baradon1989_supplied_summary_review_2026-10-01.md).
+
+
+## Twin Cave original-page extraction supplied — later 1 October 2026
+
+The user supplied a page-image-checked note for Bar-Adon 1989 printed pp. [15]–17, verified as JSTOR viewer pages 25–27. Credit the source reader's original-page inspection; this integrating session has not independently inspected/exported those images. The extraction supports two openings facing east toward the Dead Sea, a thick dividing rock pillar, a single-level northern cavity 35 m long / 4 m average width, and a southern two-level unit. Entrance dimensions, mouth spacing, internal communication and architectural chronology remain unreported in that coverage. Fig. B1 is an exterior photograph viewed from the southeast, with no scale or orientation labels; it supplies no measured plan/section. The catalogue's Cave A/B must not be equated with north/south, and its “pillar” locus cannot date pillar construction.
+
+Late Second Temple-compatible ceramic parallels establish use, with no dated northern threshold or entrance phase. Editorial note 1 says diaries recorded areas and depths but omitted precise locus boundaries. Dung, burning, rubble and ash do not establish a specific disturbance mechanism or fully mixed deposit. The general several-metre deposit cannot supply a three-cubit northern-opening datum. The original-page reading/figure-identity dependency is satisfied through the supplied extraction; next locate measured survey/sections and original field records linked to an identifiable northern threshold and phase. R02 remains In progress. Record 1 supplied image-checked primary-page extraction separately from 6 directly inspected primary targets; direct bounded checks remain 8, map intakes 5, decisive tests and R-question closures 0. No numerical ranking, mapped mouth or deposit geometry is added. [Full integration and verification links](https://github.com/quadrin/CopperScroll/blob/main/research/sources/twin_cave_supplied_image_checked_review_2026-10-01.md).
+
+
+## Supplied Bar-Adon capture inspected directly — later 1 October 2026
+
+The 97-page supplied screen-capture PDF now provides legible original Hebrew images. Capture PDF pp. 24–26 jointly cover printed pp. [15]–17 / Figs. B1–B2, catalogue and notes; these capture-page numbers differ from JSTOR viewer 25–27. All stated target text/figures were read directly. The description confirms the pillar and two openings facing east, northern cavity 35 m / 4 m average, and the distinction between recorded areas/depths and missing precise locus boundaries. The original grid string is `1937/1293`, a cave locator rather than an individual-mouth survey. Fig. B1 remains a photograph; period-compatible pottery still leaves architecture/threshold chronology unresolved.
+
+The p. [15] excavation credit gives Jones-associated volunteer-team and season leads for field records. A separate indexed 2023 paper acknowledges Bar-Adon private-archive records; that concerns a different cave and does not establish that Twin Cave plans survive. The focused search recovered no usable Twin Cave measured survey in this pass. Next recover measured survey/sections and cave-specific areas/depth diaries for the northern threshold. Earlier source-page access limits are superseded by the supplied capture to the inspected coverage. Upgrade the existing supplied extraction target to direct inspection: 7 direct primary targets / 0 supplied-only pending targets; 7 unique completed primary targets, unchanged. Bounded checks remain 8, map intakes 5, decisive tests and R-question closures 0. R02 remains In progress; no numeric ranking or deposit geometry change. [Checksum, page mapping and direct evidence](https://github.com/quadrin/CopperScroll/blob/main/research/sources/baradon1989_capture_direct_review_2026-10-01.md).
+
+
+## R01 focused text target and access update — later 1 October 2026
+
+Taylor–Gibson 2011 manuscript p. 22 / note 85: public extracted text inspected, original images/figures uninspected. Schulz p. 53 and Strobel Fig. 1 p. 56 remain unavailable in this pass. King's 2020 offprint failed with HTTP 403; publisher preview is front matter. [Full source and attempt record](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_drawings_phase_check_2026-10-01.md). One scoped primary target and one bounded check added; totals 8 / 5 map intakes / 9 bounded checks / 0 decisive tests / 0 closures.
+
+
+## Supplied Qumran originals: access superseded — later 1 October 2026
+
+- Schulz, *ZDPV* 76 (1960), article pp. 50–72: supplied 20-page capture directly inspected at printed pp. 52–57, especially Fig. 2/p. 53. Cited photographic plates remain unavailable within this inspected capture inventory.
+- Strobel, *ZDPV* 88 (1972), 55–86: supplied 43-page capture inspected at Fig. 1/p. 56, gorge text pp. 65–68 and plates 7–10. Fig. 1 is a de Vaux 1956-derived settlement plan. Route dimensions repeated from Schulz are not independent observations.
+- Taylor–Gibson, *Qumran in the Iron Age* (2020), 177–224: supplied repository offprint, 60 PDF pages including front matter, inspected at printed pp. 196–201, 213, 215–216/note 58 and Figs. 15–16. The 2009 visit overlaps the 2011 manuscript account; a prepared-map statement adds a record lead rather than a second campaign.
+
+[File checksums, precise capture/PDF mapping, source observations and tests](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_supplied_originals_review_2026-10-01.md). Earlier JSTOR and repository-403 attempts remain historical, superseded to this inspection scope. Three new source targets / three bounded checks added; totals 11 / 5 map intakes / 12 bounded checks / 0 decisive tests / 0 closures. Raw source PDFs are not part of this research update.
+
+
+## Peleg aqueduct map retrieval search — later 1 October 2026
+
+R01 / Q38, Q41–Q42: no digital map, drawing/file identifier or confirmed custodian recovered. Verified the Staff Officer's scientific-archive route and Gibson's current institution. An exact indexed NLI record, 990044096250205171, describes the separate 88 × 57 cm pocket sheet with JSP 18; this improves the old lead without inspecting the map or proving identity with Peleg's 2009 aqueduct drawing. The prepared-map statement remains the direct evidence. Preserve the 2009 reported no-dam opinion and 2018 surmised-dam account as different published positions, without inferring an undocumented revision.
+
+The new Schulz photographic montage opens at 236 × 2048 pixels; captions and individual-opening identification remain unresolved. Recorded public preface/plan access failures and an exact archive-enquiry specification; no message sent. Counts remain 11 direct primary targets / 5 map intakes / 12 bounded checks / 0 decisive tests / 0 question closures; 7 In progress / 5 Queued. [Search, verified routes, unread links and next retrieval test](https://github.com/quadrin/CopperScroll/blob/main/research/sources/peleg_aqueduct_map_search_2026-10-01.md).
+
+
+## Full JSP 18 report: preface and missing pocket sheet — later 1 October 2026
+
+The supplied 483-page full report was checked for the separate folded plan and inspected at production credits, preface XI–XII/XVI–XVII, the unnumbered aerial spread, and water-system pp. 75–80. No separate pocket-plan page or embedded attachment occurs in this PDF. The preface now supplies direct provenance: Magen says he completed and edited the report after Peleg's death; its joint author line alone therefore cannot show that Peleg revised his 2009 dam position. Alina Pikovsky's graphic-artist acknowledgement and Keterpress's production credits provide workflow leads, without identifying a map's drafter or custodian. Ask for the JSP 18 pocket-sheet artwork and drawing/version records. Peleg's 2009 map remains unrecovered.
+
+Count one newly inspected preface/production target from the same publication (new pages), plus one negative pocket-sheet payload check. The already inspected water-system pages add no second target. Totals: 12 primary targets / 5 map intakes / 13 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Checksum, page mapping, scope and next retrieval specification](https://github.com/quadrin/CopperScroll/blob/main/research/sources/magen2018_full_report_map_check_2026-10-01.md).
+
+
+## R01 / Q38, Q41–Q42 — Online map and production-artwork search, 2 October 2026 (UTC)
+
+No identifiable 2009 Peleg aqueduct map, separate 2018 pocket sheet or production artwork was recovered through the checked public routes. Downloaded and inspected IES preview assets as front/back covers; recovered 2007 Fig. 35 water-system aerial and Fig. 4 settlement-plan comparison images. Those older reproductions add no independent source target. Artist/gallery profile supplies a specific JSP print-production lead, without map-specific authorship or custody confirmation. NLI and Haifa catalogue records and the artist's Behance portfolio remain reader-limited; exact links and superseded image-access failures are recorded in the [retrieval note](https://github.com/quadrin/CopperScroll/blob/main/research/sources/peleg_aqueduct_map_search_2026-10-01.md).
+
+Next obtain the physical sheet by NLI 990044096250205171 or a map-specific archive/production identifier and test its upper-gorge coverage. R01 stays In progress; cumulative totals remain 12 primary targets / 5 map intakes / 13 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. Candidate confidence, rankings and coordinates are unchanged. No contact was made or image file republished in the repository.
+
+
+## Supplied-book plans clarified — later 1 October 2026 (America/Los_Angeles)
+
+All 483 supplied PDF pages were visually screened as contact sheets, with full-page checks of the general plan at PDF p. 35 / Fig. 9 and the water-system plan at PDF p. 144 / printed p. 121 / Fig. 121. These are available settlement plans. No additional foldout scan was identified; whether the in-text drawings reproduce the pocket sheet's artwork remains untested. Retain the negative payload check only for an additional separate sheet or attachment. “2009 aqueduct map” refers to Peleg's prepared drawing reported in Taylor–Gibson note 58, which he intended to revise after the November 2009 research visit; the date does not describe aqueduct construction. Prioritize missing upper-gorge coverage and drawing/version records. Same-file reinspection adds no KPI count, confidence or geographic change. [Full clarification](https://github.com/quadrin/CopperScroll/blob/main/research/sources/magen2018_full_report_map_check_2026-10-01.md).
+
+
+## R01 / Q38, Q41–Q42 — Construction phases and parked map retrieval, 2 October 2026 (UTC)
+
+At the user's direction, parked Peleg's prepared-map and separate pocket-sheet hunt. The next action now tests a construction contact using available records. Rechecked the supplied report's local channel/floor/cistern evidence and preserved the missing external-to-internal link. Component chronology and spatial candidate confidence remain unresolved; no ranking or coordinate change.
+
+Read Stacey's 2017 authored construction-phase response as one new source target, with provenance explicitly limited to reanalysis. Humbert 2016 pp. 425–432 and Mizzi 2022 remain unread; publisher/repository access limits and direct links are recorded. Reinspection of already used pages adds no count. Totals: 13 direct primary targets / 5 map intakes / 13 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Phase evidence, chronological dependencies and next L117 contact test](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_construction_phase_review_2026-10-02.md).
+
+
+## R01 / Q38, Q41–Q42 — Northern dump and overflow contact tests, 2 October 2026 (UTC)
+
+Checked the original 2007 dump pages/captions/note and the 2018 northern-dump catalogue/pottery record. Corrected the 2007 p. 8 date referent to the separate northwestern dump. The inspected northern-overflow descriptions and broad find lists do not establish a dated sealed construction contact. Keep Trench A and the separately listed Northern trench assemblages distinct.
+
+Three completed scoped source targets, including the original de Vaux book inspection and two bounded checks (conflicting date attribution; inconclusive construction-contact dating). R01 remains In progress; no candidate ranking/coordinate change or question closure. Next test L117's outlet/raised-rim/step relationship. Totals: 16 direct targets / 5 map intakes / 15 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Original-page mapping, correction and test scope](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_northern_dump_contact_test_2026-10-02.md).
+
+
+## R01 / Q38, Q41–Q42 and R03 / Q39 — L117 illustration test and Wadi Qelt access, 2 October 2026 (UTC)
+
+Magen–Peleg 2018 Figs. 57–58 (pp. 53–54) locate and section L117. The inspected section and de Vaux Plates VI, VIIa, XVII do not establish a dated common alteration of outlet, raised sides and added steps. De Vaux p. 9's explicit heightening concerns L110; do not transfer that observation to L117 without a supporting record. The bounded construction-linkage check is inconclusive; the available illustration pass is parked pending a specific joint/context record.
+
+R03 becomes P1 / In progress. Patrich 1990 p. 208 n. 24 remains unread. ESI 7–8's exact publisher download returned 403 through the web reader and an ordinary direct request; cited pp. 92–95 remain unread. The Hebrew pp. 179–193 parallel is bibliographic only. No new Wadi archaeological observation, source-inspection count or feature test is added.
+
+Add 1 conservative primary section target / 1 bounded check. Cumulative totals: 17 direct targets / 5 map intakes / 16 bounded checks / 0 decisive tests / 0 R closures; 7 In progress / 5 Queued. Reading alternatives, candidate ranks, confidence and geography remain unchanged. [L117 original-page coverage](https://github.com/quadrin/CopperScroll/blob/main/research/sources/qumran_l117_outlet_joint_test_2026-10-02.md); [unread Wadi links and test requirements](https://github.com/quadrin/CopperScroll/blob/main/research/sources/wadi_qelt_source_access_2026-10-02.md).
+
+
+## R03 / Q39 — Supplied ESI 7–8 cave-survey original, 2 October 2026 (UTC)
+
+Directly inspected printed pp. 92–95 / PDF pp. 103–106 and title/publication leaves in the supplied 220-page scan (SHA-256 `7e245f8ef79f32858a7ef3733c6e93670b6a06cde0794fcacc1626425ee0b0a0`). Wadi Qilt Cave 20's lamp is assigned to the second century CE; the Roman arrowhead is a path find. Neither supplies the proposed opposite-monastery wall's construction contact. Fig. 78 belongs to Ramot; Figs. 79–80 concern Na'aran/lower Makkuk. The cave article ends before Hirschfeld's separate monastery survey on p. 95.
+
+Complete one scoped primary-source inspection and one bounded wall-section/dated-contact coverage check (candidate phase remains inconclusive). The supplied original supersedes the publisher 403 reading dependency; park this inspected report as a wall-section lead. Patrich 1990 p. 208 n. 24 remains unread. Next seek a measured wall record and exact PEF aqueduct/tracing items. R03 remains P1 / In progress; confidence, ranks and geometry unchanged.
+
+Totals: 18 direct primary targets / 5 map intakes / 17 bounded checks / 0 decisive tests / 0 R closures; 7 In progress / 5 Queued. [Original-page evidence and distinctions](https://github.com/quadrin/CopperScroll/blob/main/research/sources/esi78_cave_survey_review_2026-10-02.md).
+
+
+## R03 / Q39 — Public PEF catalogue and parked retrieval leads, 2 October 2026 (UTC)
+
+Patrich 1990 p. 208 n. 24 remains unavailable and parked. Recovered OpenJerusalem's selected PEF EAD export and searched 562 component descriptions, without an exact match for the regional aqueduct plans/proof or four SWP Sheet XVIII tracings. Ain es Sultan's mound/pottery tracings and Warren's inscription/Haram Sheet XVIII items are distinct records. This selected inventory cannot establish absence from the full archive. Original drawing images remain unread.
+
+Park this catalogue pass; resume R03 on an exact item reference or measured wall record. Prioritize R02's available directional apparatus. R03 moves to P2 / In progress. Retrieval adds no primary inspection, bounded feature check, closure, candidate confidence or geography change. Totals remain 18 direct targets / 5 map intakes / 17 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. [Catalogue URLs, export checksum and scope](https://github.com/quadrin/CopperScroll/blob/main/research/sources/wadi_qelt_source_access_2026-10-02.md).
+
+
+## R02 — Entry 25 direction and atlas wording, 2 October 2026 (UTC)
+
+Milik 1960 p. 140, item 27, attaches the eastward aspect to the cave. His p. 147 reference to two east-facing caves concerns successive entries VI 2 and VI 8/9, not two mouths of entry 25. Both pages were rechecked in the official PDF images. Kept the existing cave-level reading and stricter east-facing-mouth model distinct; corrected the atlas scene label/assumptions and added a Text-tab interpretation note. Twin Cave has published support for both east-facing openings; IV/17 still needs mouth bearings and threshold/phase control; IV/11 still lacks a documented exterior pair. Puech/Lefkovits original apparatus and comparison-row access remain pending, with direct links in the note.
+
+Repeat inspection and model clarification add no counted source, bounded check, decisive test or closure. Totals remain 18 direct targets / 5 map intakes / 17 bounded checks / 0 decisive tests / 0 closures; 7 In progress / 5 Queued. R02 stays P1. Next prioritize measured Twin Cave survey/northern-threshold records and separate IV/17 bearing/phase checks. No candidate ranking, coordinate or deposit geometry changed. [Evidence, provenance and access limits](https://github.com/quadrin/CopperScroll/blob/main/research/sources/entry25_direction_review_2026-10-02.md).
+
+
+## R02/R08/R10 — Parallel measurement worklist, 2 October 2026 UTC / 1 October Los Angeles
+
+Prepared six independent tracks for Twin Cave, IV/17, Qumran gorge, Hyrcania registration, entry-order sensitivity and cubit/datum models. Five workers prepared independent packets concurrently; integration added the unit sweep, reproducible IV/17 computation and machine-readable queue. Each packet specifies target, evidence/readiness, method, uncertainty and completion criterion. Four tracks have pilot/audit outputs; Twin Cave and fresh gorge geometry await measured source controls. Future runs are unscheduled.
+
+IV/17 Plan 5 pilot measures current gaps about 0.85 m / 1.2 m and midpoint separation about 4.2 m; local outward-normal proxies round to 125° relative to unspecified published north, with broad judgment bounds. Independent annotation and ancient threshold/phase remain pending. Hyrcania audit reproduces the approximately 244 m separation of stored WGS84 points without rerunning datum conversion or accepting a fit. Sixteen sequence scenarios reproduce legacy distance baselines and record anchor sensitivity; legacy 'strict' includes low-confidence associations. Unit sweeps remain conditional on translation choices and the exploratory 0.40–0.60 m range.
+
+Re-ran all four published computations successfully. Original page images are outside the research commit. Raw annotations, inputs, source hashes and scripts preserve reproducibility. Source-native geometry, archaeological phase and geographic registration remain separate. No candidate confidence, site marker or deposit geometry changed.
+
+R08 and R10 move to In progress: 9 In progress / 3 Queued. Keep setup measures separate from archaeological KPIs: 18 primary targets / 5 map intakes / 17 bounded source checks / 0 decisive tests / 0 closures, unchanged. [Worklist and packets](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/README.md).
+
+
+## Measurement cycle 2 — 2 October 2026 UTC / 1 October Los Angeles
+
+Independent IV/17 endpoint picks reproduce the first point widths/separation (approximately 0.86 m / 1.16 m / 4.23 m). Northern-mouth corner sensitivity slightly exceeds the original width/lower-bearing envelope; retain both annotation sets, wider sensitivity and unquantified north/scan/phase errors. The unchanged raw annotation includes audited feature-label and timestamp errors; no coordinate was silently revised. This is supporting narrow point reproduction, not independent archaeology or an ancient-mouth/threshold determination.
+
+Actual Hyrcania EPSG:28191 conversion reproduces the stored guide point and approximately 244 m residual. Under the retained 100 m interpretation, rounding and truncation cells leave approximately 175 m separation from the fixed prediction. Quantization alone conflicts with that prediction; feature identity and source/anchor/scale/north errors remain unbounded. Original Fig.22 is absent from current inputs; published dimensions and historical pixel picks remain previous records. No accepted new geographic fit results.
+
+The sequence lane freezes all 61 project slots (1–60 plus 12a) and executes 64 coarse grouping/division cases. Current atlas entry46 is low, correcting the legacy table's medium for this experiment. Excluding low assignments reduces longest runs to three; 30–32 survives all cases only as existing coarse Jericho membership. Fine districts, independent associations, unresolved phrase/subspan assignments and held-out itinerary tests remain pending. The full generated assignment JSON is regenerable from the committed ledger/script; original source snapshots remain local with pinned URLs/hashes.
+
+Four follow-up computations ran successfully. Frozen annotation/ledger/output hashes match; the grid-edge optimizer agrees numerically with a dense edge sample. Added two bounded checks: IV/17 point reproduction and conditional Hyrcania quantization-alone test. Added no primary target, decisive candidate test or R closure. Totals: 18 direct targets / 5 cartographic intakes / 19 bounded checks / 0 decisive tests / 0 closures; 9 In progress / 3 Queued. Candidate confidence, site markers and deposit geometry remain unchanged. [Reports, scripts and limitations](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle2/README.md).
+
+
+
+## Evidence cycle 3 — 2 October 2026 UTC
+
+IV/17's survey catalogue and Table 1 supply no dated wall/threshold contact. Newly scoped Sion pp. 81–82 identify Michael Dadon / L-656 and the archive class holding his file; survey registrations 16541/22227 and excavation baskets 656.17/656.20 are separate retrieval keys. Bar-Adon's general personal archive is Gnazim fonds 717; no Twin Cave item was recovered. Tell el-Qos remains weak/low after an independent association audit: Palmer's descriptive Arabic name gloss and PADIS's Byzantine remains do not identify the required estate/cave. Doq's literary regional anchor leaves the installation and phase open. Atlas entries 30–32 now state these limits.
+
+One scoped primary target and two inconclusive bounded checks added. Totals: 19 directly inspected primary targets / 5 cartographic intakes / 21 bounded checks / 0 decisive candidate tests / 0 closures. Question states remain 9 In progress / 3 Queued. General archive metadata, catalogue synthesis, repeated pages and literary assertion reinspection are separately labelled; grades and geographic markers remain unchanged. [Evidence, accounting and unread links](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle3/README.md).
+
+
+## Evidence cycle 4 — 2 October 2026, Los Angeles
+
+Direct Puech 2015 page review verifies entry 25 commentary and sigla, and entries 30–32 readings. Direction attachment remains open; double brackets mark an editorial correction. Narrow the p. 101 Ha-Qos citation to contextual evidence, add Puech 2015 fortress association, and retain above-outlet/toward/wall-or-mountain models. Original Amit pp. 223–224 were inspected in the prior upload turn: Fig. 1 photograph, Fig. 2 plan. The remaining chapter and source reload are pending. Gerico remains parked. Added two scoped primary targets (combined Puech and partial Amit), zero additional bounded checks / decisive tests / closures. Totals: 21 primary targets / 5 map intakes / 21 bounded checks / 0 decisive tests / 0 closures; 9 In progress / 3 Queued. Candidate grades and coordinates unchanged. [Evidence and limitations](https://github.com/quadrin/CopperScroll/blob/main/research/measurements/cycle4/README.md).
+
+
+
+### Trümper 2018 — Jericho swimming-pool assessment intake
+
+Monika Trümper, “Swimming Pools and Water Management in the Eastern Mediterranean World of the 4th to 1st Century BC,” in Jonas Berking, ed., *Water Management in Ancient Civilizations*, Berlin Studies of the Ancient World 53 (2018), pp. 255–296. [Publisher PDF](https://edition-topoi.org/download_pdf/bsa_053_10.pdf), 42 pages, SHA-256 `0d0cd8031e3e03181d67942851017f7a4ae9219f0bc405c97f954b094f7efab7`. Direct image inspection scope printed pp. 280–286 / Figs. 18–22 and p. 296 credits; Netzer bibliography checked as provenance. One authored-reanalysis/reproduced-plan target; same Netzer excavation lineage, no independent field attestation. Puech 2015 pp. 62–65 reinspection adds no target. Original Netzer books not read: publisher/catalogue pages only. Exact original-page targets and access links in [phase review](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/phase-review.md).
+
+
+
+### Netzer 1983 — signed-in Kotar original chapter
+
+Ehud Netzer, “ארמונות החורף ואחוזת המלך ביריחו,” *קרדום: יריחו וסביבתה* 28–30 (1983), pp. 95–112. Target-scope direct image inspection: printed pp. 100–101 and 104–106, complete earlier-pool plan, later second-palace plan and joining footnote. Context pages 95–99/102–103 viewed to stated partial coverage. [Kotar viewer](https://kotar.cet.ac.il/KotarApp/Viewer.aspx?nBookID=95087647). Signed-in access successful. Original-author illustrated preliminary account, same Netzer fieldwork lineage; separate from both 2001 books. No raw page images published. [Observations and scope](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/kotar-netzer1983.md).
+
+
+### Netzer 2001 — supplied original books
+
+Both PDFs accessible locally. Final report Vol. I printed pp. 74, 82, 84–85 directly image-inspected; illustrated book archaeological plan inspection pending. Earlier publisher-only access limit is superseded for these supplied copies. Complete plan/foldout coverage remains unverified. [Hashes, observations and scope](https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry29_jericho_pools/netzer2001-first-pass.md).
+
+## Supplied Perlego reports and captures — 14 October2026
+
+[Source-specific reconciliation](perlego_captures_2026-10-14/README.md) covers Cotton2022, Callegher2023, Dorsey1991, Wilson’s Arch2025, Southern Wall2023, Digging Up Jericho2020 and Magness2021. These are complete readings of supplied reports with scoped captured-page checks; unseen book text and omitted chapters remain unchecked. The source register distinguishes new editorial/context corrections from repeated excavation/document lineages, and records protected-image limits.
+

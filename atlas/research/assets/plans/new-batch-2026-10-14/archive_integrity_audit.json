@@ -1,0 +1,322 @@
+{
+  "date": "2026-10-14",
+  "scope": "Byte-level verification of all registered assets against the completed native archives1–17; no images rendered/opened by validation. Earlier saved snapshots12/16 retained separately.",
+  "method": "SHA256 and byte count; ZIP CRC; every public registered member checked by byte count and SHA256. Earlier snapshot repair parsed complete local members with CRC checks and rebuilt only their ZIP directory.",
+  "saved_snapshot_audit": [
+    {
+      "archive_file": "CopperScroll_native_archive_01_2026-10-14.zip",
+      "original_sha256": "1f3270bf0697661c1558c2b84569dcf7139a46be8c31e54ee0fd3d4c07b3c13f",
+      "original_bytes": 88575624,
+      "original_central_directory_present": true,
+      "members_verified": 182,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_02_2026-10-14.zip",
+      "original_sha256": "f34a8319c0c5907c4018d4cb57c1b1f1d47849aaece77c6a42b5e47cbd531cc4",
+      "original_bytes": 90452805,
+      "original_central_directory_present": true,
+      "members_verified": 243,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_03_2026-10-14.zip",
+      "original_sha256": "377181233e24a0500bcbf7547c67f3d047bcbf5e38c206fa6d6ad5d47abe10dd",
+      "original_bytes": 90185299,
+      "original_central_directory_present": true,
+      "members_verified": 156,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_04_2026-10-14.zip",
+      "original_sha256": "d96a702b9214e618654c928328d1d7b4adfa1612b8f8be3d9d09c856448dfb06",
+      "original_bytes": 88409880,
+      "original_central_directory_present": true,
+      "members_verified": 108,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_05_2026-10-14.zip",
+      "original_sha256": "42ae01999f39e740913ac29cae6afdcfc2ce6e83955be21d36f8c44db9aacb54",
+      "original_bytes": 89586041,
+      "original_central_directory_present": true,
+      "members_verified": 184,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_06_2026-10-14.zip",
+      "original_sha256": "91018ca23abadcd60918c160894bfe74c8e3ba8fa3187d62c9fd0032111c95f1",
+      "original_bytes": 92445379,
+      "original_central_directory_present": true,
+      "members_verified": 269,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_07_2026-10-14.zip",
+      "original_sha256": "b887a672952c843483751af93d0346fb9e542125f6e3cd4a1ce1518e7f8ea3ce",
+      "original_bytes": 89910307,
+      "original_central_directory_present": true,
+      "members_verified": 152,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_08_2026-10-14.zip",
+      "original_sha256": "292f5326953ea57f8be7b66b22c5b6a64751f7b8cf6cdf660a29da2256d129c6",
+      "original_bytes": 92934975,
+      "original_central_directory_present": true,
+      "members_verified": 134,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_09_2026-10-14.zip",
+      "original_sha256": "a22707a90414f95505197d9e26a6ff330900558d8cd0df8cd97567ea3ae9e83d",
+      "original_bytes": 92097854,
+      "original_central_directory_present": true,
+      "members_verified": 264,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_10_2026-10-14.zip",
+      "original_sha256": "e9f1552d48188770264caa9fd2cbdb48ae1c7340081776249adc0764ba2fbcb2",
+      "original_bytes": 85684972,
+      "original_central_directory_present": true,
+      "members_verified": 180,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_11_2026-10-14.zip",
+      "original_sha256": "f61c45bc85241b5fa2bdcc36037b7c5946a21b9676dec2301da46e7fae879c4d",
+      "original_bytes": 80032309,
+      "original_central_directory_present": true,
+      "members_verified": 445,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_12_2026-10-14.zip",
+      "original_sha256": "d500d590ee92680b9c620b6d684333f125cdd5e80551221efd713b6797b7fbd0",
+      "original_bytes": 90951763,
+      "original_central_directory_present": false,
+      "members_verified": 285,
+      "member_crc_and_hash_check": "pass",
+      "unparsed_source_bytes": 0,
+      "repaired_archive_file": "CopperScroll_native_archive_12_2026-10-14_repaired.zip",
+      "repaired_sha256": "894ce8976d6c784ea4b19730ea0c90f4272fe8f58b651c4fc8e5862e01f0cde5",
+      "repaired_bytes": 93258095,
+      "repair_scope": "Directory rebuilt; every complete member retained byte-for-byte. No missing member inferred or reconstructed.",
+      "snapshot_complete_archive": false,
+      "snapshot_limit": "Early partial saved copy, superseded by completed original checked in current_archives; repaired copy preserves only recovered complete members."
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_13_2026-10-14.zip",
+      "original_sha256": "f7703bb69f97338cc26a36db544d37b0c14ab3623f2ce3c8e504a1471a7ac9a9",
+      "original_bytes": 92812702,
+      "original_central_directory_present": true,
+      "members_verified": 267,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_14_2026-10-14.zip",
+      "original_sha256": "5c4640c9c2b79802974ea9a540913c69b02ab47ddfd2a0c9781b2fbdcd8a5433",
+      "original_bytes": 87849398,
+      "original_central_directory_present": true,
+      "members_verified": 188,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_15_2026-10-14.zip",
+      "original_sha256": "de2267b9adcf5d1406d99ad95a9f3d52d24fa396ee8d7516b7866bbb6a580f11",
+      "original_bytes": 93324393,
+      "original_central_directory_present": true,
+      "members_verified": 140,
+      "zip_crc_check": "pass"
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_16_2026-10-14.zip",
+      "original_sha256": "4dcd6173330c7da2117b44b16665ce7534e44370d1b19c89d864a983e39b82c5",
+      "original_bytes": 75038289,
+      "original_central_directory_present": false,
+      "members_verified": 137,
+      "member_crc_and_hash_check": "pass",
+      "unparsed_source_bytes": 0,
+      "repaired_archive_file": "CopperScroll_native_archive_16_2026-10-14_repaired.zip",
+      "repaired_sha256": "4e3064bf9a2ee0f1f4bef7d61005ce36ced6f5b5f3c95f2507d2f68f32199c3b",
+      "repaired_bytes": 75984862,
+      "repair_scope": "Directory rebuilt; every complete member retained byte-for-byte. No missing member inferred or reconstructed.",
+      "snapshot_complete_archive": false,
+      "snapshot_limit": "Early partial saved copy, superseded by completed original checked in current_archives; repaired copy preserves only recovered complete members."
+    }
+  ],
+  "current_archives": [
+    {
+      "archive_file": "CopperScroll_native_archive_01_2026-10-14.zip",
+      "bytes": 88575624,
+      "sha256": "1f3270bf0697661c1558c2b84569dcf7139a46be8c31e54ee0fd3d4c07b3c13f",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 181,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_02_2026-10-14.zip",
+      "bytes": 90452805,
+      "sha256": "f34a8319c0c5907c4018d4cb57c1b1f1d47849aaece77c6a42b5e47cbd531cc4",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 242,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_03_2026-10-14.zip",
+      "bytes": 90185299,
+      "sha256": "377181233e24a0500bcbf7547c67f3d047bcbf5e38c206fa6d6ad5d47abe10dd",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 155,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_04_2026-10-14.zip",
+      "bytes": 88409880,
+      "sha256": "d96a702b9214e618654c928328d1d7b4adfa1612b8f8be3d9d09c856448dfb06",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 107,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_05_2026-10-14.zip",
+      "bytes": 89586041,
+      "sha256": "42ae01999f39e740913ac29cae6afdcfc2ce6e83955be21d36f8c44db9aacb54",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 183,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_06_2026-10-14.zip",
+      "bytes": 92445379,
+      "sha256": "91018ca23abadcd60918c160894bfe74c8e3ba8fa3187d62c9fd0032111c95f1",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 268,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_07_2026-10-14.zip",
+      "bytes": 89910307,
+      "sha256": "b887a672952c843483751af93d0346fb9e542125f6e3cd4a1ce1518e7f8ea3ce",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 151,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_08_2026-10-14.zip",
+      "bytes": 92934975,
+      "sha256": "292f5326953ea57f8be7b66b22c5b6a64751f7b8cf6cdf660a29da2256d129c6",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 133,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_09_2026-10-14.zip",
+      "bytes": 92097854,
+      "sha256": "a22707a90414f95505197d9e26a6ff330900558d8cd0df8cd97567ea3ae9e83d",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 263,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_10_2026-10-14.zip",
+      "bytes": 85684972,
+      "sha256": "e9f1552d48188770264caa9fd2cbdb48ae1c7340081776249adc0764ba2fbcb2",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 179,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_11_2026-10-14.zip",
+      "bytes": 80032309,
+      "sha256": "f61c45bc85241b5fa2bdcc36037b7c5946a21b9676dec2301da46e7fae879c4d",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 444,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_12_2026-10-14.zip",
+      "bytes": 92224826,
+      "sha256": "5d6c1e3338e96a9fd033294ffd459b546cfe768f97340547b1083e9b40203c86",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 288,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_13_2026-10-14.zip",
+      "bytes": 92812702,
+      "sha256": "f7703bb69f97338cc26a36db544d37b0c14ab3623f2ce3c8e504a1471a7ac9a9",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 266,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_14_2026-10-14.zip",
+      "bytes": 87849398,
+      "sha256": "5c4640c9c2b79802974ea9a540913c69b02ab47ddfd2a0c9781b2fbdcd8a5433",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 187,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_15_2026-10-14.zip",
+      "bytes": 93324393,
+      "sha256": "de2267b9adcf5d1406d99ad95a9f3d52d24fa396ee8d7516b7866bbb6a580f11",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 139,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_16_2026-10-14.zip",
+      "bytes": 77100342,
+      "sha256": "baafdb3134db943025256900813ba10f7572ca0e1b50e2e5d26f97120bae5595",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 143,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    },
+    {
+      "archive_file": "CopperScroll_native_archive_17_2026-10-14.zip",
+      "bytes": 3632206,
+      "sha256": "9517ee6316b8d869a806fc8f90f60633841e2dfb21e4053f16846dd7b4e824dc",
+      "zip_crc_check": "pass",
+      "registered_members_verified": 74,
+      "unregistered_members": [
+        "ARCHIVE_SCOPE.json"
+      ]
+    }
+  ],
+  "current_archive_basis": "Parts12/16 refreshed after a concurrent writer completed and replaced the original Drive archives. Earlier incomplete saved snapshots were repaired without inventing missing members, but are not substitutes for the completed originals. The completed originals contain additional members."
+}

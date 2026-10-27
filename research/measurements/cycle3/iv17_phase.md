@@ -54,3 +54,8 @@ The [official excavation guidelines](https://www.gov.il/BlobFolder/generalpage/a
 Next record: an original file cover/index tying **L-656/1994-0** to IV/17, followed by the already specified **656.17/656.20** basket registers, wall-foundation contacts, northern-threshold section/levels and measured entrance axes with a defined north convention. Neither source supplies those observations. Architectural dates, geometry, candidate confidence and outcome remain unchanged.
 
 Access: [publisher/distributor PDF](https://www.emekshaveh.org/he/wp-content/uploads/2013/09/WBADB_sourcebook.pdf) downloaded successfully after the supplied [Drive copy](https://drive.google.com/file/d/1BxReg6GjJ4gtRoub0aQQb3YoHR-4Bzxu/view) raw download returned403; that failed URL was shared immediately. SHA-256 `449b419f6acbcc105b85d90fad8462a41a17e5617821fa51c99902ed7cec2204`; the native page images were visually checked. The two catalogue entries and their neighbours contain no plan, section or figure. Public availability does not establish reproduction permission; the source PDF remains link-only. This is an access/identifier update with zero archaeological target, bounded-test, cartographic or outcome increments. No new message, document-delivery request, order or fee.
+
+
+## Supplied workbook crosswalk — 14 October2026 UTC
+
+The [late Drive audit](../../sources/late_drive_2026-10-14/cave_routes.md) locates Cave with the Masonry Wall/Mikel Dadon/SOA/L-656/1994-0 in WBADB Surveyed row2091, Excavations row298 and License List row713. Worksheet row/Index identifiers differ from sourcebook gazetteer291. This repeats the published retrieval chain, without an original file cover, basket register, threshold section or dated wall contact.

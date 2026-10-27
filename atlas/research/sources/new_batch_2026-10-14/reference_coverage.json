@@ -1,0 +1,1569 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "scope": "Joined available-text reading with original worker scopes and separate safe visual inventories; whole-publication limits retained.",
+  "sources": [
+    {
+      "intake_index": 5,
+      "publication": "Mogilany 1989, Part II (title imprint 1991)",
+      "viewer_pages": 248,
+      "source_sha256": "420cf5e20a9a01373db2dbb3898f866250febd0f0239d369d06a3f1da875ba74",
+      "extracted_text_sha256": "82941ab8ccef7aa2c08d606d5157e8edc6a56ec1b496b4b9f9497f3dcba67374",
+      "full_volume_read": false,
+      "text_ranges_read_viewer": [
+        [
+          1,
+          248
+        ]
+      ],
+      "text_ranges_unread_viewer": [],
+      "native_pages_inspected_viewer": [
+        5,
+        8,
+        24,
+        32,
+        33,
+        100,
+        120,
+        125,
+        150,
+        178,
+        208,
+        210,
+        211,
+        214,
+        218,
+        222
+      ],
+      "text_method": "Extracted text with native-page checks where listed",
+      "caveat": "Available text is complete; every native textual page has not been inspected. No claim to the full Frohlich paper absent from this publication.",
+      "available_text_complete": true,
+      "full_native_page_audit_complete": false,
+      "encountered_figures_tables_native_complete": true,
+      "blank_versos_native_verified_viewer": [
+        8,
+        24,
+        100,
+        120,
+        150,
+        178,
+        208,
+        210
+      ],
+      "supplied_content_gap": "Frohlich printed207/viewer209 is explicitly a summary; full paper was not received by publisher.",
+      "reading_contributors": {
+        "reference_worker": [
+          [
+            1,
+            210
+          ],
+          [
+            223,
+            248
+          ]
+        ],
+        "integrator_Nitzan": [
+          [
+            211,
+            222
+          ]
+        ]
+      },
+      "encountered_figures_tables": [
+        {
+          "author": "Moskow",
+          "viewer_pages": [
+            32,
+            33
+          ],
+          "printed_pages": [
+            30,
+            31
+          ],
+          "kind": "author diagrams for wordplay argument"
+        },
+        {
+          "author": "Wise",
+          "viewer_pages": [
+            125
+          ],
+          "printed_pages": [
+            123
+          ],
+          "kind": "Table1 legal-clause comparison"
+        }
+      ],
+      "additional_visual_audit_record": "reference_visual_56_coverage.json"
+    },
+    {
+      "intake_index": 6,
+      "publication": "Mogilany 1989, Part I (1993)",
+      "viewer_pages": 302,
+      "source_sha256": "c3331490410107e6965e583cad53a3c131ce1609365661df31a3eab636513800",
+      "extracted_text_sha256": "fe25c829b7e674399d15fe6cecd84acfd1c4b44757ed70d3950e15f1ce369908",
+      "full_volume_read": false,
+      "text_ranges_read_viewer": [
+        [
+          1,
+          302
+        ]
+      ],
+      "text_ranges_unread_viewer": [],
+      "native_pages_inspected_viewer": [
+        7,
+        23,
+        31,
+        34,
+        35,
+        38,
+        40,
+        54,
+        62,
+        101,
+        124,
+        127,
+        134,
+        142,
+        148,
+        149,
+        150,
+        151,
+        161,
+        162,
+        163,
+        179,
+        184,
+        185,
+        226,
+        229,
+        232,
+        256,
+        261,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294
+      ],
+      "text_method": "Extracted text with native-page checks where listed",
+      "caveat": "All supplied text is read, including disjoint continuation receipts. Page layouts outside viewers21–40,54–74,83–294 and title viewer7 await visual audit. No external abstract-linked full paper completion is claimed.",
+      "delegated_unread_coverage_record": "mogilany_i_coverage.json: regional worker owns viewer21–40,54–74,83–294; consult that record for completed ranges and native checks; do not double count.",
+      "available_text_complete": true,
+      "reading_contributors": {
+        "reference_worker": [
+          [
+            1,
+            20
+          ],
+          [
+            41,
+            53
+          ],
+          [
+            75,
+            82
+          ],
+          [
+            295,
+            302
+          ]
+        ],
+        "regional_continuation": "mogilany_i_coverage.json",
+        "regional_helper": "mogilany_i_early_coverage.json"
+      },
+      "layout_ranges_inspected_viewer": [
+        [
+          21,
+          40
+        ],
+        [
+          54,
+          74
+        ],
+        [
+          83,
+          294
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "full_native_page_audit_complete": false,
+      "supplied_content_gap": "Davies printed51–57/viewer55–61 is an abstract; the cited external full paper is outside supplied-volume coverage.",
+      "additional_visual_audit_record": "reference_visual_56_coverage.json"
+    },
+    {
+      "intake_index": 15,
+      "publication": "Jewish Studies at the Turn of the Twentieth Century, Volume I (1999)",
+      "viewer_pages": 652,
+      "source_sha256": "786358e99f0322cdd991712a42d4ff0e9d5ef1f7bdc9d930c7905d21e4344972",
+      "extracted_text_sha256": "1f9282df2771eb899d021df1ef3f6c33ca1ef9cde9d208bf789b385674e0d679",
+      "full_volume_read": false,
+      "text_ranges_read_viewer": [
+        [
+          1,
+          652
+        ]
+      ],
+      "text_ranges_unread_viewer": [],
+      "native_pages_inspected_viewer": [
+        17,
+        19,
+        30,
+        36,
+        41,
+        68,
+        70,
+        75,
+        79,
+        80,
+        83,
+        85,
+        107,
+        109,
+        113,
+        123,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        150,
+        151,
+        164,
+        223,
+        244,
+        245,
+        246,
+        247,
+        249,
+        290,
+        333,
+        334,
+        335,
+        336,
+        337,
+        340,
+        362,
+        373,
+        375,
+        401,
+        403,
+        419,
+        420,
+        434,
+        438,
+        543,
+        544,
+        548,
+        549,
+        550,
+        562,
+        563,
+        591,
+        646,
+        647,
+        648,
+        649,
+        651,
+        652
+      ],
+      "text_method": "Full extracted text consumed in exact ranges, with native proof for malformed extraction, diagrams, numerical tables and source-local discrepancies; available whole-volume extracted text is complete; full native audit remains incomplete.",
+      "caveat": "All supplied available text consumed, with native figure/table/script proofs as listed; native layout audit of every textual page remains incomplete. Alba Cecilia omitted section remains absent. This is VolumeI, not the separate modern-history VolumeII.",
+      "completed_article_text_scopes": [
+        {
+          "author": "Morag",
+          "printed_pages": [
+            3,
+            11
+          ],
+          "viewer_pages": [
+            18,
+            26
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Blau",
+          "printed_pages": [
+            12,
+            16
+          ],
+          "viewer_pages": [
+            27,
+            31
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Charlap",
+          "printed_pages": [
+            17,
+            25
+          ],
+          "viewer_pages": [
+            32,
+            40
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Dotan",
+          "printed_pages": [
+            26,
+            30
+          ],
+          "viewer_pages": [
+            41,
+            45
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Elmedlaoui",
+          "printed_pages": [
+            31,
+            42
+          ],
+          "viewer_pages": [
+            46,
+            57
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Ferrer",
+          "printed_pages": [
+            43,
+            50
+          ],
+          "viewer_pages": [
+            58,
+            65
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Giron Blanc",
+          "printed_pages": [
+            51,
+            56
+          ],
+          "viewer_pages": [
+            66,
+            71
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Hary and Gallego",
+          "printed_pages": [
+            57,
+            64
+          ],
+          "viewer_pages": [
+            72,
+            79
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Jimenez Bedman",
+          "printed_pages": [
+            65,
+            71
+          ],
+          "viewer_pages": [
+            80,
+            86
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Khan",
+          "printed_pages": [
+            72,
+            80
+          ],
+          "viewer_pages": [
+            87,
+            95
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Schwarzwald",
+          "printed_pages": [
+            81,
+            89
+          ],
+          "viewer_pages": [
+            96,
+            104
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Shaw",
+          "printed_pages": [
+            90,
+            98
+          ],
+          "viewer_pages": [
+            105,
+            113
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Sznol",
+          "printed_pages": [
+            99,
+            107
+          ],
+          "viewer_pages": [
+            114,
+            122
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "del Barco",
+          "printed_pages": [
+            111,
+            116
+          ],
+          "viewer_pages": [
+            126,
+            131
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Ehrlich",
+          "printed_pages": [
+            117,
+            124
+          ],
+          "viewer_pages": [
+            132,
+            139
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Gottlieb",
+          "printed_pages": [
+            125,
+            130
+          ],
+          "viewer_pages": [
+            140,
+            145
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Harviainen",
+          "printed_pages": [
+            131,
+            136
+          ],
+          "viewer_pages": [
+            146,
+            151
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "van der Heide",
+          "printed_pages": [
+            137,
+            144
+          ],
+          "viewer_pages": [
+            152,
+            159
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Houtman",
+          "printed_pages": [
+            145,
+            153
+          ],
+          "viewer_pages": [
+            160,
+            168
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Shimon Levy",
+          "printed_pages": [
+            154,
+            163
+          ],
+          "viewer_pages": [
+            169,
+            178
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Lubetski",
+          "printed_pages": [
+            164,
+            172
+          ],
+          "viewer_pages": [
+            179,
+            187
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Plotkin",
+          "printed_pages": [
+            173,
+            176
+          ],
+          "viewer_pages": [
+            188,
+            191
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Polliack",
+          "printed_pages": [
+            177,
+            187
+          ],
+          "viewer_pages": [
+            192,
+            202
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Ribera-Florit",
+          "printed_pages": [
+            188,
+            198
+          ],
+          "viewer_pages": [
+            203,
+            213
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Richler",
+          "printed_pages": [
+            199,
+            204
+          ],
+          "viewer_pages": [
+            214,
+            219
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Seijas",
+          "printed_pages": [
+            205,
+            208
+          ],
+          "viewer_pages": [
+            220,
+            223
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Sepmeijer",
+          "printed_pages": [
+            209,
+            213
+          ],
+          "viewer_pages": [
+            224,
+            228
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Tabet",
+          "printed_pages": [
+            214,
+            220
+          ],
+          "viewer_pages": [
+            229,
+            235
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Vegas Montaner",
+          "printed_pages": [
+            221,
+            231
+          ],
+          "viewer_pages": [
+            236,
+            246
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Garcia Martinez",
+          "printed_pages": [
+            235,
+            251
+          ],
+          "viewer_pages": [
+            250,
+            266
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Alarcon Sainz",
+          "printed_pages": [
+            252,
+            259
+          ],
+          "viewer_pages": [
+            267,
+            274
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Genot-Bismuth",
+          "printed_pages": [
+            260,
+            267
+          ],
+          "viewer_pages": [
+            275,
+            282
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Grushcow",
+          "printed_pages": [
+            268,
+            274
+          ],
+          "viewer_pages": [
+            283,
+            289
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Hadas-Lebel",
+          "printed_pages": [
+            275,
+            281
+          ],
+          "viewer_pages": [
+            290,
+            296
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Hayman",
+          "printed_pages": [
+            282,
+            288
+          ],
+          "viewer_pages": [
+            297,
+            303
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Horbury",
+          "printed_pages": [
+            289,
+            295
+          ],
+          "viewer_pages": [
+            304,
+            310
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Keizer",
+          "printed_pages": [
+            296,
+            302
+          ],
+          "viewer_pages": [
+            311,
+            317
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Lehnardt",
+          "printed_pages": [
+            303,
+            310
+          ],
+          "viewer_pages": [
+            318,
+            325
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Milikowsky and Schlueter",
+          "printed_pages": [
+            311,
+            321
+          ],
+          "viewer_pages": [
+            326,
+            336
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Millard",
+          "printed_pages": [
+            322,
+            328
+          ],
+          "viewer_pages": [
+            337,
+            343
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Motos",
+          "printed_pages": [
+            329,
+            333
+          ],
+          "viewer_pages": [
+            344,
+            348
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Perez Fernandez",
+          "printed_pages": [
+            334,
+            341
+          ],
+          "viewer_pages": [
+            349,
+            356
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Ruiz Morell",
+          "printed_pages": [
+            342,
+            348
+          ],
+          "viewer_pages": [
+            357,
+            363
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Teugels",
+          "printed_pages": [
+            349,
+            357
+          ],
+          "viewer_pages": [
+            364,
+            372
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Alba Cecilia",
+          "printed_pages": [
+            361,
+            369
+          ],
+          "viewer_pages": [
+            376,
+            384
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Alfonso",
+          "printed_pages": [
+            370,
+            378
+          ],
+          "viewer_pages": [
+            385,
+            393
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Beeri",
+          "printed_pages": [
+            379,
+            383
+          ],
+          "viewer_pages": [
+            394,
+            398
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Berzbach",
+          "printed_pages": [
+            384,
+            391
+          ],
+          "viewer_pages": [
+            399,
+            406
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Doron",
+          "printed_pages": [
+            392,
+            397
+          ],
+          "viewer_pages": [
+            407,
+            412
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Engel",
+          "printed_pages": [
+            398,
+            405
+          ],
+          "viewer_pages": [
+            413,
+            420
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Haxen",
+          "printed_pages": [
+            406,
+            413
+          ],
+          "viewer_pages": [
+            421,
+            428
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Herrmann",
+          "printed_pages": [
+            414,
+            423
+          ],
+          "viewer_pages": [
+            429,
+            438
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Marciano de Hervas",
+          "printed_pages": [
+            424,
+            428
+          ],
+          "viewer_pages": [
+            439,
+            443
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Hollender",
+          "printed_pages": [
+            429,
+            435
+          ],
+          "viewer_pages": [
+            444,
+            450
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Lacave",
+          "printed_pages": [
+            436,
+            439
+          ],
+          "viewer_pages": [
+            451,
+            454
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Lehmann",
+          "printed_pages": [
+            440,
+            446
+          ],
+          "viewer_pages": [
+            455,
+            461
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Lertora Mendoza",
+          "printed_pages": [
+            447,
+            453
+          ],
+          "viewer_pages": [
+            462,
+            468
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Malachi",
+          "printed_pages": [
+            454,
+            458
+          ],
+          "viewer_pages": [
+            469,
+            473
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Morabito",
+          "printed_pages": [
+            459,
+            467
+          ],
+          "viewer_pages": [
+            474,
+            482
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Navarro Peiro",
+          "printed_pages": [
+            468,
+            475
+          ],
+          "viewer_pages": [
+            483,
+            490
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Necker",
+          "printed_pages": [
+            476,
+            482
+          ],
+          "viewer_pages": [
+            491,
+            497
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Niclos",
+          "printed_pages": [
+            483,
+            492
+          ],
+          "viewer_pages": [
+            498,
+            507
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Planas i Marce",
+          "printed_pages": [
+            493,
+            503
+          ],
+          "viewer_pages": [
+            508,
+            518
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Saenz-Badillos",
+          "printed_pages": [
+            504,
+            512
+          ],
+          "viewer_pages": [
+            519,
+            527
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Scandaliato",
+          "printed_pages": [
+            513,
+            520
+          ],
+          "viewer_pages": [
+            528,
+            535
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Schippers",
+          "printed_pages": [
+            521,
+            529
+          ],
+          "viewer_pages": [
+            536,
+            544
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Segal",
+          "printed_pages": [
+            530,
+            535
+          ],
+          "viewer_pages": [
+            545,
+            550
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Shy",
+          "printed_pages": [
+            536,
+            540
+          ],
+          "viewer_pages": [
+            551,
+            555
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Targarona Borras",
+          "printed_pages": [
+            541,
+            551
+          ],
+          "viewer_pages": [
+            556,
+            566
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "del Valle",
+          "printed_pages": [
+            552,
+            560
+          ],
+          "viewer_pages": [
+            567,
+            575
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Yahalom",
+          "printed_pages": [
+            561,
+            567
+          ],
+          "viewer_pages": [
+            576,
+            582
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Zwiep",
+          "printed_pages": [
+            568,
+            574
+          ],
+          "viewer_pages": [
+            583,
+            589
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Reif",
+          "printed_pages": [
+            577,
+            608
+          ],
+          "viewer_pages": [
+            592,
+            623
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Edith Lubetski",
+          "printed_pages": [
+            609,
+            614
+          ],
+          "viewer_pages": [
+            624,
+            629
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Nadler",
+          "printed_pages": [
+            615,
+            620
+          ],
+          "viewer_pages": [
+            630,
+            635
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Perani",
+          "printed_pages": [
+            621,
+            626
+          ],
+          "viewer_pages": [
+            636,
+            641
+          ],
+          "notes_references": "read"
+        },
+        {
+          "author": "Schaeper",
+          "printed_pages": [
+            627,
+            635
+          ],
+          "viewer_pages": [
+            642,
+            650
+          ],
+          "notes_references": "read"
+        }
+      ],
+      "figures_tables_native_scopes": [
+        {
+          "author": "Shaw",
+          "viewer_pages": [
+            107,
+            113
+          ],
+          "figures": "1–9",
+          "status": "all inspected"
+        },
+        {
+          "author": "del Barco",
+          "viewer_pages": [
+            126,
+            127,
+            128,
+            129,
+            130,
+            131
+          ],
+          "figures": "all syntax diagrams and numeric tables",
+          "status": "all inspected"
+        },
+        {
+          "author": "Charlap",
+          "viewer_pages": [
+            36
+          ],
+          "kind": "morphological schema"
+        },
+        {
+          "author": "Giron Blanc",
+          "viewer_pages": [
+            70
+          ],
+          "kind": "Hebrew transcription: negative-precepts count365 verified against Spanish613 at viewer68"
+        },
+        {
+          "author": "Hadas-Lebel",
+          "viewer_pages": [
+            290
+          ],
+          "kind": "four-column literary parallels table"
+        },
+        {
+          "author": "Milikowsky and Schlueter",
+          "viewer_pages": [
+            333,
+            334,
+            335,
+            336
+          ],
+          "kind": "both complete manuscript-collation appendices"
+        },
+        {
+          "author": "Millard",
+          "viewer_pages": [
+            337
+          ],
+          "kind": "opening bilingual legal comparison table; second table viewer340 also inspected"
+        },
+        {
+          "author": "Ruiz Morell",
+          "viewer_pages": [
+            362
+          ],
+          "kind": "literary parallels table native inspected"
+        },
+        {
+          "author": "Houtman",
+          "viewer_pages": [
+            164
+          ],
+          "kind": "three-group manuscript-affinity table"
+        },
+        {
+          "author": "Vegas Montaner",
+          "viewer_pages": [
+            244,
+            245,
+            246
+          ],
+          "kind": "three syntax tables and two-column typographic discourse examples",
+          "status": "all inspected"
+        }
+      ],
+      "blank_native_verified_viewer": [
+        17,
+        123,
+        125,
+        247,
+        249,
+        373,
+        375,
+        591,
+        651
+      ],
+      "completed_parts": "Available text of Parts One and Two, through printed231; PartThree complete; PartsOne–Five available text complete, including supplied notes, captions, tables, appendices and bibliographies; back cover viewer652 read natively. Full native page audit incomplete.",
+      "available_text_complete": true,
+      "full_native_page_audit_complete": false,
+      "supplied_content_gaps": [
+        "Alba Cecilia printed361 note1: final discussion of Spanish Vidduy versions omitted to meet editors page limit."
+      ],
+      "additional_visual_audit_record": "reference_visual_15_coverage.json"
+    },
+    {
+      "intake_index": 33,
+      "publication": "Abel, Géographie de la Palestine, tome II, third edition (1967)",
+      "viewer_pages": 556,
+      "source_sha256": "b6e9ac9bdc1520474319b6eb4db28bbe11c60f690e47fe061590e7c7c07bce6d",
+      "extracted_text_sha256": "fd66d82948985e302f76658d958afbc41fe708aa28fbdf933f3d4cfceec52cae",
+      "full_volume_read": false,
+      "text_ranges_read_viewer": [
+        [
+          1,
+          556
+        ]
+      ],
+      "text_ranges_unread_viewer": [],
+      "native_pages_inspected_viewer": [
+        20,
+        44,
+        50,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        268,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556
+      ],
+      "text_method": "Sequential extracted-text read of all supplied leaves, with native repairs of biblical index viewers532–550 and listed page checks; blank/library terminal leaves552–556 inspected natively.",
+      "caveat": "Printed74–75 are physically absent; viewers86–89 duplicate printed76–77. All supplied text is read, including both indexes; no full native audit is claimed. Map explanations and table list platesI–X, but their actual map sheets are not encountered in the supplied sequence; terminal leaves552–556 are blank/library boards, not map plates.",
+      "physical_copy_gaps_printed": [
+        [
+          74,
+          75
+        ]
+      ],
+      "duplicate_printed_leaves": {
+        "76": [
+          86,
+          88
+        ],
+        "77": [
+          87,
+          89
+        ]
+      },
+      "available_text_complete": true,
+      "full_native_page_audit_complete": false,
+      "map_plate_status": "Explanations printed491–492/viewers503–504 and table viewer551 read. Actual mapsI–X unlocated in this copy; visual coverage incomplete.",
+      "additional_visual_audit_record": "reference_visual_33_coverage.json"
+    },
+    {
+      "intake_index": 37,
+      "publication": "Ben-Yosef and Jones, And in Length of Days Understanding (2023), combined two-volume PDF",
+      "viewer_pages": 1956,
+      "source_sha256": "08fe807e0550a3e915d5e08f15bdf43e26c855cc6fa2a8809f8c71355305920b",
+      "extracted_text_sha256": "e7fb84b2049fc4385cdf9d93a929f41914f6fe777586b3d55756f109c5d8797e",
+      "full_volume_read": false,
+      "text_ranges_read_viewer": [
+        [
+          1,
+          1956
+        ]
+      ],
+      "text_ranges_unread_viewer": [],
+      "native_pages_inspected_viewer": [
+        235,
+        238,
+        848,
+        850,
+        851,
+        853,
+        856,
+        860,
+        861,
+        862,
+        863,
+        864,
+        865,
+        867,
+        869,
+        871,
+        873,
+        875,
+        876,
+        877,
+        883,
+        885,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898
+      ],
+      "text_method": "Complete supplied readable text joined across exactA–E,reference andregional receipts; repaired extraction used for remaining body. Native figures accounted separately.",
+      "caveat": "Some nominally blank leaves carry noisy OCR; no full native volume or complete printed-leaf audit claimed.",
+      "additional_completed_chapter_scope": {
+        "title": "Uri Davidovich, En Gedi Shrine and the Cave of the Treasure",
+        "printed_pages": [
+          205,
+          217
+        ],
+        "viewer_pages": [
+          230,
+          242
+        ],
+        "text_notes_captions_bibliography": "read with OCR",
+        "figures": "1–2 native inspected",
+        "printed_page_gap": "Printed218 absent; nextviewer243 isprinted219; blankstatus unverified."
+      },
+      "completed_chapter_scope": {
+        "reference_worker": {
+          "title": "Buqeia Plateau",
+          "printed_pages": [
+            839,
+            897
+          ],
+          "viewer_pages": [
+            847,
+            905
+          ],
+          "text_notes_captions_bibliography": "read",
+          "figures": "1–32 native inspected",
+          "table": "1 native inspected, five pages",
+          "printed_page_gap": "Printed898 is absent between viewer905 p897 and viewer906 p899; blank status unverified."
+        },
+        "regional_worker": {
+          "title": "Ben-Shlomo, Khirbet Aujah el-Foqa",
+          "printed_pages": [
+            601,
+            624
+          ],
+          "viewer_pages": [
+            613,
+            636
+          ],
+          "coverage_record": "regional_coverage.json; do not double count here"
+        }
+      },
+      "reference_worker_original_scope_before_union": {
+        "text_ranges_read_viewer": [
+          [
+            1,
+            5
+          ],
+          [
+            16,
+            23
+          ],
+          [
+            230,
+            243
+          ],
+          [
+            847,
+            906
+          ],
+          [
+            1938,
+            1938
+          ]
+        ],
+        "text_method": "OCR plus native table/figure/measurement proof for Buqeia chapter; bounded frontmatter/contents/correction text otherwise",
+        "native_pages_inspected_viewer": [
+          235,
+          238,
+          848,
+          850,
+          851,
+          853,
+          856,
+          860,
+          861,
+          862,
+          863,
+          864,
+          865,
+          867,
+          869,
+          871,
+          873,
+          875,
+          876,
+          877,
+          883,
+          885,
+          887,
+          888,
+          889,
+          890,
+          891,
+          892,
+          893,
+          894,
+          895,
+          896,
+          897,
+          898
+        ]
+      },
+      "available_text_complete": true,
+      "coverage_union_record": "levy2023_union_coverage.json",
+      "additional_visual_audit_record": "levy_visual_closure_coverage.json"
+    }
+  ],
+  "source26_handoff": "Sokoloff dictionary assigned to lexicon_changes.md/lexicon_coverage.json; excluded from this worker reading credit.",
+  "image_safety": "No Copper Scroll manuscript photograph, drawing, XII8–12/segments21–22 image, or reserved fine Tell es-Sultan north-strip image opened. Buqeia maps and photographs concern the plateau south of Jericho.",
+  "source37_extraction_repair": "Initial extraction suppressed body text because of PDF ActualText replacements. Integrator recovered it with TEXT_IGNORE_ACTUALTEXT in tools/extract_levy2023_text.py; initial OCR/native chapter reads remain valid, other chapters remain unread unless separately recorded.",
+  "private_archive": "Full-page native renders preserve captions, scales and north arrows; source figures are absent from public repository."
+}

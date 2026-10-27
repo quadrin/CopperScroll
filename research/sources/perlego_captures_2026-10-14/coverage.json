@@ -1,0 +1,607 @@
+{
+  "date": "2026-10-14",
+  "baseline_commit": "499ce799727d5e7452e4b52894e5cb54136ec9b0",
+  "input_type": "Supplied reading reports and stitched/browser figure captures; no original book PDF or direct book-reader access in this sweep.",
+  "claim_rule": "All unseen book prose remains extraction-reported. Direct checks are limited to the captured images and scope recorded below.",
+  "reports": {
+    "cotton": {
+      "report_filename": "cotton2022_extracted.md",
+      "saved_report_bytes": 29043,
+      "saved_report_sha256": "65e81701512b44d79d879df7a154f83f7707441b777198dbc5968935d5b70580",
+      "complete_report_read": true,
+      "whole_book_read_in_this_sweep": false,
+      "book_url": "https://www.perlego.com/book/3270087",
+      "reader_receipt": {
+        "record_type": "supplied_extraction_report_coverage",
+        "source_name": "cotton2022_extracted.md",
+        "report_copy": {
+          "bytes": 29043,
+          "sha256": "65e81701512b44d79d879df7a154f83f7707441b777198dbc5968935d5b70580",
+          "hash_basis": "UTF-8 text returned by Drive fetch; saved byte count equals listed source size; raw download not independently byte-compared"
+        },
+        "folder_inventory": [
+          {
+            "name": "cotton2022_extracted.md",
+            "mime_type": "text/markdown",
+            "listed_bytes": 29043
+          }
+        ],
+        "folder_listing_scope": "all directly listed children; one report; no subfolder or image returned",
+        "inspected": {
+          "supplied_report": "complete, all 174 lines",
+          "book_reader": "not opened",
+          "original_book_pages": "not inspected",
+          "original_papyri_or_images": "not inspected",
+          "reported_captures": "none",
+          "new_source_images": "none"
+        },
+        "reported_book": {
+          "author": "Hannah M. Cotton",
+          "title": "Roman Rule and Jewish Life: Collected Papers",
+          "editor": "Ofer Pogorelsky",
+          "publisher": "De Gruyter",
+          "year": 2022,
+          "perlego_url": "https://www.perlego.com/book/3270087"
+        },
+        "reported_scopes": [
+          {
+            "paper": "Diplomatics",
+            "printed_pages": "147–160",
+            "scope": "complete paper and relevant notes"
+          },
+          {
+            "paper": "Languages",
+            "printed_pages": "129–134; 136–137; 141–143; document-specific 135",
+            "scope": "selected sections and note annotations"
+          },
+          {
+            "paper": "Bar Kokhba Revolt",
+            "printed_pages": "176; 181–183",
+            "scope": "sections I and III and relevant notes"
+          },
+          {
+            "paper": "Subscriptions",
+            "printed_pages": "120–122; 125 n.48",
+            "scope": "selected marks/abbreviations discussion and notes"
+          },
+          {
+            "paper": "Roman Census",
+            "printed_pages": "369–370; 373–377",
+            "scope": "selected register/amount discussion and notes"
+          },
+          {
+            "paper": "Indexes",
+            "reader_locations": [
+              14,
+              15
+            ],
+            "scope": "selected entries; report says no usable page destinations"
+          }
+        ],
+        "lineage": "original document > edition/photograph > Cotton article > 2022 collected reprint > user-supplied extraction > this reconciliation",
+        "claim_status": "all Cotton/book/papyrus claims extraction-reported; no independent source-page verification",
+        "deduplication": [
+          "P.Se'elim4 in two reprinted papers remains one papyrus witness",
+          "Cotton's repeated Mur29/30 dating argument is not another document or independent dating observation",
+          "P.Yadin28–29 currency occurrence derives from existing DDbDP audit; extraction did not verify those texts",
+          "2022 reprint and this synthesis add no field observation or original manuscript inspection"
+        ],
+        "limits": [
+          "whole-book reading not claimed",
+          "index access defect prevents complete printed-volume mention audit",
+          "no supplied figures or page captures",
+          "P.Yadin18 abbreviation is tentative and cited photograph unavailable",
+          "P.Se'elim4 exact date and place unknown; reported 49 versus components48 needs original-page verification",
+          "4Q348 competing attributed dates retained",
+          "no comparative population denominator; no corpus rerun",
+          "reserved Scroll images not opened; no unseen prediction",
+          "R11/R12 and ordering specifications not reopened"
+        ],
+        "proposed_public_record_updates": [
+          "research/text/inventory_scope_2026-10-06.md",
+          "research/comparanda/inventory_forms_2026-10-12/README.md",
+          "research/agent_review_2026-10-07/wave1/T07_greek_letters/papyri_2026-10-10/REPORT.md"
+        ],
+        "baseline_commit": "499ce799727d5e7452e4b52894e5cb54136ec9b0",
+        "baseline_read": [
+          "AGENTS.md",
+          "research/ACTIVE_TEST.md",
+          "research/OPEN_QUESTIONS.md",
+          "research/text/inventory_scope_2026-10-06.md",
+          "research/text/ordering_audit_2026-10-06.md",
+          "deep_analysis/engraving_order_protocol.json",
+          "research/agent_review_2026-10-07/wave1/T07_greek_letters/papyri_2026-10-10/REPORT.md",
+          "research/comparanda/inventory_forms_2026-10-12/README.md",
+          "research/phases/phase4_summary.md (R11 relevant excerpts)"
+        ],
+        "failed_path": {
+          "url": "https://github.com/quadrin/CopperScroll/blob/499ce799727d5e7452e4b52894e5cb54136ec9b0/deep_analysis/greek_initials_analysis.md",
+          "error": "GitHub404; guessed nonexistent baseline path; corrected to canonical papyri report",
+          "source_access_effect": "none"
+        },
+        "session_date_utc": "2026-10-14"
+      }
+    },
+    "callegher": {
+      "report_filename": "callegher2023_extracted.md",
+      "saved_report_bytes": 47020,
+      "saved_report_sha256": "e5cea8ee2eb9cd5d3efcf9bdefe8412618aff5b5e81500502f67880b8ddac036",
+      "complete_report_read": true,
+      "whole_book_read_in_this_sweep": false,
+      "book_url": "https://www.perlego.com/book/4288865",
+      "reader_receipt": {
+        "source": "Callegher, Following the Coins..., report identifies 2023; captured footer ©2024",
+        "source_type": "supplied extraction report and captures; not original book PDF",
+        "report": {
+          "file": "private/report.md",
+          "bytes": 47020,
+          "sha256": "e5cea8ee2eb9cd5d3efcf9bdefe8412618aff5b5e81500502f67880b8ddac036",
+          "complete_read": true,
+          "book_whole_read_claim": false,
+          "extraction_declared_targeted_printed_ranges": [
+            [
+              59,
+              86
+            ],
+            [
+              101,
+              105
+            ],
+            [
+              128,
+              130
+            ],
+            [
+              140,
+              181
+            ],
+            [
+              215,
+              236
+            ],
+            [
+              265,
+              267
+            ]
+          ],
+          "reported_reader_offset": 1
+        },
+        "supplied_files": {
+          "image_files": 37,
+          "unique_sha256_images": 34,
+          "unique_printed_pages": [
+            65,
+            66,
+            67,
+            68,
+            69,
+            71,
+            129,
+            130,
+            140,
+            142,
+            154,
+            164,
+            176,
+            180,
+            215,
+            216,
+            217,
+            218,
+            219,
+            222,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            234,
+            235,
+            236,
+            265,
+            266,
+            267
+          ],
+          "all_images_inspected": true,
+          "duplicate_groups": [
+            [
+              "p68_fig33.png",
+              "p68_fig32.png"
+            ],
+            [
+              "p67_fig31.png",
+              "p67_fig30.png"
+            ],
+            [
+              "p66_fig29.png",
+              "p66_fig28.png"
+            ]
+          ],
+          "asset_register": "assets.json"
+        },
+        "book_access_in_this_sweep": false,
+        "source_access_errors": [],
+        "withheld_arrivals_or_images_opened": false,
+        "preflight": "Captions/report identify all 37 files as coin pages, coin documentary facsimiles, conclusions or blank. No segment21/22, XII8–12, reserve facsimile or Tell es-Sultan subject.",
+        "limitations": [
+          "Report is a targeted extraction, not complete book content.",
+          "Direct image verification applies only to supplied pages; other book claims remain extraction-reported.",
+          "Printed130 blank except ©2024 footer; printed86 blank is report-declared and no capture supplied.",
+          "Supplied129 capture ends conclusion7 after evidence of; its complete text was reportedly recovered by extraction author, not independently checked here.",
+          "Photos25–26 (printed63–64) and36–55 (printed72–74) mentioned in extraction have no supplied captures.",
+          "No supplied in-situ L120/Feshkha hoard photograph or findspot plan.",
+          "Archival coin record handwriting checked for relevant claims; no complete diplomatic transcription.",
+          "Original screenshot assembly/crop cannot be independently reconstructed without browser screenshots; original PNG bytes preserved.",
+          "Publication attribution 2023 vs ©2024 footer preserved.",
+          "No public reproduction licence established."
+        ],
+        "baseline_commit": "499ce799727d5e7452e4b52894e5cb54136ec9b0",
+        "concrete_new_deltas": [
+          "Feshkha Loc.160 printed/register versus existing15/16-boundary and21 formulations",
+          "Feshkha four latest catalogue rows versus extraction-reported prose three",
+          "Inventory-number reversals and catalogue joining limits native-checked",
+          "Direct L120 Photo35 inventory/redistribution documentation repeats2016 lineage",
+          "Correct supplied extraction KQ2547 locator toprinted69/reader70 and vase wording",
+          "Selected waterfeature rows lack sealed construction/plaster context",
+          "Coponius6–9BCE heading versus6CE descriptor and L110/L54row discrepancy"
+        ],
+        "result": "obtained",
+        "formal_outcome_change": false
+      }
+    },
+    "dorsey": {
+      "report_filename": "dorsey1991_extracted.md",
+      "saved_report_bytes": 55767,
+      "saved_report_sha256": "d7575bc15034dc44680548545b81a92c00383dc65e49479ae255fc1ae3bb2e60",
+      "complete_report_read": true,
+      "whole_book_read_in_this_sweep": false,
+      "book_url": "https://www.perlego.com/book/1721836",
+      "reader_receipt": {
+        "report_complete": true,
+        "report_lines": 215,
+        "report_bytes": 55767,
+        "report_sections_read": "Every section and row, lines 1–215 inclusive; read overlapping local text ranges 1–64, 65–179, 180–215.",
+        "original_book_complete": false,
+        "original_book_text_inspected": false,
+        "original_book_page_images_inspected": [
+          133,
+          141,
+          172,
+          203
+        ],
+        "original_text_status": "All prose claims extraction-reported; direct verification confined to four supplied map captures.",
+        "report_declared_scope": "Selected road/ford chapters, appendix terminology and indexed follow-ups; not whole-book coverage.",
+        "report_declared_gap": "Numbered-site list read through printed298; attempted299–300 unrendered and unverified.",
+        "maps_complete": true,
+        "maps_inspected": [
+          7,
+          8,
+          12,
+          15
+        ],
+        "protected_targets": "Caption/subject preflight established regional schematic road maps; no Copper Scroll manuscript letters/segments or Tell es-Sultan northern target strip imagery inspected.",
+        "arrival_manifest_check": "manifest: ok (29 files)"
+      }
+    },
+    "wilson": {
+      "report_filename": "wilsons_arch_2025_extracted.md",
+      "saved_report_bytes": 66456,
+      "saved_report_sha256": "490fd72db40c39821cd6807064f7f00c8b3cd8f617f127cd1c9c1284ebb905e6",
+      "complete_report_read": true,
+      "whole_book_read_in_this_sweep": false,
+      "book_url": "https://www.perlego.com/book/4913932",
+      "reader_receipt": {
+        "date": "2026-10-14",
+        "source_kind": "supplied extraction report and selected captured pages",
+        "report": {
+          "name": "wilsons_arch_2025_extracted.md",
+          "bytes": 66456,
+          "sha256": "490fd72db40c39821cd6807064f7f00c8b3cd8f617f127cd1c9c1284ebb905e6",
+          "complete_read": true,
+          "text_lines_read": [
+            1,
+            505
+          ]
+        },
+        "whole_book_read": false,
+        "book_opened_in_this_sweep": false,
+        "reported_book_scope": "Ch22 pp423–443; Ch3 pp51–122; selected Ch5 coin discussion/catalogue194–204, Ch13 results and locus index123–155; reported reader offset+15",
+        "image_scope": {
+          "supplied_files": 53,
+          "unique_sha256": 49,
+          "all_inspected_as_overviews": true,
+          "overview_sheets": [
+            "sheet00.jpg",
+            "sheet01.jpg",
+            "sheet02.jpg",
+            "sheet03.jpg",
+            "sheet04.jpg",
+            "sheet05.jpg",
+            "sheet06.jpg",
+            "sheet07.jpg",
+            "sheet08.jpg"
+          ],
+          "individual_full_size_checks": [
+            "p155_figlocus_index.png",
+            "p310_figtable13.3.png"
+          ],
+          "fine_detail_outside_selected_checks": "not comprehensively read; retain extraction-reported attribution",
+          "figure_preflight": "Jerusalem excavation plans/photos, coin catalogue and radiocarbon table; no reserved manuscript/target imagery"
+        },
+        "independence": "2015–2018 excavation lineage overlaps2019 report;2025 model revision adds analytical result, not new excavation",
+        "limits": [
+          "No whole-book read",
+          "Original2020 paper not checked; its comparison values remain extraction-reported",
+          "Fine coin cells and plan labels not all retranscribed",
+          "No measured/phase-controlled EarlyRoman cairn-arch relation"
+        ],
+        "reserved_images_opened": false,
+        "frozen_manifest_check": "pass"
+      }
+    },
+    "southern_wall": {
+      "report_filename": "southern_wall_2023_extracted.md",
+      "saved_report_bytes": 50628,
+      "saved_report_sha256": "935a1d88e0fb5f58231df65aac7dcdc31590511c44475800a8fc58de0b7a5b5c",
+      "complete_report_read": true,
+      "whole_book_read_in_this_sweep": false,
+      "book_url": "https://www.perlego.com/book/4395677",
+      "reader_receipt": {
+        "source": "SouthernWall2023",
+        "supplied_report_sha256": "935a1d88e0fb5f58231df65aac7dcdc31590511c44475800a8fc58de0b7a5b5c",
+        "supplied_report_read": "complete",
+        "original_book_read_in_this_pass": false,
+        "original_book_full_coverage": false,
+        "claimed_upstream_extract_scope": [
+          {
+            "chapter": 3,
+            "printed_pages": "45–56"
+          },
+          {
+            "chapter": 4,
+            "printed_pages": "65–92"
+          },
+          {
+            "chapter": 11,
+            "printed_pages": "173–174 discussion;177–179 catalogue"
+          },
+          {
+            "chapter": 15,
+            "printed_pages": "203–204"
+          },
+          {
+            "chapter": 16,
+            "printed_pages": "215–236 selected relevant material"
+          },
+          {
+            "chapter": 25,
+            "printed_pages": "353–357"
+          },
+          {
+            "chapter": 27,
+            "printed_pages": "383–438"
+          },
+          {
+            "chapter": 33,
+            "printed_pages": "513–516 results/Table33.1; methods excluded"
+          },
+          {
+            "chapter": 38,
+            "printed_pages": "599–608"
+          }
+        ],
+        "downloaded_image_files": 159,
+        "figure_table_subject_groups": 80,
+        "unique_sha256": 159,
+        "exact_byte_duplicates": [],
+        "same_observation_variants": "Browser primary/detail/source exports repeat the same figure; do not count separate corroboration.",
+        "all_images_screened": true,
+        "screening_method": "14 contact sheets of 12 images, 1800×1600 px; last sheet has 3 images; plan/section labels enlarged selectively",
+        "individually_inspected": [
+          "ch16_fig4_detail.png",
+          "ch16_fig4.png",
+          "ch16_fig6_detail.png",
+          "ch33_figtable33_1_source.png",
+          "ch11_figcatalogue_p177.png",
+          "ch11_figcatalogue_p178.png",
+          "ch4_fig7_detail.png",
+          "ch4_fig19_detail.png",
+          "ch4_fig19.png",
+          "ch4_fig11_detail.png",
+          "ch27_fig36_detail.png",
+          "ch4_fig3_source.png"
+        ],
+        "target_imagery_opened": false,
+        "holds_protected": "No Scroll manuscript or Tell es-Sultan target imagery in inspected captures",
+        "inspection_limits": [
+          "Contact sheets screen layout/subject and visible features; they do not establish every tiny label.",
+          "Figure browser screenshots lack printed-page prose; captions remain extraction-reported.",
+          "Detail variants crop some peripheral edges.",
+          "No original chapter text, full radiocarbon methods, source locus/basket register or full cemetery/architectural-fragment chapters read.",
+          "No exact southeastern exterior ancient-street datum established."
+        ],
+        "baseline_ref": "499ce799727d5e7452e4b52894e5cb54136ec9b0",
+        "assessment": "exploratory source and capture audit; no confirmatory identification or new registered terminal test",
+        "status": "partly",
+        "failed_source_urls": []
+      }
+    },
+    "jericho": {
+      "report_filename": "digging_up_jericho2020_extracted.md",
+      "saved_report_bytes": 55940,
+      "saved_report_sha256": "0a084c3d93e9bf782b345092be5aa59c85275db7db1684407eb15f34844266ea",
+      "complete_report_read": true,
+      "whole_book_read_in_this_sweep": false,
+      "book_url": "https://www.perlego.com/book/2028765",
+      "reader_receipt": {
+        "report_file": "digging_up_jericho2020_extracted.md",
+        "report_sha256": "0a084c3d93e9bf782b345092be5aa59c85275db7db1684407eb15f34844266ea",
+        "report_bytes": 55940,
+        "report_lines": 256,
+        "report_text_read_lines": [
+          1,
+          256
+        ],
+        "method": "Complete sequential supplied report text read; original book not accessed",
+        "report_source_type": "user-supplied derivative extraction report",
+        "original_book_read_by_this_worker": false,
+        "source_report_claimed_scope": {
+          "chapters_named": [
+            "Cobbing",
+            "Nigro",
+            "Taha",
+            "Laidlaw",
+            "Jennings",
+            "Arce landscape sections"
+          ],
+          "other_chapters": "index-linked checks only",
+          "whole_book_read": false,
+          "index_printed": [
+            316,
+            328
+          ],
+          "reader_offset_reported": 14
+        },
+        "visual_scope": {
+          "images_downloaded": false,
+          "images_viewed": false,
+          "full_resolution_plans_viewed": false,
+          "contact_sheets_created": false,
+          "captions_from_report_read": true,
+          "registration_fitting_attempted": false
+        },
+        "baseline_ref": "499ce799727d5e7452e4b52894e5cb54136ec9b0",
+        "frozen_manifest_check": "manifest: ok (29 files); run after derivative text read by this worker, root responsible for session pre-read check",
+        "failed_source_urls": [],
+        "limitations": [
+          "Extractor identity and exact upstream visual exposure chronology not supplied",
+          "Reported pages and captions not checked against native book",
+          "Modern book whole text and images remain private",
+          "Source report selected-chapter scope cannot support whole-book negative findings",
+          "No registration or confirmatory outcome scored"
+        ]
+      }
+    },
+    "magness": {
+      "report_filename": "magness2021_extracted.md",
+      "saved_report_bytes": 49411,
+      "saved_report_sha256": "482651a795b56f22b090a2325c583652208d6e20b80cea9029244631fdd8a360",
+      "complete_report_read": true,
+      "whole_book_read_in_this_sweep": false,
+      "book_url": "https://www.perlego.com/book/2984742",
+      "reader_receipt": {
+        "date": "2026-10-14",
+        "target": "Supplied Magness2021 extraction phase/L120/Feshkha/Ghuweir/cemetery claims and every supplied safely classified captured figure",
+        "source_kind": "derivative extraction report, not book PDF",
+        "book": "Jodi Magness,The Archaeology of Qumran and the Dead Sea Scrolls,2nd ed.,2021",
+        "report": {
+          "file_name": "magness2021_extracted.md",
+          "bytes": 49411,
+          "sha256": "482651a795b56f22b090a2325c583652208d6e20b80cea9029244631fdd8a360",
+          "mime_type": "text/markdown",
+          "underlying_book_seen": false,
+          "report_completely_read": true
+        },
+        "reading_scope": "complete supplied report including all tables, qualifications, bibliography, illustration register and absence statements",
+        "complete_report_read": true,
+        "whole_book_read": false,
+        "book_text_directly_checked": false,
+        "extraction_claimed_book_sections": [
+          {
+            "chapter": 4,
+            "body_printed_pages": [
+              49,
+              79
+            ],
+            "notes_printed_pages": [
+              81,
+              83
+            ]
+          },
+          {
+            "chapter": 7,
+            "body_printed_pages": [
+              180,
+              187
+            ],
+            "notes_printed_pages": [
+              190,
+              195
+            ]
+          },
+          {
+            "chapter": 8,
+            "section": "cemetery archaeological evidence only",
+            "body_printed_pages": [
+              200,
+              207
+            ],
+            "notes": "outside extraction scope"
+          },
+          {
+            "chapter": 9,
+            "section": "L120 hoard plus prior chronology",
+            "body_printed_pages": [
+              228,
+              233
+            ],
+            "notes_printed_pages": [
+              246,
+              250
+            ]
+          },
+          {
+            "chapter": 10,
+            "body_and_notes_printed_pages": [
+              251,
+              266
+            ]
+          },
+          {
+            "chapter": "Illustrations",
+            "scope": "selected11captures; report claims full66caption list screened; full caption list itself not supplied"
+          }
+        ],
+        "direct_image_inspected": [
+          5,
+          6,
+          7,
+          8,
+          23,
+          31,
+          32,
+          37,
+          64,
+          65,
+          66
+        ],
+        "image_withheld": [],
+        "reserved_images_opened": false,
+        "images_all_archaeological_plans": true,
+        "remaining_legibility_limits": [
+          "Fig6 small/soft fine detail",
+          "Fig66 soft source and unreadable scale bar numerals",
+          "no letter-by-letter or metric tracing of every plan label"
+        ],
+        "caption_image_association_conflicts": {
+          "7": "captionIb/imageII",
+          "8": "captionII/imageIb",
+          "31": "captionroundcistern/imagewestrooms",
+          "32": "captionwestrooms/imageroundcistern",
+          "23": "image136/extraction-reportedprose137"
+        },
+        "conflict_stage_unresolved": true,
+        "baseline_ref": "499ce799727d5e7452e4b52894e5cb54136ec9b0",
+        "deduplication": "Same deVaux/BarAdon excavation lineages and reused plans; Magness2021 is a later synthesis, not independent excavation. LatestMizziMagness2016 chronology distinguished from1995. Laboratory and archive analyses retain own lineage only where actuallychecked in existingrecords.",
+        "original_new_field_observation": false,
+        "outcome": "partly",
+        "limits": "Underlying booktext, original layout, Seyrig fullarchive and grave/object crosswalk remain unverified in this sweep."
+      }
+    }
+  },
+  "protected_limits": "No Copper Scroll reserved images opened. All Jericho PNGs withheld; source descriptions and unidentified upstream visual exposure recorded separately.",
+  "image_provenance": "../../assets/plans/perlego-captures-2026-10-14/private_asset_register.json"
+}

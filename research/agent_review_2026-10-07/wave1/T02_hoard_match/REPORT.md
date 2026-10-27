@@ -34,3 +34,7 @@ CHRE under-represents Hellenistic/Hasmonean hoards (coinhoards.org blocked by ro
 Read Leonard 2000, "Numismatic Evidence for the Authenticity of the Copper Scroll" (Proceedings of the XII International Numismatic Congress, Berlin 1997, vol. I, pp. 683–692), the only entry-by-entry comparison of regional shekel hoards with the scroll; Leonard says one treasure "corresponds fairly closely with a known coin hoard, in size and location".
 
 Files: hoards.json/.csv, entry_features.json/.csv, scoring_rules.json, scores_all.csv, top_pairs.csv, best_per_record.csv, best_per_entry.csv, null_test.json, quantity_overview.csv, chre_*.{csv,json}, scripts/, downloads/.
+
+## Source/coding erratum — 14 October 2026
+
+The out-of-period P01 Nahal Mishmar row has `container="basket"` alongside `container_text="wrapped in a mat"`. Davidovich2023 p206 (viewer231 of the combined Levy volume) describes a reed-mat wrapping beneath a rock ledge. This supports the existing prose field and flags the categorical field as inconsistent. The source review distinguishes Bar-Adon's1961 excavation, later typological reassessment and the proposed EnGedi-shrine connection: [direct chapter and provenance](../../../sources/new_batch_2026-10-14/reference_changes.md). P01 is outside the scored period. The historical input is SHA-frozen in the later hoard-comparison work and remains preserved; this erratum supplies the correction for future exploratory coding without rewriting that frozen dataset or rerunning its results.

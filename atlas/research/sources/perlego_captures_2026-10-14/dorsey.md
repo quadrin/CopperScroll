@@ -1,0 +1,34 @@
+# Dorsey extraction reconciliation — 14 October 2026
+
+Baseline: `quadrin/CopperScroll` at `499ce799727d5e7452e4b52894e5cb54136ec9b0`. Target: obtain the supplied Dorsey report's route/ford evidence and determine whether it changes the existing Bezek or lower-Jordan comparison. Report fully read, lines 1–215; four supplied map captures inspected in full after caption and subject preflight. All requested files opened successfully. The aggregate coverage and asset records retain exact hashes and inspection scope.
+
+## Source strength
+
+The input is a supplied reading report, `dorsey1991_extracted.md`, rather than Dorsey's book PDF or a transcription of every page. Its prose attributes selected accounts to printed pages of *The Roads and Highways of Ancient Israel* (1991; reported Perlego/Wipf and Stock edition 2018). Treat every book-prose statement below as **extraction-reported**. Direct original-page evidence is confined to the four map captures, supplied as stitched screenshots. Their attribution and printed/reader pagination come from the report; each image visibly contains its map number and title.
+
+The report declares selected chapter/appendix/index reading, and an unrendered remainder of the numbered-site index after printed 298, including attempted 299–300. This pass earns complete reading of the supplied report and four captures. It earns no whole-book completion credit or independent rereading of the reported book prose. No Perlego browsing took place. The maps are regional route schematics; caption/subject preflight exposed no reserved manuscript letters, cut segments or Tell es-Sultan northern target-strip imagery.
+
+## Actual deltas
+
+1. **Qualify the road-context row in [research/sites/entry59_bezek_review.md](https://github.com/quadrin/CopperScroll/blob/research/resource-sweep-2026-10-14/research/sites/entry59_bezek_review.md).** The current row calls B7 through Upper/Lower Ibziq, Salhab and el-Quleh the Neapolis–Scythopolis Roman road. The supplied Dorsey report, printed 171–173, distinguishes S12 through Tubas/Kh. edh Dhuq, Salhab and Ibziq toward Rehob/Beth-shean from S13 through Tayasir, Medio/Qasr esh Sheikh Ghazal and Conas/Qaʿun to T. Malqoah. It attributes the main Roman road to S13. **Map 12, attributed printed 172/reader 192, independently shows S12 through #545 and Kh. Ibziq and a separate, more southerly S13.** Dorsey's differently scoped route reconstruction does not refute Zertal's Roman remains at Ibziq or establish that B7 equals S12. The amendment should preserve Zertal's source attribution and separate these corridors pending an original alignment crosswalk. Dorsey's reported Ibziq location 1878/1971 matches the existing Upper Ibziq anchor, but his reported 10-dunam extent differs from Zertal's 32; do not merge their surveyed boundaries.
+
+
+2. **Record two map/text label conflicts before using a route table.** Map 12 directly prints S23 on its southern Shiloh-to-Jordan line. The report attributes that Shiloh account to S24 on printed 179. Preserve both labels; printed 179 itself was unavailable for direct checking. A second, newly noticed native-map inconsistency appears near lower S14/T. Abu Sus: Map 12 visibly prints 379 there. Map 8, attributed printed 141/reader 161, visibly places 379 by Sanur, while the supplied report calls the S14 foot site 548 (printed 173). The enlarged local crop confirms the source image's 379; it does not justify assigning a corrected number. Do not silently convert map dots into a site concordance.
+
+3. **Add a bounded source comparison for entry28.** The report's pp. 202/205 distinguish Hajla (J29/J32a/J32c), Ghoraniya through Jericho (J32b), and Mindisa via Wadi Lasam (J29a). Map 15, attributed printed 203/reader 223, directly shows the separate river-bound branches and A2's inland course above Qumran. The names and period claims remain extraction-reported because the map does not label these fords by name. No named High Priest's crossing, cairn, ancient bridge or measured Jericho-to-ford distance follows. The reported Allenby Bridge reference belongs to the book's contemporary location of Ghoraniya. It supplies no ancient bridge phase. Use the distinct crossings as source-specific alternatives; retain the current lower-Jordan area placement without promoting a point.
+
+## Constraints worth carrying forward
+
+The report explicitly separates archaeological observations, reconstruction and period: Iron Age pottery/site lines underlie many proposed alignments; surviving nineteenth-century tracks are not dated Iron Age roadbeds. Reported Roman evidence is route-specific: J29 traced road, J31 refurbishment, J32 traced Roman course with an uncertain Iron Age predecessor, S16's eastern half, S19 textual/remains evidence and S20/S22 traced routes. S12's Roman/Hellenistic use is unasserted in its account. Avoid treating that silence as proof of non-use.
+
+Two reported counterexamples constrain inherited network assumptions. A1 pp. 147–149 questions a continuous En-gedi–Qumran shoreline road; Map 15's line is a published reconstruction with the prose qualification retained. A3 pp. 150–151 treats the 26-km Farʿa–Beth-shean section as lacking biblical-road confirmation: its two Iron Age sites may guard the Abu Sidra crossing instead. Neither negative is a modern field test or independent disproof of a scroll route.
+
+Reported appendix pp. 241–242 argues for *maʿăbār* as a crossing/ford, including Michmash's wadi crossing; it supplies no bridge definition. Chapter 1's bridge absence claims concern Iron Age evidence. They do not date the Copper Scroll's later vocabulary or exclude a first-century bridge. Cairn/heap terms requested by the original extractor received no located appendix entries; the marker discussion at p. 51 concerns other terms. Keep lexical comparison as a separate, period-qualified source record.
+
+Map 7 (attributed 133/153) shows Jerusalem–Shechem/N1 alternatives; Map 8 (141/161) shows N22 via Tirzah and Kh. edh Dhuq toward Jenin, with Kh. Ibziq branching east. All four captures retain borders, north arrows and 0–5–10-mile scale bars. Their simplified curves provide topology and relative position. No coordinates, georeferencing, travel lengths or individual landmark footprints were derived.
+
+## Independence and integration
+
+Dorsey's synthesis reuses older surveys, biblical passages and Roman-route scholarship. Agreement with the same observations in Zertal, PEF or Avi-Yonah is not an independent field campaign. Preserve the existing assessments, protected observations and outcome ledger. Source images and the supplied report remain private, with hashes/provenance public if needed.
+
+[Coverage and source-copy limits](coverage.json) · [Captured-asset provenance](../../assets/plans/perlego-captures-2026-10-14/README.md).
