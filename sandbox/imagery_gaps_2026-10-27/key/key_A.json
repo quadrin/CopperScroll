@@ -1,0 +1,795 @@
+{
+ "run": "imagery_gaps_2026-10-27",
+ "stage": "A",
+ "created_utc": "2026-10-27T06:07:11Z",
+ "rule_sha256": "d735f2cf240a44323b800a6469d7c77f1aaa900ddc124a23607a4409dd7ad809",
+ "tile_size_m": 150.0,
+ "tile_px": 600,
+ "imagery": "Esri World Imagery z18; identify metadata at QUM, HP, D44, SAM: Vantor WV02 2023-10-21, 0.5 m, stated accuracy 5 m",
+ "tiles": [
+  {
+   "slot": "QW",
+   "kind": "known",
+   "site": "Kh. Qumran",
+   "centre": [
+    31.741167894255028,
+    35.45806243742112
+   ],
+   "code": "ZZ84",
+   "cut": {
+    "native_m_per_px": 0.5073,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156891,
+      106676
+     ],
+     [
+      156891,
+      106677
+     ],
+     [
+      156892,
+      106676
+     ],
+     [
+      156892,
+      106677
+     ]
+    ]
+   },
+   "features_px": [
+    {
+     "id": "QUM-L91",
+     "type": "pool",
+     "px": [
+      566.7,
+      376.3
+     ],
+     "footprints_px": [
+      [
+       [
+        565.5,
+        350.7
+       ],
+       [
+        582.6,
+        355.7
+       ],
+       [
+        566.7,
+        402.6
+       ],
+       [
+        551.4,
+        397.7
+       ]
+      ]
+     ]
+    },
+    {
+     "id": "QUM-L110",
+     "type": "cistern",
+     "px": [
+      539.7,
+      257.5
+     ],
+     "footprints_px": [
+      [
+       [
+        549.0,
+        257.4
+       ],
+       [
+        548.3,
+        261.0
+       ],
+       [
+        546.3,
+        264.0
+       ],
+       [
+        543.3,
+        266.0
+       ],
+       [
+        539.8,
+        266.7
+       ],
+       [
+        536.3,
+        266.1
+       ],
+       [
+        533.3,
+        264.1
+       ],
+       [
+        531.2,
+        261.1
+       ],
+       [
+        530.5,
+        257.6
+       ],
+       [
+        531.1,
+        254.1
+       ],
+       [
+        533.1,
+        251.0
+       ],
+       [
+        536.1,
+        249.0
+       ],
+       [
+        539.6,
+        248.3
+       ],
+       [
+        543.2,
+        248.9
+       ],
+       [
+        546.2,
+        250.9
+       ],
+       [
+        548.2,
+        253.9
+       ]
+      ]
+     ]
+    },
+    {
+     "id": "QUM-L117",
+     "type": "pool",
+     "px": [
+      564.5,
+      270.7
+     ],
+     "footprints_px": [
+      [
+       [
+        565.2,
+        254.6
+       ],
+       [
+        575.0,
+        257.5
+       ],
+       [
+        563.3,
+        287.2
+       ],
+       [
+        554.2,
+        284.0
+       ]
+      ]
+     ]
+    },
+    {
+     "id": "QUM-L118",
+     "type": "pool",
+     "px": [
+      555.6,
+      230.2
+     ],
+     "footprints_px": [
+      [
+       [
+        553.0,
+        219.2
+       ],
+       [
+        563.2,
+        221.9
+       ],
+       [
+        558.5,
+        240.9
+       ],
+       [
+        547.6,
+        238.6
+       ]
+      ]
+     ]
+    },
+    {
+     "id": "QUM-L138",
+     "type": "pool",
+     "px": [
+      483.3,
+      128.6
+     ],
+     "footprints_px": [
+      [
+       [
+        481.4,
+        115.9
+       ],
+       [
+        496.8,
+        131.0
+       ],
+       [
+        484.2,
+        141.4
+       ],
+       [
+        470.3,
+        125.3
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "QE",
+   "kind": "known",
+   "site": "Kh. Qumran",
+   "centre": [
+    31.74125832752489,
+    35.45964867603709
+   ],
+   "code": "EZ21",
+   "cut": {
+    "native_m_per_px": 0.5073,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156892,
+      106676
+     ],
+     [
+      156892,
+      106677
+     ],
+     [
+      156893,
+      106676
+     ],
+     [
+      156893,
+      106677
+     ]
+    ]
+   },
+   "features_px": [
+    {
+     "id": "QUM-L71",
+     "type": "pool",
+     "px": [
+      129.0,
+      503.4
+     ],
+     "footprints_px": [
+      [
+       [
+        131.9,
+        466.9
+       ],
+       [
+        152.1,
+        470.0
+       ],
+       [
+        125.4,
+        541.4
+       ],
+       [
+        106.3,
+        535.2
+       ]
+      ]
+     ]
+    },
+    {
+     "id": "QUM-L56/58",
+     "type": "pool",
+     "px": [
+      55.7,
+      403.4
+     ],
+     "footprints_px": [
+      [
+       [
+        22.5,
+        385.3
+       ],
+       [
+        58.0,
+        397.3
+       ],
+       [
+        53.5,
+        409.1
+       ],
+       [
+        19.5,
+        397.6
+       ]
+      ],
+      [
+       [
+        62.1,
+        399.0
+       ],
+       [
+        57.2,
+        409.8
+       ],
+       [
+        58.7,
+        411.3
+       ],
+       [
+        83.3,
+        420.8
+       ],
+       [
+        88.3,
+        407.9
+       ],
+       [
+        87.3,
+        406.9
+       ]
+      ]
+     ]
+    },
+    {
+     "id": "QUM-L91",
+     "type": "pool",
+     "px": [
+      -33.3,
+      416.5
+     ],
+     "footprints_px": [
+      [
+       [
+        -34.5,
+        390.9
+       ],
+       [
+        -17.5,
+        395.9
+       ],
+       [
+        -33.3,
+        442.8
+       ],
+       [
+        -48.6,
+        437.9
+       ]
+      ]
+     ]
+    },
+    {
+     "id": "QUM-L48/49",
+     "type": "pool",
+     "px": [
+      109.8,
+      382.4
+     ],
+     "footprints_px": [
+      [
+       [
+        108.0,
+        365.7
+       ],
+       [
+        120.5,
+        366.4
+       ],
+       [
+        110.5,
+        400.5
+       ],
+       [
+        99.7,
+        398.2
+       ]
+      ]
+     ]
+    },
+    {
+     "id": "QUM-L117",
+     "type": "pool",
+     "px": [
+      -35.5,
+      310.9
+     ],
+     "footprints_px": [
+      [
+       [
+        -34.8,
+        294.8
+       ],
+       [
+        -25.0,
+        297.7
+       ],
+       [
+        -36.7,
+        327.4
+       ],
+       [
+        -45.8,
+        324.3
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "HP",
+   "kind": "known",
+   "site": "Hyrcania",
+   "centre": [
+    31.719383360655726,
+    35.36456129212013
+   ],
+   "code": "EH14",
+   "cut": {
+    "native_m_per_px": 0.5074,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156823,
+      106694
+     ],
+     [
+      156823,
+      106695
+     ],
+     [
+      156823,
+      106696
+     ],
+     [
+      156824,
+      106694
+     ],
+     [
+      156824,
+      106695
+     ],
+     [
+      156824,
+      106696
+     ]
+    ]
+   },
+   "features_px": [
+    {
+     "id": "HYR-doublepool",
+     "type": "pool",
+     "px": [
+      417.9,
+      191.5
+     ],
+     "members_px": [
+      [
+       439.1,
+       164.1
+      ],
+      [
+       396.7,
+       218.9
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "D44",
+   "kind": "known",
+   "site": "Nahal Sekhakha dam 44",
+   "centre": [
+    31.7271614141726,
+    35.35476487018494
+   ],
+   "code": "DR47",
+   "cut": {
+    "native_m_per_px": 0.5074,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156815,
+      106688
+     ],
+     [
+      156815,
+      106689
+     ],
+     [
+      156816,
+      106688
+     ],
+     [
+      156816,
+      106689
+     ],
+     [
+      156817,
+      106688
+     ],
+     [
+      156817,
+      106689
+     ]
+    ]
+   },
+   "features_px": [
+    {
+     "id": "HYR-dam44",
+     "type": "dam",
+     "px": [
+      348.1,
+      257.1
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "SAM",
+   "kind": "known",
+   "site": "Kh. es-Samra",
+   "centre": [
+    31.716675235088076,
+    35.39221042103085
+   ],
+   "code": "UG40",
+   "cut": {
+    "native_m_per_px": 0.5074,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156843,
+      106697
+     ],
+     [
+      156843,
+      106698
+     ],
+     [
+      156844,
+      106697
+     ],
+     [
+      156844,
+      106698
+     ]
+    ]
+   },
+   "features_px": [
+    {
+     "id": "SAM-cistern-enclosure-estimate",
+     "type": "cistern (open, 18x22 m)",
+     "px": [
+      236.0,
+      216.7
+     ],
+     "note": "NOT a 10 m position: integrator estimate of the enclosure centre from imagery; C&M p. 11 put the cistern in the SW quarter of a ~68x40 m enclosure. Scored only in the alternative count (pool/cistern mark within 30 m of this point)."
+    }
+   ]
+  },
+  {
+   "slot": "CQ1",
+   "kind": "control",
+   "site": "Qumran-type marl terrace / cliff foot",
+   "centre": [
+    31.761884460146746,
+    35.442702574795526
+   ],
+   "attempts": 1,
+   "nearest_site_point": {
+    "src": "WBADB-Surveyed",
+    "id": 3474,
+    "m": 895
+   },
+   "code": "HK50",
+   "cut": {
+    "native_m_per_px": 0.5072,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156880,
+      106658
+     ],
+     [
+      156880,
+      106659
+     ],
+     [
+      156881,
+      106658
+     ],
+     [
+      156881,
+      106659
+     ]
+    ]
+   },
+   "features_px": []
+  },
+  {
+   "slot": "CQ2",
+   "kind": "control",
+   "site": "Qumran-type marl terrace / cliff foot",
+   "centre": [
+    31.778681539642786,
+    35.46140855197969
+   ],
+   "attempts": 1,
+   "nearest_site_point": {
+    "src": "WBADB-Surveyed",
+    "id": 3378,
+    "m": 603
+   },
+   "code": "SJ83",
+   "cut": {
+    "native_m_per_px": 0.5071,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156893,
+      106644
+     ],
+     [
+      156893,
+      106645
+     ],
+     [
+      156894,
+      106644
+     ],
+     [
+      156894,
+      106645
+     ]
+    ]
+   },
+   "features_px": []
+  },
+  {
+   "slot": "CB",
+   "kind": "control",
+   "site": "Buqeia hills (Samra-type)",
+   "centre": [
+    31.71743084447194,
+    35.39675127081916
+   ],
+   "attempts": 3,
+   "nearest_site_point": {
+    "src": "MarSaba",
+    "id": 74,
+    "m": 447
+   },
+   "code": "AT31",
+   "cut": {
+    "native_m_per_px": 0.5074,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156846,
+      106696
+     ],
+     [
+      156846,
+      106697
+     ],
+     [
+      156847,
+      106696
+     ],
+     [
+      156847,
+      106697
+     ]
+    ]
+   },
+   "features_px": []
+  },
+  {
+   "slot": "CH",
+   "kind": "control",
+   "site": "hill slopes round Hyrcania",
+   "centre": [
+    31.70829527053537,
+    35.37094932995494
+   ],
+   "attempts": 2,
+   "nearest_site_point": {
+    "src": "WBADB-Excavations",
+    "id": 816,
+    "m": 1166
+   },
+   "code": "NS45",
+   "cut": {
+    "native_m_per_px": 0.5075,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156827,
+      106704
+     ],
+     [
+      156827,
+      106705
+     ],
+     [
+      156828,
+      106704
+     ],
+     [
+      156828,
+      106705
+     ]
+    ]
+   },
+   "features_px": []
+  },
+  {
+   "slot": "CW",
+   "kind": "control",
+   "site": "upper Nahal Sekhakha / wadi slopes (dam-44-type)",
+   "centre": [
+    31.72553147008686,
+    35.34470455240325
+   ],
+   "attempts": 1,
+   "nearest_site_point": {
+    "src": "MarSaba",
+    "id": 47,
+    "m": 614
+   },
+   "code": "WL81",
+   "cut": {
+    "native_m_per_px": 0.5074,
+    "display_m_per_px": 0.25,
+    "esri_z18_tiles": [
+     [
+      156808,
+      106689
+     ],
+     [
+      156808,
+      106690
+     ],
+     [
+      156809,
+      106689
+     ],
+     [
+      156809,
+      106690
+     ]
+    ]
+   },
+   "features_px": []
+  }
+ ],
+ "packet_files": {
+  "INSTRUCTIONS.txt": "fdd97cf0f2e2445b5832f0df3f0a17dcd1703e82681199a7f23c6b5c568a3328",
+  "tile_AT31.png": "b871585f493a86762c271e44344a78c172a63f2f403c370e2e6f2046a5162e9b",
+  "tile_DR47.png": "b5b4b6d3da750eb9af65097ebf7af36a4d8b6cb027bc3be946727aaf7a9fcdd3",
+  "tile_EH14.png": "37395d3fe7188e85e8bf486fa8500f5bd02322c66c0fa47ec9341d08fae9f535",
+  "tile_EZ21.png": "5995c45537505b8fe25f9b68fe01e70dc90290aa585e400b66ddbe4af81548b3",
+  "tile_HK50.png": "c26dbe85e16bb5c4c32a55068e21f41c4100dc5857a23f8fa63e6cd4d68c03f7",
+  "tile_NS45.png": "2a185fb955f0f9ca3706e36f271b4ab290b9887e7cfb70053fc0d78c7e42bf74",
+  "tile_SJ83.png": "26628797fb54669c27c5b31745e6c15ebd58ca4cf1bf2cd3d8377d36ff903236",
+  "tile_UG40.png": "a9b3a8c359ffe001d992d72c0a60cc957417ce7877150ae59cbdc2e34cbfd7a0",
+  "tile_WL81.png": "06524276205657333fd8188eeb07273a860ef19d30e4892fbda6641d4fef6beb",
+  "tile_ZZ84.png": "899fc1c847ff557485f974283539c102e72d4d6493bac88c4811d7fdeb73a47e"
+ },
+ "esri_tiles_fetched_this_run_so_far": 47
+}

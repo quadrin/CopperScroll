@@ -1,0 +1,61 @@
+{"scorer_notes": "Marks from visual reading only, at 0.25 m/px. The imagery is soft (about 0.5 m source), so small openings and steps are at the limit of what can be seen. No stair could be resolved with confidence in any tile. Several marks are dark spots or shadows that could be pits, caves or vegetation, and they have low confidence. Linear dark lines on bare rock are marked as fissures; drainage gullies and footpaths are not marked. Ends are given as [[x1,y1],[x2,y2]] in pixels.",
+  "tiles": [
+    {"code": "AT31", "marks": [
+       {"type": "other", "x": 312, "y": 85, "ends": null, "size_m": "22 x 15", "descends_bearing_deg": null, "confidence": 0.3, "note": "Irregular hollow in a rocky outcrop with dark interior pockets; possibly a quarry, a collapsed cavity or a natural depression"},
+       {"type": "other", "x": 512, "y": 88, "ends": null, "size_m": "5 x 3", "descends_bearing_deg": null, "confidence": 0.15, "note": "Small bright oval rim with a dark interior; could be a small basin or cover, or a modern object"}
+    ]},
+    {"code": "DR47", "marks": [
+       {"type": "fissure", "x": 300, "y": 200, "ends": [[150, 10], [320, 360]], "size_m": "about 95 long", "descends_bearing_deg": null, "confidence": 0.35, "note": "Light-rimmed crack or ledge edge between rock plates, running N then S; could be a scarp edge rather than a true fissure"},
+       {"type": "fissure", "x": 160, "y": 440, "ends": [[320, 360], [0, 525]], "size_m": "about 90 long", "descends_bearing_deg": null, "confidence": 0.3, "note": "Light-rimmed edge running SW from the junction; borders the lower layered ground"},
+       {"type": "fissure", "x": 460, "y": 365, "ends": [[320, 360], [600, 375]], "size_m": "about 70 long", "descends_bearing_deg": null, "confidence": 0.3, "note": "Light-rimmed edge running E from the junction"},
+       {"type": "other", "x": 330, "y": 500, "ends": null, "size_m": "80 x 40 (exceeds tile)", "descends_bearing_deg": null, "confidence": 0.25, "note": "Lower bowl with concentric layered walls below the light rims; probably an erosional hollow or sinkhole edge, not clearly built"}
+    ]},
+    {"code": "EH14", "marks": [
+       {"type": "other", "x": 390, "y": 285, "ends": null, "size_m": "38 x 10", "descends_bearing_deg": null, "confidence": 0.35, "note": "Long deep dark shadow along a straight NW-SE edge; a rock-cut trench, quarry face or deep rock-cut pool is possible, but it may be a natural scarp shadow"},
+       {"type": "other", "x": 275, "y": 205, "ends": null, "size_m": "18 x 5", "descends_bearing_deg": null, "confidence": 0.25, "note": "Smaller dark shadow cut parallel to the main one; possibly a cut face or trench"},
+       {"type": "other", "x": 440, "y": 170, "ends": null, "size_m": "10 x 4", "descends_bearing_deg": null, "confidence": 0.2, "note": "Dark slot along a terrace edge"},
+       {"type": "other", "x": 240, "y": 470, "ends": null, "size_m": "15 x 10", "descends_bearing_deg": null, "confidence": 0.25, "note": "Rectangular outline with dark edges; possibly a built or rock-cut pool or a ruined structure"},
+       {"type": "cistern mouth", "x": 570, "y": 125, "ends": null, "size_m": "3 x 3", "descends_bearing_deg": null, "confidence": 0.25, "note": "Small dark round hole on a ridge"},
+       {"type": "cistern mouth", "x": 215, "y": 402, "ends": null, "size_m": "3 x 2", "descends_bearing_deg": null, "confidence": 0.2, "note": "Small dark opening near a terrace corner"}
+    ]},
+    {"code": "EZ21", "marks": [
+       {"type": "pool", "x": 130, "y": 508, "ends": null, "size_m": "20 x 6", "descends_bearing_deg": null, "confidence": 0.4, "note": "Elongated dark rectangular basin with a light rim oriented NNE-SSW at the edge of the excavated ruins; might be stepped, but steps are not resolvable"},
+       {"type": "pool", "x": 65, "y": 435, "ends": null, "size_m": "10 x 6", "descends_bearing_deg": null, "confidence": 0.3, "note": "Dark rectangular sunken space inside the walled ruin complex; possibly a pool or cistern, or a deep room"},
+       {"type": "other", "x": 48, "y": 115, "ends": null, "size_m": "12 diameter", "descends_bearing_deg": null, "confidence": 0.2, "note": "Round feature with a dark rim; possibly a round basin or a circular structure"},
+       {"type": "other", "x": 165, "y": 415, "ends": [[120, 422], [212, 405]], "size_m": "23 long", "descends_bearing_deg": null, "confidence": 0.15, "note": "Linear light feature leaving the ruins to the E; possibly a channel, more likely a path"}
+    ]},
+    {"code": "HK50", "marks": []},
+    {"code": "NS45", "marks": [
+       {"type": "fissure", "x": 180, "y": 290, "ends": [[150, 0], [245, 595]], "size_m": "about 150 long, 1-3 wide", "descends_bearing_deg": null, "confidence": 0.4, "note": "Narrow dark linear cleft running N-S across the tile; could be a fissure or a narrow incised gully with vegetation"},
+       {"type": "fissure", "x": 45, "y": 515, "ends": [[0, 440], [95, 595]], "size_m": "about 45 long", "descends_bearing_deg": null, "confidence": 0.3, "note": "Second dark linear cleft in the lower left, running NW-SE"},
+       {"type": "cistern mouth", "x": 45, "y": 355, "ends": null, "size_m": "2 x 2", "descends_bearing_deg": null, "confidence": 0.12, "note": "Small isolated dark spot; could be a shrub"}
+    ]},
+    {"code": "SJ83", "marks": [
+       {"type": "pool", "x": 245, "y": 215, "ends": null, "size_m": "12 x 8", "descends_bearing_deg": null, "confidence": 0.2, "note": "Bright patch with dark streaks in the wadi bend; possibly water or a small dam basin, or bright flood sediment"},
+       {"type": "other", "x": 375, "y": 72, "ends": null, "size_m": "7 diameter", "descends_bearing_deg": null, "confidence": 0.2, "note": "Circular dark ring; a pit, collapsed cistern or ring structure"},
+       {"type": "other", "x": 85, "y": 105, "ends": null, "size_m": "6 diameter", "descends_bearing_deg": null, "confidence": 0.15, "note": "Faint circular ring"},
+       {"type": "cistern mouth", "x": 415, "y": 395, "ends": null, "size_m": "5 x 4", "descends_bearing_deg": null, "confidence": 0.18, "note": "Dark spot with a light rim near the wadi; a pit or opening, or a shrub"}
+    ]},
+    {"code": "UG40", "marks": [
+       {"type": "other", "x": 235, "y": 245, "ends": null, "size_m": "90 x 35", "descends_bearing_deg": null, "confidence": 0.3, "note": "Large rectangular enclosure or depression with a long axis WNW-ESE and an internal darker rectangle at the NW end; possibly a ruined building or a large reservoir"},
+       {"type": "cistern mouth", "x": 365, "y": 183, "ends": null, "size_m": "4 x 3", "descends_bearing_deg": null, "confidence": 0.25, "note": "Dark opening at the NE edge of the enclosure"},
+       {"type": "cistern mouth", "x": 565, "y": 115, "ends": null, "size_m": "4 x 3", "descends_bearing_deg": null, "confidence": 0.25, "note": "Dark opening beside a light mound (possible spoil)"},
+       {"type": "other", "x": 90, "y": 385, "ends": [[160, 340], [15, 440]], "size_m": "45 long", "descends_bearing_deg": null, "confidence": 0.5, "note": "Zigzag cut trench; looks like a modern military trench and is probably not a water feature"},
+       {"type": "other", "x": 525, "y": 400, "ends": [[600, 350], [455, 460]], "size_m": "45 long", "descends_bearing_deg": null, "confidence": 0.5, "note": "Second zigzag trench of the same kind; probably modern"}
+    ]},
+    {"code": "WL81", "marks": [
+       {"type": "fissure", "x": 160, "y": 275, "ends": [[180, 135], [140, 410]], "size_m": "70 long", "descends_bearing_deg": null, "confidence": 0.6, "note": "Sharp dark linear crack in bare rock, running N-S"},
+       {"type": "fissure", "x": 70, "y": 418, "ends": [[0, 425], [140, 410]], "size_m": "35 long", "descends_bearing_deg": null, "confidence": 0.35, "note": "Crack running W from the base of the main fissure"},
+       {"type": "fissure", "x": 390, "y": 455, "ends": [[310, 330], [470, 580]], "size_m": "75 long", "descends_bearing_deg": null, "confidence": 0.45, "note": "Dark crack running SE with a darker greyish patch at about (330,450)"},
+       {"type": "fissure", "x": 390, "y": 110, "ends": [[230, 30], [560, 200]], "size_m": "95 long", "descends_bearing_deg": null, "confidence": 0.3, "note": "Dark line along the upper rock edge; possibly a ledge edge rather than a crack"}
+    ]},
+    {"code": "ZZ84", "marks": [
+       {"type": "pool", "x": 562, "y": 385, "ends": null, "size_m": "12 x 5", "descends_bearing_deg": null, "confidence": 0.3, "note": "Long dark rectangular sunken space in the built ruin complex on the E side; possibly a pool or cistern"},
+       {"type": "other", "x": 540, "y": 262, "ends": null, "size_m": "5 diameter", "descends_bearing_deg": null, "confidence": 0.2, "note": "Round dark feature inside the complex; a round basin or cistern opening, or a tree"},
+       {"type": "other", "x": 420, "y": 60, "ends": [[320, 20], [510, 180]], "size_m": "about 70 long", "descends_bearing_deg": null, "confidence": 0.3, "note": "Curving double-lined linear feature running from the NW toward the complex; possibly a channel or aqueduct, possibly a path or road"},
+       {"type": "other", "x": 150, "y": 530, "ends": null, "size_m": "15 x 10", "descends_bearing_deg": null, "confidence": 0.35, "note": "Dark cavity or shadow at the foot of a marl ridge; possibly a cave"},
+       {"type": "other", "x": 370, "y": 535, "ends": null, "size_m": "10 x 8", "descends_bearing_deg": null, "confidence": 0.3, "note": "Dark cavity in a marl face; possibly a cave"},
+       {"type": "other", "x": 510, "y": 545, "ends": null, "size_m": "12 x 12", "descends_bearing_deg": null, "confidence": 0.3, "note": "Dark cavity in a marl face; possibly a cave"},
+       {"type": "other", "x": 15, "y": 465, "ends": null, "size_m": "4 x 4", "descends_bearing_deg": null, "confidence": 0.2, "note": "Small dark opening in a marl slope"}
+    ]}
+  ]}

@@ -1,0 +1,27 @@
+Imagery reading task
+
+The folder holds 10 aerial image tiles (files tile_XXNN.png). Each tile is a north-up
+satellite image, 600 x 600 pixels, covering 150 m x 150 m of ground
+(0.25 m per pixel; the source imagery is about 0.5 m resolution, so fine detail is soft).
+Pixel (0,0) is the top-left (north-west) corner; x increases to the east (right), y to the south (down).
+
+For each tile, mark every one of the following that you can see:
+  - pool        (an open, built or rock-cut basin or reservoir, any size)
+  - cistern mouth (an opening or shaft into an underground cistern)
+  - stair       (a flight of steps; give the direction in which it descends, as a compass bearing, if you can)
+  - fissure     (a crack or cleft in rock)
+  - other       (any other water installation or rock-cut feature you think is relevant; describe it)
+
+For each mark give: tile code, type, pixel position (x, y) of its centre (for a fissure or stair,
+also the two end points), approximate size in metres, confidence from 0 to 1, and a short note.
+Mark only what you can see in the image. Mark nothing where you see nothing; an empty tile is a
+valid answer. Do not use any outside information or try to find where the tiles are.
+
+Return your answers as JSON in exactly this form:
+{"scorer_notes": "...",
+  "tiles": [
+    {"code": "XX00", "marks": [
+       {"type": "pool", "x": 0, "y": 0, "ends": null, "size_m": "5 x 3", "descends_bearing_deg": null, "confidence": 0.0, "note": ""}
+    ]}
+  ]}
+List every tile code, including tiles with no marks: AT31, DR47, EH14, EZ21, HK50, NS45, SJ83, UG40, WL81, ZZ84.

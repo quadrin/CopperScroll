@@ -1,0 +1,306 @@
+{
+ "missing_tiles_in_answers": [],
+ "features": {
+  "QUM-L71": {
+   "MAIN": {
+    "tile": "EZ21",
+    "mark": 0,
+    "type": "pool",
+    "conf": 0.4,
+    "d_m": 1.2,
+    "dF_m": 0.0,
+    "dist": 1.2
+   },
+   "ALT-F": {
+    "tile": "EZ21",
+    "mark": 0,
+    "type": "pool",
+    "conf": 0.4,
+    "d_m": 1.2,
+    "dF_m": 0.0,
+    "dist": 0.0
+   },
+   "ALT-T": {
+    "tile": "EZ21",
+    "mark": 0,
+    "type": "pool",
+    "conf": 0.4,
+    "d_m": 1.2,
+    "dF_m": 0.0,
+    "dist": 1.2
+   },
+   "ALT-C": null
+  },
+  "QUM-L56/58": {
+   "MAIN": {
+    "tile": "EZ21",
+    "mark": 1,
+    "type": "pool",
+    "conf": 0.3,
+    "d_m": 8.2,
+    "dF_m": 5.0,
+    "dist": 8.2
+   },
+   "ALT-F": {
+    "tile": "EZ21",
+    "mark": 1,
+    "type": "pool",
+    "conf": 0.3,
+    "d_m": 8.2,
+    "dF_m": 5.0,
+    "dist": 5.0
+   },
+   "ALT-T": {
+    "tile": "EZ21",
+    "mark": 1,
+    "type": "pool",
+    "conf": 0.3,
+    "d_m": 8.2,
+    "dF_m": 5.0,
+    "dist": 8.2
+   },
+   "ALT-C": null
+  },
+  "QUM-L91": {
+   "MAIN": {
+    "tile": "ZZ84",
+    "mark": 0,
+    "type": "pool",
+    "conf": 0.3,
+    "d_m": 2.5,
+    "dF_m": 0.0,
+    "dist": 2.5
+   },
+   "ALT-F": {
+    "tile": "ZZ84",
+    "mark": 0,
+    "type": "pool",
+    "conf": 0.3,
+    "d_m": 2.5,
+    "dF_m": 0.0,
+    "dist": 0.0
+   },
+   "ALT-T": {
+    "tile": "ZZ84",
+    "mark": 0,
+    "type": "pool",
+    "conf": 0.3,
+    "d_m": 2.5,
+    "dF_m": 0.0,
+    "dist": 2.5
+   },
+   "ALT-C": null
+  },
+  "QUM-L110": {
+   "MAIN": {
+    "tile": "ZZ84",
+    "mark": 1,
+    "type": "other",
+    "conf": 0.2,
+    "d_m": 1.1,
+    "dF_m": 0.0,
+    "dist": 1.1
+   },
+   "ALT-F": {
+    "tile": "ZZ84",
+    "mark": 1,
+    "type": "other",
+    "conf": 0.2,
+    "d_m": 1.1,
+    "dF_m": 0.0,
+    "dist": 0.0
+   },
+   "ALT-T": null,
+   "ALT-C": null
+  },
+  "QUM-L48/49": {
+   "MAIN": null,
+   "ALT-F": null,
+   "ALT-T": null,
+   "ALT-C": null
+  },
+  "QUM-L117": {
+   "MAIN": {
+    "tile": "ZZ84",
+    "mark": 1,
+    "type": "other",
+    "conf": 0.2,
+    "d_m": 6.5,
+    "dF_m": 5.3,
+    "dist": 6.5
+   },
+   "ALT-F": {
+    "tile": "ZZ84",
+    "mark": 1,
+    "type": "other",
+    "conf": 0.2,
+    "d_m": 6.5,
+    "dF_m": 5.3,
+    "dist": 5.3
+   },
+   "ALT-T": null,
+   "ALT-C": null
+  },
+  "QUM-L118": {
+   "MAIN": {
+    "tile": "ZZ84",
+    "mark": 1,
+    "type": "other",
+    "conf": 0.2,
+    "d_m": 8.9,
+    "dF_m": 6.2,
+    "dist": 8.9
+   },
+   "ALT-F": {
+    "tile": "ZZ84",
+    "mark": 1,
+    "type": "other",
+    "conf": 0.2,
+    "d_m": 8.9,
+    "dF_m": 6.2,
+    "dist": 6.2
+   },
+   "ALT-T": null,
+   "ALT-C": null
+  },
+  "QUM-L138": {
+   "MAIN": null,
+   "ALT-F": null,
+   "ALT-T": null,
+   "ALT-C": null
+  },
+  "HYR-doublepool": {
+   "MAIN": {
+    "tile": "EH14",
+    "mark": 2,
+    "type": "other",
+    "conf": 0.2,
+    "d_m": 7.7,
+    "dF_m": 1.5,
+    "dist": 7.7
+   },
+   "ALT-F": {
+    "tile": "EH14",
+    "mark": 2,
+    "type": "other",
+    "conf": 0.2,
+    "d_m": 7.7,
+    "dF_m": 1.5,
+    "dist": 1.5
+   },
+   "ALT-T": null,
+   "ALT-C": null
+  },
+  "HYR-dam44": {
+   "MAIN": null,
+   "ALT-F": null,
+   "ALT-T": null,
+   "ALT-C": null
+  }
+ },
+ "samra_alt": null,
+ "false_pools_per_control": {
+  "HK50": 0,
+  "SJ83": 1,
+  "AT31": 0,
+  "NS45": 0,
+  "WL81": 0
+ },
+ "false_pools_mean": 0.2,
+ "false_pool_or_cistern_per_control": {
+  "HK50": 0,
+  "SJ83": 2,
+  "AT31": 0,
+  "NS45": 1,
+  "WL81": 0
+ },
+ "false_pool_or_cistern_mean": 0.6,
+ "control_marks_all_types": {
+  "HK50": [],
+  "SJ83": [
+   "pool",
+   "other",
+   "other",
+   "cistern mouth"
+  ],
+  "AT31": [
+   "other",
+   "other"
+  ],
+  "NS45": [
+   "fissure",
+   "fissure",
+   "cistern mouth"
+  ],
+  "WL81": [
+   "fissure",
+   "fissure",
+   "fissure",
+   "fissure"
+  ]
+ },
+ "counts": {
+  "MAIN": 7,
+  "ALT-F": 7,
+  "ALT-T": 3,
+  "ALT-C": 0
+ },
+ "counts_11_with_samra": {
+  "MAIN": 7,
+  "ALT-F": 7,
+  "ALT-T": 3,
+  "ALT-C": 0
+ },
+ "stageA_pass_MAIN": true,
+ "stageA_pass_by_branch": {
+  "MAIN": {
+   "found": 7,
+   "pass_10_ge6": true,
+   "pass_11_ge6": true,
+   "pass_11_ge7": true,
+   "pass_alt_false_def": true
+  },
+  "ALT-F": {
+   "found": 7,
+   "pass_10_ge6": true,
+   "pass_11_ge6": true,
+   "pass_11_ge7": true,
+   "pass_alt_false_def": true
+  },
+  "ALT-T": {
+   "found": 3,
+   "pass_10_ge6": false,
+   "pass_11_ge6": false,
+   "pass_11_ge7": false,
+   "pass_alt_false_def": false
+  },
+  "ALT-C": {
+   "found": 0,
+   "pass_10_ge6": false,
+   "pass_11_ge6": false,
+   "pass_11_ge7": false,
+   "pass_alt_false_def": false
+  }
+ },
+ "detection_rate": {
+  "pool": 0.75,
+  "cistern(L110)": 1.0,
+  "dam": 0.0,
+  "stair": null,
+  "fissure": null
+ },
+ "B1_from_stageA_answers": {
+  "QUM-L71": {
+   "result": "unknown",
+   "hits": []
+  },
+  "HYR-doublepool": {
+   "result": "unknown",
+   "hits": []
+  },
+  "SAM-cistern-enclosure-estimate": {
+   "result": "unknown",
+   "hits": []
+  }
+ }
+}

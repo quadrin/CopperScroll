@@ -36,8 +36,8 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | linearb_achor_2026-10-27 | Linear B joint fit for the Valley of Achor | entries 1, 17 | **done 27 Oct: not discriminating** ([RESULT](linearb_achor_2026-10-27/RESULT.md)) |
 | earthquake_fissure_2026-10-27 | Entry 22's "fissure" is the 31 BCE earthquake crack at Qumran | entry 22 | **done 27 Oct: supported (exploratory, fragile): reservoir = L56/58** ([RESULT](earthquake_fissure_2026-10-27/RESULT.md)) |
 | text_blocks_2026-10-27 | Formula seams show the regional lists the scroll was compiled from | all entries | **done 27 Oct: seams real (p = 0.0004) but not regional** ([RESULT](text_blocks_2026-10-27/RESULT.md)) |
-| imagery_gaps_2026-10-27 | Modern high-resolution imagery fills the survey gaps (calibrated blind first) | runs 1, 5, 11 gaps | rule fixed 27 Oct |
-| hoard_contexts_2026-10-27 | Original reports recover the near-miss hoards' contexts | run 4 near misses | rule fixed 27 Oct |
+| imagery_gaps_2026-10-27 | Modern high-resolution imagery fills the survey gaps (calibrated blind first) | runs 1, 5, 11 gaps | **done 27 Oct: calibration weak; no gap filled** ([RESULT](imagery_gaps_2026-10-27/RESULT.md)) |
+| hoard_contexts_2026-10-27 | Original reports recover the near-miss hoards' contexts | run 4 near misses | **done 27 Oct: no lead; ADAJ 1953 Feshkha report found** ([RESULT](hoard_contexts_2026-10-27/RESULT.md)) |
 | stepped_tunnels_2026-10-27 | Entry 24's tomb in the Wadi of the Vault is a rock-cut stepped tunnel | entry 24 | rule fixed 27 Oct |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
