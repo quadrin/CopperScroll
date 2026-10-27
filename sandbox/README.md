@@ -29,5 +29,12 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | already_found_2026-10-27 | Some caches are already catalogued as hoards (karsh reading) | all entries with sums | **done 27 Oct: no lead** ([RESULT](already_found_2026-10-27/RESULT.md)) |
 | kohlit_south_of_yanun_2026-10-27 | If the pit is in Janoaḥ, Koḥlit is a mound just south of Yanun | Koḥlit (entries 4, 11, 19, 60) | **done 27 Oct: not supported; records too coarse** ([RESULT](kohlit_south_of_yanun_2026-10-27/RESULT.md)) |
 | onomasticon_names_2026-10-27 | Lost names survive, located, in Eusebius and the Madaba Map | 40 scroll names | **done 27 Oct: no new lead** ([RESULT](onomasticon_names_2026-10-27/RESULT.md)) |
+| samra_hyrcania_valley_2026-10-27 | Valley of Secacah = Naḥal Sekhakha; Sekakah = Kh. es-Samra; conduit head = Hyrcania's intake (from run 1) | entries 20–24 | rule fixed 27 Oct |
+| route_travel_time_2026-10-27 | The entry order is a walking route (least-cost, Tobler) | anchored entries | rule fixed 27 Oct |
+| greek_architecture_2026-10-27 | Greek architectural loanwords point to Herodian-style buildings | loanword entries (3, 51, …) | rule fixed 27 Oct |
+| cave_entries_2026-10-27 | Cave entries match caves already excavated | cave entries (7, 22, 25, 26, 30) | rule fixed 27 Oct |
+| linearb_achor_2026-10-27 | Linear B joint fit for the Valley of Achor | entries 1, 17 | rule fixed 27 Oct |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
+
+Round 2 approval (27 Oct, 13:15 Asia/Shanghai): "Do another run of exploring creative ideas/hypotheses in parallel."
