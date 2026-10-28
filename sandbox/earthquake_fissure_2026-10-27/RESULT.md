@@ -32,3 +32,12 @@ A sharp scan of de Vaux 1973 Pl. XXXIX with its legend (Drive copy 28 MB, over t
 
 ## Notes
 Plate images were used for measurement only and are not committed. deadseaquake.info asks for a 10 s crawl delay; the agent made four quick fetches. Not accessible: Magen & Peleg full report (over the limit); the IAA JSP6 PDF link (dead); de Vaux CRAI 1953 on Persée (robots.txt). Files: [out/results.csv](out/results.csv), [out/branchA_distances.json](out/branchA_distances.json), [scripts/](scripts/).
+
+## Addendum A, 28 Oct 2026: native-resolution plate
+The owner's Drive copy of de Vaux 1973 (212 pdf pages; SHA-256 prefix `42b14429decef9e9`) was read through the owner's Mac.
+- **Text, EVIDENCE.** De Vaux 1973 p. 20: the steps and floor of "the largest of these cisterns, locs. 48, 49" were split and the eastern part sank ~50 cm; "the crack was prolonged into the neighbouring cistern, loc. 50 ... and the track of it can be traced right across the ruins of this period to the north and south of the two cisterns." P. 5 n.: the plans are schematic. This confirms that the plotted dash-dot line is the earthquake crack (caveat 1, in part).
+- **Plate, EVIDENCE.** The scan of Pl. XXXIX holds only the right half of the plan (cols. 3–5). **The legend is not on it**, so the symbol is identified from the text, not from the legend. Scale from known dimensions: ~30–34 px/m (L71 inner length ~570 px = 19.10 m; L48–49 ~300 px = 8.70 m).
+- **Measurement, INFERENCE.** The crack runs from about 2.3–2.6 m east of L58's outer east face at L58's south end to about 5 m at its north end (1–4 m from the outer face of the feeding channel). L71 lies east of the crack, which continues SW past L73, L72 and L76.
+- **Effect.** E1 still passes (the rule needs ≤ 15 m), with a smaller offset than the web copy gave (3.3–3.6 m). The L56/58 reading is unchanged. E2 and E3 caveats are unchanged. Caveat 1 is now: the legend is unseen, and the plan is schematic by the author's own note.
+- Still unread: Magen & Peleg 2018 pp. 58–66 (branch C) — the file is online-only on the owner's Mac.
+Plate images were used for measurement only and are not committed.
