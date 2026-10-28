@@ -69,6 +69,50 @@
    },
    "sha256": "a7ded9d59b816307d0384157e386d0a807e3662c0da060e58d2f80c33d16067b",
    "built_utc": "2026-10-27T06:52:04+00:00"
+  },
+  "S4": {
+   "file": "gaz_S4.csv",
+   "sheets": {
+    "18-12": "Deir Mar Saba 1943",
+    "18-13": "Wadi el Qilt 1941/42",
+    "19-14": "Jericho provisional 1928"
+   },
+   "raw_transcriptions_sha256": {
+    "18-12_top": "05c52117acdd602293fb179117843dd4b02972d848ccedf3c3b1a208e388038c",
+    "18-12_bottom": "bc6c600e51fef5024c9a263c3182000722a204a770ef5e8217d832e078309166",
+    "18-13_top": "59dda3b9c7a1d1d5386a33d1dead12e258d611c66d500a691eb3cdc737e1af71",
+    "18-13_bottom": "b46c6e3e151b1864e30e4e835bc34f3307105788217257c6d2f146a152602f55",
+    "19-14_top": "67f833e6d457715b9cae4263f97d727bacfe9a1a5ed64cb7c0eb230052be1de3",
+    "19-14_bottom": "b3351c22db2532da2ce773acf68dae2c9caffaa84b7b3f650e2de9c4ce922786"
+   },
+   "n_raw": 845,
+   "n_names": 478,
+   "per_sheet": {
+    "18-12": {
+     "method": "neat-line corners",
+     "n_names": 223,
+     "n_ties": 25,
+     "tie_median_m": 50.0,
+     "tie_max_m": 5870.0
+    },
+    "18-13": {
+     "method": "neat-line corners",
+     "n_names": 168,
+     "n_ties": 17,
+     "tie_median_m": 62.0,
+     "tie_max_m": 3078.0
+    },
+    "19-14": {
+     "method": "neat-line corners",
+     "n_names": 87,
+     "n_ties": 19,
+     "tie_median_m": 1126.0,
+     "tie_max_m": 8465.0
+    }
+   },
+   "sha256": "5378499b9242e8a0213cdd2ff0b2d02823ae4c5cee54107525d4c3b962a09f17",
+   "built_utc": "2026-10-28T14:42:37+00:00",
+   "note": "blind subagent transcription (addendum A1); positions: neat-line corners (19-14 neat line spans E 190-202.5 km); proper-name ties on 19-14 agree within 38-150 m, generic labels (Ruins, Cave) excluded"
   }
  }
 }
