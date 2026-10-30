@@ -288,6 +288,15 @@ ASI_CACHE=CACHE WBADB_XLSX=WBADB_data1.xlsx python3 -I -m unittest discover -s r
 
 Without the two environment variables, the screen-rebuild test is skipped and the other ten tests run. All eleven passed with the worker's cache (11 October).
 
+## Post-freeze source, 30 October 2026 (exploratory)
+
+JSP 10 (2009) was read from the owner's photographs ([record](../../sources/books_usc_2026-10-30/jsp10_sweep_2026-10-30.md), §§3–4, 6). It is not a frozen source, so its effect is applied only in scope `all`, as amendment 1 does.
+
+- **Kh. el-Khamis (W-S4087, and W-E793, its duplicate):** Batz reports a Hellenistic–Early Roman columbarium of two joined caves that went out of use in the Hellenistic period (JSP 10 pp. 73–83, 9*). Both rows carry a `post_freeze_override` of date L, so `dated_in_window` is **no** in scope `all`. In scope `all`, the period clause and the entry 38 N0 and entry 44 combinations each gain one FAIL and lose one UNKNOWN; no MATCH changes. Scope `frozen` is unchanged.
+- **Kh. Umm el-ʿAṣafir (W-S4114):** JSP 10 pp. 86–87 and 10* add the 4th-century CE blocking of the dove entrance and the Byzantine roof collapse, but no cutting date. The date stays unknown; the citation is in the row notes.
+- **Kh. el-Ḥanzir (W-S5981):** this is Batz 2009b (JSP 10 pp. 128–132); it does not date the columbarium caves themselves. No change.
+- `scores.csv`, `summary.json` and the IAA and Phase 1–4 views were regenerated (`assemble.py`, `score.py`, `iaa_view.py`, `phase4_view.py`).
+
 ## Proposed changes for the integrator
 
 - **Entry 38 (atlas caution and the DN 38 row).** Add: "No recorded columbarium lies within 2 km of ʿAin en-Naṭuf or Kh. Badd Faluh in the ASI Map of Herodium (108/2) or WBADB; the nearest is 5.5 km away. This is survey silence, and detection is unmeasured (columbaria lane, 11 October)." No confidence change: the dovecote is one of several readings.

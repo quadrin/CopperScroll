@@ -192,25 +192,25 @@
     },
     "P": {
      "N": 200,
-     "f_fail": 5,
+     "f_fail": 6,
      "k_match": 19,
-     "m_unknown": 176,
+     "m_unknown": 175,
      "n_weighted": {
       "N": 293,
-      "fail": 6,
+      "fail": 7,
       "match": 19,
-      "unknown": 268
+      "unknown": 267
      }
     },
     "P_relaxed": {
      "N": 200,
-     "f_fail": 5,
-     "k_match": 195,
+     "f_fail": 6,
+     "k_match": 194,
      "m_unknown": 0,
      "n_weighted": {
       "N": 293,
-      "fail": 6,
-      "match": 287,
+      "fail": 7,
+      "match": 286,
       "unknown": 0
      }
     },
@@ -266,14 +266,14 @@
    "union_headline": {
     "38-D-N0|survey": {
      "N": 200,
-     "f_fail": 5,
+     "f_fail": 6,
      "k_match": 19,
-     "m_unknown": 176,
+     "m_unknown": 175,
      "n_weighted": {
       "N": 293,
-      "fail": 6,
+      "fail": 7,
       "match": 19,
-      "unknown": 268
+      "unknown": 267
      }
     },
     "38-D-N1|survey|1km": {
@@ -338,50 +338,50 @@
     },
     "44-D-P|survey|F|S_A": {
      "N": 200,
-     "f_fail": 66,
+     "f_fail": 67,
      "k_match": 3,
-     "m_unknown": 131,
+     "m_unknown": 130,
      "n_weighted": {
       "N": 293,
-      "fail": 69,
+      "fail": 70,
       "match": 3,
-      "unknown": 221
+      "unknown": 220
      }
     },
     "44-D-P|text|F|S_A": {
      "N": 200,
-     "f_fail": 70,
+     "f_fail": 71,
      "k_match": 3,
-     "m_unknown": 127,
+     "m_unknown": 126,
      "n_weighted": {
       "N": 293,
-      "fail": 73,
+      "fail": 74,
       "match": 3,
-      "unknown": 217
+      "unknown": 216
      }
     },
     "44-D-T|survey|F|S_A": {
      "N": 200,
-     "f_fail": 68,
+     "f_fail": 69,
      "k_match": 0,
-     "m_unknown": 132,
+     "m_unknown": 131,
      "n_weighted": {
       "N": 293,
-      "fail": 71,
+      "fail": 72,
       "match": 0,
-      "unknown": 222
+      "unknown": 221
      }
     },
     "44-D-T|text|F|S_A": {
      "N": 200,
-     "f_fail": 72,
+     "f_fail": 73,
      "k_match": 0,
-     "m_unknown": 128,
+     "m_unknown": 127,
      "n_weighted": {
       "N": 293,
-      "fail": 75,
+      "fail": 76,
       "match": 0,
-      "unknown": 218
+      "unknown": 217
      }
     }
    },
