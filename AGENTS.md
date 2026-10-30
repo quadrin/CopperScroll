@@ -1,6 +1,10 @@
 # Copper Scroll research
 
-Use the accumulated evidence to improve our understanding of the Copper Scroll and its geography. Test particular landmarks and location instructions when the evidence can distinguish them. The user's current question determines the work.
+Identify and locate real places described in the Copper Scroll. Connect its readings and location instructions to ancient geography and archaeological remains; explain which candidates fit, which alternatives survive, and what could decide between them. Study groups of entries and competing explanations of the whole document when they can improve those identifications. The user's current question determines the work.
+
+The central research questions are what the directions mean, which ancient landscape and period they describe, which particular places fit the combined constraints, and what independent observation could distinguish a proposed identification. Useful results include a defensible location, a justified change in the candidate set or geographic interpretation, or a specific prediction that can be checked. Finding a landmark and establishing the existence or survival of a deposit are separate claims.
+
+Actively develop and compare hypotheses using the evidence already held. Broad synthesis and exploratory candidate generation can precede formal tests; label their assumptions and uncertainty. The confirmation standards below govern confirmation claims. Funding proposals, financial awards, event operations and recruitment logistics are outside AI site-finding work unless the user explicitly requests them.
 
 ## Choose the work before continuing it
 
@@ -54,7 +58,7 @@ Apply the specific attribution, noncommercial and share-alike terms of each sour
 
 ## Source continuity and archive
 
-The owner's sources are routed through [drive_index.md](research/sources/drive_index.md), which links the current Drive inventory. The checked-in CSV is a historical snapshot; consult the live index or supplied folder before calling a later source missing. [Methods and Challenge status](research/experimental_approaches/README.md) links the proposals to recorded results and their source folders. Check the relevant existing evidence/access record before searching.
+The owner's sources are routed through [drive_index.md](research/sources/drive_index.md), which links the current Drive inventory. The checked-in CSV is a historical snapshot; consult the live index or supplied folder before calling a later source missing. [Research methods and results](research/experimental_approaches/README.md) records tested approaches, their limits and relevant sources. Check the relevant existing evidence/access record before searching.
 
 Retrieve the particular source or observation the selected question needs. Record what was inspected, with pages, figures, access limits and provenance. If access fails, report the source, the needed observation and the best stable retrieval route once, then stop that dependency or pursue an independent approach. Do not repeat failed searches without a changed access route.
 

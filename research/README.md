@@ -1,10 +1,12 @@
 # Research guide
 
+The project aims to identify and locate real places described in the Copper Scroll. Connect textual readings, ancient geography and archaeology; compare both individual candidates and explanations spanning several entries.
+
 Start with [the current research direction](ACTIVE_TEST.md) and [AGENTS.md](../AGENTS.md). Historical priorities and next-step instructions in this guide and its linked reports do not schedule current work. Select work by its expected effect on a consequential conclusion using accessible evidence. This guide and [OPEN_QUESTIONS](OPEN_QUESTIONS.md) are evidence indexes, with no required full read at session startup.
 
 The [September 2026 site review](sites/site_identification_review.md) records conditional site-level proposals. Use the dated reports below and later findings for the evidence, competing readings and corrections. A site's confidence does not identify a particular cave, cistern, pool, or deposit. The [findings log](logs/findings_log.md) preserves dated revisions; [open questions](logs/open_questions.md) preserves the remaining work.
 
-The [methods and Challenge status](experimental_approaches/README.md) and [Drive integration](sources/drive_integration_2026-10-30.md) connect the proposals, test results and source files. Consult them before presenting an existing method as untried.
+The [research methods and results](experimental_approaches/README.md) connect proposed techniques to recorded tests and evidence limits. The [Drive source index](https://drive.google.com/file/d/1A08WOW_9PIkryXauw6WS1mSgT11NREpK/view) locates the underlying material. Consult relevant existing results before presenting a method as untried.
 
 ## Foundation: five phases
 
