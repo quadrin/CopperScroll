@@ -28,7 +28,7 @@ import SceneView from "./atlas-scene";
 const LandscapeView=lazy(()=>import("./atlas-landscape"));
 
 
-type Props = { representation?: "model"|"source"|"walk"; planId?: string|null; featureId?: string|null; onFeature?: (id:string|null)=>void; onPlan?: (id:string)=>void; entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void; onExploreSite?: () => void; onDetails?: () => void; onCamera?: (camera: MapCamera) => void; restoreCamera?: MapCamera; restoreNonce?: number; onRecord?: (id: string) => void; recordId?: string | null; scrollPhoto?: boolean; scrollColumn?: number; onScrollColumn?: (column: number) => void; onScrollPhoto?: (show: boolean, id?: string) => void };
+type Props = { representation?: "model"|"source"|"walk"; planId?: string|null; featureId?: string|null; onFeature?: (id:string|null)=>void; onPlan?: (id:string)=>void; entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void; onExploreSite?: () => void; onDetails?: () => void; onCamera?: (camera: MapCamera) => void; restoreCamera?: MapCamera; restoreNonce?: number; onRecord?: (id: string) => void; recordId?: string | null; scrollPhoto?: boolean; scrollColumn?: number; onScrollColumn?: (column: number) => void; onScrollPhoto?: (show: boolean, id?: string) => void; scroll3d?: boolean; onScroll3d?: (show: boolean) => void };
 const INITIAL = { center: [35.367, 31.82] as [number,number], zoom: 10.3 };
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
 function WalkingPerson({size=32}:{size?:number}){
@@ -394,6 +394,6 @@ export default function AtlasMap(props:Props) {
       {panel==="history"&&<Suspense fallback={<p>Opening historical imagery…</p>}><LandscapeView entry={entry} place={selectedPlace} onDossier={()=>setPanel("sources")}/></Suspense>}
     </div></aside>}
     {mode==="scene"&&<SceneView key={entry.id} entry={entry} onEntry={onEntry} onText={onText}/>}
-    {mode==="scroll"&&<ScrollView entry={entry} entries={entries} places={Object.fromEntries(places.map(p=>[p.id,p]))} onEntry={onEntry} photograph={props.scrollPhoto} onPhotograph={props.onScrollPhoto} column={props.scrollColumn} onColumn={props.onScrollColumn}/>}
+    {mode==="scroll"&&<ScrollView entry={entry} entries={entries} places={Object.fromEntries(places.map(p=>[p.id,p]))} onEntry={onEntry} photograph={props.scrollPhoto} onPhotograph={props.onScrollPhoto} column={props.scrollColumn} onColumn={props.onScrollColumn} object3d={props.scroll3d} onObject3d={props.onScroll3d}/>}
   </section>;
 }

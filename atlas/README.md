@@ -10,6 +10,18 @@ The existing atlas remains available through its named routes. Browse all 61 scr
 
 The central atlas surface includes a **Scene** tab beside Map, Terrain and Photos. Entries 11 and 25 have plan/cutaway models with a depth-trace animation, an exploratory metres-per-cubit control and explicit architecture/origin assumptions. Entry selection synchronizes the register and reading folio. Other entries offer links to these examples. The source is `app/atlas-scene.tsx`; scenes add no archaeological coordinates, dates or confidence changes. Direct links use `#entry-11/scene` and `#entry-25/scene`.
 
+## The scroll as an object
+
+**3D object** in the Read the scroll header opens a three.js model of the whole sheet (`app/atlas-scroll-3d.tsx`, geometry in `app/atlas-scroll-3d-model.ts`). **Rolled**, **Unrolled** and **Strips** move between one illustrative roll, the flat sheet and the 23 cut strips. The strips carry the edition-based transcription. Selecting a strip shows its segment and column and lights the strips of the current column; **Read column** returns to the text. `#entry-30/scroll/3d` opens it directly.
+
+The column-to-segment map for I–X follows Puech 2006's radiograph captions (`research/text/letter_controls/controls_manifest.csv`); XI = 19–20 and XII = 21–23 are assumed. Without photographs the strip widths are equal shares of a 2.4 m sheet.
+
+### Photographs (access-controlled build only)
+
+The WSRP 1988 colour frames are a private study copy, not for publication. The repository holds them only encrypted, in `../private-media/wsrp-1988/` ([README](../private-media/README.md)). The public GitHub Pages build never reads them, and `scripts/check-pages-payload.mjs` fails if any `wsrp/` file or `.enc` file reaches its output.
+
+`.github/workflows/protected-atlas.yml` decrypts them with the `WSRP_MEDIA_KEY` secret, builds with `vite.protected.config.ts` and deploys `dist-protected/` to Cloudflare Pages, where Cloudflare Access lets in approved emails only. That build adds `wsrp/frames.json`; the 3D view then offers **Photographs**, a light choice, and strip widths measured on the photographs (scaled together to 2.4 m, because the strips are curved). Segments 19–23 are never decrypted or shown: they are reserved for the blind reading of XII 10. A local test: `WSRP_MEDIA_KEY=… node scripts/wsrp-media.mjs decrypt`, then `corepack pnpm exec vite build --config vite.protected.config.ts`. Set `VITE_WSRP_PHOTO_SITE` when building the public site to link the photo version from the 3D view's notes.
+
 ## Run locally
 
 Use Node.js 24 and pnpm 11.25.0 (the version pinned in `package.json`). From the repository root:

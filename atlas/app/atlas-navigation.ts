@@ -22,8 +22,8 @@ export function parseAtlasHash(hash: string) {
   }
   const mode = Object.hasOwn(modeAliases, parts[0]) ? modeAliases[parts[0]] : undefined;
   if (!mode) return null;
-  // Only the scroll reader has a photograph subview. Extra suffixes must not
-  // silently become a different valid view (for example, history/photo).
-  if (parts.length > 1 && !(mode === "scroll" && parts.length === 2 && parts[1] === "photo")) return null;
+  // Only the scroll reader has subviews (photograph, 3D object). Extra suffixes
+  // must not silently become a different valid view (for example, history/photo).
+  if (parts.length > 1 && !(mode === "scroll" && parts.length === 2 && (parts[1] === "photo" || parts[1] === "3d"))) return null;
   return {workbench: null, entryId, mode};
 }

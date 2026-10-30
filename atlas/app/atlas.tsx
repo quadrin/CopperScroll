@@ -55,7 +55,7 @@ export default function Atlas(){
   window.history[replace?"replaceState":"pushState"]({atlas:next,atlasDepth:nextDepth,atlasVersion:2},"",explorerHash(next));
   current.current=next;setState(next);setDepth(nextDepth);setBrowse(false);setContextOpen(false);
   if(next.entryId!==prev.entryId||next.placeId!==prev.placeId)setFocusNonce(n=>n+1);
-  if(next.mode!==prev.mode||next.scrollPhoto!==prev.scrollPhoto)window.dispatchEvent(new Event("atlas:modechange"));
+  if(next.mode!==prev.mode||next.scrollPhoto!==prev.scrollPhoto||next.scroll3d!==prev.scroll3d)window.dispatchEvent(new Event("atlas:modechange"));
  },[]);
  useEffect(()=>{
   const existing=window.history.state;
@@ -78,7 +78,7 @@ export default function Atlas(){
   else if(state.featureId)navigate({featureId:null},true);
   else {navigate({mode:"2d",workbench:null,featureId:null},true);window.dispatchEvent(new Event("atlas:overview"));}
  }
- function changeMode(mode:string){navigate({mode,workbench:null,scrollPhoto:false,recordId:null,enlarged:false});setNotes(false)}
+ function changeMode(mode:string){navigate({mode,workbench:null,scrollPhoto:false,scroll3d:false,recordId:null,enlarged:false});setNotes(false)}
  function chooseEntry(id:string,placeId?:string){
   const e=entries.find(e=>e.id===id);if(!e)return;
   const focused=placeId??e.candidates[0]?.placeId??null;
@@ -87,7 +87,7 @@ export default function Atlas(){
  function choosePlace(id:string){const linked=entry.candidates.some(c=>c.placeId===id)?entry:entries.find(e=>e.candidates.some(c=>c.placeId===id&&c.status==="preferred"))??entries.find(e=>e.candidates.some(c=>c.placeId===id));if(linked)chooseEntry(linked.id,id);}
  function exploreCandidate(id=state.placeId){const p=plansForPlace(id)[0];navigate({placeId:id,mode:"2d",planId:p?.id??null,featureId:null,highlightId:null,recordId:null,viewport:undefined,photoViewport:undefined,modelCamera:undefined,representation:"model",siteView:"plan",workbench:null,enlarged:false});setFocusNonce(n=>n+1);setNotes(false)}
  function selectScrollEntry(id:string){const e=entries.find(e=>e.id===id);if(!e)return;const same=e.candidates.some(c=>c.placeId===state.placeId);navigate({entryId:id,scrollColumn:undefined,...(same?{}:{placeId:primaryPlace(id),planId:null,featureId:null,highlightId:null})});}
- function read(id=entry.id){navigate({entryId:id,mode:"scroll",workbench:null,scrollPhoto:false,scrollColumn:undefined,enlarged:false});setNotes(false)}
+ function read(id=entry.id){navigate({entryId:id,mode:"scroll",workbench:null,scrollPhoto:false,scroll3d:false,scrollColumn:undefined,enlarged:false});setNotes(false)}
  useEffect(()=>{
   const context=(document as Document & {modelContext?:{registerTool:(t:unknown,o:{signal:AbortSignal})=>void|Promise<void>}}).modelContext;
   if(!context?.registerTool)return;const controller=new AbortController();
@@ -114,7 +114,7 @@ export default function Atlas(){
     <AtlasMap representation={state.representation} planId={plan?.id} featureId={state.featureId} onFeature={id=>navigate({featureId:id})} onPlan={id=>navigate({planId:id,featureId:null})} entry={entry} places={places} entries={entries} focusId={state.placeId} focusNonce={focusNonce} visibleIds={visibleIds} mode={state.mode} onMode={changeMode} onPlace={choosePlace} onEntry={selectScrollEntry} mobileView="map" onText={()=>read()}
      onExploreSite={()=>exploreCandidate()} onDetails={()=>setNotes(true)} onCamera={camera=>saveSnapshot({camera})} restoreCamera={mapRestore.camera} restoreNonce={mapRestore.nonce}
      onRecord={id=>navigate({recordId:id})} recordId={state.recordId}
-     scrollPhoto={state.scrollPhoto} scrollColumn={state.scrollColumn} onScrollColumn={column=>navigate({scrollColumn:column})} onScrollPhoto={(show,id)=>navigate({scrollPhoto:show,entryId:id??entry.id})}/>
+     scrollPhoto={state.scrollPhoto} scrollColumn={state.scrollColumn} onScrollColumn={column=>navigate({scrollColumn:column})} onScrollPhoto={(show,id)=>navigate({scrollPhoto:show,scroll3d:false,entryId:id??entry.id})} scroll3d={state.scroll3d} onScroll3d={show=>navigate({scroll3d:show,scrollPhoto:false})}/>
 
 
    </>}

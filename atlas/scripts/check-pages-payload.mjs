@@ -11,7 +11,9 @@ assert(existsSync(output+'/index.html'),'The published homepage is missing');
 function files(directory,prefix=''){return readdirSync(directory,{withFileTypes:true}).flatMap(e=>e.isDirectory()?files(directory+'/'+e.name,prefix+e.name+'/'):[prefix+e.name]);}
 const published=files(output),bytes=published.reduce((n,p)=>n+statSync(output+'/'+p).size,0);
 assert(bytes<1024**3,'The Pages output must stay below 1 GiB');
-for(const directory of ['atlas','research','images'])assert(!published.some(p=>p.startsWith(directory+'/')),directory+' archive leaked into the published output');
+for(const directory of ['atlas','research','images','private-media'])assert(!published.some(p=>p.startsWith(directory+'/')),directory+' archive leaked into the published output');
+// The WSRP 1988 photographs belong only to the access-controlled build.
+assert(!published.some(p=>/(^|\/)wsrp\//.test(p)||p.endsWith('.enc')),'WSRP photographs or encrypted media leaked into the public Pages output');
 for(const name of ['index.html',...files(root+'atlas-site').map(p=>'atlas-site/'+p)]){
  assert(existsSync(output+'/'+name),'Missing published app file: '+name);
  assert(readFileSync(output+'/'+name).equals(readFileSync(root+name)),'Jekyll changed app bytes: '+name);

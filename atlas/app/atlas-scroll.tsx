@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import PhotoReader from "./atlas-photo";
 import photo from "./atlas-photo-data.json";
@@ -10,13 +10,16 @@ import "./atlas-reader.css";
 import type { Entry, Place } from "./atlas-types";
 import { plain, ReadingCard, Segments, useScrollText, type Selection, type TrSeg, type Word } from "./atlas-text";
 import { EvidenceLabel } from "./atlas-components";
+import type { Line3d } from "./atlas-scroll-3d";
+
+const Scroll3d = lazy(() => import("./atlas-scroll-3d"));
 
 // The whole scroll, column by column, in the map panel. The text runs right to
 // left, from column I on the right; each entry heading opens that entry's places.
 
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
 type Row = { ref: string; no: number; w: Word[]; tr: TrSeg[]; owner: string[] };
-type Props = { entry: Entry; entries: Entry[]; places: Record<string, Place>; onEntry: (id: string) => void; photograph?: boolean; column?: number; onColumn?: (column: number) => void; onPhotograph?: (show: boolean, id?: string) => void };
+type Props = { entry: Entry; entries: Entry[]; places: Record<string, Place>; onEntry: (id: string) => void; photograph?: boolean; column?: number; onColumn?: (column: number) => void; onPhotograph?: (show: boolean, id?: string) => void; object3d?: boolean; onObject3d?: (show: boolean) => void };
 type Head = { id: string; continued: boolean; midLine: boolean };
 
 // Where each entry begins in a column: at a line start, in mid-line, or carried
@@ -36,7 +39,7 @@ function entryHeads(rows: Row[], carried: string | undefined) {
   return heads;
 }
 
-export default function ScrollView({ entry, entries, places, onEntry, photograph: photoOpen, onPhotograph, column: externalColumn, onColumn }: Props) {
+export default function ScrollView({ entry, entries, places, onEntry, photograph: photoOpen, onPhotograph, column: externalColumn, onColumn, object3d, onObject3d }: Props) {
   const { data, failed, lineWords, notesFor } = useScrollText();
   const [photograph, setPhotograph] = useState(() => typeof window !== "undefined" && isPhotographHash(window.location.hash));
   useEffect(()=>{if(photoOpen!==undefined)setPhotograph(photoOpen)},[photoOpen]);
@@ -87,6 +90,8 @@ export default function ScrollView({ entry, entries, places, onEntry, photograph
     return ROMAN.map(r => Object.values(rows).filter(x => x.ref.split(" ")[0] === r).sort((a, b) => a.no - b.no));
   }, [data]);
 
+  const lines3d = useMemo<Line3d[][] | null>(() => columns && columns.map(rows => rows.map(r => ({ ref: r.ref, no: r.no, text: r.w.map(w => w.n != null ? [String(w.n), plain(w)].filter(Boolean).join(" ") : plain(w)).filter(Boolean).join(" ") }))), [columns]);
+
   const entryCol = data?.entries[entry.id]?.[0] ? ROMAN.indexOf(data.entries[entry.id][0].ref.split(" ")[0]) : 0;
   const col = externalColumn ?? (chosen && chosen.entry === entry.id ? chosen.col : entryCol);
   function chooseColumn(next:number){setChosen({entry:entry.id,col:next});setSel(null);resetTextScroll();onColumn?.(next)}
@@ -107,6 +112,7 @@ export default function ScrollView({ entry, entries, places, onEntry, photograph
 
   if (failed) return <div className="scroll-view"><p className="scroll-status">The text of the scroll could not load. Reload the page to try again.</p></div>;
   if (!data || !columns) return <div className="scroll-view"><p className="scroll-status" role="status">Unrolling the scroll…</p></div>;
+  if (object3d && lines3d) return <Suspense fallback={<div className="scroll-view"><p className="scroll-status" role="status">Opening the 3D scroll…</p></div>}><Scroll3d columns={lines3d} column={col} onColumn={next => { setChosen({ entry: entry.id, col: next }); onColumn?.(next); }} onClose={() => onObject3d?.(false)}/></Suspense>;
   if (photograph) return <PhotoReader entryId={entry.id} onEntry={id => { onEntry(id); if(onPhotograph)onPhotograph(true,id);else history.pushState(null, "", `#entry-${id}/scroll/photo`); }} onText={() => { setChosen({ entry: entry.id, col: PHOTO_COLUMN }); showPhotograph(false); }} onUnavailable={() => showPhotograph(false)}/>;
 
   const rows = columns[col];
@@ -137,7 +143,7 @@ export default function ScrollView({ entry, entries, places, onEntry, photograph
       <div><span className="small-caps">3Q15 · edition-based transcription</span>
       <h2>Column {ROMAN[col]}</h2>
       <p>Lines 1–{rows.length} · entries {inColumn[0]}–{inColumn[inColumn.length - 1]}. Select a word or an underlined phrase for the edition apparatus.</p></div>
-      <div className="reader-head-actions"><button type="button" className="reader-text-button" aria-pressed={english} onClick={() => setEnglish(v => !v)}>{english ? "Hide English" : "English translation"}</button><button type="button" className="reader-text-button" aria-expanded={sources} onClick={() => setSources(v => !v)}>Image &amp; sources</button><select className="reader-column-choice" aria-label="Select scroll column" value={col} onChange={event => { chooseColumn(+event.target.value); }}>{columns.map((_, i) => <option key={i} value={i}>Column {ROMAN[i]}</option>)}</select><button className="reader-text-button" onClick={() => showPhotograph(true)}>{hasPhotograph ? "Read the photograph" : "Photo example · VII"}</button></div>
+      <div className="reader-head-actions"><button type="button" className="reader-text-button" aria-pressed={english} onClick={() => setEnglish(v => !v)}>{english ? "Hide English" : "English translation"}</button><button type="button" className="reader-text-button" aria-expanded={sources} onClick={() => setSources(v => !v)}>Image &amp; sources</button><select className="reader-column-choice" aria-label="Select scroll column" value={col} onChange={event => { chooseColumn(+event.target.value); }}>{columns.map((_, i) => <option key={i} value={i}>Column {ROMAN[i]}</option>)}</select>{onObject3d && <button type="button" className="reader-text-button" onClick={() => onObject3d(true)}>3D object</button>}<button className="reader-text-button" onClick={() => showPhotograph(true)}>{hasPhotograph ? "Read the photograph" : "Photo example · VII"}</button></div>
     </header>
     <div className="reader-desk-body">
       <aside className="reader-desk-image" hidden={!sources} aria-label="Original image and coverage">

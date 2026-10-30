@@ -1,0 +1,28 @@
+.scroll-3d{position:relative;display:flex;flex-direction:column;height:100%;min-height:0;background:radial-gradient(ellipse at 50% 38%,#f6ecd8 0%,#e7d6b6 62%,#d4bf98 100%);color:#3f3627;container-type:inline-size}
+.scroll-3d-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 22px 10px;flex-wrap:wrap}
+.scroll-3d-head h2{font-size:23px;margin:2px 0 0}
+.scroll-3d-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.scroll-3d-actions [role=group]{display:inline-flex;border:1px solid #b5a17f;border-radius:3px;overflow:hidden;background:#fbf4e6}
+.scroll-3d-actions [role=group] button{font:12px var(--sans);padding:6px 11px;border:0;background:transparent;color:#5d523d;cursor:pointer}
+.scroll-3d-actions [role=group] button+button{border-left:1px solid #d3c19d}
+.scroll-3d-actions [role=group] button[aria-pressed=true]{background:#344c43;color:#f5efe2}
+.scroll-3d-actions [role=group] button:focus-visible,.scroll-3d-icon:focus-visible{outline:2px solid #ae652f;outline-offset:2px}
+.scroll-3d-icon{display:grid;place-items:center;width:30px;height:30px;border:1px solid #b5a17f;border-radius:3px;background:#fbf4e6;color:#5d523d;cursor:pointer}
+.scroll-3d-light{display:inline-flex;align-items:center;gap:6px;font:12px var(--sans);color:#5d523d}
+.scroll-3d-light select{font:12px var(--sans);padding:4px 6px;border:1px solid #b5a17f;border-radius:3px;background:#fbf4e6;color:#3f3627}
+.scroll-3d-stage{position:relative;flex:1 1 auto;min-height:260px;outline:none;cursor:grab;touch-action:none}
+.scroll-3d-stage:active{cursor:grabbing}
+.scroll-3d-stage canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
+.scroll-3d-stage:focus-visible{box-shadow:inset 0 0 0 2px #ae652f}
+.scroll-3d-status{position:absolute;inset:0;display:grid;place-items:center;margin:0;font:italic 15px var(--serif);color:#8c7a59;text-align:center;padding:16px}
+.scroll-3d-help{position:absolute;left:16px;bottom:10px;margin:0;font:11px var(--sans);color:#7b6c52;pointer-events:none}
+.scroll-3d-foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;padding:10px 22px 16px;align-items:start}
+.scroll-3d-card{display:flex;flex-direction:column;gap:4px;padding:11px 13px;background:linear-gradient(115deg,#fbf3e2,#f1e4c8);border:1px solid #c3a979;border-radius:3px;box-shadow:inset 3px 0 0 #ae652f;font:13px/1.5 var(--sans);color:#5d523d;min-height:44px}
+.scroll-3d-card strong{font:600 14px var(--sans);color:#3f3627}
+.scroll-3d-card a{color:#536943;text-decoration:underline;text-underline-offset:2px;display:inline-flex;align-items:center;gap:3px}
+.scroll-3d-card .reader-text-button{align-self:flex-start;margin-top:3px}
+.scroll-3d-notes{font:12px/1.55 var(--sans);color:#6e5e43}
+.scroll-3d-notes summary{cursor:pointer;font-weight:600;color:#5d523d}
+.scroll-3d-notes p{margin:6px 0}
+.scroll-3d-notes a{color:#536943;text-decoration:underline}
+@container (max-width:640px){.scroll-3d-head{padding:12px 14px 8px}.scroll-3d-head h2{font-size:19px}.scroll-3d-actions{justify-content:flex-start}.scroll-3d-foot{grid-template-columns:1fr;padding:8px 14px 12px}.scroll-3d-help{display:none}}
