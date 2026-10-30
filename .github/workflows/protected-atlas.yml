@@ -1,0 +1,68 @@
+# Builds the atlas with the WSRP 1988 photographs and deploys it to Cloudflare
+# Pages, where Cloudflare Access lets in only approved emails.
+# The repository holds the photographs only encrypted (private-media/wsrp-1988).
+#
+# Secrets:   CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, WSRP_MEDIA_KEY
+# Variables: ACCESS_READY = yes, set only after Cloudflare Access protects
+#            both <project>.pages.dev and *.<project>.pages.dev
+#            CF_PAGES_PROJECT (optional), default copper-scroll-photos
+# Until ACCESS_READY is yes, a run only creates the empty Pages project, so
+# the photographs are never online without the sign-in.
+name: Protected atlas
+
+on:
+  push:
+    branches: [main]
+    paths: ["atlas/**", "private-media/**", ".github/workflows/protected-atlas.yml"]
+  workflow_dispatch:
+
+concurrency:
+  group: protected-atlas
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      PROJECT: ${{ vars.CF_PAGES_PROJECT || 'copper-scroll-photos' }}
+      HAS_CLOUDFLARE: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+      DEPLOY: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' && secrets.WSRP_MEDIA_KEY != '' && vars.ACCESS_READY == 'yes' }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Report what this run will do
+        run: |
+          if [ "$HAS_CLOUDFLARE" != "true" ]; then echo "::notice::Cloudflare secrets are not set; nothing to do."
+          elif [ "$DEPLOY" != "true" ]; then echo "::notice::Creating the Pages project only. Deploy waits for WSRP_MEDIA_KEY and ACCESS_READY=yes."
+          else echo "Deploying the protected atlas to $PROJECT."; fi
+      - uses: actions/checkout@v4
+        if: env.HAS_CLOUDFLARE == 'true'
+      - uses: actions/setup-node@v4
+        if: env.HAS_CLOUDFLARE == 'true'
+        with:
+          node-version: 24
+      - name: Install
+        if: env.HAS_CLOUDFLARE == 'true'
+        working-directory: atlas
+        run: corepack enable && corepack pnpm install --frozen-lockfile
+      - name: Create the Pages project (no-op if it exists)
+        if: env.HAS_CLOUDFLARE == 'true'
+        working-directory: atlas
+        run: corepack pnpm exec wrangler pages project create "$PROJECT" --production-branch main || echo "Project exists or could not be created; the deploy step will report."
+      - name: Decrypt the photographs
+        if: env.DEPLOY == 'true'
+        working-directory: atlas
+        env:
+          WSRP_MEDIA_KEY: ${{ secrets.WSRP_MEDIA_KEY }}
+        run: node scripts/wsrp-media.mjs decrypt
+      - name: Build
+        if: env.DEPLOY == 'true'
+        working-directory: atlas
+        run: corepack pnpm exec vite build --config vite.protected.config.ts
+      - name: Deploy
+        if: env.DEPLOY == 'true'
+        working-directory: atlas
+        run: corepack pnpm exec wrangler pages deploy dist-protected --project-name "$PROJECT" --branch main --commit-dirty=true

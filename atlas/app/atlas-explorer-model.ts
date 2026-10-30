@@ -11,7 +11,7 @@ export const sitePlans = planData as SitePlan[];
 export const plansForPlace = (id: string | null) => sitePlans.filter(p => id && p.placeIds.includes(id));
 export type ExplorerState = {
  entryId: string; placeId: string | null; mode: string; planId: string | null; featureId: string | null;
- siteView: "plan" | "photo"; highlightId?: string | null; scrollPhoto: boolean; workbench: string | null; recordId: string | null;
+ siteView: "plan" | "photo"; highlightId?: string | null; scrollPhoto: boolean; scroll3d?: boolean; workbench: string | null; recordId: string | null;
  representation?: "model" | "source" | "walk"; modelCamera?: ModelCamera;
  camera?: Camera; viewport?: Viewport; photoViewport?: Viewport; scrollTop?: number; scrollColumn?: number;
 };
@@ -22,7 +22,7 @@ export function archaeologyForPlace(entryId:string,placeId:string|null):Explorer
 export function explorerHash(s: ExplorerState) {
  if (s.workbench) return `#workbench/${s.workbench}?entry=${s.entryId}`;
  if (s.mode === "site" && s.planId) return `#entry-${s.entryId}/site/${s.planId}${s.featureId ? `/${s.featureId}` : ""}${s.siteView === "photo" ? "/photo" : s.representation ? "/"+s.representation : ""}`;
- return entryHash(s.entryId, s.mode) + (s.mode === "scroll" && s.scrollPhoto ? "/photo" : "");
+ return entryHash(s.entryId, s.mode) + (s.mode === "scroll" && s.scrollPhoto ? "/photo" : s.mode === "scroll" && s.scroll3d ? "/3d" : "");
 }
 export function explorerFromHash(hash: string, primaryPlace: (id: string) => string | null): ExplorerState | null {
  const overview=hash.match(/^#entry-((?:[1-9]|[1-5]\d|60|12a))\/site$/);
@@ -41,5 +41,5 @@ export function explorerFromHash(hash: string, primaryPlace: (id: string) => str
  const parsed = parseAtlasHash(hash); if (!parsed) return null;
  const id = parsed.entryId ?? initialExplorer.entryId;
  if(/^#entry-(?:[1-9]|[1-5]\d|60|12a)$/.test(hash))return archaeologyForPlace(id,primaryPlace(id));
- return { ...initialExplorer, entryId: id, placeId: primaryPlace(id), planId:null, mode: parsed.mode ?? initialExplorer.mode, workbench: parsed.workbench, scrollPhoto: /\/scroll\/photo$/.test(hash) || hash === "#scroll/photo" };
+ return { ...initialExplorer, entryId: id, placeId: primaryPlace(id), planId:null, mode: parsed.mode ?? initialExplorer.mode, workbench: parsed.workbench, scrollPhoto: /\/scroll\/photo$/.test(hash) || hash === "#scroll/photo", scroll3d: /\/scroll\/3d$/.test(hash) || hash === "#scroll/3d" };
 }
