@@ -1,5 +1,8 @@
 # RAF 1940s aerial layer (Palestine Open Maps) north of Tell es-Sultan
 
+> **Retired, 30 October 2026 (owner's decision).** The SULTAN-1 blind-test rules for Tell es-Sultan are withdrawn. All Tell es-Sultan and Jericho material is open: read it normally, at any resolution, with no registration protocol, coded tiles, blind scorer or exposure log. This covers the Commons and LoC Matson photos (Drive `06 Imagery/Tell es-Sultan and Jericho photos – Commons and LoC Matson (2026-10-17)`, formerly "SULTAN-1 reserved – do not open"), BS Pal. 1032, the 1940s maps and RAF frames, and any Garstang, PEF or Nigro record. The text below is kept as a historical record and no longer governs work; earlier "exposed" labels for this material carry no weight. See [the retirement record](../preregistration/RETIRED_BLIND_RULES_2026-10-30.md), which also retires the other blind and held-area rules.
+
+
 **What it is.** A protocol-bound attempt to use the Palestine Open Maps "Aerial imagery, 1940s" layer for the protected strip north of Tell es-Sultan.
 **Main result.** The resolvability gate failed: effective resolution 9.2 m (nominal pixel 2.03 m) against 0.5 m. The zone was never opened. The registration is invalid (two identifiable controls).
 **What stays unknown.** Whether the strip held an opening with graves near it in the 1940s; SULTAN-1 is untested and the strip stays unexposed for the 600-dpi scans.

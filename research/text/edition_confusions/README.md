@@ -1,5 +1,8 @@
 # Edition confusions in 3Q15
 
+> **Retired, 30 October 2026 (owner's decision).** Every blind-reading, reserve, held-area and "do not open" rule in the project is withdrawn; all material is visible and may be read normally. See [the retirement record](../../preregistration/RETIRED_BLIND_RULES_2026-10-30.md). The text below is kept as a historical record; where it gates access, it no longer applies.
+
+
 - **What it is.** A count of the Hebrew letter pairs that published editions of the Copper Scroll read differently. It uses 664 recorded disagreements and no images.
 - **Main result.** Six pairs carry 97 of the 178 shape disagreements (counted by place): ב–כ 26 places, ה–ח 21, ה–ת 16, ד–ר 12, ב–מ 11, ח–ת 11. Yod against waw as a vowel letter differs at 38 more places, kept apart. Nine of the top ten pairs fall inside the four groups of look-alike letters that Lefkovits names.
 - **What stays unknown.** Whether a pair reflects the scribe's hand or the editors' habits. The editions are not independent, and most rows compare one editor with Puech 2015. No manuscript image was checked.
