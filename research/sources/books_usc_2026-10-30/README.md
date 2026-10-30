@@ -18,6 +18,6 @@ Exploratory records made from the owner's photographs of library books and from 
 | [jsp9_sweep_2026-10-30.md](jsp9_sweep_2026-10-30.md) | JSP 9 (2009) | Comparanda and controls only; ʿEin Samieh EXPOSED for the ʿEin Samiya and Kh. el-Marjama models. |
 | [jsp10_sweep_2026-10-30.md](jsp10_sweep_2026-10-30.md) | JSP 10 (2009) | Kh. el-Khamis columbarium disused in the Hellenistic period; Wadi Ekteif graves (entry 24) primary report. |
 | [asi1_judah_golan_sweep_2026-10-30.md](asi1_judah_golan_sweep_2026-10-30.md) | Kochavi 1972, Judah and Golan chapters | Kochavi puts Netophah at Kh. Bad Faluḥ (pp. 28, 44). |
-| [benjamin_parts1_3_sweep_2026-10-30.md](benjamin_parts1_3_sweep_2026-10-30.md) | Benjamin survey Parts 1–3 | New pp. 180–181; Koḥlit chain records read; Kafr Nata decision left to the owner. |
+| [benjamin_parts1_3_sweep_2026-10-30.md](benjamin_parts1_3_sweep_2026-10-30.md) | Benjamin survey Parts 1–3 | New pp. 180–181; Koḥlit chain records read; Kafr Nata: frozen wording applied, link stays inconclusive (30 Oct). |
 | [wsrp_usc_plan_2026-10-29.md](wsrp_usc_plan_2026-10-29.md) | USC/WSRP 1988 scans (metadata) | What arrived (93 TIFFs, cuts 2–8, 10, 11, 16–23); segments 1, 9, 12–15 not sent. |
 | [wsrp_letters_2026-10-30.md](wsrp_letters_2026-10-30.md), [wsrp_followups_2026-10-30.md](wsrp_followups_2026-10-30.md) | WSRP 1988, private study copy | Exploratory, image-checked readings: II 4 Θ supported; I 12 undecidable (earlier "probable" downgraded); IX 7 leans ים; IX 10 "extra vertical" = IX 11 ל ascender (probable); others undecidable. |
