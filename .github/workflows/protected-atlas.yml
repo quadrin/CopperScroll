@@ -13,7 +13,7 @@ name: Protected atlas
 on:
   push:
     branches: [main]
-    paths: ["atlas/**", "private-media/**", ".github/workflows/protected-atlas.yml"]
+    paths: ["atlas/**", "private-media/**", "images/previews/**", "tools/build_scroll_media.py", "research/assets/plans/djdIII1962/**", ".github/workflows/protected-atlas.yml"]
   workflow_dispatch:
 
 concurrency:
@@ -58,6 +58,12 @@ jobs:
         env:
           WSRP_MEDIA_KEY: ${{ secrets.WSRP_MEDIA_KEY }}
         run: node scripts/wsrp-media.mjs decrypt
+      - name: Build the image library
+        if: env.DEPLOY == 'true'
+        run: |
+          sudo apt-get install -y -q poppler-utils > /dev/null
+          python3 -m pip install -q --break-system-packages pillow numpy scipy
+          python3 -I tools/build_scroll_media.py atlas/protected-media/library --private atlas/protected-media
       - name: Build
         if: env.DEPLOY == 'true'
         working-directory: atlas
