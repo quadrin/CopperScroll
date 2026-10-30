@@ -496,3 +496,10 @@ Direct Puech 2015 page review verifies entry 25 commentary and sigla, and entrie
 - Q38 update: Ilan & Amit 2002 p. 385 is read ([record](../sources/nli_photos_2026-10-21/aqueducts_ilan_hyrcania_qumran.md)). The Archelaus date is the authors'; the run-off "low dam" is at no. 19, not no. 16; the 2002 and 1989 numbers agree. F10.8 and F11.4 are settled.
 - Q49 update: Feldman (Ilan vol. pp. 326–335) and Patrich 2002 are read. Feldman's 24 installations = 3 open pools + 21 cisterns (6/8/4/3; the printed total "12" is a misprint); Patrich, citing him, has 20 cisterns + 2 pools with 5 on the summit and cave K excluded. The western open pools hold about 8,000 m³ (Feldman p. 328). The guide's dam `1837.1261` is Feldman's reference for station 44, and its "1.2 km" is probably Feldman's 1.2 km² catchment; both authors give c. 1,950 m for the line. Which pool is "northern" is unchanged (Patrich's N basin); first-century use is still unshown.
 - Q48 update: Gerizim vol. I (JSP 2) has no P5178 ([record](../sources/nli_photos_2026-10-21/gerizim_I_2004.md)); JSP 8 / JSP 20 still needed.
+
+## Books and USC images — 30 October 2026
+
+- **Q47: closed.** JSP 8 (Magen 2008) reports later use of summit installations only in the Late Roman (4th c. CE) and Byzantine periods: the stair below the eastern gate rebuilt (p. 125, Fig. 234), a Roman-Byzantine staircase over Building E-I (p. 62), and Byzantine reuse of precinct cisterns (pp. 149, 254, 269). Nothing is in the 1st c. BCE–1st c. CE window ([record](../sources/books_usc_2026-10-30/gerizim_jsp8_entry57_2026-10-29.md)).
+- Q48 update: P5178 is not among the JSP 8 Fig. 98 Mansion P-I loci, and JSP 8 has no Area P locus list; JSP 20 is still needed.
+- Q14 update: the WSRP 1988 frames of IX 7 (CT17 RT/RB) lean to ים; דרום is not excluded (exploratory; [record](../sources/books_usc_2026-10-30/wsrp_letters_2026-10-30.md)).
+- Q41 update: the V 8/9 division is illegible on the WSRP 1988 frames (exploratory; [record](../sources/books_usc_2026-10-30/wsrp_followups_2026-10-30.md)).

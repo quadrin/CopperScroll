@@ -1605,3 +1605,33 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Entries 51, 54 (Avigad 1954).** EVIDENCE: Bene Ḥezir façade faces south-west (p. 37), rounded to cardinal points from p. 39. Inscription (p. 61) names six sons of Joseph son of ʿObed and two sons of Ḥaniah, priests of the Bene Ḥezir; no Zadok, no Jericho. Tomb mid-2nd c. BCE (p. 47), inscription first half of the 1st c. BCE (pp. 65–66). [Record](../sources/nli_photos_2026-10-21/avigad1954.md).
 - **Entries 55–56 (Pierre & Rousée 1981).** EVIDENCE: dam (40 m long, 13 m high) and north basin of the Judahite monarchy; south basin and canal vault Hellenistic, about Simon II (pp. 24–25, 33, 42). No threshold or burial chamber. The source brief called the twin-pool entry "56"; it is entry 55. [Record](../sources/nli_photos_2026-10-21/probatique_poc31_1981.md).
 - **Entry 57 (Gerizim I, JSP 2).** P5178 is not in vol. I's concordance or Map 1; vol. II/JSP 20 still needed. [Record](../sources/nli_photos_2026-10-21/gerizim_I_2004.md).
+
+## 24 October 2026 — Mizzi 2022 (STDJ 141) read for the Qumran waterworks phases (R01)
+
+[Record](../sources/mizzi2022_stdj141_extracted.md). Owner-supplied volume PDF; sections 1–2 read in full, the rest searched for water features. No rating, identification, coordinate or confidence changes.
+
+- **Entries 20–23 (Qumran waterworks).** EVIDENCE: an early water system fed L110, L117 and L118 in the first architectural phase (first half of the 1st c. BCE, p. 375). The main aqueduct replaced it, and the raising of L117 and L110, L117's outflow channel and pool L48/49 (built over the L66 kilns) belong to the aqueduct's phase (pp. 377–379, 385, 390 n. 85, 417 n. 185). Mizzi dates that phase to about the mid-1st c. BCE by citation of Mizzi and Magness 2021 (p. 392 n. 88), not by a new sealed deposit. He rejects Taylor and Gibson's Iron Age date for L117/L118 (p. 378 n. 56). Nothing here dates the external aqueduct line, the dam or any upper-gorge feature.
+- **R01 next step.** The L117 overflow test still needs the northern-dump contact; Mizzi assigns the outflow channel to the aqueduct phase by its cuts through L133, L140 and L141, which Stacey's later date for the overflow must be checked against.
+
+## 30 October 2026 — Books and USC images of 29–30 October (integration)
+
+[Records](../sources/books_usc_2026-10-30/README.md). Read from the owner's photographs of library books and from the WSRP 1988 scans (private study copy). No rating level, identification, coordinate, confidence or outcome count changes; basis texts change as listed in the [ratings README](../assessments/evidence_components/README.md#later-changes). No book scan and no WSRP image is in the repository.
+
+- **Entry 57 (JSP 8).** Later use at the summit is Late Roman or Byzantine only; Q47 closed. The NEAEHL "E1, 15 steps" flight is undated in JSP 8; the stair below the eastern gate has a 4th-c. CE rebuild (p. 125, Fig. 234). F stays 1, D stays 0.
+- **Entry 40 (Benjamin survey; ASI 1 Kallai).** No Beth-Horon tomb drawing in either; the two HA locators of R04 are explained (site 22 dyeing installation; Eitam's 1984 notice). Wording only.
+- **Entry 38 (ASI 1, Judah).** Kochavi 1972 puts Netophah at Kh. Bad Faluḥ (pp. 28, 44). Recorded as the named alternative with P kept at 2 (the more conservative of the two proposals); the P 2→1 or new-candidate choice is left to the owner.
+- **Entry 31 (Aqueducts of Israel 2002, Amit; EXPOSED).** Fig. 2 labels the double line "Siege wall"; its towers are probably siege works, weakening the guard-post use. No level change.
+- **Entry 45 / water lane.** Chariton's large reservoir is filled by a wadi diversion channel (Hirschfeld p. 431), correcting the lane's run-off statement; still Byzantine, so the date test still fails.
+- **Entry 1 (TIR).** The "p. 197 unread" note was out of date (read 6 October). TIR p. 93 marks Achor = Buqeiʿa as a rejected identification: an editors' judgement.
+- **Columbaria.** Kh. el-Khamis (W-S4087, W-E793) is not in the window (JSP 10 p. 9*); applied as a post-freeze override in scope `all` only.
+- **Entry 24.** JSP 10 pp. 257–258 is the primary report behind WBADB E508 (same observation).
+- **Janoaḥ place-first test (XII 10 reading branch).** Closed: **not identifiable from available evidence**, exploratory because blinding failed ([result](../first_tests_2026-10-30/janoah/janoah_blind_score_result_2026-10-30.md)).
+- **Koḥlit rarity, Stage 2 (Kallai).** No count changes: k = 0, f = 20, m = 313 of N = 333 ([RESULTS](../rarity/kohlit/stage2/RESULTS.md)).
+- **No change, recorded so it is not repeated:** Patrich's Hyrcania chapter re-read from a second copy (one correction, pt 38); Langford 2021 has no geophysics, so S35 stays unknown; JSP 9, JSP 10 and Benjamin Parts 1–3 give comparanda and controls only; the held Bar-Adon and Benjamin IV–V screens add controls for entry 25 and leave the Sheikh Dhiab link open.
+- **WSRP 1988 readings (exploratory, single reader, not blind to the editions).** II 4 Θ supported; I 12 undecidable (the first pass's "probable מקרת" is withdrawn); IX 7 leans to ים; the IX 10 "extra vertical" is very probably IX 11's ל ascender; the other target lines are undecidable. Segments 1, 9 and 12–15 were not sent; segments 19–23 (columns XI–XII) were hashed only and not viewed ([plate check](../text/plate_check.md#wsrp-1988-colour-scans-first-exploratory-reading-2930-october-2026)).
+- **Exposure incidents** (each agent has no further role in the named test):
+  - Entry 25 / IV/17 frozen rules: a few lines of the rule file and its README were seen in a grep by the TIR/Langford agent, which then tried to open the rule file and was refused.
+  - Kochavi 1972 arrival outcome: one line of the arrival outcome file was seen in a grep by the Benjamin Parts IV–V agent (no predictions).
+  - XII 10: the Gerizim agent saw one translation line; the ASI 1 Judah/Golan agent saw a grep line with Pixner's and Milik's readings of the Sehab phrase.
+  - Koḥlit models: the JSP 9 ʿEin Samieh report was read in full and is EXPOSED for the ʿEin Samiya and Kh. el-Marjama models.
+  - Held-area material used for its measurements (EXPOSED): Doq pp. 330–335 and the Cypros and Jericho lengths in the *Aqueducts of Israel* p. 17 table; Bar-Adon 1972 held sites and Peleg's Deir Hajleh (JSP 9); Benjamin Parts IV–V held sites (E1–E12).
