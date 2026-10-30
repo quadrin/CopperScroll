@@ -62,8 +62,9 @@ jobs:
         if: env.DEPLOY == 'true'
         run: |
           sudo apt-get install -y -q poppler-utils > /dev/null
-          python3 -m pip install -q --break-system-packages pillow numpy scipy
-          python3 -I tools/build_scroll_media.py atlas/protected-media/library --private atlas/protected-media
+          python3 -m venv "$RUNNER_TEMP/media-venv"
+          "$RUNNER_TEMP/media-venv/bin/pip" install -q pillow numpy scipy
+          "$RUNNER_TEMP/media-venv/bin/python" -I tools/build_scroll_media.py atlas/protected-media/library --private atlas/protected-media
       - name: Build
         if: env.DEPLOY == 'true'
         working-directory: atlas
