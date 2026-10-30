@@ -46,6 +46,9 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | middot_temple_2026-10-27 | Temple-area entries fit Mishnah Middot's layout | entries 3–14 | **done 27 Oct: not supported (strict); lenient fit repeats Allegro** ([RESULT](middot_temple_2026-10-27/RESULT.md)) |
 | amount_gravity_2026-10-27 | Bigger caches lie nearer Jerusalem | entries with sums | **done 27 Oct: underpowered; sign reversed** ([RESULT](amount_gravity_2026-10-27/RESULT.md)) |
 | reverse_lookup_2026-10-27 | Well-documented sites, looked up against all entries | all entries | **done 27 Oct: not supported; weak lead entry 45 at Qumran** ([RESULT](reverse_lookup_2026-10-27/RESULT.md)) |
+| wadi_aggradation_2026-10-30 | How deep a wadi-bed cache would lie today (aggradation or incision since 60 CE) | entries 17, 18, 20, 24, 28, 32, 35 | rule fixed 30 Oct |
+| l5658_survey_design_2026-10-30 | Whether a non-invasive survey could test the L56/58 lead, so a null counts | entries 21–23 (22 primary) | rule fixed 30 Oct |
+| unknowns_value_2026-10-30 | Which missing records would settle the most sandbox verdicts | runs 1–22 | rule fixed 30 Oct |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
 
@@ -54,3 +57,5 @@ Round 2 approval (27 Oct, 13:15 Asia/Shanghai): "Do another run of exploring cre
 Round 3 approval (27 Oct, 13:55 Asia/Shanghai): "Do another round of creative ideas."
 
 Round 4 approval (27 Oct, 14:26 Asia/Shanghai): "Try 1,2,4,5,6,7,8".
+
+Round 5 approval (30 Oct, 10:50 America/Los_Angeles): "#6, 7, 8 seem interesting" (of nine proposed avenues).
