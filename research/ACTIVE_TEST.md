@@ -1,35 +1,37 @@
 # Current research direction
 
-Updated 30 October 2026. Current operating rules: [AGENTS.md](../AGENTS.md).
+Reviewed 30 October 2026. Research instructions: [AGENTS.md](../AGENTS.md).
 
-Last session: the owner requested a reset after repeated low-value work inherited from previous agents. The starting instructions now require a consequential question, review of prior results, accessible evidence and a stopping point.
+## Aim and present position
 
-## Decision
+Use the accumulated text, geography and archaeological evidence to distinguish consequential Copper Scroll claims. No particular site, reading, method or unfinished task has automatic priority.
 
-The old queue is retired as a source of priorities. No research lane has automatic priority, including XII 10, Koḥlit, source acquisition and the recovery benchmark. The user may direct any of them; otherwise select work afresh under AGENTS.
+Within the formal audited scope, there are zero independently discriminated landmark identifications and zero confirmed deposits. Three formal candidate assessments are inconclusive. This does not count every historical proposal or atlas marker. The [research outcome record](PROGRESS_METRICS.md) defines that scope and the evidence required to change a count.
 
-The immediate problem is how to convert the existing corpus into understanding. Repeatedly obtaining another source, checking another letter or completing another tool can leave the project-level conclusions unchanged. Research selection must explain the connection before beginning.
+## What we have learned
 
-## Starting the next research session
+- The hoard-weight screen found 0/45 matches under the default talent unit and 27/30 under the smaller 71 g karsh unit. A numeral variant leaves an exception; weight compatibility identifies no deposit.
+- A 1978 HEXAGON satellite frame resolves large open Qumran pools. The tested 1967 CORONA frame failed, and the marking rule also marks ordinary rooms. Detection on unseen ground remains unvalidated.
+- Mechanical text-extraction checks passed on 50 reports, but independent field accuracy remains unmeasured. Matching 1988 and 1994 manuscript photographs worked on tested segments; matching early published plates failed and stopped.
 
-For an explicit user question, answer it. For an open-ended continuation, compare at most three substantially different uses of the existing evidence, choose one with a consequential attainable result, and state a bounded deliverable. Include synthesis or a competing explanation when appropriate. Do not create another planning system or re-audit the whole repository.
+These results and their exact limits are recorded in [First method tests, 23–24 October](first_tests_2026-10-24/README.md). They should inform selection without becoming a task queue.
 
-An unfinished task is not an argument for doing it. Explain what we could learn that we do not already know, which plausible result would change our view or next action, and why the required evidence is available now. If no approach clears that bar, report the limit and stop.
+The University of Southern California supplied 93 colour photographs of the front of the scroll; front and back previews also exist. New readings remain preliminary, with some words lost or unreadable. See [Photograph receipt and source findings, 29–30 October](sources/books_usc_2026-10-30/README.md).
 
-## Evidence already held and known limits
+The Janoaḥ place-first test is closed as inconclusive; its [30 October result](first_tests_2026-10-30/janoah/janoah_blind_score_result_2026-10-30.md) states the exact claim and reopening conditions. The [location-language audit](text/location_language/README.md) documents inconsistent interpretations rather than a settled geographic scheme.
 
-The recent [source integration](sources/books_usc_2026-10-30/README.md) records preliminary manuscript observations, archaeological corrections and the limits of those results. The [Janoaḥ place-first test](first_tests_2026-10-30/janoah/janoah_blind_score_result_2026-10-30.md) is closed as inconclusive. The [first-method results](first_tests_2026-10-24/README.md) include the completed hoard-weight and imagery checks. The [language audit](text/location_language/README.md) already documents inconsistent interpretations.
+Column XII, line 10 means column 12, line 10 of the scroll. Its images were released to the protected atlas on 30 October. Earlier atlas users may have seen them; a future blind reading needs a suitable exposure history. The [image-release record](sources/books_usc_2026-10-30/xii_images_released_2026-10-30.md) documents that limit.
 
-These are starting evidence for a chosen question. None is a new task list. Claim-specific standards and reopening conditions still apply; [formal outcomes](PROGRESS_METRICS.md) have their existing scope.
+## Select the next work
 
-The [methods and Challenge record](experimental_approaches/README.md) reconciles all twelve proposals with recorded tests and the current private documents. The [Drive integration](sources/drive_integration_2026-10-30.md) links the reorganized sources and refreshed inventory. Neither creates a standing research priority.
+For an explicit user question, answer it. For an open-ended continuation, compare at most three substantially different uses of available evidence, including synthesis or a competing explanation when appropriate. Choose one consequential, attainable result and state a bounded deliverable and stopping point.
 
-## Continuity without automatic work
+Explain what we could learn that we do not already know, which plausible result would change our view or next action, what has already been tried, and why the needed evidence is available now. An unfinished task supplies no priority. If no approach clears that bar, report the limit and stop. Do not create another planning system or re-audit the whole repository.
 
-The complete preceding state, named dependencies, closed results, requests and exposure notes are preserved verbatim in [the pre-reset snapshot](ACTIVE_TEST_before_reset_2026-10-30.md). Earlier revisions remain in [the history](logs/active_test_history_2026-10-07.md). Consult only the part needed for the chosen question.
+Existing-source analysis and synthesis are valid research. A source arrival triggers a relevance check. An inconclusive result can finish a test; inaccessible evidence does not automatically justify another acquisition campaign.
 
-The backlog [OPEN_QUESTIONS](OPEN_QUESTIONS.md), the 7 October goals and the 9 October stage plan are historical reference. Their priority labels and "next" instructions are superseded.
+## Sources and continuity
 
-Check relevant unmerged work before reporting a gap: [PR #39](https://github.com/quadrin/CopperScroll/pull/39) and its stacked [PR #40](https://github.com/quadrin/CopperScroll/pull/40) contain source and cave updates absent from main at this reset. This records their existence, not an endorsement of every claim or an instruction to merge or process them.
+The [twelve-method status summary](experimental_approaches/README.md) states completed, partial, stopped and unrun work, and the Challenge’s unverified funding and launch status. The [Drive source index](https://drive.google.com/file/d/1A08WOW_9PIkryXauw6WS1mSgT11NREpK/view) locates source files and current private documents.
 
-The XII 10 images were released to the protected atlas on 30 October; earlier statements that they remain unopened are historical. Any future blind test needs readers with an appropriate exposure history. See the [exposure record](sources/books_usc_2026-10-30/xii_images_released_2026-10-30.md).
+[Open questions](OPEN_QUESTIONS.md) is a historical evidence register. Its priority labels and “next” instructions do not schedule work. The [archived research state before 30 October](ACTIVE_TEST_before_reset_2026-10-30.md) preserves earlier dependencies, requests and test history for claim-specific lookup. Read only what the chosen question requires. Check relevant branch changes and open pull requests before reporting work as absent.

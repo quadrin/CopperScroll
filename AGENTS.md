@@ -40,6 +40,8 @@ Historical priorities expire. A previous agent's P1, "next", open checkbox, pend
 
 ## Evidence and reporting
 
+Starting documents must state the current goal, relevant result, limit and decision directly. Give linked sources descriptive titles and dates; use them to verify those statements. Define abbreviations and entry identifiers on first use. Do not make current guidance depend on a previous conversation, a pending merge, unexplained codes or an unnamed proposal.
+
 Cite exact edition pages and archaeological figures. Mark restorations and distinguish observed remains, published reconstruction, excavator function labels, textual meanings and new inference. Require a textual argument before imposing an archaeological function on the entry. Deduplicate corroboration by original observation/field campaign; source availability and the amount of work done add no identification confidence.
 
 Record coordinates or bounded source-plan areas when justified, with CRS, reference point, direction/path convention, surface, phase and uncertainty. Keep reading, site association, feature identity and position confidence separate. Use [PROGRESS_METRICS.md](research/PROGRESS_METRICS.md) and its source-linked ledger for outcome/coverage definitions; unknown denominators remain null. Preserve conditional exclusions and negative/inconclusive results. Update candidate/map data only when the assessment changes.
@@ -48,7 +50,7 @@ Record coordinates or bounded source-plan areas when justified, with CRS, refere
 
 Use Puech, Lefkovits and Milik without requiring an openly licensed replacement edition. Ancient Hebrew is public domain; modern reconstructions, translations, apparatus, commentary and page images have their own rights. Write from the ancient text, cite readings and mark uncertainty. Call a reading edition-based unless the manuscript was checked.
 
-Earlier “not pushed” or local-only notes describe delivery history, not a blanket ban on original analysis, identifications, factual comparisons or project translations. Resolve the specific protected use and continue unaffected work. Apply actual attribution, noncommercial and share-alike terms; public GitHub is not inherently incompatible with a noncommercial licence.
+Apply the specific attribution, noncommercial and share-alike terms of each source. Distinguish protected source material from original analysis, factual comparisons and project translations; public GitHub is not inherently incompatible with a noncommercial licence.
 
 ## Source continuity and archive
 

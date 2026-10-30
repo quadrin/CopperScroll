@@ -4,22 +4,22 @@ Research on the places, landmarks, text, and structure of the Copper Scroll. The
 
 ## Start here
 
-For a new session, read [AGENTS.md](AGENTS.md), then [the current research direction](research/ACTIVE_TEST.md). The 30 October reset retires inherited task priorities: choose work for the consequential conclusion it can change with available evidence. Synthesis of the existing corpus is valid work. [Open questions](research/OPEN_QUESTIONS.md) preserves the backlog and history; its old priority labels do not schedule work.
+For a new session, read [AGENTS.md](AGENTS.md), then [Current research direction](research/ACTIVE_TEST.md). Choose a consequential question that available evidence can answer. An inherited priority label, unfinished task or incoming source does not determine the next work.
 
-1. [Current site assessment](research/sites/site_identification_review.md) explains the leading place proposals and their limits. These are site-level identifications; no individual deposit or hiding place has been identified.
-2. [Research guide](research/README.md) lists every report by subject and points to the evidence behind each conclusion.
-3. [Explore the atlas](https://quadrin.github.io/CopperScroll/) to browse the entries, map candidate places, review evidence, and read the scroll column by column.
-4. [Atlas guide](atlas/README.md) explains the interface and how to run or rebuild it. A prebuilt static version is in [`atlas-site/`](atlas-site/).
+## What the research supports
 
-The main site proposals remain conditional. The review rates Qumran's upper aqueduct (entry 21), Doq (31), the Wadi Qelt/Choziba stretch (32), and the Siloam outlet complex (49) at medium site confidence. [Feature investigation](research/sites/feature_investigation.md) tests individual structures separately. The [plate check](research/text/plate_check.md) revisits readings that affect several identifications. The [sequence analysis](research/text/deeper_analysis_2026-09-30.md) finds a different ordering pattern in entries 1–19, but does not locate a site. Later corrections are recorded in the reports and [findings log](research/logs/findings_log.md).
+Within the formal audited scope, no landmark identification has independently distinguished its candidate from the registered alternatives, and no deposit has been confirmed. Three formal candidate assessments remain inconclusive. The [research outcome record](research/PROGRESS_METRICS.md) defines the scope; these counts do not cover every historical proposal or atlas marker.
 
-**7 October review (historical):** [Parallel-agent review, 6–7 October 2026](research/agent_review_2026-10-07/README.md). It corrects several claims (Koḥlit, entry order, roundness) and lists the observations that would discriminate the Koḥlit candidates; no identification changes. Goals: [GOALS.md](research/agent_review_2026-10-07/GOALS.md).
+The [first method tests, 23–24 October](research/first_tests_2026-10-24/README.md) establish limited results: hoard sizes are compatible with the smaller tested weight unit; one historical satellite frame resolves large open pools; text extraction has unmeasured field accuracy; and matching early manuscript photographs stopped after failure. These results identify no hiding place. The [source findings, 29–30 October](research/sources/books_usc_2026-10-30/README.md) record newly received colour photographs, preliminary readings and archaeological corrections.
 
-**30 September source follow-up (historical):** [Hyrcania plan registration, Christmas Cave object provenance and Salvadora contexts](research/sites/cave_plan_followup_2026-09-30.md). Includes a failed precise-registration check, a conditional pool-dimension test, museum/lab identifier joins and the located arrowhead crack.
+The [twelve-method status summary and Challenge proposal](research/experimental_approaches/README.md) state what has been tested, what remains unrun and which funding and launch decisions are unverified. The [Drive source index](https://drive.google.com/file/d/1A08WOW_9PIkryXauw6WS1mSgT11NREpK/view) locates the source collection, illustrated methods dossier and Challenge brief.
 
-## Methods, Challenge and source collection
+## Find the evidence
 
-The [methods and Challenge record](research/experimental_approaches/README.md) connects the twelve proposals to completed tests, current limitations and Drive evidence. The [Drive integration note](research/sources/drive_integration_2026-10-30.md) links the updated private dossier, four-page Challenge brief, source folders and live inventory. Method numbers and historical outreach sequences are not a work queue.
+- [Research guide](research/README.md): reports by subject, with dates and evidence limits.
+- [Site-level assessment, September 2026](research/sites/site_identification_review.md): conditional place proposals, separate from the identification of a particular structure or deposit. Later corrections appear in the [findings log](research/logs/findings_log.md).
+- [Open questions](research/OPEN_QUESTIONS.md): historical questions and attempts; its priority labels are not a work queue.
+- [Interactive atlas](https://quadrin.github.io/CopperScroll/): scroll text, candidate places and public evidence. The [atlas guide](atlas/README.md) explains use and rebuilding.
 
 ## Repository map
 
