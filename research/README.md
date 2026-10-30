@@ -1,8 +1,10 @@
 # Research guide
 
-Start with [the active test](ACTIVE_TEST.md) and the session workflow in [AGENTS.md](../AGENTS.md). The [open questions tracker](OPEN_QUESTIONS.md) is the backlog; this guide is an evidence index, with no required full read at session startup.
+Start with [the current research direction](ACTIVE_TEST.md) and [AGENTS.md](../AGENTS.md). The 30 October reset supersedes inherited priorities and next-step instructions throughout this guide and linked historical reports. Select work by its expected effect on a consequential conclusion using accessible evidence. This guide and [OPEN_QUESTIONS](OPEN_QUESTIONS.md) are evidence indexes, with no required full read at session startup.
 
 Read the [current site review](sites/site_identification_review.md) for the latest site-level assessment, then use the reports below for the evidence, competing readings, and unresolved tests. A site's confidence does not identify a particular cave, cistern, pool, or deposit. The [findings log](logs/findings_log.md) preserves dated revisions; [open questions](logs/open_questions.md) preserves the remaining work.
+
+The [methods and Challenge status](experimental_approaches/README.md) and [Drive integration](sources/drive_integration_2026-10-30.md) connect the proposals, test results and source files. Consult them before presenting an existing method as untried.
 
 ## Foundation: five phases
 

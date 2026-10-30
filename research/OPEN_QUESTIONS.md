@@ -1,5 +1,7 @@
 # Open questions and research progress
 
+> **Priority reset, 30 October 2026.** This is an evidence backlog and history. All inherited P1/P2/P3 labels and next-step instructions are superseded by [AGENTS.md](https://github.com/quadrin/CopperScroll/blob/main/AGENTS.md) and [the current research direction](https://github.com/quadrin/CopperScroll/blob/main/research/ACTIVE_TEST.md). An unresolved question or pending source does not authorize another session. Existing results and reopening conditions remain in force.
+
 Last reviewed: 8 October 2026 UTC / 7 October Los Angeles. Baseline: published research at `5614ce8`.
 
 ## Aim and current position

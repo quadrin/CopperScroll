@@ -1,21 +1,34 @@
 # Copper Scroll research
 
-Identify and test the particular caves, cisterns, pools, channels, openings, tombs and other landmarks described in the Copper Scroll.
+Use the accumulated evidence to improve our understanding of the Copper Scroll and its geography. Test particular landmarks and location instructions when the evidence can distinguish them. The user's current question determines the work.
 
-## Start and finish a session
+## Choose the work before continuing it
 
-1. Check the current branch, recent commits and other work before editing. Read [ACTIVE_TEST.md](research/ACTIVE_TEST.md), then only its linked evidence needed for the next action. This file holds durable rules; ACTIVE_TEST holds the active questions, pending requests and next evidence.
-2. Before other work, state the **one new piece of evidence** this session will try to obtain: a source, observation or dataset not yet in the repo, named exactly enough to tell afterwards whether it was obtained.
-3. Pursue it or its named dependency. Use [OPEN_QUESTIONS.md](research/OPEN_QUESTIONS.md) as the backlog; historical handoffs, cycle plans and measurement queues are reference material. Parallel workers may resolve independent parts of the active test; one integrator owns shared writes. Respect explicitly parked searches.
-4. Update the existing evidence record and ACTIVE_TEST when something changes. Update the affected backlog question or outcome ledger only when its evidence or status changes; link the detailed result once. Preserve historical records and existing atlas mirrors. A routine session needs no new handoff, cycle summary, checklist or duplicate state file. Replace overlapping guidance here rather than appending another procedure.
-5. End with one line, in the final message and as the "Last session" line of ACTIVE_TEST: **obtained**, **not obtained** or **partly**, and what changed.
+Historical priorities expire. A previous agent's P1, "next", open checkbox, pending request, unfinished tool or proposed test supplies context; it does not authorize or prioritize another session. [ACTIVE_TEST.md](research/ACTIVE_TEST.md) records the current direction. Older plans and handoffs are reference material.
+
+1. Check the branch, recent changes and relevant open PRs before claiming that work is missing. Read ACTIVE_TEST, then the existing result for the question at hand. Follow later corrections and distinguish merged findings from unmerged work.
+2. For an explicit user task, do that task. For an open-ended "continue", briefly compare at most three materially different approaches, including synthesis of evidence already held. Choose by the importance of the conclusion that could change and the realistic chance of changing it with available evidence. Being unfinished or easy to execute gives a task no priority.
+3. Before substantive research, state in at most four short sentences: the question; the consequential conclusion or decision that could change; the evidence available now and what has already been tried; and the bounded deliverable and stopping point. Put this in the working conversation or the existing note. Do not create a proposal file or scoring system for routine selection.
+4. Work on one consequential question at a time. Existing-data analysis, synthesis, testing a competing explanation and correcting a consequential error are valid work. A new source is useful only when it serves that question. A subtask must explain its connection to the same conclusion.
+5. Default budget: one bounded pass in the current session. When a needed observation is unavailable, record that dependency and stop that lane. Do not turn it into another catalogue sweep, source hunt, archive reconstruction or tool project. An extension requires a fresh reason why its expected result justifies the work; a newly found loose end is insufficient.
+6. Finish with what we learned, the evidence and limits, and what decision changes or why the question should stop here. Update the existing result and ACTIVE_TEST only when they change. A routine session needs no new handoff, framework, checklist or duplicate state file.
+
+## Prevent task multiplication
+
+- Reassess inherited work against the project question before resuming it. Check earlier attempts once; do not repeatedly audit the same history.
+- Pending correspondence, unavailable records and inaccessible images are waiting items. Their arrival triggers a relevance check, not automatic processing.
+- A first pass that ends inconclusively can be complete. Preserve its result and its exact reopening condition; uncertainty does not create an obligation to keep working.
+- Maintenance, source intake, data cleaning, software, visualizations and benchmarks need an explicit user request or a direct dependency of the chosen research question. A prepared benchmark has no automatic claim on the next session.
+- Archive figures and build tools only to support the selected work or an explicit user deliverable. Encountering a potentially useful item does not create an archival or implementation task.
+- Preserve evidence standards for claims. Exploratory synthesis may use inspected evidence with its limits stated; an independent confirmation claim still needs the controls and unused observation below.
+- A justified decision to stop, narrow a claim, reject an approach or change strategy is a useful outcome. File counts, new sources and completed subtasks do not measure it.
 
 ## Status files
 
-- Hard caps: [ACTIVE_TEST.md](research/ACTIVE_TEST.md) at most 60 lines, [PROGRESS_METRICS.md](research/PROGRESS_METRICS.md) at most 40. Move overflow and history verbatim to a dated file under research/logs/ and link it.
-- No activity counters (scoped primary-source targets, cartographic intakes, bounded checks, question-state tallies, "brings N/N/N" increments) anywhere in status files, and none added to other records. Outcome counts come only from [outcome_ledger.json](research/progress/outcome_ledger.json).
-- Say only what changed. Do not restate what did not change: unchanged outcomes, coordinates, confidence or states, zero activity, no fee or order.
-- List pending requests one line each, by institution or person, date and what was asked. No email addresses or mailbox/message IDs.
+- ACTIVE_TEST is the single current direction; keep it under 60 lines. PROGRESS_METRICS stays under 40 lines and records formal outcomes from [outcome_ledger.json](research/progress/outcome_ledger.json).
+- Report substantive changes in understanding in ordinary prose, with sources and limits. Formal identification/deposit counters retain their existing definitions. Do not inflate them to reward partial work.
+- Preserve historical records and existing research/atlas mirrors. Keep waiting requests in their existing record instead of copying them into a work queue. Archive superseded current guidance verbatim when replacing it.
+- Replace overlapping instructions rather than appending more workflow. Historical plans and their tests describe the state when written; they must not force current work back into an obsolete queue.
 
 ## Tests that can fail
 
@@ -39,8 +52,8 @@ Earlier “not pushed” or local-only notes describe delivery history, not a bl
 
 ## Source continuity and archive
 
-The owner's Google Drive library (books, articles, ESI/HA/ʿAtiqot volumes, CORONA/HEXAGON film, maps and GIS) is indexed in [drive_index.md](research/sources/drive_index.md), with Drive IDs and pre-9-October file names in [drive_manifest.csv](research/sources/drive_manifest.csv). Look there first, and rebuild both with `tools/drive_navtree.py` after adding or renaming Drive files.
+The owner's sources are routed through [drive_index.md](research/sources/drive_index.md), which links the current Drive inventory. The checked-in CSV is a historical snapshot; consult the live index or supplied folder before calling a later source missing. [Methods and Challenge status](research/experimental_approaches/README.md) links the proposals to recorded results and their source folders. Check the relevant existing evidence/access record before searching.
 
-Check existing notes/access records before searching; prioritize digital primary sources, original plans, surveys and historical photographs. Record pages, figures and inspection/access scope. Whenever a link cannot be opened, immediately share that exact URL with the user and briefly state the access error or blocker; include the source title and needed pages/figures when known. Do not wait for the bounded search to finish before sharing the failed link. If a bounded open-access search stalls, also provide the best stable DOI, publisher, library or catalogue route so the user can help obtain the source. Record what remains unaccessed, do not imply inspection, stop repeating the same search and continue independent work. Keep existing paired research/atlas copies aligned, including the byte-identical OPEN_QUESTIONS/open_questions_tracker pair. ACTIVE_TEST has one canonical copy; other entrypoints link to it.
+Retrieve the particular source or observation the selected question needs. Record what was inspected, with pages, figures, access limits and provenance. If access fails, report the source, the needed observation and the best stable retrieval route once, then stop that dependency or pursue an independent approach. Do not repeat failed searches without a changed access route.
 
-Archive every potentially useful figure, table and chart encountered during research when reproduction is permitted, including authorized user-supplied extracts. This includes all encountered maps, plans, layouts, sections, aerials and geography/ruins photographs, even without an immediate candidate use. Store them under research/assets/plans with matching atlas/research/assets/plans copies. Preserve captions, scales and north arrows. Adjacent manifests record title, author, edition, printed/viewer pages, figure, source URL/provenance, original and asset hashes, crop/extraction details, attribution and reuse status. Link assets from their evidence note; distinguish source images, tracings and reconstructions. Online access supplies no licence. Where upload is restricted, retain the link and a retrieval/access note, plus a labelled project tracing where useful. Keep the existing backfill queue.
+Preserve the source material and derived figures actually used in an inference or requested deliverable, where reproduction is permitted. Keep captions, scales, north arrows, source URL, extraction details, attribution and reuse terms; use existing asset locations and manifests, including their atlas mirrors. If reproduction is restricted, keep the citation and access note. Bulk figure harvesting, index rebuilding and historical backfill require a reason tied to the selected work or an explicit user request.

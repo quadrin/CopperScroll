@@ -1,0 +1,218 @@
+{
+  "title": "Copper Scroll methods and challenge",
+  "reviewed_on": "2026-10-30",
+  "scope": "Attachment dossier dated 23 October, Challenge proposal dated 22 October, recorded project results through 30 October. This is a reconciliation of reviewed records, not a fresh search of email or a new validation run.",
+  "priority_rule": "Method numbers are identifiers, not priorities. Select work for the consequential conclusion it can change using available evidence. No method is automatically next.",
+  "methods": [
+    {
+      "id": 1,
+      "title": "AI extraction from excavation reports",
+      "state": "Partial test; accuracy unmeasured",
+      "result": "Mechanical checks passed on 50 reports. Two-model agreement is not an accuracy estimate; the hand-coded answer key was dropped on 24 October.",
+      "remaining": "Use existing rows provisionally. A bounded independently checked sample would be needed for an accuracy claim; do not resume hand-coding as an inherited task.",
+      "effect": "Provisional extraction can help locate reports; it does not validate candidate dates or feature identities.",
+      "results": [
+        "research/first_tests_2026-10-24/README.md"
+      ],
+      "drive": [
+        "1LEjarurJlVDWgpIqj40yPBOQh27enY5p"
+      ],
+      "track": "A / B"
+    },
+    {
+      "id": 2,
+      "title": "AI on pre-development imagery",
+      "state": "Resolution gate passed on one frame",
+      "result": "HEXAGON 1978 resolves large open Qumran pools; CORONA 1967 did not resolve the eight tested pools. The blind marking rule also marks ordinary rooms.",
+      "remaining": "A detector on unseen ground and pre-development RAF imagery have not been validated by that test. Original RAF scans remain a dependency.",
+      "effect": "Supports inspection of open features around four metres and larger on the tested film; it establishes no buried-feature detection or new site.",
+      "results": [
+        "research/first_tests_2026-10-24/README.md",
+        "research/regional/raf_1940s/README.md"
+      ],
+      "drive": [
+        "1Mjm7PQC-YtSvhVH_fj59_b3QtE5yij3s",
+        "1RIMetQQjp4CiBdohnczpxEU74jRDaRJp"
+      ],
+      "track": "A / B"
+    },
+    {
+      "id": 3,
+      "title": "Thermal and photogrammetric drone survey",
+      "state": "Proposal; feasibility data awaited",
+      "result": "The dossier proposes comparing ground-discovered openings with ordinary imagery. No completed thermal added-value test was found in the reviewed results.",
+      "remaining": "IAA survey records must first show a consequential detection gap; a partner-led flight depends on that result and appropriate access.",
+      "effect": "Assess added detection value before treating a new survey as useful.",
+      "results": [
+        "research/ACTIVE_TEST_before_reset_2026-10-30.md"
+      ],
+      "drive": [],
+      "track": "D"
+    },
+    {
+      "id": 4,
+      "title": "A search-theory map",
+      "state": "Groundwork exists; predictive test unrun",
+      "result": "The project already has coverage and search-effectiveness analyses. The proposed pre-2017 prediction test against later cave finds has no recorded result in the reviewed material.",
+      "remaining": "Requires dated search footprints, survey outcomes and defensible detection rates. Existing speculative weights cannot supply a calibrated map.",
+      "effect": "A map is worthwhile only if it changes a real choice and survives a comparison with a simpler baseline.",
+      "results": [
+        "research/models/search_effectiveness/README.md",
+        "research/feature_workbench/coverage/README.md"
+      ],
+      "drive": [
+        "1g6vOBv2sb7MA6aB3cgUNVDv_HKQHejjz"
+      ],
+      "track": "A"
+    },
+    {
+      "id": 5,
+      "title": "Muon imaging",
+      "state": "Partner-dependent proposal",
+      "result": "No project-specific void-detectability simulation or field result is recorded in the reviewed material.",
+      "remaining": "A named target with detector access below it, plus a partner simulation of signal and run time.",
+      "effect": "Keep as a conditional technique; no detector campaign follows from the dossier's precedent alone.",
+      "results": [],
+      "drive": [],
+      "track": "Partnership; outside original allocation"
+    },
+    {
+      "id": 6,
+      "title": "Dating the installations",
+      "state": "Source work done; sampling pilot unrun",
+      "result": "The project has evaluated construction phases and plaster-dating literature. The proposed five-fragment screening pilot has no recorded result.",
+      "remaining": "A date-bearing construction contact that would decide a consequential candidate claim, suitable material and a licensed sampling partner.",
+      "effect": "Dating a repair or unrelated plaster cannot settle the original installation's age.",
+      "results": [
+        "research/OPEN_QUESTIONS.md"
+      ],
+      "drive": [
+        "1AAmpkatwJN1m7lgghqDuOGUrYtlYG9vO"
+      ],
+      "track": "D"
+    },
+    {
+      "id": 7,
+      "title": "Imaging both faces of the strips",
+      "state": "New photographs received; new imaging unrun",
+      "result": "USC supplied 93 colour recto frames. Recto and verso public previews also exist. The claim that the backs have no published image set must not be repeated.",
+      "remaining": "New 3D or reflectance imaging of the original backs remains a separate proposal. Determine whether existing photographs leave a specific consequential observation unavailable.",
+      "effect": "Image arrival and a new imaging campaign are different achievements; study access does not grant publication permission.",
+      "results": [
+        "research/sources/books_usc_2026-10-30/wsrp_usc_plan_2026-10-29.md",
+        "research/sources/books_usc_2026-10-30/xii_images_released_2026-10-30.md"
+      ],
+      "drive": [
+        "171e-Pa9GiWMUuYbSGYkLTWuGmSCxbACA",
+        "1hspYwJm5ns-O9zHIXg0MNz1gbmHrb_0b"
+      ],
+      "track": "C"
+    },
+    {
+      "id": 8,
+      "title": "Computational re-reading",
+      "state": "Partial results; early-photo leg stopped",
+      "result": "1988/1994 registration reached median errors of 0.12-0.19 mm on tested segments. The DJD III leg failed its matching gate. Recent colour-photo readings remain exploratory; several words are lost or unreadable.",
+      "remaining": "A distinct better observation or calibrated fresh-reader test must justify reopening a specific reading. The XII 10 images are exposed to earlier atlas users.",
+      "effect": "Do not count registration accuracy, a tentative letter lean or an exposed reading as an independently confirmed location.",
+      "results": [
+        "research/first_tests_2026-10-24/README.md",
+        "research/sources/books_usc_2026-10-30/wsrp_followups_2026-10-30.md"
+      ],
+      "drive": [
+        "15QeOGkcgC_BUTgRjiRyDJmwA71dPkylE"
+      ],
+      "track": "C"
+    },
+    {
+      "id": 9,
+      "title": "Unidentified fragments and the explanatory copy",
+      "state": "Proposal; retrieval benchmark unrun",
+      "result": "No completed known-join recovery test or identification of an explanatory-copy fragment is recorded in the reviewed material.",
+      "remaining": "A fixed distinctive-text query and a test on known fragment joins at realistic fragment sizes, with a chance baseline and suitable corpus access.",
+      "effect": "This remains a long-shot hypothesis. Common-word matches cannot establish that a second copy existed.",
+      "results": [],
+      "drive": [
+        "1Ks9yYiA69U54p6o1Rf2Ll2ESu-geon7_"
+      ],
+      "track": "C"
+    },
+    {
+      "id": 10,
+      "title": "The hoard check",
+      "state": "Weight test complete; identification open",
+      "result": "Under the registered default talent reading, 0/45 sums matched; under the 71 g karsh reading, 27/30 matched. Milik's alternative numeral at VIII 9 leaves a talent exception. Thirteen hoards supply the karsh matches.",
+      "remaining": "Precise findspot, depth and container records would be needed for a discriminating comparison; the weight screen should not be rerun without a correction.",
+      "effect": "The smaller unit is compatible with known hoard sizes. Weight alone identifies no scroll deposit.",
+      "results": [
+        "research/first_tests_2026-10-24/README.md"
+      ],
+      "drive": [
+        "17Eox5OeGt0LLCmmYCRm3ryH9G6KgthH_"
+      ],
+      "track": "A"
+    },
+    {
+      "id": 11,
+      "title": "Forecasting and blind panels",
+      "state": "Proposed; expert-panel pilot unrun",
+      "result": "A reading protocol and letter controls exist. No completed human-epigrapher panel or forecasting tournament is recorded in the reviewed results.",
+      "remaining": "Choose a question whose answer can resolve, arrange qualified independent readers and appropriate image rights, and record prior exposure.",
+      "effect": "A panel can clarify disagreement; a tournament needs enough resolvable questions to justify its overhead.",
+      "results": [
+        "research/text/letter_controls/PROTOCOL.md"
+      ],
+      "drive": [
+        "171e-Pa9GiWMUuYbSGYkLTWuGmSCxbACA"
+      ],
+      "track": "C / review"
+    },
+    {
+      "id": 12,
+      "title": "A success-only prize",
+      "state": "Draft; acceptance and funding unverified",
+      "result": "The original challenge proposes a separately funded success prize. The reviewed records do not establish an approved prize, escrow, judges or institutional acceptance.",
+      "remaining": "EV's current award mechanics, independent review, a precise outcome, data rights and acceptance by any confirming institution must be established before launch.",
+      "effect": "Treat the budget and partner list as historical proposals, not commitments or an outreach queue.",
+      "results": [],
+      "drive": [],
+      "track": "Separate proposal"
+    }
+  ],
+  "challenge": {
+    "state": "Working proposal; launch authorization not established in reviewed material",
+    "source_proposal_date": "2026-10-22",
+    "historical_funding_report": {
+      "as_of": "2026-09-24, reported in the 22 October proposal",
+      "remaining_usd": 102000,
+      "current_balance_verified": false
+    },
+    "historical_allocation_usd": {
+      "A_leads": 45000,
+      "B_evidence": 12000,
+      "C_text_and_imaging": 10000,
+      "D_methods_and_field": 25000,
+      "review_and_operations": 10000
+    },
+    "roles_as_proposed": {
+      "Tyler": "Final award decision",
+      "Alex": "Find applicants, frame problems and organize independent review",
+      "Yoni": "Donor; excluded from selection"
+    },
+    "unresolved_decisions": [
+      "Current funding balance, permitted uses and EV award mechanics",
+      "Alex's role, conflicts/recusal and reviewer compensation",
+      "A bounded pilot outcome and shareable input package",
+      "Independent reviewers and an available resolution source",
+      "Permission to use the name and launch; any later partner, legal or field approvals"
+    ],
+    "current_operating_proposal": "Prepare one bounded desk pilot only after choosing an outcome with available inputs and a checkable result. Award structure, amounts and launch remain decisions for EV; this update authorizes no spending or outreach."
+  },
+  "links": {
+    "drive_root": "https://drive.google.com/drive/folders/114qehR0C8LouGds9UwZ5-hpStbv2GMQb",
+    "drive_methods": "https://drive.google.com/drive/folders/1dT0YD0Fn0Zg0FNsfCC90y5GeUC8s0Eku",
+    "drive_archive": "https://drive.google.com/drive/folders/1NP9trevdpsDugd5lxjFsUBVLIr2kQkR7",
+    "repository": "https://github.com/quadrin/CopperScroll",
+    "priority_reset_pr": "https://github.com/quadrin/CopperScroll/pull/65"
+  }
+}

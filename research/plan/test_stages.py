@@ -15,7 +15,8 @@ STAGES = HERE / "stages.json"
 SCALE = HERE / "rating_scale.json"
 PLAN_MD = HERE / "STAGED_OBJECTIVES.md"
 OPEN_QUESTIONS = REPO / "research" / "OPEN_QUESTIONS.md"
-ACTIVE_TEST = REPO / "research" / "ACTIVE_TEST.md"
+# This proposal is historical. Check its preserved queue, not current priorities.
+ACTIVE_TEST = REPO / "research" / "ACTIVE_TEST_before_reset_2026-10-30.md"
 LEDGER = REPO / "research" / "progress" / "outcome_ledger.json"
 METHODS_LOG = REPO / "research" / "logs" / "methods_round_2026-10-08.md"
 

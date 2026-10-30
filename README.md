@@ -4,7 +4,7 @@ Research on the places, landmarks, text, and structure of the Copper Scroll. The
 
 ## Start here
 
-For a new research session, read [AGENTS.md](AGENTS.md), then [the active test](research/ACTIVE_TEST.md). It gives the active questions, the observation that would decide each, pending requests and the next evidence to obtain. [Open questions](research/OPEN_QUESTIONS.md) is the broader backlog and history.
+For a new session, read [AGENTS.md](AGENTS.md), then [the current research direction](research/ACTIVE_TEST.md). The 30 October reset retires inherited task priorities: choose work for the consequential conclusion it can change with available evidence. Synthesis of the existing corpus is valid work. [Open questions](research/OPEN_QUESTIONS.md) preserves the backlog and history; its old priority labels do not schedule work.
 
 1. [Current site assessment](research/sites/site_identification_review.md) explains the leading place proposals and their limits. These are site-level identifications; no individual deposit or hiding place has been identified.
 2. [Research guide](research/README.md) lists every report by subject and points to the evidence behind each conclusion.
@@ -13,9 +13,13 @@ For a new research session, read [AGENTS.md](AGENTS.md), then [the active test](
 
 The main site proposals remain conditional. The review rates Qumran's upper aqueduct (entry 21), Doq (31), the Wadi Qelt/Choziba stretch (32), and the Siloam outlet complex (49) at medium site confidence. [Feature investigation](research/sites/feature_investigation.md) tests individual structures separately. The [plate check](research/text/plate_check.md) revisits readings that affect several identifications. The [sequence analysis](research/text/deeper_analysis_2026-09-30.md) finds a different ordering pattern in entries 1–19, but does not locate a site. Later corrections are recorded in the reports and [findings log](research/logs/findings_log.md).
 
-**Latest review:** [Parallel-agent review, 6–7 October 2026](research/agent_review_2026-10-07/README.md). It corrects several claims (Koḥlit, entry order, roundness) and lists the observations that would discriminate the Koḥlit candidates; no identification changes. Goals: [GOALS.md](research/agent_review_2026-10-07/GOALS.md).
+**7 October review (historical):** [Parallel-agent review, 6–7 October 2026](research/agent_review_2026-10-07/README.md). It corrects several claims (Koḥlit, entry order, roundness) and lists the observations that would discriminate the Koḥlit candidates; no identification changes. Goals: [GOALS.md](research/agent_review_2026-10-07/GOALS.md).
 
-**Latest source follow-up:** [Hyrcania plan registration, Christmas Cave object provenance and Salvadora contexts](research/sites/cave_plan_followup_2026-09-30.md). Includes a failed precise-registration check, a conditional pool-dimension test, museum/lab identifier joins and the located arrowhead crack.
+**30 September source follow-up (historical):** [Hyrcania plan registration, Christmas Cave object provenance and Salvadora contexts](research/sites/cave_plan_followup_2026-09-30.md). Includes a failed precise-registration check, a conditional pool-dimension test, museum/lab identifier joins and the located arrowhead crack.
+
+## Methods, Challenge and source collection
+
+The [methods and Challenge record](research/experimental_approaches/README.md) connects the twelve proposals to completed tests, current limitations and Drive evidence. The [Drive integration note](research/sources/drive_integration_2026-10-30.md) links the updated private dossier, four-page Challenge brief, source folders and live inventory. Method numbers and historical outreach sequences are not a work queue.
 
 ## Repository map
 
