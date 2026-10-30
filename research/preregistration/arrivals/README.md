@@ -77,7 +77,7 @@ Universe: 26 decision classes and 25 chain models outside the decision roster. E
 
 ### Items that separate nothing, and why
 
-- **Garstang Museum, PEF, Nigro.** These were requested for active question 2. Their chain links (SULTAN-1, -5, -6) are one-sided: they can confirm a mouth–tomb pair, but cannot contradict. A new pit in the strip is not one of the registered pit roles, so it separates no decision class. Photographs locate an opening but do not date it.
+- **Garstang Museum, PEF, Nigro.** *(30 October 2026: the SULTAN-1 blind-test rules are retired by the owner; these records are opened and read normally when they arrive, without the registration protocol.)* These were requested for active question 2. Their chain links (SULTAN-1, -5, -6) are one-sided: they can confirm a mouth–tomb pair, but cannot contradict. A new pit in the strip is not one of the registered pit roles, so it separates no decision class. Photographs locate an opening but do not date it.
 - **Høgenhaven.** One reader, not blinded, outside the protocol's two-reader design. The protocol maps any such reading to "not identifiable".
 - **Meinardus and Zuckerman.** Each is the named record for reopening a closed result: entry 29 St Andrew and R11. Neither changes a live class. For R11 the protocol's terminal rule still needs an authenticated crossing.
 - **Zertal vol. I.** It touches 6 main-set units. So k ≤ 6 while m ≥ 307, and the rarity verdict "not measurable" cannot change.

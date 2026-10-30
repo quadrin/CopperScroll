@@ -36,6 +36,6 @@ Existing-source analysis and synthesis are valid research. A source arrival trig
 
 ## Sources and continuity
 
-The [research methods and results](experimental_approaches/README.md) state completed, partial, stopped and unrun approaches. The [Drive source index](https://drive.google.com/file/d/1A08WOW_9PIkryXauw6WS1mSgT11NREpK/view) locates the evidence. Funding and award administration do not enter AI site-finding work.
+The [research methods and results](experimental_approaches/README.md) state completed, partial, stopped and unrun approaches. The [Drive source index](https://drive.google.com/file/d/1A08WOW_9PIkryXauw6WS1mSgT11NREpK/view) locates the evidence. Funding and award administration do not enter AI site-finding work. On 30 October the owner retired the SULTAN-1 blind-test rules for Tell es-Sultan. All Tell es-Sultan and Jericho material, including the former "reserved" Drive photos and BS Pal. 1032, is open and is read like any other source.
 
 [Open questions](OPEN_QUESTIONS.md) is a historical evidence register. Its priority labels and “next” instructions do not schedule work. The [archived research state before 30 October](ACTIVE_TEST_before_reset_2026-10-30.md) preserves earlier dependencies, requests and test history for claim-specific lookup. Read only what the chosen question requires. Check relevant branch changes and open pull requests before reporting work as absent.

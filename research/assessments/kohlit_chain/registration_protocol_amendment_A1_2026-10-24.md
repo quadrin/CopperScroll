@@ -1,5 +1,8 @@
 # Registration protocol, amendment A1: blind scoring instead of sealed records
 
+> **Retired, 30 October 2026 (owner's decision).** The SULTAN-1 blind-test rules for Tell es-Sultan are withdrawn. All Tell es-Sultan and Jericho material is open: read it normally, at any resolution, with no registration protocol, coded tiles, blind scorer or exposure log. This covers the Commons and LoC Matson photos (Drive `06 Imagery/Tell es-Sultan and Jericho photos – Commons and LoC Matson (2026-10-17)`, formerly "SULTAN-1 reserved – do not open"), BS Pal. 1032, the 1940s maps and RAF frames, and any Garstang, PEF or Nigro record. The text below is kept as a historical record and no longer governs work; earlier "exposed" labels for this material carry no weight.
+
+
 Drafted 24 October 2026 by Claude at the owner's request. **Status: ADOPTED** by the owner, Alex Kesin, in chat on 24 October 2026 at about 18:33 UTC ("yes"). Decisions: (1) adopt A1: yes; (2) discrimination rule: the default in point 4 is kept (no change requested); (3) the already-exposed items stay exploratory even if blind-scored. [registration_protocol.md](registration_protocol.md) applies as amended here to every record opened after adoption.
 
 ## Why
