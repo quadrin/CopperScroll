@@ -1,0 +1,18 @@
+uniform 0-3 m (main) PI_large_loop Ta_5kg 0.24 / 0.30 / 0.39
+uniform 0-3 m (main) PI_large_loop Ta_50kg 0.40 / 0.48 / 0.58
+uniform 0-3 m (main) TDEM_EM61 Ta_5kg 0.19 / 0.24 / 0.30
+uniform 0-3 m (main) TDEM_EM61 Ta_50kg 0.33 / 0.43 / 0.52
+uniform 0-3 m (main) GPR Tb 0.14 / 0.18 / 0.24
+uniform 0-3 m (main) PI+GPR union Ta_50kg 0.38 / 0.47 / 0.54
+shallow 0-1.5 m PI_large_loop Ta_5kg 0.48 / 0.58 / 0.69
+shallow 0-1.5 m PI_large_loop Ta_50kg 0.49 / 0.61 / 0.72
+shallow 0-1.5 m TDEM_EM61 Ta_5kg 0.39 / 0.48 / 0.59
+shallow 0-1.5 m TDEM_EM61 Ta_50kg 0.52 / 0.65 / 0.77
+shallow 0-1.5 m GPR Tb 0.26 / 0.37 / 0.48
+shallow 0-1.5 m PI+GPR union Ta_50kg 0.48 / 0.60 / 0.76
+deep 1.5-3 m PI_large_loop Ta_5kg 0.02 / 0.03 / 0.05
+deep 1.5-3 m PI_large_loop Ta_50kg 0.27 / 0.35 / 0.43
+deep 1.5-3 m TDEM_EM61 Ta_5kg 0.00 / 0.00 / 0.01
+deep 1.5-3 m TDEM_EM61 Ta_50kg 0.19 / 0.23 / 0.28
+deep 1.5-3 m GPR Tb 0.02 / 0.03 / 0.05
+deep 1.5-3 m PI+GPR union Ta_50kg 0.27 / 0.34 / 0.42

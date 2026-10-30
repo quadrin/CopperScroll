@@ -47,7 +47,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | amount_gravity_2026-10-27 | Bigger caches lie nearer Jerusalem | entries with sums | **done 27 Oct: underpowered; sign reversed** ([RESULT](amount_gravity_2026-10-27/RESULT.md)) |
 | reverse_lookup_2026-10-27 | Well-documented sites, looked up against all entries | all entries | **done 27 Oct: not supported; weak lead entry 45 at Qumran** ([RESULT](reverse_lookup_2026-10-27/RESULT.md)) |
 | wadi_aggradation_2026-10-30 | How deep a wadi-bed cache would lie today (aggradation or incision since 60 CE) | entries 17, 18, 20, 24, 28, 32, 35 | **done 30 Oct: all nine points unknown (strict); calibration failed** ([RESULT](wadi_aggradation_2026-10-30/RESULT.md)) |
-| l5658_survey_design_2026-10-30 | Whether a non-invasive survey could test the L56/58 lead, so a null counts | entries 21–23 (22 primary) | rule fixed 30 Oct |
+| l5658_survey_design_2026-10-30 | Whether a non-invasive survey could test the L56/58 lead, so a null counts | entries 21–23 (22 primary) | **done 30 Oct: not testable non-invasively (borderline; partly testable for 50 kg in the top 1.5 m); crack fill never excavated** ([RESULT](l5658_survey_design_2026-10-30/RESULT.md)) |
 | unknowns_value_2026-10-30 | Which missing records would settle the most sandbox verdicts | runs 1–22 | rule fixed 30 Oct |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
