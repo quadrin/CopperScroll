@@ -48,7 +48,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | reverse_lookup_2026-10-27 | Well-documented sites, looked up against all entries | all entries | **done 27 Oct: not supported; weak lead entry 45 at Qumran** ([RESULT](reverse_lookup_2026-10-27/RESULT.md)) |
 | wadi_aggradation_2026-10-30 | How deep a wadi-bed cache would lie today (aggradation or incision since 60 CE) | entries 17, 18, 20, 24, 28, 32, 35 | **done 30 Oct: all nine points unknown (strict); calibration failed** ([RESULT](wadi_aggradation_2026-10-30/RESULT.md)) |
 | l5658_survey_design_2026-10-30 | Whether a non-invasive survey could test the L56/58 lead, so a null counts | entries 21–23 (22 primary) | **done 30 Oct: not testable non-invasively (borderline; partly testable for 50 kg in the top 1.5 m); crack fill never excavated** ([RESULT](l5658_survey_design_2026-10-30/RESULT.md)) |
-| unknowns_value_2026-10-30 | Which missing records would settle the most sandbox verdicts | runs 1–22 | rule fixed 30 Oct |
+| unknowns_value_2026-10-30 | Which missing records would settle the most sandbox verdicts | runs 1–22 | **done 30 Oct: Bar-Adon 1972, Humbert & Chambon 1994, Magen & Peleg 2018 pp. 58–66 and Stager 1976 settle the most units; 7 runs undecidable by any record** ([RESULT](unknowns_value_2026-10-30/RESULT.md)) |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
 

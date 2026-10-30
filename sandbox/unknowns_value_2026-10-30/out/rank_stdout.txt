@@ -1,0 +1,100 @@
+Method 6 comparison
+  m6 #1 decisions-xii10                sandbox ev units=0 all=0 records=['decisions-xii10'] access=['held by person, request pending']
+  m6 #2 decisions-kenyon-section       sandbox ev units=0 all=0 records=['decisions-kenyon-section'] access=['not in library']
+  m6 #3 decisions-iv17-l656            sandbox ev units=1 all=1 records=['l656-field-file'] access=['held by person, request pending']
+  m6 #4 decisions-jericho-contacts     sandbox ev units=0 all=0 records=['decisions-jericho-contacts'] access=['held by person, request pending']
+  m6 #4 decisions-kallai-pool          sandbox ev units=0 all=0 records=['decisions-kallai-pool'] access=['read']
+  m6 #4 decisions-siloam-main-side     sandbox ev units=0 all=0 records=['decisions-siloam-main-side'] access=['held by person, request pending']
+  m6 #4 decisions-wadi-bath-contact    sandbox ev units=0 all=1 records=['wadi-bath-file'] access=['held by person, request pending']
+Ranking 1 (EVIDENCE)
+   1  baradon1972-asi1                       units=6  (ev 6, inf 1)  runs=4 [1 5 7 12]  not in library
+   2  humbert-chambon1994                    units=4  (ev 4, inf 1)  runs=4 [1 10 12 17]  held by person, request pending
+   3  magen-peleg2018-pp58-66                units=3  (ev 3, inf 0)  runs=3 [1 7 12]  Mac online-only
+   4  stager1976-basor221                    units=3  (ev 3, inf 5)  runs=3 [1 7 12]  not in library
+   5  meshel1984-ei17                        units=3  (ev 3, inf 0)  runs=2 [1 7]  not in library
+   5  wright-milik1961-fig5                  units=3  (ev 3, inf 0)  runs=2 [1 7]  not in library
+   7  baradon1989-ghuweir                    units=3  (ev 3, inf 0)  runs=1 [1]  Drive >10 MB
+   7  zertal-bar2019-mhcs5                   units=3  (ev 3, inf 0)  runs=1 [11]  Mac online-only
+   9  gutfeld2006-bar32-5                    units=3  (ev 3, inf 2)  runs=1 [16]  not in library
+   9  peleg2009-jsp10-ekteif                 units=3  (ev 3, inf 0)  runs=1 [16]  not in library
+  11  feldman-p330-patrich2002-fig22         units=2  (ev 2, inf 0)  runs=2 [1 12]  read
+  12  callegher-in-humbert2016               units=2  (ev 2, inf 0)  runs=2 [4 15]  not in library
+Ranking 2 (EVIDENCE + INFERENCE)
+   1  stager1976-basor221                    units=8  (ev 3, inf 5)  runs=4 [1 7 11 12]  not in library
+   2  baradon1972-asi1                       units=7  (ev 6, inf 1)  runs=4 [1 5 7 12]  not in library
+   3  humbert-chambon1994                    units=5  (ev 4, inf 1)  runs=4 [1 10 12 17]  held by person, request pending
+   4  gutfeld2006-bar32-5                    units=5  (ev 3, inf 2)  runs=1 [16]  not in library
+   5  haber2024-hyrcania                     units=4  (ev 2, inf 2)  runs=2 [1 7]  Drive >10 MB
+   5  mount-hyrcania-project-report          units=4  (ev 2, inf 2)  runs=2 [1 7]  Drive >10 MB
+   7  magen-peleg2018-pp58-66                units=3  (ev 3, inf 0)  runs=3 [1 7 12]  Mac online-only
+   8  meshel1984-ei17                        units=3  (ev 3, inf 0)  runs=2 [1 7]  not in library
+   8  wright-milik1961-fig5                  units=3  (ev 3, inf 0)  runs=2 [1 7]  not in library
+  10  baradon1989-ghuweir                    units=3  (ev 3, inf 0)  runs=1 [1]  Drive >10 MB
+  10  zertal-bar2019-mhcs5                   units=3  (ev 3, inf 0)  runs=1 [11]  Mac online-only
+  12  peleg2009-jsp10-ekteif                 units=3  (ev 3, inf 0)  runs=1 [16]  not in library
+V1_literal_units_only
+   1  baradon1972-asi1                       units=6  (ev 6, inf 1)  runs=4 [1 5 7 12]  not in library
+   2  magen-peleg2018-pp58-66                units=3  (ev 3, inf 0)  runs=3 [1 7 12]  Mac online-only
+   3  stager1976-basor221                    units=3  (ev 3, inf 5)  runs=3 [1 7 12]  not in library
+   4  humbert-chambon1994                    units=3  (ev 3, inf 1)  runs=3 [1 10 12]  held by person, request pending
+   5  meshel1984-ei17                        units=3  (ev 3, inf 0)  runs=2 [1 7]  not in library
+   5  wright-milik1961-fig5                  units=3  (ev 3, inf 0)  runs=2 [1 7]  not in library
+V2_strict_evidence_named_for_unit_or_other_source
+   1  baradon1972-asi1                       units=4  (ev 4, inf 3)  runs=4 [1 5 7 12]  not in library
+   2  humbert-chambon1994                    units=4  (ev 4, inf 1)  runs=4 [1 10 12 17]  held by person, request pending
+   3  stager1976-basor221                    units=3  (ev 3, inf 5)  runs=3 [1 7 12]  not in library
+   4  zertal-bar2019-mhcs5                   units=3  (ev 3, inf 0)  runs=1 [11]  Mac online-only
+   5  feldman-p330-patrich2002-fig22         units=2  (ev 2, inf 0)  runs=2 [1 12]  read
+   6  magen-peleg2018-pp58-66                units=2  (ev 2, inf 1)  runs=2 [7 12]  Mac online-only
+V3_both
+   1  baradon1972-asi1                       units=4  (ev 4, inf 3)  runs=4 [1 5 7 12]  not in library
+   2  stager1976-basor221                    units=3  (ev 3, inf 5)  runs=3 [1 7 12]  not in library
+   3  humbert-chambon1994                    units=3  (ev 3, inf 1)  runs=3 [1 10 12]  held by person, request pending
+   4  zertal-bar2019-mhcs5                   units=3  (ev 3, inf 0)  runs=1 [11]  Mac online-only
+   5  feldman-p330-patrich2002-fig22         units=2  (ev 2, inf 0)  runs=2 [1 12]  read
+   6  magen-peleg2018-pp58-66                units=2  (ev 2, inf 1)  runs=2 [7 12]  Mac online-only
+V4_access_held_before_library
+   1  baradon1972-asi1                       units=6  (ev 6, inf 1)  runs=4 [1 5 7 12]  not in library
+   2  humbert-chambon1994                    units=4  (ev 4, inf 1)  runs=4 [1 10 12 17]  held by person, request pending
+   3  magen-peleg2018-pp58-66                units=3  (ev 3, inf 0)  runs=3 [1 7 12]  Mac online-only
+   4  stager1976-basor221                    units=3  (ev 3, inf 5)  runs=3 [1 7 12]  not in library
+   5  meshel1984-ei17                        units=3  (ev 3, inf 0)  runs=2 [1 7]  not in library
+   5  wright-milik1961-fig5                  units=3  (ev 3, inf 0)  runs=2 [1 7]  not in library
+{
+ "units": 52,
+ "units_literal": 44,
+ "records": 67,
+ "records_with_evidence_link": 47,
+ "records_with_any_link": 56,
+ "links": 112,
+ "evidence_links": 81,
+ "inference_links": 31,
+ "units_with_evidence_link": 30,
+ "units_with_any_link": 32,
+ "units_without_link": [
+  "R01-J2",
+  "R02-E15",
+  "R02-HN",
+  "R05-K1",
+  "R05-K4",
+  "R07-J2",
+  "R07-J9",
+  "R08-T",
+  "R12-E3",
+  "R13-S4",
+  "R14-A",
+  "R14-B1",
+  "R14-B2",
+  "R17-C3",
+  "R18-SH",
+  "R20-S3",
+  "R20-S5",
+  "R21-A",
+  "R22-CTL",
+  "R22-L45"
+ ],
+ "units_inference_only": [
+  "R16-T2",
+  "R16-T6"
+ ]
+}
