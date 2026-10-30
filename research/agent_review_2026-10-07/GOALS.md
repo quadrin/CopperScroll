@@ -1,5 +1,7 @@
 # Research goals after the agent review (7 October 2026)
 
+> **Historical plan.** Its task order and next-step instructions were superseded by the 30 October [priority reset](../ACTIVE_TEST.md). Use this file to understand earlier work, then follow [AGENTS.md](../../AGENTS.md) to choose current work. Its dated status descriptions may have later corrections.
+
 The 19-task program the agents worked through, in priority order, with each task's current state. "Done" means a first pass is complete, not that the question is answered. Drafts for partner and field tasks are in `wave1/T10_outreach/drafts/` and `wave1/T09_T12_T19_landscape_field/drafts/`. The Manchester and IAA requests were sent on 7 October ([followup/F](followup/F_outreach_sent.md)); the others have not been sent. Later results are in [followup/](followup/README.md).
 
 ## Desk work

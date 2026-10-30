@@ -1,6 +1,8 @@
 # Staged objectives (research/plan)
 
-What it is: a ladder of six stages, each rated before work, and a map of all 32 live lanes to those stages, with costs and proposed stop rules.
+> **Historical proposal.** The 30 October [reset](../ACTIVE_TEST.md) supersedes this plan's priorities, lane states and suggested deadlines. Its tests check the historical proposal; they must not require restoration of the old live queue. Current work follows [AGENTS.md](../../AGENTS.md).
+
+What it is: a ladder of six stages, each rated before work, and a map of the 32 lanes proposed on 9 October to those stages, with costs and proposed stop rules.
 Main result: S1 A, S2 B, S3 B, S4 C, S5 C, S6 D. 20 of 32 lanes serve S1–S3. 15 lanes are proposed to park now.
 What stays unknown: whether any pending request will arrive, and what it will show. The ratings are judgements, not probabilities.
 
@@ -46,7 +48,7 @@ python3 -I -m unittest discover -s research/plan -t research/plan
 ```
 
 The tests check that:
-- every R-number in OPEN_QUESTIONS.md and every active question in ACTIVE_TEST.md is a lane exactly once;
+- every R-number in OPEN_QUESTIONS.md and every question in the preserved pre-reset ACTIVE_TEST snapshot is a lane exactly once;
 - all nine methods-round tools, the seven tools of this round and the Koḥlit rarity count are lanes;
 - every rating is on the frozen scale, the scale's hash matches, and ratings never rise along the ladder;
 - every stop rule and every new rule is marked PROPOSED, and money is "none" or needs the owner's approval;
@@ -54,4 +56,4 @@ The tests check that:
 - every cited file exists, the counter snapshot matches the outcome ledger, and the S4 and S6 flags follow the ledger;
 - STAGED_OBJECTIVES.md has one table row per lane, with its stage and PROPOSED.
 
-If ACTIVE_TEST gains a question, OPEN_QUESTIONS gains an R-number, or a ledger counter changes, a test fails on purpose. Then update stages.json and the page.
+The active-question checks use research/ACTIVE_TEST_before_reset_2026-10-30.md, preserved verbatim at the reset. They do not constrain today's ACTIVE_TEST. Other checks retain their existing source/ledger dependencies; a failure is a maintenance issue in this historical proposal, not a mandate to revive its research lanes.

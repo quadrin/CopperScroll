@@ -1,5 +1,7 @@
 # Staged objectives and stop rules
 
+> **Historical proposal, superseded for work selection on 30 October 2026.** Ratings, lane states, deadlines and proposed procedures below describe the 9 October plan. They do not authorize work or maintenance today. Follow [AGENTS.md](../../AGENTS.md) and [the current direction](../ACTIVE_TEST.md). The preserved scientific results retain their scope; this plan's existence does not prioritize completing its machinery.
+
 9 October 2026. Exploratory plan. It changes no registered result or counter, claims no identification and plans no travel. Every stop rule is PROPOSED; the project owner decides. Machine-readable copy: [stages.json](stages.json). The rating scale, [rating_scale.json](rating_scale.json), was frozen before any stage was rated ([README](README.md)).
 
 Where the project stands ([outcome ledger](../progress/outcome_ledger.json)): 0 independently discriminated identifications, 0 confirmed deposits, 0 whole-candidate exclusions, and 3 conditional assessments, all inconclusive. No stage below is reached.
