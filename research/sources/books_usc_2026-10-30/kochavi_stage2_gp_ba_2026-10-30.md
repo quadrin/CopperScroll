@@ -214,6 +214,60 @@ Columns:
 - S3881 and S4167 gained one condition each but are not a match in any branch, variant or Nigro setting.
 - No other unit changed.
 
+## Coder B, S2629 (added 30 Oct, after the run above)
+
+**Input.**
+- The coordinator supplied a full blind coder-B sheet for S2629: `coded_B_full/S2629.json`, copied from `scratchpad/coderB_S2629/B/S2629.json` (sha256 `3a74660d…`).
+- It codes the whole base packet plus Bar-Adon site 70, with held-area material limited to measured content. It is marked EXPOSED.
+
+**How it was merged.**
+- It was added the way `run_addendum.sh` adds `coded_B_full` sheets: copied into the merged coder-B folder.
+- S2629 had no coder-B sheet before, so nothing was replaced.
+- `match.py run` was then rerun on the Addendum 5 coder-A sheets (`work/tmp_gpba/A6`, unchanged), using that coder-B folder (`work/B4`). The output is in `work/out_gpba_B/`.
+- `match.py validate` passed: 244 coder-A sheets and 64 coder-B sheets, all with 0 errors.
+- `match.py` and `protocol_constants.json` are unchanged.
+
+**S2629, merged C1 / C2 / C3s / C3t.** Coder A, coder B and the merged value are identical in every variant, with and without Nigro. Merging therefore makes no value UNKNOWN.
+
+| Variant (with and without Nigro) | C1 | C2 | C3s | C3t | A survey / A text / B |
+|---|---|---|---|---|---|
+| primary | UNKNOWN | MATCH | UNKNOWN | UNKNOWN | U / U / U |
+| C1 ≤ 0.5 km | UNKNOWN | MATCH | UNKNOWN | UNKNOWN | U / U / U |
+| C1 ≤ 2 km | MATCH | MATCH | UNKNOWN | UNKNOWN | U / U / **MATCH** |
+| C2 tomb shafts | UNKNOWN | MATCH | UNKNOWN | UNKNOWN | U / U / U |
+| dated only | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | U / U / U |
+
+**The branch-B C1 ≤ 2 km change survives.** The counts are R1 main 11 → 12, R1 pre-70 15 → 16, R2 main 8 → 9 and R2 pre-70 12 → 13, the same as with coder A alone.
+
+**The headline is unchanged.** All 12 rows are identical to the Counts table above and to the Kallai baseline (main set R1 A survey: k 0, f 20, m 313 of 333).
+- `unit_results.csv` is byte-identical to the coder-A-only run.
+- The only `summary.json` section that changes is `coder_agreement`, and the two-of-three list is unchanged.
+
+**Coder agreement after adding S2629** (now 64 double-coded units; S2629 agrees on all four conditions):
+
+| Condition | Before (63 units): agreement, κ | After (64 units): agreement, κ |
+|---|---|---|
+| C1 | 1.000, 1.000 | 1.000, 1.000 (MATCH/MATCH 11, U/U 53) |
+| C2 | 0.937, 0.890 | 0.938, 0.892 (S2629 is a new MATCH/MATCH) |
+| C3s | 0.952, 0.861 | 0.953, 0.862 |
+| C3t | 1.000, n/a | 1.000, n/a |
+
+**Disagreements.** There are none at condition level, so the merge rule (PROTOCOL §1: keep the value where the coders agree, UNKNOWN where they differ) leaves every value as coded. The coders differ only at feature level, and none of the differences changes a condition:
+- **Plan readings.** Both coders read the circle on the p. 116 plan as the cistern and the rectangle as the pool.
+  - Coder B measures the cistern at 352°, 9 m and the pool at 295°, 12 m. Coder B measured from the centroid of the building outline and corrected the north arrow by +2°; from the bounding-box centre B gets 345° and 294°.
+  - Coder A measured 340°, 9 m and 292°, 13 m.
+  - Both readings of the cistern fall in the 315°–45° sector, so C2 is MATCH for both.
+  - Coder B rates the identification at about 75%. Ambiguity A1 still applies: if the two plan symbols were swapped, both coders' C2 would fall.
+- **C1 at 2 km.**
+  - Coder B's C1 at 2 km rests on Birket Jiljulieh, coded twice: the WBADB name of S2531 and SWP Mem III p. 24, both at grid S2531.
+  - Coder A's rests on the SWP pool at S2531 alone.
+- **Other features.** Coder B also codes WBADB components (S2629, its duplicate row E376, S2601) and Nigro catalogue entries 66, 74, 78, 79 and 84.
+  - All are dated L, have no position, or lie outside the sectors.
+  - None gives a C1 MATCH in the primary rules or a C3s MATCH.
+- **Exposure.** Coder B's note says Nigro cat. 79 cites Bar-Adon pp. 115–116, so it may describe the same site.
+
+**What remains.** No other unit needs coder B under the procedure. The 14 random-sample units listed under Coder B above still have no coder-B coding of the new entries (D2). `units_2026-10-30.csv` needed no change, because no value changed. `summary.json` has been refreshed from `work/out_gpba_B/` (sha256 `34e75de5…`).
+
 ## Ambiguities (recorded, not resolved by results)
 
 Each was settled by the protocol text and earlier coders' practice before the run. The sensitivity results were computed after the run and are exploratory (`scripts/sens.py`).
@@ -302,7 +356,8 @@ Each was settled by the protocol text and earlier coders' practice before the ru
 
 - `stage2_gp_ba_2026-10-30.md`: this report.
 - `units_2026-10-30.csv`: one row per unit (56).
-- `summary.json`: the `match.py` summary after the merge (sha256 `57256d82…`).
+- `summary.json`: the `match.py` summary after the merge, refreshed with coder B for S2629 (sha256 `34e75de5…`). The coder-A-only version was `57256d82…` and is kept at `work/out_gpba/summary.json`.
+- `coded_B_full/S2629.json`: coder B's full sheet for S2629, as supplied.
 - `coded_A/gp/*.json` (25) and `coded_A/ba/*.json` (31): coder-A sheets (PROTOCOL §10 format, before the merge adds `sources`).
 - `selection_2026-10-30.md` and `work/selected_units.csv`: the selection made before opening any entry.
 - `scripts/`:

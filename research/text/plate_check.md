@@ -271,7 +271,7 @@ One reader read crops from every lighting of the relevant frames ([first pass](.
 | III 8, III 11–13 (13, 14) | Corroded; undecidable (III 13 start ת-like, non-blind, one lighting). |
 | V 1–9 (21–23) | V 1 link word and V 3 depth on lost metal; V 8/9 division illegible. Undecidable. |
 | IX 7 (40) | Closed ם, at most one vertical before it, no ד/ר stroke: leans to ים; דרום not excluded. |
-| IX 10 (41) | The round-2 "extra vertical" is very probably IX 11's ל ascender (WSRP CT16 and Milik pl. LXIV). ב/מ undecidable. CT17 (30 Oct, [note](../sources/books_usc_2026-10-30/ix10_left_ct17_2026-10-30.md)): the line ends in ב (probable), no ם, so the engraved ending is …רב (Puech's מנחה רב); the word division stays open. |
+| IX 10 (41) | The round-2 "extra vertical" is very probably IX 11's ל ascender (WSRP CT16 and Milik pl. LXIV). ב/מ undecidable. CT17 (30 Oct, [note](../sources/books_usc_2026-10-30/ix10_left_ct17_2026-10-30.md)): the line ends in ב (probable), no ם, so the engraved ending is …רב (Puech's מנחה רב); the word division stays open. CT16 left edge ([note](../sources/books_usc_2026-10-30/ix10_left_ct16_2026-10-30.md)): ח/ה then a ר-type letter cut by the edge; the flange is illegible; still open. |
 | X 15–16 (49) | Undecidable. |
 
 No rating changes. The notes are in `text/readings.json` (e4, e7, e12, e13, e21, e23, e40, e41) and in the P53 row of the [table](../../tables/plate_check.csv).
