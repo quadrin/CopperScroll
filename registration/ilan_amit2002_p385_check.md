@@ -57,3 +57,7 @@ p. 385 was read from the owner's NLI photo ([record](../research/sources/nli_pho
 - **Low dam (EVIDENCE).** "At its last turn, a wall serving as a kind of low dam was built attached to the aqueduct, evidently in order to catch run-off which descended from the slopes of the scarp and divert it into the aqueduct." It is at no. 19, by the settlement. It is not tied to an "earlier channel" or to no. 16.
 - **Iron Age (EVIDENCE).** "The first system may belong to the Iron Age fortress (8th-7th c. B.C.)": a possibility for a first system, not a date for the aqueduct seen today.
 - The chapter's last page is 386 and its figures are Figs. 1–8, as inferred above.
+
+## Re-read — 30 October 2026
+
+p. 385 was read again from a second copy (interlibrary loan, owner's photo IMG_2478; [record](../research/sources/books_usc_2026-10-30/aqueducts_qumran_pp380_386_2026-10-30.md)). Both points above are **confirmed**. One precision: the wall sentence itself does not print "no. 19"; the place comes from the preceding sentence (the last turns, "fig. 1 no. 19") and from the wall stroke drawn on Fig. 1. "At no. 19" is therefore a strong inference, not printed text.
