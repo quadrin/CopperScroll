@@ -1,0 +1,133 @@
+{
+  "generated_utc": "2026-10-30T22:31:38+00:00",
+  "token_source": "https://discover.iaa.org.il/api/config/gis.js",
+  "radius_m": 3000,
+  "places_file": "places.csv",
+  "places_total": 37,
+  "places_located": 34,
+  "layers": {
+    "CaveAtlas": {
+      "service": "CaveAtlas",
+      "layer": 0,
+      "name": "CaveAtlas",
+      "geometryType": "esriGeometryPoint",
+      "fields": [
+        "OBJECTID",
+        "מערה",
+        "X",
+        "Y",
+        "רום",
+        "נחפר",
+        "מקור",
+        "GlobalID"
+      ],
+      "spatialReference": {
+        "wkid": 2039,
+        "latestWkid": 2039
+      },
+      "count": 151
+    },
+    "MegilaSurveyPoints": {
+      "service": "MegilaSurveyPoints",
+      "layer": 0,
+      "name": "MegilaSurveyPoints",
+      "geometryType": "esriGeometryPoint",
+      "fields": [
+        "FID",
+        "מערה",
+        "Y",
+        "X",
+        "סוג_ה",
+        "חפירה",
+        "Field6"
+      ],
+      "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+      },
+      "count": 83
+    },
+    "SURVEY_MAPS_SITE_POINTS_PUBLIC": {
+      "service": "SURVEY_MAPS_SITE_POINTS_PUBLIC",
+      "layer": 0,
+      "name": "SURVEY_MAPS_SITE_POINTS_PUBLIC",
+      "geometryType": "esriGeometryPoint",
+      "fields": [
+        "OBJECTID",
+        "EXT_ID",
+        "SITE_NUM",
+        "FIELD_NUM",
+        "MAP_ID",
+        "NAME_HEB",
+        "NAME_EN",
+        "ADDITIONAL_NAME_HEB",
+        "ADDITIONAL_NAME_EN",
+        "GIS_X",
+        "GIS_Y",
+        "GIS_H",
+        "XY_KIND_ID",
+        "X_OLD",
+        "Y_OLD",
+        "X_NEW",
+        "Y_NEW",
+        "X_UTM",
+        "Y_UTM",
+        "X_WGS_84",
+        "Y_WGS_84",
+        "DESCRIPTION_HEB",
+        "DESCRIPTION_EN",
+        "BIBLIOGRAPHY_HEB",
+        "BIBLIOGRAPHY_EN",
+        "LASTUPDATED",
+        "ORIG_GLOBALID",
+        "GlobalID",
+        "ORIG_ID",
+        "PERIOD_HEB",
+        "PERIOD_EN",
+        "AUTHORS_HEB",
+        "AUTHORS_EN",
+        "REMAINS_HEB",
+        "REMAINS_EN"
+      ],
+      "spatialReference": {
+        "wkid": 2039,
+        "latestWkid": 2039
+      },
+      "count": 23312
+    },
+    "HACRAZOT_PUBLIC1": {
+      "service": "HACRAZOT_PUBLIC1",
+      "layer": 0,
+      "name": "HACRAZOT_PUBLIC",
+      "geometryType": "esriGeometryPolygon",
+      "fields": [
+        "objectid",
+        "globalid",
+        "atar_number",
+        "meh_id",
+        "mehoz_name",
+        "ata_shem",
+        "atar_heb_desc",
+        "atar_eng_desc",
+        "ata_last_pir",
+        "ata_pir_amud",
+        "globalid_1",
+        "Shape__Area",
+        "Shape__Length"
+      ],
+      "spatialReference": {
+        "wkid": 2039,
+        "latestWkid": 2039
+      },
+      "count": 31594
+    }
+  },
+  "outputs": {
+    "cave_atlas.csv": 151,
+    "megila_survey_points.csv": 83,
+    "asi_sites.csv": 1048,
+    "declared_sites.csv": 1491,
+    "declared_sites.geojson": 1491,
+    "place_coverage.csv": 37
+  }
+}

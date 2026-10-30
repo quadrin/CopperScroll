@@ -8,6 +8,13 @@
 
 15 October 2026 source follow-up: the atlas distinguishes Twin West, East and North, and documents substantial modern sediment removal in West. The Bar-Adon unit / atlas entrance crosswalk requires review before reusing the Twin compatibility result; Atlas North must not silently replace the earlier northern unit. Hamer2023 supplies an explicit A4-011 / Cave53 label, while the proposed XII/53 crosswalk and W2 phase remain separate questions. [Exact pages, lineage, states and acquisition target](../../feature_workbench/available_evidence_2026-10-13/cave_native_check.md#15-october-2026-intake-atlas-follow-up). The frozen results above are retained historically.
 
+**30 October 2026: IAA cave atlas crosswalk** ([record](../../sources/iaa_gis_2026-10-30/README.md); exploratory, nothing applied).
+- The IAA CaveAtlas puts the Copper Scroll Cave 233 m from `DJD3:8` and Q1 257 m from `DJD3:14`, against the 30 m precision stated in this register.
+- The IAA Operation Scroll points confirm the ʿAtiqot 41 coordinates: 72 joins, median 2.6 m.
+- `A41:X/13` (504 m) and `A41:X/49` (10.0 km) disagree with the IAA points; this check does not show which source is wrong.
+- The atlas also has a point for de Vaux site 24, which has no row here.
+- The proposed row changes are listed in that record. No row here has been changed.
+
 ## Freeze record
 
 | Item | Value |
