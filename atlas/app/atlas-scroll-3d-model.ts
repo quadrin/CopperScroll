@@ -16,9 +16,6 @@ export const SEGMENT_COUNT = 23;
  */
 export const COLUMN_SEGMENTS: [number, number][] = [[1, 4], [5, 6], [7, 8], [9, 10], [10, 11], [11, 12], [13, 14], [15, 15], [16, 17], [17, 18], [19, 20], [21, 23]];
 
-/** Segments 19–23 (columns XI–XII) are reserved for a blind reading of XII 10. */
-export const HELD_SEGMENTS = [19, 20, 21, 22, 23];
-export const isHeldSegment = (segment: number) => HELD_SEGMENTS.includes(segment);
 
 export type StripBox = { segment: number; u0: number; u1: number; measured: boolean; columns: number[] };
 export type ColumnBox = { index: number; u0: number; u1: number };
@@ -92,15 +89,14 @@ export const LIGHT_NAMES: Record<string, string> = {
   FRS: "fragments", RFR: "fragments",
 };
 
-export type FrameName = { ok: true; segment: number; light: string; key: string } | { ok: false; reason: "held" | "unrecognised" };
+export type FrameName = { ok: true; segment: number; light: string; key: string } | { ok: false; reason: "unrecognised" };
 
-/** Read the segment and light from a name like DSS_3Q15_CT4_RB_T_q4.jpg. Held segments are refused. */
+/** Read the segment and light from a name like DSS_3Q15_CT4_RB_T_q4.jpg. */
 export function parseFrameName(name: string): FrameName {
   const m = name.match(/(?:^|[^A-Za-z0-9])CT[ _-]?0*(\d{1,2})[ _-]+([A-Z]{2,3})(?=[^A-Za-z]|$)/i);
   if (!m) return { ok: false, reason: "unrecognised" };
   const segment = +m[1];
   if (segment < 1 || segment > SEGMENT_COUNT) return { ok: false, reason: "unrecognised" };
-  if (isHeldSegment(segment)) return { ok: false, reason: "held" };
   const light = m[2].toUpperCase();
   return { ok: true, segment, light, key: `CT${segment}_${light}` };
 }
