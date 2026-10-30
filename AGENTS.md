@@ -52,7 +52,7 @@ Earlier “not pushed” or local-only notes describe delivery history, not a bl
 
 ## Source continuity and archive
 
-The owner's Google Drive sources are indexed in [drive_index.md](research/sources/drive_index.md) and [drive_manifest.csv](research/sources/drive_manifest.csv). Check the relevant existing evidence/access record before searching. Use a supplied folder or exact source reference when available.
+The owner's sources are routed through [drive_index.md](research/sources/drive_index.md), which links the current Drive inventory. The checked-in CSV is a historical snapshot; consult the live index or supplied folder before calling a later source missing. [Methods and Challenge status](research/experimental_approaches/README.md) links the proposals to recorded results and their source folders. Check the relevant existing evidence/access record before searching.
 
 Retrieve the particular source or observation the selected question needs. Record what was inspected, with pages, figures, access limits and provenance. If access fails, report the source, the needed observation and the best stable retrieval route once, then stop that dependency or pursue an independent approach. Do not repeat failed searches without a changed access route.
 

@@ -17,6 +17,10 @@ The main site proposals remain conditional. The review rates Qumran's upper aque
 
 **30 September source follow-up (historical):** [Hyrcania plan registration, Christmas Cave object provenance and Salvadora contexts](research/sites/cave_plan_followup_2026-09-30.md). Includes a failed precise-registration check, a conditional pool-dimension test, museum/lab identifier joins and the located arrowhead crack.
 
+## Methods, Challenge and source collection
+
+The [methods and Challenge record](research/experimental_approaches/README.md) connects the twelve proposals to completed tests, current limitations and Drive evidence. The [Drive integration note](research/sources/drive_integration_2026-10-30.md) links the updated private dossier, four-page Challenge brief, source folders and live inventory. Method numbers and historical outreach sequences are not a work queue.
+
 ## Repository map
 
 | Folder | Contents |

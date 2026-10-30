@@ -4,6 +4,8 @@ Start with [the current research direction](ACTIVE_TEST.md) and [AGENTS.md](../A
 
 Read the [current site review](sites/site_identification_review.md) for the latest site-level assessment, then use the reports below for the evidence, competing readings, and unresolved tests. A site's confidence does not identify a particular cave, cistern, pool, or deposit. The [findings log](logs/findings_log.md) preserves dated revisions; [open questions](logs/open_questions.md) preserves the remaining work.
 
+The [methods and Challenge status](experimental_approaches/README.md) and [Drive integration](sources/drive_integration_2026-10-30.md) connect the proposals, test results and source files. Consult them before presenting an existing method as untried.
+
 ## Foundation: five phases
 
 | Report | Question |

@@ -22,6 +22,8 @@ The recent [source integration](sources/books_usc_2026-10-30/README.md) records 
 
 These are starting evidence for a chosen question. None is a new task list. Claim-specific standards and reopening conditions still apply; [formal outcomes](PROGRESS_METRICS.md) have their existing scope.
 
+The [methods and Challenge record](experimental_approaches/README.md) reconciles all twelve proposals with recorded tests and the current private documents. The [Drive integration](sources/drive_integration_2026-10-30.md) links the reorganized sources and refreshed inventory. Neither creates a standing research priority.
+
 ## Continuity without automatic work
 
 The complete preceding state, named dependencies, closed results, requests and exposure notes are preserved verbatim in [the pre-reset snapshot](ACTIVE_TEST_before_reset_2026-10-30.md). Earlier revisions remain in [the history](logs/active_test_history_2026-10-07.md). Consult only the part needed for the chosen question.
