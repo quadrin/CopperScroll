@@ -1,0 +1,23 @@
+# Books and USC images, 29–30 October 2026
+
+Exploratory records made from the owner's photographs of library books and from the USC/WSRP 1988 scans. Each note says what was read, with pages, figures and photo file names, and marks EVIDENCE, INFERENCE and PROPOSAL. Items marked **EXPOSED** are held-area material used because it carries measurements (owner's rule of 25 October); they cannot serve as unseen evidence. The integrator's application of the proposals is recorded in the findings log entry of 30 October 2026.
+
+**Publication limits.** No book page photograph, scan or figure and no WSRP image, crop, preview or annotated figure is in this repository. The books are in copyright: the notes paraphrase and cite, with quotations under 15 words. The WSRP frames are cited by file name ("WSRP 1988, private study copy"); the owner undertook to USC that the images would not be published. Columns XI–XII (CT19–CT23) were hashed only and never viewed, and no XI–XII reading is recorded here. Working files named in the notes as "session workspace" are not retained.
+
+| File | Source | Main point |
+|---|---|---|
+| [gerizim_jsp8_entry57_2026-10-29.md](gerizim_jsp8_entry57_2026-10-29.md) | Magen 2008, JSP 8 | Entry 57: later use of summit staircases and cisterns is Late Roman or Byzantine only; nothing in the window. Q47 closes. |
+| [bethhoron_entry40_2026-10-30.md](bethhoron_entry40_2026-10-30.md) | Finkelstein & Magen 1993 (Benjamin), Kochavi 1972 (Kallai) | Entry 40: no Beth-Horon tomb drawing in either survey; the two HA locators are explained (HA 31/32 p. 13 = site 22 dyeing installation; HA 85 p. 31 = Eitam's preliminary notice). |
+| [kochavi_stage2_kallai_2026-10-29.md](kochavi_stage2_kallai_2026-10-29.md) (+ [units csv](kochavi_stage2_kallai_units_2026-10-29.csv)) | Kallai 1972, pp. 164–189 | Koḥlit rarity Stage 2, Kallai as source 2: no count changes (k = 0, f = 20, m = 313 of N = 333). |
+| [tir_langford_zayin_2026-10-29.md](tir_langford_zayin_2026-10-29.md) | TIR Iudaea–Palaestina (1994/1998); Langford et al. 2021 | TIR page index; p. 197 was already read on 6 Oct; p. 93 cross-reference rejects Achor = Buqeiʿa (editors' judgement). Langford: no geophysics (S35 stays unknown). |
+| [aqueducts_hyrcania_2026-10-30.md](aqueducts_hyrcania_2026-10-30.md) | Patrich, *Aqueducts of Israel* (2002) pp. 336–352, p. 17 | Hyrcania re-read from a second copy; one correction (pt 38); Ilan & Amit pp. 380–385 not photographed. |
+| [aqueducts_other_chapters_sweep_2026-10-30.md](aqueducts_other_chapters_sweep_2026-10-30.md) | *Aqueducts of Israel* (2002), other chapters | Doq Fig. 2 legend "Siege wall" (EXPOSED); Chariton's large reservoir is wadi-fed (Byzantine); Jerusalem aqueduct dating. |
+| [irshai_n36_2026-10-30.md](irshai_n36_2026-10-30.md) | Irshai 2002, p. 74 n. 36 (screened read) | Cites 3Q15 V 1–9 and ties it to the Hasmonean Low-level (Etam) aqueduct; column V only. |
+| [held_asi1_deirhajleh_2026-10-30.md](held_asi1_deirhajleh_2026-10-30.md) | Bar-Adon 1972 (ASI 1); Peleg 2009 (JSP 9, Deir Hajleh) | Held-area screen; new two-opening cave controls for entry 25; Sheikh Dhiab link stays open. |
+| [held_benjamin_parts4_5_2026-10-30.md](held_benjamin_parts4_5_2026-10-30.md) (+ [frozen location list](held_benjamin_parts4_5_locations_frozen_2026-10-30.csv), [corrected list](held_benjamin_parts4_5_locations_2026-10-30.csv)) | Benjamin survey Parts IV–V | Site-by-site held register (frozen list sha256 `b7fd66cf…d853`); measured held items EXPOSED. |
+| [jsp9_sweep_2026-10-30.md](jsp9_sweep_2026-10-30.md) | JSP 9 (2009) | Comparanda and controls only; ʿEin Samieh EXPOSED for the ʿEin Samiya and Kh. el-Marjama models. |
+| [jsp10_sweep_2026-10-30.md](jsp10_sweep_2026-10-30.md) | JSP 10 (2009) | Kh. el-Khamis columbarium disused in the Hellenistic period; Wadi Ekteif graves (entry 24) primary report. |
+| [asi1_judah_golan_sweep_2026-10-30.md](asi1_judah_golan_sweep_2026-10-30.md) | Kochavi 1972, Judah and Golan chapters | Kochavi puts Netophah at Kh. Bad Faluḥ (pp. 28, 44). |
+| [benjamin_parts1_3_sweep_2026-10-30.md](benjamin_parts1_3_sweep_2026-10-30.md) | Benjamin survey Parts 1–3 | New pp. 180–181; Koḥlit chain records read; Kafr Nata decision left to the owner. |
+| [wsrp_usc_plan_2026-10-29.md](wsrp_usc_plan_2026-10-29.md) | USC/WSRP 1988 scans (metadata) | What arrived (93 TIFFs, cuts 2–8, 10, 11, 16–23); segments 1, 9, 12–15 not sent. |
+| [wsrp_letters_2026-10-30.md](wsrp_letters_2026-10-30.md), [wsrp_followups_2026-10-30.md](wsrp_followups_2026-10-30.md) | WSRP 1988, private study copy | Exploratory, image-checked readings: II 4 Θ supported; I 12 undecidable (earlier "probable" downgraded); IX 7 leans ים; IX 10 "extra vertical" = IX 11 ל ascender (probable); others undecidable. |
