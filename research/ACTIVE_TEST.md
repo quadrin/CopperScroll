@@ -2,7 +2,7 @@
 
 Updated 30 October 2026 UTC. Rules: [AGENTS.md](../AGENTS.md). Outcome counts: [PROGRESS_METRICS.md](PROGRESS_METRICS.md). The full earlier text of this page is in [the history file](logs/active_test_history_2026-10-07.md). Cap: 60 lines.
 
-Last session (30 October 2026, atlas): **not obtained** (no new evidence sought) — the 3D scroll view and the access-controlled photo atlas went live; on the owner's decision every image of segments 19–23 was released to it, so the XII 10 images are exposed ([record](sources/books_usc_2026-10-30/xii_images_released_2026-10-30.md)). Earlier 29–30 October: [history](logs/active_test_history_2026-10-07.md).
+Last session (30 October 2026, atlas): **not obtained** (no new evidence sought) — the 3D scroll view and the access-controlled photo atlas went live; on the owner's decision every image of segments 19–23 was released to it, so the XII 10 images are exposed ([record](sources/books_usc_2026-10-30/xii_images_released_2026-10-30.md)). Earlier 29–30 October: [history](logs/active_test_history_2026-10-07.md). Also 30 October: WSRP CT16 leaves the IX 10 word division open; a blind coder B confirms the S2629 coding (rarity headline unchanged); SBF Collectio Maior 36 (1990) changes no level ([findings log](logs/findings_log.md)).
 
 ## Active questions and the observation that decides each
 
