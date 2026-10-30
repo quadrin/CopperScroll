@@ -256,3 +256,22 @@ Nine lines named in the ratings' `decisive_next` fields: I 12, II 3, III 1, III 
 - **Evidence.** Both readers describe the VII 14 letter the same way: a flat base flush with the right vertical, with a square corner. The question's criterion (whether the base projects) does not separate כ from ב in this hand. Neither reader sees a ז in the word; the word runs into a crack.
 - **Evidence.** For VIII 13, both readers count about four unit strokes, not six or seven, and both report damage that could hide strokes. Under the frozen count rule this decides nothing.
 - **Effect.** No rating changes. Entry 32's `decisive_next` now points to higher-resolution images (the WSRP 1988 masters). Rounds 1, 3 and 4 show that these plates do not settle VII 14, the sums or the cups.
+
+## WSRP 1988 colour scans: first exploratory reading (29–30 October 2026)
+
+The owner received 93 of the 1988 WSRP colour drum scans (cuts 2–8, 10, 11 and 16–23, recto) as a private study copy from USC/WSRP. They are not published here: no image, crop or figure from them is in the repository, and frames are cited by file name ([what arrived](../sources/books_usc_2026-10-30/wsrp_usc_plan_2026-10-29.md)). Cuts 19–23 (columns XI–XII) were hashed only and never viewed. Cuts 1, 9 and 12–15 were not sent, so entries 32 (VII 14–15) and 37 (VIII 14) have no image.
+
+One reader read crops from every lighting of the relevant frames ([first pass](../sources/books_usc_2026-10-30/wsrp_letters_2026-10-30.md), [follow-ups](../sources/books_usc_2026-10-30/wsrp_followups_2026-10-30.md)). The reader knew the competing readings beforehand, so **every result is exploratory**, not a frozen round: none counts as confirmation.
+
+| Line (entry) | Result (exploratory) |
+|---|---|
+| I 12 (4) | One closed box immediately before ק on CT3 (probable); the CT2 left edge is illegible, so a preceding נ/י is not excluded. **Undecidable** (the first pass's "probable מקרת" is withdrawn). |
+| II 3–4 (7) | Θ supported (closed ring with a bar, four lightings of CT6); fourth letter of the house word ה-like (possible); first and third letters undecidable. |
+| III 1 (12) | Gap is lost metal; edge letter ט-like (possible); restorations undecidable. |
+| III 8, III 11–13 (13, 14) | Corroded; undecidable (III 13 start ת-like, non-blind, one lighting). |
+| V 1–9 (21–23) | V 1 link word and V 3 depth on lost metal; V 8/9 division illegible. Undecidable. |
+| IX 7 (40) | Closed ם, at most one vertical before it, no ד/ר stroke: leans to ים; דרום not excluded. |
+| IX 10 (41) | The round-2 "extra vertical" is very probably IX 11's ל ascender (WSRP CT16 and Milik pl. LXIV). ב/מ undecidable. |
+| X 15–16 (49) | Undecidable. |
+
+No rating changes. The notes are in `text/readings.json` (e4, e7, e12, e13, e21, e23, e40, e41) and in the P53 row of the [table](../../tables/plate_check.csv).
