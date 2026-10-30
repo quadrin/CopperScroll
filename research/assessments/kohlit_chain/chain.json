@@ -480,11 +480,11 @@
    "id": "REC-KALLAI-1972",
    "title": "Kallai, survey chapter in Kochavi (ed.) 1972",
    "citation": "pp. 153–196; sites 28, 38, 65–66, 100, 115, 119, 130, 152; target pp. 172–173 with plan and captions",
-   "inspection": "not_inspected",
-   "access": "library",
+   "inspection": "partly_inspected",
+   "access": "inspected",
    "pending_request": null,
    "repo_path": "research/agent_review_2026-10-07/followup/B_kh_el_marjama.md",
-   "note": "NLI record returned 403; CMHL route not accessible. Hebrew, library only."
+   "note": "NLI record returned 403; CMHL route not accessible. Hebrew, library only. 30 Oct 2026: pp. 164–189 read from the owner's photographs for the Koḥlit Stage 2 coding (sites 9–157 in that range; site 152 on p. 187 not opened); pp. 153–163 and 190–195 not opened. Exploratory for every link that names it (research/sources/books_usc_2026-10-30/kochavi_stage2_kallai_2026-10-29.md)."
   },
   {
    "id": "REC-ZOHAR-HA76",
@@ -599,9 +599,10 @@
    "id": "REC-BAR-ADON-1972",
    "title": "Bar-Adon, survey chapter in Kochavi (ed.) 1972",
    "citation": "pp. 92–149; sites 5, 13, 61, 98c",
-   "inspection": "not_inspected",
-   "access": "library",
-   "pending_request": null
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "note": "29–30 Oct 2026: pp. 90–151 seen in full in a held-area screen; held sites' measured items are EXPOSED, and all their unmeasured text counts as seen by that agent. Exploratory and spent for every link that names it (research/sources/books_usc_2026-10-30/held_asi1_deirhajleh_2026-10-30.md)."
   },
   {
    "id": "REC-DINUR-FEIG-1993",
@@ -615,9 +616,10 @@
    "id": "REC-FELDSTEIN-1993",
    "title": "Feldstein et al. 1993, Benjamin survey",
    "citation": "sites 210, 212, 213, 231, 232, 234, 239, 240, 241, 245",
-   "inspection": "not_inspected",
-   "access": "library",
-   "pending_request": null
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "note": "Parts 1–3 were read in the 12 Oct full read (research/sources/full_reads_2026-10-12/benjamin1993/), except pp. 180–181. 30 Oct 2026: sites 210, 212, 213 (pp. 180–181, new to the repo), 231, 234, 239 and 240 re-read from the owner's photographs. Exploratory for every link that names it (research/sources/books_usc_2026-10-30/benjamin_parts1_3_sweep_2026-10-30.md §§2–4)."
   },
   {
    "id": "REC-GOPHNA-PORAT-1972",
@@ -775,6 +777,16 @@
    "pending_request": null,
    "repo_path": "research/regional/mandate_maps/README.md",
    "note": "Checked under registration_protocol.md on 10 October 2026 (registrations/POM-aerial1940s-z16-jericho.*). The layer stops at zoom 16 (2.03 m pixels); the effective resolution outside the zone is 9.2 m, so the resolvability gate (0.5 m) failed. The zone was never viewed and stays unexposed. The registration is invalid (two identifiable controls). It cannot test SULTAN-1."
+  },
+  {
+   "id": "REC-JSP9-YANUN",
+   "title": "JSP 9 (2009), Kh. Yannun / Itamar East excavation reports",
+   "citation": "Hebrew pp. 78–97, English pp. 32*–35*; plastered pit 38-7 about 5 m from burial cave 38-2 (pp. 93–94)",
+   "inspection": "already_inspected",
+   "access": "inspected",
+   "pending_request": null,
+   "repo_path": "research/first_tests_2026-10-30/janoah/janoah_blind_score_result_2026-10-30.md",
+   "note": "Read for the Janoaḥ place-first test (30 Oct 2026). The excavation area lies about 650 m from Yanun village and 1,150 m from Kh. Yanun on rounded grids, outside the frozen 500 m zone."
   }
  ],
  "models": [
@@ -1318,7 +1330,10 @@
      ]
     }
    ],
-   "excluded_links": []
+   "excluded_links": [],
+   "notes": [
+    "30 Oct 2026: the JSP 9 Kh. ʿEin Samieh report (pp. 170–179, 39*) was read in full and is EXPOSED for this model; it reports no pool, pit or window-period remains, and the springs lie NW of Kh. Samiya (research/sources/books_usc_2026-10-30/jsp9_sweep_2026-10-30.md §2.4). The Benjamin survey site 231 Kh. Marjama is a different site, about 15 km SSW."
+   ]
   },
   {
    "id": "M-QUMRAN",
@@ -1654,7 +1669,8 @@
      "reading_dependencies": [
       "D-E60-BURIED",
       "D-E60-SECOND-WORD"
-     ]
+     ],
+     "notes": "29–30 Oct 2026: Bar-Adon site 5 (p. 103) read: no graves or tombs mentioned; not an absence statement. No change; Tsafrir and Magen 1984 remains unread."
     },
     {
      "id": "SARTABA-2-pit-date",
@@ -1801,10 +1817,14 @@
      "reading_dependencies": [
       "D-E60-SECOND-WORD",
       "D-E60-BURIED"
-     ]
+     ],
+     "notes": "30 Oct 2026: the Janoaḥ place-first test is closed as not identifiable from available evidence (exploratory; blinding failed): the target scored SILENT-IN-ZONE. JSP 9's plastered pit 38-7 lies about 5 m from burial cave 38-2 (late Hellenistic, in use in the 1st c. CE) but about 650 m from Yanun village, outside the frozen 500 m zone; moving the zone now would be a new exploratory model. Reopen only for an exact grid of the JSP 9 excavation area or a field record of the zone (research/first_tests_2026-10-30/README.md)."
     }
    ],
-   "excluded_links": []
+   "excluded_links": [],
+   "notes": [
+    "30 Oct 2026: place-first test closed, not identifiable from available evidence (exploratory; blinding failed). The reading gate JANOAH-0 is unchanged."
+   ]
   },
   {
    "id": "M-S1667",
@@ -1980,7 +2000,8 @@
    ],
    "excluded_links": [],
    "notes": [
-    "Its C2 pit is the 'pit with EB pottery' on the Marjama tell row (S1658), 412 m at 346°. The two ʿEin Samiya anchors interlock."
+    "Its C2 pit is the 'pit with EB pottery' on the Marjama tell row (S1658), 412 m at 346°. The two ʿEin Samiya anchors interlock.",
+    "30 Oct 2026: the JSP 9 Kh. ʿEin Samieh report (pp. 170–179, 39*) was read in full and is EXPOSED for this model; it reports no pool, pit or window-period remains, and the springs lie NW of Kh. Samiya (research/sources/books_usc_2026-10-30/jsp9_sweep_2026-10-30.md §2.4). The Benjamin survey site 231 Kh. Marjama is a different site, about 15 km SSW."
    ]
   },
   {
@@ -2122,7 +2143,8 @@
      "reading_dependencies": [
       "D-E60-BURIED",
       "D-E60-SECOND-WORD"
-     ]
+     ],
+     "notes": "29–30 Oct 2026: Bar-Adon site 13 (p. 105) read in the held-area screen: an Arab cemetery on the tell, a large building at the SW foot and water channels; no graves north of the tell and none at a pit mouth are described, and there is no absence statement. The link stays open; this reading is exploratory and spent for it. Zertal Vol. 4 site 194 remains unread."
     }
    ],
    "excluded_links": []
@@ -2668,7 +2690,8 @@
      "priority": 1,
      "reading_dependencies": [
       "D-E11-EAST-SENSE"
-     ]
+     ],
+     "notes": "29–30 Oct 2026: Bar-Adon site 61 is held-area material; only its measured items were extracted (EXPOSED, context only). Not evaluated against this link."
     },
     {
      "id": "S2430-2-opening-facing",
@@ -2995,7 +3018,8 @@
      "reading_dependencies": [
       "D-E60-BURIED",
       "D-E60-SECOND-WORD"
-     ]
+     ],
+     "notes": "30 Oct 2026: Feldstein site 234 (p. 194) read: the only grave is Sheikh Duweir's tomb about 50 m east, not north; no completeness statement. Not success, no contradiction."
     }
    ],
    "excluded_links": [],
@@ -4323,7 +4347,8 @@
      "priority": 1,
      "reading_dependencies": [
       "D-E11-EAST-SENSE"
-     ]
+     ],
+     "notes": "30 Oct 2026: both named records read. Feldstein site 210 (p. 180) describes no pool and makes no absence statement; Kallai site 115 puts a 15 × 7 m pool at the hill foot on the north slope, not in the east sector. Neither can contradict under the absence-statement rule. Read, no decision; the link stays open."
     }
    ],
    "excluded_links": []
@@ -5019,7 +5044,8 @@
      "priority": 1,
      "reading_dependencies": [
       "D-E11-EAST-SENSE"
-     ]
+     ],
+     "notes": "29–30 Oct 2026: Bar-Adon site 98 (p. 122; not a held site) was read in the held-area screen; its summary names a settlement, walls and a fort but no pool, and gives no absence statement. Read, no decision; the link stays open."
     },
     {
      "id": "S3961-2-opening-facing",
@@ -5369,7 +5395,8 @@
      "priority": 1,
      "reading_dependencies": [
       "D-E11-EAST-SENSE"
-     ]
+     ],
+     "notes": "30 Oct 2026: Feldstein site 240 (p. 198) read: no pool, no absence statement. Read, no decision; the link stays open."
     },
     {
      "id": "S2096-2-mouth",
@@ -5391,7 +5418,8 @@
      "priority": 2,
      "reading_dependencies": [
       "D-E60-BURIED"
-     ]
+     ],
+     "notes": "30 Oct 2026: Feldstein site 239 (p. 198) read: the only tomb named is Sheikh ʿUmar's tomb, west of the site, with many cuttings beside it; no burial tomb is placed at a cistern or cave mouth. The record does not date the tomb, so the contradiction as worded is not strictly met. Whether an undated sheikh's tomb counts as 'a later shrine' is left to the owner (OPEN_QUESTIONS change history, 30 Oct 2026); until then the link stays open."
     }
    ],
    "excluded_links": []

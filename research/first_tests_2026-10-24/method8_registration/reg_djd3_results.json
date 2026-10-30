@@ -1,0 +1,51 @@
+{
+ "4": {
+  "cut": 4,
+  "frame": "UC15246882",
+  "best_plate": "pl49",
+  "rot": 0,
+  "scale": 1.25,
+  "inliers": 16,
+  "per_plate_max": {
+   "pl49": 16,
+   "pl51": 11,
+   "pl53": 7,
+   "pl55": 8,
+   "pl57": 10
+  },
+  "gateA": false
+ },
+ "5": {
+  "cut": 5,
+  "frame": "UC15245493",
+  "best_plate": "pl51",
+  "rot": 0,
+  "scale": 1.25,
+  "inliers": 13,
+  "per_plate_max": {
+   "pl49": 9,
+   "pl51": 13,
+   "pl53": 8,
+   "pl55": 10,
+   "pl57": 11
+  },
+  "gateA": false
+ },
+ "6": {
+  "cut": 6,
+  "frame": "UC15246329",
+  "best_plate": "pl49",
+  "rot": 2,
+  "scale": 1.25,
+  "inliers": 15,
+  "per_plate_max": {
+   "pl49": 15,
+   "pl51": 14,
+   "pl53": 9,
+   "pl55": 10,
+   "pl57": 10
+  },
+  "gateA": false
+ },
+ "decision": "STOP"
+}

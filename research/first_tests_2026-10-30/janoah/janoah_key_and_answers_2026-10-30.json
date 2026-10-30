@@ -1,0 +1,447 @@
+{
+ "controls": {
+  "test": "Janoah independent test (claude/janoah_independent_test_plan_2026-10-26.md) - controls",
+  "created_utc": "2026-10-30T01:12:41Z",
+  "targets": {
+   "Kh. Yanun": {
+    "highlands_no": "18-17/43/01",
+    "grid_oig": [
+     184250,
+     173850
+    ],
+    "size": "0.4 ha"
+   },
+   "Yanun village": {
+    "highlands_no": "18-17/32/01",
+    "grid_oig": [
+     183700,
+     172450
+    ],
+    "size": "not in repo"
+   }
+  },
+  "rule": "Universe: every Highlands of Many Cultures (Finkelstein, Lederman & Bunimovitz 1997) catalogue entry on map 18-17, as listed in research/sources/full_reads_2026-10-12/highlands1997/page_coverage.csv PDF 838-884 (printed 803-849). Eligible: a ruin (khirbeh, tell-khirbeh, or unnamed building-remains site); excluded by type before ranking: villages, cemeteries, burial caves, springs/reservoirs, single rujm, shrine, isolated terrace, and the two targets. Excluded: any ruin whose grid lies < 1000 m from either target grid. Rank by the smaller Euclidean OIG grid distance to either target; take the first four. Grid source: exact OIG point from research/rarity/kohlit/stage1a/stage1a_units.csv (WBADB rows citing Highlands pages) where present, else the 1-km cell centre implied by the site number (map-square digits). Ties (equal metres) broken by Highlands number ascending; no ties occur among ranks 1-5 (rank 4 = 2239 m, rank 5 = 2688 m). Selection uses no described feature.",
+  "size_criterion": "Plan requires 0.2-1 ha. The repo's Highlands extraction records area only for Kh. Yanun (0.4 ha); no area for any neighbour is in the repo, and the 92 MB Highlands PDF cannot be read here. Frozen deferred rule: area is taken from the first record opened in step 2 that states the site's area (Highlands catalogue metadata, else ASI 1 entry). A control with a stated area outside 0.2-1 ha is replaced by the next site on the frozen ranking (alternates below, in order); a control with no stated area is retained and flagged size_unverified. Replacement depends on area only, never on features.",
+  "controls": [
+   {
+    "rank": 1,
+    "highlands_no": "18-17/21/01",
+    "name": "Kh. el-Kurum",
+    "type": "khirbeh",
+    "grid_oig": [
+     182650,
+     171450
+    ],
+    "grid_quality": "exact",
+    "highlands_printed_page": 820,
+    "dist_m": {
+     "Kh. Yanun 18-17/43/01": 2884,
+     "Yanun village 18-17/32/01": 1450
+    },
+    "min_dist_m": 1450,
+    "size": "not in repo (size_unverified)"
+   },
+   {
+    "rank": 2,
+    "highlands_no": "18-17/40/01",
+    "name": "Kh. er-Risa",
+    "type": "khirbeh",
+    "grid_oig": [
+     184600,
+     170850
+    ],
+    "grid_quality": "exact",
+    "highlands_printed_page": 826,
+    "dist_m": {
+     "Kh. Yanun 18-17/43/01": 3020,
+     "Yanun village 18-17/32/01": 1836
+    },
+    "min_dist_m": 1836,
+    "size": "not in repo (size_unverified)"
+   },
+   {
+    "rank": 3,
+    "highlands_no": "18-17/51/01",
+    "name": "Kh. el-Jarayish",
+    "type": "khirbeh",
+    "grid_oig": [
+     185400,
+     171050
+    ],
+    "grid_quality": "exact",
+    "highlands_printed_page": 832,
+    "dist_m": {
+     "Kh. Yanun 18-17/43/01": 3027,
+     "Yanun village 18-17/32/01": 2202
+    },
+    "min_dist_m": 2202,
+    "size": "not in repo (size_unverified)"
+   },
+   {
+    "rank": 4,
+    "highlands_no": "18-17/55/01",
+    "name": "Kh. Tana el-Fauqa",
+    "type": "khirbeh",
+    "grid_oig": [
+     185150,
+     175900
+    ],
+    "grid_quality": "exact",
+    "highlands_printed_page": 836,
+    "dist_m": {
+     "Kh. Yanun 18-17/43/01": 2239,
+     "Yanun village 18-17/32/01": 3742
+    },
+    "min_dist_m": 2239,
+    "size": "not in repo (size_unverified)"
+   }
+  ],
+  "alternates_in_order": [
+   {
+    "rank": 5,
+    "highlands_no": "18-17/12/01",
+    "name": "Kh. Muwasi",
+    "min_dist_m": 2688,
+    "grid_quality": "exact"
+   },
+   {
+    "rank": 6,
+    "highlands_no": "18-17/00/02",
+    "name": "Kh. Nu'man",
+    "min_dist_m": 3132,
+    "grid_quality": "exact"
+   },
+   {
+    "rank": 7,
+    "highlands_no": "18-17/02/02",
+    "name": "unnamed",
+    "min_dist_m": 3200,
+    "grid_quality": "cell"
+   },
+   {
+    "rank": 8,
+    "highlands_no": "18-17/02/01",
+    "name": "Kh. el-Urma",
+    "min_dist_m": 3206,
+    "grid_quality": "exact"
+   },
+   {
+    "rank": 9,
+    "highlands_no": "18-17/73/01",
+    "name": "Kh. Tana et-Tahta",
+    "min_dist_m": 3207,
+    "grid_quality": "exact"
+   },
+   {
+    "rank": 10,
+    "highlands_no": "18-17/73/02",
+    "name": "unnamed",
+    "min_dist_m": 3269,
+    "grid_quality": "cell"
+   },
+   {
+    "rank": 11,
+    "highlands_no": "18-17/00/01",
+    "name": "Kh. Tartala",
+    "min_dist_m": 4072,
+    "grid_quality": "exact"
+   },
+   {
+    "rank": 12,
+    "highlands_no": "18-17/05/01",
+    "name": "Kh. esh-Sharariba",
+    "min_dist_m": 4097,
+    "grid_quality": "cell"
+   },
+   {
+    "rank": 13,
+    "highlands_no": "18-17/05/02",
+    "name": "unnamed",
+    "min_dist_m": 4097,
+    "grid_quality": "cell"
+   },
+   {
+    "rank": 14,
+    "highlands_no": "18-17/58/01",
+    "name": "Kh. Shuweiha",
+    "min_dist_m": 4815,
+    "grid_quality": "cell"
+   },
+   {
+    "rank": 15,
+    "highlands_no": "18-17/07/01",
+    "name": "Kh. Kafr Beita",
+    "min_dist_m": 5127,
+    "grid_quality": "exact"
+   },
+   {
+    "rank": 16,
+    "highlands_no": "18-17/19/01",
+    "name": "Kh. esh-Sheikh Nasrallah",
+    "min_dist_m": 6284,
+    "grid_quality": "cell"
+   }
+  ],
+  "excluded_within_1km": [
+   {
+    "highlands_no": "18-17/33/01",
+    "name": "Kh. Ghannam",
+    "min_dist_m": 900
+   },
+   {
+    "highlands_no": "18-17/33/02",
+    "name": "unnamed",
+    "min_dist_m": 820
+   },
+   {
+    "highlands_no": "18-17/44/01",
+    "name": "unnamed",
+    "min_dist_m": 610
+   }
+  ],
+  "excluded_by_type": [
+   {
+    "highlands_no": "18-17/01/01",
+    "name": "cemetery S of Jebel el-Urma",
+    "type": "cemetery"
+   },
+   {
+    "highlands_no": "18-17/15/01",
+    "name": "Beit Furik",
+    "type": "village"
+   },
+   {
+    "highlands_no": "18-17/19/02",
+    "name": "Salim",
+    "type": "village"
+   },
+   {
+    "highlands_no": "18-17/20/01",
+    "name": "Aqraba",
+    "type": "village"
+   },
+   {
+    "highlands_no": "18-17/32/01",
+    "name": "Yanun",
+    "type": "village (TARGET)"
+   },
+   {
+    "highlands_no": "18-17/42/01",
+    "name": "en-Nabi Nun",
+    "type": "shrine (sheikh tomb)"
+   },
+   {
+    "highlands_no": "18-17/43/01",
+    "name": "Kh. Yanun",
+    "type": "khirbeh (TARGET)"
+   },
+   {
+    "highlands_no": "18-17/54/01",
+    "name": "rujm",
+    "type": "single stone heap (rujm)"
+   },
+   {
+    "highlands_no": "18-17/57/01",
+    "name": "Beit Dajan",
+    "type": "village"
+   },
+   {
+    "highlands_no": "18-17/60/01",
+    "name": "unnamed",
+    "type": "isolated terrace (Chalcolithic scatter)"
+   },
+   {
+    "highlands_no": "18-17/73/03",
+    "name": "burial cave",
+    "type": "burial cave"
+   },
+   {
+    "highlands_no": "18-17/73/04",
+    "name": "el-Ein et-Tahta",
+    "type": "spring/reservoir"
+   }
+  ],
+  "prior_exposure_note": "Before this file, the integrator read repo summaries of Highlands entries for 18-17 (page_coverage.csv, observations.csv, stage1a_units.csv, followup C section B). These contain brief feature descriptions of several sites; selection is by distance only. No JSP 9, ASI 1, map sheet, Guerin or imagery opened before this file."
+ },
+ "key": {
+  "created_utc": "2026-10-30T01:35:44Z",
+  "assignment_method": "Python secrets.SystemRandom shuffle of [TARGET, Kurum, Risa, Jarayish, Tana el-Fauqa] onto U1-U5",
+  "codes": {
+   "U1": {
+    "site": "Kh. er-Risa",
+    "highlands_no": "18-17/40/01",
+    "role": "control rank 2"
+   },
+   "U2": {
+    "site": "Kh. Tana el-Fauqa",
+    "highlands_no": "18-17/55/01",
+    "role": "control rank 4"
+   },
+   "U3": {
+    "site": "Kh. el-Jarayish",
+    "highlands_no": "18-17/51/01",
+    "role": "control rank 3"
+   },
+   "U4": {
+    "site": "TARGET: Kh. Yanun (18-17/43/01, P-a) + Yanun village (18-17/32/01, P-b)",
+    "role": "target"
+   },
+   "U5": {
+    "site": "Kh. el-Kurum",
+    "highlands_no": "18-17/21/01",
+    "role": "control rank 1"
+   }
+  },
+  "controls_sha256": "ebdca1a32cfc508fdba4682f61679c72d5253c388d185f7a8511e50c5e5b2bf4"
+ },
+ "answers": {
+  "scorer_note": "Scored from packet text only (U1.md-U5.md). No other file, source or outside knowledge used. R1 states (p. 12) that isolated tombs, cisterns and caves were listed separately and not published, so R1 silence is treated as non-evidence; no unit qualifies as NEGATIVE.",
+  "units": {
+   "U1": {
+    "Q1": {
+     "answer": "cannot tell",
+     "evidence": "No cave, pit, cistern or tomb is mentioned (R1, p. 827); R4 'Traces of ruins.' only (p. 391); R2, R3 no entry."
+    },
+    "Q2": {
+     "answer": "cannot tell",
+     "distance": null,
+     "evidence": "No tomb or grave recorded in any record."
+    },
+    "Q3": {
+     "answer": "no",
+     "evidence": "R1 re-checked pottery Iron I(?), Iron I-II, Iron II; 'No Hellenistic or Roman entry.' (p. 827). No other dated record."
+    },
+    "Q4": {
+     "answer": "not say",
+     "distance": null,
+     "evidence": "No feature recorded."
+    },
+    "Q5": "not stated",
+    "Q6": {
+     "answer": "no",
+     "evidence": "R1 team did not visit and repeats an earlier fort description; isolated features unpublished; R4 identification by name only within a ~7 x 9 km square."
+    },
+    "label": "SILENT",
+    "confidence": "high",
+    "confidence_reason": "No record describes the zone at a scale that would show pits or tombs."
+   },
+   "U2": {
+    "Q1": {
+     "answer": "yes",
+     "evidence": "'Foundations, caves, cisterns, and rock-cut tombs.' (R4, vol. II p. 245)"
+    },
+    "Q2": {
+     "answer": "cannot tell",
+     "distance": null,
+     "evidence": "R4 lists cisterns and rock-cut tombs together but gives 'No count, dimensions, distances between features, or dates.' (p. 245). R1 sheikh's tomb is a shrine, not an ancient grave."
+    },
+    "Q3": {
+     "answer": "yes (site level only)",
+     "evidence": "R1 pottery figure includes Hellenistic and Roman profiles (pp. 836-839); R3 sherds include Roman (p. 167). Roman not subdivided; nothing dates the cisterns or tombs themselves."
+    },
+    "Q4": {
+     "answer": "not say",
+     "distance": null,
+     "evidence": "Features are listed in the ruin's own R4 entry, so presumably at the site, but no position or distance is given."
+    },
+    "Q5": "not stated",
+    "Q6": {
+     "answer": "partly",
+     "evidence": "R4 names the feature types at the ruin but gives no positions, counts or distances; R1 and R3 do not mention them."
+    },
+    "label": "PARTIAL",
+    "confidence": "medium",
+    "confidence_reason": "Opening (cisterns) and rock-cut tombs both recorded at the ruin, adjacency unknown; in-zone placement inferred from the entry, not stated."
+   },
+   "U3": {
+    "Q1": {
+     "answer": "cannot tell",
+     "evidence": "Only 'shepherd caves' (R1, pp. 832-834); 'No pit, cistern or tomb is mentioned'. R2, R3, R4 no entry."
+    },
+    "Q2": {
+     "answer": "cannot tell",
+     "distance": null,
+     "evidence": "No tomb or grave recorded."
+    },
+    "Q3": {
+     "answer": "no",
+     "evidence": "150 sherds, EB II-III, MB(?), Iron II; 'No Hellenistic or Roman pottery is reported.' (R1, pp. 832-834)"
+    },
+    "Q4": {
+     "answer": "not say",
+     "distance": null,
+     "evidence": "No pit feature recorded."
+    },
+    "Q5": "not stated",
+    "Q6": {
+     "answer": "no",
+     "evidence": "Only R1 summary, which excludes isolated tombs/cisterns/caves by design; no other record covers the unit."
+    },
+    "label": "SILENT",
+    "confidence": "high",
+    "confidence_reason": "Single catalogue summary that by its own statement omits the relevant feature class."
+   },
+   "U4": {
+    "Q1": {
+     "answer": "yes",
+     "evidence": "Installation 38-7: [paraphrase: a rock-cut rectangular pit, 2.50 x 1.80 m, about 2.00 m deep, open at the top, plaster-lined] (R2, pp. 93-94; abstract 35*). Also columbarium 37 (rock-cut, p. 89), winepress vats, bone pits inside tombs. R2 p. 80 also notes cisterns in an unpublished 1998 ridge survey (no positions)."
+    },
+    "Q2": {
+     "answer": "yes",
+     "distance": "about 5 m (38-7 lies about 5 m SW of burial cave 38-2)",
+     "evidence": "R2 pp. 93-94; columbarium 37 is about 35 m S of tomb cluster 39 (pp. 89, 94)."
+    },
+    "Q3": {
+     "answer": "yes",
+     "evidence": "Tomb 38-2 first cut in Phase I (late 2nd/early 1st c. BCE to Herod, late Hellenistic) and in use in Phase II (1st c. CE, Early Roman) per kokh pottery (pp. 81, 84-85, 94). Pit 38-7 itself is undated (only washed-in Roman sherds). Site level: P-a has Persian/Hellenistic 1, Roman 4 sherds (R1 pp. 828-831); R2 calls the area the hinterland of 'the Hellenistic and Roman settlement of this unit' (p. 94)."
+    },
+    "Q4": {
+     "answer": "outside",
+     "distance": "excavated area about 650 m from P-b and about 1,150 m from P-a (both beyond 500 m on rounded grids; footprint spans two spurs so larger than one point)",
+     "evidence": "R2 location statement. In-zone features: only R1's 'burial caves in its vicinity' at P-b (no count, distance or date, pp. 821-823); no in-zone opening recorded. A cistern site ~550 m from P-a (Iron I/I-II only, p. 831) is also outside. 1998 ridge-survey cisterns/burial caves have no positions."
+    },
+    "Q5": {
+     "answer": "yes",
+     "evidence": "Tomb 39-2 oriented south-north 'with its forecourt opening at the north end' (pp. 81-85). This is a tomb in cluster 39, not pit 38-7, and lies in the out-of-zone excavated area."
+    },
+    "Q6": {
+     "answer": "partly",
+     "evidence": "R2 records the excavated area at fine scale (metric dimensions, inter-feature distances), but that area is outside the zone; the zone itself is covered only by R1 summaries (isolated features unpublished) and R4 brief entries."
+    },
+    "label": "SILENT-IN-ZONE",
+    "confidence": "medium",
+    "confidence_reason": "A full pit + adjacent (5 m) Hellenistic/Early Roman tomb exists but ~650 m from P-b; footprint extent, grid rounding and unlocated 1998 survey features leave some chance part lies within 500 m."
+   },
+   "U5": {
+    "Q1": {
+     "answer": "cannot tell",
+     "evidence": "'No cave, pit, cistern or tomb is mentioned' (R1, pp. 820-821); R4 'Traces of ruins.' only (p. 394); R2, R3 same-name sites excluded."
+    },
+    "Q2": {
+     "answer": "cannot tell",
+     "distance": null,
+     "evidence": "No tomb or grave recorded."
+    },
+    "Q3": {
+     "answer": "yes (site level only)",
+     "evidence": "Rhodian stamped amphora handle; Hellenistic ~10%, Hellenistic-Roman ~8%, Roman ~15% of 39 sherds (R1, pp. 820-821)."
+    },
+    "Q4": {
+     "answer": "not say",
+     "distance": null,
+     "evidence": "No pit feature recorded."
+    },
+    "Q5": "not stated",
+    "Q6": {
+     "answer": "no",
+     "evidence": "Completely demolished ruin known only from an R1 summary (isolated features unpublished) and R4 'Traces of ruins.'"
+    },
+    "label": "SILENT",
+    "confidence": "high",
+    "confidence_reason": "Period evidence exists but no record describes the zone at feature scale."
+   }
+  }
+ },
+ "answers_sha256": "d003ae982e407bc26fce14d2ce964ac3e7a797c467336a26e853e774ba2800eb",
+ "_repo_note": "Copied from the Claude project record of 30 Oct 2026. One quotation of JSP 9 (pp. 93-94) in answers.units.U4.Q1 was replaced by a paraphrase to keep book quotations under 15 words; nothing else was changed. answers_sha256 is the hash of the scorer's answers.json as locked, not of this file. The coded packets (U1-U5) and the plan of 26 Oct are not in the repository."
+}

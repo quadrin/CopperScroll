@@ -17,22 +17,22 @@ Order: tier, then contradiction strength (two-sided, absence statement only, one
 | 9 | unnamed WBADB unit S2849 | `S2849-2-mouth` | R-E60-TOMBS-AT-MOUTH | 1 | absence-statement only | IAA notices on Kh. ʿAlmit; Dinur and Feig 1993, Benjamin survey | no |
 | 10 | Janoaḥ route (entry 60 reading שבינח) | `JANOAH-0-reading-gate` | reading gate | 2 | two-sided | An image of XII 10 at the 21/22 cut | yes |
 | 11 | Tell es-Sultan (old Jericho) | `SULTAN-1-precamp-mouth` | R-E60-TOMBS-AT-MOUTH | 2 | one-sided | Garstang Museum, Liverpool: Jericho papers; Palestine Exploration Fund archive; Sapienza Jericho expedition records (L. Nigro); BayHStA BS Pal. 1032 (22 June 1918); RAF verticals 1944–48, north of Tell es-Sultan; RAF aerial mosaic 1940s (georeferenced by S. Holtzman), Palestine Open Maps layer; Survey of Palestine 1:20,000 sheet 19-14 (1940s), Palestine Open Maps tiles | yes |
-| 12 | Kh. el-Marjama at ʿEin Samiya | `MARJAMA-1-kallai-pool` | R-E11-POOL-EAST, R-E11-POOL-PERIOD | 3 | two-sided | Kallai, survey chapter in Kochavi (ed.) 1972 | no |
-| 13 | Kh. Samiyye (ʿEin Samiya) | `S1667-1-pool-east` | R-E11-POOL-EAST | 3 | two-sided | RAF verticals 1945, ʿEin Samiya; Kallai, survey chapter in Kochavi (ed.) 1972 | no |
-| 14 | Qarn Sarṭaba (Alexandrium) | `SARTABA-2-pit-date` | R-E60-PIT-PERIOD | 3 | two-sided | Tsafrir and Magen 1984, Sartaba–Alexandrium excavation report | no |
-| 15 | Qarawet et-Tahta | `S1137-2-mouth` | R-E60-TOMBS-AT-MOUTH, R-E60-JOINT-ACCESS | 3 | two-sided | Gophna and Porat, survey chapter in Kochavi (ed.) 1972 | no |
-| 16 | unnamed WBADB unit S2096 | `S2096-2-mouth` | R-E60-TOMBS-AT-MOUTH, R-E60-JOINT-ACCESS | 3 | two-sided | Feldstein et al. 1993, Benjamin survey; Kallai, survey chapter in Kochavi (ed.) 1972 | no |
-| 17 | el-Muntar | `S3137-1-graves-north` | R-E60-GRAVES-N-SECTOR, R-E60-TOMBS-AT-MOUTH | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey | no |
-| 18 | Naḥal Mikhmas | `E357-1-graves-north` | R-E60-GRAVES-N-SECTOR, R-E60-TOMBS-AT-MOUTH | 3 | absence-statement only | Patrich and Rubin 1983; Kallai, survey chapter in Kochavi (ed.) 1972; Feldstein et al. 1993, Benjamin survey | no |
-| 19 | Tell Qa'un | `S206-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Ben-Yosef 2007; Bar 2008 surveys | no |
-| 20 | Kh. es-Saleh | `S845-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Gophna and Porat, survey chapter in Kochavi (ed.) 1972; Ben-Yosef 2007; Bar 2008 surveys | no |
-| 21 | Kh. Sara C | `S1502-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Sion 2001 survey | no |
-| 22 | Kh. el-Khudriya | `S1929-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Finkelstein 1993 survey | no |
-| 23 | Tell Maryam | `S2376-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Kallai, survey chapter in Kochavi (ed.) 1972; Feldstein et al. 1993, Benjamin survey | no |
-| 24 | Kh. esh-Sheikh 'Antar | `S3036-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey | no |
-| 25 | Ras el-'Eizariya | `S3419-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey; Peleg 2009i | no |
-| 26 | Kh. edh-Dhra' | `S843-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Ben-Yosef 2007; Bar 2008 surveys | no |
-| 27 | unnamed WBADB unit S2594 | `S2594-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey | no |
-| 28 | unnamed WBADB unit S3072 | `S3072-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey | no |
+| 12 | Qarn Sarṭaba (Alexandrium) | `SARTABA-2-pit-date` | R-E60-PIT-PERIOD | 3 | two-sided | Tsafrir and Magen 1984, Sartaba–Alexandrium excavation report | no |
+| 13 | Qarawet et-Tahta | `S1137-2-mouth` | R-E60-TOMBS-AT-MOUTH, R-E60-JOINT-ACCESS | 3 | two-sided | Gophna and Porat, survey chapter in Kochavi (ed.) 1972 | no |
+| 14 | el-Muntar | `S3137-1-graves-north` | R-E60-GRAVES-N-SECTOR, R-E60-TOMBS-AT-MOUTH | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey | no |
+| 15 | Naḥal Mikhmas | `E357-1-graves-north` | R-E60-GRAVES-N-SECTOR, R-E60-TOMBS-AT-MOUTH | 3 | absence-statement only | Patrich and Rubin 1983; Kallai, survey chapter in Kochavi (ed.) 1972; Feldstein et al. 1993, Benjamin survey | no |
+| 16 | Tell Qa'un | `S206-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Ben-Yosef 2007; Bar 2008 surveys | no |
+| 17 | Kh. es-Saleh | `S845-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Gophna and Porat, survey chapter in Kochavi (ed.) 1972; Ben-Yosef 2007; Bar 2008 surveys | no |
+| 18 | Kh. Sara C | `S1502-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Sion 2001 survey | no |
+| 19 | Kh. el-Khudriya | `S1929-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Finkelstein 1993 survey | no |
+| 20 | Kh. esh-Sheikh 'Antar | `S3036-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey | no |
+| 21 | Ras el-'Eizariya | `S3419-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey; Peleg 2009i | no |
+| 22 | Kh. edh-Dhra' | `S843-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Ben-Yosef 2007; Bar 2008 surveys | no |
+| 23 | unnamed WBADB unit S2594 | `S2594-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey | no |
+| 24 | unnamed WBADB unit S3072 | `S3072-1-pool-east` | R-E11-POOL-EAST | 3 | absence-statement only | Dinur and Feig 1993, Benjamin survey | no |
+| 25 | Kh. Samiyye (ʿEin Samiya) | `S1667-1-pool-east` | R-E11-POOL-EAST | 4 | two-sided | RAF verticals 1945, ʿEin Samiya; Kallai, survey chapter in Kochavi (ed.) 1972 | no |
+| 26 | Kh. el-Marjama at ʿEin Samiya | `MARJAMA-2-dark-square` | R-E11-POOL-EAST, R-E11-POOL-NCORNER | 4 | two-sided | RAF verticals 1945, ʿEin Samiya | no |
+| 27 | unnamed WBADB unit S2096 | `S2096-2-mouth` | R-E60-TOMBS-AT-MOUTH, R-E60-JOINT-ACCESS | 5 | two-sided | Feldstein et al. 1993, Benjamin survey; Kallai, survey chapter in Kochavi (ed.) 1972 | no |
+| 28 | Tell Maryam | `S2376-1-pool-east` | R-E11-POOL-EAST | 5 | absence-statement only | Kallai, survey chapter in Kochavi (ed.) 1972; Feldstein et al. 1993, Benjamin survey | no |
 
 Full predictions, success and contradiction criteria, and every further link per model are in `chain.json`.
