@@ -91,3 +91,7 @@ The 2002 chapter (pp. 381–386) was read from the owner's NLI photos ([record](
 - EVIDENCE (pp. 381–382): dam no. 4 is reconstructed only ("It seems that a dam was built"; "No remains of an installation survive").
 - EVIDENCE (p. 385): the "low dam" that catches run-off is "At its last turn" — point 19, as in this review's table — not at point 16. The earlier sentence above, "a low dam catching run-off for the earlier channel", reports Stacey's reading; corrected 22 Oct: the authors link the wall to no earlier channel.
 - EVIDENCE (p. 385): the visible aqueduct dates to "about the time of Herod Archelaus, 4 B.C.-A.D. 6", possibly rebuilding a Hasmonean aqueduct; "The first system may belong to the Iron Age fortress".
+
+## 2002 figure compared — 30 October 2026
+
+The 2002 English chapter's Fig. 1 (*Aqueducts of Israel* p. 381) was compared directly with the 1989 figure archived here ([record](../sources/books_usc_2026-10-30/aqueducts_qumran_pp380_386_2026-10-30.md)). It is the same drawing with English labels: points 1–19 are identical, and point 16 is the same right-angle bend where the channel leaves the cliff. The equivalence was an assumption before; it is now EVIDENCE. Only the scale ticks and the insets differ. Note: 2002 p. 381 n. 4 dates the Hebrew edition to 1988; this record cites 1989. The citation is unchanged until the Hebrew imprint is checked.
