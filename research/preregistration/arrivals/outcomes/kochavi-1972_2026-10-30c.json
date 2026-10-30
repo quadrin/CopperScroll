@@ -1,0 +1,253 @@
+{
+ "item_id": "kochavi-1972",
+ "register_commit": "6fee37615e960da2c68b326b8ed9f91601fab464",
+ "register_commit_note": "Same register. Fifth part of the arrival: Bar-Adon. Scored as EXPLORATORY because the chapter (pp. 90–151) was first opened on 29 Oct outside the arrival procedure, by a held-section screen agent that had read the Koḥlit chain README and next_links table (link names, not criteria) and whose note summarised sites 5, 13 and 98. The 30 Oct reader re-extracted the entries blind to the item file.",
+ "register_pushed_before_arrival": true,
+ "test_status": "exploratory",
+ "arrived_utc": "2026-10-29T21:58:00Z",
+ "opened_by": "first: held-section screen agent, 29 Oct (research/sources/books_usc_2026-10-30/held_asi1_deirhajleh_2026-10-30.md), outside the register; then the 30 Oct reader, reader agent (30 Oct), blind to this item file, register.json, chain.json, plans.json and the entry-60 registry; given only the chain links' `where` text. Extraction: research/sources/books_usc_2026-10-30/kochavi_arrival_p4_p5_extraction_2026-10-30.md.",
+ "compared_by": "coordinator (Claude, main session of 30 Oct), who had read this item file's pred1/pred2 section and its outcome-id list on 30 Oct and opened the rest of it only after the extraction and the Stage 2 coding were complete.",
+ "manifest_check": "pass",
+ "parts_received": [
+  "Bar-Adon sites 5 (pp. 103–104), 13 (p. 105) and 98 (pp. 122–123)",
+  "Bar-Adon site 61 (p. 114): held (H1), header and measured content only",
+  "Stage 2 rarity coding of the Gophna & Porat and Bar-Adon units by a separate coder A (30 Oct; research/sources/books_usc_2026-10-30/kochavi_stage2_gp_ba_2026-10-30.md; units research/sources/books_usc_2026-10-30/kochavi_stage2_gp_ba_units_2026-10-30.csv); match.py and protocol_constants.json unchanged."
+ ],
+ "parts_pending": [
+  "P60-T9: the site 83 map reference was not extracted (site 83 is held; measured content only)",
+  "P60-T2: Bar-Adon's ʿEin el-Ghuweir entry was not extracted (the registered desk test is a separate publication)",
+  "A blind coder-B coding of S2629 (Bar-Adon 70, held), the one new coder-A match, and of the new entries of the coder-B random-sample units (including S6040 and S1283)"
+ ],
+ "intake": {
+  "files": [
+   {
+    "name": "1-heb p090-091 (IMG_1737).HEIC",
+    "page": "pp. 90–91",
+    "sha256": "401e3902607729d545224f9c7a7f962a18525389bd10bbff08f403fff5f7077a",
+    "bytes": 2249596
+   },
+   {
+    "name": "1-heb p092-093 (IMG_1736).HEIC",
+    "page": "pp. 92–93",
+    "sha256": "ed54df10edae74bdb6526edba2a8bb81cb35e09272b0a05d70ba365809ad75eb",
+    "bytes": 2780170
+   },
+   {
+    "name": "1-heb p094-095 (IMG_1735).HEIC",
+    "page": "pp. 94–95",
+    "sha256": "e3f96f5c15cb859b0893579ef1bd9fa76d2601e5e420d0c23bd99030a908893c",
+    "bytes": 2576203
+   },
+   {
+    "name": "1-heb p096-097 (IMG_1733).HEIC",
+    "page": "pp. 96–97",
+    "sha256": "dd4656689207d985bc156c6d0aa114a13b1b7d32c1bd044cd586de5f927cd621",
+    "bytes": 2679895
+   },
+   {
+    "name": "1-heb p098-099 (IMG_1732).HEIC",
+    "page": "pp. 98–99",
+    "sha256": "f818319096de01c744fbed1ffd5ecd1d701fa7285c19a77f202d09e04f582ffd",
+    "bytes": 2742602
+   },
+   {
+    "name": "1-heb p100-101 (IMG_1731).HEIC",
+    "page": "pp. 100–101",
+    "sha256": "09f7e2bc144a844c42d03c82f2532a6ab9dced309828aab408d56707c284edfc",
+    "bytes": 2581947
+   },
+   {
+    "name": "1-heb p102-103 (IMG_1730).HEIC",
+    "page": "pp. 102–103",
+    "sha256": "c1a927f27b646e951bc6f777c55acde7da278d47bf295792b44e7295567e74dc",
+    "bytes": 2969983
+   },
+   {
+    "name": "1-heb p104-105 (IMG_1729).HEIC",
+    "page": "pp. 104–105",
+    "sha256": "3192b5a684b188d09cd674dca1edbc03af79b0b085e246e085aff623c685c434",
+    "bytes": 3060613
+   },
+   {
+    "name": "1-heb p106-107 (IMG_1728).HEIC",
+    "page": "pp. 106–107",
+    "sha256": "a4e53ad9b9eeecddee2fa0ae306893a4a38fe723b5afd37a22d7dee95b5145fa",
+    "bytes": 2837164
+   },
+   {
+    "name": "1-heb p108-109 (IMG_1727).HEIC",
+    "page": "pp. 108–109",
+    "sha256": "001260398ed7bec9761e3b5f8048c6557ceff12d366bfcc9d300823e7e7d4830",
+    "bytes": 2910339
+   },
+   {
+    "name": "1-heb p110-111 (IMG_1726).HEIC",
+    "page": "pp. 110–111",
+    "sha256": "c0f62f01feadc35cc4dca989ce6a396290c5568adcd39b5bbe1c94f0b5d346f2",
+    "bytes": 2766880
+   },
+   {
+    "name": "1-heb p112-113 (IMG_1725).HEIC",
+    "page": "pp. 112–113",
+    "sha256": "c81fc1097b968d6e017d01184c8f74a86bebc9cabde9043057784449446f58f1",
+    "bytes": 2862676
+   },
+   {
+    "name": "1-heb p114-115 (IMG_1724).HEIC",
+    "page": "pp. 114–115",
+    "sha256": "2f192cedd0114aa2a1f9b9b5eb6553069cf1bba00c2f061f4d259abb5120a338",
+    "bytes": 2937443
+   },
+   {
+    "name": "1-heb p116-117 (IMG_1723).HEIC",
+    "page": "pp. 116–117",
+    "sha256": "94c263b2b493b8678cbe334930720157236256f199d4567bc3178eae78678817",
+    "bytes": 3005938
+   },
+   {
+    "name": "1-heb p118-119 (IMG_1722).HEIC",
+    "page": "pp. 118–119",
+    "sha256": "6943bfbc88075ba9a7ca5cd4b7011db641db3e8cfcfd55ca4cb75a021390a97b",
+    "bytes": 2856190
+   },
+   {
+    "name": "1-heb p120-121 (IMG_1721).HEIC",
+    "page": "pp. 120–121",
+    "sha256": "5326988a628fbe6c33ddd298237adfa2840db2587ced9b0c3e0c390bed44ce92",
+    "bytes": 3098039
+   },
+   {
+    "name": "1-heb p122-123 (IMG_1720).HEIC",
+    "page": "pp. 122–123",
+    "sha256": "7b113eb1b541838bfc59f9fcd9070315e4d9616dcbd2c43c46ba58b6f95a21f6",
+    "bytes": 3110949
+   },
+   {
+    "name": "1-heb p124-125 (IMG_1719).HEIC",
+    "page": "pp. 124–125",
+    "sha256": "f865134a57abfac6c3122d4e464f24536989414f76e24d1c78156cb86f17e8cc",
+    "bytes": 2971648
+   },
+   {
+    "name": "1-heb p126-127 (IMG_1718).HEIC",
+    "page": "pp. 126–127",
+    "sha256": "16cbfa04996a4ff006dde2266ead4a9b217c2bbc10918f37f15b01e5a5eec11a",
+    "bytes": 2992940
+   },
+   {
+    "name": "1-heb p128-129 (IMG_1717).HEIC",
+    "page": "pp. 128–129",
+    "sha256": "42e89f25221db220fb1778d3ccfe9040ccd60e8a8fbc181defd1e859a8a0bbc5",
+    "bytes": 2996994
+   },
+   {
+    "name": "1-heb p130-131 (IMG_1716).HEIC",
+    "page": "pp. 130–131",
+    "sha256": "94f4709d71ebe699e486826a9600b517936dda01f61c80a410410e465062df00",
+    "bytes": 2938974
+   },
+   {
+    "name": "1-heb p132-133 (IMG_1715).HEIC",
+    "page": "pp. 132–133",
+    "sha256": "4f7da4ea374a77b1af67713315ec09bb44a97ba12d33cccff36bea6b9a69d70a",
+    "bytes": 2914415
+   },
+   {
+    "name": "1-heb p134-135 (IMG_1714).HEIC",
+    "page": "pp. 134–135",
+    "sha256": "dad55e6989303fc8546134cb8a98e87c519b6289a465d81f10767e9292107d66",
+    "bytes": 2790315
+   },
+   {
+    "name": "1-heb p136-137 (IMG_1713).HEIC",
+    "page": "pp. 136–137",
+    "sha256": "83481798d9dec15511f9520573792d7180101bce7b64813a85446d9d13c749a8",
+    "bytes": 2728795
+   },
+   {
+    "name": "1-heb p138-139 (IMG_1712).HEIC",
+    "page": "pp. 138–139",
+    "sha256": "9310d5fde8060843088f68a218726e32693572818e625017b6af6ef8c13e20c0",
+    "bytes": 2926554
+   },
+   {
+    "name": "1-heb p140-141 (IMG_1711).HEIC",
+    "page": "pp. 140–141",
+    "sha256": "4e88699c361074bf65a124c34ca19cb0325de67b0214a84c9023535f12f0b751",
+    "bytes": 2688929
+   },
+   {
+    "name": "1-heb p142-143 (IMG_1710).HEIC",
+    "page": "pp. 142–143",
+    "sha256": "ea4cf17fa8c9d0e366afca0d5f03704e2054b9292b90eda23b9dcc93f7f20dc6",
+    "bytes": 2808926
+   },
+   {
+    "name": "1-heb p144-145 (IMG_1709).HEIC",
+    "page": "pp. 144–145",
+    "sha256": "ed210214dc91cf11b71dd835c7ec9871f44cafd84d30f9778731a76ed469288d",
+    "bytes": 2605794
+   },
+   {
+    "name": "1-heb p146-147 (IMG_1708).HEIC",
+    "page": "pp. 146–147",
+    "sha256": "dabc3e071f1d5c264dace8e05084cea1a18e62fa969972dc57fef7fe519c67ed",
+    "bytes": 2619665
+   },
+   {
+    "name": "1-heb p148-149 (IMG_1707).HEIC",
+    "page": "pp. 148–149",
+    "sha256": "3ffeb60b0cef2ce9985b72c34722070a4beaa8a7708d18c918e9b0bb149ebe3a",
+    "bytes": 2702074
+   },
+   {
+    "name": "1-heb p150-151 (IMG_1706).HEIC",
+    "page": "pp. 150–151",
+    "sha256": "e254774da72413686b845fd51324cc69b1b20d780c03551c1dce2c4a1b30b4aa",
+    "bytes": 2231284
+   }
+  ],
+  "notes": "Same Drive folder and manifest. Every file used matched its manifest sha256 and size. Held spreads were handled by cropping to target entries; neighbouring held text seen is listed in the extraction's exposure log. Copyright; not committed."
+ },
+ "scores": [
+  {
+   "outcome_id": "chain:SARTABA-1-graves-north:inconclusive",
+   "evidence": "Bar-Adon pp. 103–104, site 5 (Sarṭaba, 1938 1670): fortress 35 x 30 m, two pools to the NW, an ancient quarry SW, eight rock-cut caves 'in the slope' with no direction, an aqueduct, an enclosure at 1938 1664. No grave or tomb is mentioned and no list is said to be complete.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S6040-1-graves-north:inconclusive",
+   "evidence": "Bar-Adon p. 105, site 13 (T. esh-Sheikh Dhiab, 1908 1615): a modern Arab cemetery on a mound 'near' the tell, with no direction; a 45 x 45 m building SW of the tell; channel remains 20 m W of it. No grave is placed in the north sector and no list is said to be complete.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S2430-1-pool-east:inconclusive",
+   "evidence": "Bar-Adon p. 114, site 61 (T. es-Samrat; 19-14/11/1, 1917 1413): held area H1, so only measured content was read (a height of 6–7 m). No pool is placed and no absence statement was read.",
+   "exposed": true
+  },
+  {
+   "outcome_id": "chain:S3961-1-pool-east:inconclusive",
+   "evidence": "Bar-Adon p. 122, site 98 sub-item ג (98c, 1933 1268): a fortress apparently with casemates, 40 x 60 m, west of the Qumran–Feshkha road, buildings to its south; Roman. No pool, cistern or channel is named; no absence statement.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "pred1:inconclusive",
+   "evidence": "Bar-Adon units: S6040 (site 13) and S1283 (site 5) miss C3 and S2430 (site 61, held) and S3961 (site 98c) miss C1; all four stay UNKNOWN on the missing condition after the merge.",
+   "exposed": true
+  },
+  {
+   "outcome_id": "item:partial",
+   "evidence": "See parts_pending.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "item:unregistered-observation",
+   "evidence": "See unregistered_observations (Bar-Adon p. 116, site 70).",
+   "exposed": true
+  }
+ ],
+ "unregistered_observations": [
+  "Stage 2 sensitivity variant (branch B, C1 ≤ 2 km): S2629 (Tell Mugheifir, Bar-Adon site 70, held, EXPOSED) becomes a coder-A match from one reading of an unlabelled plan symbol on p. 116 (a circle with a small square read as the cistern, about 9 m from the building centre at 340°). The headline does not change. The match needs a blind coder B; if coder B does not also code C2 MATCH, it is undone."
+ ],
+ "notes": "pred2 has no criterion; main set R1 Hel/Rom, branch A survey level stays k = 0, f = 20, m = 313 of N = 333 (RESULTS.md Addendum 5). Exploratory: this record tests nothing in the register. No identification follows."
+}

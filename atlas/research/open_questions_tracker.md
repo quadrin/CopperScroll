@@ -280,6 +280,8 @@ Atara custody follow-up (13 October UTC / 12 October Los Angeles): PEF confirms 
 
 - **2026-10-30 — owner defaults:** the owner had no preference on the three decisions left open in the line above, so the protective or literal reading was applied. (a) `S2096-2-mouth`: an undated sheikh's tomb does not meet "dates the only tomb as a later shrine"; the link stays inconclusive. (b) Wadi Ekteif graves: counted as held, so EXPOSED (measured); same observation as WBADB E508. (c) Entry 38: P stays at 2, Kh. Bad Faluḥ stays the named alternative. Also recorded: Kochavi 1972 arrival part 3 ([record](https://github.com/quadrin/CopperScroll/blob/main/research/preregistration/arrivals/outcomes/kochavi-1972_2026-10-30.json)), `pred1:inconclusive` for the Kallai units. No status, priority or outcome-count changes.
 
+- **2026-10-30 — Kochavi 1972 arrival, parts 4–5:** Gophna & Porat and the Kallai Introduction scored as a test (all five chain links inconclusive; `pred1` inconclusive); Bar-Adon scored as exploratory (four links inconclusive). Rarity Addendum 5 leaves the headline at k = 0 of 333; one branch-B variant gains held S2629 pending a blind coder B. P60-T9 and P60-T2 stay pending. No status, priority or outcome-count changes.
+
 - **2026-10-09 UTC — regional-round links:** R06 gains the ASI Siloam coverage note; R07 gains the ASI Muhalhal records, the Mandate-map Wadi Kuheila name and the Peraea gazetteer. No status, priority or outcome changes.
 
 - **2026-10-09 UTC — analogues-round links:** R05 gains the Antiquities 18.85–89 note and Bull's Gerizim reports as next records; R12 gains the hiding-place comparison and the Ezra vessel lists. No status, priority or outcome changes.

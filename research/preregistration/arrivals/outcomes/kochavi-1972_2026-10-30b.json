@@ -1,0 +1,264 @@
+{
+ "item_id": "kochavi-1972",
+ "register_commit": "6fee37615e960da2c68b326b8ed9f91601fab464",
+ "register_commit_note": "Same register as the 19, 19b and 30 Oct records. Fourth part of the arrival (partial-arrival rule, ARRIVAL_PROCEDURE §4): Gophna and Porat site entries and the Kallai Introduction, which no one had opened before this reader.",
+ "register_pushed_before_arrival": true,
+ "test_status": "test",
+ "arrived_utc": "2026-10-29T21:58:00Z",
+ "opened_by": "reader agent (30 Oct), blind to this item file, register.json, chain.json, plans.json and the entry-60 registry; given only the chain links' `where` text. Extraction: research/sources/books_usc_2026-10-30/kochavi_arrival_p4_p5_extraction_2026-10-30.md.",
+ "compared_by": "coordinator (Claude, main session of 30 Oct), who had read this item file's pred1/pred2 section and its outcome-id list on 30 Oct and opened the rest of it only after the extraction and the Stage 2 coding were complete.",
+ "manifest_check": "pass",
+ "parts_received": [
+  "Gophna and Porat pp. 196–242: sites 169, 170, 190, the chapter introduction, the period key and the site indexes",
+  "Kallai Introduction pp. 153–157 and the period key pp. 189–190",
+  "Stage 2 rarity coding of the Gophna & Porat and Bar-Adon units by a separate coder A (30 Oct; research/sources/books_usc_2026-10-30/kochavi_stage2_gp_ba_2026-10-30.md; units research/sources/books_usc_2026-10-30/kochavi_stage2_gp_ba_units_2026-10-30.csv); match.py and protocol_constants.json unchanged."
+ ],
+ "parts_pending": [],
+ "intake": {
+  "files": [
+   {
+    "name": "1-heb p152-153 (IMG_1705).HEIC",
+    "page": "pp. 152–153",
+    "sha256": "c2c7dd81027c58a3af3d796896338516ae997ecf11971d5e87b7e32283d281be",
+    "bytes": 2697815
+   },
+   {
+    "name": "1-heb p154-155 (IMG_1704).HEIC",
+    "page": "pp. 154–155",
+    "sha256": "440960bbefbb194bdd433637b3c23211a1bddb175e815dbb4d571db206ebfc93",
+    "bytes": 2835936
+   },
+   {
+    "name": "1-heb p156-157 (IMG_1702).HEIC",
+    "page": "pp. 156–157",
+    "sha256": "d65e231ea503ee3b630317ad1c48421eb587c4489f672dbaea0ef27019055f6b",
+    "bytes": 3098377
+   },
+   {
+    "name": "1-heb p166-167 (IMG_1697).HEIC",
+    "page": "pp. 166–167",
+    "sha256": "fcf6d5ee711acfce55e2f9271fe946a8e4b9baf52530b55d7904552762fae34e",
+    "bytes": 2927802
+   },
+   {
+    "name": "1-heb p180-181 (IMG_1690).HEIC",
+    "page": "pp. 180–181",
+    "sha256": "862a19475567260352024e386c1c36341964bce2202d9ccf951a152540e9fe79",
+    "bytes": 3036539
+   },
+   {
+    "name": "1-heb p182-183 (IMG_1689).HEIC",
+    "page": "pp. 182–183",
+    "sha256": "7fc24d4a020d1f697bd81e66a2253fd42b3d192b24e61cd91ddd57e83fffd7ab",
+    "bytes": 3031318
+   },
+   {
+    "name": "1-heb p188-189 (IMG_1686).HEIC",
+    "page": "pp. 188–189",
+    "sha256": "dc8399ae90129171606fbfb4deef97d54fd2218c011d9d0e7c8fa0939cbcb70b",
+    "bytes": 2709949
+   },
+   {
+    "name": "1-heb p190-191 (IMG_1685).HEIC",
+    "page": "pp. 190–191",
+    "sha256": "7a3229aad0834dbe862f4560f4d88fb8c73faa6a54a1124583394e79cbf099cb",
+    "bytes": 2641413
+   },
+   {
+    "name": "1-heb p192-193 (IMG_1684).HEIC",
+    "page": "pp. 192–193",
+    "sha256": "58f3671932d60270ce0eddf79670a886d82c1592ecba245548a72544873e7473",
+    "bytes": 2611687
+   },
+   {
+    "name": "1-heb p196-197 (IMG_1682).HEIC",
+    "page": "pp. 196–197",
+    "sha256": "c50ab7ceacc0d4e21a2e19e998483026a8efd1373cf0a03b39cfed774155317d",
+    "bytes": 3097384
+   },
+   {
+    "name": "1-heb p198-199 (IMG_1681).HEIC",
+    "page": "pp. 198–199",
+    "sha256": "6a78f74cf3099fb98f36f242d83da1ca197fe73fcd04c651bde5a1a1a4ebfdaa",
+    "bytes": 3122165
+   },
+   {
+    "name": "1-heb p200-201 (IMG_1680).HEIC",
+    "page": "pp. 200–201",
+    "sha256": "dcc0719519ba3d2d64d48c59faff19f73f45c4b7c960a4ea223c3b2fd37edab2",
+    "bytes": 2940508
+   },
+   {
+    "name": "1-heb p202-203 (IMG_1679).HEIC",
+    "page": "pp. 202–203",
+    "sha256": "27f559bbfc0ef69dcaafca8f611c83fa84543e8c624b7ffcd69c36906924df70",
+    "bytes": 2585094
+   },
+   {
+    "name": "1-heb p204-205 (IMG_1678).HEIC",
+    "page": "pp. 204–205",
+    "sha256": "d163a1d4aa1566a5a57d62be835b175630486f0a9825d75ef36a8722421e1a36",
+    "bytes": 2513710
+   },
+   {
+    "name": "1-heb p206-207 (IMG_1677).HEIC",
+    "page": "pp. 206–207",
+    "sha256": "a25c1e4c9b18eb0154ce6f4adc7ff59cd2e768d54019d350fcb5a81a76b482db",
+    "bytes": 2321578
+   },
+   {
+    "name": "1-heb p208-209 (IMG_1676).HEIC",
+    "page": "pp. 208–209",
+    "sha256": "8b7ef204ee66a7672d9ec4212feb6f6ec9a0b9ff64aac6189895b0cb37cc7758",
+    "bytes": 2826005
+   },
+   {
+    "name": "1-heb p210-211 (IMG_1675).HEIC",
+    "page": "pp. 210–211",
+    "sha256": "e073510792946fa183c7f8740e6836f1f49e0678ff9d88330ed5b4a8314bb561",
+    "bytes": 3094409
+   },
+   {
+    "name": "1-heb p212-213 (IMG_1674).HEIC",
+    "page": "pp. 212–213",
+    "sha256": "23bb8fa2715bc076abebb001a32b8900cbadaef4b82cc6099998fd26030a7068",
+    "bytes": 3056019
+   },
+   {
+    "name": "1-heb p214-215 (IMG_1673).HEIC",
+    "page": "pp. 214–215",
+    "sha256": "41c303d9df7451bab31ecf4e3d49e23191f857723159c1702c0d2eb28df49dc5",
+    "bytes": 3052020
+   },
+   {
+    "name": "1-heb p216-217 (IMG_1672).HEIC",
+    "page": "pp. 216–217",
+    "sha256": "ff02579b9c0f019e78ea45c73a05e36a082ad2aaf1e9359ea8ce3c483803fd65",
+    "bytes": 3072548
+   },
+   {
+    "name": "1-heb p218-219 (IMG_1671).HEIC",
+    "page": "pp. 218–219",
+    "sha256": "91fcc04a69d427015cbf49237dbaa16d563d3c72ead0f643fa45c9c5e8ef4733",
+    "bytes": 2958869
+   },
+   {
+    "name": "1-heb p220-221 (IMG_1670).HEIC",
+    "page": "pp. 220–221",
+    "sha256": "4a419bd49d8d3387bdffa09c6a4535737bfaf0c42d6d1d654d8cf0872bc9bd09",
+    "bytes": 2895384
+   },
+   {
+    "name": "1-heb p222-223 (IMG_1669).HEIC",
+    "page": "pp. 222–223",
+    "sha256": "f382fa803f3d8e4a4da154f0e1e249b083b48f5f05102c62eab0acc9cf08b8f4",
+    "bytes": 2980054
+   },
+   {
+    "name": "1-heb p224-225 (IMG_1668).HEIC",
+    "page": "pp. 224–225",
+    "sha256": "c97d00ecba91c031aa69f4257d5713a967ede0b02fd1aa68891417421b85644d",
+    "bytes": 3019295
+   },
+   {
+    "name": "1-heb p226-227 (IMG_1667).HEIC",
+    "page": "pp. 226–227",
+    "sha256": "cfe8ff02c56ea1896980d0c6181c72b784000cda0dc6f1edc507659804359434",
+    "bytes": 3057141
+   },
+   {
+    "name": "1-heb p228-229 (IMG_1666).HEIC",
+    "page": "pp. 228–229",
+    "sha256": "c6cd36b0b32c1a0135865293367e5ff15ee7e4b4e531ae7bc0b4ce69ebcb6719",
+    "bytes": 2929378
+   },
+   {
+    "name": "1-heb p230-231 (IMG_1665).HEIC",
+    "page": "pp. 230–231",
+    "sha256": "b9bee8a68c5c18902a9c01b101de4ffa5460a155cf14afa10f6bc0d6c34a7706",
+    "bytes": 3074105
+   },
+   {
+    "name": "1-heb p232-233 (IMG_1664).HEIC",
+    "page": "pp. 232–233",
+    "sha256": "8e07b7ca80bf490426f11309c7d63fc6341de12e9ee33f4b5325ea5c4716b958",
+    "bytes": 3173544
+   },
+   {
+    "name": "1-heb p234-235 (IMG_1663).HEIC",
+    "page": "pp. 234–235",
+    "sha256": "3970f7e37190d99b3e347d8142afce72250ecd505a8181ed10598ede1028200c",
+    "bytes": 3088222
+   },
+   {
+    "name": "1-heb p236-237 (IMG_1662).HEIC",
+    "page": "pp. 236–237",
+    "sha256": "ec39718137ca21dc128856b8f51ce20ee8f034b2e1af4dda8c47b28a55450a04",
+    "bytes": 2909134
+   },
+   {
+    "name": "1-heb p238-239 (IMG_1661).HEIC",
+    "page": "pp. 238–239",
+    "sha256": "77849594fb1eab896615c4ff6015c5a95cfd2431d347bd642f556b4c0368ab30",
+    "bytes": 2857542
+   },
+   {
+    "name": "1-heb p240-241 (IMG_1660).HEIC",
+    "page": "pp. 240–241",
+    "sha256": "2fb6c3fcfa21799c2b6297e86e00de6be3b54a921b2ef60a3f1e9d01f3c3d8dc",
+    "bytes": 2945085
+   },
+   {
+    "name": "1-heb p242-243 (IMG_1659).HEIC",
+    "page": "pp. 242–243",
+    "sha256": "218a04954b639876c8b4b7ee5037c65e93c45bc03db24e57daa5c20eaebec3af",
+    "bytes": 2351348
+   }
+  ],
+  "notes": "Owner's photos in Drive folder 19KrO7YInKR35KZ17F34jWOnSME-lcyv_ (ASI 1), uploaded 29 Oct 2026 from 21:58 UTC with 00_manifest.csv; every file used matched its manifest sha256 and size. Copyright; not committed."
+ },
+ "scores": [
+  {
+   "outcome_id": "chain:S845-1-pool-east:inconclusive",
+   "evidence": "Gophna and Porat p. 226, site 170 (Kh. eṣ-Ṣāliḥ, 2021 1791): a ruin on three hillocks in the Ghor, about 4 dunams, with exposed fieldstone foundations; LB II and Iron I. No pool or reservoir is named, and there is no absence statement.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S845-2-mouth:inconclusive",
+   "evidence": "Gophna and Porat p. 226, site 169 (Kh. el-Ghirūr, 2014 1798; WBADB S836): a dry-built tower 10 x 7 m of drafted-margin stones, a courtyard NW of it, buildings S and E, an enclosing wall 1.20 m thick; Byzantine. No tomb, cistern or cave is named and there is no plan, so neither criterion is met.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S843-2-mouth:inconclusive",
+   "evidence": "Same record as S845-2 (WBADB S836 = Gophna and Porat site 169, p. 226): no tomb, cistern or cave is named; no plan. The chapter has no entry for Kh. edh-Dhraʿ itself (not in either site index).",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S1137-1-pool-east:inconclusive",
+   "evidence": "Gophna and Porat p. 229, site 190, printed as T. eṣ-Ṣimādi (19-17/60/1, 1963 1709; about 0.3 km from the S1137 point): a steep tell and, at its foot mainly to the south, a ruin of about 100 dunams with dressed-stone concentrations, columns and column bases; pottery EB to Medieval, Roman-Byzantine mainly in the ruin. No pool or reservoir is named; no absence statement.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "chain:S1137-2-mouth:inconclusive",
+   "evidence": "WBADB S1116 (Tell eṣ-Ṣimadi) is Gophna and Porat site 190 (p. 229; the only Ṣimādi entry in both indexes). The entry names no tomb, sheikh's tomb or cistern, so it neither puts a tomb at a mouth nor dates the only tomb as a later shrine.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "pred1:inconclusive",
+   "evidence": "Gophna and Porat units only. S845 (site 170) and S1137 (site 190) both miss C1 (pool to the east); after the merge C1 stays UNKNOWN for both (merged C1/C2/C3s = U/M/M), so neither MATCH nor FAIL.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "item:unregistered-observation",
+   "evidence": "See unregistered_observations (Gophna and Porat pp. 198, 229, 240–241; Kallai pp. 153–157, 189–190).",
+   "exposed": false
+  }
+ ],
+ "unregistered_observations": [
+  "Gophna and Porat site 190 is printed as T. eṣ-Ṣimādi; the name Qarawet et-Tahta does not appear in the entry or in either site index. The chain's S1137 (Qarawet et-Tahta) and S1116 (Tell eṣ-Ṣimadi) records therefore resolve to one printed entry.",
+  "Gophna and Porat has no entry for Kh. edh-Dhraʿ (S843).",
+  "Gophna and Porat p. 198: the team also surveyed in the Jordan Valley and lists four LB sites there, including 170 and 190.",
+  "Kallai Introduction pp. 153–157: about 1,000 km², more than 150 sites, sites taken from maps and earlier sources, called a quick survey that is not thorough enough. Roman I/II/III appear only in the period key (pp. 189–190) with no legend or dates, which answers the open point in the 19b record."
+ ],
+ "notes": "pred2 has no criterion; after this coding the main set R1 Hel/Rom, branch A survey level stays k = 0, f = 20, m = 313 of N = 333 (RESULTS.md Addendum 5). The Bar-Adon part is a separate, exploratory record (kochavi-1972_2026-10-30c.json). Coder B: S836 is in coder B's random sample, and a blind coder-B coding of its new entry was not done (the new entry codes UNKNOWN throughout, so a coder-B sheet with the same content could not change a merged value). No identification follows."
+}
