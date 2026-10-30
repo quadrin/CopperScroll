@@ -1,0 +1,117 @@
+{
+ "item_id": "kochavi-1972",
+ "register_commit": "6fee37615e960da2c68b326b8ed9f91601fab464",
+ "register_commit_note": "Same register as outcomes/kochavi-1972_2026-10-19.json and kochavi-1972_2026-10-19b.json. Third part of the arrival (partial-arrival rule, ARRIVAL_PROCEDURE §4): it scores the Stage 2 rarity coding that 19b listed as pending.",
+ "register_pushed_before_arrival": true,
+ "test_status": "test",
+ "arrived_utc": "2026-10-29T21:58:00Z",
+ "opened_by": "coder A of the Kochavi Stage 2 addendum (subagent of the 29–30 Oct session), who coded the Kallai entries for the 18 pending units from the full-size photos under PROTOCOL.md and the source-2 procedure, with match.py and its constants unchanged. It had opened outcomes/kochavi-1972_2026-10-19b.json (named in its task) but not this item file. Report: research/sources/books_usc_2026-10-30/kochavi_stage2_kallai_2026-10-29.md; result: research/rarity/kohlit/stage2/RESULTS.md, Addendum 4.",
+ "compared_by": "coordinator (Claude, main session of 30 Oct), who opened items/kochavi-1972.md (pred1 and pred2 only) after the Stage 2 result was committed. Done at the owner's instruction in chat, 30 Oct 2026 05:50 America/Los_Angeles.",
+ "manifest_check": "pass",
+ "parts_received": [
+  "Stage 2 rarity coding of the 18 Kallai units listed in 19b parts_pending, from Kallai pp. 164–189 (owner's full-size photos IMG_1686–1698). This also covers the S1658/S1667 Stage 2 item listed pending in outcomes/kochavi-1972_2026-10-19.json."
+ ],
+ "parts_pending": [
+  "pred1 for the Gophna and Porat units (S845, S1137) and the Bar-Adon units (S6040, S1283, S2430, S3961): their site entries have not been read under this register",
+  "Kallai Introduction pp. 153–157",
+  "Gophna and Porat site entries 169, 170, 190 and the S1137-2 record (chain links S845-1, S845-2, S843-2, S1137-1, S1137-2)",
+  "Bar-Adon chapter: sites 13, 61, 83, 98c and Qarn Sartaba (chain links SARTABA-1, S6040-1, S2430-1, S3961-1; registry P60-T9, P60-T2)"
+ ],
+ "intake": {
+  "files": [
+   {
+    "name": "1-heb p164-165 (IMG_1698).HEIC",
+    "page": "pp. 164–165",
+    "sha256": "c8a7c341f092c1062d482415d24bae99cbccf7dd5d638fbde3cac93f9eba4c0c",
+    "bytes": 3074280
+   },
+   {
+    "name": "1-heb p166-167 (IMG_1697).HEIC",
+    "page": "pp. 166–167",
+    "sha256": "fcf6d5ee711acfce55e2f9271fe946a8e4b9baf52530b55d7904552762fae34e",
+    "bytes": 2927802
+   },
+   {
+    "name": "1-heb p168-169 (IMG_1696).HEIC",
+    "page": "pp. 168–169",
+    "sha256": "b6f90deb264af8ed16031f1feacaf2a6399e2cc8dd501eae6396546d4a00b344",
+    "bytes": 2850940
+   },
+   {
+    "name": "1-heb p170-171 (IMG_1695).HEIC",
+    "page": "pp. 170–171",
+    "sha256": "6c978457941d115fba071b702721d05eff994430866c301777561d833816955f",
+    "bytes": 3012539
+   },
+   {
+    "name": "1-heb p172-173 (IMG_1694).HEIC",
+    "page": "pp. 172–173",
+    "sha256": "7329636850aaa626f382b4fa5f7604aee7ef2cd2bdd50987001b6ec738930d4c",
+    "bytes": 3046438
+   },
+   {
+    "name": "1-heb p174-175 (IMG_1693).HEIC",
+    "page": "pp. 174–175",
+    "sha256": "6fde43184493c6f33aeb52cc5f560f2906a565a6d4120b551a2b2998f3ab847d",
+    "bytes": 2963847
+   },
+   {
+    "name": "1-heb p176-177 (IMG_1692).HEIC",
+    "page": "pp. 176–177",
+    "sha256": "defbc7467a0d92b09c1f415a45f71b115c102e8b17b5b6eb07877b284f8d1ee1",
+    "bytes": 2967949
+   },
+   {
+    "name": "1-heb p178-179 (IMG_1691).HEIC",
+    "page": "pp. 178–179",
+    "sha256": "85a3846fa33000cf74e5ac14e1748880dbb8b59393bba9eb7e5e9cd2a3fe6bfa",
+    "bytes": 3189395
+   },
+   {
+    "name": "1-heb p180-181 (IMG_1690).HEIC",
+    "page": "pp. 180–181",
+    "sha256": "862a19475567260352024e386c1c36341964bce2202d9ccf951a152540e9fe79",
+    "bytes": 3036539
+   },
+   {
+    "name": "1-heb p182-183 (IMG_1689).HEIC",
+    "page": "pp. 182–183",
+    "sha256": "7fc24d4a020d1f697bd81e66a2253fd42b3d192b24e61cd91ddd57e83fffd7ab",
+    "bytes": 3031318
+   },
+   {
+    "name": "1-heb p184-185 (IMG_1688).HEIC",
+    "page": "pp. 184–185",
+    "sha256": "806309b94bc5258ccbb8f218150094d70c37eec9a1e952b0edb218c5491ce564",
+    "bytes": 3183854
+   },
+   {
+    "name": "1-heb p186-187 (IMG_1687).HEIC",
+    "page": "pp. 186–187",
+    "sha256": "fde55972b22e5a9dbf1e270baa26908c5defc3bd2dc2cf6f2bb6e8f1327a925d",
+    "bytes": 3128853
+   },
+   {
+    "name": "1-heb p188-189 (IMG_1686).HEIC",
+    "page": "pp. 188–189",
+    "sha256": "dc8399ae90129171606fbfb4deef97d54fd2218c011d9d0e7c8fa0939cbcb70b",
+    "bytes": 2709949
+   }
+  ],
+  "notes": "Uploaded by the owner to Drive folder 19KrO7YInKR35KZ17F34jWOnSME-lcyv_ (ASI 1) on 29 Oct 2026 from 21:58 UTC, with 00_manifest.csv. Coder A checked each HEIC against its manifest source_sha256. Copyright; not committed."
+ },
+ "scores": [
+  {
+   "outcome_id": "pred1:inconclusive",
+   "evidence": "Kallai part only. The two two-of-three units these pages cover both miss C1 (pool to the east), and C1 is coded UNKNOWN after the merge: S1667 (site 66, p. 173: building remains, columns, a water mill 300 m NE; no pool) and S2376 (site 115, p. 182: a pool 15 x 7 m at the foot of the hill on the north slope, outside the east sector). Merged C1/C2/C3s/C3t = UNKNOWN/MATCH/MATCH/UNKNOWN for both, so neither is MATCH (confirm) nor FAIL (contradict). Unit table: research/sources/books_usc_2026-10-30/kochavi_stage2_kallai_units_2026-10-29.csv.",
+   "exposed": false
+  },
+  {
+   "outcome_id": "item:partial",
+   "evidence": "See parts_pending.",
+   "exposed": false
+  }
+ ],
+ "unregistered_observations": [],
+ "notes": "pred2 registers no criterion ('Not applicable' for all four outcomes), so no pred2 outcome is scored. It asks the register to record k, f and m after coding: main set R1 Hel/Rom, branch A survey level, k = 0, f = 20, m = 313 of N = 333, unchanged from the Zertal Vol. I result (RESULTS.md Addendum 4). m ≫ k, so rarity stays not measurable from available evidence. Deviations carried from the coding report: D-K1 (no blind coder B for S1488, S1667 and S2565; their Kallai-only coding is UNKNOWN throughout, so no merged value could change) and D-K4 (site 152, S2806, not opened). Exposure: the comparer read pred1 and pred2 and the registered outcome-id list of items/kochavi-1972.md, not the other predictions, and has no reader role in the pending parts. No identification follows."
+}
