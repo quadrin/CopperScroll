@@ -1,5 +1,8 @@
 # Letter controls for the XII 10 reading
 
+> **Retired, 30 October 2026 (owner's decision).** Every blind-reading, reserve, held-area and "do not open" rule in the project is withdrawn; all material is visible and may be read normally. See [the retirement record](../../preregistration/RETIRED_BLIND_RULES_2026-10-30.md). The text below is kept as a historical record; where it gates access, it no longer applies.
+
+
 This folder holds a calibration design for the XII 10 image-reading test. Control letters come from columns I–X. All checked editions agree on their identity. They measure how well the XII 10 readers tell bet from kaf, he from ḥet and taw, and a yod/waw from no sign, on images like the target.
 
 Agreement alone measures nothing about accuracy. Two readers can agree and both be wrong. Only keyed controls measure accuracy.

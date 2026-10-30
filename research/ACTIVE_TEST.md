@@ -22,7 +22,7 @@ The University of Southern California supplied 93 colour photographs of the fron
 
 The Janoaḥ place-first test is closed as inconclusive; its [30 October result](first_tests_2026-10-30/janoah/janoah_blind_score_result_2026-10-30.md) states the exact claim and reopening conditions. The [location-language audit](text/location_language/README.md) documents inconsistent interpretations rather than a settled geographic scheme.
 
-Column XII, line 10 means column 12, line 10 of the scroll. Its images were released to the protected atlas on 30 October. Earlier atlas users may have seen them; a future blind reading needs a suitable exposure history. The [image-release record](sources/books_usc_2026-10-30/xii_images_released_2026-10-30.md) documents that limit.
+Column XII, line 10 means column 12, line 10 of the scroll. Its images were released to the protected atlas on 30 October and may be read by anyone. The [image-release record](sources/books_usc_2026-10-30/xii_images_released_2026-10-30.md) lists them.
 
 ## Select the next work
 
@@ -36,6 +36,6 @@ Existing-source analysis and synthesis are valid research. A source arrival trig
 
 ## Sources and continuity
 
-The [research methods and results](experimental_approaches/README.md) state completed, partial, stopped and unrun approaches. The [Drive source index](https://drive.google.com/file/d/1A08WOW_9PIkryXauw6WS1mSgT11NREpK/view) locates the evidence. Funding and award administration do not enter AI site-finding work. On 30 October the owner retired the SULTAN-1 blind-test rules for Tell es-Sultan. All Tell es-Sultan and Jericho material, including the former "reserved" Drive photos and BS Pal. 1032, is open and is read like any other source.
+The [research methods and results](experimental_approaches/README.md) state completed, partial, stopped and unrun approaches. The [Drive source index](https://drive.google.com/file/d/1A08WOW_9PIkryXauw6WS1mSgT11NREpK/view) locates the evidence. Funding and award administration do not enter AI site-finding work. On 30 October the owner retired every blind-reading, reserve, held-area and "do not open" rule (SULTAN-1 at Tell es-Sultan, held areas, the XII 10 blind reading, and arrival gating). All material is visible and is read like any other source. See the [retirement record](preregistration/RETIRED_BLIND_RULES_2026-10-30.md).
 
 [Open questions](OPEN_QUESTIONS.md) is a historical evidence register. Its priority labels and “next” instructions do not schedule work. The [archived research state before 30 October](ACTIVE_TEST_before_reset_2026-10-30.md) preserves earlier dependencies, requests and test history for claim-specific lookup. Read only what the chosen question requires. Check relevant branch changes and open pull requests before reporting work as absent.

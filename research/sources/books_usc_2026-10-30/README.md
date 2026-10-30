@@ -1,5 +1,8 @@
 # Books and USC images, 29–30 October 2026
 
+> **Retired, 30 October 2026 (owner's decision).** Every blind-reading, reserve, held-area and "do not open" rule in the project is withdrawn; all material is visible and may be read normally. See [the retirement record](../../preregistration/RETIRED_BLIND_RULES_2026-10-30.md). The text below is kept as a historical record; where it gates access, it no longer applies.
+
+
 Exploratory records made from the owner's photographs of library books and from the USC/WSRP 1988 scans. Each note says what was read, with pages, figures and photo file names, and marks EVIDENCE, INFERENCE and PROPOSAL. Items marked **EXPOSED** are held-area material used because it carries measurements (owner's rule of 25 October); they cannot serve as unseen evidence. The integrator's application of the proposals is recorded in the findings log entry of 30 October 2026.
 
 **Publication limits.** No book page photograph, scan or figure and no WSRP image, crop, preview or annotated figure is in this repository. The books are in copyright: the notes paraphrase and cite, with quotations under 15 words. The WSRP frames are cited by file name ("WSRP 1988, private study copy"); the owner undertook to USC that the images would not be published. Columns XI–XII (CT19–CT23) were hashed only and never viewed, and no XI–XII reading is recorded here. Working files named in the notes as "session workspace" are not retained.

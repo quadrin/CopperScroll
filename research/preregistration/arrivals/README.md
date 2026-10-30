@@ -1,5 +1,8 @@
 # Arrival register: predictions frozen before requested items arrive
 
+> **Retired, 30 October 2026 (owner's decision).** Every blind-reading, reserve, held-area and "do not open" rule in the project is withdrawn; all material is visible and may be read normally. See [the retirement record](../RETIRED_BLIND_RULES_2026-10-30.md). The text below is kept as a historical record; where it gates access, it no longer applies.
+
+
 **What it is:** for each of 22 requested or wanted items, what every live model in the repository predicts the item will show, frozen and hashed before it arrives.
 **Main result:** none of the items has arrived. Four XII 10 image items tie at the top of the ranking (2.24 expected Koḥlit classes excluded each); Kochavi 1972 comes next (2.21 Koḥlit classes plus 1.55 chain models). The Tell es-Sultan records separate no registered class.
 **What stays unknown:** what the items will show. Whether any reply comes. Expected values use a declared convention, not probabilities.
