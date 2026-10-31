@@ -1,0 +1,30 @@
+C3 exposure and decision log (31 Oct 2026, UTC). One line per action that touched data or fixed a choice.
+
+07:35  Read briefs (orchestrator, wave 2), AGENTS.md. Read C2 note + protocol (origin/claude/novel-2026-10-31-C2 8f704f98), A2 note + code
+       (origin/claude/novel-2026-10-31-A2 6a309e75), round-1 C note + features_drawing.py + hand_features_by_line.csv
+       (origin/claude/novel-2026-10-30-C 39774863). All already public on their branches.
+07:45  A2 code and reg/ place/ JSON extracted to SP/C3work/ref (git archive of 6a309e75). SHA-256 checked against A2's sha256_inputs.txt.
+07:50  scripts/placements.py: W2F verified letters (labels_verified.csv, drawing + copy-photo centres) mapped into the 1988 reference
+       frames with A2's accepted affine placements and A2's strip masks (1/8-scale strip outline from A2's cache). No letter-level copper
+       pixel read. Output out/placed_letters.csv, out/drawing_contrasts.json (drawing only).
+07:53  Drawing contrasts, lines 1-6 vs 8-13, placed subset, letter-level medians of h_rel: I +2.5 %, II +11.5 %, III +14.6 %, V +8.5 %,
+       IX -8.2 %, X +14.7 %, XII -13.5 % (line-level: I +9.2, II +2.3, III +14.9, V +10.3, IX -21.3, X +13.5, XII -18.5).
+07:55  Drawing class medians of fac_h / pitch (all 1,240 verified letters) viewed: tall ך ל ן ק ף ץ (1.17-1.63 x overall), short י (0.70).
+07:56  DECISION (before any copper letter measurement): primary statistic = letter-level pooled medians (sparse III 8-13 lines).
+       Control = column I (cuts 2, 3, 4): the only accepted column with |drawing contrast| < 5 % under the primary statistic.
+       Training (exploration only) = columns II, V, IX, X, XII (cuts 6, 11, 16, 17, 18, 21, 22).
+       Test = column III (cuts 7, 8). No copper letter-level measurement of cuts 2, 3, 4, 7, 8 before the freeze.
+       Image data source: A2's full-resolution cache SP/a2work/cache (read only); no new bucket read planned.
+07:58  scripts/explore.py (EXPLORATORY, training cuts 6, 11, 16, 17, 18, 21, 22; 288 placed letters): 16-variant grid (SIGMA 2/4 px,
+       EXT_HALFW 0.25/0.4 Lh, BG_PCT 10/30, quantiles 0.1-0.9 / 0.2-0.8). Numbers only; no image viewed. out/exploratory/explore_grid.json.
+08:00  scripts/explore2.py (EXPLORATORY, same training letters): inter-quantile rule against maximum-sum-segment rule (4 variants);
+       noise and compression estimates. out/exploratory/explore2.json. Chosen: SIGMA 2, EXT_HALFW 0.4, BG 10, q 0.2-0.8 (best class
+       validity: tall 1.135, yod 0.808, rho with drawing 0.37; split-half rho 0.572). Best of 20 variants: optimistic.
+08:01  scripts/train_table.py (EXPLORATORY, training letters, final parameters + pitch fallback): class-median table frozen as
+       out/class_medians.json; training gate values: split-half rho 0.546, spread 0.122, tall 1.16, yod 0.87, compression k 0.527,
+       within-region robust SD 0.23. Training column contrasts (copper vs drawing): II +0.075/+0.115, IX -0.148/-0.082,
+       V -0.135/+0.085, X +0.026/+0.147, XII +0.007/-0.135. Outputs moved to out/exploratory/ (train_summary.json, train_letters.csv).
+08:02  run_test.py smoke mode on training cuts only (test = X cuts 17-18, control = II cut 6): code check; output in SP/C3work/smoke_out.
+       Bootstrap 90 % interval of the difference -0.30 to +0.10 (about 0.4 wide).
+       Up to this point: no letter-level copper measurement and no image view of cuts 2, 3, 4, 7, 8. No image of any cut viewed by me.
+       No bucket read (all frames from A2's cache).

@@ -1,0 +1,112 @@
+{
+ "params": {
+  "SIGMA": 2.0,
+  "PITCH_HALFW": 1.5,
+  "PITCH_HALFH": 2.8,
+  "PITCH_MIN": 1.4,
+  "PITCH_MAX": 3.0,
+  "EXT_HALFW": 0.4,
+  "BG_PCT": 10.0,
+  "Q_LO": 0.2,
+  "Q_HI": 0.8
+ },
+ "n_placed": 288,
+ "n_own_pitch": 221,
+ "n_fallback": 61,
+ "n_measured": 282,
+ "split_half_all": {
+  "n": 282,
+  "rho": 0.5456002157545214,
+  "spread": 0.12192323455988702
+ },
+ "split_half_own": {
+  "n": 221,
+  "rho": 0.5721024603377544,
+  "spread": 0.11690728292856638
+ },
+ "split_half_fallback": {
+  "n": 61,
+  "rho": 0.4268112109994711,
+  "spread": 0.17141934115674504
+ },
+ "split_half_by_cut": {
+  "6": {
+   "n": 45,
+   "rho": 0.5542819499341237,
+   "spread": 0.1245454634935179
+  },
+  "11": {
+   "n": 31,
+   "rho": 0.5572580645161291,
+   "spread": 0.15413274009934058
+  },
+  "16": {
+   "n": 55,
+   "rho": 0.5321789321789323,
+   "spread": 0.11783616066117802
+  },
+  "17": {
+   "n": 6,
+   "rho": 0.7142857142857143,
+   "spread": 0.08739393479378088
+  },
+  "18": {
+   "n": 56,
+   "rho": 0.5103896103896104,
+   "spread": 0.10938687383755402
+  },
+  "21": {
+   "n": 44,
+   "rho": 0.7102184637068358,
+   "spread": 0.13015858609280187
+  },
+  "22": {
+   "n": 45,
+   "rho": 0.26126482213438734,
+   "spread": 0.14955992148825129
+  }
+ },
+ "class_validity": {
+  "n_tall": 33,
+  "n_yod": 24,
+  "n_rest": 225,
+  "tall_ratio": 1.1645055988263413,
+  "yod_ratio": 0.8745957598216763
+ },
+ "compression_k": 0.5269422451377439,
+ "compression_n_classes": 16,
+ "pitch_over_lh_median": 1.8381619263672726,
+ "training_column_contrasts": {
+  "II": {
+   "copper": 0.07459279134950658,
+   "drawing_same_letters": 0.11498662946169058,
+   "n_before": 29,
+   "n_after": 16
+  },
+  "IX": {
+   "copper": -0.14811278121375027,
+   "drawing_same_letters": -0.08229646321152151,
+   "n_before": 17,
+   "n_after": 29
+  },
+  "V": {
+   "copper": -0.13518096165426197,
+   "drawing_same_letters": 0.08466059916571855,
+   "n_before": 7,
+   "n_after": 21
+  },
+  "X": {
+   "copper": 0.025839600727771694,
+   "drawing_same_letters": 0.1469469106722232,
+   "n_before": 32,
+   "n_after": 22
+  },
+  "XII": {
+   "copper": 0.006673655935123257,
+   "drawing_same_letters": -0.13514765489287772,
+   "n_before": 52,
+   "n_after": 23
+  }
+ },
+ "robust_sd_rel_within_region_median": 0.23192038759642358
+}
