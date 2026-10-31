@@ -256,3 +256,28 @@ def hps_ncells(post, level):
     s = np.sort(post)[::-1]
     cs = np.cumsum(s)
     return int(np.searchsorted(cs, level) + 1)
+
+
+# ---- revision 2 (FORK_LOG entry 4) ----
+def c_prior_from_items(y, b):
+    """Grid likelihood of independent-describer items: y_i match in cell, b_i background match rate."""
+    y, b = np.asarray(y, float), np.asarray(b, float)
+    ll = np.array([np.sum(y * np.log(1 - (1 - c) * (1 - b)) + (1 - y) * np.log((1 - c) * (1 - b)))
+                   for c in C_GRID])
+    w = np.exp(ll - ll.max())
+    return w / w.sum()
+
+
+def posterior_v2(sc, region, c_prior, rho_grid=RHO_GRID_V1):
+    """Per-entry posterior with prior over (rho, c) = uniform(rho) x c_prior; no pooling."""
+    priors, M = sc.marginal(region, rho_grid)
+    tp = np.outer(np.full(len(rho_grid), 1 / len(rho_grid)), c_prior)
+    w = tp * M
+    w /= w.sum()
+    post = np.zeros(sc.L.n)
+    for ri in range(len(rho_grid)):
+        for ci in range(len(C_GRID)):
+            if w[ri, ci] > 0:
+                post += w[ri, ci] * priors[ri] * sc.LR[:, ci] / M[ri, ci]
+    prior_mix = priors.mean(0)
+    return post, prior_mix, w, priors

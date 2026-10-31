@@ -50,6 +50,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | l5658_survey_design_2026-10-30 | Whether a non-invasive survey could test the L56/58 lead, so a null counts | entries 21–23 (22 primary) | **done 30 Oct: not testable non-invasively (borderline; partly testable for 50 kg in the top 1.5 m); crack fill never excavated** ([RESULT](l5658_survey_design_2026-10-30/RESULT.md)) |
 | unknowns_value_2026-10-30 | Which missing records would settle the most sandbox verdicts | runs 1–22 | **done 30 Oct: Bar-Adon 1972, Humbert & Chambon 1994, Magen & Peleg 2018 pp. 58–66 and Stager 1976 settle the most units; 7 runs undecidable by any record** ([RESULT](unknowns_value_2026-10-30/RESULT.md)) |
 | baradon_buqeia_2026-10-30 | Run 25 addendum A1: read Bar-Adon 1972 (run 25's top record) for its six linked units | runs 1, 5, 7, 12 | **done 30 Oct: no unit changes; Maqari pool lies east of the fort (bearing note)** ([RESULT](baradon_buqeia_2026-10-30/RESULT.md)) |
+| landscape_map_2026-10-31 | Run 26: calibrated landscape map of the landmark words (every 300 m cell a hypothesis), gated on fake-entry calibration | entries with mapped landmarks (50) | **done 31 Oct: not obtained; no model passed both the gate and the 1940s-map check, so the scroll was not scored. Measured coverage: 27 % of 1940s-mapped features have a same-class modern record in their cell (recording rate c ≈ 0.1 after chance matches); class-level evidence moves the odds about 1.4×** ([RESULT](landscape_map_2026-10-31/RESULT.md)) |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
 
@@ -62,3 +63,5 @@ Round 4 approval (27 Oct, 14:26 Asia/Shanghai): "Try 1,2,4,5,6,7,8".
 Round 5 approval (30 Oct, 10:50 America/Los_Angeles): "#6, 7, 8 seem interesting" (of nine proposed avenues).
 
 Addendum A1 to run 25 (30 Oct, 14:02 America/Los_Angeles): "go for it".
+
+Run 26 approval (31 Oct, 08:56 America/Los_Angeles): "Sounds good. Shall we begin?"; final revision (09:16): "go ahead".

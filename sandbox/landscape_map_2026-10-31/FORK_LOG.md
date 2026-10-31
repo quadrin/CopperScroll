@@ -49,6 +49,8 @@ Result file `out/benchA_test2.csv`, code at 4a62fc6.
 
 **G1 passes** for both regions. **G2 passes.** Revision 1 + 1a is the model that scores the scroll. No further revision.
 
+(Superseded by entry 3: revision 1 did not score the scroll.)
+
 ## 3. Benchmark B and a flaw in revision 1, logged 31 Oct 16:13 UTC (commit f32e8ec); the scroll has not been scored
 
 **Benchmark B under revision 1** (`out/benchB_v1.csv`; 56 one-clue entries from the 1940s 1:20,000 maps in 9 windows): 50 % / 90 % set coverage 0.171 / 0.642 (R0) and 0.125 / 0.393 (R1); mean log10 BF −0.060 (−0.183 to 0.101) and −0.183 (−0.327 to −0.002). Below the 0.80 label threshold, and the evidence points slightly away from the truth. (Under the original model, for reference: `out/benchB_v0_original_model.csv`, 90 % coverage 0.592 / 0.626.)
@@ -82,3 +84,18 @@ Result file `out/benchA_test2.csv`, code at 4a62fc6.
 Each fold's items are scored with the c prior from the other fold. Coverage is reported on all 56. Exposure: the per-window results of revision 1 had been seen. The split is fixed by alphabetical order, not chosen.
 
 **Judged on:** test block 3, seeds 3001–4000 (gate G1, G2), and the B cross-fit (label). If the gate fails, the run stops without scoring the scroll.
+
+## 5. Revision 2 on test block 3 (seeds 3001–4000) and the B cross-fit, 31 Oct 16:18–16:21 UTC
+
+Code: `scripts/bench_v2.py` and the revision-2 functions in `scripts/model.py`. The c prior from all 56 items has mean 0.116 (`out/c_prior_v2.json`). Fold 1 has 2 of 24 items matched (prior mean 0.111); fold 2 has 13 of 32 (prior mean 0.210).
+
+| | 50 % set coverage | 90 % set coverage | mean log10 BF (95 % CI) |
+|---|---|---|---|
+| A, R0 | 0.147 | 0.822 | 0.142 (0.107–0.181) |
+| A, R1 | 0.171 | 0.809 | 0.147 (0.112–0.186) |
+| B cross-fit, R0 | 0.340 | 0.861 | 0.028 (−0.046–0.144) |
+| B cross-fit, R1 | 0.393 | 0.965 | 0.025 (−0.049–0.140) |
+
+**G1 fails. G2 passes** (the evidence is barely informative). B's 90 % coverage clears its 0.80 label, but the gate has failed. The cause, from `out/benchA_test3.csv`: only 12 % of the truths keep any other-class record after thinning at the measured rate, while the uniform ρ prior gives about half its mass to such cells. Under R0, 50 % coverage is 0.041 for truths not at a site and 0.918 for truths at a site.
+
+**The rule's revisions are exhausted. The run stops; the scroll is not scored.** Result: `RESULT.md`.
