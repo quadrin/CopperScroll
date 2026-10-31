@@ -1,0 +1,70 @@
+{
+ "cut": 13,
+ "film": "bla",
+ "n_frames": 4,
+ "frames": [
+  [
+   "UC15245115",
+   "ctr bot light"
+  ],
+  [
+   "UC15245166",
+   "ctr top light"
+  ],
+  [
+   "UC15245417",
+   "lft bot light"
+  ],
+  [
+   "UC15245469",
+   "lft top light"
+  ]
+ ],
+ "reference": "UC15245166",
+ "registration": [
+  {
+   "frame": "UC15245417",
+   "light": "lft bot light",
+   "group": "bot",
+   "to": "UC15245115",
+   "method": "sift_affine",
+   "inliers": 316,
+   "cv_med_px": 1.512,
+   "cv_p90_px": 2.608
+  },
+  {
+   "frame": "UC15245469",
+   "light": "lft top light",
+   "group": "top",
+   "to": "UC15245166",
+   "method": "sift_affine",
+   "inliers": 454,
+   "cv_med_px": 1.089,
+   "cv_p90_px": 2.212
+  },
+  {
+   "frame": "UC15245115",
+   "light": "ctr bot light",
+   "group": "bot",
+   "to": "UC15245166",
+   "method": "silhouette+laplacian ECC on group means",
+   "rot_deg": 0,
+   "ecc_sil": 0.959,
+   "ecc_tex": 0.306,
+   "tex_drift_px": 15.15,
+   "tile_shift_px": [
+    0.44,
+    7.2,
+    17.54,
+    77.55
+   ],
+   "accepted": false
+  }
+ ],
+ "n_used": 2,
+ "used": [
+  "ctr top light",
+  "lft top light"
+ ],
+ "status": "fewer than 3 registered frames"
+}

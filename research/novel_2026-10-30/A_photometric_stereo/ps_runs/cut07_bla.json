@@ -1,0 +1,201 @@
+{
+ "cut": 7,
+ "film": "bla",
+ "n_frames": 6,
+ "frames": [
+  [
+   "UC15245506",
+   "ctr bot light"
+  ],
+  [
+   "UC15246867",
+   "ctr top light"
+  ],
+  [
+   "UC15246321",
+   "lft bot light"
+  ],
+  [
+   "UC15246025",
+   "lft top light"
+  ],
+  [
+   "UC15246563",
+   "rt bot light"
+  ],
+  [
+   "UC15245662",
+   "rt top light"
+  ]
+ ],
+ "reference": "UC15246867",
+ "registration": [
+  {
+   "frame": "UC15246321",
+   "light": "lft bot light",
+   "group": "bot",
+   "to": "UC15245506",
+   "method": "sift_affine",
+   "inliers": 106,
+   "cv_med_px": 1.203,
+   "cv_p90_px": 2.307
+  },
+  {
+   "frame": "UC15246563",
+   "light": "rt bot light",
+   "group": "bot",
+   "to": "UC15245506",
+   "method": "sift_affine",
+   "inliers": 134,
+   "cv_med_px": 0.627,
+   "cv_p90_px": 2.067
+  },
+  {
+   "frame": "UC15246025",
+   "light": "lft top light",
+   "group": "top",
+   "to": "UC15246867",
+   "method": "sift_affine",
+   "inliers": 159,
+   "cv_med_px": 1.038,
+   "cv_p90_px": 2.118
+  },
+  {
+   "frame": "UC15245662",
+   "light": "rt top light",
+   "group": "top",
+   "to": "UC15246867",
+   "method": "sift_affine",
+   "inliers": 135,
+   "cv_med_px": 0.9,
+   "cv_p90_px": 1.749
+  },
+  {
+   "frame": "UC15245506",
+   "light": "ctr bot light",
+   "group": "bot",
+   "to": "UC15246867",
+   "method": "silhouette+laplacian ECC on group means",
+   "rot_deg": 0,
+   "ecc_sil": 0.996,
+   "ecc_tex": 0.325,
+   "tex_drift_px": 2.04,
+   "tile_shift_px": [
+    0.35,
+    0.8,
+    0.34,
+    0.33
+   ],
+   "accepted": true
+  }
+ ],
+ "n_used": 6,
+ "used": [
+  "ctr bot light",
+  "ctr top light",
+  "lft bot light",
+  "lft top light",
+  "rt bot light",
+  "rt top light"
+ ],
+ "phase_residual": [
+  {
+   "frame": "UC15245506",
+   "light": "ctr bot light",
+   "tile_shift_px": [
+    0.31,
+    0.14,
+    0.21,
+    0.05
+   ],
+   "tile_response": [
+    0.314,
+    0.264,
+    0.259,
+    0.324
+   ]
+  },
+  {
+   "frame": "UC15246321",
+   "light": "lft bot light",
+   "tile_shift_px": [
+    0.27,
+    3.47,
+    0.68,
+    24.6
+   ],
+   "tile_response": [
+    0.291,
+    0.063,
+    0.186,
+    0.066
+   ]
+  },
+  {
+   "frame": "UC15246025",
+   "light": "lft top light",
+   "tile_shift_px": [
+    0.71,
+    0.59,
+    0.39,
+    0.69
+   ],
+   "tile_response": [
+    0.312,
+    0.324,
+    0.451,
+    0.311
+   ]
+  },
+  {
+   "frame": "UC15246563",
+   "light": "rt bot light",
+   "tile_shift_px": [
+    0.96,
+    1.0,
+    35.72,
+    5.41
+   ],
+   "tile_response": [
+    0.181,
+    0.14,
+    0.06,
+    0.109
+   ]
+  },
+  {
+   "frame": "UC15245662",
+   "light": "rt top light",
+   "tile_shift_px": [
+    0.81,
+    0.33,
+    0.8,
+    0.54
+   ],
+   "tile_response": [
+    0.341,
+    0.264,
+    0.139,
+    0.128
+   ]
+  }
+ ],
+ "ps": {
+  "error": "index 0 is out of bounds for axis 0 with size 0",
+  "titled": {
+   "el_fit": 65.0,
+   "rel_resid": 0.027463416710516504,
+   "frame_scale": [
+    0.9381306626705465,
+    1.160682337240901,
+    1.2996706987557674,
+    0.7048400102986342,
+    0.8965328509004771,
+    1.118235328909491
+   ]
+  }
+ },
+ "lambertian_rel_median_abs_resid": NaN,
+ "mask_px": 127541,
+ "status": "ok"
+}

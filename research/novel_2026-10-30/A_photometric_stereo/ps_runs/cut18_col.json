@@ -1,0 +1,179 @@
+{
+ "cut": 18,
+ "film": "col",
+ "n_frames": 6,
+ "frames": [
+  [
+   "UC15246033",
+   "ctr bot light"
+  ],
+  [
+   "UC15246310",
+   "ctr top light"
+  ],
+  [
+   "UC15246597",
+   "lft bot light"
+  ],
+  [
+   "UC15245491",
+   "lft top light"
+  ],
+  [
+   "UC15246579",
+   "rt bot light"
+  ],
+  [
+   "UC15245672",
+   "rt top light"
+  ]
+ ],
+ "reference": "UC15246310",
+ "registration": [
+  {
+   "frame": "UC15246597",
+   "light": "lft bot light",
+   "group": "bot",
+   "to": "UC15246033",
+   "method": "sift_affine",
+   "inliers": 56,
+   "cv_med_px": 1.217,
+   "cv_p90_px": 2.528
+  },
+  {
+   "frame": "UC15246579",
+   "light": "rt bot light",
+   "group": "bot",
+   "to": "UC15246033",
+   "method": "sift_affine",
+   "inliers": 90,
+   "cv_med_px": 1.493,
+   "cv_p90_px": 2.553
+  },
+  {
+   "frame": "UC15245491",
+   "light": "lft top light",
+   "group": "top",
+   "to": "UC15246310",
+   "method": "sift_affine",
+   "inliers": 39,
+   "cv_med_px": 1.489,
+   "cv_p90_px": 3.207
+  },
+  {
+   "frame": "UC15245672",
+   "light": "rt top light",
+   "group": "top",
+   "to": "UC15246310",
+   "method": "sift_affine",
+   "inliers": 49,
+   "cv_med_px": 1.181,
+   "cv_p90_px": 2.645
+  },
+  {
+   "frame": "UC15246033",
+   "light": "ctr bot light",
+   "group": "bot",
+   "to": "UC15246310",
+   "method": "silhouette+laplacian ECC on group means",
+   "rot_deg": 0,
+   "ecc_sil": 0.958,
+   "ecc_tex": 0.251,
+   "tex_drift_px": 9.33,
+   "tile_shift_px": [
+    3.47,
+    1.15,
+    0.35,
+    0.21
+   ],
+   "accepted": false
+  }
+ ],
+ "n_used": 3,
+ "used": [
+  "ctr top light",
+  "lft top light",
+  "rt top light"
+ ],
+ "phase_residual": [
+  {
+   "frame": "UC15245491",
+   "light": "lft top light",
+   "tile_shift_px": [
+    74.25,
+    10.0,
+    1.59,
+    3.34
+   ],
+   "tile_response": [
+    0.042,
+    0.018,
+    0.059,
+    0.12
+   ]
+  },
+  {
+   "frame": "UC15245672",
+   "light": "rt top light",
+   "tile_shift_px": [
+    6.0,
+    2.53,
+    0.75,
+    0.33
+   ],
+   "tile_response": [
+    0.016,
+    0.14,
+    0.278,
+    0.395
+   ]
+  }
+ ],
+ "ps": {
+  "k": 3,
+  "sv_ratio": [
+   1.0,
+   0.42089461741022266,
+   0.3733798851755464
+  ],
+  "albedo_M_posdef": false,
+  "curl_ratio": 0.8753466317294061,
+  "curl_ratio_other_mirror": 0.9250454963333068,
+  "psi": 11.0,
+  "mirror": 1,
+  "flip_score_chosen": 0.9461797069997139,
+  "flip_score_other": -0.9461797069997137,
+  "light_az_est": [
+   -61.637020061174134,
+   168.79004730789234,
+   50.70072209711037
+  ],
+  "light_az_title": [
+   90.0,
+   135.0,
+   45.0
+  ],
+  "light_elev_est": [
+   0.09908795618869755,
+   0.04192015352718621,
+   0.037515602421631856
+  ],
+  "az_err_deg": [
+   -151.63702006117413,
+   33.79004730789234,
+   5.700722097110372
+  ],
+  "titled": {
+   "el_fit": 25.0,
+   "rel_resid": 1.4810993672821577e-31,
+   "frame_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ },
+ "lambertian_rel_median_abs_resid": NaN,
+ "mask_px": 224210,
+ "status": "ok"
+}

@@ -1,0 +1,248 @@
+{
+ "cut": 6,
+ "film": "bla",
+ "n_frames": 6,
+ "frames": [
+  [
+   "UC15246010",
+   "ctr bot light"
+  ],
+  [
+   "UC15246329",
+   "ctr top light"
+  ],
+  [
+   "UC15246560",
+   "lft bot light"
+  ],
+  [
+   "UC15246358",
+   "lft top light"
+  ],
+  [
+   "UC15246871",
+   "rt bot light"
+  ],
+  [
+   "UC15246588",
+   "rt top light"
+  ]
+ ],
+ "reference": "UC15246329",
+ "registration": [
+  {
+   "frame": "UC15246560",
+   "light": "lft bot light",
+   "group": "bot",
+   "to": "UC15246010",
+   "method": "sift_affine",
+   "inliers": 161,
+   "cv_med_px": 1.278,
+   "cv_p90_px": 2.421
+  },
+  {
+   "frame": "UC15246871",
+   "light": "rt bot light",
+   "group": "bot",
+   "to": "UC15246010",
+   "method": "sift_affine",
+   "inliers": 48,
+   "cv_med_px": 1.195,
+   "cv_p90_px": 2.061
+  },
+  {
+   "frame": "UC15246358",
+   "light": "lft top light",
+   "group": "top",
+   "to": "UC15246329",
+   "method": "sift_affine",
+   "inliers": 202,
+   "cv_med_px": 1.181,
+   "cv_p90_px": 2.309
+  },
+  {
+   "frame": "UC15246588",
+   "light": "rt top light",
+   "group": "top",
+   "to": "UC15246329",
+   "method": "sift_affine",
+   "inliers": 67,
+   "cv_med_px": 1.1,
+   "cv_p90_px": 2.675
+  },
+  {
+   "frame": "UC15246010",
+   "light": "ctr bot light",
+   "group": "bot",
+   "to": "UC15246329",
+   "method": "silhouette+laplacian ECC on group means",
+   "rot_deg": 0,
+   "ecc_sil": 0.984,
+   "ecc_tex": 0.3,
+   "tex_drift_px": 3.66,
+   "tile_shift_px": [
+    0.47,
+    0.55,
+    0.49,
+    0.29
+   ],
+   "accepted": true
+  }
+ ],
+ "n_used": 6,
+ "used": [
+  "ctr bot light",
+  "ctr top light",
+  "lft bot light",
+  "lft top light",
+  "rt bot light",
+  "rt top light"
+ ],
+ "phase_residual": [
+  {
+   "frame": "UC15246010",
+   "light": "ctr bot light",
+   "tile_shift_px": [
+    0.24,
+    0.06,
+    0.09,
+    0.34
+   ],
+   "tile_response": [
+    0.292,
+    0.298,
+    0.196,
+    0.191
+   ]
+  },
+  {
+   "frame": "UC15246560",
+   "light": "lft bot light",
+   "tile_shift_px": [
+    4.69,
+    6.94,
+    2.99,
+    6.02
+   ],
+   "tile_response": [
+    0.092,
+    0.116,
+    0.137,
+    0.036
+   ]
+  },
+  {
+   "frame": "UC15246358",
+   "light": "lft top light",
+   "tile_shift_px": [
+    0.91,
+    1.52,
+    0.85,
+    0.13
+   ],
+   "tile_response": [
+    0.235,
+    0.298,
+    0.394,
+    0.3
+   ]
+  },
+  {
+   "frame": "UC15246871",
+   "light": "rt bot light",
+   "tile_shift_px": [
+    1.8,
+    0.8,
+    24.87,
+    34.84
+   ],
+   "tile_response": [
+    0.159,
+    0.112,
+    0.018,
+    -0.027
+   ]
+  },
+  {
+   "frame": "UC15246588",
+   "light": "rt top light",
+   "tile_shift_px": [
+    35.23,
+    2.32,
+    4.91,
+    0.33
+   ],
+   "tile_response": [
+    0.065,
+    0.258,
+    0.213,
+    0.315
+   ]
+  }
+ ],
+ "ps": {
+  "k": 6,
+  "sv_ratio": [
+   1.0,
+   0.2390710365777408,
+   0.2142559039484754,
+   0.13963390995177796,
+   0.128425264987216,
+   0.09923007100230014
+  ],
+  "albedo_M_posdef": false,
+  "curl_ratio": 0.6386949095199153,
+  "curl_ratio_other_mirror": 0.6394443724833438,
+  "psi": 85.5,
+  "mirror": -1,
+  "flip_score_chosen": 1.968234501040408,
+  "flip_score_other": -1.9682345010404076,
+  "light_az_est": [
+   -94.64413875226415,
+   85.39505919759105,
+   -94.19680869425075,
+   -93.79307578694385,
+   -94.6736669138942,
+   -95.40535060566361
+  ],
+  "light_az_title": [
+   270.0,
+   90.0,
+   225.0,
+   135.0,
+   315.0,
+   45.0
+  ],
+  "light_elev_est": [
+   0.07949983896009782,
+   0.609631985639427,
+   -0.0246856133799162,
+   0.3989570328970825,
+   0.07481269840098694,
+   0.65888569429896
+  ],
+  "az_err_deg": [
+   -4.644138752264155,
+   -4.604940802408947,
+   40.80319130574924,
+   131.20692421305614,
+   -49.67366691389418,
+   -140.4053506056636
+  ],
+  "titled": {
+   "el_fit": 25.0,
+   "rel_resid": 0.034574506972097165,
+   "frame_scale": [
+    1.1658793721576666,
+    0.9351356718087428,
+    0.8766858305655699,
+    1.2198478350811914,
+    0.9545242775805823,
+    0.8985352755147429
+   ]
+  }
+ },
+ "lambertian_rel_median_abs_resid": NaN,
+ "mask_px": 126919,
+ "status": "ok"
+}

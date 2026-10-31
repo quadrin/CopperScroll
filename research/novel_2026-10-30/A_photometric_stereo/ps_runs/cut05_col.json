@@ -1,0 +1,248 @@
+{
+ "cut": 5,
+ "film": "col",
+ "n_frames": 6,
+ "frames": [
+  [
+   "UC15246350",
+   "ctr bot light"
+  ],
+  [
+   "UC15246584",
+   "ctr top light"
+  ],
+  [
+   "UC15245508",
+   "lft bot light"
+  ],
+  [
+   "UC15246881",
+   "lft top light"
+  ],
+  [
+   "UC15246328",
+   "rt bot light"
+  ],
+  [
+   "UC15246027",
+   "rt top light"
+  ]
+ ],
+ "reference": "UC15246584",
+ "registration": [
+  {
+   "frame": "UC15245508",
+   "light": "lft bot light",
+   "group": "bot",
+   "to": "UC15246350",
+   "method": "sift_affine",
+   "inliers": 133,
+   "cv_med_px": 1.218,
+   "cv_p90_px": 2.24
+  },
+  {
+   "frame": "UC15246328",
+   "light": "rt bot light",
+   "group": "bot",
+   "to": "UC15246350",
+   "method": "sift_affine",
+   "inliers": 45,
+   "cv_med_px": 0.98,
+   "cv_p90_px": 2.13
+  },
+  {
+   "frame": "UC15246881",
+   "light": "lft top light",
+   "group": "top",
+   "to": "UC15246584",
+   "method": "sift_affine",
+   "inliers": 138,
+   "cv_med_px": 1.142,
+   "cv_p90_px": 2.102
+  },
+  {
+   "frame": "UC15246027",
+   "light": "rt top light",
+   "group": "top",
+   "to": "UC15246584",
+   "method": "sift_affine",
+   "inliers": 72,
+   "cv_med_px": 1.211,
+   "cv_p90_px": 3.06
+  },
+  {
+   "frame": "UC15246350",
+   "light": "ctr bot light",
+   "group": "bot",
+   "to": "UC15246584",
+   "method": "silhouette+laplacian ECC on group means",
+   "rot_deg": 0,
+   "ecc_sil": 0.99,
+   "ecc_tex": 0.316,
+   "tex_drift_px": 1.69,
+   "tile_shift_px": [
+    0.3,
+    0.43,
+    0.11,
+    0.05
+   ],
+   "accepted": true
+  }
+ ],
+ "n_used": 6,
+ "used": [
+  "ctr bot light",
+  "ctr top light",
+  "lft bot light",
+  "lft top light",
+  "rt bot light",
+  "rt top light"
+ ],
+ "phase_residual": [
+  {
+   "frame": "UC15246350",
+   "light": "ctr bot light",
+   "tile_shift_px": [
+    0.18,
+    1.37,
+    1.1,
+    1.77
+   ],
+   "tile_response": [
+    0.363,
+    0.269,
+    0.232,
+    0.272
+   ]
+  },
+  {
+   "frame": "UC15245508",
+   "light": "lft bot light",
+   "tile_shift_px": [
+    0.68,
+    1.65,
+    1.17,
+    11.5
+   ],
+   "tile_response": [
+    0.101,
+    0.213,
+    0.063,
+    0.066
+   ]
+  },
+  {
+   "frame": "UC15246881",
+   "light": "lft top light",
+   "tile_shift_px": [
+    1.81,
+    0.63,
+    1.64,
+    0.41
+   ],
+   "tile_response": [
+    0.244,
+    0.482,
+    0.444,
+    0.217
+   ]
+  },
+  {
+   "frame": "UC15246328",
+   "light": "rt bot light",
+   "tile_shift_px": [
+    43.8,
+    16.44,
+    1.26,
+    37.22
+   ],
+   "tile_response": [
+    0.028,
+    0.031,
+    0.152,
+    0.044
+   ]
+  },
+  {
+   "frame": "UC15246027",
+   "light": "rt top light",
+   "tile_shift_px": [
+    50.57,
+    1.51,
+    1.53,
+    0.98
+   ],
+   "tile_response": [
+    0.032,
+    0.132,
+    0.278,
+    0.147
+   ]
+  }
+ ],
+ "ps": {
+  "k": 6,
+  "sv_ratio": [
+   1.0,
+   0.3393990601096058,
+   0.28004387910251877,
+   0.24276558783869426,
+   0.18145646487329084,
+   0.12675076570543556
+  ],
+  "albedo_M_posdef": false,
+  "curl_ratio": 0.9385408792489967,
+  "curl_ratio_other_mirror": 0.9441677517910612,
+  "psi": 103.0,
+  "mirror": 1,
+  "flip_score_chosen": 4.624798792900589,
+  "flip_score_other": -4.624798792900589,
+  "light_az_est": [
+   -76.84977481061273,
+   103.05058744423975,
+   -74.03347149623443,
+   100.9287276677979,
+   -76.95994245812173,
+   104.01787555399612
+  ],
+  "light_az_title": [
+   270.0,
+   90.0,
+   225.0,
+   135.0,
+   315.0,
+   45.0
+  ],
+  "light_elev_est": [
+   0.05744406244312188,
+   0.10477323564446744,
+   0.18239977066513147,
+   0.10772485830949327,
+   0.08763420567455721,
+   0.07571158392183204
+  ],
+  "az_err_deg": [
+   13.150225189387243,
+   13.050587444239738,
+   60.96652850376557,
+   -34.07127233220211,
+   -31.95994245812176,
+   59.017875553996134
+  ],
+  "titled": {
+   "el_fit": 15.0,
+   "rel_resid": 0.0397566660097782,
+   "frame_scale": [
+    0.9339232207833792,
+    1.2492152203631801,
+    1.1202632131541828,
+    1.0531181605649294,
+    0.8771948021293067,
+    0.8282440653151909
+   ]
+  }
+ },
+ "lambertian_rel_median_abs_resid": NaN,
+ "mask_px": 125332,
+ "status": "ok"
+}

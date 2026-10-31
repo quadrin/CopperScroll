@@ -1,0 +1,97 @@
+{
+ "cut": 11,
+ "film": "bla",
+ "n_frames": 6,
+ "frames": [
+  [
+   "UC15245198",
+   "ctr bot light"
+  ],
+  [
+   "UC15245459",
+   "ctr top light"
+  ],
+  [
+   "UC15245151",
+   "lft bot light"
+  ],
+  [
+   "UC15245482",
+   "lft top light"
+  ],
+  [
+   "UC15245442",
+   "rt bot light"
+  ],
+  [
+   "UC15245471",
+   "rt top light"
+  ]
+ ],
+ "reference": "UC15245459",
+ "registration": [
+  {
+   "frame": "UC15245151",
+   "light": "lft bot light",
+   "group": "bot",
+   "to": "UC15245198",
+   "method": "sift_affine",
+   "inliers": 249,
+   "cv_med_px": 1.302,
+   "cv_p90_px": 2.204
+  },
+  {
+   "frame": "UC15245442",
+   "light": "rt bot light",
+   "group": "bot",
+   "to": "UC15245198",
+   "method": "sift_affine",
+   "inliers": 84,
+   "cv_med_px": 1.274,
+   "cv_p90_px": 2.449
+  },
+  {
+   "frame": "UC15245482",
+   "light": "lft top light",
+   "group": "top",
+   "to": "UC15245459",
+   "method": "sift_affine",
+   "inliers": 460,
+   "cv_med_px": 1.364,
+   "cv_p90_px": 2.529
+  },
+  {
+   "frame": "UC15245471",
+   "light": "rt top light",
+   "group": "top",
+   "to": "UC15245459",
+   "method": "sift_affine",
+   "failed": true,
+   "inliers": 4
+  },
+  {
+   "frame": "UC15245198",
+   "light": "ctr bot light",
+   "group": "bot",
+   "to": "UC15245459",
+   "method": "silhouette+laplacian ECC on group means",
+   "rot_deg": 0,
+   "ecc_sil": 0.964,
+   "ecc_tex": 0.28,
+   "tex_drift_px": 3.69,
+   "tile_shift_px": [
+    1.16,
+    0.2,
+    1.34,
+    2.67
+   ],
+   "accepted": false
+  }
+ ],
+ "n_used": 2,
+ "used": [
+  "ctr top light",
+  "lft top light"
+ ],
+ "status": "fewer than 3 registered frames"
+}
