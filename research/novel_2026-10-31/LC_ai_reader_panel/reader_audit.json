@@ -1,0 +1,108 @@
+{
+ "A": {
+  "model": "Claude Opus",
+  "tool_calls": {
+   "Read:panel_packet/INSTRUCTIONS.md": 1,
+   "Read:panel_packet/responses_template.csv": 1,
+   "Read:panel_packet/items/<item>.png": 157,
+   "Write:panel_responses/A/draft_A.txt": 1,
+   "Edit:panel_responses/A/draft_A.txt": 11,
+   "Write:panel_responses/A/responses_A.csv": 1,
+   "SubagentHandback:": 1
+  },
+  "calls_outside_packet_or_own_folder": [],
+  "answer_file_writes": 1,
+  "distinct_items_viewed_before_answer_file": 93,
+  "rows": 93,
+  "locked_utc_written": [
+   "2026-10-31T12:00:00Z"
+  ],
+  "answer_file_saved_utc": "2026-10-31T17:02:40Z",
+  "grades": {
+   "illegible": 39,
+   "possible": 40,
+   "probable": 10,
+   "trace only": 4
+  },
+  "recognized_location_not_no": 0,
+  "note": "locked_utc is the reader's estimate (no clock); the file save time is the record. Reported two overlapping window pairs (LC-38099C/LC-A89E98, LC-1EB0B6/LC-928A1A): neighbouring slots on cut 6, II 3 and II 6."
+ },
+ "B": {
+  "model": "Claude Sonnet",
+  "tool_calls": {
+   "Read:panel_packet/INSTRUCTIONS.md": 1,
+   "Read:panel_packet/responses_template.csv": 1,
+   "Read:panel_packet/items/<item>.png": 1019,
+   "Write:panel_responses/B/draft_notes_B.txt": 39,
+   "Edit:panel_responses/B/draft_notes_B.txt": 41,
+   "Read:panel_responses/B/draft_notes_B.txt": 1,
+   "Write:panel_responses/B/responses_B.csv": 1,
+   "Write:panel_responses/B/draft_notes_B_batch2.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch3.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch4.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch5.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch6.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch7.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch8.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch9.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch10.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch11.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch12.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch13.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch14.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch15.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch16.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch17.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch18.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch19.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch20.txt": 1,
+   "Write:panel_responses/B/draft_notes_B_batch21.txt": 1
+  },
+  "calls_outside_packet_or_own_folder": [],
+  "answer_file_writes": 1,
+  "distinct_items_viewed_before_answer_file": 93,
+  "rows": 93,
+  "locked_utc_written": [
+   "2026-10-31T18:00:00Z"
+  ],
+  "answer_file_saved_utc": "2026-10-31T18:16:52Z",
+  "grades": {
+   "illegible": 26,
+   "possible": 34,
+   "trace only": 24,
+   "probable": 9
+  },
+  "recognized_location_not_no": 0,
+  "note": "Stopped by an API safety-filter error (invalid_request) about 15 min after saving and locking responses_B.csv; the file was never rewritten. The run after the lock was re-checking only."
+ },
+ "C": {
+  "model": "Claude Fable",
+  "tool_calls": {
+   "Read:panel_packet/INSTRUCTIONS.md": 1,
+   "Read:panel_packet/responses_template.csv": 1,
+   "Read:panel_packet/items/<item>.png": 126,
+   "Write:panel_responses/C/working_notes_C.txt": 1,
+   "Write:panel_responses/C/working_notes_C_01.txt": 1,
+   "Write:panel_responses/C/working_notes_C_02.txt": 1,
+   "Write:panel_responses/C/working_notes_C_03.txt": 1,
+   "Write:panel_responses/C/working_notes_C_04.txt": 1,
+   "Write:panel_responses/C/responses_C.csv": 1,
+   "SubagentHandback:": 1
+  },
+  "calls_outside_packet_or_own_folder": [],
+  "answer_file_writes": 1,
+  "distinct_items_viewed_before_answer_file": 93,
+  "rows": 93,
+  "locked_utc_written": [
+   "2026-10-31T19:30:00Z"
+  ],
+  "answer_file_saved_utc": "2026-10-31T17:12:04Z",
+  "grades": {
+   "illegible": 16,
+   "possible": 62,
+   "probable": 15
+  },
+  "recognized_location_not_no": 0,
+  "note": "locked_utc is the reader's estimate (no clock); the file save time is the record."
+ }
+}

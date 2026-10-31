@@ -1,0 +1,1022 @@
+{
+ "frozen_protocol_readers": [
+  "A",
+  "B"
+ ],
+ "key_sha256": "c83877298bf61844ea283969eae09e47e99b71863d7c262841659cc748276d87",
+ "readers": [
+  "A",
+  "B",
+  "C"
+ ],
+ "series": {
+  "S1": {
+   "BK": {
+    "joint": {
+     "agreement_rate": 0.875,
+     "agreements": 14,
+     "agreements_wrong": 4,
+     "compared": 16,
+     "damage_matched_decisive": 0,
+     "decisive": 0,
+     "decisive_correct": 0,
+     "decisive_precision": null,
+     "decisive_precision_lower_bound": null,
+     "decisive_wrong": 0,
+     "decisive_wrong_damage_matched": 0,
+     "decisive_wrong_items": [],
+     "decoy_decisive": 0,
+     "decoy_decisive_items": []
+    },
+    "n_controls": 16,
+    "n_damage_matched": 6,
+    "n_decoys": 4,
+    "per_reader": {
+     "A": {
+      "abstained": 5,
+      "accuracy": 0.375,
+      "accuracy_when_answering": 0.5455,
+      "balanced_accuracy": 0.3492,
+      "certain_calls": 0,
+      "certain_correct": 0,
+      "certain_precision": null,
+      "certain_precision_lower_bound": null,
+      "confusion_matrix_all_grades": {
+       "illegible": {
+        "illegible": 4,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       },
+       "ב": {
+        "illegible": 3,
+        "other": 0,
+        "ב": 5,
+        "כ": 1
+       },
+       "כ": {
+        "illegible": 2,
+        "other": 1,
+        "ב": 3,
+        "כ": 1
+       }
+      },
+      "confusion_matrix_certain": {
+       "illegible": {
+        "illegible": 0,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       },
+       "ב": {
+        "illegible": 0,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       },
+       "כ": {
+        "illegible": 0,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       }
+      },
+      "correct": 6,
+      "decoy_overcalls_certain": 0,
+      "decoy_overcalls_certain_or_probable": 0,
+      "decoy_weak_calls": 0,
+      "decoys_seen": 4,
+      "likelihood_ratios": {
+       "ב": {
+        "called_when_other": 3,
+        "called_when_true": 5,
+        "false_call_rate": 0.4286,
+        "lr_lower_bound": 0.3245,
+        "lr_point": 1.2963,
+        "n_other": 7,
+        "n_true": 9,
+        "sensitivity": 0.5556
+       },
+       "כ": {
+        "called_when_other": 1,
+        "called_when_true": 1,
+        "false_call_rate": 0.1111,
+        "lr_lower_bound": 0.017,
+        "lr_point": 1.2857,
+        "n_other": 9,
+        "n_true": 7,
+        "sensitivity": 0.1429
+       }
+      },
+      "n_controls_answered": 16,
+      "per_class": {
+       "ב": {
+        "correct": 5,
+        "n": 9
+       },
+       "כ": {
+        "correct": 1,
+        "n": 7
+       }
+      },
+      "recognized_locations": 0,
+      "wrong": 5
+     },
+     "B": {
+      "abstained": 4,
+      "accuracy": 0.4375,
+      "accuracy_when_answering": 0.5833,
+      "balanced_accuracy": 0.4206,
+      "certain_calls": 0,
+      "certain_correct": 0,
+      "certain_precision": null,
+      "certain_precision_lower_bound": null,
+      "confusion_matrix_all_grades": {
+       "illegible": {
+        "illegible": 4,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       },
+       "ב": {
+        "illegible": 3,
+        "other": 0,
+        "ב": 5,
+        "כ": 1
+       },
+       "כ": {
+        "illegible": 1,
+        "other": 0,
+        "ב": 4,
+        "כ": 2
+       }
+      },
+      "confusion_matrix_certain": {
+       "illegible": {
+        "illegible": 0,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       },
+       "ב": {
+        "illegible": 0,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       },
+       "כ": {
+        "illegible": 0,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       }
+      },
+      "correct": 7,
+      "decoy_overcalls_certain": 0,
+      "decoy_overcalls_certain_or_probable": 0,
+      "decoy_weak_calls": 0,
+      "decoys_seen": 4,
+      "likelihood_ratios": {
+       "ב": {
+        "called_when_other": 4,
+        "called_when_true": 5,
+        "false_call_rate": 0.5714,
+        "lr_lower_bound": 0.2885,
+        "lr_point": 0.9722,
+        "n_other": 7,
+        "n_true": 9,
+        "sensitivity": 0.5556
+       },
+       "כ": {
+        "called_when_other": 1,
+        "called_when_true": 2,
+        "false_call_rate": 0.1111,
+        "lr_lower_bound": 0.1244,
+        "lr_point": 2.5714,
+        "n_other": 9,
+        "n_true": 7,
+        "sensitivity": 0.2857
+       }
+      },
+      "n_controls_answered": 16,
+      "per_class": {
+       "ב": {
+        "correct": 5,
+        "n": 9
+       },
+       "כ": {
+        "correct": 2,
+        "n": 7
+       }
+      },
+      "recognized_locations": 0,
+      "wrong": 5
+     },
+     "C": {
+      "abstained": 1,
+      "accuracy": 0.25,
+      "accuracy_when_answering": 0.2667,
+      "balanced_accuracy": 0.2381,
+      "certain_calls": 0,
+      "certain_correct": 0,
+      "certain_precision": null,
+      "certain_precision_lower_bound": null,
+      "confusion_matrix_all_grades": {
+       "illegible": {
+        "illegible": 4,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       },
+       "ב": {
+        "illegible": 0,
+        "other": 2,
+        "ב": 3,
+        "כ": 4
+       },
+       "כ": {
+        "illegible": 1,
+        "other": 2,
+        "ב": 3,
+        "כ": 1
+       }
+      },
+      "confusion_matrix_certain": {
+       "illegible": {
+        "illegible": 0,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       },
+       "ב": {
+        "illegible": 0,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       },
+       "כ": {
+        "illegible": 0,
+        "other": 0,
+        "ב": 0,
+        "כ": 0
+       }
+      },
+      "correct": 4,
+      "decoy_overcalls_certain": 0,
+      "decoy_overcalls_certain_or_probable": 0,
+      "decoy_weak_calls": 0,
+      "decoys_seen": 4,
+      "likelihood_ratios": {
+       "ב": {
+        "called_when_other": 3,
+        "called_when_true": 3,
+        "false_call_rate": 0.4286,
+        "lr_lower_bound": 0.1262,
+        "lr_point": 0.7778,
+        "n_other": 7,
+        "n_true": 9,
+        "sensitivity": 0.3333
+       },
+       "כ": {
+        "called_when_other": 4,
+        "called_when_true": 1,
+        "false_call_rate": 0.4444,
+        "lr_lower_bound": 0.0098,
+        "lr_point": 0.3214,
+        "n_other": 9,
+        "n_true": 7,
+        "sensitivity": 0.1429
+       }
+      },
+      "n_controls_answered": 16,
+      "per_class": {
+       "ב": {
+        "correct": 3,
+        "n": 9
+       },
+       "כ": {
+        "correct": 1,
+        "n": 7
+       }
+      },
+      "recognized_locations": 0,
+      "wrong": 11
+     }
+    },
+    "reasons": [
+     "16 keyed controls; minimum 40",
+     "9 controls of class ב; minimum 12",
+     "7 controls of class כ; minimum 12",
+     "6 damage-matched controls; minimum 20"
+    ],
+    "statement": "[S1 / BK: bet or kaf] INSUFFICIENT.\nThe frozen decisive rule (both readers certain and asserting the same identity) fired on 0 of 16 keyed controls; 0 of those calls were wrong (no precision can be estimated). It fired on 0 of 6 damage-matched controls and on 0 of 4 decoys.\nAgreement alone measures nothing about accuracy: the readers gave the same answer on 14 of 16 controls, and 4 of those agreements were wrong.\nA decisive target call for this question in this series stays recorded under the frozen protocol, but it is not empirically calibrated. No downstream claim may rest on it; treat the component as unresolved.\n  - 16 keyed controls; minimum 40\n  - 9 controls of class ב; minimum 12\n  - 7 controls of class כ; minimum 12\n  - 6 damage-matched controls; minimum 20",
+    "status": "INSUFFICIENT",
+    "targets": []
+   },
+   "HH": {
+    "joint": {
+     "agreement_rate": 0.6522,
+     "agreements": 30,
+     "agreements_wrong": 14,
+     "compared": 46,
+     "damage_matched_decisive": 0,
+     "decisive": 0,
+     "decisive_correct": 0,
+     "decisive_precision": null,
+     "decisive_precision_lower_bound": null,
+     "decisive_wrong": 0,
+     "decisive_wrong_damage_matched": 0,
+     "decisive_wrong_items": [],
+     "decoy_decisive": 0,
+     "decoy_decisive_items": []
+    },
+    "n_controls": 46,
+    "n_damage_matched": 23,
+    "n_decoys": 4,
+    "per_reader": {
+     "A": {
+      "abstained": 17,
+      "accuracy": 0.2391,
+      "accuracy_when_answering": 0.3793,
+      "balanced_accuracy": 0.2851,
+      "certain_calls": 0,
+      "certain_correct": 0,
+      "certain_precision": null,
+      "certain_precision_lower_bound": null,
+      "confusion_matrix_all_grades": {
+       "illegible": {
+        "illegible": 4,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ה": {
+        "illegible": 8,
+        "other": 0,
+        "ה": 1,
+        "ח": 11,
+        "ת": 1
+       },
+       "ח": {
+        "illegible": 4,
+        "other": 1,
+        "ה": 1,
+        "ח": 6,
+        "ת": 0
+       },
+       "ת": {
+        "illegible": 5,
+        "other": 1,
+        "ה": 1,
+        "ח": 2,
+        "ת": 4
+       }
+      },
+      "confusion_matrix_certain": {
+       "illegible": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ה": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ח": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ת": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       }
+      },
+      "correct": 11,
+      "decoy_overcalls_certain": 0,
+      "decoy_overcalls_certain_or_probable": 0,
+      "decoy_weak_calls": 0,
+      "decoys_seen": 4,
+      "likelihood_ratios": {
+       "ה": {
+        "called_when_other": 2,
+        "called_when_true": 1,
+        "false_call_rate": 0.08,
+        "lr_lower_bound": 0.0106,
+        "lr_point": 0.5952,
+        "n_other": 25,
+        "n_true": 21,
+        "sensitivity": 0.0476
+       },
+       "ח": {
+        "called_when_other": 13,
+        "called_when_true": 6,
+        "false_call_rate": 0.3824,
+        "lr_lower_bound": 0.4562,
+        "lr_point": 1.3077,
+        "n_other": 34,
+        "n_true": 12,
+        "sensitivity": 0.5
+       },
+       "ת": {
+        "called_when_other": 1,
+        "called_when_true": 4,
+        "false_call_rate": 0.0303,
+        "lr_lower_bound": 0.8293,
+        "lr_point": 10.1538,
+        "n_other": 33,
+        "n_true": 13,
+        "sensitivity": 0.3077
+       }
+      },
+      "n_controls_answered": 46,
+      "per_class": {
+       "ה": {
+        "correct": 1,
+        "n": 21
+       },
+       "ח": {
+        "correct": 6,
+        "n": 12
+       },
+       "ת": {
+        "correct": 4,
+        "n": 13
+       }
+      },
+      "recognized_locations": 0,
+      "wrong": 18
+     },
+     "B": {
+      "abstained": 8,
+      "accuracy": 0.2609,
+      "accuracy_when_answering": 0.3158,
+      "balanced_accuracy": 0.3269,
+      "certain_calls": 0,
+      "certain_correct": 0,
+      "certain_precision": null,
+      "certain_precision_lower_bound": null,
+      "confusion_matrix_all_grades": {
+       "illegible": {
+        "illegible": 4,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ה": {
+        "illegible": 3,
+        "other": 0,
+        "ה": 0,
+        "ח": 18,
+        "ת": 0
+       },
+       "ח": {
+        "illegible": 1,
+        "other": 1,
+        "ה": 0,
+        "ח": 9,
+        "ת": 1
+       },
+       "ת": {
+        "illegible": 4,
+        "other": 1,
+        "ה": 0,
+        "ח": 5,
+        "ת": 3
+       }
+      },
+      "confusion_matrix_certain": {
+       "illegible": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ה": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ח": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ת": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       }
+      },
+      "correct": 12,
+      "decoy_overcalls_certain": 0,
+      "decoy_overcalls_certain_or_probable": 0,
+      "decoy_weak_calls": 0,
+      "decoys_seen": 4,
+      "likelihood_ratios": {
+       "ה": {
+        "called_when_other": 0,
+        "called_when_true": 0,
+        "false_call_rate": 0.0,
+        "lr_lower_bound": 0.0,
+        "lr_point": null,
+        "n_other": 25,
+        "n_true": 21,
+        "sensitivity": 0.0
+       },
+       "ח": {
+        "called_when_other": 23,
+        "called_when_true": 9,
+        "false_call_rate": 0.6765,
+        "lr_lower_bound": 0.5859,
+        "lr_point": 1.1087,
+        "n_other": 34,
+        "n_true": 12,
+        "sensitivity": 0.75
+       },
+       "ת": {
+        "called_when_other": 1,
+        "called_when_true": 3,
+        "false_call_rate": 0.0303,
+        "lr_lower_bound": 0.4862,
+        "lr_point": 7.6154,
+        "n_other": 33,
+        "n_true": 13,
+        "sensitivity": 0.2308
+       }
+      },
+      "n_controls_answered": 46,
+      "per_class": {
+       "ה": {
+        "correct": 0,
+        "n": 21
+       },
+       "ח": {
+        "correct": 9,
+        "n": 12
+       },
+       "ת": {
+        "correct": 3,
+        "n": 13
+       }
+      },
+      "recognized_locations": 0,
+      "wrong": 26
+     },
+     "C": {
+      "abstained": 4,
+      "accuracy": 0.2826,
+      "accuracy_when_answering": 0.3095,
+      "balanced_accuracy": 0.2854,
+      "certain_calls": 0,
+      "certain_correct": 0,
+      "certain_precision": null,
+      "certain_precision_lower_bound": null,
+      "confusion_matrix_all_grades": {
+       "illegible": {
+        "illegible": 3,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 1
+       },
+       "ה": {
+        "illegible": 2,
+        "other": 2,
+        "ה": 6,
+        "ח": 11,
+        "ת": 0
+       },
+       "ח": {
+        "illegible": 2,
+        "other": 2,
+        "ה": 3,
+        "ח": 5,
+        "ת": 0
+       },
+       "ת": {
+        "illegible": 0,
+        "other": 2,
+        "ה": 2,
+        "ח": 7,
+        "ת": 2
+       }
+      },
+      "confusion_matrix_certain": {
+       "illegible": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ה": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ח": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       },
+       "ת": {
+        "illegible": 0,
+        "other": 0,
+        "ה": 0,
+        "ח": 0,
+        "ת": 0
+       }
+      },
+      "correct": 13,
+      "decoy_overcalls_certain": 0,
+      "decoy_overcalls_certain_or_probable": 0,
+      "decoy_weak_calls": 1,
+      "decoys_seen": 4,
+      "likelihood_ratios": {
+       "ה": {
+        "called_when_other": 5,
+        "called_when_true": 6,
+        "false_call_rate": 0.2,
+        "lr_lower_bound": 0.3528,
+        "lr_point": 1.4286,
+        "n_other": 25,
+        "n_true": 21,
+        "sensitivity": 0.2857
+       },
+       "ח": {
+        "called_when_other": 18,
+        "called_when_true": 5,
+        "false_call_rate": 0.5294,
+        "lr_lower_bound": 0.2669,
+        "lr_point": 0.787,
+        "n_other": 34,
+        "n_true": 12,
+        "sensitivity": 0.4167
+       },
+       "ת": {
+        "called_when_other": 0,
+        "called_when_true": 2,
+        "false_call_rate": 0.0,
+        "lr_lower_bound": 0.3233,
+        "lr_point": "inf",
+        "n_other": 33,
+        "n_true": 13,
+        "sensitivity": 0.1538
+       }
+      },
+      "n_controls_answered": 46,
+      "per_class": {
+       "ה": {
+        "correct": 6,
+        "n": 21
+       },
+       "ח": {
+        "correct": 5,
+        "n": 12
+       },
+       "ת": {
+        "correct": 2,
+        "n": 13
+       }
+      },
+      "recognized_locations": 0,
+      "wrong": 29
+     }
+    },
+    "reasons": [
+     "decisive precision: no decisive calls; PASS needs a lower bound of at least 0.9 (29 or more decisive calls with no error, or 46 with one)"
+    ],
+    "statement": "[S1 / HH: he, het or taw] FAIL.\nThe frozen decisive rule (both readers certain and asserting the same identity) fired on 0 of 46 keyed controls; 0 of those calls were wrong (no precision can be estimated). It fired on 0 of 23 damage-matched controls and on 0 of 4 decoys.\nAgreement alone measures nothing about accuracy: the readers gave the same answer on 30 of 46 controls, and 14 of those agreements were wrong.\nA decisive target call for this question in this series stays recorded under the frozen protocol, but it is not empirically calibrated. No downstream claim may rest on it; treat the component as unresolved.\n  - decisive precision: no decisive calls; PASS needs a lower bound of at least 0.9 (29 or more decisive calls with no error, or 46 with one)",
+    "status": "FAIL",
+    "targets": []
+   },
+   "XS": {
+    "joint": {
+     "agreement_rate": 0.3684,
+     "agreements": 7,
+     "agreements_wrong": 1,
+     "compared": 19,
+     "damage_matched_decisive": 0,
+     "decisive": 0,
+     "decisive_correct": 0,
+     "decisive_precision": null,
+     "decisive_precision_lower_bound": null,
+     "decisive_wrong": 0,
+     "decisive_wrong_damage_matched": 0,
+     "decisive_wrong_items": [],
+     "decoy_decisive": 0,
+     "decoy_decisive_items": []
+    },
+    "n_controls": 19,
+    "n_damage_matched": 7,
+    "n_decoys": 4,
+    "per_reader": {
+     "A": {
+      "abstained": 5,
+      "accuracy": 0.5263,
+      "accuracy_when_answering": 0.7143,
+      "balanced_accuracy": 0.4744,
+      "certain_calls": 0,
+      "certain_correct": 0,
+      "certain_precision": null,
+      "certain_precision_lower_bound": null,
+      "confusion_matrix_all_grades": {
+       "absent": {
+        "absent": 8,
+        "illegible": 2,
+        "mark_not_sign": 0,
+        "sign": 3
+       },
+       "illegible": {
+        "absent": 0,
+        "illegible": 4,
+        "mark_not_sign": 0,
+        "sign": 0
+       },
+       "present": {
+        "absent": 1,
+        "illegible": 3,
+        "mark_not_sign": 0,
+        "sign": 2
+       }
+      },
+      "confusion_matrix_certain": {
+       "absent": {
+        "absent": 0,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 0
+       },
+       "illegible": {
+        "absent": 0,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 0
+       },
+       "present": {
+        "absent": 0,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 0
+       }
+      },
+      "correct": 10,
+      "decoy_overcalls_certain": 0,
+      "decoy_overcalls_certain_or_probable": 0,
+      "decoy_weak_calls": 0,
+      "decoys_seen": 4,
+      "likelihood_ratios": {
+       "absent": {
+        "called_when_other": 1,
+        "called_when_true": 8,
+        "false_call_rate": 0.1667,
+        "lr_lower_bound": 0.6098,
+        "lr_point": 3.6923,
+        "n_other": 6,
+        "n_true": 13,
+        "sensitivity": 0.6154
+       },
+       "present": {
+        "called_when_other": 3,
+        "called_when_true": 2,
+        "false_call_rate": 0.2308,
+        "lr_lower_bound": 0.1271,
+        "lr_point": 1.4444,
+        "n_other": 13,
+        "n_true": 6,
+        "sensitivity": 0.3333
+       }
+      },
+      "n_controls_answered": 19,
+      "per_class": {
+       "absent": {
+        "correct": 8,
+        "n": 13
+       },
+       "present": {
+        "correct": 2,
+        "n": 6
+       }
+      },
+      "recognized_locations": 0,
+      "wrong": 4
+     },
+     "B": {
+      "abstained": 2,
+      "accuracy": 0.6316,
+      "accuracy_when_answering": 0.7059,
+      "balanced_accuracy": 0.5064,
+      "certain_calls": 0,
+      "certain_correct": 0,
+      "certain_precision": null,
+      "certain_precision_lower_bound": null,
+      "confusion_matrix_all_grades": {
+       "absent": {
+        "absent": 6,
+        "illegible": 2,
+        "mark_not_sign": 5,
+        "sign": 0
+       },
+       "illegible": {
+        "absent": 0,
+        "illegible": 4,
+        "mark_not_sign": 0,
+        "sign": 0
+       },
+       "present": {
+        "absent": 4,
+        "illegible": 0,
+        "mark_not_sign": 1,
+        "sign": 1
+       }
+      },
+      "confusion_matrix_certain": {
+       "absent": {
+        "absent": 0,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 0
+       },
+       "illegible": {
+        "absent": 0,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 0
+       },
+       "present": {
+        "absent": 0,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 0
+       }
+      },
+      "correct": 12,
+      "decoy_overcalls_certain": 0,
+      "decoy_overcalls_certain_or_probable": 0,
+      "decoy_weak_calls": 0,
+      "decoys_seen": 4,
+      "likelihood_ratios": {
+       "absent": {
+        "called_when_other": 5,
+        "called_when_true": 11,
+        "false_call_rate": 0.8333,
+        "lr_lower_bound": 0.595,
+        "lr_point": 1.0154,
+        "n_other": 6,
+        "n_true": 13,
+        "sensitivity": 0.8462
+       },
+       "present": {
+        "called_when_other": 0,
+        "called_when_true": 1,
+        "false_call_rate": 0.0,
+        "lr_lower_bound": 0.0414,
+        "lr_point": "inf",
+        "n_other": 13,
+        "n_true": 6,
+        "sensitivity": 0.1667
+       }
+      },
+      "n_controls_answered": 19,
+      "per_class": {
+       "absent": {
+        "correct": 11,
+        "n": 13
+       },
+       "present": {
+        "correct": 1,
+        "n": 6
+       }
+      },
+      "recognized_locations": 0,
+      "wrong": 5
+     },
+     "C": {
+      "abstained": 0,
+      "accuracy": 0.6316,
+      "accuracy_when_answering": 0.6316,
+      "balanced_accuracy": 0.5064,
+      "certain_calls": 0,
+      "certain_correct": 0,
+      "certain_precision": null,
+      "certain_precision_lower_bound": null,
+      "confusion_matrix_all_grades": {
+       "absent": {
+        "absent": 10,
+        "illegible": 0,
+        "mark_not_sign": 1,
+        "sign": 2
+       },
+       "illegible": {
+        "absent": 0,
+        "illegible": 4,
+        "mark_not_sign": 0,
+        "sign": 0
+       },
+       "present": {
+        "absent": 5,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 1
+       }
+      },
+      "confusion_matrix_certain": {
+       "absent": {
+        "absent": 0,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 0
+       },
+       "illegible": {
+        "absent": 0,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 0
+       },
+       "present": {
+        "absent": 0,
+        "illegible": 0,
+        "mark_not_sign": 0,
+        "sign": 0
+       }
+      },
+      "correct": 12,
+      "decoy_overcalls_certain": 0,
+      "decoy_overcalls_certain_or_probable": 0,
+      "decoy_weak_calls": 0,
+      "decoys_seen": 4,
+      "likelihood_ratios": {
+       "absent": {
+        "called_when_other": 5,
+        "called_when_true": 11,
+        "false_call_rate": 0.8333,
+        "lr_lower_bound": 0.595,
+        "lr_point": 1.0154,
+        "n_other": 6,
+        "n_true": 13,
+        "sensitivity": 0.8462
+       },
+       "present": {
+        "called_when_other": 2,
+        "called_when_true": 1,
+        "false_call_rate": 0.1538,
+        "lr_lower_bound": 0.0208,
+        "lr_point": 1.0833,
+        "n_other": 13,
+        "n_true": 6,
+        "sensitivity": 0.1667
+       }
+      },
+      "n_controls_answered": 19,
+      "per_class": {
+       "absent": {
+        "correct": 11,
+        "n": 13
+       },
+       "present": {
+        "correct": 1,
+        "n": 6
+       }
+      },
+      "recognized_locations": 0,
+      "wrong": 7
+     }
+    },
+    "reasons": [
+     "19 keyed controls; minimum 40",
+     "6 controls of class present; minimum 12",
+     "7 damage-matched controls; minimum 20"
+    ],
+    "statement": "[S1 / XS: an independent yod/waw] INSUFFICIENT.\nThe frozen decisive rule (both readers certain and asserting the same identity) fired on 0 of 19 keyed controls; 0 of those calls were wrong (no precision can be estimated). It fired on 0 of 7 damage-matched controls and on 0 of 4 decoys.\nAgreement alone measures nothing about accuracy: the readers gave the same answer on 7 of 19 controls, and 1 of those agreements were wrong.\nA decisive target call for this question in this series stays recorded under the frozen protocol, but it is not empirically calibrated. No downstream claim may rest on it; treat the component as unresolved.\n  - 19 keyed controls; minimum 40\n  - 6 controls of class present; minimum 12\n  - 7 damage-matched controls; minimum 20",
+    "status": "INSUFFICIENT",
+    "targets": []
+   }
+  }
+ },
+ "statement": "[S1 / BK: bet or kaf] INSUFFICIENT.\nThe frozen decisive rule (both readers certain and asserting the same identity) fired on 0 of 16 keyed controls; 0 of those calls were wrong (no precision can be estimated). It fired on 0 of 6 damage-matched controls and on 0 of 4 decoys.\nAgreement alone measures nothing about accuracy: the readers gave the same answer on 14 of 16 controls, and 4 of those agreements were wrong.\nA decisive target call for this question in this series stays recorded under the frozen protocol, but it is not empirically calibrated. No downstream claim may rest on it; treat the component as unresolved.\n  - 16 keyed controls; minimum 40\n  - 9 controls of class ב; minimum 12\n  - 7 controls of class כ; minimum 12\n  - 6 damage-matched controls; minimum 20\n\n[S1 / XS: an independent yod/waw] INSUFFICIENT.\nThe frozen decisive rule (both readers certain and asserting the same identity) fired on 0 of 19 keyed controls; 0 of those calls were wrong (no precision can be estimated). It fired on 0 of 7 damage-matched controls and on 0 of 4 decoys.\nAgreement alone measures nothing about accuracy: the readers gave the same answer on 7 of 19 controls, and 1 of those agreements were wrong.\nA decisive target call for this question in this series stays recorded under the frozen protocol, but it is not empirically calibrated. No downstream claim may rest on it; treat the component as unresolved.\n  - 19 keyed controls; minimum 40\n  - 6 controls of class present; minimum 12\n  - 7 damage-matched controls; minimum 20\n\n[S1 / HH: he, het or taw] FAIL.\nThe frozen decisive rule (both readers certain and asserting the same identity) fired on 0 of 46 keyed controls; 0 of those calls were wrong (no precision can be estimated). It fired on 0 of 23 damage-matched controls and on 0 of 4 decoys.\nAgreement alone measures nothing about accuracy: the readers gave the same answer on 30 of 46 controls, and 14 of those agreements were wrong.\nA decisive target call for this question in this series stays recorded under the frozen protocol, but it is not empirically calibrated. No downstream claim may rest on it; treat the component as unresolved.\n  - decisive precision: no decisive calls; PASS needs a lower bound of at least 0.9 (29 or more decisive calls with no error, or 46 with one)",
+ "unassigned_items": []
+}
