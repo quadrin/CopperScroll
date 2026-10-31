@@ -58,3 +58,27 @@ Result file `out/benchA_test2.csv`, code at 4a62fc6.
 **Flaw in revision 1 (documented analytical error).** An entry's marginal likelihood Σ_u prior(u) LR_u uses no information about where its own truth is; it measures the whole inventory. In benchmark A each fake entry had its own independently thinned copy of the inventory, so the product over 50 entries combined 50 different datasets. In benchmark B, and in the real scroll, every entry sees the same single inventory, so the product counts the same data 50 times. Revision 1's calibration in A therefore does not carry over to the real case, and B confirms it.
 
 **Decision.** Revision 1 does not score the scroll. One revision remains under the rule; whether to use it is the owner's call.
+
+## 4. Revision 2 (the last one the rule allows), owner's instruction "go ahead", 31 Oct 16:16 UTC; logged before any test seed
+
+**Principle.** The recording rate c comes from the independent check (benchmark B), not from the scroll's own inventory. There is no pooling across entries.
+
+**Scorer.**
+1. The prior over c is the likelihood of the B items on the c grid, normalised:
+   L(c) = Π_i [1 − (1 − c)(1 − b_i)]^{y_i} · [(1 − c)(1 − b_i)]^{1 − y_i},
+   where y_i = 1 if the item's cell has a record of its class, and b_i = P_bg(match | stratum of the item's cell), from the full inventory.
+2. ρ ∈ {0.1, 0.2, …, 0.9}, uniform: we do not know how often the scroll's places lie at recorded sites.
+3. Each entry's posterior over (ρ, c) is that prior times its own marginal likelihood, as in RULE.md. There is no product across entries.
+4. For the scroll: the c prior uses all 56 B items.
+
+**Benchmark A (world set to the measured rate).**
+- Thinning is by cell and class: all records of one class in one cell are kept or dropped together, with probability c_true. This matches what B measures (presence of the class in the cell).
+- c_true for each fake entry is drawn from the 56-item c prior on the grid, plus a uniform jitter of ±0.05. The rest of the generator, amendment 1a and the gate thresholds are unchanged. The scorer's c prior in A uses all 56 B items.
+
+**Benchmark B (label check), two-fold cross-fit by window.** The windows in alphabetical order alternate between folds:
+- fold 1: B_buqeia, B_marsaba, K_palaces, S_samiya, W_choziba (24 items);
+- fold 2: B_hyrcania, J_kidron, Q_qumran, T_jericho (32 items).
+
+Each fold's items are scored with the c prior from the other fold. Coverage is reported on all 56. Exposure: the per-window results of revision 1 had been seen. The split is fixed by alphabetical order, not chosen.
+
+**Judged on:** test block 3, seeds 3001–4000 (gate G1, G2), and the B cross-fit (label). If the gate fails, the run stops without scoring the scroll.
