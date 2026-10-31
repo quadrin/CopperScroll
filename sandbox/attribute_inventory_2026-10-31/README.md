@@ -24,3 +24,7 @@ The owner lifted the held-area rule of 25 Oct: "We don't need to hold anymore." 
 ## Before this commit
 
 The main session ran a regex over the 1993 cave-survey texts. It printed per-article counts only: distinct "Cave N/N" labels (112), dimension phrases (316) and the words "opening"/"entrance" (398). It also listed the article titles. No sentence of any source was displayed.
+
+## Progress
+
+- Source 1 (*ʿAtiqot* 41.2, the 1993 cave survey): keyed by two readers, third reading done, consolidated. See [RESULT_atq41.md](RESULT_atq41.md).

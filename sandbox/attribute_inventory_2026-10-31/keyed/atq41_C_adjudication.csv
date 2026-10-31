@@ -1,0 +1,59 @@
+key,field,A,B,C_value,C_agrees_with,page,quote,note
+II/10,height_m,,6,6,B,9,"leads to a large chamber (depth 6.3 m, max. height 6 m)","Single-chamber cave (chamber plus fissure/niche off it); with one chamber, rule 6 needs no separate chamber row, so the chamber's dims go on the cave row. Entrance height 4 m is the entrance, not the cave."
+II/10,depth_m,,6.3,6.3,B,9,"leads to a large chamber (depth 6.3 m, max. height 6 m)","As height_m: single chamber, so its depth is the cave's depth (horizontal depth as printed)."
+II/11,length_m,6,,,B,10,"inner part of the cave (length 6 m, max. height 3 m)","II/11 is printed as 'A Pair of Caves'. 6 m is the inner part of the northern cave (Cave of the Long-Tail Bats) only; belongs on a sub-row for that cave, not on the pair."
+II/11,height_m,3,,,B,10,"inner part of the cave (length 6 m, max. height 3 m)","As length_m: value belongs to the northern cave's inner part, not to the pair II/11."
+III/7,n_openings,2,,2,A,36,natural chimney whose upper opening is at the top of the cliff,Two openings are each described: the cave mouth opening onto the northern cliff (reached by rappelling) and the chimney's upper opening.
+III/9,n_openings,,1,1,B,38,near the entrance to Niche III/9,Text refers to the niche's entrance in the singular and gives no hint of others.
+IV/1,opening_dirs,E,,E,A,44,from the cave's northern opening in its eastern wall,"Northern opening is in the eastern wall, so faces E. Facing of the southern main entrance not stated (Fig. 1 photo of the openings looks west, consistent with E)."
+IV/17,opening_dirs,E,,E,A,53,two entrances that open onto the east cliff of the Quruntul ridge,Both entrances open onto the east cliff.
+IV/19,n_openings,1,,1,A,54,The floor slopes gently downward from the opening to the inside.,Singular reference to the cave's opening; nothing suggests more than one.
+V/14,length_m,,0.8,,A,86,"southern niche (V/15; 1 x 2 m), northern niche (0.1 x 0.8 m)","Row is 'V/14, V/15: Five adjacent niches'. Only the southern niche is tied to a number (V/15); the northern niche is not labelled V/14 in print. Do not assign."
+V/14,width_m,,0.1,,A,86,"southern niche (V/15; 1 x 2 m), northern niche (0.1 x 0.8 m)",As length_m: northern niche not identified as V/14.
+V/17,feature_class,chamber,cave,cave,B,86,A chamber (3.8 x 4.4 m) with two hewn recesses,Numbered item in 'A group of caves and niches'; a stand-alone single-chamber cavity is a cave. 'chamber' is the class_as_printed; the chamber class is for sub-units of a cave (instr. 6). Low-medium confidence.
+V/2,feature_class,chamber,cave,cave,B,85,Narrow niche opening into a small chamber (1 x 2 m),"Niche leading into a hewn(?) chamber = a small cave; the chamber is its interior, not a separate top-level feature."
+V/22,feature_class,chamber,cave,cave,B,86,An elongated chamber with a 2 m high chimney that is blocked.,Group header 'A cluster of caves ... All of the caves are natural'. Single-chamber cave; 'chamber' is class_as_printed.
+V/34,feature_class,other,cave,cave,B,87,"Three natural cavities, with adjacent openings.","Author uses 'niches' for V/33 and V/39 but 'cavities' here; cavity maps to cave. One number covers three cavities, so sub-rows would be needed for each."
+V/4,n_openings,1,,,B,85,A large cave (6.7 x 10. 3 m) accessed through the ceiling.,Access is through the ceiling but no opening is named or counted; 1 is inferred.
+V/55,n_openings,,1,,A,89,The chamber in the cave is high and narrow (Fig. 3).,"Text names no opening. Only the caption (p. 94, 'The opening to Cave V/55') mentions one; captions not used for counts (cf. V/64, VI/46, where captions and text disagree)."
+V/56,feature_class,chamber,cave,cave,B,89,An oval chamber (c. 1.5 m high),"Group header 'Natural caves and niches' (V/51-56); single-chamber cave, 'chamber' is class_as_printed."
+V/57,feature_class,cave,tomb,cave,A,89,A cave and three adjacent niches (Fig. 5).,Source calls it a cave; the kokhim 'used for burial' are contained features and should be keyed as burial sub-rows. 'tomb' is an interpretation the text does not make.
+V/64,n_openings,3,,,B,90,A cave (Plan 1; Fig. 6) composed of three passages,"Text counts passages, not openings; captions say 'the opening' (singular) to V/64. Count not stated or settled; Plan 1 not in the part-2 PDF."
+V/9,width_m,unknown,,unknown,A,86,c. 3 m long and of unascertained width,"Source mentions width but says it was not ascertained (SCHEMA: unknown). Entrance width 3 m is the entrance, not the cave."
+VI/39,depth_m,3,,3,A,58,The floor slopes sharply inward to a depth of 3 m.,"Single-chamber cave; printed depth is the vertical drop of the floor, as printed."
+VI/40,n_openings,1,,1,A,58,gently slopes upward from the entrance to the inside of the chamber,Singular reference to the cave's entrance; nothing suggests more.
+VI/45,height_m,,unknown,unknown,B,59,"4.5 x 10.0 m, uneven height",Height mentioned but no figure given (SCHEMA: unknown). Entrance 1.1 m height is the second entrance's.
+VI/46,n_openings,,unknown,unknown,B,59-60,it is separated from the cave entrance by a semicircular stone fence,Text says 'the cave entrance' (singular) but caption Fig. 25 (p. 69) reads 'The openings to Cave VI/46'. Not settled.
+VI/53,length_m,15.0,,15.0,A,63,"leads into a chamber (1.5-2.0 x 15.0 m, height 1.0-1.5 m)","One chamber (plus a niche off it); single-chamber cave, so chamber dims go on the cave row (same rule as II/10)."
+VI/53,width_m,1.5-2.0,,1.5-2.0,A,63,"leads into a chamber (1.5-2.0 x 15.0 m, height 1.0-1.5 m)",As length_m.
+VI/53,height_m,1.0-1.5,,1.0-1.5,A,63,"leads into a chamber (1.5-2.0 x 15.0 m, height 1.0-1.5 m)",As length_m. Entrance height 1.8 m is the entrance's.
+VII/9,n_openings,unknown,,unknown,A,113,There are a number of cave entrances,"Openings mentioned, count not given (SCHEMA: unknown)."
+VIII/27,feature_class,terrace,cave,terrace,A,119; 122,VIII/27. Natural Terrace,"Printed name 'The Terrace of the Cave of the Sandal'; p. 122 heading 'Natural Terrace' and 'natural terrace (VIII/27, L72) in front of Cave VIII/28'. The cave described in the table row is the cave behind the terrace."
+VIII/27,length_m,,2,,A,119,leads to a natural cave (c. 2 x 2 m),"2 x 2 m is the cave the terrace fronts (apparently VIII/28 per p. 122), not the terrace VIII/27."
+VIII/27,width_m,,2,,A,119,leads to a natural cave (c. 2 x 2 m),As length_m.
+VIII/27,n_openings,,1,,A,119,An entrance c. 2 m wide leads to a natural cave,"The entrance belongs to the cave, not to the terrace VIII/27."
+VIII/29,opening_dirs,,N;S,,A,122,a northern one facing the terrace at the foot of Cave VIII/28,"'Northern'/'southern' are positions, not facings; one faces the terrace, the other opens onto the cliff, with no compass bearing given. N;S is inferred."
+VIII/3,feature_class,other,cave,cave,B,117,Two shallow cavities probably connected (each up to 2 m in length).,"Cavity maps to cave; probably one connected system. Not a niche/recess/fissure, which this table names separately."
+VIII/3,n_openings,unknown,,unknown,A,117,The openings are irregular.,"Plural openings mentioned, count not given (SCHEMA: unknown)."
+VIII/38,width_m,3,,,B,120,"A natural cave with a wide entrance (width c. 3 m, height 1 m","Parenthesis follows 'entrance'; in this table cave dims follow 'cave' and entrance dims follow 'entrance' (cf. VIII/30, VIII/33). 'max. length 1.5 m' in the same bracket makes it ambiguous. Low confidence."
+VIII/38,height_m,1,,,B,120,"A natural cave with a wide entrance (width c. 3 m, height 1 m",As width_m: printed for the entrance.
+VIII/48,length_m,3,,,B,121,A natural cave with an irregularly-shaped entrance (max. dimensions c. 2 x 3 m).,"Dimensions attach to the irregular entrance, not the cave (same table convention as VIII/38). Medium confidence."
+VIII/48,width_m,2,,,B,121,A natural cave with an irregularly-shaped entrance (max. dimensions c. 2 x 3 m).,As length_m.
+X/1,feature_class,other,cave,other,A,169,Niche.,"Type column says 'Niche', contrasted with 'Cave.' for other rows (e.g. X/9); niche is not on the closed list. 1.0 x 1.5 m is entrance dims."
+X/2,feature_class,other,cave,other,A,169,Niche.,As X/1.
+X/3,feature_class,other,cave,other,A,170,Niche.,As X/1.
+X/4,feature_class,other,cave,other,A,170,Niche.,As X/1.
+X/42,height_m,unknown,,unknown,A,172,its height could not be ascertained owing to the difficulty of the excavation,Height mentioned but not settled (SCHEMA: unknown). Table entrance height 2 m is the entrance's.
+XIII/12,width_m,4,,,B,191,"length of opening 4 m, length of shelter 2 m","4 m is printed for the opening, not the shelter; shelter only has length 2 m and height 1.5 m."
+XIII/6,length_m,3,,,B,190,"In the shelter's entrance (width c. 8 m, max. length 3 m)","Both figures printed for the shelter's entrance, not the shelter. Medium confidence (for a rock shelter the two nearly coincide)."
+XIII/6,width_m,8,,,B,190,"In the shelter's entrance (width c. 8 m, max. length 3 m)",As length_m.
+XIII/7,width_m,6,,,B,190,The length of the entrance and the shelter are 6 m,Shelter's printed dimension is length 6 m; no width given. Entrance length is not the shelter's width.
+XIV/19-22,feature_class,other,cave,other,A,216,"Four other, small niches (max. length 1.5 m)",XIV/19-22 are four niches (XIV/18 is the cave); niche not on closed list.
+XIV/2/11,feature_class,cave,room,cave,A,210,"It utilizes a small, natural, square-shaped cave (1.3 x 2.5 m, height 1.6 m",Printed 'Cell'; intro lists it among cells 'inside caves'. The source reserves 'Room' for built XIV/2/14-15. Dims are the cave's.
+XIV/2/2,feature_class,other,room,other,A,211,Niche XIV/2/2. This niche (5 x 6 m; Fig. 17) was built,"Printed 'Niche' (built, partitioned into two cells). Source uses 'Room' only for XIV/2/14-15; the two cells could be room sub-rows."
+XIV/2/2,opening_dirs,,SE,SE,B,211,that of the southern cell was set in the wall to the southeast,"Southern cell entrance in the SE wall faces SE; northern cell entrance only 'next to the cliff', no direction."
+XIV/35-41,feature_class,other,cave,other,A,216-217,seven natural niches (XIV/35-41) were surveyed,"Niches, not caves; niche not on closed list."
+XIV/4/1,n_openings,,1,1,B,214,"A wall was built in the entrances of two caves (XIV/4/1, XIV/4/20","Distributive plural: one entrance per cave, walled; 20 small caves 'whose entrances are located several meters apart'."
+XIV/4/20,n_openings,,1,1,B,214,"A wall was built in the entrances of two caves (XIV/4/1, XIV/4/20",As XIV/4/1.
+XIV/42-45,feature_class,other,cave,other,A,217,four niches (XIV/42-45) to the south,Niches; niche not on closed list.
+XIV/55,feature_class,other,cave,other,A,217,In Niche XIV/55 (map ref. 18835/ 11300) two fragments,Printed as 'Niche'; one of 'Four shallow niches'.
