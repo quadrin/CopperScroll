@@ -1,0 +1,22 @@
+QUMRAN tp 2415 2315 ynmad 0.3 drange [-26.231883414730696, 20.306874617103688] valid 0.306 18s
+{"zone": "QUMRAN", "fwd_coverage_frac": 0.9022443890274314, "n_cells_in_zone": 3092, "zone_cells_expected": 7008, "n_fit_A": 1375, "n_eval_B": 834, "m_per_disp_px": 3.6497560249732133, "nmad_A_fit": 5.548144801355922, "nmad_B_zone": 5.694282414772378, "median_B_zone": -0.16044574461952266, "nmad_B_window": 6.866756800131556, "pass_precision": false, "change_threshold_m": 17.082847244317133, "seconds": 27, "nmad_B_zone_by_slope": {"0-5": 4.422929843167568, "5-10": 4.672902556475022, "10-15": 9.847949776660275, "15-20": 10.89029193626352, "20-25": 10.827819901831194}, "n_B_zone_by_slope": {"0-5": 245, "5-10": 348, "10-15": 101, "15-20": 78, "20-25": 58}} 24 clusters
+QELT tp 6886 6756 ynmad 2.52 drange [-35.91635558497884, 41.587527592387026] valid 0.322 58s
+{"zone": "QELT", "fwd_coverage_frac": 1.0, "n_cells_in_zone": 28501, "zone_cells_expected": 47043, "n_fit_A": 18663, "n_eval_B": 11571, "m_per_disp_px": 2.9639651865821373, "nmad_A_fit": 28.535522355178237, "nmad_B_zone": 27.403989712107204, "median_B_zone": 1.401610032495853, "nmad_B_window": 30.76847375685436, "pass_precision": false, "change_threshold_m": 82.21196913632161, "seconds": 125, "nmad_B_zone_by_slope": {"0-5": 23.587230441735052, "5-10": 22.995731282095417, "10-15": 25.551885438492484, "15-20": 29.355091180201676, "20-25": 32.83239713036724}, "n_B_zone_by_slope": {"0-5": 168, "5-10": 2045, "10-15": 3857, "15-20": 3316, "20-25": 2108}} 45 clusters
+Traceback (most recent call last):
+  File "/home/user/CopperScroll/.claude/worktrees/agent-aec1c7c1bbdf624c6/research/novel_2026-10-31/E_hexagon_stereo/stage2_zone.py", line 254, in <module>
+    run_zone(pair, zn, tag)
+    ~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/user/CopperScroll/.claude/worktrees/agent-aec1c7c1bbdf624c6/research/novel_2026-10-31/E_hexagon_stereo/stage2_zone.py", line 96, in run_zone
+    f_r, a_r, geo = S.rectify(f, a, pf, pa, ransac_px=80.0)
+                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/CopperScroll/.claude/worktrees/agent-aec1c7c1bbdf624c6/research/novel_2026-10-31/E_hexagon_stereo/stereo_local.py", line 75, in rectify
+    A, inl = cv2.estimateAffine2D(pa, pf, ransacReprojThreshold=ransac_px, maxIters=5000, confidence=0.999)
+             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(5.0.0) /io/opencv/modules/geometry/src/ptsetreg.cpp:980: error: (-2:Unspecified error) in function 'cv::Mat cv::estimateAffine2D(InputArray, InputArray, OutputArray, int, double, size_t, double, size_t)'
+> Points need to be 2d (expected: 'count >= 0'), where
+>     'count' is -1
+> must be greater than or equal to
+>     '0' is 0
+
+JERICHO_OUT tp 10080 9918 ynmad 0.3 drange [-10.160267433369437, 11.521435964196012] valid 0.374 77s
+{"zone": "JERICHO_OUT", "fwd_coverage_frac": 1.0, "n_cells_in_zone": 27703, "zone_cells_expected": 52359, "n_fit_A": 8173, "n_eval_B": 2617, "m_per_disp_px": 0.09078379872478462, "nmad_A_fit": 10.480052601822369, "nmad_B_zone": 22.226532586092606, "median_B_zone": 1.8558592940839276, "nmad_B_window": 12.35833856319384, "pass_precision": false, "change_threshold_m": 66.67959775827782, "seconds": 152, "nmad_B_zone_by_slope": {"0-5": 15.977178595081279, "5-10": 21.789289956685185, "10-15": 67.7098395305266, "15-20": 58.25729124781376, "20-25": 59.838897545604574}, "n_B_zone_by_slope": {"0-5": 1188, "5-10": 501, "10-15": 416, "15-20": 320, "20-25": 188}} 155 clusters
