@@ -1,0 +1,169 @@
+{
+ "W_lh": 0.92,
+ "k_fix_train": 0.3777433593254777,
+ "n_classes": 16,
+ "split_half_rho_fix_train": 0.4641807225042097,
+ "columns": {
+  "III": {
+   "role": "test",
+   "n": 60,
+   "n_before": 46,
+   "n_after": 14,
+   "drawing_pitch_ratio": 1.1483828983101048,
+   "drawing_height_ratio_classnorm": 1.303995469369084,
+   "drawing_h_over_pitch_ratio": 1.1355058241358087,
+   "copper_pitch_ratio": 1.104465301061082,
+   "copper_pitch_ratio_90": [
+    1.0324204958677685,
+    1.2396259472085618
+   ],
+   "copper_frozen_extent_ratio_classnorm": 1.0863825372361546,
+   "copper_fixed_height_ratio": 0.940711487047894,
+   "copper_fixed_height_ratio_90": [
+    0.8634967844499296,
+    1.0710259503506483
+   ],
+   "expected_fixed_under_claim": 1.1054644340487283,
+   "expected_fixed_under_pitch_only": 1.0382463433687052,
+   "split_half_rho_fix": 0.6187829952764657
+  },
+  "I": {
+   "role": "control",
+   "n": 96,
+   "n_before": 60,
+   "n_after": 32,
+   "drawing_pitch_ratio": 0.9332956140315803,
+   "drawing_height_ratio_classnorm": 0.94509467175344,
+   "drawing_h_over_pitch_ratio": 1.0126423584815651,
+   "copper_pitch_ratio": 1.0967317817801971,
+   "copper_pitch_ratio_90": [
+    0.925109782818337,
+    1.2137944015574618
+   ],
+   "copper_frozen_extent_ratio_classnorm": 0.9458295334812732,
+   "copper_fixed_height_ratio": 0.9062046274950697,
+   "copper_fixed_height_ratio_90": [
+    0.8340827388360573,
+    1.0304898516613406
+   ],
+   "expected_fixed_under_claim": 0.9788946681424957,
+   "expected_fixed_under_pitch_only": 1.0354942001345762,
+   "split_half_rho_fix": 0.560119370591427
+  },
+  "II": {
+   "role": "training",
+   "n": 45,
+   "n_before": 29,
+   "n_after": 16,
+   "drawing_pitch_ratio": 0.9597611797644181,
+   "drawing_height_ratio_classnorm": 1.0113077478483725,
+   "drawing_h_over_pitch_ratio": 1.0537077026772503,
+   "copper_pitch_ratio": 0.7479347002407749,
+   "copper_pitch_ratio_90": [
+    0.714778388717492,
+    0.8268302152676864
+   ],
+   "copper_frozen_extent_ratio_classnorm": 0.7859058944614818,
+   "copper_fixed_height_ratio": 1.09009931193131,
+   "copper_fixed_height_ratio_90": [
+    0.8325359918322801,
+    1.1661347943848264
+   ],
+   "expected_fixed_under_claim": 1.0042564903069555,
+   "expected_fixed_under_pitch_only": 0.8960925027303074,
+   "split_half_rho_fix": 0.5231884057971015
+  },
+  "V": {
+   "role": "training",
+   "n": 31,
+   "n_before": 7,
+   "n_after": 21,
+   "drawing_pitch_ratio": 0.77821152952043,
+   "drawing_height_ratio_classnorm": 0.8757281915462009,
+   "drawing_h_over_pitch_ratio": 1.1253086832135024,
+   "copper_pitch_ratio": 0.9727160141760642,
+   "copper_pitch_ratio_90": [
+    0.9573280450205248,
+    1.0758462018545896
+   ],
+   "copper_frozen_extent_ratio_classnorm": 0.9646983435400595,
+   "copper_fixed_height_ratio": 1.0371089780953395,
+   "copper_fixed_height_ratio_90": [
+    0.8529290389980265,
+    1.1943039782572251
+   ],
+   "expected_fixed_under_claim": 0.9511092324650986,
+   "expected_fixed_under_pitch_only": 0.9896048524776292,
+   "split_half_rho_fix": 0.3790322580645161
+  },
+  "IX": {
+   "role": "training",
+   "n": 55,
+   "n_before": 17,
+   "n_after": 29,
+   "drawing_pitch_ratio": 1.1662274779903088,
+   "drawing_height_ratio_classnorm": 1.1500359339533193,
+   "drawing_h_over_pitch_ratio": 0.9861163072020122,
+   "copper_pitch_ratio": 0.9196905472830564,
+   "copper_pitch_ratio_90": [
+    0.7459440060322062,
+    1.0352943153507794
+   ],
+   "copper_frozen_extent_ratio_classnorm": 0.7364024853364783,
+   "copper_fixed_height_ratio": 0.9370480128678822,
+   "copper_fixed_height_ratio_90": [
+    0.7613620229277379,
+    1.1314693476482196
+   ],
+   "expected_fixed_under_claim": 1.0542250515793332,
+   "expected_fixed_under_pitch_only": 0.968870877989279,
+   "split_half_rho_fix": 0.4893939393939395
+  },
+  "X": {
+   "role": "training",
+   "n": 62,
+   "n_before": 32,
+   "n_after": 22,
+   "drawing_pitch_ratio": 0.9543548017030626,
+   "drawing_height_ratio_classnorm": 1.0242021035196545,
+   "drawing_h_over_pitch_ratio": 1.0731879817568353,
+   "copper_pitch_ratio": 1.0889157792636703,
+   "copper_pitch_ratio_90": [
+    0.9876249725125453,
+    1.2002996906139984
+   ],
+   "copper_frozen_extent_ratio_classnorm": 1.0711191015662624,
+   "copper_fixed_height_ratio": 1.0058488741389902,
+   "copper_fixed_height_ratio_90": [
+    0.8734984278504061,
+    1.1266964462728366
+   ],
+   "expected_fixed_under_claim": 1.0090742304969031,
+   "expected_fixed_under_pitch_only": 1.0327004061078953,
+   "split_half_rho_fix": 0.3492483191055375
+  },
+  "XII": {
+   "role": "training",
+   "n": 89,
+   "n_before": 52,
+   "n_after": 23,
+   "drawing_pitch_ratio": 1.176716361791435,
+   "drawing_height_ratio_classnorm": 1.0404383625933196,
+   "drawing_h_over_pitch_ratio": 0.8841878947016208,
+   "copper_pitch_ratio": 1.2108365565395742,
+   "copper_pitch_ratio_90": [
+    1.0857106285354194,
+    1.2778542235191719
+   ],
+   "copper_frozen_extent_ratio_classnorm": 1.216907067963678,
+   "copper_fixed_height_ratio": 1.043257975381544,
+   "copper_fixed_height_ratio_90": [
+    0.8974145945373125,
+    1.1317416242563338
+   ],
+   "expected_fixed_under_claim": 1.0150872304826404,
+   "expected_fixed_under_pitch_only": 1.0749419335528463,
+   "split_half_rho_fix": 0.48891726251276824
+  }
+ }
+}

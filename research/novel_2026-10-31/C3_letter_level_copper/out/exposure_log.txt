@@ -28,3 +28,12 @@ C3 exposure and decision log (31 Oct 2026, UTC). One line per action that touche
        Bootstrap 90 % interval of the difference -0.30 to +0.10 (about 0.4 wide).
        Up to this point: no letter-level copper measurement and no image view of cuts 2, 3, 4, 7, 8. No image of any cut viewed by me.
        No bucket read (all frames from A2's cache).
+08:05  Freeze commit 05aaf453 (PROTOCOL_FROZEN.md SHA-256 ee22a848...), pushed.
+08:06  Confirmatory run, once (python3 -I scripts/run_test.py, 29 s): first letter-level measurement of cuts 2, 3, 4, 7, 8.
+       Outputs committed in b8831b2a.
+08:08  AFTER THE RUN, EXPLORATORY (labelled): scripts/explore_post.py (fixed-window height; pitch / height decomposition, all accepted
+       columns) -> out/exploratory/post_run_decomposition.json; scripts/explore_seams.py (S11, S49 on training letters already
+       measured) -> out/exploratory/seams.json. Numbers only.
+08:10  scripts/figures.py -> SP/products/C3/c3_heights_III_I.png (chart, viewed) and c3_overlay_cut08_cut07.jpg (RCT frames of cuts 8
+       and 7 at 1/4 scale with mapped centres and measured extents; viewed once to check that centres sit on text rows). This is the
+       only copper image I viewed in this session, after the run.
