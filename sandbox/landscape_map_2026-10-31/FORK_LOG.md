@@ -49,7 +49,7 @@ Result file `out/benchA_test2.csv`, code at 4a62fc6.
 
 **G1 passes** for both regions. **G2 passes.** Revision 1 + 1a is the model that scores the scroll. No further revision.
 
-## 3. Benchmark B and a flaw in revision 1, logged 31 Oct about 16:20 UTC; the scroll has not been scored
+## 3. Benchmark B and a flaw in revision 1, logged 31 Oct 16:13 UTC (commit f32e8ec); the scroll has not been scored
 
 **Benchmark B under revision 1** (`out/benchB_v1.csv`; 56 one-clue entries from the 1940s 1:20,000 maps in 9 windows): 50 % / 90 % set coverage 0.171 / 0.642 (R0) and 0.125 / 0.393 (R1); mean log10 BF −0.060 (−0.183 to 0.101) and −0.183 (−0.327 to −0.002). Below the 0.80 label threshold, and the evidence points slightly away from the truth. (Under the original model, for reference: `out/benchB_v0_original_model.csv`, 90 % coverage 0.592 / 0.626.)
 
