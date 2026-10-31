@@ -1,0 +1,52 @@
+{
+ "primary": {
+  "test": "substitution top-1 on held-out agreed 3Q15 words",
+  "n": 196,
+  "top1": 148,
+  "top1_rate": 0.7551020408163265,
+  "K_rivals": 4,
+  "chance": 0.2,
+  "expected_by_chance": 39.2,
+  "p_exact_binomial_one_sided": 1.38510701553915e-62,
+  "alpha": 0.01,
+  "min_held_out": 100,
+  "passed": true
+ },
+ "calibration": {
+  "temperature_T": 1.2064745640179548,
+  "nll_calibration_training": 0.6846226108893475,
+  "held_out_nll_T": 0.6879761190542497,
+  "held_out_nll_T1": 0.6970853761261915,
+  "held_out_nll_uniform": 1.6094379124341003,
+  "held_out_mean_p_true_T": 0.6328987890690277,
+  "held_out_ece_T": 0.07865310825650532
+ },
+ "secondary_division": {
+  "n": 76,
+  "top1": 61,
+  "chance": 0.25,
+  "expected_by_chance": 19.0,
+  "p_exact_binomial_one_sided": 7.761218285809173e-24,
+  "alpha": 0.01,
+  "passed": true,
+  "held_out_mean_p_true_T": 0.7001485340709421
+ },
+ "names_descriptive": {
+  "n": 40,
+  "top1": 22,
+  "mean_p_true_T": 0.5090164715687231
+ },
+ "descriptive_attested_rivals": {
+  "held_out_items_with_attested_rival": 110,
+  "true_above_all_attested_rivals": 78,
+  "pairs_true_vs_attested_rival": 219,
+  "pairs_true_higher": 182,
+  "true_word_attested_in_training": 160
+ },
+ "model": {
+  "order": 8,
+  "lambda_dss": 0.5,
+  "window_words": 3
+ },
+ "targets_scored": true
+}
