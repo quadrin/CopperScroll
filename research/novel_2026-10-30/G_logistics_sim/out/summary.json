@@ -1,0 +1,185 @@
+{
+ "smoke": false,
+ "ndraw": 4000,
+ "sobol_base_N": 4096,
+ "sobol_evals": [
+  69632,
+  69632
+ ],
+ "n_sums": 45,
+ "n_weighed_entries": 42,
+ "main_cells": [
+  {
+   "origin": "temple",
+   "spread": "map",
+   "mode": "porter",
+   "F_talent": 0.0955,
+   "F_karsh": 0.2235,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "temple",
+   "spread": "map",
+   "mode": "donkey",
+   "F_talent": 0.8722,
+   "F_karsh": 0.929,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "temple",
+   "spread": "map",
+   "mode": "mule",
+   "F_talent": 0.9835,
+   "F_karsh": 0.9958,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "temple",
+   "spread": "posterior",
+   "mode": "porter",
+   "F_talent": 0.1475,
+   "F_karsh": 0.2905,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "temple",
+   "spread": "posterior",
+   "mode": "donkey",
+   "F_talent": 0.862,
+   "F_karsh": 0.9153,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "temple",
+   "spread": "posterior",
+   "mode": "mule",
+   "F_talent": 0.976,
+   "F_karsh": 0.9898,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "qumran",
+   "spread": "map",
+   "mode": "porter",
+   "F_talent": 0.0175,
+   "F_karsh": 0.0525,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "qumran",
+   "spread": "map",
+   "mode": "donkey",
+   "F_talent": 0.7555,
+   "F_karsh": 0.8223,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "qumran",
+   "spread": "map",
+   "mode": "mule",
+   "F_talent": 0.9417,
+   "F_karsh": 0.9722,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "qumran",
+   "spread": "posterior",
+   "mode": "porter",
+   "F_talent": 0.044,
+   "F_karsh": 0.1235,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "qumran",
+   "spread": "posterior",
+   "mode": "donkey",
+   "F_talent": 0.7893,
+   "F_karsh": 0.8672,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "qumran",
+   "spread": "posterior",
+   "mode": "mule",
+   "F_talent": 0.953,
+   "F_karsh": 0.9788,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "jericho",
+   "spread": "map",
+   "mode": "porter",
+   "F_talent": 0.0357,
+   "F_karsh": 0.1005,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "jericho",
+   "spread": "map",
+   "mode": "donkey",
+   "F_talent": 0.7957,
+   "F_karsh": 0.875,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "jericho",
+   "spread": "map",
+   "mode": "mule",
+   "F_talent": 0.961,
+   "F_karsh": 0.9832,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "jericho",
+   "spread": "posterior",
+   "mode": "porter",
+   "F_talent": 0.0828,
+   "F_karsh": 0.2127,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "jericho",
+   "spread": "posterior",
+   "mode": "donkey",
+   "F_talent": 0.829,
+   "F_karsh": 0.9055,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  },
+  {
+   "origin": "jericho",
+   "spread": "posterior",
+   "mode": "mule",
+   "F_talent": 0.9718,
+   "F_karsh": 0.9872,
+   "F_all_small": 1.0,
+   "cls": "unaffected"
+  }
+ ],
+ "counts": {
+  "excluded": 0,
+  "constrained": 0,
+  "unaffected": 18
+ },
+ "overall_talent_verdict": "unaffected",
+ "sobolA_Y1_ST_reading": 0.0164,
+ "sobolA_Y1_ST_max_unconstrained": 0.1385,
+ "F1_no_discrimination": true,
+ "F2_unconstrained_dominates_or_reading_insensitive": true
+}
