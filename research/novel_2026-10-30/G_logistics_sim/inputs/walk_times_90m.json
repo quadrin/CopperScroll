@@ -1,0 +1,742 @@
+{
+ "grid": {
+  "box": [
+   31.25,
+   32.85,
+   34.9,
+   35.85
+  ],
+  "agg": 3,
+  "cell_deg": 0.0008333333333333333,
+  "nbhd": 8,
+  "speed": "Tobler 6*exp(-3.5|s+0.05|) km/h"
+ },
+ "points": {
+  "jer_temple": [
+   31.77825,
+   35.23534
+  ],
+  "jer_east_gate": [
+   31.77889,
+   35.23694
+  ],
+  "jer_se_corner": [
+   31.77639,
+   35.23694
+  ],
+  "jer_south_wall": [
+   31.77594,
+   35.23661
+  ],
+  "jer_kidron_mon": [
+   31.77701,
+   35.23928
+  ],
+  "jer_kidron_east": [
+   31.7742,
+   35.2381
+  ],
+  "jer_gethsemane": [
+   31.77942,
+   35.23943
+  ],
+  "jer_siloam": [
+   31.77008,
+   35.23616
+  ],
+  "jer_bir_ayyub": [
+   31.7672,
+   35.23599
+  ],
+  "jer_bethesda": [
+   31.78139,
+   35.23583
+  ],
+  "jer_tyropoeon": [
+   31.77695,
+   35.23424
+  ],
+  "jer_tombs_kings": [
+   31.78852,
+   35.22919
+  ],
+  "jer_baqa": [
+   31.75917,
+   35.22082
+  ],
+  "ramat_rahel": [
+   31.73999,
+   35.21899
+  ],
+  "tell_el_ful": [
+   31.82348,
+   35.2312
+  ],
+  "mar_saba": [
+   31.70494,
+   35.33115
+  ],
+  "hyrcania": [
+   31.719,
+   35.366
+  ],
+  "buqeia": [
+   31.7177,
+   35.3948
+  ],
+  "natuf": [
+   31.64436,
+   35.23543
+  ],
+  "tekoa_herodium": [
+   31.64935,
+   35.22635
+  ],
+  "nuweimeh": [
+   31.8837,
+   35.4409
+  ],
+  "ain_duk": [
+   31.8976,
+   35.4177
+  ],
+  "doq": [
+   31.87472,
+   35.43056
+  ],
+  "tell_es_sultan": [
+   31.8717,
+   35.4446
+  ],
+  "jericho_palaces": [
+   31.85187,
+   35.43624
+  ],
+  "jericho_area": [
+   31.85611,
+   35.46306
+  ],
+  "tell_el_qos": [
+   31.8551,
+   35.4656
+  ],
+  "choziba": [
+   31.84408,
+   35.41178
+  ],
+  "kuteif": [
+   31.802,
+   35.411
+  ],
+  "jordan_ford": [
+   31.838333,
+   35.539167
+  ],
+  "asla": [
+   31.7716,
+   35.451
+  ],
+  "kh_qumran": [
+   31.74183,
+   35.45941
+  ],
+  "wadi_qumran": [
+   31.74111,
+   35.45056
+  ],
+  "gerizim": [
+   32.20082,
+   35.27326
+  ],
+  "beth_shean": [
+   32.5037,
+   35.50309
+  ],
+  "ibziq": [
+   32.36884,
+   35.39736
+  ],
+  "beth_horon": [
+   31.8853,
+   35.11341
+  ],
+  "kh_salhab": [
+   32.35504,
+   35.37277
+  ],
+  "ein_samiya": [
+   31.99231,
+   35.32671
+  ],
+  "kh_yanun": [
+   32.15802,
+   35.36127
+  ],
+  "muhalhil": [
+   31.78648,
+   35.4318
+  ],
+  "beit_kahil": [
+   31.56966,
+   35.066
+  ],
+  "kuhlah": [
+   31.2931,
+   35.0553
+  ],
+  "carmel_siah": [
+   32.801,
+   34.975
+  ],
+  "mount_zion": [
+   31.77167,
+   35.22861
+  ],
+  "transjordan#0": [
+   31.56722,
+   35.62417
+  ],
+  "transjordan#1": [
+   31.57442,
+   35.66475
+  ],
+  "transjordan#2": [
+   31.59758,
+   35.56264
+  ],
+  "transjordan#3": [
+   31.76778,
+   35.72528
+  ],
+  "transjordan#4": [
+   31.71667,
+   35.8
+  ],
+  "transjordan#5": [
+   31.80083,
+   35.80889
+  ],
+  "transjordan#6": [
+   31.9128,
+   35.7518
+  ],
+  "transjordan#7": [
+   31.90476,
+   35.71157
+  ],
+  "transjordan#8": [
+   31.8628,
+   35.67725
+  ],
+  "transjordan#9": [
+   31.85271,
+   35.67372
+  ],
+  "transjordan#10": [
+   32.18651,
+   35.68634
+  ],
+  "transjordan#11": [
+   31.83722,
+   35.55028
+  ],
+  "ein_ghuweir": [
+   31.62768,
+   35.41255
+  ],
+  "ein_feshkha": [
+   31.71444,
+   35.45333
+  ],
+  "iv17_abu_saraj": [
+   31.89009,
+   35.42477
+  ],
+  "U_JER": [
+   31.776159375,
+   35.233354375000005
+  ],
+  "U_DESERT": [
+   31.732029999999998,
+   35.3809375
+  ],
+  "U_SOUTH": [
+   31.646855,
+   35.23089
+  ],
+  "U_JERICHO": [
+   31.86048209090909,
+   35.44412518181819
+  ],
+  "U_QUMRAN": [
+   31.719331999999998,
+   35.445370000000004
+  ],
+  "U_NORTH": [
+   32.317284,
+   35.38155
+  ],
+  "U_WEST": [
+   31.8853,
+   35.11341
+  ],
+  "U_SAMDES": [
+   31.99231,
+   35.32671
+  ],
+  "U_HEBNEG": [
+   31.431379999999997,
+   35.06065
+  ],
+  "U_CARMEL": [
+   32.801,
+   34.975
+  ],
+  "U_TRANSJ": [
+   31.798441666666665,
+   35.686390833333334
+  ]
+ },
+ "out_h": {
+  "temple": {
+   "jer_temple": 0.0,
+   "jer_east_gate": 0.0362,
+   "jer_se_corner": 0.041,
+   "jer_south_wall": 0.0393,
+   "jer_kidron_mon": 0.1279,
+   "jer_kidron_east": 0.1322,
+   "jer_gethsemane": 0.1093,
+   "jer_siloam": 0.1986,
+   "jer_bir_ayyub": 0.2669,
+   "jer_bethesda": 0.0741,
+   "jer_tyropoeon": 0.0213,
+   "jer_tombs_kings": 0.2979,
+   "jer_baqa": 0.5694,
+   "ramat_rahel": 1.0708,
+   "tell_el_ful": 1.1681,
+   "mar_saba": 2.8839,
+   "hyrcania": 3.3593,
+   "buqeia": 3.8617,
+   "natuf": 3.569,
+   "tekoa_herodium": 3.4163,
+   "nuweimeh": 5.3292,
+   "ain_duk": 5.2004,
+   "doq": 5.0212,
+   "tell_es_sultan": 5.1496,
+   "jericho_palaces": 4.7199,
+   "jericho_area": 5.1932,
+   "tell_el_qos": 5.2279,
+   "choziba": 4.2121,
+   "kuteif": 3.9819,
+   "jordan_ford": 6.3952,
+   "asla": 4.9052,
+   "kh_qumran": 5.0045,
+   "wadi_qumran": 4.7441,
+   "gerizim": 11.1417,
+   "beth_shean": 19.5287,
+   "ibziq": 15.8295,
+   "beth_horon": 3.8477,
+   "kh_salhab": 15.3565,
+   "ein_samiya": 6.2059,
+   "kh_yanun": 10.1054,
+   "muhalhil": 4.3196,
+   "beit_kahil": 6.6152,
+   "kuhlah": 12.5616,
+   "carmel_siah": 25.8195,
+   "mount_zion": 0.2072,
+   "transjordan#0": 11.0676,
+   "transjordan#1": 11.699,
+   "transjordan#2": 8.4349,
+   "transjordan#3": 10.9336,
+   "transjordan#4": 12.8458,
+   "transjordan#5": 12.7558,
+   "transjordan#6": 11.97,
+   "transjordan#7": 10.9045,
+   "transjordan#8": 9.4096,
+   "transjordan#9": 9.2534,
+   "transjordan#10": 14.3973,
+   "transjordan#11": 6.5973,
+   "ein_ghuweir": 5.577,
+   "ein_feshkha": 5.275,
+   "iv17_abu_saraj": 5.333,
+   "U_JER": 0.0417,
+   "U_DESERT": 3.4925,
+   "U_SOUTH": 3.4952,
+   "U_JERICHO": 4.9391,
+   "U_QUMRAN": 4.9293,
+   "U_NORTH": 14.5228,
+   "U_WEST": 3.8477,
+   "U_SAMDES": 6.2059,
+   "U_HEBNEG": 9.3193,
+   "U_CARMEL": 25.8195,
+   "U_TRANSJ": 9.3974
+  },
+  "qumran": {
+   "jer_temple": 5.9399,
+   "jer_east_gate": 5.9052,
+   "jer_se_corner": 5.8965,
+   "jer_south_wall": 5.9153,
+   "jer_kidron_mon": 5.7907,
+   "jer_kidron_east": 5.8005,
+   "jer_gethsemane": 5.8433,
+   "jer_siloam": 5.8506,
+   "jer_bir_ayyub": 5.7966,
+   "jer_bethesda": 5.9702,
+   "jer_tyropoeon": 5.9455,
+   "jer_tombs_kings": 6.1566,
+   "jer_baqa": 6.2176,
+   "ramat_rahel": 6.2099,
+   "tell_el_ful": 6.4485,
+   "mar_saba": 3.4234,
+   "hyrcania": 2.568,
+   "buqeia": 1.8038,
+   "natuf": 6.5677,
+   "tekoa_herodium": 6.6874,
+   "nuweimeh": 3.432,
+   "ain_duk": 3.9411,
+   "doq": 3.5832,
+   "tell_es_sultan": 3.1013,
+   "jericho_palaces": 2.7126,
+   "jericho_area": 2.6365,
+   "tell_el_qos": 2.6268,
+   "choziba": 2.9608,
+   "kuteif": 2.1661,
+   "jordan_ford": 2.6586,
+   "asla": 0.9674,
+   "kh_qumran": 0.0,
+   "wadi_qumran": 0.372,
+   "gerizim": 13.1198,
+   "beth_shean": 18.0146,
+   "ibziq": 15.5803,
+   "beth_horon": 9.2662,
+   "kh_salhab": 15.3826,
+   "ein_samiya": 7.6154,
+   "kh_yanun": 11.1104,
+   "muhalhil": 1.5522,
+   "beit_kahil": 11.0812,
+   "kuhlah": 14.8231,
+   "carmel_siah": 28.578,
+   "mount_zion": 6.0809,
+   "transjordan#0": 6.2653,
+   "transjordan#1": 6.7967,
+   "transjordan#2": 3.9243,
+   "transjordan#3": 6.2375,
+   "transjordan#4": 7.8419,
+   "transjordan#5": 8.3593,
+   "transjordan#6": 8.071,
+   "transjordan#7": 7.0058,
+   "transjordan#8": 5.5106,
+   "transjordan#9": 5.3528,
+   "transjordan#10": 12.5103,
+   "transjordan#11": 2.711,
+   "ein_ghuweir": 2.8625,
+   "ein_feshkha": 0.6521,
+   "iv17_abu_saraj": 3.7194,
+   "U_JER": 5.9423,
+   "U_DESERT": 1.9739,
+   "U_SOUTH": 6.6394,
+   "U_JERICHO": 2.8389,
+   "U_QUMRAN": 0.8208,
+   "U_NORTH": 14.4478,
+   "U_WEST": 9.2662,
+   "U_SAMDES": 7.6154,
+   "U_HEBNEG": 12.8385,
+   "U_CARMEL": 28.578,
+   "U_TRANSJ": 5.1219
+  },
+  "jericho": {
+   "jer_temple": 5.9883,
+   "jer_east_gate": 5.9508,
+   "jer_se_corner": 6.0048,
+   "jer_south_wall": 6.0156,
+   "jer_kidron_mon": 5.9017,
+   "jer_kidron_east": 5.9396,
+   "jer_gethsemane": 5.8796,
+   "jer_siloam": 6.0115,
+   "jer_bir_ayyub": 6.0107,
+   "jer_bethesda": 5.9593,
+   "jer_tyropoeon": 6.0095,
+   "jer_tombs_kings": 6.0171,
+   "jer_baqa": 6.4666,
+   "ramat_rahel": 6.7758,
+   "tell_el_ful": 5.8114,
+   "mar_saba": 5.2457,
+   "hyrcania": 4.4238,
+   "buqeia": 3.989,
+   "natuf": 8.3014,
+   "tekoa_herodium": 8.3177,
+   "nuweimeh": 0.3311,
+   "ain_duk": 0.8703,
+   "doq": 0.734,
+   "tell_es_sultan": 0.0,
+   "jericho_palaces": 0.5003,
+   "jericho_area": 0.4838,
+   "tell_el_qos": 0.5354,
+   "choziba": 1.1075,
+   "kuteif": 1.9361,
+   "jordan_ford": 2.0358,
+   "asla": 2.4515,
+   "kh_qumran": 2.9444,
+   "wadi_qumran": 3.1653,
+   "gerizim": 10.0396,
+   "beth_shean": 15.1483,
+   "ibziq": 12.714,
+   "beth_horon": 7.8859,
+   "kh_salhab": 12.5164,
+   "ein_samiya": 4.536,
+   "kh_yanun": 8.2066,
+   "muhalhil": 2.1003,
+   "beit_kahil": 12.3653,
+   "kuhlah": 17.3647,
+   "carmel_siah": 25.7118,
+   "mount_zion": 6.1952,
+   "transjordan#0": 9.134,
+   "transjordan#1": 9.4788,
+   "transjordan#2": 6.7933,
+   "transjordan#3": 7.1842,
+   "transjordan#4": 9.1568,
+   "transjordan#5": 8.6568,
+   "transjordan#6": 7.0427,
+   "transjordan#7": 5.8788,
+   "transjordan#8": 4.6085,
+   "transjordan#9": 4.6306,
+   "transjordan#10": 9.6959,
+   "transjordan#11": 2.2368,
+   "ein_ghuweir": 5.7851,
+   "ein_feshkha": 3.575,
+   "iv17_abu_saraj": 0.6579,
+   "U_JER": 6.03,
+   "U_DESERT": 3.8003,
+   "U_SOUTH": 8.3486,
+   "U_JERICHO": 0.2555,
+   "U_QUMRAN": 3.7438,
+   "U_NORTH": 11.5816,
+   "U_WEST": 7.8859,
+   "U_SAMDES": 4.536,
+   "U_HEBNEG": 14.8566,
+   "U_CARMEL": 25.7118,
+   "U_TRANSJ": 5.4701
+  }
+ },
+ "back_h": {
+  "temple": {
+   "jer_temple": 0.0,
+   "jer_east_gate": 0.048,
+   "jer_se_corner": 0.057,
+   "jer_south_wall": 0.0467,
+   "jer_kidron_mon": 0.158,
+   "jer_kidron_east": 0.185,
+   "jer_gethsemane": 0.1425,
+   "jer_siloam": 0.2758,
+   "jer_bir_ayyub": 0.3693,
+   "jer_bethesda": 0.0742,
+   "jer_tyropoeon": 0.0275,
+   "jer_tombs_kings": 0.2701,
+   "jer_baqa": 0.5715,
+   "ramat_rahel": 0.9902,
+   "tell_el_ful": 1.0893,
+   "mar_saba": 3.3307,
+   "hyrcania": 3.794,
+   "buqeia": 4.5205,
+   "natuf": 3.7391,
+   "tekoa_herodium": 3.5036,
+   "nuweimeh": 6.1319,
+   "ain_duk": 5.9378,
+   "doq": 5.5928,
+   "tell_es_sultan": 5.9883,
+   "jericho_palaces": 5.5899,
+   "jericho_area": 6.1199,
+   "tell_el_qos": 6.1623,
+   "choziba": 4.9557,
+   "kuteif": 4.6627,
+   "jordan_ford": 7.4679,
+   "asla": 5.588,
+   "kh_qumran": 5.9399,
+   "wadi_qumran": 5.5778,
+   "gerizim": 11.0378,
+   "beth_shean": 20.2069,
+   "ibziq": 16.0449,
+   "beth_horon": 3.9493,
+   "kh_salhab": 15.626,
+   "ein_samiya": 6.2478,
+   "kh_yanun": 10.0815,
+   "muhalhil": 5.0355,
+   "beit_kahil": 6.4249,
+   "kuhlah": 12.7906,
+   "carmel_siah": 26.3535,
+   "mount_zion": 0.1829,
+   "transjordan#0": 11.3312,
+   "transjordan#1": 11.7944,
+   "transjordan#2": 9.388,
+   "transjordan#3": 11.0617,
+   "transjordan#4": 12.8973,
+   "transjordan#5": 12.6589,
+   "transjordan#6": 12.3188,
+   "transjordan#7": 11.3361,
+   "transjordan#8": 10.1748,
+   "transjordan#9": 9.9951,
+   "transjordan#10": 15.0874,
+   "transjordan#11": 7.68,
+   "ein_ghuweir": 6.5047,
+   "ein_feshkha": 6.2123,
+   "iv17_abu_saraj": 6.0473,
+   "U_JER": 0.056,
+   "U_DESERT": 4.1048,
+   "U_SOUTH": 3.6022,
+   "U_JERICHO": 5.8235,
+   "U_QUMRAN": 5.7288,
+   "U_NORTH": 14.8342,
+   "U_WEST": 3.9493,
+   "U_SAMDES": 6.2478,
+   "U_HEBNEG": 9.3506,
+   "U_CARMEL": 26.3535,
+   "U_TRANSJ": 10.0424
+  },
+  "qumran": {
+   "jer_temple": 5.0045,
+   "jer_east_gate": 4.9795,
+   "jer_se_corner": 4.9709,
+   "jer_south_wall": 4.9794,
+   "jer_kidron_mon": 4.8886,
+   "jer_kidron_east": 4.9069,
+   "jer_gethsemane": 4.9161,
+   "jer_siloam": 4.9771,
+   "jer_bir_ayyub": 4.9453,
+   "jer_bethesda": 5.0161,
+   "jer_tyropoeon": 5.0022,
+   "jer_tombs_kings": 5.1814,
+   "jer_baqa": 5.3205,
+   "ramat_rahel": 5.2715,
+   "tell_el_ful": 5.4246,
+   "mar_saba": 2.875,
+   "hyrcania": 2.0789,
+   "buqeia": 1.5147,
+   "natuf": 5.7451,
+   "tekoa_herodium": 5.824,
+   "nuweimeh": 3.2343,
+   "ain_duk": 3.6446,
+   "doq": 3.2053,
+   "tell_es_sultan": 2.9444,
+   "jericho_palaces": 2.5605,
+   "jericho_area": 2.5388,
+   "tell_el_qos": 2.5251,
+   "choziba": 2.6802,
+   "kuteif": 1.8709,
+   "jordan_ford": 2.7002,
+   "asla": 0.7725,
+   "kh_qumran": 0.0,
+   "wadi_qumran": 0.2667,
+   "gerizim": 12.0525,
+   "beth_shean": 17.8337,
+   "ibziq": 14.7401,
+   "beth_horon": 8.4396,
+   "kh_salhab": 14.6241,
+   "ein_samiya": 6.7759,
+   "kh_yanun": 10.1468,
+   "muhalhil": 1.3173,
+   "beit_kahil": 9.9798,
+   "kuhlah": 14.0785,
+   "carmel_siah": 28.0281,
+   "mount_zion": 5.1096,
+   "transjordan#0": 5.6371,
+   "transjordan#1": 6.0267,
+   "transjordan#2": 3.9667,
+   "transjordan#3": 5.395,
+   "transjordan#4": 7.0917,
+   "transjordan#5": 7.2388,
+   "transjordan#6": 7.374,
+   "transjordan#7": 6.3932,
+   "transjordan#8": 5.2297,
+   "transjordan#9": 5.0467,
+   "transjordan#10": 12.1481,
+   "transjordan#11": 2.7727,
+   "ein_ghuweir": 2.8924,
+   "ein_feshkha": 0.7088,
+   "iv17_abu_saraj": 3.4496,
+   "U_JER": 4.9966,
+   "U_DESERT": 1.6517,
+   "U_SOUTH": 5.797,
+   "U_JERICHO": 2.6984,
+   "U_QUMRAN": 0.7102,
+   "U_NORTH": 13.7252,
+   "U_WEST": 8.4396,
+   "U_SAMDES": 6.7759,
+   "U_HEBNEG": 11.9426,
+   "U_CARMEL": 28.0281,
+   "U_TRANSJ": 4.7036
+  },
+  "jericho": {
+   "jer_temple": 5.1496,
+   "jer_east_gate": 5.1233,
+   "jer_se_corner": 5.1531,
+   "jer_south_wall": 5.1676,
+   "jer_kidron_mon": 5.0582,
+   "jer_kidron_east": 5.1138,
+   "jer_gethsemane": 5.0587,
+   "jer_siloam": 5.2197,
+   "jer_bir_ayyub": 5.2635,
+   "jer_bethesda": 5.1293,
+   "jer_tyropoeon": 5.1771,
+   "jer_tombs_kings": 5.1631,
+   "jer_baqa": 5.6388,
+   "ramat_rahel": 5.8787,
+   "tell_el_ful": 4.9205,
+   "mar_saba": 4.7804,
+   "hyrcania": 3.9819,
+   "buqeia": 3.7204,
+   "natuf": 7.696,
+   "tekoa_herodium": 7.6019,
+   "nuweimeh": 0.2956,
+   "ain_duk": 0.7345,
+   "doq": 0.5365,
+   "tell_es_sultan": 0.0,
+   "jericho_palaces": 0.5035,
+   "jericho_area": 0.5364,
+   "tell_el_qos": 0.5956,
+   "choziba": 0.9983,
+   "kuteif": 1.7645,
+   "jordan_ford": 2.2418,
+   "asla": 2.3503,
+   "kh_qumran": 3.1013,
+   "wadi_qumran": 3.1407,
+   "gerizim": 9.1258,
+   "beth_shean": 15.1299,
+   "ibziq": 12.0332,
+   "beth_horon": 7.3061,
+   "kh_salhab": 11.9173,
+   "ein_samiya": 3.8593,
+   "kh_yanun": 7.3729,
+   "muhalhil": 1.9789,
+   "beit_kahil": 11.3408,
+   "kuhlah": 16.5439,
+   "carmel_siah": 25.3213,
+   "mount_zion": 5.3271,
+   "transjordan#0": 8.6731,
+   "transjordan#1": 8.9217,
+   "transjordan#2": 7.0227,
+   "transjordan#3": 6.4266,
+   "transjordan#4": 8.3233,
+   "transjordan#5": 7.7675,
+   "transjordan#6": 6.5558,
+   "transjordan#7": 5.4674,
+   "transjordan#8": 4.5155,
+   "transjordan#9": 4.5124,
+   "transjordan#10": 9.4897,
+   "transjordan#11": 2.4677,
+   "ein_ghuweir": 5.9834,
+   "ein_feshkha": 3.8,
+   "iv17_abu_saraj": 0.5441,
+   "U_JER": 5.2055,
+   "U_DESERT": 3.4798,
+   "U_SOUTH": 7.6312,
+   "U_JERICHO": 0.274,
+   "U_QUMRAN": 3.7326,
+   "U_NORTH": 11.0183,
+   "U_WEST": 7.3061,
+   "U_SAMDES": 3.8593,
+   "U_HEBNEG": 14.1633,
+   "U_CARMEL": 25.3213,
+   "U_TRANSJ": 5.2327
+  }
+ }
+}
