@@ -1,0 +1,1084 @@
+{
+ "params": {
+  "DY": 0.15,
+  "GAM": 0.5,
+  "GMAX": 0.6,
+  "GMIN": -0.1,
+  "GSTEP": 2,
+  "GWORD": 1.6,
+  "HT": 1.3,
+  "HW": 0.08,
+  "KS": 3.0,
+  "LH": 70.0,
+  "NPASS": 0,
+  "PROF": "V",
+  "ROWA": 0.05,
+  "ROWB": 0.9,
+  "SIGN": 1.0,
+  "TAU": 0.0,
+  "WIN": 1.0,
+  "YSTEP": 6
+ },
+ "results": [
+  {
+   "col": 1,
+   "line": 1,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 1,
+   "line": 2,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 4,
+   "margin": -1.0397538542747498,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 3,
+    "truth_first": false,
+    "p0": 0.16666666666666666,
+    "positions": [
+     {
+      "pos": 5,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     },
+     {
+      "pos": 17,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 1,
+   "line": 3,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 1,
+   "line": 7,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 1,
+   "line": 8,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 4,
+   "margin": -9.838303171098232,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 3,
+    "truth_first": false,
+    "p0": 0.125,
+    "positions": [
+     {
+      "pos": 7,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 12,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 16,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 1,
+   "line": 9,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": -4.86709576100111,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 2,
+    "truth_first": false,
+    "p0": 0.25,
+    "positions": [
+     {
+      "pos": 9,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 19,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 1,
+   "line": 10,
+   "split": "train_partial",
+   "K": 5,
+   "rank": 5,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 1,
+   "line": 11,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 5,
+   "margin": -0.08454954624176025,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 2,
+    "truth_first": false,
+    "p0": 0.25,
+    "positions": [
+     {
+      "pos": 16,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 17,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 2,
+   "line": 7,
+   "split": "train",
+   "K": 6,
+   "rank": 4,
+   "margin": -0.6853166222572327,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 3,
+    "truth_first": false,
+    "p0": 0.125,
+    "positions": [
+     {
+      "pos": 3,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 5,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 11,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 2,
+   "line": 12,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -2.607161581516266,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 5,
+    "truth_first": false,
+    "p0": 0.041666666666666664,
+    "positions": [
+     {
+      "pos": 5,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 7,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 10,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 11,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     }
+    ]
+   }
+  },
+  {
+   "col": 3,
+   "line": 3,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 5,
+   "margin": -5.150474667549133,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 5,
+    "truth_first": false,
+    "p0": 0.041666666666666664,
+    "positions": [
+     {
+      "pos": 8,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 9,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 13,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     },
+     {
+      "pos": 14,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 3,
+   "line": 10,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 2,
+   "margin": 0.0,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 4,
+    "truth_first": true,
+    "p0": 0.0625,
+    "positions": [
+     {
+      "pos": 2,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 5,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 10,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 11,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 4,
+   "line": 1,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 5,
+   "margin": -3.096017579548061,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 4,
+    "truth_first": false,
+    "p0": 0.08333333333333333,
+    "positions": [
+     {
+      "pos": 3,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     },
+     {
+      "pos": 7,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 18,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 4,
+   "line": 7,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 1,
+   "margin": 0.12598047405481339,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 5,
+    "truth_first": true,
+    "p0": 0.041666666666666664,
+    "positions": [
+     {
+      "pos": 11,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 12,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 13,
+      "m": 2,
+      "win": true,
+      "p0": 0.3333333333333333
+     },
+     {
+      "pos": 16,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 4,
+   "line": 8,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 3,
+   "margin": -3.547519418410957,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 5,
+    "truth_first": false,
+    "p0": 0.03125,
+    "positions": [
+     {
+      "pos": 3,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 5,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 8,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 9,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 15,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 4,
+   "line": 10,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 4,
+   "margin": -2.739252060651779,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 4,
+    "truth_first": false,
+    "p0": 0.0625,
+    "positions": [
+     {
+      "pos": 2,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 5,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 7,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 9,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 4,
+   "line": 12,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": -0.7127479314804077,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 4,
+    "truth_first": false,
+    "p0": 0.08333333333333333,
+    "positions": [
+     {
+      "pos": 6,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 8,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 10,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     }
+    ]
+   }
+  },
+  {
+   "col": 5,
+   "line": 7,
+   "split": "train",
+   "K": 4,
+   "rank": 4,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 5,
+   "line": 10,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 4,
+   "margin": -0.3194603845477104,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 3,
+    "truth_first": false,
+    "p0": 0.125,
+    "positions": [
+     {
+      "pos": 8,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 10,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 14,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 5,
+   "line": 12,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -4.428659833967686,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 5,
+    "truth_first": false,
+    "p0": 0.0625,
+    "positions": [
+     {
+      "pos": 2,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 5,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 9,
+      "m": 3,
+      "win": false,
+      "p0": 0.25
+     }
+    ]
+   }
+  },
+  {
+   "col": 5,
+   "line": 13,
+   "split": "train",
+   "K": 3,
+   "rank": 3,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 5,
+   "line": 14,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -2.5334988683462143,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 3,
+    "truth_first": false,
+    "p0": 0.125,
+    "positions": [
+     {
+      "pos": 5,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 6,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 7,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 6,
+   "line": 8,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 5,
+   "margin": -1.7428736165165901,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 5,
+    "truth_first": false,
+    "p0": 0.08333333333333333,
+    "positions": [
+     {
+      "pos": 6,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     },
+     {
+      "pos": 8,
+      "m": 3,
+      "win": false,
+      "p0": 0.25
+     }
+    ]
+   }
+  },
+  {
+   "col": 6,
+   "line": 10,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 6,
+   "margin": -6.039085283875465,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 3,
+    "truth_first": false,
+    "p0": 0.16666666666666666,
+    "positions": [
+     {
+      "pos": 3,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 4,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     }
+    ]
+   }
+  },
+  {
+   "col": 6,
+   "line": 11,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 4,
+   "margin": -0.1944655179977417,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 3,
+    "truth_first": false,
+    "p0": 0.125,
+    "positions": [
+     {
+      "pos": 5,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 6,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 8,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 6,
+   "line": 13,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 4,
+   "margin": -3.517437696456909,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 5,
+    "truth_first": false,
+    "p0": 0.05555555555555555,
+    "positions": [
+     {
+      "pos": 1,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 6,
+      "m": 2,
+      "win": true,
+      "p0": 0.3333333333333333
+     },
+     {
+      "pos": 7,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     }
+    ]
+   }
+  },
+  {
+   "col": 6,
+   "line": 14,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 5,
+   "margin": -3.7127672731876373,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 5,
+    "truth_first": false,
+    "p0": 0.041666666666666664,
+    "positions": [
+     {
+      "pos": 8,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 10,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     },
+     {
+      "pos": 11,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 13,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 9,
+   "line": 1,
+   "split": "train",
+   "K": 6,
+   "rank": 4,
+   "margin": -3.1207816526293755,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 4,
+    "truth_first": false,
+    "p0": 0.0625,
+    "positions": [
+     {
+      "pos": 2,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 4,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 11,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     },
+     {
+      "pos": 17,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 9,
+   "line": 12,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -3.41409594938159,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 4,
+    "truth_first": false,
+    "p0": 0.1111111111111111,
+    "positions": [
+     {
+      "pos": 10,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     },
+     {
+      "pos": 13,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     }
+    ]
+   }
+  },
+  {
+   "col": 9,
+   "line": 15,
+   "split": "train",
+   "K": 6,
+   "rank": 3,
+   "margin": 0.0,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 3,
+    "truth_first": true,
+    "p0": 0.25,
+    "positions": [
+     {
+      "pos": 2,
+      "m": 3,
+      "win": true,
+      "p0": 0.25
+     }
+    ]
+   }
+  },
+  {
+   "col": 10,
+   "line": 2,
+   "split": "train_r1",
+   "K": 5,
+   "rank": 4,
+   "margin": 0.0,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 1,
+    "truth_first": true,
+    "p0": 0.5,
+    "positions": [
+     {
+      "pos": 2,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 10,
+   "line": 3,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 10,
+   "line": 7,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -11.58141439780593,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 2,
+    "truth_first": false,
+    "p0": 0.25,
+    "positions": [
+     {
+      "pos": 7,
+      "m": 1,
+      "win": true,
+      "p0": 0.5
+     },
+     {
+      "pos": 8,
+      "m": 1,
+      "win": false,
+      "p0": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "col": 10,
+   "line": 8,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 11,
+   "line": 5,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": -4.633845835924149,
+   "eval": {
+    "observed": true,
+    "n_obs_competitors": 2,
+    "truth_first": false,
+    "p0": 0.3333333333333333,
+    "positions": [
+     {
+      "pos": 14,
+      "m": 2,
+      "win": false,
+      "p0": 0.3333333333333333
+     }
+    ]
+   }
+  },
+  {
+   "col": 11,
+   "line": 6,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 11,
+   "line": 17,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  },
+  {
+   "col": 12,
+   "line": 2,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0,
+   "eval": {
+    "observed": false,
+    "n_obs_competitors": 0,
+    "truth_first": null,
+    "p0": null,
+    "positions": []
+   }
+  }
+ ],
+ "seconds": 199
+}

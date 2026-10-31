@@ -1,0 +1,329 @@
+{
+ "params": {
+  "DY": 0.15,
+  "GAM": 0.5,
+  "GMAX": 0.6,
+  "GMIN": -0.1,
+  "GSTEP": 2,
+  "GWORD": 1.6,
+  "HT": 1.3,
+  "HW": 0.08,
+  "KS": 3.0,
+  "LH": 70.0,
+  "NPASS": 0,
+  "PROF": "V",
+  "ROWA": 0.05,
+  "ROWB": 0.9,
+  "SIGN": 1.0,
+  "TAU": 0.0,
+  "WIN": 1.0,
+  "YSTEP": 6
+ },
+ "results": [
+  {
+   "col": 1,
+   "line": 1,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0
+  },
+  {
+   "col": 1,
+   "line": 2,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 4,
+   "margin": -1.0397538542747498
+  },
+  {
+   "col": 1,
+   "line": 3,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0
+  },
+  {
+   "col": 1,
+   "line": 7,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0
+  },
+  {
+   "col": 1,
+   "line": 8,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 4,
+   "margin": -9.838303171098232
+  },
+  {
+   "col": 1,
+   "line": 9,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": -4.86709576100111
+  },
+  {
+   "col": 1,
+   "line": 10,
+   "split": "train_partial",
+   "K": 5,
+   "rank": 5,
+   "margin": 0.0
+  },
+  {
+   "col": 1,
+   "line": 11,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 5,
+   "margin": -0.08454954624176025
+  },
+  {
+   "col": 2,
+   "line": 7,
+   "split": "train",
+   "K": 6,
+   "rank": 4,
+   "margin": -0.6853166222572327
+  },
+  {
+   "col": 2,
+   "line": 12,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -2.607161581516266
+  },
+  {
+   "col": 3,
+   "line": 3,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 5,
+   "margin": -5.150474667549133
+  },
+  {
+   "col": 3,
+   "line": 10,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 2,
+   "margin": 0.0
+  },
+  {
+   "col": 4,
+   "line": 1,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 5,
+   "margin": -3.096017579548061
+  },
+  {
+   "col": 4,
+   "line": 7,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 1,
+   "margin": 0.12598047405481339
+  },
+  {
+   "col": 4,
+   "line": 8,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 3,
+   "margin": -3.547519418410957
+  },
+  {
+   "col": 4,
+   "line": 10,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 4,
+   "margin": -2.739252060651779
+  },
+  {
+   "col": 4,
+   "line": 12,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 6,
+   "margin": -0.7127479314804077
+  },
+  {
+   "col": 5,
+   "line": 7,
+   "split": "train",
+   "K": 4,
+   "rank": 4,
+   "margin": 0.0
+  },
+  {
+   "col": 5,
+   "line": 10,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 4,
+   "margin": -0.3194603845477104
+  },
+  {
+   "col": 5,
+   "line": 12,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -4.428659833967686
+  },
+  {
+   "col": 5,
+   "line": 13,
+   "split": "train",
+   "K": 3,
+   "rank": 3,
+   "margin": 0.0
+  },
+  {
+   "col": 5,
+   "line": 14,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -2.5334988683462143
+  },
+  {
+   "col": 6,
+   "line": 8,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 5,
+   "margin": -1.7428736165165901
+  },
+  {
+   "col": 6,
+   "line": 10,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 6,
+   "margin": -6.039085283875465
+  },
+  {
+   "col": 6,
+   "line": 11,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 4,
+   "margin": -0.1944655179977417
+  },
+  {
+   "col": 6,
+   "line": 13,
+   "split": "train_r1",
+   "K": 6,
+   "rank": 4,
+   "margin": -3.517437696456909
+  },
+  {
+   "col": 6,
+   "line": 14,
+   "split": "train_partial",
+   "K": 6,
+   "rank": 5,
+   "margin": -3.7127672731876373
+  },
+  {
+   "col": 9,
+   "line": 1,
+   "split": "train",
+   "K": 6,
+   "rank": 4,
+   "margin": -3.1207816526293755
+  },
+  {
+   "col": 9,
+   "line": 12,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -3.41409594938159
+  },
+  {
+   "col": 9,
+   "line": 15,
+   "split": "train",
+   "K": 6,
+   "rank": 3,
+   "margin": 0.0
+  },
+  {
+   "col": 10,
+   "line": 2,
+   "split": "train_r1",
+   "K": 5,
+   "rank": 4,
+   "margin": 0.0
+  },
+  {
+   "col": 10,
+   "line": 3,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0
+  },
+  {
+   "col": 10,
+   "line": 7,
+   "split": "train",
+   "K": 6,
+   "rank": 5,
+   "margin": -11.58141439780593
+  },
+  {
+   "col": 10,
+   "line": 8,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0
+  },
+  {
+   "col": 11,
+   "line": 5,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": -4.633845835924149
+  },
+  {
+   "col": 11,
+   "line": 6,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0
+  },
+  {
+   "col": 11,
+   "line": 17,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0
+  },
+  {
+   "col": 12,
+   "line": 2,
+   "split": "train",
+   "K": 6,
+   "rank": 6,
+   "margin": 0.0
+  }
+ ],
+ "seconds": 202
+}
