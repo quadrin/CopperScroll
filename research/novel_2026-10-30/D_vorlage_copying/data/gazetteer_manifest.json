@@ -1,0 +1,30 @@
+{
+ "S2": {
+  "file": "gaz_S2.csv",
+  "raw": "/root/novel/wt_D_vorlage_copying/research/regional/mandate_maps/names.csv",
+  "raw_sha256": "0ebb11fa5a452708196104d0de02f6994220870a97535781df7463c0f3508479",
+  "n_names": 229,
+  "sha256": "95130ceda475ca2223052747f66a18eafd2cc87189223035e13b8ab050255f8d",
+  "run19_sha256": "95130ceda475ca2223052747f66a18eafd2cc87189223035e13b8ab050255f8d",
+  "reproduces_run19": true
+ },
+ "S4": {
+  "file": "inputs/gaz_S4.csv",
+  "source": "origin/sandbox/methods:sandbox/field_names_2026-10-27/out/A1/gaz_S4.csv (commit eb0ef639)",
+  "n_names": 478,
+  "sha256": "5378499b9242e8a0213cdd2ff0b2d02823ae4c5cee54107525d4c3b962a09f17"
+ },
+ "ASI": {
+  "file": "gaz_ASI.csv",
+  "raw": "/root/novel/wt_D_vorlage_copying/research/regional/asi_jerusalem/sites.csv",
+  "raw_sha256": "b9eb0df70d7dcdfe0cea68fc76950357057c7ba31e3808354ed9959c376d1e22",
+  "n_names": 639,
+  "excluded": {
+   "outside region or no coordinates": 167,
+   "Hebrew romanization markers": 217,
+   "English words": 128,
+   "empty name": 107
+  },
+  "sha256": "03ce0d1dad46dc2fc1611b1d2ada105dbfe662aecdb5d689defc8f3c80fd3518"
+ }
+}
