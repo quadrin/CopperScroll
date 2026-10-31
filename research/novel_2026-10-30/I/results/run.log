@@ -1,0 +1,102 @@
+primary-layer records: 1965 with a comparable name: 1916 unique skeletons: 2625
+achor                                         kind=test  eligible_records=97
+kohlit                                        kind=test  eligible_records=1062
+sekakah                                       kind=test  eligible_records=167
+melah                                         kind=test  eligible_records=696
+manos                                         kind=test  eligible_records=519
+mdh                                           kind=test  eligible_records=525
+mattiyah                                      kind=test  eligible_records=348
+nebat                                         kind=test  eligible_records=348
+kippa                                         kind=test  eligible_records=47
+solomon                                       kind=test  eligible_records=21
+qi                                            kind=test  eligible_records=63
+hasor                                         kind=test  eligible_records=182
+shaveh                                        kind=test  eligible_records=213
+shalef                                        kind=test  eligible_records=213
+din                                           kind=test  eligible_records=560
+tekelet                                       kind=test  eligible_records=168
+qomah                                         kind=test  eligible_records=0
+nebo                                          kind=test  eligible_records=185
+tamar                                         kind=test  eligible_records=558
+pele                                          kind=test  eligible_records=197
+nab                                           kind=test  eligible_records=185
+zered                                         kind=test  eligible_records=336
+absalom                                       kind=test  eligible_records=525
+zadok                                         kind=test  eligible_records=576
+obed                                          kind=test  eligible_records=177
+horebbeh                                      kind=test  eligible_records=136
+asla                                          kind=known eligible_records=161
+haqqos                                        kind=known eligible_records=130
+doq                                           kind=known eligible_records=152
+koziba                                        kind=known eligible_records=169
+kidron                                        kind=known eligible_records=9
+natof                                         kind=known eligible_records=203
+horon                                         kind=known eligible_records=218
+kerem                                         kind=known eligible_records=691
+rahil                                         kind=known eligible_records=520
+gerizim                                       kind=known eligible_records=137
+bethsham                                      kind=known eligible_records=21
+bezek                                         kind=known eligible_records=22
+janoah                                        kind=known eligible_records=809
+jericho                                       kind=known eligible_records=1021
+PC:Jericho                                    kind=pc    eligible_records=313
+PC:Siloam                                     kind=pc    eligible_records=895
+PC:Bethlehem                                  kind=pc    eligible_records=437
+PC:Anathoth                                   kind=pc    eligible_records=937
+PC:Tekoa                                      kind=pc    eligible_records=42
+PC:Kidron (learned Latin form expected; no Arabic survival) kind=pc    eligible_records=895
+PC:Gerizim                                    kind=pc    eligible_records=168
+PC:Beth-Hoglah                                kind=pc    eligible_records=316
+TC:Zechariah (Kidron tomb)                    kind=tc    eligible_records=48
+TC:Huldah (Mount of Olives)                   kind=tc    eligible_records=48
+TC:Simeon the Just                            kind=tc    eligible_records=48
+TOMB:melah                                    kind=tomb  eligible_records=71
+TOMB:kippa                                    kind=tomb  eligible_records=5
+TOMB:absalom                                  kind=tomb  eligible_records=71
+TOMB:zadok                                    kind=tomb  eligible_records=71
+TOMB:obed                                     kind=tomb  eligible_records=71
+{
+ "primary_all_test_names": {
+  "observed": 126,
+  "random_mean": 90.54,
+  "random_p99": 202,
+  "p": 0.1841,
+  "pass_": false
+ },
+ "secondary_nonbiblical": {
+  "observed": 41,
+  "random_mean": 45.76,
+  "random_p99": 130,
+  "p": 0.4826,
+  "pass_": false
+ },
+ "tomb_subtest": {
+  "observed": 8,
+  "random_mean": 3.31,
+  "random_p99": 13,
+  "p": 0.1045,
+  "pass_": false
+ },
+ "positive_controls_found": [
+  "PC:Jericho",
+  "PC:Siloam",
+  "PC:Bethlehem",
+  "PC:Anathoth",
+  "PC:Tekoa",
+  "PC:Kidron (learned Latin form expected; no Arabic survival)",
+  "PC:Gerizim",
+  "PC:Beth-Hoglah"
+ ],
+ "positive_controls_missed": [],
+ "tomb_controls_found": [
+  "TC:Zechariah (Kidron tomb)",
+  "TC:Huldah (Mount of Olives)",
+  "TC:Simeon the Just"
+ ],
+ "tomb_controls_missed": [],
+ "nrand": 200,
+ "seed": 20261030,
+ "thresh": 0.75,
+ "slack_km": 5.0,
+ "records": 1965
+}
