@@ -206,17 +206,37 @@ class EntryScorer:
             return 0.5 * base(m_in) + 0.5 * base(allm)
         return w * base(m_in) + (1 - w) * base(~m_in)
 
-    def posterior(self, region=None):
-        priors = np.stack([self.prior(r, region) for r in RHO_GRID])  # (rho, cells)
-        # marginal likelihood per (rho, c)
-        M = priors @ self.LR  # (rho, c)
-        w = M / M.sum()
+    def marginal(self, region=None, rho_grid=RHO_GRID):
+        """Prior stack (rho, cells) and marginal likelihood matrix M (rho, c)."""
+        priors = np.stack([self.prior(r, region) for r in rho_grid])
+        return priors, priors @ self.LR
+
+    def posterior(self, region=None, rho_grid=RHO_GRID, theta_w=None):
+        """theta_w: shared posterior over (rho, c) from the whole scroll (revision 1);
+        None = this entry alone with a uniform prior over pairs (RULE.md)."""
+        priors, M = self.marginal(region, rho_grid)
+        w = M / M.sum() if theta_w is None else theta_w
         post = np.zeros(self.L.n)
-        for ri in range(len(RHO_GRID)):
+        for ri in range(len(rho_grid)):
             for ci in range(len(C_GRID)):
-                post += w[ri, ci] * priors[ri] * self.LR[:, ci] / M[ri, ci]
-        prior_mix = priors.mean(0)
+                if w[ri, ci] > 0:
+                    post += w[ri, ci] * priors[ri] * self.LR[:, ci] / M[ri, ci]
+        if theta_w is None:
+            prior_mix = priors.mean(0)
+        else:  # prior of a cell under the shared parameter posterior
+            prior_mix = (w.sum(1)[:, None] * priors).sum(0)
         return post, prior_mix, w, priors
+
+
+RHO_GRID_V1 = np.round(np.arange(0.1, 0.91, 0.1), 2)
+
+
+def pooled_theta(Ms):
+    """Posterior over (rho, c) from the product of entries' marginal likelihoods (uniform prior)."""
+    lw = sum(np.log(M) for M in Ms)
+    lw -= lw.max()
+    w = np.exp(lw)
+    return w / w.sum()
 
 
 def hps_cover(post, k_true, level):

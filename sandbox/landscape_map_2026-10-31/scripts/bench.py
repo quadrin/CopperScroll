@@ -70,6 +70,47 @@ def run_A(a, b, tag, cell_km=0.3):
     return df
 
 
+def run_A_v1(a, b, tag, cell_km=0.3, scroll_size=50):
+    """Revision 1: fake scrolls of `scroll_size` consecutive seeds; (c, rho) pooled per scroll."""
+    from model import RHO_GRID_V1, pooled_theta
+    L = Landscape(cell_km)
+    D = sampling_dists()
+    rows = []
+    for s0 in range(a, b + 1, scroll_size):
+        seeds = list(range(s0, min(s0 + scroll_size, b + 1)))
+        fes, scs = [], []
+        for seed in seeds:
+            fe = fake_entry(L, np.random.default_rng(seed), D)
+            fes.append(fe)
+            scs.append(EntryScorer(L, fe["clues"], fe["Nt"]))
+        # amendment 1a: the zone named to R1 is right with probability 0.8
+        named = []
+        for seed, fe in zip(seeds, fes):
+            r = np.random.default_rng(10_000_000 + seed)
+            if r.random() < 0.8:
+                named.append(fe["zone"])
+            else:
+                p = D["zshare"].copy(); p[fe["zone"]] = 0; p /= p.sum()
+                named.append(int(r.choice(len(p), p=p)))
+        for reg in ("R0", "R1"):
+            regs = [None if reg == "R0" else (L.zone == nz, 0.8) for nz in named]
+            Ms = [sc.marginal(rg, RHO_GRID_V1)[1] for sc, rg in zip(scs, regs)]
+            W = pooled_theta(Ms)
+            c_mean = float((W.sum(0) * np.arange(1, 10) / 10).sum())
+            rho_mean = float((W.sum(1) * RHO_GRID_V1).sum())
+            for seed, fe, sc, rg, nz in zip(seeds, fes, scs, regs, named):
+                post, prior, w, _ = sc.posterior(rg, RHO_GRID_V1, W)
+                m = metrics(post, prior, fe["k"])
+                rows.append(dict(scroll=s0, seed=seed, region=reg, zone=fe["zone"], c_true=fe["c_true"],
+                                 named_zone=nz if reg == "R1" else -1,
+                                 nclue=len(fe["clues"]), kinds=";".join(fe["kinds"]),
+                                 truth_site=bool(sc.site[fe["k"]]), truth_pat=int(sc.pat[fe["k"]]),
+                                 c_post_mean=c_mean, rho_post_mean=rho_mean, **m))
+    df = pd.DataFrame(rows)
+    df.to_csv(RUN / f"out/benchA_{tag}.csv", index=False)
+    return df
+
+
 def run_B(tag, cell_km=0.3):
     L = Landscape(cell_km)
     m = pd.read_csv(INP / "mandate_features.csv")
@@ -111,10 +152,10 @@ def boot_ci(x, n=2000, seed=0):
 
 
 if __name__ == "__main__":
-    if sys.argv[1] == "A":
+    if sys.argv[1] in ("A", "A1"):
         a, b, tag = int(sys.argv[2]), int(sys.argv[3]), sys.argv[4]
         ck = float(sys.argv[5]) if len(sys.argv) > 5 else 0.3
-        df = run_A(a, b, tag, ck)
+        df = (run_A if sys.argv[1] == "A" else run_A_v1)(a, b, tag, ck)
     else:
         tag = sys.argv[2]
         ck = float(sys.argv[3]) if len(sys.argv) > 3 else 0.3
