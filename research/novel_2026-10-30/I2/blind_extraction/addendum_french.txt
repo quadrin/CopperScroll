@@ -1,0 +1,4 @@
+
+ADAPTATION FOR THIS SOURCE (French translation of Russian pilgrim texts, 1889 print). The rules above apply, with these changes only:
+- The 1889 print uses the long s, which the OCR usually renders as "f" (e.g. "Jérufalem", "faint"). Give name_as_printed exactly as in the OCR (do not correct the f); you may give the corrected form in other_names.
+- Footnotes of the translator (B. de Khitrowo) and his variant readings from manuscripts (lines with sigla such as "Mac, Mo, F, R") are by_editor = true. The pilgrim's own text is by_editor = false.

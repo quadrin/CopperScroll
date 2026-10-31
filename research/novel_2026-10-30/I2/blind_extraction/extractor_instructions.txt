@@ -1,0 +1,30 @@
+You are a careful data extractor for historical geography. Below this instruction block is OCR text taken from a published translation or edition of a travel account or geography written between about 1100 and 1600 (the header says which source and its date). The text is split into passages; each passage starts with a line "### PASSAGE seg=... file=... lines=A-B". The OCR has errors. Running heads and page numbers sometimes appear inside the text.
+
+TASK. Extract every PLACE RECORD that the text locates in one of these five regions:
+  JER   = Jerusalem, its walls, gates, pools, the Kidron / Jehoshaphat valley, Hinnom / Gehenna, Mount of Olives, Bethany, and places within about 6 km of the city.
+  JJV   = Jericho, its plain and springs, the lower Jordan valley and its fords, the north-west shore of the Dead Sea.
+  DES   = the Judean desert (the wilderness between Jerusalem/Bethlehem and the Jordan / Dead Sea), including its monasteries, caves, ravines and mountains.
+  GER   = the hills around Nablus / Neapolis / Shechem, Mount Gerizim and Mount Ebal, Jacob's well, and the nearby villages.
+  PER   = east of the lower Jordan (Peraea, Gilead, the Balqa, the land beyond Jordan opposite Jericho).
+Skip places outside these regions. Skip places that are only mentioned in passing in a list of countries or cities with no local detail, unless they are inside the five regions.
+
+A PLACE RECORD is one mention of one named place or named feature (for example a spring, well, cistern, pool, conduit, stream, valley, tomb, cave, church, monastery, mosque, shrine, mountain, village, ruin, gate, tower, road, ford, rock, field or garden) that has a proper name or a descriptive name in the text (e.g. "the fountain of Elisha", "the tomb of Absalom", "Bir X", "the Valley of Y", "the cave where Z hid"). Unnamed features ("a cistern", "a small church") are records only if the text ties them to a named place (then give the name of that place in anchor_place and leave name_as_printed as the descriptive phrase).
+If the same place is described in several passages, make one record per passage where the text adds a name form, feature type or position statement. Do not invent anything. Do not use your own knowledge to add positions or modern names; record only what the text says. Editor's footnotes that give modern Arabic names or identifications: record them as separate records with by_editor = true.
+
+OUTPUT. One JSON object per line (JSON Lines), nothing else: no prose, no markdown fences. Keys:
+ "seg": the seg value of the passage header,
+ "lines": the A-B line range from the passage header,
+ "page": a printed page number if one is visible near the mention, else "",
+ "name_as_printed": the name exactly as printed (keep diacritics and OCR spelling; fix only obvious hyphenation at line ends),
+ "name_language": the language of the name itself as far as the text shows: "Arabic", "Hebrew", "Aramaic", "Greek", "Latin", "French", "English", "German", "Syriac", "mixed" or "unknown",
+ "other_names": other names the text gives for the same place in the same passage, separated by " | ", else "",
+ "feature_type": one of spring, well, cistern, pool, conduit, stream, river, valley, tomb, cave, church, monastery, mosque, shrine, mountain, hill, village, town, ruin, gate, tower, fort, road, ford, rock, field, garden, sea, plain, building, other,
+ "feature_text": the words the text uses for the feature (up to 8 words),
+ "region": JER, JJV, DES, GER or PER,
+ "anchor_place": the named place relative to which the text positions it, else "",
+ "direction": the direction from the anchor as stated (e.g. "east", "below", "beyond", "on the road to"), else "",
+ "distance": the distance as stated (e.g. "two miles", "a bowshot", "half a day"), else "",
+ "position_phrase": the shortest verbatim phrase (at most 15 words) that states where the place is,
+ "by_editor": true if the information comes from the modern editor/translator's notes or introduction, false if from the medieval author,
+ "speaker_date": the date of writing of the statement if the passage shows it is from a different author than the header (e.g. a geographer quoted by the editor), else "".
+Keep each JSON object on a single line. If a passage holds no records, output nothing for it. Be exhaustive within the five regions.

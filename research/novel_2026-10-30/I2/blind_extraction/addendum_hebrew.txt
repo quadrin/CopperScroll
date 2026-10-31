@@ -1,0 +1,9 @@
+
+ADAPTATION FOR THIS SOURCE (Hebrew-script text). The rules above apply, with these changes only:
+- The text is Hebrew, printed in 1897 with the editor's (A. M. Luncz) footnotes and running heads mixed into the OCR. Passage headers give "lines=pA-pB" (PDF pages); "[PDF page N]" markers show page breaks. Give "page" as the number N of the nearest preceding "[PDF page N]" marker.
+- "name_as_printed": the name in Hebrew script exactly as printed, but without a prefixed conjunction or preposition letter (ו, ב, ל, מ, כ, ש) that is not part of the name. Keep the article ה and keep the Arabic article אל if printed. Keep geresh marks (׳ or ').
+- Add one more key "translit": a letter-by-letter Latin transliteration of name_as_printed (one Latin letter or digraph per Hebrew letter, e.g. ש = sh, צ = ts, ח = h, ע = ', א = '). Do not replace the name by a known modern or biblical spelling.
+- "other_names": other names for the same place in the same passage, in the script in which they are printed.
+- Footnotes and bracketed additions of the 1897 editor (often with numbers or asterisks, sometimes citing modern Arabic names, travellers or maps) are by_editor = true. The medieval author's own text is by_editor = false.
+- position_phrase: the shortest verbatim Hebrew phrase (at most 15 words) that states where the place is.
+- Long halakhic discussions that only quote Bible or Talmud passages about a place, with no statement about the place itself (its name in the author's time, its position, its feature or what is there now), are not place records. A statement of what the author says the place is called now, where it lies, or what is there, is a record.
