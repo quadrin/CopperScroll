@@ -1,0 +1,49 @@
+{
+ "smoke": false,
+ "n_names": 24,
+ "K": 10,
+ "n_V": 240,
+ "n_E": 240,
+ "overlap": 132,
+ "neighbourhood_strings": 3267,
+ "M_V": 162,
+ "chance_expected_V": 131.95,
+ "p_i_poisson_binomial_V": 2e-05,
+ "M_E": 173,
+ "chance_expected_E": 135.785,
+ "p_poisson_binomial_E": 0.0,
+ "family_matches": {
+  "V": {
+   "Palmer": 21,
+   "Mandate": 81,
+   "ASI": 60
+  },
+  "E": {
+   "Palmer": 21,
+   "Mandate": 93,
+   "ASI": 59
+  }
+ },
+ "D_obs_Vonly_minus_Eonly": -11,
+ "n_Vonly": 108,
+ "p_ii_a_permutation": 0.86161,
+ "uniform_mean": 145.154,
+ "uniform_p95": 164,
+ "p_ii_b_uniform": 0.07939,
+ "passed": {
+  "i": true,
+  "ii_a": false,
+  "ii_b": false
+ },
+ "verdict": "not obtained",
+ "palmer_new_patterns": 187,
+ "originals": {
+  "n": 46,
+  "matches": {
+   "Palmer": 7,
+   "Mandate": 20,
+   "ASI": 17
+  },
+  "chance_expected": 29.2
+ }
+}
