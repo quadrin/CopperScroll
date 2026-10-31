@@ -1,4 +1,4 @@
-# Novel directions on full-resolution imagery, 31 October 2026: index of seven runs in two waves
+# Novel directions on full-resolution imagery, 31 October 2026: index of seven runs in two waves, and an AI reader panel
 
 **First wave.** On 31 October 2026, four workers ran at the same time. Three reran the 30 October directions A, B and C as A2, B2 and C2. They used the full-resolution 1988 photographs of the West Semitic Research Project (WSRP) instead of the public previews of the University of Southern California (USC) Digital Library. The fourth worker started direction E, stereo elevation models from the 1974 HEXAGON (KH-9) film, which was blocked on 30 October.
 
@@ -6,9 +6,11 @@
 - B3 ran the 30 October B model, unchanged, on new lines with the exact null. It tests the orchestrator's exploratory finding under B2 below.
 - B4 and C3 rebuilt B and C on A2's letter placement.
 
+**AI reader panel (LC).** The owner then asked for the repository's letter-control quiz (`research/text/letter_controls/`) to be run with separate AI readers on the full-resolution 1988 frames. It ran as an exploratory arm under its PROTOCOL.md §7.
+
 The work was AI only: no fieldwork, purchase, contact or human reader.
 
-**Overall result.** All seven runs ended without a positive result. B3 withdrew the orchestrator's "round 1 was significant after all" reading. See "Across directions" and "Fieldwork wish list" for what remains.
+**Overall result.** All seven runs ended without a positive result. B3 withdrew the orchestrator's "round 1 was significant after all" reading. In the AI reader panel, all three readers were at chance level. See "Across directions" and "Fieldwork wish list" for what remains.
 
 Each direction has its own branch, its own folder `research/novel_2026-10-31/<direction>/` and its own `NOTE_2026-10-31.md`. Each worker committed and pushed a frozen protocol (SHA-256 in the commit message) before its one confirmatory run. Every rule, threshold and result of 30 October had been seen, so each protocol is labelled a **new model**. The 30 October results stand as recorded in [the 30 October index](https://github.com/quadrin/CopperScroll/blob/claude/novel-2026-10-30-summary/research/novel_2026-10-30/README.md).
 
@@ -23,6 +25,7 @@ Each direction has its own branch, its own folder `research/novel_2026-10-31/<di
 | B3. Round-1 B model, exact null (second wave) | `claude/novel-2026-10-31-B3` (6dfbd09e) | 7aad210d… (ad4e5a2b) | `confirm_result.json`, `confirm_rankings.csv` (76 new lines), `explore_r1_summary.json`, `model_files_sha256.csv` | **Not obtained.** Truth first on 6 of 76 unseen lines, 3.92 expected, P = 0.20. Decoy sets were first on 8 lines and wrong-column scorings on 9. Targets were not scored. |
 | B4. Synthesis on placed letters (second wave) | `claude/novel-2026-10-31-B4` (e5d734c9) | a2ee805c… (92d57658) | `placements4.csv` (436 W2F letters placed on the 1988 frames), `items4.json` | **Not obtained.** Truth first on 0 of 22 held-out lines (1.50 expected). The decoy control flagged a bias (14 against 8.58, P = 0.015). Held-out letter contests were 53 of 106. Targets were not scored. |
 | C3. Letter-level copper, III 7 (second wave) | `claude/novel-2026-10-31-C3` (df19ac4f) | ee22a848… (05aaf453) | `out/letters_measured.csv` (156 letters, columns III and I) | **Partly** (frozen meaning: gate passed, claim not identifiable). Column III against control column I: Δ = +0.048, 90 % interval −0.107 to +0.243, p = 0.26. |
+| LC. AI reader panel on the letter-control quiz | `claude/novel-2026-10-31-LC` (e1734f55) | addendum 3fdc7fe2… (e93cf200); key c8387729… (outside the repository) | `responses/responses_{A,B,C}.csv`, `ai_arm_report.json`, `ai_arm_statement.txt`, `reader_audit.json` | **HH: FAIL** (minimums met; the decisive rule never fired). **BK, XS: INSUFFICIENT** (recorded before reading). All three readers at chance level; likelihood-ratio lower bound 0 for every class. |
 
 Abbreviations: NMAD, normalised median absolute deviation. GLO-30, the Copernicus 30 m global surface model (2011–2015). ASP, NASA Ames Stereo Pipeline. W2F, the project's letter boxes on the Puech 2006 plates. ETCBC, the Eep Talstra Centre for Bible and Computer transcription (Abegg, Bowley, Cook).
 
@@ -35,6 +38,11 @@ For each of the seven branches:
 - Only the freeze commit touches `PROTOCOL_FROZEN.md`.
 - No image, raster or array file is in the repository. Every changed file is inside the direction's folder. The largest file is E's `zones.geojson` (169 KB).
 - No run changed a rating, the outcome ledger, ACTIVE_TEST, OPEN_QUESTIONS or the atlas data. B3 changed nothing in `research/novel_2026-10-30/`.
+- **LC branch.**
+  - The addendum (3fdc7fe2…) was committed and pushed (e93cf200) before any reader started, and it is unchanged at the tip.
+  - All 95 packet files matched their hashes in the addendum before dispatch.
+  - No image and no key file is in the repository.
+  - `research/text/letter_controls/` is unchanged, including `sealed_key.sha256`.
 
 ## Access: the full-resolution store
 
@@ -172,19 +180,59 @@ For each of the seven branches:
 - **Further AI-only session:** not justified for automatic measures. A blind AI letter-box coder on cuts 7–8 is untried, but it is limited to about 14–16 letters after III 7.
 - **Post-run exploration (labelled).** Seam S11 could not be measured: no placed letters after II 12. Seam S49 was uninformative.
 
+## AI reader panel (LC): the letter-control quiz on series S1
+
+- **Design.** The run is an exploratory arm under `research/text/letter_controls/PROTOCOL.md` §7, so it does not calibrate the frozen XII 10 human readers.
+  - A coordinator worker (not a reader) placed the controls on A2's accepted cut/column pairs and checked each placement by eye. It cut the §6 windows and resampled them to the expected target letter height (104.5 px). The light class was top-centre and bottom-centre, each shown unadjusted and with one contrast stretch.
+  - It sealed a new key outside the repository. The repository's `sealed_key.sha256` and every file in `letter_controls/` are unchanged.
+  - It froze and pushed a dated addendum (e93cf200) before any reader started.
+- **Items.** 93 items:
+  - BK: 16 controls and 4 decoys;
+  - HH: 46 controls (ה 21, ח 12, ת 13) and 4 decoys;
+  - XS: 19 controls and 4 decoys.
+
+  The decoys are blank surface. Only HH met the §9 minimums. BK and XS were recorded as INSUFFICIENT before reading.
+- **Readers.** A (Claude Opus) and B (Claude Sonnet) are the registered pair; C (Claude Fable) is reported separately. Each was a separate instance and saw only the packet.
+  - The orchestrator listed every reader tool call from the logs. No reader opened anything outside the packet and its own folder, and each viewed all 93 items before saving its answers once.
+  - Reader B was stopped by an API safety-filter error after it had saved and locked its file. The locked file was scored.
+- **Result.** One scoring run with the frozen command (18:33:10 UTC).
+  - HH: **FAIL**. No reader graded any item "certain", so the decisive rule fired on 0 items.
+  - BK and XS: **INSUFFICIENT**.
+
+  | Question | Chance | A (Opus) | B (Sonnet) | C (Fable) |
+  |---|---|---|---|---|
+  | HH (ה/ח/ת), balanced accuracy | 0.33 | 0.29 | 0.33 | 0.29 |
+  | BK (ב/כ), balanced accuracy | 0.50 | 0.35 | 0.42 | 0.24 |
+  | XS (yod/waw), balanced accuracy | 0.50 | 0.47 | 0.51 | 0.51 |
+
+  The likelihood-ratio lower bound is 0 for every class and every reader: no demonstrated weight. On HH the pair agreed on 30 of 46 controls, and 14 of those agreements were wrong.
+- **AGENTS.md line.** "AI readers can tell ה/ח/ת apart from the strokes on the S1 frames under the frozen quiz design" is **not supported**. For ב/כ and yod/waw the result is **not identifiable from available evidence**.
+- **Limits.**
+  - All readers are Claude models, so their errors may be correlated.
+  - The windows were resampled down from 131–195 px, shown in luminance only, under two light directions. A native-resolution, colour, all-light presentation would be a new specification needing controls never shown.
+  - Two pairs of windows on cut 6 share surface (neighbouring slots).
+- Note: `research/novel_2026-10-31/LC_ai_reader_panel/NOTE_2026-10-31.md` on the LC branch.
+
 ## Across directions
 
 - **A2's placement was tested as the input that B2 and C2 lacked.** B4 and C3 used it. It places letters correctly, but neither a template model (B4) nor a copper height measure (C3) found a usable letter signal.
 - **Caution for C (kept).** The W2F box sizes come from the Puech 2006 copy plates. C3 used only box centres.
 - **Method lesson (B3, B4).** For "truth plus one-letter variants" sets, use the exact null, a decoy control and a wrong-image control together. On round 1's lines the decoy test alone would have passed. A wrong-image control is needed before any significance claim.
 - **Common limit.** All the letter directions used the same 1988 series. Cuts 1, 9 and 12–15 are absent, so VII 11 cannot be scored, and controls on those cuts are ineligible. IX 10 lies on cut 17, whose column IX placement failed.
-- **Untried AI-only route for the letters.** The blind control reading set in `research/text/letter_controls/` is ready: 326 controls, a sealed key and a scorer. It has never been run, because no image in the repository could serve. The full-resolution 1988 frames now exist, and A2 has placed 291 control rows on them (`confirmatory/placements_all.csv`). An AI multi-reader panel (separate model instances, each seeing only its control crops, with exposure logs) on these frames is the remaining AI-only test for the ב/כ and ה/ח questions.
+- **The last AI-only route for the letters has now been run (LC).** As first written: the blind control reading set in `research/text/letter_controls/` was ready but had never been run, and an AI multi-reader panel on the full-resolution frames was the remaining AI-only test. It ran as LC (above). For ה/ח/ת, with the minimums met, it failed. All readers were at chance on all three questions.
+- **Overall, for the letters on the 1988 frames.** Five independent approaches see no usable ב/כ or ה/ח/ת signal: photometric relief (A2), three render-and-compare models (B2, B3, B4) and three AI readers (LC).
 
 ## Fieldwork wish list
 
 The wish list is in Drive: "Wish list — fieldwork and equipment (after online work is exhausted)", written 30 October 2026.
 
-- **After both waves, no wish-list item is yet the only route left for a conclusion.** No item was started.
+- **Update after the AI reader panel (LC).** The AI-only routes for the letter questions on the S1 frames are now exhausted. HH failed with its minimums met, and BK and XS gave chance-level accuracy on the controls available.
+  - **The condition below was imprecise when written:** it left out item 4. Two non-AI routes remain, in this order:
+    1. **Object item 4, a human blind epigrapher panel**, on the same 1988 frames with the same window design. Its "do first" step ("an AI multi-reader panel with exposure logs") is now done (LC). It needs a fresh round of controls never shown before (PROTOCOL.md §12). It is also what the frozen XII 10 protocol requires anyway.
+    2. **Object item 1, new 3D, RTI and XRF imaging of the originals.** It becomes the only route left for the XII 10, X 15 and I 12 letters if the human panel also fails on S1.
+  - Results that justify this: A2 (7 of 13 held-out), B4 (held-out letter contests 53 of 106), B3 (6 of 76, with the decoy and wrong-column controls equal or ahead) and LC (all readers at chance; HH FAIL).
+  - Nothing on the wish list was started.
+- **As first written, after both waves:** no wish-list item is yet the only route left for a conclusion. No item was started.
 - **Object item 1** (new 3D, reflectance transformation imaging (RTI) and X-ray fluorescence (XRF) imaging of the originals).
   - Its "do first" condition is now met: "the online photometric-stereo and render-and-compare work on the 1988 USC frames".
   - Photometric stereo (A2) failed on held-out letters.
