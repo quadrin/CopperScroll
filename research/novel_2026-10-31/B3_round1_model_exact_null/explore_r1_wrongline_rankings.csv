@@ -1,0 +1,134 @@
+run,set,kind,col,line,scored_at_line,n_candidates,candidate,is_centre,is_truth,loglik,rank,centre_rank,centre_first,margin_centre_minus_best_other,p_null,strips
+exploratory_r1,r1_train,wrongline,1,8,13,6,נגד הפתח העליון ככרין תשע מאת,1,1,3070.289,1,1,1,9.157,0.03125,2:scored:o1:y759;3:scored:o1:y571;4:scored:o1:y701
+exploratory_r1,r1_train,wrongline,1,8,13,6,יגד הפתח העליון ככרין תשע מאת,0,0,3058.808,3,1,1,9.157,0.03125,2:scored:o1:y759;3:scored:o1:y571;4:scored:o1:y701
+exploratory_r1,r1_train,wrongline,1,8,13,6,נגד חפתח העליון ככרין תשע מאת,0,0,3061.132,2,1,1,9.157,0.03125,2:scored:o1:y759;3:scored:o1:y571;4:scored:o1:y701
+exploratory_r1,r1_train,wrongline,1,8,13,6,נגד הפתת העליון ככרין תשע מאת,0,0,3058.607,5,1,1,9.157,0.03125,2:scored:o1:y759;3:scored:o1:y571;4:scored:o1:y701
+exploratory_r1,r1_train,wrongline,1,8,13,6,נגד הפתח העליון ככרית תשע מאת,0,0,3058.709,4,1,1,9.157,0.03125,2:scored:o1:y759;3:scored:o1:y571;4:scored:o1:y701
+exploratory_r1,r1_train,wrongline,1,8,13,6,נגד הפתח העליון ככרין תשע מאח,0,0,3048.469,6,1,1,9.157,0.03125,2:scored:o1:y759;3:scored:o1:y571;4:scored:o1:y701
+exploratory_r1,r1_train,wrongline,2,15,10,6,ככרין ,1,1,1811.442,3,3,0,-187.164,0.041667,5:scored:o0:y448;6:scored:o0:y553
+exploratory_r1,r1_train,wrongline,2,15,10,6,כברין ,0,0,1675.639,6,3,0,-187.164,0.041667,5:scored:o0:y448;6:scored:o0:y553
+exploratory_r1,r1_train,wrongline,2,15,10,6,ככדין ,0,0,1777.636,4,3,0,-187.164,0.041667,5:scored:o0:y448;6:scored:o0:y553
+exploratory_r1,r1_train,wrongline,2,15,10,6,ככררן ,0,0,1762.453,5,3,0,-187.164,0.041667,5:scored:o0:y448;6:scored:o0:y553
+exploratory_r1,r1_train,wrongline,2,15,10,6,ככריו ,0,0,1998.606,1,3,0,-187.164,0.041667,5:scored:o0:y448;6:scored:o0:y553
+exploratory_r1,r1_train,wrongline,2,15,10,6,ככרית ,0,0,1923.33,2,3,0,-187.164,0.041667,5:scored:o0:y448;6:scored:o0:y553
+exploratory_r1,r1_train,wrongline,3,3,8,6,דמע מזרקות כוסות מנקיאות,1,1,2184.77,4,4,0,-218.226,0.03125,7:scored:o0:y345;8:scored:o0:y552
+exploratory_r1,r1_train,wrongline,3,3,8,6,דמע מזוקות כוסות מנקיאות,0,0,1958.071,6,4,0,-218.226,0.03125,7:scored:o0:y345;8:scored:o0:y552
+exploratory_r1,r1_train,wrongline,3,3,8,6,דמע מזרקזת כוסות מנקיאות,0,0,2212.989,2,4,0,-218.226,0.03125,7:scored:o0:y345;8:scored:o0:y552
+exploratory_r1,r1_train,wrongline,3,3,8,6,דמע מזרקות כוסות מתקיאות,0,0,2206.858,3,4,0,-218.226,0.03125,7:scored:o0:y345;8:scored:o0:y552
+exploratory_r1,r1_train,wrongline,3,3,8,6,דמע מזרקות כוסות מנקיאזת,0,0,2180.609,5,4,0,-218.226,0.03125,7:scored:o0:y345;8:scored:o0:y552
+exploratory_r1,r1_train,wrongline,3,3,8,6,דמע מזרקות כוסות מנקיאוח,0,0,2402.996,1,4,0,-218.226,0.03125,7:scored:o0:y345;8:scored:o0:y552
+exploratory_r1,r1_heldout,wrongline,3,6,11,6,ית חפר אמות שש עסרה כסף,1,1,3173.882,2,2,0,-25.329,0.03125,7:scored:o1:y610;8:scored:o0:y609
+exploratory_r1,r1_heldout,wrongline,3,6,11,6,זת חפר אמות שש עסרה כסף,0,0,3172.802,3,2,0,-25.329,0.03125,7:scored:o1:y610;8:scored:o0:y609
+exploratory_r1,r1_heldout,wrongline,3,6,11,6,יח חפר אמות שש עסרה כסף,0,0,3122.175,5,2,0,-25.329,0.03125,7:scored:o1:y610;8:scored:o0:y609
+exploratory_r1,r1_heldout,wrongline,3,6,11,6,ית תפר אמות שש עסרה כסף,0,0,3199.21,1,2,0,-25.329,0.03125,7:scored:o1:y610;8:scored:o0:y609
+exploratory_r1,r1_heldout,wrongline,3,6,11,6,ית חפר אמוה שש עסרה כסף,0,0,3172.669,4,2,0,-25.329,0.03125,7:scored:o1:y610;8:scored:o0:y609
+exploratory_r1,r1_heldout,wrongline,3,6,11,6,ית חפר אמות שש עסרה בסף,0,0,3106.137,6,2,0,-25.329,0.03125,7:scored:o1:y610;8:scored:o0:y609
+exploratory_r1,r1_heldout,wrongline,3,10,5,6,תחת הפנא המערבית,1,1,2572.506,2,2,0,-6.042,0.041667,7:scored:o0:y239;8:scored:o1:y320
+exploratory_r1,r1_heldout,wrongline,3,10,5,6,תחן הפנא המערבית,0,0,2578.548,1,2,0,-6.042,0.041667,7:scored:o0:y239;8:scored:o1:y320
+exploratory_r1,r1_heldout,wrongline,3,10,5,6,תחת חפנא המערבית,0,0,2345.819,6,2,0,-6.042,0.041667,7:scored:o0:y239;8:scored:o1:y320
+exploratory_r1,r1_heldout,wrongline,3,10,5,6,תחת הפנא המעדבית,0,0,2540.494,5,2,0,-6.042,0.041667,7:scored:o0:y239;8:scored:o1:y320
+exploratory_r1,r1_heldout,wrongline,3,10,5,6,תחת הפנא המערכית,0,0,2571.661,3,2,0,-6.042,0.041667,7:scored:o0:y239;8:scored:o1:y320
+exploratory_r1,r1_heldout,wrongline,3,10,5,6,תחת הפנא המערפית,0,0,2570.28,4,2,0,-6.042,0.041667,7:scored:o0:y239;8:scored:o1:y320
+exploratory_r1,r1_train,wrongline,4,5,10,3,כך ,1,1,9038.274,1,1,1,740.479,0.25,9:scored:o0:y301;10:scored:o0:y629
+exploratory_r1,r1_train,wrongline,4,5,10,3,בך ,0,0,8297.795,2,1,1,740.479,0.25,9:scored:o0:y301;10:scored:o0:y629
+exploratory_r1,r1_train,wrongline,4,5,10,3,כב ,0,0,6216.82,3,1,1,740.479,0.25,9:scored:o0:y301;10:scored:o0:y629
+exploratory_r1,r1_heldout,wrongline,5,10,5,6,אמות ששין חפור אמות,1,1,3810.346,3,3,0,-35.569,0.03125,10:scored:o0:y257;11:scored:o0:y213
+exploratory_r1,r1_heldout,wrongline,5,10,5,6,אמזת ששין חפור אמות,0,0,3845.914,1,3,0,-35.569,0.03125,10:scored:o0:y257;11:scored:o0:y213
+exploratory_r1,r1_heldout,wrongline,5,10,5,6,אמוה ששין חפור אמות,0,0,3810.462,2,3,0,-35.569,0.03125,10:scored:o0:y257;11:scored:o0:y213
+exploratory_r1,r1_heldout,wrongline,5,10,5,6,אמות ששיה חפור אמות,0,0,3802.242,4,3,0,-35.569,0.03125,10:scored:o0:y257;11:scored:o0:y213
+exploratory_r1,r1_heldout,wrongline,5,10,5,6,אמות ששין חפנר אמות,0,0,3768.709,5,3,0,-35.569,0.03125,10:scored:o0:y257;11:scored:o0:y213
+exploratory_r1,r1_heldout,wrongline,5,10,5,6,אמות ששין חפור אבות,0,0,3541.774,6,3,0,-35.569,0.03125,10:scored:o0:y257;11:scored:o0:y213
+exploratory_r1,r1_heldout,wrongline,5,11,6,6,שלוש כסף כך ,1,1,4666.954,3,3,0,-10.765,0.041667,10:scored:o0:y264;11:scored:o0:y261
+exploratory_r1,r1_heldout,wrongline,5,11,6,6,שלזש כסף כך ,0,0,4677.719,1,3,0,-10.765,0.041667,10:scored:o0:y264;11:scored:o0:y261
+exploratory_r1,r1_heldout,wrongline,5,11,6,6,שלרש כסף כך ,0,0,4669.747,2,3,0,-10.765,0.041667,10:scored:o0:y264;11:scored:o0:y261
+exploratory_r1,r1_heldout,wrongline,5,11,6,6,שלוש בסף כך ,0,0,4655.452,4,3,0,-10.765,0.041667,10:scored:o0:y264;11:scored:o0:y261
+exploratory_r1,r1_heldout,wrongline,5,11,6,6,שלוש כסף בך ,0,0,4287.349,5,3,0,-10.765,0.041667,10:scored:o0:y264;11:scored:o0:y261
+exploratory_r1,r1_heldout,wrongline,5,11,6,6,שלוש כסף כב ,0,0,3767.682,6,3,0,-10.765,0.041667,10:scored:o0:y264;11:scored:o0:y261
+exploratory_r1,r1_train,wrongline,6,5,10,6,בו ספר אחד תחתו,1,1,2667.252,3,3,0,-264.15,0.041667,11:scored:o1:y484;12:scored:o1:y562
+exploratory_r1,r1_train,wrongline,6,5,10,6,בו ספד אחד תחתו,0,0,2376.587,6,3,0,-264.15,0.041667,11:scored:o1:y484;12:scored:o1:y562
+exploratory_r1,r1_train,wrongline,6,5,10,6,בו ספר אחר תחתו,0,0,2652.77,4,3,0,-264.15,0.041667,11:scored:o1:y484;12:scored:o1:y562
+exploratory_r1,r1_train,wrongline,6,5,10,6,בו ספר אחד תתתו,0,0,2481.14,5,3,0,-264.15,0.041667,11:scored:o1:y484;12:scored:o1:y562
+exploratory_r1,r1_train,wrongline,6,5,10,6,בו ספר אחד תחהו,0,0,2837.119,2,3,0,-264.15,0.041667,11:scored:o1:y484;12:scored:o1:y562
+exploratory_r1,r1_train,wrongline,6,5,10,6,בו ספר אחד תחנו,0,0,2931.402,1,3,0,-264.15,0.041667,11:scored:o1:y484;12:scored:o1:y562
+exploratory_r1,r1_train,wrongline,6,6,11,3,כך ,1,1,4576.053,1,1,1,351.674,0.25,11:scored:o0:y630;12:scored:o0:y528
+exploratory_r1,r1_train,wrongline,6,6,11,3,בך ,0,0,4224.379,2,1,1,351.674,0.25,11:scored:o0:y630;12:scored:o0:y528
+exploratory_r1,r1_train,wrongline,6,6,11,3,כב ,0,0,3733.087,3,1,1,351.674,0.25,11:scored:o0:y630;12:scored:o0:y528
+exploratory_r1,r1_train,wrongline,6,9,14,6,למזרח חפר בפתח,1,1,4106.402,3,3,0,-31.615,0.03125,11:scored:o0:y702;12:scored:o1:y747
+exploratory_r1,r1_train,wrongline,6,9,14,6,למזדח חפר בפתח,0,0,4127.022,2,3,0,-31.615,0.03125,11:scored:o0:y702;12:scored:o1:y747
+exploratory_r1,r1_train,wrongline,6,9,14,6,למזרח חפד בפתח,0,0,4104.118,4,3,0,-31.615,0.03125,11:scored:o0:y702;12:scored:o1:y747
+exploratory_r1,r1_train,wrongline,6,9,14,6,למזרח חפר כפתח,0,0,4138.017,1,3,0,-31.615,0.03125,11:scored:o0:y702;12:scored:o1:y747
+exploratory_r1,r1_train,wrongline,6,9,14,6,למזרח חפר בפהח,0,0,4039.521,5,3,0,-31.615,0.03125,11:scored:o0:y702;12:scored:o1:y747
+exploratory_r1,r1_train,wrongline,6,9,14,6,למזרח חפר בפתה,0,0,3996.292,6,3,0,-31.615,0.03125,11:scored:o0:y702;12:scored:o1:y747
+exploratory_r1,r1_heldout,wrongline,6,10,5,6,אמות תשע כך ,1,1,3151.124,4,4,0,-160.946,0.041667,11:scored:o1:y256;12:scored:o1:y271
+exploratory_r1,r1_heldout,wrongline,6,10,5,6,אמנת תשע כך ,0,0,3148.426,5,4,0,-160.946,0.041667,11:scored:o1:y256;12:scored:o1:y271
+exploratory_r1,r1_heldout,wrongline,6,10,5,6,אמזת תשע כך ,0,0,3162.493,2,4,0,-160.946,0.041667,11:scored:o1:y256;12:scored:o1:y271
+exploratory_r1,r1_heldout,wrongline,6,10,5,6,אמון תשע כך ,0,0,3158.886,3,4,0,-160.946,0.041667,11:scored:o1:y256;12:scored:o1:y271
+exploratory_r1,r1_heldout,wrongline,6,10,5,6,אמות תשע בך ,0,0,3312.07,1,4,0,-160.946,0.041667,11:scored:o1:y256;12:scored:o1:y271
+exploratory_r1,r1_heldout,wrongline,6,10,5,6,אמות תשע כב ,0,0,2519.726,6,4,0,-160.946,0.041667,11:scored:o1:y256;12:scored:o1:y271
+exploratory_r1,r1_heldout,wrongline,6,12,7,6,המערבי חפר אמות,1,1,2467.824,6,6,0,-108.552,0.03125,11:scored:o0:y286;12:scored:o1:y300
+exploratory_r1,r1_heldout,wrongline,6,12,7,6,המעדבי חפר אמות,0,0,2470.05,4,6,0,-108.552,0.03125,11:scored:o0:y286;12:scored:o1:y300
+exploratory_r1,r1_heldout,wrongline,6,12,7,6,המערכי חפר אמות,0,0,2468.534,5,6,0,-108.552,0.03125,11:scored:o0:y286;12:scored:o1:y300
+exploratory_r1,r1_heldout,wrongline,6,12,7,6,המערבי הפר אמות,0,0,2509.908,3,6,0,-108.552,0.03125,11:scored:o0:y286;12:scored:o1:y300
+exploratory_r1,r1_heldout,wrongline,6,12,7,6,המערבי חפד אמות,0,0,2576.377,1,6,0,-108.552,0.03125,11:scored:o0:y286;12:scored:o1:y300
+exploratory_r1,r1_heldout,wrongline,6,12,7,6,המערבי חפר אמזת,0,0,2517.984,2,6,0,-108.552,0.03125,11:scored:o0:y286;12:scored:o1:y300
+exploratory_r1,r1_heldout,wrongline,6,13,8,6,שתים עסרה כך ,1,1,2444.484,5,5,0,-29.488,0.041667,11:scored:o0:y403;12:scored:o1:y456
+exploratory_r1,r1_heldout,wrongline,6,13,8,6,שתזם עסרה כך ,0,0,2460.5,2,5,0,-29.488,0.041667,11:scored:o0:y403;12:scored:o1:y456
+exploratory_r1,r1_heldout,wrongline,6,13,8,6,שתים עסרח כך ,0,0,2445.39,4,5,0,-29.488,0.041667,11:scored:o0:y403;12:scored:o1:y456
+exploratory_r1,r1_heldout,wrongline,6,13,8,6,שתים עסרת כך ,0,0,2449.543,3,5,0,-29.488,0.041667,11:scored:o0:y403;12:scored:o1:y456
+exploratory_r1,r1_heldout,wrongline,6,13,8,6,שתים עסרה בך ,0,0,2473.972,1,5,0,-29.488,0.041667,11:scored:o0:y403;12:scored:o1:y456
+exploratory_r1,r1_heldout,wrongline,6,13,8,6,שתים עסרה כב ,0,0,2162.947,6,5,0,-29.488,0.041667,11:scored:o0:y403;12:scored:o1:y456
+exploratory_r1,r1_train,wrongline,7,7,12,6,ככרין ארבע מאות,1,1,1882.215,5,5,0,-158.184,0.041667,13:scored:o1:y625;14:scored:o0:y317
+exploratory_r1,r1_train,wrongline,7,7,12,6,כברין ארבע מאות,0,0,1931.133,2,5,0,-158.184,0.041667,13:scored:o1:y625;14:scored:o0:y317
+exploratory_r1,r1_train,wrongline,7,7,12,6,ככרין אדבע מאות,0,0,1892.502,3,5,0,-158.184,0.041667,13:scored:o1:y625;14:scored:o0:y317
+exploratory_r1,r1_train,wrongline,7,7,12,6,ככרין ארכע מאות,0,0,1883.334,4,5,0,-158.184,0.041667,13:scored:o1:y625;14:scored:o0:y317
+exploratory_r1,r1_train,wrongline,7,7,12,6,ככרין ארמע מאות,0,0,2040.399,1,5,0,-158.184,0.041667,13:scored:o1:y625;14:scored:o0:y317
+exploratory_r1,r1_train,wrongline,7,7,12,6,ככרין ארבע מארת,0,0,1821.274,6,5,0,-158.184,0.041667,13:scored:o1:y625;14:scored:o0:y317
+exploratory_r1,r1_heldout,wrongline,7,13,8,3,כך ,1,1,1890.222,1,1,1,34.493,0.25,13:scored:o0:y392;14:scored:o1:y217
+exploratory_r1,r1_heldout,wrongline,7,13,8,3,בך ,0,0,1855.729,2,1,1,34.493,0.25,13:scored:o0:y392;14:scored:o1:y217
+exploratory_r1,r1_heldout,wrongline,7,13,8,3,כב ,0,0,1369.743,3,1,1,34.493,0.25,13:scored:o0:y392;14:scored:o1:y217
+exploratory_r1,r1_train,wrongline,8,7,12,6,וזהב כך ,1,1,1726.18,3,3,0,-409.946,0.055556,15:scored:o1:y483
+exploratory_r1,r1_train,wrongline,8,7,12,6,ויהב כך ,0,0,1705.746,5,3,0,-409.946,0.055556,15:scored:o1:y483
+exploratory_r1,r1_train,wrongline,8,7,12,6,וזחב כך ,0,0,1721.321,4,3,0,-409.946,0.055556,15:scored:o1:y483
+exploratory_r1,r1_train,wrongline,8,7,12,6,וזתב כך ,0,0,1632.671,6,3,0,-409.946,0.055556,15:scored:o1:y483
+exploratory_r1,r1_train,wrongline,8,7,12,6,וזהך כך ,0,0,1973.465,2,3,0,-409.946,0.055556,15:scored:o1:y483
+exploratory_r1,r1_train,wrongline,8,7,12,6,וזהף כך ,0,0,2136.127,1,3,0,-409.946,0.055556,15:scored:o1:y483
+exploratory_r1,r1_train,wrongline,8,11,16,6,מערב בדרום בצריח,1,1,1101.171,3,3,0,-53.601,0.041667,15:scored:o0:y757
+exploratory_r1,r1_train,wrongline,8,11,16,6,מערב בדררם בצריח,0,0,1100.811,4,3,0,-53.601,0.041667,15:scored:o0:y757
+exploratory_r1,r1_train,wrongline,8,11,16,6,מערב בדרוב בצריח,0,0,1084.713,5,3,0,-53.601,0.041667,15:scored:o0:y757
+exploratory_r1,r1_train,wrongline,8,11,16,6,מערב בדרום כצריח,0,0,1128.03,2,3,0,-53.601,0.041667,15:scored:o0:y757
+exploratory_r1,r1_train,wrongline,8,11,16,6,מערב בדרום מצריח,0,0,1154.772,1,3,0,-53.601,0.041667,15:scored:o0:y757
+exploratory_r1,r1_train,wrongline,8,11,16,6,מערב בדרום בצררח,0,0,917.649,6,3,0,-53.601,0.041667,15:scored:o0:y757
+exploratory_r1,r1_heldout,wrongline,8,16,11,5,כסף כך ,1,1,2164.248,1,1,1,20.863,0.0625,15:scored:o1:y483
+exploratory_r1,r1_heldout,wrongline,8,16,11,5,בסף כך ,0,0,2143.385,2,1,1,20.863,0.0625,15:scored:o1:y483
+exploratory_r1,r1_heldout,wrongline,8,16,11,5,כסב כך ,0,0,1757.923,4,1,1,20.863,0.0625,15:scored:o1:y483
+exploratory_r1,r1_heldout,wrongline,8,16,11,5,כסף בך ,0,0,1990.248,3,1,1,20.863,0.0625,15:scored:o1:y483
+exploratory_r1,r1_heldout,wrongline,8,16,11,5,כסף כב ,0,0,980.548,5,1,1,20.863,0.0625,15:scored:o1:y483
+exploratory_r1,r1_train,wrongline,9,9,14,3,כך ,1,1,2348.102,1,1,1,56.417,0.25,16:scored:o0:y695;17:scored:o0:y546
+exploratory_r1,r1_train,wrongline,9,9,14,3,בך ,0,0,2291.686,2,1,1,56.417,0.25,16:scored:o0:y695;17:scored:o0:y546
+exploratory_r1,r1_train,wrongline,9,9,14,3,כב ,0,0,1625.407,3,1,1,56.417,0.25,16:scored:o0:y695;17:scored:o0:y546
+exploratory_r1,r1_heldout,wrongline,9,13,8,6,שבע כך ,1,1,1571.863,1,1,1,6.331,0.0625,16:scored:o1:y335;17:scored:o0:y378
+exploratory_r1,r1_heldout,wrongline,9,13,8,6,שכע כך ,0,0,1554.591,3,1,1,6.331,0.0625,16:scored:o1:y335;17:scored:o0:y378
+exploratory_r1,r1_heldout,wrongline,9,13,8,6,שמע כך ,0,0,1565.532,2,1,1,6.331,0.0625,16:scored:o1:y335;17:scored:o0:y378
+exploratory_r1,r1_heldout,wrongline,9,13,8,6,שפע כך ,0,0,1459.352,5,1,1,6.331,0.0625,16:scored:o1:y335;17:scored:o0:y378
+exploratory_r1,r1_heldout,wrongline,9,13,8,6,שבע בך ,0,0,1533.676,4,1,1,6.331,0.0625,16:scored:o1:y335;17:scored:o0:y378
+exploratory_r1,r1_heldout,wrongline,9,13,8,6,שבע כב ,0,0,1409.719,6,1,1,6.331,0.0625,16:scored:o1:y335;17:scored:o0:y378
+exploratory_r1,r1_heldout,wrongline,9,16,11,6,כל שבה חרם,1,1,1601.148,2,2,0,-20.996,0.041667,16:scored:o1:y558;17:scored:o0:y476
+exploratory_r1,r1_heldout,wrongline,9,16,11,6,כל שמה חרם,0,0,1599.822,3,2,0,-20.996,0.041667,16:scored:o1:y558;17:scored:o0:y476
+exploratory_r1,r1_heldout,wrongline,9,16,11,6,כל שבת חרם,0,0,1597.345,4,2,0,-20.996,0.041667,16:scored:o1:y558;17:scored:o0:y476
+exploratory_r1,r1_heldout,wrongline,9,16,11,6,כל שבה תרם,0,0,1622.145,1,2,0,-20.996,0.041667,16:scored:o1:y558;17:scored:o0:y476
+exploratory_r1,r1_heldout,wrongline,9,16,11,6,כל שבה חדם,0,0,1455.07,6,2,0,-20.996,0.041667,16:scored:o1:y558;17:scored:o0:y476
+exploratory_r1,r1_heldout,wrongline,9,16,11,6,כל שבה חים,0,0,1462.484,5,2,0,-20.996,0.041667,16:scored:o1:y558;17:scored:o0:y476
+exploratory_r1,r1_heldout,wrongline,10,2,7,5,מלמעלא כך ,1,1,1548.527,1,1,1,4.251,0.0625,17:scored:o1:y263;18:scored:o0:y249
+exploratory_r1,r1_heldout,wrongline,10,2,7,5,בלמעלא כך ,0,0,1399.489,4,1,1,4.251,0.0625,17:scored:o1:y263;18:scored:o0:y249
+exploratory_r1,r1_heldout,wrongline,10,2,7,5,מלבעלא כך ,0,0,1544.276,2,1,1,4.251,0.0625,17:scored:o1:y263;18:scored:o0:y249
+exploratory_r1,r1_heldout,wrongline,10,2,7,5,מלמעלא בך ,0,0,1511.44,3,1,1,4.251,0.0625,17:scored:o1:y263;18:scored:o0:y249
+exploratory_r1,r1_heldout,wrongline,10,2,7,5,מלמעלא כב ,0,0,1368.924,5,1,1,4.251,0.0625,17:scored:o1:y263;18:scored:o0:y249
+exploratory_r1,r1_heldout,wrongline,10,4,9,6,הגדול בקרקעו כך ,1,1,1496.685,5,5,0,-11.255,0.041667,17:scored:o1:y429;18:scored:o1:y441
+exploratory_r1,r1_heldout,wrongline,10,4,9,6,חגדול בקרקעו כך ,0,0,1499.43,3,5,0,-11.255,0.041667,17:scored:o1:y429;18:scored:o1:y441
+exploratory_r1,r1_heldout,wrongline,10,4,9,6,הגדול כקרקעו כך ,0,0,1499.607,2,5,0,-11.255,0.041667,17:scored:o1:y429;18:scored:o1:y441
+exploratory_r1,r1_heldout,wrongline,10,4,9,6,הגדול מקרקעו כך ,0,0,1499.11,4,5,0,-11.255,0.041667,17:scored:o1:y429;18:scored:o1:y441
+exploratory_r1,r1_heldout,wrongline,10,4,9,6,הגדול בקרקען כך ,0,0,1507.94,1,5,0,-11.255,0.041667,17:scored:o1:y429;18:scored:o1:y441
+exploratory_r1,r1_heldout,wrongline,10,4,9,6,הגדול בקרקעו בך ,0,0,1404.733,6,5,0,-11.255,0.041667,17:scored:o1:y429;18:scored:o1:y441
+exploratory_r1,r1_train,wrongline,10,14,9,3,כך ,1,1,1714.868,1,1,1,163.52,0.25,17:scored:o1:y422;18:scored:o1:y441
+exploratory_r1,r1_train,wrongline,10,14,9,3,בך ,0,0,1551.349,2,1,1,163.52,0.25,17:scored:o1:y422;18:scored:o1:y441
+exploratory_r1,r1_train,wrongline,10,14,9,3,כב ,0,0,1274.491,3,1,1,163.52,0.25,17:scored:o1:y422;18:scored:o1:y441
