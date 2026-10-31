@@ -1,0 +1,178 @@
+{
+ "pooled": {
+  "primary_all_test_names": {
+   "observed": 21,
+   "random_mean": 47.31,
+   "random_p99": 98,
+   "p": 0.9552,
+   "pass_": false
+  },
+  "secondary_nonbiblical": {
+   "observed": 14,
+   "random_mean": 22.7,
+   "random_p99": 62,
+   "p": 0.7164,
+   "pass_": false
+  },
+  "tomb_subtest": {
+   "observed": 1,
+   "random_mean": 0.18,
+   "random_p99": 2,
+   "p": 0.1692,
+   "pass_": false
+  },
+  "positive_controls_found": [
+   "PC:Jericho",
+   "PC:Siloam",
+   "PC:Anathoth",
+   "PC:Tekoa",
+   "PC:Kidron (learned Latin form expected; no Arabic survival)",
+   "PC:Gerizim"
+  ],
+  "positive_controls_missed": [
+   "PC:Bethlehem",
+   "PC:Beth-Hoglah"
+  ],
+  "tomb_controls_found": [
+   "TC:Huldah (Mount of Olives)"
+  ],
+  "tomb_controls_missed": [
+   "TC:Zechariah (Kidron tomb)",
+   "TC:Simeon the Just"
+  ],
+  "records": 718
+ },
+ "kaftor": {
+  "primary_all_test_names": {
+   "observed": 1,
+   "random_mean": 1.88,
+   "random_p99": 10,
+   "p": 0.7463,
+   "pass_": false
+  },
+  "secondary_nonbiblical": {
+   "observed": 0,
+   "random_mean": 1.13,
+   "random_p99": 6,
+   "p": 1.0,
+   "pass_": false
+  },
+  "tomb_subtest": {
+   "observed": 1,
+   "random_mean": 0.18,
+   "random_p99": 2,
+   "p": 0.1692,
+   "pass_": false
+  },
+  "positive_controls_found": [
+   "PC:Jericho",
+   "PC:Siloam",
+   "PC:Kidron (learned Latin form expected; no Arabic survival)",
+   "PC:Gerizim"
+  ],
+  "positive_controls_missed": [
+   "PC:Bethlehem",
+   "PC:Anathoth",
+   "PC:Tekoa",
+   "PC:Beth-Hoglah"
+  ],
+  "tomb_controls_found": [
+   "TC:Huldah (Mount of Olives)"
+  ],
+  "tomb_controls_missed": [
+   "TC:Zechariah (Kidron tomb)",
+   "TC:Simeon the Just"
+  ],
+  "records": 88
+ },
+ "khitrowo": {
+  "primary_all_test_names": {
+   "observed": 20,
+   "random_mean": 43.83,
+   "random_p99": 93,
+   "p": 0.9403,
+   "pass_": false
+  },
+  "secondary_nonbiblical": {
+   "observed": 14,
+   "random_mean": 20.91,
+   "random_p99": 59,
+   "p": 0.6468,
+   "pass_": false
+  },
+  "tomb_subtest": {
+   "observed": 0,
+   "random_mean": 0.0,
+   "random_p99": 0,
+   "p": 1.0,
+   "pass_": false
+  },
+  "positive_controls_found": [
+   "PC:Jericho",
+   "PC:Siloam",
+   "PC:Anathoth",
+   "PC:Kidron (learned Latin form expected; no Arabic survival)"
+  ],
+  "positive_controls_missed": [
+   "PC:Bethlehem",
+   "PC:Tekoa",
+   "PC:Gerizim",
+   "PC:Beth-Hoglah"
+  ],
+  "tomb_controls_found": [],
+  "tomb_controls_missed": [
+   "TC:Zechariah (Kidron tomb)",
+   "TC:Huldah (Mount of Olives)",
+   "TC:Simeon the Just"
+  ],
+  "records": 538
+ },
+ "hutteroth": {
+  "primary_all_test_names": {
+   "observed": 0,
+   "random_mean": 1.61,
+   "random_p99": 9,
+   "p": 1.0,
+   "pass_": false
+  },
+  "secondary_nonbiblical": {
+   "observed": 0,
+   "random_mean": 0.66,
+   "random_p99": 4,
+   "p": 1.0,
+   "pass_": false
+  },
+  "tomb_subtest": {
+   "observed": 0,
+   "random_mean": 0.0,
+   "random_p99": 0,
+   "p": 1.0,
+   "pass_": false
+  },
+  "positive_controls_found": [
+   "PC:Jericho",
+   "PC:Tekoa"
+  ],
+  "positive_controls_missed": [
+   "PC:Siloam",
+   "PC:Bethlehem",
+   "PC:Anathoth",
+   "PC:Kidron (learned Latin form expected; no Arabic survival)",
+   "PC:Gerizim",
+   "PC:Beth-Hoglah"
+  ],
+  "tomb_controls_found": [],
+  "tomb_controls_missed": [
+   "TC:Zechariah (Kidron tomb)",
+   "TC:Huldah (Mount of Olives)",
+   "TC:Simeon the Just"
+  ],
+  "records": 92
+ },
+ "params": {
+  "nrand": 200,
+  "seed": 20261030,
+  "thresh": 0.75,
+  "slack_km": 5.0
+ }
+}

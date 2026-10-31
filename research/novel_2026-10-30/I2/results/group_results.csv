@@ -1,0 +1,225 @@
+subset,group,kind,biblical,variants,eligible_records,observed_records,random_mean,random_p99,share_random_ge1,p,n_random
+pooled,achor,test,True,עכור עכון,22,0,0.18,2,0.09,1.0,200
+pooled,kohlit,test,False,כחלת כחל בחלה,395,1,7.84,44,0.91,0.9104,200
+pooled,sekakah,test,True,סככ,65,0,0.475,4,0.23,1.0,200
+pooled,melah,test,True,מלח מלה מלוא,286,3,10.0,42,0.925,0.7761,200
+pooled,manos,test,False,מנס,213,3,1.465,10,0.455,0.1841,200
+pooled,mdh,test,False,מדח מדה מרה,256,5,8.695,44,0.955,0.6418,200
+pooled,mattiyah,test,True,מתיה,183,0,1.4,14,0.365,1.0,200
+pooled,nebat,test,True,נבט,183,0,1.365,25,0.395,1.0,200
+pooled,kippa,test,False,כפא,10,1,0.265,5,0.185,0.1891,200
+pooled,solomon,test,True,שלומ שלם סלימן,6,0,0.09,1,0.08,1.0,200
+pooled,qi,test,False,קיבוצ קיציצ קפרוס,22,1,0.315,2,0.21,0.2139,200
+pooled,hasor,test,True,חצור אחזר אחור אחיה,66,0,1.97,11,0.62,1.0,200
+pooled,shaveh,test,True,שוא שוה,31,0,0.375,2,0.26,1.0,200
+pooled,shalef,test,False,שלף,31,0,0.07,1,0.055,1.0,200
+pooled,din,test,False,דין,214,1,2.14,20,0.375,0.3781,200
+pooled,tekelet,test,False,תכלת,97,0,0.715,5,0.32,1.0,200
+pooled,qomah,test,False,קומעה קבעה קובע,0,0,0.0,0,0.0,1.0,200
+pooled,nebo,test,True,נבו כפרנבו,108,0,1.075,7,0.41,1.0,200
+pooled,tamar,test,True,תמר ביתתמר,233,1,2.135,20,0.5,0.5025,200
+pooled,pele,test,False,פלע,35,1,0.075,1,0.05,0.0547,200
+pooled,nab,test,True,נאב נבח,108,0,1.635,12,0.51,1.0,200
+pooled,zered,test,True,זרד איב גיחנ,52,1,1.305,10,0.56,0.5622,200
+pooled,absalom,test,True,אבשלומ,256,1,0.715,11,0.265,0.2687,200
+pooled,zadok,test,True,צדוק,268,1,1.47,9,0.435,0.4378,200
+pooled,obed,test,True,עבד,73,0,0.43,4,0.255,1.0,200
+pooled,horebbeh,test,False,חריבה חרובה,77,1,1.115,9,0.46,0.4627,200
+pooled,asla,known,False,עצלא,55,2,0.375,4,0.175,0.0896,200
+pooled,haqqos,known,True,קצ הקצ,54,0,1.71,14,0.57,1.0,200
+pooled,doq,known,True,דוק,52,0,0.395,6,0.21,1.0,200
+pooled,koziba,known,True,כוזב בוזב,58,0,0.645,5,0.35,1.0,200
+pooled,kidron,known,True,קדרון,6,0,0.015,1,0.015,1.0,200
+pooled,natof,known,True,נטף,101,0,0.695,7,0.275,1.0,200
+pooled,horon,known,True,חורון חורין,126,1,1.445,10,0.49,0.4925,200
+pooled,kerem,known,True,כרמ ביתהכרמ,267,4,2.605,32,0.505,0.204,200
+pooled,rahil,known,True,רחיל שלוח,214,12,2.765,15,0.67,0.0448,200
+pooled,gerizim,known,True,גריזינ,62,4,0.095,2,0.065,0.005,200
+pooled,bethsham,known,True,ביתשמ ביתשאנ,13,0,0.03,1,0.015,1.0,200
+pooled,bezek,known,True,בזק ברוך,13,1,0.065,1,0.055,0.0597,200
+pooled,janoah,known,True,ינח,330,24,2.205,15,0.52,0.0149,200
+pooled,jericho,known,True,ירחו,345,17,2.77,32,0.515,0.0448,200
+pooled,PC:Jericho,pc,,ירחו,90,18,,,,,
+pooled,PC:Siloam,pc,,שלוח,245,12,,,,,
+pooled,PC:Bethlehem,pc,,לחם,145,0,,,,,
+pooled,PC:Anathoth,pc,,ענתות,290,3,,,,,
+pooled,PC:Tekoa,pc,,תקוע,22,1,,,,,
+pooled,PC:Kidron (learned Latin form expected; no Arabic survival),pc,,קדרון,246,8,,,,,
+pooled,PC:Gerizim,pc,,גריזים,61,4,,,,,
+pooled,PC:Beth-Hoglah,pc,,חגלה,90,0,,,,,
+pooled,TC:Zechariah (Kidron tomb),tc,,זכריה,5,0,,,,,
+pooled,TC:Huldah (Mount of Olives),tc,,חלדה,5,1,,,,,
+pooled,TC:Simeon the Just,tc,,שמעון,5,0,,,,,
+pooled,TOMB:melah,tomb,True,מלח מלה מלוא,6,0,0.135,1,0.125,1.0,200
+pooled,TOMB:kippa,tomb,False,כפא,0,0,0.0,0,0.0,1.0,200
+pooled,TOMB:absalom,tomb,True,אבשלומ,6,0,0.005,0,0.005,1.0,200
+pooled,TOMB:zadok,tomb,True,צדוק,6,1,0.04,1,0.035,0.0398,200
+pooled,TOMB:obed,tomb,True,עבד,6,0,0.005,0,0.005,1.0,200
+kaftor,achor,test,True,עכור עכון,6,0,0.055,1,0.03,1.0,200
+kaftor,kohlit,test,False,כחלת כחל בחלה,45,0,0.7,4,0.365,1.0,200
+kaftor,sekakah,test,True,סככ,15,0,0.125,1,0.035,1.0,200
+kaftor,melah,test,True,מלח מלה מלוא,12,0,0.195,2,0.175,1.0,200
+kaftor,manos,test,False,מנס,6,0,0.025,1,0.025,1.0,200
+kaftor,mdh,test,False,מדח מדה מרה,9,0,0.2,1,0.19,1.0,200
+kaftor,mattiyah,test,True,מתיה,3,0,0.02,1,0.02,1.0,200
+kaftor,nebat,test,True,נבט,3,0,0.005,0,0.005,1.0,200
+kaftor,kippa,test,False,כפא,5,0,0.11,4,0.05,1.0,200
+kaftor,solomon,test,True,שלומ שלם סלימן,0,0,0.0,0,0.0,1.0,200
+kaftor,qi,test,False,קיבוצ קיציצ קפרוס,3,0,0.015,0,0.01,1.0,200
+kaftor,hasor,test,True,חצור אחזר אחור אחיה,13,0,0.215,7,0.08,1.0,200
+kaftor,shaveh,test,True,שוא שוה,2,0,0.0,0,0.0,1.0,200
+kaftor,shalef,test,False,שלף,2,0,0.005,0,0.005,1.0,200
+kaftor,din,test,False,דין,5,0,0.035,1,0.035,1.0,200
+kaftor,tekelet,test,False,תכלת,0,0,0.0,0,0.0,1.0,200
+kaftor,qomah,test,False,קומעה קבעה קובע,0,0,0.0,0,0.0,1.0,200
+kaftor,nebo,test,True,נבו כפרנבו,0,0,0.0,0,0.0,1.0,200
+kaftor,tamar,test,True,תמר ביתתמר,4,0,0.01,0,0.01,1.0,200
+kaftor,pele,test,False,פלע,1,0,0.0,0,0.0,1.0,200
+kaftor,nab,test,True,נאב נבח,0,0,0.0,0,0.0,1.0,200
+kaftor,zered,test,True,זרד איב גיחנ,4,0,0.045,2,0.03,1.0,200
+kaftor,absalom,test,True,אבשלומ,9,0,0.015,1,0.015,1.0,200
+kaftor,zadok,test,True,צדוק,10,1,0.025,1,0.02,0.0249,200
+kaftor,obed,test,True,עבד,6,0,0.035,1,0.03,1.0,200
+kaftor,horebbeh,test,False,חריבה חרובה,10,0,0.04,2,0.025,1.0,200
+kaftor,asla,known,False,עצלא,6,0,0.01,0,0.01,1.0,200
+kaftor,haqqos,known,True,קצ הקצ,10,0,0.16,6,0.07,1.0,200
+kaftor,doq,known,True,דוק,9,0,0.04,1,0.015,1.0,200
+kaftor,koziba,known,True,כוזב בוזב,14,0,0.065,2,0.05,1.0,200
+kaftor,kidron,known,True,קדרון,0,0,0.0,0,0.0,1.0,200
+kaftor,natof,known,True,נטף,0,0,0.0,0,0.0,1.0,200
+kaftor,horon,known,True,חורון חורין,1,0,0.0,0,0.0,1.0,200
+kaftor,kerem,known,True,כרמ ביתהכרמ,15,0,0.08,2,0.055,1.0,200
+kaftor,rahil,known,True,רחיל שלוח,6,2,0.015,1,0.015,0.005,200
+kaftor,gerizim,known,True,גריזינ,21,4,0.025,1,0.02,0.005,200
+kaftor,bethsham,known,True,ביתשמ ביתשאנ,5,0,0.0,0,0.0,1.0,200
+kaftor,bezek,known,True,בזק ברוך,5,1,0.02,1,0.02,0.0249,200
+kaftor,janoah,known,True,ינח,34,7,0.095,1,0.085,0.005,200
+kaftor,jericho,known,True,ירחו,30,10,0.165,2,0.08,0.01,200
+kaftor,PC:Jericho,pc,,ירחו,20,10,,,,,
+kaftor,PC:Siloam,pc,,שלוח,29,2,,,,,
+kaftor,PC:Bethlehem,pc,,לחם,17,0,,,,,
+kaftor,PC:Anathoth,pc,,ענתות,29,0,,,,,
+kaftor,PC:Tekoa,pc,,תקוע,0,0,,,,,
+kaftor,PC:Kidron (learned Latin form expected; no Arabic survival),pc,,קדרון,29,1,,,,,
+kaftor,PC:Gerizim,pc,,גריזים,18,4,,,,,
+kaftor,PC:Beth-Hoglah,pc,,חגלה,20,0,,,,,
+kaftor,TC:Zechariah (Kidron tomb),tc,,זכריה,5,0,,,,,
+kaftor,TC:Huldah (Mount of Olives),tc,,חלדה,5,1,,,,,
+kaftor,TC:Simeon the Just,tc,,שמעון,5,0,,,,,
+kaftor,TOMB:melah,tomb,True,מלח מלה מלוא,6,0,0.135,1,0.125,1.0,200
+kaftor,TOMB:kippa,tomb,False,כפא,0,0,0.0,0,0.0,1.0,200
+kaftor,TOMB:absalom,tomb,True,אבשלומ,6,0,0.005,0,0.005,1.0,200
+kaftor,TOMB:zadok,tomb,True,צדוק,6,1,0.04,1,0.035,0.0398,200
+kaftor,TOMB:obed,tomb,True,עבד,6,0,0.005,0,0.005,1.0,200
+khitrowo,achor,test,True,עכור עכון,16,0,0.125,1,0.085,1.0,200
+khitrowo,kohlit,test,False,כחלת כחל בחלה,315,1,6.785,36,0.89,0.8905,200
+khitrowo,sekakah,test,True,סככ,47,0,0.325,3,0.21,1.0,200
+khitrowo,melah,test,True,מלח מלה מלוא,259,3,9.635,42,0.9,0.7463,200
+khitrowo,manos,test,False,מנס,192,3,1.41,10,0.42,0.1791,200
+khitrowo,mdh,test,False,מדח מדה מרה,232,5,8.39,44,0.94,0.6169,200
+khitrowo,mattiyah,test,True,מתיה,165,0,1.315,13,0.31,1.0,200
+khitrowo,nebat,test,True,נבט,165,0,1.28,25,0.355,1.0,200
+khitrowo,kippa,test,False,כפא,5,1,0.155,1,0.155,0.1592,200
+khitrowo,solomon,test,True,שלומ שלם סלימן,6,0,0.09,1,0.08,1.0,200
+khitrowo,qi,test,False,קיבוצ קיציצ קפרוס,19,1,0.3,2,0.21,0.2139,200
+khitrowo,hasor,test,True,חצור אחזר אחור אחיה,50,0,1.695,9,0.585,1.0,200
+khitrowo,shaveh,test,True,שוא שוה,29,0,0.375,2,0.26,1.0,200
+khitrowo,shalef,test,False,שלף,29,0,0.065,1,0.05,1.0,200
+khitrowo,din,test,False,דין,194,1,2.045,19,0.335,0.3383,200
+khitrowo,tekelet,test,False,תכלת,83,0,0.65,5,0.295,1.0,200
+khitrowo,qomah,test,False,קומעה קבעה קובע,0,0,0.0,0,0.0,1.0,200
+khitrowo,nebo,test,True,נבו כפרנבו,94,0,0.92,6,0.36,1.0,200
+khitrowo,tamar,test,True,תמר ביתתמר,209,1,2.005,20,0.48,0.4826,200
+khitrowo,pele,test,False,פלע,34,1,0.075,1,0.05,0.0547,200
+khitrowo,nab,test,True,נאב נבח,94,0,1.495,12,0.455,1.0,200
+khitrowo,zered,test,True,זרד איב גיחנ,48,1,1.26,9,0.535,0.5373,200
+khitrowo,absalom,test,True,אבשלומ,232,1,0.61,11,0.225,0.2289,200
+khitrowo,zadok,test,True,צדוק,243,0,1.395,9,0.405,1.0,200
+khitrowo,obed,test,True,עבד,67,0,0.395,4,0.23,1.0,200
+khitrowo,horebbeh,test,False,חריבה חרובה,63,1,1.03,8,0.435,0.4378,200
+khitrowo,asla,known,False,עצלא,48,2,0.365,4,0.175,0.0896,200
+khitrowo,haqqos,known,True,קצ הקצ,41,0,1.455,11,0.55,1.0,200
+khitrowo,doq,known,True,דוק,40,0,0.34,5,0.21,1.0,200
+khitrowo,koziba,known,True,כוזב בוזב,41,0,0.565,5,0.31,1.0,200
+khitrowo,kidron,known,True,קדרון,6,0,0.015,1,0.015,1.0,200
+khitrowo,natof,known,True,נטף,90,0,0.6,7,0.255,1.0,200
+khitrowo,horon,known,True,חורון חורין,114,1,1.285,9,0.445,0.4478,200
+khitrowo,kerem,known,True,כרמ ביתהכרמ,237,4,2.475,32,0.475,0.199,200
+khitrowo,rahil,known,True,רחיל שלוח,192,10,2.65,15,0.66,0.0697,200
+khitrowo,gerizim,known,True,גריזינ,8,0,0.045,1,0.035,1.0,200
+khitrowo,bethsham,known,True,ביתשמ ביתשאנ,3,0,0.005,0,0.005,1.0,200
+khitrowo,bezek,known,True,בזק ברוך,3,0,0.03,1,0.03,1.0,200
+khitrowo,janoah,known,True,ינח,261,17,1.98,14,0.495,0.0149,200
+khitrowo,jericho,known,True,ירחו,298,6,2.55,32,0.49,0.1493,200
+khitrowo,PC:Jericho,pc,,ירחו,67,7,,,,,
+khitrowo,PC:Siloam,pc,,שלוח,207,10,,,,,
+khitrowo,PC:Bethlehem,pc,,לחם,122,0,,,,,
+khitrowo,PC:Anathoth,pc,,ענתות,252,3,,,,,
+khitrowo,PC:Tekoa,pc,,תקוע,15,0,,,,,
+khitrowo,PC:Kidron (learned Latin form expected; no Arabic survival),pc,,קדרון,207,7,,,,,
+khitrowo,PC:Gerizim,pc,,גריזים,12,0,,,,,
+khitrowo,PC:Beth-Hoglah,pc,,חגלה,67,0,,,,,
+khitrowo,TC:Zechariah (Kidron tomb),tc,,זכריה,0,0,,,,,
+khitrowo,TC:Huldah (Mount of Olives),tc,,חלדה,0,0,,,,,
+khitrowo,TC:Simeon the Just,tc,,שמעון,0,0,,,,,
+khitrowo,TOMB:melah,tomb,True,מלח מלה מלוא,0,0,0.0,0,0.0,1.0,200
+khitrowo,TOMB:kippa,tomb,False,כפא,0,0,0.0,0,0.0,1.0,200
+khitrowo,TOMB:absalom,tomb,True,אבשלומ,0,0,0.0,0,0.0,1.0,200
+khitrowo,TOMB:zadok,tomb,True,צדוק,0,0,0.0,0,0.0,1.0,200
+khitrowo,TOMB:obed,tomb,True,עבד,0,0,0.0,0,0.0,1.0,200
+hutteroth,achor,test,True,עכור עכון,0,0,0.0,0,0.0,1.0,200
+hutteroth,kohlit,test,False,כחלת כחל בחלה,35,0,0.355,3,0.23,1.0,200
+hutteroth,sekakah,test,True,סככ,3,0,0.025,1,0.015,1.0,200
+hutteroth,melah,test,True,מלח מלה מלוא,15,0,0.17,2,0.125,1.0,200
+hutteroth,manos,test,False,מנס,15,0,0.03,1,0.03,1.0,200
+hutteroth,mdh,test,False,מדח מדה מרה,15,0,0.105,1,0.095,1.0,200
+hutteroth,mattiyah,test,True,מתיה,15,0,0.065,1,0.065,1.0,200
+hutteroth,nebat,test,True,נבט,15,0,0.08,1,0.045,1.0,200
+hutteroth,kippa,test,False,כפא,0,0,0.0,0,0.0,1.0,200
+hutteroth,solomon,test,True,שלומ שלם סלימן,0,0,0.0,0,0.0,1.0,200
+hutteroth,qi,test,False,קיבוצ קיציצ קפרוס,0,0,0.0,0,0.0,1.0,200
+hutteroth,hasor,test,True,חצור אחזר אחור אחיה,3,0,0.06,2,0.045,1.0,200
+hutteroth,shaveh,test,True,שוא שוה,0,0,0.0,0,0.0,1.0,200
+hutteroth,shalef,test,False,שלף,0,0,0.0,0,0.0,1.0,200
+hutteroth,din,test,False,דין,15,0,0.06,1,0.06,1.0,200
+hutteroth,tekelet,test,False,תכלת,14,0,0.065,1,0.055,1.0,200
+hutteroth,qomah,test,False,קומעה קבעה קובע,0,0,0.0,0,0.0,1.0,200
+hutteroth,nebo,test,True,נבו כפרנבו,14,0,0.155,3,0.095,1.0,200
+hutteroth,tamar,test,True,תמר ביתתמר,20,0,0.12,2,0.07,1.0,200
+hutteroth,pele,test,False,פלע,0,0,0.0,0,0.0,1.0,200
+hutteroth,nab,test,True,נאב נבח,14,0,0.14,2,0.11,1.0,200
+hutteroth,zered,test,True,זרד איב גיחנ,0,0,0.0,0,0.0,1.0,200
+hutteroth,absalom,test,True,אבשלומ,15,0,0.09,2,0.025,1.0,200
+hutteroth,zadok,test,True,צדוק,15,0,0.05,1,0.045,1.0,200
+hutteroth,obed,test,True,עבד,0,0,0.0,0,0.0,1.0,200
+hutteroth,horebbeh,test,False,חריבה חרובה,4,0,0.045,1,0.045,1.0,200
+hutteroth,asla,known,False,עצלא,1,0,0.0,0,0.0,1.0,200
+hutteroth,haqqos,known,True,קצ הקצ,3,0,0.095,2,0.065,1.0,200
+hutteroth,doq,known,True,דוק,3,0,0.015,0,0.01,1.0,200
+hutteroth,koziba,known,True,כוזב בוזב,3,0,0.015,1,0.015,1.0,200
+hutteroth,kidron,known,True,קדרון,0,0,0.0,0,0.0,1.0,200
+hutteroth,natof,known,True,נטף,11,0,0.095,3,0.035,1.0,200
+hutteroth,horon,known,True,חורון חורין,11,0,0.16,6,0.075,1.0,200
+hutteroth,kerem,known,True,כרמ ביתהכרמ,15,0,0.05,2,0.035,1.0,200
+hutteroth,rahil,known,True,רחיל שלוח,16,0,0.1,2,0.06,1.0,200
+hutteroth,gerizim,known,True,גריזינ,33,0,0.025,1,0.025,1.0,200
+hutteroth,bethsham,known,True,ביתשמ ביתשאנ,5,0,0.025,0,0.01,1.0,200
+hutteroth,bezek,known,True,בזק ברוך,5,0,0.015,1,0.015,1.0,200
+hutteroth,janoah,known,True,ינח,35,0,0.13,2,0.075,1.0,200
+hutteroth,jericho,known,True,ירחו,17,1,0.055,2,0.035,0.0398,200
+hutteroth,PC:Jericho,pc,,ירחו,3,1,,,,,
+hutteroth,PC:Siloam,pc,,שלוח,9,0,,,,,
+hutteroth,PC:Bethlehem,pc,,לחם,6,0,,,,,
+hutteroth,PC:Anathoth,pc,,ענתות,9,0,,,,,
+hutteroth,PC:Tekoa,pc,,תקוע,7,1,,,,,
+hutteroth,PC:Kidron (learned Latin form expected; no Arabic survival),pc,,קדרון,10,0,,,,,
+hutteroth,PC:Gerizim,pc,,גריזים,31,0,,,,,
+hutteroth,PC:Beth-Hoglah,pc,,חגלה,3,0,,,,,
+hutteroth,TC:Zechariah (Kidron tomb),tc,,זכריה,0,0,,,,,
+hutteroth,TC:Huldah (Mount of Olives),tc,,חלדה,0,0,,,,,
+hutteroth,TC:Simeon the Just,tc,,שמעון,0,0,,,,,
+hutteroth,TOMB:melah,tomb,True,מלח מלה מלוא,0,0,0.0,0,0.0,1.0,200
+hutteroth,TOMB:kippa,tomb,False,כפא,0,0,0.0,0,0.0,1.0,200
+hutteroth,TOMB:absalom,tomb,True,אבשלומ,0,0,0.0,0,0.0,1.0,200
+hutteroth,TOMB:zadok,tomb,True,צדוק,0,0,0.0,0,0.0,1.0,200
+hutteroth,TOMB:obed,tomb,True,עבד,0,0,0.0,0,0.0,1.0,200
