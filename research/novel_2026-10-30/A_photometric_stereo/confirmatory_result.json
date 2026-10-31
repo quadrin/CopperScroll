@@ -1,0 +1,71 @@
+{
+ "n": 8,
+ "correct": 1,
+ "accuracy": 0.125,
+ "ci95_clopper_pearson": [
+  0.0031597235312519093,
+  0.5265096708752065
+ ],
+ "balanced_accuracy": 0.1,
+ "binomial_one_sided_p": 0.99609375,
+ "passed": false,
+ "items": [
+  {
+   "candidate_id": "LC-CHH-081",
+   "truth": "ח",
+   "f_left_foot_mean": 1.9205,
+   "pred": "ת",
+   "correct": false
+  },
+  {
+   "candidate_id": "LC-CHH-084",
+   "truth": "ח",
+   "f_left_foot_mean": null,
+   "pred": "invalid",
+   "correct": false
+  },
+  {
+   "candidate_id": "LC-CHH-085",
+   "truth": "ח",
+   "f_left_foot_mean": null,
+   "pred": "invalid",
+   "correct": false
+  },
+  {
+   "candidate_id": "LC-CHH-130",
+   "truth": "ת",
+   "f_left_foot_mean": null,
+   "pred": "invalid",
+   "correct": false
+  },
+  {
+   "candidate_id": "LC-CHH-132",
+   "truth": "ת",
+   "f_left_foot_mean": null,
+   "pred": "invalid",
+   "correct": false
+  },
+  {
+   "candidate_id": "LC-CHH-134",
+   "truth": "ת",
+   "f_left_foot_mean": 1.4500000000000002,
+   "pred": "ת",
+   "correct": true
+  },
+  {
+   "candidate_id": "LC-CHH-135",
+   "truth": "ת",
+   "f_left_foot_mean": null,
+   "pred": "invalid",
+   "correct": false
+  },
+  {
+   "candidate_id": "LC-CHH-136",
+   "truth": "ת",
+   "f_left_foot_mean": null,
+   "pred": "invalid",
+   "correct": false
+  }
+ ],
+ "n_rows_csv": 14
+}
