@@ -1,0 +1,281 @@
+region,predicate,setting,params,unit,count,cells,extent,extent_unit,note
+RF1_qumran_jericho_qelt_kidron,LAND,primary,"{""L_sea"": -395.0}",km2,478.352,531502,478.352,km2,
+RF1_qumran_jericho_qelt_kidron,LAND,L_sea=-390.0,"{""L_sea"": -390.0}",km2,475.952,528836,475.952,km2,
+RF1_qumran_jericho_qelt_kidron,LAND,L_sea=-400.0,"{""L_sea"": -400.0}",km2,482.246,535829,482.246,km2,
+RF1_qumran_jericho_qelt_kidron,P1_nahal,primary,"{""A_min"": 1.0}",90m_stretch,5205,13280,468.448,km,
+RF1_qumran_jericho_qelt_kidron,P1_nahal_reaches,primary,"{""A_min"": 1.0}",reach,248,248,468.448,km,secondary unit; reach counts scale ~1/A_min by construction
+RF1_qumran_jericho_qelt_kidron,P3b_shulei_outlet,primary,"{""A_min"": 1.0}",point,139,139,0,,junctions 118; terminal outlets 21
+RF1_qumran_jericho_qelt_kidron,P1_nahal,A_min=0.25,"{""A_min"": 0.25}",90m_stretch,9353,23859,841.761,km,
+RF1_qumran_jericho_qelt_kidron,P1_nahal_reaches,A_min=0.25,"{""A_min"": 0.25}",reach,1003,1003,841.761,km,secondary unit; reach counts scale ~1/A_min by construction
+RF1_qumran_jericho_qelt_kidron,P3b_shulei_outlet,A_min=0.25,"{""A_min"": 0.25}",point,522,522,0,,junctions 485; terminal outlets 37
+RF1_qumran_jericho_qelt_kidron,P1_nahal,A_min=4.0,"{""A_min"": 4.0}",90m_stretch,2889,7385,259.985,km,
+RF1_qumran_jericho_qelt_kidron,P1_nahal_reaches,A_min=4.0,"{""A_min"": 4.0}",reach,53,53,259.985,km,secondary unit; reach counts scale ~1/A_min by construction
+RF1_qumran_jericho_qelt_kidron,P3b_shulei_outlet,A_min=4.0,"{""A_min"": 4.0}",point,35,35,0,,junctions 22; terminal outlets 13
+RF1_qumran_jericho_qelt_kidron,P2_nahal_gadol,primary,"{""A_great"": 100.0}",90m_stretch,481,1225,43.299,km,distinct connected trunk systems in region: 4
+RF1_qumran_jericho_qelt_kidron,P2_nahal_gadol,A_great=50.0,"{""A_great"": 50.0}",90m_stretch,891,2267,80.2,km,distinct connected trunk systems in region: 5
+RF1_qumran_jericho_qelt_kidron,P2_nahal_gadol,A_great=200.0,"{""A_great"": 200.0}",90m_stretch,7,17,0.672,km,distinct connected trunk systems in region: 1
+RF1_qumran_jericho_qelt_kidron,P3_shulei_edge,primary,"{""A_min"": 1.0, ""S_bank"": 15.0}",90m_stretch,1611,4834,145.02,km,channel cells with a bank cell beside them
+RF1_qumran_jericho_qelt_kidron,P3_shulei_edge,A_min=0.25,"{""A_min"": 0.25, ""S_bank"": 15.0}",90m_stretch,2807,8422,252.66,km,channel cells with a bank cell beside them
+RF1_qumran_jericho_qelt_kidron,P3_shulei_edge,A_min=4.0,"{""A_min"": 4.0, ""S_bank"": 15.0}",90m_stretch,975,2926,87.78,km,channel cells with a bank cell beside them
+RF1_qumran_jericho_qelt_kidron,P3_shulei_edge,S_bank=10.0,"{""A_min"": 1.0, ""S_bank"": 10.0}",90m_stretch,2325,6976,209.28,km,channel cells with a bank cell beside them
+RF1_qumran_jericho_qelt_kidron,P3_shulei_edge,S_bank=25.0,"{""A_min"": 1.0, ""S_bank"": 25.0}",90m_stretch,529,1586,47.58,km,channel cells with a bank cell beside them
+RF1_qumran_jericho_qelt_kidron,P4a_berekhah_depression,primary,"{""d_min"": 2.0}",cluster,150,1390,1.251,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 74"
+RF1_qumran_jericho_qelt_kidron,P4a_berekhah_depression,d_min=1.0,"{""d_min"": 1.0}",cluster,364,2243,2.019,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 128"
+RF1_qumran_jericho_qelt_kidron,P4a_berekhah_depression,d_min=4.0,"{""d_min"": 4.0}",cluster,77,935,0.842,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 46"
+RF1_qumran_jericho_qelt_kidron,P4b_berekhah_runoff_site,primary,"{""A_pool"": 0.05, ""S_pool"": 5.0}",cluster,3599,29455,26.51,km2,
+RF1_qumran_jericho_qelt_kidron,P4b_berekhah_runoff_site,S_pool=3.0,"{""A_pool"": 0.05, ""S_pool"": 3.0}",cluster,3111,20688,18.619,km2,
+RF1_qumran_jericho_qelt_kidron,P4b_berekhah_runoff_site,S_pool=8.0,"{""A_pool"": 0.05, ""S_pool"": 8.0}",cluster,2705,38431,34.588,km2,
+RF1_qumran_jericho_qelt_kidron,P4b_berekhah_runoff_site,A_pool=0.02,"{""A_pool"": 0.02, ""S_pool"": 5.0}",cluster,4135,39230,35.307,km2,
+RF1_qumran_jericho_qelt_kidron,P4b_berekhah_runoff_site,A_pool=0.2,"{""A_pool"": 0.2, ""S_pool"": 5.0}",cluster,2452,18043,16.239,km2,
+RF1_qumran_jericho_qelt_kidron,P5_mearah_above_nahal,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,299,3977,3.579,km2,
+RF1_qumran_jericho_qelt_kidron,P5e_mearah_above_nahal_facing_east,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,152,1137,1.023,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF1_qumran_jericho_qelt_kidron,P5x_cliff_any,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,751,12742,11.468,km2,cliff component without the channel condition
+RF1_qumran_jericho_qelt_kidron,P5_mearah_above_nahal,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,420,4683,4.215,km2,
+RF1_qumran_jericho_qelt_kidron,P5e_mearah_above_nahal_facing_east,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,217,1548,1.393,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF1_qumran_jericho_qelt_kidron,P5x_cliff_any,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,751,12742,11.468,km2,cliff component without the channel condition
+RF1_qumran_jericho_qelt_kidron,P5_mearah_above_nahal,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,172,2868,2.581,km2,
+RF1_qumran_jericho_qelt_kidron,P5e_mearah_above_nahal_facing_east,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,86,679,0.611,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF1_qumran_jericho_qelt_kidron,P5x_cliff_any,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,751,12742,11.468,km2,cliff component without the channel condition
+RF1_qumran_jericho_qelt_kidron,P5_mearah_above_nahal,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,644,9131,8.218,km2,
+RF1_qumran_jericho_qelt_kidron,P5e_mearah_above_nahal_facing_east,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,340,2413,2.172,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF1_qumran_jericho_qelt_kidron,P5x_cliff_any,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,1550,31877,28.689,km2,cliff component without the channel condition
+RF1_qumran_jericho_qelt_kidron,P5_mearah_above_nahal,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,67,554,0.499,km2,
+RF1_qumran_jericho_qelt_kidron,P5e_mearah_above_nahal_facing_east,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,44,240,0.216,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF1_qumran_jericho_qelt_kidron,P5x_cliff_any,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,91,1759,1.583,km2,cliff component without the channel condition
+RF1_qumran_jericho_qelt_kidron,P5_mearah_above_nahal,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,299,3977,3.579,km2,
+RF1_qumran_jericho_qelt_kidron,P5e_mearah_above_nahal_facing_east,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,152,1137,1.023,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF1_qumran_jericho_qelt_kidron,P5x_cliff_any,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,751,12742,11.468,km2,cliff component without the channel condition
+RF1_qumran_jericho_qelt_kidron,P5_mearah_above_nahal,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,299,3977,3.579,km2,
+RF1_qumran_jericho_qelt_kidron,P5e_mearah_above_nahal_facing_east,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,152,1137,1.023,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF1_qumran_jericho_qelt_kidron,P5x_cliff_any,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,750,12740,11.466,km2,cliff component without the channel condition
+RF1_qumran_jericho_qelt_kidron,P5_mearah_above_nahal,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,279,2505,2.254,km2,
+RF1_qumran_jericho_qelt_kidron,P5e_mearah_above_nahal_facing_east,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,128,628,0.565,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF1_qumran_jericho_qelt_kidron,P5x_cliff_any,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,751,12742,11.468,km2,cliff component without the channel condition
+RF1_qumran_jericho_qelt_kidron,P5_mearah_above_nahal,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,451,6136,5.522,km2,
+RF1_qumran_jericho_qelt_kidron,P5e_mearah_above_nahal_facing_east,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,252,2215,1.994,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF1_qumran_jericho_qelt_kidron,P5x_cliff_any,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,751,12742,11.468,km2,cliff component without the channel condition
+RF1_qumran_jericho_qelt_kidron,P6_tsuq_gorge,primary,"{""A_min"": 1.0, ""V_gorge"": 0.75}",90m_stretch,733,1861,65.995,km,
+RF1_qumran_jericho_qelt_kidron,P6m_tsuq_gorge_mouth,primary,"{""A_min"": 1.0, ""V_gorge"": 0.75}",point,98,98,0,,
+RF1_qumran_jericho_qelt_kidron,P6_tsuq_gorge,A_min=0.25,"{""A_min"": 0.25, ""V_gorge"": 0.75}",90m_stretch,976,2470,87.819,km,
+RF1_qumran_jericho_qelt_kidron,P6m_tsuq_gorge_mouth,A_min=0.25,"{""A_min"": 0.25, ""V_gorge"": 0.75}",point,181,181,0,,
+RF1_qumran_jericho_qelt_kidron,P6_tsuq_gorge,A_min=4.0,"{""A_min"": 4.0, ""V_gorge"": 0.75}",90m_stretch,470,1192,42.284,km,
+RF1_qumran_jericho_qelt_kidron,P6m_tsuq_gorge_mouth,A_min=4.0,"{""A_min"": 4.0, ""V_gorge"": 0.75}",point,54,54,0,,
+RF1_qumran_jericho_qelt_kidron,P6_tsuq_gorge,V_gorge=0.7,"{""A_min"": 1.0, ""V_gorge"": 0.7}",90m_stretch,334,849,30.055,km,
+RF1_qumran_jericho_qelt_kidron,P6m_tsuq_gorge_mouth,V_gorge=0.7,"{""A_min"": 1.0, ""V_gorge"": 0.7}",point,70,70,0,,
+RF1_qumran_jericho_qelt_kidron,P6_tsuq_gorge,V_gorge=0.8,"{""A_min"": 1.0, ""V_gorge"": 0.8}",90m_stretch,1355,3440,121.951,km,
+RF1_qumran_jericho_qelt_kidron,P6m_tsuq_gorge_mouth,V_gorge=0.8,"{""A_min"": 1.0, ""V_gorge"": 0.8}",point,106,106,0,,
+RF1_qumran_jericho_qelt_kidron,P7_yam_shore_band,primary,"{""D_sea"": 1000.0, ""L_sea"": -395.0}",km_shoreline,25,21053,18.948,km2,shore cells 842
+RF1_qumran_jericho_qelt_kidron,P7_yam_shore_band,L_sea=-390.0,"{""D_sea"": 1000.0, ""L_sea"": -390.0}",km_shoreline,27,21392,19.253,km2,shore cells 892
+RF1_qumran_jericho_qelt_kidron,P7_yam_shore_band,L_sea=-400.0,"{""D_sea"": 1000.0, ""L_sea"": -400.0}",km_shoreline,28,20837,18.753,km2,shore cells 944
+RF1_qumran_jericho_qelt_kidron,P7_yam_shore_band,D_sea=500.0,"{""D_sea"": 500.0, ""L_sea"": -395.0}",km_shoreline,25,10376,9.338,km2,shore cells 842
+RF1_qumran_jericho_qelt_kidron,P7_yam_shore_band,D_sea=2000.0,"{""D_sea"": 2000.0, ""L_sea"": -395.0}",km_shoreline,25,43782,39.404,km2,shore cells 842
+RF2_caves_entry25_box,LAND,primary,"{""L_sea"": -395.0}",km2,721.526,801696,721.526,km2,
+RF2_caves_entry25_box,LAND,L_sea=-390.0,"{""L_sea"": -390.0}",km2,717.504,797227,717.504,km2,
+RF2_caves_entry25_box,LAND,L_sea=-400.0,"{""L_sea"": -400.0}",km2,725.911,806568,725.911,km2,
+RF2_caves_entry25_box,P1_nahal,primary,"{""A_min"": 1.0}",90m_stretch,7019,17909,631.668,km,
+RF2_caves_entry25_box,P1_nahal_reaches,primary,"{""A_min"": 1.0}",reach,328,328,631.668,km,secondary unit; reach counts scale ~1/A_min by construction
+RF2_caves_entry25_box,P3b_shulei_outlet,primary,"{""A_min"": 1.0}",point,185,185,0,,junctions 155; terminal outlets 30
+RF2_caves_entry25_box,P1_nahal,A_min=0.25,"{""A_min"": 0.25}",90m_stretch,12867,32825,1158.031,km,
+RF2_caves_entry25_box,P1_nahal_reaches,A_min=0.25,"{""A_min"": 0.25}",reach,1436,1436,1158.031,km,secondary unit; reach counts scale ~1/A_min by construction
+RF2_caves_entry25_box,P3b_shulei_outlet,A_min=0.25,"{""A_min"": 0.25}",point,752,752,0,,junctions 685; terminal outlets 67
+RF2_caves_entry25_box,P1_nahal,A_min=4.0,"{""A_min"": 4.0}",90m_stretch,3944,10076,354.938,km,
+RF2_caves_entry25_box,P1_nahal_reaches,A_min=4.0,"{""A_min"": 4.0}",reach,66,66,354.938,km,secondary unit; reach counts scale ~1/A_min by construction
+RF2_caves_entry25_box,P3b_shulei_outlet,A_min=4.0,"{""A_min"": 4.0}",point,42,42,0,,junctions 29; terminal outlets 13
+RF2_caves_entry25_box,P2_nahal_gadol,primary,"{""A_great"": 100.0}",90m_stretch,750,1905,67.484,km,distinct connected trunk systems in region: 9
+RF2_caves_entry25_box,P2_nahal_gadol,A_great=50.0,"{""A_great"": 50.0}",90m_stretch,1473,3743,132.602,km,distinct connected trunk systems in region: 14
+RF2_caves_entry25_box,P2_nahal_gadol,A_great=200.0,"{""A_great"": 200.0}",90m_stretch,112,280,10.053,km,distinct connected trunk systems in region: 1
+RF2_caves_entry25_box,P3_shulei_edge,primary,"{""A_min"": 1.0, ""S_bank"": 15.0}",90m_stretch,2682,8046,241.38,km,channel cells with a bank cell beside them
+RF2_caves_entry25_box,P3_shulei_edge,A_min=0.25,"{""A_min"": 0.25, ""S_bank"": 15.0}",90m_stretch,4593,13778,413.34,km,channel cells with a bank cell beside them
+RF2_caves_entry25_box,P3_shulei_edge,A_min=4.0,"{""A_min"": 4.0, ""S_bank"": 15.0}",90m_stretch,1657,4970,149.1,km,channel cells with a bank cell beside them
+RF2_caves_entry25_box,P3_shulei_edge,S_bank=10.0,"{""A_min"": 1.0, ""S_bank"": 10.0}",90m_stretch,3764,11292,338.76,km,channel cells with a bank cell beside them
+RF2_caves_entry25_box,P3_shulei_edge,S_bank=25.0,"{""A_min"": 1.0, ""S_bank"": 25.0}",90m_stretch,1103,3310,99.3,km,channel cells with a bank cell beside them
+RF2_caves_entry25_box,P4a_berekhah_depression,primary,"{""d_min"": 2.0}",cluster,242,2833,2.55,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 127"
+RF2_caves_entry25_box,P4a_berekhah_depression,d_min=1.0,"{""d_min"": 1.0}",cluster,532,3731,3.358,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 187"
+RF2_caves_entry25_box,P4a_berekhah_depression,d_min=4.0,"{""d_min"": 4.0}",cluster,140,2093,1.884,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 91"
+RF2_caves_entry25_box,P4b_berekhah_runoff_site,primary,"{""A_pool"": 0.05, ""S_pool"": 5.0}",cluster,5585,37211,33.49,km2,
+RF2_caves_entry25_box,P4b_berekhah_runoff_site,S_pool=3.0,"{""A_pool"": 0.05, ""S_pool"": 3.0}",cluster,4911,22822,20.54,km2,
+RF2_caves_entry25_box,P4b_berekhah_runoff_site,S_pool=8.0,"{""A_pool"": 0.05, ""S_pool"": 8.0}",cluster,4108,50983,45.885,km2,
+RF2_caves_entry25_box,P4b_berekhah_runoff_site,A_pool=0.02,"{""A_pool"": 0.02, ""S_pool"": 5.0}",cluster,6579,49415,44.474,km2,
+RF2_caves_entry25_box,P4b_berekhah_runoff_site,A_pool=0.2,"{""A_pool"": 0.2, ""S_pool"": 5.0}",cluster,3720,22464,20.218,km2,
+RF2_caves_entry25_box,P5_mearah_above_nahal,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,563,11582,10.424,km2,
+RF2_caves_entry25_box,P5e_mearah_above_nahal_facing_east,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,349,3130,2.817,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF2_caves_entry25_box,P5x_cliff_any,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1221,41700,37.53,km2,cliff component without the channel condition
+RF2_caves_entry25_box,P5_mearah_above_nahal,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,825,14595,13.136,km2,
+RF2_caves_entry25_box,P5e_mearah_above_nahal_facing_east,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,531,4654,4.189,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF2_caves_entry25_box,P5x_cliff_any,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1221,41700,37.53,km2,cliff component without the channel condition
+RF2_caves_entry25_box,P5_mearah_above_nahal,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,352,9161,8.245,km2,
+RF2_caves_entry25_box,P5e_mearah_above_nahal_facing_east,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,215,2002,1.802,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF2_caves_entry25_box,P5x_cliff_any,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1221,41700,37.53,km2,cliff component without the channel condition
+RF2_caves_entry25_box,P5_mearah_above_nahal,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,983,20597,18.537,km2,
+RF2_caves_entry25_box,P5e_mearah_above_nahal_facing_east,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,618,5405,4.864,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF2_caves_entry25_box,P5x_cliff_any,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,2289,77463,69.717,km2,cliff component without the channel condition
+RF2_caves_entry25_box,P5_mearah_above_nahal,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,230,2729,2.456,km2,
+RF2_caves_entry25_box,P5e_mearah_above_nahal_facing_east,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,144,967,0.87,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF2_caves_entry25_box,P5x_cliff_any,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,314,11145,10.03,km2,cliff component without the channel condition
+RF2_caves_entry25_box,P5_mearah_above_nahal,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,563,11582,10.424,km2,
+RF2_caves_entry25_box,P5e_mearah_above_nahal_facing_east,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,349,3130,2.817,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF2_caves_entry25_box,P5x_cliff_any,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,1221,41700,37.53,km2,cliff component without the channel condition
+RF2_caves_entry25_box,P5_mearah_above_nahal,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,562,11581,10.423,km2,
+RF2_caves_entry25_box,P5e_mearah_above_nahal_facing_east,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,349,3130,2.817,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF2_caves_entry25_box,P5x_cliff_any,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,1219,41697,37.527,km2,cliff component without the channel condition
+RF2_caves_entry25_box,P5_mearah_above_nahal,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,554,6851,6.166,km2,
+RF2_caves_entry25_box,P5e_mearah_above_nahal_facing_east,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,297,1718,1.546,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF2_caves_entry25_box,P5x_cliff_any,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1221,41700,37.53,km2,cliff component without the channel condition
+RF2_caves_entry25_box,P5_mearah_above_nahal,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,767,19928,17.935,km2,
+RF2_caves_entry25_box,P5e_mearah_above_nahal_facing_east,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,540,6465,5.818,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF2_caves_entry25_box,P5x_cliff_any,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1221,41700,37.53,km2,cliff component without the channel condition
+RF2_caves_entry25_box,P6_tsuq_gorge,primary,"{""A_min"": 1.0, ""V_gorge"": 0.75}",90m_stretch,1443,3684,129.825,km,
+RF2_caves_entry25_box,P6m_tsuq_gorge_mouth,primary,"{""A_min"": 1.0, ""V_gorge"": 0.75}",point,146,146,0,,
+RF2_caves_entry25_box,P6_tsuq_gorge,A_min=0.25,"{""A_min"": 0.25, ""V_gorge"": 0.75}",90m_stretch,1949,4975,175.365,km,
+RF2_caves_entry25_box,P6m_tsuq_gorge_mouth,A_min=0.25,"{""A_min"": 0.25, ""V_gorge"": 0.75}",point,265,265,0,,
+RF2_caves_entry25_box,P6_tsuq_gorge,A_min=4.0,"{""A_min"": 4.0, ""V_gorge"": 0.75}",90m_stretch,1013,2581,91.181,km,
+RF2_caves_entry25_box,P6m_tsuq_gorge_mouth,A_min=4.0,"{""A_min"": 4.0, ""V_gorge"": 0.75}",point,80,80,0,,
+RF2_caves_entry25_box,P6_tsuq_gorge,V_gorge=0.7,"{""A_min"": 1.0, ""V_gorge"": 0.7}",90m_stretch,854,2193,76.844,km,
+RF2_caves_entry25_box,P6m_tsuq_gorge_mouth,V_gorge=0.7,"{""A_min"": 1.0, ""V_gorge"": 0.7}",point,115,115,0,,
+RF2_caves_entry25_box,P6_tsuq_gorge,V_gorge=0.8,"{""A_min"": 1.0, ""V_gorge"": 0.8}",90m_stretch,2296,5849,206.618,km,
+RF2_caves_entry25_box,P6m_tsuq_gorge_mouth,V_gorge=0.8,"{""A_min"": 1.0, ""V_gorge"": 0.8}",point,151,151,0,,
+RF2_caves_entry25_box,P7_yam_shore_band,primary,"{""D_sea"": 1000.0, ""L_sea"": -395.0}",km_shoreline,61,50780,45.702,km2,shore cells 2043
+RF2_caves_entry25_box,P7_yam_shore_band,L_sea=-390.0,"{""D_sea"": 1000.0, ""L_sea"": -390.0}",km_shoreline,61,50664,45.598,km2,shore cells 2038
+RF2_caves_entry25_box,P7_yam_shore_band,L_sea=-400.0,"{""D_sea"": 1000.0, ""L_sea"": -400.0}",km_shoreline,61,50380,45.342,km2,shore cells 2044
+RF2_caves_entry25_box,P7_yam_shore_band,D_sea=500.0,"{""D_sea"": 500.0, ""L_sea"": -395.0}",km_shoreline,61,25388,22.849,km2,shore cells 2043
+RF2_caves_entry25_box,P7_yam_shore_band,D_sea=2000.0,"{""D_sea"": 2000.0, ""L_sea"": -395.0}",km_shoreline,61,101932,91.739,km2,shore cells 2043
+RF3_water_systems_box,LAND,primary,"{""L_sea"": -395.0}",km2,1168.943,1298826,1168.943,km2,
+RF3_water_systems_box,LAND,L_sea=-390.0,"{""L_sea"": -390.0}",km2,1162.251,1291390,1162.251,km2,
+RF3_water_systems_box,LAND,L_sea=-400.0,"{""L_sea"": -400.0}",km2,1175.824,1306471,1175.824,km2,
+RF3_water_systems_box,P1_nahal,primary,"{""A_min"": 1.0}",90m_stretch,11356,28992,1022.033,km,
+RF3_water_systems_box,P1_nahal_reaches,primary,"{""A_min"": 1.0}",reach,605,605,1022.033,km,secondary unit; reach counts scale ~1/A_min by construction
+RF3_water_systems_box,P3b_shulei_outlet,primary,"{""A_min"": 1.0}",point,325,325,0,,junctions 285; terminal outlets 40
+RF3_water_systems_box,P1_nahal,A_min=0.25,"{""A_min"": 0.25}",90m_stretch,19869,50753,1788.192,km,
+RF3_water_systems_box,P1_nahal_reaches,A_min=0.25,"{""A_min"": 0.25}",reach,2254,2254,1788.192,km,secondary unit; reach counts scale ~1/A_min by construction
+RF3_water_systems_box,P3b_shulei_outlet,A_min=0.25,"{""A_min"": 0.25}",point,1161,1161,0,,junctions 1094; terminal outlets 67
+RF3_water_systems_box,P1_nahal,A_min=4.0,"{""A_min"": 4.0}",90m_stretch,6138,15671,552.455,km,
+RF3_water_systems_box,P1_nahal_reaches,A_min=4.0,"{""A_min"": 4.0}",reach,151,151,552.455,km,secondary unit; reach counts scale ~1/A_min by construction
+RF3_water_systems_box,P3b_shulei_outlet,A_min=4.0,"{""A_min"": 4.0}",point,88,88,0,,junctions 62; terminal outlets 26
+RF3_water_systems_box,P2_nahal_gadol,primary,"{""A_great"": 100.0}",90m_stretch,650,1653,58.5,km,distinct connected trunk systems in region: 14
+RF3_water_systems_box,P2_nahal_gadol,A_great=50.0,"{""A_great"": 50.0}",90m_stretch,1638,4163,147.382,km,distinct connected trunk systems in region: 20
+RF3_water_systems_box,P2_nahal_gadol,A_great=200.0,"{""A_great"": 200.0}",90m_stretch,152,382,13.647,km,distinct connected trunk systems in region: 12
+RF3_water_systems_box,P3_shulei_edge,primary,"{""A_min"": 1.0, ""S_bank"": 15.0}",90m_stretch,4340,13021,390.63,km,channel cells with a bank cell beside them
+RF3_water_systems_box,P3_shulei_edge,A_min=0.25,"{""A_min"": 0.25, ""S_bank"": 15.0}",90m_stretch,7141,21424,642.72,km,channel cells with a bank cell beside them
+RF3_water_systems_box,P3_shulei_edge,A_min=4.0,"{""A_min"": 4.0, ""S_bank"": 15.0}",90m_stretch,2469,7408,222.24,km,channel cells with a bank cell beside them
+RF3_water_systems_box,P3_shulei_edge,S_bank=10.0,"{""A_min"": 1.0, ""S_bank"": 10.0}",90m_stretch,6115,18344,550.32,km,channel cells with a bank cell beside them
+RF3_water_systems_box,P3_shulei_edge,S_bank=25.0,"{""A_min"": 1.0, ""S_bank"": 25.0}",90m_stretch,1188,3565,106.95,km,channel cells with a bank cell beside them
+RF3_water_systems_box,P4a_berekhah_depression,primary,"{""d_min"": 2.0}",cluster,407,4024,3.622,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 205"
+RF3_water_systems_box,P4a_berekhah_depression,d_min=1.0,"{""d_min"": 1.0}",cluster,959,6036,5.432,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 351"
+RF3_water_systems_box,P4a_berekhah_depression,d_min=4.0,"{""d_min"": 4.0}",cluster,185,2504,2.254,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 110"
+RF3_water_systems_box,P4b_berekhah_runoff_site,primary,"{""A_pool"": 0.05, ""S_pool"": 5.0}",cluster,7830,52680,47.412,km2,
+RF3_water_systems_box,P4b_berekhah_runoff_site,S_pool=3.0,"{""A_pool"": 0.05, ""S_pool"": 3.0}",cluster,6492,32950,29.655,km2,
+RF3_water_systems_box,P4b_berekhah_runoff_site,S_pool=8.0,"{""A_pool"": 0.05, ""S_pool"": 8.0}",cluster,5842,74196,66.776,km2,
+RF3_water_systems_box,P4b_berekhah_runoff_site,A_pool=0.02,"{""A_pool"": 0.02, ""S_pool"": 5.0}",cluster,9127,69764,62.788,km2,
+RF3_water_systems_box,P4b_berekhah_runoff_site,A_pool=0.2,"{""A_pool"": 0.2, ""S_pool"": 5.0}",cluster,5714,34556,31.1,km2,
+RF3_water_systems_box,P5_mearah_above_nahal,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,630,8961,8.065,km2,
+RF3_water_systems_box,P5e_mearah_above_nahal_facing_east,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,302,2377,2.139,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF3_water_systems_box,P5x_cliff_any,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1325,23153,20.838,km2,cliff component without the channel condition
+RF3_water_systems_box,P5_mearah_above_nahal,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,827,10149,9.134,km2,
+RF3_water_systems_box,P5e_mearah_above_nahal_facing_east,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,412,3053,2.748,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF3_water_systems_box,P5x_cliff_any,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1325,23153,20.838,km2,cliff component without the channel condition
+RF3_water_systems_box,P5_mearah_above_nahal,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,424,7358,6.622,km2,
+RF3_water_systems_box,P5e_mearah_above_nahal_facing_east,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,207,1708,1.537,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF3_water_systems_box,P5x_cliff_any,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1325,23153,20.838,km2,cliff component without the channel condition
+RF3_water_systems_box,P5_mearah_above_nahal,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,1419,24708,22.237,km2,
+RF3_water_systems_box,P5e_mearah_above_nahal_facing_east,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,686,5972,5.375,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF3_water_systems_box,P5x_cliff_any,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,3275,66453,59.808,km2,cliff component without the channel condition
+RF3_water_systems_box,P5_mearah_above_nahal,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,139,1079,0.971,km2,
+RF3_water_systems_box,P5e_mearah_above_nahal_facing_east,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,77,454,0.409,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF3_water_systems_box,P5x_cliff_any,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,171,3203,2.883,km2,cliff component without the channel condition
+RF3_water_systems_box,P5_mearah_above_nahal,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,630,8961,8.065,km2,
+RF3_water_systems_box,P5e_mearah_above_nahal_facing_east,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,302,2377,2.139,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF3_water_systems_box,P5x_cliff_any,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,1325,23153,20.838,km2,cliff component without the channel condition
+RF3_water_systems_box,P5_mearah_above_nahal,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,630,8961,8.065,km2,
+RF3_water_systems_box,P5e_mearah_above_nahal_facing_east,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,302,2377,2.139,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF3_water_systems_box,P5x_cliff_any,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,1324,23151,20.836,km2,cliff component without the channel condition
+RF3_water_systems_box,P5_mearah_above_nahal,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,593,5581,5.023,km2,
+RF3_water_systems_box,P5e_mearah_above_nahal_facing_east,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,261,1377,1.239,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF3_water_systems_box,P5x_cliff_any,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1325,23153,20.838,km2,cliff component without the channel condition
+RF3_water_systems_box,P5_mearah_above_nahal,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,826,12939,11.645,km2,
+RF3_water_systems_box,P5e_mearah_above_nahal_facing_east,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,434,4081,3.673,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF3_water_systems_box,P5x_cliff_any,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1325,23153,20.838,km2,cliff component without the channel condition
+RF3_water_systems_box,P6_tsuq_gorge,primary,"{""A_min"": 1.0, ""V_gorge"": 0.75}",90m_stretch,1725,4386,155.24,km,
+RF3_water_systems_box,P6m_tsuq_gorge_mouth,primary,"{""A_min"": 1.0, ""V_gorge"": 0.75}",point,210,210,0,,
+RF3_water_systems_box,P6_tsuq_gorge,A_min=0.25,"{""A_min"": 0.25, ""V_gorge"": 0.75}",90m_stretch,2248,5714,202.362,km,
+RF3_water_systems_box,P6m_tsuq_gorge_mouth,A_min=0.25,"{""A_min"": 0.25, ""V_gorge"": 0.75}",point,374,374,0,,
+RF3_water_systems_box,P6_tsuq_gorge,A_min=4.0,"{""A_min"": 4.0, ""V_gorge"": 0.75}",90m_stretch,1222,3109,109.946,km,
+RF3_water_systems_box,P6m_tsuq_gorge_mouth,A_min=4.0,"{""A_min"": 4.0, ""V_gorge"": 0.75}",point,117,117,0,,
+RF3_water_systems_box,P6_tsuq_gorge,V_gorge=0.7,"{""A_min"": 1.0, ""V_gorge"": 0.7}",90m_stretch,688,1749,61.914,km,
+RF3_water_systems_box,P6m_tsuq_gorge_mouth,V_gorge=0.7,"{""A_min"": 1.0, ""V_gorge"": 0.7}",point,139,139,0,,
+RF3_water_systems_box,P6_tsuq_gorge,V_gorge=0.8,"{""A_min"": 1.0, ""V_gorge"": 0.8}",90m_stretch,3597,9185,323.764,km,
+RF3_water_systems_box,P6m_tsuq_gorge_mouth,V_gorge=0.8,"{""A_min"": 1.0, ""V_gorge"": 0.8}",point,303,303,0,,
+RF3_water_systems_box,P7_yam_shore_band,primary,"{""D_sea"": 1000.0, ""L_sea"": -395.0}",km_shoreline,54,38052,34.247,km2,shore cells 1785
+RF3_water_systems_box,P7_yam_shore_band,L_sea=-390.0,"{""D_sea"": 1000.0, ""L_sea"": -390.0}",km_shoreline,62,40451,36.406,km2,shore cells 2072
+RF3_water_systems_box,P7_yam_shore_band,L_sea=-400.0,"{""D_sea"": 1000.0, ""L_sea"": -400.0}",km_shoreline,54,38096,34.286,km2,shore cells 1789
+RF3_water_systems_box,P7_yam_shore_band,D_sea=500.0,"{""D_sea"": 500.0, ""L_sea"": -395.0}",km_shoreline,54,20266,18.239,km2,shore cells 1785
+RF3_water_systems_box,P7_yam_shore_band,D_sea=2000.0,"{""D_sea"": 2000.0, ""L_sea"": -395.0}",km_shoreline,54,73345,66.01,km2,shore cells 1785
+RF4_kohlit_R1,LAND,primary,"{""L_sea"": -395.0}",km2,2604.895,2894328,2604.895,km2,
+RF4_kohlit_R1,LAND,L_sea=-390.0,"{""L_sea"": -390.0}",km2,2598.921,2887690,2598.921,km2,
+RF4_kohlit_R1,LAND,L_sea=-400.0,"{""L_sea"": -400.0}",km2,2612.199,2902443,2612.199,km2,
+RF4_kohlit_R1,P1_nahal,primary,"{""A_min"": 1.0}",90m_stretch,24780,63250,2230.175,km,
+RF4_kohlit_R1,P1_nahal_reaches,primary,"{""A_min"": 1.0}",reach,1375,1375,2230.175,km,secondary unit; reach counts scale ~1/A_min by construction
+RF4_kohlit_R1,P3b_shulei_outlet,primary,"{""A_min"": 1.0}",point,708,708,0,,junctions 664; terminal outlets 44
+RF4_kohlit_R1,P1_nahal,A_min=0.25,"{""A_min"": 0.25}",90m_stretch,44989,114772,4049.041,km,
+RF4_kohlit_R1,P1_nahal_reaches,A_min=0.25,"{""A_min"": 0.25}",reach,5130,5130,4049.041,km,secondary unit; reach counts scale ~1/A_min by construction
+RF4_kohlit_R1,P3b_shulei_outlet,A_min=0.25,"{""A_min"": 0.25}",point,2593,2593,0,,junctions 2515; terminal outlets 78
+RF4_kohlit_R1,P1_nahal,A_min=4.0,"{""A_min"": 4.0}",90m_stretch,13068,33355,1176.13,km,
+RF4_kohlit_R1,P1_nahal_reaches,A_min=4.0,"{""A_min"": 4.0}",reach,336,336,1176.13,km,secondary unit; reach counts scale ~1/A_min by construction
+RF4_kohlit_R1,P3b_shulei_outlet,A_min=4.0,"{""A_min"": 4.0}",point,177,177,0,,junctions 153; terminal outlets 24
+RF4_kohlit_R1,P2_nahal_gadol,primary,"{""A_great"": 100.0}",90m_stretch,2050,5196,184.493,km,distinct connected trunk systems in region: 150
+RF4_kohlit_R1,P2_nahal_gadol,A_great=50.0,"{""A_great"": 50.0}",90m_stretch,3752,9533,337.679,km,distinct connected trunk systems in region: 157
+RF4_kohlit_R1,P2_nahal_gadol,A_great=200.0,"{""A_great"": 200.0}",90m_stretch,860,2160,77.376,km,distinct connected trunk systems in region: 127
+RF4_kohlit_R1,P3_shulei_edge,primary,"{""A_min"": 1.0, ""S_bank"": 15.0}",90m_stretch,7473,22419,672.57,km,channel cells with a bank cell beside them
+RF4_kohlit_R1,P3_shulei_edge,A_min=0.25,"{""A_min"": 0.25, ""S_bank"": 15.0}",90m_stretch,12907,38721,1161.63,km,channel cells with a bank cell beside them
+RF4_kohlit_R1,P3_shulei_edge,A_min=4.0,"{""A_min"": 4.0, ""S_bank"": 15.0}",90m_stretch,4137,12411,372.33,km,channel cells with a bank cell beside them
+RF4_kohlit_R1,P3_shulei_edge,S_bank=10.0,"{""A_min"": 1.0, ""S_bank"": 10.0}",90m_stretch,10805,32416,972.48,km,channel cells with a bank cell beside them
+RF4_kohlit_R1,P3_shulei_edge,S_bank=25.0,"{""A_min"": 1.0, ""S_bank"": 25.0}",90m_stretch,2411,7232,216.96,km,channel cells with a bank cell beside them
+RF4_kohlit_R1,P4a_berekhah_depression,primary,"{""d_min"": 2.0}",cluster,489,23685,21.317,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 213"
+RF4_kohlit_R1,P4a_berekhah_depression,d_min=1.0,"{""d_min"": 1.0}",cluster,1297,27752,24.977,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 441"
+RF4_kohlit_R1,P4a_berekhah_depression,d_min=4.0,"{""d_min"": 4.0}",cluster,211,21251,19.126,km2,"clusters of >=3 cells (resolvable, >=0.0027 km2): 135"
+RF4_kohlit_R1,P4b_berekhah_runoff_site,primary,"{""A_pool"": 0.05, ""S_pool"": 5.0}",cluster,13253,131961,118.765,km2,
+RF4_kohlit_R1,P4b_berekhah_runoff_site,S_pool=3.0,"{""A_pool"": 0.05, ""S_pool"": 3.0}",cluster,11903,89448,80.503,km2,
+RF4_kohlit_R1,P4b_berekhah_runoff_site,S_pool=8.0,"{""A_pool"": 0.05, ""S_pool"": 8.0}",cluster,9926,173251,155.926,km2,
+RF4_kohlit_R1,P4b_berekhah_runoff_site,A_pool=0.02,"{""A_pool"": 0.02, ""S_pool"": 5.0}",cluster,15495,184809,166.328,km2,
+RF4_kohlit_R1,P4b_berekhah_runoff_site,A_pool=0.2,"{""A_pool"": 0.2, ""S_pool"": 5.0}",cluster,9507,82427,74.184,km2,
+RF4_kohlit_R1,P5_mearah_above_nahal,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1272,20592,18.533,km2,
+RF4_kohlit_R1,P5e_mearah_above_nahal_facing_east,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,650,5080,4.572,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF4_kohlit_R1,P5x_cliff_any,primary,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,2848,63223,56.901,km2,cliff component without the channel condition
+RF4_kohlit_R1,P5_mearah_above_nahal,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1816,25578,23.02,km2,
+RF4_kohlit_R1,P5e_mearah_above_nahal_facing_east,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,954,7335,6.602,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF4_kohlit_R1,P5x_cliff_any,A_min=0.25,"{""A_min"": 0.25, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,2848,63223,56.901,km2,cliff component without the channel condition
+RF4_kohlit_R1,P5_mearah_above_nahal,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,853,16093,14.484,km2,
+RF4_kohlit_R1,P5e_mearah_above_nahal_facing_east,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,434,3352,3.017,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF4_kohlit_R1,P5x_cliff_any,A_min=4.0,"{""A_min"": 4.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,2848,63223,56.901,km2,cliff component without the channel condition
+RF4_kohlit_R1,P5_mearah_above_nahal,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,2389,48351,43.516,km2,
+RF4_kohlit_R1,P5e_mearah_above_nahal_facing_east,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,1302,11899,10.709,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF4_kohlit_R1,P5x_cliff_any,S_cliff=25.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 25.0}",cluster,5526,165099,148.589,km2,cliff component without the channel condition
+RF4_kohlit_R1,P5_mearah_above_nahal,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,244,2633,2.37,km2,
+RF4_kohlit_R1,P5e_mearah_above_nahal_facing_east,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,141,965,0.868,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF4_kohlit_R1,P5x_cliff_any,S_cliff=40.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 30.0, ""S_cliff"": 40.0}",cluster,383,8207,7.386,km2,cliff component without the channel condition
+RF4_kohlit_R1,P5_mearah_above_nahal,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,1272,20592,18.533,km2,
+RF4_kohlit_R1,P5e_mearah_above_nahal_facing_east,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,650,5080,4.572,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF4_kohlit_R1,P5x_cliff_any,H_cliff=20.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 20.0, ""S_cliff"": 30.0}",cluster,2848,63223,56.901,km2,cliff component without the channel condition
+RF4_kohlit_R1,P5_mearah_above_nahal,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,1265,20582,18.524,km2,
+RF4_kohlit_R1,P5e_mearah_above_nahal_facing_east,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,648,5078,4.57,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF4_kohlit_R1,P5x_cliff_any,H_cliff=50.0,"{""A_min"": 1.0, ""D_cliff"": 150.0, ""H_cliff"": 50.0, ""S_cliff"": 30.0}",cluster,2839,63210,56.889,km2,cliff component without the channel condition
+RF4_kohlit_R1,P5_mearah_above_nahal,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1202,12728,11.455,km2,
+RF4_kohlit_R1,P5e_mearah_above_nahal_facing_east,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,537,3005,2.704,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF4_kohlit_R1,P5x_cliff_any,D_cliff=90.0,"{""A_min"": 1.0, ""D_cliff"": 90.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,2848,63223,56.901,km2,cliff component without the channel condition
+RF4_kohlit_R1,P5_mearah_above_nahal,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,1678,31504,28.354,km2,
+RF4_kohlit_R1,P5e_mearah_above_nahal_facing_east,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,945,9186,8.267,km2,"P5 cells whose downslope aspect is 45-135 deg (entries 25, 26 ""facing east"")"
+RF4_kohlit_R1,P5x_cliff_any,D_cliff=300.0,"{""A_min"": 1.0, ""D_cliff"": 300.0, ""H_cliff"": 30.0, ""S_cliff"": 30.0}",cluster,2848,63223,56.901,km2,cliff component without the channel condition
+RF4_kohlit_R1,P6_tsuq_gorge,primary,"{""A_min"": 1.0, ""V_gorge"": 0.75}",90m_stretch,3299,8416,296.899,km,
+RF4_kohlit_R1,P6m_tsuq_gorge_mouth,primary,"{""A_min"": 1.0, ""V_gorge"": 0.75}",point,378,378,0,,
+RF4_kohlit_R1,P6_tsuq_gorge,A_min=0.25,"{""A_min"": 0.25, ""V_gorge"": 0.75}",90m_stretch,4532,11556,407.838,km,
+RF4_kohlit_R1,P6m_tsuq_gorge_mouth,A_min=0.25,"{""A_min"": 0.25, ""V_gorge"": 0.75}",point,683,683,0,,
+RF4_kohlit_R1,P6_tsuq_gorge,A_min=4.0,"{""A_min"": 4.0, ""V_gorge"": 0.75}",90m_stretch,2196,5595,197.668,km,
+RF4_kohlit_R1,P6m_tsuq_gorge_mouth,A_min=4.0,"{""A_min"": 4.0, ""V_gorge"": 0.75}",point,196,196,0,,
+RF4_kohlit_R1,P6_tsuq_gorge,V_gorge=0.7,"{""A_min"": 1.0, ""V_gorge"": 0.7}",90m_stretch,1581,4038,142.334,km,
+RF4_kohlit_R1,P6m_tsuq_gorge_mouth,V_gorge=0.7,"{""A_min"": 1.0, ""V_gorge"": 0.7}",point,256,256,0,,
+RF4_kohlit_R1,P6_tsuq_gorge,V_gorge=0.8,"{""A_min"": 1.0, ""V_gorge"": 0.8}",90m_stretch,6184,15783,556.53,km,
+RF4_kohlit_R1,P6m_tsuq_gorge_mouth,V_gorge=0.8,"{""A_min"": 1.0, ""V_gorge"": 0.8}",point,493,493,0,,
+RF4_kohlit_R1,P7_yam_shore_band,primary,"{""D_sea"": 1000.0, ""L_sea"": -395.0}",km_shoreline,65,50099,45.089,km2,shore cells 2164
+RF4_kohlit_R1,P7_yam_shore_band,L_sea=-390.0,"{""D_sea"": 1000.0, ""L_sea"": -390.0}",km_shoreline,69,52133,46.92,km2,shore cells 2316
+RF4_kohlit_R1,P7_yam_shore_band,L_sea=-400.0,"{""D_sea"": 1000.0, ""L_sea"": -400.0}",km_shoreline,67,50657,45.591,km2,shore cells 2236
+RF4_kohlit_R1,P7_yam_shore_band,D_sea=500.0,"{""D_sea"": 500.0, ""L_sea"": -395.0}",km_shoreline,65,25478,22.93,km2,shore cells 2164
+RF4_kohlit_R1,P7_yam_shore_band,D_sea=2000.0,"{""D_sea"": 2000.0, ""L_sea"": -395.0}",km_shoreline,65,100017,90.015,km2,shore cells 2164

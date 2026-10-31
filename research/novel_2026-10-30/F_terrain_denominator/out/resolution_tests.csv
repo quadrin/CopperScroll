@@ -1,0 +1,5 @@
+test,n,recall,base_rate,passed,note
+RT_cave_cliff,359,0.649,0.115,True,"recorded caves (precision<=50 m) within 60 m of a P5x cliff cell, RF2"
+RT_cave_P5_informative,359,0.32,0.04,,informative
+RT_dam_channel,32,0.281,0.11,False,"dam rows (precision<=50 m) within 60 m, RF3"
+RT_pool_P4_informative,249,0.221,0.231,,"reservoir_pool rows (precision<=50 m) within 60 m, RF3"
