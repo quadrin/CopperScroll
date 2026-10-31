@@ -1,7 +1,7 @@
 # atq41, reader A, group g3: keying log
 
 - Start: 2026-10-31T22:02:54Z
-- Finish: 2026-10-31T22:24Z
+- Finish: 2026-10-31T22:23Z
 - Output: `keyed/atq41_A_g3.csv`. It has 239 rows. 141 of them are top-level caves or sites; the other 98 are chambers or other sub-features.
 
 ## Read in full (pypdf text layer, checked against page renders)
