@@ -105,10 +105,31 @@ All three branches pass all checks. No run changed a rating, the outcome ledger,
 - **Context, not used in the test.** The palaeographic date of 3Q15 (Cross, about 25–75 CE; Milik, about 100 CE) and the Cave 3 finds (DJD III, 1962). The worker cited these but did not re-read the pages.
 - **What it changes.** Nothing moves. Period labels in the survey literature cannot date the list.
 
+### I2. Lane I reopened on the three named sources (31 October 2026)
+
+- **Branch.** `claude/novel-2026-10-30-I2` (96eeb1a). Freeze commit ef1254c, protocol SHA-256 0fb3cf282d2c1b85ce02a3d3cd99d6e94fedbc1face3144cde0293a64cf4d417. Result commit 96eeb1a.
+- **Orchestrator checks.** All pass:
+  - The freeze commit comes before the result commit, and the protocol hash agrees.
+  - After the freeze, only the NOTE and the `results/` files changed.
+  - Only the I2 folder changed. No image is in the repository.
+  - From Hütteroth, only facts are in the repository (names, type codes, grid references, pages).
+  - The remote branch head is the same commit as the local branch head.
+- **Sources.** Kaftor va-Ferach (Luncz 1897), Hütteroth and Abdulfattah 1977 (gazetteer of liwāʾ Quds, Nāblus and ʿAjlūn), Khitrowo 1889 (Abbot Daniel and the Russian pilgrims of 1389–1561). 718 primary records.
+- **Rules.** Lane I's frozen scorer, chance baseline and pass marks, without change. The only additions are Hebrew-script and transliteration rules, the Hütteroth grid placement, and the input hashes.
+
+  | Test | Observed | Random mean | Random p99 | p | Result |
+  |---|---|---|---|---|---|
+  | C1, all 26 test names | 21 | 47.3 | 98 | 0.96 | Rejected |
+  | C2, non-biblical names | 14 | 22.7 | 62 | 0.72 | Rejected |
+  | Tomb sub-test | 1 | 0.18 | 2 | 0.17 | Not identifiable (tomb controls 1 of 3) |
+
+- **Controls.** Place controls 6 of 8, exactly the pass mark. Three Anathoth hits are sound-alikes. Without them, 5 real controls were found. Thus the matcher is less sensitive on these sources than on lane I's sources.
+- **What it changes.** Nothing moves. Lane I's result stands. The three sources that lane I named are now used.
+
 ## Further AI-only sessions
 
 - **H:** Justified for one task only: to combine these priors with B2's image likelihoods under a combination rule that is frozen first. More language-model tuning is not justified.
-- **I:** Not justified for medieval name survival. Only the blocked Hebrew and Ottoman sources could add a different kind of record.
+- **I:** Not justified for medieval name survival. I2 used the Hebrew, Ottoman and Russian sources that were blocked for lane I, and the result did not move.
 - **J:** Not justified. If you code the same period text again, you add no dated installations.
 
 ## Fieldwork wish list
@@ -122,7 +143,7 @@ The Drive document "Wish list — fieldwork and equipment (after online work is 
 ## Reopening conditions
 
 - **H:** B2 image likelihoods for the same loci, and a combination rule that is frozen before the combination.
-- **I:** A readable text of *Kaftor va-Ferach*, the defter name lists, or an unrestricted PPTS vol. 4.
+- **I:** These sources are now used (I2). The remaining condition is a hand-checked grid table for the 245 Hütteroth villages that have no grid in the text layer (for example Bayt Laḥm and ʿAyn Silwān), or a new Hebrew or Arabic text of 1100–1600 with local names in the five regions.
 - **J:** Construction or abandonment dates for eligible installations at the candidate places, from stratigraphy or from samples, that are not period labels.
 
 ## Licences
