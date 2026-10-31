@@ -1,0 +1,292 @@
+candidate_id,split,rule,column,secure_answer,placed,method,cut,frame,box_x0,box_y0,box_x1,box_y1,x_ref,y_ref,lh88,reg_distinctiveness,reg_local_median_lh,refine_dx,refine_dy,refine_resp,refine_applied,n_lights,lights,confidence,ps_valid_frac
+LC-CBK-001,heldout,BK,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-002,heldout,BK,I,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1680.6,1481.4,1835.8,1636.7,1758.2,1559.1,155.2,1.933,0.062,0.0,0.0,0.004,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.996
+LC-CBK-003,train,BK,I,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,2.0,RLT,1486.3,2351.9,1645.5,2511.1,1565.9,2431.5,159.2,1.931,0.094,0.0,0.0,0.011,False,4.0,RLT;RLB;RRB;RRT,low,0.994
+LC-CBK-004,train,BK,I,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-005,heldout,BK,I,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-008,heldout,BK,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-009,train,BK,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-010,train,BK,II,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1675.2,2276.2,1828.0,2428.9,1751.6,2352.6,152.7,2.969,0.025,0.0,0.0,0.035,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CBK-011,train,BK,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-012,heldout,BK,II,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1753.2,2870.7,1906.0,3023.5,1829.6,2947.1,152.7,2.969,0.025,0.0,0.0,0.04,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.999
+LC-CBK-014,train,BK,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-016,heldout,BK,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-019,train,BK,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-022,train,BK,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-030,train,BK,VI,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-051,train,BK,X,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-060,heldout,BK,II,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1582.0,2878.7,1734.8,3031.5,1658.4,2955.1,152.7,2.969,0.025,0.0,0.0,0.007,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CBK-064,train,BK,II,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-065,train,BK,II,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-068,train,BK,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-069,train,BK,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CBK-072,heldout,BK,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-002,train,HE_HET,X,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-003,heldout,HE_HET,I,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-004,train,HE_HET,I,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,4.0,RT,1526.6,1208.4,1690.0,1371.8,1608.3,1290.1,163.4,1.819,0.019,0.0,0.0,0.0,False,2.0,RT;RB,low,0.0
+LC-CHH-005,train,HE_HET,I,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1259.8,1468.8,1415.0,1624.1,1337.4,1546.4,155.2,1.933,0.062,0.0,0.0,0.008,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.995
+LC-CHH-006,heldout,HE_HET,I,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,2.0,RLT,1613.6,2347.7,1772.9,2506.9,1693.2,2427.3,159.2,1.931,0.094,0.0,0.0,0.0,False,4.0,RLT;RLB;RRB;RRT,low,0.828
+LC-CHH-007,train,HE_HET,I,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1632.2,2097.5,1787.5,2252.8,1709.8,2175.1,155.2,1.933,0.062,0.0,0.0,0.018,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.998
+LC-CHH-009,train,HE_HET,I,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-012,heldout,HE_HET,I,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1419.9,3077.9,1575.1,3233.2,1497.5,3155.5,155.2,1.933,0.062,0.0,0.0,0.008,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,1.0
+LC-CHH-014,heldout,HE_HET,II,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-015,heldout,HE_HET,II,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1868.8,779.2,2021.5,932.0,1945.2,855.6,152.7,2.969,0.025,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.84
+LC-CHH-019,train,HE_HET,II,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-020,train,HE_HET,II,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1630.4,3436.0,1783.2,3588.7,1706.8,3512.4,152.7,2.969,0.025,0.0,0.0,0.059,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CHH-021,train,HE_HET,II,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-023,train,HE_HET,III,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-024,heldout,HE_HET,III,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,8.0,RCT,1294.0,844.8,1463.0,1013.8,1378.5,929.3,169.0,2.495,0.071,0.0,0.0,0.007,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CHH-027,train,HE_HET,III,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1480.5,1798.8,1649.5,1967.8,1565.0,1883.3,169.0,1.957,0.095,0.0,0.0,0.002,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.982
+LC-CHH-028,heldout,HE_HET,III,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-029,train,HE_HET,III,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,8.0,RCT,1643.2,1937.2,1812.2,2106.2,1727.7,2021.7,169.0,2.495,0.071,0.0,0.0,-0.01,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CHH-030,heldout,HE_HET,III,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,8.0,RCT,1742.2,2221.1,1911.2,2390.1,1826.7,2305.6,169.0,2.495,0.071,0.0,0.0,-0.005,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CHH-031,train,HE_HET,III,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1305.5,3382.7,1474.5,3551.7,1390.0,3467.2,169.0,1.957,0.095,0.0,0.0,-0.014,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.999
+LC-CHH-034,train,HE_HET,IV,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-036,train,HE_HET,V,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,11.0,RCT,1464.8,3751.5,1660.0,3946.7,1562.4,3849.1,195.3,2.953,0.058,0.0,0.0,0.01,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.999
+LC-CHH-038,train,HE_HET,VI,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-041,train,HE_HET,VI,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-042,heldout,HE_HET,VI,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-052,train,HE_HET,IX,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1884.4,2827.8,2015.4,2958.8,1949.9,2893.3,131.0,3.084,0.023,0.0,0.0,0.022,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.984
+LC-CHH-053,heldout,HE_HET,IX,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1365.3,2836.3,1496.3,2967.3,1430.8,2901.8,131.0,3.084,0.023,0.0,0.0,0.009,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CHH-056,heldout,HE_HET,X,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,2036.7,576.9,2177.2,717.4,2106.9,647.1,140.5,2.485,0.04,0.0,0.0,-0.028,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CHH-057,train,HE_HET,X,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1855.3,551.9,1995.8,692.4,1925.5,622.1,140.5,2.485,0.04,0.0,0.0,0.01,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CHH-059,train,HE_HET,X,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,17.0,RT,1178.2,2664.5,1326.1,2812.4,1252.1,2738.5,147.9,3.104,0.031,0.0,0.0,0.002,False,2.0,RT;RB,medium,0.0
+LC-CHH-060,heldout,HE_HET,X,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-064,heldout,HE_HET,I,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-065,train,HET_TAW,I,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-067,heldout,HE_HET,II,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-068,train,HE_HET,II,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-069,train,HET_TAW,II,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-070,train,HET_TAW,II,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-072,train,HET_TAW,II,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-075,heldout,HE_HET,II,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1282.3,3422.4,1435.0,3575.1,1358.6,3498.7,152.7,2.969,0.025,0.0,0.0,-0.024,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.96
+LC-CHH-077,heldout,HE_HET,II,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-081,train,HET_TAW,III,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-082,heldout,HE_HET,III,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-083,train,HE_HET,III,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,8.0,RCT,1144.2,1942.8,1313.2,2111.8,1228.7,2027.3,169.0,2.495,0.071,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.837
+LC-CHH-084,train,HE_HET,III,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1748.3,2114.1,1917.3,2283.1,1832.8,2198.6,169.0,1.957,0.095,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.797
+LC-CHH-085,train,HE_HET,III,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1708.7,3437.5,1877.7,3606.5,1793.2,3522.0,169.0,1.957,0.095,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.815
+LC-CHH-086,train,HET_TAW,IV,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-087,heldout,HE_HET,IV,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-093,heldout,HE_HET,VI,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-094,heldout,HET_TAW,VI,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-096,train,HE_HET,VI,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-097,train,HE_HET,VI,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-108,heldout,HET_TAW,IX,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-110,train,HE_HET,IX,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-113,train,HET_TAW,X,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1998.8,2633.3,2139.3,2773.8,2069.1,2703.6,140.5,2.485,0.04,0.0,0.0,0.011,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CHH-114,heldout,HET_TAW,X,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,17.0,RT,1058.4,3111.7,1206.3,3259.6,1132.4,3185.6,147.9,3.104,0.031,0.0,0.0,0.0,False,2.0,RT;RB,medium,0.0
+LC-CHH-116,train,HET_TAW,I,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-117,heldout,HET_TAW,X,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-118,train,HET_TAW,I,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,2.0,RLT,1150.3,1097.1,1309.5,1256.3,1229.9,1176.7,159.2,1.931,0.094,0.0,0.0,0.0,False,4.0,RLT;RLB;RRB;RRT,low,0.643
+LC-CHH-119,train,HET_TAW,I,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1478.5,1197.0,1633.8,1352.3,1556.2,1274.6,155.2,1.933,0.062,0.0,0.0,0.015,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.998
+LC-CHH-120,heldout,HET_TAW,I,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,4.0,RT,1495.8,1779.2,1659.2,1942.6,1577.5,1860.9,163.4,1.819,0.019,0.0,0.0,0.009,False,2.0,RT;RB,low,0.0
+LC-CHH-121,heldout,HET_TAW,I,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,4.0,RT,1154.6,2782.6,1318.0,2946.0,1236.3,2864.3,163.4,1.819,0.019,0.0,0.0,0.0,False,2.0,RT;RB,low,0.0
+LC-CHH-122,train,HET_TAW,II,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-123,train,HET_TAW,II,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1345.0,839.8,1497.7,992.6,1421.3,916.2,152.7,2.969,0.025,0.0,0.0,0.007,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+LC-CHH-124,heldout,HET_TAW,II,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-126,train,HET_TAW,III,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-127,heldout,HET_TAW,III,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1112.8,1168.7,1281.8,1337.7,1197.3,1253.2,169.0,1.957,0.095,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.988
+LC-CHH-128,train,HET_TAW,III,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-129,train,HET_TAW,III,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,8.0,RCT,1159.3,1371.3,1328.3,1540.3,1243.8,1455.8,169.0,2.495,0.071,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.942
+LC-CHH-130,train,HET_TAW,III,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1541.9,1461.7,1710.9,1630.7,1626.4,1546.2,169.0,1.957,0.095,0.0,0.0,0.02,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.992
+LC-CHH-131,heldout,HET_TAW,III,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-132,train,HET_TAW,III,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1648.5,1816.9,1817.5,1985.9,1733.0,1901.4,169.0,1.957,0.095,0.0,0.0,-0.014,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.894
+LC-CHH-133,heldout,HET_TAW,III,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,8.0,RCT,1793.9,1941.0,1962.9,2110.0,1878.4,2025.5,169.0,2.495,0.071,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.931
+LC-CHH-134,train,HET_TAW,III,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-135,train,HET_TAW,III,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1583.9,2735.5,1752.9,2904.5,1668.4,2820.0,169.0,1.957,0.095,0.0,0.0,0.08,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.925
+LC-CHH-136,train,HET_TAW,III,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1489.8,3420.9,1658.8,3589.9,1574.3,3505.4,169.0,1.957,0.095,0.0,0.0,-0.006,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.936
+LC-CHH-138,heldout,HET_TAW,IV,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-139,train,HET_TAW,IV,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-140,train,HET_TAW,IV,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-142,train,HET_TAW,V,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-144,heldout,HET_TAW,VI,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-145,train,HET_TAW,VI,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+LC-CHH-156,train,HET_TAW,X,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1414.9,589.3,1555.4,729.8,1485.1,659.6,140.5,2.485,0.04,0.0,0.0,-0.01,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.904
+LC-CHH-157,train,HET_TAW,X,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-I1-0-0,train_w2f,,I,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-I1-0-1,train_w2f,,I,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,2.0,RLT,1576.1,790.7,1735.3,950.0,1655.7,870.4,159.2,1.931,0.094,0.0,0.0,-0.019,False,4.0,RLT;RLB;RRB;RRT,low,0.853
+W2F-I1-0-4,train_w2f,,I,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,2.0,RLT,1258.6,750.8,1417.8,910.1,1338.2,830.5,159.2,1.931,0.094,0.0,0.0,-0.002,False,4.0,RLT;RLB;RRB;RRT,low,0.896
+W2F-I1-1-1,train_w2f,,I,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-I1-2-1,train_w2f,,I,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1229.4,556.9,1384.7,712.1,1307.0,634.5,155.2,1.933,0.062,0.0,0.0,0.068,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.995
+W2F-I2-3-3,train_w2f,,I,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,4.0,RT,1457.0,882.6,1620.4,1046.0,1538.7,964.3,163.4,1.819,0.019,0.0,0.0,0.02,False,2.0,RT;RB,low,0.0
+W2F-I3-1-2,train_w2f,,I,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,2.0,RLT,1036.1,1400.8,1195.3,1560.0,1115.7,1480.4,159.2,1.931,0.094,0.0,0.0,0.0,False,4.0,RLT;RLB;RRB;RRT,low,0.377
+W2F-I3-3-0,train_w2f,,I,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1363.5,1207.1,1518.8,1362.3,1441.1,1284.7,155.2,1.933,0.062,0.0,0.0,0.016,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.998
+W2F-I3-4-1,train_w2f,,I,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-I4-1-0,train_w2f,,I,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,2.0,RLT,1200.2,1724.2,1359.5,1883.5,1279.8,1803.9,159.2,1.931,0.094,0.0,0.0,0.011,False,4.0,RLT;RLB;RRB;RRT,low,0.768
+W2F-I4-1-1,train_w2f,,I,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,2.0,RLT,1081.8,1708.5,1241.1,1867.7,1161.4,1788.1,159.2,1.931,0.094,0.0,0.0,0.0,False,4.0,RLT;RLB;RRB;RRT,low,0.473
+W2F-I5-0-0,train_w2f,,I,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-I5-3-2,train_w2f,,I,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-I6-2-1,train_w2f,,I,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-I7-3-1,train_w2f,,I,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1296.9,2380.9,1452.2,2536.1,1374.6,2458.5,155.2,1.933,0.062,0.0,0.0,-0.023,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.998
+W2F-I8-3-0,train_w2f,,I,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1389.3,2710.1,1544.5,2865.4,1466.9,2787.8,155.2,1.933,0.062,0.0,0.0,-0.009,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,1.0
+W2F-I8-3-1,train_w2f,,I,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1278.4,2708.7,1433.6,2864.0,1356.0,2786.4,155.2,1.933,0.062,0.0,0.0,0.006,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.993
+W2F-I11-4-0,train_w2f,,I,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1171.9,3370.6,1327.2,3525.9,1249.6,3448.3,155.2,1.933,0.062,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.994
+W2F-I12-0-3,train_w2f,,I,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,2.0,RLT,1471.4,3910.5,1630.7,4069.7,1551.1,3990.1,159.2,1.931,0.094,0.0,0.0,0.006,False,4.0,RLT;RLB;RRB;RRT,low,0.985
+W2F-I13-4-0,train_w2f,,I,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,3.0,RCT,1297.5,3958.7,1452.7,4113.9,1375.1,4036.3,155.2,1.933,0.062,0.0,0.0,0.013,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.999
+W2F-II1-0-1,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II1-2-1,train_w2f,,II,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II2-0-0,train_w2f,,II,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II2-0-1,train_w2f,,II,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II3-0-0,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II3-1-0,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II3-1-2,train_w2f,,II,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II3-4-0,train_w2f,,II,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1570.2,1439.9,1722.9,1592.7,1646.6,1516.3,152.7,2.969,0.025,0.0,0.0,0.027,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-II3-4-3,train_w2f,,II,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1362.2,1429.0,1514.9,1581.7,1438.6,1505.3,152.7,2.969,0.025,0.0,0.0,0.023,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-II4-1-2,train_w2f,,II,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II4-1-4,train_w2f,,II,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II4-2-1,train_w2f,,II,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II4-2-2,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II4-4-1,train_w2f,,II,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1824.7,1712.9,1977.4,1865.7,1901.0,1789.3,152.7,2.969,0.025,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.97
+W2F-II5-0-0,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II5-2-1,train_w2f,,II,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II5-2-3,train_w2f,,II,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II5-4-1,train_w2f,,II,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1648.6,2003.5,1801.3,2156.3,1725.0,2079.9,152.7,2.969,0.025,0.0,0.0,-0.002,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-II5-4-2,train_w2f,,II,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1556.1,1992.9,1708.9,2145.7,1632.5,2069.3,152.7,2.969,0.025,0.0,0.0,0.064,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-II5-4-3,train_w2f,,II,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,6.0,RCT,1454.3,2020.6,1607.0,2173.3,1530.6,2097.0,152.7,2.969,0.025,0.0,0.0,0.002,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-II6-0-0,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II6-4-0,train_w2f,,II,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II6-4-1,train_w2f,,II,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II7-0-1,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II9-0-1,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II10-0-1,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II11-0-0,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II11-1-0,train_w2f,,II,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II11-2-0,train_w2f,,II,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II11-4-0,train_w2f,,II,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II12-0-0,train_w2f,,II,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-II12-0-3,train_w2f,,II,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III3-2-0,train_w2f,,III,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III4-1-0,train_w2f,,III,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,7.0,RCT,1383.1,1466.5,1552.1,1635.5,1467.6,1551.0,169.0,1.957,0.095,0.0,0.0,0.023,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,low,0.999
+W2F-III5-0-0,train_w2f,,III,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III6-5-0,train_w2f,,III,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,8.0,RCT,1612.4,2242.1,1781.4,2411.1,1696.9,2326.6,169.0,2.495,0.071,0.0,0.0,-0.016,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-III7-0-0,train_w2f,,III,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III7-0-1,train_w2f,,III,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III8-0-0,train_w2f,,III,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III10-0-0,train_w2f,,III,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III11-2-4,train_w2f,,III,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,8.0,RCT,1166.0,3834.0,1335.0,4003.0,1250.5,3918.5,169.0,2.495,0.071,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.923
+W2F-III12-1-3,train_w2f,,III,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III12-2-0,train_w2f,,III,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III12-2-1,train_w2f,,III,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III12-2-2,train_w2f,,III,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,8.0,RCT,1577.9,4260.1,1746.9,4429.1,1662.4,4344.6,169.0,2.495,0.071,0.0,0.0,0.022,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.89
+W2F-III13-3-0,train_w2f,,III,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-III13-3-1,train_w2f,,III,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV1-0-1,train_w2f,,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV1-4-0,train_w2f,,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV3-3-1,train_w2f,,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV4-0-3,train_w2f,,IV,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV4-3-0,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV5-0-0,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV5-0-1,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV6-0-0,train_w2f,,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV6-3-1,train_w2f,,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV9-0-0,train_w2f,,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV10-1-0,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV10-2-0,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV10-2-1,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV10-3-2,train_w2f,,IV,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV11-0-0,train_w2f,,IV,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV11-3-0,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV11-3-1,train_w2f,,IV,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV12-1-0,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV14-0-2,train_w2f,,IV,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV14-2-0,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IV14-2-1,train_w2f,,IV,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V1-0-0,train_w2f,,V,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V1-1-2,train_w2f,,V,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V4-1-0,train_w2f,,V,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V4-2-0,train_w2f,,V,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,11.0,RCT,1958.5,1471.5,2153.8,1666.8,2056.2,1569.2,195.3,2.953,0.058,0.0,0.0,0.0,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.997
+W2F-V4-2-1,train_w2f,,V,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,11.0,RCT,1754.3,1462.9,1949.6,1658.1,1851.9,1560.5,195.3,2.953,0.058,0.0,0.0,0.023,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.998
+W2F-V6-2-0,train_w2f,,V,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,11.0,RCT,1608.3,2054.5,1803.6,2249.8,1705.9,2152.2,195.3,2.953,0.058,0.0,0.0,0.014,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-V8-1-0,train_w2f,,V,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V8-1-1,train_w2f,,V,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V9-2-0,train_w2f,,V,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V9-3-0,train_w2f,,V,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,11.0,RCT,1691.8,3007.5,1887.1,3202.7,1789.5,3105.1,195.3,2.953,0.058,0.0,0.0,-0.007,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-V11-1-0,train_w2f,,V,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V12-2-1,train_w2f,,V,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,11.0,RCT,1296.4,3773.5,1491.7,3968.7,1394.1,3871.1,195.3,2.953,0.058,0.0,0.0,0.01,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.999
+W2F-V13-0-0,train_w2f,,V,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V13-0-1,train_w2f,,V,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V13-0-4,train_w2f,,V,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-V14-3-0,train_w2f,,V,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,11.0,RCT,1386.5,4254.8,1581.8,4450.1,1484.1,4352.5,195.3,2.953,0.058,0.0,0.0,0.018,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.995
+W2F-V14-3-1,train_w2f,,V,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,11.0,RCT,1143.2,4241.4,1338.5,4436.7,1240.8,4339.0,195.3,2.953,0.058,0.0,0.0,0.064,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.976
+W2F-VI5-3-0,train_w2f,,VI,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI5-3-2,train_w2f,,VI,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI6-0-0,train_w2f,,VI,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI6-0-1,train_w2f,,VI,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI7-0-0,train_w2f,,VI,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI8-1-0,train_w2f,,VI,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI10-1-0,train_w2f,,VI,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI10-2-0,train_w2f,,VI,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI10-2-1,train_w2f,,VI,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI11-0-0,train_w2f,,VI,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI11-1-0,train_w2f,,VI,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI11-1-3,train_w2f,,VI,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI11-2-0,train_w2f,,VI,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI13-0-1,train_w2f,,VI,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI13-2-0,train_w2f,,VI,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI13-2-1,train_w2f,,VI,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI14-0-0,train_w2f,,VI,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI14-2-1,train_w2f,,VI,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-VI14-2-3,train_w2f,,VI,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX1-0-0,train_w2f,,IX,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX1-0-3,train_w2f,,IX,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,2248.3,590.3,2379.3,721.3,2313.8,655.8,131.0,3.084,0.023,0.0,0.0,-0.006,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.999
+W2F-IX1-2-0,train_w2f,,IX,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1367.5,571.0,1498.5,702.0,1433.0,636.5,131.0,3.084,0.023,0.0,0.0,0.006,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-IX2-0-3,train_w2f,,IX,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,2218.6,813.0,2349.6,944.0,2284.1,878.5,131.0,3.084,0.023,0.0,0.0,0.025,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.999
+W2F-IX2-6-2,train_w2f,,IX,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX3-1-2,train_w2f,,IX,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1927.9,966.6,2058.9,1097.6,1993.4,1032.1,131.0,3.084,0.023,0.0,0.0,0.026,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.999
+W2F-IX4-2-0,train_w2f,,IX,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1332.9,1150.6,1463.9,1281.6,1398.4,1216.1,131.0,3.084,0.023,0.0,0.0,0.01,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-IX6-1-0,train_w2f,,IX,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1094.7,1689.4,1225.7,1820.4,1160.2,1754.9,131.0,3.084,0.023,0.0,0.0,0.001,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.985
+W2F-IX6-1-1,train_w2f,,IX,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX7-0-0,train_w2f,,IX,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,2366.6,1928.3,2497.6,2059.3,2432.1,1993.8,131.0,3.084,0.023,0.0,0.0,-0.007,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-IX7-1-0,train_w2f,,IX,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1769.9,1913.5,1900.9,2044.5,1835.4,1979.0,131.0,3.084,0.023,0.0,0.0,0.009,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.997
+W2F-IX7-1-1,train_w2f,,IX,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1632.5,1914.1,1763.5,2045.1,1698.0,1979.6,131.0,3.084,0.023,0.0,0.0,-0.03,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-IX8-0-0,train_w2f,,IX,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,2379.0,2172.7,2510.0,2303.7,2444.5,2238.2,131.0,3.084,0.023,0.0,0.0,0.012,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.991
+W2F-IX8-0-3,train_w2f,,IX,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,2109.6,2170.6,2240.6,2301.6,2175.1,2236.1,131.0,3.084,0.023,0.0,0.0,0.03,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.981
+W2F-IX8-1-0,train_w2f,,IX,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1968.2,2151.1,2099.2,2282.1,2033.7,2216.6,131.0,3.084,0.023,0.0,0.0,0.013,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.988
+W2F-IX8-4-3,train_w2f,,IX,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX9-0-0,train_w2f,,IX,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1670.8,2395.3,1801.8,2526.3,1736.3,2460.8,131.0,3.084,0.023,0.0,0.0,0.015,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-IX9-0-1,train_w2f,,IX,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1522.1,2385.2,1653.1,2516.2,1587.6,2450.7,131.0,3.084,0.023,0.0,0.0,0.026,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-IX10-0-0,train_w2f,,IX,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,2299.3,2596.5,2430.3,2727.5,2364.8,2662.0,131.0,3.084,0.023,0.0,0.0,0.018,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.995
+W2F-IX10-0-5,train_w2f,,IX,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1602.0,2562.8,1733.0,2693.8,1667.5,2628.3,131.0,3.084,0.023,0.0,0.0,-0.003,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-IX10-1-0,train_w2f,,IX,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1390.9,2619.3,1521.9,2750.3,1456.4,2684.8,131.0,3.084,0.023,0.0,0.0,0.014,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-IX10-2-2,train_w2f,,IX,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX10-3-0,train_w2f,,IX,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX11-2-4,train_w2f,,IX,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX11-3-1,train_w2f,,IX,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX11-3-3,train_w2f,,IX,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX11-4-0,train_w2f,,IX,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX11-4-2,train_w2f,,IX,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX12-2-0,train_w2f,,IX,ח,True,copy-photo text registration (place.py) + local phase-correlation refinement,16.0,RCT,1143.2,3207.6,1274.2,3338.6,1208.7,3273.1,131.0,3.084,0.023,0.0,0.0,-0.008,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.983
+W2F-IX12-3-3,train_w2f,,IX,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX14-5-0,train_w2f,,IX,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-IX14-5-2,train_w2f,,IX,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X1-1-0,train_w2f,,X,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X1-3-4,train_w2f,,X,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X2-1-0,train_w2f,,X,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,2259.0,839.4,2399.5,979.9,2329.3,909.6,140.5,2.485,0.04,0.0,0.0,0.002,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-X2-1-1,train_w2f,,X,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,2103.5,834.1,2244.0,974.6,2173.8,904.4,140.5,2.485,0.04,0.0,0.0,-0.01,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-X3-0-0,train_w2f,,X,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,17.0,RT,1199.4,1053.6,1347.3,1201.5,1273.3,1127.6,147.9,3.104,0.031,0.0,0.0,0.022,False,2.0,RT;RB,medium,0.0
+W2F-X3-0-1,train_w2f,,X,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X3-2-4,train_w2f,,X,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1815.8,984.4,1956.3,1124.9,1886.0,1054.7,140.5,2.485,0.04,0.0,0.0,-0.014,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-X4-2-0,train_w2f,,X,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1289.7,1208.7,1430.2,1349.2,1359.9,1278.9,140.5,2.485,0.04,0.0,0.0,-0.02,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.665
+W2F-X4-2-1,train_w2f,,X,כ,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X5-0-0,train_w2f,,X,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,17.0,RT,1172.7,1501.8,1320.5,1649.7,1246.6,1575.8,147.9,3.104,0.031,0.0,0.0,-0.015,False,2.0,RT;RB,medium,0.0
+W2F-X5-0-4,train_w2f,,X,ח,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X5-1-2,train_w2f,,X,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,2067.9,1474.5,2208.4,1615.0,2138.1,1544.7,140.5,2.485,0.04,0.0,0.0,-0.003,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-X5-1-4,train_w2f,,X,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1829.6,1458.1,1970.1,1598.6,1899.9,1528.3,140.5,2.485,0.04,0.0,0.0,0.031,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-X5-2-0,train_w2f,,X,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1694.2,1441.5,1834.7,1582.0,1764.4,1511.8,140.5,2.485,0.04,0.0,0.0,0.01,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.978
+W2F-X5-2-1,train_w2f,,X,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1556.1,1464.9,1696.6,1605.4,1626.3,1535.1,140.5,2.485,0.04,0.0,0.0,0.015,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.925
+W2F-X5-3-1,train_w2f,,X,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X6-4-0,train_w2f,,X,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1433.9,1685.3,1574.4,1825.8,1504.2,1755.5,140.5,2.485,0.04,0.0,0.0,0.009,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.875
+W2F-X8-0-0,train_w2f,,X,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,17.0,RT,1127.4,2230.9,1275.3,2378.8,1201.3,2304.8,147.9,3.104,0.031,0.0,0.0,0.0,False,2.0,RT;RB,medium,0.0
+W2F-X9-3-1,train_w2f,,X,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X10-1-2,train_w2f,,X,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,2175.4,2630.5,2315.9,2771.0,2245.6,2700.8,140.5,2.485,0.04,0.0,0.0,-0.003,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-X11-0-1,train_w2f,,X,ה,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X11-0-2,train_w2f,,X,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,2356.6,2887.7,2497.1,3028.2,2426.8,2957.9,140.5,2.485,0.04,0.0,0.0,0.007,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.985
+W2F-X11-1-1,train_w2f,,X,כ,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1871.2,2919.9,2011.7,3060.4,1941.4,2990.2,140.5,2.485,0.04,0.0,0.0,0.081,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,1.0
+W2F-X12-0-0,train_w2f,,X,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,17.0,RT,1201.9,3091.1,1349.8,3239.0,1275.8,3165.1,147.9,3.104,0.031,0.0,0.0,-0.02,False,2.0,RT;RB,medium,0.0
+W2F-X13-0-0,train_w2f,,X,ה,True,copy-photo text registration (place.py) + local phase-correlation refinement,17.0,RT,1280.0,3245.6,1427.9,3393.5,1353.9,3319.5,147.9,3.104,0.031,0.0,0.0,0.007,False,2.0,RT;RB,medium,0.0
+W2F-X13-0-4,train_w2f,,X,ב,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,
+W2F-X13-3-1,train_w2f,,X,ת,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1218.8,3293.4,1359.3,3433.9,1289.0,3363.7,140.5,2.485,0.04,0.0,0.0,0.026,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.844
+W2F-X17-2-0,train_w2f,,X,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1750.6,4172.8,1891.1,4313.3,1820.8,4243.0,140.5,2.485,0.04,0.0,0.0,-0.011,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.954
+W2F-X17-3-2,train_w2f,,X,ב,True,copy-photo text registration (place.py) + local phase-correlation refinement,18.0,RCT,1294.6,4180.4,1435.1,4320.9,1364.9,4250.7,140.5,2.485,0.04,0.0,0.0,0.014,False,6.0,RCT;RCB;RLB;RLT;RRB;RRT,medium,0.723
+W2F-X17-3-4,train_w2f,,X,ת,False,no accepted cut / outside strip margin,,,,,,,,,,,,,,,,,,,

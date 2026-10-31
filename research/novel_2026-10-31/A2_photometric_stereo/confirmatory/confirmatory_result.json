@@ -1,0 +1,69 @@
+{
+ "dryrun": false,
+ "alpha": 0.05,
+ "rules": {
+  "BK": {
+   "variant": "tb",
+   "S": 2,
+   "n": 3,
+   "n_ב": 2,
+   "n_כ": 1,
+   "correct": 3,
+   "accuracy": 1.0,
+   "recall_ב": 1.0,
+   "recall_כ": 1.0,
+   "p_bias_robust": 0.14814803699999998
+  },
+  "HE_HET": {
+   "variant": "tb",
+   "S": 0,
+   "n": 8,
+   "n_ה": 7,
+   "n_ח": 1,
+   "correct": 3,
+   "accuracy": 0.375,
+   "recall_ה": 0.42857142857142855,
+   "recall_ח": 0.0,
+   "p_bias_robust": 1.0
+  },
+  "HET_TAW": {
+   "variant": "ny",
+   "S": 2,
+   "n": 2,
+   "n_ח": 0,
+   "n_ת": 2,
+   "correct": 1,
+   "accuracy": 0.5,
+   "recall_ח": null,
+   "recall_ת": 0.5,
+   "p_bias_robust": 1.0
+  }
+ },
+ "pooled": {
+  "n": 13,
+  "correct": 7,
+  "accuracy": 0.5384615384615384,
+  "p_bias_robust": 1.0000000000000007,
+  "passed": false
+ },
+ "unscorable_heldout": [
+  {
+   "candidate_id": "LC-CHH-114",
+   "rule": "HET_TAW",
+   "reason": "channels of ny unavailable"
+  },
+  {
+   "candidate_id": "LC-CHH-120",
+   "rule": "HET_TAW",
+   "reason": "channels of ny unavailable"
+  },
+  {
+   "candidate_id": "LC-CHH-121",
+   "rule": "HET_TAW",
+   "reason": "channels of ny unavailable"
+  }
+ ],
+ "n_train_items_with_features": 95,
+ "n_test_items_with_features": 16,
+ "targets": "not scored: the frozen placement has no letter-level box for any target (see PROTOCOL_FROZEN.md)"
+}
