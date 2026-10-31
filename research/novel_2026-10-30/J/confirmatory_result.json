@@ -1,0 +1,644 @@
+{
+ "selftest": false,
+ "planttest": false,
+ "seed": 20261030,
+ "nperm": 10000,
+ "alpha": 0.05,
+ "scenarios": [
+  [
+   "HAS",
+   -88,
+   [
+    -140,
+    -37
+   ],
+   "Hasmonean rule, Simon to Herod's capture of Jerusalem"
+  ],
+  [
+   "HER",
+   -20,
+   [
+    -37,
+    -4
+   ],
+   "reign of Herod the Great"
+  ],
+  [
+   "ERP",
+   36,
+   [
+    6,
+    65
+   ],
+   "Early Roman before the revolt (Judaea a province to the revolt)"
+  ],
+  [
+   "REV1",
+   68,
+   [
+    66,
+    70
+   ],
+   "First Revolt"
+  ],
+  [
+   "INT",
+   101,
+   [
+    71,
+    131
+   ],
+   "between the revolts"
+  ],
+  [
+   "BK",
+   134,
+   [
+    132,
+    135
+   ],
+   "Bar Kokhba revolt"
+  ],
+  [
+   "LR",
+   230,
+   [
+    136,
+    324
+   ],
+   "Late Roman (legend)"
+  ],
+  [
+   "BYZ",
+   482,
+   [
+    324,
+    640
+   ],
+   "Byzantine (legend)"
+  ]
+ ],
+ "n_features": 7366,
+ "n_entries_with_eligible": 42,
+ "entries": [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "13",
+  "14",
+  "16",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "29",
+  "32",
+  "33",
+  "36",
+  "37",
+  "39",
+  "40",
+  "42",
+  "43",
+  "45",
+  "46",
+  "47",
+  "48",
+  "49",
+  "51",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "60"
+ ],
+ "n_pairs": 7255,
+ "summary": {
+  "S1|persist|best": {
+   "winner": "HAS",
+   "winner_z": 0.931,
+   "winner_p": 0.44416,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HER": {
+     "d_obs": 0.269,
+     "p": 0.73583
+    },
+    "ERP": {
+     "d_obs": 0.309,
+     "p": 0.69873
+    },
+    "REV1": {
+     "d_obs": 0.309,
+     "p": 0.69873
+    },
+    "INT": {
+     "d_obs": 0.321,
+     "p": 0.68983
+    },
+    "BK": {
+     "d_obs": 0.338,
+     "p": 0.67913
+    },
+    "LR": {
+     "d_obs": 0.338,
+     "p": 0.67903
+    },
+    "BYZ": {
+     "d_obs": 0.526,
+     "p": 0.56444
+    }
+   }
+  },
+  "S2|persist|best": {
+   "winner": "ERP",
+   "winner_z": 0.625,
+   "winner_p": 0.29007,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HAS": {
+     "d_obs": 0.357,
+     "p": 0.29977
+    },
+    "HER": {
+     "d_obs": 0.043,
+     "p": 0.22918
+    },
+    "REV1": {
+     "d_obs": 0.044,
+     "p": 0.23528
+    },
+    "INT": {
+     "d_obs": 0.155,
+     "p": 0.16158
+    },
+    "BK": {
+     "d_obs": 0.253,
+     "p": 0.10209
+    },
+    "LR": {
+     "d_obs": 0.326,
+     "p": 0.08479
+    },
+    "BYZ": {
+     "d_obs": 1.395,
+     "p": 0.0274
+    }
+   }
+  },
+  "S1|persist|worst": {
+   "winner": "HAS",
+   "winner_z": 0.846,
+   "winner_p": 0.27657,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HER": {
+     "d_obs": 0.503,
+     "p": 0.38716
+    },
+    "ERP": {
+     "d_obs": 0.612,
+     "p": 0.33737
+    },
+    "REV1": {
+     "d_obs": 0.619,
+     "p": 0.33377
+    },
+    "INT": {
+     "d_obs": 0.606,
+     "p": 0.33997
+    },
+    "BK": {
+     "d_obs": 0.623,
+     "p": 0.33397
+    },
+    "LR": {
+     "d_obs": 0.664,
+     "p": 0.31557
+    },
+    "BYZ": {
+     "d_obs": 0.533,
+     "p": 0.36006
+    }
+   }
+  },
+  "S2|persist|worst": {
+   "winner": "HER",
+   "winner_z": 0.316,
+   "winner_p": 0.36606,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HAS": {
+     "d_obs": 0.14,
+     "p": 0.32137
+    },
+    "ERP": {
+     "d_obs": 0.01,
+     "p": 0.71633
+    },
+    "REV1": {
+     "d_obs": 0.04,
+     "p": 0.61204
+    },
+    "INT": {
+     "d_obs": 0.131,
+     "p": 0.30277
+    },
+    "BK": {
+     "d_obs": 0.196,
+     "p": 0.18488
+    },
+    "LR": {
+     "d_obs": 0.246,
+     "p": 0.14429
+    },
+    "BYZ": {
+     "d_obs": 0.538,
+     "p": 0.13059
+    }
+   }
+  },
+  "S1|attested|best": {
+   "winner": "LR",
+   "winner_z": -0.006,
+   "winner_p": 0.63654,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HAS": {
+     "d_obs": 0.466,
+     "p": 0.29957
+    },
+    "HER": {
+     "d_obs": 0.743,
+     "p": 0.21518
+    },
+    "ERP": {
+     "d_obs": 0.546,
+     "p": 0.27967
+    },
+    "REV1": {
+     "d_obs": 0.545,
+     "p": 0.27977
+    },
+    "INT": {
+     "d_obs": 0.008,
+     "p": 0.59984
+    },
+    "BK": {
+     "d_obs": 0.021,
+     "p": 0.58674
+    },
+    "BYZ": {
+     "d_obs": 0.13,
+     "p": 0.47645
+    }
+   }
+  },
+  "S2|attested|best": {
+   "winner": "ERP",
+   "winner_z": 0.152,
+   "winner_p": 0.48095,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HAS": {
+     "d_obs": 0.765,
+     "p": 0.18778
+    },
+    "HER": {
+     "d_obs": 0.168,
+     "p": 0.32357
+    },
+    "REV1": {
+     "d_obs": 0.331,
+     "p": 0.0369
+    },
+    "INT": {
+     "d_obs": 0.478,
+     "p": 0.22988
+    },
+    "BK": {
+     "d_obs": 0.526,
+     "p": 0.22048
+    },
+    "LR": {
+     "d_obs": 0.418,
+     "p": 0.24568
+    },
+    "BYZ": {
+     "d_obs": 0.871,
+     "p": 0.16608
+    }
+   }
+  },
+  "S1|attested|worst": {
+   "winner": "HAS",
+   "winner_z": -0.335,
+   "winner_p": 0.72833,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HER": {
+     "d_obs": 0.097,
+     "p": 0.47735
+    },
+    "ERP": {
+     "d_obs": 0.01,
+     "p": 0.51385
+    },
+    "REV1": {
+     "d_obs": 1.164,
+     "p": 0.14259
+    },
+    "INT": {
+     "d_obs": 0.333,
+     "p": 0.39426
+    },
+    "BK": {
+     "d_obs": 0.371,
+     "p": 0.38886
+    },
+    "LR": {
+     "d_obs": 1.332,
+     "p": 0.14609
+    },
+    "BYZ": {
+     "d_obs": 2.145,
+     "p": 0.06249
+    }
+   }
+  },
+  "S2|attested|worst": {
+   "winner": "ERP",
+   "winner_z": 0.049,
+   "winner_p": 0.38586,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HAS": {
+     "d_obs": 1.132,
+     "p": 0.17478
+    },
+    "HER": {
+     "d_obs": 0.196,
+     "p": 0.33147
+    },
+    "REV1": {
+     "d_obs": 0.419,
+     "p": 0.0367
+    },
+    "INT": {
+     "d_obs": 1.528,
+     "p": 0.11149
+    },
+    "BK": {
+     "d_obs": 1.617,
+     "p": 0.10579
+    },
+    "LR": {
+     "d_obs": 1.363,
+     "p": 0.13649
+    },
+    "BYZ": {
+     "d_obs": 1.219,
+     "p": 0.17718
+    }
+   }
+  },
+  "S1|persist_sitefinds|best": {
+   "winner": "HAS",
+   "winner_z": 1.004,
+   "winner_p": 0.39696,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HER": {
+     "d_obs": 0.299,
+     "p": 0.70473
+    },
+    "ERP": {
+     "d_obs": 0.341,
+     "p": 0.66633
+    },
+    "REV1": {
+     "d_obs": 0.341,
+     "p": 0.66613
+    },
+    "INT": {
+     "d_obs": 0.352,
+     "p": 0.65713
+    },
+    "BK": {
+     "d_obs": 0.368,
+     "p": 0.64584
+    },
+    "LR": {
+     "d_obs": 0.369,
+     "p": 0.64554
+    },
+    "BYZ": {
+     "d_obs": 0.541,
+     "p": 0.54985
+    }
+   }
+  },
+  "S2|persist_sitefinds|best": {
+   "winner": "ERP",
+   "winner_z": 1.074,
+   "winner_p": 0.11319,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HAS": {
+     "d_obs": 0.77,
+     "p": 0.21148
+    },
+    "HER": {
+     "d_obs": 0.485,
+     "p": 0.06259
+    },
+    "REV1": {
+     "d_obs": 0.093,
+     "p": 0.06699
+    },
+    "INT": {
+     "d_obs": 0.22,
+     "p": 0.10189
+    },
+    "BK": {
+     "d_obs": 0.326,
+     "p": 0.06779
+    },
+    "LR": {
+     "d_obs": 0.403,
+     "p": 0.05389
+    },
+    "BYZ": {
+     "d_obs": 1.729,
+     "p": 0.0053
+    }
+   }
+  },
+  "S1|persist_sitefinds|worst": {
+   "winner": "HAS",
+   "winner_z": 1.492,
+   "winner_p": 0.11149,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HER": {
+     "d_obs": 0.343,
+     "p": 0.48185
+    },
+    "ERP": {
+     "d_obs": 0.446,
+     "p": 0.42346
+    },
+    "REV1": {
+     "d_obs": 0.45,
+     "p": 0.42106
+    },
+    "INT": {
+     "d_obs": 0.451,
+     "p": 0.42126
+    },
+    "BK": {
+     "d_obs": 0.463,
+     "p": 0.41686
+    },
+    "LR": {
+     "d_obs": 0.488,
+     "p": 0.40116
+    },
+    "BYZ": {
+     "d_obs": 0.238,
+     "p": 0.45305
+    }
+   }
+  },
+  "S2|persist_sitefinds|worst": {
+   "winner": "ERP",
+   "winner_z": 1.862,
+   "winner_p": 0.0339,
+   "beats_null": false,
+   "beats_all_others": false,
+   "diffs": {
+    "HAS": {
+     "d_obs": 0.258,
+     "p": 0.30827
+    },
+    "HER": {
+     "d_obs": 0.297,
+     "p": 0.07649
+    },
+    "REV1": {
+     "d_obs": 0.068,
+     "p": 0.05869
+    },
+    "INT": {
+     "d_obs": 0.177,
+     "p": 0.07639
+    },
+    "BK": {
+     "d_obs": 0.257,
+     "p": 0.05049
+    },
+    "LR": {
+     "d_obs": 0.316,
+     "p": 0.0413
+    },
+    "BYZ": {
+     "d_obs": 0.9,
+     "p": 0.0085
+    }
+   }
+  }
+ },
+ "dated_share_of_pairs": {
+  "persist|best": {
+   "HAS": 0.5106822880771882,
+   "HER": 0.5113714679531358,
+   "ERP": 0.5113714679531358,
+   "REV1": 0.5113714679531358,
+   "INT": 0.5130254996554101,
+   "BK": 0.5133011716057891,
+   "LR": 0.5133011716057891,
+   "BYZ": 0.5134390075809786
+  },
+  "persist|worst": {
+   "HAS": 0.5106822880771882,
+   "HER": 0.5113714679531358,
+   "ERP": 0.5113714679531358,
+   "REV1": 0.5113714679531358,
+   "INT": 0.5130254996554101,
+   "BK": 0.5133011716057891,
+   "LR": 0.5133011716057891,
+   "BYZ": 0.5134390075809786
+  },
+  "attested|best": {
+   "HAS": 0.5106822880771882,
+   "HER": 0.5113714679531358,
+   "ERP": 0.5113714679531358,
+   "REV1": 0.5113714679531358,
+   "INT": 0.5130254996554101,
+   "BK": 0.5133011716057891,
+   "LR": 0.5133011716057891,
+   "BYZ": 0.5134390075809786
+  },
+  "attested|worst": {
+   "HAS": 0.5106822880771882,
+   "HER": 0.5113714679531358,
+   "ERP": 0.5113714679531358,
+   "REV1": 0.5113714679531358,
+   "INT": 0.5130254996554101,
+   "BK": 0.5133011716057891,
+   "LR": 0.5133011716057891,
+   "BYZ": 0.5134390075809786
+  },
+  "persist_sitefinds|best": {
+   "HAS": 0.5926946933149552,
+   "HER": 0.5933838731909028,
+   "ERP": 0.5933838731909028,
+   "REV1": 0.5933838731909028,
+   "INT": 0.5950379048931771,
+   "BK": 0.5953135768435561,
+   "LR": 0.5953135768435561,
+   "BYZ": 0.5954514128187457
+  },
+  "persist_sitefinds|worst": {
+   "HAS": 0.5926946933149552,
+   "HER": 0.5933838731909028,
+   "ERP": 0.5933838731909028,
+   "REV1": 0.5933838731909028,
+   "INT": 0.5950379048931771,
+   "BK": 0.5953135768435561,
+   "LR": 0.5953135768435561,
+   "BYZ": 0.5954514128187457
+  }
+ },
+ "decision": {
+  "primary_rule": "persist",
+  "S1_passes": false,
+  "S1_winner": null,
+  "S2_passes": false,
+  "S2_winner": null,
+  "outcome": "not obtained"
+ }
+}
