@@ -1,0 +1,48 @@
+test 7 done 26 s
+test 8 done 37 s
+control 10 done 67 s
+control 16 done 128 s
+{
+ "per_cut": {
+  "7": {
+   "n_frames": 2,
+   "median_c_h": 0.09938271604938272,
+   "robust_sd": 0.1656485185185185
+  },
+  "8": {
+   "n_frames": 1,
+   "median_c_h": 0.03252032520325196,
+   "robust_sd": null
+  },
+  "10": {
+   "n_frames": 2,
+   "median_c_h": -0.27092592592592596,
+   "robust_sd": 0.2506692222222221
+  },
+  "16": {
+   "n_frames": 3,
+   "median_c_h": 0.04166666666666656,
+   "robust_sd": 0.009447941176470286
+  }
+ },
+ "gate": {
+  "G1_min_frames": false,
+  "pooled_within_cut_robust_sd": 0.1656485185185185,
+  "G2_sd_ok": true,
+  "passed": false
+ },
+ "primary": {
+  "D_test": 0.03252032520325196,
+  "D_control": 0.03529411764705892,
+  "diff": -0.0027737924438069606,
+  "mwu_p_greater": 0.5,
+  "boot_diff_one_sided_95": [
+   -0.228888888888889,
+   0.42765432098765427
+  ],
+  "n_test": 3,
+  "n_control": 5
+ },
+ "verdict": "not identifiable from available evidence (measurement gate failed)",
+ "label": "not obtained"
+}

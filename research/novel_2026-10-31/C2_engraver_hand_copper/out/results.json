@@ -1,0 +1,120 @@
+{
+ "parameters": {
+  "SCALE": 0.5,
+  "TEST_CUTS": [
+   7,
+   8
+  ],
+  "CONTROL_CUTS": [
+   10,
+   16
+  ],
+  "LIGHTS": [
+   "RLT",
+   "RCT",
+   "RRT",
+   "RLB",
+   "RCB",
+   "RRB"
+  ],
+  "R_BEFORE": [
+   0.0,
+   0.45
+  ],
+  "R_AFTER": [
+   0.55,
+   1.0
+  ],
+  "Q": [
+   0.15,
+   0.85
+  ],
+  "INNER": 0.6,
+  "MIN_ACF": 0.1,
+  "MIN_FRAMES": 4,
+  "GATE_SD": 0.25,
+  "THR": 0.086,
+  "N_BOOT": 10000,
+  "SEED": 20261031
+ },
+ "per_cut": {
+  "7": {
+   "n_frames": 2,
+   "median_c_h": 0.09938271604938272,
+   "robust_sd": 0.1656485185185185
+  },
+  "8": {
+   "n_frames": 1,
+   "median_c_h": 0.03252032520325196,
+   "robust_sd": null
+  },
+  "10": {
+   "n_frames": 2,
+   "median_c_h": -0.27092592592592596,
+   "robust_sd": 0.2506692222222221
+  },
+  "16": {
+   "n_frames": 3,
+   "median_c_h": 0.04166666666666656,
+   "robust_sd": 0.009447941176470286
+  }
+ },
+ "gate": {
+  "G1_min_frames": false,
+  "pooled_within_cut_robust_sd": 0.1656485185185185,
+  "G2_sd_ok": true,
+  "passed": false
+ },
+ "primary": {
+  "D_test": 0.03252032520325196,
+  "D_control": 0.03529411764705892,
+  "diff": -0.0027737924438069606,
+  "mwu_p_greater": 0.5,
+  "boot_diff_one_sided_95": [
+   -0.228888888888889,
+   0.42765432098765427
+  ],
+  "n_test": 3,
+  "n_control": 5
+ },
+ "verdict": "not identifiable from available evidence (measurement gate failed)",
+ "label": "not obtained",
+ "secondary": {
+  "c_ploc_px": {
+   "median_test": 0.16896551724137931,
+   "median_control": 0.16225165562913907,
+   "n_test": 3,
+   "n_control": 5,
+   "mwu_p_two_sided": 0.7857142857142857
+  },
+  "c_asp": {
+   "median_test": -0.09634233803490305,
+   "median_control": -0.04635582527188606,
+   "n_test": 3,
+   "n_control": 5,
+   "mwu_p_two_sided": 0.7857142857142857
+  },
+  "c_gapr": {
+   "median_test": -0.4186981547316744,
+   "median_control": -0.0987429836350699,
+   "n_test": 3,
+   "n_control": 5,
+   "mwu_p_two_sided": 0.5714285714285714
+  },
+  "c_wgapr": {
+   "median_test": null,
+   "median_control": 0.046382189239332065,
+   "n_test": 0,
+   "n_control": 3,
+   "mwu_p_two_sided": null
+  },
+  "c_fill": {
+   "median_test": -0.024000000000000056,
+   "median_control": 0.015228426395939186,
+   "n_test": 3,
+   "n_control": 5,
+   "mwu_p_two_sided": 1.0
+  }
+ },
+ "runtime_s": 128.9
+}
