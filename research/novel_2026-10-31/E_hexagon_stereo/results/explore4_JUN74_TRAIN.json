@@ -1,0 +1,252 @@
+{
+ "pair": "JUN74",
+ "zone": "TRAIN",
+ "tag": "explore4",
+ "wF": [
+  126442,
+  17354,
+  132031,
+  22613
+ ],
+ "wA": [
+  100183,
+  5655,
+  108032,
+  12229
+ ],
+ "fwd_coverage_frac": 1.0,
+ "mpp_full": 0.9199999999366466,
+ "cell_px": 8,
+ "n_cells": 28520,
+ "n_cells_in_zone": 11694,
+ "zone_cells_expected": 11034,
+ "n_fit_A": 12971,
+ "n_eval_B": 5215,
+ "params": [
+  627.1594383941446,
+  -82.02808159150257,
+  0.7262316950908677,
+  -0.010735626636295684,
+  -0.0225831082138566,
+  -0.016432786675880193
+ ],
+ "coef": [
+  -43.5555837790564,
+  5.970276739738261,
+  -38.58413096058381,
+  34.31845804011167,
+  -2.900845457323721,
+  16.728242227191174,
+  15.407684121208089
+ ],
+ "m_per_disp_px": 5.970276739738261,
+ "nmad_B_zone": 21.06938809205574,
+ "median_B_zone": 3.0695981424915004,
+ "rmse_B_zone": 27.903145184770324,
+ "nmad_A_fit": 18.0787009228584,
+ "nmad_B_window": 17.776728591920193,
+ "geo": {
+  "A": [
+   [
+    1.0151545921423268,
+    -0.17519744606829465,
+    -166.14867231152144
+   ],
+   [
+    -0.060848493506407114,
+    1.0047528960400862,
+    -109.88569239679835
+   ]
+  ],
+  "Rm": [
+   [
+    -0.2137765060615605,
+    0.97688259553342,
+    298.52258292077624
+   ],
+   [
+    -0.97688259553342,
+    -0.2137765060615605,
+    1645.4105457155697
+   ]
+  ],
+  "angle_deg": 102.34375750691522,
+  "n_tp": 7632,
+  "n_inl": 7525,
+  "y_resid_nmad_px": 0.41562387332331524,
+  "n_y_good": 7435,
+  "d_tp_range": [
+   -12.186869889878416,
+   17.386498278408528
+  ],
+  "sc": 822.5,
+  "nW": 1583,
+  "nH": 1645
+ },
+ "sgm": {
+  "minDisparity": -27,
+  "numDisparities": 64,
+  "block": 5
+ },
+ "seconds": 47,
+ "pass_precision": false,
+ "change_threshold_m": 63.20816427616722,
+ "clusters": [
+  {
+   "sign": -1,
+   "n_cells": 3,
+   "area_m2": 2700.0,
+   "dh_median_m": -67.72249603271484,
+   "dh_extreme_m": -67.91171264648438,
+   "E": 729093.0458252798,
+   "N": 3517742.429313064,
+   "touches_edge": false,
+   "slope_median_deg": 12.19395923614502,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 lower than 2011-15: candidate infill / loss of a depression, cut or pool"
+  },
+  {
+   "sign": -1,
+   "n_cells": 5,
+   "area_m2": 4500.0,
+   "dh_median_m": -67.86463928222656,
+   "dh_extreme_m": -74.52300262451172,
+   "E": 729021.8807554655,
+   "N": 3517901.6759700156,
+   "touches_edge": false,
+   "slope_median_deg": 25.333539962768555,
+   "surface_obj_frac": 0.0,
+   "cls": "steep-slope artefact likely"
+  },
+  {
+   "sign": -1,
+   "n_cells": 303,
+   "area_m2": 272700.0,
+   "dh_median_m": -90.24335479736328,
+   "dh_extreme_m": -123.59137725830078,
+   "E": 728480.331438171,
+   "N": 3517438.0855132975,
+   "touches_edge": false,
+   "slope_median_deg": 18.98967742919922,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 lower than 2011-15: candidate infill / loss of a depression, cut or pool"
+  },
+  {
+   "sign": -1,
+   "n_cells": 12,
+   "area_m2": 10800.0,
+   "dh_median_m": -76.54756927490234,
+   "dh_extreme_m": -98.28217315673828,
+   "E": 726878.5413535534,
+   "N": 3518013.8148367982,
+   "touches_edge": false,
+   "slope_median_deg": 17.53543472290039,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 lower than 2011-15: candidate infill / loss of a depression, cut or pool"
+  },
+  {
+   "sign": 1,
+   "n_cells": 13,
+   "area_m2": 11700.0,
+   "dh_median_m": 68.5293960571289,
+   "dh_extreme_m": 79.42439270019531,
+   "E": 727946.6922452276,
+   "N": 3518225.671311664,
+   "touches_edge": false,
+   "slope_median_deg": 9.518474578857422,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 higher than 2011-15: candidate removal since 1974 (quarry, cut, erosion, new pool)"
+  },
+  {
+   "sign": 1,
+   "n_cells": 5,
+   "area_m2": 4500.0,
+   "dh_median_m": 64.764404296875,
+   "dh_extreme_m": 69.86700439453125,
+   "E": 727995.8952273419,
+   "N": 3518760.965018778,
+   "touches_edge": false,
+   "slope_median_deg": 10.933277130126953,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 higher than 2011-15: candidate removal since 1974 (quarry, cut, erosion, new pool)"
+  },
+  {
+   "sign": 1,
+   "n_cells": 4,
+   "area_m2": 3600.0,
+   "dh_median_m": 64.87916564941406,
+   "dh_extreme_m": 66.4225845336914,
+   "E": 727982.4946453825,
+   "N": 3518618.4904708834,
+   "touches_edge": false,
+   "slope_median_deg": 9.217997550964355,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 higher than 2011-15: candidate removal since 1974 (quarry, cut, erosion, new pool)"
+  },
+  {
+   "sign": 1,
+   "n_cells": 15,
+   "area_m2": 13500.0,
+   "dh_median_m": 68.38445281982422,
+   "dh_extreme_m": 79.91939544677734,
+   "E": 727610.3778423795,
+   "N": 3517305.5699298116,
+   "touches_edge": false,
+   "slope_median_deg": 9.542207717895508,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 higher than 2011-15: candidate removal since 1974 (quarry, cut, erosion, new pool)"
+  },
+  {
+   "sign": 1,
+   "n_cells": 54,
+   "area_m2": 48600.0,
+   "dh_median_m": 70.45536804199219,
+   "dh_extreme_m": 87.13436126708984,
+   "E": 727134.447925203,
+   "N": 3517798.5927001354,
+   "touches_edge": false,
+   "slope_median_deg": 17.899417877197266,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 higher than 2011-15: candidate removal since 1974 (quarry, cut, erosion, new pool)"
+  },
+  {
+   "sign": 1,
+   "n_cells": 76,
+   "area_m2": 68400.0,
+   "dh_median_m": 75.50981140136719,
+   "dh_extreme_m": 113.53070831298828,
+   "E": 727075.773603434,
+   "N": 3518173.666793412,
+   "touches_edge": false,
+   "slope_median_deg": 18.970918655395508,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 higher than 2011-15: candidate removal since 1974 (quarry, cut, erosion, new pool)"
+  },
+  {
+   "sign": 1,
+   "n_cells": 55,
+   "area_m2": 49500.0,
+   "dh_median_m": 80.5226058959961,
+   "dh_extreme_m": 97.29016876220703,
+   "E": 726881.6593123642,
+   "N": 3517339.63920837,
+   "touches_edge": false,
+   "slope_median_deg": 14.132712364196777,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 higher than 2011-15: candidate removal since 1974 (quarry, cut, erosion, new pool)"
+  },
+  {
+   "sign": 1,
+   "n_cells": 12,
+   "area_m2": 10800.0,
+   "dh_median_m": 67.60368347167969,
+   "dh_extreme_m": 72.05945587158203,
+   "E": 726976.8910888563,
+   "N": 3518504.712049956,
+   "touches_edge": false,
+   "slope_median_deg": 17.338687896728516,
+   "surface_obj_frac": 0.0,
+   "cls": "1974 higher than 2011-15: candidate removal since 1974 (quarry, cut, erosion, new pool)"
+  }
+ ]
+}

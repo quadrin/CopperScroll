@@ -1,6 +1,13 @@
-"""Exclusion zone (SULTAN-1 / Jericho oasis) and candidate zones for direction E.
+"""Candidate zones for direction E (and the SULTAN-1 / Jericho-oasis exclusion zone, now NOT applied).
 
 Defined from geography only, before any HEXAGON 1974 image read (31 Oct 2026).
+MASK DECISION (31 Oct, before the freeze): the exclusion zone below was set before any
+read (commit 26d6a59e). The owner's message of 31 Oct (SP/tools/hexview/SULTAN1.md,
+SHA-256 8abcfe31...) made masking E's own choice: amendment A1 (24 Oct) opened reading
+north of the tell; HEXAGON failed the 0.5 m resolvability gate (26 Oct, R_eff about 1 m)
+and cannot test SULTAN-1-precamp-mouth. E drops the mask. QELT now runs down to the
+oasis edge, and JERICHO_OUT is the ring 1-4 km from the tell centre. The 250 m strip
+north of the tell lies inside 1 km and is not a zone; nothing E produces tests SULTAN-1.
 Writes zones.geojson (EPSG:4326 lon/lat) and prints UTM 36N (EPSG:32636) bounds.
 
 Tell es-Sultan centre: WBADB E334, 31.871116 N 35.444274 E
@@ -34,10 +41,10 @@ BUFFER_M = 1000.0           # georeferencing-error buffer (coarse 1/32 registrat
 ZONES_LL = {
     # name: (lon0, lat0, lon1, lat1), reason
     "QUMRAN": ((35.445, 31.728, 35.470, 31.752), "Kh. Qumran plateau, marl terrace and Wadi Qumran mouth; WBADB E754 31.741223 N 35.459768 E"),
-    "QELT": ((35.320, 31.822, 35.395, 31.858), "Wadi Qelt from 'Ein Fara (WBADB S2709) past 'Ein el-Fawwar (S2621) to about 2.5 km above Deir el-Qelt; the lower wadi and Deir el-Qelt (ASI 109/5/3) lie inside the exclusion zone"),
+    "QELT": ((35.320, 31.822, 35.432, 31.858), "Wadi Qelt from 'Ein Fara (WBADB S2709) past 'Ein el-Fawwar (S2621) and Deir el-Qelt (ASI 109/5/3) to the wadi exit at Tulul Abu el-'Alayiq (ASI 109/5/14 at 35.436 E is just outside)"),
     "KIDRON": ((35.325, 31.700, 35.385, 31.735), "Lower Kidron (Wadi en-Nar) from Mar Saba (ASI 109/7/98) to Hyrcania (ASI 109/7/70) and Nahal Sekhakha (ASI 109/7/48)"),
-    "JERICHO_OUT": ((35.420, 31.795, 35.470, 31.820), "Jericho outskirts south of the buffered oasis envelope, wholly outside the exclusion zone"),
 }
+JERICHO_RING_M = (1000.0, 4000.0)  # JERICHO_OUT = ring 1-4 km from the tell centre
 # Exploratory training window (used to tune the method; not a candidate zone)
 TRAIN_LL = (35.395, 31.758, 35.430, 31.785)
 
@@ -47,6 +54,7 @@ def build():
     core = unary_union([tell.buffer(R_TELL_M, 256), transform(to_utm, box(*OASIS_LL))])
     excl = core.buffer(BUFFER_M, 256)
     zones = {k: transform(to_utm, box(*v[0])) for k, v in ZONES_LL.items()}
+    zones["JERICHO_OUT"] = tell.buffer(JERICHO_RING_M[1], 128).difference(tell.buffer(JERICHO_RING_M[0], 128))
     train = transform(to_utm, box(*TRAIN_LL))
     return tell, core, excl, zones, train
 
@@ -56,13 +64,14 @@ def main(out="zones.geojson"):
     feats = [
         dict(type="Feature", properties=dict(name="EXCLUSION_CORE", note="3 km circle about Tell es-Sultan E334 + Jericho oasis envelope"),
              geometry=mapping(transform(to_ll, core))),
-        dict(type="Feature", properties=dict(name="EXCLUSION", note=f"core + {BUFFER_M:.0f} m buffer; never read at full resolution; blanked in every array"),
+        dict(type="Feature", properties=dict(name="EXCLUSION", note=f"core + {BUFFER_M:.0f} m buffer; defined 31 Oct before any read; NOT APPLIED after the mask decision (see module docstring)"),
              geometry=mapping(transform(to_ll, excl))),
         dict(type="Feature", properties=dict(name="TRAIN", note="exploratory training window"),
              geometry=mapping(transform(to_ll, train))),
     ]
     for k, g in zones.items():
-        feats.append(dict(type="Feature", properties=dict(name=k, note=ZONES_LL[k][1], intersects_exclusion=bool(g.intersects(excl)),
+        note = ZONES_LL[k][1] if k in ZONES_LL else "Jericho outskirts: ring 1-4 km from Tell es-Sultan E334 (tell and 250 m strip excluded)"
+        feats.append(dict(type="Feature", properties=dict(name=k, note=note, intersects_exclusion=bool(g.intersects(excl)),
                                                           min_dist_to_exclusion_m=round(g.distance(excl), 1)),
                           geometry=mapping(transform(to_ll, g))))
     fc = dict(type="FeatureCollection", crs_note="coordinates EPSG:4326 lon/lat; metric work in EPSG:32636 (UTM 36N)", features=feats)

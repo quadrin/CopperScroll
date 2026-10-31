@@ -48,6 +48,8 @@ def add_prot(item, tile, bx, note):
 
 
 def prot_boxes(item, tile):
+    if item in ("", "-"):
+        return []
     stem = hv.resolve(item)
     return [p["box"] for p in load_prot() if p["item"] in stem and p.get("tile") in (None, tile)]
 
