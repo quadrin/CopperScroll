@@ -1,0 +1,285 @@
+{
+ "seams": {
+  "S11": {
+   "col_line": "II 13",
+   "global_line": 28
+  },
+  "S49": {
+   "col_line": "X 15",
+   "global_line": 149
+  }
+ },
+ "T1": {
+  "tag": "primary, all columns",
+  "n_lines": 135,
+  "features": [
+   "h_rel",
+   "asp_rel",
+   "gap",
+   "wgap"
+  ],
+  "penalty": 24.526373892192147,
+  "K": 2,
+  "change_points": [
+   {
+    "index": 32,
+    "last_line_old": "III 6",
+    "first_line_new": "III 8",
+    "global_first_new": 38
+   },
+   {
+    "index": 118,
+    "last_line_old": "XI 7",
+    "first_line_new": "XI 8",
+    "global_first_new": 159
+   }
+  ],
+  "gain": 67.3077323273314,
+  "crit": [
+   414.30390572173667,
+   351.72277048674425,
+   346.9961733944053,
+   356.18295972870965,
+   369.599967134659,
+   384.5033284831217,
+   399.1123177233831
+  ],
+  "p_block": 0.0033996600339966003,
+  "p_shuffle": 9.999000099990002e-05,
+  "matches": {
+   "S11": false,
+   "S49": false
+  },
+  "n_matched": 0,
+  "p_joint_block": null,
+  "p_placement": null,
+  "segment_means": [
+   {
+    "h_rel": 0.9275,
+    "asp_rel": 0.8509,
+    "gap": 0.2468,
+    "wgap": 0.4293
+   },
+   {
+    "h_rel": 1.1096,
+    "asp_rel": 1.0453,
+    "gap": 0.1775,
+    "wgap": 0.5614
+   },
+   {
+    "h_rel": 0.8818,
+    "asp_rel": 1.0974,
+    "gap": 0.1744,
+    "wgap": 0.6297
+   }
+  ]
+ },
+ "T1_without_XII": {
+  "tag": "sensitivity, column XII (exposed) removed",
+  "n_lines": 124,
+  "features": [
+   "h_rel",
+   "asp_rel",
+   "gap",
+   "wgap"
+  ],
+  "penalty": 24.101407828025184,
+  "K": 1,
+  "change_points": [
+   {
+    "index": 32,
+    "last_line_old": "III 6",
+    "first_line_new": "III 8",
+    "global_first_new": 38
+   }
+  ],
+  "gain": 70.54005058716751,
+  "crit": [
+   378.5824862517749,
+   308.0424356646074,
+   316.8626531740095,
+   329.86186577464923,
+   344.4333987206724,
+   356.8583520124884,
+   371.48247431806976
+  ],
+  "p_block": 0.0029997000299970002,
+  "p_shuffle": 9.999000099990002e-05,
+  "matches": {
+   "S11": false,
+   "S49": false
+  },
+  "n_matched": 0,
+  "p_joint_block": null,
+  "p_placement": null,
+  "segment_means": [
+   {
+    "h_rel": 0.9275,
+    "asp_rel": 0.8509,
+    "gap": 0.2468,
+    "wgap": 0.4293
+   },
+   {
+    "h_rel": 1.1008,
+    "asp_rel": 1.0535,
+    "gap": 0.1741,
+    "wgap": 0.5422
+   }
+  ]
+ },
+ "T2_all": {
+  "tag": "all sources",
+  "features": [
+   "d_h_rel",
+   "d_asp_rel",
+   "d_gap",
+   "d_wgap",
+   "t_final_rate",
+   "p_pitch_cm",
+   "p_adv_ratio"
+  ],
+  "penalty": 19.879253198304003,
+  "K": 0,
+  "change_points_new_segment_starts": [],
+  "gain": 0.0,
+  "crit": [
+   82.20402100388243,
+   83.95662712886023,
+   89.44712821638132,
+   98.07238656353292
+  ],
+  "p_perm": null,
+  "matches": {
+   "S11": false,
+   "S49": false
+  },
+  "n_matched": 0,
+  "p_joint": null,
+  "p_placement": null
+ },
+ "T2_drawing": {
+  "tag": "drawing only",
+  "features": [
+   "d_h_rel",
+   "d_asp_rel",
+   "d_gap",
+   "d_wgap"
+  ],
+  "penalty": 12.424533248940001,
+  "K": 1,
+  "change_points_new_segment_starts": [
+   "III"
+  ],
+  "gain": 2.6680533578773336,
+  "crit": [
+   47.51634304043506,
+   44.84828968255773,
+   50.00906106206469,
+   55.96672912637922
+  ],
+  "p_perm": 0.058394160583941604,
+  "matches": {
+   "S11": true,
+   "S49": false
+  },
+  "n_matched": 1,
+  "p_joint": 0.03189681031896811,
+  "p_placement": 0.33445
+ },
+ "T2_text": {
+  "tag": "transcription only",
+  "features": [
+   "t_final_rate"
+  ],
+  "penalty": 4.969813299576001,
+  "K": 0,
+  "change_points_new_segment_starts": [],
+  "gain": 0.0,
+  "crit": [
+   10.687677963447378,
+   13.857924163940812,
+   15.456324220135258,
+   20.337552507454905
+  ],
+  "p_perm": null,
+  "matches": {
+   "S11": false,
+   "S49": false
+  },
+  "n_matched": 0,
+  "p_joint": null,
+  "p_placement": null
+ },
+ "T2_photo": {
+  "tag": "photographs only",
+  "features": [
+   "p_pitch_cm",
+   "p_adv_ratio"
+  ],
+  "penalty": 7.4547199493640015,
+  "K": 0,
+  "change_points_new_segment_starts": [],
+  "gain": 0.0,
+  "crit": [
+   24.0,
+   28.347888929854395,
+   27.519330304757524,
+   29.29193877404228
+  ],
+  "p_perm": null,
+  "matches": {
+   "S11": false,
+   "S49": false
+  },
+  "n_matched": 0,
+  "p_joint": null,
+  "p_placement": null
+ },
+ "T3_cuts": {
+  "n_cuts": 23,
+  "cuts": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23
+  ],
+  "K": 0,
+  "change_points_new_segment_starts_cut": [],
+  "gain": 0.0,
+  "crit": [
+   44.23962244562724,
+   48.445771064836315,
+   55.824169252601216,
+   59.689938755255575,
+   66.8700251641806
+  ],
+  "p_perm": null,
+  "matches": {
+   "S11": false,
+   "S49": false
+  },
+  "n_matched": 0,
+  "p_joint": null
+ },
+ "verdict_T1": "not obtained: hand change detected, at neither seam",
+ "verdict_T1_without_XII": "not obtained: hand change detected, at neither seam"
+}
