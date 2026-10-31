@@ -1,0 +1,30 @@
+anchor_id,pattern,lat,lon,sigma_km,coord_source
+jer_temple,"\b(temple|templum|haram|dome of the rock|sakhra|aqsa|moriah|solomon's porch|porch of solomon)\b",31.77825,35.23534,0.15,research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/places_v3.csv jer_temple
+jer_east_gate,"\b(golden gate|porte dor[ée]e|porta aurea|gate of mercy|bab er.rahm)",31.77889,35.23694,0.05,places_v3.csv jer_east_gate
+jer_siloam,"\b(siloa\w*|silo[ée]|syloe|shiloa\w*|silw[aâ]n)\b",31.770626,35.234836,0.1,research/regional/mandate_maps/features.csv E03 (Pool of Siloam)
+jer_gihon,"\b(gihon|virgin'?s (fountain|well|spring)|fountain of (the )?(blessed )?(virgin|mary)|sitti maryam|fontaine de la vierge)",31.773661,35.23591,0.1,features.csv E02 (Virgin's Fountain)
+jer_bethesda,"\b(bethesda|probatic\w*|sheep.?pool|piscina interior|st\.? anne|sainte anne)",31.78139,35.23583,0.05,places_v3.csv jer_bethesda
+jer_gethsemane,"\b(gethsemane|gethsemani)\b",31.77942,35.23943,0.1,places_v3.csv jer_gethsemane
+jer_olivet,"\b(olivet|mount of olives|mont des oliviers|mons oliveti|jebel et.t[uû]r)\b",31.77942,35.23943,1.0,places_v3.csv jer_gethsemane (foot of the mount); sigma covers the summit
+jer_kidron,"\b(kidron|cedron|kedron|c[ée]dron|jehoshaphat|josaphat|josafat|wadi (en|al|el).nar)\b",31.77701,35.23928,1.0,places_v3.csv jer_kidron_mon; sigma for valley length
+jer_zion,"\b(mount sion|mount zion|mons sion|mont sion|cenacle|coenaculum)\b",31.77167,35.22861,0.3,places_v3.csv mount_zion
+jer_bir_ayyub,"\b(rogel|job'?s well|bir ayy?[uû]b|well of nehemiah|puits de job)",31.7672,35.23599,0.1,places_v3.csv jer_bir_ayyub
+jer_city,"\b(jerusalem|j[ée]rusalem|hierusalem|jherusalem|al.quds|el.kuds|beit al.makdis|bayt al.maqdis|aelia|ilya)\b",31.7788,35.2357,1.0,features.csv E30 (Haram esh-Sharif) as city reference; sigma 1 km for the walled city
+jj_elisha,"\b(elisha|elis[ée]e|eliseus|helisei|ain es.sult[aâ]n)\b",31.870379,35.444767,0.1,features.csv T30 (ʿEin es-Sulṭān)
+jj_quarantana,"\b(quarant\w*|quarent\w*|mount of (the )?temptation|mons quarantana|karantal|kuruntul)\b",31.87472,35.43056,0.3,places_v3.csv doq (Jebel Qarantal)
+jj_jericho,"\b(jericho|j[ée]richo|hiericho|ericha|riha|ar[iî]ha)\b",31.85611,35.46306,1.5,places_v3.csv jericho_area
+jj_choziba,"\b(choziba|chozeba|koziba|st\.? george of|wadi.?(el.)?k[ee]lt|qelt)\b",31.84408,35.41178,0.5,places_v3.csv choziba
+jj_jordan,"\b(jordan|jourdain|jordanis|urdunn|sharia)\b",31.838333,35.539167,5.0,places_v3.csv jordan_ford (lower Jordan near Jericho; river level only)
+jj_hajlah,"\b(calamon|hajl\w*|hoglah|st\.? john (the baptist )?(on|by|of) (the )?jordan|prodromos)\b",31.8018,35.4698,5.5,T01 grid_calibration.json square Pt centre (Palmer XVIII Kusr Hajlah); sigma = half-square plus 2-3 km calibration residual
+jj_feshkha,"\b(feshkha|fashkha)\b",31.714192,35.450602,0.1,features.csv F01
+des_mar_saba,"\b(mar saba|st\.? sabas?|saint.sabas?|s\. saba|laura of sabas|sabas)\b",31.70494,35.33115,0.5,places_v3.csv mar_saba
+des_mird,"\b(mird|castellion|hyrcania)\b",31.719,35.366,0.2,places_v3.csv hyrcania
+des_tekoa,"\b(tekoa|thecua|thekoa|tekua|th[ée]cu[ée]|teku'?a)\b",31.64935,35.22635,4.0,places_v3.csv tekoa_herodium
+des_herodium,"\b(herodium|frank mountain|mountain of the franks|fureid[iî]s)\b",31.6424,35.1614,5.5,T01 grid_calibration.json square Lv centre (Palmer XXI Kh. el-Fureidis); sigma = half-square plus residual
+ger_gerizim,"\b(gerizim|garizim|garizin|gerizzim|jebel et.t[uû]r of n)",32.20082,35.27326,0.5,places_v3.csv gerizim
+ger_nablus,"\b(sichem|shechem|sychem|neapolis|napl[ou]+s[ea]?|naplouse|nablus|nabulus|n[aâ]bulus)\b",32.20082,35.27326,3.0,places_v3.csv gerizim; sigma 3 km covers the town in the pass below the mountain
+ger_jacobs_well,"\b(jacob'?s well|sychar|well of jacob|puits de jacob|balata|joseph'?s tomb|tomb of joseph)\b",32.2003,35.3156,5.5,T01 grid_calibration.json square No centre (Palmer XI Balata); sigma = half-square plus residual
+per_machaerus,"\b(machaerus|mach[ae]rus|mukawir|mekaur)\b",31.56722,35.62417,0.3,research/regional/peraea/gazetteer.csv machaerus
+per_heshbon,"\b(heshbon|hesbon|esebon|hisb[aâ]n|husb[aâ]n)\b",31.80083,35.80889,0.3,peraea/gazetteer.csv tall_hisban
+per_nebo,"\b(mount nebo|mons nebo|abarim|pisgah|phasga)\b",31.76778,35.72528,2.0,peraea/gazetteer.csv kh_al_mukhayyat (town of Nebo); sigma covers the ridge
+per_madaba,"\b(madaba|medeba)\b",31.71667,35.8,0.7,peraea/gazetteer.csv madaba
