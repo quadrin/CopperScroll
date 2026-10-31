@@ -53,6 +53,7 @@ The sandbox applies the case-study methods from the challenge plan (Ephesus, Lin
 | landscape_map_2026-10-31 | Run 26: calibrated landscape map of the landmark words (every 300 m cell a hypothesis), gated on fake-entry calibration | entries with mapped landmarks (50) | **done 31 Oct: not obtained; no model passed both the gate and the 1940s-map check, so the scroll was not scored. Measured coverage: 27 % of 1940s-mapped features have a same-class modern record in their cell (recording rate c ≈ 0.1 after chance matches); class-level evidence moves the odds about 1.4×** ([RESULT](landscape_map_2026-10-31/RESULT.md)) |
 | west_bank_inventory_2026-10-31 | Fifth inventory: the West Bank and East Jerusalem Archaeological Database (Greenberg & Keinan 2009) added to lane J's table | all | **done 31 Oct: 6,950 sites; inventory v2 = 16,383 rows** ([README](west_bank_inventory_2026-10-31/README.md)) |
 | landscape_map_1km_2026-10-31 | Run 27: 1 km map on inventory v2, gated on 89 fresh 1940s map features read blind from 60 random windows | entries with mapped landmarks | **done 31 Oct: not obtained; calibrated (50 %/90 % coverage 0.49/0.90) but uninformative (mean BF 0.99×), so the scroll was not scored. Class-level landmark matching is closed as a route to place identification** ([RESULT](landscape_map_1km_2026-10-31/RESULT.md)) |
+| attribute_inventory_2026-10-31 | Step 1 toward run 28: a feature-attribute inventory (sizes, openings and their directions, steps, plaster, pillars, relations) keyed by two readers from 13 text sources, starting with the 1993 cave survey (*ʿAtiqot* 41) | entries with mapped landmarks | **open 31 Oct: schema, reader instructions and source list committed before any keying** ([README](attribute_inventory_2026-10-31/README.md)) |
 
 Owner approval for these runs (27 Oct, 00:55 Asia/Shanghai): "Create some new creative/clever hypotheses and run them in parallel. You have my explicit approval ... short of sending emails to people."
 
@@ -68,3 +69,4 @@ Addendum A1 to run 25 (30 Oct, 14:02 America/Los_Angeles): "go for it".
 
 Run 26 approval (31 Oct, 08:56 America/Los_Angeles): "Sounds good. Shall we begin?"; final revision (09:16): "go ahead".
 Run 27 and the fifth inventory (31 Oct, 09:43 and 09:57 America/Los_Angeles): "yes go for these", "yes grab these", "sure this too".
+Held areas lifted (31 Oct, 14:31 America/Los_Angeles): "No Holding! We don't need to hold anymore". Attribute inventory: "Yeah. so what could we do now? With these things" (14:27).
