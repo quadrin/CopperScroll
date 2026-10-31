@@ -1,0 +1,5095 @@
+{
+"K": 4,
+"seed": 20261030,
+"dropped": {
+"short_or_nonhebrew": 60,
+"flag": 114,
+"name": 44,
+"touched": 219,
+"target_or_xii8_12": 34,
+"too_few_rivals": 29
+},
+"variant_positions": 793,
+"items": [
+{
+"id": "1.1.3",
+"token_index": 3,
+"true": "תחת",
+"rivals": [
+"חחת",
+"תהת",
+"תחה",
+"תתת"
+],
+"split": "held_out"
+},
+{
+"id": "1.2.0",
+"token_index": 4,
+"true": "המעלות",
+"rivals": [
+"המללות",
+"המעלוה",
+"הנעלות",
+"תמעלות"
+],
+"split": "held_out"
+},
+{
+"id": "1.2.2",
+"token_index": 6,
+"true": "למזרח",
+"rivals": [
+"לבזרח",
+"למזדח",
+"למזוח",
+"למזרת"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.3.3",
+"token_index": 11,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כסו",
+"כסי",
+"כסנ"
+],
+"split": "held_out"
+},
+{
+"id": "1.4.0",
+"token_index": 13,
+"true": "משקל",
+"rivals": [
+"ישקל",
+"משמל",
+"קשקל",
+"תשקל"
+],
+"split": "held_out"
+},
+{
+"id": "1.4.1",
+"token_index": 14,
+"true": "ככרינ",
+"rivals": [
+"בכרינ",
+"כברינ",
+"ככריה",
+"כקרינ"
+],
+"split": "held_out"
+},
+{
+"id": "1.4.2",
+"token_index": 15,
+"true": "שבעשרה",
+"rivals": [
+"שבעשטה",
+"שבעשרח",
+"שבעשרת",
+"שנעשרה"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.5.3",
+"token_index": 20,
+"true": "עשתות",
+"rivals": [
+"סשתות",
+"עשטות",
+"עשתוח",
+"עשתומ"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.6.2",
+"token_index": 23,
+"true": "בבור",
+"rivals": [
+"בבוה",
+"בבוי",
+"בצור",
+"מבור"
+],
+"split": "held_out"
+},
+{
+"id": "1.6.3",
+"token_index": 24,
+"true": "הגדול",
+"rivals": [
+"האדול",
+"הגוול",
+"חגדול",
+"רגדול"
+],
+"split": "held_out"
+},
+{
+"id": "1.8.0",
+"token_index": 31,
+"true": "נגד",
+"rivals": [
+"וגד",
+"נגי",
+"רגד",
+"תגד"
+],
+"split": "held_out"
+},
+{
+"id": "1.8.1",
+"token_index": 32,
+"true": "הפתח",
+"rivals": [
+"הפנח",
+"הפתת",
+"חפתח",
+"תפתח"
+],
+"split": "held_out"
+},
+{
+"id": "1.8.2",
+"token_index": 33,
+"true": "העליונ",
+"rivals": [
+"העלנונ",
+"הרליונ",
+"חעליונ",
+"תעליונ"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.8.3",
+"token_index": 34,
+"true": "ככרינ",
+"rivals": [
+"בכרינ",
+"כברינ",
+"ככריי",
+"ככריפ"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.8.4",
+"token_index": 35,
+"true": "תשע",
+"rivals": [
+"השע",
+"חשע",
+"נשע",
+"תשא"
+],
+"split": "held_out"
+},
+{
+"id": "1.8.5",
+"token_index": 36,
+"true": "מאת",
+"rivals": [
+"באת",
+"מאה",
+"מאח",
+"נאת"
+],
+"split": "held_out"
+},
+{
+"id": "1.9.3",
+"token_index": 40,
+"true": "כלי",
+"rivals": [
+"בלי",
+"כלז",
+"כלנ",
+"כלפ"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.9.4",
+"token_index": 41,
+"true": "דמע",
+"rivals": [
+"דבע",
+"דכע",
+"דמא",
+"ימע"
+],
+"split": "held_out"
+},
+{
+"id": "1.9.5",
+"token_index": 42,
+"true": "בלגינ",
+"rivals": [
+"בלגיה",
+"בלגרנ",
+"דלגינ",
+"מלגינ"
+],
+"split": "held_out"
+},
+{
+"id": "1.10.0",
+"token_index": 44,
+"true": "הכל",
+"rivals": [
+"המל",
+"חכל",
+"נכל",
+"תכל"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.11.0",
+"token_index": 50,
+"true": "שני",
+"rivals": [
+"שיי",
+"שנמ",
+"שרי",
+"שתי"
+],
+"split": "held_out"
+},
+{
+"id": "1.11.2",
+"token_index": 52,
+"true": "פתחו",
+"rivals": [
+"בתחו",
+"פהחו",
+"פתחר",
+"פתמו"
+],
+"split": "held_out"
+},
+{
+"id": "1.11.3",
+"token_index": 53,
+"true": "בשולי",
+"rivals": [
+"בשולז",
+"בשנלי",
+"כשולי",
+"פשולי"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.11.4",
+"token_index": 54,
+"true": "האמא",
+"rivals": [
+"האמה",
+"האקא",
+"נאמא",
+"תאמא"
+],
+"split": "held_out"
+},
+{
+"id": "1.11.5",
+"token_index": 55,
+"true": "מנ",
+"rivals": [
+"בנ",
+"הנ",
+"מו",
+"מת"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.11.6",
+"token_index": 56,
+"true": "הצפונ",
+"rivals": [
+"הצנונ",
+"הצפדנ",
+"הצפוב",
+"חצפונ"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.13.5",
+"token_index": 68,
+"true": "אל",
+"rivals": [
+"אע",
+"גל",
+"הל",
+"על"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.14.0",
+"token_index": 70,
+"true": "גבה",
+"rivals": [
+"גבנ",
+"גבת",
+"גכה",
+"גמה"
+],
+"split": "held_out"
+},
+{
+"id": "1.14.1",
+"token_index": 71,
+"true": "מנ",
+"rivals": [
+"טנ",
+"ינ",
+"כנ",
+"ננ"
+],
+"split": "held_out"
+},
+{
+"id": "1.14.3",
+"token_index": 73,
+"true": "אמות",
+"rivals": [
+"אמוה",
+"אמוח",
+"אמזת",
+"אנות"
+],
+"split": "held_out"
+},
+{
+"id": "1.14.4",
+"token_index": 74,
+"true": "שלוש",
+"rivals": [
+"שלוו",
+"שלזש",
+"שלפש",
+"שלרש"
+],
+"split": "held_out"
+},
+{
+"id": "2.1.0",
+"token_index": 79,
+"true": "בבור",
+"rivals": [
+"בבוד",
+"בכור",
+"בפור",
+"כבור"
+],
+"split": "held_out"
+},
+{
+"id": "2.1.2",
+"token_index": 81,
+"true": "שתחת",
+"rivals": [
+"שחחת",
+"שטחת",
+"שתהת",
+"שתחח"
+],
+"split": "held_out"
+},
+{
+"id": "2.1.3",
+"token_index": 82,
+"true": "המעלות",
+"rivals": [
+"הכעלות",
+"המעלוה",
+"המעלזת",
+"תמעלות"
+],
+"split": "held_out"
+},
+{
+"id": "2.2.0",
+"token_index": 83,
+"true": "ככרינ",
+"rivals": [
+"כברינ",
+"ככבינ",
+"ככרזנ",
+"ככריו"
+],
+"split": "held_out"
+},
+{
+"id": "2.3.0",
+"token_index": 86,
+"true": "במערת",
+"rivals": [
+"בבערת",
+"במארת",
+"במערח",
+"בקערת"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.4.1",
+"token_index": 92,
+"true": "עשתות",
+"rivals": [
+"עשהות",
+"עשחות",
+"עשתזת",
+"עשתרת"
+],
+"split": "held_out"
+},
+{
+"id": "2.4.2",
+"token_index": 93,
+"true": "זהב",
+"rivals": [
+"זהכ",
+"זחב",
+"זמב",
+"זתב"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.4.3",
+"token_index": 94,
+"true": "ששינ",
+"rivals": [
+"ששיי",
+"ששית",
+"ששפנ",
+"ששרנ"
+],
+"split": "held_out"
+},
+{
+"id": "2.4.4",
+"token_index": 95,
+"true": "וחמש",
+"rivals": [
+"ובמש",
+"והמש",
+"וחמו",
+"רחמש"
+],
+"split": "held_out"
+},
+{
+"id": "2.6.3",
+"token_index": 105,
+"true": "וכספ",
+"rivals": [
+"דכספ",
+"ובספ",
+"וכסי",
+"זכספ"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.6.4",
+"token_index": 106,
+"true": "ככרינ",
+"rivals": [
+"בכרינ",
+"ככריב",
+"ככריה",
+"כקרינ"
+],
+"split": "held_out"
+},
+{
+"id": "2.6.5",
+"token_index": 107,
+"true": "שבעינ",
+"rivals": [
+"שבעדנ",
+"שבעזנ",
+"שבעיר",
+"שכעינ"
+],
+"split": "held_out"
+},
+{
+"id": "2.7.0",
+"token_index": 108,
+"true": "בבור",
+"rivals": [
+"בבוו",
+"בבוז",
+"במור",
+"רבור"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.7.1",
+"token_index": 109,
+"true": "שנגד",
+"rivals": [
+"שוגד",
+"שנגכ",
+"שנגנ",
+"שנגר"
+],
+"split": "held_out"
+},
+{
+"id": "2.8.0",
+"token_index": 112,
+"true": "רחוק",
+"rivals": [
+"יחוק",
+"רהוק",
+"רחבק",
+"רחזק"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.8.4",
+"token_index": 116,
+"true": "בו",
+"rivals": [
+"בב",
+"בז",
+"דו",
+"מו"
+],
+"split": "held_out"
+},
+{
+"id": "2.8.5",
+"token_index": 117,
+"true": "כלינ",
+"rivals": [
+"כליו",
+"כליי",
+"כליר",
+"כלמנ"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.9.1",
+"token_index": 119,
+"true": "שבו",
+"rivals": [
+"שבנ",
+"שכו",
+"שנו",
+"שרו"
+],
+"split": "held_out"
+},
+{
+"id": "2.9.2",
+"token_index": 120,
+"true": "ככרינ",
+"rivals": [
+"כברינ",
+"ככוינ",
+"כככינ",
+"ככרימ"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.9.3",
+"token_index": 121,
+"true": "עסר",
+"rivals": [
+"אסר",
+"ססר",
+"עסה",
+"עסכ"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.10.0",
+"token_index": 123,
+"true": "בבור",
+"rivals": [
+"בבוכ",
+"בברר",
+"בבשר",
+"בכור"
+],
+"split": "held_out"
+},
+{
+"id": "2.10.3",
+"token_index": 126,
+"true": "מנ",
+"rivals": [
+"מה",
+"מו",
+"ממ",
+"ננ"
+],
+"split": "held_out"
+},
+{
+"id": "2.10.4",
+"token_index": 127,
+"true": "המזרח",
+"rivals": [
+"המזיח",
+"המזרה",
+"התזרח",
+"תמזרח"
+],
+"split": "held_out"
+},
+{
+"id": "2.11.4",
+"token_index": 132,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כסכ",
+"כעפ",
+"רספ"
+],
+"split": "held_out"
+},
+{
+"id": "2.12.1",
+"token_index": 135,
+"true": "תחת",
+"rivals": [
+"החת",
+"חחת",
+"נחת",
+"תחח"
+],
+"split": "held_out"
+},
+{
+"id": "2.12.2",
+"token_index": 136,
+"true": "הספ",
+"rivals": [
+"הסו",
+"הסכ",
+"חספ",
+"תספ"
+],
+"split": "held_out"
+},
+{
+"id": "2.12.3",
+"token_index": 137,
+"true": "הגדול",
+"rivals": [
+"הגרול",
+"חגדול",
+"רגדול",
+"תגדול"
+],
+"split": "held_out"
+},
+{
+"id": "2.13.3",
+"token_index": 141,
+"true": "במקצע",
+"rivals": [
+"בבקצע",
+"דמקצע",
+"ימקצע",
+"כמקצע"
+],
+"split": "held_out"
+},
+{
+"id": "2.14.1",
+"token_index": 143,
+"true": "חפור",
+"rivals": [
+"הפור",
+"חבור",
+"חפוד",
+"חרור"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.15.0",
+"token_index": 146,
+"true": "ככרינ",
+"rivals": [
+"בכרינ",
+"ככוינ",
+"ככרזנ",
+"ככריפ"
+],
+"split": "calibration_training"
+},
+{
+"id": "3.1.3",
+"token_index": 151,
+"true": "הפנא",
+"rivals": [
+"הכנא",
+"הפבא",
+"הפוא",
+"חפנא"
+],
+"split": "held_out"
+},
+{
+"id": "3.1.4",
+"token_index": 152,
+"true": "הדרו",
+"rivals": [
+"הדרר",
+"הדרש",
+"מדרו",
+"תדרו"
+],
+"split": "held_out"
+},
+{
+"id": "3.2.0",
+"token_index": 153,
+"true": "מית",
+"rivals": [
+"בית",
+"מזת",
+"מיה",
+"מיח"
+],
+"split": "held_out"
+},
+{
+"id": "3.2.2",
+"token_index": 155,
+"true": "אמות",
+"rivals": [
+"אבות",
+"אמוה",
+"אמנת",
+"עמות"
+],
+"split": "held_out"
+},
+{
+"id": "3.2.3",
+"token_index": 156,
+"true": "תשע",
+"rivals": [
+"חשע",
+"טשע",
+"נשע",
+"תשא"
+],
+"split": "held_out"
+},
+{
+"id": "3.2.4",
+"token_index": 157,
+"true": "כלי",
+"rivals": [
+"בלי",
+"כלז",
+"כלמ",
+"רלי"
+],
+"split": "held_out"
+},
+{
+"id": "3.2.6",
+"token_index": 159,
+"true": "וזהב",
+"rivals": [
+"דזהב",
+"וזנב",
+"ויהב",
+"זזהב"
+],
+"split": "held_out"
+},
+{
+"id": "3.3.0",
+"token_index": 161,
+"true": "דמע",
+"rivals": [
+"דהע",
+"דקע",
+"ומע",
+"רמע"
+],
+"split": "held_out"
+},
+{
+"id": "3.3.1",
+"token_index": 162,
+"true": "מזרקות",
+"rivals": [
+"בזרקות",
+"מזרקוה",
+"מירקות",
+"נזרקות"
+],
+"split": "held_out"
+},
+{
+"id": "3.3.2",
+"token_index": 163,
+"true": "כוסות",
+"rivals": [
+"בוסות",
+"כוסוח",
+"כחסות",
+"כנסות"
+],
+"split": "calibration_training"
+},
+{
+"id": "3.3.3",
+"token_index": 164,
+"true": "מנקיאות",
+"rivals": [
+"מנקיאפת",
+"מנקנאות",
+"מפקיאות",
+"מתקיאות"
+],
+"split": "calibration_training"
+},
+{
+"id": "3.4.0",
+"token_index": 165,
+"true": "קסאות",
+"rivals": [
+"קסאוה",
+"קסאונ",
+"קסארת",
+"קסגות"
+],
+"split": "held_out"
+},
+{
+"id": "3.4.3",
+"token_index": 168,
+"true": "מאות",
+"rivals": [
+"באות",
+"טאות",
+"יאות",
+"מאשת"
+],
+"split": "held_out"
+},
+{
+"id": "3.4.4",
+"token_index": 169,
+"true": "ותשעה",
+"rivals": [
+"דתשעה",
+"ותשעח",
+"ותשעת",
+"רתשעה"
+],
+"split": "held_out"
+},
+{
+"id": "3.5.3",
+"token_index": 173,
+"true": "המזרח",
+"rivals": [
+"הבזרח",
+"המררח",
+"חמזרח",
+"תמזרח"
+],
+"split": "held_out"
+},
+{
+"id": "3.6.0",
+"token_index": 174,
+"true": "ית",
+"rivals": [
+"יה",
+"יח",
+"ימ",
+"פת"
+],
+"split": "held_out"
+},
+{
+"id": "3.6.1",
+"token_index": 175,
+"true": "חפר",
+"rivals": [
+"הפר",
+"חיר",
+"חפב",
+"מפר"
+],
+"split": "calibration_training"
+},
+{
+"id": "3.6.2",
+"token_index": 176,
+"true": "אמות",
+"rivals": [
+"אבות",
+"אמוה",
+"אמוח",
+"עמות"
+],
+"split": "calibration_training"
+},
+{
+"id": "3.6.4",
+"token_index": 178,
+"true": "עסרה",
+"rivals": [
+"עסדה",
+"עסנה",
+"עסרח",
+"עסרת"
+],
+"split": "held_out"
+},
+{
+"id": "3.6.5",
+"token_index": 179,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כעפ",
+"מספ",
+"פספ"
+],
+"split": "calibration_training"
+},
+{
+"id": "3.7.0",
+"token_index": 180,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כק",
+"רכ"
+],
+"split": "held_out"
+},
+{
+"id": "3.9.0",
+"token_index": 186,
+"true": "כלי",
+"rivals": [
+"בלי",
+"כלז",
+"כלפ",
+"קלי"
+],
+"split": "held_out"
+},
+{
+"id": "3.9.1",
+"token_index": 187,
+"true": "דמע",
+"rivals": [
+"דיע",
+"דמס",
+"דנע",
+"רמע"
+],
+"split": "held_out"
+},
+{
+"id": "3.10.0",
+"token_index": 190,
+"true": "תחת",
+"rivals": [
+"חחת",
+"תהת",
+"תחה",
+"תתת"
+],
+"split": "held_out"
+},
+{
+"id": "3.10.1",
+"token_index": 191,
+"true": "הפנא",
+"rivals": [
+"הבנא",
+"חפנא",
+"נפנא",
+"תפנא"
+],
+"split": "held_out"
+},
+{
+"id": "3.10.2",
+"token_index": 192,
+"true": "המערבית",
+"rivals": [
+"המערמית",
+"המערפית",
+"חמערבית",
+"תמערבית"
+],
+"split": "held_out"
+},
+{
+"id": "3.12.1",
+"token_index": 197,
+"true": "אמות",
+"rivals": [
+"אטות",
+"אמוח",
+"אמחת",
+"אמנת"
+],
+"split": "held_out"
+},
+{
+"id": "3.13.2",
+"token_index": 202,
+"true": "שלוש",
+"rivals": [
+"ולוש",
+"שלזש",
+"שלרש",
+"שעוש"
+],
+"split": "held_out"
+},
+{
+"id": "3.13.3",
+"token_index": 203,
+"true": "ככ",
+"rivals": [
+"בכ",
+"דכ",
+"כב",
+"כפ"
+],
+"split": "calibration_training"
+},
+{
+"id": "4.1.0",
+"token_index": 205,
+"true": "בבור",
+"rivals": [
+"במור",
+"ובור",
+"כבור",
+"מבור"
+],
+"split": "held_out"
+},
+{
+"id": "4.1.1",
+"token_index": 206,
+"true": "הגדול",
+"rivals": [
+"הגרול",
+"חגדול",
+"מגדול",
+"תגדול"
+],
+"split": "calibration_training"
+},
+{
+"id": "4.1.4",
+"token_index": 209,
+"true": "בעמוד",
+"rivals": [
+"בלמוד",
+"כעמוד",
+"מעמוד",
+"פעמוד"
+],
+"split": "held_out"
+},
+{
+"id": "4.2.0",
+"token_index": 210,
+"true": "בצפונו",
+"rivals": [
+"בצפוננ",
+"בצפונר",
+"בצפותו",
+"מצפונו"
+],
+"split": "calibration_training"
+},
+{
+"id": "4.4.3",
+"token_index": 221,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כסי",
+"כעפ",
+"קספ"
+],
+"split": "held_out"
+},
+{
+"id": "4.5.0",
+"token_index": 222,
+"true": "ככ",
+"rivals": [
+"כב",
+"כמ",
+"כק",
+"מכ"
+],
+"split": "calibration_training"
+},
+{
+"id": "4.6.0",
+"token_index": 224,
+"true": "בינ",
+"rivals": [
+"ביב",
+"ביד",
+"ביר",
+"כינ"
+],
+"split": "held_out"
+},
+{
+"id": "4.7.2",
+"token_index": 231,
+"true": "אמות",
+"rivals": [
+"אבות",
+"אמבת",
+"אמוה",
+"אמזת"
+],
+"split": "calibration_training"
+},
+{
+"id": "4.7.3",
+"token_index": 232,
+"true": "שלוש",
+"rivals": [
+"שלנש",
+"שלפש",
+"שלשש",
+"שעוש"
+],
+"split": "held_out"
+},
+{
+"id": "4.8.0",
+"token_index": 233,
+"true": "שמ",
+"rivals": [
+"שב",
+"שט",
+"שנ",
+"שת"
+],
+"split": "held_out"
+},
+{
+"id": "4.8.1",
+"token_index": 234,
+"true": "שני",
+"rivals": [
+"שדי",
+"שוי",
+"שנז",
+"שרי"
+],
+"split": "held_out"
+},
+{
+"id": "4.8.2",
+"token_index": 235,
+"true": "דודינ",
+"rivals": [
+"דווינ",
+"דורינ",
+"וודינ",
+"רודינ"
+],
+"split": "calibration_training"
+},
+{
+"id": "4.8.4",
+"token_index": 237,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כסי",
+"כסנ",
+"פספ"
+],
+"split": "held_out"
+},
+{
+"id": "4.10.1",
+"token_index": 243,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כטפ",
+"כסב",
+"כסר"
+],
+"split": "held_out"
+},
+{
+"id": "4.10.2",
+"token_index": 244,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כר",
+"קכ"
+],
+"split": "held_out"
+},
+{
+"id": "4.10.3",
+"token_index": 245,
+"true": "מאתינ",
+"rivals": [
+"מאחינ",
+"מאתזנ",
+"מגתינ",
+"נאתינ"
+],
+"split": "held_out"
+},
+{
+"id": "4.12.1",
+"token_index": 251,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כסר",
+"מספ",
+"פספ"
+],
+"split": "calibration_training"
+},
+{
+"id": "4.12.2",
+"token_index": 252,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כמ",
+"פכ",
+"קכ"
+],
+"split": "held_out"
+},
+{
+"id": "4.12.3",
+"token_index": 253,
+"true": "שבעינ",
+"rivals": [
+"שבעדנ",
+"שכעינ",
+"שמעינ",
+"שפעינ"
+],
+"split": "held_out"
+},
+{
+"id": "4.13.4",
+"token_index": 258,
+"true": "חפור",
+"rivals": [
+"ופור",
+"חפוד",
+"חפחר",
+"תפור"
+],
+"split": "calibration_training"
+},
+{
+"id": "4.14.1",
+"token_index": 260,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כטפ",
+"כסב",
+"פספ"
+],
+"split": "calibration_training"
+},
+{
+"id": "4.14.2",
+"token_index": 261,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כפ",
+"רכ"
+],
+"split": "held_out"
+},
+{
+"id": "5.3.1",
+"token_index": 275,
+"true": "חפור",
+"rivals": [
+"הפור",
+"חוור",
+"חפוע",
+"חפחר"
+],
+"split": "held_out"
+},
+{
+"id": "5.4.1",
+"token_index": 279,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כטפ",
+"כסכ",
+"כסר"
+],
+"split": "held_out"
+},
+{
+"id": "5.4.2",
+"token_index": 280,
+"true": "ככ",
+"rivals": [
+"בכ",
+"דכ",
+"כב",
+"מכ"
+],
+"split": "held_out"
+},
+{
+"id": "5.6.2",
+"token_index": 287,
+"true": "כאלינ",
+"rivals": [
+"כאלזנ",
+"כאלימ",
+"כאלננ",
+"מאלינ"
+],
+"split": "held_out"
+},
+{
+"id": "5.7.0",
+"token_index": 289,
+"true": "דמע",
+"rivals": [
+"דבע",
+"דכע",
+"דקע",
+"רמע"
+],
+"split": "held_out"
+},
+{
+"id": "5.8.0",
+"token_index": 292,
+"true": "מעל",
+"rivals": [
+"העל",
+"חעל",
+"מרל",
+"תעל"
+],
+"split": "calibration_training"
+},
+{
+"id": "5.9.1",
+"token_index": 297,
+"true": "עד",
+"rivals": [
+"עי",
+"עכ",
+"ער",
+"רד"
+],
+"split": "calibration_training"
+},
+{
+"id": "5.10.0",
+"token_index": 300,
+"true": "אמות",
+"rivals": [
+"אמוה",
+"אמנת",
+"אנות",
+"אקות"
+],
+"split": "held_out"
+},
+{
+"id": "5.10.1",
+"token_index": 301,
+"true": "ששינ",
+"rivals": [
+"ששדנ",
+"ששיי",
+"ששימ",
+"ששננ"
+],
+"split": "held_out"
+},
+{
+"id": "5.10.2",
+"token_index": 302,
+"true": "חפור",
+"rivals": [
+"חבור",
+"חפוו",
+"חפופ",
+"מפור"
+],
+"split": "held_out"
+},
+{
+"id": "5.10.3",
+"token_index": 303,
+"true": "אמות",
+"rivals": [
+"אבות",
+"אמוח",
+"אמזת",
+"אמפת"
+],
+"split": "held_out"
+},
+{
+"id": "5.11.0",
+"token_index": 304,
+"true": "שלוש",
+"rivals": [
+"שלדש",
+"שלוו",
+"שלזש",
+"שלפש"
+],
+"split": "held_out"
+},
+{
+"id": "5.11.1",
+"token_index": 305,
+"true": "כספ",
+"rivals": [
+"בספ",
+"דספ",
+"כסב",
+"כסר"
+],
+"split": "held_out"
+},
+{
+"id": "5.11.2",
+"token_index": 306,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כמ",
+"כפ"
+],
+"split": "held_out"
+},
+{
+"id": "5.12.0",
+"token_index": 308,
+"true": "בקבר",
+"rivals": [
+"בקבו",
+"בקבי",
+"בקרר",
+"כקבר"
+],
+"split": "held_out"
+},
+{
+"id": "5.14.1",
+"token_index": 315,
+"true": "אמות",
+"rivals": [
+"אהות",
+"אמוה",
+"אמזת",
+"אתות"
+],
+"split": "calibration_training"
+},
+{
+"id": "5.14.2",
+"token_index": 316,
+"true": "שבע",
+"rivals": [
+"שבא",
+"שכע",
+"שמע",
+"שרע"
+],
+"split": "held_out"
+},
+{
+"id": "5.14.3",
+"token_index": 317,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כק",
+"קכ"
+],
+"split": "held_out"
+},
+{
+"id": "6.1.1",
+"token_index": 320,
+"true": "העמוד",
+"rivals": [
+"העיוד",
+"העמוו",
+"חעמוד",
+"תעמוד"
+],
+"split": "held_out"
+},
+{
+"id": "6.1.3",
+"token_index": 322,
+"true": "שני",
+"rivals": [
+"וני",
+"שמי",
+"שנז",
+"שננ"
+],
+"split": "held_out"
+},
+{
+"id": "6.3.1",
+"token_index": 327,
+"true": "הצפוני",
+"rivals": [
+"הבפוני",
+"הצפבני",
+"הצפונז",
+"הצרוני"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.3.2",
+"token_index": 328,
+"true": "חפור",
+"rivals": [
+"חפדר",
+"חפוד",
+"חפוה",
+"תפור"
+],
+"split": "held_out"
+},
+{
+"id": "6.4.1",
+"token_index": 330,
+"true": "שלוש",
+"rivals": [
+"שלוו",
+"שלחש",
+"שלנש",
+"שלפש"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.4.2",
+"token_index": 331,
+"true": "שמ",
+"rivals": [
+"שב",
+"שכ",
+"שנ",
+"שק"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.4.3",
+"token_index": 332,
+"true": "קלל",
+"rivals": [
+"כלל",
+"מלל",
+"קלע",
+"קעל"
+],
+"split": "held_out"
+},
+{
+"id": "6.5.0",
+"token_index": 333,
+"true": "בו",
+"rivals": [
+"בד",
+"בז",
+"חו",
+"כו"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.5.1",
+"token_index": 334,
+"true": "ספר",
+"rivals": [
+"סבר",
+"ספב",
+"ספה",
+"סרר"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.5.2",
+"token_index": 335,
+"true": "אחד",
+"rivals": [
+"אהד",
+"אחו",
+"אתד",
+"החד"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.5.3",
+"token_index": 336,
+"true": "תחתו",
+"rivals": [
+"החתו",
+"חחתו",
+"תהתו",
+"תחנו"
+],
+"split": "held_out"
+},
+{
+"id": "6.6.0",
+"token_index": 337,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כמ",
+"כק"
+],
+"split": "held_out"
+},
+{
+"id": "6.7.0",
+"token_index": 339,
+"true": "במערא",
+"rivals": [
+"במררא",
+"כמערא",
+"ממערא",
+"צמערא"
+],
+"split": "held_out"
+},
+{
+"id": "6.8.2",
+"token_index": 344,
+"true": "הצופא",
+"rivals": [
+"הצוכא",
+"הצופע",
+"הצורא",
+"הצשפא"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.9.0",
+"token_index": 345,
+"true": "למזרח",
+"rivals": [
+"לכזרח",
+"למזהח",
+"למזרה",
+"למזרת"
+],
+"split": "held_out"
+},
+{
+"id": "6.9.1",
+"token_index": 346,
+"true": "חפר",
+"rivals": [
+"הפר",
+"חור",
+"חיר",
+"חפה"
+],
+"split": "held_out"
+},
+{
+"id": "6.9.2",
+"token_index": 347,
+"true": "בפתח",
+"rivals": [
+"בפהח",
+"בפתת",
+"ברתח",
+"כפתח"
+],
+"split": "held_out"
+},
+{
+"id": "6.10.0",
+"token_index": 348,
+"true": "אמות",
+"rivals": [
+"אמומ",
+"אמזת",
+"אמנת",
+"אמרת"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.10.1",
+"token_index": 349,
+"true": "תשע",
+"rivals": [
+"השע",
+"חשע",
+"משע",
+"תשר"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.10.2",
+"token_index": 350,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כמ",
+"פכ"
+],
+"split": "held_out"
+},
+{
+"id": "6.11.2",
+"token_index": 354,
+"true": "בצד",
+"rivals": [
+"בצו",
+"וצד",
+"כצד",
+"מצד"
+],
+"split": "held_out"
+},
+{
+"id": "6.12.0",
+"token_index": 355,
+"true": "המערבי",
+"rivals": [
+"המערדי",
+"המערכי",
+"המערני",
+"חמערבי"
+],
+"split": "held_out"
+},
+{
+"id": "6.12.1",
+"token_index": 356,
+"true": "חפר",
+"rivals": [
+"הפר",
+"חיר",
+"חפד",
+"חפז"
+],
+"split": "held_out"
+},
+{
+"id": "6.12.2",
+"token_index": 357,
+"true": "אמות",
+"rivals": [
+"אמוה",
+"אמוח",
+"אמפת",
+"אתות"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.13.0",
+"token_index": 358,
+"true": "שתימ",
+"rivals": [
+"שמימ",
+"שתזמ",
+"שתית",
+"שתפמ"
+],
+"split": "held_out"
+},
+{
+"id": "6.13.1",
+"token_index": 359,
+"true": "עסרה",
+"rivals": [
+"עסדה",
+"עסהה",
+"עסזה",
+"עסרת"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.13.2",
+"token_index": 360,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כד",
+"קכ"
+],
+"split": "held_out"
+},
+{
+"id": "7.2.0",
+"token_index": 368,
+"true": "תשע",
+"rivals": [
+"השע",
+"חשע",
+"טשע",
+"תשא"
+],
+"split": "calibration_training"
+},
+{
+"id": "7.2.1",
+"token_index": 369,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כד",
+"כמ"
+],
+"split": "held_out"
+},
+{
+"id": "7.3.0",
+"token_index": 371,
+"true": "באמא",
+"rivals": [
+"באבא",
+"כאמא",
+"מאמא",
+"ראמא"
+],
+"split": "calibration_training"
+},
+{
+"id": "7.5.0",
+"token_index": 378,
+"true": "בארבע",
+"rivals": [
+"בארמע",
+"בהרבע",
+"בערבע",
+"פארבע"
+],
+"split": "held_out"
+},
+{
+"id": "7.6.0",
+"token_index": 381,
+"true": "משח",
+"rivals": [
+"משב",
+"משה",
+"משת",
+"תשח"
+],
+"split": "calibration_training"
+},
+{
+"id": "7.6.1",
+"token_index": 382,
+"true": "אמות",
+"rivals": [
+"אמוה",
+"אמוח",
+"אמחת",
+"גמות"
+],
+"split": "held_out"
+},
+{
+"id": "7.7.0",
+"token_index": 385,
+"true": "ככרינ",
+"rivals": [
+"בכרינ",
+"ככעינ",
+"ככפינ",
+"ככריפ"
+],
+"split": "held_out"
+},
+{
+"id": "7.7.1",
+"token_index": 386,
+"true": "ארבע",
+"rivals": [
+"אעבע",
+"ארבר",
+"אריע",
+"ארכע"
+],
+"split": "held_out"
+},
+{
+"id": "7.7.2",
+"token_index": 387,
+"true": "מאות",
+"rivals": [
+"חאות",
+"מאדת",
+"מאוח",
+"מאזת"
+],
+"split": "held_out"
+},
+{
+"id": "7.8.0",
+"token_index": 388,
+"true": "במערא",
+"rivals": [
+"בכערא",
+"במעזא",
+"במערע",
+"בקערא"
+],
+"split": "held_out"
+},
+{
+"id": "7.9.3",
+"token_index": 395,
+"true": "אמות",
+"rivals": [
+"איות",
+"אמוה",
+"אמוח",
+"אמונ"
+],
+"split": "held_out"
+},
+{
+"id": "7.10.2",
+"token_index": 399,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כסר",
+"כעפ",
+"מספ"
+],
+"split": "held_out"
+},
+{
+"id": "7.12.1",
+"token_index": 406,
+"true": "חפור",
+"rivals": [
+"חפוד",
+"חפונ",
+"חפחר",
+"חפשר"
+],
+"split": "held_out"
+},
+{
+"id": "7.12.2",
+"token_index": 407,
+"true": "אמות",
+"rivals": [
+"אמוה",
+"אמונ",
+"אמנת",
+"אתות"
+],
+"split": "calibration_training"
+},
+{
+"id": "7.12.3",
+"token_index": 408,
+"true": "שבע",
+"rivals": [
+"שבל",
+"שוע",
+"שכע",
+"שמע"
+],
+"split": "held_out"
+},
+{
+"id": "7.13.0",
+"token_index": 409,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כמ",
+"קכ"
+],
+"split": "calibration_training"
+},
+{
+"id": "7.14.0",
+"token_index": 411,
+"true": "על",
+"rivals": [
+"אל",
+"סל",
+"עע",
+"רל"
+],
+"split": "held_out"
+},
+{
+"id": "7.15.1",
+"token_index": 418,
+"true": "חפור",
+"rivals": [
+"בפור",
+"חפופ",
+"חפפר",
+"תפור"
+],
+"split": "calibration_training"
+},
+{
+"id": "7.15.2",
+"token_index": 419,
+"true": "אמות",
+"rivals": [
+"אמוח",
+"אמוט",
+"אמומ",
+"אנות"
+],
+"split": "held_out"
+},
+{
+"id": "7.15.3",
+"token_index": 420,
+"true": "שלוש",
+"rivals": [
+"שלזש",
+"שלנש",
+"שלרש",
+"שלשש"
+],
+"split": "held_out"
+},
+{
+"id": "7.15.4",
+"token_index": 421,
+"true": "עד",
+"rivals": [
+"סד",
+"עו",
+"ענ",
+"ער"
+],
+"split": "calibration_training"
+},
+{
+"id": "7.16.0",
+"token_index": 423,
+"true": "ככ",
+"rivals": [
+"בכ",
+"דכ",
+"כב",
+"כד"
+],
+"split": "held_out"
+},
+{
+"id": "7.16.2",
+"token_index": 425,
+"true": "זהב",
+"rivals": [
+"זהכ",
+"זהנ",
+"זחב",
+"זתב"
+],
+"split": "held_out"
+},
+{
+"id": "7.16.4",
+"token_index": 427,
+"true": "שתימ",
+"rivals": [
+"שחימ",
+"שתיב",
+"שתיט",
+"שתפמ"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.1.1",
+"token_index": 429,
+"true": "שבדרכ",
+"rivals": [
+"שבדדכ",
+"שבדרב",
+"שבירכ",
+"שבררכ"
+],
+"split": "held_out"
+},
+{
+"id": "8.1.2",
+"token_index": 430,
+"true": "מזרח",
+"rivals": [
+"מזדח",
+"מזכח",
+"מזרת",
+"מררח"
+],
+"split": "held_out"
+},
+{
+"id": "8.3.0",
+"token_index": 435,
+"true": "כלי",
+"rivals": [
+"בלי",
+"כלנ",
+"כלר",
+"כעי"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.3.1",
+"token_index": 436,
+"true": "דמע",
+"rivals": [
+"במע",
+"דבע",
+"דטע",
+"דמא"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.4.0",
+"token_index": 440,
+"true": "בגי",
+"rivals": [
+"בגז",
+"וגי",
+"כגי",
+"מגי"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.4.1",
+"token_index": 441,
+"true": "החיצונא",
+"rivals": [
+"החיצדנא",
+"החיצוהא",
+"החיצונה",
+"החיצננא"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.5.0",
+"token_index": 444,
+"true": "על",
+"rivals": [
+"אל",
+"לל",
+"סל",
+"עע"
+],
+"split": "held_out"
+},
+{
+"id": "8.5.1",
+"token_index": 445,
+"true": "האבנ",
+"rivals": [
+"האבפ",
+"האבת",
+"האכנ",
+"תאבנ"
+],
+"split": "held_out"
+},
+{
+"id": "8.6.2",
+"token_index": 451,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כסב",
+"כסו",
+"כסי"
+],
+"split": "held_out"
+},
+{
+"id": "8.7.0",
+"token_index": 452,
+"true": "וזהב",
+"rivals": [
+"וזאב",
+"וזהכ",
+"וזהמ",
+"וזחב"
+],
+"split": "held_out"
+},
+{
+"id": "8.7.1",
+"token_index": 453,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"מכ",
+"רכ"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.9.1",
+"token_index": 461,
+"true": "אמות",
+"rivals": [
+"אכות",
+"אמוה",
+"אמוח",
+"אמזת"
+],
+"split": "held_out"
+},
+{
+"id": "8.9.2",
+"token_index": 462,
+"true": "שלוש",
+"rivals": [
+"שלדש",
+"שלוו",
+"שלזש",
+"שלנש"
+],
+"split": "held_out"
+},
+{
+"id": "8.9.3",
+"token_index": 463,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כמ",
+"כר"
+],
+"split": "held_out"
+},
+{
+"id": "8.10.3",
+"token_index": 468,
+"true": "הצופא",
+"rivals": [
+"הצוכא",
+"הצופג",
+"חצופא",
+"תצופא"
+],
+"split": "held_out"
+},
+{
+"id": "8.11.0",
+"token_index": 469,
+"true": "מערב",
+"rivals": [
+"יערב",
+"מעדב",
+"מעהב",
+"מעזב"
+],
+"split": "held_out"
+},
+{
+"id": "8.11.1",
+"token_index": 470,
+"true": "בדרומ",
+"rivals": [
+"בדדומ",
+"בדרוב",
+"בררומ",
+"כדרומ"
+],
+"split": "held_out"
+},
+{
+"id": "8.11.2",
+"token_index": 471,
+"true": "בצריח",
+"rivals": [
+"בצהיח",
+"בצייח",
+"בצרימ",
+"מצריח"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.12.1",
+"token_index": 473,
+"true": "צפונ",
+"rivals": [
+"צוונ",
+"ציונ",
+"צפוי",
+"צפומ"
+],
+"split": "held_out"
+},
+{
+"id": "8.12.2",
+"token_index": 474,
+"true": "חפור",
+"rivals": [
+"חפוד",
+"חפוו",
+"חפוז",
+"חפזר"
+],
+"split": "held_out"
+},
+{
+"id": "8.12.3",
+"token_index": 475,
+"true": "אמות",
+"rivals": [
+"אחות",
+"אכות",
+"אמוח",
+"אמשת"
+],
+"split": "held_out"
+},
+{
+"id": "8.13.2",
+"token_index": 478,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כד",
+"רכ"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.14.5",
+"token_index": 485,
+"true": "שבא",
+"rivals": [
+"שבה",
+"שכא",
+"שפא",
+"שרא"
+],
+"split": "held_out"
+},
+{
+"id": "8.15.0",
+"token_index": 487,
+"true": "אמות",
+"rivals": [
+"אטות",
+"אמוה",
+"אמזת",
+"המות"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.15.1",
+"token_index": 488,
+"true": "אחת",
+"rivals": [
+"אהת",
+"אחה",
+"אחח",
+"גחת"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.16.0",
+"token_index": 490,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כטפ",
+"כסי",
+"כעפ"
+],
+"split": "held_out"
+},
+{
+"id": "8.16.1",
+"token_index": 491,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"מכ",
+"קכ"
+],
+"split": "calibration_training"
+},
+{
+"id": "9.1.3",
+"token_index": 496,
+"true": "משח",
+"rivals": [
+"בשח",
+"משב",
+"משה",
+"משת"
+],
+"split": "held_out"
+},
+{
+"id": "9.2.0",
+"token_index": 498,
+"true": "אמות",
+"rivals": [
+"אמוה",
+"אמוח",
+"אמחת",
+"אמנת"
+],
+"split": "held_out"
+},
+{
+"id": "9.2.7",
+"token_index": 505,
+"true": "שבע",
+"rivals": [
+"שבס",
+"שכע",
+"שמע",
+"שפע"
+],
+"split": "calibration_training"
+},
+{
+"id": "9.3.2",
+"token_index": 508,
+"true": "ארבע",
+"rivals": [
+"אדבע",
+"אנבע",
+"ארבל",
+"ארמע"
+],
+"split": "held_out"
+},
+{
+"id": "9.4.2",
+"token_index": 511,
+"true": "בצריח",
+"rivals": [
+"בצביח",
+"בצדיח",
+"בצעיח",
+"בצריה"
+],
+"split": "calibration_training"
+},
+{
+"id": "9.4.3",
+"token_index": 512,
+"true": "הצופא",
+"rivals": [
+"הצבפא",
+"הצובא",
+"הצזפא",
+"חצופא"
+],
+"split": "held_out"
+},
+{
+"id": "9.5.0",
+"token_index": 513,
+"true": "מזרח",
+"rivals": [
+"מזדח",
+"מזכח",
+"מזרה",
+"מירח"
+],
+"split": "held_out"
+},
+{
+"id": "9.5.2",
+"token_index": 515,
+"true": "אמות",
+"rivals": [
+"אמוה",
+"אמוח",
+"אמזת",
+"אנות"
+],
+"split": "held_out"
+},
+{
+"id": "9.5.3",
+"token_index": 516,
+"true": "שמונא",
+"rivals": [
+"שבונא",
+"שטונא",
+"שמונע",
+"שמרנא"
+],
+"split": "held_out"
+},
+{
+"id": "9.6.1",
+"token_index": 518,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כמ",
+"מכ"
+],
+"split": "calibration_training"
+},
+{
+"id": "9.8.1",
+"token_index": 526,
+"true": "חפור",
+"rivals": [
+"ופור",
+"חנור",
+"חפוי",
+"תפור"
+],
+"split": "held_out"
+},
+{
+"id": "9.9.0",
+"token_index": 530,
+"true": "ככ",
+"rivals": [
+"כב",
+"כד",
+"כמ",
+"כר"
+],
+"split": "calibration_training"
+},
+{
+"id": "9.12.2",
+"token_index": 543,
+"true": "חפור",
+"rivals": [
+"הפור",
+"חיור",
+"חנור",
+"חפוע"
+],
+"split": "held_out"
+},
+{
+"id": "9.12.3",
+"token_index": 544,
+"true": "אמות",
+"rivals": [
+"אבות",
+"אמוח",
+"אמשת",
+"גמות"
+],
+"split": "held_out"
+},
+{
+"id": "9.13.0",
+"token_index": 545,
+"true": "שבע",
+"rivals": [
+"ובע",
+"שבס",
+"שכע",
+"שפע"
+],
+"split": "held_out"
+},
+{
+"id": "9.13.1",
+"token_index": 546,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כמ",
+"כק"
+],
+"split": "calibration_training"
+},
+{
+"id": "9.14.0",
+"token_index": 548,
+"true": "בשית",
+"rivals": [
+"בשיה",
+"בשיח",
+"ושית",
+"כשית"
+],
+"split": "calibration_training"
+},
+{
+"id": "9.16.0",
+"token_index": 558,
+"true": "כל",
+"rivals": [
+"בל",
+"כע",
+"מל",
+"קל"
+],
+"split": "calibration_training"
+},
+{
+"id": "9.16.1",
+"token_index": 559,
+"true": "שבה",
+"rivals": [
+"שבנ",
+"שבת",
+"שכה",
+"שמה"
+],
+"split": "held_out"
+},
+{
+"id": "9.16.2",
+"token_index": 560,
+"true": "חרמ",
+"rivals": [
+"הרמ",
+"חזמ",
+"חימ",
+"תרמ"
+],
+"split": "held_out"
+},
+{
+"id": "10.1.0",
+"token_index": 566,
+"true": "דרומ",
+"rivals": [
+"דבומ",
+"דזומ",
+"דרות",
+"ררומ"
+],
+"split": "calibration_training"
+},
+{
+"id": "10.1.3",
+"token_index": 569,
+"true": "ירידתו",
+"rivals": [
+"יוידתו",
+"ירידהו",
+"יררדתו",
+"פרידתו"
+],
+"split": "calibration_training"
+},
+{
+"id": "10.2.0",
+"token_index": 570,
+"true": "מלמעלא",
+"rivals": [
+"בלמעלא",
+"מלחעלא",
+"מלכעלא",
+"מלמסלא"
+],
+"split": "held_out"
+},
+{
+"id": "10.2.1",
+"token_index": 571,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כק",
+"כר"
+],
+"split": "held_out"
+},
+{
+"id": "10.3.4",
+"token_index": 577,
+"true": "מהנחל",
+"rivals": [
+"ההנחל",
+"מהמחל",
+"מהנהל",
+"מהרחל"
+],
+"split": "held_out"
+},
+{
+"id": "10.4.0",
+"token_index": 578,
+"true": "הגדול",
+"rivals": [
+"הגדחל",
+"הגדפל",
+"הגוול",
+"חגדול"
+],
+"split": "calibration_training"
+},
+{
+"id": "10.4.1",
+"token_index": 579,
+"true": "בקרקעו",
+"rivals": [
+"בקדקעו",
+"בקיקעו",
+"בקרקסו",
+"בקרקענ"
+],
+"split": "held_out"
+},
+{
+"id": "10.4.2",
+"token_index": 580,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כד",
+"מכ"
+],
+"split": "calibration_training"
+},
+{
+"id": "10.6.4",
+"token_index": 590,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כטפ",
+"כסב",
+"כעפ"
+],
+"split": "calibration_training"
+},
+{
+"id": "10.7.1",
+"token_index": 592,
+"true": "ששינ",
+"rivals": [
+"ששדנ",
+"ששזנ",
+"ששיו",
+"ששפנ"
+],
+"split": "held_out"
+},
+{
+"id": "10.7.2",
+"token_index": 593,
+"true": "ושנינ",
+"rivals": [
+"ושוינ",
+"ושנננ",
+"חשנינ",
+"נשנינ"
+],
+"split": "held_out"
+},
+{
+"id": "10.10.4",
+"token_index": 608,
+"true": "מאות",
+"rivals": [
+"טאות",
+"מאדת",
+"מאוה",
+"מאזת"
+],
+"split": "held_out"
+},
+{
+"id": "10.11.0",
+"token_index": 609,
+"true": "זהב",
+"rivals": [
+"זהי",
+"זהר",
+"זחב",
+"רהב"
+],
+"split": "held_out"
+},
+{
+"id": "10.11.1",
+"token_index": 610,
+"true": "וכלינ",
+"rivals": [
+"ובלינ",
+"וכליי",
+"וכליפ",
+"פכלינ"
+],
+"split": "held_out"
+},
+{
+"id": "10.12.0",
+"token_index": 613,
+"true": "תחת",
+"rivals": [
+"חחת",
+"תחה",
+"תחח",
+"תתת"
+],
+"split": "held_out"
+},
+{
+"id": "10.12.3",
+"token_index": 616,
+"true": "מנ",
+"rivals": [
+"בנ",
+"הנ",
+"חנ",
+"ננ"
+],
+"split": "held_out"
+},
+{
+"id": "10.12.4",
+"token_index": 617,
+"true": "הצד",
+"rivals": [
+"אצד",
+"הצי",
+"הצר",
+"חצד"
+],
+"split": "held_out"
+},
+{
+"id": "10.13.0",
+"token_index": 618,
+"true": "המערבי",
+"rivals": [
+"המעדבי",
+"המערמי",
+"התערבי",
+"תמערבי"
+],
+"split": "calibration_training"
+},
+{
+"id": "10.13.3",
+"token_index": 621,
+"true": "שתינ",
+"rivals": [
+"ותינ",
+"שנינ",
+"שתית",
+"שתננ"
+],
+"split": "held_out"
+},
+{
+"id": "10.13.4",
+"token_index": 622,
+"true": "עסרה",
+"rivals": [
+"לסרה",
+"ססרה",
+"עסרח",
+"עסרמ"
+],
+"split": "held_out"
+},
+{
+"id": "10.14.0",
+"token_index": 623,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כד",
+"מכ"
+],
+"split": "held_out"
+},
+{
+"id": "10.16.1",
+"token_index": 632,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כד",
+"כק"
+],
+"split": "held_out"
+},
+{
+"id": "11.1.3",
+"token_index": 641,
+"true": "דמע",
+"rivals": [
+"דבע",
+"דטע",
+"דמס",
+"דמר"
+],
+"split": "calibration_training"
+},
+{
+"id": "11.2.0",
+"token_index": 644,
+"true": "מתחת",
+"rivals": [
+"התחת",
+"כתחת",
+"מהחת",
+"מחחת"
+],
+"split": "held_out"
+},
+{
+"id": "11.2.1",
+"token_index": 645,
+"true": "פנת",
+"rivals": [
+"ונת",
+"פית",
+"פנה",
+"פנמ"
+],
+"split": "calibration_training"
+},
+{
+"id": "11.3.2",
+"token_index": 650,
+"true": "תחת",
+"rivals": [
+"החת",
+"חחת",
+"תהת",
+"תחנ"
+],
+"split": "held_out"
+},
+{
+"id": "11.3.3",
+"token_index": 651,
+"true": "עמוד",
+"rivals": [
+"עבוד",
+"עהוד",
+"עמזד",
+"עקוד"
+],
+"split": "held_out"
+},
+{
+"id": "11.3.4",
+"token_index": 652,
+"true": "האכסדרנ",
+"rivals": [
+"האבסדרנ",
+"האכסדדנ",
+"האכסורנ",
+"האפסדרנ"
+],
+"split": "calibration_training"
+},
+{
+"id": "11.5.2",
+"token_index": 662,
+"true": "הסלע",
+"rivals": [
+"אסלע",
+"הסלס",
+"חסלע",
+"תסלע"
+],
+"split": "held_out"
+},
+{
+"id": "11.5.3",
+"token_index": 663,
+"true": "הצופא",
+"rivals": [
+"הצנפא",
+"הצפפא",
+"חצופא",
+"תצופא"
+],
+"split": "held_out"
+},
+{
+"id": "11.5.4",
+"token_index": 664,
+"true": "מערב",
+"rivals": [
+"מסרב",
+"מעהב",
+"מערנ",
+"נערב"
+],
+"split": "calibration_training"
+},
+{
+"id": "11.6.0",
+"token_index": 665,
+"true": "נגד",
+"rivals": [
+"דגד",
+"יגד",
+"נגכ",
+"נגר"
+],
+"split": "held_out"
+},
+{
+"id": "11.6.3",
+"token_index": 668,
+"true": "תחת",
+"rivals": [
+"החת",
+"נחת",
+"תהת",
+"תחח"
+],
+"split": "held_out"
+},
+{
+"id": "11.8.0",
+"token_index": 676,
+"true": "בקבר",
+"rivals": [
+"בכבר",
+"בקבד",
+"בקבכ",
+"בקכר"
+],
+"split": "calibration_training"
+},
+{
+"id": "11.8.1",
+"token_index": 677,
+"true": "שתחת",
+"rivals": [
+"ותחת",
+"שהחת",
+"שחחת",
+"שתהת"
+],
+"split": "held_out"
+},
+{
+"id": "11.8.3",
+"token_index": 679,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כק",
+"מכ"
+],
+"split": "calibration_training"
+},
+{
+"id": "11.9.0",
+"token_index": 681,
+"true": "בקבר",
+"rivals": [
+"בקבי",
+"בקבנ",
+"בקיר",
+"בקכר"
+],
+"split": "held_out"
+},
+{
+"id": "11.10.1",
+"token_index": 687,
+"true": "כלי",
+"rivals": [
+"בלי",
+"כלמ",
+"כלנ",
+"כלר"
+],
+"split": "calibration_training"
+},
+{
+"id": "11.10.2",
+"token_index": 688,
+"true": "דמע",
+"rivals": [
+"דבע",
+"דטע",
+"דמל",
+"כמע"
+],
+"split": "held_out"
+},
+{
+"id": "11.14.0",
+"token_index": 698,
+"true": "שלו",
+"rivals": [
+"שלז",
+"שלפ",
+"שלר",
+"שלש"
+],
+"split": "held_out"
+},
+{
+"id": "11.14.1",
+"token_index": 699,
+"true": "כלי",
+"rivals": [
+"בלי",
+"דלי",
+"כלד",
+"פלי"
+],
+"split": "held_out"
+},
+{
+"id": "11.16.4",
+"token_index": 710,
+"true": "המערבי",
+"rivals": [
+"המערמי",
+"המררבי",
+"הנערבי",
+"תמערבי"
+],
+"split": "calibration_training"
+},
+{
+"id": "11.17.1",
+"token_index": 712,
+"true": "על",
+"rivals": [
+"אל",
+"לל",
+"סל",
+"רל"
+],
+"split": "held_out"
+},
+{
+"id": "11.17.6",
+"token_index": 717,
+"true": "מאות",
+"rivals": [
+"טאות",
+"מאוה",
+"מאוח",
+"נאות"
+],
+"split": "held_out"
+},
+{
+"id": "12.1.0",
+"token_index": 718,
+"true": "זהב",
+"rivals": [
+"זהד",
+"זהמ",
+"זחב",
+"זרב"
+],
+"split": "held_out"
+},
+{
+"id": "12.1.1",
+"token_index": 719,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כק",
+"פכ"
+],
+"split": "held_out"
+},
+{
+"id": "12.2.0",
+"token_index": 726,
+"true": "תחת",
+"rivals": [
+"תהת",
+"תחה",
+"תמת",
+"תתת"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.2.1",
+"token_index": 727,
+"true": "האבנ",
+"rivals": [
+"האבי",
+"האכנ",
+"האמנ",
+"נאבנ"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.2.4",
+"token_index": 730,
+"true": "תחת",
+"rivals": [
+"החת",
+"תחה",
+"תחנ",
+"תתת"
+],
+"split": "held_out"
+},
+{
+"id": "12.2.5",
+"token_index": 731,
+"true": "ספ",
+"rivals": [
+"סב",
+"סו",
+"סנ",
+"סר"
+],
+"split": "held_out"
+},
+{
+"id": "12.3.1",
+"token_index": 733,
+"true": "ככרינ",
+"rivals": [
+"כדרינ",
+"ככדינ",
+"ככריב",
+"ככרית"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.4.2",
+"token_index": 737,
+"true": "תחת",
+"rivals": [
+"תבת",
+"תחח",
+"תחנ",
+"תתת"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.5.0",
+"token_index": 742,
+"true": "שדא",
+"rivals": [
+"שדג",
+"שיא",
+"שנא",
+"שרא"
+],
+"split": "held_out"
+},
+{
+"id": "12.5.1",
+"token_index": 743,
+"true": "אחת",
+"rivals": [
+"אחה",
+"אמת",
+"אתת",
+"החת"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.5.3",
+"token_index": 745,
+"true": "וכספ",
+"rivals": [
+"ובספ",
+"וכסר",
+"נכספ",
+"פכספ"
+],
+"split": "held_out"
+},
+{
+"id": "12.5.4",
+"token_index": 746,
+"true": "ככ",
+"rivals": [
+"בכ",
+"כב",
+"כפ",
+"כק"
+],
+"split": "held_out"
+},
+{
+"id": "12.6.0",
+"token_index": 748,
+"true": "בפי",
+"rivals": [
+"בפז",
+"דפי",
+"כפי",
+"מפי"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.6.1",
+"token_index": 749,
+"true": "המבוע",
+"rivals": [
+"הבבוע",
+"המבדע",
+"המצוע",
+"חמבוע"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.6.6",
+"token_index": 754,
+"true": "כספ",
+"rivals": [
+"בספ",
+"כטפ",
+"כסב",
+"קספ"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.6.7",
+"token_index": 755,
+"true": "וכלי",
+"rivals": [
+"ובלי",
+"וקלי",
+"זכלי",
+"חכלי"
+],
+"split": "held_out"
+},
+{
+"id": "12.6.8",
+"token_index": 756,
+"true": "זהב",
+"rivals": [
+"זהח",
+"זהכ",
+"זחב",
+"זנב"
+],
+"split": "held_out"
+},
+{
+"id": "12.7.1",
+"token_index": 758,
+"true": "דמע",
+"rivals": [
+"דהע",
+"דנע",
+"ומע",
+"רמע"
+],
+"split": "held_out"
+},
+{
+"id": "12.7.2",
+"token_index": 759,
+"true": "וכספ",
+"rivals": [
+"ובספ",
+"וכעפ",
+"זכספ",
+"חכספ"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.7.4",
+"token_index": 761,
+"true": "ככרינ",
+"rivals": [
+"כברינ",
+"כדרינ",
+"ככרפנ",
+"ככררנ"
+],
+"split": "held_out"
+},
+{
+"id": "12.7.6",
+"token_index": 763,
+"true": "מאות",
+"rivals": [
+"באות",
+"מאוט",
+"מאנת",
+"מגות"
+],
+"split": "held_out"
+}
+],
+"names": [
+{
+"id": "1.1.0",
+"token_index": 0,
+"true": "בחרובא",
+"rivals": [
+"בחרוכא",
+"בחרנבא",
+"בחרשבא",
+"מחרובא"
+],
+"split": "names_descriptive"
+},
+{
+"id": "1.1.2",
+"token_index": 2,
+"true": "עכור",
+"rivals": [
+"עבור",
+"עכוו",
+"עכוי",
+"עפור"
+],
+"split": "names_descriptive"
+},
+{
+"id": "1.9.2",
+"token_index": 39,
+"true": "כחלת",
+"rivals": [
+"בחלת",
+"כהלת",
+"כחלה",
+"כמלת"
+],
+"split": "names_descriptive"
+},
+{
+"id": "1.13.3",
+"token_index": 66,
+"true": "מנס",
+"rivals": [
+"מבס",
+"מהס",
+"מוס",
+"מיס"
+],
+"split": "names_descriptive"
+},
+{
+"id": "2.3.1",
+"token_index": 87,
+"true": "בית",
+"rivals": [
+"ביה",
+"בימ",
+"כית",
+"מית"
+],
+"split": "names_descriptive"
+},
+{
+"id": "2.5.2",
+"token_index": 99,
+"true": "מתיה",
+"rivals": [
+"בתיה",
+"טתיה",
+"מתינ",
+"תתיה"
+],
+"split": "names_descriptive"
+},
+{
+"id": "2.13.2",
+"token_index": 140,
+"true": "כחלת",
+"rivals": [
+"בחלת",
+"כהלת",
+"כחלח",
+"כמלת"
+],
+"split": "names_descriptive"
+},
+{
+"id": "3.8.1",
+"token_index": 184,
+"true": "שבמלחמ",
+"rivals": [
+"שבהלחמ",
+"שבמלחי",
+"שבמעחמ",
+"שפמלחמ"
+],
+"split": "names_descriptive"
+},
+{
+"id": "3.11.1",
+"token_index": 194,
+"true": "שבמלחמ",
+"rivals": [
+"שבמלחב",
+"שבמלתמ",
+"שומלחמ",
+"שרמלחמ"
+],
+"split": "names_descriptive"
+},
+{
+"id": "4.6.4",
+"token_index": 228,
+"true": "עכור",
+"rivals": [
+"עכוד",
+"עכזר",
+"עכנר",
+"עמור"
+],
+"split": "names_descriptive"
+},
+{
+"id": "4.9.3",
+"token_index": 241,
+"true": "העצ",
+"rivals": [
+"אעצ",
+"הרצ",
+"חעצ",
+"תעצ"
+],
+"split": "names_descriptive"
+},
+{
+"id": "4.11.3",
+"token_index": 249,
+"true": "כח",
+"rivals": [
+"בח",
+"דח",
+"כה",
+"רח"
+],
+"split": "names_descriptive"
+},
+{
+"id": "4.13.3",
+"token_index": 257,
+"true": "הסככא",
+"rivals": [
+"הסבכא",
+"הסדכא",
+"הסכקא",
+"תסככא"
+],
+"split": "names_descriptive"
+},
+{
+"id": "5.2.0",
+"token_index": 269,
+"true": "סככא",
+"rivals": [
+"טככא",
+"סבכא",
+"סכבא",
+"סככה"
+],
+"split": "names_descriptive"
+},
+{
+"id": "5.5.1",
+"token_index": 283,
+"true": "שבסככא",
+"rivals": [
+"ובסככא",
+"שבסכבא",
+"שכסככא",
+"שמסככא"
+],
+"split": "names_descriptive"
+},
+{
+"id": "5.6.1",
+"token_index": 286,
+"true": "שלומו",
+"rivals": [
+"ולומו",
+"שלוהו",
+"שלומר",
+"שעומו"
+],
+"split": "names_descriptive"
+},
+{
+"id": "5.8.3",
+"token_index": 295,
+"true": "שלומ",
+"rivals": [
+"שלוב",
+"שלוק",
+"שלחמ",
+"שלשמ"
+],
+"split": "names_descriptive"
+},
+{
+"id": "5.12.2",
+"token_index": 310,
+"true": "הכפא",
+"rivals": [
+"הבפא",
+"הכפע",
+"חכפא",
+"תכפא"
+],
+"split": "names_descriptive"
+},
+{
+"id": "5.13.1",
+"token_index": 312,
+"true": "מירחו",
+"rivals": [
+"הירחו",
+"חירחו",
+"מירחז",
+"מנרחו"
+],
+"split": "names_descriptive"
+},
+{
+"id": "5.13.2",
+"token_index": 313,
+"true": "לסככא",
+"rivals": [
+"לסבכא",
+"לסכבא",
+"לסככה",
+"לסכפא"
+],
+"split": "names_descriptive"
+},
+{
+"id": "7.9.0",
+"token_index": 392,
+"true": "בית",
+"rivals": [
+"ביה",
+"כית",
+"מית",
+"פית"
+],
+"split": "names_descriptive"
+},
+{
+"id": "7.9.1",
+"token_index": 393,
+"true": "הקצ",
+"rivals": [
+"אקצ",
+"המצ",
+"הקב",
+"חקצ"
+],
+"split": "names_descriptive"
+},
+{
+"id": "7.14.5",
+"token_index": 416,
+"true": "הכוז",
+"rivals": [
+"הבוז",
+"הכדז",
+"הכנז",
+"תכוז"
+],
+"split": "names_descriptive"
+},
+{
+"id": "8.10.2",
+"token_index": 467,
+"true": "השוא",
+"rivals": [
+"אשוא",
+"השבא",
+"השזא",
+"הששא"
+],
+"split": "names_descriptive"
+},
+{
+"id": "8.14.2",
+"token_index": 482,
+"true": "השוא",
+"rivals": [
+"השרא",
+"משוא",
+"נשוא",
+"תשוא"
+],
+"split": "names_descriptive"
+},
+{
+"id": "9.1.2",
+"token_index": 495,
+"true": "הנטפ",
+"rivals": [
+"הוטפ",
+"הנמפ",
+"מנטפ",
+"תנטפ"
+],
+"split": "names_descriptive"
+},
+{
+"id": "9.7.1",
+"token_index": 521,
+"true": "החורונ",
+"rivals": [
+"החורוי",
+"המורונ",
+"חחורונ",
+"תחורונ"
+],
+"split": "names_descriptive"
+},
+{
+"id": "9.14.5",
+"token_index": 553,
+"true": "בית",
+"rivals": [
+"בזת",
+"ביח",
+"בינ",
+"כית"
+],
+"split": "names_descriptive"
+},
+{
+"id": "9.15.0",
+"token_index": 554,
+"true": "תמר",
+"rivals": [
+"חמר",
+"תבר",
+"תמז",
+"תתר"
+],
+"split": "names_descriptive"
+},
+{
+"id": "9.15.3",
+"token_index": 557,
+"true": "פלע",
+"rivals": [
+"בלע",
+"ילע",
+"כלע",
+"נלע"
+],
+"split": "names_descriptive"
+},
+{
+"id": "9.17.2",
+"token_index": 563,
+"true": "נאב",
+"rivals": [
+"מאב",
+"נאי",
+"נאכ",
+"פאב"
+],
+"split": "names_descriptive"
+},
+{
+"id": "10.5.1",
+"token_index": 583,
+"true": "שיבית",
+"rivals": [
+"שיביח",
+"שיבמת",
+"שיוית",
+"שימית"
+],
+"split": "names_descriptive"
+},
+{
+"id": "10.5.2",
+"token_index": 584,
+"true": "הכרמ",
+"rivals": [
+"הכרט",
+"הכרת",
+"חכרמ",
+"תכרמ"
+],
+"split": "names_descriptive"
+},
+{
+"id": "10.8.3",
+"token_index": 597,
+"true": "זרד",
+"rivals": [
+"זיד",
+"זעד",
+"זרר",
+"ירד"
+],
+"split": "names_descriptive"
+},
+{
+"id": "10.12.2",
+"token_index": 615,
+"true": "אבשלומ",
+"rivals": [
+"אבשלוכ",
+"אבשלשמ",
+"אכשלומ",
+"אמשלומ"
+],
+"split": "names_descriptive"
+},
+{
+"id": "11.3.1",
+"token_index": 649,
+"true": "צדוק",
+"rivals": [
+"צדנק",
+"צדשק",
+"צנוק",
+"צרוק"
+],
+"split": "names_descriptive"
+},
+{
+"id": "11.6.2",
+"token_index": 667,
+"true": "צדוק",
+"rivals": [
+"בדוק",
+"צבוק",
+"צדנק",
+"צרוק"
+],
+"split": "names_descriptive"
+},
+{
+"id": "11.12.0",
+"token_index": 693,
+"true": "בבית",
+"rivals": [
+"בבזת",
+"בביח",
+"בבינ",
+"כבית"
+],
+"split": "names_descriptive"
+},
+{
+"id": "12.6.3",
+"token_index": 751,
+"true": "בית",
+"rivals": [
+"ביה",
+"ביח",
+"כית",
+"רית"
+],
+"split": "names_descriptive"
+},
+{
+"id": "12.6.4",
+"token_index": 752,
+"true": "שמ",
+"rivals": [
+"שב",
+"שה",
+"שט",
+"שת"
+],
+"split": "names_descriptive"
+}
+],
+"division": [
+{
+"id": "1.1.3+1.2.0",
+"token_index": 3,
+"span": 2,
+"candidates": [
+"תחת המעלות",
+"תח תהמעלות",
+"תחתה מעלות",
+"תחתהמעלות"
+],
+"split": "held_out"
+},
+{
+"id": "1.4.0+1.4.1",
+"token_index": 13,
+"span": 2,
+"candidates": [
+"משקל ככרינ",
+"משק לככרינ",
+"משקלכ כרינ",
+"משקלככרינ"
+],
+"split": "held_out"
+},
+{
+"id": "1.6.2+1.6.3",
+"token_index": 23,
+"span": 2,
+"candidates": [
+"בבור הגדול",
+"בבו רהגדול",
+"בבורה גדול",
+"בבורהגדול"
+],
+"split": "held_out"
+},
+{
+"id": "1.8.0+1.8.1",
+"token_index": 31,
+"span": 2,
+"candidates": [
+"נגד הפתח",
+"נג דהפתח",
+"נגדה פתח",
+"נגדהפתח"
+],
+"split": "held_out"
+},
+{
+"id": "1.8.4+1.8.5",
+"token_index": 35,
+"span": 2,
+"candidates": [
+"תשע מאת",
+"תש עמאת",
+"תשעמ את",
+"תשעמאת"
+],
+"split": "held_out"
+},
+{
+"id": "1.9.4+1.9.5",
+"token_index": 41,
+"span": 2,
+"candidates": [
+"דמע בלגינ",
+"דמ עבלגינ",
+"דמעב לגינ",
+"דמעבלגינ"
+],
+"split": "held_out"
+},
+{
+"id": "1.14.0+1.14.1",
+"token_index": 70,
+"span": 2,
+"candidates": [
+"גבה מנ",
+"גב המנ",
+"גבהמ נ",
+"גבהמנ"
+],
+"split": "held_out"
+},
+{
+"id": "1.14.3+1.14.4",
+"token_index": 73,
+"span": 2,
+"candidates": [
+"אמות שלוש",
+"אמו תשלוש",
+"אמותש לוש",
+"אמותשלוש"
+],
+"split": "held_out"
+},
+{
+"id": "2.1.2+2.1.3",
+"token_index": 81,
+"span": 2,
+"candidates": [
+"שתחת המעלות",
+"שתח תהמעלות",
+"שתחתה מעלות",
+"שתחתהמעלות"
+],
+"split": "held_out"
+},
+{
+"id": "2.1.3+2.2.0",
+"token_index": 82,
+"span": 2,
+"candidates": [
+"המעלות ככרינ",
+"המעלו תככרינ",
+"המעלותכ כרינ",
+"המעלותככרינ"
+],
+"split": "held_out"
+},
+{
+"id": "2.4.3+2.4.4",
+"token_index": 94,
+"span": 2,
+"candidates": [
+"ששינ וחמש",
+"ששי נוחמש",
+"ששינו חמש",
+"ששינוחמש"
+],
+"split": "held_out"
+},
+{
+"id": "2.6.4+2.6.5",
+"token_index": 106,
+"span": 2,
+"candidates": [
+"ככרינ שבעינ",
+"ככרי נשבעינ",
+"ככרינש בעינ",
+"ככרינשבעינ"
+],
+"split": "held_out"
+},
+{
+"id": "2.10.3+2.10.4",
+"token_index": 126,
+"span": 2,
+"candidates": [
+"מנ המזרח",
+"מ נהמזרח",
+"מנה מזרח",
+"מנהמזרח"
+],
+"split": "held_out"
+},
+{
+"id": "2.12.1+2.12.2",
+"token_index": 135,
+"span": 2,
+"candidates": [
+"תחת הספ",
+"תח תהספ",
+"תחתה ספ",
+"תחתהספ"
+],
+"split": "held_out"
+},
+{
+"id": "2.12.2+2.12.3",
+"token_index": 136,
+"span": 2,
+"candidates": [
+"הספ הגדול",
+"הס פהגדול",
+"הספה גדול",
+"הספהגדול"
+],
+"split": "held_out"
+},
+{
+"id": "3.1.3+3.1.4",
+"token_index": 151,
+"span": 2,
+"candidates": [
+"הפנא הדרו",
+"הפנ אהדרו",
+"הפנאה דרו",
+"הפנאהדרו"
+],
+"split": "held_out"
+},
+{
+"id": "3.1.4+3.2.0",
+"token_index": 152,
+"span": 2,
+"candidates": [
+"הדרו מית",
+"הדר ומית",
+"הדרומ ית",
+"הדרומית"
+],
+"split": "held_out"
+},
+{
+"id": "3.2.2+3.2.3",
+"token_index": 155,
+"span": 2,
+"candidates": [
+"אמות תשע",
+"אמו תתשע",
+"אמותת שע",
+"אמותתשע"
+],
+"split": "held_out"
+},
+{
+"id": "3.2.3+3.2.4",
+"token_index": 156,
+"span": 2,
+"candidates": [
+"תשע כלי",
+"תש עכלי",
+"תשעכ לי",
+"תשעכלי"
+],
+"split": "held_out"
+},
+{
+"id": "3.3.0+3.3.1",
+"token_index": 161,
+"span": 2,
+"candidates": [
+"דמע מזרקות",
+"דמ עמזרקות",
+"דמעמ זרקות",
+"דמעמזרקות"
+],
+"split": "held_out"
+},
+{
+"id": "3.4.3+3.4.4",
+"token_index": 168,
+"span": 2,
+"candidates": [
+"מאות ותשעה",
+"מאו תותשעה",
+"מאותו תשעה",
+"מאותותשעה"
+],
+"split": "held_out"
+},
+{
+"id": "3.5.3+3.6.0",
+"token_index": 173,
+"span": 2,
+"candidates": [
+"המזרח ית",
+"המזר חית",
+"המזרחי ת",
+"המזרחית"
+],
+"split": "held_out"
+},
+{
+"id": "3.9.0+3.9.1",
+"token_index": 186,
+"span": 2,
+"candidates": [
+"כלי דמע",
+"כל ידמע",
+"כליד מע",
+"כלידמע"
+],
+"split": "held_out"
+},
+{
+"id": "3.10.0+3.10.1",
+"token_index": 190,
+"span": 2,
+"candidates": [
+"תחת הפנא",
+"תח תהפנא",
+"תחתה פנא",
+"תחתהפנא"
+],
+"split": "held_out"
+},
+{
+"id": "3.10.1+3.10.2",
+"token_index": 191,
+"span": 2,
+"candidates": [
+"הפנא המערבית",
+"הפנ אהמערבית",
+"הפנאה מערבית",
+"הפנאהמערבית"
+],
+"split": "held_out"
+},
+{
+"id": "4.7.3+4.8.0",
+"token_index": 232,
+"span": 2,
+"candidates": [
+"שלוש שמ",
+"שלו ששמ",
+"שלושש מ",
+"שלוששמ"
+],
+"split": "held_out"
+},
+{
+"id": "4.8.0+4.8.1",
+"token_index": 233,
+"span": 2,
+"candidates": [
+"שמ שני",
+"ש משני",
+"שמש ני",
+"שמשני"
+],
+"split": "held_out"
+},
+{
+"id": "4.10.1+4.10.2",
+"token_index": 243,
+"span": 2,
+"candidates": [
+"כספ ככ",
+"כס פככ",
+"כספכ כ",
+"כספככ"
+],
+"split": "held_out"
+},
+{
+"id": "4.10.2+4.10.3",
+"token_index": 244,
+"span": 2,
+"candidates": [
+"ככ מאתינ",
+"כ כמאתינ",
+"ככמ אתינ",
+"ככמאתינ"
+],
+"split": "held_out"
+},
+{
+"id": "4.12.2+4.12.3",
+"token_index": 252,
+"span": 2,
+"candidates": [
+"ככ שבעינ",
+"כ כשבעינ",
+"ככש בעינ",
+"ככשבעינ"
+],
+"split": "held_out"
+},
+{
+"id": "5.4.1+5.4.2",
+"token_index": 279,
+"span": 2,
+"candidates": [
+"כספ ככ",
+"כס פככ",
+"כספכ כ",
+"כספככ"
+],
+"split": "held_out"
+},
+{
+"id": "5.10.0+5.10.1",
+"token_index": 300,
+"span": 2,
+"candidates": [
+"אמות ששינ",
+"אמו תששינ",
+"אמותש שינ",
+"אמותששינ"
+],
+"split": "held_out"
+},
+{
+"id": "5.10.1+5.10.2",
+"token_index": 301,
+"span": 2,
+"candidates": [
+"ששינ חפור",
+"ששי נחפור",
+"ששינח פור",
+"ששינחפור"
+],
+"split": "held_out"
+},
+{
+"id": "5.10.2+5.10.3",
+"token_index": 302,
+"span": 2,
+"candidates": [
+"חפור אמות",
+"חפו ראמות",
+"חפורא מות",
+"חפוראמות"
+],
+"split": "held_out"
+},
+{
+"id": "5.10.3+5.11.0",
+"token_index": 303,
+"span": 2,
+"candidates": [
+"אמות שלוש",
+"אמו תשלוש",
+"אמותש לוש",
+"אמותשלוש"
+],
+"split": "held_out"
+},
+{
+"id": "5.11.0+5.11.1",
+"token_index": 304,
+"span": 2,
+"candidates": [
+"שלוש כספ",
+"שלו שכספ",
+"שלושכ ספ",
+"שלושכספ"
+],
+"split": "held_out"
+},
+{
+"id": "5.11.1+5.11.2",
+"token_index": 305,
+"span": 2,
+"candidates": [
+"כספ ככ",
+"כס פככ",
+"כספכ כ",
+"כספככ"
+],
+"split": "held_out"
+},
+{
+"id": "5.14.2+5.14.3",
+"token_index": 316,
+"span": 2,
+"candidates": [
+"שבע ככ",
+"שב עככ",
+"שבעכ כ",
+"שבעככ"
+],
+"split": "held_out"
+},
+{
+"id": "6.5.3+6.6.0",
+"token_index": 336,
+"span": 2,
+"candidates": [
+"תחתו ככ",
+"תחת וככ",
+"תחתוכ כ",
+"תחתוככ"
+],
+"split": "held_out"
+},
+{
+"id": "6.9.0+6.9.1",
+"token_index": 345,
+"span": 2,
+"candidates": [
+"למזרח חפר",
+"למזר חחפר",
+"למזרחח פר",
+"למזרחחפר"
+],
+"split": "held_out"
+},
+{
+"id": "6.9.1+6.9.2",
+"token_index": 346,
+"span": 2,
+"candidates": [
+"חפר בפתח",
+"חפ רבפתח",
+"חפרב פתח",
+"חפרבפתח"
+],
+"split": "held_out"
+},
+{
+"id": "6.11.2+6.12.0",
+"token_index": 354,
+"span": 2,
+"candidates": [
+"בצד המערבי",
+"בצ דהמערבי",
+"בצדה מערבי",
+"בצדהמערבי"
+],
+"split": "held_out"
+},
+{
+"id": "6.12.0+6.12.1",
+"token_index": 355,
+"span": 2,
+"candidates": [
+"המערבי חפר",
+"המערב יחפר",
+"המערביח פר",
+"המערביחפר"
+],
+"split": "held_out"
+},
+{
+"id": "7.7.0+7.7.1",
+"token_index": 385,
+"span": 2,
+"candidates": [
+"ככרינ ארבע",
+"ככרי נארבע",
+"ככרינא רבע",
+"ככרינארבע"
+],
+"split": "held_out"
+},
+{
+"id": "7.7.1+7.7.2",
+"token_index": 386,
+"span": 2,
+"candidates": [
+"ארבע מאות",
+"ארב עמאות",
+"ארבעמ אות",
+"ארבעמאות"
+],
+"split": "held_out"
+},
+{
+"id": "7.7.2+7.8.0",
+"token_index": 387,
+"span": 2,
+"candidates": [
+"מאות במערא",
+"מאו תבמערא",
+"מאותב מערא",
+"מאותבמערא"
+],
+"split": "held_out"
+},
+{
+"id": "7.15.2+7.15.3",
+"token_index": 419,
+"span": 2,
+"candidates": [
+"אמות שלוש",
+"אמו תשלוש",
+"אמותש לוש",
+"אמותשלוש"
+],
+"split": "held_out"
+},
+{
+"id": "8.1.1+8.1.2",
+"token_index": 429,
+"span": 2,
+"candidates": [
+"שבדרכ מזרח",
+"שבדר כמזרח",
+"שבדרכמ זרח",
+"שבדרכמזרח"
+],
+"split": "held_out"
+},
+{
+"id": "8.5.0+8.5.1",
+"token_index": 444,
+"span": 2,
+"candidates": [
+"על האבנ",
+"ע להאבנ",
+"עלה אבנ",
+"עלהאבנ"
+],
+"split": "held_out"
+},
+{
+"id": "8.6.2+8.7.0",
+"token_index": 451,
+"span": 2,
+"candidates": [
+"כספ וזהב",
+"כס פוזהב",
+"כספו זהב",
+"כספוזהב"
+],
+"split": "held_out"
+},
+{
+"id": "8.9.1+8.9.2",
+"token_index": 461,
+"span": 2,
+"candidates": [
+"אמות שלוש",
+"אמו תשלוש",
+"אמותש לוש",
+"אמותשלוש"
+],
+"split": "held_out"
+},
+{
+"id": "8.9.2+8.9.3",
+"token_index": 462,
+"span": 2,
+"candidates": [
+"שלוש ככ",
+"שלו שככ",
+"שלושכ כ",
+"שלושככ"
+],
+"split": "held_out"
+},
+{
+"id": "8.10.3+8.11.0",
+"token_index": 468,
+"span": 2,
+"candidates": [
+"הצופא מערב",
+"הצופ אמערב",
+"הצופאמ ערב",
+"הצופאמערב"
+],
+"split": "held_out"
+},
+{
+"id": "8.11.0+8.11.1",
+"token_index": 469,
+"span": 2,
+"candidates": [
+"מערב בדרומ",
+"מער בבדרומ",
+"מערבב דרומ",
+"מערבבדרומ"
+],
+"split": "held_out"
+},
+{
+"id": "8.12.1+8.12.2",
+"token_index": 473,
+"span": 2,
+"candidates": [
+"צפונ חפור",
+"צפו נחפור",
+"צפונח פור",
+"צפונחפור"
+],
+"split": "held_out"
+},
+{
+"id": "8.12.2+8.12.3",
+"token_index": 474,
+"span": 2,
+"candidates": [
+"חפור אמות",
+"חפו ראמות",
+"חפורא מות",
+"חפוראמות"
+],
+"split": "held_out"
+},
+{
+"id": "9.4.3+9.5.0",
+"token_index": 512,
+"span": 2,
+"candidates": [
+"הצופא מזרח",
+"הצופ אמזרח",
+"הצופאמ זרח",
+"הצופאמזרח"
+],
+"split": "held_out"
+},
+{
+"id": "9.5.2+9.5.3",
+"token_index": 515,
+"span": 2,
+"candidates": [
+"אמות שמונא",
+"אמו תשמונא",
+"אמותש מונא",
+"אמותשמונא"
+],
+"split": "held_out"
+},
+{
+"id": "9.12.2+9.12.3",
+"token_index": 543,
+"span": 2,
+"candidates": [
+"חפור אמות",
+"חפו ראמות",
+"חפורא מות",
+"חפוראמות"
+],
+"split": "held_out"
+},
+{
+"id": "9.12.3+9.13.0",
+"token_index": 544,
+"span": 2,
+"candidates": [
+"אמות שבע",
+"אמו תשבע",
+"אמותש בע",
+"אמותשבע"
+],
+"split": "held_out"
+},
+{
+"id": "9.16.1+9.16.2",
+"token_index": 559,
+"span": 2,
+"candidates": [
+"שבה חרמ",
+"שב החרמ",
+"שבהח רמ",
+"שבהחרמ"
+],
+"split": "held_out"
+},
+{
+"id": "10.2.0+10.2.1",
+"token_index": 570,
+"span": 2,
+"candidates": [
+"מלמעלא ככ",
+"מלמעל אככ",
+"מלמעלאכ כ",
+"מלמעלאככ"
+],
+"split": "held_out"
+},
+{
+"id": "10.7.1+10.7.2",
+"token_index": 592,
+"span": 2,
+"candidates": [
+"ששינ ושנינ",
+"ששי נושנינ",
+"ששינו שנינ",
+"ששינושנינ"
+],
+"split": "held_out"
+},
+{
+"id": "10.10.4+10.11.0",
+"token_index": 608,
+"span": 2,
+"candidates": [
+"מאות זהב",
+"מאו תזהב",
+"מאותז הב",
+"מאותזהב"
+],
+"split": "held_out"
+},
+{
+"id": "10.11.0+10.11.1",
+"token_index": 609,
+"span": 2,
+"candidates": [
+"זהב וכלינ",
+"זה בוכלינ",
+"זהבו כלינ",
+"זהבוכלינ"
+],
+"split": "held_out"
+},
+{
+"id": "10.12.3+10.12.4",
+"token_index": 616,
+"span": 2,
+"candidates": [
+"מנ הצד",
+"מ נהצד",
+"מנה צד",
+"מנהצד"
+],
+"split": "held_out"
+},
+{
+"id": "10.13.3+10.13.4",
+"token_index": 621,
+"span": 2,
+"candidates": [
+"שתינ עסרה",
+"שתי נעסרה",
+"שתינע סרה",
+"שתינעסרה"
+],
+"split": "held_out"
+},
+{
+"id": "10.13.4+10.14.0",
+"token_index": 622,
+"span": 2,
+"candidates": [
+"עסרה ככ",
+"עסר הככ",
+"עסרהכ כ",
+"עסרהככ"
+],
+"split": "held_out"
+},
+{
+"id": "11.3.2+11.3.3",
+"token_index": 650,
+"span": 2,
+"candidates": [
+"תחת עמוד",
+"תח תעמוד",
+"תחתע מוד",
+"תחתעמוד"
+],
+"split": "held_out"
+},
+{
+"id": "11.5.2+11.5.3",
+"token_index": 662,
+"span": 2,
+"candidates": [
+"הסלע הצופא",
+"הסל עהצופא",
+"הסלעה צופא",
+"הסלעהצופא"
+],
+"split": "held_out"
+},
+{
+"id": "11.14.0+11.14.1",
+"token_index": 698,
+"span": 2,
+"candidates": [
+"שלו כלי",
+"של וכלי",
+"שלוכ לי",
+"שלוכלי"
+],
+"split": "held_out"
+},
+{
+"id": "11.17.6+12.1.0",
+"token_index": 717,
+"span": 2,
+"candidates": [
+"מאות זהב",
+"מאו תזהב",
+"מאותז הב",
+"מאותזהב"
+],
+"split": "held_out"
+},
+{
+"id": "12.1.0+12.1.1",
+"token_index": 718,
+"span": 2,
+"candidates": [
+"זהב ככ",
+"זה בככ",
+"זהבכ כ",
+"זהבככ"
+],
+"split": "held_out"
+},
+{
+"id": "12.2.4+12.2.5",
+"token_index": 730,
+"span": 2,
+"candidates": [
+"תחת ספ",
+"תח תספ",
+"תחתס פ",
+"תחתספ"
+],
+"split": "held_out"
+},
+{
+"id": "12.5.3+12.5.4",
+"token_index": 745,
+"span": 2,
+"candidates": [
+"וכספ ככ",
+"וכס פככ",
+"וכספכ כ",
+"וכספככ"
+],
+"split": "held_out"
+},
+{
+"id": "12.6.7+12.6.8",
+"token_index": 755,
+"span": 2,
+"candidates": [
+"וכלי זהב",
+"וכל יזהב",
+"וכליז הב",
+"וכליזהב"
+],
+"split": "held_out"
+},
+{
+"id": "1.8.2+1.8.3",
+"token_index": 33,
+"span": 2,
+"candidates": [
+"העליונ ככרינ",
+"העליו נככרינ",
+"העליונכ כרינ",
+"העליונככרינ"
+],
+"split": "calibration_training"
+},
+{
+"id": "1.11.5+1.11.6",
+"token_index": 55,
+"span": 2,
+"candidates": [
+"מנ הצפונ",
+"מ נהצפונ",
+"מנה צפונ",
+"מנהצפונ"
+],
+"split": "calibration_training"
+},
+{
+"id": "2.9.2+2.9.3",
+"token_index": 120,
+"span": 2,
+"candidates": [
+"ככרינ עסר",
+"ככרי נעסר",
+"ככרינע סר",
+"ככרינעסר"
+],
+"split": "calibration_training"
+},
+{
+"id": "3.3.2+3.3.3",
+"token_index": 163,
+"span": 2,
+"candidates": [
+"כוסות מנקיאות",
+"כוסו תמנקיאות",
+"כוסותמ נקיאות",
+"כוסותמנקיאות"
+],
+"split": "calibration_training"
+},
+{
+"id": "3.6.1+3.6.2",
+"token_index": 175,
+"span": 2,
+"candidates": [
+"חפר אמות",
+"חפ ראמות",
+"חפרא מות",
+"חפראמות"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.4.1+6.4.2",
+"token_index": 330,
+"span": 2,
+"candidates": [
+"שלוש שמ",
+"שלו ששמ",
+"שלושש מ",
+"שלוששמ"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.5.0+6.5.1",
+"token_index": 333,
+"span": 2,
+"candidates": [
+"בו ספר",
+"ב וספר",
+"בוס פר",
+"בוספר"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.5.1+6.5.2",
+"token_index": 334,
+"span": 2,
+"candidates": [
+"ספר אחד",
+"ספ ראחד",
+"ספרא חד",
+"ספראחד"
+],
+"split": "calibration_training"
+},
+{
+"id": "6.10.0+6.10.1",
+"token_index": 348,
+"span": 2,
+"candidates": [
+"אמות תשע",
+"אמו תתשע",
+"אמותת שע",
+"אמותתשע"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.3.0+8.3.1",
+"token_index": 435,
+"span": 2,
+"candidates": [
+"כלי דמע",
+"כל ידמע",
+"כליד מע",
+"כלידמע"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.4.0+8.4.1",
+"token_index": 440,
+"span": 2,
+"candidates": [
+"בגי החיצונא",
+"בג יהחיצונא",
+"בגיה חיצונא",
+"בגיהחיצונא"
+],
+"split": "calibration_training"
+},
+{
+"id": "8.15.0+8.15.1",
+"token_index": 487,
+"span": 2,
+"candidates": [
+"אמות אחת",
+"אמו תאחת",
+"אמותא חת",
+"אמותאחת"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.2.0+12.2.1",
+"token_index": 726,
+"span": 2,
+"candidates": [
+"תחת האבנ",
+"תח תהאבנ",
+"תחתה אבנ",
+"תחתהאבנ"
+],
+"split": "calibration_training"
+},
+{
+"id": "12.6.0+12.6.1",
+"token_index": 748,
+"span": 2,
+"candidates": [
+"בפי המבוע",
+"בפ יהמבוע",
+"בפיה מבוע",
+"בפיהמבוע"
+],
+"split": "calibration_training"
+}
+]
+}

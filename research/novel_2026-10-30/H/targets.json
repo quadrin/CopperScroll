@@ -1,0 +1,51 @@
+{
+ "_note": "Lane H target loci and candidate lists, fixed before any target is scored. Strings are normalised (final letters as base letters). token_start/token_end index the 3Q15 graphic-word stream built by code/prep.py from ETCBC tf/2.0.2 (end exclusive); the span is replaced by each candidate and the context is the ETCBC text around it.",
+ "targets": [
+  {"locus": "IX 10 (entry 41), words 2-3", "token_start": 534, "token_end": 536,
+   "candidates": [
+    {"string": "מנחה רב", "source": "Puech 2015 p. 75, pp. 82-83 (variants.csv V0446-V0453); Milik's hand copy מנחהרב divided as Puech"},
+    {"string": "מנה חרמ", "source": "Wolters 1992; García Martínez-Tigchelaar 1997 (variants.csv V0449, V0453); ETCBC text"},
+    {"string": "מנ החרמ", "source": "Allegro 1960; Beyer 1994; Lefkovits 2000; Muchowski 1993 (variants.csv V0447, V0448, V0450, V0452)"},
+    {"string": "מנחת רב", "source": "Luria 1963 (variants.csv V0451)"},
+    {"string": "מנח הרב", "source": "other word division of the engraved letters מנחהרב (Milik's copy draws them continuously; ix10_left_ct16_2026-10-30.md section 4); no edition prints it"},
+    {"string": "מנחהרב", "source": "letters מנחהרב undivided, as drawn in Milik's copy (DJD III pl. LXIV, per ix10_left_ct17_2026-10-30.md)"},
+    {"string": "מנהחרמ", "source": "letters מנהחרמ undivided (division alternative of the ETCBC/Wolters letters)"}
+   ]},
+  {"locus": "I 12 (entry 4), word 3", "token_start": 60, "token_end": 61,
+   "candidates": [
+    {"string": "ניקרת", "source": "Allegro 1960; Milik 1962; Muchowski 1993; Wolters 1992/1996; Schiffman 2002 (variants.csv V0057-V0067; readings.json e4-immersion); ETCBC text"},
+    {"string": "נקרת", "source": "Eshel 2002 p. 106 (variants.csv V0058; readings.json e4-immersion)"},
+    {"string": "מקרת", "source": "Puech 2006; Puech 2015 p. 25, pp. 35-36 (variants.csv V0056-V0067; readings.json e4-immersion)"},
+    {"string": "מקדת", "source": "Lefkovits 2010, hesitating with mqrt (variants.csv V0059)"}
+   ]},
+  {"locus": "VII 11 (entry 31), word 3", "token_start": 404, "token_end": 405,
+   "candidates": [
+    {"string": "המשמרה", "source": "Milik 1962; Lefkovits 2000; Eshel 2002; Wolters; Schiffman; Pixner; García Martínez-Tigchelaar (variants.csv V0298-V0311; readings.json e31-landmark); ETCBC text"},
+    {"string": "המשמרת", "source": "Muchowski 1993 (variants.csv V0303)"},
+    {"string": "המשטח", "source": "Puech 2015 p. 67 hmšṭḥ (variants.csv V0307-V0311; readings.json e31-landmark)"},
+    {"string": "המשטוח", "source": "Puech 2006 p. 192 / 2015 p. 62 המשט<ו>ח with the inserted waw (variants.csv V0298-V0306)"}
+   ]},
+  {"locus": "X 15 (entry 49), words 0-2", "token_start": 625, "token_end": 628,
+   "candidates": [
+    {"string": "בימ בית חמימ", "source": "ETCBC/Abegg בי<ם> בית חמים; Milik 1962 בית חמים pp. 270-271; Lefkovits 2000 ḥmym (variants.csv V0524-V0529; readings.json e49-outlet)"},
+    {"string": "ביצאית המימ", "source": "Puech 2015 p. 85 (variants.csv V0524, V0526)"},
+    {"string": "ביציאת המימ", "source": "Puech 2006 יציאת המים (readings.json e49-outlet; variants.csv V0525), with the line-initial ב that every reading has"}
+   ]},
+  {"locus": "X 15 (entry 49), words 3-5", "token_start": 628, "token_end": 631,
+   "candidates": [
+    {"string": "של רחיל תחת", "source": "ETCBC/Abegg; Lurie, Beyer, Wolters 'of Rachel' (variants.csv V0530; readings.json e49-siloam)"},
+    {"string": "שלוח ולתחת", "source": "Puech 2015 p. 85 engraved letters with his cursive waw, without the supplied [[של]] (variants.csv V0530; plate_check.md X 15)"},
+    {"string": "של שלוח ולתחת", "source": "Puech 2015 p. 85 / 2006 p. 200 with the supplied genitive [[של]] (not engraved)"}
+   ]},
+  {"locus": "XII 10 (entry 60), word 1 (R1-R7), followed by בצפונ", "token_start": 777, "token_end": 778,
+   "candidates": [
+    {"string": "שכנה בצפונ", "source": "R1 Puech 2006; Wolters (XII10_IMAGE_READING_PROTOCOL.md line 13)"},
+    {"string": "שבנה בצפונ", "source": "R2 Puech 1997/2002 (line 14)"},
+    {"string": "שבצח בצפונ", "source": "R3 Milik 1962 (line 15)"},
+    {"string": "שבינח בצפונ", "source": "R4 Lefkovits/Beyer (line 16)"},
+    {"string": "שכינה בצפונ", "source": "R5 Allegro/Lurie (line 17)"},
+    {"string": "שכונה בצפונ", "source": "R6 Allegro provisional MS (line 18)"},
+    {"string": "שבצהב בצפונ", "source": "R7 Pixner (line 19)"}
+   ]}
+ ]
+}
