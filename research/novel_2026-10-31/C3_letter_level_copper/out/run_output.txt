@@ -1,0 +1,211 @@
+{
+ "mode": "confirmatory",
+ "test_col": "III",
+ "test_cuts": [
+  7,
+  8
+ ],
+ "control_col": "I",
+ "control_cuts": [
+  2,
+  3,
+  4
+ ],
+ "THR": 0.038,
+ "n_placed": 158,
+ "n_measured": 156,
+ "n_pitch_fallback": 45,
+ "counts": {
+  "III_before": 46,
+  "III_after": 14,
+  "I_before": 60,
+  "I_after": 32
+ },
+ "split_half_all": {
+  "n": 156,
+  "rho": 0.5635630857738932,
+  "spread": 0.11288409614700678
+ },
+ "split_half_test": {
+  "n": 60,
+  "rho": 0.7320922478466243,
+  "spread": 0.09748510353983056
+ },
+ "class_validity": {
+  "n_tall": 15,
+  "n_yod": 5,
+  "n_rest": 136,
+  "tall_ratio": 1.1304679663723383,
+  "yod_ratio": 0.785527296214657
+ },
+ "gate": {
+  "G1_all": true,
+  "G1_test": true,
+  "G2": true,
+  "G3": true,
+  "G4": true
+ },
+ "gate_pass": true,
+ "c_test": -0.05241709690848839,
+ "c_control": -0.10079469439253141,
+ "delta": 0.04837759748404302,
+ "p_boot": 0.2591,
+ "delta_boot_5": -0.10662272271890945,
+ "delta_boot_95": 0.24318177986451162,
+ "c_test_boot_5_95": [
+  -0.1713443762197162,
+  0.10493798729468229
+ ],
+ "median_before_after_test": [
+  1.0632089931845816,
+  1.007478664354849
+ ],
+ "median_before_after_control": [
+  1.0638359096129708,
+  0.9566068942197308
+ ],
+ "mannwhitney_test_after_gt_before_p": 0.6201438789669267,
+ "mannwhitney_control_after_gt_before_p": 0.9417788443594267,
+ "verdict": "not identifiable from available evidence (gate passed)",
+ "label": "partly",
+ "class_medians_sha256": "c71d3cb539f5f89e06d04bf5429cc75c42a752e167613b5449b0ddc756eac017",
+ "runtime_s": 29.4
+}
+{
+ "drawing_contrast_test_same_letters": 0.12630610145633692,
+ "drawing_contrast_control_same_letters": 0.025188219663418998,
+ "line_level_copper_test": {
+  "rel": -0.1454332141136535,
+  "n_lines_before": 5,
+  "n_lines_after": 3
+ },
+ "line_level_copper_control": {
+  "rel": -0.09090639026879832,
+  "n_lines_before": 6,
+  "n_lines_after": 4
+ },
+ "line_level_drawing_test": {
+  "rel": 0.12405383124739022,
+  "n_lines_before": 5,
+  "n_lines_after": 3
+ },
+ "line_level_drawing_control": {
+  "rel": 0.09179424706352957,
+  "n_lines_before": 6,
+  "n_lines_after": 4
+ },
+ "uncalibrated_threshold": 0.073,
+ "delta_ge_uncal": false,
+ "hi95_lt_uncal": false,
+ "own_pitch_only": {
+  "c_test": -0.10671957592462233,
+  "c_control": -0.10000228347230489,
+  "delta": -0.006717292452317447
+ },
+ "by_cut": {
+  "2": {
+   "c_copper": 0.2141400006341918,
+   "n_before": 23,
+   "n_after": 5,
+   "split_half": {
+    "n": 28,
+    "rho": 0.47837985769020247,
+    "spread": 0.11986925389841883
+   }
+  },
+  "3": {
+   "c_copper": -0.1844432601666015,
+   "n_before": 29,
+   "n_after": 22,
+   "split_half": {
+    "n": 55,
+    "rho": 0.4354978354978356,
+    "spread": 0.1438557389424956
+   }
+  },
+  "4": {
+   "c_copper": -0.056367746842611144,
+   "n_before": 8,
+   "n_after": 5,
+   "split_half": {
+    "n": 13,
+    "rho": 0.510989010989011,
+    "spread": 0.08342516083577095
+   }
+  },
+  "7": {
+   "c_copper": -0.020620614588045094,
+   "n_before": 22,
+   "n_after": 7,
+   "split_half": {
+    "n": 29,
+    "rho": 0.4551724137931034,
+    "spread": 0.14295790788361282
+   }
+  },
+  "8": {
+   "c_copper": -0.16038052006207892,
+   "n_before": 24,
+   "n_after": 7,
+   "split_half": {
+    "n": 31,
+    "rho": 0.9000000000000001,
+    "spread": 0.07833001221124261
+   }
+  }
+ },
+ "pitch_test_before_after_median": [
+  340.31302917926087,
+  375.86385693892476
+ ],
+ "extent_test_before_after_median": [
+  138.399847455849,
+  154.1976763816907
+ ]
+}
+{
+ "III": {
+  "n": 60,
+  "rho_rel": 0.12426364362859393,
+  "rho_raw": -0.0035292973775773962,
+  "copper_on_drawing_plus_after": {
+   "slope_drawing": 0.42452672009809195,
+   "step_after": -0.08597440207434638
+  },
+  "drawing_step_g0": 0.13319968944099378,
+  "drawing_step_given_copper_g": 0.1343909327367827,
+  "share_of_drawing_step_explained_by_copper": -0.008943288837896635,
+  "copper_on_drawing_plus_after_90ci": {
+   "slope": [
+    -0.20584047878519873,
+    1.1249838279245898
+   ],
+   "step": [
+    -0.274496084193146,
+    0.10360678097389302
+   ]
+  }
+ },
+ "I": {
+  "n": 92,
+  "rho_rel": 0.024628947490097558,
+  "rho_raw": 0.11970067154266205,
+  "copper_on_drawing_plus_after": {
+   "slope_drawing": 0.0684742875364527,
+   "step_after": -0.06003542584474315
+  },
+  "drawing_step_g0": 0.05258208333333335,
+  "drawing_step_given_copper_g": 0.054449009409388745,
+  "share_of_drawing_step_explained_by_copper": -0.03550498492462539,
+  "copper_on_drawing_plus_after_90ci": {
+   "slope": [
+    -0.21921112249854624,
+    0.3089894661092495
+   ],
+   "step": [
+    -0.1579351348413177,
+    0.037843913116440815
+   ]
+  }
+ }
+}
