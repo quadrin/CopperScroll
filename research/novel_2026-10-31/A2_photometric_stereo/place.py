@@ -54,7 +54,7 @@ def rot_scale(img, s, deg):
     return out, M
 
 
-def place_cut(cut, col, lh88=150.0, verbose=True):
+def place_cut(cut, col, lh88=150.0, verbose=True, scales=None, part=None):
     reg = load_reg(cut)
     E, (x0, y0) = edge88(cut, reg)
     C, page = copy_photo(col)
@@ -63,11 +63,15 @@ def place_cut(cut, col, lh88=150.0, verbose=True):
     h, w = E.shape
     # template: central 80% in height, central 90% in width
     ty0, ty1 = int(0.1 * h), int(0.9 * h); tx0, tx1 = int(0.05 * w), int(0.95 * w)
+    if part == "left":
+        tx1 = int(0.55 * w)
+    elif part == "right":
+        tx0 = int(0.45 * w)
     T = E[ty0:ty1, tx0:tx1]
     Cp = prep(C, 2.0)
     best = []
     t0 = time.time()
-    for s in np.arange(0.34, 0.605, 0.02):
+    for s in (scales if scales is not None else np.arange(0.34, 0.605, 0.02)):
         for deg in range(-4, 5):
             Ts, M = rot_scale(T, s, deg)
             msk = rot_scale(np.ones_like(T), s, deg)[0] > 0.5
@@ -142,6 +146,12 @@ def place_cut(cut, col, lh88=150.0, verbose=True):
 if __name__ == "__main__":
     import os
     cut = int(sys.argv[1]); col = sys.argv[2]
-    o = place_cut(cut, col)
+    narrow = len(sys.argv) > 3 and sys.argv[3] in ("narrow", "left", "right")
+    part = sys.argv[3] if len(sys.argv) > 3 and sys.argv[3] in ("left", "right") else None
+    # "narrow": scales 0.37-0.43 (exploratory retry; all accepted wide-search placements chose 0.38-0.40)
+    o = place_cut(cut, col, scales=np.arange(0.37, 0.4305, 0.01) if narrow else None, part=part)
+    o["scale_search"] = "narrow 0.37-0.43" if narrow else "wide 0.34-0.60"
+    o["template_part"] = part or "whole strip"
     os.makedirs(f"{HERE}/place", exist_ok=True)
-    json.dump(o, open(f"{HERE}/place/place_cut{cut:02d}_{col}.json", "w"), indent=1)
+    suf = f"_{part}" if part else ("_narrow" if narrow else "")
+    json.dump(o, open(f"{HERE}/place/place_cut{cut:02d}_{col}{suf}.json", "w"), indent=1)
