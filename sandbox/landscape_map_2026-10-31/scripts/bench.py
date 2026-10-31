@@ -135,6 +135,36 @@ def run_B(tag, cell_km=0.3):
     return df
 
 
+def run_B_v1(tag, cell_km=0.3):
+    """Benchmark B under revision 1: the 1940s items form one 'scroll'; (c, rho) pooled."""
+    from model import RHO_GRID_V1, pooled_theta
+    L = Landscape(cell_km)
+    m = pd.read_csv(INP / "mandate_features.csv")
+    cmap = {"cave": {"cave"}, "aqueduct": {"channel_aqueduct", "dam"}, "tomb": {"tomb"},
+            "pool": {"pool_reservoir"}, "cistern": {"cistern"}, "well_or_cistern": {"cistern"}}
+    items = []
+    for r in m.itertuples():
+        if r.feature_class not in cmap or pd.isna(r.lat):
+            continue
+        k = int(L.cell_of(r.lat, r.lon)[0])
+        if k >= 0:
+            items.append((r, k, EntryScorer(L, [frozenset(cmap[r.feature_class])])))
+    rows = []
+    for reg in ("R0", "R1"):
+        regs = [None if reg == "R0" else (L.zone == L.zone[k], 0.8) for _, k, _ in items]
+        W = pooled_theta([sc.marginal(rg, RHO_GRID_V1)[1] for (_, _, sc), rg in zip(items, regs)])
+        for (r, k, sc), rg in zip(items, regs):
+            post, prior, w, _ = sc.posterior(rg, RHO_GRID_V1, W)
+            rows.append(dict(item=r.item_id, window=r.window, cls=r.feature_class, region=reg,
+                             zone=int(L.zone[k]), truth_pat=int(sc.pat[k]), truth_site=bool(sc.site[k]),
+                             c_post_mean=float((W.sum(0) * np.arange(1, 10) / 10).sum()),
+                             rho_post_mean=float((W.sum(1) * RHO_GRID_V1).sum()),
+                             **metrics(post, prior, k)))
+    df = pd.DataFrame(rows)
+    df.to_csv(RUN / f"out/benchB_{tag}.csv", index=False)
+    return df
+
+
 def summarise(df, by=("region",)):
     g = df.groupby(list(by))
     s = g.agg(n=("cov90", "size"), cov50=("cov50", "mean"), cov90=("cov90", "mean"),
@@ -159,7 +189,7 @@ if __name__ == "__main__":
     else:
         tag = sys.argv[2]
         ck = float(sys.argv[3]) if len(sys.argv) > 3 else 0.3
-        df = run_B(tag, ck)
+        df = (run_B if sys.argv[1] == "B" else run_B_v1)(tag, ck)
     s = summarise(df)
     s["med_area90_km2"] *= (ck ** 2)
     print(s.round(3).to_string())
