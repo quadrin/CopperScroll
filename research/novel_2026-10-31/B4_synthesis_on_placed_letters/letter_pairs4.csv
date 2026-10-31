@@ -1,0 +1,9 @@
+set,truth>partner,truth_wins,n
+train_loo,ב>כ,14,23
+train_loo,ה>ח,10,17
+train_loo,ח>ה,6,8
+train_loo,כ>ב,17,25
+heldout,ב>כ,6,9
+heldout,ה>ח,8,13
+heldout,ח>ה,2,6
+heldout,כ>ב,2,11

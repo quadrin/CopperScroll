@@ -1,0 +1,255 @@
+{
+ "protocol": "PROTOCOL_FROZEN.md",
+ "pass_rule": "n_lines >= 10 and P(T>=t) < 0.05 and decoy P >= 0.05",
+ "PASS": false,
+ "primary": {
+  "n_lines": 22,
+  "T": 0,
+  "E_T": 1.4965277777777777,
+  "P_T": 0.9999999999999998,
+  "W": 27,
+  "n_pos": 73,
+  "E_W": 31.416666666666668,
+  "P_W": 0.8819834869730102
+ },
+ "decoy": {
+  "T_decoy": 14,
+  "E_decoy": 8.583333333333334,
+  "P_decoy": 0.014775632013182258,
+  "n": 22
+ },
+ "permutation": {
+  "NPERM": 200,
+  "T_perm_mean": 1.57,
+  "T_perm_q95": 4.0,
+  "P_perm": 1.0,
+  "T_perm_counts": {
+   "0": 34,
+   "2": 64,
+   "4": 8,
+   "1": 67,
+   "3": 24,
+   "5": 3
+  }
+ },
+ "letter_accuracy": {
+  "train_loo": {
+   "ב>כ": [
+    14,
+    23
+   ],
+   "ה>ח": [
+    10,
+    17
+   ],
+   "ח>ה": [
+    6,
+    8
+   ],
+   "כ>ב": [
+    17,
+    25
+   ]
+  },
+  "heldout": {
+   "ב>כ": [
+    6,
+    9
+   ],
+   "ה>ח": [
+    8,
+    13
+   ],
+   "ח>ה": [
+    2,
+    6
+   ],
+   "כ>ב": [
+    2,
+    11
+   ]
+  }
+ },
+ "ties_total": 0,
+ "n_heldout_letters_featurised": 157,
+ "runtime_s": 414.2,
+ "median_abs_margin_heldout": 0.6206987962487004,
+ "decoy_rows": [
+  {
+   "col": 1,
+   "line": 5,
+   "decoy_letter": "ב",
+   "pos": 2,
+   "n_alternatives": 1,
+   "decoy_first": true
+  },
+  {
+   "col": 1,
+   "line": 8,
+   "decoy_letter": "ז",
+   "pos": 13,
+   "n_alternatives": 1,
+   "decoy_first": true
+  },
+  {
+   "col": 2,
+   "line": 1,
+   "decoy_letter": "ת",
+   "pos": 15,
+   "n_alternatives": 2,
+   "decoy_first": false
+  },
+  {
+   "col": 2,
+   "line": 8,
+   "decoy_letter": "ר",
+   "pos": 24,
+   "n_alternatives": 1,
+   "decoy_first": true
+  },
+  {
+   "col": 2,
+   "line": 10,
+   "decoy_letter": "ד",
+   "pos": 22,
+   "n_alternatives": 1,
+   "decoy_first": true
+  },
+  {
+   "col": 3,
+   "line": 3,
+   "decoy_letter": "ז",
+   "pos": 20,
+   "n_alternatives": 1,
+   "decoy_first": true
+  },
+  {
+   "col": 3,
+   "line": 5,
+   "decoy_letter": "ח",
+   "pos": 2,
+   "n_alternatives": 1,
+   "decoy_first": false
+  },
+  {
+   "col": 3,
+   "line": 10,
+   "decoy_letter": "ח",
+   "pos": 4,
+   "n_alternatives": 2,
+   "decoy_first": false
+  },
+  {
+   "col": 3,
+   "line": 12,
+   "decoy_letter": "ח",
+   "pos": 13,
+   "n_alternatives": 3,
+   "decoy_first": false
+  },
+  {
+   "col": 9,
+   "line": 1,
+   "decoy_letter": "כ",
+   "pos": 3,
+   "n_alternatives": 3,
+   "decoy_first": false
+  },
+  {
+   "col": 9,
+   "line": 2,
+   "decoy_letter": "ח",
+   "pos": 3,
+   "n_alternatives": 3,
+   "decoy_first": true
+  },
+  {
+   "col": 9,
+   "line": 4,
+   "decoy_letter": "כ",
+   "pos": 12,
+   "n_alternatives": 3,
+   "decoy_first": true
+  },
+  {
+   "col": 10,
+   "line": 1,
+   "decoy_letter": "ח",
+   "pos": 16,
+   "n_alternatives": 2,
+   "decoy_first": true
+  },
+  {
+   "col": 10,
+   "line": 5,
+   "decoy_letter": "ב",
+   "pos": 15,
+   "n_alternatives": 1,
+   "decoy_first": true
+  },
+  {
+   "col": 10,
+   "line": 8,
+   "decoy_letter": "כ",
+   "pos": 0,
+   "n_alternatives": 3,
+   "decoy_first": false
+  },
+  {
+   "col": 10,
+   "line": 10,
+   "decoy_letter": "ה",
+   "pos": 6,
+   "n_alternatives": 2,
+   "decoy_first": true
+  },
+  {
+   "col": 10,
+   "line": 12,
+   "decoy_letter": "ה",
+   "pos": 15,
+   "n_alternatives": 1,
+   "decoy_first": true
+  },
+  {
+   "col": 12,
+   "line": 1,
+   "decoy_letter": "י",
+   "pos": 16,
+   "n_alternatives": 2,
+   "decoy_first": false
+  },
+  {
+   "col": 12,
+   "line": 2,
+   "decoy_letter": "ה",
+   "pos": 1,
+   "n_alternatives": 2,
+   "decoy_first": true
+  },
+  {
+   "col": 12,
+   "line": 3,
+   "decoy_letter": "ב",
+   "pos": 5,
+   "n_alternatives": 1,
+   "decoy_first": true
+  },
+  {
+   "col": 12,
+   "line": 7,
+   "decoy_letter": "ב",
+   "pos": 16,
+   "n_alternatives": 1,
+   "decoy_first": true
+  },
+  {
+   "col": 12,
+   "line": 9,
+   "decoy_letter": "ו",
+   "pos": 11,
+   "n_alternatives": 2,
+   "decoy_first": false
+  }
+ ]
+}
