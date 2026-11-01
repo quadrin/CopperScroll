@@ -1,0 +1,106 @@
+{
+ "A_rows": 34,
+ "B_rows": 25,
+ "A_ids": 34,
+ "B_ids": 25,
+ "matched": 16,
+ "A_only": 18,
+ "B_only": 9,
+ "agreement": {
+  "class": {
+   "agree": 15,
+   "compared": 16,
+   "rate": 0.938
+  },
+  "dims": {
+   "agree": 13,
+   "compared": 13,
+   "rate": 1.0
+  },
+  "n_openings": {
+   "agree": 1,
+   "compared": 1,
+   "rate": 1.0
+  },
+  "opening_dirs": {
+   "agree": 2,
+   "compared": 2,
+   "rate": 1.0
+  },
+  "n_steps": {
+   "agree": 2,
+   "compared": 3,
+   "rate": 0.667
+  }
+ },
+ "A_only_ids": [
+  "BEDOUIN_CEMETERY",
+  "GRANARIES",
+  "I.BENCHES",
+  "OASIS",
+  "OPENING_PB2",
+  "OPENING_W-PB1",
+  "OVENS",
+  "PB1",
+  "PB2",
+  "PB3",
+  "PB4",
+  "STONE_LINE",
+  "T12",
+  "T13",
+  "T14",
+  "T8",
+  "TOMBS_N",
+  "TOMBS_S_HILL"
+ ],
+ "B_only_ids": [
+  "CEMETERY.PIT_TYPE",
+  "CEMETERY.TOMB_TYPE",
+  "GRANARY.1",
+  "GRANARY.2",
+  "I.OPENING_PB2",
+  "I.OPENING_W",
+  "OVEN.2",
+  "OVEN.S",
+  "V.OPENING"
+ ],
+ "A_attribute_counts": {
+  "with_any_dimension": 13,
+  "with_n_openings": 1,
+  "with_opening_dirs": 2,
+  "with_n_steps": 3,
+  "with_grid": 20,
+  "in_window_yes": 30,
+  "classes": {
+   "building": 1,
+   "conduit": 1,
+   "court": 1,
+   "doorway": 3,
+   "other": 6,
+   "pillar": 4,
+   "pit": 1,
+   "room": 4,
+   "tomb": 11,
+   "wall": 2
+  }
+ },
+ "B_attribute_counts": {
+  "with_any_dimension": 13,
+  "with_n_openings": 1,
+  "with_opening_dirs": 3,
+  "with_n_steps": 2,
+  "with_grid": 17,
+  "in_window_yes": 24,
+  "classes": {
+   "building": 1,
+   "conduit": 1,
+   "court": 1,
+   "doorway": 4,
+   "other": 6,
+   "pit": 1,
+   "room": 4,
+   "tomb": 6,
+   "wall": 1
+  }
+ }
+}

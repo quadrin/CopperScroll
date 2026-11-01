@@ -1,0 +1,100 @@
+{
+ "A_rows": 41,
+ "B_rows": 35,
+ "A_ids": 41,
+ "B_ids": 35,
+ "matched": 26,
+ "A_only": 15,
+ "B_only": 9,
+ "agreement": {
+  "class": {
+   "agree": 26,
+   "compared": 26,
+   "rate": 1.0
+  },
+  "dims": {
+   "agree": 24,
+   "compared": 38,
+   "rate": 0.632
+  },
+  "n_openings": {
+   "agree": 3,
+   "compared": 8,
+   "rate": 0.375
+  },
+  "opening_dirs": {
+   "agree": 2,
+   "compared": 6,
+   "rate": 0.333
+  },
+  "n_steps": {
+   "agree": 0,
+   "compared": 0,
+   "rate": null
+  }
+ },
+ "A_only_ids": [
+  "11Q.BASIN",
+  "11Q.BREACH",
+  "11Q.CREVI",
+  "11Q.CREVN",
+  "11Q.CREVR",
+  "11Q.F150",
+  "11Q.F30",
+  "11Q.FE",
+  "11Q.H",
+  "11Q.HEARTH",
+  "11Q.KARSTE",
+  "11Q.KARSTN",
+  "11Q.STRUCTA",
+  "11Q.STRUCTB",
+  "11Q.STRUCTC"
+ ],
+ "B_only_ids": [
+  "11Q.BREACHA",
+  "11Q.PCREV_INNER",
+  "11Q.PCREV_NORTH",
+  "11Q.PCREV_RIGHT",
+  "11Q.STRUCT19A",
+  "11Q.STRUCT19B",
+  "11Q.STRUCT19C",
+  "11Q.UV",
+  "11Q.VW"
+ ],
+ "A_attribute_counts": {
+  "with_any_dimension": 23,
+  "with_n_openings": 4,
+  "with_opening_dirs": 3,
+  "with_n_steps": 0,
+  "with_grid": 1,
+  "in_window_yes": 3,
+  "classes": {
+   "cave": 1,
+   "chamber": 4,
+   "doorway": 2,
+   "fissure": 9,
+   "other": 16,
+   "pillar": 1,
+   "pit": 1,
+   "wall": 7
+  }
+ },
+ "B_attribute_counts": {
+  "with_any_dimension": 20,
+  "with_n_openings": 9,
+  "with_opening_dirs": 6,
+  "with_n_steps": 0,
+  "with_grid": 2,
+  "in_window_yes": 5,
+  "classes": {
+   "cave": 1,
+   "chamber": 4,
+   "doorway": 2,
+   "fissure": 6,
+   "other": 11,
+   "pillar": 1,
+   "pit": 1,
+   "wall": 9
+  }
+ }
+}

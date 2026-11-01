@@ -1,0 +1,142 @@
+{
+ "A_rows": 71,
+ "B_rows": 65,
+ "A_ids": 71,
+ "B_ids": 65,
+ "matched": 45,
+ "A_only": 26,
+ "B_only": 20,
+ "agreement": {
+  "class": {
+   "agree": 45,
+   "compared": 45,
+   "rate": 1.0
+  },
+  "dims": {
+   "agree": 44,
+   "compared": 66,
+   "rate": 0.667
+  },
+  "n_openings": {
+   "agree": 6,
+   "compared": 7,
+   "rate": 0.857
+  },
+  "opening_dirs": {
+   "agree": 4,
+   "compared": 5,
+   "rate": 0.8
+  },
+  "n_steps": {
+   "agree": 7,
+   "compared": 7,
+   "rate": 1.0
+  }
+ },
+ "A_only_ids": [
+  "AREAA",
+  "ENCLOSURE",
+  "ENCLOSURE.PILLARS",
+  "ENCLOSURE.ROOM",
+  "ENCLOSURE.STABLE",
+  "L106",
+  "L114",
+  "L137.BRANCH",
+  "L142.CHANNEL_VAT",
+  "L142.DRAIN",
+  "NWING_E_ROOMS",
+  "NWING_E_ROOMS.DOOR",
+  "NWING_W_ROOM",
+  "N_WING",
+  "OASIS",
+  "RAS_FESHKHA",
+  "SPRING",
+  "S_WING",
+  "TOMBS_S_WALL",
+  "TOWER",
+  "W3",
+  "W3.DOOR_MAIN",
+  "W3.DOOR_N",
+  "W7.WINDOW",
+  "W_WING",
+  "W_WING_S_ROOM"
+ ],
+ "B_only_ids": [
+  "AREAB_TOWER",
+  "ENCLOSURE_ROOM",
+  "ENCLOSURE_STABLE",
+  "ENTRANCE_MAIN",
+  "ENTRANCE_NORTH_WING",
+  "FESHKHA_SPRING",
+  "ISRAELITE_BUILDING.WALL",
+  "L119.POOL.STAIRS",
+  "L119.POOL_CHANNEL",
+  "L119.STEPS",
+  "L127.STEPS",
+  "L127.VAT_CHANNEL",
+  "L142.OUTLET",
+  "NORTH_WING_E_ENTRANCE",
+  "SQUARE_ENCLOSURE",
+  "STABLE",
+  "STABLE.DOOR",
+  "STABLE.WINDOW",
+  "TOMBS_S",
+  "WEST_WING_S_ROOM"
+ ],
+ "A_attribute_counts": {
+  "with_any_dimension": 49,
+  "with_n_openings": 13,
+  "with_opening_dirs": 16,
+  "with_n_steps": 7,
+  "with_grid": 63,
+  "in_window_yes": 62,
+  "classes": {
+   "basin": 1,
+   "building": 2,
+   "conduit": 7,
+   "court": 3,
+   "doorway": 6,
+   "other": 13,
+   "outlet": 1,
+   "pillar": 2,
+   "pool": 2,
+   "reservoir": 1,
+   "ritual_bath": 1,
+   "road": 1,
+   "room": 15,
+   "spring": 3,
+   "steps": 1,
+   "tomb": 1,
+   "tower": 1,
+   "wall": 10
+  }
+ },
+ "B_attribute_counts": {
+  "with_any_dimension": 50,
+  "with_n_openings": 11,
+  "with_opening_dirs": 12,
+  "with_n_steps": 10,
+  "with_grid": 56,
+  "in_window_yes": 57,
+  "classes": {
+   "basin": 1,
+   "building": 2,
+   "conduit": 7,
+   "court": 3,
+   "doorway": 7,
+   "other": 7,
+   "outlet": 1,
+   "pillar": 1,
+   "pool": 2,
+   "reservoir": 1,
+   "ritual_bath": 1,
+   "road": 1,
+   "room": 12,
+   "spring": 3,
+   "steps": 4,
+   "tomb": 1,
+   "tower": 1,
+   "wall": 10
+  }
+ }
+}
