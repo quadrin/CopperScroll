@@ -1,0 +1,47 @@
+key,field,A,B,C_value,C_agrees_with,page,quote,note
+EARLY_CHANNEL,n_openings,,1,1,B,57,The opening of this channel was found in W708,One stated opening (in W708).
+EARLY_CHANNEL,plaster,yes,,yes,A,82,"the lower, narrow, plastered channel fed sedimentation pool L119","Also p.80: phase A aqueduct narrow, built, and plastered."
+EASTERN_WING,feature_class,room,building,building,B,35; 43,The eastern wing contains a hall with estimated dimensions of 19×8 m,Wing = section of main building; includes the hall and room L74 (p.43); text: unknown if divided into rooms or halls.
+EASTERN_WING,length_m,19,,,B,35,The eastern wing contains a hall with estimated dimensions of 19×8 m,"19×8 m belongs to the hall the wing contains (key on a hall row, parent = wing); wing also holds room L74."
+EASTERN_WING,width_m,8,,,B,35,The eastern wing contains a hall with estimated dimensions of 19×8 m,"As length_m: 8 m is the hall width, not the wing."
+L1-L2,n_openings,,1,5,neither,23,"L1–L2, whose 0.80 m-wide entrance is set between W516 and W518","Rule used: count every opening the text assigns to the feature (doors, windows, slits, gutters, holes, stated channel entries), incl. shared doorways described under neighbouring loci. 1 entrance + 3 windows in L2 north wall + 1 window in L1 north wall (L1 and L2 are its phase B halves). Entrances only would be 1."
+L113,n_openings,,1,1,B,52,Access to the building was provided by a 1.55 m-wide entrance through small room L113,One stated entrance; inner opening not described.
+L113,plaster,yes,,yes,A,52,De Vaux associates the lower plaster floor in L113,
+L12,plaster,,yes,yes,B,23,"In the center of wall W502, 2 m above floor level, a plaster layer remnant",W502 = northern wall of L12–L14; Fig. 24 shows it bounds L12. Plaster is a second-storey trace on that wall.
+L120,n_openings,,3,3,B,56,with a 1.05 m-wide entrance from L111 ... Two small slits in the western wall,"1 entrance + 2 slits to L122. Rule used: count every opening the text assigns to the feature (doors, windows, slits, gutters, holes, stated channel entries), incl. shared doorways described under neighbouring loci."
+L120,plaster,yes,,,B,56,two rectangular brick pools coated with white plaster,"Plaster is on the two pools inside L120 (contained features), not stated for the hall itself."
+L122,n_openings,0,2,2,B,56,Two small slits in the western wall (W710) connect this hall with room L122,"Text: no entrance found, but the 2 slits are openings, so not 0."
+L19-L27,n_openings,,1,3,neither,28; 32,An opening 0.73 m-wide ... in the courtyard’s northwestern end serves as an exit,"Exit (p.32) + corridor L18 opens north into it (p.32) + L6–L40 entrance leads westward to it via two steps (p.28). Rule used: count every opening the text assigns to the feature (doors, windows, slits, gutters, holes, stated channel entries), incl. shared doorways described under neighbouring loci."
+L2,n_openings,,4,5,neither,23,The northern wall has three plastered windows,"3 windows + entrance to L1 in W515 + the L1–L2 entrance between W516 and W518, which Fig. 24 (scale, north arrow) shows opens into L2. Rule used: count every opening the text assigns to the feature (doors, windows, slits, gutters, holes, stated channel entries), incl. shared doorways described under neighbouring loci."
+L2,opening_dirs,,N;W,N;W,B,23,entered through L2 by a 1 m-wide entrance in the eastern wall (W515),"Windows and main entrance in north wall (N); W515 is L1’s east wall, so it faces W out of L2."
+L23,n_openings,,1,1,B,48,"Room L23, south of L24, and the narrow entrance connecting them, were uncovered",
+L29,opening_dirs,W;E,W;NW;E,W;NW;E,B,20,"one leads westward to L8; the second, in the northwestern corner, leads to L10","Corner position read as direction (same rule for L67, L83, hir04 L119); Fig. 16 shows L10 to the N, so NW/N."
+L30,n_steps,2,,2,A,26,with two steps descending from the threshold to the hall,steps_where = into_feature.
+L32-L34,n_openings,,1,2,neither,48; 50,Entrance was through room L33 ... an opening (a sort of gutter),"Entrance via L33 (p.48) + gutter opening in W569 in the room’s NE corner (p.50). Rule used: count every opening the text assigns to the feature (doors, windows, slits, gutters, holes, stated channel entries), incl. shared doorways described under neighbouring loci."
+L33,n_openings,,1,1,B,48,in whose southern wall a blocked entrance was discovered that had led to L32–L34,Blocked entrance still counted.
+L33,opening_dirs,,S,S,B,48,in whose southern wall a blocked entrance was discovered,
+L37,n_openings,1,,1,A,48,"Area L37, east of L24–L25, is entered from the latter",
+L38-L41,plaster,yes,,yes,A,31,in front of the eastern blocked entrance in the northern wall revealed a plaster floor,Plaster floor found in a sounding inside the hall (Donceel).
+L43,n_openings,,1,1,B,41,a wide entrance designed for the installation of two doors,One (double-door) entrance.
+L43,opening_dirs,,N,N,B,41,In the north of L43 and east of the kiln ... a wide entrance,
+L48-L49,n_openings,,1,1,B,35,connects to the central pool’s upper part via a 1.05 m-wide opening,Feed channel (p.35) and outflow channel to L50 (p.42) are stated as channels without a described entry point; not counted.
+L6-L40,opening_dirs,W,S;W,S;W,B,28,"one, 1.10 m wide, leads to cell L39; and the other ... leads westward","Hall lies north of L39, so the L39 entrance faces S; the other faces W."
+L6-L40,n_steps,2,,2,A,28,"leads westward to the outer courtyard, L19–L27 via two steps",Steps at the western entrance; steps_where unknown (direction of descent not stated).
+L62,feature_class,other,room,room,B,41; 43,To the east is a room containing L62 and L74,"L62 is a locus within a room (beneath L43, with a floor)."
+L67,opening_dirs,,SW;SE,SW;SE,B,44; 86,Water entered it ... in the southwestern corner ... flowed from the southeastern corner,"Corner positions as stated; channel runs W to E, so W;E would be neighbours."
+L69,n_openings,,2,2,B,90,the central channel entered it from the west ... a plastered 0.45 m square hole,Channel entry (W) + hole toward L71 to the east.
+L69,opening_dirs,,W;E,W;E,B,90,the central channel entered it from the west,"Hole leads to L71, which lies east of L69."
+L83,n_openings,,3,3,B,84; 86,A wide channel exits sedimentation pool L83 eastward to pool L56,"Channel meets it at NW corner + exit east to L56 + channel in W658 to L91. Rule used: count every opening the text assigns to the feature (doors, windows, slits, gutters, holes, stated channel entries), incl. shared doorways described under neighbouring loci."
+L83,opening_dirs,,NW;E,NW;E,B,86,"three steps in its northwestern corner, where it meets the channel",Direction of W658 channel to L91 not stated; left out.
+L86-L87-L89,n_openings,,1,1,B,46,The entrance in the west of the hall’s southern wall leads to room L86–L87–L89,
+L86-L87-L89,opening_dirs,,N,N,B,45-46,The 1.25 m-wide western entrance leads to room L86–L87–L89,"Room lies south of L77; the entrance is in L77’s southern wall, so it faces N out of the room."
+L91,n_openings,,7,7,B,86,At the upper end of the pool’s eastern wall are four plastered gutters,"W658 channel from L83 + west entrance from central channel + 4 gutters + surplus channel from top of south wall. Rule used: count every opening the text assigns to the feature (doors, windows, slits, gutters, holes, stated channel entries), incl. shared doorways described under neighbouring loci."
+SOUTHERN_PLATEAU,feature_class,other,terrace,other,A,69,"This plateau is 160 m long, 60 m wide in the north","Natural unbuilt plateau (""triangular expanse with no built structures""); terrace would be an inference."
+SOUTHERN_PLATEAU,width_m,12-60,60-12,12-60,A,69,"60 m wide in the north, and 12 m wide in the south",Same range; schema range written low-high.
+SOUTHERN_WING,feature_class,room,building,building,B,43-44,"In phase A it consisted of a large hall, or perhaps was divided into rooms",Wing = section of main building with hall and flanking rooms.
+T4,length_m,,2.0,2.0,B,96; 100,"The shaft was excavated to its bottom, at a depth of 1.70 m","plan_scaled, Fig. 112 (5 m scale bar): c. 1.95–2.05 m."
+T4,width_m,,1.5,1.5,B,96; 100,Under the mound was a rectangular shaft cut in the marl,"plan_scaled, Fig. 112: c. 1.35–1.4 m, nearest 0.5 = 1.5."
+T5,length_m,,2.0,2.0,B,96; 100,Under the stones was a rectangular shaft cut in the marl,"plan_scaled, Fig. 112: c. 1.8 m, nearest 0.5 = 2.0."
+T5,width_m,,1.0,1.0,B,96; 100,Under the stones was a rectangular shaft cut in the marl,"plan_scaled, Fig. 112: c. 0.75–0.8 m; borderline between 0.5 and 1.0, line centre gives 1.0. Low confidence."
+T7,length_m,2.0,,2.0,A,98; 100,Under the stones was a rectangular shaft cut in the marl,"plan_scaled, Fig. 114 (3 m scale bar, north arrow): shaft c. 1.87 m E–W."
+T7,width_m,0.5,,0.5,A,98; 100,Under the stones was a rectangular shaft cut in the marl,"plan_scaled, Fig. 114: c. 0.70 m, nearest 0.5 = 0.5."
