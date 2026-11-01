@@ -169,7 +169,7 @@ def merge():
             pv = p.get(pf, "")
             if f == "opening_dirs" and pv:
                 pv = first_dir(pv)
-            if not pv or pv.lower() == "unknown":
+            if not pv or pv.lower() in ("unknown", "undecidable"):
                 continue
             if r.get(f) in ("", None):
                 r[f] = pv

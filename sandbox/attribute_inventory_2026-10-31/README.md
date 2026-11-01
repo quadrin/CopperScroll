@@ -28,3 +28,4 @@ The main session ran a regex over the 1993 cave-survey texts. It printed per-art
 ## Progress
 
 - Source 1 (*ʿAtiqot* 41.2, the 1993 cave survey): keyed by two readers, third reading done, consolidated. See [RESULT_atq41.md](RESULT_atq41.md).
+- Plan pass over the Hebrew part (41.1): 57 plans, two readers and a third reading, merged into `out/atq41_consolidated_v2.csv`. See [RESULT_plans.md](RESULT_plans.md).
