@@ -14,3 +14,12 @@ Seen at this point: no reader output of any kind for run 28.
 - **Rank** (reported, not gated): 1 + the number of candidates with a strictly higher posterior than the best truth member.
 - **Scroll coding file format** for `score28.py`: `entry, class_group, n_openings, opening_dir, pillar, steps, notes`.
 - `scripts/model28.py`, `bench28.py` and `score28.py` were tested only on synthetic describer files in a scratch copy of the folder. Checks 1 and 2 were run there for crashes only; their results were not printed.
+
+## 31 Oct 2026, ~20:25 PT: concordance merged; 1952 list to third reading
+
+Seen at this point: both concordance files (the main session listed their describer rows), the two 1952-list reader reports (attribute counts, no values compared against the inventory), and the agreement summary for the 1952 list.
+
+- `scripts/concordance_merge.py` keeps a link when both readers give the same describer, 1993 keys and cited number. Result: four links — Benjamin list No. 7 = II/49; 1952 caves 19 = XI/19, 20 = XI/20, 37 = XIII/2. Both readers agree on all four; neither has a link the other lacks, so no third reading of the concordance was needed. Page and name citations (Region II to the Benjamin survey by page; "probably excavated by de Vaux") cannot define a truth set and are not kept.
+- No concordance row of a run-28 describer is marked `copied = yes`; the six copied rows name other sources (Goldfus 1984, Frumkin 1988, Patrich & Arubas 1989, the Center for Cave Research, Bar-Adon 1989).
+- Neither concordance reader found any 1993 feature identified with a Bar-Adon 1972 site.
+- 1952 list: 14 disagreements (7 opening counts, 4 classes, 3 sizes) went to a third reader. Its brief adds one clarification of the schema: a phrase that says only which way a cave opens gives a direction, and counts as one opening only if the text clearly describes a single entrance.
