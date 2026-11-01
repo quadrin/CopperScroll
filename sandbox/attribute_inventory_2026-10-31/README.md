@@ -30,4 +30,4 @@ The main session ran a regex over the 1993 cave-survey texts. It printed per-art
 - Source 1 (*ʿAtiqot* 41.2, the 1993 cave survey): keyed by two readers, third reading done, consolidated. See [RESULT_atq41.md](RESULT_atq41.md).
 - Plan pass over the Hebrew part (41.1): 57 plans, two readers and a third reading, merged into `out/atq41_consolidated_v2.csv`. See [RESULT_plans.md](RESULT_plans.md).
 - Sources 2–7 (Qumran group: IIIA, Magen & Peleg 2018, Hirschfeld 2004, Bar-Adon 1977, Eshel et al. 2002, IVA): keyed by two readers, third reading done, consolidated. See [RESULT_qumran.md](RESULT_qumran.md).
-- Run 28 rule: draft for owner approval in `../attribute_test_2026-10-31/RULE.md` (not frozen, nothing run).
+- Run 28 (`../attribute_test_2026-10-31/`): rule frozen 31 Oct; stopped at the power floor (10 items of 30 needed), the scroll was not scored. See its [RESULT](../attribute_test_2026-10-31/RESULT.md).
