@@ -36,3 +36,9 @@ Seen at this point: both Benjamin reader reports and the agreement summary (matc
 - The 53 size disagreements come from one source problem: the cave list prints "a × b × c m" without labels, and reader A keyed the typeset left-to-right order while reader B keyed the Hebrew reading order. Sizes are not used by the run 28 model, so they are not sent to the third reader; `consolidate28.py` keeps them as `A|B`. This limit is reported.
 - The third reading covers the 20 disagreements on fields the model uses (19 classes, 1 opening count): `out/ben93_to_adjudicate_model_fields.csv`.
 - Reader-only rows (A 29, B 44) are kept as single-reader rows, as for the Qumran sources.
+
+## 31 Oct 2026, ~21:05 PT: Bar-Adon consolidated; all describer tables final
+
+- Bar-Adon agreement: matched 75; class 65/75; opening counts 6/10; directions 4/5. Third reading of the 15 model-field differences: A 11, B 3, neither 1. Ten of them were the same key used by the two readers for different sub-features; following the brief, the consolidated value is the one for reader A's feature, and reader B's feature under that key drops out. The doorway rows 110.A, 118.A and 128.B.1 get one opening. The dolmen at 129.A is classed tomb.
+- As for the Benjamin survey, size differences were not sent to the third reader; sizes are not used by the model.
+- All three describer tables (`out/djd3_consolidated.csv`, `out/ben93_consolidated.csv`, `out/ba72_consolidated.csv`) and `keyed/concordance.csv` are now final. Next: `bench28.py gate`, run once.
