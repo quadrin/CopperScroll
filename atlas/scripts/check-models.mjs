@@ -12,7 +12,8 @@ const landscape=module('../app/atlas-model-landscape.ts',{'three':Three,'./atlas
 const tracedPlans=JSON.parse(readFileSync(new URL('../app/atlas-traced-plans.json',import.meta.url),'utf8'));
 const contextData=JSON.parse(readFileSync(new URL('../app/atlas-site-context.json',import.meta.url),'utf8'));
 const context=module('../app/atlas-model-context.ts',{'three':Three,'./atlas-site-context.json':{__esModule:true,default:contextData,...contextData},'./atlas-site-materials':surfaces});
-const exports=module('../app/atlas-model-geometry.ts',{'three':Three,'three/addons/loaders/SVGLoader.js':{SVGLoader},'./atlas-model-landscape':landscape,'./atlas-model-context':context,'./atlas-site-materials':surfaces,'./atlas-traced':module('../app/atlas-traced.ts',{}),'./atlas-traced-plans.json':{__esModule:true,default:tracedPlans,...tracedPlans}});
+const qumranLevels=module('../app/atlas-qumran-levels.ts',{});
+const exports=module('../app/atlas-model-geometry.ts',{'three':Three,'three/addons/loaders/SVGLoader.js':{SVGLoader},'./atlas-model-landscape':landscape,'./atlas-model-context':context,'./atlas-site-materials':surfaces,'./atlas-qumran-levels':qumranLevels,'./atlas-traced':module('../app/atlas-traced.ts',{}),'./atlas-traced-plans.json':{__esModule:true,default:tracedPlans,...tracedPlans}});
 for(const patch of Object.values(terrain)){assert.equal(patch.elevations.length,patch.size**2);assert.ok(patch.elevations.every(Number.isFinite));assert.ok(Math.abs(landscape.elevationAt(patch,0,0))<.02);}
 const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
 const settings=JSON.parse(readFileSync(new URL('../app/atlas-site-context.json',import.meta.url),'utf8')).plans;
@@ -52,6 +53,27 @@ for(const id of ['gerizim-precinct','jericho-early','jericho-late','hyrcania-wat
  assert.ok(Math.hypot(k.x-20.9,k.z+22.8)<12&&k.x>12,'Bethesda: cistern 1 lies in Fig. 2’s Grottes area, east of the dam’s east end');}
 {const g=models.get('gerizim-precinct').markers.get('persian-precinct');assert.ok(Math.hypot(g.x-12.7,g.z+42)<.5,'Gerizim: the precinct core stands where the registered plans put it');}
 {const plan=plans.find(p=>p.id==='qumran-settlement'),q=exports.buildModel(plan,{context:surroundings(plan.id)}),c=q.markers.get('L110');assert.equal(q.landscape.registeredBy,'imagery','qumran-settlement: registered to satellite imagery');assert.ok(Math.hypot(c.x+67.5,c.z-63)<1.5,'Qumran: cistern L110 stands where the registered figure puts it');}
+{
+ // Independent dimensional checks against the printed scale and transcribed values.
+ const {qumranLevelPoint,QUMRAN_SPOT_LEVELS}=qumranLevels;
+ assert.deepEqual(qumranLevelPoint([603,905]),[0,0],'Fig.57 L110 ring centre is the shared origin');
+ const a=qumranLevelPoint([958,1518]),b=qumranLevelPoint([1047,1518]);assert.ok(Math.abs(b[0]-a[0]-5)<1e-9,'Fig.57 scale bar is 5 metres');
+ const q=exports.buildModel(plans.find(p=>p.id==='qumran-settlement')),overlay=q.root.getObjectByName('qumran-published-spot-levels');
+ assert.equal(overlay.children.filter(c=>c.isMesh).length,8,'Only the eight inspected source spots are drawn');
+ for(const spot of QUMRAN_SPOT_LEVELS){
+  const dot=overlay.getObjectByName(`spot-level-${spot.id}`),world=dot.getWorldPosition(new Three.Vector3());
+  assert.equal(dot.userData.surfaceType,'unspecified');assert.equal(dot.userData.phase,'unspecified');assert.equal(dot.userData.walkCollision,false);
+  assert.equal(dot.userData.measureIgnore,true,'Source symbols must not be measured as archaeological surfaces');
+  assert.ok(Math.abs(world.y+terrain.kh_qumran.centreElevation-spot.level)<1e-8,'World height reproduces the published level, independent of the common display surface');
+  assert.equal(dot.material.depthTest,false,'Below-ground evidence symbols remain visible');
+ }
+ const high=overlay.getObjectByName('spot-level-L120'),low=overlay.getObjectByName('spot-level-L88');assert.ok(Math.abs(high.position.y-low.position.y-1.44)<1e-8,'Published L120/L88 vertical separation is 1.44 m');
+ assert.ok(q.assumptions.some(s=>s.includes('does not identify each spot as a floor')));
+ assert.ok(!q.assumptions.some(s=>s.includes('No levels are used')));
+ const {pickSurface}=module('../app/atlas-walk-measure-overlay.ts',{'three':Three}),isolated=new Three.Group(),dot=overlay.children.find(c=>c.isMesh).clone();dot.position.set(0,0,0);isolated.add(dot);isolated.updateMatrixWorld(true);
+ assert.equal(pickSurface(isolated,new Three.Matrix4(),0,0),null,'Measuring ray ignores the source dot');
+ dot.userData={...dot.userData,measureIgnore:false};assert.ok(pickSurface(isolated,new Three.Matrix4(),0,0),'Control ray must intersect the visible sphere when its ignore flag is removed');
+}
 {const h=models.get('hyrcania-waterworks').markers.get('north-pool');assert.ok(Math.hypot(h.x+101.3,h.z+76.6)<3,'Hyrcania: the north pool stands where the registered figure puts it');}
 assert.equal(models.get('doq-waterworks').units,'relative');
 assert.ok(models.get('gerizim-precinct').assumptions.some(s=>s.includes('not equated with the southern seven-step')));

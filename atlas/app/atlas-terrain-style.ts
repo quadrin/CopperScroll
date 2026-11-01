@@ -12,16 +12,16 @@ export function terrainOnlyStyle(input: StyleSpecification): StyleSpecification 
   return layer.type==="background"||/water|landcover|hillshade|contour|earth|glacier/i.test(sourceLayer+" "+layer.id);
  });
  for(const layer of style.layers){
-  if(layer.type==="background")layer.paint={...layer.paint,"background-color":"#e6dac0"};
-  if(layer.type==="fill")layer.paint={...layer.paint,"fill-color":/water/i.test(layer.id)?"#a6beb2":"#cfcdaf"};
-  if(layer.type==="line")layer.paint={...layer.paint,"line-color":"#9db6ad"};
+  if(layer.type==="background")layer.paint={...layer.paint,"background-color":"#f2f4f1"};
+  if(layer.type==="fill")layer.paint={...layer.paint,"fill-color":/water/i.test(layer.id)?"#bdd8e5":"#e4ebdf"};
+  if(layer.type==="line")layer.paint={...layer.paint,"line-color":/water/i.test(layer.id)?"#86adbf":"#b7b9af"};
   if(layer.type==="symbol"){
    const place=(layer["source-layer"]??"")==="place";
    if(place)layer.maxzoom=Math.min(layer.maxzoom??24,11.5);
-   layer.paint={...layer.paint,"text-color":"#817052","text-halo-color":"#eee3c9","text-halo-width":1.6};
+   layer.paint={...layer.paint,"text-color":"#54616a","text-halo-color":"#ffffff","text-halo-width":1.6};
    if(place)layer.layout={...layer.layout,"text-field":["coalesce",["get","name:en"],["get","name_en"],["get","name:latin"],["get","name"]]};
   }
  }
  return style;
 }
-export const terrainFallback: StyleSpecification={version:8,sources:{},layers:[{id:"terrain-background",type:"background",paint:{"background-color":"#e6dac0"}}]};
+export const terrainFallback: StyleSpecification={version:8,sources:{},layers:[{id:"terrain-background",type:"background",paint:{"background-color":"#f2f4f1"}}]};

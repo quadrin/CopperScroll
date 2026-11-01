@@ -5,6 +5,29 @@ import { createSiteMaterials, chippedBlock, cloneSiteMaterial } from "./atlas-si
 // Display alignment only. Neither this anchor nor page-up orientation is a surveyed fit.
 export const PILOT_ANCHOR = [35.45056,31.74111] as [number,number];
 export const PILOT_ID = "qumran-source-pilot";
+// Keep evidence status attached to the geometry, including after GPU batching.
+// A length read from this display cannot be used as a surveyed measurement.
+export const PILOT_ACCURACY = {
+ horizontalFrame:'source-relative',
+ geographicRegistration:'display-only',
+ horizontalErrorMetres:null,
+ verticalErrorMetres:null,
+ metresPerDrawingUnit:.2,
+ scaleBasis:'display-only',
+ elevationBasis:'illustrative relief plus modern terrain offsets',
+ phase:'unassigned',
+ source:'Ilan–Amit 1989 p. 283 Fig. 1',
+ limit:'Plan relationships are manually sampled. Scale, geographic bearing, cross-sections and elevations remain illustrative; modern terrain fitting supplies no ancient hydraulic gradient.',
+} as const;
+export const PILOT_EVIDENCE = {
+ channel:{status:'reported-plan',source:'Ilan–Amit 1989 p. 283 Fig. 1',supported:'Horizontal channel and branch relationships',illustrative:'Width, wall courses, lining, elevation and hydraulic gradient'},
+ basin:{status:'reported-plan',source:'Ilan–Amit 1989 p. 283 Fig. 1, basin 2',supported:'Source-relative basin outline',illustrative:'Depth, floor, side profiles and geographic position'},
+ dam:{status:'published-reconstruction',source:'Ilan–Amit 1989 pp. 283–284, p. 288 n. 5; 2002 pp. 381–382 Fig. 1',supported:'Proposed dam location across basin 2; no surviving dam remains reported',illustrative:'Height, width, masonry and phase'},
+ tunnel:{status:'illustrative',source:'Ilan–Amit 1989 Fig. 1 point 11; Davey CJD979 (1974)',supported:'Proposed plan and photograph correspondence',illustrative:'Opening dimensions, lintel, recess and rock profile'},
+ scenery:{status:'illustrative',source:'Project display geometry',supported:'Context only',illustrative:'Cliff, strata, ground relief and scree'},
+} as const;
+type PilotEvidenceId = keyof typeof PILOT_EVIDENCE;
+function evidence(object:T.Object3D,id:PilotEvidenceId){object.userData.evidenceId=id;object.userData.evidence=PILOT_EVIDENCE[id];return object;}
 export const pilotAvailable = (id:string|null)=>id==="kh_qumran"||id==="wadi_qumran";
 export const pilotStops = {
  overview:{label:"Whole site",x:0,z:0,zoom:19,pitch:65},
@@ -59,12 +82,13 @@ export function fitQumranGround(root:T.Group,sample:(x:number,z:number)=>number)
 
 export function buildQumranPilot(){
  const root=new T.Group(),rand=random(979),surfaces=createSiteMaterials('qumran-ilan');
+ root.userData.accuracy=PILOT_ACCURACY;
  const {block:stone,plaster,rock}=surfaces;
  const dirt=cloneSiteMaterial(surfaces.earth);dirt.vertexColors=true;dirt.transparent=true;dirt.depthWrite=false;
  const dark=new T.MeshStandardMaterial({color:'#191913',roughness:1,side:T.DoubleSide});
  const blockGeometry=chippedBlock(1,1,1,19);
- function mesh(g:T.BufferGeometry,m:T.Material){const o=new T.Mesh(g,m);o.castShadow=o.receiveShadow=true;root.add(o);return o;}
- function block(x:number,y:number,z:number,w:number,h:number,d:number,m:T.Material){const o=mesh(blockGeometry,m);o.scale.set(w,h,d);o.position.set(x,y+h/2,z);o.userData.siteBlock=true;return o;}
+ function mesh(g:T.BufferGeometry,m:T.Material,id:PilotEvidenceId='scenery'){const o=new T.Mesh(g,m);evidence(o,id);o.castShadow=o.receiveShadow=true;root.add(o);return o;}
+ function block(x:number,y:number,z:number,w:number,h:number,d:number,m:T.Material,id:PilotEvidenceId='scenery'){const o=mesh(blockGeometry,m,id);o.scale.set(w,h,d);o.position.set(x,y+h/2,z);o.userData.siteBlock=true;return o;}
  // Display relief only. The source-plan channel route below is preserved.
  const height=(x:number,z:number)=>.3+Math.max(0,1-Math.abs(z-2)/23)*1.7+.35*Math.sin(x*.13)*Math.cos(z*.21);
  // Basin 2 (Ilan–Amit 1989 Fig. 1), sampled from the same plan as the route.
@@ -121,46 +145,46 @@ export function buildQumranPilot(){
  for(let i=0;i<1350;i++){
   const x=(rand()-.5)*156,z=i<160?front(x)+rand()*9:(rand()-.5)*118,r=apronRadius(x,z),s=(i<160?.25+rand()*.7:.035+rand()*.2)*(1-smooth(.55,.8,r));
   o.position.set(x,height(x,z)+s*.2,z);o.rotation.set((rand()-.5)*.5,rand()*6.28,(rand()-.5)*.4);o.scale.set(s*(1+rand()),s,s*(.6+rand()));o.updateMatrix();rubble.setMatrixAt(i,o.matrix);rubble.setColorAt(i,new T.Color().setScalar(.72+rand()*.4));
- }rubble.castShadow=rubble.receiveShadow=true;rubble.userData.walkDetail=true;root.add(rubble);
+ }rubble.castShadow=rubble.receiveShadow=true;rubble.userData.walkDetail=true;evidence(rubble,'scenery');root.add(rubble);
  function channel(points:number[][]){for(let i=1;i<points.length;i++){
   const a=local(points[i-1]),b=local(points[i]),length=a.distanceTo(b),yaw=-Math.atan2(b.z-a.z,b.x-a.x),group=new T.Group();group.position.set((a.x+b.x)/2,height((a.x+b.x)/2,(a.z+b.z)/2)+.15,(a.z+b.z)/2);group.rotation.y=yaw;root.add(group);
-  const floor=block(0,0,0,length,.12,.65,plaster);root.remove(floor);group.add(floor);floor.position.set(0,.06,0);
+  const floor=block(0,0,0,length,.12,.65,plaster,'channel');root.remove(floor);group.add(floor);floor.position.set(0,.06,0);
   for(const side of [-1,1]){const count=Math.ceil(length/.55);for(let k=0;k<count;k++){
    const x=-length/2+(k+.5)*length/count,h=.38+rand()*.14;
-   const b=block(0,0,0,length/count-.025,h,.24,stone);root.remove(b);group.add(b);b.position.set(x,.18,side*.43);b.rotation.y=(rand()-.5)*.06;
+   const b=block(0,0,0,length/count-.025,h,.24,stone,'channel');root.remove(b);group.add(b);b.position.set(x,.18,side*.43);b.rotation.y=(rand()-.5)*.06;
    // Pale lining and small missing patches distinguish the water face.
-   if(k%4!==0){const lining=block(0,0,0,length/count-.06,h*.62,.018,plaster);root.remove(lining);group.add(lining);lining.position.set(x,.19,side*.303);}
+   if(k%4!==0){const lining=block(0,0,0,length/count-.06,h*.62,.018,plaster,'channel');root.remove(lining);group.add(lining);lining.position.set(x,.19,side*.303);}
   }}
  }}channel(route);channel(branch);
  // Basin 2 as a rock-floored hollow, and the dam proposed at point 4. Ilan–Amit 2002
- // Fig. 1 (p. 380) draws a heavy dashed line from point 3 to point 4 across the basin's
+ // Fig. 1 (p. 381) draws a heavy dashed line from point 3 to point 4 across the basin's
  // east side; the authors report no surviving dam. Copper marks the reconstruction.
  // The basin depth and the dam's height and width are illustrative.
  const basinFloor=Math.min(...basinOutline.map(p=>height(p.x,p.z)))-1.4,floorShape=new T.Shape();
  basinOutline.forEach((p,i)=>i?floorShape.lineTo(p.x,-p.z):floorShape.moveTo(p.x,-p.z));
  const floorGeometry=new T.ExtrudeGeometry(floorShape,{depth:.3,bevelEnabled:false});floorGeometry.rotateX(-Math.PI/2);
- const basinBed=mesh(floorGeometry,rock);basinBed.position.y=basinFloor-.3;basinBed.name='basin-2';basinBed.userData.featureId='basin2';basinBed.userData.walkSurface=true;
+ const basinBed=mesh(floorGeometry,rock,'basin');basinBed.position.y=basinFloor-.3;basinBed.name='basin-2';basinBed.userData.featureId='basin2';basinBed.userData.walkSurface=true;
  for(let i=0;i<basinOutline.length;i++){
   const a=basinOutline[i],b=basinOutline[(i+1)%basinOutline.length],top=Math.max(height(a.x,a.z),height(b.x,b.z));
-  const side=block((a.x+b.x)/2,basinFloor,(a.z+b.z)/2,a.distanceTo(b)+.5,top-basinFloor,.5,rock);side.rotation.y=-Math.atan2(b.z-a.z,b.x-a.x);
+  const side=block((a.x+b.x)/2,basinFloor,(a.z+b.z)/2,a.distanceTo(b)+.5,top-basinFloor,.5,rock,'basin');side.rotation.y=-Math.atan2(b.z-a.z,b.x-a.x);
  }
  const copper=new T.MeshStandardMaterial({color:'#b56b42',roughness:.94,metalness:0}),d0=local([234,1214]),d1=local([250,1268]),damX=(d0.x+d1.x)/2,damZ=(d0.z+d1.z)/2;
- const dam=block(damX,basinFloor,damZ,d0.distanceTo(d1),height(damX,damZ)+.6-basinFloor,1.2,copper);dam.rotation.y=-Math.atan2(d1.z-d0.z,d1.x-d0.x);
+ const dam=block(damX,basinFloor,damZ,d0.distanceTo(d1),height(damX,damZ)+.6-basinFloor,1.2,copper,'dam');dam.rotation.y=-Math.atan2(d1.z-d0.z,d1.x-d0.x);
  // A shaded, angular opening with worn jambs and a fractured lintel. Shape and
  // dimensions are interpretive, informed by the archived outlet photograph.
  for(const side of [-1,1]){
-  block(mouth.x+side*.91,my-.08,mouth.z-1,.47,1.25,3.1,stone);
-  block(mouth.x+side*1.34,my-.15,mouth.z-.35,.65,1.5,1.4,rock);
+  block(mouth.x+side*.91,my-.08,mouth.z-1,.47,1.25,3.1,stone,'tunnel');
+  block(mouth.x+side*1.34,my-.15,mouth.z-.35,.65,1.5,1.4,rock,'tunnel');
  }
- const lintel=block(mouth.x,my+1.16,mouth.z-.2,2.5,.42,1.4,rock);lintel.rotation.z=-.08;
- block(mouth.x,my+1.3,mouth.z-2,2.1,.55,3.1,rock);
- const recess=mesh(new T.PlaneGeometry(1.45,1.3),dark);recess.position.set(mouth.x,my+.58,mouth.z-2.6);recess.castShadow=false;
- block(mouth.x,my-.05,mouth.z-1,.9,.12,3,plaster);
+ const lintel=block(mouth.x,my+1.16,mouth.z-.2,2.5,.42,1.4,rock,'tunnel');lintel.rotation.z=-.08;
+ block(mouth.x,my+1.3,mouth.z-2,2.1,.55,3.1,rock,'tunnel');
+ const recess=mesh(new T.PlaneGeometry(1.45,1.3),dark,'tunnel');recess.position.set(mouth.x,my+.58,mouth.z-2.6);recess.castShadow=false;
+ block(mouth.x,my-.05,mouth.z-1,.9,.12,3,plaster,'tunnel');
  // Batch hundreds of channel stones by material. Detail remains in geometry
  // while phone GPUs submit only a handful of draws for the masonry.
- root.updateMatrixWorld(true);const batches=new Map<T.Material,T.Mesh[]>();
- root.traverse(o=>{if(o instanceof T.Mesh&&o.userData.siteBlock){const material=o.material as T.Material;const batch=batches.get(material)??[];batch.push(o);batches.set(material,batch);}});
- for(const [material,blocks] of batches){const batch=new T.InstancedMesh(blockGeometry,material,blocks.length);batch.castShadow=batch.receiveShadow=true;blocks.forEach((block,i)=>{batch.setMatrixAt(i,block.matrixWorld);batch.setColorAt(i,new T.Color().setScalar(.88+(i*17%31)/130));block.removeFromParent();});root.add(batch);}
+ root.updateMatrixWorld(true);const batches=new Map<string,T.Mesh[]>();
+ root.traverse(o=>{if(o instanceof T.Mesh&&o.userData.siteBlock){const material=o.material as T.Material,key=`${material.uuid}:${o.userData.evidenceId}`;const batch=batches.get(key)??[];batch.push(o);batches.set(key,batch);}});
+ for(const blocks of batches.values()){const batch=new T.InstancedMesh(blockGeometry,blocks[0].material,blocks.length);evidence(batch,blocks[0].userData.evidenceId);batch.castShadow=batch.receiveShadow=true;blocks.forEach((block,i)=>{batch.setMatrixAt(i,block.matrixWorld);batch.setColorAt(i,new T.Color().setScalar(.88+(i*17%31)/130));block.removeFromParent();});root.add(batch);}
  // Rock, scree and channels follow the same surface as the soil. Source-plan
  // horizontal relationships stay fixed; elevations and the DEM fit are illustrative.
  root.traverse(object=>{

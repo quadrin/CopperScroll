@@ -1,6 +1,6 @@
 import * as T from 'three';
 import {MercatorCoordinate,type Map,type CustomLayerInterface} from 'maplibre-gl';
-import {buildQumranPilot,fitQumranGround} from './atlas-qumran-pilot';
+import {buildQumranPilot,fitQumranGround,PILOT_ACCURACY} from './atlas-qumran-pilot';
 import {buildModel,type BuildOptions,type ModelGeometry} from './atlas-model-geometry';
 import type {SitePlan} from './atlas-explorer-model';
 import type {Place} from './atlas-types';
@@ -44,7 +44,7 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
    if(plan.id==='qumran-ilan'){
     const root=buildQumranPilot(),markers=new globalThis.Map<string,T.Vector3>();
     for(const feature of plan.features)markers.set(feature.id,new T.Vector3((feature.x+120-381)*.2,2,(feature.y+1080-1240)*.2));
-    model={root,markers,selectable:[],roof:new T.Group(),note:'Qumran aqueduct segment · published plan relationships',units:'relative',framing:new T.Box3(new T.Vector3(-48,0,-15),new T.Vector3(48,10,24)),landscape:{context:'Source-relative rock setting',credit:'Ilan–Amit 1989 p. 283 Fig. 1; Davey CJD979 (1974); geometry and placement illustrative',mapped:false},assumptions:['Channel and branch relationships follow Ilan–Amit 1989 p. 283 Fig. 1. The local frame is an approximate display alignment at the gazetteer anchor, not a registered survey.','Rock faces, masonry courses, tunnel cross-section and elevations are illustrative. This partial aqueduct model does not reconstruct the whole Qumran settlement.','Basin 2 and the dam proposed at point 4 follow Ilan–Amit 1989 Fig. 1. Ilan–Amit 2002 Fig. 1 (p. 380) draws a heavy dashed line from point 3 to point 4 across the basin’s east side, read here as probably the dam (drawing only). No surviving dam remains are reported: copper marks a published reconstruction. Basin depth and dam height and width are illustrative.']};
+    model={root,markers,selectable:[],roof:new T.Group(),note:'Qumran aqueduct segment · published plan relationships',units:'relative',framing:new T.Box3(new T.Vector3(-48,0,-15),new T.Vector3(48,10,24)),landscape:{context:'Source-relative rock setting',credit:'Ilan–Amit 1989 p. 283 Fig. 1; Davey CJD979 (1974); geometry and placement illustrative',mapped:false},assumptions:[PILOT_ACCURACY.limit,'Channel and branch relationships follow Ilan–Amit 1989 p. 283 Fig. 1. The local frame is an approximate display alignment at the gazetteer anchor, not a registered survey.','Rock faces, masonry courses, tunnel cross-section and elevations are illustrative. This partial aqueduct model does not reconstruct the whole Qumran settlement.','Basin 2 and the dam proposed at point 4 follow Ilan–Amit 1989 Fig. 1. Ilan–Amit 2002 Fig. 1 (p. 381) draws a heavy dashed line from point 3 to point 4 across the basin’s east side, with the proposed dam discussed on pp. 381–382. No surviving dam remains are reported: copper marks a published reconstruction. Basin depth and dam height and width are illustrative.']};
    }else model=buildModel(plan,options);
    if(build){
     // The block build's ground was fitted once to this terrain patch when it was exported.

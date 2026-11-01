@@ -9,8 +9,8 @@ import { isPhotographHash, mappedWordsForEntry, PHOTO_COLUMN, photoTarget } from
 import "./atlas-reader.css";
 import type { Entry, Place } from "./atlas-types";
 import { plain, ReadingCard, Segments, useScrollText, type Selection, type TrSeg, type Word } from "./atlas-text";
-import { EvidenceLabel } from "./atlas-components";
 import type { Line3d } from "./atlas-scroll-3d";
+import type { ContextEvidenceView } from "./atlas-context-evidence";
 
 const Scroll3d = lazy(() => import("./atlas-scroll-3d"));
 
@@ -19,7 +19,7 @@ const Scroll3d = lazy(() => import("./atlas-scroll-3d"));
 
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
 type Row = { ref: string; no: number; w: Word[]; tr: TrSeg[]; owner: string[] };
-type Props = { entry: Entry; entries: Entry[]; places: Record<string, Place>; onEntry: (id: string) => void; photograph?: boolean; column?: number; onColumn?: (column: number) => void; onPhotograph?: (show: boolean, id?: string) => void; object3d?: boolean; onObject3d?: (show: boolean) => void };
+type Props = { onInspect?: (view: ContextEvidenceView, record?: string) => void; entry: Entry; entries: Entry[]; places: Record<string, Place>; onEntry: (id: string) => void; photograph?: boolean; column?: number; onColumn?: (column: number) => void; onPhotograph?: (show: boolean, id?: string) => void; object3d?: boolean; onObject3d?: (show: boolean) => void };
 type Head = { id: string; continued: boolean; midLine: boolean };
 
 // Where each entry begins in a column: at a line start, in mid-line, or carried
@@ -39,7 +39,7 @@ function entryHeads(rows: Row[], carried: string | undefined) {
   return heads;
 }
 
-export default function ScrollView({ entry, entries, places, onEntry, photograph: photoOpen, onPhotograph, column: externalColumn, onColumn, object3d, onObject3d }: Props) {
+export default function ScrollView({ entry, entries, onEntry, photograph: photoOpen, onPhotograph, column: externalColumn, onColumn, object3d, onObject3d, onInspect }: Props) {
   const { data, failed, lineWords, notesFor } = useScrollText();
   const [photograph, setPhotograph] = useState(() => typeof window !== "undefined" && isPhotographHash(window.location.hash));
   useEffect(()=>{if(photoOpen!==undefined)setPhotograph(photoOpen)},[photoOpen]);
@@ -58,6 +58,14 @@ export default function ScrollView({ entry, entries, places, onEntry, photograph
   const [english, setEnglish] = useState(false);
   const [sources, setSources] = useState(false);
   const body = useRef<HTMLDivElement>(null);
+  const sourcePanel = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (!sources || !sourcePanel.current) return;
+    // Revealing sources above the text on phones must bring them into view;
+    // otherwise browser scroll anchoring can keep the passage over the panel.
+    sourcePanel.current.scrollTo({ top: 0 });
+    sourcePanel.current.parentElement?.scrollTo({ top: 0 });
+  }, [sources]);
   const fromScroll = useRef(false);
   useEffect(() => {
     function restoreSubview() {
@@ -120,7 +128,6 @@ export default function ScrollView({ entry, entries, places, onEntry, photograph
   const hasPhotograph = col === PHOTO_COLUMN && mapped.length > 0;
   const base = import.meta.env?.BASE_URL ?? "/";
   const byId = Object.fromEntries(entries.map(e => [e.id, e]));
-  const inColumn = Array.from(new Set(rows.flatMap(r => r.owner.filter(Boolean))));
   const marked = new Set<string>();
   if (sel?.note) for (const [line, words] of data.notes[sel.note]?.at ?? []) for (const i of words) marked.add(`${line}#${i}`);
   if (sel?.word !== undefined) marked.add(`${sel.line}#${sel.word}`);
@@ -128,25 +135,28 @@ export default function ScrollView({ entry, entries, places, onEntry, photograph
   function pick(id: string) { fromScroll.current = true; onEntry(id); }
   function heading(id: string, continued: boolean, midLine: boolean) {
     const e = byId[id]; if (!e) return null;
-    const best = e.candidates[0] ? places[e.candidates[0].placeId] : null;
-    return <button type="button" key={`h-${id}`} data-starts={continued ? undefined : id} className={`scroll-entry ${id === entry.id ? "selected" : ""}`} aria-current={id === entry.id ? "true" : undefined} onClick={() => pick(id)}>
+    return <button type="button" key={`h-${id}`} data-starts={continued ? undefined : id} className={`scroll-entry ${id === entry.id ? "selected" : ""}`} aria-current={id === entry.id ? "true" : undefined} title={continued ? `Continued from ${e.lines.split("-")[0]}` : midLine ? "Begins in the middle of this line" : undefined} onClick={() => pick(id)}>
       <span className="entry-number">{id.padStart(2, "0")}</span>
-      <span className="entry-text"><strong>{e.title}</strong><small>{continued ? `Continued from ${e.lines.split("-")[0]}` : midLine ? "Begins in the middle of this line" : best ? best.shortName : "Location unresolved"}</small></span>
-      <EvidenceLabel entry={e} />
+      <span className="entry-text"><strong>{e.title}</strong></span>
     </button>;
   }
 
   const lastRow = col > 0 ? columns[col - 1][columns[col - 1].length - 1] : undefined;
   const heads = entryHeads(rows, lastRow ? lastRow.owner[lastRow.owner.length - 1] : undefined);
   return <div className={`scroll-view reading-desk copper-reader ${english ? "with-english" : ""} ${sources ? "with-sources" : ""}`}>
-    <header className="scroll-heading">
-      <div><span className="small-caps">3Q15 · edition-based transcription</span>
-      <h2>Column {ROMAN[col]}</h2>
-      <p>Lines 1–{rows.length} · entries {inColumn[0]}–{inColumn[inColumn.length - 1]}. Select a word or an underlined phrase for the edition apparatus.</p></div>
-      <div className="reader-head-actions"><button type="button" className="reader-text-button" aria-pressed={english} onClick={() => setEnglish(v => !v)}>{english ? "Hide English" : "English translation"}</button><button type="button" className="reader-text-button" aria-expanded={sources} onClick={() => setSources(v => !v)}>Image &amp; sources</button><select className="reader-column-choice" aria-label="Select scroll column" value={col} onChange={event => { chooseColumn(+event.target.value); }}>{columns.map((_, i) => <option key={i} value={i}>Column {ROMAN[i]}</option>)}</select>{onObject3d && <button type="button" className="reader-text-button" onClick={() => onObject3d(true)}>3D object</button>}<button className="reader-text-button" onClick={() => showPhotograph(true)}>{hasPhotograph ? "Read the photograph" : "Photo example · VII"}</button></div>
+    <header className="scroll-heading" aria-label="Scroll reader tools">
+      <select className="reader-column-choice" aria-label="Select scroll column" value={col} onChange={event => { chooseColumn(+event.target.value); }}>{columns.map((_, i) => <option key={i} value={i}>Column {ROMAN[i]}</option>)}</select>
+      <div className="reader-head-actions"><button type="button" className="reader-text-button" aria-pressed={english} aria-label={english ? "Hide English" : "English translation"} onClick={() => setEnglish(v => !v)}><span className="reader-action-wide">{english ? "Hide English" : "English translation"}</span><span className="reader-action-short">English</span></button><button type="button" className="reader-text-button" aria-expanded={sources} aria-label="Image & sources" aria-controls="reader-image-sources" onClick={() => setSources(v => !v)}><span className="reader-action-wide">Image &amp; sources</span><span className="reader-action-short">Sources</span></button>{onObject3d && <button type="button" className="reader-text-button" aria-label="3D object" onClick={() => onObject3d(true)}><span className="reader-action-wide">3D object</span><span className="reader-action-short">3D</span></button>}</div>
     </header>
     <div className="reader-desk-body">
-      <aside className="reader-desk-image" hidden={!sources} aria-label="Original image and coverage">
+      <aside ref={sourcePanel} id="reader-image-sources" className="reader-desk-image" hidden={!sources} aria-label="Original image and coverage">
+        <p className="reader-transcription-source">3Q15 · Edition-based transcription in modern Hebrew type. Select a word to inspect its edition readings.</p>
+        {onInspect && <nav className="reader-context-links" aria-label={`Research for passage ${entry.id}`}>
+          <button type="button" onClick={() => onInspect('readings')}>Reading alternatives</button>
+          <button type="button" onClick={() => onInspect('names')}>Names &amp; attestations</button>
+          <button type="button" onClick={() => onInspect('sources')}>Passage sources</button>
+          <button type="button" onClick={() => onInspect('compare')}>View proposed locations</button>
+        </nav>}
         {hasPhotograph ? <>
           <figure><svg viewBox={`0 0 ${photo.width} ${photo.height}`} role="img" aria-label="Original curved copper strip 13 in the Jordan Museum; engraved Hebrew with corrosion and changing surface light."><image href={`${base}${photo.image}`} width={photo.width} height={photo.height}/></svg></figure>
           <div className="reader-desk-image-caption"><span className="small-caps">Original photograph · strip 13</span><p>Column VII · eight mapped words in VII 7–11. Entry {entry.id} has {mapped.length} mapped {mapped.length === 1 ? "word" : "words"}. The remaining surface is unaligned.</p><button type="button" className="reader-text-button" onClick={() => showPhotograph(true)}>Inspect the words · zoom and pan</button><p><a href={photo.source} target="_blank" rel="noreferrer">{photo.author}, 2020</a> · <a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a></p></div>
@@ -154,7 +164,7 @@ export default function ScrollView({ entry, entries, places, onEntry, photograph
         <details className="reader-desk-source-types"><summary>Image sources &amp; limits</summary><p><strong>Original</strong> · the surviving metal photographed in the museum. This is the default image.</p><p><strong>Radiograph</strong> · a separately acquired X-ray image, used to inform dashed tracing strokes.</p><p><strong>Facsimile</strong> · a copy of the scroll’s surface. It can clarify shapes but is a different object.</p><p>Puech 2006, vol. II: p. 385, pl. CCCXLVI (radiograph); p. 413, pl. CCCLXXII (facsimile). The copyrighted plates are cited, not displayed.</p></details>
       </aside>
     <div className="scroll-body" ref={body}>
-      <p className="copper-reader-caption">Copper-inspired reading surface · modern Hebrew type, not a manuscript facsimile. Select a word to inspect its reading.</p>
+      <p className="copper-reader-caption">Modern Hebrew transcription · not a manuscript facsimile. Select a word to inspect its reading.</p>
       <div className="copper-sheet">
       {rows.map(r => {
         const selected = r.owner.includes(entry.id);

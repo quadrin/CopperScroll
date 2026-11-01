@@ -15,8 +15,10 @@ export default function WalkMeasureCard({ points, style, units, onClear }: { poi
   useEffect(() => { const sync = () => setLocked(!!document.pointerLockElement); document.addEventListener("pointerlockchange", sync); return () => document.removeEventListener("pointerlockchange", sync); }, []);
   const chosen = CUBITS.find(c => c.metres === cubit) ?? CUBITS.find(c => c.metres === DEFAULT_CUBIT)!;
   const m = points.length === 2 ? measureBetween(points[0], points[1]) : null;
+  const calibrated = units === "metres";
+  const unit = calibrated ? "m" : "model units";
   const cubits = (metres: number) => `${(metres / cubit).toFixed(1)} cubits`;
-  const row = (label: string, key: string, metres: number, text = `${metres.toFixed(2)} m`) => <div data-measure={key}><dt>{label}</dt><dd><span>{text}</span><span>{cubits(Math.abs(metres))}</span></dd></div>;
+  const row = (label: string, key: string, metres: number, text = `${metres.toFixed(2)} ${unit}`) => <div data-measure={key}><dt>{label}</dt><dd><span>{text}</span><span>{calibrated ? cubits(Math.abs(metres)) : "Scale uncalibrated"}</span></dd></div>;
   return <>
     {locked && <div className="walk-measure-crosshair" aria-hidden="true" />}
     <aside className="walk-measure-card" aria-label="Measurement">
@@ -24,14 +26,14 @@ export default function WalkMeasureCard({ points, style, units, onClear }: { poi
       <p className="walk-measure-warning">{MEASURE_LABEL}</p>
       {m ? <dl>
         {row("Horizontal", "horizontal", m.horizontal)}
-        {row("Height difference", "rise", m.rise, `${m.rise >= 0 ? "+" : "−"}${Math.abs(m.rise).toFixed(2)} m${Math.abs(m.rise) >= .005 ? ` (B ${m.rise > 0 ? "above" : "below"} A)` : ""}`)}
+        {row("Height difference", "rise", m.rise, `${m.rise >= 0 ? "+" : "−"}${Math.abs(m.rise).toFixed(2)} ${unit}${Math.abs(m.rise) >= .005 ? ` (B ${m.rise > 0 ? "above" : "below"} A)` : ""}`)}
         {row("Slope distance", "slope", m.slope)}
       </dl> : <p className="walk-measure-hint">{points.length ? "Click a second point (B)." : "Click a point (A) on the model or the ground."}{locked ? " With the mouse captured, the point is under the cross." : ""}</p>}
-      <label className="walk-measure-cubit">Cubit<select value={cubit} onChange={e => { const v = Number(e.currentTarget.value); setCubit(v); try { localStorage.setItem(STORE, String(v)); } catch { /* per-viewer convenience only */ } e.currentTarget.blur(); }}>
+      <label className="walk-measure-cubit">Cubit<select disabled={!calibrated} aria-describedby={!calibrated ? "measure-scale-limit" : undefined} value={cubit} onChange={e => { const v = Number(e.currentTarget.value); setCubit(v); try { localStorage.setItem(STORE, String(v)); } catch { /* per-viewer convenience only */ } e.currentTarget.blur(); }}>
         {CUBITS.map(c => <option key={c.metres} value={c.metres}>{c.metres.toFixed(3)} m · {c.name}{c.metres === DEFAULT_CUBIT ? " (default)" : ""}</option>)}
       </select></label>
       <small className="walk-measure-source">{chosen.source}{chosen.metres === DEFAULT_CUBIT ? " (the default)" : ""}.</small>
-      {units === "relative" && <small className="walk-measure-caveat walk-measure-units">This model is drawn in relative units: these numbers are not metres on the ground.</small>}
+      {!calibrated && <small id="measure-scale-limit" className="walk-measure-caveat walk-measure-units">This model has no calibrated physical scale. Distances use model units; metre and cubit conversions are unavailable.</small>}
       {style === "minecraft" && <small className="walk-measure-caveat">Blocks: an edge or a height can be off by up to half a block.</small>}
       <small className="walk-measure-caveat">Many heights and sizes in the display model are illustrative (Sources &amp; assumptions).</small>
       <p className="walk-measure-limit">{MEASURE_LIMIT}</p>
