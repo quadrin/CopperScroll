@@ -1,0 +1,127 @@
+{
+ "A_rows": 109,
+ "B_rows": 82,
+ "A_ids": 109,
+ "B_ids": 82,
+ "matched": 75,
+ "A_only": 34,
+ "B_only": 7,
+ "agreement": {
+  "class": {
+   "agree": 65,
+   "compared": 75,
+   "rate": 0.867
+  },
+  "dims": {
+   "agree": 67,
+   "compared": 67,
+   "rate": 1.0
+  },
+  "n_openings": {
+   "agree": 6,
+   "compared": 10,
+   "rate": 0.6
+  },
+  "opening_dirs": {
+   "agree": 4,
+   "compared": 5,
+   "rate": 0.8
+  },
+  "n_steps": {
+   "agree": 0,
+   "compared": 0,
+   "rate": null
+  }
+ },
+ "A_only_ids": [
+  "113.B",
+  "113.C",
+  "113.D",
+  "114.B",
+  "114.C",
+  "114.D",
+  "115.A",
+  "115.B",
+  "115.C",
+  "118.B.1",
+  "119.A.2",
+  "119.B.1",
+  "119.B.2",
+  "119.B.3",
+  "119.B.4",
+  "128.A.3.1",
+  "128.A.3.2",
+  "128.A.3.3",
+  "128.A.3.4",
+  "128.A.3.5",
+  "130.A",
+  "136.B.3",
+  "138.B.2",
+  "138.B.3",
+  "138.B.4",
+  "138.B.5",
+  "138.B.6",
+  "138.B.7",
+  "138.B.8",
+  "138.B.9",
+  "85.C",
+  "85.D",
+  "85.E",
+  "94.B.3"
+ ],
+ "B_only_ids": [
+  "118.C",
+  "119.B",
+  "128.A.4",
+  "129.B",
+  "133.A.1",
+  "133.A.2",
+  "139.A.2"
+ ],
+ "A_attribute_counts": {
+  "with_any_dimension": 60,
+  "with_n_openings": 6,
+  "with_opening_dirs": 5,
+  "with_n_steps": 0,
+  "with_grid": 109,
+  "in_window_yes": 0,
+  "classes": {
+   "basin": 1,
+   "building": 51,
+   "burial": 10,
+   "cave": 12,
+   "chamber": 6,
+   "doorway": 6,
+   "other": 11,
+   "pit": 1,
+   "road": 2,
+   "room": 1,
+   "steps": 1,
+   "terrace": 1,
+   "wall": 6
+  }
+ },
+ "B_attribute_counts": {
+  "with_any_dimension": 44,
+  "with_n_openings": 11,
+  "with_opening_dirs": 5,
+  "with_n_steps": 0,
+  "with_grid": 82,
+  "in_window_yes": 0,
+  "classes": {
+   "basin": 2,
+   "building": 39,
+   "burial": 2,
+   "cairn": 1,
+   "cave": 8,
+   "chamber": 3,
+   "cistern": 1,
+   "doorway": 6,
+   "other": 13,
+   "road": 1,
+   "steps": 1,
+   "terrace": 1,
+   "wall": 4
+  }
+ }
+}
