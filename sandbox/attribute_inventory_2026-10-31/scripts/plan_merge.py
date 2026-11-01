@@ -18,6 +18,11 @@ VALS = ["n_openings_plan", "opening_dirs_plan", "max_length_m", "max_width_m", "
 def norm_key(k):
     k = (k or "").upper().replace(" ", "")
     k = re.sub(r"^(CAVE|ATQ41:)", "", k)
+    # Hebrew-order labels such as "49/V" -> "V/49" (fix added 31 Oct before agreement was run:
+    # a plan reader keyed labels in the caption's order)
+    m = re.match(r"^(\d+[A-Z]?)/([IVX]+)$", k)
+    if m:
+        k = f"{m.group(2)}/{m.group(1)}"
     return k
 
 
