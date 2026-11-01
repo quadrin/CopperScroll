@@ -1,0 +1,115 @@
+source,key,field,A,B,page_A,page_B
+qum3a,E303,feature_class,other,basin,130,130
+qum3a,E321,plaster,yes,unknown,130,130
+qum3a,E324,plaster,yes,unknown,130,130
+qum3a,E328,plaster,yes,unknown,130,130
+qum3a,E361,plaster,yes,unknown,130,130
+qum3a,E362,plaster,yes,unknown,130,130
+qum3a,E364,plaster,yes,unknown,130,130
+qum3a,E365,plaster,yes,unknown,130,130
+qum3a,E367,feature_class,wall,other,131,131
+qum3a,E385,n_openings,,1,131,131
+qum3a,E399,n_openings,,1,131,131
+qum3a,E649,plaster,yes,unknown,132,132
+qum3a,E650,plaster,yes,,132,132
+qum3a,E676,feature_class,other,basin,132,132
+qum3a,E802,plaster,yes,unknown,133,133
+qum3a,E803,plaster,yes,unknown,133,133
+qum3a,E804,plaster,yes,unknown,133,133
+qum3a,E809,n_openings,1,,133,133
+qum3a,E810,plaster,yes,unknown,133,133
+qum3a,E857,feature_class,other,pillar,134,134
+qum3a,E858,feature_class,other,pillar,134,134
+qum3a,E859,feature_class,other,pillar,134,134
+qum3a,E860,feature_class,other,pillar,134,134
+qum3a,E866,n_openings,1,,134,134
+qum3a,E871,feature_class,other,pillar,134,134
+qum3a,E872,feature_class,other,pillar,134,134
+qum3a,L103,feature_class,other,terrace,137,137
+qum3a,L143,feature_class,building,room,137,137
+qum3a,L17,feature_class,other,room,135,135
+qum3a,L173,plaster,yes,unknown,138,138
+qum3a,L18,feature_class,other,room,135,135
+qum3a,L180,feature_class,building,room,138,138
+qum3a,L183,feature_class,other,court,138,138
+qum3a,L186,feature_class,building,room,138,138
+qum3a,L21,feature_class,other,wall,135,135
+qum3a,L32,feature_class,other,room,135,135
+qum3a,L53,feature_class,other,room,136,136
+qum3a,L59,feature_class,other,room,136,136
+qum3a,L82,feature_class,other,room,136,136
+qum3a,L85,feature_class,other,room,136,136
+mp18,EARLY_CHANNEL,n_openings,,1,57; 80; 82-83; 94,57
+mp18,EARLY_CHANNEL,plaster,yes,,57; 80; 82-83; 94,57
+mp18,EASTERN_WING,feature_class,room,building,34-35; 43,34-35; 43
+mp18,EASTERN_WING,length_m,19,,34-35; 43,34-35; 43
+mp18,EASTERN_WING,width_m,8,,34-35; 43,34-35; 43
+mp18,L1-L2,n_openings,,1,23; 28,23
+mp18,L113,n_openings,,1,52,52
+mp18,L113,plaster,yes,,52,52
+mp18,L12,plaster,,yes,21; 23; 28,21-23
+mp18,L120,n_openings,,3,56,56
+mp18,L120,plaster,yes,,56,56
+mp18,L122,n_openings,0,2,56,56
+mp18,L19-L27,n_openings,,1,32,32
+mp18,L2,n_openings,,4,23,23
+mp18,L2,opening_dirs,,N;W,23,23
+mp18,L23,n_openings,,1,48,48
+mp18,L29,opening_dirs,W;E,W;NW;E,20,20
+mp18,L30,n_steps,2,,26; 28; 48,26; 28
+mp18,L32-L34,n_openings,,1,48-50,48-50
+mp18,L33,n_openings,,1,48,48
+mp18,L33,opening_dirs,,S,48,48
+mp18,L37,n_openings,1,,48,48
+mp18,L38-L41,plaster,yes,,31-32,31
+mp18,L43,n_openings,,1,41,41
+mp18,L43,opening_dirs,,N,41,41
+mp18,L48-L49,n_openings,,1,35; 38; 41-43; 50,35; 38; 41-42
+mp18,L6-L40,opening_dirs,W,S;W,28-29,28-29
+mp18,L6-L40,n_steps,2,,28-29,28-29
+mp18,L62,feature_class,other,room,41; 43,41
+mp18,L67,opening_dirs,,SW;SE,44; 86,44; 86
+mp18,L69,n_openings,,2,86; 90,86; 90
+mp18,L69,opening_dirs,,W;E,86; 90,86; 90
+mp18,L83,n_openings,,3,43-44; 84-86,84; 86
+mp18,L83,opening_dirs,,NW;E,43-44; 84-86,84; 86
+mp18,L86-L87-L89,n_openings,,1,45-47; 50,46-47
+mp18,L86-L87-L89,opening_dirs,,N,45-47; 50,46-47
+mp18,L91,n_openings,,7,86,86
+mp18,SOUTHERN_PLATEAU,feature_class,other,terrace,69-70,69-70
+mp18,SOUTHERN_PLATEAU,width_m,12-60,60-12,69-70,69-70
+mp18,SOUTHERN_WING,feature_class,room,building,43-44,43-44
+mp18,T4,length_m,,2.0,100,100
+mp18,T4,width_m,,1.5,100,100
+mp18,T5,length_m,,2.0,100,100
+mp18,T5,width_m,,1.0,100,100
+mp18,T7,length_m,2.0,,59; 100,100
+mp18,T7,width_m,0.5,,59; 100,100
+hir04,COURTYARD,length_m,7.8,11.8,44;49,44;49
+hir04,COURTYARD,width_m,11.8,7.8,44;49,44;49
+hir04,ISRAELITE_BUILDING,height_m,0.6,,68-69,68-69
+hir04,L104,length_m,3.8,8.4,52,52
+hir04,L104,width_m,8.4,3.8,52,52
+hir04,L104,n_openings,,1,52,52
+hir04,L106-114,length_m,3,8.8,49,49
+hir04,L106-114,width_m,8.8,3,49,49
+hir04,L117,length_m,2.2,2.8,49,49
+hir04,L117,width_m,2.8,2.2,49,49
+hir04,L118,length_m,4.3,5.6,49,49
+hir04,L118,width_m,5.6,4.3,49,49
+hir04,L119,length_m,2.8,3.7,60,60
+hir04,L119,width_m,3.7,2.8,60,60
+hir04,L119,opening_dirs,NW,,60,60
+hir04,L127,length_m,2.3,3.5,58,58
+hir04,L127,width_m,3.5,2.3,58,58
+hir04,L142,length_m,4.4,4.5,56,56
+hir04,L142,width_m,4.5,4.4,56,56
+hir04,L154,length_m,1.8,8,49,49
+hir04,L154,width_m,8,1.8,49,49
+hir04,MAIN_BUILDING,length_m,18,24,44;49,44;49
+hir04,MAIN_BUILDING,width_m,24,18,44;49,44;49
+hir04,RESERVOIR,length_m,3.2,8,56,56
+hir04,RESERVOIR,width_m,8,3.2,56,56
+bad77,T3,n_steps,0,,16;18,16
+esh02,POINTB,length_m,5.05,4.50,"147-148, 152",147-152
+esh02,POINTB,width_m,4.50,5.05,"147-148, 152",147-152
