@@ -89,7 +89,9 @@ def main():
         w = csv.DictWriter(fh, fieldnames=cols, extrasaction="ignore")
         w.writeheader()
         w.writerows(rows)
-    lab = [r for r in rows if re.match(r"^[IVX]+/\d", r["key"])]
+    # Summary only (31 Oct, before the Qumran third reading existed): sources without survey labels
+    # (Qumran group) are summarised over all rows. The merge rule above is unchanged.
+    lab = [r for r in rows if re.match(r"^[IVX]+/\d", r["key"])] or rows
     def has(r, f):
         v = str(r.get(f, ""))
         return v not in ("", "unknown") and "|" not in v
@@ -99,8 +101,10 @@ def main():
     print("  in_window yes:", sum(r['in_window'] == 'yes' for r in lab))
     print("  classes:", Counter(r["feature_class"] for r in lab).most_common(8))
     print("  n_openings distribution:", Counter(r["n_openings"] for r in lab if has(r, "n_openings")).most_common(8))
-    print("  lat/lon range:", min(r["lat"] for r in lab if "lat" in r), max(r["lat"] for r in lab if "lat" in r),
-          min(r["lon"] for r in lab if "lon" in r), max(r["lon"] for r in lab if "lon" in r))
+    pos = [r for r in lab if "lat" in r]
+    if pos:
+        print("  lat/lon range:", min(r["lat"] for r in pos), max(r["lat"] for r in pos),
+              min(r["lon"] for r in pos), max(r["lon"] for r in pos))
 
 
 if __name__ == "__main__":
