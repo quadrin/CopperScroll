@@ -69,6 +69,10 @@ def load(reader):
             k = norm_key(r.get("key"))
             if not k:
                 continue
+            if (r.get("plan_ref") or "").replace(" ", "") == "2561:1":
+                # Both readers flagged it: captioned 57/X like Plan 3, but placed in and cited by the 35/X entry.
+                # Excluded rather than guessed (decided before agreement was computed).
+                continue
             score = (r.get("north_arrow", "").strip().lower() == "yes", {"high": 2, "medium": 1}.get(r.get("confidence", "").strip(), 0))
             if k not in best or score > best[k][0]:
                 best[k] = (score, {c: (r.get(c) or "").strip() for c in r})
